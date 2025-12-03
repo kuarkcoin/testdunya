@@ -1,300 +1,146 @@
+import React, { useState } from 'react';
+import { Search, ArrowRight, BookOpen, ChevronRight, TrendingUp } from 'lucide-react';
+
 const exams = [
-  {
-    key: "yks",
-    name: "YKS",
-    label: "Üniversite Sınavı",
-    score: 100,
-    monthly: "1.5–2M",
-    tags: ["TYT", "AYT", "Sayısal", "Eşit Ağırlık"],
-    highlight: "En yüksek arama hacmi",
-  },
-  {
-    key: "lgs",
-    name: "LGS",
-    label: "Liselere Geçiş",
-    score: 85,
-    monthly: "600–900K",
-    tags: ["8. sınıf", "Yeni nesil", "MEB"],
-    highlight: "Ortaokuldan liseye geçiş",
-  },
-  {
-    key: "kpss",
-    name: "KPSS",
-    label: "Kamu Personeli",
-    score: 70,
-    monthly: "500–700K",
-    tags: ["Genel Yetenek", "Genel Kültür", "Eğitim Bilimleri"],
-    highlight: "Memuriyet hedefleyenler için",
-  },
-  {
-    key: "ehliyet",
-    name: "Ehliyet",
-    label: "Sürücü Belgesi",
-    score: 65,
-    monthly: "400–600K",
-    tags: ["Trafik", "İlk yardım", "Motor"],
-    highlight: "Çıkmış sorulardan güncel testler",
-  },
-  {
-    key: "aol",
-    name: "AÖL",
-    label: "Açık Lise",
-    score: 55,
-    monthly: "300–500K",
-    tags: ["Açık lise", "Kredi sistemi"],
-    highlight: "Açık lise öğrencilerine özel",
-  },
-  {
-    key: "dgs",
-    name: "DGS",
-    label: "Dikey Geçiş",
-    score: 45,
-    monthly: "200–400K",
-    tags: ["Sözel mantık", "Sayısal mantık"],
-    highlight: "Önlisans → Lisans geçişi",
-  },
-  {
-    key: "ales",
-    name: "ALES",
-    label: "Akademik Sınav",
-    score: 40,
-    monthly: "150–300K",
-    tags: ["Lisansüstü", "Akademik kariyer"],
-    highlight: "Yüksek lisans ve doktora için",
-  },
-  {
-    key: "yokdil",
-    name: "YÖKDİL",
-    label: "Yabancı Dil",
-    score: 35,
-    monthly: "100–250K",
-    tags: ["İngilizce", "Akademik İngilizce"],
-    highlight: "YDS hariç, YÖKDİL odaklı",
-  },
-  {
-    key: "tus",
-    name: "TUS",
-    label: "Tıpta Uzmanlık",
-    score: 30,
-    monthly: "80–150K",
-    tags: ["Tıp", "Klinik bilimler"],
-    highlight: "Doktorlar için uzmanlık sınavı",
-  },
-  {
-    key: "dus",
-    name: "DUS",
-    label: "Diş Hekimliği",
-    score: 25,
-    monthly: "50–100K",
-    tags: ["Diş hekimliği", "Uzmanlık"],
-    highlight: "Diş hekimlerine özel testler",
-  },
+  { key: "yks", name: "YKS", label: "Üniversite Sınavı", category: "academic", color: "bg-blue-50 text-blue-600" },
+  { key: "lgs", name: "LGS", label: "Liselere Geçiş", category: "school", color: "bg-orange-50 text-orange-600" },
+  { key: "kpss", name: "KPSS", label: "Kamu Personeli", category: "career", color: "bg-emerald-50 text-emerald-600" },
+  { key: "ehliyet", name: "Ehliyet", label: "Sürücü Belgesi", category: "life", color: "bg-purple-50 text-purple-600" },
+  { key: "ales", name: "ALES", label: "Akademik Kariyer", category: "academic", color: "bg-indigo-50 text-indigo-600" },
+  { key: "dgs", name: "DGS", label: "Dikey Geçiş", category: "academic", color: "bg-sky-50 text-sky-600" },
+  { key: "yokdil", name: "YÖKDİL", label: "Dil Sınavı", category: "language", color: "bg-rose-50 text-rose-600" },
+  { key: "tus", name: "TUS", label: "Tıpta Uzmanlık", category: "health", color: "bg-teal-50 text-teal-600" },
 ];
 
-export default function HomePage() {
+export default function ModernHomePage() {
+  const [activeTab, setActiveTab] = useState('all');
+
+  // Basit filtreleme mantığı
+  const filteredExams = activeTab === 'all' 
+    ? exams 
+    : exams.filter(e => e.category === activeTab);
+
   return (
-    <div className="td-container">
-      {/* NAVBAR */}
-      <header className="td-navbar">
-        <div className="td-logo">
-          <div className="td-logo-icon">
-            <div className="td-logo-inner">TD</div>
+    <div className="min-h-screen bg-[#F8FAFC] text-slate-800 font-sans">
+      
+      {/* NAVBAR: Ultra Minimal */}
+      <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+        <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+          <div className="flex items-center gap-2 font-bold text-xl tracking-tight text-slate-900">
+            <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white text-sm">TD</div>
+            TestDünya
           </div>
-          <div className="td-logo-text">
-            <div className="td-logo-title">TestDünya</div>
-            <div className="td-logo-sub">
-              YKS, LGS, KPSS, Ehliyet ve tüm sınav testleri
-            </div>
+          <div className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-500">
+            <a href="#" className="hover:text-indigo-600 transition-colors">Sınavlar</a>
+            <a href="#" className="hover:text-indigo-600 transition-colors">İstatistikler</a>
+            <button className="bg-slate-900 text-white px-5 py-2 rounded-full hover:bg-slate-800 transition-all hover:shadow-lg hover:shadow-indigo-500/20">
+              Giriş Yap
+            </button>
           </div>
         </div>
+      </nav>
 
-        <nav className="td-nav-links" aria-label="Ana menü">
-          <div className="td-nav-pill">
-            <span />
-            <span>2025 sınav takvimi odaklı</span>
+      {/* HERO SECTION: Odaklı ve Temiz */}
+      <header className="relative pt-20 pb-16 px-6 text-center max-w-4xl mx-auto">
+        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-50 text-indigo-600 text-xs font-bold mb-6 border border-indigo-100">
+          <TrendingUp size={14} /> 2025 Müfredatı Hazır
+        </span>
+        
+        <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 mb-6 leading-tight">
+          Sınavına <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600">akıllı çalış</span>, <br className="hidden md:block" />
+          geleceğini şansa bırakma.
+        </h1>
+        
+        <p className="text-lg text-slate-500 mb-10 max-w-2xl mx-auto leading-relaxed">
+          YKS, LGS, KPSS ve daha fazlası. Karmaşık menüler yok. 
+          Hedeflediğin sınavı seç ve binlerce çıkmış soruyu hemen çözmeye başla.
+        </p>
+
+        {/* Modern Search Input */}
+        <div className="relative max-w-lg mx-auto group">
+          <div className="absolute inset-y-0 left-4 flex items-center text-slate-400 group-focus-within:text-indigo-500 transition-colors">
+            <Search size={20} />
           </div>
-          <a href="#popular" className="td-nav-link">
-            Popüler sınavlar
-          </a>
-          <a href="#all-exams" className="td-nav-link">
-            Tüm sınavlar
-          </a>
-          <a href="#how-it-works" className="td-nav-link">
-            Nasıl çalışır?
-          </a>
-          <button className="td-nav-cta" type="button">
-            Hemen test çöz
-            <span aria-hidden="true">↗</span>
-          </button>
-        </nav>
+          <input 
+            type="text" 
+            placeholder="Hangi sınava hazırlanıyorsun? (Örn: TYT)" 
+            className="w-full pl-12 pr-4 py-4 bg-white rounded-2xl shadow-xl shadow-slate-200/60 border border-slate-100 outline-none focus:ring-2 focus:ring-indigo-500/20 transition-all text-slate-700 placeholder:text-slate-400"
+          />
+        </div>
       </header>
 
-      {/* HERO */}
-      <section className="td-hero-layout">
-        <div className="td-hero-card">
-          <div className="td-hero-tag-row">
-            <div className="td-hero-tag">
-              Türkiye odaklı sınav platformu
-              <span className="td-hero-tag-badge">Ücretsiz &amp; sınırsız</span>
-            </div>
-          </div>
-
-          <h1 className="td-hero-title">
-            Tüm büyük sınavlar{" "}
-            <span>tek sitede, akıllı test sistemiyle.</span>
-          </h1>
-
-          <p className="td-hero-sub">
-            <strong>TestDünya</strong>, YKS, LGS, KPSS, Ehliyet, ALES, YÖKDİL, DGS,
-            TUS, DUS ve AÖL için modern{" "}
-            <strong>online deneme sınavları</strong> sunar. Üye olmadan hemen
-            başlamayı, ileride ise detaylı istatistik ve sıralamaları
-            hedefliyoruz.
-          </p>
-
-          <div className="td-hero-actions">
-            <button className="td-hero-primary" type="button">
-              YKS ile başla
-              <span aria-hidden="true">▶</span>
+      {/* CONTENT AREA */}
+      <main className="max-w-6xl mx-auto px-6 pb-24">
+        
+        {/* Kategoriler (Pill Tabs) */}
+        <div className="flex flex-wrap justify-center gap-2 mb-12">
+          {['all', 'academic', 'career'].map((tab) => (
+            <button
+              key={tab}
+              onClick={() => setActiveTab(tab)}
+              className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${
+                activeTab === tab 
+                  ? 'bg-slate-900 text-white shadow-md' 
+                  : 'bg-white text-slate-500 hover:bg-slate-50 border border-slate-200'
+              }`}
+            >
+              {tab === 'all' ? 'Tümü' : tab === 'academic' ? 'Akademik' : 'Kariyer & Memuriyet'}
             </button>
-            <button className="td-hero-secondary" type="button">
-              Diğer sınavları gör
-              <span aria-hidden="true">↓</span>
-            </button>
-          </div>
-
-          <p className="td-hero-footnote">
-            YDS bu projede yok; YDS tarafını{" "}
-            <strong>EnglishMeter</strong> üzerinde detaylı şekilde geliştirmeye
-            devam edeceğiz.
-          </p>
-        </div>
-
-        <aside className="td-hero-right" aria-label="Sınav istatistikleri">
-          <div className="td-hero-metrics">
-            <div className="td-metric-card">
-              <div className="td-metric-label">Aylık toplam arama hacmi</div>
-              <div className="td-metric-value">3–5 milyon+</div>
-              <div className="td-metric-pill">YKS &amp; LGS zirvede</div>
-            </div>
-
-            <div className="td-metric-card">
-              <div className="td-metric-label">Hedeflenen sınav türü</div>
-              <div className="td-metric-value">10+</div>
-              <div className="td-metric-list">
-                <span className="td-metric-chip">YKS</span>
-                <span className="td-metric-chip">LGS</span>
-                <span className="td-metric-chip">KPSS</span>
-                <span className="td-metric-chip">Ehliyet</span>
-              </div>
-            </div>
-
-            <div className="td-metric-card">
-              <div className="td-metric-label">Soru tipi hedefi</div>
-              <div className="td-metric-value">Çıkmış + özgün</div>
-              <div className="td-metric-list">
-                <span className="td-metric-chip">Konu tarama</span>
-                <span className="td-metric-chip">Mini deneme</span>
-                <span className="td-metric-chip">Tam deneme</span>
-              </div>
-            </div>
-
-            <div className="td-metric-card" id="how-it-works">
-              <div className="td-metric-label">TestDünya nasıl işleyecek?</div>
-              <div className="td-metric-list">
-                <span className="td-metric-chip">1. Sınavını seç</span>
-                <span className="td-metric-chip">2. Test türünü belirle</span>
-                <span className="td-metric-chip">3. Soruları çöz</span>
-                <span className="td-metric-chip">4. Detaylı analiz gör (yakında)</span>
-              </div>
-            </div>
-          </div>
-        </aside>
-      </section>
-
-      {/* EXAM GRID */}
-      <section id="popular" className="td-section-header">
-        <div>
-          <h2 className="td-section-title">Popüler sınavlar</h2>
-          <p className="td-section-sub">
-            Yüksek arama hacmine ve yoğun rekabete sahip sınavlara öncelik veriyoruz.
-          </p>
-        </div>
-        <div className="td-section-filters">
-          <button
-            className="td-filter-pill td-filter-pill--active"
-            type="button"
-          >
-            YKS &amp; LGS
-          </button>
-          <button className="td-filter-pill" type="button">
-            Mezun &amp; KPSS
-          </button>
-          <button className="td-filter-pill" type="button">
-            Dil &amp; Lisansüstü
-          </button>
-          <button className="td-filter-pill" type="button">
-            Sağlık (TUS &amp; DUS)
-          </button>
-        </div>
-      </section>
-
-      <section id="all-exams">
-        <div className="td-exam-grid" aria-label="Sınav listesi">
-          {exams.map((exam) => (
-            <article key={exam.key} className="td-exam-card">
-              <div className="td-exam-header">
-                <div>
-                  <div className="td-exam-name">
-                    {exam.name}{" "}
-                    <span style={{ opacity: 0.7, fontWeight: 400 }}>
-                      · {exam.label}
-                    </span>
-                  </div>
-                  <div className="td-exam-score">
-                    İlgi skoru: {exam.score}/100 · Aylık arama: {exam.monthly}
-                  </div>
-                </div>
-                {exam.score >= 80 ? (
-                  <span className="td-exam-badge">Trend</span>
-                ) : exam.score >= 60 ? (
-                  <span className="td-exam-badge">Stabil</span>
-                ) : (
-                  <span className="td-exam-badge">Niş</span>
-                )}
-              </div>
-
-              <div className="td-progress-track" aria-hidden="true">
-                <div
-                  className="td-progress-bar"
-                  style={{ transform: `scaleX(${exam.score / 100})` }}
-                />
-              </div>
-
-              <div className="td-exam-tags">
-                {exam.tags.map((tag) => (
-                  <span key={tag} className="td-exam-tag">
-                    {tag}
-                  </span>
-                ))}
-              </div>
-
-              <div className="td-exam-footer">
-                <button className="td-exam-cta td-exam-cta--primary" type="button">
-                  {exam.name} testlerini gör
-                </button>
-                <button className="td-exam-cta" type="button">
-                  Çıkmış sorular &amp; analiz
-                </button>
-              </div>
-
-              <p className="td-exam-score" style={{ marginTop: "0.4rem" }}>
-                {exam.highlight}
-              </p>
-            </article>
           ))}
         </div>
-      </section>
+
+        {/* MODERN CARD GRID */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {filteredExams.map((exam) => (
+            <div 
+              key={exam.key} 
+              className="group relative bg-white rounded-2xl p-6 border border-slate-100 shadow-[0_2px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 cursor-pointer overflow-hidden"
+            >
+              {/* Card Header */}
+              <div className="flex justify-between items-start mb-4">
+                <div className={`w-12 h-12 rounded-xl flex items-center justify-center text-lg font-bold ${exam.color}`}>
+                   {exam.name.substring(0, 1)}
+                </div>
+                <div className="opacity-0 group-hover:opacity-100 transition-opacity bg-slate-50 p-2 rounded-full text-slate-400 hover:text-indigo-600">
+                  <ArrowRight size={18} />
+                </div>
+              </div>
+
+              {/* Card Body */}
+              <div>
+                <h3 className="text-xl font-bold text-slate-900 mb-1">{exam.name}</h3>
+                <p className="text-sm text-slate-500 font-medium mb-6">{exam.label}</p>
+                
+                {/* Stats / Mini Info (Clean) */}
+                <div className="flex items-center gap-3 text-xs text-slate-400 font-medium border-t border-slate-50 pt-4">
+                  <span className="flex items-center gap-1">
+                    <BookOpen size={14} /> Testler
+                  </span>
+                  <span className="w-1 h-1 rounded-full bg-slate-300"></span>
+                  <span>Çıkmış Sorular</span>
+                </div>
+              </div>
+
+              {/* Hover Effect Background */}
+              <div className="absolute inset-0 border-2 border-transparent group-hover:border-indigo-500/10 rounded-2xl transition-all pointer-events-none"></div>
+            </div>
+          ))}
+
+          {/* "More" Card */}
+          <div className="flex flex-col items-center justify-center text-center p-6 rounded-2xl border-2 border-dashed border-slate-200 text-slate-400 hover:border-indigo-300 hover:text-indigo-500 hover:bg-indigo-50/30 transition-all cursor-pointer group">
+            <div className="mb-2 p-3 bg-slate-50 rounded-full group-hover:bg-white transition-colors">
+              <ChevronRight size={24} />
+            </div>
+            <span className="font-medium">Tüm Sınavları Gör</span>
+          </div>
+        </div>
+
+      </main>
+
+      {/* SIMPLE FOOTER */}
+      <footer className="border-t border-slate-100 py-12 text-center text-slate-400 text-sm bg-white">
+        <p>© 2025 TestDünya. Öğrenciler için sevgiyle tasarlandı.</p>
+      </footer>
     </div>
   );
 }
