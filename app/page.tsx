@@ -1,197 +1,126 @@
 // app/page.tsx
 
 import Link from 'next/link';
+import { Navbar } from './components/Navbar';
 
-// --- SINAV VE TEST VERİLERİ (EnglishMeter Tarzı Yapı) ---
-const YKS_TESTS = [
-  { id: 'tyt-deneme-1', name: 'TYT Deneme 1', isNew: true },
-  { id: 'tyt-deneme-2', name: 'TYT Deneme 2' },
-  { id: 'ayt-mat-1', name: 'AYT Matematik' },
-  { id: 'ayt-fen-1', name: 'AYT Fen Bilimleri' },
-  { id: 'ayt-edb-1', name: 'AYT Edebiyat-Sos' },
-  { id: 'ydt-ing-1', name: 'YDT İngilizce' },
-];
-
-const LGS_TESTS = [
-  { id: 'lgs-genel-1', name: 'LGS Genel Deneme 1', isNew: true },
-  { id: 'lgs-mat-1', name: 'LGS Matematik' },
-  { id: 'lgs-fen-1', name: 'LGS Fen Bilimleri' },
-  { id: 'lgs-turkce-1', name: 'LGS Türkçe' },
-];
-
-const KPSS_TESTS = [
-  { id: 'kpss-gy-gk-1', name: 'KPSS GY-GK Deneme', isNew: true },
-  { id: 'kpss-egitim-1', name: 'Eğitim Bilimleri' },
-  { id: 'kpss-tarih', name: 'Tarih Taraması' },
-  { id: 'kpss-cografya', name: 'Coğrafya Taraması' },
-];
-
-const EHLIYET_TESTS = [
-  { id: 'ehliyet-deneme-1', name: 'Çıkmış Sorular 2024', isNew: true },
-  { id: 'ehliyet-motor', name: 'Motor & Araç Tekniği' },
-  { id: 'ehliyet-ilkyardim', name: 'İlk Yardım Bilgisi' },
-  { id: 'ehliyet-trafik', name: "Trafik & Çevre" },
-];
-
-const AKADEMIK_TESTS = [
-  { id: 'ales-sayisal', name: 'ALES Sayısal' },
-  { id: 'ales-sozel', name: 'ALES Sözel' },
-  { id: 'yokdil-fen', name: 'YÖKDİL Fen' },
-  { id: 'yokdil-sosyal', name: "YÖKDİL Sosyal" },
-];
-
-
-// --- RENK TEMALARI (EnglishMeter Gibi Canlı Renkler) ---
-const theme = {
-  blue: {
-    bg: 'bg-blue-50', border: 'border-blue-200', title: 'text-blue-800',
-    btn: 'bg-white text-blue-600 border-blue-100 hover:bg-blue-600 hover:text-white hover:border-blue-600'
+// --- ANA BUTONLAR (ENGLISHMETER TARZI) ---
+const MAIN_BUTTONS = [
+  { 
+    id: 'tyt-genel', 
+    title: 'TYT Deneme Sınavı', 
+    subtitle: 'Temel Yeterlilik Testi',
+    color: 'bg-blue-600 shadow-blue-200 hover:bg-blue-700',
+    href: '/test/tyt-genel'
   },
-  orange: {
-    bg: 'bg-orange-50', border: 'border-orange-200', title: 'text-orange-800',
-    btn: 'bg-white text-orange-600 border-orange-100 hover:bg-orange-600 hover:text-white hover:border-orange-600'
+  { 
+    id: 'ayt-mat', 
+    title: 'AYT Matematik', 
+    subtitle: 'Alan Yeterlilik Testi',
+    color: 'bg-purple-600 shadow-purple-200 hover:bg-purple-700',
+    href: '/test/ayt-mat'
   },
-  rose: {
-    bg: 'bg-rose-50', border: 'border-rose-200', title: 'text-rose-800',
-    btn: 'bg-white text-rose-600 border-rose-100 hover:bg-rose-600 hover:text-white hover:border-rose-600'
+  { 
+    id: 'lgs-genel', 
+    title: 'LGS Genel Deneme', 
+    subtitle: 'Liselere Geçiş Sınavı',
+    color: 'bg-orange-500 shadow-orange-200 hover:bg-orange-600',
+    href: '/test/lgs-genel'
   },
-  emerald: {
-    bg: 'bg-emerald-50', border: 'border-emerald-200', title: 'text-emerald-800',
-    btn: 'bg-white text-emerald-600 border-emerald-100 hover:bg-emerald-600 hover:text-white hover:border-emerald-600'
+  { 
+    id: 'kpss-lisans', 
+    title: 'KPSS Genel Yetenek', 
+    subtitle: 'Lisans & Önlisans',
+    color: 'bg-rose-500 shadow-rose-200 hover:bg-rose-600',
+    href: '/test/kpss-lisans'
   },
-  violet: {
-    bg: 'bg-violet-50', border: 'border-violet-200', title: 'text-violet-800',
-    btn: 'bg-white text-violet-600 border-violet-100 hover:bg-violet-600 hover:text-white hover:border-violet-600'
-  }
+  { 
+    id: 'ehliyet-2024', 
+    title: 'Ehliyet Çıkmış Sorular', 
+    subtitle: '2024 E-Sınav Müfredatı',
+    color: 'bg-emerald-600 shadow-emerald-200 hover:bg-emerald-700',
+    href: '/test/ehliyet-2024'
+  },
+  { 
+    id: 'ales-sayisal', 
+    title: 'ALES Sayısal', 
+    subtitle: 'Akademik Personel Sınavı',
+    color: 'bg-cyan-600 shadow-cyan-200 hover:bg-cyan-700',
+    href: '/test/ales-sayisal'
+  },
+  { 
+    id: 'yokdil-fen', 
+    title: 'YÖKDİL Fen Bilimleri', 
+    subtitle: 'Yabancı Dil Sınavı',
+    color: 'bg-indigo-600 shadow-indigo-200 hover:bg-indigo-700',
+    href: '/test/yokdil-fen'
+  },
+  { 
+    id: 'dgs-genel', 
+    title: 'DGS Deneme', 
+    subtitle: 'Dikey Geçiş Sınavı',
+    color: 'bg-pink-500 shadow-pink-200 hover:bg-pink-600',
+    href: '/test/dgs-genel'
+  },
+];
+
+// --- ALTTAKİ UZUN BUTON (RACE MODE GİBİ) ---
+const SPECIAL_BUTTON = {
+  title: '🚀 Türkiye Geneli Sıralama Sınavı',
+  href: '/turkiye-geneli',
+  color: 'bg-red-600 hover:bg-red-700 shadow-red-200'
 };
 
-
-// --- ANA SAYFA ---
 export default function Home() {
   return (
     <div className="min-h-screen bg-slate-50 font-sans">
-      
-      {/* --- HERO: SADE VE NET --- */}
-      <section className="py-12 px-4 text-center max-w-4xl mx-auto">
-         <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4 text-slate-900 leading-tight">
-            Sınavını Seç, <span className="text-indigo-600">Hemen Başla.</span>
-         </h1>
-         <p className="text-lg text-slate-500 font-medium">
-            Türkiye'nin pratik test platformu. Üyelik yok, bekleme yok.
-         </p>
+      <Navbar />
+
+      {/* HERO ALANI (MİNİMAL) */}
+      <section className="pt-10 pb-8 px-4 text-center">
+        <h1 className="text-4xl md:text-5xl font-black text-slate-900 mb-2">
+          Sınavını Seç, <span className="text-indigo-600">Başla.</span>
+        </h1>
+        <p className="text-slate-500 font-medium">TestDünya ile seviyeni ücretsiz ölç.</p>
       </section>
 
-      {/* --- TEST KARTLARI (ENGLISHMETER TARZI GRID) --- */}
-      <div className="px-4 pb-20 max-w-6xl mx-auto space-y-8">
+      {/* --- ANA BUTONLAR GRID --- */}
+      <div className="flex flex-col items-center justify-center px-4 pb-20">
+        <div className="w-full max-w-5xl">
+          
+          {/* BUTON IZGARASI */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
+            {MAIN_BUTTONS.map((btn) => (
+              <Link
+                key={btn.id}
+                href={btn.href}
+                className={`flex flex-col items-center justify-center py-8 px-4 rounded-2xl shadow-lg transition-all transform hover:scale-[1.02] active:scale-95 text-white ${btn.color}`}
+              >
+                <span className="text-xl md:text-2xl font-bold text-center mb-1">
+                  {btn.title}
+                </span>
+                <span className="text-sm font-medium opacity-90">
+                  {btn.subtitle}
+                </span>
+              </Link>
+            ))}
+          </div>
 
-        {/* YKS KARTI (Mavi Tema) */}
-        <ExamCard 
-          title="🇹🇷 YKS & Üniversite" 
-          label="TYT - AYT - YDT" 
-          theme={theme.blue} 
-          tests={YKS_TESTS} 
-          allLink="/sinav/yks"
-        />
-
-        {/* LGS KARTI (Turuncu Tema) */}
-        <ExamCard 
-          title="🎓 LGS Hazırlık" 
-          label="8. Sınıf Sınavları" 
-          theme={theme.orange} 
-          tests={LGS_TESTS} 
-          allLink="/sinav/lgs"
-        />
-
-        {/* KPSS KARTI (Gül Rengi Tema) */}
-        <ExamCard 
-          title="🏛️ KPSS & Memuriyet" 
-          label="Lisans - Önlisans" 
-          theme={theme.rose} 
-          tests={KPSS_TESTS} 
-          allLink="/sinav/kpss"
-        />
-
-        {/* EHLİYET KARTI (Zümrüt Yeşili Tema) */}
-        <ExamCard 
-          title="🚗 Ehliyet Sınavı" 
-          label="E-Sınav Müfredatı" 
-          theme={theme.emerald} 
-          tests={EHLIYET_TESTS} 
-          allLink="/sinav/ehliyet"
-        />
-
-        {/* AKADEMİK KARTI (Mor Tema) */}
-        <ExamCard 
-          title="📚 Akademik (ALES-YÖKDİL)" 
-          label="Yüksek Lisans" 
-          theme={theme.violet} 
-          tests={AKADEMIK_TESTS} 
-          allLink="/sinav/akademik"
-        />
-
-      </div>
-
-      {/* --- FOOTER: GÖZ YORMAYAN BİLGİ ALANI --- */}
-      <section className="bg-white border-t border-slate-200 py-12 px-4">
-        <div className="max-w-5xl mx-auto text-slate-500 text-sm leading-relaxed text-center">
-            <p className="mb-4 font-semibold text-slate-700">TestDünya - Türkiye'nin Online Test Platformu</p>
-            <p>
-                YKS (TYT-AYT), LGS, KPSS, ALES, DGS ve Ehliyet sınavlarına hazırlanan öğrenciler için 
-                geliştirilmiş ücretsiz bir online test çözme platformudur. 
-                Tüm deneme sınavları, ÖSYM ve MEB müfredatına %100 uyumlu yeni nesil sorulardan oluşmaktadır.
-            </p>
-            <p className="text-xs pt-6 mt-6 border-t border-slate-100">
-                © 2024 TestDünya. Bu sitedeki içerikler eğitim amaçlıdır.
-            </p>
-        </div>
-      </section>
-
-    </div>
-  );
-}
-
-
-// --- YARDIMCI BİLEŞEN: SINAV KARTI ---
-function ExamCard({ title, label, theme, tests, allLink }: any) {
-  return (
-    <div className={`rounded-3xl border-2 p-6 shadow-sm hover:shadow-md transition-shadow ${theme.bg} ${theme.border}`}>
-      
-      {/* Kart Başlığı */}
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-2">
-        <div>
-          <h2 className={`text-2xl font-black ${theme.title}`}>{title}</h2>
-          <span className="text-sm font-semibold opacity-70">{label}</span>
-        </div>
-        <div className="hidden sm:flex w-10 h-10 rounded-full items-center justify-center text-xl bg-white/50 backdrop-blur-sm shadow-sm">
-          🎯
-        </div>
-      </div>
-
-      {/* Test Butonları Grid'i */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
-        {tests.map((test: any) => (
+          {/* ALTTAKİ ÖZEL GENİŞ BUTON */}
           <Link
-            key={test.id}
-            href={`/test/${test.id}`}
-            className={`relative group flex items-center justify-center py-4 px-3 rounded-xl border-2 font-bold text-sm text-center transition-all duration-200 active:scale-95 shadow-sm ${theme.btn}`}
+            href={SPECIAL_BUTTON.href}
+            className={`flex items-center justify-center w-full py-6 rounded-2xl shadow-lg text-white text-xl font-bold transition-transform hover:scale-[1.01] active:scale-95 ${SPECIAL_BUTTON.color}`}
           >
-            {test.name}
-            {test.isNew && (
-              <span className="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] px-2 py-0.5 rounded-full shadow-sm animate-pulse">
-                YENİ
-              </span>
-            )}
+            {SPECIAL_BUTTON.title}
           </Link>
-        ))}
+
+        </div>
       </div>
-      
-      {/* Tümünü Gör Linki */}
-      <Link 
-        href={allLink} 
-        className={`block text-center mt-5 text-xs font-bold uppercase tracking-wider opacity-60 hover:opacity-100 transition-opacity ${theme.title}`}
-      >
-        Tüm Testleri Gör →
-      </Link>
+
+      {/* --- SEO / FOOTER (SADECE EN ALTTA) --- */}
+      <footer className="py-8 text-center text-slate-400 text-sm border-t border-slate-200 bg-white">
+        <p>© 2024 TestDünya. Tüm hakları saklıdır.</p>
+      </footer>
+
     </div>
   );
 }
