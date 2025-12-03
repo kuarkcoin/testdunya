@@ -1,146 +1,132 @@
-import React, { useState } from 'react';
-import { Search, ArrowRight, BookOpen, ChevronRight, TrendingUp } from 'lucide-react';
+// app/page.tsx → Kopyala-yapıştır, çalıştır → BİTTİ!
+'use client';
 
-const exams = [
-  { key: "yks", name: "YKS", label: "Üniversite Sınavı", category: "academic", color: "bg-blue-50 text-blue-600" },
-  { key: "lgs", name: "LGS", label: "Liselere Geçiş", category: "school", color: "bg-orange-50 text-orange-600" },
-  { key: "kpss", name: "KPSS", label: "Kamu Personeli", category: "career", color: "bg-emerald-50 text-emerald-600" },
-  { key: "ehliyet", name: "Ehliyet", label: "Sürücü Belgesi", category: "life", color: "bg-purple-50 text-purple-600" },
-  { key: "ales", name: "ALES", label: "Akademik Kariyer", category: "academic", color: "bg-indigo-50 text-indigo-600" },
-  { key: "dgs", name: "DGS", label: "Dikey Geçiş", category: "academic", color: "bg-sky-50 text-sky-600" },
-  { key: "yokdil", name: "YÖKDİL", label: "Dil Sınavı", category: "language", color: "bg-rose-50 text-rose-600" },
-  { key: "tus", name: "TUS", label: "Tıpta Uzmanlık", category: "health", color: "bg-teal-50 text-teal-600" },
-];
+export default function Home() {
+  const startTest = (slug: string) => {
+    const attemptId = `a${Date.now()}`;
+    const num = slug.match(/\d+/)?.[0];
 
-export default function ModernHomePage() {
-  const [activeTab, setActiveTab] = useState('all');
+    // YDS Exam Pack
+    if (slug.startsWith('yds-exam-')) {
+      if (![1,2,3,4,5,6].includes(Number(num))) {
+        alert('Bu deneme çok yakında aktif olacak!');
+        return;
+      }
+      sessionStorage.setItem('em_attempt_payload', JSON.stringify({
+        attemptId,
+        testSlug: slug,
+        test: { title: `YDS Gerçek Deneme - Test ${num}`, duration: 150 },
+        questions: []
+      }));
+      window.location.href = `/quiz/${attemptId}`;
+      return;
+    }
 
-  // Basit filtreleme mantığı
-  const filteredExams = activeTab === 'all' 
-    ? exams 
-    : exams.filter(e => e.category === activeTab);
+    // Diğer testler (şimdilik hepsi aynı yere yönlendiriyor, sonra ayırırız)
+    sessionStorage.setItem('em_attempt_payload', JSON.stringify({
+      attemptId,
+      testSlug: slug,
+      test: { title: slug.replace(/-/g,' ').toUpperCase(), duration: 60 },
+      questions: []
+    }));
+    window.location.href = `/quiz/${attemptId}`;
+  };
 
   return (
-    <div className="min-h-screen bg-[#F8FAFC] text-slate-800 font-sans">
-      
-      {/* NAVBAR: Ultra Minimal */}
-      <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
-        <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-2 font-bold text-xl tracking-tight text-slate-900">
-            <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white text-sm">TD</div>
-            TestDünya
-          </div>
-          <div className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-500">
-            <a href="#" className="hover:text-indigo-600 transition-colors">Sınavlar</a>
-            <a href="#" className="hover:text-indigo-600 transition-colors">İstatistikler</a>
-            <button className="bg-slate-900 text-white px-5 py-2 rounded-full hover:bg-slate-800 transition-all hover:shadow-lg hover:shadow-indigo-500/20">
-              Giriş Yap
-            </button>
-          </div>
-        </div>
-      </nav>
+    <div className="min-h-screen bg-gradient-to-b from-indigo-50 via-white to-pink-50">
 
-      {/* HERO SECTION: Odaklı ve Temiz */}
-      <header className="relative pt-20 pb-16 px-6 text-center max-w-4xl mx-auto">
-        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-50 text-indigo-600 text-xs font-bold mb-6 border border-indigo-100">
-          <TrendingUp size={14} /> 2025 Müfredatı Hazır
-        </span>
-        
-        <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 mb-6 leading-tight">
-          Sınavına <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600">akıllı çalış</span>, <br className="hidden md:block" />
-          geleceğini şansa bırakma.
+      {/* HERO */}
+      <div className="pt-16 pb-12 text-center px-6">
+        <div className="mb-8">
+          <span className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-full text-lg font-bold shadow-lg">
+            ÜCRETSİZ & REKLAMSIZ
+          </span>
+        </div>
+        <h1 className="text-5xl md:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-700 mb-6">
+          İngilizce Seviyeni<br/>Ölç!
         </h1>
-        
-        <p className="text-lg text-slate-500 mb-10 max-w-2xl mx-auto leading-relaxed">
-          YKS, LGS, KPSS ve daha fazlası. Karmaşık menüler yok. 
-          Hedeflediğin sınavı seç ve binlerce çıkmış soruyu hemen çözmeye başla.
-        </p>
+        <button
+          onClick={() => startTest('quick-placement')}
+          className="mt-8 bg-gradient-to-r from-blue-600 to-indigo-700 text-white text-2xl font-bold px-12 py-8 rounded-3xl shadow-2xl hover:scale-105 active:scale-95 transition-all"
+        >
+          HEMEN BAŞLA
+        </button>
+      </div>
 
-        {/* Modern Search Input */}
-        <div className="relative max-w-lg mx-auto group">
-          <div className="absolute inset-y-0 left-4 flex items-center text-slate-400 group-focus-within:text-indigo-500 transition-colors">
-            <Search size={20} />
-          </div>
-          <input 
-            type="text" 
-            placeholder="Hangi sınava hazırlanıyorsun? (Örn: TYT)" 
-            className="w-full pl-12 pr-4 py-4 bg-white rounded-2xl shadow-xl shadow-slate-200/60 border border-slate-100 outline-none focus:ring-2 focus:ring-indigo-500/20 transition-all text-slate-700 placeholder:text-slate-400"
-          />
+      {/* YDS EXAM PACK - BÜYÜK RENKLİ BUTONLAR */}
+      <div className="px-6 pb-16">
+        <h2 className="text-center text-4xl font-black text-pink-600 mb-10">
+          YDS GERÇEK DENEMELER
+        </h2>
+        <div className="grid grid-cols-2 gap-6 max-w-4xl mx-auto">
+          {[1,2,3,4,5,6,7,8].map(n => {
+            const aktif = n <= 6;
+            return (
+              <button
+                key={n}
+                onClick={() => startTest(`yds-exam-${n}`)}
+                disabled={!aktif}
+                className={`relative h-40 rounded-3xl font-black text-5xl shadow-2xl transition-all active:scale-95
+                  ${aktif 
+                    ? 'bg-gradient-to-br from-pink-500 to-rose-600 text-white hover:from-pink-600 hover:to-rose-700 ring-8 ring-pink-300 ring-opacity-50' 
+                    : 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                  }`}
+              >
+                <div className="absolute inset-0 flex flex-col items-center justify-center">
+                  <div>{n}</div>
+                  <div className="text-lg mt-2">{aktif ? 'BAŞLA' : 'YAKINDA'}</div>
+                </div>
+                {aktif && <div className="absolute inset-0 bg-white opacity-10 rounded-3xl"></div>}
+              </button>
+            );
+          })}
         </div>
-      </header>
+      </div>
 
-      {/* CONTENT AREA */}
-      <main className="max-w-6xl mx-auto px-6 pb-24">
-        
-        {/* Kategoriler (Pill Tabs) */}
-        <div className="flex flex-wrap justify-center gap-2 mb-12">
-          {['all', 'academic', 'career'].map((tab) => (
-            <button
-              key={tab}
-              onClick={() => setActiveTab(tab)}
-              className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${
-                activeTab === tab 
-                  ? 'bg-slate-900 text-white shadow-md' 
-                  : 'bg-white text-slate-500 hover:bg-slate-50 border border-slate-200'
-              }`}
-            >
-              {tab === 'all' ? 'Tümü' : tab === 'academic' ? 'Akademik' : 'Kariyer & Memuriyet'}
-            </button>
-          ))}
-        </div>
+      {/* DİĞER TESTLER - RENKLİ UYGULAMA BUTONLARI */}
+      <div className="px-6 pb-32 space-y-8">
+        {[
+          {title: "Quick Placement Test", color: "from-blue-500 to-cyan-600", icon: "Target"},
+          {title: "Grammar Mega Test 100Q", color: "from-purple-500 to-pink-600", icon: "Brain"},
+          {title: "YDS Kelime 1000", color: "from-orange-500 to-red-600", icon: "Book"},
+          {title: "YDS Reading 40Q", color: "from-green-500 to-emerald-600", icon: "Passage"},
+          {title: "YDS Grammar 100Q", color: "from-indigo-500 to-blue-700", icon: "Grammar"},
+          {title: "Phrasal Verbs 340", color: "from-teal-500 to-cyan-700", icon: "Phrasal"},
+          {title: "IELTS Grammar 50Q", color: "from-sky-500 to-blue-600", icon: "IELTS"},
+        ].map((test, i) => (
+          <button
+            key={i}
+            onClick={() => startTest(test.title.toLowerCase().replace(/ /g, '-'))}
+            className={`w-full h-32 rounded-3xl bg-gradient-to-r ${test.color} text-white font-black text-3xl shadow-2xl hover:scale-[1.02] active:scale-98 transition-all flex items-center justify-center gap-6`}
+          >
+            <span className="text-6xl">{test.icon}</span>
+            <span>{test.title}</span>
+          </button>
+        ))}
 
-        {/* MODERN CARD GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {filteredExams.map((exam) => (
-            <div 
-              key={exam.key} 
-              className="group relative bg-white rounded-2xl p-6 border border-slate-100 shadow-[0_2px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 cursor-pointer overflow-hidden"
-            >
-              {/* Card Header */}
-              <div className="flex justify-between items-start mb-4">
-                <div className={`w-12 h-12 rounded-xl flex items-center justify-center text-lg font-bold ${exam.color}`}>
-                   {exam.name.substring(0, 1)}
-                </div>
-                <div className="opacity-0 group-hover:opacity-100 transition-opacity bg-slate-50 p-2 rounded-full text-slate-400 hover:text-indigo-600">
-                  <ArrowRight size={18} />
-                </div>
-              </div>
-
-              {/* Card Body */}
-              <div>
-                <h3 className="text-xl font-bold text-slate-900 mb-1">{exam.name}</h3>
-                <p className="text-sm text-slate-500 font-medium mb-6">{exam.label}</p>
-                
-                {/* Stats / Mini Info (Clean) */}
-                <div className="flex items-center gap-3 text-xs text-slate-400 font-medium border-t border-slate-50 pt-4">
-                  <span className="flex items-center gap-1">
-                    <BookOpen size={14} /> Testler
-                  </span>
-                  <span className="w-1 h-1 rounded-full bg-slate-300"></span>
-                  <span>Çıkmış Sorular</span>
-                </div>
-              </div>
-
-              {/* Hover Effect Background */}
-              <div className="absolute inset-0 border-2 border-transparent group-hover:border-indigo-500/10 rounded-2xl transition-all pointer-events-none"></div>
+        {/* RACE MODE - KIRMIZI BÜYÜK BUTON */}
+        <a
+          href="/race"
+          className="block w-full mt-16"
+        >
+          <div className="h-40 bg-gradient-to-r from-red-600 to-rose-700 rounded-3xl shadow-2xl flex items-center justify-center gap-8 hover:scale-105 active:scale-95 transition-all">
+            <span className="text-8xl">Trophy</span>
+            <div className="text-left">
+              <div className="text-4xl font-black">Global Race Mode</div>
+              <div className="text-xl opacity-90">Dünya ile yarış!</div>
             </div>
-          ))}
-
-          {/* "More" Card */}
-          <div className="flex flex-col items-center justify-center text-center p-6 rounded-2xl border-2 border-dashed border-slate-200 text-slate-400 hover:border-indigo-300 hover:text-indigo-500 hover:bg-indigo-50/30 transition-all cursor-pointer group">
-            <div className="mb-2 p-3 bg-slate-50 rounded-full group-hover:bg-white transition-colors">
-              <ChevronRight size={24} />
-            </div>
-            <span className="font-medium">Tüm Sınavları Gör</span>
           </div>
+        </a>
+      </div>
+
+      {/* SABİT ALT BAR (gerçek mobil app gibi) */}
+      <div className="fixed bottom-0 left-0 right-0 bg-white border-t-4 border-indigo-600 shadow-2xl">
+        <div className="flex justify-around items-center h-20">
+          <button className="text-indigo-600 font-bold text-xl">Ana Sayfa</button>
+          <button className="text-gray-500 font-bold text-xl">Sonuçlar</button>
+          <button className="text-gray-500 font-bold text-xl">Profil</button>
         </div>
-
-      </main>
-
-      {/* SIMPLE FOOTER */}
-      <footer className="border-t border-slate-100 py-12 text-center text-slate-400 text-sm bg-white">
-        <p>© 2025 TestDünya. Öğrenciler için sevgiyle tasarlandı.</p>
-      </footer>
+      </div>
     </div>
   );
 }
