@@ -3,136 +3,108 @@
 import Link from 'next/link';
 import { Navbar } from './components/Navbar';
 
-// Sınav Verileri (Senin listene göre renkli butonlar)
-const EXAM_BUTTONS = [
-  { 
-    id: 'yks', 
-    title: 'YKS', 
-    subtitle: 'Üniversite Sınavı', 
-    color: 'bg-blue-600 hover:bg-blue-700',
-    shadow: 'shadow-blue-200'
+// ANA SINAV KARTLARI
+const EXAMS = [
+  {
+    id: 'yks',
+    title: 'YKS',
+    subtitle: 'TYT + AYT',
+    gradient: 'from-emerald-400 to-emerald-600',
   },
-  { 
-    id: 'lgs', 
-    title: 'LGS', 
-    subtitle: 'Liselere Geçiş', 
-    color: 'bg-purple-600 hover:bg-purple-700',
-    shadow: 'shadow-purple-200'
+  {
+    id: 'tyt',
+    title: 'TYT',
+    subtitle: 'Temel Yeterlilik',
+    gradient: 'from-sky-400 to-sky-600',
   },
-  { 
-    id: 'kpss', 
-    title: 'KPSS', 
-    subtitle: 'Kamu Personeli', 
-    color: 'bg-emerald-600 hover:bg-emerald-700',
-    shadow: 'shadow-emerald-200'
+  {
+    id: 'lgs',
+    title: 'LGS',
+    subtitle: '8. Sınıf',
+    gradient: 'from-violet-500 to-fuchsia-600',
   },
-  { 
-    id: 'ehliyet', 
-    title: 'Ehliyet', 
-    subtitle: 'Sürücü Belgesi', 
-    color: 'bg-orange-500 hover:bg-orange-600',
-    shadow: 'shadow-orange-200'
+  {
+    id: 'kpss',
+    title: 'KPSS',
+    subtitle: 'GY + GK',
+    gradient: 'from-orange-400 to-amber-600',
   },
-  { 
-    id: 'aol', 
-    title: 'AÖL', 
-    subtitle: 'Açık Lise', 
-    color: 'bg-sky-500 hover:bg-sky-600',
-    shadow: 'shadow-sky-200'
+  {
+    id: 'ehliyet',
+    title: 'Ehliyet',
+    subtitle: 'E-Sınav',
+    gradient: 'from-cyan-400 to-teal-600',
   },
-  { 
-    id: 'dgs', 
-    title: 'DGS', 
-    subtitle: 'Dikey Geçiş', 
-    color: 'bg-pink-500 hover:bg-pink-600',
-    shadow: 'shadow-pink-200'
-  },
-  { 
-    id: 'ales', 
-    title: 'ALES', 
-    subtitle: 'Akademik Sınav', 
-    color: 'bg-indigo-500 hover:bg-indigo-600',
-    shadow: 'shadow-indigo-200'
-  },
-  { 
-    id: 'yokdil', 
-    title: 'YÖKDİL', 
-    subtitle: 'Yabancı Dil', 
-    color: 'bg-teal-500 hover:bg-teal-600',
-    shadow: 'shadow-teal-200'
-  },
-  { 
-    id: 'tus', 
-    title: 'TUS', 
-    subtitle: 'Tıpta Uzmanlık', 
-    color: 'bg-rose-500 hover:bg-rose-600',
-    shadow: 'shadow-rose-200'
-  },
-  { 
-    id: 'dus', 
-    title: 'DUS', 
-    subtitle: 'Diş Hekimliği', 
-    color: 'bg-cyan-600 hover:bg-cyan-700',
-    shadow: 'shadow-cyan-200'
+  {
+    id: 'ales',
+    title: 'ALES',
+    subtitle: 'Sayısal',
+    gradient: 'from-pink-400 to-rose-600',
   },
 ];
 
+const TEST_LIST = [1, 2, 3, 4, 5];
+
 export default function Home() {
   return (
-    <div className="min-h-screen bg-slate-50 font-sans pb-20">
+    <div className="min-h-screen bg-slate-100">
       <Navbar />
 
-      <main className="max-w-5xl mx-auto px-4 pt-12">
-        
-        {/* BAŞLIK */}
+      <main className="max-w-5xl mx-auto px-4 pt-8 pb-20">
+
+        {/* Başlık */}
         <div className="text-center mb-10">
-          <h1 className="text-4xl font-black text-slate-800 mb-2">
-            Sınavını Seç
+          <h1 className="text-4xl md:text-5xl font-black text-slate-800 tracking-tight">
+            Tüm Sınavlar Bir Arada
           </h1>
-          <p className="text-slate-500 font-medium">
-            Test çözmek istediğin alanı seç ve hemen başla.
+          <p className="text-slate-500 mt-2 text-sm md:text-base">
+            YKS, TYT, LGS, KPSS, Ehliyet ve daha fazlası
           </p>
         </div>
 
-        {/* --- SINAV BUTONLARI IZGARASI (GRID) --- */}
-        {/* Mobilde: 2 yan yana (grid-cols-2)
-            Tablette: 3 yan yana (md:grid-cols-3)
-            Bilgisayarda: 4 yan yana (lg:grid-cols-4)
-        */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-          
-          {EXAM_BUTTONS.map((exam) => (
-            <Link 
-              key={exam.id} 
-              href={`/test/${exam.id}`}
-              className={`
-                group flex flex-col items-center justify-center 
-                py-8 px-4 rounded-2xl text-white 
-                shadow-lg transition-all duration-300 
-                hover:scale-105 hover:shadow-xl active:scale-95
-                ${exam.color}
-              `}
+        {/* Ana sınav kartları */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          {EXAMS.map((exam) => (
+            <div
+              key={exam.id}
+              className="rounded-3xl bg-white shadow-xl border border-slate-200 p-6 hover:shadow-2xl transition-all"
             >
-              <span className="text-2xl md:text-3xl font-black mb-1 group-hover:scale-110 transition-transform">
+              {/* Büyük renkli sınav butonu */}
+              <Link
+                href={`/exam/${exam.id}`}
+                className={`block rounded-2xl bg-gradient-to-r ${exam.gradient} 
+                text-white text-center py-5 text-xl font-bold shadow-md active:scale-95 transition`}
+              >
                 {exam.title}
-              </span>
-              <span className="text-xs md:text-sm font-medium opacity-90 text-center">
-                {exam.subtitle}
-              </span>
-            </Link>
+              </Link>
+
+              {/* Test 1–5 */}
+              <div className="mt-4 grid grid-cols-3 gap-2">
+                {TEST_LIST.map((n) => (
+                  <Link
+                    key={n}
+                    href={`/test/${exam.id}-test-${n}`}
+                    className="rounded-xl bg-slate-100 border border-slate-200 
+                    py-2 text-center text-xs font-semibold text-slate-700
+                    hover:bg-slate-200 active:scale-95 transition"
+                  >
+                    Test {n}
+                  </Link>
+                ))}
+              </div>
+            </div>
           ))}
-
         </div>
 
-        {/* --- ALTTA GENİŞ BİR BUTON (OPSİYONEL) --- */}
-        <div className="mt-12">
-             <Link 
-                href="/turkiye-geneli" 
-                className="block w-full bg-red-600 hover:bg-red-700 text-white text-center font-black text-xl py-6 rounded-2xl shadow-lg transition-transform hover:scale-[1.01]"
-             >
-                🏁 TÜRKİYE GENELİ SIRALAMA SINAVLARI
-             </Link>
-        </div>
+        {/* Türkiye Geneli */}
+        <Link
+          href="/turkiye-geneli"
+          className="block w-full rounded-3xl bg-gradient-to-r from-red-600 to-red-700 
+          shadow-xl py-6 text-center text-xl text-white font-black 
+          hover:shadow-2xl active:scale-95 transition"
+        >
+          🇹🇷 Türkiye Geneli Sıralama Sınavı
+        </Link>
 
       </main>
     </div>
