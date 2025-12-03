@@ -1,47 +1,29 @@
+// app/layout.tsx
 import type { Metadata } from "next";
+import { Plus_Jakarta_Sans } from "next/font/google"; // Modern font bu
 import "./globals.css";
 
+// Font ayarları
+const font = Plus_Jakarta_Sans({ 
+  subsets: ["latin"],
+  weight: ['400', '500', '600', '700', '800'],
+  variable: '--font-jakarta',
+});
+
 export const metadata: Metadata = {
-  title: "TestDünya – Ücretsiz YKS, LGS, KPSS ve Tüm Sınav Testleri",
-  description:
-    "TestDünya; YKS, LGS, KPSS, Ehliyet, ALES, YÖKDİL, DGS, TUS, DUS ve AÖL için ücretsiz online deneme sınavları ve konu tarama testleri sunan modern test platformudur.",
-  metadataBase: new URL("https://www.testdunya.net"),
-  openGraph: {
-    title: "TestDünya – Türkiye'nin Sınav Test Platformu",
-    description:
-      "YKS, LGS, KPSS, Ehliyet, ALES, YÖKDİL, DGS, TUS, DUS ve AÖL testlerini tek sitede çözün. Ücretsiz, hızlı, üye olmadan çözmeye başlayın.",
-    url: "https://www.testdunya.net",
-    siteName: "TestDünya",
-    locale: "tr_TR",
-    type: "website",
-  },
-  alternates: {
-    canonical: "https://www.testdunya.net",
-  },
+  title: "TestDünya - Türkiye'nin Online Test Platformu",
+  description: "YKS, LGS, KPSS ve Ehliyet sınavları için ücretsiz deneme çöz.",
 };
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
-    <html lang="tr">
-      <body>
-        <div className="app-shell">
-          <main className="app-main">{children}</main>
-          <footer className="td-footer">
-            <div className="td-footer-inner">
-              <p className="td-footer-text">
-                © {new Date().getFullYear()} TestDünya. Tüm hakları saklıdır.
-              </p>
-              <div className="td-footer-links">
-                <span>Gizlilik Politikası (yakında)</span>
-                <span>Hakkımızda (yakında)</span>
-              </div>
-            </div>
-          </footer>
-        </div>
+    <html lang="tr" className="scroll-smooth">
+      <body className={`${font.className} antialiased bg-slate-50 text-slate-900`}>
+        {children}
       </body>
     </html>
   );
