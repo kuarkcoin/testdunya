@@ -1,177 +1,80 @@
 // app/data/exams.ts
 
-// --- TİP TANIMLARI ---
+export interface SubTest {
+  id: string;
+  name: string;
+  isNew?: boolean; // 'YENİ' etiketi için
+}
 
 export interface Exam {
   key: string;
   name: string;
   label: string;
-  score: number;
-  monthly: string;
-  tags: string[];
-  highlight: string;
-  color: string;  // Arka plan rengi
-  shadow: string; // Gölge rengi
+  colorTheme: string; // Renk teması (blue, orange, red vs.)
+  tests: SubTest[];
 }
-
-export interface TestItem {
-  id: string;
-  label: string;
-}
-
-export interface Category {
-  title: string;
-  slug: string;
-  icon: string; // Emoji veya ikon
-  tests: TestItem[];
-}
-
-// --- POPÜLER SINAVLAR (BÜYÜK RENKLİ KARTLAR) ---
 
 export const EXAMS: Exam[] = [
   {
     key: "yks",
-    name: "YKS",
-    label: "Üniversite Sınavı",
-    score: 100,
-    monthly: "1.5–2M",
-    tags: ["TYT", "AYT", "Sayısal", "EA"],
-    highlight: "En popüler",
-    color: "bg-blue-600 hover:bg-blue-700",
-    shadow: "shadow-blue-200",
+    name: "YKS & Üniversite",
+    label: "TYT - AYT - YDT",
+    colorTheme: "blue", // Mavi Tema
+    tests: [
+      { id: "tyt-deneme-1", name: "TYT Deneme 1", isNew: true },
+      { id: "tyt-deneme-2", name: "TYT Deneme 2" },
+      { id: "ayt-mat-1", name: "AYT Matematik" },
+      { id: "ayt-fen-1", name: "AYT Fen Bilimleri" },
+      { id: "ayt-edb-1", name: "AYT Edebiyat-Sos" },
+      { id: "ydt-ing-1", name: "YDT İngilizce" },
+    ]
   },
   {
     key: "lgs",
-    name: "LGS",
-    label: "Liselere Geçiş",
-    score: 95,
-    monthly: "600–900K",
-    tags: ["8. Sınıf", "Matematik", "Fen"],
-    highlight: "Liseye hazırlık",
-    color: "bg-orange-500 hover:bg-orange-600",
-    shadow: "shadow-orange-200",
+    name: "LGS Hazırlık",
+    label: "8. Sınıf Sınavları",
+    colorTheme: "orange", // Turuncu Tema
+    tests: [
+      { id: "lgs-genel-1", name: "LGS Genel Deneme 1", isNew: true },
+      { id: "lgs-mat-1", name: "LGS Matematik" },
+      { id: "lgs-fen-1", name: "LGS Fen Bilimleri" },
+      { id: "lgs-turkce-1", name: "LGS Türkçe" },
+    ]
   },
   {
     key: "kpss",
-    name: "KPSS",
-    label: "Kamu Personeli",
-    score: 85,
-    monthly: "500–700K",
-    tags: ["Genel Kültür", "Eğitim", "ÖABT"],
-    highlight: "Memuriyet",
-    color: "bg-red-600 hover:bg-red-700",
-    shadow: "shadow-red-200",
+    name: "KPSS & Memuriyet",
+    label: "Lisans - Önlisans",
+    colorTheme: "rose", // Gül Rengi Tema
+    tests: [
+      { id: "kpss-gy-gk-1", name: "KPSS GY-GK Deneme", isNew: true },
+      { id: "kpss-egitim-1", name: "Eğitim Bilimleri" },
+      { id: "kpss-tarih", name: "Tarih Taraması" },
+      { id: "kpss-cografya", name: "Coğrafya Taraması" },
+    ]
   },
   {
     key: "ehliyet",
-    name: "Ehliyet",
-    label: "Sürücü Belgesi",
-    score: 75,
-    monthly: "400–600K",
-    tags: ["Motor", "İlkyardım", "Trafik"],
-    highlight: "Sürücü adayları",
-    color: "bg-emerald-600 hover:bg-emerald-700",
-    shadow: "shadow-emerald-200",
-  },
-  {
-    key: "ales",
-    name: "ALES",
-    label: "Akademik Personel",
-    score: 60,
-    monthly: "150–300K",
-    tags: ["Sayısal Mantık", "Sözel"],
-    highlight: "Yüksek Lisans",
-    color: "bg-purple-600 hover:bg-purple-700",
-    shadow: "shadow-purple-200",
-  },
-  {
-    key: "yokdil",
-    name: "YÖKDİL",
-    label: "Yabancı Dil",
-    score: 50,
-    monthly: "100–250K",
-    tags: ["Fen", "Sağlık", "Sosyal"],
-    highlight: "Akademik Dil",
-    color: "bg-teal-600 hover:bg-teal-700",
-    shadow: "shadow-teal-200",
-  },
-];
-
-// --- BRANŞ/DERS KATEGORİLERİ VE ALT TESTLER ---
-
-export const CATEGORIES: Category[] = [
-  { 
-    title: 'Matematik', 
-    slug: 'matematik',
-    icon: '📐',
+    name: "Ehliyet Sınavı",
+    label: "E-Sınav Müfredatı",
+    colorTheme: "emerald", // Yeşil Tema
     tests: [
-      { id: 'mat-tyt-1', label: 'TYT Matematik Deneme 1' },
-      { id: 'mat-temel', label: 'Temel Kavramlar Testi' },
-      { id: 'mat-problem', label: 'Problemler Karma' }
+      { id: "ehliyet-deneme-1", name: "Çıkmış Sorular 2024", isNew: true },
+      { id: "ehliyet-motor", name: "Motor & Araç Tekniği" },
+      { id: "ehliyet-ilkyardim", name: "İlk Yardım Bilgisi" },
+      { id: "ehliyet-trafik", name: "Trafik & Çevre" },
     ]
   },
-  { 
-    title: 'Türkçe', 
-    slug: 'turkce',
-    icon: '📚',
+    {
+    key: "diger",
+    name: "Akademik (ALES-YÖKDİL)",
+    label: "Yüksek Lisans",
+    colorTheme: "violet", // Mor Tema
     tests: [
-      { id: 'turkce-tyt-1', label: 'TYT Türkçe Deneme 1' },
-      { id: 'turkce-paragraf', label: 'Paragraf Hız Testi' },
-      { id: 'turkce-dilbilgisi', label: 'Dil Bilgisi Karma' }
-    ]
-  },
-  { 
-    title: 'Tarih', 
-    slug: 'tarih',
-    icon: '🏛️',
-    tests: [
-      { id: 'tarih-genel-1', label: 'Tarih Genel Tekrar' },
-      { id: 'tarih-inkilap', label: 'İnkılap Tarihi' }
-    ]
-  },
-  { 
-    title: 'Coğrafya', 
-    slug: 'cografya',
-    icon: '🌍',
-    tests: [
-      { id: 'cog-harita', label: 'Harita Bilgisi' },
-      { id: 'cog-tyt-1', label: 'TYT Coğrafya Deneme' }
-    ]
-  },
-  { 
-    title: 'Fizik', 
-    slug: 'fizik',
-    icon: '⚡',
-    tests: [
-      { id: 'fizik-kuvvet', label: 'Kuvvet ve Hareket' },
-      { id: 'fizik-elektrik', label: 'Elektrik & Manyetizma' }
-    ]
-  },
-  { 
-    title: 'Kimya', 
-    slug: 'kimya',
-    icon: '🧪',
-    tests: [
-      { id: 'kimya-madde', label: 'Madde ve Özellikleri' },
-      { id: 'kimya-organik', label: 'Organik Kimya Giriş' }
-    ]
-  },
-   { 
-    title: 'Biyoloji', 
-    slug: 'biyoloji',
-    icon: '🧬',
-    tests: [
-      { id: 'biyo-hucre', label: 'Hücre ve Yapısı' },
-      { id: 'biyo-sistem', label: 'İnsan Fizyolojisi' }
-    ]
-  },
-  { 
-    title: 'Geometri', 
-    slug: 'geometri',
-    icon: '📏',
-    tests: [
-      { id: 'geo-ucgen', label: 'Üçgenler Tarama' },
-      { id: 'geo-cokgen', label: 'Çokgenler ve Dörtgenler' }
+      { id: "ales-sayisal", name: "ALES Sayısal" },
+      { id: "ales-sozel", name: "ALES Sözel" },
+      { id: "yokdil-fen", name: "YÖKDİL Fen" },
+      { id: "yokdil-sosyal", name: "YÖKDİL Sosyal" },
     ]
   },
 ];
