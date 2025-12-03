@@ -88,8 +88,8 @@ export default function Home() {
             </span>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-            {[1, 2, 3, 4].map((num) => (
+          <div className="grid grid-cols-2 sm:grid-cols-5 gap-4">
+            {[1, 2, 3, 4, 5].map((num) => (
               <Link key={num} href={`/test/tyt-matematik-${num}`} className="bg-gradient-to-br from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white py-6 rounded-2xl text-center shadow-lg transition-all hover:shadow-xl hover:-translate-y-1">
                 <div className="font-bold text-xl mb-1">Test {num}</div>
                 <div className="text-xs uppercase opacity-90 font-semibold">Başla</div>
@@ -109,7 +109,7 @@ export default function Home() {
             </span>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-5 gap-4">
             {[1, 2, 3, 4, 5].map((num) => (
               <Link key={num} href={`/test/lgs-${num}`} className="bg-gradient-to-br from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white py-6 rounded-2xl text-center shadow-lg transition-all hover:shadow-xl hover:-translate-y-1">
                 <div className="font-bold text-xl mb-1">Test {num}</div>
@@ -130,8 +130,8 @@ export default function Home() {
             </span>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-            {[1, 2, 3, 4, 5, 6].map((num) => (
+          <div className="grid grid-cols-2 sm:grid-cols-5 gap-4">
+            {[1, 2, 3, 4, 5].map((num) => (
               <Link key={num} href={`/test/kpss-${num}`} className="bg-gradient-to-br from-sky-500 to-sky-600 hover:from-sky-600 hover:to-sky-700 text-white py-6 rounded-2xl text-center shadow-lg transition-all hover:shadow-xl hover:-translate-y-1">
                 <div className="font-bold text-xl mb-1">Test {num}</div>
                 <div className="text-xs uppercase opacity-90 font-semibold">Başla</div>
@@ -151,8 +151,8 @@ export default function Home() {
             </span>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-            {[1, 2, 3, 4].map((num) => (
+          <div className="grid grid-cols-2 sm:grid-cols-5 gap-4">
+            {[1, 2, 3, 4, 5].map((num) => (
               <Link key={num} href={`/test/ales-${num}`} className="bg-gradient-to-br from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white py-6 rounded-2xl text-center shadow-lg transition-all hover:shadow-xl hover:-translate-y-1">
                 <div className="font-bold text-xl mb-1">Test {num}</div>
                 <div className="text-xs uppercase opacity-90 font-semibold">Başla</div>
@@ -172,7 +172,7 @@ export default function Home() {
             </span>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-5 gap-4">
             {[1, 2, 3, 4, 5].map((num) => (
               <Link key={num} href={`/test/yokdil-${num}`} className="bg-gradient-to-br from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white py-6 rounded-2xl text-center shadow-lg transition-all hover:shadow-xl hover:-translate-y-1">
                 <div className="font-bold text-xl mb-1">Test {num}</div>
@@ -190,3 +190,4 @@ export default function Home() {
       </main>
     </div>
   );
+}
