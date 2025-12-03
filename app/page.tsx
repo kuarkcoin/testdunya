@@ -1,193 +1,300 @@
-'use client';
+const exams = [
+  {
+    key: "yks",
+    name: "YKS",
+    label: "Üniversite Sınavı",
+    score: 100,
+    monthly: "1.5–2M",
+    tags: ["TYT", "AYT", "Sayısal", "Eşit Ağırlık"],
+    highlight: "En yüksek arama hacmi",
+  },
+  {
+    key: "lgs",
+    name: "LGS",
+    label: "Liselere Geçiş",
+    score: 85,
+    monthly: "600–900K",
+    tags: ["8. sınıf", "Yeni nesil", "MEB"],
+    highlight: "Ortaokuldan liseye geçiş",
+  },
+  {
+    key: "kpss",
+    name: "KPSS",
+    label: "Kamu Personeli",
+    score: 70,
+    monthly: "500–700K",
+    tags: ["Genel Yetenek", "Genel Kültür", "Eğitim Bilimleri"],
+    highlight: "Memuriyet hedefleyenler için",
+  },
+  {
+    key: "ehliyet",
+    name: "Ehliyet",
+    label: "Sürücü Belgesi",
+    score: 65,
+    monthly: "400–600K",
+    tags: ["Trafik", "İlk yardım", "Motor"],
+    highlight: "Çıkmış sorulardan güncel testler",
+  },
+  {
+    key: "aol",
+    name: "AÖL",
+    label: "Açık Lise",
+    score: 55,
+    monthly: "300–500K",
+    tags: ["Açık lise", "Kredi sistemi"],
+    highlight: "Açık lise öğrencilerine özel",
+  },
+  {
+    key: "dgs",
+    name: "DGS",
+    label: "Dikey Geçiş",
+    score: 45,
+    monthly: "200–400K",
+    tags: ["Sözel mantık", "Sayısal mantık"],
+    highlight: "Önlisans → Lisans geçişi",
+  },
+  {
+    key: "ales",
+    name: "ALES",
+    label: "Akademik Sınav",
+    score: 40,
+    monthly: "150–300K",
+    tags: ["Lisansüstü", "Akademik kariyer"],
+    highlight: "Yüksek lisans ve doktora için",
+  },
+  {
+    key: "yokdil",
+    name: "YÖKDİL",
+    label: "Yabancı Dil",
+    score: 35,
+    monthly: "100–250K",
+    tags: ["İngilizce", "Akademik İngilizce"],
+    highlight: "YDS hariç, YÖKDİL odaklı",
+  },
+  {
+    key: "tus",
+    name: "TUS",
+    label: "Tıpta Uzmanlık",
+    score: 30,
+    monthly: "80–150K",
+    tags: ["Tıp", "Klinik bilimler"],
+    highlight: "Doktorlar için uzmanlık sınavı",
+  },
+  {
+    key: "dus",
+    name: "DUS",
+    label: "Diş Hekimliği",
+    score: 25,
+    monthly: "50–100K",
+    tags: ["Diş hekimliği", "Uzmanlık"],
+    highlight: "Diş hekimlerine özel testler",
+  },
+];
 
-import Link from 'next/link';
-import { Navbar } from './components/Navbar';
-
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="min-h-screen bg-slate-50 font-sans pb-20">
-      <Navbar />
-
-      <main className="max-w-6xl mx-auto px-4 pt-10">
-        
-        {/* ÜST 3 BÜYÜK BUTON */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-          <Link href="/test/hizli-test" className="bg-blue-600 hover:bg-blue-700 text-white rounded-2xl py-8 px-6 text-center shadow-lg transition-all hover:shadow-xl flex flex-col items-center justify-center">
-            <span className="text-2xl font-bold">Hızlı Seviye Testi</span>
-            <span className="text-sm opacity-90 mt-2">Karışık 20 Soru</span>
-          </Link>
-
-          <Link href="/test/tyt-mega" className="bg-purple-600 hover:bg-purple-700 text-white rounded-2xl py-8 px-6 text-center shadow-lg transition-all hover:shadow-xl flex flex-col items-center justify-center">
-            <span className="text-2xl font-bold">TYT Mega Test (120S)</span>
-            <span className="text-sm opacity-90 mt-2">Gerçek Sınav Modu</span>
-          </Link>
-
-          <Link href="/test/kelime" className="bg-orange-500 hover:bg-orange-600 text-white rounded-2xl py-8 px-6 text-center shadow-lg transition-all hover:shadow-xl flex flex-col items-center justify-center">
-            <span className="text-2xl font-bold">En Çok Çıkan Kelimeler</span>
-            <span className="text-sm opacity-90 mt-2">YDT & YÖKDİL</span>
-          </Link>
+    <div className="td-container">
+      {/* NAVBAR */}
+      <header className="td-navbar">
+        <div className="td-logo">
+          <div className="td-logo-icon">
+            <div className="td-logo-inner">TD</div>
+          </div>
+          <div className="td-logo-text">
+            <div className="td-logo-title">TestDünya</div>
+            <div className="td-logo-sub">
+              YKS, LGS, KPSS, Ehliyet ve tüm sınav testleri
+            </div>
+          </div>
         </div>
 
-        {/* PEMBE EXAM PACK ALANI */}
-        <div className="bg-gradient-to-br from-pink-50 to-pink-100 border-2 border-pink-200 rounded-3xl p-8 mb-6 shadow-md">
-          <div className="flex flex-col sm:flex-row justify-between items-center mb-6">
-            <h2 className="text-2xl font-black text-pink-600 uppercase tracking-wider">
-              TR YKS EXAM PACK
-            </h2>
-            <span className="bg-white text-pink-600 text-xs font-bold px-4 py-2 rounded-full border-2 border-pink-300 shadow-sm mt-2 sm:mt-0">
-              Gerçek Sınav Modu (80 Soru)
-            </span>
+        <nav className="td-nav-links" aria-label="Ana menü">
+          <div className="td-nav-pill">
+            <span />
+            <span>2025 sınav takvimi odaklı</span>
+          </div>
+          <a href="#popular" className="td-nav-link">
+            Popüler sınavlar
+          </a>
+          <a href="#all-exams" className="td-nav-link">
+            Tüm sınavlar
+          </a>
+          <a href="#how-it-works" className="td-nav-link">
+            Nasıl çalışır?
+          </a>
+          <button className="td-nav-cta" type="button">
+            Hemen test çöz
+            <span aria-hidden="true">↗</span>
+          </button>
+        </nav>
+      </header>
+
+      {/* HERO */}
+      <section className="td-hero-layout">
+        <div className="td-hero-card">
+          <div className="td-hero-tag-row">
+            <div className="td-hero-tag">
+              Türkiye odaklı sınav platformu
+              <span className="td-hero-tag-badge">Ücretsiz &amp; sınırsız</span>
+            </div>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-            {[1, 2, 3, 4, 5, 6].map((num) => (
-              <Link key={num} href={`/test/yks-${num}`} className="bg-gradient-to-br from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white py-6 rounded-2xl text-center shadow-lg transition-all hover:shadow-xl hover:-translate-y-1">
-                <div className="font-bold text-xl mb-1">Test {num}</div>
-                <div className="text-xs uppercase opacity-90 font-semibold">Başla</div>
-              </Link>
-            ))}
+          <h1 className="td-hero-title">
+            Tüm büyük sınavlar{" "}
+            <span>tek sitede, akıllı test sistemiyle.</span>
+          </h1>
 
-            {[7, 8].map((num) => (
-              <div key={num} className="bg-white border-2 border-pink-200 text-pink-300 py-6 rounded-2xl text-center cursor-not-allowed opacity-60">
-                <div className="font-bold text-xl mb-1">Test {num}</div>
-                <div className="text-xs uppercase font-semibold">Kilitli</div>
+          <p className="td-hero-sub">
+            <strong>TestDünya</strong>, YKS, LGS, KPSS, Ehliyet, ALES, YÖKDİL, DGS,
+            TUS, DUS ve AÖL için modern{" "}
+            <strong>online deneme sınavları</strong> sunar. Üye olmadan hemen
+            başlamayı, ileride ise detaylı istatistik ve sıralamaları
+            hedefliyoruz.
+          </p>
+
+          <div className="td-hero-actions">
+            <button className="td-hero-primary" type="button">
+              YKS ile başla
+              <span aria-hidden="true">▶</span>
+            </button>
+            <button className="td-hero-secondary" type="button">
+              Diğer sınavları gör
+              <span aria-hidden="true">↓</span>
+            </button>
+          </div>
+
+          <p className="td-hero-footnote">
+            YDS bu projede yok; YDS tarafını{" "}
+            <strong>EnglishMeter</strong> üzerinde detaylı şekilde geliştirmeye
+            devam edeceğiz.
+          </p>
+        </div>
+
+        <aside className="td-hero-right" aria-label="Sınav istatistikleri">
+          <div className="td-hero-metrics">
+            <div className="td-metric-card">
+              <div className="td-metric-label">Aylık toplam arama hacmi</div>
+              <div className="td-metric-value">3–5 milyon+</div>
+              <div className="td-metric-pill">YKS &amp; LGS zirvede</div>
+            </div>
+
+            <div className="td-metric-card">
+              <div className="td-metric-label">Hedeflenen sınav türü</div>
+              <div className="td-metric-value">10+</div>
+              <div className="td-metric-list">
+                <span className="td-metric-chip">YKS</span>
+                <span className="td-metric-chip">LGS</span>
+                <span className="td-metric-chip">KPSS</span>
+                <span className="td-metric-chip">Ehliyet</span>
               </div>
-            ))}
+            </div>
+
+            <div className="td-metric-card">
+              <div className="td-metric-label">Soru tipi hedefi</div>
+              <div className="td-metric-value">Çıkmış + özgün</div>
+              <div className="td-metric-list">
+                <span className="td-metric-chip">Konu tarama</span>
+                <span className="td-metric-chip">Mini deneme</span>
+                <span className="td-metric-chip">Tam deneme</span>
+              </div>
+            </div>
+
+            <div className="td-metric-card" id="how-it-works">
+              <div className="td-metric-label">TestDünya nasıl işleyecek?</div>
+              <div className="td-metric-list">
+                <span className="td-metric-chip">1. Sınavını seç</span>
+                <span className="td-metric-chip">2. Test türünü belirle</span>
+                <span className="td-metric-chip">3. Soruları çöz</span>
+                <span className="td-metric-chip">4. Detaylı analiz gör (yakında)</span>
+              </div>
+            </div>
           </div>
+        </aside>
+      </section>
+
+      {/* EXAM GRID */}
+      <section id="popular" className="td-section-header">
+        <div>
+          <h2 className="td-section-title">Popüler sınavlar</h2>
+          <p className="td-section-sub">
+            Yüksek arama hacmine ve yoğun rekabete sahip sınavlara öncelik veriyoruz.
+          </p>
         </div>
-
-        {/* TYT TÜRKÇE PACK */}
-        <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 border-2 border-indigo-200 rounded-3xl p-8 mb-6 shadow-md">
-          <div className="flex flex-col sm:flex-row justify-between items-center mb-6">
-            <h2 className="text-2xl font-black text-indigo-600 uppercase tracking-wider">
-              TYT TÜRKÇE PACK
-            </h2>
-            <span className="bg-white text-indigo-600 text-xs font-bold px-4 py-2 rounded-full border-2 border-indigo-300 shadow-sm mt-2 sm:mt-0">
-              40 Soru
-            </span>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-5 gap-4">
-            {[1, 2, 3, 4, 5].map((num) => (
-              <Link key={num} href={`/test/tyt-turce-${num}`} className="bg-gradient-to-br from-indigo-500 to-indigo-600 hover:from-indigo-600 hover:to-indigo-700 text-white py-6 rounded-2xl text-center shadow-lg transition-all hover:shadow-xl hover:-translate-y-1">
-                <div className="font-bold text-xl mb-1">Test {num}</div>
-                <div className="text-xs uppercase opacity-90 font-semibold">Başla</div>
-              </Link>
-            ))}
-          </div>
+        <div className="td-section-filters">
+          <button
+            className="td-filter-pill td-filter-pill--active"
+            type="button"
+          >
+            YKS &amp; LGS
+          </button>
+          <button className="td-filter-pill" type="button">
+            Mezun &amp; KPSS
+          </button>
+          <button className="td-filter-pill" type="button">
+            Dil &amp; Lisansüstü
+          </button>
+          <button className="td-filter-pill" type="button">
+            Sağlık (TUS &amp; DUS)
+          </button>
         </div>
+      </section>
 
-        {/* TYT MATEMATİK PACK */}
-        <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 border-2 border-emerald-200 rounded-3xl p-8 mb-6 shadow-md">
-          <div className="flex flex-col sm:flex-row justify-between items-center mb-6">
-            <h2 className="text-2xl font-black text-emerald-600 uppercase tracking-wider">
-              TYT MATEMATİK PACK
-            </h2>
-            <span className="bg-white text-emerald-600 text-xs font-bold px-4 py-2 rounded-full border-2 border-emerald-300 shadow-sm mt-2 sm:mt-0">
-              40 Soru
-            </span>
-          </div>
+      <section id="all-exams">
+        <div className="td-exam-grid" aria-label="Sınav listesi">
+          {exams.map((exam) => (
+            <article key={exam.key} className="td-exam-card">
+              <div className="td-exam-header">
+                <div>
+                  <div className="td-exam-name">
+                    {exam.name}{" "}
+                    <span style={{ opacity: 0.7, fontWeight: 400 }}>
+                      · {exam.label}
+                    </span>
+                  </div>
+                  <div className="td-exam-score">
+                    İlgi skoru: {exam.score}/100 · Aylık arama: {exam.monthly}
+                  </div>
+                </div>
+                {exam.score >= 80 ? (
+                  <span className="td-exam-badge">Trend</span>
+                ) : exam.score >= 60 ? (
+                  <span className="td-exam-badge">Stabil</span>
+                ) : (
+                  <span className="td-exam-badge">Niş</span>
+                )}
+              </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-5 gap-4">
-            {[1, 2, 3, 4, 5].map((num) => (
-              <Link key={num} href={`/test/tyt-matematik-${num}`} className="bg-gradient-to-br from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white py-6 rounded-2xl text-center shadow-lg transition-all hover:shadow-xl hover:-translate-y-1">
-                <div className="font-bold text-xl mb-1">Test {num}</div>
-                <div className="text-xs uppercase opacity-90 font-semibold">Başla</div>
-              </Link>
-            ))}
-          </div>
+              <div className="td-progress-track" aria-hidden="true">
+                <div
+                  className="td-progress-bar"
+                  style={{ transform: `scaleX(${exam.score / 100})` }}
+                />
+              </div>
+
+              <div className="td-exam-tags">
+                {exam.tags.map((tag) => (
+                  <span key={tag} className="td-exam-tag">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+
+              <div className="td-exam-footer">
+                <button className="td-exam-cta td-exam-cta--primary" type="button">
+                  {exam.name} testlerini gör
+                </button>
+                <button className="td-exam-cta" type="button">
+                  Çıkmış sorular &amp; analiz
+                </button>
+              </div>
+
+              <p className="td-exam-score" style={{ marginTop: "0.4rem" }}>
+                {exam.highlight}
+              </p>
+            </article>
+          ))}
         </div>
-
-        {/* LGS PACK */}
-        <div className="bg-gradient-to-br from-teal-50 to-teal-100 border-2 border-teal-200 rounded-3xl p-8 mb-6 shadow-md">
-          <div className="flex flex-col sm:flex-row justify-between items-center mb-6">
-            <h2 className="text-2xl font-black text-teal-600 uppercase tracking-wider">
-              LGS DENEME PACK
-            </h2>
-            <span className="bg-white text-teal-600 text-xs font-bold px-4 py-2 rounded-full border-2 border-teal-300 shadow-sm mt-2 sm:mt-0">
-              Tam Deneme
-            </span>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-5 gap-4">
-            {[1, 2, 3, 4, 5].map((num) => (
-              <Link key={num} href={`/test/lgs-${num}`} className="bg-gradient-to-br from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white py-6 rounded-2xl text-center shadow-lg transition-all hover:shadow-xl hover:-translate-y-1">
-                <div className="font-bold text-xl mb-1">Test {num}</div>
-                <div className="text-xs uppercase opacity-90 font-semibold">Başla</div>
-              </Link>
-            ))}
-          </div>
-        </div>
-
-        {/* KPSS PACK */}
-        <div className="bg-gradient-to-br from-sky-50 to-sky-100 border-2 border-sky-200 rounded-3xl p-8 mb-6 shadow-md">
-          <div className="flex flex-col sm:flex-row justify-between items-center mb-6">
-            <h2 className="text-2xl font-black text-sky-600 uppercase tracking-wider">
-              KPSS GENEL YETENEK PACK
-            </h2>
-            <span className="bg-white text-sky-600 text-xs font-bold px-4 py-2 rounded-full border-2 border-sky-300 shadow-sm mt-2 sm:mt-0">
-              60 Soru
-            </span>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-5 gap-4">
-            {[1, 2, 3, 4, 5].map((num) => (
-              <Link key={num} href={`/test/kpss-${num}`} className="bg-gradient-to-br from-sky-500 to-sky-600 hover:from-sky-600 hover:to-sky-700 text-white py-6 rounded-2xl text-center shadow-lg transition-all hover:shadow-xl hover:-translate-y-1">
-                <div className="font-bold text-xl mb-1">Test {num}</div>
-                <div className="text-xs uppercase opacity-90 font-semibold">Başla</div>
-              </Link>
-            ))}
-          </div>
-        </div>
-
-        {/* ALES PACK */}
-        <div className="bg-gradient-to-br from-cyan-50 to-cyan-100 border-2 border-cyan-200 rounded-3xl p-8 mb-6 shadow-md">
-          <div className="flex flex-col sm:flex-row justify-between items-center mb-6">
-            <h2 className="text-2xl font-black text-cyan-600 uppercase tracking-wider">
-              ALES SAYISAL MANTIK PACK
-            </h2>
-            <span className="bg-white text-cyan-600 text-xs font-bold px-4 py-2 rounded-full border-2 border-cyan-300 shadow-sm mt-2 sm:mt-0">
-              50 Soru
-            </span>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-5 gap-4">
-            {[1, 2, 3, 4, 5].map((num) => (
-              <Link key={num} href={`/test/ales-${num}`} className="bg-gradient-to-br from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white py-6 rounded-2xl text-center shadow-lg transition-all hover:shadow-xl hover:-translate-y-1">
-                <div className="font-bold text-xl mb-1">Test {num}</div>
-                <div className="text-xs uppercase opacity-90 font-semibold">Başla</div>
-              </Link>
-            ))}
-          </div>
-        </div>
-
-        {/* YÖKDİL PACK */}
-        <div className="bg-gradient-to-br from-green-50 to-green-100 border-2 border-green-200 rounded-3xl p-8 mb-6 shadow-md">
-          <div className="flex flex-col sm:flex-row justify-between items-center mb-6">
-            <h2 className="text-2xl font-black text-green-600 uppercase tracking-wider">
-              YÖKDİL FEN BİLİMLERİ PACK
-            </h2>
-            <span className="bg-white text-green-600 text-xs font-bold px-4 py-2 rounded-full border-2 border-green-300 shadow-sm mt-2 sm:mt-0">
-              80 Soru
-            </span>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-5 gap-4">
-            {[1, 2, 3, 4, 5].map((num) => (
-              <Link key={num} href={`/test/yokdil-${num}`} className="bg-gradient-to-br from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white py-6 rounded-2xl text-center shadow-lg transition-all hover:shadow-xl hover:-translate-y-1">
-                <div className="font-bold text-xl mb-1">Test {num}</div>
-                <div className="text-xs uppercase opacity-90 font-semibold">Başla</div>
-              </Link>
-            ))}
-          </div>
-        </div>
-
-        {/* EN ALT KIRMIZI BUTON */}
-        <Link href="/turkiye-geneli" className="block w-full bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white text-center font-black text-xl py-8 rounded-2xl shadow-xl transition-all hover:shadow-2xl">
-          🏁 TÜRKİYE GENELİ SIRALAMA MODU
-        </Link>
-
-      </main>
+      </section>
     </div>
   );
 }
