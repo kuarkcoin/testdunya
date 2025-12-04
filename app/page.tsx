@@ -3,15 +3,15 @@
 import Link from 'next/link';
 import { Navbar } from './components/Navbar';
 
-// Sınav listesi güncellendi: TYT çıktı, TUS ve DGS eklendi, KPSS öne geldi.
+// Sınav listesi (Renkler ve başlıklar ayarlı)
 const EXAMS = [
   { id: 'yks', name: 'YKS', subtitle: 'TYT + AYT', colors: 'from-emerald-400 to-emerald-600' },
   { id: 'kpss', name: 'KPSS', subtitle: 'GY + GK', colors: 'from-amber-400 to-orange-500' },
   { id: 'lgs', name: 'LGS', subtitle: '8. Sınıf', colors: 'from-violet-500 to-fuchsia-600' },
   { id: 'ehliyet', name: 'Ehliyet', subtitle: 'E-Sınav', colors: 'from-cyan-400 to-teal-500' },
   { id: 'ales', name: 'ALES', subtitle: 'Sayısal', colors: 'from-pink-400 to-rose-600' },
-  { id: 'tus', name: 'TUS', subtitle: 'Tıpta Uzmanlık', colors: 'from-sky-500 to-blue-700' }, // Yeni TUS
-  { id: 'dgs', name: 'DGS', subtitle: 'Dikey Geçiş', colors: 'from-indigo-400 to-purple-600' }, // Yeni DGS
+  { id: 'tus', name: 'TUS', subtitle: 'Tıpta Uzmanlık', colors: 'from-sky-500 to-blue-700' },
+  { id: 'dgs', name: 'DGS', subtitle: 'Dikey Geçiş', colors: 'from-indigo-400 to-purple-600' },
 ];
 
 const TESTS = [1, 2, 3, 4, 5];
@@ -39,7 +39,7 @@ export default function HomePage() {
               key={exam.id}
               className="rounded-3xl bg-white border border-slate-200 shadow-md hover:shadow-xl transition-shadow p-5 flex flex-col gap-4"
             >
-              {/* Ana renkli sınav butonu */}
+              {/* Ana Renkli Sınav Başlığı Butonu */}
               <Link
                 href={`/exam/${exam.id}`}
                 className={`block w-full rounded-2xl bg-gradient-to-r ${exam.colors}
@@ -53,25 +53,46 @@ export default function HomePage() {
                 <div className="text-2xl mt-1">{exam.name}</div>
               </Link>
 
-              {/* Altındaki Test 1–5 butonları */}
+              {/* Altındaki Test 1–5 Butonları */}
               <div className="grid grid-cols-3 gap-2 mt-1">
-                {TESTS.map((n) => (
-                  <Link
-                    key={n}
-                    href={`/test/${exam.id}-test-${n}`}
-                    className="rounded-xl bg-slate-100 border border-slate-200
-                      text-[11px] font-semibold text-slate-700 text-center
-                      py-2 px-2 hover:bg-slate-200 active:scale-95 transition"
-                  >
-                    Test {n}
-                  </Link>
-                ))}
+                {TESTS.map((n) => {
+                  // ÖZEL DURUM: LGS sınavı ve 1. Test ise
+                  const isLgsTest1 = exam.id === 'lgs' && n === 1;
+
+                  return (
+                    <Link
+                      key={n}
+                      href={
+                        isLgsTest1 
+                          ? '/test/lgs-full'          // LGS Test 1 -> Bizim yeni JSON sayfasına
+                          : `/test/${exam.id}-test-${n}` // Diğerleri -> Standart yol
+                      }
+                      className={`
+                        rounded-xl border text-[11px] font-semibold text-center py-2 px-2 transition
+                        ${
+                          isLgsTest1
+                            ? 'bg-emerald-100 border-emerald-300 text-emerald-800 hover:bg-emerald-200 shadow-sm' // Aktif olanı yeşil yap
+                            : 'bg-slate-100 border-slate-200 text-slate-700 hover:bg-slate-200 active:scale-95'   // Standart stil
+                        }
+                      `}
+                    >
+                      Test {n}
+                      {isLgsTest1 && <span className="ml-1 text-emerald-600">✓</span>}
+                    </Link>
+                  );
+                })}
               </div>
             </div>
           ))}
         </div>
-        
-        {/* Alt taraftaki 'Türkiye Geneli' butonu kaldırıldı. */}
+
+        {/* Dipnot veya ek bilgi */}
+        <div className="text-center mt-12 text-slate-400 text-xs">
+           <p className="mb-2">Diğer testler çok yakında eklenecektir.</p>
+           <p className="td-hero-footnote">
+             YDS bu projede yok; YDS tarafını <strong>EnglishMeter</strong> üzerinde detaylı şekilde geliştirmeye devam edeceğiz.
+           </p>
+        </div>
       </main>
     </div>
   );
