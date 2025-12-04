@@ -13,9 +13,10 @@ interface Question {
   B: string;
   C: string;
   D: string;
+  E?: string; // TUS için E şıkkı opsiyonel olarak eklendi
   correct: string;
   Açıklama: string;
-  // Dinamik erişim için index imzası (TypeScript hatasını çözer)
+  // Dinamik erişim için index imzası
   [key: string]: string | number | undefined; 
 }
 
@@ -34,6 +35,7 @@ export default function DynamicTestPage() {
   useEffect(() => {
     if (!testId) return;
 
+    // JSON dosyasını public/data/tests/ klasöründen çekiyoruz
     fetch(`/data/tests/${testId}.json`)
       .then((res) => {
         if (!res.ok) throw new Error("Dosya bulunamadı");
@@ -46,7 +48,7 @@ export default function DynamicTestPage() {
         setLoading(false);
       })
       .catch((err) => {
-        console.error(err);
+        console.error("Veri çekme hatası:", err);
         setError(true);
         setLoading(false);
       });
@@ -100,7 +102,9 @@ export default function DynamicTestPage() {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center p-4 text-center">
         <h2 className="text-2xl font-bold text-slate-800 mb-2">Test Bulunamadı 😔</h2>
-        <p className="text-slate-500 mb-6">"{testId}" kodlu test verisi henüz eklenmemiş.</p>
+        <p className="text-slate-500 mb-6">
+          "{testId}.json" dosyası <strong>public/data/tests/</strong> klasöründe bulunamadı.
+        </p>
         <Link href="/" className="bg-slate-900 text-white px-6 py-3 rounded-xl">Ana Sayfaya Dön</Link>
       </div>
     );
@@ -148,6 +152,9 @@ export default function DynamicTestPage() {
           const userAnswer = answers[index];
           const isCorrect = userAnswer === q.correct;
 
+          // Şık listesi: E şıkkı varsa ekle, yoksa D'ye kadar
+          const options = q.E ? ['A', 'B', 'C', 'D', 'E'] : ['A', 'B', 'C', 'D'];
+
           return (
             <div key={index} className={`bg-white rounded-2xl p-6 md:p-8 shadow-sm border-2 transition-colors ${
               showResult 
@@ -174,7 +181,7 @@ export default function DynamicTestPage() {
 
               {/* Şıklar */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                {['A', 'B', 'C', 'D'].map((opt) => {
+                {options.map((opt) => {
                   const isSelected = userAnswer === opt;
                   let btnClass = "border-slate-200 hover:bg-slate-50 text-slate-600"; 
 
