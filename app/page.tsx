@@ -3,13 +3,15 @@
 import Link from 'next/link';
 import { Navbar } from './components/Navbar';
 
+// Sınav listesi güncellendi: TYT çıktı, TUS ve DGS eklendi, KPSS öne geldi.
 const EXAMS = [
   { id: 'yks', name: 'YKS', subtitle: 'TYT + AYT', colors: 'from-emerald-400 to-emerald-600' },
-  { id: 'tyt', name: 'TYT', subtitle: 'Temel Yeterlilik', colors: 'from-sky-400 to-sky-600' },
-  { id: 'lgs', name: 'LGS', subtitle: '8. Sınıf', colors: 'from-violet-500 to-fuchsia-600' },
   { id: 'kpss', name: 'KPSS', subtitle: 'GY + GK', colors: 'from-amber-400 to-orange-500' },
+  { id: 'lgs', name: 'LGS', subtitle: '8. Sınıf', colors: 'from-violet-500 to-fuchsia-600' },
   { id: 'ehliyet', name: 'Ehliyet', subtitle: 'E-Sınav', colors: 'from-cyan-400 to-teal-500' },
   { id: 'ales', name: 'ALES', subtitle: 'Sayısal', colors: 'from-pink-400 to-rose-600' },
+  { id: 'tus', name: 'TUS', subtitle: 'Tıpta Uzmanlık', colors: 'from-sky-500 to-blue-700' }, // Yeni TUS
+  { id: 'dgs', name: 'DGS', subtitle: 'Dikey Geçiş', colors: 'from-indigo-400 to-purple-600' }, // Yeni DGS
 ];
 
 const TESTS = [1, 2, 3, 4, 5];
@@ -19,18 +21,18 @@ export default function HomePage() {
     <div className="min-h-screen bg-slate-50 text-slate-900">
       <Navbar />
 
-      <main className="max-w-5xl mx-auto px-4 pt-10 pb-16">
+      <main className="max-w-6xl mx-auto px-4 pt-10 pb-16">
         {/* Başlık */}
         <div className="text-center mb-10">
           <h1 className="text-3xl md:text-4xl font-black tracking-tight text-slate-900">
             Hangi sınav için test çözmek istiyorsun?
           </h1>
           <p className="mt-2 text-slate-500 text-sm md:text-base">
-            Ortadaki renkli butonlardan sınavını seç, altındaki Test 1–5 denemelerinden istediğine gir.
+            Aşağıdaki sınav kartlarından seçimini yap, Test 1–5 denemelerine hemen başla.
           </p>
         </div>
 
-        {/* Ortadaki renkli butonlar + alt Test1-5 alanları */}
+        {/* Sınav Kartları Grid Yapısı */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {EXAMS.map((exam) => (
             <div
@@ -68,16 +70,8 @@ export default function HomePage() {
             </div>
           ))}
         </div>
-
-        {/* Türkiye Geneli butonu */}
-        <Link
-          href="/turkiye-geneli"
-          className="block w-full rounded-3xl bg-gradient-to-r from-red-600 to-red-700 
-            text-white text-center py-5 text-lg md:text-xl font-black 
-            shadow-xl hover:shadow-2xl transform hover:scale-[1.01] active:scale-95 transition"
-        >
-          🇹🇷 Türkiye Geneli Sıralama Sınavı
-        </Link>
+        
+        {/* Alt taraftaki 'Türkiye Geneli' butonu kaldırıldı. */}
       </main>
     </div>
   );
