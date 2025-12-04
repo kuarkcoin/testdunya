@@ -56,32 +56,25 @@ export default function HomePage() {
               {/* Altındaki Test 1–5 Butonları */}
               <div className="grid grid-cols-3 gap-2 mt-1">
                 {TESTS.map((n) => {
-                  
-                  // Varsayılan Link
-                  let href = `/test/${exam.id}-test-${n}`;
-                  let isActive = false;
+                  // OTOMATİK LINK OLUŞTURMA
+                  // Örnek: lgs-test-1, yks-test-3, kpss-test-2...
+                  const testSlug = `${exam.id}-test-${n}`; 
 
-                  // LGS İÇİN ÖZEL AYARLAR
-                  if (exam.id === 'lgs') {
-                    if (n === 1) {
-                      href = '/test/lgs-full';   // 1. Test -> İlk hazırladığın sayfa
-                      isActive = true;
-                    } else if (n === 2) {
-                      href = '/test/lgs-test-2'; // 2. Test -> Yeni hazırladığın sayfa
-                      isActive = true;
-                    }
-                  }
+                  // Şimdilik sadece LGS Test 1 ve Test 2'yi "aktif" (yeşil) gösterelim.
+                  // İleride buraya başka testler eklendikçe onları da ekleyebilirsin.
+                  const activeTests = ['lgs-test-1', 'lgs-test-2'];
+                  const isActive = activeTests.includes(testSlug);
 
                   return (
                     <Link
                       key={n}
-                      href={href}
+                      href={`/test/${testSlug}`} // TEK LINK YAPISI (Dinamik Sayfaya Gider)
                       className={`
                         rounded-xl border text-[11px] font-semibold text-center py-2 px-2 transition
                         ${
                           isActive
-                            ? 'bg-emerald-100 border-emerald-300 text-emerald-800 hover:bg-emerald-200 shadow-sm' // Aktif (Yeşil)
-                            : 'bg-slate-100 border-slate-200 text-slate-700 hover:bg-slate-200 active:scale-95'   // Pasif (Gri)
+                            ? 'bg-emerald-100 border-emerald-300 text-emerald-800 hover:bg-emerald-200 shadow-sm' // Aktifse Yeşil
+                            : 'bg-slate-100 border-slate-200 text-slate-700 hover:bg-slate-200 active:scale-95'   // Değilse Gri
                         }
                       `}
                     >
