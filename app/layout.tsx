@@ -1,20 +1,20 @@
-import type { Metadata } from "next";
-import "./globals.css";
-
-export const metadata: Metadata = {
-  title: "TestDünya – YKS, LGS, KPSS Testleri",
-  description:
-    "TestDünya ile YKS, TYT, LGS, KPSS, Ehliyet ve ALES sınavları için ücretsiz deneme testleri çöz.",
-};
+export const metadata = {
+  title: 'TestDünya',
+  description: 'Türkiye\'nin En Kapsamlı Test Platformu',
+}
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html lang="tr">
+      <head>
+        {/* İŞTE TASARIMI DÜZELTECEK SİHİRLİ SATIR BURASI: */}
+        <script src="https://cdn.tailwindcss.com"></script>
+      </head>
       <body>{children}</body>
     </html>
-  );
+  )
 }
