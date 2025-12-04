@@ -1,11 +1,11 @@
 'use client';
 
 import { useEffect, useState } from "react";
-import { useParams } from "next/navigation"; // Parametreyi okumak için
+import { useParams } from "next/navigation";
 import Link from "next/link";
 
-// Soru Tipi
 interface Question {
+  id?: number;
   question: string;
   shape?: string;
   A: string;
@@ -17,21 +17,20 @@ interface Question {
 }
 
 export default function DynamicTestPage() {
-  const params = useParams(); // URL'deki [testId] kısmını okur
-  const testId = params.testId as string; // Örneğin: "lgs-test-1"
+  const params = useParams();
+  const testId = params.testId as string;
 
   const [questions, setQuestions] = useState<Question[]>([]);
-  const [index, setIndex] = useState(0);
-  const [selected, setSelected] = useState<string | null>(null);
+  const [answers, setAnswers] = useState<{ [key: number]: string }>({});
   const [showResult, setShowResult] = useState(false);
+  const [timeLeft, setTimeLeft] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
+  // Veriyi Çek
   useEffect(() => {
     if (!testId) return;
 
-    // DİNAMİK FETCH: URL'den gelen isme göre dosya arar
-    // Örnek: /test/lgs-deneme-5 -> /data/tests/lgs-deneme-5.json dosyasını çeker
     fetch(`/data/tests/${testId}.json`)
       .then((res) => {
         if (!res.ok) throw new Error("Dosya bulunamadı");
@@ -39,6 +38,8 @@ export default function DynamicTestPage() {
       })
       .then((data) => {
         setQuestions(data);
+        // Her soruya 2 dakika ver (Örn: 90 soru * 120 sn)
+        setTimeLeft(data.length * 120);
         setLoading(false);
       })
       .catch((err) => {
@@ -48,121 +49,178 @@ export default function DynamicTestPage() {
       });
   }, [testId]);
 
-  // --- Yükleniyor Ekranı ---
-  if (loading) {
-    return (
-      <div className="min-h-screen bg-slate-50 flex items-center justify-center">
-        <div className="text-xl font-bold text-indigo-600 animate-pulse">Test Yükleniyor...</div>
-      </div>
-    );
-  }
+  // Sayaç Mantığı
+  useEffect(() => {
+    if (timeLeft > 0 && !showResult && !loading) {
+      const timerId = setInterval(() => {
+        setTimeLeft((prev) => prev - 1);
+      }, 1000);
+      return () => clearInterval(timerId);
+    } else if (timeLeft === 0 && !loading && !showResult && questions.length > 0) {
+      finishTest();
+    }
+  }, [timeLeft, showResult, loading, questions.length]);
 
-  // --- Hata Ekranı ---
+  const formatTime = (seconds: number) => {
+    const m = Math.floor(seconds / 60);
+    const s = seconds % 60;
+    return `${m}:${s < 10 ? '0' : ''}${s}`;
+  };
+
+  const handleSelect = (index: number, option: string) => {
+    if (showResult) return;
+    setAnswers({ ...answers, [index]: option });
+  };
+
+  const finishTest = () => {
+    setShowResult(true);
+    window.scrollTo(0, 0);
+  };
+
+  const calculateScore = () => {
+    let correct = 0;
+    let wrong = 0;
+    let empty = 0;
+    questions.forEach((q, i) => {
+      if (!answers[i]) empty++;
+      else if (answers[i] === q.correct) correct++;
+      else wrong++;
+    });
+    return { correct, wrong, empty };
+  };
+
+  // --- Yükleniyor ve Hata Durumları ---
+  if (loading) return <div className="min-h-screen flex items-center justify-center text-xl font-bold text-indigo-600">Sınav Yükleniyor...</div>;
+  
   if (error || questions.length === 0) {
     return (
-      <div className="min-h-screen bg-slate-50 flex flex-col items-center justify-center p-4 text-center">
+      <div className="min-h-screen flex flex-col items-center justify-center p-4 text-center">
         <h2 className="text-2xl font-bold text-slate-800 mb-2">Test Bulunamadı 😔</h2>
-        <p className="text-slate-500 mb-6">
-          "{testId}.json" isimli test dosyası henüz eklenmemiş.
-        </p>
+        <p className="text-slate-500 mb-6">"{testId}.json" dosyası oluşturulmamış.</p>
         <Link href="/" className="bg-slate-900 text-white px-6 py-3 rounded-xl">Ana Sayfaya Dön</Link>
       </div>
     );
   }
 
-  // --- Test Ekranı (Değişmedi) ---
-  const q = questions[index];
-
-  const handleSelect = (opt: string) => {
-    setSelected(opt);
-    setShowResult(true);
-  };
-
-  const next = () => {
-    setSelected(null);
-    setShowResult(false);
-    setIndex((prev) => prev + 1);
-  };
+  const score = calculateScore();
 
   return (
-    <div className="min-h-screen bg-slate-100 p-4 pb-20">
-      <div className="max-w-2xl mx-auto bg-white rounded-2xl p-6 shadow-lg">
-        
-        {/* Üst Bilgi */}
-        <div className="flex justify-between items-center mb-6">
-            <h1 className="text-xl font-bold text-slate-800 uppercase">
-              {testId.replace(/-/g, ' ')} {/* lgs-test-1 -> LGS TEST 1 yapar */}
-            </h1>
-            <span className="text-sm font-mono text-slate-500 bg-slate-100 px-2 py-1 rounded">
-                {index + 1} / {questions.length}
-            </span>
+    <div className="min-h-screen bg-slate-100 pb-20">
+      
+      {/* --- SABİT ÜST BAR --- */}
+      <div className="sticky top-0 z-50 bg-slate-900 text-white p-4 shadow-lg flex justify-between items-center">
+        <div className="font-bold text-lg uppercase truncate max-w-[200px]">
+          {testId.replace(/-/g, ' ')}
         </div>
-
-        {/* Soru */}
-        <p className="text-lg font-semibold text-slate-900 mb-6 leading-relaxed">
-            {q.question}
-        </p>
-
-        {/* Şekil */}
-        {q.shape && q.shape.trim() !== "" && (
-          <pre className="bg-slate-50 border border-slate-200 p-4 rounded-xl overflow-x-auto mb-6 whitespace-pre-wrap font-mono text-sm text-slate-700">
-            {q.shape}
-          </pre>
-        )}
-
-        {/* Şıklar */}
-        <div className="space-y-3">
-            {["A", "B", "C", "D"].map((opt) => {
-            const optionText = q[opt as keyof Question]; 
-            const isSelected = selected === opt;
-            const isCorrect = showResult && opt === q.correct;
-            const isWrong = showResult && isSelected && opt !== q.correct;
-
-            return (
-                <button
-                key={opt}
-                onClick={() => handleSelect(opt)}
-                disabled={showResult}
-                className={`
-                    w-full text-left p-4 rounded-xl border transition-all duration-200 flex items-center gap-3
-                    ${!showResult && 'hover:bg-slate-50 hover:border-slate-300'}
-                    ${isSelected && !showResult ? "bg-indigo-50 border-indigo-400 text-indigo-900" : "bg-white border-slate-200"}
-                    ${isCorrect ? "border-emerald-500 bg-emerald-50 text-emerald-900" : ""}
-                    ${isWrong ? "border-rose-400 bg-rose-50 text-rose-900" : ""}
-                `}
-                >
-                <span className={`
-                    w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold
-                    ${isCorrect ? 'bg-emerald-200 text-emerald-800' : 'bg-slate-100 text-slate-500'}
-                `}>
-                    {opt}
-                </span>
-                <span className="font-medium">{optionText}</span>
-                </button>
-            )})}
+        <div className={`font-mono text-xl font-bold ${timeLeft < 300 ? 'text-red-400 animate-pulse' : 'text-emerald-400'}`}>
+          ⏱ {formatTime(timeLeft)}
         </div>
+      </div>
 
-        {/* Açıklama */}
-        {showResult && (
-          <div className="mt-6 p-4 bg-amber-50 rounded-xl border border-amber-200 text-amber-900">
-            <p className="font-bold flex items-center gap-2">💡 Açıklama:</p>
-            <p className="text-sm mt-2 opacity-90">{q.Açıklama}</p>
+      {/* --- SONUÇ EKRANI --- */}
+      {showResult && (
+        <div className="max-w-4xl mx-auto m-4 bg-white rounded-2xl p-6 shadow-xl border-2 border-indigo-100 text-center">
+          <h2 className="text-3xl font-bold text-slate-800 mb-4">Sınav Sonucu</h2>
+          <div className="grid grid-cols-3 gap-4 mb-6 text-lg">
+            <div className="bg-emerald-50 p-3 rounded-xl text-emerald-700 font-bold border border-emerald-200">
+              ✔ {score.correct} Doğru
+            </div>
+            <div className="bg-rose-50 p-3 rounded-xl text-rose-700 font-bold border border-rose-200">
+              ✖ {score.wrong} Yanlış
+            </div>
+            <div className="bg-slate-50 p-3 rounded-xl text-slate-600 font-bold border border-slate-200">
+              ⭕ {score.empty} Boş
+            </div>
           </div>
-        )}
+          <Link href="/" className="inline-block bg-slate-800 text-white px-8 py-3 rounded-lg hover:bg-slate-700 transition">
+            Ana Sayfaya Dön
+          </Link>
+        </div>
+      )}
 
-        {/* Butonlar */}
-        {showResult && index < questions.length - 1 ? (
-          <button onClick={next} className="w-full mt-6 bg-indigo-600 text-white py-3.5 rounded-xl font-bold">
-            Sonraki Soru →
+      {/* --- SORULAR LİSTESİ --- */}
+      <div className="max-w-4xl mx-auto p-4 space-y-8">
+        {questions.map((q, index) => {
+          const userAnswer = answers[index];
+          const isCorrect = userAnswer === q.correct;
+          
+          return (
+            <div key={index} className={`bg-white rounded-2xl p-6 md:p-8 shadow-sm border-2 transition-colors ${
+              showResult 
+                ? (isCorrect ? 'border-emerald-400 bg-emerald-50/30' : userAnswer ? 'border-rose-400 bg-rose-50/30' : 'border-slate-200') 
+                : 'border-slate-200 hover:border-indigo-300'
+            }`}>
+              
+              {/* Soru Başlığı */}
+              <div className="flex gap-4 mb-6">
+                <span className="bg-indigo-100 text-indigo-800 font-bold px-3 py-1 rounded-lg h-fit text-sm md:text-base">
+                  Soru {index + 1}
+                </span>
+                <div className="text-slate-800 font-medium text-lg leading-relaxed">
+                  {q.question}
+                </div>
+              </div>
+
+              {/* Şekil / Grafik Alanı */}
+              {q.shape && (
+                <div className="mb-6 bg-slate-50 border border-slate-200 p-6 rounded-xl font-mono text-sm overflow-x-auto whitespace-pre-wrap text-slate-700">
+                  {q.shape}
+                </div>
+              )}
+
+              {/* Şıklar */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                {['A', 'B', 'C', 'D'].map((opt) => {
+                  const isSelected = userAnswer === opt;
+                  let btnClass = "border-slate-200 hover:bg-slate-50 text-slate-600"; 
+
+                  if (showResult) {
+                    if (opt === q.correct) btnClass = "bg-emerald-500 border-emerald-600 text-white font-bold ring-2 ring-emerald-200"; 
+                    else if (isSelected && opt !== q.correct) btnClass = "bg-rose-500 border-rose-600 text-white font-bold";
+                    else btnClass = "border-slate-100 text-slate-400 opacity-50";
+                  } else {
+                    if (isSelected) btnClass = "bg-indigo-600 border-indigo-700 text-white shadow-md transform scale-[1.01]";
+                  }
+
+                  return (
+                    <button
+                      key={opt}
+                      onClick={() => handleSelect(index, opt)}
+                      disabled={showResult}
+                      className={`text-left p-4 rounded-xl border-2 transition-all duration-200 flex items-center ${btnClass}`}
+                    >
+                      <span className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold mr-3 ${
+                        showResult && (opt === q.correct || isSelected) ? 'bg-white/20' : 'bg-slate-100 text-slate-500'
+                      }`}>
+                        {opt}
+                      </span>
+                      {/* @ts-ignore */}
+                      <span className="text-base font-medium">{q[opt]}</span>
+                    </button>
+                  );
+                })}
+              </div>
+
+              {/* Çözüm / Açıklama */}
+              {showResult && (
+                <div className="mt-6 p-4 bg-blue-50 border border-blue-100 text-blue-900 rounded-xl animate-fadeIn">
+                  <strong className="block mb-1 text-blue-700">💡 Çözüm / Açıklama:</strong>
+                  {q.Açıklama}
+                </div>
+              )}
+            </div>
+          );
+        })}
+
+        {/* BİTİR BUTONU */}
+        {!showResult && questions.length > 0 && (
+          <button 
+            onClick={finishTest}
+            className="w-full bg-gradient-to-r from-rose-600 to-pink-600 hover:from-rose-700 hover:to-pink-700 text-white font-bold py-5 rounded-2xl shadow-xl transform active:scale-[0.99] transition text-xl"
+          >
+            Sınavı Bitir ve Sonuçları Göster
           </button>
-        ) : showResult && index === questions.length - 1 ? (
-           <div className="mt-8 text-center">
-             <div className="text-4xl mb-2">🎉</div>
-             <div className="font-bold text-xl mb-4">Test Bitti!</div>
-             <Link href="/" className="inline-block bg-slate-900 text-white px-6 py-3 rounded-xl">Ana Sayfa</Link>
-           </div>
-        ) : null}
-
+        )}
       </div>
     </div>
   );
