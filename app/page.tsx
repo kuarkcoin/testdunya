@@ -62,7 +62,7 @@ export default function HomePage() {
 
                   // Şimdilik sadece LGS Test 1 ve Test 2'yi "aktif" (yeşil) gösterelim.
                   // İleride buraya başka testler eklendikçe onları da ekleyebilirsin.
-                  const activeTests = ['lgs-test-1', 'lgs-test-2'];
+                  const activeTests = ['lgs-test-1', 'lgs-test-2', 'lgs-test-3'];
                   const isActive = activeTests.includes(testSlug);
 
                   return (
