@@ -8,15 +8,15 @@ import Link from "next/link";
 interface Question {
   id?: number;
   question: string;
-  shape?: string;
+  shape?: string; // Metin tabanlı şekiller (LGS için)
+  image?: string; // Gerçek resim yolları (TUS için) - YENİ EKLENDİ
   A: string;
   B: string;
   C: string;
   D: string;
-  E?: string; // TUS için E şıkkı opsiyonel olarak eklendi
+  E?: string;
   correct: string;
   Açıklama: string;
-  // Dinamik erişim için index imzası
   [key: string]: string | number | undefined; 
 }
 
@@ -31,11 +31,9 @@ export default function DynamicTestPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
-  // Veriyi Çek
   useEffect(() => {
     if (!testId) return;
 
-    // JSON dosyasını public/data/tests/ klasöründen çekiyoruz
     fetch(`/data/tests/${testId}.json`)
       .then((res) => {
         if (!res.ok) throw new Error("Dosya bulunamadı");
@@ -43,18 +41,17 @@ export default function DynamicTestPage() {
       })
       .then((data) => {
         setQuestions(data);
-        // Her soruya 1.5 dakika ver (Örn: 90 soru * 90 sn)
+        // Soru başına 1.5 dakika
         setTimeLeft(data.length * 90);
         setLoading(false);
       })
       .catch((err) => {
-        console.error("Veri çekme hatası:", err);
+        console.error("Veri hatası:", err);
         setError(true);
         setLoading(false);
       });
   }, [testId]);
 
-  // Sayaç Mantığı
   useEffect(() => {
     if (timeLeft > 0 && !showResult && !loading) {
       const timerId = setInterval(() => {
@@ -95,16 +92,13 @@ export default function DynamicTestPage() {
     return { correct, wrong, empty };
   };
 
-  // --- Yükleniyor ve Hata Durumları ---
   if (loading) return <div className="min-h-screen flex items-center justify-center text-xl font-bold text-indigo-600">Sınav Yükleniyor...</div>;
 
   if (error || questions.length === 0) {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center p-4 text-center">
         <h2 className="text-2xl font-bold text-slate-800 mb-2">Test Bulunamadı 😔</h2>
-        <p className="text-slate-500 mb-6">
-          "{testId}.json" dosyası <strong>public/data/tests/</strong> klasöründe bulunamadı.
-        </p>
+        <p className="text-slate-500 mb-6">"{testId}.json" dosyası bulunamadı.</p>
         <Link href="/" className="bg-slate-900 text-white px-6 py-3 rounded-xl">Ana Sayfaya Dön</Link>
       </div>
     );
@@ -114,8 +108,7 @@ export default function DynamicTestPage() {
 
   return (
     <div className="min-h-screen bg-slate-100 pb-20">
-
-      {/* --- SABİT ÜST BAR --- */}
+      {/* Üst Bar */}
       <div className="sticky top-0 z-50 bg-slate-900 text-white p-4 shadow-lg flex justify-between items-center">
         <div className="font-bold text-lg uppercase truncate max-w-[200px]">
           {testId.replace(/-/g, ' ')}
@@ -125,7 +118,7 @@ export default function DynamicTestPage() {
         </div>
       </div>
 
-      {/* --- SONUÇ EKRANI (Test Bitince Görünür) --- */}
+      {/* Sonuç Ekranı */}
       {showResult && (
         <div className="max-w-4xl mx-auto m-4 bg-white rounded-2xl p-6 shadow-xl border-2 border-indigo-100 text-center animate-in fade-in zoom-in duration-300">
           <h2 className="text-3xl font-bold text-slate-800 mb-4">Sınav Sonucu</h2>
@@ -146,13 +139,11 @@ export default function DynamicTestPage() {
         </div>
       )}
 
-      {/* --- SORULAR LİSTESİ --- */}
+      {/* Sorular */}
       <div className="max-w-4xl mx-auto p-4 space-y-8">
         {questions.map((q, index) => {
           const userAnswer = answers[index];
           const isCorrect = userAnswer === q.correct;
-
-          // Şık listesi: E şıkkı varsa ekle, yoksa D'ye kadar
           const options = q.E ? ['A', 'B', 'C', 'D', 'E'] : ['A', 'B', 'C', 'D'];
 
           return (
@@ -161,8 +152,6 @@ export default function DynamicTestPage() {
                 ? (isCorrect ? 'border-emerald-400 bg-emerald-50/30' : userAnswer ? 'border-rose-400 bg-rose-50/30' : 'border-slate-200') 
                 : 'border-slate-200 hover:border-indigo-300'
             }`}>
-
-              {/* Soru Başlığı */}
               <div className="flex gap-4 mb-6">
                 <span className="bg-indigo-100 text-indigo-800 font-bold px-3 py-1 rounded-lg h-fit text-sm md:text-base shrink-0">
                   Soru {index + 1}
@@ -172,8 +161,19 @@ export default function DynamicTestPage() {
                 </div>
               </div>
 
-              {/* Şekil / Grafik Alanı */}
-              {q.shape && (
+              {/* --- GÖRSEL ALANI (YENİ) --- */}
+              {q.image ? (
+                <div className="mb-6 flex justify-center bg-slate-50 p-4 rounded-xl border border-slate-200">
+                  <img 
+                    src={q.image} 
+                    alt={`Soru ${index + 1} Görseli`}
+                    className="max-h-96 rounded-lg shadow-sm object-contain"
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).style.display = 'none'; // Resim yüklenemezse gizle
+                    }}
+                  />
+                </div>
+              ) : q.shape && (
                 <div className="mb-6 bg-slate-50 border border-slate-200 p-6 rounded-xl font-mono text-sm overflow-x-auto whitespace-pre-wrap text-slate-700">
                   {q.shape}
                 </div>
@@ -211,7 +211,7 @@ export default function DynamicTestPage() {
                 })}
               </div>
 
-              {/* Çözüm / Açıklama (Sadece sonuçtan sonra görünür) */}
+              {/* Açıklama */}
               {showResult && (
                 <div className="mt-6 p-4 bg-blue-50 border border-blue-100 text-blue-900 rounded-xl animate-in fade-in slide-in-from-top-2">
                   <strong className="block mb-1 text-blue-700 flex items-center gap-2">
@@ -224,7 +224,6 @@ export default function DynamicTestPage() {
           );
         })}
 
-        {/* BİTİR BUTONU */}
         {!showResult && questions.length > 0 && (
           <button 
             onClick={finishTest}
