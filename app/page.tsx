@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { Navbar } from './components/Navbar';
 
-// Sınav listesi (Renkler ve başlıklar ayarlı)
+// Sınav listesi
 const EXAMS = [
   { id: 'yks', name: 'YKS', subtitle: 'TYT + AYT', colors: 'from-emerald-400 to-emerald-600' },
   { id: 'kpss', name: 'KPSS', subtitle: 'GY + GK', colors: 'from-amber-400 to-orange-500' },
@@ -56,28 +56,37 @@ export default function HomePage() {
               {/* Altındaki Test 1–5 Butonları */}
               <div className="grid grid-cols-3 gap-2 mt-1">
                 {TESTS.map((n) => {
-                  // ÖZEL DURUM: LGS sınavı ve 1. Test ise
-                  const isLgsTest1 = exam.id === 'lgs' && n === 1;
+                  
+                  // Varsayılan Link
+                  let href = `/test/${exam.id}-test-${n}`;
+                  let isActive = false;
+
+                  // LGS İÇİN ÖZEL AYARLAR
+                  if (exam.id === 'lgs') {
+                    if (n === 1) {
+                      href = '/test/lgs-full';   // 1. Test -> İlk hazırladığın sayfa
+                      isActive = true;
+                    } else if (n === 2) {
+                      href = '/test/lgs-test-2'; // 2. Test -> Yeni hazırladığın sayfa
+                      isActive = true;
+                    }
+                  }
 
                   return (
                     <Link
                       key={n}
-                      href={
-                        isLgsTest1 
-                          ? '/test/lgs-full'          // LGS Test 1 -> Bizim yeni JSON sayfasına
-                          : `/test/${exam.id}-test-${n}` // Diğerleri -> Standart yol
-                      }
+                      href={href}
                       className={`
                         rounded-xl border text-[11px] font-semibold text-center py-2 px-2 transition
                         ${
-                          isLgsTest1
-                            ? 'bg-emerald-100 border-emerald-300 text-emerald-800 hover:bg-emerald-200 shadow-sm' // Aktif olanı yeşil yap
-                            : 'bg-slate-100 border-slate-200 text-slate-700 hover:bg-slate-200 active:scale-95'   // Standart stil
+                          isActive
+                            ? 'bg-emerald-100 border-emerald-300 text-emerald-800 hover:bg-emerald-200 shadow-sm' // Aktif (Yeşil)
+                            : 'bg-slate-100 border-slate-200 text-slate-700 hover:bg-slate-200 active:scale-95'   // Pasif (Gri)
                         }
                       `}
                     >
                       Test {n}
-                      {isLgsTest1 && <span className="ml-1 text-emerald-600">✓</span>}
+                      {isActive && <span className="ml-1 text-emerald-600">✓</span>}
                     </Link>
                   );
                 })}
@@ -86,7 +95,7 @@ export default function HomePage() {
           ))}
         </div>
 
-        {/* Dipnot veya ek bilgi */}
+        {/* Dipnot */}
         <div className="text-center mt-12 text-slate-400 text-xs">
            <p className="mb-2">Diğer testler çok yakında eklenecektir.</p>
            <p className="td-hero-footnote">
