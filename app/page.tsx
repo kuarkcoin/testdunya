@@ -56,24 +56,30 @@ export default function HomePage() {
               {/* Altındaki Test 1–5 Butonları */}
               <div className="grid grid-cols-3 gap-2 mt-1">
                 {TESTS.map((n) => {
-                  // Slug oluştur (örn: lgs-test-4)
-                  const testSlug = `${exam.id}-test-${n}`;
+                  // Varsayılan slug (dosya adı) yapısı: lgs-test-1, kpss-test-2 vb.
+                  let testSlug = `${exam.id}-test-${n}`;
 
-                  // HANGİ TESTLER HAZIR? (Buraya eklediklerin YEŞİL yanar)
-                  // Yeni bir test eklediğinde (json dosyasını atınca) buraya ismini yazman yeterli.
+                  // TUS için ÖZEL İSİMLENDİRME
+                  // Temel ve Klinik birleştiği için artık tek bir "tus-deneme-1" dosyasını çağırıyoruz.
+                  if (exam.id === 'tus' && n === 1) {
+                    testSlug = 'tus-deneme-1';
+                  }
+
+                  // AKTİF OLAN TESTLER LİSTESİ
+                  // (Buraya eklediğin her test yeşil yanar ve tıklanabilir olur)
                   const activeTests = [
                     'lgs-test-1', 
                     'lgs-test-2', 
                     'lgs-test-3', 
-                    'lgs-test-4'
+                    'lgs-test-4',
+                    'tus-deneme-1' // Birleştirilmiş TUS sınavı
                   ];
-                  
+
                   const isActive = activeTests.includes(testSlug);
 
                   return (
                     <Link
                       key={n}
-                      // ARTIK HER ŞEY DİNAMİK SAYFAYA GİDİYOR 👇
                       href={`/test/${testSlug}`} 
                       className={`
                         rounded-xl border text-[11px] font-semibold text-center py-2 px-2 transition
