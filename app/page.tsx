@@ -28,7 +28,7 @@ export default function HomePage() {
             Hangi sınav için test çözmek istiyorsun?
           </h1>
           <p className="mt-2 text-slate-500 text-sm md:text-base">
-            Aşağıdaki sınav kartlarından seçimini yap, Test 1–5 denemelerine hemen başla.
+            Aşağıdaki sınav kartlarından seçimini yap, denemelere hemen başla.
           </p>
         </div>
 
@@ -56,25 +56,31 @@ export default function HomePage() {
               {/* Altındaki Test 1–5 Butonları */}
               <div className="grid grid-cols-3 gap-2 mt-1">
                 {TESTS.map((n) => {
-                  // OTOMATİK LINK OLUŞTURMA
-                  // Örnek: lgs-test-1, yks-test-3, kpss-test-2...
-                  const testSlug = `${exam.id}-test-${n}`; 
+                  // Slug oluştur (örn: lgs-test-4)
+                  const testSlug = `${exam.id}-test-${n}`;
 
-                  // Şimdilik sadece LGS Test 1 ve Test 2'yi "aktif" (yeşil) gösterelim.
-                  // İleride buraya başka testler eklendikçe onları da ekleyebilirsin.
-                  const activeTests = ['lgs-test-1', 'lgs-test-2', 'lgs-test-3'];
+                  // HANGİ TESTLER HAZIR? (Buraya eklediklerin YEŞİL yanar)
+                  // Yeni bir test eklediğinde (json dosyasını atınca) buraya ismini yazman yeterli.
+                  const activeTests = [
+                    'lgs-test-1', 
+                    'lgs-test-2', 
+                    'lgs-test-3', 
+                    'lgs-test-4'
+                  ];
+                  
                   const isActive = activeTests.includes(testSlug);
 
                   return (
                     <Link
                       key={n}
-                      href={`/test/${testSlug}`} // TEK LINK YAPISI (Dinamik Sayfaya Gider)
+                      // ARTIK HER ŞEY DİNAMİK SAYFAYA GİDİYOR 👇
+                      href={`/test/${testSlug}`} 
                       className={`
                         rounded-xl border text-[11px] font-semibold text-center py-2 px-2 transition
                         ${
                           isActive
                             ? 'bg-emerald-100 border-emerald-300 text-emerald-800 hover:bg-emerald-200 shadow-sm' // Aktifse Yeşil
-                            : 'bg-slate-100 border-slate-200 text-slate-700 hover:bg-slate-200 active:scale-95'   // Değilse Gri
+                            : 'bg-slate-100 border-slate-200 text-slate-400 hover:bg-slate-200 active:scale-95'   // Değilse Soluk Gri
                         }
                       `}
                     >
