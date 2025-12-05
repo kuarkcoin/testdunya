@@ -8,13 +8,13 @@ import Link from "next/link";
 interface Question {
   id?: number;
   question: string;
-  shape?: string; // Metin tabanlı şekiller (LGS için)
-  image?: string; // Gerçek resim yolları (TUS için) - YENİ EKLENDİ
+  shape?: string; // Metin tabanlı şekiller
+  image?: string; // Görsel yolu
   A: string;
   B: string;
   C: string;
   D: string;
-  E?: string;
+  E?: string; // YKS ve KPSS 5 şıklı olduğu için E opsiyonel değil aslında ama LGS için opsiyonel kalabilir
   correct: string;
   Açıklama: string;
   [key: string]: string | number | undefined; 
@@ -34,16 +34,21 @@ export default function DynamicTestPage() {
   useEffect(() => {
     if (!testId) return;
 
+    // Verilen testId'ye göre JSON dosyasını çek (örn: /data/tests/yks-sozel-deneme-1.json)
     fetch(`/data/tests/${testId}.json`)
       .then((res) => {
         if (!res.ok) throw new Error("Dosya bulunamadı");
         return res.json();
       })
       .then((data) => {
-        setQuestions(data);
-        // Soru başına 1.5 dakika
-        setTimeLeft(data.length * 90);
-        setLoading(false);
+        if (Array.isArray(data) && data.length > 0) {
+            setQuestions(data);
+            // Soru başına 1.5 dakika (90 saniye) süre
+            setTimeLeft(data.length * 90);
+            setLoading(false);
+        } else {
+            throw new Error("Veri formatı hatalı veya boş");
+        }
       })
       .catch((err) => {
         console.error("Veri hatası:", err);
@@ -52,6 +57,7 @@ export default function DynamicTestPage() {
       });
   }, [testId]);
 
+  // Zamanlayıcı (Timer)
   useEffect(() => {
     if (timeLeft > 0 && !showResult && !loading) {
       const timerId = setInterval(() => {
@@ -92,14 +98,21 @@ export default function DynamicTestPage() {
     return { correct, wrong, empty };
   };
 
-  if (loading) return <div className="min-h-screen flex items-center justify-center text-xl font-bold text-indigo-600">Sınav Yükleniyor...</div>;
+  if (loading) return (
+    <div className="min-h-screen flex flex-col items-center justify-center bg-slate-50">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-slate-900 mb-4"></div>
+        <div className="text-xl font-bold text-slate-700">Sınav Yükleniyor...</div>
+    </div>
+  );
 
   if (error || questions.length === 0) {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center p-4 text-center">
+      <div className="min-h-screen flex flex-col items-center justify-center p-4 text-center bg-slate-50">
         <h2 className="text-2xl font-bold text-slate-800 mb-2">Test Bulunamadı 😔</h2>
-        <p className="text-slate-500 mb-6">"{testId}.json" dosyası bulunamadı.</p>
-        <Link href="/" className="bg-slate-900 text-white px-6 py-3 rounded-xl">Ana Sayfaya Dön</Link>
+        <p className="text-slate-500 mb-6">Aradığınız <strong>{testId}</strong> sınav dosyasına ulaşılamadı.</p>
+        <Link href="/" className="bg-slate-900 text-white px-6 py-3 rounded-xl hover:bg-slate-800 transition">
+            Ana Sayfaya Dön
+        </Link>
       </div>
     );
   }
@@ -110,10 +123,13 @@ export default function DynamicTestPage() {
     <div className="min-h-screen bg-slate-100 pb-20">
       {/* Üst Bar */}
       <div className="sticky top-0 z-50 bg-slate-900 text-white p-4 shadow-lg flex justify-between items-center">
-        <div className="font-bold text-lg uppercase truncate max-w-[200px]">
-          {testId.replace(/-/g, ' ')}
+        <div className="flex items-center gap-3">
+             <Link href="/" className="text-slate-400 hover:text-white transition">← Çık</Link>
+             <div className="font-bold text-sm md:text-lg uppercase truncate max-w-[150px] md:max-w-none">
+               {testId.replace(/-/g, ' ')}
+             </div>
         </div>
-        <div className={`font-mono text-xl font-bold ${timeLeft < 300 ? 'text-red-400 animate-pulse' : 'text-emerald-400'}`}>
+        <div className={`font-mono text-lg md:text-xl font-bold ${timeLeft < 300 ? 'text-red-400 animate-pulse' : 'text-emerald-400'}`}>
           ⏱ {formatTime(timeLeft)}
         </div>
       </div>
@@ -134,7 +150,7 @@ export default function DynamicTestPage() {
             </div>
           </div>
           <Link href="/" className="inline-block bg-slate-800 text-white px-8 py-3 rounded-lg hover:bg-slate-700 transition">
-            Ana Sayfaya Dön
+            Diğer Testlere Geç
           </Link>
         </div>
       )}
@@ -144,6 +160,7 @@ export default function DynamicTestPage() {
         {questions.map((q, index) => {
           const userAnswer = answers[index];
           const isCorrect = userAnswer === q.correct;
+          // E şıkkı varsa 5 şıklı, yoksa 4 şıklı
           const options = q.E ? ['A', 'B', 'C', 'D', 'E'] : ['A', 'B', 'C', 'D'];
 
           return (
@@ -154,23 +171,20 @@ export default function DynamicTestPage() {
             }`}>
               <div className="flex gap-4 mb-6">
                 <span className="bg-indigo-100 text-indigo-800 font-bold px-3 py-1 rounded-lg h-fit text-sm md:text-base shrink-0">
-                  Soru {index + 1}
+                  {index + 1}
                 </span>
                 <div className="text-slate-800 font-medium text-lg leading-relaxed">
                   {q.question}
                 </div>
               </div>
 
-              {/* --- GÖRSEL ALANI (YENİ) --- */}
+              {/* Görsel veya Şekil Alanı */}
               {q.image ? (
                 <div className="mb-6 flex justify-center bg-slate-50 p-4 rounded-xl border border-slate-200">
                   <img 
                     src={q.image} 
-                    alt={`Soru ${index + 1} Görseli`}
+                    alt={`Soru ${index + 1}`}
                     className="max-h-96 rounded-lg shadow-sm object-contain"
-                    onError={(e) => {
-                      (e.target as HTMLImageElement).style.display = 'none'; // Resim yüklenemezse gizle
-                    }}
                   />
                 </div>
               ) : q.shape && (
@@ -198,7 +212,7 @@ export default function DynamicTestPage() {
                       key={opt}
                       onClick={() => handleSelect(index, opt)}
                       disabled={showResult}
-                      className={`text-left p-4 rounded-xl border-2 transition-all duration-200 flex items-center ${btnClass}`}
+                      className={`text-left p-3 md:p-4 rounded-xl border-2 transition-all duration-200 flex items-center ${btnClass}`}
                     >
                       <span className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold mr-3 shrink-0 ${
                         showResult && (opt === q.correct || isSelected) ? 'bg-white/20' : 'bg-slate-100 text-slate-500'
@@ -211,13 +225,13 @@ export default function DynamicTestPage() {
                 })}
               </div>
 
-              {/* Açıklama */}
+              {/* Çözüm Açıklaması */}
               {showResult && (
                 <div className="mt-6 p-4 bg-blue-50 border border-blue-100 text-blue-900 rounded-xl animate-in fade-in slide-in-from-top-2">
                   <strong className="block mb-1 text-blue-700 flex items-center gap-2">
-                    <span>💡</span> Çözüm / Açıklama:
+                    <span>💡</span> Çözüm:
                   </strong>
-                  {q.Açıklama}
+                  {q.Açıklama || "Bu soru için açıklama girilmemiş."}
                 </div>
               )}
             </div>
@@ -229,7 +243,7 @@ export default function DynamicTestPage() {
             onClick={finishTest}
             className="w-full bg-gradient-to-r from-rose-600 to-pink-600 hover:from-rose-700 hover:to-pink-700 text-white font-bold py-5 rounded-2xl shadow-xl transform active:scale-[0.99] transition text-xl mb-10"
           >
-            Sınavı Bitir ve Sonuçları Göster
+            Sınavı Bitir
           </button>
         )}
       </div>
