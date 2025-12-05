@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Navbar } from './components/Navbar';
 import { Metadata } from 'next';
 
-// --- SEO AYARLARI (Görünmez Kısım - Google için Kimlik Kartı) ---
+// --- SEO AYARLARI ---
 export const metadata: Metadata = {
   title: 'Test Çöz - YKS Sözel, KPSS ve LGS Ücretsiz Deneme Sınavları',
   description: '2025 YKS Sözel, KPSS ve LGS sınavlarına hazırlık için online test çöz. Anında sonuç öğren, süre tut ve kendini dene. Ücretsiz online deneme platformu.',
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Ücretsiz Online Deneme Sınavları - YKS, KPSS, LGS',
     description: 'YKS Sözel, KPSS ve LGS için hazırlanmış yüzlerce yeni nesil soruyu hemen çöz.',
-    url: 'https://testdunya.com', // Burayı siteyi yayınlayınca güncellersin
+    url: 'https://testdunya.com',
     siteName: 'TestDünya',
     locale: 'tr_TR',
     type: 'website',
@@ -29,7 +29,7 @@ const EXAMS = [
     name: 'YKS Sözel', 
     subtitle: 'TYT + AYT Sözel', 
     colors: 'from-emerald-400 to-emerald-600',
-    count: 30, // 30 Adet deneme
+    count: 30,
     slugPrefix: 'yks-sozel-deneme'
   },
   { 
@@ -165,7 +165,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Dipnot Güncellemesi */}
+        {/* Dipnot */}
         <div className="text-center mt-8 text-slate-400 text-xs border-t border-slate-100 pt-6 pb-6 flex flex-col items-center gap-2">
            <p>© 2025 TestDünya - Tüm Hakları Saklıdır.</p>
            <div className="flex gap-4">
@@ -176,3 +176,7 @@ export default function HomePage() {
              YDS çalışmaları <strong>EnglishMeter</strong> platformumuzda devam etmektedir.
            </p>
         </div>
+      </main>
+    </div>
+  );
+}
