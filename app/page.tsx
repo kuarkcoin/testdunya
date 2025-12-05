@@ -37,8 +37,10 @@ const EXAMS = [
     name: 'KPSS Sözel', 
     subtitle: 'Genel Kültür', 
     colors: 'from-amber-400 to-orange-500',
-    count: 5, 
-    slugPrefix: 'kpss-sozel-test'
+    // GÜNCELLEME: Dosya isimlerin 'kpss-sozel-1.json' formatında olduğu için prefix 'kpss-sozel' yapıldı.
+    // Sayı 10'a çıkarıldı.
+    count: 10, 
+    slugPrefix: 'kpss-sozel' 
   },
   { 
     id: 'lgs', 
@@ -109,6 +111,7 @@ export default function HomePage() {
               {/* Altındaki Test Butonları */}
               <div className={`grid gap-2 mt-1 ${exam.count > 10 ? 'grid-cols-4' : 'grid-cols-3'}`}>
                 {Array.from({ length: exam.count }, (_, i) => i + 1).map((n) => {
+                  // slugPrefix + n => kpss-sozel-1
                   const testSlug = `${exam.slugPrefix}-${n}`;
                   const isActive = true;
 
