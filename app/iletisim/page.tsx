@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { Navbar } from '../components/Navbar';
 
 // 👇 GÜNCELLENEN MAİL ADRESİN
-const MY_EMAIL = "muratot79@gmail.com"; 
+const MY_EMAIL = "ttestdunya@gmail.com"; 
 
 export const metadata: Metadata = {
   title: 'İletişim - TestDünya',
@@ -49,7 +49,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <div className="text-xs text-slate-400 uppercase font-bold mb-1">Konum</div>
-                      <div className="font-medium">Edirne, Türkiye</div>
+                      <div className="font-medium">İstanbul, Türkiye</div>
                     </div>
                   </div>
                 </div>
