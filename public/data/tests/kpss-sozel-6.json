@@ -790,5 +790,115 @@
         "E": "Yüksek yargı organlarında üye seçmek",
         "correct": "C",
         "Açıklama": "Cumhurbaşkanı TBMM’yi feshedemez; karşılıklı seçim yenileme yetkisi vardır."
-    }
+    },
+    [
+        {
+            "id": 67,
+            "question": "GÜNCEL: 2024 yılında Türkiye'nin 'En Fazla İhracat Yaptığı Ülke' aşağıdakilerden hangisidir?",
+            "shape": "",
+            "A": "İtalya",
+            "B": "ABD",
+            "C": "Rusya",
+            "D": "Almanya",
+            "E": "Birleşik Krallık",
+            "correct": "D",
+            "Açıklama": "Türkiye'nin son yıllarda en çok ihracat yaptığı ülke Almanya'dır; uzun süredir birinci sıradadır."
+        },
+        {
+            "id": 68,
+            "question": "GÜNCEL: 2024 yılında hizmete giren ve Türkiye’nin en büyük şehir hastanelerinden biri olan 'Ankara Etlik Şehir Hastanesi'nin temel uzmanlık alanı aşağıdakilerden hangisidir?",
+            "shape": "",
+            "A": "Onkoloji",
+            "B": "Kadın doğum ve çocuk sağlığı",
+            "C": "Kardiyoloji",
+            "D": "Beyin cerrahisi",
+            "E": "Göz hastalıkları",
+            "correct": "B",
+            "Açıklama": "Etlik Şehir Hastanesi, kadın doğum–çocuk sağlığı kapasitesi bakımından Türkiye’nin en büyük merkezlerinden biridir."
+        },
+        {
+            "id": 69,
+            "question": "GÜNCEL: 2023 yılında UNESCO Dünya Miras Listesi'ne Türkiye'den giren varlık aşağıdakilerden hangisidir?",
+            "shape": "",
+            "A": "Gordion Antik Kenti",
+            "B": "Ahlat Selçuklu Meydan Mezarlığı",
+            "C": "Divriği Ulu Cami",
+            "D": "Nemrut Dağı",
+            "E": "Hattuşa",
+            "correct": "A",
+            "Açıklama": "Gordion Antik Kenti 2023'te UNESCO Dünya Mirası listesine alınmıştır."
+        },
+        {
+            "id": 70,
+            "question": "GÜNCEL: 2024 Avrupa Futbol Şampiyonası (EURO 2024) hangi ülkede düzenlenmiştir?",
+            "shape": "",
+            "A": "Fransa",
+            "B": "Almanya",
+            "C": "Hollanda",
+            "D": "İspanya",
+            "E": "İtalya",
+            "correct": "B",
+            "Açıklama": "EURO 2024, Almanya’nın ev sahipliğinde gerçekleşmiştir."
+        },
+        {
+            "id": 71,
+            "question": "GÜNCEL: 2024 yılında Türkiye Cumhuriyeti Merkez Bankası’nın başkanı aşağıdakilerden hangisidir?",
+            "shape": "",
+            "A": "Naci Ağbal",
+            "B": "Murat Uysal",
+            "C": "Fatih Karahan",
+            "D": "Hafize Gaye Erkan",
+            "E": "Şahap Kavcıoğlu",
+            "correct": "C",
+            "Açıklama": "Hafize Gaye Erkan'ın istifası sonrası 2024 yılında TCMB Başkanı Fatih Karahan olmuştur."
+        },
+        {
+            "id": 72,
+            "question": "GÜNCEL: 2024 yılında 'Yılın En İyi Uluslararası Havalimanı' ödülünü alan İstanbul Havalimanı'nın kodu aşağıdakilerden hangisidir?",
+            "shape": "",
+            "A": "SAW",
+            "B": "IST",
+            "C": "IGA",
+            "D": "ISTN",
+            "E": "TRK",
+            "correct": "B",
+            "Açıklama": "İstanbul Havalimanı’nın uluslararası kodu IST’dir."
+        },
+        {
+            "id": 73,
+            "question": "GÜNCEL: 2023 yılında Türkiye'de düzenlenen Teknofest etkinliğinin ana temalarından biri aşağıdakilerden hangisiydi?",
+            "shape": "",
+            "A": "Yapay zekâ ve insansız sistemler",
+            "B": "Biyoteknoloji ve tıp",
+            "C": "Denizcilik teknolojileri",
+            "D": "Tarım ve gıda teknolojileri",
+            "E": "Nükleer enerji çözümleri",
+            "correct": "A",
+            "Açıklama": "Teknofest 2023'ün odak temalarından biri yapay zekâ, insansız hava, kara ve deniz araçlarıydı."
+        },
+        {
+            "id": 74,
+            "question": "GÜNCEL: 2024 yılı halk oylamasıyla 'Yılın Sporcusu' seçilen ve milli gururumuz olan yüzücü kimdir?",
+            "shape": "",
+            "A": "Merve Tuncel",
+            "B": "Ersu Şaşma",
+            "C": "Berke Saka",
+            "D": "Viktoria Zeynep Güneş",
+            "E": "Emre Sakçı",
+            "correct": "E",
+            "Açıklama": "Emre Sakçı, 2024’te rekorlarıyla büyük ses getirerek halk oylamasında yılın sporcusu seçildi."
+        },
+        {
+            "id": 75,
+            "question": "GÜNCEL: Türkiye’nin 2024 yılındaki 'Milli Muharip Uçak' projesinin resmi adı aşağıdakilerden hangisidir?",
+            "shape": "",
+            "A": "Anka-4",
+            "B": "Hurkus Pro Max",
+            "C": "KAAN",
+            "D": "Gökbey",
+            "E": "Altay",
+            "correct": "C",
+            "Açıklama": "Türkiye’nin 5. nesil savaş uçağı projesinin adı KAAN’dır."
+        }
+    ]
 ]
