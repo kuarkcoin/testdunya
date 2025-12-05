@@ -165,14 +165,14 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Dipnot */}
-        <div className="text-center mt-8 text-slate-400 text-xs border-t border-slate-100 pt-6">
-           <p className="mb-2">© 2025 TestDünya - Tüm Hakları Saklıdır.</p>
-           <p className="td-hero-footnote">
+        {/* Dipnot Güncellemesi */}
+        <div className="text-center mt-8 text-slate-400 text-xs border-t border-slate-100 pt-6 pb-6 flex flex-col items-center gap-2">
+           <p>© 2025 TestDünya - Tüm Hakları Saklıdır.</p>
+           <div className="flex gap-4">
+             <Link href="/gizlilik" className="hover:text-slate-600 underline decoration-slate-200">Gizlilik Politikası</Link>
+             <Link href="/iletisim" className="hover:text-slate-600 underline decoration-slate-200">İletişim</Link>
+           </div>
+           <p className="td-hero-footnote mt-2">
              YDS çalışmaları <strong>EnglishMeter</strong> platformumuzda devam etmektedir.
            </p>
         </div>
-      </main>
-    </div>
-  );
-}
