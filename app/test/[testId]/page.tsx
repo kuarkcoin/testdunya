@@ -4,74 +4,44 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter, useParams } from 'next/navigation';
 
-// --- Dahili SVG İkonlar (Paket bağımlılığı kaldırıldı) ---
-
+// --- SVG İkonlar ---
 const ArrowLeft = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-    <path d="m12 19-7-7 7-7" />
-    <path d="M19 12H5" />
-  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="m12 19-7-7 7-7" /><path d="M19 12H5" /></svg>
 );
-
 const CheckCircle = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-    <path d="m9 11 3 3L22 4" />
-  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><path d="m9 11 3 3L22 4" /></svg>
 );
-
 const Circle = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-    <circle cx="12" cy="12" r="10" />
-  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><circle cx="12" cy="12" r="10" /></svg>
 );
-
 const BookOpen = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
-    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
-  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" /></svg>
 );
-
 const Brain = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-    <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z" />
-    <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z" />
-    <path d="M12 22v-4" />
-    <path d="M12 2v2" />
-  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z" /><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z" /><path d="M12 22v-4" /><path d="M12 2v2" /></svg>
 );
-
 const Stethoscope = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-    <path d="M6 3v9a5 5 0 0 0 10 0V3" />
-    <path d="M6 3h3" />
-    <path d="M13 3h3" />
-    <path d="M11 12v7" />
-    <circle cx="11" cy="21" r="2" />
-  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M6 3v9a5 5 0 0 0 10 0V3" /><path d="M6 3h3" /><path d="M13 3h3" /><path d="M11 12v7" /><circle cx="11" cy="21" r="2" /></svg>
 );
-
+const GraduationCap = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+);
 const Save = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-    <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z" />
-    <polyline points="17 21 17 13 7 13 7 21" />
-    <polyline points="7 3 7 8 15 8" />
-  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z" /><polyline points="17 21 17 13 7 13 7 21" /><polyline points="7 3 7 8 15 8" /></svg>
 );
 
-// --- Konfigürasyon ---
+// --- Konfigürasyon (LGS EKLENDİ) ---
 const examMeta = {
   yks: { title: 'YKS Sözel', icon: <BookOpen className="w-6 h-6 text-blue-500" />, color: 'text-blue-600', bg: 'bg-blue-50' },
   kpss: { title: 'KPSS Sözel', icon: <Brain className="w-6 h-6 text-orange-500" />, color: 'text-orange-600', bg: 'bg-orange-50' },
-  tus: { title: 'TUS', icon: <Stethoscope className="w-6 h-6 text-emerald-500" />, color: 'text-emerald-600', bg: 'bg-emerald-50' }
+  tus: { title: 'TUS', icon: <Stethoscope className="w-6 h-6 text-emerald-500" />, color: 'text-emerald-600', bg: 'bg-emerald-50' },
+  lgs: { title: 'LGS Türkçe', icon: <GraduationCap className="w-6 h-6 text-purple-500" />, color: 'text-purple-600', bg: 'bg-purple-50' }
 };
 
 export default function TestDetailPage() {
   const router = useRouter();
   const params = useParams();
   
-  // Güvenli parametre alımı (useParams ilk renderda boş gelebilir)
   const testId = params?.testId;
   const safeTestId = Array.isArray(testId) ? testId[0] : testId;
 
@@ -79,10 +49,8 @@ export default function TestDetailPage() {
   const [note, setNote] = useState('');
   const [isSaved, setIsSaved] = useState(false);
 
-  // Verileri Yükle
   useEffect(() => {
     if (!safeTestId) return;
-    
     try {
       const savedTracker = localStorage.getItem('examTrackerData');
       if (savedTracker) setCompleted(JSON.parse(savedTracker));
@@ -97,7 +65,6 @@ export default function TestDetailPage() {
     }
   }, [safeTestId]);
 
-  // ID henüz hazır değilse yükleniyor göster
   if (!safeTestId) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-slate-50 text-slate-500 font-sans">
@@ -109,12 +76,11 @@ export default function TestDetailPage() {
     );
   }
 
-  // ID kontrolü ve parse işlemi
+  // ID Ayrıştırma (Örn: yks-1 -> category: yks, number: 1)
   const [category, numberStr] = (safeTestId || '').split('-');
   const number = parseInt(numberStr);
   const info = examMeta[category as keyof typeof examMeta];
 
-  // Durumu Değiştir
   const toggleStatus = () => {
     setCompleted(prev => {
       const currentList = prev[category] || [];
@@ -128,7 +94,6 @@ export default function TestDetailPage() {
     });
   };
 
-  // Notu Kaydet
   const saveNote = () => {
     const savedNotes = localStorage.getItem('examTrackerNotes');
     const notesObj = savedNotes ? JSON.parse(savedNotes) : {};
