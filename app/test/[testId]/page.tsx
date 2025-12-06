@@ -26,17 +26,16 @@ interface Question {
   explanation?: string;
 }
 
-// --- HELPER: FORMAT TIME ---
+// --- HELPERS ---
 function formatTime(seconds: number): string {
   const m = Math.floor(seconds / 60);
   const s = seconds % 60;
   return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
 }
 
-// --- HELPER: TEXT FORMATTER ---
 function formatText(text: string) {
   if (!text) return null;
-  const parts = text.split(/(\*\*.*?\*\*)/g);
+  const parts = String(text).split(/(\*\*.*?\*\*)/g);
   return parts.map((part, index) => {
     if (part.startsWith('**') && part.endsWith('**')) {
       let content = part.slice(2, -2).replace(/^['"]+|['"]+$/g, '');
@@ -70,7 +69,6 @@ export default function QuizPage() {
       })
       .then(rawdata => {
         let rawList: any[] = [];
-        // Güvenli veri çıkarma
         if (Array.isArray(rawdata)) rawList = rawdata;
         else if (rawdata && rawdata.questions && Array.isArray(rawdata.questions)) rawList = rawdata.questions;
         
@@ -81,60 +79,62 @@ export default function QuizPage() {
         }
 
         const formattedQuestions: Question[] = rawList.map((item, idx) => {
+            const anyItem = item as any; 
+
             // --- ŞIKLARI BULMA ---
             let choices: Choice[] = [];
             let rawOptions: string[] = [];
             
-            if (Array.isArray(item.options)) rawOptions = item.options;
-            else if (Array.isArray(item.secenekler)) rawOptions = item.secenekler;
-            else if (item.A || item.B || item.a || item.b) {
-                 if(item.A || item.a) rawOptions.push(item.A || item.a);
-                 if(item.B || item.b) rawOptions.push(item.B || item.b);
-                 if(item.C || item.c) rawOptions.push(item.C || item.c);
-                 if(item.D || item.d) rawOptions.push(item.D || item.d);
-                 if(item.E || item.e) rawOptions.push(item.E || item.e);
-            } else if (typeof item.options === 'object' && item.options) {
-                rawOptions = Object.values(item.options);
+            if (Array.isArray(anyItem.options)) rawOptions = anyItem.options;
+            else if (Array.isArray(anyItem.secenekler)) rawOptions = anyItem.secenekler;
+            else if (anyItem.A || anyItem.B || anyItem.a || anyItem.b) {
+                 if(anyItem.A || anyItem.a) rawOptions.push(anyItem.A || anyItem.a);
+                 if(anyItem.B || anyItem.b) rawOptions.push(anyItem.B || anyItem.b);
+                 if(anyItem.C || anyItem.c) rawOptions.push(anyItem.C || anyItem.c);
+                 if(anyItem.D || anyItem.d) rawOptions.push(anyItem.D || anyItem.d);
+                 if(anyItem.E || anyItem.e) rawOptions.push(anyItem.E || anyItem.e);
+            } 
+            else if (typeof anyItem.options === 'object' && anyItem.options) {
+                rawOptions = Object.values(anyItem.options);
             }
 
             choices = rawOptions.map((optText, optIdx) => ({
-                id: String.fromCharCode(65 + optIdx), // 0->A, 1->B...
+                id: String.fromCharCode(65 + optIdx), // A, B, C...
                 text: String(optText)
             }));
 
-            // --- CEVAP BULMA (GELİŞMİŞ) ---
+            // --- CEVAP BULMA ---
             let finalAnswerId = "UNKNOWN";
-            let rawAnswer = (item.answer || item.cevap || item.correct || "").toString().trim();
+            let rawAnswer = (anyItem.answer || anyItem.Answer || anyItem.cevap || anyItem.Cevap || anyItem.correct || anyItem.Correct || "").toString().trim();
             
-            // Eğer cevap "A)", "A." veya "Cevap: A" gibiyse sadece harfi çek
             const match = rawAnswer.match(/([A-Ea-e])/);
-            if (match) {
+            if (match && rawAnswer.length < 10) { 
                 finalAnswerId = match[0].toUpperCase();
             } else {
-                // Harf bulunamadıysa, metin eşleşmesi dene
                 const matchedOption = choices.find(c => 
                     c.text.replace(/\s+/g, '').toLowerCase() === rawAnswer.replace(/\s+/g, '').toLowerCase()
                 );
                 if (matchedOption) finalAnswerId = matchedOption.id;
             }
 
-            // --- AÇIKLAMA BULMA (TÜRKÇE KARAKTER DESTEĞİ) ---
-            // item['çözüm'] şeklinde erişim için any tipini kullanıyoruz geçici olarak
-            const anyItem = item as any;
+            // --- AÇIKLAMA BULMA (SENİN JSON FORMATINA GÖRE) ---
             const explanationText = 
-              anyItem.explanation || 
-              anyItem.solution || 
-              anyItem.cozum || 
-              anyItem.çözüm ||  // Türkçe karakter
-              anyItem.aciklama || 
-              anyItem.açıklama || // Türkçe karakter
-              anyItem.cevap_aciklamasi || 
-              anyItem.description || 
+              anyItem.Açıklama || // Senin dosyandaki format (Büyük A)
+              anyItem.açıklama ||
+              anyItem.aciklama ||
+              anyItem.Aciklama ||
+              anyItem.Explanation ||
+              anyItem.explanation ||
+              anyItem.Solution ||
+              anyItem.solution ||
+              anyItem.Çözüm ||
+              anyItem.çözüm ||
+              anyItem.cozum ||
               "";
 
             return {
                 id: String(idx),
-                prompt: item.question || item.soru || "Soru metni bulunamadı.",
+                prompt: anyItem.question || anyItem.Question || anyItem.soru || anyItem.Soru || "Soru metni bulunamadı.",
                 choices: choices,
                 answer: finalAnswerId,
                 explanation: explanationText
@@ -142,7 +142,6 @@ export default function QuizPage() {
         });
 
         setQuestions(formattedQuestions);
-        // Süre: Soru başına 1.5 dk
         if (formattedQuestions.length > 0) setTimeLeft(formattedQuestions.length * 90);
         else setError("Ayrıştırılabilir soru bulunamadı.");
         
@@ -150,7 +149,7 @@ export default function QuizPage() {
       })
       .catch(err => {
         console.error(err);
-        setError("Veri yüklenirken hata oluştu. (Dosya formatı bozuk olabilir)");
+        setError("Veri yüklenirken hata oluştu.");
         setLoading(false);
       });
   }, [testId]);
@@ -167,12 +166,11 @@ export default function QuizPage() {
   const handleSubmit = () => {
     let correctCount = 0;
     
-    // Hataları LocalStorage'dan güvenli çek
     let mistakeList: any[] = [];
     try {
         const stored = localStorage.getItem('my_mistakes');
         if (stored) mistakeList = JSON.parse(stored);
-        if (!Array.isArray(mistakeList)) mistakeList = []; // Array değilse sıfırla
+        if (!Array.isArray(mistakeList)) mistakeList = [];
     } catch(e) {
         mistakeList = [];
     }
@@ -185,12 +183,9 @@ export default function QuizPage() {
 
         if (isCorrect) {
             correctCount++;
-            // Doğru bildiyse hata listesinden temizle
             mistakeList = mistakeList.filter(m => m.uniqueId !== `${testId}-${q.id}`);
         } else if (userVal) {
-            // Yanlış yaptıysa listeye ekle
             const uniqueId = `${testId}-${q.id}`;
-            // Zaten var mı kontrol et
             const exists = mistakeList.some(m => m.uniqueId === uniqueId);
             
             if (!exists) {
@@ -290,7 +285,6 @@ export default function QuizPage() {
               const isUserAnswered = !!userAnswerId;
               const isCorrect = userAnswerId === correctId;
 
-              // Kart Rengi
               let cardBorder = isCorrect ? 'border-emerald-200' : isUserAnswered ? 'border-red-200' : 'border-amber-200';
               let cardBg = isCorrect ? 'bg-emerald-50/40' : isUserAnswered ? 'bg-red-50/40' : 'bg-amber-50/40';
 
@@ -319,10 +313,8 @@ export default function QuizPage() {
                           let optionClass = 'p-3 rounded-lg border flex items-center justify-between ';
                           
                           if (isTheCorrectAnswer) {
-                            // DOĞRU CEVAP -> YEŞİL
                             optionClass += 'bg-emerald-100 border-emerald-300 text-emerald-900 font-bold shadow-sm ring-1 ring-emerald-300';
                           } else if (isSelected) {
-                            // YANLIŞ SEÇİM -> KIRMIZI
                             optionClass += 'bg-red-100 border-red-300 text-red-900 font-medium';
                           } else {
                             optionClass += 'bg-white/60 border-slate-200 text-slate-500 opacity-70';
@@ -343,7 +335,7 @@ export default function QuizPage() {
                       </div>
                       
                       {/* AÇIKLAMA ALANI */}
-                      {q.explanation && q.explanation.length > 2 && (
+                      {q.explanation && q.explanation.trim() !== "" && (
                         <div className="mt-5 p-4 bg-white/80 rounded-xl border border-indigo-200 text-sm text-indigo-900 flex gap-3 items-start animate-in fade-in shadow-sm">
                           <span className="text-xl">💡</span>
                           <div>
