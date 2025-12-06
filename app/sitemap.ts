@@ -1,44 +1,35 @@
-import { MetadataRoute } from 'next';
-
-const BASE_URL = 'https://testdunya.com'; // Burayı canlıya alınca güncelle
+import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  
-  // 1. Sabit Sayfalar
+  const baseUrl = 'https://testdunya.vercel.app' // Kendi domaininle değiştir
+
+  // Ana Sayfalar
   const routes = [
     '',
     '/iletisim',
-    '/gizlilik',
+    '/mistakes',
   ].map((route) => ({
-    url: `${BASE_URL}${route}`,
+    url: `${baseUrl}${route}`,
     lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: route === '' ? 1 : 0.8,
-  }));
+  }))
 
-  // 2. Dinamik Test Sayfaları (Otomatik Oluşturma)
-  
-  // YKS Sözel (30 Test)
-  const yksTests = Array.from({ length: 30 }, (_, i) => ({
-    url: `${BASE_URL}/test/yks-sozel-deneme-${i + 1}`,
-    lastModified: new Date(),
-    priority: 0.9,
-  }));
+  // Test Linklerini Otomatik Oluştur
+  const examConfig = [
+    { prefix: 'yks-sozel-deneme', count: 30 },
+    { prefix: 'kpss-sozel', count: 21 },
+    { prefix: 'tus-deneme', count: 22 },
+  ];
 
-  // KPSS Sözel (5 Test)
-  const kpssTests = Array.from({ length: 5 }, (_, i) => ({
-    url: `${BASE_URL}/test/kpss-sozel-test-${i + 1}`,
-    lastModified: new Date(),
-    priority: 0.8,
-  }));
+  let testRoutes: any[] = [];
 
-  // LGS (5 Test)
-  const lgsTests = Array.from({ length: 5 }, (_, i) => ({
-    url: `${BASE_URL}/test/lgs-test-${i + 1}`,
-    lastModified: new Date(),
-    priority: 0.8,
-  }));
+  examConfig.forEach(exam => {
+    for (let i = 1; i <= exam.count; i++) {
+        testRoutes.push({
+            url: `${baseUrl}/test/${exam.prefix}-${i}`,
+            lastModified: new Date(),
+        })
+    }
+  });
 
-  // Hepsini Birleştir
-  return [...routes, ...yksTests, ...kpssTests, ...lgsTests];
+  return [...routes, ...testRoutes]
 }
