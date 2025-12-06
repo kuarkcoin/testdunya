@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
-// --- Dahili SVG İkonlar (Paket bağımlılığı kaldırıldı) ---
+// --- Dahili SVG İkonlar (Paket bağımlılığı yok) ---
 
 const Trophy = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
@@ -42,13 +42,6 @@ const Stethoscope = (props: React.SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-const GraduationCap = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-    <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
-    <path d="M6 12v5c3 3 9 3 12 0v-5"/>
-  </svg>
-);
-
 const CheckCircle = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
     <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
@@ -63,21 +56,8 @@ const PlayCircle = (props: React.SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-// --- Sınav Konfigürasyonları ---
+// --- Sınav Konfigürasyonları (LGS Kaldırıldı) ---
 const examConfig = [
-  { 
-    id: 'lgs', 
-    prefix: 'lgs', // URL yapısı: /test/lgs-1
-    title: 'LGS Türkçe', 
-    count: 4, 
-    desc: 'LGS Hazırlık Denemeleri',
-    icon: <GraduationCap className="w-8 h-8 text-purple-500" />,
-    color: 'bg-purple-500',
-    lightColor: 'bg-purple-50',
-    textColor: 'text-purple-700',
-    borderColor: 'border-purple-200',
-    hoverBorder: 'hover:border-purple-300'
-  },
   { 
     id: 'yks', 
     prefix: 'yks', 
@@ -141,7 +121,7 @@ export default function HomePage() {
               TestDünya Sınav Merkezi
             </h1>
             <p className="text-slate-500 mt-2 text-lg">
-              Çözmek istediğin YKS, KPSS, LGS veya TUS deneme setini seç ve hemen başla.
+              Çözmek istediğin YKS, KPSS veya TUS deneme setini seç ve hemen başla.
             </p>
           </div>
         </header>
