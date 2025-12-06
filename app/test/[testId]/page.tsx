@@ -23,19 +23,15 @@ const Brain = (props: React.SVGProps<SVGSVGElement>) => (
 const Stethoscope = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M6 3v9a5 5 0 0 0 10 0V3" /><path d="M6 3h3" /><path d="M13 3h3" /><path d="M11 12v7" /><circle cx="11" cy="21" r="2" /></svg>
 );
-const GraduationCap = (props: React.SVGProps<SVGSVGElement>) => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-);
 const Save = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z" /><polyline points="17 21 17 13 7 13 7 21" /><polyline points="7 3 7 8 15 8" /></svg>
 );
 
-// --- Konfigürasyon (LGS EKLENDİ) ---
+// --- Konfigürasyon (LGS Kaldırıldı) ---
 const examMeta = {
   yks: { title: 'YKS Sözel', icon: <BookOpen className="w-6 h-6 text-blue-500" />, color: 'text-blue-600', bg: 'bg-blue-50' },
   kpss: { title: 'KPSS Sözel', icon: <Brain className="w-6 h-6 text-orange-500" />, color: 'text-orange-600', bg: 'bg-orange-50' },
-  tus: { title: 'TUS', icon: <Stethoscope className="w-6 h-6 text-emerald-500" />, color: 'text-emerald-600', bg: 'bg-emerald-50' },
-  lgs: { title: 'LGS Türkçe', icon: <GraduationCap className="w-6 h-6 text-purple-500" />, color: 'text-purple-600', bg: 'bg-purple-50' }
+  tus: { title: 'TUS', icon: <Stethoscope className="w-6 h-6 text-emerald-500" />, color: 'text-emerald-600', bg: 'bg-emerald-50' }
 };
 
 export default function TestDetailPage() {
