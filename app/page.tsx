@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Trophy, BookOpen, Brain, Stethoscope, PlayCircle, CheckCircle } from 'lucide-react';
+import { Trophy, BookOpen, Brain, Stethoscope, PlayCircle, CheckCircle, GraduationCap } from 'lucide-react';
 
 // Sınav konfigürasyonları - Sabit Veriler
 const examConfig = [
@@ -44,6 +44,19 @@ const examConfig = [
     textColor: 'text-emerald-700',
     borderColor: 'border-emerald-200',
     hoverBorder: 'hover:border-emerald-300'
+  },
+  { 
+    id: 'lgs', 
+    prefix: 'lgs',
+    title: 'LGS Tüm Dersler', 
+    count: 20, // Deneme sayısını buradan değiştirebilirsin
+    desc: '20 Genel Deneme',
+    icon: <GraduationCap className="w-8 h-8 text-pink-500" />,
+    color: 'bg-pink-500',
+    lightColor: 'bg-pink-50',
+    textColor: 'text-pink-700',
+    borderColor: 'border-pink-200',
+    hoverBorder: 'hover:border-pink-300'
   }
 ];
 
@@ -82,7 +95,7 @@ export default function HomePage() {
               Sınav Merkezi
             </h1>
             <p className="text-slate-500 mt-2 text-lg">
-              Çözmek istediğin YKS, KPSS veya TUS deneme setini seç ve hemen başla.
+              Çözmek istediğin YKS, KPSS, TUS veya LGS deneme setini seç ve hemen başla.
             </p>
           </div>
         </header>
