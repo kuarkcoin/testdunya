@@ -110,7 +110,6 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Sağ taraf görseli */}
           <div className="md:w-1/3 flex justify-center md:justify-end">
              <div className="relative w-40 h-40 md:w-56 md:h-56 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-3xl rotate-6 shadow-2xl flex items-center justify-center border-4 border-white/10 backdrop-blur-md">
                 <Trophy className="w-20 h-20 md:w-28 md:h-28 text-white drop-shadow-md" />
@@ -240,7 +239,7 @@ export default function HomePage() {
               TYT, AYT, KPSS Lisans, Önlisans ve TUS sınavlarına hazırlanan öğrenciler için 
               özenle hazırlanmış <strong>özgün deneme sınavları.</strong>
             </p>
-            <p className="text-xs opacity-50">&copy; 2025 TestDünya. Tüm hakları saklıdır.</p>
+            <p className="text-xs opacity-50">&copy; 2025 TestDünya. Tüm hakları saklıdır. <span className="mx-2">•</span> <Link href="/gizlilik" className="hover:text-white hover:underline">Gizlilik</Link></p>
           </div>
           
           <div>
@@ -264,6 +263,17 @@ export default function HomePage() {
           </div>
         </div>
       </footer>
+
+      {/* --- SABİT İLETİŞİM BUTONU --- */}
+      <div className="fixed bottom-6 right-6 z-50 animate-bounce-slow">
+        <Link 
+          href="/iletisim" 
+          className="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-3 rounded-full shadow-lg transition-all hover:scale-105 hover:shadow-indigo-500/50 font-bold border-2 border-white/20 backdrop-blur-md"
+        >
+          <span className="text-xl">💬</span>
+          <span className="hidden sm:inline">İletişim</span>
+        </Link>
+      </div>
 
     </main>
   );
