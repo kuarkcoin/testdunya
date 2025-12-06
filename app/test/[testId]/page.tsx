@@ -31,12 +31,12 @@ export default function TestExamPage() {
   const [error, setError] = useState(false);
   
   // Sınav Durumları
-  const [userAnswers, setUserAnswers] = useState<{ [key: number]: string }>({}); // { 0: "Cevap A", 1: "Cevap C" }
+  const [userAnswers, setUserAnswers] = useState<{ [key: number]: string }>({});
   const [isExamFinished, setIsExamFinished] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(60 * 60); // 60 Dakika (Saniye cinsinden)
+  const [timeLeft, setTimeLeft] = useState(0); // Başlangıçta 0, veri gelince güncellenecek
   const [score, setScore] = useState({ correct: 0, incorrect: 0, empty: 0, net: 0 });
 
-  // --- 1. Veri Çekme ---
+  // --- 1. Veri Çekme ve Süre Ayarlama ---
   useEffect(() => {
     if (!testId) return;
     setLoading(true);
@@ -54,6 +54,12 @@ export default function TestExamPage() {
         else qList = [];
         
         setQuestions(qList);
+
+        // --- DİNAMİK SÜRE AYARI ---
+        // Soru başına 1.5 dakika (90 saniye) verelim
+        const calculatedTime = qList.length * 90; 
+        setTimeLeft(calculatedTime);
+        
         setLoading(false);
       })
       .catch(err => {
@@ -65,7 +71,6 @@ export default function TestExamPage() {
 
   // --- 2. Sayaç (Timer) Mantığı ---
   useEffect(() => {
-    // Sınav bittiyse veya yükleniyorsa sayacı durdur
     if (loading || isExamFinished || timeLeft <= 0) return;
 
     const timer = setInterval(() => {
@@ -81,16 +86,21 @@ export default function TestExamPage() {
     return () => clearInterval(timer);
   }, [loading, isExamFinished, timeLeft]);
 
-  // Süreyi formatla (MM:SS)
+  // Süreyi formatla (Saat:Dakika:Saniye veya Dakika:Saniye)
   const formatTime = (seconds: number) => {
-    const m = Math.floor(seconds / 60);
+    const h = Math.floor(seconds / 3600);
+    const m = Math.floor((seconds % 3600) / 60);
     const s = seconds % 60;
+    
+    if (h > 0) {
+      return `${h}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+    }
     return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
   };
 
   // --- 3. Şık İşaretleme ---
   const handleOptionSelect = (questionIndex: number, optionText: string) => {
-    if (isExamFinished) return; // Sınav bittiyse değiştirilemez
+    if (isExamFinished) return; 
     setUserAnswers(prev => ({
       ...prev,
       [questionIndex]: optionText
@@ -109,7 +119,6 @@ export default function TestExamPage() {
       const correctAnswer = q.answer || q.cevap;
       
       if (userAnswer) {
-        // Basit string karşılaştırması (boşlukları temizleyerek)
         if (userAnswer.trim() === correctAnswer.trim()) {
           correct++;
         } else {
@@ -119,17 +128,17 @@ export default function TestExamPage() {
     });
 
     const empty = questions.length - (correct + incorrect);
-    const net = correct - (incorrect * 0.25); // 4 yanlış 1 doğruyu götürür mantığı
+    const net = correct - (incorrect * 0.25); 
 
     setScore({ correct, incorrect, empty, net });
-    window.scrollTo({ top: 0, behavior: 'smooth' }); // Sayfanın en üstüne git
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   // --- UI Durumları ---
   if (loading) return (
     <div className="min-h-screen flex flex-col justify-center items-center bg-slate-50 text-slate-500">
       <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600 mb-4"></div>
-      <p>Sınav hazırlanıyor...</p>
+      <p>Sınav yükleniyor...</p>
     </div>
   );
 
@@ -137,8 +146,8 @@ export default function TestExamPage() {
     <div className="min-h-screen flex flex-col justify-center items-center bg-slate-50 p-4">
       <div className="bg-white p-8 rounded-2xl shadow-lg text-center max-w-md">
         <AlertCircle className="w-12 h-12 text-red-500 mx-auto mb-4" />
-        <h2 className="text-xl font-bold text-slate-900 mb-2">Sınav Yüklenemedi</h2>
-        <p className="text-slate-500 mb-6">Test verilerine ulaşılamadı veya dosya formatı hatalı.</p>
+        <h2 className="text-xl font-bold text-slate-900 mb-2">Veri Bulunamadı</h2>
+        <p className="text-slate-500 mb-6">Test içeriği boş veya yüklenemedi.</p>
         <Link href="/" className="px-6 py-2 bg-slate-900 text-white rounded-lg hover:bg-slate-800">Ana Sayfaya Dön</Link>
       </div>
     </div>
@@ -147,16 +156,18 @@ export default function TestExamPage() {
   return (
     <main className="min-h-screen bg-slate-50 pb-20 font-sans text-slate-800">
       
-      {/* --- Sticky Header (Sayaç ve Başlık) --- */}
-      <div className="sticky top-0 z-30 bg-white/80 backdrop-blur-md border-b border-slate-200 shadow-sm px-4 py-3">
+      {/* --- Sticky Header --- */}
+      <div className="sticky top-0 z-30 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm px-4 py-3 transition-all">
         <div className="max-w-4xl mx-auto flex justify-between items-center">
           <Link href="/" className="p-2 rounded-full hover:bg-slate-100 transition-colors" title="Çıkış">
             <ArrowLeft className="w-6 h-6 text-slate-600" />
           </Link>
 
-          <div className={`flex items-center gap-2 font-mono text-xl font-bold px-4 py-1 rounded-lg ${timeLeft < 300 ? 'bg-red-50 text-red-600 animate-pulse' : 'bg-indigo-50 text-indigo-600'}`}>
-            <Clock className="w-5 h-5" />
-            {formatTime(timeLeft)}
+          <div className="flex flex-col items-center">
+             <div className={`flex items-center gap-2 font-mono text-xl font-bold px-4 py-1 rounded-lg ${timeLeft < 300 && !isExamFinished ? 'bg-red-50 text-red-600 animate-pulse' : 'bg-indigo-50 text-indigo-600'}`}>
+              <Clock className="w-5 h-5" />
+              {isExamFinished ? "Süre Bitti" : formatTime(timeLeft)}
+            </div>
           </div>
 
           {!isExamFinished && (
@@ -164,7 +175,7 @@ export default function TestExamPage() {
               onClick={finishExam}
               className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm font-bold shadow-md transition-all active:scale-95"
             >
-              Sınavı Bitir
+              Bitir
             </button>
           )}
         </div>
@@ -172,13 +183,13 @@ export default function TestExamPage() {
 
       <div className="max-w-3xl mx-auto px-4 mt-8 space-y-8">
         
-        {/* --- Sonuç Kartı (Sınav Bitince Gözükür) --- */}
+        {/* --- Sonuç Kartı --- */}
         {isExamFinished && (
           <div className="bg-white rounded-3xl p-8 shadow-xl border-2 border-indigo-100 animate-in slide-in-from-top-4">
             <h2 className="text-2xl font-bold text-center text-slate-900 mb-6">Sınav Sonucu</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
               <div className="p-4 bg-slate-50 rounded-2xl">
-                <div className="text-sm text-slate-500 font-semibold uppercase">Soru</div>
+                <div className="text-sm text-slate-500 font-semibold uppercase">Toplam Soru</div>
                 <div className="text-2xl font-bold text-slate-900">{questions.length}</div>
               </div>
               <div className="p-4 bg-emerald-50 rounded-2xl border border-emerald-100">
@@ -194,6 +205,15 @@ export default function TestExamPage() {
                 <div className="text-2xl font-bold text-indigo-700">{score.net.toFixed(2)}</div>
               </div>
             </div>
+            
+            <div className="mt-6 text-center">
+               <button 
+                 onClick={() => window.location.reload()} 
+                 className="text-indigo-600 hover:text-indigo-800 font-medium underline"
+               >
+                 Sınavı Tekrarla
+               </button>
+            </div>
           </div>
         )}
 
@@ -202,38 +222,34 @@ export default function TestExamPage() {
           const userAnswer = userAnswers[qIndex];
           const correctAnswer = q.answer || q.cevap;
           
-          // Şık statü belirleme fonksiyonu
           const getOptionStatus = (optionText: string) => {
             if (!isExamFinished) {
-              // Sınav devam ederken sadece seçili mi diye bak
               return userAnswer === optionText ? 'selected' : 'default';
             }
-            // Sınav bittiğinde renkleri belirle
-            if (optionText === correctAnswer) return 'correct'; // Doğru şıkkı her zaman yeşil göster
-            if (userAnswer === optionText && userAnswer !== correctAnswer) return 'wrong'; // Yanlış işaretlenmişse kırmızı
+            if (optionText === correctAnswer) return 'correct';
+            if (userAnswer === optionText && userAnswer !== correctAnswer) return 'wrong';
             return 'default';
           };
 
           return (
             <div key={qIndex} className="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-slate-100">
               
-              {/* Soru Başlığı */}
               <div className="flex gap-4 mb-6">
                 <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-slate-100 text-slate-700 font-bold rounded-xl">
                   {qIndex + 1}
                 </div>
-                <p className="text-lg md:text-xl font-medium text-slate-800 leading-relaxed pt-1">
-                  {q.question || q.soru}
-                </p>
+                <div className="flex-1 pt-1">
+                   <p className="text-lg md:text-xl font-medium text-slate-800 leading-relaxed">
+                    {q.question || q.soru}
+                  </p>
+                </div>
               </div>
 
-              {/* Şıklar (Grid yapısı) */}
               <div className="space-y-3 pl-0 md:pl-14">
                 {(q.options || q.secenekler || []).map((opt: string, optIndex: number) => {
                   const status = getOptionStatus(opt);
                   
-                  // Tailwind sınıfları
-                  let styleClass = "border-slate-200 hover:bg-slate-50 hover:border-slate-300 text-slate-600"; // Default
+                  let styleClass = "border-slate-200 hover:bg-slate-50 hover:border-slate-300 text-slate-600";
                   
                   if (status === 'selected') {
                     styleClass = "border-indigo-500 bg-indigo-50 text-indigo-700 font-medium ring-1 ring-indigo-500";
@@ -250,8 +266,7 @@ export default function TestExamPage() {
                       disabled={isExamFinished}
                       className={`w-full text-left p-4 rounded-xl border-2 transition-all duration-200 flex items-center gap-3 group relative ${styleClass}`}
                     >
-                      {/* A, B, C, D Yuvarlakları */}
-                      <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold border transition-colors
+                      <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold border transition-colors flex-shrink-0
                         ${status === 'selected' ? 'bg-indigo-600 text-white border-indigo-600' : 
                           status === 'correct' ? 'bg-emerald-500 text-white border-emerald-500' :
                           status === 'wrong' ? 'bg-red-500 text-white border-red-500' :
@@ -263,9 +278,8 @@ export default function TestExamPage() {
                       
                       <span className="flex-1">{opt}</span>
 
-                      {/* Sonuç İkonları */}
-                      {status === 'correct' && <CheckCircle className="w-6 h-6 text-emerald-600" />}
-                      {status === 'wrong' && <XCircle className="w-6 h-6 text-red-500" />}
+                      {status === 'correct' && <CheckCircle className="w-6 h-6 text-emerald-600 flex-shrink-0" />}
+                      {status === 'wrong' && <XCircle className="w-6 h-6 text-red-500 flex-shrink-0" />}
                     </button>
                   );
                 })}
@@ -274,9 +288,18 @@ export default function TestExamPage() {
           );
         })}
         
-        {/* Bitirme Butonu (En Altta da olsun) */}
         {!isExamFinished && questions.length > 0 && (
           <div className="flex justify-center py-8">
             <button
               onClick={finishExam}
-              className="w-full md:w-auto px-12 py-4 bg-indigo-600 hover:bg-indigo-70
+              className="w-full md:w-auto px-12 py-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-2xl font-bold text-lg shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all"
+            >
+              Sınavı Tamamla
+            </button>
+          </div>
+        )}
+        
+      </div>
+    </main>
+  );
+}
