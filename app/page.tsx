@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
-// --- İkonlar ---
+// --- İKONLAR ---
 const Trophy = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" /><path d="M18 9h1.5a2.5 2.5 0 0 1 0-5H18" /><path d="M4 22h16" /><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" /><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" /><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" /></svg>
 );
@@ -22,35 +22,47 @@ const CheckCircle = (props: React.SVGProps<SVGSVGElement>) => (
 const PenTool = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="m12 19 7-7 3 3-7 7-3-3z" /><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" /><path d="m2 2 7.586 7.586" /><circle cx="11" cy="11" r="2" /></svg>
 );
+const Zap = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+);
+const Target = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+);
 
-// --- Sınav Ayarları (DOSYA İSİMLERİNE GÖRE GÜNCELLENDİ) ---
+// --- SINAV AYARLARI ---
 const examConfig = [
   { 
     id: 'yks', 
-    prefix: 'yks-sozel-deneme', // Dosya: yks-sozel-deneme-1.json
+    prefix: 'yks-sozel-deneme', 
     title: 'YKS Sözel', 
-    count: 30, // Dosya listesine göre 30 adet
+    count: 30, 
     desc: 'TYT ve AYT odaklı kapsamlı deneme setleri.',
-    icon: <Book className="w-8 h-8 text-white" />,
-    gradient: 'from-blue-500 to-indigo-600',
+    icon: <Book className="w-6 h-6 text-white" />,
+    gradient: 'from-blue-600 to-indigo-600',
+    border: 'border-blue-100',
+    slug: 'yks-sozel'
   },
   { 
     id: 'kpss', 
-    prefix: 'kpss-sozel', // Dosya: kpss-sozel-1.json
+    prefix: 'kpss-sozel', 
     title: 'KPSS Genel Kültür', 
-    count: 21, // Dosya listesine göre 21 adet
-    desc: 'Memurluk sınavı için tarih, coğrafya ve vatandaşlık.',
-    icon: <Brain className="w-8 h-8 text-white" />,
-    gradient: 'from-orange-400 to-red-500',
+    count: 21, 
+    desc: 'Tarih, Coğrafya ve Vatandaşlık çıkmış soruları.',
+    icon: <Brain className="w-6 h-6 text-white" />,
+    gradient: 'from-orange-500 to-red-500',
+    border: 'border-orange-100',
+    slug: 'kpss-genel-kultur'
   },
   { 
     id: 'tus', 
-    prefix: 'tus-deneme', // Dosya: tus-deneme-1.json
+    prefix: 'tus-deneme', 
     title: 'TUS Denemeleri', 
-    count: 22, // Dosya listesine göre 22 adet
-    desc: 'Tıpta Uzmanlık Sınavı için klinik senaryolar.',
-    icon: <Activity className="w-8 h-8 text-white" />,
-    gradient: 'from-emerald-400 to-teal-600',
+    count: 22, 
+    desc: 'Tıpta Uzmanlık Sınavı için klinik vaka soruları.',
+    icon: <Activity className="w-6 h-6 text-white" />,
+    gradient: 'from-emerald-500 to-teal-600',
+    border: 'border-emerald-100',
+    slug: 'tus-tip'
   }
 ];
 
@@ -65,44 +77,76 @@ export default function HomePage() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-slate-50 font-sans text-slate-800 pb-20">
+    <main className="min-h-screen bg-slate-50 font-sans text-slate-800">
       
-      {/* Hero Alanı */}
-      <div className="bg-gradient-to-b from-indigo-900 via-indigo-800 to-indigo-600 text-white pt-20 pb-24 px-4 rounded-b-[3rem] shadow-xl mb-12">
-        <div className="max-w-4xl mx-auto text-center space-y-6">
-          <div className="inline-flex items-center justify-center p-3 bg-white/10 backdrop-blur-md rounded-2xl mb-4 border border-white/20">
-             <Trophy className="w-8 h-8 text-yellow-300" />
+      {/* --- HERO SECTION (Kompakt ve Modern) --- */}
+      <div className="bg-gradient-to-r from-slate-900 via-indigo-900 to-slate-900 text-white pb-20 pt-10 px-4 mb-8">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+          
+          <div className="space-y-4 md:w-2/3">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-xs font-semibold text-indigo-200">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+              </span>
+              Online Sınav Merkezi v2.0
+            </div>
+            
+            <h1 className="text-3xl md:text-5xl font-black tracking-tight leading-tight">
+              TestDünya <span className="text-indigo-400">Sınav Platformu</span>
+            </h1>
+            <p className="text-slate-300 text-base md:text-lg max-w-xl leading-relaxed">
+              YKS, KPSS ve TUS sınavlarına en güncel sorularla, ücretsiz ve üyeliksiz hazırlanın. 
+              Hatalarınızı analiz edin, netlerinizi artırın.
+            </p>
+
+            <div className="flex flex-wrap gap-4 pt-2">
+               <Link href="/mistakes" className="px-6 py-3 bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl font-bold transition-all flex items-center gap-2">
+                 <span>📕</span> Hatalarım
+               </Link>
+               <button onClick={() => document.getElementById('exams')?.scrollIntoView({behavior: 'smooth'})} className="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-bold transition-all shadow-lg shadow-indigo-900/50">
+                 Testleri İncele
+               </button>
+            </div>
           </div>
-          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">
-            TestDünya Sınav Platformu
-          </h1>
-          <p className="text-indigo-100 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed opacity-90">
-            YKS, KPSS ve TUS sınavlarına en modern arayüzle hazırlanın. 
-          </p>
+
+          {/* Sağ taraf görseli (Soyut ikon) */}
+          <div className="md:w-1/3 flex justify-center md:justify-end">
+             <div className="relative w-40 h-40 md:w-56 md:h-56 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-3xl rotate-6 shadow-2xl flex items-center justify-center border-4 border-white/10 backdrop-blur-md">
+                <Trophy className="w-20 h-20 md:w-28 md:h-28 text-white drop-shadow-md" />
+             </div>
+          </div>
+
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 -mt-16 space-y-10">
-        {/* Sınav Listesi */}
+      {/* --- SINAV LİSTESİ --- */}
+      <div id="exams" className="max-w-6xl mx-auto px-4 -mt-16 space-y-8 pb-20 relative z-10">
         {examConfig.map((exam) => (
           <section 
             key={exam.id} 
-            className="bg-white rounded-3xl shadow-xl shadow-slate-200/60 overflow-hidden border border-slate-100"
+            className="bg-white rounded-2xl shadow-xl shadow-slate-200/50 overflow-hidden border border-slate-100 transition-all hover:shadow-2xl hover:shadow-indigo-100/50"
           >
-            {/* Kart Başlığı */}
-            <div className={`p-6 bg-gradient-to-r ${exam.gradient} text-white flex items-center gap-5`}>
-              <div className="p-3 bg-white/20 backdrop-blur-sm rounded-xl shadow-inner">
-                {exam.icon}
+            {/* Header */}
+            <div className={`p-5 bg-gradient-to-r ${exam.gradient} text-white flex items-center justify-between`}>
+              <div className="flex items-center gap-4">
+                <div className="p-2.5 bg-white/20 backdrop-blur-sm rounded-xl shadow-inner">
+                  {exam.icon}
+                </div>
+                <div>
+                  <h2 className="text-xl font-bold tracking-wide">{exam.title}</h2>
+                  <p className="text-white/80 text-xs font-medium">{exam.desc}</p>
+                </div>
               </div>
-              <div>
-                <h2 className="text-2xl font-bold">{exam.title}</h2>
-                <p className="text-white/80 text-sm mt-1">{exam.desc}</p>
+              <div className="hidden sm:block text-right">
+                 <span className="block text-2xl font-black">{exam.count}</span>
+                 <span className="text-[10px] uppercase opacity-80 font-bold tracking-wider">Deneme</span>
               </div>
             </div>
 
-            {/* Test Linkleri Grid */}
-            <div className="p-8">
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4">
+            {/* Grid */}
+            <div className="p-6 bg-slate-50/50">
+              <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-8 gap-3">
                 {Array.from({ length: exam.count }, (_, i) => i + 1).map((num) => {
                   const testLinkId = `${exam.prefix}-${num}`;
                   const isDone = (completed[exam.id] || []).includes(num);
@@ -111,27 +155,25 @@ export default function HomePage() {
                     <Link 
                       key={num}
                       href={`/test/${testLinkId}`}
+                      title={`${exam.title} ${num}. Deneme Sınavı`}
                       className={`
-                        group relative flex flex-col items-center justify-center py-4 px-2 rounded-2xl border transition-all duration-300
+                        group relative flex flex-col items-center justify-center py-3 px-2 rounded-xl border transition-all duration-200
                         ${isDone 
                           ? 'bg-emerald-50 border-emerald-200 hover:bg-emerald-100' 
-                          : 'bg-slate-50 border-slate-100 hover:border-indigo-300 hover:bg-white hover:shadow-lg hover:-translate-y-1'
+                          : 'bg-white border-slate-200 hover:border-indigo-400 hover:shadow-md hover:-translate-y-0.5'
                         }
                       `}
                     >
-                      <div className="mb-2">
+                      <div className="mb-1.5">
                         {isDone ? (
-                           <div className="p-2 bg-emerald-100 rounded-full text-emerald-600">
-                             <CheckCircle className="w-5 h-5" />
-                           </div>
+                           <div className="text-emerald-500"><CheckCircle className="w-5 h-5" /></div>
                         ) : (
-                           <div className="p-2 bg-white rounded-full text-slate-400 group-hover:text-indigo-500 shadow-sm group-hover:shadow-md transition-all">
+                           <div className="text-slate-300 group-hover:text-indigo-500 transition-colors">
                              <PenTool className="w-5 h-5" />
                            </div>
                         )}
                       </div>
-                      
-                      <span className={`text-sm font-bold ${isDone ? 'text-emerald-700' : 'text-slate-600 group-hover:text-slate-900'}`}>
+                      <span className={`text-xs font-bold ${isDone ? 'text-emerald-700' : 'text-slate-600 group-hover:text-indigo-900'}`}>
                         {num}. Deneme
                       </span>
                     </Link>
@@ -142,6 +184,87 @@ export default function HomePage() {
           </section>
         ))}
       </div>
+
+      {/* --- SEO & FEATURES SECTION (YENİ EKLENDİ) --- */}
+      <section className="bg-white border-t border-slate-100 py-16 px-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-black text-slate-800 mb-4">Neden TestDünya?</h2>
+            <p className="text-slate-500 max-w-2xl mx-auto">
+              Sınavlara hazırlanırken ihtiyacınız olan her şey tek bir platformda.
+              Ücretsiz YKS, KPSS ve TUS denemeleri ile başarıya bir adım daha yaklaşın.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="p-6 bg-indigo-50 rounded-2xl border border-indigo-100 text-center">
+              <div className="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Zap className="w-6 h-6" />
+              </div>
+              <h3 className="font-bold text-slate-800 mb-2">Hızlı ve Modern Arayüz</h3>
+              <p className="text-sm text-slate-600 leading-relaxed">
+                Kullanıcı dostu arayüzümüz ile dikkatiniz dağılmadan sadece sorulara odaklanın.
+              </p>
+            </div>
+            <div className="p-6 bg-emerald-50 rounded-2xl border border-emerald-100 text-center">
+              <div className="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Target className="w-6 h-6" />
+              </div>
+              <h3 className="font-bold text-slate-800 mb-2">Hata Analizi</h3>
+              <p className="text-sm text-slate-600 leading-relaxed">
+                Yanlış yaptığınız sorular otomatik olarak "Hatalarım" bölümüne kaydedilir.
+              </p>
+            </div>
+            <div className="p-6 bg-orange-50 rounded-2xl border border-orange-100 text-center">
+              <div className="w-12 h-12 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Book className="w-6 h-6" />
+              </div>
+              <h3 className="font-bold text-slate-800 mb-2">Geniş Soru Havuzu</h3>
+              <p className="text-sm text-slate-600 leading-relaxed">
+                ÖSYM müfredatına uygun YKS, KPSS ve TUS çıkmış sorular ve denemeler.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --- FOOTER (SEO İÇİN ÖNEMLİ) --- */}
+      <footer className="bg-slate-900 text-slate-400 py-12 px-4 border-t border-slate-800">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-8 text-sm">
+          <div className="col-span-1 md:col-span-2">
+            <h4 className="text-white font-bold text-lg mb-4 flex items-center gap-2">
+              <Trophy className="w-5 h-5 text-indigo-500" /> TestDünya
+            </h4>
+            <p className="leading-relaxed mb-4 max-w-sm">
+              Türkiye'nin en kapsamlı ücretsiz online sınav hazırlık platformu. 
+              TYT, AYT, KPSS Lisans, Önlisans ve TUS sınavlarına hazırlanan öğrenciler için 
+              özenle hazırlanmış deneme sınavları.
+            </p>
+            <p className="text-xs opacity-50">&copy; 2025 TestDünya. Tüm hakları saklıdır.</p>
+          </div>
+          
+          <div>
+            <h5 className="text-white font-bold mb-4">Sınavlar</h5>
+            <ul className="space-y-2">
+              <li><Link href="#exams" className="hover:text-white transition-colors">YKS (TYT-AYT) Denemeleri</Link></li>
+              <li><Link href="#exams" className="hover:text-white transition-colors">KPSS Çıkmış Sorular</Link></li>
+              <li><Link href="#exams" className="hover:text-white transition-colors">TUS Klinik Sorular</Link></li>
+              <li><Link href="/mistakes" className="hover:text-white transition-colors">Hata Analizi</Link></li>
+            </ul>
+          </div>
+
+          <div>
+            <h5 className="text-white font-bold mb-4">Popüler Aramalar</h5>
+            <ul className="space-y-2 text-xs">
+              <li>Online Deneme Çöz</li>
+              <li>Ücretsiz YKS Testleri</li>
+              <li>KPSS Tarih Denemeleri</li>
+              <li>Tıpta Uzmanlık Sınavı</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
     </main>
   );
 }
