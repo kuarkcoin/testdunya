@@ -3,8 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
-// --- Modern SVG İkonlar ---
-
+// --- İkonlar ---
 const Trophy = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" /><path d="M18 9h1.5a2.5 2.5 0 0 1 0-5H18" /><path d="M4 22h16" /><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" /><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" /><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" /></svg>
 );
@@ -24,37 +23,34 @@ const PenTool = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="m12 19 7-7 3 3-7 7-3-3z" /><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" /><path d="m2 2 7.586 7.586" /><circle cx="11" cy="11" r="2" /></svg>
 );
 
-// --- Sınav Yapılandırması (Dosya isimlerine göre güncellendi) ---
+// --- Sınav Ayarları (DOSYA İSİMLERİNE GÖRE DÜZELTİLDİ) ---
 const examConfig = [
   { 
     id: 'yks', 
-    prefix: 'yks-sozel-deneme', // DİKKAT: Dosya isminizle aynı olmalı
+    prefix: 'yks-sozel-deneme', // Dosya: yks-sozel-deneme-1.json
     title: 'YKS Sözel', 
     count: 30, 
     desc: 'TYT ve AYT odaklı kapsamlı deneme setleri.',
     icon: <Book className="w-8 h-8 text-white" />,
     gradient: 'from-blue-500 to-indigo-600',
-    shadow: 'shadow-blue-200'
   },
   { 
     id: 'kpss', 
-    prefix: 'kpss-sozel', // Dosya isminizle aynı olmalı
+    prefix: 'kpss-sozel', // Dosya: kpss-sozel-1.json
     title: 'KPSS Genel Kültür', 
     count: 21, 
     desc: 'Memurluk sınavı için tarih, coğrafya ve vatandaşlık.',
     icon: <Brain className="w-8 h-8 text-white" />,
     gradient: 'from-orange-400 to-red-500',
-    shadow: 'shadow-orange-200'
   },
   { 
     id: 'tus', 
-    prefix: 'tus-deneme', // Dosya isminizle aynı olmalı
+    prefix: 'tus-deneme', // Dosya: tus-deneme-1.json
     title: 'TUS Denemeleri', 
     count: 22, 
     desc: 'Tıpta Uzmanlık Sınavı için klinik senaryolar.',
     icon: <Activity className="w-8 h-8 text-white" />,
     gradient: 'from-emerald-400 to-teal-600',
-    shadow: 'shadow-emerald-200'
   }
 ];
 
@@ -71,7 +67,7 @@ export default function HomePage() {
   return (
     <main className="min-h-screen bg-slate-50 font-sans text-slate-800 pb-20">
       
-      {/* --- SEO & Hero Alanı --- */}
+      {/* Hero Alanı */}
       <div className="bg-gradient-to-b from-indigo-900 via-indigo-800 to-indigo-600 text-white pt-20 pb-24 px-4 rounded-b-[3rem] shadow-xl mb-12">
         <div className="max-w-4xl mx-auto text-center space-y-6">
           <div className="inline-flex items-center justify-center p-3 bg-white/10 backdrop-blur-md rounded-2xl mb-4 border border-white/20">
@@ -82,7 +78,6 @@ export default function HomePage() {
           </h1>
           <p className="text-indigo-100 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed opacity-90">
             YKS, KPSS ve TUS sınavlarına en modern arayüzle hazırlanın. 
-            İlerlemenizi takip edin, notlar alın ve başarıya ulaşın.
           </p>
         </div>
       </div>
