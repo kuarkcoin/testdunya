@@ -1,722 +1,396 @@
-[
-    {
-        "id": 1,
-        "question": "TÜRKÇE: Bu parçada yazar, insanların hızla tüketilen bir zaman içinde yaşadığını, bu nedenle düşünmek için gerekli olan sakinliğe ulaşamadıklarını vurgulamaktadır. Parçanın temel düşüncesi aşağıdakilerden hangisidir?",
-        "shape": "",
-        "A": "Teknolojik gelişmeler insanları yalnızlaştırmıştır.",
-        "B": "Yoğun yaşam temposu derin düşünmeyi zorlaştırmaktadır.",
-        "C": "İnsanlar geçmişe özlem duymaktadır.",
-        "D": "Toplumsal sorunlar bireyleri etkilemektedir.",
-        "E": "Kültürel farklılıklar iletişimi zorlaştırmaktadır.",
-        "correct": "B",
-        "Açıklama": "Metinde hızlı yaşam temposunun düşünmeyi engellediği vurgulanmıştır; temel düşünce budur."
-    },
-    {
-        "id": 2,
-        "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde 'abartma' sanatı vardır?",
-        "shape": "",
-        "A": "Bu yaz okuduğum kitaplar bana çok şey kattı.",
-        "B": "Onu görünce sevinçten havalara uçtum.",
-        "C": "Yeni aldığı arabayı hemen sattı.",
-        "D": "Evleri şehrin en sessiz mahallesindeydi.",
-        "E": "Masadaki belgeleri tek tek inceledi.",
-        "correct": "B",
-        "Açıklama": "'Havalara uçtum' ifadesi mecaz ve abartma içerir."
-    },
-    {
-        "id": 3,
-        "question": "TÜRKÇE: 'Bu iş sandığından daha kolay.' cümlesinde aşağıdakilerden hangisi vardır?",
-        "shape": "",
-        "A": "Karşılaştırma",
-        "B": "Koşul",
-        "C": "Amaç",
-        "D": "Varsayım",
-        "E": "Tahmin",
-        "correct": "A",
-        "Açıklama": "Cümlede 'sandığından daha' ifadesi karşılaştırma yapıldığını gösterir."
-    },
-    {
-        "id": 4,
-        "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde yazım yanlışı vardır?",
-        "shape": "",
-        "A": "Bir çok insan bu konuda farklı düşünüyor.",
-        "B": "Bu akşamki toplantıya sen de katıl.",
-        "C": "Türkçeyi doğru kullanmak önemlidir.",
-        "D": "Bütün soruları dikkatle çözmelisin.",
-        "E": "Kütüphanedeki kitapları düzenledik.",
-        "correct": "A",
-        "Açıklama": "'Birçok' birleşik yazılır, ayrı yazılması yanlıştır."
-    },
-    {
-        "id": 5,
-        "question": "TÜRKÇE: Bu cümlede hangi sözcük mecaz anlamda kullanılmıştır? 'Zaman, insanı olgunlaştıran bir öğretmendir.'",
-        "shape": "",
-        "A": "zaman",
-        "B": "insanı",
-        "C": "olgunlaştıran",
-        "D": "öğretmendir",
-        "E": "bir",
-        "correct": "D",
-        "Açıklama": "Zaman öğretmen değildir; burada mecaz vardır."
-    },
-    {
-        "id": 6,
-        "question": "TÜRKÇE: 'Bu karar, uzun tartışmaların bir ürünü olarak ortaya çıktı.' cümlesinde aşağıdakilerden hangisi vardır?",
-        "shape": "",
-        "A": "Neden-sonuç",
-        "B": "Amaç-sonuç",
-        "C": "Koşul-sonuç",
-        "D": "Karşılaştırma",
-        "E": "Tahmin",
-        "correct": "A",
-        "Açıklama": "Uzun tartışmalar = neden; kararın ortaya çıkması = sonuç."
-    },
-    {
-        "id": 7,
-        "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde özne belirtilmemiştir?",
-        "shape": "",
-        "A": "Bu konuda kimse yorum yapmadı.",
-        "B": "Sorular dikkatlice çözüldü.",
-        "C": "Arkadaşım bana yardım etti.",
-        "D": "Toplantıya geç kaldım.",
-        "E": "Sınav sonuçları açıklandı.",
-        "correct": "B",
-        "Açıklama": "Edilgen çatılıdır, özne kullanılmamıştır."
-    },
-    {
-        "id": 8,
-        "question": "TÜRKÇE: 'Gözden düşmek' deyimi aşağıdakilerden hangisiyle aynı anlama gelir?",
-        "shape": "",
-        "A": "Değer kaybetmek",
-        "B": "Güven vermek",
-        "C": "Karar değiştirmek",
-        "D": "İyi görünmek",
-        "E": "Sözünü tutmak",
-        "correct": "A",
-        "Açıklama": "Gözden düşmek = değerini yitirmek."
-    },
-    {
-        "id": 9,
-        "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde 'yakınma' vardır?",
-        "shape": "",
-        "A": "Bu yıl hava gerçekten çok sıcak geçti.",
-        "B": "Her gün aynı işi yapmaktan sıkıldım.",
-        "C": "Toplantıya erken gitmeliyiz.",
-        "D": "Bu sokak eskisinden daha kalabalık.",
-        "E": "Onu görünce ne kadar değiştiğini fark ettim.",
-        "correct": "B",
-        "Açıklama": "Sıkıldım → şikâyet/ yakınmadır."
-    },
-    {
-        "id": 10,
-        "question": "TÜRKÇE: 'Kitabı okuyup bana da verir misin?' cümlesinde aşağıdakilerden hangisi vardır?",
-        "shape": "",
-        "A": "Koşul",
-        "B": "Zaman",
-        "C": "Amaç",
-        "D": "Neden",
-        "E": "Karşılaştırma",
-        "correct": "B",
-        "Açıklama": "Önce okuma eylemi gerçekleşir → zaman ilişkisi."
-    },
-    {
-        "id": 11,
-        "question": "TÜRKÇE: Bu parçada anlatılmak istenen aşağıdakilerden hangisidir? 'Bir metni anlamanın en iyi yolu, onu önce duygu süzgecinden geçirmektir. Çünkü metin sadece cümlelerden değil, yazarın iç dünyasından taşan izlerden oluşur.'",
-        "shape": "",
-        "A": "Okur, metne duygularıyla yaklaşmalıdır.",
-        "B": "Metinler sadece bilgi verir.",
-        "C": "Yazarlar duygularını gizler.",
-        "D": "Her metin aynı şekilde okunmalıdır.",
-        "E": "Metinler çoğu zaman anlaşılmazdır.",
-        "correct": "A",
-        "Açıklama": "Metnin duygusal okumayla kavranacağı vurgulanır."
-    },
-    {
-        "id": 12,
-        "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde 'amaç' anlamı vardır?",
-        "shape": "",
-        "A": "Notlarını düzeltmek için çok çalıştı.",
-        "B": "Bu yıl da sınav erken yapılacak.",
-        "C": "Yarın şehre gitmeyi düşünüyorum.",
-        "D": "Onu görünce şaşırdım.",
-        "E": "Her gün kitap okur.",
-        "correct": "A",
-        "Açıklama": "‘… için’ → amaç belirten yapıdır."
-    },
-    {
-        "id": 13,
-        "question": "TÜRKÇE: 'Bu tablo, sanatçının olgunluk dönemine işaret ediyor.' cümlesinde aşağıdakilerden hangisi vardır?",
-        "shape": "",
-        "A": "Tahmin",
-        "B": "Varsayım",
-        "C": "Nesnel yargı",
-        "D": "Öznel yargı",
-        "E": "Koşul",
-        "correct": "D",
-        "Açıklama": "Sanatçının olgunluğu yoruma dayalıdır → öznel."
-    },
-    {
-        "id": 14,
-        "question": "TÜRKÇE: Hangi cümlede kişi zamiri kullanılmamıştır?",
-        "shape": "",
-        "A": "Onu çağırdım ama gelmedi.",
-        "B": "Ben bu konuda fikrimi söyledim.",
-        "C": "Seni çok eskiden tanıyordum.",
-        "D": "Bu karar kimseyi memnun etmedi.",
-        "E": "Biz toplantıya geç kaldık.",
-        "correct": "D",
-        "Açıklama": "'Kimseyi' belgisiz zamirdir, kişi zamiri değildir."
-    },
-    {
-        "id": 15,
-        "question": "TÜRKÇE: 'Geleneksel tiyatronun izlerini sürmek isteyenler için bu eser iyi bir kaynaktır.' Bu cümlede aşağıdakilerden hangisi vardır?",
-        "shape": "",
-        "A": "Tanımlama",
-        "B": "Eleştiri",
-        "C": "Koşul",
-        "D": "Öneri",
-        "E": "Karşılaştırma",
-        "correct": "D",
-        "Açıklama": "Eserin öneri niteliği taşıdığı belirtilmiştir."
-    },
-    {
-        "id": 16,
-        "question": "TÜRKÇE: 'Bu yüzden' sözcüğü aşağıdaki cümlelerin hangisinde doğru kullanılmıştır?",
-        "shape": "",
-        "A": "Çok yoruldum, bu yüzden biraz dinleneceğim.",
-        "B": "Sizi aradım bu yüzden telefon çalmadı.",
-        "C": "Onu çok severim bu yüzden hiç anlamam.",
-        "D": "Hava çok soğuktu bu yüzden güneş açtı.",
-        "E": "Çalıştım bu yüzden sınavı kazanamadım.",
-        "correct": "A",
-        "Açıklama": "Neden–sonuç ilişkisinde doğru kullanım A’dadır."
-    },
-    {
-        "id": 17,
-        "question": "TÜRKÇE: Bu cümlede hangi anlatım tekniği ağır basmaktadır? 'Yazar, çocukluğunun geçtiği kasabayı öyle canlı betimliyor ki, okur kendini oradaymış gibi hissediyor.'",
-        "shape": "",
-        "A": "Öyküleme",
-        "B": "Betimleme",
-        "C": "Tartışma",
-        "D": "Açıklama",
-        "E": "Tanımlama",
-        "correct": "B",
-        "Açıklama": "‘Canlı betimleme’ vurgulanmıştır."
-    },
-    {
-        "id": 18,
-        "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde nesnel bir yargı vardır?",
-        "shape": "",
-        "A": "Bu kitap, yazarın en güzel eseridir.",
-        "B": "Film beklediğim kadar etkileyici değildi.",
-        "C": "Bu şehir, ülkenin en kalabalık şehridir.",
-        "D": "Bugün hava çok güzeldi.",
-        "E": "O tablo bana huzur veriyor.",
-        "correct": "C",
-        "Açıklama": "Nüfus verilerine göre ölçülebilir → nesnel."
-    },
-    {
-        "id": 19,
-        "question": "TÜRKÇE: Hangi cümlede neden–sonuç ilişkisi yoktur?",
-        "shape": "",
-        "A": "Hasta olduğu için okula gitmedi.",
-        "B": "Yağmur yağdığından yollar kapandı.",
-        "C": "Sınavı kazandı, çok çalışmıştı.",
-        "D": "Geç kaldığı için otobüsü kaçırdı.",
-        "E": "Bu haberi duyunca çok şaşırdı.",
-        "correct": "E",
-        "Açıklama": "‘Duyunca’ zaman bildirir, neden–sonuç değildir."
-    },
-    {
-        "id": 20,
-        "question": "TÜRKÇE: Hangi cümlede ek fiil (ek eylem) yoktur?",
-        "shape": "",
-        "A": "Bu çocuk çok akıllıdır.",
-        "B": "Ben bu işten yoruldum.",
-        "C": "Hava bugün çok sakinmiş.",
-        "D": "O, ekibiyle uyumluymuş.",
-        "E": "Bu ev oldukça geniştir.",
-        "correct": "B",
-        "Açıklama": "‘Yoruldum’ basit zamanlıdır, ek fiil yoktur."
-    },
-    {
-        "id": 21,
-        "question": "TÜRKÇE: Bu cümlede anlatım bozukluğuna neden olan kullanım aşağıdakilerden hangisidir? 'Bu projeyi hem zamanında hem de başarılı bir şekilde bitirmeyi planlıyoruz.'",
-        "shape": "",
-        "A": "Gereksiz sözcük kullanımı",
-        "B": "Anlam belirsizliği",
-        "C": "Yapı bakımından uyumsuzluk",
-        "D": "Özne-yüklem uyuşmazlığı",
-        "E": "Eksiltili anlatım",
-        "correct": "C",
-        "Açıklama": "‘Hem … hem de’ bağlacından sonra iki unsurun aynı türde olması gerekir; burada biri zaman, diğeri nitelik olduğundan uyumsuzluk oluşur."
-    },
-    {
-        "id": 22,
-        "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde tanımlama yapılmıştır?",
-        "shape": "",
-        "A": "Dostluk, insanların birbirine güvenmesiyle oluşan güçlü bir bağdır.",
-        "B": "Bu kitap beni çok etkiledi.",
-        "C": "Sınavdan sonra herkes derin bir nefes aldı.",
-        "D": "Topluluk karşısında konuşmak zordur.",
-        "E": "Onunla uzun süredir görüşmüyorum.",
-        "correct": "A",
-        "Açıklama": "Dostluk kavramı açıklanarak tanımlanmıştır."
-    },
-    {
-        "id": 23,
-        "question": "TÜRKÇE: 'Kitapları bana getirdiğinde çok sevinmiştim.' cümlesinde hangi anlam ilişkisi vardır?",
-        "shape": "",
-        "A": "Neden-sonuç",
-        "B": "Amaç-sonuç",
-        "C": "Zaman",
-        "D": "Koşul",
-        "E": "Karşılaştırma",
-        "correct": "C",
-        "Açıklama": "‘Getirdiğinde’ bağlacı zaman bildirir."
-    },
-    {
-        "id": 24,
-        "question": "TÜRKÇE: Hangi cümlede nesnel bir ifade vardır?",
-        "shape": "",
-        "A": "Bu roman yazarın en etkileyici eseridir.",
-        "B": "Film, iki saat on iki dakika sürmektedir.",
-        "C": "O tablo bana huzur veriyor.",
-        "D": "Burası şehrin en güzel semtidir.",
-        "E": "Bu şiir çok duygusaldır.",
-        "correct": "B",
-        "Açıklama": "Süre ölçülebilir bir bilgidir → nesnel."
-    },
-    {
-        "id": 25,
-        "question": "TÜRKÇE: 'Sözünü kesmek' deyimi aşağıdakilerden hangisiyle aynı anlama gelir?",
-        "shape": "",
-        "A": "Lafı yarıda bırakmak",
-        "B": "Yeni konu açmak",
-        "C": "Sözü uzatmak",
-        "D": "Soru sormak",
-        "E": "Konuyu değiştirmek",
-        "correct": "A",
-        "Açıklama": "Sözünü kesmek = konuşmayı yarıda kesmek."
-    },
-    {
-        "id": 26,
-        "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde yüklem geçişsizdir?",
-        "shape": "",
-        "A": "Kitabı masaya koydu.",
-        "B": "Misafirler erken ayrıldı.",
-        "C": "Soruyu dikkatle çözdü.",
-        "D": "Toplantıyı başlattı.",
-        "E": "Çantayı bana uzattı.",
-        "correct": "B",
-        "Açıklama": "‘Ayrılmak’ geçişsiz bir fiildir."
-    },
-    {
-        "id": 27,
-        "question": "TÜRKÇE: Hangi cümlede koşul anlamı vardır?",
-        "shape": "",
-        "A": "Soru çözerken çok yoruluyorum.",
-        "B": "Beni ararsan hemen gelirim.",
-        "C": "Bu konuda kesin karar verildi.",
-        "D": "Onunla konuşmak gerçekten zor.",
-        "E": "Her gün aynı saatte uyanıyorum.",
-        "correct": "B",
-        "Açıklama": "‘…arsan’ → koşul bildirir."
-    },
-    {
-        "id": 28,
-        "question": "TÜRKÇE: 'Bu tablo, sanatçının iç dünyasını yansıtmaktadır.' cümlesindeki yargı türü aşağıdakilerden hangisidir?",
-        "shape": "",
-        "A": "Öznel",
-        "B": "Nesnel",
-        "C": "Koşula bağlı",
-        "D": "Karşılaştırmalı",
-        "E": "Tanımlayıcı",
-        "correct": "A",
-        "Açıklama": "‘İç dünyasını yansıtmak’ kişisel bir yorumdur."
-    },
-    {
-        "id": 29,
-        "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde sebep-sonuç ilişkisi vardır?",
-        "shape": "",
-        "A": "Yağmur yağdığı için yollar kapandı.",
-        "B": "Toplantıya katılmak üzere yola çıktı.",
-        "C": "Beni görünce koşmaya başladı.",
-        "D": "Bugün hava çok güzel.",
-        "E": "Sınavdan sonra hemen eve gitti.",
-        "correct": "A",
-        "Açıklama": "Yağmur (neden) → yolların kapanması (sonuç)."
-    },
-    {
-        "id": 30,
-        "question": "TÜRKÇE: Hangi cümlede dolaylı tümleç vardır?",
-        "shape": "",
-        "A": "Bu kitabı bugün bitirdim.",
-        "B": "Onu kapının önünde bekledim.",
-        "C": "Seni arayacağını söyledi.",
-        "D": "Herkes bu habere çok şaşırdı.",
-        "E": "Konuyu uzun süre düşündüm.",
-        "correct": "B",
-        "Açıklama": "‘Kapının önünde’ yer tamlayıcısıdır."
-    },
-    {
-        "id": 31,
-        "question": "TARİH: İlk Türk-İslam devletlerinde hükümdarın yetkilerinin sınırlandırılmasında aşağıdaki kurumlardan hangisinin etkisi daha fazladır?",
-        "shape": "",
-        "A": "Divan",
-        "B": "Ordu",
-        "C": "Halk meclisi",
-        "D": "Ahilik teşkilatı",
-        "E": "Vergi memurları",
-        "correct": "A",
-        "Açıklama": "Divan, devlet yönetiminde hükümdarın yanında denge unsuru görevindedir."
-    },
-    {
-        "id": 32,
-        "question": "TARİH: Aşağıdakilerden hangisi Osmanlı Devleti'nin dağılma döneminde görülen gelişmelerden biridir?",
-        "shape": "",
-        "A": "Tımar sisteminin güçlenmesi",
-        "B": "Merkezi otoritenin zayıflaması",
-        "C": "Topkapı Sarayı'nın yapılması",
-        "D": "İstanbul'un fethi",
-        "E": "Haçlı Seferleri",
-        "correct": "B",
-        "Açıklama": "Dağılma döneminin temel özelliği merkezi otoritenin zayıflamasıdır."
-    },
-    {
-        "id": 33,
-        "question": "TARİH: Selçuklularda kullanılan ‘İkta’ sistemi aşağıdakilerden hangisini sağlamaya yöneliktir?",
-        "shape": "",
-        "A": "Vergi gelirlerinin artırılması",
-        "B": "Asker yetiştirilmesi ve güvenliğin sağlanması",
-        "C": "Şehirlerin imar edilmesi",
-        "D": "Saray giderlerinin azaltılması",
-        "E": "Ticaret yollarının korunması",
-        "correct": "B",
-        "Açıklama": "İkta sahipleri, toprak gelirleri karşılığında asker yetiştirirdi."
-    },
-    {
-        "id": 34,
-        "question": "TARİH: Aşağıdakilerden hangisi Kurtuluş Savaşı’nın hazırlık döneminde yapılmıştır?",
-        "shape": "",
-        "A": "Büyük Taarruz",
-        "B": "Sakarya Meydan Muharebesi",
-        "C": "Amasya Genelgesi",
-        "D": "Mudanya Ateşkes Antlaşması",
-        "E": "Lozan Antlaşması",
-        "correct": "C",
-        "Açıklama": "Amasya Genelgesi, hazırlık döneminin temel belgelerindendir."
-    },
-    {
-        "id": 35,
-        "question": "TARİH: TBMM açıldıktan sonra kurulan düzenli ordunun ilk başarısı aşağıdakilerden hangisidir?",
-        "shape": "",
-        "A": "Sakarya Savaşı",
-        "B": "Başkomutanlık Meydan Muharebesi",
-        "C": "I. İnönü Savaşı",
-        "D": "II. İnönü Savaşı",
-        "E": "Kütahya-Eskişehir Savaşları",
-        "correct": "C",
-        "Açıklama": "Düzenli ordunun ilk zaferi I. İnönü’dür."
-    },
-    {
-        "id": 36,
-        "question": "TARİH: Osmanlı Devleti'nin kapitülasyonları vermesindeki temel amaçlardan biri aşağıdakilerden hangisidir?",
-        "shape": "",
-        "A": "Ekonomiyi geliştirmek",
-        "B": "Avrupa devletleriyle siyasi ilişkileri güçlendirmek",
-        "C": "Yeni pazarlar bulmak",
-        "D": "Vergileri azaltmak",
-        "E": "Dış borçları ödemek",
-        "correct": "B",
-        "Açıklama": "Kapitülasyonlar diplomatik yakınlaşma amacıyla verilmiştir."
-    },
-    {
-        "id": 37,
-        "question": "TARİH: Aşağıdakilerden hangisi Avrupa’da Reform hareketlerinin bir sonucudur?",
-        "shape": "",
-        "A": "Skolastik düşüncenin güçlenmesi",
-        "B": "Katolik Kilisesi’nin otoritesinin sarsılması",
-        "C": "Derebeyliğin güçlenmesi",
-        "D": "Feodalitenin yayılması",
-        "E": "Haçlı Seferlerinin başlaması",
-        "correct": "B",
-        "Açıklama": "Reform, kilise otoritesini zayıflatmıştır."
-    },
-    {
-        "id": 38,
-        "question": "TARİH: Türk Dil Kurumu hangi dönemde kurulmuştur?",
-        "shape": "",
-        "A": "Osmanlı Devleti",
-        "B": "Saltanat dönemi",
-        "C": "Cumhuriyet dönemi",
-        "D": "Tanzimat dönemi",
-        "E": "Milli Mücadele dönemi",
-        "correct": "C",
-        "Açıklama": "Atatürk döneminde 1932’de kurulmuştur."
-    },
-    {
-        "id": 39,
-        "question": "TARİH: Balkan Savaşları’nın Osmanlı üzerindeki en önemli etkilerinden biri aşağıdakilerden hangisidir?",
-        "shape": "",
-        "A": "Anadolu'nun işgale uğraması",
-        "B": "Rumeli’deki topraklarının büyük kısmını kaybetmesi",
-        "C": "Deniz gücünün artması",
-        "D": "Sömürgeler kazanması",
-        "E": "Halifeliğin kaldırılması",
-        "correct": "B",
-        "Açıklama": "Osmanlı, Balkan topraklarının büyük bölümünü kaybetmiştir."
-    },
-    {
-        "id": 40,
-        "question": "TARİH: Misakımillî kararları aşağıdaki hangi mecliste kabul edilmiştir?",
-        "shape": "",
-        "A": "Birinci TBMM",
-        "B": "Mondros Mütarekesi sonrası İstanbul Mebusan Meclisi",
-        "C": "Sivas Kongresi",
-        "D": "Erzurum Kongresi",
-        "E": "Lozan Konferansı",
-        "correct": "B",
-        "Açıklama": "Misakımillî, son Osmanlı Mebusan Meclisi’nde kabul edilmiştir."
-    },
-    {
-        "id": 41,
-        "question": "COĞRAFYA: Türkiye'de en fazla yağış alan bölge aşağıdakilerden hangisidir?",
-        "shape": "",
-        "A": "Marmara",
-        "B": "Akdeniz",
-        "C": "Ege",
-        "D": "Karadeniz",
-        "E": "İç Anadolu",
-        "correct": "D",
-        "Açıklama": "Karadeniz Bölgesi yıl boyunca en fazla yağış alır."
-    },
-    {
-        "id": 42,
-        "question": "COĞRAFYA: Türkiye’de nüfusun en seyrek olduğu bölge aşağıdakilerden hangisidir?",
-        "shape": "",
-        "A": "Marmara",
-        "B": "İç Anadolu",
-        "C": "Doğu Anadolu",
-        "D": "Akdeniz",
-        "E": "Ege",
-        "correct": "C",
-        "Açıklama": "Doğu Anadolu'da yüksek engebe ve sert iklim nüfusu azaltır."
-    },
-    {
-        "id": 43,
-        "question": "COĞRAFYA: Akarsuların denge profiline ulaşamamasının en önemli nedeni aşağıdakilerden hangisidir?",
-        "shape": "",
-        "A": "İklimin sert olması",
-        "B": "Yatak eğiminin fazla olması",
-        "C": "Orman örtüsünün zayıf olması",
-        "D": "Toprak türünün farklı olması",
-        "E": "Yağış rejiminin düzensizliği",
-        "correct": "B",
-        "Açıklama": "Fazla eğim akarsu aşındırmasını artırır, denge profilini engeller."
-    },
-    {
-        "id": 44,
-        "question": "COĞRAFYA: Türkiye’de yazları serin ve yağışlı, kışları ılık geçen iklim türü aşağıdakilerden hangisidir?",
-        "shape": "",
-        "A": "Karasal iklim",
-        "B": "Akdeniz iklimi",
-        "C": "Karadeniz iklimi",
-        "D": "Step iklimi",
-        "E": "Tropikal iklim",
-        "correct": "C",
-        "Açıklama": "Karadeniz iklimi dört mevsim yağışlıdır."
-    },
-    {
-        "id": 45,
-        "question": "COĞRAFYA: Türkiye’de tarımda modern tekniklerin en yaygın kullanıldığı bölge aşağıdakilerden hangisidir?",
-        "shape": "",
-        "A": "Akdeniz",
-        "B": "Ege",
-        "C": "İç Anadolu",
-        "D": "Marmara",
-        "E": "Doğu Anadolu",
-        "correct": "D",
-        "Açıklama": "Marmara gelişmiş sanayi ve ulaşım sayesinde modern tarım tekniklerinin en çok kullanıldığı bölgedir."
-    },
-    {
-        "id": 46,
-        "question": "COĞRAFYA: Türkiye’de rüzgar erozyonunun en yoğun olduğu bölge aşağıdakilerden hangisidir?",
-        "shape": "",
-        "A": "Karadeniz",
-        "B": "Ege",
-        "C": "İç Anadolu",
-        "D": "Doğu Anadolu",
-        "E": "Marmara",
-        "correct": "C",
-        "Açıklama": "İç Anadolu’da bitki örtüsünün zayıf olması erozyonu artırır."
-    },
-    {
-        "id": 47,
-        "question": "COĞRAFYA: Aşağıdaki göllerden hangisi tektonik kökenlidir?",
-        "shape": "",
-        "A": "Tuz Gölü",
-        "B": "Eğirdir",
-        "C": "Beyşehir",
-        "D": "Ulubat",
-        "E": "Manyas",
-        "correct": "A",
-        "Açıklama": "Tuz Gölü fay hatları boyunca oluşmuştur."
-    },
-    {
-        "id": 48,
-        "question": "COĞRAFYA: Türkiye’de en fazla buğday üreten bölge aşağıdakilerden hangisidir?",
-        "shape": "",
-        "A": "Marmara",
-        "B": "Ege",
-        "C": "İç Anadolu",
-        "D": "Doğu Anadolu",
-        "E": "Güneydoğu Anadolu",
-        "correct": "C",
-        "Açıklama": "İç Anadolu buğday üretiminde ilk sıradadır."
-    },
-    {
-        "id": 49,
-        "question": "COĞRAFYA: Aşağıdakilerden hangisi yer şekillerinin nüfus dağılımına etkisine örnektir?",
-        "shape": "",
-        "A": "Dağlık alanlarda nüfusun seyrek olması",
-        "B": "Sanayi bölgelerinde nüfusun artması",
-        "C": "Eğitim düzeyinin yükselmesi",
-        "D": "Göçlerin hızlanması",
-        "E": "Turizmin gelişmesi",
-        "correct": "A",
-        "Açıklama": "Yer şekilleri → dağlık alanlarda nüfus seyrektir."
-    },
-    {
-        "id": 50,
-        "question": "COĞRAFYA: Aşağıdaki akarsulardan hangisi Karadeniz’e dökülür?",
-        "shape": "",
-        "A": "Sakarya",
-        "B": "Ceyhan",
-        "C": "Meriç",
-        "D": "Gediz",
-        "E": "Büyük Menderes",
-        "correct": "A",
-        "Açıklama": "Sakarya Nehri Karadeniz’e dökülür."
-    },
-    {
-        "id": 51,
-        "question": "VATANDAŞLIK: Aşağıdakilerden hangisi Anayasa’nın değiştirilemez hükümlerinden biridir?",
-        "shape": "",
-        "A": "Türkiye Devleti’nin şeklinin Cumhuriyet olması",
-        "B": "Genel seçimlerin dört yılda bir yapılması",
-        "C": "Bakanlar Kurulunun görev süresi",
-        "D": "Cumhurbaşkanının seçilme yöntemi",
-        "E": "Milletvekili sayısı",
-        "correct": "A",
-        "Açıklama": "Cumhuriyetin nitelikleri değiştirilemez hükümler arasındadır."
-    },
-    {
-        "id": 52,
-        "question": "VATANDAŞLIK: Aşağıdakilerden hangisi yasama organının yetkilerindendir?",
-        "shape": "",
-        "A": "Kanun yapmak",
-        "B": "Yürütmeyi denetlemek",
-        "C": "Milli güvenliği sağlamak",
-        "D": "Yargı kararlarını uygulamak",
-        "E": "Anayasa Mahkemesi üyelerini seçmek",
-        "correct": "A",
-        "Açıklama": "Kanun yapmak TBMM’nin temel görevidir."
-    },
-    {
-        "id": 53,
-        "question": "VATANDAŞLIK: Aşağıdakilerden hangisi temel hak ve özgürlüklerden değildir?",
-        "shape": "",
-        "A": "Konut dokunulmazlığı",
-        "B": "Kişi özgürlüğü ve güvenliği",
-        "C": "Dilekçe hakkı",
-        "D": "Memuriyete atanma hakkı",
-        "E": "Din ve vicdan özgürlüğü",
-        "correct": "D",
-        "Açıklama": "Memuriyete atanma bir sosyal haktır; temel hak değildir."
-    },
-    {
-        "id": 54,
-        "question": "VATANDAŞLIK: Aşağıdakilerden hangisi yürütme organının görevlerindendir?",
-        "shape": "",
-        "A": "Kanun teklif etmek",
-        "B": "Cumhurbaşkanlığı kararnamesi çıkarmak",
-        "C": "Yargılamayı yürütmek",
-        "D": "Kanunları yorumlamak",
-        "E": "Kanunları iptal etmek",
-        "correct": "B",
-        "Açıklama": "Cumhurbaşkanı yürütme yetkileri kapsamında kararname çıkarabilir."
-    },
-    {
-        "id": 55,
-        "question": "VATANDAŞLIK: Anayasa’ya göre aşağıdakilerden hangisi sosyal devlet ilkesinin gereğidir?",
-        "shape": "",
-        "A": "Siyasal partilerin denetlenmesi",
-        "B": "Gelir dağılımının dengelenmesi",
-        "C": "Üniversitelere özerklik verilmesi",
-        "D": "Mahkemelerin bağımsız olması",
-        "E": "Basın özgürlüğünün sağlanması",
-        "correct": "B",
-        "Açıklama": "Sosyal devlet, ekonomik eşitsizlikleri azaltmayı amaçlar."
-    },
-    {
-        "id": 56,
-        "question": "VATANDAŞLIK: Yargı bağımsızlığı aşağıdakilerden hangisini gerektirir?",
-        "shape": "",
-        "A": "Hâkimlerin görevden kolayca alınabilmesi",
-        "B": "Hâkimlerin tarafsız olması",
-        "C": "Yargı kararlarının yürütme tarafından değiştirilmesi",
-        "D": "TBMM’nin mahkemeler üzerinde denetim yapması",
-        "E": "Savcıların doğrudan yürütmeye bağlı olması",
-        "correct": "B",
-        "Açıklama": "Bağımsız yargının temel şartı tarafsızlıktır."
-    },
-    {
-        "id": 57,
-        "question": "VATANDAŞLIK: Aşağıdakilerden hangisi Cumhurbaşkanının görev ve yetkilerinden biridir?",
-        "shape": "",
-        "A": "Kanun teklif etmek",
-        "B": "Kanunları veto etmek",
-        "C": "Yargı organlarını denetlemek",
-        "D": "TBMM’yi feshetmek",
-        "E": "Milletvekillerinin dokunulmazlığını kaldırmak",
-        "correct": "B",
-        "Açıklama": "Cumhurbaşkanı kanunları veto etme yetkisine sahiptir."
-    },
-    {
-        "id": 58,
-        "question": "GÜNCEL BİLGİLER: Aşağıdakilerden hangisi sürdürülebilir enerji kaynaklarından biridir?",
-        "shape": "",
-        "A": "Kömür",
-        "B": "Doğalgaz",
-        "C": "Petrol",
-        "D": "Güneş enerjisi",
-        "E": "Nükleer enerji",
-        "correct": "D",
-        "Açıklama": "Güneş enerjisi yenilenebilir bir kaynaktır."
-    },
-    {
-        "id": 59,
-        "question": "GÜNCEL BİLGİLER: Aşağıdakilerden hangisi küresel iklim değişikliğinin sonuçlarından biridir?",
-        "shape": "",
-        "A": "Deniz seviyelerinin yükselmesi",
-        "B": "Nüfusun azalması",
-        "C": "Doğal kaynakların artması",
-        "D": "Dağların yükselmesi",
-        "E": "Depremlerin durması",
-        "correct": "A",
-        "Açıklama": "Küresel ısınma → buzulların erimesi → deniz seviyesinin yükselmesi."
-    },
-    {
-        "id": 60,
-        "question": "VATANDAŞLIK: Aşağıdakilerden hangisi demokratik bir toplumda bulunması gereken temel özelliklerdendir?",
-        "shape": "",
-        "A": "Tek bir görüşün baskın olması",
-        "B": "Bireylerin düşüncelerini özgürce ifade etmesi",
-        "C": "Basının devlet tarafından sıkı şekilde kontrol edilmesi",
-        "D": "Sivil toplum kuruluşlarının kapatılması",
-        "E": "Yargı organlarının yürütmeye bağlanması",
-        "correct": "B",
-        "Açıklama": "Demokrasinin temel unsurlarından biri ifade özgürlüğüdür."
+'use client';
+
+import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
+import { useParams } from 'next/navigation';
+
+// --- ICONS ---
+const Clock = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+);
+const ArrowLeft = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+);
+
+// --- TYPES ---
+interface Choice {
+  id: string; 
+  text: string;
+}
+
+interface Question {
+  id: string;
+  prompt: string;
+  choices: Choice[];
+  answer: string;
+  explanation?: string;
+}
+
+// --- HELPERS ---
+function formatTime(seconds: number): string {
+  const m = Math.floor(seconds / 60);
+  const s = seconds % 60;
+  return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+}
+
+function formatText(text: string) {
+  if (!text) return null;
+  // Eğer text sayı ise string'e çevir
+  const stringText = String(text);
+  
+  const parts = stringText.split(/(\*\*.*?\*\*)/g);
+  return parts.map((part, index) => {
+    if (part.startsWith('**') && part.endsWith('**')) {
+      let content = part.slice(2, -2).replace(/^['"]+|['"]+$/g, '');
+      return <span key={index} className="bg-indigo-50 text-indigo-700 font-bold px-2 py-0.5 rounded mx-1 border border-indigo-100">{content}</span>;
     }
-]
+    return <span key={index} dangerouslySetInnerHTML={{ __html: part }} />;
+  });
+}
+
+export default function QuizPage() {
+  const params = useParams();
+  const testId = params?.testId as string;
+
+  const [questions, setQuestions] = useState<Question[]>([]);
+  const [answers, setAnswers] = useState<Record<string, string>>({});
+  const [timeLeft, setTimeLeft] = useState<number | null>(null);
+  const [showResult, setShowResult] = useState(false);
+  const [score, setScore] = useState(0);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
+
+  // 1) LOAD DATA
+  useEffect(() => {
+    if (!testId) return;
+    setLoading(true);
+
+    fetch(`/data/tests/${testId}.json?t=${Date.now()}`)
+      .then(res => {
+        if (!res.ok) throw new Error("Test dosyası bulunamadı.");
+        return res.json();
+      })
+      .then(rawdata => {
+        let rawList: any[] = [];
+        if (Array.isArray(rawdata)) rawList = rawdata;
+        else if (rawdata && rawdata.questions && Array.isArray(rawdata.questions)) rawList = rawdata.questions;
+        
+        if (!rawList || rawList.length === 0) {
+            setError("Bu test dosyası boş veya formatı hatalı.");
+            setLoading(false);
+            return;
+        }
+
+        const formattedQuestions: Question[] = rawList.map((item, idx) => {
+            const anyItem = item as any; // Geniş erişim için
+
+            // --- ŞIKLARI BULMA ---
+            let choices: Choice[] = [];
+            let rawOptions: string[] = [];
+            
+            if (Array.isArray(anyItem.options)) rawOptions = anyItem.options;
+            else if (Array.isArray(anyItem.secenekler)) rawOptions = anyItem.secenekler;
+            else if (anyItem.A || anyItem.B || anyItem.a || anyItem.b) {
+                 if(anyItem.A || anyItem.a) rawOptions.push(anyItem.A || anyItem.a);
+                 if(anyItem.B || anyItem.b) rawOptions.push(anyItem.B || anyItem.b);
+                 if(anyItem.C || anyItem.c) rawOptions.push(anyItem.C || anyItem.c);
+                 if(anyItem.D || anyItem.d) rawOptions.push(anyItem.D || anyItem.d);
+                 if(anyItem.E || anyItem.e) rawOptions.push(anyItem.E || anyItem.e);
+            } 
+            else if (typeof anyItem.options === 'object' && anyItem.options) {
+                rawOptions = Object.values(anyItem.options);
+            }
+
+            choices = rawOptions.map((optText, optIdx) => ({
+                id: String.fromCharCode(65 + optIdx), // 0->A, 1->B...
+                text: String(optText)
+            }));
+
+            // --- CEVAP BULMA ---
+            let finalAnswerId = "UNKNOWN";
+            // Hem "correct", "answer", "cevap" hem de büyük/küçük harf kontrolü
+            let rawAnswer = (anyItem.answer || anyItem.Answer || anyItem.cevap || anyItem.Cevap || anyItem.correct || anyItem.Correct || "").toString().trim();
+            
+            const match = rawAnswer.match(/([A-Ea-e])/);
+            if (match && rawAnswer.length < 10) { 
+                // Eğer cevap kısa ise (ör: "B" veya "Cevap B") harfi al
+                finalAnswerId = match[0].toUpperCase();
+            } else {
+                // Uzun metin ise şıklarla eşleştir
+                const matchedOption = choices.find(c => 
+                    c.text.replace(/\s+/g, '').toLowerCase() === rawAnswer.replace(/\s+/g, '').toLowerCase()
+                );
+                if (matchedOption) finalAnswerId = matchedOption.id;
+            }
+
+            // --- AÇIKLAMA BULMA (KAPSAMLI) ---
+            const explanationText = 
+              anyItem.Açıklama || // Senin JSON'daki format (Büyük A)
+              anyItem.açıklama ||
+              anyItem.aciklama ||
+              anyItem.Aciklama ||
+              anyItem.Explanation ||
+              anyItem.explanation ||
+              anyItem.Solution ||
+              anyItem.solution ||
+              anyItem.Çözüm ||
+              anyItem.çözüm ||
+              anyItem.Cozum ||
+              anyItem.cozum ||
+              "";
+
+            return {
+                id: String(idx),
+                prompt: anyItem.question || anyItem.Question || anyItem.soru || anyItem.Soru || "Soru metni bulunamadı.",
+                choices: choices,
+                answer: finalAnswerId,
+                explanation: explanationText
+            };
+        });
+
+        setQuestions(formattedQuestions);
+        if (formattedQuestions.length > 0) setTimeLeft(formattedQuestions.length * 90);
+        else setError("Ayrıştırılabilir soru bulunamadı.");
+        
+        setLoading(false);
+      })
+      .catch(err => {
+        console.error(err);
+        setError("Veri yüklenirken hata oluştu.");
+        setLoading(false);
+      });
+  }, [testId]);
+
+  // 2) TIMER
+  useEffect(() => {
+    if (timeLeft === null || showResult || loading) return;
+    if (timeLeft <= 0) { handleSubmit(); return; }
+    const timerId = setInterval(() => setTimeLeft((p) => (p !== null && p > 0 ? p - 1 : 0)), 1000);
+    return () => clearInterval(timerId);
+  }, [timeLeft, showResult, loading]);
+
+  // 3) SUBMIT & SAVE MISTAKES
+  const handleSubmit = () => {
+    let correctCount = 0;
+    
+    let mistakeList: any[] = [];
+    try {
+        const stored = localStorage.getItem('my_mistakes');
+        if (stored) mistakeList = JSON.parse(stored);
+        if (!Array.isArray(mistakeList)) mistakeList = [];
+    } catch(e) {
+        mistakeList = [];
+    }
+
+    questions.forEach((q) => {
+        const userVal = answers[q.id]; 
+        const correctId = q.answer;
+
+        const isCorrect = (userVal === correctId);
+
+        if (isCorrect) {
+            correctCount++;
+            mistakeList = mistakeList.filter(m => m.uniqueId !== `${testId}-${q.id}`);
+        } else if (userVal) {
+            const uniqueId = `${testId}-${q.id}`;
+            const exists = mistakeList.some(m => m.uniqueId === uniqueId);
+            
+            if (!exists) {
+                mistakeList.push({
+                    uniqueId: uniqueId,
+                    testTitle: testId,
+                    prompt: q.prompt,
+                    choices: q.choices,
+                    answer: correctId,
+                    myWrongAnswer: userVal,
+                    explanation: q.explanation,
+                    savedAt: new Date().toISOString()
+                });
+            }
+        }
+    });
+
+    localStorage.setItem('my_mistakes', JSON.stringify(mistakeList));
+    setScore(correctCount);
+    setShowResult(true);
+    window.scrollTo(0, 0);
+  };
+
+  if (loading) return (
+      <div className="min-h-screen flex flex-col items-center justify-center text-slate-500">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600 mb-4"></div>
+          <p>Test Hazırlanıyor...</p>
+      </div>
+  );
+
+  if (error) return (
+    <div className="min-h-screen flex flex-col items-center justify-center p-4">
+        <div className="bg-red-50 text-red-600 p-6 rounded-xl border border-red-200 text-center max-w-md">
+            <h2 className="font-bold text-lg mb-2">Hata</h2>
+            <p>{error}</p>
+            <Link href="/" className="inline-block mt-4 px-4 py-2 bg-red-100 rounded-lg text-sm font-bold hover:bg-red-200">
+                Ana Sayfaya Dön
+            </Link>
+        </div>
+    </div>
+  );
+
+  // --- RESULT SCREEN ---
+  if (showResult) {
+    const total = questions.length;
+    const percentage = Math.round((score / total) * 100);
+
+    return (
+      <div className="min-h-screen bg-slate-50 py-12 px-4">
+        <div className="max-w-4xl mx-auto space-y-8">
+          
+          {/* SKOR KARTI */}
+          <div className="bg-white p-8 rounded-3xl shadow-xl border border-slate-200 text-center relative overflow-hidden">
+            <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-indigo-500 to-purple-600" />
+            <h1 className="text-3xl font-black text-slate-800 mb-6">Test Sonucu</h1>
+            
+            <div className="flex justify-center items-center gap-4 sm:gap-12 mb-8">
+              <div className="flex flex-col">
+                <span className="text-4xl font-black text-emerald-600">{score}</span>
+                <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">Doğru</span>
+              </div>
+              <div className="w-px h-12 bg-slate-200" />
+              <div className="flex flex-col">
+                <span className="text-4xl font-black text-slate-700">{total}</span>
+                <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">Toplam</span>
+              </div>
+              <div className="w-px h-12 bg-slate-200" />
+              <div className="flex flex-col">
+                <span className={`text-4xl font-black ${percentage >= 70 ? 'text-emerald-500' : 'text-orange-500'}`}>
+                  %{percentage}
+                </span>
+                <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">Başarı</span>
+              </div>
+            </div>
+
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="/" className="px-6 py-3 bg-slate-100 text-slate-700 font-bold rounded-xl hover:bg-slate-200 transition-colors">
+                  Listeye Dön
+                </a>
+                <Link href="/mistakes" className="px-6 py-3 bg-red-100 text-red-700 font-bold rounded-xl hover:bg-red-200 transition-colors flex items-center justify-center gap-2">
+                  <span>📕</span> Hatalarımı Gör
+                </Link>
+                <button onClick={() => window.location.reload()} className="px-6 py-3 bg-indigo-600 text-white font-bold rounded-xl hover:bg-indigo-700 transition-colors">
+                  Tekrar Çöz
+                </button>
+            </div>
+          </div>
+
+          {/* DETAYLI ANALİZ */}
+          <div className="space-y-6">
+            <h2 className="text-xl font-bold text-slate-700 ml-2 border-l-4 border-indigo-500 pl-3">Detaylı Analiz</h2>
+            
+            {questions.map((q, idx) => {
+              const userAnswerId = answers[q.id];
+              const correctId = q.answer; 
+
+              const isUserAnswered = !!userAnswerId;
+              const isCorrect = userAnswerId === correctId;
+
+              // Kart Rengi
+              let cardBorder = isCorrect ? 'border-emerald-200' : isUserAnswered ? 'border-red-200' : 'border-amber-200';
+              let cardBg = isCorrect ? 'bg-emerald-50/40' : isUserAnswered ? 'bg-red-50/40' : 'bg-amber-50/40';
+
+              return (
+                <div key={q.id} className={`p-6 rounded-2xl border-2 ${cardBorder} ${cardBg} transition-all`}>
+                  <div className="flex items-start gap-4">
+                    <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold shadow-sm ${
+                      isCorrect ? 'bg-emerald-500' : !isUserAnswered ? 'bg-amber-400' : 'bg-red-500'
+                    }`}>
+                      {isCorrect ? '✓' : !isUserAnswered ? '−' : '✕'}
+                    </div>
+
+                    <div className="flex-grow">
+                      <div className="flex justify-between items-center mb-3">
+                        <span className="text-sm text-slate-400 font-bold uppercase tracking-wide">Soru {idx + 1}</span>
+                      </div>
+                      <div className="text-lg font-medium text-slate-800 mb-5 leading-relaxed">
+                         {formatText(q.prompt)}
+                      </div>
+
+                      <div className="grid gap-2">
+                        {q.choices.map((c) => {
+                          const isSelected = userAnswerId === c.id;
+                          const isTheCorrectAnswer = c.id === correctId;
+
+                          let optionClass = 'p-3 rounded-lg border flex items-center justify-between ';
+                          
+                          if (isTheCorrectAnswer) {
+                            optionClass += 'bg-emerald-100 border-emerald-300 text-emerald-900 font-bold shadow-sm ring-1 ring-emerald-300';
+                          } else if (isSelected) {
+                            optionClass += 'bg-red-100 border-red-300 text-red-900 font-medium';
+                          } else {
+                            optionClass += 'bg-white/60 border-slate-200 text-slate-500 opacity-70';
+                          }
+
+                          return (
+                            <div key={c.id} className={optionClass}>
+                              <div className="flex items-center gap-3">
+                                <div className={`w-6 h-6 rounded-full border flex items-center justify-center text-xs flex-shrink-0 ${
+                                  isTheCorrectAnswer ? 'border-emerald-500 bg-emerald-500 text-white' : 
+                                  isSelected ? 'border-red-500 bg-red-500 text-white' : 'border-slate-300'
+                                }`}>{c.id}</div>
+                                <span>{c.text}</span>
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                      
+                      {/* AÇIKLAMA ALANI (DÜZELTİLDİ) */}
+                      {q.explanation && q.explanation.trim() !== "" && (
+                        <div className="mt-5 p-4 bg-white/80 rounded-xl border border-indigo-200 text-sm text-indigo-900 flex gap-3 items-start animate-in fade-in shadow-sm">
+                          <span className="text-xl">💡</span>
+                          <div>
+                            <span className="font-bold block mb-1 text-indigo-700">Çözüm / Açıklama:</span>
+                            <span className="leading-relaxed opacity-90">{q.explanation}</span>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // --- QUIZ SOLVING SCREEN ---
+  return (
+    <div className="min-h-screen bg-slate-50 pb-20">
+      <div className="max-w-3xl mx-auto px-4 py-8 space-y-8">
+        <div className="flex items-center justify-between bg-white/90 backdrop-blur-md p-4 rounded-xl shadow-sm border border-slate-200 sticky top-4 z-20">
+            <Link href="/" className="p-2 rounded-full hover:bg-slate-100 text-slate-500"><ArrowLeft className="w-5 h-5" /></Link>
+            <div className={`text-lg font-mono font-bold px-4 py-2 rounded-lg border transition-colors ${timeLeft !== null && timeLeft < 60 ? 'text-red-600 bg-red-50 border-red-200 animate-pulse' : 'text-indigo-600 bg-indigo-50 border-indigo-200'}`}>{timeLeft !== null ? formatTime(timeLeft) : 'Loading...'}</div>
+            <button onClick={handleSubmit} className="text-sm font-bold text-white bg-indigo-600 px-4 py-2 rounded-lg hover:bg-indigo-700">Bitir</button>
+        </div>
+        <div className="space-y-8">
+          {questions.map((q, idx) => (
+            <div key={q.id} className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200">
+              <div className="text-sm text-slate-400 font-bold mb-4 uppercase tracking-wide flex items-center gap-2"><span className="bg-slate-100 px-2 py-1 rounded text-slate-500">SORU {idx + 1}</span></div>
+              <div className="text-xl font-medium text-slate-800 mb-6 leading-relaxed">{formatText(q.prompt)}</div>
+              <div className="grid gap-3">
+                {q.choices.map((c) => (
+                  <label key={c.id} className={`group cursor-pointer flex items-center p-4 rounded-xl border-2 transition-all duration-200 active:scale-[0.99] ${answers[q.id] === c.id ? 'border-indigo-600 bg-indigo-50 shadow-md ring-1 ring-indigo-200' : 'border-slate-100 hover:border-indigo-300 hover:bg-slate-50'}`}>
+                    <div className={`w-6 h-6 rounded-full border-2 flex items-center justify-center mr-4 transition-colors flex-shrink-0 ${answers[q.id] === c.id ? 'border-indigo-600' : 'border-slate-300 group-hover:border-indigo-400'}`}>{answers[q.id] === c.id && <div className="w-3 h-3 rounded-full bg-indigo-600" />}</div>
+                    <input type="radio" name={`question-${q.id}`} className="hidden" checked={answers[q.id] === c.id} onChange={() => setAnswers((prev) => ({ ...prev, [q.id]: c.id }))} />
+                    <span className={`text-lg ${answers[q.id] === c.id ? 'text-indigo-900 font-medium' : 'text-slate-600'}`}><span className="font-bold mr-2 text-slate-400 group-hover:text-indigo-400">{c.id})</span> {c.text}</span>
+                  </label>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="pt-4 pb-12"><button onClick={handleSubmit} className="w-full py-4 rounded-xl text-white text-xl font-bold shadow-lg transition-all transform active:scale-[0.99] bg-indigo-600 hover:bg-indigo-700 hover:shadow-indigo-200">Testi Tamamla</button></div>
+      </div>
+    </div>
+  );
+}
