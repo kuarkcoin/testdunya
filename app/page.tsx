@@ -2,226 +2,156 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { useRouter, useParams } from 'next/navigation';
+// lucide-react yüklü değilse ikonları manuel tanımlamak gerekebilir, 
+// ama projenizde varsa bu import kalsın. Yoksa aşağıda SVG olarak değiştirebiliriz.
+// Şimdilik senin paylaştığın "test/lgs-full/page.jsx" yapısını kullanıyorum.
+import { Trophy, BookOpen, Brain, Stethoscope, PlayCircle, CheckCircle, GraduationCap } from 'lucide-react';
 
-// --- Dahili SVG İkonlar (Paket bağımlılığı kaldırıldı) ---
+// --- Sınav Konfigürasyonları ---
+const examConfig = [
+  { 
+    id: 'lgs', 
+    prefix: 'lgs', // URL yapısı: /test/lgs-1
+    title: 'LGS Türkçe', 
+    count: 4, // Ekran görüntüsünde 4 adet görünüyor
+    desc: 'LGS Hazırlık Denemeleri',
+    icon: <GraduationCap className="w-8 h-8 text-purple-500" />,
+    color: 'bg-purple-500',
+    lightColor: 'bg-purple-50',
+    textColor: 'text-purple-700',
+    borderColor: 'border-purple-200',
+    hoverBorder: 'hover:border-purple-300'
+  },
+  { 
+    id: 'yks', 
+    prefix: 'yks', 
+    title: 'YKS Sözel', 
+    count: 30, 
+    desc: '30 Fasikül/Deneme',
+    icon: <BookOpen className="w-8 h-8 text-blue-500" />,
+    color: 'bg-blue-500',
+    lightColor: 'bg-blue-50',
+    textColor: 'text-blue-700',
+    borderColor: 'border-blue-200',
+    hoverBorder: 'hover:border-blue-300'
+  },
+  { 
+    id: 'kpss', 
+    prefix: 'kpss',
+    title: 'KPSS Sözel', 
+    count: 21, 
+    desc: '21 Fasikül/Deneme',
+    icon: <Brain className="w-8 h-8 text-orange-500" />,
+    color: 'bg-orange-500',
+    lightColor: 'bg-orange-50',
+    textColor: 'text-orange-700',
+    borderColor: 'border-orange-200',
+    hoverBorder: 'hover:border-orange-300'
+  },
+  { 
+    id: 'tus', 
+    prefix: 'tus',
+    title: 'TUS', 
+    count: 22, 
+    desc: '22 Fasikül/Deneme',
+    icon: <Stethoscope className="w-8 h-8 text-emerald-500" />,
+    color: 'bg-emerald-500',
+    lightColor: 'bg-emerald-50',
+    textColor: 'text-emerald-700',
+    borderColor: 'border-emerald-200',
+    hoverBorder: 'hover:border-emerald-300'
+  }
+];
 
-const ArrowLeft = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-    <path d="m12 19-7-7 7-7" />
-    <path d="M19 12H5" />
-  </svg>
-);
-
-const CheckCircle = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-    <path d="m9 11 3 3L22 4" />
-  </svg>
-);
-
-const Circle = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-    <circle cx="12" cy="12" r="10" />
-  </svg>
-);
-
-const BookOpen = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
-    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
-  </svg>
-);
-
-const Brain = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-    <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z" />
-    <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z" />
-    <path d="M12 22v-4" />
-    <path d="M12 2v2" />
-  </svg>
-);
-
-const Stethoscope = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-    <path d="M6 3v9a5 5 0 0 0 10 0V3" />
-    <path d="M6 3h3" />
-    <path d="M13 3h3" />
-    <path d="M11 12v7" />
-    <circle cx="11" cy="21" r="2" />
-  </svg>
-);
-
-const Save = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-    <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z" />
-    <polyline points="17 21 17 13 7 13 7 21" />
-    <polyline points="7 3 7 8 15 8" />
-  </svg>
-);
-
-// --- Konfigürasyon ---
-const examMeta = {
-  yks: { title: 'YKS Sözel', icon: <BookOpen className="w-6 h-6 text-blue-500" />, color: 'text-blue-600', bg: 'bg-blue-50' },
-  kpss: { title: 'KPSS Sözel', icon: <Brain className="w-6 h-6 text-orange-500" />, color: 'text-orange-600', bg: 'bg-orange-50' },
-  tus: { title: 'TUS', icon: <Stethoscope className="w-6 h-6 text-emerald-500" />, color: 'text-emerald-600', bg: 'bg-emerald-50' }
-};
-
-export default function TestDetailPage() {
-  const router = useRouter();
-  const params = useParams();
-  
-  // Güvenli parametre alımı (useParams ilk renderda boş gelebilir)
-  const testId = params?.testId;
-  const safeTestId = Array.isArray(testId) ? testId[0] : testId;
-
+export default function HomePage() {
   const [completed, setCompleted] = useState<{ [key: string]: number[] }>({});
-  const [note, setNote] = useState('');
-  const [isSaved, setIsSaved] = useState(false);
 
-  // Verileri Yükle
   useEffect(() => {
-    if (!safeTestId) return;
-    
-    try {
-      const savedTracker = localStorage.getItem('examTrackerData');
-      if (savedTracker) setCompleted(JSON.parse(savedTracker));
-
-      const savedNotes = localStorage.getItem('examTrackerNotes');
-      if (savedNotes) {
-        const notesObj = JSON.parse(savedNotes);
-        if (notesObj[safeTestId]) setNote(notesObj[safeTestId]);
-      }
-    } catch (e) {
-      console.error("Veri yükleme hatası", e);
+    const savedData = localStorage.getItem('examTrackerData');
+    if (savedData) {
+      setCompleted(JSON.parse(savedData));
     }
-  }, [safeTestId]);
-
-  // ID henüz hazır değilse yükleniyor göster
-  if (!safeTestId) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-slate-50 text-slate-500 font-sans">
-        <div className="flex flex-col items-center animate-pulse">
-          <div className="w-12 h-12 bg-slate-200 rounded-full mb-4"></div>
-          <p>Deneme yükleniyor...</p>
-        </div>
-      </div>
-    );
-  }
-
-  // ID kontrolü ve parse işlemi
-  const [category, numberStr] = (safeTestId || '').split('-');
-  const number = parseInt(numberStr);
-  const info = examMeta[category as keyof typeof examMeta];
-
-  // Durumu Değiştir
-  const toggleStatus = () => {
-    setCompleted(prev => {
-      const currentList = prev[category] || [];
-      const newList = currentList.includes(number)
-        ? currentList.filter(n => n !== number)
-        : [...currentList, number];
-      
-      const newState = { ...prev, [category]: newList };
-      localStorage.setItem('examTrackerData', JSON.stringify(newState));
-      return newState;
-    });
-  };
-
-  // Notu Kaydet
-  const saveNote = () => {
-    const savedNotes = localStorage.getItem('examTrackerNotes');
-    const notesObj = savedNotes ? JSON.parse(savedNotes) : {};
-    
-    notesObj[safeTestId] = note;
-    localStorage.setItem('examTrackerNotes', JSON.stringify(notesObj));
-    
-    setIsSaved(true);
-    setTimeout(() => setIsSaved(false), 2000);
-  };
-
-  const isDone = (completed[category] || []).includes(number);
-
-  if (!info) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-slate-50 p-8 font-sans">
-        <div className="text-center bg-white p-8 rounded-2xl shadow-sm border border-red-100 max-w-md">
-           <h2 className="text-xl font-bold text-red-600 mb-2">Hata: Geçersiz Deneme</h2>
-           <p className="text-slate-600 mb-4">Aradığınız <strong>"{safeTestId}"</strong> ID'li deneme bulunamadı.</p>
-           <Link href="/" className="inline-block px-6 py-2 bg-slate-800 text-white rounded-lg hover:bg-slate-900 transition-colors">
-             Ana Sayfaya Dön
-           </Link>
-        </div>
-      </div>
-    );
-  }
+  }, []);
 
   return (
-    <main className="min-h-screen bg-slate-50 p-4 md:p-8 font-sans text-slate-800 flex justify-center">
-      <div className="w-full max-w-2xl space-y-6">
+    <main className="min-h-screen bg-slate-50 p-4 md:p-8 font-sans text-slate-800">
+      <div className="max-w-6xl mx-auto space-y-8">
         
-        <Link href="/" className="inline-flex items-center text-slate-500 hover:text-slate-800 transition-colors mb-4">
-          <ArrowLeft className="w-4 h-4 mr-2" />
-          Listeye Dön
-        </Link>
-
-        {/* Başlık Kartı */}
-        <div className="bg-white rounded-3xl p-8 shadow-sm border border-slate-100 text-center space-y-4">
-          <div className={`inline-flex p-4 rounded-2xl ${info.bg} mb-2`}>
-            {info.icon}
+        {/* Header */}
+        <header className="flex flex-col md:flex-row items-center justify-between gap-4 bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+          <div>
+            <h1 className="text-3xl font-bold text-slate-900 flex items-center gap-3">
+              <Trophy className="w-8 h-8 text-yellow-500" aria-hidden="true" />
+              TestDünya Sınav Merkezi
+            </h1>
+            <p className="text-slate-500 mt-2 text-lg">
+              Çözmek istediğin YKS, KPSS, LGS veya TUS deneme setini seç ve hemen başla.
+            </p>
           </div>
-          <h1 className="text-2xl md:text-3xl font-bold text-slate-900">
-            {info.title} - {number}. Deneme
-          </h1>
-          <p className="text-slate-500">
-            Bu deneme ile ilgili durumunu ve notlarını buradan yönetebilirsin.
-          </p>
+        </header>
 
-          {/* Durum Butonu */}
-          <button
-            onClick={toggleStatus}
-            className={`
-              w-full sm:w-auto px-8 py-3 rounded-xl font-bold text-lg flex items-center justify-center gap-3 transition-all duration-300 transform active:scale-95
-              ${isDone 
-                ? 'bg-emerald-100 text-emerald-700 hover:bg-emerald-200' 
-                : 'bg-slate-900 text-white hover:bg-slate-800 shadow-lg hover:shadow-xl'
-              }
-            `}
-          >
-            {isDone ? (
-              <>
-                <CheckCircle className="w-6 h-6" />
-                Tamamlandı
-              </>
-            ) : (
-              <>
-                <Circle className="w-6 h-6" />
-                Tamamlanmadı Olarak İşaretle
-              </>
-            )}
-          </button>
-        </div>
-
-        {/* Notlar Bölümü */}
-        <div className="bg-white rounded-3xl p-8 shadow-sm border border-slate-100">
-          <h2 className="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
-            Deneme Notları
-          </h2>
-          <textarea
-            value={note}
-            onChange={(e) => setNote(e.target.value)}
-            placeholder="Bu denemede yanlış yaptığın konuları veya önemli noktaları buraya not alabilirsin..."
-            className="w-full h-40 p-4 rounded-xl bg-slate-50 border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all outline-none resize-none text-slate-700"
-          />
-          <div className="mt-4 flex justify-end">
-            <button
-              onClick={saveNote}
-              className="flex items-center gap-2 px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors"
+        {/* Sınav Listesi Grid */}
+        <div className="grid grid-cols-1 gap-8">
+          {examConfig.map((exam) => (
+            <section 
+              key={exam.id} 
+              className={`bg-white rounded-3xl shadow-sm border ${exam.borderColor} overflow-hidden hover:shadow-md transition-all duration-300`}
             >
-              <Save className="w-4 h-4" />
-              {isSaved ? 'Kaydedildi!' : 'Notu Kaydet'}
-            </button>
-          </div>
+              
+              {/* Kategori Başlığı */}
+              <div className="p-6 border-b border-slate-100 bg-slate-50/50 flex items-center gap-4">
+                <div className={`p-3 rounded-2xl ${exam.lightColor}`}>
+                  {exam.icon}
+                </div>
+                <div>
+                  <h2 className="text-xl font-bold text-slate-900">
+                    {exam.title}
+                  </h2>
+                  <span className="text-slate-500 text-sm">{exam.desc}</span>
+                </div>
+              </div>
+
+              {/* Deneme Butonları */}
+              <div className="p-6">
+                <nav className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3">
+                  {Array.from({ length: exam.count }, (_, i) => i + 1).map((num) => {
+                    const testLinkId = `${exam.prefix}-${num}`;
+                    const isDone = (completed[exam.id] || []).includes(num);
+                    const linkLabel = `${exam.title} ${num}. Deneme`;
+
+                    return (
+                      <Link 
+                        key={num}
+                        href={`/test/${testLinkId}`}
+                        title={linkLabel}
+                        className={`
+                          group relative flex flex-col items-center justify-center p-3 rounded-xl border-2 transition-all duration-200
+                          ${isDone 
+                            ? 'bg-emerald-50 border-emerald-200 hover:border-emerald-300' 
+                            : 'bg-white border-slate-100 hover:border-indigo-300 hover:shadow-lg hover:-translate-y-1'
+                          }
+                        `}
+                      >
+                        <span className={`text-sm font-bold mb-1 ${isDone ? 'text-emerald-700' : 'text-slate-600'}`}>
+                          #{num}
+                        </span>
+                        
+                        {isDone ? (
+                           <CheckCircle className="w-6 h-6 text-emerald-500" />
+                        ) : (
+                           <PlayCircle className={`w-6 h-6 ${exam.textColor} opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all`} />
+                        )}
+
+                        <span className="text-[10px] text-slate-400 mt-1 font-medium group-hover:text-indigo-500">
+                          {isDone ? 'Çözüldü' : 'Başla'}
+                        </span>
+                      </Link>
+                    );
+                  })}
+                </nav>
+              </div>
+            </section>
+          ))}
         </div>
 
       </div>
