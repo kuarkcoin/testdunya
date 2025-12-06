@@ -8,9 +8,6 @@ import { useParams } from 'next/navigation';
 const ArrowLeft = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="m12 19-7-7 7-7" /><path d="M19 12H5" /></svg>
 );
-const CheckCircle = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><path d="m9 11 3 3L22 4" /></svg>
-);
 const Eye = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" /><circle cx="12" cy="12" r="3" /></svg>
 );
@@ -29,29 +26,30 @@ export default function TestDetailPage() {
     if (!testId) return;
 
     setLoading(true);
-    // testId URL'den gelen isim (örn: yks-sozel-deneme-1)
-    // Bu isimle eşleşen JSON dosyasını arıyoruz.
-    fetch(`/data/tests/${testId}.json`)
+    setError(false);
+
+    // URL'deki testId (örn: kpss-sozel-1) doğrudan dosya adıdır.
+    const jsonUrl = `/data/tests/${testId}.json`;
+
+    fetch(jsonUrl)
       .then(res => {
         if (!res.ok) throw new Error("Dosya bulunamadı");
         return res.json();
       })
       .then(data => {
-        // HATA ÖNLEYİCİ KONTROL:
-        // Gelen veri direkt dizi mi? Yoksa { questions: [...] } şeklinde mi?
+        // Veri yapısı kontrolü: Array mi, Obje mi?
         if (Array.isArray(data)) {
           setQuestions(data);
         } else if (data.questions && Array.isArray(data.questions)) {
           setQuestions(data.questions);
         } else {
-          // Veri yapısı bilinmiyor, boş dizi ata ama hata verme
-          console.log("Veri formatı farklı:", data);
+          console.error("Veri formatı bilinmiyor:", data);
           setQuestions([]); 
         }
         setLoading(false);
       })
       .catch(err => {
-        console.error(err);
+        console.error("JSON Yükleme Hatası:", err);
         setError(true);
         setLoading(false);
       });
@@ -68,22 +66,22 @@ export default function TestDetailPage() {
   if (loading) return (
     <div className="min-h-screen flex flex-col justify-center items-center bg-slate-50 text-slate-500">
       <div className="w-10 h-10 border-4 border-indigo-200 border-t-indigo-600 rounded-full animate-spin mb-4"></div>
-      <p>Test yükleniyor...</p>
+      <p>Test verileri yükleniyor...</p>
     </div>
   );
 
   if (error) return (
     <div className="min-h-screen flex flex-col justify-center items-center bg-slate-50 text-red-500 p-4 text-center">
-      <h2 className="text-xl font-bold mb-2">Test Bulunamadı</h2>
-      <p>Aradığınız dosya: <strong>{testId}.json</strong></p>
-      <p className="text-sm mt-2 text-slate-400">Lütfen 'public/data/tests' klasöründe bu dosyanın olduğundan emin olun.</p>
-      <Link href="/" className="mt-6 px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">Ana Sayfaya Dön</Link>
+      <h2 className="text-xl font-bold mb-2">Hata: Test Bulunamadı</h2>
+      <p>Sistem <strong>/data/tests/{testId}.json</strong> dosyasını bulamadı.</p>
+      <p className="text-sm mt-4 text-slate-500">Lütfen dosya isminin 'public' klasöründekiyle aynı olduğundan emin olun.</p>
+      <Link href="/" className="mt-6 px-6 py-2 bg-slate-800 text-white rounded-lg hover:bg-slate-900">Ana Sayfaya Dön</Link>
     </div>
   );
 
   if (questions.length === 0) return (
     <div className="min-h-screen flex flex-col justify-center items-center bg-slate-50 text-slate-500">
-      <p>Bu testte henüz soru yok veya veri formatı hatalı.</p>
+      <p>Bu test dosyasının içi boş veya formatı hatalı.</p>
       <Link href="/" className="mt-4 text-indigo-600 underline">Geri Dön</Link>
     </div>
   );
