@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import { useRouter, useParams } from 'next/navigation';
 
 // --- Dahili SVG İkonlar (Paket bağımlılığı kaldırıldı) ---
 
@@ -67,9 +67,10 @@ const examMeta = {
   tus: { title: 'TUS', icon: <Stethoscope className="w-6 h-6 text-emerald-500" />, color: 'text-emerald-600', bg: 'bg-emerald-50' }
 };
 
-export default function TestDetailPage({ params }: { params: { testId: string } }) {
+export default function TestDetailPage() {
   const router = useRouter();
-  const { testId } = params;
+  const params = useParams();
+  const testId = params.testId as string;
   
   // ID kontrolü ve parse işlemi
   const [category, numberStr] = (testId || '').split('-');
