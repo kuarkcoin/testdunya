@@ -36,7 +36,7 @@ const examConfig = [
     prefix: 'yks-sozel-deneme', 
     title: 'YKS Sözel', 
     count: 30, 
-    desc: 'TYT ve AYT odaklı kapsamlı deneme setleri.',
+    desc: 'TYT ve AYT odaklı kapsamlı, yeni nesil deneme setleri.',
     icon: <Book className="w-6 h-6 text-white" />,
     gradient: 'from-blue-600 to-indigo-600',
     border: 'border-blue-100',
@@ -47,7 +47,7 @@ const examConfig = [
     prefix: 'kpss-sozel', 
     title: 'KPSS Genel Kültür', 
     count: 21, 
-    desc: 'Tarih, Coğrafya ve Vatandaşlık çıkmış soruları.',
+    desc: 'Tarih, Coğrafya ve Vatandaşlık için özgün sorular.',
     icon: <Brain className="w-6 h-6 text-white" />,
     gradient: 'from-orange-500 to-red-500',
     border: 'border-orange-100',
@@ -58,7 +58,7 @@ const examConfig = [
     prefix: 'tus-deneme', 
     title: 'TUS Denemeleri', 
     count: 22, 
-    desc: 'Tıpta Uzmanlık Sınavı için klinik vaka soruları.',
+    desc: 'TUS için Temel ve Klinik Bilimler vaka soruları.',
     icon: <Activity className="w-6 h-6 text-white" />,
     gradient: 'from-emerald-500 to-teal-600',
     border: 'border-emerald-100',
@@ -79,7 +79,7 @@ export default function HomePage() {
   return (
     <main className="min-h-screen bg-slate-50 font-sans text-slate-800">
       
-      {/* --- HERO SECTION (Kompakt ve Modern) --- */}
+      {/* --- HERO SECTION --- */}
       <div className="bg-gradient-to-r from-slate-900 via-indigo-900 to-slate-900 text-white pb-20 pt-10 px-4 mb-8">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
           
@@ -96,7 +96,7 @@ export default function HomePage() {
               TestDünya <span className="text-indigo-400">Sınav Platformu</span>
             </h1>
             <p className="text-slate-300 text-base md:text-lg max-w-xl leading-relaxed">
-              YKS, KPSS ve TUS sınavlarına en güncel sorularla, ücretsiz ve üyeliksiz hazırlanın. 
+              YKS, KPSS ve TUS sınavlarına <strong>yapay zeka destekli özgün sorularla</strong>, ücretsiz ve üyeliksiz hazırlanın. 
               Hatalarınızı analiz edin, netlerinizi artırın.
             </p>
 
@@ -110,7 +110,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Sağ taraf görseli (Soyut ikon) */}
+          {/* Sağ taraf görseli */}
           <div className="md:w-1/3 flex justify-center md:justify-end">
              <div className="relative w-40 h-40 md:w-56 md:h-56 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-3xl rotate-6 shadow-2xl flex items-center justify-center border-4 border-white/10 backdrop-blur-md">
                 <Trophy className="w-20 h-20 md:w-28 md:h-28 text-white drop-shadow-md" />
@@ -155,7 +155,7 @@ export default function HomePage() {
                     <Link 
                       key={num}
                       href={`/test/${testLinkId}`}
-                      title={`${exam.title} ${num}. Deneme Sınavı`}
+                      title={`${exam.title} ${num}. Özgün Deneme`}
                       className={`
                         group relative flex flex-col items-center justify-center py-3 px-2 rounded-xl border transition-all duration-200
                         ${isDone 
@@ -185,7 +185,7 @@ export default function HomePage() {
         ))}
       </div>
 
-      {/* --- SEO & FEATURES SECTION (YENİ EKLENDİ) --- */}
+      {/* --- SEO & FEATURES SECTION --- */}
       <section className="bg-white border-t border-slate-100 py-16 px-4">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
@@ -221,14 +221,14 @@ export default function HomePage() {
               </div>
               <h3 className="font-bold text-slate-800 mb-2">Geniş Soru Havuzu</h3>
               <p className="text-sm text-slate-600 leading-relaxed">
-                ÖSYM müfredatına uygun YKS, KPSS ve TUS çıkmış sorular ve denemeler.
+                ÖSYM müfredatına uygun YKS, KPSS ve TUS için hazırlanmış <strong>özgün denemeler ve yeni nesil sorular.</strong>
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* --- FOOTER (SEO İÇİN ÖNEMLİ) --- */}
+      {/* --- FOOTER --- */}
       <footer className="bg-slate-900 text-slate-400 py-12 px-4 border-t border-slate-800">
         <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-8 text-sm">
           <div className="col-span-1 md:col-span-2">
@@ -238,7 +238,7 @@ export default function HomePage() {
             <p className="leading-relaxed mb-4 max-w-sm">
               Türkiye'nin en kapsamlı ücretsiz online sınav hazırlık platformu. 
               TYT, AYT, KPSS Lisans, Önlisans ve TUS sınavlarına hazırlanan öğrenciler için 
-              özenle hazırlanmış deneme sınavları.
+              özenle hazırlanmış <strong>özgün deneme sınavları.</strong>
             </p>
             <p className="text-xs opacity-50">&copy; 2025 TestDünya. Tüm hakları saklıdır.</p>
           </div>
@@ -247,8 +247,8 @@ export default function HomePage() {
             <h5 className="text-white font-bold mb-4">Sınavlar</h5>
             <ul className="space-y-2">
               <li><Link href="#exams" className="hover:text-white transition-colors">YKS (TYT-AYT) Denemeleri</Link></li>
-              <li><Link href="#exams" className="hover:text-white transition-colors">KPSS Çıkmış Sorular</Link></li>
-              <li><Link href="#exams" className="hover:text-white transition-colors">TUS Klinik Sorular</Link></li>
+              <li><Link href="#exams" className="hover:text-white transition-colors">KPSS Genel Kültür Denemeleri</Link></li>
+              <li><Link href="#exams" className="hover:text-white transition-colors">TUS Klinik ve Temel Sorular</Link></li>
               <li><Link href="/mistakes" className="hover:text-white transition-colors">Hata Analizi</Link></li>
             </ul>
           </div>
