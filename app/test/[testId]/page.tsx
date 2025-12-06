@@ -70,12 +70,10 @@ const examMeta = {
 export default function TestDetailPage() {
   const router = useRouter();
   const params = useParams();
-  const testId = params.testId as string;
   
-  // ID kontrolü ve parse işlemi
-  const [category, numberStr] = (testId || '').split('-');
-  const number = parseInt(numberStr);
-  const info = examMeta[category as keyof typeof examMeta];
+  // Güvenli parametre alımı (useParams ilk renderda boş gelebilir)
+  const testId = params?.testId;
+  const safeTestId = Array.isArray(testId) ? testId[0] : testId;
 
   const [completed, setCompleted] = useState<{ [key: string]: number[] }>({});
   const [note, setNote] = useState('');
@@ -83,7 +81,7 @@ export default function TestDetailPage() {
 
   // Verileri Yükle
   useEffect(() => {
-    if (!testId) return;
+    if (!safeTestId) return;
     
     try {
       const savedTracker = localStorage.getItem('examTrackerData');
@@ -92,12 +90,29 @@ export default function TestDetailPage() {
       const savedNotes = localStorage.getItem('examTrackerNotes');
       if (savedNotes) {
         const notesObj = JSON.parse(savedNotes);
-        if (notesObj[testId]) setNote(notesObj[testId]);
+        if (notesObj[safeTestId]) setNote(notesObj[safeTestId]);
       }
     } catch (e) {
       console.error("Veri yükleme hatası", e);
     }
-  }, [testId]);
+  }, [safeTestId]);
+
+  // ID henüz hazır değilse yükleniyor göster
+  if (!safeTestId) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-slate-50 text-slate-500 font-sans">
+        <div className="flex flex-col items-center animate-pulse">
+          <div className="w-12 h-12 bg-slate-200 rounded-full mb-4"></div>
+          <p>Deneme yükleniyor...</p>
+        </div>
+      </div>
+    );
+  }
+
+  // ID kontrolü ve parse işlemi
+  const [category, numberStr] = (safeTestId || '').split('-');
+  const number = parseInt(numberStr);
+  const info = examMeta[category as keyof typeof examMeta];
 
   // Durumu Değiştir
   const toggleStatus = () => {
@@ -118,7 +133,7 @@ export default function TestDetailPage() {
     const savedNotes = localStorage.getItem('examTrackerNotes');
     const notesObj = savedNotes ? JSON.parse(savedNotes) : {};
     
-    notesObj[testId] = note;
+    notesObj[safeTestId] = note;
     localStorage.setItem('examTrackerNotes', JSON.stringify(notesObj));
     
     setIsSaved(true);
@@ -127,7 +142,19 @@ export default function TestDetailPage() {
 
   const isDone = (completed[category] || []).includes(number);
 
-  if (!info) return <div className="p-8 text-center text-red-500">Geçersiz Sınav ID'si veya Tanımlanmamış Kategori.</div>;
+  if (!info) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-slate-50 p-8 font-sans">
+        <div className="text-center bg-white p-8 rounded-2xl shadow-sm border border-red-100 max-w-md">
+           <h2 className="text-xl font-bold text-red-600 mb-2">Hata: Geçersiz Deneme</h2>
+           <p className="text-slate-600 mb-4">Aradığınız <strong>"{safeTestId}"</strong> ID'li deneme bulunamadı.</p>
+           <Link href="/" className="inline-block px-6 py-2 bg-slate-800 text-white rounded-lg hover:bg-slate-900 transition-colors">
+             Ana Sayfaya Dön
+           </Link>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <main className="min-h-screen bg-slate-50 p-4 md:p-8 font-sans text-slate-800 flex justify-center">
