@@ -2,9 +2,9 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Trophy, BookOpen, Brain, Stethoscope, PlayCircle, CheckCircle, GraduationCap } from 'lucide-react';
+import { Trophy, BookOpen, Brain, Stethoscope, PlayCircle, CheckCircle } from 'lucide-react';
 
-// Sınav konfigürasyonları - Sabit Veriler
+// Sınav konfigürasyonları - LGS KALDIRILDI
 const examConfig = [
   { 
     id: 'yks', 
@@ -44,31 +44,15 @@ const examConfig = [
     textColor: 'text-emerald-700',
     borderColor: 'border-emerald-200',
     hoverBorder: 'hover:border-emerald-300'
-  },
-  { 
-    id: 'lgs', 
-    prefix: 'lgs',
-    title: 'LGS Tüm Dersler', 
-    count: 20, // Deneme sayısını buradan değiştirebilirsin
-    desc: '20 Genel Deneme',
-    icon: <GraduationCap className="w-8 h-8 text-pink-500" />,
-    color: 'bg-pink-500',
-    lightColor: 'bg-pink-50',
-    textColor: 'text-pink-700',
-    borderColor: 'border-pink-200',
-    hoverBorder: 'hover:border-pink-300'
   }
 ];
 
 export default function HomePage() {
-  // Tamamlananları takip etmek için state
   const [completed, setCompleted] = useState<{ [key: string]: number[] }>({});
-  // Sayfanın istemci tarafında yüklendiğini kontrol etmek için (Hydration hatasını önler)
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
-    // LocalStorage'dan verileri çek
     try {
       const savedData = localStorage.getItem('examTrackerData');
       if (savedData) {
@@ -79,15 +63,10 @@ export default function HomePage() {
     }
   }, []);
 
-  // Sayfa yüklenene kadar boş veya basit bir içerik gösterilebilir, 
-  // ancak içeriğin kaybolmaması için direkt return yapmıyoruz,
-  // sadece completed verisi gelene kadar işaretlemeleri göstermeyebiliriz.
-
   return (
     <main className="min-h-screen bg-slate-50 p-4 md:p-8 font-sans text-slate-800">
       <div className="max-w-5xl mx-auto space-y-8">
         
-        {/* Header */}
         <header className="flex flex-col md:flex-row items-center justify-between gap-4 bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
           <div>
             <h1 className="text-3xl font-bold text-slate-900 flex items-center gap-3">
@@ -95,12 +74,11 @@ export default function HomePage() {
               Sınav Merkezi
             </h1>
             <p className="text-slate-500 mt-2 text-lg">
-              Çözmek istediğin YKS, KPSS, TUS veya LGS deneme setini seç ve hemen başla.
+              Çözmek istediğin YKS, KPSS veya TUS deneme setini seç ve hemen başla.
             </p>
           </div>
         </header>
 
-        {/* Sınav Listesi Grid */}
         <div className="grid grid-cols-1 gap-8">
           {examConfig.map((exam) => (
             <section 
@@ -108,8 +86,6 @@ export default function HomePage() {
               aria-labelledby={`title-${exam.id}`}
               className={`bg-white rounded-3xl shadow-sm border ${exam.borderColor} overflow-hidden hover:shadow-md transition-all duration-300`}
             >
-              
-              {/* Kategori Başlığı */}
               <div className="p-6 border-b border-slate-100 bg-slate-50/50 flex items-center gap-4">
                 <div className={`p-3 rounded-2xl ${exam.lightColor}`}>
                   {exam.icon}
@@ -122,12 +98,10 @@ export default function HomePage() {
                 </div>
               </div>
 
-              {/* Deneme Butonları */}
               <div className="p-6">
                 <nav className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3" aria-label={`${exam.title} Deneme Listesi`}>
                   {Array.from({ length: exam.count }, (_, i) => i + 1).map((num) => {
                     const testLinkId = `${exam.prefix}-${num}`;
-                    // Sadece sayfa mount edildikten sonra completed durumunu kontrol et
                     const isDone = mounted && (completed[exam.id] || []).includes(num);
                     const linkLabel = `${exam.title} ${num}. Deneme`;
 
@@ -148,13 +122,11 @@ export default function HomePage() {
                         <span className={`text-sm font-bold mb-1 ${isDone ? 'text-emerald-700' : 'text-slate-600'}`}>
                           #{num}
                         </span>
-                        
                         {isDone ? (
                            <CheckCircle className="w-6 h-6 text-emerald-500" aria-hidden="true" />
                         ) : (
                            <PlayCircle className={`w-6 h-6 ${exam.textColor} opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all`} aria-hidden="true" />
                         )}
-
                         <span className="text-[10px] text-slate-400 mt-1 font-medium group-hover:text-indigo-500">
                           {isDone ? 'Çözüldü' : 'Başla'}
                         </span>
@@ -166,7 +138,6 @@ export default function HomePage() {
             </section>
           ))}
         </div>
-
       </div>
     </main>
   );
