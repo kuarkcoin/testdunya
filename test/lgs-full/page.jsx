@@ -1,137 +1,154 @@
 'use client';
 
-import { useEffect, useState } from "react";
-import Link from "next/link";
+import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
+import { Trophy, BookOpen, Brain, Stethoscope, PlayCircle, CheckCircle } from 'lucide-react';
 
-export default function LgsFullTestPage() {
-  const [questions, setQuestions] = useState([]);
-  const [index, setIndex] = useState(0);
-  const [selected, setSelected] = useState(null);
-  const [showResult, setShowResult] = useState(false);
+// Sınav konfigürasyonları
+const examConfig = [
+  { 
+    id: 'yks', 
+    prefix: 'yks', // URL yapısı için: /test/yks-1
+    title: 'YKS Sözel', 
+    count: 30, 
+    desc: '30 Fasikül/Deneme',
+    icon: <BookOpen className="w-8 h-8 text-blue-500" />,
+    color: 'bg-blue-500',
+    lightColor: 'bg-blue-50',
+    textColor: 'text-blue-700',
+    borderColor: 'border-blue-200',
+    hoverBorder: 'hover:border-blue-300'
+  },
+  { 
+    id: 'kpss', 
+    prefix: 'kpss',
+    title: 'KPSS Sözel', 
+    count: 21, 
+    desc: '21 Fasikül/Deneme',
+    icon: <Brain className="w-8 h-8 text-orange-500" />,
+    color: 'bg-orange-500',
+    lightColor: 'bg-orange-50',
+    textColor: 'text-orange-700',
+    borderColor: 'border-orange-200',
+    hoverBorder: 'hover:border-orange-300'
+  },
+  { 
+    id: 'tus', 
+    prefix: 'tus',
+    title: 'TUS', 
+    count: 22, 
+    desc: '22 Fasikül/Deneme',
+    icon: <Stethoscope className="w-8 h-8 text-emerald-500" />,
+    color: 'bg-emerald-500',
+    lightColor: 'bg-emerald-50',
+    textColor: 'text-emerald-700',
+    borderColor: 'border-emerald-200',
+    hoverBorder: 'hover:border-emerald-300'
+  }
+];
 
-  // JSON'dan veri çekme
-  // fetch("/data/tests/lgs-full.json") -> public klasörüne bakar
+export default function HomePage() {
+  // Basit bir localStorage takibi (Sadece görsel işaretleme için)
+  const [completed, setCompleted] = useState<{ [key: string]: number[] }>({});
+
   useEffect(() => {
-    fetch("/data/tests/lgs-full.json")
-      .then((res) => res.json())
-      .then((data) => setQuestions(data))
-      .catch((err) => console.error("Veri çekilemedi:", err));
+    // Daha önce exam_tracker.jsx kullandıysan verileri oradan okur
+    const savedData = localStorage.getItem('examTrackerData');
+    if (savedData) {
+      setCompleted(JSON.parse(savedData));
+    }
   }, []);
 
-  if (questions.length === 0) {
-    return (
-      <div className="min-h-screen bg-slate-100 flex items-center justify-center p-8">
-        <div className="text-xl font-semibold text-slate-500 animate-pulse">Sorular Yükleniyor...</div>
-      </div>
-    );
-  }
-
-  const q = questions[index];
-
-  const handleSelect = (opt) => {
-    setSelected(opt);
-    setShowResult(true);
-  };
-
-  const next = () => {
-    setSelected(null);
-    setShowResult(false);
-    setIndex((prev) => prev + 1);
-  };
-
   return (
-    <div className="min-h-screen bg-slate-100 p-4 pb-20">
-      <div className="max-w-2xl mx-auto bg-white rounded-2xl p-6 shadow-lg">
-
-        <div className="flex justify-between items-center mb-6">
-            <h1 className="text-xl font-bold text-slate-800">
-            LGS – Tam Deneme
+    // SEO: Sayfa ana içeriğini 'main' etiketi ile belirttik
+    <main className="min-h-screen bg-slate-50 p-4 md:p-8 font-sans text-slate-800">
+      <div className="max-w-5xl mx-auto space-y-8">
+        
+        {/* Header: SEO için header etiketi kullanıldı */}
+        <header className="flex flex-col md:flex-row items-center justify-between gap-4 bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+          <div>
+            {/* H1 etiketi sayfanın en önemli başlığıdır, anahtar kelime içerir */}
+            <h1 className="text-3xl font-bold text-slate-900 flex items-center gap-3">
+              <Trophy className="w-8 h-8 text-yellow-500" aria-hidden="true" />
+              Sınav Merkezi
             </h1>
-            <span className="text-sm font-mono text-slate-500 bg-slate-100 px-2 py-1 rounded">
-                {index + 1} / {questions.length}
-            </span>
-        </div>
-
-        {/* Soru Metni */}
-        <p className="text-lg font-semibold text-slate-900 mb-6 leading-relaxed">
-            {q.question}
-        </p>
-
-        {/* Şekil alanı varsa göster */}
-        {q.shape && q.shape.trim() !== "" && (
-          <pre className="bg-slate-50 border border-slate-200 p-4 rounded-xl overflow-x-auto mb-6 whitespace-pre-wrap font-mono text-sm text-slate-700">
-            {q.shape}
-          </pre>
-        )}
-
-        {/* Şıklar */}
-        <div className="space-y-3">
-            {["A", "B", "C", "D"].map((opt) => {
-            const isSelected = selected === opt;
-            const isCorrect = showResult && opt === q.correct;
-            // Yanlış şıkkı işaretlediyse kırmızı yapalım (opsiyonel geliştirme)
-            const isWrong = showResult && isSelected && opt !== q.correct;
-
-            return (
-                <button
-                key={opt}
-                onClick={() => handleSelect(opt)}
-                disabled={showResult}
-                className={`
-                    w-full text-left p-4 rounded-xl border transition-all duration-200 flex items-center gap-3
-                    ${!showResult && 'hover:bg-slate-50 hover:border-slate-300'}
-                    ${isSelected && !showResult ? "bg-indigo-50 border-indigo-400 text-indigo-900" : "bg-white border-slate-200"}
-                    ${isCorrect ? "border-emerald-500 bg-emerald-50 text-emerald-900" : ""}
-                    ${isWrong ? "border-rose-400 bg-rose-50 text-rose-900" : ""}
-                `}
-                >
-                <span className={`
-                    w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold
-                    ${isCorrect ? 'bg-emerald-200 text-emerald-800' : 'bg-slate-100 text-slate-500'}
-                `}>
-                    {opt}
-                </span>
-                <span className="font-medium">{q[opt]}</span>
-                </button>
-            )})}
-        </div>
-
-        {/* Açıklama */}
-        {showResult && (
-          <div className="mt-6 p-4 bg-amber-50 rounded-xl border border-amber-200 text-amber-900">
-            <p className="font-bold flex items-center gap-2">
-                💡 Doğru cevap: {q.correct}
-            </p>
-            <p className="text-sm mt-2 leading-relaxed opacity-90">
-                {q.Açıklama}
+            <p className="text-slate-500 mt-2 text-lg">
+              Çözmek istediğin YKS, KPSS veya TUS deneme setini seç ve hemen başla.
             </p>
           </div>
-        )}
+        </header>
 
-        {/* İleri butonu */}
-        {showResult && index < questions.length - 1 && (
-          <button
-            onClick={next}
-            className="w-full mt-6 bg-indigo-600 hover:bg-indigo-700 text-white py-3.5 rounded-xl font-bold transition shadow-lg shadow-indigo-200"
-          >
-            Sonraki Soru →
-          </button>
-        )}
-
-        {/* Test bitti */}
-        {index === questions.length - 1 && showResult && (
-          <div className="text-center mt-10 p-6 bg-slate-50 rounded-2xl border border-slate-200">
-            <p className="text-2xl mb-2">🎉</p>
-            <p className="text-xl font-bold text-slate-800">Testi Tamamladın!</p>
-            <Link
-              href="/"
-              className="inline-block mt-4 bg-slate-900 hover:bg-slate-800 text-white px-8 py-3 rounded-xl font-medium transition"
+        {/* Sınav Listesi */}
+        <div className="grid grid-cols-1 gap-8">
+          {examConfig.map((exam) => (
+            // SEO: Her bir sınav grubu bir 'section' olarak ayrıldı
+            <section 
+              key={exam.id} 
+              aria-labelledby={`title-${exam.id}`}
+              className={`bg-white rounded-3xl shadow-sm border ${exam.borderColor} overflow-hidden hover:shadow-md transition-all duration-300`}
             >
-              Ana Sayfaya Dön
-            </Link>
-          </div>
-        )}
+              
+              {/* Kategori Başlığı */}
+              <div className="p-6 border-b border-slate-100 bg-slate-50/50 flex items-center gap-4">
+                <div className={`p-3 rounded-2xl ${exam.lightColor}`}>
+                  {exam.icon}
+                </div>
+                <div>
+                  {/* H2 etiketi alt başlıklar için kullanıldı ve id atandı */}
+                  <h2 id={`title-${exam.id}`} className="text-xl font-bold text-slate-900">
+                    {exam.title}
+                  </h2>
+                  <span className="text-slate-500 text-sm">{exam.desc}</span>
+                </div>
+              </div>
+
+              {/* Deneme Butonları */}
+              <div className="p-6">
+                <nav className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3" aria-label={`${exam.title} Deneme Listesi`}>
+                  {Array.from({ length: exam.count }, (_, i) => i + 1).map((num) => {
+                    const testLinkId = `${exam.prefix}-${num}`;
+                    const isDone = (completed[exam.id] || []).includes(num);
+                    // SEO: Link için açıklayıcı metin oluşturduk
+                    const linkLabel = `${exam.title} ${num}. Deneme`;
+
+                    return (
+                      <Link 
+                        key={num}
+                        href={`/test/${testLinkId}`}
+                        // SEO: title ve aria-label ekleyerek botlara linkin içeriğini anlattık
+                        title={linkLabel}
+                        aria-label={isDone ? `${linkLabel} - Tamamlandı` : `${linkLabel} - Başla`}
+                        className={`
+                          group relative flex flex-col items-center justify-center p-3 rounded-xl border-2 transition-all duration-200
+                          ${isDone 
+                            ? 'bg-emerald-50 border-emerald-200 hover:border-emerald-300' 
+                            : 'bg-white border-slate-100 hover:border-indigo-300 hover:shadow-lg hover:-translate-y-1'
+                          }
+                        `}
+                      >
+                        <span className={`text-sm font-bold mb-1 ${isDone ? 'text-emerald-700' : 'text-slate-600'}`}>
+                          #{num}
+                        </span>
+                        
+                        {isDone ? (
+                           <CheckCircle className="w-6 h-6 text-emerald-500" aria-hidden="true" />
+                        ) : (
+                           <PlayCircle className={`w-6 h-6 ${exam.textColor} opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all`} aria-hidden="true" />
+                        )}
+
+                        <span className="text-[10px] text-slate-400 mt-1 font-medium group-hover:text-indigo-500">
+                          {isDone ? 'Çözüldü' : 'Başla'}
+                        </span>
+                      </Link>
+                    );
+                  })}
+                </nav>
+              </div>
+            </section>
+          ))}
+        </div>
+
       </div>
-    </div>
+    </main>
   );
 }
