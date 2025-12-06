@@ -20,19 +20,23 @@ const ArrowLeft = (props: React.SVGProps<SVGSVGElement>) => (
 const AlertCircle = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
 );
+const BookOpen = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+);
 
-// --- Veri Tipi Tanımlaması ---
+// --- Veri Tipi ---
 type StandardQuestion = {
   question: string;
   options: string[];
   answer: string;
+  solution: string; // Çözüm/Açıklama alanı eklendi
 };
 
 export default function TestExamPage() {
   const params = useParams();
   const testId = params?.testId as string;
 
-  // --- State Yönetimi ---
+  // --- State ---
   const [questions, setQuestions] = useState<StandardQuestion[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
@@ -42,7 +46,7 @@ export default function TestExamPage() {
   const [timeLeft, setTimeLeft] = useState(0); 
   const [score, setScore] = useState({ correct: 0, incorrect: 0, empty: 0, net: 0 });
 
-  // --- 1. Veri Çekme ve Normalize Etme ---
+  // --- 1. Veri Çekme ---
   useEffect(() => {
     if (!testId) return;
     setLoading(true);
@@ -53,51 +57,45 @@ export default function TestExamPage() {
         return res.json();
       })
       .then(rawdata => {
-        // Ham veriyi al (Array veya Object olabilir)
         let rawList: any[] = [];
         if (Array.isArray(rawdata)) rawList = rawdata;
         else if (rawdata.questions && Array.isArray(rawdata.questions)) rawList = rawdata.questions;
         else rawList = [];
 
-        // --- VERİ DÖNÜŞTÜRÜCÜ (ÖNEMLİ KISIM) ---
-        // Gelen veri ne formatta olursa olsun standart formata çevirir.
+        // Veriyi Normalize Et
         const normalizedList: StandardQuestion[] = rawList.map(item => {
           let opts: string[] = [];
 
-          // 1. İhtimal: Şıklar "options" veya "secenekler" adında bir array ise
           if (Array.isArray(item.options)) opts = item.options;
           else if (Array.isArray(item.secenekler)) opts = item.secenekler;
-          
-          // 2. İhtimal: Şıklar A, B, C, D, E anahtarları olarak gelmişse (Sık karşılaşılan durum)
           else if (item.A || item.B) {
-            opts = [item.A, item.B, item.C, item.D, item.E].filter(Boolean); // Boş olmayanları al
+            opts = [item.A, item.B, item.C, item.D, item.E].filter(Boolean);
           }
-
-          // 3. İhtimal: Şıklar nesne ise {"A": "...", "B": "..."}
           else if (typeof item.options === 'object' && item.options !== null) {
             opts = Object.values(item.options);
           }
 
           return {
-            question: item.question || item.soru || "Soru metni yüklenemedi.",
+            question: item.question || item.soru || "Soru metni yok.",
             options: opts,
-            answer: (item.answer || item.cevap || "").trim().toUpperCase() // Cevabı standartlaştır
+            answer: (item.answer || item.cevap || "").trim().toUpperCase(),
+            // Açıklama alanlarını kontrol et
+            solution: item.solution || item.cozum || item.aciklama || ""
           };
         });
         
         setQuestions(normalizedList);
 
-        // Dinamik Süre: Soru başına 1.5 dk (90 sn)
         if (normalizedList.length > 0) {
+           // Soru başına 1.5 dakika (90 sn)
            setTimeLeft(normalizedList.length * 90);
         } else {
-           setError(true); // Veri var ama içi boşsa hata göster
+           setError(true);
         }
-        
         setLoading(false);
       })
       .catch(err => {
-        console.error("JSON Hatası:", err);
+        console.error("Hata:", err);
         setError(true);
         setLoading(false);
       });
@@ -126,7 +124,7 @@ export default function TestExamPage() {
     return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
   };
 
-  // --- 3. Şık Seçimi ---
+  // --- 3. Seçim ---
   const handleOptionSelect = (questionIndex: number, optionText: string) => {
     if (isExamFinished) return; 
     setUserAnswers(prev => ({
@@ -143,22 +141,16 @@ export default function TestExamPage() {
     
     questions.forEach((q, idx) => {
       const userAnswer = userAnswers[idx];
-      // Cevap A, B, C gibi bir harf ise ve şık metni farklıysa kontrolü
-      // Burada basitçe metin karşılaştırması yapıyoruz. 
-      // Eğer veritabanında cevap "A" diye kayıtlıysa ve kullanıcı şık metnini seçtiyse bu mantık geliştirilmeli.
-      // Şimdilik en sağlam yöntem: Cevap anahtarındaki metin ile seçilen şıkkın metni aynı mı?
-      
       if (userAnswer) {
-        // Doğru cevap bazen "A" bazen şıkkın kendisi olabilir. 
-        // Basit metin eşitliği kontrolü (boşlukları silerek)
-        const cleanUserAns = userAnswer.replace(/\s+/g, '').toLowerCase();
-        const cleanCorrectAns = q.answer.replace(/\s+/g, '').toLowerCase();
-        
-        // Şıkkın indeksi ile cevabı eşleştirme (Eğer cevap "A", "B" gibiyse)
+        // Karşılaştırma mantığı:
+        // Şık metni ile cevap eşleşiyor mu VEYA Şık harfi (A,B,C) ile cevap eşleşiyor mu?
         const optionIndex = q.options.findIndex(opt => opt === userAnswer);
-        const letterAnswer = String.fromCharCode(65 + optionIndex); // 0->A, 1->B
+        const letterAnswer = String.fromCharCode(65 + optionIndex);
 
-        if (cleanUserAns === cleanCorrectAns || letterAnswer === q.answer) {
+        const isTextMatch = userAnswer.replace(/\s+/g, '').toLowerCase() === q.answer.replace(/\s+/g, '').toLowerCase();
+        const isLetterMatch = letterAnswer === q.answer;
+
+        if (isTextMatch || isLetterMatch) {
           correct++;
         } else {
           incorrect++;
@@ -184,8 +176,8 @@ export default function TestExamPage() {
       <div className="bg-white p-8 rounded-2xl shadow-lg text-center max-w-md border border-red-100">
         <AlertCircle className="w-12 h-12 text-red-500 mx-auto mb-4" />
         <h2 className="text-xl font-bold text-slate-900 mb-2">Veri Hatası</h2>
-        <p className="text-slate-500 mb-6">Test verisi okunamadı. Lütfen JSON dosya formatını kontrol edin veya dosya adının doğru olduğundan emin olun.</p>
-        <Link href="/" className="px-6 py-2 bg-slate-900 text-white rounded-lg hover:bg-slate-800">Ana Sayfaya Dön</Link>
+        <p className="text-slate-500 mb-6">Test verisi yüklenemedi.</p>
+        <Link href="/" className="px-6 py-2 bg-slate-900 text-white rounded-lg hover:bg-slate-800">Geri Dön</Link>
       </div>
     </div>
   );
@@ -263,29 +255,36 @@ export default function TestExamPage() {
                 </div>
               </div>
 
+              {/* Şıklar */}
               <div className="space-y-3 pl-0 md:pl-14">
                 {q.options.map((opt, optIndex) => {
                   const letter = String.fromCharCode(65 + optIndex); // A, B, C...
                   
-                  // Renklendirme Mantığı
+                  // --- RENKLENDİRME MANTIĞI ---
                   let styleClass = "border-slate-200 hover:bg-slate-50 hover:border-slate-300 text-slate-600";
                   let circleClass = "bg-white text-slate-400 border-slate-200 group-hover:border-slate-400";
                   
+                  // Bu şık DOĞRU cevap mı?
+                  // Cevap hem "A" harfi olarak hem de "Metin" olarak gelebilir, ikisini de kontrol et.
+                  const isActuallyCorrect = (q.answer === letter) || (q.answer.replace(/\s+/g, '').toLowerCase() === opt.replace(/\s+/g, '').toLowerCase());
+
                   if (!isExamFinished) {
+                    // Sınav Devam Ediyor
                     if (userAnswer === opt) {
                       styleClass = "border-indigo-500 bg-indigo-50 text-indigo-700 font-medium ring-1 ring-indigo-500";
                       circleClass = "bg-indigo-600 text-white border-indigo-600";
                     }
                   } else {
                     // Sınav Bitti
-                    const isCorrectOption = (opt === q.answer) || (letter === q.answer);
                     const isSelected = (userAnswer === opt);
 
-                    if (isCorrectOption) {
+                    if (isActuallyCorrect) {
+                      // KESİN KURAL: Bu şık doğruysa, kullanıcı seçse de seçmese de YEŞİL yap.
                       styleClass = "border-emerald-500 bg-emerald-50 text-emerald-700 font-bold ring-1 ring-emerald-500";
                       circleClass = "bg-emerald-500 text-white border-emerald-500";
                     } else if (isSelected) {
-                      styleClass = "border-red-500 bg-red-50 text-red-700 opacity-60";
+                      // Kullanıcı seçti ama doğru değil (yukarıdaki if'e girmediği için yanlıştır) -> KIRMIZI
+                      styleClass = "border-red-500 bg-red-50 text-red-700 opacity-80";
                       circleClass = "bg-red-500 text-white border-red-500";
                     }
                   }
@@ -302,12 +301,27 @@ export default function TestExamPage() {
                       </div>
                       <span className="flex-1">{opt}</span>
                       
-                      {isExamFinished && ((opt === q.answer) || (letter === q.answer)) && <CheckCircle className="w-6 h-6 text-emerald-600 flex-shrink-0" />}
-                      {isExamFinished && userAnswer === opt && !((opt === q.answer) || (letter === q.answer)) && <XCircle className="w-6 h-6 text-red-500 flex-shrink-0" />}
+                      {/* İkonlar */}
+                      {isExamFinished && isActuallyCorrect && <CheckCircle className="w-6 h-6 text-emerald-600 flex-shrink-0 absolute right-4" />}
+                      {isExamFinished && !isActuallyCorrect && userAnswer === opt && <XCircle className="w-6 h-6 text-red-500 flex-shrink-0 absolute right-4" />}
                     </button>
                   );
                 })}
               </div>
+
+              {/* --- AÇIKLAMA / ÇÖZÜM ALANI --- */}
+              {isExamFinished && q.solution && (
+                <div className="mt-6 ml-0 md:ml-14 p-4 bg-blue-50 border border-blue-100 rounded-xl animate-in fade-in">
+                  <div className="flex items-center gap-2 mb-2">
+                    <BookOpen className="w-5 h-5 text-blue-600" />
+                    <span className="font-bold text-blue-800">Çözüm / Açıklama</span>
+                  </div>
+                  <p className="text-blue-900 text-sm leading-relaxed">
+                    {q.solution}
+                  </p>
+                </div>
+              )}
+
             </div>
           );
         })}
