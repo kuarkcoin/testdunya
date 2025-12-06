@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { Navbar } from '../components/Navbar';
+import Link from 'next/link';
 
 // 👇 GÜNCELLENEN MAİL ADRESİN
 const MY_EMAIL = "ttestdunya@gmail.com"; 
@@ -9,12 +9,23 @@ export const metadata: Metadata = {
   description: 'Bizimle iletişime geçin. Öneri, şikayet ve görüşleriniz.',
 };
 
+// Basit bir Geri Dön İkonu
+const ArrowLeft = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+);
+
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900">
-      <Navbar />
+    <div className="min-h-screen bg-slate-50 text-slate-900 font-sans">
       
-      <main className="max-w-4xl mx-auto px-4 py-10 md:py-16">
+      {/* Navbar Yerine Basit Header */}
+      <div className="max-w-4xl mx-auto px-4 py-6">
+        <Link href="/" className="inline-flex items-center gap-2 text-slate-500 hover:text-indigo-600 transition-colors font-bold">
+           <ArrowLeft className="w-5 h-5" /> Ana Sayfaya Dön
+        </Link>
+      </div>
+      
+      <main className="max-w-4xl mx-auto px-4 pb-16">
         <div className="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden flex flex-col md:flex-row">
             
             {/* Sol Taraf: Koyu Renkli Bilgi Alanı */}
@@ -56,7 +67,7 @@ export default function ContactPage() {
               </div>
 
               <div className="mt-12 pt-8 border-t border-white/10 text-xs text-slate-500">
-                <p>EnglishMeter ve TestDünya projeleri bir bütündür.</p>
+                <p>TestDünya - Yapay Zeka Destekli Sınav Platformu</p>
               </div>
             </div>
 
