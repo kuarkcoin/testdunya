@@ -658,5 +658,104 @@
         "E": "Metotreksat",
         "correct": "C",
         "Açıklama": "Akut intermittan porfiri ataklarında tedavinin temeli hemin ve yüksek doz glukoz ile ALA sentazın baskılanmasıdır. Bu, porfirin prekürsörlerinin üretimini azaltır."
+    },
+    {
+        "id": 61,
+        "question": "Yoğun bakımda takip edilen 70 yaş erkek hastada, mekanik ventilasyona rağmen refrakter hipoksemi gelişiyor. P/F oranı 90. Akciğer USG'de diffüz B-lines ve posterior bölgelerde konsolidasyon mevcut. Prone pozisyon sonrası oksijenizasyon artıyor. Bu bulgular en çok hangisini destekler?",
+        "A": "Hidrostatik akciğer ödemi",
+        "B": "Klasik ARDS",
+        "C": "Bronşiolit obliterans",
+        "D": "Pulmoner hemoraji",
+        "E": "PE’nin masif formu",
+        "correct": "B",
+        "Açıklama": "Refrakter hipoksemi + P/F < 100 + prone ile düzelme = ARDS için tipiktir. Hidrostatik ödem prone ile belirgin düzelmez."
+    },
+    {
+        "id": 62,
+        "question": "26 yaş kadın hasta, otozomal resesif geçen bir hastalık öyküsü var. Kendisi belirgin semptom göstermiyor ancak yapılan testlerde homozigot olmayan fakat kısmi enzim aktivitesi düşüklüğü saptanıyor. Hangi genetik mekanizma bu durumu en iyi açıklar?",
+        "A": "Tam penetrans",
+        "B": "De novo mutasyon",
+        "C": "Heterozigot taşıyıcı fenotipi",
+        "D": "Mitokondriyal kalıtım",
+        "E": "Genişleme mutasyonu",
+        "correct": "C",
+        "Açıklama": "Otozomal resesif hastalıkların heterozigot taşıyıcıları genellikle hafif enzim eksikliği gösterebilir; bu klinik olarak sessiz seyreder."
+    },
+    {
+        "id": 63,
+        "question": "38 yaş erkek hasta, uzun süreli total parenteral beslenme (TPN) sonrası ani gelişen sağ üst kadran ağrısı, ateş ve kolestatik enzim yüksekliği ile başvuruyor. USG’de safra kesesi distansiyonu ve çamur görülüyor. En olası tanı?",
+        "A": "Akut kolesistit",
+        "B": "Akalkülöz kolesistit",
+        "C": "Akut kolanjit",
+        "D": "Kolesistit perforasyonu",
+        "E": "Hepatik ven trombozu",
+        "correct": "B",
+        "Açıklama": "TPN, uzun yatış ve yoğun bakım → akalkülöz kolesistit riskini çok artırır. Taş olmayabilir ama kesede inflamasyon vardır."
+    },
+    {
+        "id": 64,
+        "question": "48 yaş erkek hasta, diyabetik ketoasidoz nedeniyle tedavi alırken potasyum düzeyi 3.0 mg/dL’ye düşüyor. Tedavinin hangi aşamasında ciddi ventriküler aritmi riski en yüksektir?",
+        "A": "İnsülin tedavisinin başlangıcı",
+        "B": "Sıvı resüsitasyonu sonrası",
+        "C": "Bikarbonat tedavisi verildiği sırada",
+        "D": "DKA’nın 24. saati",
+        "E": "Antibiyotik tedavisinin verilmesi",
+        "correct": "A",
+        "Açıklama": "İnsülin potasyumu hızla hücre içine sokar → hipokalemi derinleşir → ölümcül aritmi riski artar. K < 3.3 iken insülin başlanmaz."
+    },
+    {
+        "id": 65,
+        "question": "Tip 2 diyabet hastasında GLP-1 agonisti tedavi başlanmış. Birkaç hafta sonra şiddetli epigastrik ağrı ve amilaz yüksekliği gelişiyor. İlk yapılması gereken?",
+        "A": "İlaç kesilmeden takip",
+        "B": "İnsülin dozunun artırılması",
+        "C": "İlacın kesilmesi ve pankreatit açısından değerlendirme",
+        "D": "Metformin ekleme",
+        "E": "SGLT2 inhibitörü başlanması",
+        "correct": "C",
+        "Açıklama": "GLP-1 agonistleri akut pankreatit riskini artırabilir. Şüphede ilaç hemen kesilir."
+    },
+    {
+        "id": 66,
+        "question": "60 yaş erkek hasta, 3 aydır kilo kaybı, öksürük ve hemoptizi şikayeti ile başvuruyor. Akciğer grafisinde hiler dolgunluk. BT’de ‘bulky’ mediastinal lenf nodları, perihiler kitle ve paraneoplastik SIADH bulguları var. En olası tanı?",
+        "A": "Squamöz hücreli akciğer kanseri",
+        "B": "Adenokarsinom",
+        "C": "Küçük hücreli akciğer kanseri",
+        "D": "Bronkioloalveoler karsinom",
+        "E": "Karsinoid tümör",
+        "correct": "C",
+        "Açıklama": "SIADH + hiler/mediastinal bulky kitle = küçük hücreli akciğer kanseri için tipik paraneoplastik tablo."
+    },
+    {
+        "id": 67,
+        "question": "Yeni tanı konmuş romatoid artritli hastada yüksek CRP, eroziv tutulum ve RF/anti-CCP pozitifliği mevcut. Tedaviye metotreksat başlanmış ancak 3 ayda yanıt yok. En uygun bir sonraki basamak?",
+        "A": "Yalnız NSAİİ",
+        "B": "Metotreksat dozu artırılır",
+        "C": "TNF-alfa inhibitörü eklenir",
+        "D": "Kök hücre tedavisi",
+        "E": "Sülfasalazin tek başına",
+        "correct": "C",
+        "Açıklama": "MTX'ye 3 ay yanıt yoksa biyolojik tedavi (özellikle TNF inhibitörü) eklenmesi TUS kılavuz cevabıdır."
+    },
+    {
+        "id": 68,
+        "question": "25 yaş kadın hasta, ani başlayan sol alt kadran ağrısı, ateş ve lökositoz ile başvuruyor. USG’de over çevresinde hiperekojen haleli, non-kompressible tübüler yapı görülüyor. Tanı?",
+        "A": "PID",
+        "B": "Ovaryan torsiyon",
+        "C": "Ektopik gebelik",
+        "D": "Tuba-ovaryan apse",
+        "E": "Endometriozis",
+        "correct": "D",
+        "Açıklama": "Tuba-ovaryan apse → kompleks, non-kompressible, sıvı dolu amorf kitle + ateş + lökositoz."
+    },
+    {
+        "id": 69,
+        "question": "40 yaş erkek hasta, hepatit C tedavisi sonrası düzelmiş ancak son aylarda purpura, polinöropati ve proteinüri gelişiyor. Laboratuvarda düşük C4 komplemanı ve pozitif kriyoglobulin saptanıyor. Tanı?",
+        "A": "PAN",
+        "B": "Goodpasture sendromu",
+        "C": "Tip 2 mikst kriyoglobulinemi",
+        "D": "HSP",
+        "E": "Lupus nefriti",
+        "correct": "C",
+        "Açıklama": "HCV ile en sık ilişkili vaskülit → Tip 2 mikst kriyoglobulinemi. Düşük C4, purpura, nöropati ve nefrit tipiktir."
     }
 ]
