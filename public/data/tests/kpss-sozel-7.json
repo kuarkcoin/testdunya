@@ -708,15 +708,15 @@
         "Açıklama": "Logo, olimpiyat alevi ve Fransa'nın sembolü Marianne’nin yüzünü bir arada temsil eder."
     },
     {
-        "id": 60,
-        "question": "GÜNCEL BİLGİLER: Türkiye’nin 2024 yılı itibarıyla faaliyete geçen ilk nükleer enerji santrali aşağıdakilerden hangisidir?",
-        "shape": "",
-        "A": "Sinop Nükleer Güç Santrali",
-        "B": "Akkuyu Nükleer Güç Santrali",
-        "C": "Trakya Nükleer Enerji Bölgesi",
-        "D": "Mersin-İğneada Nükleer Santrali",
-        "E": "Ceyhan Enerji Kompleksi",
-        "correct": "B",
-        "Açıklama": "Akkuyu Nükleer Güç Santrali Türkiye'nin ilk nükleer santralidir ve 2024 itibarıyla faaliyete geçmeye başlamıştır."
-    }
+  "id": 60,
+  "question": "GÜNCEL BİLGİLER: Türkiye’nin 2024 yılı itibarıyla faaliyete geçen ilk nükleer enerji santrali aşağıdakilerden hangisidir?",
+  "shape": "",
+  "A": "Sinop Nükleer Güç Santrali",
+  "B": "Akkuyu Nükleer Güç Santrali",
+  "C": "Trakya Nükleer Enerji Bölgesi",
+  "D": "Mersin-İğneada Nükleer Santrali",
+  "E": "Ceyhan Enerji Kompleksi",
+  "correct": "B",
+  "Açıklama": "Akkuyu Nükleer Güç Santrali, Türkiye'nin ilk nükleer enerji santralidir ve 2024 itibarıyla reaktörleri kademeli olarak devreye alınmaya başlamıştır."
+   }
 ]
