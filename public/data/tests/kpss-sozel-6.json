@@ -36,16 +36,16 @@
         "Açıklama": "Çaba sarf etmesine rağmen sonuç alamaması bir karşıtlık oluşturur."
     },
     {
-        "id": 4,
-        "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde yazım yanlışı yoktur?",
-        "shape": "",
-        "A": "Herşey istediğimiz gibi oldu.",
-        "B": "Bugünkü toplantıya katılacak mısın?",
-        "C": "Birkaç kişi daha gelirse başlarız.",
-        "D": "Okulun kütüphanesini çok beğendim.",
-        "E": "Hiç bir soruyu boş bırakmadı.",
-        "correct": "D",
-        "Açıklama": "A: her şey; B: bugünkü doğru; C: birkaç doğru; E: hiçbir → tek doğru olan D’dir."
+  "id": 4,
+  "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde yazım yanlışı yoktur?",
+  "shape": "",
+  "A": "Herşey istediğimiz gibi oldu.",
+  "B": "Bugün ki toplantıya katılacak mısın?",
+  "C": "Bir kaç kişi daha gelirse başlarız.",
+  "D": "Okulun kütüphanesini çok beğendim.",
+  "E": "Hiç bir soruyu boş bırakmadı.",
+  "correct": "D",
+  "Açıklama": "A'da 'her şey', B'de 'bugünkü', C'de 'birkaç', E'de 'hiçbir' doğru yazımıdır; yazım yanlışı olmayan tek cümle D şıkkıdır."
     },
     {
         "id": 5,
@@ -156,16 +156,16 @@
         "Açıklama": "Emek verip sonuç alamamaya dair serzeniş vardır → yakınma."
     },
     {
-        "id": 14,
-        "question": "TÜRKÇE: 'Okuduğu her kitabı defterine özenle not ederdi.' cümlesindeki altı çizili söz aşağıdakilerden hangisinin karşılığıdır?",
-        "shape": "",
-        "A": "Zarf tümleci",
-        "B": "Dolaylı tümleç",
-        "C": "Belirtili nesne",
-        "D": "Belirtisiz nesne",
-        "E": "Özne",
-        "correct": "D",
-        "Açıklama": "\"Her kitabı\" → belirtili nesne gibi görünse de ek almadığı için belirtisiz nesnedir."
+  "id": 14,
+  "question": "TÜRKÇE: 'Okuduğu her kitabı defterine özenle not ederdi.' cümlesindeki altı çizili söz aşağıdakilerden hangisinin karşılığıdır?",
+  "shape": "",
+  "A": "Zarf tümleci",
+  "B": "Dolaylı tümleç",
+  "C": "Belirtili nesne",
+  "D": "Belirtisiz nesne",
+  "E": "Özne",
+  "correct": "C",
+  "Açıklama": "“Her kitabı” sözcük öbeği -ı belirtme hâli eki aldığı için belirtili nesnedir."
     },
     {
         "id": 15,
@@ -384,16 +384,16 @@
         "Açıklama": "Orhun Yazıtları → Türk adıyla yazılmış ilk siyasi metinlerdir."
     },
     {
-        "id": 33,
-        "question": "TARİH: Selçuklular'da 'Nizamiye Medreseleri'ni kurduran hükümdar aşağıdakilerden hangisidir?",
-        "shape": "",
-        "A": "Tuğrul Bey",
-        "B": "Melikşah",
-        "C": "Alp Arslan",
-        "D": "Sencer",
-        "E": "Çağrı Bey",
-        "correct": "B",
-        "Açıklama": "Nizamiye Medreseleri → Melikşah döneminde Nizamülmülk’ün katkılarıyla kurulmuştur."
+  "id": 33,
+  "question": "TARİH: Selçuklular'da 'Nizamiye Medreseleri'ni kurduran hükümdar aşağıdakilerden hangisidir?",
+  "shape": "",
+  "A": "Tuğrul Bey",
+  "B": "Melikşah",
+  "C": "Alp Arslan",
+  "D": "Sencer",
+  "E": "Çağrı Bey",
+  "correct": "C",
+  "Açıklama": "Nizamiye Medreseleri, Büyük Selçuklu Sultanı Alp Arslan döneminde vezir Nizamülmülk’ün öncülüğünde kurulmuştur."
     },
     {
         "id": 34,
@@ -612,16 +612,16 @@
         "Açıklama": "\"Hörgüç kaya\" buzulların aşındırmasıyla oluşur, karstik değildir."
     },
     {
-        "id": 52,
-        "question": "COĞRAFYA: Türkiye’de yer altı kaynaklarıyla ünlü olan Elazığ–Keban bölgesi aşağıdakilerden hangisiyle bilinir?",
-        "shape": "",
-        "A": "Bor",
-        "B": "Krom",
-        "C": "Linyit",
-        "D": "Petrol",
-        "E": "Fosfat",
-        "correct": "B",
-        "Açıklama": "Keban bölgesi zengin krom yataklarıyla bilinir."
+  "id": 52,
+  "question": "COĞRAFYA: Türkiye’de yer altı kaynaklarıyla ünlü olan Elazığ–Guleman bölgesi aşağıdakilerden hangisiyle bilinir?",
+  "shape": "",
+  "A": "Bor",
+  "B": "Krom",
+  "C": "Linyit",
+  "D": "Petrol",
+  "E": "Fosfat",
+  "correct": "B",
+  "Açıklama": "Elazığ–Guleman bölgesi zengin krom yataklarıyla bilinir."
     },
     {
         "id": 53,
