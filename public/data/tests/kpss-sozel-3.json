@@ -156,16 +156,16 @@
         "Açıklama": "Kuzey Cephesi yoktur."
     },
     {
-        "id": 14,
-        "question": "TARİH: 1923'te ilan edilen Cumhuriyet ile birlikte kaldırılan kurum aşağıdakilerden hangisidir?",
-        "shape": "",
-        "A": "Saltanat",
-        "B": "Halifelik",
-        "C": "Ayan Meclisi",
-        "D": "Şeriye ve Evkaf Vekaleti",
-        "E": "Nazırlıklar",
-        "correct": "A",
-        "Açıklama": "Saltanat 1922’de, halifelik 1924’te kaldırılmıştır."
+    "id": 14,
+    "question": "TARİH: Aşağıdaki kurumlardan hangisi Cumhuriyet’in ilanından ÖNCE kaldırılmıştır?",
+    "shape": "",
+    "A": "Saltanat",
+    "B": "Halifelik",
+    "C": "Ayan Meclisi",
+    "D": "Şeriye ve Evkaf Vekaleti",
+    "E": "Nazırlıklar",
+    "correct": "A",
+    "Açıklama": "Saltanat 1922’de kaldırılmış, Cumhuriyet 1923’te ilan edilmiştir. Halifelik ise 1924’te kaldırılmıştır; bu yüzden Cumhuriyet’ten önce kaldırılan kurum saltanattır."
     },
     {
         "id": 15,
@@ -312,16 +312,16 @@
         "Açıklama": "Gerçek anlamda kullanılmıştır."
     },
     {
-        "id": 27,
-        "question": "TÜRKÇE: Aşağıdakilerin hangisinde 'karşıtlık' vardır?",
-        "shape": "",
-        "A": "Hem çalışıyor hem de geziyor.",
-        "B": "Güler yüzlü ama içine kapanık biriydi.",
-        "C": "Okula gidip ödevini yaptı.",
-        "D": "Onu aradım fakat ulaşamadım.",
-        "E": "Bu iş düşündüğümden kolaymış.",
-        "correct": "B",
-        "Açıklama": "Güler yüzlü ↔ içine kapanık özellikleri karşıttır."
+    "id": 27,
+    "question": "TÜRKÇE: Aşağıdakilerin hangisinde 'karşıtlık' vardır?",
+    "shape": "",
+    "A": "Hem çalışıyor hem de geziyor.",
+    "B": "Güler yüzlü ama içine kapanık biriydi.",
+    "C": "Okula gidip ödevini yaptı.",
+    "D": "Onu aradım ve sonunda konuştuk.",
+    "E": "Bu iş düşündüğümden kolaymış.",
+    "correct": "B",
+    "Açıklama": "‘Güler yüzlü’ ve ‘içine kapanık’ birbirine zıt iki özelliktir; bu nedenle B seçeneğinde karşıtlık anlamı vardır."
     },
     {
         "id": 28,
