@@ -209,11 +209,11 @@
         "shape": "",
         "A": "Yarın mutlaka arayacağım.",
         "B": "Herkes toplantıya katıldı.",
-        "C": "Bu evi çok seviyoruz.",
+        "C": "Biz bu evi çok seviyoruz.",
         "D": "Güneş bugün erken doğdu.",
-        "E": "Onu her gün görüyorum.",
+        "E": "Ben onu her gün görüyorum.",
         "correct": "A",
-        "Açıklama": "'Ben' gizli öznedir."
+        "Açıklama": "‘Arayacağım’ yükleminin öznesi söylenmemiş, 'ben' gizli özne olarak kullanılmıştır."
     },
     {
         "id": 19,
@@ -241,7 +241,7 @@
     },
     {
         "id": 21,
-        "question": "TÜRKÇE: Bu cümledeki anlatım bozukluğunun nedeni aşağıdakilerden hangisidir? 'Bu projenin hem bütçesini hazırladı hem de uygulanmasına başladı.'",
+        "question": "TÜRKÇE: Bu cümledeki anlatım bozukluğunun nedeni aşağıdakilerden hangisidir? 'Bu konuda hem ben hem de arkadaşlarım sorumluyum.'",
         "shape": "",
         "A": "Gereksiz sözcük",
         "B": "Özne eksikliği",
@@ -249,7 +249,7 @@
         "D": "Çelişen ifadeler",
         "E": "Nesne eksikliği",
         "correct": "C",
-        "Açıklama": "‘Hem ... hem de’ yapısında iki fiil eşit olmalıdır; biri somut, biri soyut olduğunda uyumsuzluk oluşur."
+        "Açıklama": "‘Hem ben hem de arkadaşlarım’ çoklu özne iken yüklemin tekil 'sorumluyum' olması eş görevli ögeler arasında uyumsuzluk oluşturur."
     },
     {
         "id": 22,
@@ -293,11 +293,11 @@
         "shape": "",
         "A": "Çok çalıştığı için başarılı oldu.",
         "B": "Dün gece uyumayınca bugün yorgunum.",
-        "C": "Yağmur yağdı, bu yüzden dışarı çıkmadık.",
+        "C": "Yağmur yağdı ve televizyon izledik.",
         "D": "Sınavı kazandığı için çok mutluydu.",
         "E": "Bu şehri ilk kez gördüğüm için heyecanlıyım.",
         "correct": "C",
-        "Açıklama": "C şıkkında iki cümle birleşiktir; bir neden-sonuç bağlacı yoktur."
+        "Açıklama": "C cümlesinde iki olay peş peşe verilmiş, aralarında doğrudan bir neden-sonuç ilişkisi yoktur. Diğer cümlelerde sonuç, verilen nedene bağlı olarak ortaya çıkmaktadır."
     },
     {
         "id": 26,
