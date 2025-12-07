@@ -156,16 +156,16 @@
         "Açıklama": "Görev güvencesi bağımsız yargının temel şartıdır."
     },
     {
-        "id": 14,
-        "question": "VATANDAŞLIK: TBMM’nin denetim yollarından biri aşağıdakilerden hangisidir?",
-        "shape": "",
-        "A": "Genel soru",
-        "B": "Kararname çıkarma",
-        "C": "Kanun teklif etme",
-        "D": "Yürütmeyi göreve atama",
-        "E": "Bütçe hazırlama",
-        "correct": "A",
-        "Açıklama": "Genel soru yürütmeyi denetleme aracıdır."
+    "id": 14,
+    "question": "VATANDAŞLIK: TBMM’nin denetim yollarından biri aşağıdakilerden hangisidir?",
+    "shape": "",
+    "A": "Genel görüşme",
+    "B": "Kararname çıkarma",
+    "C": "Kanun teklif etme",
+    "D": "Yürütmeyi göreve atama",
+    "E": "Bütçe hazırlama",
+    "correct": "A",
+    "Açıklama": "Genel görüşme, TBMM’nin yürütmeyi ve genel politikaları denetlemek için kullandığı denetim yollarından biridir."
     },
     {
         "id": 15,
@@ -324,16 +324,16 @@
         "Açıklama": "Ulusal egemenlik Atatürk’ün en temel vurgusudur."
     },
     {
-        "id": 28,
-        "question": "COĞRAFYA: Türkiye'de 'en fazla erozyonun görüldüğü bölge' hangisidir?",
-        "shape": "",
-        "A": "Ege",
-        "B": "İç Anadolu",
-        "C": "Akdeniz",
-        "D": "Doğu Anadolu",
-        "E": "Güneydoğu Anadolu",
-        "correct": "E",
-        "Açıklama": "Bitki örtüsünün zayıf olması erozyonu artırır."
+   "id": 28,
+    "question": "COĞRAFYA: Türkiye'de 'en fazla erozyonun görüldüğü bölge' hangisidir?",
+    "shape": "",
+    "A": "İç Anadolu",
+    "B": "Doğu Anadolu",
+    "C": "Ege",
+    "D": "Akdeniz",
+    "E": "Marmara",
+    "correct": "A",
+    "Açıklama": "İç Anadolu’da bitki örtüsünün zayıf, arazinin geniş ve eğimli alanlara sahip olması erozyonu artırır; bu nedenle erozyonun en şiddetli görüldüğü bölge olarak kabul edilir."
     },
     {
         "id": 29,
@@ -492,16 +492,16 @@
         "Açıklama": "Rüzgârın yetişememesi gerçek dışı bir anlatımdır; abartmadır."
     },
     {
-        "id": 42,
-        "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde yazım yanlışı vardır?",
-        "shape": "",
-        "A": "Her şey yolunda gidiyor.",
-        "B": "Bir şey söylemek istiyorum.",
-        "C": "Hiç bir şekilde kabul etmeyeceğim.",
-        "D": "Bu konuda bir şeyler biliyor.",
-        "E": "Her halde sen haklısın.",
-        "correct": "C",
-        "Açıklama": "'Hiçbir' birleşik yazılır; 'Hiç bir' yazımı yanlıştır."
+    "id": 42,
+    "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde yazım yanlışı vardır?",
+    "shape": "",
+    "A": "Her şey yolunda gidiyor.",
+    "B": "Bir şey söylemek istiyorum.",
+    "C": "Hiç bir şekilde kabul etmeyeceğim.",
+    "D": "Bu konuda bir şeyler biliyor.",
+    "E": "Herhalde sen haklısın.",
+    "correct": "C",
+    "Açıklama": "'Hiçbir' birleşik yazılır; 'Hiç bir' yazımı yanlıştır. Diğer cümlelerde yazım yanlışı yoktur."
     },
     {
         "id": 43,
@@ -588,16 +588,16 @@
         "Açıklama": "Sakarya Nehri Karadeniz'e ulaşır."
     },
     {
-        "id": 50,
-        "question": "COĞRAFYA: Türkiye’nin en geniş platolarına sahip bölgesi hangisidir?",
-        "shape": "",
-        "A": "İç Anadolu",
-        "B": "Ege",
-        "C": "Karadeniz",
-        "D": "Doğu Anadolu",
-        "E": "Güneydoğu Anadolu",
-        "correct": "D",
-        "Açıklama": "Doğu Anadolu yükseltisi fazla ve geniş plato alanlarına sahiptir."
+    "id": 50,
+    "question": "COĞRAFYA: Türkiye’nin en geniş platolarına sahip bölgesi hangisidir?",
+    "shape": "",
+    "A": "İç Anadolu",
+    "B": "Ege",
+    "C": "Karadeniz",
+    "D": "Doğu Anadolu",
+    "E": "Güneydoğu Anadolu",
+    "correct": "A",
+    "Açıklama": "İç Anadolu Bölgesi, Cihanbeyli, Haymana, Obruk gibi geniş plato alanlarıyla Türkiye’nin en geniş plato sahalarına sahiptir."
     },
     {
         "id": 51,
@@ -696,16 +696,16 @@
         "Açıklama": "Ege kıyıları çok sayıda körfez, koy ve yarımadaya sahiptir."
     },
     {
-        "id": 59,
-        "question": "TARİH: Aşağıdakilerden hangisi Osmanlı Devleti’nin 'dağılma döneminde' yapılan ıslahatlardandır?",
-        "shape": "",
-        "A": "Islahat Fermanı",
-        "B": "Senedi İttifak",
-        "C": "Tanzimat Fermanı",
-        "D": "Devşirme sisteminin kurulması",
-        "E": "Yeniçeri Ocağı’nın açılması",
-        "correct": "A",
-        "Açıklama": "Islahat Fermanı 1856’da yayımlanmış ve gayrimüslimlere haklar tanımıştır."
+    "id": 59,
+    "question": "TARİH: Aşağıdakilerden hangisi Osmanlı Devleti’nin dağılma döneminde, gayrimüslimlere geniş haklar tanıyan bir ıslahat belgesidir?",
+    "shape": "",
+    "A": "Islahat Fermanı",
+    "B": "Senedi İttifak",
+    "C": "Tanzimat Fermanı",
+    "D": "Kanun-i Esasi",
+    "E": "III. Selim Nizam-ı Cedit Fermanı",
+    "correct": "A",
+    "Açıklama": "Islahat Fermanı (1856), özellikle gayrimüslim tebaya geniş haklar tanıyan ve dağılma döneminde yayımlanan önemli bir ıslahat belgesidir."
     },
     {
         "id": 60,
