@@ -60,16 +60,16 @@
         "Açıklama": "Parçada dil ile kültürün birbirini beslediği, kültür korunursa dilin de korunacağı savunuluyor."
     },
     {
-        "id": 6,
-        "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde bir anlatım bozukluğu vardır?",
-        "shape": "",
-        "A": "Sınava çalıştı fakat yine de başarısız oldu.",
-        "B": "Bu konu hakkında yeterli bilgi ve deneyimi yoktur.",
-        "C": "Toplantıya hem müdür hem de öğretmenler katılacaktır.",
-        "D": "Bu davranışı hepimizi hem şaşırttı hem de kızdırdı.",
-        "E": "Kitabı okuyup bitirdikten sonra bana verebilirsin.",
-        "correct": "B",
-        "Açıklama": "‘Bilgi ve deneyimi yoktur’ değil, ‘bilgi ve deneyimi yok’ olmalı; yüklem uyumsuzluğu vardır."
+  "id": 6,
+  "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde bir anlatım bozukluğu vardır?",
+  "shape": "",
+  "A": "Bu konu hakkında yeterli bilgi ve deneyime sahibiz.",
+  "B": "Bu davranışı hepimizi hem şaşırttı hem de kızdırdı.",
+  "C": "Toplantıya hem müdür hem de öğretmenler katılacak.",
+  "D": "Bu sınav için yeterince hazırlık yapmadım.",
+  "E": "Kitabı okuyup bitirdikten sonra bana verebilirsin.",
+  "correct": "B",
+  "Açıklama": "B cümlesinde 'Bu davranışı hepimizi...' ifadesinde özne-nesne kullanımı yanlıştır. Doğru kullanım 'Bu davranış hepimizi hem şaşırttı hem de kızdırdı.' olmalıdır. Bu nedenle anlatım bozukluğu vardır."
     },
     {
         "id": 7,
