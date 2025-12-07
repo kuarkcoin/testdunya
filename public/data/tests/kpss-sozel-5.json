@@ -12,16 +12,16 @@
         "Açıklama": "Kişi, emeklerinin fark edilmediğinden şikâyet etmektedir."
     },
     {
-        "id": 2,
-        "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde 'amaç-sonuç' ilişkisi vardır?",
-        "shape": "",
-        "A": "Sınavı kazanmak için gece boyunca çalıştı.",
-        "B": "Yağmur yağdığı için dışarı çıkamadık.",
-        "C": "Gürültü duyunca balkona çıktı.",
-        "D": "Kitabı daha iyi anlamak için tekrar okudu.",
-        "E": "Okula geç kaldığı için öğretmeni uyardı.",
-        "correct": "A",
-        "Açıklama": "Çalışma eylemi sınavı kazanma amacına bağlıdır."
+  "id": 2,
+  "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde 'amaç-sonuç' ilişkisi vardır?",
+  "shape": "",
+  "A": "Sınavı kazanmak için gece boyunca çalıştı.",
+  "B": "Yağmur yağdığı için dışarı çıkamadık.",
+  "C": "Gürültü duyunca balkona çıktı.",
+  "D": "Kitabı anlamadığı için tekrar okudu.",
+  "E": "Okula geç kaldığı için öğretmeni uyardı.",
+  "correct": "A",
+  "Açıklama": "A seçeneğinde çalışma eylemi sınavı kazanma amacına bağlıdır. Diğer cümlelerde neden-sonuç ilişkisi vardır."
     },
     {
         "id": 3,
