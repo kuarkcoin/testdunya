@@ -216,28 +216,28 @@
         "Açıklama": "Yasama yetkisi, Türkiye Büyük Millet Meclisi'ne aittir."
     },
     {
-        "id": 19,
-        "question": "GÜNCEL: 2023 yılında uzaya gönderilen ve Türkiye'nin ilk astronotu Alper Gezeravcı'nın da içinde yer aldığı görev aşağıdakilerden hangisidir?",
-        "shape": "",
-        "A": "Axiom-3",
-        "B": "Axiom-2",
-        "C": "Dragon-X1",
-        "D": "Luna-28",
-        "E": "Orion-5",
-        "correct": "B",
-        "Açıklama": "Alper Gezeravcı, Axiom-2 misyonunda Uluslararası Uzay İstasyonu'na gitmiştir."
+  "id": 19,
+  "question": "GÜNCEL: Türkiye'nin ilk astronotu Alper Gezeravcı'nın da yer aldığı ve 2024 yılında Uluslararası Uzay İstasyonu'na gerçekleştirilen uçuş görevi aşağıdakilerden hangisidir?",
+  "shape": "",
+  "A": "Axiom-1",
+  "B": "Axiom-2",
+  "C": "Axiom-3",
+  "D": "Luna-25",
+  "E": "Orion-5",
+  "correct": "C",
+  "Açıklama": "Alper Gezeravcı, 2024 yılında Axiom-3 (Ax-3) göreviyle Uluslararası Uzay İstasyonu'na gitmiştir."
     },
     {
-        "id": 20,
-        "question": "GÜNCEL: 2024 yılı Avrupa Birliği Dönem Başkanlığını aşağıdaki ülkelerden hangisi üstlenmiştir?",
-        "shape": "",
-        "A": "Macaristan",
-        "B": "Hırvatistan",
-        "C": "İspanya",
-        "D": "Belçika",
-        "E": "Polonya",
-        "correct": "D",
-        "Açıklama": "2024’te AB dönem başkanlığı Belçika tarafından yürütülmüştür."
+  "id": 20,
+  "question": "GÜNCEL: Avrupa Birliği Konseyi'nin 2024 yılının ilk yarısındaki (Ocak–Haziran 2024) dönem başkanlığını aşağıdaki ülkelerden hangisi üstlenmiştir?",
+  "shape": "",
+  "A": "Macaristan",
+  "B": "Hırvatistan",
+  "C": "İspanya",
+  "D": "Belçika",
+  "E": "Polonya",
+  "correct": "D",
+  "Açıklama": "2024 yılının Ocak–Haziran döneminde AB Konseyi dönem başkanlığı Belçika'dadır; yılın ikinci yarısında ise Macaristan'a geçmektedir."
     },
     {
         "id": 21,
@@ -348,16 +348,16 @@
         "Açıklama": "Koç Üniversitesi uluslararası sıralamalarda Türkiye’nin en üst seviyede yer alan üniversitelerinden biridir."
     },
     {
-        "id": 30,
-        "question": "GÜNCEL: 2023 yılında sinemalarda en çok izlenen yerli film aşağıdakilerden hangisidir?",
-        "shape": "",
-        "A": "Aile Arasında",
-        "B": "Geleceğe Dönüş",
-        "C": "Rafadan Tayfa: Galaktik Tayfa",
-        "D": "7. Koğuştaki Mucize",
-        "E": "Bergen",
-        "correct": "C",
-        "Açıklama": "2023 box-office verilerine göre en çok izlenen yerli yapım 'Galaktik Tayfa’ olmuştur."
+  "id": 30,
+  "question": "GÜNCEL: 2023 yılında Türkiye'de özellikle çocuk ve aile seyircisi arasında büyük ilgi görerek yılın en çok izlenen yerli animasyon filmlerinden biri hâline gelen yapım aşağıdakilerden hangisidir?",
+  "shape": "",
+  "A": "Aile Arasında",
+  "B": "Geleceğe Dönüş",
+  "C": "Rafadan Tayfa: Galaktik Tayfa",
+  "D": "7. Koğuştaki Mucize",
+  "E": "Bergen",
+  "correct": "C",
+  "Açıklama": "Rafadan Tayfa: Galaktik Tayfa 2023 yılında özellikle çocuk ve aile izleyicisi arasında en çok izlenen yerli animasyon yapımlarından biri olmuştur."
     },
     {
         "id": 31,
@@ -574,18 +574,18 @@
         "E": "Siyasi partilerin güçlenmesini sağlamak",
         "correct": "C",
         "Açıklama": "Hukukun üstünlüğü, herkesin kanunlar karşısında eşit olmasını amaçlar."
-    },
-    {
-        "id": 49,
-        "question": "GÜNCEL: 2024 yılında Türkiye'de faaliyete geçen ilk yerli elektrikli otomobil fabrikası aşağıdakilerden hangisidir?",
-        "shape": "",
-        "A": "TOGG Gemlik Fabrikası",
-        "B": "Ford Otosan Yeniköy",
-        "C": "Hyundai Assan İzmit",
-        "D": "Renault Bursa Fabrikası",
-        "E": "Oyak-Renault Elektrikli Üretim Tesisi",
-        "correct": "A",
-        "Açıklama": "TOGG’un Gemlik tesisleri Türkiye’nin ilk yerli elektrikli otomobil fabrikasıdır."
+   },
+   {
+  "id": 49,
+  "question": "GÜNCEL: Türkiye'nin yerli elektrikli otomobili TOGG'un üretim tesisleri aşağıdaki illerden hangisinde bulunmaktadır?",
+  "shape": "",
+  "A": "Ankara",
+  "B": "Bursa",
+  "C": "Kocaeli",
+  "D": "Eskişehir",
+  "E": "Konya",
+  "correct": "B",
+  "Açıklama": "TOGG'un üretimi, Gemlik/Bursa'da kurulan fabrikada yapılmaktadır."
     },
     {
         "id": 50,
@@ -696,16 +696,16 @@
         "Açıklama": "Anayasa Mahkemesi, norm denetimi yapar; kanunların anayasaya uygunluğunu denetler."
     },
     {
-        "id": 59,
-        "question": "GÜNCEL: Türkiye’de 2024 yılında açılışı yapılan ‘Yeni İstanbul Havalimanı Metrosu'nun’ Avrupa yakasında bağlandığı ilk durak aşağıdakilerden hangisidir?",
-        "shape": "",
-        "A": "Gayrettepe",
-        "B": "Taksim",
-        "C": "Levent",
+  "id": 59,
+  "question": "GÜNCEL: 2023 yılında açılan İstanbul Havalimanı metrosunun (M11) şehir içi metro ağına bağlandığı ilk aktarma istasyonu aşağıdakilerden hangisidir?",
+  "shape": "",
+  "A": "Gayrettepe",
+  "B": "Taksim",
+  "C": "Levent",
         "D": "Bakırköy",
-        "E": "Kağıthane",
-        "correct": "A",
-        "Açıklama": "Gayrettepe–İstanbul Havalimanı metrosunun ilk hattı Gayrettepe’ye bağlanmıştır."
+  "E": "Kağıthane",
+  "correct": "E",
+  "Açıklama": "M11 hattının ilk açılan bölümü Kağıthane–İstanbul Havalimanı arasında hizmete girmiş; Kağıthane istasyonu M7 hattı ile aktarma noktası olmuştur."
     },
     {
         "id": 60,
