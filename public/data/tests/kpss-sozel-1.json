@@ -41,7 +41,7 @@
     "D": "Bu olaydan hem biz hem de öğretmenler büyük bir ders çıkardı.",
     "E": "Sınava hazırlanırken planlı ve programlı çalışmalısın.",
     "correct": "D",
-    "Açıklama": "“Hem biz hem de öğretmenler büyük bir ders çıkardı.” cümlesinde 'ders çıkarmak' özneyle uyumsuzdur; 'çıkardık' denmelidir. Yüklem kişi ve sayı bakımından bozukluk vardır."
+    "Açıklama": "“Hem biz hem de öğretmenler büyük bir ders çıkardı.” cümlesinde 'ders çıkarmak' özneyle uyumsuzdur. Biz 'çıkardık', öğretmenler 'çıkardı' olmalıdır."
   },
   {
     "id": 5,
@@ -56,14 +56,14 @@
   },
   {
     "id": 6,
-    "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde kip (zaman) kayması vardır?",
+    "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde kip (zaman/anlam) kayması vardır?",
     "A": "Dün seni aradım ama ulaşamadım.",
     "B": "Yarın bu konuyu tekrar konuşacağız.",
-    "C": "Her sabah erken kalkar, yürüyüşe çıkardı.",
-    "D": "Bu sınavı kazanıyorsun, artık çok çalışıyorsun.",
+    "C": "Haftaya seninle sinemaya gidiyoruz.",
+    "D": "Olanları bana hemen anlatmalısın.",
     "E": "Ödevimi bitirdim, şimdi dinleniyorum.",
     "correct": "C",
-    "Açıklama": "“Kalkar, yürüyüşe çıkardı.” cümlesinde geniş zamanla anlatılan eylem, geçmişte kalan bir alışkanlığı ifade ediyor; bu kip kaymasıdır (anlatımda bilinçli olarak kullanılır)."
+    "Açıklama": "“Haftaya ... gidiyoruz” cümlesinde eylem gelecek zamanda gerçekleşecektir ancak şimdiki zaman kipi (-yor) kullanılmıştır. Doğrusu 'gideceğiz' olmalıydı."
   },
   {
     "id": 7,
@@ -104,10 +104,10 @@
     "A": "Bu konuyu hem öğretmenlere hem öğrencilere ayrıntılı olarak anlattı.",
     "B": "Seni defalarca aradım ama ulaşamadım.",
     "C": "Toplantıda bu sorunu tekrar gündeme getirdik ve tartıştık.",
-    "D": "Bu olayı gizledi ve kimseye söylemedi.",
+    "D": "Ona hiç darılmadım, her zaman sevdim.",
     "E": "Çantasını aldı ve okuldan çıktı.",
     "correct": "D",
-    "Açıklama": "“Bu olayı gizledi ve kimseye söylemedi.” cümlesinde 'söylemedi' fiilinin nesnesi yok. Doğrusu “Bu olayı gizledi ve kimseye ondan söz etmedi.” gibi olmalıdır."
+    "Açıklama": "“Ona hiç darılmadım, her zaman sevdim.” cümlesinde 'darılmadım' yüklemi 'ona' (dolaylı tümleç) alır, ancak 'sevdim' yüklemi nesne ister. Cümle “Ona hiç darılmadım, (onu) her zaman sevdim” şeklinde olmalıdır."
   },
   {
     "id": 11,
@@ -188,14 +188,14 @@
   },
   {
     "id": 18,
-    "question": "TARİH: Aşağıdaki savaşlardan hangisinin sonucunda Anadolu'nun kapıları Türklere kesin olarak açılmıştır?",
+    "question": "TARİH: Aşağıdaki savaşlardan hangisinin sonucunda Anadolu'nun Türk yurdu olduğu kesinleşmiş ve Bizans'ın Türkleri Anadolu'dan atma ümidi kalmamıştır?",
     "A": "Miryokefalon Savaşı",
     "B": "Sakarya Meydan Muharebesi",
     "C": "Çaldıran Savaşı",
     "D": "Ridaniye Savaşı",
     "E": "Dandanakan Savaşı",
     "correct": "A",
-    "Açıklama": "1176 Miryokefalon Savaşı ile Bizans, Anadolu’yu Türk yurdu olarak kabul etmek zorunda kalmış, Anadolu’nun Türkleşmesi kesinlik kazanmıştır."
+    "Açıklama": "1176 Miryokefalon Savaşı ile Bizans, Anadolu’yu Türk yurdu olarak kabul etmek zorunda kalmış, Anadolu’nun Türkleşmesi kesinlik kazanmıştır. (Not: Kapıların açıldığı savaş Malazgirt'tir)."
   },
   {
     "id": 19,
@@ -536,7 +536,7 @@
     "D": "Halk oylaması (referandum) ile önemli bir konuda doğrudan karar verilmesi",
     "E": "Yargı organlarının bağımsızlığının güvence altına alınması",
     "correct": "D",
-    "Açıklama": "Referandumda halk kendi görüşünü doğrudan sandığa yansıtır; bu nedenle doğrudan demokrasi örneğidir."
+    "Açıklama": "Referandumda halk kendi görüşünü doğrudan sandığa yansıtır; bu nedenle halkın yönetime doğrudan katıldığı (yarı doğrudan demokrasi) bir örnektir."
   },
   {
     "id": 50,
