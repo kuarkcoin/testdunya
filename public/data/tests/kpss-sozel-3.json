@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "question": "TÜRKÇE: Bu parçada 'düşünceyi işlemek' sözüyle anlatılmak istenen nedir?\n\nYazar, ele aldığı düşünceyi yalnızca belirtmekle kalmıyor; onu örnekler, açıklamalar ve karşılaştırmalarla derinleştiriyor.",
+        "question": "TÜRKÇE: Bu parçada 'düşünceyi işlemek' sözüyle anlatılmak istenen nedir? 'Yazar, ele aldığı düşünceyi yalnızca belirtmekle kalmıyor; onu örnekler, açıklamalar ve karşılaştırmalarla derinleştiriyor.'",
         "shape": "",
         "A": "Gereksiz ayrıntılar eklemek",
         "B": "Düşünceyi açıklayıcı yöntemlerle geliştirmek",
@@ -21,7 +21,7 @@
         "D": "Neden bu kadar yoruldum anlayamadım.",
         "E": "Bu kitabı çok beğendim.",
         "correct": "A",
-        "Açıklama": "‘Keşke’ ifadesi pişmanlık bildirir."
+        "Açıklama": "‘Keşke’ ifadesi yapılmış bir eylemden duyulan üzüntüyü (pişmanlığı) bildirir."
     },
     {
         "id": 3,
@@ -33,7 +33,7 @@
         "D": "En güzel mevsim ilkbahardır.",
         "E": "Bu roman oldukça sıkıcıdır.",
         "correct": "C",
-        "Açıklama": "Ölçülebilir gerçek bilgi nesneldir."
+        "Açıklama": "Ölçülebilir ve kanıtlanabilir gerçek bilgi nesneldir."
     },
     {
         "id": 4,
@@ -45,23 +45,23 @@
         "D": "Siz de gelmek ister misiniz?",
         "E": "Türkçenin kurallarını öğrenmeliyiz.",
         "correct": "C",
-        "Açıklama": "'Her şey' ayrı yazılır."
+        "Açıklama": "'Her şey' sözcüğü daima ayrı yazılır."
     },
     {
         "id": 5,
         "question": "TÜRKÇE: 'Yollar ona küsmüş gibiydi.' cümlesinde hangi söz sanatı vardır?",
         "shape": "",
         "A": "Abartma",
-        "B": "Kişileştirme",
+        "B": "Kişileştirme (Teşhis)",
         "C": "Karşılaştırma",
         "D": "Benzetme",
         "E": "Mecaz-ı mürsel",
         "correct": "B",
-        "Açıklama": "İnsana özgü 'küsme' özelliği yol kavramına yüklenmiştir."
+        "Açıklama": "İnsana özgü 'küsme' özelliği cansız bir varlık olan yola yüklenmiştir."
     },
     {
         "id": 6,
-        "question": "TÜRKÇE: Aşağıdakilerden hangisi kurallı cümledir?",
+        "question": "TÜRKÇE: Aşağıdakilerden hangisi kurallı (düz) cümledir?",
         "shape": "",
         "A": "Bütün gün seni bekledim ben.",
         "B": "Gidince haber verirsin bana.",
@@ -69,7 +69,7 @@
         "D": "Bugün oldukça yoruldum.",
         "E": "Bu şehri çok sevdi o.",
         "correct": "D",
-        "Açıklama": "Yüklemin sonda olduğu tek seçenek D’dir."
+        "Açıklama": "Yüklemin (yoruldum) sonda olduğu tek seçenek D’dir. Diğerleri devriktir."
     },
     {
         "id": 7,
@@ -81,7 +81,7 @@
         "D": "Sabırsızlanmak",
         "E": "Kararsız kalmak",
         "correct": "B",
-        "Açıklama": "Aşırı heyecan ve sevinç hâli anlatılır."
+        "Açıklama": "Çok sevinmek, heyecanlanmak ve yerinde duramamak anlamındadır."
     },
     {
         "id": 8,
@@ -93,19 +93,19 @@
         "D": "Okula erken gitti.",
         "E": "Arabasını satmak istiyor.",
         "correct": "B",
-        "Açıklama": "Gerçekleşmiş neden–sonuç ilişkisi kuran tek seçenek budur."
+        "Açıklama": "Pikniğin iptal edilmesinin sebebi yağmurun yağmasıdır (gerçekleşmiş neden)."
     },
     {
         "id": 9,
         "question": "TÜRKÇE: 'Zaman, sessiz bir nehir gibi akıp gidiyordu.' cümlesinde ağır basan özellik nedir?",
         "shape": "",
         "A": "Abartma",
-        "B": "Mecazlı anlatım",
+        "B": "Benzetme (Teşbih)",
         "C": "Somutlama",
         "D": "Karşılaştırma",
         "E": "Açıklama",
         "correct": "B",
-        "Açıklama": "Zamanın nehre benzetilmesi mecazlı anlatımdır."
+        "Açıklama": "Zaman (benzeyen), akıp gitmesi yönünden nehre (benzetilen) benzetilmiştir."
     },
     {
         "id": 10,
@@ -117,11 +117,11 @@
         "D": "Dün seni aradım.",
         "E": "Hava biraz serinledi.",
         "correct": "A",
-        "Açıklama": "Gerçekte mümkün olmayan durum abartıdır."
+        "Açıklama": "İnsanın gücünü aşan 'bütün dağları tek başına aşmak' ifadesi abartıdır."
     },
     {
         "id": 11,
-        "question": "TARİH: Osmanlı’da Yeniçeri Ocağı hangi padişah döneminde kurulmuştur?",
+        "question": "TARİH: Osmanlı’da 'Yeniçeri Ocağı' hangi padişah döneminde kurulmuştur?",
         "shape": "",
         "A": "I. Murat",
         "B": "Orhan Bey",
@@ -129,11 +129,11 @@
         "D": "II. Murat",
         "E": "Yıldırım Bayezid",
         "correct": "A",
-        "Açıklama": "I. Murat döneminde Yeniçeri Ocağı kurulmuştur."
+        "Açıklama": "Kapıkulu sisteminin temeli olan Yeniçeri Ocağı I. Murat döneminde kurulmuştur."
     },
     {
         "id": 12,
-        "question": "TARİH: TBMM'nin açılmasıyla ortaya çıkan temel ilke aşağıdakilerden hangisidir?",
+        "question": "TARİH: TBMM'nin açılmasıyla devlet yönetiminde hakim olan temel ilke aşağıdakilerden hangisidir?",
         "shape": "",
         "A": "Laiklik",
         "B": "Devletçilik",
@@ -141,7 +141,7 @@
         "D": "İnkılapçılık",
         "E": "Milliyetçilik",
         "correct": "C",
-        "Açıklama": "'Egemenlik kayıtsız şartsız milletindir' anlayışı resmileşmiştir."
+        "Açıklama": "'Egemenlik kayıtsız şartsız milletindir' anlayışı ile ulusal egemenlik ilkesi hayata geçmiştir."
     },
     {
         "id": 13,
@@ -151,57 +151,57 @@
         "B": "Batı Cephesi",
         "C": "Güney Cephesi",
         "D": "Kuzey Cephesi",
-        "E": "İç isyanlar",
+        "E": "İç isyanlar bölgesi",
         "correct": "D",
-        "Açıklama": "Kuzey Cephesi yoktur."
+        "Açıklama": "Kurtuluş Savaşı'nda Kuzey Cephesi (Karadeniz) diye ayrı bir cephe yoktur, yerel direnişler vardır."
     },
     {
-    "id": 14,
-    "question": "TARİH: Aşağıdaki kurumlardan hangisi Cumhuriyet’in ilanından ÖNCE kaldırılmıştır?",
-    "shape": "",
-    "A": "Saltanat",
-    "B": "Halifelik",
-    "C": "Ayan Meclisi",
-    "D": "Şeriye ve Evkaf Vekaleti",
-    "E": "Nazırlıklar",
-    "correct": "A",
-    "Açıklama": "Saltanat 1922’de kaldırılmış, Cumhuriyet 1923’te ilan edilmiştir. Halifelik ise 1924’te kaldırılmıştır; bu yüzden Cumhuriyet’ten önce kaldırılan kurum saltanattır."
+        "id": 14,
+        "question": "TARİH: Aşağıdaki kurumlardan hangisi Cumhuriyet’in ilanından (29 Ekim 1923) ÖNCE kaldırılmıştır?",
+        "shape": "",
+        "A": "Saltanat",
+        "B": "Halifelik",
+        "C": "Ayan Meclisi",
+        "D": "Şeriye ve Evkaf Vekaleti",
+        "E": "Erkan-ı Harbiye",
+        "correct": "A",
+        "Açıklama": "Saltanat 1 Kasım 1922’de kaldırılmıştır. Cumhuriyet ise 1923'te ilan edilmiştir."
     },
     {
         "id": 15,
         "question": "TARİH: Aşağıdakilerden hangisi Atatürk'ün dış politika ilkelerindendir?",
         "shape": "",
-        "A": "Misakı İktisadi",
+        "A": "Yayılmacılık",
         "B": "Militarizm",
         "C": "Saldırganlık",
         "D": "Yurtta sulh, cihanda sulh",
-        "E": "Ekspansiyonizm",
+        "E": "Sömürgecilik",
         "correct": "D",
-        "Açıklama": "Barışçıl dış politika temel ilkedir."
+        "Açıklama": "Barışçıl dış politika ve ulusal bağımsızlık temel ilkedir."
     },
     {
         "id": 16,
-        "question": "COĞRAFYA: Türkiye’de en fazla yağış alan bölgemiz hangisidir?",
+        "question": "COĞRAFYA: Türkiye’de eğim ve yağışın fazla olması nedeniyle 'heyelan' olaylarının en sık görüldüğü bölge hangisidir?",
         "shape": "",
         "A": "Ege",
-        "B": "Akdeniz",
+        "B": "İç Anadolu",
         "C": "Karadeniz",
-        "D": "Marmara",
-        "E": "Doğu Anadolu",
+        "D": "Güneydoğu Anadolu",
+        "E": "Marmara",
         "correct": "C",
-        "Açıklama": "Karadeniz kıyıları yıl boyu yağış alır."
+        "Açıklama": "Killi toprak yapısı ve bol yağış nedeniyle heyelan en çok Karadeniz'de görülür."
     },
     {
         "id": 17,
-        "question": "COĞRAFYA: Türkiye’de yaz kuraklığının en belirgin olduğu iklim hangisidir?",
+        "question": "COĞRAFYA: Türkiye’de yaz kuraklığının en belirgin olduğu ve kışların ılık geçtiği iklim tipi hangisidir?",
         "shape": "",
         "A": "Karasal iklim",
         "B": "Akdeniz iklimi",
         "C": "Karadeniz iklimi",
-        "D": "Tropikal iklim",
-        "E": "Tundra iklimi",
+        "D": "Sert Karasal iklim",
+        "E": "Okyanusal iklim",
         "correct": "B",
-        "Açıklama": "Akdeniz ikliminin temel özelliği yazların kurak olmasıdır."
+        "Açıklama": "Akdeniz ikliminin temel özelliği yazların sıcak ve kurak, kışların ılık ve yağışlı olmasıdır."
     },
     {
         "id": 18,
@@ -213,31 +213,31 @@
         "D": "Doğu Anadolu",
         "E": "Akdeniz",
         "correct": "D",
-        "Açıklama": "Zorlu iklim ve yükselti nedeniyle nüfus seyrektir."
+        "Açıklama": "Zorlu iklim şartları, engebeli arazi ve yükselti nedeniyle nüfus yoğunluğu en az Doğu Anadolu'dadır."
     },
     {
         "id": 19,
-        "question": "VATANDAŞLIK: Yargı yetkisi aşağıdakilerden hangisine aittir?",
+        "question": "VATANDAŞLIK: 1982 Anayasası'na göre Anayasa Mahkemesi kaç üyeden oluşur?",
         "shape": "",
-        "A": "TBMM",
-        "B": "Cumhurbaşkanı",
-        "C": "Bağımsız mahkemeler",
-        "D": "Bakanlar",
-        "E": "Danıştay",
+        "A": "11",
+        "B": "13",
+        "C": "15",
+        "D": "17",
+        "E": "20",
         "correct": "C",
-        "Açıklama": "Anayasa gereği yargı bağımsızdır."
+        "Açıklama": "2017 değişikliği ile Anayasa Mahkemesi üye sayısı 15 olarak belirlenmiştir."
     },
     {
         "id": 20,
-        "question": "VATANDAŞLIK: Temel hak ve özgürlükler hangi durumlarda durdurulabilir?",
+        "question": "VATANDAŞLIK: Temel hak ve özgürlükler hangi durumlarda kısmen veya tamamen durdurulabilir?",
         "shape": "",
         "A": "Ekonomik kriz",
-        "B": "Olağanüstü hâl, savaş ve seferberlik",
+        "B": "Savaş, seferberlik veya olağanüstü hâl",
         "C": "Meclis tatili",
         "D": "Seçim dönemi",
         "E": "Eğitim reformları",
         "correct": "B",
-        "Açıklama": "Anayasa olağanüstü durumlarda geçici durdurmaya izin verir."
+        "Açıklama": "Anayasa'nın 15. maddesine göre savaş, seferberlik ve OHAL durumlarında haklar durdurulabilir."
     },
     {
         "id": 21,
@@ -249,23 +249,23 @@
         "D": "Hava bugün oldukça güzel.",
         "E": "Bu kitabı iki günde bitirdim.",
         "correct": "A",
-        "Açıklama": "Bir eylemin gerçekleşmesi diğerine bağlıdır."
+        "Açıklama": "Dinç olmanın şartı (koşulu) erken yatmaya bağlanmıştır (-sa/-se eki)."
     },
     {
         "id": 22,
         "question": "TÜRKÇE: 'Göz ucuyla bakmak' deyimi aşağıdakilerden hangisini ifade eder?",
         "shape": "",
         "A": "Dikkatlice incelemek",
-        "B": "Kısa ve çekingen bir bakış atmak",
+        "B": "Belli etmemeye çalışarak kaçamak bakmak",
         "C": "Birine öfkeyle bakmak",
         "D": "Gizlice takip etmek",
         "E": "Derin bir düşünceye dalmak",
         "correct": "B",
-        "Açıklama": "Deyim, kenardan ve kısa süreli bakma anlamı taşır."
+        "Açıklama": "Deyim, başını çevirmeden, kenardan ve kısa süreli bakma anlamı taşır."
     },
     {
         "id": 23,
-        "question": "TÜRKÇE: Aşağıdakilerin hangisinde 'neden-sonuç' ilgisi yoktur?",
+        "question": "TÜRKÇE: Aşağıdakilerin hangisinde 'neden-sonuç' ilgisi yoktur (Amaç-sonuç vardır)?",
         "shape": "",
         "A": "Yorgun olduğu için erken uyudu.",
         "B": "Yağmur yağdığından yollar kapandı.",
@@ -273,7 +273,7 @@
         "D": "Düşünmeden söylediği sözler onu zor durumda bıraktı.",
         "E": "Hasta olduğu için okula gidemedi.",
         "correct": "C",
-        "Açıklama": "C seçeneğinde amaç-sonuç ilişkisi vardır, neden-sonuç değil."
+        "Açıklama": "C seçeneğinde eylem bir amaca (kazanmak) yöneliktir; henüz gerçekleşmemiştir. Diğerlerinde neden gerçekleşmiştir."
     },
     {
         "id": 24,
@@ -285,19 +285,19 @@
         "D": "Hüzün kaldırımlara çökmüştü.",
         "E": "Hayat, bitmeyen bir koşu gibidir.",
         "correct": "A",
-        "Açıklama": "Soyut bir kavram olan mutluluk, somut bir varlığa benzetilmiştir."
+        "Açıklama": "Soyut bir kavram olan 'mutluluk', somut bir varlık olan 'misafir' ile anlatılarak somutlanmıştır."
     },
     {
         "id": 25,
         "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde amaç-sonuç ilişkisi vardır?",
         "shape": "",
-        "A": "Daha iyi bir hayat için çalışıyor.",
-        "B": "Sınavdan düşük aldığı için moral bozdu.",
+        "A": "Daha iyi bir hayat yaşamak için şehre taşındı.",
+        "B": "Sınavdan düşük aldığı için morali bozuldu.",
         "C": "Yağmur kesildiği için dışarı çıktık.",
         "D": "Çantasını alıp aceleyle uzaklaştı.",
         "E": "Bu konuda seninle aynı fikirdeyim.",
         "correct": "A",
-        "Açıklama": "Çalışma eyleminin amacı 'daha iyi bir hayat'tır."
+        "Açıklama": "Taşınma eylemi, 'daha iyi yaşama' amacına yöneliktir."
     },
     {
         "id": 26,
@@ -309,23 +309,23 @@
         "D": "Güneş yüzünü göstermedi bugün.",
         "E": "Çiçekler ona gülümsedi.",
         "correct": "C",
-        "Açıklama": "Gerçek anlamda kullanılmıştır."
+        "Açıklama": "C seçeneği tamamen gerçek anlamlıdır. Diğerlerinde kişileştirme veya mecaz vardır."
     },
     {
-    "id": 27,
-    "question": "TÜRKÇE: Aşağıdakilerin hangisinde 'karşıtlık' vardır?",
-    "shape": "",
-    "A": "Hem çalışıyor hem de geziyor.",
-    "B": "Güler yüzlü ama içine kapanık biriydi.",
-    "C": "Okula gidip ödevini yaptı.",
-    "D": "Onu aradım ve sonunda konuştuk.",
-    "E": "Bu iş düşündüğümden kolaymış.",
-    "correct": "B",
-    "Açıklama": "‘Güler yüzlü’ ve ‘içine kapanık’ birbirine zıt iki özelliktir; bu nedenle B seçeneğinde karşıtlık anlamı vardır."
+        "id": 27,
+        "question": "TÜRKÇE: Aşağıdakilerin hangisinde 'karşıtlık' (zıtlık) vardır?",
+        "shape": "",
+        "A": "Hem çalışıyor hem de geziyor.",
+        "B": "Güler yüzlü ama içine kapanık biriydi.",
+        "C": "Okula gidip ödevini yaptı.",
+        "D": "Onu aradım ve sonunda konuştuk.",
+        "E": "Bu iş düşündüğümden kolaymış.",
+        "correct": "B",
+        "Açıklama": "‘Güler yüzlü’ (dışa dönük) ve ‘içine kapanık’ birbirine zıt durumlardır."
     },
     {
         "id": 28,
-        "question": "TARİH: Osmanlı Devleti’nde 'Divan-ı Hümayun'un başkanı kimdir?",
+        "question": "TARİH: Osmanlı Devleti’nde 'Divan-ı Hümayun'un başkanı normal şartlarda kimdir?",
         "shape": "",
         "A": "Padişah",
         "B": "Sadrazam",
@@ -333,47 +333,47 @@
         "D": "Kaptan-ı Derya",
         "E": "Nişancı",
         "correct": "A",
-        "Açıklama": "Divan’a padişah başkanlık ederdi; sadrazam onun yerine toplantıya katılabilirdi."
+        "Açıklama": "Fatih Sultan Mehmet'e kadar Divan'a Padişah, ondan sonra Sadrazam başkanlık etse de asli başkan Padişah'tır."
     },
     {
         "id": 29,
-        "question": "TARİH: Lale Devri'nin en belirgin özelliği aşağıdakilerden hangisidir?",
+        "question": "TARİH: Lale Devri'nin (1718-1730) en belirgin özelliği aşağıdakilerden hangisidir?",
         "shape": "",
         "A": "Savaşların yoğunlaşması",
-        "B": "Batı’ya yönelik kültürel etkilenme",
+        "B": "Avrupa'nın üstünlüğünün kabul edilip Batı tarzı yeniliklerin yapılması",
         "C": "Toprak kayıplarının artması",
-        "D": "Askeri teşkilatın kaldırılması",
+        "D": "Yeniçeri Ocağı'nın kaldırılması",
         "E": "II. Meşrutiyet’in ilanı",
         "correct": "B",
-        "Açıklama": "Dönem, Batı tarzı yeniliklerle bilinir."
+        "Açıklama": "Lale Devri, Osmanlı'nın Batı'yı örnek almaya başladığı ilk dönemdir."
     },
     {
         "id": 30,
-        "question": "TARİH: Cumhuriyet döneminde çıkarılan aşağıdaki yasalardan hangisi laiklik ilkesinin uygulanmasında en etkililerdendir?",
+        "question": "TARİH: Cumhuriyet döneminde çıkarılan aşağıdaki yasalardan hangisi laiklik ilkesinin en önemli aşaması kabul edilir?",
         "shape": "",
         "A": "Halifeliğin kaldırılması",
         "B": "Medeni Kanun’un kabulü",
-        "C": "Tevhid-i Tedrisat Kanunu",
+        "C": "Kabotaj Kanunu",
         "D": "Soyadı Kanunu",
         "E": "Kabine sisteminin düzenlenmesi",
         "correct": "A",
-        "Açıklama": "Halifeliğin kaldırılması laikleşme sürecinin kilit adımlarındandır."
+        "Açıklama": "Halifeliğin kaldırılması (3 Mart 1924), laik devlet düzenine geçişin en kritik adımıdır."
     },
     {
         "id": 31,
-        "question": "TARİH: I. Balkan Savaşı sonunda imzalanan antlaşma aşağıdakilerden hangisidir?",
+        "question": "TARİH: I. Balkan Savaşı sonunda Osmanlı Devleti'nin imzaladığı ve büyük toprak kaybettiği antlaşma hangisidir?",
         "shape": "",
         "A": "Londra Antlaşması",
         "B": "Edirne Antlaşması",
         "C": "Paris Antlaşması",
         "D": "Berlin Antlaşması",
-        "E": "Mudanya Ateşkesi",
+        "E": "Uşi Antlaşması",
         "correct": "A",
-        "Açıklama": "Savaşın genel barış metni Londra Antlaşması’dır."
+        "Açıklama": "1913 Londra Antlaşması ile Midye-Enez hattının batısındaki topraklar kaybedilmiştir."
     },
     {
         "id": 32,
-        "question": "COĞRAFYA: Türkiye'de yıllık sıcaklık farkının en fazla olduğu bölge hangisidir?",
+        "question": "COĞRAFYA: Türkiye'de karasallığın şiddetli olması nedeniyle yıllık sıcaklık farkının en fazla olduğu bölge hangisidir?",
         "shape": "",
         "A": "Ege",
         "B": "Doğu Anadolu",
@@ -381,11 +381,11 @@
         "D": "Karadeniz",
         "E": "Akdeniz",
         "correct": "B",
-        "Açıklama": "Karasal iklim nedeniyle farklar büyüktür."
+        "Açıklama": "Deniz etkisine kapalılık ve yüksek rakım nedeniyle Doğu Anadolu'da sıcaklık farkı en yüksektir."
     },
     {
         "id": 33,
-        "question": "COĞRAFYA: Türkiye'de en fazla göç alan bölge aşağıdakilerden hangisidir?",
+        "question": "COĞRAFYA: Türkiye'de sanayi ve iş imkanları nedeniyle en fazla göç alan bölge aşağıdakilerden hangisidir?",
         "shape": "",
         "A": "İç Anadolu",
         "B": "Doğu Anadolu",
@@ -393,91 +393,91 @@
         "D": "Akdeniz",
         "E": "Karadeniz",
         "correct": "C",
-        "Açıklama": "Marmara sanayi ve hizmet sektörü nedeniyle en çok göç alan bölgedir."
+        "Açıklama": "İstanbul, Kocaeli, Bursa gibi illeri barındıran Marmara Bölgesi en çok göç alan yerdir."
     },
     {
         "id": 34,
-        "question": "COĞRAFYA: Aşağıdakilerden hangisi Türkiye’de nüfusun dağılışını etkileyen bir doğal faktördür?",
+        "question": "COĞRAFYA: Aşağıdakilerden hangisi Türkiye’de nüfusun dağılışını etkileyen 'doğal' faktörlerden biridir?",
         "shape": "",
-        "A": "Ulaşım projeleri",
-        "B": "Sanayi faaliyetleri",
-        "C": "Yükselti",
-        "D": "Ticaret",
-        "E": "Turizm",
+        "A": "Ulaşım imkanları",
+        "B": "Sanayi kuruluşları",
+        "C": "Yer şekilleri ve yükselti",
+        "D": "Ticaret hacmi",
+        "E": "Madencilik",
         "correct": "C",
-        "Açıklama": "Yükselti doğal bir etkendir."
+        "Açıklama": "Yer şekilleri insan eliyle oluşmayan doğal bir faktördür; diğerleri beşerî faktördür."
     },
     {
         "id": 35,
-        "question": "VATANDAŞLIK: Anayasa’ya göre yürütme yetkisi aşağıdakilerden hangisine aittir?",
+        "question": "VATANDAŞLIK: Cumhurbaşkanlığına bağlı olan 'Devlet Denetleme Kurulu'nun (DDK) üyelerini kim atar?",
         "shape": "",
-        "A": "TBMM ve Cumhurbaşkanı",
+        "A": "TBMM Başkanı",
         "B": "Cumhurbaşkanı",
-        "C": "Bakanlar Kurulu",
+        "C": "Adalet Bakanı",
         "D": "HSK",
         "E": "Danıştay",
         "correct": "B",
-        "Açıklama": "2017 sonrası yürütme yetkisi yalnızca Cumhurbaşkanı’na verilmiştir."
+        "Açıklama": "DDK doğrudan Cumhurbaşkanlığına bağlıdır, başkan ve üyelerini Cumhurbaşkanı atar."
     },
     {
         "id": 36,
-        "question": "VATANDAŞLIK: Temel hak ve özgürlüklerin sınırlandırılmasının şartı aşağıdakilerden hangisidir?",
+        "question": "VATANDAŞLIK: 1982 Anayasası'na göre temel hak ve özgürlükler ancak ne ile sınırlandırılabilir?",
         "shape": "",
-        "A": "Kanunla yapılması",
-        "B": "Cumhurbaşkanı kararı",
-        "C": "Bakanlık onayı",
-        "D": "Mahkeme kararı",
-        "E": "Valilik talebi",
+        "A": "Kanunla",
+        "B": "Yönetmelikle",
+        "C": "Genelgeyle",
+        "D": "Mahkeme kararıyla",
+        "E": "Valilik emriyle",
         "correct": "A",
-        "Açıklama": "Anayasa: 'Temel haklar ancak kanunla sınırlanabilir.'"
+        "Açıklama": "Anayasa Madde 13: 'Temel hak ve hürriyetler... ancak kanunla sınırlanabilir.'"
     },
     {
         "id": 37,
-        "question": "VATANDAŞLIK: Aşağıdakilerden hangisi sosyal devlet ilkesinin gereğidir?",
+        "question": "VATANDAŞLIK: Aşağıdakilerden hangisi 'sosyal devlet' ilkesinin bir gereğidir?",
         "shape": "",
-        "A": "Ücretsiz eğitim olanakları sunmak",
+        "A": "Devletin vatandaşına ücretsiz sağlık ve eğitim hizmeti sunması",
         "B": "Uluslararası antlaşmalar yapmak",
         "C": "Ülke sınırlarını korumak",
         "D": "Yargı bağımsızlığını sağlamak",
-        "E": "Vergi oranlarını artırmak",
+        "E": "Seçimleri düzenlemek",
         "correct": "A",
-        "Açıklama": "Sosyal devlet vatandaşın sosyal haklarını güvence altına alır."
+        "Açıklama": "Sosyal devlet, vatandaşının refahını ve sosyal güvenliğini (sağlık, eğitim vb.) düşünen devlettir."
     },
     {
         "id": 38,
-        "question": "GÜNCEL: Türkiye, aşağıdaki örgütlerden hangisinin kurucu üyesidir?",
+        "question": "GÜNCEL: Türkiye, aşağıdaki uluslararası örgütlerden hangisinin 'kurucu' üyelerinden biridir?",
         "shape": "",
-        "A": "Birleşmiş Milletler",
-        "B": "NATO",
-        "C": "OECD",
-        "D": "Avrupa Birliği",
-        "E": "Türk Devletleri Teşkilatı",
+        "A": "Birleşmiş Milletler (BM)",
+        "B": "Avrupa Birliği (AB)",
+        "C": "Şanghay İşbirliği Örgütü",
+        "D": "Varşova Paktı",
+        "E": "NAFTA",
         "correct": "A",
-        "Açıklama": "Türkiye, BM’nin kurucu üyelerindendir."
+        "Açıklama": "Türkiye, 1945 yılında kurulan BM'nin kurucu üyeleri arasındadır."
     },
     {
         "id": 39,
-        "question": "GÜNCEL: Aşağıdaki illerden hangisi UNESCO Dünya Mirası Listesi'nde yer alan bir yapıya sahiptir?",
+        "question": "GÜNCEL: Mimar Sinan'ın 'Ustalık Eserim' dediği ve UNESCO Dünya Mirası Listesi'nde yer alan Selimiye Camii hangi ilimizdedir?",
         "shape": "",
         "A": "Edirne",
-        "B": "Iğdır",
-        "C": "Kırıkkale",
-        "D": "Uşak",
-        "E": "Bolu",
+        "B": "İstanbul",
+        "C": "Bursa",
+        "D": "Konya",
+        "E": "Kayseri",
         "correct": "A",
-        "Açıklama": "Edirne Selimiye Camii UNESCO listesindedir."
+        "Açıklama": "Selimiye Camii Edirne'dedir."
     },
     {
         "id": 40,
-        "question": "GÜNCEL: Türkiye'de 'Yeşil Mutabakat' çalışmaları hangi alanla en çok ilişkilidir?",
+        "question": "GÜNCEL: Avrupa Birliği ile uyum çerçevesinde yürütülen 'Yeşil Mutabakat' çalışmaları temel olarak neyi hedefler?",
         "shape": "",
-        "A": "Tarım reformu",
-        "B": "Çevre ve sürdürülebilirlik",
-        "C": "Eğitim modernizasyonu",
-        "D": "Sağlık hizmetleri",
-        "E": "Dış ticaret düzenlemeleri",
+        "A": "Askeri iş birliğini",
+        "B": "İklim değişikliği ile mücadele ve sürdürülebilir çevreyi",
+        "C": "Ortak para birimine geçişi",
+        "D": "Sınır güvenliğini",
+        "E": "Eğitim müfredatını birleştirmeyi",
         "correct": "B",
-        "Açıklama": "Yeşil Mutabakat iklim hedefleri ve sürdürülebilir çevre politikalarını içerir."
+        "Açıklama": "Yeşil Mutabakat, karbon emisyonlarını azaltmayı ve çevre dostu üretimi hedefler."
     },
     {
         "id": 41,
@@ -485,11 +485,11 @@
         "shape": "",
         "A": "Seni bütün gün bekledim.",
         "B": "Bu iş sandığımdan zor çıktı.",
-        "C": "Yorgunluktan adım atacak hâlim kalmadı.",
+        "C": "Yorgunluktan öldüm, bittim.",
         "D": "Dünkü toplantı oldukça uzundu.",
         "E": "Sabah erkenden yola çıktık.",
         "correct": "C",
-        "Açıklama": "Yorgunluğun derecesi abartılarak ifade edilmiştir."
+        "Açıklama": "Gerçekte ölmediği halde çok yorulduğunu anlatmak için 'öldüm' demek abartmadır."
     },
     {
         "id": 42,
@@ -498,22 +498,22 @@
         "A": "Herkes bugün erkenden geldi.",
         "B": "Seni uzun zamandır bekliyorum.",
         "C": "Çocuklar bahçede oynuyor.",
-        "D": "Arabayı dün aldılar.",
-        "E": "Anneme bir mektup yazdım.",
+        "D": "Arabayı dün babam aldı.",
+        "E": "Yağmur aniden bastırdı.",
         "correct": "B",
-        "Açıklama": "Cümlede 'ben' gizli öznedir."
+        "Açıklama": "'Bekliyorum' yükleminin öznesi cümlede yazmıyor, kişi ekinden 'Ben' olduğu anlaşılıyor."
     },
     {
         "id": 43,
-        "question": "TÜRKÇE: 'Bu konuda kimseye danışmadan karar verdi.' cümlesinde hangi anlam ilişkisi ağır basmaktadır?",
+        "question": "TÜRKÇE: 'Bu konuda kimseye danışmadan, kendi başına karar verdi.' cümlesinde hangi anlam ilişkisi çıkarılabilir?",
         "shape": "",
         "A": "Amaç",
         "B": "Neden",
-        "C": "Kararlılık",
+        "C": "Bağımsız hareket etme / Kararlılık",
         "D": "Karşılaştırma",
         "E": "Varsayım",
         "correct": "C",
-        "Açıklama": "Kişinin tek başına ve kesin bir iradeyle karar vermesi anlatılır."
+        "Açıklama": "Kişinin başkasının etkisinde kalmadan irade göstermesi vurgulanmıştır."
     },
     {
         "id": 44,
@@ -525,59 +525,59 @@
         "D": "Rüzgâr pencereleri sallıyordu.",
         "E": "Sokak lambaları yanmaya başladı.",
         "correct": "C",
-        "Açıklama": "Oda, benzetme yoluyla 'buzhaneye' benzetilmiştir."
+        "Açıklama": "Oda, soğukluk yönünden 'buzhaneye' benzetilmiştir."
     },
     {
         "id": 45,
         "question": "TÜRKÇE: Aşağıdaki cümlelerden hangisinde 'belirtisiz nesne' vardır?",
         "shape": "",
         "A": "Bu konuyu kimseye anlatmadım.",
-        "B": "Her sabah gazete okur.",
-        "C": "Yeni bir telefon aldım.",
+        "B": "Babam her sabah gazete okur.",
+        "C": "Yeni telefonu hemen bozuldu.",
         "D": "Bu evi bir haftadır temizliyorum.",
         "E": "Seni yarın arayacağım.",
         "correct": "B",
-        "Açıklama": "Gazete → belirtisiz nesnedir (belirtme eki almamış)."
+        "Açıklama": "Yükleme sorulan 'Ne?' sorusuna cevap veren ve ek almayan sözcük (Gazete) belirtisiz nesnedir."
     },
     {
         "id": 46,
-        "question": "TARİH: Osmanlı Devleti’nde tımar sisteminin temel amacı aşağıdakilerden hangisidir?",
+        "question": "TARİH: Osmanlı Devleti’nde uygulanan 'Tımar Sistemi'nin askeri amacı nedir?",
         "shape": "",
-        "A": "Vergi oranlarını düşürmek",
-        "B": "Askeri güç oluşturmak",
-        "C": "İpek ve Baharat yollarını denetlemek",
-        "D": "Saray giderlerini azaltmak",
-        "E": "Toprakları köylüye devretmek",
+        "A": "Donanmayı güçlendirmek",
+        "B": "Hazineye yük olmadan Cebelü (atlı asker) yetiştirmek",
+        "C": "Yeniçeri maaşlarını ödemek",
+        "D": "Saray muhafızlarını seçmek",
+        "E": "Topçu sınıfını eğitmek",
         "correct": "B",
-        "Açıklama": "Tımar sistemi, atlı asker yetiştirilmesini sağlayan bir yapıdır."
+        "Açıklama": "Tımar sahipleri, gelirlerine karşılık devlete 'Cebelü' denilen atlı asker beslemek zorundaydı."
     },
     {
         "id": 47,
-        "question": "TARİH: Kurtuluş Savaşı'nda Batı Cephesi'nin ilk düzenli ordu zaferi aşağıdakilerden hangisidir?",
+        "question": "TARİH: Kurtuluş Savaşı'nda Düzenli Ordu'nun Batı Cephesi'nde kazandığı İLK zafer hangisidir?",
         "shape": "",
         "A": "Büyük Taarruz",
-        "B": "I. İnönü",
-        "C": "II. İnönü",
+        "B": "I. İnönü Muharebesi",
+        "C": "II. İnönü Muharebesi",
         "D": "Sakarya Meydan Muharebesi",
-        "E": "Dumlupınar",
+        "E": "Eskişehir-Kütahya Savaşları",
         "correct": "B",
-        "Açıklama": "I. İnönü Zaferi düzenli ordunun ilk başarısıdır."
+        "Açıklama": "TBMM'nin kurduğu düzenli ordunun ilk askeri başarısı I. İnönü Savaşı'dır."
     },
     {
         "id": 48,
-        "question": "TARİH: Aşağıdakilerden hangisi 1923–1938 yılları arasında yapılan inkılapların ortak özelliğidir?",
+        "question": "TARİH: Aşağıdakilerden hangisi 1923–1938 yılları arasında yapılan Atatürk İnkılaplarının ortak amacıdır?",
         "shape": "",
         "A": "Ekonomiyi tamamen devlet kontrolüne almak",
-        "B": "Toplumu çağdaşlaştırmayı hedeflemek",
-        "C": "Sadece eğitim alanında yapılmış olması",
-        "D": "Saltanat sistemini güçlendirmek",
-        "E": "Savaş hazırlıklarına yönelik olması",
+        "B": "Türkiye'yi çağdaş uygarlıklar seviyesine çıkarmak",
+        "C": "Sadece askeri alanda güçlenmek",
+        "D": "Osmanlı kurumlarını olduğu gibi korumak",
+        "E": "Sınırları genişletmek",
         "correct": "B",
-        "Açıklama": "Tüm inkılapların amacı Türkiye’yi çağdaş bir yapıya kavuşturmaktır."
+        "Açıklama": "Tüm inkılapların nihai hedefi modern, çağdaş bir toplum ve devlet yapısı oluşturmaktır."
     },
     {
         "id": 49,
-        "question": "COĞRAFYA: Türkiye’de sanayinin en yoğun olduğu bölge hangisidir?",
+        "question": "COĞRAFYA: Türkiye’de sanayi tesislerinin en yoğun olduğu ve enerji tüketiminin en fazla olduğu bölge hangisidir?",
         "shape": "",
         "A": "Akdeniz",
         "B": "Karadeniz",
@@ -585,138 +585,138 @@
         "D": "Ege",
         "E": "İç Anadolu",
         "correct": "C",
-        "Açıklama": "Marmara Bölgesi, sanayi faaliyetlerinin merkezidir."
+        "Açıklama": "İstanbul-Kocaeli-Bursa hattı nedeniyle Marmara sanayinin kalbidir."
     },
     {
         "id": 50,
-        "question": "COĞRAFYA: Türkiye’de iç göçün en önemli nedenlerinden biri aşağıdakilerden hangisidir?",
+        "question": "COĞRAFYA: Kırsal kesimden kentlere yapılan iç göçün en önemli 'ekonomik' nedeni aşağıdakilerden hangisidir?",
         "shape": "",
-        "A": "Eğitim düzeyinin düşük olması",
-        "B": "Tarımda makineleşme",
-        "C": "Depremler",
-        "D": "Nüfusun yaşlanması",
-        "E": "Sulama projelerinin yaygınlaşması",
+        "A": "Kan davaları",
+        "B": "Tarımda makineleşme ve işsizlik",
+        "C": "Deprem riski",
+        "D": "İklim şartları",
+        "E": "Sağlık hizmetlerinin yetersizliği",
         "correct": "B",
-        "Açıklama": "Makineleşme tarımdaki iş gücü ihtiyacını azaltır ve göçü artırır."
+        "Açıklama": "Makineleşme ile köylerde insan gücüne ihtiyaç azalmış, işsiz kalanlar şehre göç etmiştir."
     },
     {
         "id": 51,
-        "question": "COĞRAFYA: Aşağıdakilerden hangisi Türkiye’nin yükselti ortalamasını arttıran bir etkendir?",
+        "question": "COĞRAFYA: Türkiye’nin ortalama yükseltisinin fazla olmasının (1132 m) temel jeolojik nedeni nedir?",
         "shape": "",
         "A": "Dağların kıyıya paralel uzanması",
-        "B": "Genç oluşumlu araziler",
-        "C": "Kıyıların girintili çıkıntılı olması",
-        "D": "Nüfusun bölgelere dengesiz yayılması",
-        "E": "Ormanların geniş yer kaplaması",
+        "B": "Yakın jeolojik zamanda (Genç oluşumlu) toptan yükselmesi",
+        "C": "Üç tarafının denizlerle çevrili olması",
+        "D": "Volkanik dağların varlığı",
+        "E": "Ormanların tahrip edilmesi",
         "correct": "B",
-        "Açıklama": "Türkiye genç oluşumlu olduğu için yükseltisi fazladır."
+        "Açıklama": "Türkiye 3. ve 4. jeolojik zamanda toptan yükseldiği için yüksek bir ülkedir."
     },
     {
         "id": 52,
-        "question": "VATANDAŞLIK: 'Egemenlik kayıtsız şartsız milletindir.' ilkesi ilk kez hangi metinde yer almıştır?",
+        "question": "VATANDAŞLIK: 'Egemenlik kayıtsız şartsız milletindir.' ilkesi anayasal olarak ilk kez hangi belgede yer almıştır?",
         "shape": "",
-        "A": "Amasya Genelgesi",
-        "B": "Erzurum Kongresi",
-        "C": "Sivas Kongresi",
-        "D": "1921 Anayasası",
-        "E": "Misak-ı Milli",
+        "A": "Sened-i İttifak",
+        "B": "Tanzimat Fermanı",
+        "C": "Kanun-i Esasi",
+        "D": "1921 Anayasası (Teşkilat-ı Esasiye)",
+        "E": "1961 Anayasası",
         "correct": "D",
-        "Açıklama": "1921 Anayasası ulusal egemenliği hüküm altına almıştır."
+        "Açıklama": "1921 Anayasası'nın 1. maddesi egemenliği millete vermiştir."
     },
     {
         "id": 53,
-        "question": "VATANDAŞLIK: Aşağıdakilerden hangisi temel hak ve özgürlükler arasında yer almaz?",
+        "question": "VATANDAŞLIK: Aşağıdakilerden hangisi Anayasa'da düzenlenen 'Kişi Hak ve Ödevleri'nden (Koruyucu Haklar) biri değildir?",
         "shape": "",
         "A": "Kişi dokunulmazlığı",
         "B": "Özel hayatın gizliliği",
-        "C": "Dilekçe hakkı",
-        "D": "Bakan olma hakkı",
-        "E": "Düşünceyi açıklama özgürlüğü",
+        "C": "Konut dokunulmazlığı",
+        "D": "Seçme ve seçilme hakkı",
+        "E": "Haberleşme hürriyeti",
         "correct": "D",
-        "Açıklama": "Bakan olmak siyasi bir görevdir; temel hak değildir."
+        "Açıklama": "Seçme ve seçilme hakkı 'Siyasi Haklar' grubundadır. Diğerleri koruyucu (negatif statü) haklardır."
     },
     {
         "id": 54,
-        "question": "VATANDAŞLIK: Kuvvetler ayrılığı ilkesi aşağıdakilerden hangisini amaçlar?",
+        "question": "VATANDAŞLIK: Demokratik devletlerde uygulanan 'Kuvvetler Ayrılığı' ilkesinin temel amacı nedir?",
         "shape": "",
         "A": "Devlet gücünü tek elde toplamak",
-        "B": "Yetkilerin dengelenmesi",
-        "C": "Cumhurbaşkanı yetkilerini artırmak",
-        "D": "Yerel yönetimleri güçlendirmek",
-        "E": "Hükümeti meclis üstün kılmak",
+        "B": "Yasama, yürütme ve yargı güçlerinin birbirini dengelemesi ve denetlemesi",
+        "C": "Hükümetin yetkilerini sınırsız hale getirmek",
+        "D": "Yerel yönetimleri kaldırmak",
+        "E": "Seçimlerin yapılmasını engellemek",
         "correct": "B",
-        "Açıklama": "Yasama–yürütme–yargı güçlerinin dengeli dağılması amaçlanır."
+        "Açıklama": "Kuvvetler ayrılığı, iktidarın tek elde toplanıp keyfileşmesini önlemek için vardır."
     },
     {
         "id": 55,
-        "question": "GÜNCEL: Aşağıdakilerden hangisi Türkiye’nin üye olduğu uluslararası bir örgüttür?",
+        "question": "GÜNCEL: Türkiye, aşağıdaki askeri ve siyasi örgütlerden hangisine 1952 yılında üye olmuştur?",
         "shape": "",
         "A": "Şangay İşbirliği Örgütü",
-        "B": "NATO",
+        "B": "NATO (Kuzey Atlantik Antlaşması Örgütü)",
         "C": "OPEC",
-        "D": "BRICS",
-        "E": "G7",
+        "D": "Avrupa Birliği",
+        "E": "Varşova Paktı",
         "correct": "B",
-        "Açıklama": "Türkiye NATO üyesidir."
+        "Açıklama": "Türkiye Kore Savaşı sonrası 1952'de NATO'ya katılmıştır."
     },
     {
         "id": 56,
-        "question": "GÜNCEL: Dijital dönüşüm projelerinde kullanılan 'yapay zekâ' teknolojisinin temel amacı nedir?",
+        "question": "GÜNCEL: Sanayi ve teknolojide süreçleri hızlandıran, insan zekasını taklit eden teknolojiye ne ad verilir?",
         "shape": "",
-        "A": "İnsan gücünü tamamen ortadan kaldırmak",
-        "B": "Süreçleri hızlandırmak ve verimi artırmak",
-        "C": "Sadece robot üretmek",
-        "D": "İnternet trafiğini azaltmak",
-        "E": "Enerji kullanımını tamamen durdurmak",
+        "A": "Blockchain",
+        "B": "Yapay Zekâ (AI)",
+        "C": "Metaverse",
+        "D": "Bulut Bilişim",
+        "E": "Nesnelerin İnterneti",
         "correct": "B",
-        "Açıklama": "Yapay zekâ iş süreçlerini daha hızlı ve etkili hâle getirir."
+        "Açıklama": "İnsan gibi düşünebilen ve öğrenebilen sistemlere Yapay Zekâ denir."
     },
     {
         "id": 57,
-        "question": "GÜNCEL: Aşağıdaki enerji türlerinden hangisi yenilenebilir değildir?",
+        "question": "GÜNCEL: Aşağıdaki enerji kaynaklarından hangisi çevre dostu 'yenilenebilir' enerji kaynaklarından biri değildir?",
         "shape": "",
         "A": "Rüzgâr",
         "B": "Güneş",
         "C": "Jeotermal",
         "D": "Doğal gaz",
-        "E": "Biyokütle",
+        "E": "Hidroelektrik",
         "correct": "D",
-        "Açıklama": "Doğal gaz fosil bir kaynaktır ve yenilenemez."
+        "Açıklama": "Doğal gaz tükenebilir (fosil) bir yakıttır."
     },
     {
         "id": 58,
-        "question": "GÜNCEL: Türkiye’de yapılan nüfus sayımlarında kullanılan sistem aşağıdakilerden hangisidir?",
+        "question": "GÜNCEL: Türkiye’de ikamet adresine dayalı olarak nüfus verilerini tutan sistemin kısaltması nedir?",
         "shape": "",
-        "A": "Kayıt dışı tarama sistemi",
-        "B": "Adrese Dayalı Nüfus Kayıt Sistemi (ADNKS)",
-        "C": "Seçmen Kayıt Sistemi",
-        "D": "Yerleşim Tespit Sistemi",
-        "E": "Genel Hane Tarama Sistemi",
+        "A": "MERNİS",
+        "B": "ADNKS (Adrese Dayalı Nüfus Kayıt Sistemi)",
+        "C": "UYAP",
+        "D": "ÖSYM",
+        "E": "TÜİK",
         "correct": "B",
-        "Açıklama": "Türkiye'de nüfus verileri ADNKS ile tutulmaktadır."
+        "Açıklama": "Nüfus sayımı artık ev gezilerek değil, ADNKS veri tabanı üzerinden yapılmaktadır."
     },
     {
         "id": 59,
-        "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde 'nesnel yargı' vardır?",
+        "question": "TÜRKÇE: Aşağıdaki parçada numaralanmış cümlelerin hangisi düşüncenin akışını bozmaktadır?\n(I) Kitap okumak zihni dinlendirir. (II) Kelime dağarcığını geliştirir. (III) Müzik dinlemek de ruhun gıdasıdır. (IV) Ayrıca empati yeteneğini artırır. (V) Farklı dünyaların kapılarını aralar.",
         "shape": "",
-        "A": "Bu roman yazarın en etkileyici kitabıdır.",
-        "B": "Bugün hava her zamankinden güzel.",
-        "C": "Türkiye'nin en yüksek dağı Ağrı Dağı'dır.",
-        "D": "Bu şiiri okumaktan büyük keyif aldım.",
-        "E": "Film oldukça sıkıcıydı bence.",
+        "A": "I",
+        "B": "II",
+        "C": "III",
+        "D": "IV",
+        "E": "V",
         "correct": "C",
-        "Açıklama": "Ağrı Dağı’nın en yüksek dağ olması ölçülebilir bir bilgidir."
+        "Açıklama": "Parça kitap okumanın faydalarından bahsederken III. cümlede konu müzik dinlemeye kaymıştır."
     },
     {
         "id": 60,
-        "question": "TÜRKÇE: Aşağıdaki cümlelerden hangisi 'yakınma' anlamı taşır?",
+        "question": "TÜRKÇE: Aşağıdaki cümlelerden hangisi 'yakınma' (şikâyet) anlamı taşır?",
         "shape": "",
         "A": "Bu ödevi yetiştirmek için çok uğraştım.",
-        "B": "Ne yapsam kimse beni anlamıyor.",
+        "B": "Nerede nasıl davranacağını bir türlü öğrenemedi.",
         "C": "Yeni bir bilgisayar almam gerekiyor.",
         "D": "Kitabı bir solukta bitirdim.",
         "E": "Bugünlerde çok yoğunum.",
         "correct": "B",
-        "Açıklama": "Kişi anlaşılmamaktan şikâyet etmektedir."
+        "Açıklama": "Kişinin davranışlarından duyulan rahatsızlık dile getirilmektedir."
     }
 ]
