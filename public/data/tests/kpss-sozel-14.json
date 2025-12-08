@@ -152,8 +152,8 @@
         "C": "Edat tümleci",
         "D": "Dolaylı tümleç",
         "E": "Geçişsiz fiil",
-        "correct": "D",
-        "Açıklama": "'Toplantıdaki herkes tarafından' ifadesi dolaylı tümleç görevindedir."
+        "correct": "C",
+        "Açıklama": "“Toplantıdaki herkes tarafından” ifadesi 'tarafından' edatıyla kurulmuş bir edat tümlecidir."
     },
     {
         "id": 14,
@@ -409,7 +409,7 @@
     },
     {
         "id": 35,
-        "question": "TARİH: Atatürk döneminde imzalanan aşağıdaki anlaşmalardan hangisi Türkiye’nin Milletler Cemiyeti’ne üye olmasını kolaylaştırmıştır?",
+        "question": "TARİH: Atatürk döneminde izlenen barışçı dış politikanın bir göstergesi aşağıdakilerden hangisidir?",
         "shape": "",
         "A": "Brest-Litovsk Antlaşması",
         "B": "Lozan Antlaşması",
@@ -417,7 +417,7 @@
         "D": "Sadabat Paktı",
         "E": "Ankara Antlaşması (1926)",
         "correct": "C",
-        "Açıklama": "Balkan Antantı, Türkiye'nin barışçı dış politikasını güçlendirmiş ve üyeliği kolaylaştırmıştır."
+        "Açıklama": "Balkan Antantı, Türkiye'nin komşularıyla barış ve iş birliğini esas alan dış politikasının önemli bir sonucudur."
     },
     {
         "id": 36,
@@ -478,126 +478,6 @@
         "E": "Final",
         "correct": "C",
         "Açıklama": "Türkiye, EURO 2024’te Çeyrek Finalde elenmiştir."
-    },
-    {
-        "id": 41,
-        "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde 'karşıtlık' anlamı vardır?",
-        "shape": "",
-        "A": "Bu yıl hedeflerimizi daha üst seviyeye taşıyacağız.",
-        "B": "Çok çalışmasına rağmen istediği sonucu elde edemedi.",
-        "C": "Bugün toplantı için erken geldim.",
-        "D": "Sınavdan sonra hep birlikte dışarı çıktık.",
-        "E": "Projeyi tamamlamak için yoğun mesai yaptılar.",
-        "correct": "B",
-        "Açıklama": "‘Çalışmasına rağmen’ ifadesi beklenen sonucun gerçekleşmediğini gösterir; karşıtlık vardır."
-    },
-    {
-        "id": 42,
-        "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde 'kişileştirme' sanatı vardır?",
-        "shape": "",
-        "A": "Rüzgâr tüm gece boyunca şiddetli esti.",
-        "B": "Güneş, sabah bana gülümsedi.",
-        "C": "Yapraklar yere düşmeye başladı.",
-        "D": "Gökyüzü kapkaranlık olmuştu.",
-        "E": "Sular hızla akıyordu.",
-        "correct": "B",
-        "Açıklama": "Güneşin ‘gülümsemesi’ insana ait bir özellik olduğu için kişileştirme vardır."
-    },
-    {
-        "id": 43,
-        "question": "TÜRKÇE: 'Bu olay, uzun zamandır konuşulan tartışmayı yeniden alevlendirdi.' cümlesinde geçen 'alevlendirmek' sözcüğü hangi anlamda kullanılmıştır?",
-        "shape": "",
-        "A": "Gerçek bir ateş çıkarmak",
-        "B": "Bir konuyu daha çetin hale getirmek",
-        "C": "Bir durumu sona erdirmek",
-        "D": "Bir konuyu açıklığa kavuşturmak",
-        "E": "Bir olayı gizlemek",
-        "correct": "B",
-        "Açıklama": "'Alevlendirmek' mecaz anlamda tartışmayı artırmak, güçlendirmek demektir."
-    },
-    {
-        "id": 44,
-        "question": "TARİH: Osmanlı Devleti’nde tımar sisteminin bozulması aşağıdakilerden hangisine neden olmuştur?",
-        "shape": "",
-        "A": "Vergilerin tamamen kaldırılmasına",
-        "B": "Kapıkulu Ocağı’nın genişlemesine",
-        "C": "Celali İsyanlarının yaygınlaşmasına",
-        "D": "Deniz ticaretinin durmasına",
-        "E": "Yeniçeri Ocağı’nın güçlenmesine",
-        "correct": "C",
-        "Açıklama": "Tımar sisteminin bozulması üretimi ve güvenliği azaltmış, Celali İsyanlarının artmasına yol açmıştır."
-    },
-    {
-        "id": 45,
-        "question": "TARİH: Aşağıdaki gelişmelerden hangisi Türkiye Cumhuriyeti’nin 'milli egemenlik' ilkesini güçlendirmeye yöneliktir?",
-        "shape": "",
-        "A": "Halifeliğin kaldırılması",
-        "B": "Soyadı Kanunu'nun kabulü",
-        "C": "Millet Mekteplerinin açılması",
-        "D": "Medeni Kanun’un kabulü",
-        "E": "Kapitülasyonların kaldırılması",
-        "correct": "A",
-        "Açıklama": "Halifeliğin kaldırılması, egemenliğin yalnızca millete ait olduğunu vurgulayan bir adımdır."
-    },
-    {
-        "id": 46,
-        "question": "COĞRAFYA: Türkiye’de 'karstik şekiller'in en yaygın görüldüğü bölge aşağıdakilerden hangisidir?",
-        "shape": "",
-        "A": "İç Anadolu",
-        "B": "Akdeniz",
-        "C": "Karadeniz",
-        "D": "Doğu Anadolu",
-        "E": "Marmara",
-        "correct": "B",
-        "Açıklama": "Kalkerli yapısı nedeniyle Akdeniz Bölgesi karstik şekillerin en yaygın olduğu bölgedir."
-    },
-    {
-        "id": 47,
-        "question": "COĞRAFYA: Aşağıdakilerden hangisi Türkiye’nin özel konumuyla ilişkilendirilebilir?",
-        "shape": "",
-        "A": "Yıllık sıcaklık ortalamasının düşüklüğü",
-        "B": "Dört mevsimin belirgin yaşanması",
-        "C": "Üç kıtanın birbirine yakın konumunda olması",
-        "D": "Dağların kıyıya paralel uzanması",
-        "E": "İç bölgelerde karasal iklim görülmesi",
-        "correct": "C",
-        "Açıklama": "Türkiye’nin üç kıta arasında köprü oluşturması özel konumla ilgilidir."
-    },
-    {
-        "id": 48,
-        "question": "VATANDAŞLIK: Aşağıdakilerden hangisi sosyal devlet ilkesiyle bağdaşır?",
-        "shape": "",
-        "A": "Eğitim ve sağlık hizmetlerinin ücretlendirilmesi",
-        "B": "Gelir dağılımında adaletin sağlanması",
-        "C": "Temel hakların sınırlandırılması",
-        "D": "Yargı kararlarının yürütme tarafından değiştirilmesi",
-        "E": "Tek bir partinin yönetimde olması",
-        "correct": "B",
-        "Açıklama": "Sosyal devlet, adil gelir dağılımı ve sosyal destek mekanizmalarını içerir."
-    },
-    {
-        "id": 49,
-        "question": "VATANDAŞLIK: Türkiye’de yasama yetkisi aşağıdakilerden hangisine aittir?",
-        "shape": "",
-        "A": "Cumhurbaşkanı",
-        "B": "Danıştay",
-        "C": "TBMM",
-        "D": "Anayasa Mahkemesi",
-        "E": "Bakanlar Kurulu",
-        "correct": "C",
-        "Açıklama": "Yasama yetkisi devredilemez ve TBMM’ye aittir."
-    },
-    {
-        "id": 50,
-        "question": "GÜNCEL: 2024 yılında Türkiye’nin en fazla ihracat yaptığı ülke aşağıdakilerden hangisidir?",
-        "shape": "",
-        "A": "İtalya",
-        "B": "İspanya",
-        "C": "Almanya",
-        "D": "ABD",
-        "E": "Fransa",
-        "correct": "C",
-        "Açıklama": "Türkiye’nin dış ticaretinde Almanya uzun yıllardır ilk sıradadır."
     },
     {
         "id": 41,
