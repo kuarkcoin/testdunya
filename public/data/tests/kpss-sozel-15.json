@@ -107,7 +107,7 @@
         "D": "Kullanımlarının kişinin isteğine bağlı olmaması",
         "E": "Yalnızca ekonomik alanda geçerli olmaları",
         "correct": "A",
-        "Açıklama": "Temel haklar dokunulamaz, devredilemez ve vazgeçilemez niteliktedir."
+        "Açıklama": "Temel haklar klasik olarak dokunulamaz, devredilemez ve vazgeçilemez kabul edilir; bu ortak niteliği en çok A seçeneği karşılar."
     },
     {
         "id": 11,
@@ -392,8 +392,8 @@
         "C": "Karadeniz",
         "D": "İç Anadolu",
         "E": "Doğu Anadolu",
-        "correct": "E",
-        "Açıklama": "Doğu Anadolu Fay Hattı nedeniyle bölgedeki deprem riski oldukça yüksektir."
+        "correct": "A",
+        "Açıklama": "Marmara Bölgesi, Kuzey Anadolu Fay Hattı üzerinde bulunması ve yoğun nüfusu nedeniyle deprem riski en yüksek bölgedir."
     },
     {
         "id": 37,
@@ -529,14 +529,14 @@
     },
     {
         "id": 49,
-        "question": "GÜNCEL BİLGİ: 2023 yılında Türkiye’nin uzaya gönderdiği ilk astronot kimdir?",
+        "question": "GÜNCEL BİLGİ: 2024 yılında Türkiye’nin uzaya gönderdiği ilk astronot kimdir?",
         "A": "Haluk Görgün",
         "B": "Sancar Maruflu",
         "C": "Alper Gezeravcı",
         "D": "Selçuk Bayraktar",
         "E": "Cengiz Aytmatov",
         "correct": "C",
-        "Açıklama": "Alper Gezeravcı, Türkiye’nin ilk astronotu olarak 2023’te uzaya çıkmıştır."
+        "Açıklama": "Alper Gezeravcı, 2024’te Uluslararası Uzay İstasyonu’na giderek Türkiye’nin ilk astronotu olmuştur."
     },
     {
         "id": 50,
@@ -639,14 +639,14 @@
     },
     {
         "id": 59,
-        "question": "GÜNCEL BİLGİ: Türkiye'nin 2023 yılında ilk uçuşunu gerçekleştiren yerli savaş uçağı prototipinin adı nedir?",
+        "question": "GÜNCEL BİLGİ: Türkiye'nin milli muharip savaş uçağı projesinin adı nedir?",
         "A": "Hürjet",
         "B": "Anka-3",
         "C": "Kızılelma",
         "D": "KAAN",
         "E": "Atak-2",
         "correct": "D",
-        "Açıklama": "KAAN, Türkiye'nin milli muharip uçak projesidir; 2023’te ilk taxi testleri yapılmıştır."
+        "Açıklama": "KAAN, Türkiye'nin milli muharip uçak (MMU) projesidir; 2023’te yer testleri, 2024’te ilk uçuşu gerçekleştirilmiştir."
     },
     {
         "id": 60,
