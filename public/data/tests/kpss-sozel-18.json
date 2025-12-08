@@ -419,14 +419,14 @@
     },
     {
         "id": 39,
-        "question": "GÜNCEL: 2023 yılında Türkiye’de fırlatılan yerli haberleşme uydusu 'Türksat 6A' hangi kurum tarafından geliştirilmiştir?",
+        "question": "GÜNCEL: 2024 yılında fırlatılan ilk yerli ve milli haberleşme uydusu Türksat 6A, aşağıdaki hangi kurumun öncülüğünde geliştirilmiştir?",
         "A": "ASELSAN",
         "B": "TÜBİTAK UZAY",
         "C": "TAI/TUSAŞ",
         "D": "ROKETSAN",
         "E": "HAVELSAN",
         "correct": "B",
-        "Açıklama": "Türksat 6A'nın geliştirilmesinde ana sorumlu TÜBİTAK UZAY'dır."
+        "Açıklama": "Türksat 6A'nın geliştirilmesinde ana sorumlu kurum TÜBİTAK UZAY olup, projede farklı kurumlar da görev almıştır."
     },
     {
         "id": 40,
@@ -639,14 +639,14 @@
     },
     {
         "id": 59,
-        "question": "GÜNCEL: 2024 yılında Türkiye’de kurulan 'Uzay Sanayi Enstitüsü'nün temel amaçlarından biri aşağıdakilerden hangisidir?",
-        "A": "Yalnızca amatör gözlemciler için teleskop üretmek",
-        "B": "Uzay turizmini geliştirmek",
-        "C": "Uydu teknolojileri ve derin uzay araştırmalarında yerli kapasiteyi artırmak",
-        "D": "Meteoroloji arşivlerini dijitalleştirmek",
-        "E": "Havaalanı güvenliğini artırmak",
-        "correct": "C",
-        "Açıklama": "Enstitünün temel amacı Türkiye’nin uzay araştırmaları ve uydu teknolojilerindeki yetkinliğini artırmaktır."
+        "question": "GÜNCEL: 2025 yılı itibarıyla Türkiye’nin sivil uzay faaliyetlerini koordine eden ve Milli Uzay Programı’nı yürüten kurum aşağıdakilerden hangisidir?",
+        "A": "TÜRKSAT",
+        "B": "Türkiye Uzay Ajansı (TUA)",
+        "C": "TÜBİTAK Marmara Araştırma Merkezi",
+        "D": "Savunma Sanayii Başkanlığı",
+        "E": "ASELSAN",
+        "correct": "B",
+        "Açıklama": "Türkiye Uzay Ajansı (TUA), Türkiye’nin sivil uzay ve uydu çalışmalarını koordine eden kurumdur ve Milli Uzay Programı’ndan sorumludur."
     },
     {
         "id": 60,
@@ -660,4 +660,3 @@
         "Açıklama": "IPCC (Hükümetlerarası İklim Değişikliği Paneli), iklim değişikliği üzerine uluslararası bilimsel raporlar hazırlar."
     }
 ]
-
