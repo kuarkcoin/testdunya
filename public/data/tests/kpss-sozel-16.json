@@ -37,11 +37,11 @@
         "question": "TÜRKÇE: Aşağıdakilerden hangisi anlatım bozukluğuna örnektir?",
         "A": "Bu yıl toplantıya katılım önceki yıla göre daha fazlaydı.",
         "B": "Toplantıda alınan kararların bazıları uygulanmadı.",
-        "C": "Bu projeyi hem bütçe hem de zaman açısından değerlendirdik.",
+        "C": "Bu projeyi hem bütçesini hem de zaman açısından değerlendirdik.",
         "D": "Sınav sonuçlarının geç açıklanması öğrencilerin tepkisine neden oldu.",
         "E": "Her gün düzenli yürüyüş yapmak sağlığımız için önemlidir.",
         "correct": "C",
-        "Açıklama": "C seçeneğinde 'hem ... hem de' bağlacının iki eşdeğer ögeyi bağlaması gerekir; burada anlam paralelliği bozulmuştur."
+        "Açıklama": "C seçeneğinde 'hem bütçesini hem de zaman açısından' ifadesinde 'hem' ile bağlanan ögeler aynı türden değildir; biri nesne, diğeri zarf tümlecidir. Bu nedenle anlatım bozukluğu vardır."
     },
     {
         "id": 5,
@@ -184,7 +184,7 @@
         "D": "Toprak erozyonu",
         "E": "Ormanların yangınlara karşı hassasiyeti",
         "correct": "D",
-        "Açıklama": "Erozyon ormansızlaşmanın sonucudur; nedeni değildir."
+        "Açıklama": "Erozyon genellikle ormansızlaşmanın sonucudur; temel neden olarak değerlendirilmez."
     },
     {
         "id": 18,
@@ -320,14 +320,14 @@
     },
     {
         "id": 30,
-        "question": "GÜNCEL: 2023 yılında Türkiye, hangi uluslararası organizasyona resmi tam üyelik başvurusu yapmıştır?",
+        "question": "GÜNCEL: 2024 yılında Türkiye, aşağıdaki hangi uluslararası organizasyona resmi tam üyelik başvurusu yapmıştır?",
         "A": "Şanghay İşbirliği Örgütü",
         "B": "BRICS",
         "C": "Avrasya Ekonomik Birliği",
         "D": "OECD",
         "E": "Körfez İşbirliği Konseyi",
         "correct": "B",
-        "Açıklama": "2023'te Türkiye BRICS grubuna resmi üyelik başvurusunda bulunmuştur."
+        "Açıklama": "2024 yılında Türkiye, BRICS topluluğuna tam üyelik başvurusunda bulunmuştur."
     },
     {
         "id": 31,
@@ -441,7 +441,7 @@
     },
     {
         "id": 41,
-        "question": "TÜRKÇE: Aşağıdaki cümlelerden hangisinde 'neden-sonuç' ilişkisi yoktur?",
+        "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde 'neden-sonuç' ilişkisi yoktur?",
         "A": "Yağmur dinmediği için maç ertelendi.",
         "B": "Yorgun olduğundan bugün dışarı çıkmadı.",
         "C": "Sınavda beklediğinden düşük aldığı için morali bozuldu.",
