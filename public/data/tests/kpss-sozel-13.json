@@ -109,7 +109,7 @@
     },
     {
         "id": 10,
-        "question": "GÜNCEL: 2024 yılında Türkiye’nin başlattığı 'Milli Uzay Programı'nın hedeflerinden biri aşağıdakilerden hangisidir?",
+        "question": "GÜNCEL: Türkiye’nin 'Milli Uzay Programı' kapsamında belirlediği hedeflerden biri aşağıdakilerden hangisidir?",
         "shape": "",
         "A": "Tüm şehirlerde yeni havaalanları kurmak",
         "B": "Ay’a sert iniş gerçekleştirmek",
@@ -469,7 +469,7 @@
     },
     {
         "id": 40,
-        "question": "GÜNCEL: 2023–2024 yıllarında yapımı tamamlanan '1915 Çanakkale Köprüsü' aşağıdaki özelliklerden hangisine sahiptir?",
+        "question": "GÜNCEL: Türkiye’de yapımı tamamlanan '1915 Çanakkale Köprüsü' aşağıdaki özelliklerden hangisine sahiptir?",
         "shape": "",
         "A": "Türkiye’nin ilk asma köprüsüdür.",
         "B": "Dünyanın en uzun orta açıklıklı asma köprüsüdür.",
@@ -589,7 +589,7 @@
     },
     {
         "id": 50,
-        "question": "GÜNCEL: Aşağıdakilerden hangisi 2024 yılında UNESCO Dünya Mirası Geçici Listesi’ne eklenen Türk varlıklarından biridir?",
+        "question": "GÜNCEL: UNESCO Dünya Mirası Geçici Listesi’nde yer alan Türk varlıklarından biri aşağıdakilerden hangisidir?",
         "shape": "",
         "A": "Pamukkale",
         "B": "Ani Harabeleri",
@@ -597,7 +597,7 @@
         "D": "Perge Antik Kenti",
         "E": "Sarıkaya Roma Hamamı",
         "correct": "E",
-        "Açıklama": "Sarıkaya Roma Hamamı 2024 yılı geçici listeye alınan varlıklardandır."
+        "Açıklama": "Sarıkaya Roma Hamamı UNESCO Dünya Mirası Geçici Listesi’nde yer alan varlıklardandır."
     },
     {
         "id": 51,
