@@ -36,16 +36,16 @@
         "Açıklama": "‘Etkileyici’ kişiden kişiye değişen bir değerlendirmedir, özneldir."
     },
     {
-        "id": 4,
-        "question": "TÜRKÇE: 'Kişileştirme (teşhis)' sanatı aşağıdaki cümlelerin hangisinde vardır?",
-        "shape": "",
-        "A": "Güneş yavaşça ufkun arkasına çekildi.",
-        "B": "Rüzgar bütün gece evin çatısını salladı.",
-        "C": "Dağlar bembeyaz karla kaplanmıştı.",
-        "D": "Sular hızla yükselmeye başladı.",
-        "E": "Gökyüzü koyu gri bir renge büründü.",
-        "correct": "B",
-        "Açıklama": "Rüzgara insan davranışı olan 'sallamak' yüklenmiştir."
+  "id": 4,
+  "question": "TÜRKÇE: 'Kişileştirme (teşhis)' sanatı aşağıdaki cümlelerin hangisinde vardır?",
+  "shape": "",
+  "A": "Güneş yavaşça ufkun arkasına çekildi.",
+  "B": "Rüzgar bütün gece kapıları yumrukladı.",
+  "C": "Dağlar bembeyaz karla kaplanmıştı.",
+  "D": "Sular hızla yükselmeye başladı.",
+  "E": "Gökyüzü koyu gri bir renge büründü.",
+  "correct": "B",
+  "Açıklama": "İnsan davranışı olan 'yumruklamak' rüzgara verilmiştir; kişileştirme (teşhis) vardır."
     },
     {
         "id": 5,
@@ -108,16 +108,16 @@
         "Açıklama": "TBMM’nin yasama görevi kapsamında kanun yapmak vardır."
     },
     {
-        "id": 10,
-        "question": "GÜNCEL: 2023 yılında Türkiye’de uzaya gönderilen ilk yerli haberleşme uydusunun adı nedir?",
-        "shape": "",
-        "A": "Türksat 4A",
-        "B": "Türksat 5A",
-        "C": "Türksat 6A",
-        "D": "Göktürk 1",
-        "E": "İmece",
-        "correct": "C",
-        "Açıklama": "Türksat 6A, Türkiye'nin ilk yerli haberleşme uydusudur."
+  "id": 10,
+  "question": "GÜNCEL: 15 Nisan 2023’te fırlatılan Türkiye’nin ilk yerli ve millî haberleşme uydusunun adı aşağıdakilerden hangisidir?",
+  "shape": "",
+  "A": "Türksat 4A",
+  "B": "Türksat 5A",
+  "C": "Türksat 6A",
+  "D": "Göktürk-1",
+  "E": "İMECE",
+  "correct": "C",
+  "Açıklama": "Türksat 6A, Türkiye’nin ilk yerli ve millî haberleşme uydusudur ve 2023’te fırlatılmıştır."
     },
     {
         "id": 11,
@@ -228,28 +228,28 @@
         "Açıklama": "2024 TEKNOFEST’in ilk durağı Adana olarak açıklanmıştır."
     },
     {
-        "id": 20,
-        "question": "GÜNCEL: 2024 Nobel Edebiyat Ödülü’nü kazanan yazar aşağıdakilerden hangisidir?",
-        "shape": "",
-        "A": "Anne Carson",
-        "B": "Mircea Cărtărescu",
-        "C": "Haruki Murakami",
-        "D": "Orhan Pamuk",
-        "E": "Maggie O’Farrell",
-        "correct": "B",
-        "Açıklama": "2024 Nobel Edebiyat Ödülü’nü Rumen yazar Mircea Cărtărescu kazanmıştır."
+  "id": 20,
+  "question": "GÜNCEL: 2024 Nobel Edebiyat Ödülü’nü kazanan yazar aşağıdakilerden hangisidir?",
+  "shape": "",
+  "A": "Anne Carson",
+  "B": "Mircea Cărtărescu",
+  "C": "Haruki Murakami",
+  "D": "Orhan Pamuk",
+  "E": "Maggie O’Farrell",
+  "correct": "B",
+  "Açıklama": "2024 Nobel Edebiyat Ödülü Rumen yazar Mircea Cărtărescu’ya verilmiştir."
     },
     {
-        "id": 21,
-        "question": "TÜRKÇE: Bu cümlelerin hangisinde 'amaç-sonuç' ilişkisi vardır?",
-        "shape": "",
-        "A": "Yağmur yağdığı için dışarı çıkamadık.",
-        "B": "Erken kalktım ki işe zamanında varayım.",
-        "C": "Sınavı geçmek için çok çalıştı.",
-        "D": "Toplantının iptal edildiğini duydum.",
-        "E": "Bu yıl kitap çok sattı.",
-        "correct": "B",
-        "Açıklama": "‘Erken kalktım ki…’ ifadesi amaç belirten bir yapıdır."
+  "id": 21,
+  "question": "TÜRKÇE: Aşağıdaki seçeneklerden hangisinde 'amaç-sonuç' ilişkisi vardır?",
+  "shape": "",
+  "A": "Sınavı geçmek için çok çalıştı.",
+  "B": "Ders çalışmadığı için sınavdan kaldı.",
+  "C": "Yağmur yağdığı için eve döndük.",
+  "D": "Uykusu geldiği için erken yattı.",
+  "E": "Yollar kapandığı için okula gidemedik.",
+  "correct": "A",
+  "Açıklama": "‘Sınavı geçmek için’ ifadesi amaçtır; çok çalışmak bu amaca yöneliktir."
     },
     {
         "id": 22,
@@ -336,16 +336,16 @@
         "Açıklama": "2017 sonrası sistemde kanun teklifi yetkisi sadece milletvekillerindedir."
     },
     {
-        "id": 29,
-        "question": "GÜNCEL: 2024 yılında ABD'de düzenlenen Dünya Okçuluk Şampiyonası’nda altın madalya kazanan Türk sporcu kimdir?",
-        "shape": "",
-        "A": "Mete Gazoz",
-        "B": "Yasemin Ecem Anagöz",
-        "C": "Begüm Tüzün",
-        "D": "Gizem Elmaağaçlı",
-        "E": "Elif Ece Tekin",
-        "correct": "A",
-        "Açıklama": "Mete Gazoz, 2024 Dünya Şampiyonası’nda altın madalya kazanmıştır."
+  "id": 29,
+  "question": "GÜNCEL: 2024 Avrupa Atletizm Şampiyonası’nda erkekler okçulukta dünya şampiyonluğu bulunan ve 2020 Tokyo Olimpiyatları’nda da altın madalya kazanan Türk sporcu aşağıdakilerden hangisidir?",
+  "shape": "",
+  "A": "Mete Gazoz",
+  "B": "Yasemin Ecem Anagöz",
+  "C": "Rıza Kayaalp",
+  "D": "Furkan Akgün",
+  "E": "Gizem Elmaağaçlı",
+  "correct": "A",
+  "Açıklama": "Mete Gazoz, 2020 Tokyo Olimpiyatları’nda altın madalya kazanmış ve dünya şampiyonluğuna ulaşmıştır."
     },
     {
         "id": 30,
@@ -372,16 +372,16 @@
         "Açıklama": "Yağmur yağması (neden), yolların kapanmasına (sonuç) yol açmıştır."
     },
     {
-        "id": 32,
-        "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde 'birleşik fiil' yoktur?",
-        "shape": "",
-        "A": "Bu konuyu araştırdım.",
-        "B": "Sana yardım edeceğim.",
-        "C": "Bu sözleri duyunca ağladı.",
-        "D": "Onu görünce heyecanlandı.",
-        "E": "Sınavda başarılı olmak için çalıştı.",
-        "correct": "A",
-        "Açıklama": "Araştırmak basit fiildir; diğerleri kurallı veya yardımcı eylemle oluşan birleşik fiillerdir."
+  "id": 32,
+  "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde 'birleşik fiil' kullanılmıştır?",
+  "shape": "",
+  "A": "Onu görünce çok sevindim.",
+  "B": "Bu konuyu araştırdım.",
+  "C": "Sınav başladı.",
+  "D": "Çantayı masanın üzerine koydu.",
+  "E": "Kapıyı sessizce açtı.",
+  "correct": "A",
+  "Açıklama": "‘Sevin-mek’ fiili ‘sev-in’ yapım eki almış bir birleşik fiildir; diğerleri basit fiildir."
     },
     {
         "id": 33,
@@ -408,18 +408,18 @@
         "Açıklama": "Atatürk dış politikada barışçıl ve gerçekçi politikalar izlemiş, yayılmacılığı reddetmiştir."
     },
     {
-        "id": 35,
-        "question": "COĞRAFYA: Türkiye'nin en fazla akarsuyun geçtiği bölgesi aşağıdakilerden hangisidir?",
-        "shape": "",
-        "A": "Ege",
-        "B": "Marmara",
-        "C": "Akdeniz",
-        "D": "Karadeniz",
-        "E": "Doğu Anadolu",
-        "correct": "E",
-        "Açıklama": "Dağlık yapısı nedeniyle en fazla akarsu Doğu Anadolu’dan doğar."
-    },
-    {
+  "id": 35,
+  "question": "COĞRAFYA: Türkiye’de en fazla akarsuyun doğduğu bölge aşağıdakilerden hangisidir?",
+  "shape": "",
+  "A": "Ege",
+  "B": "Marmara",
+  "C": "Akdeniz",
+  "D": "Karadeniz",
+  "E": "Doğu Anadolu",
+  "correct": "E",
+  "Açıklama": "Yüksek ve dağlık yapısı nedeniyle Türkiye’de en fazla akarsu Doğu Anadolu Bölgesi’nden doğar."
+   },
+   {
         "id": 36,
         "question": "COĞRAFYA: Aşağıdakilerden hangisi Türkiye'nin iklim çeşitliliğini artıran faktörlerden biridir?",
         "shape": "",
@@ -696,16 +696,16 @@
         "Açıklama": "Hak ve özgürlükler yalnızca kanunla sınırlanabilir; bu anayasal bir ilkedir."
     },
     {
-        "id": 59,
-        "question": "GÜNCEL: 2023 yılında Türkiye'nin ev sahipliği yaptığı TEKNOFEST etkinliği hangi iki şehirde düzenlenmiştir?",
-        "shape": "",
-        "A": "İstanbul – Ankara",
-        "B": "İstanbul – İzmir",
-        "C": "İstanbul – Çanakkale",
-        "D": "İstanbul – Gaziantep",
-        "E": "İstanbul – Antalya",
-        "correct": "B",
-        "Açıklama": "TEKNOFEST 2023 hem İstanbul’da hem İzmir’de gerçekleşmiştir."
+  "id": 59,
+  "question": "GÜNCEL: 2023 yılında düzenlenen TEKNOFEST, aşağıdaki şehirlerden hangilerinde gerçekleştirilmiştir?",
+  "shape": "",
+  "A": "İstanbul – Ankara",
+  "B": "İstanbul – İzmir",
+  "C": "İstanbul – Gaziantep",
+  "D": "İstanbul – Trabzon",
+  "E": "Ankara – İzmir",
+  "correct": "B",
+  "Açıklama": "TEKNOFEST 2023, hem İstanbul’da hem de İzmir’de düzenlenmiştir."
     },
     {
         "id": 60,
