@@ -638,15 +638,15 @@
         "Açıklama": "Temel hakların sınırlandırılması yalnızca olağanüstü dönemlerde mümkündür."
     },
     {
-        "id": 59,
-        "question": "GÜNCEL: 2024 yılında yürürlüğe giren ve dijital platformlarda kişisel verileri korumayı amaçlayan Avrupa Birliği düzenlemesi aşağıdakilerden hangisidir?",
-        "A": "GDPR",
-        "B": "DMA",
-        "C": "DSA",
-        "D": "AIA",
-        "E": "eIDAS",
-        "correct": "C",
-        "Açıklama": "DSA (Digital Services Act), dijital hizmetlerde kişisel verilerin ve kullanıcı güvenliğinin korunmasını düzenler."
+  "id": 59,
+  "question": "GÜNCEL: 2024 yılında yürürlüğe giren ve dijital platformlarda kullanıcı güvenliği, yasa dışı içerikle mücadele ve algoritmik şeffaflık sağlayan Avrupa Birliği düzenlemesi aşağıdakilerden hangisidir?",
+  "A": "GDPR",
+  "B": "DMA",
+  "C": "DSA",
+  "D": "AIA",
+  "E": "eIDAS",
+  "correct": "C",
+  "Açıklama": "DSA, dijital hizmetlerde platformların sorumluluklarını artıran; yasa dışı içerikle mücadele, kullanıcı güvenliği ve algoritmik şeffaflık gibi konuları düzenleyen bir AB yasasıdır. Kişisel verilerin korunması GDPR kapsamındadır."
     },
     {
         "id": 60,
