@@ -1,6 +1,6 @@
 [
   {
-    "id": 100,
+    "id": 1,
     "question": "TÜRKÇE: Bir yazar için en büyük tehlike, okurun zihninde sorular uyandırmayan cümleler kurmaktır. Çünkü soru uyandırmayan metin, okuru düşündürmez; düşündürmeyen metin ise okurda uzun süreli bir iz bırakmaz.\n\nBu parçada yazarın özellikle vurguladığı düşünce aşağıdakilerden hangisidir?",
     "shape": "",
     "A": "Metinlerde sade dil kullanılması gerektiği",
@@ -9,10 +9,10 @@
     "D": "Uzun metinlerin kısa metinlere göre daha kalıcı olduğu",
     "E": "Metnin akıcı olmasının her şeyden önemli olduğu",
     "correct": "C",
-    "Açıklama": "Parçada asıl vurgu, metnin okurun zihninde soru uyandırması ve onu düşündürmesi gerektiği üzerinedir; bu da kalıcılığı sağlar."
+    "Açıklama": "Parçada asıl vurgu, metnin okurun zihninde soru uyandırması ve onu düşündürmesi gerektiği üzerinedir."
   },
   {
-    "id": 101,
+    "id": 2,
     "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde 'yakınma' (şikâyet) anlamı vardır?",
     "shape": "",
     "A": "Bu yıl sınav soruları oldukça zordu.",
@@ -21,10 +21,10 @@
     "D": "Yarın derse birlikte gidelim mi?",
     "E": "Bu konuyu tekrar tekrar anlattım.",
     "correct": "B",
-    "Açıklama": "B şıkkında kişi, çok çalışmasına rağmen sonucun değişmemesinden duyduğu rahatsızlığı dile getirerek yakınmaktadır."
+    "Açıklama": "B şıkkında kişi, emek vermesine rağmen sonucun değişmemesinden duyduğu rahatsızlığı dile getirerek yakınmaktadır."
   },
   {
-    "id": 102,
+    "id": 3,
     "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde 'nesnel yargı' vardır?",
     "shape": "",
     "A": "Bu roman, yazarın en etkileyici eseridir.",
@@ -33,10 +33,10 @@
     "D": "En güzel mevsim kesinlikle bahardır.",
     "E": "Bu şiirin dili bana çok ağır geliyor.",
     "correct": "C",
-    "Açıklama": "C şıkkındaki ifade nüfus verileriyle kanıtlanabilir; dolayısıyla nesneldir. Diğerleri kişisel beğeni içerir."
+    "Açıklama": "Nüfus verileriyle kanıtlanabilir olduğu için 'en kalabalık şehir' ifadesi nesneldir. Diğerleri kişisel yorumdur."
   },
   {
-    "id": 103,
+    "id": 4,
     "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde 'genelleme' yapılmıştır?",
     "shape": "",
     "A": "Bu derste çoğu öğrenci başarılı oldu.",
@@ -45,10 +45,10 @@
     "D": "Bizim sınıfta herkes birbirini tanır.",
     "E": "Kardeşim hiçbir zaman sözünü tutmaz.",
     "correct": "B",
-    "Açıklama": "B şıkkında 'insan' kavramı üzerinden tüm insanlara yönelik geniş bir yargı ortaya konmuştur; bu bir genellemedir."
+    "Açıklama": "'İnsan' kavramı üzerinden bütün insanları kapsayan genel bir yargı bildirdiği için genellemedir."
   },
   {
-    "id": 104,
+    "id": 5,
     "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde 'kişileştirme' (teşhis) sanatı vardır?",
     "shape": "",
     "A": "Rüzgâr bütün gece sert esti.",
@@ -57,10 +57,10 @@
     "D": "Güneş yavaşça bulutların arkasına saklandı.",
     "E": "Yağmur bardaktan boşanırcasına yağdı.",
     "correct": "D",
-    "Açıklama": "D şıkkında güneşe ‘saklanmak’ insani bir özellik yüklenmiştir; bu kişileştirme sanatıdır."
+    "Açıklama": "Güneşin 'saklanması' insana ait bir özelliktir ve güneşe aktarılarak kişileştirme yapılmıştır."
   },
   {
-    "id": 105,
+    "id": 6,
     "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde 'ikileme' yoktur?",
     "shape": "",
     "A": "Olanları baştan sona anlattı.",
@@ -69,10 +69,10 @@
     "D": "Eski püskü elbiselerini çıkarıp geldi.",
     "E": "Sakin sakin konuşmaya çalıştı.",
     "correct": "C",
-    "Açıklama": "İkileme, anlamı pekiştirmek için sözcüğün tekrarı veya yakın anlamlı iki sözcüğün kullanılmasıdır. C şıkkında böyle bir yapı yoktur."
+    "Açıklama": "A (baştan sona), B (yavaş yavaş), D (eski püskü) ve E (sakin sakin) seçeneklerinde ikileme vardır. C seçeneğinde yoktur."
   },
   {
-    "id": 106,
+    "id": 7,
     "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde 'göndergesel' (bilgilendirme amaçlı) anlatım ağır basmaktadır?",
     "shape": "",
     "A": "Gökyüzü, akşamüstü kızıllığına bürünmüştü.",
@@ -81,10 +81,10 @@
     "D": "Bu şairin dili oldukça kapalı ve imgeseldir.",
     "E": "Onu yıllar sonra görmek beni çok duygulandırdı.",
     "correct": "C",
-    "Açıklama": "C şıkkı nesnel bir bilgiyi aktarmaktadır; temel amaç bilgi vermektir. Diğerlerinde duygusal veya değerlendirmeye dayalı anlatım ön plandadır."
+    "Açıklama": "C seçeneği bilimsel bir gerçeği, yorum katmadan doğrudan bilgi vermek amacıyla aktardığı için göndergesel işlevdedir."
   },
   {
-    "id": 107,
+    "id": 8,
     "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde 'yeterlilik fiil kipi' kullanılmıştır?",
     "shape": "",
     "A": "Bugün erken kalkabildim.",
@@ -93,10 +93,10 @@
     "D": "Keşke biraz daha erken kalksaydın.",
     "E": "Erken kalkmak için saat kurmuş.",
     "correct": "A",
-    "Açıklama": "A şıkkındaki 'kalkabildim' fiilinde '-ebil' eki yeterlilik anlamı katar. Diğerlerinde bu kip yoktur."
+    "Açıklama": "Fiile '-ebil' ekinin getirilmesiyle yapılan (kalk-abil-dim) ve gücü yetme/olasılık bildiren kip yeterliliktir."
   },
   {
-    "id": 108,
+    "id": 9,
     "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde 'sebep-sonuç' ilişkisi vardır?",
     "shape": "",
     "A": "Bu kitabı daha iyi anlayayım diye ikinci kez okudum.",
@@ -105,10 +105,10 @@
     "D": "Ders çalışırsan sınavı geçersin.",
     "E": "Güzel bir gün olsun diye erkenden uyandım.",
     "correct": "C",
-    "Açıklama": "C şıkkında 'yağmurun bastırması' neden, 'herkesin sığınacak yer araması' sonuçtur ve gerçekleşmiş bir durum anlatılır; bu nedenle sebep-sonuçtur. A, B, E amaç-sonuç, D koşul-sonuçtur."
+    "Açıklama": "Yağmurun bastırması gerçekleşmiş bir nedendir, bu yüzden insanlar kaçışmıştır. Diğerlerinde amaç veya koşul vardır."
   },
   {
-    "id": 109,
+    "id": 10,
     "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde 'pekiştirme sıfatı' kullanılmıştır?",
     "shape": "",
     "A": "Kupkuru bir toprakla karşılaştık.",
@@ -117,10 +117,10 @@
     "D": "Büyük bir kalabalık toplanmıştı.",
     "E": "Dar bir sokaktan geçtik.",
     "correct": "A",
-    "Açıklama": "‘Kupkuru’ sözcüğünde 'kurunun' ilk hecesi değiştirilerek pekiştirme yapılmıştır (kapkara, sapsarı gibi)."
+    "Açıklama": "'Kuru' sıfatı 'm,p,r,s' ünsüzlerinden biriyle 'Kupkuru' yapılarak pekiştirilmiştir."
   },
   {
-    "id": 110,
+    "id": 11,
     "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde 'karşıtlık' anlamı yoktur?",
     "shape": "",
     "A": "Yorgundu ama çalışmaya devam etti.",
@@ -129,10 +129,10 @@
     "D": "Yıllar geçti, hiçbir şey değişmedi.",
     "E": "Sert görünüşünün altında yumuşacık bir kalp vardı.",
     "correct": "D",
-    "Açıklama": "D şıkkında karşıt iki durum (zıt anlam) yoktur; yalnızca zamanın geçmesine rağmen değişmeyen durum anlatılır. Diğerlerinde zıtlık (yorgun–çalışmak, az–çok, gülmek–ağlamak, sert–yumuşak) vardır."
+    "Açıklama": "D şıkkında birbirine zıt kavramlar veya durumlar yoktur. Diğerlerinde (yorgun-çalışmak, az-çok, gülmek-ağlamak, sert-yumuşak) zıtlık vardır."
   },
   {
-    "id": 111,
+    "id": 12,
     "question": "EDEBİYAT: Aşağıdakilerden hangisi 'Batı etkisinde gelişen Türk edebiyatı' dönemlerinden biri değildir?",
     "shape": "",
     "A": "Tanzimat Edebiyatı",
@@ -141,22 +141,22 @@
     "D": "Milli Edebiyat",
     "E": "Divan Edebiyatı",
     "correct": "E",
-    "Açıklama": "Divan Edebiyatı İslamiyet etkisinde gelişmiştir; diğerleri Batı etkisinde gelişen dönemlerdir."
+    "Açıklama": "Divan Edebiyatı, İslamiyet etkisinde gelişen ve Batı'ya yönelmeden önceki klasik dönem edebiyatımızdır."
   },
   {
-    "id": 112,
-    "question": "EDEBİYAT: Aşağıdaki sanatçı-eser eşleştirmelerinden hangisi yanlıştır?",
+    "id": 13,
+    "question": "EDEBİYAT: Türk edebiyatında 'ilk psikolojik roman' olarak kabul edilen 'Eylül' adlı eserin yazarı kimdir?",
     "shape": "",
-    "A": "Halit Ziya Uşaklıgil – Mai ve Siyah",
-    "B": "Reşat Nuri Güntekin – Yaprak Dökümü",
-    "C": "Yakup Kadri Karaosmanoğlu – Ankara",
-    "D": "Peyami Safa – Küçük Ağa",
-    "E": "Tarık Buğra – Küçük Ağa",
-    "correct": "D",
-    "Açıklama": "Küçük Ağa Tarık Buğra'ya aittir; Peyami Safa'nın ünlü romanları Dokuzuncu Hariciye Koğuşu, Fatih-Harbiye vb.dir."
+    "A": "Halit Ziya Uşaklıgil",
+    "B": "Mehmet Rauf",
+    "C": "Peyami Safa",
+    "D": "Namık Kemal",
+    "E": "Recaizade Mahmut Ekrem",
+    "correct": "B",
+    "Açıklama": "Servet-i Fünun dönemi yazarlarından Mehmet Rauf, 'Eylül' romanıyla edebiyatımızdaki ilk psikolojik roman örneğini vermiştir."
   },
   {
-    "id": 113,
+    "id": 14,
     "question": "EDEBİYAT: 'Toplumcu gerçekçi' bir anlayışla köy ve kasaba yaşamını, toprak sorunlarını, ağalık düzenini anlatan eserleriyle tanınan yazar aşağıdakilerden hangisidir?",
     "shape": "",
     "A": "Orhan Kemal",
@@ -165,10 +165,10 @@
     "D": "Oğuz Atay",
     "E": "Sait Faik Abasıyanık",
     "correct": "A",
-    "Açıklama": "Orhan Kemal, özellikle işçi-köylü ilişkilerini, yoksulluğu ve toplumsal sorunları işleyen toplumcu gerçekçi bir romancıdır."
+    "Açıklama": "Orhan Kemal, özellikle Çukurova insanını, işçi ve köylü sınıfının sorunlarını işleyen toplumcu gerçekçi yazarlarımızdandır."
   },
   {
-    "id": 114,
+    "id": 15,
     "question": "EDEBİYAT: Aşağıdaki şairlerden hangisi 'İkinci Yeni' akımı içinde yer almaz?",
     "shape": "",
     "A": "Edip Cansever",
@@ -177,10 +177,10 @@
     "D": "İlhan Berk",
     "E": "Faruk Nafiz Çamlıbel",
     "correct": "E",
-    "Açıklama": "Faruk Nafiz Çamlıbel, hece ölçüsüyle yazan, 'memleketçi' bir şairdir; İkinci Yeni'de yer almaz."
+    "Açıklama": "Faruk Nafiz Çamlıbel, 'Beş Hececiler' topluluğunda yer alan ve Milli Edebiyat zevkini sürdüren bir şairdir."
   },
   {
-    "id": 115,
+    "id": 16,
     "question": "EDEBİYAT: Aşağıdakilerden hangisi 'destan'dan 'romana' geçişte bir ara tür olarak kabul edilir?",
     "shape": "",
     "A": "Mesnevi",
@@ -189,10 +189,10 @@
     "D": "Anı",
     "E": "Sergüzeşt",
     "correct": "B",
-    "Açıklama": "Halk hikâyeleri hem sözlü gelenekten beslenir, hem de olay, kişi, zaman unsurlarını içermesi bakımından romana yaklaşan bir ara türdür."
+    "Açıklama": "Dede Korkut Hikayeleri gibi halk hikâyeleri, destan geleneğinden modern hikâye ve romana geçişin ürünüdür."
   },
   {
-    "id": 116,
+    "id": 17,
     "question": "EDEBİYAT: 'Şiirsel bir dille kaleme alınmış anı-roman' olarak da nitelendirilen 'Çocukluğum, Gençliğim, Siyasi ve Edebi Hatıralarım' adlı eser kime aittir?",
     "shape": "",
     "A": "Yakup Kadri Karaosmanoğlu",
@@ -201,10 +201,10 @@
     "D": "Yahya Kemal Beyatlı",
     "E": "Halit Ziya Uşaklıgil",
     "correct": "D",
-    "Açıklama": "Yahya Kemal Beyatlı, anılarını bu eserde toplamış; üslubu nedeniyle eser edebiyatımızda özel bir yere sahiptir."
+    "Açıklama": "Yahya Kemal Beyatlı, bu eserinde geçmişe dair anılarını kendine has üslubuyla anlatmıştır."
   },
   {
-    "id": 117,
+    "id": 18,
     "question": "EDEBİYAT: Aşağıdakilerden hangisi 'deneme' türünün bir özelliği değildir?",
     "shape": "",
     "A": "Yazar samimi bir üslupla kendi düşüncelerini anlatır.",
@@ -213,10 +213,10 @@
     "D": "Okurla konuşuyormuş gibi içten bir dil kullanılır.",
     "E": "İspat zorunluluğu yoktur.",
     "correct": "B",
-    "Açıklama": "Denemede kesin yargılar verme, kanıtlama zorunluluğu yoktur; düşüncelerin serbestçe ortaya konması esastır."
+    "Açıklama": "Deneme türünde yazar kesin yargılara varmayı veya düşüncesini kanıtlamayı amaçlamaz; 'ben' diliyle düşüncelerini paylaşır."
   },
   {
-    "id": 118,
+    "id": 19,
     "question": "EDEBİYAT: Aşağıdaki eserlerden hangisi 'Oğuz Atay'a ait değildir?",
     "shape": "",
     "A": "Tehlikeli Oyunlar",
@@ -225,10 +225,10 @@
     "D": "Bir Bilim Adamının Romanı",
     "E": "Saatleri Ayarlama Enstitüsü",
     "correct": "E",
-    "Açıklama": "Saatleri Ayarlama Enstitüsü Ahmet Hamdi Tanpınar'a aittir. Diğer eserler Oğuz Atay'ın önemli yapıtlarıdır."
+    "Açıklama": "Saatleri Ayarlama Enstitüsü, Ahmet Hamdi Tanpınar'ın eseridir."
   },
   {
-    "id": 119,
+    "id": 20,
     "question": "EDEBİYAT: Aşağıdaki türlerden hangisi 'öyküleyici anlatımın' en az kullanıldığı türdür?",
     "shape": "",
     "A": "Roman",
@@ -237,10 +237,10 @@
     "D": "Makale",
     "E": "Destan",
     "correct": "D",
-    "Açıklama": "Makale, düşünce yazısıdır; açıklayıcı ve tartışmacı anlatım ağır basar. Öyküleyici anlatım en az bu türde kullanılır."
+    "Açıklama": "Makale öğretici (didaktik) bir türdür; açıklayıcı ve tartışmacı anlatım kullanılır. Diğerlerinde olay örgüsü (öyküleme) vardır."
   },
   {
-    "id": 120,
+    "id": 21,
     "question": "EDEBİYAT: Aşağıdaki sanatçılardan hangisi daha çok 'öykü' türündeki eserleriyle tanınır?",
     "shape": "",
     "A": "Sait Faik Abasıyanık",
@@ -249,10 +249,10 @@
     "D": "Necip Fazıl Kısakürek",
     "E": "Tevfik Fikret",
     "correct": "A",
-    "Açıklama": "Sait Faik, özellikle sıradan insanların yaşamlarını anlattığı hikâyeleriyle tanınan önemli bir öykücüdür."
+    "Açıklama": "Sait Faik Abasıyanık, Türk edebiyatında Çehov tarzı (durum) öykücülüğünün en önemli temsilcisidir."
   },
   {
-    "id": 121,
+    "id": 22,
     "question": "TARİH: İlk Türk-İslam devletlerinden olan Karahanlıların hükümdarı Satuk Buğra Han ile ilgili aşağıdaki bilgilerden hangisi doğrudur?",
     "shape": "",
     "A": "Hristiyanlığı kabul eden ilk Türk hükümdarıdır.",
@@ -261,10 +261,10 @@
     "D": "Türk tarihindeki ilk yazılı kanunları hazırlamıştır.",
     "E": "İlk Türk alfabesini düzenlemiştir.",
     "correct": "B",
-    "Açıklama": "Satuk Buğra Han döneminde Karahanlılar İslamiyet'i resmi din olarak kabul etmişlerdir."
+    "Açıklama": "Satuk Buğra Han Müslüman olmuş ve Abdülkerim adını alarak Karahanlı Devleti'nin İslamiyet'i kabul etmesini sağlamıştır."
   },
   {
-    "id": 122,
+    "id": 23,
     "question": "TARİH: Aşağıdakilerden hangisi Haçlı Seferleri’nin sonuçlarından biri değildir?",
     "shape": "",
     "A": "Doğu-batı ticaret yollarının canlanması",
@@ -273,10 +273,10 @@
     "D": "Feodalitenin zayıflamaya başlaması",
     "E": "Doğu ve Batı kültürlerinin karşılıklı etkileşimi",
     "correct": "C",
-    "Açıklama": "Haçlı Seferleri sonunda Türkler Anadolu'dan çekilmemiş; aksine bölgedeki varlıkları devam etmiştir. Diğerleri seferlerin sonuçlarındandır."
+    "Açıklama": "Haçlı Seferleri Türkleri Anadolu'dan atamamış, aksine Türklerin İslam dünyasını savunmasıyla saygınlıkları artmıştır."
   },
   {
-    "id": 123,
+    "id": 24,
     "question": "TARİH: Osmanlılarda 'tahrir defterleri' aşağıdakilerden hangisi için tutulmuştur?",
     "shape": "",
     "A": "Savaş stratejilerini belirlemek için",
@@ -285,10 +285,10 @@
     "D": "Medreselerdeki öğrencileri kaydetmek için",
     "E": "Kapitülasyonların şartlarını kaydetmek için",
     "correct": "B",
-    "Açıklama": "Tahrir defterleri, Osmanlı'da vergi ve asker kaynağını tespit etmek amacıyla nüfus ve toprak kayıtlarının tutulduğu defterlerdir."
+    "Açıklama": "Fethedilen bölgelerin ekonomik potansiyeli, vergi gelirleri ve nüfusu 'Tahrir Defterleri'ne kaydedilirdi."
   },
   {
-    "id": 124,
+    "id": 25,
     "question": "TARİH: Aşağıdakilerden hangisi Lale Devri'nde yapılan ıslahatlardan biridir?",
     "shape": "",
     "A": "Takvim-i Vekayi'nin çıkarılması",
@@ -297,11 +297,11 @@
     "D": "Yeniçeri Ocağı'nın kaldırılması",
     "E": "Mecelle'nin hazırlanması",
     "correct": "C",
-    "Açıklama": "İbrahim Müteferrika tarafından ilk matbaa Lale Devri'nde (III. Ahmet dönemi) kurulmuştur."
+    "Açıklama": "İbrahim Müteferrika ve Sait Efendi tarafından ilk Türk matbaası Lale Devri'nde (1727) kurulmuştur."
   },
   {
-    "id": 125,
-    "question": "TARİH: Aşağıdaki savaşlardan hangisi Kurtuluş Savaşı sırasında Batı Cephesi'nde kazanılan kesin Türk zaferidir?",
+    "id": 26,
+    "question": "TARİH: Aşağıdaki savaşlardan hangisi Kurtuluş Savaşı sırasında Batı Cephesi'nde kazanılan 'kesin' Türk zaferidir?",
     "shape": "",
     "A": "I. İnönü Savaşı",
     "B": "II. İnönü Savaşı",
@@ -309,10 +309,10 @@
     "D": "Büyük Taarruz (Başkomutanlık Meydan Muharebesi)",
     "E": "Kütahya-Eskişehir Savaşları",
     "correct": "D",
-    "Açıklama": "Büyük Taarruz, Yunan kuvvetlerinin tamamen Anadolu'dan atıldığı kesin Türk zaferidir."
+    "Açıklama": "Büyük Taarruz (30 Ağustos), düşmanın Anadolu'dan tamamen atılmasını sağlayan nihai ve kesin zaferdir."
   },
   {
-    "id": 126,
+    "id": 27,
     "question": "TARİH: 'Misakımillî' kararları aşağıdakilerden hangisinde kabul edilmiştir?",
     "shape": "",
     "A": "Amasya Genelgesi",
@@ -321,10 +321,10 @@
     "D": "Son Osmanlı Mebusan Meclisi",
     "E": "I. TBMM",
     "correct": "D",
-    "Açıklama": "Misakımillî, Son Osmanlı Mebusan Meclisi’nde kabul edilen ve milli sınırları belirleyen belgedir."
+    "Açıklama": "Misakımillî (Milli Yemin), İstanbul'da toplanan Son Osmanlı Mebusan Meclisi'nde kabul edilmiştir."
   },
   {
-    "id": 127,
+    "id": 28,
     "question": "TARİH: Türkiye Cumhuriyeti'nde 'halifeliğin kaldırılması' kararı hangi yılda alınmıştır?",
     "shape": "",
     "A": "1922",
@@ -333,10 +333,10 @@
     "D": "1925",
     "E": "1928",
     "correct": "C",
-    "Açıklama": "Halifelik, 3 Mart 1924’te çıkarılan kanunla kaldırılmıştır."
+    "Açıklama": "3 Mart 1924 tarihinde Halifelik kaldırılmış ve Osmanlı Hanedanı yurt dışına çıkarılmıştır."
   },
   {
-    "id": 128,
+    "id": 29,
     "question": "TARİH: Aşağıdakilerden hangisi Atatürk'ün 'Cumhuriyetçilik' ilkesiyle doğrudan ilişkilidir?",
     "shape": "",
     "A": "Cumhuriyetin ilanı",
@@ -345,10 +345,10 @@
     "D": "Şapka Kanunu'nun çıkarılması",
     "E": "Aşar vergisinin kaldırılması",
     "correct": "A",
-    "Açıklama": "Cumhuriyetin ilanı, yönetim şeklini 'cumhuriyet' yapan temel inkılaptır ve Cumhuriyetçilik ilkesiyle doğrudan bağlantılıdır."
+    "Açıklama": "Cumhuriyetin ilanı, devletin yönetim şeklini belirleyen ve milli egemenliği esas alan temel devrimdir."
   },
   {
-    "id": 129,
+    "id": 30,
     "question": "TARİH: II. Dünya Savaşı'ndan sonra dünya iki blok halinde kutuplaşmış ve uzun süren bir 'Soğuk Savaş' dönemi başlamıştır. Bu iki blokun liderliğini yapan ülkeler aşağıdakilerden hangisidir?",
     "shape": "",
     "A": "İngiltere – Almanya",
@@ -357,10 +357,10 @@
     "D": "Almanya – Japonya",
     "E": "Çin – Hindistan",
     "correct": "C",
-    "Açıklama": "Soğuk Savaş döneminde kapitalist bloğun lideri ABD, sosyalist bloğun lideri ise SSCB olmuştur."
+    "Açıklama": "Batı Bloku'nun lideri ABD (Amerika), Doğu Bloku'nun lideri SSCB (Sovyetler Birliği) olmuştur."
   },
   {
-    "id": 130,
+    "id": 31,
     "question": "TARİH: Osmanlı Devleti'nde 'ilk kez anayasaya dayalı meşruti yönetime geçilmesi' hangi gelişme ile olmuştur?",
     "shape": "",
     "A": "Islahat Fermanı",
@@ -369,10 +369,10 @@
     "D": "II. Meşrutiyet'in ilanı",
     "E": "Sened-i İttifak",
     "correct": "C",
-    "Açıklama": "1876'da Kanunuesasi'nin ilanıyla I. Meşrutiyet başlamış, Osmanlı'da ilk kez meclisli, anayasal rantım şekline geçilmiştir."
+    "Açıklama": "1876'da Kanunuesasi'nin ilanı ile Osmanlı'da ilk kez halk yönetime katılmış ve anayasal düzene geçilmiştir."
   },
   {
-    "id": 131,
+    "id": 32,
     "question": "COĞRAFYA: Aşağıdakilerden hangisi Türkiye'de 'yaz turizmi'nin en çok geliştiği bölgedir?",
     "shape": "",
     "A": "Karadeniz Bölgesi",
@@ -381,10 +381,10 @@
     "D": "Doğu Anadolu Bölgesi",
     "E": "İç Anadolu Bölgesi",
     "correct": "C",
-    "Açıklama": "Akdeniz Bölgesi, uzun kıyı şeridi, sıcak iklimi ve turistik merkezleriyle yaz turizminin en geliştiği bölgedir."
+    "Açıklama": "Güneşlenme süresinin uzunluğu ve deniz suyu sıcaklığı nedeniyle Akdeniz Bölgesi yaz turizminde ilk sıradadır."
   },
   {
-    "id": 132,
+    "id": 33,
     "question": "COĞRAFYA: Aşağıdakilerden hangisi 'Türkiye'nin matematik konumunun' sonuçlarından biridir?",
     "shape": "",
     "A": "Dört mevsimin belirgin olarak yaşanması",
@@ -393,10 +393,10 @@
     "D": "Deprem kuşağında bulunması",
     "E": "İklim çeşitliliğinin fazla olması",
     "correct": "A",
-    "Açıklama": "Türkiye'nin orta kuşakta (enlemler) yer alması, dört mevsimin belirgin yaşanmasının matematik konumla ilgili bir sonucudur."
+    "Açıklama": "Türkiye'nin Orta Kuşak'ta yer alması (Matematik/Mutlak Konum), dört mevsimin belirgin yaşanmasını sağlar."
   },
   {
-    "id": 133,
+    "id": 34,
     "question": "COĞRAFYA: Aşağıdakilerden hangisi tarımı olumsuz etkileyen 'doğal' bir faktördür?",
     "shape": "",
     "A": "Pazar yetersizliği",
@@ -405,10 +405,10 @@
     "D": "Ulaşım imkânlarının azlığı",
     "E": "Sermaye yetersizliği",
     "correct": "C",
-    "Açıklama": "İklim, doğal (fiziki) bir faktördür ve elverişsiz iklim koşulları tarımı olumsuz etkiler. Diğerleri beşerî faktörlerdir."
+    "Açıklama": "İklim fiziki (doğal) bir faktördür. Diğer şıklar beşeri (insan kaynaklı) veya ekonomiktir."
   },
   {
-    "id": 134,
+    "id": 35,
     "question": "COĞRAFYA: Toprakların, başta su olmak üzere dış kuvvetlerin etkisiyle taşınmasına ne ad verilir?",
     "shape": "",
     "A": "Erozyon",
@@ -417,10 +417,10 @@
     "D": "Volkanizma",
     "E": "Tsunami",
     "correct": "A",
-    "Açıklama": "Erozyon, toprağın su veya rüzgâr gibi etkenlerle aşındırılıp taşınması olayıdır."
+    "Açıklama": "Erozyon (toprak aşınması), verimli toprak tabakasının rüzgar veya su ile süpürülmesidir."
   },
   {
-    "id": 135,
+    "id": 36,
     "question": "COĞRAFYA: 'Boğazlar' ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
     "shape": "",
     "A": "İstanbul ve Çanakkale Boğazları Türkiye sınırları içindedir.",
@@ -429,10 +429,10 @@
     "D": "Boğazlar sadece Türkiye'nin iç suyolu kabul edilir, uluslararası önemi yoktur.",
     "E": "Boğazlar, jeopolitik açıdan Türkiye'ye büyük bir stratejik önem kazandırır.",
     "correct": "D",
-    "Açıklama": "Boğazlar uluslararası deniz ulaşımı açısından çok önemlidir; sadece Türkiye'yi ilgilendiren iç suyolu kabul edilmez."
+    "Açıklama": "Türk Boğazları, Karadeniz'e kıyısı olan ülkelerin dünyaya açılan kapısı olduğu için uluslararası önemi çok büyüktür."
   },
   {
-    "id": 136,
+    "id": 37,
     "question": "COĞRAFYA: Aşağıdakilerden hangisi 'yer şekillerinin engebeli' olduğu bir bölgede görülmesi beklenmeyen bir durumdur?",
     "shape": "",
     "A": "Ulaşım maliyetlerinin artması",
@@ -441,10 +441,10 @@
     "D": "Sanayinin yoğun olarak gelişmesi",
     "E": "Yerleşim alanlarının dar ve sınırlı olması",
     "correct": "D",
-    "Açıklama": "Engebeli alanlarda ulaşım ve yerleşim zor olduğundan sanayinin yoğun gelişmesi beklenmez; sanayi genellikle ulaşımı kolay, düz alanlarda gelişir."
+    "Açıklama": "Engebeli arazilerde ulaşım zor, hammadde temini güçtür; bu nedenle sanayi genellikle düz ve ulaşımı kolay yerlerde gelişir."
   },
   {
-    "id": 137,
+    "id": 38,
     "question": "COĞRAFYA: Aşağıdaki yenilenebilir enerji kaynaklarından hangisi Türkiye'de en fazla elektrik üretiminde kullanılmaktadır?",
     "shape": "",
     "A": "Jeotermal enerji",
@@ -453,10 +453,10 @@
     "D": "Hidrolik (baraj) enerji",
     "E": "Biyokütle enerjisi",
     "correct": "D",
-    "Açıklama": "Türkiye'de yenilenebilir kaynaklar içinde elektrik üretiminde en büyük pay hidrolik (barajlı) enerjiye aittir."
+    "Açıklama": "Türkiye'nin yer şekillerinin engebeli ve yüksek olması hidroelektrik potansiyelini artırmış, en büyük yenilenebilir payı hidroliğe vermiştir."
   },
   {
-    "id": 138,
+    "id": 39,
     "question": "COĞRAFYA: 'Paralel' kavramı ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
     "shape": "",
     "A": "Ekvator, 0° enlemidir.",
@@ -465,10 +465,10 @@
     "D": "Paraleller doğu-batı doğrultusunda uzanır.",
     "E": "Başlangıç paraleli Greenwich'tir.",
     "correct": "E",
-    "Açıklama": "Başlangıç paraleli Greenwich değil, Ekvator'dur. Greenwich, başlangıç meridyenidir."
+    "Açıklama": "Başlangıç paraleli Ekvator'dur. Greenwich ise başlangıç meridyenidir."
   },
   {
-    "id": 139,
+    "id": 40,
     "question": "COĞRAFYA: Aşağıdakilerden hangisi Türkiye'de tarım ürünlerinin çeşitliliğinin artmasında etkili olan faktörlerden biridir?",
     "shape": "",
     "A": "Tek tip iklimin hakim olması",
@@ -477,10 +477,10 @@
     "D": "Nüfusun homojen dağılması",
     "E": "Sanayinin her bölgede eşit gelişmesi",
     "correct": "B",
-    "Açıklama": "Türkiye'de farklı iklim tipleri ve çeşitli yer şekilleri, tarım ürünlerinde de çeşitlilik ortaya çıkarmaktadır."
+    "Açıklama": "Kısa mesafelerde değişen yer şekilleri ve üç tarafının denizlerle çevrili olması farklı iklimleri, bu da ürün çeşitliliğini doğurur."
   },
   {
-    "id": 140,
+    "id": 41,
     "question": "COĞRAFYA: Aşağıdaki doğal afetlerden hangisinin görülmesinde 'eğim ve yağış' faktörleri birlikte daha etkilidir?",
     "shape": "",
     "A": "Deprem",
@@ -489,10 +489,10 @@
     "D": "Kuraklık",
     "E": "Orman yangını",
     "correct": "C",
-    "Açıklama": "Heyelan, genellikle eğimli arazilerde yoğun yağışın etkisiyle toprağın kayması sonucu oluşur; eğim ve yağış belirleyici iki faktördür."
+    "Açıklama": "Heyelan (Kütle hareketi); arazinin eğimli olması ve toprağın yağışla suya doyup ağırlaşması sonucu oluşur."
   },
   {
-    "id": 141,
+    "id": 42,
     "question": "FELSEFE: 'Cogito, ergo sum' (Düşünüyorum, öyleyse varım) önermesiyle bilinen filozof aşağıdakilerden hangisidir?",
     "shape": "",
     "A": "Platon",
@@ -501,10 +501,10 @@
     "D": "Kant",
     "E": "Spinoza",
     "correct": "C",
-    "Açıklama": "Descartes, bilgi felsefesinin temel önermelerinden biri hâline gelen bu cümleyle düşünmeyi var oluşun kanıtı olarak görmüştür."
+    "Açıklama": "Descartes, her şeyden şüphe ederek ulaştığı ilk kesin bilginin kendi düşüncesi ve varlığı olduğunu bu sözle ifade etmiştir."
   },
   {
-    "id": 142,
+    "id": 43,
     "question": "FELSEFE: Aşağıdakilerden hangisi 'rasyonalizm'in (akılcılık) temel iddiasıdır?",
     "shape": "",
     "A": "Bilginin kaynağı duyu ve deneydir.",
@@ -513,22 +513,22 @@
     "D": "Hiçbir konuda kesin bilgiye ulaşılamaz.",
     "E": "Gerçeklik tamamen maddenin ürünüdür.",
     "correct": "C",
-    "Açıklama": "Rasyonalistlere göre, değişmeyen genel ve zorunlu doğrulara ancak akıl yoluyla ulaşılabilir; akıl temel bilgi kaynağıdır."
+    "Açıklama": "Rasyonalizm, bilginin doğuştan geldiğini ve doğru bilgiye ancak akıl yoluyla ulaşılabileceğini savunur."
   },
   {
-    "id": 143,
-    "question": "FELSEFE: Ahlaki eylemlerde niyet ve ödev kavramını merkeze alan, 'iyi niyet' ve 'ödev ahlakı' ile tanınan filozof aşağıdakilerden hangisidir?",
+    "id": 44,
+    "question": "FELSEFE: 'Değişmeyen tek şey değişimin kendisidir.' sözüyle evrendeki oluşu ve değişimi vurgulayan filozof kimdir?",
     "shape": "",
-    "A": "Aristoteles",
-    "B": "J. S. Mill",
-    "C": "Immanuel Kant",
-    "D": "Nietzsche",
-    "E": "Sartre",
-    "correct": "C",
-    "Açıklama": "Kant'a göre ahlaki değeri belirleyen, eylemin sonucundan çok, kişinin iyi niyetle ödevi gereği davranmasıdır."
+    "A": "Parmenides",
+    "B": "Herakleitos",
+    "C": "Platon",
+    "D": "Thales",
+    "E": "Demokritos",
+    "correct": "B",
+    "Açıklama": "Herakleitos, 'Aynı nehirde iki kez yıkanılmaz' diyerek evrendeki sürekli akışı ve değişimi felsefesinin merkezine koymuştur."
   },
   {
-    "id": 144,
+    "id": 45,
     "question": "FELSEFE: 'Pragmatizm' (faydacılık) akımına göre bir düşüncenin doğruluğu neye göre değerlendirilir?",
     "shape": "",
     "A": "Geleneklere uygunluğuna",
@@ -537,10 +537,10 @@
     "D": "İnsana sağladığı yarar ve işe yararlığına",
     "E": "Sezgisel olarak kabul edilmesine",
     "correct": "D",
-    "Açıklama": "Pragmatistlere göre bir düşünce, pratikte işe yarıyor ve fayda sağlıyorsa doğrudur."
+    "Açıklama": "Pragmatizm, teorik doğruluktan ziyade pratik sonuca ve sağladığı faydaya bakar."
   },
   {
-    "id": 145,
+    "id": 46,
     "question": "FELSEFE: 'Hiçbir şey yoktur; olsa bile bilemeyiz; bilsek bile başkalarına aktaramayız.' sözü, aşağıdaki felsefi görüşlerden hangisini en iyi ifade eder?",
     "shape": "",
     "A": "Rasyonalizm",
@@ -549,10 +549,10 @@
     "D": "Pozitivizm",
     "E": "Empirizm",
     "correct": "C",
-    "Açıklama": "Bu söz, varlığın ve bilginin anlamını reddeden uç bir tutumu ifade eder; bu da nihilizmdir."
+    "Açıklama": "Gorgias'a ait bu söz, varlığı, bilgiyi ve iletişimi reddeden Nihilizm (Hiççilik) görüşünün en uç ifadesidir."
   },
   {
-    "id": 146,
+    "id": 47,
     "question": "FELSEFE: Aşağıdakilerden hangisi 'bilimsel bilginin' bir özelliği değildir?",
     "shape": "",
     "A": "Sistemli ve düzenlidir.",
@@ -561,10 +561,10 @@
     "D": "Mutlak ve hiçbir zaman değişmez doğrular içerir.",
     "E": "Eleştiriye ve denetime açıktır.",
     "correct": "D",
-    "Açıklama": "Bilimsel bilgiler yeni bulgularla değişebilir; mutlak ve değişmez değildir. Diğer seçenekler bilimsel bilginin özellikleridir."
+    "Açıklama": "Bilimsel bilgi kendi içinde tutarlı olsa da mutlak değildir; yeni bulgularla değişebilir ve gelişebilir (Dinamiktir)."
   },
   {
-    "id": 147,
+    "id": 48,
     "question": "FELSEFE: 'Varlık sadece algılarımızdan ibarettir; var olmak algılanmış olmaktır.' diyen görüş aşağıdakilerden hangisidir?",
     "shape": "",
     "A": "Realizm",
@@ -573,10 +573,10 @@
     "D": "Materyalizm",
     "E": "Varoluşçuluk",
     "correct": "C",
-    "Açıklama": "Fenomenalizm, varlığı 'görünüşler' ve 'algılar' düzeyinde ele alır; var olan, algılanan şeydir."
+    "Açıklama": "Fenomenalizm, nesnelerin kendi başlarına değil, ancak bizim algıladığımız şekliyle (fenomen olarak) var olduğunu savunur."
   },
   {
-    "id": 148,
+    "id": 49,
     "question": "FELSEFE: Aşağıdakilerden hangisi 'siyaset felsefesinin' temel sorularından biridir?",
     "shape": "",
     "A": "Güzel nedir?",
@@ -585,10 +585,10 @@
     "D": "En adil yönetim biçimi hangisidir?",
     "E": "Varlığın temel unsuru nedir?",
     "correct": "D",
-    "Açıklama": "Siyaset felsefesi, devlet, iktidar, özgürlük ve adalet gibi kavramlarla birlikte 'en adil yönetim biçimi' sorusunu tartışır."
+    "Açıklama": "Siyaset felsefesi; iktidar, devlet, hak, adalet ve yönetim biçimleri üzerine sorular sorar."
   },
   {
-    "id": 149,
+    "id": 50,
     "question": "FELSEFE: Aşağıdakilerden hangisi 'estetik' felsefesinin ilgi alanına girer?",
     "shape": "",
     "A": "İyi-kötü ayrımı",
@@ -597,22 +597,22 @@
     "D": "Varlığın var olup olmadığı",
     "E": "Bilginin doğruluğu",
     "correct": "C",
-    "Açıklama": "Estetik; güzel, çirkin, sanat, beğeni gibi kavramları inceler; sanat eserinin değerini tartışır."
+    "Açıklama": "Estetik, güzeli ve sanat eserinin niteliğini inceleyen felsefe disiplinidir."
   },
   {
-    "id": 150,
-    "question": "FELSEFE: 'Determinist' bir bakış açısına göre aşağıdakilerden hangisi söylenebilir?",
+    "id": 51,
+    "question": "FELSEFE: 'Varoluş özden önce gelir. İnsan önce dünyaya gelir, sonra seçimleriyle kendi özünü oluşturur.' görüşü hangi felsefi akıma aittir?",
     "shape": "",
-    "A": "Evren tamamen rastlantılarla doludur.",
-    "B": "Her olayın belirli nedenleri vardır.",
-    "C": "İnsan davranışlarının hiçbir sebebi yoktur.",
-    "D": "Özgür irade sınırsızdır.",
-    "E": "Bilgiye ulaşmak mümkün değildir.",
-    "correct": "B",
-    "Açıklama": "Determinizm, evrendeki her olayın belirli nedenlere bağlı olarak zorunlu biçimde meydana geldiğini savunur."
+    "A": "Egzistansiyalizm (Varoluşçuluk)",
+    "B": "Pozitivizm",
+    "C": "Materyalizm",
+    "D": "İdealizm",
+    "E": "Empirizm",
+    "correct": "A",
+    "Açıklama": "Jean-Paul Sartre'ın öncülüğünü yaptığı Varoluşçuluk, insanın belirlenmiş bir kaderi olmadığını, özgür seçimleriyle kendini yarattığını savunur."
   },
   {
-    "id": 151,
+    "id": 52,
     "question": "DİN KÜLTÜRÜ: İslam'a göre 'amel' kavramı aşağıdakilerden hangisini ifade eder?",
     "shape": "",
     "A": "Kalben inanmayı",
@@ -621,10 +621,10 @@
     "D": "Sadece zorunlu ibadetleri",
     "E": "Sadece ahiret ile ilgili konuları",
     "correct": "C",
-    "Açıklama": "Amel, kişinin inancı doğrultusunda yaptığı davranış ve eylemleri ifade eder."
+    "Açıklama": "Amel, kişinin imanı gereği yaptığı her türlü iyi davranış, ibadet ve eylemdir."
   },
   {
-    "id": 152,
+    "id": 53,
     "question": "DİN KÜLTÜRÜ: Aşağıdakilerden hangisi 'iman esasları' arasında yer almaz?",
     "shape": "",
     "A": "Allah'a iman",
@@ -633,22 +633,22 @@
     "D": "Peygamberlere iman",
     "E": "Namaza iman",
     "correct": "E",
-    "Açıklama": "Namaz, İslam'ın şartlarındandır; iman esasları arasında değildir."
+    "Açıklama": "Namaz kılmak imanın şartı (esası) değil, İslam'ın şartıdır (ibadettir). İmanın şartları inançla ilgilidir."
   },
   {
-    "id": 153,
-    "question": "DİN KÜLTÜRÜ: İslam'a göre 'kul hakkı' ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "id": 54,
+    "question": "DİN KÜLTÜRÜ: Bir kimsenin arkasından, duyduğunda hoşlanmayacağı şeyleri söylemeye ne ad verilir?",
     "shape": "",
-    "A": "Kul hakkı sadece maddi konularda söz konusudur.",
-    "B": "Kul hakkı, sadece devlet görevlilerini ilgilendirir.",
-    "C": "Kul hakkı ihlâl edildiğinde sadece Allah'tan af dilemek yeterlidir.",
-    "D": "Kul hakkı hem Allah'a hem de insana karşı işlenen bir haksızlıktır.",
-    "E": "Kul hakkı sadece ibadetleri terk etmekle oluşur.",
-    "correct": "D",
-    "Açıklama": "Kul hakkı, başka insanların malına, canına, onuruna zarar vermeyi içerir; bu durumda hem Allah'a karşı günah hem de kulun rızasını gerektiren bir haksızlık söz konusudur."
+    "A": "İftira",
+    "B": "Gıybet",
+    "C": "Haset",
+    "D": "Suizan",
+    "E": "Tecessüs",
+    "correct": "B",
+    "Açıklama": "Gıybet (dedikodu), bir kişinin gıyabında, doğru bile olsa hoşlanmayacağı şeyleri konuşmaktır ve haramdır."
   },
   {
-    "id": 154,
+    "id": 55,
     "question": "DİN KÜLTÜRÜ: Aşağıdakilerden hangisi 'İhsan' kavramını en iyi açıklar?",
     "shape": "",
     "A": "Sadece görünürde ibadet etmek",
@@ -657,10 +657,10 @@
     "D": "Sadece insanlara yardım etmek",
     "E": "Sadece ilim öğrenmek",
     "correct": "B",
-    "Açıklama": "İhsan, 'Allah'ı görüyormuş gibi O'na ibadet etmek; her an O'nun gözetiminde olduğunun bilincinde olmaktır."
+    "Açıklama": "Cibril hadisinde İhsan; 'Allah'ı görüyormuşsun gibi ibadet etmendir, zira sen O'nu görmesen de O seni görmektedir' şeklinde tanımlanır."
   },
   {
-    "id": 155,
+    "id": 56,
     "question": "DİN KÜLTÜRÜ: Aşağıdakilerden hangisi 'Hz. Muhammed'in (s.a.v.) özelliklerinden biri olarak kabul edilen 'Emin' sıfatının anlamıdır?",
     "shape": "",
     "A": "Doğruyu söyleyen",
@@ -669,22 +669,22 @@
     "D": "Adaletli olan",
     "E": "Merhametli olan",
     "correct": "B",
-    "Açıklama": "Emin, 'güvenilir' anlamına gelir; Hz. Muhammed'e peygamberlikten önce de 'Muhammedü'l-Emin' denilmiştir."
+    "Açıklama": "'El-Emin', kendisine güvenilen, emanete hıyanet etmeyen demektir."
   },
   {
-    "id": 156,
-    "question": "DİN KÜLTÜRÜ: İslam'da 'farz' hükmü ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    "id": 57,
+    "question": "DİN KÜLTÜRÜ: Diliyle iman ettiğini söylediği halde, kalbiyle inanmayan kimseye ne ad verilir?",
     "shape": "",
-    "A": "Yapılması kesin olarak emredilen ibadet ve davranışlardır.",
-    "B": "Farzı yerine getiren sevap kazanır.",
-    "C": "Farzı terk eden günah işlemiş olur.",
-    "D": "Farzlar, kişilere göre değişir; herkes için farklıdır.",
-    "E": "Farzlar Kur'an ve sahih sünnetle sabittir.",
-    "correct": "D",
-    "Açıklama": "Farzlar kişiden kişiye değişmez; tüm mükellefler için geçerli genel hükümlerdir."
+    "A": "Mümin",
+    "B": "Kafir",
+    "C": "Münafık",
+    "D": "Müşrik",
+    "E": "Fasık",
+    "correct": "C",
+    "Açıklama": "Münafık, içi dışı bir olmayan, inanmadığı halde inanmış gibi görünen ikiyüzlü kimsedir."
   },
   {
-    "id": 157,
+    "id": 58,
     "question": "DİN KÜLTÜRÜ: Aşağıdakilerden hangisi 'Ramazan orucu' ile ilgili doğru bir bilgidir?",
     "shape": "",
     "A": "Sadece sabah namazından sonra tutulur.",
@@ -693,10 +693,10 @@
     "D": "Sadece Mekke'de bulunanlara farzdır.",
     "E": "Sadece gündüzleri yemek yememek anlamına gelir.",
     "correct": "C",
-    "Açıklama": "Ramazan orucu, ergenlik çağına gelmiş sağlıklı Müslümanlara farzdır; sadece yemekten değil, orucu bozan tüm davranışlardan uzak durmayı gerektirir."
+    "Açıklama": "Ramazan orucu, akıl sağlığı yerinde ve ergenlik çağına girmiş her Müslümana farzdır."
   },
   {
-    "id": 158,
+    "id": 59,
     "question": "DİN KÜLTÜRÜ: Aşağıdakilerden hangisi 'zekât verilecek kimseler' arasında sayılmaz?",
     "shape": "",
     "A": "Fakirler",
@@ -705,10 +705,10 @@
     "D": "Zenginler",
     "E": "Yoksul öğrenciler",
     "correct": "D",
-    "Açıklama": "Zekât, ihtiyaç sahibi kimselere verilir; zenginlerin zekât alması uygun değildir."
+    "Açıklama": "Zekât yoksulun hakkıdır; dinen zengin sayılan kişilere zekât verilmez."
   },
   {
-    "id": 159,
+    "id": 60,
     "question": "DİN KÜLTÜRÜ: Aşağıdakilerden hangisi 'İslam'ın temel amaçlarından (makâsıdü'ş-şeria)' biri olarak kabul edilen değerlerden değildir?",
     "shape": "",
     "A": "Canın korunması",
@@ -717,6 +717,6 @@
     "D": "Neslin korunması",
     "E": "Hırsın korunması",
     "correct": "E",
-    "Açıklama": "İslam'ın temel amaçları arasında dinin, canın, aklın, neslin ve malın korunması sayılır; hırsın korunması böyle bir ilke değildir."
+    "Açıklama": "İslam hukukunun temel amacı beş şeyi korumaktır: Can, Akıl, Mal, Nesil ve Din. 'Hırsın korunması' diye bir ilke yoktur."
   }
 ]
