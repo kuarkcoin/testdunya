@@ -28,13 +28,11 @@ const Zap = (props: React.SVGProps<SVGSVGElement>) => (
 const Target = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
 );
-// Yeni Kilit İkonu
 const Lock = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
 );
 
 // --- SINAV AYARLARI ---
-// Burada "count" değerlerini yüksek tutuyoruz ki kullanıcılar gelecekte daha fazla test olacağını görsün.
 const examConfig = [
   { 
     id: 'yks', 
@@ -62,7 +60,7 @@ const examConfig = [
     id: 'tus', 
     prefix: 'tus-deneme', 
     title: 'TUS Denemeleri', 
-    count: 22, 
+    count: 35, 
     desc: 'TUS için Temel ve Klinik Bilimler vaka soruları.',
     icon: <Activity className="w-6 h-6 text-white" />,
     gradient: 'from-emerald-500 to-teal-600',
@@ -72,7 +70,8 @@ const examConfig = [
 ];
 
 // Aktif edilecek test sayısı
-const ACTIVE_TEST_LIMIT = 10;
+// BURASI GÜNCELLENDİ: 10 -> 35 (Tüm 35 deneme ve diğerleri açık olur)
+const ACTIVE_TEST_LIMIT = 35;
 
 export default function HomePage() {
   const [completed, setCompleted] = useState<{ [key: string]: number[] }>({});
@@ -158,7 +157,7 @@ export default function HomePage() {
                   const testLinkId = `${exam.prefix}-${num}`;
                   const isDone = (completed[exam.id] || []).includes(num);
                   
-                  // Mantık: Numara 10'dan büyükse pasif yap
+                  // Mantık: Numara 35'ten küçük veya eşitse aktif olur. (Yani hepsi)
                   const isActive = num <= ACTIVE_TEST_LIMIT;
 
                   if (isActive) {
@@ -191,23 +190,20 @@ export default function HomePage() {
                       </Link>
                     );
                   } else {
-                    // PASİF TESTLER (DİV - Tıklanamaz)
+                    // PASİF TESTLER (Eğer ileride sayı 35'i geçerse burası çalışır)
                     return (
                       <div 
                         key={num}
-                        className="relative flex flex-col items-center justify-center py-3 px-2 rounded-xl border border-slate-100 bg-slate-50 text-slate-300 cursor-not-allowed overflow-hidden"
+                        className="relative flex flex-col items-center justify-center py-3 px-2 rounded-xl border border-slate-100 bg-slate-50 text-slate-300 cursor-not-allowed overflow-hidden group/lock"
                         title="Bu test yakında eklenecektir."
                       >
-                        {/* Kilit İkonu */}
                         <div className="mb-1.5 opacity-40">
                              <Lock className="w-5 h-5 text-slate-400" />
                         </div>
                         <span className="text-xs font-bold opacity-40">
                           {num}. Deneme
                         </span>
-                        
-                        {/* Opsiyonel: Yakında etiketi */}
-                        <div className="absolute inset-0 bg-white/40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                        <div className="absolute inset-0 bg-white/60 flex items-center justify-center opacity-0 group-hover/lock:opacity-100 transition-opacity">
                             <span className="text-[10px] font-bold text-slate-500 bg-white px-2 py-1 rounded-full shadow-sm border border-slate-200">Yakında</span>
                         </div>
                       </div>
