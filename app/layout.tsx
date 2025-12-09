@@ -39,10 +39,10 @@ export default function RootLayout({
       
       <body className={`${inter.className} bg-slate-50 text-slate-900 antialiased relative min-h-screen flex flex-col`}>
 
-        {/* --- GOOGLE ANALYTICS --- */}
-        {/* DİKKAT: 'G-XXXXXXXXXX' yerine kendi kodunu yazmalısın */}
+        {/* --- GOOGLE ANALYTICS (GÜNCELLENDİ) --- */}
+        {/* Senin Ölçüm Kimliğin: G-ZQK5MCQ3EG */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+          src="https://www.googletagmanager.com/gtag/js?id=G-ZQK5MCQ3EG"
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -51,7 +51,7 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', 'G-XXXXXXXXXX');
+            gtag('config', 'G-ZQK5MCQ3EG');
           `}
         </Script>
         {/* ------------------------ */}
