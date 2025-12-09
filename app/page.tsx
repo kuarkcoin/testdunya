@@ -31,6 +31,15 @@ const Target = (props: React.SVGProps<SVGSVGElement>) => (
 const Lock = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
 );
+// Yeni Diş İkonu
+const Tooth = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+    <path d="M12 2C7 2 7 7 7 9c0 4 2 6 5 6s5-2 5-6c0-2 0-7-5-7z" />
+    <path d="M7 9s0 4 2 6" />
+    <path d="M17 9s0 4-2 6" />
+    <path d="M9 22c0-2 1-4 3-4s3 2 3 4" />
+  </svg>
+);
 
 // --- SINAV AYARLARI ---
 // Burada her sınav için ayrı bir 'activeLimit' belirledik.
@@ -70,6 +79,19 @@ const examConfig = [
     gradient: 'from-emerald-500 to-teal-600',
     border: 'border-emerald-100',
     slug: 'tus-tip'
+  },
+  // --- YENİ EKLENEN DUS BÖLÜMÜ ---
+  { 
+    id: 'dus', 
+    prefix: 'dus-deneme', 
+    title: 'DUS Denemeleri', 
+    count: 10, 
+    activeLimit: 10, // DUS için 10 test de açık
+    desc: 'Diş Hekimliği Uzmanlık Sınavı için klinik ve temel sorular.',
+    icon: <Tooth className="w-6 h-6 text-white" />,
+    gradient: 'from-cyan-500 to-blue-500', 
+    border: 'border-cyan-100',
+    slug: 'dus-dis-hekimligi'
   }
 ];
 
@@ -96,14 +118,14 @@ export default function HomePage() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
               </span>
-              Online Sınav Merkezi v2.0
+              Online Sınav Merkezi v2.1
             </div>
             
             <h1 className="text-3xl md:text-5xl font-black tracking-tight leading-tight">
               TestDünya <span className="text-indigo-400">Sınav Platformu</span>
             </h1>
             <p className="text-slate-300 text-base md:text-lg max-w-xl leading-relaxed">
-              YKS, KPSS ve TUS sınavlarına <strong>yapay zeka destekli özgün sorularla</strong>, ücretsiz ve üyeliksiz hazırlanın. 
+              YKS, KPSS, TUS ve <strong>DUS</strong> sınavlarına <strong>yapay zeka destekli özgün sorularla</strong>, ücretsiz ve üyeliksiz hazırlanın. 
               Hatalarınızı analiz edin, netlerinizi artırın.
             </p>
 
@@ -227,7 +249,7 @@ export default function HomePage() {
             <h2 className="text-3xl font-black text-slate-800 mb-4">Neden TestDünya?</h2>
             <p className="text-slate-500 max-w-2xl mx-auto">
               Sınavlara hazırlanırken ihtiyacınız olan her şey tek bir platformda.
-              Ücretsiz YKS, KPSS ve TUS denemeleri ile başarıya bir adım daha yaklaşın.
+              Ücretsiz YKS, KPSS, TUS ve DUS denemeleri ile başarıya bir adım daha yaklaşın.
             </p>
           </div>
 
@@ -256,7 +278,7 @@ export default function HomePage() {
               </div>
               <h3 className="font-bold text-slate-800 mb-2">Geniş Soru Havuzu</h3>
               <p className="text-sm text-slate-600 leading-relaxed">
-                ÖSYM müfredatına uygun YKS, KPSS ve TUS için hazırlanmış <strong>özgün denemeler ve yeni nesil sorular.</strong>
+                ÖSYM müfredatına uygun YKS, KPSS, TUS ve DUS için hazırlanmış <strong>özgün denemeler.</strong>
               </p>
             </div>
           </div>
@@ -272,7 +294,7 @@ export default function HomePage() {
             </h4>
             <p className="leading-relaxed mb-4 max-w-sm">
               Türkiye'nin en kapsamlı ücretsiz online sınav hazırlık platformu. 
-              TYT, AYT, KPSS Lisans, Önlisans ve TUS sınavlarına hazırlanan öğrenciler için 
+              TYT, AYT, KPSS, TUS ve <strong>DUS (Diş Hekimliği)</strong> sınavlarına hazırlanan öğrenciler için 
               özenle hazırlanmış <strong>özgün deneme sınavları.</strong>
             </p>
             <p className="text-xs opacity-50">&copy; 2025 TestDünya. Tüm hakları saklıdır. <span className="mx-2">•</span> <Link href="/gizlilik" className="hover:text-white hover:underline">Gizlilik</Link></p>
@@ -284,6 +306,7 @@ export default function HomePage() {
               <li><Link href="#exams" className="hover:text-white transition-colors">YKS (TYT-AYT) Denemeleri</Link></li>
               <li><Link href="#exams" className="hover:text-white transition-colors">KPSS Genel Kültür Denemeleri</Link></li>
               <li><Link href="#exams" className="hover:text-white transition-colors">TUS Klinik ve Temel Sorular</Link></li>
+              <li><Link href="#exams" className="hover:text-white transition-colors">DUS Denemeleri</Link></li>
               <li><Link href="/mistakes" className="hover:text-white transition-colors">Hata Analizi</Link></li>
             </ul>
           </div>
@@ -295,6 +318,7 @@ export default function HomePage() {
               <li>Ücretsiz YKS Testleri</li>
               <li>KPSS Tarih Denemeleri</li>
               <li>Tıpta Uzmanlık Sınavı</li>
+              <li>Diş Hekimliği Denemeleri</li>
             </ul>
           </div>
         </div>
