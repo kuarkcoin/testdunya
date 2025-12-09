@@ -1,12 +1,12 @@
-import { MetadataRoute } from 'next';
+import { MetadataRoute } from 'next'
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: '/private/', // Eğer gizli bir admin paneli yaparsan buraya eklersin
+      disallow: '/private/', // Eğer gizlemek istediğin klasör olursa buraya yazarsın
     },
-    sitemap: 'https://testdunya.com/sitemap.xml',
-  };
+    sitemap: 'https://testdunya.net/sitemap.xml',
+  }
 }
