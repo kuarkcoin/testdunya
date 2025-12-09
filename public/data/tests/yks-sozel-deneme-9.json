@@ -433,15 +433,15 @@
   },
   {
     "id": 37,
-    "question": "COĞRAFYA: Aşağıdakilerden hangisi Türkiye'de \"Akdeniz ikliminin\" görüldüğü yerlerden biridir?",
+    "question": "COĞRAFYA: Haritalardaki küçültme oranına ne ad verilir?",
     "shape": "",
-    "A": "Rize",
-    "B": "Antalya",
-    "C": "Erzurum",
-    "D": "Konya",
-    "E": "Sivas",
+    "A": "Kroki",
+    "B": "Ölçek",
+    "C": "Lejant",
+    "D": "Projeksiyon",
+    "E": "İzohips",
     "correct": "B",
-    "Açıklama": "Akdeniz bölgesinde, özellikle Antalya çevresinde yazları sıcak ve kurak, kışları ılık ve yağışlı olan Akdeniz iklimi görülür."
+    "Açıklama": "Ölçek, haritalardaki küçültme oranını ifade eder (Örneğin 1/100.000)."
   },
   {
     "id": 38,
@@ -517,15 +517,15 @@
   },
   {
     "id": 44,
-    "question": "FELSEFE: \"Cogito, ergo sum\" (Düşünüyorum, öyleyse varım) sözü hangi filozofa aittir?",
+    "question": "FELSEFE: 'Değişmeyen tek şey değişimin kendisidir.' sözüyle evrendeki sürekli oluşu ve akışı vurgulayan filozof kimdir?",
     "shape": "",
     "A": "Platon",
     "B": "Aristoteles",
-    "C": "Descartes",
+    "C": "Herakleitos",
     "D": "Kant",
-    "E": "Hume",
+    "E": "Sokrates",
     "correct": "C",
-    "Açıklama": "Descartes, bilginin temelini düşünme eyleminde bulur ve bu sözüyle ünlüdür."
+    "Açıklama": "Herakleitos, evrendeki her şeyin sürekli bir akış ve değişim (oluş) halinde olduğunu savunmuştur."
   },
   {
     "id": 45,
@@ -661,15 +661,15 @@
   },
   {
     "id": 56,
-    "question": "DİN KÜLTÜRÜ: Aşağıdakilerden hangisi İslam'da \"ibadet\" kavramına örnek değildir?",
+    "question": "DİN KÜLTÜRÜ: Su bulunmadığında veya suyu kullanmanın sağlık açısından zararlı olduğu durumlarda toprakla yapılan sembolik temizliğe ne ad verilir?",
     "shape": "",
-    "A": "Namaz kılmak",
-    "B": "Oruç tutmak",
-    "C": "Alışverişte hile yapmak",
-    "D": "Zekât vermek",
-    "E": "Hacca gitmek",
+    "A": "Gusül",
+    "B": "Abdest",
+    "C": "Teyemmüm",
+    "D": "Mesh",
+    "E": "Taharet",
     "correct": "C",
-    "Açıklama": "Hile yapmak dinen yasaktır; ibadet değil günahtır."
+    "Açıklama": "Teyemmüm, suyun olmadığı durumlarda temiz toprakla alınan abdesttir."
   },
   {
     "id": 57,
@@ -720,4 +720,3 @@
     "Açıklama": "Selamlaşma barış, sevgi ve güveni artırır; kavga ve düşmanlıkla amaç bakımından zıttır."
   }
 ]
-
