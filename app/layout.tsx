@@ -1,7 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import Script from 'next/script' // Script bileşenini ekledik
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -32,14 +32,15 @@ export default function RootLayout({
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-        {/* Not: Tailwind'i CDN'den çekmek yerine npm install ile kurman performans için daha iyidir.
-            Ama şimdilik yapını bozmamak için burayı ellemedim. */}
+        
+        {/* Tailwind CDN (İleride npm install ile kurman performans için önerilir) */}
         <script src="https://cdn.tailwindcss.com"></script>
       </head>
+      
       <body className={`${inter.className} bg-slate-50 text-slate-900 antialiased relative min-h-screen flex flex-col`}>
 
-        {/* --- 1. GOOGLE ANALYTICS KODU --- */}
-        {/* DİKKAT: 'G-XXXXXXXXXX' yerine yeni sitenin kodunu yazmalısın */}
+        {/* --- GOOGLE ANALYTICS --- */}
+        {/* DİKKAT: 'G-XXXXXXXXXX' yerine kendi kodunu yazmalısın */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
           strategy="afterInteractive"
@@ -53,32 +54,31 @@ export default function RootLayout({
             gtag('config', 'G-XXXXXXXXXX');
           `}
         </Script>
-        {/* ------------------------------- */}
+        {/* ------------------------ */}
 
-        {/* İçerik Alanı (flex-1 ile sayfayı kaplamasını sağladık) */}
+        {/* İçerik Alanı (Sayfa içeriği buraya gelir) */}
         <div className="flex-1">
           {children}
         </div>
 
-        {/* --- 2. YASAL UYARI VE FOOTER ALANI --- */}
-        <footer className="bg-slate-100 border-t border-slate-200 mt-10">
+        {/* --- GLOBAL FOOTER & YASAL UYARI --- */}
+        {/* Bu alan tüm sayfalarda (Anasayfa, Test Detay vb.) en altta görünür */}
+        <footer className="bg-slate-100 border-t border-slate-200 mt-auto">
           <div className="max-w-4xl mx-auto py-6 px-4">
             
-            {/* İstediğin Yasal Uyarı Metni */}
             <p className="text-center text-xs text-slate-500 leading-relaxed font-medium">
               Bu platformdaki tüm sorular yapay zekâ destekli içerik üretim sistemi tarafından 
               oluşturulmuş özgün sorulardır. ÖSYM’ye ait resmî çıkmış sorular içermez. 
-              Her soru eğitim amaçlıdır.
+              Her soru eğitim ve pratik amaçlıdır.
             </p>
 
-            {/* Telif Hakkı (Opsiyonel) */}
-            <div className="text-center text-[10px] text-slate-400 mt-2">
+            <div className="text-center text-[10px] text-slate-400 mt-3">
               &copy; {new Date().getFullYear()} TestDünya. Tüm hakları saklıdır.
             </div>
             
           </div>
         </footer>
-        {/* -------------------------------------- */}
+        {/* ----------------------------------- */}
 
       </body>
     </html>
