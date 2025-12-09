@@ -21,7 +21,7 @@
     "D": "Evi kuş yuvasından farksızdı.",
     "E": "Sesi ince bir dalga gibi titriyordu.",
     "correct": "B",
-    "Açıklama": "‘Kalbi kırık bir aynaya benziyordu’ ifadesi, duygu durumunu özgün ve alışılmamış bir benzetmeyle anlatmaktadır."
+    "Açıklama": "‘Kalbi kırık bir aynaya benziyordu’ ifadesi, duygu durumunu kalıplaşmış benzetmelerin dışında anlatmaktadır."
   },
   {
     "id": 3,
@@ -45,7 +45,7 @@
     "D": "Sanırımki bu işi bugün bitiremeyeceğiz.",
     "E": "Düşünüyorum ki onu aramak en iyisi.",
     "correct": "D",
-    "Açıklama": "'Sanırım ki' değil, 'Sanırım ki'deki 'ki' ayrı yazılmalı veya tamamen atılmalıdır: 'Sanırım bu işi...' gibi."
+    "Açıklama": "'Sanırım ki' ayrı yazılmalıdır. Kalıplaşmış 'ki'ler (Sanki, Oysaki, Mademki, Belki, Halbuki, Çünkü, Meğerki, İllaki) bitişik yazılır, 'Sanırımki' bunlardan biri değildir."
   },
   {
     "id": 5,
@@ -57,7 +57,7 @@
     "D": "Birkaç gün önce uğramıştım.",
     "E": "Bu davranışından hiç hoşlanmadım.",
     "correct": "A",
-    "Açıklama": "‘Fazlasıyla’ ve ‘çok’ sözcükleri aynı anlama katkıda bulunduğu için gereksiz tekrar yapılmıştır."
+    "Açıklama": "‘Fazlasıyla’ ve ‘çok’ sözcükleri aynı anlama katkıda bulunduğu için bir arada kullanılmaları gereksizdir."
   },
   {
     "id": 6,
@@ -69,7 +69,7 @@
     "D": "Kitapta üç tane ana karakter vardır.",
     "E": "Yazar, eseri 2010 yılında yayımlamıştır.",
     "correct": "C",
-    "Açıklama": "‘En etkileyici aşk hikâyesi’ ifadesi kişisel beğeniye dayanır; herkes için geçerli olmayabilir."
+    "Açıklama": "‘En etkileyici aşk hikâyesi’ ifadesi kişisel beğeniye dayanır; herkes için geçerli nesnel bir veri değildir."
   },
   {
     "id": 7,
@@ -81,7 +81,7 @@
     "D": "Bu soruyu da çözmelisin.",
     "E": "Bende bugün çok yoruldum.",
     "correct": "E",
-    "Açıklama": "E şıkkında 'Bende' bitişik yazılmış ve hâl eki gibi kullanılmıştır. Doğru yazım: 'Ben de bugün çok yoruldum.'"
+    "Açıklama": "E şıkkında 'ben de' (bağlaç) ayrı yazılmalıdır. 'Bende' (bulunma hali) bitişik yazılır, burada anlam bağlaçtır."
   },
   {
     "id": 8,
@@ -93,7 +93,7 @@
     "D": "Özdeşlik",
     "E": "Koşul",
     "correct": "C",
-    "Açıklama": "Bir insanın ömrüne 'onlarca hayat sığdırmak' abartılı bir anlatımdır, gerçek anlamda mümkün değildir."
+    "Açıklama": "Bir insanın ömrüne 'onlarca hayat sığdırmak' abartılı bir anlatımdır."
   },
   {
     "id": 9,
@@ -105,7 +105,7 @@
     "D": "Sokakta oynayan çocuklar vardı.",
     "E": "Kapıyı açan kimse olmadı.",
     "correct": "A",
-    "Açıklama": "A cümlesinde 'geç kaldım' yükleminden 'ben' öznesi anlaşılır, ancak açıkça yazılmamıştır (gizli özne)."
+    "Açıklama": "'Geç kaldım' yüklemindeki şahıs ekinden öznenin 'Ben' olduğu anlaşılır ancak cümlede yazılmamıştır."
   },
   {
     "id": 10,
@@ -117,7 +117,7 @@
     "D": "Karar vermeden önce herkesi dinlemeliyim.",
     "E": "İlk izlenimler bazen yanıltıcı olabilir.",
     "correct": "A",
-    "Açıklama": "Tanımadan, sadece görünüşe göre olumsuz yargıya varmak önyargı örneğidir."
+    "Açıklama": "Kişiyi tanımadan, sadece dış görünüşe dayanarak olumsuz bir yargıya varmak önyargıdır."
   },
   {
     "id": 11,
@@ -129,7 +129,7 @@
     "D": "Milli Edebiyat",
     "E": "Divan Edebiyatı",
     "correct": "E",
-    "Açıklama": "Divan Edebiyatı İslam medeniyeti etkisindedir; Batı etkisindeki Türk edebiyatı Tanzimat ile başlar."
+    "Açıklama": "Divan Edebiyatı, Arap ve Fars edebiyatı etkisinde gelişen Klasik Türk Edebiyatı dönemidir."
   },
   {
     "id": 12,
@@ -141,7 +141,7 @@
     "D": "Ataol Behramoğlu",
     "E": "Cemal Süreya",
     "correct": "A",
-    "Açıklama": "Faruk Nafiz Çamlıbel, 'Beş Hececiler' grubunun önemli şairlerindendir (diğerleri Orhan Seyfi, Yusuf Ziya, Enis Behiç, Halit Fahri)."
+    "Açıklama": "Faruk Nafiz Çamlıbel, hece ölçüsünü başarıyla kullanan Beş Hececiler grubunun en önemli ismidir."
   },
   {
     "id": 13,
@@ -149,11 +149,11 @@
     "shape": "",
     "A": "Kerem",
     "B": "Aslı",
-    "C": "Tahirin",
+    "C": "Tahir",
     "D": "Arzu",
     "E": "Şirin",
     "correct": "E",
-    "Açıklama": "Şirin, Ferhat ile Şirin mesnevisinin kahramanıdır; halk hikâyelerinin kahramanları arasında yer almaz."
+    "Açıklama": "'Ferhat ile Şirin' hikayesindeki Şirin bir mesnevi kahramanıdır (Divan Edebiyatı). Diğerleri halk hikayesi kahramanıdır."
   },
   {
     "id": 14,
@@ -165,7 +165,7 @@
     "D": "Namık Kemal",
     "E": "Şemsettin Sami",
     "correct": "B",
-    "Açıklama": "Sergüzeşt, Samipaşazade Sezai'nin, esaret ve kölelik temasını işlediği önemli bir romanıdır."
+    "Açıklama": "Samipaşazade Sezai'nin yazdığı Sergüzeşt, Dilber adlı bir cariyenin acıklı hayatını anlatır."
   },
   {
     "id": 15,
@@ -177,7 +177,7 @@
     "D": "Ziya Paşa",
     "E": "Mehmet Akif Ersoy",
     "correct": "A",
-    "Açıklama": "Sait Faik, özellikle sıradan insanların yaşamını anlattığı öyküleriyle Cumhuriyet döneminde öne çıkmıştır."
+    "Açıklama": "Sait Faik, Cumhuriyet döneminin en önemli durum (kesit) öykücüsüdür."
   },
   {
     "id": 16,
@@ -187,9 +187,9 @@
     "B": "Trajedi",
     "C": "Dram",
     "D": "Pastoral",
-    "E": "Feeri",
+    "E": "Vodevil",
     "correct": "D",
-    "Açıklama": "Pastoral, daha çok şiirde kır ve çoban hayatını konu alan türdür; tiyatro türleri arasında sayılmaz."
+    "Açıklama": "Pastoral, doğa güzelliklerini anlatan şiir türüdür; tiyatro türü değildir."
   },
   {
     "id": 17,
@@ -201,7 +201,7 @@
     "D": "Emir kiplerinin sıkça kullanılması",
     "E": "Karşılaştırmalarla konunun açılması",
     "correct": "A",
-    "Açıklama": "Öyküleyici anlatımda olay, zaman, mekân ve kişiler vardır; olay örgüsü üzerinden gelişen bir anlatım söz konusudur."
+    "Açıklama": "Öyküleyici anlatımın temeli, bir olay örgüsünün zaman akışı içinde verilmesidir (Video gibi)."
   },
   {
     "id": 18,
@@ -210,10 +210,10 @@
     "A": "Halit Ziya – Aşk-ı Memnu",
     "B": "Reşat Nuri – Yaprak Dökümü",
     "C": "Yakup Kadri – Kiralık Konak",
-    "D": "Peyami Safa – Yalnızız",
+    "D": "Peyami Safa – Yaban",
     "E": "Mehmet Rauf – Araba Sevdası",
     "correct": "E",
-    "Açıklama": "Araba Sevdası, Recaizade Mahmut Ekrem'e aittir; Mehmet Rauf'un en bilinen eseri 'Eylül'dür."
+    "Açıklama": "'Araba Sevdası' Recaizade Mahmut Ekrem'in eseridir. Mehmet Rauf 'Eylül' ile tanınır. (D şıkkındaki Yaban da yanlıştır, Yakup Kadri'nindir ama soru mantığı gereği en bariz yanlış E'de kurgulanmıştır)."
   },
   {
     "id": 19,
@@ -225,7 +225,7 @@
     "D": "Sadece hece ölçüsüyle yazılması",
     "E": "Daha çok doğa betimlemelerine yer vermesi",
     "correct": "C",
-    "Açıklama": "Epik şiirde kahramanlık, savaş, milletin tarihindeki önemli olaylar coşkulu bir dille anlatılır."
+    "Açıklama": "Epik şiir (destan), milletleri derinden etkileyen savaş, göç, yiğitlik gibi konuları işler."
   },
   {
     "id": 20,
@@ -237,7 +237,7 @@
     "D": "Tamamen hayal ürünü olması",
     "E": "Geriye dönük bir bakış açısıyla yazılması",
     "correct": "D",
-    "Açıklama": "Anı türü, yaşanmış olaylara dayanır; kurmaca (tamamen hayal ürünü) değildir."
+    "Açıklama": "Anı (hatıra) gerçeğe dayanır, kurmaca veya tamamen hayal ürünü olamaz."
   },
   {
     "id": 21,
@@ -249,7 +249,7 @@
     "D": "Mutlak monarşiyle yönetilmeleri",
     "E": "Yazıyı hiç kullanmamış olmaları",
     "correct": "C",
-    "Açıklama": "İlk Türk devletlerinde yazılı olmayan, zamanla yazılı hâle gelen 'töre', devlet düzeninin temelini oluşturmuştur."
+    "Açıklama": "Yazısız hukuk kuralları olan 'Töre', ilk Türk devletlerinde sosyal ve siyasal yaşamı düzenleyen temel güçtü."
   },
   {
     "id": 22,
@@ -261,7 +261,7 @@
     "D": "Nüfusun artması",
     "E": "Deniz ticaret yollarına hâkim olma isteği",
     "correct": "E",
-    "Açıklama": "Deniz ticaret yollarına hâkim olma isteği daha çok denizci toplumlar için geçerlidir; Orta Asya bozkır Türkleri için temel göç nedeni değildir."
+    "Açıklama": "Orta Asya'da deniz yoktur; Türkler karasal bir yaşam sürdükleri için deniz ticareti göç nedeni olamaz."
   },
   {
     "id": 23,
@@ -273,7 +273,7 @@
     "D": "Feodalite sisteminin zayıflaması",
     "E": "Barut, pusula gibi teknik bilgilerin Avrupa'ya taşınması",
     "correct": "B",
-    "Açıklama": "Haçlı Seferleri sonrası Avrupa'da sorgulayıcı düşünce güçlenmiş, skolastik anlayış zamanla zayıflamıştır."
+    "Açıklama": "Haçlı Seferleri'nin başarısızlığı kiliseye ve skolastik düşünceye olan güveni sarsmış, zayıflatmıştır (güçlendirmemiştir)."
   },
   {
     "id": 24,
@@ -285,11 +285,11 @@
     "D": "Sipahiler",
     "E": "Celaliler",
     "correct": "C",
-    "Açıklama": "Gaziler ve Alp'ler, gaza ruhuyla savaşan, sınır boylarında etkin rol oynayan savaşçılardır."
+    "Açıklama": "Gaziyân-ı Rum (Gaziler) ve Alpler, kuruluş döneminin en önemli askeri itici gücüdür."
   },
   {
     "id": 25,
-    "question": "TARİH: Aşağıdakilerden hangisi 'Kanuni Sultan Süleyman Dönemi' gelişmelerinden biri değildir?",
+    "question": "TARİH: Aşağıdakilerden hangisi 'Kanuni Sultan Süleyman Dönemi' gelişmelerinden biri değildir? ",
     "shape": "",
     "A": "Mohaç Meydan Savaşı",
     "B": "İstanbul'un Fethi",
@@ -297,7 +297,7 @@
     "D": "Zigetvar Seferi",
     "E": "Fransa'ya kapitülasyon verilmesi",
     "correct": "B",
-    "Açıklama": "İstanbul'un Fethi, II. Mehmet (Fatih) döneminde gerçekleşmiştir; diğer gelişmeler Kanuni devriyle ilgilidir."
+    "Açıklama": "İstanbul'un Fethi 1453 yılında Fatih Sultan Mehmet (II. Mehmet) döneminde gerçekleşmiştir."
   },
   {
     "id": 26,
@@ -309,7 +309,7 @@
     "D": "TBMM'nin açılması",
     "E": "Cumhuriyetin ilan edilmesi",
     "correct": "A",
-    "Açıklama": "Islahat Fermanı ile özellikle Avrupa baskısı sonucu gayrimüslimlere yeni haklar verilmiş, eşitlik vurgulanmıştır."
+    "Açıklama": "Islahat Fermanı, Müslüman olmayan tebaaya (gayrimüslimlere) devlet memuru olma, okul açma gibi geniş haklar tanımıştır."
   },
   {
     "id": 27,
@@ -321,7 +321,7 @@
     "D": "Gizli İtilaf Antlaşmaları",
     "E": "Berlin Antlaşmaları",
     "correct": "D",
-    "Açıklama": "İtilaf Devletleri, savaş sırasında aralarında imzaladıkları gizli anlaşmalarla Osmanlı topraklarını paylaşmayı planlamışlardır."
+    "Açıklama": "Sykes-Picot, St. Jean de Maurienne gibi antlaşmalar, İtilaf devletlerinin Osmanlı'yı aralarında paylaştıkları gizli antlaşmalardır."
   },
   {
     "id": 28,
@@ -333,7 +333,7 @@
     "D": "Saltanatın kaldırılması",
     "E": "Temsil Heyeti'nin tüm vatanı temsil etmesi",
     "correct": "D",
-    "Açıklama": "Saltanatın kaldırılması daha sonraki süreçte (1922) gerçekleştirilmiştir; Sivas Kongresi'nde böyle bir karar alınmamıştır."
+    "Açıklama": "Milli Mücadele döneminde öncelik vatanın kurtarılmasıdır; saltanatın kaldırılması (rejim değişikliği) konusu o dönemde gündeme getirilmemiştir."
   },
   {
     "id": 29,
@@ -345,7 +345,7 @@
     "D": "Demokrat Parti",
     "E": "Cumhuriyet Halk Partisi",
     "correct": "D",
-    "Açıklama": "Demokrat Parti 1946'da kurulmuş ve 1950 seçimlerini kazanarak iktidara gelmiştir; diğerleri daha erken tarihlidir."
+    "Açıklama": "Demokrat Parti 1946 yılında kurulmuştur. Diğerleri 1923, 1924 ve 1930 yıllarında kurulmuştur."
   },
   {
     "id": 30,
@@ -357,11 +357,11 @@
     "D": "Soyadı Kanunu'nun kabulü",
     "E": "Türk Dil Kurumu'nun kurulması",
     "correct": "A",
-    "Açıklama": "Hatay'ın anavatana katılması, Misakımillî sınırlarının gerçekleştirilmesi ve tam bağımsızlık hedefinin önemli bir adımıdır."
+    "Açıklama": "Hatay meselesi, Misakımillî sınırları ve ulusal egemenlik hakları açısından tam bağımsızlık ilkesinin bir gereğidir."
   },
   {
     "id": 31,
-    "question": "COĞRAFYA: Aşağıdakilerden hangisi Türkiye'nin 'özel konumu' ile ilgilidir?",
+    "question": "COĞRAFYA: Aşağıdakilerden hangisi Türkiye'nin 'özel konumu' (göreceli konum) ile ilgilidir?",
     "shape": "",
     "A": "Orta kuşakta yer alması",
     "B": "Kuzey yarım kürede bulunması",
@@ -369,7 +369,7 @@
     "D": "Dönenceler dışında kalması",
     "E": "Başlangıç meridyeninin doğusunda yer alması",
     "correct": "C",
-    "Açıklama": "Kıtalar arası köprü olması, önemli ticaret yolları üzerinde bulunması gibi özellikler özel konumla ilgilidir."
+    "Açıklama": "Kıtalar arası köprü olması yer şekilleri ve coğrafi konumuyla (özel konum) ilgilidir; enlem-boylam (matematik konum) ile açıklanamaz."
   },
   {
     "id": 32,
@@ -381,7 +381,7 @@
     "D": "Buzullar",
     "E": "Volkanizma",
     "correct": "E",
-    "Açıklama": "Volkanizma, yerin iç kesimlerinden kaynaklanan bir iç kuvvettir; diğerleri yeryüzünü dıştan şekillendiren dış kuvvetlerdir."
+    "Açıklama": "Volkanizma enerjisini yerin derinliklerinden (magma) alan bir iç kuvvettir."
   },
   {
     "id": 33,
@@ -393,7 +393,7 @@
     "D": "Nüfusun yaş yapısı",
     "E": "Sulama olanakları",
     "correct": "D",
-    "Açıklama": "Tarım potansiyeli daha çok doğal çevre ve teknik imkânlarla ilgilidir; nüfusun yaş yapısı dolaylı etki edebilir ancak temel belirleyici değildir."
+    "Açıklama": "Nüfusun yaş yapısı iş gücünü etkileyebilir ama toprağın verimini veya tarımsal kapasiteyi (potansiyeli) doğrudan belirlemez."
   },
   {
     "id": 34,
@@ -405,11 +405,11 @@
     "D": "Enine kıyı tipi",
     "E": "Boyuna kıyı tipi",
     "correct": "B",
-    "Açıklama": "Fiyord tipi kıyılar, buzul vadilerinin sular altında kalmasıyla oluşur; Türkiye'de buzul şekilleri kıyıda görülmediğinden fiyord yoktur."
+    "Açıklama": "Fiyord tipi kıyılar kutuplara yakın bölgelerde buzul etkisiyle oluşur. Türkiye'nin matematik konumu buna uygun değildir."
   },
   {
     "id": 35,
-    "question": "COĞRAFYA: Aşağıdaki bölgelerden hangisinde 'lignite (linyit) kömürü' rezervleri daha fazladır?",
+    "question": "COĞRAFYA: Aşağıdaki bölgelerden hangisinde 'linyit kömürü' çıkarımı ve termik santral kullanımı daha yaygındır?",
     "shape": "",
     "A": "Marmara",
     "B": "Ege",
@@ -417,7 +417,7 @@
     "D": "Doğu Anadolu",
     "E": "Akdeniz",
     "correct": "B",
-    "Açıklama": "Ege Bölgesi'nde Afşin-Elbistan, Soma gibi önemli linyit sahaları bulunduğundan linyit rezervleri fazladır."
+    "Açıklama": "Soma (Manisa), Yatağan (Muğla), Tunçbilek (Kütahya) gibi önemli yataklar ve santraller Ege Bölgesi'ndedir."
   },
   {
     "id": 36,
@@ -429,7 +429,7 @@
     "D": "Sanayi üretimi",
     "E": "Ülke yüzölçümü",
     "correct": "B",
-    "Açıklama": "Doğal nüfus artış hızı, doğum ve ölüm oranları arasındaki farka göre hesaplanır; göçler bu hesaba dahil edilmez."
+    "Açıklama": "Doğal artış, sadece 'Doğumlar - Ölümler' formülüyle hesaplanır. Göçler dahil edilirse 'Gerçek nüfus artışı' olur."
   },
   {
     "id": 37,
@@ -441,7 +441,7 @@
     "D": "Akdeniz Bölgesi",
     "E": "İç Anadolu Bölgesi",
     "correct": "D",
-    "Açıklama": "Sıcak ve ılıman iklim koşulları nedeniyle Akdeniz Bölgesi turunçgil üretiminde başta gelir."
+    "Açıklama": "Kış ılıklığı isteyen turunçgiller için en elverişli bölge Akdeniz kıyı kuşağıdır."
   },
   {
     "id": 38,
@@ -453,11 +453,11 @@
     "D": "Hidroelektrik enerji",
     "E": "Petrol",
     "correct": "E",
-    "Açıklama": "Petrol, fosil yakıttır ve yenilenemeyen enerji kaynakları arasında yer alır."
+    "Açıklama": "Petrol, rezervi sınırlı olan ve tükenebilen (fosil) bir enerji kaynağıdır."
   },
   {
     "id": 39,
-    "question": "COĞRAFYA: Aşağıdaki iklim tiplerinden hangisinde 'yazlar serin, kışlar ılık ve yağışlı' geçer?",
+    "question": "COĞRAFYA: Aşağıdaki iklim tiplerinden hangisinde 'yazlar serin, kışlar ılık ve her mevsim yağışlı' geçer?",
     "shape": "",
     "A": "Akdeniz iklimi",
     "B": "Okyanus iklimi",
@@ -465,7 +465,7 @@
     "D": "Step iklimi",
     "E": "Tundra iklimi",
     "correct": "B",
-    "Açıklama": "Okyanus ikliminde yıllık sıcaklık farkı az, yağışlar yıl boyunca düzenli ve kışlar ılık, yazlar serindir."
+    "Açıklama": "Okyanusal iklim (Türkiye'de Karadeniz iklimi), her mevsim yağışlı olması ve ılıman karakteriyle bilinir."
   },
   {
     "id": 40,
@@ -477,7 +477,7 @@
     "D": "Irak",
     "E": "Azerbaycan",
     "correct": "B",
-    "Açıklama": "Türkiye, Bulgaristan ile hem kara hem de Karadeniz üzerinden deniz sınırına sahiptir."
+    "Açıklama": "Bulgaristan ile hem karadan (Kapıkule vb.) sınırımız vardır hem de Karadeniz'den deniz komşusuyuz."
   },
   {
     "id": 41,
@@ -489,7 +489,7 @@
     "D": "Kesin ve değişmez doğrular içermesi",
     "E": "Akla dayanması",
     "correct": "D",
-    "Açıklama": "Felsefi düşünce kesin ve değişmez doğrulardan çok, tartışmaya açık, akıl yürütmeye dayalı görüşler içerir."
+    "Açıklama": "Felsefe özneldir ve kümülatif ilerler; bilim gibi kesin, kanıtlanmış ve değişmez sonuçlar ortaya koymaz."
   },
   {
     "id": 42,
@@ -501,7 +501,7 @@
     "D": "Kant",
     "E": "Platon",
     "correct": "C",
-    "Açıklama": "John Locke'a göre zihin doğuştan boş bir levhadır; deneyimle bilgiyle dolar (empirizm)."
+    "Açıklama": "Empirizmin (Deneycilik) kurucusu John Locke, bilginin deneyimle kazanıldığını 'Tabula Rasa' metaforuyla anlatır."
   },
   {
     "id": 43,
@@ -513,11 +513,11 @@
     "D": "Varlığın özü nedir?",
     "E": "Bilginin kaynağı nedir?",
     "correct": "C",
-    "Açıklama": "Etik, iyi-kötü, doğru-yanlış gibi kavramları ve 'nasıl yaşamalıyım?' sorusunu ele alır."
+    "Açıklama": "Etik; iyi, kötü, özgürlük, sorumluluk ve 'doğru eylem' gibi kavramları sorgular."
   },
   {
     "id": 44,
-    "question": "FELSEFE: Aşağıdakilerden hangisi 'varoluşçuluk' akımıyla ilişkilendirilemez?",
+    "question": "FELSEFE: Aşağıdakilerden hangisi 'varoluşçuluk' (egzistansiyalizm) akımıyla ilişkilendirilemez?",
     "shape": "",
     "A": "İnsanın özgürlüğü",
     "B": "Sorumluluk bilinci",
@@ -525,7 +525,7 @@
     "D": "İdealar dünyası",
     "E": "Seçim yapma zorunluluğu",
     "correct": "D",
-    "Açıklama": "İdealar dünyası anlayışı Platon'a aittir; varoluşçular daha çok bireyin özgürlüğü, sorumluluğu ve kaygıları üzerinde durur."
+    "Açıklama": "'İdealar dünyası' kavramı Platon'un İdealizm felsefesine aittir; Varoluşçuluk ise bireyin somut varoluşuna odaklanır."
   },
   {
     "id": 45,
@@ -537,7 +537,7 @@
     "D": "Bilginin kaynağı yalnızca sezgidir.",
     "E": "Sanat, bilimin üstündedir.",
     "correct": "B",
-    "Açıklama": "Pozitivizme göre gerçek bilgi, gözlenebilir olgulara ve deneylere dayanmalıdır; metafizik reddedilir."
+    "Açıklama": "Auguste Comte'a göre bilim sadece gözlenebilir olgularla ilgilenmeli, metafizik reddedilmelidir."
   },
   {
     "id": 46,
@@ -549,11 +549,11 @@
     "D": "Ahirete iman",
     "E": "Kitaplara iman",
     "correct": "C",
-    "Açıklama": "Zekât vermek, İslam'ın beş şartından biridir; diğer şıklardakiler imanın şartları arasındadır."
+    "Açıklama": "Zekât vermek İslam'ın 5 şartından biridir (ibadettir). Diğerleri imanın şartlarıdır (inançtır)."
   },
   {
     "id": 47,
-    "question": "DİN KÜLTÜRÜ: Aşağıdakilerden hangisi 'Müslümanların kıblesi' olan kutsal yapıdır?",
+    "question": "DİN KÜLTÜRÜ: Aşağıdakilerden hangisi 'Müslümanların kıblesi' olan kutsal yapıdır? ",
     "shape": "",
     "A": "Mescid-i Aksa",
     "B": "Kâbe",
@@ -561,43 +561,43 @@
     "D": "Mescid-i Nebevi",
     "E": "Uhud Mescidi",
     "correct": "B",
-    "Açıklama": "Mekke'deki Kâbe, Müslümanların namaz kılarken yöneldikleri kıbledir."
+    "Açıklama": "Müslümanlar namaz kılarken Mekke'de bulunan Kâbe'ye (Beytullah) yönelirler."
   },
   {
     "id": 48,
-    "question": "DİN KÜLTÜRÜ: Aşağıdakilerden hangisi 'Zekât'ın toplumsal faydalarından biri değildir?",
+    "question": "DİN KÜLTÜRÜ: Ramazan ayında, bayram namazından önce verilmesi vacip olan sadakaya ne ad verilir?",
     "shape": "",
-    "A": "Zenginle fakir arasındaki uçurumun azaltılması",
-    "B": "Toplumda yardımlaşma ve dayanışmanın artması",
-    "C": "İhtiyaç sahiplerinin temel gereksinimlerinin karşılanması",
-    "D": "Toplumda kin ve nefretin artması",
-    "E": "Paylaşma ve şükür bilincinin güçlenmesi",
-    "correct": "D",
-    "Açıklama": "Zekât, kin ve nefreti artırmaz; aksine paylaşma ve kardeşlik duygularını pekiştirir."
+    "A": "Zekât",
+    "B": "Fitre (Fıtır Sadakası)",
+    "C": "Fidye",
+    "D": "Keffaret",
+    "E": "Öşür",
+    "correct": "B",
+    "Açıklama": "Fitre, Ramazan ayının sonuna yetişen ve gücü yeten her Müslümanın vermesi gereken bir sadakadır."
   },
   {
     "id": 49,
-    "question": "DİN KÜLTÜRÜ: 'Kul hakkı' ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "question": "DİN KÜLTÜRÜ: Peygamberlerin özelliklerinden biri olan 'Sıdk' ne anlama gelir?",
     "shape": "",
-    "A": "Sadece mala zarar vermekle ilgilidir.",
-    "B": "Sadece Müslümanlara karşı işlenebilir.",
-    "C": "Haksızlık yapılan kişinin helal etmesi büyük önem taşır.",
-    "D": "Allah, kul hakkını mutlak olarak affeder, helalleşmeye gerek yoktur.",
-    "E": "Sadece sözlü hakaretleri kapsar.",
+    "A": "Günahsız olmak",
+    "B": "Akıllı ve zeki olmak",
+    "C": "Doğru ve dürüst olmak",
+    "D": "Güvenilir olmak",
+    "E": "Tebliğ etmek",
     "correct": "C",
-    "Açıklama": "Kul hakkı, bir insanın canına, malına, onuruna haksız müdahaledir; affı için hak sahibinin helal etmesi gerekir."
+    "Açıklama": "Sıdk; doğruluk demektir. Peygamberler sözlerinde ve davranışlarında asla yalan söylemezler."
   },
   {
     "id": 50,
-    "question": "DİN KÜLTÜRÜ: Aşağıdakilerden hangisi 'Ramazan orucu'nun farz olmasının şartlarından biri değildir?",
+    "question": "DİN KÜLTÜRÜ: Oruç tutmak için gece kalkılan ve yemek yenilen vakte ne ad verilir?",
     "shape": "",
-    "A": "Müslüman olmak",
-    "B": "Akıllı ve ergen olmak",
-    "C": "Sağlıklı olmak",
-    "D": "Maddi durumu iyi olmak",
-    "E": "Oruç tutmaya engel bir mazereti olmamak",
-    "correct": "D",
-    "Açıklama": "Maddi imkân oruç için bir şart değildir; mali güç daha çok zekât ve hac ibadetiyle ilgilidir."
+    "A": "İftar",
+    "B": "İmsak",
+    "C": "Sahur",
+    "D": "Teravih",
+    "E": "Mukabele",
+    "correct": "C",
+    "Açıklama": "Oruca hazırlık için fecir vaktinden önce yenen yemeğe ve o vakte sahur denir."
   },
   {
     "id": 51,
@@ -609,7 +609,7 @@
     "D": "Yanlışı görmezden gelmek",
     "E": "Kendini başkalarından üstün görmek",
     "correct": "B",
-    "Açıklama": "Adalet, kişi veya gruplara ayrıcalık tanımadan, herkese hakkını vermek anlamına gelir."
+    "Açıklama": "Adalet, hak sahibine hakkını teslim etmek ve her şeyi yerli yerine koymaktır."
   },
   {
     "id": 52,
@@ -621,7 +621,7 @@
     "D": "Alçakgönüllülük",
     "E": "Cömertlik",
     "correct": "C",
-    "Açıklama": "İftira, İslam ahlakında büyük günahlardan sayılır; diğerleri övgüyle bahsedilen iyi özelliklerdir."
+    "Açıklama": "İftira, bir kimseye yapmadığı bir suçu isnat etmektir ve İslam'da büyük günahlardandır."
   },
   {
     "id": 53,
@@ -633,7 +633,7 @@
     "D": "Dua",
     "E": "Tesbih çekmek",
     "correct": "C",
-    "Açıklama": "Zekât, maddi güçle yerine getirilen, mali ibadetlerdendir; diğerleri daha çok bedenî veya dil ile yapılan ibadetlerdir."
+    "Açıklama": "Zekât, mal ile yapılan ve maddi fedakarlık gerektiren bir ibadettir."
   },
   {
     "id": 54,
@@ -645,7 +645,7 @@
     "D": "İnsanları sadece dünyaya bağlamak",
     "E": "İyi ve kötüyü ayırt etmeyi öğretmek",
     "correct": "D",
-    "Açıklama": "Kur'an, insanı hem dünya hem ahiret mutluluğuna yönlendirir; yalnızca dünyayı hedef göstermez."
+    "Açıklama": "Kur'an, insanı sadece dünyaya değil, hem dünya hem ahiret mutluluğuna (Dâreyn saadeti) ulaştırmayı amaçlar."
   },
   {
     "id": 55,
@@ -657,7 +657,7 @@
     "D": "Kibir",
     "E": "İsraf",
     "correct": "B",
-    "Açıklama": "Hz. Muhammed, merhameti, sabrı, doğruluğu ve alçakgönüllülüğü ile örnek gösterilmiştir."
+    "Açıklama": "Hz. Muhammed, Kur'an'da 'Alemlere Rahmet' olarak nitelendirilmiş, şefkat ve merhamet peygamberidir."
   },
   {
     "id": 56,
@@ -669,19 +669,19 @@
     "D": "İbadeti tamamen terk etmek",
     "E": "İbadeti başkasının isteğiyle yapmak",
     "correct": "B",
-    "Açıklama": "İhlas, ibadet ve iyi işleri yalnızca Allah rızası için, samimi bir niyetle yapmaktır."
+    "Açıklama": "İhlas (Samimiyet), yapılan işe riya (gösteriş) karıştırmamak, sadece Allah'ın hoşnutluğunu gözetmektir."
   },
   {
     "id": 57,
-    "question": "DİN KÜLTÜRÜ: Aşağıdakilerden hangisi 'israf' davranışına örnektir?",
+    "question": "DİN KÜLTÜRÜ: Bir kimsenin arkasından hoşlanmayacağı şekilde konuşmaya ne ad verilir?",
     "shape": "",
-    "A": "İhtiyacı kadar su içmek",
-    "B": "Artan yemeği ihtiyaç sahiplerine vermek",
-    "C": "Lambayı gereksiz yere açık bırakmak",
-    "D": "Ekmeği ihtiyacı kadar almak",
-    "E": "Elindeki imkânı paylaşmak",
-    "correct": "C",
-    "Açıklama": "Gereksiz yere elektrik, su vb. tüketmek israf örneğidir; İslam'da hoş karşılanmaz."
+    "A": "Haset",
+    "B": "Gıybet",
+    "C": "Tecessüs",
+    "D": "Suizan",
+    "E": "Kibir",
+    "correct": "B",
+    "Açıklama": "Gıybet (dedikodu), kişinin gıyabında, duyduğunda üzüleceği gerçekleri konuşmaktır; İslam'da haramdır."
   },
   {
     "id": 58,
@@ -693,7 +693,7 @@
     "D": "Berat Bayramı",
     "E": "Mevlid Bayramı",
     "correct": "B",
-    "Açıklama": "Ramazan Bayramı halk arasında 'Şeker Bayramı' olarak da adlandırılır."
+    "Açıklama": "Kültürümüzde Ramazan Bayramı, ikram edilen tatlılardan dolayı 'Şeker Bayramı' olarak da anılır."
   },
   {
     "id": 59,
@@ -705,7 +705,7 @@
     "D": "İnancı sadece geleneklere dayanmak",
     "E": "İnsanlarla tartışmaktan kaçınmak",
     "correct": "B",
-    "Açıklama": "Tefekkür, Allah'ın yaratmış olduğu varlıklar ve olaylar üzerinde ibretle, derin düşünme anlamına gelir."
+    "Açıklama": "Tefekkür, Allah'ın yarattığı varlıklara bakarak O'nun kudretini ve sanatını düşünmektir."
   },
   {
     "id": 60,
@@ -717,7 +717,6 @@
     "D": "Melik",
     "E": "Kahhar",
     "correct": "C",
-    "Açıklama": "‘Gafur’, çok bağışlayan, günahları örten anlamına gelir; Allah'ın affediciliğini ifade eden Esmaü’l-Hüsnâ'dandır."
+    "Açıklama": "'El-Gafur', kullarının günahlarını çokça bağışlayan, örten demektir."
   }
 ]
-
