@@ -9,7 +9,7 @@
     "D": "Konuşmak için elini kaldırdı.",
     "E": "Seni görmekten her zaman mutlu olurum.",
     "correct": "B",
-    "Açıklama": "B cümlesinde 'çalışırsan' koşulu gerçekleşirse 'sınavı geçersin' sonucu ortaya çıkar; bu nedenle koşul-sonuç ilişkisi vardır."
+    "Açıklama": "'Sınavı geçme' eylemi, 'ders çalışma' şartına bağlanmıştır."
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "D": "Bugün hava beklediğimden soğuk.",
     "E": "Bu kitabı iki günde bitirdim.",
     "correct": "C",
-    "Açıklama": "C cümlesinde kişi, emeğinin karşılığını görmemekten şikâyet etmektedir; bu da yakınma anlamıdır."
+    "Açıklama": "Kişi, yaptığı fedakarlığın karşılığını alamadığından şikayetçi olmakta, yakınmaktadır."
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "D": "Bahçede kimseyi göremedim.",
     "E": "Arkadaşımla uzun uzun konuştum.",
     "correct": "C",
-    "Açıklama": "C cümlesinde 'gözler' ile 'gecenin en karanlık saati' arasında 'gibi' edatıyla benzetme yapılmıştır."
+    "Açıklama": "Gözler, karanlık olma özelliği yönünden geceye benzetilmiştir."
   },
   {
     "id": 4,
@@ -45,7 +45,7 @@
     "D": "Masanın üzerindeki kitapları al.",
     "E": "Bu yıl da tatile gidemedik.",
     "correct": "A",
-    "Açıklama": "‘Birkaç’ kelimesi bitişik yazılır; doğru yazım 'Birkaç dakika geç kaldım.' olmalıdır."
+    "Açıklama": "'Birkaç' sözcüğü her zaman bitişik yazılır."
   },
   {
     "id": 5,
@@ -57,7 +57,7 @@
     "D": "Bugün, gerçekten çok yoruldum.",
     "E": "Toplantıya Ayşe, Ali ve Melek katıldı.",
     "correct": "C",
-    "Açıklama": "C şıkkında noktalı virgül gereksizdir; basit cümlede virgül yeterlidir: 'Bu konuyu sonra tekrar konuşalım.'"
+    "Açıklama": "Tek yüklemli ve öğeleri arasında virgül bulunmayan cümlelerde noktalı virgül kullanılmaz."
   },
   {
     "id": 6,
@@ -69,7 +69,7 @@
     "D": "Başına buyruk bir şekilde şapkasını çıkardı.",
     "E": "Başına buyruk bir taş düştü.",
     "correct": "A",
-    "Açıklama": "A şıkkında 'başına buyruk', kimseyi dinlemeyen, kendi bildiğini okuyan anlamında mecaz olarak kullanılmıştır."
+    "Açıklama": "Burada 'başına buyruk', kimseyi dinlemeyen, özgür hareket eden anlamında insan özelliği olarak kullanılmıştır."
   },
   {
     "id": 7,
@@ -81,7 +81,7 @@
     "D": "Keşke daha fazla çalışsaydım.",
     "E": "Onun kadar çalışkan değilim.",
     "correct": "B",
-    "Açıklama": "B cümlesinde kişi bir başarıyı (projeyi tek başına tamamlama) vurgulayarak kendisiyle gurur duymaktadır; bu övünmedir."
+    "Açıklama": "Kişi, zor bir işi kimseden yardım almadan başardığını belirterek kendisiyle gurur duymaktadır."
   },
   {
     "id": 8,
@@ -93,7 +93,7 @@
     "D": "Bence en etkileyici karakter odur.",
     "E": "Bu şiir oldukça duygusal bir havaya sahip.",
     "correct": "C",
-    "Açıklama": "C şıkkındaki bilgi sayılabilir ve herkes tarafından doğrulanabilir niteliktedir; bu nedenle nesnel bir yargıdır."
+    "Açıklama": "Kitabın bölüm sayısı kişisel bir yorum değil, kanıtlanabilir bir gerçektir."
   },
   {
     "id": 9,
@@ -105,7 +105,7 @@
     "D": "Arkadaşlarımla parka gittik.",
     "E": "Her sabah erken kalkıyoruz.",
     "correct": "C",
-    "Açıklama": "C cümlesinde normal söz dizimi (özne+yüklem) bozulmuş, 'ben' sona gelmiştir; bu nedenle devrik cümledir."
+    "Açıklama": "Yüklem (bitirdim) sonda olmadığı için devrik cümledir."
   },
   {
     "id": 10,
@@ -117,7 +117,7 @@
     "D": "Erken kalksa da işe yine geç kalıyor.",
     "E": "Erken kalkarsa belki yetişir.",
     "correct": "B",
-    "Açıklama": "B cümlesinde 'ki'li yapı, erken kalkmanın amacını (işe geç kalmamak) belirtir; amaç-sonuç ilişkisi vardır."
+    "Açıklama": "'İşe geç kalmamak amacıyla' erken kalkma isteği belirtilmiştir."
   },
   {
     "id": 11,
@@ -129,7 +129,7 @@
     "D": "Mehmet Akif Ersoy",
     "E": "Cahit Zarifoğlu",
     "correct": "C",
-    "Açıklama": "Ahmet Haşim ve Yahya Kemal, 'şiir için şiir' anlayışıyla saf (öz) şiir akımının önemli temsilcilerindendir."
+    "Açıklama": "Ahmet Haşim, 'Şiir bir hikâye değil, sessiz bir şarkıdır' diyerek saf şiirin öncüsü olmuştur."
   },
   {
     "id": 12,
@@ -141,7 +141,7 @@
     "D": "Roman",
     "E": "Öykü",
     "correct": "C",
-    "Açıklama": "Anı (hatıra), yazarın kendi yaşamından kesitler sunduğu; bilgi, gözlem ve değerlendirme içeren öğretici metin türlerindendir."
+    "Açıklama": "Anı, yaşanmış olayları bilgi ve belge niteliğinde aktardığı için öğretici metinler grubuna girer."
   },
   {
     "id": 13,
@@ -153,19 +153,19 @@
     "D": "Ömer Seyfettin – Efruz Bey",
     "E": "Peyami Safa – Yaban",
     "correct": "E",
-    "Açıklama": "Yaban, Yakup Kadri Karaosmanoğlu'nun eseridir; Peyami Safa'nın ünlü romanlarından bazıları Dokuzuncu Hariciye Koğuşu, Fatih-Harbiye'dir."
+    "Açıklama": "Yaban romanı Yakup Kadri Karaosmanoğlu'na aittir."
   },
   {
     "id": 14,
-    "question": "EDEBİYAT: Aşağıdakilerden hangisi 'halk hikâyesi'nin bir özelliği değildir?",
+    "question": "EDEBİYAT: Aşağıdakilerden hangisi 'halk hikâyesi'nin bir özelliğidir?",
     "shape": "",
     "A": "Nazım ve nesir karışık bir yapıdadır.",
-    "B": "Genellikle aşk ve kahramanlık konuları işlenir.",
-    "C": "Olaylar olağanüstü öğelerle süslenebilir.",
+    "B": "Sadece yazılı kaynaklardan okunur.",
+    "C": "Olaylar tamamen gerçekçidir, olağanüstü öge bulunmaz.",
     "D": "Tamamen bireysel psikolojiye dayanır.",
-    "E": "Sözlü gelenekten yazıya geçmiştir.",
-    "correct": "D",
-    "Açıklama": "Halk hikâyeleri daha çok olay merkezlidir; yalnızca bireysel psikolojiye dayanmaz, toplumsal motifler de taşır."
+    "E": "Divan edebiyatı nazım şeklidir.",
+    "correct": "A",
+    "Açıklama": "Halk hikâyelerinde duygusal kısımlar şiir (nazım), olay kısımları düzyazı (nesir) ile anlatılır."
   },
   {
     "id": 15,
@@ -177,19 +177,19 @@
     "D": "Murabba",
     "E": "Sone",
     "correct": "E",
-    "Açıklama": "Sone, Batı edebiyatına özgü bir şiir biçimidir; Divan edebiyatında kullanılmaz."
+    "Açıklama": "Sone, İtalyan edebiyatından doğmuş ve Servet-i Fünun döneminde edebiyatımıza girmiştir; Divan edebiyatında yoktur."
   },
   {
     "id": 16,
-    "question": "EDEBİYAT: Aşağıdaki edebî akımlardan hangisi 'sanat toplum içindir' görüşünü savunur?",
+    "question": "EDEBİYAT: 'Sanat şahsi ve muhteremdir' (Sanat kişisel ve saygıdeğerdir) görüşünü savunan edebî topluluk hangisidir?",
     "shape": "",
-    "A": "Parnasizm",
-    "B": "Sembolizm",
-    "C": "Realizm",
-    "D": "Sürrealizm",
-    "E": "Empresyonizm",
+    "A": "Tanzimat",
+    "B": "Servet-i Fünun",
+    "C": "Fecr-i Ati",
+    "D": "Milli Edebiyat",
+    "E": "Garip",
     "correct": "C",
-    "Açıklama": "Realizmde amaç, toplumsal gerçekliği olduğu gibi yansıtmak; sanatçının topluma karşı sorumluluğunu öne çıkarmaktır."
+    "Açıklama": "Fecr-i Ati topluluğu, Servet-i Fünun'a tepki olarak kurulmuş ancak onların devamı olmaktan öteye gidememiştir; sloganları budur."
   },
   {
     "id": 17,
@@ -201,7 +201,7 @@
     "D": "Cenap Şahabettin",
     "E": "Refik Halit Karay",
     "correct": "A",
-    "Açıklama": "Sabahattin Ali, toplumcu gerçekçi anlayışla eserler veren önemli yazarlardandır (Kuyucaklı Yusuf, İçimizdeki Şeytan vb.)."
+    "Açıklama": "Sabahattin Ali, eserlerinde ezilen köylü ve işçilerin sorunlarını dile getirmiştir."
   },
   {
     "id": 18,
@@ -213,7 +213,7 @@
     "D": "Konuları yalnızca köy hayatından seçmeleri",
     "E": "Milli konuları işlemeleri",
     "correct": "C",
-    "Açıklama": "Servet-i Fünun sanatçıları Arapça-Farsça sözcük ve tamlamalarla yüklü, ağır bir dil kullanmışlardır."
+    "Açıklama": "Servet-i Fünun sanatçıları 'sanat için sanat' anlayışıyla oldukça ağır, Arapça-Farsça tamlamalarla yüklü bir dil kullanmışlardır."
   },
   {
     "id": 19,
@@ -225,7 +225,7 @@
     "D": "Röportaj",
     "E": "Fıkra",
     "correct": "B",
-    "Açıklama": "Denemede yazar, görüşlerini ispatlama zorunluluğu hissetmeden, içten ve serbest bir anlatımla dile getirir."
+    "Açıklama": "Deneme, yazarın 'ben' diliyle yazdığı, kanıtlama amacı gütmeyen samimi yazılardır."
   },
   {
     "id": 20,
@@ -237,7 +237,7 @@
     "D": "Ağlarım, bağlarım",
     "E": "Sevda dedim, sevda dedin",
     "correct": "A",
-    "Açıklama": "‘Günahım’ kelimesi her iki mısrada aynen tekrarlandığından redif kabul edilir; öncesindeki ses benzerlikleri kafiye olabilir."
+    "Açıklama": "Mısra sonlarındaki 'günahım' sözcükleri aynı anlam ve görevde olduğu için rediftir."
   },
   {
     "id": 21,
@@ -249,7 +249,7 @@
     "D": "Büyük Selçuklu Devleti",
     "E": "Avrupa Hun Devleti",
     "correct": "D",
-    "Açıklama": "Büyük Selçuklular Türk-İslam karakterine sahip ilk büyük devletlerdendir; Hunlar, Göktürkler ve Uygurlar İslamiyet öncesidir."
+    "Açıklama": "Hunlar, Göktürkler ve Uygurlar İslamiyet öncesi Türk devletleridir. Selçuklular ise İslamiyet'i kabul etmiştir."
   },
   {
     "id": 22,
@@ -261,7 +261,7 @@
     "D": "Türklerin Çin egemenliğine girmesi",
     "E": "Yazının kullanılmaktan vazgeçilmesi",
     "correct": "B",
-    "Açıklama": "Türklerin İslamiyet'i kabulüyle Türk-İslam sentezi oluşmuş, sanat, hukuk ve devlet anlayışında kaynaşma yaşanmıştır."
+    "Açıklama": "İslamiyet'in kabulüyle hukuktan sanata kadar birçok alanda Türk-İslam sentezi oluşmuştur."
   },
   {
     "id": 23,
@@ -273,7 +273,7 @@
     "D": "Yeniçerileri eğitmek",
     "E": "Medreselerde ders vermek",
     "correct": "B",
-    "Açıklama": "Tımarlı sipahiler, kendilerine tahsis edilen tımarın gelirine karşılık savaş zamanında cebelüleriyle birlikte orduya katılmakla yükümlüydü."
+    "Açıklama": "Tımar sahipleri, barış zamanı bölgenin güvenliğini sağlar, savaş zamanı ise 'cebelü' denilen askerleriyle orduya katılırdı."
   },
   {
     "id": 24,
@@ -285,7 +285,7 @@
     "D": "I. Murat",
     "E": "Yıldırım Bayezid",
     "correct": "C",
-    "Açıklama": "IV. Murat, 17. yüzyılda hüküm sürmüş, Duraklama Dönemi padişahlarındandır."
+    "Açıklama": "IV. Murat, içki ve tütün yasağı gibi sert tedbirlerle devlet otoritesini yeniden sağlamaya çalışan 17. yüzyıl (Duraklama) padişahıdır."
   },
   {
     "id": 25,
@@ -297,7 +297,7 @@
     "D": "Feodal sistemin güçlenmesi",
     "E": "Yeni işçi sınıfının ortaya çıkması",
     "correct": "D",
-    "Açıklama": "Sanayi İnkılabı feodal sistemi zayıflatmış, kapitalist üretim ilişkileri güçlenmiştir; diğer şıklar Sanayi İnkılabı'nın sonuçlarıdır."
+    "Açıklama": "Sanayi İnkılabı ile birlikte tarım toplumu ve feodal yapı çökmüş, sanayi toplumu ve kapitalizm güçlenmiştir."
   },
   {
     "id": 26,
@@ -309,11 +309,11 @@
     "D": "Türklerin yoğun yaşadığı bölgelerde bağımsız bir Türk devleti öngörülmüştür.",
     "E": "Bu antlaşma TBMM tarafından kabul edilmemiştir.",
     "correct": "D",
-    "Açıklama": "Sevr, Türk varlığını Anadolu'da yok etmeye yöneliktir; bağımsız Türk devleti yerine, küçük ve parçalı bir yapı öngörür."
+    "Açıklama": "Sevr Antlaşması bağımsız bir Türk devleti değil, İtilaf devletlerinin mandası altında parçalanmış küçük bir bölge öngörüyordu."
   },
   {
     "id": 27,
-    "question": "TARİH: Aşağıdakilerden hangisi 'Erzurum Kongresi'nin' kararlarından biridir?",
+    "question": "TARİH: Aşağıdakilerden hangisi 'Erzurum Kongresi'nin' kararlarından biridir? ",
     "shape": "",
     "A": "Manda ve himaye kayıtsız şartsız reddedilmiştir.",
     "B": "Saltanatın kaldırılması kararlaştırılmıştır.",
@@ -321,7 +321,7 @@
     "D": "Sadece Trakya'nın savunulması öne çıkarılmıştır.",
     "E": "Halifeliğin kaldırılması kararlaştırılmıştır.",
     "correct": "A",
-    "Açıklama": "Erzurum Kongresi'nde 'manda ve himaye kabul olunamaz' ilkesi benimsenmiş, ulusal irade vurgulanmıştır."
+    "Açıklama": "Erzurum Kongresi'nde ilk kez 'Manda ve himaye kabul olunamaz' kararı alınarak tam bağımsızlık vurgulanmıştır."
   },
   {
     "id": 28,
@@ -333,7 +333,7 @@
     "D": "1961 Anayasası",
     "E": "1982 Anayasası",
     "correct": "B",
-    "Açıklama": "1921 Anayasası (Teşkilat-ı Esasiye), yeni Türk devletinin ilk anayasasıdır; TBMM'nin üstünlüğünü temel alır."
+    "Açıklama": "Yeni Türk Devleti'nin (TBMM'nin) kabul ettiği ilk anayasa 1921 tarihli Teşkilat-ı Esasiye'dir."
   },
   {
     "id": 29,
@@ -345,7 +345,7 @@
     "D": "Barışçılık ve dış politika anlayışı",
     "E": "Laiklik",
     "correct": "D",
-    "Açıklama": "Bu söz, Atatürk'ün hem iç politikada hem dış politikada barışçı bir yol izlenmesini savunduğunu gösterir."
+    "Açıklama": "Bu söz, Türkiye'nin komşularıyla ve dünyayla barış içinde yaşama arzusunu ifade eden temel dış politika ilkesidir."
   },
   {
     "id": 30,
@@ -357,35 +357,35 @@
     "D": "Tek dereceli seçim sistemine geçilmesi",
     "E": "Latin alfabesinin kabulü",
     "correct": "D",
-    "Açıklama": "Atatürk döneminde seçimlerde iki dereceli sistem uygulanmıştır; tek dereceli sisteme daha sonra geçilmiştir."
+    "Açıklama": "Tek dereceli seçim sistemine 1946 yılında, İsmet İnönü döneminde geçilmiştir."
   },
   {
     "id": 31,
-    "question": "COĞRAFYA: Aşağıdakilerden hangisi Türkiye'nin matematik konumunun bir sonucudur?",
+    "question": "COĞRAFYA: Aşağıdakilerden hangisi Türkiye'nin 'Özel (Göreceli) Konumunun' bir sonucudur?",
     "shape": "",
-    "A": "Üç tarafının denizlerle çevrili olması",
-    "B": "Boğazlara sahip olması",
-    "C": "Dört mevsimin belirgin olarak yaşanması",
-    "D": "Asya ile Avrupa arasında köprü olması",
-    "E": "Önemli ticaret yolları üzerinde bulunması",
+    "A": "Kuzeyden esen rüzgarların sıcaklığı düşürmesi",
+    "B": "Güney kıyılarının kuzey kıyılarından sıcak olması",
+    "C": "Batıdan doğuya gidildikçe yükseltinin ve karasallığın artması",
+    "D": "Gölge boyunun kuzeye gidildikçe uzaması",
+    "E": "Dört mevsimin belirgin yaşanması",
     "correct": "C",
-    "Açıklama": "Enlem dereceleri nedeniyle orta kuşakta yer alan Türkiye'de dört mevsim belirgin şekilde yaşanır; bu matematik konumla ilgilidir."
+    "Açıklama": "Yükselti ve karasallık enlem/boylam ile ilgili değil, ülkenin yer şekilleriyle (özel konum) ilgilidir."
   },
   {
     "id": 32,
-    "question": "COĞRAFYA: Aşağıdakilerden hangisi 'iç kuvvetler'in oluşturduğu bir yer şekli değildir?",
+    "question": "COĞRAFYA: Akarsuların taşıdığı alüvyonları denize döküldüğü yerde biriktirmesiyle oluşan ovalara ne ad verilir? [attachment_0](attachment)",
     "shape": "",
-    "A": "Dağlar",
-    "B": "Platolar",
-    "C": "Kıvrım dağları",
-    "D": "Fay hatları",
-    "E": "Deltalar",
-    "correct": "E",
-    "Açıklama": "Deltalar, akarsuların taşıdığı birikinti malzemelerinin deniz kıyısında birikmesiyle oluşur; bu dış kuvvetlerin (akarsuların) ürünüdür."
+    "A": "Tektonik ova",
+    "B": "Karstik ova",
+    "C": "Delta ovası",
+    "D": "Volkanik ova",
+    "E": "Dağ eteği ovası",
+    "correct": "C",
+    "Açıklama": "Çarşamba, Bafra ve Çukurova gibi ovalar, akarsu biriktirmesiyle oluşan delta ovalarıdır."
   },
   {
     "id": 33,
-    "question": "COĞRAFYA: Aşağıdaki iklim tiplerinden hangisi Türkiye'de 'en geniş alan kaplayan' iklimdir?",
+    "question": "COĞRAFYA: Aşağıdaki iklim tiplerinden hangisi Türkiye'de 'en geniş alan kaplayan' iklimdir? [attachment_1](attachment)",
     "shape": "",
     "A": "Karasal iklim",
     "B": "Akdeniz iklimi",
@@ -393,7 +393,7 @@
     "D": "Ekvatoral iklim",
     "E": "Muson iklimi",
     "correct": "A",
-    "Açıklama": "İç Anadolu, Doğu Anadolu ve Güneydoğu Anadolu'da karasal iklim etkili olduğundan, ülkenin büyük bölümünde bu iklim görülür."
+    "Açıklama": "Deniz etkisinin iç kesimlere girememesi nedeniyle İç, Doğu ve Güneydoğu Anadolu'da karasal iklim hakimdir."
   },
   {
     "id": 34,
@@ -405,11 +405,11 @@
     "D": "Tarım ürünleri dağılışı",
     "E": "Sanayi tesisleri",
     "correct": "C",
-    "Açıklama": "Fiziki haritalarda yer şekilleri (dağ, ova, plato), yükselti ve su kaynakları renk ve işaretlerle gösterilir."
+    "Açıklama": "Fiziki haritalar dağları, ovaları, nehirleri ve yükselti basamaklarını (renklerle) gösterir."
   },
   {
     "id": 35,
-    "question": "COĞRAFYA: Aşağıdaki akarsulardan hangisi 'Türkiye sınırları içinde doğup yine Türkiye sınırları içinde denize dökülür'?",
+    "question": "COĞRAFYA: Aşağıdaki akarsulardan hangisi 'Türkiye sınırları içinde doğup yine Türkiye sınırları içinde denize dökülür'? [attachment_2](attachment)",
     "shape": "",
     "A": "Fırat",
     "B": "Dicle",
@@ -417,7 +417,7 @@
     "D": "Aras",
     "E": "Çoruh",
     "correct": "C",
-    "Açıklama": "Kızılırmak, tamamen Türkiye sınırları içinde akan ve Karadeniz'e dökülen en uzun akarsudur."
+    "Açıklama": "Fırat ve Dicle sınır dışına çıkar, Aras ve Çoruh da sınır dışına dökülür. Kızılırmak ise tamamen Türkiye içindedir."
   },
   {
     "id": 36,
@@ -429,19 +429,19 @@
     "D": "İç pazarın genişlemesi",
     "E": "Asker sayısının artması",
     "correct": "C",
-    "Açıklama": "Nüfus artış hızının fazla olduğu ülkelerde istihdam olanakları sınırlı kalırsa işsizlik önemli bir sorun hâline gelir."
+    "Açıklama": "Nüfus hızla artarken iş imkanları aynı hızda artmazsa işsizlik (kalkınma hızının düşmesi) sorunu ortaya çıkar."
   },
   {
     "id": 37,
-    "question": "COĞRAFYA: Aşağıdaki bölgelerden hangisinde 'büyük baş hayvancılık' diğerlerine göre daha fazla gelişmiştir?",
+    "question": "COĞRAFYA: Türkiye'de bozkır bitki örtüsünün yaygın olduğu İç Anadolu Bölgesi'nde en çok yapılan hayvancılık türü hangisidir?",
     "shape": "",
-    "A": "Ege Bölgesi",
-    "B": "Marmara Bölgesi",
-    "C": "Karadeniz Bölgesi",
-    "D": "Akdeniz Bölgesi",
-    "E": "İç Anadolu Bölgesi",
+    "A": "Büyükbaş hayvancılık",
+    "B": "Küçükbaş hayvancılık (Koyun)",
+    "C": "İpek böcekçiliği",
+    "D": "Balıkçılık",
+    "E": "Arıcılık",
     "correct": "B",
-    "Açıklama": "Marmara, iklim ve su kaynakları açısından elverişli olduğundan büyükbaş hayvancılık (sığır) daha gelişmiştir."
+    "Açıklama": "Bozkır bitki örtüsü (kısa otlar), küçükbaş hayvanların (koyun, keçi) beslenmesi için en uygun ortamdır."
   },
   {
     "id": 38,
@@ -453,11 +453,11 @@
     "D": "Yıldız Dağları Bölümü",
     "E": "Orta Karadeniz Bölümü",
     "correct": "A",
-    "Açıklama": "Erzurum-Kars çevresinde kışlar çok soğuk ve uzun, yazlar kısa ve serindir; sert karasal iklim etkilidir."
+    "Açıklama": "Yükseltinin etkisiyle Erzurum ve Kars platolarında yazlar kısa ve yağışlı, kışlar çok uzun ve sert geçer."
   },
   {
     "id": 39,
-    "question": "COĞRAFYA: Aşağıdakilerden hangisi 'yenilenebilir enerji kaynakları' arasında yer alır?",
+    "question": "COĞRAFYA: Aşağıdakilerden hangisi 'yenilenebilir (tükenmeyen) enerji kaynakları' arasında yer alır?",
     "shape": "",
     "A": "Petrol",
     "B": "Doğal gaz",
@@ -465,7 +465,7 @@
     "D": "Rüzgâr",
     "E": "Linyit",
     "correct": "D",
-    "Açıklama": "Rüzgâr, güneş, jeotermal gibi kaynaklar yenilenebilir enerji kaynaklarıdır; fosil yakıtlar yenilenemez."
+    "Açıklama": "Rüzgâr, güneş, su gibi kaynaklar doğada sürekli kendini yeniler. Diğerleri fosil yakıttır."
   },
   {
     "id": 40,
@@ -477,43 +477,43 @@
     "D": "Rusya",
     "E": "Suriye",
     "correct": "D",
-    "Açıklama": "Türkiye ile Rusya arasında Karadeniz'de deniz sınırı vardır; kara sınırı bulunmamaktadır."
+    "Açıklama": "Rusya, Karadeniz'in kuzeyinde yer alır ve Türkiye ile sadece deniz komşusudur."
   },
   {
     "id": 41,
-    "question": "FELSEFE: Aşağıdakilerden hangisi 'felsefi düşüncenin' başlangıç noktası olarak kabul edilir?",
+    "question": "FELSEFE: Felsefi düşüncenin, kendi üzerine dönerek kendini sorgulaması ve düşünce üzerine düşünme özelliğine ne ad verilir?",
     "shape": "",
-    "A": "Korku",
-    "B": "Merak ve hayret",
-    "C": "Gelenek ve görenek",
-    "D": "Otoriteye bağlılık",
-    "E": "Fiziksel ihtiyaçlar",
+    "A": "Kümülatif olma",
+    "B": "Refleksif olma",
+    "C": "Evrensel olma",
+    "D": "Tutarlı olma",
+    "E": "Sistemli olma",
     "correct": "B",
-    "Açıklama": "Felsefi düşünce, insanın varlık karşısında duyduğu merak ve hayret duygusuyla başlar; 'Neden?' ve 'Nasıl?' sorularını yöneltir."
+    "Açıklama": "Refleksif düşünce, zihnin kendi ürettikleri üzerine yeniden yönelmesi, düşünceyi konu edinmesidir."
   },
   {
     "id": 42,
-    "question": "FELSEFE: Aşağıdakilerden hangisi 'bilimsel bilgi'nin özelliklerinden biridir?",
+    "question": "FELSEFE: Varlığın ana maddesi (arkhe) nedir sorusuna 'Su' cevabını veren ve felsefenin kurucusu sayılan düşünür kimdir?",
     "shape": "",
-    "A": "Öznel ve değişkendir.",
-    "B": "Deneye ve gözleme dayanır.",
-    "C": "Kanıtlanması gerekmez.",
-    "D": "Sadece akla dayanır, gerçeği önemsemez.",
-    "E": "Bireyin iç yaşantısına göre şekillenir.",
-    "correct": "B",
-    "Açıklama": "Bilimsel bilgi, deney ve gözleme dayalı, test edilebilir ve sınanabilir niteliktedir; bu nedenle nesneldir."
+    "A": "Thales",
+    "B": "Herakleitos",
+    "C": "Demokritos",
+    "D": "Platon",
+    "E": "Aristoteles",
+    "correct": "A",
+    "Açıklama": "Thales, evrenin temel maddesinin (arkhe) su olduğunu söyleyerek doğayı doğa ile açıklayan ilk filozoftur."
   },
   {
     "id": 43,
-    "question": "FELSEFE: \"Cogito, ergo sum\" (Düşünüyorum, öyleyse varım) sözüyle tanınan filozof aşağıdakilerden hangisidir?",
+    "question": "FELSEFE: 'İdealar Kuramı' ile tanınan, asıl gerçekliğin duyular dünyası değil, düşünceler dünyası (idealar) olduğunu savunan filozof kimdir?",
     "shape": "",
-    "A": "Platon",
-    "B": "Aristoteles",
-    "C": "Descartes",
-    "D": "Kant",
-    "E": "Spinoza",
-    "correct": "C",
-    "Açıklama": "Rene Descartes, bilginin temeline şüpheyi koymuş ve kesin gerçek olarak düşünen özneyi (ben'i) göstermiştir."
+    "A": "Aristoteles",
+    "B": "Platon",
+    "C": "Sokrates",
+    "D": "Epiküros",
+    "E": "Descartes",
+    "correct": "B",
+    "Açıklama": "Platon'a göre içinde yaşadığımız dünya, mükemmel ve değişmez olan İdealar dünyasının bir kopyası/gölgesidir."
   },
   {
     "id": 44,
@@ -525,7 +525,7 @@
     "D": "Bilginin kaynağı nedir?",
     "E": "Ahlaki eylem nasıl olmalıdır?",
     "correct": "B",
-    "Açıklama": "Siyaset felsefesi; devletin kökeni, iktidarın meşruiyeti, adalet ve özgürlük gibi konuları sorgular."
+    "Açıklama": "Siyaset felsefesi iktidar, egemenlik, devlet ve adalet gibi kavramları sorgular."
   },
   {
     "id": 45,
@@ -537,19 +537,19 @@
     "D": "Sadece akıl yürütmeyi yeterli görür.",
     "E": "Sezgiyi tek bilgi kaynağı kabul eder.",
     "correct": "B",
-    "Açıklama": "Şüphecilik, insanın kesin bilgiye ulaşamayacağını veya bunun çok güç olduğunu savunan görüştür."
+    "Açıklama": "Septikler, duyuların insanı yanılttığını, bu yüzden kesin yargıya varılamayacağını savunurlar."
   },
   {
     "id": 46,
-    "question": "DİN KÜLTÜRÜ: Aşağıdakilerden hangisi 'imanın şartları' arasında yer alır?",
+    "question": "DİN KÜLTÜRÜ: İslam ahlakında, başkalarının kusurlarını örtmek, hatalarını görmezden gelmek anlamına gelen kavram hangisidir?",
     "shape": "",
-    "A": "Namaz kılmak",
-    "B": "Oruç tutmak",
-    "C": "Meleklere inanmak",
-    "D": "Zekât vermek",
-    "E": "Hacca gitmek",
-    "correct": "C",
-    "Açıklama": "Meleklere iman, imanın şartlarındandır; diğerleri İslam'ın şartları arasında yer alır."
+    "A": "Tecessüs",
+    "B": "Müsamaha (Hoşgörü)",
+    "C": "Gıybet",
+    "D": "İsraf",
+    "E": "Haset",
+    "correct": "B",
+    "Açıklama": "Müsamaha; affedici olmak, kusurları büyütmemek ve hoşgörülü davranmaktır."
   },
   {
     "id": 47,
@@ -561,7 +561,7 @@
     "D": "Sadece belli bir millete hitap eder.",
     "E": "Kıyamete kadar geçerliliğini koruyacaktır.",
     "correct": "D",
-    "Açıklama": "Kur'an, tüm insanlığa hitap eder; belli bir millete veya kavme değil, evrensel bir kitaptır."
+    "Açıklama": "Kur'an evrenseldir; sadece Araplara değil, tüm insanlığa gönderilmiştir."
   },
   {
     "id": 48,
@@ -573,19 +573,19 @@
     "D": "Belli bir mesleğe sahip olmak",
     "E": "Sağlıklı ve yolculuğa elverişli olmak",
     "correct": "D",
-    "Açıklama": "Hac, gücü yeten her Müslüman'a farzdır; belli bir meslek şartı yoktur."
+    "Açıklama": "Hac ibadeti için zenginlik ve sağlık şarttır ancak herhangi bir meslek grubu şartı yoktur."
   },
   {
     "id": 49,
-    "question": "DİN KÜLTÜRÜ: Aşağıdakilerden hangisi 'kul hakkı' kapsamına girer?",
+    "question": "DİN KÜLTÜRÜ: Akrabayı ziyaret etmek, onlarla ilişkiyi kesmemek ve yardımcı olmak anlamına gelen İslami kavram hangisidir?",
     "shape": "",
-    "A": "Yalan söylemek",
-    "B": "İsraf etmek",
-    "C": "Komşusunun malına zarar vermek",
-    "D": "Namazı kazaya bırakmak",
-    "E": "Oruç tutmamak",
-    "correct": "C",
-    "Açıklama": "Başkasının malına, canına veya şahsiyetine verilen haksız zarar kul hakkıdır; sahibi helal etmedikçe affedilmeyeceği bildirilmiştir."
+    "A": "Sıla-i Rahim",
+    "B": "Emr-i bi'l maruf",
+    "C": "Sadaka-i Cariye",
+    "D": "Tevekkül",
+    "E": "İhlas",
+    "correct": "A",
+    "Açıklama": "Sıla-i Rahim, akrabalık bağlarını canlı tutmak ve gözetmek demektir; dinen çok önemlidir."
   },
   {
     "id": 50,
@@ -597,31 +597,31 @@
     "D": "Gıybet",
     "E": "İftira",
     "correct": "C",
-    "Açıklama": "Adalet, Kur'an'da ve hadislerde sıkça vurgulanan temel ahlaki erdemlerdendir; kibir, haset, gıybet ve iftira ise kötü huylar arasındadır."
+    "Açıklama": "Adalet, her hak sahibine hakkını vermektir ve İslam'ın temel ahlak ilkelerindendir."
   },
   {
     "id": 51,
-    "question": "DİN KÜLTÜRÜ: 'Kadir Gecesi' ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "question": "DİN KÜLTÜRÜ: Kur'an-ı Kerim'in en uzun ayeti olmasa da, içinde Allah'ın kürsüsü (gücü ve hakimiyeti) geçtiği için bu adla anılan, Bakara suresindeki meşhur ayet hangisidir?",
     "shape": "",
-    "A": "Ramazan ayından önceki gecedir.",
-    "B": "Kur'an-ı Kerim'in indirilmeye başlandığı gecedir.",
-    "C": "Sadece Hz. Muhammed dönemine ait bir gecedir, günümüzde kutlanmaz.",
-    "D": "Sadece hac ibadetinin yapıldığı gecedir.",
-    "E": "Kurban Bayramı'nın ilk gecesidir.",
+    "A": "Fatiha",
+    "B": "Ayet-el Kürsi",
+    "C": "İhlas",
+    "D": "Kevser",
+    "E": "Asr",
     "correct": "B",
-    "Açıklama": "Kadir Gecesi, Kur'an-ı Kerim'in indirilmeye başlandığı, bin aydan hayırlı olduğu bildirilen mübarek bir gecedir."
+    "Açıklama": "Ayet-el Kürsi, Allah'ın yüceliğini, ilmini ve gücünü anlatan Bakara suresinin 255. ayetidir."
   },
   {
     "id": 52,
-    "question": "DİN KÜLTÜRÜ: Aşağıdakilerden hangisi 'peygamberlerin ortak özellikleri' arasında yer almaz?",
+    "question": "DİN KÜLTÜRÜ: Peygamberlerin, Allah'tan aldıkları emir ve yasakları eksiksiz bir şekilde insanlara ulaştırması sıfatına ne denir?",
     "shape": "",
-    "A": "Doğru sözlü olmak (sıdk)",
-    "B": "Güvenilir olmak (emanet)",
-    "C": "Günahsız olmak (ismet)",
-    "D": "İnsanüstü tanrısal güçlere sahip olmak",
-    "E": "Akıllı ve yüksek ahlaka sahip olmak",
-    "correct": "D",
-    "Açıklama": "Peygamberler insanüstü tanrısal güçlere sahip değildir; Allah'ın seçtiği, örnek alınacak insanlardır."
+    "A": "Sıdk",
+    "B": "Emanet",
+    "C": "Tebliğ",
+    "D": "Fetanet",
+    "E": "İsmet",
+    "correct": "C",
+    "Açıklama": "Tebliğ, peygamberlerin vahyi insanlara duyurması ve açıklaması görevidir."
   },
   {
     "id": 53,
@@ -633,7 +633,7 @@
     "D": "Şirk",
     "E": "Tevekkül",
     "correct": "C",
-    "Açıklama": "Ayette inananların kardeş olduğu belirtilerek birlik, dayanışma ve yardımlaşma bilinci pekiştirilir."
+    "Açıklama": "Ayette inananların birbirine olan bağı 'kardeşlik' olarak tanımlanmıştır."
   },
   {
     "id": 54,
@@ -645,7 +645,7 @@
     "D": "Açlık çekenlerin hâlini anlamaya yardımcı olması",
     "E": "İnsanlar arasında kin ve nefreti çoğaltması",
     "correct": "E",
-    "Açıklama": "Oruç, kin ve nefreti artırmaz; tam tersine empati ve merhameti güçlendirir, bireyi kötü söz ve davranışlardan alıkoyar."
+    "Açıklama": "Oruç insana sabrı ve merhameti öğretir; kin ve nefreti azaltır, çoğaltmaz."
   },
   {
     "id": 55,
@@ -657,19 +657,19 @@
     "D": "Şam",
     "E": "Bağdat",
     "correct": "C",
-    "Açıklama": "Mescid-i Haram, Kâbe'nin de içinde bulunduğu, Mekke şehrinde yer alan kutsal mescittir."
+    "Açıklama": "Mescid-i Haram, ortasında Kabe'nin bulunduğu, Müslümanların kıblesi olan Mekke'deki kutsal alandır."
   },
   {
     "id": 56,
-    "question": "DİN KÜLTÜRÜ: Aşağıdakilerden hangisi Hz. Muhammed'in Mekke döneminde yaşadığı önemli olaylardan biridir?",
+    "question": "DİN KÜLTÜRÜ: Aşağıdakilerden hangisi Hz. Muhammed'in Mekke döneminde yaşadığı, bir gece Mescid-i Haram'dan Mescid-i Aksa'ya, oradan da göğe yükseldiği mucizevi olaydır?",
     "shape": "",
-    "A": "Medine'ye hicret",
+    "A": "Hicret",
     "B": "Bedir Savaşı",
-    "C": "Hudeybiye Antlaşması",
-    "D": "Miraç olayı",
+    "C": "Hudeybiye",
+    "D": "İsra ve Miraç",
     "E": "Veda Hutbesi",
     "correct": "D",
-    "Açıklama": "İsra ve Miraç olayı Mekke döneminde gerçekleşmiş, Peygamberimizin manevi bir yolculuğu olarak kabul edilmiştir."
+    "Açıklama": "İsra (gece yürüyüşü) ve Miraç (yükselme), Peygamberimizin en büyük mucizelerinden biridir."
   },
   {
     "id": 57,
@@ -681,31 +681,31 @@
     "D": "Zayıf insanlarla alay etmek",
     "E": "Yere çöp atmak",
     "correct": "B",
-    "Açıklama": "Fazla verilen parayı geri vermek doğruluk ve dürüstlüğün bir göstergesidir; ahlaki bir davranıştır."
+    "Açıklama": "Dürüstlük ahlaki bir erdemdir; haksız kazancı iade etmek bu erdeme örnektir."
   },
   {
     "id": 58,
-    "question": "DİN KÜLTÜRÜ: Aşağıdaki kavramlardan hangisi 'Allah'ın insanlar üzerinde sınırsız ve mutlak otoritesini' ifade eder?",
+    "question": "DİN KÜLTÜRÜ: Aşağıdaki kavramlardan hangisi 'Allah'ın insanlar ve evren üzerinde sınırsız ve mutlak otoritesini, terbiye ediciliğini' ifade eder?",
     "shape": "",
     "A": "Rahmet",
     "B": "Rububiyet",
-    "C": "Ulûhiyet",
+    "C": "Nübüvvet",
     "D": "Merhamet",
     "E": "İhsan",
     "correct": "B",
-    "Açıklama": "Rububiyet, Allah'ın kâinat üzerindeki mutlak hâkimiyeti, terbiye ediciliği ve idaresi anlamına gelir."
+    "Açıklama": "Rububiyet, 'Rab' isminden gelir; Allah'ın yaratması, rızık vermesi ve yönetmesi demektir."
   },
   {
     "id": 59,
-    "question": "DİN KÜLTÜRÜ: Aşağıdakilerden hangisi 'kıyamet' ile ilgili bir kavram değildir?",
+    "question": "DİN KÜLTÜRÜ: Aşağıdakilerden hangisi 'kıyamet' ve ahiret hayatı ile ilgili bir kavram değildir?",
     "shape": "",
     "A": "Haşir",
     "B": "Mizan",
     "C": "Mahşer",
     "D": "Cennet",
-    "E": "Namaz",
+    "E": "Zekât",
     "correct": "E",
-    "Açıklama": "Namaz, dünya hayatındaki bir ibadettir; haşir, mizan, mahşer ve cennet-ahiret hayatı ve kıyamet sonrası ile ilgilidir."
+    "Açıklama": "Zekât bu dünyada yapılan bir ibadettir. Diğerleri öldükten sonraki süreçle ilgilidir."
   },
   {
     "id": 60,
@@ -717,6 +717,6 @@
     "D": "Başkasının günahını üstlenmek",
     "E": "Günahları sürekli ertelemek",
     "correct": "C",
-    "Açıklama": "Tevbe; yapılan günahtan içtenlikle pişman olmak, bir daha yapmamaya karar vermek ve Allah'tan bağışlanma dilemektir."
+    "Açıklama": "Tevbe, kulun hatasını anlayıp pişmanlık duyması ve Allah'a yönelmesidir."
   }
 ]
