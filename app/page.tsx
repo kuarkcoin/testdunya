@@ -13,9 +13,6 @@ const Book = (props: React.SVGProps<SVGSVGElement>) => (
 const Brain = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z" /><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z" /><path d="M12 22v-4" /><path d="M12 2v2" /></svg>
 );
-const Activity = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M22 12h-4l-3 9L9 3l-3 9H2" /></svg>
-);
 const CheckCircle = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><path d="m9 11 3 3L22 4" /></svg>
 );
@@ -31,7 +28,6 @@ const Target = (props: React.SVGProps<SVGSVGElement>) => (
 const Lock = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
 );
-// Yeni Diş İkonu
 const Tooth = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
     <path d="M12 2C7 2 7 7 7 9c0 4 2 6 5 6s5-2 5-6c0-2 0-7-5-7z" />
@@ -40,16 +36,21 @@ const Tooth = (props: React.SVGProps<SVGSVGElement>) => (
     <path d="M9 22c0-2 1-4 3-4s3 2 3 4" />
   </svg>
 );
+// --- YENİ STETOSKOP İKONU ---
+const Stethoscope = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+    <path d="M11 2v2" /><path d="M5 2v2" /><path d="M5 5a2 2 0 0 0 4 0V4a2 2 0 0 0-4 0" /><path d="M8 9a3 3 0 0 0 6 0v-1a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v1a3 3 0 0 0 3 3h0a6 6 0 0 1 6 6v3" /><circle cx="20" cy="19" r="3" />
+  </svg>
+);
 
 // --- SINAV AYARLARI ---
-// Burada her sınav için ayrı bir 'activeLimit' belirledik.
 const examConfig = [
   { 
     id: 'yks', 
     prefix: 'yks-sozel-deneme', 
     title: 'YKS Sözel', 
-    count: 30, // Toplam kutu sayısı
-    activeLimit: 10, // Sadece ilk 10 tanesi tıklanabilir
+    count: 30, 
+    activeLimit: 10, 
     desc: 'TYT ve AYT odaklı kapsamlı, yeni nesil deneme setleri.',
     icon: <Book className="w-6 h-6 text-white" />,
     gradient: 'from-blue-600 to-indigo-600',
@@ -60,8 +61,8 @@ const examConfig = [
     id: 'kpss', 
     prefix: 'kpss-sozel', 
     title: 'KPSS Genel Kültür', 
-    count: 21, // Toplam kutu sayısı
-    activeLimit: 10, // Sadece ilk 10 tanesi tıklanabilir
+    count: 21, 
+    activeLimit: 10, 
     desc: 'Tarih, Coğrafya ve Vatandaşlık için özgün sorular.',
     icon: <Brain className="w-6 h-6 text-white" />,
     gradient: 'from-orange-500 to-red-500',
@@ -73,20 +74,19 @@ const examConfig = [
     prefix: 'tus-deneme', 
     title: 'TUS Denemeleri', 
     count: 35, 
-    activeLimit: 35, // TUS için hepsi açık
+    activeLimit: 35, 
     desc: 'TUS için Temel ve Klinik Bilimler vaka soruları.',
-    icon: <Activity className="w-6 h-6 text-white" />,
+    icon: <Stethoscope className="w-6 h-6 text-white" />, // BURASI GÜNCELLENDİ
     gradient: 'from-emerald-500 to-teal-600',
     border: 'border-emerald-100',
     slug: 'tus-tip'
   },
-  // --- YENİ EKLENEN DUS BÖLÜMÜ ---
   { 
     id: 'dus', 
     prefix: 'dus-deneme', 
     title: 'DUS Denemeleri', 
     count: 10, 
-    activeLimit: 10, // DUS için 10 test de açık
+    activeLimit: 10, 
     desc: 'Diş Hekimliği Uzmanlık Sınavı için klinik ve temel sorular.',
     icon: <Tooth className="w-6 h-6 text-white" />,
     gradient: 'from-cyan-500 to-blue-500', 
@@ -178,12 +178,9 @@ export default function HomePage() {
                 {Array.from({ length: exam.count }, (_, i) => i + 1).map((num) => {
                   const testLinkId = `${exam.prefix}-${num}`;
                   const isDone = (completed[exam.id] || []).includes(num);
-                  
-                  // Mantık: Her sınavın kendi 'activeLimit' değerine göre kontrol yapılır.
                   const isActive = num <= exam.activeLimit;
 
                   if (isActive) {
-                    // AKTİF TESTLER (LİNK)
                     return (
                       <Link 
                         key={num}
@@ -212,22 +209,18 @@ export default function HomePage() {
                       </Link>
                     );
                   } else {
-                    // PASİF TESTLER (DİV - Tıklanamaz - Kilitli)
                     return (
                       <div 
                         key={num}
                         className="relative flex flex-col items-center justify-center py-3 px-2 rounded-xl border border-slate-100 bg-slate-50 text-slate-300 cursor-not-allowed overflow-hidden group/lock"
                         title="Bu test yakında eklenecektir."
                       >
-                        {/* Kilit İkonu */}
                         <div className="mb-1.5 opacity-40">
                              <Lock className="w-5 h-5 text-slate-400" />
                         </div>
                         <span className="text-xs font-bold opacity-40">
                           {num}. Deneme
                         </span>
-                        
-                        {/* Yakında etiketi */}
                         <div className="absolute inset-0 bg-white/60 flex items-center justify-center opacity-0 group-hover/lock:opacity-100 transition-opacity">
                             <span className="text-[10px] font-bold text-slate-500 bg-white px-2 py-1 rounded-full shadow-sm border border-slate-200">Yakında</span>
                         </div>
@@ -287,7 +280,7 @@ export default function HomePage() {
 
       {/* --- FOOTER --- */}
       <footer className="bg-slate-900 text-slate-400 py-12 px-4 border-t border-slate-800">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-8 text-sm">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-8 text-sm mb-8">
           <div className="col-span-1 md:col-span-2">
             <h4 className="text-white font-bold text-lg mb-4 flex items-center gap-2">
               <Trophy className="w-5 h-5 text-indigo-500" /> TestDünya
@@ -322,18 +315,29 @@ export default function HomePage() {
             </ul>
           </div>
         </div>
+
+        {/* --- YENİ EKLENEN SABİT İLETİŞİM BUTONU (FOOTER İÇİNDE) --- */}
+        <div className="flex justify-center border-t border-slate-800 pt-8 mt-8">
+          <Link 
+            href="/iletisim" 
+            className="flex items-center gap-3 bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-xl shadow-lg transition-all hover:-translate-y-1 hover:shadow-indigo-900/50 font-bold text-lg"
+          >
+            <span className="text-2xl">💬</span>
+            <span>Bizimle İletişime Geçin</span>
+          </Link>
+        </div>
       </footer>
-      
-      {/* --- SABİT İLETİŞİM BUTONU --- */}
-      <div className="fixed bottom-6 right-6 z-50 animate-bounce-slow">
-        <Link 
-          href="/iletisim" 
-          className="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-3 rounded-full shadow-lg transition-all hover:scale-105 hover:shadow-indigo-500/50 font-bold border-2 border-white/20 backdrop-blur-md"
-        >
-          <span className="text-xl">💬</span>
-          <span className="hidden sm:inline">İletişim</span>
-        </Link>
-      </div>
+
+      {/* --- YUKARI ÇIK BUTONU --- */}
+      <button 
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        className="fixed bottom-6 right-6 z-[999] bg-indigo-600 text-white p-3 rounded-full shadow-xl hover:bg-indigo-700 transition-all border-2 border-white"
+        aria-label="Yukarı Çık"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="m18 15-6-6-6 6"/>
+        </svg>
+      </button>
 
     </main>
   );
