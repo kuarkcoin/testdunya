@@ -9,7 +9,7 @@
     "D": "Toplantı uzayınca eve geç geldik.",
     "E": "Hasta olduğu için okula gelmedi.",
     "correct": "A",
-    "Açıklama": "A şıkkında gönlünü alma amacıyla yanına gitme eylemi yapılmaktadır. Bu yüzden amaç-sonuç ilişkisi vardır; diğerleri neden, koşul gibi anlamlar taşır."
+    "Açıklama": "A şıkkında eylem (yanına gitmek), bir amaca (gönlünü almak) yönelik yapılmıştır."
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "D": "Oraya gitmeyi hiç istemiyorum.",
     "E": "Bugün hava serinledi.",
     "correct": "B",
-    "Açıklama": "‘Bin kere söyledim’ ifadesi gerçekte mümkün olmayan, çokluğu abartan bir söylemdir; bu yüzden mübalağa vardır."
+    "Açıklama": "'Bin kere söyledim' ifadesi sayısal bir gerçekten ziyade bıkkınlığı abartarak anlatır."
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "D": "Bence bu film gereksiz yere uzatılmış.",
     "E": "En etkileyici ders bence tarihtir.",
     "correct": "C",
-    "Açıklama": "C şıkkındaki ifade tarihsel bir bilgi olup kanıtlanabilir niteliktedir; bu nedenle nesnel bir yargıdır. Diğerleri kişisel beğeniye dayalıdır."
+    "Açıklama": "Romanın yayım yılı kanıtlanabilir, kişisel yoruma kapalı nesnel bir bilgidir."
   },
   {
     "id": 4,
@@ -45,7 +45,7 @@
     "D": "Onu görünce aklıma eski günler geldi.",
     "E": "Bu konuda ayrıntılı bir rapor yazdı.",
     "correct": "B",
-    "Açıklama": "‘Söz etmek’, bir konuyu uzun uzun anlatmadan, kısaca değinmek anlamına gelir; bu yüzden B şıkkında değinme vardır."
+    "Açıklama": "'Söz etmek', bir konunun üzerinden kısaca geçmek, ona değinmek demektir."
   },
   {
     "id": 5,
@@ -57,7 +57,7 @@
     "D": "Türkçeyi doğru kullanmak önemlidir.",
     "E": "Matematikte ki başarısı hepimizi şaşırttı.",
     "correct": "E",
-    "Açıklama": "‘-de/-da’ eki bitişik yazıldığında bulunma durumu değil, ilgeç olur ve kelimeye bitişmez: 'Matematikteki' değil, 'matematikteki' → doğru: 'Matematikteki başarısı...'"
+    "Açıklama": "Sıfat yapan '-ki' bitişik yazılır. Doğrusu 'Matematikteki' olmalıdır."
   },
   {
     "id": 6,
@@ -69,7 +69,7 @@
     "D": "Bu yıl da sınav haziranda yapılacak.",
     "E": "Yarınki toplantı, saat dokuzda başlayacak.",
     "correct": "A",
-    "Açıklama": "A şıkkında noktalı virgül gereksizdir; basit cümlede virgül yeterlidir: 'Sınavdan sonra hep birlikte dışarı çıktık.'"
+    "Açıklama": "Tek yüklemli basit cümlelerde zarf tümlecinden sonra noktalı virgül (;) kullanılmaz."
   },
   {
     "id": 7,
@@ -81,19 +81,19 @@
     "D": "Yarın sabah hava sıcaklığının düşmesi bekleniyor.",
     "E": "Bu kitabı üç günde bitirdim.",
     "correct": "C",
-    "Açıklama": "C şıkkında 'en etkileyici' ifadesi kişisel beğeniye dayanır; herkes için aynı olmak zorunda değildir, bu yüzden öznel bir yargıdır."
+    "Açıklama": "'En etkileyici' ifadesi kişisel bir beğeni içerir, kanıtlanamaz."
   },
   {
     "id": 8,
-    "question": "TÜRKÇE: Aşağıdakilerden hangisi 'yüklem' görevinde sıfat-fiil içeren bir cümledir?",
+    "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde bir sözcükte 'ünlü düşmesi' meydana gelmiştir?",
     "shape": "",
-    "A": "Gelen mektupları masanın üzerine bıraktı.",
-    "B": "Konuşan çocuk çok heyecanlıydı.",
-    "C": "Sokağa dökülen insanlar slogan atıyordu.",
-    "D": "Buraya kadar yürüyen öğrenciler yorulmuş.",
-    "E": "Sessizce ağlayan çocuğa kimse yaklaşmadı.",
-    "correct": "D",
-    "Açıklama": "D cümlesinde 'yürüyen' sıfat-fiil, 'öğrenciler' sözcüğünü nitelendirmekte ve cümlenin öznesi durumundadır; yüklem ise 'yorulmuş'tur. Soruda yüklem görevinde sıfat-fiil istenseydi örneğin 'Yürüyen oydu.' gibi bir yapı gerekirdi; burada dikkat edilmesi gereken, verilen şıklarda yalnız D'de fiilimsili öbek özne+yüklem anlam ilişkisini net göstermesidir."
+    "A": "Çocuklar bahçede top oynuyor.",
+    "B": "Sabretmek erdemli bir davranıştır.",
+    "C": "Kitabı masanın üzerine bıraktı.",
+    "D": "Arabayı yavaşça park etti.",
+    "E": "Kalemini evde unutmuş.",
+    "correct": "B",
+    "Açıklama": "'Sabır' kelimesi 'etmek' yardımcı fiiliyle birleşirken 'ı' ünlüsünü kaybederek 'Sabretmek' olmuştur."
   },
   {
     "id": 9,
@@ -105,7 +105,7 @@
     "D": "Arkadaşım bu konuyu çok iyi anladı.",
     "E": "Sen bu filmi mutlaka izlemelisin.",
     "correct": "B",
-    "Açıklama": "B şıkkında 'Bu roman' özne olup insan değildir; diğer cümlelerde özne kişi zamiri ya da insan adıdır."
+    "Açıklama": "Yayımlanan nedir? 'Bu roman'. Roman insan dışı bir varlıktır ve cümlede sözde özne görevindedir."
   },
   {
     "id": 10,
@@ -117,7 +117,7 @@
     "D": "Gül dikensiz olmaz.",
     "E": "Düşenin dostu olmaz.",
     "correct": "A",
-    "Açıklama": "‘Damlaya damlaya göl olur’ küçük ama sürekli çabaların sabırla biriktiğini ve büyük sonuçlar doğurabileceğini anlatır; sabır vurgusu vardır."
+    "Açıklama": "Küçük birikimlerin sabırla büyük sonuçlar doğuracağını anlatan atasözüdür."
   },
   {
     "id": 11,
@@ -129,19 +129,19 @@
     "D": "Bence sen de bizimle gelmeyeceksin.",
     "E": "Yarın okula gelmeyi düşünmüyor.",
     "correct": "A",
-    "Açıklama": "A şıkkında 'konuşmalısın' ifadesi, yapılması uygun görülen bir davranışı dile getirdiği için öneri anlamı taşır."
+    "Açıklama": "'Konuşmalısın' ifadesi, karşı tarafa yol gösterme ve tavsiye (öneri) anlamı taşır."
   },
   {
     "id": 12,
-    "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde 'iç konuşma'ya yer verilmiştir?",
+    "question": "TÜRKÇE: Aşağıdaki cümlelerin hangisinde 'iç konuşma' tekniğine yer verilmiştir?",
     "shape": "",
-    "A": "\"Bu sınavda başarılı olacağım.\" diye düşündü.",
+    "A": "\"Bu sınavda kesinlikle başarılı olacağım.\" diye geçirdi içinden.",
     "B": "\"Bu sınavda başarılı olacağım.\" dedi.",
     "C": "Sınavla ilgili hiçbir şey konuşmadı.",
     "D": "Sınav sonucunu merak ediyor olmalı.",
     "E": "Sınavdan çıkınca arkadaşlarıyla konuştu.",
     "correct": "A",
-    "Açıklama": "A şıkkında kişi kendi kendine düşündüğü cümle aktarılmıştır; tırnak içinde verilen söz 'diye düşündü' ile iç konuşma niteliği kazanır."
+    "Açıklama": "Karakterin duygu ve düşüncelerini, kendi kendine konuşuyormuş gibi aktardığı teknik A şıkkındadır."
   },
   {
     "id": 13,
@@ -153,7 +153,7 @@
     "D": "Cenap Şahabettin",
     "E": "Ahmet Haşim",
     "correct": "B",
-    "Açıklama": "Namık Kemal, Şinasi, Ziya Paşa gibi isimler Tanzimat I. Dönem sanatçılarıdır."
+    "Açıklama": "Namık Kemal, Şinasi ve Ziya Paşa ile birlikte Tanzimat I. Dönem'in öncülerindendir. Diğerleri Servet-i Fünun veya Fecr-i Ati sanatçılarıdır."
   },
   {
     "id": 14,
@@ -165,7 +165,7 @@
     "D": "Kiralık Konak – Tarık Buğra",
     "E": "Mai ve Siyah – Halit Ziya Uşaklıgil",
     "correct": "D",
-    "Açıklama": "Kiralık Konak, Yakup Kadri Karaosmanoğlu'nun eseridir; Tarık Buğra'nın ünlü romanı Küçük Ağa'dır."
+    "Açıklama": "Kiralık Konak, Yakup Kadri Karaosmanoğlu'nun eseridir. Tarık Buğra'nın değildir."
   },
   {
     "id": 15,
@@ -177,7 +177,7 @@
     "D": "Yusuf Ziya Ortaç",
     "E": "Ahmet Haşim",
     "correct": "E",
-    "Açıklama": "Ahmet Haşim Fecr-i Ati topluluğu içinde yer alır; Beş Hececiler arasında sayılmaz."
+    "Açıklama": "Ahmet Haşim, saf şiir anlayışını benimseyen Fecr-i Ati topluluğu üyesidir."
   },
   {
     "id": 16,
@@ -189,7 +189,7 @@
     "D": "Didaktik şiir",
     "E": "Lirik şiir",
     "correct": "B",
-    "Açıklama": "İstiklal Marşı, milletin bağımsızlık mücadelesini ve kahramanlığını anlattığı için epik (destansı) bir şiirdir; aynı zamanda didaktik yönü de vardır."
+    "Açıklama": "Kahramanlık, yiğitlik ve vatan sevgisini coşkulu bir dille anlattığı için 'Epik' (Destansı) şiirdir."
   },
   {
     "id": 17,
@@ -201,7 +201,7 @@
     "D": "Reşat Nuri Güntekin",
     "E": "Kemal Tahir",
     "correct": "A",
-    "Açıklama": "Sait Faik, Türk hikâyeciliğinin en önemli isimlerinden biri olup özellikle kısa öyküleriyle tanınır."
+    "Açıklama": "Sait Faik, Türk edebiyatında 'durum hikâyeciliği'nin (Çehov tarzı) en büyük ismidir."
   },
   {
     "id": 18,
@@ -213,11 +213,11 @@
     "D": "Bireysel temaların işlenmesi",
     "E": "Servet-i Fünun çizgisinin sürdürülmesi",
     "correct": "C",
-    "Açıklama": "Milli Edebiyat akımı, 'Yeni Lisan' hareketiyle birlikte sade, konuşma diline yakın bir Türkçe ve hece ölçüsünü benimsemiştir."
+    "Açıklama": "'Yeni Lisan' makalesiyle başlayan bu dönemde, yazı dili ile konuşma dili birleştirilmiş, sade Türkçe esas alınmıştır."
   },
   {
     "id": 19,
-    "question": "EDEBİYAT: 'Edebiyat-ı Cedide' topluluğunun en önemli romancısı aşağıdakilerden hangisidir?",
+    "question": "EDEBİYAT: 'Edebiyat-ı Cedide' (Servet-i Fünun) topluluğunun en önemli romancısı aşağıdakilerden hangisidir?",
     "shape": "",
     "A": "Mehmet Akif Ersoy",
     "B": "Halit Ziya Uşaklıgil",
@@ -225,11 +225,11 @@
     "D": "Ziya Paşa",
     "E": "Yakup Kadri Karaosmanoğlu",
     "correct": "B",
-    "Açıklama": "Halit Ziya, Servet-i Fünun (Edebiyat-ı Cedide) döneminin en büyük romancısı kabul edilir; Mai ve Siyah, Aşk-ı Memnu gibi romanlarıyla tanınır."
+    "Açıklama": "Batılı anlamda modern Türk romanının kurucusu sayılan Halit Ziya, bu dönemin en güçlü ismidir."
   },
   {
     "id": 20,
-    "question": "EDEBİYAT: 'Tüccar', 'Şair', 'Köylü' gibi tiplerin yer aldığı, toplumdaki aksaklıkları mizah yoluyla eleştiren kısa oyunlar aşağıdaki türlerden hangisidir?",
+    "question": "EDEBİYAT: Genellikle bir nükteyle son bulan, az kişili ve yalın, şakacı bir içeriği olan kısa tiyatro oyununa ne ad verilir?",
     "shape": "",
     "A": "Trajedi",
     "B": "Dram",
@@ -237,7 +237,7 @@
     "D": "Skeç",
     "E": "Oratoryo",
     "correct": "D",
-    "Açıklama": "Kısa, çoğu zaman tek sahnede oynanan, genellikle güldürü unsurları taşıyan tiyatro parçalarına skeç denir."
+    "Açıklama": "Skeç, genellikle 5-10 dakikalık, güldürü ögesi taşıyan kısa oyunlardır."
   },
   {
     "id": 21,
@@ -246,10 +246,10 @@
     "A": "Kafiye",
     "B": "Redif",
     "C": "Aliterasyon",
-    "D": "Aslına uygunluk",
+    "D": "Mekan Tasviri",
     "E": "Asonans",
     "correct": "D",
-    "Açıklama": "Kafiye, redif, aliterasyon, asonans ses tekrarlarıyla ahengi sağlar. 'Aslına uygunluk' ahenkle ilgili bir terim değildir."
+    "Açıklama": "Mekan tasviri şiirin içeriğiyle (muhteva) ilgilidir, ses ve ritim (ahenk) unsuru değildir."
   },
   {
     "id": 22,
@@ -261,7 +261,7 @@
     "D": "Kahramanların diyaloglarına yer vermemesi",
     "E": "Şiirsel bir anlatım zorunluluğu taşıması",
     "correct": "C",
-    "Açıklama": "Anı türünde yazar, geçmişte yaşadığı gerçek olayları kendi bakış açısından anlatır; kurmaca olmak zorunda değildir."
+    "Açıklama": "Anı, yazarın başından geçen veya tanık olduğu olayları üzerinden zaman geçtikten sonra kaleme aldığı türdür."
   },
   {
     "id": 23,
@@ -273,11 +273,11 @@
     "D": "Osmanlılar",
     "E": "Mısırlılar",
     "correct": "D",
-    "Açıklama": "Osmanlı Devleti Orta Çağ sonları ve Yeni Çağ’da ortaya çıkmıştır; İlk Çağ uygarlığı değildir."
+    "Açıklama": "Osmanlı Devleti 1299'da (Orta Çağ sonu/Yakın Çağ başı) kurulmuştur. Diğerleri M.Ö. kurulan İlk Çağ uygarlıklarıdır."
   },
   {
     "id": 24,
-    "question": "TARİH: Türklerin tarih sahnesine çıktığı coğrafya kabul edilen bölge aşağıdakilerden hangisidir?",
+    "question": "TARİH: Türklerin tarih sahnesine çıktığı ilk anayurt kabul edilen bölge aşağıdakilerden hangisidir?",
     "shape": "",
     "A": "Anadolu",
     "B": "Orta Asya",
@@ -285,11 +285,11 @@
     "D": "Ortadoğu",
     "E": "Kuzey Afrika",
     "correct": "B",
-    "Açıklama": "Türklerin anayurdu genel olarak Orta Asya kabul edilir; birçok ilk Türk devleti burada kurulmuştur."
+    "Açıklama": "Türklerin ana yurdu, doğuda Kingan Dağları, batıda Hazar Denizi ile çevrili Orta Asya'dır."
   },
   {
     "id": 25,
-    "question": "TARİH: Aşağıdakilerden hangisi Orta Asya Türk devletlerinde görülen ortak özelliklerden biridir?",
+    "question": "TARİH: Aşağıdakilerden hangisi İslamiyet öncesi Türk devletlerinde görülen ortak özelliklerden biridir?",
     "shape": "",
     "A": "Feodal toprak düzeni",
     "B": "Mutlak monarşi ve ağır vergi sistemi",
@@ -297,23 +297,23 @@
     "D": "Deniz ticaretine dayalı ekonomi",
     "E": "Demokrasiye dayalı yönetim sistemi",
     "correct": "C",
-    "Açıklama": "İlk Türk devletlerinde hayvancılık ve göçebe/yarı göçebe yaşam yaygındır; çadırlarda, oba düzeninde yaşanmıştır."
+    "Açıklama": "Bozkır kültürü gereği Türkler, hayvancılıkla uğraştıkları için konargöçer (yaylak-kışlak) bir yaşam sürmüşlerdir."
   },
   {
     "id": 26,
-    "question": "TARİH: Osmanlı Devleti'nde 'ilk defa anayasaya dayalı meşruti yönetime' geçilmesi hangi padişah dönemindedir?",
+    "question": "TARİH: Osmanlı Devleti'nde hukukun üstünlüğünün padişah tarafından ilk kez kabul edildiği ve padişah yetkilerinin ilk kez sınırlandığı belge hangisidir?",
     "shape": "",
-    "A": "II. Mahmut",
-    "B": "I. Abdülhamit",
-    "C": "II. Abdülhamit",
-    "D": "III. Selim",
-    "E": "IV. Murat",
-    "correct": "C",
-    "Açıklama": "1876'da II. Abdülhamit döneminde Kanunuesasi ilan edilerek I. Meşrutiyet'e geçilmiştir."
+    "A": "Sened-i İttifak",
+    "B": "Tanzimat Fermanı",
+    "C": "Islahat Fermanı",
+    "D": "Kanunuesasi",
+    "E": "Teşkilat-ı Esasiye",
+    "correct": "B",
+    "Açıklama": "1839 Tanzimat Fermanı ile padişah, kanun gücünün kendi gücünün üstünde olduğunu ilk kez kabul etmiştir."
   },
   {
     "id": 27,
-    "question": "TARİH: Aşağıdakilerden hangisi I. Dünya Savaşı'nda Osmanlı Devleti'nin savaştığı cephelerden biri değildir?",
+    "question": "TARİH: Aşağıdakilerden hangisi I. Dünya Savaşı'nda Osmanlı Devleti'nin savaştığı cephelerden biri değildir? ",
     "shape": "",
     "A": "Çanakkale Cephesi",
     "B": "Kafkas Cephesi",
@@ -321,7 +321,7 @@
     "D": "Galiçya Cephesi",
     "E": "Belgrad Cephesi",
     "correct": "E",
-    "Açıklama": "Belgrad Cephesi diye bir cephe yoktur; Osmanlı, Galiçya, Romanya gibi uzak cephelere de asker göndermiştir."
+    "Açıklama": "Belgrad Cephesi, Osmanlı'nın savaştığı bir cephe değildir. Galiçya, Makedonya ve Romanya müttefiklere yardım cepheleridir."
   },
   {
     "id": 28,
@@ -333,7 +333,7 @@
     "D": "Balıkesir Kongresi",
     "E": "Alaşehir Kongresi",
     "correct": "B",
-    "Açıklama": "Sivas Kongresi’nde 'manda ve himaye kabul olunamaz' kararı alınarak tüm yurtta ortak bir ilke hâline getirilmiştir."
+    "Açıklama": "Erzurum Kongresi'nde ilk kez reddedilen manda ve himaye, Sivas Kongresi'nde 'kesin' olarak reddedilmiştir."
   },
   {
     "id": 29,
@@ -345,7 +345,7 @@
     "D": "3 Mart 1924",
     "E": "30 Ağustos 1922",
     "correct": "C",
-    "Açıklama": "Saltanat, 1 Kasım 1922'de kaldırılmış; böylece Osmanlı yönetim sistemi fiilen sona ermiştir."
+    "Açıklama": "Lozan görüşmelerine çift başlı gidilmesini önlemek amacıyla 1 Kasım 1922'de saltanat kaldırılmıştır."
   },
   {
     "id": 30,
@@ -357,7 +357,7 @@
     "D": "Aşar vergisinin kaldırılması",
     "E": "Türk Tarih Kurumu'nun açılması",
     "correct": "A",
-    "Açıklama": "Medeni Kanun ile evlenme, boşanma, miras gibi alanlarda din kuralları yerine çağdaş hukuk kuralları getirilmiş, laik hukuk sistemi benimsenmiştir."
+    "Açıklama": "Hukuk sisteminin dinden arındırılıp akla ve çağdaş normlara dayandırılması (Medeni Kanun) Laiklik ilkesinin gereğidir."
   },
   {
     "id": 31,
@@ -369,7 +369,7 @@
     "D": "Serbest Cumhuriyet Fırkası",
     "E": "Milli Kalkınma Partisi",
     "correct": "C",
-    "Açıklama": "Demokrat Parti, 1946'da kurulmuş, 1950 seçimlerinde iktidara gelerek Türkiye'de yeni bir dönemi başlatmıştır."
+    "Açıklama": "Adnan Menderes ve arkadaşlarının kurduğu Demokrat Parti (DP), 1950 seçimleriyle 27 yıllık CHP iktidarını devralmıştır."
   },
   {
     "id": 32,
@@ -381,7 +381,7 @@
     "D": "Yer şekillerinin engebeli olması",
     "E": "Önemli geçiş ve ulaşım yolları üzerinde bulunması",
     "correct": "D",
-    "Açıklama": "Yer şekillerinin engebeli olması daha çok jeolojik yapı ve iç kuvvetlerle ilgilidir; diğerleri konumun (matematik ve özel konum) sonucudur."
+    "Açıklama": "Yer şekillerinin engebeli olması 'Jeolojik yapı' ile ilgilidir. Diğerleri doğrudan konum (Matematik ve Özel) sonucudur."
   },
   {
     "id": 33,
@@ -393,11 +393,11 @@
     "D": "Okyanus iklimi",
     "E": "Step iklimi",
     "correct": "D",
-    "Açıklama": "Okyanus ikliminde sıcaklık farkı az, yağış yıl boyunca düzenlidir; yazlar serin, kışlar ılık geçer."
+    "Açıklama": "Türkiye'de Karadeniz iklimi olarak da bilinen Okyanusal iklimde her mevsim yağışlıdır, yazlar serin geçer."
   },
   {
     "id": 34,
-    "question": "COĞRAFYA: Türkiye'de 'karstik arazilerde' görülen bir yer şekli aşağıdakilerden hangisidir?",
+    "question": "COĞRAFYA: Türkiye'de 'karstik arazilerde' (kalkerli yapı) görülen bir yer şekli aşağıdakilerden hangisidir? [attachment_0](attachment)",
     "shape": "",
     "A": "Delta ovası",
     "B": "Vadi",
@@ -405,7 +405,7 @@
     "D": "Hörgüç kaya",
     "E": "Barkhan",
     "correct": "C",
-    "Açıklama": "Kalker gibi eriyebilen kayaçların bulunduğu karstik alanlarda mağara, obruk, dolin, polye gibi şekiller görülür."
+    "Açıklama": "Kireç taşının (kalker) suyla erimesi sonucu mağara, obruk, dolin gibi karstik şekiller oluşur."
   },
   {
     "id": 35,
@@ -417,19 +417,19 @@
     "D": "Doğu Anadolu Bölgesi",
     "E": "Karadeniz Bölgesi",
     "correct": "D",
-    "Açıklama": "Doğu Anadolu Bölgesi, engebeli yer şekilleri ve sert iklim koşulları nedeniyle nüfus yoğunluğu en az olan bölgedir."
+    "Açıklama": "Yüz ölçümü en büyük ancak nüfusu az olan Doğu Anadolu, nüfus yoğunluğunun en düşük olduğu bölgedir."
   },
   {
     "id": 36,
     "question": "COĞRAFYA: Aşağıdakilerden hangisi Türkiye'de sanayinin gelişmesini 'olumsuz' etkileyen faktörlerden biridir?",
     "shape": "",
     "A": "Genç nüfus oranının yüksek olması",
-    "B": "Enerji kaynaklarının yeterli olmaması",
+    "B": "Enerji kaynaklarının yetersizliği",
     "C": "Pazar imkânlarının geniş olması",
     "D": "Üç tarafının denizlerle çevrili olması",
     "E": "Nüfusun büyük kısmının kentlerde yaşaması",
     "correct": "B",
-    "Açıklama": "Sanayide kullanılan petrol, doğalgaz gibi bazı enerji kaynakları bakımından dışa bağımlılık olumsuz bir etkendir."
+    "Açıklama": "Sanayi için gerekli olan petrol ve doğalgaz gibi enerjide dışa bağımlılık, sanayiyi maliyet açısından olumsuz etkiler."
   },
   {
     "id": 37,
@@ -441,7 +441,7 @@
     "D": "Ülkeler arası kültürel farklılıkların azalması",
     "E": "Kent hizmetlerinin yetersiz kalması",
     "correct": "D",
-    "Açıklama": "D seçeneği dış göç ve küreselleşme ile ilgili bir sonuçtur; diğerleri kırsaldan kente iç göçün doğurduğu sorunlardır."
+    "Açıklama": "Ülkeler arası kültürel farkların azalması 'küreselleşme' veya 'dış göç' ile ilgilidir, iç göçle değil."
   },
   {
     "id": 38,
@@ -453,7 +453,7 @@
     "D": "Çukurova Bölümü",
     "E": "Orta Fırat Bölümü",
     "correct": "B",
-    "Açıklama": "Rize merkez olmak üzere Doğu Karadeniz kıyıları, nemli iklimi sayesinde çay tarımının yapıldığı başlıca alandır."
+    "Açıklama": "Çay, bol yağış ve yıkanmış toprak ister. Bu şartlar sadece Doğu Karadeniz (Rize ve çevresi) bölümünde vardır."
   },
   {
     "id": 39,
@@ -465,7 +465,7 @@
     "D": "Side",
     "E": "Kuşadası",
     "correct": "A",
-    "Açıklama": "Uludağ, özellikle kış turizmi (kayak turizmi) ile tanınan önemli bir dağdır; yazın da yayla ve doğa turizmi yapılmaktadır."
+    "Açıklama": "Bursa-Uludağ, Türkiye'nin ilk ve en önemli kış turizm merkezlerinden biridir."
   },
   {
     "id": 40,
@@ -477,7 +477,7 @@
     "D": "Bol yağış alan yüksek platolar",
     "E": "Buzullarla kaplı bölgeler",
     "correct": "C",
-    "Açıklama": "Bitki örtüsü zayıf, toprağı gevşek, kurak ve rüzgâra açık alanlarda rüzgâr erozyonu en fazla görülür."
+    "Açıklama": "Rüzgar, bitki örtüsü olmayan kuru toprağı kolayca süpürür. İç Anadolu ve Güneydoğu buna örnektir."
   },
   {
     "id": 41,
@@ -489,19 +489,19 @@
     "D": "Dini otoriteye dayanması",
     "E": "Sadece günlük sorunları çözmeyi amaçlaması",
     "correct": "B",
-    "Açıklama": "Felsefi düşünce, merak ve hayretle başlar; sorgulayıcı, temellendirmeci ve eleştireldir."
+    "Açıklama": "Felsefe, verili olanı olduğu gibi kabul etmez; sürekli sorgular, temellendirir ve eleştirir."
   },
   {
     "id": 42,
-    "question": "FELSEFE: 'Bilgi nedir, nasıl elde edilir, sınırları var mıdır?' sorularına cevap arayan felsefe dalı aşağıdakilerden hangisidir?",
+    "question": "FELSEFE: Gerçekleşmesi mümkün olmayan, geleceğe yönelik tasarlanmış ideal devlet ve toplum düzenlerine ne ad verilir?",
     "shape": "",
-    "A": "Ontoloji",
-    "B": "Epistemoloji",
-    "C": "Etik",
-    "D": "Estetik",
-    "E": "Siyaset felsefesi",
+    "A": "Paradigma",
+    "B": "Ütopya",
+    "C": "Distopya",
+    "D": "İdeoloji",
+    "E": "Metafizik",
     "correct": "B",
-    "Açıklama": "Epistemoloji (bilgi felsefesi), bilginin kaynağını, doğruluğunu ve sınırlarını araştırır."
+    "Açıklama": "Platon'un 'Devlet'i veya Thomas More'un 'Ütopya'sı gibi hayali mükemmel düzen tasarılarına Ütopya denir."
   },
   {
     "id": 43,
@@ -513,7 +513,7 @@
     "D": "Jean-Paul Sartre",
     "E": "Leibniz",
     "correct": "D",
-    "Açıklama": "Varoluşçu filozof Sartre, insanın seçmek zorunda olduğunu, bu nedenle özgürlük ve sorumluluğun kaçınılmaz olduğunu savunur."
+    "Açıklama": "Sartre, insanın kendi özünü kendi seçimleriyle oluşturduğunu, bu yüzden özgürlüğün bir zorunluluk (mahkûmiyet) olduğunu savunur."
   },
   {
     "id": 44,
@@ -525,7 +525,7 @@
     "D": "Varlık var mıdır?",
     "E": "Bilginin kaynağı nedir?",
     "correct": "C",
-    "Açıklama": "Etik, iyi-kötü, doğru-yanlış gibi kavramlar üzerinden ahlaki eylemin ölçütlerini sorgular."
+    "Açıklama": "Etik (Ahlak Felsefesi), insan eylemlerinin değerini, iyi ve kötüyü inceler."
   },
   {
     "id": 45,
@@ -537,7 +537,7 @@
     "D": "Otoritelerin görüşlerine",
     "E": "Gelenek ve göreneklere",
     "correct": "B",
-    "Açıklama": "Pozitivizme göre bilimsel bilgi tek geçerli bilgidir ve deney-gözleme dayanır; metafizik açıklamalar reddedilir."
+    "Açıklama": "Auguste Comte'un kurduğu Pozitivizm, sadece olgusal olanı ve bilimsel deneyi kabul eder; metafiziği reddeder."
   },
   {
     "id": 46,
@@ -549,7 +549,7 @@
     "D": "Doğru bilgiye ulaşmak mümkün müdür?",
     "E": "Ahlaki eylemde niyet mi sonuç mu önemlidir?",
     "correct": "C",
-    "Açıklama": "Ontoloji; varlığın ne olduğunu, nasıl türlere ayrıldığını, gerçekliğin temelini sorgular."
+    "Açıklama": "Ontoloji, varlığın doğasını, özünü ve türlerini inceleyen felsefe disiplinidir."
   },
   {
     "id": 47,
@@ -561,7 +561,7 @@
     "D": "Kader, sadece ahiretle ilgili konularda geçerlidir.",
     "E": "Kaza ve kader inancı sadece peygamberlere mahsustur.",
     "correct": "C",
-    "Açıklama": "Kader, Allah'ın ezelde takdiri; kaza ise bunların zamanı gelince yaratılmasıdır. İnsan da cüz'i iradesiyle sorumludur."
+    "Açıklama": "Kader plan/program, kaza ise bu planın zamanı gelince uygulanması/yaratılmasıdır."
   },
   {
     "id": 48,
@@ -573,7 +573,7 @@
     "D": "Zekât vermek",
     "E": "Kader ve kazaya iman etmek",
     "correct": "E",
-    "Açıklama": "Kader ve kazaya iman, imanın şartlarındandır; İslam'ın şartları arasında sayılmaz."
+    "Açıklama": "Kader ve kazaya iman 'İmanın Şartı'dır, 'İslam'ın Şartı' (ibadetler) grubunda değildir."
   },
   {
     "id": 49,
@@ -585,7 +585,7 @@
     "D": "Hac",
     "E": "Nafile oruç",
     "correct": "E",
-    "Açıklama": "Nafile ibadetler, sevap kazandıran ancak farz olmayan ibadetlerdir; diğerleri belirli şartlara sahip Müslümanlara farzdır."
+    "Açıklama": "Nafile oruç (Pazartesi-Perşembe orucu gibi) kişinin isteğine bağlıdır, farz (zorunlu) değildir."
   },
   {
     "id": 50,
@@ -597,7 +597,7 @@
     "D": "Sorumluluk",
     "E": "İhsan",
     "correct": "D",
-    "Açıklama": "Bu ayet, kişinin kendi yaptıklarından sorumlu olduğunu, başkasının günahını taşımayacağını vurgular; sorumluluk ilkesini gösterir."
+    "Açıklama": "İslam'da suç ve ceza şahsidir; herkes kendi eylemlerinden sorumludur."
   },
   {
     "id": 51,
@@ -609,19 +609,19 @@
     "D": "Peygamberimizin devlet yönetimiyle ilgili kararları",
     "E": "Peygamberimizin okuduğu dualar",
     "correct": "A",
-    "Açıklama": "Hadis, Hz. Muhammed'in sözleri, davranışları ve onaylarıdır; bunlar Sünnet'in temelini oluşturur."
+    "Açıklama": "Hz. Muhammed'in söylediği sözlere, yaptığı davranışlara ve başkası yaptığında onayladığı durumlara hadis denir."
   },
   {
     "id": 52,
-    "question": "DİN KÜLTÜRÜ: Aşağıdakilerden hangisi İslam'da \"temizlik\" ile ilgili bir ibadet değildir?",
+    "question": "DİN KÜLTÜRÜ: Aşağıdakilerden hangisi İslam'da ibadet öncesi yapılan 'temizlik' çeşitlerinden biri değildir?",
     "shape": "",
     "A": "Abdest",
     "B": "Gusül",
     "C": "Teyemmüm",
     "D": "Namaz",
-    "E": "Mazeretli durumlarda su yerine toprak kullanmak",
+    "E": "Necasetten taharet (Pislikten arınma)",
     "correct": "D",
-    "Açıklama": "Namazdan önce abdest, gusül veya teyemmüm gibi temizlik ibadetleri yapılır; namaz başlı başına temizlik ibadeti değil, şekil ve şartları olan bir ibadettir."
+    "Açıklama": "Namaz kılmak için temizlik (abdest) şarttır, ancak namazın kendisi bir temizlenme eylemi değil, bir ibadettir."
   },
   {
     "id": 53,
@@ -633,7 +633,7 @@
     "D": "Ticari anlaşmazlıkları mahkeme gibi çözmek",
     "E": "Bayram ve kandil gibi günlerde birlik duygusunu artırmak",
     "correct": "D",
-    "Açıklama": "Camiler ibadet, dini bilgi ve birliktelik mekânlarıdır; mahkeme gibi resmî yargı görevleri yoktur."
+    "Açıklama": "Camiler yargı (mahkeme) yeri değildir; ibadet ve eğitim merkezidir."
   },
   {
     "id": 54,
@@ -645,7 +645,7 @@
     "D": "Haram, helal ile aynı anlama gelir.",
     "E": "Haramlar Kur'an ve sünnetle belirlenir.",
     "correct": "D",
-    "Açıklama": "'Haram' ile 'helal' zıt anlamlıdır; haram yasak, helal ise dinen yapılmasında sakınca olmayan şeylerdir."
+    "Açıklama": "Haram (Yasak) ve Helal (Serbest) birbirinin zıttıdır, aynı anlama gelmez."
   },
   {
     "id": 55,
@@ -657,7 +657,7 @@
     "D": "Toplumsal kin ve düşmanlığı artırması",
     "E": "Paylaşma bilincini güçlendirmesi",
     "correct": "D",
-    "Açıklama": "Zekât, sosyal adaleti ve yardımlaşmayı güçlendirir; kin ve düşmanlığı artırmaz, tam tersine azaltır."
+    "Açıklama": "Zekât, sosyal sınıflar arasındaki kıskançlığı ve düşmanlığı ortadan kaldırmak içindir; artırmak için değil."
   },
   {
     "id": 56,
@@ -669,7 +669,7 @@
     "D": "Tevhit",
     "E": "Riya",
     "correct": "C",
-    "Açıklama": "Ayette iyilik ve takva üzere yardımlaşma vurgulanarak Müslümanlar arasında kardeşlik ve dayanışma teşvik edilmektedir."
+    "Açıklama": "Ayet açıkça iyilikte 'yardımlaşmayı' (dayanışmayı) emretmektedir."
   },
   {
     "id": 57,
@@ -681,7 +681,7 @@
     "D": "Sadece geçmiş kavimlerin tarihini anlatmak",
     "E": "İnsanın dünya ve ahiret mutluluğunu sağlamak",
     "correct": "D",
-    "Açıklama": "Kur'an, geçmiş kavimlerin kıssalarını ibret için anlatır ama temel amacı sadece tarih anlatmak değildir; insanı hidayete ve mutluluğa çağırır."
+    "Açıklama": "Kur'an bir tarih kitabı değildir; kıssaları anlatmasının amacı insanlara ders ve ibret vermektir."
   },
   {
     "id": 58,
@@ -693,7 +693,7 @@
     "D": "İslam sadece kalpte olan bir duygudur, imanın davranışla ilgisi yoktur.",
     "E": "İman sadece ahiretle ilgili, İslam sadece dünya ile ilgilidir.",
     "correct": "B",
-    "Açıklama": "İman kalpteki inançtır; İslam ise bu inancın ibadet ve davranışlara yansıyan boyutudur. Bu ikisi bir bütün olarak değerlendirilir."
+    "Açıklama": "İman (inanç) kök, İslam (teslimiyet ve ibadet) ise o kökün gövdesi ve dalları gibidir; birbirini tamamlarlar."
   },
   {
     "id": 59,
@@ -705,7 +705,7 @@
     "D": "Sadece kendisiyle aynı düşünenleri sevmek",
     "E": "Herkese karşı alaycı tavır takınmak",
     "correct": "B",
-    "Açıklama": "Hoşgörü, farklı inanç, düşünce ve yaşam tarzlarına saygı göstermeyi ifade eder; B şıkkı bu tanıma uygundur."
+    "Açıklama": "Hoşgörü (Tolerans), farklılıklara saygı duymak ve onları olduğu gibi kabul edebilmektir."
   },
   {
     "id": 60,
@@ -717,6 +717,6 @@
     "D": "Sosyal sorumluluk ve paylaşma",
     "E": "Tevekkül",
     "correct": "D",
-    "Açıklama": "Hadiste komşunun ihtiyaçlarıyla ilgilenmenin önemi vurgulanmakta, sosyal sorumluluk ve paylaşma bilinci öne çıkarılmaktadır."
+    "Açıklama": "Hadis, bireyin sadece kendisinden değil çevresinden de sorumlu olduğunu belirtir."
   }
 ]
