@@ -229,15 +229,15 @@
   },
   {
     "id": 20,
-    "question": "EDEBİYAT: Kurtuluş Savaşı'nı konu alan ve aydın-halk çatışmasını işleyen 'Yaban' romanının yazarı kimdir?",
+    "question": "EDEBİYAT: 'Safahat' adlı eseriyle tanınan, İstiklal Marşı'mızın şairi ve 'Milli Şair' unvanına sahip sanatçımız kimdir?",
     "shape": "",
-    "A": "Halide Edip Adıvar",
-    "B": "Yakup Kadri Karaosmanoğlu",
-    "C": "Reşat Nuri Güntekin",
-    "D": "Kemal Tahir",
-    "E": "Tarık Buğra",
-    "correct": "B",
-    "Açıklama": "Yaban romanı, Yakup Kadri'nin Kurtuluş Savaşı yıllarında Anadolu köylüsü ile aydın arasındaki kopukluğu anlattığı eseridir."
+    "A": "Mehmet Akif Ersoy",
+    "B": "Yahya Kemal Beyatlı",
+    "C": "Faruk Nafiz Çamlıbel",
+    "D": "Ahmet Haşim",
+    "E": "Ziya Gökalp",
+    "correct": "A",
+    "Açıklama": "Milli Mücadele'ye destek veren ve şiirlerini 'Safahat' adlı kitapta toplayan (İstiklal Marşı hariç) şairimiz Mehmet Akif Ersoy'dur."
   },
   {
     "id": 21,
@@ -544,12 +544,12 @@
     "question": "FELSEFE: Bilimsel bilgi ile felsefi bilgi arasındaki en temel fark aşağıdakilerden hangisidir?",
     "shape": "",
     "A": "Bilimin konuları, felsefenin insanı incelemesi",
-    "B": "Bilimin kesin ve kanıtlanabilir, felsefenin ise öznel ve kümülatif olması",
+    "B": "Bilimin nesnel ve kesin sonuçlu, felsefenin ise öznel olması",
     "C": "Felsefenin daha eski olması",
     "D": "Bilimin sadece doğayı incelemesi",
     "E": "Felsefenin işe yaramaz olması",
     "correct": "B",
-    "Açıklama": "Bilim deney ve gözleme dayanarak nesnel ve kesin sonuçlara ulaşır. Felsefe ise akla dayanır, özneldir (filozofa göredir) ve sonuçları kesin değildir, birikir (kümülatif)."
+    "Açıklama": "Bilim deney ve gözleme dayanarak nesnel ve kesin sonuçlara ulaşır. Felsefe ise akla dayanır, özneldir (filozofa göredir) ve sonuçları kesin değildir."
   },
   {
     "id": 47,
