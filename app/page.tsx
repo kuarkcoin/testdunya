@@ -28,8 +28,13 @@ const Zap = (props: React.SVGProps<SVGSVGElement>) => (
 const Target = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
 );
+// Yeni Kilit İkonu
+const Lock = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+);
 
 // --- SINAV AYARLARI ---
+// Burada "count" değerlerini yüksek tutuyoruz ki kullanıcılar gelecekte daha fazla test olacağını görsün.
 const examConfig = [
   { 
     id: 'yks', 
@@ -65,6 +70,9 @@ const examConfig = [
     slug: 'tus-tip'
   }
 ];
+
+// Aktif edilecek test sayısı
+const ACTIVE_TEST_LIMIT = 10;
 
 export default function HomePage() {
   const [completed, setCompleted] = useState<{ [key: string]: number[] }>({});
@@ -149,34 +157,63 @@ export default function HomePage() {
                 {Array.from({ length: exam.count }, (_, i) => i + 1).map((num) => {
                   const testLinkId = `${exam.prefix}-${num}`;
                   const isDone = (completed[exam.id] || []).includes(num);
+                  
+                  // Mantık: Numara 10'dan büyükse pasif yap
+                  const isActive = num <= ACTIVE_TEST_LIMIT;
 
-                  return (
-                    <Link 
-                      key={num}
-                      href={`/test/${testLinkId}`}
-                      title={`${exam.title} ${num}. Özgün Deneme`}
-                      className={`
-                        group relative flex flex-col items-center justify-center py-3 px-2 rounded-xl border transition-all duration-200
-                        ${isDone 
-                          ? 'bg-emerald-50 border-emerald-200 hover:bg-emerald-100' 
-                          : 'bg-white border-slate-200 hover:border-indigo-400 hover:shadow-md hover:-translate-y-0.5'
-                        }
-                      `}
-                    >
-                      <div className="mb-1.5">
-                        {isDone ? (
-                           <div className="text-emerald-500"><CheckCircle className="w-5 h-5" /></div>
-                        ) : (
-                           <div className="text-slate-300 group-hover:text-indigo-500 transition-colors">
-                             <PenTool className="w-5 h-5" />
-                           </div>
-                        )}
+                  if (isActive) {
+                    // AKTİF TESTLER (LİNK)
+                    return (
+                      <Link 
+                        key={num}
+                        href={`/test/${testLinkId}`}
+                        title={`${exam.title} ${num}. Özgün Deneme`}
+                        className={`
+                          group relative flex flex-col items-center justify-center py-3 px-2 rounded-xl border transition-all duration-200
+                          ${isDone 
+                            ? 'bg-emerald-50 border-emerald-200 hover:bg-emerald-100' 
+                            : 'bg-white border-slate-200 hover:border-indigo-400 hover:shadow-md hover:-translate-y-0.5'
+                          }
+                        `}
+                      >
+                        <div className="mb-1.5">
+                          {isDone ? (
+                             <div className="text-emerald-500"><CheckCircle className="w-5 h-5" /></div>
+                          ) : (
+                             <div className="text-slate-300 group-hover:text-indigo-500 transition-colors">
+                               <PenTool className="w-5 h-5" />
+                             </div>
+                          )}
+                        </div>
+                        <span className={`text-xs font-bold ${isDone ? 'text-emerald-700' : 'text-slate-600 group-hover:text-indigo-900'}`}>
+                          {num}. Deneme
+                        </span>
+                      </Link>
+                    );
+                  } else {
+                    // PASİF TESTLER (DİV - Tıklanamaz)
+                    return (
+                      <div 
+                        key={num}
+                        className="relative flex flex-col items-center justify-center py-3 px-2 rounded-xl border border-slate-100 bg-slate-50 text-slate-300 cursor-not-allowed overflow-hidden"
+                        title="Bu test yakında eklenecektir."
+                      >
+                        {/* Kilit İkonu */}
+                        <div className="mb-1.5 opacity-40">
+                             <Lock className="w-5 h-5 text-slate-400" />
+                        </div>
+                        <span className="text-xs font-bold opacity-40">
+                          {num}. Deneme
+                        </span>
+                        
+                        {/* Opsiyonel: Yakında etiketi */}
+                        <div className="absolute inset-0 bg-white/40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                            <span className="text-[10px] font-bold text-slate-500 bg-white px-2 py-1 rounded-full shadow-sm border border-slate-200">Yakında</span>
+                        </div>
                       </div>
-                      <span className={`text-xs font-bold ${isDone ? 'text-emerald-700' : 'text-slate-600 group-hover:text-indigo-900'}`}>
-                        {num}. Deneme
-                      </span>
-                    </Link>
-                  );
+                    );
+                  }
+
                 })}
               </div>
             </div>
