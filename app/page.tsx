@@ -323,14 +323,7 @@ export default function HomePage() {
           </div>
         </div>
       </footer>
-      {/* Yukarı Çık Butonu (Sadece sayfa aşağı kayınca görünür yapılabilir ama şimdilik sabit duralım) */}
-<button 
-  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-  className="fixed bottom-24 right-6 z-40 bg-white text-indigo-600 p-3 rounded-full shadow-lg border border-indigo-100 hover:bg-indigo-50 transition-all"
-  aria-label="Yukarı Çık"
->
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m18 15-6-6-6 6"/></svg>
-</button>
+      
       {/* --- SABİT İLETİŞİM BUTONU --- */}
       <div className="fixed bottom-6 right-6 z-50 animate-bounce-slow">
         <Link 
