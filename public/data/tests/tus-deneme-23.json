@@ -1,0 +1,677 @@
+[
+  {
+    "id": 1,
+    "question": "TEMEL: Bir enzim reaksiyonunda, substrat konsantrasyonu artırıldığında reaksiyon hızı artıyor ancak Vmax değişmiyor, Km değeri artıyor. Bu durumda ortama eklenen inhibitörün türü nedir?",
+    "A": "Non-kompetitif inhibitör",
+    "B": "Kompetitif inhibitör",
+    "C": "Unkompetitif inhibitör",
+    "D": "İrreversibl inhibitör",
+    "E": "Allosterik inhibitör",
+    "correct": "B",
+    "Açıklama": "Kompetitif inhibitörler, substratla yarışarak enzimin aktif bölgesine bağlanır. Substrat artırılırsa yarış kazanılır ve Vmax'a ulaşılır, ancak bağlanma zorlaştığı için Km (ilgi) artar (düşük afinite)."
+  },
+  {
+    "id": 2,
+    "question": "TEMEL: Hücre zarında bulunan ve 'sükunet (istirahat) membran potansiyelinin' oluşmasında en büyük katkıyı sağlayan iyon kanalı hangisidir?",
+    "A": "Voltaj kapılı Sodyum kanalları",
+    "B": "Sızdıran (Leak) Potasyum kanalları",
+    "C": "Kalsiyum pompası",
+    "D": "Klor kanalları",
+    "E": "Ligand kapılı kanallar",
+    "correct": "B",
+    "Açıklama": "Hücre zarı istirahat halindeyken potasyuma (K+) karşı çok geçirgendir. Sızdıran K+ kanallarından dışarı çıkan K+, içeriyi negatif yapar (-70 mV)."
+  },
+  {
+    "id": 3,
+    "question": "TEMEL: DNA replikasyonu sırasında, sentezlenen yeni DNA zincirindeki hataları (yanlış baz eşleşmelerini) anında fark edip düzelten (Proofreading) DNA Polimeraz aktivitesi hangisidir?",
+    "A": "5' -> 3' Polimeraz aktivitesi",
+    "B": "5' -> 3' Ekzonükleaz aktivitesi",
+    "C": "3' -> 5' Ekzonükleaz aktivitesi",
+    "D": "Ligaz aktivitesi",
+    "E": "Helikaz aktivitesi",
+    "correct": "C",
+    "Açıklama": "DNA Polimeraz, yanlış bir nükleotid eklediğinde geri dönüp onu 3'->5' yönünde kesip çıkarır (Silgi gibi). Buna Proofreading denir."
+  },
+  {
+    "id": 4,
+    "question": "TEMEL: Aşağıdaki aminoasitlerden hangisi, hem ketojenik hem de glikojenik olma özelliğine sahip DEĞİLDİR, sadece ketojeniktir?",
+    "A": "İzolösin",
+    "B": "Fenilalanin",
+    "C": "Triptofan",
+    "D": "Lösin",
+    "E": "Tirozin",
+    "correct": "D",
+    "Açıklama": "Sadece ketojenik olan iki aminoasit vardır: Lösin ve Lizin. Diğerleri ya hem ketojenik-hem glikojenik ya da sadece glikojeniktir."
+  },
+  {
+    "id": 5,
+    "question": "TEMEL: Bir bakterinin faj (virüs) aracılığıyla başka bir bakteriye gen aktarması olayına ne ad verilir?",
+    "A": "Transformasyon",
+    "B": "Konjugasyon",
+    "C": "Transdüksiyon",
+    "D": "Transpozisyon",
+    "E": "Rekombinasyon",
+    "correct": "C",
+    "Açıklama": "Transdüksiyon, bakteriyofajların (bakteri virüsü) taşıyıcı olarak kullanıldığı gen aktarım şeklidir. 
+
+[Image of bacterial transduction mechanism]
+"
+  },
+  {
+    "id": 6,
+    "question": "TEMEL: Aşağıdaki hormonlardan hangisi, etkisini hücre içindeki (sitoplazmik veya nükleer) reseptörlere bağlanarak gösterir?",
+    "A": "İnsülin",
+    "B": "Glukagon",
+    "C": "Adrenalin",
+    "D": "Kortizol",
+    "E": "TSH",
+    "correct": "D",
+    "Açıklama": "Steroid yapılı hormonlar (Kortizol, Aldosteron, Seks hormonları) ve Tiroid hormonları yağda çözünür, hücre zarını geçer ve içerideki reseptörlere bağlanır."
+  },
+  {
+    "id": 7,
+    "question": "TEMEL: İmmün toleransın sağlanmasında kritik rol oynayan ve 'FoxP3' transkripsiyon faktörünü eksprese eden T hücresi alt tipi hangisidir?",
+    "A": "Th1",
+    "B": "Th2",
+    "C": "Treg (Regülatör T)",
+    "D": "Sitotoksik T (CD8)",
+    "E": "Th17",
+    "correct": "C",
+    "Açıklama": "Regülatör T hücreleri (Treg), bağışıklık sistemini baskılayarak otoimmüniteyi önler. FoxP3 bu hücrelerin belirtecidir."
+  },
+  {
+    "id": 8,
+    "question": "TEMEL: Aşağıdaki kas proteinlerinden hangisi, kalsiyum iyonuna bağlanarak kasılmayı başlatan 'anahtar' proteindir?",
+    "A": "Aktin",
+    "B": "Miyozin",
+    "C": "Troponin C",
+    "D": "Tropomiyozin",
+    "E": "Titin",
+    "correct": "C",
+    "Açıklama": "Kalsiyum, Troponin C'ye bağlanır. Bu bağlanma Tropomiyozin'in yerini değiştirir ve Aktin-Miyozin etkileşimi başlar."
+  },
+  {
+    "id": 9,
+    "question": "TEMEL: Bir ilacın 'Terapötik İndeksi'nin (Tİ) yüksek olması ne anlama gelir?",
+    "A": "İlacın çok güçlü (potent) olduğunu",
+    "B": "İlacın güvenli aralığının geniş olduğunu",
+    "C": "İlacın yarı ömrünün uzun olduğunu",
+    "D": "İlacın toksik etkisinin yüksek olduğunu",
+    "E": "İlacın emiliminin hızlı olduğunu",
+    "correct": "B",
+    "Açıklama": "Terapötik İndeks = LD50 / ED50. Bu oran ne kadar büyükse, ilacın öldürücü dozu ile tedavi edici dozu arasındaki makas o kadar açıktır (Güvenlidir)."
+  },
+  {
+    "id": 10,
+    "question": "TEMEL: Aşağıdaki vitaminlerden hangisi, kollajen sentezinde prolin ve lizin aminoasitlerinin hidroksilasyonu için gereklidir?",
+    "A": "Vitamin A",
+    "B": "Vitamin B1",
+    "C": "Vitamin C (Askorbik asit)",
+    "D": "Vitamin D",
+    "E": "Vitamin E",
+    "correct": "C",
+    "Açıklama": "C vitamini, kollajen liflerinin sağlamlığı için gereken hidroksilasyon reaksiyonlarının kofaktörüdür. Eksikliğinde Skorbüt (diş eti kanaması, yara iyileşmesinde gecikme) görülür."
+  },
+  {
+    "id": 11,
+    "question": "TEMEL: Bir nöronun aksonunda miyelin kılıfının hasar görmesi (Demiyelinizasyon), sinir iletiminde ne tür bir değişikliğe yol açar?",
+    "A": "İletim hızı artar",
+    "B": "İletim hızı yavaşlar veya durur",
+    "C": "Aksiyon potansiyeli genliği artar",
+    "D": "Refrakter dönem kısalır",
+    "E": "Sinaptik gecikme azalır",
+    "correct": "B",
+    "Açıklama": "Miyelin, elektriksel yalıtım sağlayarak iletimi hızlandırır (Saltatorik iletim). Hasarında iletim yavaşlar (Örn: Multipl Skleroz)."
+  },
+  {
+    "id": 12,
+    "question": "TEMEL: Aşağıdaki bakteri yapılarından hangisi, bakterinin yüzeylere tutunmasını sağlar ve genetik materyal aktarımında (Konjugasyon) rol oynar?",
+    "A": "Flagella (Kamçı)",
+    "B": "Pilus (Fimbria)",
+    "C": "Kapsül",
+    "D": "Spor",
+    "E": "Ribozom",
+    "correct": "B",
+    "Açıklama": "Piluslar, bakterinin yapışmasını (adezyon) ve seks pilusu aracılığıyla plazmid aktarımını sağlar."
+  },
+  {
+    "id": 13,
+    "question": "TEMEL: Bir genetik hastalıkta, mutasyonlu gen mitokondriyal DNA üzerinde bulunuyorsa, bu hastalığın kalıtım modeli nasıldır?",
+    "A": "Sadece babadan oğula geçer",
+    "B": "Sadece anneden tüm çocuklarına geçer",
+    "C": "Hem anne hem babadan geçebilir",
+    "D": "X'e bağlı resesiftir",
+    "E": "Otozomal dominanttır",
+    "correct": "B",
+    "Açıklama": "Mitokondriler sadece yumurta hücresi (anne) yoluyla aktarılır. Spermden mitokondri gelmez. Bu yüzden mitokondriyal hastalıklar sadece anneden geçer."
+  },
+  {
+    "id": 14,
+    "question": "TEMEL: Aşağıdaki enzimlerden hangisi, glikoliz yolunun en önemli hız kısıtlayıcı (regülatör) enzimidir?",
+    "A": "Heksokinaz",
+    "B": "Fosfofruktokinaz-1 (PFK-1)",
+    "C": "Piruvat Kinaz",
+    "D": "Laktat Dehidrogenaz",
+    "E": "Enolaz",
+    "correct": "B",
+    "Açıklama": "PFK-1, glikolizin ana kontrol noktasıdır. ATP ve Sitrat ile inhibe olur; AMP ve Fruktoz-2,6-bisfosfat ile aktive olur."
+  },
+  {
+    "id": 15,
+    "question": "TEMEL: Aşağıdaki hücre organellerinden hangisi, ilaçların ve toksinlerin detoksifikasyonunda (Zehirli maddelerin atılması) ve kalsiyum depolanmasında görevlidir?",
+    "A": "Granüllü Endoplazmik Retikulum",
+    "B": "Düz Endoplazmik Retikulum (DER)",
+    "C": "Golgi Aygıtı",
+    "D": "Lizozom",
+    "E": "Ribozom",
+    "correct": "B",
+    "Açıklama": "Düz ER (DER), karaciğerde sitokrom p450 enzimleri ile detoksifikasyon yapar; kasta ise sarkoplazmik retikulum adıyla kalsiyum depolar."
+  },
+  {
+    "id": 16,
+    "question": "TEMEL: Aşağıdaki tümör belirteçlerinden hangisi, Kolon Kanseri takibinde en sık kullanılır?",
+    "A": "PSA",
+    "B": "CA-125",
+    "C": "CEA (Karsinoembriyonik Antijen)",
+    "D": "AFP",
+    "E": "CA 19-9",
+    "correct": "C",
+    "Açıklama": "CEA, kolon kanseri taramasında değil, tedavi sonrası nüks takibinde (rekürrens) kullanılır."
+  },
+  {
+    "id": 17,
+    "question": "TEMEL: Aşağıdaki virüslerden hangisi 'Revers Transkriptaz' enzimine sahip olup RNA'dan DNA sentezleyebilir?",
+    "A": "Hepatit A",
+    "B": "HIV (İnsan İmmün Yetmezlik Virüsü)",
+    "C": "İnfluenza",
+    "D": "Kızamık",
+    "E": "Herpes",
+    "correct": "B",
+    "Açıklama": "HIV bir retrovirüstür. Kendi RNA'sını revers transkriptaz enzimiyle DNA'ya çevirip konak genomuna entegre eder."
+  },
+  {
+    "id": 18,
+    "question": "TEMEL: Bir hastada 'Megaloblastik Anemi' saptanıyor ancak nörolojik bulgusu yok. Tedavide sadece Folik Asit verildiğinde kan değerleri düzeliyor. Eksik olan vitamin hangisidir?",
+    "A": "B12 Vitamini",
+    "B": "Folik Asit (Folat)",
+    "C": "Demir",
+    "D": "B6 Vitamini",
+    "E": "C Vitamini",
+    "correct": "B",
+    "Açıklama": "Sadece Folat eksikliği nörolojik bulgu yapmaz. Eğer B12 eksikliği olsaydı ve sadece Folat verilseydi, anemi düzelir ama nörolojik hasar (kombine dejenerasyon) kötüleşirdi."
+  },
+  {
+    "id": 19,
+    "question": "TEMEL: Oksijen-Hemoglobin ayrışım eğrisini 'Sola' kaydıran (Hemoglobinin oksijene ilgisini artıran, dokuya bırakmasını zorlaştıran) faktör hangisidir?",
+    "A": "Asidoz (pH düşüşü)",
+    "B": "Karbondioksit (CO2) artışı",
+    "C": "Vücut sıcaklığının artması",
+    "D": "2,3-DPG artışı",
+    "E": "Hipotermi (Vücut sıcaklığının düşmesi)",
+    "correct": "E",
+    "Açıklama": "Soğuk ortamda (Hipotermi), hemoglobin oksijeni sıkıca tutar (Sola kayma). Diğer şıklardaki durumlar (Egzersiz, ateş, asidoz) dokunun oksijene ihtiyacı olduğunu gösterir ve oksijenin bırakılmasını sağlar (Sağa kayma). 
+
+[Image of hemoglobin dissociation curve shifts]
+"
+  },
+  {
+    "id": 20,
+    "question": "TEMEL: Aşağıdaki yapılardan hangisi 'Kan-Beyin Bariyeri'nin oluşumunda en önemli rolü oynar?",
+    "A": "Nöronlar",
+    "B": "Astrosit ayakları ve Endotel sıkı bağlantıları (Tight junction)",
+    "C": "Oligodendrositler",
+    "D": "Mikroglia",
+    "E": "Ependim hücreleri",
+    "correct": "B",
+    "Açıklama": "Kan-beyin bariyeri, beyin kapiller endotelindeki sıkı bağlantılar (tight junction) ve onları saran astrosit ayakları tarafından oluşturulur."
+  },
+  {
+    "id": 21,
+    "question": "TEMEL: Aşağıdaki ilaçlardan hangisi 'Asetilkolinesteraz İnhibitörü' olup, Alzheimer hastalığı tedavisinde ve Myastenia Gravis tanısında/tedavisinde kullanılır?",
+    "A": "Atropin",
+    "B": "Adrenalin",
+    "C": "Neostigmin / Donepezil",
+    "D": "Propranolol",
+    "E": "Diazepam",
+    "correct": "C",
+    "Açıklama": "Asetilkolinesteraz inhibitörleri (Neostigmin, Donepezil), asetilkolin yıkımını engelleyerek ortamdaki asetilkolin miktarını artırır."
+  },
+  {
+    "id": 22,
+    "question": "TEMEL: Böbrekte 'Renin' salgılayan hücreler (Jukstaglomerüler hücreler), hangi uyarana yanıt olarak Renin salgısını artırır?",
+    "A": "Kan basıncının artması",
+    "B": "Kan hacminin artması",
+    "C": "Renal kan akımının azalması (Hipotansiyon)",
+    "D": "Sodyum alımının artması",
+    "E": "Parasempatik uyarı",
+    "correct": "C",
+    "Açıklama": "Böbrek kan akımı azalırsa (hipotansiyon, kanama), jukstaglomerüler hücreler bunu algılar ve tansiyonu yükseltmek için Renin salgılar (RAAS sistemi)."
+  },
+  {
+    "id": 23,
+    "question": "TEMEL: Aşağıdaki parazitlerden hangisi 'Sıtma' (Malaria) hastalığının etkenidir?",
+    "A": "Entamoeba histolytica",
+    "B": "Plasmodium falciparum",
+    "C": "Toxoplasma gondii",
+    "D": "Leishmania",
+    "E": "Giardia lamblia",
+    "correct": "B",
+    "Açıklama": "Sıtma, Anofel cinsi sivrisineklerle bulaşan Plasmodium türleri (en tehlikelisi P. falciparum) tarafından oluşturulur."
+  },
+  {
+    "id": 24,
+    "question": "TEMEL: Hücre döngüsünün 'Mitoz' evresinde, kromozomların iğ ipliklerine tutunarak ekvator düzlemine dizildiği aşama hangisidir?",
+    "A": "Profaz",
+    "B": "Metafaz",
+    "C": "Anafaz",
+    "D": "Telofaz",
+    "E": "İnterfaz",
+    "correct": "B",
+    "Açıklama": "Metafazda kromozomlar en belirgin haldedir ve hücrenin ortasında (ekvator) tek sıra halinde dizilirler. Karyotip analizi bu evrede yapılır. 
+
+[Image of mitosis metaphase stage]
+"
+  },
+  {
+    "id": 25,
+    "question": "TEMEL: Aşağıdaki dokulardan hangisinde 'rejenerasyon' (yenilenme) yeteneği en azdır veya hiç yoktur?",
+    "A": "Karaciğer",
+    "B": "Deri (Epidermis)",
+    "C": "Kemik İliği",
+    "D": "Kalp Kası (Miyokard)",
+    "E": "Bağırsak Epiteli",
+    "correct": "D",
+    "Açıklama": "Kalp kası ve sinir hücreleri (kalıcı hücreler), doğumdan sonra bölünme yeteneklerini kaybederler. Hasar görürlerse yenilenemezler, skar dokusu (fibrozis) oluşur."
+  },
+  {
+    "id": 26,
+    "question": "TEMEL: Aşağıdaki antikorlardan hangisi 'Alerjik reaksiyonlarda' ve 'Parazit enfeksiyonlarında' kanda düzeyi artan immünoglobulindir?",
+    "A": "IgA",
+    "B": "IgG",
+    "C": "IgM",
+    "D": "IgE",
+    "E": "IgD",
+    "correct": "D",
+    "Açıklama": "IgE, mast hücrelerine bağlanarak histamin salınımını tetikler (Alerji) ve eozinofillerle birlikte parazitlere saldırır."
+  },
+  {
+    "id": 27,
+    "question": "TEMEL: Aşağıdaki vitaminlerden hangisi 'Pıhtılaşma Faktörlerinin' (Faktör II, VII, IX, X) sentezi için karaciğerde gereklidir?",
+    "A": "Vitamin A",
+    "B": "Vitamin D",
+    "C": "Vitamin E",
+    "D": "Vitamin K",
+    "E": "Vitamin C",
+    "correct": "D",
+    "Açıklama": "K vitamini, pıhtılaşma faktörlerinin gama-karboksilasyonu (aktifleşmesi) için zorunludur. Warfarin ilacı K vitaminini bloke ederek kanı sulandırır."
+  },
+  {
+    "id": 28,
+    "question": "TEMEL: Mide asit salgısını (HCl) uyaran temel hormon hangisidir ve hangi hücreden salgılanır?",
+    "A": "Sekretin - S hücresi",
+    "B": "Kolesistokinin - I hücresi",
+    "C": "Gastrin - G hücresi",
+    "D": "Somatostatin - D hücresi",
+    "E": "Pepsin - Şef hücresi",
+    "correct": "C",
+    "Açıklama": "Mide antrumundaki G hücrelerinden salgılanan Gastrin, paryetal hücreleri uyararak asit salgısını artırır."
+  },
+  {
+    "id": 29,
+    "question": "TEMEL: Aşağıdaki elementlerden hangisi 'Tiroid Hormonlarının' (T3, T4) yapısında bulunur?",
+    "A": "Demir",
+    "B": "İyot",
+    "C": "Kalsiyum",
+    "D": "Magnezyum",
+    "E": "Çinko",
+    "correct": "B",
+    "Açıklama": "Tiroid hormon sentezi için iyot elzemdir. T3 (Tri-iyodo-tironin) 3 iyot atomu, T4 ise 4 iyot atomu içerir."
+  },
+  {
+    "id": 30,
+    "question": "TEMEL: Aşağıdaki enzimlerden hangisi, DNA'dan RNA sentezlenmesi (Transkripsiyon) işlemini gerçekleştirir?",
+    "A": "DNA Polimeraz",
+    "B": "RNA Polimeraz",
+    "C": "Revers Transkriptaz",
+    "D": "Ligaz",
+    "E": "Helikaz",
+    "correct": "B",
+    "Açıklama": "RNA Polimeraz, DNA şablonunu okuyarak mRNA sentezler. (DNA Polimeraz ise replikasyonda görevlidir)."
+  },
+  {
+    "id": 31,
+    "question": "KLİNİK: 50 yaşındaki hasta, ani başlayan 'şiddetli baş dönmesi' (vertigo), bulantı ve kusma ile acile geliyor. Başını hareket ettirince şikayetleri artıyor. Nörolojik muayene normal. Dix-Hallpike manevrası ile nistagmus tetikleniyor. Tanı nedir?",
+    "A": "Meniere Hastalığı",
+    "B": "Benign Paroksismal Pozisyonel Vertigo (BPPV)",
+    "C": "Vestibüler Nörit",
+    "D": "Beyin Sapı İnfarctı",
+    "E": "Migren",
+    "correct": "B",
+    "Açıklama": "BPPV (Kristal oynaması), iç kulaktaki kalsiyum kristallerinin yer değiştirmesidir. Pozisyonla tetiklenen kısa süreli baş dönmesi yapar. Epley manevrası ile düzeltilir."
+  },
+  {
+    "id": 32,
+    "question": "KLİNİK: 6 aylık bir bebekte inatçı öksürük, hışıltılı solunum (wheezing) ve nefes darlığı gelişiyor. Ateş hafif. Akciğer grafisinde havalanma artışı var. Kış mevsimindeyiz. En olası tanı ve etken nedir?",
+    "A": "Bakteriyel Pnömoni - Pnömokok",
+    "B": "Akut Bronşiyolit - RSV (Respiratuvar Sinsityal Virüs)",
+    "C": "Astım - Alerji",
+    "D": "Boğmaca - Bordetella",
+    "E": "Krup - Parainfluenza",
+    "correct": "B",
+    "Açıklama": "Bronşiyolit, 2 yaş altı bebeklerde kışın görülen, küçük hava yollarının virüsle (RSV) tıkanması tablosudur."
+  },
+  {
+    "id": 33,
+    "question": "KLİNİK: 30 yaşındaki kadın hasta, el bileğinde ağrı, uyuşma ve karıncalanma (özellikle ilk 3 parmakta) şikayetiyle başvuruyor. Geceleri ağrı ile uyanıyor ve elini sallayınca rahatlıyor. Tanı nedir?",
+    "A": "Kubital Tünel Sendromu",
+    "B": "Karpal Tünel Sendromu",
+    "C": "Boyun Fıtığı",
+    "D": "Tenenit",
+    "E": "Raynaud Fenomeni",
+    "correct": "B",
+    "Açıklama": "Karpal Tünel Sendromu, median sinirin el bileğinde sıkışmasıdır. İlk 3 parmakta duyu kusuru ve gece ağrısı tipiktir."
+  },
+  {
+    "id": 34,
+    "question": "KLİNİK: Acil servise 'nefes alamama' şikayetiyle getirilen genç hastada, dudaklarda şişme, ses kısıklığı ve vücutta yaygın kaşıntılı kabarıklar (ürtiker) görülüyor. 10 dakika önce fıstık yediği öğreniliyor. Tanı nedir?",
+    "A": "Astım Atağı",
+    "B": "Anafilaksi (Alerjik Şok)",
+    "C": "Panik Atak",
+    "D": "Kalp Krizi",
+    "E": "Zehirlenme",
+    "correct": "B",
+    "Açıklama": "Anafilaksi, alerjene maruziyet sonrası ani gelişen, hava yolunu tıkayabilen ve tansiyonu düşüren hayatı tehdit edici bir reaksiyondur. Tedavisi Adrenalindir."
+  },
+  {
+    "id": 35,
+    "question": "KLİNİK: 60 yaşındaki erkek hasta, idrarını yaparken yanma, sık idrara çıkma ve ateş şikayetiyle geliyor. Rektal tuşede prostat 'çok hassas ve sıcak'. Tanı nedir?",
+    "A": "Prostat Kanseri",
+    "B": "Benign Prostat Hiperplazisi (BPH)",
+    "C": "Akut Bakteriyel Prostatit",
+    "D": "Sistit",
+    "E": "Böbrek Taşı",
+    "correct": "C",
+    "Açıklama": "Akut prostatit, prostatın bakteriyel enfeksiyonudur. Tuşede prostatın aşırı hassas olması tipiktir. Masaj kontrendikedir (bakteriyemi riski)."
+  },
+  {
+    "id": 36,
+    "question": "KLİNİK: Şiddetli baş ağrısı, ense sertliği ve ateş şikayetiyle gelen hastada 'Kerning ve Brudzinski' belirtileri pozitif. BOS (Beyin Omurilik Sıvısı) bulanık ve basıncı yüksek. Tanı nedir?",
+    "A": "Migren",
+    "B": "Beyin Kanaması",
+    "C": "Akut Bakteriyel Menenjit",
+    "D": "Beyin Tümörü",
+    "E": "Viral Ensefalit",
+    "correct": "C",
+    "Açıklama": "Menenjit triadı: Ateş, Baş ağrısı, Ense sertliği. BOS'un bulanık olması bakteriyel enfeksiyonu (irin) gösterir."
+  },
+  {
+    "id": 37,
+    "question": "KLİNİK: 45 yaşındaki kadın hasta, sağ üst kadranda yemeklerden sonra artan ağrı şikayetiyle başvuruyor. Ağrı sağ omuza vuruyor. Muayenede sağ üst kadrana bastırıp nefes alması istendiğinde ağrı nedeniyle nefesini tutuyor (Murphy belirtisi). Tanı nedir?",
+    "A": "Akut Apandisit",
+    "B": "Akut Kolesistit (Safra kesesi iltihabı)",
+    "C": "Akut Pankreatit",
+    "D": "Gastrit",
+    "E": "Böbrek Taşı",
+    "correct": "B",
+    "Açıklama": "Akut kolesistit genellikle safra taşına bağlı gelişir. Murphy belirtisi (keseye bastırınca nefes kesilmesi) tanı koydurucudur."
+  },
+  {
+    "id": 38,
+    "question": "KLİNİK: Kanlı ishal, karın ağrısı ve ateş ile başvuran hastanın dışkı mikroskopisinde 'eritrosit yutmuş amipler' (trofozoit) görülüyor. Tanı nedir?",
+    "A": "Basilli Dizanteri (Shigella)",
+    "B": "Amebik Dizanteri (Entamoeba histolytica)",
+    "C": "Kolera",
+    "D": "Giardiasis",
+    "E": "Tifo",
+    "correct": "B",
+    "Açıklama": "Entamoeba histolytica, kanlı ishale (dizanteri) neden olur. Eritrosit fagosite etmiş amipler tanı koydurucudur."
+  },
+  {
+    "id": 39,
+    "question": "KLİNİK: 55 yaşındaki kadın hasta, el ve ayak eklemlerinde simetrik ağrı ve sabahları 1 saatten uzun süren tutukluk şikayetiyle geliyor. Eklemlerde şekil bozukluğu (Kuğu boynu deformitesi) başlamış. Tanı nedir?",
+    "A": "Osteoartrit (Kireçlenme)",
+    "B": "Romatoid Artrit",
+    "C": "Gut",
+    "D": "Ankilozan Spondilit",
+    "E": "Sistemik Lupus",
+    "correct": "B",
+    "Açıklama": "Romatoid Artrit, küçük eklemleri simetrik tutan, sabah tutukluğu uzun süren ve deformite bırakan kronik bir hastalıktır."
+  },
+  {
+    "id": 40,
+    "question": "KLİNİK: Trafik kazası sonrası şuuru kapalı gelen hastanın BT'sinde, kafa kemiği ile beyin zarı (Dura mater) arasında 'Mercimek (Lens)' şeklinde kanama görülüyor. Tanı nedir?",
+    "A": "Subdural Hematom",
+    "B": "Epidural Hematom",
+    "C": "İntraserebral Kanama",
+    "D": "Subaraknoid Kanama",
+    "E": "Beyin Ödemi",
+    "correct": "B",
+    "Açıklama": "Epidural hematom, genellikle orta meningeal arter yırtılmasına bağlıdır ve BT'de lens (bikonveks) şeklindedir. Acil cerrahi gerektirir. 
+
+[Image of epidural hematoma CT scan]
+"
+  },
+  {
+    "id": 41,
+    "question": "KLİNİK: 2 aylık bebekte 'kedi miyavlaması' şeklinde ağlama, mikrosefali ve düşük kulaklar görülüyor. Genetik analizde 5. kromozomun kısa kolunda silinme (delesyon) saptanıyor. Tanı nedir?",
+    "A": "Down Sendromu",
+    "B": "Cri du Chat (Kedi Miyavlaması) Sendromu",
+    "C": "Turner Sendromu",
+    "D": "Klinefelter Sendromu",
+    "E": "Patau Sendromu",
+    "correct": "B",
+    "Açıklama": "Cri du Chat sendromu, 5p delesyonuna bağlıdır. Larenks yapısındaki anormallik nedeniyle bebekler kedi gibi ağlar."
+  },
+  {
+    "id": 42,
+    "question": "KLİNİK: Genç bir kadın hasta, eforla gelen nefes darlığı şikayetiyle başvuruyor. Dinlemekle kalp tepesinde (apeks) 'Diyastolik Rulman' (Üfürüm) duyuluyor. Hastanın çocukluğunda ateşli eklem romatizması geçirdiği öğreniliyor. En olası kapak hastalığı nedir?",
+    "A": "Mitral Darlık",
+    "B": "Mitral Yetmezlik",
+    "C": "Aort Darlığı",
+    "D": "Aort Yetmezliği",
+    "E": "Triküspit Yetmezliği",
+    "correct": "A",
+    "Açıklama": "Romatizmal kalp hastalığının en sık sekeli Mitral Darlıktır. Kanın daralmış kapaktan dolarken çıkardığı sese diyastolik rulman denir."
+  },
+  {
+    "id": 43,
+    "question": "KLİNİK: Çok su içme, sık idrara çıkma ve kilo kaybı şikayetiyle gelen 15 yaşındaki çocuğun kan şekeri 300 mg/dL bulunuyor. İdrarda glukoz ve keton pozitif. Tanı nedir?",
+    "A": "Tip 2 Diyabet",
+    "B": "Tip 1 Diyabet",
+    "C": "Diyabetes İnsipidus",
+    "D": "Böbrek Yetmezliği",
+    "E": "Cushing Sendromu",
+    "correct": "B",
+    "Açıklama": "Çocukluk çağında başlayan, insülin eksikliği ve ketozis eğilimi ile giden diyabet türü Tip 1 Diyabettir."
+  },
+  {
+    "id": 44,
+    "question": "KLİNİK: 50 yaşındaki hasta, gövdesinde kuşak tarzında, ağrılı, su dolu kabarcıklar (veziküller) ile başvuruyor. Döküntü vücudun sadece bir yarısında ve bir dermatom (sinir) hattı boyunca. Tanı nedir?",
+    "A": "Suçiçeği",
+    "B": "Zona (Herpes Zoster)",
+    "C": "Uçuk (Herpes Simplex)",
+    "D": "Egzama",
+    "E": "Uyuz",
+    "correct": "B",
+    "Açıklama": "Zona, çocuklukta geçirilen suçiçeği virüsünün sinir köklerinde saklanıp yıllar sonra bağışıklık düşünce aynı sinir hattında tekrar ortaya çıkmasıdır."
+  },
+  {
+    "id": 45,
+    "question": "KLİNİK: Halsizlik ve solukluk şikayeti olan hastada Hemoglobin düşük, MCV düşük (Mikrositer Anemi) ve Ferritin düşük saptanıyor. En olası tanı nedir?",
+    "A": "B12 Eksikliği Anemisi",
+    "B": "Folat Eksikliği Anemisi",
+    "C": "Demir Eksikliği Anemisi",
+    "D": "Hemolitik Anemi",
+    "E": "Aplastik Anemi",
+    "correct": "C",
+    "Açıklama": "Mikrositer anemi ve düşük ferritin depoların boşaldığını gösterir; bu tablo Demir Eksikliği Anemisi için tipiktir."
+  },
+  {
+    "id": 46,
+    "question": "KLİNİK: Gebeliğin erken döneminde (ilk 3 ay) 'hiperemezis gravidarum' (aşırı kusma) nedeniyle beslenemeyen bir gebede, Wernicke ensefalopatisi gelişmemesi için sıvı tedavisine mutlaka ne eklenmelidir?",
+    "A": "Demir",
+    "B": "B1 Vitamini (Tiamin)",
+    "C": "C Vitamini",
+    "D": "Kalsiyum",
+    "E": "Protein",
+    "correct": "B",
+    "Açıklama": "Aşırı kusma Tiamin depolarını tüketir. Sadece serum takılırsa (glukoz), kalan az miktardaki B1 de harcanır ve beyin hasarı (Wernicke) oluşur."
+  },
+  {
+    "id": 47,
+    "question": "KLİNİK: Kafa travması geçiren bir hastada, burundan açık renkli sıvı gelmesi (Rinore) ve göz çevresinde morluklar ('Rakun Gözü' belirtisi) görülüyor. Bu bulgular neye işaret eder?",
+    "A": "Burun Kırığı",
+    "B": "Kafa Tabanı Kırığı",
+    "C": "Göz Travması",
+    "D": "Beyin Kanaması",
+    "E": "Yüzeyel kesi",
+    "correct": "B",
+    "Açıklama": "Kafa tabanı kırığında BOS (Beyin omurilik sıvısı) burundan veya kulaktan akabilir. Rakun gözü ve kulak arkası morluk (Battle belirtisi) tipiktir."
+  },
+  {
+    "id": 48,
+    "question": "KLİNİK: Depremde göçük altında kalan ve 10 saat sonra çıkarılan hastada idrar rengi koyu kahverengi (kola rengi) ve CK (Kreatin Kinaz) düzeyi çok yüksek bulunuyor. Gelişebilecek 'Akut Böbrek Yetmezliği'nin nedeni nedir?",
+    "A": "Dehidratasyon",
+    "B": "Rabdomiyoliz (Kas yıkımı)",
+    "C": "Enfeksiyon",
+    "D": "Kanama",
+    "E": "İlaç toksisitesi",
+    "correct": "B",
+    "Açıklama": "Ezilme yaralanması (Crush sendromu) kasları yıkar (Rabdomiyoliz). Açığa çıkan Miyoglobin böbrek tübüllerini tıkayarak yetmezlik yapar."
+  },
+  {
+    "id": 49,
+    "question": "KLİNİK: 70 yaşında erkek hasta, ani başlayan 'perde inmesi' şeklinde ağrısız görme kaybı ile geliyor. Muayenede 'Gri-beyaz retina' ve 'Kiraz kırmızısı leke' görülmüyor, onun yerine retinada yaygın kanamalar ve 'alev şeklinde' kanama odakları var. Tanı nedir?",
+    "A": "Santral Retinal Arter Tıkanıklığı",
+    "B": "Santral Retinal Ven Tıkanıklığı",
+    "C": "Katarakt",
+    "D": "Göz Tansiyonu",
+    "E": "Konjonktivit",
+    "correct": "B",
+    "Açıklama": "Retinal Ven Tıkanıklığında kan gözden geri dönemez, basınç artar ve yaygın kanamalar (Blood and Thunder / Fırtınalı gökyüzü) oluşur."
+  },
+  {
+    "id": 50,
+    "question": "KLİNİK: Şiddetli karın ağrısı ile gelen hastanın ayakta direkt karın grafisinde, diyafragma altında serbest hava (hilal şeklinde) görülüyor. Tanı nedir?",
+    "A": "Bağırsak Tıkanıklığı",
+    "B": "İçi Boş Organ Perforasyonu (Mide/Bağırsak delinmesi)",
+    "C": "Akut Pankreatit",
+    "D": "Apandisit",
+    "E": "Böbrek Taşı",
+    "correct": "B",
+    "Açıklama": "Diyafragma altı serbest hava (Pnömoperitoneum), mide veya bağırsak delinmesinin en önemli radyolojik bulgusudur. Acil ameliyat gerektirir. 
+
+[Image of pneumoperitoneum x-ray]
+"
+  },
+  {
+    "id": 51,
+    "question": "KLİNİK: 3 yaşındaki çocukta, karında şişlik ve ele gelen kitle saptanıyor. İdrarda VMA (Vanilmandelik asit) düzeyi yüksek. Kitle böbrek üstü bezinden köken alıyor. Çocukluk çağının en sık görülen bu karın içi tümörü nedir?",
+    "A": "Wilms Tümörü",
+    "B": "Nöroblastom",
+    "C": "Lenfoma",
+    "D": "Hepatoblastom",
+    "E": "Teratom",
+    "correct": "B",
+    "Açıklama": "Nöroblastom, sempatik sinir sisteminden köken alır, katekolamin salgılar (VMA artar) ve çocuklarda en sık görülen ekstrakraniyal solid tümördür."
+  },
+  {
+    "id": 52,
+    "question": "KLİNİK: Boyunda orta hatta, yutkunmakla hareket eden ağrısız kitle şikayetiyle gelen çocukta en olası tanı nedir?",
+    "A": "Brankial Kist",
+    "B": "Tiroglossal Kanal Kisti",
+    "C": "Lenfadenit",
+    "D": "Dermoid Kist",
+    "E": "Tiroid Nodülü",
+    "correct": "B",
+    "Açıklama": "Tiroglossal kanal kisti, tiroid bezinin embriyolojik iniş yolunda kalan artıktır. Dil kemiğine (hiyoid) yapışık olduğu için yutkunmakla hareket eder."
+  },
+  {
+    "id": 53,
+    "question": "KLİNİK: Yeni doğan bir bebekte, doğumdan hemen sonra solunum sıkıntısı başlıyor. Karın çökük (skafoid), göğüs ön duvarı şişkin. Bağırsak sesleri göğüste duyuluyor. Tanı nedir?",
+    "A": "Pnömoni",
+    "B": "Konjenital Diyafragma Hernisi",
+    "C": "Özofagus Atrezisi",
+    "D": "Mekonyum Aspirasyonu",
+    "E": "Pnömotoraks",
+    "correct": "B",
+    "Açıklama": "Diyaframdaki delikten bağırsaklar göğüs boşluğuna geçer, akciğeri ezer. Karın boşalır (çökük), göğüs dolar. Acil entübasyon gerekir (Maske ile hava verilmez!)."
+  },
+  {
+    "id": 54,
+    "question": "KLİNİK: 40 yaşındaki erkek hasta, idrarında kan görme (ağrısız hematüri) şikayetiyle başvuruyor. Sigara içicisi. Sistoskopide mesanede karnabahar görünümlü kitle saptanıyor. En olası tanı nedir?",
+    "A": "Mesane Taşı",
+    "B": "Mesane Kanseri (Değişici Epitel Hücreli Karsinom)",
+    "C": "Prostat Kanseri",
+    "D": "Böbrek Kanseri",
+    "E": "Sistit",
+    "correct": "B",
+    "Açıklama": "Ağrısız hematüri, aksi ispat edilene kadar mesane kanseridir. Sigara en önemli risk faktörüdür."
+  },
+  {
+    "id": 55,
+    "question": "KLİNİK: Menopoz sonrası bir kadında kemik erimesine (Osteoporoz) bağlı en sık görülen ve en ciddi (mortalitesi yüksek) kırık tipi hangisidir?",
+    "A": "El bileği kırığı (Colles)",
+    "B": "Kalça Kırığı (Femur Boynu)",
+    "C": "Vertebra Çökme Kırığı",
+    "D": "Kaburga Kırığı",
+    "E": "Humerus Kırığı",
+    "correct": "B",
+    "Açıklama": "Kalça kırıkları yaşlılarda immobilizasyona, emboliye ve enfeksiyona yol açarak ölüm riskini ciddi oranda artırır."
+  },
+  {
+    "id": 56,
+    "question": "KLİNİK: Psikiyatri kliniğinde 'Şizofreni' tanısıyla takip edilen bir hasta, 'Benim düşüncelerimi uzaylılar çalıyor, radyodan bana mesajlar geliyor' diyor. Bu belirtiye ne ad verilir?",
+    "A": "Halüsinasyon (Varsanı)",
+    "B": "Hezeyan (Sanrı)",
+    "C": "Obsesyon",
+    "D": "Kompulsiyon",
+    "E": "Fobi",
+    "correct": "B",
+    "Açıklama": "Gerçekle bağdaşmayan, ikna yoluyla değiştirilemeyen yanlış inançlara Hezeyan (Sanrı) denir. Düşünce çalınması bir hezeyandır."
+  },
+  {
+    "id": 57,
+    "question": "KLİNİK: Ani başlayan çarpıntı, terleme, titreme ve 'ölüm korkusu' atağı ile acile gelen hastada EKG ve fizik muayene normal. Ataklar tekrarlıyor ve hasta 'ya tekrar olursa' diye beklenti anksiyetesi yaşıyor. Tanı nedir?",
+    "A": "Yaygın Anksiyete Bozukluğu",
+    "B": "Panik Bozukluk",
+    "C": "Sosyal Fobi",
+    "D": "Depresyon",
+    "E": "Obsesif Kompulsif Bozukluk",
+    "correct": "B",
+    "Açıklama": "Panik bozuklukta, ortada gerçek bir tehlike yokken ani ve şiddetli panik atakları ve atak geçirme korkusu yaşanır."
+  },
+  {
+    "id": 58,
+    "question": "KLİNİK: Alkol bağımlısı bir hasta alkolü kestikten 2-3 gün sonra bilinç bulanıklığı, görsel halüsinasyonlar (böcekler görme), titreme ve aşırı terleme tablosuna giriyor. Hayatı tehdit eden bu tablo nedir?",
+    "A": "Alkol Zehirlenmesi",
+    "B": "Deliryum Tremens",
+    "C": "Wernicke Ensefalopatisi",
+    "D": "Korsakoff Psikozu",
+    "E": "Panik Atak",
+    "correct": "B",
+    "Açıklama": "Deliryum Tremens, alkol yoksunluğunun en ağır tablosudur. Otonomik hiperaktivite ve bilinç değişikliği ile seyreder, ölümcüldür."
+  },
+  {
+    "id": 59,
+    "question": "KLİNİK: 5 yaşındaki çocukta yüksek ateş, yutma güçlüğü, ağzından salya akıtma ve oturur pozisyonda nefes alma (tripod duruşu) görülüyor. Yan grafide 'başparmak işareti' saptanıyor. Tanı nedir?",
+    "A": "Krup",
+    "B": "Akut Epiglottit",
+    "C": "Bronşiolit",
+    "D": "Yabancı Cisim",
+    "E": "Tonsillit",
+    "correct": "B",
+    "Açıklama": "Epiglottit (genellikle Hib bakterisine bağlı), hava yolunu hızla tıkayabilen acil bir durumdur. Boğaz muayenesi spazm yapıp tıkanıklığı artırabilir, dikkatli olunmalıdır."
+  },
+  {
+    "id": 60,
+    "question": "KLİNİK: Travma sonrası şoka giren bir hastada 'Tansiyon Pnömotoraks' (Tansiyonlu akciğer sönmesi) düşünülüyor. Acil müdahalede iğne dekompresyonu nereye yapılmalıdır?",
+    "A": "Sırttan herhangi bir yere",
+    "B": "Etkilenen tarafta, 2. kaburga aralığından (midklaviküler hat)",
+    "C": "Göbek çevresine",
+    "D": "Boyun bölgesine",
+    "E": "Sol 5. kaburga aralığına",
+    "correct": "B",
+    "Açıklama": "Tansiyon pnömotoraksta kalbe bası olur ve kalp durabilir. Acilen 2. interkostal aralıktan iğne batırılarak hava boşaltılmalı, sonra tüp takılmalıdır."
+  }
+]
