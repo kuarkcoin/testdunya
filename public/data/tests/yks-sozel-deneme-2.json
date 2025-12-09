@@ -9,7 +9,7 @@
     "D": "Bu şairin dili fazlasıyla karmaşıktır.",
     "E": "Film, bence hak ettiği değeri bulamadı.",
     "correct": "C",
-    "Açıklama": "Nesnel yargılar kişisel görüş içermez, kanıtlanabilir olgulardır. 'Kitap 2022 yılında yayımlanmıştır.' cümlesi tarih bilgisiyle doğrulanabilir niteliktedir. Diğer cümleler 'etkileyici, sıkıcı, karmaşık, bence' gibi öznel ifadeler içerir."
+    "Açıklama": "Nesnel yargılar kişisel görüş içermez, kanıtlanabilir olgulardır. 'Kitap 2022 yılında yayımlanmıştır.' cümlesi tarih bilgisiyle doğrulanabilir niteliktedir."
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "D": "O gün okula gitmek istemiyordu.",
     "E": "Sabah erkenden yola çıktı.",
     "correct": "C",
-    "Açıklama": "Benzetme (teşbih) sanatında, bir şey başka bir şeye benzetilir. C seçeneğinde 'gözler', 'deniz'e derinlik ve sakinlik açısından benzetilmiş ve 'kadar' benzetme edatı kullanılmıştır. Diğer cümlelerde benzetme yoktur."
+    "Açıklama": "C seçeneğinde 'gözler', 'deniz'e derinlik ve sakinlik açısından benzetilmiş ve 'kadar' benzetme edatı kullanılmıştır."
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "D": "IV",
     "E": "V",
     "correct": "E",
-    "Açıklama": "Parçanın ana düşüncesi, bir kasabanın turizmle değişimidir. I, II, III ve IV. cümleler bu değişimi anlatırken, V. cümle konuyu tamamen değiştirerek baraj göllerinden söz etmektedir. Bu nedenle V. cümle düşüncenin akışını bozmaktadır."
+    "Açıklama": "Parça bir kasabanın turizmle değişimini anlatırken, V. cümle konuyu tamamen değiştirerek baraj göllerinden söz etmektedir."
   },
   {
     "id": 4,
@@ -45,7 +45,7 @@
     "D": "Sende ki bu acele ne?",
     "E": "İçerdeki öğrenciler sessizce bekliyordu.",
     "correct": "D",
-    "Açıklama": "İsimlere (ad soylu sözcüklere) eklenip yer, zaman, aitlik bildiren '-ki' eki bitişik yazılır. D seçeneğinde 'sende ki' ayrı yazılmıştır, doğrusu 'sendeki' şeklinde bitişik yazılmasıdır. 'İçerdeki' sözcüğünde de bir yazım yanlışı olmakla birlikte (doğrusu 'içerideki'dir), soru '-ki' ekinin yazımına odaklandığı için en belirgin yanlış D'dedir."
+    "Açıklama": "Sıfat yapan veya ilgi zamiri olan '-ki' bitişik yazılır. D seçeneğinde 'sendeki' şeklinde bitişik yazılması gerekirken ayrı yazılmıştır."
   },
   {
     "id": 5,
@@ -57,7 +57,7 @@
     "D": "Bu sabah işe geç kaldım.",
     "E": "Sınavdan yüksek not aldım.",
     "correct": "B",
-    "Açıklama": "Abartma (mübalağa) sanatı, bir durumu olduğundan çok daha büyük veya küçük göstermektir. B seçeneğinde 'dünyalar benim oldu' ifadesi, sevinci abartılı bir şekilde anlatmaktadır. Diğer cümleler abartı içermez."
+    "Açıklama": "'Dünyalar benim oldu' ifadesi, sevinci abartılı bir şekilde anlatan kalıplaşmış bir mübalağadır."
   },
   {
     "id": 6,
@@ -69,7 +69,7 @@
     "D": "Eve geldim çünkü yorgundum.",
     "E": "Geç kaldığı için toplantıya alınmadı.",
     "correct": "A",
-    "Açıklama": "Amaç-sonuç cümlelerinde yapılan eylem, bir amaca ulaşmak için gerçekleştirilir. A seçeneğinde 'tekrar tekrar okumak' eylemi, 'daha iyi anlamak' amacıyla yapılmıştır. B ve E seçenekleri neden-sonuç, C seçeneği koşul-sonuç, D seçeneği ise gerekçe bildiren bir cümledir."
+    "Açıklama": "A seçeneğinde eylem (tekrar okumak), bir amaca (daha iyi anlamak) yönelik yapılmıştır. Diğerleri neden-sonuç veya koşul cümlesidir."
   },
   {
     "id": 7,
@@ -81,7 +81,7 @@
     "D": "Ben sanmıştım ki erken geleceksin.",
     "E": "Dün akşamki maç çok heyecanlıydıki.",
     "correct": "C",
-    "Açıklama": "Bağlaç olan 'ki' ayrı yazılır. C seçeneğinde 'ki' ayrı yazılmış ve cümleye pekiştirme anlamı katmıştır. A ve B seçeneklerinde 'ki' bitişik yazılarak yanlış yapılmıştır (doğrusu: biliyorum ki, yağdı ki). D seçeneğinde anlatım bozukluğu vardır (sanmıştım ki yerine 'sanmıştım, erken geleceksin' gibi). E seçeneğinde ise 'heyecanlıydı' yeterlidir, sonundaki 'ki' gereksizdir."
+    "Açıklama": "Bağlaç olan 'ki' ayrı yazılır. C seçeneğinde doğru kullanılmıştır. A ve B'de ayrı yazılmalıydı."
   },
   {
     "id": 8,
@@ -93,7 +93,7 @@
     "D": "Bu işi araştırmadan yapmam.",
     "E": "Arkadaşının uyarılarını dikkatle dinledi.",
     "correct": "B",
-    "Açıklama": "Dürtü, ani, düşünmeden, içgüdüsel olarak yapılan davranıştır. B seçeneğinde 'o anki öfkesine kapılıp bağırmak', düşünmeden, ani bir tepkiyi yani dürtüsel bir davranışı gösterir. Diğer cümlelerde planlama, düşünme ve araştırma vurgulanmaktadır."
+    "Açıklama": "Dürtü; ani, düşünmeden yapılan davranıştır. B seçeneğinde öfkeye kapılıp aniden bağırmak dürtüsel bir harekettir."
   },
   {
     "id": 9,
@@ -105,7 +105,7 @@
     "D": "Toplantı boyunca not tutmaya çalıştı.",
     "E": "Bu kavramı tam olarak anlayamadım.",
     "correct": "B",
-    "Açıklama": "Tanım cümleleri, bir varlık ya da kavramın ne olduğunu, niteliklerini ve ayırt edici özelliklerini açıklayan cümlelerdir. B seçeneğinde 'şiir' kavramının ne olduğu tanımlanmıştır. Diğer cümleler bir durumu ifade eder veya kişisel görüş bildirir."
+    "Açıklama": "B seçeneğinde 'Şiir nedir?' sorusuna cevap verilmiş, şiirin tanımı yapılmıştır."
   },
   {
     "id": 10,
@@ -117,7 +117,7 @@
     "D": "Bugün mutlaka seni aradım.",
     "E": "Biraz dinlensem iyi olacak.",
     "correct": "B",
-    "Açıklama": "Gereklilik kipi, fiile '-meli / -malı' eki getirilerek oluşturulur ve eylemin yapılmasının gerekli olduğunu bildirir. B seçeneğindeki 'bitirmelisin' fiili gereklilik kipindedir. A seçeneği gelecek zaman, C seçeneği geniş zamanın hikayesi, D seçeneği görülen geçmiş zaman, E seçeneği ise dilek-şart kipindedir."
+    "Açıklama": "Gereklilik kipi '-malı/-meli' ekidir. B seçeneğindeki 'bitirmelisin' fiili bu kiple çekimlenmiştir."
   },
   {
     "id": 11,
@@ -129,7 +129,7 @@
     "D": "Tamamen gerçekçi ve belgesel niteliktedir.",
     "E": "Sadece tek bir yazarın kaleminden çıkar.",
     "correct": "B",
-    "Açıklama": "Halk hikâyeleri, sözlü kültür ürünleridir. Genellikle âşıklar tarafından saz eşliğinde anlatılır. Olaylar gerçekçi olabildiği gibi olağanüstü öğeler de içerebilir. Nazım (şiir) ve nesir (düz yazı) iç içe kullanılabilir. Bu nedenle doğru cevap B'dir."
+    "Açıklama": "Halk hikâyeleri nazım-nesir (şiir ve düz yazı) karışıktır, sözlü kültür ürünüdür ve olağanüstü ögeler barındırabilir."
   },
   {
     "id": 12,
@@ -141,7 +141,7 @@
     "D": "Namık Kemal",
     "E": "Şemsettin Sami",
     "correct": "B",
-    "Açıklama": "Sergüzeşt, Tanzimat Dönemi'nin II. dönem yazarlarından Samipaşazade Sezai'nin eseridir. Roman, esaret temasını işler ve realizmin etkilerini taşır."
+    "Açıklama": "Esaret konusunu işleyen Sergüzeşt romanı Samipaşazade Sezai'ye aittir."
   },
   {
     "id": 13,
@@ -153,7 +153,7 @@
     "D": "Fıkra",
     "E": "Eleştiri",
     "correct": "C",
-    "Açıklama": "Öyküleyici anlatım, olay, yer, zaman ve kişi unsurlarına dayanır. Hikâye (öykü) türü, bir olay çevresinde geliştiği için öyküleyici anlatımın en yoğun ve temel kullanıldığı türdür. Diğer türlerde açıklayıcı, tartışmacı veya betimleyici anlatım daha ağır basar."
+    "Açıklama": "Olay, yer, zaman ve kişi unsurlarına dayanan hikâye türü, öyküleyici anlatımın temelidir."
   },
   {
     "id": 14,
@@ -165,7 +165,7 @@
     "D": "Cemal Süreya",
     "E": "Edip Cansever",
     "correct": "C",
-    "Açıklama": "Necip Fazıl Kısakürek, Türk edebiyatında 'Saf Şiir' anlayışının önemli temsilcilerindendir. Aynı zamanda düşünce ve siyaset hayatında etkili olmuş 'Büyük Doğu' dergisini çıkarmıştır."
+    "Açıklama": "Saf şiir anlayışını benimseyen ve Büyük Doğu dergisiyle tanınan şair Necip Fazıl Kısakürek'tir."
   },
   {
     "id": 15,
@@ -177,7 +177,7 @@
     "D": "Halk diliyle sade ve anlaşılır yazılması",
     "E": "Psikolojik çözümlemelere yer verilmesi",
     "correct": "D",
-    "Açıklama": "Servet-i Fünun edebiyatı, Tanzimat'tan farklı olarak 'sanat için sanat' anlayışını benimsemiş, ağır ve süslü bir dil (Osmanlıca) kullanmıştır. Halk diliyle sade yazma, Milli Edebiyat Dönemi'nin özelliğidir. Bu nedenle D seçeneği Servet-i Fünun'a ait bir özellik değildir."
+    "Açıklama": "Servet-i Fünun dönemi dili oldukça ağır ve süslüdür. Halk diliyle sade yazmak Milli Edebiyat'ın özelliğidir."
   },
   {
     "id": 16,
@@ -189,7 +189,7 @@
     "D": "Yahya Kemal Beyatlı",
     "E": "Memduh Şevket Esendal",
     "correct": "D",
-    "Açıklama": "Yahya Kemal Beyatlı, Türk edebiyatının önemli şairlerindendir. Eserleri daha çok şiir, makale, deneme ve tarih yazılarından oluşur. Hikâye türünde eser vermemiştir. Diğer sanatçılar ise hikâye türünün önemli temsilcileridir."
+    "Açıklama": "Yahya Kemal Beyatlı sadece şiir (Ok şiiri hariç hepsi aruzla) ve düzyazı (makale, anı) yazmıştır, hikâye kitabı yoktur."
   },
   {
     "id": 17,
@@ -201,7 +201,7 @@
     "D": "Nesteren",
     "E": "Vatan Yahut Silistre",
     "correct": "C",
-    "Açıklama": "Türk edebiyatında ilk manzum tiyatro eseri, Abdülhak Hamit Tarhan'ın yazdığı 'Eşber'dir. 'Şair Evlenmesi' ise ilk tiyatro eseridir ama düz yazı (nesir) şeklindedir."
+    "Açıklama": "Abdülhak Hamit Tarhan'ın yazdığı 'Eşber', aruzla yazılan ilk manzum tiyatrodur."
   },
   {
     "id": 18,
@@ -213,7 +213,7 @@
     "D": "Yakup Kadri Karaosmanoğlu",
     "E": "Tarık Buğra",
     "correct": "B",
-    "Açıklama": "Saatleri Ayarlama Enstitüsü, Cumhuriyet Dönemi yazarlarından Ahmet Hamdi Tanpınar'ın önemli romanlarından biridir. Toplumumuzun Batılılaşma sürecindeki çelişkilerini ve bireyin iç dünyasını ele alır."
+    "Açıklama": "Türk modernleşmesini hicveden bu önemli eser Ahmet Hamdi Tanpınar'a aittir."
   },
   {
     "id": 19,
@@ -225,8 +225,7 @@
     "D": "Anlatı düz yazı biçimindedir.",
     "E": "Kişilerin iç dünyaları ayrıntılı biçimde verilebilir.",
     "correct": "C",
-    "correct": "C",
-    "Açıklama": "Roman, uzun soluklu bir türdür. Olay örgüsü geniş, kişi kadrosu kalabalıktır ve olaylar geniş bir zaman diliminde gelişir. C seçeneğinde tanımlanan 'tek sahnede geçen kısa olaylar', daha çok hikâye (öykü) türünün özelliğidir."
+    "Açıklama": "Tek sahnede geçen kısa olaylar 'hikâye' (öykü) türünün özelliğidir. Roman geniş kapsamlıdır."
   },
   {
     "id": 20,
@@ -234,23 +233,23 @@
     "shape": "",
     "A": "Nazım Hikmet – Toplumcu gerçekçilik",
     "B": "Orhan Veli – Garip",
-    "C": "Sezai Karakoç – İkinci Yeni",
+    "C": "Mehmet Akif Ersoy – Servet-i Fünun",
     "D": "Edip Cansever – İkinci Yeni",
     "E": "Ahmet Haşim – Sembolizm",
     "correct": "C",
-    "Açıklama": "Sezai Karakoç, İslami ve metafizik duyarlılığı öne çıkaran, kendine özgü bir şiir anlayışı geliştirmiştir. Genellikle 'İkinci Yeni' şairleri arasında anılsa da, ondan ayrılan ve dini-mistik temaları öne çıkaran bir çizgidedir. Tam olarak İkinci Yeni'nin tipik özelliklerini taşımaz. Ancak edebiyat tarihinde bazen bu akımla ilişkilendirilir. Soru 'yanlış eşleştirme'yi sorduğu için en keskin ayrım burada görülebilir. Diğer eşleştirmeler doğrudur."
+    "Açıklama": "Mehmet Akif Ersoy, Servet-i Fünun döneminde yaşamış olsa da o topluluğa katılmamış, bağımsız bir 'İslamcı-Realist' çizgi izlemiştir. Servet-i Fünun şairi değildir."
   },
   {
     "id": 21,
-    "question": "TARİH: Tarihte bilinen ilk yazılı kanunları yayımlayan devlet aşağıdakilerden hangisidir?",
+    "question": "TARİH: Tarihte bilinen ilk yazılı kanunları yapan uygarlık aşağıdakilerden hangisidir?",
     "shape": "",
     "A": "Hititler",
     "B": "Babiller",
     "C": "Sümerler",
     "D": "Asurlular",
     "E": "Mısırlılar",
-    "correct": "B",
-    "Açıklama": "Tarihte bilinen ilk yazılı kanunlar, MÖ 18. yüzyılda Babil Kralı Hammurabi tarafından oluşturulan 'Hammurabi Kanunları'dır. 'Göze göz, dişe diş' prensibiyle bilinir. Sümerler yazıyı icat etmiş olsa da, sistemli ve yazılı ilk kanun metinleri Babillere aittir."
+    "correct": "C",
+    "Açıklama": "Tarihte bilinen ilk yazılı kanunlar Sümer kralı Urukagina tarafından yapılmıştır. Babiller (Hammurabi) ise ilk anayasal/kapsamlı kanunları yapmıştır."
   },
   {
     "id": 22,
@@ -262,7 +261,7 @@
     "D": "Tuz Yolu",
     "E": "Kürk Yolu",
     "correct": "A",
-    "Açıklama": "Çin'den başlayıp Orta Asya üzerinden Anadolu ve Akdeniz'e, oradan da Avrupa'ya uzanan, başta ipek olmak üzere birçok ürünün taşındığı tarihi ticaret yoluna 'İpek Yolu' denir. Türk devletleri bu yolun kontrolü için mücadele etmişlerdir."
+    "Açıklama": "Çin'den başlayıp Avrupa'ya uzanan tarihi ticaret yolu İpek Yolu'dur."
   },
   {
     "id": 23,
@@ -274,7 +273,7 @@
     "D": "Sancak",
     "E": "Sömürge",
     "correct": "B",
-    "Açıklama": "13. yüzyılın sonlarında Anadolu Selçuklu Devleti'nin Moğol istilası (Kösedağ Savaşı) sonrası zayıflayıp yıkılmasıyla Anadolu'da küçük Türk devletleri (beylikler) kurulmuştur. Osmanoğulları Beyliği de bunlardan biri olarak zamanla büyüyüp imparatorluğa dönüşmüştür."
+    "Açıklama": "Anadolu Selçuklu'nun zayıflamasıyla ortaya çıkan bağımsız küçük devletçiklere 'Beylik' denir (Karamanoğulları, Germiyanoğulları vb.)."
   },
   {
     "id": 24,
@@ -286,7 +285,7 @@
     "D": "Beylerbeyi",
     "E": "Sipahi",
     "correct": "A",
-    "Açıklama": "Osmanlı hanedanında padişahın oğullarına 'şehzade' denirdi. Şehzadeler, 'sancağa çıkma' usulüyle devlet yönetimi tecrübesi kazanmak üzere çeşitli vilayetlere vali olarak gönderilirdi."
+    "Açıklama": "Padişahın erkek çocuklarına Şehzade veya Çelebi denirdi."
   },
   {
     "id": 25,
@@ -298,7 +297,7 @@
     "D": "Haçlı seferleri",
     "E": "Sanayi İnkılabı",
     "correct": "C",
-    "Açıklama": "Duraklama döneminin iç nedenleri arasında; merkezi yönetimin bozulması, tımar sisteminin bozulması (ekonomik ve askeri yapıyı olumsuz etkilemiştir), eğitim sisteminin gerilemesi, sık sık padişah değişiklikleri sayılabilir. Coğrafi keşifler ve Rönesans dış nedenlerdir. Haçlı seferleri daha önceki dönemlere, Sanayi İnkılabı ise gerileme/dağılma dönemine aittir."
+    "Açıklama": "Tımar sisteminin bozulması tarımı, ekonomiyi ve orduyu içeriden çökerten temel bir iç nedendir. Diğer şıklar (A, B, E) dış nedendir."
   },
   {
     "id": 26,
@@ -310,7 +309,7 @@
     "D": "Genelge",
     "E": "Muhtıra",
     "correct": "C",
-    "Açıklama": "Osmanlı Padişahı V. Mehmet Reşad (ve daha sonra VI. Mehmet Vahdettin), halife sıfatıyla tüm dünya Müslümanlarını, içinde Müslüman nüfus bulunan İngiltere, Fransa, Rusya gibi İtilaf Devletleri'ne karşı cihat etmeye çağırmıştır. Buna 'Cihat-ı Ekber' (Büyük Cihat) ilanı denir. Ancak beklenen etkiyi göstermemiştir."
+    "Açıklama": "Halifenin tüm Müslümanları savaşa çağırmasına 'Cihat-ı Ekber' ilanı denir."
   },
   {
     "id": 27,
@@ -322,7 +321,7 @@
     "D": "Pozantı Kongresi",
     "E": "Lüleburgaz Kongresi",
     "correct": "A",
-    "Açıklama": "Kurtuluş Savaşı'nın önemli adımları kronolojik olarak şöyledir: Amasya Genelgesi (Haziran 1919) -> Erzurum Kongresi (Temmuz-Ağustos 1919) -> Sivas Kongresi (Eylül 1919). Erzurum Kongresi, bölgesel olarak toplanmış ama aldığı 'milli sınırlar içinde vatan bir bütündür' gibi kararlarla ulusal nitelik kazanmıştır."
+    "Açıklama": "Amasya ile Sivas arasında toplanan, toplanış bakımından bölgesel ama kararları bakımından ulusal olan kongre Erzurum Kongresi'dir."
   },
   {
     "id": 28,
@@ -334,7 +333,7 @@
     "D": "Halifeliğin kaldırılması",
     "E": "TBMM'nin açılması",
     "correct": "B",
-    "Açıklama": "Ankara, 13 Ekim 1923'te TBMM'de alınan bir kararla Türkiye'nin başkenti ilan edilmiştir. Bu tarih, Lozan Barış Antlaşması'nın imzalanmasından (24 Temmuz 1923) sonra, Cumhuriyet'in ilanından (29 Ekim 1923) hemen önceye denk gelir. Saltanat 1 Kasım 1922'de kaldırılmıştır."
+    "Açıklama": "Lozan Antlaşması'ndan sonra, işgal güçleri İstanbul'u boşaltınca Ankara 13 Ekim 1923'te resmen başkent ilan edildi."
   },
   {
     "id": 29,
@@ -346,7 +345,7 @@
     "D": "Montreux Konferansı",
     "E": "Paris Konferansı",
     "correct": "B",
-    "Açıklama": "17 Şubat - 4 Mart 1923 tarihlerinde İzmir'de toplanan Türkiye İktisat Kongresi, yeni Türk devletinin ekonomik politikalarının belirlenmesi açısından çok önemlidir. 'Misak-ı İktisadi' (Ekonomi Andı) kabul edilmiş, özel teşebbüs desteklenmiş ancak ilerleyen yıllarda Devletçilik ilkesi doğrultusunda devlet eliyle sanayileşme hamlesi başlatılmıştır."
+    "Açıklama": "Yeni Türk devletinin ekonomi politikasını belirlemek için 1923'te İzmir İktisat Kongresi toplanmıştır."
   },
   {
     "id": 30,
@@ -358,7 +357,7 @@
     "D": "Sömürgeciliğin zayıflamaya başlaması",
     "E": "Nükleer silahların kullanılması",
     "correct": "C",
-    "Açıklama": "Türkiye, II. Dünya Savaşı boyunca tarafsızlık politikası izlemiştir. Savaşın sonlarına doğru, Şubat 1945'te sembolik olarak Almanya ve Japonya'ya savaş ilan etmiş ancak hiçbir cephede fiili olarak çatışmaya girmemiştir. Diğer seçenekler savaşın önemli küresel sonuçlarındandır."
+    "Açıklama": "Türkiye II. Dünya Savaşı'na fiilen (asker göndererek) katılmamış, denge politikası izlemiştir."
   },
   {
     "id": 31,
@@ -370,7 +369,7 @@
     "D": "Ekvatorun şişkin kutupların basık olması",
     "E": "Yer çekiminin kutuplarda fazla olması",
     "correct": "B",
-    "Açıklama": "Dünya'nın kendi ekseni etrafında dönmesi (günlük hareket) sonucunda gece ve gündüz oluşur ve ardışık olarak birbirini takip eder. Mevsimler (A) ve yıl uzunluğu (C), Dünya'nın Güneş etrafındaki dolanımı (yıllık hareket) ile ilgilidir. Ekvatorun şişkinliği (D) ve yer çekimi farkı (E) ise Dünya'nın şekli (geoid) ve dönüş hızıyla ilgilidir, ancak doğrudan sonuç olarak 'gece-gündüz' en temel ve kesin sonuçtur."
+    "Açıklama": "Dünya'nın günlük hareketi (eksen hareketi) gece ve gündüzün birbirini takip etmesini sağlar."
   },
   {
     "id": 32,
@@ -382,7 +381,7 @@
     "D": "Yıllık sıcaklık ortalamaları",
     "E": "Nüfus yoğunlukları",
     "correct": "A",
-    "Açıklama": "Yerel saat, güneşin gökyüzündeki konumuna göre belirlenir ve her boylam derecesi için farklıdır. Aynı boylam üzerindeki tüm noktalar aynı yerel saati paylaşır. İklim, yükselti, sıcaklık ve nüfus yoğunluğu ise enlem, yükselti, denize yakınlık gibi birçok faktöre bağlıdır ve aynı boylam üzerinde farklılık gösterebilir."
+    "Açıklama": "Aynı boylam üzerindeki noktalarda Güneş aynı anda en tepe noktasına gelir, bu yüzden yerel saatleri aynıdır."
   },
   {
     "id": 33,
@@ -394,7 +393,7 @@
     "D": "Dağların oluşumu",
     "E": "Ulaşım ağlarının gelişimi",
     "correct": "D",
-    "Açıklama": "Fiziki coğrafya, doğal çevreyi ve olayları inceler. Dağların oluşumu (jeomorfoloji), iklim (klimatoloji), bitki örtüsü (biyocoğrafya) gibi konular fiziki coğrafyanın alanına girer. Nüfus, tarım, sanayi ve ulaşım ise beşeri ve ekonomik coğrafyanın konularıdır."
+    "Açıklama": "Dağların oluşumu (Jeomorfoloji) doğal bir süreçtir, Fiziki Coğrafya'nın konusudur. Diğerleri Beşeri Coğrafya'dır."
   },
   {
     "id": 34,
@@ -406,7 +405,7 @@
     "D": "İç Anadolu Bölgesi",
     "E": "Güneydoğu Anadolu Bölgesi",
     "correct": "E",
-    "Açıklama": "Güneydoğu Anadolu Bölgesi, yaz mevsiminde Türkiye'nin en sıcak bölgesidir. Bunun başlıca nedenleri; enleminin daha güneyde olması (daha dik açıyla güneş ışınları alması), karasallığın şiddetli olması, nem oranının düşük olması ve alçak bir plato görünümünde olmasıdır."
+    "Açıklama": "Güneydoğu Anadolu, güneyden gelen sıcak hava dalgaları (Samyeli) ve karasallık nedeniyle yazın en sıcak bölgedir."
   },
   {
     "id": 35,
@@ -418,7 +417,7 @@
     "D": "Yükselti",
     "E": "Nem",
     "correct": "D",
-    "Açıklama": "İklim elemanları, bir yerin iklimini oluşturan ve ölçülebilen bileşenlerdir: Sıcaklık, nem, basınç, rüzgarlar ve yağış. Yükselti ise bu iklim elemanlarını etkileyen bir 'iklim faktörü'dür. Yani iklimi şekillendiren nedenlerden biridir, sonuç değildir."
+    "Açıklama": "Sıcaklık, basınç, rüzgar ve nem iklimin elemanıdır (bileşenidir). Yükselti ise iklimi etkileyen bir faktördür."
   },
   {
     "id": 36,
@@ -430,7 +429,7 @@
     "D": "Fırat",
     "E": "Gediz",
     "correct": "D",
-    "Açıklama": "Fırat Nehri, Türkiye'den (Erzurum) doğar, Suriye ve Irak topraklarından geçerek Basra Körfezi'ne dökülür. Dicle Nehri de benzer özelliktedir. Sakarya, Kızılırmak, Yeşilırmak ve Gediz ise tümüyle Türkiye sınırları içinde akıp denize ulaşan akarsularımızdır."
+    "Açıklama": "Fırat Nehri Türkiye'den doğar, Suriye ve Irak'tan geçerek Basra Körfezi'ne dökülür."
   },
   {
     "id": 37,
@@ -442,7 +441,7 @@
     "D": "İzmir çevresi",
     "E": "Bursa Ovası",
     "correct": "C",
-    "Açıklama": "Türkiye'de nüfus, iklimin elverişli, tarım-sanayi-ticaretin geliştiği, ulaşımın kolay olduğu kıyı bölgelerinde ve büyük şehirlerde yoğunlaşmıştır. Erzurum-Kars Platosu, yükseltisi fazla, iklimi sert, sanayisi gelişmemiş bir bölge olduğu için nüfus yoğunluğu çok azdır."
+    "Açıklama": "Erzurum-Kars Platosu yüksek, engebeli ve iklimi sert olduğu için nüfus seyrektir."
   },
   {
     "id": 38,
@@ -454,7 +453,7 @@
     "D": "Güneş",
     "E": "Nükleer",
     "correct": "D",
-    "Açıklama": "Yenilenebilir enerji kaynakları, doğada sürekli var olan ve tükenmeyen kaynaklardır. Güneş, rüzgar, jeotermal, hidroelektrik, biyokütle ve dalga enerjisi bu gruba girer. Petrol, doğal gaz, kömür (fosil yakıtlar) ve nükleer enerjide kullanılan uranyum ise tükenebilir kaynaklardır."
+    "Açıklama": "Güneş, Rüzgar, Su gibi kaynaklar doğada tükenmez (yenilenebilir). Diğerleri fosil yakıttır ve tükenir."
   },
   {
     "id": 39,
@@ -466,7 +465,7 @@
     "D": "Kutup rüzgârlarının etkisi",
     "E": "Kara alanlarının fazla olması",
     "correct": "B",
-    "Açıklama": "Ekvator bölgesi, yıl boyunca güneş ışınlarını dik veya dike yakın açıyla aldığı için sürekli ısınır. Isınan hava yükselir ve bu yükselici hava hareketleri sürekli bir alçak basınç alanı oluşturur. Yükselen nemli hava soğuyarak yoğunlaşır ve bol yağış bırakır. Bu nedenle Ekvatoral iklimde sıcaklık yüksek, yağış boldur."
+    "Açıklama": "Isınan hava genleşip yükselir (Termik Alçak Basınç). Yükselen hava soğuyup yağış bırakır. Bu yüzden Ekvator hep yağışlıdır."
   },
   {
     "id": 40,
@@ -478,7 +477,7 @@
     "D": "Denizlere uzaklık",
     "E": "Karasallık",
     "correct": "A",
-    "Açıklama": "Tarımı etkileyen faktörler doğal ve beşeri olarak ikiye ayrılır. Enlem, yükselti, denize uzaklık ve karasallık doğal (fiziki) faktörlerdir. Toprak erozyonu ise doğal bir süreç olmakla birlikte, yanlış tarım uygulamaları, ormansızlaşma, aşırı otlatma gibi insan faaliyetleriyle hızlandığı ve şiddetlendiği için beşeri bir olumsuzluk olarak kabul edilebilir. Diğer seçenekler tamamen doğaldır."
+    "Açıklama": "Erozyon büyük ölçüde ormanların tahribi, yanlış arazi kullanımı gibi insan etkileriyle oluşur. Diğerleri doğal faktördür."
   },
   {
     "id": 41,
@@ -490,7 +489,7 @@
     "D": "Sistemlidir.",
     "E": "Sorgulayıcıdır.",
     "correct": "C",
-    "Açıklama": "Felsefi bilgi; akla dayalı, eleştirel, sorgulayıcı, birikimli (kümülatif), öznellik taşıyan ve sistemli (tutarlı) bir bilgidir. Ancak, bilimsel bilgiden farklı olarak, kesin ve değişmez sonuçlara ulaşmaz. Sürekli tartışmaya ve yeni yorumlara açıktır. Bu nedenle 'kesin ve değişmezdir' ifadesi felsefi bilgiye ait bir özellik değildir."
+    "Açıklama": "Felsefe özneldir (subjektif), bilim gibi kesin ve evrensel doğrulara (kanunlara) ulaşmaz."
   },
   {
     "id": 42,
@@ -502,7 +501,7 @@
     "D": "Siyaset felsefesi",
     "E": "Sanat felsefesi",
     "correct": "B",
-    "Açıklama": "Bilgi felsefesi (Epistemoloji), bilginin kaynağı, imkanı, sınırları, ölçütleri (doğruluk ölçütü) ve yapısı ile ilgili sorular sorar. 'Bilgi mümkün müdür?' sorusu, şüphecilik (septisizm) bağlamında bilgi felsefesinin temel sorularındandır."
+    "Açıklama": "Bilgi Felsefesi (Epistemoloji), bilginin kaynağını, sınırlarını ve imkanını sorgular."
   },
   {
     "id": 43,
@@ -514,7 +513,7 @@
     "D": "Kritisizm",
     "E": "Pozitivizm",
     "correct": "B",
-    "Açıklama": "Empirizm (Deneycilik) akımı, bilginin kaynağının deneyim (duyu ve gözlem) olduğunu savunur. John Locke'un 'tabula rasa' (boş levha) benzetmesi bu akımın temelini oluşturur. Rasyonalizm (Akılcılık) bilginin kaynağını akılda görürken, Empirizm deneyde görür."
+    "Açıklama": "John Locke'un temsil ettiği Empirizm (Deneycilik), bilginin kaynağını duyular ve deneyim olarak görür."
   },
   {
     "id": 44,
@@ -526,7 +525,7 @@
     "D": "Herakleitos",
     "E": "Demokritos",
     "correct": "A",
-    "Açıklama": "Sokrates'e göre, erdem bilgidir. Bilgi sahibi olan kişi erdemli olur ve erdemli kişi mutluluğa (eudaimonia) ulaşır. Ona göre hiç kimse bile bile kötülük yapmaz, kötülük bilgisizlikten kaynaklanır. Bu nedenle erdem, mutluluğun hem aracı hem de kendisidir."
+    "Açıklama": "Sokrates'e göre bilgi erdemdir, erdem de mutluluktur. Kötülük bilgisizlikten doğar."
   },
   {
     "id": 45,
@@ -538,8 +537,7 @@
     "D": "Sanat eseri, kendi iç dünyası ve estetik değeri ile değerlendirilir.",
     "E": "Eserin iletmek zorunda olduğu belirli bir düşünce yoktur.",
     "correct": "C",
-    "correct": "C",
-    "Açıklama": "'Sanat sanat içindir' (L'art pour l'art) anlayışı, sanatın dini, ahlaki, siyasi veya toplumsal hiçbir amacı olmaması gerektiğini, sadece güzellik ve estetik kaygıyla yapılması gerektiğini savunur. Bu nedenle, 'sanatçının toplumsal sorunlara çözüm araması gerektiği' fikri (C seçeneği), bu anlayışla çelişir ve onun karşıtı olan 'Sanat toplum içindir' anlayışına aittir."
+    "Açıklama": "'Sanatçı toplumsal sorunlara çözüm aramalıdır' görüşü 'Sanat toplum içindir' anlayışına aittir, 'Sanat sanat içindir'e terstir."
   },
   {
     "id": 46,
@@ -551,7 +549,7 @@
     "D": "Fenomenoloji",
     "E": "Varoluşçuluk",
     "correct": "C",
-    "Açıklama": "Materyalizm (Maddecilik), varlığın özünün madde olduğunu, ruh, bilinç, düşünce gibi kavramların da maddenin bir ürünü olduğunu savunan felsefi görüştür. İdealizm tam tersini (varlığın özünün düşünce/idea olduğunu), dualizm ise hem madde hem de ruhun ayrı ayrı gerçek olduğunu savunur."
+    "Açıklama": "Materyalizm (Maddecilik), gerçeğin temelinin madde olduğunu savunur."
   },
   {
     "id": 47,
@@ -563,7 +561,7 @@
     "D": "Nihilist etik",
     "E": "Sezgici etik",
     "correct": "C",
-    "Açıklama": "Yararcı etik (Utilitarizm), başta Jeremy Bentham ve John Stuart Mill olmak üzere, bir eylemin ahlaki değerini, o eylemin sonuçlarının getirdiği fayda (haz) veya mutluluk miktarına göre değerlendirir. 'En fazla sayıda insana en yüksek mutluluk' ilkesini benimser. Ödev etiği (Kant) ise niyete ve kurallara bakar."
+    "Açıklama": "Faydacılık (Utilitarizm), eylemin ahlaki değerini sonucundaki yarara (mutluluğa) göre ölçer."
   },
   {
     "id": 48,
@@ -575,7 +573,7 @@
     "D": "Locke",
     "E": "Rousseau",
     "correct": "B",
-    "Açıklama": "Aristoteles, insanı 'zoon politikon' yani 'siyasal hayvan' olarak tanımlar. Ona göre insan, doğası gereği topluluk halinde yaşamaya ve bu topluluğun en mükemmel hali olan 'polis'te (devlette) yaşamaya yatkındır. Devlet, aile ve köy topluluklarının doğal bir uzantısı ve tamamlayıcısıdır."
+    "Açıklama": "Aristoteles insanı 'siyasal bir hayvan' olarak tanımlar ve devleti doğal bir oluşum olarak görür."
   },
   {
     "id": 49,
@@ -587,7 +585,7 @@
     "D": "Pragmatizm",
     "E": "Fenomenoloji",
     "correct": "B",
-    "Açıklama": "Determinizm (Gerekircilik), evrendeki her olay ve durumun, önceki olay ve durumların zorunlu bir sonucu olduğunu, dolayısıyla özgür iradenin bir yanılsama olduğunu savunur. İnsan davranışları da fiziksel, biyolojik, psikolojik veya toplumsal nedenlerle belirlenmiştir. Bu görüşün karşısında İndeterminizm (Belirlenmezcilik) yer alır."
+    "Açıklama": "Determinizm (Belirlenimcilik), her olayın bir nedeni olduğunu, dolayısıyla özgür iradenin bir yanılsama olduğunu savunur."
   },
   {
     "id": 50,
@@ -599,7 +597,7 @@
     "D": "Sadece deneysel bilgiyi geçerli görür.",
     "E": "Bilginin kaynağını sezgide bulur.",
     "correct": "B",
-    "Açıklama": "Şüphecilik (Septisizm), bilginin mümkün olup olmadığını, eğer mümkünse kesinliğini sorgular. Aşırı şüpheci (Pironculuk) bir yaklaşım, kesin bilgiye ulaşılamayacağı için hiçbir konuda yargıda bulunmamayı (epokhe) ve tarafsız kalmayı öğütler. Diğer seçenekler sırasıyla dogmatizm, rasyonalizm, empirizm ve entüisyonizme aittir."
+    "Açıklama": "Septikler, kesin bilgiye ulaşılamayacağı için yargıda bulunmaktan kaçınmayı (epokhe) savunurlar."
   },
   {
     "id": 51,
@@ -611,7 +609,7 @@
     "D": "Toplumsal görevleri yerine getirmek",
     "E": "Hacca gitmek",
     "correct": "B",
-    "Açıklama": "İslam inancında imanın temeli, kalp ile tasdik (onaylama) ve dil ile ikrar (söyleme) ile Allah'a, O'nun birliğine, meleklerine, kitaplarına, peygamberlerine, ahiret gününe, kadere (hayır ve şerrin Allah'tan olduğuna) inanmaktır. İbadetler ve güzel davranışlar (amel-i salih) imanın bir gereği ve meyvesidir, ancak temeli değildir."
+    "Açıklama": "İmanın özü tasdiktir; yani Allah'a ve O'ndan gelenlere kalben inanmaktır."
   },
   {
     "id": 52,
@@ -623,7 +621,7 @@
     "D": "Zekât vermek",
     "E": "Helal kazanç elde etmek",
     "correct": "E",
-    "Açıklama": "İslam'ın beş şartı şunlardır: 1) Kelime-i Şehadet getirmek, 2) Namaz kılmak, 3) Oruç tutmak, 4) Zekât vermek, 5) Hacca gitmek. 'Helal kazanç elde etmek' önemli bir İslami ahlak ve yaşam prensibidir, ancak beş şart arasında sayılmaz."
+    "Açıklama": "Helal kazanç farzdır ancak 'İslam'ın 5 Şartı' (Namaz, Oruç, Hac, Zekat, Kelime-i Şehadet) listesinde yer almaz."
   },
   {
     "id": 53,
@@ -635,7 +633,7 @@
     "D": "Kader",
     "E": "İhsan",
     "correct": "A",
-    "Açıklama": "İmanın altı esası (Amentü) içinde peygamberlere iman, 'nübüvvet' inancı olarak adlandırılır. Tevhid, Allah'ın birliğine iman; ahiret, öldükten sonra dirilmeye iman; kader, hayır ve şerrin Allah'tan geldiğine iman demektir."
+    "Açıklama": "Nübüvvet, peygamberlik demektir. Peygamberlere iman bu kavramla ifade edilir."
   },
   {
     "id": 54,
@@ -647,7 +645,7 @@
     "D": "İçinde hiçbir bilimsel açıklamadan söz edilmez.",
     "E": "Müslümanların temel başvuru kaynağıdır.",
     "correct": "D",
-    "Açıklama": "Kur'an-ı Kerim, insanın yaratılışı, evrenin düzeni, gece-gündüz, dağlar, denizler, yağmur, rüzgar gibi pek çok doğal olaydan bahseder. Modern bilimle uyumlu olduğu düşünülen bu ayetler, 'bilimsel mucize' olarak yorumlanır. Bu nedenle 'hiçbir bilimsel açıklamadan söz edilmez' ifadesi yanlıştır."
+    "Açıklama": "Kur'an'da evrenin yaratılışı ve doğa olaylarıyla ilgili akla ve bilime ışık tutan pek çok ayet vardır."
   },
   {
     "id": 55,
@@ -659,7 +657,7 @@
     "D": "Toplum tarafından benimsenmiş örf ve adetler",
     "E": "Sadece Ramazan ayında yapılan ibadetler",
     "correct": "B",
-    "Açıklama": "Farz, Kur'an-ı Kerim veya mütevatir sünnet (Peygamberimizin kesin ve yaygın uygulamaları) ile kesin olarak emredilen, yapılması zorunlu olan dinî hükümlerdir. Yapılırsa sevap kazanılır, özürsüz terk edilirse günah işlenmiş olur. Namaz, oruç, zekât farzdır."
+    "Açıklama": "Farz, dinen yapılması kesin delillerle emredilen ve terki günah olan ibadetlerdir."
   },
   {
     "id": 56,
@@ -671,7 +669,7 @@
     "D": "İnsanları dünyadan soğutmak",
     "E": "Kalplerde cimrilik ve bencilliği azaltmak",
     "correct": "D",
-    "Açıklama": "Zekâtın temel amaçları; fakirin hakkını vermek, toplumsal adaleti ve dayanışmayı sağlamak, malı arındırmak (cimrilik kirinden temizlemek) ve bereketlendirmek, müminin şükür ve sabrını artırmaktır. Zekât, insanı dünyadan tamamen soğutmak için değil, dünya malına tutkunluğu azaltmak ve paylaşma bilincini geliştirmek için farz kılınmıştır."
+    "Açıklama": "Zekâtın amacı insanı hayattan koparmak değil, mal sevgisini dengelemek ve sosyal adaleti sağlamaktır."
   },
   {
     "id": 57,
@@ -683,7 +681,7 @@
     "D": "Her yıl aynı gün idrak edilir.",
     "E": "Yalnızca Medine dönemine ait bir olaydır.",
     "correct": "B",
-    "Açıklama": "Kadir Gecesi, Kur'an-ı Kerim'in Hz. Muhammed'e (s.a.v) indirilmeye başlandığı mübarek gecedir. Ramazan ayının 27. gecesi olarak kabul edilse de, genellikle Ramazan'ın son on gününde tek sayılı gecelerde (21, 23, 25, 27, 29) aranması tavsiye edilir. Bin aydan daha hayırlı olduğu bildirilmiştir."
+    "Açıklama": "Kadir Gecesi, Kur'an'ın ilk inmeye başladığı ve bin aydan hayırlı olduğu bildirilen gecedir."
   },
   {
     "id": 58,
@@ -695,7 +693,7 @@
     "D": "Adaletli davranmak",
     "E": "Helalinden kazanmak",
     "correct": "B",
-    "Açıklama": "Haram, kesin olarak yasaklanan fiillerdir. Yalan söylemek, iftira atmak, gıybet etmek, hırsızlık yapmak, faiz alıp vermek, zina etmek İslam'da haram kılınmış davranışlardandır. Diğer seçeneklerdeki davranışlar ise İslam'ın övdüğü ve teşvik ettiği güzel davranışlardır."
+    "Açıklama": "Yalan söylemek dinen kesin olarak yasaklanmış (haram) bir davranıştır."
   },
   {
     "id": 59,
@@ -707,7 +705,7 @@
     "D": "Oruç tutmamak",
     "E": "Tevbe etmemek",
     "correct": "B",
-    "Açıklama": "Kul hakkı, bir insanın diğer bir insana karşı işlediği hak ihlalleridir. Haksız yere mal almak, iftira atmak, kalp kırmak, şiddet uygulamak gibi. Bu haklar, hak sahibi olan kişinin affetmesi veya hakkını helal etmesi ile düşer. Namaz, oruç, tevbe gibi konular ise Allah ile kul arasındadır (ibadet ve günahlar)."
+    "Açıklama": "Başkasına ait bir eşyayı izinsiz almak kul hakkı ihlalidir."
   },
   {
     "id": 60,
@@ -719,6 +717,6 @@
     "D": "İntikam alma",
     "E": "Merhamet",
     "correct": "D",
-    "Açıklama": "İslam ahlakı, güzel ahlakı tamamlamak üzere gelmiştir. Doğruluk (sıdk), adalet, sabır, merhamet, affedicilik, tevazu, cömertlik, emanete riayet gibi erdemler İslam'ın temel ahlaki ilkeleridir. 'İntikam alma' duygusu kontrol edilmesi gereken bir histir; İslam, adaleti ve affetmeyi teşvik eder, kişisel intikamı ahlaki bir ilke olarak kabul etmez."
+    "Açıklama": "İslam ahlakı affetmeyi ve adaleti öğütler; kişisel kin ve intikamı reddeder."
   }
 ]
