@@ -33,12 +33,14 @@ const Lock = (props: React.SVGProps<SVGSVGElement>) => (
 );
 
 // --- SINAV AYARLARI ---
+// Burada her sınav için ayrı bir 'activeLimit' belirledik.
 const examConfig = [
   { 
     id: 'yks', 
     prefix: 'yks-sozel-deneme', 
     title: 'YKS Sözel', 
-    count: 30, 
+    count: 30, // Toplam kutu sayısı
+    activeLimit: 10, // Sadece ilk 10 tanesi tıklanabilir
     desc: 'TYT ve AYT odaklı kapsamlı, yeni nesil deneme setleri.',
     icon: <Book className="w-6 h-6 text-white" />,
     gradient: 'from-blue-600 to-indigo-600',
@@ -49,7 +51,8 @@ const examConfig = [
     id: 'kpss', 
     prefix: 'kpss-sozel', 
     title: 'KPSS Genel Kültür', 
-    count: 21, 
+    count: 21, // Toplam kutu sayısı
+    activeLimit: 10, // Sadece ilk 10 tanesi tıklanabilir
     desc: 'Tarih, Coğrafya ve Vatandaşlık için özgün sorular.',
     icon: <Brain className="w-6 h-6 text-white" />,
     gradient: 'from-orange-500 to-red-500',
@@ -61,6 +64,7 @@ const examConfig = [
     prefix: 'tus-deneme', 
     title: 'TUS Denemeleri', 
     count: 35, 
+    activeLimit: 35, // TUS için hepsi açık
     desc: 'TUS için Temel ve Klinik Bilimler vaka soruları.',
     icon: <Activity className="w-6 h-6 text-white" />,
     gradient: 'from-emerald-500 to-teal-600',
@@ -68,10 +72,6 @@ const examConfig = [
     slug: 'tus-tip'
   }
 ];
-
-// Aktif edilecek test sayısı
-// BURASI GÜNCELLENDİ: 10 -> 35 (Tüm 35 deneme ve diğerleri açık olur)
-const ACTIVE_TEST_LIMIT = 35;
 
 export default function HomePage() {
   const [completed, setCompleted] = useState<{ [key: string]: number[] }>({});
@@ -157,8 +157,8 @@ export default function HomePage() {
                   const testLinkId = `${exam.prefix}-${num}`;
                   const isDone = (completed[exam.id] || []).includes(num);
                   
-                  // Mantık: Numara 35'ten küçük veya eşitse aktif olur. (Yani hepsi)
-                  const isActive = num <= ACTIVE_TEST_LIMIT;
+                  // Mantık: Her sınavın kendi 'activeLimit' değerine göre kontrol yapılır.
+                  const isActive = num <= exam.activeLimit;
 
                   if (isActive) {
                     // AKTİF TESTLER (LİNK)
@@ -190,19 +190,22 @@ export default function HomePage() {
                       </Link>
                     );
                   } else {
-                    // PASİF TESTLER (Eğer ileride sayı 35'i geçerse burası çalışır)
+                    // PASİF TESTLER (DİV - Tıklanamaz - Kilitli)
                     return (
                       <div 
                         key={num}
                         className="relative flex flex-col items-center justify-center py-3 px-2 rounded-xl border border-slate-100 bg-slate-50 text-slate-300 cursor-not-allowed overflow-hidden group/lock"
                         title="Bu test yakında eklenecektir."
                       >
+                        {/* Kilit İkonu */}
                         <div className="mb-1.5 opacity-40">
                              <Lock className="w-5 h-5 text-slate-400" />
                         </div>
                         <span className="text-xs font-bold opacity-40">
                           {num}. Deneme
                         </span>
+                        
+                        {/* Yakında etiketi */}
                         <div className="absolute inset-0 bg-white/60 flex items-center justify-center opacity-0 group-hover/lock:opacity-100 transition-opacity">
                             <span className="text-[10px] font-bold text-slate-500 bg-white px-2 py-1 rounded-full shadow-sm border border-slate-200">Yakında</span>
                         </div>
