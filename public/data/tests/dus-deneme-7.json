@@ -1,1 +1,197 @@
-
+[
+    {
+        "soru_no": 1,
+        "soru": "Bir hasta, 2 yıldır devam eden kronik öksürük ve balgam şikayetiyle başvuruyor. Sigara öyküsü yok. Akciğer grafisinde bilateral retikülonodüler dansite artışı izleniyor. BAL sıvısında CD1a pozitif hücreler saptanıyor. Tanı nedir?",
+        "secenekler": [
+            "A) Sarkoidoz",
+            "B) Hipersensitivite pnömonisi",
+            "C) Langerhans hücreli histiyositoz",
+            "D) İPF",
+            "E) Silikoz"
+        ],
+        "dogru": "C",
+        "aciklama": "Sigara öyküsü olmasa da Langerhans hücreli histiyositoz görülebilir. Retikülonodüler dansite + CD1a (+) hücreler tanı koydurucudur."
+    },
+    {
+        "soru_no": 2,
+        "soru": "Tip 1 diyabetli 14 yaşında kız hasta, son 3 aydır boy uzaması durmuş. Tiroid fonksiyonları normal. Çölyak hastalığı taramasında anti-tTG IgA yüksek bulunuyor. En olası tanı?",
+        "secenekler": [
+            "A) Turner sendromu",
+            "B) Çölyak hastalığı",
+            "C) Graves hastalığı",
+            "D) Addison hastalığı",
+            "E) Hipofiz yetmezliği"
+        ],
+        "dogru": "B",
+        "aciklama": "Tip 1 DM ile en sık birlikte görülen otoimmün hastalık çölyak hastalığıdır. Boy uzamasının durması malabsorbsiyona bağlıdır."
+    },
+    {
+        "soru_no": 3,
+        "soru": "Kronik hepatit B'li hastada HBeAg negatif, anti-HBe pozitif, HBV DNA 50.000 IU/mL, ALT 85 U/L. Karaciğer biyopsisi METAVIR A2F3 gösteriyor. Tedavi?",
+        "secenekler": [
+            "A) İzlem",
+            "B) Tenofovir",
+            "C) Entekavir",
+            "D) Pegile interferon",
+            "E) B veya C"
+        ],
+        "dogru": "E",
+        "aciklama": "HBeAg negatif kronik hepatit B'de HBV DNA >2000 IU/mL ve ALT yüksekliği varsa tedavi endikasyonu vardır. Entekavir veya tenofovir birinci tercihtir."
+    },
+    {
+        "soru_no": 4,
+        "soru": "35 yaşında kadın hasta, sabahları ellerinde şişlik ve sertlik (1 saatten fazla), son 6 aydır devam ediyor. Anti-CCP pozitif, RF pozitif. El grafisinde erozyon izleniyor. Tanı?",
+        "secenekler": [
+            "A) Osteoartrit",
+            "B) Romatoid artrit",
+            "C) Psöriatik artrit",
+            "D) SLE",
+            "E) Gut"
+        ],
+        "dogru": "B",
+        "aciklama": "Sabah sertliği >1 saat + anti-CCP pozitifliği RA tanısını kesinleştirir. Grafide erozyon olması aktif hastalığı gösterir."
+    },
+    {
+        "soru_no": 5,
+        "soru": "Gece terlemesi, ateş, kilo kaybı olan 28 yaşında erkek hasta. Servikal LAP saptanıyor. Biyopside Reed-Sternberg hücresi görülüyor. Evre?",
+        "secenekler": [
+            "A) Evre 1",
+            "B) Evre 2",
+            "C) Evre 3",
+            "D) Evre 4",
+            "E) B semptomları var diye B"
+        ],
+        "dogru": "E",
+        "aciklama": "Hodgkin lenfomada ateş, gece terlemesi, kilo kaybı varsa B semptomu eklenir. Sadece servikal LAP varsa Evre 1B'dir ama B semptomu varsa Evre IB değil, Evreye B eklenir."
+    },
+    {
+        "soru_no": 6,
+        "soru": "Akut pankreatitli hastada Ranson skoru 5. 48. saatte hematokrit düşüşü %12, kalsiyum 7.2 mg/dL. En sık beklenen komplikasyon?",
+        "secenekler": [
+            "A) Psödokist",
+            "B) Nekrotizan pankreatit",
+            "C) ARDS",
+            "D) Böbrek yetmezliği",
+            "E) Kanama"
+        ],
+        "dogru": "B",
+        "aciklama": "Ranson ≥3 ise ağır pankreatit, ≥6 ise çok ağırdır. Nekrotizan pankreatit en sık ölüm nedenidir."
+    },
+    {
+        "soru_no": 7,
+        "soru": "Yeni tanı konulan Graves hastalığında ilk tercih edilecek tedavi?",
+        "secenekler": [
+            "A) Radyoaktif iyot",
+            "B) Propiltiourasil",
+            "C) Metimazol",
+            "D) Propranolol",
+            "E) Total tiroidektomi"
+        ],
+        "dogru": "C",
+        "aciklama": "İlk tercih her zaman antitiroid ilaçtır (metimazol > PTU). PTU sadece 1. trimesterde tercih edilir."
+    },
+    {
+        "soru_no": 8,
+        "soru": "Primer biliyer kolanjit tanılı hastada en sık görülen ekstrahepatik otoimmün hastalık?",
+        "secenekler": [
+            "A) Sjögren sendromu",
+            "B) Romatoid artrit",
+            "C) SLE",
+            "D) Skleroderma",
+            "E) Hashimoto"
+        ],
+        "dogru": "A",
+        "aciklama": "PBC ile %70-80 oranında Sjögren sendromu birlikteliği vardır."
+    },
+    {
+        "soru_no": 9,
+        "soru": "Multipl miyelomlu hastada kemik iliği aspirasyonunda plazma hücresi %45. Serum kreatinin 3.8 mg/dL. En uygun tedavi?",
+        "secenekler": [
+            "A) VAD rejimi",
+            "B) Bortezomib + deksametazon",
+            "C) Lenalidomid",
+            "D) Otolog kök hücre nakli",
+            "E) Melphalan + prednizon"
+        ],
+        "dogru": "B",
+        "aciklama": "Böbrek yetmezliği olan MM hastasında bortezomib bazlı rejim tercih edilir (lenalidomid böbrekten atılır)."
+    },
+    {
+        "soru_no": 10,
+        "soru": "Kawasaki hastalığında koroner arter anevrizması gelişme riskini en çok artıran faktör?",
+        "secenekler": [
+            "A) Erkek cinsiyet",
+            "B) 1 yaş altı",
+            "C) IVIG'ye geç başlama",
+            "D) Trombosit sayısı >800.000",
+            "E) CRP >100"
+        ],
+        "dogru": "C",
+        "aciklama": "İlk 10 gün içinde IVIG verilmezse koroner anevrizma riski dramatik artar."
+    },
+    {
+        "soru_no": 11,
+        "soru": "Wilson hastalığında bakır birikiminin en erken ve en sık görüldüğü yer?",
+        "secenekler": [
+            "A) Bazal ganglion",
+            "B) Serebellum",
+            "C) Hepatosit",
+            "D) Kornea (Kayser-Fleischer halkası)",
+            "E) Böbrek"
+        ],
+        "dogru": "C",
+        "aciklama": "Bakır ilk hepatositte birikir, sonra diğer dokulara dağılır. KF halkası ileri evrede çıkar."
+    },
+    {
+        "soru_no": 12,
+        "soru": "Akut romatizmal ateşte en geç iyileşen bulgu?",
+        "secenekler": [
+            "A) Artrit",
+            "B) Kardit",
+            "C) Korea",
+            "D) Eritema marginatum",
+            "E) Subkutan nodül"
+        ],
+        "dogru": "C",
+        "aciklama": "Sydenham koresi aylar-yıllar sürebilir, diğer bulgular haftalar içinde düzelir."
+    },
+    {
+        "soru_no": 13,
+        "soru": "65 yaşında erkek hasta, ani başlayan sağ kol ve bacakta güçsüzlük. Konuşması bozulmuş. BT normal. En olası tanı?",
+        "secenekler": [
+            "A) TOD",
+            "B) İnme",
+            "C) Hipoglisemi",
+            "D) Bell paralizisi",
+            "E) Migren"
+        ],
+        "dogru": "B",
+        "aciklama": "Ani fokal nörolojik deficit = inme hasta gelir. İlk 4-6 saatte BT normal olabilir (iskemik inme)."
+    },
+    {
+        "soru_no": 14,
+        "soru": "Kronik böbrek yetmezliği olan hastada en sık görülen anemi tipi?",
+        "secenekler": [
+            "A) Demir eksikliği",
+            "B) B12 eksikliği",
+            "C) Eritropoietin eksikliği",
+            "D) Folat eksikliği",
+            "E) Talasemi minor"
+        ],
+        "dogru": "C",
+        "aciklama": "KBY'de normositik normokrom anemi olur ve temel neden EPO eksikliğidir."
+    },
+    {
+        "soru_no": 15,
+        "soru": "En sık konjenital kalp hastalığı?",
+        "secenekler": [
+            "A) VSD",
+            "B) ASD",
+            "C) PDA",
+            "D) Fallot tetralojisi",
+            "E) Koarktasyon aort"
+        ],
+        "dogru": "A",
+        "aciklama": "Ventriküler septal defekt (VSD) tüm konjenital kalp hastalıklarının %30-40’ını oluşturur."
+    }
+]
