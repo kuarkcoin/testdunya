@@ -1,197 +1,662 @@
 [
-    {
-        "soru_no": 1,
-        "soru": "Bir hasta, 2 yıldır devam eden kronik öksürük ve balgam şikayetiyle başvuruyor. Sigara öyküsü yok. Akciğer grafisinde bilateral retikülonodüler dansite artışı izleniyor. BAL sıvısında CD1a pozitif hücreler saptanıyor. Tanı nedir?",
-        "secenekler": [
-            "A) Sarkoidoz",
-            "B) Hipersensitivite pnömonisi",
-            "C) Langerhans hücreli histiyositoz",
-            "D) İPF",
-            "E) Silikoz"
-        ],
-        "dogru": "C",
-        "aciklama": "Sigara öyküsü olmasa da Langerhans hücreli histiyositoz görülebilir. Retikülonodüler dansite + CD1a (+) hücreler tanı koydurucudur."
-    },
-    {
-        "soru_no": 2,
-        "soru": "Tip 1 diyabetli 14 yaşında kız hasta, son 3 aydır boy uzaması durmuş. Tiroid fonksiyonları normal. Çölyak hastalığı taramasında anti-tTG IgA yüksek bulunuyor. En olası tanı?",
-        "secenekler": [
-            "A) Turner sendromu",
-            "B) Çölyak hastalığı",
-            "C) Graves hastalığı",
-            "D) Addison hastalığı",
-            "E) Hipofiz yetmezliği"
-        ],
-        "dogru": "B",
-        "aciklama": "Tip 1 DM ile en sık birlikte görülen otoimmün hastalık çölyak hastalığıdır. Boy uzamasının durması malabsorbsiyona bağlıdır."
-    },
-    {
-        "soru_no": 3,
-        "soru": "Kronik hepatit B'li hastada HBeAg negatif, anti-HBe pozitif, HBV DNA 50.000 IU/mL, ALT 85 U/L. Karaciğer biyopsisi METAVIR A2F3 gösteriyor. Tedavi?",
-        "secenekler": [
-            "A) İzlem",
-            "B) Tenofovir",
-            "C) Entekavir",
-            "D) Pegile interferon",
-            "E) B veya C"
-        ],
-        "dogru": "E",
-        "aciklama": "HBeAg negatif kronik hepatit B'de HBV DNA >2000 IU/mL ve ALT yüksekliği varsa tedavi endikasyonu vardır. Entekavir veya tenofovir birinci tercihtir."
-    },
-    {
-        "soru_no": 4,
-        "soru": "35 yaşında kadın hasta, sabahları ellerinde şişlik ve sertlik (1 saatten fazla), son 6 aydır devam ediyor. Anti-CCP pozitif, RF pozitif. El grafisinde erozyon izleniyor. Tanı?",
-        "secenekler": [
-            "A) Osteoartrit",
-            "B) Romatoid artrit",
-            "C) Psöriatik artrit",
-            "D) SLE",
-            "E) Gut"
-        ],
-        "dogru": "B",
-        "aciklama": "Sabah sertliği >1 saat + anti-CCP pozitifliği RA tanısını kesinleştirir. Grafide erozyon olması aktif hastalığı gösterir."
-    },
-    {
-        "soru_no": 5,
-        "soru": "Gece terlemesi, ateş, kilo kaybı olan 28 yaşında erkek hasta. Servikal LAP saptanıyor. Biyopside Reed-Sternberg hücresi görülüyor. Evre?",
-        "secenekler": [
-            "A) Evre 1",
-            "B) Evre 2",
-            "C) Evre 3",
-            "D) Evre 4",
-            "E) B semptomları var diye B"
-        ],
-        "dogru": "E",
-        "aciklama": "Hodgkin lenfomada ateş, gece terlemesi, kilo kaybı varsa B semptomu eklenir. Sadece servikal LAP varsa Evre 1B'dir ama B semptomu varsa Evre IB değil, Evreye B eklenir."
-    },
-    {
-        "soru_no": 6,
-        "soru": "Akut pankreatitli hastada Ranson skoru 5. 48. saatte hematokrit düşüşü %12, kalsiyum 7.2 mg/dL. En sık beklenen komplikasyon?",
-        "secenekler": [
-            "A) Psödokist",
-            "B) Nekrotizan pankreatit",
-            "C) ARDS",
-            "D) Böbrek yetmezliği",
-            "E) Kanama"
-        ],
-        "dogru": "B",
-        "aciklama": "Ranson ≥3 ise ağır pankreatit, ≥6 ise çok ağırdır. Nekrotizan pankreatit en sık ölüm nedenidir."
-    },
-    {
-        "soru_no": 7,
-        "soru": "Yeni tanı konulan Graves hastalığında ilk tercih edilecek tedavi?",
-        "secenekler": [
-            "A) Radyoaktif iyot",
-            "B) Propiltiourasil",
-            "C) Metimazol",
-            "D) Propranolol",
-            "E) Total tiroidektomi"
-        ],
-        "dogru": "C",
-        "aciklama": "İlk tercih her zaman antitiroid ilaçtır (metimazol > PTU). PTU sadece 1. trimesterde tercih edilir."
-    },
-    {
-        "soru_no": 8,
-        "soru": "Primer biliyer kolanjit tanılı hastada en sık görülen ekstrahepatik otoimmün hastalık?",
-        "secenekler": [
-            "A) Sjögren sendromu",
-            "B) Romatoid artrit",
-            "C) SLE",
-            "D) Skleroderma",
-            "E) Hashimoto"
-        ],
-        "dogru": "A",
-        "aciklama": "PBC ile %70-80 oranında Sjögren sendromu birlikteliği vardır."
-    },
-    {
-        "soru_no": 9,
-        "soru": "Multipl miyelomlu hastada kemik iliği aspirasyonunda plazma hücresi %45. Serum kreatinin 3.8 mg/dL. En uygun tedavi?",
-        "secenekler": [
-            "A) VAD rejimi",
-            "B) Bortezomib + deksametazon",
-            "C) Lenalidomid",
-            "D) Otolog kök hücre nakli",
-            "E) Melphalan + prednizon"
-        ],
-        "dogru": "B",
-        "aciklama": "Böbrek yetmezliği olan MM hastasında bortezomib bazlı rejim tercih edilir (lenalidomid böbrekten atılır)."
-    },
-    {
-        "soru_no": 10,
-        "soru": "Kawasaki hastalığında koroner arter anevrizması gelişme riskini en çok artıran faktör?",
-        "secenekler": [
-            "A) Erkek cinsiyet",
-            "B) 1 yaş altı",
-            "C) IVIG'ye geç başlama",
-            "D) Trombosit sayısı >800.000",
-            "E) CRP >100"
-        ],
-        "dogru": "C",
-        "aciklama": "İlk 10 gün içinde IVIG verilmezse koroner anevrizma riski dramatik artar."
-    },
-    {
-        "soru_no": 11,
-        "soru": "Wilson hastalığında bakır birikiminin en erken ve en sık görüldüğü yer?",
-        "secenekler": [
-            "A) Bazal ganglion",
-            "B) Serebellum",
-            "C) Hepatosit",
-            "D) Kornea (Kayser-Fleischer halkası)",
-            "E) Böbrek"
-        ],
-        "dogru": "C",
-        "aciklama": "Bakır ilk hepatositte birikir, sonra diğer dokulara dağılır. KF halkası ileri evrede çıkar."
-    },
-    {
-        "soru_no": 12,
-        "soru": "Akut romatizmal ateşte en geç iyileşen bulgu?",
-        "secenekler": [
-            "A) Artrit",
-            "B) Kardit",
-            "C) Korea",
-            "D) Eritema marginatum",
-            "E) Subkutan nodül"
-        ],
-        "dogru": "C",
-        "aciklama": "Sydenham koresi aylar-yıllar sürebilir, diğer bulgular haftalar içinde düzelir."
-    },
-    {
-        "soru_no": 13,
-        "soru": "65 yaşında erkek hasta, ani başlayan sağ kol ve bacakta güçsüzlük. Konuşması bozulmuş. BT normal. En olası tanı?",
-        "secenekler": [
-            "A) TOD",
-            "B) İnme",
-            "C) Hipoglisemi",
-            "D) Bell paralizisi",
-            "E) Migren"
-        ],
-        "dogru": "B",
-        "aciklama": "Ani fokal nörolojik deficit = inme hasta gelir. İlk 4-6 saatte BT normal olabilir (iskemik inme)."
-    },
-    {
-        "soru_no": 14,
-        "soru": "Kronik böbrek yetmezliği olan hastada en sık görülen anemi tipi?",
-        "secenekler": [
-            "A) Demir eksikliği",
-            "B) B12 eksikliği",
-            "C) Eritropoietin eksikliği",
-            "D) Folat eksikliği",
-            "E) Talasemi minor"
-        ],
-        "dogru": "C",
-        "aciklama": "KBY'de normositik normokrom anemi olur ve temel neden EPO eksikliğidir."
-    },
-    {
-        "soru_no": 15,
-        "soru": "En sık konjenital kalp hastalığı?",
-        "secenekler": [
-            "A) VSD",
-            "B) ASD",
-            "C) PDA",
-            "D) Fallot tetralojisi",
-            "E) Koarktasyon aort"
-        ],
-        "dogru": "A",
-        "aciklama": "Ventriküler septal defekt (VSD) tüm konjenital kalp hastalıklarının %30-40’ını oluşturur."
-    }
+  {
+    "id": 1,
+    "question": "TEMEL: Yüzün, kafa derisinin ön bölümünün, gözün ve burnun ağrı, ısı ve dokunma duyusunu (Genel somatik afferent) taşıyan kranial sinir hangisidir?",
+    "A": "N. Facialis (VII)",
+    "B": "N. Trigeminus (V)",
+    "C": "N. Glossopharyngeus (IX)",
+    "D": "N. Vagus (X)",
+    "E": "N. Oculomotorius (III)",
+    "correct": "B",
+    "Açıklama": "N. Trigeminus (5. Kranial Sinir), baş-boyun bölgesinin ana duyu siniridir. Yüzün duyusunu oftalmik, maksiller ve mandibular dallarıyla alır."
+  },
+  {
+    "id": 2,
+    "question": "TEMEL: Mandibula hareketlerini sınırlayan ve kondil başının aşırı öne gitmesini engelleyen, TME'nin ana ligamenti hangisidir?",
+    "A": "Sphenomandibular ligament",
+    "B": "Stylomandibular ligament",
+    "C": "Temporomandibular (Lateral) ligament",
+    "D": "Pterygomandibular raphe",
+    "E": "Kollateral ligament",
+    "correct": "C",
+    "Açıklama": "Temporomandibular (Lateral) ligament, eklem kapsülünün dışındadır ve kondilin posteriora ve aşırı inferiora gitmesini engelleyen ana bağdır."
+  },
+  {
+    "id": 3,
+    "question": "TEMEL: Sement dokusunun, periodontal ligament (PDL) liflerinin içine gömüldüğü ve dişin alveol kemiğine tutunmasını sağlayan uçlarına ne ad verilir?",
+    "A": "Tomes lifleri",
+    "B": "Sharpey lifleri",
+    "C": "Von Korff lifleri",
+    "D": "Retiküler lifler",
+    "E": "Oksitalan lifler",
+    "correct": "B",
+    "Açıklama": "Sharpey lifleri, bir ucu sement içine, diğer ucu alveol kemiği içine gömülü olan, dişin tutuculuğunu sağlayan kollojen lif uçlarıdır."
+  },
+  {
+    "id": 4,
+    "question": "TEMEL: Tükürük bezlerinde 'Müsin' (Mukoza kayganlaştırıcı) üretiminden sorumlu olan ve histolojik olarak köpüklü, açık renkli görünen hücre tipi hangisidir?",
+    "A": "Seröz hücreler",
+    "B": "Müköz hücreler",
+    "C": "Miyoepitelyal hücreler",
+    "D": "Duktal hücreler",
+    "E": "Onkositler",
+    "correct": "B",
+    "Açıklama": "Müköz hücreler, yoğun glikoprotein (müsin) içerir. Sublingual ve minör tükürük bezlerinde baskındır."
+  },
+  {
+    "id": 5,
+    "question": "TEMEL: Kemik rezorbsiyonu (yıkımı) sırasında Osteoklastların kemik yüzeyine tutunarak oluşturduğu asidik mikroçevreye ne ad verilir?",
+    "A": "Howship lakünü",
+    "B": "Volkmann kanalı",
+    "C": "Havers kanalı",
+    "D": "Kalsifikasyon hattı",
+    "E": "Osteoid",
+    "correct": "A",
+    "Açıklama": "Osteoklastlar, kemik yüzeyinde 'Howship lakünü' adı verilen çukurlara yerleşir ve buraya asit ile enzim salgılayarak kemiği eritir."
+  },
+  {
+    "id": 6,
+    "question": "TEMEL: Diş hekimliğinde kullanılan 'Lidokain' ve 'Artikain' gibi lokal anestezikler, kimyasal yapılarına göre hangi gruba girer?",
+    "A": "Ester grubu",
+    "B": "Amid grubu",
+    "C": "Keton grubu",
+    "D": "Aldehit grubu",
+    "E": "Eter grubu",
+    "correct": "B",
+    "Açıklama": "Günümüzde diş hekimliğinde kullanılan anesteziklerin çoğu (Lidokain, Artikain, Mepivakain, Bupivakain) Amid grubudur. (Prokain Ester grubudur ve az kullanılır). "
+  },
+  {
+    "id": 7,
+    "question": "TEMEL: Aşağıdaki antibiyotiklerden hangisi, bakterilerin DNA giraz (Topoizomeraz II) enzimini inhibe ederek etki gösterir?",
+    "A": "Penisilinler",
+    "B": "Makrolidler",
+    "C": "Kinolonlar (Siprofloksasin vb.)",
+    "D": "Tetrasiklinler",
+    "E": "Sefalosporinler",
+    "correct": "C",
+    "Açıklama": "Kinolonlar (Florokinolonlar), DNA replikasyonunu sağlayan DNA giraz enzimini inhibe eden bakterisidal ilaçlardır."
+  },
+  {
+    "id": 8,
+    "question": "TEMEL: Diş çürüğünün ilerlemesinde, dentin dokusundaki kollajen liflerin yıkılmasından sorumlu olan, proteolitik aktivitesi yüksek bakteri cinsi hangisidir?",
+    "A": "Streptococcus",
+    "B": "Lactobacillus",
+    "C": "Porphyromonas",
+    "D": "Actinomyces",
+    "E": "Peptostreptococcus",
+    "correct": "B",
+    "Açıklama": "Çürük lezyonu dentine ulaştığında asidik ortamda çoğalan ve kollajeni yıkan proteolitik enzimlere sahip olanlar Laktobasillerdir (İlerlemiş çürük)."
+  },
+  {
+    "id": 9,
+    "question": "TEMEL: Oral mukozada, özellikle yanak içinde görülen, beyazımsı, dantel veya ağ şeklinde çizgilenmeler (Wickham striaları) ile karakterize dermatolojik hastalık hangisidir?",
+    "A": "Lökoplaki",
+    "B": "Oral Liken Planus",
+    "C": "Kandidiazis",
+    "D": "Lupus Eritematozus",
+    "E": "Eritema Multiforme",
+    "correct": "B",
+    "Açıklama": "Liken Planus, T-hücre aracılı otoimmün bir hastalıktır. Retiküler tipinde Wickham striaları tipiktir."
+  },
+  {
+    "id": 10,
+    "question": "TEMEL: Radyografik olarak 'Güneş Işını' (Sun-burst) manzarası veren, simetrik periodontal aralık genişlemesi görülen malign çene tümörü hangisidir?",
+    "A": "Ameloblastoma",
+    "B": "Osteosarkom",
+    "C": "Multipl Miyelom",
+    "D": "Ewing Sarkomu",
+    "E": "Fibrosarkom",
+    "correct": "B",
+    "Açıklama": "Osteosarkomda tümör kemik dışına taşarak dikensi kemik yapımı (Spikül) oluşturur, bu da güneş ışını görüntüsü verir."
+  },
+  {
+    "id": 11,
+    "question": "TEMEL: Aşağıdaki vitaminlerden hangisi, epitel dokunun bütünlüğü ve tükürük bezlerinin sağlığı için gereklidir, eksikliğinde kserostomi ve mukoza atrofisi görülür?",
+    "A": "A Vitamini",
+    "B": "D Vitamini",
+    "C": "K Vitamini",
+    "D": "E Vitamini",
+    "E": "B1 Vitamini",
+    "correct": "A",
+    "Açıklama": "A vitamini epitelin diferansiasyonu için elzemdir. Eksikliğinde skuamöz metaplazi, keratinizasyon artışı ve bez atrofisi olur."
+  },
+  {
+    "id": 12,
+    "question": "TEMEL: Kan pıhtılaşma testlerinden 'Kanama Zamanı' (Bleeding Time), primer olarak hangi kan elemanının fonksiyonunu gösterir?",
+    "A": "Fibrinojen",
+    "B": "Protrombin",
+    "C": "Trombositler",
+    "D": "Faktör VIII",
+    "E": "Faktör IX",
+    "correct": "C",
+    "Açıklama": "Kanama zamanı, trombosit tıkacının oluşum süresini ölçer. Trombosit sayısı veya fonksiyonu (Aspirin kullanımı) bozuksa uzar."
+  },
+  {
+    "id": 13,
+    "question": "TEMEL: Diş hekimliğinde kullanılan 'Glutaraldehit' solüsyonu, hangi özelliği ile diğer dezenfektanlardan ayrılır?",
+    "A": "Sadece bakterileri öldürür",
+    "B": "Uzun süre temas ettiğinde (10 saat) sporosidal (Sterilizasyon) etki gösterir",
+    "C": "Cilt antiseptiği olarak kullanılır",
+    "D": "Kokusuzdur",
+    "E": "Toksik değildir",
+    "correct": "B",
+    "Açıklama": "Glutaraldehit yüksek düzey dezenfektandır. Isıya dayanıksız aletler uzun süre bekletilirse 'Soğuk Sterilizasyon' sağlar."
+  },
+  {
+    "id": 14,
+    "question": "TEMEL: Aşağıdaki kistlerden hangisi 'Odontojenik' kökenli DEĞİLDİR?",
+    "A": "Radiküler Kist",
+    "B": "Dentigeröz Kist",
+    "C": "Keratokist",
+    "D": "Nazopalatin Kanal Kisti",
+    "E": "Lateral Periodontal Kist",
+    "correct": "D",
+    "Açıklama": "Nazopalatin kanal kisti (İnsiziv kanal kisti), embriyolojik yüzleşme hattındaki artıklardan gelişen 'Fissural' (Non-odontojenik) bir kisttir."
+  },
+  {
+    "id": 15,
+    "question": "TEMEL: Farmakolojide, bir ilacın 'Terapötik Penceresi' neyi ifade eder?",
+    "A": "İlacın vücuttan atılma süresi",
+    "B": "Minimum etkili doz ile minimum toksik doz arasındaki aralık",
+    "C": "İlacın emilim hızı",
+    "D": "İlacın etki süresi",
+    "E": "İlacın reseptöre bağlanma gücü",
+    "correct": "B",
+    "Açıklama": "Terapötik pencere ne kadar genişse ilaç o kadar güvenlidir. Dar pencereli ilaçlarda (Örn: Digoksin) doz ayarlaması zordur."
+  },
+  {
+    "id": 16,
+    "question": "KLİNİK: Tam protezlerde, üst çene protezinin arka sınırında 'Post-Dam' (Arka Tıkaç) alanı oluşturmanın temel amacı nedir?",
+    "A": "Estetiği sağlamak",
+    "B": "Konuşmayı düzeltmek",
+    "C": "Protezin arka sınırından hava girişini önleyerek tutuculuğu (Vakum) sağlamak",
+    "D": "Öğürme refleksini azaltmak",
+    "E": "Dikey boyutu artırmak",
+    "correct": "C",
+    "Açıklama": "Yumuşak damağın hareketli olmayan kısmına yapılan baskı (Post-dam), protez altına hava girmesini engeller ve adezyonu/retansiyonu maksimize eder."
+  },
+  {
+    "id": 17,
+    "question": "KLİNİK: Metal destekli porselen restorasyonlarda, metal ile porselen arasındaki en güçlü ve en önemli bağlantı mekanizması hangisidir?",
+    "A": "Mekanik kilitlenme",
+    "B": "Kompresyon kuvveti",
+    "C": "Kimyasal Bağlantı (Oksit tabakası ile)",
+    "D": "Van der Waals kuvvetleri",
+    "E": "Sürtünme",
+    "correct": "C",
+    "Açıklama": "Metal altyapı fırınlandığında yüzeyde oluşan oksit tabakası, porselen ile kimyasal olarak birleşir. Bu en temel bağlantıdır."
+  },
+  {
+    "id": 18,
+    "question": "KLİNİK: Hareketli bölümlü protezlerde, dişsiz sonlanan kaideye (Serbest sonlu) gelen yüklerin dişlere zarar vermesini önlemek için 'Tırnak' (Rest) yuvası nerede hazırlanmalıdır?",
+    "A": "Dişin boşluğa bakan (Distal) yüzünde",
+    "B": "Dişin boşluğa uzak (Meziyal) yüzünde",
+    "C": "Sadece lingualde",
+    "D": "Sadece bukkalde",
+    "E": "Tırnak yuvası açılmaz",
+    "correct": "B",
+    "Açıklama": "Serbest sonlu vakalarda tırnak, dişin boşluğa uzak (meziyal) tarafına konulur. Böylece yük altında diş 'distale' devrilmek yerine, daha stabil kalır (RPI kroşe prensibi)."
+  },
+  {
+    "id": 19,
+    "question": "KLİNİK: Kompozit dolgularda 'Polimerizasyon Büzülmesi'ni (Kontraksiyon) azaltmak için klinik olarak uygulanan yöntem hangisidir?",
+    "A": "Tek seferde (Bulk) dolgu yapmak",
+    "B": "Tabakalama Tekniği (İnkremental) kullanmak",
+    "C": "Daha az ışık tutmak",
+    "D": "Daha akışkan kompozit kullanmak",
+    "E": "Bonding sürmemek",
+    "correct": "B",
+    "Açıklama": "Kompoziti 2 mm'lik tabakalar halinde yerleştirip ışınlamak (Tabakalama), büzülme stresini azaltır ve ışığın derinlere ulaşmasını sağlar."
+  },
+  {
+    "id": 20,
+    "question": "KLİNİK: 'Açık Apeksli' (Kök ucu kapanmamış) ve vital (canlı) pulpası travma sonucu açığa çıkmış bir dişin tedavisinde ilk tercih nedir?",
+    "A": "Kanal Tedavisi",
+    "B": "Çekim",
+    "C": "Cvek Amputasyonu (Parsiyel Pulpotomi)",
+    "D": "Total Pulpotomi",
+    "E": "Kuafaj",
+    "correct": "C",
+    "Açıklama": "Travmatik pulpa açılmalarında yüzeyel iltihaplı doku (2 mm) çıkarılır (Cvek). Kalan sağlıklı pulpa ile kök gelişimi devam ettirilir (Apeksogenezis)."
+  },
+  {
+    "id": 21,
+    "question": "KLİNİK: Kanal tedavisinde kullanılan 'Apex Locator' (Elektronik apeks bulucu), kök ucunda hangi anatomik noktayı tespit etmeyi hedefler?",
+    "A": "Radyografik Apeks",
+    "B": "Anatomik Apeks",
+    "C": "Apikal Konstrivsiyon (Darlık)",
+    "D": "Major Foramen",
+    "E": "Sement-Dentin Sınırı",
+    "correct": "C",
+    "Açıklama": "Kanal dolgusu, kanalın en dar yeri olan Apikal Konstriksiyonda sonlanmalıdır. Apex locator burayı '0.0' veya 'APEX' olarak gösterir."
+  },
+  {
+    "id": 22,
+    "question": "KLİNİK: Kanal dolgusunda kullanılan patlarda (Sealer), doku iyileşmesini uyaran ve antimikrobiyal etkisi olan 'Öjenol' hangi madde ile birleşerek bu etkiyi gösterir?",
+    "A": "Kalsiyum Hidroksit",
+    "B": "Çinko Oksit",
+    "C": "Rezin",
+    "D": "Gütaperka",
+    "E": "Formaldehit",
+    "correct": "B",
+    "Açıklama": "Çinko Oksit Öjenol (ZOE) bazlı patlar, diş hekimliğinin en eski ve klasik kanal dolgu patlarıdır."
+  },
+  {
+    "id": 23,
+    "question": "KLİNİK: Periodontal cep derinliğini azaltmak için yapılan 'Apikale Kaydırılan Flep' operasyonu hangi durumda KONTRENDİKEDİR (Yapılmaz)?",
+    "A": "Yeterli yapışık diş eti varlığında",
+    "B": "Kemik cebi olduğunda",
+    "C": "Estetik kaygı olan ön bölge dişlerinde",
+    "D": "Kuron boyu uzatmada",
+    "E": "Furkasyon defektlerinde",
+    "correct": "C",
+    "Açıklama": "Apikale kaydırılan flep, diş eti kenarını aşağı çeker ve kök yüzeyini açığa çıkarır. Estetik bölgede (ön dişler) ciddi estetik sorun yaratır."
+  },
+  {
+    "id": 24,
+    "question": "KLİNİK: 'Serbest Diş Eti Grefti' (SDG) operasyonunda, damaktan alınan greftin ilk 2-3 gün beslenmesini sağlayan mekanizma nedir?",
+    "A": "Damarlanma (Revaskülarizasyon)",
+    "B": "Plazmatik Dolaşım (Diffüzyon)",
+    "C": "Kan pıhtısı",
+    "D": "Sütürler",
+    "E": "Kemik iliği",
+    "correct": "B",
+    "Açıklama": "Damarların anastomoz yapması (bağlanması) günler sürer. İlk günlerde greft, alıcı yataktaki plazma sıvısının diffüzyonu (Plazmatik sirkülasyon) ile yaşar."
+  },
+  {
+    "id": 25,
+    "question": "KLİNİK: Diş eti oluğu sıvısında (DOS), kemik yıkımını inhibe eden ve periodontal sağlıkla ilişkili olan sitokin hangisidir?",
+    "A": "IL-1 (İnterlökin 1)",
+    "B": "TNF-alfa",
+    "C": "PGE2 (Prostaglandin E2)",
+    "D": "IL-10 (İnterlökin 10)",
+    "E": "MMP-8",
+    "correct": "D",
+    "Açıklama": "IL-1, TNF ve PGE2 yıkıcıdır (Pro-inflamatuar). IL-10 ve IL-4 ise koruyucudur (Anti-inflamatuar)."
+  },
+  {
+    "id": 26,
+    "question": "KLİNİK: Süt dişlenmede, alt çenede süt kanin dişlerinin daimi kaninlerden önce düşmesi veya çekilmesi durumunda, alt keserlerin linguale (dil tarafına) devrilmesiyle oluşan yer darlığına ne denir?",
+    "A": "Leeway Space kaybı",
+    "B": "İnsizal Liabiliti",
+    "C": "Lingual Kollaps",
+    "D": "Derin Kapanış",
+    "E": "Çapraz Kapanış",
+    "correct": "C",
+    "Açıklama": "Süt kaninlerin erken kaybı, ark boyunu kısaltır ve keserlerin arkaya devrilmesine (Lingual kollaps) neden olarak daimi dişlere yer bırakmaz."
+  },
+  {
+    "id": 27,
+    "question": "KLİNİK: Daimi dişlerin sürmesi sırasında, üst santral keserlerin arasında görülen ve kaninler sürdükçe kendiliğinden kapanan geçici diastemaya (boşluğa) ne denir?",
+    "A": "Patolojik Diastema",
+    "B": "Çirkin Ördek Yavrusu Dönemi (Ugly Duckling)",
+    "C": "Primate Boşluğu",
+    "D": "Leeway Space",
+    "E": "Gelişimsel Aralık",
+    "correct": "B",
+    "Açıklama": "8-10 yaşlarında üst yan keser ve kaninler sürerken kökleri santralleri iterek kronların arasını açar. Kaninler sürünce bu boşluk kapanır."
+  },
+  {
+    "id": 28,
+    "question": "KLİNİK: Sınıf II Bölüm 2 maloklüzyonun en karakteristik dişsel özelliği nedir?",
+    "A": "Üst keserlerin aşırı fırlak (protrüze) olması",
+    "B": "Üst santral keserlerin palatinale (içeri) eğimli, yan keserlerin labiale (dışarı) eğimli olması",
+    "C": "Alt çenenin önde olması",
+    "D": "Açık kapanış",
+    "E": "Çapraz kapanış",
+    "correct": "B",
+    "Açıklama": "Sınıf II Bölüm 2'de üst çene ilerdedir ancak üst santraller geriye yatıktır (Retrüze). Bu da derin kapanışa neden olur."
+  },
+  {
+    "id": 29,
+    "question": "KLİNİK: İskeletsel büyüme döneminde, üst çenenin gelişimini frenlemek ve geriye doğru kuvvet uygulamak için kullanılan ağız dışı aygıt hangisidir?",
+    "A": "Yüz Maskesi",
+    "B": "Headgear (Enselik)",
+    "C": "Chin Cup",
+    "D": "Aktivatör",
+    "E": "Expansiyon Vidası",
+    "correct": "B",
+    "Açıklama": "Headgear, enseden veya baştan destek alarak üst çeneye (maksilla) geriye doğru kuvvet uygular (Sınıf II tedavisi)."
+  },
+  {
+    "id": 30,
+    "question": "KLİNİK: Panoramik radyografide, hastanın çenesini çok aşağı eğmesi (Chin down) sonucunda görüntüde nasıl bir hata oluşur?",
+    "A": "Gülümseme hattı (Smile line) abartılı olur, kondiller yukarıda kalır",
+    "B": "Düzleşmiş oklüzal düzlem (Üzgün yüz)",
+    "C": "Ön dişler geniş görünür",
+    "D": "Ramuslar asimetrik olur",
+    "E": "Omurga görüntüsü dişlerin üzerine biner",
+    "correct": "A",
+    "Açıklama": "Çene aşağıda olunca oklüzal düzlem 'V' şeklini alır (Aşırı gülümseme). Çene yukarıda olursa (Chin up) düzleşir (Üzgün yüz)."
+  },
+  {
+    "id": 31,
+    "question": "KLİNİK: Radyografide 'Sloppy' (Bulanık) görüntüye neden olan, banyo solüsyonlarının sıcaklığındaki ani değişim sonucu filmin jelatin tabakasının çatlamasına ne denir?",
+    "A": "Retikülasyon",
+    "B": "Sarı-kahverengi lekelenme",
+    "C": "Statik elektrik",
+    "D": "Aşırı banyo",
+    "E": "Foreshortening",
+    "correct": "A",
+    "Açıklama": "Retikülasyon, sıcak banyodan soğuk suya ani geçişte filmin üzerindeki emülsiyonun büzüşüp çatlamasıdır (Portakal kabuğu görünümü)."
+  },
+  {
+    "id": 32,
+    "question": "KLİNİK: Alt çene premolar bölgesinde, mandibular kanalın üzerinde yer alan ve radyografide radyolüsent bir delik olarak görülen anatomik yapı nedir?",
+    "A": "İnsiziv Foramen",
+    "B": "Mental Foramen",
+    "C": "Lingual Foramen",
+    "D": "Mandibular Foramen",
+    "E": "Genial Tüberkül",
+    "correct": "B",
+    "Açıklama": "Mental foramen, alt 4-5 numaralı dişlerin kökleri arasında yer alır. Periapikal lezyonla karıştırılmamalıdır."
+  },
+  {
+    "id": 33,
+    "question": "KLİNİK: 'Gorlin-Goltz Sendromu' (Nevoid Bazal Hücreli Karsinom Sendromu) ile ilişkili olan, çenelerde çok sayıda (keratokist) görülen kist hangisidir?",
+    "A": "Odontojenik Keratokist",
+    "B": "Dentigeröz Kist",
+    "C": "Radiküler Kist",
+    "D": "Kalsifiye Odontojenik Kist",
+    "E": "Nasolabial Kist",
+    "correct": "A",
+    "Açıklama": "Çoklu Keratokistler, kalsifiye falks serebri ve bazal hücreli cilt kanserleri Gorlin-Goltz sendromu triadı'dır."
+  },
+  {
+    "id": 34,
+    "question": "KLİNİK: Tükürük bezi kanalında taş (Siyalolit) oluşumuna bağlı olarak, yemek yerken bezin aniden şişmesi ve ağrıması tablosuna ne ad verilir?",
+    "A": "Siyaloadenit",
+    "B": "Siyalolitiazis (Yemek Koliği)",
+    "C": "Mukosel",
+    "D": "Siyalozi",
+    "E": "Ranula",
+    "correct": "B",
+    "Açıklama": "Tükürük salgısı yemekle artar, taş kanalı tıkadığı için akamaz ve bez içinde basınç yaparak ağrılı şişliğe (Tükürük koliği) neden olur."
+  },
+  {
+    "id": 35,
+    "question": "KLİNİK: Çene eklemi (TME) diskinin yerinden çıkması (Deplasman) en sık hangi yöne doğru olur?",
+    "A": "Posterior (Arka)",
+    "B": "Anterior (Ön) ve Medial",
+    "C": "Lateral (Dış)",
+    "D": "Superior",
+    "E": "İnferior",
+    "correct": "B",
+    "Açıklama": "Lateral Pterygoid kası diski öne ve içe (Anteromedial) doğru çeker. Disk deplasmanlarının çoğu bu yöndedir."
+  },
+  {
+    "id": 36,
+    "question": "KLİNİK: Diş çekimi sonrası aşırı kanaması olan bir hastada 'Hemofili A' şüphesi varsa, hangi laboratuvar testi uzamış olarak bulunur?",
+    "A": "Protrombin Zamanı (PT)",
+    "B": "Aktive Parsiyel Tromboplastin Zamanı (aPTT)",
+    "C": "Kanama Zamanı",
+    "D": "Trombosit Sayısı",
+    "E": "INR",
+    "correct": "B",
+    "Açıklama": "Hemofili A (Faktör 8 eksikliği) intrinsik yolu bozar, bu yüzden aPTT uzar. PT ve trombosit sayısı normaldir."
+  },
+  {
+    "id": 37,
+    "question": "KLİNİK: Travma sonucu 'Le Fort III' kırığı (Kraniofasiyal Ayrılma) olan bir hastada, yüzün orta 1/3'ü hangi seviyeden ayrılır?",
+    "A": "Damak seviyesinden",
+    "B": "Burun kökü ve Orbita (Göz) dış duvarlarından (Zigomatikofrontal sütür)",
+    "C": "Sadece burun kemiğinden",
+    "D": "Alt çene kondilinden",
+    "E": "Alveol kretinden",
+    "correct": "B",
+    "Açıklama": "Le Fort III, yüz kemiklerinin kafa tasından tamamen ayrıldığı en ağır kırıktır. Kırık hattı orbitanın arkasından geçer."
+  },
+  {
+    "id": 38,
+    "question": "KLİNİK: Gömülü 20 yaş dişinin çekimi sırasında Lingual Sinir zedelenirse hastada hangi şikayet oluşur?",
+    "A": "Dudakta uyuşukluk",
+    "B": "Dilin yarısında his kaybı ve tat duyusu kaybı",
+    "C": "Yanakta uyuşukluk",
+    "D": "Dişlerde ağrı",
+    "E": "Yüz felci",
+    "correct": "B",
+    "Açıklama": "Lingual sinir dilin 2/3 ön kısmının duyusunu ve tadını alır. Zedelenirse dil uyuşur ve tat alma bozulur."
+  },
+  {
+    "id": 39,
+    "question": "KLİNİK: 'Adenomatoid Odontojenik Tümör' (AOT) en sık hangi bölgede ve hangi yaş grubunda görülür?",
+    "A": "Yaşlılarda, Alt Çene Molar",
+    "B": "Genç kadınlarda (Teenager), Üst Çene Kanin bölgesinde",
+    "C": "Orta yaş erkeklerde, Alt Çene Ön",
+    "D": "Bebeklerde, Damakta",
+    "E": "Tüm yaşlarda, Ramusta",
+    "correct": "B",
+    "Açıklama": "AOT, '2/3 kuralı' ile bilinir: 2/3 Üst çene, 2/3 Kadın, 2/3 Gömülü Kanin ile ilişkilidir. Gençlerde görülür."
+  },
+  {
+    "id": 40,
+    "question": "KLİNİK: Radyografide 'Portakal Kabuğu' veya 'Buzlu Cam' görüntüsü veren, kemiğin normal yapısının bozulup fibröz doku ile yer değiştirdiği lezyon nedir?",
+    "A": "Fibröz Displazi",
+    "B": "Paget Hastalığı",
+    "C": "Osteomiyelit",
+    "D": "Kist",
+    "E": "Ameloblastoma",
+    "correct": "A",
+    "Açıklama": "Fibröz displazide kemik trabekülleri incelir ve düzensizleşir, radyografide tipik buzlu cam manzarası oluşur."
+  },
+  {
+    "id": 41,
+    "question": "KLİNİK: Diş hekimliğinde kullanılan lokal anesteziklerden hangisi, 'Methemoglobinemi' (Kanda oksijen taşıma bozukluğu/Morarma) yapma riski taşır?",
+    "A": "Lidokain",
+    "B": "Artikain",
+    "C": "Prilokain",
+    "D": "Bupivakain",
+    "E": "Mepivakain",
+    "correct": "C",
+    "Açıklama": "Prilokainin metaboliti (o-toluidin) hemoglobini okside ederek methemoglobine çevirir. Yüksek dozda siyanoz yapar."
+  },
+  {
+    "id": 42,
+    "question": "KLİNİK: Oral cerrahide 'Bifosfonat' kullanan hastalarda kemik nekrozu riskini değerlendirmek için hangi laboratuvar testi (Marker) önerilmektedir?",
+    "A": "Hemogram",
+    "B": "CTX (C-terminal telopeptid) testi",
+    "C": "CRP",
+    "D": "Sedimantasyon",
+    "E": "Kalsiyum düzeyi",
+    "correct": "B",
+    "Açıklama": "CTX testi, kemik yıkım hızını gösterir. Düşük CTX (<150 pg/mL), kemik döngüsünün çok baskılandığını ve nekroz riskinin yüksek olduğunu gösterir."
+  },
+  {
+    "id": 43,
+    "question": "KLİNİK: Dişlerde sıcak-soğuk hassasiyeti (Dentin Hipersensitivitesi) tedavisinde kullanılan diş macunlarının etki mekanizması nedir?",
+    "A": "Sinir ucunu bloke etmek (Potasyum Nitrat) veya Dentin tübüllerini tıkamak (Arginin, Florür)",
+    "B": "Diş etini büyütmek",
+    "C": "Mineyi kalınlaştırmak",
+    "D": "Pulpada yeni damar oluşturmak",
+    "E": "Dişi uyuşturmak",
+    "correct": "A",
+    "Açıklama": "Hassasiyet giderici macunlar ya sinir iletimini bozar (Potasyum tuzları) ya da açık tübülleri tıkar (Tıkayıcı ajanlar)."
+  },
+  {
+    "id": 44,
+    "question": "KLİNİK: Sınıf 2 kavitelerde (Arayüz) kullanılan 'Matriks Bandı'nın diş eti basamağında iyi adapte olmaması (Gevşek kalması) sonucu dolgunun taşkın olmasına ne ad verilir?",
+    "A": "Overhang (Taşkın Dolgu)",
+    "B": "Undercut",
+    "C": "Mikrosızıntı",
+    "D": "Kontakt açıklığı",
+    "E": "Marjinal ridge kırığı",
+    "correct": "A",
+    "Açıklama": "Matriks bandı diş etine tam oturmazsa ve kama (wedge) kullanılmazsa, dolgu maddesi diş eti altına taşar (Overhang). Bu da periodontal yıkıma neden olur."
+  },
+  {
+    "id": 45,
+    "question": "KLİNİK: Dental implant çevresindeki kemik kaybını değerlendirmek için en doğru radyografik yöntem hangisidir?",
+    "A": "Panoramik",
+    "B": "Paralel Teknikle çekilen Periapikal Röntgen",
+    "C": "Oklüzal",
+    "D": "Açıortay tekniği",
+    "E": "Sefalometrik",
+    "correct": "B",
+    "Açıklama": "Paralel teknik, boyutsal bozulmayı en aza indirir ve implant-kemik ilişkisini, marjinal kemik seviyesini en hassas şekilde gösterir."
+  },
+  {
+    "id": 46,
+    "question": "KLİNİK: Çocuklarda diş fırçalama alışkanlığı kazandırmak için önerilen, ebeveynin arkadan sarılarak fırçaladığı yöntem hangisidir?",
+    "A": "Bass Yöntemi",
+    "B": "Stillman Yöntemi",
+    "C": "Yatay (Scrub) Yöntemi",
+    "D": "Fones (Dairesel) Yöntemi",
+    "E": "Charters Yöntemi",
+    "correct": "D",
+    "Açıklama": "Küçük çocuklarda el becerisi gelişmediği için 'Fones' (Dairesel hareketler) yöntemi önerilir. Ebeveyn desteği şarttır."
+  },
+  {
+    "id": 47,
+    "question": "KLİNİK: 'Ektodermal Displazi' sendromunda ağız içi en belirgin bulgu nedir?",
+    "A": "Diş eti büyümesi",
+    "B": "Oligodonti (Çok sayıda diş eksikliği) ve konik şekilli dişler",
+    "C": "Süpernümerer (Fazla) dişler",
+    "D": "Erken sürme",
+    "E": "Büyük dilli olma",
+    "correct": "B",
+    "Açıklama": "Ektodermal displazide saç, tırnak, ter bezi ve dişler (ektoderm kökenli yapılar) etkilenir. Tam veya kısmi dişsizlik (Anodonti/Oligodonti) tipiktir."
+  },
+  {
+    "id": 48,
+    "question": "KLİNİK: Protetik tedavide 'Hassas Tutucu' (Çıtçıtlı protez) kullanılmasının kroşeli proteze göre en büyük avantajı nedir?",
+    "A": "Daha ucuz olması",
+    "B": "Estetik olması (Metal kroşe görünmemesi)",
+    "C": "Tamiri kolay olması",
+    "D": "Diş kesimi gerektirmemesi",
+    "E": "Daha az yer kaplaması",
+    "correct": "B",
+    "Açıklama": "Hassas tutucular kuron içine veya yanına gizlendiği için dışarıdan metal görünmez, estetik üstünlük sağlar."
+  },
+  {
+    "id": 49,
+    "question": "KLİNİK: Diş çekimi sonrası 'Oto-transplantasyon' nedir?",
+    "A": "Hastanın kendi dişinin, çekilen başka bir dişin yuvasına yerleştirilmesi",
+    "B": "Hayvan dişi kullanılması",
+    "C": "Yapay diş ekilmesi",
+    "D": "Dişin aynı yuvaya tekrar konması (Replantasyon)",
+    "E": "Kadavradan diş nakli",
+    "correct": "A",
+    "Açıklama": "Örn: Çürük 1. molar çekilip, yerine gömülü 20 yaş dişinin (3. molar) taşınması işlemidir. Başarı için kök gelişimi tamamlanmamış olmalıdır."
+  },
+  {
+    "id": 50,
+    "question": "KLİNİK: Ağız kanseri tedavisinde Radyoterapi (Işın tedavisi) gören hastalarda, çene kemiğinde gelişebilecek en ciddi komplikasyon nedir?",
+    "A": "Diş çürüğü",
+    "B": "Osteoradyonekroz",
+    "C": "Ağız kuruluğu",
+    "D": "Tat kaybı",
+    "E": "Mantar enfeksiyonu",
+    "correct": "B",
+    "Açıklama": "Radyoterapi kemiğin damarlanmasını bozar (Hipovaskülarite). Travma veya çekim sonrası kemik iyileşemez ve nekroz olur (Osteoradyonekroz)."
+  },
+  {
+    "id": 51,
+    "question": "KLİNİK: Diş hekimliğinde kullanılan 'Rubber Dam' (Lastik örtü) uygulamasının endodontideki en önemli amacı nedir?",
+    "A": "Aletlerin yutulmasını önlemek",
+    "B": "Tükürükteki bakterilerin kanala girmesini önleyerek 'Aseptik' çalışma alanı sağlamak",
+    "C": "Dudakları korumak",
+    "D": "Görüşü artırmak",
+    "E": "Hastanın konuşmasını engellemek",
+    "correct": "B",
+    "Açıklama": "Rubber dam izolasyonu, kanal tedavisinin başarısı için şarttır. Hem aspirasyonu önler hem de tükürük kontaminasyonunu engelleyerek sterilizasyonu korur."
+  },
+  {
+    "id": 52,
+    "question": "KLİNİK: 'Kama şekilli' (V-şeklinde) servikal aşınma defektleri (Abfraksiyon) genellikle neye bağlı oluşur?",
+    "A": "Sert fırçalama",
+    "B": "Asitli içecekler",
+    "C": "Oklüzal (Çiğneme) kuvvetlerinin dişin boyun bölgesinde stres biriktirmesi",
+    "D": "Çürük",
+    "E": "Diş taşı temizliği",
+    "correct": "C",
+    "Açıklama": "Aşırı oklüzal yükler, dişin servikalinde esnemeye yol açar ve mine prizmaları kopar (Abfraksiyon). Abrazyondan farklıdır."
+  },
+  {
+    "id": 53,
+    "question": "KLİNİK: Tam protez yapımında 'Nötral Bölge' tespiti için kullanılan madde hangisidir?",
+    "A": "Aljinat",
+    "B": "Doku düzenleyici (Tissue Conditioner) veya Fonksiyonel ölçü maddeleri",
+    "C": "Alçı",
+    "D": "Çinko oksit",
+    "E": "Mum",
+    "correct": "B",
+    "Açıklama": "Nötral bölge (dil ve yanak kuvvetlerinin eşitlendiği alan), hasta yutkunurken veya konuşurken şekillenen yumuşak maddelerle kaydedilir."
+  },
+  {
+    "id": 54,
+    "question": "KLİNİK: Periodontal cerrahide kullanılan 'Gingival Greft'in (Diş eti yaması) verici sahası (Donör) en sık neresidir?",
+    "A": "Yanak içi",
+    "B": "Damak (Palatal mukoza)",
+    "C": "Dil altı",
+    "D": "Dişsiz kret",
+    "E": "Retromolar bölge",
+    "correct": "B",
+    "Açıklama": "Damak mukozası kalındır ve keratinizedir. Bağ dokusu veya serbest diş eti grefti almak için en uygun bölgedir."
+  },
+  {
+    "id": 55,
+    "question": "KLİNİK: Süt dişlerinde görülen 'Erken Çocukluk Çağı Çürüğü'nde (ECC), çürüğün başlamasında en etkili bakteri hangisidir?",
+    "A": "Lactobacillus",
+    "B": "Streptococcus mutans",
+    "C": "Actinomyces",
+    "D": "Veillonella",
+    "E": "Candida",
+    "correct": "B",
+    "Açıklama": "S. mutans, anneden bebeğe geçer ve sükroz varlığında hızla asit üreterek ECC'yi başlatır. (İlerlemesinde laktobasiller rol alır)."
+  },
+  {
+    "id": 56,
+    "question": "KLİNİK: Kanal tedavisinde kullanılan 'Paper Point' (Kağıt kon) ne işe yarar?",
+    "A": "Kanalı doldurmak",
+    "B": "Kanalı kurutmak",
+    "C": "İlaçlamak",
+    "D": "Ölçü almak",
+    "E": "Kanalı genişletmek",
+    "correct": "B",
+    "Açıklama": "Paper pointler emicidir. Yıkama solüsyonlarını emerek kanalı kurutur, dolguya hazırlar."
+  },
+  {
+    "id": 57,
+    "question": "KLİNİK: Ortodontik tedavide diş hareketini hızlandırmak için kullanılan cerrahi yöntem (Kortikotomi) hangi biyolojik prensibe dayanır?",
+    "A": "Dişin sallanması",
+    "B": "RAP (Regional Acceleratory Phenomenon - Bölgesel Hızlandırıcı Fenomen)",
+    "C": "Kemik erimesi",
+    "D": "Diş eti çekilmesi",
+    "E": "Kök rezorpsiyonu",
+    "correct": "B",
+    "Açıklama": "Kemiğe yapılan cerrahi hasar (kortikotomi), bölgesel metabolizmayı ve kemik döngüsünü geçici olarak hızlandırır (RAP), diş daha hızlı hareket eder."
+  },
+  {
+    "id": 58,
+    "question": "KLİNİK: Diş beyazlatma (Bleaching) sonrası hastalarda en sık görülen geçici yan etki nedir?",
+    "A": "Diş çürümesi",
+    "B": "Diş hassasiyeti",
+    "C": "Diş eti çekilmesi",
+    "D": "Dolgu düşmesi",
+    "E": "Tat kaybı",
+    "correct": "B",
+    "Açıklama": "Peroksitlerin pulpaya difüzyonu sonucu geçici dentin hassasiyeti oluşur."
+  },
+  {
+    "id": 59,
+    "question": "KLİNİK: 'Sialadenozis' (Sialoz), tükürük bezlerinin ağrısız, iki taraflı şişmesidir. En sık hangi sistemik hastalıkla ilişkilidir?",
+    "A": "Enfeksiyon",
+    "B": "Diyabet ve Alkolizm (Metabolik/Beslenme bozuklukları)",
+    "C": "Kanser",
+    "D": "Taş",
+    "E": "Travma",
+    "correct": "B",
+    "Açıklama": "Sialoz, inflamasyon veya tümör değildir. Diyabet, alkolizm, anoreksiya gibi durumlarda parotis bezinde yağlanma ve büyüme (hipertrofi) olur."
+  },
+  {
+    "id": 60,
+    "question": "KLİNİK: Alt çene tam dişsiz hastalarda, implant destekli protez yapabilmek için 'en az kaç implant' önerilir (McGill Konsensüsü)?",
+    "A": "1",
+    "B": "2",
+    "C": "4",
+    "D": "6",
+    "E": "8",
+    "correct": "B",
+    "Açıklama": "Alt çene tam protezlerde stabilite için standart bakım protokolü '2 implant destekli overdenture' protezdir."
+  }
 ]
