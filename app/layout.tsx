@@ -2,19 +2,19 @@ import './globals.css'
 import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import Script from 'next/script'
-import { GoogleAnalytics } from '@next/third-parties/google' // Paketimizi çağırdık
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'TestDünya - YKS, KPSS ve TUS İçin Yapay Zeka Destekli Denemeler',
-  description: 'Türkiye\'nin yeni nesil sınav hazırlık platformu. Yapay zeka ile hazırlanan özgün YKS (TYT-AYT), KPSS ve TUS denemeleri ile başarıyı yakalayın. Ücretsiz ve üyeliksiz çöz.',
-  keywords: 'yks deneme, kpss deneme, tus soruları, online test çöz, yapay zeka sınav, tyt ayt deneme',
+  title: 'TestDünya - YKS, KPSS, TUS ve DUS İçin Ücretsiz Denemeler',
+  description: 'Türkiye\'nin yeni nesil sınav hazırlık platformu. Yapay zeka ile hazırlanan özgün YKS, KPSS, TUS ve DUS (Diş Hekimliği) denemeleri ile başarıyı yakalayın. Ücretsiz ve üyeliksiz çöz.',
+  keywords: 'yks deneme, kpss deneme, tus soruları, dus deneme, diş hekimliği uzmanlık sınavı, online test çöz, yapay zeka sınav, tyt ayt deneme',
   authors: [{ name: 'TestDünya Ekibi' }],
   icons: { icon: '/favicon.ico' },
   openGraph: {
-    title: 'TestDünya',
-    description: 'Özgün sorularla sınava hazırlan.',
+    title: 'TestDünya - YKS, KPSS, TUS ve DUS Denemeleri',
+    description: 'YKS, KPSS, TUS ve DUS sınavlarına yapay zeka destekli özgün sorularla hazırlan.',
     type: 'website',
     locale: 'tr_TR',
   }
@@ -55,8 +55,7 @@ export default function RootLayout({
           </div>
         </footer>
 
-        {/* Google Analytics - En alta, body kapanmadan hemen önceye koyuyoruz */}
-        {/* Senin ID'ni (G-ZQK5MCQ3EG) buraya yerleştirdim */}
+        {/* Google Analytics */}
         <GoogleAnalytics gaId="G-ZQK5MCQ3EG" />
         
       </body>
