@@ -1,14 +1,14 @@
 [
   {
     "id": 1,
-    "question": "TEMEL: Mitokondriyal oksidatif fosforilasyonda, elektron taşıma zinciri çalışmaya devam ederken ATP sentazın tamamen inhibe edildiği bir durumda aşağıdakilerden hangisi beklenir?",
+    "question": "TEMEL: Mitokondriyal oksidatif fosforilasyonda, substrat ve O₂ varlığında elektron taşıma zincirinin çalışabildiği bir deneyde, ATP sentaz spesifik bir inhibitörle tamamen bloke ediliyor. Başlangıçta (kısa süre için) aşağıdakilerden hangisi beklenir?",
     "A": "Oksijen tüketimi artar, proton gradienti kaybolur",
     "B": "Oksijen tüketimi azalır, proton gradienti artar",
     "C": "Oksijen tüketimi devam eder, proton gradienti aşırı derecede yükselir",
     "D": "Oksijen tüketimi tamamen durur, proton gradienti korunur",
     "E": "Oksijen tüketimi değişmez, ADP ATP’ye dönüşür",
     "correct": "C",
-    "Açıklama": "ATP sentaz (kompleks V) inhibe olursa protonlar matrikse geri dönemediği için proton gradienti giderek artar. ETC başlangıçta çalışsa da aşırı gradient nedeniyle giderek yavaşlar; kısa dönemde O₂ tüketimi devam ederken proton birikimi olur."
+    "Açıklama": "ATP sentaz (kompleks V) inhibe olursa protonlar matrikse geri dönemediği için proton gradienti giderek artar. Deneyin başlangıç döneminde ETC halen proton pompalamaya devam eder ve O₂ tüketimi sürerken proton birikimi olur, gradient yükselir. Gradient aşırı arttığında ilerleyen dönemde elektron akışı da yavaşlar ve O₂ tüketimi azalır."
   },
   {
     "id": 2,
@@ -155,7 +155,7 @@
   },
   {
     "id": 15,
-    "question": "TEMEL: Hücre membranında bulunan, cAMP düzeyini düşürerek düz kaslarda bronkokonstriksiyon yapan reseptör hangisidir?",
+    "question": "TEMEL: Hücre membranında bulunan, Gq proteinine bağlanarak fosfolipaz C’yi aktive eden, IP₃/DAG yoluyla hücre içi Ca²⁺ düzeyini artırıp düz kaslarda bronkokonstriksiyon yapan reseptör hangisidir?",
     "A": "β₁ adrenerjik",
     "B": "β₂ adrenerjik",
     "C": "M₃ muskarinik",
@@ -660,4 +660,3 @@
     "Açıklama": "Komorbiditesi ve yakın tarihli antibiyotik kullanımı olan TKP hastalarında, beta-laktam (örn. amoksisilin-klavulanat) + makrolid kombinasyonu hem tipik hem atipik etkenleri kapsamak için önerilir."
   }
 ]
-
