@@ -8,10 +8,7 @@
         "D": "Histidin",
         "E": "Lizin",
         "correct": "C",
-        "Açıklama": "Tirozin kinaz reseptörleri (örn. EGFR, İnsülin reseptörü) ligand bağlanınca dimerize olur; reseptörün sitoplazmik domenindeki tirozin kalıntıları otofosforile olur ve SH2 domainli adaptor proteinler için bağlanma bölgeleri oluşturur. 
-
-[Image of receptor tyrosine kinase activation]
-"
+        "Açıklama": "Tirozin kinaz reseptörleri (örn. EGFR, İnsülin reseptörü) ligand bağlanınca dimerize olur; reseptörün sitoplazmik domenindeki tirozin kalıntıları otofosforile olur ve SH2 domainli adaptor proteinler için bağlanma bölgeleri oluşturur. \r\n\r\n[Image of receptor tyrosine kinase activation]\r\n"
     },
     {
         "id": 2,
@@ -33,10 +30,7 @@
         "D": "Reseptörün ligand bağlama afinitesi",
         "E": "Postsinaptik membranda EPSP oluşumu",
         "correct": "C",
-        "Açıklama": "Aksiyon potansiyeli presinaptik uca ulaştığında voltaj bağımlı Ca²⁺ kanalları açılır; Ca²⁺ girişi SNARE proteinleri aracılığıyla vezikül-membran füzyonunu ve nörotransmitter ekzositozunu tetikler. 
-
-[Image of synaptic transmission steps]
-"
+        "Açıklama": "Aksiyon potansiyeli presinaptik uca ulaştığında voltaj bağımlı Ca²⁺ kanalları açılır; Ca²⁺ girişi SNARE proteinleri aracılığıyla vezikül-membran füzyonunu ve nörotransmitter ekzositozunu tetikler. \r\n\r\n[Image of synaptic transmission steps]\r\n"
     },
     {
         "id": 4,
@@ -102,10 +96,7 @@
         "D": "Z çizgileri arası mesafe",
         "E": "Sarkomerin toplam uzunluğu",
         "correct": "A",
-        "Açıklama": "Kasılma sırasında aktin filamentleri miyozinlerin üzerine kayar. I bandı ve H bandı daralır, sarkomer kısalır ancak Miyozin boyunu gösteren A bandı sabit kalır. 
-
-[Image of sarcomere contraction bands]
-"
+        "Açıklama": "Kasılma sırasında aktin filamentleri miyozinlerin üzerine kayar. I bandı ve H bandı daralır, sarkomer kısalır ancak Miyozin boyunu gösteren A bandı sabit kalır. \r\n\r\n[Image of sarcomere contraction bands]\r\n"
     },
     {
         "id": 10,
@@ -160,10 +151,7 @@
         "D": "Dağılım hacmi",
         "E": "Biyoyararlanım",
         "correct": "C",
-        "Açıklama": "Kararlı duruma ulaşmak için yaklaşık 4-5 yarı ömür geçmesi gerekir. Bu süre dozdan veya hızdan bağımsızdır, sadece yarı ömre bağlıdır. 
-
-[Image of drug steady state concentration graph]
-"
+        "Açıklama": "Kararlı duruma ulaşmak için yaklaşık 4-5 yarı ömür geçmesi gerekir. Bu süre dozdan veya hızdan bağımsızdır, sadece yarı ömre bağlıdır. \r\n\r\n[Image of drug steady state concentration graph]\r\n"
     },
     {
         "id": 15,
@@ -229,10 +217,7 @@
         "D": "Mikrotübül polimerleri",
         "E": "Nissl cisimcikleri",
         "correct": "B",
-        "Açıklama": "Hızlı anterograd taşıma (Kinesin motoru ile), nörotransmitter içeren veziküllerin ve enerji sağlayan mitokondrilerin sinapsa taşınmasını sağlar. 
-
-[Image of axonal transport mechanism]
-"
+        "Açıklama": "Hızlı anterograd taşıma (Kinesin motoru ile), nörotransmitter içeren veziküllerin ve enerji sağlayan mitokondrilerin sinapsa taşınmasını sağlar. \r\n\r\n[Image of axonal transport mechanism]\r\n"
     },
     {
         "id": 21,
@@ -441,10 +426,7 @@
         "D": "Aort Diseksiyonu",
         "E": "Kalp Krizi",
         "correct": "C",
-        "Açıklama": "Risk faktörleri (Hap, Hareketsizlik) ve ani dispne Pulmoner Emboliyi düşündürür. Pıhtı akciğer damarını tıkamıştır. 
-
-[Image of pulmonary embolism CT angiography]
-"
+        "Açıklama": "Risk faktörleri (Hap, Hareketsizlik) ve ani dispne Pulmoner Emboliyi düşündürür. Pıhtı akciğer damarını tıkamıştır. \r\n\r\n[Image of pulmonary embolism CT angiography]\r\n"
     },
     {
         "id": 40,
