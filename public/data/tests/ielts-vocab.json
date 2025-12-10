@@ -1,1 +1,152 @@
- 
+ [
+  {
+    "id": "iv-1",
+    "prompt": "Select the best synonym for the word: **MITIGATE**",
+    "A": "Worsen",
+    "B": "Alleviate",
+    "C": "Initiate",
+    "D": "Imitate",
+    "correct": "B",
+    "explanation": "**Mitigate** means to make something bad less severe or serious. **Alleviate** (hafifletmek) is the closest synonym. 'Worsen' is the opposite."
+  },
+  {
+    "id": "iv-2",
+    "prompt": "Complete the sentence: 'The government must take _________ measures to solve the housing crisis.'",
+    "A": "drastic",
+    "B": "vague",
+    "C": "trivial",
+    "D": "random",
+    "correct": "A",
+    "explanation": "**Drastic measures** (köklü/sert önlemler) is a very common academic collocation. 'Vague' means unclear, 'trivial' means unimportant."
+  },
+  {
+    "id": "iv-3",
+    "prompt": "What does **INEVITABLE** mean?",
+    "A": "Uncertain to happen",
+    "B": "Certain to happen; unavoidable",
+    "C": "Likely to change",
+    "D": "Easy to prevent",
+    "correct": "B",
+    "explanation": "**Inevitable** (kaçınılmaz) refers to something that is certain to happen. Example: 'Technological change is inevitable.'"
+  },
+  {
+    "id": "iv-4",
+    "prompt": "Select the more formal (Academic) equivalent of: **'LOOK INTO'**",
+    "A": "Watch",
+    "B": "Investigate",
+    "C": "See",
+    "D": "Check out",
+    "correct": "B",
+    "explanation": "In IELTS Writing, avoid phrasal verbs like 'look into'. Use **Investigate**, **Examine**, or **Analyze** instead."
+  },
+  {
+    "id": "iv-5",
+    "prompt": "Select the best synonym for: **FLUCTUATE**",
+    "A": "Remain stable",
+    "B": "Vary",
+    "C": "Increase",
+    "D": "Decrease",
+    "correct": "B",
+    "explanation": "**Fluctuate** means to rise and fall irregularly. **Vary** (değişkenlik göstermek) is the closest meaning. Essential for Task 1 Graph descriptions."
+  },
+  {
+    "id": "iv-6",
+    "prompt": "Complete the sentence: 'Pollution is a __________ factor in global warming.'",
+    "A": "significant",
+    "B": "significance",
+    "C": "significantly",
+    "D": "signify",
+    "correct": "A",
+    "explanation": "We need an **adjective** to modify the noun 'factor'. **Significant** (önemli/belirgin) is the correct adjective form."
+  },
+  {
+    "id": "iv-7",
+    "prompt": "Which word describes something that is 'harmful' or 'damaging'?",
+    "A": "Beneficial",
+    "B": "Detrimental",
+    "C": "Constructive",
+    "D": "Essential",
+    "correct": "B",
+    "explanation": "**Detrimental** is a Band 7+ word for 'bad' or 'harmful'. Example: 'Smoking has detrimental effects on health.'"
+  },
+  {
+    "id": "iv-8",
+    "prompt": "Select the best synonym for: **AMBIGUOUS**",
+    "A": "Clear",
+    "B": "Unclear",
+    "C": "Bright",
+    "D": "Large",
+    "correct": "B",
+    "explanation": "**Ambiguous** means open to more than one interpretation; having a double meaning or unclear."
+  },
+  {
+    "id": "iv-9",
+    "prompt": "Complete the sentence: 'Students must __________ strictly to the school rules.'",
+    "A": "adhere",
+    "B": "listen",
+    "C": "follow",
+    "D": "comply",
+    "correct": "A",
+    "explanation": "The verb **adhere** is always followed by **'to'**. So 'adhere to' (bağlı kalmak/uymak) is the correct collocation. 'Comply' takes 'with' (comply with)."
+  },
+  {
+    "id": "iv-10",
+    "prompt": "What is the meaning of **'SUBSTANTIAL'**?",
+    "A": "Very small",
+    "B": "Of considerable importance, size, or worth",
+    "C": "Dangerous",
+    "D": "Temporary",
+    "correct": "B",
+    "explanation": "**Substantial** (önemli ölçüde/büyük) is used to describe changes or amounts. E.g., 'A substantial increase in profits.'"
+  },
+  {
+    "id": "iv-11",
+    "prompt": "Which word is an antonym (opposite) of **'SCARCE'**?",
+    "A": "Rare",
+    "B": "Abundant",
+    "C": "Limited",
+    "D": "Expensive",
+    "correct": "B",
+    "explanation": "**Scarce** means insufficient or rare. **Abundant** means existing in large quantities (plentiful)."
+  },
+  {
+    "id": "iv-12",
+    "prompt": "Choose the correct academic word: 'The study __________ the link between diet and health.'",
+    "A": "shows off",
+    "B": "demonstrates",
+    "C": "looks at",
+    "D": "points up",
+    "correct": "B",
+    "explanation": "**Demonstrates** (göstermek/kanıtlamak) is the formal academic verb suitable for essays and reports."
+  },
+  {
+    "id": "iv-13",
+    "prompt": "Select the best synonym for: **IMMINENT**",
+    "A": "Important",
+    "B": "About to happen",
+    "C": "Ancient",
+    "D": "Impossible",
+    "correct": "B",
+    "explanation": "**Imminent** (eli kulağında) refers to something that is about to happen very soon. E.g., 'An imminent danger'."
+  },
+  {
+    "id": "iv-14",
+    "prompt": "Which word means 'reasonable or probable'?",
+    "A": "Plausible",
+    "B": "Absurd",
+    "C": "Obscure",
+    "D": "Vast",
+    "correct": "A",
+    "explanation": "**Plausible** (akla yatkın/makul) means seeming reasonable or probable. It is often used in academic arguments."
+  },
+  {
+    "id": "iv-15",
+    "prompt": "What is the meaning of **DETERIORATE**?",
+    "A": "To improve significantly",
+    "B": "To become progressively worse",
+    "C": "To change location",
+    "D": "To analyze deeply",
+    "correct": "B",
+    "explanation": "**Deteriorate** (kötüleşmek) means to become worse over time. E.g., 'The patient's condition deteriorated rapidly.'"
+  }
+]
