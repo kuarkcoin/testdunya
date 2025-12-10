@@ -1,1 +1,92 @@
+[
+  {
+    "passageId": 1,
+    "title": "Passage 1: The Decline of Honeybees",
+    "text": "<p><strong>The Global Pollinator Crisis</strong><br/><br/>In recent years, the populations of pollinators, particularly honeybees, have been declining at an alarming rate worldwide. This phenomenon, known as Colony Collapse Disorder (CCD), was first identified in 2006 when beekeepers in the United States began reporting that 30-90% of their hives were dying during the winter. Since then, similar patterns have been observed in Europe and parts of Asia.</p><br/><p>Scientists have identified several potential causes for this decline. The primary suspect is the widespread use of neonicotinoids, a class of insecticides used to coat seeds. When plants grow, the chemical permeates the pollen and nectar, which bees then consume. Research indicates that these chemicals damage the bee's central nervous system, affecting their ability to navigate and return to the hive.</p><br/><p>Another significant factor is habitat loss. As urban areas expand and monoculture farming dominates the landscape, the diverse wildflowers that bees rely on for nutrition are disappearing. Without a varied diet, bees' immune systems weaken, making them more susceptible to parasites like the Varroa mite.</p><br/><p>The economic implications are staggering. According to the UN Food and Agriculture Organization, 71 of the 100 crop species that provide 90% of the world's food are pollinated by bees. Without them, the production of apples, almonds, coffee, and even cotton would plummet, leading to global food insecurity.</p>",
+    "questions": [
+      {
+        "id": "ir-p1-q1",
+        "prompt": "According to the text, what is the main effect of neonicotinoids on bees?",
+        "A": "It destroys their wings immediately.",
+        "B": "It damages their nervous system and navigation skills.",
+        "C": "It makes them aggressive towards other hives.",
+        "D": "It prevents them from producing honey.",
+        "correct": "B",
+        "explanation": "The text states: 'Research indicates that these chemicals damage the bee's **central nervous system**, affecting their ability to **navigate**.'"
+      },
+      {
+        "id": "ir-p1-q2",
+        "prompt": "Colony Collapse Disorder (CCD) was first discovered in Europe.",
+        "A": "TRUE",
+        "B": "FALSE",
+        "C": "NOT GIVEN",
+        "correct": "B",
+        "explanation": "The text says CCD was first identified in the **United States** in 2006, not Europe. Therefore, the statement is **FALSE**."
+      },
+      {
+        "id": "ir-p1-q3",
+        "prompt": "Bees prefer living in urban areas rather than rural farms.",
+        "A": "TRUE",
+        "B": "FALSE",
+        "C": "NOT GIVEN",
+        "correct": "C",
+        "explanation": "**NOT GIVEN**: The text discusses 'habitat loss' due to urban expansion, but it does **not** make a comparison about where bees *prefer* to live."
+      },
+      {
+        "id": "ir-p1-q4",
+        "prompt": "Which parasite is mentioned as a threat to bees with weak immune systems?",
+        "A": "The Black Widow",
+        "B": "The Varroa mite",
+        "C": "The Neonicotinoid bug",
+        "D": "The Colony virus",
+        "correct": "B",
+        "explanation": "The text mentions that bees become more susceptible to 'parasites like the **Varroa mite**'."
+      }
+    ]
+  },
+  {
+    "passageId": 2,
+    "title": "Passage 2: The History of Glass",
+    "text": "<p><strong>Origins of a Transparent Material</strong><br/><br/>Glass is one of the most versatile materials in human history, yet its origins remain somewhat shrouded in mystery. The Roman historian Pliny the Elder attributed the discovery of glass to Phoenician sailors. According to his account, the sailors set up a camp on a beach and used blocks of natron (a natural soda) to support their cooking pots. When the heat of the fire melted the natron and mixed it with the beach sand, a transparent liquid stream was formed—glass.</p><br/><p>While this story is charming, archaeological evidence suggests that true glass was likely first made in Mesopotamia (modern-day Iraq) or Egypt around 3500 BC. Initially, it was a luxury item used for beads and small vessels, accessible only to the wealthy elite. It wasn't until the invention of the blowpipe by Syrian craftsmen in the 1st century BC that glass production became faster and cheaper, allowing it to become a common household material.</p><br/><p>In modern times, glass has evolved significantly. We now have tempered glass for safety, fiber optic glass for internet cables, and even 'smart glass' that can change its opacity with electricity. Despite these advancements, the core ingredients—silica sand, soda ash, and limestone—remain remarkably similar to those used thousands of years ago.</p>",
+    "questions": [
+      {
+        "id": "ir-p2-q1",
+        "prompt": "Who is credited with the invention of the blowpipe?",
+        "A": "The Romans",
+        "B": "Phoenician sailors",
+        "C": "Syrian craftsmen",
+        "D": "Egyptian priests",
+        "correct": "C",
+        "explanation": "The text explicitly states: 'It wasn't until the invention of the blowpipe by **Syrian craftsmen** in the 1st century BC...'"
+      },
+      {
+        "id": "ir-p2-q2",
+        "prompt": "Pliny the Elder's story about Phoenician sailors is fully confirmed by archaeological evidence.",
+        "A": "TRUE",
+        "B": "FALSE",
+        "C": "NOT GIVEN",
+        "correct": "B",
+        "explanation": "The text says 'While this story is charming, archaeological evidence suggests that true glass was likely first made in **Mesopotamia**'. It contradicts Pliny's story. So, it is **FALSE**."
+      },
+      {
+        "id": "ir-p2-q3",
+        "prompt": "Modern smart glass uses a completely different set of core ingredients than ancient glass.",
+        "A": "TRUE",
+        "B": "FALSE",
+        "C": "NOT GIVEN",
+        "correct": "B",
+        "explanation": "The text states: 'the core ingredients... remain **remarkably similar** to those used thousands of years ago.' This contradicts the statement. Thus, **FALSE**."
+      },
+      {
+        "id": "ir-p2-q4",
+        "prompt": "Glass was originally considered a cheap material for the common people.",
+        "A": "TRUE",
+        "B": "FALSE",
+        "C": "NOT GIVEN",
+        "correct": "B",
+        "explanation": "The text says: 'Initially, it was a **luxury item**... accessible only to the **wealthy elite**.' So the statement that it was cheap/common is **FALSE**."
+      }
+    ]
+  }
+]
  
