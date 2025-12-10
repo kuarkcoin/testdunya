@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 
@@ -26,6 +26,26 @@ interface Question {
   explanation?: string;
 }
 
+// --- STATIC LABELS (Performans için dışarı alındı) ---
+const getLabels = (isGlobal: boolean) => ({
+  loading: isGlobal ? "Loading Test..." : "Test Hazırlanıyor...",
+  errorTitle: isGlobal ? "Error Occurred" : "Bir Sorun Oluştu",
+  homeButton: isGlobal ? "Back to Home" : "Ana Sayfaya Dön",
+  finish: isGlobal ? "Finish Test" : "Bitir",
+  completeTest: isGlobal ? "Complete Test" : "Testi Tamamla",
+  question: isGlobal ? "QUESTION" : "SORU",
+  resultTitle: isGlobal ? "Test Result" : "Test Sonucu",
+  correct: isGlobal ? "Correct" : "Doğru",
+  total: isGlobal ? "Total" : "Toplam",
+  score: isGlobal ? "Score" : "Başarı",
+  backList: isGlobal ? "Back to List" : "Listeye Dön",
+  seeMistakes: isGlobal ? "See My Mistakes" : "Hatalarımı Gör",
+  analysis: isGlobal ? "Detailed Analysis" : "Detaylı Analiz",
+  explanation: isGlobal ? "Explanation:" : "Açıklama:",
+  yourChoice: isGlobal ? "YOUR CHOICE" : "SEÇİMİN",
+  correctBadge: isGlobal ? "CORRECT" : "DOĞRU"
+});
+
 // --- HELPERS ---
 function formatTime(seconds: number): string {
   const m = Math.floor(seconds / 60);
@@ -38,8 +58,8 @@ function formatText(text: string) {
   if (!text) return null;
 
   // 1. Reading HTML İçeriği
-  if (text.includes('<div') || text.includes('<p>') || text.includes('custom-scrollbar')) {
-     return <div dangerouslySetInnerHTML={{ __html: text }} />;
+  if (text.includes('<div') || text.includes('<p>') || text.includes('custom-reading-content')) {
+     return <div className="prose prose-slate max-w-none" dangerouslySetInnerHTML={{ __html: text }} />;
   }
 
   // 2. Normal Metin (**bold** badge'leri)
@@ -57,9 +77,7 @@ function formatText(text: string) {
   );
 }
 
-// --- MEMOIZED QUESTION CARD (SCROLL SORUNUNU ÇÖZEN KAHRAMAN) ---
-// Bu bileşen, sadece kendi props'ları değişirse render olur.
-// Üstteki parent state değişse bile burası sabit kalır, böylece scroll resetlenmez.
+// --- MEMOIZED QUESTION CARD ---
 const QuestionCard = React.memo(({ q, idx, answer, onAnswer, labels }: { 
   q: Question, 
   idx: number, 
@@ -116,27 +134,8 @@ export default function QuizPage() {
   const params = useParams();
   const testId = params?.testId as string || params?.id as string;
 
-  // --- DIL AYARLARI (LOCALIZATION) ---
   const isGlobal = testId?.includes('ielts') || false;
-  
-  const LABELS = {
-    loading: isGlobal ? "Loading Test..." : "Test Hazırlanıyor...",
-    errorTitle: isGlobal ? "Error Occurred" : "Bir Sorun Oluştu",
-    homeButton: isGlobal ? "Back to Home" : "Ana Sayfaya Dön",
-    finish: isGlobal ? "Finish" : "Bitir",
-    completeTest: isGlobal ? "Complete Test" : "Testi Tamamla",
-    question: isGlobal ? "QUESTION" : "SORU",
-    resultTitle: isGlobal ? "Test Result" : "Test Sonucu",
-    correct: isGlobal ? "Correct" : "Doğru",
-    total: isGlobal ? "Total" : "Toplam",
-    score: isGlobal ? "Score" : "Başarı",
-    backList: isGlobal ? "Back to List" : "Listeye Dön",
-    seeMistakes: isGlobal ? "See My Mistakes" : "Hatalarımı Gör",
-    analysis: isGlobal ? "Detailed Analysis" : "Detaylı Analiz",
-    explanation: isGlobal ? "Explanation:" : "Açıklama:",
-    yourChoice: isGlobal ? "YOUR CHOICE" : "SEÇİMİN",
-    correctBadge: isGlobal ? "CORRECT" : "DOĞRU"
-  };
+  const labels = getLabels(isGlobal);
 
   const [questions, setQuestions] = useState<Question[]>([]);
   const [answers, setAnswers] = useState<Record<string, string>>({});
@@ -145,8 +144,9 @@ export default function QuizPage() {
   const [score, setScore] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+  const [testTitle, setTestTitle] = useState('');
 
-  // 1) LOAD DATA & NORMALIZE
+  // 1) LOAD DATA & SEO SETTINGS
   useEffect(() => {
     if (!testId) return;
     setLoading(true);
@@ -160,20 +160,35 @@ export default function QuizPage() {
       })
       .then(rawdata => {
         let normalizedQuestions: Question[] = [];
+        let fetchedTitle = testId.replace(/-/g, ' ').toUpperCase();
+
+        // --- SEO AYARLARI (CLIENT SIDE) ---
+        // Sayfa başlığını dinamik olarak güncelliyoruz
+        document.title = `${fetchedTitle} | TestDünya Online Exam Platform`;
+        
+        // Meta description güncelleme (Varsa günceller, yoksa console hatası vermez)
+        const metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc) {
+          metaDesc.setAttribute('content', `Solve ${fetchedTitle} questions online for free. Detailed analysis and instant results.`);
+        }
+        
+        setTestTitle(fetchedTitle);
 
         // --- SENARYO A: IELTS READING ---
         if (testId.includes('reading') && Array.isArray(rawdata) && rawdata[0].passageId) {
             rawdata.forEach((passage: any) => {
                 if (Array.isArray(passage.questions)) {
                     passage.questions.forEach((q: any, idx: number) => {
+                        // SCROLL FIX: h-80 ve overflow-y-auto KALDIRILDI.
+                        // Metin artık doğal akışında (h-auto) görünecek.
                         const combinedPrompt = `
-                            <div class="mb-6 p-4 bg-white border-l-4 border-sky-500 shadow-sm rounded text-slate-700 text-sm leading-7 h-80 overflow-y-auto font-serif custom-scrollbar" style="overscroll-behavior: contain;">
-                              <h4 class="font-bold text-sky-900 mb-2 sticky top-0 bg-white pb-2 border-b border-slate-100 z-10">
+                            <div class="mb-8 p-6 bg-white border-l-4 border-sky-500 shadow-sm rounded-r-xl text-slate-700 text-base leading-relaxed font-serif custom-reading-content">
+                              <h3 class="font-bold text-sky-900 text-xl mb-4 border-b border-sky-100 pb-2">
                                 ${passage.title}
-                              </h4>
+                              </h3>
                               ${passage.text}
                             </div>
-                            <div class="font-bold text-slate-900 text-lg mt-4 pt-2">
+                            <div class="font-bold text-slate-900 text-lg mt-6 pt-4 border-t border-slate-100">
                                ${q.prompt}
                             </div>
                         `;
@@ -251,11 +266,12 @@ export default function QuizPage() {
             
             // --- TIME LOGIC (SÜRE AYARI) ---
             if (testId.includes('reading')) {
-                // Reading testi ise sabit 20 Dakika (1200 sn)
+                // Reading için 20 Dakika (1200sn)
                 setTimeLeft(1200);
             } else {
-                // Diğerleri soru başı 1 dakika (60 sn)
-                setTimeLeft(normalizedQuestions.length * 60);
+                // Diğerleri soru başı 1 dakika (Minimum 10 dk)
+                const calcTime = normalizedQuestions.length * 60;
+                setTimeLeft(calcTime < 600 ? 600 : calcTime);
             }
         }
         setLoading(false);
@@ -275,8 +291,8 @@ export default function QuizPage() {
     return () => clearInterval(timerId);
   }, [timeLeft, showResult, loading]);
 
-  // 3) HANDLER FOR ANSWERS (MEMOIZED TO PREVENT RERENDER)
-  const handleAnswerChange = React.useCallback((qId: string, val: string) => {
+  // 3) HANDLER FOR ANSWERS
+  const handleAnswerChange = useCallback((qId: string, val: string) => {
     setAnswers(prev => ({ ...prev, [qId]: val }));
   }, []);
 
@@ -324,7 +340,7 @@ export default function QuizPage() {
   if (loading) return (
       <div className="min-h-screen flex flex-col items-center justify-center text-slate-500">
           <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-b-4 border-indigo-600 mb-4"></div>
-          <p className="font-bold animate-pulse">{LABELS.loading}</p>
+          <p className="font-bold animate-pulse">{labels.loading}</p>
       </div>
   );
 
@@ -332,10 +348,10 @@ export default function QuizPage() {
     <div className="min-h-screen flex flex-col items-center justify-center p-4">
         <div className="bg-white p-8 rounded-2xl border border-red-100 shadow-xl text-center max-w-md">
             <div className="text-4xl mb-4">⚠️</div>
-            <h2 className="font-bold text-xl text-slate-800 mb-2">{LABELS.errorTitle}</h2>
+            <h2 className="font-bold text-xl text-slate-800 mb-2">{labels.errorTitle}</h2>
             <p className="text-red-500 mb-6">{error}</p>
             <Link href="/" className="inline-block px-6 py-3 bg-slate-900 text-white rounded-xl font-bold hover:bg-slate-800 transition">
-                {LABELS.homeButton}
+                {labels.homeButton}
             </Link>
         </div>
     </div>
@@ -352,46 +368,45 @@ export default function QuizPage() {
           {/* SKOR KARTI */}
           <div className="bg-white p-8 rounded-3xl shadow-xl border border-slate-200 text-center relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-indigo-500 to-purple-600" />
-            <h1 className="text-3xl font-black text-slate-800 mb-6">{LABELS.resultTitle}</h1>
+            <h1 className="text-3xl font-black text-slate-800 mb-6">{labels.resultTitle}</h1>
 
             <div className="flex justify-center items-center gap-4 sm:gap-12 mb-8">
               <div className="flex flex-col">
                 <span className="text-4xl font-black text-emerald-600">{score}</span>
-                <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">{LABELS.correct}</span>
+                <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">{labels.correct}</span>
               </div>
               <div className="w-px h-12 bg-slate-200" />
               <div className="flex flex-col">
                 <span className="text-4xl font-black text-slate-700">{total}</span>
-                <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">{LABELS.total}</span>
+                <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">{labels.total}</span>
               </div>
               <div className="w-px h-12 bg-slate-200" />
               <div className="flex flex-col">
                 <span className={`text-4xl font-black ${percentage >= 70 ? 'text-emerald-500' : 'text-orange-500'}`}>
                   %{percentage}
                 </span>
-                <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">{LABELS.score}</span>
+                <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">{labels.score}</span>
               </div>
             </div>
 
             <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <Link href="/" className="px-6 py-3 bg-slate-100 text-slate-700 font-bold rounded-xl hover:bg-slate-200 transition-colors">
-                  {LABELS.backList}
+                  {labels.backList}
                 </Link>
                 <Link href="/mistakes" className="px-6 py-3 bg-rose-50 text-rose-600 border border-rose-200 font-bold rounded-xl hover:bg-rose-100 transition-colors flex items-center justify-center gap-2">
-                  <span>📕</span> {LABELS.seeMistakes}
+                  <span>📕</span> {labels.seeMistakes}
                 </Link>
             </div>
           </div>
 
           {/* DETAYLI ANALİZ */}
           <div className="space-y-6">
-            <h2 className="text-xl font-bold text-slate-700 ml-2 border-l-4 border-indigo-500 pl-3">{LABELS.analysis}</h2>
+            <h2 className="text-xl font-bold text-slate-700 ml-2 border-l-4 border-indigo-500 pl-3">{labels.analysis}</h2>
 
             {questions.map((q, idx) => {
               const userAnswerId = answers[q.id];
               const correctId = q.answer; 
               const isCorrect = userAnswerId === correctId;
-              const isUserAnswered = !!userAnswerId;
 
               let cardBorder = isCorrect ? 'border-emerald-200' : 'border-rose-200';
               let cardBg = isCorrect ? 'bg-emerald-50/30' : 'bg-white';
@@ -426,8 +441,8 @@ export default function QuizPage() {
                                 <span className="font-bold opacity-50 text-sm">{c.id})</span>
                                 <span>{c.text}</span>
                               </div>
-                              {isTheCorrectAnswer && <span className="text-[10px] bg-emerald-200 text-emerald-800 px-2 py-0.5 rounded-full font-bold">{LABELS.correctBadge}</span>}
-                              {isSelected && !isTheCorrectAnswer && <span className="text-[10px] bg-rose-200 text-rose-800 px-2 py-0.5 rounded-full font-bold">{LABELS.yourChoice}</span>}
+                              {isTheCorrectAnswer && <span className="text-[10px] bg-emerald-200 text-emerald-800 px-2 py-0.5 rounded-full font-bold">{labels.correctBadge}</span>}
+                              {isSelected && !isTheCorrectAnswer && <span className="text-[10px] bg-rose-200 text-rose-800 px-2 py-0.5 rounded-full font-bold">{labels.yourChoice}</span>}
                             </div>
                           );
                         })}
@@ -438,7 +453,7 @@ export default function QuizPage() {
                         <div className="mt-5 p-4 bg-indigo-50 rounded-xl border border-indigo-100 text-sm text-indigo-900 flex gap-3 items-start animate-in fade-in">
                           <span className="text-xl">💡</span>
                           <div>
-                            <span className="font-bold block mb-1 text-indigo-700">{LABELS.explanation}</span>
+                            <span className="font-bold block mb-1 text-indigo-700">{labels.explanation}</span>
                             <span className="leading-relaxed opacity-90">{formatText(q.explanation)}</span>
                           </div>
                         </div>
@@ -471,27 +486,27 @@ export default function QuizPage() {
             </div>
 
             <button onClick={handleSubmit} className="text-sm font-bold text-white bg-slate-900 px-6 py-2.5 rounded-xl hover:bg-slate-800 shadow-md hover:shadow-lg transition-all hover:-translate-y-0.5">
-              {LABELS.finish}
+              {labels.finish}
             </button>
         </div>
       </div>
 
-      {/* SORULAR (Render with Memoized Component) */}
+      {/* SORULAR */}
       <div className="max-w-3xl mx-auto px-4 space-y-8">
         {questions.map((q, idx) => (
            <QuestionCard 
-             key={q.id} // Stable ID is crucial
+             key={q.id} 
              q={q}
              idx={idx}
              answer={answers[q.id] || ''}
              onAnswer={handleAnswerChange}
-             labels={LABELS}
+             labels={labels}
            />
         ))}
 
         <div className="pt-8 pb-12 flex justify-center">
             <button onClick={handleSubmit} className="w-full max-w-md py-4 rounded-2xl text-white text-xl font-bold shadow-xl transition-all transform active:scale-[0.99] bg-indigo-600 hover:bg-indigo-700 hover:shadow-indigo-900/30 flex items-center justify-center gap-2">
-               <span>{LABELS.completeTest}</span>
+               <span>{labels.completeTest}</span>
                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
             </button>
         </div>
