@@ -41,9 +41,12 @@ const Stethoscope = (props: React.SVGProps<SVGSVGElement>) => (
     <path d="M11 2v2" /><path d="M5 2v2" /><path d="M5 5a2 2 0 0 0 4 0V4a2 2 0 0 0-4 0" /><path d="M8 9a3 3 0 0 0 6 0v-1a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v1a3 3 0 0 0 3 3h0a6 6 0 0 1 6 6v3" /><circle cx="20" cy="19" r="3" />
   </svg>
 );
-// --- YENİ GLOBE İKONU (IELTS İÇİN) ---
 const Globe = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+);
+// --- YENİ EKLENEN MIC (SPEAKING) İKONU ---
+const Mic = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
 );
 
 // --- SINAV AYARLARI ---
@@ -98,7 +101,7 @@ const examConfig = [
   }
 ];
 
-// --- IELTS MODÜLLERİ (ÖZEL YAPILANDIRMA) ---
+// --- IELTS MODÜLLERİ (SPEAKING EKLENDİ) ---
 const ieltsModules = [
   {
     id: 'ielts-reading',
@@ -135,6 +138,15 @@ const ieltsModules = [
     color: 'text-purple-600',
     bg: 'bg-purple-50',
     border: 'border-purple-200'
+  },
+  {
+    id: 'ielts-speaking', // BURASI ÖZEL ID
+    title: 'Speaking',
+    desc: 'Cue Card Simulator',
+    icon: <Mic className="w-6 h-6" />,
+    color: 'text-indigo-600',
+    bg: 'bg-indigo-50',
+    border: 'border-indigo-200'
   }
 ];
 
@@ -193,7 +205,7 @@ export default function HomePage() {
       {/* --- MAIN CONTENT AREA --- */}
       <div id="exams" className="max-w-6xl mx-auto px-4 -mt-20 space-y-10 pb-20 relative z-10">
         
-        {/* --- YENİ IELTS GLOBAL SECTION --- */}
+        {/* --- IELTS GLOBAL SECTION --- */}
         <section className="bg-white rounded-2xl shadow-xl shadow-sky-200/40 overflow-hidden border-2 border-sky-100 relative group">
            <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-sky-400 to-blue-600"></div>
            
@@ -213,26 +225,32 @@ export default function HomePage() {
               </div>
            </div>
 
-           {/* IELTS Modules Grid */}
-           <div className="p-6 bg-slate-50/50 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              {ieltsModules.map((module) => (
-                <Link 
-                  key={module.id} 
-                  href={`/test/${module.id}`} 
-                  className={`flex flex-col items-center justify-center p-6 rounded-xl border-2 transition-all hover:-translate-y-1 hover:shadow-lg ${module.bg} ${module.border} ${module.color} bg-white`}
-                >
-                  <div className={`mb-3 p-3 rounded-full bg-white shadow-sm ring-1 ring-black/5 ${module.color}`}>
-                     {module.icon}
-                  </div>
-                  <h3 className="font-bold text-lg text-slate-900">{module.title}</h3>
-                  <p className="text-xs font-semibold opacity-70 uppercase tracking-wide mt-1">{module.desc}</p>
-                </Link>
-              ))}
+           {/* IELTS Modules Grid (GÜNCELLENDİ) */}
+           {/* Speaking için 5'li grid sistemine geçildi (lg:grid-cols-5) */}
+           <div className="p-6 bg-slate-50/50 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+              {ieltsModules.map((module) => {
+                // Link Mantığı: Speaking ise özel link, değilse /test/[id]
+                const linkHref = module.id === 'ielts-speaking' ? '/ielts/speaking' : `/test/${module.id}`;
+
+                return (
+                  <Link 
+                    key={module.id} 
+                    href={linkHref} 
+                    className={`flex flex-col items-center justify-center p-6 rounded-xl border-2 transition-all hover:-translate-y-1 hover:shadow-lg ${module.bg} ${module.border} ${module.color} bg-white`}
+                  >
+                    <div className={`mb-3 p-3 rounded-full bg-white shadow-sm ring-1 ring-black/5 ${module.color}`}>
+                       {module.icon}
+                    </div>
+                    <h3 className="font-bold text-lg text-slate-900">{module.title}</h3>
+                    <p className="text-xs font-semibold opacity-70 uppercase tracking-wide mt-1">{module.desc}</p>
+                  </Link>
+                );
+              })}
            </div>
         </section>
 
 
-        {/* --- MEVCUT ULUSAL SINAVLAR (YKS, KPSS, TUS, DUS) --- */}
+        {/* --- ULUSAL SINAVLAR (YKS, KPSS, TUS, DUS) --- */}
         {examConfig.map((exam) => (
           <section 
             key={exam.id} 
@@ -389,6 +407,17 @@ export default function HomePage() {
               <li><Link href="/iletisim" className="hover:text-white transition-colors">İletişim</Link></li>
             </ul>
           </div>
+        </div>
+        
+        {/* FOOTER CTA */}
+        <div className="flex justify-center border-t border-slate-800 pt-8 mt-8">
+          <Link 
+            href="/iletisim" 
+            className="flex items-center gap-3 bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-xl shadow-lg transition-all hover:-translate-y-1 hover:shadow-indigo-900/50 font-bold text-lg"
+          >
+            <span className="text-2xl">💬</span>
+            <span>Bizimle İletişime Geçin</span>
+          </Link>
         </div>
       </footer>
       
