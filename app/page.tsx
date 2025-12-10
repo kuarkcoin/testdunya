@@ -36,11 +36,14 @@ const Tooth = (props: React.SVGProps<SVGSVGElement>) => (
     <path d="M9 22c0-2 1-4 3-4s3 2 3 4" />
   </svg>
 );
-// --- YENİ STETOSKOP İKONU ---
 const Stethoscope = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
     <path d="M11 2v2" /><path d="M5 2v2" /><path d="M5 5a2 2 0 0 0 4 0V4a2 2 0 0 0-4 0" /><path d="M8 9a3 3 0 0 0 6 0v-1a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v1a3 3 0 0 0 3 3h0a6 6 0 0 1 6 6v3" /><circle cx="20" cy="19" r="3" />
   </svg>
+);
+// --- YENİ GLOBE İKONU (IELTS İÇİN) ---
+const Globe = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
 );
 
 // --- SINAV AYARLARI ---
@@ -76,7 +79,7 @@ const examConfig = [
     count: 35, 
     activeLimit: 35, 
     desc: 'TUS için Temel ve Klinik Bilimler vaka soruları.',
-    icon: <Stethoscope className="w-6 h-6 text-white" />, // BURASI GÜNCELLENDİ
+    icon: <Stethoscope className="w-6 h-6 text-white" />,
     gradient: 'from-emerald-500 to-teal-600',
     border: 'border-emerald-100',
     slug: 'tus-tip'
@@ -95,6 +98,46 @@ const examConfig = [
   }
 ];
 
+// --- IELTS MODÜLLERİ (ÖZEL YAPILANDIRMA) ---
+const ieltsModules = [
+  {
+    id: 'ielts-reading',
+    title: 'Reading',
+    desc: 'Academic Passages',
+    icon: <Book className="w-6 h-6" />,
+    color: 'text-sky-600',
+    bg: 'bg-sky-50',
+    border: 'border-sky-200'
+  },
+  {
+    id: 'ielts-writing',
+    title: 'Writing',
+    desc: 'Logic & Templates',
+    icon: <PenTool className="w-6 h-6" />,
+    color: 'text-amber-600',
+    bg: 'bg-amber-50',
+    border: 'border-amber-200'
+  },
+  {
+    id: 'ielts-vocab',
+    title: 'Vocabulary',
+    desc: 'Band 7+ Words',
+    icon: <Zap className="w-6 h-6" />,
+    color: 'text-rose-600',
+    bg: 'bg-rose-50',
+    border: 'border-rose-200'
+  },
+  {
+    id: 'ielts-grammar',
+    title: 'Grammar',
+    desc: 'Adv. Structures',
+    icon: <Brain className="w-6 h-6" />,
+    color: 'text-purple-600',
+    bg: 'bg-purple-50',
+    border: 'border-purple-200'
+  }
+];
+
 export default function HomePage() {
   const [completed, setCompleted] = useState<{ [key: string]: number[] }>({});
 
@@ -107,26 +150,25 @@ export default function HomePage() {
 
   return (
     <main className="min-h-screen bg-slate-50 font-sans text-slate-800">
-      
+
       {/* --- HERO SECTION --- */}
-      <div className="bg-gradient-to-r from-slate-900 via-indigo-900 to-slate-900 text-white pb-20 pt-10 px-4 mb-8">
+      <div className="bg-gradient-to-r from-slate-900 via-indigo-900 to-slate-900 text-white pb-24 pt-10 px-4 mb-8">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
-          
+
           <div className="space-y-4 md:w-2/3">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-xs font-semibold text-indigo-200">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
               </span>
-              Online Sınav Merkezi v2.1
+              TestDünya v3.0 • Şimdi IELTS Eklendi
             </div>
-            
+
             <h1 className="text-3xl md:text-5xl font-black tracking-tight leading-tight">
               TestDünya <span className="text-indigo-400">Sınav Platformu</span>
             </h1>
             <p className="text-slate-300 text-base md:text-lg max-w-xl leading-relaxed">
-              YKS, KPSS, TUS ve <strong>DUS</strong> sınavlarına <strong>yapay zeka destekli özgün sorularla</strong>, ücretsiz ve üyeliksiz hazırlanın. 
-              Hatalarınızı analiz edin, netlerinizi artırın.
+              YKS, KPSS, TUS, DUS ve şimdi <strong>IELTS Academic</strong> sınavlarına yapay zeka destekli özgün sorularla hazırlanın.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-2">
@@ -134,7 +176,7 @@ export default function HomePage() {
                  <span>📕</span> Hatalarım
                </Link>
                <button onClick={() => document.getElementById('exams')?.scrollIntoView({behavior: 'smooth'})} className="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-bold transition-all shadow-lg shadow-indigo-900/50">
-                 Testleri İncele
+                 Tüm Testler
                </button>
             </div>
           </div>
@@ -148,8 +190,49 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* --- SINAV LİSTESİ --- */}
-      <div id="exams" className="max-w-6xl mx-auto px-4 -mt-16 space-y-8 pb-20 relative z-10">
+      {/* --- MAIN CONTENT AREA --- */}
+      <div id="exams" className="max-w-6xl mx-auto px-4 -mt-20 space-y-10 pb-20 relative z-10">
+        
+        {/* --- YENİ IELTS GLOBAL SECTION --- */}
+        <section className="bg-white rounded-2xl shadow-xl shadow-sky-200/40 overflow-hidden border-2 border-sky-100 relative group">
+           <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-sky-400 to-blue-600"></div>
+           
+           {/* Header */}
+           <div className="p-6 border-b border-slate-100 flex flex-col md:flex-row md:items-center justify-between gap-4">
+              <div className="flex items-center gap-4">
+                 <div className="p-3 bg-sky-100 text-sky-600 rounded-xl">
+                    <Globe className="w-8 h-8" />
+                 </div>
+                 <div>
+                    <h2 className="text-2xl font-black text-slate-800 tracking-tight">IELTS ACADEMIC</h2>
+                    <p className="text-slate-500 text-sm">Global English Preparation • Band 7.0+</p>
+                 </div>
+              </div>
+              <div className="hidden md:block">
+                 <span className="px-4 py-1.5 bg-sky-50 text-sky-700 text-xs font-bold rounded-full border border-sky-100 uppercase tracking-wider">New Module</span>
+              </div>
+           </div>
+
+           {/* IELTS Modules Grid */}
+           <div className="p-6 bg-slate-50/50 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {ieltsModules.map((module) => (
+                <Link 
+                  key={module.id} 
+                  href={`/test/${module.id}`} 
+                  className={`flex flex-col items-center justify-center p-6 rounded-xl border-2 transition-all hover:-translate-y-1 hover:shadow-lg ${module.bg} ${module.border} ${module.color} bg-white`}
+                >
+                  <div className={`mb-3 p-3 rounded-full bg-white shadow-sm ring-1 ring-black/5 ${module.color}`}>
+                     {module.icon}
+                  </div>
+                  <h3 className="font-bold text-lg text-slate-900">{module.title}</h3>
+                  <p className="text-xs font-semibold opacity-70 uppercase tracking-wide mt-1">{module.desc}</p>
+                </Link>
+              ))}
+           </div>
+        </section>
+
+
+        {/* --- MEVCUT ULUSAL SINAVLAR (YKS, KPSS, TUS, DUS) --- */}
         {examConfig.map((exam) => (
           <section 
             key={exam.id} 
@@ -221,13 +304,9 @@ export default function HomePage() {
                         <span className="text-xs font-bold opacity-40">
                           {num}. Deneme
                         </span>
-                        <div className="absolute inset-0 bg-white/60 flex items-center justify-center opacity-0 group-hover/lock:opacity-100 transition-opacity">
-                            <span className="text-[10px] font-bold text-slate-500 bg-white px-2 py-1 rounded-full shadow-sm border border-slate-200">Yakında</span>
-                        </div>
                       </div>
                     );
                   }
-
                 })}
               </div>
             </div>
@@ -242,7 +321,7 @@ export default function HomePage() {
             <h2 className="text-3xl font-black text-slate-800 mb-4">Neden TestDünya?</h2>
             <p className="text-slate-500 max-w-2xl mx-auto">
               Sınavlara hazırlanırken ihtiyacınız olan her şey tek bir platformda.
-              Ücretsiz YKS, KPSS, TUS ve DUS denemeleri ile başarıya bir adım daha yaklaşın.
+              YKS, KPSS, TUS, DUS ve şimdi <strong>IELTS</strong> ile dünya standartlarında ölçme ve değerlendirme.
             </p>
           </div>
 
@@ -253,25 +332,25 @@ export default function HomePage() {
               </div>
               <h3 className="font-bold text-slate-800 mb-2">Hızlı ve Modern Arayüz</h3>
               <p className="text-sm text-slate-600 leading-relaxed">
-                Kullanıcı dostu arayüzümüz ile dikkatiniz dağılmadan sadece sorulara odaklanın.
+                Dikkat dağıtıcı reklamlardan arındırılmış, sadece başarı odaklı tasarım.
               </p>
             </div>
             <div className="p-6 bg-emerald-50 rounded-2xl border border-emerald-100 text-center">
               <div className="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Target className="w-6 h-6" />
               </div>
-              <h3 className="font-bold text-slate-800 mb-2">Hata Analizi</h3>
+              <h3 className="font-bold text-slate-800 mb-2">Akıllı Analiz</h3>
               <p className="text-sm text-slate-600 leading-relaxed">
-                Yanlış yaptığınız sorular otomatik olarak "Hatalarım" bölümüne kaydedilir.
+                Yanlış yaptığınız sorular "Hatalarım" bölümünde birikir, tekrar etmeniz için saklanır.
               </p>
             </div>
             <div className="p-6 bg-orange-50 rounded-2xl border border-orange-100 text-center">
               <div className="w-12 h-12 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Book className="w-6 h-6" />
               </div>
-              <h3 className="font-bold text-slate-800 mb-2">Geniş Soru Havuzu</h3>
+              <h3 className="font-bold text-slate-800 mb-2">Global Standartlar</h3>
               <p className="text-sm text-slate-600 leading-relaxed">
-                ÖSYM müfredatına uygun YKS, KPSS, TUS ve DUS için hazırlanmış <strong>özgün denemeler.</strong>
+                Türkiye'nin ulusal sınavlarının yanında artık global geçerliliği olan IELTS sınavlarına da hazırlanın.
               </p>
             </div>
           </div>
@@ -287,52 +366,36 @@ export default function HomePage() {
             </h4>
             <p className="leading-relaxed mb-4 max-w-sm">
               Türkiye'nin en kapsamlı ücretsiz online sınav hazırlık platformu. 
-              TYT, AYT, KPSS, TUS ve <strong>DUS (Diş Hekimliği)</strong> sınavlarına hazırlanan öğrenciler için 
-              özenle hazırlanmış <strong>özgün deneme sınavları.</strong>
+              TYT, AYT, KPSS, TUS, DUS ve <strong>IELTS</strong> sınavlarına hazırlanan öğrenciler için 
+              özenle hazırlanmış özgün deneme sınavları.
             </p>
-            <p className="text-xs opacity-50">&copy; 2025 TestDünya. Tüm hakları saklıdır. <span className="mx-2">•</span> <Link href="/gizlilik" className="hover:text-white hover:underline">Gizlilik</Link></p>
+            <p className="text-xs opacity-50">&copy; 2025 TestDünya. Tüm hakları saklıdır.</p>
           </div>
-          
+
           <div>
             <h5 className="text-white font-bold mb-4">Sınavlar</h5>
             <ul className="space-y-2">
-              <li><Link href="#exams" className="hover:text-white transition-colors">YKS (TYT-AYT) Denemeleri</Link></li>
-              <li><Link href="#exams" className="hover:text-white transition-colors">KPSS Genel Kültür Denemeleri</Link></li>
-              <li><Link href="#exams" className="hover:text-white transition-colors">TUS Klinik ve Temel Sorular</Link></li>
+              <li><Link href="#exams" className="hover:text-white transition-colors">IELTS Academic</Link></li>
+              <li><Link href="#exams" className="hover:text-white transition-colors">YKS (TYT-AYT)</Link></li>
+              <li><Link href="#exams" className="hover:text-white transition-colors">TUS Denemeleri</Link></li>
               <li><Link href="#exams" className="hover:text-white transition-colors">DUS Denemeleri</Link></li>
-              <li><Link href="/mistakes" className="hover:text-white transition-colors">Hata Analizi</Link></li>
             </ul>
           </div>
 
           <div>
-            <h5 className="text-white font-bold mb-4">Popüler Aramalar</h5>
+            <h5 className="text-white font-bold mb-4">Hızlı Bağlantılar</h5>
             <ul className="space-y-2 text-xs">
-              <li>Online Deneme Çöz</li>
-              <li>Ücretsiz YKS Testleri</li>
-              <li>KPSS Tarih Denemeleri</li>
-              <li>Tıpta Uzmanlık Sınavı</li>
-              <li>Diş Hekimliği Denemeleri</li>
+              <li><Link href="/mistakes" className="hover:text-white transition-colors">Hata Analizi</Link></li>
+              <li><Link href="/iletisim" className="hover:text-white transition-colors">İletişim</Link></li>
             </ul>
           </div>
         </div>
-
-        {/* --- YENİ EKLENEN SABİT İLETİŞİM BUTONU (FOOTER İÇİNDE) --- */}
-        <div className="flex justify-center border-t border-slate-800 pt-8 mt-8">
-          <Link 
-            href="/iletisim" 
-            className="flex items-center gap-3 bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-xl shadow-lg transition-all hover:-translate-y-1 hover:shadow-indigo-900/50 font-bold text-lg"
-          >
-            <span className="text-2xl">💬</span>
-            <span>Bizimle İletişime Geçin</span>
-          </Link>
-        </div>
       </footer>
-
-      {/* --- YUKARI ÇIK BUTONU --- */}
+      
+      {/* --- YUKARI ÇIK --- */}
       <button 
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         className="fixed bottom-6 right-6 z-[999] bg-indigo-600 text-white p-3 rounded-full shadow-xl hover:bg-indigo-700 transition-all border-2 border-white"
-        aria-label="Yukarı Çık"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="m18 15-6-6-6 6"/>
