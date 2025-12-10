@@ -1,1 +1,302 @@
- 
+ [
+  {
+    "id": "ig-1",
+    "prompt": "By the time the police arrived, the thieves __________ the scene.",
+    "A": "fled",
+    "B": "have fled",
+    "C": "had fled",
+    "D": "were fleeing",
+    "correct": "C",
+    "explanation": "**Past Perfect (had + V3)** is used to describe an action that happened *before* another action in the past."
+  },
+  {
+    "id": "ig-2",
+    "prompt": "Unless the government __________ immediate action, the pollution levels will rise.",
+    "A": "takes",
+    "B": "will take",
+    "C": "took",
+    "D": "doesn't take",
+    "correct": "A",
+    "explanation": "In First Conditional with **'Unless'**, use Present Simple. Never use 'will' or negative forms immediately after 'Unless'."
+  },
+  {
+    "id": "ig-3",
+    "prompt": "First, the tea leaves __________ by hand.",
+    "A": "are picking",
+    "B": "picked",
+    "C": "are picked",
+    "D": "have picked",
+    "correct": "C",
+    "explanation": "For describing processes (Task 1), use **Present Passive (are + V3)** because the focus is on the object."
+  },
+  {
+    "id": "ig-4",
+    "prompt": "If I __________ about the meeting, I would have attended.",
+    "A": "know",
+    "B": "knew",
+    "C": "had known",
+    "D": "have known",
+    "correct": "C",
+    "explanation": "**Third Conditional** (Hypothetical past): If + Past Perfect, ... would have + V3."
+  },
+  {
+    "id": "ig-5",
+    "prompt": "The graph shows a significant rise in sales, __________ indicates a positive trend.",
+    "A": "that",
+    "B": "which",
+    "C": "what",
+    "D": "it",
+    "correct": "B",
+    "explanation": "Use **, which** (Non-defining relative clause) to comment on the whole previous clause. 'That' cannot be used after a comma."
+  },
+  {
+    "id": "ig-6",
+    "prompt": "Not only __________ efficient, but it is also eco-friendly.",
+    "A": "the system is",
+    "B": "is the system",
+    "C": "the system has",
+    "D": "does the system",
+    "correct": "B",
+    "explanation": "**Inversion**: When starting with 'Not only', invert the subject and auxiliary verb (like a question form)."
+  },
+  {
+    "id": "ig-7",
+    "prompt": "It is essential that every student __________ their assignment by Friday.",
+    "A": "submits",
+    "B": "submit",
+    "C": "submitted",
+    "D": "will submit",
+    "correct": "B",
+    "explanation": "**Subjunctive Mood**: After 'essential', 'vital', etc., use the base form of the verb without 's'."
+  },
+  {
+    "id": "ig-8",
+    "prompt": "The number of students __________ increased significantly since 2010.",
+    "A": "have",
+    "B": "has",
+    "C": "are",
+    "D": "were",
+    "correct": "B",
+    "explanation": "**'The number of...'** takes a singular verb (has). **'A number of...'** takes a plural verb."
+  },
+  {
+    "id": "ig-9",
+    "prompt": "I suggest that he __________ a specialist immediately.",
+    "A": "sees",
+    "B": "saw",
+    "C": "see",
+    "D": "seeing",
+    "correct": "C",
+    "explanation": "**Subjunctive**: After 'suggest', use the base form (he see), not the third person singular (he sees)."
+  },
+  {
+    "id": "ig-10",
+    "prompt": "Despite __________ hard, she failed the exam.",
+    "A": "she studied",
+    "B": "of studying",
+    "C": "studying",
+    "D": "study",
+    "correct": "C",
+    "explanation": "**Despite** is a preposition followed by a Noun or Gerund (Verb+ing). It cannot be followed by a full sentence."
+  },
+  {
+    "id": "ig-11",
+    "prompt": "The new policy is expected to result __________ positive changes.",
+    "A": "to",
+    "B": "in",
+    "C": "at",
+    "D": "on",
+    "correct": "B",
+    "explanation": "Correct collocation: **'result in'** (lead to). 'Result from' means to be caused by."
+  },
+  {
+    "id": "ig-12",
+    "prompt": "Hardly __________ I entered the room when the phone rang.",
+    "A": "did",
+    "B": "had",
+    "C": "have",
+    "D": "was",
+    "correct": "B",
+    "explanation": "**Inversion with Past Perfect**: 'Hardly had I done X when Y happened'."
+  },
+  {
+    "id": "ig-13",
+    "prompt": "The suspect is believed __________ the country last week.",
+    "A": "to leave",
+    "B": "to have left",
+    "C": "leaving",
+    "D": "that he left",
+    "correct": "B",
+    "explanation": "**Impersonal Passive**: When referring to the past (last week) after 'is believed', we use the perfect infinitive (to have + V3)."
+  },
+  {
+    "id": "ig-14",
+    "prompt": "I wish I __________ harder for the exam. Now I regret it.",
+    "A": "studied",
+    "B": "would study",
+    "C": "had studied",
+    "D": "have studied",
+    "correct": "C",
+    "explanation": "**Regret about the past**: We use 'I wish + Past Perfect' to express regret about something in the past."
+  },
+  {
+    "id": "ig-15",
+    "prompt": "No sooner had he finished his speech __________ the audience started clapping.",
+    "A": "when",
+    "B": "then",
+    "C": "than",
+    "D": "that",
+    "correct": "C",
+    "explanation": "The structure is fixed: **'No sooner... than'**. (Hardly... when)."
+  },
+  {
+    "id": "ig-16",
+    "prompt": "He __________ have committed the crime; he was with me all night!",
+    "A": "mustn't",
+    "B": "shouldn't",
+    "C": "can't",
+    "D": "wouldn't",
+    "correct": "C",
+    "explanation": "**Modals of Deduction**: 'Can't have V3' expresses near certainty that something did NOT happen."
+  },
+  {
+    "id": "ig-17",
+    "prompt": "We need to get the roof __________ before winter comes.",
+    "A": "repair",
+    "B": "repairing",
+    "C": "repaired",
+    "D": "to repair",
+    "correct": "C",
+    "explanation": "**Causative Form**: 'Get something done' (Get + Object + V3). This means arranging for someone else to do the work."
+  },
+  {
+    "id": "ig-18",
+    "prompt": "__________ for the bad weather, the event would have been a success.",
+    "A": "If it wasn't",
+    "B": "Had it not been",
+    "C": "Were it not",
+    "D": "Unless it was",
+    "correct": "B",
+    "explanation": "**Inverted Conditional (Type 3)**: 'Had it not been for...' is the formal version of 'If it hadn't been for...'."
+  },
+  {
+    "id": "ig-19",
+    "prompt": "The experiment __________ at the university was groundbreaking.",
+    "A": "conducting",
+    "B": "conducted",
+    "C": "which conducted",
+    "D": "to conduct",
+    "correct": "B",
+    "explanation": "**Reduced Relative Clause**: 'The experiment (which was) conducted...'. Since it is passive, we use V3."
+  },
+  {
+    "id": "ig-20",
+    "prompt": "I am not used to __________ on the left side of the road.",
+    "A": "drive",
+    "B": "drove",
+    "C": "driving",
+    "D": "be driven",
+    "correct": "C",
+    "explanation": "**'Be used to'** is followed by a Gerund (V+ing) because 'to' acts as a preposition here."
+  },
+  {
+    "id": "ig-21",
+    "prompt": "Little __________ that she was the CEO of the company.",
+    "A": "I knew",
+    "B": "did I know",
+    "C": "I had known",
+    "D": "do I know",
+    "correct": "B",
+    "explanation": "**Negative Adverbial Inversion**: When a sentence starts with 'Little', 'Seldom', 'Never', we invert the subject and verb."
+  },
+  {
+    "id": "ig-22",
+    "prompt": "__________ of the students passed the exam, which was disappointing.",
+    "A": "None",
+    "B": "No one",
+    "C": "Neither",
+    "D": "Any",
+    "correct": "A",
+    "explanation": "**'None of'** is used for three or more items/people. 'Neither' is for two. 'No one' cannot be followed directly by 'of'."
+  },
+  {
+    "id": "ig-23",
+    "prompt": "By next year, I __________ here for ten years.",
+    "A": "will work",
+    "B": "will have been working",
+    "C": "am working",
+    "D": "have worked",
+    "correct": "B",
+    "explanation": "**Future Perfect Continuous**: Used to emphasize the duration of an action up to a certain point in the future (By next year)."
+  },
+  {
+    "id": "ig-24",
+    "prompt": "It's high time you __________ studying for the test.",
+    "A": "start",
+    "B": "started",
+    "C": "have started",
+    "D": "will start",
+    "correct": "B",
+    "explanation": "**'It's high time'** is always followed by the **Past Simple** to express that something should have been done already."
+  },
+  {
+    "id": "ig-25",
+    "prompt": "He asked me where __________.",
+    "A": "was the station",
+    "B": "the station was",
+    "C": "is the station",
+    "D": "the station is",
+    "correct": "B",
+    "explanation": "**Indirect Question**: In reported questions, the word order becomes Subject + Verb (normal order), not Question order."
+  },
+  {
+    "id": "ig-26",
+    "prompt": "There has been __________ research on this topic.",
+    "A": "a number of",
+    "B": "a great deal of",
+    "C": "many",
+    "D": "several",
+    "correct": "B",
+    "explanation": "**'Research'** is an uncountable noun. 'A great deal of' is used with uncountable nouns. 'A number of', 'many', 'several' are for countable nouns."
+  },
+  {
+    "id": "ig-27",
+    "prompt": "Having __________ the report, she went home.",
+    "A": "finish",
+    "B": "finished",
+    "C": "finishing",
+    "D": "finishes",
+    "correct": "B",
+    "explanation": "**Perfect Participle Clause**: 'Having + V3' (Having finished) emphasizes that one action was completed before the next one started."
+  },
+  {
+    "id": "ig-28",
+    "prompt": "If I __________ richer, I would buy a house.",
+    "A": "am",
+    "B": "would be",
+    "C": "were",
+    "D": "been",
+    "correct": "C",
+    "explanation": "**Second Conditional**: We use 'were' for all subjects (If I were, If she were) to talk about hypothetical situations in the present."
+  },
+  {
+    "id": "ig-29",
+    "prompt": "You __________ smoke in the hospital. It's forbidden.",
+    "A": "don't have to",
+    "B": "mustn't",
+    "C": "needn't",
+    "D": "shouldn't",
+    "correct": "B",
+    "explanation": "**Mustn't** expresses prohibition (yasak). 'Don't have to' means it's not necessary (zorunda değilsin)."
+  },
+  {
+    "id": "ig-30",
+    "prompt": "They __________ to be the best team in the league.",
+    "A": "said",
+    "B": "are said",
+    "C": "saying",
+    "D": "say",
+    "correct": "B",
+    "explanation": "**Passive Reporting Structure**: 'Subject + is/are said + to + infinitive'. (They are said to be...)."
+  }
+]
