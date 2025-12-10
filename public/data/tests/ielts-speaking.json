@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "topic": "Describe a book you read that you found useful.",
+    "bullets": [
+      "What it is",
+      "When you read it",
+      "Why you found it useful",
+      "Explain how you felt about it"
+    ]
+  },
+  {
+    "id": 2,
+    "topic": "Describe a time when you helped a child.",
+    "bullets": [
+      "When it was",
+      "How you helped him/her",
+      "Why you helped him/her",
+      "Explain how you felt about it"
+    ]
+  },
+  {
+    "id": 3,
+    "topic": "Describe a competition you would like to take part in.",
+    "bullets": [
+      "What kind of competition it is",
+      "What you would need to do",
+      "How you would prepare for it",
+      "Explain why you want to take part in it"
+    ]
+  },
+  {
+    "id": 4,
+    "topic": "Describe an interesting conversation you had with a stranger.",
+    "bullets": [
+      "Who the person was",
+      "What you talked about",
+      "Why you found it interesting",
+      "Explain how you felt after the conversation"
+    ]
+  },
+  {
+    "id": 5,
+    "topic": "Describe a place you visited where the air was polluted.",
+    "bullets": [
+      "Where the place is",
+      "When you visited it",
+      "Why the air was not clean",
+      "Explain how this affected you"
+    ]
+  },
+  {
+    "id": 6,
+    "topic": "Describe a skill you learned from an older person.",
+    "bullets": [
+      "What the skill is",
+      "Who you learned it from",
+      "How you learned it",
+      "Explain how this skill has helped you"
+    ]
+  },
+  {
+    "id": 7,
+    "topic": "Describe a successful small business that you know.",
+    "bullets": [
+      "What the business is",
+      "Where it is located",
+      "Who runs the business",
+      "Explain why you think it is successful"
+    ]
+  }
+]
