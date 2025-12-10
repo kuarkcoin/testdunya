@@ -35,11 +35,18 @@ function formatTime(seconds: number): string {
 
 function formatText(text: string) {
   if (!text) return null;
+
+  // 1. ÖZEL DURUM: Eğer metin HTML ise (Reading parçası)
+  if (text.includes('<div') || text.includes('<p>') || text.includes('custom-scrollbar')) {
+     return <div dangerouslySetInnerHTML={{ __html: text }} />;
+  }
+
+  // 2. NORMAL DURUM: **bold** işaretlerini badge yap
   const parts = String(text).split(/(\*\*.*?\*\*)/g);
   return parts.map((part, index) => {
     if (part.startsWith('**') && part.endsWith('**')) {
       let content = part.slice(2, -2).replace(/^['"]+|['"]+$/g, '');
-      return <span key={index} className="bg-indigo-50 text-indigo-700 font-bold px-2 py-0.5 rounded mx-1 border border-indigo-100">{content}</span>;
+      return <span key={index} className="bg-indigo-50 text-indigo-700 font-bold px-2 py-0.5 rounded mx-1 border border-indigo-100 text-sm shadow-sm">{content}</span>;
     }
     return <span key={index} dangerouslySetInnerHTML={{ __html: part }} />;
   });
@@ -47,7 +54,7 @@ function formatText(text: string) {
 
 export default function QuizPage() {
   const params = useParams();
-  const testId = params?.testId as string;
+  const testId = params?.testId as string || params?.id as string; // testId veya id yakala
 
   const [questions, setQuestions] = useState<Question[]>([]);
   const [answers, setAnswers] = useState<Record<string, string>>({});
@@ -62,94 +69,120 @@ export default function QuizPage() {
     if (!testId) return;
     setLoading(true);
 
-    fetch(`/data/tests/${testId}.json?t=${Date.now()}`)
+    // Dosya yolunu belirle (IELTS mi normal mi?)
+    // Normalde testId direkt dosya adıdır, ama public/data/tests/ altında arıyoruz.
+    const jsonPath = `/data/tests/${testId}.json`;
+
+    fetch(`${jsonPath}?t=${Date.now()}`)
       .then(res => {
-        if (!res.ok) throw new Error("Test dosyası bulunamadı.");
+        if (!res.ok) throw new Error(`Test dosyası bulunamadı: ${testId}`);
         return res.json();
       })
       .then(rawdata => {
-        let rawList: any[] = [];
-        if (Array.isArray(rawdata)) rawList = rawdata;
-        else if (rawdata && rawdata.questions && Array.isArray(rawdata.questions)) rawList = rawdata.questions;
-        
-        if (!rawList || rawList.length === 0) {
-            setError("Bu test dosyası boş veya formatı hatalı.");
-            setLoading(false);
-            return;
+        let normalizedQuestions: Question[] = [];
+
+        // --- SENARYO A: IELTS READING (İç içe yapı) ---
+        if (testId.includes('reading') && Array.isArray(rawdata) && rawdata[0].passageId) {
+            rawdata.forEach((passage: any) => {
+                if (Array.isArray(passage.questions)) {
+                    passage.questions.forEach((q: any, idx: number) => {
+                        // Reading Metnini (HTML) sorunun üstüne ekle
+                        const combinedPrompt = `
+                            <div class="mb-6 p-4 bg-white border-l-4 border-sky-500 shadow-sm rounded text-slate-700 text-sm leading-7 h-64 overflow-y-auto font-serif custom-scrollbar">
+                              <h4 class="font-bold text-sky-900 mb-2 sticky top-0 bg-white pb-2 border-b border-slate-100 z-10">
+                                ${passage.title}
+                              </h4>
+                              ${passage.text}
+                            </div>
+                            <div class="font-bold text-slate-900 text-lg mt-4 pt-2">
+                               ${q.prompt}
+                            </div>
+                        `;
+                        
+                        // Şıkları formatla
+                        const choices = ['A', 'B', 'C', 'D'].map((L, i) => {
+                            if (!q[L]) return null;
+                            return { id: ['A','B','C','D'][i], text: q[L] };
+                        }).filter(Boolean) as Choice[];
+
+                        normalizedQuestions.push({
+                            id: q.id || `read-${passage.passageId}-${idx}`,
+                            prompt: combinedPrompt,
+                            choices: choices,
+                            answer: q.correct, // IELTS JSON formatında 'correct' kullanmıştık
+                            explanation: q.explanation
+                        });
+                    });
+                }
+            });
+        } 
+        // --- SENARYO B: STANDART TESTLER (Senin kodun burası) ---
+        else {
+            let rawList: any[] = [];
+            if (Array.isArray(rawdata)) rawList = rawdata;
+            else if (rawdata && rawdata.questions && Array.isArray(rawdata.questions)) rawList = rawdata.questions;
+
+            normalizedQuestions = rawList.map((item, idx) => {
+                const anyItem = item as any; 
+
+                // --- ŞIKLARI BULMA ---
+                let choices: Choice[] = [];
+                let rawOptions: string[] = [];
+
+                if (Array.isArray(anyItem.options)) rawOptions = anyItem.options;
+                else if (Array.isArray(anyItem.secenekler)) rawOptions = anyItem.secenekler;
+                else if (anyItem.A || anyItem.B) { // A, B, C, D formatı
+                     if(anyItem.A) rawOptions.push(anyItem.A);
+                     if(anyItem.B) rawOptions.push(anyItem.B);
+                     if(anyItem.C) rawOptions.push(anyItem.C);
+                     if(anyItem.D) rawOptions.push(anyItem.D);
+                     if(anyItem.E) rawOptions.push(anyItem.E);
+                } 
+                
+                choices = rawOptions.map((optText, optIdx) => ({
+                    id: String.fromCharCode(65 + optIdx), // A, B, C...
+                    text: String(optText)
+                }));
+
+                // --- CEVAP BULMA ---
+                let finalAnswerId = "UNKNOWN";
+                let rawAnswer = (anyItem.answer || anyItem.correct || anyItem.cevap || anyItem.Cevap || "").toString().trim();
+
+                // Eğer cevap direkt "A", "B" gibiyse
+                if (rawAnswer.length === 1 && rawAnswer.match(/[A-Ea-e]/)) {
+                    finalAnswerId = rawAnswer.toUpperCase();
+                } else {
+                    // Cevap metin olarak verilmişse eşleştir
+                    const matchedOption = choices.find(c => 
+                        c.text.replace(/\s+/g, '').toLowerCase() === rawAnswer.replace(/\s+/g, '').toLowerCase()
+                    );
+                    if (matchedOption) finalAnswerId = matchedOption.id;
+                }
+
+                // --- AÇIKLAMA ---
+                const explanationText = anyItem.explanation || anyItem.Explanation || anyItem.aciklama || anyItem.Açıklama || "";
+
+                return {
+                    id: anyItem.id || String(idx),
+                    prompt: anyItem.prompt || anyItem.question || anyItem.soru || "Soru metni bulunamadı.",
+                    choices: choices,
+                    answer: finalAnswerId,
+                    explanation: explanationText
+                };
+            });
         }
 
-        const formattedQuestions: Question[] = rawList.map((item, idx) => {
-            const anyItem = item as any; 
-
-            // --- ŞIKLARI BULMA ---
-            let choices: Choice[] = [];
-            let rawOptions: string[] = [];
-            
-            if (Array.isArray(anyItem.options)) rawOptions = anyItem.options;
-            else if (Array.isArray(anyItem.secenekler)) rawOptions = anyItem.secenekler;
-            else if (anyItem.A || anyItem.B || anyItem.a || anyItem.b) {
-                 if(anyItem.A || anyItem.a) rawOptions.push(anyItem.A || anyItem.a);
-                 if(anyItem.B || anyItem.b) rawOptions.push(anyItem.B || anyItem.b);
-                 if(anyItem.C || anyItem.c) rawOptions.push(anyItem.C || anyItem.c);
-                 if(anyItem.D || anyItem.d) rawOptions.push(anyItem.D || anyItem.d);
-                 if(anyItem.E || anyItem.e) rawOptions.push(anyItem.E || anyItem.e);
-            } 
-            else if (typeof anyItem.options === 'object' && anyItem.options) {
-                rawOptions = Object.values(anyItem.options);
-            }
-
-            choices = rawOptions.map((optText, optIdx) => ({
-                id: String.fromCharCode(65 + optIdx), // A, B, C...
-                text: String(optText)
-            }));
-
-            // --- CEVAP BULMA ---
-            let finalAnswerId = "UNKNOWN";
-            let rawAnswer = (anyItem.answer || anyItem.Answer || anyItem.cevap || anyItem.Cevap || anyItem.correct || anyItem.Correct || "").toString().trim();
-            
-            const match = rawAnswer.match(/([A-Ea-e])/);
-            if (match && rawAnswer.length < 10) { 
-                finalAnswerId = match[0].toUpperCase();
-            } else {
-                const matchedOption = choices.find(c => 
-                    c.text.replace(/\s+/g, '').toLowerCase() === rawAnswer.replace(/\s+/g, '').toLowerCase()
-                );
-                if (matchedOption) finalAnswerId = matchedOption.id;
-            }
-
-            // --- AÇIKLAMA BULMA (SENİN JSON FORMATINA GÖRE) ---
-            const explanationText = 
-              anyItem.Açıklama || // Senin dosyandaki format (Büyük A)
-              anyItem.açıklama ||
-              anyItem.aciklama ||
-              anyItem.Aciklama ||
-              anyItem.Explanation ||
-              anyItem.explanation ||
-              anyItem.Solution ||
-              anyItem.solution ||
-              anyItem.Çözüm ||
-              anyItem.çözüm ||
-              anyItem.cozum ||
-              "";
-
-            return {
-                id: String(idx),
-                prompt: anyItem.question || anyItem.Question || anyItem.soru || anyItem.Soru || "Soru metni bulunamadı.",
-                choices: choices,
-                answer: finalAnswerId,
-                explanation: explanationText
-            };
-        });
-
-        setQuestions(formattedQuestions);
-        if (formattedQuestions.length > 0) setTimeLeft(formattedQuestions.length * 90);
-        else setError("Ayrıştırılabilir soru bulunamadı.");
-        
+        if (normalizedQuestions.length === 0) {
+            setError("Bu testte görüntülenecek soru bulunamadı.");
+        } else {
+            setQuestions(normalizedQuestions);
+            setTimeLeft(normalizedQuestions.length * 60); // Soru başı 1 dk
+        }
         setLoading(false);
       })
       .catch(err => {
         console.error(err);
-        setError("Veri yüklenirken hata oluştu.");
+        setError(`Hata: ${err.message}`);
         setLoading(false);
       });
   }, [testId]);
@@ -165,20 +198,15 @@ export default function QuizPage() {
   // 3) SUBMIT & SAVE MISTAKES
   const handleSubmit = () => {
     let correctCount = 0;
-    
     let mistakeList: any[] = [];
     try {
         const stored = localStorage.getItem('my_mistakes');
         if (stored) mistakeList = JSON.parse(stored);
-        if (!Array.isArray(mistakeList)) mistakeList = [];
-    } catch(e) {
-        mistakeList = [];
-    }
+    } catch(e) { mistakeList = []; }
 
     questions.forEach((q) => {
         const userVal = answers[q.id]; 
         const correctId = q.answer;
-
         const isCorrect = (userVal === correctId);
 
         if (isCorrect) {
@@ -187,7 +215,6 @@ export default function QuizPage() {
         } else if (userVal) {
             const uniqueId = `${testId}-${q.id}`;
             const exists = mistakeList.some(m => m.uniqueId === uniqueId);
-            
             if (!exists) {
                 mistakeList.push({
                     uniqueId: uniqueId,
@@ -211,17 +238,18 @@ export default function QuizPage() {
 
   if (loading) return (
       <div className="min-h-screen flex flex-col items-center justify-center text-slate-500">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600 mb-4"></div>
-          <p>Test Hazırlanıyor...</p>
+          <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-b-4 border-indigo-600 mb-4"></div>
+          <p className="font-bold animate-pulse">Test Hazırlanıyor...</p>
       </div>
   );
 
   if (error) return (
     <div className="min-h-screen flex flex-col items-center justify-center p-4">
-        <div className="bg-red-50 text-red-600 p-6 rounded-xl border border-red-200 text-center max-w-md">
-            <h2 className="font-bold text-lg mb-2">Hata</h2>
-            <p>{error}</p>
-            <Link href="/" className="inline-block mt-4 px-4 py-2 bg-red-100 rounded-lg text-sm font-bold hover:bg-red-200">
+        <div className="bg-white p-8 rounded-2xl border border-red-100 shadow-xl text-center max-w-md">
+            <div className="text-4xl mb-4">⚠️</div>
+            <h2 className="font-bold text-xl text-slate-800 mb-2">Bir Sorun Oluştu</h2>
+            <p className="text-red-500 mb-6">{error}</p>
+            <Link href="/" className="inline-block px-6 py-3 bg-slate-900 text-white rounded-xl font-bold hover:bg-slate-800 transition">
                 Ana Sayfaya Dön
             </Link>
         </div>
@@ -236,21 +264,15 @@ export default function QuizPage() {
     return (
       <div className="min-h-screen bg-slate-50 py-12 px-4">
         <div className="max-w-4xl mx-auto space-y-8">
-          
           {/* SKOR KARTI */}
           <div className="bg-white p-8 rounded-3xl shadow-xl border border-slate-200 text-center relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-indigo-500 to-purple-600" />
             <h1 className="text-3xl font-black text-slate-800 mb-6">Test Sonucu</h1>
-            
+
             <div className="flex justify-center items-center gap-4 sm:gap-12 mb-8">
               <div className="flex flex-col">
                 <span className="text-4xl font-black text-emerald-600">{score}</span>
                 <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">Doğru</span>
-              </div>
-              <div className="w-px h-12 bg-slate-200" />
-              <div className="flex flex-col">
-                <span className="text-4xl font-black text-slate-700">{total}</span>
-                <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">Toplam</span>
               </div>
               <div className="w-px h-12 bg-slate-200" />
               <div className="flex flex-col">
@@ -262,45 +284,38 @@ export default function QuizPage() {
             </div>
 
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="/" className="px-6 py-3 bg-slate-100 text-slate-700 font-bold rounded-xl hover:bg-slate-200 transition-colors">
+                <Link href="/" className="px-6 py-3 bg-slate-100 text-slate-700 font-bold rounded-xl hover:bg-slate-200 transition-colors">
                   Listeye Dön
-                </a>
-                <Link href="/mistakes" className="px-6 py-3 bg-red-100 text-red-700 font-bold rounded-xl hover:bg-red-200 transition-colors flex items-center justify-center gap-2">
+                </Link>
+                <Link href="/mistakes" className="px-6 py-3 bg-rose-50 text-rose-600 border border-rose-200 font-bold rounded-xl hover:bg-rose-100 transition-colors flex items-center justify-center gap-2">
                   <span>📕</span> Hatalarımı Gör
                 </Link>
-                <button onClick={() => window.location.reload()} className="px-6 py-3 bg-indigo-600 text-white font-bold rounded-xl hover:bg-indigo-700 transition-colors">
-                  Tekrar Çöz
-                </button>
             </div>
           </div>
 
           {/* DETAYLI ANALİZ */}
           <div className="space-y-6">
             <h2 className="text-xl font-bold text-slate-700 ml-2 border-l-4 border-indigo-500 pl-3">Detaylı Analiz</h2>
-            
+
             {questions.map((q, idx) => {
               const userAnswerId = answers[q.id];
               const correctId = q.answer; 
-
-              const isUserAnswered = !!userAnswerId;
               const isCorrect = userAnswerId === correctId;
+              const isUserAnswered = !!userAnswerId;
 
-              let cardBorder = isCorrect ? 'border-emerald-200' : isUserAnswered ? 'border-red-200' : 'border-amber-200';
-              let cardBg = isCorrect ? 'bg-emerald-50/40' : isUserAnswered ? 'bg-red-50/40' : 'bg-amber-50/40';
+              let cardBorder = isCorrect ? 'border-emerald-200' : 'border-rose-200';
+              let cardBg = isCorrect ? 'bg-emerald-50/30' : 'bg-white';
 
               return (
                 <div key={q.id} className={`p-6 rounded-2xl border-2 ${cardBorder} ${cardBg} transition-all`}>
                   <div className="flex items-start gap-4">
                     <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold shadow-sm ${
-                      isCorrect ? 'bg-emerald-500' : !isUserAnswered ? 'bg-amber-400' : 'bg-red-500'
+                      isCorrect ? 'bg-emerald-500' : 'bg-rose-500'
                     }`}>
-                      {isCorrect ? '✓' : !isUserAnswered ? '−' : '✕'}
+                      {isCorrect ? '✓' : '✕'}
                     </div>
 
                     <div className="flex-grow">
-                      <div className="flex justify-between items-center mb-3">
-                        <span className="text-sm text-slate-400 font-bold uppercase tracking-wide">Soru {idx + 1}</span>
-                      </div>
                       <div className="text-lg font-medium text-slate-800 mb-5 leading-relaxed">
                          {formatText(q.prompt)}
                       </div>
@@ -309,38 +324,30 @@ export default function QuizPage() {
                         {q.choices.map((c) => {
                           const isSelected = userAnswerId === c.id;
                           const isTheCorrectAnswer = c.id === correctId;
-
-                          let optionClass = 'p-3 rounded-lg border flex items-center justify-between ';
                           
-                          if (isTheCorrectAnswer) {
-                            optionClass += 'bg-emerald-100 border-emerald-300 text-emerald-900 font-bold shadow-sm ring-1 ring-emerald-300';
-                          } else if (isSelected) {
-                            optionClass += 'bg-red-100 border-red-300 text-red-900 font-medium';
-                          } else {
-                            optionClass += 'bg-white/60 border-slate-200 text-slate-500 opacity-70';
-                          }
+                          let style = 'p-3 rounded-xl border flex items-center justify-between transition-all ';
+                          if (isTheCorrectAnswer) style += 'bg-emerald-100 border-emerald-300 text-emerald-900 font-bold shadow-sm';
+                          else if (isSelected) style += 'bg-rose-100 border-rose-300 text-rose-900 font-medium';
+                          else style += 'bg-white/60 border-slate-200 text-slate-500 opacity-60';
 
                           return (
-                            <div key={c.id} className={optionClass}>
+                            <div key={c.id} className={style}>
                               <div className="flex items-center gap-3">
-                                <div className={`w-6 h-6 rounded-full border flex items-center justify-center text-xs flex-shrink-0 ${
-                                  isTheCorrectAnswer ? 'border-emerald-500 bg-emerald-500 text-white' : 
-                                  isSelected ? 'border-red-500 bg-red-500 text-white' : 'border-slate-300'
-                                }`}>{c.id}</div>
+                                <span className="font-bold opacity-50 text-sm">{c.id})</span>
                                 <span>{c.text}</span>
                               </div>
                             </div>
                           );
                         })}
                       </div>
-                      
+
                       {/* AÇIKLAMA ALANI */}
-                      {q.explanation && q.explanation.trim() !== "" && (
-                        <div className="mt-5 p-4 bg-white/80 rounded-xl border border-indigo-200 text-sm text-indigo-900 flex gap-3 items-start animate-in fade-in shadow-sm">
+                      {q.explanation && !isCorrect && (
+                        <div className="mt-5 p-4 bg-indigo-50 rounded-xl border border-indigo-100 text-sm text-indigo-900 flex gap-3 items-start animate-in fade-in">
                           <span className="text-xl">💡</span>
                           <div>
-                            <span className="font-bold block mb-1 text-indigo-700">Çözüm / Açıklama:</span>
-                            <span className="leading-relaxed opacity-90">{q.explanation}</span>
+                            <span className="font-bold block mb-1 text-indigo-700">Açıklama:</span>
+                            <span className="leading-relaxed opacity-90">{formatText(q.explanation)}</span>
                           </div>
                         </div>
                       )}
@@ -358,30 +365,68 @@ export default function QuizPage() {
   // --- QUIZ SOLVING SCREEN ---
   return (
     <div className="min-h-screen bg-slate-50 pb-20">
-      <div className="max-w-3xl mx-auto px-4 py-8 space-y-8">
-        <div className="flex items-center justify-between bg-white/90 backdrop-blur-md p-4 rounded-xl shadow-sm border border-slate-200 sticky top-4 z-20">
-            <Link href="/" className="p-2 rounded-full hover:bg-slate-100 text-slate-500"><ArrowLeft className="w-5 h-5" /></Link>
-            <div className={`text-lg font-mono font-bold px-4 py-2 rounded-lg border transition-colors ${timeLeft !== null && timeLeft < 60 ? 'text-red-600 bg-red-50 border-red-200 animate-pulse' : 'text-indigo-600 bg-indigo-50 border-indigo-200'}`}>{timeLeft !== null ? formatTime(timeLeft) : 'Loading...'}</div>
-            <button onClick={handleSubmit} className="text-sm font-bold text-white bg-indigo-600 px-4 py-2 rounded-lg hover:bg-indigo-700">Bitir</button>
-        </div>
-        <div className="space-y-8">
-          {questions.map((q, idx) => (
-            <div key={q.id} className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200">
-              <div className="text-sm text-slate-400 font-bold mb-4 uppercase tracking-wide flex items-center gap-2"><span className="bg-slate-100 px-2 py-1 rounded text-slate-500">SORU {idx + 1}</span></div>
-              <div className="text-xl font-medium text-slate-800 mb-6 leading-relaxed">{formatText(q.prompt)}</div>
-              <div className="grid gap-3">
-                {q.choices.map((c) => (
-                  <label key={c.id} className={`group cursor-pointer flex items-center p-4 rounded-xl border-2 transition-all duration-200 active:scale-[0.99] ${answers[q.id] === c.id ? 'border-indigo-600 bg-indigo-50 shadow-md ring-1 ring-indigo-200' : 'border-slate-100 hover:border-indigo-300 hover:bg-slate-50'}`}>
-                    <div className={`w-6 h-6 rounded-full border-2 flex items-center justify-center mr-4 transition-colors flex-shrink-0 ${answers[q.id] === c.id ? 'border-indigo-600' : 'border-slate-300 group-hover:border-indigo-400'}`}>{answers[q.id] === c.id && <div className="w-3 h-3 rounded-full bg-indigo-600" />}</div>
-                    <input type="radio" name={`question-${q.id}`} className="hidden" checked={answers[q.id] === c.id} onChange={() => setAnswers((prev) => ({ ...prev, [q.id]: c.id }))} />
-                    <span className={`text-lg ${answers[q.id] === c.id ? 'text-indigo-900 font-medium' : 'text-slate-600'}`}><span className="font-bold mr-2 text-slate-400 group-hover:text-indigo-400">{c.id})</span> {c.text}</span>
-                  </label>
-                ))}
-              </div>
+      
+      {/* HEADER */}
+      <div className="sticky top-4 z-30 max-w-3xl mx-auto px-4 mb-8">
+        <div className="flex items-center justify-between bg-white/90 backdrop-blur-md p-4 rounded-2xl shadow-lg border border-slate-200/60 transition-all">
+            <Link href="/" className="p-2 rounded-full hover:bg-slate-100 text-slate-500 transition">
+              <ArrowLeft className="w-6 h-6" />
+            </Link>
+            
+            <div className={`flex items-center gap-2 text-lg font-mono font-bold px-4 py-1.5 rounded-xl border-2 transition-colors ${timeLeft !== null && timeLeft < 60 ? 'text-rose-600 bg-rose-50 border-rose-100 animate-pulse' : 'text-indigo-600 bg-indigo-50 border-indigo-100'}`}>
+               <Clock className="w-5 h-5" />
+               {timeLeft !== null ? formatTime(timeLeft) : '...'}
             </div>
-          ))}
+
+            <button onClick={handleSubmit} className="text-sm font-bold text-white bg-slate-900 px-6 py-2.5 rounded-xl hover:bg-slate-800 shadow-md hover:shadow-lg transition-all hover:-translate-y-0.5">
+              Bitir
+            </button>
         </div>
-        <div className="pt-4 pb-12"><button onClick={handleSubmit} className="w-full py-4 rounded-xl text-white text-xl font-bold shadow-lg transition-all transform active:scale-[0.99] bg-indigo-600 hover:bg-indigo-700 hover:shadow-indigo-200">Testi Tamamla</button></div>
+      </div>
+
+      {/* SORULAR */}
+      <div className="max-w-3xl mx-auto px-4 space-y-8">
+        {questions.map((q, idx) => (
+          <div key={q.id} className="bg-white p-6 md:p-8 rounded-3xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow duration-300">
+            
+            <div className="flex items-center gap-3 mb-6">
+               <span className="bg-slate-100 text-slate-500 text-xs font-black px-3 py-1 rounded-lg uppercase tracking-wider">SORU {idx + 1}</span>
+            </div>
+
+            <div className="text-lg sm:text-xl font-medium text-slate-800 mb-8 leading-relaxed">
+               {formatText(q.prompt)}
+            </div>
+
+            <div className="grid gap-3">
+              {q.choices.map((c) => (
+                <label key={c.id} className={`group cursor-pointer flex items-center p-4 rounded-2xl border-2 transition-all duration-200 active:scale-[0.99] ${
+                    answers[q.id] === c.id 
+                    ? 'border-indigo-600 bg-indigo-50/50 shadow-md ring-1 ring-indigo-600' 
+                    : 'border-slate-100 hover:border-indigo-300 hover:bg-indigo-50/10'
+                }`}>
+                  <div className={`w-6 h-6 rounded-full border-2 flex items-center justify-center mr-4 transition-colors flex-shrink-0 ${
+                      answers[q.id] === c.id ? 'border-indigo-600 bg-indigo-600' : 'border-slate-300 group-hover:border-indigo-400'
+                  }`}>
+                      {answers[q.id] === c.id && <div className="w-2.5 h-2.5 rounded-full bg-white shadow-sm" />}
+                  </div>
+                  
+                  <input type="radio" name={`question-${q.id}`} className="hidden" checked={answers[q.id] === c.id} onChange={() => setAnswers((prev) => ({ ...prev, [q.id]: c.id }))} />
+                  
+                  <span className={`text-base sm:text-lg select-none ${answers[q.id] === c.id ? 'text-indigo-900 font-semibold' : 'text-slate-600 font-medium'}`}>
+                     {c.text}
+                  </span>
+                </label>
+              ))}
+            </div>
+          </div>
+        ))}
+
+        <div className="pt-8 pb-12 flex justify-center">
+            <button onClick={handleSubmit} className="w-full max-w-md py-4 rounded-2xl text-white text-xl font-bold shadow-xl transition-all transform active:scale-[0.99] bg-indigo-600 hover:bg-indigo-700 hover:shadow-indigo-900/30 flex items-center justify-center gap-2">
+               <span>Testi Tamamla</span>
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </button>
+        </div>
       </div>
     </div>
   );
