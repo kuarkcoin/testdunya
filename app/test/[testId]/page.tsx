@@ -75,7 +75,7 @@ function formatText(text: string) {
   );
 }
 
-// --- MEMOIZED QUESTION CARD (Sadece Test Çözerken Kullanılır) ---
+// --- MEMOIZED QUESTION CARD ---
 const QuestionCard = React.memo(({ q, idx, answer, onAnswer, labels }: { 
   q: Question, 
   idx: number, 
@@ -142,8 +142,8 @@ export default function QuizPage() {
   const [score, setScore] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+  const [testTitle, setTestTitle] = useState('');
   
-  // NEW: Audio State
   const [audioSrc, setAudioSrc] = useState<string | null>(null);
 
   // 1) LOAD DATA
@@ -152,13 +152,12 @@ export default function QuizPage() {
     setLoading(true);
 
     let jsonUrl = '';
-    // Otomatik dosya bulucu
     if (testId.includes('ielts-reading')) jsonUrl = '/data/tests/ielts-reading.json';
     else if (testId.includes('ielts-writing')) jsonUrl = '/data/tests/ielts-writing.json';
     else if (testId.includes('ielts-vocab')) jsonUrl = '/data/tests/ielts-vocab.json';
     else if (testId.includes('ielts-grammar')) jsonUrl = '/data/tests/ielts-grammar.json';
     else if (testId.includes('ielts-listening')) jsonUrl = '/data/tests/ielts-listening.json';
-    else jsonUrl = `/data/tests/${testId}.json`; // Fallback for YKS/KPSS
+    else jsonUrl = `/data/tests/${testId}.json`; 
 
     fetch(`${jsonUrl}?t=${Date.now()}`)
       .then(res => {
@@ -167,11 +166,12 @@ export default function QuizPage() {
       })
       .then(rawdata => {
         let normalizedQuestions: Question[] = [];
+        let fetchedTitle = testId.replace(/-/g, ' ').toUpperCase();
+        setTestTitle(fetchedTitle);
 
-        // --- SENARYO A: IELTS READING/LISTENING (İç içe yapı) ---
+        // --- SENARYO A: IELTS READING/LISTENING ---
         if ((testId.includes('reading') || testId.includes('listening')) && Array.isArray(rawdata) && rawdata[0].passageId) {
             
-            // LISTENING ÖZEL: Audio varsa al
             if (testId.includes('listening') && rawdata[0].audio) {
                 setAudioSrc(rawdata[0].audio);
             }
@@ -181,7 +181,6 @@ export default function QuizPage() {
                     passage.questions.forEach((q: any, idx: number) => {
                         let combinedPrompt = q.prompt;
 
-                        // SADECE READING İÇİN METNİ GÖSTER (Listening için metin göstermeyiz, dinlenir)
                         if (testId.includes('reading')) {
                              combinedPrompt = `
                                 <div class="mb-8 p-6 bg-white border-l-4 border-sky-500 shadow-sm rounded-r-xl text-slate-700 text-base leading-relaxed font-serif custom-reading-content">
@@ -258,9 +257,8 @@ export default function QuizPage() {
             setError(isGlobal ? "No questions found." : "Soru bulunamadı.");
         } else {
             setQuestions(normalizedQuestions);
-            // SÜRE AYARI
-            if (testId.includes('reading')) setTimeLeft(1200); // 20dk
-            else if (testId.includes('listening')) setTimeLeft(1800); // 30dk (Listening uzun sürer)
+            if (testId.includes('reading')) setTimeLeft(1200); 
+            else if (testId.includes('listening')) setTimeLeft(1800);
             else {
                 const calc = normalizedQuestions.length * 60;
                 setTimeLeft(calc < 600 ? 600 : calc);
@@ -341,7 +339,7 @@ export default function QuizPage() {
             </div>
           </div>
 
-          {/* --- DETAYLI ANALİZ KISMI (EKLENDİ) --- */}
+          {/* --- DETAYLI ANALİZ KISMI --- */}
           <div className="space-y-6">
             <h2 className="text-xl font-bold text-slate-700 ml-2 border-l-4 border-indigo-500 pl-3">{labels.analysis}</h2>
 
@@ -391,8 +389,8 @@ export default function QuizPage() {
                         })}
                       </div>
 
-                      {/* AÇIKLAMA ALANI */}
-                      {q.explanation && !isCorrect && (
+                      {/* AÇIKLAMA ALANI (BURASI DEĞİŞTİ - ARTIK HEP GÖRÜNÜYOR) */}
+                      {q.explanation && (
                         <div className="mt-5 p-4 bg-indigo-50 rounded-xl border border-indigo-100 text-sm text-indigo-900 flex gap-3 items-start animate-in fade-in">
                           <span className="text-xl">💡</span>
                           <div>
@@ -418,7 +416,7 @@ export default function QuizPage() {
   return (
     <div className="min-h-screen bg-slate-50 pb-20">
       
-      {/* STICKY HEADER WITH AUDIO PLAYER */}
+      {/* STICKY HEADER */}
       <div className="sticky top-0 z-30 bg-white/95 backdrop-blur-md shadow-md border-b border-slate-200 transition-all">
         <div className="max-w-3xl mx-auto px-4 py-3">
             
@@ -436,13 +434,12 @@ export default function QuizPage() {
                 </button>
             </div>
 
-            {/* AUDIO PLAYER (Sadece Listening Testi ise ve Audio Kaynağı Varsa) */}
+            {/* AUDIO PLAYER */}
             {audioSrc && (
                 <div className="bg-sky-50 border border-sky-100 rounded-xl p-3 flex items-center gap-3 animate-in slide-in-from-top-2">
                     <div className="bg-sky-200 text-sky-700 p-2 rounded-full">
                         <Headphones className="w-5 h-5" />
                     </div>
-                    {/* KEY FIX */}
                     <audio 
                         key={audioSrc}
                         controls 
