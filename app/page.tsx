@@ -147,6 +147,15 @@ const ieltsModules = [
     color: 'text-indigo-600',
     bg: 'bg-indigo-50',
     border: 'border-indigo-200'
+  },
+  {
+    id: 'ielts-listening',
+    title: 'Listening',
+    desc: 'Audio Conversations',
+    icon: <div className="w-6 h-6 flex items-center justify-center font-bold text-lg">🎧</div>, 
+    color: 'text-emerald-600',
+    bg: 'bg-emerald-50',
+    border: 'border-emerald-200'
   }
 ];
 
