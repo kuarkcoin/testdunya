@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 
@@ -133,17 +133,33 @@ export default function QuizPage() {
   const [score, setScore] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+  
   const [audioSrc, setAudioSrc] = useState<string | null>(null);
+  
+  // --- AUDIO SPEED CONTROL ---
+  const [playbackRate, setPlaybackRate] = useState(1);
+  const audioRef = useRef<HTMLAudioElement>(null);
 
-  // 1) LOAD DATA (DÜZELTİLEN KISIM)
+  // Hız Değiştirme Fonksiyonu
+  const toggleSpeed = () => {
+    const speeds = [1, 1.25, 1.5, 0.75]; // Sırasıyla: Normal -> Hızlı -> Çok Hızlı -> Yavaş
+    const currentIndex = speeds.indexOf(playbackRate);
+    const nextIndex = (currentIndex + 1) % speeds.length;
+    const newSpeed = speeds[nextIndex];
+    
+    setPlaybackRate(newSpeed);
+    if (audioRef.current) {
+        audioRef.current.playbackRate = newSpeed;
+    }
+  };
+
+  // 1) LOAD DATA
   useEffect(() => {
     if (!testId) return;
     setLoading(true);
     setAudioSrc(null); // Reset audio
+    setPlaybackRate(1); // Reset speed
 
-    // --- DÜZELTME BURADA ---
-    // Artık if/else ile manuel kontrol yapmak yerine, direkt testId'yi kullanıyoruz.
-    // Bu sayede "ielts-listening-2" gelince otomatik olarak o dosyayı arayacak.
     const jsonUrl = `/data/tests/${testId}.json`;
 
     fetch(`${jsonUrl}?t=${Date.now()}`)
@@ -157,7 +173,6 @@ export default function QuizPage() {
         // --- SENARYO A: READING & LISTENING (İç içe yapı) ---
         if ((testId.includes('reading') || testId.includes('listening')) && Array.isArray(rawdata) && rawdata[0].passageId) {
             
-            // LISTENING ÖZEL: Audio varsa al
             if (rawdata[0].audio) {
                 setAudioSrc(rawdata[0].audio);
             }
@@ -255,7 +270,7 @@ export default function QuizPage() {
       });
   }, [testId, isGlobal]);
 
-  // 2) TIMER & 3) HANDLERS (AYNI KALDI)
+  // 2) TIMER
   useEffect(() => {
     if (timeLeft === null || showResult || loading) return;
     if (timeLeft <= 0) { handleSubmit(); return; }
@@ -370,6 +385,8 @@ export default function QuizPage() {
   // --- QUIZ SCREEN ---
   return (
     <div className="min-h-screen bg-slate-50 pb-20">
+      
+      {/* STICKY HEADER WITH AUDIO PLAYER */}
       <div className="sticky top-0 z-30 bg-white/95 backdrop-blur-md shadow-md border-b border-slate-200 transition-all">
         <div className="max-w-3xl mx-auto px-4 py-3">
             <div className="flex items-center justify-between mb-3">
@@ -377,14 +394,35 @@ export default function QuizPage() {
                 <div className={`flex items-center gap-2 text-lg font-mono font-bold px-4 py-1.5 rounded-xl border-2 ${timeLeft! < 60 ? 'text-rose-600 bg-rose-50 border-rose-100 animate-pulse' : 'text-indigo-600 bg-indigo-50 border-indigo-100'}`}><Clock className="w-5 h-5" />{formatTime(timeLeft || 0)}</div>
                 <button onClick={handleSubmit} className="text-sm font-bold text-white bg-slate-900 px-6 py-2.5 rounded-xl hover:bg-slate-800 shadow-md">{labels.finish}</button>
             </div>
+            
             {audioSrc && (
                 <div className="bg-sky-50 border border-sky-100 rounded-xl p-3 flex items-center gap-3 animate-in slide-in-from-top-2">
-                    <div className="bg-sky-200 text-sky-700 p-2 rounded-full"><Headphones className="w-5 h-5" /></div>
-                    <audio key={audioSrc} controls src={audioSrc} className="w-full h-8 outline-none" controlsList="nodownload">Your browser does not support the audio element.</audio>
+                    <div className="bg-sky-200 text-sky-700 p-2 rounded-full flex-shrink-0"><Headphones className="w-5 h-5" /></div>
+                    
+                    {/* HIZ BUTONU */}
+                    <button 
+                        onClick={toggleSpeed} 
+                        className="bg-white border border-sky-200 text-sky-700 px-2 py-1 rounded text-xs font-bold hover:bg-sky-100 transition-colors w-12 text-center"
+                        title="Hız Değiştir"
+                    >
+                        {playbackRate}x
+                    </button>
+
+                    <audio 
+                        ref={audioRef}
+                        key={audioSrc}
+                        controls 
+                        src={audioSrc} 
+                        className="w-full h-8 outline-none" 
+                        controlsList="nodownload"
+                    >
+                        Your browser does not support the audio element.
+                    </audio>
                 </div>
             )}
         </div>
       </div>
+
       <div className="max-w-3xl mx-auto px-4 space-y-8 mt-8">
         {questions.map((q, idx) => (
            <QuestionCard key={q.id} q={q} idx={idx} answer={answers[q.id] || ''} onAnswer={handleAnswerChange} labels={labels} />
