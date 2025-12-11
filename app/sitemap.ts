@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/mistakes',
     '/iletisim',
     '/gizlilik',
+    '/ielts/calculator',
     '/ielts/speaking',           // Speaking Simülatörü
     '/ielts/writing-templates',  // Writing Şablonları
   ].map((route) => ({
