@@ -6,6 +6,7 @@ export default function ListeningMenu() {
   const tests = [
     { id: 'ielts-listening', title: 'Test 1: Accommodation (Part 1)', level: 'Easy' },
     { id: 'ielts-listening-2', title: 'Test 2: New Gym (Part 2)', level: 'Medium' },
+    { id: 'ielts-listening-3', title: 'Test 3: Museum Tour (Part 2)', level: 'Medium' },
   ];
 
   return (
