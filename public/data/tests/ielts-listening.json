@@ -1,0 +1,60 @@
+[
+  {
+    "passageId": 1,
+    "title": "IELTS Listening Part 1: Accommodation Enquiry",
+    "audio": "/audio/ielts-sample.mp3",
+    "text": "Listen to the conversation between a student and a landlord.",
+    "questions": [
+      {
+        "id": "il-p1-q1",
+        "prompt": "What is the surname of the caller?",
+        "A": "Harding",
+        "B": "Harting",
+        "C": "Hardy",
+        "D": "Harty",
+        "correct": "B",
+        "explanation": "The man spells his surname: H-A-R-T-I-N-G."
+      },
+      {
+        "id": "il-p1-q2",
+        "prompt": "How much is the rent per week?",
+        "A": "£90",
+        "B": "£95",
+        "C": "£100",
+        "D": "£110",
+        "correct": "C",
+        "explanation": "The landlord mentions the rent is £100 per week including water."
+      },
+      {
+        "id": "il-p1-q3",
+        "prompt": "When is the room available from?",
+        "A": "1st September",
+        "B": "15th September",
+        "C": "20th August",
+        "D": "Next week",
+        "correct": "A",
+        "explanation": "The room will be free from the beginning of September (1st)."
+      },
+      {
+        "id": "il-p1-q4",
+        "prompt": "What is included in the rent?",
+        "A": "Electricity only",
+        "B": "Water and Gas",
+        "C": "Everything except Internet",
+        "D": "Water rates",
+        "correct": "D",
+        "explanation": "The landlord states that the rent includes 'water rates', but electricity is paid separately."
+      },
+      {
+        "id": "il-p1-q5",
+        "prompt": "The house is located near the __________.",
+        "A": "Train Station",
+        "B": "City Library",
+        "C": "Sports Centre",
+        "D": "University Park",
+        "correct": "C",
+        "explanation": "The landlord says the house is 'just around the corner from the Sports Centre'."
+      }
+    ]
+  }
+]
