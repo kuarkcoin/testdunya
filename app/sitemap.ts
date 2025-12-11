@@ -5,14 +5,15 @@ const BASE_URL = 'https://testdunya.net';
 
 export default function sitemap(): MetadataRoute.Sitemap {
 
-  // 1. Statik Sayfalar (IELTS Speaking ve Writing Templates eklendi)
+  // 1. Statik Sayfalar
   const staticRoutes = [
     '',
     '/mistakes',
     '/iletisim',
     '/gizlilik',
-    '/ielts/calculator',
+    '/ielts/calculator',         // Hesaplama Aracı
     '/ielts/speaking',           // Speaking Simülatörü
+    '/ielts/listening',          // YENİ: Listening Menü Sayfası
     '/ielts/writing-templates',  // Writing Şablonları
   ].map((route) => ({
     url: `${BASE_URL}${route}`,
@@ -21,11 +22,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: route === '' ? 1.0 : 0.8,
   }));
 
-  // 2. IELTS Modül Sayfaları (Reading, Listening, Writing, Grammar, Vocab)
-  // Bu testlerin ID'leri bellidir
+  // 2. IELTS Modül Sayfaları (Test Çözme Ekranları)
   const ieltsTests = [
+    // Reading
     'ielts-reading',
-    'ielts-listening',
+    // Listening Serisi (YENİLER EKLENDİ)
+    'ielts-listening',   // Test 1
+    'ielts-listening-2', // Test 2 (Gym)
+    'ielts-listening-3', // Test 3 (Museum)
+    'ielts-listening-4', // Test 4 (Zoo)
+    // Diğerleri
     'ielts-writing',
     'ielts-vocab',
     'ielts-grammar'
@@ -52,7 +58,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         url: `${BASE_URL}/test/${exam.prefix}-${i}`,
         lastModified: new Date(),
         changeFrequency: 'weekly' as const,
-        priority: 0.7, // IELTS kadar öncelikli olmasa da önemli
+        priority: 0.7, 
       });
     }
   });
