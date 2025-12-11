@@ -374,10 +374,15 @@ export default function QuizPage() {
                     <div className="bg-sky-200 text-sky-700 p-2 rounded-full">
                         <Headphones className="w-5 h-5" />
                     </div>
-                    <audio controls className="w-full h-8 outline-none" controlsList="nodownload">
-                        <source src={audioSrc} type="audio/mpeg" />
-                        Your browser does not support the audio element.
-                    </audio>
+                    <audio 
+    key={audioSrc} // <--- BU ÇOK ÖNEMLİ (React'in yenilemesi için)
+    controls 
+    src={audioSrc} // <--- src'yi direkt buraya veriyoruz
+    className="w-full h-8 outline-none" 
+    controlsList="nodownload"
+>
+    Your browser does not support the audio element.
+</audio>
                 </div>
             )}
         </div>
