@@ -254,6 +254,7 @@ export default function HomePage() {
                 let linkHref = `/test/${module.id}`;
                 if (module.id === 'ielts-speaking') linkHref = '/ielts/speaking';
                 if (module.id === 'ielts-calculator') linkHref = '/ielts/calculator';
+                if (module.id === 'ielts-listening') linkHref = '/ielts/listening';
 
                 return (
                   <Link 
