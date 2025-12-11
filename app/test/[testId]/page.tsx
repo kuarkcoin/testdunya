@@ -44,7 +44,7 @@ const getLabels = (isGlobal: boolean) => ({
   backList: isGlobal ? "Back to List" : "Listeye Dön",
   seeMistakes: isGlobal ? "See My Mistakes" : "Hatalarımı Gör",
   analysis: isGlobal ? "Detailed Analysis" : "Detaylı Analiz",
-  explanation: isGlobal ? "Explanation:" : "Açıklama:",
+  explanation: isGlobal ? "Explanation:" : "Açıklama / Çözüm:",
   yourChoice: isGlobal ? "YOUR CHOICE" : "SEÇİMİN",
   correctBadge: isGlobal ? "CORRECT" : "DOĞRU"
 });
@@ -72,6 +72,22 @@ function formatText(text: string) {
         return <span key={index} dangerouslySetInnerHTML={{ __html: part }} />;
       })}
     </>
+  );
+}
+
+// --- YENİ HELPER: GÜÇLÜ AÇIKLAMA BULUCU ---
+// JSON'da 'explanation', 'Explanation', 'aciklama', 'Açıklama' vb. ne varsa bulur.
+function findExplanation(item: any): string {
+  return (
+    item.explanation || 
+    item.Explanation || 
+    item.aciklama || 
+    item.Açıklama || 
+    item.solution || 
+    item.Solution || 
+    item.cozum || 
+    item.Çözüm || 
+    ""
   );
 }
 
@@ -205,7 +221,7 @@ export default function QuizPage() {
                             prompt: combinedPrompt,
                             choices: choices,
                             answer: q.correct,
-                            explanation: q.explanation
+                            explanation: findExplanation(q) // GÜÇLÜ AÇIKLAMA BULUCU
                         });
                     });
                 }
@@ -248,7 +264,7 @@ export default function QuizPage() {
                     prompt: anyItem.prompt || anyItem.question || anyItem.soru || "...",
                     choices: choices,
                     answer: finalAnswerId,
-                    explanation: anyItem.explanation || ""
+                    explanation: findExplanation(anyItem) // GÜÇLÜ AÇIKLAMA BULUCU
                 };
             });
         }
@@ -349,14 +365,15 @@ export default function QuizPage() {
               const isCorrect = userAnswerId === correctId;
               const isUserAnswered = !!userAnswerId;
 
-              let cardBorder = isCorrect ? 'border-emerald-200' : isUserAnswered ? 'border-red-200' : 'border-amber-200';
-              let cardBg = isCorrect ? 'bg-emerald-50/40' : isUserAnswered ? 'bg-red-50/40' : 'bg-amber-50/40';
+              // Kart Rengi
+              let cardBorder = isCorrect ? 'border-emerald-200' : 'border-rose-200';
+              let cardBg = isCorrect ? 'bg-emerald-50/40' : 'bg-red-50/40';
 
               return (
                 <div key={q.id} className={`p-6 rounded-2xl border-2 ${cardBorder} ${cardBg} transition-all`}>
                   <div className="flex items-start gap-4">
                     <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold shadow-sm ${
-                      isCorrect ? 'bg-emerald-500' : isUserAnswered ? 'bg-red-500' : 'bg-amber-400'
+                      isCorrect ? 'bg-emerald-500' : 'bg-red-500'
                     }`}>
                       {isCorrect ? '✓' : isUserAnswered ? '✕' : '-'}
                     </div>
@@ -389,8 +406,8 @@ export default function QuizPage() {
                         })}
                       </div>
 
-                      {/* AÇIKLAMA ALANI (BURASI DEĞİŞTİ - ARTIK HEP GÖRÜNÜYOR) */}
-                      {q.explanation && (
+                      {/* AÇIKLAMA ALANI (DÜZELTİLDİ: Sadece yanlış veya boş ise göster) */}
+                      {!isCorrect && q.explanation && (
                         <div className="mt-5 p-4 bg-indigo-50 rounded-xl border border-indigo-100 text-sm text-indigo-900 flex gap-3 items-start animate-in fade-in">
                           <span className="text-xl">💡</span>
                           <div>
