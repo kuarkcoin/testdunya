@@ -75,29 +75,16 @@ function formatText(text: string) {
   );
 }
 
-// --- YENİ HELPER: GÜÇLÜ AÇIKLAMA BULUCU ---
-// JSON'da 'explanation', 'Explanation', 'aciklama', 'Açıklama' vb. ne varsa bulur.
 function findExplanation(item: any): string {
   return (
-    item.explanation || 
-    item.Explanation || 
-    item.aciklama || 
-    item.Açıklama || 
-    item.solution || 
-    item.Solution || 
-    item.cozum || 
-    item.Çözüm || 
-    ""
+    item.explanation || item.Explanation || item.aciklama || item.Açıklama || 
+    item.solution || item.Solution || item.cozum || item.Çözüm || ""
   );
 }
 
 // --- MEMOIZED QUESTION CARD ---
 const QuestionCard = React.memo(({ q, idx, answer, onAnswer, labels }: { 
-  q: Question, 
-  idx: number, 
-  answer: string, 
-  onAnswer: (qid: string, val: string) => void,
-  labels: any
+  q: Question, idx: number, answer: string, onAnswer: (qid: string, val: string) => void, labels: any
 }) => {
   return (
     <div className="bg-white p-6 md:p-8 rounded-3xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow duration-300">
@@ -106,32 +93,20 @@ const QuestionCard = React.memo(({ q, idx, answer, onAnswer, labels }: {
            {labels.question} {idx + 1}
          </span>
       </div>
-
       <div className="text-lg sm:text-xl font-medium text-slate-800 mb-8 leading-relaxed">
          {formatText(q.prompt)}
       </div>
-
       <div className="grid gap-3">
         {q.choices.map((c) => (
           <label key={c.id} className={`group cursor-pointer flex items-center p-4 rounded-2xl border-2 transition-all duration-200 active:scale-[0.99] ${
-              answer === c.id 
-              ? 'border-indigo-600 bg-indigo-50/50 shadow-md ring-1 ring-indigo-600' 
-              : 'border-slate-100 hover:border-indigo-300 hover:bg-indigo-50/10'
+              answer === c.id ? 'border-indigo-600 bg-indigo-50/50 shadow-md ring-1 ring-indigo-600' : 'border-slate-100 hover:border-indigo-300 hover:bg-indigo-50/10'
           }`}>
             <div className={`w-6 h-6 rounded-full border-2 flex items-center justify-center mr-4 transition-colors flex-shrink-0 ${
                 answer === c.id ? 'border-indigo-600 bg-indigo-600' : 'border-slate-300 group-hover:border-indigo-400'
             }`}>
                 {answer === c.id && <div className="w-2.5 h-2.5 rounded-full bg-white shadow-sm" />}
             </div>
-            
-            <input 
-              type="radio" 
-              name={`question-${q.id}`} 
-              className="hidden" 
-              checked={answer === c.id} 
-              onChange={() => onAnswer(q.id, c.id)} 
-            />
-            
+            <input type="radio" name={`question-${q.id}`} className="hidden" checked={answer === c.id} onChange={() => onAnswer(q.id, c.id)} />
             <span className={`text-base sm:text-lg select-none ${answer === c.id ? 'text-indigo-900 font-semibold' : 'text-slate-600 font-medium'}`}>
                {c.text}
             </span>
@@ -158,22 +133,18 @@ export default function QuizPage() {
   const [score, setScore] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
-  const [testTitle, setTestTitle] = useState('');
-  
   const [audioSrc, setAudioSrc] = useState<string | null>(null);
 
-  // 1) LOAD DATA
+  // 1) LOAD DATA (DÜZELTİLEN KISIM)
   useEffect(() => {
     if (!testId) return;
     setLoading(true);
+    setAudioSrc(null); // Reset audio
 
-    let jsonUrl = '';
-    if (testId.includes('ielts-reading')) jsonUrl = '/data/tests/ielts-reading.json';
-    else if (testId.includes('ielts-writing')) jsonUrl = '/data/tests/ielts-writing.json';
-    else if (testId.includes('ielts-vocab')) jsonUrl = '/data/tests/ielts-vocab.json';
-    else if (testId.includes('ielts-grammar')) jsonUrl = '/data/tests/ielts-grammar.json';
-    else if (testId.includes('ielts-listening')) jsonUrl = '/data/tests/ielts-listening.json';
-    else jsonUrl = `/data/tests/${testId}.json`; 
+    // --- DÜZELTME BURADA ---
+    // Artık if/else ile manuel kontrol yapmak yerine, direkt testId'yi kullanıyoruz.
+    // Bu sayede "ielts-listening-2" gelince otomatik olarak o dosyayı arayacak.
+    const jsonUrl = `/data/tests/${testId}.json`;
 
     fetch(`${jsonUrl}?t=${Date.now()}`)
       .then(res => {
@@ -182,13 +153,12 @@ export default function QuizPage() {
       })
       .then(rawdata => {
         let normalizedQuestions: Question[] = [];
-        let fetchedTitle = testId.replace(/-/g, ' ').toUpperCase();
-        setTestTitle(fetchedTitle);
 
-        // --- SENARYO A: IELTS READING/LISTENING ---
+        // --- SENARYO A: READING & LISTENING (İç içe yapı) ---
         if ((testId.includes('reading') || testId.includes('listening')) && Array.isArray(rawdata) && rawdata[0].passageId) {
             
-            if (testId.includes('listening') && rawdata[0].audio) {
+            // LISTENING ÖZEL: Audio varsa al
+            if (rawdata[0].audio) {
                 setAudioSrc(rawdata[0].audio);
             }
 
@@ -197,17 +167,14 @@ export default function QuizPage() {
                     passage.questions.forEach((q: any, idx: number) => {
                         let combinedPrompt = q.prompt;
 
+                        // Reading ise metni ekle
                         if (testId.includes('reading')) {
                              combinedPrompt = `
                                 <div class="mb-8 p-6 bg-white border-l-4 border-sky-500 shadow-sm rounded-r-xl text-slate-700 text-base leading-relaxed font-serif custom-reading-content">
-                                  <h3 class="font-bold text-sky-900 text-xl mb-4 border-b border-sky-100 pb-2">
-                                    ${passage.title}
-                                  </h3>
+                                  <h3 class="font-bold text-sky-900 text-xl mb-4 border-b border-sky-100 pb-2">${passage.title}</h3>
                                   ${passage.text}
                                 </div>
-                                <div class="font-bold text-slate-900 text-lg mt-6 pt-4 border-t border-slate-100">
-                                   ${q.prompt}
-                                </div>
+                                <div class="font-bold text-slate-900 text-lg mt-6 pt-4 border-t border-slate-100">${q.prompt}</div>
                             `;
                         }
 
@@ -221,7 +188,7 @@ export default function QuizPage() {
                             prompt: combinedPrompt,
                             choices: choices,
                             answer: q.correct,
-                            explanation: findExplanation(q) // GÜÇLÜ AÇIKLAMA BULUCU
+                            explanation: findExplanation(q)
                         });
                     });
                 }
@@ -248,8 +215,7 @@ export default function QuizPage() {
                 } 
                 
                 choices = rawOptions.map((optText, optIdx) => ({
-                    id: String.fromCharCode(65 + optIdx),
-                    text: String(optText)
+                    id: String.fromCharCode(65 + optIdx), text: String(optText)
                 }));
 
                 let finalAnswerId = (anyItem.answer || anyItem.correct || "").toString().trim();
@@ -264,7 +230,7 @@ export default function QuizPage() {
                     prompt: anyItem.prompt || anyItem.question || anyItem.soru || "...",
                     choices: choices,
                     answer: finalAnswerId,
-                    explanation: findExplanation(anyItem) // GÜÇLÜ AÇIKLAMA BULUCU
+                    explanation: findExplanation(anyItem)
                 };
             });
         }
@@ -289,7 +255,7 @@ export default function QuizPage() {
       });
   }, [testId, isGlobal]);
 
-  // 2) TIMER
+  // 2) TIMER & 3) HANDLERS (AYNI KALDI)
   useEffect(() => {
     if (timeLeft === null || showResult || loading) return;
     if (timeLeft <= 0) { handleSubmit(); return; }
@@ -297,12 +263,10 @@ export default function QuizPage() {
     return () => clearInterval(timerId);
   }, [timeLeft, showResult, loading]);
 
-  // 3) HANDLER
   const handleAnswerChange = useCallback((qId: string, val: string) => {
     setAnswers(prev => ({ ...prev, [qId]: val }));
   }, []);
 
-  // 4) SUBMIT
   const handleSubmit = () => {
     let correctCount = 0;
     let mistakeList: any[] = [];
@@ -343,8 +307,6 @@ export default function QuizPage() {
     return (
       <div className="min-h-screen bg-slate-50 py-12 px-4">
         <div className="max-w-4xl mx-auto space-y-8">
-          
-          {/* SKOR KARTI */}
           <div className="bg-white p-8 rounded-3xl shadow-xl border border-slate-200 text-center relative overflow-hidden">
             <h1 className="text-3xl font-black text-slate-800 mb-6">{labels.resultTitle}</h1>
             <div className="text-6xl font-black text-indigo-600 mb-4">%{percentage}</div>
@@ -354,66 +316,44 @@ export default function QuizPage() {
                <Link href="/mistakes" className="px-6 py-2 bg-rose-100 text-rose-600 rounded-lg font-bold">{labels.seeMistakes}</Link>
             </div>
           </div>
-
-          {/* --- DETAYLI ANALİZ KISMI --- */}
           <div className="space-y-6">
             <h2 className="text-xl font-bold text-slate-700 ml-2 border-l-4 border-indigo-500 pl-3">{labels.analysis}</h2>
-
             {questions.map((q, idx) => {
               const userAnswerId = answers[q.id];
-              const correctId = q.answer; 
-              const isCorrect = userAnswerId === correctId;
+              const isCorrect = userAnswerId === q.answer;
               const isUserAnswered = !!userAnswerId;
-
-              // Kart Rengi
-              let cardBorder = isCorrect ? 'border-emerald-200' : 'border-rose-200';
-              let cardBg = isCorrect ? 'bg-emerald-50/40' : 'bg-red-50/40';
+              let cardBorder = isCorrect ? 'border-emerald-200' : isUserAnswered ? 'border-red-200' : 'border-amber-200';
+              let cardBg = isCorrect ? 'bg-emerald-50/40' : isUserAnswered ? 'bg-red-50/40' : 'bg-amber-50/40';
 
               return (
                 <div key={q.id} className={`p-6 rounded-2xl border-2 ${cardBorder} ${cardBg} transition-all`}>
                   <div className="flex items-start gap-4">
-                    <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold shadow-sm ${
-                      isCorrect ? 'bg-emerald-500' : 'bg-red-500'
-                    }`}>
+                    <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold shadow-sm ${isCorrect ? 'bg-emerald-500' : isUserAnswered ? 'bg-red-500' : 'bg-amber-400'}`}>
                       {isCorrect ? '✓' : isUserAnswered ? '✕' : '-'}
                     </div>
-
                     <div className="flex-grow">
-                      <div className="text-lg font-medium text-slate-800 mb-5 leading-relaxed">
-                         {formatText(q.prompt)}
-                      </div>
-
+                      <div className="text-lg font-medium text-slate-800 mb-5 leading-relaxed">{formatText(q.prompt)}</div>
                       <div className="grid gap-2">
                         {q.choices.map((c) => {
                           const isSelected = userAnswerId === c.id;
-                          const isTheCorrectAnswer = c.id === correctId;
-                          
+                          const isTheCorrectAnswer = c.id === q.answer;
                           let style = 'p-3 rounded-xl border flex items-center justify-between transition-all ';
                           if (isTheCorrectAnswer) style += 'bg-emerald-100 border-emerald-300 text-emerald-900 font-bold shadow-sm';
                           else if (isSelected) style += 'bg-rose-100 border-rose-300 text-rose-900 font-medium';
                           else style += 'bg-white/60 border-slate-200 text-slate-500 opacity-60';
-
                           return (
                             <div key={c.id} className={style}>
-                              <div className="flex items-center gap-3">
-                                <span className="font-bold opacity-50 text-sm">{c.id})</span>
-                                <span>{c.text}</span>
-                              </div>
+                              <div className="flex items-center gap-3"><span className="font-bold opacity-50 text-sm">{c.id})</span><span>{c.text}</span></div>
                               {isTheCorrectAnswer && <span className="text-[10px] bg-emerald-200 text-emerald-800 px-2 py-0.5 rounded-full font-bold">{labels.correctBadge}</span>}
                               {isSelected && !isTheCorrectAnswer && <span className="text-[10px] bg-rose-200 text-rose-800 px-2 py-0.5 rounded-full font-bold">{labels.yourChoice}</span>}
                             </div>
                           );
                         })}
                       </div>
-
-                      {/* AÇIKLAMA ALANI (DÜZELTİLDİ: Sadece yanlış veya boş ise göster) */}
                       {!isCorrect && q.explanation && (
                         <div className="mt-5 p-4 bg-indigo-50 rounded-xl border border-indigo-100 text-sm text-indigo-900 flex gap-3 items-start animate-in fade-in">
                           <span className="text-xl">💡</span>
-                          <div>
-                            <span className="font-bold block mb-1 text-indigo-700">{labels.explanation}</span>
-                            <span className="leading-relaxed opacity-90">{formatText(q.explanation)}</span>
-                          </div>
+                          <div><span className="font-bold block mb-1 text-indigo-700">{labels.explanation}</span><span className="leading-relaxed opacity-90">{formatText(q.explanation)}</span></div>
                         </div>
                       )}
                     </div>
@@ -422,8 +362,6 @@ export default function QuizPage() {
               );
             })}
           </div>
-          {/* --- ANALİZ SONU --- */}
-
         </div>
       </div>
     );
@@ -432,54 +370,27 @@ export default function QuizPage() {
   // --- QUIZ SCREEN ---
   return (
     <div className="min-h-screen bg-slate-50 pb-20">
-      
-      {/* STICKY HEADER */}
       <div className="sticky top-0 z-30 bg-white/95 backdrop-blur-md shadow-md border-b border-slate-200 transition-all">
         <div className="max-w-3xl mx-auto px-4 py-3">
-            
-            {/* Top Row: Back & Timer */}
             <div className="flex items-center justify-between mb-3">
-                <Link href="/" className="p-2 rounded-full hover:bg-slate-100 text-slate-500 transition">
-                  <ArrowLeft className="w-6 h-6" />
-                </Link>
-                <div className={`flex items-center gap-2 text-lg font-mono font-bold px-4 py-1.5 rounded-xl border-2 ${timeLeft! < 60 ? 'text-rose-600 bg-rose-50 border-rose-100 animate-pulse' : 'text-indigo-600 bg-indigo-50 border-indigo-100'}`}>
-                   <Clock className="w-5 h-5" />
-                   {formatTime(timeLeft || 0)}
-                </div>
-                <button onClick={handleSubmit} className="text-sm font-bold text-white bg-slate-900 px-6 py-2.5 rounded-xl hover:bg-slate-800 shadow-md">
-                  {labels.finish}
-                </button>
+                <Link href="/" className="p-2 rounded-full hover:bg-slate-100 text-slate-500 transition"><ArrowLeft className="w-6 h-6" /></Link>
+                <div className={`flex items-center gap-2 text-lg font-mono font-bold px-4 py-1.5 rounded-xl border-2 ${timeLeft! < 60 ? 'text-rose-600 bg-rose-50 border-rose-100 animate-pulse' : 'text-indigo-600 bg-indigo-50 border-indigo-100'}`}><Clock className="w-5 h-5" />{formatTime(timeLeft || 0)}</div>
+                <button onClick={handleSubmit} className="text-sm font-bold text-white bg-slate-900 px-6 py-2.5 rounded-xl hover:bg-slate-800 shadow-md">{labels.finish}</button>
             </div>
-
-            {/* AUDIO PLAYER */}
             {audioSrc && (
                 <div className="bg-sky-50 border border-sky-100 rounded-xl p-3 flex items-center gap-3 animate-in slide-in-from-top-2">
-                    <div className="bg-sky-200 text-sky-700 p-2 rounded-full">
-                        <Headphones className="w-5 h-5" />
-                    </div>
-                    <audio 
-                        key={audioSrc}
-                        controls 
-                        src={audioSrc}
-                        className="w-full h-8 outline-none" 
-                        controlsList="nodownload"
-                    >
-                        Your browser does not support the audio element.
-                    </audio>
+                    <div className="bg-sky-200 text-sky-700 p-2 rounded-full"><Headphones className="w-5 h-5" /></div>
+                    <audio key={audioSrc} controls src={audioSrc} className="w-full h-8 outline-none" controlsList="nodownload">Your browser does not support the audio element.</audio>
                 </div>
             )}
         </div>
       </div>
-
-      {/* QUESTIONS */}
       <div className="max-w-3xl mx-auto px-4 space-y-8 mt-8">
         {questions.map((q, idx) => (
            <QuestionCard key={q.id} q={q} idx={idx} answer={answers[q.id] || ''} onAnswer={handleAnswerChange} labels={labels} />
         ))}
         <div className="pt-8 pb-12 flex justify-center">
-            <button onClick={handleSubmit} className="w-full max-w-md py-4 rounded-2xl text-white text-xl font-bold shadow-xl bg-indigo-600 hover:bg-indigo-700">
-               {labels.completeTest}
-            </button>
+            <button onClick={handleSubmit} className="w-full max-w-md py-4 rounded-2xl text-white text-xl font-bold shadow-xl bg-indigo-600 hover:bg-indigo-700">{labels.completeTest}</button>
         </div>
       </div>
     </div>
