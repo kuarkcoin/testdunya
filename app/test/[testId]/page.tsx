@@ -75,7 +75,7 @@ function formatText(text: string) {
   );
 }
 
-// --- MEMOIZED QUESTION CARD ---
+// --- MEMOIZED QUESTION CARD (Sadece Test Çözerken Kullanılır) ---
 const QuestionCard = React.memo(({ q, idx, answer, onAnswer, labels }: { 
   q: Question, 
   idx: number, 
@@ -142,7 +142,6 @@ export default function QuizPage() {
   const [score, setScore] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
-  const [testTitle, setTestTitle] = useState('');
   
   // NEW: Audio State
   const [audioSrc, setAudioSrc] = useState<string | null>(null);
@@ -168,8 +167,6 @@ export default function QuizPage() {
       })
       .then(rawdata => {
         let normalizedQuestions: Question[] = [];
-        let fetchedTitle = testId.replace(/-/g, ' ').toUpperCase();
-        setTestTitle(fetchedTitle);
 
         // --- SENARYO A: IELTS READING/LISTENING (İç içe yapı) ---
         if ((testId.includes('reading') || testId.includes('listening')) && Array.isArray(rawdata) && rawdata[0].passageId) {
@@ -332,6 +329,8 @@ export default function QuizPage() {
     return (
       <div className="min-h-screen bg-slate-50 py-12 px-4">
         <div className="max-w-4xl mx-auto space-y-8">
+          
+          {/* SKOR KARTI */}
           <div className="bg-white p-8 rounded-3xl shadow-xl border border-slate-200 text-center relative overflow-hidden">
             <h1 className="text-3xl font-black text-slate-800 mb-6">{labels.resultTitle}</h1>
             <div className="text-6xl font-black text-indigo-600 mb-4">%{percentage}</div>
@@ -341,6 +340,75 @@ export default function QuizPage() {
                <Link href="/mistakes" className="px-6 py-2 bg-rose-100 text-rose-600 rounded-lg font-bold">{labels.seeMistakes}</Link>
             </div>
           </div>
+
+          {/* --- DETAYLI ANALİZ KISMI (EKLENDİ) --- */}
+          <div className="space-y-6">
+            <h2 className="text-xl font-bold text-slate-700 ml-2 border-l-4 border-indigo-500 pl-3">{labels.analysis}</h2>
+
+            {questions.map((q, idx) => {
+              const userAnswerId = answers[q.id];
+              const correctId = q.answer; 
+              const isCorrect = userAnswerId === correctId;
+              const isUserAnswered = !!userAnswerId;
+
+              let cardBorder = isCorrect ? 'border-emerald-200' : isUserAnswered ? 'border-red-200' : 'border-amber-200';
+              let cardBg = isCorrect ? 'bg-emerald-50/40' : isUserAnswered ? 'bg-red-50/40' : 'bg-amber-50/40';
+
+              return (
+                <div key={q.id} className={`p-6 rounded-2xl border-2 ${cardBorder} ${cardBg} transition-all`}>
+                  <div className="flex items-start gap-4">
+                    <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold shadow-sm ${
+                      isCorrect ? 'bg-emerald-500' : isUserAnswered ? 'bg-red-500' : 'bg-amber-400'
+                    }`}>
+                      {isCorrect ? '✓' : isUserAnswered ? '✕' : '-'}
+                    </div>
+
+                    <div className="flex-grow">
+                      <div className="text-lg font-medium text-slate-800 mb-5 leading-relaxed">
+                         {formatText(q.prompt)}
+                      </div>
+
+                      <div className="grid gap-2">
+                        {q.choices.map((c) => {
+                          const isSelected = userAnswerId === c.id;
+                          const isTheCorrectAnswer = c.id === correctId;
+                          
+                          let style = 'p-3 rounded-xl border flex items-center justify-between transition-all ';
+                          if (isTheCorrectAnswer) style += 'bg-emerald-100 border-emerald-300 text-emerald-900 font-bold shadow-sm';
+                          else if (isSelected) style += 'bg-rose-100 border-rose-300 text-rose-900 font-medium';
+                          else style += 'bg-white/60 border-slate-200 text-slate-500 opacity-60';
+
+                          return (
+                            <div key={c.id} className={style}>
+                              <div className="flex items-center gap-3">
+                                <span className="font-bold opacity-50 text-sm">{c.id})</span>
+                                <span>{c.text}</span>
+                              </div>
+                              {isTheCorrectAnswer && <span className="text-[10px] bg-emerald-200 text-emerald-800 px-2 py-0.5 rounded-full font-bold">{labels.correctBadge}</span>}
+                              {isSelected && !isTheCorrectAnswer && <span className="text-[10px] bg-rose-200 text-rose-800 px-2 py-0.5 rounded-full font-bold">{labels.yourChoice}</span>}
+                            </div>
+                          );
+                        })}
+                      </div>
+
+                      {/* AÇIKLAMA ALANI */}
+                      {q.explanation && !isCorrect && (
+                        <div className="mt-5 p-4 bg-indigo-50 rounded-xl border border-indigo-100 text-sm text-indigo-900 flex gap-3 items-start animate-in fade-in">
+                          <span className="text-xl">💡</span>
+                          <div>
+                            <span className="font-bold block mb-1 text-indigo-700">{labels.explanation}</span>
+                            <span className="leading-relaxed opacity-90">{formatText(q.explanation)}</span>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+          {/* --- ANALİZ SONU --- */}
+
         </div>
       </div>
     );
@@ -374,15 +442,16 @@ export default function QuizPage() {
                     <div className="bg-sky-200 text-sky-700 p-2 rounded-full">
                         <Headphones className="w-5 h-5" />
                     </div>
+                    {/* KEY FIX */}
                     <audio 
-    key={audioSrc} // <--- BU ÇOK ÖNEMLİ (React'in yenilemesi için)
-    controls 
-    src={audioSrc} // <--- src'yi direkt buraya veriyoruz
-    className="w-full h-8 outline-none" 
-    controlsList="nodownload"
->
-    Your browser does not support the audio element.
-</audio>
+                        key={audioSrc}
+                        controls 
+                        src={audioSrc}
+                        className="w-full h-8 outline-none" 
+                        controlsList="nodownload"
+                    >
+                        Your browser does not support the audio element.
+                    </audio>
                 </div>
             )}
         </div>
