@@ -44,9 +44,12 @@ const Stethoscope = (props: React.SVGProps<SVGSVGElement>) => (
 const Globe = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
 );
-// --- YENİ EKLENEN MIC (SPEAKING) İKONU ---
 const Mic = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
+);
+// --- HESAP MAKİNESİ İKONU ---
+const Calculator = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/><line x1="16" x2="16" y1="14" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></svg>
 );
 
 // --- SINAV AYARLARI ---
@@ -101,7 +104,7 @@ const examConfig = [
   }
 ];
 
-// --- IELTS MODÜLLERİ (SPEAKING EKLENDİ) ---
+// --- IELTS MODÜLLERİ ---
 const ieltsModules = [
   {
     id: 'ielts-reading',
@@ -113,6 +116,15 @@ const ieltsModules = [
     border: 'border-sky-200'
   },
   {
+    id: 'ielts-listening',
+    title: 'Listening',
+    desc: 'Audio Conversations',
+    icon: <div className="w-6 h-6 flex items-center justify-center font-bold text-lg">🎧</div>, 
+    color: 'text-emerald-600',
+    bg: 'bg-emerald-50',
+    border: 'border-emerald-200'
+  },
+  {
     id: 'ielts-writing',
     title: 'Writing',
     desc: 'Logic & Templates',
@@ -120,6 +132,15 @@ const ieltsModules = [
     color: 'text-amber-600',
     bg: 'bg-amber-50',
     border: 'border-amber-200'
+  },
+  {
+    id: 'ielts-speaking',
+    title: 'Speaking',
+    desc: 'Cue Card Simulator',
+    icon: <Mic className="w-6 h-6" />,
+    color: 'text-indigo-600',
+    bg: 'bg-indigo-50',
+    border: 'border-indigo-200'
   },
   {
     id: 'ielts-vocab',
@@ -139,23 +160,15 @@ const ieltsModules = [
     bg: 'bg-purple-50',
     border: 'border-purple-200'
   },
+  // --- YENİ EKLENEN HESAP MAKİNESİ ---
   {
-    id: 'ielts-speaking', // BURASI ÖZEL ID
-    title: 'Speaking',
-    desc: 'Cue Card Simulator',
-    icon: <Mic className="w-6 h-6" />,
-    color: 'text-indigo-600',
-    bg: 'bg-indigo-50',
-    border: 'border-indigo-200'
-  },
-  {
-    id: 'ielts-listening',
-    title: 'Listening',
-    desc: 'Audio Conversations',
-    icon: <div className="w-6 h-6 flex items-center justify-center font-bold text-lg">🎧</div>, 
-    color: 'text-emerald-600',
-    bg: 'bg-emerald-50',
-    border: 'border-emerald-200'
+    id: 'ielts-calculator',
+    title: 'Score Calculator',
+    desc: 'Calculate Band Score',
+    icon: <Calculator className="w-6 h-6" />,
+    color: 'text-teal-600',
+    bg: 'bg-teal-50',
+    border: 'border-teal-200'
   }
 ];
 
@@ -182,7 +195,7 @@ export default function HomePage() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
               </span>
-              TestDünya v3.0 • Şimdi IELTS Eklendi
+              TestDünya v3.1 • Şimdi IELTS Eklendi
             </div>
 
             <h1 className="text-3xl md:text-5xl font-black tracking-tight leading-tight">
@@ -234,24 +247,25 @@ export default function HomePage() {
               </div>
            </div>
 
-           {/* IELTS Modules Grid (GÜNCELLENDİ) */}
-           {/* Speaking için 5'li grid sistemine geçildi (lg:grid-cols-5) */}
-           <div className="p-6 bg-slate-50/50 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+           {/* IELTS Modules Grid */}
+           <div className="p-6 bg-slate-50/50 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-4">
               {ieltsModules.map((module) => {
-                // Link Mantığı: Speaking ise özel link, değilse /test/[id]
-                const linkHref = module.id === 'ielts-speaking' ? '/ielts/speaking' : `/test/${module.id}`;
+                // Link Mantığı: Speaking ve Calculator için özel link, diğerleri /test/[id]
+                let linkHref = `/test/${module.id}`;
+                if (module.id === 'ielts-speaking') linkHref = '/ielts/speaking';
+                if (module.id === 'ielts-calculator') linkHref = '/ielts/calculator';
 
                 return (
                   <Link 
                     key={module.id} 
                     href={linkHref} 
-                    className={`flex flex-col items-center justify-center p-6 rounded-xl border-2 transition-all hover:-translate-y-1 hover:shadow-lg ${module.bg} ${module.border} ${module.color} bg-white`}
+                    className={`flex flex-col items-center justify-center p-4 rounded-xl border-2 transition-all hover:-translate-y-1 hover:shadow-lg ${module.bg} ${module.border} ${module.color} bg-white group/item h-full`}
                   >
-                    <div className={`mb-3 p-3 rounded-full bg-white shadow-sm ring-1 ring-black/5 ${module.color}`}>
+                    <div className={`mb-3 p-3 rounded-full bg-white shadow-sm ring-1 ring-black/5 ${module.color} group-hover/item:scale-110 transition-transform`}>
                        {module.icon}
                     </div>
-                    <h3 className="font-bold text-lg text-slate-900">{module.title}</h3>
-                    <p className="text-xs font-semibold opacity-70 uppercase tracking-wide mt-1">{module.desc}</p>
+                    <h3 className="font-bold text-sm md:text-base text-slate-900 text-center">{module.title}</h3>
+                    <p className="text-[10px] font-bold opacity-60 uppercase tracking-wide mt-1 text-center">{module.desc}</p>
                   </Link>
                 );
               })}
