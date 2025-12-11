@@ -1,0 +1,60 @@
+[
+  {
+    "passageId": 1,
+    "title": "IELTS Listening Part 2: Museum Tour",
+    "audio": "/audio/ielts-museum.mp3",
+    "text": "Listen to the guide introducing the new exhibition.",
+    "questions": [
+      {
+        "id": "il-p3-q1",
+        "prompt": "What was the museum building originally used as?",
+        "A": "A bank",
+        "B": "A library",
+        "C": "A police station",
+        "D": "A school",
+        "correct": "B",
+        "explanation": "The guide says: 'It was originally used as the city's main **library**'."
+      },
+      {
+        "id": "il-p3-q2",
+        "prompt": "What is the most valuable item in the Stone Age collection?",
+        "A": "A large spearhead",
+        "B": "A stone axe",
+        "C": "A bone needle",
+        "D": "A necklace",
+        "correct": "C",
+        "explanation": "He mentions: 'The most valuable item here isn't the large spearheads, but a tiny **bone needle**'."
+      },
+      {
+        "id": "il-p3-q3",
+        "prompt": "Where did the pottery in the Bronze Age room come from?",
+        "A": "Locally made",
+        "B": "Germany",
+        "C": "Italy",
+        "D": "France",
+        "correct": "D",
+        "explanation": "The guide states: 'they were actually imported from **France**'."
+      },
+      {
+        "id": "il-p3-q4",
+        "prompt": "What is strictly forbidden inside the exhibition?",
+        "A": "Taking photos",
+        "B": "Using flash photography",
+        "C": "Drinking water",
+        "D": "Using mobile phones",
+        "correct": "B",
+        "explanation": "He warns: 'you are allowed to take photos, but please, **do not use flash**'."
+      },
+      {
+        "id": "il-p3-q5",
+        "prompt": "What time does the gift shop close?",
+        "A": "4:00 pm",
+        "B": "4:30 pm",
+        "C": "5:00 pm",
+        "D": "5:30 pm",
+        "correct": "B",
+        "explanation": "He explicitly says: 'it closes at **4:30 pm**, which is 30 minutes before the museum closes'."
+      }
+    ]
+  }
+]
