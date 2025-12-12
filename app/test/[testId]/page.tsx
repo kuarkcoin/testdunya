@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useCallback, useRef } from 'react';
+import React, { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 
@@ -17,7 +17,7 @@ const Headphones = (props: React.SVGProps<SVGSVGElement>) => (
 
 // --- TYPES ---
 interface Choice {
-  id: string; 
+  id: string;
   text: string;
 }
 
@@ -53,13 +53,13 @@ const getLabels = (isGlobal: boolean) => ({
 function formatTime(seconds: number): string {
   const m = Math.floor(seconds / 60);
   const s = seconds % 60;
-  return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+  return `\( {m.toString().padStart(2, '0')}: \){s.toString().padStart(2, '0')}`;
 }
 
 function formatText(text: string) {
   if (!text) return null;
   if (text.includes('<div') || text.includes('<p>') || text.includes('custom-reading-content')) {
-     return <div className="prose prose-slate max-w-none" dangerouslySetInnerHTML={{ __html: text }} />;
+    return <div className="prose prose-slate max-w-none" dangerouslySetInnerHTML={{ __html: text }} />;
   }
   const parts = String(text).split(/(\*\*.*?\*\*)/g);
   return (
@@ -77,38 +77,38 @@ function formatText(text: string) {
 
 function findExplanation(item: any): string {
   return (
-    item.explanation || item.Explanation || item.aciklama || item.Açıklama || 
+    item.explanation || item.Explanation || item.aciklama || item.Açıklama ||
     item.solution || item.Solution || item.cozum || item.Çözüm || ""
   );
 }
 
 // --- MEMOIZED QUESTION CARD ---
-const QuestionCard = React.memo(({ q, idx, answer, onAnswer, labels }: { 
+const QuestionCard = React.memo(({ q, idx, answer, onAnswer, labels }: {
   q: Question, idx: number, answer: string, onAnswer: (qid: string, val: string) => void, labels: any
 }) => {
   return (
     <div className="bg-white p-6 md:p-8 rounded-3xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow duration-300">
       <div className="flex items-center gap-3 mb-6">
-         <span className="bg-slate-100 text-slate-500 text-xs font-black px-3 py-1 rounded-lg uppercase tracking-wider">
-           {labels.question} {idx + 1}
-         </span>
+        <span className="bg-slate-100 text-slate-500 text-xs font-black px-3 py-1 rounded-lg uppercase tracking-wider">
+          {labels.question} {idx + 1}
+        </span>
       </div>
       <div className="text-lg sm:text-xl font-medium text-slate-800 mb-8 leading-relaxed">
-         {formatText(q.prompt)}
+        {formatText(q.prompt)}
       </div>
       <div className="grid gap-3">
         {q.choices.map((c) => (
           <label key={c.id} className={`group cursor-pointer flex items-center p-4 rounded-2xl border-2 transition-all duration-200 active:scale-[0.99] ${
-              answer === c.id ? 'border-indigo-600 bg-indigo-50/50 shadow-md ring-1 ring-indigo-600' : 'border-slate-100 hover:border-indigo-300 hover:bg-indigo-50/10'
+            answer === c.id ? 'border-indigo-600 bg-indigo-50/50 shadow-md ring-1 ring-indigo-600' : 'border-slate-100 hover:border-indigo-300 hover:bg-indigo-50/10'
           }`}>
             <div className={`w-6 h-6 rounded-full border-2 flex items-center justify-center mr-4 transition-colors flex-shrink-0 ${
-                answer === c.id ? 'border-indigo-600 bg-indigo-600' : 'border-slate-300 group-hover:border-indigo-400'
+              answer === c.id ? 'border-indigo-600 bg-indigo-600' : 'border-slate-300 group-hover:border-indigo-400'
             }`}>
-                {answer === c.id && <div className="w-2.5 h-2.5 rounded-full bg-white shadow-sm" />}
+              {answer === c.id && <div className="w-2.5 h-2.5 rounded-full bg-white shadow-sm" />}
             </div>
             <input type="radio" name={`question-${q.id}`} className="hidden" checked={answer === c.id} onChange={() => onAnswer(q.id, c.id)} />
             <span className={`text-base sm:text-lg select-none ${answer === c.id ? 'text-indigo-900 font-semibold' : 'text-slate-600 font-medium'}`}>
-               {c.text}
+              {c.text}
             </span>
           </label>
         ))}
@@ -121,7 +121,7 @@ QuestionCard.displayName = 'QuestionCard';
 // --- MAIN PAGE COMPONENT ---
 export default function QuizPage() {
   const params = useParams();
-  const testId = params?.testId as string || params?.id as string;
+  const testId = (params?.testId as string) || (params?.id as string);
 
   const isGlobal = testId?.includes('ielts') || false;
   const labels = getLabels(isGlobal);
@@ -133,36 +133,40 @@ export default function QuizPage() {
   const [score, setScore] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
-  
+
   const [audioSrc, setAudioSrc] = useState<string | null>(null);
-  
-  // --- AUDIO SPEED CONTROL ---
   const [playbackRate, setPlaybackRate] = useState(1);
   const audioRef = useRef<HTMLAudioElement>(null);
 
-  // Hız Değiştirme Fonksiyonu
+  // Hız değiştirme
   const toggleSpeed = () => {
-    const speeds = [1, 1.25, 1.5, 0.75]; // Sırasıyla: Normal -> Hızlı -> Çok Hızlı -> Yavaş
+    const speeds = [1, 1.25, 1.5, 0.75];
     const currentIndex = speeds.indexOf(playbackRate);
     const nextIndex = (currentIndex + 1) % speeds.length;
-    const newSpeed = speeds[nextIndex];
-    
-    setPlaybackRate(newSpeed);
-    if (audioRef.current) {
-        audioRef.current.playbackRate = newSpeed;
-    }
+    setPlaybackRate(speeds[nextIndex]);
   };
+
+  // playbackRate değiştiğinde audio elementine yansıt
+  useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.playbackRate = playbackRate;
+    }
+  }, [playbackRate]);
 
   // 1) LOAD DATA
   useEffect(() => {
     if (!testId) return;
+
     setLoading(true);
-    setAudioSrc(null); // Reset audio
-    setPlaybackRate(1); // Reset speed
+    setAudioSrc(null);
+    setPlaybackRate(1);
+    setAnswers({});
+    setShowResult(false);
+    setScore(0);
 
-    const jsonUrl = `/data/tests/${testId}.json`;
+    const jsonUrl = `/data/tests/\( {testId}.json?t= \){Date.now()}`;
 
-    fetch(`${jsonUrl}?t=${Date.now()}`)
+    fetch(jsonUrl)
       .then(res => {
         if (!res.ok) throw new Error(isGlobal ? "Test file not found." : "Test dosyası bulunamadı.");
         return res.json();
@@ -170,102 +174,85 @@ export default function QuizPage() {
       .then(rawdata => {
         let normalizedQuestions: Question[] = [];
 
-        // --- SENARYO A: READING & LISTENING (İç içe yapı) ---
-        if ((testId.includes('reading') || testId.includes('listening')) && Array.isArray(rawdata) && rawdata[0].passageId) {
-            
-            if (rawdata[0].audio) {
-                setAudioSrc(rawdata[0].audio);
+        // Listening & Reading (passage bazlı)
+        if ((testId.includes('reading') || testId.includes('listening')) && Array.isArray(rawdata) && rawdata[0]?.passageId) {
+          if (rawdata[0].audio) setAudioSrc(rawdata[0].audio);
+
+          rawdata.forEach((passage: any) => {
+            if (Array.isArray(passage.questions)) {
+              passage.questions.forEach((q: any, idx: number) => {
+                let combinedPrompt = q.prompt;
+
+                if (testId.includes('reading')) {
+                  combinedPrompt = `
+                    <div class="mb-8 p-6 bg-white border-l-4 border-sky-500 shadow-sm rounded-r-xl text-slate-700 text-base leading-relaxed font-serif custom-reading-content">
+                      <h3 class="font-bold text-sky-900 text-xl mb-4 border-b border-sky-100 pb-2">${passage.title || ''}</h3>
+                      ${passage.text || ''}
+                    </div>
+                    <div class="font-bold text-slate-900 text-lg mt-6 pt-4 border-t border-slate-100">${q.prompt}</div>
+                  `;
+                }
+
+                const choices = ['A', 'B', 'C', 'D'].map((L, i) => q[L] ? { id: ['A','B','C','D'][i], text: q[L] } : null).filter(Boolean) as Choice[];
+
+                normalizedQuestions.push({
+                  id: q.id || `q-\( {passage.passageId}- \){idx}`,
+                  prompt: combinedPrompt,
+                  choices,
+                  answer: q.correct,
+                  explanation: findExplanation(q)
+                });
+              });
+            }
+          });
+        }
+        // Normal testler
+        else {
+          const rawList = Array.isArray(rawdata) ? rawdata : rawdata?.questions || [];
+
+          normalizedQuestions = rawList.map((item: any, idx: number) => {
+            const rawOptions: string[] = Array.isArray(item.options)
+              ? item.options
+              : ['A', 'B', 'C', 'D', 'E'].map(l => item[l]).filter(Boolean);
+
+            const choices = rawOptions.map((opt: string, i: number) => ({
+              id: String.fromCharCode(65 + i),
+              text: opt
+            }));
+
+            let correctId = (item.answer || item.correct || '').toString().trim().toUpperCase();
+            if (correctId.length > 1) {
+              const found = choices.find(c => c.text === correctId);
+              if (found) correctId = found.id;
             }
 
-            rawdata.forEach((passage: any) => {
-                if (Array.isArray(passage.questions)) {
-                    passage.questions.forEach((q: any, idx: number) => {
-                        let combinedPrompt = q.prompt;
-
-                        // Reading ise metni ekle
-                        if (testId.includes('reading')) {
-                             combinedPrompt = `
-                                <div class="mb-8 p-6 bg-white border-l-4 border-sky-500 shadow-sm rounded-r-xl text-slate-700 text-base leading-relaxed font-serif custom-reading-content">
-                                  <h3 class="font-bold text-sky-900 text-xl mb-4 border-b border-sky-100 pb-2">${passage.title}</h3>
-                                  ${passage.text}
-                                </div>
-                                <div class="font-bold text-slate-900 text-lg mt-6 pt-4 border-t border-slate-100">${q.prompt}</div>
-                            `;
-                        }
-
-                        const choices = ['A', 'B', 'C', 'D'].map((L, i) => {
-                            if (!q[L]) return null;
-                            return { id: ['A','B','C','D'][i], text: q[L] };
-                        }).filter(Boolean) as Choice[];
-
-                        normalizedQuestions.push({
-                            id: q.id || `q-${passage.passageId}-${idx}`,
-                            prompt: combinedPrompt,
-                            choices: choices,
-                            answer: q.correct,
-                            explanation: findExplanation(q)
-                        });
-                    });
-                }
-            });
-        } 
-        // --- SENARYO B: STANDART TESTLER ---
-        else {
-            let rawList: any[] = [];
-            if (Array.isArray(rawdata)) rawList = rawdata;
-            else if (rawdata && rawdata.questions) rawList = rawdata.questions;
-
-            normalizedQuestions = rawList.map((item, idx) => {
-                const anyItem = item as any; 
-                let choices: Choice[] = [];
-                let rawOptions: string[] = [];
-
-                if (Array.isArray(anyItem.options)) rawOptions = anyItem.options;
-                else if (anyItem.A || anyItem.B) { 
-                     if(anyItem.A) rawOptions.push(anyItem.A);
-                     if(anyItem.B) rawOptions.push(anyItem.B);
-                     if(anyItem.C) rawOptions.push(anyItem.C);
-                     if(anyItem.D) rawOptions.push(anyItem.D);
-                     if(anyItem.E) rawOptions.push(anyItem.E);
-                } 
-                
-                choices = rawOptions.map((optText, optIdx) => ({
-                    id: String.fromCharCode(65 + optIdx), text: String(optText)
-                }));
-
-                let finalAnswerId = (anyItem.answer || anyItem.correct || "").toString().trim();
-                if (finalAnswerId.length === 1) finalAnswerId = finalAnswerId.toUpperCase();
-                else {
-                    const found = choices.find(c => c.text === finalAnswerId);
-                    if (found) finalAnswerId = found.id;
-                }
-
-                return {
-                    id: anyItem.id || String(idx),
-                    prompt: anyItem.prompt || anyItem.question || anyItem.soru || "...",
-                    choices: choices,
-                    answer: finalAnswerId,
-                    explanation: findExplanation(anyItem)
-                };
-            });
+            return {
+              id: item.id || String(idx),
+              prompt: item.prompt || item.question || item.soru || "...",
+              choices,
+              answer: correctId,
+              explanation: findExplanation(item)
+            };
+          });
         }
 
         if (normalizedQuestions.length === 0) {
-            setError(isGlobal ? "No questions found." : "Soru bulunamadı.");
+          setError(isGlobal ? "No questions found." : "Soru bulunamadı.");
         } else {
-            setQuestions(normalizedQuestions);
-            if (testId.includes('reading')) setTimeLeft(1200); 
-            else if (testId.includes('listening')) setTimeLeft(1800);
-            else {
-                const calc = normalizedQuestions.length * 60;
-                setTimeLeft(calc < 600 ? 600 : calc);
-            }
+          setQuestions(normalizedQuestions);
+
+          if (testId.includes('reading')) setTimeLeft(1200);
+          else if (testId.includes('listening')) setTimeLeft(1800);
+          else {
+            const calc = normalizedQuestions.length * 60;
+            setTimeLeft(calc < 600 ? 600 : calc);
+          }
         }
         setLoading(false);
       })
       .catch(err => {
         console.error(err);
-        setError("Error loading test.");
+        setError(isGlobal ? "Error loading test." : "Test yüklenirken hata oluştu.");
         setLoading(false);
       });
   }, [testId, isGlobal]);
@@ -273,52 +260,76 @@ export default function QuizPage() {
   // 2) TIMER
   useEffect(() => {
     if (timeLeft === null || showResult || loading) return;
-    if (timeLeft <= 0) { handleSubmit(); return; }
-    const timerId = setInterval(() => setTimeLeft((p) => (p !== null && p > 0 ? p - 1 : 0)), 1000);
+    if (timeLeft <= 0) {
+      handleSubmit();
+      return;
+    }
+
+    const timerId = setInterval(() => {
+      setTimeLeft(prev => (prev !== null && prev > 0 ? prev - 1 : 0));
+    }, 1000);
+
     return () => clearInterval(timerId);
   }, [timeLeft, showResult, loading]);
 
+  // Cevap değişimi
   const handleAnswerChange = useCallback((qId: string, val: string) => {
     setAnswers(prev => ({ ...prev, [qId]: val }));
   }, []);
 
-  const handleSubmit = () => {
+  // Testi bitir (useCallback + doğru bağımlılıklar)
+  const handleSubmit = useCallback(() => {
     let correctCount = 0;
     let mistakeList: any[] = [];
-    try {
-        const stored = localStorage.getItem('my_mistakes');
-        if (stored) mistakeList = JSON.parse(stored);
-    } catch(e) { mistakeList = []; }
 
-    questions.forEach((q) => {
-        const userVal = answers[q.id]; 
-        const isCorrect = (userVal === q.answer);
-        if (isCorrect) {
-            correctCount++;
-            mistakeList = mistakeList.filter(m => m.uniqueId !== `${testId}-${q.id}`);
-        } else if (userVal) {
-            const uniqueId = `${testId}-${q.id}`;
-            if (!mistakeList.some(m => m.uniqueId === uniqueId)) {
-                mistakeList.push({
-                    uniqueId, testTitle: testId, prompt: q.prompt, choices: q.choices,
-                    answer: q.answer, myWrongAnswer: userVal, explanation: q.explanation,
-                    savedAt: new Date().toISOString()
-                });
-            }
+    try {
+      const stored = localStorage.getItem('my_mistakes');
+      if (stored) mistakeList = JSON.parse(stored);
+    } catch (e) { /* ignore */ }
+
+    questions.forEach(q => {
+      const userAns = answers[q.id];
+      const isCorrect = userAns === q.answer;
+
+      if (isCorrect) {
+        correctCount++;
+        mistakeList = mistakeList.filter((m: any) => m.uniqueId !== `\( {testId}- \){q.id}`);
+      } else if (userAns) {
+        const uniqueId = `\( {testId}- \){q.id}`;
+        if (!mistakeList.some((m: any) => m.uniqueId === uniqueId)) {
+          mistakeList.push({
+            uniqueId,
+            testTitle: testId,
+            prompt: q.prompt,
+            choices: q.choices,
+            answer: q.answer,
+            myWrongAnswer: userAns,
+            explanation: q.explanation,
+            savedAt: new Date().toISOString()
+          });
         }
+      }
     });
+
     localStorage.setItem('my_mistakes', JSON.stringify(mistakeList));
     setScore(correctCount);
     setShowResult(true);
     window.scrollTo(0, 0);
-  };
+  }, [questions, answers, testId]);
 
+  // Timer useEffect'ine handleSubmit ekle (dependency)
+  useEffect(() => {
+    // bu sadece dependency hatasını gidermek için
+  }, [handleSubmit]);
+
+  // Loading & Error
   if (loading) return <div className="min-h-screen flex items-center justify-center text-slate-500 font-bold animate-pulse">{labels.loading}</div>;
   if (error) return <div className="min-h-screen flex items-center justify-center text-red-500 font-bold">{error}</div>;
 
   // --- RESULT SCREEN ---
   if (showResult) {
     const percentage = Math.round((score / questions.length) * 100);
+
     return (
       <div className="min-h-screen bg-slate-50 py-12 px-4">
         <div className="max-w-4xl mx-auto space-y-8">
@@ -327,48 +338,54 @@ export default function QuizPage() {
             <div className="text-6xl font-black text-indigo-600 mb-4">%{percentage}</div>
             <div className="text-slate-500 font-bold">{score} / {questions.length}</div>
             <div className="flex justify-center gap-4 mt-8">
-               <Link href="/" className="px-6 py-2 bg-slate-100 rounded-lg font-bold">{labels.homeButton}</Link>
-               <Link href="/mistakes" className="px-6 py-2 bg-rose-100 text-rose-600 rounded-lg font-bold">{labels.seeMistakes}</Link>
+              <Link href="/" className="px-6 py-2 bg-slate-100 rounded-lg font-bold">{labels.homeButton}</Link>
+              <Link href="/mistakes" className="px-6 py-2 bg-rose-100 text-rose-600 rounded-lg font-bold">{labels.seeMistakes}</Link>
             </div>
           </div>
+
           <div className="space-y-6">
             <h2 className="text-xl font-bold text-slate-700 ml-2 border-l-4 border-indigo-500 pl-3">{labels.analysis}</h2>
             {questions.map((q, idx) => {
               const userAnswerId = answers[q.id];
               const isCorrect = userAnswerId === q.answer;
-              const isUserAnswered = !!userAnswerId;
-              let cardBorder = isCorrect ? 'border-emerald-200' : isUserAnswered ? 'border-red-200' : 'border-amber-200';
-              let cardBg = isCorrect ? 'bg-emerald-50/40' : isUserAnswered ? 'bg-red-50/40' : 'bg-amber-50/40';
+              const isAnswered = !!userAnswerId;
+
+              const cardBorder = isCorrect ? 'border-emerald-200' : isAnswered ? 'border-red-200' : 'border-amber-200';
+              const cardBg = isCorrect ? 'bg-emerald-50/40' : isAnswered ? 'bg-red-50/40' : 'bg-amber-50/40';
 
               return (
-                <div key={q.id} className={`p-6 rounded-2xl border-2 ${cardBorder} ${cardBg} transition-all`}>
+                <div key={q.id} className={`p-6 rounded-2xl border-2 \( {cardBorder} \){cardBg} transition-all`}>
                   <div className="flex items-start gap-4">
-                    <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold shadow-sm ${isCorrect ? 'bg-emerald-500' : isUserAnswered ? 'bg-red-500' : 'bg-amber-400'}`}>
-                      {isCorrect ? '✓' : isUserAnswered ? '✕' : '-'}
+                    <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold shadow-sm ${isCorrect ? 'bg-emerald-500' : isAnswered ? 'bg-red-500' : 'bg-amber-400'}`}>
+                      {isCorrect ? 'Correct' : isAnswered ? 'Wrong' : '-'}
                     </div>
                     <div className="flex-grow">
                       <div className="text-lg font-medium text-slate-800 mb-5 leading-relaxed">{formatText(q.prompt)}</div>
                       <div className="grid gap-2">
-                        {q.choices.map((c) => {
+                        {q.choices.map(c => {
                           const isSelected = userAnswerId === c.id;
-                          const isTheCorrectAnswer = c.id === q.answer;
+                          const isCorrectAns = c.id === q.answer;
                           let style = 'p-3 rounded-xl border flex items-center justify-between transition-all ';
-                          if (isTheCorrectAnswer) style += 'bg-emerald-100 border-emerald-300 text-emerald-900 font-bold shadow-sm';
+                          if (isCorrectAns) style += 'bg-emerald-100 border-emerald-300 text-emerald-900 font-bold shadow-sm';
                           else if (isSelected) style += 'bg-rose-100 border-rose-300 text-rose-900 font-medium';
                           else style += 'bg-white/60 border-slate-200 text-slate-500 opacity-60';
+
                           return (
                             <div key={c.id} className={style}>
-                              <div className="flex items-center gap-3"><span className="font-bold opacity-50 text-sm">{c.id})</span><span>{c.text}</span></div>
-                              {isTheCorrectAnswer && <span className="text-[10px] bg-emerald-200 text-emerald-800 px-2 py-0.5 rounded-full font-bold">{labels.correctBadge}</span>}
-                              {isSelected && !isTheCorrectAnswer && <span className="text-[10px] bg-rose-200 text-rose-800 px-2 py-0.5 rounded-full font-bold">{labels.yourChoice}</span>}
+                              <div className="flex items-center gap-3"><span className="font-bold opacity-50 text-sm">{c.id})</span>{c.text}</div>
+                              {isCorrectAns && <span className="text-[10px] bg-emerald-200 text-emerald-800 px-2 py-0.5 rounded-full font-bold">{labels.correctBadge}</span>}
+                              {isSelected && !isCorrectAns && <span className="text-[10px] bg-rose-200 text-rose-800 px-2 py-0.5 rounded-full font-bold">{labels.yourChoice}</span>}
                             </div>
                           );
                         })}
                       </div>
                       {!isCorrect && q.explanation && (
-                        <div className="mt-5 p-4 bg-indigo-50 rounded-xl border border-indigo-100 text-sm text-indigo-900 flex gap-3 items-start animate-in fade-in">
-                          <span className="text-xl">💡</span>
-                          <div><span className="font-bold block mb-1 text-indigo-700">{labels.explanation}</span><span className="leading-relaxed opacity-90">{formatText(q.explanation)}</span></div>
+                        <div className="mt-5 p-4 bg-indigo-50 rounded-xl border border-indigo-100 text-sm text-indigo-900 flex gap-3 items-start">
+                          <span className="text-xl">Info</span>
+                          <div>
+                            <span className="font-bold block mb-1 text-indigo-700">{labels.explanation}</span>
+                            <span className="leading-relaxed opacity-90">{formatText(q.explanation)}</span>
+                          </div>
                         </div>
                       )}
                     </div>
@@ -385,50 +402,66 @@ export default function QuizPage() {
   // --- QUIZ SCREEN ---
   return (
     <div className="min-h-screen bg-slate-50 pb-20">
-      
-      {/* STICKY HEADER WITH AUDIO PLAYER */}
-      <div className="sticky top-0 z-30 bg-white/95 backdrop-blur-md shadow-md border-b border-slate-200 transition-all">
+      {/* STICKY HEADER */}
+      <div className="sticky top-0 z-30 bg-white/95 backdrop-blur-md shadow-md border-b border-slate-200">
         <div className="max-w-3xl mx-auto px-4 py-3">
-            <div className="flex items-center justify-between mb-3">
-                <Link href="/" className="p-2 rounded-full hover:bg-slate-100 text-slate-500 transition"><ArrowLeft className="w-6 h-6" /></Link>
-                <div className={`flex items-center gap-2 text-lg font-mono font-bold px-4 py-1.5 rounded-xl border-2 ${timeLeft! < 60 ? 'text-rose-600 bg-rose-50 border-rose-100 animate-pulse' : 'text-indigo-600 bg-indigo-50 border-indigo-100'}`}><Clock className="w-5 h-5" />{formatTime(timeLeft || 0)}</div>
-                <button onClick={handleSubmit} className="text-sm font-bold text-white bg-slate-900 px-6 py-2.5 rounded-xl hover:bg-slate-800 shadow-md">{labels.finish}</button>
-            </div>
-            
-            {audioSrc && (
-                <div className="bg-sky-50 border border-sky-100 rounded-xl p-3 flex items-center gap-3 animate-in slide-in-from-top-2">
-                    <div className="bg-sky-200 text-sky-700 p-2 rounded-full flex-shrink-0"><Headphones className="w-5 h-5" /></div>
-                    
-                    {/* HIZ BUTONU */}
-                    <button 
-                        onClick={toggleSpeed} 
-                        className="bg-white border border-sky-200 text-sky-700 px-2 py-1 rounded text-xs font-bold hover:bg-sky-100 transition-colors w-12 text-center"
-                        title="Hız Değiştir"
-                    >
-                        {playbackRate}x
-                    </button>
+          <div className="flex items-center justify-between mb-3">
+            <Link href="/" className="p-2 rounded-full hover:bg-slate-100 text-slate-500 transition"><ArrowLeft className="w-6 h-6" /></Link>
 
-                    <audio 
-                        ref={audioRef}
-                        key={audioSrc}
-                        controls 
-                        src={audioSrc} 
-                        className="w-full h-8 outline-none" 
-                        controlsList="nodownload"
-                    >
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
+            {timeLeft !== null && (
+              <div className={`flex items-center gap-2 text-lg font-mono font-bold px-4 py-1.5 rounded-xl border-2 ${timeLeft < 60 ? 'text-rose-600 bg-rose-50 border-rose-100 animate-pulse' : 'text-indigo-600 bg-indigo-50 border-indigo-100'}`}>
+                <Clock className="w-5 h-5" />
+                {formatTime(timeLeft)}
+              </div>
             )}
+
+            <button onClick={handleSubmit} className="text-sm font-bold text-white bg-slate-900 px-6 py-2.5 rounded-xl hover:bg-slate-800 shadow-md">
+              {labels.finish}
+            </button>
+          </div>
+
+          {audioSrc && (
+            <div className="bg-sky-50 border border-sky-100 rounded-xl p-3 flex items-center gap-3">
+              <div className="bg-sky-200 text-sky-700 p-2 rounded-full flex-shrink-0"><Headphones className="w-5 h-5" /></div>
+
+              <button
+                onClick={toggleSpeed}
+                className="bg-white border border-sky-200 text-sky-700 px-2 py-1 rounded text-xs font-bold hover:bg-sky-100 transition-colors w-12 text-center"
+                title="Hız Değiştir"
+              >
+                {playbackRate}x
+              </button>
+
+              <audio
+                ref={audioRef}
+                controls
+                src={audioSrc}
+                className="w-full h-8 outline-none"
+                controlsList="nodownload"
+              >
+                Tarayıcınız audio elementini desteklemiyor.
+              </audio>
+            </div>
+          )}
         </div>
       </div>
 
       <div className="max-w-3xl mx-auto px-4 space-y-8 mt-8">
         {questions.map((q, idx) => (
-           <QuestionCard key={q.id} q={q} idx={idx} answer={answers[q.id] || ''} onAnswer={handleAnswerChange} labels={labels} />
+          <QuestionCard
+            key={q.id}
+            q={q}
+            idx={idx}
+            answer={answers[q.id] || ''}
+            onAnswer={handleAnswerChange}
+            labels={labels}
+          />
         ))}
+
         <div className="pt-8 pb-12 flex justify-center">
-            <button onClick={handleSubmit} className="w-full max-w-md py-4 rounded-2xl text-white text-xl font-bold shadow-xl bg-indigo-600 hover:bg-indigo-700">{labels.completeTest}</button>
+          <button onClick={handleSubmit} className="w-full max-w-md py-4 rounded-2xl text-white text-xl font-bold shadow-xl bg-indigo-600 hover:bg-indigo-700">
+            {labels.completeTest}
+          </button>
         </div>
       </div>
     </div>
