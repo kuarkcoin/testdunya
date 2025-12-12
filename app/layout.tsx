@@ -54,6 +54,16 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.className} bg-slate-50 text-slate-900 antialiased relative min-h-screen flex flex-col`}>
 
+        {/* --- GOOGLE ADSENSE KODU (BURAYA EKLENDİ) --- */}
+        {/* Next.js için optimize edilmiş Script bileşeni kullanıldı */}
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1700979325865596"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
+        {/* ------------------------------------------- */}
+
         {/* Tailwind CDN - Tasarımının bozulmaması için korundu */}
         <Script 
           src="https://cdn.tailwindcss.com" 
