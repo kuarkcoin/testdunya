@@ -256,7 +256,7 @@ export default function SpeakingSimulator() {
         </div>
         
         {/* Test Seçici (Hızlı Geçiş Butonları) */}
-        <div className="mt-8 flex justify-center gap-4">
+        <div className="mt-8 flex flex-wrap justify-center gap-4"> 
             <Link href="/speaking?test=1" className={`px-4 py-2 rounded-lg font-bold border transition ${testId === '1' ? 'bg-indigo-600 text-white border-indigo-600' : 'bg-white text-slate-600 hover:border-indigo-400'}`}>
                 Test 1
             </Link>
@@ -266,11 +266,15 @@ export default function SpeakingSimulator() {
             <Link href="/speaking?test=3" className={`px-4 py-2 rounded-lg font-bold border transition ${testId === '3' ? 'bg-indigo-600 text-white border-indigo-600' : 'bg-white text-slate-600 hover:border-indigo-400'}`}>
                 Test 3
             </Link>
-        </div>
             <Link href="/speaking?test=4" className={`px-4 py-2 rounded-lg font-bold border transition ${testId === '4' ? 'bg-indigo-600 text-white border-indigo-600' : 'bg-white text-slate-600 hover:border-indigo-400'}`}>
                 Test 4
-      </Link>
-      </div>
-    </div>
+            </Link>
+            <Link href="/speaking?test=5" className={`px-4 py-2 rounded-lg font-bold border transition ${testId === '5' ? 'bg-indigo-600 text-white border-indigo-600' : 'bg-white text-slate-600 hover:border-indigo-400'}`}>
+                Test 5
+            </Link>
+        </div>
+
+      </div> {/* max-w-2xl mx-auto KAPANIŞI (BU EKSİKTİ) */}
+    </div> // min-h-screen KAPANIŞI (BU EKSİKTİ)
   );
 }
