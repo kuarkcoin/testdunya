@@ -14,13 +14,26 @@
         "Why you wanted to learn it",
         "Why it was difficult for you",
         "Explain how you felt when you finally learned it"
-      ]
+      ],
+      "sample_answer": "A skill that I found surprisingly difficult to master was public speaking. I wanted to learn it because it is essential for career growth and networking. I realized that no matter how good your ideas are, they are useless if you cannot communicate them effectively to an audience.\n\nIt was difficult for me because I used to be quite introverted and suffered from stage fright. The moment I stood in front of a crowd, my mind would go blank, and my hands would shake. Overcoming that physical anxiety took a lot of practice and exposure.\n\nI joined a local Toastmasters club to practice in a supportive environment. When I finally delivered a speech without stuttering and actually received applause, I felt an immense sense of relief and pride. It wasn't just about the skill itself; it was about conquering a personal fear. Now, I actually enjoy the adrenaline rush of speaking in public."
     },
     "part3": [
-      "What skills are most important for children to learn?",
-      "Do you think traditional skills are dying out?",
-      "Is it better to learn practical skills or academic subjects?",
-      "How has technology changed the way we learn skills?"
+      {
+        "question": "What skills are most important for children to learn?",
+        "answer": "Beyond academic subjects, I think soft skills like critical thinking, empathy, and communication are vital. In a rapidly changing world, the ability to adapt and solve problems creatively is more valuable than rote memorization. Also, digital literacy is non-negotiable in the modern era."
+      },
+      {
+        "question": "Do you think traditional skills are dying out?",
+        "answer": "Sadly, yes. Skills like knitting, carpentry, or farming are becoming less common as we rely more on mass-produced goods and technology. While this is efficient, we risk losing a connection to our heritage and the satisfaction of creating things with our hands."
+      },
+      {
+        "question": "Is it better to learn practical skills or academic subjects?",
+        "answer": "It depends on the individual's goals, but a balance is best. Academic subjects provide theoretical knowledge and discipline, while practical skills ensure you can function in the real world. A society needs both plumbers and philosophers to thrive."
+      },
+      {
+        "question": "How has technology changed the way we learn skills?",
+        "answer": "Technology has democratized learning. You can learn almost anything—from coding to cooking—via YouTube tutorials or online courses, often for free. However, it has also reduced our attention spans, making deep, focused learning harder for some people."
+      }
     ]
   },
   {
@@ -38,13 +51,26 @@
         "How often you go there",
         "What you do there",
         "Explain why this place relaxes you"
-      ]
+      ],
+      "sample_answer": "My go-to sanctuary for relaxation is a small, quiet botanical garden located on the outskirts of my city. It’s not very famous, which is why it remains peaceful. I try to go there at least once a week, usually on Sunday mornings.\n\nWhen I’m there, I usually take a slow walk along the winding paths, admiring the exotic plants and listening to the birds. Sometimes I bring a book and sit on a bench by the pond for an hour or two. It’s strictly a 'no-phone zone' for me.\n\nThis place relaxes me because it disconnects me from the digital noise of daily life. The air is fresh, and being surrounded by nature has a calming effect on my nervous system. It reminds me to slow down and appreciate the present moment, which is something I often forget to do during the busy work week."
     },
     "part3": [
-      "Why is it important to take breaks?",
-      "How do different people relax in your country?",
-      "Should companies provide relaxation areas for employees?",
-      "Is mental relaxation as important as physical relaxation?"
+      {
+        "question": "Why is it important to take breaks?",
+        "answer": "Taking breaks is crucial for maintaining mental and physical health. Continuous work leads to burnout and diminishing returns in productivity. A brain that rests is a brain that can think creatively and solve problems effectively."
+      },
+      {
+        "question": "How do different people relax in your country?",
+        "answer": "It varies by age. Younger people often relax by playing video games, watching streaming services, or socializing in cafes. Older generations might prefer gardening, watching traditional TV programs, or visiting neighbors for tea and conversation."
+      },
+      {
+        "question": "Should companies provide relaxation areas for employees?",
+        "answer": "Absolutely. Companies like Google have shown that providing spaces for rest—like nap pods or game rooms—can boost morale and innovation. When employees feel cared for and rested, they are more loyal and productive."
+      },
+      {
+        "question": "Is mental relaxation as important as physical relaxation?",
+        "answer": "I would argue it is even more important in today's knowledge economy. Most of us don't do hard physical labor, but we are mentally exhausted by information overload. Practices like meditation or mindfulness are essential to clear the mental clutter."
+      }
     ]
   }
 ]
