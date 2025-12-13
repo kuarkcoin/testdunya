@@ -1,60 +1,50 @@
 [
   {
-    "passageId": 1,
-    "title": "IELTS Listening Part 2: Gym Introduction",
-    "audio": "/audio/ielts-gym.mp3",
-    "text": "Listen to the manager introducing the new gym facilities.",
-    "questions": [
-      {
-        "id": "il-p2-q1",
-        "prompt": "The gym is located next to the __________.",
-        "A": "City Center",
-        "B": "Train Station",
-        "C": "Green Park",
-        "D": "Shopping Mall",
-        "correct": "C",
-        "explanation": "The manager says: 'we are located right next to the **Green Park**'."
-      },
-      {
-        "id": "il-p2-q2",
-        "prompt": "What time does the gym open on weekdays?",
-        "A": "5:30 am",
-        "B": "6:00 am",
-        "C": "7:00 am",
-        "D": "8:00 am",
-        "correct": "A",
-        "explanation": "He explicitly mentions: 'we open our doors at **5:30 am** on weekdays'."
-      },
-      {
-        "id": "il-p2-q3",
-        "prompt": "How much does the Gold membership cost per month?",
-        "A": "£30",
-        "B": "£45",
-        "C": "£50",
-        "D": "£60",
-        "correct": "B",
-        "explanation": "He states: 'our Gold membership, which costs **£45** per month'."
-      },
-      {
-        "id": "il-p2-q4",
-        "prompt": "What is the special offer for today?",
-        "A": "Free towel",
-        "B": "First month free",
-        "C": "No joining fee",
-        "D": "Free personal training",
-        "correct": "C",
-        "explanation": "He says: 'if you sign up today, you pay **nothing** to join' (waiving the joining fee)."
-      },
-      {
-        "id": "il-p2-q5",
-        "prompt": "Which item is forbidden in the main gym area?",
-        "A": "Water bottles",
-        "B": "Towels",
-        "C": "Headphones",
-        "D": "Outdoor shoes",
-        "correct": "D",
-        "explanation": "He warns: '**outdoor shoes** are strictly forbidden in the main gym area'."
-      }
+    "id": 101,
+    "part1": [
+      "Do you think rules are important in our lives?",
+      "Have you ever broken a rule?",
+      "Do you prefer to follow rules or make your own?",
+      "Are there too many rules in your country?"
+    ],
+    "part2": {
+      "topic": "Describe a law you would like to see introduced in your country",
+      "bullets": [
+        "What the law would be about",
+        "How it would be enforced",
+        "Who would be most affected by it",
+        "Explain why you think this law is necessary"
+      ]
+    },
+    "part3": [
+      "Why do societies need laws?",
+      "Do you think police officers should carry guns?",
+      "Should laws be the same in every country?",
+      "How can we encourage people to obey the law?"
+    ]
+  },
+  {
+    "id": 102,
+    "part1": [
+      "Do you set goals for yourself?",
+      "Is it important to have ambitions?",
+      "What was your childhood dream?",
+      "Are you an ambitious person?"
+    ],
+    "part2": {
+      "topic": "Describe an ambition that you have not yet achieved",
+      "bullets": [
+        "What the ambition is",
+        "Why you have not achieved it yet",
+        "What you need to do to achieve it",
+        "Explain how you feel about not having achieved it yet"
+      ]
+    },
+    "part3": [
+      "Is it good to be very ambitious?",
+      "Why do some people lose their motivation?",
+      "Does success always bring happiness?",
+      "How do parents influence their children's ambitions?"
     ]
   }
 ]
