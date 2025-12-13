@@ -53,9 +53,8 @@ const Mic = (props: React.SVGProps<SVGSVGElement>) => (
 const Calculator = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/><line x1="16" x2="16" y1="14" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></svg>
 );
-// Yeni: Yukarı Ok İkonu
 const ArrowUp = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="m18 15-6-6-6 6"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="m18 15-6-6-6 6" transform="rotate(180 12 12)" /></svg>
 );
 
 // --- SINAV AYARLARI ---
@@ -187,34 +186,28 @@ const ieltsModules = [
 export default function HomePage() {
   const [completed, setCompleted] = useState<CompletedExams>({});
 
-  // 1. VERİ OKUMA (GÜVENLİ PARSE)
+  // 1. GÜVENLİ VERİ OKUMA
   useEffect(() => {
     try {
       const savedData = localStorage.getItem('examTrackerData');
       if (savedData) {
         const parsed = JSON.parse(savedData);
-        // Basit bir tip kontrolü de ekleyebiliriz
         if (typeof parsed === 'object' && parsed !== null) {
           setCompleted(parsed);
         }
       }
     } catch (error) {
       console.error('localStorage veri okuma hatası:', error);
-      // Hata durumunda state'i sıfırla veya varsayılan bırak
       setCompleted({});
     }
   }, []);
 
   // 2. VERİ YAZMA (STATE DEĞİŞTİĞİNDE)
-  // Bu sayfa genellikle sadece okuma yapar ama yapıyı sağlam tutmak için
-  // completed değişirse kaydetme mantığını da ekliyoruz.
   useEffect(() => {
     try {
-      // Boş obje değilse veya initial load harici durumlarda kaydetmek isteyebilirsiniz.
-      // Ancak completed {} olsa bile kaydetmek (kullanıcı resetlediyse) gerekebilir.
-      // İlk render'da gereksiz yazmayı önlemek için kontrol eklenebilir ama
-      // modern tarayıcılarda bu işlem çok hızlıdır.
-      localStorage.setItem('examTrackerData', JSON.stringify(completed));
+      if (Object.keys(completed).length > 0) {
+        localStorage.setItem('examTrackerData', JSON.stringify(completed));
+      }
     } catch (e) {
       console.error('localStorage yazma hatası:', e);
     }
@@ -224,8 +217,9 @@ export default function HomePage() {
     <main className="min-h-screen bg-slate-50 font-sans text-slate-800">
 
       {/* --- HERO SECTION --- */}
-      <div className="bg-gradient-to-r from-slate-900 via-indigo-900 to-slate-900 text-white pb-24 pt-10 px-4 mb-8">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+      {/* Güncelleme: max-w-7xl ve responsive padding */}
+      <div className="bg-gradient-to-r from-slate-900 via-indigo-900 to-slate-900 text-white pb-24 pt-10 px-4 md:px-8 mb-8">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
 
           <div className="space-y-4 md:w-2/3">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-xs font-semibold text-indigo-200">
@@ -239,8 +233,11 @@ export default function HomePage() {
             <h1 className="text-3xl md:text-5xl font-black tracking-tight leading-tight">
               TestDünya <span className="text-indigo-400">Sınav Platformu</span>
             </h1>
-            <p className="text-slate-300 text-base md:text-lg max-w-xl leading-relaxed">
+            
+            {/* Güncelleme: text-justify ile sağ taraftaki boşlukları doldurma */}
+            <p className="text-slate-300 text-base md:text-lg max-w-2xl leading-relaxed text-justify">
               YKS, KPSS, TUS, DUS ve şimdi <strong>IELTS Academic</strong> sınavlarına yapay zeka destekli özgün sorularla hazırlanın.
+              Tüm denemelerimiz yeni müfredata uygun, detaylı çözümlü ve tamamen ücretsizdir.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-2">
@@ -266,14 +263,15 @@ export default function HomePage() {
       </div>
 
       {/* --- MAIN CONTENT AREA --- */}
-      <div id="exams" className="max-w-6xl mx-auto px-4 -mt-20 space-y-10 pb-20 relative z-10">
+      {/* Güncelleme: max-w-7xl ve mobilde daha az padding (px-2) */}
+      <div id="exams" className="max-w-7xl mx-auto px-2 md:px-6 -mt-20 space-y-8 pb-20 relative z-10">
 
         {/* --- IELTS GLOBAL SECTION --- */}
         <section className="bg-white rounded-2xl shadow-xl shadow-sky-200/40 overflow-hidden border-2 border-sky-100 relative">
           <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-sky-400 to-blue-600"></div>
 
           {/* Header */}
-          <div className="p-6 border-b border-slate-100 flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div className="p-4 md:p-6 border-b border-slate-100 flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div className="flex items-center gap-4">
               <div className="p-3 bg-sky-100 text-sky-600 rounded-xl">
                 <Globe className="w-8 h-8" />
@@ -290,24 +288,22 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* IELTS Modules Grid - Responsive Ayarı Güncellendi */}
-          <div className="p-6 bg-slate-50/50 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-4">
+          {/* IELTS Modules Grid - Güncelleme: Mobilde p-3, Gap azaltıldı */}
+          <div className="p-3 md:p-6 bg-slate-50/50 grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-3 md:gap-4">
             {ieltsModules.map((module) => {
-              // Link Mantığı
               let linkHref = `/test/${module.id}`;
               if (module.id === 'ielts-speaking') linkHref = '/ielts/speaking';
               if (module.id === 'ielts-calculator') linkHref = '/ielts/calculator';
               if (module.id === 'ielts-listening') linkHref = '/ielts/listening';
               if (module.id === 'ielts-writing') linkHref = '/ielts/writing';
 
-              // Locked
               if (!module.active) {
                 return (
                   <div
                     key={module.id}
-                    className={`flex flex-col items-center justify-center p-4 rounded-xl border-2 ${module.bg} ${module.border} text-slate-400 cursor-not-allowed`}
+                    className={`flex flex-col items-center justify-center p-3 md:p-4 rounded-xl border-2 ${module.bg} ${module.border} text-slate-400 cursor-not-allowed`}
                     title="Yakında eklenecek"
-                    aria-disabled="true" // Erişilebilirlik
+                    aria-disabled="true"
                   >
                     <div className="mb-3 p-3 rounded-full bg-white/60 shadow-sm ring-1 ring-black/5">
                       <Lock className="w-6 h-6 opacity-70" />
@@ -318,12 +314,11 @@ export default function HomePage() {
                 );
               }
 
-              // Active
               return (
                 <Link
                   key={module.id}
                   href={linkHref}
-                  className={`flex flex-col items-center justify-center p-4 rounded-xl border-2 transition-all hover:-translate-y-1 hover:shadow-lg ${module.bg} ${module.border} ${module.color} h-full`}
+                  className={`flex flex-col items-center justify-center p-3 md:p-4 rounded-xl border-2 transition-all hover:-translate-y-1 hover:shadow-lg ${module.bg} ${module.border} ${module.color} h-full`}
                 >
                   <div className="mb-3 p-3 rounded-full bg-white shadow-sm ring-1 ring-black/5">
                     {module.icon}
@@ -343,7 +338,7 @@ export default function HomePage() {
             className="bg-white rounded-2xl shadow-xl shadow-slate-200/50 overflow-hidden border border-slate-100 transition-all hover:shadow-2xl hover:shadow-indigo-100/50"
           >
             {/* Header */}
-            <div className={`p-5 bg-gradient-to-r ${exam.gradient} text-white flex items-center justify-between`}>
+            <div className={`p-4 md:p-5 bg-gradient-to-r ${exam.gradient} text-white flex items-center justify-between`}>
               <div className="flex items-center gap-4">
                 <div className="p-2.5 bg-white/20 backdrop-blur-sm rounded-xl shadow-inner">
                   {exam.icon}
@@ -359,9 +354,9 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Grid */}
-            <div className="p-6 bg-slate-50/50">
-              <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-8 gap-3">
+            {/* Grid - Güncelleme: Mobilde p-3, Gap-2 */}
+            <div className="p-3 md:p-6 bg-slate-50/50">
+              <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-8 gap-2 md:gap-3">
                 {Array.from({ length: exam.count }, (_, i) => i + 1).map((num) => {
                   const testLinkId = `${exam.prefix}-${num}`;
                   const isDone = (completed[exam.id] || []).includes(num);
@@ -402,7 +397,7 @@ export default function HomePage() {
                       key={num}
                       className="relative flex flex-col items-center justify-center py-3 px-2 rounded-xl border border-slate-100 bg-slate-50 text-slate-300 cursor-not-allowed overflow-hidden"
                       title="Bu test yakında eklenecektir."
-                      aria-disabled="true" // Erişilebilirlik
+                      aria-disabled="true"
                     >
                       <div className="mb-1.5 opacity-40">
                         <Lock className="w-5 h-5 text-slate-400" />
@@ -421,12 +416,14 @@ export default function HomePage() {
 
       {/* --- SEO & FEATURES SECTION --- */}
       <section className="bg-white border-t border-slate-100 py-16 px-4">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-black text-slate-800 mb-4">Neden TestDünya?</h2>
-            <p className="text-slate-500 max-w-2xl mx-auto">
+            {/* Güncelleme: text-justify */}
+            <p className="text-slate-500 max-w-2xl mx-auto text-justify md:text-center">
               Sınavlara hazırlanırken ihtiyacınız olan her şey tek bir platformda.
-              YKS, KPSS, TUS, DUS ve şimdi <strong>IELTS</strong> ile dünya standartlarında ölçme ve değerlendirme.
+              YKS, KPSS, TUS, DUS ve şimdi <strong>IELTS</strong> ile dünya standartlarında ölçme ve değerlendirme sistemleri.
+              Tamamen ücretsiz, reklamsız ve kullanıcı dostu arayüz.
             </p>
           </div>
 
@@ -436,8 +433,9 @@ export default function HomePage() {
                 <Zap className="w-6 h-6" />
               </div>
               <h3 className="font-bold text-slate-800 mb-2">Hızlı ve Modern Arayüz</h3>
-              <p className="text-sm text-slate-600 leading-relaxed">
-                Dikkat dağıtıcı reklamlardan arındırılmış, sadece başarı odaklı tasarım.
+              <p className="text-sm text-slate-600 leading-relaxed text-justify md:text-center">
+                Dikkat dağıtıcı reklamlardan arındırılmış, sadece başarı odaklı tasarım. 
+                Sayfalar arası hızlı geçiş ve anlık sonuç görüntüleme.
               </p>
             </div>
 
@@ -446,8 +444,9 @@ export default function HomePage() {
                 <Target className="w-6 h-6" />
               </div>
               <h3 className="font-bold text-slate-800 mb-2">Akıllı Analiz</h3>
-              <p className="text-sm text-slate-600 leading-relaxed">
+              <p className="text-sm text-slate-600 leading-relaxed text-justify md:text-center">
                 Yanlış yaptığınız sorular "Hatalarım" bölümünde birikir, tekrar etmeniz için saklanır.
+                Gelişiminizi anlık olarak takip edebilirsiniz.
               </p>
             </div>
 
@@ -456,8 +455,9 @@ export default function HomePage() {
                 <Book className="w-6 h-6" />
               </div>
               <h3 className="font-bold text-slate-800 mb-2">Global Standartlar</h3>
-              <p className="text-sm text-slate-600 leading-relaxed">
+              <p className="text-sm text-slate-600 leading-relaxed text-justify md:text-center">
                 Türkiye'nin ulusal sınavlarının yanında artık global geçerliliği olan IELTS sınavlarına da hazırlanın.
+                Dünya genelindeki sınav formatlarına tam uyum.
               </p>
             </div>
           </div>
@@ -466,12 +466,12 @@ export default function HomePage() {
 
       {/* --- FOOTER --- */}
       <footer className="bg-slate-900 text-slate-400 py-12 px-4 border-t border-slate-800">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-8 text-sm mb-8">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-8 text-sm mb-8">
           <div className="col-span-1 md:col-span-2">
             <h4 className="text-white font-bold text-lg mb-4 flex items-center gap-2">
               <Trophy className="w-5 h-5 text-indigo-500" /> TestDünya
             </h4>
-            <p className="leading-relaxed mb-4 max-w-sm">
+            <p className="leading-relaxed mb-4 max-w-sm text-justify">
               Türkiye'nin en kapsamlı ücretsiz online sınav hazırlık platformu.
               TYT, AYT, KPSS, TUS, DUS ve <strong>IELTS</strong> sınavlarına hazırlanan öğrenciler için
               özenle hazırlanmış özgün deneme sınavları.
@@ -510,7 +510,7 @@ export default function HomePage() {
         </div>
       </footer>
 
-      {/* --- YUKARI ÇIK (GÜNCELLENDİ: DOĞRU İKON VE YÖN) --- */}
+      {/* --- YUKARI ÇIK --- */}
       <button
         aria-label="Scroll to top"
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
