@@ -3,6 +3,9 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
+// --- TİP TANIMLAMALARI ---
+type CompletedExams = Record<string, number[]>;
+
 // --- İKONLAR ---
 const Trophy = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" /><path d="M18 9h1.5a2.5 2.5 0 0 1 0-5H18" /><path d="M4 22h16" /><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" /><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" /><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" /></svg>
@@ -49,6 +52,10 @@ const Mic = (props: React.SVGProps<SVGSVGElement>) => (
 );
 const Calculator = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/><line x1="16" x2="16" y1="14" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></svg>
+);
+// Yeni: Yukarı Ok İkonu
+const ArrowUp = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="m18 15-6-6-6 6"/></svg>
 );
 
 // --- SINAV AYARLARI ---
@@ -103,7 +110,7 @@ const examConfig = [
   }
 ];
 
-// --- IELTS MODÜLLERİ (active/locked eklendi) ---
+// --- IELTS MODÜLLERİ ---
 const ieltsModules = [
   {
     id: 'ielts-reading',
@@ -178,16 +185,40 @@ const ieltsModules = [
 ] as const;
 
 export default function HomePage() {
-  const [completed, setCompleted] = useState<{ [key: string]: number[] }>({});
+  const [completed, setCompleted] = useState<CompletedExams>({});
 
+  // 1. VERİ OKUMA (GÜVENLİ PARSE)
   useEffect(() => {
     try {
       const savedData = localStorage.getItem('examTrackerData');
-      if (savedData) setCompleted(JSON.parse(savedData));
-    } catch {
+      if (savedData) {
+        const parsed = JSON.parse(savedData);
+        // Basit bir tip kontrolü de ekleyebiliriz
+        if (typeof parsed === 'object' && parsed !== null) {
+          setCompleted(parsed);
+        }
+      }
+    } catch (error) {
+      console.error('localStorage veri okuma hatası:', error);
+      // Hata durumunda state'i sıfırla veya varsayılan bırak
       setCompleted({});
     }
   }, []);
+
+  // 2. VERİ YAZMA (STATE DEĞİŞTİĞİNDE)
+  // Bu sayfa genellikle sadece okuma yapar ama yapıyı sağlam tutmak için
+  // completed değişirse kaydetme mantığını da ekliyoruz.
+  useEffect(() => {
+    try {
+      // Boş obje değilse veya initial load harici durumlarda kaydetmek isteyebilirsiniz.
+      // Ancak completed {} olsa bile kaydetmek (kullanıcı resetlediyse) gerekebilir.
+      // İlk render'da gereksiz yazmayı önlemek için kontrol eklenebilir ama
+      // modern tarayıcılarda bu işlem çok hızlıdır.
+      localStorage.setItem('examTrackerData', JSON.stringify(completed));
+    } catch (e) {
+      console.error('localStorage yazma hatası:', e);
+    }
+  }, [completed]);
 
   return (
     <main className="min-h-screen bg-slate-50 font-sans text-slate-800">
@@ -259,7 +290,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* IELTS Modules Grid */}
+          {/* IELTS Modules Grid - Responsive Ayarı Güncellendi */}
           <div className="p-6 bg-slate-50/50 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-4">
             {ieltsModules.map((module) => {
               // Link Mantığı
@@ -276,6 +307,7 @@ export default function HomePage() {
                     key={module.id}
                     className={`flex flex-col items-center justify-center p-4 rounded-xl border-2 ${module.bg} ${module.border} text-slate-400 cursor-not-allowed`}
                     title="Yakında eklenecek"
+                    aria-disabled="true" // Erişilebilirlik
                   >
                     <div className="mb-3 p-3 rounded-full bg-white/60 shadow-sm ring-1 ring-black/5">
                       <Lock className="w-6 h-6 opacity-70" />
@@ -370,6 +402,7 @@ export default function HomePage() {
                       key={num}
                       className="relative flex flex-col items-center justify-center py-3 px-2 rounded-xl border border-slate-100 bg-slate-50 text-slate-300 cursor-not-allowed overflow-hidden"
                       title="Bu test yakında eklenecektir."
+                      aria-disabled="true" // Erişilebilirlik
                     >
                       <div className="mb-1.5 opacity-40">
                         <Lock className="w-5 h-5 text-slate-400" />
@@ -477,15 +510,13 @@ export default function HomePage() {
         </div>
       </footer>
 
-      {/* --- YUKARI ÇIK --- */}
+      {/* --- YUKARI ÇIK (GÜNCELLENDİ: DOĞRU İKON VE YÖN) --- */}
       <button
         aria-label="Scroll to top"
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         className="fixed bottom-6 right-6 z-[999] bg-indigo-600 text-white p-3 rounded-full shadow-xl hover:bg-indigo-700 transition-all border-2 border-white"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="m18 15-6-6-6 6" />
-        </svg>
+        <ArrowUp className="w-6 h-6" />
       </button>
 
     </main>
