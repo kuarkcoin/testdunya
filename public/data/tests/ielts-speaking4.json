@@ -1,82 +1,50 @@
 [
   {
     "id": 301,
-    "topic": "Describe a website you visit often",
-    "bullets": [
-      "What the website is",
-      "How often you visit it",
-      "What you usually do on this website",
-      "Explain why this website is useful or interesting to you"
+    "part1": [
+      "How often do you use the internet?",
+      "What are your favorite websites?",
+      "Do you prefer using a computer or a phone?",
+      "Is the internet dangerous for children?"
+    ],
+    "part2": {
+      "topic": "Describe a website you visit often",
+      "bullets": [
+        "What the website is",
+        "How often you visit it",
+        "What you usually do on this website",
+        "Explain why this website is useful or interesting to you"
+      ]
+    },
+    "part3": [
+      "How has the internet changed our lives?",
+      "Do people spend too much time online?",
+      "Will libraries disappear because of the internet?",
+      "Is online shopping better than shopping in stores?"
     ]
   },
   {
     "id": 302,
-    "topic": "Describe a successful business person you admire",
-    "bullets": [
-      "Who this person is",
-      "What kind of business they do",
-      "How you know about them",
-      "Explain why you think they are successful"
-    ]
-  },
-  {
-    "id": 303,
-    "topic": "Describe a time when you were very busy",
-    "bullets": [
-      "When it was",
-      "What you had to do",
-      "How you managed your time",
-      "Explain how you felt after you finished everything"
-    ]
-  },
-  {
-    "id": 304,
-    "topic": "Describe a crowded place you have visited",
-    "bullets": [
-      "Where the place is",
-      "When you went there",
-      "Who you were with",
-      "Explain how you felt about being in such a crowded place"
-    ]
-  },
-  {
-    "id": 305,
-    "topic": "Describe a wild animal you are interested in",
-    "bullets": [
-      "What the animal is",
-      "What it looks like",
-      "Where it lives",
-      "Explain why you find this animal interesting"
-    ]
-  },
-  {
-    "id": 306,
-    "topic": "Describe something you shared with others (or another person)",
-    "bullets": [
-      "What you shared",
-      "Who you shared it with",
-      "Why you shared it",
-      "Explain how you felt about sharing it"
-    ]
-  },
-  {
-    "id": 307,
-    "topic": "Describe a family member you enjoy spending time with",
-    "bullets": [
-      "Who the person is",
-      "What you usually do together",
-      "What kind of person they are",
-      "Explain why you enjoy spending time with them"
-    ]
-  },
-  {
-    "id": 308,
-    "topic": "Describe a piece of clothing you enjoy wearing",
-    "bullets": [
-      "What it looks like",
-      "When and where you bought it",
-      "How often you wear it",
-      "Explain why you enjoy wearing it"
+    "part1": [
+      "Do you work or study?",
+      "Would you like to start your own business?",
+      "What makes a good boss?",
+      "Is it hard to run a business in your country?"
+    ],
+    "part2": {
+      "topic": "Describe a successful business person you admire",
+      "bullets": [
+        "Who this person is",
+        "What kind of business they do",
+        "How you know about them",
+        "Explain why you think they are successful"
+      ]
+    },
+    "part3": [
+      "What qualities are needed to be successful in business?",
+      "Should businesses focus only on making money?",
+      "Is it better to work for a big company or a small one?",
+      "How do family businesses affect the economy?"
     ]
   }
 ]
