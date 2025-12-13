@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, Suspense } from 'react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 
@@ -24,7 +24,7 @@ const Check = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><polyline points="20 6 9 17 4 12"/></svg>
 );
 
-// --- TYPES (YENİ FORMAT) ---
+// --- TYPES ---
 interface FullTest {
   id: number;
   part1: string[];
@@ -35,11 +35,13 @@ interface FullTest {
   part3: string[];
 }
 
-export default function SpeakingSimulator() {
+// --- İÇ BİLEŞEN (ASIL MANTIK BURADA) ---
+// useSearchParams kullandığı için bu bileşeni dışarıda Suspense içine alacağız.
+function SimulatorContent() {
   const [topics, setTopics] = useState<FullTest[]>([]);
   const [currentTest, setCurrentTest] = useState<FullTest | null>(null);
   
-  // AŞAMALAR GÜNCELLENDİ: Part 1 ve Part 3 eklendi
+  // AŞAMALAR: Part 1, Part 2, Part 3
   const [phase, setPhase] = useState<'idle' | 'part1' | 'part2-prep' | 'part2-speaking' | 'part3' | 'finished'>('idle');
   const [timeLeft, setTimeLeft] = useState(0);
   
@@ -63,7 +65,6 @@ export default function SpeakingSimulator() {
 
   // TİMER MANTIĞI
   useEffect(() => {
-    // Sadece Part 2'nin Prep ve Speaking aşamalarında otomatik timer çalışır
     if (phase !== 'part2-prep' && phase !== 'part2-speaking') {
       if (timerRef.current) clearInterval(timerRef.current);
       return;
@@ -88,12 +89,11 @@ export default function SpeakingSimulator() {
     if (phase === 'part2-prep') {
       startPart2Speaking();
     } else if (phase === 'part2-speaking') {
-      startPart3(); // Süre bitince otomatik Part 3'e geç
+      startPart3(); 
     }
   };
 
   // --- ACTIONS ---
-
   const startSession = () => {
     if (topics.length === 0) return;
     const random = topics[Math.floor(Math.random() * topics.length)];
@@ -103,17 +103,16 @@ export default function SpeakingSimulator() {
 
   const startPart2Prep = () => {
     setPhase('part2-prep');
-    setTimeLeft(60); // 1 dk Hazırlık
+    setTimeLeft(60); 
   };
 
   const startPart2Speaking = () => {
     setPhase('part2-speaking');
-    setTimeLeft(120); // 2 dk Konuşma
+    setTimeLeft(120); 
   };
 
   const startPart3 = () => {
     setPhase('part3');
-    // Part 3 için timer zorunlu değil ama opsiyonel konabilir, şimdilik timer yok
   };
 
   const finishTest = () => {
@@ -170,7 +169,6 @@ export default function SpeakingSimulator() {
                {phase === 'finished' && "Test Completed"}
              </h2>
              
-             {/* SADECE PART 2'DE TİMER GÖSTER */}
              {(phase === 'part2-prep' || phase === 'part2-speaking') && (
                 <div className={`text-2xl font-mono font-black ${phase === 'part2-prep' ? 'text-amber-500' : 'text-indigo-600'}`}>
                    {formatTime(timeLeft)}
@@ -279,8 +277,6 @@ export default function SpeakingSimulator() {
                  <Stop className="w-4 h-4" /> Quit
                </button>
 
-               {/* BUTONLAR AŞAMAYA GÖRE DEĞİŞİR */}
-               
                {phase === 'part1' && (
                   <button onClick={startPart2Prep} className="px-6 py-3 bg-indigo-600 text-white rounded-xl font-bold shadow-lg hover:bg-indigo-700 transition-all flex items-center gap-2">
                     Start Part 2 (Cue Card) <ArrowRight className="w-4 h-4" />
@@ -326,5 +322,15 @@ export default function SpeakingSimulator() {
 
       </div>
     </div>
+  );
+}
+
+// --- ANA COMPONENT (SUSPENSE ILE SARMALANMIŞ HALİ) ---
+// Build hatasını çözen kısım burasıdır.
+export default function SpeakingSimulator() {
+  return (
+    <Suspense fallback={<div className="flex items-center justify-center min-h-screen text-indigo-600 font-bold">Loading Speaking Test...</div>}>
+      <SimulatorContent />
+    </Suspense>
   );
 }
