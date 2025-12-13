@@ -1,0 +1,82 @@
+[
+  {
+    "id": 201,
+    "topic": "Describe a skill that was difficult for you to learn",
+    "bullets": [
+      "What the skill was",
+      "Why you wanted to learn it",
+      "Why it was difficult for you",
+      "Explain how you felt when you finally learned it"
+    ]
+  },
+  {
+    "id": 202,
+    "topic": "Describe a time when you helped someone",
+    "bullets": [
+      "Who you helped",
+      "Why they needed help",
+      "How you helped them",
+      "Explain how you felt after helping them"
+    ]
+  },
+  {
+    "id": 203,
+    "topic": "Describe a place where you go to relax",
+    "bullets": [
+      "Where this place is",
+      "How often you go there",
+      "What you do there",
+      "Explain why this place relaxes you"
+    ]
+  },
+  {
+    "id": 204,
+    "topic": "Describe an interesting conversation you had with a stranger",
+    "bullets": [
+      "Who the person was",
+      "Where you met them",
+      "What you talked about",
+      "Explain why you found the conversation interesting"
+    ]
+  },
+  {
+    "id": 205,
+    "topic": "Describe a gift you recently gave to someone",
+    "bullets": [
+      "Who you gave it to",
+      "What the gift was",
+      "Why you chose that gift",
+      "Explain how the person reacted when they received it"
+    ]
+  },
+  {
+    "id": 206,
+    "topic": "Describe a traditional festival in your country",
+    "bullets": [
+      "What the festival is",
+      "When and where it is celebrated",
+      "What people do during this festival",
+      "Explain why this festival is important to you or your culture"
+    ]
+  },
+  {
+    "id": 207,
+    "topic": "Describe a time when you used a map",
+    "bullets": [
+      "When it was",
+      "Where you were going",
+      "Why you needed a map",
+      "Explain how the map helped you (or if it was confusing)"
+    ]
+  },
+  {
+    "id": 208,
+    "topic": "Describe a movie that made you laugh",
+    "bullets": [
+      "What the movie was",
+      "Who you watched it with",
+      "What it was about",
+      "Explain why it was so funny"
+    ]
+  }
+]
