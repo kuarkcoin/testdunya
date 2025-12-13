@@ -14,13 +14,26 @@
         "What it is about",
         "Why you read it",
         "Explain what you liked or disliked about it"
-      ]
+      ],
+      "sample_answer": "I’d like to talk about a fascinating book I read recently called 'Sapiens: A Brief History of Humankind' by Yuval Noah Harari. It’s essentially a non-fiction book that explores the history of our species, starting from the Stone Age right up to the 21st century.\n\nThe book delves into how Homo sapiens managed to dominate the planet, covering key revolutions like the Cognitive, Agricultural, and Scientific Revolutions. It doesn't just list dates and facts; instead, it challenges our understanding of everything from money and religion to human rights and consumerism.\n\nI decided to read it because it had been recommended to me by several friends who described it as 'eye-opening'. I was looking for something intellectually stimulating that would give me a broader perspective on human history, and this seemed like the perfect fit.\n\nWhat I absolutely loved about the book was Harari's ability to explain complex historical concepts in a way that was both accessible and engaging. He has a knack for connecting past events to modern-day issues, which made me reflect on our current society. However, at times, I found his views slightly cynical, particularly regarding the future of humanity and artificial intelligence. Despite that, it was a thought-provoking read that I couldn't put down."
     },
     "part3": [
-      "Do people in your country read enough books?",
-      "Do you think e-books will replace paper books in the future?",
-      "Why do some people prefer to read news on the internet instead of newspapers?",
-      "How can parents encourage their children to read more?"
+      {
+        "question": "Do people in your country read enough books?",
+        "answer": "To be honest, I think reading habits have declined slightly in recent years due to the rise of social media and streaming platforms. While there is still a strong community of book lovers who enjoy novels and self-help books, the younger generation tends to consume shorter forms of content online. However, audiobooks are becoming quite popular, which suggests that people still want to consume stories, just in a different format."
+      },
+      {
+        "question": "Do you think e-books will replace paper books in the future?",
+        "answer": "I don't believe paper books will ever completely disappear, although e-books will continue to grow in popularity. There is a certain tactile experience and nostalgia associated with holding a physical book that digital devices simply cannot replicate. For many, a bookshelf is also a piece of decor and a reflection of their personality. So, while e-books offer convenience, paper books offer an experience that is hard to replace."
+      },
+      {
+        "question": "Why do some people prefer to read news on the internet instead of newspapers?",
+        "answer": "The primary reason is undoubtedly speed and accessibility. Online news is updated in real-time, whereas a newspaper is already outdated by the time it arrives in the morning. Additionally, the internet allows users to access a variety of sources and perspectives instantly, often for free. It’s also much more convenient to read headlines on a smartphone while commuting than to carry around a large paper."
+      },
+      {
+        "question": "How can parents encourage their children to read more?",
+        "answer": "I think the most effective way is to lead by example. If children see their parents reading for pleasure, they are more likely to copy that behavior. Furthermore, parents should make reading a fun, shared activity rather than a chore, perhaps by reading bedtime stories or visiting libraries together. Limiting screen time is also crucial to creating the boredom that often leads a child to pick up a book."
+      }
     ]
   },
   {
@@ -38,13 +51,26 @@
         "Why you went there",
         "Who you went with",
         "Explain why this journey was memorable"
-      ]
+      ],
+      "sample_answer": "One of the most memorable journeys I’ve ever taken was a road trip along the Aegean coast of Turkey. We traveled from Istanbul down to Bodrum, stopping at various historical towns and beaches along the way.\n\nI went on this trip last summer because I needed a break from the hustle and bustle of city life. I wanted to reconnect with nature and explore the ancient history of the region. I traveled with two of my closest friends from university, which made the experience even more special as we share a similar sense of humor and adventure.\n\nThe journey was memorable for several reasons. Firstly, the scenery was breathtaking; driving along winding coastal roads with the turquoise sea on one side and olive groves on the other was like driving through a painting. Secondly, we had a few unexpected adventures, like getting a flat tire in a remote village, where the locals were incredibly hospitable and helped us fix it. That sense of spontaneity and the kindness of strangers made it a trip I will never forget."
     },
     "part3": [
-      "Do you think it is better to travel alone or with a group?",
-      "How has tourism changed in your country in the last 10 years?",
-      "What are the benefits of traveling to foreign countries?",
-      "Is space travel a good investment for the future?"
+      {
+        "question": "Do you think it is better to travel alone or with a group?",
+        "answer": "Both have their merits. Traveling alone offers complete freedom and the chance for self-reflection; you can wake up and decide exactly what you want to do without compromising. On the other hand, traveling with a group is safer and often more fun because you can share your experiences and memories with others. Personally, I prefer traveling with a small group of close friends."
+      },
+      {
+        "question": "How has tourism changed in your country in the last 10 years?",
+        "answer": "Tourism has evolved significantly. Ten years ago, it was mostly focused on 'sun and sea' package holidays in large resorts. Nowadays, there is a much bigger shift towards cultural and eco-tourism. Tourists are more interested in authentic experiences, local cuisine, and historical sites rather than just sitting by a pool. Also, the rise of platforms like Airbnb has allowed visitors to stay in local neighborhoods rather than just hotels."
+      },
+      {
+        "question": "What are the benefits of traveling to foreign countries?",
+        "answer": "Traveling abroad is one of the best forms of education. It exposes you to different cultures, languages, and ways of thinking, which promotes tolerance and open-mindedness. It challenges you to step out of your comfort zone and adapt to new situations. Additionally, seeing how other societies function can give you a fresh perspective on your own country and life."
+      },
+      {
+        "question": "Is space travel a good investment for the future?",
+        "answer": "That’s a controversial topic. While space exploration drives technological innovation that often benefits life on Earth—like satellite technology and medical advancements—it is incredibly expensive. Some argue that this money should be spent on solving pressing issues like poverty and climate change. However, I believe that looking for a 'Plan B' for humanity and exploring the unknown is part of our nature and a necessary investment for the long-term survival of our species."
+      }
     ]
   }
 ]
