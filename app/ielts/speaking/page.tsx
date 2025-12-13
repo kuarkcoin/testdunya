@@ -2,6 +2,8 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+// URL'deki ?test=1 kısmını okumak için bunu ekliyoruz:
+import { useSearchParams } from 'next/navigation';
 
 // --- ICONS ---
 const Mic = (props: React.SVGProps<SVGSVGElement>) => (
@@ -30,21 +32,33 @@ interface Topic {
 export default function SpeakingSimulator() {
   const [topics, setTopics] = useState<Topic[]>([]);
   const [currentTopic, setCurrentTopic] = useState<Topic | null>(null);
-  
-  // States: 'idle' (Bekliyor), 'prep' (Hazırlık 1dk), 'speaking' (Konuşma 2dk), 'finished' (Bitti)
   const [phase, setPhase] = useState<'idle' | 'prep' | 'speaking' | 'finished'>('idle');
   const [timeLeft, setTimeLeft] = useState(0);
   
-  // Timer Ref
+  // URL PARAMETRESİNİ OKUMA
+  const searchParams = useSearchParams();
+  // Eğer URL'de test yoksa varsayılan olarak '1' olsun
+  const testId = searchParams.get('test') || '1';
+  
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
-  // 1. DATA YÜKLEME
+  // 1. DATA YÜKLEME (Dinamik)
   useEffect(() => {
-    fetch('/data/tests/ielts-speaking.json')
-      .then(res => res.json())
-      .then(data => setTopics(data))
+    // ielts-speaking1.json, ielts-speaking2.json dosyasını çeker
+    fetch(`/data/tests/ielts-speaking${testId}.json`)
+      .then(res => {
+        if (!res.ok) throw new Error("Test dosyası bulunamadı");
+        return res.json();
+      })
+      .then(data => {
+        setTopics(data);
+        // Yeni test yüklendiğinde her şeyi sıfırla
+        setPhase('idle');
+        setCurrentTopic(null);
+        setTimeLeft(0);
+      })
       .catch(err => console.error("Konular yüklenemedi", err));
-  }, []);
+  }, [testId]); // testId her değiştiğinde bu kod tekrar çalışır
 
   // 2. TİMER MANTIĞI
   useEffect(() => {
@@ -119,7 +133,9 @@ export default function SpeakingSimulator() {
           </Link>
           <div className="flex items-center gap-2 px-3 py-1 bg-white rounded-full border border-slate-200 shadow-sm">
             <span className="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
-            <span className="text-xs font-bold text-slate-600">IELTS Speaking Part 2</span>
+            <span className="text-xs font-bold text-slate-600">
+                IELTS Speaking Test {testId} {/* Hangi testte olduğunu gösterir */}
+            </span>
           </div>
         </div>
 
@@ -173,7 +189,7 @@ export default function SpeakingSimulator() {
                  </div>
                  <h3 className="text-2xl font-bold text-slate-800">Part 2: The Long Turn</h3>
                  <p className="text-slate-500 max-w-md mx-auto">
-                   You will be given a random topic. You have <strong>1 minute</strong> to prepare and <strong>2 minutes</strong> to speak.
+                   Test {testId} seçili. Rastgele bir konu verilecek. Hazırlanmak için <strong>1 dakikan</strong> ve konuşmak için <strong>2 dakikan</strong> var.
                  </p>
                  <button onClick={generateTopic} className="px-8 py-4 bg-indigo-600 text-white rounded-2xl font-bold text-lg shadow-xl shadow-indigo-200 hover:bg-indigo-700 hover:scale-105 transition-all flex items-center gap-3 mx-auto">
                     <Play className="w-5 h-5 fill-current" />
@@ -184,7 +200,7 @@ export default function SpeakingSimulator() {
 
             {(phase === 'prep' || phase === 'speaking' || phase === 'finished') && currentTopic && (
               <div className="w-full text-left max-w-lg mx-auto animate-in slide-in-from-bottom-4 duration-500">
-                <div className="mb-2 text-xs font-bold text-slate-400 uppercase tracking-wider">Your Topic</div>
+                <div className="mb-2 text-xs font-bold text-slate-400 uppercase tracking-wider">Topic ID: {currentTopic.id}</div>
                 <h3 className="text-2xl md:text-3xl font-black text-slate-800 mb-6 leading-tight">
                   {currentTopic.topic}
                 </h3>
@@ -204,10 +220,10 @@ export default function SpeakingSimulator() {
                 {/* VISUALIZER FOR SPEAKING PHASE */}
                 {phase === 'speaking' && (
                   <div className="flex justify-center items-center gap-1 h-8 mb-4">
-                     {[1,2,3,4,5].map(i => (
-                       <div key={i} className="w-1.5 bg-indigo-400 rounded-full animate-pulse" style={{ height: `${Math.random() * 100}%`, animationDuration: '0.8s' }}></div>
-                     ))}
-                      <span className="text-xs font-bold text-indigo-400 ml-2">Recording... (Simulation)</span>
+                      {[1,2,3,4,5].map(i => (
+                        <div key={i} className="w-1.5 bg-indigo-400 rounded-full animate-pulse" style={{ height: `${Math.random() * 100}%`, animationDuration: '0.8s' }}></div>
+                      ))}
+                       <span className="text-xs font-bold text-indigo-400 ml-2">Recording... (Simulation)</span>
                   </div>
                 )}
 
@@ -238,6 +254,17 @@ export default function SpeakingSimulator() {
           )}
 
         </div>
+        
+        {/* Test Seçici (Hızlı Geçiş Butonları) */}
+        <div className="mt-8 flex justify-center gap-4">
+            <Link href="/speaking?test=1" className={`px-4 py-2 rounded-lg font-bold border transition ${testId === '1' ? 'bg-indigo-600 text-white border-indigo-600' : 'bg-white text-slate-600 hover:border-indigo-400'}`}>
+                Test 1
+            </Link>
+            <Link href="/speaking?test=2" className={`px-4 py-2 rounded-lg font-bold border transition ${testId === '2' ? 'bg-indigo-600 text-white border-indigo-600' : 'bg-white text-slate-600 hover:border-indigo-400'}`}>
+                Test 2 (Hard)
+            </Link>
+        </div>
+
       </div>
     </div>
   );
