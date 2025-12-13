@@ -1,82 +1,50 @@
 [
   {
     "id": 401,
-    "topic": "Describe a positive change in your life",
-    "bullets": [
-      "What the change was",
-      "When it happened",
-      "How it affected your life",
-      "Explain why it was a positive change"
+    "part1": [
+      "Do you like change?",
+      "Have you changed a lot since you were a child?",
+      "What is the biggest change in your country recently?",
+      "Is change always good?"
+    ],
+    "part2": {
+      "topic": "Describe a positive change in your life",
+      "bullets": [
+        "What the change was",
+        "When it happened",
+        "How it affected your life",
+        "Explain why it was a positive change"
+      ]
+    },
+    "part3": [
+      "Why do some people hate change?",
+      "How can older people adapt to modern changes?",
+      "Is it important to take risks in life?",
+      "How does technology cause changes in society?"
     ]
   },
   {
     "id": 402,
-    "topic": "Describe an activity you do to stay healthy",
-    "bullets": [
-      "What the activity is",
-      "When and where you usually do it",
-      "Who you do it with",
-      "Explain why you think it is good for your health"
-    ]
-  },
-  {
-    "id": 403,
-    "topic": "Describe a time when you had to wait for something special",
-    "bullets": [
-      "What you were waiting for",
-      "Why you had to wait",
-      "What you did while you were waiting",
-      "Explain how you felt when the wait was over"
-    ]
-  },
-  {
-    "id": 404,
-    "topic": "Describe a piece of good news you heard recently",
-    "bullets": [
-      "What the news was",
-      "How you heard about it",
-      "Who told you (or where you read it)",
-      "Explain why this news made you happy"
-    ]
-  },
-  {
-    "id": 405,
-    "topic": "Describe something you bought that you were pleased with",
-    "bullets": [
-      "What you bought",
-      "Where you bought it",
-      "Why you bought it",
-      "Explain why you were pleased with this purchase"
-    ]
-  },
-  {
-    "id": 406,
-    "topic": "Describe a performance you watched (e.g., concert, play, dance)",
-    "bullets": [
-      "What the performance was",
-      "When and where you watched it",
-      "Who was performing",
-      "Explain why you enjoyed it"
-    ]
-  },
-  {
-    "id": 407,
-    "topic": "Describe a person who is full of energy",
-    "bullets": [
-      "Who this person is",
-      "How you know them",
-      "Why you think they are full of energy",
-      "Explain how you feel when you are with them"
-    ]
-  },
-  {
-    "id": 408,
-    "topic": "Describe a time you lost something important",
-    "bullets": [
-      "What you lost",
-      "How you lost it",
-      "What you did to find it",
-      "Explain how you felt about losing it"
+    "part1": [
+      "Are you a healthy person?",
+      "Do you exercise regularly?",
+      "What is your favorite fruit?",
+      "Do you think you eat enough vegetables?"
+    ],
+    "part2": {
+      "topic": "Describe an activity you do to stay healthy",
+      "bullets": [
+        "What the activity is",
+        "When and where you usually do it",
+        "Who you do it with",
+        "Explain why you think it is good for your health"
+      ]
+    },
+    "part3": [
+      "Is health education important in schools?",
+      "Should the government make sports facilities free?",
+      "Why are people in some countries living longer?",
+      "How does stress affect physical health?"
     ]
   }
 ]
