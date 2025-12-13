@@ -1,122 +1,20 @@
- [
+[
   {
-    "id": "iw-1",
-    "prompt": "Which of the following is the most suitable linking word to start a Body Paragraph introducing a contrasting idea?",
-    "A": "In addition",
-    "B": "However",
-    "C": "Consequently",
-    "D": "For example",
-    "correct": "B",
-    "explanation": "**However** is used to introduce a statement that contrasts with or seems to contradict something that has been said previously. 'In addition' adds information, 'Consequently' shows result."
+    "id": 1,
+    "type": "task1",
+    "title": "Task 1: The Bar Chart",
+    "question": "The chart below shows the number of men and women studying engineering at Australian universities. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+    "min_words": 150,
+    "time": 20,
+    "sample_answer": "The bar chart illustrates the gender distribution of students enrolled in engineering courses at Australian universities over a ten-year period from 2000 to 2010.\n\nOverall, it is evident that the number of male students significantly outnumbered female students throughout the entire period. However, while the number of men remained relatively stable, there was a noticeable upward trend in the number of women choosing to study engineering.\n\nIn 2000, the disparity was most pronounced, with approximately 14,000 male students compared to only 2,000 female students. Over the next five years, the figure for men fluctuated slightly but remained around the 14,000 mark. In contrast, the number of female students grew steadily, reaching 4,000 by 2005.\n\nBy 2010, the number of male students had peaked at just under 16,000. Meanwhile, the female intake continued to rise, ending the period at 6,000. Although women still represented a minority in the engineering faculty, their numbers had tripled over the decade, indicating a gradual shift towards gender balance in this field."
   },
   {
-    "id": "iw-2",
-    "prompt": "Choose the sentence that is most academically appropriate (Formal style) for Task 2.",
-    "A": "Kids these days are spending way too much time on their phones.",
-    "B": "It is undeniable that children are dedicating an excessive amount of time to smartphones.",
-    "C": "I think phone addiction is super bad for young people.",
-    "D": "Phones are totally ruining childhood, to be honest.",
-    "correct": "B",
-    "explanation": "Option B uses **formal vocabulary** ('undeniable', 'dedicating', 'excessive') and objective tone. Options A, C, and D use informal words ('kids', 'way too much', 'super bad', 'totally') which lowers your score."
-  },
-  {
-    "id": "iw-3",
-    "prompt": "In IELTS Task 1 (Graph Description), which sentence is a correct 'Overview' statement?",
-    "A": "In 1990, car production was 50%, while in 2000 it rose to 60%.",
-    "B": "Overall, it is clear that car production increased steadily, while bike production fell.",
-    "C": "The graph shows car and bike production from 1990 to 2010.",
-    "D": "First, looking at the details, car production started at 50%.",
-    "correct": "B",
-    "explanation": "An **Overview** must summarize the general trends **without** giving specific numbers. Option A and D give details. Option C is an Introduction, not an Overview."
-  },
-  {
-    "id": "iw-4",
-    "prompt": "Which of the following connectors expresses a 'Result'?",
-    "A": "Furthermore",
-    "B": "Nevertheless",
-    "C": "Therefore",
-    "D": "Whereas",
-    "correct": "C",
-    "explanation": "**Therefore** (and 'As a result', 'Consequently') introduces a result or effect. 'Furthermore' adds info, 'Nevertheless' and 'Whereas' show contrast."
-  },
-  {
-    "id": "iw-5",
-    "prompt": "Identify the Passive Voice sentence suitable for describing a process (Task 1).",
-    "A": "People pick the tea leaves and put them in boxes.",
-    "B": "The tea leaves are picked and then placed into boxes.",
-    "C": "Someone picks the tea leaves.",
-    "D": "The machine is picking the tea leaves.",
-    "correct": "B",
-    "explanation": "Process diagrams (Task 1) heavily rely on the **Passive Voice** ('are picked', 'are placed') to focus on the action rather than the person doing it."
-  },
-  {
-    "id": "iw-6",
-    "prompt": "What is the best paraphrase for 'The number of people went up'?",
-    "A": "The quantity of humans got higher.",
-    "B": "The number of people increased.",
-    "C": "There was a significant rise in the population.",
-    "D": "People numbers rocketed up.",
-    "correct": "C",
-    "explanation": "Option C uses **'significant rise'** and **'population'**, which is a high-level academic paraphrase. Option A is unnatural ('quantity of humans'). Option B is too simple."
-  },
-  {
-    "id": "iw-7",
-    "prompt": "Which word is a better synonym for 'bad' in an academic essay?",
-    "A": "Detrimental",
-    "B": "Not good",
-    "C": "Nasty",
-    "D": "Ugly",
-    "correct": "A",
-    "explanation": "**Detrimental** means causing harm or damage and is a Band 7+ academic word. 'Nasty' and 'Ugly' are informal."
-  },
-  {
-    "id": "iw-8",
-    "prompt": "Complete the sentence: '_______ technology has many benefits, it also isolates people.'",
-    "A": "Despite",
-    "B": "However",
-    "C": "Although",
-    "D": "On the other hand",
-    "correct": "C",
-    "explanation": "**Although** is a subordinator used to connect two clauses (Although X, Y). 'Despite' must be followed by a noun phrase, not a full sentence. 'However' usually starts a new sentence."
-  },
-  {
-    "id": "iw-9",
-    "prompt": "Which sentence structure is a 'Complex Sentence'?",
-    "A": "Pollution is a big problem.",
-    "B": "Pollution is increasing, and the government is worried.",
-    "C": "Because pollution is increasing, the government needs to take action.",
-    "D": "Pollution is bad; therefore, we must stop it.",
-    "correct": "C",
-    "explanation": "Option C uses a dependent clause starting with **'Because'**, making it a Complex Sentence. Complex sentences are essential for high Grammar scores in Writing."
-  },
-  {
-    "id": "iw-10",
-    "prompt": "In an Opinion Essay, where should you clearly state your position?",
-    "A": "Only in the conclusion.",
-    "B": "In the introduction and the conclusion.",
-    "C": "You should not state your opinion.",
-    "D": "Only in the body paragraphs.",
-    "correct": "B",
-    "explanation": "For a clear position (Band 7+), you should state your opinion in the **Introduction** (thesis statement) and reaffirm it in the **Conclusion**."
-  },
-  {
-    "id": "iw-11",
-    "prompt": "Select the correct preposition: 'The price increased _____ 10% (from 50 to 60).'",
-    "A": "at",
-    "B": "of",
-    "C": "by",
-    "D": "on",
-    "correct": "C",
-    "explanation": "We use **'increase by'** to show the amount of change (artış miktarı). We use **'increase to'** to show the final number."
-  },
-  {
-    "id": "iw-12",
-    "prompt": "Which of these is NOT suitable for an academic conclusion?",
-    "A": "To sum up",
-    "B": "In conclusion",
-    "C": "In a nutshell",
-    "D": "To conclude",
-    "correct": "C",
-    "explanation": "**'In a nutshell'** is an idiom and is too informal (günlük dil) for academic writing. Use 'In conclusion' or 'To sum up' instead."
+    "id": 2,
+    "type": "task2",
+    "title": "Task 2: Education & Technology",
+    "question": "Some people believe that computers and the Internet are more important for a child's education than going to school. To what extent do you agree or disagree?",
+    "min_words": 250,
+    "time": 40,
+    "sample_answer": "In the digital age, the role of traditional schooling is often questioned, with some arguing that the internet and computers are now more vital for a child's education. While technology provides access to limitless information, I strongly disagree that it can replace the comprehensive educational and social benefits provided by schools.\n\nProponents of digital learning argue that the internet allows for personalized, self-paced learning. A child can access tutorials on complex scientific theories or learn a new language through an app, often more engagingly than a textbook. For example, platforms like Khan Academy offer resources that some rural schools might lack. Therefore, as a source of raw information, the internet is indeed superior.\n\nHowever, education is not merely about acquiring facts; it is about social development and discipline. Schools provide a structured environment where children learn to interact with peers, resolve conflicts, and work in teams. These soft skills are crucial for future employment and cannot be learned from a screen. Furthermore, teachers play a mentorship role, guiding students not just academically but morally, helping them distinguish between credible sources and misinformation online.\n\nIn conclusion, while computers and the internet are powerful tools that enhance learning, they cannot replace the holistic development offered by schools. A balanced approach, where technology supports the school curriculum, is the most effective method for educating the next generation."
   }
 ]
