@@ -40,12 +40,12 @@
     "question": "TÜRKÇE: 'Kişileştirme (teşhis)' sanatı aşağıdaki cümlelerin hangisinde vardır?",
     "shape": "",
     "A": "Güneş yavaşça ufkun arkasına çekildi.",
-    "B": "Rüzgar bütün gece evin çatısını salladı.",
+    "B": "Rüzgâr bütün gece öfkeyle bağırdı.",
     "C": "Dağlar bembeyaz karla kaplanmıştı.",
     "D": "Sular hızla yükselmeye başladı.",
     "E": "Gökyüzü koyu gri bir renge büründü.",
     "correct": "B",
-    "Açıklama": "Rüzgara insan davranışı olan 'sallamak' yüklenmiştir."
+    "Açıklama": "Rüzgâra insana özgü bir davranış olan 'bağırmak' yüklenmiştir."
   },
   {
     "id": 5,
@@ -69,7 +69,7 @@
     "D": "I. Murat",
     "E": "Orhan Bey",
     "correct": "C",
-    "Açıklama": "III. Murat, Duraklama Dönemi padişahıdır."
+    "Açıklama": "III. Murat, Duraklama Dönemi padişahı olarak kabul edilir."
   },
   {
     "id": 7,
@@ -232,24 +232,24 @@
     "question": "GÜNCEL: 2024 Nobel Edebiyat Ödülü’nü kazanan yazar aşağıdakilerden hangisidir?",
     "shape": "",
     "A": "Anne Carson",
-    "B": "Mircea Cărtărescu",
-    "C": "Haruki Murakami",
-    "D": "Orhan Pamuk",
-    "E": "Maggie O’Farrell",
+    "B": "Han Kang",
+    "C": "Mircea Cărtărescu",
+    "D": "Haruki Murakami",
+    "E": "Orhan Pamuk",
     "correct": "B",
-    "Açıklama": "2024 Nobel Edebiyat Ödülü’nü Rumen yazar Mircea Cărtărescu kazanmıştır."
+    "Açıklama": "2024 Nobel Edebiyat Ödülü’nü Güney Koreli yazar Han Kang kazanmıştır."
   },
   {
     "id": 21,
     "question": "TÜRKÇE: Bu cümlelerin hangisinde 'amaç-sonuç' ilişkisi vardır?",
     "shape": "",
     "A": "Yağmur yağdığı için dışarı çıkamadık.",
-    "B": "Erken kalktım ki işe zamanında varayım.",
+    "B": "Erken kalktım, bu yüzden işe zamanında vardım.",
     "C": "Sınavı geçmek için çok çalıştı.",
     "D": "Toplantının iptal edildiğini duydum.",
     "E": "Bu yıl kitap çok sattı.",
-    "correct": "B",
-    "Açıklama": "‘Erken kalktım ki…’ ifadesi amaç belirten bir yapıdır."
+    "correct": "C",
+    "Açıklama": "‘...için’ ifadesi amaç bildirir: Çok çalışmasının amacı sınavı geçmektir."
   },
   {
     "id": 22,
@@ -349,7 +349,7 @@
   },
   {
     "id": 30,
-    "question": "GÜNCEL: 2024 yılında hizmete giren Türkiye’nin ilk nükleer enerji santrali Akkuyu NGS hangi il sınırları içindedir?",
+    "question": "GÜNCEL: Türkiye’nin ilk nükleer enerji santrali Akkuyu NGS hangi il sınırları içindedir?",
     "shape": "",
     "A": "Hatay",
     "B": "Mersin",
@@ -357,7 +357,7 @@
     "D": "Osmaniye",
     "E": "Kahramanmaraş",
     "correct": "B",
-    "Açıklama": "Akkuyu NGS, Mersin’in Gülnar ilçesinde bulunmaktadır."
+    "Açıklama": "Akkuyu NGS, Mersin’in Gülnar ilçesi sınırları içinde bulunmaktadır."
   },
   {
     "id": 31,
@@ -377,11 +377,11 @@
     "shape": "",
     "A": "Bu konuyu araştırdım.",
     "B": "Sana yardım edeceğim.",
-    "C": "Bu sözleri duyunca ağladı.",
-    "D": "Onu görünce heyecanlandı.",
+    "C": "Bu sözleri duyunca ağlayıverdi.",
+    "D": "Onu görünce heyecanlanıverdi.",
     "E": "Sınavda başarılı olmak için çalıştı.",
     "correct": "A",
-    "Açıklama": "Araştırmak basit fiildir; diğerleri kurallı veya yardımcı eylemle oluşan birleşik fiillerdir."
+    "Açıklama": "‘Araştırdım’ basit fiildir; diğerlerinde yardımcı fiille kurulan (yardım etmek/olmak) veya kurallı birleşik fiil (-iver) vardır."
   },
   {
     "id": 33,
@@ -416,8 +416,8 @@
     "C": "Akdeniz",
     "D": "Karadeniz",
     "E": "Doğu Anadolu",
-    "correct": "E",
-    "Açıklama": "Dağlık yapısı nedeniyle en fazla akarsu Doğu Anadolu’dan doğar."
+    "correct": "D",
+    "Açıklama": "Karadeniz Bölgesi, yıl boyu yağışın fazla olması nedeniyle akarsu ağı bakımından en zengin bölgelerden biridir."
   },
   {
     "id": 36,
@@ -652,12 +652,12 @@
     "question": "COĞRAFYA: Aşağıdaki şehirlerden hangisi İç Anadolu Bölgesi'nde yer almaz?",
     "shape": "",
     "A": "Kayseri",
-    "B": "Sivas",
+    "B": "Trabzon",
     "C": "Aksaray",
     "D": "Kırşehir",
     "E": "Yozgat",
     "correct": "B",
-    "Açıklama": "Sivas coğrafi olarak Doğu Anadolu Bölgesi'nde yer alır."
+    "Açıklama": "Trabzon Karadeniz Bölgesi'nde yer alır."
   },
   {
     "id": 56,
