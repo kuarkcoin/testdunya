@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
-// URL'deki ?test=1 kısmını okumak için bunu ekliyoruz:
 import { useSearchParams } from 'next/navigation';
 
 // --- ICONS ---
@@ -21,48 +20,51 @@ const Stop = (props: React.SVGProps<SVGSVGElement>) => (
 const ArrowRight = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
 );
+const Check = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><polyline points="20 6 9 17 4 12"/></svg>
+);
 
-// --- TYPES ---
-interface Topic {
+// --- TYPES (YENİ FORMAT) ---
+interface FullTest {
   id: number;
-  topic: string;
-  bullets: string[];
+  part1: string[];
+  part2: {
+    topic: string;
+    bullets: string[];
+  };
+  part3: string[];
 }
 
 export default function SpeakingSimulator() {
-  const [topics, setTopics] = useState<Topic[]>([]);
-  const [currentTopic, setCurrentTopic] = useState<Topic | null>(null);
-  const [phase, setPhase] = useState<'idle' | 'prep' | 'speaking' | 'finished'>('idle');
+  const [topics, setTopics] = useState<FullTest[]>([]);
+  const [currentTest, setCurrentTest] = useState<FullTest | null>(null);
+  
+  // AŞAMALAR GÜNCELLENDİ: Part 1 ve Part 3 eklendi
+  const [phase, setPhase] = useState<'idle' | 'part1' | 'part2-prep' | 'part2-speaking' | 'part3' | 'finished'>('idle');
   const [timeLeft, setTimeLeft] = useState(0);
   
-  // URL PARAMETRESİNİ OKUMA
   const searchParams = useSearchParams();
-  // Eğer URL'de test yoksa varsayılan olarak '1' olsun
   const testId = searchParams.get('test') || '1';
-  
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
-  // 1. DATA YÜKLEME (Dinamik)
+  // DATA YÜKLEME
   useEffect(() => {
-    // ielts-speaking1.json, ielts-speaking2.json dosyasını çeker
     fetch(`/data/tests/ielts-speaking${testId}.json`)
       .then(res => {
-        if (!res.ok) throw new Error("Test dosyası bulunamadı");
+        if (!res.ok) throw new Error("Dosya bulunamadı");
         return res.json();
       })
       .then(data => {
         setTopics(data);
-        // Yeni test yüklendiğinde her şeyi sıfırla
-        setPhase('idle');
-        setCurrentTopic(null);
-        setTimeLeft(0);
+        reset();
       })
-      .catch(err => console.error("Konular yüklenemedi", err));
-  }, [testId]); // testId her değiştiğinde bu kod tekrar çalışır
+      .catch(err => console.error("Hata:", err));
+  }, [testId]);
 
-  // 2. TİMER MANTIĞI
+  // TİMER MANTIĞI
   useEffect(() => {
-    if (phase === 'idle' || phase === 'finished') {
+    // Sadece Part 2'nin Prep ve Speaking aşamalarında otomatik timer çalışır
+    if (phase !== 'part2-prep' && phase !== 'part2-speaking') {
       if (timerRef.current) clearInterval(timerRef.current);
       return;
     }
@@ -70,7 +72,7 @@ export default function SpeakingSimulator() {
     timerRef.current = setInterval(() => {
       setTimeLeft((prev) => {
         if (prev <= 1) {
-          handlePhaseComplete();
+          handleTimerComplete();
           return 0;
         }
         return prev - 1;
@@ -82,40 +84,48 @@ export default function SpeakingSimulator() {
     };
   }, [phase]);
 
-  const handlePhaseComplete = () => {
-    if (phase === 'prep') {
-      startSpeaking();
-    } else if (phase === 'speaking') {
-      setPhase('finished');
+  const handleTimerComplete = () => {
+    if (phase === 'part2-prep') {
+      startPart2Speaking();
+    } else if (phase === 'part2-speaking') {
+      startPart3(); // Süre bitince otomatik Part 3'e geç
     }
   };
 
   // --- ACTIONS ---
 
-  const generateTopic = () => {
+  const startSession = () => {
     if (topics.length === 0) return;
     const random = topics[Math.floor(Math.random() * topics.length)];
-    setCurrentTopic(random);
-    startPrep();
+    setCurrentTest(random);
+    setPhase('part1');
   };
 
-  const startPrep = () => {
-    setPhase('prep');
-    setTimeLeft(60); // 1 Dakika Hazırlık
+  const startPart2Prep = () => {
+    setPhase('part2-prep');
+    setTimeLeft(60); // 1 dk Hazırlık
   };
 
-  const startSpeaking = () => {
-    setPhase('speaking');
-    setTimeLeft(120); // 2 Dakika Konuşma
+  const startPart2Speaking = () => {
+    setPhase('part2-speaking');
+    setTimeLeft(120); // 2 dk Konuşma
+  };
+
+  const startPart3 = () => {
+    setPhase('part3');
+    // Part 3 için timer zorunlu değil ama opsiyonel konabilir, şimdilik timer yok
+  };
+
+  const finishTest = () => {
+    setPhase('finished');
   };
 
   const reset = () => {
     setPhase('idle');
-    setCurrentTopic(null);
+    setCurrentTest(null);
     setTimeLeft(0);
   };
 
-  // Format MM:SS
   const formatTime = (s: number) => {
     const min = Math.floor(s / 60);
     const sec = s % 60;
@@ -132,102 +142,132 @@ export default function SpeakingSimulator() {
             ← Dashboard
           </Link>
           <div className="flex items-center gap-2 px-3 py-1 bg-white rounded-full border border-slate-200 shadow-sm">
-            <span className="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
-            <span className="text-xs font-bold text-slate-600">
-                IELTS Speaking Test {testId} {/* Hangi testte olduğunu gösterir */}
-            </span>
+             <span className={`w-2 h-2 rounded-full animate-pulse ${phase === 'idle' ? 'bg-slate-300' : 'bg-green-500'}`}></span>
+             <span className="text-xs font-bold text-slate-600">Full Exam Mode - Test {testId}</span>
           </div>
         </div>
+
+        {/* PROGRESS BAR */}
+        {phase !== 'idle' && phase !== 'finished' && (
+           <div className="flex gap-2 mb-6">
+              <div className={`h-2 flex-1 rounded-full transition-all ${phase === 'part1' ? 'bg-indigo-500' : 'bg-indigo-200'}`}></div>
+              <div className={`h-2 flex-1 rounded-full transition-all ${(phase === 'part2-prep' || phase === 'part2-speaking') ? 'bg-indigo-500' : 'bg-indigo-200'}`}></div>
+              <div className={`h-2 flex-1 rounded-full transition-all ${phase === 'part3' ? 'bg-indigo-500' : 'bg-indigo-200'}`}></div>
+           </div>
+        )}
 
         {/* MAIN CARD */}
         <div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-200 relative min-h-[500px] flex flex-col">
           
-          {/* TOP BAR (TIMER) */}
-          <div className={`p-6 flex items-center justify-between transition-colors duration-500 ${
-            phase === 'prep' ? 'bg-amber-50' : 
-            phase === 'speaking' ? 'bg-indigo-50' : 
-            'bg-slate-50'
-          }`}>
-             <div className="flex items-center gap-3">
-               <div className={`p-3 rounded-xl ${
-                 phase === 'prep' ? 'bg-amber-100 text-amber-600' :
-                 phase === 'speaking' ? 'bg-indigo-100 text-indigo-600' :
-                 'bg-slate-200 text-slate-400'
-               }`}>
-                 <Mic className="w-6 h-6" />
-               </div>
-               <div>
-                 <h2 className="font-bold text-slate-800 text-lg">
-                   {phase === 'idle' && "Speaking Simulator"}
-                   {phase === 'prep' && "Preparation Time"}
-                   {phase === 'speaking' && "Speaking Time"}
-                   {phase === 'finished' && "Session Completed"}
-                 </h2>
-                 <p className="text-xs font-bold uppercase tracking-wider opacity-60">
-                   {phase === 'idle' ? "Ready to Start" : phase === 'finished' ? "Well Done" : "In Progress"}
-                 </p>
-               </div>
-             </div>
-
-             {/* BIG TIMER */}
-             <div className={`text-4xl font-mono font-black tabular-nums transition-colors ${
-               phase === 'prep' ? 'text-amber-500' :
-               phase === 'speaking' ? 'text-indigo-600' :
-               'text-slate-300'
-             }`}>
-               {formatTime(timeLeft)}
-             </div>
+          {/* TOP INFO BAR */}
+          <div className="p-6 bg-slate-50 border-b border-slate-100 flex justify-between items-center">
+             <h2 className="font-bold text-slate-800 text-lg flex items-center gap-2">
+               {phase === 'idle' && "IELTS Speaking Simulator"}
+               {phase === 'part1' && "Part 1: Interview"}
+               {phase === 'part2-prep' && "Part 2: Preparation"}
+               {phase === 'part2-speaking' && "Part 2: Speaking"}
+               {phase === 'part3' && "Part 3: Discussion"}
+               {phase === 'finished' && "Test Completed"}
+             </h2>
+             
+             {/* SADECE PART 2'DE TİMER GÖSTER */}
+             {(phase === 'part2-prep' || phase === 'part2-speaking') && (
+                <div className={`text-2xl font-mono font-black ${phase === 'part2-prep' ? 'text-amber-500' : 'text-indigo-600'}`}>
+                   {formatTime(timeLeft)}
+                </div>
+             )}
           </div>
 
           {/* CONTENT AREA */}
-          <div className="flex-grow p-8 flex flex-col items-center justify-center text-center relative">
+          <div className="flex-grow p-8 flex flex-col items-center justify-center text-center relative overflow-y-auto max-h-[60vh]">
             
             {phase === 'idle' && (
               <div className="space-y-6 animate-in fade-in zoom-in duration-300">
                  <div className="w-24 h-24 bg-indigo-50 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Mic className="w-10 h-10 text-indigo-400" />
                  </div>
-                 <h3 className="text-2xl font-bold text-slate-800">Part 2: The Long Turn</h3>
-                 <p className="text-slate-500 max-w-md mx-auto">
-                   Test {testId} seçili. Rastgele bir konu verilecek. Hazırlanmak için <strong>1 dakikan</strong> ve konuşmak için <strong>2 dakikan</strong> var.
-                 </p>
-                 <button onClick={generateTopic} className="px-8 py-4 bg-indigo-600 text-white rounded-2xl font-bold text-lg shadow-xl shadow-indigo-200 hover:bg-indigo-700 hover:scale-105 transition-all flex items-center gap-3 mx-auto">
-                    <Play className="w-5 h-5 fill-current" />
-                    Start Session
+                 <h3 className="text-2xl font-bold text-slate-800">Full Speaking Test</h3>
+                 <div className="text-slate-500 max-w-md mx-auto text-sm space-y-2 text-left bg-slate-50 p-4 rounded-xl">
+                    <p><strong>Part 1:</strong> Interview (Isınma soruları)</p>
+                    <p><strong>Part 2:</strong> Cue Card (1 dk hazırlık, 2 dk konuşma)</p>
+                    <p><strong>Part 3:</strong> Discussion (Derin tartışma soruları)</p>
+                 </div>
+                 <button onClick={startSession} className="px-8 py-4 bg-indigo-600 text-white rounded-2xl font-bold text-lg shadow-xl shadow-indigo-200 hover:bg-indigo-700 hover:scale-105 transition-all flex items-center gap-3 mx-auto">
+                    <Play className="w-5 h-5 fill-current" /> Start Test
                  </button>
               </div>
             )}
 
-            {(phase === 'prep' || phase === 'speaking' || phase === 'finished') && currentTopic && (
-              <div className="w-full text-left max-w-lg mx-auto animate-in slide-in-from-bottom-4 duration-500">
-                <div className="mb-2 text-xs font-bold text-slate-400 uppercase tracking-wider">Topic ID: {currentTopic.id}</div>
-                <h3 className="text-2xl md:text-3xl font-black text-slate-800 mb-6 leading-tight">
-                  {currentTopic.topic}
-                </h3>
-                
-                <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100 mb-8">
-                  <p className="text-sm font-bold text-slate-500 mb-4">You should say:</p>
-                  <ul className="space-y-3">
-                    {currentTopic.bullets.map((bull, i) => (
-                      <li key={i} className="flex items-start gap-3 text-slate-700 font-medium">
-                        <span className="w-1.5 h-1.5 bg-indigo-400 rounded-full mt-2 flex-shrink-0"></span>
-                        {bull}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+            {currentTest && (
+                <>
+                  {/* PART 1 SCREEN */}
+                  {phase === 'part1' && (
+                    <div className="w-full text-left space-y-6 animate-in slide-in-from-right duration-300">
+                        <div className="bg-indigo-50 p-4 rounded-xl border border-indigo-100 text-indigo-800 text-sm mb-4">
+                            Answer these questions briefly (2-3 sentences each).
+                        </div>
+                        <ul className="space-y-4">
+                            {currentTest.part1.map((q, i) => (
+                                <li key={i} className="flex gap-3 text-lg font-medium text-slate-700">
+                                    <span className="text-indigo-400 font-bold">{i+1}.</span> {q}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                  )}
 
-                {/* VISUALIZER FOR SPEAKING PHASE */}
-                {phase === 'speaking' && (
-                  <div className="flex justify-center items-center gap-1 h-8 mb-4">
-                      {[1,2,3,4,5].map(i => (
-                        <div key={i} className="w-1.5 bg-indigo-400 rounded-full animate-pulse" style={{ height: `${Math.random() * 100}%`, animationDuration: '0.8s' }}></div>
-                      ))}
-                       <span className="text-xs font-bold text-indigo-400 ml-2">Recording... (Simulation)</span>
-                  </div>
-                )}
+                  {/* PART 2 SCREENS */}
+                  {(phase === 'part2-prep' || phase === 'part2-speaking') && (
+                     <div className="w-full text-left max-w-lg mx-auto animate-in slide-in-from-right duration-300">
+                        <h3 className="text-2xl md:text-3xl font-black text-slate-800 mb-6 leading-tight">
+                          {currentTest.part2.topic}
+                        </h3>
+                        <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100 mb-8">
+                          <p className="text-sm font-bold text-slate-500 mb-4">You should say:</p>
+                          <ul className="space-y-3">
+                            {currentTest.part2.bullets.map((bull, i) => (
+                              <li key={i} className="flex items-start gap-3 text-slate-700 font-medium">
+                                <span className="w-1.5 h-1.5 bg-indigo-400 rounded-full mt-2 flex-shrink-0"></span>
+                                {bull}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                        {phase === 'part2-speaking' && (
+                           <div className="flex justify-center items-center gap-1 h-8 animate-pulse text-indigo-500 font-bold">
+                              ● Recording...
+                           </div>
+                        )}
+                     </div>
+                  )}
 
-              </div>
+                  {/* PART 3 SCREEN */}
+                  {phase === 'part3' && (
+                    <div className="w-full text-left space-y-6 animate-in slide-in-from-right duration-300">
+                        <div className="bg-amber-50 p-4 rounded-xl border border-amber-100 text-amber-800 text-sm mb-4">
+                            Give detailed answers (explain reasons, give examples).
+                        </div>
+                        <ul className="space-y-4">
+                            {currentTest.part3.map((q, i) => (
+                                <li key={i} className="flex gap-3 text-lg font-medium text-slate-700">
+                                    <span className="text-amber-500 font-bold">{i+1}.</span> {q}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                  )}
+
+                  {/* FINISHED SCREEN */}
+                  {phase === 'finished' && (
+                     <div className="text-center animate-in zoom-in duration-300">
+                        <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <Check className="w-10 h-10" />
+                        </div>
+                        <h3 className="text-2xl font-bold text-slate-800 mb-2">Test Completed!</h3>
+                        <p className="text-slate-500">You have completed all 3 parts of the speaking test.</p>
+                     </div>
+                  )}
+                </>
             )}
 
           </div>
@@ -239,15 +279,35 @@ export default function SpeakingSimulator() {
                  <Stop className="w-4 h-4" /> Quit
                </button>
 
-               {phase === 'prep' && (
-                 <button onClick={startSpeaking} className="px-6 py-3 bg-indigo-600 text-white rounded-xl font-bold shadow-lg hover:bg-indigo-700 transition-all flex items-center gap-2">
+               {/* BUTONLAR AŞAMAYA GÖRE DEĞİŞİR */}
+               
+               {phase === 'part1' && (
+                  <button onClick={startPart2Prep} className="px-6 py-3 bg-indigo-600 text-white rounded-xl font-bold shadow-lg hover:bg-indigo-700 transition-all flex items-center gap-2">
+                    Start Part 2 (Cue Card) <ArrowRight className="w-4 h-4" />
+                  </button>
+               )}
+
+               {phase === 'part2-prep' && (
+                 <button onClick={startPart2Speaking} className="px-6 py-3 bg-indigo-600 text-white rounded-xl font-bold shadow-lg hover:bg-indigo-700 transition-all flex items-center gap-2">
                    Start Speaking Now <ArrowRight className="w-4 h-4" />
                  </button>
                )}
 
+               {phase === 'part2-speaking' && (
+                 <button onClick={startPart3} className="px-6 py-3 bg-indigo-600 text-white rounded-xl font-bold shadow-lg hover:bg-indigo-700 transition-all flex items-center gap-2">
+                   Finish Part 2 & Go to Part 3 <ArrowRight className="w-4 h-4" />
+                 </button>
+               )}
+
+               {phase === 'part3' && (
+                 <button onClick={finishTest} className="px-6 py-3 bg-emerald-500 text-white rounded-xl font-bold shadow-lg hover:bg-emerald-600 transition-all flex items-center gap-2">
+                   Finish Test <Check className="w-4 h-4" />
+                 </button>
+               )}
+               
                {phase === 'finished' && (
-                 <button onClick={generateTopic} className="px-6 py-3 bg-emerald-500 text-white rounded-xl font-bold shadow-lg hover:bg-emerald-600 transition-all flex items-center gap-2">
-                   <Refresh className="w-4 h-4" /> Next Topic
+                 <button onClick={startSession} className="px-6 py-3 bg-indigo-600 text-white rounded-xl font-bold shadow-lg hover:bg-indigo-700 transition-all flex items-center gap-2">
+                   <Refresh className="w-4 h-4" /> Start New Test
                  </button>
                )}
             </div>
@@ -255,26 +315,16 @@ export default function SpeakingSimulator() {
 
         </div>
         
-        {/* Test Seçici (Hızlı Geçiş Butonları) */}
-        <div className="mt-8 flex flex-wrap justify-center gap-4"> 
-            <Link href="/speaking?test=1" className={`px-4 py-2 rounded-lg font-bold border transition ${testId === '1' ? 'bg-indigo-600 text-white border-indigo-600' : 'bg-white text-slate-600 hover:border-indigo-400'}`}>
-                Test 1
-            </Link>
-            <Link href="/speaking?test=2" className={`px-4 py-2 rounded-lg font-bold border transition ${testId === '2' ? 'bg-indigo-600 text-white border-indigo-600' : 'bg-white text-slate-600 hover:border-indigo-400'}`}>
-                Test 2 (Hard)
-            </Link>
-            <Link href="/speaking?test=3" className={`px-4 py-2 rounded-lg font-bold border transition ${testId === '3' ? 'bg-indigo-600 text-white border-indigo-600' : 'bg-white text-slate-600 hover:border-indigo-400'}`}>
-                Test 3
-            </Link>
-            <Link href="/speaking?test=4" className={`px-4 py-2 rounded-lg font-bold border transition ${testId === '4' ? 'bg-indigo-600 text-white border-indigo-600' : 'bg-white text-slate-600 hover:border-indigo-400'}`}>
-                Test 4
-            </Link>
-            <Link href="/speaking?test=5" className={`px-4 py-2 rounded-lg font-bold border transition ${testId === '5' ? 'bg-indigo-600 text-white border-indigo-600' : 'bg-white text-slate-600 hover:border-indigo-400'}`}>
-                Test 5
-            </Link>
+        {/* Test Seçici */}
+        <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <Link href="/speaking?test=1" className={`px-4 py-2 rounded-lg font-bold border transition ${testId === '1' ? 'bg-indigo-600 text-white border-indigo-600' : 'bg-white text-slate-600 hover:border-indigo-400'}`}>Test 1</Link>
+            <Link href="/speaking?test=2" className={`px-4 py-2 rounded-lg font-bold border transition ${testId === '2' ? 'bg-indigo-600 text-white border-indigo-600' : 'bg-white text-slate-600 hover:border-indigo-400'}`}>Test 2</Link>
+            <Link href="/speaking?test=3" className={`px-4 py-2 rounded-lg font-bold border transition ${testId === '3' ? 'bg-indigo-600 text-white border-indigo-600' : 'bg-white text-slate-600 hover:border-indigo-400'}`}>Test 3</Link>
+            <Link href="/speaking?test=4" className={`px-4 py-2 rounded-lg font-bold border transition ${testId === '4' ? 'bg-indigo-600 text-white border-indigo-600' : 'bg-white text-slate-600 hover:border-indigo-400'}`}>Test 4</Link>
+            <Link href="/speaking?test=5" className={`px-4 py-2 rounded-lg font-bold border transition ${testId === '5' ? 'bg-indigo-600 text-white border-indigo-600' : 'bg-white text-slate-600 hover:border-indigo-400'}`}>Test 5</Link>
         </div>
 
-      </div> {/* max-w-2xl mx-auto KAPANIŞI (BU EKSİKTİ) */}
-    </div> // min-h-screen KAPANIŞI (BU EKSİKTİ)
+      </div>
+    </div>
   );
 }
