@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 // --- ICONS ---
@@ -18,22 +18,27 @@ const Check = (props: React.SVGProps<SVGSVGElement>) => (
 );
 
 // ----------------------------------------------------
-// Security: Minimal HTML sanitizer (no external deps)
-// NOTE: For strongest security later, you can swap with DOMPurify.
+// Security: Improved HTML sanitizer
 // ----------------------------------------------------
 function sanitizeHtml(input: string) {
   if (!input) return '';
 
   let s = String(input);
 
-  // 1) Remove script/style/iframe/object/embed tags completely
-  s = s.replace(/<\s*(script|style|iframe|object|embed)\b[^>]*>[\s\S]*?<\s*\/\s*\1\s*>/gi, '');
+  // 1) Blok Script/Style etiketlerini ve içeriklerini tamamen sil
+  s = s.replace(/<script\b[^>]*>([\s\S]*?)<\/script>/gim, "");
+  s = s.replace(/<style\b[^>]*>([\s\S]*?)<\/style>/gim, "");
 
-  // 2) Remove inline event handlers like onclick=, onerror= ...
-  s = s.replace(/\son\w+\s*=\s*["'][\s\S]*?["']/gi, '');
+  // 2) Tek etiketli (self-closing veya boş) tehlikeli elementleri sil
+  // Örnek: <script src="..." />, <iframe ...>
+  s = s.replace(/<(?:script|style|iframe|object|embed|applet|base|link)\b[^>]*\/?>/gim, "");
 
-  // 3) Block javascript: URLs
-  s = s.replace(/(href|src)\s*=\s*["']\s*javascript:[\s\S]*?["']/gi, '$1="#"');
+  // 3) Inline event handler'ları sil (onclick=, onerror=, onmouseover= vb.)
+  // Case-insensitive ve whitespace toleranslı
+  s = s.replace(/\s+on[a-z]+\s*=\s*['"][^'"]*['"]/gim, " ");
+
+  // 4) javascript: URL'lerini engelle
+  s = s.replace(/(href|src)\s*=\s*["']\s*javascript:[\s\S]*?["']/gim, '$1="#"');
 
   return s;
 }
@@ -44,7 +49,7 @@ function formatText(text: string) {
 
   const raw = String(text);
 
-  // HTML içerik varsa: (Reading vb.) sanitize + bas
+  // HTML içerik varsa sanitize et ve bas
   if (raw.includes('<div') || raw.includes('<p') || raw.includes('<br') || raw.includes('<strong')) {
     const safe = sanitizeHtml(raw);
     return (
@@ -55,24 +60,27 @@ function formatText(text: string) {
     );
   }
 
-  // **bold** parçaları badge yap
+  // **bold** parçaları işle
   const parts = raw.split(/(\*\*.*?\*\*)/g);
   return (
     <>
       {parts.map((part, index) => {
+        // Unique Key oluşturma: Index + içeriğin ufak bir kısmı
+        const uniqueKey = `fmt-${index}-${part.slice(0, 5)}`;
+
         if (part.startsWith('**') && part.endsWith('**')) {
           let content = part.slice(2, -2).replace(/^['"]+|['"]+$/g, '');
           return (
             <span
-              key={index}
+              key={uniqueKey}
               className="bg-indigo-50 text-indigo-700 font-bold px-1.5 py-0.5 rounded text-sm border border-indigo-100"
             >
               {content}
             </span>
           );
         }
-        // Normal metin: HTML yoksa direkt bas
-        return <span key={index}>{part}</span>;
+        // Normal metin
+        return <span key={uniqueKey}>{part}</span>;
       })}
     </>
   );
@@ -83,15 +91,8 @@ function getReadableTitle(rawId: string) {
   if (!rawId) return 'Bilinmeyen Test';
 
   const id = String(rawId);
-
-  // Örnek: "ielts-speaking" -> "IELTS: SPEAKING"
-  // Örnek: "yks-sozel-deneme-3" -> "YKS: SÖZEL DENEME 3"
-  // Örnek: "yds-exam-test-5" -> "YDS EXAM TEST 5"
-
   let readable = id.replace(/_/g, '-');
-
-  // Sondaki -q12 gibi suffixleri temizle
-  readable = readable.replace(/-q\d+$/i, '');
+  readable = readable.replace(/-q\d+$/i, ''); // Suffix temizle
 
   // Basit domain mapping
   if (readable.startsWith('ielts')) readable = readable.replace(/^ielts-?/i, 'IELTS: ');
@@ -101,7 +102,6 @@ function getReadableTitle(rawId: string) {
   else if (readable.startsWith('dus')) readable = readable.replace(/^dus-?/i, 'DUS: ');
   else if (readable.startsWith('yds')) readable = readable.toUpperCase();
 
-  // tire -> boşluk, büyük harf
   readable = readable.replace(/-/g, ' ').replace(/\s+/g, ' ').trim().toUpperCase();
 
   return readable;
@@ -123,7 +123,6 @@ export default function MistakesPage() {
   const [mistakes, setMistakes] = useState<MistakeItem[]>([]);
   const [mounted, setMounted] = useState(false);
 
-  // Storage'dan OKU (storage sırası: eski -> yeni varsayımı)
   useEffect(() => {
     setMounted(true);
     const stored = localStorage.getItem('my_mistakes');
@@ -132,7 +131,6 @@ export default function MistakesPage() {
     try {
       const parsed = JSON.parse(stored);
       const arr = Array.isArray(parsed) ? (parsed as MistakeItem[]) : [];
-      // UI: yeni -> eski göster
       setMistakes([...arr].reverse());
     } catch {
       console.error('Hata verisi okunamadı');
@@ -140,12 +138,9 @@ export default function MistakesPage() {
     }
   }, []);
 
-  // UI'daki (reverse) listeden sil, storage'a doğru sırayla yaz
   const deleteMistake = (uniqueId: string) => {
     const updatedUI = mistakes.filter((m) => m.uniqueId !== uniqueId);
     setMistakes(updatedUI);
-
-    // storage: eski->yeni
     const updatedStorage = [...updatedUI].reverse();
     localStorage.setItem('my_mistakes', JSON.stringify(updatedStorage));
   };
@@ -213,7 +208,6 @@ export default function MistakesPage() {
               const savedDate =
                 m.savedAt ? new Date(m.savedAt).toLocaleDateString('tr-TR') : '';
 
-              // performans: find'ları bir kere yap
               const wrongText =
                 m.choices?.find((c) => c.id === m.myWrongAnswer)?.text || m.myWrongAnswer || '';
 
@@ -222,17 +216,17 @@ export default function MistakesPage() {
 
               return (
                 <div
-                  key={m.uniqueId} // ✅ idx yerine uniqueId
+                  key={m.uniqueId}
                   className="bg-white rounded-2xl p-6 md:p-8 border border-slate-200 shadow-sm hover:shadow-md transition-all group relative"
                 >
-                  {/* DELETE BUTTON */}
+                  {/* DELETE BUTTON (UPDATED: Trash Icon & Red Hover) */}
                   <button
                     onClick={() => deleteMistake(m.uniqueId)}
-                    className="absolute top-4 right-4 p-2 text-slate-300 hover:text-emerald-600 hover:bg-emerald-50 rounded-full transition-all"
-                    title="Öğrendim, listeden kaldır"
-                    aria-label="Öğrendim, listeden kaldır"
+                    className="absolute top-4 right-4 p-2 text-slate-300 hover:text-rose-600 hover:bg-rose-50 rounded-full transition-all"
+                    title="Listeden sil"
+                    aria-label="Listeden sil"
                   >
-                    <Check className="w-6 h-6" />
+                    <Trash className="w-6 h-6" />
                   </button>
 
                   {/* META INFO */}
