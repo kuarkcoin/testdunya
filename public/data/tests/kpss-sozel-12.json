@@ -21,7 +21,7 @@
     "D": "Sınav sonuçları açıklandı.",
     "E": "Seninle konuşmak istiyorum.",
     "correct": "C",
-    "Açıklama": "Yüklem yükleme eki almış bir isimdir. 'Eskisi gibi değil' isim soylu bir yüklemdir."
+    "Açıklama": "Yüklem isim soyludur ve 'değil' ile kurulmuştur; bu yüzden isim cümlesidir."
   },
   {
     "id": 3,
@@ -30,10 +30,10 @@
     "A": "Orhan Bey",
     "B": "I. Murad",
     "C": "Yıldırım Bayezid",
-    "D": "Fatih Sultan Mehmet",
-    "E": "II. Mehmed",
+    "D": "II. Mehmed (Fatih Sultan Mehmet)",
+    "E": "II. Bayezid",
     "correct": "B",
-    "Açıklama": "I. Murad, Yeniçeri Ocağı'nı kurarak ilk sürekli kapıkulu ordusunu oluşturmuştur."
+    "Açıklama": "Yeniçeri Ocağı'nın kuruluşu I. Murad dönemiyle ilişkilendirilir."
   },
   {
     "id": 4,
@@ -42,10 +42,10 @@
     "A": "Savaşların yoğun olarak devam etmesi",
     "B": "Batı’ya yönelik ıslahatların başlaması",
     "C": "Meşrutiyet yönetimine geçilmesi",
-    "D": "Kapütülasyonların kaldırılması",
+    "D": "Kapitülasyonların kaldırılması",
     "E": "Yeniçeri Ocağı’nın kapatılması",
     "correct": "B",
-    "Açıklama": "Lale Devri Batılılaşma hareketlerinin ilk görüldüğü dönemdir."
+    "Açıklama": "Lale Devri, Batılılaşma ve kültürel yeniliklerin hız kazandığı dönemdir."
   },
   {
     "id": 5,
@@ -57,7 +57,7 @@
     "D": "Güneydoğu Anadolu",
     "E": "İç Anadolu",
     "correct": "D",
-    "Açıklama": "Güneydoğu Anadolu Bölgesi yazları en sıcak ve en kurak bölgedir."
+    "Açıklama": "Güneydoğu Anadolu’da yazlar çok sıcak ve kuraktır."
   },
   {
     "id": 6,
@@ -93,23 +93,23 @@
     "D": "Mülkiyet hakkı",
     "E": "Bakanlık atama yetkisi",
     "correct": "E",
-    "Açıklama": "Bakanlık atama yetkisi yürütme organına ait bir idari yetkidir."
+    "Açıklama": "Bakanlık atama yetkisi yürütmeye ait idari bir yetkidir; temel hak değildir."
   },
   {
     "id": 9,
-    "question": "GÜNCEL: 2024 yılında Türkiye’de ilk defa düzenlenen Ulusal Yapay Zekâ Stratejisi kapsamında aşağıdakilerden hangisi öncelikli hedefler arasındadır?",
+    "question": "GÜNCEL: Türkiye’nin Ulusal Yapay Zekâ Stratejisi (2021–2025) ve 2024–2025 Eylem Planı kapsamında aşağıdakilerden hangisi öncelikler arasındadır?",
     "shape": "",
     "A": "Yapay zekâya tamamen yasak getirilmesi",
-    "B": "Veri güvenliği ve etik kullanımın sağlanması",
+    "B": "Veri güvenliği ve etik kullanımın güçlendirilmesi",
     "C": "Kâğıt para kullanımının kaldırılması",
     "D": "Nüfusun tamamının kamu çalışanı yapılması",
     "E": "Silahlı kuvvetlerin lağvedilmesi",
     "correct": "B",
-    "Açıklama": "Stratejinin temel amaçlarından biri etik kullanım ve veri güvenliğidir."
+    "Açıklama": "Stratejide güvenilir/etik yapay zekâ ve veri güvenliği gibi başlıklar öncelikli çerçevededir."
   },
   {
     "id": 10,
-    "question": "GÜNCEL: 2023 yılında Türkiye’nin enerji alanındaki en büyük projelerinden biri olan Akkuyu Nükleer Güç Santrali hangi ülkeden teknik destek alarak inşa edilmektedir?",
+    "question": "GÜNCEL: Akkuyu Nükleer Güç Santrali hangi ülkeden teknik destek/ana yüklenici ortaklıkla inşa edilmektedir?",
     "shape": "",
     "A": "Almanya",
     "B": "Japonya",
@@ -117,7 +117,7 @@
     "D": "ABD",
     "E": "Fransa",
     "correct": "C",
-    "Açıklama": "Akkuyu Nükleer Güç Santrali Rusya tarafından inşa edilmektedir."
+    "Açıklama": "Akkuyu NGS projesinde ana yüklenici/teknik ortaklık Rusya (Rosatom) merkezlidir."
   },
   {
     "id": 11,
@@ -129,7 +129,7 @@
     "D": "Hızlı yürüdüğü için terledi.",
     "E": "Arkadaşına sürpriz yaptı.",
     "correct": "B",
-    "Açıklama": "Erken kalkmasının nedeni ders çalışmaktır; amaç-sonuç ilişkisi kurulmuştur."
+    "Açıklama": "Erken kalkma eylemi 'ders çalışma' amacına yöneliktir."
   },
   {
     "id": 12,
@@ -141,7 +141,7 @@
     "D": "Derslerimde başarılıyım.",
     "E": "Bugün toplantı var.",
     "correct": "C",
-    "Açıklama": "'Kafaya takmak' bir deyimdir."
+    "Açıklama": "'Kafaya takmak' kalıplaşmış bir deyimdir."
   },
   {
     "id": 13,
@@ -153,19 +153,19 @@
     "D": "Deniz ticaretinin geliştirilmesi",
     "E": "Ticaret yollarının güvenliği",
     "correct": "B",
-    "Açıklama": "Tımar sistemi hem tarımı düzenleme hem de sipahi asker yetiştirme amacı taşır."
+    "Açıklama": "Tımar sistemi tarımı düzenlerken aynı zamanda sipahi asker yetiştirilmesini sağlar."
   },
   {
     "id": 14,
     "question": "TARİH: Aşağıdakilerden hangisi Misakımillî kararlarının sonuçlarından biri değildir?",
     "shape": "",
-    "A": "Ulusal sınırların ilan edilmesi",
-    "B": "TBMM'nin açılmasının hızlanması",
-    "C": "Kapütülasyonların kaldırılması",
+    "A": "Ulusal sınır anlayışının ilan edilmesi",
+    "B": "Milli iradeye dayalı yeni bir meclis arayışının hızlanması",
+    "C": "Kapitülasyonların fiilen kaldırılması",
     "D": "Bağımsızlık ilkesinin vurgulanması",
     "E": "Dış politikada kararlılık gösterilmesi",
     "correct": "C",
-    "Açıklama": "Kapütülasyonlar Lozan ile kaldırılmıştır; Misakımillî’de bu açık şekilde yer almaz."
+    "Açıklama": "Misakımillî kapitülasyonların kabul edilemezliğini savunur; ancak kapitülasyonların fiilen kaldırılması daha sonra Lozan süreciyle gerçekleşmiştir."
   },
   {
     "id": 15,
@@ -177,7 +177,7 @@
     "D": "İç Anadolu",
     "E": "Güneydoğu Anadolu",
     "correct": "B",
-    "Açıklama": "Nemli iklim nedeniyle ormanlar en fazla Karadeniz Bölgesi'nde bulunur."
+    "Açıklama": "Nemli iklim koşulları nedeniyle orman varlığı en fazla Karadeniz Bölgesi’ndedir."
   },
   {
     "id": 16,
@@ -189,7 +189,7 @@
     "D": "İç Anadolu",
     "E": "Marmara",
     "correct": "C",
-    "Açıklama": "Sert iklim ve engebeli yüzey şekilleri nedeniyle nüfus en az Doğu Anadolu’dadır."
+    "Açıklama": "Sert iklim ve engebeli yer şekilleri nüfusun seyrek olmasına yol açar."
   },
   {
     "id": 17,
@@ -201,7 +201,7 @@
     "D": "Bakanları atamak",
     "E": "Soru önergeleri vermek",
     "correct": "D",
-    "Açıklama": "Bakan atamak yürütmenin (Cumhurbaşkanı’nın) yetkisidir."
+    "Açıklama": "Bakan atamak yürütmeye (Cumhurbaşkanı’na) aittir."
   },
   {
     "id": 18,
@@ -213,11 +213,11 @@
     "D": "Sağlık hizmetlerinden yararlanma hakkı",
     "E": "Eğitim hakkı",
     "correct": "B",
-    "Açıklama": "Mülkiyet hakkı kişinin doğrudan sahip olduğu kişisel haklardandır."
+    "Açıklama": "Mülkiyet hakkı, Anayasa’daki sınıflamada kişinin hakları (kişisel haklar) içinde değerlendirilir."
   },
   {
     "id": 19,
-    "question": "GÜNCEL: 2024 yılında Türkiye’de ilk kez düzenlenen 'Türk Mutfağı Haftası' etkinliğinin amacı aşağıdakilerden hangisidir?",
+    "question": "GÜNCEL: Türkiye’de 'Türk Mutfağı Haftası' etkinliğinin temel amacı aşağıdakilerden hangisidir?",
     "shape": "",
     "A": "Yabancı yatırımcı çekmek",
     "B": "Türk mutfağının tanıtılması",
@@ -225,7 +225,7 @@
     "D": "Teknoloji ihracatını artırmak",
     "E": "Kültür-sanat festivallerini azaltmak",
     "correct": "B",
-    "Açıklama": "Etkinlik Türk mutfağının dünya çapında tanıtılması için yapılmaktadır."
+    "Açıklama": "Türk Mutfağı Haftası (2022’den itibaren) Türk mutfağını yurt içinde ve dünyada tanıtmayı amaçlar."
   },
   {
     "id": 20,
@@ -237,7 +237,7 @@
     "D": "Bayraktar TB2",
     "E": "Hürkuş",
     "correct": "B",
-    "Açıklama": "Kızılelma 2022’de ilk uçuşunu gerçekleştirmiştir; Türkiye'nin önemli savunma projelerindendir."
+    "Açıklama": "Kızılelma 2022’de ilk uçuşunu gerçekleştirmiştir."
   },
   {
     "id": 21,
@@ -249,7 +249,7 @@
     "D": "Bahçedeki ağaçlar henüz çiçek açmadı.",
     "E": "Yemekler bugün biraz tuzluydu.",
     "correct": "B",
-    "Açıklama": "‘Dünyaların benim olması’ abartı içeren bir ifadedir."
+    "Açıklama": "‘Dünyalar benim oldu’ ifadesi mübalağa içerir."
   },
   {
     "id": 22,
@@ -273,7 +273,7 @@
     "D": "Balıkesir Kongresi",
     "E": "Nazilli Kongresi",
     "correct": "C",
-    "Açıklama": "Amasya bir kongre değil, görüşme ve genelgedir."
+    "Açıklama": "Amasya Görüşmeleri bir kongre değildir; görüşme/karar sürecidir."
   },
   {
     "id": 24,
@@ -285,7 +285,7 @@
     "D": "Soyadı Kanunu’nun çıkarılması",
     "E": "Takvim-Saat düzenlemeleri",
     "correct": "C",
-    "Açıklama": "Medeni Kanun, hukuk sistemini düzenleyen temel inkılaptır."
+    "Açıklama": "Medeni Kanun hukuk alanındaki temel düzenlemedir."
   },
   {
     "id": 25,
@@ -297,7 +297,7 @@
     "D": "Çanakkale",
     "E": "Trabzon",
     "correct": "A",
-    "Açıklama": "Batman Türkiye’de petrol üretiminin merkezidir."
+    "Açıklama": "Batman Türkiye’de petrol üretiminin öne çıktığı ildir."
   },
   {
     "id": 26,
@@ -309,7 +309,7 @@
     "D": "Güneydoğu Anadolu",
     "E": "İç Anadolu",
     "correct": "B",
-    "Açıklama": "Marmara Bölgesi hem nüfus hem sanayi yoğunluğunda ilk sıradadır."
+    "Açıklama": "Marmara Bölgesi sanayi ve nüfus yoğunluğunda ilk sıradadır."
   },
   {
     "id": 27,
@@ -321,7 +321,7 @@
     "D": "Seçimleri yönetmek",
     "E": "Yargı kararlarını bozmak",
     "correct": "B",
-    "Açıklama": "Bütçeyi hazırlama görevi yürütmeye (Cumhurbaşkanı’na) aittir."
+    "Açıklama": "Bütçe teklifini hazırlama görevi yürütmeye aittir."
   },
   {
     "id": 28,
@@ -337,7 +337,7 @@
   },
   {
     "id": 29,
-    "question": "GÜNCEL: 2024 yılında Türkiye’de yapılan yerel seçimlerde kullanılan oy türlerinden biri aşağıdakilerden hangisidir?",
+    "question": "GÜNCEL: Türkiye’de yapılan yerel seçimlerde kullanılan oy türlerinden biri aşağıdakilerden hangisidir?",
     "shape": "",
     "A": "Milletvekili oyları",
     "B": "Belediye başkanlığı oyları",
@@ -349,7 +349,7 @@
   },
   {
     "id": 30,
-    "question": "GÜNCEL: Türkiye’nin uzay çalışmaları kapsamında 2024 yılında somut adımlar attığı projelerden biri aşağıdakilerden hangisidir?",
+    "question": "GÜNCEL: Türkiye’nin uzay çalışmaları kapsamında 2024 yılında somut adımlar attığı gelişmelerden biri aşağıdakilerden hangisidir?",
     "shape": "",
     "A": "Uluslararası Uzay İstasyonu'nun kapatılması",
     "B": "Türkiye’nin ilk astronotunun uzaya gönderilmesi",
@@ -369,7 +369,7 @@
     "D": "Film boyunca yağmur hiç durmadı.",
     "E": "Sınıfta herkes dikkatle dinliyordu.",
     "correct": "B",
-    "Açıklama": "Sesi 'benimkinden daha yüksek' diyerek iki durum karşılaştırılmıştır."
+    "Açıklama": "‘Benimkinden daha yüksek’ ifadesiyle karşılaştırma yapılmıştır."
   },
   {
     "id": 32,
@@ -381,7 +381,7 @@
     "D": "Okula yürüyerek gitmeyi seviyorum.",
     "E": "Yarın yeni bir projeye başlayacağız.",
     "correct": "C",
-    "Açıklama": "Pencerelerin kapatılma nedeni havanın soğumasıdır; sebep-sonuç ilişkisi vardır."
+    "Açıklama": "Pencerelerin kapatılma nedeni havanın soğumasıdır."
   },
   {
     "id": 33,
@@ -399,13 +399,13 @@
     "id": 34,
     "question": "TARİH: Aşağıdakilerden hangisi II. Mahmud Dönemi’nde yapılmış bir yenilik değildir?",
     "shape": "",
-    "A": "Sekban-ı Cedid Ocağı’nın kurulması",
+    "A": "Nizam-ı Cedid Ocağı’nın kurulması",
     "B": "Yeniçeri Ocağı’nın kaldırılması",
     "C": "Takvim-i Vekayi’nin çıkarılması",
     "D": "Memurlara fes giyme zorunluluğu",
     "E": "Asakir-i Mansure-i Muhammediye'nin kurulması",
     "correct": "A",
-    "Açıklama": "Sekban-ı Cedid III. Selim dönemine aittir."
+    "Açıklama": "Nizam-ı Cedid, III. Selim dönemine aittir; II. Mahmud dönemi yeniliği değildir."
   },
   {
     "id": 35,
@@ -417,7 +417,7 @@
     "D": "Marmara Denizi",
     "E": "Hazar Denizi",
     "correct": "C",
-    "Açıklama": "Girintili çıkıntılı yapısı nedeniyle Ege kıyıları en uzun kıyı şeridine sahiptir."
+    "Açıklama": "Girintili-çıkıntılı kıyılar nedeniyle en uzun kıyı şeridi Ege’dedir."
   },
   {
     "id": 36,
@@ -429,7 +429,7 @@
     "D": "Ticaret yolları",
     "E": "Turizm potansiyeli",
     "correct": "C",
-    "Açıklama": "Tarım üretiminde temel belirleyici faktör iklimdir."
+    "Açıklama": "Tarım üretiminde temel doğal belirleyici faktör iklimdir."
   },
   {
     "id": 37,
@@ -441,7 +441,7 @@
     "D": "Yargılamanın gizli olması",
     "E": "Siyasi partilerin mahkeme kararlarını belirlemesi",
     "correct": "C",
-    "Açıklama": "Hâkimlerin azledilememesi yargı bağımsızlığının temel güvencelerindendir."
+    "Açıklama": "Hâkimlerin azledilememesi yargı bağımsızlığının önemli güvencelerindendir."
   },
   {
     "id": 38,
@@ -453,11 +453,11 @@
     "D": "Cumhurbaşkanı",
     "E": "Yargıtay",
     "correct": "D",
-    "Açıklama": "OHAL’i ilan etme yetkisi Cumhurbaşkanı’na aittir; TBMM sonradan onaylar."
+    "Açıklama": "OHAL ilan etme yetkisi Cumhurbaşkanı’na aittir; TBMM onay sürecine dahildir."
   },
   {
     "id": 39,
-    "question": "GÜNCEL: Türkiye'de 2023 yılında devreye alınan 'Togg' projesinin ana hedeflerinden biri aşağıdakilerden hangisidir?",
+    "question": "GÜNCEL: Türkiye'de 2023 yılında devreye alınan Togg projesinin ana hedeflerinden biri aşağıdakilerden hangisidir?",
     "shape": "",
     "A": "İçecek sektörünü geliştirmek",
     "B": "Tamamen ithalata bağımlı otomobil üretmek",
@@ -465,11 +465,11 @@
     "D": "Yabancı markalara vergi indirimi sağlamak",
     "E": "Deniz taşımacılığını artırmak",
     "correct": "C",
-    "Açıklama": "Togg’un amacı Türkiye'nin yerli ve elektrikli otomobil üretimidir."
+    "Açıklama": "Togg, yerli ve elektrikli otomobil üretimi hedefiyle geliştirilmiştir."
   },
   {
     "id": 40,
-    "question": "GÜNCEL: Türkiye’nin 2024 yılında resmî olarak başlattığı 'Dijital Türkiye' projesi hangi amacı taşır?",
+    "question": "GÜNCEL: 'Dijital Türkiye' (e-Devlet Kapısı) uygulaması hangi amacı taşır?",
     "shape": "",
     "A": "Kağıt para kullanımını sıfırlamak",
     "B": "Kamusal hizmetleri dijital ortamda erişilebilir hâle getirmek",
@@ -477,7 +477,7 @@
     "D": "Okulları tamamen çevrimdışı hâle getirmek",
     "E": "Televizyon yayınlarını kaldırmak",
     "correct": "B",
-    "Açıklama": "Dijital Türkiye, kamu hizmetlerine elektronik erişimi artırmayı hedefleyen bir projedir."
+    "Açıklama": "e-Devlet Kapısı, kamu hizmetlerine elektronik ortamda erişimi artırmayı amaçlar."
   },
   {
     "id": 41,
@@ -489,7 +489,7 @@
     "D": "Kütüphanede sessizlik hâkimdi.",
     "E": "Köpek bizi görünce hemen yanımıza geldi.",
     "correct": "B",
-    "Açıklama": "Güneşin yere inmesi imkânsız olduğundan abartma (mübalağa) vardır."
+    "Açıklama": "Güneşin yere inmesi imkânsız olduğundan mübalağa vardır."
   },
   {
     "id": 42,
@@ -501,11 +501,11 @@
     "D": "Hava çok soğuktu.",
     "E": "Gürültü yüzünden ders çalışamadım.",
     "correct": "B",
-    "Açıklama": "Sözlük karıştırma eylemi bir amacı gerçekleştirmek içindir; amaç-sonuç ilişkisi kurulur."
+    "Açıklama": "Sözlük karıştırma eylemi bir amaca (kelime öğrenmeye) yöneliktir."
   },
   {
     "id": 43,
-    "question": "TARİH: Aşağıdakilerden hangisi Kurtuluş Savaşı'nın 'askeri' alanda başarıya ulaştığını gösteren gelişmelerden biridir?",
+    "question": "TARİH: Aşağıdakilerden hangisi Kurtuluş Savaşı'nın askeri alanda başarıya ulaştığını gösteren gelişmelerden biridir?",
     "shape": "",
     "A": "Amasya Genelgesi’nin yayımlanması",
     "B": "TBMM’nin açılması",
@@ -517,7 +517,7 @@
   },
   {
     "id": 44,
-    "question": "TARİH: Osmanlı Devleti'nde 'Nizam-ı Cedit' ordusunu kuran padişah kimdir?",
+    "question": "TARİH: Osmanlı Devleti'nde Nizam-ı Cedid ordusunu kuran padişah kimdir?",
     "shape": "",
     "A": "III. Selim",
     "B": "I. Mahmud",
@@ -525,7 +525,7 @@
     "D": "II. Mahmud",
     "E": "III. Ahmed",
     "correct": "A",
-    "Açıklama": "III. Selim’in ıslahat hareketi Nizam-ı Cedit ordusudur."
+    "Açıklama": "Nizam-ı Cedid, III. Selim dönemi ıslahat hareketidir."
   },
   {
     "id": 45,
@@ -535,9 +535,9 @@
     "B": "Ege",
     "C": "İç Anadolu",
     "D": "Doğu Anadolu",
-    "E": "Güneydoğu Anadolu",
-    "correct": "A",
-    "Açıklama": "Karadeniz Bölgesi, aktif fay hatlarının görece daha az geçtiği için deprem riski Türkiye’nin diğer bölgelerine göre daha düşüktür."
+    "E": "Marmara",
+    "correct": "C",
+    "Açıklama": "İç Anadolu, ülkenin ana aktif fay zonlarına göre görece daha düşük deprem riskiyle bilinir."
   },
   {
     "id": 46,
@@ -549,7 +549,7 @@
     "D": "Kısa mesafede sıcaklık farklarının oluşması",
     "E": "Tarım ürünlerinin çeşitlenmesi",
     "correct": "C",
-    "Açıklama": "Nüfus Türkiye’de eşit dağılmamıştır; bu yer şekillerinin bir sonucu değildir."
+    "Açıklama": "Nüfus Türkiye’de eşit dağılmaz; bu yer şekillerinin sonucu değildir."
   },
   {
     "id": 47,
@@ -573,11 +573,11 @@
     "D": "7 yıl",
     "E": "8 yıl",
     "correct": "B",
-    "Açıklama": "2017 Anayasa değişikliğiyle seçimler 5 yılda bir yapılmaktadır."
+    "Açıklama": "Cumhurbaşkanlığı seçimleri 5 yılda bir yapılır."
   },
   {
     "id": 49,
-    "question": "GÜNCEL: 2024 yılında Türkiye’nin uzaya gönderdiği ilk astronot kimdir?",
+    "question": "GÜNCEL: Türkiye’nin ilk astronotu kimdir?",
     "shape": "",
     "A": "Furkan Kaya",
     "B": "Halit Özen",
@@ -589,7 +589,7 @@
   },
   {
     "id": 50,
-    "question": "GÜNCEL: 2023–2024 yıllarında dünya gündeminde öne çıkan 'yapay zeka rekabeti' daha çok hangi iki ülke arasında yaşanmaktadır?",
+    "question": "GÜNCEL: 2023–2024 yıllarında dünya gündeminde öne çıkan 'yapay zekâ rekabeti' daha çok hangi iki ülke arasında yaşanmaktadır?",
     "shape": "",
     "A": "Almanya – Hindistan",
     "B": "Çin – ABD",
@@ -597,7 +597,7 @@
     "D": "İngiltere – Kanada",
     "E": "Rusya – Brezilya",
     "correct": "B",
-    "Açıklama": "Yapay zekâ alanındaki liderlik yarışı büyük ölçüde ABD ve Çin arasında yaşanmaktadır."
+    "Açıklama": "Yapay zekâ alanındaki liderlik yarışı büyük ölçüde ABD ve Çin arasında görülür."
   },
   {
     "id": 51,
@@ -609,11 +609,11 @@
     "D": "Her sabah yürüyüş yapıyor.",
     "E": "Toplantı biraz önce sona erdi.",
     "correct": "C",
-    "Açıklama": "‘Çalışırsan başarırsın’ cümlesinde başarı koşula bağlanmıştır."
+    "Açıklama": "Başarı, 'çalışma' koşuluna bağlanmıştır."
   },
   {
     "id": 52,
-    "question": "TÜRKÇE: Aşağıdakilerden hangisi açıklayıcı bir cümledir?",
+    "question": "TÜRKÇE: Aşağıdakilerden hangisi açıklayıcı (tanımlayıcı) bir cümledir?",
     "shape": "",
     "A": "Bu kitabı çok beğendim.",
     "B": "Arkeoloji, geçmiş uygarlıkları inceleyen bir bilim dalıdır.",
@@ -621,7 +621,7 @@
     "D": "Seni görünce çok şaşırdım.",
     "E": "Bugün hava oldukça serin.",
     "correct": "B",
-    "Açıklama": "'Arkeoloji'nin ne olduğunu açıklayan bir tanım cümlesidir."
+    "Açıklama": "Arkeoloji kavramını açıklayan/ tanımlayan bir cümledir."
   },
   {
     "id": 53,
@@ -633,7 +633,7 @@
     "D": "Müdahalecilik",
     "E": "Monarşik yönetimi destekleme",
     "correct": "C",
-    "Açıklama": "Atatürk 'Yurtta sulh, cihanda sulh' diyerek barışçılığa önem vermiştir."
+    "Açıklama": "Atatürk dış politikada barışçılığı esas almıştır."
   },
   {
     "id": 54,
@@ -645,7 +645,7 @@
     "D": "Sanayi İnkılabı’nın olumlu etkileri",
     "E": "Eyalet yönetiminde bozulma",
     "correct": "D",
-    "Açıklama": "Sanayi İnkılabı Osmanlı'yı olumsuz etkilemiştir; olumlu etkisi yoktur."
+    "Açıklama": "Sanayi İnkılabı Osmanlı’yı olumsuz etkilemiştir; 'olumlu etkiler' neden olamaz."
   },
   {
     "id": 55,
@@ -657,7 +657,7 @@
     "D": "Nüfus yoğunluğunun artması",
     "E": "Depremlerin azalması",
     "correct": "A",
-    "Açıklama": "Yükselti arttıkça sıcaklık düşer; doğuya gidildikçe bu durum belirginleşir."
+    "Açıklama": "Yükselti arttıkça sıcaklık azalır; doğuya gidildikçe bu belirginleşir."
   },
   {
     "id": 56,
@@ -669,7 +669,7 @@
     "D": "Tarihi eserlerin çokluğu",
     "E": "Turizmin gelişmiş olması",
     "correct": "C",
-    "Açıklama": "İç göçün temel sebepleri geçim, iş ve eğitim fırsatlarıdır."
+    "Açıklama": "İç göçün temel nedenleri iş, eğitim ve yaşam koşullarıdır."
   },
   {
     "id": 57,
@@ -681,7 +681,7 @@
     "D": "Bir hakkın tamamen ortadan kaldırılması",
     "E": "Kamu yararı için düzenleme yapılması",
     "correct": "D",
-    "Açıklama": "Bir hakkın tamamen kaldırılması özüne müdahaledir ve kabul edilemez."
+    "Açıklama": "Bir hakkın tamamen kaldırılması hakkın özüne müdahaledir."
   },
   {
     "id": 58,
@@ -693,11 +693,11 @@
     "D": "Yürütmenin yargıyı denetlemesi",
     "E": "Yasamanın tüm yetkileri yürütmeye devretmesi",
     "correct": "B",
-    "Açıklama": "Kuvvetler ayrılığı, erklerin birbirinden bağımsız olması ilkesidir."
+    "Açıklama": "Kuvvetler ayrılığı, erklerin ayrı ve bağımsız olmasıdır."
   },
   {
     "id": 59,
-    "question": "GÜNCEL: Türkiye’de 2024 yılında hizmete açılan 'KAAN' projesi hangi alanda yürütülmektedir?",
+    "question": "GÜNCEL: KAAN (Milli Muharip Uçak) projesi hangi alanda yürütülmektedir?",
     "shape": "",
     "A": "Tarım teknolojileri",
     "B": "Yerli savaş uçağı geliştirme",
@@ -705,7 +705,7 @@
     "D": "Denizaltı modernizasyonu",
     "E": "Milli hızlı tren projesi",
     "correct": "B",
-    "Açıklama": "KAAN, Türkiye’nin milli savaş uçağı projesidir."
+    "Açıklama": "KAAN, Türkiye’nin milli savaş uçağı geliştirme projesidir."
   },
   {
     "id": 60,
@@ -717,6 +717,6 @@
     "D": "Küresel spor etkinliklerinin azalması",
     "E": "Uluslararası öğrenci sayısının azalması",
     "correct": "B",
-    "Açıklama": "Enerji fiyatlarının yükselmesi ve belirsizlik tüm ülkeleri ekonomik olarak etkilemiştir."
+    "Açıklama": "Enerji fiyatlarındaki dalgalanmalar ve belirsizlikler ekonomileri ciddi etkiler."
   }
 ]
