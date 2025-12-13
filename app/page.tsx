@@ -255,6 +255,7 @@ export default function HomePage() {
                 if (module.id === 'ielts-speaking') linkHref = '/ielts/speaking';
                 if (module.id === 'ielts-calculator') linkHref = '/ielts/calculator';
                 if (module.id === 'ielts-listening') linkHref = '/ielts/listening';
+                if (module.id === 'ielts-writing') linkHref = '/ielts/writing';
 
                 return (
                   <Link 
