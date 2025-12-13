@@ -14,13 +14,26 @@
         "How it would be enforced",
         "Who would be most affected by it",
         "Explain why you think this law is necessary"
-      ]
+      ],
+      "sample_answer": "I would strongly advocate for a law that bans the use of single-use plastics entirely, specifically in the food and retail industries. This would include items like plastic cutlery, straws, bags, and excessive packaging that we use once and then throw away.\n\nTo enforce this, the government would need to impose heavy fines on businesses that continue to supply these items. At the same time, subsidies could be offered to companies that switch to biodegradable alternatives like bamboo or paper. Regular inspections by environmental officers would ensure compliance.\n\nThe group most affected by this would likely be small business owners and supermarkets, as they would have to change their supply chains. However, consumers would also need to adapt their habits, such as bringing their own reusable bags or containers.\n\nI believe this law is absolutely necessary because our planet is drowning in plastic waste. We see images of oceans choked with debris and wildlife suffering every day. While recycling helps, it isn't enough; we need to stop the problem at the source. Implementing this law would force a cultural shift towards sustainability and preserve the environment for future generations."
     },
     "part3": [
-      "Why do societies need laws?",
-      "Do you think police officers should carry guns?",
-      "Should laws be the same in every country?",
-      "How can we encourage people to obey the law?"
+      {
+        "question": "Why do societies need laws?",
+        "answer": "Laws act as the framework for a functioning society. Without them, there would be chaos and anarchy, as there would be no consequences for harmful actions. They ensure fairness, protect the weak from the strong, and provide a clear set of guidelines for how citizens should interact with one another."
+      },
+      {
+        "question": "Do you think police officers should carry guns?",
+        "answer": "This is a complex issue and depends heavily on the culture of the country. In places with high rates of violent crime, armed police might be necessary for deterrence and self-defense. However, in safer societies, unarmed police often foster better relationships with the community, as they are seen as helpers rather than enforcers."
+      },
+      {
+        "question": "Should laws be the same in every country?",
+        "answer": "Ideally, fundamental human rights laws should be universal. However, practical laws regarding traffic, commerce, or social conduct need to respect local cultures and traditions. What works in one country might be completely inappropriate in another due to historical or religious differences."
+      },
+      {
+        "question": "How can we encourage people to obey the law?",
+        "answer": "Education is key. If people understand the 'why' behind a law—that it protects them and their community—they are more likely to follow it. Additionally, the legal system must be seen as fair and transparent. If people feel the system is corrupt or biased, they are less likely to respect it."
+      }
     ]
   },
   {
@@ -38,13 +51,26 @@
         "Why you have not achieved it yet",
         "What you need to do to achieve it",
         "Explain how you feel about not having achieved it yet"
-      ]
+      ],
+      "sample_answer": "One meaningful ambition I have held for a long time is to write and publish a novel. I have always been passionate about storytelling and literature, and the idea of creating a world that others can get lost in is very appealing to me.\n\nThe main reason I haven't achieved this yet is simply a lack of time and discipline. Life often gets in the way; between my job, family commitments, and social life, I often find myself too exhausted to write at the end of the day. Furthermore, I tend to be a perfectionist, which causes me to edit the same chapter over and over again instead of moving forward.\n\nTo achieve this, I need to establish a strict routine, perhaps waking up an hour earlier every day to write before the day begins. I also need to stop being so critical of my first draft.\n\nI feel a mix of frustration and hope about this. It's frustrating to see time pass without tangible progress, but I remain hopeful because I know I have the capability to do it. It’s just a matter of prioritizing it."
     },
     "part3": [
-      "Is it good to be very ambitious?",
-      "Why do some people lose their motivation?",
-      "Does success always bring happiness?",
-      "How do parents influence their children's ambitions?"
+      {
+        "question": "Is it good to be very ambitious?",
+        "answer": "Ambition is a double-edged sword. On one hand, it drives progress, innovation, and personal growth. Without ambition, we wouldn't have technological advancements or great art. On the other hand, excessive ambition can lead to burnout, stress, and a neglect of personal relationships. Balance is essential."
+      },
+      {
+        "question": "Why do some people lose their motivation?",
+        "answer": "People often lose motivation when they don't see immediate results or when they encounter failure. A lack of a clear support system can also be a factor. Sometimes, the goal itself might not have been genuinely theirs, but rather something imposed by society or parents."
+      },
+      {
+        "question": "Does success always bring happiness?",
+        "answer": "Not necessarily. We often hear stories of wealthy, successful celebrities who are deeply unhappy. True happiness often comes from meaningful relationships, health, and a sense of purpose, not just from professional accolades or a high bank balance."
+      },
+      {
+        "question": "How do parents influence their children's ambitions?",
+        "answer": "Parents play a huge role. Supportive parents who encourage curiosity can instill a healthy sense of ambition. However, parents who push their children too hard or force them into specific career paths can create anxiety and resentment, potentially stifling their child's true potential."
+      }
     ]
   }
 ]
