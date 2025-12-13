@@ -14,13 +14,26 @@
         "When it happened",
         "How it affected your life",
         "Explain why it was a positive change"
-      ]
+      ],
+      "sample_answer": "A significant positive change in my life was adopting a minimalist lifestyle about two years ago. Previously, I was a bit of a hoarder and loved shopping for clothes I didn't need.\n\nIt happened after I watched a documentary on minimalism and realized how much stress my clutter was causing me. I spent a weekend clearing out my closet and donating bags of stuff.\n\nThis affected my life profoundly. I spent less money, had less cleaning to do, and felt mentally clearer. I stopped attaching my happiness to material possessions.\n\nIt was positive because it gave me freedom. With fewer distractions and more savings, I was able to travel more and focus on experiences rather than things. It taught me that happiness comes from within, not from what you own."
     },
     "part3": [
-      "Why do some people hate change?",
-      "How can older people adapt to modern changes?",
-      "Is it important to take risks in life?",
-      "How does technology cause changes in society?"
+      {
+        "question": "Why do some people hate change?",
+        "answer": "Humans are creatures of habit. Change brings uncertainty, and uncertainty triggers fear. People worry they won't be able to cope with the new situation or that they will lose something valuable they currently have."
+      },
+      {
+        "question": "How can older people adapt to modern changes?",
+        "answer": "Patience and support from younger generations are key. Instead of mocking them for not understanding technology, we should teach them. Also, creating user-friendly interfaces designed for seniors can help bridge the digital divide."
+      },
+      {
+        "question": "Is it important to take risks in life?",
+        "answer": "Yes, because growth only happens outside your comfort zone. If you never take risks, you stagnate. Even if a risk leads to failure, the lesson learned is often more valuable than playing it safe."
+      },
+      {
+        "question": "How does technology cause changes in society?",
+        "answer": "It alters how we communicate, work, and even date. For example, remote work technology has changed urban planning, as people no longer need to live in city centers. Social media has changed political discourse and how news spreads."
+      }
     ]
   },
   {
@@ -38,13 +51,26 @@
         "When and where you usually do it",
         "Who you do it with",
         "Explain why you think it is good for your health"
-      ]
+      ],
+      "sample_answer": "I regularly go swimming to stay healthy. There is a community pool near my house, and I try to go there three times a week, usually in the evenings after work.\n\nI usually go alone because I treat it as a form of meditation, but sometimes I meet a friend there on weekends. \n\nI think it is excellent for my health because it is a full-body workout that builds strength and endurance without putting stress on my joints, unlike running. The rhythmic breathing required in swimming also helps to lower my stress levels and clear my mind after a busy day. I always sleep much better on the days I swim."
     },
     "part3": [
-      "Is health education important in schools?",
-      "Should the government make sports facilities free?",
-      "Why are people in some countries living longer?",
-      "How does stress affect physical health?"
+      {
+        "question": "Is health education important in schools?",
+        "answer": "Critically important. Habits formed in childhood last a lifetime. Schools should teach nutrition, not just in theory but practically, perhaps through cooking classes. They also need to address mental health, which is just as important as physical health."
+      },
+      {
+        "question": "Should the government make sports facilities free?",
+        "answer": "It would be an excellent investment. The cost of maintaining free gyms or pools would be lower than the healthcare costs associated with obesity, heart disease, and diabetes. A healthier population is also a more productive workforce."
+      },
+      {
+        "question": "Why are people in some countries living longer?",
+        "answer": "It’s a combination of better healthcare systems, diet, and lifestyle. Countries with a 'Blue Zone' diet—rich in plants and low in processed foods—tend to have higher life expectancies. Also, strong social connections and low stress levels play a huge role in longevity."
+      },
+      {
+        "question": "How does stress affect physical health?",
+        "answer": "Stress releases cortisol, which in chronic amounts can wreak havoc on the body. It weakens the immune system, raises blood pressure, and increases the risk of heart attacks. The mind-body connection is undeniable; you cannot be physically healthy if you are chronically stressed."
+      }
     ]
   }
 ]
