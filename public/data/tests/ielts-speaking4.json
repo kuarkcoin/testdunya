@@ -14,13 +14,26 @@
         "How often you visit it",
         "What you usually do on this website",
         "Explain why this website is useful or interesting to you"
-      ]
+      ],
+      "sample_answer": "A website I visit almost daily is Reddit. It’s essentially a massive collection of forums where people can discuss literally any topic imaginable, from astrophysics to gardening. \n\nI usually visit it in the evenings to catch up on global news or explore specific hobbies of mine. I spend time reading discussions, looking at user-submitted photos, and sometimes participating in debates.\n\nI find Reddit fascinating because of the sheer variety of human experience it represents. Unlike other social media which can be very curated and fake, Reddit feels more authentic because users are anonymous. It’s incredibly useful for getting honest reviews on products or troubleshooting technical problems. If I have a specific question, chances are someone on Reddit has already answered it."
     },
     "part3": [
-      "How has the internet changed our lives?",
-      "Do people spend too much time online?",
-      "Will libraries disappear because of the internet?",
-      "Is online shopping better than shopping in stores?"
+      {
+        "question": "How has the internet changed our lives?",
+        "answer": "It has revolutionized everything. Communication is instant, information is democratized, and commerce is global. We can work remotely and learn skills without leaving our homes. However, it has also eroded privacy and arguably made face-to-face social interactions more awkward."
+      },
+      {
+        "question": "Do people spend too much time online?",
+        "answer": "Yes, screen addiction is a real epidemic. Many people, myself included, find themselves doom-scrolling for hours without gaining anything of value. It affects our sleep quality and our ability to focus on deep work."
+      },
+      {
+        "question": "Will libraries disappear because of the internet?",
+        "answer": "I don't think so, but their role is changing. Libraries are no longer just repositories of books; they are community hubs providing free internet, study spaces, and workshops. They offer a safe, quiet public space that the internet cannot replicate."
+      },
+      {
+        "question": "Is online shopping better than shopping in stores?",
+        "answer": "It offers convenience and variety that physical stores can't match. You can compare prices instantly and get things delivered to your door. However, for clothes or fresh food, I still prefer physical stores because I want to see and touch the product before buying."
+      }
     ]
   },
   {
@@ -38,13 +51,26 @@
         "What kind of business they do",
         "How you know about them",
         "Explain why you think they are successful"
-      ]
+      ],
+      "sample_answer": "I would like to talk about Elon Musk, who is arguably the most prominent entrepreneur of our time. He is the CEO of Tesla, SpaceX, and owner of X (formerly Twitter). He works primarily in the technology and automotive sectors, focusing on sustainable energy and space exploration.\n\nI know about him simply because he is everywhere in the news and social media. His ambitious projects, like colonizing Mars or creating neural interfaces, constantly make headlines.\n\nI think he is successful not just because of his intelligence, but because of his extreme resilience and risk tolerance. He has faced bankruptcy multiple times and was ridiculed for his ideas about electric cars, yet he persisted. His ability to envision a future that others think is impossible and then work tirelessly to build it is what sets him apart."
     },
     "part3": [
-      "What qualities are needed to be successful in business?",
-      "Should businesses focus only on making money?",
-      "Is it better to work for a big company or a small one?",
-      "How do family businesses affect the economy?"
+      {
+        "question": "What qualities are needed to be successful in business?",
+        "answer": "Resilience is number one. You will face rejection and failure, so you need the grit to keep going. Adaptability is also crucial; the market changes fast, and you need to pivot. Finally, emotional intelligence is key to leading a team and understanding customers."
+      },
+      {
+        "question": "Should businesses focus only on making money?",
+        "answer": "No, the concept of 'corporate social responsibility' is growing. Businesses affect the environment and communities. If they focus only on profit at the expense of ethics, they eventually lose public trust and fail in the long run."
+      },
+      {
+        "question": "Is it better to work for a big company or a small one?",
+        "answer": "Big companies offer stability, better benefits, and clear career paths. Small companies or startups offer more responsibility, faster learning, and a closer-knit culture. It depends on your personality and risk appetite."
+      },
+      {
+        "question": "How do family businesses affect the economy?",
+        "answer": "They are the backbone of many economies. They tend to have a long-term view rather than focusing on quarterly profits, and they often care deeply about their local community and employees. However, they can sometimes face issues with nepotism and lack of innovation."
+      }
     ]
   }
 ]
