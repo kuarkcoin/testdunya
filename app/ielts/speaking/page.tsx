@@ -263,6 +263,9 @@ export default function SpeakingSimulator() {
             <Link href="/speaking?test=2" className={`px-4 py-2 rounded-lg font-bold border transition ${testId === '2' ? 'bg-indigo-600 text-white border-indigo-600' : 'bg-white text-slate-600 hover:border-indigo-400'}`}>
                 Test 2 (Hard)
             </Link>
+            <Link href="/speaking?test=3" className={`px-4 py-2 rounded-lg font-bold border transition ${testId === '3' ? 'bg-indigo-600 text-white border-indigo-600' : 'bg-white text-slate-600 hover:border-indigo-400'}`}>
+                Test 3
+            </Link>
         </div>
 
       </div>
