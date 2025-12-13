@@ -1,0 +1,82 @@
+[
+  {
+    "id": 301,
+    "topic": "Describe a website you visit often",
+    "bullets": [
+      "What the website is",
+      "How often you visit it",
+      "What you usually do on this website",
+      "Explain why this website is useful or interesting to you"
+    ]
+  },
+  {
+    "id": 302,
+    "topic": "Describe a successful business person you admire",
+    "bullets": [
+      "Who this person is",
+      "What kind of business they do",
+      "How you know about them",
+      "Explain why you think they are successful"
+    ]
+  },
+  {
+    "id": 303,
+    "topic": "Describe a time when you were very busy",
+    "bullets": [
+      "When it was",
+      "What you had to do",
+      "How you managed your time",
+      "Explain how you felt after you finished everything"
+    ]
+  },
+  {
+    "id": 304,
+    "topic": "Describe a crowded place you have visited",
+    "bullets": [
+      "Where the place is",
+      "When you went there",
+      "Who you were with",
+      "Explain how you felt about being in such a crowded place"
+    ]
+  },
+  {
+    "id": 305,
+    "topic": "Describe a wild animal you are interested in",
+    "bullets": [
+      "What the animal is",
+      "What it looks like",
+      "Where it lives",
+      "Explain why you find this animal interesting"
+    ]
+  },
+  {
+    "id": 306,
+    "topic": "Describe something you shared with others (or another person)",
+    "bullets": [
+      "What you shared",
+      "Who you shared it with",
+      "Why you shared it",
+      "Explain how you felt about sharing it"
+    ]
+  },
+  {
+    "id": 307,
+    "topic": "Describe a family member you enjoy spending time with",
+    "bullets": [
+      "Who the person is",
+      "What you usually do together",
+      "What kind of person they are",
+      "Explain why you enjoy spending time with them"
+    ]
+  },
+  {
+    "id": 308,
+    "topic": "Describe a piece of clothing you enjoy wearing",
+    "bullets": [
+      "What it looks like",
+      "When and where you bought it",
+      "How often you wear it",
+      "Explain why you enjoy wearing it"
+    ]
+  }
+]
