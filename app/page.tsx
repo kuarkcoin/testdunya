@@ -47,64 +47,63 @@ const Globe = (props: React.SVGProps<SVGSVGElement>) => (
 const Mic = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
 );
-// --- HESAP MAKİNESİ İKONU ---
 const Calculator = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/><line x1="16" x2="16" y1="14" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></svg>
 );
 
 // --- SINAV AYARLARI ---
 const examConfig = [
-  { 
-    id: 'yks', 
-    prefix: 'yks-sozel-deneme', 
-    title: 'YKS Sözel', 
-    count: 30, 
-    activeLimit: 10, 
+  {
+    id: 'yks',
+    prefix: 'yks-sozel-deneme',
+    title: 'YKS Sözel',
+    count: 30,
+    activeLimit: 10,
     desc: 'TYT ve AYT odaklı kapsamlı, yeni nesil deneme setleri.',
     icon: <Book className="w-6 h-6 text-white" />,
     gradient: 'from-blue-600 to-indigo-600',
     border: 'border-blue-100',
     slug: 'yks-sozel'
   },
-  { 
-    id: 'kpss', 
-    prefix: 'kpss-sozel', 
-    title: 'KPSS Genel Kültür', 
-    count: 21, 
-    activeLimit: 10, 
+  {
+    id: 'kpss',
+    prefix: 'kpss-sozel',
+    title: 'KPSS Genel Kültür',
+    count: 21,
+    activeLimit: 10,
     desc: 'Tarih, Coğrafya ve Vatandaşlık için özgün sorular.',
     icon: <Brain className="w-6 h-6 text-white" />,
     gradient: 'from-orange-500 to-red-500',
     border: 'border-orange-100',
     slug: 'kpss-genel-kultur'
   },
-  { 
-    id: 'tus', 
-    prefix: 'tus-deneme', 
-    title: 'TUS Denemeleri', 
-    count: 35, 
-    activeLimit: 35, 
+  {
+    id: 'tus',
+    prefix: 'tus-deneme',
+    title: 'TUS Denemeleri',
+    count: 35,
+    activeLimit: 35,
     desc: 'TUS için Temel ve Klinik Bilimler vaka soruları.',
     icon: <Stethoscope className="w-6 h-6 text-white" />,
     gradient: 'from-emerald-500 to-teal-600',
     border: 'border-emerald-100',
     slug: 'tus-tip'
   },
-  { 
-    id: 'dus', 
-    prefix: 'dus-deneme', 
-    title: 'DUS Denemeleri', 
-    count: 17, 
-    activeLimit: 17, 
+  {
+    id: 'dus',
+    prefix: 'dus-deneme',
+    title: 'DUS Denemeleri',
+    count: 17,
+    activeLimit: 17,
     desc: 'Diş Hekimliği Uzmanlık Sınavı için klinik ve temel sorular.',
     icon: <Tooth className="w-6 h-6 text-white" />,
-    gradient: 'from-cyan-500 to-blue-500', 
+    gradient: 'from-cyan-500 to-blue-500',
     border: 'border-cyan-100',
     slug: 'dus-dis-hekimligi'
   }
 ];
 
-// --- IELTS MODÜLLERİ ---
+// --- IELTS MODÜLLERİ (active/locked eklendi) ---
 const ieltsModules = [
   {
     id: 'ielts-reading',
@@ -113,16 +112,18 @@ const ieltsModules = [
     icon: <Book className="w-6 h-6" />,
     color: 'text-sky-600',
     bg: 'bg-sky-50',
-    border: 'border-sky-200'
+    border: 'border-sky-200',
+    active: true
   },
   {
     id: 'ielts-listening',
     title: 'Listening',
     desc: 'Audio Conversations',
-    icon: <div className="w-6 h-6 flex items-center justify-center font-bold text-lg">🎧</div>, 
+    icon: <div className="w-6 h-6 flex items-center justify-center font-bold text-lg">🎧</div>,
     color: 'text-emerald-600',
     bg: 'bg-emerald-50',
-    border: 'border-emerald-200'
+    border: 'border-emerald-200',
+    active: false
   },
   {
     id: 'ielts-writing',
@@ -131,7 +132,8 @@ const ieltsModules = [
     icon: <PenTool className="w-6 h-6" />,
     color: 'text-amber-600',
     bg: 'bg-amber-50',
-    border: 'border-amber-200'
+    border: 'border-amber-200',
+    active: false
   },
   {
     id: 'ielts-speaking',
@@ -140,7 +142,8 @@ const ieltsModules = [
     icon: <Mic className="w-6 h-6" />,
     color: 'text-indigo-600',
     bg: 'bg-indigo-50',
-    border: 'border-indigo-200'
+    border: 'border-indigo-200',
+    active: false
   },
   {
     id: 'ielts-vocab',
@@ -149,7 +152,8 @@ const ieltsModules = [
     icon: <Zap className="w-6 h-6" />,
     color: 'text-rose-600',
     bg: 'bg-rose-50',
-    border: 'border-rose-200'
+    border: 'border-rose-200',
+    active: true
   },
   {
     id: 'ielts-grammar',
@@ -158,9 +162,9 @@ const ieltsModules = [
     icon: <Brain className="w-6 h-6" />,
     color: 'text-purple-600',
     bg: 'bg-purple-50',
-    border: 'border-purple-200'
+    border: 'border-purple-200',
+    active: true
   },
-  // --- YENİ EKLENEN HESAP MAKİNESİ ---
   {
     id: 'ielts-calculator',
     title: 'Score Calculator',
@@ -168,17 +172,20 @@ const ieltsModules = [
     icon: <Calculator className="w-6 h-6" />,
     color: 'text-teal-600',
     bg: 'bg-teal-50',
-    border: 'border-teal-200'
+    border: 'border-teal-200',
+    active: true
   }
-];
+] as const;
 
 export default function HomePage() {
   const [completed, setCompleted] = useState<{ [key: string]: number[] }>({});
 
   useEffect(() => {
-    const savedData = localStorage.getItem('examTrackerData');
-    if (savedData) {
-      setCompleted(JSON.parse(savedData));
+    try {
+      const savedData = localStorage.getItem('examTrackerData');
+      if (savedData) setCompleted(JSON.parse(savedData));
+    } catch {
+      setCompleted({});
     }
   }, []);
 
@@ -195,7 +202,7 @@ export default function HomePage() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
               </span>
-              TestDünya v3.1 • Şimdi IELTS Eklendi
+              TestDünya v3.2 • IELTS Modülleri Güncellendi
             </div>
 
             <h1 className="text-3xl md:text-5xl font-black tracking-tight leading-tight">
@@ -206,19 +213,22 @@ export default function HomePage() {
             </p>
 
             <div className="flex flex-wrap gap-4 pt-2">
-               <Link href="/mistakes" className="px-6 py-3 bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl font-bold transition-all flex items-center gap-2">
-                 <span>📕</span> Hatalarım
-               </Link>
-               <button onClick={() => document.getElementById('exams')?.scrollIntoView({behavior: 'smooth'})} className="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-bold transition-all shadow-lg shadow-indigo-900/50">
-                 Tüm Testler
-               </button>
+              <Link href="/mistakes" className="px-6 py-3 bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl font-bold transition-all flex items-center gap-2">
+                <span>📕</span> Hatalarım
+              </Link>
+              <button
+                onClick={() => document.getElementById('exams')?.scrollIntoView({ behavior: 'smooth' })}
+                className="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-bold transition-all shadow-lg shadow-indigo-900/50"
+              >
+                Tüm Testler
+              </button>
             </div>
           </div>
 
           <div className="md:w-1/3 flex justify-center md:justify-end">
-             <div className="relative w-40 h-40 md:w-56 md:h-56 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-3xl rotate-6 shadow-2xl flex items-center justify-center border-4 border-white/10 backdrop-blur-md">
-                <Trophy className="w-20 h-20 md:w-28 md:h-28 text-white drop-shadow-md" />
-             </div>
+            <div className="relative w-40 h-40 md:w-56 md:h-56 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-3xl rotate-6 shadow-2xl flex items-center justify-center border-4 border-white/10 backdrop-blur-md">
+              <Trophy className="w-20 h-20 md:w-28 md:h-28 text-white drop-shadow-md" />
+            </div>
           </div>
 
         </div>
@@ -226,59 +236,78 @@ export default function HomePage() {
 
       {/* --- MAIN CONTENT AREA --- */}
       <div id="exams" className="max-w-6xl mx-auto px-4 -mt-20 space-y-10 pb-20 relative z-10">
-        
+
         {/* --- IELTS GLOBAL SECTION --- */}
-        <section className="bg-white rounded-2xl shadow-xl shadow-sky-200/40 overflow-hidden border-2 border-sky-100 relative group">
-           <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-sky-400 to-blue-600"></div>
-           
-           {/* Header */}
-           <div className="p-6 border-b border-slate-100 flex flex-col md:flex-row md:items-center justify-between gap-4">
-              <div className="flex items-center gap-4">
-                 <div className="p-3 bg-sky-100 text-sky-600 rounded-xl">
-                    <Globe className="w-8 h-8" />
-                 </div>
-                 <div>
-                    <h2 className="text-2xl font-black text-slate-800 tracking-tight">IELTS ACADEMIC</h2>
-                    <p className="text-slate-500 text-sm">Global English Preparation • Band 7.0+</p>
-                 </div>
-              </div>
-              <div className="hidden md:block">
-                 <span className="px-4 py-1.5 bg-sky-50 text-sky-700 text-xs font-bold rounded-full border border-sky-100 uppercase tracking-wider">New Module</span>
-              </div>
-           </div>
+        <section className="bg-white rounded-2xl shadow-xl shadow-sky-200/40 overflow-hidden border-2 border-sky-100 relative">
+          <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-sky-400 to-blue-600"></div>
 
-           {/* IELTS Modules Grid */}
-           <div className="p-6 bg-slate-50/50 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-4">
-              {ieltsModules.map((module) => {
-                // Link Mantığı: Speaking ve Calculator için özel link, diğerleri /test/[id]
-                let linkHref = `/test/${module.id}`;
-                if (module.id === 'ielts-speaking') linkHref = '/ielts/speaking';
-                if (module.id === 'ielts-calculator') linkHref = '/ielts/calculator';
-                if (module.id === 'ielts-listening') linkHref = '/ielts/listening';
-                if (module.id === 'ielts-writing') linkHref = '/ielts/writing';
+          {/* Header */}
+          <div className="p-6 border-b border-slate-100 flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div className="flex items-center gap-4">
+              <div className="p-3 bg-sky-100 text-sky-600 rounded-xl">
+                <Globe className="w-8 h-8" />
+              </div>
+              <div>
+                <h2 className="text-2xl font-black text-slate-800 tracking-tight">IELTS ACADEMIC</h2>
+                <p className="text-slate-500 text-sm">Global English Preparation • Band 7.0+</p>
+              </div>
+            </div>
+            <div className="hidden md:block">
+              <span className="px-4 py-1.5 bg-sky-50 text-sky-700 text-xs font-bold rounded-full border border-sky-100 uppercase tracking-wider">
+                New Module
+              </span>
+            </div>
+          </div>
 
+          {/* IELTS Modules Grid */}
+          <div className="p-6 bg-slate-50/50 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-4">
+            {ieltsModules.map((module) => {
+              // Link Mantığı
+              let linkHref = `/test/${module.id}`;
+              if (module.id === 'ielts-speaking') linkHref = '/ielts/speaking';
+              if (module.id === 'ielts-calculator') linkHref = '/ielts/calculator';
+              if (module.id === 'ielts-listening') linkHref = '/ielts/listening';
+              if (module.id === 'ielts-writing') linkHref = '/ielts/writing';
+
+              // Locked
+              if (!module.active) {
                 return (
-                  <Link 
-                    key={module.id} 
-                    href={linkHref} 
-                    className={`flex flex-col items-center justify-center p-4 rounded-xl border-2 transition-all hover:-translate-y-1 hover:shadow-lg ${module.bg} ${module.border} ${module.color} bg-white group/item h-full`}
+                  <div
+                    key={module.id}
+                    className={`flex flex-col items-center justify-center p-4 rounded-xl border-2 ${module.bg} ${module.border} text-slate-400 cursor-not-allowed`}
+                    title="Yakında eklenecek"
                   >
-                    <div className={`mb-3 p-3 rounded-full bg-white shadow-sm ring-1 ring-black/5 ${module.color} group-hover/item:scale-110 transition-transform`}>
-                       {module.icon}
+                    <div className="mb-3 p-3 rounded-full bg-white/60 shadow-sm ring-1 ring-black/5">
+                      <Lock className="w-6 h-6 opacity-70" />
                     </div>
-                    <h3 className="font-bold text-sm md:text-base text-slate-900 text-center">{module.title}</h3>
-                    <p className="text-[10px] font-bold opacity-60 uppercase tracking-wide mt-1 text-center">{module.desc}</p>
-                  </Link>
+                    <h3 className="font-bold text-sm md:text-base text-slate-700 text-center">{module.title}</h3>
+                    <p className="text-[10px] font-bold opacity-60 uppercase tracking-wide mt-1 text-center">Coming Soon</p>
+                  </div>
                 );
-              })}
-           </div>
+              }
+
+              // Active
+              return (
+                <Link
+                  key={module.id}
+                  href={linkHref}
+                  className={`flex flex-col items-center justify-center p-4 rounded-xl border-2 transition-all hover:-translate-y-1 hover:shadow-lg ${module.bg} ${module.border} ${module.color} h-full`}
+                >
+                  <div className="mb-3 p-3 rounded-full bg-white shadow-sm ring-1 ring-black/5">
+                    {module.icon}
+                  </div>
+                  <h3 className="font-bold text-sm md:text-base text-slate-900 text-center">{module.title}</h3>
+                  <p className="text-[10px] font-bold opacity-60 uppercase tracking-wide mt-1 text-center">{module.desc}</p>
+                </Link>
+              );
+            })}
+          </div>
         </section>
 
-
-        {/* --- ULUSAL SINAVLAR (YKS, KPSS, TUS, DUS) --- */}
+        {/* --- ULUSAL SINAVLAR --- */}
         {examConfig.map((exam) => (
-          <section 
-            key={exam.id} 
+          <section
+            key={exam.id}
             className="bg-white rounded-2xl shadow-xl shadow-slate-200/50 overflow-hidden border border-slate-100 transition-all hover:shadow-2xl hover:shadow-indigo-100/50"
           >
             {/* Header */}
@@ -293,8 +322,8 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="hidden sm:block text-right">
-                 <span className="block text-2xl font-black">{exam.count}</span>
-                 <span className="text-[10px] uppercase opacity-80 font-bold tracking-wider">Deneme</span>
+                <span className="block text-2xl font-black">{exam.count}</span>
+                <span className="text-[10px] uppercase opacity-80 font-bold tracking-wider">Deneme</span>
               </div>
             </div>
 
@@ -308,25 +337,25 @@ export default function HomePage() {
 
                   if (isActive) {
                     return (
-                      <Link 
+                      <Link
                         key={num}
                         href={`/test/${testLinkId}`}
                         title={`${exam.title} ${num}. Özgün Deneme`}
                         className={`
                           group relative flex flex-col items-center justify-center py-3 px-2 rounded-xl border transition-all duration-200
-                          ${isDone 
-                            ? 'bg-emerald-50 border-emerald-200 hover:bg-emerald-100' 
+                          ${isDone
+                            ? 'bg-emerald-50 border-emerald-200 hover:bg-emerald-100'
                             : 'bg-white border-slate-200 hover:border-indigo-400 hover:shadow-md hover:-translate-y-0.5'
                           }
                         `}
                       >
                         <div className="mb-1.5">
                           {isDone ? (
-                             <div className="text-emerald-500"><CheckCircle className="w-5 h-5" /></div>
+                            <div className="text-emerald-500"><CheckCircle className="w-5 h-5" /></div>
                           ) : (
-                             <div className="text-slate-300 group-hover:text-indigo-500 transition-colors">
-                               <PenTool className="w-5 h-5" />
-                             </div>
+                            <div className="text-slate-300 group-hover:text-indigo-500 transition-colors">
+                              <PenTool className="w-5 h-5" />
+                            </div>
                           )}
                         </div>
                         <span className={`text-xs font-bold ${isDone ? 'text-emerald-700' : 'text-slate-600 group-hover:text-indigo-900'}`}>
@@ -334,22 +363,22 @@ export default function HomePage() {
                         </span>
                       </Link>
                     );
-                  } else {
-                    return (
-                      <div 
-                        key={num}
-                        className="relative flex flex-col items-center justify-center py-3 px-2 rounded-xl border border-slate-100 bg-slate-50 text-slate-300 cursor-not-allowed overflow-hidden group/lock"
-                        title="Bu test yakında eklenecektir."
-                      >
-                        <div className="mb-1.5 opacity-40">
-                             <Lock className="w-5 h-5 text-slate-400" />
-                        </div>
-                        <span className="text-xs font-bold opacity-40">
-                          {num}. Deneme
-                        </span>
-                      </div>
-                    );
                   }
+
+                  return (
+                    <div
+                      key={num}
+                      className="relative flex flex-col items-center justify-center py-3 px-2 rounded-xl border border-slate-100 bg-slate-50 text-slate-300 cursor-not-allowed overflow-hidden"
+                      title="Bu test yakında eklenecektir."
+                    >
+                      <div className="mb-1.5 opacity-40">
+                        <Lock className="w-5 h-5 text-slate-400" />
+                      </div>
+                      <span className="text-xs font-bold opacity-40">
+                        {num}. Deneme
+                      </span>
+                    </div>
+                  );
                 })}
               </div>
             </div>
@@ -378,6 +407,7 @@ export default function HomePage() {
                 Dikkat dağıtıcı reklamlardan arındırılmış, sadece başarı odaklı tasarım.
               </p>
             </div>
+
             <div className="p-6 bg-emerald-50 rounded-2xl border border-emerald-100 text-center">
               <div className="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Target className="w-6 h-6" />
@@ -387,6 +417,7 @@ export default function HomePage() {
                 Yanlış yaptığınız sorular "Hatalarım" bölümünde birikir, tekrar etmeniz için saklanır.
               </p>
             </div>
+
             <div className="p-6 bg-orange-50 rounded-2xl border border-orange-100 text-center">
               <div className="w-12 h-12 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Book className="w-6 h-6" />
@@ -408,8 +439,8 @@ export default function HomePage() {
               <Trophy className="w-5 h-5 text-indigo-500" /> TestDünya
             </h4>
             <p className="leading-relaxed mb-4 max-w-sm">
-              Türkiye'nin en kapsamlı ücretsiz online sınav hazırlık platformu. 
-              TYT, AYT, KPSS, TUS, DUS ve <strong>IELTS</strong> sınavlarına hazırlanan öğrenciler için 
+              Türkiye'nin en kapsamlı ücretsiz online sınav hazırlık platformu.
+              TYT, AYT, KPSS, TUS, DUS ve <strong>IELTS</strong> sınavlarına hazırlanan öğrenciler için
               özenle hazırlanmış özgün deneme sınavları.
             </p>
             <p className="text-xs opacity-50">&copy; 2025 TestDünya. Tüm hakları saklıdır.</p>
@@ -433,11 +464,11 @@ export default function HomePage() {
             </ul>
           </div>
         </div>
-        
+
         {/* FOOTER CTA */}
         <div className="flex justify-center border-t border-slate-800 pt-8 mt-8">
-          <Link 
-            href="/iletisim" 
+          <Link
+            href="/iletisim"
             className="flex items-center gap-3 bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-xl shadow-lg transition-all hover:-translate-y-1 hover:shadow-indigo-900/50 font-bold text-lg"
           >
             <span className="text-2xl">💬</span>
@@ -445,14 +476,15 @@ export default function HomePage() {
           </Link>
         </div>
       </footer>
-      
+
       {/* --- YUKARI ÇIK --- */}
-      <button 
+      <button
+        aria-label="Scroll to top"
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         className="fixed bottom-6 right-6 z-[999] bg-indigo-600 text-white p-3 rounded-full shadow-xl hover:bg-indigo-700 transition-all border-2 border-white"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="m18 15-6-6-6 6"/>
+          <path d="m18 15-6-6-6 6" />
         </svg>
       </button>
 
