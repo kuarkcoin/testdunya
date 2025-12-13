@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "part1": [
+      "Do you work or are you a student?",
+      "Do you like your job/studies?",
+      "What do you like to do in your free time?",
+      "Do you prefer spending time with family or friends?"
+    ],
+    "part2": {
+      "topic": "Describe a book you have recently read",
+      "bullets": [
+        "What kind of book it is",
+        "What it is about",
+        "Why you read it",
+        "Explain what you liked or disliked about it"
+      ]
+    },
+    "part3": [
+      "Do people in your country read enough books?",
+      "Do you think e-books will replace paper books in the future?",
+      "Why do some people prefer to read news on the internet instead of newspapers?",
+      "How can parents encourage their children to read more?"
+    ]
+  },
+  {
+    "id": 2,
+    "part1": [
+      "Where are you from?",
+      "Is your hometown a good place to live?",
+      "Do you like traveling?",
+      "What is the most interesting place you have visited?"
+    ],
+    "part2": {
+      "topic": "Describe a journey you went on",
+      "bullets": [
+        "Where you went",
+        "Why you went there",
+        "Who you went with",
+        "Explain why this journey was memorable"
+      ]
+    },
+    "part3": [
+      "Do you think it is better to travel alone or with a group?",
+      "How has tourism changed in your country in the last 10 years?",
+      "What are the benefits of traveling to foreign countries?",
+      "Is space travel a good investment for the future?"
+    ]
+  }
+]
