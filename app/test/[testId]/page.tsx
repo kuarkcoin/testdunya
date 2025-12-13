@@ -58,13 +58,22 @@ function formatTime(seconds: number): string {
 
 function formatText(text: string) {
   if (!text) return null;
-  if (text.includes('<div') || text.includes('<p>') || text.includes('custom-reading-content')) {
-     return <div className="prose prose-slate max-w-none" dangerouslySetInnerHTML={{ __html: text }} />;
+
+  // --- EKLENEN KISIM: Kodları Temizle ---
+  // Metin içindeki [attachment_...] ve (attachment) yazılarını siler.
+  const cleanedText = text.replace(/\[attachment_.*?\]/g, "").replace(/\(attachment\)/g, "");
+  // --------------------------------------
+
+  // Aşağıdaki 'text' değişkenlerini 'cleanedText' ile değiştirdik
+  if (cleanedText.includes('<div') || cleanedText.includes('<p>') || cleanedText.includes('custom-reading-content')) {
+     return <div className="prose prose-slate max-w-none" dangerouslySetInnerHTML={{ __html: cleanedText }} />;
   }
-  const parts = String(text).split(/(\*\*.*?\*\*)/g);
+  
+  const parts = String(cleanedText).split(/(\*\*.*?\*\*)/g);
   return (
     <>
       {parts.map((part, index) => {
+        
         if (part.startsWith('**') && part.endsWith('**')) {
           let content = part.slice(2, -2).replace(/^['"]+|['"]+$/g, '');
           return <span key={index} className="bg-indigo-50 text-indigo-700 font-bold px-2 py-0.5 rounded mx-1 border border-indigo-100 text-sm shadow-sm">{content}</span>;
