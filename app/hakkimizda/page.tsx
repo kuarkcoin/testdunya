@@ -1,4 +1,12 @@
-import Link from "next/link";
+// app/hakkimizda/page.tsx
+import React from 'react';
+import type { Metadata } from 'next';
+import Link from 'next/link'; // <--- BU EKSİKTİ, O YÜZDEN HATA VERİYORDU
+
+export const metadata: Metadata = {
+  title: 'Hakkımızda | TestDünya',
+  description: 'TestDünya; YKS, KPSS, TUS ve DUS sınavlarına hazırlananlar için ücretsiz online deneme sınavı platformudur.',
+};
 
 export default function HakkimizdaPage() {
   return (
@@ -118,10 +126,10 @@ export default function HakkimizdaPage() {
               💬 İletişim Formu
             </Link>
             <Link
-              href="/gizlilik"
+              href="/cookie"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-slate-200 bg-slate-50 text-slate-700 text-xs font-semibold hover:bg-slate-100 hover:border-slate-300 transition-colors"
             >
-              🔒 Gizlilik Politikası
+              🔒 Çerez Politikası
             </Link>
           </div>
         </section>
