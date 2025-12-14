@@ -297,7 +297,6 @@ export default function MistakesPage() {
     </div>
   );
 })}
-{/* MISTAKES LIST END */}
           </div>
         )}
       </div>
