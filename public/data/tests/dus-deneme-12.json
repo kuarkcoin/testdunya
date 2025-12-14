@@ -1,6 +1,6 @@
 [
   {
-    "id": 61,
+    "id": 1,
     "question": "TEMEL: Mandibular foramenin anatomik komşuluğu ve klinik önemi düşünüldüğünde, inferior alveolar sinir bloğunda anestetik solüsyonun hedeflendiği temel yapı hangisidir?",
     "A": "Foramen mentale",
     "B": "Foramen mandibulae çevresindeki pterygomandibular aralık",
@@ -8,10 +8,10 @@
     "D": "Foramen infraorbitale",
     "E": "Fossa canina",
     "correct": "B",
-    "Açıklama": "IAN blokta hedef, mandibular foramen seviyesinde inferior alveolar sinirin bulunduğu pterygomandibular aralığa depo yapmaktır. Mental foramen daha distal bir çıkıştır; infraorbital ve canin fossa maksillaya aittir."
+    "Açıklama": "IAN blokta hedef, mandibular foramen seviyesinde inferior alveolar sinirin bulunduğu pterygomandibular aralığa depo yapmaktır. Mental foramen daha distal bir çıkıştır; infraorbital ve fossa canina maksillaya aittir."
   },
   {
-    "id": 62,
+    "id": 2,
     "question": "TEMEL: PDL (periodontal ligament) liflerinin en fazla oklüzal kuvvetlere karşı direnci sağlayan ana grubu hangisidir?",
     "A": "Transseptal lifler",
     "B": "Alveolar crest lifleri",
@@ -22,7 +22,7 @@
     "Açıklama": "Oblik lifler en büyük lif grubudur ve vertikal/oklüzal kuvvetlere karşı dişi alveole doğru asılma sistemi gibi destekler. Diğer liflerin fonksiyonları daha çok yönlendirme/stabilizasyondur."
   },
   {
-    "id": 63,
+    "id": 3,
     "question": "TEMEL: Mine prizma uçlarının asitle pürüzlendirilmesinde en ideal fosforik asit konsantrasyonu genellikle hangisidir?",
     "A": "%5",
     "B": "%10",
@@ -33,7 +33,7 @@
     "Açıklama": "Total-etch protokollerinde mine için en yaygın kullanılan konsantrasyon %35-37 fosforik asittir. Daha yüksek konsantrasyonlar klinik avantaj sağlamaz, hata riskini artırabilir."
   },
   {
-    "id": 64,
+    "id": 4,
     "question": "KLİNİK: Dentin bonding sırasında 'over-etching' ve aşırı kurutma sonucu kollajen ağının çökmesi en çok hangi probleme yol açar?",
     "A": "Hibrit tabaka oluşumunun artması",
     "B": "Rezinin infiltrasyonunun azalması ve bağ dayanımının düşmesi",
@@ -41,10 +41,10 @@
     "D": "Flor salınımının artması",
     "E": "Pulpanın sterilizasyonu",
     "correct": "B",
-    "Açıklama": "Dentin aşırı kurutulursa kollajen fibril ağı çöker, primer infiltrasyonu azalır, hibrit tabaka zayıflar ve bağ dayanımı düşer (postop hassasiyet riski artar)."
+    "Açıklama": "Dentin aşırı kurutulursa kollajen fibril ağı çöker, rezin infiltrasyonu azalır, hibrit tabaka zayıflar ve bağ dayanımı düşer (postop hassasiyet riski artar)."
   },
   {
-    "id": 65,
+    "id": 5,
     "question": "TEMEL: Gingival sulkus sıvısının (GCF) periodontitis aktif fazlarında artmasının en temel nedeni hangisidir?",
     "A": "Sadece tükürük artışı",
     "B": "İnflamasyon kaynaklı damar geçirgenliğinin artması",
@@ -55,7 +55,7 @@
     "Açıklama": "GCF temelde serum transüdat/eksüdatıdır; inflamasyonda damar permeabilitesi artar ve sulkusa sıvı geçişi yükselir."
   },
   {
-    "id": 66,
+    "id": 6,
     "question": "TEMEL: Periodontal cepte en fazla kabul gören patojenik mikroorganizma komplekslerinden 'red complex' içinde yer alan tür hangisidir?",
     "A": "Streptococcus sanguinis",
     "B": "Actinomyces viscosus",
@@ -66,7 +66,7 @@
     "Açıklama": "Red complex klasik olarak P. gingivalis, T. forsythia ve T. denticola içerir; ileri periodontitisle ilişkilidir."
   },
   {
-    "id": 67,
+    "id": 7,
     "question": "TEMEL: Pulpa kanlanmasının temel kaynağı hangi damar yapısıdır?",
     "A": "A. facialis",
     "B": "A. maxillaris'in dalları (alveolar arterler)",
@@ -77,7 +77,7 @@
     "Açıklama": "Pulpa kanlanması başlıca a. maxillarisin alveolar dalları üzerinden apikal foramenden giren arteriyollerle sağlanır."
   },
   {
-    "id": 68,
+    "id": 8,
     "question": "KLİNİK: Akut apikal periodontitis ile akut apikal apse arasındaki en belirgin klinik fark hangisidir?",
     "A": "Akut apikal periodontitis her zaman fistüllüdür",
     "B": "Akut apikal apsede pürülan koleksiyon ve fluktuan şişlik gelişebilir",
@@ -85,21 +85,21 @@
     "D": "Periodontitis radyografide her zaman geniş radyolüsensi yapar",
     "E": "Apse sadece vital dişlerde olur",
     "correct": "B",
-    "Açıklama": "Akut apikal apse, pürülan koleksiyonla şişlik/suppürasyon bulgusu gösterebilir. Akut apikal periodontitiste daha çok perküsyon ağrısı ve hassasiyet ön plandadır."
+    "Açıklama": "Akut apikal apse pürülan koleksiyonla şişlik/suppürasyon bulgusu gösterebilir. Akut apikal periodontitiste daha çok perküsyon ağrısı ve hassasiyet ön plandadır."
   },
   {
-    "id": 69,
+    "id": 9,
     "question": "TEMEL: Kök kanal irrigasyonunda klorheksidin ile sodyum hipokloritin arka arkaya kullanılması durumunda oluşabilecek istenmeyen etki hangisidir?",
     "A": "EDTA kristalizasyonu",
-    "B": "Parakloroanilin içeren kahverengi çökelti oluşumu",
+    "B": "Parakloroanilin ile ilişkilendirilen kahverengi/turuncu çökelti oluşumu",
     "C": "Kanal duvarında aşırı mineralizasyon",
     "D": "MTA’nın erken sertleşmesi",
     "E": "Apeksin genişlemesi",
     "correct": "B",
-    "Açıklama": "NaOCl + CHX sıralı kullanımında çökelti oluşabilir (pCA ile ilişkilendirilen). Klinik pratikte arada salin/distile su ile ara yıkama önerilir."
+    "Açıklama": "NaOCl + CHX ardışık kullanımında kahverengi/turuncu çökelti oluşabilir; klinikte arada salin/distile su ile ara yıkama önerilir."
   },
   {
-    "id": 70,
+    "id": 10,
     "question": "TEMEL: Amalgamın kompozite göre en belirgin avantajlarından biri hangisidir?",
     "A": "Adeziv bağ ile dişe bağlanması",
     "B": "Nem kontrolüne daha toleranslı olması",
@@ -107,10 +107,10 @@
     "D": "Polimerizasyon büzülmesi göstermesi",
     "E": "Flor salınımı yapması",
     "correct": "B",
-    "Açıklama": "Amalgam, kompozite göre nem kontrolüne daha toleranslıdır. Adeziv bağ yapmaz; estetik kompozitte üstündür."
+    "Açıklama": "Amalgam kompozite göre nem kontrolüne daha toleranslıdır. Adeziv bağ yapmaz; estetik kompozitte üstündür."
   },
   {
-    "id": 71,
+    "id": 11,
     "question": "KLİNİK: Derin dentin çürüğünde pulpa ekspozu olmadan indirekt pulpa kaplaması planlanıyorsa, temel hedef hangisidir?",
     "A": "Tüm yumuşak dentini tek seansta tamamen kaldırmak",
     "B": "Kalan etkilenmiş dentini stabilize edip pulpayı korumak ve tersiyer dentin oluşumunu desteklemek",
@@ -121,7 +121,7 @@
     "Açıklama": "İndirekt pulpa kaplamasında amaç pulpayı açmadan etkilenmiş dentini biyouyumlu materyalle izole ederek pulpa iyileşmesini/dentin köprüsü oluşumunu desteklemektir."
   },
   {
-    "id": 72,
+    "id": 12,
     "question": "TEMEL: Rezin modifiye cam iyonomer simanların (RMGIC) klasik cam iyonomere göre temel farkı hangisidir?",
     "A": "Flor salınımının tamamen olmaması",
     "B": "Sadece ışıkla sertleşmesi ve asit-baz reaksiyonu olmaması",
@@ -132,7 +132,7 @@
     "Açıklama": "RMGIC hem asit-baz reaksiyonu hem de rezin polimerizasyonu içerir; erken dayanım ve çalışma kolaylığı artar."
   },
   {
-    "id": 73,
+    "id": 13,
     "question": "TEMEL: 'Biologic width' kavramı klinikte en doğru olarak hangi yapıları kapsar?",
     "A": "Gingival sulkus derinliği + plak kalınlığı",
     "B": "Junctional epitel + suprakrestal bağ dokusu ataşmanı",
@@ -143,7 +143,7 @@
     "Açıklama": "Biologic width (güncel terminolojide supracrestal tissue attachment) junctional epitel + bağ dokusu ataşmanını ifade eder; restoratif marjinlerde kritik önemdedir."
   },
   {
-    "id": 74,
+    "id": 14,
     "question": "KLİNİK: Kron boyu uzatma (crown lengthening) endikasyonunun temel nedenlerinden biri hangisidir?",
     "A": "Sadece diş beyazlatma ihtiyacı",
     "B": "Biologic width ihlalini düzeltmek için restoratif alan yaratma",
@@ -151,10 +151,10 @@
     "D": "Sadece çocuklarda uygulanır",
     "E": "Pulpa taşlarını kaldırmak için",
     "correct": "B",
-    "Açıklama": "Subgingival çürük/kırıkta restoratif marjin için yeterli diş dokusu ve suprakrestal ataşman korunumu sağlamak amacıyla crown lengthening yapılabilir."
+    "Açıklama": "Subgingival çürük/kırıkta restoratif marjin için yeterli diş dokusu ve suprakrestal ataşmanı korumak amacıyla crown lengthening yapılabilir."
   },
   {
-    "id": 75,
+    "id": 15,
     "question": "TEMEL: Oral kandidiyazisin en tipik klinik formu ve özelliği hangisidir?",
     "A": "Eritemli lezyon, kazınınca geçmez",
     "B": "Psödomembranöz plak, kazınınca altı eritemli yüzey bırakır",
@@ -165,7 +165,7 @@
     "Açıklama": "Psödomembranöz kandidiyaziste beyaz plaklar kazınınca altından eritemli yüzey ortaya çıkar."
   },
   {
-    "id": 76,
+    "id": 16,
     "question": "TEMEL: HIV ile ilişkili oral lezyonlar içinde 'hairy leukoplakia' en çok hangi etkenle ilişkilidir?",
     "A": "HSV-1",
     "B": "EBV",
@@ -176,7 +176,7 @@
     "Açıklama": "Oral hairy leukoplakia (özellikle dil lateralinde beyaz kıllı görünüm) EBV ile ilişkilidir."
   },
   {
-    "id": 77,
+    "id": 17,
     "question": "KLİNİK: Lateral periodontal kist en sık hangi bölgede görülür?",
     "A": "Maksiller keserler arasında orta hat",
     "B": "Mandibular premolar-kanin bölgesi",
@@ -184,10 +184,10 @@
     "D": "Mandibular molarların furkasyonu",
     "E": "Ramus mandibula",
     "correct": "B",
-    "Açıklama": "Lateral periodontal kist, genellikle mandibular kanin-premolar bölgesinde, vital dişlerin lateralinde iyi sınırlı radyolüsensi olarak görülür."
+    "Açıklama": "Lateral periodontal kist genellikle mandibular kanin-premolar bölgesinde, vital dişlerin lateralinde iyi sınırlı radyolüsensi olarak görülür."
   },
   {
-    "id": 78,
+    "id": 18,
     "question": "TEMEL: Dentigeröz kist genellikle hangi durumla ilişkilidir?",
     "A": "Nekrotik pulpalı diş apeksi",
     "B": "Gömülü dişin kronunu çevreleyen folikül",
@@ -198,7 +198,7 @@
     "Açıklama": "Dentigeröz kist gömülü dişin kronunu (CEJ seviyesinden) çevreleyen kisttir; en sık 3. molar/kanin ile ilişkilidir."
   },
   {
-    "id": 79,
+    "id": 19,
     "question": "KLİNİK: Mandibulada multiloküler radyolüsensi + dişlerde yer değiştirme + 'knife-edge' kök rezorpsiyonu ile en çok ilişkilendirilen lezyon hangisidir?",
     "A": "Odontojenik keratokist",
     "B": "Ameloblastom",
@@ -209,7 +209,7 @@
     "Açıklama": "Ameloblastom; multiloküler görünüm, ekspansiyon ve kök rezorpsiyonu ile klasik olarak ilişkilidir."
   },
   {
-    "id": 80,
+    "id": 20,
     "question": "TEMEL: Odontojenik keratokist (OKC) için en doğru ifade hangisidir?",
     "A": "Her zaman periapikal enfeksiyon kaynaklıdır",
     "B": "Nüks oranı görece yüksektir ve ince keratinize epitel ile karakterizedir",
@@ -220,7 +220,7 @@
     "Açıklama": "OKC; keratinize epitel, satelit kistler ve agresif davranış nedeniyle nüks eğilimi gösterebilir."
   },
   {
-    "id": 81,
+    "id": 21,
     "question": "TEMEL: Tüberkülozun ağız içi lezyonları için en doğru yaklaşım hangisidir?",
     "A": "Her beyaz lezyon TB’dir",
     "B": "Şüpheli ülseratif lezyonda biyopsi + sistemik değerlendirme gerekir",
@@ -231,18 +231,18 @@
     "Açıklama": "Ağız içi TB nadirdir; kronik ülserlerde ayırıcı tanıda düşünülür, tanı için histopatoloji ve sistemik inceleme gerekir."
   },
   {
-    "id": 82,
+    "id": 22,
     "question": "TEMEL: Maksillofasiyal bölgede en sık görülen kırık hangisidir?",
-    "A": "Le Fort II",
+    "A": "Nazal kemik kırığı",
     "B": "Mandibula kırığı",
     "C": "Zigoma arkı kırığı",
     "D": "Nazo-orbito-etmoid kırık",
     "E": "Orbita tabanı blow-out",
-    "correct": "B",
-    "Açıklama": "Yüz travmalarında mandibula kırıkları oldukça sık görülür; klinik pratikte en sık karşılaşılanlardan biridir."
+    "correct": "A",
+    "Açıklama": "Genel yüz travmalarında en sık kırılan kemik nazal kemiktir. Mandibula kırığı da sık görülür ancak 'en sık' denince klasik cevap nazal kemiktir."
   },
   {
-    "id": 83,
+    "id": 23,
     "question": "KLİNİK: Mandibula angulus kırıklarında en sık komplikasyonlardan biri hangisidir?",
     "A": "Diş çürüğü",
     "B": "Enfeksiyon (özellikle 3. molar varlığında)",
@@ -250,10 +250,10 @@
     "D": "Bukkal mukozada kandidiyazis",
     "E": "Nazal septum deviasyonu",
     "correct": "B",
-    "Açıklama": "Angulus bölgesi; 3. molar varlığı, kanlanma/komşuluklar nedeniyle enfeksiyon açısından riskli olabilir."
+    "Açıklama": "Angulus bölgesi; 3. molar varlığı ve bölgesel faktörler nedeniyle enfeksiyon açısından riskli olabilir."
   },
   {
-    "id": 84,
+    "id": 24,
     "question": "TEMEL: Trigeminal sinirin mandibular dalı (V3) ile ilgili en doğru ifade hangisidir?",
     "A": "Sadece duyusaldır",
     "B": "Sadece motor lif taşır",
@@ -264,7 +264,7 @@
     "Açıklama": "V3 hem motor (çiğneme kasları vb.) hem duyusal (alt dişler, dilin genel duyusu vb.) lifler taşır."
   },
   {
-    "id": 85,
+    "id": 25,
     "question": "TEMEL: Dilin ön 2/3’ünün tat duyusu en çok hangi sinirle taşınır?",
     "A": "N. glossopharyngeus",
     "B": "Chorda tympani (N. facialis)",
@@ -275,7 +275,7 @@
     "Açıklama": "Tat duyusu ön 2/3’te chorda tympani (VII) ile taşınır; genel duyu ise n. lingualis (V3)."
   },
   {
-    "id": 86,
+    "id": 26,
     "question": "KLİNİK: Sjögren sendromunda ağız içi en beklenen bulgu hangisidir?",
     "A": "Aşırı tükürük salgısı",
     "B": "Xerostomi ve artmış çürük riski",
@@ -286,7 +286,7 @@
     "Açıklama": "Sjögren’de tükürük bezleri etkilenir → xerostomi, mukozal yanma, kandidiyazis ve çürük riski artar."
   },
   {
-    "id": 87,
+    "id": 27,
     "question": "TEMEL: Tükürüğün en önemli tampon sistemi hangisidir?",
     "A": "Sodyum klorür",
     "B": "Bikarbonat sistemi",
@@ -297,7 +297,7 @@
     "Açıklama": "Tükürüğün başlıca tampon sistemi bikarbonattır; akış hızı arttıkça bikarbonat artar ve tampon kapasitesi yükselir."
   },
   {
-    "id": 88,
+    "id": 28,
     "question": "KLİNİK: Tükürük akışının azaldığı hastada çürük riskini azaltmak için en etkili ilk basamaklardan biri hangisidir?",
     "A": "Şekerli sakız",
     "B": "Yüksek konsantrasyon flor uygulamaları (vernik/jel) ve ağız hijyeni",
@@ -308,7 +308,7 @@
     "Açıklama": "Xerostomide flor uygulaması ve hijyen en etkili çürük önleyici yaklaşımlardandır. Alkollü gargaralar kuruluğu artırabilir."
   },
   {
-    "id": 89,
+    "id": 29,
     "question": "TEMEL: Çürük aktivitesini değerlendirmede 'Stephan eğrisi' en temel olarak neyi gösterir?",
     "A": "Plak kalınlığının zamanla artışını",
     "B": "Şeker alımından sonra plak pH’ının düşüş ve toparlanma dinamiğini",
@@ -319,7 +319,7 @@
     "Açıklama": "Stephan eğrisi, fermentabl karbonhidrat sonrası plak pH’ının hızlı düşüşü ve zamanla toparlanmasını gösterir; çürük riskini yansıtır."
   },
   {
-    "id": 90,
+    "id": 30,
     "question": "KLİNİK: Protetikte post-core planlanırken post uzunluğu için en kabul gören yaklaşım hangisidir?",
     "A": "Kökün tamamı kadar post",
     "B": "Kron boyunun en az 2 katı kadar post",
@@ -330,7 +330,7 @@
     "Açıklama": "Genel prensip: apikal 4-5 mm dolgu korunarak, mümkün olan en uzun post (kök anatomisi/periodontal destekle uyumlu) tercih edilir."
   },
   {
-    "id": 91,
+    "id": 31,
     "question": "TEMEL: ZOE (çinko oksit öjenol) simanların rezin esaslı materyallerle birlikte kullanımında en temel problem hangisidir?",
     "A": "Flor salınımını artırması",
     "B": "Rezin polimerizasyonunu inhibe edebilmesi",
@@ -341,7 +341,7 @@
     "Açıklama": "Öjenol, rezin polimerizasyonunu olumsuz etkileyebilir; bu nedenle rezin bazlı restorasyon öncesi dikkat gerekir."
   },
   {
-    "id": 92,
+    "id": 32,
     "question": "KLİNİK: Ortodontide kök rezorpsiyonu riskini artıran faktörlerden en önemlilerinden biri hangisidir?",
     "A": "Hafif kuvvet uygulamak",
     "B": "Uzun süreli ve aşırı kuvvet uygulamak",
@@ -352,7 +352,7 @@
     "Açıklama": "Aşırı ve uzun süreli kuvvetler kök rezorpsiyonu riskini artırır. Kuvvet kontrolü ortodontide kritik bir biyomekanik ilkedir."
   },
   {
-    "id": 93,
+    "id": 33,
     "question": "TEMEL: Alveolar osteitis (dry socket) için en doğru ifade hangisidir?",
     "A": "Çekimden hemen sonra pürülan akıntı ile başlar",
     "B": "Genellikle 2-4 gün sonra şiddetli ağrı ve pıhtı kaybı ile seyreder",
@@ -363,7 +363,7 @@
     "Açıklama": "Dry socket genellikle çekimden 2-4 gün sonra başlayan şiddetli ağrı ve pıhtının parçalanması/kaybı ile karakterizedir; tedavi lokal irrigasyon ve medikal pansuman ağırlıklıdır."
   },
   {
-    "id": 94,
+    "id": 34,
     "question": "KLİNİK: Oroantral iletişim şüphesinde en pratik klinik testlerden biri hangisidir?",
     "A": "Schirmer testi",
     "B": "Valsalva manevrası ile hava kaçağı değerlendirmesi",
@@ -374,7 +374,7 @@
     "Açıklama": "Oroantral iletişimde nazal ekshalasyonla çekim soketinden hava kabarcığı/hava kaçağı görülebilir (Valsalva dikkatli uygulanır)."
   },
   {
-    "id": 95,
+    "id": 35,
     "question": "TEMEL: Süt dişi travmalarında, daimi diş germine zarar verme riski en yüksek yaralanma hangisidir?",
     "A": "Enamel crack",
     "B": "Subluksasyon",
@@ -385,7 +385,7 @@
     "Açıklama": "Süt dişinin intrüzyonu, apikal bölgenin daimi diş germine yakınlığı nedeniyle gelişimsel defekt riskini artırır."
   },
   {
-    "id": 96,
+    "id": 36,
     "question": "TEMEL: Periodontal hastalıkta 'furkasyon tutulumu' en sık hangi dişlerde klinik problem oluşturur?",
     "A": "Alt keserler",
     "B": "Üst keserler",
@@ -396,7 +396,7 @@
     "Açıklama": "Furkasyon, çok köklü dişlerde (molarlar) kökler arası bölgede ataşman kaybını ifade eder ve tedaviyi zorlaştırır."
   },
   {
-    "id": 97,
+    "id": 37,
     "question": "KLİNİK: Periodontal cerrahide 'guided tissue regeneration' (GTR) temel olarak hangi prensibe dayanır?",
     "A": "Enfeksiyonu arttırmak",
     "B": "Epitelyal hücre migrasyonunu bariyerle engelleyip PDL/kemik hücrelerine zaman kazandırmak",
@@ -404,10 +404,10 @@
     "D": "Kök yüzeyini boyamak",
     "E": "Kanal tedavisiyle aynı işlemdir",
     "correct": "B",
-    "Açıklama": "GTR bariyer membranla hızlı epitel migrasyonunu engeller; PDL ve osteojenik hücrelerin defekte kolonizasyonunu destekler."
+    "Açıklama": "GTR, bariyer membranla hızlı epitel migrasyonunu engeller; PDL ve osteojenik hücrelerin defekte kolonizasyonunu destekler."
   },
   {
-    "id": 98,
+    "id": 38,
     "question": "TEMEL: Ağız içi ağrılı ülser + tekrarlayan genital ülser + üveit triadı en çok hangi hastalığı düşündürür?",
     "A": "Crohn hastalığı",
     "B": "Behçet hastalığı",
@@ -418,7 +418,7 @@
     "Açıklama": "Behçet; oral aft, genital ülser ve oküler tutulum (üveit) ile klasik olarak ilişkilidir."
   },
   {
-    "id": 99,
+    "id": 39,
     "question": "TEMEL: Pemfigus vulgariste en kritik immünopatolojik hedef hangisidir?",
     "A": "Bazal membran (hemidesmozom)",
     "B": "Desmoglein (desmozomal) antijenlerine karşı otoantikorlar",
@@ -429,7 +429,7 @@
     "Açıklama": "Pemfigus vulgariste desmogleinlere karşı otoantikorlar akantolizise yol açar; intraepitelyal bül/erozyonlar gelişir."
   },
   {
-    "id": 100,
+    "id": 40,
     "question": "KLİNİK: Büllöz pemfigoid ile pemfigus vulgaris ayrımında, Nikolsky bulgusunun daha belirgin olduğu tablo hangisidir?",
     "A": "Büllöz pemfigoid",
     "B": "Pemfigus vulgaris",
@@ -440,7 +440,7 @@
     "Açıklama": "Pemfigus vulgariste epitel içi ayrışma nedeniyle Nikolsky bulgusu daha sıktır/pozitif olabilir; büllöz pemfigoidde daha az belirgindir."
   },
   {
-    "id": 101,
+    "id": 41,
     "question": "TEMEL: Trigeminal nevraljide en tipik klinik özellik hangisidir?",
     "A": "Sürekli, künt ağrı",
     "B": "Kısa süreli, şimşek çakar tarzda, tetiklenebilir ağrı atakları",
@@ -451,7 +451,7 @@
     "Açıklama": "Trigeminal nevralji; kısa, şiddetli, elektrik çarpar gibi ataklarla ve tetik noktalarla karakterizedir."
   },
   {
-    "id": 102,
+    "id": 42,
     "question": "KLİNİK: Lokal anestezi sonrası, dudakta ısırmaya bağlı travmatik ülser gelişen çocuk hastada en doğru yaklaşım hangisidir?",
     "A": "Lezyonu kazıyıp dezenfekte etmek",
     "B": "Sadece antibiyotik başlamak",
@@ -462,7 +462,7 @@
     "Açıklama": "Anestezi sonrası yumuşak doku ısırığı sık görülür; genelde semptomatik yaklaşım, yara bakımı ve önleyici bilgilendirme yeterlidir."
   },
   {
-    "id": 103,
+    "id": 43,
     "question": "TEMEL: Normal florada bulunan ve endodontik persistan enfeksiyonlarda da sık suçlanan mikroorganizma hangisidir?",
     "A": "Enterococcus faecalis",
     "B": "Vibrio cholerae",
@@ -473,7 +473,7 @@
     "Açıklama": "E. faecalis, persistan endodontik enfeksiyonlarda ve tekrar tedavilerde sık izole edilen dirençli bir ajandır."
   },
   {
-    "id": 104,
+    "id": 44,
     "question": "TEMEL: Oral submuköz fibrozis için en önemli etyolojik faktör hangisidir?",
     "A": "Flor fazlalığı",
     "B": "Areka (betel) cevizi çiğneme",
@@ -484,7 +484,7 @@
     "Açıklama": "Oral submuköz fibrozis özellikle areka/betel çiğneme ile güçlü şekilde ilişkilidir ve premalign kabul edilir."
   },
   {
-    "id": 105,
+    "id": 45,
     "question": "KLİNİK: Bruksizmli hastada restoratif planlamada en temel yaklaşım hangisidir?",
     "A": "Oklüzal splint ve oklüzal yükleri yönetmek + restorasyon tasarımını buna göre yapmak",
     "B": "Hiç restorasyon yapmamak",
@@ -495,7 +495,7 @@
     "Açıklama": "Bruksizmde oklüzal yük kontrolü (splint), risk yönetimi ve restorasyon materyal/tasarımının buna göre seçimi esastır."
   },
   {
-    "id": 106,
+    "id": 46,
     "question": "TEMEL: Apikal konstriksiyonun (minor apical diameter) klinik önemi aşağıdakilerden hangisidir?",
     "A": "Sadece kanal girişini tarif eder",
     "B": "Çalışma boyunun belirlenmesinde kritik referans bölgedir",
@@ -506,7 +506,7 @@
     "Açıklama": "Apikal konstriksiyon, ideal çalışma boyunun hedeflendiği bölgedir; radiografik apeksle bire bir aynı olmayabilir."
   },
   {
-    "id": 107,
+    "id": 47,
     "question": "KLİNİK: Strip perforasyon (özellikle mandibular molar mezial kökte) riskini azaltmak için en doğru enstrümantasyon prensibi hangisidir?",
     "A": "Anticurvature filing uygulamak",
     "B": "Kökün iç konkav yüzeyine doğru agresif genişletmek",
@@ -517,7 +517,7 @@
     "Açıklama": "Anticurvature filing, ince furkal duvarı koruyarak strip perforasyon riskini azaltır; özellikle riskli köklerde temel prensiptir."
   },
   {
-    "id": 108,
+    "id": 48,
     "question": "TEMEL: Postoperatif endodontik ağrının en sık nedenlerinden biri hangisidir?",
     "A": "Kanalın yetersiz dezenfeksiyonu ve irritanların apikal taşkınlığı",
     "B": "Klorheksidinin flor salması",
@@ -528,7 +528,7 @@
     "Açıklama": "Debris/irrigant/sealer taşkınlığı ve yetersiz dezenfeksiyon apikal dokularda inflamasyon yaparak postoperatif ağrıyı artırabilir."
   },
   {
-    "id": 109,
+    "id": 49,
     "question": "TEMEL: Dental implant yüzeyinde osteointegrasyonu artırmaya yönelik en yaygın yaklaşımlardan biri hangisidir?",
     "A": "Yüzeyi tamamen pürüzsüz yapmak",
     "B": "Yüzey pürüzlendirme (ör. kumlama-asitleme) ile hücre tutunmasını artırmak",
@@ -536,10 +536,10 @@
     "D": "Sadece antibiyotik emdirmek",
     "E": "Yüzeyi boya ile renklendirmek",
     "correct": "B",
-    "Açıklama": "Mikro/nano pürüzlendirme osteoblast tutunmasını ve kemik-implant temasını artırabilir; bu osteointegrasyonu destekler."
+    "Açıklama": "Mikro/nano pürüzlendirme osteoblast tutunmasını ve kemik-implant temasını artırabilir; osteointegrasyonu destekler."
   },
   {
-    "id": 110,
+    "id": 50,
     "question": "KLİNİK: Peri-implantitisin peri-implant mukozitten en belirgin ayırıcı özelliği hangisidir?",
     "A": "Sondlamada kanama olması",
     "B": "Ağrı olması",
@@ -550,7 +550,7 @@
     "Açıklama": "Mukozitte inflamasyon ve kanama olabilir ama kemik kaybı şart değildir; peri-implantitiste patolojik kemik kaybı ayırıcıdır."
   },
   {
-    "id": 111,
+    "id": 51,
     "question": "TEMEL: Ortodontik diş hareketinin biyolojik temeli en doğru olarak hangi süreçle açıklanır?",
     "A": "Mine kristallerinin erimesi",
     "B": "PDL’de basınç-gerilim bölgelerinde kemik rezorpsiyonu ve appozisyonu",
@@ -561,7 +561,7 @@
     "Açıklama": "Ortodontik kuvvet PDL’de basınç/gerilim oluşturur; basınç tarafında rezorpsiyon, gerilim tarafında appozisyon ile diş hareketi gerçekleşir."
   },
   {
-    "id": 112,
+    "id": 52,
     "question": "KLİNİK: Ortodontide 'hyalinizasyon' görülen bölgede diş hareketi neden yavaşlar?",
     "A": "Çünkü osteoblast sayısı artar",
     "B": "Çünkü PDL’de hücresel ölüm/nekroz benzeri alan oluşur ve rezorpsiyon gecikir",
@@ -572,7 +572,7 @@
     "Açıklama": "Aşırı basınçta PDL’de hyalinizasyon alanları oluşabilir; osteoklastların etkin rezorpsiyonu gecikir ve hareket yavaşlar."
   },
   {
-    "id": 113,
+    "id": 53,
     "question": "TEMEL: Protetik preparasyonda chamfer bitim hattı en çok hangi restorasyon türü için uygundur?",
     "A": "Tam metal kron",
     "B": "Döküm post",
@@ -580,10 +580,10 @@
     "D": "İnley onley amalgam",
     "E": "Sadece geçici kronlar",
     "correct": "C",
-    "Açıklama": "Chamfer, metal ya da metal-seramik restorasyonlarda uygun bir bitim hattıdır; shoulder daha çok tam seramikte tercih edilebilir (tasarıma göre)."
+    "Açıklama": "Chamfer, metal veya metal-seramik restorasyonlarda sık kullanılan uygun bir bitim hattıdır; shoulder daha çok tam seramikte tercih edilir (materyal/tasarımına göre)."
   },
   {
-    "id": 114,
+    "id": 54,
     "question": "KLİNİK: Tam seramik kron preparasyonunda 'shoulder' bitim hattının avantajı hangisidir?",
     "A": "Seramiğe yeterli kalınlık ve destek sağlaması",
     "B": "Kronun rengini otomatik düzeltmesi",
@@ -594,7 +594,7 @@
     "Açıklama": "Tam seramikte kırılma riskini azaltmak için seramiğe yeterli kalınlık/destek gerekir; shoulder bunu sağlar (tasarım ve materyale bağlı)."
   },
   {
-    "id": 115,
+    "id": 55,
     "question": "TEMEL: Glazürlenmiş porselen yüzeyinin ağız içinde aşınmaya karşı daha dirençli olmasının temel nedeni hangisidir?",
     "A": "Yüzey pürüzlülüğünün azalması",
     "B": "Flor salınımı yapması",
@@ -605,7 +605,7 @@
     "Açıklama": "Glazür, yüzeyi daha pürüzsüz yapar; plak tutulumunu ve karşıt dişte aşındırma riskini azaltabilir."
   },
   {
-    "id": 116,
+    "id": 56,
     "question": "KLİNİK: Gece plağı (oklüzal splint) en çok hangi durumda endikedir?",
     "A": "Akut herpetik gingivostomatit",
     "B": "Bruksizm ve TME kas kaynaklı ağrılar",
@@ -616,7 +616,7 @@
     "Açıklama": "Oklüzal splint bruksizmde dişleri korumak, kas hiperaktivitesini azaltmak ve TME semptomlarını yönetmek için sıklıkla kullanılır."
   },
   {
-    "id": 117,
+    "id": 57,
     "question": "TEMEL: Lokal anestezik toksisitesinde (LAST) ilk belirgin santral sinir sistemi bulgularından biri hangisidir?",
     "A": "Hipoglisemi",
     "B": "Tinnitus/metal tat/ajitasyon",
@@ -627,7 +627,7 @@
     "Açıklama": "LAST’ta erken CNS bulguları: tinnitus, metalik tat, perioral uyuşma, ajitasyon; ilerlerse nöbet ve kardiyak bulgular gelişebilir."
   },
   {
-    "id": 118,
+    "id": 58,
     "question": "KLİNİK: Lokal anestezik sistemik toksisitesinde nöbet gelişen hastada ilk yaklaşımın en doğru bileşeni hangisidir?",
     "A": "Hemen antibiyotik",
     "B": "Hava yolu-güvenli ventilasyon ve benzodiazepin ile nöbet kontrolü",
@@ -638,7 +638,7 @@
     "Açıklama": "LAST yönetiminde öncelik ABC’dir: hava yolu ve ventilasyon, nöbet kontrolü (benzodiazepin). Gerekirse lipid emülsiyon tedavisi düşünülür."
   },
   {
-    "id": 119,
+    "id": 59,
     "question": "TEMEL: Glukokortikoidlerin uzun süreli kullanımında ağız içi en olası yan etki hangisidir?",
     "A": "Sürekli tükürük artışı",
     "B": "Oral kandidiyazis riskinde artış",
@@ -649,7 +649,7 @@
     "Açıklama": "İmmünsüpresyon ve lokal savunma azalması nedeniyle kandidiyazis riski artabilir (özellikle inhaler steroidlerde de)."
   },
   {
-    "id": 120,
+    "id": 60,
     "question": "KLİNİK: Aspirin kullanan hastada basit diş çekimi sonrası kanama kontrolünde en etkili lokal yaklaşım hangisidir?",
     "A": "Sadece hastayı yürütmek",
     "B": "Bası + hemostatik ajan + gerekirse sütür",
@@ -658,5 +658,226 @@
     "E": "Kanamayı artırmak için masaj",
     "correct": "B",
     "Açıklama": "Aspirin antiagregandır; çoğu minör işlem lokal hemostazla yönetilir. Bası, hemostatik ajanlar ve sütür en etkili yaklaşımlardandır."
+  },
+
+  {
+    "id": 61,
+    "question": "TEMEL: Kök kanal irrigasyonunda smear layer’ın kaldırılmasında en sık kullanılan şelatlayıcı ajan hangisidir?",
+    "A": "Sodyum hipoklorit",
+    "B": "Klorheksidin",
+    "C": "EDTA (%17)",
+    "D": "Kalsiyum hidroksit",
+    "E": "Formokrezol",
+    "correct": "C",
+    "Açıklama": "Smear layer’ın inorganik kısmını çözmek için en klasik ajan %17 EDTA’dır. NaOCl organik dokuda etkilidir; CHX daha çok antimikrobiyaldir."
+  },
+  {
+    "id": 62,
+    "question": "KLİNİK: Sınıf II kompozit restorasyonda proksimal kontak zayıf kalıyorsa en olası temel hata hangisidir?",
+    "A": "Adeziv sürmemek",
+    "B": "Matris ve wedge adaptasyonunun yetersizliği",
+    "C": "Asit sürelerinin kısa olması",
+    "D": "Bonding’in fazla kurutulması",
+    "E": "Flor vernik uygulanması",
+    "correct": "B",
+    "Açıklama": "Sınıf II’de kontağın oluşması; matris bandının şekli, adaptasyonu ve wedge ile gingival adaptasyona çok bağlıdır. Yanlış matriksleme açık kontakla sonuçlanır."
+  },
+  {
+    "id": 63,
+    "question": "TEMEL: Lokal anesteziklerin dokuda etkinliğini başlatan ana faktör hangisidir?",
+    "A": "pKa’sının 14 olması",
+    "B": "İyonize olmayan formun membranı geçebilmesi",
+    "C": "Sadece damar içine verilmesi",
+    "D": "Plazma proteinlerine %100 bağlanması",
+    "E": "Sadece ester yapıda olmaları",
+    "correct": "B",
+    "Açıklama": "Membrandan difüzyon için noniyonize (baz) form gerekir; hücre içine geçtikten sonra iyonize form Na kanalını bloke eder."
+  },
+  {
+    "id": 64,
+    "question": "KLİNİK: Perikoronitis tablosunda en sık etkilenen diş hangisidir?",
+    "A": "Maksiller santral",
+    "B": "Maksiller kanin",
+    "C": "Mandibular 3. molar",
+    "D": "Mandibular 1. premolar",
+    "E": "Maksiller 2. premolar",
+    "correct": "C",
+    "Açıklama": "Perikoronitis en tipik olarak kısmen sürmüş mandibular üçüncü molar çevresinde görülür."
+  },
+  {
+    "id": 65,
+    "question": "TEMEL: Periodontal tedavide kök yüzeyi düzleştirilmesi (root planing) ile hedeflenen temel biyolojik sonuç hangisidir?",
+    "A": "Sementin tamamen kaldırılması",
+    "B": "Kontamine kök yüzeyinin ve endotoksinlerin uzaklaştırılmasıyla doku iyileşmesine zemin hazırlamak",
+    "C": "Pulpanın sterilizasyonu",
+    "D": "Dişi mobil hale getirmek",
+    "E": "Kök yüzeyini pürüzlendirmek",
+    "correct": "B",
+    "Açıklama": "Amaç kontamine sement/dentin yüzeyinden bakteriyel ürünleri uzaklaştırıp, daha biyouyumlu bir yüzey oluşturarak iyileşmeyi desteklemektir."
+  },
+  {
+    "id": 66,
+    "question": "KLİNİK: Akut herpetik gingivostomatitte en tipik bulgu hangisidir?",
+    "A": "Tek, büyük, derin aft",
+    "B": "Yaygın ağrılı vezikül/ülserler + ateş + gingival eritem",
+    "C": "Sadece keratinize gingivada beyaz plak",
+    "D": "Dil dorsumunda siyah kıllanma",
+    "E": "Sadece dudak köşesinde fissür",
+    "correct": "B",
+    "Açıklama": "Primer HSV enfeksiyonunda ateş, halsizlik, gingival belirgin eritem ve ağız içinde yaygın ağrılı ülseratif lezyonlar tipiktir."
+  },
+  {
+    "id": 67,
+    "question": "TEMEL: Temporomandibular eklemde (TME) eklem yüzleri arasında yer alan ve hareketi yönlendiren temel yapı hangisidir?",
+    "A": "Lig. stylomandibulare",
+    "B": "Artiküler disk",
+    "C": "Parotis bezi",
+    "D": "N. facialis",
+    "E": "Proc. coronoideus",
+    "correct": "B",
+    "Açıklama": "TME’de artiküler disk kondil ile temporal kemiğin eklem yüzleri arasında bulunur; yük dağılımı ve hareket paternlerinde kritiktir."
+  },
+  {
+    "id": 68,
+    "question": "KLİNİK: Apekste açık apeksli genç dişte nekrotik pulpa varlığında en uygun yaklaşım hangisidir?",
+    "A": "Hemen sıcak gutta ile obturasyon",
+    "B": "Apeksifikasyon / rejeneratif endodontik prosedür düşünmek",
+    "C": "Sadece flor vernik",
+    "D": "Sadece analjezik verip beklemek",
+    "E": "Mutlaka çekim",
+    "correct": "B",
+    "Açıklama": "Açık apeksli nekrotik dişlerde apikal bariyer oluşturma (apeksifikasyon) veya rejeneratif endodonti ile kök gelişimini destekleme yaklaşımları tercih edilir."
+  },
+  {
+    "id": 69,
+    "question": "TEMEL: Kompozit restorasyonlarda polimerizasyon büzülmesinin en temel klinik sonucu hangisidir?",
+    "A": "Kavite duvarına kimyasal bağın artması",
+    "B": "Marjinal mikrosızıntı ve postop hassasiyet riskinin artması",
+    "C": "Flor salınımının artması",
+    "D": "Mine sertliğinin artması",
+    "E": "Pulpa taşlarının azalması",
+    "correct": "B",
+    "Açıklama": "Büzülme stresleri adeziv arayüzde ayrılma yapabilir; mikrosızıntı, marjinal renklenme ve hassasiyet riskini artırır."
+  },
+  {
+    "id": 70,
+    "question": "KLİNİK: Lokal anestezide intravasküler enjeksiyonu azaltmak için en temel uygulama hangisidir?",
+    "A": "İğneyi çok hızlı çekmek",
+    "B": "Aspirasyon yapmak",
+    "C": "Anesteziyi tek seferde bolus vermek",
+    "D": "Her zaman vazokonstriktörsüz kullanmak",
+    "E": "Sadece topikal anestezi yapmak",
+    "correct": "B",
+    "Açıklama": "İntravasküler enjeksiyon riskini azaltmada aspirasyon (ve yavaş enjeksiyon) temel güvenlik adımlarıdır."
+  },
+  {
+    "id": 71,
+    "question": "TEMEL: Maksiller birinci moların en sık ek kökü/kanalı hangi kökte gözlenir?",
+    "A": "Palatinal kök (ek kök)",
+    "B": "MB kök (MB2 kanalı)",
+    "C": "DB kök (ek kök)",
+    "D": "Palatinal kökte 3 kanal",
+    "E": "Her zaman tek kanallıdır",
+    "correct": "B",
+    "Açıklama": "Maksiller 1. molarda en sık varyasyon MB kökte ikinci kanal (MB2) bulunmasıdır."
+  },
+  {
+    "id": 72,
+    "question": "KLİNİK: ANUG (akut nekrotizan ülseratif gingivit) için en tipik bulgu hangisidir?",
+    "A": "Painless beyaz plak",
+    "B": "Interdental papilde nekroz (punch-out) + fetor oris + ağrı",
+    "C": "Sadece yaygın vezikül",
+    "D": "Sadece dilde fissür",
+    "E": "Mavi-siyah pigmentasyon",
+    "correct": "B",
+    "Açıklama": "ANUG’da papil nekrozu, ağrı, kötü koku, kanama ve psödomembran tipiktir; stres/sigara/hijyen bozukluğu ile ilişkilidir."
+  },
+  {
+    "id": 73,
+    "question": "TEMEL: Periodontal sondlamada 'klinik ataşman kaybı (CAL)' en doğru olarak neyi ifade eder?",
+    "A": "Sadece cep derinliğini",
+    "B": "CEJ’den cep tabanına olan mesafeyi",
+    "C": "Gingival margin’den cep tabanına mesafeyi",
+    "D": "Sadece mobiliteyi",
+    "E": "Sadece plak indeksini",
+    "correct": "B",
+    "Açıklama": "CAL, CEJ referans alınarak ataşman düzeyini gösterir; recession ve cep derinliği birlikte değerlendirilir."
+  },
+  {
+    "id": 74,
+    "question": "KLİNİK: Travmatik dental yaralanmada avülse permanent dişin en kritik prognostik faktörlerinden biri hangisidir?",
+    "A": "Dişin rengi",
+    "B": "Ekstraoral kuru kalma süresi",
+    "C": "Hastanın boyu",
+    "D": "Dişin restorasyon varlığı",
+    "E": "Dişin mine kalınlığı",
+    "correct": "B",
+    "Açıklama": "Avülse dişlerde periodontal ligament hücrelerinin canlılığı için ekstraoral kuru süre kritik prognostik faktördür."
+  },
+  {
+    "id": 75,
+    "question": "TEMEL: Fluorun çürük önlemedeki en önemli mekanizması hangisidir?",
+    "A": "Sadece bakterileri öldürmek",
+    "B": "Remineralizasyonu artırıp demineralizasyonu azaltmak (yüzey etkisi)",
+    "C": "Pulpa basıncını azaltmak",
+    "D": "Mineyi tamamen organik hale getirmek",
+    "E": "PDL’yi kalınlaştırmak",
+    "correct": "B",
+    "Açıklama": "Klinik olarak en önemli etki topikal: remineralizasyonu artırma ve asit ataklarında demineralizasyonu azaltmadır; ayrıca bakteriyel metabolizmayı da etkileyebilir."
+  },
+  {
+    "id": 76,
+    "question": "KLİNİK: İmplant cerrahisi sonrası erken dönemde implant mobilitesi saptanırsa en olası yorum hangisidir?",
+    "A": "Osteointegrasyon tamamlanmıştır",
+    "B": "Fibrointegrasyon/başarısız osteointegrasyon olasılığı yüksektir",
+    "C": "Bu normaldir, hiç önem taşımaz",
+    "D": "Mutlaka peri-implant mukozittir",
+    "E": "Sadece oklüzyon ayarı yeterlidir",
+    "correct": "B",
+    "Açıklama": "Erken mobilite genellikle başarısız osteointegrasyonla ilişkilidir; stabilite osteointegrasyonun temel kriteridir."
+  },
+  {
+    "id": 77,
+    "question": "TEMEL: Mandibular kanalda inferior alveolar sinir ile en yakın ilişkili diş grubu hangisidir?",
+    "A": "Maksiller keserler",
+    "B": "Mandibular molarlar (özellikle 2. ve 3. molar bölgesi)",
+    "C": "Maksiller premolarlar",
+    "D": "Maksiller kaninler",
+    "E": "Mandibular santral keserler",
+    "correct": "B",
+    "Açıklama": "Mandibular kanal anatomik olarak molar bölgeye yakın seyreder; cerrahi çekim/implant planlamasında risk artar."
+  },
+  {
+    "id": 78,
+    "question": "KLİNİK: Periapikal lezyonlu non-vital dişte kanal tedavisi sonrası lezyonun iyileşmesi için en doğru genel yaklaşım hangisidir?",
+    "A": "Hemen apikal rezeksiyon",
+    "B": "Önce kaliteli kök kanal tedavisi ve takip; iyileşmezse cerrahi düşünmek",
+    "C": "Sadece antibiyotik",
+    "D": "Sadece periodontal küretaj",
+    "E": "Mutlaka çekim",
+    "correct": "B",
+    "Açıklama": "Periapikal lezyonların büyük kısmı iyi bir endodontik dezenfeksiyon/obturasyon sonrası iyileşir; cerrahi endodonti seçilmiş vakalarda endikedir."
+  },
+  {
+    "id": 79,
+    "question": "TEMEL: Maksiller sinüs tabanına en yakın kök ucu ile en sık ilişkilendirilen diş hangisidir?",
+    "A": "Maksiller 1. molar",
+    "B": "Mandibular 1. molar",
+    "C": "Mandibular kanin",
+    "D": "Maksiller santral",
+    "E": "Mandibular premolar",
+    "correct": "A",
+    "Açıklama": "Maksiller 1. molar kökleri (özellikle palatinal/DB kök) sinüs tabanına oldukça yakın olabilir; oroantral iletişim riski açısından önemlidir."
+  },
+  {
+    "id": 80,
+    "question": "KLİNİK: Rezin kompozit restorasyonda 'C-factor' yüksek olan kavitede en temel risk hangisidir?",
+    "A": "Flor salınımının artması",
+    "B": "Polimerizasyon büzülme streslerinin artması ve marjinal ayrılma",
+    "C": "Mine sertliğinin artması",
+    "D": "Pulpa taşlarının azalması",
+    "E": "Dentin tübüllerinin kapanması ile bağın artması",
+    "correct": "B",
+    "Açıklama": "C-factor (bağlı yüzey/serbest yüzey oranı) arttıkça büzülme stresleri artar; bu da marjinal ayrılma ve mikrosızıntı riskini yükseltir."
   }
 ]
