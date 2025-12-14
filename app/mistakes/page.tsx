@@ -197,93 +197,107 @@ export default function MistakesPage() {
             </Link>
           </div>
         ) : (
-          /* MISTAKES LIST */
-          <div className="space-y-6">
-            {mistakes.map((m) => {
-              const titleSource =
-                m.testTitle ||
-                m.testSlug ||
-                (m.uniqueId ? m.uniqueId.split('-q')[0] : '');
+{/* MISTAKES LIST START */}
+{mistakes.map((m) => {
+  const titleSource =
+    m.testTitle ||
+    m.testSlug ||
+    (m.uniqueId ? m.uniqueId.split('-q')[0] : '');
 
-              const savedDate =
-                m.savedAt ? new Date(m.savedAt).toLocaleDateString('tr-TR') : '';
+  // --- DİL ALGILAMA MANTIĞI ---
+  // Test başlığı veya slug içinde ingilizce sınav isimleri geçiyor mu?
+  const isEnglishContent = ['ielts', 'yds', 'yökdil', 'toefl', 'english'].some(keyword => 
+    titleSource.toLowerCase().includes(keyword)
+  );
 
-              const wrongText =
-                m.choices?.find((c) => c.id === m.myWrongAnswer)?.text || m.myWrongAnswer || '';
+  // Etiketleri duruma göre ayarla
+  const labels = {
+    yourAnswer: isEnglishContent ? "Your Answer" : "Senin Cevabın",
+    correctAnswer: isEnglishContent ? "Correct Answer" : "Doğru Cevap",
+    explanation: isEnglishContent ? "Explanation / Solution" : "Açıklama / Çözüm"
+  };
 
-              const correctText =
-                m.choices?.find((c) => c.id === m.answer)?.text || m.answer || '';
+  const savedDate =
+    m.savedAt ? new Date(m.savedAt).toLocaleDateString('tr-TR') : '';
 
-              return (
-                <div
-                  key={m.uniqueId}
-                  className="bg-white rounded-2xl p-6 md:p-8 border border-slate-200 shadow-sm hover:shadow-md transition-all group relative"
-                >
-                  {/* DELETE BUTTON (UPDATED: Trash Icon & Red Hover) */}
-                  <button
-                    onClick={() => deleteMistake(m.uniqueId)}
-                    className="absolute top-4 right-4 p-2 text-slate-300 hover:text-rose-600 hover:bg-rose-50 rounded-full transition-all"
-                    title="Listeden sil"
-                    aria-label="Listeden sil"
-                  >
-                    <Trash className="w-6 h-6" />
-                  </button>
+  const wrongText =
+    m.choices?.find((c) => c.id === m.myWrongAnswer)?.text || m.myWrongAnswer || '';
 
-                  {/* META INFO */}
-                  <div className="flex items-center gap-3 mb-4">
-                    <span className="px-3 py-1 bg-indigo-50 text-indigo-700 text-xs font-bold rounded-lg uppercase tracking-wider border border-indigo-100">
-                      {getReadableTitle(titleSource)}
-                    </span>
-                    <span className="text-xs text-slate-400 font-medium">
-                      {savedDate}
-                    </span>
-                  </div>
+  const correctText =
+    m.choices?.find((c) => c.id === m.answer)?.text || m.answer || '';
 
-                  {/* QUESTION */}
-                  <div className="text-lg font-medium text-slate-800 mb-6 pr-8 leading-relaxed">
-                    {formatText(m.prompt || '')}
-                  </div>
+  return (
+    <div
+      key={m.uniqueId}
+      className="bg-white rounded-2xl p-6 md:p-8 border border-slate-200 shadow-sm hover:shadow-md transition-all group relative"
+    >
+      {/* DELETE BUTTON... (Aynı kalacak) */}
+      <button
+        onClick={() => deleteMistake(m.uniqueId)}
+        className="absolute top-4 right-4 p-2 text-slate-300 hover:text-rose-600 hover:bg-rose-50 rounded-full transition-all"
+        title="Listeden sil"
+      >
+        <Trash className="w-6 h-6" />
+      </button>
 
-                  {/* ANSWERS COMPARISON */}
-                  <div className="grid md:grid-cols-2 gap-4 mb-6">
-                    {/* WRONG CHOICE */}
-                    <div className="p-4 bg-rose-50 border border-rose-100 rounded-xl">
-                      <div className="text-xs font-bold text-rose-500 uppercase mb-1 flex items-center gap-1">
-                        <AlertCircle className="w-3 h-3" /> Senin Cevabın
-                      </div>
-                      <div className="text-rose-900 font-medium">
-                        {wrongText || '—'}
-                      </div>
-                    </div>
+      {/* META INFO */}
+      <div className="flex items-center gap-3 mb-4">
+        <span className="px-3 py-1 bg-indigo-50 text-indigo-700 text-xs font-bold rounded-lg uppercase tracking-wider border border-indigo-100">
+          {getReadableTitle(titleSource)}
+        </span>
+        <span className="text-xs text-slate-400 font-medium">
+          {savedDate}
+        </span>
+      </div>
 
-                    {/* CORRECT CHOICE */}
-                    <div className="p-4 bg-emerald-50 border border-emerald-100 rounded-xl">
-                      <div className="text-xs font-bold text-emerald-600 uppercase mb-1 flex items-center gap-1">
-                        <Check className="w-3 h-3" /> Doğru Cevap
-                      </div>
-                      <div className="text-emerald-900 font-bold">
-                        {correctText || '—'}
-                      </div>
-                    </div>
-                  </div>
+      {/* QUESTION */}
+      <div className="text-lg font-medium text-slate-800 mb-6 pr-8 leading-relaxed">
+        {formatText(m.prompt || '')}
+      </div>
 
-                  {/* EXPLANATION */}
-                  {m.explanation && (
-                    <div className="mt-4 pt-4 border-t border-slate-100">
-                      <div className="flex gap-3 items-start text-sm text-indigo-900 bg-indigo-50/60 p-4 rounded-xl border border-indigo-100">
-                        <span className="text-xl">💡</span>
-                        <div>
-                          <span className="font-bold block mb-1 text-indigo-800">Açıklama / Çözüm:</span>
-                          <div className="opacity-90 leading-relaxed">
-                            {formatText(m.explanation)}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  )}
-                </div>
-              );
-            })}
+      {/* ANSWERS COMPARISON */}
+      <div className="grid md:grid-cols-2 gap-4 mb-6">
+        {/* WRONG CHOICE */}
+        <div className="p-4 bg-rose-50 border border-rose-100 rounded-xl">
+          <div className="text-xs font-bold text-rose-500 uppercase mb-1 flex items-center gap-1">
+            <AlertCircle className="w-3 h-3" /> {labels.yourAnswer} {/* DİNAMİK */}
+          </div>
+          <div className="text-rose-900 font-medium">
+            {wrongText || '—'}
+          </div>
+        </div>
+
+        {/* CORRECT CHOICE */}
+        <div className="p-4 bg-emerald-50 border border-emerald-100 rounded-xl">
+          <div className="text-xs font-bold text-emerald-600 uppercase mb-1 flex items-center gap-1">
+            <Check className="w-3 h-3" /> {labels.correctAnswer} {/* DİNAMİK */}
+          </div>
+          <div className="text-emerald-900 font-bold">
+            {correctText || '—'}
+          </div>
+        </div>
+      </div>
+
+      {/* EXPLANATION */}
+      {m.explanation && (
+        <div className="mt-4 pt-4 border-t border-slate-100">
+          <div className="flex gap-3 items-start text-sm text-indigo-900 bg-indigo-50/60 p-4 rounded-xl border border-indigo-100">
+            <span className="text-xl">💡</span>
+            <div>
+              <span className="font-bold block mb-1 text-indigo-800">
+                 {labels.explanation}: {/* DİNAMİK */}
+              </span>
+              <div className="opacity-90 leading-relaxed">
+                {formatText(m.explanation)}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+})}
+{/* MISTAKES LIST END */}
           </div>
         )}
       </div>
