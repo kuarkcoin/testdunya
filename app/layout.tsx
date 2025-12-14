@@ -5,10 +5,11 @@ import { Inter } from 'next/font/google'
 import Script from 'next/script'
 import { GoogleAnalytics } from '@next/third-parties/google'
 
-// Bileşenleri İçe Aktar (Navbar ve Footer)
-// Eğer Navbar dosyan yoksa o satırı silebilirsin, ama Footer'ı yeni yaptık.
-import Navbar from '@/components/Navbar' 
-import Footer from '@/components/Footer'
+// --- DÜZELTİLEN KISIM BURASI ---
+// Dosyalar app/components içinde olduğu için "./" kullanıyoruz
+import Navbar from './components/Navbar' 
+import Footer from './components/Footer'
+// -------------------------------
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -53,7 +54,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.className} bg-slate-50 text-slate-900 antialiased relative min-h-screen flex flex-col`}>
 
-        {/* --- 1. GOOGLE ADSENSE (REKLAMLAR) --- */}
+        {/* Google AdSense */}
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1700979325865596"
@@ -61,26 +62,24 @@ export default function RootLayout({
           strategy="afterInteractive"
         />
 
-        {/* --- 2. TAILWIND CSS (GARANTİ OLSUN DİYE) --- */}
+        {/* Tailwind CSS */}
         <Script 
           src="https://cdn.tailwindcss.com" 
           strategy="beforeInteractive" 
         />
 
-        {/* --- 3. NAVBAR (ÜST MENÜ) --- */}
-        {/* Navbar bileşenini burada çağırıyoruz */}
-        {/* Eğer components/Navbar.tsx yoksa bu satırı silmen gerekir */}
+        {/* Navbar */}
         <Navbar />
 
-        {/* --- 4. ANA İÇERİK --- */}
+        {/* Ana İçerik */}
         <div className="flex-1">
             {children}
         </div>
 
-        {/* --- 5. FOOTER (ALT MENÜ - HAKKIMIZDA/ÇEREZ LİNKLERİ BURADA) --- */}
+        {/* Footer */}
         <Footer />
 
-        {/* --- 6. GOOGLE ANALYTICS (ANALİZ) --- */}
+        {/* Google Analytics */}
         <GoogleAnalytics gaId="G-ZQK5MCQ3EG" />
 
       </body>
