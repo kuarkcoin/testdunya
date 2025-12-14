@@ -16,7 +16,7 @@ export default function Navbar() {
           <Link href="/" className="hover:text-indigo-600 transition-colors">
             Anasayfa
           </Link>
-          <Link href="/Hakkimizda" className="hover:text-indigo-600 transition-colors">
+          <Link href="/hakkimizda" className="hover:text-indigo-600 transition-colors">
             Hakkımızda
           </Link>
           <Link href="/iletisim" className="hover:text-indigo-600 transition-colors hidden sm:block">
