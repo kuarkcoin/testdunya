@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: 'TestDünya; YKS, KPSS, TUS ve DUS sınavlarına hazırlananlar için ücretsiz online deneme sınavı platformudur.',
 };
 
-export default function HakkimizdaPage() {
+export default function hakkimizdaPage() {
   return (
     <main className="min-h-screen bg-slate-50 text-slate-800">
       <div className="max-w-4xl mx-auto px-4 py-10 md:py-14">
