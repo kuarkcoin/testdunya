@@ -33,7 +33,7 @@ export default function Footer() {
               </li>
               <li>
                 {/* BURASI ÖNEMLİ: Klasör adın neyse onu yaz */}
-                <Link href="/Hakkimizda" className="hover:text-indigo-600 transition-colors">
+                <Link href="/hakkimizda" className="hover:text-indigo-600 transition-colors">
                   Hakkımızda
                 </Link>
               </li>
