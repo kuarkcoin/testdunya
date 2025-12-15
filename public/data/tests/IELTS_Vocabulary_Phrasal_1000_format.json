@@ -1,0 +1,4002 @@
+[
+    {
+        "word": "abandon",
+        "meaning": "to leave something behind; to stop doing or having something"
+    },
+    {
+        "word": "abate",
+        "meaning": "to become less strong or intense"
+    },
+    {
+        "word": "abstract",
+        "meaning": "existing as an idea rather than as a physical thing"
+    },
+    {
+        "word": "accelerate",
+        "meaning": "to increase in speed or rate"
+    },
+    {
+        "word": "access",
+        "meaning": "the ability or right to enter, use, or approach something"
+    },
+    {
+        "word": "accommodate",
+        "meaning": "to provide space for; to adapt to"
+    },
+    {
+        "word": "accompany",
+        "meaning": "to go somewhere with someone; to happen together"
+    },
+    {
+        "word": "accomplish",
+        "meaning": "to succeed in doing something"
+    },
+    {
+        "word": "account for",
+        "meaning": "to explain; to be the reason for"
+    },
+    {
+        "word": "accumulate",
+        "meaning": "to gather or build up over time"
+    },
+    {
+        "word": "accurate",
+        "meaning": "correct; free from errors"
+    },
+    {
+        "word": "achieve",
+        "meaning": "to successfully reach a goal"
+    },
+    {
+        "word": "acknowledge",
+        "meaning": "to accept or admit that something is true"
+    },
+    {
+        "word": "acquire",
+        "meaning": "to obtain or get something"
+    },
+    {
+        "word": "adapt",
+        "meaning": "to change in order to suit new conditions"
+    },
+    {
+        "word": "adequate",
+        "meaning": "enough; satisfactory for a particular purpose"
+    },
+    {
+        "word": "adjacent",
+        "meaning": "next to; nearby"
+    },
+    {
+        "word": "administer",
+        "meaning": "to manage or organize; to give (a drug or test)"
+    },
+    {
+        "word": "adopt",
+        "meaning": "to start using or accepting something"
+    },
+    {
+        "word": "adverse",
+        "meaning": "harmful; unfavorable"
+    },
+    {
+        "word": "advocate",
+        "meaning": "to publicly support a cause or idea"
+    },
+    {
+        "word": "aesthetic",
+        "meaning": "related to beauty or artistic value"
+    },
+    {
+        "word": "affect",
+        "meaning": "to influence; to produce a change in something"
+    },
+    {
+        "word": "affluent",
+        "meaning": "wealthy"
+    },
+    {
+        "word": "aggregate",
+        "meaning": "to collect into a total; a total amount"
+    },
+    {
+        "word": "aid",
+        "meaning": "to help; assistance"
+    },
+    {
+        "word": "allocate",
+        "meaning": "to distribute resources for a particular purpose"
+    },
+    {
+        "word": "alter",
+        "meaning": "to change; to make different"
+    },
+    {
+        "word": "alternative",
+        "meaning": "another option or choice"
+    },
+    {
+        "word": "ambiguous",
+        "meaning": "unclear; open to more than one interpretation"
+    },
+    {
+        "word": "amend",
+        "meaning": "to change or improve, especially a law or document"
+    },
+    {
+        "word": "amplify",
+        "meaning": "to increase the strength or intensity of something"
+    },
+    {
+        "word": "analyse",
+        "meaning": "to examine in detail to understand better"
+    },
+    {
+        "word": "ancestor",
+        "meaning": "a person related to you who lived long ago"
+    },
+    {
+        "word": "anecdote",
+        "meaning": "a short, interesting story about a real event"
+    },
+    {
+        "word": "annual",
+        "meaning": "happening once every year"
+    },
+    {
+        "word": "anticipate",
+        "meaning": "to expect; to predict"
+    },
+    {
+        "word": "apparent",
+        "meaning": "clear; easy to see"
+    },
+    {
+        "word": "appeal (n.)",
+        "meaning": "a request or an attraction"
+    },
+    {
+        "word": "approach (v.)",
+        "meaning": "to come nearer; to deal with a problem"
+    },
+    {
+        "word": "appropriate",
+        "meaning": "suitable; right for a particular purpose"
+    },
+    {
+        "word": "approximate",
+        "meaning": "close to the real number or amount"
+    },
+    {
+        "word": "arise",
+        "meaning": "to happen; to occur"
+    },
+    {
+        "word": "aspect",
+        "meaning": "one part or feature of something"
+    },
+    {
+        "word": "assess",
+        "meaning": "to evaluate or judge"
+    },
+    {
+        "word": "assign",
+        "meaning": "to give someone a task; to allocate"
+    },
+    {
+        "word": "assistance",
+        "meaning": "help; support"
+    },
+    {
+        "word": "assume",
+        "meaning": "to accept as true without proof"
+    },
+    {
+        "word": "assure",
+        "meaning": "to tell someone confidently; to guarantee"
+    },
+    {
+        "word": "attain",
+        "meaning": "to reach; to achieve"
+    },
+    {
+        "word": "attitude",
+        "meaning": "a way of thinking or feeling about something"
+    },
+    {
+        "word": "attribute (v.)",
+        "meaning": "to regard something as being caused by"
+    },
+    {
+        "word": "audience",
+        "meaning": "people watching or listening to something"
+    },
+    {
+        "word": "authority",
+        "meaning": "the power to control; experts or officials"
+    },
+    {
+        "word": "automate",
+        "meaning": "to make a process operate automatically"
+    },
+    {
+        "word": "available",
+        "meaning": "able to be used; not occupied"
+    },
+    {
+        "word": "aware",
+        "meaning": "knowing or realizing"
+    },
+    {
+        "word": "beneficial",
+        "meaning": "helpful; producing good results"
+    },
+    {
+        "word": "benefit (v.)",
+        "meaning": "to get an advantage from something"
+    },
+    {
+        "word": "bias",
+        "meaning": "an unfair preference for or against something"
+    },
+    {
+        "word": "biodiversity",
+        "meaning": "the variety of plant and animal life in an area"
+    },
+    {
+        "word": "boom (n.)",
+        "meaning": "a period of rapid growth or success"
+    },
+    {
+        "word": "boundary",
+        "meaning": "a limit or border"
+    },
+    {
+        "word": "breakthrough",
+        "meaning": "an important discovery or advancement"
+    },
+    {
+        "word": "burden",
+        "meaning": "a heavy load; a responsibility that is hard to carry"
+    },
+    {
+        "word": "calculate",
+        "meaning": "to compute; to estimate using numbers"
+    },
+    {
+        "word": "campaign",
+        "meaning": "organized activities to achieve a goal"
+    },
+    {
+        "word": "capacity",
+        "meaning": "the ability to hold or do something"
+    },
+    {
+        "word": "carbon footprint",
+        "meaning": "the total greenhouse gases produced by an activity"
+    },
+    {
+        "word": "carry out",
+        "meaning": "to perform; to conduct"
+    },
+    {
+        "word": "cause (n.)",
+        "meaning": "a reason something happens"
+    },
+    {
+        "word": "cease",
+        "meaning": "to stop"
+    },
+    {
+        "word": "challenge (n.)",
+        "meaning": "a difficult task or situation"
+    },
+    {
+        "word": "characteristic",
+        "meaning": "a typical feature or quality"
+    },
+    {
+        "word": "circumstance",
+        "meaning": "a condition or fact that affects a situation"
+    },
+    {
+        "word": "cite",
+        "meaning": "to mention as evidence"
+    },
+    {
+        "word": "clarify",
+        "meaning": "to make something clear"
+    },
+    {
+        "word": "coherent",
+        "meaning": "logical and well-organized"
+    },
+    {
+        "word": "coincide",
+        "meaning": "to happen at the same time"
+    },
+    {
+        "word": "collapse",
+        "meaning": "to fall down; to fail suddenly"
+    },
+    {
+        "word": "collaborate",
+        "meaning": "to work together"
+    },
+    {
+        "word": "commodity",
+        "meaning": "a raw material or agricultural product traded in markets"
+    },
+    {
+        "word": "commence",
+        "meaning": "to begin"
+    },
+    {
+        "word": "commentary",
+        "meaning": "an explanation or discussion"
+    },
+    {
+        "word": "commitment",
+        "meaning": "a promise; strong dedication"
+    },
+    {
+        "word": "communicate",
+        "meaning": "to share information"
+    },
+    {
+        "word": "community",
+        "meaning": "a group of people living or working together"
+    },
+    {
+        "word": "compare",
+        "meaning": "to examine similarities and differences"
+    },
+    {
+        "word": "compensate",
+        "meaning": "to make up for a loss or damage"
+    },
+    {
+        "word": "compile",
+        "meaning": "to collect information into one document"
+    },
+    {
+        "word": "complex",
+        "meaning": "complicated; having many parts"
+    },
+    {
+        "word": "component",
+        "meaning": "a part of a larger whole"
+    },
+    {
+        "word": "comprehensive",
+        "meaning": "covering many aspects; complete"
+    },
+    {
+        "word": "comprise",
+        "meaning": "to consist of; to include"
+    },
+    {
+        "word": "concentrate",
+        "meaning": "to focus attention or effort"
+    },
+    {
+        "word": "concept",
+        "meaning": "an idea; a general notion"
+    },
+    {
+        "word": "conclude",
+        "meaning": "to decide after thinking; to finish"
+    },
+    {
+        "word": "conduct (v.)",
+        "meaning": "to carry out; to organize"
+    },
+    {
+        "word": "consequence",
+        "meaning": "a result or effect"
+    },
+    {
+        "word": "considerable",
+        "meaning": "large; significant"
+    },
+    {
+        "word": "consistent",
+        "meaning": "always behaving the same way; steady"
+    },
+    {
+        "word": "constraint",
+        "meaning": "a limitation or restriction"
+    },
+    {
+        "word": "consume",
+        "meaning": "to use up (resources)"
+    },
+    {
+        "word": "contribute",
+        "meaning": "to give or add to something"
+    },
+    {
+        "word": "controversial",
+        "meaning": "causing public disagreement"
+    },
+    {
+        "word": "convenient",
+        "meaning": "useful and easy for a situation"
+    },
+    {
+        "word": "convert",
+        "meaning": "to change from one form to another"
+    },
+    {
+        "word": "cooperation",
+        "meaning": "working together to achieve something"
+    },
+    {
+        "word": "core",
+        "meaning": "the most important central part"
+    },
+    {
+        "word": "corporate",
+        "meaning": "related to large companies"
+    },
+    {
+        "word": "correlation",
+        "meaning": "a connection or relationship between things"
+    },
+    {
+        "word": "cost-effective",
+        "meaning": "good value for the amount of money spent"
+    },
+    {
+        "word": "crucial",
+        "meaning": "extremely important"
+    },
+    {
+        "word": "culture",
+        "meaning": "the ideas and customs of a society"
+    },
+    {
+        "word": "curb",
+        "meaning": "to control or limit something"
+    },
+    {
+        "word": "cycle (n.)",
+        "meaning": "a series of events that repeats"
+    },
+    {
+        "word": "data",
+        "meaning": "facts and information used for analysis"
+    },
+    {
+        "word": "debate",
+        "meaning": "a formal discussion of different viewpoints"
+    },
+    {
+        "word": "decline (v.)",
+        "meaning": "to decrease; to become less"
+    },
+    {
+        "word": "dedicate",
+        "meaning": "to give time and effort to something"
+    },
+    {
+        "word": "deficiency",
+        "meaning": "a lack of something necessary"
+    },
+    {
+        "word": "define",
+        "meaning": "to explain the meaning of a word or idea"
+    },
+    {
+        "word": "degrade",
+        "meaning": "to damage or make worse"
+    },
+    {
+        "word": "demonstrate",
+        "meaning": "to show clearly; to prove"
+    },
+    {
+        "word": "denote",
+        "meaning": "to mean; to indicate"
+    },
+    {
+        "word": "depend on",
+        "meaning": "to rely on"
+    },
+    {
+        "word": "deplete",
+        "meaning": "to reduce greatly; to use up"
+    },
+    {
+        "word": "derive",
+        "meaning": "to obtain from something"
+    },
+    {
+        "word": "despite",
+        "meaning": "in spite of"
+    },
+    {
+        "word": "detect",
+        "meaning": "to discover; to notice"
+    },
+    {
+        "word": "detrimental",
+        "meaning": "harmful; damaging"
+    },
+    {
+        "word": "developing countries",
+        "meaning": "nations with lower incomes and industrialization"
+    },
+    {
+        "word": "device",
+        "meaning": "a tool or machine for a purpose"
+    },
+    {
+        "word": "diminish",
+        "meaning": "to make smaller or less"
+    },
+    {
+        "word": "distribute",
+        "meaning": "to give out or spread around"
+    },
+    {
+        "word": "diverse",
+        "meaning": "including many different types"
+    },
+    {
+        "word": "domestic",
+        "meaning": "related to the home or a country’s internal affairs"
+    },
+    {
+        "word": "dramatic",
+        "meaning": "sudden and significant"
+    },
+    {
+        "word": "duration",
+        "meaning": "the length of time something lasts"
+    },
+    {
+        "word": "economy",
+        "meaning": "the system of production and trade in a country"
+    },
+    {
+        "word": "efficient",
+        "meaning": "working well without wasting time or resources"
+    },
+    {
+        "word": "eliminate",
+        "meaning": "to remove completely"
+    },
+    {
+        "word": "emerge",
+        "meaning": "to appear; to come into existence"
+    },
+    {
+        "word": "emission",
+        "meaning": "the release of gas, heat, or light"
+    },
+    {
+        "word": "emphasize",
+        "meaning": "to stress or highlight"
+    },
+    {
+        "word": "enable",
+        "meaning": "to make possible"
+    },
+    {
+        "word": "encounter",
+        "meaning": "to meet or experience unexpectedly"
+    },
+    {
+        "word": "endanger",
+        "meaning": "to put at risk"
+    },
+    {
+        "word": "energy-efficient",
+        "meaning": "using less energy to do the same task"
+    },
+    {
+        "word": "enhance",
+        "meaning": "to improve; to increase quality"
+    },
+    {
+        "word": "enormous",
+        "meaning": "very large"
+    },
+    {
+        "word": "ensure",
+        "meaning": "to make certain"
+    },
+    {
+        "word": "entity",
+        "meaning": "something that exists as a separate unit"
+    },
+    {
+        "word": "environment",
+        "meaning": "the natural world or surroundings"
+    },
+    {
+        "word": "equal",
+        "meaning": "the same in size, value, or status"
+    },
+    {
+        "word": "equivalent",
+        "meaning": "having the same value or function"
+    },
+    {
+        "word": "establish",
+        "meaning": "to set up; to create"
+    },
+    {
+        "word": "estimate (v.)",
+        "meaning": "to roughly calculate"
+    },
+    {
+        "word": "ethical",
+        "meaning": "morally right; based on principles"
+    },
+    {
+        "word": "evaluate",
+        "meaning": "to judge the value or quality"
+    },
+    {
+        "word": "evidence",
+        "meaning": "facts that show something is true"
+    },
+    {
+        "word": "evolve",
+        "meaning": "to develop gradually"
+    },
+    {
+        "word": "exceed",
+        "meaning": "to go beyond a limit"
+    },
+    {
+        "word": "exclude",
+        "meaning": "to leave out; not include"
+    },
+    {
+        "word": "expand",
+        "meaning": "to increase in size or amount"
+    },
+    {
+        "word": "expectancy",
+        "meaning": "an expected level, often of life"
+    },
+    {
+        "word": "expenditure",
+        "meaning": "money spent"
+    },
+    {
+        "word": "expertise",
+        "meaning": "special skill or knowledge"
+    },
+    {
+        "word": "explicit",
+        "meaning": "clear and direct"
+    },
+    {
+        "word": "expose",
+        "meaning": "to reveal; to make visible"
+    },
+    {
+        "word": "factor",
+        "meaning": "something that influences an outcome"
+    },
+    {
+        "word": "feature",
+        "meaning": "an important part or characteristic"
+    },
+    {
+        "word": "feasible",
+        "meaning": "possible and practical"
+    },
+    {
+        "word": "fewer",
+        "meaning": "a smaller number"
+    },
+    {
+        "word": "finance",
+        "meaning": "money management; funding"
+    },
+    {
+        "word": "fluctuate",
+        "meaning": "to change frequently and unpredictably"
+    },
+    {
+        "word": "focus",
+        "meaning": "attention directed at something"
+    },
+    {
+        "word": "forecast",
+        "meaning": "to predict future events"
+    },
+    {
+        "word": "framework",
+        "meaning": "a basic structure that supports something"
+    },
+    {
+        "word": "function (v.)",
+        "meaning": "to work; to operate"
+    },
+    {
+        "word": "fundamental",
+        "meaning": "basic; essential"
+    },
+    {
+        "word": "generate",
+        "meaning": "to produce or create"
+    },
+    {
+        "word": "globalization",
+        "meaning": "the increasing global connection of trade and culture"
+    },
+    {
+        "word": "grant (n.)",
+        "meaning": "money given for a specific purpose"
+    },
+    {
+        "word": "greenhouse gases",
+        "meaning": "gases that trap heat in the atmosphere"
+    },
+    {
+        "word": "growth",
+        "meaning": "an increase in size, amount, or development"
+    },
+    {
+        "word": "guideline",
+        "meaning": "a general rule or recommendation"
+    },
+    {
+        "word": "hazard",
+        "meaning": "a danger or risk"
+    },
+    {
+        "word": "healthcare",
+        "meaning": "medical services for maintaining health"
+    },
+    {
+        "word": "highlight",
+        "meaning": "to emphasize; to make noticeable"
+    },
+    {
+        "word": "housing",
+        "meaning": "homes; the provision of homes"
+    },
+    {
+        "word": "hypothesis",
+        "meaning": "an idea to be tested; an assumption"
+    },
+    {
+        "word": "identify",
+        "meaning": "to recognize and name"
+    },
+    {
+        "word": "impact (n.)",
+        "meaning": "a strong effect or influence"
+    },
+    {
+        "word": "implement",
+        "meaning": "to put a plan into action"
+    },
+    {
+        "word": "implication",
+        "meaning": "a possible result or effect"
+    },
+    {
+        "word": "incentive",
+        "meaning": "something that motivates or encourages"
+    },
+    {
+        "word": "income",
+        "meaning": "money received, especially regularly"
+    },
+    {
+        "word": "increasingly",
+        "meaning": "more and more"
+    },
+    {
+        "word": "indicate",
+        "meaning": "to show; to point out"
+    },
+    {
+        "word": "inequality",
+        "meaning": "unfair differences between groups"
+    },
+    {
+        "word": "inevitable",
+        "meaning": "certain to happen"
+    },
+    {
+        "word": "infer",
+        "meaning": "to reach a conclusion based on evidence"
+    },
+    {
+        "word": "infrastructure",
+        "meaning": "basic systems like roads, power, and water"
+    },
+    {
+        "word": "innovation",
+        "meaning": "a new idea or method"
+    },
+    {
+        "word": "input",
+        "meaning": "contribution of resources or information"
+    },
+    {
+        "word": "insight",
+        "meaning": "a deep understanding"
+    },
+    {
+        "word": "install",
+        "meaning": "to put equipment in place"
+    },
+    {
+        "word": "institution",
+        "meaning": "an established organization"
+    },
+    {
+        "word": "integrate",
+        "meaning": "to combine into a whole"
+    },
+    {
+        "word": "intense",
+        "meaning": "very strong"
+    },
+    {
+        "word": "interact",
+        "meaning": "to communicate or work together"
+    },
+    {
+        "word": "interpret",
+        "meaning": "to explain meaning"
+    },
+    {
+        "word": "intervention",
+        "meaning": "action to change a situation"
+    },
+    {
+        "word": "issue (n.)",
+        "meaning": "a problem or topic of discussion"
+    },
+    {
+        "word": "justify",
+        "meaning": "to give a good reason for"
+    },
+    {
+        "word": "key",
+        "meaning": "most important"
+    },
+    {
+        "word": "label (v.)",
+        "meaning": "to classify; to name"
+    },
+    {
+        "word": "lack",
+        "meaning": "the absence of something"
+    },
+    {
+        "word": "launch",
+        "meaning": "to start a new project or product"
+    },
+    {
+        "word": "layout",
+        "meaning": "the arrangement of parts or content"
+    },
+    {
+        "word": "legislation",
+        "meaning": "laws considered collectively"
+    },
+    {
+        "word": "limit (v.)",
+        "meaning": "to restrict"
+    },
+    {
+        "word": "link",
+        "meaning": "a connection"
+    },
+    {
+        "word": "literacy",
+        "meaning": "ability to read and write; knowledge in an area"
+    },
+    {
+        "word": "local",
+        "meaning": "related to a specific area"
+    },
+    {
+        "word": "long-term",
+        "meaning": "lasting a long time"
+    },
+    {
+        "word": "maintain",
+        "meaning": "to keep in good condition; to continue"
+    },
+    {
+        "word": "majority",
+        "meaning": "more than half"
+    },
+    {
+        "word": "manipulate",
+        "meaning": "to control or influence, often unfairly"
+    },
+    {
+        "word": "measure (n.)",
+        "meaning": "an action taken to achieve a goal"
+    },
+    {
+        "word": "method",
+        "meaning": "a way of doing something"
+    },
+    {
+        "word": "migrate",
+        "meaning": "to move from one place to another"
+    },
+    {
+        "word": "minimize",
+        "meaning": "to reduce to the smallest amount"
+    },
+    {
+        "word": "monitor",
+        "meaning": "to watch and check regularly"
+    },
+    {
+        "word": "motivate",
+        "meaning": "to encourage to act"
+    },
+    {
+        "word": "mutual",
+        "meaning": "shared by two or more"
+    },
+    {
+        "word": "notion",
+        "meaning": "an idea or belief"
+    },
+    {
+        "word": "notwithstanding",
+        "meaning": "despite"
+    },
+    {
+        "word": "objective (adj.)",
+        "meaning": "not influenced by feelings; unbiased"
+    },
+    {
+        "word": "obtain",
+        "meaning": "to get"
+    },
+    {
+        "word": "occur",
+        "meaning": "to happen"
+    },
+    {
+        "word": "offset",
+        "meaning": "to balance or compensate for something"
+    },
+    {
+        "word": "ongoing",
+        "meaning": "continuing; in progress"
+    },
+    {
+        "word": "option",
+        "meaning": "a choice"
+    },
+    {
+        "word": "outcome",
+        "meaning": "a result"
+    },
+    {
+        "word": "overall",
+        "meaning": "considering everything"
+    },
+    {
+        "word": "overcome",
+        "meaning": "to succeed in dealing with a problem"
+    },
+    {
+        "word": "participate",
+        "meaning": "to take part"
+    },
+    {
+        "word": "pattern",
+        "meaning": "a repeated form or design"
+    },
+    {
+        "word": "percentage",
+        "meaning": "a part out of 100"
+    },
+    {
+        "word": "perception",
+        "meaning": "the way something is understood or seen"
+    },
+    {
+        "word": "perform",
+        "meaning": "to do a task"
+    },
+    {
+        "word": "perspective",
+        "meaning": "a way of viewing something"
+    },
+    {
+        "word": "phenomenon",
+        "meaning": "something that can be observed, often unusual"
+    },
+    {
+        "word": "policy",
+        "meaning": "a plan or rule used by an organization or government"
+    },
+    {
+        "word": "pollution",
+        "meaning": "harmful substances in the environment"
+    },
+    {
+        "word": "population",
+        "meaning": "the people living in an area"
+    },
+    {
+        "word": "pose",
+        "meaning": "to present or cause (a problem)"
+    },
+    {
+        "word": "potential",
+        "meaning": "possible; having the ability to develop"
+    },
+    {
+        "word": "poverty",
+        "meaning": "the state of being very poor"
+    },
+    {
+        "word": "predict",
+        "meaning": "to say what will happen in the future"
+    },
+    {
+        "word": "preference",
+        "meaning": "a greater liking for one thing over another"
+    },
+    {
+        "word": "prevent",
+        "meaning": "to stop something from happening"
+    },
+    {
+        "word": "primary",
+        "meaning": "most important; first"
+    },
+    {
+        "word": "prioritize",
+        "meaning": "to treat as more important"
+    },
+    {
+        "word": "process",
+        "meaning": "a series of actions to achieve a result"
+    },
+    {
+        "word": "produce",
+        "meaning": "to make; to create"
+    },
+    {
+        "word": "productivity",
+        "meaning": "how efficiently work is done"
+    },
+    {
+        "word": "proportion",
+        "meaning": "a part in relation to a whole"
+    },
+    {
+        "word": "prospect",
+        "meaning": "the possibility of something happening"
+    },
+    {
+        "word": "provide",
+        "meaning": "to give; to supply"
+    },
+    {
+        "word": "public awareness",
+        "meaning": "how much people know about something"
+    },
+    {
+        "word": "pursue",
+        "meaning": "to try to achieve; to follow"
+    },
+    {
+        "word": "quality of life",
+        "meaning": "overall well-being and satisfaction"
+    },
+    {
+        "word": "raise (v.)",
+        "meaning": "to increase; to lift"
+    },
+    {
+        "word": "range",
+        "meaning": "a variety or scope"
+    },
+    {
+        "word": "rate",
+        "meaning": "a measure of how often or how fast"
+    },
+    {
+        "word": "reduce",
+        "meaning": "to make smaller"
+    },
+    {
+        "word": "regulate",
+        "meaning": "to control by rules"
+    },
+    {
+        "word": "reliable",
+        "meaning": "able to be trusted; dependable"
+    },
+    {
+        "word": "rely on",
+        "meaning": "to depend on"
+    },
+    {
+        "word": "remedy",
+        "meaning": "a solution to a problem"
+    },
+    {
+        "word": "renewable energy",
+        "meaning": "energy from sources that naturally renew"
+    },
+    {
+        "word": "replace",
+        "meaning": "to take the place of"
+    },
+    {
+        "word": "require",
+        "meaning": "to need"
+    },
+    {
+        "word": "research",
+        "meaning": "systematic investigation"
+    },
+    {
+        "word": "reside",
+        "meaning": "to live in a place"
+    },
+    {
+        "word": "resource",
+        "meaning": "a supply of something useful"
+    },
+    {
+        "word": "respond",
+        "meaning": "to react or answer"
+    },
+    {
+        "word": "responsible",
+        "meaning": "having a duty; accountable"
+    },
+    {
+        "word": "restrict",
+        "meaning": "to limit"
+    },
+    {
+        "word": "result in",
+        "meaning": "to cause; to lead to"
+    },
+    {
+        "word": "retain",
+        "meaning": "to keep; to hold on to"
+    },
+    {
+        "word": "reveal",
+        "meaning": "to show; to make known"
+    },
+    {
+        "word": "revenue",
+        "meaning": "income from business or government"
+    },
+    {
+        "word": "role",
+        "meaning": "a function or position"
+    },
+    {
+        "word": "rural",
+        "meaning": "related to the countryside"
+    },
+    {
+        "word": "satisfy",
+        "meaning": "to meet expectations or needs"
+    },
+    {
+        "word": "scarce",
+        "meaning": "in short supply"
+    },
+    {
+        "word": "scenario",
+        "meaning": "a possible situation or sequence of events"
+    },
+    {
+        "word": "sector",
+        "meaning": "a part of the economy or society"
+    },
+    {
+        "word": "significant",
+        "meaning": "important; noticeable"
+    },
+    {
+        "word": "source",
+        "meaning": "where something comes from"
+    },
+    {
+        "word": "standard",
+        "meaning": "a level of quality"
+    },
+    {
+        "word": "statistic",
+        "meaning": "a number that represents data"
+    },
+    {
+        "word": "strategy",
+        "meaning": "a plan to achieve a goal"
+    },
+    {
+        "word": "stress (n.)",
+        "meaning": "pressure; worry"
+    },
+    {
+        "word": "structure",
+        "meaning": "the way something is arranged"
+    },
+    {
+        "word": "substitute",
+        "meaning": "a replacement"
+    },
+    {
+        "word": "sufficient",
+        "meaning": "enough"
+    },
+    {
+        "word": "sustain",
+        "meaning": "to keep going; to maintain"
+    },
+    {
+        "word": "sustainable",
+        "meaning": "able to continue without harming the environment"
+    },
+    {
+        "word": "target",
+        "meaning": "a goal; to aim at"
+    },
+    {
+        "word": "technology",
+        "meaning": "tools and methods based on science"
+    },
+    {
+        "word": "tendency",
+        "meaning": "a general direction or habit"
+    },
+    {
+        "word": "theory",
+        "meaning": "an explanation based on evidence"
+    },
+    {
+        "word": "trend",
+        "meaning": "a general direction of change"
+    },
+    {
+        "word": "trigger",
+        "meaning": "to cause something to happen"
+    },
+    {
+        "word": "undermine",
+        "meaning": "to weaken gradually"
+    },
+    {
+        "word": "urban",
+        "meaning": "related to cities"
+    },
+    {
+        "word": "useful",
+        "meaning": "helpful; practical"
+    },
+    {
+        "word": "valid",
+        "meaning": "logically sound; acceptable"
+    },
+    {
+        "word": "variable",
+        "meaning": "something that can change"
+    },
+    {
+        "word": "vast",
+        "meaning": "very large"
+    },
+    {
+        "word": "viable",
+        "meaning": "able to work successfully; practical"
+    },
+    {
+        "word": "vital",
+        "meaning": "essential; necessary"
+    },
+    {
+        "word": "welfare",
+        "meaning": "health and happiness; social support"
+    },
+    {
+        "word": "back up",
+        "meaning": "to support with evidence; to make a copy of data"
+    },
+    {
+        "word": "break down",
+        "meaning": "to stop working; to separate into parts"
+    },
+    {
+        "word": "break out",
+        "meaning": "to start suddenly (e.g., a fire, disease, war)"
+    },
+    {
+        "word": "bring about",
+        "meaning": "to cause something to happen"
+    },
+    {
+        "word": "bring up",
+        "meaning": "to mention; to raise a topic"
+    },
+    {
+        "word": "carry on",
+        "meaning": "to continue"
+    },
+    {
+        "word": "carry out",
+        "meaning": "to perform or conduct (a task or study)"
+    },
+    {
+        "word": "catch on",
+        "meaning": "to become popular; to understand"
+    },
+    {
+        "word": "catch up",
+        "meaning": "to reach the same level; to update someone"
+    },
+    {
+        "word": "check out",
+        "meaning": "to examine; to investigate"
+    },
+    {
+        "word": "come across",
+        "meaning": "to find by chance; to seem or appear"
+    },
+    {
+        "word": "come up with",
+        "meaning": "to think of an idea or solution"
+    },
+    {
+        "word": "cut back on",
+        "meaning": "to reduce consumption"
+    },
+    {
+        "word": "cut down on",
+        "meaning": "to reduce; to do less of something"
+    },
+    {
+        "word": "deal with",
+        "meaning": "to handle; to manage"
+    },
+    {
+        "word": "do away with",
+        "meaning": "to remove or abolish"
+    },
+    {
+        "word": "draw up",
+        "meaning": "to prepare a plan or document"
+    },
+    {
+        "word": "end up",
+        "meaning": "to finally be in a particular situation"
+    },
+    {
+        "word": "fall behind",
+        "meaning": "to fail to keep up with progress"
+    },
+    {
+        "word": "figure out",
+        "meaning": "to understand; to solve"
+    },
+    {
+        "word": "fill in",
+        "meaning": "to provide missing information; to replace temporarily"
+    },
+    {
+        "word": "find out",
+        "meaning": "to discover"
+    },
+    {
+        "word": "get across",
+        "meaning": "to communicate successfully"
+    },
+    {
+        "word": "get ahead",
+        "meaning": "to make progress; to succeed"
+    },
+    {
+        "word": "get along",
+        "meaning": "to have a good relationship"
+    },
+    {
+        "word": "get around",
+        "meaning": "to avoid rules; to travel to different places"
+    },
+    {
+        "word": "get by",
+        "meaning": "to manage with difficulty"
+    },
+    {
+        "word": "get into",
+        "meaning": "to become involved in; to enter"
+    },
+    {
+        "word": "get over",
+        "meaning": "to recover from; to overcome"
+    },
+    {
+        "word": "give in",
+        "meaning": "to stop resisting; to yield"
+    },
+    {
+        "word": "give rise to",
+        "meaning": "to cause; to lead to"
+    },
+    {
+        "word": "go against",
+        "meaning": "to oppose"
+    },
+    {
+        "word": "go over",
+        "meaning": "to review; to examine"
+    },
+    {
+        "word": "grow up",
+        "meaning": "to become an adult"
+    },
+    {
+        "word": "hand in",
+        "meaning": "to submit"
+    },
+    {
+        "word": "hold back",
+        "meaning": "to prevent; to restrain"
+    },
+    {
+        "word": "hold on",
+        "meaning": "to wait; to keep something"
+    },
+    {
+        "word": "keep up",
+        "meaning": "to continue; to maintain"
+    },
+    {
+        "word": "keep up with",
+        "meaning": "to stay at the same level as something"
+    },
+    {
+        "word": "kick off",
+        "meaning": "to start"
+    },
+    {
+        "word": "lay off",
+        "meaning": "to stop employing workers"
+    },
+    {
+        "word": "lead to",
+        "meaning": "to result in"
+    },
+    {
+        "word": "leave out",
+        "meaning": "to omit"
+    },
+    {
+        "word": "look after",
+        "meaning": "to take care of"
+    },
+    {
+        "word": "look into",
+        "meaning": "to investigate"
+    },
+    {
+        "word": "look out",
+        "meaning": "to be careful"
+    },
+    {
+        "word": "make up",
+        "meaning": "to invent; to compensate; to become friends again"
+    },
+    {
+        "word": "make up for",
+        "meaning": "to compensate for a loss"
+    },
+    {
+        "word": "narrow down",
+        "meaning": "to reduce the number of possibilities"
+    },
+    {
+        "word": "opt for",
+        "meaning": "to choose"
+    },
+    {
+        "word": "phase out",
+        "meaning": "to gradually remove or stop using"
+    },
+    {
+        "word": "pick up",
+        "meaning": "to learn; to collect; to improve"
+    },
+    {
+        "word": "point out",
+        "meaning": "to indicate; to mention"
+    },
+    {
+        "word": "put forward",
+        "meaning": "to propose an idea"
+    },
+    {
+        "word": "put off",
+        "meaning": "to postpone"
+    },
+    {
+        "word": "rule out",
+        "meaning": "to exclude as a possibility"
+    },
+    {
+        "word": "run into",
+        "meaning": "to meet unexpectedly; to experience a problem"
+    },
+    {
+        "word": "set up",
+        "meaning": "to arrange; to establish"
+    },
+    {
+        "word": "settle for",
+        "meaning": "to accept something less than desired"
+    },
+    {
+        "word": "show up",
+        "meaning": "to appear"
+    },
+    {
+        "word": "shut down",
+        "meaning": "to close; to stop operating"
+    },
+    {
+        "word": "sort out",
+        "meaning": "to organize; to solve a problem"
+    },
+    {
+        "word": "stand for",
+        "meaning": "to represent"
+    },
+    {
+        "word": "stick to",
+        "meaning": "to follow; to not change"
+    },
+    {
+        "word": "take over",
+        "meaning": "to gain control of"
+    },
+    {
+        "word": "take up",
+        "meaning": "to start (a hobby); to occupy space or time"
+    },
+    {
+        "word": "talk over",
+        "meaning": "to discuss"
+    },
+    {
+        "word": "throw away",
+        "meaning": "to discard"
+    },
+    {
+        "word": "touch on",
+        "meaning": "to mention briefly"
+    },
+    {
+        "word": "turn down",
+        "meaning": "to refuse; to reduce volume or level"
+    },
+    {
+        "word": "turn out",
+        "meaning": "to happen in a particular way"
+    },
+    {
+        "word": "work out",
+        "meaning": "to solve; to develop successfully"
+    },
+    {
+        "word": "wrap up",
+        "meaning": "to finish; to complete"
+    },
+    {
+        "word": "weigh up",
+        "meaning": "to consider the advantages and disadvantages"
+    },
+    {
+        "word": "zero in on",
+        "meaning": "to focus on something closely"
+    },
+    {
+        "word": "order in",
+        "meaning": "to order food from a restaurant and ask for it to be delivered to you"
+    },
+    {
+        "word": "go on",
+        "meaning": "if time goes on, it passes"
+    },
+    {
+        "word": "put in",
+        "meaning": "if a ship puts in, it stops at a port"
+    },
+    {
+        "word": "put on",
+        "meaning": "to start cooking something"
+    },
+    {
+        "word": "set in",
+        "meaning": "if something unpleasant sets in, it starts to happen and have an effect, and is not likely to stop for a long time"
+    },
+    {
+        "word": "come to",
+        "meaning": "same as come on to"
+    },
+    {
+        "word": "give up",
+        "meaning": "to stop thinking or believing something"
+    },
+    {
+        "word": "go back",
+        "meaning": "to have existed since or for a particular time"
+    },
+    {
+        "word": "set out",
+        "meaning": "to start a journey"
+    },
+    {
+        "word": "take on",
+        "meaning": "to start to employ someone"
+    },
+    {
+        "word": "come into",
+        "meaning": "to be an aspect of a situation"
+    },
+    {
+        "word": "factor in",
+        "meaning": "to include a particular amount or factor when you calculate something"
+    },
+    {
+        "word": "do in",
+        "meaning": "to murder someone"
+    },
+    {
+        "word": "go by",
+        "meaning": "if time goes by, it passes"
+    },
+    {
+        "word": "go in",
+        "meaning": "if information goes in, you understand it"
+    },
+    {
+        "word": "go up",
+        "meaning": "to travel towards the north"
+    },
+    {
+        "word": "add up",
+        "meaning": "to calculate the total of several numbers or amounts"
+    },
+    {
+        "word": "cut in",
+        "meaning": "to interrupt someone who is speaking"
+    },
+    {
+        "word": "fit in",
+        "meaning": "to have space for someone or something"
+    },
+    {
+        "word": "get at",
+        "meaning": "to manage to reach or touch something"
+    },
+    {
+        "word": "get in",
+        "meaning": "to arrive at home or at work"
+    },
+    {
+        "word": "get on",
+        "meaning": "same as get along"
+    },
+    {
+        "word": "go for",
+        "meaning": "to attack someone physically"
+    },
+    {
+        "word": "go off",
+        "meaning": "to start to sleep"
+    },
+    {
+        "word": "go out",
+        "meaning": "to be sent by post"
+    },
+    {
+        "word": "lay in",
+        "meaning": "to get and keep a supply of something such as food to use in the future"
+    },
+    {
+        "word": "lay on",
+        "meaning": "to tell or show something to someone, especially when you do not expect them to like it"
+    },
+    {
+        "word": "put up",
+        "meaning": "same as put forward"
+    },
+    {
+        "word": "run in",
+        "meaning": "to find a criminal and take them to a police station."
+    },
+    {
+        "word": "run to",
+        "meaning": "to have enough money to buy a particular thing"
+    },
+    {
+        "word": "set on",
+        "meaning": "to attack someone or something"
+    },
+    {
+        "word": "set to",
+        "meaning": "to start doing something in a determined or enthusiastic way"
+    },
+    {
+        "word": "sit in",
+        "meaning": "if people sit in, they take part in a sit-in"
+    },
+    {
+        "word": "sit on",
+        "meaning": "to delay dealing with something"
+    },
+    {
+        "word": "sum up",
+        "meaning": "to give a summary of something"
+    },
+    {
+        "word": "book in",
+        "meaning": "to arrange for yourself or someone else to stay at a hotel, hospital etc"
+    },
+    {
+        "word": "come at",
+        "meaning": "to examine or deal with something such as a problem in a particular way"
+    },
+    {
+        "word": "come by",
+        "meaning": "to get something, especially something that is hard to get"
+    },
+    {
+        "word": "come on",
+        "meaning": "to appear on a stage"
+    },
+    {
+        "word": "come up",
+        "meaning": "to be about to happen soon"
+    },
+    {
+        "word": "cut off",
+        "meaning": "to remove something by cutting it"
+    },
+    {
+        "word": "cut out",
+        "meaning": "to remove something from a larger piece by cutting"
+    },
+    {
+        "word": "draw on",
+        "meaning": "to breathe in smoke from a cigarette"
+    },
+    {
+        "word": "fall in",
+        "meaning": "if a roof or wall falls in, it falls to the ground"
+    },
+    {
+        "word": "fall on",
+        "meaning": "if something falls on someone, it is their responsibility to do it"
+    },
+    {
+        "word": "get off",
+        "meaning": "to help someone to fall asleep"
+    },
+    {
+        "word": "get out",
+        "meaning": "to manage to say something"
+    },
+    {
+        "word": "go away",
+        "meaning": "to stop existing or being noticeable"
+    },
+    {
+        "word": "go down",
+        "meaning": "to become worse"
+    },
+    {
+        "word": "go into",
+        "meaning": "to crash into something"
+    },
+    {
+        "word": "go with",
+        "meaning": "to have sex with someone"
+    },
+    {
+        "word": "hand on",
+        "meaning": "to give someone something that was given to you"
+    },
+    {
+        "word": "hang on",
+        "meaning": "to wait or be patient"
+    },
+    {
+        "word": "hold in",
+        "meaning": "to not allow your feelings to show"
+    },
+    {
+        "word": "hold up",
+        "meaning": "to remain strong or in a fairly good condition"
+    },
+    {
+        "word": "keep on",
+        "meaning": "to continue doing something"
+    },
+    {
+        "word": "keep to",
+        "meaning": "to prevent an amount or number from passing a limit"
+    },
+    {
+        "word": "look on",
+        "meaning": "to not approve of something"
+    },
+    {
+        "word": "look up",
+        "meaning": "if a situation is looking up, it is getting better"
+    },
+    {
+        "word": "make of",
+        "meaning": "to make something be successful"
+    },
+    {
+        "word": "move on",
+        "meaning": "to leave one place and travel to another"
+    },
+    {
+        "word": "open up",
+        "meaning": "to start shooting a gun"
+    },
+    {
+        "word": "play on",
+        "meaning": "to use a situation or emotions such as fear or worry in order to get what you want"
+    },
+    {
+        "word": "put out",
+        "meaning": "to switch off a light"
+    },
+    {
+        "word": "run out",
+        "meaning": "to use all of something and not have any left"
+    },
+    {
+        "word": "step in",
+        "meaning": "to become involved in a discussion or argument, especially in order to make it stop"
+    },
+    {
+        "word": "take to",
+        "meaning": "to start doing something as a habit"
+    },
+    {
+        "word": "try out",
+        "meaning": "to test someone or something to see what they are like or whether they are suitable or effective"
+    },
+    {
+        "word": "turn on",
+        "meaning": "to suddenly attack someone violently"
+    },
+    {
+        "word": "turn up",
+        "meaning": "to happen unexpectedly or by chance"
+    },
+    {
+        "word": "wake up",
+        "meaning": "to start to feel more lively, or to make someone feel more lively"
+    },
+    {
+        "word": "bring in",
+        "meaning": "to introduce a new law or system"
+    },
+    {
+        "word": "close in",
+        "meaning": "if the weather closes in, it becomes unpleasant"
+    },
+    {
+        "word": "come out",
+        "meaning": "to be easy to notice"
+    },
+    {
+        "word": "count on",
+        "meaning": "to depend on someone to do what you want or expect them to do for you"
+    },
+    {
+        "word": "cut down",
+        "meaning": "to reduce an amount of something"
+    },
+    {
+        "word": "flip out",
+        "meaning": "same as flip"
+    },
+    {
+        "word": "get away",
+        "meaning": "to escape from a person or place"
+    },
+    {
+        "word": "get back",
+        "meaning": "to return to a place"
+    },
+    {
+        "word": "get off!",
+        "meaning": "to help someone to fall asleep"
+    },
+    {
+        "word": "get out!",
+        "meaning": "to manage to say something"
+    },
+    {
+        "word": "go about",
+        "meaning": "same as go around"
+    },
+    {
+        "word": "go along",
+        "meaning": "to continue doing something"
+    },
+    {
+        "word": "lay down",
+        "meaning": "a way of saying ‘lie down’ that many people think is incorrect"
+    },
+    {
+        "word": "lie down",
+        "meaning": "to not work as hard at something as you should do"
+    },
+    {
+        "word": "light on",
+        "meaning": "to suddenly find something or think of something"
+    },
+    {
+        "word": "make for",
+        "meaning": "to move towards a place"
+    },
+    {
+        "word": "make out",
+        "meaning": "to pretend that something is true"
+    },
+    {
+        "word": "move out",
+        "meaning": "permanently to leave the house or flat where you live or the place where you have your business"
+    },
+    {
+        "word": "phase in",
+        "meaning": "to gradually start using something"
+    },
+    {
+        "word": "pick out",
+        "meaning": "to choose one thing or person from a group"
+    },
+    {
+        "word": "put down",
+        "meaning": "to write something on a piece of paper"
+    },
+    {
+        "word": "read out",
+        "meaning": "to say the words that you are reading so that people can hear them"
+    },
+    {
+        "word": "run away",
+        "meaning": "to try to avoid dealing with a difficult or unpleasant situation"
+    },
+    {
+        "word": "seek out",
+        "meaning": "to find someone or something by looking for them in a determined way"
+    },
+    {
+        "word": "speed up",
+        "meaning": "to move or happen faster"
+    },
+    {
+        "word": "stand in",
+        "meaning": "to do someone else’s job temporarily while they are not available to do it"
+    },
+    {
+        "word": "take off",
+        "meaning": "to leave a place suddenly"
+    },
+    {
+        "word": "take out",
+        "meaning": "to kill someone"
+    },
+    {
+        "word": "trade in",
+        "meaning": "to give something old as part of the payment for something new"
+    },
+    {
+        "word": "write in",
+        "meaning": "to add words or numbers that are missing from something"
+    },
+    {
+        "word": "back down",
+        "meaning": "to stop asking for something, or to stop saying that you will do something, because a lot of people oppose you"
+    },
+    {
+        "word": "come over",
+        "meaning": "same as come across"
+    },
+    {
+        "word": "fall back",
+        "meaning": "to move so that you are behind someone or something"
+    },
+    {
+        "word": "follow up",
+        "meaning": "to try to find out more about something, or to do something more to deal with it"
+    },
+    {
+        "word": "get away!",
+        "meaning": "to escape from a person or place"
+    },
+    {
+        "word": "hand over",
+        "meaning": "to give power or control to someone else"
+    },
+    {
+        "word": "hang onto",
+        "meaning": "to keep something"
+    },
+    {
+        "word": "hold onto",
+        "meaning": "to continue feeling or believing something"
+    },
+    {
+        "word": "look back",
+        "meaning": "to think about a time or event in the past"
+    },
+    {
+        "word": "settle in",
+        "meaning": "to become familiar with a new way of life, place, or job, or to make someone do this"
+    },
+    {
+        "word": "stand out",
+        "meaning": "to be easy to see or notice because of being different"
+    },
+    {
+        "word": "take away",
+        "meaning": "to reduce the positive effect or success of something"
+    },
+    {
+        "word": "turn away",
+        "meaning": "to refuse to let someone come into a place"
+    },
+    {
+        "word": "come about",
+        "meaning": "to happen, especially by chance"
+    },
+    {
+        "word": "cut across",
+        "meaning": "to affect two or more different groups"
+    },
+    {
+        "word": "do without",
+        "meaning": "to succeed in living or working without someone or something"
+    },
+    {
+        "word": "enter into",
+        "meaning": "to be an important aspect of a situation"
+    },
+    {
+        "word": "go through",
+        "meaning": "to examine or search something very carefully"
+    },
+    {
+        "word": "spread out",
+        "meaning": "to put people in many parts of a large area"
+    },
+    {
+        "word": "write down",
+        "meaning": "to write something on a piece of paper"
+    },
+    {
+        "word": "get through",
+        "meaning": "to use or finish something"
+    },
+    {
+        "word": "run through",
+        "meaning": "to push a sword through someone’s body"
+    },
+    {
+        "word": "set against",
+        "meaning": "to compare one thing with another"
+    },
+    {
+        "word": "settle down",
+        "meaning": "to begin to live a quieter life by getting married or staying permanently in a place"
+    },
+    {
+        "word": "come through",
+        "meaning": "to do something that you have agreed or promised to do"
+    },
+    {
+        "word": "break through",
+        "meaning": "if the sun breaks through the clouds, it appears from behind them"
+    },
+    {
+        "word": "go at",
+        "meaning": "to attack someone violently"
+    },
+    {
+        "word": "add on",
+        "meaning": "to build an extra part onto a building"
+    },
+    {
+        "word": "buy up",
+        "meaning": "to buy large amounts of something or all of it that is available"
+    },
+    {
+        "word": "dry up",
+        "meaning": "to stop being available"
+    },
+    {
+        "word": "hit on",
+        "meaning": "to suddenly have an idea"
+    },
+    {
+        "word": "key in",
+        "meaning": "same as key"
+    },
+    {
+        "word": "let in",
+        "meaning": "to put yourself in a difficult situation"
+    },
+    {
+        "word": "let on",
+        "meaning": "to admit something"
+    },
+    {
+        "word": "log in",
+        "meaning": "to start using a computer system, for example by typing a particular word"
+    },
+    {
+        "word": "log on",
+        "meaning": "to start using a computer system, for example by typing a particular word"
+    },
+    {
+        "word": "mix up",
+        "meaning": "to put things together without any order"
+    },
+    {
+        "word": "mop up",
+        "meaning": "to win, or succeed in doing something"
+    },
+    {
+        "word": "pay up",
+        "meaning": "to pay money that you owe, especially when you are unwilling to pay"
+    },
+    {
+        "word": "pop up",
+        "meaning": "to appear very quickly or suddenly"
+    },
+    {
+        "word": "put by",
+        "meaning": "same as put aside"
+    },
+    {
+        "word": "run up",
+        "meaning": "to raise a flag to the top of a pole"
+    },
+    {
+        "word": "tie up",
+        "meaning": "to tie the ends of something together"
+    },
+    {
+        "word": "act out",
+        "meaning": "to express your thoughts or feelings through your words or behaviour"
+    },
+    {
+        "word": "bang on",
+        "meaning": "to talk about something for a long time in a boring and annoying way"
+    },
+    {
+        "word": "bank on",
+        "meaning": "to depend on something happening or on someone doing something"
+    },
+    {
+        "word": "beat up",
+        "meaning": "to blame or criticize yourself or someone else"
+    },
+    {
+        "word": "blow up",
+        "meaning": "to make a photograph bigger"
+    },
+    {
+        "word": "burn up",
+        "meaning": "same as burn off"
+    },
+    {
+        "word": "buy out",
+        "meaning": "to pay money to your business partner so that you can control all of a business you previously owned together"
+    },
+    {
+        "word": "call up",
+        "meaning": "to telephone someone"
+    },
+    {
+        "word": "cash in",
+        "meaning": "to use an opportunity to make a profit or gain an advantage"
+    },
+    {
+        "word": "cave in",
+        "meaning": "if a roof or wall caves in, it falls down or inwards"
+    },
+    {
+        "word": "chip in",
+        "meaning": "to add something to someone else’s conversation"
+    },
+    {
+        "word": "cry out",
+        "meaning": "to shout something, especially when you are surprised or worried"
+    },
+    {
+        "word": "curl up",
+        "meaning": "to lie with your back curved and your legs and arms close to your chest"
+    },
+    {
+        "word": "draw in",
+        "meaning": "to arrive in a place"
+    },
+    {
+        "word": "dry out",
+        "meaning": "if something dries out or is dried out, some or all the water comes out of it"
+    },
+    {
+        "word": "eke out",
+        "meaning": "to get just enough money or food to be able to continue to exist"
+    },
+    {
+        "word": "even up",
+        "meaning": "to make something fairer or more equal"
+    },
+    {
+        "word": "grow on",
+        "meaning": "if something or someone grows on you, you start to like them more"
+    },
+    {
+        "word": "hang up",
+        "meaning": "to hang a piece of clothing on something"
+    },
+    {
+        "word": "hook up",
+        "meaning": "to connect something to a piece of equipment, especially using a hook"
+    },
+    {
+        "word": "kick in",
+        "meaning": "to start to have an effect"
+    },
+    {
+        "word": "lay out",
+        "meaning": "to spend an amount of money"
+    },
+    {
+        "word": "lead on",
+        "meaning": "to encourage someone to do something or to expect something, especially by lying to them or promising them something that they cannot have"
+    },
+    {
+        "word": "let off",
+        "meaning": "to fire a gun or bullet"
+    },
+    {
+        "word": "let out",
+        "meaning": "to make a noise"
+    },
+    {
+        "word": "line up",
+        "meaning": "to form a row, or to put people or things in a row"
+    },
+    {
+        "word": "lock in",
+        "meaning": "to put someone in a room and lock the door so they cannot leave"
+    },
+    {
+        "word": "map out",
+        "meaning": "to plan in detail how something will happen"
+    },
+    {
+        "word": "mess up",
+        "meaning": "to damage or spoil something"
+    },
+    {
+        "word": "pack in",
+        "meaning": "to attract very large audiences"
+    },
+    {
+        "word": "pack up",
+        "meaning": "to stop doing something, especially a job"
+    },
+    {
+        "word": "pass by",
+        "meaning": "if something passes you by, you do not notice it"
+    },
+    {
+        "word": "pass up",
+        "meaning": "to not take advantage of an opportunity"
+    },
+    {
+        "word": "pay off",
+        "meaning": "if something that you do pays off, it brings you some benefit"
+    },
+    {
+        "word": "pay out",
+        "meaning": "to spend or pay money, especially a lot of money"
+    },
+    {
+        "word": "pick on",
+        "meaning": "to keep treating someone badly or unfairly, especially by criticizing them"
+    },
+    {
+        "word": "play up",
+        "meaning": "to cause difficulties or pain for someone"
+    },
+    {
+        "word": "pull up",
+        "meaning": "if a vehicle or driver pulls up, they stop"
+    },
+    {
+        "word": "push on",
+        "meaning": "to continue a journey, especially after stopping for a period of time"
+    },
+    {
+        "word": "rein in",
+        "meaning": "to make a horse stop or go more slowly by pulling its reins"
+    },
+    {
+        "word": "ring in",
+        "meaning": "to ring bells to celebrate the beginning of a new year"
+    },
+    {
+        "word": "ring up",
+        "meaning": "to phone someone"
+    },
+    {
+        "word": "roll in",
+        "meaning": "to arrive in large numbers or amounts"
+    },
+    {
+        "word": "rope in",
+        "meaning": "to persuade someone to do something that they do not really want to do"
+    },
+    {
+        "word": "rub off",
+        "meaning": "if a quality that someone has rubs off, it starts to affect another person so that they start to have that quality too"
+    },
+    {
+        "word": "run off",
+        "meaning": "to talk too much"
+    },
+    {
+        "word": "send up",
+        "meaning": "to send someone to prison"
+    },
+    {
+        "word": "sign in",
+        "meaning": "to write your name on an official list when you arrive at a place"
+    },
+    {
+        "word": "sign on",
+        "meaning": "to employ someone to do a job"
+    },
+    {
+        "word": "sign up",
+        "meaning": "to put someone’s name on an official list for something"
+    },
+    {
+        "word": "sink in",
+        "meaning": "to become completely understood"
+    },
+    {
+        "word": "sit out",
+        "meaning": "to stop doing something for a period of time"
+    },
+    {
+        "word": "size up",
+        "meaning": "to think carefully and form an opinion about a person or a situation"
+    },
+    {
+        "word": "slip on",
+        "meaning": "to put clothes on"
+    },
+    {
+        "word": "stir up",
+        "meaning": "to make water or dust move around"
+    },
+    {
+        "word": "tidy up",
+        "meaning": "to make small changes to something in order to make it better"
+    },
+    {
+        "word": "tune in",
+        "meaning": "to understand something such as a situation or someone else’s feelings"
+    },
+    {
+        "word": "wait on",
+        "meaning": "to serve people in a restaurant"
+    },
+    {
+        "word": "walk on",
+        "meaning": "to continue walking in your intended direction"
+    },
+    {
+        "word": "wash up",
+        "meaning": "to wash plates, cups, spoons etc after a meal"
+    },
+    {
+        "word": "whip up",
+        "meaning": "to prepare something to eat very quickly"
+    },
+    {
+        "word": "win out",
+        "meaning": "to succeed after great difficulty"
+    },
+    {
+        "word": "wind up",
+        "meaning": "to end something"
+    },
+    {
+        "word": "work up",
+        "meaning": "to develop something"
+    },
+    {
+        "word": "back off",
+        "meaning": "to stop criticizing someone or telling them what to do"
+    },
+    {
+        "word": "back out",
+        "meaning": "to decide not to do something you agreed to do"
+    },
+    {
+        "word": "bail out",
+        "meaning": "to escape from a plane by parachute"
+    },
+    {
+        "word": "bear out",
+        "meaning": "to show that something is true or that someone is telling the truth"
+    },
+    {
+        "word": "block in",
+        "meaning": "to stop someone from moving their car out of a place"
+    },
+    {
+        "word": "burn out",
+        "meaning": "to burn someone’s home so that they have to leave it"
+    },
+    {
+        "word": "buy into",
+        "meaning": "to buy part of a business, especially in order to get control of it"
+    },
+    {
+        "word": "call out",
+        "meaning": "to challenge someone over something they have said or done"
+    },
+    {
+        "word": "cast off",
+        "meaning": "to get rid of someone or something"
+    },
+    {
+        "word": "check in",
+        "meaning": "to arrive at an airport and show your ticket to an official"
+    },
+    {
+        "word": "clean up",
+        "meaning": "to make a lot of money"
+    },
+    {
+        "word": "clear up",
+        "meaning": "to solve a problem or a mystery"
+    },
+    {
+        "word": "come off",
+        "meaning": "to stop being fixed to something"
+    },
+    {
+        "word": "cover up",
+        "meaning": "to put more clothes or covers on your body, to hide it or keep it warm"
+    },
+    {
+        "word": "die down",
+        "meaning": "if something dies down, it becomes much less noisy, powerful, or active"
+    },
+    {
+        "word": "draw out",
+        "meaning": "to move out of a place"
+    },
+    {
+        "word": "dress up",
+        "meaning": "to make something seem more impressive than it really is"
+    },
+    {
+        "word": "even out",
+        "meaning": "to share or divide something equally, or to be shared or divided equally"
+    },
+    {
+        "word": "fade out",
+        "meaning": "if a sound or picture fades out, or if you fade it out, it gradually disappears"
+    },
+    {
+        "word": "fall for",
+        "meaning": "to believe that a trick or a joke is true"
+    },
+    {
+        "word": "fall off",
+        "meaning": "if the amount, level, or value of something falls off, it gets smaller"
+    },
+    {
+        "word": "fill out",
+        "meaning": "if someone fills out, their body becomes less thin"
+    },
+    {
+        "word": "fish out",
+        "meaning": "to pull someone or something out of the water"
+    },
+    {
+        "word": "flare up",
+        "meaning": "if an illness or medical condition flares up, it becomes worse"
+    },
+    {
+        "word": "get down",
+        "meaning": "to write something somewhere"
+    },
+    {
+        "word": "give off",
+        "meaning": "to produce something such as heat, light, or a smell"
+    },
+    {
+        "word": "give out",
+        "meaning": "to give something to several people"
+    },
+    {
+        "word": "go round",
+        "meaning": "to move in a circle"
+    },
+    {
+        "word": "go under",
+        "meaning": "to sink below the surface of the water"
+    },
+    {
+        "word": "help out",
+        "meaning": "to help someone, especially by doing a particular job or by giving them money"
+    },
+    {
+        "word": "hold off",
+        "meaning": "to stop something from happening"
+    },
+    {
+        "word": "hold out",
+        "meaning": "to continue to be enough or continue to exist"
+    },
+    {
+        "word": "iron out",
+        "meaning": "to improve something, to get rid of imperfections from something"
+    },
+    {
+        "word": "kick out",
+        "meaning": "to force someone to leave a place or organization"
+    },
+    {
+        "word": "lash out",
+        "meaning": "to spend a lot of money on something"
+    },
+    {
+        "word": "let down",
+        "meaning": "to allow someone or something to move to a lower position"
+    },
+    {
+        "word": "let into",
+        "meaning": "to allow someone to enter a house, room etc"
+    },
+    {
+        "word": "light up",
+        "meaning": "to light a cigarette"
+    },
+    {
+        "word": "lose out",
+        "meaning": "to not get a benefit that someone else is getting"
+    },
+    {
+        "word": "miss out",
+        "meaning": "to lose an opportunity to do or have something"
+    },
+    {
+        "word": "pass off",
+        "meaning": "to make people believe that a person or thing is something else"
+    },
+    {
+        "word": "pass out",
+        "meaning": "to give something to each member of a group"
+    },
+    {
+        "word": "pay back",
+        "meaning": "to give someone the same amount of money that you borrowed from them"
+    },
+    {
+        "word": "peel off",
+        "meaning": "to remove a tight or wet piece of clothing"
+    },
+    {
+        "word": "phone in",
+        "meaning": "to telephone the place where you work in order to give a message"
+    },
+    {
+        "word": "pin down",
+        "meaning": "to understand or describe something exactly"
+    },
+    {
+        "word": "pitch in",
+        "meaning": "to join with other people in doing a job"
+    },
+    {
+        "word": "play out",
+        "meaning": "to develop or end in a particular way"
+    },
+    {
+        "word": "pull off",
+        "meaning": "to take off clothes, especially quickly"
+    },
+    {
+        "word": "pull out",
+        "meaning": "if a train pulls out, it leaves a station"
+    },
+    {
+        "word": "put away",
+        "meaning": "to kill someone"
+    },
+    {
+        "word": "put back",
+        "meaning": "to make something happen later than it should happen"
+    },
+    {
+        "word": "put over",
+        "meaning": "to trick someone into believing something that is not true"
+    },
+    {
+        "word": "ride out",
+        "meaning": "to get to the end of a difficult or dangerous period or situation without any serious problems"
+    },
+    {
+        "word": "ring out",
+        "meaning": "to produce a loud clear sound"
+    },
+    {
+        "word": "root out",
+        "meaning": "to find something bad or illegal and get rid of it"
+    },
+    {
+        "word": "round on",
+        "meaning": "to react angrily towards someone"
+    },
+    {
+        "word": "round up",
+        "meaning": "to find and arrest people"
+    },
+    {
+        "word": "run over",
+        "meaning": "to continue for longer than planned"
+    },
+    {
+        "word": "screw up",
+        "meaning": "if you screw up your eyes, you close them tightly"
+    },
+    {
+        "word": "sell out",
+        "meaning": "used about goods"
+    },
+    {
+        "word": "set back",
+        "meaning": "to delay the progress of someone or something"
+    },
+    {
+        "word": "set upon",
+        "meaning": "to attack someone or something"
+    },
+    {
+        "word": "shoot up",
+        "meaning": "to grow taller very quickly"
+    },
+    {
+        "word": "show off",
+        "meaning": "to make something look very impressive or attractive"
+    },
+    {
+        "word": "sign off",
+        "meaning": "to end a letter"
+    },
+    {
+        "word": "sit back",
+        "meaning": "to relax and stop making the effort to do something"
+    },
+    {
+        "word": "speak up",
+        "meaning": "to say what you think instead of saying nothing"
+    },
+    {
+        "word": "split up",
+        "meaning": "to separate someone from the person or people that they are with"
+    },
+    {
+        "word": "start on",
+        "meaning": "to begin working on something or dealing with something"
+    },
+    {
+        "word": "stay out",
+        "meaning": "to remain out of your home for a period of time"
+    },
+    {
+        "word": "step out",
+        "meaning": "to leave a place for a short time"
+    },
+    {
+        "word": "stick at",
+        "meaning": "to continue to work at something difficult or unpleasant in a determined way"
+    },
+    {
+        "word": "stop off",
+        "meaning": "to visit somewhere before continuing to another place"
+    },
+    {
+        "word": "think up",
+        "meaning": "to invent or to imagine something, especially an excuse"
+    },
+    {
+        "word": "throw up",
+        "meaning": "to produce something new or unexpected"
+    },
+    {
+        "word": "trade on",
+        "meaning": "to get an advantage by making use of something"
+    },
+    {
+        "word": "want out",
+        "meaning": "to wish to leave a place"
+    },
+    {
+        "word": "wash out",
+        "meaning": "to wash something quickly, especially the inside of a container"
+    },
+    {
+        "word": "wear off",
+        "meaning": "if a feeling wears off, it gradually disappears"
+    },
+    {
+        "word": "weed out",
+        "meaning": "to remove a person or thing that is not suitable or good enough, especially from a group or collection"
+    },
+    {
+        "word": "win over",
+        "meaning": "to persuade someone to agree with you or to be friendly to you"
+    },
+    {
+        "word": "wipe out",
+        "meaning": "to kill someone"
+    },
+    {
+        "word": "work off",
+        "meaning": "to pay someone what you owe them by doing a job for them instead of giving them money"
+    },
+    {
+        "word": "write up",
+        "meaning": "to report officially that someone has done something wrong"
+    },
+    {
+        "word": "bear with",
+        "meaning": "used as a polite way of asking someone to be patient while you do or finish something"
+    },
+    {
+        "word": "beat down",
+        "meaning": "if the rain beats down, it rains very hard"
+    },
+    {
+        "word": "block out",
+        "meaning": "same as block in"
+    },
+    {
+        "word": "boil down",
+        "meaning": "to make something such as a piece of writing shorter by giving only the basic, most important facts"
+    },
+    {
+        "word": "break off",
+        "meaning": "to end a relationship or a discussion"
+    },
+    {
+        "word": "bump into",
+        "meaning": "to meet someone unexpectedly"
+    },
+    {
+        "word": "carry off",
+        "meaning": "to deal successfully with something difficult"
+    },
+    {
+        "word": "carve out",
+        "meaning": "to develop a career or position for yourself by working hard"
+    },
+    {
+        "word": "clean out",
+        "meaning": "to use all of someone’s money"
+    },
+    {
+        "word": "drive off",
+        "meaning": "if a vehicle or driver drives off, the vehicle starts moving and leaves"
+    },
+    {
+        "word": "face down",
+        "meaning": "to appear strong and confident when someone is threatening or criticizing you"
+    },
+    {
+        "word": "fall away",
+        "meaning": "to become smaller or lower in amount, level, value etc"
+    },
+    {
+        "word": "fall down",
+        "meaning": "if a building is falling down, it is in very bad condition"
+    },
+    {
+        "word": "fall over",
+        "meaning": "if a computer program falls over, it stops working"
+    },
+    {
+        "word": "fight off",
+        "meaning": "to stop someone who is trying to attack you"
+    },
+    {
+        "word": "figure on",
+        "meaning": "to think that something will happen and plan for it"
+    },
+    {
+        "word": "flesh out",
+        "meaning": "to add more details about something in order to make it easier to understand or imagine"
+    },
+    {
+        "word": "get about",
+        "meaning": "same as get around"
+    },
+    {
+        "word": "get round",
+        "meaning": "same as get around"
+    },
+    {
+        "word": "give over",
+        "meaning": "to stop doing something"
+    },
+    {
+        "word": "go around",
+        "meaning": "to move in a circle"
+    },
+    {
+        "word": "grow into",
+        "meaning": "to develop and become a particular thing or person"
+    },
+    {
+        "word": "hand down",
+        "meaning": "to say officially that someone should receive a particular punishment"
+    },
+    {
+        "word": "hold over",
+        "meaning": "to hold something above someone or something"
+    },
+    {
+        "word": "hold with",
+        "meaning": "to not approve of an activity or action"
+    },
+    {
+        "word": "hunt down",
+        "meaning": "to try to find every member of a group"
+    },
+    {
+        "word": "keep down",
+        "meaning": "to make a noise less loud"
+    },
+    {
+        "word": "listen in",
+        "meaning": "to listen to a radio programme"
+    },
+    {
+        "word": "look over",
+        "meaning": "to examine something, usually quickly"
+    },
+    {
+        "word": "pencil in",
+        "meaning": "to arrange for something to happen or for someone to do something, knowing that it may have to be changed later"
+    },
+    {
+        "word": "print out",
+        "meaning": "to produce a copy of a computer document from a printer"
+    },
+    {
+        "word": "pull down",
+        "meaning": "to earn a particular amount of money"
+    },
+    {
+        "word": "put about",
+        "meaning": "to have sex with a lot of different people"
+    },
+    {
+        "word": "put aside",
+        "meaning": "to keep something so that it can be used or taken away later"
+    },
+    {
+        "word": "put forth",
+        "meaning": "to state or offer an idea, opinion, plan etc"
+    },
+    {
+        "word": "read into",
+        "meaning": "to find an extra meaning in someone’s words or actions that is not obvious or does not exist"
+    },
+    {
+        "word": "round off",
+        "meaning": "to end something in a satisfactory way"
+    },
+    {
+        "word": "run after",
+        "meaning": "to chase someone or something"
+    },
+    {
+        "word": "run along",
+        "meaning": "used for telling children to go away"
+    },
+    {
+        "word": "see about",
+        "meaning": "to deal with or organize something"
+    },
+    {
+        "word": "shake off",
+        "meaning": "to make something less strong, powerful, or confident"
+    },
+    {
+        "word": "shrug off",
+        "meaning": "to deal with something easily and successfully"
+    },
+    {
+        "word": "speak out",
+        "meaning": "to state your opinion firmly and publicly about something, especially in order to protest against or defend something"
+    },
+    {
+        "word": "spell out",
+        "meaning": "to say or write the letters of a word in the correct order"
+    },
+    {
+        "word": "stamp out",
+        "meaning": "to make a fire stop burning by putting your feet down hard on it"
+    },
+    {
+        "word": "start off",
+        "meaning": "to make something begin"
+    },
+    {
+        "word": "start out",
+        "meaning": "to begin a journey"
+    },
+    {
+        "word": "step down",
+        "meaning": "same as step"
+    },
+    {
+        "word": "stick out",
+        "meaning": "to be very obvious or noticeable"
+    },
+    {
+        "word": "switch on",
+        "meaning": "if you switch on something such as a light or a machine, or if it switches on, you make it start working"
+    },
+    {
+        "word": "take back",
+        "meaning": "to remind someone of something in the past"
+    },
+    {
+        "word": "take down",
+        "meaning": "to write down information or a statement"
+    },
+    {
+        "word": "tear down",
+        "meaning": "to destroy or remove a structure or part of a structure"
+    },
+    {
+        "word": "tease out",
+        "meaning": "to succeed in discovering something difficult, complicated, or secret"
+    },
+    {
+        "word": "think out",
+        "meaning": "to consider all the important facts in a situation before deciding or doing something"
+    },
+    {
+        "word": "throw off",
+        "meaning": "to quickly remove a piece of clothing"
+    },
+    {
+        "word": "tone down",
+        "meaning": "to make something less severe, shocking, or offensive"
+    },
+    {
+        "word": "trade off",
+        "meaning": "to accept a disadvantage so that you can have a benefit"
+    },
+    {
+        "word": "turn over",
+        "meaning": "to enter a place illegally and steal things from it"
+    },
+    {
+        "word": "walk into",
+        "meaning": "to find a job easily"
+    },
+    {
+        "word": "watch out",
+        "meaning": "to be careful"
+    },
+    {
+        "word": "wind down",
+        "meaning": "to end, or to finish something gradually"
+    },
+    {
+        "word": "work over",
+        "meaning": "to injure someone severely by hitting them"
+    },
+    {
+        "word": "write off",
+        "meaning": "to write to an organization asking for something"
+    },
+    {
+        "word": "write out",
+        "meaning": "to write something again, usually in a more complete form"
+    },
+    {
+        "word": "branch out",
+        "meaning": "to start doing something new or different"
+    },
+    {
+        "word": "break into",
+        "meaning": "to start doing something"
+    },
+    {
+        "word": "bring down",
+        "meaning": "to cause a government or politician to lose power"
+    },
+    {
+        "word": "carry over",
+        "meaning": "to take something that you earn or are given in one year or period of time into the next one"
+    },
+    {
+        "word": "clear away",
+        "meaning": "to remove something that you have finished using or no longer want in order to make a place tidy"
+    },
+    {
+        "word": "climb down",
+        "meaning": "to admit that you were wrong, especially after expressing an opinion or argument very firmly"
+    },
+    {
+        "word": "close down",
+        "meaning": "to stop broadcasting at the end of a day’s television or radio programmes"
+    },
+    {
+        "word": "come along",
+        "meaning": "to go somewhere with someone"
+    },
+    {
+        "word": "come round",
+        "meaning": "if a regular event comes round, it happens again"
+    },
+    {
+        "word": "conjure up",
+        "meaning": "to make something appear using magic powers"
+    },
+    {
+        "word": "count down",
+        "meaning": "to wait for something to happen, usually noticing every day or moment that passes until it happens"
+    },
+    {
+        "word": "crack down",
+        "meaning": "to start dealing with someone or something much more strictly"
+    },
+    {
+        "word": "fall apart",
+        "meaning": "to break because of being old or badly made"
+    },
+    {
+        "word": "fight back",
+        "meaning": "to hit or kick someone who is attacking you"
+    },
+    {
+        "word": "filter out",
+        "meaning": "to remove things from a group"
+    },
+    {
+        "word": "give over!",
+        "meaning": "to stop doing something"
+    },
+    {
+        "word": "gloss over",
+        "meaning": "to ignore or avoid unpleasant facts"
+    },
+    {
+        "word": "go without",
+        "meaning": "to suffer extreme poverty or deprivation"
+    },
+    {
+        "word": "knock down",
+        "meaning": "to reduce a price or amount"
+    },
+    {
+        "word": "measure up",
+        "meaning": "to be good enough"
+    },
+    {
+        "word": "play along",
+        "meaning": "to pretend to agree with someone or something, especially in order to get what you want or avoid an argument"
+    },
+    {
+        "word": "put across",
+        "meaning": "to explain an idea, belief etc in a way that is easy to understand"
+    },
+    {
+        "word": "rise above",
+        "meaning": "to be better than other things of the same type"
+    },
+    {
+        "word": "shoot down",
+        "meaning": "to kill someone with a gun"
+    },
+    {
+        "word": "sleep with",
+        "meaning": "to have sex with someone, especially someone who you are not married to"
+    },
+    {
+        "word": "soldier on",
+        "meaning": "to continue to do something even though it is difficult or unpleasant"
+    },
+    {
+        "word": "stand down",
+        "meaning": "to leave a job or position, especially an important one"
+    },
+    {
+        "word": "stick with",
+        "meaning": "to continue to do or use something, and not change it"
+    },
+    {
+        "word": "strike out",
+        "meaning": "to stop the continuation of a court case"
+    },
+    {
+        "word": "switch off",
+        "meaning": "to stop listening to someone, or to stop thinking about something"
+    },
+    {
+        "word": "think over",
+        "meaning": "to consider a problem or decision carefully"
+    },
+    {
+        "word": "track down",
+        "meaning": "to find someone or something after a long search"
+    },
+    {
+        "word": "water down",
+        "meaning": "to add water to a drink or liquid in order to make it less strong"
+    },
+    {
+        "word": "while away",
+        "meaning": "to spend time in a relaxed way when you have nothing else to do"
+    },
+    {
+        "word": "answer back",
+        "meaning": "to reply rudely to someone who has more authority than you"
+    },
+    {
+        "word": "bounce back",
+        "meaning": "if a market or price bounces back, it rises again after falling"
+    },
+    {
+        "word": "go together",
+        "meaning": "if two or more things go together, they frequently exist together"
+    },
+    {
+        "word": "see through",
+        "meaning": "to recognize that something is not true and not be tricked by it"
+    },
+    {
+        "word": "shop around",
+        "meaning": "to go to several shops before you decide what particular thing to buy"
+    },
+    {
+        "word": "smooth over",
+        "meaning": "to make a problem seem less serious"
+    },
+    {
+        "word": "strike down",
+        "meaning": "to hit someone with enough force to make them fall down"
+    },
+    {
+        "word": "explain away",
+        "meaning": "to tell someone about something in a way that makes them think it is unimportant, so that they do not ask questions about it"
+    },
+    {
+        "word": "fall through",
+        "meaning": "if something such as a deal, plan, or arrangement falls through, it fails to happen"
+    },
+    {
+        "word": "get together",
+        "meaning": "to obtain an amount of money that you need"
+    },
+    {
+        "word": "look through",
+        "meaning": "to search for something among a lot of other things"
+    },
+    {
+        "word": "talk through",
+        "meaning": "to discuss a plan or a situation in a detailed way"
+    },
+    {
+        "word": "trickle down",
+        "meaning": "to have an effect gradually or after a long time"
+    },
+    {
+        "word": "turn against",
+        "meaning": "to make someone stop liking or supporting someone or something"
+    },
+    {
+        "word": "bring forward",
+        "meaning": "to change the date or time of an event so that it happens earlier"
+    },
+    {
+        "word": "carry through",
+        "meaning": "to complete something that was planned, often despite difficulties or opposition"
+    },
+    {
+        "word": "count against",
+        "meaning": "to be a disadvantage in a particular situation"
+    },
+    {
+        "word": "hang together",
+        "meaning": "if something hangs together, the different parts of it combine well so that it seems well planned and organized"
+    },
+    {
+        "word": "hold together",
+        "meaning": "to remain in one piece and not break apart, or to make something do this"
+    },
+    {
+        "word": "pull together",
+        "meaning": "to combine different things so that they form a single unit"
+    },
+    {
+        "word": "stick together",
+        "meaning": "if people stick together, they remain close together and support one another"
+    },
+    {
+        "word": "straighten out",
+        "meaning": "same as straighten"
+    },
+    {
+        "word": "do up",
+        "meaning": "to fasten something"
+    },
+    {
+        "word": "bid up",
+        "meaning": "to offer money for something in order to increase its price, and not because you want to buy it"
+    },
+    {
+        "word": "fix up",
+        "meaning": "to arrange for something to happen"
+    },
+    {
+        "word": "fly by",
+        "meaning": "to travel by plane"
+    },
+    {
+        "word": "gum up",
+        "meaning": "to stop a process from working smoothly"
+    },
+    {
+        "word": "lap up",
+        "meaning": "to enjoy something and be keen to get more of it"
+    },
+    {
+        "word": "lay up",
+        "meaning": "to make someone stay in bed as a result of being ill or injured"
+    },
+    {
+        "word": "man up",
+        "meaning": "to start being brave and dealing with a difficult situation"
+    },
+    {
+        "word": "mug up",
+        "meaning": "to quickly learn something or check that you know it, for example before an examination"
+    },
+    {
+        "word": "opt in",
+        "meaning": "to decide that you want to do something or be involved in something"
+    },
+    {
+        "word": "pin up",
+        "meaning": "to fix a picture to a wall"
+    },
+    {
+        "word": "rig up",
+        "meaning": "to make something quickly out of whatever you can find"
+    },
+    {
+        "word": "rub in",
+        "meaning": "used to remind someone of something stupid or bad that they did"
+    },
+    {
+        "word": "sew up",
+        "meaning": "to repair something such as a hole in a piece of cloth by sewing it"
+    },
+    {
+        "word": "tip up",
+        "meaning": "to turn a container upside down so that the things inside it come out"
+    },
+    {
+        "word": "bear up",
+        "meaning": "to behave in a brave way in a very sad or difficult situation"
+    },
+    {
+        "word": "belt up",
+        "meaning": "to put on a seat belt in a car"
+    },
+    {
+        "word": "boil up",
+        "meaning": "if a situation or feeling boils up, people start to feel angry"
+    },
+    {
+        "word": "bow out",
+        "meaning": "to give up a job or position, especially when you have had it for a long time"
+    },
+    {
+        "word": "brew up",
+        "meaning": "to make a drink of tea"
+    },
+    {
+        "word": "buck up",
+        "meaning": "used for telling someone to try harder"
+    },
+    {
+        "word": "bulk up",
+        "meaning": "to become bigger and heavier"
+    },
+    {
+        "word": "bump up",
+        "meaning": "to increase something"
+    },
+    {
+        "word": "bust up",
+        "meaning": "to have an argument and end a relationship"
+    },
+    {
+        "word": "chew up",
+        "meaning": "if something gets chewed up, it becomes torn apart and destroyed"
+    },
+    {
+        "word": "clam up",
+        "meaning": "to suddenly stop talking or explaining something, because you are embarrassed, unhappy, or want to keep a secret"
+    },
+    {
+        "word": "cook up",
+        "meaning": "to invent a story, excuse, or plan"
+    },
+    {
+        "word": "cop out",
+        "meaning": "to avoid doing something that you should do because it is difficult"
+    },
+    {
+        "word": "cry off",
+        "meaning": "to decide not to do something that you had promised or agreed to do"
+    },
+    {
+        "word": "dish up",
+        "meaning": "to put food into dishes so that it is ready to be eaten"
+    },
+    {
+        "word": "do over",
+        "meaning": "to attack someone and hit and kick them"
+    },
+    {
+        "word": "drag in",
+        "meaning": "to make someone become involved in a situation when they do not want to"
+    },
+    {
+        "word": "drag up",
+        "meaning": "to start talking about something when it is not necessary, usually something unpleasant that happened in the past and that other people want to forget"
+    },
+    {
+        "word": "drum up",
+        "meaning": "to try to make people support you or buy something from you"
+    },
+    {
+        "word": "fit out",
+        "meaning": "to measure part of someone’s body in order to give them the right shoes or clothing"
+    },
+    {
+        "word": "flag up",
+        "meaning": "to mention something so that people know about it"
+    },
+    {
+        "word": "fob off",
+        "meaning": "to give someone something that is not what they want or need"
+    },
+    {
+        "word": "fold up",
+        "meaning": "to make something smaller by bending it over on itself more than once"
+    },
+    {
+        "word": "foul up",
+        "meaning": "to do something wrong, or to spoil something, especially by making mistakes"
+    },
+    {
+        "word": "gun for",
+        "meaning": "to try to hurt someone or damage their reputation"
+    },
+    {
+        "word": "hit out",
+        "meaning": "to criticize someone or something very strongly"
+    },
+    {
+        "word": "hole up",
+        "meaning": "if you hole up or are holed up somewhere, you stay there, especially because you are hiding"
+    },
+    {
+        "word": "hush up",
+        "meaning": "used for telling someone to be quiet"
+    },
+    {
+        "word": "jack in",
+        "meaning": "to stop doing something, especially a job or a course of study"
+    },
+    {
+        "word": "jack up",
+        "meaning": "to refuse to obey instructions"
+    },
+    {
+        "word": "jazz up",
+        "meaning": "to make something more lively, exciting, or interesting"
+    },
+    {
+        "word": "kick up",
+        "meaning": "to make something go up into the air"
+    },
+    {
+        "word": "land up",
+        "meaning": "to finally arrive at a place or situation after a series of events"
+    },
+    {
+        "word": "log off",
+        "meaning": "to finish your working day"
+    },
+    {
+        "word": "log out",
+        "meaning": "to finish your working day"
+    },
+    {
+        "word": "mark up",
+        "meaning": "to increase the price of something, especially something that you bought for a lower price"
+    },
+    {
+        "word": "mock up",
+        "meaning": "to make a simple copy of something that you will later make or do properly, in order to test it or show people what it will be like"
+    },
+    {
+        "word": "nail up",
+        "meaning": "to fix something to a wall with a nail or nails"
+    },
+    {
+        "word": "nod off",
+        "meaning": "to go to sleep, especially when you do not intend to"
+    },
+    {
+        "word": "pan out",
+        "meaning": "if a situation pans out in a particular way, it develops in that way"
+    },
+    {
+        "word": "peg out",
+        "meaning": "to fasten wet clothes on a line to dry"
+    },
+    {
+        "word": "perk up",
+        "meaning": "to become more interesting or exciting, or to make something do this"
+    },
+    {
+        "word": "pick at",
+        "meaning": "to eat only small amounts of a meal because you do not feel hungry"
+    },
+    {
+        "word": "pig out",
+        "meaning": "to eat an extremely large amount of food"
+    },
+    {
+        "word": "pipe up",
+        "meaning": "to enter a conversation, for example by interrupting or speaking for the first time"
+    },
+    {
+        "word": "rack up",
+        "meaning": "to get a large amount of sales or profits"
+    },
+    {
+        "word": "rake in",
+        "meaning": "to earn a lot of money"
+    },
+    {
+        "word": "rake up",
+        "meaning": "to mention something unpleasant that happened in the past and that someone else does not want to talk about"
+    },
+    {
+        "word": "rub out",
+        "meaning": "to kill someone"
+    },
+    {
+        "word": "see off",
+        "meaning": "to make someone go away or leave a place, especially by chasing them"
+    },
+    {
+        "word": "slip up",
+        "meaning": "to make a careless mistake"
+    },
+    {
+        "word": "snap up",
+        "meaning": "to immediately take advantage of an opportunity"
+    },
+    {
+        "word": "tee off",
+        "meaning": "to start a new activity"
+    },
+    {
+        "word": "tip off",
+        "meaning": "to give someone a warning or secret information about something"
+    },
+    {
+        "word": "top off",
+        "meaning": "to finish something with a final activity or detail"
+    },
+    {
+        "word": "tuck in",
+        "meaning": "to eat food with enthusiasm because you like it or because you are hungry"
+    },
+    {
+        "word": "tune up",
+        "meaning": "to prepare for an event or a situation"
+    },
+    {
+        "word": "wait up",
+        "meaning": "to not go to sleep until someone comes home"
+    },
+    {
+        "word": "wise up",
+        "meaning": "to learn or understand the truth about something, or to tell someone the truth about something"
+    },
+    {
+        "word": "bawl out",
+        "meaning": "to speak angrily to someone because of something they have done wrong"
+    },
+    {
+        "word": "belt out",
+        "meaning": "to shout or sing something loudly, or to play something loudly on a musical instrument"
+    },
+    {
+        "word": "bomb out",
+        "meaning": "to be forced to leave a place because of being attacked by bombs"
+    },
+    {
+        "word": "brush up",
+        "meaning": "to practise and improve your skills or knowledge of something"
+    },
+    {
+        "word": "bulk out",
+        "meaning": "to add something to something else to make it bigger or more satisfactory"
+    },
+    {
+        "word": "burn off",
+        "meaning": "to remove something by burning it"
+    },
+    {
+        "word": "butt out",
+        "meaning": "used for telling someone rudely to go away or not get involved in something"
+    },
+    {
+        "word": "buzz off",
+        "meaning": "used for telling someone in a rude way to go away"
+    },
+    {
+        "word": "carve up",
+        "meaning": "to attack and cut someone with a knife"
+    },
+    {
+        "word": "chalk up",
+        "meaning": "to achieve a particular level or number"
+    },
+    {
+        "word": "chime in",
+        "meaning": "to join a conversation by saying something"
+    },
+    {
+        "word": "chuck in",
+        "meaning": "to leave or give up something"
+    },
+    {
+        "word": "clock up",
+        "meaning": "to reach a particular number or amount"
+    },
+    {
+        "word": "conk out",
+        "meaning": "to suddenly stop working"
+    },
+    {
+        "word": "cough up",
+        "meaning": "to give money to pay for something, especially when you would prefer not to"
+    },
+    {
+        "word": "crack on",
+        "meaning": "to continue doing something as quickly as possible"
+    },
+    {
+        "word": "crack up",
+        "meaning": "to become mentally ill"
+    },
+    {
+        "word": "crank up",
+        "meaning": "to increase the level or degree of something"
+    },
+    {
+        "word": "dine out",
+        "meaning": "to eat dinner in a restaurant instead of at home"
+    },
+    {
+        "word": "dish out",
+        "meaning": "to give things to a number of people"
+    },
+    {
+        "word": "draw off",
+        "meaning": "to take some of the liquid out of something"
+    },
+    {
+        "word": "farm out",
+        "meaning": "to send someone to be looked after by someone else"
+    },
+    {
+        "word": "fetch up",
+        "meaning": "to arrive at a place by accident or without intending to go there"
+    },
+    {
+        "word": "grass up",
+        "meaning": "to tell someone in authority, especially the police, about something bad that someone else has done"
+    },
+    {
+        "word": "grind on",
+        "meaning": "if something boring or unpleasant grinds on, it continues happening for a long period of time"
+    },
+    {
+        "word": "heave to",
+        "meaning": "if a ship heaves to, it stops moving. The past tense and past participle is hove to."
+    },
+    {
+        "word": "jerk off",
+        "meaning": "to masturbate"
+    },
+    {
+        "word": "lay into",
+        "meaning": "to attack someone physically or with cruel words because you are angry with them"
+    },
+    {
+        "word": "lead off",
+        "meaning": "to begin something by doing or saying something"
+    },
+    {
+        "word": "lock out",
+        "meaning": "to prevent someone from coming into a room or building by locking the door"
+    },
+    {
+        "word": "luck out",
+        "meaning": "to be lucky"
+    },
+    {
+        "word": "make off",
+        "meaning": "to leave quickly, especially after doing something wrong"
+    },
+    {
+        "word": "mow down",
+        "meaning": "to kill a lot of people quickly and violently, especially by shooting them"
+    },
+    {
+        "word": "palm off",
+        "meaning": "to get rid of someone or something that you do not want, by persuading someone else to take or buy them from you"
+    },
+    {
+        "word": "power up",
+        "meaning": "to switch a computer on in the correct way"
+    },
+    {
+        "word": "push off",
+        "meaning": "to leave a place"
+    },
+    {
+        "word": "rake off",
+        "meaning": "to take a part of the profits from something, especially in an unfair or dishonest way"
+    },
+    {
+        "word": "reel off",
+        "meaning": "to say a list of things quickly and without much effort"
+    },
+    {
+        "word": "ring off",
+        "meaning": "to finish a phone call"
+    },
+    {
+        "word": "rough up",
+        "meaning": "to physically attack someone"
+    },
+    {
+        "word": "shack up",
+        "meaning": "to live or stay in a place for a short time"
+    },
+    {
+        "word": "shape up",
+        "meaning": "to improve your behaviour or your work"
+    },
+    {
+        "word": "ship out",
+        "meaning": "to leave a place"
+    },
+    {
+        "word": "sing out",
+        "meaning": "to call out loudly"
+    },
+    {
+        "word": "smash up",
+        "meaning": "to destroy something completely by violently breaking it into many pieces"
+    },
+    {
+        "word": "snarl up",
+        "meaning": "same as snarl"
+    },
+    {
+        "word": "spin out",
+        "meaning": "to make something last for a long time, usually longer than is good or necessary"
+    },
+    {
+        "word": "stack up",
+        "meaning": "to fly above or below other planes while waiting to land"
+    },
+    {
+        "word": "steam up",
+        "meaning": "to cover something with steam, or to become covered with steam"
+    },
+    {
+        "word": "stick by",
+        "meaning": "to continue to support someone who is in a difficult situation"
+    },
+    {
+        "word": "stump up",
+        "meaning": "to give money, often without wanting to give it"
+    },
+    {
+        "word": "tail off",
+        "meaning": "to become quieter, weaker, or smaller"
+    },
+    {
+        "word": "tell off",
+        "meaning": "to criticize someone angrily for doing something wrong"
+    },
+    {
+        "word": "tick off",
+        "meaning": "to annoy someone"
+    },
+    {
+        "word": "trade up",
+        "meaning": "to sell something in order to buy something of the same kind that is more expensive"
+    },
+    {
+        "word": "tune out",
+        "meaning": "to stop paying attention"
+    },
+    {
+        "word": "turf out",
+        "meaning": "to force someone to leave a place or an organization"
+    },
+    {
+        "word": "wait up!",
+        "meaning": "to not go to sleep until someone comes home"
+    },
+    {
+        "word": "ask after",
+        "meaning": "to ask for news about someone"
+    },
+    {
+        "word": "bear down",
+        "meaning": "to push or press downwards"
+    },
+    {
+        "word": "bind over",
+        "meaning": "to allow someone bail when they are waiting to appear in court"
+    },
+    {
+        "word": "bite back",
+        "meaning": "to stop yourself from saying what you think"
+    },
+    {
+        "word": "blow away",
+        "meaning": "to kill someone by shooting them"
+    },
+    {
+        "word": "blow over",
+        "meaning": "if a storm blows over, it ends"
+    },
+    {
+        "word": "boil away",
+        "meaning": "if a liquid boils away, or if you boil it away, it disappears and turns to gas after reaching a very high temperature"
+    },
+    {
+        "word": "boil over",
+        "meaning": "if a situation or feeling boils over, people cannot control their anger and start to fight or argue"
+    },
+    {
+        "word": "bottle up",
+        "meaning": "to stop yourself from showing negative emotions like anger and disappointment, especially over a long period, so that these feelings develop in a harmful way"
+    },
+    {
+        "word": "bowl over",
+        "meaning": "to knock someone over, because you are hurrying somewhere"
+    },
+    {
+        "word": "bring off",
+        "meaning": "to succeed in doing something difficult"
+    },
+    {
+        "word": "brush off",
+        "meaning": "to refuse to listen to someone, or to accept that something might be true or important"
+    },
+    {
+        "word": "butter up",
+        "meaning": "to be nice to someone so that they will help or support you"
+    },
+    {
+        "word": "button up",
+        "meaning": "to complete the final details of something"
+    },
+    {
+        "word": "buzz off!",
+        "meaning": "used for telling someone in a rude way to go away"
+    },
+    {
+        "word": "catch out",
+        "meaning": "to put someone in an unpleasant or difficult situation that they are not prepared for"
+    },
+    {
+        "word": "change up",
+        "meaning": "to start driving in a higher gear"
+    },
+    {
+        "word": "check off",
+        "meaning": "to tick off something"
+    },
+    {
+        "word": "chew over",
+        "meaning": "to think about something carefully or discuss it carefully with other people before making a decision about it"
+    },
+    {
+        "word": "chuck out",
+        "meaning": "to force someone to leave a place or a job, usually because they have done something wrong"
+    },
+    {
+        "word": "churn out",
+        "meaning": "to produce something in large quantities quickly and often carelessly"
+    },
+    {
+        "word": "claw back",
+        "meaning": "to get something again that you had lost such as power, especially gradually and with difficulty"
+    },
+    {
+        "word": "clear off",
+        "meaning": "to leave a place quickly"
+    },
+    {
+        "word": "count out",
+        "meaning": "to count things one by one"
+    },
+    {
+        "word": "crash out",
+        "meaning": "to suddenly start sleeping, usually when you are very tired"
+    },
+    {
+        "word": "double up",
+        "meaning": "if two people double up, they share something, especially a bedroom"
+    },
+    {
+        "word": "drag down",
+        "meaning": "to make someone feel unhappy or less hopeful"
+    },
+    {
+        "word": "dredge up",
+        "meaning": "to manage to remember something that you learned or knew long ago"
+    },
+    {
+        "word": "dumb down",
+        "meaning": "to make something simpler and easier to understand in a way that reduces its quality"
+    },
+    {
+        "word": "freeze up",
+        "meaning": "to be unable to think of anything to say, especially because you are nervous"
+    },
+    {
+        "word": "gross out",
+        "meaning": "if something grosses you out, it is so unpleasant that it makes you feel ill"
+    },
+    {
+        "word": "hang back",
+        "meaning": "to not do something immediately because you are not confident or you do not feel certain about it"
+    },
+    {
+        "word": "howl down",
+        "meaning": "to stop someone from speaking or being heard by shouting loudly and angrily"
+    },
+    {
+        "word": "keel over",
+        "meaning": "to suddenly stop working correctly"
+    },
+    {
+        "word": "keep back",
+        "meaning": "to prevent someone from making progress"
+    },
+    {
+        "word": "knock off",
+        "meaning": "to stop working"
+    },
+    {
+        "word": "ladle out",
+        "meaning": "to give large amounts of money, goods, or information to someone without thinking carefully what it will be used for"
+    },
+    {
+        "word": "laugh off",
+        "meaning": "to joke about something in order to show that you think it is not important or serious"
+    },
+    {
+        "word": "live down",
+        "meaning": "to make people forget about something embarrassing or silly that you have done"
+    },
+    {
+        "word": "make over",
+        "meaning": "to officially make someone else the owner of something"
+    },
+    {
+        "word": "marry off",
+        "meaning": "to find a husband or wife for someone"
+    },
+    {
+        "word": "muddle up",
+        "meaning": "same as muddle"
+    },
+    {
+        "word": "nail down",
+        "meaning": "to definitely decide, arrange, or complete something"
+    },
+    {
+        "word": "pipe down",
+        "meaning": "used for telling someone to stop talking or to make less noise"
+    },
+    {
+        "word": "plant out",
+        "meaning": "to take a young plant that is growing in a container and put it in the ground to grow"
+    },
+    {
+        "word": "polish up",
+        "meaning": "same as polish"
+    },
+    {
+        "word": "pull over",
+        "meaning": "if a vehicle or driver pulls over, they stop by the side of the road"
+    },
+    {
+        "word": "rustle up",
+        "meaning": "to quickly produce something such as a meal using whatever is available"
+    },
+    {
+        "word": "salt away",
+        "meaning": "to save money for the future, often hiding it illegally"
+    },
+    {
+        "word": "scrape up",
+        "meaning": "to succeed in getting enough of something, especially money, by making a lot of effort"
+    },
+    {
+        "word": "send down",
+        "meaning": "to send someone to prison"
+    }
+]
