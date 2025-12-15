@@ -31,6 +31,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'ielts-listening-2', // Test 2 (Gym)
     'ielts-listening-3', // Test 3 (Museum)
     'ielts-listening-4', // Test 4 (Zoo)
+    'ielts-listening-5',
+    'ielts-listening-7',
     // Diğerleri
     'ielts-writing',
     'ielts-vocab',
