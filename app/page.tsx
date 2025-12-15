@@ -56,7 +56,15 @@ const Calculator = (props: React.SVGProps<SVGSVGElement>) => (
 const ArrowUp = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="m18 15-6-6-6 6" transform="rotate(180 12 12)" /></svg>
 );
-
+const FlashcardIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M2 9a3 3 0 0 1 0-6h20a3 3 0 0 1 0 6v11a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V9z"/><path d="M9 3v2m6-2v2"/></svg>
+);
+const TimerIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+);
+const GamepadIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 12h4m-2-2v4m9-2h2m-1-1h.01m-1 3h.01"/></svg>
+);
 // --- SINAV AYARLARI ---
 const examConfig = [
   {
@@ -285,6 +293,58 @@ export default function HomePage() {
               </span>
             </div>
           </div>
+          {/* --- GAME MODES SECTION (YENİ EKLENECEK KISIM) --- */}
+        <section className="grid md:grid-cols-2 gap-6 mb-8">
+          
+          {/* 1. SPEEDRUN MODE CARD */}
+          <Link href="/speedrun" className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-violet-600 to-indigo-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl hover:shadow-indigo-500/30">
+            <div className="absolute top-0 right-0 -mt-4 -mr-4 h-32 w-32 rounded-full bg-white/10 blur-2xl transition-all group-hover:bg-white/20"></div>
+            
+            <div className="relative z-10 flex flex-col justify-between h-full">
+              <div>
+                <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-indigo-100 backdrop-blur-sm">
+                  <TimerIcon className="h-4 w-4" /> Challenge Mode
+                </div>
+                <h3 className="mb-2 text-3xl font-black tracking-tight">SpeedRun</h3>
+                <p className="text-indigo-100 opacity-90">
+                  60 saniyede kaç IELTS kelimesi bilebilirsin? Zamana karşı yarış, rekorunu kır!
+                </p>
+              </div>
+              
+              <div className="mt-8 flex items-center gap-3">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-indigo-600 shadow-lg transition-transform group-hover:scale-110">
+                  <GamepadIcon className="h-6 w-6" />
+                </div>
+                <span className="font-bold">Oyuna Başla &rarr;</span>
+              </div>
+            </div>
+          </Link>
+
+          {/* 2. FLASHCARDS MODE CARD */}
+          <Link href="/flashcards" className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl hover:shadow-teal-500/30">
+            <div className="absolute top-0 right-0 -mt-4 -mr-4 h-32 w-32 rounded-full bg-white/10 blur-2xl transition-all group-hover:bg-white/20"></div>
+            
+            <div className="relative z-10 flex flex-col justify-between h-full">
+              <div>
+                <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-teal-100 backdrop-blur-sm">
+                  <FlashcardIcon className="h-4 w-4" /> Study Mode
+                </div>
+                <h3 className="mb-2 text-3xl font-black tracking-tight">Flashcards</h3>
+                <p className="text-teal-50 opacity-90">
+                  1000+ IELTS Kelimesi ve Phrasal Verb. Kartları çevir, öğren ve hafızana kazı.
+                </p>
+              </div>
+              
+              <div className="mt-8 flex items-center gap-3">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-emerald-600 shadow-lg transition-transform group-hover:scale-110">
+                  <Book className="h-6 w-6" />
+                </div>
+                <span className="font-bold">Çalışmaya Başla &rarr;</span>
+              </div>
+            </div>
+          </Link>
+
+        </section>
 
           {/* IELTS Modules Grid */}
           <div className="p-3 md:p-6 bg-slate-50/50 grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-3 md:gap-4">
