@@ -1,0 +1,60 @@
+[
+  {
+    "passageId": 1,
+    "title": "IELTS Listening Part 3: Research Discussion",
+    "audio": "/audio/ielts-research.mp3",
+    "text": "Listen to the student and his tutor discussing the dissertation.",
+    "questions": [
+      {
+        "id": "il-p7-q1",
+        "prompt": "Why did James decide against the topic 'History of Transportation'?",
+        "A": "It was too boring",
+        "B": "It was too broad",
+        "C": "There was no data",
+        "D": "The tutor forbade it",
+        "correct": "B",
+        "explanation": "James says: 'I realized it's **too broad**'. Dr. Miller agrees."
+      },
+      {
+        "id": "il-p7-q2",
+        "prompt": "Which topic do they finally agree on?",
+        "A": "Electric cars",
+        "B": "The steam engine",
+        "C": "Bicycles",
+        "D": "Rural communities",
+        "correct": "C",
+        "explanation": "Dr. Miller suggests steam engines, but James says 'I'd prefer to look at **bicycles**' and the tutor agrees: 'Yes, let’s go with bicycles'."
+      },
+      {
+        "id": "il-p7-q3",
+        "prompt": "What will be James's main source of research?",
+        "A": "Personal interviews",
+        "B": "Online blogs",
+        "C": "Newspaper archives",
+        "D": "Textbooks",
+        "correct": "C",
+        "explanation": "James states: 'I was planning to rely mostly on **newspaper archives**'."
+      },
+      {
+        "id": "il-p7-q4",
+        "prompt": "What is the new deadline for the assignment?",
+        "A": "The 12th",
+        "B": "The 15th",
+        "C": "The 18th",
+        "D": "The 21st",
+        "correct": "C",
+        "explanation": "Dr. Miller says: 'I can grant you an extra three days. So you can hand it in on the **18th**'."
+      },
+      {
+        "id": "il-p7-q5",
+        "prompt": "What specific formatting requirement does the tutor mention?",
+        "A": "Color printing",
+        "B": "Font size",
+        "C": "Cover page",
+        "D": "Bibliography style",
+        "correct": "D",
+        "explanation": "Dr. Miller warns: 'make sure your **bibliography** follows the new university style guide'."
+      }
+    ]
+  }
+]
