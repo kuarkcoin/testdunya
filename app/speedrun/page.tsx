@@ -1,8 +1,10 @@
 'use client';
 
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+// Konfeti kütüphanesi
+import ReactConfetti from 'react-confetti';
 
 // --- TİP TANIMLAMALARI ---
 type VocabItem = {
@@ -12,7 +14,33 @@ type VocabItem = {
 
 type GameState = 'loading' | 'idle' | 'playing' | 'finished';
 
-// --- YARDIMCI FONKSİYONLAR ---
+// --- YARDIMCI: PENCERE BOYUTU (Konfeti İçin) ---
+function useWindowSize() {
+  const [windowSize, setWindowSize] = useState({
+    width: 0,
+    height: 0,
+  });
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
+    
+    // Sadece client tarafında çalıştır
+    if (typeof window !== 'undefined') {
+      handleResize();
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }
+  }, []);
+
+  return windowSize;
+}
+
+// --- YARDIMCI: KARIŞTIRMA ---
 function shuffleArray<T>(array: T[]): T[] {
   const newArr = [...array];
   for (let i = newArr.length - 1; i > 0; i--) {
@@ -38,6 +66,7 @@ const RefreshIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 export default function SpeedRunPage() {
   const router = useRouter();
+  const { width, height } = useWindowSize(); // Ekran boyutunu al
   
   // State
   const [gameState, setGameState] = useState<GameState>('loading');
@@ -48,7 +77,21 @@ export default function SpeedRunPage() {
   const [score, setScore] = useState(0);
   const [highScore, setHighScore] = useState(0);
   const [timeLeft, setTimeLeft] = useState(60);
-  const [combo, setCombo] = useState(0); // Combo multiplier for fun
+  const [combo, setCombo] = useState(0); 
+  
+  // Konfeti State'i
+  const [showConfetti, setShowConfetti] = useState(false);
+
+  // --- SES FONKSİYONU ---
+  const playSound = (type: 'correct' | 'wrong' | 'finish') => {
+    try {
+      const audio = new Audio(`/sounds/${type}.mp3`);
+      audio.volume = 0.5; // Ses yüksekliği ayarı (0.0 - 1.0)
+      audio.play().catch((e) => console.log("Audio play prevented:", e));
+    } catch (error) {
+      console.error("Audio error:", error);
+    }
+  };
   
   // 1. Veriyi Çek (Mount anında)
   useEffect(() => {
@@ -70,7 +113,6 @@ export default function SpeedRunPage() {
     }
     fetchData();
 
-    // High Score'u oku
     const savedBest = localStorage.getItem('speedrun_highscore');
     if (savedBest) setHighScore(parseInt(savedBest, 10));
   }, []);
@@ -82,7 +124,7 @@ export default function SpeedRunPage() {
       timer = setInterval(() => {
         setTimeLeft((prev) => {
           if (prev <= 1) {
-            endGame();
+            endGame(); // Süre bittiğinde tetikle
             return 0;
           }
           return prev - 1;
@@ -96,9 +138,16 @@ export default function SpeedRunPage() {
   // Oyunu Bitir
   const endGame = () => {
     setGameState('finished');
+    playSound('finish'); // Bitiş sesi
+
+    // Eğer yeni rekor varsa Konfeti patlat
     if (score > highScore) {
       setHighScore(score);
       localStorage.setItem('speedrun_highscore', score.toString());
+      setShowConfetti(true);
+      
+      // 5 saniye sonra konfetiyi durdur (performans için)
+      setTimeout(() => setShowConfetti(false), 8000);
     }
   };
 
@@ -106,11 +155,9 @@ export default function SpeedRunPage() {
   const generateQuestion = useCallback(() => {
     if (dataset.length === 0) return;
 
-    // 1. Rastgele doğru kelime seç
     const correctIndex = Math.floor(Math.random() * dataset.length);
     const correctItem = dataset[correctIndex];
 
-    // 2. Rastgele 3 yanlış cevap seç (aynı olmamasına dikkat et)
     const distractors: string[] = [];
     while (distractors.length < 3) {
       const randIndex = Math.floor(Math.random() * dataset.length);
@@ -122,7 +169,6 @@ export default function SpeedRunPage() {
       }
     }
 
-    // 3. Şıkları karıştır
     const allOptions = shuffleArray([correctItem.meaning, ...distractors]);
 
     setCurrentQuestion(correctItem);
@@ -134,6 +180,7 @@ export default function SpeedRunPage() {
     setScore(0);
     setTimeLeft(60);
     setCombo(0);
+    setShowConfetti(false); // Yeni oyun başlayınca konfetiyi kapat
     setGameState('playing');
     generateQuestion();
   };
@@ -144,17 +191,16 @@ export default function SpeedRunPage() {
 
     if (selectedMeaning === currentQuestion.meaning) {
       // DOĞRU
-      const points = 10 + (combo * 2); // Combo bonus
+      playSound('correct'); // Tık sesi
+      const points = 10 + (combo * 2);
       setScore((prev) => prev + points);
       setCombo((prev) => prev + 1);
-      // Hızlıca yeni soru
       generateQuestion();
     } else {
       // YANLIŞ
-      setScore((prev) => Math.max(0, prev - 5)); // Eksi puan ama 0'ın altına düşmesin
-      setCombo(0); // Combo sıfırla
-      // İsteğe bağlı: Titreşim veya kırmızı efekt eklenebilir
-      // Yanlışta da yeni soruya geçsin mi? Evet, hız kesmemek için.
+      playSound('wrong'); // Hata sesi
+      setScore((prev) => Math.max(0, prev - 5));
+      setCombo(0);
       generateQuestion(); 
     }
   };
@@ -163,6 +209,16 @@ export default function SpeedRunPage() {
   return (
     <main className="min-h-screen bg-slate-900 text-white flex flex-col font-sans">
       
+      {/* KONFETİ: Sadece showConfetti true ise göster */}
+      {showConfetti && (
+        <ReactConfetti
+          width={width}
+          height={height}
+          recycle={false} // Sonsuza kadar yağmasın, bir kere patlasın
+          numberOfPieces={500}
+        />
+      )}
+
       {/* HEADER */}
       <header className="p-4 flex items-center justify-between border-b border-white/10 bg-slate-900/50 backdrop-blur-md sticky top-0 z-50">
         <Link href="/" className="flex items-center gap-2 text-indigo-300 hover:text-white transition-colors">
@@ -273,13 +329,18 @@ export default function SpeedRunPage() {
 
         {/* FINISHED STATE */}
         {gameState === 'finished' && (
-          <div className="text-center max-w-md w-full animate-in zoom-in duration-300">
+          <div className="text-center max-w-md w-full animate-in zoom-in duration-300 relative z-20">
             <div className="mb-6 inline-flex p-4 rounded-full bg-slate-800 border border-slate-700 shadow-xl">
               <TrophyIcon className="w-16 h-16 text-yellow-400" />
             </div>
 
             <h2 className="text-4xl font-black mb-2">Time's Up!</h2>
-            <p className="text-slate-400 mb-8">Great effort. Here is your result.</p>
+            
+            {showConfetti ? (
+               <p className="text-yellow-300 font-bold mb-8 animate-pulse text-lg">🎉 NEW HIGH SCORE! 🎉</p>
+            ) : (
+               <p className="text-slate-400 mb-8">Great effort. Here is your result.</p>
+            )}
 
             <div className="grid grid-cols-2 gap-4 mb-8">
               <div className="bg-slate-800 p-4 rounded-2xl border border-slate-700">
