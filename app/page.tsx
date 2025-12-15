@@ -293,7 +293,7 @@ export default function HomePage() {
               </span>
             </div>
           </div>
-          {/* --- GAME MODES SECTION (YENİ EKLENECEK KISIM) --- */}
+          {/* --- GAME MODES SECTION (ENGLISH) --- */}
         <section className="grid md:grid-cols-2 gap-6 mb-8">
           
           {/* 1. SPEEDRUN MODE CARD */}
@@ -307,7 +307,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="mb-2 text-3xl font-black tracking-tight">SpeedRun</h3>
                 <p className="text-indigo-100 opacity-90">
-                  60 saniyede kaç IELTS kelimesi bilebilirsin? Zamana karşı yarış, rekorunu kır!
+                  How many words can you match in 60 seconds? Race against time and break the record!
                 </p>
               </div>
               
@@ -315,7 +315,7 @@ export default function HomePage() {
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-indigo-600 shadow-lg transition-transform group-hover:scale-110">
                   <GamepadIcon className="h-6 w-6" />
                 </div>
-                <span className="font-bold">Oyuna Başla &rarr;</span>
+                <span className="font-bold">Start Game &rarr;</span>
               </div>
             </div>
           </Link>
@@ -331,7 +331,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="mb-2 text-3xl font-black tracking-tight">Flashcards</h3>
                 <p className="text-teal-50 opacity-90">
-                  1000+ IELTS Kelimesi ve Phrasal Verb. Kartları çevir, öğren ve hafızana kazı.
+                  1000+ IELTS Vocabulary and Phrasal Verbs. Flip the cards, learn, and memorize.
                 </p>
               </div>
               
@@ -339,7 +339,7 @@ export default function HomePage() {
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-emerald-600 shadow-lg transition-transform group-hover:scale-110">
                   <Book className="h-6 w-6" />
                 </div>
-                <span className="font-bold">Çalışmaya Başla &rarr;</span>
+                <span className="font-bold">Start Studying &rarr;</span>
               </div>
             </div>
           </Link>
