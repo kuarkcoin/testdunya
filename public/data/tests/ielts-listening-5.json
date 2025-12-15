@@ -1,0 +1,60 @@
+[
+  {
+    "passageId": 1,
+    "title": "IELTS Listening Part 3: Business Case Study",
+    "audio": "/audio/ielts-business.mp3",
+    "text": "Listen to two students discussing their business assignment.",
+    "questions": [
+      {
+        "id": "il-p5-q1",
+        "prompt": "Which company did the students decide to analyze?",
+        "A": "Tesla",
+        "B": "A local bakery",
+        "C": "Bean's Coffee",
+        "D": "Starbucks",
+        "correct": "C",
+        "explanation": "Maya rejects Tesla due to too much info. Alex suggests: 'Do you know **Bean's Coffee** on Main Street?' and Maya agrees."
+      },
+      {
+        "id": "il-p5-q2",
+        "prompt": "What was the main problem the company faced?",
+        "A": "Strong competition",
+        "B": "Bad location",
+        "C": "Low quality coffee",
+        "D": "Staff turnover",
+        "correct": "D",
+        "explanation": "Alex states: 'The issue was their **staff turnover**. They were losing employees every two months'."
+      },
+      {
+        "id": "il-p5-q3",
+        "prompt": "How will the students gather data?",
+        "A": "Online surveys",
+        "B": "Interviews with former staff",
+        "C": "Reading financial reports",
+        "D": "Customer observation",
+        "correct": "B",
+        "explanation": "Alex suggests: 'I think it would be better to conduct **interviews** with former employees'."
+      },
+      {
+        "id": "il-p5-q4",
+        "prompt": "Which part of the assignment will Alex write?",
+        "A": "The introduction",
+        "B": "Data analysis",
+        "C": "The recommendations",
+        "D": "The methodology",
+        "correct": "C",
+        "explanation": "Alex says: 'I'd prefer to write the **recommendations** section at the end'."
+      },
+      {
+        "id": "il-p5-q5",
+        "prompt": "When is their next meeting?",
+        "A": "Wednesday morning",
+        "B": "Wednesday afternoon",
+        "C": "Thursday morning",
+        "D": "Thursday afternoon",
+        "correct": "D",
+        "explanation": "Alex suggests: 'How about **Thursday afternoon**?' and Maya agrees."
+      }
+    ]
+  }
+]
