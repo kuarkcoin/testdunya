@@ -293,7 +293,50 @@ export default function HomePage() {
               </span>
             </div>
           </div>
-          {/* --- GAME MODES SECTION (ENGLISH) --- */}
+          
+          {/* IELTS Modules Grid */}
+          <div className="p-3 md:p-6 bg-slate-50/50 grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-3 md:gap-4">
+            {ieltsModules.map((module) => {
+              let linkHref = `/test/${module.id}`;
+              if (module.id === 'ielts-speaking') linkHref = '/ielts/speaking';
+              if (module.id === 'ielts-calculator') linkHref = '/ielts/calculator';
+              if (module.id === 'ielts-listening') linkHref = '/ielts/listening';
+              if (module.id === 'ielts-writing') linkHref = '/ielts/writing';
+
+              if (!module.active) {
+                return (
+                  <div
+                    key={module.id}
+                    className={`flex flex-col items-center justify-center p-3 md:p-5 rounded-xl border-2 ${module.bg} ${module.border} text-slate-400 cursor-not-allowed`}
+                    title="Yakında eklenecek"
+                    aria-disabled="true"
+                  >
+                    <div className="mb-3 p-3 rounded-full bg-white/60 shadow-sm ring-1 ring-black/5">
+                      <Lock className="w-7 h-7 opacity-70" />
+                    </div>
+                    <h3 className="font-bold text-base md:text-lg text-slate-700 text-center">{module.title}</h3>
+                    <p className="text-xs font-bold opacity-60 uppercase tracking-wide mt-1 text-center">Coming Soon</p>
+                  </div>
+                );
+              }
+
+              return (
+                <Link
+                  key={module.id}
+                  href={linkHref}
+                  className={`flex flex-col items-center justify-center p-3 md:p-5 rounded-xl border-2 transition-all hover:-translate-y-1 hover:shadow-lg ${module.bg} ${module.border} ${module.color} h-full`}
+                >
+                  <div className="mb-3 p-3 rounded-full bg-white shadow-sm ring-1 ring-black/5">
+                    {module.icon}
+                  </div>
+                  <h3 className="font-bold text-base md:text-lg text-slate-900 text-center">{module.title}</h3>
+                  <p className="text-xs font-bold opacity-60 uppercase tracking-wide mt-1 text-center">{module.desc}</p>
+                </Link>
+              );
+            })}
+          </div>
+        </section>
+        {/* --- GAME MODES SECTION (ENGLISH) --- */}
         <section className="grid md:grid-cols-2 gap-6 mb-8">
           
           {/* 1. SPEEDRUN MODE CARD */}
@@ -344,49 +387,6 @@ export default function HomePage() {
             </div>
           </Link>
 
-        </section>
-
-          {/* IELTS Modules Grid */}
-          <div className="p-3 md:p-6 bg-slate-50/50 grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-3 md:gap-4">
-            {ieltsModules.map((module) => {
-              let linkHref = `/test/${module.id}`;
-              if (module.id === 'ielts-speaking') linkHref = '/ielts/speaking';
-              if (module.id === 'ielts-calculator') linkHref = '/ielts/calculator';
-              if (module.id === 'ielts-listening') linkHref = '/ielts/listening';
-              if (module.id === 'ielts-writing') linkHref = '/ielts/writing';
-
-              if (!module.active) {
-                return (
-                  <div
-                    key={module.id}
-                    className={`flex flex-col items-center justify-center p-3 md:p-5 rounded-xl border-2 ${module.bg} ${module.border} text-slate-400 cursor-not-allowed`}
-                    title="Yakında eklenecek"
-                    aria-disabled="true"
-                  >
-                    <div className="mb-3 p-3 rounded-full bg-white/60 shadow-sm ring-1 ring-black/5">
-                      <Lock className="w-7 h-7 opacity-70" />
-                    </div>
-                    <h3 className="font-bold text-base md:text-lg text-slate-700 text-center">{module.title}</h3>
-                    <p className="text-xs font-bold opacity-60 uppercase tracking-wide mt-1 text-center">Coming Soon</p>
-                  </div>
-                );
-              }
-
-              return (
-                <Link
-                  key={module.id}
-                  href={linkHref}
-                  className={`flex flex-col items-center justify-center p-3 md:p-5 rounded-xl border-2 transition-all hover:-translate-y-1 hover:shadow-lg ${module.bg} ${module.border} ${module.color} h-full`}
-                >
-                  <div className="mb-3 p-3 rounded-full bg-white shadow-sm ring-1 ring-black/5">
-                    {module.icon}
-                  </div>
-                  <h3 className="font-bold text-base md:text-lg text-slate-900 text-center">{module.title}</h3>
-                  <p className="text-xs font-bold opacity-60 uppercase tracking-wide mt-1 text-center">{module.desc}</p>
-                </Link>
-              );
-            })}
-          </div>
         </section>
 
         {/* --- ULUSAL SINAVLAR --- */}
