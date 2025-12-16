@@ -1,11 +1,17 @@
 import { NextResponse } from "next/server";
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import {
+  GoogleGenerativeAI,
+  HarmCategory,
+  HarmBlockThreshold,
+} from "@google/generative-ai";
 
-export const runtime = "nodejs";
+// --- KRİTİK AYARLAR ---
+// Vercel'in işlemi erkenden (10sn) kesmesini engeller. Süreyi 60 saniyeye çıkarır.
+export const maxDuration = 60; 
+export const dynamic = 'force-dynamic';
 
 // --- TİP TANIMLARI ---
 type ChatOut = { reply: string; feedback: string };
-
 type GradeOut = {
   band_score: number;
   fluency_feedback: string;
@@ -24,73 +30,49 @@ function stripCodeFences(s: string) {
 }
 
 function safeJsonParse(s: string) {
-  try {
-    return JSON.parse(s);
-  } catch {
-    return null;
-  }
+  try { return JSON.parse(s); } catch { return null; }
 }
 
 function normalizeHistory(history: any[]) {
   return (history || []).map((m: any) => {
+    let role = "user";
+    let text = "";
     if (typeof m === "string") {
-      return { role: "user", parts: [{ text: m }] };
+      text = m;
+    } else if (m && typeof m === "object") {
+      role = (m.role === "ai" || m.role === "model" || m.role === "assistant") ? "model" : "user";
+      text = m.text ?? m.content ?? m.message ?? m.prompt ?? JSON.stringify(m);
     }
-
-    if (m && typeof m === "object") {
-      const role = m.role === "ai" || m.role === "model" ? "model" : "user";
-      const content =
-        m.text ?? m.content ?? m.message ?? m.prompt ?? JSON.stringify(m);
-      return { role, parts: [{ text: String(content) }] };
-    }
-
-    return { role: "user", parts: [{ text: String(m) }] };
+    return { role, text: String(text) };
   });
+}
+
+function formatHistoryForPrompt(history: { role: string; text: string }[]) {
+  return history.map((h) => `${h.role === "user" ? "User" : "Examiner"}: ${h.text}`).join("\n");
 }
 
 function pickChat(obj: any): ChatOut | null {
   if (!obj || typeof obj !== "object") return null;
-
-  const reply =
-    typeof obj.reply === "string"
-      ? obj.reply
-      : typeof obj.answer === "string"
-        ? obj.answer
-        : "";
-
-  const feedback =
-    typeof obj.feedback === "string"
-      ? obj.feedback
-      : typeof obj.correction === "string"
-        ? obj.correction
-        : "";
-
+  const reply = obj.reply || obj.answer || obj.response || "";
+  const feedback = obj.feedback || obj.correction || "";
   if (!reply && !feedback) return null;
-  return { reply, feedback };
+  return { reply: String(reply), feedback: String(feedback) };
 }
 
 function pickGrade(obj: any): GradeOut | null {
   if (!obj || typeof obj !== "object") return null;
-
   let score = Number(obj.band_score);
   if (Number.isNaN(score)) score = 0;
-
   return {
     band_score: score,
-    fluency_feedback:
-      typeof obj.fluency_feedback === "string" ? obj.fluency_feedback : "No feedback provided.",
-    lexical_feedback:
-      typeof obj.lexical_feedback === "string" ? obj.lexical_feedback : "No feedback provided.",
-    grammar_feedback:
-      typeof obj.grammar_feedback === "string" ? obj.grammar_feedback : "No feedback provided.",
-    overall_comment:
-      typeof obj.overall_comment === "string" ? obj.overall_comment : "No comment provided.",
+    fluency_feedback: String(obj.fluency_feedback || "No feedback."),
+    lexical_feedback: String(obj.lexical_feedback || "No feedback."),
+    grammar_feedback: String(obj.grammar_feedback || "No feedback."),
+    overall_comment: String(obj.overall_comment || "No comment."),
   };
 }
 
-// Fallback mesajları
 const chatFallback = (msg: string): ChatOut => ({ reply: msg, feedback: "" });
-
 const gradeFallback = (msg: string): GradeOut => ({
   band_score: 0,
   fluency_feedback: msg,
@@ -103,110 +85,76 @@ const gradeFallback = (msg: string): GradeOut => ({
 
 export async function POST(request: Request) {
   const apiKey = process.env.GOOGLE_API_KEY;
-  if (!apiKey) {
-    return NextResponse.json({ error: "GOOGLE_API_KEY missing" }, { status: 500 });
-  }
+  if (!apiKey) return NextResponse.json({ error: "API Key missing" }, { status: 500 });
 
-  const body = await request.json().catch(() => null);
-  if (!body) {
+  // Body okuma hatasını engellemek için try-catch
+  let body;
+  try {
+    body = await request.json();
+  } catch (e) {
     return NextResponse.json({ error: "Invalid JSON body" }, { status: 400 });
   }
 
   const mode: "grade" | "chat" = body.mode === "grade" ? "grade" : "chat";
-  const message = typeof body.message === "string" ? body.message.trim() : "";
+  const message = typeof body.message === "string" ? body.message : "";
   const historyRaw = Array.isArray(body.history) ? body.history : [];
 
-  // Token tasarrufu için son 10 mesaj
-  const history = normalizeHistory(historyRaw).slice(-10);
+  const normalizedHistory = normalizeHistory(historyRaw).slice(-10);
+  const historyText = formatHistoryForPrompt(normalizedHistory);
 
   try {
     const genAI = new GoogleGenerativeAI(apiKey);
-
-    // Güncel ve en stabil model (Aralık 2025)
-    const modelName = "gemini-2.0-flash-exp"; // veya "gemini-2.0-flash-latest"
-
     const model = genAI.getGenerativeModel({
-      model: modelName,
-      generationConfig: {
-        responseMimeType: "application/json",
-        temperature: mode === "grade" ? 0.2 : 0.7,
-        topP: 0.95,
-        maxOutputTokens: mode === "grade" ? 512 : 256,
-      },
+      model: "gemini-1.5-flash",
+      // Güvenlik ayarlarını tamamen kapatıyoruz (False Positive engellemek için)
+      safetySettings: [
+        { category: HarmCategory.HARM_CATEGORY_HARASSMENT, threshold: HarmBlockThreshold.BLOCK_NONE },
+        { category: HarmCategory.HARM_CATEGORY_HATE_SPEECH, threshold: HarmBlockThreshold.BLOCK_NONE },
+        { category: HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT, threshold: HarmBlockThreshold.BLOCK_NONE },
+        { category: HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT, threshold: HarmBlockThreshold.BLOCK_NONE },
+      ],
+      generationConfig: mode === "grade"
+          ? { responseMimeType: "application/json", temperature: 0.2 }
+          : { responseMimeType: "application/json", temperature: 0.7 },
     });
 
-    const prompt =
-      mode === "grade"
-        ? [
-            "You are a strict IELTS Speaking Examiner.",
-            "Evaluate the entire conversation and provide an IELTS Speaking band score (0-9).",
-            `CONVERSATION HISTORY:\n${JSON.stringify(history)}`,
-            "Return ONLY valid JSON with exactly these keys (no extra text):",
-            '{ "band_score": number, "fluency_feedback": string, "lexical_feedback": string, "grammar_feedback": string, "overall_comment": string }',
-          ].join("\n\n")
-        : [
-            "You are a friendly and helpful IELTS Speaking Examiner.",
-            "Continue the conversation naturally in 1-2 sentences.",
-            "If there are grammar/vocabulary mistakes, provide gentle correction in 'feedback'.",
-            `CONVERSATION HISTORY:\n${JSON.stringify(history)}`,
-            `USER MESSAGE:\n${message}`,
-            "Return ONLY valid JSON with exactly these keys:",
-            '{ "reply": string, "feedback": string }',
-          ].join("\n\n");
+    const prompt = mode === "grade"
+      ? `Act as a strict IELTS Examiner. Analyze conversation history.
+HISTORY:
+${historyText}
+Return ONLY valid JSON: { "band_score": number, "fluency_feedback": string, "lexical_feedback": string, "grammar_feedback": string, "overall_comment": string }`
+      : `You are an IELTS Speaking Examiner.
+HISTORY:
+${historyText}
+USER INPUT: "${message}"
+Task: Reply naturally (1-2 sentences). Correct grammar in 'feedback' if needed.
+Return ONLY valid JSON: { "reply": string, "feedback": string }`;
 
     const result = await model.generateContent(prompt);
-    const rawText = result?.response?.text?.() ?? "";
+    const response = await result.response;
+    const rawText = response.text(); 
     const cleaned = stripCodeFences(rawText);
-
-    if (!cleaned) {
-      throw new Error("Empty response from Gemini");
-    }
-
     const parsed = safeJsonParse(cleaned);
 
     if (mode === "grade") {
-      const picked = pickGrade(parsed) || pickGrade(safeJsonParse("{" + cleaned + "}")); // bazen JSON eksik olur
-      if (!picked || picked.band_score === 0) {
-        return NextResponse.json(gradeFallback("Evaluation failed. Please try again later."));
-      }
-      return NextResponse.json(picked);
+      const picked = pickGrade(parsed);
+      return NextResponse.json(picked || gradeFallback("Evaluation error."));
     }
 
-    // chat mode
+    // CHAT MODE
     let picked = pickChat(parsed);
-
-    if (!picked && cleaned) {
-      // JSON parse edilemediyse ham metni reply olarak kullan
-      picked = { reply: cleaned, feedback: "" };
+    if (!picked) {
+      // JSON bozuksa metni kurtar
+      if (cleaned.length > 0) return NextResponse.json({ reply: cleaned, feedback: "" } satisfies ChatOut);
+      return NextResponse.json(chatFallback("Could you repeat that?"));
     }
 
-    if (!picked || !picked.reply) {
-      return NextResponse.json(chatFallback("Sorry, I didn't understand. Could you say that again?"));
-    }
-
-    picked.feedback = typeof picked.feedback === "string" ? picked.feedback : "";
     return NextResponse.json(picked);
+
   } catch (error: any) {
-    console.error("Gemini API Error:", {
-      message: error.message,
-      status: error.status,
-      code: error.code,
-    });
-
-    let userMessage = "Connection issue. Please try again in a moment.";
-
-    // Daha anlamlı hata mesajları
-    if (error.message?.includes("429") || error.message?.includes("RESOURCE_EXHAUSTED")) {
-      userMessage = "Daily limit reached. Please wait a few minutes or try again tomorrow.";
-    } else if (error.message?.includes("quota")) {
-      userMessage = "API quota exceeded. Consider upgrading your plan or trying later.";
-    } else if (error.message?.includes("invalid") || error.message?.includes("model")) {
-      userMessage = "Model temporarily unavailable. Please try again soon.";
-    }
-
-    if (mode === "grade") {
-      return NextResponse.json(gradeFallback(userMessage));
-    }
-    return NextResponse.json(chatFallback(userMessage));
+    console.error("API ERROR DETAYI:", error); // Vercel Loglarında bunu arayacağız
+    
+    // Hatanın ne olduğunu kullanıcıya söyleyelim ki anlayalım
+    return NextResponse.json(chatFallback(`System Error: ${error.message?.slice(0, 50)}...`)); 
   }
 }
