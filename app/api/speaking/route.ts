@@ -2,7 +2,6 @@ import { NextResponse } from "next/server";
 import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from "@google/generative-ai";
 
 export const runtime = "nodejs";
-// 1. EKLEME: Vercel'in işlemi 10 saniyede kesmesini engeller (60sn yapar)
 export const maxDuration = 60; 
 export const dynamic = 'force-dynamic';
 
@@ -19,10 +18,7 @@ type GradeOut = {
 
 // --- HELPERS ---
 function stripCodeFences(s: string) {
-  return String(s || "")
-    .replace(/^\s*```(?:json)?\s*/i, "")
-    .replace(/\s*```\s*$/i, "")
-    .trim();
+  return String(s || "").replace(/^\s*```(?:json)?\s*/i, "").replace(/\s*```\s*$/i, "").trim();
 }
 
 function safeJsonParse(s: string) {
@@ -85,11 +81,7 @@ function isQuota429(msg: string) {
 
 function isNetworkTimeout(msg: string) {
   const lower = msg.toLowerCase();
-  return (
-    lower.includes("timeout") || lower.includes("fetch") || lower.includes("network") ||
-    lower.includes("econnreset") || lower.includes("etimedout") || lower.includes("socket") ||
-    lower.includes("undici")
-  );
+  return (lower.includes("timeout") || lower.includes("fetch") || lower.includes("network") || lower.includes("undici"));
 }
 
 // --- MAIN ---
@@ -107,18 +99,15 @@ export async function POST(request: Request) {
 
   try {
     const genAI = new GoogleGenerativeAI(apiKey);
-
     const model = genAI.getGenerativeModel({
       model: "gemini-2.5-flash",
-      // 2. EKLEME: Güvenlik filtrelerini kapatıyoruz (False Positive engellemek için)
       safetySettings: [
         { category: HarmCategory.HARM_CATEGORY_HARASSMENT, threshold: HarmBlockThreshold.BLOCK_NONE },
         { category: HarmCategory.HARM_CATEGORY_HATE_SPEECH, threshold: HarmBlockThreshold.BLOCK_NONE },
         { category: HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT, threshold: HarmBlockThreshold.BLOCK_NONE },
         { category: HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT, threshold: HarmBlockThreshold.BLOCK_NONE },
       ],
-      generationConfig:
-        mode === "grade"
+      generationConfig: mode === "grade"
           ? { responseMimeType: "application/json", temperature: 0.2 }
           : { responseMimeType: "application/json", temperature: 0.7 },
     });
@@ -144,11 +133,7 @@ export async function POST(request: Request) {
     const rawText = result?.response?.text?.() ?? "";
     
     if (!rawText.trim()) {
-      return NextResponse.json(
-        mode === "grade"
-          ? gradeFallback("Empty response from model.")
-          : chatFallback("Empty response from model.")
-      );
+      return NextResponse.json(mode === "grade" ? gradeFallback("Empty response from model.") : chatFallback("Empty response from model."));
     }
 
     const cleaned = stripCodeFences(rawText);
@@ -175,18 +160,18 @@ export async function POST(request: Request) {
 
   } catch (error: any) {
     const msg = String(error?.message || error);
-    console.error("API Error:", msg); // Loglara bas
+    console.error("API Error:", msg);
 
     if (isQuota429(msg)) {
       const retrySec = parseRetrySecondsFromMessage(msg) ?? 25;
       return NextResponse.json(
-        { reply: `Sistem çok yoğun (Rate Limit). Lütfen ${retrySec} sn bekle.`, feedback: "" },
-        { status: 429 } // Frontend bunu yakalayıp geri sayım yapabilir
+        { reply: `Rate limit exceeded. Please wait ${retrySec}s.`, feedback: "" },
+        { status: 429 }
       );
     }
 
     if (isNetworkTimeout(msg)) {
-      return NextResponse.json(chatFallback("Connection issue (Timeout). Please try again."), { status: 200 });
+      return NextResponse.json(chatFallback("Connection timeout. Please try again."), { status: 200 });
     }
 
     return NextResponse.json(chatFallback("System error. Please try again."), { status: 200 });
