@@ -17,6 +17,22 @@ type GradeOut = {
 };
 
 // --- HELPERS ---
+
+// Rastgele bir API anahtarı seçen fonksiyon (QUOTA ARTIRICI)
+function getRandomApiKey() {
+  const keys = [
+    process.env.GOOGLE_API_KEY,
+    process.env.GOOGLE_KEY_2,
+    process.env.GOOGLE_KEY_3,
+    process.env.GOOGLE_KEY_4,
+    process.env.GOOGLE_KEY_5
+  ].filter(Boolean); // Boş olanları filtrele
+
+  if (keys.length === 0) return null;
+  // Rastgele birini seç
+  return keys[Math.floor(Math.random() * keys.length)];
+}
+
 function stripCodeFences(s: string) {
   return String(s || "").replace(/^\s*```(?:json)?\s*/i, "").replace(/\s*```\s*$/i, "").trim();
 }
@@ -86,8 +102,10 @@ function isNetworkTimeout(msg: string) {
 
 // --- MAIN ---
 export async function POST(request: Request) {
-  const apiKey = process.env.GOOGLE_API_KEY;
-  if (!apiKey) return NextResponse.json({ error: "GOOGLE_API_KEY missing" }, { status: 500 });
+  // 1. ADIM: Rastgele Anahtar Seçimi
+  const apiKey = getRandomApiKey();
+  
+  if (!apiKey) return NextResponse.json({ error: "No API Keys found in settings" }, { status: 500 });
 
   const body = await request.json().catch(() => null);
   if (!body) return NextResponse.json({ error: "Invalid JSON body" }, { status: 400 });
@@ -99,8 +117,10 @@ export async function POST(request: Request) {
 
   try {
     const genAI = new GoogleGenerativeAI(apiKey);
+
+    // 2. ADIM: Stabil Model Kullanımı (1.5 Flash)
     const model = genAI.getGenerativeModel({
-      model: "gemini-2.5-flash",
+      model: "gemini-1.5-flash", // 2.5 yerine 1.5 (Daha geniş kota)
       safetySettings: [
         { category: HarmCategory.HARM_CATEGORY_HARASSMENT, threshold: HarmBlockThreshold.BLOCK_NONE },
         { category: HarmCategory.HARM_CATEGORY_HATE_SPEECH, threshold: HarmBlockThreshold.BLOCK_NONE },
@@ -131,7 +151,7 @@ export async function POST(request: Request) {
 
     const result = await model.generateContent(prompt);
     const rawText = result?.response?.text?.() ?? "";
-    
+
     if (!rawText.trim()) {
       return NextResponse.json(mode === "grade" ? gradeFallback("Empty response from model.") : chatFallback("Empty response from model."));
     }
