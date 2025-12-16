@@ -128,36 +128,52 @@ export default function WritingPage() {
   };
 
   const handleAnalyze = async () => {
-    if (essay.length < 50) return alert("Please write at least 50 characters.");
+  if (essay.length < 50) return alert("Please write at least 50 characters.");
 
-    setIsAnalyzing(true);
-    setIsTimerActive(false);
+  setIsAnalyzing(true);
+  setIsTimerActive(false);
 
-    try {
-      const response = await fetch('/api/analyze', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          essay: essay,
-          taskType: currentQ.type,
-          contextData: currentQ.contextData
-        }),
+  try {
+    const response = await fetch('/api/analyze', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        essay,
+        taskType: currentQ.type,
+        contextData: currentQ.contextData,
+      }),
+    });
+
+    // JSON parse güvenli (bazen boş/invalid dönebiliyor)
+    const data = await response.json().catch(() => ({} as any));
+
+    if (!response.ok) {
+      // burada gerçek sebebi göreceksin: 401/403/429/500 vs.
+      console.error("API ERROR:", {
+        status: response.status,
+        statusText: response.statusText,
+        data,
       });
 
-      const data = await response.json();
-      
-      if (!response.ok) throw new Error(data.error || 'An error occurred');
+      const msg =
+        data?.error ||
+        data?.message ||
+        `Analysis failed. Status: ${response.status} ${response.statusText}`;
 
-      setResult(data);
-      setActiveTab('result');
-
-    } catch (error) {
-      console.error(error);
-      alert('Analysis failed. Please check your API key and quota.');
-    } finally {
-      setIsAnalyzing(false);
+      alert(msg);
+      return;
     }
-  };
+
+    setResult(data);
+    setActiveTab('result');
+
+  } catch (error: any) {
+    console.error("FETCH ERROR:", error);
+    alert(error?.message || 'Network error. Please try again.');
+  } finally {
+    setIsAnalyzing(false);
+  }
+};
 
   return (
     <div className="flex h-screen bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 overflow-hidden font-sans transition-colors duration-300">
