@@ -1,16 +1,13 @@
 import { NextResponse } from 'next/server';
-import { GoogleGenerativeAI, SchemaType } from "@google/genai"; // Veya @google/generative-ai (sürümünüze göre)
-
-// NOT: @google/generative-ai kullanıyorsanız importu ona göre düzeltin.
-// Aşağıdaki kod @google/generative-ai kütüphanesine göre yazılmıştır:
-import { GoogleGenerativeAI as GenAI_Legacy } from "@google/generative-ai"; 
+// DÜZELTME: Senin sistemindeki yüklü kütüphane bu:
+import { GoogleGenerativeAI, SchemaType } from "@google/generative-ai";
 
 export async function POST(request: Request) {
   try {
     const apiKey = process.env.GOOGLE_API_KEY;
     if (!apiKey) return NextResponse.json({ error: "API Key missing" }, { status: 500 });
 
-    const genAI = new GenAI_Legacy(apiKey);
+    const genAI = new GoogleGenerativeAI(apiKey);
     const { message, history, mode } = await request.json(); // mode: 'chat' | 'grade'
 
     // --- SENARYO 1: PUANLAMA MODU (FINISH & SCORE) ---
@@ -64,14 +61,14 @@ export async function POST(request: Request) {
           type: SchemaType.OBJECT,
           properties: {
             reply: { type: SchemaType.STRING },
-            feedback: { type: SchemaType.STRING }, // Artık İngilizce olacak
+            feedback: { type: SchemaType.STRING },
           }
         }
       }
     });
 
     const prompt = `
-      You are an IELTS Speaking Examiner (Part 1, 2, or 3).
+      You are an IELTS Speaking Examiner.
       
       HISTORY: ${JSON.stringify(history)}
       USER SAID: "${message}"
