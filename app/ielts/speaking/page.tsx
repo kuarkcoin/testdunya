@@ -3,100 +3,123 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 
-// --- TİP TANIMLAMALARI ---
+// --- TİPLER ---
 type Message = {
   role: 'user' | 'ai';
   text: string;
   feedback?: string;
 };
 
+type ScoreResult = {
+  band_score: number;
+  fluency_feedback: string;
+  lexical_feedback: string;
+  grammar_feedback: string;
+  overall_comment: string;
+};
+
 // --- İKONLAR ---
-const MicIcon = () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>;
-const StopIcon = () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><rect x="9" y="9" width="6" height="6"/></svg>;
-const RobotIcon = () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="18" height="12" x="3" y="6" rx="2"/><path d="M9 14v.01"/><path d="M15 14v.01"/><path d="M21 12c0 2.5-2 4.5-5 5"/><path d="M3 12c0 2.5 2 4.5 5 5"/><path d="M12 6V3"/><line x1="8" x2="16" y1="2" y2="2"/></svg>;
+const Icons = {
+  Mic: () => <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>,
+  Stop: () => <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><rect x="9" y="9" width="6" height="6"/></svg>,
+  Play: () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>,
+  User: () => <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>,
+  Bot: () => <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="18" height="12" x="3" y="6" rx="2"/><path d="M12 6V3"/><line x1="8" x2="16" y1="2" y2="2"/></svg>,
+  Flag: () => <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" x2="4" y1="22" y2="15"/></svg>
+};
 
 export default function SpeakingPage() {
+  const [hasStarted, setHasStarted] = useState(false);
   const [isRecording, setIsRecording] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
-    { role: 'ai', text: "Hello! I'm your IELTS examiner today. Could you please tell me your full name?" }
+    { role: 'ai', text: "Hello! Welcome to the IELTS Speaking simulation. I am your examiner today. Could you please tell me your full name?" }
   ]);
   const [isLoading, setIsLoading] = useState(false);
+  const [scoreResult, setScoreResult] = useState<ScoreResult | null>(null);
   const chatEndRef = useRef<HTMLDivElement>(null);
 
-  // Otomatik Kaydırma
   useEffect(() => {
     chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-  }, [messages]);
+  }, [messages, scoreResult]);
 
-  // --- SESLİ OKUMA (Text to Speech) ---
   const speakText = (text: string) => {
     if ('speechSynthesis' in window) {
-      // Önceki konuşmayı durdur
       window.speechSynthesis.cancel();
-      
       const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = 'en-US'; // İngiliz aksanı için 'en-GB' deneyebilirsiniz
-      utterance.rate = 1; // Hız
+      utterance.lang = 'en-US'; 
+      utterance.rate = 1; 
       window.speechSynthesis.speak(utterance);
     }
   };
 
-  // --- SESİ YAZIYA ÇEVİRME (Speech to Text) ---
-  const startListening = () => {
-    if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
-      alert("Tarayıcınız sesli komutu desteklemiyor. Lütfen Chrome kullanın.");
-      return;
-    }
+  const handleStart = () => {
+    setHasStarted(true);
+    setTimeout(() => speakText(messages[0].text), 500);
+  };
 
-    // @ts-ignore (TypeScript hatasını yok saymak için)
+  const handleFinishExam = async () => {
+    if (messages.length < 3) return alert("Please answer at least a few questions before finishing.");
+    setIsLoading(true);
+    try {
+      const response = await fetch('/api/speaking', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          history: messages,
+          mode: 'grade' // Puanlama Modunu Tetikle
+        }),
+      });
+      const data = await response.json();
+      setScoreResult(data);
+    } catch (error) {
+      console.error(error);
+      alert("Error calculating score.");
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const startListening = () => {
+    // @ts-ignore
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) return alert("Browser not supported. Please use Chrome.");
+
     const recognition = new SpeechRecognition();
-    
     recognition.lang = 'en-US';
     recognition.continuous = false;
-    recognition.interimResults = false;
-
-    recognition.onstart = () => setIsRecording(true);
     
+    recognition.onstart = () => setIsRecording(true);
     recognition.onresult = (event: any) => {
-      const transcript = event.results[0][0].transcript;
       setIsRecording(false);
-      handleUserResponse(transcript);
+      handleUserResponse(event.results[0][0].transcript);
     };
-
-    recognition.onerror = (event: any) => {
-      console.error(event.error);
+    recognition.onerror = () => {
       setIsRecording(false);
+      alert("Could not hear you. Please try again.");
     };
-
     recognition.onend = () => setIsRecording(false);
-
     recognition.start();
   };
 
-  // --- API İLE KONUŞMA ---
   const handleUserResponse = async (text: string) => {
-    // 1. Kullanıcı mesajını ekle
     const newHistory = [...messages, { role: 'user', text } as Message];
     setMessages(newHistory);
     setIsLoading(true);
 
     try {
-      // 2. API'ye gönder
       const response = await fetch('/api/speaking', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           message: text,
-          history: newHistory.map(m => ({ role: m.role, text: m.text })) // Sadece metinleri gönder
+          history: newHistory,
+          mode: 'chat'
         }),
       });
 
       const data = await response.json();
-
       if (!response.ok) throw new Error(data.error);
 
-      // 3. AI Cevabını ekle
       const aiMessage: Message = {
         role: 'ai',
         text: data.reply,
@@ -104,91 +127,125 @@ export default function SpeakingPage() {
       };
       
       setMessages(prev => [...prev, aiMessage]);
-      
-      // 4. AI Konuşsun
       speakText(data.reply);
 
     } catch (error) {
       console.error(error);
-      alert("Hata oluştu, lütfen tekrar deneyin.");
     } finally {
       setIsLoading(false);
     }
   };
 
+  // --- EKRAN 1: WELCOME SCREEN ---
+  if (!hasStarted) {
+    return (
+      <div className="flex h-screen items-center justify-center bg-slate-900 text-white p-4 font-sans">
+        <div className="max-w-md w-full text-center space-y-8 animate-fade-in-up">
+          <div className="w-24 h-24 bg-indigo-600 rounded-full flex items-center justify-center mx-auto shadow-2xl shadow-indigo-500/50">
+            <Icons.Mic />
+          </div>
+          <div className="space-y-2">
+            <h1 className="text-3xl font-black tracking-tight">Speaking Simulator</h1>
+            <p className="text-slate-400">AI-powered IELTS interview practice.</p>
+          </div>
+          <div className="bg-slate-800 p-4 rounded-xl text-sm text-slate-300 border border-slate-700 text-left">
+            <ul className="space-y-2">
+              <li>🎧 Ensure you are in a quiet environment.</li>
+              <li>🎤 Allow microphone access when prompted.</li>
+              <li>🇬🇧 The examiner will speak in English.</li>
+            </ul>
+          </div>
+          <button onClick={handleStart} className="w-full py-4 bg-white text-slate-900 font-bold rounded-xl hover:bg-slate-200 transition-transform hover:scale-105 flex items-center justify-center gap-2 text-lg">
+            <Icons.Play /> Start Exam
+          </button>
+          <Link href="/" className="block text-slate-500 text-sm hover:text-white mt-4">← Back to Home</Link>
+        </div>
+      </div>
+    );
+  }
+
+  // --- EKRAN 2: SCORE REPORT (SINAV SONUCU) ---
+  if (scoreResult) {
+    return (
+      <div className="min-h-screen bg-slate-50 dark:bg-slate-900 p-4 md:p-8 font-sans">
+        <div className="max-w-3xl mx-auto space-y-6">
+          <div className="bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-xl text-center border border-slate-200 dark:border-slate-700">
+            <div className="text-sm font-bold text-slate-500 uppercase tracking-widest mb-2">Estimated Band Score</div>
+            <div className="text-6xl font-black text-indigo-600 dark:text-indigo-400 mb-4">{scoreResult.band_score}</div>
+            <p className="text-slate-600 dark:text-slate-300 text-lg">{scoreResult.overall_comment}</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-4">
+            <div className="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-2xl border border-blue-100 dark:border-blue-800">
+              <h3 className="font-bold text-blue-800 dark:text-blue-300 mb-2">Fluency</h3>
+              <p className="text-sm text-blue-900 dark:text-blue-100">{scoreResult.fluency_feedback}</p>
+            </div>
+            <div className="bg-purple-50 dark:bg-purple-900/20 p-6 rounded-2xl border border-purple-100 dark:border-purple-800">
+              <h3 className="font-bold text-purple-800 dark:text-purple-300 mb-2">Vocabulary</h3>
+              <p className="text-sm text-purple-900 dark:text-purple-100">{scoreResult.lexical_feedback}</p>
+            </div>
+            <div className="bg-pink-50 dark:bg-pink-900/20 p-6 rounded-2xl border border-pink-100 dark:border-pink-800">
+              <h3 className="font-bold text-pink-800 dark:text-pink-300 mb-2">Grammar</h3>
+              <p className="text-sm text-pink-900 dark:text-pink-100">{scoreResult.grammar_feedback}</p>
+            </div>
+          </div>
+
+          <button onClick={() => window.location.reload()} className="w-full py-4 bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-bold rounded-xl hover:opacity-90 transition-all">
+            Try Again
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  // --- EKRAN 3: CHAT EKRANI ---
   return (
     <div className="flex flex-col h-screen bg-slate-50 dark:bg-slate-900 font-sans">
-      
-      {/* HEADER */}
       <div className="p-4 bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 flex items-center justify-between shadow-sm z-10">
-        <Link href="/" className="font-bold text-indigo-600 dark:text-indigo-400 flex items-center gap-2">
-          ← Çıkış
-        </Link>
-        <h1 className="font-bold text-slate-800 dark:text-white">IELTS Speaking Simulator</h1>
-        <div className="w-10"></div> {/* Hizalama için boşluk */}
+        <Link href="/" className="text-sm font-bold text-slate-500 hover:text-slate-800 dark:hover:text-white">Exit</Link>
+        <div className="flex items-center gap-2">
+          <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
+          <span className="text-sm font-bold text-slate-700 dark:text-slate-200">LIVE EXAM</span>
+        </div>
+        <button onClick={handleFinishExam} disabled={isLoading} className="text-xs font-bold bg-slate-100 dark:bg-slate-700 px-3 py-1.5 rounded-lg hover:bg-red-100 hover:text-red-600 transition-colors flex items-center gap-1">
+          <Icons.Flag /> Finish
+        </button>
       </div>
 
-      {/* CHAT ALANI */}
-      <div className="flex-1 overflow-y-auto p-4 space-y-6">
+      <div className="flex-1 overflow-y-auto p-4 space-y-6 bg-slate-50 dark:bg-slate-900">
         {messages.map((msg, index) => (
-          <div key={index} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
-            <div className={`max-w-[85%] md:max-w-[70%] rounded-2xl p-4 shadow-md ${
-              msg.role === 'user' 
-                ? 'bg-indigo-600 text-white rounded-tr-none' 
-                : 'bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-200 border border-slate-100 dark:border-slate-700 rounded-tl-none'
-            }`}>
-              
-              {/* Mesaj Metni */}
-              <p className="text-lg leading-relaxed">{msg.text}</p>
-              
-              {/* AI Geri Bildirimi (Varsa) */}
+          <div key={index} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'} animate-fade-in`}>
+            <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 mt-1 ${msg.role === 'ai' ? 'bg-indigo-100 text-indigo-600 mr-2' : 'bg-slate-200 text-slate-600 ml-2 order-2'}`}>
+              {msg.role === 'ai' ? <Icons.Bot /> : <Icons.User />}
+            </div>
+            <div className={`max-w-[80%] rounded-2xl p-4 shadow-sm text-lg ${msg.role === 'user' ? 'bg-slate-800 text-white rounded-tr-none' : 'bg-white text-slate-800 border border-slate-200 rounded-tl-none'}`}>
+              {msg.text}
               {msg.feedback && (
-                <div className="mt-3 pt-3 border-t border-slate-100 dark:border-slate-700 text-sm text-amber-600 dark:text-amber-400 font-medium bg-amber-50 dark:bg-amber-900/10 p-2 rounded-lg">
-                  💡 İpucu: {msg.feedback}
+                <div className="mt-3 pt-2 border-t border-slate-100 text-sm">
+                  <span className="text-orange-600 font-bold block text-xs uppercase mb-1">Improvement</span>
+                  <p className="text-slate-600 italic">{msg.feedback}</p>
                 </div>
               )}
             </div>
           </div>
         ))}
-        
-        {isLoading && (
-          <div className="flex justify-start">
-            <div className="bg-white dark:bg-slate-800 p-4 rounded-2xl rounded-tl-none border border-slate-200 dark:border-slate-700 flex gap-2 items-center">
-              <div className="w-2 h-2 bg-indigo-500 rounded-full animate-bounce"></div>
-              <div className="w-2 h-2 bg-indigo-500 rounded-full animate-bounce delay-100"></div>
-              <div className="w-2 h-2 bg-indigo-500 rounded-full animate-bounce delay-200"></div>
-            </div>
-          </div>
-        )}
+        {isLoading && <div className="ml-12 text-sm text-slate-400 animate-pulse">Examiner is thinking...</div>}
         <div ref={chatEndRef} />
       </div>
 
-      {/* KONTROL ALANI (MİKROFON) */}
-      <div className="p-6 bg-white dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700 flex justify-center items-center gap-4">
-        
+      <div className="p-8 bg-white dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700 flex flex-col items-center gap-4">
         {isRecording ? (
-          <div className="flex flex-col items-center gap-2">
-            <div className="animate-pulse text-red-500 font-bold uppercase tracking-widest text-sm">Dinliyor...</div>
-            <button 
-              onClick={() => setIsRecording(false)} // Manuel durdurma (opsiyonel)
-              className="w-20 h-20 bg-red-100 dark:bg-red-900/30 text-red-600 rounded-full flex items-center justify-center border-4 border-red-500 shadow-xl scale-110 transition-all"
-            >
-              <StopIcon />
-            </button>
+          <div className="relative">
+            <div className="absolute -inset-4 bg-red-500/20 rounded-full animate-ping"></div>
+            <button onClick={() => setIsRecording(false)} className="relative w-20 h-20 bg-red-500 text-white rounded-full flex items-center justify-center shadow-xl hover:scale-105 transition-transform"><Icons.Stop /></button>
+            <p className="absolute -bottom-8 left-1/2 -translate-x-1/2 text-red-500 font-bold text-sm whitespace-nowrap">Listening...</p>
           </div>
         ) : (
-          <div className="flex flex-col items-center gap-2">
-            <div className="text-slate-400 text-sm font-medium">Konuşmak için bas</div>
-            <button 
-              onClick={startListening}
-              disabled={isLoading}
-              className="w-20 h-20 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full flex items-center justify-center shadow-lg shadow-indigo-300 dark:shadow-none transition-transform hover:scale-105 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              <MicIcon />
-            </button>
+          <div className="relative group">
+            <button onClick={startListening} disabled={isLoading} className="w-20 h-20 bg-indigo-600 hover:bg-indigo-700 disabled:bg-slate-300 text-white rounded-full flex items-center justify-center shadow-xl transition-all hover:-translate-y-1"><Icons.Mic /></button>
+            <p className="absolute -bottom-8 left-1/2 -translate-x-1/2 text-slate-400 text-sm font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">Tap to Speak</p>
           </div>
         )}
-
       </div>
     </div>
   );
