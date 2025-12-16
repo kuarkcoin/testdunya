@@ -1,9 +1,9 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
-// --- İKONLAR (Basit SVG'ler) ---
+// --- ICONS ---
 const Icons = {
   Back: () => <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m12 19-7-7 3-3-7 7-3-3z"/><path d="M19 12H5"/></svg>,
   Time: () => <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>,
@@ -15,16 +15,16 @@ const Icons = {
   Menu: () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
 };
 
-// --- TİP TANIMLAMALARI ---
+// --- TYPES ---
 type Question = {
   id: number;
   type: 'Task 1' | 'Task 2';
   title: string;
   question: string;
-  image?: string; // Sadece Task 1 için
-  contextData: string; // AI için gizli bilgi
+  image?: string;
+  contextData: string;
   minWords: number;
-  time: number; // saniye
+  time: number;
 };
 
 type AnalysisResult = {
@@ -33,8 +33,7 @@ type AnalysisResult = {
   corrections: string[];
 };
 
-// --- SORU BANKASI (Mock Data) ---
-// Gerçek projede burası veritabanından gelebilir.
+// --- QUESTION BANK ---
 const QUESTION_BANK: Question[] = [
   {
     id: 1,
@@ -77,43 +76,34 @@ const QUESTION_BANK: Question[] = [
 ];
 
 export default function WritingPage() {
-  // --- STATE YÖNETİMİ ---
   const [selectedQId, setSelectedQId] = useState<number>(1);
   const [essay, setEssay] = useState('');
   const [timeLeft, setTimeLeft] = useState(0);
   const [isTimerActive, setIsTimerActive] = useState(false);
   const [wordCount, setWordCount] = useState(0);
   
-  // Analiz State'leri
   const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [result, setResult] = useState<AnalysisResult | null>(null);
   
-  // UI State'leri
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false); // Mobilde menü için
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [activeTab, setActiveTab] = useState<'question' | 'result'>('question');
 
-  // Aktif soruyu bul
   const currentQ = QUESTION_BANK.find(q => q.id === selectedQId) || QUESTION_BANK[0];
 
-  // --- ETKİLER (EFFECTS) ---
-
-  // Soru değiştiğinde her şeyi sıfırla
   useEffect(() => {
     setEssay('');
     setResult(null);
     setTimeLeft(currentQ.time);
     setIsTimerActive(false);
     setActiveTab('question');
-    setIsSidebarOpen(false); // Mobilde menüyü kapat
+    setIsSidebarOpen(false);
   }, [selectedQId]);
 
-  // Kelime sayacı
   useEffect(() => {
     const count = essay.trim().split(/\s+/).filter(w => w.length > 0).length;
     setWordCount(count);
   }, [essay]);
 
-  // Geri Sayım Sayacı
   useEffect(() => {
     let interval: NodeJS.Timeout;
     if (isTimerActive && timeLeft > 0) {
@@ -124,7 +114,6 @@ export default function WritingPage() {
     return () => clearInterval(interval);
   }, [isTimerActive, timeLeft]);
 
-  // Kullanıcı yazmaya başladığında sayacı başlat
   const handleTextChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setEssay(e.target.value);
     if (!isTimerActive && !result && e.target.value.length > 5) {
@@ -132,22 +121,19 @@ export default function WritingPage() {
     }
   };
 
-  // Zaman Formatı (mm:ss)
   const formatTime = (seconds: number) => {
     const m = Math.floor(seconds / 60);
     const s = seconds % 60;
     return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
   };
 
-  // --- API İSTEĞİ (GEMINI) ---
   const handleAnalyze = async () => {
-    if (essay.length < 50) return alert("Lütfen en az 50 karakter yazın.");
+    if (essay.length < 50) return alert("Please write at least 50 characters.");
 
     setIsAnalyzing(true);
     setIsTimerActive(false);
 
     try {
-      // API Route'a istek at
       const response = await fetch('/api/analyze', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -160,14 +146,14 @@ export default function WritingPage() {
 
       const data = await response.json();
       
-      if (!response.ok) throw new Error(data.error || 'Hata oluştu');
+      if (!response.ok) throw new Error(data.error || 'An error occurred');
 
       setResult(data);
-      setActiveTab('result'); // Sonuç sekmesine geç
+      setActiveTab('result');
 
     } catch (error) {
       console.error(error);
-      alert('Analiz başarısız oldu. API anahtarını ve kotayı kontrol edin.');
+      alert('Analysis failed. Please check your API key and quota.');
     } finally {
       setIsAnalyzing(false);
     }
@@ -176,20 +162,20 @@ export default function WritingPage() {
   return (
     <div className="flex h-screen bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 overflow-hidden font-sans transition-colors duration-300">
       
-      {/* --- 1. SOL MENÜ (SIDEBAR) --- */}
+      {/* --- SIDEBAR --- */}
       <aside className={`
         fixed inset-y-0 left-0 z-50 w-72 bg-white dark:bg-slate-800 border-r border-slate-200 dark:border-slate-700 transform transition-transform duration-300 ease-in-out flex flex-col
         ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 md:relative
       `}>
         <div className="p-4 border-b border-slate-100 dark:border-slate-700 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2 font-bold text-indigo-600 dark:text-indigo-400">
-            <Icons.Back /> <span className="hidden md:inline">TestDünya</span>
+            <Icons.Back /> <span className="hidden md:inline">TestDunya</span>
           </Link>
           <button onClick={() => setIsSidebarOpen(false)} className="md:hidden p-1 text-slate-500">✕</button>
         </div>
 
         <div className="flex-1 overflow-y-auto p-3 space-y-2">
-          <h3 className="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Soru Listesi</h3>
+          <h3 className="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Question Bank</h3>
           {QUESTION_BANK.map((q) => (
             <button
               key={q.id}
@@ -212,10 +198,10 @@ export default function WritingPage() {
         </div>
       </aside>
 
-      {/* --- 2. ANA İÇERİK --- */}
+      {/* --- MAIN CONTENT --- */}
       <main className="flex-1 flex flex-col h-full relative">
         
-        {/* HEADER (MOBİL MENÜ BUTONU VE ZAMANLAYICI) */}
+        {/* HEADER */}
         <header className="h-16 bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 flex items-center justify-between px-4 md:px-8">
           <div className="flex items-center gap-4">
             <button onClick={() => setIsSidebarOpen(true)} className="md:hidden p-2 bg-slate-100 rounded-md">
@@ -236,40 +222,40 @@ export default function WritingPage() {
               disabled={isAnalyzing || essay.length < 50}
               className="px-6 py-2 bg-indigo-600 hover:bg-indigo-700 disabled:bg-slate-300 text-white rounded-lg font-bold shadow-lg shadow-indigo-200 dark:shadow-none transition-all flex items-center gap-2"
             >
-              {isAnalyzing ? 'Analiz...' : (
+              {isAnalyzing ? 'Analyzing...' : (
                 <>
-                  <Icons.Brain /> <span className="hidden sm:inline">Puanla</span>
+                  <Icons.Brain /> <span className="hidden sm:inline">Evaluate</span>
                 </>
               )}
             </button>
           </div>
         </header>
 
-        {/* ÇALIŞMA ALANI (GRID) */}
+        {/* WORKSPACE */}
         <div className="flex-1 overflow-hidden grid lg:grid-cols-2 gap-0 relative">
           
-          {/* --- SOL PANEL: SORU & SONUÇ --- */}
+          {/* --- LEFT PANEL: QUESTION & RESULT --- */}
           <div className="overflow-y-auto border-r border-slate-200 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-900/50 p-4 md:p-8">
             
-            {/* TABLAR (Soru / Sonuç) */}
+            {/* TABS */}
             <div className="flex gap-2 mb-6 border-b border-slate-200 dark:border-slate-700">
               <button 
                 onClick={() => setActiveTab('question')}
                 className={`pb-2 px-4 text-sm font-bold border-b-2 transition-colors ${activeTab === 'question' ? 'border-indigo-600 text-indigo-600 dark:text-indigo-400' : 'border-transparent text-slate-400'}`}
               >
-                Soru & Grafik
+                Question & Chart
               </button>
               {result && (
                 <button 
                   onClick={() => setActiveTab('result')}
                   className={`pb-2 px-4 text-sm font-bold border-b-2 transition-colors ${activeTab === 'result' ? 'border-emerald-600 text-emerald-600' : 'border-transparent text-slate-400'}`}
                 >
-                  Analiz Raporu
+                  Analysis Report
                 </button>
               )}
             </div>
 
-            {/* İÇERİK 1: SORU GÖRÜNÜMÜ */}
+            {/* CONTENT 1: QUESTION */}
             {activeTab === 'question' && (
               <div className="animate-fade-in space-y-6">
                 <div className="prose dark:prose-invert max-w-none">
@@ -284,13 +270,13 @@ export default function WritingPage() {
                 )}
 
                 <div className="p-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800 rounded-xl text-sm text-blue-800 dark:text-blue-200">
-                  <span className="font-bold block mb-1">💡 İpucu:</span>
-                  Bu görev için en az {currentQ.minWords} kelime yazmalısınız. Tavsiye edilen süre {currentQ.time / 60} dakikadır.
+                  <span className="font-bold block mb-1">💡 Tip:</span>
+                  You should write at least {currentQ.minWords} words for this task. Recommended time is {currentQ.time / 60} minutes.
                 </div>
               </div>
             )}
 
-            {/* İÇERİK 2: SONUÇ GÖRÜNÜMÜ */}
+            {/* CONTENT 2: RESULT */}
             {activeTab === 'result' && result && (
               <div className="animate-fade-in space-y-6">
                 <div className="flex items-center justify-between p-6 bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700">
@@ -299,7 +285,7 @@ export default function WritingPage() {
                     <div className="text-5xl font-black text-indigo-600 dark:text-indigo-400">{result.score}</div>
                   </div>
                   <div className="text-right">
-                    <div className="text-sm text-slate-500 font-bold">Kelime</div>
+                    <div className="text-sm text-slate-500 font-bold">Words</div>
                     <div className="text-2xl font-bold text-slate-800 dark:text-white">{wordCount}</div>
                   </div>
                 </div>
@@ -307,7 +293,7 @@ export default function WritingPage() {
                 <div className="space-y-4">
                   <div className="bg-emerald-50 dark:bg-emerald-900/20 p-5 rounded-xl border border-emerald-100 dark:border-emerald-800">
                     <h4 className="font-bold text-emerald-800 dark:text-emerald-400 mb-2 flex items-center gap-2">
-                      <Icons.Check /> Genel Değerlendirme
+                      <Icons.Check /> General Feedback
                     </h4>
                     <p className="text-emerald-900 dark:text-emerald-100 leading-relaxed text-sm">
                       {result.feedback}
@@ -315,7 +301,7 @@ export default function WritingPage() {
                   </div>
 
                   <div className="bg-red-50 dark:bg-red-900/20 p-5 rounded-xl border border-red-100 dark:border-red-800">
-                    <h4 className="font-bold text-red-800 dark:text-red-400 mb-3">Düzeltilmesi Gerekenler</h4>
+                    <h4 className="font-bold text-red-800 dark:text-red-400 mb-3">Corrections & Improvements</h4>
                     <ul className="space-y-2">
                       {result.corrections.map((item, idx) => (
                         <li key={idx} className="flex gap-3 text-sm text-slate-700 dark:text-slate-300 p-2 bg-white dark:bg-slate-800 rounded border border-red-100 dark:border-red-900/30">
@@ -337,17 +323,17 @@ export default function WritingPage() {
                   }}
                   className="w-full py-3 border-2 border-dashed border-slate-300 dark:border-slate-600 text-slate-500 hover:border-indigo-500 hover:text-indigo-500 rounded-xl font-bold transition-all flex items-center justify-center gap-2"
                 >
-                  <Icons.Refresh /> Bu Soruyu Tekrar Çöz
+                  <Icons.Refresh /> Try Again
                 </button>
               </div>
             )}
           </div>
 
-          {/* --- SAĞ PANEL: EDİTÖR --- */}
+          {/* --- RIGHT PANEL: EDITOR --- */}
           <div className="flex flex-col h-full bg-white dark:bg-slate-800">
             <textarea
               className="flex-1 w-full p-6 md:p-8 text-lg leading-relaxed resize-none focus:outline-none bg-transparent text-slate-800 dark:text-slate-200 placeholder-slate-300 dark:placeholder-slate-600 font-serif"
-              placeholder="Essay'inizi buraya yazmaya başlayın. Süre otomatik başlayacaktır..."
+              placeholder="Start typing your essay here. The timer will start automatically..."
               value={essay}
               onChange={handleTextChange}
               spellCheck={false}
@@ -357,10 +343,10 @@ export default function WritingPage() {
             {/* FOOTER BAR */}
             <div className="h-12 border-t border-slate-100 dark:border-slate-700 flex items-center justify-between px-6 text-sm text-slate-400 bg-slate-50 dark:bg-slate-900/50">
               <div className={`${wordCount < currentQ.minWords ? 'text-orange-500' : 'text-emerald-500'} font-bold transition-colors`}>
-                {wordCount} / {currentQ.minWords} Kelime
+                {wordCount} / {currentQ.minWords} Words
               </div>
               <div className="flex gap-4">
-                <span>{essay.length} Karakter</span>
+                <span>{essay.length} Chars</span>
                 <span className="hidden sm:inline opacity-50">Auto-save: Local</span>
               </div>
             </div>
