@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 
-// --- TİP TANIMLARI ---
+// --- TYPES ---
 type Message = {
   role: 'user' | 'ai';
   text: string;
@@ -18,13 +18,11 @@ type ScoreResult = {
   overall_comment: string;
 };
 
-// --- İKONLAR ---
+// --- ICONS ---
 const Icons = {
   Mic: () => <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>,
   Stop: () => <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><rect x="9" y="9" width="6" height="6"/></svg>,
   Play: () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>,
-  User: () => <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>,
-  Bot: () => <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="18" height="12" x="3" y="6" rx="2"/><path d="M12 6V3"/><line x1="8" x2="16" y1="2" y2="2"/></svg>,
   Flag: () => <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" x2="4" y1="22" y2="15"/></svg>
 };
 
@@ -37,7 +35,7 @@ export default function SpeakingPage() {
   const [isLoading, setIsLoading] = useState(false);
   const [scoreResult, setScoreResult] = useState<ScoreResult | null>(null);
   
-  // Hata mesajı göstermek için state
+  // Error state
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   const chatEndRef = useRef<HTMLDivElement>(null);
@@ -64,7 +62,7 @@ export default function SpeakingPage() {
   const handleFinishExam = async () => {
     if (messages.length < 2) return alert("Please answer at least a few questions before finishing.");
     setIsLoading(true);
-    setErrorMessage(null); // Hata varsa temizle
+    setErrorMessage(null);
 
     try {
       const response = await fetch('/api/speaking', {
@@ -79,18 +77,18 @@ export default function SpeakingPage() {
       const data = await response.json();
       
       if (!response.ok) {
-        throw new Error(data.reply || data.error || "Puanlama sırasında hata oluştu.");
+        throw new Error(data.reply || data.error || "An error occurred during grading.");
       }
 
       if (data.band_score !== undefined) {
          setScoreResult(data);
       } else {
-         throw new Error("Puan verisi alınamadı.");
+         throw new Error("Could not retrieve score data.");
       }
 
     } catch (error: any) {
       console.error(error);
-      setErrorMessage(error.message || "Bilinmeyen bir hata oluştu.");
+      setErrorMessage(error.message || "An unknown error occurred.");
     } finally {
       setIsLoading(false);
     }
@@ -116,7 +114,7 @@ export default function SpeakingPage() {
     recognition.onerror = (e: any) => {
       setIsRecording(false);
       console.error("Mic Error:", e);
-      alert("Mikrofon hatası: " + e.error);
+      alert("Microphone error: " + e.error);
     };
     recognition.onend = () => setIsRecording(false);
     recognition.start();
@@ -139,20 +137,17 @@ export default function SpeakingPage() {
         }),
       });
 
-      // API 429 veya 500 dönerse burası yakalar
       const data = await response.json();
       
       if (response.status === 429) {
-        // RATE LIMIT HATASI
-        throw new Error("⚠️ " + (data.reply || "Çok hızlı gidiyorsunuz. Biraz bekleyin."));
+        // RATE LIMIT ERROR (ENGLISH)
+        throw new Error("⚠️ " + (data.reply || "You are going too fast. Please wait a moment."));
       }
       
       if (!response.ok) {
-        // DİĞER HATALAR
-        throw new Error(data.reply || data.error || "Sunucu hatası.");
+        throw new Error(data.reply || data.error || "Server error.");
       }
 
-      // BAŞARILI
       const aiMessage: Message = {
         role: 'ai',
         text: data.reply,
@@ -164,17 +159,13 @@ export default function SpeakingPage() {
 
     } catch (error: any) {
       console.error("Chat Error:", error);
-      // Hatayı kullanıcıya göster
       setErrorMessage(error.message);
-      
-      // Kullanıcı tekrar deneyebilsin diye son mesajı silebiliriz veya bırakabiliriz
-      // Şimdilik bırakıyoruz ki ne dediğini görsün.
     } finally {
       setIsLoading(false);
     }
   };
 
-  // --- EKRAN 1: GİRİŞ ---
+  // --- SCREEN 1: WELCOME ---
   if (!hasStarted) {
     return (
       <div className="flex h-screen items-center justify-center bg-slate-900 text-white p-4 font-sans">
@@ -184,17 +175,17 @@ export default function SpeakingPage() {
           </div>
           <div className="space-y-2">
             <h1 className="text-3xl font-black">Speaking Simulator</h1>
-            <p className="text-slate-400">Yapay zeka ile konuşarak pratik yapın.</p>
+            <p className="text-slate-400">Practice IELTS Speaking with AI.</p>
           </div>
           <button onClick={handleStart} className="w-full py-4 bg-white text-slate-900 font-bold rounded-xl hover:scale-105 transition-transform flex items-center justify-center gap-2">
-            <Icons.Play /> Başla
+            <Icons.Play /> Start Exam
           </button>
         </div>
       </div>
     );
   }
 
-  // --- EKRAN 2: SONUÇ ---
+  // --- SCREEN 2: RESULT ---
   if (scoreResult) {
     return (
       <div className="min-h-screen bg-slate-50 dark:bg-slate-900 p-4 font-sans">
@@ -205,7 +196,6 @@ export default function SpeakingPage() {
             <p className="text-slate-600 dark:text-slate-300 mt-4 text-lg">{scoreResult.overall_comment}</p>
           </div>
           
-          {/* Detaylar */}
           <div className="grid md:grid-cols-3 gap-4">
              <div className="bg-blue-50 p-4 rounded-xl border border-blue-100">
                 <b className="text-blue-800 block mb-2">Fluency</b>
@@ -222,24 +212,24 @@ export default function SpeakingPage() {
           </div>
 
           <button onClick={() => window.location.reload()} className="w-full py-4 bg-slate-900 text-white font-bold rounded-xl">
-            Tekrar Dene
+            Try Again
           </button>
         </div>
       </div>
     );
   }
 
-  // --- EKRAN 3: SOHBET ---
+  // --- SCREEN 3: CHAT ---
   return (
     <div className="flex flex-col h-screen bg-slate-50 dark:bg-slate-900 font-sans">
       <div className="p-4 bg-white dark:bg-slate-800 border-b flex justify-between items-center shadow-sm z-10">
-        <Link href="/" className="text-sm font-bold text-slate-500">Çıkış</Link>
+        <Link href="/" className="text-sm font-bold text-slate-500">Exit</Link>
         <div className="flex items-center gap-2">
            <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
            <span className="font-bold text-slate-700 dark:text-slate-200">LIVE EXAM</span>
         </div>
         <button onClick={handleFinishExam} disabled={isLoading} className="text-xs font-bold bg-slate-100 px-3 py-1.5 rounded hover:bg-red-100 hover:text-red-600 transition-colors flex gap-1">
-           <Icons.Flag /> Bitir
+           <Icons.Flag /> Finish
         </button>
       </div>
 
@@ -257,10 +247,10 @@ export default function SpeakingPage() {
           </div>
         ))}
 
-        {/* --- HATA MESAJI KUTUSU (YENİ) --- */}
+        {/* --- ERROR MESSAGE BOX (ENGLISH) --- */}
         {errorMessage && (
            <div className="mx-auto max-w-md bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative animate-bounce" role="alert">
-              <strong className="font-bold">Hata: </strong>
+              <strong className="font-bold">Error: </strong>
               <span className="block sm:inline">{errorMessage}</span>
            </div>
         )}
@@ -280,7 +270,7 @@ export default function SpeakingPage() {
              <Icons.Mic />
           </button>
         )}
-        <p className="text-xs text-slate-400">{isRecording ? "Dinliyor..." : "Konuşmak için bas"}</p>
+        <p className="text-xs text-slate-400">{isRecording ? "Listening..." : "Tap to Speak"}</p>
       </div>
     </div>
   );
