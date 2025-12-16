@@ -65,27 +65,28 @@ const TimerIcon = (props: React.SVGProps<SVGSVGElement>) => (
 const GamepadIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 12h4m-2-2v4m9-2h2m-1-1h.01m-1 3h.01"/></svg>
 );
-// --- SINAV AYARLARI ---
+
+// --- EXAM CONFIGURATION (GLOBAL ENGLISH) ---
 const examConfig = [
   {
-  id: 'ielts-seviye-tespit',
-  prefix: 'ielts-seviye-tespit', // JSON dosya adı ile aynı olmalı
-  title: 'Seviye Belirleme',
-  count: 1, // Tek bir sınav
-  activeLimit: 1,
-  desc: '50 soruda İngilizce seviyenizi ve tahmini IELTS skorunuzu öğrenin.',
-  icon: <Target className="w-6 h-6 text-white" />,
-  gradient: 'from-violet-600 to-fuchsia-600',
-  border: 'border-violet-100',
-  slug: 'placement-test'
+    id: 'placement',
+    prefix: 'ielts-level-test', // JSON dosya adı: ielts-level-test-1.json olmalı
+    title: 'Level Assessment',
+    count: 1,
+    activeLimit: 1,
+    desc: 'Find out your English level and estimated IELTS Band Score in 50 questions.',
+    icon: <Target className="w-6 h-6 text-white" />,
+    gradient: 'from-violet-600 to-fuchsia-600',
+    border: 'border-violet-100',
+    slug: 'placement-test'
   },
   {
     id: 'yks',
     prefix: 'yks-sozel-deneme',
-    title: 'YKS Sözel',
+    title: 'YKS Verbal (Sözel)',
     count: 30,
     activeLimit: 10,
-    desc: 'TYT ve AYT odaklı kapsamlı, yeni nesil deneme setleri.',
+    desc: 'Comprehensive TYT & AYT practice tests for Turkish University Entrance.',
     icon: <Book className="w-6 h-6 text-white" />,
     gradient: 'from-blue-600 to-indigo-600',
     border: 'border-blue-100',
@@ -94,10 +95,10 @@ const examConfig = [
   {
     id: 'kpss',
     prefix: 'kpss-sozel',
-    title: 'KPSS Genel Kültür',
+    title: 'KPSS General Culture',
     count: 21,
     activeLimit: 10,
-    desc: 'Tarih, Coğrafya ve Vatandaşlık için özgün sorular.',
+    desc: 'History, Geography, and Citizenship questions for Public Personnel Exam.',
     icon: <Brain className="w-6 h-6 text-white" />,
     gradient: 'from-orange-500 to-red-500',
     border: 'border-orange-100',
@@ -106,10 +107,10 @@ const examConfig = [
   {
     id: 'tus',
     prefix: 'tus-deneme',
-    title: 'TUS Denemeleri',
+    title: 'Medical (TUS)',
     count: 35,
     activeLimit: 35,
-    desc: 'TUS için Temel ve Klinik Bilimler vaka soruları.',
+    desc: 'Clinical sciences and case studies for Medical Specialization.',
     icon: <Stethoscope className="w-6 h-6 text-white" />,
     gradient: 'from-emerald-500 to-teal-600',
     border: 'border-emerald-100',
@@ -118,10 +119,10 @@ const examConfig = [
   {
     id: 'dus',
     prefix: 'dus-deneme',
-    title: 'DUS Denemeleri',
+    title: 'Dentistry (DUS)',
     count: 17,
     activeLimit: 17,
-    desc: 'Diş Hekimliği Uzmanlık Sınavı için klinik ve temel sorular.',
+    desc: 'Specialization exam practice for Dentistry students.',
     icon: <Tooth className="w-6 h-6 text-white" />,
     gradient: 'from-cyan-500 to-blue-500',
     border: 'border-cyan-100',
