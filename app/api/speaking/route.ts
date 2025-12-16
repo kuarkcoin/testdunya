@@ -1,56 +1,94 @@
 import { NextResponse } from 'next/server';
-import { GoogleGenerativeAI, SchemaType } from "@google/generative-ai";
+import { GoogleGenerativeAI, SchemaType } from "@google/genai"; // Veya @google/generative-ai (sürümünüze göre)
 
-const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY!);
+// NOT: @google/generative-ai kullanıyorsanız importu ona göre düzeltin.
+// Aşağıdaki kod @google/generative-ai kütüphanesine göre yazılmıştır:
+import { GoogleGenerativeAI as GenAI_Legacy } from "@google/generative-ai"; 
 
 export async function POST(request: Request) {
   try {
-    // Frontend'den gelen konuşma geçmişini ve son mesajı alıyoruz
-    const { message, history } = await request.json();
+    const apiKey = process.env.GOOGLE_API_KEY;
+    if (!apiKey) return NextResponse.json({ error: "API Key missing" }, { status: 500 });
 
+    const genAI = new GenAI_Legacy(apiKey);
+    const { message, history, mode } = await request.json(); // mode: 'chat' | 'grade'
+
+    // --- SENARYO 1: PUANLAMA MODU (FINISH & SCORE) ---
+    if (mode === 'grade') {
+      const model = genAI.getGenerativeModel({
+        model: "gemini-1.5-flash",
+        generationConfig: {
+          responseMimeType: "application/json",
+          responseSchema: {
+            type: SchemaType.OBJECT,
+            properties: {
+              band_score: { type: SchemaType.NUMBER },
+              fluency_feedback: { type: SchemaType.STRING },
+              lexical_feedback: { type: SchemaType.STRING },
+              grammar_feedback: { type: SchemaType.STRING },
+              pronunciation_feedback: { type: SchemaType.STRING },
+              overall_comment: { type: SchemaType.STRING }
+            }
+          }
+        }
+      });
+
+      const prompt = `
+        Act as a strict IELTS Examiner.
+        Review the following conversation history and provide a final evaluation.
+        
+        CRITERIA:
+        1. Fluency & Coherence
+        2. Lexical Resource
+        3. Grammatical Range & Accuracy
+        4. Pronunciation (Estimate based on text flow/complexity)
+
+        CONVERSATION HISTORY:
+        ${JSON.stringify(history)}
+
+        TASK:
+        Provide an estimated Band Score (0-9) and detailed feedback for each criterion in ENGLISH.
+      `;
+
+      const result = await model.generateContent(prompt);
+      const jsonResult = JSON.parse(result.response.text());
+      return NextResponse.json(jsonResult);
+    }
+
+    // --- SENARYO 2: SOHBET MODU (CHAT) ---
     const model = genAI.getGenerativeModel({
-      model: "gemini-1.5-flash", // Hızlı cevap için ideal
+      model: "gemini-1.5-flash",
       generationConfig: {
         responseMimeType: "application/json",
         responseSchema: {
           type: SchemaType.OBJECT,
           properties: {
-            reply: { type: SchemaType.STRING, description: "Examiner's next question or comment in English" },
-            feedback: { type: SchemaType.STRING, description: "Brief grammar correction of the user's last sentence (if any) in Turkish" },
-            state: { type: SchemaType.STRING, description: "Current stage: 'intro', 'part1', 'part2', 'finished'" }
+            reply: { type: SchemaType.STRING },
+            feedback: { type: SchemaType.STRING }, // Artık İngilizce olacak
           }
         }
       }
     });
 
-    // Yapay Zekaya Rol Veriyoruz
     const prompt = `
-      You are a friendly but professional IELTS Speaking Examiner.
+      You are an IELTS Speaking Examiner (Part 1, 2, or 3).
       
-      CONTEXT:
-      We are doing a simulation.
-      Previous Conversation History: ${JSON.stringify(history)}
+      HISTORY: ${JSON.stringify(history)}
+      USER SAID: "${message}"
       
-      USER'S LAST INPUT:
-      "${message}"
-      
-      YOUR TASK:
-      1. Respond to what the user said naturally.
-      2. Ask a follow-up question (like IELTS Part 1: Hobbies, Hometown, Work, etc.).
-      3. If the user makes a grammar mistake, provide a short correction in "feedback".
-      4. Keep your replies short (1-2 sentences) so the user can speak more.
-      
-      Return JSON: { reply, feedback, state }
+      TASK:
+      1. Reply naturally and ask the next relevant question.
+      2. Keep responses short (1-2 sentences).
+      3. If the user made a grammar mistake in the last sentence, provide a correction in 'feedback' (in English). If no mistake, leave empty.
+      4. DO NOT give a score yet.
     `;
 
     const result = await model.generateContent(prompt);
-    const response = await result.response;
-    const jsonResult = JSON.parse(response.text());
-
+    const jsonResult = JSON.parse(result.response.text());
     return NextResponse.json(jsonResult);
 
   } catch (error: any) {
-    console.error('Speaking API Error:', error);
+    console.error('API Error:', error);
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
 }
