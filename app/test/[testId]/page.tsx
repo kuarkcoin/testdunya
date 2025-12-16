@@ -325,21 +325,67 @@ export default function QuizPage() {
   if (loading) return <div className="min-h-screen flex items-center justify-center text-slate-500 font-bold animate-pulse">{labels.loading}</div>;
   if (error) return <div className="min-h-screen flex items-center justify-center text-red-500 font-bold">{error}</div>;
 
-  // --- RESULT SCREEN ---
+    // --- RESULT SCREEN ---
   if (showResult) {
     const percentage = Math.round((score / questions.length) * 100);
+
+    // --- YENİ EKLENEN KISIM: SEVİYE VE BAND HESAPLAMA ---
+    // Sadece 50 soruluk test için değil, genel olarak yüzdesel de çalışacak şekilde ayarladım.
+    // Ancak özellikle seviye tespit sınavı için skor aralıkları şöyledir:
+    let estimatedLevel = "A1 (Beginner)";
+    let estimatedBand = "Band 2.0 - 3.0";
+    let badgeColor = "bg-slate-100 text-slate-600 border-slate-200";
+
+    if (score >= 10) { 
+      estimatedLevel = "A2 (Elementary)"; 
+      estimatedBand = "Band 3.5 - 4.0"; 
+      badgeColor = "bg-sky-100 text-sky-700 border-sky-200";
+    }
+    if (score >= 20) { 
+      estimatedLevel = "B1 (Intermediate)"; 
+      estimatedBand = "Band 4.5 - 5.0"; 
+      badgeColor = "bg-cyan-100 text-cyan-700 border-cyan-200";
+    }
+    if (score >= 30) { 
+      estimatedLevel = "B2 (Upper Intermediate)"; 
+      estimatedBand = "Band 5.5 - 6.5"; 
+      badgeColor = "bg-indigo-100 text-indigo-700 border-indigo-200";
+    }
+    if (score >= 40) { 
+      estimatedLevel = "C1 (Advanced)"; 
+      estimatedBand = "Band 7.0 - 8.0"; 
+      badgeColor = "bg-violet-100 text-violet-700 border-violet-200";
+    }
+    if (score >= 48) { 
+      estimatedLevel = "C2 (Proficiency)"; 
+      estimatedBand = "Band 8.5 - 9.0"; 
+      badgeColor = "bg-fuchsia-100 text-fuchsia-700 border-fuchsia-200";
+    }
+    // -------------------------------------------------------
+
     return (
       <div className="min-h-screen bg-slate-50 py-12 px-4">
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="bg-white p-8 rounded-3xl shadow-xl border border-slate-200 text-center relative overflow-hidden">
             <h1 className="text-3xl font-black text-slate-800 mb-6">{labels.resultTitle}</h1>
-            <div className="text-6xl font-black text-indigo-600 mb-4">%{percentage}</div>
-            <div className="text-slate-500 font-bold">{score} / {questions.length}</div>
+            
+            <div className="text-6xl font-black text-indigo-600 mb-2">%{percentage}</div>
+            
+            {/* --- SEVİYE GÖSTERGESİ (YENİ) --- */}
+            <div className={`inline-flex flex-col md:flex-row items-center gap-2 px-6 py-3 rounded-xl border-2 mb-6 ${badgeColor}`}>
+              <span className="font-black text-lg">{estimatedLevel}</span>
+              <span className="hidden md:block opacity-40">•</span>
+              <span className="font-bold text-lg">{estimatedBand}</span>
+            </div>
+            
+            <div className="text-slate-500 font-bold text-lg">{score} / {questions.length} {labels.correct}</div>
+            
             <div className="flex justify-center gap-4 mt-8">
-               <Link href="/" className="px-6 py-2 bg-slate-100 rounded-lg font-bold">{labels.homeButton}</Link>
-               <Link href="/mistakes" className="px-6 py-2 bg-rose-100 text-rose-600 rounded-lg font-bold">{labels.seeMistakes}</Link>
+               <Link href="/" className="px-6 py-3 bg-slate-100 hover:bg-slate-200 transition text-slate-700 rounded-xl font-bold">{labels.homeButton}</Link>
+               <Link href="/mistakes" className="px-6 py-3 bg-rose-100 hover:bg-rose-200 transition text-rose-600 rounded-xl font-bold">{labels.seeMistakes}</Link>
             </div>
           </div>
+
           <div className="space-y-6">
             <h2 className="text-xl font-bold text-slate-700 ml-2 border-l-4 border-indigo-500 pl-3">{labels.analysis}</h2>
             {questions.map((q, idx) => {
@@ -390,6 +436,7 @@ export default function QuizPage() {
       </div>
     );
   }
+
 
   // --- QUIZ SCREEN ---
   return (
