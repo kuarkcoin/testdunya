@@ -3998,5 +3998,321 @@
     {
         "word": "send down",
         "meaning": "to send someone to prison"
+    },
+    {
+        "word": "abruptly",
+        "meaning": "suddenly and unexpectedly"
+    },
+    {
+        "word": "accurately",
+        "meaning": "in a correct and precise way"
+    },
+    {
+        "word": "actively",
+        "meaning": "with energy or participation"
+    },
+    {
+        "word": "adequately",
+        "meaning": "to a satisfactory degree"
+    },
+    {
+        "word": "adversely",
+        "meaning": "in a harmful or negative way"
+    },
+    {
+        "word": "apparently",
+        "meaning": "as far as can be seen or understood"
+    },
+    {
+        "word": "approximately",
+        "meaning": "almost exactly; roughly"
+    },
+    {
+        "word": "arguably",
+        "meaning": "it can be reasonably claimed that"
+    },
+    {
+        "word": "barely",
+        "meaning": "only just; hardly"
+    },
+    {
+        "word": "broadly",
+        "meaning": "in general terms"
+    },
+    {
+        "word": "carefully",
+        "meaning": "with attention and caution"
+    },
+    {
+        "word": "clearly",
+        "meaning": "in an easy-to-understand way"
+    },
+    {
+        "word": "closely",
+        "meaning": "with careful attention"
+    },
+    {
+        "word": "commonly",
+        "meaning": "frequently; usually"
+    },
+    {
+        "word": "comparatively",
+        "meaning": "when compared with others"
+    },
+    {
+        "word": "consistently",
+        "meaning": "in the same way over time"
+    },
+    {
+        "word": "considerably",
+        "meaning": "by a large amount"
+    },
+    {
+        "word": "constantly",
+        "meaning": "all the time"
+    },
+    {
+        "word": "conversely",
+        "meaning": "in the opposite way"
+    },
+    {
+        "word": "critically",
+        "meaning": "in an important or serious way"
+    },
+    {
+        "word": "currently",
+        "meaning": "at the present time"
+    },
+    {
+        "word": "deliberately",
+        "meaning": "on purpose"
+    },
+    {
+        "word": "dramatically",
+        "meaning": "suddenly and noticeably"
+    },
+    {
+        "word": "effectively",
+        "meaning": "in a successful way"
+    },
+    {
+        "word": "efficiently",
+        "meaning": "without wasting time or resources"
+    },
+    {
+        "word": "equally",
+        "meaning": "to the same degree"
+    },
+    {
+        "word": "essentially",
+        "meaning": "basically; fundamentally"
+    },
+    {
+        "word": "eventually",
+        "meaning": "in the end"
+    },
+    {
+        "word": "evidently",
+        "meaning": "clearly; obviously"
+    },
+    {
+        "word": "excessively",
+        "meaning": "too much"
+    },
+    {
+        "word": "explicitly",
+        "meaning": "clearly and directly"
+    },
+    {
+        "word": "frequently",
+        "meaning": "often"
+    },
+    {
+        "word": "generally",
+        "meaning": "in most cases"
+    },
+    {
+        "word": "gradually",
+        "meaning": "slowly over time"
+    },
+    {
+        "word": "hardly",
+        "meaning": "almost not"
+    },
+    {
+        "word": "heavily",
+        "meaning": "to a great degree"
+    },
+    {
+        "word": "highly",
+        "meaning": "to a very great degree"
+    },
+    {
+        "word": "increasingly",
+        "meaning": "more and more"
+    },
+    {
+        "word": "inevitably",
+        "meaning": "certain to happen"
+    },
+    {
+        "word": "initially",
+        "meaning": "at first"
+    },
+    {
+        "word": "largely",
+        "meaning": "mostly"
+    },
+    {
+        "word": "likewise",
+        "meaning": "in the same way"
+    },
+    {
+        "word": "markedly",
+        "meaning": "noticeably"
+    },
+    {
+        "word": "meanwhile",
+        "meaning": "at the same time"
+    },
+    {
+        "word": "merely",
+        "meaning": "only; just"
+    },
+    {
+        "word": "moderately",
+        "meaning": "to an average degree"
+    },
+    {
+        "word": "notably",
+        "meaning": "especially; remarkably"
+    },
+    {
+        "word": "objectively",
+        "meaning": "without personal feelings or bias"
+    },
+    {
+        "word": "occasionally",
+        "meaning": "sometimes"
+    },
+    {
+        "word": "overall",
+        "meaning": "considering everything"
+    },
+    {
+        "word": "partially",
+        "meaning": "not completely"
+    },
+    {
+        "word": "particularly",
+        "meaning": "especially"
+    },
+    {
+        "word": "potentially",
+        "meaning": "possibly"
+    },
+    {
+        "word": "predominantly",
+        "meaning": "mainly"
+    },
+    {
+        "word": "previously",
+        "meaning": "before now"
+    },
+    {
+        "word": "primarily",
+        "meaning": "mainly; chiefly"
+    },
+    {
+        "word": "progressively",
+        "meaning": "gradually over time"
+    },
+    {
+        "word": "proportionally",
+        "meaning": "in correct relation to size or amount"
+    },
+    {
+        "word": "rapidly",
+        "meaning": "very quickly"
+    },
+    {
+        "word": "readily",
+        "meaning": "easily; willingly"
+    },
+    {
+        "word": "relatively",
+        "meaning": "in comparison with others"
+    },
+    {
+        "word": "remarkably",
+        "meaning": "surprisingly"
+    },
+    {
+        "word": "roughly",
+        "meaning": "approximately"
+    },
+    {
+        "word": "significantly",
+        "meaning": "in an important or noticeable way"
+    },
+    {
+        "word": "similarly",
+        "meaning": "in a comparable way"
+    },
+    {
+        "word": "simultaneously",
+        "meaning": "at the same time"
+    },
+    {
+        "word": "slightly",
+        "meaning": "a little"
+    },
+    {
+        "word": "specifically",
+        "meaning": "in a particular way"
+    },
+    {
+        "word": "steadily",
+        "meaning": "at a constant rate"
+    },
+    {
+        "word": "subsequently",
+        "meaning": "afterwards"
+    },
+    {
+        "word": "substantially",
+        "meaning": "by a large amount"
+    },
+    {
+        "word": "successfully",
+        "meaning": "with positive results"
+    },
+    {
+        "word": "sufficiently",
+        "meaning": "enough"
+    },
+    {
+        "word": "theoretically",
+        "meaning": "in theory"
+    },
+    {
+        "word": "traditionally",
+        "meaning": "according to tradition"
+    },
+    {
+        "word": "typically",
+        "meaning": "usually"
+    },
+    {
+        "word": "ultimately",
+        "meaning": "in the final result"
+    },
+    {
+        "word": "unexpectedly",
+        "meaning": "in a surprising way"
+    },
+    {
+        "word": "widely",
+        "meaning": "in many places or among many people"
     }
 ]
