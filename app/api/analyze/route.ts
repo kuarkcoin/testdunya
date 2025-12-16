@@ -1,21 +1,20 @@
+// app/api/analyze/route.ts
 import { NextResponse } from 'next/server';
 import { GoogleGenerativeAI, SchemaType } from "@google/generative-ai";
 
 export async function POST(request: Request) {
   try {
-    // 1. API Anahtarını Al
+    // 1. Şifre Kontrolü
     const apiKey = process.env.GOOGLE_API_KEY;
     if (!apiKey) {
-      return NextResponse.json({ error: "API Key bulunamadı (Vercel Ayarları)" }, { status: 500 });
+      console.error("HATA: API Anahtarı Vercel'de bulunamadı!");
+      return NextResponse.json({ error: "Server API Key Missing" }, { status: 500 });
     }
 
-    // 2. Google AI Kurulumu
+    // 2. Kurulum
     const genAI = new GoogleGenerativeAI(apiKey);
-
-    // --- KRİTİK DÜZELTME BURADA ---
-    // Eski kodda "gemini-pro" kalmış olabilir. Bunu "gemini-1.5-flash" yapıyoruz.
     const model = genAI.getGenerativeModel({
-      model: "gemini-1.0-pro", // <--- BURASI DEĞİŞTİ
+      model: "gemini-1.5-flash", // En güvenli model
       generationConfig: {
         responseMimeType: "application/json",
         responseSchema: {
@@ -23,45 +22,31 @@ export async function POST(request: Request) {
           properties: {
             score: { type: SchemaType.NUMBER },
             feedback: { type: SchemaType.STRING },
-            corrections: { 
-              type: SchemaType.ARRAY, 
-              items: { type: SchemaType.STRING } 
-            }
+            corrections: { type: SchemaType.ARRAY, items: { type: SchemaType.STRING } }
           }
         }
       }
     });
 
-    const { essay, taskType, contextData } = await request.json();
-
-    // 3. Prompt (İngilizce Talimat - Doktorlar için daha iyi)
-    const prompt = `
-      Act as an IELTS Examiner.
-      Task: ${taskType}
-      Context: ${contextData || "General Topic"}
-      Essay: "${essay}"
-      
-      Output strictly in JSON format:
-      {
-        "score": (number 0-9),
-        "feedback": (string in Academic English),
-        "corrections": (array of strings showing mistakes)
-      }
-    `;
-
-    const result = await model.generateContent(prompt);
-    const response = await result.response;
-    const text = response.text();
-
-    // JSON Temizliği (Garantilemek için)
-    const cleanText = text.replace(/```json/g, '').replace(/```/g, '').trim();
+    // 3. Veriyi Al
+    const { essay, taskType } = await request.json();
     
-    return NextResponse.json(JSON.parse(cleanText));
+    // 4. Gemini'ye Gönder
+    const result = await model.generateContent(`
+      Act as an IELTS Examiner. Score this essay.
+      Task: ${taskType}
+      Essay: "${essay}"
+      Output JSON format: { score, feedback, corrections }
+    `);
+
+    // 5. Sonucu Döndür
+    const jsonResponse = JSON.parse(result.response.text());
+    return NextResponse.json(jsonResponse);
 
   } catch (error: any) {
-    console.error("API Error:", error);
+    console.error("VERCEL LOG HATASI:", error); // Hatayı Loglara basar
     return NextResponse.json(
-      { error: error.message || "Model Hatası" },
+      { error: error.message || "Bilinmeyen bir hata oluştu" }, 
       { status: 500 }
     );
   }
