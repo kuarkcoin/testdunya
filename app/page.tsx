@@ -68,6 +68,18 @@ const GamepadIcon = (props: React.SVGProps<SVGSVGElement>) => (
 // --- SINAV AYARLARI ---
 const examConfig = [
   {
+  id: 'ielts-seviye-tespit',
+  prefix: 'ielts-seviye-tespit', // JSON dosya adı ile aynı olmalı
+  title: 'Seviye Belirleme',
+  count: 1, // Tek bir sınav
+  activeLimit: 1,
+  desc: '50 soruda İngilizce seviyenizi ve tahmini IELTS skorunuzu öğrenin.',
+  icon: <Target className="w-6 h-6 text-white" />,
+  gradient: 'from-violet-600 to-fuchsia-600',
+  border: 'border-violet-100',
+  slug: 'placement-test'
+  },
+  {
     id: 'yks',
     prefix: 'yks-sozel-deneme',
     title: 'YKS Sözel',
