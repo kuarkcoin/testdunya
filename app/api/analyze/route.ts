@@ -1,38 +1,58 @@
 import { NextResponse } from 'next/server';
-import { GoogleGenerativeAI, SchemaType } from "@google/generative-ai";
+import { GoogleGenerativeAI } from "@google/generative-ai";
+
+export const runtime = "nodejs";
 
 export async function POST(request: Request) {
   try {
     const apiKey = process.env.GOOGLE_API_KEY;
     if (!apiKey) {
-      return NextResponse.json({ error: "API Key Vercel ayarlarında yok!" }, { status: 500 });
+      return NextResponse.json(
+        { error: "GOOGLE_API_KEY bulunamadı (Vercel env)" },
+        { status: 500 }
+      );
     }
 
     const genAI = new GoogleGenerativeAI(apiKey);
+
     const model = genAI.getGenerativeModel({
-      model: "gemini-1.5-pro",
+      model: "gemini-pro", // ✅ BURASI KRİTİK
       generationConfig: {
-        responseMimeType: "application/json"
-      }
+        responseMimeType: "application/json",
+      },
     });
 
-    const { essay, taskType } = await request.json();
+    const { essay, taskType, contextData } = await request.json();
 
     const result = await model.generateContent(`
-      IELTS Examiner puanlaması yap.
-      Task: ${taskType}
-      Essay: ${essay}
-      Lütfen sadece şu JSON formatında cevap ver: 
-      {"score": 0, "feedback": "tr", "corrections": []}
-    `);
+You are an official IELTS examiner.
+
+Task Type: ${taskType}
+Context: ${contextData || "N/A"}
+
+Evaluate the essay below.
+
+Essay:
+${essay}
+
+Respond ONLY in valid JSON:
+{
+  "score": 0,
+  "feedback": "string",
+  "corrections": ["string", "string"]
+}
+`);
 
     const text = result.response.text();
-    // JSON temizliği (Bazen AI markdown ekler)
-    const cleanText = text.replace(/```json/g, '').replace(/```/g, '').trim();
-    
+    const cleanText = text.replace(/```json|```/g, '').trim();
+
     return NextResponse.json(JSON.parse(cleanText));
 
   } catch (error: any) {
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    console.error("GEMINI ERROR:", error);
+    return NextResponse.json(
+      { error: error.message || "Unknown error" },
+      { status: 500 }
+    );
   }
 }
