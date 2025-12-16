@@ -133,7 +133,7 @@ export async function POST(request: Request) {
     const result = await withFailover(async (apiKey) => {
       const genAI = new GoogleGenerativeAI(apiKey);
       const model = genAI.getGenerativeModel({
-        model: "gemini-1.5-flash", // En stabil model
+        model: "gemini-2.5-flash", // En stabil model
         safetySettings: [
           { category: HarmCategory.HARM_CATEGORY_HARASSMENT, threshold: HarmBlockThreshold.BLOCK_NONE },
           { category: HarmCategory.HARM_CATEGORY_HATE_SPEECH, threshold: HarmBlockThreshold.BLOCK_NONE },
