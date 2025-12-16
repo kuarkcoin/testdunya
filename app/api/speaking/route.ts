@@ -1,9 +1,13 @@
 import { NextResponse } from "next/server";
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import {
+  GoogleGenerativeAI,
+  HarmCategory,
+  HarmBlockThreshold,
+} from "@google/generative-ai";
 
 export const runtime = "nodejs";
 
-// --- TYPE DEFINITIONS ---
+// --- TİP TANIMLARI ---
 type ChatOut = { reply: string; feedback: string };
 
 type GradeOut = {
@@ -14,21 +18,16 @@ type GradeOut = {
   overall_comment: string;
 };
 
-// Gemini history item (SDK'nin beklediği gibi)
-type GeminiHistoryItem = {
-  role: "user" | "model";
-  parts: { text: string }[];
-};
+// --- YARDIMCI FONKSİYONLAR ---
 
-// --- HELPERS ---
 function stripCodeFences(s: string) {
-  return (s || "")
+  return String(s || "")
     .replace(/^\s*```(?:json)?\s*/i, "")
     .replace(/\s*```\s*$/i, "")
     .trim();
 }
 
-function safeJsonParse<T = any>(s: string): T | null {
+function safeJsonParse(s: string) {
   try {
     return JSON.parse(s);
   } catch {
@@ -36,87 +35,73 @@ function safeJsonParse<T = any>(s: string): T | null {
   }
 }
 
-// Frontend geçmişi bazen string, bazen obje gönderir. Hepsini Gemini formatına çeviriyoruz.
-function normalizeHistory(history: any[]): GeminiHistoryItem[] {
+/**
+ * Frontend'den gelen karışık history formatını düzeltir.
+ */
+function normalizeHistory(history: any[]) {
   return (history || []).map((m: any) => {
-    // STRING -> user message
+    let role = "user";
+    let text = "";
+
     if (typeof m === "string") {
-      return { role: "user", parts: [{ text: m }] };
+      text = m;
+    } else if (m && typeof m === "object") {
+      role = (m.role === "ai" || m.role === "model" || m.role === "assistant") ? "model" : "user";
+      text = m.text ?? m.content ?? m.message ?? m.prompt ?? JSON.stringify(m);
     }
-
-    // OBJECT -> role + text
-    if (m && typeof m === "object") {
-      const role: "user" | "model" =
-        m.role === "ai" || m.role === "model" ? "model" : "user";
-
-      const content =
-        m.text ??
-        m.content ??
-        m.message ??
-        (typeof m.reply === "string" ? m.reply : null) ??
-        JSON.stringify(m);
-
-      return { role, parts: [{ text: String(content) }] };
-    }
-
-    // Fallback
-    return { role: "user", parts: [{ text: String(m) }] };
+    
+    // Temiz string döndür
+    return { role, text: String(text) };
   });
+}
+
+/**
+ * Geçmişi JSON objesi yerine okunabilir metne çevirir.
+ * Gemini JSON objelerini okurken bazen halüsinasyon görür.
+ * Bu format token tasarrufu sağlar ve daha stabil çalışır.
+ */
+function formatHistoryForPrompt(history: { role: string; text: string }[]) {
+  return history
+    .map((h) => `${h.role === "user" ? "User" : "Examiner"}: ${h.text}`)
+    .join("\n");
 }
 
 function pickChat(obj: any): ChatOut | null {
   if (!obj || typeof obj !== "object") return null;
-
-  // Bazı modeller farklı alan adı döndürebilir, ufak tolerans:
-  const reply =
-    typeof obj.reply === "string"
-      ? obj.reply
-      : typeof obj.answer === "string"
-        ? obj.answer
-        : typeof obj.response === "string"
-          ? obj.response
-          : "";
-
-  const feedback =
-    typeof obj.feedback === "string"
-      ? obj.feedback
-      : typeof obj.correction === "string"
-        ? obj.correction
-        : "";
+  
+  // Esnek alan kontrolü
+  const reply = obj.reply || obj.answer || obj.response || "";
+  const feedback = obj.feedback || obj.correction || "";
 
   if (!reply && !feedback) return null;
-  return { reply, feedback };
+  return { reply: String(reply), feedback: String(feedback) };
 }
 
 function pickGrade(obj: any): GradeOut | null {
   if (!obj || typeof obj !== "object") return null;
-
   let score = Number(obj.band_score);
-  if (!Number.isFinite(score)) score = 0;
+  if (Number.isNaN(score)) score = 0;
 
   return {
     band_score: score,
-    fluency_feedback: String(obj.fluency_feedback ?? "No feedback provided."),
-    lexical_feedback: String(obj.lexical_feedback ?? "No feedback provided."),
-    grammar_feedback: String(obj.grammar_feedback ?? "No feedback provided."),
-    overall_comment: String(obj.overall_comment ?? "No comment provided."),
+    fluency_feedback: String(obj.fluency_feedback || "No feedback."),
+    lexical_feedback: String(obj.lexical_feedback || "No feedback."),
+    grammar_feedback: String(obj.grammar_feedback || "No feedback."),
+    overall_comment: String(obj.overall_comment || "No comment."),
   };
 }
 
-const CHAT_FALLBACK: ChatOut = {
-  reply: "I didn't catch that. Could you repeat?",
-  feedback: "",
-};
-
-const GRADE_FALLBACK: GradeOut = {
+const chatFallback = (msg: string): ChatOut => ({ reply: msg, feedback: "" });
+const gradeFallback = (msg: string): GradeOut => ({
   band_score: 0,
-  fluency_feedback: "Evaluation error.",
-  lexical_feedback: "Evaluation error.",
-  grammar_feedback: "Evaluation error.",
-  overall_comment: "Evaluation error. Please try again.",
-};
+  fluency_feedback: msg,
+  lexical_feedback: msg,
+  grammar_feedback: msg,
+  overall_comment: msg,
+});
 
-// --- MAIN ---
+// --- ANA FONKSİYON ---
+
 export async function POST(request: Request) {
   const apiKey = process.env.GOOGLE_API_KEY;
   if (!apiKey) {
@@ -128,90 +113,100 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid JSON body" }, { status: 400 });
   }
 
-  const mode: "chat" | "grade" = body.mode === "grade" ? "grade" : "chat";
+  const mode: "grade" | "chat" = body.mode === "grade" ? "grade" : "chat";
   const message = typeof body.message === "string" ? body.message : "";
   const historyRaw = Array.isArray(body.history) ? body.history : [];
 
-  // Son 10 mesajı al (token tasarrufu)
-  const history = normalizeHistory(historyRaw).slice(-10);
-
-  const genAI = new GoogleGenerativeAI(apiKey);
-
-  // Model adı
-  const modelName = "gemini-1.5-flash";
-
-  // EN KRİTİK FIX: Chat modunda da JSON zorla
-  const model = genAI.getGenerativeModel({
-    model: modelName,
-    generationConfig:
-      mode === "grade"
-        ? { responseMimeType: "application/json", temperature: 0.2 }
-        : { responseMimeType: "application/json", temperature: 0.7 },
-  });
-
-  const prompt =
-    mode === "grade"
-      ? `Act as a strict IELTS Examiner. Analyze the conversation history.
-HISTORY: ${JSON.stringify(history)}
-Return ONLY valid JSON with exactly these fields:
-{
-  "band_score": number,
-  "fluency_feedback": string,
-  "lexical_feedback": string,
-  "grammar_feedback": string,
-  "overall_comment": string
-}`
-      : `You are an IELTS Speaking Examiner.
-HISTORY: ${JSON.stringify(history)}
-USER: "${message}"
-Reply naturally in 1-2 sentences.
-If the user made a mistake, put the correction in "feedback" (otherwise empty).
-Return ONLY valid JSON with exactly these fields:
-{
-  "reply": string,
-  "feedback": string
-}`;
+  // 1. Geçmişi normalize et ve son 12 mesaja indir (Hafıza limiti)
+  const normalizedHistory = normalizeHistory(historyRaw).slice(-12);
+  
+  // 2. Prompt için metin formatına çevir
+  const historyText = formatHistoryForPrompt(normalizedHistory);
 
   try {
+    const genAI = new GoogleGenerativeAI(apiKey);
+    const model = genAI.getGenerativeModel({
+      model: "gemini-2.5-flash",
+      // GÜVENLİK AYARLARI: Gemini bazen masum cümleleri bile bloklar. Hepsini kapatıyoruz.
+      safetySettings: [
+        { category: HarmCategory.HARM_CATEGORY_HARASSMENT, threshold: HarmBlockThreshold.BLOCK_NONE },
+        { category: HarmCategory.HARM_CATEGORY_HATE_SPEECH, threshold: HarmBlockThreshold.BLOCK_NONE },
+        { category: HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT, threshold: HarmBlockThreshold.BLOCK_NONE },
+        { category: HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT, threshold: HarmBlockThreshold.BLOCK_NONE },
+      ],
+      generationConfig: mode === "grade"
+          ? { responseMimeType: "application/json", temperature: 0.2 }
+          : { responseMimeType: "application/json", temperature: 0.7 },
+    });
+
+    const prompt =
+      mode === "grade"
+        ? `Act as a strict IELTS Speaking Examiner.
+Analyze the conversation history below and give an IELTS band score (0-9).
+
+CONVERSATION HISTORY:
+${historyText}
+
+Return ONLY valid JSON with exactly these keys:
+{ "band_score": number, "fluency_feedback": string, "lexical_feedback": string, "grammar_feedback": string, "overall_comment": string }`
+        : `You are a friendly IELTS Speaking Examiner.
+CONVERSATION HISTORY:
+${historyText}
+USER'S LAST INPUT: "${message}"
+
+Task: Reply naturally (1-2 sentences). Correct grammar errors in 'feedback' if any.
+Return ONLY valid JSON with exactly these keys:
+{ "reply": string, "feedback": string }`;
+
     const result = await model.generateContent(prompt);
-
-    // responseMimeType json olsa da bazı edge-case'lerde yine text gelir
-    const rawText = result?.response?.text?.() ?? "";
+    const response = await result.response;
+    
+    // EĞER MODEL CEVABI BLOKLARSA BURADA HATA OLUŞUR
+    // text() fonksiyonu aday metin yoksa hata fırlatır.
+    const rawText = response.text(); 
     const cleaned = stripCodeFences(rawText);
-
     const parsed = safeJsonParse(cleaned);
 
+    // --- GRADE MODU ---
     if (mode === "grade") {
       const picked = pickGrade(parsed);
-      return NextResponse.json(picked ?? GRADE_FALLBACK, { status: 200 });
+      if (!picked) return NextResponse.json(gradeFallback("Evaluation error. Please try again."));
+      return NextResponse.json(picked);
     }
 
-    // CHAT
+    // --- CHAT MODU ---
     let picked: ChatOut | null = null;
     try {
       picked = pickChat(parsed);
     } catch (e) {
-      console.warn("pickChat error:", e);
       picked = null;
     }
 
-    // JSON bozuksa bile düz metni kurtar
-    if (!picked || !picked.reply) {
-      if (cleaned.length > 0) {
-        picked = { reply: cleaned, feedback: "" };
-      } else {
-        picked = CHAT_FALLBACK;
-      }
+    // JSON gelmediyse metni kurtar
+    if (!picked) {
+      if (cleaned.length > 0) return NextResponse.json({ reply: cleaned, feedback: "" } satisfies ChatOut);
+      return NextResponse.json(chatFallback("I didn't catch that. Could you repeat?"));
     }
 
-    return NextResponse.json(picked, { status: 200 });
-  } catch (error) {
-    console.error("API Error:", error);
+    if (!picked.reply) picked.reply = "I didn't catch that. Could you repeat?";
+    if (!picked.feedback) picked.feedback = "";
 
-    // Frontend patlamasın diye daima doğru formatta dön
-    return NextResponse.json(
-      mode === "grade" ? GRADE_FALLBACK : { reply: "Connection issue. Please try again.", feedback: "" },
-      { status: 200 }
-    );
+    return NextResponse.json(picked);
+
+  } catch (error: any) {
+    // Hatayı konsola detaylı yazdır ki Vercel Loglarında görelim
+    console.error("FULL API ERROR:", error);
+    
+    // Hatanın detayına göre mesaj döndür
+    const errorMessage = error?.message || "Unknown error";
+    
+    if (errorMessage.includes("SAFETY")) {
+       return NextResponse.json(chatFallback("My response was blocked by safety filters. Let's change the topic."));
+    }
+
+    if (mode === "grade") {
+      return NextResponse.json(gradeFallback("Connection error. Try again."));
+    }
+    return NextResponse.json(chatFallback("Connection issue. Please try again."));
   }
 }
