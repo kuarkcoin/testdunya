@@ -13,7 +13,7 @@ export async function POST(request: Request) {
     // En kararlı ve hızlı model şu an "gemini-1.5-flash".
     // Eğer "2.5" sizde çalışıyorsa onu da yazabilirsiniz ama garantisi yoktur.
     const model = genAI.getGenerativeModel({
-      model: "gemini-1.5-flash", 
+      model: "gemini-2.5-flash", 
       generationConfig: {
         // BU SATIR HAYAT KURTARIR: AI'yı JSON konuşmaya zorlar.
         // Artık "text.replace" ile uğraşmana gerek yok.
