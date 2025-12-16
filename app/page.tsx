@@ -3,11 +3,11 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 
+// -------------------- UI FLAGS --------------------
+const SHOW_LOCKED_TESTS = false; // true => kilitli kutular görünür | false => sadece aktifler
+
 // -------------------- TYPES --------------------
 type CompletedExams = Record<string, number[]>;
-
-// -------------------- UI FLAGS (TEK YERDEN KONTROL) --------------------
-const SHOW_LOCKED_TESTS = false; // true => kilitli kutular tek tek görünür | false => sadece aktifler + “Devamı Yakında…”
 
 // -------------------- ICONS --------------------
 const Trophy = (props: React.SVGProps<SVGSVGElement>) => (
@@ -126,7 +126,7 @@ const Calculator = (props: React.SVGProps<SVGSVGElement>) => (
 
 const ArrowUp = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-    <path d="m18 15-6-6-6 6" transform="rotate(180 12 12)" />
+    <path d="m18 15-6-6-6 6" />
   </svg>
 );
 
@@ -148,6 +148,12 @@ const GamepadIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
     <rect x="2" y="6" width="20" height="12" rx="2" />
     <path d="M6 12h4m-2-2v4m9-2h2m-1-1h.01m-1 3h.01" />
+  </svg>
+);
+
+const Sparkles = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+    <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275Z" />
   </svg>
 );
 
@@ -215,57 +221,48 @@ const ieltsModules = [
   { id: 'ielts-calculator', title: 'Score Calculator', desc: 'Calculate Band Score', icon: <Calculator className="w-6 h-6" />, color: 'text-teal-600', bg: 'bg-teal-50', border: 'border-teal-200', active: true },
 ] as const;
 
-// -------------------- HELPERS --------------------
-function getIeltsHref(moduleId: string) {
-  if (moduleId === 'ielts-speaking') return '/ielts/speaking';
-  if (moduleId === 'ielts-calculator') return '/ielts/calculator';
-  if (moduleId === 'ielts-listening') return '/ielts/listening';
-  if (moduleId === 'ielts-writing') return '/ielts/writing';
-  return `/test/${moduleId}`;
-}
-
 // -------------------- PAGE --------------------
 export default function HomePage() {
   const [completed, setCompleted] = useState<CompletedExams>({});
+  const isClient = typeof window !== 'undefined';
 
-  // READ localStorage safely
+  // Read localStorage
   useEffect(() => {
     try {
       const savedData = localStorage.getItem('examTrackerData');
-      if (!savedData) return;
-      const parsed = JSON.parse(savedData);
-      if (parsed && typeof parsed === 'object') setCompleted(parsed);
+      if (savedData) {
+        const parsed = JSON.parse(savedData);
+        if (typeof parsed === 'object' && parsed !== null) {
+          setCompleted(parsed);
+        }
+      }
     } catch (error) {
-      console.error('localStorage read error:', error);
+      console.error('localStorage veri okuma hatası:', error);
       setCompleted({});
     }
   }, []);
 
-  // WRITE localStorage safely
+  // Write localStorage (always write, even if empty -> reset works)
   useEffect(() => {
     try {
-      if (!completed || Object.keys(completed).length === 0) {
-        localStorage.removeItem('examTrackerData');
-        return;
-      }
       localStorage.setItem('examTrackerData', JSON.stringify(completed));
     } catch (e) {
-      console.error('localStorage write error:', e);
+      console.error('localStorage yazma hatası:', e);
     }
   }, [completed]);
 
   return (
     <main className="min-h-screen bg-slate-50 font-sans text-slate-800">
-      {/* HERO */}
+      {/* --- HERO SECTION --- */}
       <div className="bg-gradient-to-r from-slate-900 via-indigo-900 to-slate-900 text-white pb-24 pt-10 px-4 md:px-8 mb-8">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="space-y-6 md:w-2/3">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-xs font-semibold text-indigo-200">
               <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500" />
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
               </span>
-              TestDünya v3.5 • IELTS & Exam Focus
+              TestDünya v3.6 • New AI Game Added
             </div>
 
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
@@ -281,8 +278,9 @@ export default function HomePage() {
               <Link href="/mistakes" className="px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl font-bold text-lg transition-all flex items-center gap-2">
                 <span>📕</span> Hatalarım
               </Link>
+
               <button
-                onClick={() => document.getElementById('exams')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => isClient && document.getElementById('exams')?.scrollIntoView({ behavior: 'smooth' })}
                 className="px-8 py-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-bold text-lg transition-all shadow-lg shadow-indigo-900/50"
               >
                 Tüm Testler
@@ -298,11 +296,11 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* CONTENT */}
+      {/* --- MAIN CONTENT AREA --- */}
       <div id="exams" className="max-w-7xl mx-auto px-2 md:px-6 -mt-20 space-y-10 pb-20 relative z-10">
-        {/* IELTS */}
+        {/* --- IELTS GLOBAL SECTION --- */}
         <section className="bg-white rounded-2xl shadow-xl shadow-sky-200/40 overflow-hidden border-2 border-sky-100 relative">
-          <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-sky-400 to-blue-600" />
+          <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-sky-400 to-blue-600"></div>
 
           <div className="p-4 md:p-6 border-b border-slate-100 flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div className="flex items-center gap-4">
@@ -314,7 +312,6 @@ export default function HomePage() {
                 <p className="text-slate-500 text-base">Global English Preparation • Band 7.0+</p>
               </div>
             </div>
-
             <div className="hidden md:block">
               <span className="px-5 py-2 bg-sky-50 text-sky-700 text-sm font-bold rounded-full border border-sky-100 uppercase tracking-wider">
                 New Module
@@ -324,29 +321,16 @@ export default function HomePage() {
 
           <div className="p-3 md:p-6 bg-slate-50/50 grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-3 md:gap-4">
             {ieltsModules.map((module) => {
-              const href = getIeltsHref(module.id);
-
-              if (!module.active) {
-                return (
-                  <div
-                    key={module.id}
-                    className={`flex flex-col items-center justify-center p-3 md:p-5 rounded-xl border-2 ${module.bg} ${module.border} text-slate-400 cursor-not-allowed`}
-                    title="Yakında eklenecek"
-                    aria-disabled="true"
-                  >
-                    <div className="mb-3 p-3 rounded-full bg-white/60 shadow-sm ring-1 ring-black/5">
-                      <Lock className="w-7 h-7 opacity-70" />
-                    </div>
-                    <h3 className="font-bold text-base md:text-lg text-slate-700 text-center">{module.title}</h3>
-                    <p className="text-xs font-bold opacity-60 uppercase tracking-wide mt-1 text-center">Coming Soon</p>
-                  </div>
-                );
-              }
+              let linkHref = `/test/${module.id}`;
+              if (module.id === 'ielts-speaking') linkHref = '/ielts/speaking';
+              if (module.id === 'ielts-calculator') linkHref = '/ielts/calculator';
+              if (module.id === 'ielts-listening') linkHref = '/ielts/listening';
+              if (module.id === 'ielts-writing') linkHref = '/ielts/writing';
 
               return (
                 <Link
                   key={module.id}
-                  href={href}
+                  href={linkHref}
                   className={`flex flex-col items-center justify-center p-3 md:p-5 rounded-xl border-2 transition-all hover:-translate-y-1 hover:shadow-lg ${module.bg} ${module.border} ${module.color} h-full`}
                 >
                   <div className="mb-3 p-3 rounded-full bg-white shadow-sm ring-1 ring-black/5">{module.icon}</div>
@@ -358,50 +342,70 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* GAME MODES */}
-        <section className="grid md:grid-cols-2 gap-6 mb-8">
-          <Link href="/speedrun" className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-violet-600 to-indigo-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl hover:shadow-indigo-500/30">
-            <div className="absolute top-0 right-0 -mt-4 -mr-4 h-32 w-32 rounded-full bg-white/10 blur-2xl transition-all group-hover:bg-white/20" />
+        {/* --- GAME MODES --- */}
+        <section className="grid md:grid-cols-3 gap-6 mb-8">
+          {/* 1. SPEEDRUN */}
+          <Link href="/speedrun" className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-violet-600 to-indigo-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl">
             <div className="relative z-10 flex flex-col justify-between h-full">
               <div>
                 <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-indigo-100 backdrop-blur-sm">
-                  <TimerIcon className="h-4 w-4" /> Challenge Mode
+                  <TimerIcon className="h-4 w-4" /> Challenge
                 </div>
-                <h3 className="mb-2 text-3xl font-black tracking-tight">SpeedRun</h3>
-                <p className="text-indigo-100 opacity-90">How many words can you match in 60 seconds?</p>
+                <h3 className="mb-2 text-2xl font-black tracking-tight">SpeedRun</h3>
+                <p className="text-indigo-100 opacity-90 text-sm">Race against time!</p>
               </div>
-              <div className="mt-8 flex items-center gap-3">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-indigo-600 shadow-lg transition-transform group-hover:scale-110">
-                  <GamepadIcon className="h-6 w-6" />
+              <div className="mt-6 flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-indigo-600 shadow-lg group-hover:scale-110 transition-transform">
+                  <GamepadIcon className="h-5 w-5" />
                 </div>
-                <span className="font-bold">Start Game &rarr;</span>
+                <span className="font-bold text-sm">Play &rarr;</span>
               </div>
             </div>
           </Link>
 
-          <Link href="/flashcards" className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl hover:shadow-teal-500/30">
-            <div className="absolute top-0 right-0 -mt-4 -mr-4 h-32 w-32 rounded-full bg-white/10 blur-2xl transition-all group-hover:bg-white/20" />
+          {/* 2. FLASHCARDS */}
+          <Link href="/flashcards" className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl">
             <div className="relative z-10 flex flex-col justify-between h-full">
               <div>
                 <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-teal-100 backdrop-blur-sm">
-                  <FlashcardIcon className="h-4 w-4" /> Study Mode
+                  <FlashcardIcon className="h-4 w-4" /> Study
                 </div>
-                <h3 className="mb-2 text-3xl font-black tracking-tight">Flashcards</h3>
-                <p className="text-teal-50 opacity-90">1000+ IELTS Vocabulary and Phrasal Verbs.</p>
+                <h3 className="mb-2 text-2xl font-black tracking-tight">Flashcards</h3>
+                <p className="text-teal-50 opacity-90 text-sm">1000+ IELTS Vocab.</p>
               </div>
-              <div className="mt-8 flex items-center gap-3">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-emerald-600 shadow-lg transition-transform group-hover:scale-110">
-                  <Book className="h-6 w-6" />
+              <div className="mt-6 flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-emerald-600 shadow-lg group-hover:scale-110 transition-transform">
+                  <Book className="h-5 w-5" />
                 </div>
-                <span className="font-bold">Start Studying &rarr;</span>
+                <span className="font-bold text-sm">Study &rarr;</span>
+              </div>
+            </div>
+          </Link>
+
+          {/* 3. WORD HUNTER */}
+          <Link href="/kelime-avcisi" className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl">
+            <div className="absolute top-0 right-0 -mt-4 -mr-4 h-32 w-32 rounded-full bg-white/10 blur-2xl transition-all group-hover:bg-white/20"></div>
+            <div className="relative z-10 flex flex-col justify-between h-full">
+              <div>
+                <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-amber-100 backdrop-blur-sm">
+                  <Sparkles className="h-4 w-4" /> New AI Game
+                </div>
+                <h3 className="mb-2 text-2xl font-black tracking-tight">Word Hunter</h3>
+                <p className="text-amber-50 opacity-90 text-sm">AI defines, you guess.</p>
+              </div>
+              <div className="mt-6 flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-orange-600 shadow-lg transition-transform group-hover:scale-110">
+                  <GamepadIcon className="h-5 w-5" />
+                </div>
+                <span className="font-bold text-sm">Play &rarr;</span>
               </div>
             </div>
           </Link>
         </section>
 
-        {/* NATIONAL EXAMS */}
+        {/* --- NATIONAL EXAMS --- */}
         {examConfig.map((exam) => {
-          const numbers = Array.from({ length: SHOW_LOCKED_TESTS ? exam.count : exam.activeLimit }, (_, i) => i + 1);
+          const loopCount = SHOW_LOCKED_TESTS ? exam.count : exam.activeLimit;
           const hasMore = exam.activeLimit < exam.count;
 
           return (
@@ -414,7 +418,6 @@ export default function HomePage() {
                     <p className="text-white/90 text-sm md:text-base font-medium">{exam.desc}</p>
                   </div>
                 </div>
-
                 <div className="hidden sm:block text-right">
                   <span className="block text-3xl font-black">
                     {exam.activeLimit} <span className="text-lg opacity-60">/ {exam.count}</span>
@@ -425,58 +428,58 @@ export default function HomePage() {
 
               <div className="p-3 md:p-6 bg-slate-50/50">
                 <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-8 gap-2 md:gap-4">
-                  {numbers.map((num) => {
+                  {Array.from({ length: loopCount }, (_, i) => i + 1).map((num) => {
                     const testLinkId = `${exam.prefix}-${num}`;
                     const isDone = (completed[exam.id] || []).includes(num);
                     const isActive = num <= exam.activeLimit;
 
-                    // Eğer locked modu açıksa ve bu test aktif değilse => kilitli kutu
                     if (SHOW_LOCKED_TESTS && !isActive) {
                       return (
-                        <div
-                          key={num}
-                          className="relative flex flex-col items-center justify-center py-4 px-2 rounded-xl border border-slate-100 bg-slate-50 text-slate-300 cursor-not-allowed overflow-hidden"
-                          title="Bu test yakında eklenecektir."
-                          aria-disabled="true"
-                        >
+                        <div key={num} className="relative flex flex-col items-center justify-center py-4 px-2 rounded-xl border border-slate-100 bg-slate-50 text-slate-300 cursor-not-allowed overflow-hidden">
                           <div className="mb-2 opacity-40">
                             <Lock className="w-6 h-6 text-slate-400" />
                           </div>
-                          <span className="text-sm font-bold opacity-40">{num}. Deneme</span>
+                          <span className="text-sm font-bold opacity-40">Test {num}</span>
                         </div>
                       );
                     }
 
-                    // Aktif test => link
                     return (
                       <Link
                         key={num}
                         href={`/test/${testLinkId}`}
-                        title={`${exam.title} ${num}. Özgün Deneme`}
                         className={`
                           group relative flex flex-col items-center justify-center py-4 px-2 rounded-xl border transition-all duration-200
-                          ${isDone ? 'bg-emerald-50 border-emerald-200 hover:bg-emerald-100' : 'bg-white border-slate-200 hover:border-indigo-400 hover:shadow-md hover:-translate-y-0.5'}
+                          ${isDone
+                            ? 'bg-emerald-50 border-emerald-200 hover:bg-emerald-100'
+                            : 'bg-white border-slate-200 hover:border-indigo-400 hover:shadow-md hover:-translate-y-0.5'
+                          }
                         `}
                       >
                         <div className="mb-2">
                           {isDone ? (
-                            <div className="text-emerald-500"><CheckCircle className="w-6 h-6" /></div>
+                            <div className="text-emerald-500">
+                              <CheckCircle className="w-6 h-6" />
+                            </div>
                           ) : (
-                            <div className="text-slate-300 group-hover:text-indigo-500 transition-colors"><PenTool className="w-6 h-6" /></div>
+                            <div className="text-slate-300 group-hover:text-indigo-500 transition-colors">
+                              <PenTool className="w-6 h-6" />
+                            </div>
                           )}
                         </div>
                         <span className={`text-sm font-bold ${isDone ? 'text-emerald-700' : 'text-slate-600 group-hover:text-indigo-900'}`}>
-                          {num}. Deneme
+                          Test {num}
                         </span>
                       </Link>
                     );
                   })}
 
-                  {/* Clean modda: tek “Devamı Yakında…” */}
                   {!SHOW_LOCKED_TESTS && hasMore && (
                     <div className="flex flex-col items-center justify-center py-4 px-2 rounded-xl border border-dashed border-slate-300 bg-slate-50/50 text-slate-400">
                       <span className="text-xs font-bold text-center">
-                        Devamı<br />Yakında...
+                        Devamı
+                        <br />
+                        Yakında...
                       </span>
                     </div>
                   )}
@@ -487,56 +490,7 @@ export default function HomePage() {
         })}
       </div>
 
-      {/* SEO / FEATURES */}
-      <section className="bg-white border-t border-slate-100 py-16 px-4">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black text-slate-800 mb-6">Neden TestDünya?</h2>
-            <p className="text-slate-600 text-lg md:text-xl max-w-4xl mx-auto text-justify leading-relaxed">
-              Sınavlara hazırlanırken ihtiyacınız olan her şey tek bir platformda.
-              YKS, KPSS, TUS, DUS ve şimdi <strong>IELTS</strong> ile dünya standartlarında ölçme ve değerlendirme sistemleri.
-              Tamamen ücretsiz, reklamsız ve kullanıcı dostu arayüz.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="p-8 bg-indigo-50 rounded-2xl border border-indigo-100">
-              <div className="w-14 h-14 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mb-6">
-                <Zap className="w-8 h-8" />
-              </div>
-              <h3 className="text-xl font-bold text-slate-800 mb-3">Hızlı ve Modern Arayüz</h3>
-              <p className="text-base text-slate-700 leading-relaxed text-justify">
-                Dikkat dağıtıcı reklamlardan arındırılmış, sadece başarı odaklı tasarım.
-                Sayfalar arası hızlı geçiş ve anlık sonuç görüntüleme.
-              </p>
-            </div>
-
-            <div className="p-8 bg-emerald-50 rounded-2xl border border-emerald-100">
-              <div className="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mb-6">
-                <Target className="w-8 h-8" />
-              </div>
-              <h3 className="text-xl font-bold text-slate-800 mb-3">Akıllı Analiz</h3>
-              <p className="text-base text-slate-700 leading-relaxed text-justify">
-                Yanlış yaptığınız sorular “Hatalarım” bölümünde birikir, tekrar etmeniz için saklanır.
-                Gelişiminizi anlık olarak takip edebilirsiniz.
-              </p>
-            </div>
-
-            <div className="p-8 bg-orange-50 rounded-2xl border border-orange-100">
-              <div className="w-14 h-14 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center mb-6">
-                <Book className="w-8 h-8" />
-              </div>
-              <h3 className="text-xl font-bold text-slate-800 mb-3">Global Standartlar</h3>
-              <p className="text-base text-slate-700 leading-relaxed text-justify">
-                Türkiye’nin ulusal sınavlarının yanında artık global geçerliliği olan IELTS sınavlarına da hazırlanın.
-                Dünya genelindeki sınav formatlarına tam uyum.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FOOTER */}
+      {/* --- FOOTER --- */}
       <footer className="bg-slate-900 text-slate-400 py-16 px-4 border-t border-slate-800">
         <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-10 text-base mb-8">
           <div className="col-span-1 md:col-span-2">
@@ -554,18 +508,42 @@ export default function HomePage() {
           <div>
             <h5 className="text-white font-bold text-lg mb-6">Sınavlar</h5>
             <ul className="space-y-3">
-              <li><Link href="#exams" className="hover:text-white transition-colors">IELTS Academic</Link></li>
-              <li><Link href="#exams" className="hover:text-white transition-colors">YKS (TYT-AYT)</Link></li>
-              <li><Link href="#exams" className="hover:text-white transition-colors">TUS Denemeleri</Link></li>
-              <li><Link href="#exams" className="hover:text-white transition-colors">DUS Denemeleri</Link></li>
+              <li>
+                <Link href="#exams" className="hover:text-white transition-colors">
+                  IELTS Academic
+                </Link>
+              </li>
+              <li>
+                <Link href="#exams" className="hover:text-white transition-colors">
+                  YKS (TYT-AYT)
+                </Link>
+              </li>
+              <li>
+                <Link href="#exams" className="hover:text-white transition-colors">
+                  TUS Denemeleri
+                </Link>
+              </li>
+              <li>
+                <Link href="#exams" className="hover:text-white transition-colors">
+                  DUS Denemeleri
+                </Link>
+              </li>
             </ul>
           </div>
 
           <div>
             <h5 className="text-white font-bold text-lg mb-6">Hızlı Bağlantılar</h5>
             <ul className="space-y-3 text-sm">
-              <li><Link href="/mistakes" className="hover:text-white transition-colors">Hata Analizi</Link></li>
-              <li><Link href="/iletisim" className="hover:text-white transition-colors">İletişim</Link></li>
+              <li>
+                <Link href="/mistakes" className="hover:text-white transition-colors">
+                  Hata Analizi
+                </Link>
+              </li>
+              <li>
+                <Link href="/iletisim" className="hover:text-white transition-colors">
+                  İletişim
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -581,10 +559,10 @@ export default function HomePage() {
         </div>
       </footer>
 
-      {/* SCROLL TOP */}
+      {/* --- SCROLL TO TOP --- */}
       <button
         aria-label="Scroll to top"
-        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        onClick={() => isClient && window.scrollTo({ top: 0, behavior: 'smooth' })}
         className="fixed bottom-6 right-6 z-[999] bg-indigo-600 text-white p-3 rounded-full shadow-xl hover:bg-indigo-700 transition-all border-2 border-white"
       >
         <ArrowUp className="w-6 h-6" />
