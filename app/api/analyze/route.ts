@@ -15,7 +15,7 @@ export async function POST(request: Request) {
         { status: 500 }
       );
     }
-
+ 
     const { essay, taskType, contextData } = await request.json();
 
     if (!essay || essay.length < 50) {
