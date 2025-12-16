@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState, useCallback } from "react";
 import Link from "next/link";
 
 type CellStatus = "empty" | "correct" | "present" | "absent";
@@ -10,7 +10,7 @@ function normalizeGuess(s: string) {
   return s.replace(/[^a-zA-Z]/g, "").toUpperCase();
 }
 
-// Duplicate harfleri doğru değerlendirmek için (Wordle mantığı)
+// Wordle duplicate harf mantığı (doğru değerlendirme)
 function evaluateGuess(guess: string, target: string): EvalCell[] {
   const g = guess.split("");
   const t = target.split("");
@@ -24,7 +24,8 @@ function evaluateGuess(guess: string, target: string): EvalCell[] {
       used[i] = true;
     }
   }
-  // 2) Present
+
+  // 2) Present (kalan harfler)
   for (let i = 0; i < t.length; i++) {
     if (res[i].status === "correct") continue;
     const idx = t.findIndex((ch, j) => !used[j] && ch === g[i]);
@@ -33,7 +34,19 @@ function evaluateGuess(guess: string, target: string): EvalCell[] {
       used[idx] = true;
     }
   }
+
   return res;
+}
+
+// Istanbul gün etiketi: YYYY-MM-DD
+function istanbulDayKey() {
+  const fmt = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Europe/Istanbul",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  });
+  return fmt.format(new Date()); // en-CA => 2025-12-17 formatında
 }
 
 export default function WordlePage() {
@@ -52,30 +65,47 @@ export default function WordlePage() {
 
   const showToast = (msg: string) => {
     setToast(msg);
-    setTimeout(() => setToast(""), 1600);
+    window.setTimeout(() => setToast(""), 1600);
   };
 
-  const fetchTarget = async (newLen: number) => {
-    setLoading(true);
-    setStatus("playing");
-    setGuesses([]);
-    setEvaluations([]);
-    setCurrent("");
-    try {
-      const res = await fetch(`/api/wordle/target?len=${newLen}`);
-      const json = await res.json();
-      if (json?.error) throw new Error(json.error);
-      setTarget(String(json.word || ""));
-      setDay(String(json.day || ""));
-    } catch (e: any) {
-      showToast(e?.message || "Kelime yüklenemedi");
-      setTarget("");
-    } finally {
-      setLoading(false);
-    }
-  };
+  const fetchTarget = useCallback(
+    async (newLen: number) => {
+      setLoading(true);
+      setStatus("playing");
+      setGuesses([]);
+      setEvaluations([]);
+      setCurrent("");
+
+      try {
+        // Cache-buster: Vercel/edge cache veya browser cache takılmasın
+        const t = Date.now();
+        const res = await fetch(`/api/wordle/target?len=${newLen}&t=${t}`, {
+          method: "GET",
+          cache: "no-store",
+        });
+
+        const json = await res.json();
+        if (!res.ok || json?.error) throw new Error(json?.error || "Kelime yüklenemedi");
+
+        const w = String(json.word || "").toUpperCase().trim();
+        if (!w || w.length !== newLen) throw new Error("Geçersiz kelime geldi");
+
+        setTarget(w);
+        // API döndürüyorsa onu yaz, yoksa Istanbul gününü yaz
+        setDay(String(json.day || istanbulDayKey()));
+      } catch (e: any) {
+        showToast(e?.message || "Kelime yüklenemedi");
+        setTarget("");
+        setDay(istanbulDayKey());
+      } finally {
+        setLoading(false);
+      }
+    },
+    [setTarget, setDay]
+  );
 
   useEffect(() => {
+    // İlk yükleme
     fetchTarget(len);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -100,12 +130,14 @@ export default function WordlePage() {
         });
       }
     };
+
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [len, loading, status, target]);
 
   const submitGuess = () => {
     if (!target) return;
+
     const g = normalizeGuess(current);
     if (g.length !== len) {
       showToast(`${len} harf gir`);
@@ -114,6 +146,7 @@ export default function WordlePage() {
     if (guesses.length >= maxRows) return;
 
     const evaled = evaluateGuess(g, target);
+
     const nextGuesses = [...guesses, g];
     const nextEvals = [...evaluations, evaled];
 
@@ -126,6 +159,7 @@ export default function WordlePage() {
       showToast("🎉 Doğru!");
       return;
     }
+
     if (nextGuesses.length >= maxRows) {
       setStatus("lost");
       showToast("💀 Bitti!");
@@ -171,8 +205,10 @@ export default function WordlePage() {
               onChange={(e) => onChangeLen(Number(e.target.value))}
               className="bg-slate-900 border border-slate-700 rounded-lg px-2 py-1 text-sm"
             >
-              {[4,5,6,7,8,9,10].map((n) => (
-                <option key={n} value={n}>{n}</option>
+              {[4, 5, 6, 7, 8, 9, 10].map((n) => (
+                <option key={n} value={n}>
+                  {n}
+                </option>
               ))}
             </select>
           </div>
@@ -181,7 +217,7 @@ export default function WordlePage() {
         <header className="text-center space-y-1">
           <h1 className="text-3xl font-black tracking-tight">IELTS Wordle</h1>
           <p className="text-slate-400 text-sm">
-            Günün kelimesi • {day || "—"} • {len} harf
+            Günün kelimesi • {day || istanbulDayKey()} • {len} harf • (Europe/Istanbul)
           </p>
         </header>
 
@@ -202,12 +238,19 @@ export default function WordlePage() {
             <div className="grid gap-2">
               {rows.map((row, rIdx) => {
                 const evalRow = evaluations[rIdx];
+                const isTypedRow = rIdx === guesses.length;
+
                 return (
-                  <div key={rIdx} className="grid gap-2" style={{ gridTemplateColumns: `repeat(${len}, minmax(0, 1fr))` }}>
+                  <div
+                    key={rIdx}
+                    className="grid gap-2"
+                    style={{ gridTemplateColumns: `repeat(${len}, minmax(0, 1fr))` }}
+                  >
                     {row.split("").map((ch, cIdx) => {
-                      const st: CellStatus = evalRow?.[cIdx]?.status || (ch.trim() ? "empty" : "empty");
-                      const isTypedRow = rIdx === guesses.length;
-                      const typed = isTypedRow ? current.padEnd(len, " ").slice(0, len).split("")[cIdx] : ch;
+                      const st: CellStatus = evalRow?.[cIdx]?.status || "empty";
+                      const typed = isTypedRow
+                        ? current.padEnd(len, " ").slice(0, len).split("")[cIdx]
+                        : ch;
 
                       const cls =
                         st === "correct"
@@ -243,11 +286,13 @@ export default function WordlePage() {
               disabled={loading || status !== "playing"}
               placeholder={`${len} harf yaz...`}
               className="flex-1 bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-center text-lg font-bold tracking-widest"
+              autoComplete="off"
+              inputMode="text"
             />
             <button
               onClick={submitGuess}
               disabled={loading || status !== "playing"}
-              className="px-5 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 font-black"
+              className="px-5 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 font-black disabled:opacity-50"
             >
               Enter
             </button>
@@ -257,11 +302,12 @@ export default function WordlePage() {
             <div className="text-center bg-white/5 border border-white/10 rounded-xl p-4">
               <div className="text-slate-300 text-sm">Cevap:</div>
               <div className="text-3xl font-black tracking-widest">{target}</div>
+
               <button
                 onClick={() => fetchTarget(len)}
                 className="mt-3 px-5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 font-bold"
               >
-                Yenile
+                Yenile (yeni kelime)
               </button>
             </div>
           )}
@@ -295,22 +341,21 @@ export default function WordlePage() {
                   </button>
                 );
               })}
+
               {row === "ZXCVBNM" && (
-                <>
-                  <button
-                    onClick={() => setCurrent((s) => s.slice(0, -1))}
-                    className="h-10 px-3 rounded-lg bg-slate-700 font-black"
-                  >
-                    ⌫
-                  </button>
-                </>
+                <button
+                  onClick={() => setCurrent((s) => s.slice(0, -1))}
+                  className="h-10 px-3 rounded-lg bg-slate-700 font-black"
+                >
+                  ⌫
+                </button>
               )}
             </div>
           ))}
         </section>
 
         <p className="text-xs text-slate-500 text-center">
-          İpucu: Harf uzunluğunu seç (5 önerilir). Günlük kelime UTC’ye göre sabit.
+          Not: Günlük kelime <b>Europe/Istanbul</b> gününe göre sabitlenmeli. “Aynı kelime geliyor” sorunu genelde cache yüzünden olur; bu sayfa cache-buster ile bunu kırar.
         </p>
       </div>
     </main>
