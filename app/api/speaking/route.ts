@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import { GoogleGenerativeAI, SchemaType } from "@google/generative-ai";
 
 export async function POST(request: Request) {
   try {
@@ -7,81 +7,73 @@ export async function POST(request: Request) {
     if (!apiKey) return NextResponse.json({ error: "API Key missing" }, { status: 500 });
 
     const genAI = new GoogleGenerativeAI(apiKey);
-    const body = await request.json();
-    const { message, history, mode } = body;
+    const { message, history, mode } = await request.json();
 
-    // --- MODEL SEÇİMİ ---
-    // Burayı isterseniz "gemini-2.0-flash-exp" yapabilirsiniz.
-    // Ama "gemini-1.5-flash" en kararlı olandır.
-    const modelName = "gemini-2.5-flash"; 
+    // --- MODEL AYARI ---
+    // En kararlı ve hızlı model şu an "gemini-1.5-flash".
+    // Eğer "2.5" sizde çalışıyorsa onu da yazabilirsiniz ama garantisi yoktur.
+    const model = genAI.getGenerativeModel({
+      model: "gemini-1.5-flash", 
+      generationConfig: {
+        // BU SATIR HAYAT KURTARIR: AI'yı JSON konuşmaya zorlar.
+        // Artık "text.replace" ile uğraşmana gerek yok.
+        responseMimeType: "application/json" 
+      }
+    });
 
     // --- SENARYO 1: PUANLAMA (FINISH) ---
     if (mode === 'grade') {
-      const model = genAI.getGenerativeModel({
-        model: modelName,
-        generationConfig: { responseMimeType: "application/json" }
-      });
-
       const prompt = `
         Act as a strict IELTS Examiner.
-        Review history and provide evaluation.
+        Review the conversation history below and provide a final evaluation.
+        
         HISTORY: ${JSON.stringify(history)}
-        Output JSON: { "band_score": number, "fluency_feedback": string, "lexical_feedback": string, "grammar_feedback": string, "overall_comment": string }
+        
+        OUTPUT FORMAT (JSON ONLY):
+        {
+          "band_score": (number 0-9),
+          "fluency_feedback": (string),
+          "lexical_feedback": (string),
+          "grammar_feedback": (string),
+          "overall_comment": (string)
+        }
       `;
 
       const result = await model.generateContent(prompt);
-      const text = result.response.text();
-      // Temizlik: Markdown ve tırnak işaretlerini temizle
-      const cleanText = text.replace(/```json/g, '').replace(/```/g, '').trim();
-      return NextResponse.json(JSON.parse(cleanText));
+      const jsonResponse = JSON.parse(result.response.text());
+      return NextResponse.json(jsonResponse);
     }
 
     // --- SENARYO 2: SOHBET (CHAT) ---
-    const model = genAI.getGenerativeModel({ model: modelName });
-
     const prompt = `
       You are an IELTS Speaking Examiner.
-      HISTORY: ${JSON.stringify(history)}
-      USER SAID: "${message}"
+      
+      CONTEXT:
+      Conversation History: ${JSON.stringify(history)}
+      User's Last Input: "${message}"
       
       TASK:
-      1. Reply naturally (max 2 sentences).
-      2. If user made a grammar mistake, put correction in 'feedback'. Else empty.
+      1. Respond naturally to the user (keep it conversational, max 2 sentences).
+      2. If the user made a specific grammar mistake in the LAST input, correct it in 'feedback'. Otherwise leave 'feedback' empty string "".
       
-      RETURN ONLY JSON:
+      OUTPUT FORMAT (JSON ONLY):
       {
-        "reply": "Your reply here",
-        "feedback": "Correction or empty"
+        "reply": "Your response here",
+        "feedback": "Correction or empty string"
       }
     `;
 
     const result = await model.generateContent(prompt);
-    let text = result.response.text();
-
-    // --- DONMA SORUNUNU ÇÖZEN TEMİZLİK KODU ---
-    // Gemini bazen ```json ile başlar, bunu siliyoruz.
-    text = text.replace(/```json/g, '').replace(/```/g, '').trim();
+    const jsonResponse = JSON.parse(result.response.text());
     
-    // Bazen süslü parantez dışına taşar, sadece { ... } arasını alıyoruz.
-    const firstBrace = text.indexOf('{');
-    const lastBrace = text.lastIndexOf('}');
-    if (firstBrace !== -1 && lastBrace !== -1) {
-      text = text.substring(firstBrace, lastBrace + 1);
-    }
-
-    try {
-      return NextResponse.json(JSON.parse(text));
-    } catch (e) {
-      console.error("JSON Parse Hatası:", text);
-      // Hata olursa donmasın diye manuel cevap dönüyoruz
-      return NextResponse.json({
-        reply: "Could you please repeat that? I missed it.",
-        feedback: ""
-      });
-    }
+    return NextResponse.json(jsonResponse);
 
   } catch (error: any) {
     console.error('API Error:', error);
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    // Hata olsa bile kullanıcıya cevap dön ki sistem kilitlenmesin
+    return NextResponse.json({ 
+      reply: "I'm having trouble connecting. Could you say that again?", 
+      feedback: "" 
+    });
   }
 }
