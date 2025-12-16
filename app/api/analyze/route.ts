@@ -15,7 +15,7 @@ export async function POST(request: Request) {
     // --- KRİTİK DÜZELTME BURADA ---
     // Eski kodda "gemini-pro" kalmış olabilir. Bunu "gemini-1.5-flash" yapıyoruz.
     const model = genAI.getGenerativeModel({
-      model: "gemini-1.5-flash", // <--- BURASI DEĞİŞTİ
+      model: "gemini-1.5-flash-001",  // <--- BURASI DEĞİŞTİ
       generationConfig: {
         responseMimeType: "application/json",
         responseSchema: {
