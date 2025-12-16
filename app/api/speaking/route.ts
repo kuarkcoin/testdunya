@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { GoogleGenerativeAI, SchemaType } from "@google/generative-ai";
+import { GoogleGenerativeAI } from "@google/generative-ai";
 
 export async function POST(request: Request) {
   try {
@@ -10,63 +10,59 @@ export async function POST(request: Request) {
     const body = await request.json();
     const { message, history, mode } = body;
 
-    // --- SENARYO 1: PUANLAMA MODU (FINISH) ---
+    // --- MODEL SEÇİMİ ---
+    // Burayı isterseniz "gemini-2.0-flash-exp" yapabilirsiniz.
+    // Ama "gemini-1.5-flash" en kararlı olandır.
+    const modelName = "gemini-2.5-flash"; 
+
+    // --- SENARYO 1: PUANLAMA (FINISH) ---
     if (mode === 'grade') {
       const model = genAI.getGenerativeModel({
-        model: "gemini-1.5-flash",
+        model: modelName,
         generationConfig: { responseMimeType: "application/json" }
       });
 
       const prompt = `
         Act as a strict IELTS Examiner.
-        Review the conversation history and provide evaluation.
+        Review history and provide evaluation.
         HISTORY: ${JSON.stringify(history)}
-        
         Output JSON: { "band_score": number, "fluency_feedback": string, "lexical_feedback": string, "grammar_feedback": string, "overall_comment": string }
       `;
 
       const result = await model.generateContent(prompt);
       const text = result.response.text();
-      // Temizlik Yapıyoruz (Markdown karakterlerini siliyoruz)
+      // Temizlik: Markdown ve tırnak işaretlerini temizle
       const cleanText = text.replace(/```json/g, '').replace(/```/g, '').trim();
       return NextResponse.json(JSON.parse(cleanText));
     }
 
-    // --- SENARYO 2: SOHBET MODU (CHAT) ---
-    // Burada şema kullanmadan, manuel JSON istiyoruz (Daha hızlı ve hatasız çalışır)
-    const model = genAI.getGenerativeModel({
-      model: "gemini-1.5-flash", 
-      // responseMimeType kullanmıyoruz, manuel temizleyeceğiz. Bu daha güvenlidir.
-    });
+    // --- SENARYO 2: SOHBET (CHAT) ---
+    const model = genAI.getGenerativeModel({ model: modelName });
 
     const prompt = `
       You are an IELTS Speaking Examiner.
-      CONVERSATION HISTORY: ${JSON.stringify(history)}
-      USER JUST SAID: "${message}"
+      HISTORY: ${JSON.stringify(history)}
+      USER SAID: "${message}"
       
-      INSTRUCTIONS:
-      1. Reply naturally to the user.
-      2. If this is the start, ask about their home, work, or studies.
-      3. Keep reply short (max 2 sentences).
-      4. If user made a grammar mistake, put it in 'feedback'. If not, leave 'feedback' empty string.
+      TASK:
+      1. Reply naturally (max 2 sentences).
+      2. If user made a grammar mistake, put correction in 'feedback'. Else empty.
       
-      YOU MUST RETURN ONLY A JSON OBJECT LIKE THIS:
+      RETURN ONLY JSON:
       {
         "reply": "Your reply here",
-        "feedback": "Correction here or empty"
+        "feedback": "Correction or empty"
       }
     `;
 
     const result = await model.generateContent(prompt);
-    const response = await result.response;
-    let text = response.text();
+    let text = result.response.text();
 
-    console.log("Ham Cevap:", text); // Vercel Loglarında görmek için
-
-    // KRİTİK TEMİZLİK: Backtick'leri ve json yazılarını temizle
+    // --- DONMA SORUNUNU ÇÖZEN TEMİZLİK KODU ---
+    // Gemini bazen ```json ile başlar, bunu siliyoruz.
     text = text.replace(/```json/g, '').replace(/```/g, '').trim();
-
-    // Bazen AI süslü parantezin dışına yazı ekler, sadece { ile } arasını alalım
+    
+    // Bazen süslü parantez dışına taşar, sadece { ... } arasını alıyoruz.
     const firstBrace = text.indexOf('{');
     const lastBrace = text.lastIndexOf('}');
     if (firstBrace !== -1 && lastBrace !== -1) {
@@ -74,19 +70,18 @@ export async function POST(request: Request) {
     }
 
     try {
-      const jsonResult = JSON.parse(text);
-      return NextResponse.json(jsonResult);
-    } catch (parseError) {
+      return NextResponse.json(JSON.parse(text));
+    } catch (e) {
       console.error("JSON Parse Hatası:", text);
-      // Eğer JSON bozuksa, manuel bir cevap uydurup çökmesini engelleyelim
+      // Hata olursa donmasın diye manuel cevap dönüyoruz
       return NextResponse.json({
-        reply: "Could you please repeat that? I didn't quite catch it.",
+        reply: "Could you please repeat that? I missed it.",
         feedback: ""
       });
     }
 
   } catch (error: any) {
-    console.error('Genel API Hatası:', error);
-    return NextResponse.json({ error: error.message || "Server Error" }, { status: 500 });
+    console.error('API Error:', error);
+    return NextResponse.json({ error: error.message }, { status: 500 });
   }
 }
