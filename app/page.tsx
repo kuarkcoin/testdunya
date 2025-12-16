@@ -401,7 +401,33 @@ export default function HomePage() {
               </div>
             </div>
           </Link>
-        </section>
+{/* 4. WORDLE (IELTS) */}
+<Link
+  href="/wordle"
+  className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-500 to-green-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
+>
+  <div className="absolute top-0 right-0 -mt-4 -mr-4 h-32 w-32 rounded-full bg-white/10 blur-2xl transition-all group-hover:bg-white/20"></div>
+
+  <div className="relative z-10 flex flex-col justify-between h-full">
+    <div>
+      <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-emerald-100 backdrop-blur-sm">
+        🟩 WORDLE
+      </div>
+      <h3 className="mb-2 text-2xl font-black tracking-tight">IELTS Wordle</h3>
+      <p className="text-emerald-50 opacity-90 text-sm">
+        Guess the word in 6 tries
+      </p>
+    </div>
+
+    <div className="mt-6 flex items-center gap-3">
+      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-emerald-600 shadow-lg transition-transform group-hover:scale-110">
+        🎯
+      </div>
+      <span className="font-bold text-sm">Play →</span>
+    </div>
+  </div>
+</Link>
+</section>
 
         {/* --- NATIONAL EXAMS --- */}
         {examConfig.map((exam) => {
