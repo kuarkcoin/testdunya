@@ -78,11 +78,14 @@ export default function WordlePage() {
 
       try {
         // Cache-buster: Vercel/edge cache veya browser cache takılmasın
-        const t = Date.now();
-        const res = await fetch(`/api/wordle/target?len=${newLen}&t=${t}`, {
-          method: "GET",
-          cache: "no-store",
-        });
+        const t = Date.now();  
+const res = await fetch(
+  `/api/wordle/target?len=${newLen}&mode=random&t=${t}`,
+  {
+    method: "GET",
+    cache: "no-store",
+  }
+);
 
         const json = await res.json();
         if (!res.ok || json?.error) throw new Error(json?.error || "Kelime yüklenemedi");
