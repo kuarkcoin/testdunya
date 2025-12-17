@@ -459,6 +459,23 @@ export default function HomePage() {
         <span className="font-bold text-sm">Play →</span>
       </div>
     </div>
+       {/* 6. IQ TEST */}
+  <Link href="/iq-test" className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-sky-600 to-indigo-700 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl">
+    <div className="relative z-10 flex flex-col justify-between h-full">
+      <div>
+        <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-sky-100 backdrop-blur-sm">
+          🧩 IQ
+        </div>
+        <h3 className="mb-2 text-2xl font-black tracking-tight">IQ Test (Hard)</h3>
+        <p className="text-sky-100 opacity-90 text-sm">20 questions • timed</p>
+      </div>
+      <div className="mt-6 flex items-center gap-3">
+        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-indigo-700 shadow-lg transition-transform group-hover:scale-110">
+          🎯
+        </div>
+        <span className="font-bold text-sm">Start →</span>
+      </div>
+    </div>
   </Link>
 </section>
 
