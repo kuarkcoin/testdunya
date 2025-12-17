@@ -2,9 +2,8 @@
 
 import React, { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import Confetti from "react-confetti"; 
+import Confetti from "react-confetti";
 
-// --- TİP TANIMLAMALARI ---
 type Item = { word: string; meaning: string };
 
 type Card = {
@@ -18,7 +17,6 @@ type Card = {
 
 const BEST_KEY = "td_wordmatch_best_v1";
 
-// --- YARDIMCI FONKSİYON: DİZİYİ KARIŞTIR ---
 function shuffle<T>(arr: T[]) {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
@@ -33,84 +31,86 @@ export default function WordMatchPage() {
   const [pool, setPool] = useState<Item[]>([]);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
-  // Oyun State'leri
   const [cards, setCards] = useState<Card[]>([]);
-  const [first, setFirst] = useState<Card | null>(null); // İlk açılan kart
-  const [lock, setLock] = useState(false); // Tıklamayı kilitleme (yanlış eşleşmede)
+  const [first, setFirst] = useState<Card | null>(null);
+  const [lock, setLock] = useState(false);
 
-  // İstatistikler
   const [moves, setMoves] = useState(0);
   const [matches, setMatches] = useState(0);
   const [best, setBest] = useState<number>(0);
 
-  // Ekran Boyutu (Konfeti için)
   const [windowSize, setWindowSize] = useState({ width: 0, height: 0 });
 
+  // window size for confetti
   useEffect(() => {
-    const handleResize = () => {
+    const handleResize = () =>
       setWindowSize({ width: window.innerWidth, height: window.innerHeight });
-    };
-    handleResize(); // İlk yüklemede çalıştır
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // --- 1. VERİYİ API'DEN ÇEK ---
+  // load from API
   useEffect(() => {
     (async () => {
       try {
-        // Oluşturduğumuz route.ts dosyasına istek atıyoruz
-        const res = await fetch("/api/wordmatch");
-
-        if (!res.ok) {
-          throw new Error(`API Hatası: ${res.status}`);
-        }
+        const res = await fetch("/api/wordmatch", { cache: "no-store" });
+        if (!res.ok) throw new Error(`API error: ${res.status}`);
 
         const data: Item[] = await res.json();
-        
-        // Veriyi temizle (boş olanlar varsa)
         let clean = (data || []).filter((x) => x?.word && x?.meaning);
-        
-        // Mükerrer kelimeleri temizle (Aynı kelimeden 2 tane gelmesin)
-        const seen = new Set();
-        clean = clean.filter(item => {
-          const duplicate = seen.has(item.word);
-          seen.add(item.word);
-          return !duplicate;
+
+        // remove duplicate words
+        const seen = new Set<string>();
+        clean = clean.filter((item) => {
+          const key = item.word.trim().toLowerCase();
+          if (seen.has(key)) return false;
+          seen.add(key);
+          return true;
         });
 
-        if (clean.length === 0) throw new Error("Kelime listesi boş geldi.");
+        if (clean.length === 0) throw new Error("Word list is empty.");
 
         setPool(clean);
         setErrorMsg(null);
       } catch (err: any) {
-        console.error("Veri yükleme hatası:", err);
-        setErrorMsg(err.message);
+        console.error("Data load error:", err);
+        setErrorMsg(err?.message || "Unknown error");
         setPool([]);
       } finally {
         setLoading(false);
       }
     })();
 
-    // En iyi skoru localStorage'dan al
     const b = Number(localStorage.getItem(BEST_KEY));
     if (Number.isFinite(b)) setBest(b);
   }, []);
 
-  // --- 2. OYUNU BAŞLAT ---
   const start = () => {
-    if (pool.length < 12) return; // Yeterli kelime yoksa başlatma
+    if (pool.length < 12) return;
 
-    // Havuzdan rastgele 6 çift seç
     const pairs = shuffle(pool).slice(0, 6);
 
-    // Kartları oluştur (Hem kelime hem anlam için)
     const nextCards: Card[] = shuffle(
       pairs.flatMap((p, i) => {
-        const key = `${i}-${p.word}`; // Benzersiz eşleşme anahtarı
+        const key = `${i}-${p.word}`;
         return [
-          { id: `w-${key}`, kind: "word", value: p.word, pairKey: key, flipped: false, matched: false },
-          { id: `m-${key}`, kind: "meaning", value: p.meaning, pairKey: key, flipped: false, matched: false },
+          {
+            id: `w-${key}`,
+            kind: "word",
+            value: p.word,
+            pairKey: key,
+            flipped: false,
+            matched: false,
+          },
+          {
+            id: `m-${key}`,
+            kind: "meaning",
+            value: p.meaning,
+            pairKey: key,
+            flipped: false,
+            matched: false,
+          },
         ];
       })
     );
@@ -122,48 +122,41 @@ export default function WordMatchPage() {
     setMatches(0);
   };
 
-  // Veri yüklendiğinde otomatik başlat
   useEffect(() => {
     if (!loading && pool.length > 0) start();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loading, pool.length]);
 
-  // Oyun bitti mi kontrolü
   const allDone = useMemo(() => matches === 6 && matches > 0, [matches]);
 
-  // Skor kaydetme (Oyun bittiğinde)
   useEffect(() => {
     if (!allDone) return;
-    const score = Math.max(0, 100 - moves * 5); // Basit puanlama
+    const score = Math.max(0, 100 - moves * 5);
     if (score > best) {
       setBest(score);
       localStorage.setItem(BEST_KEY, String(score));
     }
   }, [allDone, moves, best]);
 
-  // --- 3. KART ÇEVİRME MANTIĞI ---
   const flip = (card: Card) => {
-    if (lock) return; // Kilitliyse işlem yapma
-    if (card.flipped || card.matched) return; // Zaten açıksa işlem yapma
+    if (lock) return;
+    if (card.flipped || card.matched) return;
 
-    // Tıklanan kartı çevir
-    setCards((prev) => prev.map((c) => (c.id === card.id ? { ...c, flipped: true } : c)));
+    setCards((prev) =>
+      prev.map((c) => (c.id === card.id ? { ...c, flipped: true } : c))
+    );
 
-    // Eğer bu ilk kartsa, first state'ine ata ve bekle
     if (!first) {
       setFirst({ ...card, flipped: true });
       return;
     }
 
-    // İkinci kart seçildi, hamle sayısını artır
     setMoves((m) => m + 1);
     const second = { ...card, flipped: true };
 
-    // Eşleşme kontrolü: PairKey aynı olmalı, türleri (word/meaning) farklı olmalı
     const isMatch = first.pairKey === second.pairKey && first.kind !== second.kind;
 
     if (isMatch) {
-      // EŞLEŞTİ!
       setCards((prev) =>
         prev.map((c) =>
           c.pairKey === second.pairKey ? { ...c, matched: true, flipped: true } : c
@@ -174,132 +167,145 @@ export default function WordMatchPage() {
       return;
     }
 
-    // EŞLEŞMEDİ! (Geri kapat)
-    setLock(true); // Tıklamayı kilitle
+    setLock(true);
     setTimeout(() => {
       setCards((prev) =>
         prev.map((c) => {
-          // Sadece son açılan iki kartı kapat
           if (c.id === first.id || c.id === second.id) return { ...c, flipped: false };
           return c;
         })
       );
       setFirst(null);
-      setLock(false); // Kilidi aç
-    }, 800); // 800ms beklet
+      setLock(false);
+    }, 800);
   };
 
   return (
     <main className="min-h-screen bg-slate-950 text-white px-4 py-10 relative overflow-hidden">
-      {/* Konfeti Efekti (Oyun bitince) */}
-      {allDone && <Confetti width={windowSize.width} height={windowSize.height} recycle={false} numberOfPieces={500} />}
+      {allDone && (
+        <Confetti
+          width={windowSize.width}
+          height={windowSize.height}
+          recycle={false}
+          numberOfPieces={400}
+        />
+      )}
 
       <div className="max-w-5xl mx-auto space-y-6 relative z-10">
-        
-        {/* Üst Navigasyon ve Skorlar */}
         <div className="flex items-center justify-between gap-3">
-          <Link href="/" className="text-slate-300 hover:text-white font-bold transition-colors">
+          <Link href="/" className="text-slate-300 hover:text-white font-bold">
             ← Home
           </Link>
+
           <div className="flex items-center gap-3">
             <div className="px-3 py-2 rounded-xl bg-white/5 border border-white/10">
-              <div className="text-[10px] uppercase tracking-widest text-slate-400 font-bold">Moves</div>
+              <div className="text-[10px] uppercase tracking-widest text-slate-400 font-bold">
+                Moves
+              </div>
               <div className="text-lg font-black text-amber-300">{moves}</div>
             </div>
+
             <div className="px-3 py-2 rounded-xl bg-white/5 border border-white/10">
-              <div className="text-[10px] uppercase tracking-widest text-slate-400 font-bold">Best</div>
+              <div className="text-[10px] uppercase tracking-widest text-slate-400 font-bold">
+                Best
+              </div>
               <div className="text-lg font-black text-indigo-300">{best}</div>
             </div>
           </div>
         </div>
 
-        {/* Başlık */}
         <header className="text-center space-y-2">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/15 border border-emerald-400/20 text-emerald-200 text-sm font-bold">
             🧠 Word Match
           </div>
-          <h1 className="text-3xl md:text-5xl font-black tracking-tight">Match Word ↔ Meaning</h1>
+          <h1 className="text-3xl md:text-5xl font-black tracking-tight">
+            Match Word ↔ Meaning
+          </h1>
           <p className="text-slate-400">Flip cards and find pairs.</p>
         </header>
 
-        {/* Butonlar */}
         <div className="flex flex-col sm:flex-row gap-2">
-          <button 
-            onClick={start} 
-            className="flex-1 py-3 rounded-2xl font-black bg-indigo-600 hover:bg-indigo-500 transition-colors shadow-lg shadow-indigo-500/20 active:scale-95 duration-200"
+          <button
+            onClick={start}
+            className="flex-1 py-3 rounded-2xl font-black bg-indigo-600 hover:bg-indigo-500"
           >
             NEW BOARD
           </button>
-          <Link 
-            href="/mistakes" 
-            className="sm:w-56 py-3 rounded-2xl font-black bg-slate-800 hover:bg-slate-700 text-center transition-colors"
+
+          <Link
+            href="/mistakes"
+            className="sm:w-56 py-3 rounded-2xl font-black bg-slate-800 hover:bg-slate-700 text-center"
           >
             PRACTICE MISTAKES →
           </Link>
         </div>
 
-        {/* --- OYUN ALANI --- */}
         {loading ? (
-          <div className="text-center text-slate-400 font-bold py-10 animate-pulse">Loading Vocabulary...</div>
+          <div className="text-center text-slate-400 font-bold py-10">Loading…</div>
         ) : errorMsg ? (
           <div className="p-6 rounded-2xl bg-red-500/10 border border-red-500/20 text-red-200 text-center">
-            <div className="font-bold text-lg mb-2">Error Loading Data</div>
+            <div className="font-bold text-lg mb-2">Error</div>
             <p className="text-sm opacity-80">{errorMsg}</p>
           </div>
         ) : (
           <section className="rounded-3xl bg-white/5 border border-white/10 p-4 md:p-8">
-            
-            {/* Bitiş Mesajı */}
             {allDone && (
-              <div className="mb-6 rounded-2xl bg-emerald-500/20 border border-emerald-400/30 p-6 text-center animate-bounce">
-                <div className="font-black text-emerald-200 text-2xl mb-1">🎉 Excellent!</div>
-                <div className="text-emerald-100 font-medium">You matched all pairs in {moves} moves.</div>
+              <div className="mb-6 rounded-2xl bg-emerald-500/20 border border-emerald-400/30 p-5 text-center">
+                <div className="font-black text-emerald-200 text-xl mb-1">🎉 Completed!</div>
+                <div className="text-emerald-100 font-medium">
+                  You matched all pairs in {moves} moves.
+                </div>
               </div>
             )}
 
-            {/* Grid Yapısı */}
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 md:gap-4">
               {cards.map((c) => {
                 const isFlipped = c.flipped || c.matched;
+
                 return (
-                  // Kart Container (Perspective özelliği ile 3D derinlik verir)
-                  <div 
-                    key={c.id} 
-                    className="group h-[110px] sm:h-[130px] w-full [perspective:1000px] cursor-pointer" 
+                  <div
+                    key={c.id}
+                    className="group h-[110px] sm:h-[130px] w-full [perspective:1000px] cursor-pointer"
                     onClick={() => flip(c)}
                   >
-                    {/* Kartın kendisi (Dönen kısım) */}
-                    <div className={`relative h-full w-full transition-all duration-500 [transform-style:preserve-3d] shadow-xl rounded-2xl ${isFlipped ? "[transform:rotateY(180deg)]" : ""}`}>
-                      
-                      {/* --- ÖN YÜZ (KAPALI) --- */}
-                      <div className="absolute inset-0 h-full w-full rounded-2xl bg-slate-800 border-2 border-slate-700 [backface-visibility:hidden] flex items-center justify-center hover:bg-slate-700 transition-colors">
-                        <div className="text-slate-500 font-bold text-xs uppercase tracking-widest opacity-50 group-hover:opacity-100">
+                    <div
+                      className={`relative h-full w-full transition-all duration-500 [transform-style:preserve-3d] shadow-xl rounded-2xl ${
+                        isFlipped ? "[transform:rotateY(180deg)]" : ""
+                      }`}
+                    >
+                      {/* front */}
+                      <div className="absolute inset-0 h-full w-full rounded-2xl bg-slate-800 border-2 border-slate-700 [backface-visibility:hidden] flex items-center justify-center hover:bg-slate-700">
+                        <div className="text-slate-500 font-bold text-xs uppercase tracking-widest opacity-60">
                           TAP
                         </div>
                       </div>
 
-                      {/* --- ARKA YÜZ (AÇIK) --- */}
-                      <div 
-                        className={`
-                          absolute inset-0 h-full w-full rounded-2xl border-2 [backface-visibility:hidden] [transform:rotateY(180deg)] 
-                          flex flex-col items-center justify-center p-3 text-center overflow-hidden
-                          ${c.matched 
-                            ? "bg-emerald-900/80 border-emerald-500 shadow-[0_0_15px_rgba(16,185,129,0.4)]" 
+                      {/* back */}
+                      <div
+                        className={`absolute inset-0 h-full w-full rounded-2xl border-2 [backface-visibility:hidden] [transform:rotateY(180deg)] flex flex-col items-center justify-center p-3 text-center overflow-hidden ${
+                          c.matched
+                            ? "bg-emerald-900/80 border-emerald-500"
                             : "bg-slate-900 border-indigo-500/50"
-                          }
-                        `}
+                        }`}
                       >
-                        <div className={`text-[10px] uppercase tracking-widest font-bold mb-1 ${c.matched ? "text-emerald-300" : "text-indigo-300"}`}>
+                        <div
+                          className={`text-[10px] uppercase tracking-widest font-bold mb-1 ${
+                            c.matched ? "text-emerald-300" : "text-indigo-300"
+                          }`}
+                        >
                           {c.kind === "word" ? "Word" : "Meaning"}
                         </div>
-                        {/* Metin Alanı (Taşarsa kaydırılabilir) */}
+
                         <div className="w-full h-full overflow-y-auto custom-scrollbar flex items-center justify-center">
-                          <p className={`font-medium leading-snug ${c.kind === "word" ? "text-lg text-white" : "text-xs text-slate-200"}`}>
-                             {c.value}
+                          <p
+                            className={`font-medium leading-snug ${
+                              c.kind === "word" ? "text-lg text-white" : "text-xs text-slate-200"
+                            }`}
+                          >
+                            {c.value}
                           </p>
                         </div>
                       </div>
-
                     </div>
                   </div>
                 );
@@ -309,11 +315,17 @@ export default function WordMatchPage() {
         )}
       </div>
 
-      {/* Kaydırma Çubuğu Stili */}
       <style jsx global>{`
-        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
-        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
-        .custom-scrollbar::-webkit-scrollbar-thumb { background-color: rgba(255, 255, 255, 0.2); border-radius: 10px; }
+        .custom-scrollbar::-webkit-scrollbar {
+          width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+          background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+          background-color: rgba(255, 255, 255, 0.2);
+          border-radius: 10px;
+        }
       `}</style>
     </main>
   );
