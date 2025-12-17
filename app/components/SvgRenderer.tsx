@@ -1,22 +1,24 @@
 import React from 'react';
 
-// Sizin JSON yapınıza uygun tipler
-type SvgElement = {
-  t: 'rect' | 'circle' | 'line' | 'path'; // t: type
-  x?: number; y?: number; w?: number; h?: number; // rect
-  cx?: number; cy?: number; r?: number; // circle
-  x1?: number; y1?: number; x2?: number; y2?: number; // line
-  d?: string; // path
-  sw?: number; // strokeWidth
-  dash?: boolean; // dashed line
+// 👇 BAŞLARINA 'export' EKLEDİK
+export type SvgElement = {
+  t: 'rect' | 'circle' | 'line' | 'path'; 
+  x?: number; y?: number; w?: number; h?: number;
+  cx?: number; cy?: number; r?: number;
+  x1?: number; y1?: number; x2?: number; y2?: number;
+  d?: string;
+  sw?: number;
+  dash?: boolean;
 };
 
-type SvgData = {
+// 👇 BAŞINA 'export' EKLEDİK
+export type SvgData = {
   viewBox: string;
   elements: SvgElement[];
 };
 
 export default function SvgRenderer({ data, className }: { data: SvgData; className?: string }) {
+  // ... dosyanın geri kalanı aynı ...
   if (!data) return null;
 
   return (
