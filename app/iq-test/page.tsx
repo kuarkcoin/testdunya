@@ -2,16 +2,14 @@
 
 import React, { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
-// 👇 Hem bileşeni hem de Tipleri import ediyoruz
+// 👇 SVG Renderer
 import SvgRenderer, { SvgData } from '../components/SvgRenderer';
+// 👇 ARTIK VERİYİ DİREKT BURADAN ÇEKİYORUZ
+import { questions } from '../data/questions';
 
 // -------------------- TİP TANIMLAMALARI --------------------
 
 type Domain = 'logic' | 'math' | 'visual' | 'attention';
-
-// SVG Veri Tipleri (Renderer ile uyumlu)
-//type SvgElement = { t: string; [key: string]: any };
-//type SvgData = { viewBox: string; elements: SvgElement[] };
 
 type IQQuestion =
   // A) Metin Tabanlı Sorular
@@ -30,8 +28,8 @@ type IQQuestion =
       domain: Domain;
       type: 'grid-missing';
       prompt: string;
-      grid: string[]; // 5x5 ASCII
-      options: string[][]; // 4 adet 5x5
+      grid: string[]; 
+      options: string[][];
       correct: number;
       explanation?: string;
     }
@@ -40,11 +38,11 @@ type IQQuestion =
       domain: Domain;
       type: 'grid-odd-one-out';
       prompt: string;
-      options: string[][]; // 4 adet 5x5
+      options: string[][];
       correct: number;
       explanation?: string;
     }
-  // C) YENİ: Visual Matrix (SVG) Soruları
+  // C) Visual Matrix (SVG) Soruları
   | {
       id: string;
       domain: Domain;
@@ -61,15 +59,12 @@ type AnswerState = {
   correct: boolean | null;
 };
 
-const TEST_URL = '/data/iq/iq_hard_test_01.json';
-
-// -------------------- YARDIMCI FONKSİYONLAR & BİLEŞENLER --------------------
+// -------------------- YARDIMCI BİLEŞENLER --------------------
 
 function clamp(n: number, a: number, b: number) {
   return Math.max(a, Math.min(b, n));
 }
 
-// ASCII Grid Çizici (Eski tip sorular için)
 function CellGrid({ grid }: { grid: string[] }) {
   return (
     <div className="inline-grid grid-cols-5 gap-1 p-3 rounded-2xl bg-white/5 border border-white/10">
@@ -87,43 +82,24 @@ function CellGrid({ grid }: { grid: string[] }) {
   );
 }
 
-// -------------------- ANA SAYFA BİLEŞENİ --------------------
+// -------------------- ANA SAYFA --------------------
 
 export default function IQTestPage() {
-  const [loading, setLoading] = useState(true);
-  const [data, setData] = useState<IQQuestion[]>([]);
-  const [error, setError] = useState<string | null>(null);
+  // ARTIK LOADING YOK! Veri anında hazır.
+  // const [data, setData] = useState<IQQuestion[]>([]);
+  // Veriyi değişkene atıyoruz (Tip güvenliği için 'as any' kullanıyoruz şimdilik, soruları import ettik)
+  const data = questions as any as IQQuestion[]; 
 
   const [idx, setIdx] = useState(0);
   const [answers, setAnswers] = useState<Record<string, AnswerState>>({});
 
-  // 18 dakika süre
   const [timeLeft, setTimeLeft] = useState(18 * 60);
   const [started, setStarted] = useState(false);
   const [finished, setFinished] = useState(false);
 
   const total = data.length || 20;
 
-  // JSON Yükleme
-  useEffect(() => {
-    (async () => {
-      try {
-        const res = await fetch(TEST_URL, { cache: 'no-store' });
-        if (!res.ok) throw new Error(`Fetch failed: ${res.status}`);
-        const json = (await res.json()) as IQQuestion[];
-        if (!Array.isArray(json) || json.length === 0) throw new Error('JSON is empty/invalid.');
-        setData(json);
-        setError(null);
-      } catch (e: any) {
-        setError(e?.message || 'Failed to load test data.');
-        setData([]);
-      } finally {
-        setLoading(false);
-      }
-    })();
-  }, []);
-
-  // Sayaç
+  // Sadece Timer Effect kaldı, Fetch Effect'i SİLDİK.
   useEffect(() => {
     if (!started || finished) return;
     if (timeLeft <= 0) {
@@ -155,7 +131,7 @@ export default function IQTestPage() {
   const prev = () => setIdx((p) => clamp(p - 1, 0, (data.length || 1) - 1));
   const finishNow = () => setFinished(true);
 
-  // Puanlama Hesaplaması
+  // Score Calculation
   const scorePack = useMemo(() => {
     const domainMax: Record<Domain, number> = { logic: 0, math: 0, visual: 0, attention: 0 };
     const domainGot: Record<Domain, number> = { logic: 0, math: 0, visual: 0, attention: 0 };
@@ -220,15 +196,7 @@ export default function IQTestPage() {
         </header>
 
         {/* --- Main Area --- */}
-        {loading ? (
-          <div className="text-center text-slate-400 font-bold py-10">Loading test…</div>
-        ) : error ? (
-          <div className="p-6 rounded-2xl bg-red-500/10 border border-red-500/20 text-red-200 text-center">
-            <div className="font-bold text-lg mb-2">Data load error</div>
-            <div className="text-sm opacity-80">{error}</div>
-            <div className="text-xs opacity-60 mt-3">Expected file: public{TEST_URL}</div>
-          </div>
-        ) : finished ? (
+        {finished ? (
           /* --- SONUÇ EKRANI --- */
           <section className="rounded-3xl bg-white/5 border border-white/10 p-6 md:p-8 space-y-6">
             <div className="text-center">
@@ -237,16 +205,13 @@ export default function IQTestPage() {
                 Correct: <span className="font-black text-white">{scorePack.totalCorrect}/{scorePack.totalQ}</span> •
                 Estimated score: <span className="font-black text-indigo-200">{scorePack.gameIQ}</span>
               </div>
-              <div className="text-xs text-slate-500 mt-2">
-                (This is a gamified estimate, not a clinical IQ measurement.)
-              </div>
             </div>
 
             <div className="grid md:grid-cols-4 gap-3">
               {(['logic', 'math', 'visual', 'attention'] as Domain[]).map((d) => {
                 const got = scorePack.domainGot[d];
                 const mx = scorePack.domainMax[d] || 1;
-                const pct = Math.round((got / mx) * 100);
+                const pct = mx > 0 ? Math.round((got / mx) * 100) : 0;
                 return (
                   <div key={d} className="rounded-2xl bg-slate-900/50 border border-white/10 p-4">
                     <div className="text-xs uppercase tracking-widest text-slate-400 font-bold">{d}</div>
@@ -297,23 +262,20 @@ export default function IQTestPage() {
               <div className="space-y-6">
                 <div className="text-lg md:text-xl font-black text-white">{q.prompt}</div>
 
-                {/* 1. SORU GÖRSELİ ALANI */}
+                {/* 1. SORU GÖRSELİ */}
                 <div className="flex justify-center">
                   {'questionSvg' in q ? (
-                    // A) SVG Soru (Visual Matrix)
                     <div className="w-64 h-64 bg-white rounded-xl border-4 border-slate-700 shadow-2xl overflow-hidden text-slate-900 transition-transform hover:scale-[1.02]">
                       <SvgRenderer data={q.questionSvg} />
                     </div>
                   ) : 'grid' in q && q.grid ? (
-                    // B) ASCII Grid Soru
                     <CellGrid grid={q.grid} />
                   ) : null}
                 </div>
 
-                {/* 2. SEÇENEKLER ALANI */}
+                {/* 2. SEÇENEKLER */}
                 <div className={`grid gap-3 ${'questionSvg' in q ? 'grid-cols-2 sm:grid-cols-3 md:grid-cols-5' : 'grid-cols-1 md:grid-cols-2'}`}>
                   
-                  {/* --- DURUM A: Metin Seçenekleri --- */}
                   {'optionsText' in q ? (
                     q.optionsText.map((opt, i) => {
                       const picked = answers[q.id]?.selected === i;
@@ -330,7 +292,6 @@ export default function IQTestPage() {
                       );
                     })
                   ) : 'questionSvg' in q ? (
-                    /* --- DURUM B: Visual Matrix (SVG) Seçenekleri --- */
                     q.options.map((opt, i) => {
                       const picked = answers[q.id]?.selected === i;
                       return (
@@ -344,7 +305,6 @@ export default function IQTestPage() {
                             }
                           `}
                         >
-                          {/* opt.svg verisini Renderer'a gönderiyoruz */}
                           <SvgRenderer data={opt.svg} />
                           {picked && (
                             <div className="absolute top-1 right-1 bg-indigo-600 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full shadow-sm">
@@ -355,7 +315,6 @@ export default function IQTestPage() {
                       );
                     })
                   ) : (
-                    /* --- DURUM C: ASCII Grid Seçenekleri --- */
                     q.options.map((gridOpt, i) => {
                       const picked = answers[q.id]?.selected === i;
                       return (
@@ -374,7 +333,6 @@ export default function IQTestPage() {
                   )}
                 </div>
 
-                {/* Açıklama (Cevaplandıktan sonra görünür) */}
                 {isAnswered && q.explanation ? (
                   <div className="rounded-2xl bg-emerald-500/10 border border-emerald-400/20 p-4 text-emerald-200 animate-in fade-in slide-in-from-top-2">
                     <div className="font-black mb-1">Explanation</div>
@@ -382,7 +340,6 @@ export default function IQTestPage() {
                   </div>
                 ) : null}
 
-                {/* Navigasyon Butonları */}
                 <div className="flex items-center justify-between pt-4 border-t border-white/5 mt-6">
                   <button
                     onClick={prev}
