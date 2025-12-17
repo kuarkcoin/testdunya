@@ -1,6 +1,5 @@
 import React from 'react';
 
-// 👇 BAŞLARINA 'export' EKLEDİK
 export type SvgElement = {
   t: 'rect' | 'circle' | 'line' | 'path'; 
   x?: number; y?: number; w?: number; h?: number;
@@ -11,56 +10,63 @@ export type SvgElement = {
   dash?: boolean;
 };
 
-// 👇 BAŞINA 'export' EKLEDİK
 export type SvgData = {
   viewBox: string;
   elements: SvgElement[];
 };
 
 export default function SvgRenderer({ data, className }: { data: SvgData; className?: string }) {
-  // ... dosyanın geri kalanı aynı ...
-  if (!data) return null;
+  // 1. GÜVENLİK KONTROLÜ: Veri hiç yoksa veya elements dizisi yoksa çökme, boş dön.
+  if (!data || !data.elements || !Array.isArray(data.elements)) {
+    return null; 
+  }
 
   return (
     <svg 
-      viewBox={data.viewBox} 
+      viewBox={data.viewBox || "0 0 100 100"} // viewBox yoksa varsayılan değer ata
       className={`w-full h-full ${className || ''}`}
       xmlns="http://www.w3.org/2000/svg"
     >
       {data.elements.map((el, i) => {
+        // Her eleman için temel özellikleri hazırla
         const commonProps = {
           key: i,
-          stroke: "currentColor", // Tailwind text rengini kullanır
+          stroke: "currentColor",
           strokeWidth: el.sw || 4,
           fill: "none",
-          strokeDasharray: el.dash ? "10,5" : undefined, // Kesik çizgi ayarı
+          strokeDasharray: el.dash ? "10,5" : undefined,
           className: "transition-all duration-300"
         };
 
         switch (el.t) {
           case 'rect':
+            // rect çizmek için x,y,w,h lazım. Yoksa çizme.
+            if (el.w === undefined || el.h === undefined) return null;
             return (
               <rect
-                x={el.x} y={el.y} width={el.w} height={el.h}
+                x={el.x || 0} y={el.y || 0} width={el.w} height={el.h}
                 {...commonProps}
               />
             );
           case 'circle':
+             // circle çizmek için r lazım.
+            if (el.r === undefined) return null;
             return (
               <circle
-                cx={el.cx} cy={el.cy} r={el.r}
+                cx={el.cx || 0} cy={el.cy || 0} r={el.r}
                 {...commonProps}
               />
             );
           case 'line':
             return (
               <line
-                x1={el.x1} y1={el.y1} x2={el.x2} y2={el.y2}
+                x1={el.x1 || 0} y1={el.y1 || 0} x2={el.x2 || 0} y2={el.y2 || 0}
                 strokeLinecap="round"
                 {...commonProps}
               />
             );
           case 'path':
+            if (!el.d) return null;
             return (
               <path
                 d={el.d}
