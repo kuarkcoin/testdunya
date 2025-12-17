@@ -438,7 +438,7 @@ export default function HomePage() {
 
   {/* 5. WORD MATCH (IELTS) */}
   <Link
-    href="/word-match"
+    href="/wordmatch"
     className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-fuchsia-600 to-purple-700 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
   >
     <div className="absolute top-0 right-0 -mt-4 -mr-4 h-32 w-32 rounded-full bg-white/10 blur-2xl transition-all group-hover:bg-white/20"></div>
