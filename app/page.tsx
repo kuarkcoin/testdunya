@@ -343,141 +343,143 @@ export default function HomePage() {
         </section>
 
 {/* --- GAME MODES --- */}
-<section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-8">
-  {/* 1. SPEEDRUN */}
-  <Link
-    href="/speedrun"
-    className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-violet-600 to-indigo-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
-  >
-    <div className="relative z-10 flex flex-col justify-between h-full">
-      <div>
-        <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-indigo-100 backdrop-blur-sm">
-          <TimerIcon className="h-4 w-4" /> Challenge
-        </div>
-        <h3 className="mb-2 text-2xl font-black tracking-tight">SpeedRun</h3>
-        <p className="text-indigo-100 opacity-90 text-sm">Race against time!</p>
-      </div>
-      <div className="mt-6 flex items-center gap-3">
-        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-indigo-600 shadow-lg group-hover:scale-110 transition-transform">
-          <GamepadIcon className="h-5 w-5" />
-        </div>
-        <span className="font-bold text-sm">Play →</span>
-      </div>
-    </div>
-  </Link>
+        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-8">
+          {/* 1. SPEEDRUN */}
+          <Link
+            href="/speedrun"
+            className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-violet-600 to-indigo-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
+          >
+            <div className="relative z-10 flex flex-col justify-between h-full">
+              <div>
+                <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-indigo-100 backdrop-blur-sm">
+                  <TimerIcon className="h-4 w-4" /> Challenge
+                </div>
+                <h3 className="mb-2 text-2xl font-black tracking-tight">SpeedRun</h3>
+                <p className="text-indigo-100 opacity-90 text-sm">Race against time!</p>
+              </div>
+              <div className="mt-6 flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-indigo-600 shadow-lg group-hover:scale-110 transition-transform">
+                  <GamepadIcon className="h-5 w-5" />
+                </div>
+                <span className="font-bold text-sm">Play →</span>
+              </div>
+            </div>
+          </Link>
 
-  {/* 2. FLASHCARDS */}
-  <Link
-    href="/flashcards"
-    className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
-  >
-    <div className="relative z-10 flex flex-col justify-between h-full">
-      <div>
-        <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-teal-100 backdrop-blur-sm">
-          <FlashcardIcon className="h-4 w-4" /> Study
-        </div>
-        <h3 className="mb-2 text-2xl font-black tracking-tight">Flashcards</h3>
-        <p className="text-teal-50 opacity-90 text-sm">1000+ IELTS Vocab.</p>
-      </div>
-      <div className="mt-6 flex items-center gap-3">
-        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-emerald-600 shadow-lg group-hover:scale-110 transition-transform">
-          <Book className="h-5 w-5" />
-        </div>
-        <span className="font-bold text-sm">Study →</span>
-      </div>
-    </div>
-  </Link>
+          {/* 2. FLASHCARDS */}
+          <Link
+            href="/flashcards"
+            className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
+          >
+            <div className="relative z-10 flex flex-col justify-between h-full">
+              <div>
+                <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-teal-100 backdrop-blur-sm">
+                  <FlashcardIcon className="h-4 w-4" /> Study
+                </div>
+                <h3 className="mb-2 text-2xl font-black tracking-tight">Flashcards</h3>
+                <p className="text-teal-50 opacity-90 text-sm">1000+ IELTS Vocab.</p>
+              </div>
+              <div className="mt-6 flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-emerald-600 shadow-lg group-hover:scale-110 transition-transform">
+                  <Book className="h-5 w-5" />
+                </div>
+                <span className="font-bold text-sm">Study →</span>
+              </div>
+            </div>
+          </Link>
 
-  {/* 3. WORD HUNTER */}
-  <Link
-    href="/kelime-avcisi"
-    className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
-  >
-    <div className="absolute top-0 right-0 -mt-4 -mr-4 h-32 w-32 rounded-full bg-white/10 blur-2xl transition-all group-hover:bg-white/20"></div>
-    <div className="relative z-10 flex flex-col justify-between h-full">
-      <div>
-        <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-amber-100 backdrop-blur-sm">
-          <Sparkles className="h-4 w-4" /> New AI Game
-        </div>
-        <h3 className="mb-2 text-2xl font-black tracking-tight">Word Hunter</h3>
-        <p className="text-amber-50 opacity-90 text-sm">AI defines, you guess.</p>
-      </div>
-      <div className="mt-6 flex items-center gap-3">
-        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-orange-600 shadow-lg transition-transform group-hover:scale-110">
-          <GamepadIcon className="h-5 w-5" />
-        </div>
-        <span className="font-bold text-sm">Play →</span>
-      </div>
-    </div>
-  </Link>
+          {/* 3. WORD HUNTER */}
+          <Link
+            href="/kelime-avcisi"
+            className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
+          >
+            <div className="absolute top-0 right-0 -mt-4 -mr-4 h-32 w-32 rounded-full bg-white/10 blur-2xl transition-all group-hover:bg-white/20"></div>
+            <div className="relative z-10 flex flex-col justify-between h-full">
+              <div>
+                <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-amber-100 backdrop-blur-sm">
+                  <Sparkles className="h-4 w-4" /> New AI Game
+                </div>
+                <h3 className="mb-2 text-2xl font-black tracking-tight">Word Hunter</h3>
+                <p className="text-amber-50 opacity-90 text-sm">AI defines, you guess.</p>
+              </div>
+              <div className="mt-6 flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-orange-600 shadow-lg transition-transform group-hover:scale-110">
+                  <GamepadIcon className="h-5 w-5" />
+                </div>
+                <span className="font-bold text-sm">Play →</span>
+              </div>
+            </div>
+          </Link>
 
-  {/* 4. WORDLE (IELTS) */}
-  <Link
-    href="/wordle"
-    className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-500 to-green-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
-  >
-    <div className="absolute top-0 right-0 -mt-4 -mr-4 h-32 w-32 rounded-full bg-white/10 blur-2xl transition-all group-hover:bg-white/20"></div>
+          {/* 4. WORDLE (IELTS) */}
+          <Link
+            href="/wordle"
+            className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-500 to-green-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
+          >
+            <div className="absolute top-0 right-0 -mt-4 -mr-4 h-32 w-32 rounded-full bg-white/10 blur-2xl transition-all group-hover:bg-white/20"></div>
 
-    <div className="relative z-10 flex flex-col justify-between h-full">
-      <div>
-        <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-emerald-100 backdrop-blur-sm">
-          🟩 WORDLE <span className="opacity-80">• Daily</span>
-        </div>
-        <h3 className="mb-2 text-2xl font-black tracking-tight">IELTS Wordle</h3>
-        <p className="text-emerald-50 opacity-90 text-sm">Guess the word in 6 tries</p>
-      </div>
+            <div className="relative z-10 flex flex-col justify-between h-full">
+              <div>
+                <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-emerald-100 backdrop-blur-sm">
+                  🟩 WORDLE <span className="opacity-80">• Daily</span>
+                </div>
+                <h3 className="mb-2 text-2xl font-black tracking-tight">IELTS Wordle</h3>
+                <p className="text-emerald-50 opacity-90 text-sm">Guess the word in 6 tries</p>
+              </div>
 
-      <div className="mt-6 flex items-center gap-3">
-        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-emerald-600 shadow-lg transition-transform group-hover:scale-110">
-          🎯
-        </div>
-        <span className="font-bold text-sm">Play →</span>
-      </div>
-    </div>
-  </Link>
+              <div className="mt-6 flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-emerald-600 shadow-lg transition-transform group-hover:scale-110">
+                  🎯
+                </div>
+                <span className="font-bold text-sm">Play →</span>
+              </div>
+            </div>
+          </Link>
 
-  {/* 5. WORD MATCH (IELTS) */}
-  <Link
-    href="/wordmatch"
-    className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-fuchsia-600 to-purple-700 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
-  >
-    <div className="absolute top-0 right-0 -mt-4 -mr-4 h-32 w-32 rounded-full bg-white/10 blur-2xl transition-all group-hover:bg-white/20"></div>
+          {/* 5. WORD MATCH (IELTS) */}
+          <Link
+            href="/wordmatch"
+            className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-fuchsia-600 to-purple-700 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
+          >
+            <div className="absolute top-0 right-0 -mt-4 -mr-4 h-32 w-32 rounded-full bg-white/10 blur-2xl transition-all group-hover:bg-white/20"></div>
 
-    <div className="relative z-10 flex flex-col justify-between h-full">
-      <div>
-        <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-fuchsia-100 backdrop-blur-sm">
-          🧩 Match <span className="opacity-80">• Training</span>
-        </div>
-        <h3 className="mb-2 text-2xl font-black tracking-tight">Word Match</h3>
-        <p className="text-fuchsia-50 opacity-90 text-sm">Match word ↔ meaning fast</p>
-      </div>
+            <div className="relative z-10 flex flex-col justify-between h-full">
+              <div>
+                <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-fuchsia-100 backdrop-blur-sm">
+                  🧩 Match <span className="opacity-80">• Training</span>
+                </div>
+                <h3 className="mb-2 text-2xl font-black tracking-tight">Word Match</h3>
+                <p className="text-fuchsia-50 opacity-90 text-sm">Match word ↔ meaning fast</p>
+              </div>
 
-      <div className="mt-6 flex items-center gap-3">
-        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-purple-700 shadow-lg transition-transform group-hover:scale-110">
-          ✦
-        </div>
-        <span className="font-bold text-sm">Play →</span>
-      </div>
-    </div>
-       {/* 6. IQ TEST */}
-  <Link href="/iq-test" className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-sky-600 to-indigo-700 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl">
-    <div className="relative z-10 flex flex-col justify-between h-full">
-      <div>
-        <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-sky-100 backdrop-blur-sm">
-          🧩 IQ
-        </div>
-        <h3 className="mb-2 text-2xl font-black tracking-tight">IQ Test (Hard)</h3>
-        <p className="text-sky-100 opacity-90 text-sm">20 questions • timed</p>
-      </div>
-      <div className="mt-6 flex items-center gap-3">
-        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-indigo-700 shadow-lg transition-transform group-hover:scale-110">
-          🎯
-        </div>
-        <span className="font-bold text-sm">Start →</span>
-      </div>
-    </div>
-  </Link>
-</section>
+              <div className="mt-6 flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-purple-700 shadow-lg transition-transform group-hover:scale-110">
+                  ✦
+                </div>
+                <span className="font-bold text-sm">Play →</span>
+              </div>
+            </div>
+          </Link>
+
+          {/* 6. IQ TEST */}
+          <Link href="/iq-test" className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-sky-600 to-indigo-700 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl">
+            <div className="relative z-10 flex flex-col justify-between h-full">
+              <div>
+                <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-sky-100 backdrop-blur-sm">
+                  🧩 IQ
+                </div>
+                <h3 className="mb-2 text-2xl font-black tracking-tight">IQ Test (Hard)</h3>
+                <p className="text-sky-100 opacity-90 text-sm">20 questions • timed</p>
+              </div>
+              <div className="mt-6 flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-indigo-700 shadow-lg transition-transform group-hover:scale-110">
+                  🎯
+                </div>
+                <span className="font-bold text-sm">Start →</span>
+              </div>
+            </div>
+          </Link>
+        </section>
 
         {/* --- NATIONAL EXAMS --- */}
         {examConfig.map((exam) => {
