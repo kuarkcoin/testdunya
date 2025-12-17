@@ -1,25 +1,46 @@
 import type { Metadata } from "next";
 
-// Bu kısım Google ve Sosyal Medya için görünür
 export const metadata: Metadata = {
-  title: "Ücretsiz IQ Testi - Görsel Mantık ve Zeka Testi (Hard) | TestDünya",
-  description: "Raven'in Aşamalı Matrisleri tabanlı, 20 soruluk ücretsiz online IQ testimizi çözün. Görsel zeka, soyut düşünme ve mantık becerilerinizi hemen ölçün.",
-  keywords: ["IQ Testi", "Ücretsiz IQ Testi", "Görsel Zeka Testi", "Mantık Testi", "Raven Matrisleri", "Online Test Çöz", "TestDünya"],
+  // Başlık: Global aramalar için İngilizce ve vurucu
+  title: "Free Visual IQ Test (2025) | Logical Reasoning & Pattern Recognition",
+  
+  // Açıklama: Kullanıcıyı testi çözmeye ikna eden metin
+  description: "Take our free 20-question visual IQ test based on Raven's Progressive Matrices. Measure your fluid intelligence, logic, and pattern recognition skills. No registration required.",
+  
+  // Anahtar Kelimeler: Google'ın sevdiği terimler
+  keywords: [
+    "IQ Test",
+    "Free IQ Test",
+    "Visual Logic Test",
+    "Raven's Matrices",
+    "Pattern Recognition",
+    "Fluid Intelligence",
+    "Non-verbal reasoning",
+    "Online IQ Assessment",
+    "TestDunya"
+  ],
+  
+  // Canonical URL (SEO için önemli)
   alternates: {
     canonical: "https://testdunya.net/iq-test",
   },
+
+  // Sosyal Medya Kartları (Twitter/Facebook/WhatsApp önizlemesi)
   openGraph: {
-    title: "Beynini Zorla: 20 Soruluk Görsel IQ Testi",
-    description: "Sadece görsel şekillerden oluşan bu zorlu IQ testini tamamlayıp skorunu görebilir misin?",
+    title: "Challenge Your Brain: Free Visual IQ Test",
+    description: "Can you solve these 20 visual logic puzzles? Test your pattern recognition skills now. 18 Minutes limit.",
     url: "https://testdunya.net/iq-test",
-    siteName: "TestDünya",
-    locale: "tr_TR",
+    siteName: "TestDunya",
+    locale: "en_US", // İçeriğin İngilizce/Global olduğunu belirtir
     type: "website",
+    // İsterseniz buraya bir görsel ekleyebilirsiniz:
+    // images: [{ url: 'https://testdunya.net/og-images/iq-test.jpg', width: 1200, height: 630 }],
   },
+  
   twitter: {
     card: "summary_large_image",
-    title: "Görsel IQ Testi - TestDünya",
-    description: "Mantık ve örüntü kurma becerini ölçmeye hazır mısın?",
+    title: "Free Visual IQ Test - Test Your Logic",
+    description: "20 questions, 18 minutes. How high is your visual IQ?",
   },
 };
 
@@ -28,5 +49,10 @@ export default function IQTestLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    // Arka plan rengini layout seviyesinde sabitleyebiliriz (opsiyonel)
+    <div className="bg-slate-950 min-h-screen">
+      {children}
+    </div>
+  );
 }
