@@ -5,16 +5,23 @@ const BASE_URL = 'https://testdunya.net';
 
 export default function sitemap(): MetadataRoute.Sitemap {
 
-  // 1. Statik Sayfalar
+  // 1. Statik Sayfalar ve Oyunlar
   const staticRoutes = [
     '',
     '/mistakes',
     '/iletisim',
     '/gizlilik',
+    // IELTS Araçları
     '/ielts/calculator',         // Hesaplama Aracı
     '/ielts/speaking',           // Speaking Simülatörü
-    '/ielts/listening',          // YENİ: Listening Menü Sayfası
+    '/ielts/listening',          // Listening Menü Sayfası
     '/ielts/writing-templates',  // Writing Şablonları
+    // YENİ OYUN MODLARI
+    '/speedrun',       // SpeedRun Challenge
+    '/flashcards',     // Flashcard Çalışması
+    '/kelime-avcisi',  // Word Hunter (AI Game)
+    '/wordle',         // IELTS Wordle
+    '/wordmatch',      // Kelime Eşleştirme
   ].map((route) => ({
     url: `${BASE_URL}${route}`,
     lastModified: new Date(),
@@ -26,7 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const ieltsTests = [
     // Reading
     'ielts-reading',
-    // Listening Serisi (YENİLER EKLENDİ)
+    // Listening Serisi
     'ielts-listening',   // Test 1
     'ielts-listening-2', // Test 2 (Gym)
     'ielts-listening-3', // Test 3 (Museum)
