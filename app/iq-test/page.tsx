@@ -2,16 +2,16 @@
 
 import React, { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
-// 👇 1. ADIM: Renderer bileşenini import ediyoruz
-import SvgRenderer from '../components/SvgRenderer';
+// 👇 Hem bileşeni hem de Tipleri import ediyoruz
+import SvgRenderer, { SvgData } from '../components/SvgRenderer';
 
 // -------------------- TİP TANIMLAMALARI --------------------
 
 type Domain = 'logic' | 'math' | 'visual' | 'attention';
 
 // SVG Veri Tipleri (Renderer ile uyumlu)
-type SvgElement = { t: string; [key: string]: any };
-type SvgData = { viewBox: string; elements: SvgElement[] };
+//type SvgElement = { t: string; [key: string]: any };
+//type SvgData = { viewBox: string; elements: SvgElement[] };
 
 type IQQuestion =
   // A) Metin Tabanlı Sorular
