@@ -1,5 +1,7 @@
 "use client";
-
+import SvgRenderer from '@/components/SvgRenderer';
+// JSON dosyanızı buraya import edin veya değişkene atayın
+import questions from '@/data/iq-questions.json';
 import React, { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 
