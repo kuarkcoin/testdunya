@@ -1,21 +1,13 @@
- "use client";
+"use client";
 
 import React, { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import Confetti from "react-confetti"; // npm install react-confetti
 
+// Veri tipi tanımı
 type Item = { word: string; meaning: string };
 
-// Utility: Diziyi karıştır
-function shuffle<T>(arr: T[]) {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
-
+// Kart tipi tanımı
 type Card = {
   id: string;
   kind: "word" | "meaning";
@@ -27,9 +19,20 @@ type Card = {
 
 const BEST_KEY = "td_wordmatch_best_v1";
 
+// Yardımcı Fonksiyon: Diziyi karıştır
+function shuffle<T>(arr: T[]) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
 export default function WordMatchPage() {
   const [loading, setLoading] = useState(true);
   const [pool, setPool] = useState<Item[]>([]);
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
   // Oyun State'leri
   const [cards, setCards] = useState<Card[]>([]);
@@ -41,31 +44,38 @@ export default function WordMatchPage() {
   const [matches, setMatches] = useState(0);
   const [best, setBest] = useState<number>(0);
 
-  // Konfeti için Pencere Boyutu
+  // Pencere boyutu (Konfeti için)
   const [windowSize, setWindowSize] = useState({ width: 0, height: 0 });
 
-  // 1. Pencere boyutunu dinle (Konfeti için)
   useEffect(() => {
     const handleResize = () => {
       setWindowSize({ width: window.innerWidth, height: window.innerHeight });
     };
-    // İlk render'da boyutu al
     handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // 2. Veriyi çek ve temizle
+  // VERİ ÇEKME İŞLEMİ (Burada yolu düzelttik)
   useEffect(() => {
     (async () => {
       try {
-        const res = await fetch("/data/tests/IELTS_Vocabulary_Phrasal_1000_format.json");
+        // Ekran görüntüsündeki yola göre tam path:
+        const path = "/data/tests/IELTS_Vocabulary_Phrasal_1000_format.json";
+        
+        console.log("Fetching data from:", path); // Hata ayıklama için konsola yazdırır
+        const res = await fetch(path);
+
+        if (!res.ok) {
+          throw new Error(`Dosya bulunamadı (Hata: ${res.status}). Yol: ${path}`);
+        }
+
         const data: Item[] = await res.json();
         
-        // Boş veya hatalı olanları filtrele
+        // Boş verileri temizle
         let clean = (data || []).filter((x) => x?.word && x?.meaning);
         
-        // Mükerrer kelimeleri temizle (Unique Filter)
+        // Aynı kelimeden birden fazla varsa temizle (Unique filter)
         const seen = new Set();
         clean = clean.filter(item => {
           const duplicate = seen.has(item.word);
@@ -73,8 +83,13 @@ export default function WordMatchPage() {
           return !duplicate;
         });
 
+        if (clean.length === 0) throw new Error("JSON dosyası boş veya format hatalı.");
+
         setPool(clean);
-      } catch {
+        setErrorMsg(null);
+      } catch (err: any) {
+        console.error("Veri yükleme hatası:", err);
+        setErrorMsg(err.message);
         setPool([]);
       } finally {
         setLoading(false);
@@ -85,11 +100,14 @@ export default function WordMatchPage() {
     if (Number.isFinite(b)) setBest(b);
   }, []);
 
-  // 3. Oyunu Başlat
+  // Oyunu Başlat
   const start = () => {
-    if (pool.length < 20) return;
+    if (pool.length < 12) {
+      // Eğer havuzda yeterli kelime yoksa başlatma
+      return;
+    }
 
-    // 6 çift seç (12 kart)
+    // 6 çift = 12 kart seç
     const pairs = shuffle(pool).slice(0, 6);
 
     const nextCards: Card[] = shuffle(
@@ -111,13 +129,13 @@ export default function WordMatchPage() {
 
   // Veri yüklendiğinde otomatik başlat
   useEffect(() => {
-    if (!loading && pool.length) start();
+    if (!loading && pool.length > 0) start();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loading, pool.length]);
 
-  const allDone = useMemo(() => matches === 6, [matches]);
+  const allDone = useMemo(() => matches === 6 && matches > 0, [matches]);
 
-  // Skor Kaydı
+  // Skor kaydetme
   useEffect(() => {
     if (!allDone) return;
     const score = Math.max(0, 100 - moves * 5);
@@ -127,12 +145,11 @@ export default function WordMatchPage() {
     }
   }, [allDone, moves, best]);
 
-  // Kart Çevirme Mantığı
+  // Kart Çevirme
   const flip = (card: Card) => {
     if (lock) return;
     if (card.flipped || card.matched) return;
 
-    // Tıklananı çevir
     setCards((prev) => prev.map((c) => (c.id === card.id ? { ...c, flipped: true } : c)));
 
     if (!first) {
@@ -140,14 +157,12 @@ export default function WordMatchPage() {
       return;
     }
 
-    // İkinci kart seçildi
     setMoves((m) => m + 1);
     const second = { ...card, flipped: true };
 
     const isMatch = first.pairKey === second.pairKey && first.kind !== second.kind;
 
     if (isMatch) {
-      // Eşleşme başarılı
       setCards((prev) =>
         prev.map((c) =>
           c.pairKey === second.pairKey ? { ...c, matched: true, flipped: true } : c
@@ -158,7 +173,7 @@ export default function WordMatchPage() {
       return;
     }
 
-    // Eşleşme başarısız (Hata)
+    // Eşleşmezse geri çevir
     setLock(true);
     setTimeout(() => {
       setCards((prev) =>
@@ -169,12 +184,12 @@ export default function WordMatchPage() {
       );
       setFirst(null);
       setLock(false);
-    }, 800); // Animasyon için süreyi biraz artırdım
+    }, 800);
   };
 
   return (
     <main className="min-h-screen bg-slate-950 text-white px-4 py-10 relative overflow-hidden">
-      {/* Konfeti Efekti */}
+      {/* Konfeti */}
       {allDone && <Confetti width={windowSize.width} height={windowSize.height} recycle={false} numberOfPieces={500} />}
 
       <div className="max-w-5xl mx-auto space-y-6 relative z-10">
@@ -195,16 +210,14 @@ export default function WordMatchPage() {
           </div>
         </div>
 
-        {/* Başlık */}
         <header className="text-center space-y-2">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/15 border border-emerald-400/20 text-emerald-200 text-sm font-bold">
             🧠 Word Match
           </div>
           <h1 className="text-3xl md:text-5xl font-black tracking-tight">Match Word ↔ Meaning</h1>
-          <p className="text-slate-400">Flip cards and find pairs. Fewer moves = higher score.</p>
+          <p className="text-slate-400">Flip cards and find pairs.</p>
         </header>
 
-        {/* Kontroller */}
         <div className="flex flex-col sm:flex-row gap-2">
           <button 
             onClick={start} 
@@ -220,12 +233,17 @@ export default function WordMatchPage() {
           </Link>
         </div>
 
-        {/* Oyun Alanı */}
+        {/* Yükleniyor / Hata / Oyun Alanı */}
         {loading ? (
-          <div className="text-center text-slate-400 font-bold py-10 animate-pulse">Loading Vocabulary…</div>
+          <div className="text-center text-slate-400 font-bold py-10 animate-pulse">Loading Vocabulary...</div>
+        ) : errorMsg ? (
+          <div className="p-6 rounded-2xl bg-red-500/10 border border-red-500/20 text-red-200 text-center">
+            <div className="font-bold text-lg mb-2">Hata Oluştu</div>
+            <p className="text-sm opacity-80">{errorMsg}</p>
+            <p className="mt-4 text-xs text-red-300/60">Lütfen "public/data/tests/" klasöründe JSON dosyasının olduğundan emin olun.</p>
+          </div>
         ) : (
           <section className="rounded-3xl bg-white/5 border border-white/10 p-4 md:p-8">
-            
             {allDone && (
               <div className="mb-6 rounded-2xl bg-emerald-500/20 border border-emerald-400/30 p-6 text-center animate-bounce">
                 <div className="font-black text-emerald-200 text-2xl mb-1">🎉 Excellent!</div>
@@ -235,47 +253,19 @@ export default function WordMatchPage() {
 
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 md:gap-4">
               {cards.map((c) => {
-                // Kartın açık olup olmadığı
                 const isFlipped = c.flipped || c.matched;
-
                 return (
-                  // Kart Konteyner (Perspective)
-                  <div 
-                    key={c.id} 
-                    className="group h-[110px] sm:h-[130px] w-full [perspective:1000px] cursor-pointer"
-                    onClick={() => flip(c)}
-                  >
-                    {/* Dönme Efektini Sağlayan Wrapper */}
-                    <div 
-                      className={`
-                        relative h-full w-full transition-all duration-500 [transform-style:preserve-3d] shadow-xl rounded-2xl
-                        ${isFlipped ? "[transform:rotateY(180deg)]" : ""}
-                      `}
-                    >
-                      {/* --- ÖN YÜZ (KAPALI) --- */}
+                  <div key={c.id} className="group h-[110px] sm:h-[130px] w-full [perspective:1000px] cursor-pointer" onClick={() => flip(c)}>
+                    <div className={`relative h-full w-full transition-all duration-500 [transform-style:preserve-3d] shadow-xl rounded-2xl ${isFlipped ? "[transform:rotateY(180deg)]" : ""}`}>
+                      {/* Ön Yüz (Kapalı) */}
                       <div className="absolute inset-0 h-full w-full rounded-2xl bg-slate-800 border-2 border-slate-700 [backface-visibility:hidden] flex items-center justify-center hover:bg-slate-700 transition-colors">
-                        <div className="text-slate-500 font-bold text-xs uppercase tracking-widest opacity-50 group-hover:opacity-100">
-                          TAP
-                        </div>
+                        <div className="text-slate-500 font-bold text-xs uppercase tracking-widest opacity-50 group-hover:opacity-100">TAP</div>
                       </div>
-
-                      {/* --- ARKA YÜZ (AÇIK - İÇERİK) --- */}
-                      <div 
-                        className={`
-                          absolute inset-0 h-full w-full rounded-2xl border-2 [backface-visibility:hidden] [transform:rotateY(180deg)]
-                          flex flex-col items-center justify-center p-3 text-center overflow-hidden
-                          ${c.matched 
-                            ? "bg-emerald-900/80 border-emerald-500 shadow-[0_0_15px_rgba(16,185,129,0.4)]" 
-                            : "bg-slate-900 border-indigo-500/50"
-                          }
-                        `}
-                      >
-                        {/* Etiket (Word/Meaning) */}
+                      {/* Arka Yüz (Açık) */}
+                      <div className={`absolute inset-0 h-full w-full rounded-2xl border-2 [backface-visibility:hidden] [transform:rotateY(180deg)] flex flex-col items-center justify-center p-3 text-center overflow-hidden ${c.matched ? "bg-emerald-900/80 border-emerald-500 shadow-[0_0_15px_rgba(16,185,129,0.4)]" : "bg-slate-900 border-indigo-500/50"}`}>
                         <div className={`text-[10px] uppercase tracking-widest font-bold mb-1 ${c.matched ? "text-emerald-300" : "text-indigo-300"}`}>
                           {c.kind === "word" ? "Word" : "Meaning"}
                         </div>
-
-                        {/* İçerik Metni + Scroll (Taşmayı önlemek için) */}
                         <div className="w-full h-full overflow-y-auto custom-scrollbar flex items-center justify-center">
                           <p className={`font-medium leading-snug ${c.kind === "word" ? "text-lg text-white" : "text-xs text-slate-200"}`}>
                              {c.value}
@@ -290,19 +280,12 @@ export default function WordMatchPage() {
           </section>
         )}
       </div>
-
-      {/* Scrollbar Customization Style (İsteğe bağlı, global css'e de eklenebilir) */}
+      
+      {/* Scrollbar Stili */}
       <style jsx global>{`
-        .custom-scrollbar::-webkit-scrollbar {
-          width: 4px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-track {
-          background: transparent;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-          background-color: rgba(255, 255, 255, 0.2);
-          border-radius: 10px;
-        }
+        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background-color: rgba(255, 255, 255, 0.2); border-radius: 10px; }
       `}</style>
     </main>
   );
