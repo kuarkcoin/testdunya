@@ -3,7 +3,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 // 👇 1. ADIM: Renderer bileşenini import ediyoruz
-import SvgRenderer from '@/components/SvgRenderer';
+import SvgRenderer from '../components/SvgRenderer';
 
 // -------------------- TİP TANIMLAMALARI --------------------
 
