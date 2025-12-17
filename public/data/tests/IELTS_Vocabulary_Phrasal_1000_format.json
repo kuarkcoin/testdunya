@@ -4314,5 +4314,469 @@
     {
         "word": "widely",
         "meaning": "in many places or among many people"
+    },
+    {
+        "word": "abundant",
+        "meaning": "existing in large quantities; plentiful"
+    },
+    {
+        "word": "adhere",
+        "meaning": "to stick to a surface; to follow a rule or belief"
+    },
+    {
+        "word": "alleviate",
+        "meaning": "to make something (like pain or a problem) less severe"
+    },
+    {
+        "word": "allude",
+        "meaning": "to suggest or hint at something indirectly"
+    },
+    {
+        "word": "ambivalent",
+        "meaning": "having mixed feelings or contradictory ideas about something"
+    },
+    {
+        "word": "anomaly",
+        "meaning": "something that deviates from what is standard, normal, or expected"
+    },
+    {
+        "word": "appalling",
+        "meaning": "causing shock or dismay; horrific"
+    },
+    {
+        "word": "arbitrary",
+        "meaning": "based on random choice or personal whim, rather than any reason or system"
+    },
+    {
+        "word": "articulate",
+        "meaning": "having the ability to speak fluently and coherently"
+    },
+    {
+        "word": "assert",
+        "meaning": "to state a fact or belief confidently and forcefully"
+    },
+    {
+        "word": "benevolent",
+        "meaning": "well meaning and kindly"
+    },
+    {
+        "word": "call off",
+        "meaning": "to cancel an event"
+    },
+    {
+        "word": "candid",
+        "meaning": "truthful and straightforward; frank"
+    },
+    {
+        "word": "ceasefire",
+        "meaning": "a temporary suspension of fighting"
+    },
+    {
+        "word": "cohesive",
+        "meaning": "forming a united whole; sticking together"
+    },
+    {
+        "word": "collide",
+        "meaning": "to hit with force when moving"
+    },
+    {
+        "word": "compel",
+        "meaning": "to force or oblige someone to do something"
+    },
+    {
+        "word": "complacent",
+        "meaning": "showing uncritical satisfaction with oneself; smug"
+    },
+    {
+        "word": "concede",
+        "meaning": "to admit that something is true or valid after first denying it"
+    },
+    {
+        "word": "consensus",
+        "meaning": "general agreement"
+    },
+    {
+        "word": "consequently",
+        "meaning": "as a result"
+    },
+    {
+        "word": "constitute",
+        "meaning": "to be a part of a whole"
+    },
+    {
+        "word": "contemplate",
+        "meaning": "to look thoughtfully for a long time at; to think deeply about"
+    },
+    {
+        "word": "contradict",
+        "meaning": "to deny the truth of a statement by asserting the opposite"
+    },
+    {
+        "word": "conventional",
+        "meaning": "based on or in accordance with what is generally done or believed"
+    },
+    {
+        "word": "convey",
+        "meaning": "to transport or carry to a place; to communicate a message"
+    },
+    {
+        "word": "cynical",
+        "meaning": "believing that people are motivated by self-interest; distrustful"
+    },
+    {
+        "word": "deduce",
+        "meaning": "to arrive at a fact or conclusion by reasoning"
+    },
+    {
+        "word": "deficit",
+        "meaning": "the amount by which something, especially a sum of money, is too small"
+    },
+    {
+        "word": "depict",
+        "meaning": "to show or represent by a drawing, painting, or other art form"
+    },
+    {
+        "word": "deteriorate",
+        "meaning": "to become progressively worse"
+    },
+    {
+        "word": "devise",
+        "meaning": "to plan or invent a complex procedure, system, or mechanism"
+    },
+    {
+        "word": "dilemma",
+        "meaning": "a situation in which a difficult choice has to be made between two or more alternatives"
+    },
+    {
+        "word": "diligent",
+        "meaning": "having or showing care and conscientiousness in one's work or duties"
+    },
+    {
+        "word": "discrepancy",
+        "meaning": "a lack of compatibility or similarity between two or more facts"
+    },
+    {
+        "word": "distort",
+        "meaning": "to pull or twist out of shape; to give a misleading account of"
+    },
+    {
+        "word": "diverge",
+        "meaning": "to separate from another route, especially a main one, and go in a different direction"
+    },
+    {
+        "word": "drop out",
+        "meaning": "to leave a school or university before your course has finished"
+    },
+    {
+        "word": "eccentric",
+        "meaning": "unconventional and slightly strange"
+    },
+    {
+        "word": "elusive",
+        "meaning": "difficult to find, catch, or achieve"
+    },
+    {
+        "word": "embrace",
+        "meaning": "to hold closely in one's arms; to accept or support a belief willingly"
+    },
+    {
+        "word": "endorse",
+        "meaning": "to declare one's public approval or support of"
+    },
+    {
+        "word": "endure",
+        "meaning": "to suffer something painful or difficult patiently"
+    },
+    {
+        "word": "entitle",
+        "meaning": "to give someone a legal right or a just claim to receive or do something"
+    },
+    {
+        "word": "evoke",
+        "meaning": "to bring or recall to the conscious mind"
+    },
+    {
+        "word": "exacerbate",
+        "meaning": "to make a problem, bad situation, or negative feeling worse"
+    },
+    {
+        "word": "facilitate",
+        "meaning": "to make an action or process easy or easier"
+    },
+    {
+        "word": "fall out",
+        "meaning": "to argue with someone and stop being friendly with them"
+    },
+    {
+        "word": "feasible",
+        "meaning": "possible to do easily or conveniently"
+    },
+    {
+        "word": "foster",
+        "meaning": "to encourage or promote the development of something"
+    },
+    {
+        "word": "furthermore",
+        "meaning": "in addition; besides (used to introduce a fresh consideration in an argument)"
+    },
+    {
+        "word": "get away with",
+        "meaning": "to do something wrong without being punished"
+    },
+    {
+        "word": "get over",
+        "meaning": "to recover from an illness, loss, or difficulty"
+    },
+    {
+        "word": "go along with",
+        "meaning": "to agree with or support someone or something"
+    },
+    {
+        "word": "grasp",
+        "meaning": "to seize and hold firmly; to understand clearly"
+    },
+    {
+        "word": "grow apart",
+        "meaning": "to stop being close to someone as time passes"
+    },
+    {
+        "word": "halt",
+        "meaning": "to bring or come to an abrupt stop"
+    },
+    {
+        "word": "hand out",
+        "meaning": "to distribute to a group of people"
+    },
+    {
+        "word": "hostile",
+        "meaning": "unfriendly; antagonistic"
+    },
+    {
+        "word": "hypocrisy",
+        "meaning": "the practice of claiming to have moral standards or beliefs to which one's own behavior does not conform"
+    },
+    {
+        "word": "imminent",
+        "meaning": "about to happen"
+    },
+    {
+        "word": "impartial",
+        "meaning": "treating all rivals or disputants equally; fair and just"
+    },
+    {
+        "word": "impede",
+        "meaning": "to delay or prevent someone or something by obstructing them"
+    },
+    {
+        "word": "imperative",
+        "meaning": "of vital importance; crucial"
+    },
+    {
+        "word": "indifferent",
+        "meaning": "having no particular interest or sympathy; unconcerned"
+    },
+    {
+        "word": "initiate",
+        "meaning": "to cause a process or action to begin"
+    },
+    {
+        "word": "innate",
+        "meaning": "inborn; natural"
+    },
+    {
+        "word": "intrinsic",
+        "meaning": "belonging naturally; essential"
+    },
+    {
+        "word": "keep off",
+        "meaning": "to stop someone or something from going onto an area"
+    },
+    {
+        "word": "let go",
+        "meaning": "to release someone or something"
+    },
+    {
+        "word": "look down on",
+        "meaning": "to think that you are better than someone"
+    },
+    {
+        "word": "look forward to",
+        "meaning": "to feel happy and excited about something that is going to happen"
+    },
+    {
+        "word": "look up to",
+        "meaning": "to admire and respect someone"
+    },
+    {
+        "word": "lucid",
+        "meaning": "expressed clearly; easy to understand"
+    },
+    {
+        "word": "lucrative",
+        "meaning": "producing a great deal of profit"
+    },
+    {
+        "word": "make do",
+        "meaning": "to manage to live without things that you would like to have"
+    },
+    {
+        "word": "meticulous",
+        "meaning": "showing great attention to detail; very careful and precise"
+    },
+    {
+        "word": "mitigate",
+        "meaning": "to make less severe, serious, or painful"
+    },
+    {
+        "word": "monotonous",
+        "meaning": "dull, tedious, and repetitious; lacking in variety and interest"
+    },
+    {
+        "word": "negligible",
+        "meaning": "so small or unimportant as to be not worth considering"
+    },
+    {
+        "word": "nevertheless",
+        "meaning": "in spite of that; notwithstanding"
+    },
+    {
+        "word": "notorious",
+        "meaning": "famous or well known, typically for some bad quality or deed"
+    },
+    {
+        "word": "nuisance",
+        "meaning": "a person, thing, or circumstance causing inconvenience or annoyance"
+    },
+    {
+        "word": "obsolete",
+        "meaning": "no longer produced or used; out of date"
+    },
+    {
+        "word": "oscillate",
+        "meaning": "to move or swing back and forth at a regular speed; to waver between extremes"
+    },
+    {
+        "word": "paradigm",
+        "meaning": "a typical example or pattern of something; a model"
+    },
+    {
+        "word": "pervasive",
+        "meaning": "spreading widely throughout an area or a group of people"
+    },
+    {
+        "word": "plausible",
+        "meaning": "seeming reasonable or probable"
+    },
+    {
+        "word": "pragmatic",
+        "meaning": "dealing with things sensibly and realistically in a way that is based on practical rather than theoretical considerations"
+    },
+    {
+        "word": "prevalent",
+        "meaning": "widespread in a particular area at a particular time"
+    },
+    {
+        "word": "proponent",
+        "meaning": "a person who advocates a theory, proposal, or project"
+    },
+    {
+        "word": "provoke",
+        "meaning": "to stimulate or give rise to a reaction or emotion, typically a strong or unwelcome one"
+    },
+    {
+        "word": "put up with",
+        "meaning": "to accept or continue to accept an unpleasant situation or person"
+    },
+    {
+        "word": "redundant",
+        "meaning": "not or no longer needed or useful"
+    },
+    {
+        "word": "reiterate",
+        "meaning": "to say something again or a number of times, typically for emphasis or clarity"
+    },
+    {
+        "word": "resilient",
+        "meaning": "able to withstand or recover quickly from difficult conditions"
+    },
+    {
+        "word": "scrutinize",
+        "meaning": "to examine or inspect closely and thoroughly"
+    },
+    {
+        "word": "see to",
+        "meaning": "to deal with a task or problem"
+    },
+    {
+        "word": "set off",
+        "meaning": "to start a journey; to cause a bomb to explode"
+    },
+    {
+        "word": "stand up for",
+        "meaning": "to defend or support a particular idea or a person"
+    },
+    {
+        "word": "stimulus",
+        "meaning": "a thing that rouses activity or energy in someone or something"
+    },
+    {
+        "word": "substantiate",
+        "meaning": "to provide evidence to support or prove the truth of"
+    },
+    {
+        "word": "subtle",
+        "meaning": "so delicate or precise as to be difficult to analyze or describe"
+    },
+    {
+        "word": "suppress",
+        "meaning": "to forcibly put an end to something; to prevent the development of"
+    },
+    {
+        "word": "take after",
+        "meaning": "to look or behave like an older member of your family"
+    },
+    {
+        "word": "talk into",
+        "meaning": "to persuade someone to do something"
+    },
+    {
+        "word": "therefore",
+        "meaning": "for that reason; consequently"
+    },
+    {
+        "word": "think through",
+        "meaning": "to consider the facts about something in an organized and thorough way"
+    },
+    {
+        "word": "thrive",
+        "meaning": "to grow or develop well or vigorously"
+    },
+    {
+        "word": "trivial",
+        "meaning": "of little value or importance"
+    },
+    {
+        "word": "try on",
+        "meaning": "to put on a piece of clothing to see if it fits and how it looks"
+    },
+    {
+        "word": "ubiquitous",
+        "meaning": "present, appearing, or found everywhere"
+    },
+    {
+        "word": "versatile",
+        "meaning": "able to adapt or be adapted to many different functions or activities"
+    },
+    {
+        "word": "vulnerable",
+        "meaning": "susceptible to physical or emotional attack or harm"
+    },
+    {
+        "word": "wear out",
+        "meaning": "to use something so much that it is damaged and cannot be used any more"
+    },
+    {
+        "word": "whereas",
+        "meaning": "in contrast or comparison with the fact that"
     }
 ]
