@@ -347,13 +347,7 @@ export default function IQTestPage() {
                   ) : null}
                 </div>
 
-                {isAnswered && q.explanation ? (
-                  <div className="rounded-2xl bg-emerald-500/10 border border-emerald-400/20 p-4 text-emerald-200 animate-in fade-in slide-in-from-top-2">
-                    <div className="font-black mb-1">Explanation</div>
-                    <div className="text-sm text-slate-200">{q.explanation}</div>
-                  </div>
-                ) : null}
-
+             
                 <div className="flex items-center justify-between pt-4 border-t border-white/5 mt-6">
                   <button
                     onClick={prev}
