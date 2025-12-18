@@ -9,49 +9,42 @@ import { questions } from '../data/questions';
 
 type Domain = 'logic' | 'math' | 'visual' | 'attention';
 
-type TextQuestion = {
-  id: string;
-  domain: Domain;
-  type: 'sequence' | 'analogy' | 'word-problem' | 'odd-one-out-text' | 'counting' | 'logic-puzzle';
-  prompt: string;
-  optionsText: string[];
-  correct: number;
-  explanation?: string;
-};
-
-type GridMissingQuestion = {
-  id: string;
-  domain: Domain;
-  type: 'grid-missing';
-  prompt: string;
-  grid: string[];
-  options: string[][];
-  correct: number;
-  explanation?: string;
-};
-
-type GridOddQuestion = {
-  id: string;
-  domain: Domain;
-  type: 'grid-odd-one-out';
-  prompt: string;
-  options: string[][];
-  correct: number;
-  explanation?: string;
-};
-
-type VisualQuestion = {
-  id: string;
-  domain: Domain;
-  type: 'visual-matrix' | 'visual-matrix-2x2' | 'visual-matrix-3x3';
-  prompt: string;
-  questionSvg: SvgData;
-  options: { svg: SvgData }[];
-  correct: number;
-  explanation?: string;
-};
-
-type IQQuestion = TextQuestion | GridMissingQuestion | GridOddQuestion | VisualQuestion;
+type IQQuestion =
+  | {
+      id: string;
+      domain: Domain;
+      type: 'sequence' | 'analogy' | 'word-problem' | 'odd-one-out-text' | 'counting' | 'logic-puzzle';
+      prompt: string;
+      optionsText: string[];
+      correct: number;
+      // explanation kaldırıldı
+    }
+  | {
+      id: string;
+      domain: Domain;
+      type: 'grid-missing';
+      prompt: string;
+      grid: string[];
+      options: string[][];
+      correct: number;
+    }
+  | {
+      id: string;
+      domain: Domain;
+      type: 'grid-odd-one-out';
+      prompt: string;
+      options: string[][];
+      correct: number;
+    }
+  | {
+      id: string;
+      domain: Domain;
+      type: 'visual-matrix' | 'visual-matrix-2x2' | 'visual-matrix-3x3';
+      prompt: string;
+      questionSvg: SvgData;
+      options: { svg: SvgData }[];
+      correct: number;
+    };
 
 type AnswerState = {
   selected: number | null;
@@ -81,17 +74,10 @@ function CellGrid({ grid }: { grid: string[] }) {
   );
 }
 
-// Type Guards
-const isTextQ = (q: IQQuestion): q is TextQuestion => 'optionsText' in q;
-const isVisualQ = (q: IQQuestion): q is VisualQuestion => 'questionSvg' in q;
-const isGridMissingQ = (q: IQQuestion): q is GridMissingQuestion => q.type === 'grid-missing';
-const isGridQ = (q: IQQuestion): q is GridMissingQuestion | GridOddQuestion =>
-  q.type === 'grid-missing' || q.type === 'grid-odd-one-out';
-
 // -------------------- ANA SAYFA --------------------
 
 export default function IQTestPage() {
-  const data = questions as IQQuestion[];
+  const data = questions as unknown as IQQuestion[];
 
   const [idx, setIdx] = useState(0);
   const [answers, setAnswers] = useState<Record<string, AnswerState>>({});
@@ -103,7 +89,6 @@ export default function IQTestPage() {
   const total = data.length || 20;
   const q = data[idx];
 
-  // Timer
   useEffect(() => {
     if (!started || finished) return;
     if (timeLeft <= 0) {
@@ -122,10 +107,16 @@ export default function IQTestPage() {
     if (!q || finished || timeLeft <= 0) return;
     setStarted(true);
 
-    const isCorrect = choiceIndex === q.correct;
+    // ✅ key güvenliği (id boş/undefined olursa)
+    const answerKey = (q as any)?.id ? String((q as any).id) : String(idx);
+
+    // ✅ correct number garantisi
+    const correctIndex = Number((q as any).correct);
+    const isCorrect = choiceIndex === correctIndex;
+
     setAnswers((prev) => ({
       ...prev,
-      [q.id]: { selected: choiceIndex, correct: isCorrect },
+      [answerKey]: { selected: choiceIndex, correct: isCorrect },
     }));
   };
 
@@ -133,26 +124,37 @@ export default function IQTestPage() {
   const prev = () => setIdx((p) => clamp(p - 1, 0, (data.length || 1) - 1));
   const finishNow = () => setFinished(true);
 
-  // Score
+  // ✅ Skoru answers.values yerine data üzerinden hesapla (sapma/çakışma olmasın)
   const scorePack = useMemo(() => {
     const domainMax: Record<Domain, number> = { logic: 0, math: 0, visual: 0, attention: 0 };
     const domainGot: Record<Domain, number> = { logic: 0, math: 0, visual: 0, attention: 0 };
 
-    for (const qq of data) {
+    let totalCorrect = 0;
+    let totalAnswered = 0;
+
+    for (let i = 0; i < data.length; i++) {
+      const qq = data[i];
       domainMax[qq.domain] += 1;
-      const a = answers[qq.id];
-      if (a?.correct) domainGot[qq.domain] += 1;
+
+      const key = (qq as any)?.id ? String((qq as any).id) : String(i);
+      const a = answers[key];
+
+      if (a?.selected !== null && a?.selected !== undefined) {
+        totalAnswered += 1;
+        if (a.correct) {
+          totalCorrect += 1;
+          domainGot[qq.domain] += 1;
+        }
+      }
     }
 
-    const totalCorrect = Object.values(answers).filter((a) => a.correct).length || 0;
     const totalQ = data.length || 20;
-
     const acc = totalCorrect / totalQ;
     const timeBonus = started ? clamp(timeLeft / (18 * 60), 0, 1) : 0;
     const gameIQ = Math.round(70 + acc * 60 + timeBonus * 10);
     const gameIQClamped = clamp(gameIQ, 70, 145);
 
-    return { domainMax, domainGot, totalCorrect, totalQ, gameIQ: gameIQClamped };
+    return { domainMax, domainGot, totalCorrect, totalAnswered, totalQ, gameIQ: gameIQClamped };
   }, [answers, data, started, timeLeft]);
 
   const mmss = (s: number) => {
@@ -161,18 +163,9 @@ export default function IQTestPage() {
     return `${m}:${String(r).padStart(2, '0')}`;
   };
 
-  const isAnswered = q ? answers[q.id]?.selected !== null && answers[q.id]?.selected !== undefined : false;
-
-  const optionsGridClass = useMemo(() => {
-    if (!q) return 'grid-cols-1 md:grid-cols-2';
-    if (isVisualQ(q)) return 'grid-cols-2 sm:grid-cols-3 md:grid-cols-5';
-    return 'grid-cols-1 md:grid-cols-2';
-  }, [q]);
-
   return (
     <main className="min-h-screen bg-slate-950 text-white px-4 py-10">
       <div className="max-w-5xl mx-auto space-y-6">
-        {/* Header */}
         <div className="flex items-center justify-between gap-3">
           <Link href="/" className="text-slate-300 hover:text-white font-bold">
             ← Home
@@ -207,14 +200,19 @@ export default function IQTestPage() {
           <p className="text-slate-400">Logic • Math • Visual • Attention (game-style scoring)</p>
         </header>
 
-        {/* Main */}
         {finished ? (
           <section className="rounded-3xl bg-white/5 border border-white/10 p-6 md:p-8 space-y-6">
             <div className="text-center">
               <div className="text-2xl md:text-3xl font-black text-emerald-200">✅ Test Completed</div>
               <div className="text-slate-300 mt-2">
-                Correct: <span className="font-black text-white">{scorePack.totalCorrect}/{scorePack.totalQ}</span> •
-                Estimated score: <span className="font-black text-indigo-200">{scorePack.gameIQ}</span>
+                Correct:{' '}
+                <span className="font-black text-white">
+                  {scorePack.totalCorrect}/{scorePack.totalQ}
+                </span>{' '}
+                • Estimated score: <span className="font-black text-indigo-200">{scorePack.gameIQ}</span>
+              </div>
+              <div className="text-xs text-slate-500 mt-2">
+                Answered: <span className="font-bold text-slate-300">{scorePack.totalAnswered}</span>
               </div>
             </div>
 
@@ -248,7 +246,10 @@ export default function IQTestPage() {
               >
                 Restart
               </button>
-              <Link href="/" className="sm:w-56 py-3 rounded-2xl font-black bg-slate-800 hover:bg-slate-700 text-center">
+              <Link
+                href="/"
+                className="sm:w-56 py-3 rounded-2xl font-black bg-slate-800 hover:bg-slate-700 text-center"
+              >
                 Back Home →
               </Link>
             </div>
@@ -276,46 +277,52 @@ export default function IQTestPage() {
               <div className="space-y-6">
                 <div className="text-lg md:text-xl font-black text-white">{q.prompt}</div>
 
-                {/* Question Visual */}
                 <div className="flex justify-center">
-                  {isVisualQ(q) ? (
+                  {'questionSvg' in q ? (
                     <div className="w-64 h-64 bg-white rounded-xl border-4 border-slate-700 shadow-2xl overflow-hidden text-slate-900 transition-transform hover:scale-[1.02]">
                       <SvgRenderer data={q.questionSvg} />
                     </div>
-                  ) : isGridMissingQ(q) ? (
+                  ) : 'grid' in q && q.grid ? (
                     <CellGrid grid={q.grid} />
                   ) : null}
                 </div>
 
-                {/* Options */}
-                <div className={`grid gap-3 ${optionsGridClass}`}>
-                  {isTextQ(q) ? (
+                <div
+                  className={`grid gap-3 ${
+                    'questionSvg' in q ? 'grid-cols-2 sm:grid-cols-3 md:grid-cols-5' : 'grid-cols-1 md:grid-cols-2'
+                  }`}
+                >
+                  {'optionsText' in q ? (
                     q.optionsText.map((opt, i) => {
-                      const picked = answers[q.id]?.selected === i;
+                      const key = q.id || String(idx);
+                      const picked = answers[key]?.selected === i;
                       return (
                         <button
                           key={i}
                           onClick={() => selectAnswer(i)}
-                          className={`p-4 rounded-2xl border text-left font-bold transition-all ${
-                            picked ? 'bg-indigo-500/20 border-indigo-300/30' : 'bg-slate-950/40 border-white/10 hover:bg-white/5'
-                          }`}
+                          className={`p-4 rounded-2xl border text-left font-bold transition-all
+                            ${picked ? 'bg-indigo-500/20 border-indigo-300/30' : 'bg-slate-950/40 border-white/10 hover:bg-white/5'}
+                          `}
                         >
                           {opt}
                         </button>
                       );
                     })
-                  ) : isVisualQ(q) ? (
+                  ) : 'questionSvg' in q ? (
                     q.options.map((opt, i) => {
-                      const picked = answers[q.id]?.selected === i;
+                      const key = q.id || String(idx);
+                      const picked = answers[key]?.selected === i;
                       return (
                         <button
                           key={i}
                           onClick={() => selectAnswer(i)}
-                          className={`aspect-square p-2 rounded-xl border transition-all flex items-center justify-center bg-white text-slate-800 relative ${
-                            picked
-                              ? 'ring-4 ring-indigo-500 border-indigo-600 scale-105 z-10'
-                              : 'border-slate-300 hover:border-indigo-400 hover:shadow-lg hover:-translate-y-1'
-                          }`}
+                          className={`aspect-square p-2 rounded-xl border transition-all flex items-center justify-center bg-white text-slate-800 relative
+                            ${
+                              picked
+                                ? 'ring-4 ring-indigo-500 border-indigo-600 scale-105 z-10'
+                                : 'border-slate-300 hover:border-indigo-400 hover:shadow-lg hover:-translate-y-1'
+                            }
+                          `}
                         >
                           <SvgRenderer data={opt.svg} />
                           {picked && (
@@ -326,16 +333,17 @@ export default function IQTestPage() {
                         </button>
                       );
                     })
-                  ) : isGridQ(q) ? (
+                  ) : (
                     q.options.map((gridOpt, i) => {
-                      const picked = answers[q.id]?.selected === i;
+                      const key = q.id || String(idx);
+                      const picked = answers[key]?.selected === i;
                       return (
                         <button
                           key={i}
                           onClick={() => selectAnswer(i)}
-                          className={`p-3 rounded-2xl border transition-all text-left ${
-                            picked ? 'bg-indigo-500/20 border-indigo-300/30' : 'bg-slate-950/40 border-white/10 hover:bg-white/5'
-                          }`}
+                          className={`p-3 rounded-2xl border transition-all text-left
+                            ${picked ? 'bg-indigo-500/20 border-indigo-300/30' : 'bg-slate-950/40 border-white/10 hover:bg-white/5'}
+                          `}
                         >
                           <div className="text-xs uppercase tracking-widest text-slate-400 font-bold mb-2">
                             Option {String.fromCharCode(65 + i)}
@@ -344,10 +352,11 @@ export default function IQTestPage() {
                         </button>
                       );
                     })
-                  ) : null}
+                  )}
                 </div>
 
-             
+                {/* ✅ explanation kaldırıldı */}
+
                 <div className="flex items-center justify-between pt-4 border-t border-white/5 mt-6">
                   <button
                     onClick={prev}
