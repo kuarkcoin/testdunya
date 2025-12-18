@@ -375,6 +375,164 @@ export interface Question5 {
     options: ["hungry", "happy", "thirsty", "tired"],
     correct: 2,
     explanation: "Su içme ihtiyacı susamış (thirsty) olmayı gerektirir."
+  },
+  // Mevcut questions5 dizisine eklenecek 10'ar soruluk ek paket:
+
+// ==========================================
+// MATEMATİK (+10 Soru) - Toplam 23
+// ==========================================
+  {
+    id: "m5-1-16", subject: "matematik", term: 1,
+    prompt: "Bir sinema salonunda 24 sıra ve her sırada 18 koltuk vardır. Bir film gösteriminde 35 koltuk boş kaldığına göre kaç izleyici vardır?",
+    options: ["397", "432", "400", "467"],
+    correct: 0,
+    explanation: "Toplam koltuk: 24 x 18 = 432. İzleyici sayısı: 432 - 35 = 397."
+  },
+  {
+    id: "m5-2-17", subject: "matematik", term: 2,
+    prompt: "Bir koşucu 5 km'lik yolun önce 1250 metresini, sonra 2100 metresini koşmuştur. Geriye kaç metre yolu kalmıştır?",
+    options: ["1650", "3350", "1350", "1750"],
+    correct: 0,
+    explanation: "Toplam yol 5000 m. Koşulan: 1250 + 2100 = 3350 m. Kalan: 5000 - 3350 = 1650 m."
+  },
+  {
+    id: "m5-1-18", subject: "matematik", term: 1,
+    prompt: "72 sayısının 2/3'ü kaçtır?",
+    options: ["24", "48", "36", "54"],
+    correct: 1,
+    explanation: "72'yi 3'e böleriz (24) ve 2 ile çarparız: 24 x 2 = 48."
+  },
+  {
+    id: "m5-2-19", subject: "matematik", term: 2,
+    prompt: "0,6 > A > 0,45 sıralamasında A yerine aşağıdakilerden hangisi gelebilir?",
+    options: ["0,39", "0,42", "0,51", "0,65"],
+    correct: 2,
+    explanation: "0,6 sayısı 0,60 demektir. 0,45 ile 0,60 arasında sadece 0,51 vardır."
+  },
+  {
+    id: "m5-2-20", subject: "matematik", term: 2,
+    prompt: "Bir dikdörtgenin uzun kenarı 12 cm, kısa kenarı uzun kenarın yarısıdır. Bu dikdörtgenin çevresi kaç cm'dir?",
+    options: ["18", "24", "36", "48"],
+    correct: 2,
+    explanation: "Kısa kenar = 6 cm. Çevre = 2 x (12 + 6) = 2 x 18 = 36 cm."
+  },
+  {
+    id: "m5-1-21", subject: "matematik", term: 1,
+    prompt: "Hangi sayının 4 katının 10 eksiği 30'dur?",
+    options: ["5", "10", "15", "20"],
+    correct: 1,
+    explanation: "Ters işlem yapılır: 30 + 10 = 40. 40 / 4 = 10."
+  },
+  {
+    id: "m5-2-22", subject: "matematik", term: 2,
+    prompt: "Bir geniş açının ölçüsü aşağıdakilerden hangisi olamaz?",
+    options: ["91", "120", "179", "185"],
+    correct: 3,
+    explanation: "Geniş açılar 90 ile 180 derece arasındadır. 185 derece geniş açı değildir."
+  },
+  {
+    id: "m5-2-23", subject: "matematik", term: 2,
+    prompt: "Ali parasının %40'ı ile kitap almıştır. Geriye parasının kaçta kaçı kalmıştır?",
+    options: ["2/5", "3/5", "1/4", "3/4"],
+    correct: 1,
+    explanation: "Kalan para %60'tır. 60/100 sadeleşince 3/5 olur."
+  },
+
+// ==========================================
+// TÜRKÇE (+10 Soru) - Toplam 23
+// ==========================================
+  {
+    id: "t5-1-14", subject: "turkce", term: 1,
+    prompt: "'Yüz' kelimesi hangi cümlede farklı bir anlamda kullanılmıştır?",
+    options: ["Denizde yüzmeyi çok severim.", "Defterine bir yüz çizdi.", "Bayramda yüz lira topladı.", "Düğünde yüz kişi vardı."],
+    correct: 0,
+    explanation: "İlk cümlede 'yüzmek' eylemi, diğerlerinde sayı veya çehre anlamı vardır."
+  },
+  {
+    id: "t5-2-15", subject: "turkce", term: 2,
+    prompt: "Aşağıdakilerden hangisi bir 'öznel' yargıdır?",
+    options: ["Kitap 200 sayfadan oluşuyor.", "Yazarın son kitabı çok etkileyici.", "Film İstanbul'da çekilmiş.", "Hafta yedi gündür."],
+    correct: 1,
+    explanation: "Etkileyici olması kişiden kişiye değişen bir yorumdur."
+  },
+  {
+    id: "t5-1-16", subject: "turkce", term: 1,
+    prompt: "'Çocuklar parkta neşeyle oynuyor.' cümlesinde işi yapan (özne) kimdir?",
+    options: ["Parkta", "Neşeyle", "Çocuklar", "Oynuyor"],
+    correct: 2,
+    explanation: "Oynama işini yapan 'çocuklar'dır."
+  },
+  {
+    id: "t5-2-17", subject: "turkce", term: 2,
+    prompt: "Hangi kelime grubunda yazım yanlışı vardır?",
+    options: ["Türk Dil Kurumu", "Ayşe teyze", "Ankara kalesi", "Güneş sistemi"],
+    correct: 2,
+    explanation: "Özel isme dahil olduğu için 'Ankara Kalesi' şeklinde büyük yazılmalıydı."
+  },
+  {
+    id: "t5-1-18", subject: "turkce", term: 1,
+    prompt: "'Okumak' kelimesine hangi ek gelirse 'okuma işini yapan kişi' anlamı kazanır?",
+    options: ["-luk", " -cu", " -an", " -man"],
+    correct: 2,
+    explanation: "Okuyan (okuyan kişi) veya Okur şeklinde türetilir, ancak şıklarda '-an' sıfat fiili kişiyi belirtir."
+  },
+
+// ==========================================
+// FEN BİLİMLERİ (+10 Soru) - Toplam 22
+// ==========================================
+  {
+    id: "f5-2-13", subject: "fen", term: 2,
+    prompt: "Isı ve sıcaklık ile ilgili hangisi yanlıştır?",
+    options: ["Isı bir enerjidir.", "Sıcaklık termometre ile ölçülür.", "Isı birimi derecedir.", "Isı akışı sıcaktan soğuğa doğrudur."],
+    correct: 2,
+    explanation: "Isı birimi Kalori veya Joule'dür. Derece (°C) sıcaklık birimidir."
+  },
+  {
+    id: "f5-1-14", subject: "fen", term: 1,
+    prompt: "Çiçekli bir bitkinin üreme organı neresidir?",
+    options: ["Kök", "Gövde", "Yaprak", "Çiçek"],
+    correct: 3,
+    explanation: "Bitkilerde tohumun oluştuğu ve üremenin gerçekleştiği yer çiçektir."
+  },
+  {
+    id: "f5-2-15", subject: "fen", term: 2,
+    prompt: "Güneş tutulması sırasında hangisi ortada bulunur?",
+    options: ["Dünya", "Ay", "Güneş", "Yıldızlar"],
+    correct: 1,
+    explanation: "Güneş tutulmasında Ay, Güneş ile Dünya'nın arasına girer."
+  },
+  {
+    id: "f5-2-16", subject: "fen", term: 2,
+    prompt: "Aşağıdakilerden hangisi yapay bir ışık kaynağıdır?",
+    options: ["Yıldız", "Şimşek", "Mum", "Ateş böceği"],
+    correct: 2,
+    explanation: "Mum insanlar tarafından yapıldığı için yapaydır; diğerleri doğaldır."
+  },
+
+// ==========================================
+// İNGİLİZCE (+10 Soru) - Toplam 22
+// ==========================================
+  {
+    id: "e5-1-13", subject: "ingilizce", term: 1,
+    prompt: "I am interested in ____. I love solving problems.",
+    options: ["Art", "Maths", "Music", "P.E."],
+    correct: 1,
+    explanation: "Problem çözmeyi seven biri Matematik (Maths) dersini sever."
+  },
+  {
+    id: "e5-2-14", subject: "ingilizce", term: 2,
+    prompt: "How can I go to the hospital? - ____ straight and turn left.",
+    options: ["Go", "Read", "Wait", "Look"],
+    correct: 0,
+    explanation: "Yer tarifinde 'Düz git' anlamında 'Go straight' kullanılır."
+  },
+  {
+    id: "e5-1-15", subject: "ingilizce", term: 1,
+    prompt: "My father's brother is my ____.",
+    options: ["Cousin", "Aunt", "Uncle", "Grandpa"],
+    correct: 2,
+    explanation: "Babanın erkek kardeşi amcadır (Uncle)."
   }
+
 ]; 
   
