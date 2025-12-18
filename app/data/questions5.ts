@@ -10,8 +10,6 @@ export interface Question5 {
   correct: number;
   explanation: string; // ✅ Yeni eklendi
 }
-
-export const questions5: Question5[] = [
  export const questions5: Question5[] = [
   // ==========================================
   // MATEMATİK (13 Soru)
