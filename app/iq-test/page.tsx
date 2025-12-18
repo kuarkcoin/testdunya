@@ -330,7 +330,18 @@ export default function IQTestPage() {
             <h1 className="text-3xl md:text-5xl font-black tracking-tight">{total} Questions • Mixed Domains</h1>
             <p className="text-slate-400">Logic • Math • Visual • Attention (normal-distribution scoring)</p>
           </header>
-
+          <div className="max-w-5xl mx-auto mb-4">
+  <div className="w-full h-1.5 bg-white/5 rounded-full overflow-hidden">
+    <div 
+      className="h-full bg-indigo-500 transition-all duration-500 ease-out" 
+      style={{ width: `${((idx + 1) / total) * 100}%` }}
+    />
+  </div>
+  <div className="flex justify-between mt-2 px-1">
+    <span className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Progress</span>
+    <span className="text-[10px] text-indigo-400 font-bold tracking-widest">%{Math.round(((idx + 1) / total) * 100)}</span>
+  </div>
+</div>
           {finished ? (
             <section className="rounded-3xl bg-white/5 border border-white/10 p-6 md:p-8 space-y-6">
               <div className="text-center space-y-3">
