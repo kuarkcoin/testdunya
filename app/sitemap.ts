@@ -1,27 +1,25 @@
 import { MetadataRoute } from 'next';
 
-// Canlı domain adresi
 const BASE_URL = 'https://testdunya.net';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-
-  // 1. Statik Sayfalar ve Oyunlar
+  // 1. Ana Statik Sayfalar ve Oyunlar
   const staticRoutes = [
     '',
     '/mistakes',
     '/iletisim',
     '/gizlilik',
-    // IELTS Araçları
-    '/ielts/calculator',         // Hesaplama Aracı
-    '/ielts/speaking',           // Speaking Simülatörü
-    '/ielts/listening',          // Listening Menü Sayfası
-    '/ielts/writing-templates',  // Writing Şablonları
-    // YENİ OYUN MODLARI
-    '/speedrun',       // SpeedRun Challenge
-    '/flashcards',     // Flashcard Çalışması
-    '/kelime-avcisi',  // Word Hunter (AI Game)
-    '/wordle',         // IELTS Wordle
-    '/wordmatch',      // Kelime Eşleştirme
+    '/5-sinif',           // Yeni kategori
+    '/iq-test',           // Yeni oyun
+    '/verbal-test',       // Yeni oyun
+    '/ielts/calculator',
+    '/ielts/speaking',
+    '/ielts/listening',
+    '/speedrun',
+    '/flashcards',
+    '/kelime-avcisi',
+    '/wordle',
+    '/wordmatch',
   ].map((route) => ({
     url: `${BASE_URL}${route}`,
     lastModified: new Date(),
@@ -29,18 +27,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: route === '' ? 1.0 : 0.8,
   }));
 
-  // 2. IELTS Modül Sayfaları (Test Çözme Ekranları)
-  const ieltsTests = [
-    // Reading
+  // 2. IELTS ve Özel Seviye Testleri
+  const specializedTests = [
+    'ielts-level-test-1', // Placement Test
     'ielts-reading',
-    // Listening Serisi
-    'ielts-listening',   // Test 1
-    'ielts-listening-2', // Test 2 (Gym)
-    'ielts-listening-3', // Test 3 (Museum)
-    'ielts-listening-4', // Test 4 (Zoo)
+    'ielts-listening',
+    'ielts-listening-2',
+    'ielts-listening-3',
+    'ielts-listening-4',
     'ielts-listening-5',
     'ielts-listening-7',
-    // Diğerleri
     'ielts-writing',
     'ielts-vocab',
     'ielts-grammar'
@@ -51,12 +47,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
-  // 3. Diğer Dinamik Test Sayfaları (YKS, KPSS, TUS, DUS)
+  // 3. Genel Sınav Konfigürasyonu (Dinamik Üretim)
   const examConfig = [
     { prefix: 'yks-sozel-deneme', count: 30 },
     { prefix: 'kpss-sozel', count: 21 },
     { prefix: 'tus-deneme', count: 35 },
-    { prefix: 'dus-deneme', count: 10 },
+    { prefix: 'dus-deneme', count: 17 },
+    { prefix: '5-sinif-matematik', count: 10 }, // Örnek branşlar
+    { prefix: '5-sinif-turkce', count: 10 },
   ];
 
   let otherTestRoutes: MetadataRoute.Sitemap = [];
@@ -66,12 +64,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       otherTestRoutes.push({
         url: `${BASE_URL}/test/${exam.prefix}-${i}`,
         lastModified: new Date(),
-        changeFrequency: 'weekly' as const,
-        priority: 0.7, 
+        changeFrequency: 'monthly' as const,
+        priority: 0.6, 
       });
     }
   });
 
-  // Hepsini birleştir ve döndür
-  return [...staticRoutes, ...ieltsTests, ...otherTestRoutes];
+  return [...staticRoutes, ...specializedTests, ...otherTestRoutes];
 }
