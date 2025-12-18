@@ -181,7 +181,7 @@ export interface Question5 {
   },
   {
     id: "t5-1-11", subject: "turkce", term: 1,
-    prompt: "Aşağıdakilerden hangisi bir 'ataseözü' değildir?",
+    prompt: "Aşağıdakilerden hangisi bir 'atasözü' değildir?",
     options: ["Damlaya damlaya göl olur.", "Sakla samanı gelir zamanı.", "Kitap okumak faydalıdır.", "Ayağını yorganına göre uzat."],
     correct: 2,
     explanation: "Bu genel bir bilgi cümlesidir, kalıplaşmış bir atasözü değildir."
