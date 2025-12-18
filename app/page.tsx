@@ -506,45 +506,45 @@ export default function HomePage() {
 
         </section>
         {/* --- MEB CURRICULUM (İLKÖĞRETİM) --- */}
-        <section className="bg-white rounded-2xl shadow-xl shadow-amber-100/50 overflow-hidden border-2 border-amber-100 relative mb-10">
-          <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-yellow-400 to-orange-500"></div>
-          
-          <div className="p-4 md:p-6 border-b border-slate-100 flex items-center gap-4">
-            <div className="p-3 bg-amber-100 text-amber-600 rounded-xl">
-              <Book className="w-8 h-8" />
-            </div>
-            <div>
-              <h2 className="text-2xl md:text-3xl font-black text-slate-800 tracking-tight">İLKÖĞRETİM DÜZEYİ</h2>
-              <p className="text-slate-500 text-base">MEB Müfredatına Uygun Çalışma Testleri</p>
-            </div>
-          </div>
+<section className="bg-white rounded-2xl shadow-xl shadow-amber-100/50 overflow-hidden border-2 border-amber-100 relative mb-10">
+  <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-yellow-400 to-orange-500"></div>
+  
+  <div className="p-4 md:p-6 border-b border-slate-100 flex items-center gap-4">
+    <div className="p-3 bg-amber-100 text-amber-600 rounded-xl">
+      <Book className="w-8 h-8" />
+    </div>
+    <div>
+      <h2 className="text-2xl md:text-3xl font-black text-slate-800 tracking-tight">İLKÖĞRETİM DÜZEYİ</h2>
+      <p className="text-slate-500 text-base">MEB Müfredatına Uygun Çalışma Testleri</p>
+    </div>
+  </div>
 
-          <div className="p-6 bg-slate-50/30">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {/* 5. SINIF KARTI */}
-              <Link
-                href="/5-sinif"
-                className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-yellow-400 to-orange-500 p-8 text-white shadow-lg transition-all hover:scale-[1.02] hover:shadow-xl"
-              >
-                <div className="relative z-10 flex flex-col justify-between h-full">
-                  <div>
-                    <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-white backdrop-blur-sm">
-                      NEW • 2025
-                    </div>
-                    <h3 className="mb-2 text-3xl font-black tracking-tight">5. Sınıf</h3>
-                    <p className="text-white/90 text-sm">Matematik, Türkçe, Fen, İngilizce</p>
-                  </div>
-                  <div className="mt-6 flex items-center gap-3">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-orange-600 shadow-lg group-hover:scale-110 transition-transform text-2xl">
-                      🏫
-                    </div>
-                    <span className="font-bold text-lg">Hemen Çalış →</span>
-                  </div>
-                </div>
-              </button>
+  <div className="p-6 bg-slate-50/30">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {/* 5. SINIF KARTI */}
+      <Link
+        href="/5-sinif"
+        className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-yellow-400 to-orange-500 p-8 text-white shadow-lg transition-all hover:scale-[1.02] hover:shadow-xl"
+      >
+        <div className="relative z-10 flex flex-col justify-between h-full">
+          <div>
+            <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-white backdrop-blur-sm">
+              NEW • 2025
             </div>
+            <h3 className="mb-2 text-3xl font-black tracking-tight">5. Sınıf</h3>
+            <p className="text-white/90 text-sm">Matematik, Türkçe, Fen, İngilizce</p>
           </div>
-        </section>
+          <div className="mt-6 flex items-center gap-3">
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-orange-600 shadow-lg group-hover:scale-110 transition-transform text-2xl">
+              🏫
+            </div>
+            <span className="font-bold text-lg">Hemen Çalış →</span>
+          </div>
+        </div>
+      </Link> {/* ✅ BURASI DÜZELTİLDİ */}
+    </div>
+  </div>
+</section>
         {/* --- NATIONAL EXAMS --- */}
         {examConfig.map((exam) => {
           const loopCount = SHOW_LOCKED_TESTS ? exam.count : exam.activeLimit;
