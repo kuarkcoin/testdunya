@@ -1,15 +1,12 @@
-// app/layout.tsx
 import './globals.css'
 import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import Script from 'next/script'
 import { GoogleAnalytics } from '@next/third-parties/google'
 
-// --- DÜZELTİLEN KISIM BURASI ---
-// Dosyalar app/components içinde olduğu için "./" kullanıyoruz
+// Bileşenler
 import Navbar from './components/Navbar' 
 import Footer from './components/Footer'
-// -------------------------------
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -54,13 +51,14 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.className} bg-slate-50 text-slate-900 antialiased relative min-h-screen flex flex-col`}>
 
-        {/* Google AdSense */}
+        {/* --- İSTEDİĞİNİZ ADSENSE KODU (NEXT.JS UYUMLU HALİ) --- */}
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1700979325865596"
           crossOrigin="anonymous"
           strategy="afterInteractive"
         />
+        {/* -------------------------------------------------------- */}
 
         {/* Tailwind CSS */}
         <Script 
