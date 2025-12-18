@@ -197,31 +197,65 @@ export default function WordHunterGame() {
                 </p>
               </div>
 
-              {/* HINTS GRID */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {[
-                  { id: 'firstLetter', label: `Starts with: ${data?.word[0].toUpperCase()}`, placeholder: 'First Letter', icon: <Globe size={16}/> },
-                  { id: 'wordLength', label: `Length: ${data?.word.length} letters`, placeholder: 'Word Length', icon: <Timer size={16}/> },
-                  { id: 'synonym', label: `Synonym: ${data?.synonym}`, placeholder: 'Show Synonym', icon: <Lightbulb size={16}/> },
-                  { id: 'example', label: `Example: ${maskWord(data?.example_sentence || '', data?.word || '')}`, placeholder: 'Show Example', icon: <RotateCcw size={16}/> },
-                ].map((hint) => (
-                  <button
-                    key={hint.id}
-                    disabled={hintsUsed[hint.id as HintKey] || !data?.[hint.id as keyof WordPayload]}
-                    onClick={() => {
-                      setHintsUsed(prev => ({ ...prev, [hint.id]: true }));
-                      setScore(s => Math.max(0, s - 5));
-                    }}
-                    className={`flex items-center gap-3 p-4 rounded-2xl border-2 transition-all text-sm font-bold ${
-                      hintsUsed[hint.id as HintKey] 
-                        ? 'bg-slate-800 border-slate-700 text-slate-300' 
-                        : 'bg-slate-900 border-slate-800 text-cyan-500 hover:border-cyan-500/50'
-                    }`}
-                  >
-                    {hint.icon} {hintsUsed[hint.id as HintKey] ? hint.label : hint.placeholder}
-                  </button>
-                ))}
-              </div>
+             {/* HINTS GRID */}
+<div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+  {[
+    {
+      key: 'firstLetter' as HintKey,
+      placeholder: 'First Letter',
+      label: data?.word ? `Starts with: ${data.word[0].toUpperCase()}` : '',
+      available: !!data?.word,
+      icon: <Globe size={16} />,
+    },
+    {
+      key: 'wordLength' as HintKey,
+      placeholder: 'Word Length',
+      label: data?.word ? `Length: ${data.word.length} letters` : '',
+      available: !!data?.word,
+      icon: <Timer size={16} />,
+    },
+    {
+      key: 'synonym' as HintKey,
+      placeholder: 'Show Synonym',
+      label: data?.synonym ? `Synonym: ${data.synonym}` : '',
+      available: !!data?.synonym,
+      icon: <Lightbulb size={16} />,
+    },
+    {
+      key: 'example' as HintKey,
+      placeholder: 'Show Example',
+      label:
+        data?.example_sentence && data?.word
+          ? `Example: ${maskWord(data.example_sentence, data.word)}`
+          : '',
+      available: !!data?.example_sentence,
+      icon: <RotateCcw size={16} />,
+    },
+  ].map((hint) => {
+    const used = hintsUsed[hint.key];
+    const disabled = used || !hint.available;
+
+    return (
+      <button
+        key={hint.key}
+        disabled={disabled}
+        onClick={() => {
+          if (disabled) return;
+          setHintsUsed((prev) => ({ ...prev, [hint.key]: true }));
+          setScore((s) => Math.max(0, s - 5));
+        }}
+        className={`flex items-center gap-3 p-4 rounded-2xl border-2 transition-all text-sm font-bold ${
+          used
+            ? 'bg-slate-800 border-slate-700 text-slate-300'
+            : 'bg-slate-900 border-slate-800 text-cyan-500 hover:border-cyan-500/50'
+        }`}
+      >
+        {hint.icon} {used ? hint.label : hint.placeholder}
+      </button>
+    );
+  })}
+</div>
+
 
               {/* INPUT AREA */}
               <form onSubmit={checkGuess} className="relative group">
