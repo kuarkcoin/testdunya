@@ -120,7 +120,7 @@ export default function IQTestPage() {
   const [idx, setIdx] = useState(0);
   const [answers, setAnswers] = useState<Record<string, AnswerState>>({});
 
-  const TOTAL_TIME = 18 * 60;
+  const TOTAL_TIME = 30 * 60;
   const [timeLeft, setTimeLeft] = useState(TOTAL_TIME);
   const [started, setStarted] = useState(false);
   const [finished, setFinished] = useState(false);
