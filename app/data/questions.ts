@@ -1291,4 +1291,289 @@ export const questions: IQQuestion[] = [
     ],
     correct: 0,
   },
+  // =========================================================
+// 26–30: EXTREME RAVEN (çift kural + tuzak) — TS UYUMLU
+// =========================================================
+
+// 26) EXTREME: Row rule = XOR (shape cancels), Column rule = position shift
+{
+  id: "iq-mixed-26",
+  domain: "visual",
+  type: "visual-matrix-3x3",
+  prompt: "Which option completes the pattern?",
+  questionSvg: {
+    viewBox: "0 0 330 330",
+    elements: [
+      // grid
+      { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
+
+      { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
+
+      { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
+
+      // Row1
+      { t: "circle", cx: 35, cy: 55, r: 14, sw: 4 }, // A: circle (left)
+      { t: "circle", cx: 155, cy: 55, r: 14, sw: 4 }, // B: circle+square (center)
+      { t: "rect", x: 145, y: 45, w: 20, h: 20, sw: 4 },
+      { t: "rect", x: 265, y: 45, w: 20, h: 20, sw: 4 }, // C: square (right)
+
+      // Row2
+      { t: "rect", x: 25, y: 145, w: 20, h: 20, sw: 4 }, // A: square (left)
+      { t: "circle", cx: 155, cy: 155, r: 14, sw: 4 }, // B: circle+square (center)
+      { t: "rect", x: 145, y: 145, w: 20, h: 20, sw: 4 },
+      { t: "circle", cx: 275, cy: 155, r: 14, sw: 4 }, // C: circle (right)
+
+      // Row3
+      { t: "circle", cx: 35, cy: 255, r: 14, sw: 4 }, // A: circle+square (left)
+      { t: "rect", x: 25, y: 245, w: 20, h: 20, sw: 4 },
+      { t: "circle", cx: 155, cy: 255, r: 14, sw: 4 }, // B: circle (center) -> XOR => square (right)
+    ],
+  },
+  options: [
+    opt([{ t: "rect", x: 60, y: 40, w: 20, h: 20, sw: 4 }]), // ✅ square (right)
+    opt([{ t: "circle", cx: 50, cy: 50, r: 14, sw: 4 }]),
+    opt([{ t: "circle", cx: 50, cy: 50, r: 14, sw: 4 }, { t: "rect", x: 40, y: 40, w: 20, h: 20, sw: 4 }]),
+    opt([{ t: "rect", x: 20, y: 40, w: 20, h: 20, sw: 4 }]), // tuzak: left
+    opt([]),
+  ],
+  correct: 0,
+},
+
+// 27) EXTREME: Column rotation 0/90/180, Row count 1/2/3
+{
+  id: "iq-mixed-27",
+  domain: "visual",
+  type: "visual-matrix-3x3",
+  prompt: "Which option completes the pattern?",
+  questionSvg: {
+    viewBox: "0 0 330 330",
+    elements: [
+      // grid
+      { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
+
+      // r1: 1 arrow up/right/down
+      { t: "path", d: "M55 25 L75 70 L35 70 Z", sw: 4 },
+      { t: "path", d: "M175 55 L130 75 L130 35 Z", sw: 4 },
+      { t: "path", d: "M255 75 L275 30 L235 30 Z", sw: 4 },
+
+      // r2: 2 arrows
+      { t: "path", d: "M45 125 L60 160 L30 160 Z", sw: 4 },
+      { t: "path", d: "M70 125 L85 160 L55 160 Z", sw: 4 },
+
+      { t: "path", d: "M165 155 L135 170 L135 140 Z", sw: 4 },
+      { t: "path", d: "M185 155 L155 170 L155 140 Z", sw: 4 },
+
+      { t: "path", d: "M245 175 L260 135 L230 135 Z", sw: 4 },
+      { t: "path", d: "M270 175 L285 135 L255 135 Z", sw: 4 },
+
+      // r3: 3 arrows up/right/(missing down)
+      { t: "path", d: "M35 225 L48 255 L22 255 Z", sw: 4 },
+      { t: "path", d: "M55 225 L68 255 L42 255 Z", sw: 4 },
+      { t: "path", d: "M75 225 L88 255 L62 255 Z", sw: 4 },
+
+      { t: "path", d: "M155 255 L125 270 L125 240 Z", sw: 4 },
+      { t: "path", d: "M175 255 L145 270 L145 240 Z", sw: 4 },
+      { t: "path", d: "M195 255 L165 270 L165 240 Z", sw: 4 },
+    ],
+  },
+  options: [
+    opt([
+      { t: "path", d: "M20 70 L35 30 L5 30 Z", sw: 4 },
+      { t: "path", d: "M50 70 L65 30 L35 30 Z", sw: 4 },
+      { t: "path", d: "M80 70 L95 30 L65 30 Z", sw: 4 },
+    ]), // ✅ 3 down
+    opt([
+      { t: "path", d: "M20 30 L35 70 L5 70 Z", sw: 4 },
+      { t: "path", d: "M50 30 L65 70 L35 70 Z", sw: 4 },
+      { t: "path", d: "M80 30 L95 70 L65 70 Z", sw: 4 },
+    ]), // tuzak: 3 up
+    opt([
+      { t: "path", d: "M80 50 L30 70 L30 30 Z", sw: 4 },
+      { t: "path", d: "M80 50 L50 70 L50 30 Z", sw: 4 },
+      { t: "path", d: "M80 50 L70 70 L70 30 Z", sw: 4 },
+    ]), // tuzak: 3 right
+    opt([]),
+    opt([{ t: "path", d: "M50 75 L75 30 L25 30 Z", sw: 4 }]),
+  ],
+  correct: 0,
+},
+
+// 28) EXTREME: union of corners; size encodes column (large for row3)
+{
+  id: "iq-mixed-28",
+  domain: "visual",
+  type: "visual-matrix-3x3",
+  prompt: "Which option completes the pattern?",
+  questionSvg: {
+    viewBox: "0 0 330 330",
+    elements: [
+      // grid
+      { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
+
+      // Row1 small
+      { t: "circle", cx: 30, cy: 30, r: 6, sw: 4 },
+      { t: "circle", cx: 190, cy: 30, r: 6, sw: 4 },
+      { t: "circle", cx: 230, cy: 30, r: 6, sw: 4 },
+      { t: "circle", cx: 290, cy: 30, r: 6, sw: 4 },
+
+      // Row2 medium
+      { t: "circle", cx: 30, cy: 190, r: 10, sw: 4 },
+      { t: "circle", cx: 190, cy: 190, r: 10, sw: 4 },
+      { t: "circle", cx: 230, cy: 290, r: 10, sw: 4 },
+      { t: "circle", cx: 290, cy: 290, r: 10, sw: 4 },
+
+      // Row3 large (left side + right side)
+      { t: "circle", cx: 30, cy: 230, r: 14, sw: 4 },
+      { t: "circle", cx: 30, cy: 290, r: 14, sw: 4 },
+      { t: "circle", cx: 190, cy: 230, r: 14, sw: 4 },
+      { t: "circle", cx: 190, cy: 290, r: 14, sw: 4 },
+    ],
+  },
+  options: [
+    opt([
+      { t: "circle", cx: 25, cy: 25, r: 14, sw: 4 },
+      { t: "circle", cx: 75, cy: 25, r: 14, sw: 4 },
+      { t: "circle", cx: 25, cy: 75, r: 14, sw: 4 },
+      { t: "circle", cx: 75, cy: 75, r: 14, sw: 4 },
+    ]), // ✅ all four corners
+    opt([{ t: "circle", cx: 25, cy: 25, r: 14, sw: 4 }, { t: "circle", cx: 75, cy: 25, r: 14, sw: 4 }]),
+    opt([
+      { t: "circle", cx: 25, cy: 25, r: 10, sw: 4 },
+      { t: "circle", cx: 75, cy: 25, r: 10, sw: 4 },
+      { t: "circle", cx: 25, cy: 75, r: 10, sw: 4 },
+      { t: "circle", cx: 75, cy: 75, r: 10, sw: 4 },
+    ]), // tuzak: medium
+    opt([]),
+    opt([{ t: "circle", cx: 50, cy: 50, r: 14, sw: 4 }]),
+  ],
+  correct: 0,
+},
+
+// 29) EXTREME: anti-diagonal = X, others = O
+{
+  id: "iq-mixed-29",
+  domain: "visual",
+  type: "visual-matrix-3x3",
+  prompt: "Which option completes the pattern?",
+  questionSvg: {
+    viewBox: "0 0 330 330",
+    elements: [
+      // grid
+      { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
+
+      { t: "circle", cx: 55, cy: 55, r: 18, sw: 4 },
+      { t: "circle", cx: 155, cy: 55, r: 18, sw: 4 },
+      { t: "line", x1: 230, y1: 30, x2: 280, y2: 80, sw: 4 },
+      { t: "line", x1: 280, y1: 30, x2: 230, y2: 80, sw: 4 },
+
+      { t: "circle", cx: 55, cy: 155, r: 18, sw: 4 },
+      { t: "line", x1: 130, y1: 130, x2: 180, y2: 180, sw: 4 },
+      { t: "line", x1: 180, y1: 130, x2: 130, y2: 180, sw: 4 },
+      { t: "circle", cx: 255, cy: 155, r: 18, sw: 4 },
+
+      { t: "line", x1: 30, y1: 230, x2: 80, y2: 280, sw: 4 },
+      { t: "line", x1: 80, y1: 230, x2: 30, y2: 280, sw: 4 },
+      { t: "circle", cx: 155, cy: 255, r: 18, sw: 4 },
+    ],
+  },
+  options: [
+    opt([{ t: "circle", cx: 50, cy: 50, r: 18, sw: 4 }]), // ✅ circle
+    opt([{ t: "line", x1: 20, y1: 20, x2: 80, y2: 80, sw: 4 }, { t: "line", x1: 80, y1: 20, x2: 20, y2: 80, sw: 4 }]),
+    opt([]),
+    opt([{ t: "circle", cx: 50, cy: 50, r: 10, sw: 4 }]),
+    opt([{ t: "rect", x: 30, y: 30, w: 40, h: 40, sw: 4 }]),
+  ],
+  correct: 0,
+},
+
+// 30) EXTREME: add, subtract, add (dot arithmetic) => 4 dots
+{
+  id: "iq-mixed-30",
+  domain: "visual",
+  type: "visual-matrix-3x3",
+  prompt: "Which option completes the pattern?",
+  questionSvg: {
+    viewBox: "0 0 330 330",
+    elements: [
+      // grid
+      { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
+      { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
+
+      // Row1: 1 + 2 = 3
+      { t: "circle", cx: 55, cy: 55, r: 6, sw: 4 },
+      { t: "circle", cx: 145, cy: 55, r: 6, sw: 4 },
+      { t: "circle", cx: 165, cy: 55, r: 6, sw: 4 },
+      { t: "circle", cx: 235, cy: 55, r: 6, sw: 4 },
+      { t: "circle", cx: 255, cy: 55, r: 6, sw: 4 },
+      { t: "circle", cx: 275, cy: 55, r: 6, sw: 4 },
+
+      // Row2: 4 - 1 = 3
+      { t: "circle", cx: 35, cy: 155, r: 6, sw: 4 },
+      { t: "circle", cx: 50, cy: 155, r: 6, sw: 4 },
+      { t: "circle", cx: 65, cy: 155, r: 6, sw: 4 },
+      { t: "circle", cx: 80, cy: 155, r: 6, sw: 4 },
+      { t: "circle", cx: 155, cy: 155, r: 6, sw: 4 },
+      { t: "circle", cx: 235, cy: 155, r: 6, sw: 4 },
+      { t: "circle", cx: 255, cy: 155, r: 6, sw: 4 },
+      { t: "circle", cx: 275, cy: 155, r: 6, sw: 4 },
+
+      // Row3: 2 + 2 = 4 (missing)
+      { t: "circle", cx: 45, cy: 255, r: 6, sw: 4 },
+      { t: "circle", cx: 65, cy: 255, r: 6, sw: 4 },
+      { t: "circle", cx: 145, cy: 255, r: 6, sw: 4 },
+      { t: "circle", cx: 165, cy: 255, r: 6, sw: 4 },
+    ],
+  },
+  options: [
+    opt([
+      { t: "circle", cx: 25, cy: 50, r: 6, sw: 4 },
+      { t: "circle", cx: 40, cy: 50, r: 6, sw: 4 },
+      { t: "circle", cx: 60, cy: 50, r: 6, sw: 4 },
+      { t: "circle", cx: 75, cy: 50, r: 6, sw: 4 },
+    ]), // ✅ 4 dots
+    opt([{ t: "circle", cx: 35, cy: 50, r: 6, sw: 4 }, { t: "circle", cx: 65, cy: 50, r: 6, sw: 4 }]),
+    opt([{ t: "circle", cx: 25, cy: 50, r: 6, sw: 4 }, { t: "circle", cx: 40, cy: 50, r: 6, sw: 4 }, { t: "circle", cx: 55, cy: 50, r: 6, sw: 4 }]),
+    opt([]),
+    opt([{ t: "circle", cx: 50, cy: 50, r: 20, sw: 4 }]),
+  ],
+  correct: 0,
+},
+  
 ];
