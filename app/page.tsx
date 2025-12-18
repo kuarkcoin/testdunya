@@ -1,450 +1,650 @@
 'use client';
 
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import SvgRenderer, { SvgData } from '../components/SvgRenderer';
-import { questions } from '../data/questions';
 
-type Domain = 'logic' | 'math' | 'visual' | 'attention';
+// -------------------- UI FLAGS --------------------
+const SHOW_LOCKED_TESTS = false; // true => kilitli kutular görünür | false => sadece aktifler
 
-type IQQuestion =
-  | {
-      id: string;
-      domain: Domain;
-      type: 'sequence' | 'analogy' | 'word-problem' | 'odd-one-out-text' | 'counting' | 'logic-puzzle';
-      prompt: string;
-      optionsText: string[];
-      correct: number;
-    }
-  | {
-      id: string;
-      domain: Domain;
-      type: 'grid-missing';
-      prompt: string;
-      grid: string[];
-      options: string[][];
-      correct: number;
-    }
-  | {
-      id: string;
-      domain: Domain;
-      type: 'grid-odd-one-out';
-      prompt: string;
-      options: string[][];
-      correct: number;
-    }
-  | {
-      id: string;
-      domain: Domain;
-      type: 'visual-matrix' | 'visual-matrix-2x2' | 'visual-matrix-3x3';
-      prompt: string;
-      questionSvg: SvgData;
-      options: { svg: SvgData }[];
-      correct: number;
-    };
+// -------------------- TYPES --------------------
+type CompletedExams = Record<string, number[]>;
 
-type AnswerState = { selected: number | null; correct: boolean | null };
+// -------------------- ICONS --------------------
+const Trophy = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+    <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+    <path d="M18 9h1.5a2.5 2.5 0 0 1 0-5H18" />
+    <path d="M4 22h16" />
+    <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+    <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+    <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+  </svg>
+);
 
-function clamp(n: number, a: number, b: number) {
-  return Math.max(a, Math.min(b, n));
-}
+const Book = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+  </svg>
+);
 
-function normCdf(z: number) {
-  const t = 1 / (1 + 0.2316419 * Math.abs(z));
-  const d = 0.3989423 * Math.exp((-z * z) / 2);
-  let p =
-    d *
-    t *
-    (0.3193815 + t * (-0.3565638 + t * (1.781478 + t * (-1.821256 + t * 1.330274))));
-  if (z > 0) p = 1 - p;
-  return p;
-}
+const Brain = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+    <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z" />
+    <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z" />
+    <path d="M12 22v-4" />
+    <path d="M12 2v2" />
+  </svg>
+);
 
-function CellGrid({ grid }: { grid: string[] }) {
-  return (
-    <div className="inline-grid grid-cols-5 gap-1 p-3 rounded-2xl bg-white/5 border border-white/10">
-      {grid.join('').split('').map((ch, i) => (
-        <div
-          key={i}
-          className={`w-5 h-5 rounded-md border ${
-            ch === '#'
-              ? 'bg-indigo-400/80 border-indigo-200/40 shadow-[0_0_10px_rgba(99,102,241,0.35)]'
-              : 'bg-slate-900/60 border-white/10'
-          }`}
-        />
-      ))}
-    </div>
-  );
-}
+const CheckCircle = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+    <path d="m9 11 3 3L22 4" />
+  </svg>
+);
 
-function getBadge(iq: number) {
-  if (iq >= 155)
-    return { key: 'LEGEND', label: 'LEGEND', emoji: '🏆', style: 'bg-amber-500/15 border-amber-400/25 text-amber-200' };
-  if (iq >= 145)
-    return { key: 'ELITE', label: 'ELITE', emoji: '🔥', style: 'bg-emerald-500/15 border-emerald-400/25 text-emerald-200' };
-  if (iq >= 130)
-    return { key: 'ADVANCED', label: 'ADVANCED', emoji: '⚡', style: 'bg-indigo-500/15 border-indigo-400/25 text-indigo-200' };
-  if (iq >= 115)
-    return { key: 'SOLID', label: 'SOLID', emoji: '✅', style: 'bg-sky-500/15 border-sky-400/25 text-sky-200' };
-  if (iq >= 95)
-    return { key: 'WARMUP', label: 'WARMUP', emoji: '🧩', style: 'bg-slate-500/15 border-slate-400/25 text-slate-200' };
-  return { key: 'RETRY', label: 'RETRY', emoji: '🔁', style: 'bg-rose-500/15 border-rose-400/25 text-rose-200' };
-}
+const PenTool = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+    <path d="m12 19 7-7 3 3-7 7-3-3z" />
+    <path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+    <path d="m2 2 7.586 7.586" />
+    <circle cx="11" cy="11" r="2" />
+  </svg>
+);
 
-export default function IQTestPage() {
-  const data = questions as unknown as IQQuestion[];
+const Zap = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+  </svg>
+);
 
-  const [idx, setIdx] = useState(0);
-  const [answers, setAnswers] = useState<Record<string, AnswerState>>({});
+const Target = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+    <circle cx="12" cy="12" r="10" />
+    <circle cx="12" cy="12" r="6" />
+    <circle cx="12" cy="12" r="2" />
+  </svg>
+);
 
-  const TOTAL_TIME = 18 * 60;
-  const [timeLeft, setTimeLeft] = useState(TOTAL_TIME);
-  const [started, setStarted] = useState(false);
-  const [finished, setFinished] = useState(false);
+const Lock = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+    <rect width="18" height="11" x="3" y="11" rx="2" ry="2" />
+    <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+  </svg>
+);
 
-  const total = data.length || 20;
-  const q = data[idx];
+const Tooth = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+    <path d="M12 2C7 2 7 7 7 9c0 4 2 6 5 6s5-2 5-6c0-2 0-7-5-7z" />
+    <path d="M7 9s0 4 2 6" />
+    <path d="M17 9s0 4-2 6" />
+    <path d="M9 22c0-2 1-4 3-4s3 2 3 4" />
+  </svg>
+);
 
+const Stethoscope = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+    <path d="M11 2v2" />
+    <path d="M5 2v2" />
+    <path d="M5 5a2 2 0 0 0 4 0V4a2 2 0 0 0-4 0" />
+    <path d="M8 9a3 3 0 0 0 6 0v-1a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v1a3 3 0 0 0 3 3h0a6 6 0 0 1 6 6v3" />
+    <circle cx="20" cy="19" r="3" />
+  </svg>
+);
+
+const Globe = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+    <circle cx="12" cy="12" r="10" />
+    <path d="M2 12h20" />
+    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+  </svg>
+);
+
+const Mic = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
+    <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+    <line x1="12" x2="12" y1="19" y2="22" />
+  </svg>
+);
+
+const Calculator = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+    <rect width="16" height="20" x="4" y="2" rx="2" />
+    <line x1="8" x2="16" y1="6" y2="6" />
+    <line x1="16" x2="16" y1="14" y2="18" />
+    <path d="M16 10h.01" />
+    <path d="M12 10h.01" />
+    <path d="M8 10h.01" />
+    <path d="M12 14h.01" />
+    <path d="M8 14h.01" />
+    <path d="M12 18h.01" />
+    <path d="M8 18h.01" />
+  </svg>
+);
+
+const ArrowUp = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+    <path d="m18 15-6-6-6 6" />
+  </svg>
+);
+
+const FlashcardIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+    <path d="M2 9a3 3 0 0 1 0-6h20a3 3 0 0 1 0 6v11a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V9z" />
+    <path d="M9 3v2m6-2v2" />
+  </svg>
+);
+
+const TimerIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+    <circle cx="12" cy="12" r="10" />
+    <polyline points="12 6 12 12 16 14" />
+  </svg>
+);
+
+const GamepadIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+    <rect x="2" y="6" width="20" height="12" rx="2" />
+    <path d="M6 12h4m-2-2v4m9-2h2m-1-1h.01m-1 3h.01" />
+  </svg>
+);
+
+const Sparkles = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+    <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275Z" />
+  </svg>
+);
+
+// -------------------- DATA --------------------
+const examConfig = [
+  {
+    id: 'placement',
+    prefix: 'ielts-level-test',
+    title: 'Level Assessment',
+    count: 1,
+    activeLimit: 1,
+    desc: 'Find out your English level and estimated IELTS Band Score in 50 questions.',
+    icon: <Target className="w-6 h-6 text-white" />,
+    gradient: 'from-violet-600 to-fuchsia-600',
+  },
+  {
+    id: 'yks',
+    prefix: 'yks-sozel-deneme',
+    title: 'YKS Verbal (Sözel)',
+    count: 30,
+    activeLimit: 10,
+    desc: 'Comprehensive TYT & AYT practice tests for Turkish University Entrance.',
+    icon: <Book className="w-6 h-6 text-white" />,
+    gradient: 'from-blue-600 to-indigo-600',
+  },
+  {
+    id: 'kpss',
+    prefix: 'kpss-sozel',
+    title: 'KPSS General Culture',
+    count: 21,
+    activeLimit: 10,
+    desc: 'History, Geography, and Citizenship questions for Public Personnel Exam.',
+    icon: <Brain className="w-6 h-6 text-white" />,
+    gradient: 'from-orange-500 to-red-500',
+  },
+  {
+    id: 'tus',
+    prefix: 'tus-deneme',
+    title: 'Medical (TUS)',
+    count: 35,
+    activeLimit: 35,
+    desc: 'Clinical sciences and case studies for Medical Specialization.',
+    icon: <Stethoscope className="w-6 h-6 text-white" />,
+    gradient: 'from-emerald-500 to-teal-600',
+  },
+  {
+    id: 'dus',
+    prefix: 'dus-deneme',
+    title: 'Dentistry (DUS)',
+    count: 17,
+    activeLimit: 17,
+    desc: 'Specialization exam practice for Dentistry students.',
+    icon: <Tooth className="w-6 h-6 text-white" />,
+    gradient: 'from-cyan-500 to-blue-500',
+  },
+] as const;
+
+const ieltsModules = [
+  { id: 'ielts-reading', title: 'Reading', desc: 'Academic Passages', icon: <Book className="w-6 h-6" />, color: 'text-sky-600', bg: 'bg-sky-50', border: 'border-sky-200', active: true },
+  { id: 'ielts-listening', title: 'Listening', desc: 'Audio Conversations', icon: <div className="w-6 h-6 flex items-center justify-center font-bold text-lg">🎧</div>, color: 'text-emerald-600', bg: 'bg-emerald-50', border: 'border-emerald-200', active: true },
+  { id: 'ielts-writing', title: 'Writing', desc: 'Logic & Templates', icon: <PenTool className="w-6 h-6" />, color: 'text-amber-600', bg: 'bg-amber-50', border: 'border-amber-200', active: true },
+  { id: 'ielts-speaking', title: 'Speaking', desc: 'Cue Card Simulator', icon: <Mic className="w-6 h-6" />, color: 'text-indigo-600', bg: 'bg-indigo-50', border: 'border-indigo-200', active: true },
+  { id: 'ielts-vocab', title: 'Vocabulary', desc: 'Band 7+ Words', icon: <Zap className="w-6 h-6" />, color: 'text-rose-600', bg: 'bg-rose-50', border: 'border-rose-200', active: true },
+  { id: 'ielts-grammar', title: 'Grammar', desc: 'Adv. Structures', icon: <Brain className="w-6 h-6" />, color: 'text-purple-600', bg: 'bg-purple-50', border: 'border-purple-200', active: true },
+  { id: 'ielts-calculator', title: 'Score Calculator', desc: 'Calculate Band Score', icon: <Calculator className="w-6 h-6" />, color: 'text-teal-600', bg: 'bg-teal-50', border: 'border-teal-200', active: true },
+] as const;
+
+// -------------------- PAGE --------------------
+export default function HomePage() {
+  const [completed, setCompleted] = useState<CompletedExams>({});
+  const isClient = typeof window !== 'undefined';
+
+  // Read localStorage
   useEffect(() => {
-    if (!started || finished) return;
-    if (timeLeft <= 0) {
-      setFinished(true);
-      return;
-    }
-    const t = setInterval(() => setTimeLeft((p) => p - 1), 1000);
-    return () => clearInterval(t);
-  }, [started, finished, timeLeft]);
-
-  const answeredCount = useMemo(() => Object.values(answers).filter((a) => a.selected !== null).length, [answers]);
-
-  const selectAnswer = (choiceIndex: number) => {
-    if (!q || finished || timeLeft <= 0) return;
-    setStarted(true);
-
-    const answerKey = (q as any)?.id ? String((q as any).id) : String(idx);
-    const correctIndex = Number((q as any).correct);
-    const isCorrect = choiceIndex === correctIndex;
-
-    setAnswers((prev) => ({
-      ...prev,
-      [answerKey]: { selected: choiceIndex, correct: isCorrect },
-    }));
-  };
-
-  const next = () => setIdx((p) => clamp(p + 1, 0, (data.length || 1) - 1));
-  const prev = () => setIdx((p) => clamp(p - 1, 0, (data.length || 1) - 1));
-  const finishNow = () => setFinished(true);
-
-  const scorePack = useMemo(() => {
-    const domainMax: Record<Domain, number> = { logic: 0, math: 0, visual: 0, attention: 0 };
-    const domainGot: Record<Domain, number> = { logic: 0, math: 0, visual: 0, attention: 0 };
-
-    let totalCorrect = 0;
-    let totalAnswered = 0;
-
-    let weightedCorrect = 0;
-    let weightedTotal = 0;
-
-    const ADV_COUNT = 12;
-    const advStartIndex = Math.max(0, data.length - ADV_COUNT);
-
-    const W_BASE = 1.0;
-    const W_ADV = 1.35;
-
-    for (let i = 0; i < data.length; i++) {
-      const qq = data[i];
-      domainMax[qq.domain] += 1;
-
-      const key = (qq as any)?.id ? String((qq as any).id) : String(i);
-      const a = answers[key];
-
-      const w = i >= advStartIndex ? W_ADV : W_BASE;
-      weightedTotal += w;
-
-      if (a?.selected !== null && a?.selected !== undefined) {
-        totalAnswered += 1;
-        if (a.correct) {
-          totalCorrect += 1;
-          domainGot[qq.domain] += 1;
-          weightedCorrect += w;
+    try {
+      const savedData = localStorage.getItem('examTrackerData');
+      if (savedData) {
+        const parsed = JSON.parse(savedData);
+        if (typeof parsed === 'object' && parsed !== null) {
+          setCompleted(parsed);
         }
       }
+    } catch (error) {
+      console.error('localStorage veri okuma hatası:', error);
+      setCompleted({});
     }
+  }, []);
 
-    const totalQ = data.length || 20;
-    const acc = totalQ > 0 ? totalCorrect / totalQ : 0;
-
-    const wAcc = weightedTotal > 0 ? weightedCorrect / weightedTotal : 0;
-
-    const timeRatio = started ? clamp(timeLeft / TOTAL_TIME, 0, 1) : 0;
-    const timeBonus = Math.pow(timeRatio, 0.65);
-
-    const MU = 0.55;
-    const SIGMA = 0.18;
-
-    const perf = clamp(wAcc + 0.05 * timeBonus, 0, 1);
-    const z = (perf - MU) / SIGMA;
-
-    let iq = Math.round(100 + z * 15);
-    iq += 3;
-
-    if (totalCorrect === totalQ && totalQ >= 20) iq += 6;
-
-    const gameIQ = clamp(iq, 70, 160);
-    const badge = getBadge(gameIQ);
-
-    const usedSeconds = clamp(TOTAL_TIME - timeLeft, 0, TOTAL_TIME);
-    const accuracyPct = Math.round(acc * 100);
-    const weightedPct = Math.round(wAcc * 100);
-    const completionPct = Math.round((totalAnswered / totalQ) * 100);
-
-    const perfCdf = normCdf(z);
-
-    return {
-      domainMax,
-      domainGot,
-      totalCorrect,
-      totalAnswered,
-      totalQ,
-      gameIQ,
-      badge,
-      accuracyPct,
-      weightedPct,
-      completionPct,
-      usedSeconds,
-      timeLeft,
-      _perf: perf,
-      _z: z,
-      _cdf: perfCdf,
-    };
-  }, [answers, data, started, timeLeft]);
-
-  // ✅ Test bittiğinde sonucu localStorage'a kaydet
+  // Write localStorage (always write, even if empty -> reset works)
   useEffect(() => {
-    if (!finished) return;
     try {
-      const payload = {
-        ts: Date.now(),
-        iq: scorePack.gameIQ,
-        badge: scorePack.badge.key,
-        correct: scorePack.totalCorrect,
-        total: scorePack.totalQ,
-        accuracyPct: scorePack.accuracyPct,
-        usedSeconds: scorePack.usedSeconds,
-      };
-      localStorage.setItem('iq_last_result', JSON.stringify(payload));
-    } catch {}
-  }, [finished, scorePack.gameIQ, scorePack.badge.key, scorePack.totalCorrect, scorePack.totalQ, scorePack.accuracyPct, scorePack.usedSeconds]);
-
-  const mmss = (s: number) => {
-    const m = Math.floor(s / 60);
-    const r = s % 60;
-    return `${m}:${String(r).padStart(2, '0')}`;
-  };
+      localStorage.setItem('examTrackerData', JSON.stringify(completed));
+    } catch (e) {
+      console.error('localStorage yazma hatası:', e);
+    }
+  }, [completed]);
 
   return (
-    <main className="min-h-screen bg-slate-950 text-white px-4 py-10">
-      <div className="max-w-5xl mx-auto space-y-6">
-        <div className="flex items-center justify-between gap-3">
-          <Link href="/" className="text-slate-300 hover:text-white font-bold">
-            ← Home
-          </Link>
-
-          <div className="flex items-center gap-3">
-            <div
-              className={`px-3 py-2 rounded-xl border ${
-                timeLeft <= 60 ? 'bg-red-500/10 border-red-500/20' : 'bg-white/5 border-white/10'
-              }`}
-            >
-              <div className="text-[10px] uppercase tracking-widest text-slate-400 font-bold">Time</div>
-              <div className={`text-lg font-black ${timeLeft <= 60 ? 'text-red-300' : 'text-emerald-300'}`}>
-                {mmss(Math.max(0, timeLeft))}
-              </div>
+    <main className="min-h-screen bg-slate-50 font-sans text-slate-800">
+      {/* --- HERO SECTION --- */}
+      <div className="bg-gradient-to-r from-slate-900 via-indigo-900 to-slate-900 text-white pb-24 pt-10 px-4 md:px-8 mb-8">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="space-y-6 md:w-2/3">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-xs font-semibold text-indigo-200">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+              </span>
+              TestDünya v3.6 • New AI Game Added
             </div>
 
-            <div className="px-3 py-2 rounded-xl bg-white/5 border border-white/10">
-              <div className="text-[10px] uppercase tracking-widest text-slate-400 font-bold">Progress</div>
-              <div className="text-lg font-black text-indigo-300">
-                {answeredCount}/{total}
-              </div>
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
+              TestDünya <span className="text-indigo-400">Sınav Platformu</span>
+            </h1>
+
+            <p className="text-slate-300 text-lg md:text-xl lg:text-2xl max-w-4xl leading-relaxed text-justify">
+              <strong>IELTS</strong>, YKS, KPSS, TUS ve DUS sınavlarına yapay zeka destekli özgün sorularla hazırlanın.
+              Tüm denemelerimiz yeni müfredata uygun, detaylı çözümlü ve tamamen ücretsizdir.
+            </p>
+
+            <div className="flex flex-wrap gap-4 pt-4">
+              <Link href="/mistakes" className="px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl font-bold text-lg transition-all flex items-center gap-2">
+                <span>📕</span> Hatalarım
+              </Link>
+
+              <button
+                onClick={() => isClient && document.getElementById('exams')?.scrollIntoView({ behavior: 'smooth' })}
+                className="px-8 py-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-bold text-lg transition-all shadow-lg shadow-indigo-900/50"
+              >
+                Tüm Testler
+              </button>
+            </div>
+          </div>
+
+          <div className="md:w-1/3 flex justify-center md:justify-end">
+            <div className="relative w-40 h-40 md:w-64 md:h-64 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-3xl rotate-6 shadow-2xl flex items-center justify-center border-4 border-white/10 backdrop-blur-md">
+              <Trophy className="w-20 h-20 md:w-32 md:h-32 text-white drop-shadow-md" />
             </div>
           </div>
         </div>
+      </div>
 
-        <header className="text-center space-y-2">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-500/15 border border-indigo-400/20 text-indigo-200 text-sm font-bold">
-            🧩 IQ Test (Hard)
+      {/* --- MAIN CONTENT AREA --- */}
+      <div id="exams" className="max-w-7xl mx-auto px-2 md:px-6 -mt-20 space-y-10 pb-20 relative z-10">
+        {/* --- IELTS GLOBAL SECTION --- */}
+        <section className="bg-white rounded-2xl shadow-xl shadow-sky-200/40 overflow-hidden border-2 border-sky-100 relative">
+          <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-sky-400 to-blue-600"></div>
+
+          <div className="p-4 md:p-6 border-b border-slate-100 flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div className="flex items-center gap-4">
+              <div className="p-3 bg-sky-100 text-sky-600 rounded-xl">
+                <Globe className="w-8 h-8" />
+              </div>
+              <div>
+                <h2 className="text-2xl md:text-3xl font-black text-slate-800 tracking-tight">IELTS ACADEMIC</h2>
+                <p className="text-slate-500 text-base">Global English Preparation • Band 7.0+</p>
+              </div>
+            </div>
+            <div className="hidden md:block">
+              <span className="px-5 py-2 bg-sky-50 text-sky-700 text-sm font-bold rounded-full border border-sky-100 uppercase tracking-wider">
+                New Module
+              </span>
+            </div>
           </div>
-          <h1 className="text-3xl md:text-5xl font-black tracking-tight">{total} Questions • Mixed Domains</h1>
-          <p className="text-slate-400">Logic • Math • Visual • Attention</p>
-        </header>
 
-        {finished ? (
-          <section className="rounded-3xl bg-white/5 border border-white/10 p-6 md:p-8 space-y-6">
-            <div className="text-center space-y-3">
-              <div className="text-2xl md:text-3xl font-black text-emerald-200">✅ Test Completed</div>
+          <div className="p-3 md:p-6 bg-slate-50/50 grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-3 md:gap-4">
+            {ieltsModules.map((module) => {
+              let linkHref = `/test/${module.id}`;
+              if (module.id === 'ielts-speaking') linkHref = '/ielts/speaking';
+              if (module.id === 'ielts-calculator') linkHref = '/ielts/calculator';
+              if (module.id === 'ielts-listening') linkHref = '/ielts/listening';
+              if (module.id === 'ielts-writing') linkHref = '/ielts/writing';
 
-              <div className="flex items-center justify-center gap-2">
-                <div className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full border ${scorePack.badge.style}`}>
-                  <span className="text-base">{scorePack.badge.emoji}</span>
-                  <span className="text-xs font-black tracking-widest">{scorePack.badge.label}</span>
+              return (
+                <Link
+                  key={module.id}
+                  href={linkHref}
+                  className={`flex flex-col items-center justify-center p-3 md:p-5 rounded-xl border-2 transition-all hover:-translate-y-1 hover:shadow-lg ${module.bg} ${module.border} ${module.color} h-full`}
+                >
+                  <div className="mb-3 p-3 rounded-full bg-white shadow-sm ring-1 ring-black/5">{module.icon}</div>
+                  <h3 className="font-bold text-base md:text-lg text-slate-900 text-center">{module.title}</h3>
+                  <p className="text-xs font-bold opacity-60 uppercase tracking-wide mt-1 text-center">{module.desc}</p>
+                </Link>
+              );
+            })}
+          </div>
+        </section>
+
+{/* --- GAME MODES --- */}
+        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-8">
+          {/* 1. SPEEDRUN */}
+          <Link
+            href="/speedrun"
+            className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-violet-600 to-indigo-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
+          >
+            <div className="relative z-10 flex flex-col justify-between h-full">
+              <div>
+                <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-indigo-100 backdrop-blur-sm">
+                  <TimerIcon className="h-4 w-4" /> Challenge
                 </div>
+                <h3 className="mb-2 text-2xl font-black tracking-tight">SpeedRun</h3>
+                <p className="text-indigo-100 opacity-90 text-sm">Race against time!</p>
               </div>
-
-              <div className="text-slate-300">
-                Correct:{' '}
-                <span className="font-black text-white">
-                  {scorePack.totalCorrect}/{scorePack.totalQ}
-                </span>{' '}
-                • Estimated IQ:{' '}
-                <span className="font-black text-indigo-200 text-2xl md:text-3xl align-middle">{scorePack.gameIQ}</span>
-              </div>
-
-              <div className="text-sm text-slate-400">
-                Accuracy: <span className="font-black text-white">{scorePack.accuracyPct}%</span> • Time used:{' '}
-                <span className="font-black text-white">{mmss(scorePack.usedSeconds)}</span>
+              <div className="mt-6 flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-indigo-600 shadow-lg group-hover:scale-110 transition-transform">
+                  <GamepadIcon className="h-5 w-5" />
+                </div>
+                <span className="font-bold text-sm">Play →</span>
               </div>
             </div>
+          </Link>
 
-            <div className="flex flex-col sm:flex-row gap-2">
-              <button
-                onClick={() => {
-                  setIdx(0);
-                  setAnswers({});
-                  setTimeLeft(TOTAL_TIME);
-                  setStarted(false);
-                  setFinished(false);
-                }}
-                className="flex-1 py-3 rounded-2xl font-black bg-indigo-600 hover:bg-indigo-500"
-              >
-                Restart
-              </button>
-              <Link href="/" className="sm:w-56 py-3 rounded-2xl font-black bg-slate-800 hover:bg-slate-700 text-center">
-                Back Home →
-              </Link>
+          {/* 2. FLASHCARDS */}
+          <Link
+            href="/flashcards"
+            className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
+          >
+            <div className="relative z-10 flex flex-col justify-between h-full">
+              <div>
+                <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-teal-100 backdrop-blur-sm">
+                  <FlashcardIcon className="h-4 w-4" /> Study
+                </div>
+                <h3 className="mb-2 text-2xl font-black tracking-tight">Flashcards</h3>
+                <p className="text-teal-50 opacity-90 text-sm">1000+ IELTS Vocab.</p>
+              </div>
+              <div className="mt-6 flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-emerald-600 shadow-lg group-hover:scale-110 transition-transform">
+                  <Book className="h-5 w-5" />
+                </div>
+                <span className="font-bold text-sm">Study →</span>
+              </div>
             </div>
-          </section>
-        ) : (
-          <section className="rounded-3xl bg-white/5 border border-white/10 p-6 md:p-8 space-y-6">
-            <div className="flex items-center justify-between gap-3">
-              <div className="text-sm text-slate-400 font-bold">
-                Question <span className="text-white">{idx + 1}</span> / {total}
-                {q ? (
-                  <span className="ml-2 text-xs px-2 py-1 rounded-full bg-white/5 border border-white/10 text-slate-300">
-                    {q.domain.toUpperCase()}
+          </Link>
+
+          {/* 3. WORD HUNTER */}
+          <Link
+            href="/kelime-avcisi"
+            className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
+          >
+            <div className="absolute top-0 right-0 -mt-4 -mr-4 h-32 w-32 rounded-full bg-white/10 blur-2xl transition-all group-hover:bg-white/20"></div>
+            <div className="relative z-10 flex flex-col justify-between h-full">
+              <div>
+                <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-amber-100 backdrop-blur-sm">
+                  <Sparkles className="h-4 w-4" /> New AI Game
+                </div>
+                <h3 className="mb-2 text-2xl font-black tracking-tight">Word Hunter</h3>
+                <p className="text-amber-50 opacity-90 text-sm">AI defines, you guess.</p>
+              </div>
+              <div className="mt-6 flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-orange-600 shadow-lg transition-transform group-hover:scale-110">
+                  <GamepadIcon className="h-5 w-5" />
+                </div>
+                <span className="font-bold text-sm">Play →</span>
+              </div>
+            </div>
+          </Link>
+
+          {/* 4. WORDLE (IELTS) */}
+          <Link
+            href="/wordle"
+            className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-500 to-green-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
+          >
+            <div className="absolute top-0 right-0 -mt-4 -mr-4 h-32 w-32 rounded-full bg-white/10 blur-2xl transition-all group-hover:bg-white/20"></div>
+
+            <div className="relative z-10 flex flex-col justify-between h-full">
+              <div>
+                <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-emerald-100 backdrop-blur-sm">
+                  🟩 WORDLE <span className="opacity-80">• Daily</span>
+                </div>
+                <h3 className="mb-2 text-2xl font-black tracking-tight">IELTS Wordle</h3>
+                <p className="text-emerald-50 opacity-90 text-sm">Guess the word in 6 tries</p>
+              </div>
+
+              <div className="mt-6 flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-emerald-600 shadow-lg transition-transform group-hover:scale-110">
+                  🎯
+                </div>
+                <span className="font-bold text-sm">Play →</span>
+              </div>
+            </div>
+          </Link>
+
+          {/* 5. WORD MATCH (IELTS) */}
+          <Link
+            href="/wordmatch"
+            className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-fuchsia-600 to-purple-700 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
+          >
+            <div className="absolute top-0 right-0 -mt-4 -mr-4 h-32 w-32 rounded-full bg-white/10 blur-2xl transition-all group-hover:bg-white/20"></div>
+
+            <div className="relative z-10 flex flex-col justify-between h-full">
+              <div>
+                <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-fuchsia-100 backdrop-blur-sm">
+                  🧩 Match <span className="opacity-80">• Training</span>
+                </div>
+                <h3 className="mb-2 text-2xl font-black tracking-tight">Word Match</h3>
+                <p className="text-fuchsia-50 opacity-90 text-sm">Match word ↔ meaning fast</p>
+              </div>
+
+              <div className="mt-6 flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-purple-700 shadow-lg transition-transform group-hover:scale-110">
+                  ✦
+                </div>
+                <span className="font-bold text-sm">Play →</span>
+              </div>
+            </div>
+          </Link>
+
+          {/* 6. IQ TEST */}
+          <Link href="/iq-test" className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-sky-600 to-indigo-700 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl">
+            <div className="relative z-10 flex flex-col justify-between h-full">
+              <div>
+                <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-sky-100 backdrop-blur-sm">
+                  🧩 IQ
+                </div>
+                <h3 className="mb-2 text-2xl font-black tracking-tight">IQ Test (Hard)</h3>
+                <p className="text-sky-100 opacity-90 text-sm">20 questions • timed</p>
+              </div>
+              <div className="mt-6 flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-indigo-700 shadow-lg transition-transform group-hover:scale-110">
+                  🎯
+                </div>
+                <span className="font-bold text-sm">Start →</span>
+              </div>
+            </div>
+          </Link>
+        </section>
+
+        {/* --- NATIONAL EXAMS --- */}
+        {examConfig.map((exam) => {
+          const loopCount = SHOW_LOCKED_TESTS ? exam.count : exam.activeLimit;
+          const hasMore = exam.activeLimit < exam.count;
+
+          return (
+            <section key={exam.id} className="bg-white rounded-2xl shadow-xl shadow-slate-200/50 overflow-hidden border border-slate-100 transition-all hover:shadow-2xl hover:shadow-indigo-100/50">
+              <div className={`p-4 md:p-6 bg-gradient-to-r ${exam.gradient} text-white flex items-center justify-between`}>
+                <div className="flex items-center gap-4">
+                  <div className="p-3 bg-white/20 backdrop-blur-sm rounded-xl shadow-inner">{exam.icon}</div>
+                  <div>
+                    <h2 className="text-2xl font-bold tracking-wide">{exam.title}</h2>
+                    <p className="text-white/90 text-sm md:text-base font-medium">{exam.desc}</p>
+                  </div>
+                </div>
+                <div className="hidden sm:block text-right">
+                  <span className="block text-3xl font-black">
+                    {exam.activeLimit} <span className="text-lg opacity-60">/ {exam.count}</span>
                   </span>
-                ) : null}
-              </div>
-              <button
-                onClick={finishNow}
-                className="text-xs font-black px-3 py-2 rounded-xl bg-red-500/10 border border-red-500/20 text-red-200 hover:bg-red-500/20"
-              >
-                Finish Now
-              </button>
-            </div>
-
-            {q ? (
-              <div className="space-y-6">
-                <div className="text-lg md:text-xl font-black text-white">{q.prompt}</div>
-
-                <div className="flex justify-center">
-                  {'questionSvg' in q ? (
-                    <div className="w-64 h-64 bg-white rounded-xl border-4 border-slate-700 shadow-2xl overflow-hidden text-slate-900 transition-transform hover:scale-[1.02]">
-                      <SvgRenderer data={q.questionSvg} />
-                    </div>
-                  ) : 'grid' in q && (q as any).grid ? (
-                    <CellGrid grid={(q as any).grid} />
-                  ) : null}
+                  <span className="text-xs uppercase opacity-80 font-bold tracking-wider">Test Yayında</span>
                 </div>
+              </div>
 
-                <div className={`grid gap-3 ${'questionSvg' in q ? 'grid-cols-2 sm:grid-cols-3 md:grid-cols-5' : 'grid-cols-1 md:grid-cols-2'}`}>
-                  {'optionsText' in q ? (
-                    q.optionsText.map((opt, i) => {
-                      const key = q.id || String(idx);
-                      const picked = answers[key]?.selected === i;
+              <div className="p-3 md:p-6 bg-slate-50/50">
+                <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-8 gap-2 md:gap-4">
+                  {Array.from({ length: loopCount }, (_, i) => i + 1).map((num) => {
+                    const testLinkId = `${exam.prefix}-${num}`;
+                    const isDone = (completed[exam.id] || []).includes(num);
+                    const isActive = num <= exam.activeLimit;
+
+                    if (SHOW_LOCKED_TESTS && !isActive) {
                       return (
-                        <button
-                          key={i}
-                          onClick={() => selectAnswer(i)}
-                          className={`p-4 rounded-2xl border text-left font-bold transition-all
-                            ${picked ? 'bg-indigo-500/20 border-indigo-300/30' : 'bg-slate-950/40 border-white/10 hover:bg-white/5'}
-                          `}
-                        >
-                          {opt}
-                        </button>
+                        <div key={num} className="relative flex flex-col items-center justify-center py-4 px-2 rounded-xl border border-slate-100 bg-slate-50 text-slate-300 cursor-not-allowed overflow-hidden">
+                          <div className="mb-2 opacity-40">
+                            <Lock className="w-6 h-6 text-slate-400" />
+                          </div>
+                          <span className="text-sm font-bold opacity-40">Test {num}</span>
+                        </div>
                       );
-                    })
-                  ) : 'questionSvg' in q ? (
-                    q.options.map((opt, i) => {
-                      const key = q.id || String(idx);
-                      const picked = answers[key]?.selected === i;
-                      return (
-                        <button
-                          key={i}
-                          onClick={() => selectAnswer(i)}
-                          className={`aspect-square p-2 rounded-xl border transition-all flex items-center justify-center bg-white text-slate-800 relative
-                            ${
-                              picked
-                                ? 'ring-4 ring-indigo-500 border-indigo-600 scale-105 z-10'
-                                : 'border-slate-300 hover:border-indigo-400 hover:shadow-lg hover:-translate-y-1'
-                            }
-                          `}
-                        >
-                          <SvgRenderer data={opt.svg} />
-                          {picked && (
-                            <div className="absolute top-1 right-1 bg-indigo-600 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full shadow-sm">
-                              ✓
+                    }
+
+                    return (
+                      <Link
+                        key={num}
+                        href={`/test/${testLinkId}`}
+                        className={`
+                          group relative flex flex-col items-center justify-center py-4 px-2 rounded-xl border transition-all duration-200
+                          ${isDone
+                            ? 'bg-emerald-50 border-emerald-200 hover:bg-emerald-100'
+                            : 'bg-white border-slate-200 hover:border-indigo-400 hover:shadow-md hover:-translate-y-0.5'
+                          }
+                        `}
+                      >
+                        <div className="mb-2">
+                          {isDone ? (
+                            <div className="text-emerald-500">
+                              <CheckCircle className="w-6 h-6" />
+                            </div>
+                          ) : (
+                            <div className="text-slate-300 group-hover:text-indigo-500 transition-colors">
+                              <PenTool className="w-6 h-6" />
                             </div>
                           )}
-                        </button>
-                      );
-                    })
-                  ) : (
-                    (q as any).options.map((gridOpt: any, i: number) => {
-                      const key = q.id || String(idx);
-                      const picked = answers[key]?.selected === i;
-                      return (
-                        <button
-                          key={i}
-                          onClick={() => selectAnswer(i)}
-                          className={`p-3 rounded-2xl border transition-all text-left
-                            ${picked ? 'bg-indigo-500/20 border-indigo-300/30' : 'bg-slate-950/40 border-white/10 hover:bg-white/5'}
-                          `}
-                        >
-                          <div className="text-xs uppercase tracking-widest text-slate-400 font-bold mb-2">
-                            Option {String.fromCharCode(65 + i)}
-                          </div>
-                          <CellGrid grid={gridOpt} />
-                        </button>
-                      );
-                    })
+                        </div>
+                        <span className={`text-sm font-bold ${isDone ? 'text-emerald-700' : 'text-slate-600 group-hover:text-indigo-900'}`}>
+                          Test {num}
+                        </span>
+                      </Link>
+                    );
+                  })}
+
+                  {!SHOW_LOCKED_TESTS && hasMore && (
+                    <div className="flex flex-col items-center justify-center py-4 px-2 rounded-xl border border-dashed border-slate-300 bg-slate-50/50 text-slate-400">
+                      <span className="text-xs font-bold text-center">
+                        Devamı
+                        <br />
+                        Yakında...
+                      </span>
+                    </div>
                   )}
                 </div>
-
-                <div className="flex items-center justify-between pt-4 border-t border-white/5 mt-6">
-                  <button
-                    onClick={prev}
-                    className="px-6 py-3 rounded-2xl font-black bg-slate-800 hover:bg-slate-700 disabled:opacity-40 transition-colors"
-                    disabled={idx === 0}
-                  >
-                    ← Prev
-                  </button>
-
-                  <button
-                    onClick={next}
-                    className="px-6 py-3 rounded-2xl font-black bg-indigo-600 hover:bg-indigo-500 disabled:opacity-40 transition-colors shadow-lg shadow-indigo-900/20"
-                    disabled={idx >= total - 1}
-                  >
-                    Next →
-                  </button>
-                </div>
               </div>
-            ) : (
-              <div className="text-center text-slate-400 font-bold py-10">No question found.</div>
-            )}
-          </section>
-        )}
+            </section>
+          );
+        })}
       </div>
+
+      {/* --- FOOTER --- */}
+      <footer className="bg-slate-900 text-slate-400 py-16 px-4 border-t border-slate-800">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-10 text-base mb-8">
+          <div className="col-span-1 md:col-span-2">
+            <h4 className="text-white font-bold text-2xl mb-6 flex items-center gap-2">
+              <Trophy className="w-6 h-6 text-indigo-500" /> TestDünya
+            </h4>
+            <p className="leading-relaxed mb-6 max-w-lg text-justify text-lg text-slate-400">
+              Türkiye'nin en kapsamlı ücretsiz online sınav hazırlık platformu.
+              TYT, AYT, KPSS, TUS, DUS ve <strong>IELTS</strong> sınavlarına hazırlanan öğrenciler için
+              özenle hazırlanmış özgün deneme sınavları.
+            </p>
+            <p className="text-sm opacity-50">&copy; 2025 TestDünya. Tüm hakları saklıdır.</p>
+          </div>
+
+          <div>
+            <h5 className="text-white font-bold text-lg mb-6">Sınavlar</h5>
+            <ul className="space-y-3">
+              <li>
+                <Link href="#exams" className="hover:text-white transition-colors">
+                  IELTS Academic
+                </Link>
+              </li>
+              <li>
+                <Link href="#exams" className="hover:text-white transition-colors">
+                  YKS (TYT-AYT)
+                </Link>
+              </li>
+              <li>
+                <Link href="#exams" className="hover:text-white transition-colors">
+                  TUS Denemeleri
+                </Link>
+              </li>
+              <li>
+                <Link href="#exams" className="hover:text-white transition-colors">
+                  DUS Denemeleri
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h5 className="text-white font-bold text-lg mb-6">Hızlı Bağlantılar</h5>
+            <ul className="space-y-3 text-sm">
+              <li>
+                <Link href="/mistakes" className="hover:text-white transition-colors">
+                  Hata Analizi
+                </Link>
+              </li>
+              <li>
+                <Link href="/iletisim" className="hover:text-white transition-colors">
+                  İletişim
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="flex justify-center border-t border-slate-800 pt-10 mt-10">
+          <Link
+            href="/iletisim"
+            className="flex items-center gap-3 bg-indigo-600 hover:bg-indigo-700 text-white px-10 py-5 rounded-xl shadow-lg transition-all hover:-translate-y-1 hover:shadow-indigo-900/50 font-bold text-xl"
+          >
+            <span className="text-2xl">💬</span>
+            <span>Bizimle İletişime Geçin</span>
+          </Link>
+        </div>
+      </footer>
+
+      {/* --- SCROLL TO TOP --- */}
+      <button
+        aria-label="Scroll to top"
+        onClick={() => isClient && window.scrollTo({ top: 0, behavior: 'smooth' })}
+        className="fixed bottom-6 right-6 z-[999] bg-indigo-600 text-white p-3 rounded-full shadow-xl hover:bg-indigo-700 transition-all border-2 border-white"
+      >
+        <ArrowUp className="w-6 h-6" />
+      </button>
     </main>
   );
 }
