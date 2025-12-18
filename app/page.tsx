@@ -469,7 +469,7 @@ export default function HomePage() {
                   🧩 IQ
                 </div>
                 <h3 className="mb-2 text-2xl font-black tracking-tight">IQ Test (Hard)</h3>
-                <p className="text-sky-100 opacity-90 text-sm">20 questions • timed</p>
+                <p className="text-sky-100 opacity-90 text-sm">25 questions • timed</p>
               </div>
               <div className="mt-6 flex items-center gap-3">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-indigo-700 shadow-lg transition-transform group-hover:scale-110">
