@@ -532,7 +532,301 @@ export interface Question5 {
     options: ["Cousin", "Aunt", "Uncle", "Grandpa"],
     correct: 2,
     explanation: "Babanın erkek kardeşi amcadır (Uncle)."
-  }
+  },
+  // ==========================================
+// MATEMATİK (Ek +10 Soru)
+// ==========================================
+{
+  id: "m5-zn-11", subject: "matematik", term: 1,
+  prompt: "Bir fabrikada üretilen 45.000 kalemin 2/5'i kırmızı, kalanı mavidir. Mavi kalem sayısı kaçtır?",
+  options: ["18.000", "22.500", "27.000", "30.000"],
+  correct: 2,
+  explanation: "45.000 / 5 = 9.000. Kırmızı: 9.000 x 2 = 18.000. Mavi: 45.000 - 18.000 = 27.000."
+},
+{
+  id: "m5-zn-12", subject: "matematik", term: 2,
+  prompt: "Bir kenar uzunluğu 8 cm olan bir karenin alanı, kısa kenarı 4 cm olan bir dikdörtgenin alanına eşittir. Dikdörtgenin uzun kenarı kaç cm'dir?",
+  options: ["12", "16", "24", "32"],
+  correct: 1,
+  explanation: "Karenin alanı: 8 x 8 = 64. Dikdörtgenin alanı da 64 olmalı. 64 / 4 = 16 cm."
+},
+{
+  id: "m5-zn-13", subject: "matematik", term: 1,
+  prompt: "Bir bölme işleminde kalan 12 ise, bölen aşağıdakilerden hangisi olamaz?",
+  options: ["13", "15", "11", "20"],
+  correct: 2,
+  explanation: "Bölme işleminde bölen her zaman kalandan büyük olmalıdır. 11, 12'den küçük olduğu için bölen olamaz."
+},
+{
+  id: "m5-zn-14", subject: "matematik", term: 2,
+  prompt: "360 sayısının %25'i kaçtır?",
+  options: ["80", "90", "100", "120"],
+  correct: 1,
+  explanation: "%25 demek dörtte bir (1/4) demektir. 360 / 4 = 90."
+},
+{
+  id: "m5-zn-15", subject: "matematik", term: 1,
+  prompt: "3³ - 2⁴ işleminin sonucu kaçtır?",
+  options: ["11", "9", "5", "1"],
+  correct: 0,
+  explanation: "3³ = 27, 2⁴ = 16. 27 - 16 = 11."
+},
+{
+  id: "m5-zn-16", subject: "matematik", term: 2,
+  prompt: "Hangi ondalık gösterim 0,7'den daha büyüktür?",
+  options: ["0,69", "0,08", "0,71", "0,70"],
+  correct: 2,
+  explanation: "0,7 sayısı 0,70'e eşittir. 0,71 > 0,70."
+},
+{
+  id: "m5-zn-17", subject: "matematik", term: 1,
+  prompt: "987.654.321 sayısında on milyonlar basamağındaki rakam kaçtır?",
+  options: ["9", "8", "7", "6"],
+  correct: 1,
+  explanation: "Sırasıyla: Birler, Onlar, Yüzler, Binler, On Binler, Yüz Binler, Milyonlar, On Milyonlar(8)."
+},
+{
+  id: "m5-zn-18", subject: "matematik", term: 2,
+  prompt: "Bir geniş açının ölçüsü bir dik açının ölçüsünden 45 derece fazladır. Bu açı kaç derecedir?",
+  options: ["125", "135", "145", "155"],
+  correct: 1,
+  explanation: "Dik açı 90 derecedir. 90 + 45 = 135 derece."
+},
+{
+  id: "m5-zn-19", subject: "matematik", term: 2,
+  prompt: "Günde 250 ml süt içen bir çocuk, 12 günde toplam kaç litre süt içer?",
+  options: ["2", "3", "4", "5"],
+  correct: 1,
+  explanation: "250 x 12 = 3000 ml. 3000 ml = 3 Litre."
+},
+{
+  id: "m5-zn-20", subject: "matematik", term: 1,
+  prompt: "Paydası 12 olan birim kesir aşağıdakilerden hangisidir?",
+  options: ["12/1", "1/12", "12/12", "6/12"],
+  correct: 1,
+  explanation: "Birim kesirlerin payı her zaman 1'dir."
+},
 
+// ==========================================
+// TÜRKÇE (Ek +10 Soru)
+// ==========================================
+{
+  id: "t5-zn-11", subject: "turkce", term: 1,
+  prompt: "Aşağıdaki kelimelerden hangisi 'soyut' bir anlam taşır?",
+  options: ["Hava", "Sevgi", "Gözlük", "Çiçek"],
+  correct: 1,
+  explanation: "Sevgi beş duyu organıyla algılanamaz, zihinsel bir kavramdır."
+},
+{
+  id: "t5-zn-12", subject: "turkce", term: 2,
+  prompt: "Hangisi bir 'özne-yüklem' uyumsuzluğu içermez?",
+  options: ["Kuşlar uçuyorlar.", "Ben ve o gittik.", "Herkes sustular.", "Çiçekler soldu."],
+  correct: 3,
+  explanation: "İnsan dışı çoğul varlıklar özne olduğunda yüklem tekil olur: Çiçekler soldu."
+},
+{
+  id: "t5-zn-13", subject: "turkce", term: 1,
+  prompt: "'Sıcak' kelimesi hangi cümlede gerçek anlamı dışında (mecaz) kullanılmıştır?",
+  options: ["Sıcak çorba içti.", "Hava bugün çok sıcak.", "Bizi çok sıcak karşıladı.", "Sıcak sudan eli yandı."],
+  correct: 2,
+  explanation: "Sıcak karşılamak; samimi ve içten davranmak anlamında mecazdır."
+},
+{
+  id: "t5-zn-14", subject: "turkce", term: 2,
+  prompt: "Aşağıdaki cümlelerin hangisinde 'ki'nin yazımı yanlıştır?",
+  options: ["Seninki gelmiş.", "Evdeki hesap çarşıya uymaz.", "Öyle bir çocukki anlatamam.", "Bahçedeki çiçekler kurumuş."],
+  correct: 2,
+  explanation: "Bağlaç olan 'ki' ayrı yazılır: 'çocuk ki' olmalı."
+},
+{
+  id: "t5-zn-15", subject: "turkce", term: 1,
+  prompt: "Hangi atasözü 'çalışkanlık' ile ilgilidir?",
+  options: ["Damlaya damlaya göl olur.", "İşleyen demir ışıldar.", "Ayağını yorganına göre uzat.", "Sakla samanı gelir zamanı."],
+  correct: 1,
+  explanation: "Çalışan insanın yeteneklerinin körelmeyeceğini anlatır."
+},
+{
+  id: "t5-zn-16", subject: "turkce", term: 2,
+  prompt: "'Kitapçı' kelimesinin kökü ve aldığı ek türü nedir?",
+  options: ["Kitap-çı (Çekim eki)", "Kitap-çı (Yapım eki)", "Kita-pçı (Yapım eki)", "Kitapçı (Kök)"],
+  correct: 1,
+  explanation: "Kitap köktür, '-çı' eki ise yeni bir anlam türettiği için yapım ekidir."
+},
+{
+  id: "t5-zn-17", subject: "turkce", term: 1,
+  prompt: "Aşağıdakilerden hangisi bir 'nesnel' cümledir?",
+  options: ["Mavi en güzel renktir.", "Dondurma çok lezzetlidir.", "Türkiye üç tarafı denizlerle çevrili bir yarımadadır.", "Bu film çok sıkıcı."],
+  correct: 2,
+  explanation: "Bilimsel olarak kanıtlanabilir, kişiden kişiye değişmez."
+},
+{
+  id: "t5-zn-18", subject: "turkce", term: 2,
+  prompt: "Aşağıdaki kelimelerin hangisinde ünsüz benzeşmesi (sertleşme) vardır?",
+  options: ["Dolapta", "Kitabı", "Sütçü", "Ağaca"],
+  correct: 0,
+  explanation: "Dolap-da -> Dolapta (d sesi t'ye dönüşmüştür)."
+},
+{
+  id: "t5-zn-19", subject: "turkce", term: 1,
+  prompt: "Hangisi bir 'hikaye unsuru' değildir?",
+  options: ["Yer", "Zaman", "Kişiler", "Ana fikir"],
+  correct: 3,
+  explanation: "Ana fikir metnin mesajıdır, olay örgüsünün bir parçası veya unsuru değildir."
+},
+{
+  id: "t5-zn-20", subject: "turkce", term: 2,
+  prompt: "Aşağıdaki deyimlerden hangisi 'çok sevinmek' anlamındadır?",
+  options: ["Göz atmak", "Etekleri zil çalmak", "Kulak misafiri olmak", "Burnu havada olmak"],
+  correct: 1,
+  explanation: "Etekleri zil çalmak deyimi büyük bir sevinç ve heyecanı ifade eder."
+},
+
+// ==========================================
+// FEN BİLİMLERİ (Ek +10 Soru)
+// ==========================================
+{
+  id: "f5-zn-11", subject: "fen", term: 1,
+  prompt: "Ay'ın Dünya etrafındaki dolanma süresi yaklaşık kaç gündür?",
+  options: ["24", "27", "30", "365"],
+  correct: 1,
+  explanation: "Ay, Dünya etrafındaki turunu yaklaşık 27.3 günde tamamlar."
+},
+{
+  id: "f5-zn-12", subject: "fen", term: 2,
+  prompt: "Aşağıdakilerden hangisi opak bir maddedir?",
+  options: ["Cam", "Su", "Tahta", "Hava"],
+  correct: 2,
+  explanation: "Işığı hiç geçirmeyen maddelere opak denir. Tahta opaktır."
+},
+{
+  id: "f5-zn-13", subject: "fen", term: 1,
+  prompt: "Aşağıdaki canlılardan hangisi omurgalı hayvanlar grubuna girer?",
+  options: ["Kelebek", "Yılan", "Toprak solucanı", "Sinek"],
+  correct: 1,
+  explanation: "Sürüngenler (yılan) omurgalı hayvanlar sınıfındadır."
+},
+{
+  id: "f5-zn-14", subject: "fen", term: 2,
+  prompt: "Sıvı bir maddenin ısı kaybederek katı hale geçmesine ne denir?",
+  options: ["Erime", "Donma", "Yoğuşma", "Süblimleşme"],
+  correct: 1,
+  explanation: "Sıvıdan katıya geçiş donmadır."
+},
+{
+  id: "f5-zn-15", subject: "fen", term: 1,
+  prompt: "Dinamometre neyi ölçmek için kullanılır?",
+  options: ["Sıcaklık", "Kütle", "Kuvvet", "Zaman"],
+  correct: 2,
+  explanation: "Kuvvetin büyüklüğü dinamometre ile ölçülür."
+},
+{
+  id: "f5-zn-16", subject: "fen", term: 2,
+  prompt: "Aşağıdakilerden hangisi bir 'ısı' birimidir?",
+  options: ["Derece", "Gram", "Joule", "Metre"],
+  correct: 2,
+  explanation: "Isı enerji olduğu için Joule veya Kalori ile ifade edilir."
+},
+{
+  id: "f5-zn-17", subject: "fen", term: 1,
+  prompt: "Bitkinin topraktan su ve mineral almasını sağlayan yapısı hangisidir?",
+  options: ["Çiçek", "Gövde", "Yaprak", "Kök"],
+  correct: 3,
+  explanation: "Kökler bitkiyi toprağa bağlar ve su ihtiyacını karşılar."
+},
+{
+  id: "f5-zn-18", subject: "fen", term: 2,
+  prompt: "Sürtünme kuvveti ile ilgili hangisi doğrudur?",
+  options: ["Hareketi kolaylaştırır.", "Sadece sıvılarda olur.", "Harekete zıt yöndedir.", "Yüzey pürüzsüzleştikçe artar."],
+  correct: 2,
+  explanation: "Sürtünme kuvveti her zaman hareket yönüne zıt ve hareketi zorlaştırıcıdır."
+},
+{
+  id: "f5-zn-19", subject: "fen", term: 1,
+  prompt: "Mikroskobik canlıların yararlarından biri hangisidir?",
+  options: ["Hastalık yapması", "Sütün peynire dönüşmesi", "Besinleri küçültmesi", "Dişleri çürütmesi"],
+  correct: 1,
+  explanation: "Mayalanma olayını sağlayan bazı mikroskobik canlılar faydalıdır."
+},
+{
+  id: "f5-zn-20", subject: "fen", term: 2,
+  prompt: "Işığın bir yüzeye çarpıp geri dönmesine ne denir?",
+  options: ["Kırılma", "Yansıma", "Soğurulma", "Yayılma"],
+  correct: 1,
+  explanation: "Işığın geri dönmesi olayı yansımadır."
+},
+
+// ==========================================
+// İNGİLİZCE (Ek +10 Soru)
+// ==========================================
+{
+  id: "e5-zn-11", subject: "ingilizce", term: 1,
+  prompt: "Where do you study? - I study at ____.",
+  options: ["Hospital", "School", "Bakery", "Park"],
+  correct: 1,
+  explanation: "Ders çalışma veya eğitim yeri okuldur (school)."
+},
+{
+  id: "e5-zn-12", subject: "ingilizce", term: 2,
+  prompt: "Which one is a health problem?",
+  options: ["Happy", "Broken leg", "Hungry", "Tall"],
+  correct: 1,
+  explanation: "Broken leg (kırık bacak) bir sağlık sorunudur."
+},
+{
+  id: "e5-zn-13", subject: "ingilizce", term: 1,
+  prompt: "A: '____ is the museum?' B: 'It is on the Apple Street.'",
+  options: ["What", "Who", "Where", "When"],
+  correct: 2,
+  explanation: "Yer sormak için 'Where' (Nerede) kullanılır."
+},
+{
+  id: "e5-zn-14", subject: "ingilizce", term: 2,
+  prompt: "I ____ breakfast every morning.",
+  options: ["do", "go", "have", "play"],
+  correct: 2,
+  explanation: "Kahvaltı yapmak 'have breakfast' kalıbıyla söylenir."
+},
+{
+  id: "e5-zn-15", subject: "ingilizce", term: 1,
+  prompt: "Is she Chinese? - No, she is ____. She is from Japan.",
+  options: ["English", "French", "Japanese", "Turkish"],
+  correct: 2,
+  explanation: "Japonya'dan gelen biri Japondur (Japanese)."
+},
+{
+  id: "e5-zn-16", subject: "ingilizce", term: 2,
+  prompt: "I am thirsty. I want to drink ____.",
+  options: ["Pizza", "Water", "Sandwich", "Apple"],
+  correct: 1,
+  explanation: "Susamış (thirsty) biri su (water) içmek ister."
+},
+{
+  id: "e5-zn-17", subject: "ingilizce", term: 1,
+  prompt: "Which one is an indoor game?",
+  options: ["Chess", "Football", "Basketball", "Tennis"],
+  correct: 0,
+  explanation: "Satranç (Chess) kapalı alanda oynanan bir oyundur."
+},
+{
+  id: "e5-zn-18", subject: "ingilizce", term: 2,
+  prompt: "What is the weather like? - It is ____. Take your umbrella.",
+  options: ["Sunny", "Rainy", "Hot", "Windy"],
+  correct: 1,
+  explanation: "Şemsiye (umbrella) alınması gerekiyorsa hava yağmurludur (rainy)."
+},
+{
+  id: "e5-zn-19", subject: "ingilizce", term: 1,
+  prompt: "Seven + Eight = ?",
+  options: ["Twelve", "Thirteen", "Fourteen", "Fifteen"],
+  correct: 3,
+  explanation: "7 + 8 = 15 (fifteen)."
+},
+{
+  id: "e5-zn-20", subject: "ingilizce", term: 2,
+  prompt: "Dogs are ____ animals.",
+  options: ["Wild", "Jungle", "Dangerous", "Friendly"],
+  correct: 3,
+  explanation: "Köpekler arkadaş canlısı (friendly) hayvanlardır."
+}
 ]; 
   
