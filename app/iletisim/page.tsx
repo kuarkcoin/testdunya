@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 // 👇 GÜNCELLENEN MAİL ADRESİN
-const MY_EMAIL = "ttestdunya@gmail.com"; 
+const MY_EMAIL = "muratot79@gmail.com"; 
 
 export const metadata: Metadata = {
   title: 'İletişim - TestDünya',
