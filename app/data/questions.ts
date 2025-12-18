@@ -988,4 +988,307 @@ export const questions: IQQuestion[] = [
     correct: 0,
     explanation: "Rows alternate orientation (vertical/horizontal/vertical) while stroke count increases 1→2→3 by columns.",
   },
+  // =========================================================
+  // 21–25: ADVANCED RAVEN (tam çift kural)
+  // =========================================================
+
+  // 21) Advanced: XOR + Satır bazlı 90° rotasyon
+  {
+    id: "iq-mixed-21",
+    domain: "visual",
+    type: "visual-matrix-3x3",
+    prompt: "Which option completes the pattern?",
+    questionSvg: {
+      viewBox: "0 0 330 330",
+      elements: [
+        // grid
+        { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
+
+        { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
+
+        { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
+
+        // KURAL: Her satırda C = XOR(A,B)
+        // KURAL 2: Satır aşağı indikçe sonuç 90° saat yönünde döner.
+        // R1: A=\ , B=+ => XOR => ( + kalır, \ silinir ) -> sadece +? (burada A ve B farklı, XOR birleşim gibi)
+        // Biz XOR'u "aynı çizgi varsa iptal" olarak kuruyoruz.
+        // A: "\"  B: "\" + "|"  => XOR => "|"
+        // R2: A: "/"  B: "/" + "-" => XOR => "-"  (satır 2'de)
+        // R3: A: "|"  B: "|" + "\" => XOR => "\" (sonuç 90° dönüşle eşleşecek)
+
+        // Row1 col1: "\" 
+        { t: "line", x1: 25, y1: 25, x2: 95, y2: 95, sw: 6 },
+        // Row1 col2: "\" + "|"  (paylaşılan "\" iptal => "|" kalır)
+        { t: "line", x1: 125, y1: 25, x2: 195, y2: 95, sw: 6 },
+        { t: "line", x1: 155, y1: 25, x2: 155, y2: 95, sw: 6 },
+        // Row1 col3: "|"  (sonuç)
+        { t: "line", x1: 255, y1: 25, x2: 255, y2: 95, sw: 6 },
+
+        // Row2 col1: "/" 
+        { t: "line", x1: 25, y1: 195, x2: 95, y2: 125, sw: 6 },
+        // Row2 col2: "/" + "-"  (paylaşılan "/" iptal => "-" kalır)
+        { t: "line", x1: 125, y1: 195, x2: 195, y2: 125, sw: 6 },
+        { t: "line", x1: 125, y1: 155, x2: 195, y2: 155, sw: 6 },
+        // Row2 col3: "-" (sonuç)
+        { t: "line", x1: 225, y1: 155, x2: 295, y2: 155, sw: 6 },
+
+        // Row3 col1: "|" 
+        { t: "line", x1: 55, y1: 225, x2: 55, y2: 295, sw: 6 },
+        // Row3 col2: "|" + "\"  (paylaşılan "|" iptal => "\" kalır)
+        { t: "line", x1: 155, y1: 225, x2: 155, y2: 295, sw: 6 },
+        { t: "line", x1: 125, y1: 225, x2: 195, y2: 295, sw: 6 },
+      ],
+    },
+    options: [
+      opt([{ t: "line", x1: 20, y1: 20, x2: 80, y2: 80, sw: 6 }]), // ✅ "\"  (kural sonucu)
+      opt([{ t: "line", x1: 20, y1: 80, x2: 80, y2: 20, sw: 6 }]), // "/"
+      opt([{ t: "line", x1: 50, y1: 20, x2: 50, y2: 80, sw: 6 }]), // "|"
+      opt([{ t: "line", x1: 20, y1: 50, x2: 80, y2: 50, sw: 6 }]), // "-"
+      opt([
+        { t: "line", x1: 20, y1: 20, x2: 80, y2: 80, sw: 6 },
+        { t: "line", x1: 20, y1: 80, x2: 80, y2: 20, sw: 6 },
+      ]), // "X"
+    ],
+    correct: 0,
+  },
+
+  // 22) Advanced: UNION (birleştir) + Sütun başına şekil sayısı artışı
+  {
+    id: "iq-mixed-22",
+    domain: "visual",
+    type: "visual-matrix-3x3",
+    prompt: "Which option completes the pattern?",
+    questionSvg: {
+      viewBox: "0 0 330 330",
+      elements: [
+        // grid
+        { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
+
+        // KURAL1: Her satırda C = A ∪ B (birleştir)
+        // KURAL2: Sütun ilerledikçe "köşe işareti sayısı" 1→2→3 artar.
+
+        // Row1: A=TL, B=TR => C=TL+TR
+        { t: "circle", cx: 30, cy: 30, r: 6, sw: 4 },
+        { t: "circle", cx: 170, cy: 30, r: 6, sw: 4 },
+        { t: "circle", cx: 230, cy: 30, r: 6, sw: 4 },
+        { t: "circle", cx: 290, cy: 30, r: 6, sw: 4 },
+
+        // Row2: A=BL, B=BR => C=BL+BR
+        { t: "circle", cx: 30, cy: 170, r: 6, sw: 4 },
+        { t: "circle", cx: 170, cy: 170, r: 6, sw: 4 },
+        { t: "circle", cx: 230, cy: 290, r: 6, sw: 4 },
+        { t: "circle", cx: 290, cy: 290, r: 6, sw: 4 },
+
+        // Row3: A=TL+BL, B=TR (=> C=TL+BL+TR)  (3 işaret)
+        { t: "circle", cx: 30, cy: 230, r: 6, sw: 4 },
+        { t: "circle", cx: 30, cy: 290, r: 6, sw: 4 },
+        { t: "circle", cx: 170, cy: 230, r: 6, sw: 4 },
+      ],
+    },
+    options: [
+      opt([
+        { t: "circle", cx: 25, cy: 25, r: 6, sw: 4 },
+        { t: "circle", cx: 25, cy: 75, r: 6, sw: 4 },
+        { t: "circle", cx: 75, cy: 25, r: 6, sw: 4 },
+      ]), // ✅ TL + BL + TR
+      opt([
+        { t: "circle", cx: 75, cy: 25, r: 6, sw: 4 },
+        { t: "circle", cx: 75, cy: 75, r: 6, sw: 4 },
+        { t: "circle", cx: 25, cy: 75, r: 6, sw: 4 },
+      ]), // TR + BR + BL (tuzak)
+      opt([
+        { t: "circle", cx: 25, cy: 25, r: 6, sw: 4 },
+        { t: "circle", cx: 75, cy: 25, r: 6, sw: 4 },
+      ]), // 2 adet (eksik)
+      opt([{ t: "circle", cx: 25, cy: 25, r: 6, sw: 4 }]), // 1 adet
+      opt([
+        { t: "circle", cx: 25, cy: 25, r: 6, sw: 4 },
+        { t: "circle", cx: 75, cy: 25, r: 6, sw: 4 },
+        { t: "circle", cx: 25, cy: 75, r: 6, sw: 4 },
+        { t: "circle", cx: 75, cy: 75, r: 6, sw: 4 },
+      ]), // 4 adet (fazla)
+    ],
+    correct: 0,
+  },
+
+  // 23) Advanced: Şekil tipi dönüşümü + Satırda "büyük/küçük" terslenmesi
+  {
+    id: "iq-mixed-23",
+    domain: "visual",
+    type: "visual-matrix-3x3",
+    prompt: "Which option completes the pattern?",
+    questionSvg: {
+      viewBox: "0 0 330 330",
+      elements: [
+        // grid
+        { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
+
+        // KURAL1: Sütunlarda şekil dönüşür: daire → kare → üçgen
+        // KURAL2: Satır aşağı indikçe BOYUT terslenir (büyük/küçük)
+        // Row1: büyük
+        { t: "circle", cx: 55, cy: 55, r: 20, sw: 4 },
+        { t: "rect", x: 140, y: 35, w: 40, h: 40, sw: 4 },
+        { t: "path", d: "M255 30 L280 80 L230 80 Z", sw: 4 },
+
+        // Row2: küçük
+        { t: "circle", cx: 55, cy: 155, r: 10, sw: 4 },
+        { t: "rect", x: 150, y: 145, w: 20, h: 20, sw: 4 },
+        { t: "path", d: "M255 140 L268 168 L242 168 Z", sw: 4 },
+
+        // Row3: büyük (tersleme geri)
+        { t: "circle", cx: 55, cy: 255, r: 20, sw: 4 },
+        { t: "rect", x: 140, y: 235, w: 40, h: 40, sw: 4 },
+      ],
+    },
+    options: [
+      opt([{ t: "path", d: "M50 20 L80 70 L20 70 Z", sw: 4 }]), // ✅ büyük üçgen (Row3 col3)
+      opt([{ t: "path", d: "M50 35 L65 65 L35 65 Z", sw: 4 }]), // küçük üçgen (tuzak)
+      opt([{ t: "rect", x: 30, y: 30, w: 40, h: 40, sw: 4 }]), // kare (yanlış tip)
+      opt([{ t: "circle", cx: 50, cy: 50, r: 20, sw: 4 }]), // daire (yanlış tip)
+      opt([]),
+    ],
+    correct: 0,
+  },
+
+  // 24) Advanced: Çizgi sayısı 1→2→3 + Yön satıra göre değişir (V/H/Diagonal)
+  {
+    id: "iq-mixed-24",
+    domain: "visual",
+    type: "visual-matrix-3x3",
+    prompt: "Which option completes the pattern?",
+    questionSvg: {
+      viewBox: "0 0 330 330",
+      elements: [
+        // grid
+        { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
+
+        // KURAL1: Sütunlar çizgi sayısını belirler: 1,2,3
+        // KURAL2: Satır yönü belirler: Row1=Vertical, Row2=Horizontal, Row3=Diagonal "\"
+
+        // Row1 vertical
+        { t: "line", x1: 55, y1: 25, x2: 55, y2: 95, sw: 5 },
+        { t: "line", x1: 145, y1: 25, x2: 145, y2: 95, sw: 5 },
+        { t: "line", x1: 165, y1: 25, x2: 165, y2: 95, sw: 5 },
+        { t: "line", x1: 235, y1: 25, x2: 235, y2: 95, sw: 5 },
+        { t: "line", x1: 255, y1: 25, x2: 255, y2: 95, sw: 5 },
+        { t: "line", x1: 275, y1: 25, x2: 275, y2: 95, sw: 5 },
+
+        // Row2 horizontal
+        { t: "line", x1: 25, y1: 155, x2: 95, y2: 155, sw: 5 },
+        { t: "line", x1: 125, y1: 145, x2: 195, y2: 145, sw: 5 },
+        { t: "line", x1: 125, y1: 165, x2: 195, y2: 165, sw: 5 },
+        { t: "line", x1: 225, y1: 140, x2: 295, y2: 140, sw: 5 },
+        { t: "line", x1: 225, y1: 155, x2: 295, y2: 155, sw: 5 },
+        { t: "line", x1: 225, y1: 170, x2: 295, y2: 170, sw: 5 },
+
+        // Row3 diagonal "\" (missing is 3 diagonals)
+        { t: "line", x1: 25, y1: 225, x2: 95, y2: 295, sw: 5 },
+        { t: "line", x1: 125, y1: 225, x2: 195, y2: 295, sw: 5 },
+        { t: "line", x1: 140, y1: 225, x2: 210, y2: 295, sw: 5 },
+      ],
+    },
+    options: [
+      opt([
+        { t: "line", x1: 20, y1: 20, x2: 80, y2: 80, sw: 5 },
+        { t: "line", x1: 30, y1: 20, x2: 90, y2: 80, sw: 5 },
+        { t: "line", x1: 40, y1: 20, x2: 100, y2: 80, sw: 5 },
+      ]), // ✅ 3 diagonal "\"
+      opt([
+        { t: "line", x1: 20, y1: 80, x2: 80, y2: 20, sw: 5 },
+        { t: "line", x1: 30, y1: 80, x2: 90, y2: 20, sw: 5 },
+        { t: "line", x1: 40, y1: 80, x2: 100, y2: 20, sw: 5 },
+      ]), // 3 diagonal "/" (tuzak)
+      opt([
+        { t: "line", x1: 20, y1: 20, x2: 80, y2: 80, sw: 5 },
+        { t: "line", x1: 35, y1: 20, x2: 95, y2: 80, sw: 5 },
+      ]), // 2 diagonal (eksik)
+      opt([{ t: "line", x1: 20, y1: 20, x2: 80, y2: 80, sw: 5 }]), // 1 diagonal
+      opt([]),
+    ],
+    correct: 0,
+  },
+
+  // 25) Advanced: AND (kesişim) + Konum kaydırma (satır aşağı: sağa kayar)
+  {
+    id: "iq-mixed-25",
+    domain: "visual",
+    type: "visual-matrix-3x3",
+    prompt: "Which option completes the pattern?",
+    questionSvg: {
+      viewBox: "0 0 330 330",
+      elements: [
+        // grid
+        { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
+        { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
+
+        // KURAL1: C = A ∩ B (ortak olan işaret kalır)
+        // KURAL2: Satır aşağı indikçe "işaret konumu" 1 adım sağa kayar (sol→orta→sağ)
+
+        // Row1: A=sol-kare, B=sol-kare + sağ-daire => Kesişim = sol-kare
+        { t: "rect", x: 25, y: 35, w: 30, h: 30, sw: 4 }, // A1
+        { t: "rect", x: 125, y: 35, w: 30, h: 30, sw: 4 }, // B1 ortak kare
+        { t: "circle", cx: 185, cy: 55, r: 12, sw: 4 },     // B1 ekstra
+        { t: "rect", x: 225, y: 35, w: 30, h: 30, sw: 4 },  // C1 (kesişim kare)
+
+        // Row2: kayma -> orta
+        { t: "rect", x: 35, y: 135, w: 30, h: 30, sw: 4 }, // A2 orta
+        { t: "rect", x: 135, y: 135, w: 30, h: 30, sw: 4 }, // B2 ortak
+        { t: "circle", cx: 125, cy: 155, r: 12, sw: 4 },     // B2 ekstra
+        { t: "rect", x: 235, y: 135, w: 30, h: 30, sw: 4 },  // C2 (kesişim)
+
+        // Row3: kayma -> sağ  (A3 sağ-kare, B3 sağ-kare + sol-daire => kesişim sağ-kare)
+        { t: "rect", x: 45, y: 235, w: 30, h: 30, sw: 4 }, // A3 daha sağa (kayma)
+        { t: "rect", x: 145, y: 235, w: 30, h: 30, sw: 4 }, // B3 ortak kare
+        { t: "circle", cx: 125, cy: 255, r: 12, sw: 4 },     // B3 ekstra
+      ],
+    },
+    options: [
+      opt([{ t: "rect", x: 55, y: 35, w: 30, h: 30, sw: 4 }]), // ✅ sağa kaymış kare
+      opt([{ t: "circle", cx: 50, cy: 50, r: 12, sw: 4 }]),
+      opt([
+        { t: "rect", x: 35, y: 35, w: 30, h: 30, sw: 4 },
+        { t: "circle", cx: 75, cy: 55, r: 12, sw: 4 },
+      ]),
+      opt([{ t: "rect", x: 25, y: 35, w: 30, h: 30, sw: 4 }]), // sol kare (tuzak)
+      opt([]),
+    ],
+    correct: 0,
+  },
 ];
