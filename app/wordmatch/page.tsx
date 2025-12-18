@@ -16,6 +16,7 @@ type Card = {
 };
 
 const BEST_KEY = "td_wordmatch_best_v1";
+const PAIRS_PER_GAME = 6; // istersen 8/10 yap
 
 function shuffle<T>(arr: T[]) {
   const a = [...arr];
@@ -41,13 +42,23 @@ export default function WordMatchPage() {
 
   const [windowSize, setWindowSize] = useState({ width: 0, height: 0 });
 
-  // window size for confetti
+  // confetti window size (SSR-safe)
   useEffect(() => {
+    if (typeof window === "undefined") return;
+
     const handleResize = () =>
       setWindowSize({ width: window.innerWidth, height: window.innerHeight });
+
     handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // load best score (SSR-safe)
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const b = Number(localStorage.getItem(BEST_KEY));
+    if (Number.isFinite(b)) setBest(b);
   }, []);
 
   // load from API
@@ -81,15 +92,18 @@ export default function WordMatchPage() {
         setLoading(false);
       }
     })();
-
-    const b = Number(localStorage.getItem(BEST_KEY));
-    if (Number.isFinite(b)) setBest(b);
   }, []);
 
   const start = () => {
-    if (pool.length < 12) return;
+    // ✅ min 6 yeter
+    if (pool.length < PAIRS_PER_GAME) {
+      setErrorMsg(
+        `Not enough words. Need at least ${PAIRS_PER_GAME} items, got ${pool.length}.`
+      );
+      return;
+    }
 
-    const pairs = shuffle(pool).slice(0, 6);
+    const pairs = shuffle(pool).slice(0, PAIRS_PER_GAME);
 
     const nextCards: Card[] = shuffle(
       pairs.flatMap((p, i) => {
@@ -127,18 +141,26 @@ export default function WordMatchPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loading, pool.length]);
 
-  const allDone = useMemo(() => matches === 6 && matches > 0, [matches]);
+  const allDone = useMemo(
+    () => matches === PAIRS_PER_GAME && matches > 0,
+    [matches]
+  );
 
   useEffect(() => {
     if (!allDone) return;
     const score = Math.max(0, 100 - moves * 5);
     if (score > best) {
       setBest(score);
-      localStorage.setItem(BEST_KEY, String(score));
+      if (typeof window !== "undefined") {
+        localStorage.setItem(BEST_KEY, String(score));
+      }
     }
   }, [allDone, moves, best]);
 
   const flip = (card: Card) => {
+    // ✅ oyun bitince tıklama yok
+    if (allDone) return;
+
     if (lock) return;
     if (card.flipped || card.matched) return;
 
@@ -154,12 +176,15 @@ export default function WordMatchPage() {
     setMoves((m) => m + 1);
     const second = { ...card, flipped: true };
 
-    const isMatch = first.pairKey === second.pairKey && first.kind !== second.kind;
+    const isMatch =
+      first.pairKey === second.pairKey && first.kind !== second.kind;
 
     if (isMatch) {
       setCards((prev) =>
         prev.map((c) =>
-          c.pairKey === second.pairKey ? { ...c, matched: true, flipped: true } : c
+          c.pairKey === second.pairKey
+            ? { ...c, matched: true, flipped: true }
+            : c
         )
       );
       setMatches((x) => x + 1);
@@ -171,7 +196,8 @@ export default function WordMatchPage() {
     setTimeout(() => {
       setCards((prev) =>
         prev.map((c) => {
-          if (c.id === first.id || c.id === second.id) return { ...c, flipped: false };
+          if (c.id === first.id || c.id === second.id)
+            return { ...c, flipped: false };
           return c;
         })
       );
@@ -227,7 +253,8 @@ export default function WordMatchPage() {
         <div className="flex flex-col sm:flex-row gap-2">
           <button
             onClick={start}
-            className="flex-1 py-3 rounded-2xl font-black bg-indigo-600 hover:bg-indigo-500"
+            className="flex-1 py-3 rounded-2xl font-black bg-indigo-600 hover:bg-indigo-500 disabled:opacity-60"
+            disabled={loading || pool.length < PAIRS_PER_GAME}
           >
             NEW BOARD
           </button>
@@ -241,7 +268,9 @@ export default function WordMatchPage() {
         </div>
 
         {loading ? (
-          <div className="text-center text-slate-400 font-bold py-10">Loading…</div>
+          <div className="text-center text-slate-400 font-bold py-10">
+            Loading…
+          </div>
         ) : errorMsg ? (
           <div className="p-6 rounded-2xl bg-red-500/10 border border-red-500/20 text-red-200 text-center">
             <div className="font-bold text-lg mb-2">Error</div>
@@ -251,7 +280,9 @@ export default function WordMatchPage() {
           <section className="rounded-3xl bg-white/5 border border-white/10 p-4 md:p-8">
             {allDone && (
               <div className="mb-6 rounded-2xl bg-emerald-500/20 border border-emerald-400/30 p-5 text-center">
-                <div className="font-black text-emerald-200 text-xl mb-1">🎉 Completed!</div>
+                <div className="font-black text-emerald-200 text-xl mb-1">
+                  🎉 Completed!
+                </div>
                 <div className="text-emerald-100 font-medium">
                   You matched all pairs in {moves} moves.
                 </div>
@@ -261,6 +292,7 @@ export default function WordMatchPage() {
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 md:gap-4">
               {cards.map((c) => {
                 const isFlipped = c.flipped || c.matched;
+                const isSelected = first?.id === c.id && !c.matched;
 
                 return (
                   <div
@@ -271,7 +303,7 @@ export default function WordMatchPage() {
                     <div
                       className={`relative h-full w-full transition-all duration-500 [transform-style:preserve-3d] shadow-xl rounded-2xl ${
                         isFlipped ? "[transform:rotateY(180deg)]" : ""
-                      }`}
+                      } ${isSelected ? "ring-2 ring-cyan-400/60" : ""}`}
                     >
                       {/* front */}
                       <div className="absolute inset-0 h-full w-full rounded-2xl bg-slate-800 border-2 border-slate-700 [backface-visibility:hidden] flex items-center justify-center hover:bg-slate-700">
@@ -299,7 +331,9 @@ export default function WordMatchPage() {
                         <div className="w-full h-full overflow-y-auto custom-scrollbar flex items-center justify-center">
                           <p
                             className={`font-medium leading-snug ${
-                              c.kind === "word" ? "text-lg text-white" : "text-xs text-slate-200"
+                              c.kind === "word"
+                                ? "text-lg text-white"
+                                : "text-xs text-slate-200"
                             }`}
                           >
                             {c.value}
