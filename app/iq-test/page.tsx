@@ -169,7 +169,7 @@ export default function IQTestPage() {
      // ... (scorePack hesaplama mantığın aynı kalıyor) ...
      return { /* ... */ };
   }, [answers, data, started, timeLeft]);
-
+}
   // ... (Geri kalan mmss fonksiyonun vs.) ...
 
   return (
