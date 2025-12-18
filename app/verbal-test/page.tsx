@@ -161,7 +161,7 @@ export default function VerbalTestPage() {
               </div>
               <div className="bg-white/5 p-4 rounded-2xl border border-white/5">
                 <p className="text-[10px] text-slate-500 font-bold uppercase mb-1">Time Spent</p>
-                <p className="text-2xl font-black">{mmss(15 * 60 - timeLeft)}</p>
+                <p className="text-2xl font-black">{mmss(20 * 60 - timeLeft)}</p>
               </div>
             </div>
 
