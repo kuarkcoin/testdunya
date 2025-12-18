@@ -4,8 +4,8 @@ import React, { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import ReactConfetti from 'react-confetti';
 
-import SvgRenderer, { SvgData } from '@/components/SvgRenderer';
-import { questions } from '@/data/questions';
+import SvgRenderer, { SvgData } from '../components/SvgRenderer';
+import { questions } from '../data/questions';
 
 // -------------------- TİP TANIMLAMALARI --------------------
 
