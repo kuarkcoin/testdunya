@@ -17,7 +17,6 @@ type IQQuestion =
       prompt: string;
       optionsText: string[];
       correct: number;
-      // explanation kaldırıldı
     }
   | {
       id: string;
@@ -124,7 +123,7 @@ export default function IQTestPage() {
   const prev = () => setIdx((p) => clamp(p - 1, 0, (data.length || 1) - 1));
   const finishNow = () => setFinished(true);
 
-  // ✅ Skoru answers.values yerine data üzerinden hesapla (sapma/çakışma olmasın)
+  // ✅ Skoru answers.values yerine data üzerinden hesapla
   const scorePack = useMemo(() => {
     const domainMax: Record<Domain, number> = { logic: 0, math: 0, visual: 0, attention: 0 };
     const domainGot: Record<Domain, number> = { logic: 0, math: 0, visual: 0, attention: 0 };
@@ -196,7 +195,12 @@ export default function IQTestPage() {
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-500/15 border border-indigo-400/20 text-indigo-200 text-sm font-bold">
             🧩 IQ Test (Hard)
           </div>
-          <h1 className="text-3xl md:text-5xl font-black tracking-tight">20 Questions • Mixed Domains</h1>
+
+          {/* ✅ ARTIK OTOMATİK */}
+          <h1 className="text-3xl md:text-5xl font-black tracking-tight">
+            {total} Questions • Mixed Domains
+          </h1>
+
           <p className="text-slate-400">Logic • Math • Visual • Attention (game-style scoring)</p>
         </header>
 
@@ -334,7 +338,7 @@ export default function IQTestPage() {
                       );
                     })
                   ) : (
-                    q.options.map((gridOpt, i) => {
+                    (q as any).options.map((gridOpt: string[], i: number) => {
                       const key = q.id || String(idx);
                       const picked = answers[key]?.selected === i;
                       return (
@@ -354,8 +358,6 @@ export default function IQTestPage() {
                     })
                   )}
                 </div>
-
-                {/* ✅ explanation kaldırıldı */}
 
                 <div className="flex items-center justify-between pt-4 border-t border-white/5 mt-6">
                   <button
