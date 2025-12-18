@@ -503,6 +503,35 @@ export default function HomePage() {
               </div>
             </div>
           </Link>
+{/* 8. NUMBER HUNTER (GLOBAL MATH GAME) */}
+<Link
+  href="/number-hunter"
+  className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-cyan-600 to-blue-700 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
+>
+  {/* Hareketli Arka Plan Işığı */}
+  <div className="absolute -bottom-2 -left-2 h-24 w-24 rounded-full bg-white/10 blur-2xl transition-all group-hover:bg-cyan-400/20"></div>
+
+  <div className="relative z-10 flex flex-col justify-between h-full">
+    <div>
+      <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-cyan-100 backdrop-blur-sm">
+        🌐 Global <span className="opacity-80">• Multi-Language</span>
+      </div>
+      <h3 className="mb-2 text-2xl font-black tracking-tight">Number Hunter</h3>
+      <p className="text-cyan-100 opacity-90 text-sm">Global math speed challenge. Reach the target!</p>
+    </div>
+
+    <div className="mt-6 flex items-center gap-3">
+      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-blue-700 shadow-lg transition-transform group-hover:scale-110">
+        🎯
+      </div>
+      <div className="flex flex-col">
+        <span className="font-bold text-sm text-white">Play Global →</span>
+        <span className="text-[10px] text-cyan-200 font-medium">Leaderboard Active</span>
+      </div>
+    </div>
+  </div>
+</Link>
+
 
         </section>
         {/* --- MEB CURRICULUM (İLKÖĞRETİM) --- */}
