@@ -380,4 +380,3 @@ export const questions5: Question5[] = [
   }
 ];
   
-];
