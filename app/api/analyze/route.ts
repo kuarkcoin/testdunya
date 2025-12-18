@@ -1,10 +1,9 @@
-import { NextResponse } from 'next/server';
+import { NextResponse } from "next/server";
 import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from "@google/generative-ai";
 
 export const runtime = "nodejs";
-// Writing analizi uzun sürer, Vercel süresini 60 saniyeye çıkarıyoruz
-export const maxDuration = 60; 
-export const dynamic = 'force-dynamic';
+export const maxDuration = 60;
+export const dynamic = "force-dynamic";
 
 // --- API KEY YÖNETİMİ ---
 function getApiKeys(): string[] {
@@ -17,7 +16,6 @@ function getApiKeys(): string[] {
   ].filter((k): k is string => Boolean(k));
 }
 
-// Hata Toleransı (Failover) Fonksiyonu
 async function withFailover<T>(fn: (key: string) => Promise<T>) {
   const keys = getApiKeys();
   if (keys.length === 0) throw new Error("No API Keys found in Vercel settings.");
@@ -30,51 +28,51 @@ async function withFailover<T>(fn: (key: string) => Promise<T>) {
     try {
       return await fn(key);
     } catch (e: any) {
-      const msg = String(e?.message || e);
       lastErr = e;
+      const msg = String(e?.message || e);
       console.warn(`Key ending in ...${key.slice(-4)} failed: ${msg}`);
 
-      // Sadece Kota (429) veya Sunucu (503) hatalarında diğer anahtara geç
       if (
-        msg.includes("429") || 
-        msg.toLowerCase().includes("quota") || 
-        msg.toLowerCase().includes("too many requests") || 
+        msg.includes("429") ||
+        msg.toLowerCase().includes("quota") ||
+        msg.toLowerCase().includes("too many requests") ||
         msg.includes("503")
-      ) {
-        continue;
-      }
-      throw e; // Diğer hatalarda (örn: Prompt hatası) direkt dur
+      ) continue;
+
+      throw e;
     }
   }
   throw lastErr ?? new Error("All API keys failed.");
 }
 
-// --- YARDIMCI FONKSİYONLAR ---
 function stripCodeFences(s: string) {
-  return String(s || "").replace(/^\s*```(?:json)?\s*/i, "").replace(/\s*```\s*$/i, "").trim();
+  return String(s || "")
+    .replace(/^\s*```(?:json)?\s*/i, "")
+    .replace(/\s*```\s*$/i, "")
+    .trim();
 }
 
 function safeJsonParse(s: string) {
   try { return JSON.parse(s); } catch { return null; }
 }
 
-// --- ANA FONKSİYON ---
+// --- ANA ---
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { essay, taskType } = body;
+
+    // ✅ Artık question/context alıyoruz
+    const { essay, taskType, contextData, question, title } = body;
 
     if (!essay || !taskType) {
       return NextResponse.json({ error: "Essay or Task Type missing" }, { status: 400 });
     }
 
-    // withFailover içine alarak 5 anahtarı sırayla deniyoruz
     const result = await withFailover(async (apiKey) => {
       const genAI = new GoogleGenerativeAI(apiKey);
-      
-      // Writing için 'gemini-1.5-flash' hem hızlı hem de geniş kotalıdır.
+
       const model = genAI.getGenerativeModel({
-        model: "gemini-2.5-flash",
+        model: "gemini-2.5-flash", // dokümanda bu isim bu şekilde geçiyor 1
         safetySettings: [
           { category: HarmCategory.HARM_CATEGORY_HARASSMENT, threshold: HarmBlockThreshold.BLOCK_NONE },
           { category: HarmCategory.HARM_CATEGORY_HATE_SPEECH, threshold: HarmBlockThreshold.BLOCK_NONE },
@@ -83,24 +81,37 @@ export async function POST(request: Request) {
         ],
         generationConfig: {
           responseMimeType: "application/json",
-          temperature: 0.3, // Analiz tutarlı olsun diye düşük sıcaklık
-        }
+          temperature: 0.3,
+        },
       });
 
+      // ✅ Model artık hangi soruyu değerlendirdiğini BİLİYOR
       const prompt = `
-        Act as a strict IELTS Examiner. Score this essay based on IELTS criteria.
-        
-        TASK TYPE: ${taskType}
-        ESSAY:
-        "${essay}"
+You are a strict IELTS Writing examiner.
 
-        OUTPUT JSON FORMAT ONLY:
-        {
-          "score": (number 0-9),
-          "feedback": (string - detailed feedback on Task Response, Coherence, Lexical, Grammar),
-          "corrections": (array of strings - list specific sentences corrected)
-        }
-      `;
+TASK TYPE: ${taskType}
+TASK TITLE: ${title ?? "N/A"}
+TASK QUESTION:
+${question ?? "(not provided)"}
+
+TASK CONTEXT / DATA (must be used):
+${contextData ?? "(not provided)"}
+
+CANDIDATE ESSAY:
+${essay}
+
+Return ONLY valid JSON in this exact shape:
+{
+  "score": 0,
+  "feedback": "",
+  "corrections": []
+}
+
+Rules:
+- Do NOT invent a different question (e.g., do not assume "Global Water" unless it is the provided question).
+- Feedback must mention Task Response, Coherence & Cohesion, Lexical Resource, Grammar.
+- Corrections must be specific sentence-level fixes (strings).
+      `.trim();
 
       return await model.generateContent(prompt);
     });
@@ -110,26 +121,32 @@ export async function POST(request: Request) {
     const parsed = safeJsonParse(cleaned);
 
     if (!parsed) {
-      return NextResponse.json({ error: "Failed to parse AI response" }, { status: 500 });
+      return NextResponse.json(
+        { error: "Failed to parse AI response", raw: cleaned.slice(0, 500) },
+        { status: 500 }
+      );
     }
 
-    return NextResponse.json(parsed);
+    // ✅ Frontend patlamasın diye shape guard
+    const safe = {
+      score: typeof parsed.score === "number" ? parsed.score : 0,
+      feedback: typeof parsed.feedback === "string" ? parsed.feedback : "No feedback returned.",
+      corrections: Array.isArray(parsed.corrections) ? parsed.corrections : [],
+    };
+
+    return NextResponse.json(safe);
 
   } catch (error: any) {
     console.error("WRITING API ERROR:", error);
-    
-    // Kota hatasıysa kullanıcıya beklemesini söyle
+
     const msg = String(error?.message || error);
-    if (msg.includes("429") || msg.includes("quota")) {
+    if (msg.includes("429") || msg.toLowerCase().includes("quota")) {
       return NextResponse.json(
-        { error: "System is busy (Rate Limit). Please try again in 30 seconds." }, 
+        { error: "System is busy (Rate Limit). Please try again in 30 seconds." },
         { status: 429 }
       );
     }
 
-    return NextResponse.json(
-      { error: "Analysis failed. Please try again." }, 
-      { status: 500 }
-    );
+    return NextResponse.json({ error: "Analysis failed. Please try again." }, { status: 500 });
   }
 }
