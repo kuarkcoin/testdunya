@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState, useRef } from 'react';
 import Link from 'next/link';
 import ReactConfetti from 'react-confetti';
 
@@ -116,15 +116,23 @@ export default function IQTestPage() {
   const [started, setStarted] = useState(false);
   const [finished, setFinished] = useState(false);
 
+  // Soruya odaklanmak için Ref
+  const questionAreaRef = useRef<HTMLDivElement>(null);
+
   const total = data.length || 20;
   const q = data[idx];
 
   const { width, height } = useWindowSize();
 
-  // ✅ Soru değiştiğinde sayfayı en üste kaydırır
+  // ✅ Soru değiştiğinde tam olarak soru alanına (bir miktar payla) kaydırır
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, [idx]);
+    if (!finished && questionAreaRef.current) {
+      const yOffset = -80; 
+      const element = questionAreaRef.current;
+      const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  }, [idx, finished]);
 
   // Zaman sayacı
   useEffect(() => {
@@ -177,10 +185,8 @@ export default function IQTestPage() {
     for (let i = 0; i < data.length; i++) {
       const qq = data[i];
       domainMax[qq.domain] += 1;
-
       const key = (qq as any)?.id ? String((qq as any).id) : String(i);
       const a = answers[key];
-
       const isAdv = i >= advStartIndex;
       const w = isAdv ? W_ADV : W_BASE;
       weightedTotal += w;
@@ -200,7 +206,6 @@ export default function IQTestPage() {
     const totalQ = data.length || 20;
     const acc = totalQ > 0 ? totalCorrect / totalQ : 0;
     const wAcc = weightedTotal > 0 ? weightedCorrect / weightedTotal : 0;
-
     const timeRatio = started ? clamp(timeLeft / TOTAL_TIME, 0, 1) : 0;
     const timeBonus = Math.pow(timeRatio, 0.65);
 
@@ -331,7 +336,8 @@ export default function IQTestPage() {
               </div>
 
               {q ? (
-                <div className="space-y-6">
+                /* ✅ Soru Odak Ref'i Buraya Bağlandı */
+                <div ref={questionAreaRef} className="space-y-6">
                   <div className="text-lg md:text-xl font-black text-white">{q.prompt}</div>
                   <div className="flex justify-center">
                     {'questionSvg' in q ? (
