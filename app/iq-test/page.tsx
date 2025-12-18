@@ -129,7 +129,13 @@ export default function IQTestPage() {
   const q = data[idx];
 
   const { width, height } = useWindowSize();
-  
+
+  // ✅ YENİ EKLEME: Soru değiştiğinde (idx değiştiğinde) sayfayı en üste kaydırır
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [idx]);
+
+  // Mevcut zaman sayacı efektin
   useEffect(() => {
     if (!started || finished) return;
     if (timeLeft <= 0) {
@@ -140,21 +146,79 @@ export default function IQTestPage() {
     return () => clearInterval(t);
   }, [started, finished, timeLeft]);
 
+  // ... (answeredCount ve selectAnswer fonksiyonların aynı kalıyor) ...
   const answeredCount = useMemo(() => Object.values(answers).filter((a) => a.selected !== null).length, [answers]);
 
   const selectAnswer = (choiceIndex: number) => {
     if (!q || finished || timeLeft <= 0) return;
     setStarted(true);
-
     const answerKey = (q as any)?.id ? String((q as any).id) : String(idx);
     const correctIndex = Number((q as any).correct);
     const isCorrect = choiceIndex === correctIndex;
-
     setAnswers((prev) => ({
       ...prev,
       [answerKey]: { selected: choiceIndex, correct: isCorrect },
     }));
   };
+
+  const next = () => setIdx((p) => clamp(p + 1, 0, (data.length || 1) - 1));
+  const prev = () => setIdx((p) => clamp(p - 1, 0, (data.length || 1) - 1));
+  const finishNow = () => setFinished(true);
+
+  const scorePack = useMemo(() => {
+     // ... (scorePack hesaplama mantığın aynı kalıyor) ...
+     return { /* ... */ };
+  }, [answers, data, started, timeLeft]);
+
+  // ... (Geri kalan mmss fonksiyonun vs.) ...
+
+  return (
+    <>
+      {/* ... (Confetti kısmı) ... */}
+
+      <main className="min-h-screen bg-slate-950 text-white px-4 py-10">
+        <div className="max-w-5xl mx-auto space-y-6">
+          
+          {/* Header ve Navigasyon Üstü Kısmı */}
+          <div className="flex items-center justify-between gap-3">
+             {/* ... Home butonu ve Zamanlayıcı kutuların ... */}
+          </div>
+
+          <header className="text-center space-y-2">
+            {/* ... Başlıkların ... */}
+          </header>
+
+          {/* ✅ YENİ EKLEME: Progress Bar (Sadece test bitmediyse görünür) */}
+          {!finished && (
+            <div className="max-w-5xl mx-auto mb-4">
+              <div className="w-full h-1.5 bg-white/5 rounded-full overflow-hidden">
+                <div 
+                  className="h-full bg-indigo-500 transition-all duration-500 ease-out" 
+                  style={{ width: `${((idx + 1) / total) * 100}%` }}
+                />
+              </div>
+              <div className="flex justify-between mt-2 px-1">
+                <span className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Progress</span>
+                <span className="text-[10px] text-indigo-400 font-bold tracking-widest">%{Math.round(((idx + 1) / total) * 100)}</span>
+              </div>
+            </div>
+          )}
+
+          {/* Mevcut finished kontrolün burdan devam ediyor */}
+          {finished ? (
+            <section className="...">
+               {/* Sonuç Ekranı */}
+            </section>
+          ) : (
+            <section className="...">
+               {/* Soru Ekranı */}
+            </section>
+          )}
+        </div>
+      </main>
+    </>
+  );
+}
 
   const next = () => setIdx((p) => clamp(p + 1, 0, (data.length || 1) - 1));
   const prev = () => setIdx((p) => clamp(p - 1, 0, (data.length || 1) - 1));
