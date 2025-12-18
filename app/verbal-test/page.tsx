@@ -11,7 +11,7 @@ type AnswerState = { selected: number | null; correct: boolean | null };
 export default function VerbalTestPage() {
   const [idx, setIdx] = useState(0);
   const [answers, setAnswers] = useState<Record<number, AnswerState>>({});
-  const [timeLeft, setTimeLeft] = useState(15 * 60); // 15 Minutes
+  const [timeLeft, setTimeLeft] = useState(20 * 60); // 15 Minutes
   const [started, setStarted] = useState(false);
   const [finished, setFinished] = useState(false);
   
