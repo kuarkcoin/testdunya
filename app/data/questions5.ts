@@ -378,5 +378,5 @@ export const questions5: Question5[] = [
     correct: 2,
     explanation: "Su içme ihtiyacı susamış (thirsty) olmayı gerektirir."
   }
-];
+]; 
   
