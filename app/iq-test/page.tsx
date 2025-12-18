@@ -131,6 +131,8 @@ export default function IQTestPage() {
   const { width, height } = useWindowSize();
 
   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}, [idx]);
     if (!started || finished) return;
     if (timeLeft <= 0) {
       setFinished(true);
