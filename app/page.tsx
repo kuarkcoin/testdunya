@@ -5,8 +5,6 @@ import Link from 'next/link';
 import SvgRenderer, { SvgData } from '../components/SvgRenderer';
 import { questions } from '../data/questions';
 
-// -------------------- TİP TANIMLAMALARI --------------------
-
 type Domain = 'logic' | 'math' | 'visual' | 'attention';
 
 type IQQuestion =
@@ -45,26 +43,19 @@ type IQQuestion =
       correct: number;
     };
 
-type AnswerState = {
-  selected: number | null;
-  correct: boolean | null;
-};
-
-// -------------------- YARDIMCI --------------------
+type AnswerState = { selected: number | null; correct: boolean | null };
 
 function clamp(n: number, a: number, b: number) {
   return Math.max(a, Math.min(b, n));
 }
 
-// Normal CDF yaklaşımı (Abramowitz–Stegun / hızlı approx)
 function normCdf(z: number) {
   const t = 1 / (1 + 0.2316419 * Math.abs(z));
   const d = 0.3989423 * Math.exp((-z * z) / 2);
   let p =
     d *
     t *
-    (0.3193815 +
-      t * (-0.3565638 + t * (1.781478 + t * (-1.821256 + t * 1.330274))));
+    (0.3193815 + t * (-0.3565638 + t * (1.781478 + t * (-1.821256 + t * 1.330274))));
   if (z > 0) p = 1 - p;
   return p;
 }
@@ -86,22 +77,19 @@ function CellGrid({ grid }: { grid: string[] }) {
   );
 }
 
-// Badge sistemi (percentile yok)
 function getBadge(iq: number) {
   if (iq >= 155)
-    return { label: 'LEGEND', emoji: '🏆', style: 'bg-amber-500/15 border-amber-400/25 text-amber-200' };
+    return { key: 'LEGEND', label: 'LEGEND', emoji: '🏆', style: 'bg-amber-500/15 border-amber-400/25 text-amber-200' };
   if (iq >= 145)
-    return { label: 'ELITE', emoji: '🔥', style: 'bg-emerald-500/15 border-emerald-400/25 text-emerald-200' };
+    return { key: 'ELITE', label: 'ELITE', emoji: '🔥', style: 'bg-emerald-500/15 border-emerald-400/25 text-emerald-200' };
   if (iq >= 130)
-    return { label: 'ADVANCED', emoji: '⚡', style: 'bg-indigo-500/15 border-indigo-400/25 text-indigo-200' };
+    return { key: 'ADVANCED', label: 'ADVANCED', emoji: '⚡', style: 'bg-indigo-500/15 border-indigo-400/25 text-indigo-200' };
   if (iq >= 115)
-    return { label: 'SOLID', emoji: '✅', style: 'bg-sky-500/15 border-sky-400/25 text-sky-200' };
+    return { key: 'SOLID', label: 'SOLID', emoji: '✅', style: 'bg-sky-500/15 border-sky-400/25 text-sky-200' };
   if (iq >= 95)
-    return { label: 'WARMUP', emoji: '🧩', style: 'bg-slate-500/15 border-slate-400/25 text-slate-200' };
-  return { label: 'RETRY', emoji: '🔁', style: 'bg-rose-500/15 border-rose-400/25 text-rose-200' };
+    return { key: 'WARMUP', label: 'WARMUP', emoji: '🧩', style: 'bg-slate-500/15 border-slate-400/25 text-slate-200' };
+  return { key: 'RETRY', label: 'RETRY', emoji: '🔁', style: 'bg-rose-500/15 border-rose-400/25 text-rose-200' };
 }
-
-// -------------------- ANA SAYFA --------------------
 
 export default function IQTestPage() {
   const data = questions as unknown as IQQuestion[];
@@ -127,9 +115,7 @@ export default function IQTestPage() {
     return () => clearInterval(t);
   }, [started, finished, timeLeft]);
 
-  const answeredCount = useMemo(() => {
-    return Object.values(answers).filter((a) => a.selected !== null).length;
-  }, [answers]);
+  const answeredCount = useMemo(() => Object.values(answers).filter((a) => a.selected !== null).length, [answers]);
 
   const selectAnswer = (choiceIndex: number) => {
     if (!q || finished || timeLeft <= 0) return;
@@ -149,7 +135,6 @@ export default function IQTestPage() {
   const prev = () => setIdx((p) => clamp(p - 1, 0, (data.length || 1) - 1));
   const finishNow = () => setFinished(true);
 
-  // ✅ Normal dağılıma yakın skor + Elit badge + Advanced ağırlık + hız bonusu
   const scorePack = useMemo(() => {
     const domainMax: Record<Domain, number> = { logic: 0, math: 0, visual: 0, attention: 0 };
     const domainGot: Record<Domain, number> = { logic: 0, math: 0, visual: 0, attention: 0 };
@@ -157,15 +142,12 @@ export default function IQTestPage() {
     let totalCorrect = 0;
     let totalAnswered = 0;
 
-    // Weighted doğrular (Advanced Raven ağırlığı)
     let weightedCorrect = 0;
     let weightedTotal = 0;
 
-    // Basit varsayım: son 12 soru advanced
     const ADV_COUNT = 12;
     const advStartIndex = Math.max(0, data.length - ADV_COUNT);
 
-    // weights
     const W_BASE = 1.0;
     const W_ADV = 1.35;
 
@@ -190,54 +172,32 @@ export default function IQTestPage() {
     }
 
     const totalQ = data.length || 20;
-
-    // Accuracy (düz)
     const acc = totalQ > 0 ? totalCorrect / totalQ : 0;
 
-    // Weighted accuracy (asıl skor bunu kullanır)
     const wAcc = weightedTotal > 0 ? weightedCorrect / weightedTotal : 0;
 
-    // Hız bonusu (0..1) — bitirmeye yakın daha az etkili
     const timeRatio = started ? clamp(timeLeft / TOTAL_TIME, 0, 1) : 0;
-    const timeBonus = Math.pow(timeRatio, 0.65); // yumuşatılmış
+    const timeBonus = Math.pow(timeRatio, 0.65);
 
-    // --- Normal dağılım kalibrasyonu ---
-    // Bu değerler "oyun içi" dağılımı doğal hissettirmek için:
-    // ortalama performans ~ 0.55 civarı varsayımı, sd ~ 0.18
     const MU = 0.55;
     const SIGMA = 0.18;
 
-    // wAcc + küçük hız katkısı (maks ~ +0.05)
     const perf = clamp(wAcc + 0.05 * timeBonus, 0, 1);
-
-    // z-score
     const z = (perf - MU) / SIGMA;
 
-    // IQ scale: mean 100, sd 15
     let iq = Math.round(100 + z * 15);
-
-    // "Hard test" olduğu için tabanı biraz yukarı çek (çok az)
-    // (Sınavı zor yaptığın için kullanıcı deneyimi daha tatmin edici)
     iq += 3;
 
-    // Tam doğru bonusu (elit hissi)
     if (totalCorrect === totalQ && totalQ >= 20) iq += 6;
 
-    // Clamp
     const gameIQ = clamp(iq, 70, 160);
-
-    // Badge
     const badge = getBadge(gameIQ);
 
-    // Ek metrikler
     const usedSeconds = clamp(TOTAL_TIME - timeLeft, 0, TOTAL_TIME);
     const accuracyPct = Math.round(acc * 100);
     const weightedPct = Math.round(wAcc * 100);
-
-    // “Skor güveni” (kaç soru cevaplandıysa)
     const completionPct = Math.round((totalAnswered / totalQ) * 100);
 
-    // İstersen içerde dursun diye: “perfCDF” (UI’da göstermiyoruz, percentile yok)
     const perfCdf = normCdf(z);
 
     return {
@@ -253,12 +213,28 @@ export default function IQTestPage() {
       completionPct,
       usedSeconds,
       timeLeft,
-      // debug/internal (gösterme):
       _perf: perf,
       _z: z,
       _cdf: perfCdf,
     };
   }, [answers, data, started, timeLeft]);
+
+  // ✅ Test bittiğinde sonucu localStorage'a kaydet
+  useEffect(() => {
+    if (!finished) return;
+    try {
+      const payload = {
+        ts: Date.now(),
+        iq: scorePack.gameIQ,
+        badge: scorePack.badge.key,
+        correct: scorePack.totalCorrect,
+        total: scorePack.totalQ,
+        accuracyPct: scorePack.accuracyPct,
+        usedSeconds: scorePack.usedSeconds,
+      };
+      localStorage.setItem('iq_last_result', JSON.stringify(payload));
+    } catch {}
+  }, [finished, scorePack.gameIQ, scorePack.badge.key, scorePack.totalCorrect, scorePack.totalQ, scorePack.accuracyPct, scorePack.usedSeconds]);
 
   const mmss = (s: number) => {
     const m = Math.floor(s / 60);
@@ -300,7 +276,7 @@ export default function IQTestPage() {
             🧩 IQ Test (Hard)
           </div>
           <h1 className="text-3xl md:text-5xl font-black tracking-tight">{total} Questions • Mixed Domains</h1>
-          <p className="text-slate-400">Logic • Math • Visual • Attention (normal-distribution scoring)</p>
+          <p className="text-slate-400">Logic • Math • Visual • Attention</p>
         </header>
 
         {finished ? (
@@ -325,53 +301,8 @@ export default function IQTestPage() {
               </div>
 
               <div className="text-sm text-slate-400">
-                Accuracy: <span className="font-black text-white">{scorePack.accuracyPct}%</span> • Weighted:{' '}
-                <span className="font-black text-white">{scorePack.weightedPct}%</span> • Answered:{' '}
-                <span className="font-black text-white">{scorePack.totalAnswered}</span> • Time used:{' '}
+                Accuracy: <span className="font-black text-white">{scorePack.accuracyPct}%</span> • Time used:{' '}
                 <span className="font-black text-white">{mmss(scorePack.usedSeconds)}</span>
-              </div>
-
-              <div className="text-xs text-slate-500">
-                Scoring uses a normal-distribution mapping (mean≈100, sd≈15) with advanced-weight + small speed bonus.
-              </div>
-            </div>
-
-            <div className="grid md:grid-cols-4 gap-3">
-              {(['logic', 'math', 'visual', 'attention'] as Domain[]).map((d) => {
-                const got = scorePack.domainGot[d];
-                const mx = scorePack.domainMax[d] || 1;
-                const pct = mx > 0 ? Math.round((got / mx) * 100) : 0;
-                return (
-                  <div key={d} className="rounded-2xl bg-slate-900/50 border border-white/10 p-4">
-                    <div className="text-xs uppercase tracking-widest text-slate-400 font-bold">{d}</div>
-                    <div className="text-2xl font-black text-white mt-1">
-                      {got}/{mx}
-                    </div>
-                    <div className="text-sm text-slate-300">{pct}%</div>
-                  </div>
-                );
-              })}
-            </div>
-
-            <div className="rounded-2xl bg-slate-900/40 border border-white/10 p-4">
-              <div className="text-xs uppercase tracking-widest text-slate-400 font-black mb-2">Badges Guide</div>
-              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-2 text-sm">
-                <div className="rounded-xl bg-white/5 border border-white/10 p-3">
-                  <div className="font-black">✅ SOLID</div>
-                  <div className="text-slate-400">115–129</div>
-                </div>
-                <div className="rounded-xl bg-white/5 border border-white/10 p-3">
-                  <div className="font-black">⚡ ADVANCED</div>
-                  <div className="text-slate-400">130–144</div>
-                </div>
-                <div className="rounded-xl bg-white/5 border border-white/10 p-3">
-                  <div className="font-black">🔥 ELITE</div>
-                  <div className="text-slate-400">145–154</div>
-                </div>
-                <div className="rounded-xl bg-white/5 border border-white/10 p-3">
-                  <div className="font-black">🏆 LEGEND</div>
-                  <div className="text-slate-400">155–160</div>
-                </div>
               </div>
             </div>
 
@@ -421,16 +352,12 @@ export default function IQTestPage() {
                     <div className="w-64 h-64 bg-white rounded-xl border-4 border-slate-700 shadow-2xl overflow-hidden text-slate-900 transition-transform hover:scale-[1.02]">
                       <SvgRenderer data={q.questionSvg} />
                     </div>
-                  ) : 'grid' in q && q.grid ? (
-                    <CellGrid grid={q.grid} />
+                  ) : 'grid' in q && (q as any).grid ? (
+                    <CellGrid grid={(q as any).grid} />
                   ) : null}
                 </div>
 
-                <div
-                  className={`grid gap-3 ${
-                    'questionSvg' in q ? 'grid-cols-2 sm:grid-cols-3 md:grid-cols-5' : 'grid-cols-1 md:grid-cols-2'
-                  }`}
-                >
+                <div className={`grid gap-3 ${'questionSvg' in q ? 'grid-cols-2 sm:grid-cols-3 md:grid-cols-5' : 'grid-cols-1 md:grid-cols-2'}`}>
                   {'optionsText' in q ? (
                     q.optionsText.map((opt, i) => {
                       const key = q.id || String(idx);
@@ -473,7 +400,7 @@ export default function IQTestPage() {
                       );
                     })
                   ) : (
-                    q.options.map((gridOpt, i) => {
+                    (q as any).options.map((gridOpt: any, i: number) => {
                       const key = q.id || String(idx);
                       const picked = answers[key]?.selected === i;
                       return (
