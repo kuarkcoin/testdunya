@@ -3,23 +3,20 @@ import { MetadataRoute } from 'next';
 const BASE_URL = 'https://testdunya.net';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  // 1. Ana Statik Sayfalar ve Oyunlar
+  
   const staticRoutes = [
     '',
     '/mistakes',
-    '/iletisim',
-    '/gizlilik',
-    '/5-sinif',           // Yeni kategori
-    '/iq-test',           // Yeni oyun
-    '/verbal-test',       // Yeni oyun
-    '/ielts/calculator',
-    '/ielts/speaking',
-    '/ielts/listening',
+    '/5-sinif',
+    '/iq-test',
+    '/verbal-test',
     '/speedrun',
     '/flashcards',
     '/kelime-avcisi',
     '/wordle',
     '/wordmatch',
+    '/ielts/calculator',
+    '/ielts/speaking',
   ].map((route) => ({
     url: `${BASE_URL}${route}`,
     lastModified: new Date(),
@@ -27,48 +24,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: route === '' ? 1.0 : 0.8,
   }));
 
-  // 2. IELTS ve Özel Seviye Testleri
-  const specializedTests = [
-    'ielts-level-test-1', // Placement Test
-    'ielts-reading',
-    'ielts-listening',
-    'ielts-listening-2',
-    'ielts-listening-3',
-    'ielts-listening-4',
-    'ielts-listening-5',
-    'ielts-listening-7',
-    'ielts-writing',
-    'ielts-vocab',
-    'ielts-grammar'
-  ].map((id) => ({
-    url: `${BASE_URL}/test/${id}`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly' as const,
-    priority: 0.9,
-  }));
-
-  // 3. Genel Sınav Konfigürasyonu (Dinamik Üretim)
-  const examConfig = [
-    { prefix: 'yks-sozel-deneme', count: 30 },
-    { prefix: 'kpss-sozel', count: 21 },
-    { prefix: 'tus-deneme', count: 35 },
-    { prefix: 'dus-deneme', count: 17 },
-    { prefix: '5-sinif-matematik', count: 10 }, // Örnek branşlar
-    { prefix: '5-sinif-turkce', count: 10 },
+  // Dinamik Konfigürasyon
+  const dynamicConfig = [
+    { prefix: 'ielts-level-test', count: 1, priority: 1.0 },
+    { prefix: 'yks-sozel-deneme', count: 30, priority: 0.7 },
+    { prefix: 'kpss-sozel', count: 21, priority: 0.7 },
+    { prefix: 'tus-deneme', count: 35, priority: 0.6 },
+    { prefix: 'dus-deneme', count: 17, priority: 0.6 },
+    { prefix: '5-sinif-matematik', count: 10, priority: 0.8 }, // 5. Sınıf Branşları
+    { prefix: '5-sinif-turkce', count: 10, priority: 0.8 },
   ];
 
-  let otherTestRoutes: MetadataRoute.Sitemap = [];
+  let testRoutes: MetadataRoute.Sitemap = [];
 
-  examConfig.forEach((exam) => {
+  dynamicConfig.forEach((exam) => {
     for (let i = 1; i <= exam.count; i++) {
-      otherTestRoutes.push({
+      testRoutes.push({
         url: `${BASE_URL}/test/${exam.prefix}-${i}`,
         lastModified: new Date(),
-        changeFrequency: 'monthly' as const,
-        priority: 0.6, 
+        changeFrequency: 'weekly' as const,
+        priority: exam.priority,
       });
     }
   });
 
-  return [...staticRoutes, ...specializedTests, ...otherTestRoutes];
+  return [...staticRoutes, ...testRoutes];
 }
