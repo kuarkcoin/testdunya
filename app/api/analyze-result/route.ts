@@ -47,7 +47,7 @@ export async function POST(request: Request) {
 
     const result = await withFailover(async (apiKey) => {
       const genAI = new GoogleGenerativeAI(apiKey);
-      const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+      const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
       const prompt = `
         GÖREV: 5. sınıf öğrencisi için bir sınav sonuç analisti ve rehber öğretmen ol.
