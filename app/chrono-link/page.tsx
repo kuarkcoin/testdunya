@@ -15,6 +15,7 @@ type NodeItem = {
   status: NodeStatus;
 };
 
+// ✅ Tek AudioContext (performans + mobil uyum)
 function useBeepSfx() {
   const ctxRef = useRef<AudioContext | null>(null);
 
@@ -30,6 +31,8 @@ function useBeepSfx() {
   const play = (type: SoundType) => {
     const ctx = ensureCtx();
     if (!ctx) return;
+
+    // iOS/Chrome policy: user gesture sonrası resume gerekir
     if (ctx.state === 'suspended') ctx.resume().catch(() => {});
 
     const osc = ctx.createOscillator();
@@ -56,8 +59,16 @@ function useBeepSfx() {
       gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.28);
       osc.stop(ctx.currentTime + 0.3);
     }
+
     osc.start();
   };
+
+  useEffect(() => {
+    return () => {
+      ctxRef.current?.close().catch(() => {});
+      ctxRef.current = null;
+    };
+  }, []);
 
   return play;
 }
@@ -71,10 +82,10 @@ export default function ChronoLinkMaster() {
   const [nextExpected, setNextExpected] = useState(1);
   const [combo, setCombo] = useState(0);
   const [bestScore, setBestScore] = useState(0);
-  const [isShaking, setIsShaking] = useState(false); // Yanlış tık sarsıntısı
 
   const playSound = useBeepSfx();
 
+  // ✅ Dinamik Grid: 8+ level => 6x6
   const currentGridSize = level >= 8 ? 36 : 25;
   const currentGridCols = level >= 8 ? 6 : 5;
 
@@ -82,8 +93,13 @@ export default function ChronoLinkMaster() {
   const nodesRef = useRef<NodeItem[]>([]);
   const levelRef = useRef<number>(1);
 
-  useEffect(() => { nodesRef.current = nodes; }, [nodes]);
-  useEffect(() => { levelRef.current = level; }, [level]);
+  useEffect(() => {
+    nodesRef.current = nodes;
+  }, [nodes]);
+
+  useEffect(() => {
+    levelRef.current = level;
+  }, [level]);
 
   const clearTimer = useCallback(() => {
     if (timeoutRef.current) {
@@ -97,78 +113,102 @@ export default function ChronoLinkMaster() {
     if (saved) setBestScore(parseInt(saved, 10));
   }, []);
 
-  const generateLevel = useCallback((requestedNodeCount: number, currentLevel: number) => {
-    clearTimer();
-    const size = currentLevel >= 8 ? 36 : 25;
-    const nodeCount = Math.max(1, Math.min(requestedNodeCount, size));
-    const positions = new Set<number>();
-    while (positions.size < nodeCount) {
-      positions.add(Math.floor(Math.random() * size));
-    }
-    const newNodes: NodeItem[] = Array.from(positions).map((pos, index) => ({
-      id: index + 1,
-      pos,
-      status: 'visible',
-    }));
-    setNodes(newNodes);
-    setNextExpected(1);
-    setGameState('preview');
-    const previewTime = Math.max(800, 2500 - currentLevel * 100);
-    timeoutRef.current = setTimeout(() => {
-      setNodes((prev) => prev.map((n) => ({ ...n, status: 'hidden' })));
-      setGameState('playing');
-    }, previewTime);
-  }, [clearTimer]);
+  const generateLevel = useCallback(
+    (requestedNodeCount: number, currentLevel: number) => {
+      clearTimer();
+
+      const size = currentLevel >= 8 ? 36 : 25;
+      const nodeCount = Math.max(1, Math.min(requestedNodeCount, size)); // ✅ full capacity ok
+
+      const positions = new Set<number>();
+      while (positions.size < nodeCount) {
+        positions.add(Math.floor(Math.random() * size));
+      }
+
+      const newNodes: NodeItem[] = Array.from(positions).map((pos, index) => ({
+        id: index + 1,
+        pos,
+        status: 'visible',
+      }));
+
+      setNodes(newNodes);
+      setNextExpected(1);
+      setGameState('preview');
+
+      const previewTime = Math.max(800, 2500 - currentLevel * 100);
+
+      timeoutRef.current = setTimeout(() => {
+        setNodes((prev) => prev.map((n) => ({ ...n, status: 'hidden' })));
+        setGameState('playing');
+      }, previewTime);
+    },
+    [clearTimer]
+  );
 
   const startGame = useCallback(() => {
-    setScore(0); setLevel(1); setCombo(0); setTimeLeft(30);
+    setScore(0);
+    setLevel(1);
+    setCombo(0);
+    setTimeLeft(30);
     generateLevel(3, 1);
   }, [generateLevel]);
 
-  const handleNodeClick = useCallback((nodeId: number) => {
-    if (gameState !== 'playing') return;
-    const currentNodes = nodesRef.current;
-    const clickedNode = currentNodes.find((n) => n.id === nodeId);
-    if (!clickedNode || clickedNode.status !== 'hidden') return;
+  const handleNodeClick = useCallback(
+    (nodeId: number) => {
+      if (gameState !== 'playing') return;
 
-    if (nodeId === nextExpected) {
-      playSound('correct');
-      setNodes((prev) => prev.map((n) => (n.id === nodeId ? { ...n, status: 'correct' } : n)));
-      if (nodeId === currentNodes.length) {
-        playSound('complete');
-        setScore((prev) => prev + levelRef.current * 10 + combo * 5);
-        setCombo((prev) => prev + 1);
-        setTimeLeft((prev) => prev + 5);
+      const currentNodes = nodesRef.current;
+      const clickedNode = currentNodes.find((n) => n.id === nodeId);
+      if (!clickedNode || clickedNode.status !== 'hidden') return;
+
+      if (nodeId === nextExpected) {
+        playSound('correct');
+        setNodes((prev) => prev.map((n) => (n.id === nodeId ? { ...n, status: 'correct' } : n)));
+
+        if (nodeId === currentNodes.length) {
+          playSound('complete');
+          setScore((prev) => prev + levelRef.current * 10 + combo * 5);
+          setCombo((prev) => prev + 1);
+          setTimeLeft((prev) => prev + 5);
+
+          clearTimer();
+          timeoutRef.current = setTimeout(() => {
+            setLevel((prevLvl) => {
+              const nextLvl = prevLvl + 1;
+              generateLevel(3 + Math.floor(nextLvl / 2), nextLvl);
+              return nextLvl;
+            });
+          }, 500);
+        } else {
+          setNextExpected((prev) => prev + 1);
+        }
+      } else {
+        playSound('wrong');
+        setCombo(0);
+        setTimeLeft((prev) => Math.max(0, prev - 5));
+
+        setNodes((prev) =>
+          prev.map((n) =>
+            n.id === nodeId ? { ...n, status: 'wrong' } : n.id === nextExpected ? { ...n, status: 'hint' } : n
+          )
+        );
+
         clearTimer();
         timeoutRef.current = setTimeout(() => {
-          setLevel((prevLvl) => {
-            const nextLvl = prevLvl + 1;
-            generateLevel(3 + Math.floor(nextLvl / 2), nextLvl);
-            return nextLvl;
-          });
-        }, 500);
-      } else {
-        setNextExpected((prev) => prev + 1);
+          generateLevel(nodesRef.current.length, levelRef.current);
+        }, 900);
       }
-    } else {
-      playSound('wrong');
-      setIsShaking(true);
-      setTimeout(() => setIsShaking(false), 500);
-      setCombo(0);
-      setTimeLeft((prev) => Math.max(0, prev - 5));
-      setNodes((prev) => prev.map((n) => n.id === nodeId ? { ...n, status: 'wrong' } : n.id === nextExpected ? { ...n, status: 'hint' } : n));
-      clearTimer();
-      timeoutRef.current = setTimeout(() => {
-        generateLevel(nodesRef.current.length, levelRef.current);
-      }, 900);
-    }
-  }, [gameState, nextExpected, combo, clearTimer, generateLevel, playSound]);
+    },
+    [gameState, nextExpected, combo, clearTimer, generateLevel, playSound]
+  );
 
   useEffect(() => {
-    let interval: any = null;
+    let interval: ReturnType<typeof setInterval> | null = null;
+
     if (gameState === 'playing' && timeLeft > 0) {
       interval = setInterval(() => setTimeLeft((t) => Math.max(0, t - 1)), 1000);
     }
+
     if (timeLeft === 0 && gameState === 'playing') {
       setGameState('gameover');
       setBestScore((prev) => {
@@ -177,20 +217,23 @@ export default function ChronoLinkMaster() {
         return next;
       });
     }
-    return () => clearInterval(interval);
+
+    return () => {
+      if (interval) clearInterval(interval);
+    };
   }, [gameState, timeLeft, score]);
 
   return (
-    <main className="min-h-screen bg-[#050505] text-white flex items-center justify-center p-4 font-sans overflow-hidden">
+    <main className="min-h-screen bg-[#050505] text-white flex items-center justify-center p-4 font-sans">
       <div className="max-w-xl w-full">
-        <Link href="/dashboard" className="inline-flex items-center gap-2 text-zinc-500 hover:text-white mb-6 transition-colors font-bold text-xs tracking-widest uppercase">
+        <Link
+          href="/dashboard"
+          className="inline-flex items-center gap-2 text-zinc-500 hover:text-white mb-6 transition-colors font-bold text-xs tracking-widest uppercase"
+        >
           <ArrowLeft size={16} /> Neural Link Home
         </Link>
 
-        <motion.div 
-          animate={isShaking ? { x: [-10, 10, -10, 10, 0] } : {}}
-          className={`bg-zinc-900/40 border ${timeLeft <= 10 && gameState === 'playing' ? 'border-red-500/50' : 'border-zinc-800'} rounded-[2.5rem] p-8 shadow-2xl backdrop-blur-md relative overflow-hidden transition-colors duration-500`}
-        >
+        <div className="bg-zinc-900/40 border border-zinc-800 rounded-[2.5rem] p-8 shadow-2xl backdrop-blur-md relative overflow-hidden">
           {/* Header HUD */}
           <div className="flex justify-between items-center mb-10">
             <div className="flex items-center gap-4">
@@ -207,9 +250,9 @@ export default function ChronoLinkMaster() {
             </div>
 
             <div className="flex gap-2 text-center">
-              <div className={`px-4 py-2 rounded-xl border w-24 transition-all ${timeLeft <= 10 && gameState === 'playing' ? 'bg-red-500/20 border-red-500 animate-pulse' : 'bg-zinc-800 border-zinc-700'}`}>
-                <Timer size={14} className={`mx-auto mb-1 ${timeLeft <= 10 && gameState === 'playing' ? 'text-red-500' : 'text-zinc-400'}`} />
-                <span className={`font-bold block ${timeLeft <= 10 && gameState === 'playing' ? 'text-red-500' : ''}`}>{timeLeft}s</span>
+              <div className="bg-zinc-800 px-4 py-2 rounded-xl border border-zinc-700 w-20">
+                <Timer size={14} className="mx-auto mb-1 text-zinc-400" />
+                <span className="font-bold block">{timeLeft}s</span>
               </div>
               <div className="bg-zinc-800 px-4 py-2 rounded-xl border border-zinc-700 w-20">
                 <Trophy size={14} className="mx-auto mb-1 text-amber-500" />
@@ -222,7 +265,12 @@ export default function ChronoLinkMaster() {
             <div className="relative">
               <AnimatePresence>
                 {gameState === 'preview' && (
-                  <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="absolute -top-12 left-0 right-0 flex justify-center z-10">
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0 }}
+                    className="absolute -top-12 left-0 right-0 flex justify-center z-10"
+                  >
                     <div className="bg-fuchsia-600/20 border border-fuchsia-500/40 text-fuchsia-400 px-4 py-1.5 rounded-full text-[10px] font-black animate-pulse uppercase tracking-[0.2em] backdrop-blur-sm">
                       Scanning Sequence...
                     </div>
@@ -230,7 +278,10 @@ export default function ChronoLinkMaster() {
                 )}
               </AnimatePresence>
 
-              <div className="grid gap-3 aspect-square w-full relative" style={{ gridTemplateColumns: `repeat(${currentGridCols}, minmax(0, 1fr))` }}>
+              <div
+                className="grid gap-3 aspect-square w-full relative"
+                style={{ gridTemplateColumns: `repeat(${currentGridCols}, minmax(0, 1fr))` }}
+              >
                 {Array.from({ length: currentGridSize }).map((_, i) => {
                   const node = nodes.find((n) => n.pos === i);
                   return (
@@ -238,10 +289,24 @@ export default function ChronoLinkMaster() {
                       {node && (
                         <motion.button
                           initial={{ scale: 0 }}
-                          animate={{ scale: 1, backgroundColor: node.status === 'correct' ? '#22c55e' : node.status === 'wrong' ? '#ef4444' : node.status === 'hint' ? '#eab308' : node.status === 'visible' ? '#a21caf' : '#1e293b' }}
+                          animate={{
+                            scale: 1,
+                            backgroundColor:
+                              node.status === 'correct'
+                                ? '#22c55e'
+                                : node.status === 'wrong'
+                                ? '#ef4444'
+                                : node.status === 'hint'
+                                ? '#eab308'
+                                : node.status === 'visible'
+                                ? '#a21caf'
+                                : '#1e293b',
+                          }}
                           onClick={() => handleNodeClick(node.id)}
                           disabled={gameState !== 'playing'}
-                          className={`absolute inset-0 w-full h-full rounded-xl flex items-center justify-center font-black text-xl shadow-inner ${gameState === 'preview' ? 'cursor-wait pointer-events-none' : 'cursor-pointer'}`}
+                          className={`absolute inset-0 w-full h-full rounded-xl flex items-center justify-center font-black text-xl shadow-inner ${
+                            gameState === 'preview' ? 'cursor-wait pointer-events-none' : 'cursor-pointer'
+                          }`}
                         >
                           {node.status !== 'hidden' && node.id}
                         </motion.button>
@@ -255,22 +320,35 @@ export default function ChronoLinkMaster() {
 
           {gameState === 'idle' && (
             <div className="text-center py-12 space-y-6">
-              <Brain size={64} className="mx-auto text-fuchsia-500 animate-pulse" />
-              <h1 className="text-6xl font-black italic tracking-tighter">CHRONO<span className="text-fuchsia-500">LINK</span></h1>
-              <button onClick={startGame} className="w-full bg-white text-black font-black py-5 rounded-2xl text-xl hover:bg-fuchsia-500 transition-all active:scale-95 shadow-lg shadow-white/5">INITIALIZE DRILL</button>
+              <div className="relative inline-block">
+                <Brain size={64} className="mx-auto text-fuchsia-500 animate-pulse" />
+                <Zap size={24} className="absolute -top-2 -right-2 text-amber-400 animate-bounce" />
+              </div>
+              <h1 className="text-6xl font-black italic tracking-tighter">
+                CHRONO<span className="text-fuchsia-500">LINK</span>
+              </h1>
+              <button
+                onClick={startGame}
+                className="w-full bg-white text-black font-black py-5 rounded-2xl text-xl hover:bg-fuchsia-500 transition-all active:scale-95 shadow-lg shadow-white/5"
+              >
+                INITIALIZE DRILL
+              </button>
             </div>
           )}
 
           {gameState === 'gameover' && (
             <div className="text-center py-8">
               <AlertCircle size={48} className="mx-auto text-red-500 mb-4 animate-bounce" />
-              <h2 className="text-4xl font-black italic mb-6 uppercase">Neural Link Severed</h2>
-              <button onClick={startGame} className="w-full bg-fuchsia-600 text-white font-black py-5 rounded-2xl text-xl flex items-center justify-center gap-2 active:scale-95 transition-all shadow-lg shadow-fuchsia-600/20">
+              <h2 className="text-4xl font-black italic mb-6">Neural Link Severed</h2>
+              <button
+                onClick={startGame}
+                className="w-full bg-fuchsia-600 text-white font-black py-5 rounded-2xl text-xl flex items-center justify-center gap-2 active:scale-95 transition-all shadow-lg shadow-fuchsia-600/20"
+              >
                 <RefreshCw size={20} /> RE-INITIATE
               </button>
             </div>
           )}
-        </motion.div>
+        </div>
       </div>
     </main>
   );
