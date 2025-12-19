@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Timer, Trophy, ArrowLeft, RefreshCw, Brain, Sparkles, Zap } from 'lucide-react';
+import { Timer, Trophy, ArrowLeft, RefreshCw, Brain, Sparkles, Zap, AlertCircle } from 'lucide-react';
 import Link from 'next/link';
 
 // Oyun Ayarları
