@@ -587,6 +587,34 @@ export default function HomePage() {
     </div>
   </div>
 </Link>
+{/* 11. LOGIC LOCK ULTRA (NEW MASTERMIND GAME) */}
+<Link
+  href="/games/logic-lock"
+  className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-900 via-indigo-950 to-black p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl border border-indigo-500/20"
+>
+  {/* Neon Mavi Işık Efekti */}
+  <div className="absolute -top-4 -left-4 h-24 w-24 rounded-full bg-cyan-500/10 blur-2xl transition-all group-hover:bg-cyan-500/30"></div>
+
+  <div className="relative z-10 flex flex-col justify-between h-full">
+    <div>
+      <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-cyan-500/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-cyan-400 backdrop-blur-sm border border-cyan-500/20">
+        <Lock className="h-3 w-3" /> Mastermind <span className="opacity-80">• Daily Code</span>
+      </div>
+      <h3 className="mb-2 text-2xl font-black tracking-tight">Logic Lock</h3>
+      <p className="text-slate-400 opacity-90 text-sm">Crack the secret code. Use logic and hints to unlock the vault.</p>
+    </div>
+
+    <div className="mt-6 flex items-center gap-3">
+      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-500 text-black shadow-lg transition-transform group-hover:rotate-12">
+        <Target className="h-5 w-5 fill-black" />
+      </div>
+      <div className="flex flex-col">
+        <span className="font-bold text-sm text-white">Unlock Vault →</span>
+        <span className="text-[10px] text-cyan-400 font-medium tracking-tight">Logic & Deduction</span>
+      </div>
+    </div>
+  </div>
+</Link>
 
         </section>
         {/* --- MEB CURRICULUM (İLKÖĞRETİM) --- */}
