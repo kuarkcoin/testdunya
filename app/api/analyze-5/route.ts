@@ -16,27 +16,35 @@ export async function POST(req: Request) {
     const genAI = new GoogleGenerativeAI(randomKey);
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
-    // --- BURASI KRİTİK: GEMINI'YE ANALİZ YAPTIRIYORUZ ---
+    // --- ARTIK EZBER CÜMLE YOK, SADECE VERİ VE MANTIK VAR ---
     const prompt = `
-      Sen 5. sınıf öğrencileri için bir Veri Analiz Uzmanı ve Pedagojik Rehbersin. 
-      Öğrenci ${subject} testinde ${total} soruda ${score} doğru yaptı.
+      GÖREV: 5. sınıf öğrencisi için bir sınav sonuç analisti ve rehber öğretmen ol.
       
-      ÖĞRENCİNİN HATALARI:
+      VERİLER:
+      - Ders: ${subject}
+      - Başarı: ${total} soruda ${score} doğru.
+      - Yanlış Yapılan Soruların Detayları:
       ${mistakes.map((m: any) => `Soru: ${m.prompt} | Çözüm Mantığı: ${m.explanation}`).join('\n')}
 
-      GÖREVİN:
-      1. Yukarıdaki hataları tek tek oku. Bu hataların ortak bir paydası var mı? (Örneğin: Hepsi ondalık sayılar mı? Yoksa okuduğunu anlamada mı sorun var?)
-      2. Öğrenciye "Şu konularda çok iyisin ama GÖRDÜĞÜM KADARIYLA [Spesifik Konu Adı] kısmında bir mantık hatası yapıyorsun" şeklinde bir tespit yap.
-      3. Tespitin çok net olsun. Genel cümleler kurma. "Hatalarına baktığımda toplama yaparken eldeyi unuttuğunu fark ettim" gibi çok spesifik bir şey söyle.
-      4. Ona bir tane "Altın Tavsiye" ver.
-      
-      DİL: Samimi, 11 yaşındaki bir çocuğun anlayacağı kadar basit ama bir o kadar da zeki bir öğretmen dili. Maksimum 5 cümle.
+      ANALİZ TALİMATI:
+      1. Yukarıdaki yanlış yapılan soruları ve çözüm açıklamalarını derinlemesine oku.
+      2. Bu yanlışların arasındaki GİZLİ BAĞLANTIYI bul. (Örn: Öğrenci sürekli 'sıfatlar' konusunu mu yanlış yapmış? Yoksa 'okuduğunu anlama' kısmında bir dikkat hatası mı var?)
+      3. Öğrenciye asla "Aferin", "Daha çok çalış" gibi jenerik/boş cümleler kurma.
+      4. Doğrudan teşhisi koy: "Hatalarına baktığımda [şu konudaki] şu mantığı tam oturtamadığını görüyorum" şeklinde bir uzman yorumu yap.
+      5. Bir öğretmenin kağıt üzerine düştüğü o samimi ve zeki not gibi olsun. 
+      6. Cümleleri sen kur, kalıp kullanma. Maksimum 4-5 cümle olsun.
     `;
 
     const result = await model.generateContent(prompt);
-    return Response.json({ feedback: result.response.text() });
+    const response = await result.response;
+    const feedback = response.text();
+
+    return Response.json({ feedback });
 
   } catch (error) {
-    return Response.json({ feedback: "Hatalarını analiz ederken bir sorun oluştu ama gayretin müthiş!" });
+    console.error("AI Hatası:", error);
+    return Response.json({ 
+      feedback: "Hatalarını analiz ederken teknik bir sorun oluştu ama yanlış yaptığın soruların açıklamaları sana yol gösterecektir." 
+    });
   }
 }
