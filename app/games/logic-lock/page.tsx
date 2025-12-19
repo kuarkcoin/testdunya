@@ -86,10 +86,16 @@ function todayKey() {
 }
 
 function getRank(points: number) {
-  let r = RANKS[0].name;
-  for (const rr of RANKS) if (points >= rr.min) r = rr.name;
+  // r değişkenine string tipi vererek tüm rütbe isimlerini kabul etmesini sağlıyoruz
+  let r: string = RANKS[0].name;
+  for (const rr of RANKS) {
+    if (points >= rr.min) {
+      r = rr.name;
+    }
+  }
   return r;
 }
+
 
 // --- code generation ---
 function generateCode(len: number, allowRepeats: boolean, seedStr?: string): string {
