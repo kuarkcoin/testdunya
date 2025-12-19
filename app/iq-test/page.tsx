@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useMemo, useState, useRef, useCallback } from 'react';
+import React, { useEffect, useMemo, useState, useRef } from 'react';
 import Link from 'next/link';
 import ReactConfetti from 'react-confetti';
 
@@ -12,21 +12,79 @@ import { questions } from '../data/questions';
 type Domain = 'logic' | 'math' | 'visual' | 'attention';
 
 type IQQuestion =
-  | { id: string; domain: Domain; type: 'sequence' | 'analogy' | 'word-problem' | 'odd-one-out-text' | 'counting' | 'logic-puzzle'; prompt: string; optionsText: string[]; correct: number; }
-  | { id: string; domain: Domain; type: 'grid-missing'; prompt: string; grid: string[]; options: string[][]; correct: number; }
-  | { id: string; domain: Domain; type: 'grid-odd-one-out'; prompt: string; options: string[][]; correct: number; }
-  | { id: string; domain: Domain; type: 'visual-matrix' | 'visual-matrix-2x2' | 'visual-matrix-3x3'; prompt: string; questionSvg: SvgData; options: { svg: SvgData }[]; correct: number; };
+  | {
+      id: string;
+      domain: Domain;
+      type: 'sequence' | 'analogy' | 'word-problem' | 'odd-one-out-text' | 'counting' | 'logic-puzzle';
+      prompt: string;
+      optionsText: string[];
+      correct: number;
+    }
+  | {
+      id: string;
+      domain: Domain;
+      type: 'grid-missing';
+      prompt: string;
+      grid: string[];
+      options: string[][];
+      correct: number;
+    }
+  | {
+      id: string;
+      domain: Domain;
+      type: 'grid-odd-one-out';
+      prompt: string;
+      options: string[][];
+      correct: number;
+    }
+  | {
+      id: string;
+      domain: Domain;
+      type: 'visual-matrix' | 'visual-matrix-2x2' | 'visual-matrix-3x3';
+      prompt: string;
+      questionSvg: SvgData;
+      options: { svg: SvgData }[];
+      correct: number;
+    };
 
-type AnswerState = { selected: number | null; correct: boolean | null; };
+type AnswerState = {
+  selected: number | null;
+  correct: boolean | null;
+};
 
-// -------------------- YARDIMCI BİLEŞENLER --------------------
+// -------------------- YARDIMCI FONKSİYONLAR --------------------
+
+function clamp(n: number, a: number, b: number) {
+  return Math.max(a, Math.min(b, n));
+}
+
+function useWindowSize() {
+  const [size, setSize] = useState({ width: 0, height: 0 });
+
+  useEffect(() => {
+    const onResize = () => setSize({ width: window.innerWidth, height: window.innerHeight });
+    onResize();
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, []);
+
+  return size;
+}
 
 function CellGrid({ grid }: { grid: string[] }) {
+  // Varsayım: 5x5 gibi bir grid
   const cells = grid.join('').split('');
   return (
     <div className="inline-grid grid-cols-5 gap-1 p-3 rounded-2xl bg-white/5 border border-white/10">
       {cells.map((ch, i) => (
-        <div key={i} className={`w-5 h-5 rounded-md border ${ch === '#' ? 'bg-indigo-400/80 border-indigo-200/40' : 'bg-slate-900/60 border-white/10'}`} />
+        <div
+          key={i}
+          className={`w-5 h-5 rounded-md border ${
+            ch === '#'
+              ? 'bg-indigo-400/80 border-indigo-200/40 shadow-[0_0_10px_rgba(99,102,241,0.35)]'
+              : 'bg-slate-900/60 border-white/10'
+          }`}
+        />
       ))}
     </div>
   );
@@ -37,7 +95,8 @@ function getBadge(iq: number) {
   if (iq >= 145) return { label: 'ELITE', emoji: '🔥', style: 'bg-emerald-500/15 border-emerald-400/25 text-emerald-200' };
   if (iq >= 130) return { label: 'ADVANCED', emoji: '⚡', style: 'bg-indigo-500/15 border-indigo-400/25 text-indigo-200' };
   if (iq >= 115) return { label: 'SOLID', emoji: '✅', style: 'bg-sky-500/15 border-sky-400/25 text-sky-200' };
-  return { label: 'WARMUP', emoji: '🧩', style: 'bg-slate-500/15 border-slate-400/25 text-slate-200' };
+  if (iq >= 95) return { label: 'WARMUP', emoji: '🧩', style: 'bg-slate-500/15 border-slate-400/25 text-slate-200' };
+  return { label: 'RETRY', emoji: '🔁', style: 'bg-rose-500/15 border-rose-400/25 text-rose-200' };
 }
 
 // -------------------- ANA BİLEŞEN --------------------
@@ -45,218 +104,406 @@ function getBadge(iq: number) {
 export default function IQTestPage() {
   const data = (questions as unknown as IQQuestion[]) || [];
   const total = data.length;
-  const TOTAL_TIME = 30 * 60;
 
   const [idx, setIdx] = useState(0);
   const [answers, setAnswers] = useState<Record<string, AnswerState>>({});
+
+  const TOTAL_TIME = 30 * 60;
   const [timeLeft, setTimeLeft] = useState(TOTAL_TIME);
   const [started, setStarted] = useState(false);
   const [finished, setFinished] = useState(false);
-  const [showStartScreen, setShowStartScreen] = useState(true);
 
+  // Soruya odaklanmak için Ref
   const questionAreaRef = useRef<HTMLDivElement>(null);
-  const [windowSize, setWindowSize] = useState({ width: 0, height: 0 });
 
-  // Window Resize
-  useEffect(() => {
-    const onResize = () => setWindowSize({ width: window.innerWidth, height: window.innerHeight });
-    onResize();
-    window.addEventListener('resize', onResize);
-    return () => window.removeEventListener('resize', onResize);
-  }, []);
+  const { width, height } = useWindowSize();
 
-  // ✅ A. OPTİMİZE EDİLMİŞ TIMER (Functional Update)
-  useEffect(() => {
-    if (!started || finished) return;
-    const t = setInterval(() => {
-      setTimeLeft((prev) => (prev <= 0 ? 0 : prev - 1));
-    }, 1000);
-    return () => clearInterval(t);
-  }, [started, finished]);
-
-  // ✅ SCROLL FIX
-  useEffect(() => {
-    if (started && !finished && questionAreaRef.current) {
-      questionAreaRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  }, [idx, started, finished]);
-
-  const selectAnswer = (choiceIndex: number) => {
-    if (finished || timeLeft <= 0) return;
-    const q = data[idx];
-    setAnswers(prev => ({
-      ...prev,
-      [q.id]: { selected: choiceIndex, correct: choiceIndex === q.correct },
-    }));
-  };
-
-  const scorePack = useMemo(() => {
-    let totalCorrect = 0;
-    const domainGot: Record<Domain, number> = { logic: 0, math: 0, visual: 0, attention: 0 };
-    const domainMax: Record<Domain, number> = { logic: 0, math: 0, visual: 0, attention: 0 };
-
-    data.forEach((qq, i) => {
-      domainMax[qq.domain]++;
-      if (answers[qq.id]?.correct) {
-        totalCorrect++;
-        domainGot[qq.domain]++;
-      }
-    });
-
-    const acc = totalCorrect / (total || 1);
-    const iq = Math.round(100 + ((acc - 0.5) / 0.15) * 15);
-    const gameIQ = Math.max(70, Math.min(160, iq));
-    return { totalCorrect, gameIQ, badge: getBadge(gameIQ), domainGot, domainMax, acc: Math.round(acc * 100) };
-  }, [answers, data, total]);
-
-  // ✅ C. LANDING (BAŞLANGIÇ) EKRANI
-  if (showStartScreen) {
+  // ✅ Guard: soru listesi boşsa patlamasın
+  if (total === 0) {
     return (
-      <main className="min-h-screen bg-slate-950 text-white flex items-center justify-center p-6">
-        <div className="max-w-xl w-full bg-white/5 border border-white/10 p-10 rounded-[3rem] text-center space-y-8 backdrop-blur-xl">
-          <div className="w-20 h-20 bg-indigo-500/20 rounded-3xl flex items-center justify-center mx-auto border border-indigo-500/30">
-            <Brain size={40} className="text-indigo-400" />
-          </div>
-          <div className="space-y-2">
-            <h1 className="text-4xl font-black tracking-tighter">NEURAL CAPACITY TEST</h1>
-            <p className="text-slate-400 text-sm italic">Standardized IQ Assessment v3.0</p>
-          </div>
-          <div className="grid grid-cols-2 gap-4 text-left">
-            <div className="p-4 bg-white/5 rounded-2xl border border-white/5">
-              <div className="text-xs font-bold text-slate-500 uppercase">Duration</div>
-              <div className="text-lg font-black">30 Minutes</div>
-            </div>
-            <div className="p-4 bg-white/5 rounded-2xl border border-white/5">
-              <div className="text-xs font-bold text-slate-500 uppercase">Questions</div>
-              <div className="text-lg font-black">{total} Mixed</div>
-            </div>
-          </div>
-          <ul className="text-left text-slate-400 text-sm space-y-2 px-4 italic">
-            <li>• No external help allowed.</li>
-            <li>• Some questions are non-verbal (matrices).</li>
-            <li>• Time used affects your final score.</li>
-          </ul>
-          <button 
-            onClick={() => { setShowStartScreen(false); setStarted(true); }}
-            className="w-full py-5 bg-indigo-600 hover:bg-indigo-500 text-white font-black rounded-2xl transition-all shadow-xl shadow-indigo-600/20"
-          >
-            START TEST
-          </button>
+      <main className="min-h-screen bg-slate-950 text-white px-4 py-10">
+        <div className="max-w-3xl mx-auto rounded-3xl bg-white/5 border border-white/10 p-10 text-center">
+          <h1 className="text-2xl font-black mb-2">No questions found</h1>
+          <p className="text-slate-400 mb-6">
+            <span className="font-mono">../data/questions</span> boş görünüyor.
+          </p>
+          <Link href="/" className="inline-flex px-6 py-3 rounded-2xl bg-white text-slate-950 font-black hover:bg-slate-200">
+            Back Home →
+          </Link>
         </div>
       </main>
     );
   }
 
-  const q = data[idx];
-  const mmss = (s: number) => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
+  const safeIdx = clamp(idx, 0, total - 1);
+  const q = data[safeIdx];
+
+  // ✅ SCROLL FIX
+  useEffect(() => {
+    if (!finished && questionAreaRef.current) {
+      const timer = window.setTimeout(() => {
+        questionAreaRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        const scrolledY = window.scrollY;
+        if (scrolledY > 50) window.scrollBy(0, -100);
+      }, 100);
+      return () => clearTimeout(timer);
+    }
+  }, [safeIdx, finished]);
+
+  // Zaman sayacı
+  useEffect(() => {
+    if (!started || finished) return;
+    if (timeLeft <= 0) {
+      setFinished(true);
+      return;
+    }
+    const t = setInterval(() => setTimeLeft((p) => p - 1), 1000);
+    return () => clearInterval(t);
+  }, [started, finished, timeLeft]);
+
+  const answeredCount = useMemo(
+    () => Object.values(answers).filter((a) => a.selected !== null).length,
+    [answers]
+  );
+
+  const selectAnswer = (choiceIndex: number) => {
+    if (finished || timeLeft <= 0) return;
+    setStarted(true);
+
+    const answerKey = q.id; // ✅ tutarlı anahtar
+    const isCorrect = choiceIndex === q.correct;
+
+    setAnswers((prev) => ({
+      ...prev,
+      [answerKey]: { selected: choiceIndex, correct: isCorrect },
+    }));
+  };
+
+  const next = () => setIdx((p) => clamp(p + 1, 0, total - 1));
+  const prev = () => setIdx((p) => clamp(p - 1, 0, total - 1));
+  const finishNow = () => setFinished(true);
+
+  const scorePack = useMemo(() => {
+    const domainMax: Record<Domain, number> = { logic: 0, math: 0, visual: 0, attention: 0 };
+    const domainGot: Record<Domain, number> = { logic: 0, math: 0, visual: 0, attention: 0 };
+
+    let totalCorrect = 0;
+    let totalAnswered = 0;
+
+    let weightedCorrect = 0;
+    let weightedTotal = 0;
+
+    const ADV_COUNT = Math.min(12, total);
+    const advStartIndex = Math.max(0, total - ADV_COUNT);
+    let advCorrect = 0;
+    let advAnswered = 0;
+
+    const W_BASE = 1.0;
+    const W_ADV = 1.35;
+
+    for (let i = 0; i < total; i++) {
+      const qq = data[i];
+      domainMax[qq.domain] += 1;
+
+      const key = qq.id;
+      const a = answers[key];
+
+      const isAdv = i >= advStartIndex;
+      const w = isAdv ? W_ADV : W_BASE;
+
+      weightedTotal += w;
+
+      if (a?.selected !== null && a?.selected !== undefined) {
+        totalAnswered += 1;
+        if (isAdv) advAnswered += 1;
+
+        if (a.correct) {
+          totalCorrect += 1;
+          domainGot[qq.domain] += 1;
+          weightedCorrect += w;
+          if (isAdv) advCorrect += 1;
+        }
+      }
+    }
+
+    const acc = total > 0 ? totalCorrect / total : 0;
+    const wAcc = weightedTotal > 0 ? weightedCorrect / weightedTotal : 0;
+
+    const timeRatio = started ? clamp(timeLeft / TOTAL_TIME, 0, 1) : 0;
+    const timeBonus = Math.pow(timeRatio, 0.65);
+
+    // Basit “normal dağılım benzeri” ölçek
+    const MU = 0.55;
+    const SIGMA = 0.18;
+
+    const perf = clamp(wAcc + 0.05 * timeBonus, 0, 1);
+    const z = (perf - MU) / SIGMA;
+
+    let iq = Math.round(100 + z * 15) + 3;
+
+    const completed = totalAnswered === total;
+    const advRate = advAnswered > 0 ? advCorrect / advAnswered : 0;
+    const eliteRun = completed && advAnswered === ADV_COUNT && advRate >= 0.8;
+
+    if (eliteRun) iq += 2;
+    if (totalCorrect === total && total >= 20) iq += 6;
+
+    const gameIQ = clamp(iq, 70, 160);
+    const badge = getBadge(gameIQ);
+
+    return {
+      domainMax,
+      domainGot,
+      totalCorrect,
+      totalAnswered,
+      totalQ: total,
+      gameIQ,
+      badge,
+      accuracyPct: Math.round(acc * 100),
+      weightedPct: Math.round(wAcc * 100),
+      completionPct: total > 0 ? Math.round((totalAnswered / total) * 100) : 0,
+      usedSeconds: clamp(TOTAL_TIME - timeLeft, 0, TOTAL_TIME),
+      timeLeft,
+      eliteRun,
+      advCorrect,
+      advAnswered,
+      advRatePct: Math.round(advRate * 100),
+    };
+  }, [answers, data, started, timeLeft, total]);
+
+  const showConfetti = finished && scorePack.gameIQ >= 145;
+  const confettiPieces = scorePack.gameIQ >= 155 ? 520 : 320;
+
+  const mmss = (s: number) => {
+    const m = Math.floor(s / 60);
+    const r = s % 60;
+    return `${m}:${String(r).padStart(2, '0')}`;
+  };
 
   return (
-    <main className="min-h-screen bg-slate-950 text-white px-4 py-10 font-sans">
-      {finished && scorePack.gameIQ >= 145 && <ReactConfetti width={windowSize.width} height={windowSize.height} recycle={false} />}
-      
-      <div className="max-w-5xl mx-auto space-y-6">
-        {/* Header HUD */}
-        <div className="flex justify-between items-center bg-white/5 p-4 rounded-3xl border border-white/10 backdrop-blur-md">
-          <Link href="/" className="font-bold text-slate-400 hover:text-white transition-colors">← Exit</Link>
-          <div className="flex gap-4">
-            <div className="text-center">
-              <p className="text-[10px] text-slate-500 font-bold">TIMER</p>
-              <p className={`font-black ${timeLeft < 60 ? 'text-red-500' : 'text-emerald-400'}`}>{mmss(timeLeft)}</p>
-            </div>
-            <div className="text-center">
-              <p className="text-[10px] text-slate-500 font-bold">PROGRESS</p>
-              <p className="font-black text-indigo-400">{idx + 1}/{total}</p>
+    <>
+      {showConfetti && (
+        <ReactConfetti width={width} height={height} numberOfPieces={confettiPieces} gravity={0.25} recycle={false} />
+      )}
+
+      <main className="min-h-screen bg-slate-950 text-white px-4 py-10">
+        <div className="max-w-5xl mx-auto space-y-6">
+          <div className="flex items-center justify-between gap-3">
+            <Link href="/" className="text-slate-300 hover:text-white font-bold">
+              ← Home
+            </Link>
+
+            <div className="flex items-center gap-3">
+              <div
+                className={`px-3 py-2 rounded-xl border ${
+                  timeLeft <= 60 ? 'bg-red-500/10 border-red-500/20' : 'bg-white/5 border-white/10'
+                }`}
+              >
+                <div className="text-[10px] uppercase tracking-widest text-slate-400 font-bold">Time</div>
+                <div className={`text-lg font-black ${timeLeft <= 60 ? 'text-red-300' : 'text-emerald-300'}`}>
+                  {mmss(Math.max(0, timeLeft))}
+                </div>
+              </div>
+
+              <div className="px-3 py-2 rounded-xl bg-white/5 border border-white/10">
+                <div className="text-[10px] uppercase tracking-widest text-slate-400 font-bold">Progress</div>
+                <div className="text-lg font-black text-indigo-300">
+                  {answeredCount}/{total}
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        {finished ? (
-          <section className="bg-white/5 border border-white/10 rounded-[3rem] p-8 md:p-12 space-y-10 text-center">
-            <div className="space-y-4">
-              <h2 className="text-5xl font-black italic tracking-tighter">ANALYSIS COMPLETE</h2>
-              <div className={`inline-flex items-center gap-3 px-6 py-2 rounded-full border ${scorePack.badge.style}`}>
-                <span className="text-2xl">{scorePack.badge.emoji}</span>
-                <span className="font-black tracking-widest">{scorePack.badge.label}</span>
+          <header className="text-center space-y-2">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-500/15 border border-indigo-400/20 text-indigo-200 text-sm font-bold">
+              🧩 IQ Test (Hard)
+            </div>
+            <h1 className="text-3xl md:text-5xl font-black tracking-tight">{total} Questions • Mixed Domains</h1>
+            <p className="text-slate-400">Logic • Math • Visual • Attention (scoring)</p>
+          </header>
+
+          {/* PROGRESS BAR */}
+          {!finished && (
+            <div className="max-w-5xl mx-auto mb-4">
+              <div className="w-full h-1.5 bg-white/5 rounded-full overflow-hidden">
+                <div className="h-full bg-indigo-500 transition-all duration-500 ease-out" style={{ width: `${((safeIdx + 1) / total) * 100}%` }} />
+              </div>
+              <div className="flex justify-between mt-2 px-1">
+                <span className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Progress</span>
+                <span className="text-[10px] text-indigo-400 font-bold tracking-widest">
+                  %{Math.round(((safeIdx + 1) / total) * 100)}
+                </span>
               </div>
             </div>
+          )}
 
-            <div className="py-10 border-y border-white/5">
-              <p className="text-slate-500 font-bold uppercase text-xs tracking-widest mb-2">Estimated IQ Index</p>
-              <h3 className="text-8xl font-black text-white drop-shadow-[0_0_20px_rgba(255,255,255,0.2)]">{scorePack.gameIQ}</h3>
-            </div>
+          {finished ? (
+            <section className="rounded-3xl bg-white/5 border border-white/10 p-6 md:p-8 space-y-6">
+              <div className="text-center space-y-3">
+                <div className="text-2xl md:text-3xl font-black text-emerald-200">✅ Test Completed</div>
 
-            {/* ✅ B. ŞEFFAFLIK (DISCLAIMER) */}
-            <div className="p-4 bg-indigo-500/10 rounded-2xl border border-indigo-500/20 max-w-lg mx-auto">
-              <p className="text-[11px] text-indigo-300 leading-relaxed italic">
-                <strong>DISCLAIMER:</strong> This score is a game-based assessment of logical and visual patterns. It does not replace professional clinical IQ tests administered by psychologists.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {Object.keys(scorePack.domainGot).map(d => (
-                <div key={d} className="bg-white/5 p-4 rounded-2xl border border-white/5">
-                  <p className="text-[10px] text-slate-500 font-bold uppercase">{d}</p>
-                  <p className="text-xl font-black text-indigo-300">{scorePack.domainGot[d as Domain]}/{scorePack.domainMax[d as Domain]}</p>
-                </div>
-              ))}
-            </div>
-
-            <button onClick={() => window.location.reload()} className="w-full md:w-64 py-5 bg-white text-black font-black rounded-2xl hover:bg-indigo-400 transition-all">TRY AGAIN</button>
-          </section>
-        ) : (
-          <div ref={questionAreaRef} className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
-            {/* ✅ D. GÖRSEL GELİŞTİRME (MATRIX VIEW) */}
-            <div className="bg-white/5 border border-white/10 rounded-[3rem] p-8 md:p-12 space-y-8">
-              <div className="space-y-2">
-                <span className="px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-300 text-[10px] font-black uppercase tracking-widest">{q.domain}</span>
-                <h2 className="text-2xl md:text-3xl font-bold leading-tight">{q.prompt}</h2>
-              </div>
-
-              <div className="flex justify-center py-6">
-                {'questionSvg' in q ? (
-                  <div className="p-6 bg-white rounded-3xl shadow-2xl transition-transform hover:scale-[1.02]">
-                    <div className="w-48 h-48 md:w-64 md:h-64"><SvgRenderer data={q.questionSvg} /></div>
+                <div className="flex items-center justify-center gap-2 flex-wrap">
+                  <div className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full border ${scorePack.badge.style}`}>
+                    <span className="text-base">{scorePack.badge.emoji}</span>
+                    <span className="text-xs font-black tracking-widest">{scorePack.badge.label}</span>
                   </div>
-                ) : 'grid' in q ? <CellGrid grid={q.grid} /> : null}
+                  {scorePack.eliteRun && (
+                    <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border bg-fuchsia-500/15 border-fuchsia-400/25 text-fuchsia-200">
+                      <span className="text-base">🚀</span>
+                      <span className="text-xs font-black tracking-widest">ELITE RUN</span>
+                    </div>
+                  )}
+                </div>
+
+                <div className="text-slate-300">
+                  Correct: <span className="font-black text-white">{scorePack.totalCorrect}/{scorePack.totalQ}</span> • Estimated IQ:{' '}
+                  <span className={`font-black text-3xl md:text-4xl align-middle ${scorePack.gameIQ >= 145 ? 'text-emerald-300 drop-shadow-[0_0_12px_rgba(16,185,129,0.6)]' : 'text-indigo-200'}`}>
+                    {scorePack.gameIQ}
+                  </span>
+                </div>
+
+                <div className="text-sm text-slate-400">
+                  Accuracy: <span className="font-black text-white">{scorePack.accuracyPct}%</span> • Weighted:{' '}
+                  <span className="font-black text-white">{scorePack.weightedPct}%</span> • Answered:{' '}
+                  <span className="font-black text-white">{scorePack.totalAnswered}</span> • Time used:{' '}
+                  <span className="font-black text-white">{mmss(scorePack.usedSeconds)}</span>
+                </div>
               </div>
 
-              {/* Options Grid */}
-              <div className={`grid gap-4 ${'questionSvg' in q ? 'grid-cols-2 md:grid-cols-4' : 'grid-cols-1 md:grid-cols-2'}`}>
-                {('optionsText' in q ? q.optionsText : 'options' in q ? q.options : []).map((opt: any, i: number) => (
-                  <button
-                    key={i}
-                    onClick={() => selectAnswer(i)}
-                    className={`p-4 rounded-3xl border-2 transition-all flex items-center justify-center min-h-[4rem] text-lg font-bold
-                      ${answers[q.id]?.selected === i ? 'bg-indigo-500/20 border-indigo-500 shadow-[0_0_20px_rgba(99,102,241,0.3)]' : 'bg-white/5 border-white/5 hover:border-white/20'}`}
-                  >
-                    {typeof opt === 'string' ? opt : opt.svg ? <div className="w-16 h-16"><SvgRenderer data={opt.svg} /></div> : `Option ${i + 1}`}
-                  </button>
+              <div className="grid md:grid-cols-4 gap-3">
+                {(['logic', 'math', 'visual', 'attention'] as Domain[]).map((d) => (
+                  <div key={d} className="rounded-2xl bg-slate-900/50 border border-white/10 p-4">
+                    <div className="text-xs uppercase tracking-widest text-slate-400 font-bold">{d}</div>
+                    <div className="text-2xl font-black text-white mt-1">
+                      {scorePack.domainGot[d]}/{scorePack.domainMax[d] || 1}
+                    </div>
+                    <div className="text-sm text-slate-300">
+                      {Math.round((scorePack.domainGot[d] / (scorePack.domainMax[d] || 1)) * 100)}%
+                    </div>
+                  </div>
                 ))}
               </div>
-            </div>
 
-            {/* Navigation */}
-            <div className="flex justify-between items-center gap-4">
-              <button disabled={idx === 0} onClick={() => setIdx(idx - 1)} className="px-8 py-4 bg-slate-800 rounded-2xl font-bold opacity-50 hover:opacity-100 disabled:invisible">PREV</button>
-              {idx === total - 1 ? (
-                <button onClick={() => setFinished(true)} className="px-12 py-4 bg-emerald-600 rounded-2xl font-black shadow-lg shadow-emerald-600/20">FINISH TEST</button>
-              ) : (
-                <button onClick={() => setIdx(idx + 1)} className="px-12 py-4 bg-indigo-600 rounded-2xl font-black shadow-lg shadow-indigo-600/20">NEXT QUESTION →</button>
-              )}
-            </div>
-          </div>
-        )}
-      </div>
-    </main>
-  );
-}
+              <div className="flex flex-col sm:flex-row gap-2">
+                <button
+                  onClick={() => {
+                    setIdx(0);
+                    setAnswers({});
+                    setTimeLeft(TOTAL_TIME);
+                    setStarted(false);
+                    setFinished(false);
+                  }}
+                  className="flex-1 py-3 rounded-2xl font-black bg-indigo-600 hover:bg-indigo-500"
+                >
+                  Restart
+                </button>
+                <Link href="/" className="sm:w-56 py-3 rounded-2xl font-black bg-slate-800 hover:bg-slate-700 text-center">
+                  Back Home →
+                </Link>
+              </div>
+            </section>
+          ) : (
+            <section className="rounded-3xl bg-white/5 border border-white/10 p-6 md:p-8 space-y-6">
+              <div className="flex items-center justify-between gap-3">
+                <div className="text-sm text-slate-400 font-bold">
+                  Question <span className="text-white">{safeIdx + 1}</span> / {total}{' '}
+                  <span className="ml-2 text-xs px-2 py-1 rounded-full bg-white/5 border border-white/10 text-slate-300">
+                    {q.domain.toUpperCase()}
+                  </span>
+                </div>
+                <button
+                  onClick={finishNow}
+                  className="text-xs font-black px-3 py-2 rounded-xl bg-red-500/10 border border-red-500/20 text-red-200 hover:bg-red-500/20"
+                >
+                  Finish Now
+                </button>
+              </div>
 
-// Brain ikonu için basit SVG (Lucide alternatifi)
-function Brain({ size, className }: { size: number, className: string }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-      <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.54Z"/>
-      <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-2.54Z"/>
-    </svg>
+              <div ref={questionAreaRef} className="space-y-6">
+                <div className="text-lg md:text-xl font-black text-white">{q.prompt}</div>
+
+                <div className="flex justify-center">
+                  {'questionSvg' in q ? (
+                    <div className="w-64 h-64 bg-white rounded-xl border-4 border-slate-700 shadow-2xl overflow-hidden text-slate-900 transition-transform hover:scale-[1.02]">
+                      <SvgRenderer data={q.questionSvg} />
+                    </div>
+                  ) : 'grid' in q && q.grid ? (
+                    <CellGrid grid={q.grid} />
+                  ) : null}
+                </div>
+
+                <div className={`grid gap-3 ${'questionSvg' in q ? 'grid-cols-2 sm:grid-cols-3 md:grid-cols-5' : 'grid-cols-1 md:grid-cols-2'}`}>
+                  {'optionsText' in q ? (
+                    q.optionsText.map((opt, i) => (
+                      <button
+                        key={i}
+                        onClick={() => selectAnswer(i)}
+                        className={`p-4 rounded-2xl border text-left font-bold transition-all ${
+                          answers[q.id]?.selected === i ? 'bg-indigo-500/20 border-indigo-300/30' : 'bg-slate-950/40 border-white/10 hover:bg-white/5'
+                        }`}
+                      >
+                        {opt}
+                      </button>
+                    ))
+                  ) : 'questionSvg' in q ? (
+                    q.options.map((opt, i) => (
+                      <button
+                        key={i}
+                        onClick={() => selectAnswer(i)}
+                        className={`aspect-square p-2 rounded-xl border transition-all flex items-center justify-center bg-white text-slate-800 relative ${
+                          answers[q.id]?.selected === i
+                            ? 'ring-4 ring-indigo-500 border-indigo-600 scale-105 z-10'
+                            : 'border-slate-300 hover:border-indigo-400 hover:shadow-lg hover:-translate-y-1'
+                        }`}
+                      >
+                        <SvgRenderer data={opt.svg} />
+                        {answers[q.id]?.selected === i && (
+                          <div className="absolute top-1 right-1 bg-indigo-600 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full shadow-sm">
+                            ✓
+                          </div>
+                        )}
+                      </button>
+                    ))
+                  ) : (
+                    q.options.map((gridOpt, i) => (
+                      <button
+                        key={i}
+                        onClick={() => selectAnswer(i)}
+                        className={`p-3 rounded-2xl border transition-all text-left ${
+                          answers[q.id]?.selected === i ? 'bg-indigo-500/20 border-indigo-300/30' : 'bg-slate-950/40 border-white/10 hover:bg-white/5'
+                        }`}
+                      >
+                        <div className="text-xs uppercase tracking-widest text-slate-400 font-bold mb-2">
+                          Option {String.fromCharCode(65 + i)}
+                        </div>
+                        <CellGrid grid={gridOpt} />
+                      </button>
+                    ))
+                  )}
+                </div>
+
+                <div className="flex items-center justify-between pt-4 border-t border-white/5 mt-6">
+                  <button
+                    onClick={prev}
+                    className="px-6 py-3 rounded-2xl font-black bg-slate-800 hover:bg-slate-700 disabled:opacity-40 transition-colors"
+                    disabled={safeIdx === 0}
+                  >
+                    ← Prev
+                  </button>
+
+                  <button
+                    onClick={next}
+                    className="px-6 py-3 rounded-2xl font-black bg-indigo-600 hover:bg-indigo-500 disabled:opacity-40 transition-colors shadow-lg shadow-indigo-900/20"
+                    disabled={safeIdx >= total - 1}
+                  >
+                    Next →
+                  </button>
+                </div>
+              </div>
+            </section>
+          )}
+        </div>
+      </main>
+    </>
   );
 }
