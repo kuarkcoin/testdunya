@@ -1,8 +1,15 @@
+// app/api/analyze-result/route.ts
+
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 export async function POST(req: Request) {
   try {
     const { subject, score, total, mistakes } = await req.json();
+
+    // HATA KONTROLÜ: Eğer hata listesi boşsa yapay zekayı boşuna yorma
+    if (!mistakes || mistakes.length === 0) {
+      return Response.json({ feedback: "Mükemmel! Hiç hata yapmadın, konuya tam hakimsin. Şampiyon sensin! 🏆" });
+    }
 
     const keys = [
       process.env.GEMINI_API_KEY_1,
@@ -16,31 +23,32 @@ export async function POST(req: Request) {
     const genAI = new GoogleGenerativeAI(randomKey);
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
-    // --- GERÇEK ANALİZ PROMPT'U ---
+    // --- GERÇEK ANALİZ TALİMATI ---
     const prompt = `
-      Sen 5. sınıf öğrencisinin sınav kağıdını inceleyen bir eğitim uzmanısın. 
-      LÜTFEN BASMAKALIP CÜMLELER (Aferin, çalışmalısın, harika deneme vb.) KULLANMA. 
+      SİSTEM TALİMATI: Sen bir robot değilsin. Sen öğrencinin sınav kağıdını inceleyen, hataların altındaki psikolojik ve bilgi eksikliğini bulan bir EĞİTİM ANALİSTİSİN.
       
-      DERS: ${subject}
-      SKOR: ${total} soruda ${score} doğru.
-      
-      ÖĞRENCİNİN YANLIŞLARI:
-      ${mistakes.map((m: any) => `- Soru: ${m.prompt} | Çözüm Notu: ${m.explanation}`).join('\n')}
+      ÖĞRENCİ VERİLERİ:
+      - Ders: ${subject}
+      - Skor: ${total} soruda ${score} doğru.
+      - HATALI SORULAR VE ÇÖZÜM NOTLARI:
+      ${mistakes.map((m: any, i: number) => `${i+1}. Soru: "${m.prompt}" | Çözüm Açıklaması: "${m.explanation}"`).join('\n')}
 
-      GÖREVİN:
-      1. Yukarıdaki yanlış yapılan soruları ve açıklamalarını Oku. 
-      2. Bu soruların hangi "Kazanım" veya "Konu Başlığı" altında toplandığını bul. 
-      3. Öğrenciye doğrudan eksiğini söyle. Örn: "Hataların gösteriyor ki 'Bileşik Kesirleri Tam Sayılı Kesre Çevirme' konusunda bir mantık hatası yapıyorsun." 
-      4. Eğer sorular farklı konulardaysa, öğrencinin dikkat hatası mı yaptığını yoksa temel bir bilgi eksiği mi olduğunu teşhis et.
-      5. "Genel tekrar yap" deme. "Şu kurala (kuralın adını vererek) bir daha bakmalısın" de.
+      ANALİZ KURALLARI (KESİNLİKLE UY):
+      1. "Harika bir denemeydi", "Hatalarından ders çıkar", "Başarılar dilerim" gibi BASMAKALIP cümleleri ASLA kullanma. Eğer kullanırsan sistem hata verir.
+      2. Yanlış yapılan soruları oku ve ortak paydayı bul. (Örn: "Senin sorunun genel matematik değil, 'Bölme işleminde kalanlı sonuçlar' kısmında takılıyorsun" gibi).
+      3. Öğrenciye bir "Aydınlanma Anı" yaşat: "Yanlış yaptığın 3 soruda da aynı kavramı (kavramın adını ver) yanlış yorumladığını fark ettim." de.
+      4. Tavsiyen çok spesifik olsun. "Konu tekrarı yap" deme. "Güneş'in katmanlarını karıştırıyorsun, en içteki çekirdeği bir şeftalinin çekirdeğine benzeterek çalış" gibi somut bir şey söyle.
       
-      ÜSLUP: Net, ciddi ama samimi bir öğretmen notu gibi. Maksimum 4 cümle.
+      ÜSLUP: Zeki, dikkatli, samimi bir öğretmen. Maksimum 4 cümle.
     `;
 
     const result = await model.generateContent(prompt);
-    return Response.json({ feedback: result.response.text() });
+    const feedback = result.response.text();
+
+    return Response.json({ feedback });
 
   } catch (error) {
-    return Response.json({ feedback: "Hatalarını analiz ederken bir sorun oldu ama soruların çözümleri sana yol gösterecek." });
+    // Eğer burası çalışıyorsa, Vercel'deki anahtarlarında veya bağlantıda sorun vardır.
+    return Response.json({ feedback: "Hatalarını analiz ederken bir bağlantı sorunu oldu ama yanlış yaptığın soruların altındaki çözümler sana rehberlik edecek!" });
   }
 }
