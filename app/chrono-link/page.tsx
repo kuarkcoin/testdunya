@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Timer, Trophy, ArrowLeft, RefreshCw, Brain, Zap, AlertCircle, Award, Target } from 'lucide-react';
+import { Timer, Trophy, ArrowLeft, RefreshCw, Brain, Zap, AlertCircle } from 'lucide-react';
 import Link from 'next/link';
 
 const GRID_SIZE = 25; 
@@ -18,14 +18,12 @@ export default function ChronoLinkMaster() {
   const [combo, setCombo] = useState(0);
   const [bestScore, setBestScore] = useState(0);
 
-  // Type-safe timeout ref
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const clearTimer = useCallback(() => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
   }, []);
 
-  // Cleanup only on unmount
   useEffect(() => {
     return () => clearTimer();
   }, [clearTimer]);
@@ -71,12 +69,12 @@ export default function ChronoLinkMaster() {
 
     if (nodeId === nextExpected) {
       setNodes(prev => prev.map(n => n.id === nodeId ? { ...n, status: 'correct' } : n));
-      
+
       if (nodeId === nodes.length) {
         setScore(prev => prev + (level * 10) + (combo * 5));
         setCombo(prev => prev + 1);
         setTimeLeft(prev => prev + 5);
-        
+
         clearTimer();
         timeoutRef.current = setTimeout(() => {
           setLevel(prev => {
@@ -95,7 +93,7 @@ export default function ChronoLinkMaster() {
         n.id === nodeId ? { ...n, status: 'wrong' } : 
         n.id === nextExpected ? { ...n, status: 'hint' } : n
       ));
-      
+
       clearTimer();
       timeoutRef.current = setTimeout(() => {
         generateLevel(nodes.length, level);
@@ -126,6 +124,7 @@ export default function ChronoLinkMaster() {
         </Link>
 
         <div className="bg-zinc-900/40 border border-zinc-800 rounded-[2.5rem] p-8 shadow-2xl backdrop-blur-md relative overflow-hidden">
+          
           {/* Header HUD */}
           <div className="flex justify-between items-center mb-10">
             <div className="flex items-center gap-4">
@@ -140,7 +139,7 @@ export default function ChronoLinkMaster() {
                 </div>
               )}
             </div>
-            
+
             <div className="flex gap-2 text-center">
               <div className="bg-zinc-800 px-4 py-2 rounded-xl border border-zinc-700 w-20">
                 <Timer size={14} className="mx-auto mb-1 text-zinc-400" />
@@ -166,37 +165,50 @@ export default function ChronoLinkMaster() {
           )}
 
           {(gameState === 'preview' || gameState === 'playing') && (
-            <div className="grid grid-cols-5 gap-3 aspect-square w-full relative">
-              {Array.from({ length: GRID_SIZE }).map((_, i) => {
-                const node = nodes.find(n => n.pos === i);
-                return (
-                  <div key={i} className="relative aspect-square bg-white/5 rounded-xl border border-white/10">
-                    {node && (
-                      <motion.button
-                        initial={{ scale: 0 }}
-                        animate={{ 
-                          scale: 1,
-                          backgroundColor: 
-                            node.status === 'correct' ? '#22c55e' : 
-                            node.status === 'wrong' ? '#ef4444' : 
-                            node.status === 'hint' ? '#eab308' :
-                            node.status === 'visible' ? '#a21caf' : '#1e293b'
-                        }}
-                        onClick={() => handleNodeClick(node.id)}
-                        disabled={gameState !== 'playing'}
-                        className={`absolute inset-0 w-full h-full rounded-xl flex items-center justify-center font-black text-xl shadow-inner transition-colors ${gameState === 'preview' ? 'cursor-wait pointer-events-none' : 'cursor-pointer'}`}
-                      >
-                        {(node.status !== 'hidden') && node.id}
-                      </motion.button>
-                    )}
-                  </div>
-                );
-              })}
-              {gameState === 'preview' && (
-                <div className="absolute inset-0 bg-black/10 backdrop-blur-[1px] flex items-center justify-center pointer-events-none">
-                  <div className="bg-fuchsia-600 text-white px-6 py-2 rounded-full text-xs font-black animate-pulse shadow-2xl">SCANNING SEQUENCE...</div>
-                </div>
-              )}
+            <div className="relative">
+              {/* SCANNING SEQUENCE YAZISI - Grid Dışına Taşındı */}
+              <AnimatePresence>
+                {gameState === 'preview' && (
+                  <motion.div 
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0 }}
+                    className="absolute -top-10 left-0 right-0 flex justify-center z-10"
+                  >
+                    <div className="bg-fuchsia-600/20 border border-fuchsia-500/40 text-fuchsia-400 px-4 py-1.5 rounded-full text-[10px] font-black animate-pulse uppercase tracking-[0.2em] backdrop-blur-sm">
+                      Scanning Sequence...
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+
+              <div className="grid grid-cols-5 gap-3 aspect-square w-full relative">
+                {Array.from({ length: GRID_SIZE }).map((_, i) => {
+                  const node = nodes.find(n => n.pos === i);
+                  return (
+                    <div key={i} className="relative aspect-square bg-white/5 rounded-xl border border-white/10">
+                      {node && (
+                        <motion.button
+                          initial={{ scale: 0 }}
+                          animate={{ 
+                            scale: 1,
+                            backgroundColor: 
+                              node.status === 'correct' ? '#22c55e' : 
+                              node.status === 'wrong' ? '#ef4444' : 
+                              node.status === 'hint' ? '#eab308' :
+                              node.status === 'visible' ? '#a21caf' : '#1e293b'
+                          }}
+                          onClick={() => handleNodeClick(node.id)}
+                          disabled={gameState !== 'playing'}
+                          className={`absolute inset-0 w-full h-full rounded-xl flex items-center justify-center font-black text-xl shadow-inner transition-colors ${gameState === 'preview' ? 'cursor-wait pointer-events-none' : 'cursor-pointer'}`}
+                        >
+                          {(node.status !== 'hidden') && node.id}
+                        </motion.button>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           )}
 
