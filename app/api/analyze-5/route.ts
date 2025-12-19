@@ -16,35 +16,31 @@ export async function POST(req: Request) {
     const genAI = new GoogleGenerativeAI(randomKey);
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
-    // --- ARTIK EZBER CÜMLE YOK, SADECE VERİ VE MANTIK VAR ---
+    // --- GERÇEK ANALİZ PROMPT'U ---
     const prompt = `
-      GÖREV: 5. sınıf öğrencisi için bir sınav sonuç analisti ve rehber öğretmen ol.
+      Sen 5. sınıf öğrencisinin sınav kağıdını inceleyen bir eğitim uzmanısın. 
+      LÜTFEN BASMAKALIP CÜMLELER (Aferin, çalışmalısın, harika deneme vb.) KULLANMA. 
       
-      VERİLER:
-      - Ders: ${subject}
-      - Başarı: ${total} soruda ${score} doğru.
-      - Yanlış Yapılan Soruların Detayları:
-      ${mistakes.map((m: any) => `Soru: ${m.prompt} | Çözüm Mantığı: ${m.explanation}`).join('\n')}
+      DERS: ${subject}
+      SKOR: ${total} soruda ${score} doğru.
+      
+      ÖĞRENCİNİN YANLIŞLARI:
+      ${mistakes.map((m: any) => `- Soru: ${m.prompt} | Çözüm Notu: ${m.explanation}`).join('\n')}
 
-      ANALİZ TALİMATI:
-      1. Yukarıdaki yanlış yapılan soruları ve çözüm açıklamalarını derinlemesine oku.
-      2. Bu yanlışların arasındaki GİZLİ BAĞLANTIYI bul. (Örn: Öğrenci sürekli 'sıfatlar' konusunu mu yanlış yapmış? Yoksa 'okuduğunu anlama' kısmında bir dikkat hatası mı var?)
-      3. Öğrenciye asla "Aferin", "Daha çok çalış" gibi jenerik/boş cümleler kurma.
-      4. Doğrudan teşhisi koy: "Hatalarına baktığımda [şu konudaki] şu mantığı tam oturtamadığını görüyorum" şeklinde bir uzman yorumu yap.
-      5. Bir öğretmenin kağıt üzerine düştüğü o samimi ve zeki not gibi olsun. 
-      6. Cümleleri sen kur, kalıp kullanma. Maksimum 4-5 cümle olsun.
+      GÖREVİN:
+      1. Yukarıdaki yanlış yapılan soruları ve açıklamalarını Oku. 
+      2. Bu soruların hangi "Kazanım" veya "Konu Başlığı" altında toplandığını bul. 
+      3. Öğrenciye doğrudan eksiğini söyle. Örn: "Hataların gösteriyor ki 'Bileşik Kesirleri Tam Sayılı Kesre Çevirme' konusunda bir mantık hatası yapıyorsun." 
+      4. Eğer sorular farklı konulardaysa, öğrencinin dikkat hatası mı yaptığını yoksa temel bir bilgi eksiği mi olduğunu teşhis et.
+      5. "Genel tekrar yap" deme. "Şu kurala (kuralın adını vererek) bir daha bakmalısın" de.
+      
+      ÜSLUP: Net, ciddi ama samimi bir öğretmen notu gibi. Maksimum 4 cümle.
     `;
 
     const result = await model.generateContent(prompt);
-    const response = await result.response;
-    const feedback = response.text();
-
-    return Response.json({ feedback });
+    return Response.json({ feedback: result.response.text() });
 
   } catch (error) {
-    console.error("AI Hatası:", error);
-    return Response.json({ 
-      feedback: "Hatalarını analiz ederken teknik bir sorun oluştu ama yanlış yaptığın soruların açıklamaları sana yol gösterecektir." 
-    });
+    return Response.json({ feedback: "Hatalarını analiz ederken bir sorun oldu ama soruların çözümleri sana yol gösterecek." });
   }
 }
