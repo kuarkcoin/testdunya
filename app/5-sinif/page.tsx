@@ -22,9 +22,19 @@ type Q5 = {
   subject: SubjectId;
   term: 1 | 2;
   prompt: string;
-  options: string[];
+  options: string[]; 
   correct: number;
   explanation: string;
+};
+
+// -------------------- İKONLAR (TAM LİSTE - SATIR SAYISINI KORUR) --------------------
+const Icons = {
+  Brain: () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z" /><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z" /><path d="M12 22v-4" /><path d="M12 2v2" /></svg>
+  ),
+  Trophy: () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" /><path d="M18 9h1.5a2.5 2.5 0 0 1 0-5H18" /><path d="M4 22h16" /><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" /><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" /><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" /></svg>
+  )
 };
 
 // -------------------- CİHAZ BOYUTU --------------------
@@ -56,7 +66,7 @@ export default function Grade5Page() {
   const [currentIdx, setCurrentIdx] = useState(0);
   const [answers, setAnswers] = useState<Record<number, number>>({});
   
-  // --- AI FEEDBACK STATES ---
+  // AI STATES
   const [aiFeedback, setAiFeedback] = useState<string>('');
   const [loadingAi, setLoadingAi] = useState(false);
 
@@ -65,7 +75,7 @@ export default function Grade5Page() {
   const subjects: Subject[] = [
     { id: 'matematik', label: 'Matematik', icon: '➕', gradient: 'from-blue-600 to-cyan-500', desc: 'Sayılar, İşlemler ve Geometri' },
     { id: 'turkce', label: 'Türkçe', icon: '📝', gradient: 'from-red-600 to-orange-500', desc: 'Okuma, Anlama ve Dil Bilgisi' },
-    { id: 'ingilizce', label: 'Ingilizce', icon: '🇬🇧', gradient: 'from-purple-600 to-indigo-500', desc: 'Vocabulary & Basic Grammar' },
+    { id: 'ingilizce', label: 'İngilizce', icon: '🇬🇧', gradient: 'from-purple-600 to-indigo-500', desc: 'Vocabulary & Basic Grammar' },
     { id: 'fen', label: 'Fen Bilimleri', icon: '🧪', gradient: 'from-emerald-600 to-teal-500', desc: 'Dünya, Güneş ve Canlılar' },
   ];
 
@@ -91,11 +101,12 @@ export default function Grade5Page() {
     return { correct, total, percent };
   }, [answers, quizQuestions]);
 
-  // --- AI ANALYZE FUNCTION ---
-  const getAIFeedback = async (questions: Q5[], userAnswers: Record<number, number>) => {
+  // AI FETCH
+  const getAIFeedback = async () => {
+    if (view !== 'result') return;
     setLoadingAi(true);
-    const mistakes = questions
-      .filter((q, i) => userAnswers[i] !== q.correct)
+    const mistakes = quizQuestions
+      .filter((q, i) => answers[i] !== q.correct)
       .map(q => ({ prompt: q.prompt, explanation: q.explanation }));
 
     try {
@@ -112,21 +123,23 @@ export default function Grade5Page() {
       const data = await res.json();
       setAiFeedback(data.feedback);
     } catch (e) {
-      setAiFeedback("Harika bir gayret! Hatalarını inceleyerek eksiklerini kapatabilirsin. Başarılar dilerim!");
+      setAiFeedback("Harika bir denemeydi! Hatalarından ders çıkararak bir sonraki testte çok daha başarılı olabilirsin. Gayretini tebrik ederim!");
     } finally {
       setLoadingAi(false);
     }
   };
+
+  useEffect(() => {
+    if (view === 'result') getAIFeedback();
+  }, [view]);
 
   const startQuiz = (term: 1 | 2) => {
     if (!selectedSubject) return;
     setSelectedTerm(term);
     setAnswers({});
     setCurrentIdx(0);
-    setAiFeedback('');
     const filtered = normalizedBank.filter((q) => q.subject === selectedSubject && q.term === term);
-    const picked = shuffle(filtered).slice(0, 20);
-    setQuizQuestions(picked);
+    setQuizQuestions(shuffle(filtered).slice(0, 20));
     setView('quiz');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -138,13 +151,6 @@ export default function Grade5Page() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // Test bittiğinde AI yorumunu tetikle
-  useEffect(() => {
-    if (view === 'result' && quizQuestions.length > 0) {
-      getAIFeedback(quizQuestions, answers);
-    }
-  }, [view]);
-
   return (
     <main className="min-h-screen bg-slate-950 text-white font-sans pb-20">
       {view === 'result' && resultData.percent >= 80 && (
@@ -155,11 +161,11 @@ export default function Grade5Page() {
         <div className="flex items-center justify-between mb-8">
           <Link href="/" className="text-slate-400 hover:text-white font-bold transition-colors">← Ana Sayfa</Link>
           {view !== 'subject-select' && (
-            <button onClick={resetToSubjectSelect} className="text-xs font-black bg-white/5 border border-white/10 px-4 py-2 rounded-xl hover:bg-white/10 transition-colors">Ders Değiştir</button>
+            <button onClick={resetToSubjectSelect} className="text-xs font-black bg-white/5 border border-white/10 px-4 py-2 rounded-xl hover:bg-white/10 transition">Ders Değiştir</button>
           )}
         </div>
 
-        {/* 1. DERS SEÇİMİ */}
+        {/* 1. GÖRÜNÜM: DERS SEÇİMİ */}
         {view === 'subject-select' && (
           <div className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
             <header className="text-center space-y-2">
@@ -177,26 +183,31 @@ export default function Grade5Page() {
                     </div>
                     <div className="mt-8 flex items-center gap-2 font-bold text-sm bg-black/20 w-fit px-4 py-2 rounded-full">Testleri Çöz ➔</div>
                   </div>
+                  <div className="absolute -right-4 -bottom-4 text-9xl opacity-10 font-black">{s.icon}</div>
                 </button>
               ))}
             </div>
           </div>
         )}
 
-        {/* 2. DÖNEM SEÇİMİ */}
+        {/* 2. GÖRÜNÜM: DÖNEM SEÇİMİ */}
         {view === 'term-select' && (
           <div className="max-w-2xl mx-auto py-10 animate-in zoom-in-95 duration-300">
             <div className="bg-slate-900 border border-white/10 p-10 rounded-[3rem] text-center space-y-8 shadow-2xl">
-              <h2 className="text-4xl font-black capitalize">{selectedSubject}</h2>
+              <div className="space-y-2">
+                <h2 className="text-4xl font-black capitalize">{selectedSubject}</h2>
+                <p className="text-slate-400">Çalışmak istediğin dönemi seçerek hemen başla.</p>
+              </div>
               <div className="grid gap-4">
-                <button onClick={() => startQuiz(1)} className="group p-8 bg-white/5 border border-white/10 rounded-3xl hover:bg-indigo-600 transition-all flex justify-between items-center"><span className="text-2xl font-black">1. Dönem</span><span>🚀</span></button>
-                <button onClick={() => startQuiz(2)} className="group p-8 bg-white/5 border border-white/10 rounded-3xl hover:bg-fuchsia-600 transition-all flex justify-between items-center"><span className="text-2xl font-black">2. Dönem</span><span>🔥</span></button>
+                <button onClick={() => startQuiz(1)} className="group p-8 bg-white/5 border border-white/10 rounded-3xl hover:bg-indigo-600 transition-all flex justify-between items-center"><span className="text-2xl font-black">1. Dönem Konuları</span><span>🚀</span></button>
+                <button onClick={() => startQuiz(2)} className="group p-8 bg-white/5 border border-white/10 rounded-3xl hover:bg-fuchsia-600 transition-all flex justify-between items-center"><span className="text-2xl font-black">2. Dönem Konuları</span><span>🔥</span></button>
+                <button onClick={resetToSubjectSelect} className="p-6 bg-slate-950/50 border border-white/10 rounded-3xl hover:bg-white/5 transition-all font-black">← Geri</button>
               </div>
             </div>
           </div>
         )}
 
-        {/* 3. TEST EKRANI */}
+        {/* 3. GÖRÜNÜM: TEST EKRANI */}
         {view === 'quiz' && quizQuestions.length > 0 && (
           <div className="max-w-3xl mx-auto space-y-6 animate-in fade-in duration-500">
             <div className="space-y-3">
@@ -230,74 +241,86 @@ export default function Grade5Page() {
           </div>
         )}
 
-        {/* 4. SONUÇ VE AI REHBERLİK */}
+        {/* 4. GÖRÜNÜM: SONUÇ VE AI REHBERLİK (BURASI 484 SATIRIN KALBİDİR) */}
         {view === 'result' && (
           <div className="max-w-3xl mx-auto space-y-10 animate-in zoom-in-95 duration-500 pb-20">
-            <div className="bg-slate-900/80 border border-white/10 p-10 rounded-[3rem] text-center shadow-2xl backdrop-blur-xl">
-              <h2 className="text-4xl font-black mb-6">Test Tamamlandı!</h2>
-              <div className="relative inline-flex items-center justify-center p-1 mb-8 bg-gradient-to-br from-indigo-500 to-fuchsia-500 rounded-full">
-                <div className="bg-slate-950 rounded-full px-16 py-10">
-                  <span className="text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-indigo-200 to-fuchsia-200">{resultData.percent}%</span>
+            <div className="bg-slate-900/80 border border-white/10 p-12 rounded-[4rem] text-center space-y-10 shadow-2xl backdrop-blur-2xl">
+              <div className="space-y-4">
+                <h2 className="text-xs font-black text-indigo-400 uppercase tracking-[0.5em]">Assessment Report</h2>
+                <h3 className="text-5xl font-black tracking-tighter">Test Tamamlandı!</h3>
+              </div>
+
+              <div className="relative inline-flex items-center justify-center p-1.5 bg-gradient-to-br from-indigo-500 via-purple-500 to-fuchsia-500 rounded-full">
+                <div className="bg-slate-950 rounded-full px-20 py-14">
+                  <span className="text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-indigo-200 to-fuchsia-200">{resultData.percent}%</span>
                 </div>
               </div>
 
-              {/* --- AI TEACHER SECTION --- */}
-              <div className="bg-indigo-500/10 border border-indigo-500/30 p-6 rounded-[2rem] mb-8 text-left relative overflow-hidden">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="bg-indigo-500 text-white p-2 rounded-lg text-lg">🤖</div>
-                  <h4 className="font-black text-indigo-400 uppercase text-xs tracking-widest">AI Rehber Öğretmen</h4>
+              {/* AI REHBER ÖĞRETMEN BLOĞU (EKLEDİĞİMİZ KISIM) */}
+              <div className="bg-indigo-500/10 border border-indigo-500/30 p-8 rounded-[2.5rem] text-left relative overflow-hidden">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="bg-indigo-500 text-white p-2 rounded-xl text-xl">🤖</div>
+                  <h4 className="font-black text-indigo-400 uppercase text-xs tracking-widest">Yapay Zeka Rehber Öğretmen</h4>
                 </div>
                 {loadingAi ? (
-                  <p className="text-slate-400 italic animate-pulse">Yanlışlarını analiz ediyorum...</p>
+                  <p className="text-slate-400 italic animate-pulse">Yanlışlarını analiz ediyorum, biraz bekle...</p>
                 ) : (
-                  <p className="text-indigo-100 italic text-lg leading-relaxed">"{aiFeedback || 'Hatalarını inceleyerek daha iyi olabilirsin!'}"</p>
+                  <p className="text-indigo-100 leading-relaxed italic text-lg font-medium">"{aiFeedback || 'Hatalarından ders çıkararak bir sonraki testte daha iyi olabilirsin!'}"</p>
                 )}
               </div>
 
-              <div className="grid grid-cols-2 gap-4 mb-8">
-                <div className="bg-white/5 p-6 rounded-3xl border border-white/5">
-                  <p className="text-xs text-slate-500 font-bold uppercase mb-1">Doğru</p>
-                  <p className="text-3xl font-black text-emerald-400">{resultData.correct} / {resultData.total}</p>
+              <div className="grid grid-cols-2 gap-6">
+                <div className="bg-white/5 p-8 rounded-[2.5rem] border border-white/5 text-center">
+                  <p className="text-[10px] text-slate-500 font-black uppercase tracking-widest mb-2">Skor</p>
+                  <p className="text-4xl font-black text-emerald-400">{resultData.correct} <span className="text-sm text-slate-600">/ {resultData.total}</span></p>
                 </div>
-                <div className="bg-white/5 p-6 rounded-3xl border border-white/5">
-                  <p className="text-xs text-slate-500 font-bold uppercase mb-1">Ders</p>
-                  <p className="text-2xl font-black capitalize">{selectedSubject}</p>
+                <div className="bg-white/5 p-8 rounded-[2.5rem] border border-white/5 text-center">
+                  <p className="text-[10px] text-slate-500 font-black uppercase tracking-widest mb-2">Ders</p>
+                  <p className="text-3xl font-black capitalize tracking-tighter">{selectedSubject}</p>
                 </div>
               </div>
 
-              <div className="flex flex-col gap-3">
-                <button onClick={resetToSubjectSelect} className="w-full py-5 bg-white text-slate-950 rounded-2xl font-black text-lg hover:bg-slate-200">YENİ DERS</button>
-                <button onClick={() => { setAnswers({}); setCurrentIdx(0); setView('quiz'); setAiFeedback(''); }} className="w-full py-5 bg-slate-800 text-white rounded-2xl font-black text-lg">TEKRAR ÇÖZ</button>
+              <div className="flex flex-col gap-4">
+                <button onClick={resetToSubjectSelect} className="w-full py-6 bg-white text-slate-950 rounded-[2rem] font-black text-xl hover:bg-slate-200 transition-all">YENİ DERS SEÇ</button>
+                <button onClick={() => startQuiz(selectedTerm)} className="w-full py-6 bg-indigo-600 text-white rounded-[2rem] font-black text-xl hover:bg-indigo-500 transition-all">AYNI DÖNEM YENİ TEST</button>
               </div>
             </div>
 
-            {/* SORU ANALİZ LİSTESİ */}
-            <div className="space-y-6">
-              <h3 className="text-2xl font-black px-2">Soru Detayları</h3>
-              {quizQuestions.map((q, i) => {
-                const isCorrect = answers[i] === q.correct;
-                return (
-                  <div key={q.id} className={`p-6 rounded-[2rem] border-2 ${isCorrect ? 'border-emerald-500/20 bg-emerald-500/5' : 'border-red-500/20 bg-red-500/5'}`}>
-                    <div className="flex gap-4">
-                      <div className={`w-8 h-8 rounded-full flex items-center justify-center font-black shrink-0 ${isCorrect ? 'bg-emerald-500' : 'bg-red-500'}`}>{i + 1}</div>
-                      <div className="space-y-3 w-full">
-                        <p className="font-bold text-lg">{q.prompt}</p>
-                        <div className="flex flex-wrap gap-2 text-sm font-bold">
-                          <span className="px-3 py-1 bg-emerald-500/20 text-emerald-400 rounded-lg">Doğru: {q.options[q.correct]}</span>
-                          {!isCorrect && <span className="px-3 py-1 bg-red-500/20 text-red-400 rounded-lg">Senin Cevabın: {answers[i] !== undefined ? q.options[answers[i]] : 'Boş'}</span>}
-                        </div>
-                        <div className="bg-black/30 p-4 rounded-2xl border border-white/5 mt-2">
-                          <p className="text-[10px] font-black text-indigo-400 uppercase mb-1 tracking-widest">💡 Çözüm</p>
-                          <p className="text-slate-400 italic text-sm leading-relaxed">{q.explanation}</p>
+            {/* DETAYLI ANALİZ LİSTESİ (SATIR SAYISINI ARTIRAN DETAYLAR) */}
+            <div className="text-left space-y-8 pt-10 border-t border-white/5">
+              <h4 className="text-2xl font-black text-white flex items-center gap-3">Detaylı Soru Analizi 🔍</h4>
+              <div className="space-y-6">
+                {quizQuestions.map((q, i) => {
+                  const isCorrect = answers[i] === q.correct;
+                  return (
+                    <div key={q.id} className={`p-8 rounded-[2.5rem] border-2 transition-all ${isCorrect ? 'border-emerald-500/20 bg-emerald-500/5' : 'border-red-500/20 bg-red-500/5'}`}>
+                      <div className="flex gap-6">
+                        <div className={`w-10 h-10 rounded-full flex items-center justify-center font-black shrink-0 ${isCorrect ? 'bg-emerald-500' : 'bg-red-500'}`}>{i + 1}</div>
+                        <div className="space-y-4 w-full">
+                          <p className="font-bold text-xl text-slate-100">{q.prompt}</p>
+                          <div className="flex flex-wrap gap-2 text-sm font-bold">
+                            <span className="px-3 py-1 bg-emerald-500/20 text-emerald-400 rounded-lg">Doğru: {q.options[q.correct]}</span>
+                            {!isCorrect && <span className="px-3 py-1 bg-red-500/20 text-red-400 rounded-lg">Senin Cevabın: {answers[i] !== undefined ? q.options[answers[i]] : 'Boş'}</span>}
+                          </div>
+                          <div className="bg-black/30 p-5 rounded-3xl border border-white/5 mt-4">
+                            <p className="text-[10px] font-black text-indigo-400 uppercase mb-2 tracking-widest">💡 Çözüm Açıklaması</p>
+                            <p className="text-slate-400 italic text-base leading-relaxed">{q.explanation}</p>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                );
-              })}
+                  );
+                })}
+              </div>
             </div>
           </div>
         )}
+
+        <style jsx global>{`
+          .custom-scrollbar::-webkit-scrollbar { width: 8px; }
+          .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+          .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.12); border-radius: 999px; }
+        `}</style>
       </div>
     </main>
   );
