@@ -425,82 +425,104 @@ export default function ChronoLinkMaster() {
                 <span className="text-3xl font-black italic text-fuchsia-500">{level}</span>
               </div>
 
-              {(gameState === 'preview' || gameState === 'playing' || gameState === 'between') && (
-  <div className="relative">
-    {/* GRID */}
-    <div
-      className="grid gap-3 aspect-square w-full relative"
-      style={{ gridTemplateColumns: `repeat(${currentGridCols}, minmax(0, 1fr))` }}
-    >
-      {Array.from({ length: currentGridSize }).map((_, i) => {
-        const node = nodes.find((n) => n.pos === i);
-        return (
-          <div
-            key={i}
-            className="relative aspect-square bg-white/5 rounded-xl border border-white/10"
-          >
-            {node && (
-              <motion.button
-                initial={{ scale: 0 }}
-                animate={{
-                  scale: 1,
-                  backgroundColor:
-                    node.status === 'correct'
-                      ? '#22c55e'
-                      : node.status === 'wrong'
-                        ? '#ef4444'
-                        : node.status === 'hint'
-                          ? '#eab308'
-                          : node.status === 'visible'
-                            ? '#a21caf'
-                            : '#1e293b',
-                }}
-                onClick={() => handleNodeClick(node.id)}
-                disabled={gameState !== 'playing'}
-                className={`absolute inset-0 w-full h-full rounded-xl flex items-center justify-center font-black text-xl shadow-inner ${
-                  gameState === 'preview'
-                    ? 'cursor-wait pointer-events-none'
-                    : 'cursor-pointer'
-                }`}
-              >
-                {node.status !== 'hidden' && node.id}
-              </motion.button>
-            )}
+              {gameState === 'playing' && (
+                <div className="bg-fuchsia-500/10 px-3 py-1 rounded-lg border border-fuchsia-500/20">
+                  <p className="text-[8px] font-bold text-fuchsia-400 uppercase">Target</p>
+                  <p className="text-lg font-black text-white leading-none">{nextExpected}</p>
+                </div>
+              )}
+
+              {combo > 0 && gameState !== 'idle' && (
+                <div className="bg-amber-500/10 px-3 py-1 rounded-lg border border-amber-500/20">
+                  <p className="text-[8px] font-bold text-amber-300 uppercase">Combo</p>
+                  <p className="text-lg font-black text-white leading-none">x{combo}</p>
+                </div>
+              )}
+            </div>
+
+            <div className="flex gap-2 text-center">
+              <div className="bg-zinc-800 px-4 py-2 rounded-xl border border-zinc-700 w-20">
+                <Timer size={14} className="mx-auto mb-1 text-zinc-400" />
+                <span className="font-bold block">{timeLeft}s</span>
+              </div>
+
+              <div className="bg-zinc-800 px-4 py-2 rounded-xl border border-zinc-700 w-20">
+                <Trophy size={14} className="mx-auto mb-1 text-amber-500" />
+                <span className="font-bold block">{score}</span>
+              </div>
+            </div>
           </div>
-        );
-      })}
-    </div>
 
-    {/* ✅ STATUS BAR – GRID DIŞI, ALTTA */}
-    <div className="mt-4 min-h-[28px] flex justify-center">
-      <AnimatePresence>
-        {gameState === 'preview' && (
-          <motion.div
-            initial={{ opacity: 0, y: 6 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 6 }}
-          >
-            <div className="bg-fuchsia-600/20 border border-fuchsia-500/40 text-fuchsia-300 px-4 py-1.5 rounded-full text-[10px] font-black animate-pulse uppercase tracking-[0.2em] backdrop-blur-sm">
-              Scanning Sequence... ({Math.round(previewMs / 100) / 10}s)
-            </div>
-          </motion.div>
-        )}
+          {/* lives + difficulty */}
+          <div className="flex items-center justify-between gap-3 mb-6">
+            <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1 bg-zinc-800 border border-zinc-700 rounded-xl px-3 py-2">
+                {Array.from({ length: DIFF[difficulty].lifeStart }).map((_, i) => (
+                  <Heart
+                    key={i}
+                    size={16}
+                    className={i < lives ? 'text-rose-500' : 'text-zinc-600'}
+                    fill={i < lives ? 'currentColor' : 'none'}
+                  />
+                ))}
+              </div>
 
-        {gameState === 'between' && (
-          <motion.div
-            initial={{ opacity: 0, scale: 0.98 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0 }}
-          >
-            <div className="bg-emerald-600/20 border border-emerald-500/40 text-emerald-200 px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.2em] backdrop-blur-sm">
-              LINK COMPLETE
+              {perfectThisLevel && (gameState === 'playing' || gameState === 'between') && (
+                <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 rounded-xl px-3 py-2">
+                  <Zap size={16} />
+                  <span className="text-xs font-black uppercase tracking-wider">Perfect</span>
+                </div>
+              )}
             </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </div>
-  </div>
-)}
+
+            <div className="flex gap-2">
+              {difficultyButtons.map((b) => (
+                <button
+                  key={b.key}
+                  onClick={() => {
+                    if (gameState !== 'idle') return;
+                    setDifficulty(b.key);
+                    setTimeLeft(DIFF[b.key].timeStart);
+                    setLives(DIFF[b.key].lifeStart);
+                  }}
+                  className={[
+                    'px-3 py-2 rounded-xl border text-xs font-black uppercase tracking-wider transition',
+                    b.key === difficulty
+                      ? 'bg-fuchsia-600/20 border-fuchsia-500/40 text-fuchsia-200'
+                      : 'bg-zinc-900/40 border-zinc-700 text-zinc-300 hover:text-white hover:border-zinc-500',
+                    gameState !== 'idle' ? 'opacity-50 cursor-not-allowed' : '',
+                  ].join(' ')}
+                >
+                  {b.label}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {(gameState === 'preview' || gameState === 'playing' || gameState === 'between') && (
+            <div className="relative">
+              <AnimatePresence>
+                {gameState === 'preview' && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0 }}
+                    className="absolute -top-12 left-0 right-0 flex justify-center z-10"
+                  >
+                    <div className="bg-fuchsia-600/20 border border-fuchsia-500/40 text-fuchsia-300 px-4 py-1.5 rounded-full text-[10px] font-black animate-pulse uppercase tracking-[0.2em] backdrop-blur-sm">
+                      Scanning Sequence... ({Math.round(previewMs / 100) / 10}s)
+                    </div>
+                  </motion.div>
+                )}
+
+                {gameState === 'between' && (
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.98 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0 }}
+                    className="absolute -top-12 left-0 right-0 flex justify-center z-10"
+                  >
+                    <div className="bg-emerald-600/20 border border-emerald-500/40 text-emerald-200 px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.2em] backdrop-blur-sm">
                       LINK COMPLETE
                       {perfectThisLevel ? ' • PERFECT BONUS' : ''}
                     </div>
