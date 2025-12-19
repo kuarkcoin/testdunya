@@ -33,7 +33,7 @@ export default function ListeningMenu() {
     { id: 'ielts-listening-3', title: 'Museum Tour', part: 'Part 2', level: 'Medium' },
     { id: 'ielts-listening-4', title: 'Zoo Volunteering', part: 'Part 2', level: 'Easy' },
     { id: 'ielts-listening-5', title: 'Business Project', part: 'Part 3', level: 'Hard' },
-    { id: 'ielts-listening-7', title: 'Research Proposal', part: 'Part 3', level: 'Hard', locked: true }, // örnek kilitli
+    { id: 'ielts-listening-7', title: 'Research Proposal', part: 'Part 3', level: 'Hard' },
   ];
 
   const activeCount = tests.filter((t) => !t.locked).length;
