@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { Gamepad2, Zap, Target, ArrowRight, Trophy } from 'lucide-react';
+import { Gamepad2, Zap, Target, ArrowRight, Trophy, Brain } from 'lucide-react';
 
 export default function DashboardPage() {
   const games = [
@@ -14,6 +14,15 @@ export default function DashboardPage() {
       color: 'from-zinc-900 to-black',
       border: 'border-cyan-500/50',
       badge: 'Cognitive'
+    },
+    {
+      id: 'chrono-link',
+      title: 'Chrono Link',
+      desc: 'Visual memory challenge. Memorize the sequence and connect nodes in time.',
+      icon: <Brain className="w-8 h-8 text-purple-400" />,
+      color: 'from-zinc-900 to-black',
+      border: 'border-purple-500/50',
+      badge: 'Spatial Memory'
     },
     {
       id: 'number-hunter',
@@ -32,24 +41,24 @@ export default function DashboardPage() {
         {/* Header */}
         <header className="mb-12 flex justify-between items-end">
           <div>
-            <h1 className="text-4xl md:text-6xl font-black tracking-tighter mb-2">
-              GAME<span className="text-cyan-500">LAB</span>
+            <h1 className="text-4xl md:text-6xl font-black tracking-tighter mb-2 uppercase">
+              Neural<span className="text-cyan-500">Lab</span>
             </h1>
-            <p className="text-zinc-500 font-medium">Select a training module to begin.</p>
+            <p className="text-zinc-500 font-medium italic">Kabiliyetlerini test et, sınırlarını zorla.</p>
           </div>
           <div className="hidden md:flex items-center gap-2 bg-zinc-900 px-4 py-2 rounded-full border border-zinc-800">
             <Trophy size={18} className="text-amber-400" />
-            <span className="text-sm font-bold">Daily Rank: #12</span>
+            <span className="text-sm font-bold">Global Rank: #1</span>
           </div>
         </header>
 
         {/* Game Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {games.map((game) => (
             <Link 
               key={game.id} 
               href={`/${game.id}`}
-              className={`group relative overflow-hidden rounded-[2.5rem] bg-gradient-to-br ${game.color} p-8 border ${game.border} transition-all hover:scale-[1.02] hover:shadow-2xl hover:shadow-cyan-500/10`}
+              className={`group relative overflow-hidden rounded-[2.5rem] bg-gradient-to-br ${game.color} p-8 border ${game.border} transition-all hover:scale-[1.05] hover:shadow-2xl hover:shadow-${game.id === 'chrono-link' ? 'purple' : 'cyan'}-500/10`}
             >
               <div className="relative z-10 flex flex-col justify-between h-full">
                 <div>
@@ -57,15 +66,15 @@ export default function DashboardPage() {
                     {game.badge}
                   </div>
                   <div className="mb-4">{game.icon}</div>
-                  <h3 className="text-3xl font-black mb-3">{game.title}</h3>
-                  <p className="text-zinc-400 text-sm leading-relaxed max-w-xs">
+                  <h3 className="text-3xl font-black mb-3 italic tracking-tighter">{game.title}</h3>
+                  <p className="text-zinc-400 text-sm leading-relaxed">
                     {game.desc}
                   </p>
                 </div>
 
                 <div className="mt-8 flex items-center justify-between">
-                  <div className="flex items-center gap-2 text-sm font-bold group-hover:text-cyan-400 transition-colors">
-                    START TRAINING <ArrowRight size={16} />
+                  <div className="flex items-center gap-2 text-sm font-bold group-hover:text-white transition-colors">
+                    BAĞLANTI KUR <ArrowRight size={16} />
                   </div>
                   <Gamepad2 className="opacity-10 group-hover:opacity-100 transition-opacity" />
                 </div>
