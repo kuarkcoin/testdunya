@@ -27,7 +27,7 @@ type Q5 = {
   explanation: string;
 };
 
-// -------------------- İKONLAR (TAM LİSTE - SATIR SAYISINI KORUR) --------------------
+// -------------------- İKONLAR --------------------
 const Icons = {
   Brain: () => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z" /><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z" /><path d="M12 22v-4" /><path d="M12 2v2" /></svg>
@@ -65,7 +65,7 @@ export default function Grade5Page() {
   const [quizQuestions, setQuizQuestions] = useState<Q5[]>([]);
   const [currentIdx, setCurrentIdx] = useState(0);
   const [answers, setAnswers] = useState<Record<number, number>>({});
-  
+
   // AI STATES
   const [aiFeedback, setAiFeedback] = useState<string>('');
   const [loadingAi, setLoadingAi] = useState(false);
@@ -123,7 +123,7 @@ export default function Grade5Page() {
       const data = await res.json();
       setAiFeedback(data.feedback);
     } catch (e) {
-      setAiFeedback("Harika bir denemeydi! Hatalarından ders çıkararak bir sonraki testte çok daha başarılı olabilirsin. Gayretini tebrik ederim!");
+      setAiFeedback("Harika bir denemeydi! Hatalarından ders çıkararak bir sonraki testte daha başarılı olabilirsin.");
     } finally {
       setLoadingAi(false);
     }
@@ -241,12 +241,12 @@ export default function Grade5Page() {
           </div>
         )}
 
-        {/* 4. GÖRÜNÜM: SONUÇ VE AI REHBERLİK (BURASI 484 SATIRIN KALBİDİR) */}
+        {/* 4. GÖRÜNÜM: SONUÇ VE AI REHBERLİK */}
         {view === 'result' && (
           <div className="max-w-3xl mx-auto space-y-10 animate-in zoom-in-95 duration-500 pb-20">
             <div className="bg-slate-900/80 border border-white/10 p-12 rounded-[4rem] text-center space-y-10 shadow-2xl backdrop-blur-2xl">
               <div className="space-y-4">
-                <h2 className="text-xs font-black text-indigo-400 uppercase tracking-[0.5em]">Assessment Report</h2>
+                <h2 className="text-xs font-black text-indigo-400 uppercase tracking-[0.5em]">Değerlendirme Raporu</h2>
                 <h3 className="text-5xl font-black tracking-tighter">Test Tamamlandı!</h3>
               </div>
 
@@ -256,16 +256,43 @@ export default function Grade5Page() {
                 </div>
               </div>
 
-              {/* AI REHBER ÖĞRETMEN BLOĞU (EKLEDİĞİMİZ KISIM) */}
-              <div className="bg-indigo-500/10 border border-indigo-500/30 p-8 rounded-[2.5rem] text-left relative overflow-hidden">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="bg-indigo-500 text-white p-2 rounded-xl text-xl">🤖</div>
-                  <h4 className="font-black text-indigo-400 uppercase text-xs tracking-widest">Yapay Zeka Rehber Öğretmen</h4>
+              {/* --- YAPAY ZEKA ÖĞRETMEN ANALİZ KUTUSU --- */}
+              <div className="bg-indigo-500/10 border border-indigo-500/30 p-8 rounded-[2.5rem] text-left relative overflow-hidden shadow-2xl">
+                <div className="absolute -top-2 -right-2 p-6 opacity-10 rotate-12">
+                  <Icons.Brain /> 
                 </div>
+
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="bg-indigo-600 text-white p-2.5 rounded-xl shadow-lg shadow-indigo-500/20">
+                    🤖
+                  </div>
+                  <div className="flex flex-col">
+                    <h4 className="font-black text-indigo-400 uppercase text-xs tracking-[0.2em]">Yapay Zeka</h4>
+                    <span className="text-white font-bold text-sm">Rehber Öğretmen Analizi</span>
+                  </div>
+                </div>
+
                 {loadingAi ? (
-                  <p className="text-slate-400 italic animate-pulse">Yanlışlarını analiz ediyorum, biraz bekle...</p>
+                  <div className="space-y-3">
+                    <div className="h-4 bg-indigo-500/20 rounded-full animate-pulse w-full"></div>
+                    <div className="h-4 bg-indigo-500/20 rounded-full animate-pulse w-3/4"></div>
+                    <p className="text-xs text-indigo-400/60 font-medium italic">Senin için kağıdını okuyorum, harika şeyler yazacağım...</p>
+                  </div>
                 ) : (
-                  <p className="text-indigo-100 leading-relaxed italic text-lg font-medium">"{aiFeedback || 'Hatalarından ders çıkararak bir sonraki testte daha iyi olabilirsin!'}"</p>
+                  <div className="animate-in fade-in slide-in-from-top-2 duration-700">
+                    <p className="text-indigo-100 leading-relaxed italic text-lg font-medium">
+                      "{aiFeedback || 'Hatalarından ders çıkararak bir sonraki testte daha iyi olabilirsin!'}"
+                    </p>
+                    
+                    {!aiFeedback && (
+                      <button 
+                        onClick={getAIFeedback}
+                        className="mt-4 bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-2 rounded-xl text-sm font-black transition-all flex items-center gap-2"
+                      >
+                        Analizi Yeniden Başlat ➔
+                      </button>
+                    )}
+                  </div>
                 )}
               </div>
 
@@ -281,12 +308,12 @@ export default function Grade5Page() {
               </div>
 
               <div className="flex flex-col gap-4">
-                <button onClick={resetToSubjectSelect} className="w-full py-6 bg-white text-slate-950 rounded-[2rem] font-black text-xl hover:bg-slate-200 transition-all">YENİ DERS SEÇ</button>
-                <button onClick={() => startQuiz(selectedTerm)} className="w-full py-6 bg-indigo-600 text-white rounded-[2rem] font-black text-xl hover:bg-indigo-500 transition-all">AYNI DÖNEM YENİ TEST</button>
+                <button onClick={resetToSubjectSelect} className="w-full py-6 bg-white text-slate-950 rounded-[2rem] font-black text-xl hover:bg-slate-200 transition-all shadow-xl">YENİ DERS SEÇ</button>
+                <button onClick={() => startQuiz(selectedTerm)} className="w-full py-6 bg-indigo-600 text-white rounded-[2rem] font-black text-xl hover:bg-indigo-500 transition-all shadow-xl">AYNI DÖNEM YENİ TEST</button>
               </div>
             </div>
 
-            {/* DETAYLI ANALİZ LİSTESİ (SATIR SAYISINI ARTIRAN DETAYLAR) */}
+            {/* DETAYLI ANALİZ LİSTESİ */}
             <div className="text-left space-y-8 pt-10 border-t border-white/5">
               <h4 className="text-2xl font-black text-white flex items-center gap-3">Detaylı Soru Analizi 🔍</h4>
               <div className="space-y-6">
