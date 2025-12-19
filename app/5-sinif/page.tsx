@@ -230,70 +230,88 @@ export default function Grade5Page() {
           </div>
         )}
 
-        {/* --- 4. SONUÇ VE GERÇEK AI ANALİZİ --- */}
-        {view === 'result' && (
-          <div className="max-w-4xl mx-auto space-y-12 animate-in zoom-in-95 duration-700 pb-20">
-            <div className="bg-slate-900/80 border border-white/10 p-12 md:p-20 rounded-[4rem] text-center space-y-12 shadow-2xl backdrop-blur-3xl relative overflow-hidden">
-              <div className="space-y-4">
-                <h2 className="text-xs font-black text-indigo-400 uppercase tracking-[0.5em]">Başarı Analiz Raporu</h2>
-                <h3 className="text-6xl font-black tracking-tighter text-white">Harika Bir İş Çıkardın!</h3>
-              </div>
+         {/* --- 4. SONUÇ VE GERÇEK AI ANALİZİ --- */}
+{view === 'result' && (
+  <div className="max-w-4xl mx-auto space-y-6 md:space-y-10 animate-in zoom-in-95 duration-700 pb-20 px-2">
+    <div className="bg-slate-900/80 border border-white/10 p-6 md:p-20 rounded-[2.5rem] md:rounded-[4rem] text-center space-y-8 md:space-y-12 shadow-2xl backdrop-blur-3xl relative overflow-hidden">
+      
+      {/* Başlık Bölümü */}
+      <div className="space-y-2">
+        <h2 className="text-[10px] md:text-xs font-black text-indigo-400 uppercase tracking-[0.3em]">Başarı Analiz Raporu</h2>
+        <h3 className="text-3xl md:text-6xl font-black tracking-tighter text-white">Test Tamamlandı!</h3>
+      </div>
 
-              <div className="relative inline-flex items-center justify-center p-2 bg-gradient-to-br from-indigo-500 via-purple-500 to-fuchsia-500 rounded-full shadow-2xl shadow-indigo-500/30 transform hover:scale-105 transition-transform duration-500">
-                <div className="bg-slate-950 rounded-full px-24 py-16">
-                  <span className="text-[10rem] font-black text-transparent bg-clip-text bg-gradient-to-r from-indigo-200 to-fuchsia-200 leading-none">{resultData.percent}%</span>
-                </div>
-              </div>
+      {/* Büyük Skor Halkası - Mobilde Küçültüldü */}
+      <div className="relative inline-flex items-center justify-center p-1.5 bg-gradient-to-br from-indigo-500 via-purple-500 to-fuchsia-500 rounded-full shadow-2xl shadow-indigo-500/30 transform hover:scale-105 transition-transform duration-500">
+        <div className="bg-slate-950 rounded-full px-12 py-8 md:px-24 md:py-16">
+          <span className="text-6xl md:text-[10rem] font-black text-transparent bg-clip-text bg-gradient-to-r from-indigo-200 to-fuchsia-200 leading-none">
+            {resultData.percent}%
+          </span>
+        </div>
+      </div>
 
-              {/* --- ZEKİ YAPAY ZEKA KUTUSU --- */}
-              <div className="bg-indigo-500/10 border border-indigo-500/30 p-10 rounded-[3.5rem] text-left relative overflow-hidden shadow-2xl group transition-all hover:bg-indigo-500/15">
-                <div className="absolute -top-4 -right-4 p-12 opacity-10 rotate-12 text-indigo-400 group-hover:scale-110 transition-transform duration-1000"><Icons.Brain /></div>
-                
-                <div className="flex items-center gap-5 mb-8">
-                  <div className="bg-indigo-600 text-white p-4 rounded-3xl shadow-xl shadow-indigo-500/40 text-3xl animate-bounce-slow">🤖</div>
-                  <div className="flex flex-col">
-                    <h4 className="font-black text-indigo-400 uppercase text-xs tracking-[0.4em]">TestDünya AI</h4>
-                    <span className="text-white font-black text-2xl tracking-tight">Rehber Öğretmen Analizi</span>
-                  </div>
-                </div>
+      {/* --- YAPAY ZEKA KUTUSU (Mobil Düzenleme) --- */}
+      <div className="bg-indigo-500/10 border border-indigo-500/30 p-6 md:p-10 rounded-[2rem] md:rounded-[3.5rem] text-left relative overflow-hidden shadow-2xl">
+        <div className="flex items-center gap-4 mb-4 md:mb-8">
+          <div className="bg-indigo-600 text-white p-3 rounded-2xl shadow-xl text-xl md:text-3xl animate-bounce-slow">🤖</div>
+          <div className="flex flex-col">
+            <h4 className="font-black text-indigo-400 uppercase text-[10px] tracking-[0.2em]">TestDünya AI</h4>
+            <span className="text-white font-black text-lg md:text-2xl tracking-tight">Rehber Öğretmen</span>
+          </div>
+        </div>
 
-                {loadingAi ? (
-                  <div className="space-y-5 py-4">
-                    <div className="h-4 bg-indigo-500/20 rounded-full animate-pulse w-full"></div>
-                    <div className="h-4 bg-indigo-500/20 rounded-full animate-pulse w-11/12"></div>
-                    <div className="h-4 bg-indigo-500/20 rounded-full animate-pulse w-10/12"></div>
-                    <p className="text-indigo-400 font-black italic mt-6 flex items-center gap-3">
-                      <span className="inline-block animate-spin text-2xl">🌀</span> Yanlışlarını tek tek okuyorum, sana özel tavsiyeler hazırlıyorum...
-                    </p>
-                  </div>
-                ) : (
-                  <div className="animate-in fade-in slide-in-from-top-4 duration-1000">
-                    <p className="text-indigo-50 text-2xl leading-relaxed italic font-semibold">
-                      {aiFeedback ? `"${aiFeedback}"` : "Şu an analiz yapılamıyor ama sonuçların aşağıda seni bekliyor!"}
-                    </p>
-                    {!aiFeedback && (
-                      <button onClick={handleAIFeedback} className="mt-8 bg-indigo-600 hover:bg-indigo-500 text-white px-10 py-4 rounded-2xl font-black text-sm transition-all shadow-lg active:scale-95">ANALİZİ TEKRARLAT ➔</button>
-                    )}
-                  </div>
-                )}
-              </div>
+        {loadingAi ? (
+          <div className="space-y-3 py-2">
+            <div className="h-2.5 bg-indigo-500/20 rounded-full animate-pulse w-full"></div>
+            <div className="h-2.5 bg-indigo-500/20 rounded-full animate-pulse w-5/6"></div>
+            <p className="text-[10px] md:text-sm text-indigo-400 font-bold italic mt-2">Analiz hazırlanıyor...</p>
+          </div>
+        ) : (
+          <div className="animate-in fade-in slide-in-from-top-2 duration-700">
+            <p className="text-indigo-50 text-base md:text-2xl leading-relaxed italic font-medium">
+              "{aiFeedback || 'Hatalarını analiz ederken bir sorun oldu, ama çözümler aşağıda!'}"
+            </p>
+          </div>
+        )}
+      </div>
 
-              <div className="grid grid-cols-2 gap-8">
-                <div className="bg-white/5 p-10 rounded-[3rem] border border-white/5 text-center transition-all hover:bg-white/10 group">
-                  <p className="text-[11px] text-slate-500 font-black uppercase tracking-widest mb-3 group-hover:text-emerald-400 transition-colors">Toplam Doğru</p>
-                  <p className="text-6xl font-black text-emerald-400">{resultData.correct} <span className="text-xl text-slate-600 font-bold">/ {resultData.total}</span></p>
-                </div>
-                <div className="bg-white/5 p-10 rounded-[3rem] border border-white/5 text-center transition-all hover:bg-white/10 group">
-                  <p className="text-[11px] text-slate-500 font-black uppercase tracking-widest mb-3 group-hover:text-indigo-400 transition-colors">Ders Branşı</p>
-                  <p className="text-4xl font-black capitalize tracking-tighter text-indigo-200">{selectedSubject}</p>
-                </div>
-              </div>
+      {/* Skor Kartları - Mobilde Grid Ayarı ve Font Küçültme */}
+      <div className="grid grid-cols-2 gap-4 md:gap-8">
+        <div className="bg-white/5 p-6 md:p-10 rounded-[2rem] md:rounded-[3rem] border border-white/5 text-center flex flex-col justify-center min-h-[120px] md:min-h-auto">
+          <p className="text-[9px] md:text-[11px] text-slate-500 font-black uppercase tracking-widest mb-2">Toplam Doğru</p>
+          <p className="text-3xl md:text-6xl font-black text-emerald-400">
+            {resultData.correct} <span className="text-sm md:text-xl text-slate-600 font-bold">/ {resultData.total}</span>
+          </p>
+        </div>
+        <div className="bg-white/5 p-6 md:p-10 rounded-[2rem] md:rounded-[3rem] border border-white/5 text-center flex flex-col justify-center min-h-[120px] md:min-h-auto">
+          <p className="text-[9px] md:text-[11px] text-slate-500 font-black uppercase tracking-widest mb-2">Ders Branşı</p>
+          <p className="text-xl md:text-4xl font-black capitalize tracking-tighter text-indigo-200 truncate">
+            {selectedSubject}
+          </p>
+        </div>
+      </div>
 
-              <div className="flex flex-col gap-6 pt-6">
-                <button onClick={() => setView('subject-select')} className="w-full py-8 bg-white text-slate-950 rounded-[2.5rem] font-black text-2xl hover:bg-slate-200 transition-all shadow-2xl transform hover:-translate-y-1 active:scale-95">YENİ BİR DERS SEÇ</button>
-                <button onClick={() => startQuiz(selectedTerm)} className="w-full py-8 bg-slate-800 text-white rounded-[2.5rem] font-black text-2xl hover:bg-slate-700 transition-all shadow-2xl transform hover:-translate-y-1 active:scale-95">BU DÖNEMİ TEKRAR ÇÖZ</button>
-              </div>
-            </div>
+      {/* Aksiyon Butonları */}
+      <div className="flex flex-col gap-4 pt-4">
+        <button 
+          onClick={() => setView('subject-select')} 
+          className="w-full py-5 md:py-8 bg-white text-slate-950 rounded-[1.5rem] md:rounded-[2.5rem] font-black text-lg md:text-2xl hover:bg-slate-200 transition-all shadow-xl active:scale-95"
+        >
+          YENİ BİR DERS SEÇ
+        </button>
+        <button 
+          onClick={() => startQuiz(selectedTerm)} 
+          className="w-full py-4 md:py-8 bg-slate-800 text-white rounded-[1.5rem] md:rounded-[2.5rem] font-black text-base md:text-2xl hover:bg-slate-700 transition-all active:scale-95"
+        >
+          AYNI DÖNEM YENİ TEST
+        </button>
+      </div>
+    </div>
+    
+    {/* Detaylı Analiz Listesi kısmı da benzer padding/font ayarlarıyla aşağıda devam eder... */}
+  </div>
+)}
+
 
             {/* --- 5. DETAYLI SORU ANALİZ LİSTESİ --- */}
             <div className="text-left space-y-12 pt-16 border-t border-white/10">
