@@ -559,6 +559,34 @@ export default function HomePage() {
     </div>
   </div>
 </Link>
+          {/* 10. CHRONO LINK (MEMORY & SPATIAL) */}
+<Link
+  href="/chrono-link"
+  className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-fuchsia-900 to-black p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl border border-fuchsia-800/30"
+>
+  {/* Neon Mor Işık Efekti */}
+  <div className="absolute -bottom-4 -right-4 h-32 w-32 rounded-full bg-fuchsia-500/10 blur-3xl transition-all group-hover:bg-fuchsia-500/20"></div>
+
+  <div className="relative z-10 flex flex-col justify-between h-full">
+    <div>
+      <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-fuchsia-300 backdrop-blur-sm">
+        🧩 Memory <span className="opacity-80">• Spatial Link</span>
+      </div>
+      <h3 className="mb-2 text-2xl font-black tracking-tight italic">Chrono Link</h3>
+      <p className="text-zinc-400 opacity-90 text-sm">Memorize the neural path and connect nodes. Challenge your working memory.</p>
+    </div>
+
+    <div className="mt-6 flex items-center gap-3">
+      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-fuchsia-500 text-black shadow-lg transition-transform group-hover:scale-110">
+        <Brain className="h-5 w-5 fill-black" />
+      </div>
+      <div className="flex flex-col">
+        <span className="font-bold text-sm text-white">Initiate Link →</span>
+        <span className="text-[10px] text-fuchsia-400 font-medium tracking-tight">Memory & Focus</span>
+      </div>
+    </div>
+  </div>
+</Link>
 
         </section>
         {/* --- MEB CURRICULUM (İLKÖĞRETİM) --- */}
