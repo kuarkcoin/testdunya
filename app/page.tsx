@@ -531,7 +531,34 @@ export default function HomePage() {
     </div>
   </div>
 </Link>
+{/* 9. COLOR LOGIC (MULTI-LAYER GAME) */}
+<Link
+  href="/color-logic"
+  className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-zinc-800 to-black p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl border border-zinc-700"
+>
+  {/* Neon Işık Efekti */}
+  <div className="absolute -top-4 -right-4 h-24 w-24 rounded-full bg-cyan-500/10 blur-2xl transition-all group-hover:bg-cyan-500/30"></div>
 
+  <div className="relative z-10 flex flex-col justify-between h-full">
+    <div>
+      <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-cyan-400 backdrop-blur-sm">
+        🧠 Cognitive <span className="opacity-80">• Multi-Layer</span>
+      </div>
+      <h3 className="mb-2 text-2xl font-black tracking-tight">Color Logic</h3>
+      <p className="text-zinc-400 opacity-90 text-sm">Level up your brain. Master the Stroop effect with mirror & ghost modes.</p>
+    </div>
+
+    <div className="mt-6 flex items-center gap-3">
+      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-500 text-black shadow-lg transition-transform group-hover:rotate-12">
+        <Zap className="h-5 w-5 fill-black" />
+      </div>
+      <div className="flex flex-col">
+        <span className="font-bold text-sm text-white">Start Training →</span>
+        <span className="text-[10px] text-cyan-400 font-medium tracking-tight">Focus & Speed</span>
+      </div>
+    </div>
+  </div>
+</Link>
 
         </section>
         {/* --- MEB CURRICULUM (İLKÖĞRETİM) --- */}
