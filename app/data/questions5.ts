@@ -827,6 +827,157 @@ export interface Question5 {
   options: ["Wild", "Jungle", "Dangerous", "Friendly"],
   correct: 3,
   explanation: "Köpekler arkadaş canlısı (friendly) hayvanlardır."
-}
+},
+  // ==========================================
+  // YENİ NESİL ZOR SORULAR (Şekilsiz/Muhakeme)
+  // ==========================================
+
+  // --- MATEMATİK ZOR ---
+  {
+    id: "m5-hard-nv-01", subject: "matematik", term: 1,
+    prompt: "Bir bölme işleminde bölen 14, bölüm 25'tir. Bu bölme işleminde bölünen sayının alabileceği 'en büyük' değer kaçtır?",
+    options: ["350", "363", "364", "365"],
+    correct: 1,
+    explanation: "Bölünen = (Bölen x Bölüm) + Kalan. En büyük değer için kalan, bölenden 1 küçük (13) olmalıdır. (14 x 25) + 13 = 363."
+  },
+  {
+    id: "m5-hard-nv-02", subject: "matematik", term: 1,
+    prompt: "3 katının 15 fazlası 60 olan sayının yarısı kaçtır?",
+    options: ["7,5", "15", "22,5", "45"],
+    correct: 0,
+    explanation: "Ters işlem: 60 - 15 = 45. 45 / 3 = 15 (Sayı). Yarısı: 15 / 2 = 7,5."
+  },
+  {
+    id: "m5-hard-nv-03", subject: "matematik", term: 2,
+    prompt: "Bir sınıftaki öğrencilerin 3/8'i erkektir. Sınıfta 15 kız öğrenci olduğuna göre, sınıf mevcudu kaçtır?",
+    options: ["20", "24", "30", "32"],
+    correct: 1,
+    explanation: "Erkekler 3/8 ise kızlar 5/8'dir. 5 parça 15 ise, 1 parça 3'tür. Mevcudun tamamı (8 parça) 8 x 3 = 24 eder."
+  },
+  {
+    id: "m5-hard-nv-04", subject: "matematik", term: 2,
+    prompt: "Ali parasının 0,4'ü ile kitap, %25'i ile defter almıştır. Ali'nin parasının yüzde kaçı kalmıştır?",
+    options: ["35", "40", "45", "50"],
+    correct: 0,
+    explanation: "0,4 = %40'tır. Toplam harcanan: %40 + %25 = %65. Kalan: %100 - %65 = %35."
+  },
+  {
+    id: "m5-hard-nv-05", subject: "matematik", term: 2,
+    prompt: "Bir kenarı 10 cm olan bir karenin çevresi, kısa kenarı 8 cm olan bir dikdörtgenin çevresine eşittir. Dikdörtgenin alanı kaç cm²'dir?",
+    options: ["80", "96", "100", "120"],
+    correct: 1,
+    explanation: "Karenin çevresi 40 cm. Dikdörtgenin çevresi de 40 olmalı. 2 x (8 + uzun kenar) = 40 ise uzun kenar 12'dir. Alan: 8 x 12 = 96."
+  },
+
+  // --- TÜRKÇE ZOR ---
+  {
+    id: "t5-hard-nv-01", subject: "turkce", term: 1,
+    prompt: "'Kuyumcu titizliğiyle çalışmak' sözüyle anlatılmak istenen temel düşünce nedir?",
+    options: ["Çok zengin olmak", "Çok yavaş hareket etmek", "İşini büyük bir özen ve dikkatle yapmak", "Değerli taşlarla uğraşmak"],
+    correct: 2,
+    explanation: "Kuyumculuk incelik gerektiren bir iş olduğu için bu deyim 'aşırı özen' anlamında kullanılır."
+  },
+  {
+    id: "t5-hard-nv-02", subject: "turkce", term: 2,
+    prompt: "(1) Kitap okumak hayal dünyasını zenginleştirir. (2) Yeni yerler görmemizi sağlar. (3) Türkiye'de kağıt fiyatları her yıl artmaktadır. (4) Bu yüzden her gün okumalıyız. Akışı bozan cümle hangisidir?",
+    options: ["1", "2", "3", "4"],
+    correct: 2,
+    explanation: "3 numaralı cümle kitap okumanın faydalarından bahsederken aniden ekonomik bir bilgiye geçerek akışı bozmuştur."
+  },
+  {
+    id: "t5-hard-nv-03", subject: "turkce", term: 1,
+    prompt: "'Ağır' kelimesi hangi cümlede 'ciddi, vakarlı' anlamında kullanılmıştır?",
+    options: ["Bu çanta çok ağır.", "Bugün ağır bir yemek yedik.", "Onun çok ağır bir kişiliği vardı.", "Ağır adımlarla yürüdü."],
+    correct: 2,
+    explanation: "Kişilik özelliği olarak 'ağır', olgun ve ciddi anlamında kullanılır."
+  },
+  {
+    id: "t5-hard-nv-04", subject: "turkce", term: 2,
+    prompt: "Aşağıdaki cümlelerin hangisinde neden-sonuç ilişkisi vardır?",
+    options: ["Seni görmek için geldim.", "Yağmur yağdığı için maç iptal oldu.", "Düzenli çalışırsan kazanırsın.", "Okula gitmek üzere çıktı."],
+    correct: 1,
+    explanation: "Maçın iptal olmasının 'nedeni' yağmurun yağmış olmasıdır."
+  },
+  {
+    id: "t5-hard-nv-05", subject: "turkce", term: 2,
+    prompt: "Hangi atasözü emek vermeden başarıya ulaşılamayacağını anlatır?",
+    options: ["Damlaya damlaya göl olur.", "Sakla samanı gelir zamanı.", "Emek olmadan yemek olmaz.", "Ak akçe kara gün içindir."],
+    correct: 2,
+    explanation: "C şıkkı doğrudan çaba ve karşılığı arasındaki ilişkiyi vurgular."
+  },
+
+  // --- FEN BİLİMLERİ ZOR ---
+  {
+    id: "f5-hard-nv-01", subject: "fen", term: 1,
+    prompt: "Aynı miktarda su bulunan kaplardan birine 10 gr tuz, diğerine 50 gr tuz ekleniyor. Bu deneyde 'bağımsız değişken' hangisidir?",
+    options: ["Su miktarı", "Tuz miktarı", "Çözünme hızı", "Sıcaklık"],
+    correct: 1,
+    explanation: "Deneyi yapan kişinin bilinçli olarak değiştirdiği değişken 'tuz miktarı'dır (bağımsız değişken)."
+  },
+  {
+    id: "f5-hard-nv-02", subject: "fen", term: 2,
+    prompt: "Isıca yalıtılmış bir kapta 80°C'deki demir ile 20°C'deki su karıştırılıyor. Son sıcaklık hangisi 'olamaz'?",
+    options: ["30", "50", "70", "85"],
+    correct: 3,
+    explanation: "Isı alışverişinde son sıcaklık her zaman karıştırılan maddelerin sıcaklık değerleri arasında olmalıdır (20 ile 80 arası)."
+  },
+  {
+    id: "f5-hard-nv-03", subject: "fen", term: 2,
+    prompt: "Sürtünme kuvveti ile ilgili verilenlerden hangisi yanlıştır?",
+    options: ["Hareketi zorlaştırır.", "Yüzeyin cinsine bağlıdır.", "Hareketi kolaylaştırır.", "Isınmaya neden olur."],
+    correct: 2,
+    explanation: "Sürtünme kuvveti enerji kaybına ve direnç oluşmasına neden olur, hareketi kolaylaştırmaz."
+  },
+  {
+    id: "f5-hard-nv-04", subject: "fen", term: 1,
+    prompt: "Ay'ın yüzeyinde rüzgar ve yağmur gibi hava olaylarının görülmemesinin temel sebebi nedir?",
+    options: ["Çok soğuk olması", "Atmosferinin yok denecek kadar az olması", "Dünya'dan uzak olması", "Işık kaynağı olmaması"],
+    correct: 1,
+    explanation: "Hava olaylarının gerçekleşmesi için kalın bir atmosfer tabakası gereklidir."
+  },
+  {
+    id: "f5-hard-nv-05", subject: "fen", term: 1,
+    prompt: "Hangi canlı grubu kendi besinini güneş ışığı yardımıyla üretebilir?",
+    options: ["Mantarlar", "Hayvanlar", "Bitkiler", "Mikroskobik canlılar"],
+    correct: 2,
+    explanation: "Bitkiler fotosentez yaparak kendi besinini üreten üretici canlılardır."
+  },
+
+  // --- İNGİLİZCE ZOR ---
+  {
+    id: "e5-hard-nv-01", subject: "ingilizce", term: 1,
+    prompt: "Jack: 'I like history and solving problems.' Which subjects does he like?",
+    options: ["Art and Music", "Social Studies and Maths", "P.E. and Science", "I.T. and English"],
+    correct: 1,
+    explanation: "History 'Social Studies' (Sosyal Bilgiler), solving problems 'Maths' (Matematik) dersine karşılık gelir."
+  },
+  {
+    id: "e5-hard-nv-02", subject: "ingilizce", term: 2,
+    prompt: "If today is Friday, what was the day 'the day before yesterday'?",
+    options: ["Saturday", "Thursday", "Wednesday", "Tuesday"],
+    correct: 2,
+    explanation: "Bugün Cuma ise, dün Perşembe, 'dünden önceki gün' ise Çarşamba (Wednesday) olur."
+  },
+  {
+    id: "e5-hard-nv-03", subject: "ingilizce", term: 2,
+    prompt: "Which of the following is 'NOT' a health problem?",
+    options: ["A headache", "The flu", "Healthy", "A sore throat"],
+    correct: 2,
+    explanation: "Healthy (sağlıklı) bir durumdur, sağlık sorunu değildir."
+  },
+  {
+    id: "e5-hard-nv-04", subject: "ingilizce", term: 1,
+    prompt: "The toy shop is ____ the barber and the school.",
+    options: ["under", "between", "on", "at"],
+    correct: 1,
+    explanation: "İki yer arasında olmayı belirtmek için 'between' kullanılır."
+  },
+  {
+    id: "e5-hard-nv-05", subject: "ingilizce", term: 2,
+    prompt: "Tom: '____ is the party?' Sue: 'It is at 8 p.m. at my house.'",
+    options: ["Who", "What time", "How old", "How many"],
+    correct: 1,
+    explanation: "Cevapta zaman (8 p.m.) belirtildiği için soru 'What time' (saat kaçta) olmalıdır."
+  }
 ]; 
   
