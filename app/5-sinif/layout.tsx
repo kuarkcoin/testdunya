@@ -1,3 +1,5 @@
+'use client'; // <-- KRİTİK EKLENTİ: Bu satır build hatasını çözer
+
 import React from 'react';
 
 export default function Grade5Layout({ children }: { children: React.ReactNode }) {
@@ -16,7 +18,6 @@ export default function Grade5Layout({ children }: { children: React.ReactNode }
               <h2 className="font-black text-white text-lg md:text-xl tracking-tight leading-none">
                 5. SINIF ÇALIŞMA ODASI
               </h2>
-              {/* Yapay Zeka Bilgilendirme Rozeti */}
               <div className="flex items-center gap-1.5 mt-1">
                 <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
                 <span className="text-[10px] font-bold text-indigo-400 uppercase tracking-[0.2em]">
@@ -26,7 +27,7 @@ export default function Grade5Layout({ children }: { children: React.ReactNode }
             </div>
           </div>
 
-          {/* Sağ Kısım: Ders Rozetleri ve AI İkonu */}
+          {/* Sağ Kısım: Ders Rozetleri */}
           <div className="flex items-center gap-3 overflow-x-auto pb-2 md:pb-0 no-scrollbar">
             <div className="flex gap-2 text-[10px] font-black uppercase">
                <span className="bg-white/5 border border-white/10 text-slate-400 px-3 py-1.5 rounded-xl whitespace-nowrap">Türkçe</span>
@@ -34,7 +35,6 @@ export default function Grade5Layout({ children }: { children: React.ReactNode }
                <span className="bg-white/5 border border-white/10 text-slate-400 px-3 py-1.5 rounded-xl whitespace-nowrap">Fen Bilimleri</span>
             </div>
             
-            {/* Küçük AI Bilgi Balonu */}
             <div className="hidden lg:flex items-center gap-2 bg-indigo-500/10 border border-indigo-500/20 px-3 py-1.5 rounded-xl">
                <span className="text-sm">🤖</span>
                <span className="text-[9px] font-bold text-indigo-200 leading-tight">
