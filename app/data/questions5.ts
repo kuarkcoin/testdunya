@@ -978,6 +978,157 @@ export interface Question5 {
     options: ["Who", "What time", "How old", "How many"],
     correct: 1,
     explanation: "Cevapta zaman (8 p.m.) belirtildiği için soru 'What time' (saat kaçta) olmalıdır."
+  },
+    // ==========================================
+  // İLERİ SEVİYE (ADVANCED) SORU PAKETİ
+  // ==========================================
+
+  // --- MATEMATİK ---
+  {
+    id: "m5-adv-01", subject: "matematik", term: 2,
+    prompt: "Çevresi 60 cm olan bir dikdörtgenin kenar uzunlukları birer tam sayıdır. Bu dikdörtgenin alanı 'en fazla' kaç $cm^2$ olabilir?",
+    options: ["125", "200", "221", "225"],
+    correct: 3,
+    explanation: "Çevresi sabit olan dikdörtgenlerde alanın en büyük olması için kenarlar birbirine en yakın seçilmelidir. $a + b = 30$ ise $15 \\times 15 = 225$ (kare aynı zamanda bir dikdörtgendir)."
+  },
+  {
+    id: "m5-adv-02", subject: "matematik", term: 1,
+    prompt: "Bir sayı örüntüsü 4'ten başlayarak her adımda bir önceki sayının 2 katının 3 eksiği şeklinde ilerliyor. Bu örüntünün 4. terimi kaçtır?",
+    options: ["5", "7", "11", "19"],
+    correct: 2,
+    explanation: "1. Terim: 4. | 2. Terim: $(4 \\times 2) - 3 = 5$. | 3. Terim: $(5 \\times 2) - 3 = 7$. | 4. Terim: $(7 \\times 2) - 3 = 11$."
+  },
+  {
+    id: "m5-adv-03", subject: "matematik", term: 2,
+    prompt: "Bir su deposunun $3/7$'si doludur. Depoya 20 litre daha su eklendiğinde deponun yarısı doluyor. Deponun tamamı kaç litre su alır?",
+    options: ["140", "280", "300", "350"],
+    correct: 1,
+    explanation: "Yarım ($1/2$) ile $3/7$ arasındaki fark: $1/2 - 3/7 = 7/14 - 6/14 = 1/14$. $1/14$ parça 20 litre ise tamamı $20 \\times 14 = 280$ litredir."
+  },
+  {
+    id: "m5-adv-04", subject: "matematik", term: 2,
+    prompt: "0, 2, 5, 8 rakamlarının tamamı kullanılarak yazılabilecek, tam kısmı bir basamaklı olan 'en büyük' ondalık gösterim ile 'en küçük' ondalık gösterim arasındaki fark kaçtır?",
+    options: ["6,462", "6,172", "6,472", "8,320"],
+    correct: 0,
+    explanation: "En büyük: 8,520. En küçük: 2,058. Fark: $8,520 - 2,058 = 6,462$."
+  },
+  {
+    id: "m5-adv-05", subject: "matematik", term: 1,
+    prompt: "$A \\times 100 = 4500$ ve $B \\div 10 = 45$ ise $A + B$ işleminin sonucu kaçtır?",
+    options: ["90", "450", "495", "500"],
+    correct: 2,
+    explanation: "$A = 4500 / 100 = 45$. $B = 45 \\times 10 = 450$. Toplam: $45 + 450 = 495$."
+  },
+
+  // --- TÜRKÇE ---
+  {
+    id: "t5-adv-01", subject: "turkce", term: 1,
+    prompt: "'Bakmak' kelimesi aşağıdaki cümlelerin hangisinde 'incelemek, araştırmak' anlamında kullanılmıştır?",
+    options: ["Pencereden dışarı bakıyor.", "Annem bize çok iyi baktı.", "Bu konuya sözlükten bakmalısın.", "Eski fotoğraflara bakıp ağladı."],
+    correct: 2,
+    explanation: "Sözlükten bakmak, bir bilgiyi araştırmak ve incelemek eylemini ifade eder."
+  },
+  {
+    id: "t5-adv-02", subject: "turkce", term: 2,
+    prompt: "Aşağıdaki cümlelerin hangisinde 'karşılaştırma' yapılmıştır?",
+    options: ["Bugün hava çok güzel.", "Onun kadar çalışkan birini görmedim.", "Ders çalışmak için odasına gitti.", "Kitap okumayı çok seviyor."],
+    correct: 1,
+    explanation: "'Kadar' edatı kullanılarak o kişi ile diğerleri arasında çalışkanlık yönünden kıyas yapılmıştır."
+  },
+  {
+    id: "t5-adv-03", subject: "turkce", term: 1,
+    prompt: "Hangi seçenekteki deyim 'çok korkmak / telaşlanmak' anlamını karşılar?",
+    options: ["Gözüne girmek", "Kulak asmamak", "Etekleri tutuşmak", "Ağzı kulaklarına varmak"],
+    correct: 2,
+    explanation: "Etekleri tutuşmak deyimi panik ve büyük korku durumları için kullanılır."
+  },
+  {
+    id: "t5-adv-04", subject: "turkce", term: 2,
+    prompt: "'Yazarın dili çok akıcı olduğu için kitap bir solukta bitti.' cümlesinden hangi yargı kesin olarak çıkarılır?",
+    options: ["Kitap çok sürükleyicidir.", "Yazarın en iyi kitabıdır.", "Kitap çok kalındır.", "Yazar sadece macera yazar."],
+    correct: 0,
+    explanation: "Bir solukta bitmesi ve dilin akıcı olması, kitabın sürükleyici olduğunu gösterir."
+  },
+  {
+    id: "t5-adv-05", subject: "turkce", term: 1,
+    prompt: "Aşağıdaki kelimelerin hangisi hem 'yapım eki' hem 'çekim eki' almıştır?",
+    options: ["Kitapçıdan", "Gözlük", "Masanın", "Kalemler"],
+    correct: 0,
+    explanation: "Kitap (Kök) + çı (Yapım Eki) + dan (Çekim Eki/Ayrılma)."
+  },
+
+  // --- FEN BİLİMLERİ ---
+  {
+    id: "f5-adv-01", subject: "fen", term: 2,
+    prompt: "Bir öğrenci özdeş iki bilyeyi aynı yükseklikten biri cam zemin, diğeri halı zemin üzerine bırakıyor. Cam zemindeki bilyenin daha uzağa gittiğini gözlemliyor. Bu deneyin 'bağımlı değişkeni' hangisidir?",
+    options: ["Zemin türü", "Bilyenin kütlesi", "Gidilen mesafe", "Bırakılan yükseklik"],
+    correct: 2,
+    explanation: "Bağımlı değişken, bağımsız değişkene (zemin türü) bağlı olarak değişen sonuçtur; yani alınan yoldur."
+  },
+  {
+    id: "f5-adv-02", subject: "fen", term: 1,
+    prompt: "Ay'ın yüzeyinde gece ve gündüz arasındaki sıcaklık farkının Dünya'dan çok daha fazla olmasının temel nedeni nedir?",
+    options: ["Güneş'e yakın olması", "Atmosferinin yok denecek kadar az olması", "Kendi ekseni etrafında yavaş dönmesi", "Işığı yansıtmaması"],
+    correct: 1,
+    explanation: "Atmosfer ısıyı dengeler. Ay'da atmosfer olmadığı için güneş alan yer aşırı sıcak, almayan yer aşırı soğuk olur."
+  },
+  {
+    id: "f5-adv-03", subject: "fen", term: 2,
+    prompt: "Bir kapta bulunan buza sürekli ısı veriliyor. Buzun tamamen erimesi sırasında termometredeki değer için ne söylenebilir?",
+    options: ["Sürekli artar.", "Sürekli azalır.", "Hal değişimi bitene kadar sabit kalır.", "Önce artar sonra sabit kalır."],
+    correct: 2,
+    explanation: "Saf maddeler hal değiştirirken (erirken, kaynarken) dışarıdan ısı almalarına rağmen sıcaklıkları sabit kalır."
+  },
+  {
+    id: "f5-adv-04", subject: "fen", term: 1,
+    prompt: "Hangi canlı grubunda yer alan tüm üyeler mikroskop yardımı olmadan 'kesinlikle' görülemez?",
+    options: ["Mantarlar", "Bitkiler", "Bakteriler", "Omurgasız hayvanlar"],
+    correct: 2,
+    explanation: "Bakteriler tek hücreli canlılardır ve gözle görülmeleri imkansızdır."
+  },
+  {
+    id: "f5-adv-05", subject: "fen", term: 2,
+    prompt: "Bir dinamometreye 50 N ağırlığında bir cisim asıldığında yay 10 cm uzuyor. Aynı dinamometreye 15 N ağırlığında bir cisim asılırsa yay kaç cm uzar?",
+    options: ["2", "3", "5", "6"],
+    correct: 1,
+    explanation: "50 N -> 10 cm ise, her 5 N için 1 cm uzama olur. 15 N için $15 / 5 = 3$ cm uzama gerçekleşir."
+  },
+
+  // --- İNGİLİZCE ---
+  {
+    id: "e5-adv-01", subject: "ingilizce", term: 1,
+    prompt: "Jane: 'I don't like horror movies. They are frightening.' Which movie type does Jane prefer?",
+    options: ["Horror", "Cartoons", "Thriller", "Action"],
+    correct: 1,
+    explanation: "Korkunç bulduğu filmleri sevmiyorsa, daha eğlenceli ve korkutucu olmayan 'Cartoons' tercih eder."
+  },
+  {
+    id: "e5-adv-02", subject: "ingilizce", term: 2,
+    prompt: "A: '____ is the chemist's?' B: 'It is opposite the bank.'",
+    options: ["What", "Who", "Where", "When"],
+    correct: 2,
+    explanation: "Cevapta bir konum belirtildiği için 'Where' (Nerede) sorusu sorulmuştur."
+  },
+  {
+    id: "e5-adv-03", subject: "ingilizce", term: 2,
+    prompt: "Which activity is 'not' related to health and fitness?",
+    options: ["Hiking", "Eating junk food", "Cycling", "Jogging"],
+    correct: 1,
+    explanation: "Junk food (abur cubur) yemek sağlıklı bir aktivite değildir."
+  },
+  {
+    id: "e5-adv-04", subject: "ingilizce", term: 1,
+    prompt: "I am from France. I speak ____.",
+    options: ["French", "English", "Germany", "Spanish"],
+    correct: 0,
+    explanation: "Fransa'dan olan biri Fransızca (French) konuşur."
+  },
+  {
+    id: "e5-adv-05", subject: "ingilizce", term: 2,
+    prompt: "Sally: 'I have a high temperature and a backache.' Advice: 'You ____ go outside.'",
+    options: ["should", "can", "mustn't", "don't"],
+    correct: 2,
+    explanation: "Ateşi ve bel ağrısı olan birinin dışarı çıkmaması (mustn't) gerekir."
   }
 ]; 
   
