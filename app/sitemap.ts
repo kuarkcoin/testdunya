@@ -1,52 +1,72 @@
-import { MetadataRoute } from 'next';
-
-const BASE_URL = 'https://testdunya.net';
+import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  
-  const staticRoutes = [
-    '',
-    '/mistakes',
+  const baseUrl = 'https://testdunya.net'
+  const currentDate = new Date()
+
+  // 1. Ana Statik Sayfalar
+  const mainRoutes = [
+    '',               // Ana Sayfa
+    '/mistakes',      // Hata Analiz Merkezi
+    '/iletisim',      // İletişim Sayfası
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: currentDate,
+    changeFrequency: 'daily' as const,
+    priority: route === '' ? 1.0 : 0.8,
+  }))
+
+  // 2. Sınav Merkezleri (Hub Pages)
+  const examHubs = [
     '/5-sinif',
-    '/iq-test',
-    '/verbal-test',
+    '/8-sinif-lgs',
+    '/yks',
+    '/kpss',
+    '/tus',
+    '/dus',
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: currentDate,
+    changeFrequency: 'daily' as const,
+    priority: 0.9,
+  }))
+
+  // 3. IELTS Akademi Modülleri
+  const ieltsRoutes = [
+    '/ielts/speaking',
+    '/ielts/writing',
+    '/ielts/listening',
+    '/ielts/calculator',
+    '/test/ielts-reading',
+    '/test/ielts-vocab',
+    '/test/ielts-grammar',
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: currentDate,
+    changeFrequency: 'weekly' as const,
+    priority: 0.8,
+  }))
+
+  // 4. Oyunlar ve Gelişim Modülleri
+  const gameRoutes = [
     '/speedrun',
     '/flashcards',
     '/kelime-avcisi',
+    '/iq-test',
+    '/genel-kultur',
     '/wordle',
     '/wordmatch',
-    '/ielts/calculator',
-    '/ielts/speaking',
+    '/verbal-test',
+    '/number-hunter',
+    '/color-logic',
+    '/chrono-link',
+    '/games/logic-lock',
   ].map((route) => ({
-    url: `${BASE_URL}${route}`,
-    lastModified: new Date(),
-    changeFrequency: 'daily' as const,
-    priority: route === '' ? 1.0 : 0.8,
-  }));
+    url: `${baseUrl}${route}`,
+    lastModified: currentDate,
+    changeFrequency: 'weekly' as const,
+    priority: 0.7,
+  }))
 
-  // Dinamik Konfigürasyon
-  const dynamicConfig = [
-    { prefix: 'ielts-level-test', count: 1, priority: 1.0 },
-    { prefix: 'yks-sozel-deneme', count: 30, priority: 0.7 },
-    { prefix: 'kpss-sozel', count: 21, priority: 0.7 },
-    { prefix: 'tus-deneme', count: 35, priority: 0.6 },
-    { prefix: 'dus-deneme', count: 17, priority: 0.6 },
-    { prefix: '5-sinif-matematik', count: 10, priority: 0.8 }, // 5. Sınıf Branşları
-    { prefix: '5-sinif-turkce', count: 10, priority: 0.8 },
-  ];
-
-  let testRoutes: MetadataRoute.Sitemap = [];
-
-  dynamicConfig.forEach((exam) => {
-    for (let i = 1; i <= exam.count; i++) {
-      testRoutes.push({
-        url: `${BASE_URL}/test/${exam.prefix}-${i}`,
-        lastModified: new Date(),
-        changeFrequency: 'weekly' as const,
-        priority: exam.priority,
-      });
-    }
-  });
-
-  return [...staticRoutes, ...testRoutes];
+  return [...mainRoutes, ...examHubs, ...ieltsRoutes, ...gameRoutes]
 }
