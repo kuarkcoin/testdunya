@@ -1,4 +1,4 @@
- import { SubjectData } from './types';
+import { SubjectData } from './types';
 
 export const turkceData: SubjectData = {
   term1: {
@@ -21,7 +21,16 @@ export const turkceData: SubjectData = {
       { id: "t5-hard-nv-03", subject: "turkce", term: 1, prompt: "'Ağır' kelimesi hangi cümlede 'ciddi, vakarlı' anlamında kullanılmıştır?", options: ["Bu çanta çok ağır.", "Bugün ağır bir yemek yedik.", "Onun çok ağır bir kişiliği vardı.", "Ağır adımlarla yürüdü."], correct: 2, explanation: "Vakarlı anlamındadır." },
       { id: "t5-adv-01", subject: "turkce", term: 1, prompt: "'Bakmak' kelimesi aşağıdaki cümlelerin hangisinde 'incelemek, araştırmak' anlamında kullanılmıştır?", options: ["Pencereden dışarı bakıyor.", "Annem bize çok iyi baktı.", "Bu konuya sözlükten bakmalısın.", "Eski fotoğraflara bakıp ağladı."], correct: 2, explanation: "Sözlükten bakmak araştırmaktır." },
       { id: "t5-adv-03", subject: "turkce", term: 1, prompt: "Hangi seçenekteki deyim 'çok korkmak / telaşlanmak' anlamını karşılar?", options: ["Gözüne girmek", "Kulak asmamak", "Etekleri tutuşmak", "Ağzı kulaklarına varmak"], correct: 2, explanation: "Korku ve telaş anlamındadır." },
-      { id: "t5-adv-05", subject: "turkce", term: 1, prompt: "Aşağıdaki kelimelerin hangisi hem 'yapım eki' hem 'çekim eki' almıştır?", options: ["Kitapçıdan", "Gözlük", "Masanın", "Kalemler"], correct: 0, explanation: "Kitap-çı-dan." }
+      { id: "t5-adv-05", subject: "turkce", term: 1, prompt: "Aşağıdaki kelimelerin hangisi hem 'yapım eki' hem 'çekim eki' almıştır?", options: ["Kitapçıdan", "Gözlük", "Masanın", "Kalemler"], correct: 0, explanation: "Kitap-çı-dan." },
+      { 
+        id: "t5-1-20", 
+        subject: "turkce", 
+        term: 1, 
+        prompt: "Aşağıdaki cümlelerin hangisinde 'kişileştirme' sanatı yapılmıştır?", 
+        options: ["Güneş her sabah erkenden doğar.", "Kuşlar ağaçlarda neşeyle ötüyor.", "Rüzgar bugün çok sert esiyor.", "Güneş, bulutların arkasına saklanmış bize küsmüştü."], 
+        correct: 3, 
+        explanation: "Güneşin 'küsmesi' insana ait bir özelliktir. Bu özelliğin doğadaki bir varlığa verilmesine kişileştirme denir." 
+      }
     ],
     test2: []
   },
@@ -48,19 +57,5 @@ export const turkceData: SubjectData = {
       { id: "t5-adv-04", subject: "turkce", term: 2, prompt: "'Yazarın dili çok akıcı olduğu için kitap bir solukta bitti.' cümlesinden hangi yargı kesin olarak çıkarılır?", options: ["Kitap çok sürükleyicidir.", "Yazarın en iyi kitabıdır.", "Kitap çok kalındır.", "Yazar sadece macera yazar."], correct: 0, explanation: "Sürükleyicilik anlamı verir." }
     ],
     test2: []
-  },
-  { 
-  id: "t5-1-20", 
-  subject: "turkce", 
-  term: 1, 
-  prompt: "Aşağıdaki cümlelerin hangisinde 'kişileştirme' (insana ait özelliklerin başka varlıklara verilmesi) sanatı yapılmıştır?", 
-  options: [
-    "Güneş her sabah erkenden doğar.", 
-    "Kuşlar ağaçlarda neşeyle ötüyor.", 
-    "Rüzgar bugün çok sert esiyor.", 
-    "Güneş, bulutların arkasına saklanmış bize küsmüştü."
-  ], 
-  correct: 3, 
-  explanation: "Güneşin 'küsmesi' insana ait bir özelliktir. Bu özelliğin doğadaki bir varlığa (güneş) verilmesine kişileştirme denir." 
-}
+  }
 };
