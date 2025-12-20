@@ -36,7 +36,7 @@ export const matematikData: SubjectData = {
         id: "m5-1-t1-04",
         subject: "matematik",
         term: 1,
-        prompt: "Aşağıdakilerden hangisi birim kesirdir?",
+        prompt: "Aşağıdakilerden hangisi bir birim kesirdir?",
         options: ["2/5", "1/8", "5/5", "4/1"],
         correct: 1,
         explanation: "Payı 1 olan kesirler birim kesirdir.",
@@ -340,7 +340,7 @@ export const matematikData: SubjectData = {
         id: "m5-1-t2-17",
         subject: "matematik",
         term: 1,
-        prompt: "3/7 kesri 5/14 için kaçla genişletilir?",
+        prompt: "3/7 kesrı 5/14 için kaçla genişletilir?",
         options: ["2", "3", "7", "14"],
         correct: 0,
         explanation: "2 ile.",
@@ -1085,8 +1085,7 @@ export const matematikData: SubjectData = {
         prompt: "4/6'ya hangisi denk değildir?",
         options: ["2/3", "8/12", "12/18", "10/15"],
         correct: 3,
-        explanation:
-          "Hepsi denktir aslında (Hata kontrolü), şık 10/15 de denktir.",
+        explanation: "4/6 sadeleşince 2/3 olur.",
       },
       {
         id: "m5-1-t6-18",
@@ -1481,5 +1480,8 @@ export const matematikData: SubjectData = {
         explanation: "6 artan.",
       },
     ],
+  },
+  term2: {
+    test1: [],
   },
 };
