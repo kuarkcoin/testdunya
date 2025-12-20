@@ -69,10 +69,11 @@ export default function Grade5Page() {
     return { correct, total, percent: total > 0 ? Math.round((correct / total) * 100) : 0 };
   }, [answers, quizQuestions]);
 
+  // Yeni soruya geçince yukarı kaydırır
   const scrollToTop = () => {
     setTimeout(() => {
       quizTopRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }, 100);
+    }, 50);
   };
 
   const handleAIFeedback = async () => {
@@ -130,7 +131,7 @@ export default function Grade5Page() {
         <ReactConfetti width={width} height={height} numberOfPieces={300} recycle={false} />
       )}
 
-      {/* max-w-7xl: Yanlardaki basıklığı tamamen giderdik */}
+      {/* İçerik Konteynırı - Genişletilmiş Yapı */}
       <div className="max-w-7xl mx-auto px-4 md:px-8 pt-6 md:pt-10">
         
         {/* Üst Navigasyon */}
@@ -173,11 +174,11 @@ export default function Grade5Page() {
                 <p className="text-slate-500 text-xl font-medium">Hangi dönemin müfredatını çalışmak istersin?</p>
               </div>
               <div className="grid md:grid-cols-2 gap-6">
-                <button onClick={() => { setSelectedTerm(1); setView('test-select'); }} className="p-12 bg-slate-50 border border-slate-100 rounded-[3rem] hover:bg-indigo-600 hover:text-white transition-all flex flex-col items-center gap-4 group shadow-sm hover:shadow-indigo-200">
+                <button onClick={() => { setSelectedTerm(1); setView('test-select'); }} className="p-12 bg-slate-50 border border-slate-100 rounded-[3rem] hover:bg-indigo-600 hover:text-white transition-all flex flex-col items-center gap-4 group shadow-sm">
                   <span className="text-5xl">🚀</span>
                   <span className="text-3xl font-black">1. Dönem</span>
                 </button>
-                <button onClick={() => { setSelectedTerm(2); setView('test-select'); }} className="p-12 bg-slate-50 border border-slate-100 rounded-[3rem] hover:bg-fuchsia-600 hover:text-white transition-all flex flex-col items-center gap-4 group shadow-sm hover:shadow-fuchsia-200">
+                <button onClick={() => { setSelectedTerm(2); setView('test-select'); }} className="p-12 bg-slate-50 border border-slate-100 rounded-[3rem] hover:bg-fuchsia-600 hover:text-white transition-all flex flex-col items-center gap-4 group shadow-sm">
                   <span className="text-5xl">🔥</span>
                   <span className="text-3xl font-black">2. Dönem</span>
                 </button>
@@ -191,7 +192,7 @@ export default function Grade5Page() {
           <div className="animate-in fade-in slide-in-from-bottom-10 duration-700 space-y-12">
             <header className="text-center">
                <h2 className="text-6xl md:text-7xl font-black tracking-tighter capitalize text-slate-900">{selectedSubject}</h2>
-               <p className="text-indigo-600 font-black uppercase tracking-widest text-sm mt-4">{selectedTerm}. Dönem - Bir Test Seviyesi Seç</p>
+               <p className="text-indigo-600 font-black uppercase tracking-widest text-sm mt-4">{selectedTerm}. Dönem - Test Listesi</p>
             </header>
             <div className="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-8">
               {Array.from({ length: 15 }, (_, i) => i + 1).map((num) => (
@@ -229,7 +230,11 @@ export default function Grade5Page() {
               <h3 className="text-3xl md:text-5xl font-extrabold leading-tight text-slate-800 mb-16">{quizQuestions[currentIdx].prompt}</h3>
               <div className="grid gap-5 mt-auto">
                 {quizQuestions[currentIdx].options.map((opt: string, i: number) => (
-                  <button key={i} onClick={() => { setAnswers(prev => ({ ...prev, [currentIdx]: i })); scrollToTop(); }} className={`p-8 md:p-10 rounded-[2rem] border-2 text-left transition-all flex items-center gap-8 group ${answers[currentIdx] === i ? 'border-indigo-600 bg-indigo-50 text-indigo-900 shadow-lg shadow-indigo-100' : 'border-slate-100 bg-slate-50 text-slate-600 hover:border-indigo-200 hover:bg-white'}`}>
+                  <button 
+                    key={i} 
+                    onClick={() => setAnswers(prev => ({ ...prev, [currentIdx]: i }))} 
+                    className={`p-8 md:p-10 rounded-[2rem] border-2 text-left transition-all flex items-center gap-8 group ${answers[currentIdx] === i ? 'border-indigo-600 bg-indigo-50 text-indigo-900 shadow-lg' : 'border-slate-100 bg-slate-50 text-slate-600 hover:border-indigo-200 hover:bg-white'}`}
+                  >
                     <div className={`w-12 h-12 md:w-16 md:h-16 rounded-2xl border-2 flex items-center justify-center font-black text-2xl transition-all ${answers[currentIdx] === i ? 'bg-indigo-600 border-indigo-600 text-white' : 'bg-white border-slate-200 text-slate-400'}`}>{String.fromCharCode(65 + i)}</div>
                     <span className="text-xl md:text-2xl font-bold">{opt}</span>
                   </button>
@@ -238,11 +243,29 @@ export default function Grade5Page() {
             </div>
 
             <div className="flex justify-between items-center gap-4 px-4 pb-12 mt-4">
-              <button onClick={() => { setCurrentIdx(p => Math.max(0, p - 1)); scrollToTop(); }} disabled={currentIdx === 0} className="text-slate-400 font-bold hover:text-slate-600 disabled:opacity-0 transition-colors uppercase text-sm tracking-widest px-8 py-4">← Geri</button>
+              <button 
+                onClick={() => { setCurrentIdx(p => Math.max(0, p - 1)); scrollToTop(); }} 
+                disabled={currentIdx === 0} 
+                className="text-slate-400 font-bold hover:text-slate-600 disabled:opacity-0 transition-colors uppercase text-sm tracking-widest px-8 py-4"
+              >
+                ← Geri
+              </button>
               {currentIdx === quizQuestions.length - 1 ? (
-                <button onClick={() => { setView('result'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} disabled={answers[currentIdx] === undefined} className="px-20 py-8 bg-emerald-500 hover:bg-emerald-600 text-white rounded-[2.5rem] font-black text-2xl shadow-xl transition-all hover:scale-105 active:scale-95">TESTİ BİTİR</button>
+                <button 
+                  onClick={() => { setView('result'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} 
+                  disabled={answers[currentIdx] === undefined} 
+                  className="px-20 py-8 bg-emerald-500 hover:bg-emerald-600 text-white rounded-[2.5rem] font-black text-2xl shadow-xl transition-all hover:scale-105 active:scale-95"
+                >
+                  TESTİ BİTİR
+                </button>
               ) : (
-                <button onClick={() => { setCurrentIdx(p => p + 1); scrollToTop(); }} disabled={answers[currentIdx] === undefined} className="px-20 py-8 bg-indigo-600 hover:bg-indigo-700 text-white rounded-[2.5rem] font-black text-2xl shadow-xl transition-all hover:scale-105 active:scale-95">SIRADAKİ SORU ➔</button>
+                <button 
+                  onClick={() => { setCurrentIdx(p => p + 1); scrollToTop(); }} 
+                  disabled={answers[currentIdx] === undefined} 
+                  className="px-20 py-8 bg-indigo-600 hover:bg-indigo-700 text-white rounded-[2.5rem] font-black text-2xl shadow-xl transition-all hover:scale-105 active:scale-95"
+                >
+                  SONRAKİ SORU ➔
+                </button>
               )}
             </div>
           </div>
@@ -273,11 +296,7 @@ export default function Grade5Page() {
                   </div>
                 </div>
                 {loadingAi ? (
-                  <div className="space-y-4 animate-pulse">
-                    <div className="h-4 bg-indigo-200 rounded-full w-full"></div>
-                    <div className="h-4 bg-indigo-200 rounded-full w-5/6"></div>
-                    <p className="text-indigo-600 font-black italic flex items-center gap-3 pt-4"><span className="animate-spin text-3xl">🌀</span> Yanlışlarını inceliyorum...</p>
-                  </div>
+                  <p className="text-indigo-600 font-black italic flex items-center gap-3 pt-4"><span className="animate-spin text-3xl">🌀</span> Yanlışlarını inceliyorum...</p>
                 ) : (
                   <p className="text-slate-700 text-2xl md:text-4xl leading-relaxed italic font-bold">"{aiFeedback}"</p>
                 )}
@@ -290,55 +309,36 @@ export default function Grade5Page() {
                 </div>
                 <div className="bg-slate-50 p-10 md:p-16 rounded-[3.5rem] border border-slate-100 flex flex-col justify-center">
                   <p className="text-[12px] text-slate-400 font-black uppercase tracking-widest mb-4">Ders & Seviye</p>
-                  <p className="text-3xl md:text-5xl font-black capitalize text-indigo-400 truncate">{selectedSubject} Lvl {selectedTestNo}</p>
+                  <p className="text-3xl md:text-5xl font-black capitalize text-indigo-400 truncate">{selectedSubject} T{selectedTestNo}</p>
                 </div>
               </div>
 
               <div className="flex flex-col md:flex-row gap-8 pt-8">
-                <button onClick={() => setView('subject-select')} className="w-full py-10 bg-slate-900 text-white rounded-[3rem] font-black text-3xl hover:bg-slate-800 transition-all shadow-2xl hover:scale-[1.02]">YENİ BİR DERS SEÇ</button>
+                <button onClick={() => setView('subject-select')} className="w-full py-10 bg-slate-900 text-white rounded-[3rem] font-black text-3xl hover:bg-slate-800 transition-all shadow-2xl">YENİ BİR DERS SEÇ</button>
                 <button onClick={() => setView('test-select')} className="w-full py-10 bg-white border-4 border-slate-100 text-slate-600 rounded-[3rem] font-black text-3xl hover:bg-slate-50 transition-all shadow-xl">BAŞKA SEVİYEYE GEÇ</button>
               </div>
             </div>
 
-            {/* SORU DETAYLARI ANALİZİ */}
+            {/* DETAYLI SORU LİSTESİ */}
             <div className="space-y-12 border-t-2 border-slate-100 pt-20 text-left">
-                <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 px-6">
-                  <h4 className="text-4xl md:text-5xl font-black text-slate-800 tracking-tighter">Detaylı Soru Analizi</h4>
-                  <div className="bg-indigo-600 text-white px-8 py-4 rounded-[1.5rem] shadow-xl font-black uppercase text-sm tracking-widest">
-                    {selectedSubject} Seviye {selectedTestNo}
-                  </div>
-                </div>
-
+                <h4 className="text-4xl md:text-5xl font-black text-slate-800 tracking-tighter px-6">Detaylı Soru Analizi</h4>
                 <div className="grid gap-8">
                   {quizQuestions.map((q, i) => {
                     const userAnswer = answers[i];
                     const isCorrect = userAnswer === q.correct;
                     const isEmpty = userAnswer === undefined;
 
-                    let cardBg = "border-emerald-200 bg-emerald-50/30"; 
-                    let statusColor = "bg-emerald-500";
-                    let statusLabel = "TAM DOĞRU";
-
-                    if (isEmpty) {
-                      cardBg = "border-amber-200 bg-amber-50/50";
-                      statusColor = "bg-amber-500";
-                      statusLabel = "BOŞ BIRAKILDI";
-                    } else if (!isCorrect) {
-                      cardBg = "border-rose-200 bg-rose-50/30";
-                      statusColor = "bg-rose-500";
-                      statusLabel = "YANLIŞ CEVAP";
-                    }
+                    let cardBg = isCorrect ? "border-emerald-200 bg-emerald-50/30" : isEmpty ? "border-amber-200 bg-amber-50/50" : "border-rose-200 bg-rose-50/30";
+                    let statusColor = isCorrect ? "bg-emerald-500" : isEmpty ? "bg-amber-500" : "bg-rose-500";
+                    let statusLabel = isCorrect ? "TAM DOĞRU" : isEmpty ? "BOŞ BIRAKILDI" : "YANLIŞ CEVAP";
 
                     return (
-                      <div key={q.id} className={`p-8 md:p-16 rounded-[4rem] border-2 shadow-sm relative overflow-hidden transition-all hover:shadow-lg ${cardBg}`}>
-                        <div className={`absolute top-0 right-0 px-10 py-3 rounded-bl-[2rem] font-black text-white text-xs tracking-widest shadow-md ${statusColor}`}>
-                          {statusLabel}
-                        </div>
+                      <div key={q.id} className={`p-8 md:p-16 rounded-[4rem] border-2 shadow-sm relative overflow-hidden ${cardBg}`}>
+                        <div className={`absolute top-0 right-0 px-10 py-3 rounded-bl-[2rem] font-black text-white text-xs tracking-widest ${statusColor}`}>{statusLabel}</div>
                         <div className="flex flex-col md:flex-row gap-8 md:gap-12">
                           <div className={`w-16 h-16 md:w-20 md:h-20 rounded-3xl flex items-center justify-center font-black text-2xl md:text-3xl shrink-0 text-white shadow-xl ${statusColor}`}>{i + 1}</div>
                           <div className="space-y-8 w-full pt-2">
-                            <p className="font-black text-2xl md:text-4xl text-slate-800 leading-[1.1] tracking-tight">{q.prompt}</p>
-                            
+                            <p className="font-black text-2xl md:text-4xl text-slate-800 leading-tight">{q.prompt}</p>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                               {!isEmpty && !isCorrect && (
                                 <div className="p-8 rounded-[2rem] bg-white/60 border border-rose-100 shadow-sm">
@@ -347,16 +347,12 @@ export default function Grade5Page() {
                                 </div>
                               )}
                               <div className={`p-8 rounded-[2rem] bg-white/90 border shadow-md ${isEmpty ? 'border-amber-200' : 'border-emerald-100'}`}>
-                                <p className={`text-xs font-black uppercase tracking-widest mb-2 ${isEmpty ? 'text-amber-500' : 'text-emerald-500'}`}>Olması Gereken Doğru</p>
+                                <p className={`text-xs font-black uppercase tracking-widest mb-2 ${isEmpty ? 'text-amber-500' : 'text-emerald-500'}`}>Doğru Cevap</p>
                                 <p className={`${isEmpty ? 'text-amber-800' : 'text-emerald-800'} font-bold text-xl md:text-2xl`}>{q.options[q.correct]}</p>
                               </div>
                             </div>
-
-                            <div className="bg-white/50 backdrop-blur-sm p-8 md:p-12 rounded-[2.5rem] border border-slate-100 shadow-inner group">
-                              <div className="flex items-center gap-3 mb-4">
-                                <span className="text-3xl group-hover:rotate-12 transition-transform">💡</span>
-                                <span className="font-black text-indigo-600 text-xs uppercase tracking-[0.2em]">Öğretmen Çözüm Notu</span>
-                              </div>
+                            <div className="bg-white/50 backdrop-blur-sm p-8 md:p-12 rounded-[2.5rem] border border-slate-100 shadow-inner">
+                              <p className="font-black text-indigo-600 text-xs uppercase tracking-widest mb-4">💡 Öğretmen Çözüm Notu</p>
                               <p className="text-slate-600 italic text-xl md:text-2xl font-semibold leading-relaxed">{q.explanation}</p>
                             </div>
                           </div>
