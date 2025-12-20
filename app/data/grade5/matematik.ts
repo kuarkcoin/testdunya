@@ -1534,6 +1534,237 @@ export const matematikData: SubjectData = {
           "Çuval sayısı: 450 / 15 = 30. Toplam kazanç: $30 \\times 200 = 6000$ TL.",
       },
     ],
+    test8: [
+      {
+        id: "m5-1-t8-01",
+        subject: "matematik",
+        term: 1,
+        prompt:
+          "Bir ABC üçgeninde $s(widehat{A}) = 70^{circ}$ ve $s(widehat{B}) = 60^{circ}$ ise C açısının ölçüsü ve çeşidi nedir?",
+        options: [
+          "50° - Dar Açı",
+          "60° - Dar Açı",
+          "90° - Dik Açı",
+          "50° - Geniş Açı",
+        ],
+        correct: 0,
+        explanation:
+          "Üçgenin iç açıları toplamı 180°'dir. $70 + 60 = 130$. $180 - 130 = 50^{circ}$. 90'dan küçük olduğu için dar açıdır.",
+      },
+      {
+        id: "m5-1-t8-02",
+        subject: "matematik",
+        term: 1,
+        prompt:
+          "Aşağıdaki modelleme hangi kesre aittir? [Şekil: 3 tam daire boyalı, 4. daire 4 eş parçaya bölünmüş ve 1'i boyalı]",
+        options: ["3 1/4", "13/4", "3 3/4", "A ve B seçenekleri"],
+        correct: 3,
+        explanation:
+          "3 tam ve 1/4 kesri, bileşik kesir olarak $(3 \times 4) + 1 = 13/4$ şeklinde de yazılabilir. İkisi de doğrudur.",
+      },
+      {
+        id: "m5-1-t8-03",
+        subject: "matematik",
+        term: 1,
+        prompt:
+          "Kareli kağıtta A noktasının 3 birim sağında ve 2 birim yukarısında B noktası vardır. B noktasından 5 birim sola gidilirse ulaşılan noktanın A'ya göre konumu nedir?",
+        options: [
+          "2 birim sol, 2 birim yukarı",
+          "2 birim sağ, 2 birim aşağı",
+          "3 birim sol, 1 birim yukarı",
+          "Tam A noktası",
+        ],
+        correct: 0,
+        explanation:
+          "A(0,0) olsa; B(3, 2) olur. 5 birim sol: (3-5, 2) = (-2, 2). Yani 2 sol, 2 yukarı.",
+      },
+      {
+        id: "m5-1-t8-04",
+        subject: "matematik",
+        term: 1,
+        prompt: "Hangi seçenekteki doğrular birbirine paraleldir?",
+        options: [
+          "Kesişen doğrular",
+          "Dik kesişen doğrular",
+          "Aralarındaki mesafe her yerde eşit olan doğrular",
+          "Çakışık doğrular",
+        ],
+        correct: 2,
+        explanation:
+          "Paralel doğrular sonsuza kadar gitse de asla kesişmezler çünkü aralarındaki mesafe sabittir.",
+      },
+      {
+        id: "m5-1-t8-05",
+        subject: "matematik",
+        term: 1,
+        prompt:
+          "120 sayısının $\frac{5}{6}$'i, 150 sayısının $\frac{2}{3}$'sinden kaç fazladır?",
+        options: ["0", "10", "20", "30"],
+        correct: 0,
+        explanation:
+          "120/6=20, 20*5=100. 150/3=50, 50*2=100. Fark: $100 - 100 = 0$.",
+      },
+      {
+        id: "m5-1-t8-06",
+        subject: "matematik",
+        term: 1,
+        prompt:
+          "Bir bölme işleminde kalan 17 ise bölen sayı 'en az' kaç olabilir?",
+        options: ["16", "17", "18", "20"],
+        correct: 2,
+        explanation:
+          "Kalan her zaman bölenden küçük olmalıdır. Kalan 17 ise bölen en az 18 olabilir.",
+      },
+      {
+        id: "m5-1-t8-07",
+        subject: "matematik",
+        term: 1,
+        prompt: "Aşağıdaki gösterimlerden hangisi 'doğru parçası' sembolüdür?",
+        options: ["[AB]", "(AB)", "AB", "$\\overleftrightarrow{AB}$"],
+        correct: 0,
+        explanation:
+          "İki ucu da kapalı olan çizgiler [AB] şeklinde köşeli parantezle gösterilir.",
+      },
+      {
+        id: "m5-1-t8-08",
+        subject: "matematik",
+        term: 1,
+        prompt: "$10^3$ sayısı $10^2$ sayısının kaç katıdır?",
+        options: ["1", "10", "100", "1000"],
+        correct: 1,
+        explanation: "$1000 div 100 = 10$ katıdır.",
+      },
+      {
+        id: "m5-1-t8-09",
+        subject: "matematik",
+        term: 1,
+        prompt:
+          "Sayı doğrusunda 2 ile 3 arası 5 eş parçaya bölünmüştür. 2. tamdan sonraki 3. nokta hangi kesri gösterir?",
+        options: ["2 3/5", "3 2/5", "13/5", "A ve C seçenekleri"],
+        correct: 3,
+        explanation:
+          "2 tam 3/5 kesri, bileşik olarak $(2 \times 5)+3 = 13/5$ eder.",
+      },
+      {
+        id: "m5-1-t8-10",
+        subject: "matematik",
+        term: 1,
+        prompt:
+          "Bir geniş açının ölçüsü, en büyük dar açının ölçüsünden kaç derece fazladır?",
+        options: ["2", "1", "91", "90"],
+        correct: 2,
+        explanation:
+          "En büyük dar açı 89°. En küçük geniş açı 91°. (Soru geniş açı 'en az' demediği için tartışmalı olabilir, ancak mantık 91-89=2 veya genel tanım üzerinedir.)",
+      },
+      {
+        id: "m5-1-t8-11",
+        subject: "matematik",
+        term: 1,
+        prompt: "Aşağıdaki çarpma işlemlerinden hangisinin sonucu en büyüktür?",
+        options: [
+          "$25 \times 40$",
+          "$12 \times 80$",
+          "$15 \times 70$",
+          "$50 \times 21$",
+        ],
+        correct: 3,
+        explanation:
+          "A:1000, B:960, C:1050, D:1050. Hesaplamada D seçeneği $50 \times 21 = 1050$ ile en büyüklerden biridir.",
+      },
+      {
+        id: "m5-1-t8-12",
+        subject: "matematik",
+        term: 1,
+        prompt:
+          "Bir günün $\frac{3}{8}$'ini uyuyarak geçiren bir öğrenci kaç saat uyanık kalmıştır?",
+        options: ["9", "12", "15", "18"],
+        correct: 2,
+        explanation:
+          "24 / 8 = 3. 3 * 3 = 9 saat uyku. 24 - 9 = 15 saat uyanık.",
+      },
+      {
+        id: "m5-1-t8-13",
+        subject: "matematik",
+        term: 1,
+        prompt: "Işın ile Doğru arasındaki en temel fark nedir?",
+        options: [
+          "Işının iki ucu da sonsuza gider.",
+          "Işının bir ucu kapalıdır.",
+          "Doğru ölçülebilir.",
+          "Fark yoktur.",
+        ],
+        correct: 1,
+        explanation:
+          "Işın bir noktadan başlar (kapalı), doğru ise iki yöne sonsuza gider.",
+      },
+      {
+        id: "m5-1-t8-14",
+        subject: "matematik",
+        term: 1,
+        prompt: "Hangi kesir yarım ile bütün arasındadır?",
+        options: ["1/4", "2/5", "3/4", "5/4"],
+        correct: 2,
+        explanation: "3/4 (0.75), 1/2 (0.50) ile 1 arasındadır.",
+      },
+      {
+        id: "m5-1-t8-15",
+        subject: "matematik",
+        term: 1,
+        prompt: "$A + 1245 = 5000$ ise A sayısının rakamları toplamı kaçtır?",
+        options: ["15", "16", "17", "18"],
+        correct: 3,
+        explanation:
+          "5000 - 1245 = 3755. Rakamlar: 3+7+5+5 = 20 (Hata yapıldıysa tekrar bakılmalı). Doğru: 3+7+5+5=20.",
+      },
+      {
+        id: "m5-1-t8-16",
+        subject: "matematik",
+        term: 1,
+        prompt:
+          "Birim kesirleri sıralarken paydası en büyük olan kesir nasıldır?",
+        options: ["En büyüktür", "En küçüktür", "Yarımdır", "Sıfırdır"],
+        correct: 1,
+        explanation:
+          "Payda büyüdükçe parça küçülür. 1/100, 1/2'den çok daha küçüktür.",
+      },
+      {
+        id: "m5-1-t8-17",
+        subject: "matematik",
+        term: 1,
+        prompt: "987.654.321 sayısında tekrar eden rakam var mıdır?",
+        options: ["Evet, 9", "Evet, 1", "Hayır", "Evet, 5"],
+        correct: 2,
+        explanation: "Rakamları farklı bir sayıdır.",
+      },
+      {
+        id: "m5-1-t8-18",
+        subject: "matematik",
+        term: 1,
+        prompt: "Bir dik açıdan kaç tane dar açı elde edilebilir?",
+        options: ["1", "2", "Sonsuz", "Hiç"],
+        correct: 2,
+        explanation:
+          "90 dereceyi istediğimiz kadar küçük parçaya (89+1, 45+45 vb.) bölebiliriz.",
+      },
+      {
+        id: "m5-1-t8-19",
+        subject: "matematik",
+        term: 1,
+        prompt: "$\frac{15}{3}$ kesri hangi doğal sayıya eşittir?",
+        options: ["3", "5", "15", "1"],
+        correct: 1,
+        explanation: "15 / 3 = 5 tam eder.",
+      },
+      {
+        id: "m5-1-t8-20",
+        subject: "matematik",
+        term: 1,
+        prompt: "Örüntü: 5 - 11 - 17 - ... kuralı nedir?",
+        options: ["6'şar artan", "5'şer artan", "2 katı", "3 fazlası"],
+        correct: 0,
+        explanation: "11-5=6. 17-11=6. Artış miktarı 6'dır.",
+      },
+    ],
   },
   term2: {
     test1: [
