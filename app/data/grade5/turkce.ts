@@ -48,5 +48,19 @@ export const turkceData: SubjectData = {
       { id: "t5-adv-04", subject: "turkce", term: 2, prompt: "'Yazarın dili çok akıcı olduğu için kitap bir solukta bitti.' cümlesinden hangi yargı kesin olarak çıkarılır?", options: ["Kitap çok sürükleyicidir.", "Yazarın en iyi kitabıdır.", "Kitap çok kalındır.", "Yazar sadece macera yazar."], correct: 0, explanation: "Sürükleyicilik anlamı verir." }
     ],
     test2: []
-  }
+  },
+  { 
+  id: "t5-1-20", 
+  subject: "turkce", 
+  term: 1, 
+  prompt: "Aşağıdaki cümlelerin hangisinde 'kişileştirme' (insana ait özelliklerin başka varlıklara verilmesi) sanatı yapılmıştır?", 
+  options: [
+    "Güneş her sabah erkenden doğar.", 
+    "Kuşlar ağaçlarda neşeyle ötüyor.", 
+    "Rüzgar bugün çok sert esiyor.", 
+    "Güneş, bulutların arkasına saklanmış bize küsmüştü."
+  ], 
+  correct: 3, 
+  explanation: "Güneşin 'küsmesi' insana ait bir özelliktir. Bu özelliğin doğadaki bir varlığa (güneş) verilmesine kişileştirme denir." 
+}
 };
