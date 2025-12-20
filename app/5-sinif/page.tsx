@@ -445,3 +445,26 @@ export default function Grade5Page() {
         })}
     </div>
 </div>
+    )}
+
+
+
+      </div>
+
+
+
+      <style jsx global>{`
+
+        @keyframes bounce-slow { 0%, 100% { transform: translateY(-8%); } 50% { transform: translateY(0); } }
+
+        .animate-bounce-slow { animation: bounce-slow 4s infinite ease-in-out; }
+
+        body { overflow-x: hidden; }
+
+      `}</style>
+
+    </main>
+
+  );
+
+} 
