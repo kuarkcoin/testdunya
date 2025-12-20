@@ -1905,6 +1905,269 @@ export const turkceData: SubjectData = {
           "Tamamlanmış ve yargısı bitmiş cümlelerin sonuna nokta (.) konur.",
       },
     ],
+    test8: [
+      {
+        id: "t5-1-t8-01",
+        subject: "turkce",
+        term: 1,
+        prompt:
+          "Aşağıdaki cümlelerin hangisinde 'sayıların yazımı' ile ilgili bir yanlışlık yapılmıştır?",
+        options: [
+          "Sınavda 2'inci olduk.",
+          "Onar onar gruplara ayrıldık.",
+          "Bu yıl 15. yaşımı kutlayacağım.",
+          "Kitabı 25 liraya aldım.",
+        ],
+        correct: 0,
+        explanation:
+          "Sıra sayıları rakamla yazıldığında ek, rakamın okunuşuna göre gelir. '2'nci' şeklinde yazılmalıdır (İkinci).",
+      },
+      {
+        id: "t5-1-t8-02",
+        subject: "turkce",
+        term: 1,
+        prompt:
+          "Hangi metin türünde kahramanlar genellikle hayvanlardır ve sonunda bir ders verilir?",
+        options: ["Hikaye", "Masal", "Fabl", "Anı"],
+        correct: 2,
+        explanation:
+          "Hayvanların konuşturulduğu ve ahlaki bir ders içeren kısa anlatılara fabl denir.",
+      },
+      {
+        id: "t5-1-t8-03",
+        subject: "turkce",
+        term: 1,
+        prompt:
+          "Aşağıdaki cümlelerin hangisinde 'ünsüz benzeşmesi' (sertleşme) yoktur?",
+        options: [
+          "Sınıfta kimse kalmadı.",
+          "Yavaşça yanıma yaklaştı.",
+          "Kitabı çantasına koydu.",
+          "Aşçı yemeği çok tuzlu yapmış.",
+        ],
+        correct: 2,
+        explanation:
+          "A seçeneğinde (Sınıf-ta), B seçeneğinde (Yavaş-ça), D seçeneğinde (Aş-çı) sertleşme varken C seçeneğinde yoktur.",
+      },
+      {
+        id: "t5-1-t8-04",
+        subject: "turkce",
+        term: 1,
+        prompt: "Aşağıdaki cümlelerin hangisinde bir 'varsayım' anlamı vardır?",
+        options: [
+          "Keşke daha erken gelseydin.",
+          "Tut ki piyangodan büyük ikramiye sana çıktı.",
+          "Yarın kar yağabilir.",
+          "Haftaya sınav sonuçları açıklanacak.",
+        ],
+        correct: 1,
+        explanation:
+          "'Tut ki', 'diyelim ki', 'farz et ki' gibi ifadeler gerçekleşmemiş bir olayı gerçekleşmiş gibi kabul eder.",
+      },
+      {
+        id: "t5-1-t8-05",
+        subject: "turkce",
+        term: 1,
+        prompt: "Hangi seçenekteki kelimenin kökü 'isim'dir?",
+        options: ["Yazıcı", "Gözlükçü", "Süzgeç", "Koşucu"],
+        correct: 1,
+        explanation:
+          "Gözlükçü kelimesinin kökü 'Göz' ismidir. Diğerleri yaz-, süz- ve koş- fiillerinden türemiştir.",
+      },
+      {
+        id: "t5-1-t8-06",
+        subject: "turkce",
+        term: 1,
+        prompt: "Aşağıdaki deyimlerden hangisi 'çok sevinmek' anlamındadır?",
+        options: [
+          "Gözüne girmek",
+          "Ağzı kulaklarına varmak",
+          "Kulak kabartmak",
+          "Burnu havada olmak",
+        ],
+        correct: 1,
+        explanation:
+          "Ağzı kulaklarına varmak, büyük bir neşe ve mutluluk durumunu ifade eder.",
+      },
+      {
+        id: "t5-1-t8-07",
+        subject: "turkce",
+        term: 1,
+        prompt: "Hangi cümlede 'karşılaştırma' yapılmıştır?",
+        options: [
+          "Bugün hava düne göre daha sıcak.",
+          "Çocuklar parkta neşeyle oynuyor.",
+          "Kitap okumayı çok seviyorum.",
+          "Annem çok güzel yemek yapar.",
+        ],
+        correct: 0,
+        explanation:
+          "Bugünkü hava ile dünkü hava 'sıcaklık' yönünden kıyaslanmıştır.",
+      },
+      {
+        id: "t5-1-t8-08",
+        subject: "turkce",
+        term: 1,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'amaç-sonuç' ilişkisi vardır?",
+        options: [
+          "Yağmur yağdığı için ıslandım.",
+          "Ders çalışmak üzere odasına çekildi.",
+          "Sınavı kazandığına çok sevindi.",
+          "Yorgun olduğu için hemen uyudu.",
+        ],
+        correct: 1,
+        explanation:
+          "Odaya çekilme eylemi 'ders çalışma amacıyla' yapılmıştır.",
+      },
+      {
+        id: "t5-1-t8-09",
+        subject: "turkce",
+        term: 1,
+        prompt:
+          "Noktalama işaretlerinden hangisi, kendisinden sonra örnek verilecek cümlenin sonuna konur?",
+        options: ["İki nokta", "Noktalı virgül", "Üç nokta", "Virgül"],
+        correct: 0,
+        explanation:
+          "Açıklama yapılacak veya örnek verilecek yerlerden önce iki nokta (:) kullanılır.",
+      },
+      {
+        id: "t5-1-t8-10",
+        subject: "turkce",
+        term: 1,
+        prompt: "Aşağıdaki kelimelerden hangisinde 'ünlü düşmesi' vardır?",
+        options: ["Karnım", "Çiçekler", "Kalemim", "Sokakta"],
+        correct: 0,
+        explanation: "Karın-ım birleşirken ikinci hecedeki 'ı' sesi düşer.",
+      },
+      {
+        id: "t5-1-t8-11",
+        subject: "turkce",
+        term: 1,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'abartma' (mübalağa) vardır?",
+        options: [
+          "Güneş bize gülümsüyordu.",
+          "Bir ah çeksem dağı taşı eritir.",
+          "Deniz kıyısında taş topladık.",
+          "Okula gitmek için erkenden kalktı.",
+        ],
+        correct: 1,
+        explanation:
+          "Bir insanın ah çekerek dağı taşı eritmesi fiziksel olarak imkansızdır, abartmadır.",
+      },
+      {
+        id: "t5-1-t8-12",
+        subject: "turkce",
+        term: 1,
+        prompt: "Hangi kelime yapım eki alarak yeni bir anlam kazanmıştır?",
+        options: ["Masalar", "Yolcu", "Defterim", "Kitapta"],
+        correct: 1,
+        explanation:
+          "Yol isminden '-cu' eki ile 'yolculuk yapan kişi' anlamında yeni bir kelime türemiştir.",
+      },
+      {
+        id: "t5-1-t8-13",
+        subject: "turkce",
+        term: 1,
+        prompt: "Aşağıdakilerden hangisi bir 'nesnel' cümledir?",
+        options: [
+          "Kırmızı en güzel renktir.",
+          "Film çok sürükleyiciydi.",
+          "Türkiye'nin üç tarafı denizlerle çevrilidir.",
+          "Yemek harika kokuyor.",
+        ],
+        correct: 2,
+        explanation:
+          "Üç tarafın denizlerle çevrili olması kanıtlanabilir bir gerçektir.",
+      },
+      {
+        id: "t5-1-t8-14",
+        subject: "turkce",
+        term: 1,
+        prompt: "Aşağıdaki atasözlerinden hangisi 'tutumluluk' ile ilgilidir?",
+        options: [
+          "Ak akçe kara gün içindir.",
+          "İşleyen demir ışıldar.",
+          "Ağaç yaşken eğilir.",
+          "Bir elin nesi var iki elin sesi var.",
+        ],
+        correct: 0,
+        explanation:
+          "Biriktirilen paranın zor günlerde fayda sağlayacağını anlatır.",
+      },
+      {
+        id: "t5-1-t8-15",
+        subject: "turkce",
+        term: 1,
+        prompt: "Hangi seçenekte 'kişileştirme' sanatı yapılmıştır?",
+        options: [
+          "Bulutlar ağlıyordu bu sabah.",
+          "Kar her yeri beyaza boyadı.",
+          "Güneş doğunca uyandık.",
+          "Rüzgar çok sert esiyor.",
+        ],
+        correct: 0,
+        explanation:
+          "Bulutların 'ağlaması' insana ait bir özelliğin doğaya verilmesidir.",
+      },
+      {
+        id: "t5-1-t8-16",
+        subject: "turkce",
+        term: 1,
+        prompt: "Hangi kelimenin yazımı yanlıştır?",
+        options: ["Birkaç", "Birçok", "Pekçok", "Herhangi"],
+        correct: 2,
+        explanation: "'Pek çok' her zaman ayrı yazılır.",
+      },
+      {
+        id: "t5-1-t8-17",
+        subject: "turkce",
+        term: 1,
+        prompt: "Bir metnin 'yardımcı fikirleri' ile ilgili hangisi doğrudur?",
+        options: [
+          "Ana fikri desteklerler.",
+          "Metnin en genel yargısıdır.",
+          "Genelde tek cümledir.",
+          "Metnin başlığı ile aynıdır.",
+        ],
+        correct: 0,
+        explanation:
+          "Yardımcı fikirler ana fikrin ispatlanmasını ve anlaşılmasını sağlar.",
+      },
+      {
+        id: "t5-1-t8-18",
+        subject: "turkce",
+        term: 1,
+        prompt: "Aşağıdaki kelimelerden hangisi 'somut' bir anlam taşır?",
+        options: ["Sevgi", "Cesaret", "Rüzgar", "Rüya"],
+        correct: 2,
+        explanation:
+          "Rüzgar hissedilebilir (dokunma duyusu) olduğu için somuttur.",
+      },
+      {
+        id: "t5-1-t8-19",
+        subject: "turkce",
+        term: 1,
+        prompt: "Aşağıdaki kelime çiftlerinden hangisi 'zıt anlamlı' değildir?",
+        options: [
+          "Siyah - Kara",
+          "Hızlı - Yavaş",
+          "Büyük - Küçük",
+          "Zengin - Fakir",
+        ],
+        correct: 0,
+        explanation: "Siyah ve kara eş anlamlıdır.",
+      },
+      {
+        id: "t5-1-t8-20",
+        subject: "turkce",
+        term: 1,
+        prompt:
+          "Aşağıdaki noktalama işaretlerinden hangisi, tamamlanmış cümlelerin sonuna konur?",
+        options: ["Üç nokta", "Nokta", "Soru işareti", "Ünlem"],
+        correct: 1,
+        explanation: "Yargısı bitmiş düz cümlelerin sonuna nokta konur.",
+      },
+    ],
   },
   term2: {
     test1: [
