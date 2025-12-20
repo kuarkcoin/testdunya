@@ -1224,19 +1224,19 @@ export const fenData: SubjectData = {
         explanation:
           "Kelebeğin vücudunda kemik veya kıkırdaktan oluşan bir iskelet yoktur. Yılan, kurbağa ve balık omurgalıdır.",
       },
-      {
-  id: "f5-1-t5-14",
-  subject: "fen",
-  term: 1,
-  prompt: "Dinamometreye uygulanan kuvvet, yayın 'esneklik sınırı'nı aşarsa ne olur?",
+      { 
+  id: "f5-1-t5-15", 
+  subject: "fen", // Eksik olan alan buydu
+  term: 1,        // Eksik olan alan buydu
+  prompt: "Güneş, Dünya ve Ay'ın dönme yönleri ile ilgili hangisi 'ortaktır'?", 
   options: [
-    "Daha doğru ölçüm yapar.",
-    "Yay eski haline dönemez ve bozulur.",
-    "Yay kopar ama dinamometre çalışır.",
-    "Kuvvet birimi Newton'dan Gram'a döner."
-  ],
-  correct: 1,
-  explanation: "Her esnek cismin bir sınırı vardır. Bu sınır aşılırsa yay özelliği kaybolur (kalıcı deformasyon)."
+    "Hepsi saat yönünde döner.", 
+    "Hepsi saat yönünün tersine döner.", 
+    "Sadece Dünya saat yönünde döner.", 
+    "Güneş dönme hareketi yapmaz."
+  ], 
+  correct: 1, 
+  explanation: "Güneş, Dünya ve Ay'ın tüm dönme ve dolanma hareketleri (batıdan doğuya) saat yönünün tersinedir." 
 },
       {
         id: "f5-1-t5-15",
