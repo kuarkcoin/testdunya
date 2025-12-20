@@ -212,52 +212,90 @@ export default function Grade5Page() {
           </div>
         )}
 
-        {/* 4. QUIZ EKRANI - Genişletilmiş ve Mobil Uyumlu */}
+        {/* 4. QUIZ EKRANI - Aydınlık ve Enerjik Tema */}
 {view === 'quiz' && quizQuestions.length > 0 && (
-  <div className="w-full max-w-5xl mx-auto space-y-6 md:space-y-8 animate-in fade-in duration-500">
+  <div className="max-w-5xl mx-auto space-y-8 animate-in fade-in duration-500">
+    
+    {/* Üst Bilgi Paneli */}
     <div className="space-y-4 px-2">
-      {/* ... Üst bilgiler ... */}
+      <div className="flex justify-between items-end">
+        <span className="text-xs font-black uppercase text-indigo-600 tracking-widest">
+          {selectedSubject} - Test {selectedTestNo}
+        </span>
+        <span className="text-xl font-mono font-black text-slate-400">
+          {currentIdx + 1} <span className="text-slate-300">/</span> {quizQuestions.length}
+        </span>
+      </div>
+      {/* İlerleme Çubuğu */}
+      <div className="w-full h-3 bg-slate-200 rounded-full overflow-hidden shadow-inner">
+        <div 
+          className="h-full bg-gradient-to-r from-indigo-500 to-blue-500 transition-all duration-700 shadow-lg" 
+          style={{ width: `${((currentIdx + 1) / quizQuestions.length) * 100}%` }} 
+        />
+      </div>
     </div>
 
-    {/* Kutu boşlukları p-6'ya çekildi, kenarlar rounded-3xl yapıldı */}
-    <div className="bg-slate-800 border border-white/10 p-6 md:p-16 rounded-3xl md:rounded-[3.5rem] shadow-2xl relative overflow-hidden">
-      <h3 className="text-2xl md:text-4xl font-bold leading-tight text-white mb-8 md:mb-12">
+    {/* ANA SORU KARTI (Burası artık bembeyaz ve gölgeli) */}
+    <div className="bg-white border border-slate-200 p-8 md:p-16 rounded-[3rem] shadow-xl shadow-indigo-100/50 relative overflow-hidden">
+      <h3 className="text-2xl md:text-3xl font-extrabold leading-tight text-slate-800 mb-12">
         {quizQuestions[currentIdx].prompt}
       </h3>
       
-      <div className="grid gap-3 md:gap-5">
+      <div className="grid gap-4 md:gap-6">
         {quizQuestions[currentIdx].options.map((opt: string, i: number) => (
           <button 
             key={i} 
             onClick={() => setAnswers(prev => ({ ...prev, [currentIdx]: i }))} 
-            className={`p-5 md:p-8 rounded-2xl md:rounded-[2rem] border-2 text-left transition-all flex items-center gap-4 md:gap-6 ${
+            className={`p-6 md:p-8 rounded-2xl md:rounded-[2rem] border-2 text-left transition-all flex items-center gap-4 md:gap-6 group ${
               answers[currentIdx] === i 
-              ? 'border-indigo-500 bg-indigo-500/10 text-white' 
-              : 'border-white/5 bg-slate-900/50 text-slate-400 hover:border-white/20'
+              ? 'border-indigo-600 bg-indigo-50 text-indigo-900 shadow-md' 
+              : 'border-slate-100 bg-slate-50 text-slate-600 hover:border-indigo-300 hover:bg-white'
             }`}
           >
-            <div className={`w-10 h-10 md:w-14 md:h-14 rounded-xl md:rounded-2xl border-2 flex items-center justify-center font-black text-lg ${
-              answers[currentIdx] === i ? 'bg-indigo-500 border-indigo-400 text-white' : 'border-white/10'
+            {/* Şık Harfi (A, B, C...) */}
+            <div className={`w-10 h-10 md:w-14 md:h-14 rounded-xl md:rounded-2xl border-2 flex items-center justify-center font-black text-lg md:text-xl transition-all ${
+              answers[currentIdx] === i 
+              ? 'bg-indigo-600 border-indigo-600 text-white' 
+              : 'bg-white border-slate-200 text-slate-400 group-hover:border-indigo-400'
             }`}>
               {String.fromCharCode(65 + i)}
             </div>
-            <span className="text-base md:text-xl font-semibold leading-snug">{opt}</span>
+            <span className="text-lg md:text-xl font-bold">{opt}</span>
           </button>
-                ))}
-              </div>
-            </div>
+        ))}
+      </div>
+    </div>
 
-            <div className="flex justify-between items-center gap-4 px-4 pb-8">
-              <button onClick={() => setCurrentIdx(p => Math.max(0, p - 1))} disabled={currentIdx === 0} className="text-slate-500 font-black hover:text-white disabled:opacity-0 transition-colors uppercase text-sm">← Geri</button>
-              {currentIdx === quizQuestions.length - 1 ? (
-                <button onClick={() => { setView('result'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} disabled={answers[currentIdx] === undefined} className="px-16 py-6 bg-emerald-600 hover:bg-emerald-500 text-white rounded-[2rem] font-black text-xl shadow-2xl transition-all hover:scale-105 active:scale-95">BİTİR</button>
-              ) : (
-                <button onClick={() => { setCurrentIdx(p => p + 1); window.scrollTo({ top: 0, behavior: 'smooth' }); }} disabled={answers[currentIdx] === undefined} className="px-16 py-6 bg-indigo-600 hover:bg-indigo-500 text-white rounded-[2rem] font-black text-xl shadow-2xl transition-all hover:scale-105 active:scale-95">SIRADAKİ ➔</button>
-              )}
-            </div>
-          </div>
-        )}
-
+    {/* Alt Butonlar */}
+    <div className="flex justify-between items-center gap-4 px-4 pb-12">
+      <button 
+        onClick={() => setCurrentIdx(p => Math.max(0, p - 1))} 
+        disabled={currentIdx === 0} 
+        className="text-slate-400 font-bold hover:text-slate-600 disabled:opacity-0 transition-colors uppercase text-sm"
+      >
+        ← Önceki Soru
+      </button>
+      
+      {currentIdx === quizQuestions.length - 1 ? (
+        <button 
+          onClick={() => { setView('result'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} 
+          disabled={answers[currentIdx] === undefined} 
+          className="px-16 py-6 bg-emerald-500 hover:bg-emerald-600 text-white rounded-[2rem] font-black text-xl shadow-lg shadow-emerald-200 transition-all hover:scale-105 active:scale-95"
+        >
+          TESTİ BİTİR
+        </button>
+      ) : (
+        <button 
+          onClick={() => { setCurrentIdx(p => p + 1); window.scrollTo({ top: 0, behavior: 'smooth' }); }} 
+          disabled={answers[currentIdx] === undefined} 
+          className="px-16 py-6 bg-indigo-600 hover:bg-indigo-700 text-white rounded-[2rem] font-black text-xl shadow-lg shadow-indigo-200 transition-all hover:scale-105 active:scale-95"
+        >
+          SIRADAKİ ➔
+        </button>
+      )}
+    </div>
+  </div>
+)}
         {/* 5. SONUÇ VE AI ANALİZİ */}
         {view === 'result' && (
           <div className="max-w-6xl mx-auto space-y-12 animate-in zoom-in-95 duration-700 pb-20">
