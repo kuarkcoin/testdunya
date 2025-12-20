@@ -1061,10 +1061,6 @@ export const fenData: SubjectData = {
     correct: 0, 
     explanation: "Güneş katmanlıdır ve döner. Ancak Güneş lekeleri, çevrelerine göre daha soğuk oldukları için koyu görünen bölgelerdir." 
   },
-  
-
-[Image of the sun's layers]
-
   { 
     id: "f5-1-t5-02", 
     subject: "fen", 
@@ -1074,9 +1070,6 @@ export const fenData: SubjectData = {
     correct: 1, 
     explanation: "Ay'ın evreleri arası 7 gündür. Yeni Ay'dan 7 gün sonra İlk Dördün, 14 gün sonra ise Dolunay (tam daire) görülür." 
   },
-  
-
-[Image of moon phases cycle]
 
   { 
     id: "f5-1-t5-03", 
@@ -1097,9 +1090,6 @@ export const fenData: SubjectData = {
     explanation: "Renkli ve güzel kokulu taç yapraklar, arı ve kelebek gibi canlıları kendine çekerek bitkinin üremesini sağlar." 
   },
   
-
-[Image of a flower parts diagram]
-
   { 
     id: "f5-1-t5-05", 
     subject: "fen", 
@@ -1138,9 +1128,6 @@ export const fenData: SubjectData = {
     explanation: "Doğurarak çoğalma ve sütle besleme memeli canlıların en temel ortak özelliğidir." 
   },
   
-
-[Image of classification of animals]
-
   { 
     id: "f5-1-t5-09", 
     subject: "fen", 
