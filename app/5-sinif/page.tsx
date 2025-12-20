@@ -114,12 +114,12 @@ export default function Grade5Page() {
     if (view === 'result') handleAIFeedback();
   }, [view]);
 
-  // TESTİ BAŞLAT
+  // --- TESTİ BAŞLAT FONKSİYONU ---
   const startQuiz = (testNo: number) => {
     const termKey = `term${selectedTerm}` as 'term1' | 'term2';
     const testKey = `test${testNo}`;
     
-    // @ts-ignore
+    // @ts-ignore - Dinamik ders seçimi için
     const data = allQuestions5[selectedSubject][termKey][testKey];
 
     if (data && data.length > 0) {
@@ -132,21 +132,50 @@ export default function Grade5Page() {
     } else {
       alert("Bu test henüz hazırlanıyor!");
     }
-  };
+  }; // Fonksiyon burada güvenli bir şekilde kapandı.
 
+  // --- ANA RENDER ---
   return (
-    <main className="min-h-screen bg-slate-900 text-white font-sans pb-20 overflow-x-hidden">
+    // Arka planı bg-slate-900 yaparak biraz daha ferahlattık
+    <main className="min-h-screen bg-slate-900 text-white font-sans pb-20 overflow-x-hidden relative">
+      
+      {/* İsteğe bağlı: Arka plana hafif bir ışık efekti ekleyerek derinlik katıyoruz */}
+      <div className="fixed inset-0 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-indigo-900/15 via-slate-900 to-slate-900 -z-10" />
+
       {view === 'result' && resultData.percent >= 80 && width > 0 && (
         <ReactConfetti width={width} height={height} numberOfPieces={300} recycle={false} />
       )}
 
+      {/* max-w-7xl yaparak yanlardan basık görünümü düzelttik */}
       <div className="max-w-7xl mx-auto px-4 md:px-8 pt-6 md:pt-10">
+        
+        {/* Üst Navigasyon Çubuğu */}
         <div className="flex items-center justify-between mb-8 md:mb-12">
-          <Link href="/" className="text-slate-400 hover:text-white font-bold transition-colors">← Ana Sayfa</Link>
+          <Link 
+            href="/" 
+            className="text-slate-400 hover:text-white font-bold transition-colors flex items-center gap-2"
+          >
+            <span className="text-xl">←</span> Ana Sayfa
+          </Link>
+
           {view !== 'subject-select' && (
-            <button onClick={() => setView('subject-select')} className="bg-white/5 border border-white/10 px-4 py-2 rounded-2xl hover:bg-white/10 transition-all font-black text-xs">Ders Değiştir</button>
+            <button 
+              onClick={() => setView('subject-select')} 
+              className="bg-white/5 border border-white/10 px-6 py-2.5 rounded-2xl hover:bg-white/10 hover:border-indigo-500/50 transition-all font-black text-xs uppercase tracking-widest shadow-lg"
+            >
+              Ders Değiştir
+            </button>
           )}
         </div>
+
+        {/* --- DİĞER EKRANLAR (Buraya view kontrolleri gelecek) --- */}
+        {/* Örn: {view === 'subject-select' && (...)} */}
+
+      </div>
+    </main>
+  );
+} // Grade5Page bileşenini kapatan parantez
+   
 
         {/* 1. DERS SEÇİMİ */}
         {view === 'subject-select' && (
