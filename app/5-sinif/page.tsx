@@ -296,72 +296,87 @@ export default function Grade5Page() {
     </div>
   </div>
 )}
-        {/* 5. SONUÇ VE AI ANALİZİ */}
-        {view === 'result' && (
-          <div className="max-w-6xl mx-auto space-y-12 animate-in zoom-in-95 duration-700 pb-20">
-            <div className="bg-slate-800 border border-white/10 p-12 md:p-20 rounded-[4rem] text-center shadow-2xl relative space-y-12">
-              <div className="space-y-4">
-                <h2 className="text-indigo-400 font-black uppercase tracking-widest text-xs">Test Raporu</h2>
-                <h3 className="text-6xl font-black tracking-tighter text-white">Sonuçların Hazır!</h3>
-              </div>
+        {/* 5. SONUÇ VE AI ANALİZİ - Genişletilmiş Tasarım */}
+{view === 'result' && (
+  // max-w-4xl -> max-w-7xl yaparak tüm ekrana yayılmasını sağladık
+  <div className="max-w-7xl mx-auto space-y-8 md:space-y-12 animate-in zoom-in-95 duration-700 pb-20 px-2 md:px-0">
+    
+    {/* Ana Rapor Kartı */}
+    <div className="bg-white border border-slate-200 p-5 md:p-16 rounded-[2.5rem] md:rounded-[4rem] text-center shadow-2xl shadow-indigo-100/50 relative space-y-10 md:space-y-16">
+      
+      <div className="space-y-4">
+        <h2 className="text-indigo-600 font-black uppercase tracking-widest text-xs md:text-sm">Test Raporu</h2>
+        <h3 className="text-4xl md:text-6xl font-black tracking-tighter text-slate-900">Sonuçların Hazır!</h3>
+      </div>
 
-              <div className="inline-flex items-center justify-center p-2 bg-gradient-to-br from-indigo-500 to-fuchsia-500 rounded-full shadow-2xl">
-                <div className="bg-slate-950 rounded-full px-24 py-16">
-                  <span className="text-7xl md:text-[10rem] font-black text-transparent bg-clip-text bg-gradient-to-r from-indigo-200 to-fuchsia-200 leading-none">{resultData.percent}%</span>
-                </div>
-              </div>
+      {/* Başarı Yüzdesi Çemberi - Mobilde küçültüldü */}
+      <div className="inline-flex items-center justify-center p-1.5 md:p-2 bg-gradient-to-br from-indigo-500 to-fuchsia-500 rounded-full shadow-2xl">
+        <div className="bg-white rounded-full px-12 py-8 md:px-24 md:py-16">
+          <span className="text-6xl md:text-[10rem] font-black text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-fuchsia-600 leading-none">
+            {resultData.percent}%
+          </span>
+        </div>
+      </div>
 
-              <div className="bg-indigo-500/10 border border-indigo-500/30 p-10 rounded-[3.5rem] text-left relative overflow-hidden group">
-                <div className="flex items-center gap-5 mb-8">
-                  <div className="bg-indigo-600 text-white p-4 rounded-3xl text-3xl animate-bounce-slow">🤖</div>
-                  <div>
-                    <h4 className="font-black text-indigo-400 uppercase text-xs tracking-widest">TestDünya AI</h4>
-                    <span className="text-white font-black text-2xl tracking-tight">Rehber Öğretmen</span>
-                  </div>
-                </div>
-                {loadingAi ? (
-                  <p className="text-indigo-400 font-black italic flex items-center gap-3"><span className="animate-spin text-2xl">🌀</span> Yanlışlarını inceliyorum...</p>
-                ) : (
-                  <p className="text-indigo-50 text-2xl leading-relaxed italic font-semibold">"{aiFeedback}"</p>
-                )}
-              </div>
+      {/* AI ANALİZ KUTUSU - Geniş ve Okunaklı */}
+      <div className="bg-indigo-50 border border-indigo-100 p-6 md:p-10 rounded-[2rem] md:rounded-[3.5rem] text-left relative overflow-hidden group">
+        <div className="flex items-center gap-4 md:gap-5 mb-6 md:mb-8">
+          <div className="bg-indigo-600 text-white p-3 md:p-4 rounded-2xl md:rounded-3xl text-2xl md:text-3xl animate-bounce-slow">🤖</div>
+          <div>
+            <h4 className="font-black text-indigo-600 uppercase text-[10px] md:text-xs tracking-widest">TestDünya AI</h4>
+            <span className="text-slate-900 font-black text-xl md:text-2xl tracking-tight">Rehber Öğretmen</span>
+          </div>
+        </div>
+        {loadingAi ? (
+          <p className="text-indigo-600 font-black italic flex items-center gap-3">
+            <span className="animate-spin text-xl">🌀</span> Yanlışlarını inceliyorum...
+          </p>
+        ) : (
+          <p className="text-slate-700 text-lg md:text-2xl leading-relaxed italic font-medium">"{aiFeedback}"</p>
+        )}
+      </div>
 
-              <div className="grid grid-cols-2 gap-8">
-                <div className="bg-white/5 p-10 rounded-[3rem] border border-white/5">
-                  <p className="text-[11px] text-slate-500 font-black uppercase tracking-widest mb-3">Doğru</p>
-                  <p className="text-6xl font-black text-emerald-400">{resultData.correct} <span className="text-xl text-slate-600">/ {resultData.total}</span></p>
-                </div>
-                <div className="bg-white/5 p-10 rounded-[3rem] border border-white/5">
-                  <p className="text-[11px] text-slate-500 font-black uppercase tracking-widest mb-3">Test Bilgisi</p>
-                  <p className="text-3xl font-black capitalize text-indigo-200 truncate">{selectedSubject} T{selectedTestNo}</p>
-                </div>
-              </div>
+      {/* İstatistik Kartları */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+        <div className="bg-slate-50 p-6 md:p-10 rounded-[2rem] md:rounded-[3rem] border border-slate-100 flex flex-col items-center">
+          <p className="text-[10px] md:text-[11px] text-slate-400 font-black uppercase tracking-widest mb-2 md:mb-3">Doğru Sayısı</p>
+          <p className="text-4xl md:text-6xl font-black text-emerald-500">{resultData.correct} <span className="text-lg md:text-xl text-slate-300">/ {resultData.total}</span></p>
+        </div>
+        <div className="bg-slate-50 p-6 md:p-10 rounded-[2rem] md:rounded-[3rem] border border-slate-100 flex flex-col items-center">
+          <p className="text-[10px] md:text-[11px] text-slate-400 font-black uppercase tracking-widest mb-2 md:mb-3">Ders Bilgisi</p>
+          <p className="text-2xl md:text-3xl font-black capitalize text-indigo-400 truncate w-full">{selectedSubject} T{selectedTestNo}</p>
+        </div>
+      </div>
 
-              <div className="flex flex-col gap-6 pt-6">
-                <button onClick={() => setView('subject-select')} className="py-8 bg-white text-slate-950 rounded-[2.5rem] font-black text-2xl hover:bg-slate-200 transition-all shadow-2xl">YENİ DERS SEÇ</button>
-                <button onClick={() => setView('test-select')} className="py-8 bg-slate-700 text-white rounded-[2.5rem] font-black text-2xl hover:bg-slate-600 transition-all shadow-2xl">DİĞER TESTLER</button>
-              </div>
-            </div>
-            
-            <div className="space-y-8 border-t border-white/10 pt-16 text-left">
-                <h4 className="text-4xl font-black text-white px-4">Soru Detayları</h4>
-                {quizQuestions.map((q, i) => (
-                  <div key={q.id} className={`p-10 md:p-14 rounded-[3.5rem] border-2 ${answers[i] === q.correct ? 'border-emerald-500/20 bg-emerald-500/5' : 'border-red-500/20 bg-red-500/5'}`}>
-                    <div className="flex gap-10">
-                        <div className={`w-16 h-16 rounded-[1.5rem] flex items-center justify-center font-black text-2xl shrink-0 ${answers[i] === q.correct ? 'bg-emerald-500' : 'bg-red-500'}`}>{i + 1}</div>
-                        <div className="space-y-6 w-full">
-                          <p className="font-bold text-3xl text-slate-100">{q.prompt}</p>
-                          <p className="text-emerald-400 font-bold">Doğru Cevap: {q.options[q.correct]}</p>
-                          <div className="bg-black/40 p-8 rounded-[2.5rem] border border-white/5">
-                            <p className="text-slate-400 italic text-xl">💡 {q.explanation}</p>
-                          </div>
-                        </div>
+      {/* Aksiyon Butonları */}
+      <div className="flex flex-col md:flex-row gap-4 md:gap-6 pt-6">
+        <button onClick={() => setView('subject-select')} className="w-full py-6 md:py-8 bg-slate-900 text-white rounded-2xl md:rounded-[2.5rem] font-black text-xl md:text-2xl hover:bg-slate-800 transition-all shadow-xl">YENİ DERS SEÇ</button>
+        <button onClick={() => setView('test-select')} className="w-full py-6 md:py-8 bg-white border-2 border-slate-200 text-slate-600 rounded-2xl md:rounded-[2.5rem] font-black text-xl md:text-2xl hover:bg-slate-50 transition-all shadow-lg">DİĞER TESTLER</button>
+      </div>
+    </div>
+    
+    {/* SORU DETAYLARI - Mobilde kenarlara kadar yayılır */}
+    <div className="space-y-6 md:space-y-8 border-t border-slate-200 pt-12 md:pt-16 text-left">
+        <h4 className="text-3xl md:text-4xl font-black text-slate-800 px-4">Soru Detayları</h4>
+        <div className="grid gap-4 md:gap-6">
+          {quizQuestions.map((q, i) => (
+            <div key={q.id} className={`p-6 md:p-14 rounded-[2rem] md:rounded-[3.5rem] border-2 shadow-sm ${answers[i] === q.correct ? 'border-emerald-100 bg-emerald-50/30' : 'border-red-100 bg-red-50/30'}`}>
+              <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+                  <div className={`w-12 h-12 md:w-16 md:h-16 rounded-xl md:rounded-[1.5rem] flex items-center justify-center font-black text-xl md:text-2xl shrink-0 ${answers[i] === q.correct ? 'bg-emerald-500 text-white' : 'bg-red-500 text-white'}`}>{i + 1}</div>
+                  <div className="space-y-4 md:space-y-6 w-full">
+                    <p className="font-extrabold text-xl md:text-3xl text-slate-800">{q.prompt}</p>
+                    <p className="text-emerald-600 font-bold text-lg">Doğru Cevap: {q.options[q.correct]}</p>
+                    <div className="bg-white p-6 md:p-8 rounded-[1.5rem] md:rounded-[2.5rem] border border-slate-100 shadow-inner">
+                      <p className="text-slate-500 italic text-base md:text-xl font-medium">💡 {q.explanation}</p>
                     </div>
                   </div>
-                ))}
+              </div>
             </div>
-          </div>
-        )}
+          ))}
+        </div>
+    </div>
+  </div>
+)}
 
       </div>
 
