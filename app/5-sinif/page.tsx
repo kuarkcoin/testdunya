@@ -135,7 +135,7 @@ export default function Grade5Page() {
   };
 
   return (
-    <main className="min-h-screen bg-slate-950 text-white font-sans pb-20 overflow-x-hidden">
+    <main className="min-h-screen bg-slate-900 text-white font-sans pb-20 overflow-x-hidden">
       {view === 'result' && resultData.percent >= 80 && width > 0 && (
         <ReactConfetti width={width} height={height} numberOfPieces={300} recycle={false} />
       )}
@@ -174,7 +174,7 @@ export default function Grade5Page() {
         {/* 2. DÖNEM SEÇİMİ */}
         {view === 'term-select' && (
           <div className="max-w-2xl mx-auto py-12 animate-in zoom-in-95 duration-500">
-            <div className="bg-slate-900 border border-white/10 p-12 rounded-[4rem] text-center space-y-10 shadow-2xl">
+            <div className="bg-slate-800 border border-white/5 p-12 rounded-[4rem] shadow-2xl">
               <div className="space-y-3">
                 <h2 className="text-5xl font-black capitalize text-indigo-400">{selectedSubject}</h2>
                 <p className="text-slate-400 text-lg">Hangi dönemin testlerini çözmek istersin?</p>
@@ -227,7 +227,7 @@ export default function Grade5Page() {
               </div>
             </div>
 
-            <div className="bg-slate-900 border border-white/10 p-12 md:p-16 rounded-[3.5rem] shadow-2xl space-y-12 relative overflow-hidden">
+            <div className="bg-slate-800 border border-white/10 p-12 md:p-16 rounded-[3.5rem] shadow-2xl relative overflow-hidden">
               <h3 className="text-3xl md:text-4xl font-bold leading-tight">{quizQuestions[currentIdx].prompt}</h3>
               <div className="grid gap-5">
                 {quizQuestions[currentIdx].options.map((opt: string, i: number) => (
