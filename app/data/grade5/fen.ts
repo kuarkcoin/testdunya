@@ -1052,279 +1052,204 @@ export const fenData: SubjectData = {
       },
     ],
     test5: [
-      {
-        id: "f5-1-t5-01",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Güneş ile ilgili; I. Katmanlı bir yapıya sahiptir. II. Kendi ekseni etrafında dönerken yüzeyindeki lekeler de hareket eder. III. Güneş lekeleri Güneş'in en sıcak bölgeleridir. ifadelerinden hangileri 'doğrudur'?",
-        options: ["I ve II", "II ve III", "I ve III", "I, II ve III"],
-        correct: 0,
-        explanation:
-          "Güneş katmanlıdır ve döner. Ancak Güneş lekeleri, çevrelerine göre daha soğuk oldukları için koyu görünen bölgelerdir.",
-      },
-      {
-        id: "f5-1-t5-02",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Ay'ın 'Yeni Ay' evresinde olduğu bir günde gökyüzüne bakan bir gözlemci, yaklaşık 14 gün sonra Ay'ı hangi ana evrede ve nasıl görür?",
-        options: [
-          "İlk Dördün - Yarım daire",
-          "Dolunay - Tam daire",
-          "Son Dördün - Ters D",
-          "Yeni Ay - Görünmez",
-        ],
-        correct: 1,
-        explanation:
-          "Ay'ın evreleri arası 7 gündür. Yeni Ay'dan 7 gün sonra İlk Dördün, 14 gün sonra ise Dolunay (tam daire) görülür.",
-      },
-      {
-        id: "f5-1-t5-03",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Aşağıdaki canlılardan hangisi 'mikroskobik canlılar' grubunda yer almasına rağmen bazen çıplak gözle görülebilir bir tabaka (koloni) oluşturur?",
-        options: ["Amip", "Öglena", "Küf Mantarı", "Bakteri"],
-        correct: 2,
-        explanation:
-          "Küf mantarları mikroskobik canlılardır ancak bir araya gelip çoğaldıklarında (koloni) ekmek veya meyve üzerinde renkli bir tabaka olarak görülebilirler.",
-      },
-      {
-        id: "f5-1-t5-04",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Çiçekli bitkilerde bulunan 'taç yaprakların' temel görevi aşağıdakilerden hangisidir?",
-        options: [
-          "Besin üretmek",
-          "Suyu taşımak",
-          "Rengi ve kokusuyla böcekleri çekerek tozlaşmaya yardımcı olmak",
-          "Bitkiyi toprağa bağlamak",
-        ],
-        correct: 2,
-        explanation:
-          "Renkli ve güzel kokulu taç yapraklar, arı ve kelebek gibi canlıları kendine çekerek bitkinin üremesini sağlar.",
-      },
-      {
-        id: "f5-1-t5-05",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Eşit bölmeli K ve L dinamometrelerinden K'nın ölçüm sınırı 50 N, L'nin ise 100 N'dur. Her iki dinamometreye de 20 N'lık bir yük asılırsa hangisi daha fazla uzar?",
-        options: [
-          "K dinamometresi",
-          "L dinamometresi",
-          "Her ikisi de eşit uzar",
-          "Hassas olan L olduğu için L uzar",
-        ],
-        correct: 0,
-        explanation:
-          "Daha küçük kuvvetleri ölçen dinamometreler (K) daha hassastır ve aynı kuvvet karşısında yayı daha fazla uzama gösterir.",
-      },
-      {
-        id: "f5-1-t5-06",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Ay'ın yüzeyinde gece ve gündüz sıcaklık farkının 200 derecenin üzerinde olmasının sebebi nedir?",
-        options: [
-          "Ay'ın Dünya'ya uzak olması",
-          "Atmosferin yok denecek kadar az olması",
-          "Ay'ın kendi ışığının olmaması",
-          "Güneş'e çok yakın olması",
-        ],
-        correct: 1,
-        explanation:
-          "Atmosfer bir battaniye gibi ısıyı dengeler. Ay'da atmosfer olmadığı için Güneş alan yer aşırı sıcak, almayan yer aşırı soğuk olur.",
-      },
-      {
-        id: "f5-1-t5-07",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Maya mantarlarının faaliyet gösterebilmesi için; I. Uygun sıcaklık, II. Besin (şeker), III. Su (nem). şartlarından hangileri gereklidir?",
-        options: ["I ve II", "II ve III", "I ve III", "I, II ve III"],
-        correct: 3,
-        explanation:
-          "Mantarların çoğalması için sıcaklık, besin ve nemli ortamın bir arada bulunması gerekir.",
-      },
-      {
-        id: "f5-1-t5-08",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Hangi canlı grubunun tamamı yavrularını doğurur ve sütle besler?",
-        options: ["Kuşlar", "Sürüngenler", "Memeliler", "Balıklar"],
-        correct: 2,
-        explanation:
-          "Doğurarak çoğalma ve sütle besleme memeli canlıların en temel ortak özelliğidir.",
-      },
-      {
-        id: "f5-1-t5-09",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Dinamometrenin yapısındaki yayın inceltilmesi dinamometrede neyi değiştirir?",
-        options: [
-          "Ölçebileceği maksimum kuvvet artar.",
-          "Dinamometrenin boyu kısalır.",
-          "Hassasiyeti artar, daha küçük kuvvetleri ölçebilir.",
-          "Ölçüm hatası artar.",
-        ],
-        correct: 2,
-        explanation:
-          "İnce yaylı dinamometreler daha hassastır, küçük kuvvetlerde bile belirgin uzama gösterirler.",
-      },
-      {
-        id: "f5-1-t5-10",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Güneş'ten gelen ısı ve ışık enerjisi, merkezindeki hangi gazın bir diğerine dönüşmesiyle oluşur?",
-        options: [
-          "Helyumun Hidrojene",
-          "Hidrojenin Helyuma",
-          "Oksijenin Azota",
-          "Karbonun Oksijene",
-        ],
-        correct: 1,
-        explanation:
-          "Güneş'te sürekli devam eden patlamalarla Hidrojen gazı Helyuma dönüşür ve bu esnada devasa bir enerji açığa çıkar.",
-      },
-      {
-        id: "f5-1-t5-11",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Ay'ın evreleri ile ilgili; I. 'Hilal' bir ara evredir. II. 'Son Dördün' evresinde Ay ters D şeklinde görünür. III. Ana evreler arası süre 2 haftadır. ifadelerinden hangileri 'yanlıştır'?",
-        options: ["Yalnız II", "Yalnız III", "I ve III", "II ve III"],
-        correct: 1,
-        explanation:
-          "Ana evreler arası süre 1 haftadır (7 gün). 2 hafta olan süre bir ana evre ile ondan sonraki ikinci ana evre arasıdır (Yeni Ay - Dolunay arası gibi).",
-      },
-      {
-        id: "f5-1-t5-12",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Bitkilerde fotosentez (besin üretimi) olayının gerçekleştiği temel bölüm hangisidir?",
-        options: ["Kök", "Gövde", "Yaprak", "Çiçek"],
-        correct: 2,
-        explanation:
-          "Yapraklar, içlerindeki yeşil renkli klorofil sayesinde güneş ışığını tutar ve besin üretir.",
-      },
-      {
-        id: "f5-1-t5-13",
-        subject: "fen",
-        term: 1,
-        prompt: "Aşağıdakilerden hangisi bir 'omurgasız' hayvandır?",
-        options: ["Yılan", "Kurbağa", "Kelebek", "Hamsi"],
-        correct: 2,
-        explanation:
-          "Kelebeğin vücudunda kemik veya kıkırdaktan oluşan bir iskelet yoktur. Yılan, kurbağa ve balık omurgalıdır.",
-      },
-    { 
-  id: "f5-1-t5-15", 
-  subject: "fen", // Bu satırı ekledik
-  term: 1,        // Bu satırı ekledik
-  prompt: "Güneş, Dünya ve Ay'ın dönme yönleri ile ilgili hangisi 'ortaktır'?", 
-  options: [
-    "Hepsi saat yönünde döner.", 
-    "Hepsi saat yönünün tersine döner.", 
-    "Sadece Dünya saat yönünde döner.", 
-    "Güneş dönme hareketi yapmaz."
-  ], 
-  correct: 1, 
-  explanation: "Güneş, Dünya ve Ay'ın tüm dönme ve dolanma hareketleri (batıdan doğuya) saat yönünün tersinedir." 
-},
-      {
-        id: "f5-1-t5-15",
-        prompt:
-          "Güneş, Dünya ve Ay'ın dönme yönleri ile ilgili hangisi 'ortaktır'?",
-        options: [
-          "Hepsi saat yönünde döner.",
-          "Hepsi saat yönünün tersine döner.",
-          "Sadece Dünya saat yönünde döner.",
-          "Güneş dönme hareketi yapmaz.",
-        ],
-        correct: 1,
-        explanation:
-          "Güneş, Dünya ve Ay'ın tüm dönme ve dolanma hareketleri (batıdan doğuya) saat yönünün tersinedir.",
-      },
-      {
-        id: "f5-1-t5-16",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Balinalar suda yaşamasına rağmen neden balıklar grubuna dahil edilmez?",
-        options: [
-          "Yüzgeçleri olduğu için",
-          "Çok büyük oldukları için",
-          "Doğum yapıp yavrularını sütle besledikleri için",
-          "Akciğerleri olmadığı için",
-        ],
-        correct: 2,
-        explanation:
-          "Balinalar ve yunuslar memeli canlılardır; doğururlar, yavrularına bakarlar ve sütle beslerler.",
-      },
-      {
-        id: "f5-1-t5-17",
-        subject: "fen",
-        term: 1,
-        prompt: "Hamurun kabarmasını sağlayan olay hangisidir?",
-        options: [
-          "Bakterilerin hamuru yemesi",
-          "Maya mantarlarının gaz açığa çıkarması",
-          "Mantarların fotosentez yapması",
-          "Sıcağın etkisiyle unun şişmesi",
-        ],
-        correct: 1,
-        explanation:
-          "Maya mantarları besinleri tüketirken karbondioksit gazı çıkarır, bu gaz hamurun içinde gözenekler oluşturarak kabarmayı sağlar.",
-      },
-      {
-        id: "f5-1-t5-18",
-        subject: "fen",
-        term: 1,
-        prompt: "Bitkilerin kökleri topraktan neyi alır?",
-        options: [
-          "Sadece besin",
-          "Güneş ışığı ve hava",
-          "Su ve mineraller",
-          "Sadece su",
-        ],
-        correct: 2,
-        explanation:
-          "Kökler, bitkinin ihtiyacı olan su ve suda çözünmüş mineralleri topraktan emerek gövdeye iletir.",
-      },
-      {
-        id: "f5-1-t5-19",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "5 Newton'lık bir kuvvetin dinamometre yayını 2 cm uzattığı biliniyor. Aynı dinamometreye 20 Newton'lık bir kuvvet uygulanırsa yay kaç cm uzar?",
-        options: ["4", "8", "10", "12"],
-        correct: 1,
-        explanation:
-          "Kuvvet 4 katına çıkmıştır (5'ten 20'ye). Uzama da 4 katına çıkar: 2 x 4 = 8 cm.",
-      },
-      {
-        id: "f5-1-t5-20",
-        subject: "fen",
-        term: 1,
-        prompt: "Ay'ın yüzeyinde neden toz tabakası çok kalındır?",
-        options: [
-          "Astronotlar oraya toz götürdüğü için",
-          "Ay'ın yüzeyi kumdan oluştuğu için",
-          "Göktaşlarının çarpmasıyla ufalanan kayaçlar rüzgar olmadığı için savrulmaz ve birikir",
-          "Ay'da su olmadığı için",
-        ],
-        correct: 2,
-        explanation:
-          "Ay'a çarpan meteorlar kayaçları parçalar. Rüzgar ve su olmadığı için bu tozlar dağılmaz ve kalın bir tabaka oluşturur.",
-      },
-    ],
+  { 
+    id: "f5-1-t5-01", 
+    subject: "fen", 
+    term: 1, 
+    prompt: "Güneş ile ilgili; I. Katmanlı bir yapıya sahiptir. II. Kendi ekseni etrafında dönerken yüzeyindeki lekeler de hareket eder. III. Güneş lekeleri Güneş'in en sıcak bölgeleridir. ifadelerinden hangileri 'doğrudur'?", 
+    options: ["I ve II", "II ve III", "I ve III", "I, II ve III"], 
+    correct: 0, 
+    explanation: "Güneş katmanlıdır ve döner. Ancak Güneş lekeleri, çevrelerine göre daha soğuk oldukları için koyu görünen bölgelerdir." 
+  },
+  
+
+[Image of the sun's layers]
+
+  { 
+    id: "f5-1-t5-02", 
+    subject: "fen", 
+    term: 1, 
+    prompt: "Ay'ın 'Yeni Ay' evresinde olduğu bir günde gökyüzüne bakan bir gözlemci, yaklaşık 14 gün sonra Ay'ı hangi ana evrede ve nasıl görür?", 
+    options: ["İlk Dördün - Yarım daire", "Dolunay - Tam daire", "Son Dördün - Ters D", "Yeni Ay - Görünmez"], 
+    correct: 1, 
+    explanation: "Ay'ın evreleri arası 7 gündür. Yeni Ay'dan 7 gün sonra İlk Dördün, 14 gün sonra ise Dolunay (tam daire) görülür." 
+  },
+  
+
+[Image of moon phases cycle]
+
+  { 
+    id: "f5-1-t5-03", 
+    subject: "fen", 
+    term: 1, 
+    prompt: "Aşağıdaki canlılardan hangisi 'mikroskobik canlılar' grubunda yer almasına rağmen bazen çıplak gözle görülebilir bir tabaka (koloni) oluşturur?", 
+    options: ["Amip", "Öglena", "Küf Mantarı", "Bakteri"], 
+    correct: 2, 
+    explanation: "Küf mantarları mikroskobik canlılardır ancak bir araya gelip çoğaldıklarında (koloni) ekmek veya meyve üzerinde renkli bir tabaka olarak görülebilirler." 
+  },
+  { 
+    id: "f5-1-t5-04", 
+    subject: "fen", 
+    term: 1, 
+    prompt: "Çiçekli bitkilerde bulunan 'taç yaprakların' temel görevi aşağıdakilerden hangisidir?", 
+    options: ["Besin üretmek", "Suyu taşımak", "Rengi ve kokusuyla böcekleri çekerek tozlaşmaya yardımcı olmak", "Bitkiyi toprağa bağlamak"], 
+    correct: 2, 
+    explanation: "Renkli ve güzel kokulu taç yapraklar, arı ve kelebek gibi canlıları kendine çekerek bitkinin üremesini sağlar." 
+  },
+  
+
+[Image of a flower parts diagram]
+
+  { 
+    id: "f5-1-t5-05", 
+    subject: "fen", 
+    term: 1, 
+    prompt: "Eşit bölmeli K ve L dinamometrelerinden K'nın ölçüm sınırı 50 N, L'nin ise 100 N'dur. Her iki dinamometreye de 20 N'lık bir yük asılırsa hangisi daha fazla uzar?", 
+    options: ["K dinamometresi", "L dinamometresi", "Her ikisi de eşit uzar", "Hassas olan L olduğu için L uzar"], 
+    correct: 0, 
+    explanation: "Daha küçük kuvvetleri ölçen dinamometreler (K) daha hassastır ve aynı kuvvet karşısında yayı daha fazla uzama gösterir." 
+  },
+  
+  { 
+    id: "f5-1-t5-06", 
+    subject: "fen", 
+    term: 1, 
+    prompt: "Ay'ın yüzeyinde gece ve gündüz sıcaklık farkının 200 derecenin üzerinde olmasının sebebi nedir?", 
+    options: ["Ay'ın Dünya'ya uzak olması", "Atmosferin yok denecek kadar az olması", "Ay'ın kendi ışığının olmaması", "Güneş'e çok yakın olması"], 
+    correct: 1, 
+    explanation: "Atmosfer bir battaniye gibi ısıyı dengeler. Ay'da atmosfer olmadığı için Güneş alan yer aşırı sıcak, almayan yer aşırı soğuk olur." 
+  },
+  { 
+    id: "f5-1-t5-07", 
+    subject: "fen", 
+    term: 1, 
+    prompt: "Maya mantarlarının faaliyet gösterebilmesi için; I. Uygun sıcaklık, II. Besin (şeker), III. Su (nem). şartlarından hangileri gereklidir?", 
+    options: ["I ve II", "II ve III", "I ve III", "I, II ve III"], 
+    correct: 3, 
+    explanation: "Mantarların çoğalması için sıcaklık, besin ve nemli ortamın bir arada bulunması gerekir." 
+  },
+  { 
+    id: "f5-1-t5-08", 
+    subject: "fen", 
+    term: 1, 
+    prompt: "Hangi canlı grubunun tamamı yavrularını doğurur ve sütle besler?", 
+    options: ["Kuşlar", "Sürüngenler", "Memeliler", "Balıklar"], 
+    correct: 2, 
+    explanation: "Doğurarak çoğalma ve sütle besleme memeli canlıların en temel ortak özelliğidir." 
+  },
+  
+
+[Image of classification of animals]
+
+  { 
+    id: "f5-1-t5-09", 
+    subject: "fen", 
+    term: 1, 
+    prompt: "Dinamometrenin yapısındaki yayın inceltilmesi dinamometrede neyi değiştirir?", 
+    options: ["Ölçebileceği maksimum kuvvet artar.", "Dinamometrenin boyu kısalır.", "Hassasiyeti artar, daha küçük kuvvetleri ölçebilir.", "Ölçüm hatası artar."], 
+    correct: 2, 
+    explanation: "İnce yaylı dinamometreler daha hassastır, küçük kuvvetlerde bile belirgin uzama gösterirler." 
+  },
+  { 
+    id: "f5-1-t5-10", 
+    subject: "fen", 
+    term: 1, 
+    prompt: "Güneş'ten gelen ısı ve ışık enerjisi, merkezindeki hangi gazın bir diğerine dönüşmesiyle oluşur?", 
+    options: ["Helyumun Hidrojene", "Hidrojenin Helyuma", "Oksijenin Azota", "Karbonun Oksijene"], 
+    correct: 1, 
+    explanation: "Güneş'te sürekli devam eden patlamalarla Hidrojen gazı Helyuma dönüşür ve bu esnada devasa bir enerji açığa çıkar." 
+  },
+  { 
+    id: "f5-1-t5-11", 
+    subject: "fen", 
+    term: 1, 
+    prompt: "Ay'ın evreleri ile ilgili; I. 'Hilal' bir ara evredir. II. 'Son Dördün' evresinde Ay ters D şeklinde görünür. III. Ana evreler arası süre 2 haftadır. ifadelerinden hangileri 'yanlıştır'?", 
+    options: ["Yalnız II", "Yalnız III", "I ve III", "II ve III"], 
+    correct: 1, 
+    explanation: "Ana evreler arası süre 1 haftadır (7 gün). 2 hafta olan süre bir ana evre ile ondan sonraki ikinci ana evre arasıdır (Yeni Ay - Dolunay arası gibi)." 
+  },
+  { 
+    id: "f5-1-t5-12", 
+    subject: "fen", 
+    term: 1, 
+    prompt: "Bitkilerde fotosentez (besin üretimi) olayının gerçekleştiği temel bölüm hangisidir?", 
+    options: ["Kök", "Gövde", "Yaprak", "Çiçek"], 
+    correct: 2, 
+    explanation: "Yapraklar, içlerindeki yeşil renkli klorofil sayesinde güneş ışığını tutar ve besin üretir." 
+  },
+  { 
+    id: "f5-1-t5-13", 
+    subject: "fen", 
+    term: 1, 
+    prompt: "Aşağıdakilerden hangisi bir 'omurgasız' hayvandır?", 
+    options: ["Yılan", "Kurbağa", "Kelebek", "Hamsi"], 
+    correct: 2, 
+    explanation: "Kelebeğin vücudunda kemik veya kıkırdaktan oluşan bir iskelet yoktur. Yılan, kurbağa ve balık omurgalıdır." 
+  },
+  { 
+    id: "f5-1-t5-14", 
+    subject: "fen", 
+    term: 1, 
+    prompt: "Dinamometreye uygulanan kuvvet, yayın 'esneklik sınırı'nı aşarsa ne olur?", 
+    options: ["Daha doğru ölçüm yapar.", "Yay eski haline dönemez ve bozulur.", "Yay kopar ama dinamometre çalışır.", "Kuvvet birimi Newton'dan Gram'a döner."], 
+    correct: 1, 
+    explanation: "Her esnek cismin bir sınırı vardır. Bu sınır aşılırsa yay özelliği kaybolur (kalıcı deformasyon)." 
+  },
+  { 
+    id: "f5-1-t5-15", 
+    subject: "fen", 
+    term: 1, 
+    prompt: "Güneş, Dünya ve Ay'ın dönme yönleri ile ilgili hangisi 'ortaktır'?", 
+    options: ["Hepsi saat yönünde döner.", "Hepsi saat yönünün tersine döner.", "Sadece Dünya saat yönünde döner.", "Güneş dönme hareketi yapmaz."], 
+    correct: 1, 
+    explanation: "Güneş, Dünya ve Ay'ın tüm dönme ve dolanma hareketleri (batıdan doğuya) saat yönünün tersinedir." 
+  },
+  { 
+    id: "f5-1-t5-16", 
+    subject: "fen", 
+    term: 1, 
+    prompt: "Balinalar suda yaşamasına rağmen neden balıklar grubuna dahil edilmez?", 
+    options: ["Yüzgeçleri olduğu için", "Çok büyük oldukları için", "Doğum yapıp yavrularını sütle besledikleri için", "Akciğerleri olmadığı için"], 
+    correct: 2, 
+    explanation: "Balinalar ve yunuslar memeli canlılardır; doğururlar, yavrularına bakarlar ve sütle beslerler." 
+  },
+  { 
+    id: "f5-1-t5-17", 
+    subject: "fen", 
+    term: 1, 
+    prompt: "Hamurun kabarmasını sağlayan olay hangisidir?", 
+    options: ["Bakterilerin hamuru yemesi", "Maya mantarlarının gaz açığa çıkarması", "Mantarların fotosentez yapması", "Sıcağın etkisiyle unun şişmesi"], 
+    correct: 1, 
+    explanation: "Maya mantarları besinleri tüketirken karbondioksit gazı çıkarır, bu gaz hamurun içinde gözenekler oluşturarak kabarmayı sağlar." 
+  },
+  { 
+    id: "f5-1-t5-18", 
+    subject: "fen", 
+    term: 1, 
+    prompt: "Bitkilerin kökleri topraktan neyi alır?", 
+    options: ["Sadece besin", "Güneş ışığı ve hava", "Su ve mineraller", "Sadece su"], 
+    correct: 2, 
+    explanation: "Kökler, bitkinin ihtiyacı olan su ve suda çözünmüş mineralleri topraktan emerek gövdeye iletir." 
+  },
+  { 
+    id: "f5-1-t5-19", 
+    subject: "fen", 
+    term: 1, 
+    prompt: "5 Newton'lık bir kuvvetın dinamometre yayını 2 cm uzattığı biliniyor. Aynı dinamometreye 20 Newton'lık bir kuvvet uygulanırsa yay kaç cm uzar?", 
+    options: ["4", "8", "10", "12"], 
+    correct: 1, 
+    explanation: "Kuvvet 4 katına çıkmıştır (5'ten 20'ye). Uzama da 4 katına çıkar: 2 x 4 = 8 cm." 
+  },
+  { 
+    id: "f5-1-t5-20", 
+    subject: "fen", 
+    term: 1, 
+    prompt: "Ay'ın yüzeyinde neden toz tabakası çok kalındır?", 
+    options: ["Astronotlar oraya toz götürdüğü için", "Ay'ın yüzeyi kumdan oluştuğu için", "Göktaşlarının çarpmasıyla ufalanan kayaçlar rüzgar olmadığı için savrulmaz ve birikir", "Ay'da su olmadığı için"], 
+    correct: 2, 
+    explanation: "Ay'a çarpan meteorlar kayaçları parçalar. Rüzgar ve su olmadığı için bu tozlar dağılmaz ve kalın bir tabaka oluşturur." 
+  }
+],
     test6: [
       {
         id: "f5-1-t6-01",
