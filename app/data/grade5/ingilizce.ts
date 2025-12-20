@@ -19,7 +19,29 @@ export const ingilizceData: SubjectData = {
       { id: "e5-hard-nv-01", subject: "ingilizce", term: 1, prompt: "Jack: 'I like history and solving problems.' Which subjects does he like?", options: ["Art and Music", "Social Studies and Maths", "P.E. and Science", "I.T. and English"], correct: 1, explanation: "History Social Studies, problems Maths." },
       { id: "e5-hard-nv-04", subject: "ingilizce", term: 1, prompt: "The toy shop is ____ the barber and the school.", options: ["under", "between", "on", "at"], correct: 1, explanation: "Arasında anlamında." },
       { id: "e5-adv-01", subject: "ingilizce", term: 1, prompt: "Jane: 'I don't like horror movies. They are frightening.' Which movie type does Jane prefer?", options: ["Horror", "Cartoons", "Thriller", "Action"], correct: 1, explanation: "Korkmuyorsa çizgi film tercih eder." },
-      { id: "e5-adv-04", subject: "ingilizce", term: 1, prompt: "I am from France. I speak ____.", options: ["French", "English", "Germany", "Spanish"], correct: 0, explanation: "Dil French'tir." }
+      { id: "e5-adv-04", subject: "ingilizce", term: 1, prompt: "I am from France. I speak ____.", options: ["French", "English", "Germany", "Spanish"], correct: 0, explanation: "Dil French'tir." },
+{ 
+  id: "e5-1-21", subject: "ingilizce", term: 1, 
+  prompt: "A: 'Where is the hospital?' B: 'Go straight and turn left. It is ____ the park.'", 
+  options: ["next to", "under", "in", "at"], 
+  correct: 0, 
+  explanation: "Yer tariflerinde 'yanında' anlamında 'next to' kalıbı kullanılır." 
+},
+{ 
+  id: "e5-1-22", subject: "ingilizce", term: 1, 
+  prompt: "I am ____. I need a glass of water.", 
+  options: ["hungry", "tired", "thirsty", "scared"], 
+  correct: 2, 
+  explanation: "Su içme ihtiyacı hisseden biri 'susatmıştır' (thirsty)." 
+},
+{ 
+  id: "e5-1-23", subject: "ingilizce", term: 1, 
+  prompt: "Tom is from the USA. He is ____.", 
+  options: ["English", "American", "German", "Turkish"], 
+  correct: 1, 
+  explanation: "USA (ABD) vatandaşı olan kişilere 'American' denir." 
+}
+
     ],
     test2: []
   },
