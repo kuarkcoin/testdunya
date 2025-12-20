@@ -20,7 +20,21 @@ export const matematikData: SubjectData = {
       { id: "m5-hard-nv-01", subject: "matematik", term: 1, prompt: "Bir bölme işleminde bölen 14, bölüm 25'tir. Bu bölme işleminde bölünen sayının alabileceği 'en büyük' değer kaçtır?", options: ["350", "363", "364", "365"], correct: 1, explanation: "En büyük kalan 13'tür. (14 x 25) + 13 = 363." },
       { id: "m5-hard-nv-02", subject: "matematik", term: 1, prompt: "3 katının 15 fazlası 60 olan sayının yarısı kaçtır?", options: ["7,5", "15", "22,5", "45"], correct: 0, explanation: "60-15=45, 45/3=15. Yarısı 7,5." },
       { id: "m5-adv-02", subject: "matematik", term: 1, prompt: "Bir sayı örüntüsü 4'ten başlayarak her adımda bir önceki sayının 2 katının 3 eksiği şeklinde ilerliyor. Bu örüntünün 4. terimi kaçtır?", options: ["5", "7", "11", "19"], correct: 2, explanation: "4 -> 5 -> 7 -> 11." },
-      { id: "m5-adv-05", subject: "matematik", term: 1, prompt: "$A \\times 100 = 4500$ ve $B \\div 10 = 45$ ise $A + B$ işleminin sonucu kaçtır?", options: ["90", "450", "495", "500"], correct: 2, explanation: "A=45, B=450. Toplam 495." }
+      { id: "m5-adv-05", subject: "matematik", term: 1, prompt: "$A \\times 100 = 4500$ ve $B \\div 10 = 45$ ise $A + B$ işleminin sonucu kaçtır?", options: ["90", "450", "495", "500"], correct: 2, explanation: "A=45, B=450. Toplam 495." },
+      { 
+  id: "m5-1-24", subject: "matematik", term: 1, 
+  prompt: "Bir kırtasiyeci 120 kalemi her kutuda 12 kalem olacak şekilde paketliyor. Her paketi 15 TL'ye sattığına göre toplam kaç TL gelir elde eder?", 
+  options: ["120", "150", "180", "200"], 
+  correct: 1, 
+  explanation: "Toplam paket sayısı: 120 / 12 = 10 paket. Toplam gelir: 10 x 15 = 150 TL." 
+},
+{ 
+  id: "m5-1-25", subject: "matematik", term: 1, 
+  prompt: "Rakamları birbirinden farklı beş basamaklı en küçük doğal sayı kaçtır?", 
+  options: ["10000", "10234", "12345", "10023"], 
+  correct: 1, 
+  explanation: "En küçük olması için en büyük basamağa 1, sonrakine 0, sonra 2, 3 ve 4 yazılır: 10234." 
+}
     ],
     test2: []
   },
