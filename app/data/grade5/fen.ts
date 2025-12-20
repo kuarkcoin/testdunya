@@ -1225,21 +1225,19 @@ export const fenData: SubjectData = {
           "Kelebeğin vücudunda kemik veya kıkırdaktan oluşan bir iskelet yoktur. Yılan, kurbağa ve balık omurgalıdır.",
       },
       {
-        id: "f5-1-t5-14",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Dinamometreye uygulanan kuvvet, yayın 'esneklik sınırı'nı aşarsa ne olur?",
-        options: [
-          "Daha doğru ölçüm yapar.",
-          "Yay eski haline dönemez ve bozulur.",
-          "Yay kopar ama dinamometre çalışır.",
-          "Kuvvet birimi Newton'dan Gram'a döner.",
-        ],
-        correct: 1,
-        explanation:
-          "Her esnek cismin bir sınırı vardır. Bu sınır aşılırsa yay özelliği kaybolur (kalıcı deformasyon).",
-      },
+  id: "f5-1-t5-14",
+  subject: "fen",
+  term: 1,
+  prompt: "Dinamometreye uygulanan kuvvet, yayın 'esneklik sınırı'nı aşarsa ne olur?",
+  options: [
+    "Daha doğru ölçüm yapar.",
+    "Yay eski haline dönemez ve bozulur.",
+    "Yay kopar ama dinamometre çalışır.",
+    "Kuvvet birimi Newton'dan Gram'a döner."
+  ],
+  correct: 1,
+  explanation: "Her esnek cismin bir sınırı vardır. Bu sınır aşılırsa yay özelliği kaybolur (kalıcı deformasyon)."
+},
       {
         id: "f5-1-t5-15",
         prompt:
