@@ -212,27 +212,37 @@ export default function Grade5Page() {
           </div>
         )}
 
-        {/* 4. QUIZ EKRANI */}
-        {view === 'quiz' && quizQuestions.length > 0 && (
-          <div className="max-w-5xl mx-auto space-y-8 animate-in fade-in duration-500">
-            <div className="space-y-4">
-              <div className="flex justify-between items-end px-2">
-                <span className="text-[10px] font-black uppercase text-indigo-400 tracking-widest">{selectedSubject} - Test {selectedTestNo}</span>
-                <span className="text-lg font-mono font-black text-indigo-500">{currentIdx + 1} / {quizQuestions.length}</span>
-              </div>
-              <div className="w-full h-3 bg-white/5 rounded-full overflow-hidden border border-white/5">
-                <div className="h-full bg-gradient-to-r from-indigo-500 to-fuchsia-500 transition-all duration-700" style={{ width: `${((currentIdx + 1) / quizQuestions.length) * 100}%` }} />
-              </div>
-            </div>
+        {/* 4. QUIZ EKRANI - Genişletilmiş ve Mobil Uyumlu */}
+{view === 'quiz' && quizQuestions.length > 0 && (
+  <div className="w-full max-w-5xl mx-auto space-y-6 md:space-y-8 animate-in fade-in duration-500">
+    <div className="space-y-4 px-2">
+      {/* ... Üst bilgiler ... */}
+    </div>
 
-            <div className="bg-slate-800 border border-white/10 p-12 md:p-16 rounded-[3.5rem] shadow-2xl relative overflow-hidden">
-              <h3 className="text-3xl md:text-4xl font-bold leading-tight text-white mb-12">{quizQuestions[currentIdx].prompt}</h3>
-              <div className="grid gap-5">
-                {quizQuestions[currentIdx].options.map((opt: string, i: number) => (
-                  <button key={i} onClick={() => setAnswers(prev => ({ ...prev, [currentIdx]: i }))} className={`p-8 rounded-[2rem] border-2 text-left transition-all flex items-center gap-6 ${answers[currentIdx] === i ? 'border-indigo-500 bg-indigo-500/10 text-white' : 'border-white/5 bg-slate-900/50 text-slate-400 hover:border-white/20'}`}>
-                    <div className={`w-14 h-14 rounded-2xl border-2 flex items-center justify-center font-black text-xl ${answers[currentIdx] === i ? 'bg-indigo-500 border-indigo-400 text-white' : 'border-white/10'}`}>{String.fromCharCode(65 + i)}</div>
-                    <span className="text-xl font-semibold">{opt}</span>
-                  </button>
+    {/* Kutu boşlukları p-6'ya çekildi, kenarlar rounded-3xl yapıldı */}
+    <div className="bg-slate-800 border border-white/10 p-6 md:p-16 rounded-3xl md:rounded-[3.5rem] shadow-2xl relative overflow-hidden">
+      <h3 className="text-2xl md:text-4xl font-bold leading-tight text-white mb-8 md:mb-12">
+        {quizQuestions[currentIdx].prompt}
+      </h3>
+      
+      <div className="grid gap-3 md:gap-5">
+        {quizQuestions[currentIdx].options.map((opt: string, i: number) => (
+          <button 
+            key={i} 
+            onClick={() => setAnswers(prev => ({ ...prev, [currentIdx]: i }))} 
+            className={`p-5 md:p-8 rounded-2xl md:rounded-[2rem] border-2 text-left transition-all flex items-center gap-4 md:gap-6 ${
+              answers[currentIdx] === i 
+              ? 'border-indigo-500 bg-indigo-500/10 text-white' 
+              : 'border-white/5 bg-slate-900/50 text-slate-400 hover:border-white/20'
+            }`}
+          >
+            <div className={`w-10 h-10 md:w-14 md:h-14 rounded-xl md:rounded-2xl border-2 flex items-center justify-center font-black text-lg ${
+              answers[currentIdx] === i ? 'bg-indigo-500 border-indigo-400 text-white' : 'border-white/10'
+            }`}>
+              {String.fromCharCode(65 + i)}
+            </div>
+            <span className="text-base md:text-xl font-semibold leading-snug">{opt}</span>
+          </button>
                 ))}
               </div>
             </div>
