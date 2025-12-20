@@ -355,36 +355,93 @@ export default function Grade5Page() {
       </div>
     </div>
     
-    {/* SORU DETAYLARI - Mobilde kenarlara kadar yayılır */}
-    <div className="space-y-6 md:space-y-8 border-t border-slate-200 pt-12 md:pt-16 text-left">
-        <h4 className="text-3xl md:text-4xl font-black text-slate-800 px-4">Soru Detayları</h4>
-        <div className="grid gap-4 md:gap-6">
-          {quizQuestions.map((q, i) => (
-            <div key={q.id} className={`p-6 md:p-14 rounded-[2rem] md:rounded-[3.5rem] border-2 shadow-sm ${answers[i] === q.correct ? 'border-emerald-100 bg-emerald-50/30' : 'border-red-100 bg-red-50/30'}`}>
-              <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-                  <div className={`w-12 h-12 md:w-16 md:h-16 rounded-xl md:rounded-[1.5rem] flex items-center justify-center font-black text-xl md:text-2xl shrink-0 ${answers[i] === q.correct ? 'bg-emerald-500 text-white' : 'bg-red-500 text-white'}`}>{i + 1}</div>
-                  <div className="space-y-4 md:space-y-6 w-full">
-                    <p className="font-extrabold text-xl md:text-3xl text-slate-800">{q.prompt}</p>
-                    <p className="text-emerald-600 font-bold text-lg">Doğru Cevap: {q.options[q.correct]}</p>
-                    <div className="bg-white p-6 md:p-8 rounded-[1.5rem] md:rounded-[2.5rem] border border-slate-100 shadow-inner">
-                      <p className="text-slate-500 italic text-base md:text-xl font-medium">💡 {q.explanation}</p>
-                    </div>
-                  </div>
-              </div>
-            </div>
-          ))}
+    {/* SORU DETAYLARI - Gelişmiş Eğitim Geri Bildirim Paneli */}
+<div className="space-y-8 border-t border-slate-200 pt-16 text-left">
+    <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 px-4">
+        <h4 className="text-3xl md:text-4xl font-black text-slate-800">Soru Detayları</h4>
+        
+        {/* Silik çıkan T yazısını çok daha net ve belirgin yaptık */}
+        <div className="flex items-center gap-2 bg-indigo-600 text-white px-5 py-2.5 rounded-2xl shadow-lg shadow-indigo-100">
+          <span className="text-[10px] font-black uppercase tracking-widest opacity-80">Test Bilgisi:</span>
+          <span className="text-sm font-black uppercase">{selectedSubject} - T{selectedTestNo}</span>
         </div>
     </div>
-  </div>
-)}
 
-      </div>
+    <div className="grid gap-6">
+        {quizQuestions.map((q, i) => {
+            const userAnswer = answers[i];
+            const isCorrect = userAnswer === q.correct;
+            const isEmpty = userAnswer === undefined;
 
-      <style jsx global>{`
-        @keyframes bounce-slow { 0%, 100% { transform: translateY(-8%); } 50% { transform: translateY(0); } }
-        .animate-bounce-slow { animation: bounce-slow 4s infinite ease-in-out; }
-        body { overflow-x: hidden; }
-      `}</style>
-    </main>
-  );
-}
+            // Görsel Durum Belirleme (Doğru, Yanlış, Boş)
+            let cardBg = "border-emerald-200 bg-emerald-50/40"; // Doğru
+            let statusText = "DOĞRU";
+            let statusColor = "bg-emerald-500";
+
+            if (isEmpty) {
+                cardBg = "border-amber-300 bg-amber-50/80"; // Boş (Altın Sarısı Tonu)
+                statusText = "BOŞ GEÇİLDİ";
+                statusColor = "bg-amber-500";
+            } else if (!isCorrect) {
+                cardBg = "border-rose-200 bg-rose-50/40"; // Yanlış
+                statusText = "YANLIŞ";
+                statusColor = "bg-rose-500";
+            }
+
+            return (
+                <div key={q.id} className={`p-6 md:p-12 rounded-[2.5rem] md:rounded-[3.5rem] border-2 shadow-sm relative overflow-hidden transition-all hover:shadow-md ${cardBg}`}>
+                    
+                    {/* Sağ Üst Durum Rozeti */}
+                    <div className={`absolute top-0 right-0 px-6 py-2 rounded-bl-3xl font-black text-white text-[10px] tracking-tighter ${statusColor}`}>
+                        {statusText}
+                    </div>
+
+                    <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+                        {/* Soru Numarası */}
+                        <div className={`w-12 h-12 md:w-16 md:h-16 rounded-2xl flex items-center justify-center font-black text-xl md:text-2xl shrink-0 text-white shadow-lg ${statusColor}`}>
+                            {i + 1}
+                        </div>
+
+                        <div className="space-y-6 w-full pt-2">
+                            <p className="font-extrabold text-xl md:text-2xl text-slate-800 leading-tight">
+                                {q.prompt}
+                            </p>
+
+                            {/* Cevap Analiz Alanı */}
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                {/* Senin Seçeneğin (Sadece yanlışsa ve boş değilse gösterilir) */}
+                                {!isEmpty && !isCorrect && (
+                                    <div className="p-5 rounded-3xl bg-white/60 border border-rose-100">
+                                        <p className="text-[10px] font-black text-rose-400 uppercase tracking-widest mb-1">Senin Seçeneğin</p>
+                                        <p className="text-rose-700 font-bold text-lg">{q.options[userAnswer]}</p>
+                                    </div>
+                                )}
+
+                                {/* Doğru Cevap (Her durumda gösterilir) */}
+                                <div className={`p-5 rounded-3xl bg-white/80 border ${isEmpty ? 'border-amber-200' : 'border-emerald-100'} shadow-sm`}>
+                                    <p className={`text-[10px] font-black uppercase tracking-widest mb-1 ${isEmpty ? 'text-amber-500' : 'text-emerald-500'}`}>
+                                        Doğru Cevap
+                                    </p>
+                                    <p className={`${isEmpty ? 'text-amber-700' : 'text-emerald-700'} font-bold text-lg`}>
+                                        {q.options[q.correct]}
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* Çözüm ve Açıklama */}
+                            <div className="bg-white p-6 md:p-8 rounded-[1.5rem] md:rounded-[2.5rem] border border-slate-100 shadow-inner">
+                                <div className="flex items-center gap-2 mb-2">
+                                    <span className="text-xl">💡</span>
+                                    <span className="font-black text-indigo-600 text-xs uppercase tracking-widest">Çözüm Rehberi</span>
+                                </div>
+                                <p className="text-slate-500 italic text-base md:text-xl font-medium leading-relaxed">
+                                    {q.explanation}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            );
+        })}
+    </div>
+</div>
