@@ -140,7 +140,7 @@ export default function Grade5Page() {
         <ReactConfetti width={width} height={height} numberOfPieces={300} recycle={false} />
       )}
 
-      <div className="max-w-5xl mx-auto px-4 pt-6 md:pt-10">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 pt-6 md:pt-10">
         <div className="flex items-center justify-between mb-8 md:mb-12">
           <Link href="/" className="text-slate-400 hover:text-white font-bold transition-colors">← Ana Sayfa</Link>
           {view !== 'subject-select' && (
@@ -216,7 +216,7 @@ export default function Grade5Page() {
 
         {/* 4. QUIZ EKRANI */}
         {view === 'quiz' && quizQuestions.length > 0 && (
-          <div className="max-w-3xl mx-auto space-y-8 animate-in fade-in duration-500">
+          div className="max-w-5xl mx-auto space-y-8 animate-in fade-in duration-500">
             <div className="space-y-4">
               <div className="flex justify-between items-end px-2">
                 <span className="text-[10px] font-black uppercase text-indigo-400 tracking-widest">{selectedSubject} - Test {selectedTestNo}</span>
