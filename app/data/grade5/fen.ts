@@ -1224,10 +1224,10 @@ export const fenData: SubjectData = {
         explanation:
           "Kelebeğin vücudunda kemik veya kıkırdaktan oluşan bir iskelet yoktur. Yılan, kurbağa ve balık omurgalıdır.",
       },
-      { 
+    { 
   id: "f5-1-t5-15", 
-  subject: "fen", // Eksik olan alan buydu
-  term: 1,        // Eksik olan alan buydu
+  subject: "fen", // Bu satırı ekledik
+  term: 1,        // Bu satırı ekledik
   prompt: "Güneş, Dünya ve Ay'ın dönme yönleri ile ilgili hangisi 'ortaktır'?", 
   options: [
     "Hepsi saat yönünde döner.", 
