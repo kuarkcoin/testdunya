@@ -3,7 +3,7 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import ReactConfetti from 'react-confetti';
-
+ 
 // VERİ IMPORTLARI
 import { matematikData } from '../data/grade5/matematik';
 import { turkceData } from '../data/grade5/turkce';
@@ -558,4 +558,36 @@ export default function Grade5Page() {
                               </div>
                             )}
 
-                            <div className
+                            <div
+                              className={`p-4 rounded-[1.25rem] bg-white/90 border shadow-sm ${
+                                isEmpty ? 'border-amber-200' : 'border-emerald-100'
+                              }`}
+                            >
+                              <p
+                                className={`text-[10px] font-black uppercase tracking-widest mb-1 ${
+                                  isEmpty ? 'text-amber-500' : 'text-emerald-500'
+                                }`}
+                              >
+                                Doğru Cevap
+                              </p>
+                              <p className={`${isEmpty ? 'text-amber-800' : 'text-emerald-800'} font-bold text-base`}>
+                                {q.options[q.correct]}
+                              </p>
+                            </div>
+                          </div>
+
+                          <div className="bg-white/60 backdrop-blur-sm p-4 rounded-[1.25rem] border border-slate-100 shadow-inner">
+                            <p className="font-black text-indigo-600 text-[10px] uppercase tracking-widest mb-2">
+                              💡 Çözüm Notu
+                            </p>
+                            <p className="text-slate-700 italic text-sm md:text-base font-semibold leading-relaxed">
+                              {q.explanation}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
