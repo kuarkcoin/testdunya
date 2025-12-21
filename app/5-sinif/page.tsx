@@ -3,7 +3,7 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import ReactConfetti from 'react-confetti';
- 
+
 // VERİ IMPORTLARI
 import { matematikData } from '../data/grade5/matematik';
 import { turkceData } from '../data/grade5/turkce';
@@ -22,12 +22,9 @@ type Question5 = {
   explanation: string;
 };
 
-type TermKey = 'term1' | 'term2';
-type TestKey = `test${number}`;
-
 type SubjectPack = {
-  term1: Record<TestKey, Question5[]>;
-  term2: Record<TestKey, Question5[]>;
+  term1: Record<string, Question5[]>;
+  term2: Record<string, Question5[]>;
 };
 
 interface Subject {
@@ -78,7 +75,6 @@ export default function Grade5Page() {
     termCardPad: 'p-6 md:p-10',
     termTitle: 'text-2xl md:text-3xl',
 
-    testCardPad: 'p-6 md:p-8',
     testTitle: 'text-3xl md:text-4xl',
     testGrid: 'grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3 md:gap-4',
 
@@ -136,8 +132,8 @@ export default function Grade5Page() {
   };
 
   const startQuiz = (testNo: number) => {
-    const termKey: TermKey = selectedTerm === 1 ? 'term1' : 'term2';
-    const testKey = `test${testNo}` as TestKey;
+    const termKey = selectedTerm === 1 ? 'term1' : 'term2';
+    const testKey = `test${testNo}`;
 
     const data = allQuestions5[selectedSubject]?.[termKey]?.[testKey];
 
@@ -292,9 +288,7 @@ export default function Grade5Page() {
                 </button>
               </div>
 
-              <p className="text-[11px] text-slate-400 font-bold">
-                İpucu: Önce kolay testlerden başla, sonra yüksel! 🧠
-              </p>
+              <p className="text-[11px] text-slate-400 font-bold">İpucu: Önce kolay testlerden başla, sonra yüksel! 🧠</p>
             </div>
           </div>
         )}
@@ -357,15 +351,11 @@ export default function Grade5Page() {
                 />
               </div>
 
-              <p className="text-[11px] text-slate-400 font-bold">
-                Harika gidiyorsun! ⭐ Bir soru daha!
-              </p>
+              <p className="text-[11px] text-slate-400 font-bold">Harika gidiyorsun! ⭐ Bir soru daha!</p>
             </div>
 
             {/* Soru kartı */}
-            <div
-              className={`bg-white border border-slate-200 ${ui.cardPad} ${ui.cardRound} shadow-xl relative overflow-hidden min-h-[420px] flex flex-col`}
-            >
+            <div className={`bg-white border border-slate-200 ${ui.cardPad} ${ui.cardRound} shadow-xl relative overflow-hidden min-h-[420px] flex flex-col`}>
               <h3 className={`${ui.qTitle} font-extrabold leading-snug text-slate-800 mb-6`}>
                 {quizQuestions[currentIdx].prompt}
               </h3>
@@ -377,9 +367,7 @@ export default function Grade5Page() {
                     <button
                       key={i}
                       onClick={() => setAnswers((prev) => ({ ...prev, [currentIdx]: i }))}
-                      className={`${
-                        ui.optionPad
-                      } rounded-[1.25rem] border-2 text-left transition-all flex items-center gap-4 group ${
+                      className={`${ui.optionPad} rounded-[1.25rem] border-2 text-left transition-all flex items-center gap-4 group ${
                         selected
                           ? 'border-indigo-600 bg-indigo-50 text-indigo-900 shadow-md'
                           : 'border-slate-100 bg-slate-50 text-slate-700 hover:border-indigo-200 hover:bg-white'
@@ -387,9 +375,7 @@ export default function Grade5Page() {
                     >
                       <div
                         className={`${ui.optionBadge} border-2 flex items-center justify-center font-black transition-all ${
-                          selected
-                            ? 'bg-indigo-600 border-indigo-600 text-white'
-                            : 'bg-white border-slate-200 text-slate-400'
+                          selected ? 'bg-indigo-600 border-indigo-600 text-white' : 'bg-white border-slate-200 text-slate-400'
                         }`}
                       >
                         {String.fromCharCode(65 + i)}
@@ -467,9 +453,7 @@ export default function Grade5Page() {
                   <div className="bg-indigo-600 text-white p-3 rounded-2xl text-2xl shadow-md">🤖</div>
                   <div>
                     <h4 className="font-black text-indigo-600 uppercase text-[11px] tracking-widest">AI Öğretmen Notu</h4>
-                    <span className="text-slate-900 font-black text-lg md:text-xl tracking-tight leading-none">
-                      Geri Bildirim
-                    </span>
+                    <span className="text-slate-900 font-black text-lg md:text-xl tracking-tight leading-none">Geri Bildirim</span>
                   </div>
                 </div>
 
@@ -488,8 +472,7 @@ export default function Grade5Page() {
                 <div className="bg-slate-50 p-5 rounded-[1.75rem] border border-slate-100">
                   <p className="text-[10px] text-slate-400 font-black uppercase tracking-widest mb-1">Doğru</p>
                   <p className="text-3xl md:text-4xl font-black text-emerald-500">
-                    {resultData.correct}{' '}
-                    <span className="text-base md:text-lg text-slate-300">/ {resultData.total}</span>
+                    {resultData.correct} <span className="text-base md:text-lg text-slate-300">/ {resultData.total}</span>
                   </p>
                 </div>
 
@@ -537,7 +520,7 @@ export default function Grade5Page() {
                   const statusLabel = isCorrect ? 'DOĞRU ✅' : isEmpty ? 'BOŞ ⚠️' : 'YANLIŞ ❌';
 
                   return (
-                    <div key={q.id} className={`p-5 md:p-6 rounded-[2rem] border-2 shadow-sm relative overflow-hidden ${cardBg}`}>
+                    <div key={q.id ?? `${i}`} className={`p-5 md:p-6 rounded-[2rem] border-2 shadow-sm relative overflow-hidden ${cardBg}`}>
                       <div className={`absolute top-0 right-0 px-5 py-2 rounded-bl-[1.25rem] font-black text-white text-[10px] tracking-widest ${statusColor}`}>
                         {statusLabel}
                       </div>
@@ -577,9 +560,7 @@ export default function Grade5Page() {
                           </div>
 
                           <div className="bg-white/60 backdrop-blur-sm p-4 rounded-[1.25rem] border border-slate-100 shadow-inner">
-                            <p className="font-black text-indigo-600 text-[10px] uppercase tracking-widest mb-2">
-                              💡 Çözüm Notu
-                            </p>
+                            <p className="font-black text-indigo-600 text-[10px] uppercase tracking-widest mb-2">💡 Çözüm Notu</p>
                             <p className="text-slate-700 italic text-sm md:text-base font-semibold leading-relaxed">
                               {q.explanation}
                             </p>
@@ -591,3 +572,16 @@ export default function Grade5Page() {
                 })}
               </div>
             </div>
+          </div>
+        )}
+      </div>
+
+      <style jsx global>{`
+        body {
+          overflow-x: hidden;
+          scroll-behavior: smooth;
+        }
+      `}</style>
+    </main>
+  );
+}
