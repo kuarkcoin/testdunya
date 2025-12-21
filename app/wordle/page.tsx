@@ -8,10 +8,11 @@ import { ArrowLeft, RotateCcw, Delete } from "lucide-react";
 // --- TYPES ---
 type CellStatus = "empty" | "correct" | "present" | "absent";
 type EvalCell = { ch: string; status: CellStatus };
+type Row = { guess: string; evaled: EvalCell[] };
 
 // --- LOGIC HELPERS ---
 function normalizeGuess(s: string) {
-  return s.replace(/[^a-zA-Z]/g, "").toUpperCase();
+  return String(s || "").replace(/[^a-zA-Z]/g, "").toUpperCase();
 }
 
 function evaluateGuess(guess: string, target: string): EvalCell[] {
@@ -48,8 +49,7 @@ export default function WordlePage() {
   const [loading, setLoading] = useState(true);
 
   const [current, setCurrent] = useState("");
-  const [guesses, setGuesses] = useState<string[]>([]);
-  const [evaluations, setEvaluations] = useState<EvalCell[][]>([]);
+  const [rows, setRows] = useState<Row[]>([]);
   const [status, setStatus] = useState<"playing" | "won" | "lost">("playing");
   const [toast, setToast] = useState<string>("");
 
@@ -60,43 +60,52 @@ export default function WordlePage() {
     window.setTimeout(() => setToast(""), 2000);
   }, []);
 
-  const fetchTarget = useCallback(async (newLen: number) => {
-    setLoading(true);
+  const resetGame = useCallback(() => {
     setStatus("playing");
-    setGuesses([]);
-    setEvaluations([]);
+    setRows([]);
     setCurrent("");
+    setToast("");
+  }, []);
 
-    try {
-      const t = Date.now();
-      const res = await fetch(`/api/wordle/target?len=${newLen}&mode=random&t=${t}`, {
-        cache: "no-store",
-      });
-      const json = await res.json();
-      if (!res.ok) throw new Error("Word load failed");
+  const fetchTarget = useCallback(
+    async (newLen: number) => {
+      setLoading(true);
+      resetGame();
 
-      const w = String(json.word || "");
-      const normalized = normalizeGuess(w);
+      try {
+        const t = Date.now();
+        const res = await fetch(
+          `/api/wordle/target?len=${newLen}&mode=random&t=${t}`,
+          { cache: "no-store" }
+        );
 
-      if (!normalized || normalized.length !== newLen) {
-        throw new Error("Invalid word from API");
+        const json = await res.json();
+        if (!res.ok) throw new Error("Word load failed");
+
+        const w = String(json.word || "");
+        const normalized = normalizeGuess(w);
+
+        if (!normalized || normalized.length !== newLen) {
+          throw new Error("Invalid word from API");
+        }
+
+        setTarget(normalized);
+      } catch (e) {
+        showToast("Could not load word");
+        setTarget("");
+        setStatus("playing");
+      } finally {
+        setLoading(false);
       }
-
-      setTarget(normalized);
-    } catch (e: any) {
-      showToast("Could not load word");
-      setTarget("");
-      setStatus("playing");
-    } finally {
-      setLoading(false);
-    }
-  }, [showToast]);
+    },
+    [resetGame, showToast]
+  );
 
   useEffect(() => {
     fetchTarget(len);
   }, [fetchTarget, len]);
 
-  // ✅ Stable submit (no stale state)
+  // ✅ Deterministic submit: single source of truth => rows
   const submitGuess = useCallback(() => {
     if (loading || status !== "playing") return;
 
@@ -111,28 +120,27 @@ export default function WordlePage() {
         showToast("Word not ready");
         return cur;
       }
-      if (evaluations.length >= maxRows) return cur;
 
-      const evaled = evaluateGuess(g, target);
+      setRows((prev) => {
+        if (prev.length >= maxRows) return prev;
 
-      setEvaluations((prevE) => [...prevE, evaled]);
-      setGuesses((prevG) => {
-        const nextG = [...prevG, g];
+        const evaled = evaluateGuess(g, target);
+        const next = [...prev, { guess: g, evaled }];
 
         if (g === target) {
           setStatus("won");
           showToast("🎯 Brilliant!");
-        } else if (nextG.length >= maxRows) {
+        } else if (next.length >= maxRows) {
           setStatus("lost");
           showToast("💀 Out of tries");
         }
 
-        return nextG;
+        return next;
       });
 
       return "";
     });
-  }, [loading, status, len, target, showToast, evaluations.length]);
+  }, [loading, status, len, target, showToast]);
 
   // ✅ Keyboard support (stable listener)
   useEffect(() => {
@@ -157,13 +165,18 @@ export default function WordlePage() {
 
   const keyboardMap = useMemo(() => {
     const map = new Map<string, CellStatus>();
-    evaluations.flat().forEach((c) => {
+    rows.flatMap((r) => r.evaled).forEach((c) => {
       const prev = map.get(c.ch) || "empty";
-      const rank: Record<CellStatus, number> = { empty: 0, absent: 1, present: 2, correct: 3 };
+      const rank: Record<CellStatus, number> = {
+        empty: 0,
+        absent: 1,
+        present: 2,
+        correct: 3,
+      };
       if (rank[c.status] > rank[prev]) map.set(c.ch, c.status);
     });
     return map;
-  }, [evaluations]);
+  }, [rows]);
 
   return (
     <main className="min-h-screen bg-[#0f172a] text-white py-12 px-4 font-sans">
@@ -178,7 +191,9 @@ export default function WordlePage() {
           </Link>
 
           <div className="flex items-center gap-3">
-            <span className="text-xs font-black text-slate-500 uppercase">Length:</span>
+            <span className="text-xs font-black text-slate-500 uppercase">
+              Length:
+            </span>
             <select
               value={len}
               onChange={(e) => setLen(Number(e.target.value))}
@@ -186,7 +201,9 @@ export default function WordlePage() {
               className="bg-slate-800 border border-slate-700 rounded-lg px-3 py-1 text-sm font-bold focus:ring-2 focus:ring-cyan-500 outline-none disabled:opacity-60"
             >
               {[4, 5, 6, 7, 8].map((n) => (
-                <option key={n} value={n}>{n}</option>
+                <option key={n} value={n}>
+                  {n}
+                </option>
               ))}
             </select>
           </div>
@@ -220,10 +237,11 @@ export default function WordlePage() {
         {/* GRID */}
         <div className="grid gap-2 justify-center">
           {Array.from({ length: maxRows }).map((_, rIdx) => {
-            const isEvaluated = rIdx < evaluations.length;
-            const isCurrent = rIdx === evaluations.length && status === "playing";
+            const isEvaluated = rIdx < rows.length;
+            const isCurrent = rIdx === rows.length && status === "playing";
+
             const rowStr = isEvaluated
-              ? guesses[rIdx] || "".padEnd(len, " ")
+              ? rows[rIdx]?.guess || "".padEnd(len, " ")
               : isCurrent
               ? current.padEnd(len, " ")
               : "".padEnd(len, " ");
@@ -231,20 +249,26 @@ export default function WordlePage() {
             return (
               <div key={rIdx} className="flex gap-2">
                 {rowStr.split("").slice(0, len).map((ch, cIdx) => {
-                  const st = isEvaluated ? evaluations[rIdx][cIdx]?.status || "empty" : "empty";
+                  const st = isEvaluated
+                    ? rows[rIdx]?.evaled?.[cIdx]?.status || "empty"
+                    : "empty";
+
                   return (
                     <motion.div
                       key={cIdx}
                       initial={false}
-                      animate={isEvaluated ? { rotateY: 180 } : { scale: ch !== " " ? 1.1 : 1 }}
+                      animate={
+                        isEvaluated ? { rotateY: 180 } : { scale: ch !== " " ? 1.1 : 1 }
+                      }
                       className={`w-14 h-14 sm:w-16 sm:h-16 border-2 rounded-xl flex items-center justify-center text-3xl font-black transition-colors duration-500
-                        ${st === "correct"
-                          ? "bg-emerald-600 border-emerald-500"
-                          : st === "present"
-                          ? "bg-amber-500 border-amber-400"
-                          : st === "absent"
-                          ? "bg-slate-800 border-slate-700 text-slate-500"
-                          : "bg-slate-900/50 border-slate-800"
+                        ${
+                          st === "correct"
+                            ? "bg-emerald-600 border-emerald-500"
+                            : st === "present"
+                            ? "bg-amber-500 border-amber-400"
+                            : st === "absent"
+                            ? "bg-slate-800 border-slate-700 text-slate-500"
+                            : "bg-slate-900/50 border-slate-800"
                         }`}
                     >
                       <span style={{ transform: isEvaluated ? "rotateY(180deg)" : "none" }}>
@@ -311,9 +335,7 @@ export default function WordlePage() {
                   <button
                     key={k}
                     disabled={loading || status !== "playing"}
-                    onClick={() =>
-                      setCurrent((s) => (s.length >= len ? s : s + k))
-                    }
+                    onClick={() => setCurrent((s) => (s.length >= len ? s : s + k))}
                     className={`h-12 w-9 sm:w-11 rounded-lg font-black transition-all active:scale-90 disabled:opacity-60 ${bg}`}
                   >
                     {k}
