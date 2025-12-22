@@ -365,21 +365,23 @@ export default function Grade5Page() {
         {quizQuestions[currentIdx].prompt}
       </h3>
 
-      {/* 2. GÖRSEL ALANI: Sadece görsel varsa görünür ve boyutları sınırlıdır */}
-      {quizQuestions[currentIdx].imageUrl && (
-        <div className="mb-8 flex flex-col items-center justify-center">
-          <div className="relative group">
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-indigo-500 to-blue-600 rounded-2xl blur opacity-10"></div>
-            <img 
-              src={quizQuestions[currentIdx].imageUrl} 
-              alt="Soru Görseli" 
-              // max-h-48: Mobilde ekranı kaplamaz, md:max-h-64: Masaüstünde dengeli durur
-              className="relative max-h-48 md:max-h-64 max-w-full w-auto rounded-xl shadow-sm border border-slate-50 object-contain bg-white p-2"
-            />
-          </div>
-          <p className="text-[9px] font-black text-slate-300 uppercase tracking-widest mt-2">Görseli İnceleyiniz</p>
-        </div>
-      )}
+      {/* 2. GÖRSEL ALANI: %30 oranında büyütülmüş hali */}
+{quizQuestions[currentIdx].imageUrl && (
+  <div className="mb-8 flex flex-col items-center justify-center">
+    <div className="relative group">
+      <div className="absolute -inset-0.5 bg-gradient-to-r from-indigo-500 to-blue-600 rounded-2xl blur opacity-10"></div>
+      <img 
+        src={quizQuestions[currentIdx].imageUrl} 
+        alt="Soru Görseli" 
+        /* max-h-64: Mobilde ~256px (Önceki 192px idi, tam %33 artış)
+           md:max-h-80: Masaüstünde ~320px (Önceki 256px idi, tam %25 artış)
+        */
+        className="relative max-h-64 md:max-h-80 max-w-full w-auto rounded-xl shadow-sm border border-slate-50 object-contain bg-white p-2.5"
+      />
+    </div>
+    <p className="text-[9px] font-black text-slate-300 uppercase tracking-widest mt-2">Görseli İnceleyiniz</p>
+  </div>
+)}
 
       {/* 3. Seçenekler: Şık seçildiğinde scrollToTop çalışmaz, zıplama yapmaz */}
       <div className="grid gap-3 mt-auto">
