@@ -8,7 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const mainRoutes = [
     '',               // Ana Sayfa
     '/mistakes',      // Hata Analiz Merkezi
-    '/iletisim',      // İletişim Sayfası
+    '/iletisim',      // İletişim
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: currentDate,
@@ -16,9 +16,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: route === '' ? 1.0 : 0.8,
   }))
 
-  // 2. Sınav Merkezleri (Hub Pages)
+  // 2. Sınav Merkezleri (Öncelik 0.9'a çıkarıldı - Yeni Nesil İçerik Vurgusu)
   const examHubs = [
-    '/5-sinif',
+    '/5-sinif', // Burada senin yeni nesil grafikli soruların var!
     '/8-sinif-lgs',
     '/yks',
     '/kpss',
@@ -26,20 +26,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/dus',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: currentDate,
+    lastModified: currentDate, // Her build'de güncellenir
     changeFrequency: 'daily' as const,
     priority: 0.9,
   }))
 
-  // 3. IELTS Akademi Modülleri
+  // 3. IELTS ve Dil Modülleri
   const ieltsRoutes = [
     '/ielts/speaking',
     '/ielts/writing',
     '/ielts/listening',
-    '/ielts/calculator',
     '/test/ielts-reading',
-    '/test/ielts-vocab',
-    '/test/ielts-grammar',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: currentDate,
@@ -47,20 +44,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
-  // 4. Oyunlar ve Gelişim Modülleri
+  // 4. Yeni Nesil Oyunlar (Number Hunter ve Kelime Avcısı dahil)
   const gameRoutes = [
     '/speedrun',
+    '/kelime-avcisi', // Word Hunter
+    '/number-hunter', // Yeni eklediğin matematik oyunu
     '/flashcards',
-    '/kelime-avcisi',
     '/iq-test',
-    '/genel-kultur',
     '/wordle',
-    '/wordmatch',
-    '/verbal-test',
-    '/number-hunter',
-    '/color-logic',
-    '/chrono-link',
-    '/games/logic-lock',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: currentDate,
