@@ -14,12 +14,15 @@ import { ingilizceData } from '../data/grade5/ingilizce';
 type ViewState = 'subject-select' | 'term-select' | 'test-select' | 'quiz' | 'result';
 type SubjectId = 'matematik' | 'turkce' | 'ingilizce' | 'fen';
 
+// Sayfanın en üstündeki TİPLER bölümünü böyle güncelle:
 type Question5 = {
   id: string;
   prompt: string;
   options: string[];
   correct: number;
   explanation: string;
+  // EKSİK OLAN SATIR BURASIYDI:
+  imageUrl?: string; 
 };
 
 type SubjectPack = {
