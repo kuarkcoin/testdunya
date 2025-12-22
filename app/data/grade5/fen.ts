@@ -2049,8 +2049,7 @@ export const fenData: SubjectData = {
           "Ay'ın koruyucu atmosferi olmadığı için göktaşları hızla yüzeye çarparak kraterleri oluşturur.",
       },
     ],
-    export const fenData9: Question5[] = [
-  // --- GÖRSEL ODAKLI SORULAR (%50) ---
+    test9: [ // Test 9 burada başlar (export const yazma!)
   {
     id: "f5-1-t9-01",
     subject: "fen",
@@ -2272,9 +2271,9 @@ export const fenData: SubjectData = {
     options: ["Yarasa", "Kelebek", "Kurbağa", "Kertenkele"],
     correct: 1,
     explanation: "Kelebek, iç iskeleti bulunmayan omurgasız bir hayvandır."
-  }
-],
   },
+],
+  }, // <--- BU PARANTEZ KRİTİK! term1 objesini kapatır. 
   term2: {
     test1: [
       {
