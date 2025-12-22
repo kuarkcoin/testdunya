@@ -2049,6 +2049,231 @@ export const fenData: SubjectData = {
           "Ay'ın koruyucu atmosferi olmadığı için göktaşları hızla yüzeye çarparak kraterleri oluşturur.",
       },
     ],
+    export const fenData9: Question5[] = [
+  // --- GÖRSEL ODAKLI SORULAR (%50) ---
+  {
+    id: "f5-1-t9-01",
+    subject: "fen",
+    term: 1,
+    prompt: "Görselde verilen ve Ay'ın ana evrelerinden biri olan, Dünya'dan bakıldığında Ay'ın sol yarısının aydınlık göründüğü evre hangisidir?",
+    imageUrl: "/images/grade5/fen/ay-son-dordun.png",
+    options: ["Yeni Ay", "İlk Dördün", "Dolunay", "Son Dördün"],
+    correct: 3,
+    explanation: "Ay'ın 'D' harfinin tersi şeklinde göründüğü ve sol tarafının aydınlık olduğu ana evre Son Dördün evresidir."
+  },
+  {
+    id: "f5-1-t9-02",
+    subject: "fen",
+    term: 1,
+    prompt: "Görseldeki dinamometre 10 bölmelidir ve her bölmesi 2 Newton'u temsil etmektedir. Yayın 4 bölme uzadığı bu ölçümde cismin ağırlığı kaç Newton'dur?",
+    imageUrl: "/images/grade5/fen/dinamometre-sorusu.png",
+    options: ["4 N", "8 N", "10 N", "20 N"],
+    correct: 1,
+    explanation: "Her bölme 2 N ise, 4 bölme uzama $4 \times 2 = 8$ N değerini gösterir."
+  },
+  {
+    id: "f5-1-t9-03",
+    subject: "fen",
+    term: 1,
+    prompt: "Görselde mikroskop altında incelenen bu canlı, kamçısı sayesinde hareket edebilmektedir. Bu mikroskobik canlının adı nedir?",
+    imageUrl: "/images/grade5/fen/oglena.png",
+    options: ["Amip", "Öglena", "Paramesyum", "Bakteri"],
+    correct: 1,
+    explanation: "Kamçısı olan ve fotosentez yapabilen mikroskobik canlı Öglena'dır."
+  },
+  {
+    id: "f5-1-t9-04",
+    subject: "fen",
+    term: 1,
+    prompt: "Verilen şemada mantar türleri gruplandırılmıştır. '?' ile gösterilen ve besin olarak tükettiğimiz mantar türü hangisidir?",
+    imageUrl: "/images/grade5/fen/mantar-semasi.png",
+    options: ["Küf Mantarı", "Maya Mantarı", "Kültür Mantarı", "Parazit Mantar"],
+    correct: 2,
+    explanation: "Besin değeri yüksek olan ve insanlar tarafından tüketilen tür Kültür Mantarıdır."
+  },
+  {
+    id: "f5-1-t9-05",
+    subject: "fen",
+    term: 1,
+    prompt: "Görseldeki bitki kısımlarından hangisi topraktan su ve mineralleri emmekle görevlidir?",
+    imageUrl: "/images/grade5/fen/bitki-bolumleri.png",
+    options: ["Yaprak", "Gövde", "Çiçek", "Kök"],
+    correct: 3,
+    explanation: "Kökler bitkiyi toprağa bağlar ve su ihtiyacını karşılar."
+  },
+  {
+    id: "f5-1-t9-06",
+    subject: "fen",
+    term: 1,
+    prompt: "Güneş, Dünya ve Ay'ın büyüklüklerini temsil eden bu modellerden hangisi Güneş'i temsil eder?",
+    imageUrl: "/images/grade5/fen/gunes-dunya-ay-model.png",
+    options: ["Pinpon Topu", "Bezelye Tanesi", "Basketbol Topu", "Misket"],
+    correct: 2,
+    explanation: "Güneş sistemdeki en büyük yapıdır, basketbol topu ile temsil edilmesi en mantıklısıdır."
+  },
+  {
+    id: "f5-1-t9-07",
+    subject: "fen",
+    term: 1,
+    prompt: "Görselde verilen omurgalı hayvanlardan hangisi, suda yaşamasına rağmen memeliler grubunda yer alır?",
+    imageUrl: "/images/grade5/fen/su-canlilari.png",
+    options: ["Sazan Balığı", "Yunus", "Köpek Balığı", "Deniz Anası"],
+    correct: 1,
+    explanation: "Yunuslar ve balinalar suda yaşar ancak doğurarak çoğalan memeli canlılardır."
+  },
+  {
+    id: "f5-1-t9-08",
+    subject: "fen",
+    term: 1,
+    prompt: "Görseldeki düzenekte araba farklı yüzeylerde (buz ve asfalt) bırakılıyor. Asfalt yüzeyde arabanın daha yavaş gitmesinin temel sebebi nedir?",
+    imageUrl: "/images/grade5/fen/surtunme-deneyi.png",
+    options: ["Yerçekimi", "Sürtünme Kuvveti", "Hava Direnci", "Arabanın Ağırlığı"],
+    correct: 1,
+    explanation: "Pürüzlü yüzeylerde sürtünme kuvveti daha fazladır ve hareketi zorlaştırır."
+  },
+  {
+    id: "f5-1-t9-09",
+    subject: "fen",
+    term: 1,
+    prompt: "Ay'ın yüzeyinde görülen bu koyu renkli, geniş düzlüklere ne ad verilir?",
+    imageUrl: "/images/grade5/fen/ay-denizleri.png",
+    options: ["Krater", "Ay Dağı", "Ay Denizi", "Meteor"],
+    correct: 2,
+    explanation: "Ay'ın yüzeyindeki koyu lekeler bazaltik ovalardır ve Ay Denizi olarak adlandırılır."
+  },
+  {
+    id: "f5-1-t9-10",
+    subject: "fen",
+    term: 1,
+    prompt: "Hangi mikroskobik canlı görseldeki peynirin ve yoğurdun mayalanmasını sağlamıştır?",
+    imageUrl: "/images/grade5/fen/sut-urunleri.png",
+    options: ["Zararlı Bakteriler", "Yararlı Bakteriler", "Mantarlar", "Virüsler"],
+    correct: 1,
+    explanation: "Sütün yoğurda dönüşmesini sağlayanlar yararlı bakterilerdir."
+  },
+
+  // --- METİN ODAKLI ZORLAYICI SORULAR ---
+  {
+    id: "f5-1-t9-11",
+    subject: "fen",
+    term: 1,
+    prompt: "Dünya'dan bakıldığında Ay'ın hep aynı yüzünün görülmesinin temel sebebi aşağıdakilerden hangisidir?",
+    options: [
+      "Ay'ın ışık kaynağı olmaması",
+      "Ay'ın atmosferinin çok ince olması",
+      "Ay'ın kendi etrafındaki ve Dünya etrafındaki dönme sürelerinin eşit olması",
+      "Dünya'nın Ay'dan daha büyük olması"
+    ],
+    correct: 2,
+    explanation: "Ay'ın her iki hareketi de yaklaşık 27,3 gün sürdüğü için hep aynı yüzünü görürüz."
+  },
+  {
+    id: "f5-1-t9-12",
+    subject: "fen",
+    term: 1,
+    prompt: "Aşağıdaki canlı eşleştirmelerinden hangisi 'yavru bakımı' açısından diğerlerinden farklıdır?",
+    options: ["Tavuk - Kuş", "Aslan - Memeli", "Yılan - Sürüngen", "Balina - Memeli"],
+    correct: 2,
+    explanation: "Sürüngenlerde (yılan) yavru bakımı yoktur, memeliler ve kuşlarda ise vardır."
+  },
+  {
+    id: "f5-1-t9-13",
+    subject: "fen",
+    term: 1,
+    prompt: "Mantarlar hakkında verilen bilgilerden hangisi yanlıştır?",
+    options: [
+      "Kendi besinlerini üretebilirler.",
+      "Bazı türleri hastalıklara neden olur.",
+      "Besinlerini dışarıdan hazır alırlar.",
+      "Bazı türleri gözle görülmeyecek kadar küçüktür."
+    ],
+    correct: 0,
+    explanation: "Mantarlar bitki değildir, klorofilleri yoktur ve kendi besinlerini üretemezler."
+  },
+  {
+    id: "f5-1-t9-14",
+    subject: "fen",
+    term: 1,
+    prompt: "Güneş'in yapısında en fazla bulunan gaz hangisidir?",
+    options: ["Oksijen", "Karbondioksit", "Hidrojen", "Azot"],
+    correct: 2,
+    explanation: "Güneş'in yaklaşık %71'i hidrojendir."
+  },
+  {
+    id: "f5-1-t9-15",
+    subject: "fen",
+    term: 1,
+    prompt: "Dinamometreler ile ilgili aşağıdakilerden hangisi doğrudur?",
+    options: [
+      "Sadece sıvıların ağırlığını ölçer.",
+      "İçindeki yayın esneklik özelliğinden yararlanılır.",
+      "Her dinamometre ile her ağırlık ölçülebilir.",
+      "Sürtünmeyi azaltmak için kullanılır."
+    ],
+    correct: 1,
+    explanation: "Dinamometreler yayların esneme prensibiyle kuvvet ölçer."
+  },
+  {
+    id: "f5-1-t9-16",
+    subject: "fen",
+    term: 1,
+    prompt: "Çiçeksiz bitkiler ile ilgili hangisi söylenemez?",
+    options: [
+      "Tohum ve meyve oluşturmazlar.",
+      "Basit yapılı bitkilerdir.",
+      "Eğrelti otu ve karayosunu örnektir.",
+      "Sadece karada yaşarlar."
+    ],
+    correct: 3,
+    explanation: "Çiçeksiz bitkilerin (su yosunu gibi) suda yaşayan türleri de vardır."
+  },
+  {
+    id: "f5-1-t9-17",
+    subject: "fen",
+    term: 1,
+    prompt: "Sürtünme kuvvetini artırmak için aşağıdakilerden hangisi yapılmalıdır?",
+    options: [
+      "Makine parçalarının yağlanması",
+      "Kışın araba lastiklerine zincir takılması",
+      "Kapı menteşelerinin yağlanması",
+      "Gemilerin ön kısımlarının 'V' şeklinde yapılması"
+    ],
+    correct: 1,
+    explanation: "Zincir takmak yüzeyi pürüzlendirerek sürtünmeyi artırır ve kaymayı önler."
+  },
+  {
+    id: "f5-1-t9-18",
+    subject: "fen",
+    term: 1,
+    prompt: "Mikroskobik canlıların zararları arasında hangisi yer almaz?",
+    options: [
+      "Sütün yoğurda dönüşmesi",
+      "Besinlerin bozulup çürümesi",
+      "Verem, kolera gibi hastalıklar",
+      "Dişlerin çürümesi"
+    ],
+    correct: 0,
+    explanation: "Yoğurt oluşumu yararlı bakterilerin sağladığı faydalı bir işlemdir."
+  },
+  {
+    id: "f5-1-t9-19",
+    subject: "fen",
+    term: 1,
+    prompt: "Güneş'in kendi etrafındaki bir tam turu yaklaşık ne kadar sürer?",
+    options: ["24 saat", "25 gün", "27 gün", "365 gün"],
+    correct: 1,
+    explanation: "Güneş kendi ekseni etrafında yaklaşık 25 Dünya gününde döner."
+  },
+  {
+    id: "f5-1-t9-20",
+    subject: "fen",
+    term: 1,
+    prompt: "Aşağıdaki canlılardan hangisinin vücut yapısı 'omurgasızlar' sınıfına örnektir?",
+    options: ["Yarasa", "Kelebek", "Kurbağa", "Kertenkele"],
+    correct: 1,
+    explanation: "Kelebek, iç iskeleti bulunmayan omurgasız bir hayvandır."
+  }
+],
   },
   term2: {
     test1: [
