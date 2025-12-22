@@ -329,104 +329,122 @@ export default function Grade5Page() {
         )}
 
         {/* 4) QUIZ */}
-        {view === 'quiz' && quizQuestions.length > 0 && (
-          <div className={`${ui.quizWrap} mx-auto space-y-5 animate-in fade-in duration-400`}>
-            <div ref={quizTopRef} className="scroll-mt-24" />
+{view === 'quiz' && quizQuestions.length > 0 && (
+  <div className={`${ui.quizWrap} mx-auto space-y-5 animate-in fade-in duration-400`}>
+    {/* Kaydırma Noktası: Yeni soruya geçince buraya odaklanır */}
+    <div ref={quizTopRef} className="scroll-mt-24" />
 
-            {/* Üst bar */}
-            <div className="space-y-2 px-1">
-              <div className="flex justify-between items-end">
-                <span className="text-[11px] font-black uppercase text-indigo-600 tracking-widest">
-                  {subjectLabel} • Test {selectedTestNo}
-                </span>
-                <span className="text-base font-mono font-black text-slate-400">
-                  {currentIdx + 1} / {quizQuestions.length}
-                </span>
-              </div>
+    {/* Üst bar: İlerleme ve Bilgi */}
+    <div className="space-y-2 px-1">
+      <div className="flex justify-between items-end">
+        <span className="text-[11px] font-black uppercase text-indigo-600 tracking-widest">
+          {subjectLabel} • Test {selectedTestNo}
+        </span>
+        <span className="text-base font-mono font-black text-slate-400">
+          {currentIdx + 1} / {quizQuestions.length}
+        </span>
+      </div>
 
-              <div className="w-full h-3 bg-slate-200 rounded-full overflow-hidden shadow-inner">
-                <div
-                  className="h-full bg-gradient-to-r from-indigo-500 via-blue-500 to-indigo-600 transition-all duration-500 ease-out"
-                  style={{ width: `${((currentIdx + 1) / quizQuestions.length) * 100}%` }}
-                />
-              </div>
+      <div className="w-full h-3 bg-slate-200 rounded-full overflow-hidden shadow-inner">
+        <div
+          className="h-full bg-gradient-to-r from-indigo-500 via-blue-500 to-indigo-600 transition-all duration-500 ease-out"
+          style={{ width: `${((currentIdx + 1) / quizQuestions.length) * 100}%` }}
+        />
+      </div>
+      <p className="text-[11px] text-slate-400 font-bold italic">Başarıya giden yolda harika ilerliyorsun! ⭐</p>
+    </div>
 
-              <p className="text-[11px] text-slate-400 font-bold">Harika gidiyorsun! ⭐ Bir soru daha!</p>
-            </div>
+    {/* Soru Kartı: Geniş ve Ferah Yapı */}
+    <div className={`bg-white border border-slate-200 ${ui.cardPad} ${ui.cardRound} shadow-xl relative overflow-hidden min-h-[450px] flex flex-col`}>
+      
+      {/* 1. Soru Metni */}
+      <h3 className={`${ui.qTitle} font-extrabold leading-snug text-slate-800 mb-6`}>
+        {quizQuestions[currentIdx].prompt}
+      </h3>
 
-            {/* Soru kartı */}
-            <div className={`bg-white border border-slate-200 ${ui.cardPad} ${ui.cardRound} shadow-xl relative overflow-hidden min-h-[420px] flex flex-col`}>
-              <h3 className={`${ui.qTitle} font-extrabold leading-snug text-slate-800 mb-6`}>
-                {quizQuestions[currentIdx].prompt}
-              </h3>
-
-              <div className="grid gap-3 mt-auto">
-                {quizQuestions[currentIdx].options.map((opt: string, i: number) => {
-                  const selected = answers[currentIdx] === i;
-                  return (
-                    <button
-                      key={i}
-                      onClick={() => setAnswers((prev) => ({ ...prev, [currentIdx]: i }))}
-                      className={`${ui.optionPad} rounded-[1.25rem] border-2 text-left transition-all flex items-center gap-4 group ${
-                        selected
-                          ? 'border-indigo-600 bg-indigo-50 text-indigo-900 shadow-md'
-                          : 'border-slate-100 bg-slate-50 text-slate-700 hover:border-indigo-200 hover:bg-white'
-                      }`}
-                    >
-                      <div
-                        className={`${ui.optionBadge} border-2 flex items-center justify-center font-black transition-all ${
-                          selected ? 'bg-indigo-600 border-indigo-600 text-white' : 'bg-white border-slate-200 text-slate-400'
-                        }`}
-                      >
-                        {String.fromCharCode(65 + i)}
-                      </div>
-
-                      <span className={`${ui.optionText} font-bold`}>{opt}</span>
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-
-            {/* Alt butonlar */}
-            <div className="flex justify-between items-center gap-3 px-2 pb-8">
-              <button
-                onClick={() => {
-                  setCurrentIdx((p) => Math.max(0, p - 1));
-                  scrollToTop();
-                }}
-                disabled={currentIdx === 0}
-                className="text-slate-400 font-black hover:text-slate-600 disabled:opacity-30 transition-colors uppercase text-[11px] tracking-widest px-4 py-3"
-              >
-                ← Geri
-              </button>
-
-              {currentIdx === quizQuestions.length - 1 ? (
-                <button
-                  onClick={() => {
-                    setView('result');
-                    if (typeof window !== 'undefined') window.scrollTo({ top: 0, behavior: 'smooth' });
-                  }}
-                  disabled={answers[currentIdx] === undefined}
-                  className={`${ui.bigBtn} bg-emerald-500 hover:bg-emerald-600 text-white font-black shadow-lg transition-all hover:scale-[1.02] active:scale-95 disabled:opacity-50 disabled:hover:scale-100`}
-                >
-                  Testi Bitir ✅
-                </button>
-              ) : (
-                <button
-                  onClick={() => {
-                    setCurrentIdx((p) => p + 1);
-                    scrollToTop();
-                  }}
-                  disabled={answers[currentIdx] === undefined}
-                  className={`${ui.bigBtn} bg-indigo-600 hover:bg-indigo-700 text-white font-black shadow-lg transition-all hover:scale-[1.02] active:scale-95 disabled:opacity-50 disabled:hover:scale-100`}
-                >
-                  Sonraki ➔
-                </button>
-              )}
-            </div>
+      {/* 2. GÖRSEL ALANI: Sadece görsel varsa görünür ve boyutları sınırlıdır */}
+      {quizQuestions[currentIdx].imageUrl && (
+        <div className="mb-8 flex flex-col items-center justify-center">
+          <div className="relative group">
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-indigo-500 to-blue-600 rounded-2xl blur opacity-10"></div>
+            <img 
+              src={quizQuestions[currentIdx].imageUrl} 
+              alt="Soru Görseli" 
+              // max-h-48: Mobilde ekranı kaplamaz, md:max-h-64: Masaüstünde dengeli durur
+              className="relative max-h-48 md:max-h-64 max-w-full w-auto rounded-xl shadow-sm border border-slate-50 object-contain bg-white p-2"
+            />
           </div>
-        )}
+          <p className="text-[9px] font-black text-slate-300 uppercase tracking-widest mt-2">Görseli İnceleyiniz</p>
+        </div>
+      )}
+
+      {/* 3. Seçenekler: Şık seçildiğinde scrollToTop çalışmaz, zıplama yapmaz */}
+      <div className="grid gap-3 mt-auto">
+        {quizQuestions[currentIdx].options.map((opt: string, i: number) => {
+          const selected = answers[currentIdx] === i;
+          return (
+            <button
+              key={i}
+              onClick={() => setAnswers((prev) => ({ ...prev, [currentIdx]: i }))}
+              className={`${ui.optionPad} rounded-[1.25rem] border-2 text-left transition-all flex items-center gap-4 group ${
+                selected
+                  ? 'border-indigo-600 bg-indigo-50 text-indigo-900 shadow-md'
+                  : 'border-slate-100 bg-slate-50 text-slate-700 hover:border-indigo-200 hover:bg-white'
+              }`}
+            >
+              <div
+                className={`${ui.optionBadge} border-2 flex items-center justify-center font-black transition-all ${
+                  selected ? 'bg-indigo-600 border-indigo-600 text-white' : 'bg-white border-slate-200 text-slate-400'
+                }`}
+              >
+                {String.fromCharCode(65 + i)}
+              </div>
+              <span className={`${ui.optionText} font-bold`}>{opt}</span>
+            </button>
+          );
+        })}
+      </div>
+    </div>
+
+    {/* Alt Butonlar: Navigasyon ve Kaydırma Kontrolü */}
+    <div className="flex justify-between items-center gap-3 px-2 pb-8">
+      <button
+        onClick={() => {
+          setCurrentIdx((p) => Math.max(0, p - 1));
+          scrollToTop(); // Geri gidince soru başına kaydır
+        }}
+        disabled={currentIdx === 0}
+        className="text-slate-400 font-black hover:text-slate-600 disabled:opacity-30 transition-colors uppercase text-[11px] tracking-widest px-4 py-3"
+      >
+        ← Geri
+      </button>
+
+      {currentIdx === quizQuestions.length - 1 ? (
+        <button
+          onClick={() => {
+            setView('result');
+            if (typeof window !== 'undefined') window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+          disabled={answers[currentIdx] === undefined}
+          className={`${ui.bigBtn} bg-emerald-500 hover:bg-emerald-600 text-white font-black shadow-lg transition-all hover:scale-[1.02] active:scale-95 disabled:opacity-50`}
+        >
+          Testi Bitir ✅
+        </button>
+      ) : (
+        <button
+          onClick={() => {
+            setCurrentIdx((p) => p + 1);
+            scrollToTop(); // Sonraki soruya geçince soru başına kaydır
+          }}
+          disabled={answers[currentIdx] === undefined}
+          className={`${ui.bigBtn} bg-indigo-600 hover:bg-indigo-700 text-white font-black shadow-lg transition-all hover:scale-[1.02] active:scale-95 disabled:opacity-50`}
+        >
+          Sonraki ➔
+        </button>
+      )}
+    </div>
+  </div>
+)}
 
         {/* 5) SONUÇ */}
         {view === 'result' && (
