@@ -1480,8 +1480,200 @@ export const matematikData: SubjectData = {
         explanation: "6 artan.",
       },
     ],
+  test9: [
+  // --- GÖRSEL ODAKLI SORULAR (%50) ---
+  {
+    id: "m5-1-t9-01",
+    subject: "matematik",
+    term: 1,
+    prompt: "Görseldeki abaküste yedi basamaklı bir doğal sayı modellenmiştir. Bu sayının okunuşu hangisidir?",
+    imageUrl: "/images/grade5/matematik/abakus-sayi.png",
+    options: ["3.201.005", "3.021.050", "3.210.500", "32.100.005"],
+    correct: 0,
+    explanation: "Basamaklardaki boncuk sayılarını yan yana dizdiğimizde 3.201.005 sayısını elde ederiz."
   },
-  term2: {
-    test1: [],
+  {
+    id: "m5-1-t9-02",
+    subject: "matematik",
+    term: 1,
+    prompt: "Sayı doğrusunda 'A' noktasına karşılık gelen bileşik kesir hangisidir?",
+    imageUrl: "/images/grade5/matematik/sayi-dogrusu-kesir.png",
+    options: ["\\frac{7}{3}", "\\frac{8}{3}", "\\frac{9}{4}", "\\frac{10}{3}"],
+    correct: 1,
+    explanation: "2 tamdan sonra 3'te 2 ilerlenmiştir: 2 + \\frac{2}{3} = \\frac{8}{3} olur."
   },
-};
+  {
+    id: "m5-1-t9-03",
+    subject: "matematik",
+    term: 1,
+    prompt: "Görseldeki ABCD karesi için hangi ifade yanlıştır?",
+    imageUrl: "/images/grade5/matematik/kare-ozellik.png",
+    options: ["Tüm iç açılar 90^\\circ'dir", "Kenarlar paraleldir", "Köşegenler farklıdır", "Kenar uzunlukları eşittir"],
+    correct: 2,
+    explanation: "Karenin en temel özelliklerinden biri köşegen uzunluklarının birbirine eşit olmasıdır."
+  },
+  {
+    id: "m5-1-t9-04",
+    subject: "matematik",
+    term: 1,
+    prompt: "Görseldeki 100'lük tabloda boyalı alanı ifade eden kesrin yüzde sembolü hangisidir?",
+    imageUrl: "/images/grade5/matematik/yuzdelik-tablo.png",
+    options: ["\\%35", "\\%45", "\\%55", "\\%65"],
+    correct: 1,
+    explanation: "100 kareden 45 tanesi boyalı olduğu için \\%45 olarak gösterilir."
+  },
+  {
+    id: "m5-1-t9-05",
+    subject: "matematik",
+    term: 1,
+    prompt: "Görselde verilen 'K' açısının türü aşağıdakilerden hangisidir?",
+    imageUrl: "/images/grade5/matematik/genis-aci.png",
+    options: ["Dar Açı", "Dik Açı", "Geniş Açı", "Doğru Açı"],
+    correct: 2,
+    explanation: "Ölçüsü 90^\\circ ile 180^\\circ arasında olan açılara geniş açı denir."
+  },
+  {
+    id: "m5-1-t9-06",
+    subject: "matematik",
+    term: 1,
+    prompt: "Görseldeki bölme işleminde verilmeyen 'Bölünen' sayı kaçtır?",
+    imageUrl: "/images/grade5/matematik/bolme-sorusu.png",
+    options: ["345", "358", "362", "375"],
+    correct: 1,
+    explanation: "(15 \\times 23) + 13 = 345 + 13 = 358."
+  },
+  {
+    id: "m5-1-t9-07",
+    subject: "matematik",
+    term: 1,
+    prompt: "Şekil örüntüsünde bir sonraki adımda kaç adet kare bulunmalıdır?",
+    imageUrl: "/images/grade5/matematik/sekil-oruntusu.png",
+    options: ["13", "15", "17", "19"],
+    correct: 2,
+    explanation: "Örüntü kuralı 4'er artarak ilerlemektedir: 5, 9, 13, 17..."
+  },
+  {
+    id: "m5-1-t9-08",
+    subject: "matematik",
+    term: 1,
+    prompt: "Görseldeki kesir karşılaştırmasında boş kutuya hangi sembol gelmelidir?",
+    imageUrl: "/images/grade5/matematik/kesir-kiyas.png",
+    options: [">", "<", "=", "\\le"],
+    correct: 0,
+    explanation: "Paydaları eşit olduğunda payı büyük olan daha büyüktür: \\frac{7}{12} > \\frac{5}{12}."
+  },
+  {
+    id: "m5-1-t9-09",
+    subject: "matematik",
+    term: 1,
+    prompt: "Verilen modelde taralı alanı ifade eden tam sayılı kesir hangisidir?",
+    imageUrl: "/images/grade5/matematik/tam-sayili-model.png",
+    options: ["1 \\frac{1}{4}", "2 \\frac{1}{4}", "2 \\frac{3}{4}", "1 \\frac{3}{4}"],
+    correct: 2,
+    explanation: "İki tam dolu daire ve üçüncü dairenin 4'te 3'ü: 2 \\frac{3}{4}."
+  },
+  {
+    id: "m5-1-t9-10",
+    subject: "matematik",
+    term: 1,
+    prompt: "Açı ölçer üzerinde gösterilen açının ölçüsü kaç derecedir?",
+    imageUrl: "/images/grade5/matematik/iletki-sorusu.png",
+    options: ["45^\\circ", "60^\\circ", "120^\\circ", "150^\\circ"],
+    correct: 1,
+    explanation: "İletki üzerindeki merkezden çıkan kollar arasındaki fark 60^\\circ'dir."
+  },
+
+  // --- METİN ODAKLI ZORLAYICI SORULAR ---
+  {
+    id: "m5-1-t9-11",
+    subject: "matematik",
+    term: 1,
+    prompt: "Bir çiftlikteki 450 tavuğun her biri günde 2 yumurta yapmaktadır. 10 günde toplam kaç yumurta elde edilir?",
+    options: ["4500", "9000", "10000", "12000"],
+    correct: 1,
+    explanation: "450 \\times 2 = 900 (bir gün). 900 \\times 10 = 9000."
+  },
+  {
+    id: "m5-1-t9-12",
+    subject: "matematik",
+    term: 1,
+    prompt: "729 sayısının 3^3 (üçün küpü) sayısına bölümü kaçtır?",
+    options: ["27", "33", "81", "243"],
+    correct: 0,
+    explanation: "3^3 = 27. 729 / 27 = 27."
+  },
+  {
+    id: "m5-1-t9-13",
+    subject: "matematik",
+    term: 1,
+    prompt: "Hangi kesir \\frac{1}{2}'den (yarımdan) daha büyüktür?",
+    options: ["\\frac{3}{8}", "\\frac{4}{10}", "\\frac{7}{12}", "\\frac{5}{12}"],
+    correct: 2,
+    explanation: "\\frac{7}{12} yarımdan (yani 6/12'den) daha büyüktür."
+  },
+  {
+    id: "m5-1-t9-14",
+    subject: "matematik",
+    term: 1,
+    prompt: "Bir çıkarma işleminde fark 2450, çıkan 1320 ise eksilen sayı kaçtır?",
+    options: ["1130", "2770", "3770", "4000"],
+    correct: 2,
+    explanation: "Eksilen = Çıkan + Fark -> 1320 + 2450 = 3770."
+  },
+  {
+    id: "m5-1-t9-15",
+    subject: "matematik",
+    term: 1,
+    prompt: "Aşağıdaki sayılardan hangisi en büyüktür?",
+    options: ["4.500.000", "4.050.000", "4.550.000", "4.505.000"],
+    correct: 2,
+    explanation: "Basamak değerleri kıyaslandığında 550 binlik kısım en büyüktür."
+  },
+  {
+    id: "m5-1-t9-16",
+    subject: "matematik",
+    term: 1,
+    prompt: "24 sayısının \\frac{3}{4}'ü kaçtır?",
+    options: ["12", "16", "18", "20"],
+    correct: 2,
+    explanation: "(24 / 4) \\times 3 = 6 \\times 3 = 18."
+  },
+  {
+    id: "m5-1-t9-17",
+    subject: "matematik",
+    term: 1,
+    prompt: "Bir açının ölçüsü dik açının ölçüsünden 25^\\circ eksiktir. Bu açı kaç derecedir?",
+    options: ["55^\\circ", "65^\\circ", "75^\\circ", "115^\\circ"],
+    correct: 1,
+    explanation: "Dik açı 90^\\circ'dir. 90 - 25 = 65^\\circ."
+  },
+  {
+    id: "m5-1-t9-18",
+    subject: "matematik",
+    term: 1,
+    prompt: "Bir yolun \\frac{5}{9}'unu giden bir şoförün geriye yolun kaçta kaçı kalmıştır?",
+    options: ["\\frac{4}{5}", "\\frac{4}{9}", "\\frac{9}{5}", "\\frac{1}{9}"],
+    correct: 1,
+    explanation: "Yolun tamamı 1 bütündür: \\frac{9}{9} - \\frac{5}{9} = \\frac{4}{9}."
+  },
+  {
+    id: "m5-1-t9-19",
+    subject: "matematik",
+    term: 1,
+    prompt: "420 sayısının 100 katının 500 fazlası kaçtır?",
+    options: ["42.500", "420.500", "4.700", "425.000"],
+    correct: 0,
+    explanation: "420 \\times 100 = 42.000. 42.000 + 500 = 42.500."
+  },
+  {
+    id: "m5-1-t9-20",
+    subject: "matematik",
+    term: 1,
+    prompt: "Aşağıdaki sembollerden hangisi 'doğru parçası'nı temsil eder?",
+    options: ["[AB]", "AB", "(AB)", "\\overrightarrow{AB}"],
+    correct: 0,
+    explanation: "İki ucu kapalı sınırlı hatlar köşeli parantez [AB] ile gösterilir."
+  }
+];
+
+ 
