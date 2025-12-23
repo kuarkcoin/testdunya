@@ -1674,6 +1674,8 @@ export const matematikData: SubjectData = {
     correct: 0,
     explanation: "İki ucu kapalı sınırlı hatlar köşeli parantez [AB] ile gösterilir."
   }
-];
+    ] // test9 bitti
+  } // term1 bitti
+}; // matematikData
 
  
