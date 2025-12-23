@@ -1712,16 +1712,20 @@ export const matematikData: SubjectData = {
         correct: 0,
         explanation: "420 \\times 100 = 42.000. 42.000 + 500 = 42.500.",
       },
-      {
+     {
         id: "m5-1-t9-20",
         subject: "matematik",
         term: 1,
         prompt: "Aşağıdaki sembollerden hangisi 'doğru parçası'nı temsil eder?",
         options: ["[AB]", "AB", "(AB)", "\\overrightarrow{AB}"],
         correct: 0,
-        explanation:
-          "İki ucu kapalı sınırlı hatlar köşeli parantez [AB] ile gösterilir.",
+        explanation: "İki ucu kapalı sınırlı hatlar köşeli parantez [AB] ile gösterilir.",
       },
     ], // test9 bitti
-  }, // term1 bitti
-}; // matematikData
+  }, // term1 bitti (Burası term1'in sonu)
+
+  // BU KISMI EKLEMEN ŞART:
+  term2: {
+    test1: [], // Şimdilik içi boş kalabilir
+  },
+}; // matematikData artık SubjectData tipine tam uyumlu!
