@@ -2,6 +2,7 @@
 
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import 'katex/dist/katex.min.css';
 import ReactConfetti from 'react-confetti';
 
 // VERİ IMPORTLARI
