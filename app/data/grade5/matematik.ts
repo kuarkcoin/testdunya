@@ -1532,12 +1532,12 @@ export const matematikData: SubjectData = {
         subject: "matematik",
         term: 1,
         prompt:
-          "Görseldeki 100'lük tabloda boyalı alanı ifade eden kesrin yüzde sembolü hangisidir?",
+          "Görseldeki 100'lük tabloda beyaz boyalı alanı ifade eden kesrin yüzde sembolü hangisidir?",
         imageUrl: "/images/grade5/matematik/yuzdelik-tablo.png",
         options: ["\\%35", "\\%45", "\\%55", "\\%65"],
         correct: 1,
         explanation:
-          "100 kareden 45 tanesi boyalı olduğu için \\%45 olarak gösterilir.",
+          "100 kareden 45 tanesi beyaz boyalı olduğu için \\%45 olarak gösterilir.",
       },
       {
         id: "m5-1-t9-05",
