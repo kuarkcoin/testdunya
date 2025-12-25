@@ -2488,7 +2488,260 @@ export const fenData: SubjectData = {
         correct: 1,
         explanation: "Her 5N için 1cm uzar.",
       },
+    ]
+import { SubjectData } from "../types";
+
+export const fenTest10: SubjectData = {
+  term1: {
+    test10: [
+      // --- BÖLÜM 1: DİNAMOMETRELER VE KUVVET ÖLÇÜMÜ (GÖRSEL YORUMLAMA) ---
+      {
+        id: "f5-1-t10-01",
+        subject: "fen",
+        term: 1,
+        prompt: "Görseldeki özdeş dinamometrelerde K, L ve M cismleri asılıdır. Yayların uzama miktarlarına göre cisimlerin ağırlıkları arasındaki ilişki hangisidir?",
+        imageUrl: "/images/grade5/fen/test10/dinamometre-kiyas.webp",
+        options: ["K > L > M", "M > L > K", "L > K > M", "K = L = M"],
+        correct: 1,
+        explanation: "Dinamometre yayındaki uzama miktarı, asılan cismin ağırlığı ile doğru orantılıdır. En çok uzayan M en ağır, en az uzayan K en hafiftir."
+      },
+      {
+        id: "f5-1-t10-02",
+        subject: "fen",
+        term: 1,
+        prompt: "Her bir bölmesi 5 N ölçen görseldeki dinamometreye asılan 'X' cisminin ağırlığı kaç Newton'dur?",
+        imageUrl: "/images/grade5/fen/test10/dinamometre-okuma-5n.webp",
+        options: ["10 N", "15 N", "20 N", "25 N"],
+        correct: 2,
+        explanation: "Gösterge 4. bölmeyi göstermektedir. Her bölme 5 N olduğuna göre: 4 $\\times$ 5 N = 20 N."
+      },
+      {
+        id: "f5-1-t10-03",
+        subject: "fen",
+        term: 1,
+        prompt: "Görselde verilen K ve L dinamometreleri için hangisi kesinlikle söylenebilir?",
+        imageUrl: "/images/grade5/fen/test10/farkli-yaylar.webp",
+        options: [
+          "L dinamometresi daha büyük kuvvetleri ölçebilir.",
+          "K dinamometresinin yayı daha incedir.",
+          "Aynı ağırlık asılırsa L daha fazla uzar.",
+          "K dinamometresi daha hassas ölçüm yapar."
+        ],
+        correct: 3,
+        explanation: "K dinamometresinin bölmeleri daha sık (birbirine yakın) çizilmiştir. Bu, onun daha küçük ağırlık değişimlerini, yani daha hassas ölçümleri yapabildiğini gösterir."
+      },
+      {
+        id: "f5-1-t10-04",
+        subject: "fen",
+        term: 1,
+        prompt: "Maksimum 50 N ölçebilen 10 bölmeli bir dinamometre ile aşağıdaki cisimlerden hangisinin ağırlığı ölçülemez?",
+        imageUrl: "/images/grade5/fen/test10/dinamometre-sinir.webp",
+        options: ["25 N ağırlığındaki çanta", "45 N ağırlığındaki koli", "60 N ağırlığındaki çocuk", "5 N ağırlığındaki elma"],
+        correct: 2,
+        explanation: "Dinamometrenin ölçüm sınırı 50 N'dur. 60 N bu sınırı aştığı için yayın esneklik özelliği bozulur ve ölçüm yapılamaz."
+      },
+      {
+        id: "f5-1-t10-05",
+        subject: "fen",
+        term: 1,
+        prompt: "Görseldeki deneyde, özdeş yaylara farklı ağırlıklar asılmıştır. Bu deneyin bağımlı değişkeni nedir?",
+        imageUrl: "/images/grade5/fen/test10/bagimli-degisken-yay.webp",
+        options: ["Asılan ağırlık miktarı", "Yayların cinsi", "Yayın uzama miktarı", "Dinamometrenin rengi"],
+        correct: 2,
+        explanation: "Bağımlı değişken, bizim değiştirdiğimiz etkene (ağırlık) bağlı olarak sonuçta değişen durumdur. Burada ağırlığa bağlı olarak 'yayın uzama miktarı' değişmektedir."
+      },
+
+      // --- BÖLÜM 2: SÜRTÜNME KUVVETİ (ZORLAYICI ANALİZ) ---
+      {
+        id: "f5-1-t10-06",
+        subject: "fen",
+        term: 1,
+        prompt: "Özdeş K cismi, görseldeki gibi üç farklı yüzeyde yatay olarak çekiliyor. Dinamometrelerin gösterdiği değerler D1 > D2 > D3 olduğuna göre yüzeylerin pürüzlülük sıralaması nasıldır?",
+        imageUrl: "/images/grade5/fen/test10/surtunme-yuzey-kiyas.webp",
+        options: ["Cam > Tahta > Zımpara", "Zımpara > Tahta > Cam", "Tahta > Zımpara > Cam", "Cam > Zımpara > Tahta"],
+        correct: 1,
+        explanation: "Dinamometrede okunan değer ne kadar büyükse, sürtünme kuvveti o kadar fazladır. Sürtünme en çok zımparada, en az camda olur (D1 > D2 > D3)."
+      },
+      {
+        id: "f5-1-t10-07",
+        subject: "fen",
+        term: 1,
+        prompt: "Görseldeki öğrenci, ağır bir kutuyu itmekte zorlanmaktadır. Kutunun daha kolay hareket etmesi için aşağıdakilerden hangisi YAPILMAMALIDIR?",
+        imageUrl: "/images/grade5/fen/test10/kutu-itme.webp",
+        options: [
+          "Zemin ile kutu arasına yağ sürmek",
+          "Kutunun altına tekerlek takmak",
+          "Kutunun üzerine bir koli daha koymak",
+          "Zemini cilalamak"
+        ],
+        correct: 2,
+        explanation: "Kutunun üzerine ağırlık eklemek, yüzeye etki eden dik kuvveti artırır. Bu da sürtünme kuvvetinin artmasına ve kutunun daha zor itilmesine neden olur."
+      },
+      {
+        id: "f5-1-t10-08",
+        subject: "fen",
+        term: 1,
+        prompt: "Görseldeki araçların tasarımlarında sürtünme kuvvetinin (hava veya su direnci) etkisi düşünülmüştür. Hangi araçta amaç sürtünmeyi ARTIRMAKTIR?",
+        imageUrl: "/images/grade5/fen/test10/surtunme-artirma-azaltma.webp",
+        options: ["Yarış arabası", "Paraşüt", "Hızlı tren", "Denizaltı"],
+        correct: 1,
+        explanation: "Yarış arabası, hızlı tren ve denizaltı hava/su direncini azaltmak için sivri burunlu tasarlanır. Paraşüt ise hava direncini ARTIRARAK güvenli iniş sağlamak için geniş yüzeyli tasarlanır."
+      },
+      {
+        id: "f5-1-t10-09",
+        subject: "fen",
+        term: 1,
+        prompt: "Eğik düzlem üzerindeki özdeş bilyeler aynı yükseklikten serbest bırakılıyor. Bilyelerin yatay zeminde durana kadar aldıkları yollar (X1, X2, X3) arasındaki ilişki görseldeki gibidir. Buna göre hangi zemin en kaygandır?",
+        imageUrl: "/images/grade5/fen/test10/egik-duzlem-surtunme.webp",
+        options: ["Zemin 1", "Zemin 2", "Zemin 3", "Hepsi aynıdır"],
+        correct: 2,
+        explanation: "Cisim ne kadar uzağa giderse (X3 en uzun yol), o zemindeki sürtünme kuvveti o kadar azdır. En az sürtünme en kaygan yüzeyde (Zemin 3) olur."
+      },
+      {
+        id: "f5-1-t10-10",
+        subject: "fen",
+        term: 1,
+        prompt: "Görseldeki durumların hangisinde sürtünme kuvvetinin hayatımızı kolaylaştıran OLUMLU bir etkisi vardır?",
+        imageUrl: "/images/grade5/fen/test10/surtunme-olumlu-olumsuz.webp",
+        options: [
+          "Ayakkabımızın tabanının aşınması",
+          "Kapı menteşelerinin gıcırdaması",
+          "Fren yapınca arabanın durması",
+          "Makine parçalarının ısınması"
+        ],
+        correct: 2,
+        explanation: "Fren sistemleri sürtünme kuvveti sayesinde çalışır ve araçların güvenle durmasını sağlar. Diğerleri sürtünmenin olumsuz etkileridir."
+      },
+
+      // --- BÖLÜM 3: KARIŞIK YENİ NESİL SORULAR ---
+      {
+        id: "f5-1-t10-11",
+        subject: "fen",
+        term: 1,
+        prompt: "Ali, görseldeki gibi bir dinamometre tasarlamak istiyor. Hassas (küçük) kuvvetleri ölçebilmek için hangi yayı seçmelidir?",
+        imageUrl: "/images/grade5/fen/test10/yay-secimi.webp",
+        options: ["Kalın bakır yay", "İnce çelik yay", "Kalın çelik yay", "Çok sert ve kısa yay"],
+        correct: 1,
+        explanation: "Hassas ölçümler için küçük kuvvetlerde bile kolayca uzayabilen ince ve esnek yaylar tercih edilmelidir."
+      },
+      {
+        id: "f5-1-t10-12",
+        subject: "fen",
+        term: 1,
+        prompt: "Görseldeki paraşütçü sabit hızla aşağı doğru inmektedir. Bu durumda paraşütçüye etki eden kuvvetler için ne söylenebilir?",
+        imageUrl: "/images/grade5/fen/test10/parasutcu-kuvvetler.webp",
+        options: [
+          "Sadece yerçekimi kuvveti etki eder.",
+          "Hava direnci, yerçekiminden büyüktür.",
+          "Hava direnci ile toplam ağırlık birbirine eşittir.",
+          "Sadece hava direnci etki eder."
+        ],
+        correct: 2,
+        explanation: "Bir cisim sabit hızla hareket ediyorsa, üzerindeki net kuvvet sıfırdır. Yani aşağı yönlü ağırlık, yukarı yönlü hava direncine eşittir."
+      },
+      {
+        id: "f5-1-t10-13",
+        subject: "fen",
+        term: 1,
+        prompt: "Görseldeki K cismi, yatay zeminde F kuvveti ile çekilmesine rağmen hareket etmemektedir. Bu durumun sebebi nedir?",
+        imageUrl: "/images/grade5/fen/test10/hareketsiz-cisim.webp",
+        options: [
+          "Cismin ağırlığı yoktur.",
+          "Uygulanan F kuvveti, sürtünme kuvvetinden küçüktür.",
+          "Zemin çok kaygandır.",
+          "Kuvvet yanlış yönde uygulanmıştır."
+        ],
+        correct: 1,
+        explanation: "Cisim hareket etmiyorsa, uygulanan çekme kuvveti (F), cisim ile zemin arasındaki statik sürtünme kuvvetini yenememiş demektir."
+      },
+      {
+        id: "f5-1-t10-14",
+        subject: "fen",
+        term: 1,
+        prompt: "Aşağıdaki görsellerden hangisi 'Su Direnci'nin etkisini azaltmaya yönelik bir tasarımdır?",
+        imageUrl: "/images/grade5/fen/test10/su-direnci-tasarim.webp",
+        options: ["Geniş paletli dalgıç", "Kare şeklinde tekne", "Sivri burunlu gemi", "Paraşüt açan yüzücü"],
+        correct: 2,
+        explanation: "Gemilerin ve balıkların burun kısımlarının 'V' şeklinde sivri olması, su direncini azaltarak daha kolay ilerlemelerini sağlar."
+      },
+      {
+        id: "f5-1-t10-15",
+        subject: "fen",
+        term: 1,
+        prompt: "Görseldeki gibi kışın araba lastiklerine zincir takılmasının temel amacı nedir?",
+        imageUrl: "/images/grade5/fen/test10/kar-zinciri.webp",
+        options: [
+          "Arabayı daha ağırlaştırmak",
+          "Tekerleğin dönmesini zorlaştırmak",
+          "Yüzey pürüzlülüğünü artırarak sürtünmeyi artırmak",
+          "Hava direncini azaltmak"
+        ],
+        correct: 2,
+        explanation: "Karlı ve buzlu yollar çok kaygandır (sürtünme azdır). Zincir, yüzeyi pürüzlü hale getirerek sürtünmeyi artırır ve kaymayı önler."
+      },
+      {
+        id: "f5-1-t10-16",
+        subject: "fen",
+        term: 1,
+        prompt: "Bir dinamometrenin ucuna 10 N yük asıldığında yay 2 cm uzuyor. Aynı dinamometreye görseldeki gibi 30 N yük asılırsa yay kaç cm uzar? (Yayın esnekliği bozulmuyor)",
+        imageUrl: "/images/grade5/fen/test10/yay-uzama-hesap.webp",
+        options: ["4 cm", "6 cm", "8 cm", "10 cm"],
+        correct: 1,
+        explanation: "Kuvvet 3 katına çıktığı için (10 N -> 30 N), uzama miktarı da 3 katına çıkar: 2 cm $\\times$ 3 = 6 cm."
+      },
+      {
+        id: "f5-1-t10-17",
+        subject: "fen",
+        term: 1,
+        prompt: "Görseldeki buz patencisi rahatça kayabilmektedir. Eğer pist buz yerine beton olsaydı aynı rahatlıkta kayamazdı. Bu durumun temel nedeni iki yüzeyin hangi özelliğinin farklı olmasıdır?",
+        imageUrl: "/images/grade5/fen/test10/buz-pateni.webp",
+        options: ["Sıcaklıkları", "Pürüzlülükleri", "Renkleri", "Sertlikleri"],
+        correct: 1,
+        explanation: "Buz yüzey çok pürüzsüzdür ve sürtünme azdır. Beton yüzey ise pürüzlüdür ve sürtünme fazladır. Ana fark pürüzlülüktür."
+      },
+      {
+        id: "f5-1-t10-18",
+        subject: "fen",
+        term: 1,
+        prompt: "Görseldeki deneyde, aynı cisim önce tek başına, sonra üzerine bir ağırlık daha konularak çekiliyor. İkinci durumda dinamometrenin daha büyük değer göstermesinin sebebi nedir?",
+        imageUrl: "/images/grade5/fen/test10/agirlik-surtunme-iliskisi.webp",
+        options: [
+          "Yüzeyin cinsi değişmiştir.",
+          "Cismin temas yüzey alanı artmıştır.",
+          "Yüzeye etki eden dik kuvvet (ağırlık) artmıştır.",
+          "Dinamometre bozulmuştur."
+        ],
+        correct: 2,
+        explanation: "Sürtünme kuvveti, yüzeye bastıran dik kuvvete (toplam ağırlığa) bağlıdır. Ağırlık arttıkça sürtünme de artar."
+      },
+      {
+        id: "f5-1-t10-19",
+        subject: "fen",
+        term: 1,
+        prompt: "Görseldeki A ve B uçaklarından hangisinin tasarımı hava direncini EN AZA indirmeye yöneliktir?",
+        imageUrl: "/images/grade5/fen/test10/ucak-tasarimi.webp",
+        options: [
+          "Sadece A uçağı (Sivri burunlu jet)",
+          "Sadece B uçağı (Küt burunlu kargo uçağı)",
+          "Her ikisi de aynıdır.",
+          "Tasarımın hava direnciyle ilgisi yoktur."
+        ],
+        correct: 0,
+        explanation: "Hava direncini azaltmak için uçaklar, hızlı trenler ve spor arabalar 'aerodinamik' yani sivri burunlu ve pürüzsüz hatlara sahip olacak şekilde tasarlanır (A uçağı)."
+      },
+      {
+        id: "f5-1-t10-20",
+        subject: "fen",
+        term: 1,
+        prompt: "Kuvvetin birimi aşağıdakilerden hangisidir? (Görseldeki bilim insanından esinlenilmiştir)",
+        imageUrl: "/images/grade5/fen/test10/newton-portre.webp",
+        options: ["Kilogram (kg)", "Metre (m)", "Newton (N)", "Saniye (s)"],
+        correct: 2,
+        explanation: "Kuvvetin birimi, yerçekimi ve hareket üzerine çalışmalar yapan Isaac Newton'ın anısına 'Newton' olarak kabul edilmiştir ve 'N' ile gösterilir."
+      },
     ],
-    test2: [],
+  },
+  term2: {
+    test1: [], // Şimdilik boş
   },
 };
