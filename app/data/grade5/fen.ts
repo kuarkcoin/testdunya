@@ -2491,8 +2491,9 @@ export const fenData: SubjectData = {
     ]
 import { SubjectData } from "../types";
 
-export const fenTest10: SubjectData = {
+export const fenData: SubjectData = {
   term1: {
+    // ... Burada daha önceki testleriniz (test1, test2... test9) yer almalı
     test10: [
       // --- BÖLÜM 1: DİNAMOMETRELER VE KUVVET ÖLÇÜMÜ (GÖRSEL YORUMLAMA) ---
       {
@@ -2742,6 +2743,6 @@ export const fenTest10: SubjectData = {
     ],
   },
   term2: {
-    test1: [], // Şimdilik boş
+    test1: [],
   },
 };
