@@ -2049,451 +2049,200 @@ export const fenData: SubjectData = {
           "Ay'ın koruyucu atmosferi olmadığı için göktaşları hızla yüzeye çarparak kraterleri oluşturur.",
       },
     ],
-    test9: [ // Test 9 burada başlar (export const yazma!)
-  {
-    id: "f5-1-t9-01",
-    subject: "fen",
-    term: 1,
-    prompt: "Görselde verilen ve Ay'ın ana evrelerinden biri olan, Dünya'dan bakıldığında Ay'ın sol yarısının aydınlık göründüğü evre hangisidir?",
-    imageUrl: "/images/grade5/fen/ay-son-dordun.png",
-    options: ["Yeni Ay", "İlk Dördün", "Dolunay", "Son Dördün"],
-    correct: 3,
-    explanation: "Ay'ın 'D' harfinin tersi şeklinde göründüğü ve sol tarafının aydınlık olduğu ana evre Son Dördün evresidir."
-  },
-  {
-    id: "f5-1-t9-02",
-    subject: "fen",
-    term: 1,
-    prompt: "Görseldeki dinamometre 10 bölmelidir ve her bölmesi 2 Newton'u temsil etmektedir. Yayın 4 bölme uzadığı bu ölçümde cismin ağırlığı kaç Newton'dur?",
-    imageUrl: "/images/grade5/fen/dinamometre-sorusu.png",
-    options: ["4 N", "8 N", "10 N", "20 N"],
-    correct: 1,
-    explanation: "Her bölme 2 N ise, 4 bölme uzama $4 \times 2 = 8$ N değerini gösterir."
-  },
-  {
-    id: "f5-1-t9-03",
-    subject: "fen",
-    term: 1,
-    prompt: "Görselde mikroskop altında incelenen bu canlı, kamçısı sayesinde hareket edebilmektedir. Bu mikroskobik canlının adı nedir?",
-    imageUrl: "/images/grade5/fen/oglena.png",
-    options: ["Amip", "Öglena", "Paramesyum", "Bakteri"],
-    correct: 1,
-    explanation: "Kamçısı olan ve fotosentez yapabilen mikroskobik canlı Öglena'dır."
-  },
-  {
-    id: "f5-1-t9-04",
-    subject: "fen",
-    term: 1,
-    prompt: "Verilen şemada mantar türleri gruplandırılmıştır. '?' ile gösterilen ve besin olarak tükettiğimiz mantar türü hangisidir?",
-    imageUrl: "/images/grade5/fen/mantar-semasi.png",
-    options: ["Küf Mantarı", "Maya Mantarı", "Kültür Mantarı", "Parazit Mantar"],
-    correct: 2,
-    explanation: "Besin değeri yüksek olan ve insanlar tarafından tüketilen tür Kültür Mantarıdır."
-  },
-  {
-    id: "f5-1-t9-05",
-    subject: "fen",
-    term: 1,
-    prompt: "Görseldeki bitki kısımlarından hangisi topraktan su ve mineralleri emmekle görevlidir?",
-    imageUrl: "/images/grade5/fen/bitki-bolumleri.png",
-    options: ["Yaprak", "Gövde", "Çiçek", "Kök"],
-    correct: 3,
-    explanation: "Kökler bitkiyi toprağa bağlar ve su ihtiyacını karşılar."
-  },
-  {
-    id: "f5-1-t9-06",
-    subject: "fen",
-    term: 1,
-    prompt: "Güneş, Dünya ve Ay'ın büyüklüklerini temsil eden bu modellerden hangisi Güneş'i temsil eder?",
-    imageUrl: "/images/grade5/fen/gunes-dunya-ay-model.png",
-    options: ["Pinpon Topu", "Bezelye Tanesi", "Basketbol Topu", "Misket"],
-    correct: 2,
-    explanation: "Güneş sistemdeki en büyük yapıdır, basketbol topu ile temsil edilmesi en mantıklısıdır."
-  },
-  {
-    id: "f5-1-t9-07",
-    subject: "fen",
-    term: 1,
-    prompt: "Görselde verilen omurgalı hayvanlardan hangisi, suda yaşamasına rağmen memeliler grubunda yer alır?",
-    imageUrl: "/images/grade5/fen/su-canlilari.png",
-    options: ["Sazan Balığı", "Yunus", "Köpek Balığı", "Deniz Anası"],
-    correct: 1,
-    explanation: "Yunuslar ve balinalar suda yaşar ancak doğurarak çoğalan memeli canlılardır."
-  },
-  {
-    id: "f5-1-t9-08",
-    subject: "fen",
-    term: 1,
-    prompt: "Görseldeki düzenekte araba farklı yüzeylerde (buz ve asfalt) bırakılıyor. Asfalt yüzeyde arabanın daha yavaş gitmesinin temel sebebi nedir?",
-    imageUrl: "/images/grade5/fen/surtunme-deneyi.png",
-    options: ["Yerçekimi", "Sürtünme Kuvveti", "Hava Direnci", "Arabanın Ağırlığı"],
-    correct: 1,
-    explanation: "Pürüzlü yüzeylerde sürtünme kuvveti daha fazladır ve hareketi zorlaştırır."
-  },
-  {
-    id: "f5-1-t9-09",
-    subject: "fen",
-    term: 1,
-    prompt: "Ay'ın yüzeyinde görülen bu koyu renkli, geniş düzlüklere ne ad verilir?",
-    imageUrl: "/images/grade5/fen/ay-denizleri.png",
-    options: ["Krater", "Ay Dağı", "Ay Denizi", "Meteor"],
-    correct: 2,
-    explanation: "Ay'ın yüzeyindeki koyu lekeler bazaltik ovalardır ve Ay Denizi olarak adlandırılır."
-  },
-  {
-    id: "f5-1-t9-10",
-    subject: "fen",
-    term: 1,
-    prompt: "Hangi mikroskobik canlı görseldeki peynirin ve yoğurdun mayalanmasını sağlamıştır?",
-    imageUrl: "/images/grade5/fen/sut-urunleri.png",
-    options: ["Zararlı Bakteriler", "Yararlı Bakteriler", "Mantarlar", "Virüsler"],
-    correct: 1,
-    explanation: "Sütün yoğurda dönüşmesini sağlayanlar yararlı bakterilerdir."
-  },
-
-  // --- METİN ODAKLI ZORLAYICI SORULAR ---
-  {
-    id: "f5-1-t9-11",
-    subject: "fen",
-    term: 1,
-    prompt: "Dünya'dan bakıldığında Ay'ın hep aynı yüzünün görülmesinin temel sebebi aşağıdakilerden hangisidir?",
-    options: [
-      "Ay'ın ışık kaynağı olmaması",
-      "Ay'ın atmosferinin çok ince olması",
-      "Ay'ın kendi etrafındaki ve Dünya etrafındaki dönme sürelerinin eşit olması",
-      "Dünya'nın Ay'dan daha büyük olması"
-    ],
-    correct: 2,
-    explanation: "Ay'ın her iki hareketi de yaklaşık 27,3 gün sürdüğü için hep aynı yüzünü görürüz."
-  },
-  {
-    id: "f5-1-t9-12",
-    subject: "fen",
-    term: 1,
-    prompt: "Aşağıdaki canlı eşleştirmelerinden hangisi 'yavru bakımı' açısından diğerlerinden farklıdır?",
-    options: ["Tavuk - Kuş", "Aslan - Memeli", "Yılan - Sürüngen", "Balina - Memeli"],
-    correct: 2,
-    explanation: "Sürüngenlerde (yılan) yavru bakımı yoktur, memeliler ve kuşlarda ise vardır."
-  },
-  {
-    id: "f5-1-t9-13",
-    subject: "fen",
-    term: 1,
-    prompt: "Mantarlar hakkında verilen bilgilerden hangisi yanlıştır?",
-    options: [
-      "Kendi besinlerini üretebilirler.",
-      "Bazı türleri hastalıklara neden olur.",
-      "Besinlerini dışarıdan hazır alırlar.",
-      "Bazı türleri gözle görülmeyecek kadar küçüktür."
-    ],
-    correct: 0,
-    explanation: "Mantarlar bitki değildir, klorofilleri yoktur ve kendi besinlerini üretemezler."
-  },
-  {
-    id: "f5-1-t9-14",
-    subject: "fen",
-    term: 1,
-    prompt: "Güneş'in yapısında en fazla bulunan gaz hangisidir?",
-    options: ["Oksijen", "Karbondioksit", "Hidrojen", "Azot"],
-    correct: 2,
-    explanation: "Güneş'in yaklaşık %71'i hidrojendir."
-  },
-  {
-    id: "f5-1-t9-15",
-    subject: "fen",
-    term: 1,
-    prompt: "Dinamometreler ile ilgili aşağıdakilerden hangisi doğrudur?",
-    options: [
-      "Sadece sıvıların ağırlığını ölçer.",
-      "İçindeki yayın esneklik özelliğinden yararlanılır.",
-      "Her dinamometre ile her ağırlık ölçülebilir.",
-      "Sürtünmeyi azaltmak için kullanılır."
-    ],
-    correct: 1,
-    explanation: "Dinamometreler yayların esneme prensibiyle kuvvet ölçer."
-  },
-  {
-    id: "f5-1-t9-16",
-    subject: "fen",
-    term: 1,
-    prompt: "Çiçeksiz bitkiler ile ilgili hangisi söylenemez?",
-    options: [
-      "Tohum ve meyve oluşturmazlar.",
-      "Basit yapılı bitkilerdir.",
-      "Eğrelti otu ve karayosunu örnektir.",
-      "Sadece karada yaşarlar."
-    ],
-    correct: 3,
-    explanation: "Çiçeksiz bitkilerin (su yosunu gibi) suda yaşayan türleri de vardır."
-  },
-  {
-    id: "f5-1-t9-17",
-    subject: "fen",
-    term: 1,
-    prompt: "Sürtünme kuvvetini artırmak için aşağıdakilerden hangisi yapılmalıdır?",
-    options: [
-      "Makine parçalarının yağlanması",
-      "Kışın araba lastiklerine zincir takılması",
-      "Kapı menteşelerinin yağlanması",
-      "Gemilerin ön kısımlarının 'V' şeklinde yapılması"
-    ],
-    correct: 1,
-    explanation: "Zincir takmak yüzeyi pürüzlendirerek sürtünmeyi artırır ve kaymayı önler."
-  },
-  {
-    id: "f5-1-t9-18",
-    subject: "fen",
-    term: 1,
-    prompt: "Mikroskobik canlıların zararları arasında hangisi yer almaz?",
-    options: [
-      "Sütün yoğurda dönüşmesi",
-      "Besinlerin bozulup çürümesi",
-      "Verem, kolera gibi hastalıklar",
-      "Dişlerin çürümesi"
-    ],
-    correct: 0,
-    explanation: "Yoğurt oluşumu yararlı bakterilerin sağladığı faydalı bir işlemdir."
-  },
-  {
-    id: "f5-1-t9-19",
-    subject: "fen",
-    term: 1,
-    prompt: "Güneş'in kendi etrafındaki bir tam turu yaklaşık ne kadar sürer?",
-    options: ["24 saat", "25 gün", "27 gün", "365 gün"],
-    correct: 1,
-    explanation: "Güneş kendi ekseni etrafında yaklaşık 25 Dünya gününde döner."
-  },
-  {
-    id: "f5-1-t9-20",
-    subject: "fen",
-    term: 1,
-    prompt: "Aşağıdaki canlılardan hangisinin vücut yapısı 'omurgasızlar' sınıfına örnektir?",
-    options: ["Yarasa", "Kelebek", "Kurbağa", "Kertenkele"],
-    correct: 1,
-    explanation: "Kelebek, iç iskeleti bulunmayan omurgasız bir hayvandır."
-  },
-],
-  }, // <--- BU PARANTEZ KRİTİK! term1 objesini kapatır. 
-  term2: {
-    test1: [
+    test9: [
       {
-        id: "f5-2-06",
+        id: "f5-1-t9-01",
         subject: "fen",
-        term: 2,
-        prompt: "Sürtünme kuvvetini azaltmak için hangisi yapılır?",
-        options: [
-          "Yüzeyi pürüzlü yapmak",
-          "Yağlama yapmak",
-          "Ağırlığı artırmak",
-          "Kum dökmek",
-        ],
+        term: 1,
+        prompt: "Görselde verilen ve Ay'ın ana evrelerinden biri olan, Dünya'dan bakıldığında Ay'ın sol yarısının aydınlık göründüğü evre hangisidir?",
+        imageUrl: "/images/grade5/fen/ay-son-dordun.png",
+        options: ["Yeni Ay", "İlk Dördün", "Dolunay", "Son Dördün"],
+        correct: 3,
+        explanation: "Ay'ın 'D' harfinin tersi şeklinde göründüğü ve sol tarafının aydınlık olduğu ana evre Son Dördün evresidir."
+      },
+      {
+        id: "f5-1-t9-02",
+        subject: "fen",
+        term: 1,
+        prompt: "Görseldeki dinamometre 10 bölmelidir ve her bölmesi 2 Newton'u temsil etmektedir. Yayın 4 bölme uzadığı bu ölçümde cismin ağırlığı kaç Newton'dur?",
+        imageUrl: "/images/grade5/fen/dinamometre-sorusu.png",
+        options: ["4 N", "8 N", "10 N", "20 N"],
         correct: 1,
-        explanation: "Yağlama azaltır.",
+        explanation: "Her bölme 2 N ise, 4 bölme uzama $4 \\times 2 = 8$ N değerini gösterir."
       },
       {
-        id: "f5-2-07",
+        id: "f5-1-t9-03",
         subject: "fen",
-        term: 2,
-        prompt: "Maddenin ısı alarak sıvı halden gaz hale geçmesine ne denir?",
-        options: ["Donma", "Erime", "Buharlaşma", "Yoğuşma"],
-        correct: 2,
-        explanation: "Buharlaşmadır.",
-      },
-      {
-        id: "f5-2-08",
-        subject: "fen",
-        term: 2,
-        prompt: "Hangisi bir ısı kaynağıdır?",
-        options: ["Ay", "Güneş", "Ayna", "Bulut"],
+        term: 1,
+        prompt: "Görselde mikroskop altında incelenen bu canlı, kamçısı sayesinde hareket edebilmektedir. Bu mikroskobik canlının adı nedir?",
+        imageUrl: "/images/grade5/fen/oglena.png",
+        options: ["Amip", "Öglena", "Paramesyum", "Bakteri"],
         correct: 1,
-        explanation: "Güneş en büyük kaynaktır.",
+        explanation: "Kamçısı olan ve fotosentez yapabilen mikroskobik canlı Öglena'dır."
       },
       {
-        id: "f5-2-09",
+        id: "f5-1-t9-04",
         subject: "fen",
-        term: 2,
-        prompt: "Işık nasıl yayılır?",
-        options: ["Eğrisel", "Dairesel", "Doğrusal", "Sadece aşağı doğru"],
+        term: 1,
+        prompt: "Verilen şemada mantar türleri gruplandırılmıştır. '?' ile gösterilen ve besin olarak tükettiğimiz mantar türü hangisidir?",
+        imageUrl: "/images/grade5/fen/mantar-semasi.png",
+        options: ["Küf Mantarı", "Maya Mantarı", "Kültür Mantarı", "Parazit Mantar"],
         correct: 2,
-        explanation: "Işık doğrusal yayılır.",
+        explanation: "Besin değeri yüksek olan ve insanlar tarafından tüketilen tür Kültür Mantarıdır."
       },
       {
-        id: "f5-2-10",
+        id: "f5-1-t9-05",
         subject: "fen",
-        term: 2,
-        prompt: "Gölge oluşumu için ne gereklidir?",
-        options: ["Saydam madde", "Opak madde", "Su", "Ayna"],
+        term: 1,
+        prompt: "Görseldeki bitki kısımlarından hangisi topraktan su ve mineralleri emmekle görevlidir?",
+        imageUrl: "/images/grade5/fen/bitki-bolumleri.png",
+        options: ["Yaprak", "Gövde", "Çiçek", "Kök"],
+        correct: 3,
+        explanation: "Kökler bitkiyi toprağa bağlar ve su ihtiyacını karşılar."
+      },
+      {
+        id: "f5-1-t9-06",
+        subject: "fen",
+        term: 1,
+        prompt: "Güneş, Dünya ve Ay'ın büyüklüklerini temsil eden bu modellerden hangisi Güneş'i temsil eder?",
+        imageUrl: "/images/grade5/fen/gunes-dunya-ay-model.png",
+        options: ["Pinpon Topu", "Bezelye Tanesi", "Basketbol Topu", "Misket"],
+        correct: 2,
+        explanation: "Güneş sistemdeki en büyük yapıdır, basketbol topu ile temsil edilmesi en mantıklısıdır."
+      },
+      {
+        id: "f5-1-t9-07",
+        subject: "fen",
+        term: 1,
+        prompt: "Görselde verilen omurgalı hayvanlardan hangisi, suda yaşamasına rağmen memeliler grubunda yer alır?",
+        imageUrl: "/images/grade5/fen/su-canlilari.png",
+        options: ["Sazan Balığı", "Yunus", "Köpek Balığı", "Deniz Anası"],
         correct: 1,
-        explanation: "Opak madde engeller.",
+        explanation: "Yunuslar ve balinalar suda yaşar ancak doğurarak çoğalan memeli canlılardır."
       },
       {
-        id: "f5-2-12",
+        id: "f5-1-t9-08",
         subject: "fen",
-        term: 2,
-        prompt: "Hangisi biyoçeşitliliği tehdit eden bir durumdur?",
-        options: [
-          "Ağaç dikmek",
-          "Av yasağı",
-          "Çevre kirliliği",
-          "Milli parklar",
-        ],
-        correct: 2,
-        explanation: "Kirlilik tehdit eder.",
-      },
-      {
-        id: "f5-2-13",
-        subject: "fen",
-        term: 2,
-        prompt: "Isı ve sıcaklık ile ilgili hangisi yanlıştır?",
-        options: [
-          "Isı bir enerjidir.",
-          "Sıcaklık termometre ile ölçülür.",
-          "Isı birimi derecedir.",
-          "Isı akışı sıcaktan soğuğa doğrudur.",
-        ],
-        correct: 2,
-        explanation: "Isı birimi Kalori veya Joule'dur.",
-      },
-      {
-        id: "f5-2-15",
-        subject: "fen",
-        term: 2,
-        prompt: "Güneş tutulması sırasında hangisi ortada bulunur?",
-        options: ["Dünya", "Ay", "Güneş", "Yıldızlar"],
+        term: 1,
+        prompt: "Görseldeki düzenekte araba farklı yüzeylerde (buz ve asfalt) bırakılıyor. Asfalt yüzeyde arabanın daha yavaş gitmesinin temel sebebi nedir?",
+        imageUrl: "/images/grade5/fen/surtunme-deneyi.png",
+        options: ["Yerçekimi", "Sürtünme Kuvveti", "Hava Direnci", "Arabanın Ağırlığı"],
         correct: 1,
-        explanation: "Ay araya girer.",
+        explanation: "Pürüzlü yüzeylerde sürtünme kuvveti daha fazladır ve hareketi zorlaştırır."
       },
       {
-        id: "f5-2-16",
+        id: "f5-1-t9-09",
         subject: "fen",
-        term: 2,
-        prompt: "Aşağıdakilerden hangisi yapay bir ışık kaynağıdır?",
-        options: ["Yıldız", "Şimşek", "Mum", "Ateş böceği"],
+        term: 1,
+        prompt: "Ay'ın yüzeyinde görülen bu koyu renkli, geniş düzlüklere ne ad verilir?",
+        imageUrl: "/images/grade5/fen/ay-denizleri.png",
+        options: ["Krater", "Ay Dağı", "Ay Denizi", "Meteor"],
         correct: 2,
-        explanation: "Mum yapaydır.",
+        explanation: "Ay'ın yüzeyindeki koyu lekeler bazaltik ovalardır ve Ay Denizi olarak adlandırılır."
       },
       {
-        id: "f5-zn-12",
+        id: "f5-1-t9-10",
         subject: "fen",
-        term: 2,
-        prompt: "Aşağıdakilerden hangisi opak bir maddedir?",
-        options: ["Cam", "Su", "Tahta", "Hava"],
-        correct: 2,
-        explanation: "Tahta opaktır.",
-      },
-      {
-        id: "f5-zn-14",
-        subject: "fen",
-        term: 2,
-        prompt:
-          "Sıvı bir maddenin ısı kaybederek katı hale geçmesine ne denir?",
-        options: ["Erime", "Donma", "Yoğuşma", "Süblimleşme"],
+        term: 1,
+        prompt: "Hangi mikroskobik canlı görseldeki peynirin ve yoğurdun mayalanmasını sağlamıştır?",
+        imageUrl: "/images/grade5/fen/sut-urunleri.png",
+        options: ["Zararlı Bakteriler", "Yararlı Bakteriler", "Mantarlar", "Virüsler"],
         correct: 1,
-        explanation: "Donmadır.",
+        explanation: "Sütün yoğurda dönüşmesini sağlayanlar yararlı bakterilerdir."
       },
       {
-        id: "f5-zn-16",
+        id: "f5-1-t9-11",
         subject: "fen",
-        term: 2,
-        prompt: "Aşağıdakilerden hangisi bir 'ısı' birimidir?",
-        options: ["Derece", "Gram", "Joule", "Metre"],
+        term: 1,
+        prompt: "Dünya'dan bakıldığında Ay'ın hep aynı yüzünün görülmesinin temel sebebi aşağıdakilerden hangisidir?",
+        options: ["Ay'ın ışık kaynağı olmaması", "Ay'ın atmosferinin çok ince olması", "Ay'ın kendi etrafındaki ve Dünya etrafındaki dönme sürelerinin eşit olması", "Dünya'nın Ay'dan daha büyük olması"],
         correct: 2,
-        explanation: "Joule ısı birimidir.",
+        explanation: "Ay'ın her iki hareketi de yaklaşık 27,3 gün sürdüğü için hep aynı yüzünü görürüz."
       },
       {
-        id: "f5-zn-18",
+        id: "f5-1-t9-12",
         subject: "fen",
-        term: 2,
-        prompt: "Sürtünme kuvveti ile ilgili hangisi doğrudur?",
-        options: [
-          "Hareketi kolaylaştırır.",
-          "Sadece sıvılarda olur.",
-          "Harekete zıt yöndedir.",
-          "Yüzey pürüzsüzleştikçe artar.",
-        ],
+        term: 1,
+        prompt: "Aşağıdaki canlı eşleştirmelerinden hangisi 'yavru bakımı' açısından diğerlerinden farklıdır?",
+        options: ["Tavuk - Kuş", "Aslan - Memeli", "Yılan - Sürüngen", "Balina - Memeli"],
         correct: 2,
-        explanation: "Harekete zıt yöndedir.",
+        explanation: "Sürüngenlerde (yılan) yavru bakımı yoktur, memeliler ve kuşlarda ise vardır."
       },
       {
-        id: "f5-zn-20",
+        id: "f5-1-t9-13",
         subject: "fen",
-        term: 2,
-        prompt: "Işığın bir yüzeye çarpıp geri dönmesine ne denir?",
-        options: ["Kırılma", "Yansıma", "Soğurulma", "Yayılma"],
-        correct: 1,
-        explanation: "Yansımadır.",
-      },
-      {
-        id: "f5-hard-nv-02",
-        subject: "fen",
-        term: 2,
-        prompt:
-          "Isıca yalıtılmış bir ortamda, 80 °C'deki bir demir bilye, 20 °C'deki bir miktar suyun içine atılıyor. Isı alışverişi tamamlandığında aşağıdakilerden hangisi 'kesinlikle' gerçekleşmez?",
-        options: [
-          "Demirin sıcaklığı düşer.",
-          "Suyun sıcaklığı artar.",
-          "Suyun son sıcaklığı 90 °C olur.",
-          "Isı akışı demirden suya doğru olur.",
-        ],
-        correct: 2,
-        explanation: "Son sıcaklık iki değer arasında olmalıdır.",
-      },
-      {
-        id: "f5-hard-nv-03",
-        subject: "fen",
-        term: 2,
-        prompt:
-          "Farklı yüzeylerde bir topun durma süreleri ölçülüyor: Camda 10 sn, Halıda 3 sn, Buzda 15 sn. Bu verilere göre sürtünme kuvvetinin en az ve en çok olduğu yüzeyler hangisidir?",
-        options: ["Buz - Halı", "Cam - Halı", "Halı - Buz", "Buz - Cam"],
+        term: 1,
+        prompt: "Mantarlar hakkında verilen bilgilerden hangisi yanlıştır?",
+        options: ["Kendi besinlerini üretebilirler.", "Bazı türleri hastalıklara neden olur.", "Besinlerini dışarıdan hazır alırlar.", "Bazı türleri gözle görülmeyecek kadar küçüktür."],
         correct: 0,
-        explanation: "En geç duran buz (en az), en erken duran halı (en çok).",
+        explanation: "Mantarlar bitki değildir ve kendi besinlerini üretemezler."
       },
       {
-        id: "f5-adv-01",
+        id: "f5-1-t9-14",
         subject: "fen",
-        term: 2,
-        prompt:
-          "Bir öğrenci özdeş iki bilyeyi aynı yükseklikten biri cam zemin, diğeri halı zemin üzerine bırakıyor. Cam zemindeki bilyenin daha uzağa gittiğini gözlemliyor. Bu deneyin 'bağımlı değişkeni' hangisidir?",
-        options: [
-          "Zemin türü",
-          "Bilyenin kütlesi",
-          "Gidilen mesafe",
-          "Bırakılan yükseklik",
-        ],
+        term: 1,
+        prompt: "Güneş'in yapısında en fazla bulunan gaz hangisidir?",
+        options: ["Oksijen", "Karbondioksit", "Hidrojen", "Azot"],
         correct: 2,
-        explanation: "Sonuç olan gidilen mesafedir.",
+        explanation: "Güneş'in yaklaşık %71'i hidrojendir."
       },
       {
-        id: "f5-adv-03",
+        id: "f5-1-t9-15",
         subject: "fen",
-        term: 2,
-        prompt:
-          "Bir kapta bulunan buza sürekli ısı veriliyor. Buzun tamamen erimesi sırasında termometredeki değer için ne söylenebilir?",
-        options: [
-          "Sürekli artar.",
-          "Sürekli azalır.",
-          "Hal değişimi bitene kadar sabit kalır.",
-          "Önce artar sonra sabit kalır.",
-        ],
-        correct: 2,
-        explanation: "Hal değişimi sırasında sıcaklık sabittir.",
-      },
-      {
-        id: "f5-adv-05",
-        subject: "fen",
-        term: 2,
-        prompt:
-          "Bir dinamometreye 50 N ağırlığında bir cisim asıldığında yay 10 cm uzuyor. Aynı dinamometreye 15 N ağırlığında bir cisim asılırsa yay kaç cm uzar?",
-        options: ["2", "3", "5", "6"],
+        term: 1,
+        prompt: "Dinamometreler ile ilgili aşağıdakilerden hangisi doğrudur?",
+        options: ["Sadece sıvıların ağırlığını ölçer.", "İçindeki yayın esneklik özelliğinden yararlanılır.", "Her dinamometre ile her ağırlık ölçülebilir.", "Sürtünmeyi azaltmak için kullanılır."],
         correct: 1,
-        explanation: "Her 5N için 1cm uzar.",
+        explanation: "Dinamometreler yayların esneme prensibiyle kuvvet ölçer."
       },
-    ]
+      {
+        id: "f5-1-t9-16",
+        subject: "fen",
+        term: 1,
+        prompt: "Çiçeksiz bitkiler ile ilgili hangisi söylenemez?",
+        options: ["Tohum ve meyve oluşturmazlar.", "Basit yapılı bitkilerdir.", "Eğrelti otu ve karayosunu örnektir.", "Sadece karada yaşarlar."],
+        correct: 3,
+        explanation: "Çiçeksiz bitkilerin suda yaşayan (su yosunu) türleri de vardır."
+      },
+      {
+        id: "f5-1-t9-17",
+        subject: "fen",
+        term: 1,
+        prompt: "Sürtünme kuvvetini artırmak için aşağıdakilerden hangisi yapılmalıdır?",
+        options: ["Makine parçalarının yağlanması", "Kışın araba lastiklerine zincir takılması", "Kapı menteşelerinin yağlanması", "Gemilerin ön kısımlarının 'V' şeklinde yapılması"],
+        correct: 1,
+        explanation: "Zincir takmak pürüzlülüğü artırarak sürtünmeyi artırır."
+      },
+      {
+        id: "f5-1-t9-18",
+        subject: "fen",
+        term: 1,
+        prompt: "Mikroskobik canlıların zararları arasında hangisi yer almaz?",
+        options: ["Sütün yoğurda dönüşmesi", "Besinlerin bozulup çürümesi", "Verem, kolera gibi hastalıklar", "Dişlerin çürümesi"],
+        correct: 0,
+        explanation: "Yoğurt oluşumu yararlı bakterilerce sağlanır."
+      },
+      {
+        id: "f5-1-t9-19",
+        subject: "fen",
+        term: 1,
+        prompt: "Güneş'in kendi etrafındaki bir tam turu yaklaşık ne kadar sürer?",
+        options: ["24 saat", "25 gün", "27 gün", "365 gün"],
+        correct: 1,
+        explanation: "Güneş kendi ekseni etrafında yaklaşık 25 günde döner."
+      },
+      {
+        id: "f5-1-t9-20",
+        subject: "fen",
+        term: 1,
+        prompt: "Aşağıdaki canlılardan hangisinin vücut yapısı 'omurgasızlar' sınıfına örnektir?",
+        options: ["Yarasa", "Kelebek", "Kurbağa", "Kertenkele"],
+        correct: 1,
+        explanation: "Kelebeğin iç iskeleti (omurgası) yoktur."
+      }
+    ],
 
-  term1: {
-    // ... Burada daha önceki testleriniz (test1, test2... test9) yer almalı
     test10: [
-      // --- BÖLÜM 1: DİNAMOMETRELER VE KUVVET ÖLÇÜMÜ (GÖRSEL YORUMLAMA) ---
       {
         id: "f5-1-t10-01",
         subject: "fen",
@@ -2502,7 +2251,7 @@ export const fenData: SubjectData = {
         imageUrl: "/images/grade5/fen/test10/dinamometre-kiyas.webp",
         options: ["K > L > M", "M > L > K", "L > K > M", "K = L = M"],
         correct: 1,
-        explanation: "Dinamometre yayındaki uzama miktarı, asılan cismin ağırlığı ile doğru orantılıdır. En çok uzayan M en ağır, en az uzayan K en hafiftir."
+        explanation: "Dinamometre yayındaki uzama miktarı ağırlıkla doğru orantılıdır."
       },
       {
         id: "f5-1-t10-02",
@@ -2512,7 +2261,7 @@ export const fenData: SubjectData = {
         imageUrl: "/images/grade5/fen/test10/dinamometre-okuma-5n.webp",
         options: ["10 N", "15 N", "20 N", "25 N"],
         correct: 2,
-        explanation: "Gösterge 4. bölmeyi göstermektedir. Her bölme 5 N olduğuna göre: 4 $\\times$ 5 N = 20 N."
+        explanation: "4. bölmede olduğu için: $4 \\times 5 = 20$ N."
       },
       {
         id: "f5-1-t10-03",
@@ -2520,14 +2269,9 @@ export const fenData: SubjectData = {
         term: 1,
         prompt: "Görselde verilen K ve L dinamometreleri için hangisi kesinlikle söylenebilir?",
         imageUrl: "/images/grade5/fen/test10/farkli-yaylar.webp",
-        options: [
-          "L dinamometresi daha büyük kuvvetleri ölçebilir.",
-          "K dinamometresinin yayı daha incedir.",
-          "Aynı ağırlık asılırsa L daha fazla uzar.",
-          "K dinamometresi daha hassas ölçüm yapar."
-        ],
+        options: ["L dinamometresi daha büyük kuvvetleri ölçebilir.", "K dinamometresinin yayı daha incedir.", "Aynı ağırlık asılırsa L daha fazla uzar.", "K dinamometresi daha hassas ölçüm yapar."],
         correct: 3,
-        explanation: "K dinamometresinin bölmeleri daha sık (birbirine yakın) çizilmiştir. Bu, onun daha küçük ağırlık değişimlerini, yani daha hassas ölçümleri yapabildiğini gösterir."
+        explanation: "Bölmeleri sık olan (K), daha küçük farkları ölçebilir."
       },
       {
         id: "f5-1-t10-04",
@@ -2537,7 +2281,7 @@ export const fenData: SubjectData = {
         imageUrl: "/images/grade5/fen/test10/dinamometre-sinir.webp",
         options: ["25 N ağırlığındaki çanta", "45 N ağırlığındaki koli", "60 N ağırlığındaki çocuk", "5 N ağırlığındaki elma"],
         correct: 2,
-        explanation: "Dinamometrenin ölçüm sınırı 50 N'dur. 60 N bu sınırı aştığı için yayın esneklik özelliği bozulur ve ölçüm yapılamaz."
+        explanation: "60 N, dinamometrenin 50 N'luk sınırını aşar."
       },
       {
         id: "f5-1-t10-05",
@@ -2547,10 +2291,8 @@ export const fenData: SubjectData = {
         imageUrl: "/images/grade5/fen/test10/bagimli-degisken-yay.webp",
         options: ["Asılan ağırlık miktarı", "Yayların cinsi", "Yayın uzama miktarı", "Dinamometrenin rengi"],
         correct: 2,
-        explanation: "Bağımlı değişken, bizim değiştirdiğimiz etkene (ağırlık) bağlı olarak sonuçta değişen durumdur. Burada ağırlığa bağlı olarak 'yayın uzama miktarı' değişmektedir."
+        explanation: "Ağırlığa göre değişen sonuç (uzama miktarı) bağımlı değişkendir."
       },
-
-      // --- BÖLÜM 2: SÜRTÜNME KUVVETİ (ZORLAYICI ANALİZ) ---
       {
         id: "f5-1-t10-06",
         subject: "fen",
@@ -2559,188 +2301,324 @@ export const fenData: SubjectData = {
         imageUrl: "/images/grade5/fen/test10/surtunme-yuzey-kiyas.webp",
         options: ["Cam > Tahta > Zımpara", "Zımpara > Tahta > Cam", "Tahta > Zımpara > Cam", "Cam > Zımpara > Tahta"],
         correct: 1,
-        explanation: "Dinamometrede okunan değer ne kadar büyükse, sürtünme kuvveti o kadar fazladır. Sürtünme en çok zımparada, en az camda olur (D1 > D2 > D3)."
+        explanation: "Kuvvet ne kadar fazlaysa sürtünme o kadar çoktur (Zımpara > Tahta > Cam)."
       },
       {
         id: "f5-1-t10-07",
         subject: "fen",
         term: 1,
-        prompt: "Görseldeki öğrenci, ağır bir kutuyu itmekte zorlanmaktadır. Kutunun daha kolay hareket etmesi için aşağıdakilerden hangisi YAPILMAMALIDIR?",
+        prompt: "Görseldeki öğrenci, ağır bir kutuyu itmekte zorlanmaktadır. Kutunun daha kolay hareket etmesi için hangisi YAPILMAMALIDIR?",
         imageUrl: "/images/grade5/fen/test10/kutu-itme.webp",
-        options: [
-          "Zemin ile kutu arasına yağ sürmek",
-          "Kutunun altına tekerlek takmak",
-          "Kutunun üzerine bir koli daha koymak",
-          "Zemini cilalamak"
-        ],
+        options: ["Zemin ile kutu arasına yağ sürmek", "Kutunun altına tekerlek takmak", "Kutunun üzerine bir koli daha koymak", "Zemini cilalamak"],
         correct: 2,
-        explanation: "Kutunun üzerine ağırlık eklemek, yüzeye etki eden dik kuvveti artırır. Bu da sürtünme kuvvetinin artmasına ve kutunun daha zor itilmesine neden olur."
+        explanation: "Ağırlık eklemek sürtünmeyi artırır ve hareketi zorlaştırır."
       },
       {
         id: "f5-1-t10-08",
         subject: "fen",
         term: 1,
-        prompt: "Görseldeki araçların tasarımlarında sürtünme kuvvetinin (hava veya su direnci) etkisi düşünülmüştür. Hangi araçta amaç sürtünmeyi ARTIRMAKTIR?",
+        prompt: "Görseldeki araçların tasarımlarında sürtünme kuvvetinin etkisi düşünülmüştür. Hangi araçta amaç sürtünmeyi ARTIRMAKTIR?",
         imageUrl: "/images/grade5/fen/test10/surtunme-artirma-azaltma.webp",
         options: ["Yarış arabası", "Paraşüt", "Hızlı tren", "Denizaltı"],
         correct: 1,
-        explanation: "Yarış arabası, hızlı tren ve denizaltı hava/su direncini azaltmak için sivri burunlu tasarlanır. Paraşüt ise hava direncini ARTIRARAK güvenli iniş sağlamak için geniş yüzeyli tasarlanır."
+        explanation: "Paraşüt, hava direncini artırarak hızı yavaşlatır."
       },
       {
         id: "f5-1-t10-09",
         subject: "fen",
         term: 1,
-        prompt: "Eğik düzlem üzerindeki özdeş bilyeler aynı yükseklikten serbest bırakılıyor. Bilyelerin yatay zeminde durana kadar aldıkları yollar (X1, X2, X3) arasındaki ilişki görseldeki gibidir. Buna göre hangi zemin en kaygandır?",
+        prompt: "Eğik düzlem üzerindeki özdeş bilyeler aynı yükseklikten serbest bırakılıyor. Alınan yollar X1, X2, X3 olduğuna göre hangi zemin en kaygandır?",
         imageUrl: "/images/grade5/fen/test10/egik-duzlem-surtunme.webp",
         options: ["Zemin 1", "Zemin 2", "Zemin 3", "Hepsi aynıdır"],
         correct: 2,
-        explanation: "Cisim ne kadar uzağa giderse (X3 en uzun yol), o zemindeki sürtünme kuvveti o kadar azdır. En az sürtünme en kaygan yüzeyde (Zemin 3) olur."
+        explanation: "Yolun en uzun olduğu zemin (Zemin 3) en az sürtünmelidir."
       },
       {
         id: "f5-1-t10-10",
         subject: "fen",
         term: 1,
-        prompt: "Görseldeki durumların hangisinde sürtünme kuvvetinin hayatımızı kolaylaştıran OLUMLU bir etkisi vardır?",
+        prompt: "Hangi durumda sürtünme kuvvetinin hayatımızı kolaylaştıran OLUMLU bir etkisi vardır?",
         imageUrl: "/images/grade5/fen/test10/surtunme-olumlu-olumsuz.webp",
-        options: [
-          "Ayakkabımızın tabanının aşınması",
-          "Kapı menteşelerinin gıcırdaması",
-          "Fren yapınca arabanın durması",
-          "Makine parçalarının ısınması"
-        ],
+        options: ["Ayakkabının aşınması", "Menteşenin gıcırdaması", "Fren yapınca durması", "Makine parçalarının ısınması"],
         correct: 2,
-        explanation: "Fren sistemleri sürtünme kuvveti sayesinde çalışır ve araçların güvenle durmasını sağlar. Diğerleri sürtünmenin olumsuz etkileridir."
+        explanation: "Fren yapınca durmak sürtünmenin faydalı etkisidir."
       },
-
-      // --- BÖLÜM 3: KARIŞIK YENİ NESİL SORULAR ---
       {
         id: "f5-1-t10-11",
         subject: "fen",
         term: 1,
-        prompt: "Ali, görseldeki gibi bir dinamometre tasarlamak istiyor. Hassas (küçük) kuvvetleri ölçebilmek için hangi yayı seçmelidir?",
+        prompt: "Hassas (küçük) kuvvetleri ölçebilmek için hangi yayı seçmelidir?",
         imageUrl: "/images/grade5/fen/test10/yay-secimi.webp",
-        options: ["Kalın bakır yay", "İnce çelik yay", "Kalın çelik yay", "Çok sert ve kısa yay"],
+        options: ["Kalın bakır yay", "İnce çelik yay", "Kalın çelik yay", "Sert yay"],
         correct: 1,
-        explanation: "Hassas ölçümler için küçük kuvvetlerde bile kolayca uzayabilen ince ve esnek yaylar tercih edilmelidir."
+        explanation: "İnce yaylar küçük kuvvetlerde daha rahat uzayabilir."
       },
       {
         id: "f5-1-t10-12",
         subject: "fen",
         term: 1,
-        prompt: "Görseldeki paraşütçü sabit hızla aşağı doğru inmektedir. Bu durumda paraşütçüye etki eden kuvvetler için ne söylenebilir?",
+        prompt: "Paraşütçü sabit hızla aşağı inerken kuvvetler için ne söylenebilir?",
         imageUrl: "/images/grade5/fen/test10/parasutcu-kuvvetler.webp",
-        options: [
-          "Sadece yerçekimi kuvveti etki eder.",
-          "Hava direnci, yerçekiminden büyüktür.",
-          "Hava direnci ile toplam ağırlık birbirine eşittir.",
-          "Sadece hava direnci etki eder."
-        ],
+        options: ["Sadece yerçekimi", "Hava direnci > Yerçekimi", "Hava direnci = Ağırlık", "Sadece direnç"],
         correct: 2,
-        explanation: "Bir cisim sabit hızla hareket ediyorsa, üzerindeki net kuvvet sıfırdır. Yani aşağı yönlü ağırlık, yukarı yönlü hava direncine eşittir."
+        explanation: "Sabit hız demek kuvvetlerin birbirine eşit olması demektir."
       },
       {
         id: "f5-1-t10-13",
         subject: "fen",
         term: 1,
-        prompt: "Görseldeki K cismi, yatay zeminde F kuvveti ile çekilmesine rağmen hareket etmemektedir. Bu durumun sebebi nedir?",
+        prompt: "K cismi çekilmesine rağmen hareket etmemektedir. Sebebi nedir?",
         imageUrl: "/images/grade5/fen/test10/hareketsiz-cisim.webp",
-        options: [
-          "Cismin ağırlığı yoktur.",
-          "Uygulanan F kuvveti, sürtünme kuvvetinden küçüktür.",
-          "Zemin çok kaygandır.",
-          "Kuvvet yanlış yönde uygulanmıştır."
-        ],
+        options: ["Kütlesi yok", "F kuvveti < Sürtünme", "Zemin kaygan", "Yanlış yön"],
         correct: 1,
-        explanation: "Cisim hareket etmiyorsa, uygulanan çekme kuvveti (F), cisim ile zemin arasındaki statik sürtünme kuvvetini yenememiş demektir."
+        explanation: "Cisim duruyorsa sürtünmeyi henüz yenememiştir."
       },
       {
         id: "f5-1-t10-14",
         subject: "fen",
         term: 1,
-        prompt: "Aşağıdaki görsellerden hangisi 'Su Direnci'nin etkisini azaltmaya yönelik bir tasarımdır?",
+        prompt: "Hangi görsel 'Su Direnci'ni azaltmaya yönelik bir tasarımdır?",
         imageUrl: "/images/grade5/fen/test10/su-direnci-tasarim.webp",
-        options: ["Geniş paletli dalgıç", "Kare şeklinde tekne", "Sivri burunlu gemi", "Paraşüt açan yüzücü"],
+        options: ["Geniş paletli dalgıç", "Kare tekne", "Sivri burunlu gemi", "Paraşütlü yüzücü"],
         correct: 2,
-        explanation: "Gemilerin ve balıkların burun kısımlarının 'V' şeklinde sivri olması, su direncini azaltarak daha kolay ilerlemelerini sağlar."
+        explanation: "Sivri burunlar suyu daha rahat yarar."
       },
       {
         id: "f5-1-t10-15",
         subject: "fen",
         term: 1,
-        prompt: "Görseldeki gibi kışın araba lastiklerine zincir takılmasının temel amacı nedir?",
+        prompt: "Kışın lastiklere zincir takılmasının temel amacı nedir?",
         imageUrl: "/images/grade5/fen/test10/kar-zinciri.webp",
-        options: [
-          "Arabayı daha ağırlaştırmak",
-          "Tekerleğin dönmesini zorlaştırmak",
-          "Yüzey pürüzlülüğünü artırarak sürtünmeyi artırmak",
-          "Hava direncini azaltmak"
-        ],
+        options: ["Ağırlaştırmak", "Dönüşü zorlaştırmak", "Sürtünmeyi artırmak", "Direnci azaltmak"],
         correct: 2,
-        explanation: "Karlı ve buzlu yollar çok kaygandır (sürtünme azdır). Zincir, yüzeyi pürüzlü hale getirerek sürtünmeyi artırır ve kaymayı önler."
+        explanation: "Zincir sürtünmeyi artırarak kaymayı önler."
       },
       {
         id: "f5-1-t10-16",
         subject: "fen",
         term: 1,
-        prompt: "Bir dinamometrenin ucuna 10 N yük asıldığında yay 2 cm uzuyor. Aynı dinamometreye görseldeki gibi 30 N yük asılırsa yay kaç cm uzar? (Yayın esnekliği bozulmuyor)",
+        prompt: "10 N yük 2 cm uzatıyorsa, 30 N yük kaç cm uzatır?",
         imageUrl: "/images/grade5/fen/test10/yay-uzama-hesap.webp",
         options: ["4 cm", "6 cm", "8 cm", "10 cm"],
         correct: 1,
-        explanation: "Kuvvet 3 katına çıktığı için (10 N -> 30 N), uzama miktarı da 3 katına çıkar: 2 cm $\\times$ 3 = 6 cm."
+        explanation: "Kuvvet 3 katına çıkınca uzama da 3 katına çıkar (6 cm)."
       },
       {
         id: "f5-1-t10-17",
         subject: "fen",
         term: 1,
-        prompt: "Görseldeki buz patencisi rahatça kayabilmektedir. Eğer pist buz yerine beton olsaydı aynı rahatlıkta kayamazdı. Bu durumun temel nedeni iki yüzeyin hangi özelliğinin farklı olmasıdır?",
+        prompt: "Buzda kayan ama betonda kayamayan patencinin durumu ne ile ilgilidir?",
         imageUrl: "/images/grade5/fen/test10/buz-pateni.webp",
-        options: ["Sıcaklıkları", "Pürüzlülükleri", "Renkleri", "Sertlikleri"],
+        options: ["Sıcaklık", "Pürüzlülük", "Renk", "Sertlik"],
         correct: 1,
-        explanation: "Buz yüzey çok pürüzsüzdür ve sürtünme azdır. Beton yüzey ise pürüzlüdür ve sürtünme fazladır. Ana fark pürüzlülüktür."
+        explanation: "Temel fark pürüzlülük oranlarıdır."
       },
       {
         id: "f5-1-t10-18",
         subject: "fen",
         term: 1,
-        prompt: "Görseldeki deneyde, aynı cisim önce tek başına, sonra üzerine bir ağırlık daha konularak çekiliyor. İkinci durumda dinamometrenin daha büyük değer göstermesinin sebebi nedir?",
+        prompt: "Üzerine ağırlık eklenince dinamometrenin daha büyük değer göstermesinin sebebi nedir?",
         imageUrl: "/images/grade5/fen/test10/agirlik-surtunme-iliskisi.webp",
-        options: [
-          "Yüzeyin cinsi değişmiştir.",
-          "Cismin temas yüzey alanı artmıştır.",
-          "Yüzeye etki eden dik kuvvet (ağırlık) artmıştır.",
-          "Dinamometre bozulmuştur."
-        ],
+        options: ["Zemin cinsi", "Yüzey alanı", "Dik kuvvet (ağırlık) artışı", "Bozulma"],
         correct: 2,
-        explanation: "Sürtünme kuvveti, yüzeye bastıran dik kuvvete (toplam ağırlığa) bağlıdır. Ağırlık arttıkça sürtünme de artar."
+        explanation: "Yüzeye binen ağırlık arttıkça sürtünme artar."
       },
       {
         id: "f5-1-t10-19",
         subject: "fen",
         term: 1,
-        prompt: "Görseldeki A ve B uçaklarından hangisinin tasarımı hava direncini EN AZA indirmeye yöneliktir?",
+        prompt: "Hangisinin tasarımı hava direncini EN AZA indirmeye yöneliktir?",
         imageUrl: "/images/grade5/fen/test10/ucak-tasarimi.webp",
-        options: [
-          "Sadece A uçağı (Sivri burunlu jet)",
-          "Sadece B uçağı (Küt burunlu kargo uçağı)",
-          "Her ikisi de aynıdır.",
-          "Tasarımın hava direnciyle ilgisi yoktur."
-        ],
+        options: ["Sivri burunlu jet", "Kargo uçağı", "Dairesel balon", "Hepsi aynı"],
         correct: 0,
-        explanation: "Hava direncini azaltmak için uçaklar, hızlı trenler ve spor arabalar 'aerodinamik' yani sivri burunlu ve pürüzsüz hatlara sahip olacak şekilde tasarlanır (A uçağı)."
+        explanation: "Aerodinamik (sivri) yapılar havayı daha iyi yarar."
       },
       {
         id: "f5-1-t10-20",
         subject: "fen",
         term: 1,
-        prompt: "Kuvvetin birimi aşağıdakilerden hangisidir? (Görseldeki bilim insanından esinlenilmiştir)",
+        prompt: "Kuvvetin birimi aşağıdakilerden hangisidir?",
         imageUrl: "/images/grade5/fen/test10/newton-portre.webp",
-        options: ["Kilogram (kg)", "Metre (m)", "Newton (N)", "Saniye (s)"],
+        options: ["Kilogram", "Metre", "Newton", "Saniye"],
         correct: 2,
-        explanation: "Kuvvetin birimi, yerçekimi ve hareket üzerine çalışmalar yapan Isaac Newton'ın anısına 'Newton' olarak kabul edilmiştir ve 'N' ile gösterilir."
-      },
-    ],
-  },
+        explanation: "Isaac Newton onuruna Newton (N) kabul edilmiştir."
+      }
+    ]
+  }, // term1 bitti
+
   term2: {
-    test1: [],
-  },
-};
+    test1: [
+      {
+        id: "f5-2-06",
+        subject: "fen",
+        term: 2,
+        prompt: "Sürtünme kuvvetini azaltmak için hangisi yapılır?",
+        options: ["Pürüzü artırmak", "Yağlama yapmak", "Ağırlık eklemek", "Kum dökmek"],
+        correct: 1,
+        explanation: "Yağlama yüzeyler arası direnci azaltır."
+      },
+      {
+        id: "f5-2-07",
+        subject: "fen",
+        term: 2,
+        prompt: "Sıvıdan gaz hale geçmeye ne denir?",
+        options: ["Donma", "Erime", "Buharlaşma", "Yoğuşma"],
+        correct: 2,
+        explanation: "Maddenin gaz fazına geçişi buharlaşmadır."
+      },
+      {
+        id: "f5-2-08",
+        subject: "fen",
+        term: 2,
+        prompt: "Hangisi doğal bir ısı kaynağıdır?",
+        options: ["Ay", "Güneş", "Ayna", "Bulut"],
+        correct: 1,
+        explanation: "Güneş en büyük doğal ısı kaynağımızdır."
+      },
+      {
+        id: "f5-2-09",
+        subject: "fen",
+        term: 2,
+        prompt: "Işık nasıl yayılır?",
+        options: ["Eğrisel", "Dairesel", "Doğrusal", "Zikzak"],
+        correct: 2,
+        explanation: "Işık her yöne ve doğrusal bir hat üzerinde yayılır."
+      },
+      {
+        id: "f5-2-10",
+        subject: "fen",
+        term: 2,
+        prompt: "Gölge oluşumu için ne gereklidir?",
+        options: ["Saydam madde", "Opak madde", "Su", "Cam"],
+        correct: 1,
+        explanation: "Opak maddeler ışığı geçirmediği için gölge oluşturur."
+      },
+      {
+        id: "f5-2-12",
+        subject: "fen",
+        term: 2,
+        prompt: "Hangisi biyoçeşitliliği tehdit eder?",
+        options: ["Ağaçlandırma", "Av yasağı", "Çevre kirliliği", "Milli park"],
+        correct: 2,
+        explanation: "Kirlilik canlı türlerinin yok olmasına sebep olur."
+      },
+      {
+        id: "f5-2-13",
+        subject: "fen",
+        term: 2,
+        prompt: "Isı ve sıcaklık ile ilgili hangisi yanlıştır?",
+        options: ["Isı bir enerjidir", "Sıcaklık termometre ile ölçülür", "Isı birimi derecedir", "Isı akışı sıcaktan soğuğa olur"],
+        correct: 2,
+        explanation: "Isı birimi Kalori veya Joule'dur. Derece sıcaklık birimidir."
+      },
+      {
+        id: "f5-2-15",
+        subject: "fen",
+        term: 2,
+        prompt: "Güneş tutulmasında ortada ne bulunur?",
+        options: ["Dünya", "Ay", "Güneş", "Mars"],
+        correct: 1,
+        explanation: "Ay, Güneş ile Dünya arasına girdiğinde tutulma olur."
+      },
+      {
+        id: "f5-2-16",
+        subject: "fen",
+        term: 2,
+        prompt: "Hangisi yapay bir ışık kaynağıdır?",
+        options: ["Yıldız", "Şimşek", "Mum", "Ateş böceği"],
+        correct: 2,
+        explanation: "Mum insan yapımı (yapay) bir kaynaktır."
+      },
+      {
+        id: "f5-zn-12",
+        subject: "fen",
+        term: 2,
+        prompt: "Aşağıdakilerden hangisi opak bir maddedir?",
+        options: ["Cam", "Su", "Tahta", "Hava"],
+        correct: 2,
+        explanation: "Işığı hiç geçirmeyen maddelere opak denir (Tahta)."
+      },
+      {
+        id: "f5-zn-14",
+        subject: "fen",
+        term: 2,
+        prompt: "Sıvı bir maddenin katı hale geçmesine ne denir?",
+        options: ["Erime", "Donma", "Yoğuşma", "Süblimleşme"],
+        correct: 1,
+        explanation: "Sıvının ısı kaybedip katılaşması donmadır."
+      },
+      {
+        id: "f5-zn-16",
+        subject: "fen",
+        term: 2,
+        prompt: "Hangisi ısı birimidir?",
+        options: ["Derece", "Gram", "Joule", "Metre"],
+        correct: 2,
+        explanation: "Joule (J) uluslararası bir ısı/enerji birimidir."
+      },
+      {
+        id: "f5-zn-18",
+        subject: "fen",
+        term: 2,
+        prompt: "Sürtünme kuvveti için hangisi doğrudur?",
+        options: ["Hareketi hızlandırır", "Sadece sıvıda olur", "Harekete zıt yöndedir", "Pürüzsüzlükte artar"],
+        correct: 2,
+        explanation: "Sürtünme her zaman hareket yönünün tersinedir."
+      },
+      {
+        id: "f5-zn-20",
+        subject: "fen",
+        term: 2,
+        prompt: "Işığın yüzeye çarpıp geri dönmesine ne denir?",
+        options: ["Kırılma", "Yansıma", "Soğurulma", "Yayılma"],
+        correct: 1,
+        explanation: "Geri dönme olayına yansıma denir."
+      },
+      {
+        id: "f5-hard-nv-02",
+        subject: "fen",
+        term: 2,
+        prompt: "80 °C'lik bilye 20 °C'lik suya atılırsa hangisi 'kesinlikle' gerçekleşmez?",
+        options: ["Demirin sıcaklığı düşer", "Suyun sıcaklığı artar", "Suyun son sıcaklığı 90 °C olur", "Isı demirden suya akar"],
+        correct: 2,
+        explanation: "Denge sıcaklığı 80 ile 20 arasında olmalıdır."
+      },
+      {
+        id: "f5-hard-nv-03",
+        subject: "fen",
+        term: 2,
+        prompt: "Duruş süreleri: Cam 10sn, Halı 3sn, Buz 15sn. Sürtünme en az ve en çok hangisidir?",
+        options: ["Buz - Halı", "Cam - Halı", "Halı - Buz", "Buz - Cam"],
+        correct: 0,
+        explanation: "En uzun süre (Buz) en az sürtünme, en kısa süre (Halı) en çok sürtünmedir."
+      },
+      {
+        id: "f5-adv-01",
+        subject: "fen",
+        term: 2,
+        prompt: "Bilyenin camda halıdan daha uzağa gitmesi deneyinde 'bağımlı değişken' nedir?",
+        options: ["Zemin türü", "Bilye kütlesi", "Gidilen mesafe", "Yükseklik"],
+        correct: 2,
+        explanation: "Zemine bağlı olarak değişen sonuç (mesafe) bağımlıdır."
+      },
+      {
+        id: "f5-adv-03",
+        subject: "fen",
+        term: 2,
+        prompt: "Isı verilen buzun erime sırasında sıcaklığı nasıl değişir?",
+        options: ["Sürekli artar", "Sürekli azalır", "Sabit kalır", "Önce artar"],
+        correct: 2,
+        explanation: "Hal değişimi gerçekleşirken sıcaklık değişmez."
+      },
+      {
+        id: "f5-adv-05",
+        subject: "fen",
+        term: 2,
+        prompt: "50 N yük 10 cm uzatıyorsa, 15 N yük kaç cm uzatır?",
+        options: ["2", "3", "5", "6"],
+        correct: 1,
+        explanation: "50/10 = 5 N başına 1 cm düşer. 15 / 5 = 3 cm uzar."
+      }
+    ]
+  } // term2 bitti
+}; // fenData bitti
