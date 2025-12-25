@@ -343,7 +343,7 @@ export default function Grade5Page() {
                     <img 
                       src={quizQuestions[currentIdx].imageUrl} 
                       alt="Soru Görseli" 
-                      className="relative max-h-64 md:max-h-80 max-w-full w-auto rounded-xl shadow-sm border border-slate-50 object-contain bg-white p-2.5"
+                      className="relative max-h-[330px] md:max-h-[420px] max-w-full w-auto rounded-xl shadow-sm border border-slate-50 object-contain bg-white p-2.5"
                     />
                   </div>
                   <p className="text-[9px] font-black text-slate-300 uppercase tracking-widest mt-2">Görseli İnceleyiniz</p>
