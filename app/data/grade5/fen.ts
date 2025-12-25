@@ -2489,9 +2489,7 @@ export const fenData: SubjectData = {
         explanation: "Her 5N için 1cm uzar.",
       },
     ]
-import { SubjectData } from "../types";
 
-export const fenData: SubjectData = {
   term1: {
     // ... Burada daha önceki testleriniz (test1, test2... test9) yer almalı
     test10: [
