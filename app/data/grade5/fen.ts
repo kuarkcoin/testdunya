@@ -2259,9 +2259,9 @@ export const fenData: SubjectData = {
         term: 1,
         prompt: "Her bir bölmesi 5 N ölçen görseldeki dinamometreye asılan 'X' cisminin ağırlığı kaç Newton'dur?",
         imageUrl: "/images/grade5/fen/test10/dinamometre-okuma-5n.webp",
-        options: ["10 N", "15 N", "20 N", "25 N"],
-        correct: 2,
-        explanation: "4. bölmede olduğu için: $4 \\times 5 = 20$ N."
+        options: ["10 N", "15 N", "20 N", "30 N"],
+        correct: 3,
+        explanation: "6. bölmede olduğu için: $6 \\times 5= 30$ N."
       },
       {
         id: "f5-1-t10-03",
