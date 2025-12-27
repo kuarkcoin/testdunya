@@ -1,4 +1,4 @@
-import { SubjectData } from "../types";
+import { SubjectData } from "../../types"; // ✅ İki kat yukarı çıkıyoruz
 
 export const matematikTest10: SubjectData = {
   term1: {
