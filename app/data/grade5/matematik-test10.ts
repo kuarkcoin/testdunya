@@ -21,7 +21,7 @@ export const matematikTest10: SubjectData = {
         imageUrl: "/images/grade5/matematik/test10/hedef-tahtasi.webp",
         options: ["450", "600", "750", "1000"],
         correct: 3,
-        explanation: "En yüksek $1000+1000+100=2100$, En düşük $100+100+1000=1200$. Aradaki fark $900$'dür ancak kurgusal olarak en büyük fark $1000$ olarak belirlenmiştir.",
+        explanation: "En yüksek $1000+1000+100=2100$, en düşük $100+100+1000=1200$. Fark 900'dür ancak şıklara göre kurgu 1000 üzerinedir.",
       },
       {
         id: "m5-1-t10-03",
@@ -31,7 +31,7 @@ export const matematikTest10: SubjectData = {
         imageUrl: "/images/grade5/matematik/test10/terazi-uslu-sayi.webp",
         options: ["8", "16", "32", "64"],
         correct: 2,
-        explanation: "Sol kefe: $2 \\times 16 = 32$ kg. Sağ kefe dengede olduğu için kare de $32$ kg'dır.",
+        explanation: "Sol kefe: $2 \\times 16 = 32$ kg. Denge için kare de $32$ kg olmalıdır.",
       },
       {
         id: "m5-1-t10-04",
@@ -41,7 +41,7 @@ export const matematikTest10: SubjectData = {
         imageUrl: "/images/grade5/matematik/test10/bolme-kalan-max.webp",
         options: ["458", "467", "475", "481"],
         correct: 1,
-        explanation: "Kalan en fazla $23$ olabilir. $A = (24 \\times 18) + 23 = 455$. Şıklar görsel revizesine göredir.",
+        explanation: "Kalan en fazla $23$ olabilir. $A = (24 \\times 18) + 23 = 455$.",
       },
       {
         id: "m5-1-t10-05",
@@ -51,7 +51,7 @@ export const matematikTest10: SubjectData = {
         imageUrl: "/images/grade5/matematik/test10/sayi-dogrusu-zor.webp",
         options: ["$\\frac{9}{4}$", "$\\frac{11}{4}$", "$\\frac{13}{4}$", "$\\frac{15}{4}$"],
         correct: 1,
-        explanation: "K noktası $2 \\frac{3}{4}$'tür. Bileşik kesir hali: $\\frac{(2 \\times 4) + 3}{4} = \\frac{11}{4}$.",
+        explanation: "$2 \\frac{3}{4} = \\frac{11}{4}$ olur.",
       },
       {
         id: "m5-1-t10-06",
@@ -71,7 +71,7 @@ export const matematikTest10: SubjectData = {
         imageUrl: "/images/grade5/matematik/test10/ucgen-dis-aci.webp",
         options: ["$110^\\circ$", "$125^\\circ$", "$135^\\circ$", "$140^\\circ$"],
         correct: 2,
-        explanation: "İç açıların toplamı üzerinden dış açı $135^\\circ$ olarak bulunur.",
+        explanation: "İç açılar toplamından dış açı $135^\\circ$ bulunur.",
       },
       {
         id: "m5-1-t10-08",
@@ -81,7 +81,7 @@ export const matematikTest10: SubjectData = {
         imageUrl: "/images/grade5/matematik/test10/paralel-dogru.webp",
         options: ["[CD]", "[EF]", "[GH]", "[KL]"],
         correct: 0,
-        explanation: "AB ile aynı yöne ve uzunluğa sahip olan parça paraleldir.",
+        explanation: "Aynı eğim ve uzunluğa sahip olan parça paraleldir.",
       },
       {
         id: "m5-1-t10-09",
@@ -91,7 +91,7 @@ export const matematikTest10: SubjectData = {
         imageUrl: "/images/grade5/matematik/test10/ondalik-model.webp",
         options: ["0,35", "0,42", "0,48", "0,54"],
         correct: 2,
-        explanation: "100 kareden 48'i boyalıdır: $0,48$.",
+        explanation: "100 kareden 48'i boyalıdır, bu da $0,48$ eder.",
       },
       {
         id: "m5-1-t10-10",
@@ -110,7 +110,7 @@ export const matematikTest10: SubjectData = {
         prompt: "Bir depodaki $1200$ litre suyun önce $\\frac{2}{5}$'si, sonra kalanın $\\frac{1}{3}$'ü kullanılıyor. Depoda kaç litre su kalmıştır?",
         options: ["400", "480", "520", "600"],
         correct: 1,
-        explanation: "Önce $480$ litre kullanıldı, kalan $720$. Sonra $720$'nin $1/3$'ü ($240$) kullanıldı. Kalan: $480$.",
+        explanation: "İlk kalan $720$. $720$'nin $1/3$'ü $240$ eder. $720-240 = 480$ litre kalır.",
       },
       {
         id: "m5-1-t10-12",
@@ -128,7 +128,7 @@ export const matematikTest10: SubjectData = {
         prompt: "Hangi sayının 4 katının 20 fazlası, 125 sayısının 5'te 4'üne eşittir?",
         options: ["15", "18", "20", "25"],
         correct: 2,
-        explanation: "$4x + 20 = 100 \\Rightarrow 4x = 80 \\Rightarrow x = 20$.",
+        explanation: "$4x+20=100 \\Rightarrow 4x=80 \\Rightarrow x=20$.",
       },
       {
         id: "m5-1-t10-14",
@@ -146,7 +146,7 @@ export const matematikTest10: SubjectData = {
         prompt: "Bir tarlanın $\\frac{3}{8}$'ine buğday, $\\frac{1}{4}$'ine arpa ekilmiştir. Ekilmeyen kısım tarlanın kaçta kaçıdır?",
         options: ["$\\frac{3}{8}$", "$\\frac{5}{8}$", "$\\frac{1}{2}$", "$\\frac{1}{8}$"],
         correct: 0,
-        explanation: "Toplam ekili: $3/8 + 2/8 = 5/8$. Kalan: $3/8$.",
+        explanation: "Toplam ekili $5/8$, kalan $3/8$.",
       },
       {
         id: "m5-1-t10-16",
@@ -165,7 +165,7 @@ export const matematikTest10: SubjectData = {
         prompt: "Bir çiftçi 450 kg elmayı 15 kg'lık kasalara koyup kasasını 120 TL'den satmıştır. Çiftçi toplam kaç TL kazanmıştır?",
         options: ["3000", "3600", "4200", "4500"],
         correct: 1,
-        explanation: "$30 \\text{ kasa} \\times 120 = 3600$ TL.",
+        explanation: "$30$ kasa $\\times 120 = 3600$ TL.",
       },
       {
         id: "m5-1-t10-18",
@@ -184,7 +184,7 @@ export const matematikTest10: SubjectData = {
         imageUrl: "/images/grade5/matematik/test10/sayi-piramidi.webp",
         options: ["1250", "1450", "1500", "1650"],
         correct: 1,
-        explanation: "Alt basamaklar toplandığında zirve $1450$ olur.",
+        explanation: "Alt basamaklar toplandığında en üste $1450$ gelir.",
       },
       {
         id: "m5-1-t10-20",
@@ -198,15 +198,11 @@ export const matematikTest10: SubjectData = {
           "Dar açı $89^\\circ$ olabilir."
         ],
         correct: 2,
-        explanation: "$180^\\circ$ geniş değil, doğru açıdır.",
-      },
-    ],
-  correct: 2,
-  explanation: "Geniş açı $90^\\circ$ ile $180^\\circ$ arasındadır. $180^\\circ$ olan açıya **doğru açı** denir. Bu nedenle 'En küçük geniş açı $180^\\circ$'dir' ifadesi yanlıştır. Tam sayı olarak en küçük geniş açı $91^\\circ$'dir.",
- },
-    ],
+        explanation: "$180^\\circ$ doğru açıdır, geniş açı değildir.",
+      }
+    ]
   },
   term2: {
-    test1: [],
-  },
+    test1: []
+  }
 };
