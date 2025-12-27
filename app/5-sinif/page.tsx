@@ -61,14 +61,26 @@ function useWindowSize() {
   return size;
 }
 
-// ✅ YARDIMCI BİLEŞEN: Metin matematik içeriyorsa KaTeX ile basar
+// ✅ GÜNCELLENMİŞ AKILLI METİN BİLEŞENİ
 const SmartText = ({ text }: { text: string }) => {
   if (!text) return null;
-  // Ters bölü veya üs işareti varsa matematiksel render yap
-  if (text.includes('\\') || text.includes('^')) {
-    return <InlineMath math={text} />;
-  }
-  return <>{text}</>;
+
+  // Metni $ işaretlerine göre parçalara ayırır ($ işaretlerini de koruyarak)
+  const parts = text.split(/(\$.*?\$)/g);
+
+  return (
+    <span>
+      {parts.map((part, index) => {
+        // Eğer parça $ ile başlayıp $ ile bitiyorsa matematiktir
+        if (part.startsWith('$') && part.endsWith('$')) {
+          const mathContent = part.substring(1, part.length - 1);
+          return <InlineMath key={index} math={mathContent} />;
+        }
+        // Değilse normal metindir
+        return <span key={index}>{part}</span>;
+      })}
+    </span>
+  );
 };
 
 export default function Grade5Page() {
