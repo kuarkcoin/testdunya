@@ -204,6 +204,7 @@ export const matematikData: SubjectData = {
     ]
   },
     test2: [      id: "m5-1-t1-17",
+            {
         subject: "matematik",
         term: 1,
         prompt: "Görseldeki sayı piramidinde her kutu altındaki iki komşu kutunun toplamına eşittir. En üstteki sayı kaçtır?",
@@ -211,6 +212,7 @@ export const matematikData: SubjectData = {
         options: ["420", "540", "680", "720"],
         correct: 2,
         explanation: "Alt basamaklardaki toplamlar takip edildiğinde zirveye $680$ yazılır.",
+          },
   
       {
         id: "m5-1-t2-01",
