@@ -1,4 +1,4 @@
-import { SubjectData } from "../../types"; // ✅ İki kat yukarı çıkıyoruz
+import { SubjectData } from "../../../types";
 
 export const matematikTest10: SubjectData = {
   term1: {
