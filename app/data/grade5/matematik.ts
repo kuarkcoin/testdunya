@@ -148,10 +148,10 @@ export const matematikData: SubjectData = {
         id: "m5-1-t1-15",
         subject: "matematik",
         term: 1,
-        prompt: "Bir okuldaki öğrencilerin $\%45$'i erkektir. Kız öğrencilerin sayısı $220$ olduğuna göre okulda toplam kaç öğrenci vardır?",
+        prompt: "Bir okuldaki öğrencilerin $\\%45$'i erkektir. Kız öğrencilerin sayısı $220$ olduğuna göre okulda toplam kaç öğrenci vardır?",
         options: ["350", "400", "450", "500"],
         correct: 1,
-        explanation: "Kızlar $\%55$'dir. $\%55$ - $220$ ise toplam $400$'dür.",
+        explanation: "Kızlar $\\%55$'dir. $\\%55 = 220$ ise tamamı $400$'dür.",
       },
       {
         id: "m5-1-t1-16",
@@ -164,6 +164,14 @@ export const matematikData: SubjectData = {
         explanation: "Kural $2n+1$ ise: $2 \\times 10 + 1 = 21$.",
       },
       {
+        id: "m5-1-t1-17",
+        subject: "matematik",
+        term: 1,
+        prompt: "Görseldeki sayı piramidinde her kutu altındaki iki komşu kutunun toplamına eşittir. En üstteki sayı kaçtır?",
+        imageUrl: "/images/grade5/matematik/test1/piramit-logic.webp",
+        options: ["420", "540", "680", "720"],
+        correct: 2,
+        explanation: "Alt basamaklardaki toplamlar takip edildiğinde zirveye $680$ yazılır.",
       },
       {
         id: "m5-1-t1-18",
@@ -181,7 +189,7 @@ export const matematikData: SubjectData = {
         prompt: "Bir günün $\\frac{3}{8}$'ini uyuyarak geçiren bir öğrenci, kaç saat uyanık kalmıştır?",
         options: ["9", "12", "15", "18"],
         correct: 2,
-        explanation: "$24 \\times 3/8 = 9$ saat uyku. $24 - 9 = 15$ saat uyanık.",
+        explanation: "$24 \\times \\frac{3}{8} = 9$ saat uyku. $24 - 9 = 15$ saat uyanık.",
       },
       {
         id: "m5-1-t1-20",
@@ -195,7 +203,6 @@ export const matematikData: SubjectData = {
       }
     ]
   },
-    ],
     test2: [      id: "m5-1-t1-17",
         subject: "matematik",
         term: 1,
