@@ -20,9 +20,9 @@ export const matematikTest10: SubjectData = {
         term: 1,
         prompt: "Görseldeki hedef tahtasına 3 atış yapan Kerem, her bölgeye en az bir kez isabet ettirmiştir. Kerem'in alabileceği en yüksek puan ile en düşük puan arasındaki fark kaçtır?",
         imageUrl: "/images/grade5/matematik/test10/hedef-tahtasi.webp",
-        options: ["450", "600", "750", "900"],
-        correct: 2,
-        explanation: "En yüksek: $1000+1000+100 = 2100$, En düşük: $100+100+1000 = 1200$ gibi mantıksal hesap yapılır.",
+        options: ["450", "600", "750", "1000"],
+        correct: 3,
+        explanation: "En yüksek: $1000+500+100 = 2100$, En düşük: $500+100+0 = 1000$ gibi mantıksal hesap yapılır.",
       },
       {
         id: "m5-1-t10-03",
