@@ -1,5 +1,7 @@
 import { SubjectData } from "./types";
+// 1. ADIM: Yeni dosyayı sadece bir kez çağırıyoruz (Import)
 import { matematikTest10 } from "./matematik-test10";
+
 export const matematikData: SubjectData = {
   term1: {
     test1: [
@@ -1700,7 +1702,9 @@ export const matematikData: SubjectData = {
         explanation: "İki ucu kapalı sınırlı hatlar köşeli parantez [AB] ile gösterilir."
       },
     ],
-
+  // 🚀 TEST 10 BURADA BAĞLANIYOR:
+    // Bu satır matematik-test10.ts içindeki tüm soruları buraya çeker.
+    ...matematikTest10.term1, 
   }, // term1 bitti (Burası term1'in sonu)
 
   // BU KISMI EKLEMEN ŞART:
