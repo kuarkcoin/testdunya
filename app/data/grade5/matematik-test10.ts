@@ -108,14 +108,15 @@ export const matematikTest10: SubjectData = {
       },
 
       // --- PROBLEM ÇÖZME VE ANALİZ ---
-      {
-        id: "m5-1-t10-11",
-  prompt: "Bir depodaki 1200 litre suyun önce $\\frac{2}{5}$'si, sonra kalanın $\\frac{1}{3}$'ü kullanılıyor. Depoda kaç litre su kalmıştır?",
-  // Dikkat: \frac yerine \\frac yazdık!
+     {
+  id: "m5-1-t10-11",
+  subject: "matematik",
+  term: 1,
+  prompt: "Bir depodaki $1200$ litre suyun önce $\\frac{2}{5}$'si, sonra kalanın $\\frac{1}{3}$'ü kullanılıyor. Depoda kaç litre su kalmıştır?",
   options: ["400", "480", "520", "600"],
   correct: 1,
-  explanation: "$1200 \\times \\frac{2}{5} = 480$ litre kullanılır...",
-      },
+  explanation: "Önce $1200 \\times \\frac{2}{5} = 480$ litre kullanıldı. Geriye $1200 - 480 = 720$ litre kaldı. Sonra $720$ litrenin $\\frac{1}{3}$'ü yani $720 \\div 3 = 240$ litre daha kullanıldı. En son depoda $720 - 240 = 480$ litre su kalmıştır.",
+     },
     {
   id: "m5-1-t10-12",
   subject: "matematik",
