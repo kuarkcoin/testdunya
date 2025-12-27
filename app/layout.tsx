@@ -4,7 +4,7 @@ import { Inter } from 'next/font/google'
 import Script from 'next/script'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { Mic, Headphones, Gamepad2, BarChart3 } from 'lucide-react'
-
+import 'katex/dist/katex.min.css';
 import Navbar from './components/Navbar' 
 import Footer from './components/Footer'
 
