@@ -110,22 +110,21 @@ export const matematikTest10: SubjectData = {
       // --- PROBLEM ÇÖZME VE ANALİZ ---
       {
         id: "m5-1-t10-11",
-        subject: "matematik",
-        term: 1,
-        prompt: "Bir depodaki 1200 litre suyun önce $\\frac{2}{5}$'si, sonra kalanın $\\frac{1}{3}$'ü kullanılıyor. Depoda kaç litre su kalmıştır?",
-        options: ["400", "480", "520", "600"],
-        correct: 1,
-        explanation: "İlk kullanılan: $1200 \\times \\frac{2}{5} = 480$ litre. Kalan su: $1200 - 480 = 720$ litre. İkinci kullanılan (kalanın $\\frac{1}{3}$'ü): $720 \\times \\frac{1}{3} = 240$ litre. En son kalan su: $720 - 240 = 480$ litre.",
+  prompt: "Bir depodaki 1200 litre suyun önce $\\frac{2}{5}$'si, sonra kalanın $\\frac{1}{3}$'ü kullanılıyor. Depoda kaç litre su kalmıştır?",
+  // Dikkat: \frac yerine \\frac yazdık!
+  options: ["400", "480", "520", "600"],
+  correct: 1,
+  explanation: "$1200 \\times \\frac{2}{5} = 480$ litre kullanılır...",
       },
-      {
-        id: "m5-1-t10-12",
-        subject: "matematik",
-        term: 1,
-        prompt: "Bir otobüste 45 yolcu vardır. Yolcuların $\\%40$'ı erkektir. Otobüse 5 evli çift binerse yolcuların kaçı kadın olur?",
-        options: ["27", "32", "35", "40"],
-        correct: 1,
-        explanation: "Erkek sayısı: $45 \\times \\frac{40}{100} = 45 \\times 0,4 = 18$ erkek. Başlangıçtaki kadın sayısı: $45 - 18 = 27$ kadın. 5 evli çift binerse, 5 kadın ve 5 erkek biner. Yeni kadın sayısı: $27 + 5 = 32$ olur.",
-      },
+    {
+  id: "m5-1-t10-12",
+  subject: "matematik",
+  term: 1,
+  prompt: "Bir otobüste 45 yolcu vardır. Yolcuların $\%40$'ı erkektir. Otobüse 5 evli çift binerse yolcuların kaçı kadın olur?",
+  options: ["27", "32", "35", "40"],
+  correct: 1,
+  explanation: "Kadın oranı $\%60$ olduğu için başlangıçta $45 \\times 0,60 = 27$ kadın vardır. 5 evli çift bindiğinde gruba 5 kadın daha eklenir: $27 + 5 = 32$ kadın olur.",
+    },
       {
         id: "m5-1-t10-13",
         subject: "matematik",
@@ -145,14 +144,19 @@ export const matematikTest10: SubjectData = {
         explanation: "7 basamaklı en küçük doğal sayı: $1.000.000$. 6 basamaklı en büyük doğal sayı: $999.999$. Fark: $1.000.000 - 999.999 = 1$.",
       },
       {
-        id: "m5-1-t10-15",
-        subject: "matematik",
-        term: 1,
-        prompt: "Bir tarlanın $\\frac{3}{8}$'ine buğday, $\\frac{1}{4}$'ine arpa ekilmiştir. Ekilmeyen kısım tarlanın kaçta kaçıdır?",
-        options: ["$\\frac{3}{8}$", "$\\frac{5}{8}$", "$\\frac{1}{2}$", "$\\frac{1}{8}$"],
-        correct: 0,
-        explanation: "Paydaları eşitleyelim: $\\frac{1}{4} = \\frac{2}{8}$. Toplam ekili alan: $\\frac{3}{8} + \\frac{2}{8} = \\frac{5}{8}$. Tarlanın tamamı $\\frac{8}{8}$ olduğuna göre ekilmeyen kısım: $\\frac{8}{8} - \\frac{5}{8} = \\frac{3}{8}$.",
-      },
+  id: "m5-1-t10-15",
+  subject: "matematik",
+  term: 1,
+  prompt: "Bir tarlanın $\\frac{3}{8}$'ine buğday, $\\frac{1}{4}$'ine arpa ekilmiştir. Ekilmeyen kısım tarlanın kaçta kaçıdır?",
+  options: [
+    "$\\frac{3}{8}$", 
+    "$\\frac{5}{8}$", 
+    "$\\frac{1}{2}$", 
+    "$\\frac{1}{8}$"
+  ],
+  correct: 0,
+  explanation: "Paydaları eşitleyelim: $\\frac{1}{4} = \\frac{2}{8}$ olur. Toplam ekili alan: $\\frac{3}{8} + \\frac{2}{8} = \\frac{5}{8}$'dir. Tarlanın tamamı $\\frac{8}{8}$ olduğuna göre, ekilmeyen kısım: $\\frac{8}{8} - \\frac{5}{8} = \\frac{3}{8}$ olarak bulunur.",
+},
       {
         id: "m5-1-t10-16",
         subject: "matematik",
@@ -172,15 +176,20 @@ export const matematikTest10: SubjectData = {
         correct: 1,
         explanation: "Kasa sayısı: $450 \\div 15 = 30$ kasa. Toplam kazanç: $30 \\times 120 = 3600$ TL.",
       },
-      {
-        id: "m5-1-t10-18",
-        subject: "matematik",
-        term: 1,
-        prompt: "Aşağıdaki kesirlerden hangisi $0,75$ ondalık gösterimine denk değildir?",
-        options: ["$\\frac{3}{4}$", "$\\frac{9}{12}$", "$\\frac{15}{20}$", "$\\frac{18}{25}$"],
-        correct: 3,
-        explanation: "$0,75 = \\frac{75}{100} = \\frac{3}{4}$'tür. A) $\\frac{3}{4}$. B) $\\frac{9}{12}$ (sadeleşince $\\frac{3}{4}$). C) $\\frac{15}{20}$ (sadeleşince $\\frac{3}{4}$). D) $\\frac{18}{25}$ (4 ile genişletilirse $\\frac{72}{100} = 0,72$ olur). Yanlış olan D şıkkıdır.",
-      },
+     {
+  id: "m5-1-t10-18",
+  subject: "matematik",
+  term: 1,
+  prompt: "Aşağıdaki kesirlerden hangisi $0,75$ ondalık gösterimine denk değildir?",
+  options: [
+    "$\\frac{3}{4}$", 
+    "$\\frac{9}{12}$", 
+    "$\\frac{15}{20}$", 
+    "$\\frac{18}{25}$"
+  ],
+  correct: 3,
+  explanation: "$0,75 = \\frac{75}{100} = \\frac{3}{4}$'tür. A) $\\frac{3}{4}$ zaten değerin kendisidir. B) $\\frac{9}{12}$ (3 ile sadeleşince $\\frac{3}{4}$ olur). C) $\\frac{15}{20}$ (5 ile sadeleşince $\\frac{3}{4}$ olur). D) $\\frac{18}{25}$ kesri $4$ ile genişletilirse $\\frac{72}{100} = 0,72$ olur, bu da $0,75$ değildir. Doğru cevap D şıkkıdır.",
+},
       {
         id: "m5-1-t10-19",
         subject: "matematik",
@@ -191,20 +200,20 @@ export const matematikTest10: SubjectData = {
         correct: 1,
         explanation: "(Görseldeki sayılara göre işlem yapılır). Örneğin alt taban 100, 200, 300 ise; bir üst kat 300, 500 olur; en üst kat $300+500=800$ olur. Doğru cevap görseldeki sayılara göre hesaplanmalıdır.",
       },
-      {
-        id: "m5-1-t10-20",
-        subject: "matematik",
-        term: 1,
-        prompt: "Aşağıdaki ifadelerden hangisi yanlıştır?",
-        options: [
-          "Geniş açının ölçüsü $91^\\circ$ olabilir.",
-          "Dik açı her zaman $90^\\circ$'dir.",
-          "En küçük geniş açı $180^\\circ$'dir.",
-          "Dar açı $89^\\circ$ olabilir."
-        ],
-        correct: 2,
-        explanation: "Geniş açı $90^\\circ$ ile $180^\\circ$ arasındadır. $180^\\circ$ doğru açıdır. Bu nedenle 'En küçük geniş açı $180^\\circ$'dir' ifadesi yanlıştır. En küçük geniş açı (tam sayı olarak) $91^\\circ$'dir.",
-      },
+     {
+  id: "m5-1-t10-20",
+  subject: "matematik",
+  term: 1,
+  prompt: "Aşağıdaki ifadelerden hangisi yanlıştır?",
+  options: [
+    "Geniş açının ölçüsü $91^\\circ$ olabilir.",
+    "Dik açı her zaman $90^\\circ$'dir.",
+    "En küçük geniş açı $180^\\circ$'dir.",
+    "Dar açı $89^\\circ$ olabilir."
+  ],
+  correct: 2,
+  explanation: "Geniş açı $90^\\circ$ ile $180^\\circ$ arasındadır. $180^\\circ$ olan açıya **doğru açı** denir. Bu nedenle 'En küçük geniş açı $180^\\circ$'dir' ifadesi yanlıştır. Tam sayı olarak en küçük geniş açı $91^\\circ$'dir.",
+ },
     ],
   },
   term2: {
