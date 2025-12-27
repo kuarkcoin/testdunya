@@ -130,10 +130,10 @@ export const matematikTest10: SubjectData = {
         id: "m5-1-t10-13",
         subject: "matematik",
         term: 1,
-        prompt: "Hangi sayının 4 katının 15 fazlası, 125 sayısının 5'te 4'üne eşittir?",
-        options: ["15", "18", "21", "25"],
+        prompt: "Hangi sayının 4 katının 20 fazlası, 125 sayısının 5'te 4'üne eşittir?",
+        options: ["15", "18", "20", "25"],
         correct: 2,
-        explanation: "$125 \\times 4/5 = 100$. $100 - 15 = 85$. $85$ tam bölünmediği için kurgu düzeltilmeli (Örn: $21$).",
+        explanation: "4* + 20 = 25* 4/5",
       },
       {
         id: "m5-1-t10-14",
