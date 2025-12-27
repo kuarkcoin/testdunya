@@ -1,5 +1,5 @@
 import { SubjectData } from "./types";
-
+import { matematikTest10 } from "./matematik-test10";
 export const matematikData: SubjectData = {
   term1: {
     test1: [
