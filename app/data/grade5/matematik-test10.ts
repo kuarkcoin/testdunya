@@ -1,4 +1,4 @@
-import { SubjectData } from "@/app/types";
+import { SubjectData } from "../types";
 
 export const matematikTest10: SubjectData = {
   term1: {
