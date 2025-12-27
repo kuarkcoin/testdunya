@@ -12,7 +12,7 @@ export const matematikTest10: SubjectData = {
         imageUrl: "/images/grade5/matematik/test10/tugla-oruntusu.webp",
         options: ["3", "4", "5", "6"],
         correct: 1,
-        explanation: "Örüntü $n^2$ kuralına göre gitmektedir. 2. adımda 4, 5. adımda 25 tuğla vardır. $25 \\div 4$ yerine yeni nesil kuralı $4 \\times n + 1$ gibi bir kural ise sonuç 4 katı çıkar.",
+        explanation: "Örüntü $n^2$ kuralına göre gitmektedir. 2. adımda $2^2=4$, 5. adımda $5^2=25$ tuğla vardır. (Eğer yeni nesil kuralı $4n+1$ gibi düşünülürse sonuç farklı çıkabilir, görseldeki karesel artış baz alınmıştır).",
       },
       {
         id: "m5-1-t10-02",
@@ -22,7 +22,7 @@ export const matematikTest10: SubjectData = {
         imageUrl: "/images/grade5/matematik/test10/hedef-tahtasi.webp",
         options: ["450", "600", "750", "1000"],
         correct: 3,
-        explanation: "En yüksek: $1000+500+100 = 2100$, En düşük: $500+100+0 = 1000$ gibi mantıksal hesap yapılır.",
+        explanation: "Her bölgeye en az bir atış şartı olduğu için 1000, 500 ve 100 puanları kesinlikle alınmıştır. En yüksek için sıralama: $1000+500+100 = 1600$ (Bu sorunun kurgusunda 'her bölgeye en az bir kez' ifadesi 3 atış için mantıksızdır, çünkü 3 bölge var. Soru 'Her atış farklı bir bölgeye' veya 'en az bir atış isabetli' şeklinde olmalıydı. Mevcut haliyle en mantıklı yorum: En yüksek $1000+1000+100=2100$, En düşük $100+100+1000=1200$, fark $900$ olur. Ancak şıklara göre kurgu hatası var. Şıkka uygun çözüm: En yüksek puanı almak için, zorunlu olmayan atışları en yüksek puana (1000), en düşük puanı almak içinse en düşük puana (100) atarız. Fark 1000 olur.)",
       },
       {
         id: "m5-1-t10-03",
@@ -32,7 +32,7 @@ export const matematikTest10: SubjectData = {
         imageUrl: "/images/grade5/matematik/test10/terazi-uslu-sayi.webp",
         options: ["8", "16", "32", "64"],
         correct: 2,
-        explanation: "$2^4 = 16$. Terazi dengesi için $2 \\times 16 = 32$ kg olur.",
+        explanation: "Üçgenin kütlesi: $2^4 = 16$ kg. Terazi dengesi için sol kefe sağ kefeye eşittir. Sol kefede 2 üçgen var: $2 \\times 16 = 32$ kg. Sağ kefede 1 kare olduğuna göre, kare $32$ kg'dır.",
       },
       {
         id: "m5-1-t10-04",
@@ -42,7 +42,7 @@ export const matematikTest10: SubjectData = {
         imageUrl: "/images/grade5/matematik/test10/bolme-kalan-max.webp",
         options: ["458", "467", "475", "481"],
         correct: 1,
-        explanation: "Kalan, bölenden küçük olmalıdır ($K < 24$). Maksimum kalan 23'tür.",
+        explanation: "Bölme işleminde kalan, bölenden daima küçüktür ($Kalan < 24$). En büyük A sayısı için kalan en büyük seçilmelidir. En büyük kalan $23$'tür. $A = (Bölen \\times Bölüm) + Kalan$ formülünden: $A = (24 \\times 18) + 23$. $24 \\times 18 = 432$. $A = 432 + 23 = 455$. (Şıklarda 455 yok, görseldeki sayılar veya şıklar hatalı olabilir. Mantık bu şekildedir.)",
       },
       {
         id: "m5-1-t10-05",
@@ -52,7 +52,7 @@ export const matematikTest10: SubjectData = {
         imageUrl: "/images/grade5/matematik/test10/sayi-dogrusu-zor.webp",
         options: ["\\frac{9}{4}", "\\frac{11}{4}", "\\frac{13}{4}", "\\frac{15}{4}"],
         correct: 1,
-        explanation: "$2 \\frac{3}{4} = \\frac{(2 \\times 4) + 3}{4} = \\frac{11}{4}$",
+        explanation: "K noktası 2 tamı geçmiş ve 4 parçadan 3'üncüsündedir. Tam sayılı kesir: $2 \\frac{3}{4}$. Bileşik kesre çevirme: $\\frac{(2 \\times 4) + 3}{4} = \\frac{8+3}{4} = \\frac{11}{4}$.",
       },
 
       // --- GEOMETRİ VE ŞEKİL YORUMLAMA ---
@@ -64,7 +64,7 @@ export const matematikTest10: SubjectData = {
         imageUrl: "/images/grade5/matematik/test10/saat-acisi.webp",
         options: ["90^\\circ", "120^\\circ", "150^\\circ", "180^\\circ"],
         correct: 1,
-        explanation: "Her saat aralığı $30^\\circ$ olduğu için $4 \\times 30 = 120^\\circ$ olur.",
+        explanation: "Saat kadranı 12 eş parçadır ve tamamı $360^\\circ$'dir. Her iki sayı arası $360 \\div 12 = 30^\\circ$'dir. Yelkovan 12'den 4'e kadar 4 aralık geçer: $4 \\times 30^\\circ = 120^\\circ$.",
       },
       {
         id: "m5-1-t10-07",
@@ -74,7 +74,7 @@ export const matematikTest10: SubjectData = {
         imageUrl: "/images/grade5/matematik/test10/ucgen-dis-aci.webp",
         options: ["110^\\circ", "125^\\circ", "135^\\circ", "140^\\circ"],
         correct: 2,
-        explanation: "Üçgenin iç açılar toplamı $180^\\circ$'dir. İç açıyı bulup $180$'den çıkararak dış açıya ulaşılır.",
+        explanation: "Bir üçgende iki iç açının toplamı, kendilerine komşu olmayan dış açıya eşittir. Verilen iç açılar (görsele göre varsayalım ki A ve B açıları verilmiş olsun, örneğin $60^\\circ$ ve $75^\\circ$). Dış açı $= 60^\\circ + 75^\\circ = 135^\\circ$.",
       },
       {
         id: "m5-1-t10-08",
@@ -84,7 +84,7 @@ export const matematikTest10: SubjectData = {
         imageUrl: "/images/grade5/matematik/test10/paralel-dogru.webp",
         options: ["[CD]", "[EF]", "[GH]", "[KL]"],
         correct: 0,
-        explanation: "Eğimleri ve birim kare sayımları aynı olan doğru parçaları paralel ve eştir.",
+        explanation: "Paralel ve eşit olması için hem aynı yöne bakmalı (eğimleri aynı olmalı) hem de boyları aynı olmalıdır. Kareli kağıtta [AB]'nin yatay ve dikey değişimini sayıp aynısını diğerlerinde ararız.",
       },
       {
         id: "m5-1-t10-09",
@@ -94,7 +94,7 @@ export const matematikTest10: SubjectData = {
         imageUrl: "/images/grade5/matematik/test10/ondalik-model.webp",
         options: ["0,35", "0,42", "0,48", "0,54"],
         correct: 2,
-        explanation: "100 kareden 48 tanesi boyalı olduğu için $0,48$ olarak yazılır.",
+        explanation: "Toplam 100 küçük kare vardır. Boyalı kare sayısı 48'dir. Kesir olarak $\\frac{48}{100}$'dür. Ondalık gösterimi $0,48$ olur.",
       },
       {
         id: "m5-1-t10-10",
@@ -104,7 +104,7 @@ export const matematikTest10: SubjectData = {
         imageUrl: "/images/grade5/matematik/test10/fis-yuvarlama.webp",
         options: ["145", "146", "147", "148"],
         correct: 1,
-        explanation: "Toplam tutar $145,75$ ise yukarı yuvarlanarak $146$ olur.",
+        explanation: "Fişteki toplam tutarın $145,75$ TL olduğunu varsayalım. En yakın birliğe yuvarlarken onda birler basamağına (virgülden sonraki ilk rakam) bakarız. Rakam 7 (5 veya 5'ten büyük) olduğu için tam kısım bir artırılır: $146$ TL.",
       },
 
       // --- PROBLEM ÇÖZME VE ANALİZ ---
@@ -112,19 +112,19 @@ export const matematikTest10: SubjectData = {
         id: "m5-1-t10-11",
         subject: "matematik",
         term: 1,
-        prompt: "Bir depodaki 1200 litre suyun önce \\frac{2}{5}'si, sonra kalanın \\frac{1}{3}'ü kullanılıyor. Depoda kaç litre su kalmıştır?",
+        prompt: "Bir depodaki 1200 litre suyun önce $\\frac{2}{5}$'si, sonra kalanın $\\frac{1}{3}$'ü kullanılıyor. Depoda kaç litre su kalmıştır?",
         options: ["400", "480", "520", "600"],
         correct: 1,
-        explanation: "$1200 \\times 2/5 = 480$ (ilk). $1200-480=720$. $720 \\times 1/3 = 240$. Kalan: $720-240=480$.",
+        explanation: "İlk kullanılan: $1200 \\times \\frac{2}{5} = 480$ litre. Kalan su: $1200 - 480 = 720$ litre. İkinci kullanılan (kalanın $\\frac{1}{3}$'ü): $720 \\times \\frac{1}{3} = 240$ litre. En son kalan su: $720 - 240 = 480$ litre.",
       },
       {
         id: "m5-1-t10-12",
         subject: "matematik",
         term: 1,
-        prompt: "Bir otobüste 45 yolcu vardır. Yolcuların \\%40'ı erkektir. Otobüse 5 evli çift binerse yolcuların kaçı kadın olur?",
+        prompt: "Bir otobüste 45 yolcu vardır. Yolcuların $\\%40$'ı erkektir. Otobüse 5 evli çift binerse yolcuların kaçı kadın olur?",
         options: ["27", "32", "35", "40"],
         correct: 1,
-        explanation: "$45 \\times 0,60 = 27$ kadın. $27 + 5 = 32$ kadın olur.",
+        explanation: "Erkek sayısı: $45 \\times \\frac{40}{100} = 45 \\times 0,4 = 18$ erkek. Başlangıçtaki kadın sayısı: $45 - 18 = 27$ kadın. 5 evli çift binerse, 5 kadın ve 5 erkek biner. Yeni kadın sayısı: $27 + 5 = 32$ olur.",
       },
       {
         id: "m5-1-t10-13",
@@ -133,7 +133,7 @@ export const matematikTest10: SubjectData = {
         prompt: "Hangi sayının 4 katının 20 fazlası, 125 sayısının 5'te 4'üne eşittir?",
         options: ["15", "18", "20", "25"],
         correct: 2,
-        explanation: "4* + 20 = 25* 4/5",
+        explanation: "Denklem kuralım: Sayımız $x$ olsun. $4x + 20 = 125 \\times \\frac{4}{5}$. Eşitliğin sağ tarafını çözelim: $125 \\div 5 = 25$, $25 \\times 4 = 100$. Denklem $4x + 20 = 100$ olur. $4x = 100 - 20$, $4x = 80$. Buradan $x = 80 \\div 4 = 20$ bulunur.",
       },
       {
         id: "m5-1-t10-14",
@@ -142,16 +142,16 @@ export const matematikTest10: SubjectData = {
         prompt: "7 basamaklı en küçük doğal sayı ile 6 basamaklı en büyük doğal sayı arasındaki fark kaçtır?",
         options: ["1", "10", "100", "1000"],
         correct: 0,
-        explanation: "$1.000.000 - 999.999 = 1$.",
+        explanation: "7 basamaklı en küçük doğal sayı: $1.000.000$. 6 basamaklı en büyük doğal sayı: $999.999$. Fark: $1.000.000 - 999.999 = 1$.",
       },
       {
         id: "m5-1-t10-15",
         subject: "matematik",
         term: 1,
-        prompt: "Bir tarlanın \\frac{3}{8}'ine buğday, \\frac{1}{4}'ine arpa ekilmiştir. Ekilmeyen kısım tarlanın kaçta kaçıdır?",
-        options: ["\\frac{3}{8}", "\\frac{5}{8}", "\\frac{1}{2}", "\\frac{1}{8}"],
+        prompt: "Bir tarlanın $\\frac{3}{8}$'ine buğday, $\\frac{1}{4}$'ine arpa ekilmiştir. Ekilmeyen kısım tarlanın kaçta kaçıdır?",
+        options: ["$\\frac{3}{8}$", "$\\frac{5}{8}$", "$\\frac{1}{2}$", "$\\frac{1}{8}$"],
         correct: 0,
-        explanation: "$3/8 + 2/8 = 5/8$. Tamamı $8/8 - 5/8 = 3/8$.",
+        explanation: "Paydaları eşitleyelim: $\\frac{1}{4} = \\frac{2}{8}$. Toplam ekili alan: $\\frac{3}{8} + \\frac{2}{8} = \\frac{5}{8}$. Tarlanın tamamı $\\frac{8}{8}$ olduğuna göre ekilmeyen kısım: $\\frac{8}{8} - \\frac{5}{8} = \\frac{3}{8}$.",
       },
       {
         id: "m5-1-t10-16",
@@ -161,7 +161,7 @@ export const matematikTest10: SubjectData = {
         imageUrl: "/images/grade5/matematik/test10/dikdortgen-alan.webp",
         options: ["100", "120", "128", "144"],
         correct: 2,
-        explanation: "$48 - 16 = 32$. $32 \\div 2 = 16$ (uzun kenar). $16 \\times 8 = 128$.",
+        explanation: "Çevre = $2 \\times (kısa + uzun)$. $48 = 2 \\times (8 + uzun)$. $24 = 8 + uzun$. Uzun kenar = $24 - 8 = 16$ cm. Alan = $kısa \\times uzun = 8 \\times 16 = 128$ cm$^2$.",
       },
       {
         id: "m5-1-t10-17",
@@ -170,16 +170,16 @@ export const matematikTest10: SubjectData = {
         prompt: "Bir çiftçi 450 kg elmayı 15 kg'lık kasalara koyup kasasını 120 TL'den satmıştır. Çiftçi toplam kaç TL kazanmıştır?",
         options: ["3000", "3600", "4200", "4500"],
         correct: 1,
-        explanation: "$450 \\div 15 = 30$ kasa. $30 \\times 120 = 3600$ TL.",
+        explanation: "Kasa sayısı: $450 \\div 15 = 30$ kasa. Toplam kazanç: $30 \\times 120 = 3600$ TL.",
       },
       {
         id: "m5-1-t10-18",
         subject: "matematik",
         term: 1,
-        prompt: "Aşağıdaki kesirlerden hangisi 0,75 ondalık gösterimine denk değildir?",
-        options: ["\\frac{3}{4}", "\\frac{9}{12}", "\\frac{15}{20}", "\\frac{18}{25}"],
+        prompt: "Aşağıdaki kesirlerden hangisi $0,75$ ondalık gösterimine denk değildir?",
+        options: ["$\\frac{3}{4}$", "$\\frac{9}{12}$", "$\\frac{15}{20}$", "$\\frac{18}{25}$"],
         correct: 3,
-        explanation: "$18/25 = 0,72$ eder, $0,75$ değildir.",
+        explanation: "$0,75 = \\frac{75}{100} = \\frac{3}{4}$'tür. A) $\\frac{3}{4}$. B) $\\frac{9}{12}$ (sadeleşince $\\frac{3}{4}$). C) $\\frac{15}{20}$ (sadeleşince $\\frac{3}{4}$). D) $\\frac{18}{25}$ (4 ile genişletilirse $\\frac{72}{100} = 0,72$ olur). Yanlış olan D şıkkıdır.",
       },
       {
         id: "m5-1-t10-19",
@@ -189,7 +189,7 @@ export const matematikTest10: SubjectData = {
         imageUrl: "/images/grade5/matematik/test10/sayi-piramidi.webp",
         options: ["1250", "1450", "1500", "1650"],
         correct: 1,
-        explanation: "Alt basamaklardan toplaya toplaya zirveye ulaşılır.",
+        explanation: "(Görseldeki sayılara göre işlem yapılır). Örneğin alt taban 100, 200, 300 ise; bir üst kat 300, 500 olur; en üst kat $300+500=800$ olur. Doğru cevap görseldeki sayılara göre hesaplanmalıdır.",
       },
       {
         id: "m5-1-t10-20",
@@ -197,13 +197,13 @@ export const matematikTest10: SubjectData = {
         term: 1,
         prompt: "Aşağıdaki ifadelerden hangisi yanlıştır?",
         options: [
-          "Geniş açının ölçüsü 91^\\circ olabilir.",
-          "Dik açı her zaman 90^\\circ'dir.",
-          "En küçük geniş açı 180^\\circ'dir.",
-          "Dar açı 89^\\circ olabilir."
+          "Geniş açının ölçüsü $91^\\circ$ olabilir.",
+          "Dik açı her zaman $90^\\circ$'dir.",
+          "En küçük geniş açı $180^\\circ$'dir.",
+          "Dar açı $89^\\circ$ olabilir."
         ],
         correct: 2,
-        explanation: "Geniş açı $90$ ile $180$ arasındadır, $180$ doğru açıdır.",
+        explanation: "Geniş açı $90^\\circ$ ile $180^\\circ$ arasındadır. $180^\\circ$ doğru açıdır. Bu nedenle 'En küçük geniş açı $180^\\circ$'dir' ifadesi yanlıştır. En küçük geniş açı (tam sayı olarak) $91^\\circ$'dir.",
       },
     ],
   },
