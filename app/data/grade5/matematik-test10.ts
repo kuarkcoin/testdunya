@@ -28,7 +28,7 @@ export const matematikTest10: SubjectData = {
         id: "m5-1-t10-03",
         subject: "matematik",
         term: 1,
-        prompt: "Görseldeki eşit kollu terazi dengededir. Bir adet üçgen kütlesi $2^4$ kg olduğuna göre, bir adet kare kütlesi kaç kg'dır?",
+        prompt: "Görseldeki eşit kollu terazi dengededir. Bir adet üçgen kütlesi 16 kg olduğuna göre, bir adet kare kütlesi kaç kg'dır?",
         imageUrl: "/images/grade5/matematik/test10/terazi-uslu-sayi.webp",
         options: ["8", "16", "32", "64"],
         correct: 2,
