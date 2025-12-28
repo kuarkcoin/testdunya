@@ -63,9 +63,9 @@ export const matematikData: SubjectData = {
         term: 1,
         prompt: "Görseldeki modelde boyalı kısmı ifade eden bileşik kesir aşağıdakilerden hangisidir?",
         imageUrl: "/images/grade5/matematik/test1/kesir-modelleri.webp",
-        options: ["$\\frac{8}{4}$", "$\\frac{9}{4}$", "$\\frac{11}{4}$", "$\\frac{12}{4}$"],
+        options: ["$\\frac{15}{5}$", "$\\frac{16}{5}$", "$\\frac{14}{5}$", "$\\frac{13}{5}$"],
         correct: 2,
-        explanation: "Toplam boyalı parça sayısı $11$, payda $4$ olduğu için $\\frac{11}{4}$'tür.",
+        explanation: "Toplam boyalı parça sayısı $14$, payda $5$ olduğu için $\\frac{14}{5}$'tür.",
       },
       {
         id: "m5-1-t1-07",
