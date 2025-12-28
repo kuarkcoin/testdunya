@@ -3,7 +3,10 @@ import { SubjectData } from "./types";
 import { matematikTest10 } from "./matematik-test10";
 
 export const matematikData: SubjectData = {
- test1: [
+       
+  // BİRİNCİ DÖNEM VERİLERİ
+  term1: {
+    test1: [
       {
         id: "m5-1-t1-01",
         subject: "matematik",
@@ -201,8 +204,38 @@ export const matematikData: SubjectData = {
         correct: 1,
         explanation: "En dolu vagon $45$, en boş $30$ ise fark $15$ olur.",
       }
-    ]
-  },
+    ],
+    test2: [      
+      {
+        id: "m5-1-t1-17", // Test2'nin başına eklemek istediğiniz piramit sorusu
+        subject: "matematik",
+        term: 1,
+        prompt: "Görseldeki sayı piramidinde her kutu altındaki iki komşu kutunun toplamına eşittir. En üstteki sayı kaçtır?",
+        imageUrl: "/images/grade5/matematik/test1/piramit-logic.webp",
+        options: ["420", "540", "680", "720"],
+        correct: 2,
+        explanation: "Alt basamaklardaki toplamlar takip edildiğinde zirveye $680$ yazılır.",
+      },
+      {
+        id: "m5-1-t2-01",
+        subject: "matematik",
+        term: 1,
+        prompt: "702.045.813 sayısında on milyonlar basamağındaki rakam ile on binler basamağındaki rakamın basamak değerleri toplamı kaçtır?",
+        options: ["70.040.000", "40.000", "0", "40.000.000"],
+        correct: 1,
+        explanation: "0 + 40.000 = 40.000.",
+      },
+      // ... (Diğer Test 2 soruları aynı şekilde devam ediyor)
+      {
+        id: "m5-1-t2-20",
+        subject: "matematik",
+        term: 1,
+        prompt: "4+9 sonucu kaçtır?",
+        options: ["10", "13", "25", "36"],
+        correct: 1,
+        explanation: "13.",
+      },
+    ],
     test2: [      id: "m5-1-t1-17",
             {
         subject: "matematik",
