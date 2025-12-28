@@ -215,30 +215,7 @@ export const matematikData: SubjectData = {
         correct: 1,
         explanation: "0 + 40.000 = 40.000.",
       },
-      // ... (Diğer Test 2 soruları aynı şekilde devam ediyor)
-      {
-        id: "m5-1-t2-20",
-        subject: "matematik",
-        term: 1,
-        prompt: "4+9 sonucu kaçtır?",
-        options: ["10", "13", "25", "36"],
-        correct: 1,
-        explanation: "13.",
-      },
-    ],
-    test2: [  
-            {
-        subject: "matematik",
-        term: 1,
-        id: "m5-1-t2-01",
-        subject: "matematik",
-        term: 1,
-        prompt:
-          "702.045.813 sayısında on milyonlar basamağındaki rakam ile on binler basamağındaki rakamın basamak değerleri toplamı kaçtır?",
-        options: ["70.040.000", "40.000", "0", "40.000.000"],
-        correct: 1,
-        explanation: "0 + 40.000 = 40.000.",
-      },
+
       {
         id: "m5-1-t2-02",
         subject: "matematik",
