@@ -172,9 +172,9 @@ export const matematikData: SubjectData = {
         term: 1,
         prompt: "Görseldeki sayı piramidinde her kutu altındaki iki komşu kutunun toplamına eşittir. En üstteki sayı kaçtır?",
         imageUrl: "/images/grade5/matematik/test1/piramit-logic.webp",
-        options: ["420", "540", "680", "720"],
+        options: ["36", "37", "38", "39"],
         correct: 2,
-        explanation: "Alt basamaklardaki toplamlar takip edildiğinde zirveye $680$ yazılır.",
+        explanation: "Alt basamaklardaki toplamlar takip edildiğinde zirveye $38$ yazılır.",
       },
       {
         id: "m5-1-t1-18",
