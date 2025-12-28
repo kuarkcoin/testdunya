@@ -162,9 +162,9 @@ export const matematikData: SubjectData = {
         term: 1,
         prompt: "Görseldeki örüntüde her adımda kullanılan şekil sayısı belirli bir kurala göre artmaktadır. 10. adımda kaç şekil kullanılır?",
         imageUrl: "/images/grade5/matematik/test1/sekil-oruntusu.webp",
-        options: ["19", "21", "23", "25"],
+        options: ["19", "20", "23", "25"],
         correct: 1,
-        explanation: "Kural $2n+1$ ise: $2 \\times 10 + 1 = 21$.",
+        explanation: "Şekiller sayıların 2 katı olacak şeklindedir.",
       },
       {
         id: "m5-1-t1-17",
