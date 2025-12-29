@@ -1323,6 +1323,375 @@ export const speedRunQuestions: SpeedQuestion[] = [
     question: 'Hangi gün Çarşamba\'dır?',
     options: ['Tuesday', 'Wednesday', 'Thursday', 'Friday'],
     answer: 'Wednesday'
+  },
+  // ==========================
+  // 🧩 EKSTRA +50 SORU (PAKET 2)
+  // ==========================
+
+  // ==========================
+  // 📐 MATEMATİK (+13)  m47 - m59
+  // ==========================
+  {
+    id: 'm47',
+    category: 'Matematik',
+    question: '6 × 7 işleminin sonucu kaçtır?',
+    options: ['36', '42', '48', '56'],
+    answer: '42'
+  },
+  {
+    id: 'm48',
+    category: 'Matematik',
+    question: 'Bir dikdörtgenin alanı nasıl bulunur?',
+    options: ['Kenarları toplarız', 'Uzun kenar × kısa kenar', 'Kenarları böleriz', 'Çevreyi 2’ye böleriz'],
+    answer: 'Uzun kenar × kısa kenar'
+  },
+  {
+    id: 'm49',
+    category: 'Matematik',
+    question: '2/8 kesri sadeleştirilirse hangisi olur?',
+    options: ['1/2', '1/4', '2/4', '4/8'],
+    answer: '1/4'
+  },
+  {
+    id: 'm50',
+    category: 'Matematik',
+    question: '0,25 sayısı hangi kesre eşittir?',
+    options: ['1/2', '1/4', '3/4', '1/5'],
+    answer: '1/4'
+  },
+  {
+    id: 'm51',
+    category: 'Matematik',
+    question: 'Bir üçgende iki kenar 5 cm ve 7 cm ise üçüncü kenar en fazla kaç cm olabilir?',
+    options: ['12', '13', '11', '10'],
+    answer: '11'
+  },
+  {
+    id: 'm52',
+    category: 'Matematik',
+    question: 'Hangisi asal sayıdır?',
+    options: ['9', '15', '17', '21'],
+    answer: '17'
+  },
+  {
+    id: 'm53',
+    category: 'Matematik',
+    question: '3/5 + 1/5 işleminin sonucu kaçtır?',
+    options: ['4/10', '4/5', '3/10', '2/5'],
+    answer: '4/5'
+  },
+  {
+    id: 'm54',
+    category: 'Matematik',
+    question: 'Bir sayının 3 katı 27 ise sayı kaçtır?',
+    options: ['7', '8', '9', '10'],
+    answer: '9'
+  },
+  {
+    id: 'm55',
+    category: 'Matematik',
+    question: '1,2 + 0,8 işleminin sonucu kaçtır?',
+    options: ['1,10', '2,0', '2,8', '0,4'],
+    answer: '2,0'
+  },
+  {
+    id: 'm56',
+    category: 'Matematik',
+    question: 'Bir tam sayının %10’u ne demektir?',
+    options: ['10’da 1’i', '2’de 1’i', '4’te 1’i', '5’te 1’i'],
+    answer: '10’da 1’i'
+  },
+  {
+    id: 'm57',
+    category: 'Matematik',
+    question: 'Bir doğru üzerinde iki nokta seçilirse kaç doğru parçası oluşur?',
+    options: ['0', '1', '2', '3'],
+    answer: '1'
+  },
+  {
+    id: 'm58',
+    category: 'Matematik',
+    question: '2 saat 45 dakika toplam kaç dakikadır?',
+    options: ['145', '155', '165', '175'],
+    answer: '165'
+  },
+  {
+    id: 'm59',
+    category: 'Matematik',
+    question: 'Bir sayının 1/5’i 8 ise sayının tamamı kaçtır?',
+    options: ['35', '40', '45', '50'],
+    answer: '40'
+  },
+
+  // ==========================
+  // 🔬 FEN (+12)  f47 - f58
+  // ==========================
+  {
+    id: 'f47',
+    category: 'Fen',
+    question: 'Bitkiler kökleriyle en çok neyi alır?',
+    options: ['Işık', 'Su ve mineraller', 'Karbondioksit', 'Oksijen'],
+    answer: 'Su ve mineraller'
+  },
+  {
+    id: 'f48',
+    category: 'Fen',
+    question: 'Hangisi bir gezegendir?',
+    options: ['Güneş', 'Ay', 'Mars', 'Kutup Yıldızı'],
+    answer: 'Mars'
+  },
+  {
+    id: 'f49',
+    category: 'Fen',
+    question: 'Mıknatısın N ve S uçları birbirini nasıl etkiler?',
+    options: ['Aynı uçlar çeker', 'Aynı uçlar iter', 'Hepsi çeker', 'Hepsi iter'],
+    answer: 'Aynı uçlar iter'
+  },
+  {
+    id: 'f50',
+    category: 'Fen',
+    question: 'Hangi madde saydamdır?',
+    options: ['Tahta', 'Cam', 'Metal', 'Taş'],
+    answer: 'Cam'
+  },
+  {
+    id: 'f51',
+    category: 'Fen',
+    question: 'Bir devrede ampul yanmıyorsa ilk kontrol edilmesi gereken nedir?',
+    options: ['Kablonun rengi', 'Pil ve bağlantılar', 'Ampulün şekli', 'Anahtarın adı'],
+    answer: 'Pil ve bağlantılar'
+  },
+  {
+    id: 'f52',
+    category: 'Fen',
+    question: 'Su döngüsünde suyun buharlaşıp gökyüzüne çıkmasına ne denir?',
+    options: ['Yoğuşma', 'Buharlaşma', 'Donma', 'Erime'],
+    answer: 'Buharlaşma'
+  },
+  {
+    id: 'f53',
+    category: 'Fen',
+    question: 'Hangisi canlıların ortak özelliği değildir?',
+    options: ['Büyüme', 'Üreme', 'Hareket etme', 'Paslanma'],
+    answer: 'Paslanma'
+  },
+  {
+    id: 'f54',
+    category: 'Fen',
+    question: 'İnsanlarda kanı vücuda pompalayan organ hangisidir?',
+    options: ['Akciğer', 'Mide', 'Kalp', 'Böbrek'],
+    answer: 'Kalp'
+  },
+  {
+    id: 'f55',
+    category: 'Fen',
+    question: 'Aşağıdaki duyu organlarından hangisi tat almamızı sağlar?',
+    options: ['Dil', 'Kulak', 'Göz', 'Burun'],
+    answer: 'Dil'
+  },
+  {
+    id: 'f56',
+    category: 'Fen',
+    question: 'Sıvıların belirli bir şekli var mıdır?',
+    options: ['Evet, hep aynı', 'Hayır, kabın şeklini alır', 'Sadece kare olur', 'Sadece yuvarlak olur'],
+    answer: 'Hayır, kabın şeklini alır'
+  },
+  {
+    id: 'f57',
+    category: 'Fen',
+    question: 'Hangisi katıdan gaza geçişe örnektir?',
+    options: ['Buzun erimesi', 'Suyun donması', 'Kuru buzun uçması', 'Suyun kaynaması'],
+    answer: 'Kuru buzun uçması'
+  },
+  {
+    id: 'f58',
+    category: 'Fen',
+    question: 'Güneş ışınlarının Dünya’ya geliş açısı en dik olduğu zaman hangisidir?',
+    options: ['Sabah', 'Öğle', 'Akşam', 'Gece'],
+    answer: 'Öğle'
+  },
+
+  // ==========================
+  // 📚 TÜRKÇE (+12)  t45 - t56
+  // ==========================
+  {
+    id: 't45',
+    category: 'Türkçe',
+    question: 'Aşağıdakilerden hangisi eş anlamlıdır?',
+    options: ['Kara - Siyah', 'Büyük - Küçük', 'Hızlı - Yavaş', 'Aç - Tok'],
+    answer: 'Kara - Siyah'
+  },
+  {
+    id: 't46',
+    category: 'Türkçe',
+    question: 'Aşağıdaki cümlelerin hangisinde soru işareti kullanılmalıdır?',
+    options: ['Bugün hava çok güzel.', 'Ne zaman geleceksin', 'Harika bir gün!', 'Kitap okuyorum.'],
+    answer: 'Ne zaman geleceksin'
+  },
+  {
+    id: 't47',
+    category: 'Türkçe',
+    question: '"Kalemim" kelimesinde hangi ek vardır?',
+    options: ['Çoğul eki', 'İyelik eki', 'Hâl eki', 'Yapım eki'],
+    answer: 'İyelik eki'
+  },
+  {
+    id: 't48',
+    category: 'Türkçe',
+    question: 'Aşağıdakilerden hangisi zıt anlamlıdır?',
+    options: ['Uzak - Irak', 'Güzel - Hoş', 'Sıcak - Soğuk', 'Mutlu - Sevinçli'],
+    answer: 'Sıcak - Soğuk'
+  },
+  {
+    id: 't49',
+    category: 'Türkçe',
+    question: 'Öyküde olayların geçtiği yere ne denir?',
+    options: ['Kahraman', 'Zaman', 'Mekân', 'Konu'],
+    answer: 'Mekân'
+  },
+  {
+    id: 't50',
+    category: 'Türkçe',
+    question: 'Aşağıdakilerden hangisi “öznel” bir cümledir?',
+    options: ['Ankara Türkiye’nin başkentidir.', 'Su 100°C’de kaynar.', 'Bu film çok güzeldi.', 'Dün pazara gittim.'],
+    answer: 'Bu film çok güzeldi.'
+  },
+  {
+    id: 't51',
+    category: 'Türkçe',
+    question: '"Çalışkan" kelimesi hangi tür sözcüktür?',
+    options: ['İsim', 'Sıfat', 'Zarf', 'Zamir'],
+    answer: 'Sıfat'
+  },
+  {
+    id: 't52',
+    category: 'Türkçe',
+    question: 'Aşağıdaki cümlelerin hangisinde “ki” ayrı yazılmalıdır?',
+    options: ['İyi ki geldin.', 'Dünkü maç çok iyiydi.', 'Baktımki gelmiyor.', 'Evdeki kitaplar.'],
+    answer: 'İyi ki geldin.'
+  },
+  {
+    id: 't53',
+    category: 'Türkçe',
+    question: 'Hangisi bir atasözü değildir?',
+    options: ['Damlaya damlaya göl olur.', 'Ağaç yaşken eğilir.', 'Göz atmak', 'Sakla samanı, gelir zamanı.'],
+    answer: 'Göz atmak'
+  },
+  {
+    id: 't54',
+    category: 'Türkçe',
+    question: 'Aşağıdaki kelimelerden hangisi sesteştir?',
+    options: ['Kalem', 'Gül', 'Defter', 'Silgi'],
+    answer: 'Gül'
+  },
+  {
+    id: 't55',
+    category: 'Türkçe',
+    question: 'Cümlede işi yapanı bildiren öğe hangisidir?',
+    options: ['Yüklem', 'Özne', 'Nesne', 'Zarf tümleci'],
+    answer: 'Özne'
+  },
+  {
+    id: 't56',
+    category: 'Türkçe',
+    question: '"Koşarak geldi." cümlesinde “koşarak” hangi tür sözcüktür?',
+    options: ['İsim', 'Zarf', 'Sıfat', 'Zamir'],
+    answer: 'Zarf'
+  },
+
+  // ==========================
+  // 🌍 İNGİLİZCE (+13)  e46 - e58
+  // ==========================
+  {
+    id: 'e46',
+    category: 'İngilizce',
+    question: '"She ____ to school every day." boşluğa hangisi gelir?',
+    options: ['go', 'goes', 'going', 'gone'],
+    answer: 'goes'
+  },
+  {
+    id: 'e47',
+    category: 'İngilizce',
+    question: '"There is" ne demektir?',
+    options: ['Orada yok', 'Var', 'Nerede', 'Neden'],
+    answer: 'Var'
+  },
+  {
+    id: 'e48',
+    category: 'İngilizce',
+    question: '"How many" sorusu neyi sorar?',
+    options: ['Nerede', 'Kaç tane', 'Ne zaman', 'Neden'],
+    answer: 'Kaç tane'
+  },
+  {
+    id: 'e49',
+    category: 'İngilizce',
+    question: '"Hungry" ne demektir?',
+    options: ['Tok', 'Aç', 'Yorgun', 'Mutlu'],
+    answer: 'Aç'
+  },
+  {
+    id: 'e50',
+    category: 'İngilizce',
+    question: '"I have got a pen." cümlesi ne anlama gelir?',
+    options: ['Benim bir kalemim var.', 'Ben kalem alıyorum.', 'Kalemim yok.', 'Kalem istiyorum.'],
+    answer: 'Benim bir kalemim var.'
+  },
+  {
+    id: 'e51',
+    category: 'İngilizce',
+    question: '"Between" ne demektir?',
+    options: ['Üstünde', 'Altında', 'Arasında', 'Yanında'],
+    answer: 'Arasında'
+  },
+  {
+    id: 'e52',
+    category: 'İngilizce',
+    question: '"He is ____ the park." (Parkta)',
+    options: ['in', 'on', 'at', 'under'],
+    answer: 'in'
+  },
+  {
+    id: 'e53',
+    category: 'İngilizce',
+    question: 'Hangisi bir ay değildir?',
+    options: ['June', 'March', 'Sunday', 'April'],
+    answer: 'Sunday'
+  },
+  {
+    id: 'e54',
+    category: 'İngilizce',
+    question: '"Milk" hangi içecektir?',
+    options: ['Milk', 'Juice', 'Water', 'Tea'],
+    answer: 'Milk'
+  },
+  {
+    id: 'e55',
+    category: 'İngilizce',
+    question: '"I can ____ a bike." boşluğa hangisi gelir?',
+    options: ['ride', 'read', 'sleep', 'drink'],
+    answer: 'ride'
+  },
+  {
+    id: 'e56',
+    category: 'İngilizce',
+    question: '"Opposite" ne demektir?',
+    options: ['Yakın', 'Karşı', 'Arka', 'Ön'],
+    answer: 'Karşı'
+  },
+  {
+    id: 'e57',
+    category: 'İngilizce',
+    question: '"Where is the library?" sorusu ne sorar?',
+    options: ['Kütüphane nerede?', 'Kütüphaneye git.', 'Kütüphane var mı?', 'Kütüphane kapalı mı?'],
+    answer: 'Kütüphane nerede?'
+  },
+  {
+    id: 'e58',
+    category: 'İngilizce',
+    question: '"I ____ eleven years old." boşluğa hangisi gelir?',
+    options: ['am', 'is', 'are', 'be'],
+    answer: 'am'
   }
 
 ];
