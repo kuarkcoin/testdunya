@@ -783,5 +783,185 @@ export const speedRunQuestions: SpeedQuestion[] = [
     question: 'Hangisi bir renk değildir?',
     options: ['Red', 'Blue', 'Green', 'Milk'],
     answer: 'Milk'
+  },
+    // ==========================
+  // ➕ EK SORULAR (YENİ)
+  // ==========================
+  
+  // 📐 MATEMATİK (Devam)
+  {
+    id: 'm28',
+    category: 'Matematik',
+    question: 'Aşağıdaki kesirlerden hangisi yarımdan büyüktür?',
+    options: ['1/3', '2/5', '3/4', '4/9'],
+    answer: '3/4'
+  },
+  {
+    id: 'm29',
+    category: 'Matematik',
+    question: 'Okunuşu "üç tam onda beş" olan sayı hangisidir?',
+    options: ['3,05', '3,5', '3,005', '3,50'],
+    answer: '3,5'
+  },
+  {
+    id: 'm30',
+    category: 'Matematik',
+    question: '%25 sembolü ile gösterilen ifade aşağıdakilerden hangisine eşittir?',
+    options: ['Yarım', 'Bütün', 'Çeyrek', 'Hiçbiri'],
+    answer: 'Çeyrek'
+  },
+  {
+    id: 'm31',
+    category: 'Matematik',
+    question: 'Bir üçgenin en fazla kaç tane geniş açısı olabilir?',
+    options: ['1', '2', '3', '0'],
+    answer: '1'
+  },
+  {
+    id: 'm32',
+    category: 'Matematik',
+    question: 'Hangisi bir "doğru parçası" modelidir?',
+    options: ['İki ucu açık yol', 'Bir ucu açık ışın', 'İki ucu kapalı cetvel', 'Güneş ışığı'],
+    answer: 'İki ucu kapalı cetvel'
+  },
+  {
+    id: 'm33',
+    category: 'Matematik',
+    question: '4500 saniye kaç dakika eder?',
+    options: ['45', '60', '75', '90'],
+    answer: '75'
+  },
+
+  // 🔬 FEN BİLİMLERİ (Devam)
+  {
+    id: 'f28',
+    category: 'Fen',
+    question: 'Basit bir elektrik devresinde enerji kaynağı hangisidir?',
+    options: ['Pil', 'Ampul', 'Anahtar', 'Kablo'],
+    answer: 'Pil'
+  },
+  {
+    id: 'f29',
+    category: 'Fen',
+    question: 'Maddenin ayırt edici özelliklerinden biri hangisidir?',
+    options: ['Kütle', 'Hacim', 'Erime Noktası', 'Renk'],
+    answer: 'Erime Noktası'
+  },
+  {
+    id: 'f30',
+    category: 'Fen',
+    question: 'Aşağıdaki yüzeylerin hangisinde sürtünme kuvveti daha azdır?',
+    options: ['Çakıllı yol', 'Buz pisti', 'Halı', 'Toprak yol'],
+    answer: 'Buz pisti'
+  },
+  {
+    id: 'f31',
+    category: 'Fen',
+    question: 'Isı akışı hangi yöne doğru olur?',
+    options: ['Soğuktan sıcağa', 'Sıcaktan soğuğa', 'Eşit sıcaklıkta', 'Aşağıdan yukarıya'],
+    answer: 'Sıcaktan soğuğa'
+  },
+  {
+    id: 'f32',
+    category: 'Fen',
+    question: 'Hangisi çiçeksiz bir bitkidir?',
+    options: ['Gül', 'Papatya', 'Eğrelti Otu', 'Lale'],
+    answer: 'Eğrelti Otu'
+  },
+  {
+    id: 'f33',
+    category: 'Fen',
+    question: 'Biyoçeşitliliği tehdit eden en büyük faktör nedir?',
+    options: ['Doğal afetler', 'İnsan faaliyetleri', 'Mevsimler', 'Yağmur'],
+    answer: 'İnsan faaliyetleri'
+  },
+
+  // 📚 TÜRKÇE (Devam)
+  {
+    id: 't27',
+    category: 'Türkçe',
+    question: '"Kır" kelimesi aşağıdaki cümlelerin hangisinde mecaz anlamda kullanılmıştır?',
+    options: ['Bardak yere düşüp kırıldı.', 'Odunları baltayla kırdı.', 'Bu sözlerinle beni çok kırdın.', 'Cevizleri taşla kırdık.'],
+    answer: 'Bu sözlerinle beni çok kırdın.'
+  },
+  {
+    id: 't28',
+    category: 'Türkçe',
+    question: 'Aşağıdaki kelimelerden hangisi türemiş kelimedir?',
+    options: ['Kitap', 'Gözlük', 'Masa', 'Yol'],
+    answer: 'Gözlük'
+  },
+  {
+    id: 't29',
+    category: 'Türkçe',
+    question: '"Akıl akıldan üstündür." sözü ne tür bir sözdür?',
+    options: ['Deyim', 'Atasözü', 'Özdeyiş', 'Tekerleme'],
+    answer: 'Atasözü'
+  },
+  {
+    id: 't30',
+    category: 'Türkçe',
+    question: '"O, sınıfın en çalışkan öğrencisidir." cümlesinde hangi sözcük "karşılaştırma" bildirir?',
+    options: ['O', 'Sınıfın', 'En', 'Öğrencisidir'],
+    answer: 'En'
+  },
+  {
+    id: 't31',
+    category: 'Türkçe',
+    question: 'Aşağıdaki cümlelerin hangisinde "de / da" bağlacının yazımı yanlıştır?',
+    options: ['Sen de gel.', 'Ev de oturduk.', 'Kalemim Ahmet\'te kalmış.', 'Bunu ben de biliyorum.'],
+    answer: 'Ev de oturduk.'
+  },
+  {
+    id: 't32',
+    category: 'Türkçe',
+    question: '"Doktor" kelimesinin eş anlamlısı nedir?',
+    options: ['Hekim', 'Hemşire', 'Öğretmen', 'Mühendis'],
+    answer: 'Hekim'
+  },
+
+  // 🌍 İNGİLİZCE (Devam)
+  {
+    id: 'e28',
+    category: 'İngilizce',
+    question: '"My father\'s mother" is my...?',
+    options: ['Sister', 'Aunt', 'Grandmother', 'Cousin'],
+    answer: 'Grandmother'
+  },
+  {
+    id: 'e29',
+    category: 'İngilizce',
+    question: '"I ____ brush my teeth every morning." boşluğa ne gelir?',
+    options: ['always', 'never', 'am', 'is'],
+    answer: 'always'
+  },
+  {
+    id: 'e30',
+    category: 'İngilizce',
+    question: '"What time is it?" sorusuna hangisi cevap olabilir?',
+    options: ['It is a cat', 'It is 5 o\'clock', 'I am fine', 'Yes, I do'],
+    answer: 'It is 5 o\'clock'
+  },
+  {
+    id: 'e31',
+    category: 'İngilizce',
+    question: '"Cheese, Olive, Egg" hangi öğünle ilgilidir?',
+    options: ['Dinner', 'Lunch', 'Breakfast', 'School'],
+    answer: 'Breakfast'
+  },
+  {
+    id: 'e32',
+    category: 'İngilizce',
+    question: 'Hangi ülke "Japan" dır?',
+    options: ['Çin', 'Japonya', 'Almanya', 'İtalya'],
+    answer: 'Japonya'
+  },
+  {
+    id: 'e33',
+    category: 'İngilizce',
+    question: '"Don\'t run!" ne demektir?',
+    options: ['Koş!', 'Koşma!', 'Yürüme!', 'Otur!'],
+    answer: 'Koşma!'
   }
+
 ];
