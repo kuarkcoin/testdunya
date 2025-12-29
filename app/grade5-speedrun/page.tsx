@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { speedRunQuestions, SpeedQuestion } from '../data/grade5_speedrun_data';
 
-// Diziyi karıştıran yardımcı fonksiyon
 function shuffleArray<T>(array: T[]): T[] {
   const newArr = [...array];
   for (let i = newArr.length - 1; i > 0; i--) {
@@ -14,11 +13,10 @@ function shuffleArray<T>(array: T[]): T[] {
   return newArr;
 }
 
-// Soruları + seçenekleri birlikte karıştır
 function makeShuffledQuestions(): SpeedQuestion[] {
   return shuffleArray(speedRunQuestions).map(q => ({
     ...q,
-    options: shuffleArray(q.options)
+    options: shuffleArray(q.options),
   }));
 }
 
@@ -26,17 +24,35 @@ export default function Grade5SpeedRun() {
   const [gameState, setGameState] = useState<'menu' | 'playing' | 'gameover'>('menu');
   const [questions, setQuestions] = useState<SpeedQuestion[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
+
   const [score, setScore] = useState(0);
   const [timeLeft, setTimeLeft] = useState(60);
 
-  // (2) High score
+  // High score
   const [highScore, setHighScore] = useState(0);
   const HIGH_SCORE_KEY = 'grade5_speedrun_highscore';
 
-  // (3) Konfeti (200ms)
+  // Mini parçacık konfeti
   const [showConfetti, setShowConfetti] = useState(false);
 
-  // High score'u ilk açılışta oku
+  // ✅ Feedback state
+  const [selected, setSelected] = useState<string | null>(null);
+  const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
+  const [lockButtons, setLockButtons] = useState(false);
+  const [shake, setShake] = useState(false);
+
+  // ✅ Soru sayacı (sonsuz)
+  const [answeredCount, setAnsweredCount] = useState(0);
+
+  // ✅ Yanlış cezası ayarı (çocuklar için daha yumuşak)
+  const WRONG_PENALTY = 2; // -2 (istersen 0 yap)
+  const CORRECT_REWARD = 10;
+
+  const triggerConfetti = () => {
+    setShowConfetti(true);
+    window.setTimeout(() => setShowConfetti(false), 200);
+  };
+
   useEffect(() => {
     try {
       const saved = localStorage.getItem(HIGH_SCORE_KEY);
@@ -46,21 +62,23 @@ export default function Grade5SpeedRun() {
     }
   }, []);
 
-  const triggerConfetti = () => {
-    setShowConfetti(true);
-    window.setTimeout(() => setShowConfetti(false), 200);
-  };
-
-  // Oyunu Başlat
   const startGame = () => {
     setQuestions(makeShuffledQuestions());
     setCurrentIndex(0);
     setScore(0);
     setTimeLeft(60);
+    setAnsweredCount(0);
+
+    // feedback reset
+    setSelected(null);
+    setIsCorrect(null);
+    setLockButtons(false);
+    setShake(false);
+
     setGameState('playing');
   };
 
-  // Zamanlayıcı
+  // Timer
   useEffect(() => {
     if (gameState !== 'playing') return;
 
@@ -76,7 +94,7 @@ export default function Grade5SpeedRun() {
     return () => clearInterval(timer);
   }, [timeLeft, gameState]);
 
-  // Oyun bittiğinde high score güncelle
+  // Gameover: high score update
   useEffect(() => {
     if (gameState !== 'gameover') return;
 
@@ -84,68 +102,123 @@ export default function Grade5SpeedRun() {
       setHighScore(score);
       try {
         localStorage.setItem(HIGH_SCORE_KEY, String(score));
-      } catch {
-        // localStorage kapalı olabilir, sorun değil
-      }
+      } catch {}
     }
   }, [gameState, score, highScore]);
 
-  // Cevap Verme
-  const handleAnswer = (selectedOption: string) => {
-    // (1) Crash guard: questions yoksa işlem yapma
-    if (!questions.length) return;
+  const nextQuestion = () => {
+    setSelected(null);
+    setIsCorrect(null);
+    setLockButtons(false);
+    setShake(false);
 
-    const currentQ = questions[currentIndex];
-    if (!currentQ) return;
-
-    if (selectedOption === currentQ.answer) {
-      setScore(prev => prev + 10);
-      triggerConfetti(); // (3) doğru cevapta konfeti
-    } else {
-      setScore(prev => Math.max(0, prev - 5));
-    }
-
-    // Sonraki soru / yeniden karıştır
     if (currentIndex < questions.length - 1) {
       setCurrentIndex(prev => prev + 1);
     } else {
-      setQuestions(makeShuffledQuestions()); // options da karışır ✅
+      setQuestions(makeShuffledQuestions());
       setCurrentIndex(0);
     }
   };
 
-  // (1) Crash guard: playing'e geçince questions henüz dolmamış olabilir
+  const handleAnswer = (opt: string) => {
+    if (lockButtons) return;
+    if (!questions.length) return;
+
+    const q = questions[currentIndex];
+    if (!q) return;
+
+    setLockButtons(true);
+    setSelected(opt);
+
+    const correct = opt === q.answer;
+    setIsCorrect(correct);
+
+    setAnsweredCount(c => c + 1);
+
+    if (correct) {
+      setScore(prev => prev + CORRECT_REWARD);
+      triggerConfetti();
+    } else {
+      setScore(prev => Math.max(0, prev - WRONG_PENALTY));
+      setShake(true);
+      window.setTimeout(() => setShake(false), 250);
+    }
+
+    // ✅ 300ms sonra otomatik geçiş
+    window.setTimeout(() => {
+      nextQuestion();
+    }, 300);
+  };
+
   const isLoadingQuestion = gameState === 'playing' && questions.length === 0;
+  const currentQ = questions[currentIndex];
+
+  // Button style helper
+  const getBtnClass = (opt: string) => {
+    const base =
+      'py-4 px-2 rounded-xl font-bold text-lg transition-all active:scale-95 border-2 touch-manipulation';
+    const idle = 'bg-white/20 hover:bg-white/40 border-white/30';
+    if (!selected) return `${base} ${idle}`;
+
+    const isThis = opt === selected;
+    const correctOpt = currentQ?.answer;
+
+    // seçilen doğru
+    if (isThis && opt === correctOpt) return `${base} bg-green-500/90 border-green-200 text-white`;
+    // seçilen yanlış
+    if (isThis && opt !== correctOpt) return `${base} bg-red-500/90 border-red-200 text-white`;
+    // doğru seçenek (seçilmediyse) hafif göster
+    if (opt === correctOpt) return `${base} bg-green-500/40 border-green-200/60 text-white`;
+    // diğerleri soluk
+    return `${base} bg-white/10 border-white/20 text-white/70`;
+  };
 
   return (
     <div className="min-h-screen bg-violet-600 flex flex-col items-center justify-center p-4 text-white relative overflow-hidden">
 
-      {/* Konfeti overlay */}
+      {/* Mini parçacık konfeti */}
       {showConfetti && (
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-          <div className="confetti-burst text-5xl">🎉✨🎊</div>
+          <div className="confetti-wrap">
+            {Array.from({ length: 12 }).map((_, i) => (
+              <span key={i} className="confetti-piece" />
+            ))}
+          </div>
           <style jsx>{`
-            .confetti-burst {
-              animation: pop 200ms ease-out both;
+            .confetti-wrap { position: relative; width: 1px; height: 1px; }
+            .confetti-piece {
+              position: absolute; left: 0; top: 0;
+              width: 10px; height: 6px; border-radius: 9999px;
+              background: white; opacity: 0.95;
+              animation: fly 200ms ease-out both;
             }
-            @keyframes pop {
-              from { transform: scale(0.6); opacity: 0.2; }
-              to   { transform: scale(1.3); opacity: 1; }
+            .confetti-piece:nth-child(1)  { --x: -30px; --y: -45px; }
+            .confetti-piece:nth-child(2)  { --x:  10px; --y: -60px; }
+            .confetti-piece:nth-child(3)  { --x:  35px; --y: -40px; }
+            .confetti-piece:nth-child(4)  { --x: -55px; --y: -20px; }
+            .confetti-piece:nth-child(5)  { --x:  60px; --y: -15px; }
+            .confetti-piece:nth-child(6)  { --x: -20px; --y: -70px; }
+            .confetti-piece:nth-child(7)  { --x:  20px; --y: -75px; }
+            .confetti-piece:nth-child(8)  { --x: -70px; --y:  -5px; }
+            .confetti-piece:nth-child(9)  { --x:  75px; --y:  -5px; }
+            .confetti-piece:nth-child(10) { --x: -40px; --y: -55px; }
+            .confetti-piece:nth-child(11) { --x:  45px; --y: -50px; }
+            .confetti-piece:nth-child(12) { --x:   0px; --y: -85px; }
+            @keyframes fly {
+              from { transform: translate(0,0) rotate(0deg) scale(0.8); opacity: 0.0; }
+              to   { transform: translate(var(--x),var(--y)) rotate(120deg) scale(1.0); opacity: 1.0; }
             }
           `}</style>
         </div>
       )}
 
-      {/* --- MENU --- */}
+      {/* MENU */}
       {gameState === 'menu' && (
-        <div className="text-center max-w-md w-full bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20 shadow-2xl relative">
+        <div className="text-center max-w-md w-full bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20 shadow-2xl">
           <div className="text-6xl mb-4">🚀</div>
           <h1 className="text-4xl font-black mb-2">5. Sınıf SpeedRun</h1>
-          <p className="text-violet-200 mb-4">
-            60 saniyen var! Matematik ve Fen sorularını ne kadar hızlı çözebilirsin?
-          </p>
+          <p className="text-violet-200 mb-4">60 saniyen var! Ne kadar hızlı çözebilirsin?</p>
 
-          {/* (2) High score göster */}
           <div className="mb-6 bg-black/25 rounded-2xl p-4">
             <div className="text-xs uppercase tracking-widest text-violet-200 font-bold">En Yüksek Skor</div>
             <div className="text-3xl font-black text-yellow-300">{highScore}</div>
@@ -164,10 +237,9 @@ export default function Grade5SpeedRun() {
         </div>
       )}
 
-      {/* --- PLAYING --- */}
+      {/* PLAYING */}
       {gameState === 'playing' && (
         <div className="w-full max-w-lg">
-          {/* Loading guard */}
           {isLoadingQuestion ? (
             <div className="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20 shadow-2xl text-center">
               <div className="text-4xl mb-2">⏳</div>
@@ -176,14 +248,18 @@ export default function Grade5SpeedRun() {
           ) : (
             <>
               {/* Üst Bilgi */}
-              <div className="flex justify-between items-center mb-6">
+              <div className="flex justify-between items-center mb-6 gap-2">
                 <div className="bg-black/30 px-4 py-2 rounded-xl font-bold font-mono text-2xl">
                   Skor: <span className="text-yellow-400">{score}</span>
                 </div>
 
-                {/* High score küçük gösterim */}
                 <div className="bg-black/20 px-3 py-2 rounded-xl font-bold text-sm">
                   Rekor: <span className="text-yellow-300">{highScore}</span>
+                </div>
+
+                {/* ✅ Soru sayacı */}
+                <div className="bg-black/20 px-3 py-2 rounded-xl font-bold text-sm">
+                  Soru: <span className="text-white">{answeredCount + 1}</span> / ∞
                 </div>
 
                 <div className={`text-3xl font-black font-mono ${timeLeft <= 10 ? 'text-red-400 animate-pulse' : 'text-white'}`}>
@@ -192,30 +268,63 @@ export default function Grade5SpeedRun() {
               </div>
 
               {/* Soru Kartı */}
-              <div className="bg-white text-slate-900 rounded-3xl p-6 shadow-2xl mb-4 min-h-[200px] flex flex-col justify-center items-center text-center relative overflow-hidden">
+              <div
+                className={`bg-white text-slate-900 rounded-3xl p-6 shadow-2xl mb-4 min-h-[200px] flex flex-col justify-center items-center text-center relative overflow-hidden ${
+                  shake ? 'shake' : ''
+                }`}
+              >
                 <div className="absolute top-0 left-0 w-full h-2 bg-slate-100">
                   <div
                     className="h-full bg-yellow-400 transition-all duration-300 ease-linear"
                     style={{ width: `${(timeLeft / 60) * 100}%` }}
                   />
                 </div>
+
                 <span className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">
-                  {questions[currentIndex]?.category}
+                  {currentQ?.category}
                 </span>
-                <h2 className="text-2xl font-bold leading-tight">
-                  {questions[currentIndex]?.question}
-                </h2>
+
+                <h2 className="text-2xl font-bold leading-tight">{currentQ?.question}</h2>
+
+                {/* ✅ Doğru/yanlış mini feedback */}
+                {selected && (
+                  <div className="mt-3 text-sm font-extrabold">
+                    {isCorrect ? (
+                      <span className="text-green-600">✅ Doğru! +{CORRECT_REWARD}</span>
+                    ) : (
+                      <span className="text-red-600">❌ Yanlış! -{WRONG_PENALTY}</span>
+                    )}
+                  </div>
+                )}
+
+                <style jsx>{`
+                  .shake { animation: shake 250ms ease-in-out; }
+                  @keyframes shake {
+                    0% { transform: translateX(0); }
+                    25% { transform: translateX(-6px); }
+                    50% { transform: translateX(6px); }
+                    75% { transform: translateX(-4px); }
+                    100% { transform: translateX(0); }
+                  }
+                `}</style>
               </div>
 
               {/* Seçenekler */}
               <div className="grid grid-cols-2 gap-3">
-                {(questions[currentIndex]?.options ?? []).map((opt, idx) => (
+                {(currentQ?.options ?? []).map((opt, idx) => (
                   <button
                     key={idx}
                     onClick={() => handleAnswer(opt)}
-                    className="py-4 px-2 bg-white/20 hover:bg-white/40 border-2 border-white/30 rounded-xl font-bold text-lg transition-all active:scale-95"
+                    disabled={lockButtons}
+                    className={`${getBtnClass(opt)} ${lockButtons ? 'opacity-90 cursor-not-allowed' : ''}`}
+                    style={{ touchAction: 'manipulation' }}
                   >
-                    {opt}
+                    {/* seçili ikonsa */}
+                    <div className="flex items-center justify-center gap-2">
+                      {selected === opt && isCorrect === true && <span>✅</span>}
+                      {selected === opt && isCorrect === false && <span>❌</span>}
+                      <span>{opt}</span>
+                    </div>
                   </button>
                 ))}
               </div>
@@ -224,7 +333,7 @@ export default function Grade5SpeedRun() {
         </div>
       )}
 
-      {/* --- GAMEOVER --- */}
+      {/* GAMEOVER */}
       {gameState === 'gameover' && (
         <div className="text-center max-w-md w-full bg-white text-slate-900 p-8 rounded-3xl shadow-2xl animate-in zoom-in duration-300">
           <div className="text-6xl mb-2">🏁</div>
@@ -236,7 +345,6 @@ export default function Grade5SpeedRun() {
             <div className="text-5xl font-black text-violet-600">{score}</div>
           </div>
 
-          {/* (2) High score alanı */}
           <div className="bg-slate-100 p-4 rounded-2xl mb-6">
             <div className="text-xs text-slate-500 uppercase font-bold">En Yüksek Skor</div>
             <div className="text-2xl font-black text-slate-800">{highScore}</div>
