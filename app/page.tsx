@@ -358,46 +358,77 @@ export default function HomePage() {
   <div className="p-6 bg-slate-50/30">
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       
-      {/* 5. SINIF KARTI - GÜNCELLENDİ */}
-      <Link
-        href="/5-sinif"
-        className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-orange-400 to-amber-500 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
-      >
+      {/* 5. SINIF KARTI - GÜNCELLENDİ (Çift Butonlu) */}
+      <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-orange-400 to-amber-500 p-6 text-white shadow-xl transition-all hover:shadow-2xl border border-orange-300/30">
+        
         {/* Arka Plan Dekoru */}
-        <div className="absolute -bottom-4 -right-4 h-32 w-32 rounded-full bg-white/10 blur-2xl transition-all group-hover:bg-white/20"></div>
+        <div className="absolute -top-10 -right-10 h-40 w-40 rounded-full bg-white/10 blur-3xl transition-all group-hover:bg-white/20"></div>
+        <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black/10 to-transparent"></div>
 
-        <div className="relative z-10 flex flex-col justify-between h-full">
-          {/* Üst Kısım: Başlık ve Açıklama */}
-          <div>
-            <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-white backdrop-blur-sm border border-white/20">
+        <div className="relative z-10 flex flex-col h-full justify-between">
+          
+          {/* Üst Kısım: Başlık */}
+          <div className="mb-6">
+            <div className="mb-3 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-white backdrop-blur-sm border border-white/20">
               <span className="text-lg">🏫</span> 2025 Müfredat
             </div>
-            <h3 className="mb-2 text-3xl font-black tracking-tight">5. Sınıf</h3>
-            <p className="text-white/90 text-sm font-medium leading-relaxed">
-              Matematik, Türkçe, Fen Bilimleri ve İngilizce testleri.
+            <h3 className="text-3xl font-black tracking-tight leading-none mb-2">5. Sınıf</h3>
+            <p className="text-orange-50 text-xs font-medium opacity-90 leading-relaxed">
+              Matematik, Fen, Türkçe ve İngilizce konuları.
             </p>
           </div>
 
-          {/* Alt Kısım: Aksiyon Butonu */}
-          <div className="mt-8 flex items-center gap-3">
-            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-orange-600 shadow-lg transition-transform group-hover:scale-110 group-hover:rotate-[-10deg]">
-              {/* Play/Start İkonu */}
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M5 12h14" />
-                <path d="m12 5 7 7-7 7" />
-              </svg>
-            </div>
-            <div className="flex flex-col">
-              <span className="font-black text-lg tracking-wide">Hemen Çalış</span>
-              <span className="text-xs text-orange-100 font-medium opacity-80">Ücretsiz Başla</span>
-            </div>
+          {/* Alt Kısım: Butonlar */}
+          <div className="flex flex-col gap-3">
+            
+            {/* 1. Buton: Ders Çalış (Flashcards) */}
+            <Link 
+              href="/grade5-cards"
+              className="flex items-center justify-between px-3 py-3 bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl transition-all group/btn"
+            >
+              <div className="flex items-center gap-3">
+                <div className="p-1.5 bg-white/20 rounded-lg text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                </div>
+                <div className="flex flex-col">
+                  <span className="font-bold text-sm">Çalışma Kartları</span>
+                  <span className="text-[10px] text-orange-100 opacity-80">Konu Tekrarı</span>
+                </div>
+              </div>
+              <span className="text-white opacity-0 group-hover/btn:opacity-100 transition-opacity text-sm">→</span>
+            </Link>
+
+            {/* 2. Buton: SPEEDRUN (Yarış) */}
+            <Link 
+              href="/grade5-speedrun"
+              className="relative overflow-hidden flex items-center justify-between px-3 py-3 bg-white text-orange-600 rounded-xl shadow-lg transition-transform transform hover:-translate-y-1 hover:shadow-orange-900/20 group/run"
+            >
+              {/* Buton içi ışıltı */}
+              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-orange-100/50 to-transparent -translate-x-[100%] group-hover/run:animate-[shimmer_1.5s_infinite]"></div>
+
+              <div className="flex items-center gap-3 relative z-10">
+                <div className="p-1.5 bg-orange-100 text-orange-600 rounded-lg group-hover/run:scale-110 transition-transform">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                </div>
+                <div className="flex flex-col">
+                  <span className="font-black text-sm tracking-tight">HIZ YARIŞI</span>
+                  <span className="text-[9px] font-bold text-orange-400 uppercase tracking-wider">60 Saniye Modu</span>
+                </div>
+              </div>
+              
+              <div className="bg-orange-600 text-white text-[10px] font-bold px-2 py-1 rounded-md relative z-10 group-hover/run:bg-orange-700 transition-colors">
+                BAŞLA
+              </div>
+            </Link>
+
           </div>
         </div>
-      </Link>
+      </div>
 
     </div>
   </div>
 </section>
+
 
 
 {/* --- GAME MODES --- */}
