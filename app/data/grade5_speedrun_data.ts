@@ -91,7 +91,7 @@ export default function Grade5SpeedRun() {
 
   const TIME_BONUS_CORRECT = 4;
   const TIME_PENALTY_WRONG = 2;
-  const MAX_TIME = 60;
+  const MAX_TIME = 100;
 
   const STREAK_TARGET = 3;
   const STREAK_TIME_BONUS = 5;
@@ -162,7 +162,7 @@ export default function Grade5SpeedRun() {
     setCurrentIndex(0);
 
     setScore(0);
-    setTimeLeft(60);
+    setTimeLeft(100);
 
     setAnsweredCount(0);
     setStreak(0);
@@ -419,7 +419,7 @@ export default function Grade5SpeedRun() {
                 <div className="absolute top-0 left-0 w-full h-2 bg-slate-100">
                   <div
                     className="h-full bg-yellow-400 transition-all duration-300 ease-linear"
-                    style={{ width: `${(timeLeft / 60) * 100}%` }}
+                    style={{ width: `${(timeLeft / 100) * 100}%` }}
                   />
                 </div>
 
