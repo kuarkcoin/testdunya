@@ -344,7 +344,7 @@ export default function HomePage() {
 {/* --- MEB CURRICULUM (İLKÖĞRETİM) --- */}
 <section className="bg-white rounded-2xl shadow-xl shadow-amber-100/50 overflow-hidden border-2 border-amber-100 relative mb-10">
   <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-yellow-400 to-orange-500"></div>
-  
+
   <div className="p-4 md:p-6 border-b border-slate-100 flex items-center gap-4">
     <div className="p-3 bg-amber-100 text-amber-600 rounded-xl">
       <Book className="w-8 h-8" />
@@ -357,30 +357,48 @@ export default function HomePage() {
 
   <div className="p-6 bg-slate-50/30">
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      {/* 5. SINIF KARTI */}
+      
+      {/* 5. SINIF KARTI - GÜNCELLENDİ */}
       <Link
         href="/5-sinif"
-        className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-yellow-400 to-orange-500 p-8 text-white shadow-lg transition-all hover:scale-[1.02] hover:shadow-xl"
+        className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-orange-400 to-amber-500 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
       >
+        {/* Arka Plan Dekoru */}
+        <div className="absolute -bottom-4 -right-4 h-32 w-32 rounded-full bg-white/10 blur-2xl transition-all group-hover:bg-white/20"></div>
+
         <div className="relative z-10 flex flex-col justify-between h-full">
+          {/* Üst Kısım: Başlık ve Açıklama */}
           <div>
-            <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-white backdrop-blur-sm">
-              NEW • 2025
+            <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-white backdrop-blur-sm border border-white/20">
+              <span className="text-lg">🏫</span> 2025 Müfredat
             </div>
             <h3 className="mb-2 text-3xl font-black tracking-tight">5. Sınıf</h3>
-            <p className="text-white/90 text-sm">Matematik, Türkçe, Fen, İngilizce</p>
+            <p className="text-white/90 text-sm font-medium leading-relaxed">
+              Matematik, Türkçe, Fen Bilimleri ve İngilizce testleri.
+            </p>
           </div>
-          <div className="mt-6 flex items-center gap-3">
-            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-orange-600 shadow-lg group-hover:scale-110 transition-transform text-2xl">
-              🏫
+
+          {/* Alt Kısım: Aksiyon Butonu */}
+          <div className="mt-8 flex items-center gap-3">
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-orange-600 shadow-lg transition-transform group-hover:scale-110 group-hover:rotate-[-10deg]">
+              {/* Play/Start İkonu */}
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
             </div>
-            <span className="font-bold text-lg">Hemen Çalış →</span>
+            <div className="flex flex-col">
+              <span className="font-black text-lg tracking-wide">Hemen Çalış</span>
+              <span className="text-xs text-orange-100 font-medium opacity-80">Ücretsiz Başla</span>
+            </div>
           </div>
         </div>
-      </Link> {/* ✅ BURASI DÜZELTİLDİ */}
+      </Link>
+
     </div>
   </div>
 </section>
+
 
 {/* --- GAME MODES --- */}
         <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-8">
