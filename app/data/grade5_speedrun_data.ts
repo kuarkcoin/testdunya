@@ -962,6 +962,367 @@ export const speedRunQuestions: SpeedQuestion[] = [
     question: '"Don\'t run!" ne demektir?',
     options: ['Koş!', 'Koşma!', 'Yürüme!', 'Otur!'],
     answer: 'Koşma!'
+  },
+    // ==========================
+  // 🚀 EKSTRA 50 SORU (YENİ PAKET)
+  // ==========================
+
+  // 📐 MATEMATİK (+13 Soru)
+  {
+    id: 'm34',
+    category: 'Matematik',
+    question: '0,5 + 0,2 işleminin sonucu kaçtır?',
+    options: ['0,7', '0,3', '0,07', '7,0'],
+    answer: '0,7'
+  },
+  {
+    id: 'm35',
+    category: 'Matematik',
+    question: 'Tüm kenar uzunlukları eşit olan üçgene ne denir?',
+    options: ['İkizkenar', 'Çeşitkenar', 'Eşkenar', 'Dik üçgen'],
+    answer: 'Eşkenar'
+  },
+  {
+    id: 'm36',
+    category: 'Matematik',
+    question: '200 sayısının %50\'si kaçtır?',
+    options: ['50', '100', '20', '150'],
+    answer: '100'
+  },
+  {
+    id: 'm37',
+    category: 'Matematik',
+    question: 'Bir yılda kaç hafta vardır?',
+    options: ['12', '30', '52', '365'],
+    answer: '52'
+  },
+  {
+    id: 'm38',
+    category: 'Matematik',
+    question: 'Bir küpün kaç ayrıtı (kenarı) vardır?',
+    options: ['6', '8', '12', '4'],
+    answer: '12'
+  },
+  {
+    id: 'm39',
+    category: 'Matematik',
+    question: '(10 + 5) × 2 işleminin sonucu kaçtır?',
+    options: ['20', '25', '30', '150'],
+    answer: '30'
+  },
+  {
+    id: 'm40',
+    category: 'Matematik',
+    question: '3 kilometre kaç metredir?',
+    options: ['30', '300', '3000', '30000'],
+    answer: '3000'
+  },
+  {
+    id: 'm41',
+    category: 'Matematik',
+    question: 'Paydaları eşit kesirlerde toplama yaparken ne toplanır?',
+    options: ['Paydalar', 'Paylar', 'Hepsi', 'Hiçbiri'],
+    answer: 'Paylar'
+  },
+  {
+    id: 'm42',
+    category: 'Matematik',
+    question: 'Ölçüsü 90 derece olan açıya ne denir?',
+    options: ['Dar Açı', 'Geniş Açı', 'Dik Açı', 'Doğru Açı'],
+    answer: 'Dik Açı'
+  },
+  {
+    id: 'm43',
+    category: 'Matematik',
+    question: 'Bir bölme işleminde kalan, bölen sayıdan...?',
+    options: ['Büyük olmalıdır', 'Küçük olmalıdır', 'Eşit olmalıdır', 'Fark etmez'],
+    answer: 'Küçük olmalıdır'
+  },
+  {
+    id: 'm44',
+    category: 'Matematik',
+    question: '17 sayısını en yakın onluğa yuvarlarsak kaç olur?',
+    options: ['10', '15', '20', '170'],
+    answer: '20'
+  },
+  {
+    id: 'm45',
+    category: 'Matematik',
+    question: 'Çeyrek saat kaç dakikadır?',
+    options: ['15', '30', '45', '20'],
+    answer: '15'
+  },
+  {
+    id: 'm46',
+    category: 'Matematik',
+    question: 'Hangisi birim kesirdir?',
+    options: ['3/5', '1/9', '7/2', '5/5'],
+    answer: '1/9'
+  },
+
+  // 🔬 FEN BİLİMLERİ (+13 Soru)
+  {
+    id: 'f34',
+    category: 'Fen',
+    question: 'Dünya\'nın kendi etrafında bir tam dönüşü ne kadar sürer?',
+    options: ['1 yıl', '1 ay', '24 saat', '1 hafta'],
+    answer: '24 saat'
+  },
+  {
+    id: 'f35',
+    category: 'Fen',
+    question: 'Uçabilen memeli hayvan hangisidir?',
+    options: ['Kartal', 'Yarasa', 'Sine', 'Penguen'],
+    answer: 'Yarasa'
+  },
+  {
+    id: 'f36',
+    category: 'Fen',
+    question: 'Saf suyun kaynama noktası kaç derecedir?',
+    options: ['0°C', '50°C', '100°C', '150°C'],
+    answer: '100°C'
+  },
+  {
+    id: 'f37',
+    category: 'Fen',
+    question: 'Toprağın su veya rüzgarla taşınmasına ne denir?',
+    options: ['Heyelan', 'Erozyon', 'Deprem', 'Çığ'],
+    answer: 'Erozyon'
+  },
+  {
+    id: 'f38',
+    category: 'Fen',
+    question: 'Gölge boyu ne zaman en kısa olur?',
+    options: ['Sabah', 'Öğle', 'İkindi', 'Akşam'],
+    answer: 'Öğle'
+  },
+  {
+    id: 'f39',
+    category: 'Fen',
+    question: 'Elektrik devresini açıp kapamaya yarayan eleman hangisidir?',
+    options: ['Duy', 'Kablo', 'Anahtar', 'Pil Yatağı'],
+    answer: 'Anahtar'
+  },
+  {
+    id: 'f40',
+    category: 'Fen',
+    question: 'Gaz halindeki maddenin ısı vererek sıvı hale geçmesine ne denir?',
+    options: ['Yoğuşma', 'Buharlaşma', 'Erime', 'Donma'],
+    answer: 'Yoğuşma'
+  },
+  {
+    id: 'f41',
+    category: 'Fen',
+    question: 'Hangisi ısı yalıtımı malzemesidir?',
+    options: ['Demir', 'Bakır', 'Köpük (Strafor)', 'Altın'],
+    answer: 'Köpük (Strafor)'
+  },
+  {
+    id: 'f42',
+    category: 'Fen',
+    question: 'Bir canlının yaşamını sürdürdüğü doğal alana ne denir?',
+    options: ['Kafes', 'Habitat', 'Akvaryum', 'Laboratuvar'],
+    answer: 'Habitat'
+  },
+  {
+    id: 'f43',
+    category: 'Fen',
+    question: 'Dünya\'yı saran gaz tabakasına ne ad verilir?',
+    options: ['Atmosfer', 'Taş Küre', 'Su Küre', 'Çekirdek'],
+    answer: 'Atmosfer'
+  },
+  {
+    id: 'f44',
+    category: 'Fen',
+    question: 'Yer çekimi kuvvetinin yönü nereye doğrudur?',
+    options: ['Gökyüzüne', 'Sağa', 'Sola', 'Yerin merkezine'],
+    answer: 'Yerin merkezine'
+  },
+  {
+    id: 'f45',
+    category: 'Fen',
+    question: 'Mantar bir bitki midir?',
+    options: ['Evet', 'Hayır', 'Bazen', 'Bilmiyorum'],
+    answer: 'Hayır'
+  },
+  {
+    id: 'f46',
+    category: 'Fen',
+    question: 'Genleşme en çok hangi maddelerde görülür?',
+    options: ['Katı', 'Sıvı', 'Gaz', 'Hepsi eşit'],
+    answer: 'Gaz'
+  },
+
+  // 📚 TÜRKÇE (+12 Soru)
+  {
+    id: 't33',
+    category: 'Türkçe',
+    question: 'Eş görevli sözcükleri ayırmak için ne kullanılır?',
+    options: ['Nokta', 'Virgül', 'Soru İşareti', 'Ünlem'],
+    answer: 'Virgül'
+  },
+  {
+    id: 't34',
+    category: 'Türkçe',
+    question: '"Zengin" kelimesinin zıt anlamlısı nedir?',
+    options: ['Varlıklı', 'Fakir', 'Güçlü', 'Cömert'],
+    answer: 'Fakir'
+  },
+  {
+    id: 't35',
+    category: 'Türkçe',
+    question: 'Satır sonuna sığmayan kelimeler ne ile ayrılır?',
+    options: ['Kısa çizgi', 'Uzun çizgi', 'Eğik çizgi', 'Nokta'],
+    answer: 'Kısa çizgi'
+  },
+  {
+    id: 't36',
+    category: 'Türkçe',
+    question: 'İsmi niteleyen sözcüklere ne denir?',
+    options: ['Zamir', 'Sıfat', 'Fiil', 'Zarf'],
+    answer: 'Sıfat'
+  },
+  {
+    id: 't37',
+    category: 'Türkçe',
+    question: '"Etekleri zil çalmak" deyimi ne anlama gelir?',
+    options: ['Çok üzülmek', 'Çok sevinmek', 'Çok korkmak', 'Çok yorulmak'],
+    answer: 'Çok sevinmek'
+  },
+  {
+    id: 't38',
+    category: 'Türkçe',
+    question: '"Kitaplık" kelimesindeki "-lık" eki ne ekidir?',
+    options: ['Çekim eki', 'Yapım eki', 'Çoğul eki', 'İyelik eki'],
+    answer: 'Yapım eki'
+  },
+  {
+    id: 't39',
+    category: 'Türkçe',
+    question: 'Olayın geçtiği zamana ne denir?',
+    options: ['Mekan', 'Şahıs', 'Zaman', 'Olay'],
+    answer: 'Zaman'
+  },
+  {
+    id: 't40',
+    category: 'Türkçe',
+    question: 'Hangisi hayal ürünü bir ifadedir?',
+    options: ['Çiçekler sulandı', 'Güneş bize gülümsedi', 'Kedi süt içti', 'Araba bozuldu'],
+    answer: 'Güneş bize gülümsedi'
+  },
+  {
+    id: 't41',
+    category: 'Türkçe',
+    question: '"Birkaç" kelimesi nasıl yazılır?',
+    options: ['Bir kaç', 'Birkaç', 'Bi kaç', 'Bir-kaç'],
+    answer: 'Birkaç'
+  },
+  {
+    id: 't42',
+    category: 'Türkçe',
+    question: '"Keşke o gün oraya gitmeseydim." cümlesinde hangi duygu vardır?',
+    options: ['Sevinç', 'Pişmanlık', 'Özlem', 'Şaşkınlık'],
+    answer: 'Pişmanlık'
+  },
+  {
+    id: 't43',
+    category: 'Türkçe',
+    question: '"Gül" kelimesi eş sesli midir?',
+    options: ['Evet', 'Hayır', 'Bazen', 'Belirsiz'],
+    answer: 'Evet'
+  },
+  {
+    id: 't44',
+    category: 'Türkçe',
+    question: 'Masallarda genellikle nasıl bir son vardır?',
+    options: ['Mutsuz son', 'Belirsiz son', 'Mutlu son', 'Yarım kalan son'],
+    answer: 'Mutlu son'
+  },
+
+  // 🌍 İNGİLİZCE (+12 Soru)
+  {
+    id: 'e34',
+    category: 'İngilizce',
+    question: '"Twenty" hangi sayıdır?',
+    options: ['12', '20', '30', '2'],
+    answer: '20'
+  },
+  {
+    id: 'e35',
+    category: 'İngilizce',
+    question: '"Swim" fiilinin anlamı nedir?',
+    options: ['Koşmak', 'Yüzmek', 'Uçmak', 'Yürümek'],
+    answer: 'Yüzmek'
+  },
+  {
+    id: 'e36',
+    category: 'İngilizce',
+    question: 'The book is ____ the table. (Üstünde)',
+    options: ['in', 'under', 'on', 'at'],
+    answer: 'on'
+  },
+  {
+    id: 'e37',
+    category: 'İngilizce',
+    question: '"Lion" hangi hayvandır?',
+    options: ['Kaplan', 'Aslan', 'Ayı', 'Kurt'],
+    answer: 'Aslan'
+  },
+  {
+    id: 'e38',
+    category: 'İngilizce',
+    question: 'Film izlemek için nereye gideriz?',
+    options: ['Hospital', 'Cinema', 'Bakery', 'Pharmacy'],
+    answer: 'Cinema'
+  },
+  {
+    id: 'e39',
+    category: 'İngilizce',
+    question: '"Uncle" kimdir?',
+    options: ['Teyze', 'Amca/Dayı', 'Kardeş', 'Dede'],
+    answer: 'Amca/Dayı'
+  },
+  {
+    id: 'e40',
+    category: 'İngilizce',
+    question: '"Hot" kelimesinin zıttı nedir?',
+    options: ['Cold', 'Warm', 'Big', 'Small'],
+    answer: 'Cold'
+  },
+  {
+    id: 'e41',
+    category: 'İngilizce',
+    question: 'Görmemizi sağlayan organ hangisidir?',
+    options: ['Ear', 'Nose', 'Eye', 'Hand'],
+    answer: 'Eye'
+  },
+  {
+    id: 'e42',
+    category: 'İngilizce',
+    question: 'Öğleden sonra ne denir?',
+    options: ['Good morning', 'Good afternoon', 'Good night', 'Hello'],
+    answer: 'Good afternoon'
+  },
+  {
+    id: 'e43',
+    category: 'İngilizce',
+    question: '"Sit down" ne demektir?',
+    options: ['Ayağa kalk', 'Otur', 'Gel', 'Git'],
+    answer: 'Otur'
+  },
+  {
+    id: 'e44',
+    category: 'İngilizce',
+    question: '"Who" sorusu neyi sorar?',
+    options: ['Nerede', 'Ne zaman', 'Kim', 'Nasıl'],
+    answer: 'Kim'
+  },
+  {
+    id: 'e45',
+    category: 'İngilizce',
+    question: 'Hangi gün Çarşamba\'dır?',
+    options: ['Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+    answer: 'Wednesday'
   }
 
 ];
