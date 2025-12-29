@@ -1,528 +1,787 @@
-'use client';
+// app/data/grade5_speedrun_data.ts
 
-import React, { useEffect, useRef, useState } from 'react';
-import Link from 'next/link';
-import { speedRunQuestions, SpeedQuestion } from '../data/grade5_speedrun_data';
-
-// =====================
-// Helpers
-// =====================
-function shuffleArray<T>(array: T[]): T[] {
-  const newArr = [...array];
-  for (let i = newArr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [newArr[i], newArr[j]] = [newArr[j], newArr[i]];
-  }
-  return newArr;
-}
-
-// Data'ya difficulty eklemeden, hızlı heuristik ile adaptif havuz
-function makeShuffledQuestions(mode: 'easy' | 'normal' | 'hard' = 'normal'): SpeedQuestion[] {
-  let pool = speedRunQuestions;
-
-  if (mode === 'easy') {
-    // kısa seçenekler / kısa soru = daha kolay olma ihtimali yüksek
-    pool = speedRunQuestions.filter(q => q.options.every(o => o.length <= 10) && q.question.length <= 50);
-    if (pool.length < 10) pool = speedRunQuestions; // güvenlik
-  }
-
-  if (mode === 'hard') {
-    // daha uzun soru / daha uzun seçenek = daha zor olma ihtimali yüksek
-    pool = speedRunQuestions.filter(q => q.question.length > 45 || q.options.some(o => o.length > 12));
-    if (pool.length < 10) pool = speedRunQuestions; // güvenlik
-  }
-
-  return shuffleArray(pool).map(q => ({
-    ...q,
-    options: shuffleArray(q.options),
-  }));
-}
-
-// Zorluk kararı
-const decideDifficulty = (currentStreak: number, time: number): 'easy' | 'normal' | 'hard' => {
-  if (currentStreak >= 3 && time > 20) return 'hard';
-  if (time < 10) return 'easy';
-  return 'normal';
+export type SpeedQuestion = {
+  id: string;
+  category: 'Matematik' | 'Fen' | 'Türkçe' | 'İngilizce';
+  question: string;
+  options: string[];
+  answer: string;
 };
 
-export default function Grade5SpeedRun() {
-  const [gameState, setGameState] = useState<'menu' | 'playing' | 'gameover'>('menu');
-
-  const [questions, setQuestions] = useState<SpeedQuestion[]>([]);
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const [score, setScore] = useState(0);
-  const [timeLeft, setTimeLeft] = useState(60);
-
-  // High score
-  const HIGH_SCORE_KEY = 'grade5_speedrun_highscore';
-  const [highScore, setHighScore] = useState(0);
-
-  // Feedback / UX
-  const [selected, setSelected] = useState<string | null>(null);
-  const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
-  const [lockButtons, setLockButtons] = useState(false);
-  const [shake, setShake] = useState(false);
-
-  // Counter (sonsuz)
-  const [answeredCount, setAnsweredCount] = useState(0);
-
-  // Confetti
-  const [showConfetti, setShowConfetti] = useState(false);
-
-  // Time flash (+4 / -2 / +5🔥)
-  const [timeFlash, setTimeFlash] = useState<string | null>(null);
-
-  // Streak & Adaptive difficulty
-  const [streak, setStreak] = useState(0);
-  const [difficultyBias, setDifficultyBias] = useState<'easy' | 'normal' | 'hard'>('normal');
-  const difficultyRef = useRef<'easy' | 'normal' | 'hard'>('normal');
-
-  const setDifficulty = (mode: 'easy' | 'normal' | 'hard') => {
-    setDifficultyBias(mode);
-    difficultyRef.current = mode;
-  };
-
-  // =====================
-  // Tuning
-  // =====================
-  const CORRECT_REWARD = 10;
-  const WRONG_PENALTY = 2; // istersen 0 yapabilirsin
-
-  const TIME_BONUS_CORRECT = 4;
-  const TIME_PENALTY_WRONG = 2;
-  const MAX_TIME = 100;
-
-  const STREAK_TARGET = 3;
-  const STREAK_TIME_BONUS = 5;
-
-  // =====================
-  // Effects
-  // =====================
-  useEffect(() => {
-    try {
-      const saved = localStorage.getItem(HIGH_SCORE_KEY);
-      setHighScore(saved ? parseInt(saved, 10) || 0 : 0);
-    } catch {
-      setHighScore(0);
-    }
-  }, []);
-
-  // Timer
-  useEffect(() => {
-    if (gameState !== 'playing') return;
-
-    if (timeLeft <= 0) {
-      setGameState('gameover');
-      return;
-    }
-
-    const timer = setInterval(() => {
-      setTimeLeft(prev => prev - 1);
-    }, 1000);
-
-    return () => clearInterval(timer);
-  }, [timeLeft, gameState]);
-
-  // Gameover -> high score update
-  useEffect(() => {
-    if (gameState !== 'gameover') return;
-
-    if (score > highScore) {
-      setHighScore(score);
-      try {
-        localStorage.setItem(HIGH_SCORE_KEY, String(score));
-      } catch {}
-    }
-  }, [gameState, score, highScore]);
-
-  // =====================
-  // Actions
-  // =====================
-  const triggerConfetti = () => {
-    setShowConfetti(true);
-    window.setTimeout(() => setShowConfetti(false), 200);
-  };
-
-  const flashTime = (txt: string) => {
-    setTimeFlash(txt);
-    window.setTimeout(() => setTimeFlash(null), 600);
-  };
-
-  const resetFeedback = () => {
-    setSelected(null);
-    setIsCorrect(null);
-    setLockButtons(false);
-    setShake(false);
-  };
-
-  const startGame = () => {
-    setDifficulty('normal');
-    setQuestions(makeShuffledQuestions('normal'));
-    setCurrentIndex(0);
-
-    setScore(0);
-    setTimeLeft(100);
-
-    setAnsweredCount(0);
-    setStreak(0);
-
-    resetFeedback();
-    setGameState('playing');
-  };
-
-  const nextQuestion = () => {
-    resetFeedback();
-
-    if (currentIndex < questions.length - 1) {
-      setCurrentIndex(prev => prev + 1);
-    } else {
-      // Havuz bitince, adaptif moda göre yeniden karıştır
-      setQuestions(makeShuffledQuestions(difficultyRef.current));
-      setCurrentIndex(0);
-    }
-  };
-
-  const handleAnswer = (opt: string) => {
-    if (lockButtons) return;
-    if (!questions.length) return;
-
-    const q = questions[currentIndex];
-    if (!q) return;
-
-    setLockButtons(true);
-    setSelected(opt);
-
-    const correct = opt === q.answer;
-    setIsCorrect(correct);
-
-    setAnsweredCount(c => c + 1);
-
-    if (correct) {
-      // score + confetti
-      setScore(prev => prev + CORRECT_REWARD);
-      triggerConfetti();
-
-      // streak
-      const newStreak = streak + 1;
-      setStreak(newStreak);
-
-      // time +4 (clamp)
-      setTimeLeft(prev => Math.min(MAX_TIME, prev + TIME_BONUS_CORRECT));
-      flashTime(`+${TIME_BONUS_CORRECT}s`);
-
-      // perfect streak bonus
-      if (newStreak >= STREAK_TARGET) {
-        setTimeLeft(prev => Math.min(MAX_TIME, prev + STREAK_TIME_BONUS));
-        flashTime(`+${STREAK_TIME_BONUS}s🔥`);
-        setStreak(0);
-      }
-
-      // adaptive difficulty (mevcut timeLeft üzerinden karar)
-      const nextMode = decideDifficulty(newStreak, timeLeft);
-      setDifficulty(nextMode);
-    } else {
-      // streak reset
-      setStreak(0);
-
-      // score penalty
-      setScore(prev => Math.max(0, prev - WRONG_PENALTY));
-
-      // time -2 (clamp)
-      setTimeLeft(prev => Math.max(0, prev - TIME_PENALTY_WRONG));
-      flashTime(`-${TIME_PENALTY_WRONG}s`);
-
-      // shake
-      setShake(true);
-      window.setTimeout(() => setShake(false), 250);
-
-      // difficulty düşür
-      setDifficulty('easy');
-    }
-
-    // 300ms sonra otomatik geçiş
-    window.setTimeout(() => {
-      nextQuestion();
-    }, 300);
-  };
-
-  // =====================
-  // Guards
-  // =====================
-  const isLoadingQuestion = gameState === 'playing' && questions.length === 0;
-  const currentQ = questions[currentIndex];
-
-  // =====================
-  // UI helpers
-  // =====================
-  const getBtnClass = (opt: string) => {
-    const base =
-      'py-4 px-2 rounded-xl font-bold text-lg transition-all active:scale-95 border-2 touch-manipulation';
-    const idle = 'bg-white/20 hover:bg-white/40 border-white/30';
-    if (!selected) return `${base} ${idle}`;
-
-    const correctOpt = currentQ?.answer;
-
-    const isThis = opt === selected;
-
-    if (isThis && opt === correctOpt) return `${base} bg-green-500/90 border-green-200 text-white`;
-    if (isThis && opt !== correctOpt) return `${base} bg-red-500/90 border-red-200 text-white`;
-    if (opt === correctOpt) return `${base} bg-green-500/40 border-green-200/60 text-white`;
-    return `${base} bg-white/10 border-white/20 text-white/70`;
-  };
-
-  return (
-    <div className="min-h-screen bg-violet-600 flex flex-col items-center justify-center p-4 text-white relative overflow-hidden">
-      {/* Mini parçacık konfeti */}
-      {showConfetti && (
-        <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-          <div className="confetti-wrap">
-            {Array.from({ length: 12 }).map((_, i) => (
-              <span key={i} className="confetti-piece" />
-            ))}
-          </div>
-          <style jsx>{`
-            .confetti-wrap {
-              position: relative;
-              width: 1px;
-              height: 1px;
-            }
-            .confetti-piece {
-              position: absolute;
-              left: 0;
-              top: 0;
-              width: 10px;
-              height: 6px;
-              border-radius: 9999px;
-              background: white;
-              opacity: 0.95;
-              animation: fly 200ms ease-out both;
-            }
-            .confetti-piece:nth-child(1) { --x: -30px; --y: -45px; }
-            .confetti-piece:nth-child(2) { --x: 10px; --y: -60px; }
-            .confetti-piece:nth-child(3) { --x: 35px; --y: -40px; }
-            .confetti-piece:nth-child(4) { --x: -55px; --y: -20px; }
-            .confetti-piece:nth-child(5) { --x: 60px; --y: -15px; }
-            .confetti-piece:nth-child(6) { --x: -20px; --y: -70px; }
-            .confetti-piece:nth-child(7) { --x: 20px; --y: -75px; }
-            .confetti-piece:nth-child(8) { --x: -70px; --y: -5px; }
-            .confetti-piece:nth-child(9) { --x: 75px; --y: -5px; }
-            .confetti-piece:nth-child(10) { --x: -40px; --y: -55px; }
-            .confetti-piece:nth-child(11) { --x: 45px; --y: -50px; }
-            .confetti-piece:nth-child(12) { --x: 0px; --y: -85px; }
-            @keyframes fly {
-              from {
-                transform: translate(0, 0) rotate(0deg) scale(0.8);
-                opacity: 0;
-              }
-              to {
-                transform: translate(var(--x), var(--y)) rotate(120deg) scale(1);
-                opacity: 1;
-              }
-            }
-          `}</style>
-        </div>
-      )}
-
-      {/* MENU */}
-      {gameState === 'menu' && (
-        <div className="text-center max-w-md w-full bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20 shadow-2xl">
-          <div className="text-6xl mb-4">🚀</div>
-          <h1 className="text-4xl font-black mb-2">5. Sınıf SpeedRun</h1>
-          <p className="text-violet-200 mb-4">
-            60 saniyen var! Doğru +4s, yanlış -2s. 3 doğru üst üste +5s🔥
-          </p>
-
-          <div className="mb-6 bg-black/25 rounded-2xl p-4">
-            <div className="text-xs uppercase tracking-widest text-violet-200 font-bold">En Yüksek Skor</div>
-            <div className="text-3xl font-black text-yellow-300">{highScore}</div>
-          </div>
-
-          <button
-            onClick={startGame}
-            className="w-full py-4 bg-yellow-400 hover:bg-yellow-300 text-violet-900 font-black text-xl rounded-2xl shadow-lg transform transition active:scale-95"
-          >
-            BAŞLA!
-          </button>
-
-          <Link href="/" className="block mt-4 text-sm text-violet-300 hover:text-white underline">
-            Ana Sayfaya Dön
-          </Link>
-        </div>
-      )}
-
-      {/* PLAYING */}
-      {gameState === 'playing' && (
-        <div className="w-full max-w-lg">
-          {isLoadingQuestion ? (
-            <div className="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20 shadow-2xl text-center">
-              <div className="text-4xl mb-2">⏳</div>
-              <div className="font-bold">Sorular hazırlanıyor…</div>
-            </div>
-          ) : (
-            <>
-              {/* Üst Bilgi Barı */}
-              <div className="flex flex-wrap justify-between items-center mb-6 gap-2">
-                <div className="bg-black/30 px-4 py-2 rounded-xl font-bold font-mono text-2xl">
-                  Skor: <span className="text-yellow-400">{score}</span>
-                </div>
-
-                <div className="bg-black/20 px-3 py-2 rounded-xl font-bold text-sm">
-                  Rekor: <span className="text-yellow-300">{highScore}</span>
-                </div>
-
-                {/* Soru sayacı */}
-                <div className="bg-black/20 px-3 py-2 rounded-xl font-bold text-sm">
-                  Soru: <span className="text-white">{answeredCount + 1}</span> / ∞
-                </div>
-
-                {/* Streak */}
-                {streak > 0 && (
-                  <div className="bg-yellow-400 text-violet-900 px-3 py-2 rounded-xl font-black text-sm animate-pulse">
-                    🔥 {streak}x
-                  </div>
-                )}
-
-                {/* Timer + flash */}
-                <div className="relative">
-                  <div
-                    className={`text-3xl font-black font-mono ${
-                      timeLeft <= 10 ? 'text-red-400 animate-pulse' : 'text-white'
-                    }`}
-                  >
-                    00:{timeLeft < 10 ? `0${timeLeft}` : timeLeft}
-                  </div>
-
-                  {timeFlash && (
-                    <div
-                      className={`absolute -top-6 left-1/2 -translate-x-1/2 text-sm font-black animate-bounce ${
-                        timeFlash.startsWith('+') ? 'text-green-300' : 'text-red-300'
-                      }`}
-                    >
-                      {timeFlash}
-                    </div>
-                  )}
-                </div>
-
-                {/* Mod göstergesi */}
-                <div className="bg-black/20 px-3 py-2 rounded-xl font-bold text-sm">
-                  Mod: <span className="text-violet-200">{difficultyBias}</span>
-                </div>
-              </div>
-
-              {/* Soru Kartı */}
-              <div
-                className={`bg-white text-slate-900 rounded-3xl p-6 shadow-2xl mb-4 min-h-[200px] flex flex-col justify-center items-center text-center relative overflow-hidden ${
-                  shake ? 'shake' : ''
-                }`}
-              >
-                <div className="absolute top-0 left-0 w-full h-2 bg-slate-100">
-                  <div
-                    className="h-full bg-yellow-400 transition-all duration-300 ease-linear"
-                    style={{ width: `${(timeLeft / 100) * 100}%` }}
-                  />
-                </div>
-
-                <span className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">
-                  {currentQ?.category}
-                </span>
-
-                <h2 className="text-2xl font-bold leading-tight">{currentQ?.question}</h2>
-
-                {/* Doğru/yanlış mini feedback */}
-                {selected && (
-                  <div className="mt-3 text-sm font-extrabold">
-                    {isCorrect ? (
-                      <span className="text-green-600">✅ Doğru! +{CORRECT_REWARD} puan</span>
-                    ) : (
-                      <span className="text-red-600">❌ Yanlış! -{WRONG_PENALTY} puan</span>
-                    )}
-                  </div>
-                )}
-
-                <style jsx>{`
-                  .shake {
-                    animation: shake 250ms ease-in-out;
-                  }
-                  @keyframes shake {
-                    0% {
-                      transform: translateX(0);
-                    }
-                    25% {
-                      transform: translateX(-6px);
-                    }
-                    50% {
-                      transform: translateX(6px);
-                    }
-                    75% {
-                      transform: translateX(-4px);
-                    }
-                    100% {
-                      transform: translateX(0);
-                    }
-                  }
-                `}</style>
-              </div>
-
-              {/* Seçenekler */}
-              <div className="grid grid-cols-2 gap-3">
-                {(currentQ?.options ?? []).map((opt, idx) => (
-                  <button
-                    key={idx}
-                    onClick={() => handleAnswer(opt)}
-                    disabled={lockButtons}
-                    className={`${getBtnClass(opt)} ${lockButtons ? 'opacity-90 cursor-not-allowed' : ''}`}
-                    style={{ touchAction: 'manipulation' }}
-                  >
-                    <div className="flex items-center justify-center gap-2">
-                      {selected === opt && isCorrect === true && <span>✅</span>}
-                      {selected === opt && isCorrect === false && <span>❌</span>}
-                      <span>{opt}</span>
-                    </div>
-                  </button>
-                ))}
-              </div>
-            </>
-          )}
-        </div>
-      )}
-
-      {/* GAMEOVER */}
-      {gameState === 'gameover' && (
-        <div className="text-center max-w-md w-full bg-white text-slate-900 p-8 rounded-3xl shadow-2xl animate-in zoom-in duration-300">
-          <div className="text-6xl mb-2">🏁</div>
-          <h2 className="text-3xl font-black mb-1">Süre Bitti!</h2>
-          <p className="text-slate-500 mb-6">İyi iş çıkardın.</p>
-
-          <div className="bg-slate-100 p-6 rounded-2xl mb-4">
-            <div className="text-sm text-slate-500 uppercase font-bold">Toplam Skor</div>
-            <div className="text-5xl font-black text-violet-600">{score}</div>
-          </div>
-
-          <div className="bg-slate-100 p-4 rounded-2xl mb-6">
-            <div className="text-xs text-slate-500 uppercase font-bold">En Yüksek Skor</div>
-            <div className="text-2xl font-black text-slate-800">{highScore}</div>
-            {score >= highScore && score !== 0 && (
-              <div className="mt-1 text-sm font-bold text-green-600">🎉 Yeni rekor!</div>
-            )}
-          </div>
-
-          <div className="space-y-3">
-            <button
-              onClick={startGame}
-              className="w-full py-4 bg-violet-600 hover:bg-violet-700 text-white font-bold rounded-xl transition"
-            >
-              Tekrar Dene ↻
-            </button>
-            <Link
-              href="/"
-              className="block py-4 bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold rounded-xl transition"
-            >
-              Ana Sayfa
-            </Link>
-          </div>
-        </div>
-      )}
-    </div>
-  );
-}
+export const speedRunQuestions: SpeedQuestion[] = [
+  // ==========================
+  // 📐 MATEMATİK
+  // ==========================
+  {
+    id: 'm1',
+    category: 'Matematik',
+    question: 'Bir kenarı 6 cm olan karenin alanı kaçtır?',
+    options: ['36 cm²', '24 cm²', '12 cm²', '30 cm²'],
+    answer: '36 cm²'
+  },
+  {
+    id: 'm2',
+    category: 'Matematik',
+    question: '8 sayısının karesi (8²) kaçtır?',
+    options: ['16', '64', '80', '18'],
+    answer: '64'
+  },
+  {
+    id: 'm3',
+    category: 'Matematik',
+    question: 'En küçük geniş açı kaç derecedir?',
+    options: ['89', '90', '91', '100'],
+    answer: '91'
+  },
+  {
+    id: 'm4',
+    category: 'Matematik',
+    question: '3 saat 20 dakika toplam kaç dakikadır?',
+    options: ['180', '200', '220', '320'],
+    answer: '200'
+  },
+  {
+    id: 'm5',
+    category: 'Matematik',
+    question: 'Payı 1 olan kesirlere ne denir?',
+    options: ['Bileşik', 'Tam Sayılı', 'Birim Kesir', 'Ondalık'],
+    answer: 'Birim Kesir'
+  },
+  {
+    id: 'm6',
+    category: 'Matematik',
+    question: 'Hangi sayı 5 ile kalansız bölünemez?',
+    options: ['105', '500', '235', '123'],
+    answer: '123'
+  },
+  {
+    id: 'm7',
+    category: 'Matematik',
+    question: 'Bir sayının 1/4\'ü "çeyrek" ise, 1/2\'si nedir?',
+    options: ['Bütün', 'Yarım', 'Üç çeyrek', 'Hiçbiri'],
+    answer: 'Yarım'
+  },
+  {
+    id: 'm8',
+    category: 'Matematik',
+    question: '2500 ÷ 100 işleminin sonucu kaçtır?',
+    options: ['25', '250', '2,5', '25000'],
+    answer: '25'
+  },
+  {
+    id: 'm9',
+    category: 'Matematik',
+    question: 'Aşağıdakilerden hangisi bir "Dar Açı"dır?',
+    options: ['90°', '120°', '45°', '180°'],
+    answer: '45°'
+  },
+  {
+    id: 'm10',
+    category: 'Matematik',
+    question: 'Dikdörtgenin çevresini bulmak için ne yaparız?',
+    options: ['Tüm kenarları toplarız', 'İki kenarı çarparız', 'Sadece uzunları toplarız', 'Böleriz'],
+    answer: 'Tüm kenarları toplarız'
+  },
+  {
+    id: 'm11',
+    category: 'Matematik',
+    question: '5² + 2³ işleminin sonucu kaçtır?',
+    options: ['33', '29', '17', '31'],
+    answer: '33'
+  },
+  {
+    id: 'm12',
+    category: 'Matematik',
+    question: 'Hangisi 9 basamaklı en büyük sayıdır?',
+    options: ['999.999.999', '100.000.000', '987.654.321', '900.000.000'],
+    answer: '999.999.999'
+  },
+
+  // ==========================
+  // 🔬 FEN
+  // ==========================
+  {
+    id: 'f1',
+    category: 'Fen',
+    question: 'Kuvveti ölçen alet hangisidir?',
+    options: ['Termometre', 'Dinamometre', 'Barometre', 'Metre'],
+    answer: 'Dinamometre'
+  },
+  {
+    id: 'f2',
+    category: 'Fen',
+    question: 'Ay\'ın Dünya\'ya bakan yüzünün tamamen aydınlık olduğu evre hangisidir?',
+    options: ['Yeni Ay', 'İlk Dördün', 'Dolunay', 'Son Dördün'],
+    answer: 'Dolunay'
+  },
+  {
+    id: 'f3',
+    category: 'Fen',
+    question: 'Isı alan tellerin uzamasına ne denir?',
+    options: ['Büzülme', 'Genleşme', 'Erime', 'Buharlaşma'],
+    answer: 'Genleşme'
+  },
+  {
+    id: 'f4',
+    category: 'Fen',
+    question: 'Sürtünme kuvveti hareketi nasıl etkiler?',
+    options: ['Hızlandırır', 'Zorlaştırır', 'Etkilemez', 'Başlatır'],
+    answer: 'Zorlaştırır'
+  },
+  {
+    id: 'f5',
+    category: 'Fen',
+    question: 'Aşağıdakilerden hangisi bir enerji türüdür?',
+    options: ['Sıcaklık', 'Isı', 'Derece', 'Kütle'],
+    answer: 'Isı'
+  },
+  {
+    id: 'f6',
+    category: 'Fen',
+    question: 'Hangisi bir "Omurgalı Hayvan"dır?',
+    options: ['Salyangoz', 'Kelebek', 'Balık', 'Solucan'],
+    answer: 'Balık'
+  },
+  {
+    id: 'f7',
+    category: 'Fen',
+    question: 'Işık nasıl yayılır?',
+    options: ['Eğrisel', 'Doğrusal', 'Dairesel', 'Yayılmaz'],
+    answer: 'Doğrusal'
+  },
+  {
+    id: 'f8',
+    category: 'Fen',
+    question: 'Işığı geçirmeyen maddelere ne denir?',
+    options: ['Saydam', 'Yarı Saydam', 'Opak', 'Parlak'],
+    answer: 'Opak'
+  },
+  {
+    id: 'f9',
+    category: 'Fen',
+    question: 'Katı bir maddenin ısı alarak sıvı hale geçmesine ne denir?',
+    options: ['Donma', 'Erime', 'Buharlaşma', 'Süblimleşme'],
+    answer: 'Erime'
+  },
+  {
+    id: 'f10',
+    category: 'Fen',
+    question: 'Ay\'ın ana evreleri arasında kaçar gün vardır?',
+    options: ['1 gün', '1 hafta', '2 hafta', '1 ay'],
+    answer: '1 hafta'
+  },
+  {
+    id: 'f11',
+    category: 'Fen',
+    question: 'Kuvvetin birimi nedir?',
+    options: ['Kilogram', 'Metre', 'Newton', 'Litre'],
+    answer: 'Newton'
+  },
+  {
+    id: 'f12',
+    category: 'Fen',
+    question: 'Güneş, Dünya ve Ay\'dan hangisi en büyüktür?',
+    options: ['Dünya', 'Ay', 'Güneş', 'Hepsi eşittir'],
+    answer: 'Güneş'
+  },
+
+  // ==========================
+  // 📚 TÜRKÇE
+  // ==========================
+  {
+    id: 't1',
+    category: 'Türkçe',
+    question: '"Siyah" kelimesinin eş anlamlısı nedir?',
+    options: ['Beyaz', 'Ak', 'Kara', 'Kırmızı'],
+    answer: 'Kara'
+  },
+  {
+    id: 't2',
+    category: 'Türkçe',
+    question: '"Cesur" kelimesinin zıt anlamlısı hangisidir?',
+    options: ['Korkak', 'Yiğit', 'Güçlü', 'Atılgan'],
+    answer: 'Korkak'
+  },
+  {
+    id: 't3',
+    category: 'Türkçe',
+    question: 'Hangi kelime "sesteş" (eş sesli) değildir?',
+    options: ['Yüz', 'Çay', 'Ben', 'Kitap'],
+    answer: 'Kitap'
+  },
+  {
+    id: 't4',
+    category: 'Türkçe',
+    question: '"Keskin bakışları vardı." cümlesinde "keskin" hangi anlamda kullanılmıştır?',
+    options: ['Gerçek', 'Mecaz', 'Terim', 'Zıt'],
+    answer: 'Mecaz'
+  },
+  {
+    id: 't5',
+    category: 'Türkçe',
+    question: '"Mektep" kelimesinin eş anlamlısı nedir?',
+    options: ['Hastane', 'Okul', 'Kütüphane', 'Bahçe'],
+    answer: 'Okul'
+  },
+  {
+    id: 't6',
+    category: 'Türkçe',
+    question: 'Aşağıdaki kelimelerin hangisinde yazım yanlışı vardır?',
+    options: ['Herkez', 'Herkes', 'Yalnız', 'Yanlış'],
+    answer: 'Herkez'
+  },
+  {
+    id: 't7',
+    category: 'Türkçe',
+    question: '"Çok çalıştığı için sınavı kazandı." cümlesinde hangi ilişki vardır?',
+    options: ['Amaç-Sonuç', 'Neden-Sonuç', 'Koşul-Sonuç', 'Benzetme'],
+    answer: 'Neden-Sonuç'
+  },
+  {
+    id: 't8',
+    category: 'Türkçe',
+    question: 'Özel isimlere gelen ekler ne ile ayrılır?',
+    options: ['Nokta', 'Virgül', 'Kesme İşareti', 'Ünlem'],
+    answer: 'Kesme İşareti'
+  },
+  {
+    id: 't9',
+    category: 'Türkçe',
+    question: '"Güz" kelimesinin eş anlamlısı nedir?',
+    options: ['İlkbahar', 'Kış', 'Yaz', 'Sonbahar'],
+    answer: 'Sonbahar'
+  },
+  {
+    id: 't10',
+    category: 'Türkçe',
+    question: 'Soru eki olan "mi" nasıl yazılır?',
+    options: ['Bitişik', 'Ayrı', 'Kelimeden önce', 'Tire ile'],
+    answer: 'Ayrı'
+  },
+  {
+    id: 't11',
+    category: 'Türkçe',
+    question: '"Kedi gibi uysaldı." cümlesinde ne yapılmıştır?',
+    options: ['Abartma', 'Kişileştirme', 'Benzetme', 'Eleştiri'],
+    answer: 'Benzetme'
+  },
+
+  // ==========================
+  // 🌍 İNGİLİZCE
+  // ==========================
+  {
+    id: 'e1',
+    category: 'İngilizce',
+    question: '"Science" kelimesinin Türkçe karşılığı nedir?',
+    options: ['Matematik', 'Fen Bilimleri', 'Resim', 'Müzik'],
+    answer: 'Fen Bilimleri'
+  },
+  {
+    id: 'e2',
+    category: 'İngilizce',
+    question: 'Hangi gün hafta sonudur (Weekend)?',
+    options: ['Monday', 'Tuesday', 'Friday', 'Sunday'],
+    answer: 'Sunday'
+  },
+  {
+    id: 'e3',
+    category: 'İngilizce',
+    question: '"Library" kelimesi ne anlama gelir?',
+    options: ['Eczane', 'Hastane', 'Kütüphane', 'Fırın'],
+    answer: 'Kütüphane'
+  },
+  {
+    id: 'e4',
+    category: 'İngilizce',
+    question: '"I ____ football." boşluğa hangisi gelmelidir?',
+    options: ['play', 'go', 'do', 'read'],
+    answer: 'play'
+  },
+  {
+    id: 'e5',
+    category: 'İngilizce',
+    question: '"Twelve" hangi sayıdır?',
+    options: ['11', '12', '20', '21'],
+    answer: '12'
+  },
+  {
+    id: 'e6',
+    category: 'İngilizce',
+    question: 'Hangi mevsim "Winter"dır?',
+    options: ['Yaz', 'Sonbahar', 'Kış', 'İlkbahar'],
+    answer: 'Kış'
+  },
+  {
+    id: 'e7',
+    category: 'İngilizce',
+    question: '"Headache" ne demektir?',
+    options: ['Karın ağrısı', 'Diş ağrısı', 'Baş ağrısı', 'Öksürük'],
+    answer: 'Baş ağrısı'
+  },
+  {
+    id: 'e8',
+    category: 'İngilizce',
+    question: 'Ankara is in the ____ of Turkey.',
+    options: ['North', 'South', 'West', 'Center'],
+    answer: 'Center'
+  },
+  {
+    id: 'e9',
+    category: 'İngilizce',
+    question: '"Good Morning" ne zaman söylenir?',
+    options: ['Akşam', 'Gece', 'Öğlen', 'Sabah'],
+    answer: 'Sabah'
+  },
+  {
+    id: 'e10',
+    category: 'İngilizce',
+    question: 'Hangisi bir "Okul Eşyası" (School Object) değildir?',
+    options: ['Pencil', 'Eraser', 'Apple', 'Ruler'],
+    answer: 'Apple'
+  },
+  {
+    id: 'e11',
+    category: 'İngilizce',
+    question: '"Where are you from?" sorusunun cevabı hangisi olabilir?',
+    options: ['I am 10 years old', 'I am from Turkey', 'My name is Ali', 'I like pizza'],
+    answer: 'I am from Turkey'
+  },
+  {
+    id: 'e12',
+    category: 'İngilizce',
+    question: '2. ay hangisidir? (2nd month)',
+    options: ['January', 'March', 'April', 'February'],
+    answer: 'February'
+  },
+
+  // ==========================
+  // EK SORULAR (+60)
+  // ==========================
+  // 📐 MATEMATİK (+15)
+  {
+    id: 'm13',
+    category: 'Matematik',
+    question: '120 sayısının yarısı kaçtır?',
+    options: ['50', '60', '120', '30'],
+    answer: '60'
+  },
+  {
+    id: 'm14',
+    category: 'Matematik',
+    question: 'Bir üçgenin iç açıları toplamı kaç derecedir?',
+    options: ['90', '180', '270', '360'],
+    answer: '180'
+  },
+  {
+    id: 'm15',
+    category: 'Matematik',
+    question: '7 × 8 işleminin sonucu kaçtır?',
+    options: ['54', '56', '64', '48'],
+    answer: '56'
+  },
+  {
+    id: 'm16',
+    category: 'Matematik',
+    question: '1 metre kaç santimetredir?',
+    options: ['10', '100', '1000', '1'],
+    answer: '100'
+  },
+  {
+    id: 'm17',
+    category: 'Matematik',
+    question: 'Hangisi çift sayıdır?',
+    options: ['13', '21', '34', '55'],
+    answer: '34'
+  },
+  {
+    id: 'm18',
+    category: 'Matematik',
+    question: '9 × 0 işleminin sonucu kaçtır?',
+    options: ['0', '9', '1', 'Hata'],
+    answer: '0'
+  },
+  {
+    id: 'm19',
+    category: 'Matematik',
+    question: 'En küçük tek sayı hangisidir?',
+    options: ['0', '1', '2', '3'],
+    answer: '1'
+  },
+  {
+    id: 'm20',
+    category: 'Matematik',
+    question: 'Saat 14:30, öğleden sonra saat kaçtır?',
+    options: ['2:30', '12:30', '4:30', '1:30'],
+    answer: '2:30'
+  },
+  {
+    id: 'm21',
+    category: 'Matematik',
+    question: '5 onluk + 3 birlik kaçtır?',
+    options: ['8', '53', '35', '503'],
+    answer: '53'
+  },
+  {
+    id: 'm22',
+    category: 'Matematik',
+    question: 'Bir dikdörtgenin karşılıklı kenarları nasıldır?',
+    options: ['Eşit', 'Farklı', 'Yamuk', 'Üçgen'],
+    answer: 'Eşit'
+  },
+  {
+    id: 'm23',
+    category: 'Matematik',
+    question: 'Hangisi bir doğal sayı değildir?',
+    options: ['5', '12', '-3', '0'],
+    answer: '-3'
+  },
+  {
+    id: 'm24',
+    category: 'Matematik',
+    question: '10’un çarpanlarından biri hangisidir?',
+    options: ['3', '4', '5', '7'],
+    answer: '5'
+  },
+  {
+    id: 'm25',
+    category: 'Matematik',
+    question: '1 kilogram kaç gramdır?',
+    options: ['10', '100', '1000', '500'],
+    answer: '1000'
+  },
+  {
+    id: 'm26',
+    category: 'Matematik',
+    question: 'Bir tam sayının 1/2’si ne demektir?',
+    options: ['Yarım', 'Çeyrek', 'Tam', 'İki katı'],
+    answer: 'Yarım'
+  },
+  {
+    id: 'm27',
+    category: 'Matematik',
+    question: 'Hangisi bir ölçü birimi değildir?',
+    options: ['Metre', 'Litre', 'Kilogram', 'Sayı'],
+    answer: 'Sayı'
+  },
+
+  // 🔬 FEN (+15)
+  {
+    id: 'f13',
+    category: 'Fen',
+    question: 'Isı alan maddeler genellikle ne yapar?',
+    options: ['Büzülür', 'Genleşir', 'Kırılır', 'Yok olur'],
+    answer: 'Genleşir'
+  },
+  {
+    id: 'f14',
+    category: 'Fen',
+    question: 'Hangisi bir duyu organımız değildir?',
+    options: ['Göz', 'Kulak', 'Kalp', 'Burun'],
+    answer: 'Kalp'
+  },
+  {
+    id: 'f15',
+    category: 'Fen',
+    question: 'Güneş hangi tür gök cismidir?',
+    options: ['Gezegen', 'Uydu', 'Yıldız', 'Meteor'],
+    answer: 'Yıldız'
+  },
+  {
+    id: 'f16',
+    category: 'Fen',
+    question: 'Hangisi ışık kaynağıdır?',
+    options: ['Ayna', 'Ay', 'Güneş', 'Bulut'],
+    answer: 'Güneş'
+  },
+  {
+    id: 'f17',
+    category: 'Fen',
+    question: 'Ses hangi ortamda yayılmaz?',
+    options: ['Hava', 'Su', 'Katı', 'Boşluk'],
+    answer: 'Boşluk'
+  },
+  {
+    id: 'f18',
+    category: 'Fen',
+    question: 'Hangisi bir mıknatıs özelliğidir?',
+    options: ['Camı çeker', 'Plastiği iter', 'Demiri çeker', 'Tahtayı çeker'],
+    answer: 'Demiri çeker'
+  },
+  {
+    id: 'f19',
+    category: 'Fen',
+    question: 'Bitkiler besinlerini nasıl üretir?',
+    options: ['Fotosentez', 'Solunum', 'Sindirim', 'Boşaltım'],
+    answer: 'Fotosentez'
+  },
+  {
+    id: 'f20',
+    category: 'Fen',
+    question: 'Hangisi yenilenebilir enerji kaynağıdır?',
+    options: ['Kömür', 'Petrol', 'Güneş', 'Doğalgaz'],
+    answer: 'Güneş'
+  },
+  {
+    id: 'f21',
+    category: 'Fen',
+    question: 'Canlıların büyüyüp gelişmesini sağlayan şey nedir?',
+    options: ['Besin', 'Işık', 'Ses', 'Rüzgar'],
+    answer: 'Besin'
+  },
+  {
+    id: 'f22',
+    category: 'Fen',
+    question: 'Hangisi katı bir maddedir?',
+    options: ['Su', 'Hava', 'Taş', 'Buhar'],
+    answer: 'Taş'
+  },
+  {
+    id: 'f23',
+    category: 'Fen',
+    question: 'Dünya kendi etrafında ne yapar?',
+    options: ['Dolanır', 'Dönmez', 'Döner', 'Durur'],
+    answer: 'Döner'
+  },
+  {
+    id: 'f24',
+    category: 'Fen',
+    question: 'Hangisi çevre kirliliğine neden olur?',
+    options: ['Ağaç dikmek', 'Geri dönüşüm', 'Çöp atmak', 'Tasarruf'],
+    answer: 'Çöp atmak'
+  },
+  {
+    id: 'f25',
+    category: 'Fen',
+    question: 'İnsan kaç duyu organına sahiptir?',
+    options: ['3', '4', '5', '6'],
+    answer: '5'
+  },
+  {
+    id: 'f26',
+    category: 'Fen',
+    question: 'Hangisi bir gazdır?',
+    options: ['Taş', 'Su', 'Hava', 'Buz'],
+    answer: 'Hava'
+  },
+  {
+    id: 'f27',
+    category: 'Fen',
+    question: 'Ay ışığını nereden alır?',
+    options: ['Kendinden', 'Dünya’dan', 'Güneş’ten', 'Yıldızlardan'],
+    answer: 'Güneş’ten'
+  },
+
+  // 📚 TÜRKÇE (+15)
+  {
+    id: 't12',
+    category: 'Türkçe',
+    question: '"Mutlu" kelimesinin zıt anlamlısı nedir?',
+    options: ['Sevinçli', 'Neşeli', 'Üzgün', 'Keyifli'],
+    answer: 'Üzgün'
+  },
+  {
+    id: 't13',
+    category: 'Türkçe',
+    question: 'Hangisi bir noktalama işaretidir?',
+    options: ['Ve', 'Ama', '!', 'İle'],
+    answer: '!'
+  },
+  {
+    id: 't14',
+    category: 'Türkçe',
+    question: '"Hızlı" kelimesinin eş anlamlısı nedir?',
+    options: ['Yavaş', 'Çabuk', 'Ağır', 'Geç'],
+    answer: 'Çabuk'
+  },
+  {
+    id: 't15',
+    category: 'Türkçe',
+    question: 'Hangisi bir özel isimdir?',
+    options: ['şehir', 'Ali', 'okul', 'öğrenci'],
+    answer: 'Ali'
+  },
+  {
+    id: 't16',
+    category: 'Türkçe',
+    question: 'Cümlelerin sonuna genellikle ne konur?',
+    options: ['Virgül', 'Nokta', 'Tire', 'Parantez'],
+    answer: 'Nokta'
+  },
+  {
+    id: 't17',
+    category: 'Türkçe',
+    question: '"Kitaplarım masada." cümlesinde yüklem hangisidir?',
+    options: ['Kitaplarım', 'Masada', 'Masada kitaplarım', 'Yok'],
+    answer: 'Masada'
+  },
+  {
+    id: 't18',
+    category: 'Türkçe',
+    question: 'Hangisi bir fiildir?',
+    options: ['Koşmak', 'Koşu', 'Koşucu', 'Koşak'],
+    answer: 'Koşmak'
+  },
+  {
+    id: 't19',
+    category: 'Türkçe',
+    question: 'Hangisi mecaz anlamlıdır?',
+    options: ['Tatlı elma', 'Sert taş', 'Tatlı çocuk', 'Uzun yol'],
+    answer: 'Tatlı çocuk'
+  },
+  {
+    id: 't20',
+    category: 'Türkçe',
+    question: 'Hangisi bir deyimdir?',
+    options: ['Kitap okumak', 'Göz atmak', 'Okula gitmek', 'Kalem almak'],
+    answer: 'Göz atmak'
+  },
+  {
+    id: 't21',
+    category: 'Türkçe',
+    question: '"Eyvah!" kelimesi hangi tür sözcüktür?',
+    options: ['İsim', 'Fiil', 'Ünlem', 'Zamir'],
+    answer: 'Ünlem'
+  },
+  {
+    id: 't22',
+    category: 'Türkçe',
+    question: 'Hangisi soru cümlesidir?',
+    options: ['Bugün hava güzel.', 'Okula gittim.', 'Saat kaç?', 'Kitap aldım.'],
+    answer: 'Saat kaç?'
+  },
+  {
+    id: 't23',
+    category: 'Türkçe',
+    question: 'Hangisi zarf değildir?',
+    options: ['Çok', 'Hemen', 'Ev', 'Yavaşça'],
+    answer: 'Ev'
+  },
+  {
+    id: 't24',
+    category: 'Türkçe',
+    question: '"Kırmızı elbise" söz grubunda kırmızı neyi niteler?',
+    options: ['Fiil', 'Zamir', 'İsim', 'Sıfat'],
+    answer: 'Sıfat'
+  },
+  {
+    id: 't25',
+    category: 'Türkçe',
+    question: 'Hangisi hece sayısı bakımından doğrudur?',
+    options: ['Kalem (1)', 'Defter (1)', 'Okul (2)', 'Çanta (3)'],
+    answer: 'Okul (2)'
+  },
+  {
+    id: 't26',
+    category: 'Türkçe',
+    question: 'Hangisi büyük harfle başlar?',
+    options: ['pazartesi', 'ankara', 'Ali', 'okul'],
+    answer: 'Ali'
+  },
+
+  // 🌍 İNGİLİZCE (+15)
+  {
+    id: 'e13',
+    category: 'İngilizce',
+    question: '"Teacher" ne demektir?',
+    options: ['Öğrenci', 'Öğretmen', 'Doktor', 'Müdür'],
+    answer: 'Öğretmen'
+  },
+  {
+    id: 'e14',
+    category: 'İngilizce',
+    question: '"Blue" hangi renktir?',
+    options: ['Kırmızı', 'Mavi', 'Yeşil', 'Sarı'],
+    answer: 'Mavi'
+  },
+  {
+    id: 'e15',
+    category: 'İngilizce',
+    question: 'Hangisi bir fiildir?',
+    options: ['Run', 'Table', 'Book', 'Apple'],
+    answer: 'Run'
+  },
+  {
+    id: 'e16',
+    category: 'İngilizce',
+    question: '"I am ___ student." boşluğa ne gelir?',
+    options: ['a', 'an', 'the', 'is'],
+    answer: 'a'
+  },
+  {
+    id: 'e17',
+    category: 'İngilizce',
+    question: '"Dog" kelimesinin çoğulu nedir?',
+    options: ['Doges', 'Dogs', 'Dogies', 'Dog'],
+    answer: 'Dogs'
+  },
+  {
+    id: 'e18',
+    category: 'İngilizce',
+    question: 'Hangisi bir meyvedir?',
+    options: ['Car', 'Apple', 'Chair', 'Book'],
+    answer: 'Apple'
+  },
+  {
+    id: 'e19',
+    category: 'İngilizce',
+    question: '"Good night" ne zaman söylenir?',
+    options: ['Sabah', 'Öğlen', 'Akşam', 'Uyurken'],
+    answer: 'Uyurken'
+  },
+  {
+    id: 'e20',
+    category: 'İngilizce',
+    question: 'Hangisi sayı değildir?',
+    options: ['One', 'Two', 'Ten', 'Tree'],
+    answer: 'Tree'
+  },
+  {
+    id: 'e21',
+    category: 'İngilizce',
+    question: '"My name is Ayşe." cümlesi ne anlatır?',
+    options: ['Yaş', 'İsim', 'Ülke', 'Hobi'],
+    answer: 'İsim'
+  },
+  {
+    id: 'e22',
+    category: 'İngilizce',
+    question: 'Hangisi bir gün değildir?',
+    options: ['Monday', 'Sunday', 'April', 'Friday'],
+    answer: 'April'
+  },
+  {
+    id: 'e23',
+    category: 'İngilizce',
+    question: '"How old are you?" sorusu ne sorar?',
+    options: ['İsim', 'Yaş', 'Ülke', 'Meslek'],
+    answer: 'Yaş'
+  },
+  {
+    id: 'e24',
+    category: 'İngilizce',
+    question: '"Cat" ne demektir?',
+    options: ['Köpek', 'Kedi', 'Kuş', 'Balık'],
+    answer: 'Kedi'
+  },
+  {
+    id: 'e25',
+    category: 'İngilizce',
+    question: 'Hangisi bir sınıf eşyasıdır?',
+    options: ['Bed', 'Pencil', 'Shoe', 'Door'],
+    answer: 'Pencil'
+  },
+  {
+    id: 'e26',
+    category: 'İngilizce',
+    question: '"See you!" ne anlama gelir?',
+    options: ['Merhaba', 'Görüşürüz', 'Hoş geldin', 'Teşekkürler'],
+    answer: 'Görüşürüz'
+  },
+  {
+    id: 'e27',
+    category: 'İngilizce',
+    question: 'Hangisi bir renk değildir?',
+    options: ['Red', 'Blue', 'Green', 'Milk'],
+    answer: 'Milk'
+  }
+];
