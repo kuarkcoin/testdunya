@@ -358,75 +358,61 @@ export default function HomePage() {
   <div className="p-6 bg-slate-50/30">
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       
-      {/* 5. SINIF KARTI - GÜNCELLENDİ (Çift Butonlu) */}
-      <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-orange-400 to-amber-500 p-6 text-white shadow-xl transition-all hover:shadow-2xl border border-orange-300/30">
-        
-        {/* Arka Plan Dekoru */}
-        <div className="absolute -top-10 -right-10 h-40 w-40 rounded-full bg-white/10 blur-3xl transition-all group-hover:bg-white/20"></div>
-        <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black/10 to-transparent"></div>
+      {/* 5. SINIF KARTI - GÜNCELLENDİ (Kartlar Silindi) */}
+<div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-orange-400 to-amber-500 p-6 text-white shadow-xl transition-all hover:shadow-2xl border border-orange-300/30">
+  
+  {/* Arka Plan Dekoru */}
+  <div className="absolute -top-10 -right-10 h-40 w-40 rounded-full bg-white/10 blur-3xl transition-all group-hover:bg-white/20"></div>
+  <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black/10 to-transparent"></div>
 
-        <div className="relative z-10 flex flex-col h-full justify-between">
-          
-          {/* Üst Kısım: Başlık */}
-          <div className="mb-6">
-            <div className="mb-3 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-white backdrop-blur-sm border border-white/20">
-              <span className="text-lg">🏫</span> 2025 Müfredat
-            </div>
-            <h3 className="text-3xl font-black tracking-tight leading-none mb-2">5. Sınıf</h3>
-            <p className="text-orange-50 text-xs font-medium opacity-90 leading-relaxed">
-              Matematik, Fen, Türkçe ve İngilizce konuları.
-            </p>
-          </div>
-
-          {/* Alt Kısım: Butonlar */}
-          <div className="flex flex-col gap-3">
-            
-            {/* 1. Buton: Ders Çalış (Flashcards) */}
-            <Link 
-              href="/grade5-cards"
-              className="flex items-center justify-between px-3 py-3 bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl transition-all group/btn"
-            >
-              <div className="flex items-center gap-3">
-                <div className="p-1.5 bg-white/20 rounded-lg text-white">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-                </div>
-                <div className="flex flex-col">
-                  <span className="font-bold text-sm">Çalışma Kartları</span>
-                  <span className="text-[10px] text-orange-100 opacity-80">Konu Tekrarı</span>
-                </div>
-              </div>
-              <span className="text-white opacity-0 group-hover/btn:opacity-100 transition-opacity text-sm">→</span>
-            </Link>
-
-            {/* 2. Buton: SPEEDRUN (Yarış) */}
-            <Link 
-              href="/grade5-speedrun"
-              className="relative overflow-hidden flex items-center justify-between px-3 py-3 bg-white text-orange-600 rounded-xl shadow-lg transition-transform transform hover:-translate-y-1 hover:shadow-orange-900/20 group/run"
-            >
-              {/* Buton içi ışıltı */}
-              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-orange-100/50 to-transparent -translate-x-[100%] group-hover/run:animate-[shimmer_1.5s_infinite]"></div>
-
-              <div className="flex items-center gap-3 relative z-10">
-                <div className="p-1.5 bg-orange-100 text-orange-600 rounded-lg group-hover/run:scale-110 transition-transform">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-                </div>
-                <div className="flex flex-col">
-                  <span className="font-black text-sm tracking-tight">HIZ YARIŞI</span>
-                  <span className="text-[9px] font-bold text-orange-400 uppercase tracking-wider">60 Saniye Modu</span>
-                </div>
-              </div>
-              
-              <div className="bg-orange-600 text-white text-[10px] font-bold px-2 py-1 rounded-md relative z-10 group-hover/run:bg-orange-700 transition-colors">
-                BAŞLA
-              </div>
-            </Link>
-
-          </div>
-        </div>
+  <div className="relative z-10 flex flex-col h-full justify-between">
+    
+    {/* Üst Kısım: Başlık */}
+    <div className="mb-4">
+      <div className="mb-2 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-white backdrop-blur-sm border border-white/20">
+        <span className="text-lg">🏫</span> 5. Sınıf
       </div>
+      <h3 className="text-2xl font-black tracking-tight leading-none">Ders İçerikleri</h3>
+    </div>
+
+    {/* Alt Kısım: 2 Buton (Testler ve SpeedRun) */}
+    <div className="flex flex-col gap-3">
+      
+      {/* 1. ANA BUTON: KONU TESTLERİ */}
+      <Link 
+        href="/5-sinif"
+        className="flex items-center gap-3 px-3 py-3 bg-white text-orange-600 rounded-xl shadow-md transition-transform transform hover:-translate-y-0.5 hover:shadow-lg group/main"
+      >
+        <div className="p-1.5 bg-orange-100 rounded-lg group-hover/main:bg-orange-200 transition-colors">
+          <Book className="w-5 h-5 text-orange-600" />
+        </div>
+        <div className="flex flex-col">
+          <span className="font-black text-sm">KONU TESTLERİ</span>
+          <span className="text-[10px] font-bold text-orange-400 uppercase tracking-wider">Tüm Dersler</span>
+        </div>
+        <span className="ml-auto text-orange-600 font-bold">→</span>
+      </Link>
+
+      {/* 2. Buton: SPEEDRUN (Yarış) */}
+      <Link 
+        href="/grade5-speedrun"
+        className="flex items-center gap-3 px-3 py-3 bg-black/20 hover:bg-black/30 border border-white/10 rounded-xl transition-all group/run"
+      >
+        <div className="p-1.5 bg-white/10 rounded-lg text-white group-hover/run:text-yellow-300 transition-colors">
+          <Zap className="w-4 h-4" />
+        </div>
+        <div className="flex flex-col">
+          <span className="font-bold text-sm">Hız Yarışı</span>
+          <span className="text-[10px] text-orange-100 opacity-70">60 Saniye Modu</span>
+        </div>
+        <span className="ml-auto text-white opacity-70 group-hover/run:opacity-100 transition-opacity">→</span>
+      </Link>
 
     </div>
   </div>
+</div>
+</div>
+</div>
 </section>
 
 
