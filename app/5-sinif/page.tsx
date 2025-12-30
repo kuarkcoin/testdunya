@@ -3,7 +3,7 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import 'katex/dist/katex.min.css';
-import { InlineMath } from 'react-katex'; // ✅ KaTeX Bileşeni Eklendi
+import { InlineMath } from 'react-katex';
 import ReactConfetti from 'react-confetti';
 
 // VERİ IMPORTLARI
@@ -22,7 +22,7 @@ type Question5 = {
   options: string[];
   correct: number;
   explanation: string;
-  imageUrl?: string; 
+  imageUrl?: string;
 };
 
 type SubjectPack = {
@@ -61,22 +61,31 @@ function useWindowSize() {
   return size;
 }
 
-// ✅ GÜNCELLENMİŞ AKILLI METİN BİLEŞENİ
+// ✅ GÜVENLİ (HATASIZ) KaTeX + METİN
 const SmartText = ({ text }: { text: string }) => {
   if (!text) return null;
 
-  // Metni $ işaretlerine göre parçalara ayırır ($ işaretlerini de koruyarak)
+  // $...$ parçalarını yakala (en basit/uyumlu yöntem)
   const parts = text.split(/(\$.*?\$)/g);
 
   return (
     <span>
       {parts.map((part, index) => {
-        // Eğer parça $ ile başlayıp $ ile bitiyorsa matematiktir
-        if (part.startsWith('$') && part.endsWith('$')) {
+        // KaTeX parçası mı?
+        if (part.startsWith('$') && part.endsWith('$') && part.length >= 2) {
           const mathContent = part.substring(1, part.length - 1);
-          return <InlineMath key={index} math={mathContent} />;
+
+          // ✅ Eğer içerik boşsa veya sorunluysa metin bas
+          if (!mathContent.trim()) return <span key={index}>{part}</span>;
+
+          // ✅ Render hatasını güvenli yakala (nadiren olur ama çocuk testlerinde önemlidir)
+          try {
+            return <InlineMath key={index} math={mathContent} />;
+          } catch {
+            return <span key={index}>{part}</span>;
+          }
         }
-        // Değilse normal metindir
+
         return <span key={index}>{part}</span>;
       })}
     </span>
@@ -124,8 +133,20 @@ export default function Grade5Page() {
   const [aiFeedback, setAiFeedback] = useState<string | null>(null);
   const [loadingAi, setLoadingAi] = useState(false);
 
+  // ✅ ÇOCUK DOSTU EK ÖZELLİKLER
+  const [autoNext, setAutoNext] = useState(true); // seçince otomatik sonraki
+  const [showPickHint, setShowPickHint] = useState(false); // disabled butonda ipucu
+  const [imgModalOpen, setImgModalOpen] = useState(false);
+  const [imgModalSrc, setImgModalSrc] = useState<string | null>(null);
+
   const { width, height } = useWindowSize();
   const quizTopRef = useRef<HTMLDivElement>(null);
+
+  // AutoNext için “aynı soruda iki kez tetiklenmesin” koruması
+  const lastAutoNextKeyRef = useRef<string>('');
+
+  // speechSynthesis referans
+  const speakingRef = useRef(false);
 
   const subjects: Subject[] = [
     { id: 'matematik', label: 'Matematik', icon: '➕', gradient: 'from-blue-600 to-cyan-500', desc: 'Sayılar, İşlemler, Geometri' },
@@ -161,6 +182,7 @@ export default function Grade5Page() {
       setCurrentIdx(0);
       setAiFeedback(null);
       setView('quiz');
+      lastAutoNextKeyRef.current = '';
       if (typeof window !== 'undefined') window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
       alert('Bu test henüz hazırlanıyor!');
@@ -196,14 +218,188 @@ export default function Grade5Page() {
 
   useEffect(() => {
     if (view === 'result') handleAIFeedback();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [view]);
 
   const subjectLabel = subjects.find((s) => s.id === selectedSubject)?.label ?? selectedSubject;
+
+  // ✅ TTS (Soruyu Oku)
+  const getSpeakLang = (subject: SubjectId) => {
+    if (subject === 'ingilizce') return 'en-US';
+    return 'tr-TR';
+  };
+
+  const stopSpeaking = () => {
+    if (typeof window === 'undefined') return;
+    try {
+      window.speechSynthesis.cancel();
+    } catch {}
+    speakingRef.current = false;
+  };
+
+  const speakCurrentQuestion = () => {
+    if (typeof window === 'undefined') return;
+    if (!('speechSynthesis' in window)) {
+      alert('Bu cihazda sesli okuma desteklenmiyor.');
+      return;
+    }
+
+    stopSpeaking();
+
+    const q = quizQuestions[currentIdx];
+    if (!q) return;
+
+    // Basit “ekran okuma” metni
+    const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
+    const optionsText = (q.options || [])
+      .map((o, i) => `${letters[i]}. ${o.replace(/\$/g, '')}`)
+      .join('. ');
+
+    const plainPrompt = (q.prompt || '').replace(/\$/g, '');
+
+    const textToSpeak = `${subjectLabel}. Soru ${currentIdx + 1}. ${plainPrompt}. Seçenekler: ${optionsText}`;
+
+    const utter = new SpeechSynthesisUtterance(textToSpeak);
+    utter.lang = getSpeakLang(selectedSubject);
+    utter.rate = 0.95; // çocuklar için biraz daha net
+    utter.pitch = 1.0;
+
+    utter.onstart = () => {
+      speakingRef.current = true;
+    };
+    utter.onend = () => {
+      speakingRef.current = false;
+    };
+    utter.onerror = () => {
+      speakingRef.current = false;
+    };
+
+    try {
+      window.speechSynthesis.speak(utter);
+    } catch {
+      speakingRef.current = false;
+    }
+  };
+
+  // Unmount / sayfa değişince konuşmayı kes
+  useEffect(() => {
+    return () => {
+      stopSpeaking();
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // ✅ AutoNext: kullanıcı cevap seçince otomatik ilerle (son soru değilse)
+  useEffect(() => {
+    if (view !== 'quiz') return;
+    if (!autoNext) return;
+
+    const chosen = answers[currentIdx];
+    if (chosen === undefined) return;
+
+    const key = `${currentIdx}-${chosen}`;
+    if (lastAutoNextKeyRef.current === key) return; // aynı seçim tekrar tetiklenmesin
+    lastAutoNextKeyRef.current = key;
+
+    // Son soru ise otomatik bitirmeyelim (çocuk kontrol etsin)
+    if (currentIdx >= quizQuestions.length - 1) return;
+
+    const t = window.setTimeout(() => {
+      setCurrentIdx((p) => Math.min(p + 1, quizQuestions.length - 1));
+      scrollToTop();
+    }, 260);
+
+    return () => window.clearTimeout(t);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [answers, currentIdx, autoNext, view, quizQuestions.length]);
+
+  // ✅ Görsel modal
+  const openImageModal = (src: string) => {
+    setImgModalSrc(src);
+    setImgModalOpen(true);
+    stopSpeaking();
+  };
+
+  const closeImageModal = () => {
+    setImgModalOpen(false);
+    setImgModalSrc(null);
+  };
+
+  // ESC ile modal kapat
+  useEffect(() => {
+    if (!imgModalOpen) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') closeImageModal();
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [imgModalOpen]);
+
+  const onPickOption = (i: number) => {
+    setAnswers((prev) => ({ ...prev, [currentIdx]: i }));
+    setShowPickHint(false);
+  };
+
+  const goNextManual = () => {
+    if (answers[currentIdx] === undefined) {
+      setShowPickHint(true);
+      return;
+    }
+    setCurrentIdx((p) => Math.min(p + 1, quizQuestions.length - 1));
+    scrollToTop();
+  };
+
+  const finishQuiz = () => {
+    if (answers[currentIdx] === undefined) {
+      setShowPickHint(true);
+      return;
+    }
+    setView('result');
+    stopSpeaking();
+    if (typeof window !== 'undefined') window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   return (
     <main className="min-h-screen bg-slate-50 text-slate-900 font-sans pb-16 overflow-x-hidden relative">
       {view === 'result' && resultData.percent >= 85 && width > 0 && (
         <ReactConfetti width={width} height={height} numberOfPieces={180} recycle={false} />
+      )}
+
+      {/* ✅ Görsel Modal */}
+      {imgModalOpen && imgModalSrc && (
+        <div
+          className="fixed inset-0 z-[999] bg-black/60 backdrop-blur-sm flex items-center justify-center px-3"
+          role="dialog"
+          aria-modal="true"
+          onClick={closeImageModal}
+        >
+          <div
+            className="max-w-4xl w-full bg-white rounded-[1.75rem] border border-slate-200 shadow-2xl overflow-hidden"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between px-5 py-4 border-b border-slate-100">
+              <p className="font-black text-slate-700 text-sm">Görsel (Büyütülmüş)</p>
+              <button
+                onClick={closeImageModal}
+                className="px-4 py-2 rounded-2xl bg-slate-900 text-white font-black text-[11px] uppercase tracking-widest hover:bg-slate-800"
+              >
+                Kapat ✕
+              </button>
+            </div>
+            <div className="p-4 bg-slate-50 flex items-center justify-center">
+              <img
+                src={imgModalSrc}
+                alt="Büyütülmüş soru görseli"
+                className="max-h-[75vh] w-auto max-w-full object-contain rounded-xl border border-slate-100 bg-white p-2"
+              />
+            </div>
+            <div className="px-5 py-4 border-t border-slate-100">
+              <p className="text-[11px] text-slate-400 font-bold">
+                İpucu: Telefonda yakınlaştırmak için iki parmakla zoom yapabilirsin. (ESC ile de kapanır)
+              </p>
+            </div>
+          </div>
+        </div>
       )}
 
       <div className={`${ui.container} mx-auto ${ui.pagePad}`}>
@@ -213,7 +409,10 @@ export default function Grade5Page() {
           </Link>
           {view !== 'subject-select' && (
             <button
-              onClick={() => setView('subject-select')}
+              onClick={() => {
+                stopSpeaking();
+                setView('subject-select');
+              }}
               className="bg-white border border-slate-200 px-4 py-2 rounded-2xl hover:bg-slate-50 transition-all font-black text-[11px] uppercase shadow-sm"
             >
               Ders Değiştir
@@ -324,40 +523,83 @@ export default function Grade5Page() {
         {view === 'quiz' && quizQuestions.length > 0 && (
           <div className={`${ui.quizWrap} mx-auto space-y-5 animate-in fade-in duration-400`}>
             <div ref={quizTopRef} className="scroll-mt-24" />
+
+            {/* ÜST BAR */}
             <div className="space-y-2 px-1">
-              <div className="flex justify-between items-end">
-                <span className="text-[11px] font-black uppercase text-indigo-600 tracking-widest">
-                  {subjectLabel} • Test {selectedTestNo}
-                </span>
-                <span className="text-base font-mono font-black text-slate-400">
-                  {currentIdx + 1} / {quizQuestions.length}
-                </span>
+              <div className="flex justify-between items-end gap-3 flex-wrap">
+                <div className="flex flex-col">
+                  <span className="text-[11px] font-black uppercase text-indigo-600 tracking-widest">
+                    {subjectLabel} • Test {selectedTestNo}
+                  </span>
+                  <span className="text-[11px] text-slate-400 font-bold italic">Başarıya giden yolda harika ilerliyorsun! ⭐</span>
+                </div>
+
+                <div className="flex items-center gap-2 flex-wrap justify-end">
+                  {/* ✅ AutoNext Toggle */}
+                  <label className="flex items-center gap-2 bg-white border border-slate-200 px-3 py-2 rounded-2xl shadow-sm">
+                    <input
+                      type="checkbox"
+                      checked={autoNext}
+                      onChange={(e) => setAutoNext(e.target.checked)}
+                      className="accent-indigo-600"
+                    />
+                    <span className="text-[11px] font-black text-slate-700 uppercase tracking-widest">Oto İlerle</span>
+                  </label>
+
+                  {/* ✅ Oku */}
+                  <button
+                    onClick={speakCurrentQuestion}
+                    className="bg-white border border-slate-200 px-4 py-2 rounded-2xl hover:bg-slate-50 transition-all font-black text-[11px] uppercase shadow-sm"
+                  >
+                    Soruyu Oku 🔊
+                  </button>
+
+                  {/* ✅ Dur */}
+                  <button
+                    onClick={stopSpeaking}
+                    className="bg-slate-900 text-white px-4 py-2 rounded-2xl hover:bg-slate-800 transition-all font-black text-[11px] uppercase shadow-sm"
+                  >
+                    Dur ⏹️
+                  </button>
+
+                  <span className="text-base font-mono font-black text-slate-400">
+                    {currentIdx + 1} / {quizQuestions.length}
+                  </span>
+                </div>
               </div>
+
               <div className="w-full h-3 bg-slate-200 rounded-full overflow-hidden shadow-inner">
                 <div
                   className="h-full bg-gradient-to-r from-indigo-500 via-blue-500 to-indigo-600 transition-all duration-500 ease-out"
                   style={{ width: `${((currentIdx + 1) / quizQuestions.length) * 100}%` }}
                 />
               </div>
-              <p className="text-[11px] text-slate-400 font-bold italic">Başarıya giden yolda harika ilerliyorsun! ⭐</p>
             </div>
 
+            {/* SORU KARTI */}
             <div className={`bg-white border border-slate-200 ${ui.cardPad} ${ui.cardRound} shadow-xl relative overflow-hidden min-h-[450px] flex flex-col`}>
               <h3 className={`${ui.qTitle} font-extrabold leading-snug text-slate-800 mb-6`}>
-                {/* ✅ Soru Metni KaTeX Desteği */}
                 <SmartText text={quizQuestions[currentIdx].prompt} />
               </h3>
 
               {quizQuestions[currentIdx].imageUrl && (
                 <div className="mb-8 flex flex-col items-center justify-center">
-                  <div className="relative group">
+                  <button
+                    type="button"
+                    onClick={() => openImageModal(quizQuestions[currentIdx].imageUrl!)}
+                    className="relative group focus:outline-none"
+                    aria-label="Görseli büyüt"
+                  >
                     <div className="absolute -inset-0.5 bg-gradient-to-r from-indigo-500 to-blue-600 rounded-2xl blur opacity-10"></div>
-                    <img 
-                      src={quizQuestions[currentIdx].imageUrl} 
-                      alt="Soru Görseli" 
+                    <img
+                      src={quizQuestions[currentIdx].imageUrl}
+                      alt="Soru Görseli"
                       className="relative max-h-[330px] md:max-h-[420px] max-w-full w-auto rounded-xl shadow-sm border border-slate-50 object-contain bg-white p-2.5"
                     />
-                  </div>
+                    <div className="absolute bottom-2 right-2 bg-slate-900/80 text-white text-[10px] font-black px-3 py-2 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity">
+                      Büyüt 🔍
+                    </div>
+                  </button>
                   <p className="text-[9px] font-black text-slate-300 uppercase tracking-widest mt-2">Görseli İnceleyiniz</p>
                 </div>
               )}
@@ -368,16 +610,21 @@ export default function Grade5Page() {
                   return (
                     <button
                       key={i}
-                      onClick={() => setAnswers((prev) => ({ ...prev, [currentIdx]: i }))}
+                      onClick={() => onPickOption(i)}
                       className={`${ui.optionPad} rounded-[1.25rem] border-2 text-left transition-all flex items-center gap-4 group ${
-                        selected ? 'border-indigo-600 bg-indigo-50 text-indigo-900 shadow-md' : 'border-slate-100 bg-slate-50 text-slate-700 hover:border-indigo-200 hover:bg-white'
+                        selected
+                          ? 'border-indigo-600 bg-indigo-50 text-indigo-900 shadow-md'
+                          : 'border-slate-100 bg-slate-50 text-slate-700 hover:border-indigo-200 hover:bg-white'
                       }`}
                     >
-                      <div className={`${ui.optionBadge} border-2 flex items-center justify-center font-black transition-all ${selected ? 'bg-indigo-600 border-indigo-600 text-white' : 'bg-white border-slate-200 text-slate-400'}`}>
+                      <div
+                        className={`${ui.optionBadge} border-2 flex items-center justify-center font-black transition-all ${
+                          selected ? 'bg-indigo-600 border-indigo-600 text-white' : 'bg-white border-slate-200 text-slate-400'
+                        }`}
+                      >
                         {String.fromCharCode(65 + i)}
                       </div>
                       <span className={`${ui.optionText} font-bold`}>
-                        {/* ✅ Seçenek KaTeX Desteği */}
                         <SmartText text={opt} />
                       </span>
                     </button>
@@ -386,31 +633,44 @@ export default function Grade5Page() {
               </div>
             </div>
 
+            {/* ALT NAV */}
             <div className="flex justify-between items-center gap-3 px-2 pb-8">
               <button
-                onClick={() => { setCurrentIdx((p) => Math.max(0, p - 1)); scrollToTop(); }}
+                onClick={() => {
+                  stopSpeaking();
+                  setCurrentIdx((p) => Math.max(0, p - 1));
+                  scrollToTop();
+                }}
                 disabled={currentIdx === 0}
                 className="text-slate-400 font-black hover:text-slate-600 disabled:opacity-30 transition-colors uppercase text-[11px] tracking-widest px-4 py-3"
               >
                 ← Geri
               </button>
-              {currentIdx === quizQuestions.length - 1 ? (
-                <button
-                  onClick={() => { setView('result'); if (typeof window !== 'undefined') window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                  disabled={answers[currentIdx] === undefined}
-                  className={`${ui.bigBtn} bg-emerald-500 hover:bg-emerald-600 text-white font-black shadow-lg transition-all hover:scale-[1.02] active:scale-95 disabled:opacity-50`}
-                >
-                  Testi Bitir ✅
-                </button>
-              ) : (
-                <button
-                  onClick={() => { setCurrentIdx((p) => p + 1); scrollToTop(); }}
-                  disabled={answers[currentIdx] === undefined}
-                  className={`${ui.bigBtn} bg-indigo-600 hover:bg-indigo-700 text-white font-black shadow-lg transition-all hover:scale-[1.02] active:scale-95 disabled:opacity-50`}
-                >
-                  Sonraki ➔
-                </button>
-              )}
+
+              <div className="flex flex-col items-end">
+                {currentIdx === quizQuestions.length - 1 ? (
+                  <button
+                    onClick={finishQuiz}
+                    className={`${ui.bigBtn} bg-emerald-500 hover:bg-emerald-600 text-white font-black shadow-lg transition-all hover:scale-[1.02] active:scale-95`}
+                  >
+                    Testi Bitir ✅
+                  </button>
+                ) : (
+                  <button
+                    onClick={goNextManual}
+                    className={`${ui.bigBtn} bg-indigo-600 hover:bg-indigo-700 text-white font-black shadow-lg transition-all hover:scale-[1.02] active:scale-95`}
+                  >
+                    Sonraki ➔
+                  </button>
+                )}
+
+                {/* ✅ Çocuk dostu ipucu */}
+                {showPickHint && answers[currentIdx] === undefined && (
+                  <p className="mt-2 text-[11px] font-black text-amber-600 bg-amber-50 border border-amber-200 px-4 py-2 rounded-2xl">
+                    Önce bir şık seç 😊
+                  </p>
+                )}
+              </div>
             </div>
           </div>
         )}
@@ -425,6 +685,7 @@ export default function Grade5Page() {
                   {resultData.percent >= 80 ? 'Süpersin! 🌟' : resultData.percent >= 60 ? 'Güzel! 👍' : 'Devam! 💪'}
                 </h3>
               </div>
+
               <div className="inline-flex items-center justify-center p-2 bg-gradient-to-br from-indigo-500 to-fuchsia-500 rounded-full shadow-xl">
                 <div className="bg-white rounded-full px-10 py-8 md:px-14 md:py-10">
                   <span className={`${ui.percent} font-black text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-fuchsia-600 leading-none`}>
@@ -432,6 +693,7 @@ export default function Grade5Page() {
                   </span>
                 </div>
               </div>
+
               <div className="bg-indigo-50 border border-indigo-100 p-5 md:p-6 rounded-[1.75rem] text-left shadow-inner">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="bg-indigo-600 text-white p-3 rounded-2xl text-2xl shadow-md">🤖</div>
@@ -450,6 +712,7 @@ export default function Grade5Page() {
                   </p>
                 )}
               </div>
+
               <div className="grid grid-cols-2 gap-3">
                 <div className="bg-slate-50 p-5 rounded-[1.75rem] border border-slate-100">
                   <p className="text-[10px] text-slate-400 font-black uppercase tracking-widest mb-1">Doğru</p>
@@ -464,9 +727,14 @@ export default function Grade5Page() {
                   </p>
                 </div>
               </div>
+
               <div className="flex flex-col sm:flex-row gap-3 pt-2">
-                <button onClick={() => setView('subject-select')} className="w-full py-4 bg-slate-900 text-white rounded-[1.75rem] font-black text-lg hover:bg-slate-800 transition-all shadow-lg">Yeni Ders Seç</button>
-                <button onClick={() => setView('test-select')} className="w-full py-4 bg-white border-2 border-slate-100 text-slate-700 rounded-[1.75rem] font-black text-lg hover:bg-slate-50 transition-all shadow-sm">Başka Test</button>
+                <button onClick={() => setView('subject-select')} className="w-full py-4 bg-slate-900 text-white rounded-[1.75rem] font-black text-lg hover:bg-slate-800 transition-all shadow-lg">
+                  Yeni Ders Seç
+                </button>
+                <button onClick={() => setView('test-select')} className="w-full py-4 bg-white border-2 border-slate-100 text-slate-700 rounded-[1.75rem] font-black text-lg hover:bg-slate-50 transition-all shadow-sm">
+                  Başka Test
+                </button>
               </div>
             </div>
 
@@ -491,31 +759,32 @@ export default function Grade5Page() {
                         </div>
                         <div className="space-y-4 w-full">
                           <p className="font-black text-base md:text-lg text-slate-800 leading-snug">
-                            {/* ✅ Analiz Soru KaTeX */}
                             <SmartText text={q.prompt} />
                           </p>
+
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                             {!isEmpty && !isCorrect && (
                               <div className="p-4 rounded-[1.25rem] bg-white/70 border border-rose-100 shadow-sm">
                                 <p className="text-[10px] font-black text-rose-400 uppercase tracking-widest mb-1">Senin Cevabın</p>
                                 <p className="text-rose-800 font-bold text-base">
-                                  {/* ✅ Analiz Seçenek KaTeX */}
                                   <SmartText text={q.options[userAnswer]} />
                                 </p>
                               </div>
                             )}
+
                             <div className={`p-4 rounded-[1.25rem] bg-white/90 border shadow-sm ${isEmpty ? 'border-amber-200' : 'border-emerald-100'}`}>
-                              <p className={`text-[10px] font-black uppercase tracking-widest mb-1 ${isEmpty ? 'text-amber-500' : 'text-emerald-500'}`}>Doğru Cevap</p>
+                              <p className={`text-[10px] font-black uppercase tracking-widest mb-1 ${isEmpty ? 'text-amber-500' : 'text-emerald-500'}`}>
+                                Doğru Cevap
+                              </p>
                               <p className={`${isEmpty ? 'text-amber-800' : 'text-emerald-800'} font-bold text-base`}>
-                                {/* ✅ Analiz Doğru Cevap KaTeX */}
                                 <SmartText text={q.options[q.correct]} />
                               </p>
                             </div>
                           </div>
+
                           <div className="bg-white/60 backdrop-blur-sm p-4 rounded-[1.25rem] border border-slate-100 shadow-inner">
                             <p className="font-black text-indigo-600 text-[10px] uppercase tracking-widest mb-2">💡 Çözüm Notu</p>
                             <p className="text-slate-700 italic text-sm md:text-base font-semibold leading-relaxed">
-                              {/* ✅ Analiz Açıklama KaTeX */}
                               <SmartText text={q.explanation} />
                             </p>
                           </div>
