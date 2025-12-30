@@ -251,14 +251,31 @@ export default function Grade5Page() {
 
     // Basit “ekran okuma” metni
     const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
-    const optionsText = (q.options || [])
-      .map((o, i) => `${letters[i]}. ${o.replace(/\$/g, '')}`)
-      .join('. ');
 
-    const plainPrompt = (q.prompt || '').replace(/\$/g, '');
+// ✅ TTS için güvenli metin temizleyici
+const cleanForTTS = (s: string) =>
+  (s || '')
+    .replace(/\$+/g, '')               // KaTeX $
+    .replace(/[=%*_~<>[\]{}]/g, ' ')   // sorun çıkaran semboller
+    .replace(/\s+/g, ' ')
+    .trim();
 
-    const textToSpeak = `${subjectLabel}. Soru ${currentIdx + 1}. ${plainPrompt}. Seçenekler: ${optionsText}`;
+// ✅ A. / B. yerine "A şıkkı" / "Option A"
+const optionPrefix = (letter: string) =>
+  selectedSubject === 'ingilizce'
+    ? `Option ${letter}: `
+    : `${letter} şıkkı: `;
 
+const optionsText = (q.options || [])
+  .map((o, i) => `${optionPrefix(letters[i])}${cleanForTTS(o)}`)
+  .join('. ');
+
+const plainPrompt = cleanForTTS(q.prompt);
+
+const textToSpeak =
+  selectedSubject === 'ingilizce'
+    ? `${subjectLabel}. Question ${currentIdx + 1}. ${plainPrompt}. Options: ${optionsText}`
+    : `${subjectLabel}. Soru ${currentIdx + 1}. ${plainPrompt}. Seçenekler: ${optionsText}`;
     const utter = new SpeechSynthesisUtterance(textToSpeak);
     utter.lang = getSpeakLang(selectedSubject);
     utter.rate = 0.95; // çocuklar için biraz daha net
