@@ -1692,6 +1692,298 @@ export const speedRunQuestions: SpeedQuestion[] = [
     question: '"I ____ eleven years old." boşluğa hangisi gelir?',
     options: ['am', 'is', 'are', 'be'],
     answer: 'am'
+  },
+    // ==========================
+  // 🚀 YENİ EKSTRA 40 SORU (KARMA)
+  // ==========================
+
+  // 📐 MATEMATİK (+10) - m60'tan m69'a
+  {
+    id: 'm60',
+    category: 'Matematik',
+    question: '100 sayısının 1/4\'ü kaçtır?',
+    options: ['20', '25', '40', '50'],
+    answer: '25'
+  },
+  {
+    id: 'm61',
+    category: 'Matematik',
+    question: 'Bir açısı 120 derece olan üçgen ne tür bir üçgendir?',
+    options: ['Dar açılı', 'Dik açılı', 'Geniş açılı', 'Eşkenar'],
+    answer: 'Geniş açılı'
+  },
+  {
+    id: 'm62',
+    category: 'Matematik',
+    question: '4 x 4 x 4 ifadesinin üslü sayı olarak gösterimi nedir?',
+    options: ['4²', '3⁴', '4³', '12'],
+    answer: '4³'
+  },
+  {
+    id: 'm63',
+    category: 'Matematik',
+    question: '0,8 - 0,3 işleminin sonucu kaçtır?',
+    options: ['0,5', '1,1', '0,05', '5'],
+    answer: '0,5'
+  },
+  {
+    id: 'm64',
+    category: 'Matematik',
+    question: 'Bir saatin 1/3\'ü kaç dakikadır?',
+    options: ['15', '20', '30', '40'],
+    answer: '20'
+  },
+  {
+    id: 'm65',
+    category: 'Matematik',
+    question: 'En küçük asal sayı kaçtır?',
+    options: ['0', '1', '2', '3'],
+    answer: '2'
+  },
+  {
+    id: 'm66',
+    category: 'Matematik',
+    question: '10² - 5² işleminin sonucu kaçtır?',
+    options: ['5', '25', '50', '75'],
+    answer: '75'
+  },
+  {
+    id: 'm67',
+    category: 'Matematik',
+    question: 'İki basamaklı en büyük çift sayı kaçtır?',
+    options: ['90', '98', '99', '100'],
+    answer: '98'
+  },
+  {
+    id: 'm68',
+    category: 'Matematik',
+    question: '5000 metre kaç kilometredir?',
+    options: ['5', '50', '500', '0,5'],
+    answer: '5'
+  },
+  {
+    id: 'm69',
+    category: 'Matematik',
+    question: 'Bir karenin çevresi 40 cm ise bir kenarı kaç cm\'dir?',
+    options: ['5', '10', '20', '160'],
+    answer: '10'
+  },
+
+  // 🔬 FEN BİLİMLERİ (+10) - f59'dan f68'e
+  {
+    id: 'f59',
+    category: 'Fen',
+    question: 'Ay\'ın evrelerinin tamamlanması yaklaşık kaç gün sürer?',
+    options: ['15 gün', '29 gün', '365 gün', '24 saat'],
+    answer: '29 gün'
+  },
+  {
+    id: 'f60',
+    category: 'Fen',
+    question: 'Maddenin dışarıdan ısı alarak katıdan sıvıya geçmesine ne denir?',
+    options: ['Donma', 'Erime', 'Buharlaşma', 'Yoğuşma'],
+    answer: 'Erime'
+  },
+  {
+    id: 'f61',
+    category: 'Fen',
+    question: 'Aşağıdakilerden hangisi mikroskobik bir canlıdır?',
+    options: ['Karınca', 'Amip', 'Sinek', 'Papatya'],
+    answer: 'Amip'
+  },
+  {
+    id: 'f62',
+    category: 'Fen',
+    question: 'Dinamometre içindeki yay ne kadar çok uzarsa, ölçülen kuvvet o kadar...?',
+    options: ['Küçüktür', 'Büyüktür', 'Değişmez', 'Sıfırdır'],
+    answer: 'Büyüktür'
+  },
+  {
+    id: 'f63',
+    category: 'Fen',
+    question: 'Ay\'ın yüzeyindeki meteor çarpması sonucu oluşan çukurlara ne denir?',
+    options: ['Vadi', 'Krater', 'Dağ', 'Deniz'],
+    answer: 'Krater'
+  },
+  {
+    id: 'f64',
+    category: 'Fen',
+    question: 'Işığı hiç geçirmeyen maddelere ne denir?',
+    options: ['Saydam', 'Yarı Saydam', 'Opak', 'Parlak'],
+    answer: 'Opak'
+  },
+  {
+    id: 'f65',
+    category: 'Fen',
+    question: 'Aşağıdakilerden hangisi bir yapay ışık kaynağıdır?',
+    options: ['Güneş', 'Yıldız', 'Şimşek', 'Mum'],
+    answer: 'Mum'
+  },
+  {
+    id: 'f66',
+    category: 'Fen',
+    question: 'Tam gölge oluşumu ışığın hangi özelliğini kanıtlar?',
+    options: ['Hızlı yayılmasını', 'Doğrusal yayılmasını', 'Yansımasını', 'Isıtmasını'],
+    answer: 'Doğrusal yayılmasını'
+  },
+  {
+    id: 'f67',
+    category: 'Fen',
+    question: 'Sesin hızı en fazla hangi ortamda yayılır?',
+    options: ['Katı', 'Sıvı', 'Gaz', 'Boşluk'],
+    answer: 'Katı'
+  },
+  {
+    id: 'f68',
+    category: 'Fen',
+    question: 'Bir elektrik devresinde pillerin yerleştirildiği bölüme ne denir?',
+    options: ['Duy', 'Anahtar', 'Pil yatağı', 'Kablo'],
+    answer: 'Pil yatağı'
+  },
+
+  // 📚 TÜRKÇE (+10) - t57'den t66'e
+  {
+    id: 't57',
+    category: 'Türkçe',
+    question: '"Güzel" kelimesinin zıt anlamlısı nedir?',
+    options: ['Hoş', 'Çirkin', 'İyi', 'Fena'],
+    answer: 'Çirkin'
+  },
+  {
+    id: 't58',
+    category: 'Türkçe',
+    question: '"Gözden düşmek" deyimi ne anlama gelir?',
+    options: ['Çok sevilmek', 'Değerini yitirmek', 'Gözü bozulmak', 'Dikkatli bakmak'],
+    answer: 'Değerini yitirmek'
+  },
+  {
+    id: 't59',
+    category: 'Türkçe',
+    question: 'Aşağıdaki kelimelerin hangisinde "ünsüz benzeşmesi" kuralına uyulmamıştır?',
+    options: ['Kitapçı', 'Sokakta', 'Dolabda', 'Ağaçtan'],
+    answer: 'Dolabda'
+  },
+  {
+    id: 't60',
+    category: 'Türkçe',
+    question: 'Cümledeki korku, sevinç gibi duyguları belirten noktalama işareti hangisidir?',
+    options: ['Nokta', 'Virgül', 'Ünlem', 'Soru İşareti'],
+    answer: 'Ünlem'
+  },
+  {
+    id: 't61',
+    category: 'Türkçe',
+    question: '"Yaz" kelimesi aşağıdaki hangi özelliği gösterir?',
+    options: ['Eş anlamlı', 'Eş sesli', 'Zıt anlamlı', 'Terim anlamlı'],
+    answer: 'Eş sesli'
+  },
+  {
+    id: 't62',
+    category: 'Türkçe',
+    question: 'Bir yazıda okuyucuya verilmek istenen temel düşünceye ne denir?',
+    options: ['Ana fikir', 'Konu', 'Başlık', 'Yardımcı fikir'],
+    answer: 'Ana fikir'
+  },
+  {
+    id: 't63',
+    category: 'Türkçe',
+    question: '"Okuldan eve geldim" cümlesinde "okuldan" kelimesi ismin hangi halindedir?',
+    options: ['Yalın', 'Belirtme', 'Yönelme', 'Ayrılma'],
+    answer: 'Ayrılma'
+  },
+  {
+    id: 't64',
+    category: 'Türkçe',
+    question: '"Simitçi" kelimesindeki "-çi" ekinin türü nedir?',
+    options: ['Çoğul eki', 'Yapım eki', 'Çekim eki', 'Soru eki'],
+    answer: 'Yapım eki'
+  },
+  {
+    id: 't65',
+    category: 'Türkçe',
+    question: '"Damlaya damlaya göl olur" sözü aşağıdakilerden hangisidir?',
+    options: ['Deyim', 'Atasözü', 'Özdeyiş', 'Tekerleme'],
+    answer: 'Atasözü'
+  },
+  {
+    id: 't66',
+    category: 'Türkçe',
+    question: 'Aşağıdakilerden hangisi hayal ürünü bir cümledir?',
+    options: ['Kuşlar gökyüzünde uçuyor.', 'Bulutlar bize gülümsedi.', 'Balıklar denizde yüzüyor.', 'Güneş sabah doğdu.'],
+    answer: 'Bulutlar bize gülümsedi.'
+  },
+
+  // 🌍 İNGİLİZCE (+10) - e59'dan e68'e
+  {
+    id: 'e59',
+    category: 'İngilizce',
+    question: '"I have a headache." diyen biri nereye gitmelidir?',
+    options: ['Cinema', 'Hospital', 'Bakery', 'Library'],
+    answer: 'Hospital'
+  },
+  {
+    id: 'e60',
+    category: 'İngilizce',
+    question: '"Turn right" ifadesinin Türkçe karşılığı nedir?',
+    options: ['Sola dön', 'Düz git', 'Sağa dön', 'Geri dön'],
+    answer: 'Sağa dön'
+  },
+  {
+    id: 'e61',
+    category: 'İngilizce',
+    question: '"How can I go to the bank?" sorusu neyi sormaktadır?',
+    options: ['Banka kaçta açılıyor?', 'Banka nerede?', 'Bankaya nasıl gidebilirim?', 'Bankada kim var?'],
+    answer: 'Bankaya nasıl gidebilirim?'
+  },
+  {
+    id: 'e62',
+    category: 'İngilizce',
+    question: '"Elephant" kelimesinin Türkçe karşılığı nedir?',
+    options: ['Zürafa', 'Aslan', 'Fil', 'Maymun'],
+    answer: 'Fil'
+  },
+  {
+    id: 'e63',
+    category: 'İngilizce',
+    question: '"Seventy" hangi sayıdır?',
+    options: ['17', '7', '70', '77'],
+    answer: '70'
+  },
+  {
+    id: 'e64',
+    category: 'İngilizce',
+    question: '"Excuse me" ifadesi ne zaman kullanılır?',
+    options: ['Veda ederken', 'Özür dilerken/İzin isterken', 'Teşekkür ederken', 'Selam verirken'],
+    answer: 'Özür dilerken/İzin isterken'
+  },
+  {
+    id: 'e65',
+    category: 'İngilizce',
+    question: '"What is your favorite movie?" sorusuna hangisi uygun bir cevaptır?',
+    options: ['I am Ali', 'It is Batman', 'I like pizza', 'Yes, it is'],
+    answer: 'It is Batman'
+  },
+  {
+    id: 'e66',
+    category: 'İngilizce',
+    question: '"Strong" kelimesinin zıt anlamlısı nedir?',
+    options: ['Fast', 'Big', 'Weak', 'Happy'],
+    answer: 'Weak'
+  },
+  {
+    id: 'e67',
+    category: 'İngilizce',
+    question: 'Hangi eşleşme yanlıştır?',
+    options: ['Red - Kırmızı', 'Blue - Mavi', 'Yellow - Yeşil', 'Black - Siyah'],
+    answer: 'Yellow - Yeşil'
+  },
+  {
+    id: 'e68',
+    category: 'İngilizce',
+    question: '"I ____ a student." boşluğa hangisi gelir?',
+    options: ['is', 'are', 'am', 'do'],
+    answer: 'am'
   }
+
 
 ];
