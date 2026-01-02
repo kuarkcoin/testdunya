@@ -49,7 +49,221 @@
         "correct": "Bravo! Çok güzel.",
         "wrong": "Olmadıysa sorun değil, tekrar deneyelim.",
         "hint": "İpucu: Yağmurdan önce bulut olur."
-      }
-    }
+      },
+{
+  "id": "ord_004",
+  "title": "El Yıkama",
+  "prompt": "Doğru sıraya koy 👇",
+  "items": [
+    { "id": "wet", "label": "🚿 Eller ıslanır" },
+    { "id": "soap", "label": "🧼 Sabun" },
+    { "id": "rinse", "label": "💧 Durula" }
+  ],
+  "answer": ["wet", "soap", "rinse"],
+  "voice": {
+    "intro": "El yıkayalım. Önce ıslat, sonra sabunla, sonra durula.",
+    "correct": "Bravo! Tertemiz.",
+    "wrong": "Tekrar deneyelim.",
+    "hint": "İpucu: İlk önce su."
+  }
+},
+{
+  "id": "ord_005",
+  "title": "Gece Rutini",
+  "prompt": "Doğru sıraya koy 👇",
+  "items": [
+    { "id": "pajama", "label": "👕 Pijama giy" },
+    { "id": "brush", "label": "🪥 Diş fırçala" },
+    { "id": "sleep", "label": "😴 Uyu" }
+  ],
+  "answer": ["brush", "pajama", "sleep"]
+},
+{
+  "id": "ord_006",
+  "title": "Sandviç Yap",
+  "prompt": "Doğru sıraya koy 👇",
+  "items": [
+    { "id": "bread", "label": "🍞 Ekmek" },
+    { "id": "fill", "label": "🧀 İç koy" },
+    { "id": "eat", "label": "😋 Ye" }
+  ],
+  "answer": ["bread", "fill", "eat"]
+},
+{
+  "id": "ord_007",
+  "title": "Yağmurda Dışarı",
+  "prompt": "Doğru sıraya koy 👇",
+  "items": [
+    { "id": "coat", "label": "🧥 Mont giy" },
+    { "id": "umbrella", "label": "☂️ Şemsiye al" },
+    { "id": "go", "label": "🚶 Dışarı çık" }
+  ],
+  "answer": ["coat", "umbrella", "go"]
+},
+{
+  "id": "ord_008",
+  "title": "Oyuncak Topla",
+  "prompt": "Doğru sıraya koy 👇",
+  "items": [
+    { "id": "pick", "label": "🧸 Oyuncağı al" },
+    { "id": "box", "label": "📦 Kutuyu aç" },
+    { "id": "put", "label": "✅ Kutaya koy" }
+  ],
+  "answer": ["box", "pick", "put"]
+},
+{
+  "id": "ord_009",
+  "title": "Diş Hekimi",
+  "prompt": "Doğru sıraya koy 👇",
+  "items": [
+    { "id": "sit", "label": "🪑 Otur" },
+    { "id": "open", "label": "😮 Ağzını aç" },
+    { "id": "check", "label": "🦷 Kontrol" }
+  ],
+  "answer": ["sit", "open", "check"]
+},
+{
+  "id": "ord_010",
+  "title": "Buz Erit",
+  "prompt": "Doğru sıraya koy 👇",
+  "items": [
+    { "id": "ice", "label": "🧊 Buz" },
+    { "id": "sun", "label": "☀️ Güneş" },
+    { "id": "water", "label": "💧 Su" }
+  ],
+  "answer": ["ice", "sun", "water"]
+},
+{
+  "id": "ord_011",
+  "title": "Okula Hazırlık",
+  "prompt": "Doğru sıraya koy 👇",
+  "items": [
+    { "id": "dress", "label": "👕 Giyin" },
+    { "id": "bag", "label": "🎒 Çanta" },
+    { "id": "go", "label": "🏫 Okula git" }
+  ],
+  "answer": ["dress", "bag", "go"]
+},
+{
+  "id": "ord_012",
+  "title": "Meyve Yıka",
+  "prompt": "Doğru sıraya koy 👇",
+  "items": [
+    { "id": "take", "label": "🍎 Meyveyi al" },
+    { "id": "wash", "label": "🚿 Yıka" },
+    { "id": "eat", "label": "😋 Ye" }
+  ],
+  "answer": ["take", "wash", "eat"]
+},
+{
+  "id": "ord_013",
+  "title": "Kedi Besle",
+  "prompt": "Doğru sıraya koy 👇",
+  "items": [
+    { "id": "bowl", "label": "🥣 Kabı koy" },
+    { "id": "food", "label": "🍗 Mama koy" },
+    { "id": "cat", "label": "🐱 Kedi yer" }
+  ],
+  "answer": ["bowl", "food", "cat"]
+},
+{
+  "id": "ord_014",
+  "title": "Balon Şişir",
+  "prompt": "Doğru sıraya koy 👇",
+  "items": [
+    { "id": "balloon", "label": "🎈 Balon" },
+    { "id": "blow", "label": "💨 Üfle" },
+    { "id": "tie", "label": "🪢 Bağla" }
+  ],
+  "answer": ["balloon", "blow", "tie"]
+},
+{
+  "id": "ord_015",
+  "title": "Kar Yağışı",
+  "prompt": "Doğru sıraya koy 👇",
+  "items": [
+    { "id": "cloud", "label": "☁️ Bulut" },
+    { "id": "snow", "label": "❄️ Kar" },
+    { "id": "white", "label": "🏔️ Her yer beyaz" }
+  ],
+  "answer": ["cloud", "snow", "white"]
+},
+{
+  "id": "ord_016",
+  "title": "Kitap Oku",
+  "prompt": "Doğru sıraya koy 👇",
+  "items": [
+    { "id": "book", "label": "📘 Kitabı al" },
+    { "id": "open", "label": "📖 Aç" },
+    { "id": "read", "label": "👀 Oku" }
+  ],
+  "answer": ["book", "open", "read"]
+},
+{
+  "id": "ord_017",
+  "title": "Çay Yap",
+  "prompt": "Doğru sıraya koy 👇",
+  "items": [
+    { "id": "water", "label": "💧 Su koy" },
+    { "id": "boil", "label": "🔥 Kaynat" },
+    { "id": "tea", "label": "🫖 Çay" }
+  ],
+  "answer": ["water", "boil", "tea"]
+},
+{
+  "id": "ord_018",
+  "title": "Bisiklet",
+  "prompt": "Doğru sıraya koy 👇",
+  "items": [
+    { "id": "helmet", "label": "⛑️ Kask tak" },
+    { "id": "bike", "label": "🚲 Bin" },
+    { "id": "ride", "label": "💨 Sür" }
+  ],
+  "answer": ["helmet", "bike", "ride"]
+},
+{
+  "id": "ord_019",
+  "title": "Çiçek Sula",
+  "prompt": "Doğru sıraya koy 👇",
+  "items": [
+    { "id": "can", "label": "🚿 Suluk" },
+    { "id": "water", "label": "💧 Su dök" },
+    { "id": "grow", "label": "🌸 Büyür" }
+  ],
+  "answer": ["can", "water", "grow"]
+},
+{
+  "id": "ord_020",
+  "title": "Trafikte",
+  "prompt": "Doğru sıraya koy 👇",
+  "items": [
+    { "id": "red", "label": "🔴 Dur" },
+    { "id": "green", "label": "🟢 Geç" },
+    { "id": "walk", "label": "🚶 Yürü" }
+  ],
+  "answer": ["red", "green", "walk"]
+},
+{
+  "id": "ord_021",
+  "title": "Yemek",
+  "prompt": "Doğru sıraya koy 👇",
+  "items": [
+    { "id": "table", "label": "🍽️ Masaya otur" },
+    { "id": "eat", "label": "🥄 Ye" },
+    { "id": "clean", "label": "🧻 Sil" }
+  ],
+  "answer": ["table", "eat", "clean"]
+},
+{
+  "id": "ord_022",
+  "title": "Gökkuşağı",
+  "prompt": "Doğru sıraya koy 👇",
+  "items": [
+    { "id": "rain", "label": "🌧️ Yağmur" },
+    { "id": "sun", "label": "☀️ Güneş" },
+    { "id": "rainbow", "label": "🌈 Gökkuşağı" }
+  ],
+  "answer": ["rain", "sun", "rainbow"]
+}
   ]
 }
