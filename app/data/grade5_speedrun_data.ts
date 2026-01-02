@@ -1983,7 +1983,297 @@ export const speedRunQuestions: SpeedQuestion[] = [
     question: '"I ____ a student." boşluğa hangisi gelir?',
     options: ['is', 'are', 'am', 'do'],
     answer: 'am'
-  }
+  },
+    // ==========================
+  // 🚀 EKSTRA 40 SORU (PAKET 3)
+  // ==========================
 
+  // 📐 MATEMATİK (+10) - m70 - m79
+  {
+    id: 'm70',
+    category: 'Matematik',
+    question: '3/10 + 4/10 işleminin sonucu kaçtır?',
+    options: ['7/10', '7/20', '1/10', '12/10'],
+    answer: '7/10'
+  },
+  {
+    id: 'm71',
+    category: 'Matematik',
+    question: '400 sayısının %10\'u kaçtır?',
+    options: ['4', '40', '400', '10'],
+    answer: '40'
+  },
+  {
+    id: 'm72',
+    category: 'Matematik',
+    question: '1 ton kaç kilogramdır?',
+    options: ['10', '100', '1000', '500'],
+    answer: '1000'
+  },
+  {
+    id: 'm73',
+    category: 'Matematik',
+    question: '15 x 4 işleminin sonucu kaçtır?',
+    options: ['45', '50', '60', '70'],
+    answer: '60'
+  },
+  {
+    id: 'm74',
+    category: 'Matematik',
+    question: 'Bir doğru açının ölçüsü kaç derecedir?',
+    options: ['90', '180', '270', '360'],
+    answer: '180'
+  },
+  {
+    id: 'm75',
+    category: 'Matematik',
+    question: 'Çeyrek kilogram kaç gramdır?',
+    options: ['100', '200', '250', '500'],
+    answer: '250'
+  },
+  {
+    id: 'm76',
+    category: 'Matematik',
+    question: '120 ÷ 6 işleminin sonucu kaçtır?',
+    options: ['20', '30', '40', '15'],
+    answer: '20'
+  },
+  {
+    id: 'm77',
+    category: 'Matematik',
+    question: '5.432 sayısında "4" rakamının basamak değeri kaçtır?',
+    options: ['4', '40', '400', '4000'],
+    answer: '400'
+  },
+  {
+    id: 'm78',
+    category: 'Matematik',
+    question: 'Çevresi 15 cm olan bir eşkenar üçgenin bir kenarı kaç cm\'dir?',
+    options: ['3', '5', '7', '10'],
+    answer: '5'
+  },
+  {
+    id: 'm79',
+    category: 'Matematik',
+    question: 'Hangisi bir "dar açı"dır?',
+    options: ['89°', '90°', '91°', '180°'],
+    answer: '89°'
+  },
+
+  // 🔬 FEN BİLİMLERİ (+10) - f69 - f78
+  {
+    id: 'f69',
+    category: 'Fen',
+    question: 'Su kaç santigrat derecede donmaya başlar?',
+    options: ['-10', '0', '10', '100'],
+    answer: '0'
+  },
+  {
+    id: 'f70',
+    category: 'Fen',
+    question: 'Mikroskobik canlıları görmek için hangi alet kullanılır?',
+    options: ['Teleskop', 'Büyüteç', 'Mikroskop', 'Dürbün'],
+    answer: 'Mikroskop'
+  },
+  {
+    id: 'f71',
+    category: 'Fen',
+    question: 'Ay, Dünya etrafındaki bir tam dönüşünü yaklaşık kaç günde tamamlar?',
+    options: ['1', '7', '27', '365'],
+    answer: '27'
+  },
+  {
+    id: 'f72',
+    category: 'Fen',
+    question: 'Pürüzlü yüzeylerde sürtünme kuvveti nasıldır?',
+    options: ['Az', 'Çok', 'Yoktur', 'Sabit'],
+    answer: 'Çok'
+  },
+  {
+    id: 'f73',
+    category: 'Fen',
+    question: 'Hangi besin grubu vücudumuza öncelikli olarak enerji verir?',
+    options: ['Proteinler', 'Vitaminler', 'Karbonhidratlar', 'Mineraller'],
+    answer: 'Karbonhidratlar'
+  },
+  {
+    id: 'f74',
+    category: 'Fen',
+    question: 'Aşağıdakilerden hangisi bir ışık kaynağı değildir?',
+    options: ['Güneş', 'Mum', 'Ayna', 'Yıldız'],
+    answer: 'Ayna'
+  },
+  {
+    id: 'f75',
+    category: 'Fen',
+    question: 'Bitkinin toprağa tutunmasını ve su almasını sağlayan bölümü hangisidir?',
+    options: ['Gövde', 'Yaprak', 'Çiçek', 'Kök'],
+    answer: 'Kök'
+  },
+  {
+    id: 'f76',
+    category: 'Fen',
+    question: 'Sıvı bir maddenin ısı vererek katı hale geçmesine ne denir?',
+    options: ['Erime', 'Donma', 'Buharlaşma', 'Yoğuşma'],
+    answer: 'Donma'
+  },
+  {
+    id: 'f77',
+    category: 'Fen',
+    question: 'Işık kaynağı engele yaklaştırılırsa tam gölgenin boyu nasıl değişir?',
+    options: ['Küçülür', 'Büyür', 'Değişmez', 'Kaybolur'],
+    answer: 'Büyür'
+  },
+  {
+    id: 'f78',
+    category: 'Fen',
+    question: 'Aşağıdakilerden hangisi omurgalı bir hayvandır?',
+    options: ['Kelebek', 'Kedi', 'Salyangoz', 'Solucan'],
+    answer: 'Kedi'
+  },
+
+  // 📚 TÜRKÇE (+10) - t67 - t76
+  {
+    id: 't67',
+    category: 'Türkçe',
+    question: '"Cevap" kelimesinin eş anlamlısı aşağıdakilerden hangisidir?',
+    options: ['Soru', 'Yanıt', 'Söz', 'Cümle'],
+    answer: 'Yanıt'
+  },
+  {
+    id: 't68',
+    category: 'Türkçe',
+    question: '"Islak" kelimesinin zıt anlamlısı nedir?',
+    options: ['Nemli', 'Kuru', 'Yaş', 'Sulu'],
+    answer: 'Kuru'
+  },
+  {
+    id: 't69',
+    category: 'Türkçe',
+    question: '"Ağzı kulaklarına varmak" deyimi ne anlama gelir?',
+    options: ['Çok üzülmek', 'Çok şaşırmak', 'Çok sevinmek', 'Çok konuşmak'],
+    answer: 'Çok sevinmek'
+  },
+  {
+    id: 't70',
+    category: 'Türkçe',
+    question: 'Aşağıdakilerden hangisi bir ünlem cümlesidir?',
+    options: ['Okula gittim.', 'Yarın gelecek misin?', 'Eyvah, ödevimi unuttum!', 'Kitap okumayı severim.'],
+    answer: 'Eyvah, ödevimi unuttum!'
+  },
+  {
+    id: 't71',
+    category: 'Türkçe',
+    question: '"Kitapçıdan yeni bir kalem aldım." cümlesinde işi yapan kimdir?',
+    options: ['Kitapçı', 'Kalem', 'Ben (Gizli Özne)', 'Yeni'],
+    answer: 'Ben (Gizli Özne)'
+  },
+  {
+    id: 't72',
+    category: 'Türkçe',
+    question: 'Aşağıdaki kelimelerden hangisi sesteştir (eş sesli)?',
+    options: ['Kalem', 'Masa', 'Bin', 'Kitap'],
+    answer: 'Bin'
+  },
+  {
+    id: 't73',
+    category: 'Türkçe',
+    question: 'Özel isimlerin ilk harfi her zaman nasıl yazılır?',
+    options: ['Küçük', 'Büyük', 'Eğik', 'Renkli'],
+    answer: 'Büyük'
+  },
+  {
+    id: 't74',
+    category: 'Türkçe',
+    question: '"Dün akşam bize geldi." cümlesinde zaman bildiren ifade hangisidir?',
+    options: ['Bize', 'Dün akşam', 'Geldi', 'Dün'],
+    answer: 'Dün akşam'
+  },
+  {
+    id: 't75',
+    category: 'Türkçe',
+    question: '"Balık" kelimesinin çoğul hali hangisidir?',
+    options: ['Balıkçı', 'Balıklar', 'Balıklarız', 'Balıkta'],
+    answer: 'Balıklar'
+  },
+  {
+    id: 't76',
+    category: 'Türkçe',
+    question: '"Okul yolu" tamlamasında "okul" sözcüğü hangi türdedir?',
+    options: ['İsim', 'Fiil', 'Sıfat', 'Zamir'],
+    answer: 'İsim'
+  },
+
+  // 🌍 İNGİLİZCE (+10) - e69 - e78
+  {
+    id: 'e69',
+    category: 'İngilizce',
+    question: '"Shark" kelimesinin Türkçe karşılığı nedir?',
+    options: ['Balina', 'Yunus', 'Köpekbalığı', 'Ahtapot'],
+    answer: 'Köpekbalığı'
+  },
+  {
+    id: 'e70',
+    category: 'İngilizce',
+    question: '"Bed" kelimesi hangi odada bulunur?',
+    options: ['Kitchen', 'Bathroom', 'Bedroom', 'Living room'],
+    answer: 'Bedroom'
+  },
+  {
+    id: 'e71',
+    category: 'İngilizce',
+    question: '"Wednesday" hangi gündür?',
+    options: ['Salı', 'Çarşamba', 'Perşembe', 'Cuma'],
+    answer: 'Çarşamba'
+  },
+  {
+    id: 'e72',
+    category: 'İngilizce',
+    question: '"Yellow" hangi renktir?',
+    options: ['Mavi', 'Sarı', 'Yeşil', 'Turuncu'],
+    answer: 'Sarı'
+  },
+  {
+    id: 'e73',
+    category: 'İngilizce',
+    question: '"Ride a horse" ne demektir?',
+    options: ['Bisiklete binmek', 'Ata binmek', 'Koşmak', 'Yüzmek'],
+    answer: 'Ata binmek'
+  },
+  {
+    id: 'e74',
+    category: 'İngilizce',
+    question: 'Where does a "Doctor" work?',
+    options: ['School', 'Farm', 'Hospital', 'Police station'],
+    answer: 'Hospital'
+  },
+  {
+    id: 'e75',
+    category: 'İngilizce',
+    question: 'What is the opposite of "Fast"?',
+    options: ['Slow', 'Quick', 'Big', 'Strong'],
+    answer: 'Slow'
+  },
+  {
+    id: 'e76',
+    category: 'İngilizce',
+    question: '"Seven" hangi sayıdır?',
+    options: ['6', '7', '8', '9'],
+    answer: '7'
+  },
+  {
+    id: 'e77',
+    category: 'İngilizce',
+    question: '"Pencil case" nedir?',
+    options: ['Kitaplık', 'Kalemlik', 'Sıra', 'Çanta'],
+    answer: 'Kalemlik'
+  },
+  {
+    id: 'e78',
+    category: 'İngilizce',
+    question: 'How do you answer "How are you?"',
+    options: ['I am 10', 'I am fine', 'My name is Ali', 'I am from Turkey'],
+    answer: 'I am fine'
+  }
 
 ];
