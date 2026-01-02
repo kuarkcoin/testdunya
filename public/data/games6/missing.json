@@ -1,0 +1,49 @@
+{
+  "games": [
+    {
+      "id": "m001",
+      "title": "Kayıp Olanı Bul",
+      "prompt": "Boş olan yere hangisi gelmeli?",
+      "sequence": ["🔴", "🔵", "🔴", "?"],
+      "choices": ["🔵", "🟢", "🔴", "🟡"],
+      "answer": "🔵",
+      "hint": "Renkler sırayla değişiyor."
+    },
+    {
+      "id": "m002",
+      "title": "Kayıp Olanı Bul",
+      "prompt": "Boş olan yere hangisi gelmeli?",
+      "sequence": ["🍎", "🍌", "🍎", "?"],
+      "choices": ["🍌", "🍇", "🍎", "🍓"],
+      "answer": "🍌",
+      "hint": "A-B-A-? şeklinde."
+    },
+    {
+      "id": "m003",
+      "title": "Kayıp Olanı Bul",
+      "prompt": "Boş olan yere hangisi gelmeli?",
+      "sequence": ["⭐", "⭐", "🌙", "⭐", "⭐", "?"],
+      "choices": ["🌙", "⭐", "☀️", "⚡"],
+      "answer": "🌙",
+      "hint": "Her 3. sırada farklı sembol var."
+    },
+    {
+      "id": "m004",
+      "title": "Kayıp Olanı Bul",
+      "prompt": "Boş olan yere hangisi gelmeli?",
+      "sequence": ["1️⃣", "2️⃣", "3️⃣", "?"],
+      "choices": ["4️⃣", "2️⃣", "1️⃣", "3️⃣"],
+      "answer": "4️⃣",
+      "hint": "Sayılar sırayla artıyor."
+    },
+    {
+      "id": "m005",
+      "title": "Kayıp Olanı Bul",
+      "prompt": "Boş olan yere hangisi gelmeli?",
+      "sequence": ["🟦", "🟦", "🟥", "🟦", "🟦", "?"],
+      "choices": ["🟥", "🟦", "🟩", "🟨"],
+      "answer": "🟥",
+      "hint": "3’lü tekrar deseni var."
+    }
+  ]
+}
