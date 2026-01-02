@@ -1,0 +1,55 @@
+{
+  "games": [
+    {
+      "id": "ord_001",
+      "title": "Tohumdan Çiçeğe",
+      "prompt": "Doğru sıraya koy 👇",
+      "items": [
+        { "id": "seed", "label": "🌰 Tohum" },
+        { "id": "sprout", "label": "🌱 Filiz" },
+        { "id": "flower", "label": "🌸 Çiçek" }
+      ],
+      "answer": ["seed", "sprout", "flower"],
+      "voice": {
+        "intro": "Doğru sıraya koyalım. Önce tohum, sonra filiz, en sonunda çiçek.",
+        "correct": "Aferin! Harika yaptın.",
+        "wrong": "Bir daha deneyelim. Acele etme, sakin sakin.",
+        "hint": "İpucu: En başta tohum olur."
+      }
+    },
+    {
+      "id": "ord_002",
+      "title": "Günlük Rutin",
+      "prompt": "Doğru sıraya koy 👇",
+      "items": [
+        { "id": "wake", "label": "🛏️ Uyan" },
+        { "id": "wash", "label": "🪥 Diş fırçala" },
+        { "id": "eat", "label": "🍳 Kahvaltı" }
+      ],
+      "answer": ["wake", "wash", "eat"],
+      "voice": {
+        "intro": "Sabah neler yaparız? Uyanırız, diş fırçalarız, sonra kahvaltı ederiz.",
+        "correct": "Süper! Tam isabet.",
+        "wrong": "Yaklaştın. Bir kez daha deneyelim.",
+        "hint": "İpucu: İlk önce uyanırız."
+      }
+    },
+    {
+      "id": "ord_003",
+      "title": "Yağmur Döngüsü",
+      "prompt": "Doğru sıraya koy 👇",
+      "items": [
+        { "id": "cloud", "label": "☁️ Bulut" },
+        { "id": "rain", "label": "🌧️ Yağmur" },
+        { "id": "puddle", "label": "💧 Su birikir" }
+      ],
+      "answer": ["cloud", "rain", "puddle"],
+      "voice": {
+        "intro": "Bulutlar gelir, yağmur yağar, sonra su birikir.",
+        "correct": "Bravo! Çok güzel.",
+        "wrong": "Olmadıysa sorun değil, tekrar deneyelim.",
+        "hint": "İpucu: Yağmurdan önce bulut olur."
+      }
+    }
+  ]
+}
