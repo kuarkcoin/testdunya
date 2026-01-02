@@ -2274,6 +2274,297 @@ export const speedRunQuestions: SpeedQuestion[] = [
     question: 'How do you answer "How are you?"',
     options: ['I am 10', 'I am fine', 'My name is Ali', 'I am from Turkey'],
     answer: 'I am fine'
+  },
+    // ==========================
+  // 🚀 EKSTRA 40 SORU (PAKET 4)
+  // ==========================
+
+  // 📐 MATEMATİK (+10) - m80 - m89
+  {
+    id: 'm80',
+    category: 'Matematik',
+    question: 'Aşağıdaki sayılardan hangisi 10 ile kalansız bölünür?',
+    options: ['105', '213', '450', '999'],
+    answer: '450'
+  },
+  {
+    id: 'm81',
+    category: 'Matematik',
+    question: '0,4 + 0,02 işleminin sonucu kaçtır?',
+    options: ['0,6', '0,42', '0,06', '4,2'],
+    answer: '0,42'
+  },
+  {
+    id: 'm82',
+    category: 'Matematik',
+    question: '6 sayısının küpü (6³) kaçtır?',
+    options: ['18', '36', '216', '126'],
+    answer: '216'
+  },
+  {
+    id: 'm83',
+    category: 'Matematik',
+    question: '2 gün toplam kaç saattir?',
+    options: ['24', '36', '48', '60'],
+    answer: '48'
+  },
+  {
+    id: 'm84',
+    category: 'Matematik',
+    question: 'Paydası 100 olan kesirlere ne ad verilir?',
+    options: ['Birim Kesir', 'Yüzdelik', 'Bileşik Kesir', 'Tam Sayılı'],
+    answer: 'Yüzdelik'
+  },
+  {
+    id: 'm85',
+    category: 'Matematik',
+    question: 'Bir kenarı 8 cm olan karenin çevresi kaç cm\'dir?',
+    options: ['16', '32', '64', '24'],
+    answer: '32'
+  },
+  {
+    id: 'm86',
+    category: 'Matematik',
+    question: '56.000 ÷ 1000 işleminin sonucu kaçtır?',
+    options: ['5,6', '56', '560', '5600'],
+    answer: '56'
+  },
+  {
+    id: 'm87',
+    category: 'Matematik',
+    question: '84 sayısını en yakın onluğa yuvarlarsak sonuç ne olur?',
+    options: ['80', '85', '90', '100'],
+    answer: '80'
+  },
+  {
+    id: 'm88',
+    category: 'Matematik',
+    question: 'Ölçüsü 180 derece olan açıya ne denir?',
+    options: ['Dik Açı', 'Tam Açı', 'Doğru Açı', 'Geniş Açı'],
+    answer: 'Doğru Açı'
+  },
+  {
+    id: 'm89',
+    category: 'Matematik',
+    question: '4532 + 1200 işleminin sonucu kaçtır?',
+    options: ['5732', '5632', '5532', '6732'],
+    answer: '5732'
+  },
+
+  // 🔬 FEN BİLİMLERİ (+10) - f79 - f88
+  {
+    id: 'f79',
+    category: 'Fen',
+    question: 'Ay bir ışık kaynağı mıdır?',
+    options: ['Evet, doğal kaynaktır', 'Hayır, Güneşten aldığı ışığı yansıtır', 'Evet, yapay kaynaktır', 'Sadece dolunayda kaynaktır'],
+    answer: 'Hayır, Güneşten aldığı ışığı yansıtır'
+  },
+  {
+    id: 'f80',
+    category: 'Fen',
+    question: 'Aşağıdakilerden hangisi gaz halindeki bir maddedir?',
+    options: ['Buz', 'Su', 'Hava', 'Demir'],
+    answer: 'Hava'
+  },
+  {
+    id: 'f81',
+    category: 'Fen',
+    question: 'Ses en yavaş hangi ortamda yayılır?',
+    options: ['Katı', 'Sıvı', 'Gaz', 'Boşlukta yayılmaz'],
+    answer: 'Gaz'
+  },
+  {
+    id: 'f82',
+    category: 'Fen',
+    question: 'Kuvvetin büyüklüğünü ölçen birim nedir?',
+    options: ['Metre', 'Litre', 'Newton', 'Gram'],
+    answer: 'Newton'
+  },
+  {
+    id: 'f83',
+    category: 'Fen',
+    question: 'Pürüzsüz ve kaygan yüzeylerde sürtünme nasıldır?',
+    options: ['Çok fazladır', 'Azdır', 'Hiç yoktur', 'Yüzeye bağlı değildir'],
+    answer: 'Azdır'
+  },
+  {
+    id: 'f84',
+    category: 'Fen',
+    question: 'Basit bir elektrik devresinde enerjiyi taşıyan eleman hangisidir?',
+    options: ['Pil', 'Lamba', 'Anahtar', 'İletken Kablo'],
+    answer: 'İletken Kablo'
+  },
+  {
+    id: 'f85',
+    category: 'Fen',
+    question: 'Aşağıdakilerden hangisi bir "omurgasız" hayvandır?',
+    options: ['Kuş', 'Kurbağa', 'Arı', 'Yılan'],
+    answer: 'Arı'
+  },
+  {
+    id: 'f86',
+    category: 'Fen',
+    question: 'Bitkilerin kendi besinini üretmesine ne ad verilir?',
+    options: ['Terleme', 'Fotosentez', 'Boşaltım', 'Solunum'],
+    answer: 'Fotosentez'
+  },
+  {
+    id: 'f87',
+    category: 'Fen',
+    question: 'Isı yalıtımı için binalarda ne kullanılır?',
+    options: ['Demir levha', 'Cam yünü', 'Bakır tel', 'Alüminyum'],
+    answer: 'Cam yünü'
+  },
+  {
+    id: 'f88',
+    category: 'Fen',
+    question: 'Toprağın akarsu ve rüzgarla taşınması olayına ne denir?',
+    options: ['Deprem', 'Sel', 'Erozyon', 'Heyelan'],
+    answer: 'Erozyon'
+  },
+
+  // 📚 TÜRKÇE (+10) - t77 - t86
+  {
+    id: 't77',
+    category: 'Türkçe',
+    question: '"Pabuç" kelimesinin eş anlamlısı hangisidir?',
+    options: ['Şapka', 'Ayakkabı', 'Çorap', 'Gömlek'],
+    answer: 'Ayakkabı'
+  },
+  {
+    id: 't78',
+    category: 'Türkçe',
+    question: '"Kalın" kelimesinin zıt anlamlısı nedir?',
+    options: ['Zayıf', 'İnce', 'Geniş', 'Dar'],
+    answer: 'İnce'
+  },
+  {
+    id: 't79',
+    category: 'Türkçe',
+    question: '"Göz kulak olmak" deyimi ne anlama gelir?',
+    options: ['Görmemek', 'Dinlemek', 'Korumak, bakmak', 'Uyumak'],
+    answer: 'Korumak, bakmak'
+  },
+  {
+    id: 't80',
+    category: 'Türkçe',
+    question: 'Özel adlara getirilen iyelik ekleri ne ile ayrılır?',
+    options: ['Nokta', 'Virgül', 'Kesme İşareti', 'Kısa Çizgi'],
+    answer: 'Kesme İşareti'
+  },
+  {
+    id: 't81',
+    category: 'Türkçe',
+    question: 'Aşağıdaki kelimelerden hangisi yapım eki almıştır?',
+    options: ['Kitaplar', 'Evden', 'Gözlük', 'Masanın'],
+    answer: 'Gözlük'
+  },
+  {
+    id: 't82',
+    category: 'Türkçe',
+    question: 'Sonunda ders verme amacı güden, hayvanların konuşturulduğu masallara ne denir?',
+    options: ['Roman', 'Hikaye', 'Fabl', 'Anı'],
+    answer: 'Fabl'
+  },
+  {
+    id: 't83',
+    category: 'Türkçe',
+    question: '"Dal" kelimesi aşağıdaki hangi anlamda sesteştir?',
+    options: ['Ağaç dalı / Suya dalmak', 'Kırılmak / Kopmak', 'Uyumak / Bakmak', 'Yürümek / Koşmak'],
+    answer: 'Ağaç dalı / Suya dalmak'
+  },
+  {
+    id: 't84',
+    category: 'Türkçe',
+    question: '"Sınavı kazandığı için çok mutlu." cümlesinde hangi anlam ilişkisi vardır?',
+    options: ['Amaç-Sonuç', 'Neden-Sonuç', 'Koşul-Sonuç', 'Benzetme'],
+    answer: 'Neden-Sonuç'
+  },
+  {
+    id: 't85',
+    category: 'Türkçe',
+    question: '"O kitap okuyor." cümlesinde "O" hangi tür sözcüktür?',
+    options: ['İsim', 'Fiil', 'Zamir', 'Sıfat'],
+    answer: 'Zamir'
+  },
+  {
+    id: 't86',
+    category: 'Türkçe',
+    question: '"Sıcak bir karşılama oldu." cümlesindeki "sıcak" kelimesi hangi anlamdadır?',
+    options: ['Gerçek Anlam', 'Mecaz Anlam', 'Terim Anlam', 'Zıt Anlam'],
+    answer: 'Mecaz Anlam'
+  },
+
+  // 🌍 İNGİLİZCE (+10) - e79 - e88
+  {
+    id: 'e79',
+    category: 'İngilizce',
+    question: '"I am hungry. Let\'s eat ____."',
+    options: ['Water', 'Milk', 'Pizza', 'Music'],
+    answer: 'Pizza'
+  },
+  {
+    id: 'e80',
+    category: 'İngilizce',
+    question: '"I feel ____. (Mutluyum)"',
+    options: ['Sad', 'Angry', 'Happy', 'Tired'],
+    answer: 'Happy'
+  },
+  {
+    id: 'e81',
+    category: 'İngilizce',
+    question: '"My mother\'s sister" is my...?',
+    options: ['Aunt', 'Uncle', 'Cousin', 'Brother'],
+    answer: 'Aunt'
+  },
+  {
+    id: 'e82',
+    category: 'İngilizce',
+    question: '"Purple" hangi renktir?',
+    options: ['Pembe', 'Mor', 'Turuncu', 'Gri'],
+    answer: 'Mor'
+  },
+  {
+    id: 'e83',
+    category: 'İngilizce',
+    question: '"The ball is ____ the box. (Kutunun altında)"',
+    options: ['On', 'In', 'Under', 'Next to'],
+    answer: 'Under'
+  },
+  {
+    id: 'e84',
+    category: 'İngilizce',
+    question: '"Turtle" hangi hayvandır?',
+    options: ['Tavşan', 'Kaplumbağa', 'Kuş', 'Maymun'],
+    answer: 'Kaplumbağa'
+  },
+  {
+    id: 'e85',
+    category: 'İngilizce',
+    question: '"One hundred" hangi sayıdır?',
+    options: ['10', '50', '100', '1000'],
+    answer: '100'
+  },
+  {
+    id: 'e86',
+    category: 'İngilizce',
+    question: 'Hangisi bir "Classroom Object"tir?',
+    options: ['Bed', 'Fridge', 'Scissors', 'Soap'],
+    answer: 'Scissors'
+  },
+  {
+    id: 'e87',
+    category: 'İngilizce',
+    question: '"Wash your hands" ne demektir?',
+    options: ['Yüzünü yıka', 'Ellerini yıka', 'Dişlerini fırçala', 'Saçını tara'],
+    answer: 'Ellerini yıka'
+  },
+  {
+    id: 'e88',
+    category: 'İngilizce',
+    question: '"Goodbye" ne zaman söylenir?',
+    options: ['Tanışırken', 'Sabah kalkınca', 'Ayrılırken', 'Yemek yerken'],
+    answer: 'Ayrılırken'
   }
 
 ];
