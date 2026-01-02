@@ -566,6 +566,32 @@ export default function HomePage() {
               </div>
             </div>
           </Link>
+          {/* WORD MEANING BALLOON (NEW) */}
+<Link
+  href="/games/word-meaning"
+  className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-yellow-400 to-amber-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
+>
+  <div className="absolute -top-6 -right-6 h-32 w-32 rounded-full bg-white/15 blur-2xl transition-all group-hover:bg-white/25"></div>
+
+  <div className="relative z-10 flex flex-col justify-between h-full">
+    <div>
+      <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-yellow-100 backdrop-blur-sm border border-white/20">
+        🎈 New Game
+      </div>
+      <h3 className="mb-2 text-2xl font-black tracking-tight">Word Meaning Pop</h3>
+      <p className="text-yellow-50/90 text-sm">
+        Doğru anlamı bul, balonu patlat! Combo yap, süre kazan.
+      </p>
+    </div>
+
+    <div className="mt-6 flex items-center gap-3">
+      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-amber-700 shadow-lg transition-transform group-hover:scale-110">
+        🎯
+      </div>
+      <span className="font-bold text-sm">Play →</span>
+    </div>
+  </div>
+</Link>
 
           {/* 5. WORD MATCH (IELTS) */}
           <Link
