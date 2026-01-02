@@ -383,32 +383,38 @@ export default function WordMeaningBalloonGame() {
       ctx.fillRect(0, 0, w, h);
     };
 
-  const drawBalloonFromSheet = (b: Balloon) => {
-  const sheet = sheetRef.current;
-  if (!sheet) return;
+    const drawBalloonFromSheet = (b: Balloon) => {
+      const sheet = sheetRef.current;
+      if (!sheet) return;
 
-  // Sprite sheet mantığını devre dışı bırakıp doğrudan resmi çiziyoruz
-  const size = b.r * 2.4; 
-  ctx.drawImage(
-    sheet, 
-    b.x - size / 2, 
-    b.y - size / 2, 
-    size, 
-    size
-  );
+      const cols = 5;
+      const rows = 2;
 
-  // Metin çizimi (Aynı kalabilir)
-  ctx.font = `bold ${Math.max(16, b.r * 0.45)}px Arial`;
-  ctx.textAlign = "center";
-  ctx.textBaseline = "middle";
-  
-  // Metin okunabilirliği için gölge/kontur
-  ctx.strokeStyle = "white";
-  ctx.lineWidth = 4;
-  ctx.strokeText(b.text, b.x, b.y);
-  ctx.fillStyle = "black";
-  ctx.fillText(b.text, b.x, b.y);
-};
+      const cellW = sheet.width / cols;
+      const cellH = sheet.height / rows;
+
+      const col = b.frame % cols;
+      const row = Math.floor(b.frame / cols);
+
+      const sx = col * cellW;
+      const sy = row * cellH;
+
+      const size = b.r * 2.4; // biraz büyük
+      ctx.drawImage(sheet, sx, sy, cellW, cellH, b.x - size / 2, b.y - size / 2, size, size);
+
+      // text
+      ctx.font = `${Math.max(16, b.r * 0.55)}px system-ui`;
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+
+      // readable stroke
+      ctx.lineWidth = 6;
+      ctx.strokeStyle = "rgba(0,0,0,0.35)";
+      ctx.strokeText(b.text, b.x, b.y);
+
+      ctx.fillStyle = "rgba(0,0,0,0.9)";
+      ctx.fillText(b.text, b.x, b.y);
+    };
 
     const drawPops = () => {
       const pop = popRef.current;
