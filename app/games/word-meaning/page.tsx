@@ -132,7 +132,7 @@ export default function WordMeaningGameV3() {
   const lastTRef = useRef<number>(0);
 
   // --- REFS (PHYSICS & LOGIC) ---
-  const timeLeftRef = useRef(60);
+  const timeLeftRef = useRef(180);
   const runningRef = useRef(false);
   const balloonsRef = useRef<Balloon[]>([]);
   const questionRef = useRef<QA | null>(null);
@@ -256,7 +256,7 @@ function pickOne<T>(arr: T[]): T {
       scoreRef.current += 10 + (streakRef.current * 2);
       setScore(scoreRef.current);
       streakRef.current++;
-      timeLeftRef.current = Math.min(120, timeLeftRef.current + 2);
+      timeLeftRef.current = Math.min(180, timeLeftRef.current + 2);
       
       // Screen Shake
       if (streakRef.current >= 3) shakeRef.current = Math.min(20, 4 + streakRef.current);
