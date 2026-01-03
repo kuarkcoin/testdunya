@@ -314,7 +314,7 @@ export default function WordMeaningPage() {
     );
 
     const li = levelIndex(lvl);
-    const speedBase = 120 + li * 25; // a bit faster at higher levels
+    const speedBase = 80 + li * 15; // a bit faster at higher levels
 
     const balloons: Balloon[] = [];
     for (let i = 0; i < count; i++) {
