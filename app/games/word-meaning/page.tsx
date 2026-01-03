@@ -206,18 +206,30 @@ function pickOne<T>(arr: T[]): T {
     osc.start(); osc.stop(ctx.currentTime + 0.15);
   }
 
-  function playWind() {
-    const ctx = audioCtxRef.current;
-    if (!ctx || !windGainRef.current) return;
-    const osc = ctx.createOscillator();
-    const filter = ctx.createBiquadFilter();
-    osc.type = "triangle";
-    osc.frequency.value = 100 + Math.random() * 50;
-    filter.type = "lowpass";
-    filter.frequency.value = 300;
-    osc.connect(filter); filter.connect(windGainRef.current);
-    osc.start(); osc.stop(ctx.currentTime + 0.8);
-  }
+  function playHappyAmbient() {
+  const ctx = audioCtxRef.current;
+  if (!ctx || !windGainRef.current) return;
+
+  const osc = ctx.createOscillator();
+  const g = ctx.createGain();
+
+  // Ürkütücü triangle yerine yumuşak 'sine' dalgası
+  osc.type = "sine"; 
+  
+  // Rastgele neşeli notalar (Do, Mi, Sol - C Major Triad)
+  const notes = [523.25, 659.25, 783.99, 1046.50]; 
+  osc.frequency.value = notes[Math.floor(Math.random() * notes.length)];
+
+  g.gain.setValueAtTime(0, ctx.currentTime);
+  g.gain.linearRampToValueAtTime(0.05, ctx.currentTime + 0.1); // Çok kısık ses
+  g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 1.5);
+
+  osc.connect(g);
+  g.connect(windGainRef.current);
+
+  osc.start();
+  osc.stop(ctx.currentTime + 1.5);
+}
 
   // --- GAME LOGIC ---
   function makeQuestion() {
