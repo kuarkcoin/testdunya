@@ -1,8 +1,13 @@
 "use client";
 
 import React, { useEffect, useMemo, useRef, useState } from "react";
-
 type Level = "A1" | "A2" | "B1";
+
+type QA = {
+  level: Level;
+  word: string;
+  def: string;
+};
 
 type MCQ = {
   id: string;
