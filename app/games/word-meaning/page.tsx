@@ -17,50 +17,86 @@ const BALLOON_COLORS = ["rgba(239, 68, 68, 0.9)", "rgba(59, 130, 246, 0.9)", "rg
 
 // --- 100+ SORULUK BANKA (Özetlenmiştir) ---
 const BANK: QA[] = [
-  // --- SCHOOL & OBJECTS (Okul ve Eşyalar) ---
-  { level: "A1", word: "pencil", def: "You use this to write or draw." },
-  { level: "A1", word: "bag", def: "You put your books in this." },
-  { level: "A1", word: "eraser", def: "You use this to clean your mistakes." },
-  { level: "A1", word: "desk", def: "You sit here at school." },
-  { level: "A1", word: "teacher", def: "A person who teaches at school." },
-  { level: "A1", word: "ruler", def: "You use this to draw straight lines." },
-  { level: "A1", word: "library", def: "A place with many books." },
+  // --- UNIT 1: HELLO! ---
+  { level: "A1", word: "History", def: "I love learning about old times in ____ class." },
+  { level: "A1", word: "Science", def: "We do experiments in the ____ lab." },
+  { level: "A1", word: "Germany", def: "Hans is from ____. He is German." },
+  { level: "A1", word: "Pleasure", def: "Nice to meet you! - My ____." },
+  { level: "A1", word: "Primary", def: "I am a student at Ataturk ____ School." },
+  { level: "A1", word: "Classes", def: "How many ____ do you have on Monday?" },
 
-  // --- ANIMALS (Hayvanlar) ---
-  { level: "A1", word: "lion", def: "A big yellow cat. The king of animals." },
-  { level: "A1", word: "elephant", def: "A very big animal with a long nose." },
-  { level: "A1", word: "monkey", def: "An animal that loves bananas." },
-  { level: "A1", word: "bird", def: "An animal that can fly in the sky." },
-  { level: "A1", word: "fish", def: "It lives and swims in the water." },
-  { level: "A1", word: "rabbit", def: "An animal with long ears. It eats carrots." },
-  { level: "A1", word: "bee", def: "A small yellow and black insect. It makes honey." },
+  // --- UNIT 2: MY TOWN ---
+  { level: "A1", word: "Between", def: "The park is ____ the bank and the cafe." },
+  { level: "A1", word: "Opposite", def: "The school is ____ the bus station." },
+  { level: "A1", word: "Barber", def: "I go to the ____ to cut my hair." },
+  { level: "A1", word: "Straight", def: "Go ____ ahead and turn left." },
+  { level: "A1", word: "Pharmacy", def: "You can buy medicine from the ____." },
+  { level: "A1", word: "Pool", def: "I want to swim in the swimming ____." },
+  { level: "A1", word: "Museum", def: "You can see old statues in the ____." },
 
-  // --- FOOD & DRINK (Yiyecek ve İçecek) ---
-  { level: "A1", word: "milk", def: "A white drink from cows." },
-  { level: "A1", word: "banana", def: "A long yellow fruit." },
-  { level: "A1", word: "water", def: "You drink this when you are thirsty." },
-  { level: "A1", word: "apple", def: "A round fruit. It can be red or green." },
-  { level: "A1", word: "egg", def: "We get this from chickens. It is white." },
-  { level: "A1", word: "bread", def: "You use this to make a sandwich." },
-  { level: "A1", word: "cake", def: "You eat this on your birthday." },
+  // --- UNIT 3: GAMES AND HOBBIES ---
+  { level: "A1", word: "Camping", def: "I love sleeping in a tent. My hobby is ____." },
+  { level: "A1", word: "Fishing", def: "My grandpa loves ____ by the lake." },
+  { level: "A1", word: "Collect", def: "I ____ stamps in my free time." },
+  { level: "A1", word: "Blind", def: "Let's play ____ man's buff!" },
+  { level: "A1", word: "Tag", def: "Run fast! We are playing ____." },
+  { level: "A1", word: "Buttons", def: "I have many colorful ____ for my hobby." },
 
-  // --- BODY & FAMILY (Vücut ve Aile) ---
-  { level: "A1", word: "eye", def: "You see with this part of your body." },
-  { level: "A1", word: "ear", def: "You hear sounds with this." },
-  { level: "A1", word: "nose", def: "You smell flowers with this." },
-  { level: "A1", word: "mouth", def: "You eat and speak with this." },
-  { level: "A1", word: "hand", def: "You have five fingers on this." },
-  { level: "A1", word: "mother", def: "Your female parent." },
-  { level: "A1", word: "father", def: "Your male parent." },
+  // --- UNIT 4: MY DAILY ROUTINE ---
+  { level: "A1", word: "Arrive", def: "I ____ at school at 08:30 in the morning." },
+  { level: "A1", word: "Early", def: "I get up ____ at 07:00 every day." },
+  { level: "A1", word: "Quarter", def: "It is ____ past ten. (10:15)" },
+  { level: "A1", word: "Brush", def: "Don't forget to ____ your teeth!" },
+  { level: "A1", word: "Comb", def: "I ____ my hair before I leave home." },
+  { level: "A1", word: "Watch", def: "I ____ cartoons in the afternoon." },
+  { level: "A1", word: "Diary", def: "I write my secrets in my ____." },
 
-  // --- DAILY LIFE & NATURE (Günlük Yaşam ve Doğa) ---
-  { level: "A1", word: "sun", def: "It is big, yellow and hot in the sky." },
-  { level: "A1", word: "rain", def: "Water falling from the clouds." },
-  { level: "A1", word: "tree", def: "A tall green plant in the garden." },
-  { level: "A1", word: "bed", def: "You sleep here at night." },
-  { level: "A1", word: "car", def: "A vehicle with four wheels." },
-  { level: "A1", word: "happy", def: "You smile when you feel this." },
-  { level: "A1", word: "cold", def: "You wear a coat when it is..." },
+  // --- UNIT 5: HEALTH ---
+  { level: "A1", word: "Blanket", def: "I feel cold. I need a ____." },
+  { level: "A1", word: "Syrup", def: "The doctor gave me some cough ____." },
+  { level: "A1", word: "Sore", def: "My throat is ____. I can't speak." },
+  { level: "A1", word: "Vitamin", def: "Eat fruit to get more ____ C." },
+  { level: "A1", word: "Stomachache", def: "I ate too much cake. Now I have a ____." },
+  { level: "A1", word: "Tired", def: "I worked all day. I feel very ____." },
+
+  // --- UNIT 6: MOVIES ---
+  { level: "A1", word: "Horror", def: "I am scared of ghosts! I don't like ____ movies." },
+  { level: "A1", word: "Science-fiction", def: "Star Wars is a famous ____ movie." },
+  { level: "A1", word: "Boring", def: "This movie is not fun. It is very ____." },
+  { level: "A1", word: "Strong", def: "Superman can lift cars. He is very ____." },
+  { level: "A1", word: "Evil", def: "The Joker is an ____ character." },
+  { level: "A1", word: "Musical", def: "There is a lot of singing in a ____ movie." },
+
+  // --- UNIT 7: PARTY TIME ---
+  { level: "A1", word: "Invitation", def: "Did you send the ____ cards to your friends?" },
+  { level: "A1", word: "Guest", def: "There are twenty ____s at the party." },
+  { level: "A1", word: "Clown", def: "The ____ is very funny at the birthday party." },
+  { level: "A1", word: "Gift", def: "I bought a beautiful ____ for you. Open it!" },
+  { level: "A1", word: "Beverages", def: "We have juice and coke. What are your favorite ____?" },
+  { level: "A1", word: "Ordered", def: "My dad ____ a big chocolate cake." },
+
+  // --- UNIT 8: FITNESS ---
+  { level: "A1", word: "Workout", def: "I go to the gym to ____ every morning." },
+  { level: "A1", word: "Racket", def: "You need a ____ and a ball to play tennis." },
+  { level: "A1", word: "Hiking", def: "We love walking in the nature. Let's go ____." },
+  { level: "A1", word: "Goal", def: "Kick the ball and score a ____!" },
+  { level: "A1", word: "Equipment", def: "A helmet is an important ____ for cycling." },
+
+  // --- UNIT 9: ANIMAL SHELTER ---
+  { level: "A1", word: "Vet", def: "The ____ is examining the sick dog." },
+  { level: "A1", word: "Barking", def: "Listen! The dog is ____ at the cat." },
+  { level: "A1", word: "Kitten", def: "Look at that small ____. It is so cute!" },
+  { level: "A1", word: "Feeding", def: "The children are ____ the ducks in the park." },
+  { level: "A1", word: "Claw", def: "Be careful! The cat has sharp ____s." },
+  { level: "A1", word: "Tail", def: "The dog is wagging its ____." },
+
+  // --- UNIT 10: FESTIVALS ---
+  { level: "A1", word: "Flag", def: "We hang ____s on our windows on April 23rd." },
+  { level: "A1", word: "Parade", def: "We watch the military ____ on Republic Day." },
+  { level: "A1", word: "Fireworks", def: "The sky is colorful with ____ at night." },
+  { level: "A1", word: "Traditional", def: "We wear ____ clothes and dance." },
+  { level: "A1", word: "Sacrifice", def: "We visit our relatives on ____ Feast." },
+  { level: "A1", word: "Pocket", def: "Grandparents give ____ money to children." },
 ];
 export default function WordMeaningGameV3() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
