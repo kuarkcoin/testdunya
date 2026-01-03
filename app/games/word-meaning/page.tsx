@@ -3,658 +3,488 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 
 type Level = "A1" | "A2" | "B1";
-type Kind = "definition" | "sentence" | "grammar" | "category";
 
-type Question = {
-  id: string;
+type QA = {
   level: Level;
-  kind: Kind;
-  prompt: string;
-  options: string[]; // 4 seçenek
-  correct: string;
+  word: string;
+  def: string; // definition (not synonym)
 };
 
 type Balloon = {
-  x: number;
+  id: string;
+  x: number; // CSS px coordinates (not DPR)
   y: number;
   r: number;
-  vx: number;
-  vy: number;
+  vy: number; // px/sec
   text: string;
   isCorrect: boolean;
-  frame: number; // 0..9 (sheet)
-  _ft?: number; // frame timer
+  frame: number;
 };
 
-type PopFx = {
-  x: number;
-  y: number;
-  t: number; // time alive
-};
+function levelIndex(l: Level) {
+  return l === "A1" ? 0 : l === "A2" ? 1 : 2;
+}
 
-function clamp(v: number, a: number, b: number) {
-  return Math.max(a, Math.min(b, v));
+function clamp(n: number, a: number, b: number) {
+  return Math.max(a, Math.min(b, n));
 }
 
 function shuffle<T>(arr: T[]) {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
-    const j = (Math.random() * (i + 1)) | 0;
+    const j = Math.floor(Math.random() * (i + 1));
     [a[i], a[j]] = [a[j], a[i]];
   }
   return a;
 }
 
-function loadImage(src: string): Promise<HTMLImageElement> {
-  return new Promise((res, rej) => {
-    const img = new Image();
-    img.onload = () => res(img);
-    img.onerror = () => rej(new Error(`Image failed to load: ${src}`));
-    img.src = src;
-  });
+function pickOne<T>(arr: T[]) {
+  return arr[Math.floor(Math.random() * arr.length)];
 }
 
-// =========================
-// 100 QUESTIONS (A1-A2-B1 mixed) - NO SYNONYMS
-// =========================
-const QUESTIONS: Question[] = [
-  { id: "q001", level: "A1", kind: "definition", prompt: "A place where you borrow books.", options: ["library", "bakery", "hospital", "airport"], correct: "library" },
-  { id: "q002", level: "A1", kind: "sentence", prompt: "I ___ my teeth every morning.", options: ["brush", "cook", "drive", "swim"], correct: "brush" },
-  { id: "q003", level: "A1", kind: "grammar", prompt: "She ___ to school every day.", options: ["goes", "go", "going", "gone"], correct: "goes" },
-  { id: "q004", level: "A1", kind: "category", prompt: "Which one is a fruit?", options: ["apple", "chair", "river", "pencil"], correct: "apple" },
-  { id: "q005", level: "A1", kind: "definition", prompt: "The meal you eat in the morning.", options: ["breakfast", "dinner", "lunch", "snack"], correct: "breakfast" },
-  { id: "q006", level: "A1", kind: "grammar", prompt: "They ___ from Türkiye.", options: ["are", "is", "am", "be"], correct: "are" },
-  { id: "q007", level: "A1", kind: "sentence", prompt: "My father ___ coffee.", options: ["likes", "like", "liking", "liked"], correct: "likes" },
-  { id: "q008", level: "A1", kind: "category", prompt: "Which one is a color?", options: ["blue", "bread", "bird", "bus"], correct: "blue" },
-  { id: "q009", level: "A1", kind: "definition", prompt: "A thing you use to write.", options: ["pen", "plate", "sock", "key"], correct: "pen" },
-  { id: "q010", level: "A1", kind: "grammar", prompt: "I ___ a student.", options: ["am", "is", "are", "be"], correct: "am" },
+// -------------------- 100 QUESTIONS (A1/A2/B1 MIXED) --------------------
+const BANK: QA[] = [
+  // A1 (34)
+  { level: "A1", word: "apple", def: "a round fruit that can be red or green" },
+  { level: "A1", word: "book", def: "a set of pages with words that you read" },
+  { level: "A1", word: "chair", def: "a thing you sit on" },
+  { level: "A1", word: "teacher", def: "a person who helps students learn" },
+  { level: "A1", word: "school", def: "a place where children learn" },
+  { level: "A1", word: "morning", def: "the early part of the day" },
+  { level: "A1", word: "family", def: "your parents and brothers or sisters" },
+  { level: "A1", word: "happy", def: "feeling good and smiling" },
+  { level: "A1", word: "cold", def: "not warm; low temperature" },
+  { level: "A1", word: "water", def: "a clear liquid you drink" },
+  { level: "A1", word: "bread", def: "food made from flour and baked" },
+  { level: "A1", word: "house", def: "a building where people live" },
+  { level: "A1", word: "friend", def: "a person you like and spend time with" },
+  { level: "A1", word: "run", def: "to move fast on your feet" },
+  { level: "A1", word: "walk", def: "to move on your feet at a normal speed" },
+  { level: "A1", word: "sleep", def: "to rest your body at night" },
+  { level: "A1", word: "eat", def: "to put food in your mouth and swallow" },
+  { level: "A1", word: "drink", def: "to take liquid into your mouth" },
+  { level: "A1", word: "open", def: "to make something not closed" },
+  { level: "A1", word: "close", def: "to shut something" },
+  { level: "A1", word: "big", def: "large in size" },
+  { level: "A1", word: "small", def: "not large; little" },
+  { level: "A1", word: "fast", def: "moving quickly" },
+  { level: "A1", word: "slow", def: "not fast" },
+  { level: "A1", word: "dog", def: "a common pet animal that barks" },
+  { level: "A1", word: "cat", def: "a common pet animal that meows" },
+  { level: "A1", word: "sun", def: "the bright star in the sky in the day" },
+  { level: "A1", word: "rain", def: "water that falls from clouds" },
+  { level: "A1", word: "phone", def: "a device you use to call people" },
+  { level: "A1", word: "door", def: "you open this to enter a room" },
+  { level: "A1", word: "window", def: "glass opening in a wall to see outside" },
+  { level: "A1", word: "blue", def: "a color like the sky" },
+  { level: "A1", word: "green", def: "a color like grass" },
+  { level: "A1", word: "market", def: "a place where you buy food or things" },
 
-  { id: "q011", level: "A2", kind: "sentence", prompt: "We ___ soccer on Sundays.", options: ["play", "read", "sleep", "build"], correct: "play" },
-  { id: "q012", level: "A2", kind: "grammar", prompt: "They ___ watching a movie now.", options: ["are", "is", "am", "be"], correct: "are" },
-  { id: "q013", level: "A2", kind: "definition", prompt: "A person who teaches students.", options: ["teacher", "pilot", "chef", "driver"], correct: "teacher" },
-  { id: "q014", level: "A2", kind: "category", prompt: "Which one is an animal?", options: ["tiger", "table", "cloud", "shoe"], correct: "tiger" },
-  { id: "q015", level: "A2", kind: "grammar", prompt: "He ___ TV at the moment.", options: ["is watching", "watch", "watches", "watched"], correct: "is watching" },
-  { id: "q016", level: "A2", kind: "sentence", prompt: "Can you ___ the door, please?", options: ["open", "opens", "opening", "opened"], correct: "open" },
-  { id: "q017", level: "A2", kind: "grammar", prompt: "There ___ two cats in the garden.", options: ["are", "is", "am", "be"], correct: "are" },
-  { id: "q018", level: "A2", kind: "definition", prompt: "You wear these on your feet.", options: ["shoes", "gloves", "hats", "scarves"], correct: "shoes" },
-  { id: "q019", level: "A2", kind: "sentence", prompt: "I usually go to bed ___ 10 p.m.", options: ["at", "in", "on", "to"], correct: "at" },
-  { id: "q020", level: "A2", kind: "grammar", prompt: "She ___ to music every evening.", options: ["listens", "listen", "listening", "listened"], correct: "listens" },
+  // A2 (33)
+  { level: "A2", word: "repair", def: "to fix something broken" },
+  { level: "A2", word: "message", def: "a short text you send to someone" },
+  { level: "A2", word: "travel", def: "to go to another place" },
+  { level: "A2", word: "arrive", def: "to get to a place" },
+  { level: "A2", word: "borrow", def: "to take something and give it back later" },
+  { level: "A2", word: "invite", def: "to ask someone to come" },
+  { level: "A2", word: "prepare", def: "to get ready to do something" },
+  { level: "A2", word: "choose", def: "to decide between options" },
+  { level: "A2", word: "healthy", def: "good for your body; not ill" },
+  { level: "A2", word: "exercise", def: "physical activity to stay fit" },
+  { level: "A2", word: "customer", def: "a person who buys something" },
+  { level: "A2", word: "receipt", def: "paper that shows what you paid for" },
+  { level: "A2", word: "airport", def: "place where planes arrive and leave" },
+  { level: "A2", word: "station", def: "place where trains or buses stop" },
+  { level: "A2", word: "weather", def: "sun, rain, wind, and temperature" },
+  { level: "A2", word: "promise", def: "to say you will do something for sure" },
+  { level: "A2", word: "forget", def: "to not remember" },
+  { level: "A2", word: "remember", def: "to keep something in your mind" },
+  { level: "A2", word: "dangerous", def: "not safe; could hurt you" },
+  { level: "A2", word: "quiet", def: "with little or no noise" },
+  { level: "A2", word: "crowded", def: "full of people" },
+  { level: "A2", word: "expensive", def: "costs a lot of money" },
+  { level: "A2", word: "cheap", def: "costs little money" },
+  { level: "A2", word: "improve", def: "to make something better" },
+  { level: "A2", word: "describe", def: "to say what something is like" },
+  { level: "A2", word: "schedule", def: "a plan with times for things" },
+  { level: "A2", word: "direction", def: "information about where to go" },
+  { level: "A2", word: "decide", def: "to make a choice" },
+  { level: "A2", word: "celebrate", def: "to do something special for a good event" },
+  { level: "A2", word: "festival", def: "a special event with music/food/activities" },
+  { level: "A2", word: "suddenly", def: "quickly and unexpectedly" },
+  { level: "A2", word: "careful", def: "paying attention to avoid danger" },
+  { level: "A2", word: "advice", def: "a suggestion about what you should do" },
 
-  { id: "q021", level: "A1", kind: "sentence", prompt: "My brother is ___ the kitchen.", options: ["in", "on", "at", "to"], correct: "in" },
-  { id: "q022", level: "A1", kind: "category", prompt: "Which one is a drink?", options: ["water", "bread", "rice", "cheese"], correct: "water" },
-  { id: "q023", level: "A2", kind: "grammar", prompt: "I ___ my homework yesterday.", options: ["did", "do", "does", "doing"], correct: "did" },
-  { id: "q024", level: "A2", kind: "sentence", prompt: "We went ___ the park last weekend.", options: ["to", "at", "in", "on"], correct: "to" },
-  { id: "q025", level: "A2", kind: "definition", prompt: "A vehicle that flies in the sky.", options: ["airplane", "bicycle", "bus", "train"], correct: "airplane" },
-  { id: "q026", level: "A1", kind: "grammar", prompt: "This is ___ apple.", options: ["an", "a", "the", "-"], correct: "an" },
-  { id: "q027", level: "A2", kind: "grammar", prompt: "I have ___ apples.", options: ["two", "blue", "fast", "late"], correct: "two" },
-  { id: "q028", level: "A1", kind: "sentence", prompt: "She can ___ very well.", options: ["sing", "sings", "singing", "sang"], correct: "sing" },
-  { id: "q029", level: "A2", kind: "grammar", prompt: "We ___ in Istanbul last year.", options: ["lived", "live", "lives", "living"], correct: "lived" },
-  { id: "q030", level: "A2", kind: "sentence", prompt: "Please ___ me your name.", options: ["tell", "tells", "telling", "told"], correct: "tell" },
-
-  { id: "q031", level: "B1", kind: "grammar", prompt: "If it rains, we ___ at home.", options: ["will stay", "stay", "stayed", "staying"], correct: "will stay" },
-  { id: "q032", level: "B1", kind: "grammar", prompt: "I have lived here ___ 2019.", options: ["since", "for", "during", "until"], correct: "since" },
-  { id: "q033", level: "B1", kind: "sentence", prompt: "I’m tired because I ___ late last night.", options: ["went to bed", "go to bed", "goes to bed", "going to bed"], correct: "went to bed" },
-  { id: "q034", level: "B1", kind: "grammar", prompt: "She was cooking while I ___ the table.", options: ["was setting", "set", "am setting", "sets"], correct: "was setting" },
-  { id: "q035", level: "B1", kind: "definition", prompt: "A plan you make for the future is a ___.", options: ["goal", "noise", "taste", "mist"], correct: "goal" },
-  { id: "q036", level: "B1", kind: "grammar", prompt: "You ___ smoke here. It’s not allowed.", options: ["mustn't", "must", "can", "could"], correct: "mustn't" },
-  { id: "q037", level: "B1", kind: "sentence", prompt: "I’d like to ___ a reservation for two.", options: ["make", "do", "take", "put"], correct: "make" },
-  { id: "q038", level: "B1", kind: "grammar", prompt: "This book is ___ than that one.", options: ["more interesting", "interesting", "interest", "the most interesting"], correct: "more interesting" },
-  { id: "q039", level: "B1", kind: "grammar", prompt: "I ___ finished my homework yet.", options: ["haven't", "don't", "isn't", "wasn't"], correct: "haven't" },
-  { id: "q040", level: "B1", kind: "sentence", prompt: "Could you ___ me a hand with this box?", options: ["give", "take", "put", "turn"], correct: "give" },
-
-  { id: "q041", level: "A1", kind: "definition", prompt: "You sleep in this room.", options: ["bedroom", "kitchen", "bathroom", "garden"], correct: "bedroom" },
-  { id: "q042", level: "A1", kind: "sentence", prompt: "I ___ a sandwich for lunch.", options: ["eat", "eats", "eating", "ate"], correct: "eat" },
-  { id: "q043", level: "A2", kind: "grammar", prompt: "We ___ to the museum tomorrow.", options: ["are going", "go", "went", "going"], correct: "are going" },
-  { id: "q044", level: "A2", kind: "sentence", prompt: "There is a cat ___ the table.", options: ["under", "in", "on", "to"], correct: "under" },
-  { id: "q045", level: "A2", kind: "grammar", prompt: "She ___ her keys, so she can’t enter.", options: ["has lost", "lose", "loses", "lost"], correct: "has lost" },
-  { id: "q046", level: "A1", kind: "category", prompt: "Which one is a number?", options: ["seven", "green", "summer", "sugar"], correct: "seven" },
-  { id: "q047", level: "A2", kind: "definition", prompt: "A place where you see a doctor.", options: ["clinic", "cinema", "stadium", "market"], correct: "clinic" },
-  { id: "q048", level: "A1", kind: "grammar", prompt: "___ you like tea?", options: ["Do", "Does", "Did", "Doing"], correct: "Do" },
-  { id: "q049", level: "A2", kind: "sentence", prompt: "I’m ___ than my brother.", options: ["taller", "tall", "the tallest", "more tall"], correct: "taller" },
-  { id: "q050", level: "A2", kind: "grammar", prompt: "We don’t have ___ milk left.", options: ["any", "some", "many", "a"], correct: "any" },
-
-  { id: "q051", level: "B1", kind: "grammar", prompt: "The movie was so boring that I ___ asleep.", options: ["fell", "feel", "fall", "fallen"], correct: "fell" },
-  { id: "q052", level: "B1", kind: "sentence", prompt: "I prefer tea ___ coffee.", options: ["to", "than", "from", "with"], correct: "to" },
-  { id: "q053", level: "B1", kind: "grammar", prompt: "My phone battery is low; I need to ___ it.", options: ["charge", "change", "choose", "check"], correct: "charge" },
-  { id: "q054", level: "B1", kind: "grammar", prompt: "He apologized ___ being late.", options: ["for", "to", "with", "at"], correct: "for" },
-  { id: "q055", level: "B1", kind: "sentence", prompt: "I didn’t go out because I ___ to study.", options: ["had", "have", "has", "having"], correct: "had" },
-  { id: "q056", level: "B1", kind: "grammar", prompt: "This is the restaurant ___ we met.", options: ["where", "who", "what", "when"], correct: "where" },
-  { id: "q057", level: "B1", kind: "sentence", prompt: "She’s good ___ solving problems.", options: ["at", "in", "on", "to"], correct: "at" },
-  { id: "q058", level: "B1", kind: "grammar", prompt: "I wish I ___ more time.", options: ["had", "have", "has", "having"], correct: "had" },
-  { id: "q059", level: "B1", kind: "definition", prompt: "Something you do to relax is a ___.", options: ["hobby", "engine", "invoice", "factory"], correct: "hobby" },
-  { id: "q060", level: "B1", kind: "grammar", prompt: "If I ___ you, I would take that job.", options: ["were", "was", "am", "be"], correct: "were" },
-
-  { id: "q061", level: "A1", kind: "sentence", prompt: "Please ___ down.", options: ["sit", "sits", "sitting", "sat"], correct: "sit" },
-  { id: "q062", level: "A1", kind: "definition", prompt: "You use it to cut paper.", options: ["scissors", "spoon", "soap", "shoe"], correct: "scissors" },
-  { id: "q063", level: "A2", kind: "grammar", prompt: "I ___ never been to London.", options: ["have", "has", "am", "do"], correct: "have" },
-  { id: "q064", level: "A2", kind: "sentence", prompt: "He is interested ___ music.", options: ["in", "on", "at", "to"], correct: "in" },
-  { id: "q065", level: "A2", kind: "grammar", prompt: "We ___ a great time at the party.", options: ["had", "have", "has", "having"], correct: "had" },
-  { id: "q066", level: "A1", kind: "category", prompt: "Which one is a day?", options: ["Monday", "January", "summer", "yellow"], correct: "Monday" },
-  { id: "q067", level: "A2", kind: "definition", prompt: "A big shop where you buy many things.", options: ["supermarket", "bank", "museum", "factory"], correct: "supermarket" },
-  { id: "q068", level: "A2", kind: "grammar", prompt: "The book is ___ the bag.", options: ["in", "at", "to", "on"], correct: "in" },
-  { id: "q069", level: "A1", kind: "grammar", prompt: "How ___ you?", options: ["are", "is", "am", "be"], correct: "are" },
-  { id: "q070", level: "A2", kind: "sentence", prompt: "I’m going to the gym ___ Friday.", options: ["on", "at", "in", "to"], correct: "on" },
-
-  { id: "q071", level: "B1", kind: "sentence", prompt: "I can’t find my keys. I must have ___ them somewhere.", options: ["left", "leave", "leaves", "leaving"], correct: "left" },
-  { id: "q072", level: "B1", kind: "grammar", prompt: "By the time we arrived, the train ___.", options: ["had left", "left", "has left", "was leaving"], correct: "had left" },
-  { id: "q073", level: "B1", kind: "sentence", prompt: "I’m looking forward to ___ you soon.", options: ["seeing", "see", "saw", "seen"], correct: "seeing" },
-  { id: "q074", level: "B1", kind: "grammar", prompt: "He suggested ___ a break.", options: ["taking", "take", "took", "taken"], correct: "taking" },
-  { id: "q075", level: "B1", kind: "grammar", prompt: "I’d rather ___ at home tonight.", options: ["stay", "staying", "stayed", "to stay"], correct: "stay" },
-  { id: "q076", level: "B1", kind: "sentence", prompt: "She’s responsible ___ the project.", options: ["for", "to", "with", "at"], correct: "for" },
-  { id: "q077", level: "B1", kind: "grammar", prompt: "The meeting was cancelled ___ the weather.", options: ["because of", "because", "so", "although"], correct: "because of" },
-  { id: "q078", level: "B1", kind: "sentence", prompt: "I’ve decided to ___ sugar in my tea.", options: ["reduce", "repeat", "reply", "repair"], correct: "reduce" },
-  { id: "q079", level: "B1", kind: "grammar", prompt: "This is the best meal I ___ ever eaten.", options: ["have", "has", "am", "do"], correct: "have" },
-  { id: "q080", level: "B1", kind: "definition", prompt: "A short trip for pleasure is an ___.", options: ["outing", "engine", "argument", "outline"], correct: "outing" },
-
-  { id: "q081", level: "A1", kind: "definition", prompt: "You use it to call someone.", options: ["phone", "fork", "pillow", "ticket"], correct: "phone" },
-  { id: "q082", level: "A1", kind: "grammar", prompt: "He ___ a car.", options: ["has", "have", "having", "had"], correct: "has" },
-  { id: "q083", level: "A2", kind: "grammar", prompt: "There ___ a lot of people here.", options: ["are", "is", "am", "be"], correct: "are" },
-  { id: "q084", level: "A2", kind: "sentence", prompt: "I ___ help you with that.", options: ["can", "cans", "coulds", "canning"], correct: "can" },
-  { id: "q085", level: "A2", kind: "grammar", prompt: "We ___ dinner when the phone rang.", options: ["were having", "have", "had", "are having"], correct: "were having" },
-  { id: "q086", level: "A1", kind: "category", prompt: "Which one is a body part?", options: ["hand", "sand", "stand", "band"], correct: "hand" },
-  { id: "q087", level: "A2", kind: "definition", prompt: "A place where you watch films.", options: ["cinema", "station", "office", "garage"], correct: "cinema" },
-  { id: "q088", level: "A2", kind: "grammar", prompt: "I don’t like coffee, but I like tea ___.", options: ["too", "two", "to", "then"], correct: "too" },
-  { id: "q089", level: "A1", kind: "grammar", prompt: "Where ___ you live?", options: ["do", "does", "did", "done"], correct: "do" },
-  { id: "q090", level: "A2", kind: "sentence", prompt: "I usually ___ a shower in the morning.", options: ["take", "do", "make", "put"], correct: "take" },
-
-  { id: "q091", level: "B1", kind: "grammar", prompt: "If we hurry, we ___ catch the bus.", options: ["might", "must", "shouldn't", "can't"], correct: "might" },
-  { id: "q092", level: "B1", kind: "sentence", prompt: "I’ve been working here ___ three years.", options: ["for", "since", "until", "during"], correct: "for" },
-  { id: "q093", level: "B1", kind: "grammar", prompt: "He’s the person ___ helped me yesterday.", options: ["who", "where", "when", "what"], correct: "who" },
-  { id: "q094", level: "B1", kind: "grammar", prompt: "I’ll call you when I ___ home.", options: ["get", "will get", "got", "getting"], correct: "get" },
-  { id: "q095", level: "B1", kind: "grammar", prompt: "I’m not used to ___ up early.", options: ["waking", "wake", "woke", "woken"], correct: "waking" },
-  { id: "q096", level: "B1", kind: "sentence", prompt: "Please ___ your phone off during the exam.", options: ["turn", "turns", "turned", "turning"], correct: "turn" },
-  { id: "q097", level: "B1", kind: "grammar", prompt: "The room was ___ noisy to study.", options: ["too", "enough", "very", "so"], correct: "too" },
-  { id: "q098", level: "B1", kind: "sentence", prompt: "She doesn’t eat meat because she is a ___.", options: ["vegetarian", "mechanic", "musician", "journalist"], correct: "vegetarian" },
-  { id: "q099", level: "B1", kind: "grammar", prompt: "I had my hair ___ yesterday.", options: ["cut", "cutting", "to cut", "cuts"], correct: "cut" },
-  { id: "q100", level: "B1", kind: "definition", prompt: "A person who travels by plane is a ___.", options: ["passenger", "builder", "neighbor", "customer"], correct: "passenger" },
+  // B1 (33)
+  { level: "B1", word: "achieve", def: "to succeed in doing something you wanted" },
+  { level: "B1", word: "imagine", def: "to form a picture in your mind" },
+  { level: "B1", word: "increase", def: "to become bigger in number or amount" },
+  { level: "B1", word: "reduce", def: "to make something smaller or less" },
+  { level: "B1", word: "support", def: "to help someone or something" },
+  { level: "B1", word: "discuss", def: "to talk about something seriously" },
+  { level: "B1", word: "solution", def: "an answer to a problem" },
+  { level: "B1", word: "opinion", def: "what you think about something" },
+  { level: "B1", word: "research", def: "careful study to find information" },
+  { level: "B1", word: "experience", def: "knowledge you get from doing something" },
+  { level: "B1", word: "notice", def: "to see or become aware of something" },
+  { level: "B1", word: "avoid", def: "to stay away from something" },
+  { level: "B1", word: "suggest", def: "to give an idea or recommendation" },
+  { level: "B1", word: "prefer", def: "to like one thing more than another" },
+  { level: "B1", word: "manage", def: "to control or organize successfully" },
+  { level: "B1", word: "continue", def: "to keep doing something" },
+  { level: "B1", word: "interrupt", def: "to stop someone while they are speaking" },
+  { level: "B1", word: "replace", def: "to put something new instead of something old" },
+  { level: "B1", word: "recommend", def: "to say something is good and should be tried" },
+  { level: "B1", word: "responsible", def: "having a duty to take care of something" },
+  { level: "B1", word: "environment", def: "the natural world around us" },
+  { level: "B1", word: "pollution", def: "dirty air/water caused by harmful waste" },
+  { level: "B1", word: "challenge", def: "a difficult task that tests you" },
+  { level: "B1", word: "confidence", def: "belief that you can do something well" },
+  { level: "B1", word: "temporary", def: "lasting only for a short time" },
+  { level: "B1", word: "separate", def: "to divide into different parts" },
+  { level: "B1", word: "recognize", def: "to know someone/something from before" },
+  { level: "B1", word: "influence", def: "power to affect someone or something" },
+  { level: "B1", word: "feature", def: "an important part or characteristic" },
+  { level: "B1", word: "typical", def: "normal for a person or thing" },
+  { level: "B1", word: "purpose", def: "the reason why something is done" },
+  { level: "B1", word: "process", def: "a series of steps to do something" },
+  { level: "B1", word: "evidence", def: "facts that show something is true" },
 ];
 
-const LEVELS: Level[] = ["A1", "A2", "B1"];
+// -------------------- PAGE --------------------
+export default function WordMeaningPage() {
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  const wrapRef = useRef<HTMLDivElement | null>(null);
+  const ctxRef = useRef<CanvasRenderingContext2D | null>(null);
 
-function nextLevel(lv: Level): Level {
-  const i = LEVELS.indexOf(lv);
-  return LEVELS[clamp(i + 1, 0, LEVELS.length - 1)];
-}
-function prevLevel(lv: Level): Level {
-  const i = LEVELS.indexOf(lv);
-  return LEVELS[clamp(i - 1, 0, LEVELS.length - 1)];
-}
-function levelIndex(lv: Level) {
-  return LEVELS.indexOf(lv);
-}
+  // loop
+  const rafRef = useRef<number | null>(null);
+  const lastTRef = useRef<number>(0);
 
-export default function WordMeaningBalloonPage() {
-  // UI state
-  const [assetsReady, setAssetsReady] = useState(false);
+  // timer refs (single source)
+  const timeLeftRef = useRef(60);
+  const uiTimerAccRef = useRef(0);
+  const runningRef = useRef(false);
+
+  // gameplay refs
+  const balloonsRef = useRef<Balloon[]>([]);
+  const questionRef = useRef<{ prompt: string; correctWord: string } | null>(
+    null
+  );
+
+  // level tracking (avoid async state bug)
+  const levelRef = useRef<Level>("A1");
+  const correctWindowRef = useRef(0);
+  const wrongWindowRef = useRef(0);
+  const streakRef = useRef(0);
+  const answersRef = useRef(0);
+
+  // optional sprites
+  const sheetRef = useRef<HTMLImageElement | null>(null);
+
+  // React UI state
   const [running, setRunning] = useState(false);
   const [timeLeft, setTimeLeft] = useState(60);
   const [score, setScore] = useState(0);
   const [level, setLevel] = useState<Level>("A1");
-  const [prompt, setPrompt] = useState("Tap START");
   const [soundOn, setSoundOn] = useState(true);
   const [classMode, setClassMode] = useState(false);
 
-  // Refs (game state)
-  const canvasRef = useRef<HTMLCanvasElement | null>(null);
-  const wrapRef = useRef<HTMLDivElement | null>(null);
-  const rafRef = useRef<number | null>(null);
-  const lastTRef = useRef<number>(0);
-  const uiTimerAccRef = useRef(0);
-  const boundsRef = useRef({ w: 800, h: 520 }); // CSS pixels
-  const dprRef = useRef(1);
-
-  const sheetRef = useRef<HTMLImageElement | null>(null);
-  const popRef = useRef<HTMLImageElement | null>(null);
-
-  const balloonsRef = useRef<Balloon[]>([]);
-  const popsRef = useRef<PopFx[]>([]);
-  const questionRef = useRef<Question | null>(null);
-
-  const timeLeftRef = useRef(60);
-  const runningRef = useRef(false);
-  const streakRef = useRef(0);
-
-  // Level async bug fix
-  const levelRef = useRef<Level>("A1");
-  useEffect(() => {
-    levelRef.current = level;
-  }, [level]);
-
-  // Sound refs
+  // Audio (no files)
   const audioCtxRef = useRef<AudioContext | null>(null);
-  const soundOnRef = useRef(true);
-  const classModeRef = useRef(false);
-  useEffect(() => {
-    soundOnRef.current = soundOn;
-  }, [soundOn]);
-  useEffect(() => {
-    classModeRef.current = classMode;
-  }, [classMode]);
 
-  // Recent answers (for auto level up/down)
-  const recentRef = useRef<{ ok: boolean }[]>([]);
+  // canvas sizing
+  const sizeRef = useRef({ w: 900, h: 520, dpr: 1 });
 
-  const questionPools = useMemo(() => {
-    const map: Record<Level, Question[]> = { A1: [], A2: [], B1: [] };
-    for (const q of QUESTIONS) map[q.level].push(q);
-    return map;
-  }, []);
+  const levelBadge = useMemo(() => level, [level]);
 
-  // Resize & DPR setup
-  useEffect(() => {
+  function ensureAudio() {
+    if (!soundOn) return null;
+    try {
+      if (!audioCtxRef.current) {
+        audioCtxRef.current = new (window.AudioContext ||
+          (window as any).webkitAudioContext)();
+      }
+      if (audioCtxRef.current.state === "suspended") {
+        audioCtxRef.current.resume().catch(() => {});
+      }
+      return audioCtxRef.current;
+    } catch {
+      return null;
+    }
+  }
+
+  function playTone(kind: "correct" | "wrong" | "bling", intensity = 1) {
+    if (!soundOn) return;
+    if (classMode) return; // silent for classroom
+    const ac = ensureAudio();
+    if (!ac) return;
+
+    const now = ac.currentTime;
+    const o = ac.createOscillator();
+    const g = ac.createGain();
+
+    const base =
+      kind === "correct" ? 660 : kind === "wrong" ? 180 : 980;
+    const dur = kind === "bling" ? 0.10 : 0.12;
+
+    o.type = kind === "wrong" ? "square" : "sine";
+    o.frequency.setValueAtTime(base, now);
+    o.frequency.exponentialRampToValueAtTime(
+      base * (kind === "wrong" ? 0.7 : 1.3),
+      now + dur
+    );
+
+    g.gain.setValueAtTime(0.0001, now);
+    g.gain.exponentialRampToValueAtTime(0.22 * intensity, now + 0.01);
+    g.gain.exponentialRampToValueAtTime(0.0001, now + dur);
+
+    o.connect(g);
+    g.connect(ac.destination);
+    o.start(now);
+    o.stop(now + dur + 0.02);
+  }
+
+  function primeSprites() {
+    // optional sprite sheet (5x2 = 10 frames)
+    const img = new Image();
+    img.src = "/sprites/balloons_sheet.png";
+    img.onload = () => (sheetRef.current = img);
+    img.onerror = () => (sheetRef.current = null);
+  }
+
+  function resizeCanvas() {
     const wrap = wrapRef.current;
     const canvas = canvasRef.current;
     if (!wrap || !canvas) return;
 
-    const ro = new ResizeObserver(() => {
-      const rect = wrap.getBoundingClientRect();
-      const cssW = Math.max(320, Math.floor(rect.width));
-      const cssH = 520; // sabit yükseklik (istersen 480/600 yapabilirsin)
+    const rect = wrap.getBoundingClientRect();
+    const wCss = Math.max(320, Math.floor(rect.width));
+    const hCss = Math.max(420, Math.floor(rect.height || 520));
+    const dpr = Math.max(1, Math.min(2.5, window.devicePixelRatio || 1));
 
-      const dpr = Math.max(1, Math.min(2.5, window.devicePixelRatio || 1));
-      dprRef.current = dpr;
-      boundsRef.current = { w: cssW, h: cssH };
+    sizeRef.current = { w: wCss, h: 520, dpr }; // fixed height for consistent gameplay
 
-      canvas.style.width = `${cssW}px`;
-      canvas.style.height = `${cssH}px`;
-      canvas.width = Math.floor(cssW * dpr);
-      canvas.height = Math.floor(cssH * dpr);
+    canvas.width = Math.floor(wCss * dpr);
+    canvas.height = Math.floor(520 * dpr);
+    canvas.style.width = `${wCss}px`;
+    canvas.style.height = `520px`;
 
-      const ctx = canvas.getContext("2d");
-      if (ctx) ctx.setTransform(dpr, 0, 0, dpr, 0, 0); // draw in CSS pixels
-    });
-
-    ro.observe(wrap);
-    return () => ro.disconnect();
-  }, []);
-
-  // Load images
-  useEffect(() => {
-    let alive = true;
-    (async () => {
-      try {
-        const [sheet, pop] = await Promise.all([
-          loadImage("/sprites/balloons_sheet.png"),
-          loadImage("/sprites/pop.png"),
-        ]);
-        if (!alive) return;
-        sheetRef.current = sheet;
-        popRef.current = pop;
-        setAssetsReady(true);
-      } catch (e) {
-        console.error(e);
-        setAssetsReady(false);
-      }
-    })();
-    return () => {
-      alive = false;
-    };
-  }, []);
-
-  // Keep timeLeftRef synced
-  useEffect(() => {
-    timeLeftRef.current = timeLeft;
-  }, [timeLeft]);
-
-  // stop loop on unmount
-  useEffect(() => {
-    return () => {
-      if (rafRef.current) cancelAnimationFrame(rafRef.current);
-    };
-  }, []);
-
-  function playTone(type: "correct" | "wrong" | "bling", streak: number) {
-    if (!soundOnRef.current || classModeRef.current) return;
-    const ctx = audioCtxRef.current;
+    const ctx = canvas.getContext("2d");
     if (!ctx) return;
+    ctxRef.current = ctx;
 
-    const now = ctx.currentTime;
-    const osc = ctx.createOscillator();
-    const gain = ctx.createGain();
-
-    let vol = 0.18;
-
-    if (type === "correct") {
-      osc.type = "triangle";
-      osc.frequency.setValueAtTime(520, now);
-      osc.frequency.exponentialRampToValueAtTime(820, now + 0.09);
-      vol = 0.18;
-    } else if (type === "wrong") {
-      osc.type = "sawtooth";
-      osc.frequency.setValueAtTime(220, now);
-      osc.frequency.exponentialRampToValueAtTime(120, now + 0.10);
-      vol = 0.14;
-    } else {
-      osc.type = "sine";
-      osc.frequency.setValueAtTime(880, now);
-      osc.frequency.setValueAtTime(1320, now + 0.05);
-      vol = 0.20 + Math.min(streak, 12) * 0.008;
-    }
-
-    gain.gain.setValueAtTime(vol, now);
-    gain.gain.exponentialRampToValueAtTime(0.001, now + 0.12);
-
-    osc.connect(gain);
-    gain.connect(ctx.destination);
-
-    osc.start(now);
-    osc.stop(now + 0.13);
+    // transform: draw in CSS px coordinates
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
   }
 
-  function makeQuestion(lv: Level): Question {
-    const pool = questionPools[lv];
-    // güvenli fallback
-    const q = pool[(Math.random() * pool.length) | 0] || QUESTIONS[0];
-    return q;
-  }
+  function makeQuestion(lvl: Level) {
+    const li = levelIndex(lvl);
 
-  function makeBalloons(q: Question) {
-    const { w, h } = boundsRef.current;
-
-    const opts = shuffle(q.options.slice(0, 4));
-    const speedBase = 90 + levelIndex(levelRef.current) * 25; // CSS px/s
-
-    const balls: Balloon[] = opts.map((t) => {
-      const r = 52 + Math.random() * 18; // mobil rahat
-      const x = 70 + Math.random() * (w - 140);
-      const y = 160 + Math.random() * (h - 240);
-
-      const vx = (Math.random() * 2 - 1) * speedBase;
-      const vy = (Math.random() * 2 - 1) * speedBase;
-
-      return {
-        x,
-        y,
-        r,
-        vx,
-        vy,
-        text: t,
-        isCorrect: t === q.correct,
-        frame: (Math.random() * 10) | 0,
-        _ft: 0,
-      };
+    // Mixed: mostly current level, sometimes neighbor levels
+    const pool = BANK.filter((q) => {
+      const qi = levelIndex(q.level);
+      if (qi === li) return true;
+      // sprinkle neighbors
+      if (Math.abs(qi - li) === 1) return Math.random() < 0.25;
+      return Math.random() < 0.08;
     });
 
-    balloonsRef.current = balls;
+    const correct = pickOne(pool);
+
+    const wrongPool = BANK.filter((q) => q.word !== correct.word);
+    const wrongs = shuffle(wrongPool).slice(0, 3).map((q) => q.word);
+
+    const options = shuffle([correct.word, ...wrongs]);
+
+    // prompt is definition (NOT synonym)
+    questionRef.current = {
+      prompt: `Definition: ${correct.def}`,
+      correctWord: correct.word,
+    };
+
+    return options.map((t) => ({
+      text: t,
+      isCorrect: t === correct.word,
+    }));
   }
 
-  function triggerPop(x: number, y: number) {
-    popsRef.current.push({ x, y, t: 0 });
-  }
+  function makeBalloons() {
+    const { w, h } = sizeRef.current;
+    const lvl = levelRef.current;
 
-  function registerResult(ok: boolean): Level {
-    const r = recentRef.current;
-    r.push({ ok });
-    while (r.length > 5) r.shift();
+    const opts = makeQuestion(lvl);
+    const count = 4;
 
-    const last5 = r.slice(-5);
-    const correct = last5.filter((x) => x.ok).length;
-    const wrong = last5.length - correct;
+    const baseY = h + 80;
+    const xs = shuffle(
+      Array.from({ length: count }, (_, i) => (w / (count + 1)) * (i + 1))
+    );
 
-    let nextLv: Level = levelRef.current;
-
-    if (last5.length === 5 && correct >= 4) {
-      nextLv = nextLevel(nextLv);
-      recentRef.current = [];
-    } else if (last5.length === 5 && wrong >= 2) {
-      nextLv = prevLevel(nextLv);
-      recentRef.current = [];
+    const balloons: Balloon[] = [];
+    for (let i = 0; i < count; i++) {
+      const r = 56 + Math.random() * 20; // mobile-friendly
+      balloons.push({
+        id: `${Date.now()}_${i}_${Math.random().toString(16).slice(2)}`,
+        x: xs[i] + (Math.random() * 30 - 15),
+        y: baseY + i * 40,
+        r,
+        vy: 120 + Math.random() * 60, // px/sec
+        text: opts[i].text,
+        isCorrect: opts[i].isCorrect,
+        frame: Math.floor(Math.random() * 10),
+      });
     }
-
-    if (nextLv !== levelRef.current) {
-      levelRef.current = nextLv;
-      setLevel(nextLv);
-    }
-    return nextLv;
-  }
-
-  function scoreForCorrect(streak: number) {
-    // arcade: base + combo
-    const base = 10;
-    const combo = Math.min(15, Math.floor(streak / 2));
-    return base + combo;
+    balloonsRef.current = balloons;
   }
 
   function start() {
-    // prime audio context (mobile)
-    try {
-      if (!audioCtxRef.current) {
-        audioCtxRef.current = new (window.AudioContext || (window as any).webkitAudioContext)();
-      } else if (audioCtxRef.current.state === "suspended") {
-        audioCtxRef.current.resume().catch(() => {});
-      }
-    } catch {}
+    // prime audio on user gesture
+    ensureAudio();
+    playTone("bling", 0.8);
+
+    setScore(0);
+    setLevel("A1");
+    levelRef.current = "A1";
 
     streakRef.current = 0;
-    recentRef.current = [];
-    setScore(0);
+    correctWindowRef.current = 0;
+    wrongWindowRef.current = 0;
+    answersRef.current = 0;
+
     setTimeLeft(60);
     timeLeftRef.current = 60;
-
-    // first question
-    const lv = levelRef.current;
-    const q = makeQuestion(lv);
-    questionRef.current = q;
-    setPrompt(q.prompt);
-    makeBalloons(q);
+    uiTimerAccRef.current = 0;
 
     setRunning(true);
     runningRef.current = true;
+
+    resizeCanvas();
+    makeBalloons();
 
     lastTRef.current = performance.now();
     if (rafRef.current) cancelAnimationFrame(rafRef.current);
     rafRef.current = requestAnimationFrame(loop);
   }
 
-  function stop() {
-    setRunning(false);
-    runningRef.current = false;
-    if (rafRef.current) cancelAnimationFrame(rafRef.current);
-    rafRef.current = null;
-  }
-
   function endGame() {
-    stop();
-    setTimeLeft(0);
-    timeLeftRef.current = 0;
+    runningRef.current = false;
+    setRunning(false);
   }
 
-  function nextRoundWithLevel(lv: Level) {
-    const q = makeQuestion(lv);
-    questionRef.current = q;
-    setPrompt(q.prompt);
-    makeBalloons(q);
-  }
+  function adjustLevelAfterAnswer(isCorrect: boolean) {
+    if (isCorrect) correctWindowRef.current += 1;
+    else wrongWindowRef.current += 1;
 
-  function onHitBalloon(hit: Balloon) {
-    if (!runningRef.current) return;
-    if (timeLeftRef.current <= 0) return;
+    // every 5 answers, adjust
+    answersRef.current += 1;
+    if (answersRef.current % 5 !== 0) return;
 
-    if (hit.isCorrect) {
-      streakRef.current += 1;
-      const add = scoreForCorrect(streakRef.current);
-      setScore((s) => s + add);
+    let lvl = levelRef.current;
+    const li = levelIndex(lvl);
 
-      // time bonus (arcade)
-      setTimeLeft((t) => Math.min(99, t + 1));
+    const c = correctWindowRef.current;
+    const w = wrongWindowRef.current;
 
-      // pop fx + sounds
-      triggerPop(hit.x, hit.y);
-      playTone("correct", streakRef.current);
+    // reset window
+    correctWindowRef.current = 0;
+    wrongWindowRef.current = 0;
 
-      // combo bling each 5 streak
-      if (streakRef.current % 5 === 0) playTone("bling", streakRef.current);
+    if (c >= 4 && li < 2) {
+      lvl = li === 0 ? "A2" : "B1";
+    } else if (w >= 2 && li > 0) {
+      lvl = li === 2 ? "A2" : "A1";
+    }
 
-      // level may change based on last5
-      const newLv = registerResult(true);
-
-      // new question immediately with correct level (fix async state issue)
-      nextRoundWithLevel(newLv);
-    } else {
-      // wrong
-      streakRef.current = 0;
-      registerResult(false);
-
-      triggerPop(hit.x, hit.y);
-      playTone("wrong", 0);
-
-      // penalty
-      setTimeLeft((t) => Math.max(0, t - 2));
+    if (lvl !== levelRef.current) {
+      levelRef.current = lvl;
+      setLevel(lvl);
     }
   }
 
- function update(dt: number) {
-  // 1) TIMER: tek kaynak (ref)
-  if (runningRef.current) {
+  function onHitBalloon(b: Balloon) {
+    const q = questionRef.current;
+    if (!q) return;
+
+    if (b.isCorrect) {
+      setScore((s) => s + 10);
+      streakRef.current += 1;
+
+      // small time reward
+      timeLeftRef.current = Math.min(120, timeLeftRef.current + 1);
+
+      playTone("correct", 1);
+
+      // combo bling at 5,10,15...
+      if (streakRef.current > 0 && streakRef.current % 5 === 0) {
+        playTone("bling", 1.3);
+      }
+
+      adjustLevelAfterAnswer(true);
+      // new round
+      makeBalloons();
+    } else {
+      setScore((s) => Math.max(0, s - 3));
+      streakRef.current = 0;
+
+      // time penalty
+      timeLeftRef.current = Math.max(0, timeLeftRef.current - 2);
+
+      playTone("wrong", 1);
+      adjustLevelAfterAnswer(false);
+
+      // remove only the tapped balloon (keep others)
+      balloonsRef.current = balloonsRef.current.filter((x) => x.id !== b.id);
+      if (balloonsRef.current.length === 0) makeBalloons();
+    }
+  }
+
+  function update(dt: number) {
+    if (!runningRef.current) return;
+
+    // TIMER — single source
     const nt = Math.max(0, timeLeftRef.current - dt);
     timeLeftRef.current = nt;
 
-    // sadece UI için state’i senkronla (her frame değil)
-    // 10 fps yeterli: 0.1sn çözünürlük
+    // UI sync (10 fps)
     uiTimerAccRef.current += dt;
     if (uiTimerAccRef.current >= 0.1) {
       uiTimerAccRef.current = 0;
-      setTimeLeft(nt); // artık prev-1 yok!
+      setTimeLeft(nt);
     }
 
     if (nt <= 0) {
       endGame();
       return;
     }
-  }
 
-    const { w, h } = boundsRef.current;
-
-    // balloons
-    const balls = balloonsRef.current;
-    for (const b of balls) {
-      b.x += b.vx * dt;
-      b.y += b.vy * dt;
-
-      // bounce
-      if (b.x - b.r < 0) {
-        b.x = b.r;
-        b.vx *= -1;
-      } else if (b.x + b.r > w) {
-        b.x = w - b.r;
-        b.vx *= -1;
-      }
-
-      if (b.y - b.r < 120) {
-        b.y = 120 + b.r;
-        b.vy *= -1;
-      } else if (b.y + b.r > h) {
-        b.y = h - b.r;
-        b.vy *= -1;
-      }
-
-      // frame animation (soft)
-      b._ft = (b._ft ?? 0) + dt;
-      if (b._ft >= 0.12) {
-        b.frame = (b.frame + 1) % 10;
-        b._ft = 0;
-      }
+    // balloons move (CSS px physics)
+    const { h } = sizeRef.current;
+    const bs = balloonsRef.current;
+    for (const b of bs) {
+      b.y -= b.vy * dt;
+      // animate frame slowly
+      b.frame = (b.frame + 1) % 10;
     }
 
-    // pops
-    const pops = popsRef.current;
-    for (let i = pops.length - 1; i >= 0; i--) {
-      pops[i].t += dt;
-      if (pops[i].t > 0.25) pops.splice(i, 1);
-    }
-  }
-
-  function draw() {
-    const canvas = canvasRef.current;
-    const ctx = canvas?.getContext("2d");
-    if (!canvas || !ctx) return;
-
-    const { w, h } = boundsRef.current;
-
-    // background
-    ctx.clearRect(0, 0, w, h);
-    ctx.fillStyle = "#fff7d6"; // warm yellow-ish
-    ctx.fillRect(0, 0, w, h);
-
-    // top HUD bg strip
-    ctx.fillStyle = "rgba(0,0,0,0.05)";
-    ctx.fillRect(0, 0, w, 110);
-
-    // prompt
-    ctx.fillStyle = "rgba(0,0,0,0.85)";
-    ctx.font = "700 20px ui-sans-serif, system-ui";
-    ctx.textAlign = "left";
-    ctx.textBaseline = "top";
-    ctx.fillText("QUESTION:", 16, 14);
-
-    ctx.font = "800 22px ui-sans-serif, system-ui";
-    const p = prompt || "Tap START";
-    wrapText(ctx, p, 16, 42, w - 32, 26);
-
-    // balloons
-    const sheet = sheetRef.current;
-    const cols = 5;
-    const rows = 2;
-    const cellW = sheet ? sheet.width / cols : 0;
-    const cellH = sheet ? sheet.height / rows : 0;
-
-    for (const b of balloonsRef.current) {
-      drawBalloon(ctx, b, sheet, cols, cellW, cellH);
-    }
-   const prompt = questionRef.current?.prompt ?? "";
-
-  ctx.save();
-  ctx.globalAlpha = 1;
-  ctx.textAlign = "center";
-  ctx.textBaseline = "middle";
-
-  ctx.font = `900 ${Math.round(28 * dpr)}px ui-sans-serif, system-ui`;
-
-  ctx.lineWidth = Math.max(3, 7 * dpr);
-  ctx.strokeStyle = "rgba(0,0,0,0.85)";
-  ctx.fillStyle = "rgba(255,255,255,0.98)";
-
-  const px = W / 2;
-  const py = Math.round(54 * dpr);
-
-  if (prompt) {
-    ctx.strokeText(prompt, px, py);
-    ctx.fillText(prompt, px, py);
-  }
-  ctx.restore();
-}
-    // pop FX
-    const pop = popRef.current;
-    if (pop) {
-      for (const fx of popsRef.current) {
-        const k = 1 + fx.t * 0.8;
-        const alpha = 1 - fx.t / 0.25;
-        ctx.save();
-        ctx.globalAlpha = clamp(alpha, 0, 1);
-        const size = 70 * k;
-        ctx.drawImage(pop, fx.x - size / 2, fx.y - size / 2, size, size);
-        ctx.restore();
-      }
-    }
-
-    // bottom hint
-    ctx.fillStyle = "rgba(0,0,0,0.35)";
-    ctx.font = "600 14px ui-sans-serif, system-ui";
-    ctx.textAlign = "center";
-    ctx.textBaseline = "bottom";
-    ctx.fillText("Tap the correct balloon", w / 2, h - 10);
+    // recycle if all left
+    const alive = bs.filter((b) => b.y + b.r > -40);
+    balloonsRef.current = alive.length ? alive : bs;
+    if (!alive.length) makeBalloons();
   }
 
   function drawBalloon(
     ctx: CanvasRenderingContext2D,
     b: Balloon,
-    sheet: HTMLImageElement | null,
-    cols: number,
-    cellW: number,
-    cellH: number
+    sheet: HTMLImageElement | null
   ) {
-    // balloon sprite
-    if (sheet && cellW > 0 && cellH > 0) {
+    // sprite or fallback
+    if (sheet && sheet.width > 0 && sheet.height > 0) {
+      const cols = 5;
+      const rows = 2;
+      const cellW = sheet.width / cols;
+      const cellH = sheet.height / rows;
+
       const f = b.frame % 10;
       const col = f % cols;
       const row = (f / cols) | 0;
@@ -662,41 +492,106 @@ export default function WordMeaningBalloonPage() {
       const sx = col * cellW;
       const sy = row * cellH;
 
-      // draw slightly larger than radius
       const s = b.r * 2.25;
-      ctx.drawImage(sheet, sx, sy, cellW, cellH, b.x - s / 2, b.y - s / 2, s, s);
+      ctx.drawImage(
+        sheet,
+        sx,
+        sy,
+        cellW,
+        cellH,
+        b.x - s / 2,
+        b.y - s / 2,
+        s,
+        s
+      );
     } else {
-      // fallback circle
       ctx.beginPath();
       ctx.arc(b.x, b.y, b.r, 0, Math.PI * 2);
-      ctx.fillStyle = b.isCorrect ? "rgba(34,197,94,0.85)" : "rgba(59,130,246,0.75)";
+      ctx.fillStyle = b.isCorrect
+        ? "rgba(34,197,94,0.85)"
+        : "rgba(59,130,246,0.75)";
       ctx.fill();
+      ctx.lineWidth = 3;
+      ctx.strokeStyle = "rgba(0,0,0,0.25)";
+      ctx.stroke();
     }
-    
 
-    // text (VERY visible)
-    const fontSize = Math.max(18, b.r * 0.62);
-    ctx.font = `900 ${fontSize}px ui-sans-serif, system-ui`;
+    // TEXT (very visible)
+    const fontSize = Math.max(18, b.r * 0.55);
+    ctx.save();
+    ctx.globalAlpha = 1;
+    ctx.font = `900 ${Math.round(fontSize)}px ui-sans-serif, system-ui`;
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
 
-    // subtle shadow
+    // shadow + stroke
     ctx.shadowColor = "rgba(0,0,0,0.35)";
     ctx.shadowBlur = 6;
     ctx.shadowOffsetY = 2;
 
-    // thick stroke
     ctx.lineWidth = 8;
-    ctx.strokeStyle = "rgba(0,0,0,0.75)";
+    ctx.strokeStyle = "rgba(0,0,0,0.78)";
     ctx.strokeText(b.text, b.x, b.y);
 
-    // fill
     ctx.fillStyle = "rgba(255,255,255,0.98)";
     ctx.fillText(b.text, b.x, b.y);
 
-    // reset shadows
-    ctx.shadowBlur = 0;
-    ctx.shadowOffsetY = 0;
+    ctx.restore();
+  }
+
+  function draw() {
+    const ctx = ctxRef.current;
+    if (!ctx) return;
+
+    const { w, h } = sizeRef.current;
+
+    // clear in CSS px space (because transform already applied)
+    ctx.save();
+    ctx.setTransform(sizeRef.current.dpr, 0, 0, sizeRef.current.dpr, 0, 0);
+    ctx.clearRect(0, 0, w, 520);
+    ctx.restore();
+
+    // background
+    ctx.save();
+    ctx.globalAlpha = 1;
+    ctx.fillStyle = "#0b1220";
+    ctx.fillRect(0, 0, w, 520);
+    ctx.restore();
+
+    // balloons
+    const sheet = sheetRef.current;
+    for (const b of balloonsRef.current) {
+      drawBalloon(ctx, b, sheet);
+    }
+
+    // ✅ PROMPT (SORU) — ALWAYS ON TOP
+    const prompt = questionRef.current?.prompt ?? "";
+    if (prompt) {
+      ctx.save();
+      ctx.globalAlpha = 1;
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.font = `900 22px ui-sans-serif, system-ui`;
+
+      ctx.lineWidth = 6;
+      ctx.strokeStyle = "rgba(0,0,0,0.9)";
+      ctx.fillStyle = "rgba(255,255,255,0.98)";
+
+      const px = w / 2;
+      const py = 44;
+
+      ctx.strokeText(prompt, px, py);
+      ctx.fillText(prompt, px, py);
+      ctx.restore();
+    }
+
+    // small HUD inside canvas (optional)
+    ctx.save();
+    ctx.globalAlpha = 0.95;
+    ctx.font = `800 14px ui-sans-serif, system-ui`;
+    ctx.fillStyle = "rgba(255,255,255,0.9)";
+    ctx.fillText(`Combo: ${streakRef.current}`, 16, 510);
+    ctx.restore();
   }
 
   function loop(t: number) {
@@ -711,7 +606,17 @@ export default function WordMeaningBalloonPage() {
     }
   }
 
-  // Pointer / touch handling
+  // resize + sprites
+  useEffect(() => {
+    resizeCanvas();
+    primeSprites();
+    const onR = () => resizeCanvas();
+    window.addEventListener("resize", onR);
+    return () => window.removeEventListener("resize", onR);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // pointer/touch
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -721,37 +626,27 @@ export default function WordMeaningBalloonPage() {
       if (timeLeftRef.current <= 0) return;
 
       const rect = canvas.getBoundingClientRect();
-      const x = e.clientX - rect.left;
+      const x = e.clientX - rect.left; // CSS px (we draw in CSS px)
       const y = e.clientY - rect.top;
 
-      // find nearest hit (so overlap feels fair)
       let best: { b: Balloon; d2: number } | null = null;
-
       for (const b of balloonsRef.current) {
         const dx = x - b.x;
         const dy = y - b.y;
-        const hitR = b.r * 1.15; // easier on mobile
+        const hitR = b.r * 1.15;
         const d2 = dx * dx + dy * dy;
         if (d2 <= hitR * hitR) {
           if (!best || d2 < best.d2) best = { b, d2 };
         }
       }
-
       if (best) onHitBalloon(best.b);
     }
 
     canvas.addEventListener("pointerdown", handlePointerDown, { passive: true });
-    return () => canvas.removeEventListener("pointerdown", handlePointerDown);
-  }, []);
-
-  const levelBadge = useMemo(() => {
-    const i = levelIndex(level);
-    if (i === 0) return "A1";
-    if (i === 1) return "A2";
-    return "B1";
-  }, [level]);
-
-  const streak = streakRef.current;
+    return () =>
+      canvas.removeEventListener("pointerdown", handlePointerDown as any);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [soundOn, classMode]);
 
   return (
     <main className="min-h-screen bg-slate-50 text-slate-900">
@@ -765,8 +660,10 @@ export default function WordMeaningBalloonPage() {
               A1–A2–B1 Mixed • 100 Questions • Tap the correct balloon
             </p>
             <p className="text-slate-500 text-sm mt-1">
-              Assets needed: <code className="px-1 py-0.5 bg-white border rounded">/public/sprites/balloons_sheet.png</code> and{" "}
-              <code className="px-1 py-0.5 bg-white border rounded">/public/sprites/pop.png</code>
+              (Optional) Sprites:{" "}
+              <code className="px-1 py-0.5 bg-white border rounded">
+                /public/sprites/balloons_sheet.png
+              </code>
             </p>
           </div>
 
@@ -799,7 +696,9 @@ export default function WordMeaningBalloonPage() {
             </div>
 
             <div className="text-xs font-bold text-slate-500">
-              Combo: <span className="text-slate-800">{streakRef.current}</span> (bling at 5,10,15…)
+              Combo:{" "}
+              <span className="text-slate-800">{streakRef.current}</span> (bling
+              at 5,10,15…)
             </div>
           </div>
         </div>
@@ -807,52 +706,35 @@ export default function WordMeaningBalloonPage() {
         <div
           ref={wrapRef}
           className="relative rounded-2xl overflow-hidden border bg-white shadow-sm"
+          style={{ height: 520 }}
         >
           <canvas
             ref={canvasRef}
             className="block w-full select-none touch-none"
           />
 
-          {/* Overlay: not ready */}
-          {!assetsReady && (
-            <div className="absolute inset-0 bg-white/80 flex items-center justify-center">
-              <div className="text-center p-6">
-                <div className="text-2xl font-black mb-2">Loading assets…</div>
-                <div className="text-slate-600 font-semibold">
-                  Put your images in <code className="px-1 py-0.5 bg-white border rounded">public/sprites</code>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {/* Overlay: start */}
-          {!running && timeLeft > 0 && assetsReady && (
+          {!running && timeLeft > 0 && (
             <div className="absolute inset-0 bg-black/30 flex items-center justify-center p-4">
               <div className="bg-white rounded-2xl p-6 md:p-8 text-center max-w-md w-full shadow-xl">
-                <h2 className="text-2xl md:text-3xl font-black mb-2">Ready?</h2>
+                <h2 className="text-2xl md:text-3xl font-black mb-2">
+                  Ready?
+                </h2>
                 <p className="text-slate-600 font-semibold mb-6">
                   Tap the correct word balloon. Correct answers add +1s.
                 </p>
 
                 <div className="grid grid-cols-1 gap-3">
                   <button
-                    disabled={!assetsReady}
                     onClick={start}
-                    className="px-6 py-3 bg-black text-white rounded-xl font-black text-lg hover:bg-slate-900 disabled:opacity-50"
+                    className="px-6 py-3 bg-black text-white rounded-xl font-black text-lg hover:bg-slate-900"
                   >
                     START
                   </button>
+
                   <button
                     onClick={() => {
-                      // small “prime” so mobile enables sound
-                      try {
-                        if (!audioCtxRef.current) {
-                          audioCtxRef.current = new (window.AudioContext || (window as any).webkitAudioContext)();
-                        } else if (audioCtxRef.current.state === "suspended") {
-                          audioCtxRef.current.resume().catch(() => {});
-                        }
-                        playTone("bling", 1);
-                      } catch {}
+                      ensureAudio();
+                      playTone("bling", 1);
                     }}
                     className="px-6 py-3 bg-white border rounded-xl font-black hover:bg-slate-50"
                   >
@@ -861,13 +743,13 @@ export default function WordMeaningBalloonPage() {
                 </div>
 
                 <div className="mt-4 text-xs text-slate-500 font-semibold">
-                  Auto level adjusts every 5 answers (4+ correct → level up, 2+ wrong → level down)
+                  Auto level adjusts every 5 answers (4+ correct → level up, 2+
+                  wrong → level down)
                 </div>
               </div>
             </div>
           )}
 
-          {/* Overlay: game over */}
           {timeLeft <= 0 && (
             <div className="absolute inset-0 bg-black/50 flex items-center justify-center p-4">
               <div className="bg-white rounded-2xl p-8 text-center max-w-md w-full shadow-xl">
@@ -900,39 +782,10 @@ export default function WordMeaningBalloonPage() {
         </div>
 
         <div className="mt-4 text-sm text-slate-600 font-semibold">
-          ✅ No synonyms • ✅ English-only questions • ✅ Mobile-friendly taps • ✅ Sound system (correct/wrong/bling) • ✅ Frame-animated balloons
+          ✅ No synonyms • ✅ English-only • ✅ Mobile-friendly taps • ✅ WebAudio
+          sounds • ✅ Visible prompt on canvas
         </div>
       </div>
     </main>
   );
-}
-
-// ===============
-// Text wrapping helper for canvas
-// ===============
-function wrapText(
-  ctx: CanvasRenderingContext2D,
-  text: string,
-  x: number,
-  y: number,
-  maxWidth: number,
-  lineHeight: number
-) {
-  const words = text.split(" ");
-  let line = "";
-  let yy = y;
-
-  for (let n = 0; n < words.length; n++) {
-    const testLine = line + words[n] + " ";
-    const metrics = ctx.measureText(testLine);
-    const testWidth = metrics.width;
-    if (testWidth > maxWidth && n > 0) {
-      ctx.fillText(line.trim(), x, yy);
-      line = words[n] + " ";
-      yy += lineHeight;
-    } else {
-      line = testLine;
-    }
-  }
-  ctx.fillText(line.trim(), x, yy);
 }
