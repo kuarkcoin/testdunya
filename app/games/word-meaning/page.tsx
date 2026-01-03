@@ -149,7 +149,26 @@ export default function WordMeaningGameV3() {
   const audioCtxRef = useRef<AudioContext | null>(null);
   const masterGainRef = useRef<GainNode | null>(null);
   const windGainRef = useRef<GainNode | null>(null);
+// --- HELPER FUNCTIONS ---
+// Seviyeleri sayısal bir değere dönüştürür (A1=0, A2=1, B1=2)
+function levelIndex(l: Level): number { 
+  return l === "A1" ? 0 : l === "A2" ? 1 : 2; 
+}
 
+// Diziyi karıştırır
+function shuffle<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+// Diziden rastgele bir öğe seçer
+function pickOne<T>(arr: T[]): T { 
+  return arr[Math.floor(Math.random() * arr.length)]; 
+}
   // --- UI STATES ---
   const [running, setRunning] = useState(false);
   const [score, setScore] = useState(0);
