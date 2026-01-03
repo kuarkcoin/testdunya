@@ -213,7 +213,6 @@ export default function WordMeaningBalloonPage() {
   const timeLeftRef = useRef(60);
   const runningRef = useRef(false);
   const streakRef = useRef(0);
-  const uiTimerAccRef = useRef(0);
 
   // Level async bug fix
   const levelRef = useRef<Level>("A1");
