@@ -2,7 +2,7 @@ import { SubjectData } from "./types";
 
 export const ingilizceData: SubjectData = {
   term1: {
-     Test1: [
+     test1: [
   // --- GÖRSEL ODAKLI SORULAR ---
   {
     id: "e5-1-t1-img-01",
