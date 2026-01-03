@@ -173,7 +173,7 @@ function pickOne<T>(arr: T[]): T {
   const [running, setRunning] = useState(false);
   const [score, setScore] = useState(0);
   const [level, setLevel] = useState<Level>("A1");
-  const [timeLeft, setTimeLeft] = useState(60);
+  const [timeLeft, setTimeLeft] = useState(180);
 
   // --- INIT AUDIO ---
   function initAudio() {
@@ -384,7 +384,7 @@ function pickOne<T>(arr: T[]): T {
   function start() {
     initAudio();
     scoreRef.current = 0; setScore(0);
-    timeLeftRef.current = 60; setTimeLeft(60);
+    timeLeftRef.current = 180; setTimeLeft(180);
     streakRef.current = 0;
     setRunning(true); runningRef.current = true;
     makeBalloons();
