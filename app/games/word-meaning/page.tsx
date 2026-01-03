@@ -503,21 +503,25 @@ export default function WordMeaningBalloonPage() {
     }
   }
 
-  function update(dt: number) {
-    // countdown time
-    if (runningRef.current) {
-      const t = timeLeftRef.current - dt;
-      const nt = Math.max(0, t);
-      if (Math.floor(nt) !== Math.floor(timeLeftRef.current)) {
-        // update state about once per second-ish
-        setTimeLeft((prev) => Math.max(0, prev - 1));
-      }
-      timeLeftRef.current = nt;
-      if (nt <= 0) {
-        endGame();
-        return;
-      }
+ function update(dt: number) {
+  // 1) TIMER: tek kaynak (ref)
+  if (runningRef.current) {
+    const nt = Math.max(0, timeLeftRef.current - dt);
+    timeLeftRef.current = nt;
+
+    // sadece UI için state’i senkronla (her frame değil)
+    // 10 fps yeterli: 0.1sn çözünürlük
+    uiTimerAccRef.current += dt;
+    if (uiTimerAccRef.current >= 0.1) {
+      uiTimerAccRef.current = 0;
+      setTimeLeft(nt); // artık prev-1 yok!
     }
+
+    if (nt <= 0) {
+      endGame();
+      return;
+    }
+  }
 
     const { w, h } = boundsRef.current;
 
