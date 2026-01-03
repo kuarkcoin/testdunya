@@ -199,7 +199,7 @@ export default function WordMeaningBalloonPage() {
   const wrapRef = useRef<HTMLDivElement | null>(null);
   const rafRef = useRef<number | null>(null);
   const lastTRef = useRef<number>(0);
-
+  const uiTimerAccRef = useRef(0);
   const boundsRef = useRef({ w: 800, h: 520 }); // CSS pixels
   const dprRef = useRef(1);
 
@@ -213,6 +213,7 @@ export default function WordMeaningBalloonPage() {
   const timeLeftRef = useRef(60);
   const runningRef = useRef(false);
   const streakRef = useRef(0);
+  const uiTimerAccRef = useRef(0);
 
   // Level async bug fix
   const levelRef = useRef<Level>("A1");
