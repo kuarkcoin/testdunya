@@ -1,34 +1,23 @@
 "use client";
-
 import React, { useEffect, useMemo, useRef, useState } from "react";
 
+// --- LEVEL & TYPES ---
 type Level = "A1" | "A2" | "B1";
-
-type QA = {
-  level: Level;
-  word: string;
-  def: string; // definition (not synonym)
-};
-
+type QA = { level: Level; word: string; def: string };
 type Balloon = {
   id: string;
-  x: number; // CSS px coordinates (not DPR)
+  x: number;
   y: number;
   r: number;
-  vy: number; // px/sec
+  vy: number;
   text: string;
   isCorrect: boolean;
   frame: number;
+  frameAcc: number; // Kare animasyonu için eklendi
 };
 
-function levelIndex(l: Level) {
-  return l === "A1" ? 0 : l === "A2" ? 1 : 2;
-}
-
-function clamp(n: number, a: number, b: number) {
-  return Math.max(a, Math.min(b, n));
-}
-
+// --- HELPER FUNCTIONS ---
+function levelIndex(l: Level) { return l === "A1" ? 0 : l === "A2" ? 1 : 2; }
 function shuffle<T>(arr: T[]) {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
@@ -37,14 +26,10 @@ function shuffle<T>(arr: T[]) {
   }
   return a;
 }
+function pickOne<T>(arr: T[]) { return arr[Math.floor(Math.random() * arr.length)]; }
 
-function pickOne<T>(arr: T[]) {
-  return arr[Math.floor(Math.random() * arr.length)];
-}
-
-// -------------------- 100 QUESTIONS (A1/A2/B1 MIXED) --------------------
+// --- WORD BANK (100 Questions) ---
 const BANK: QA[] = [
-  // A1 (34)
   { level: "A1", word: "apple", def: "a round fruit that can be red or green" },
   { level: "A1", word: "book", def: "a set of pages with words that you read" },
   { level: "A1", word: "chair", def: "a thing you sit on" },
@@ -79,8 +64,6 @@ const BANK: QA[] = [
   { level: "A1", word: "blue", def: "a color like the sky" },
   { level: "A1", word: "green", def: "a color like grass" },
   { level: "A1", word: "market", def: "a place where you buy food or things" },
-
-  // A2 (33)
   { level: "A2", word: "repair", def: "to fix something broken" },
   { level: "A2", word: "message", def: "a short text you send to someone" },
   { level: "A2", word: "travel", def: "to go to another place" },
@@ -114,8 +97,6 @@ const BANK: QA[] = [
   { level: "A2", word: "suddenly", def: "quickly and unexpectedly" },
   { level: "A2", word: "careful", def: "paying attention to avoid danger" },
   { level: "A2", word: "advice", def: "a suggestion about what you should do" },
-
-  // B1 (33)
   { level: "B1", word: "achieve", def: "to succeed in doing something you wanted" },
   { level: "B1", word: "imagine", def: "to form a picture in your mind" },
   { level: "B1", word: "increase", def: "to become bigger in number or amount" },
@@ -151,217 +132,135 @@ const BANK: QA[] = [
   { level: "B1", word: "evidence", def: "facts that show something is true" },
 ];
 
-// -------------------- PAGE --------------------
 export default function WordMeaningPage() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const wrapRef = useRef<HTMLDivElement | null>(null);
   const ctxRef = useRef<CanvasRenderingContext2D | null>(null);
-
-  // loop
   const rafRef = useRef<number | null>(null);
   const lastTRef = useRef<number>(0);
-
-  // timer refs (single source)
+  
   const timeLeftRef = useRef(60);
   const uiTimerAccRef = useRef(0);
   const runningRef = useRef(false);
-
-  // gameplay refs
   const balloonsRef = useRef<Balloon[]>([]);
-  const questionRef = useRef<{ prompt: string; correctWord: string } | null>(
-    null
-  );
-
-  // level tracking (avoid async state bug)
+  const questionRef = useRef<{ prompt: string; correctWord: string } | null>(null);
+  
   const levelRef = useRef<Level>("A1");
   const correctWindowRef = useRef(0);
   const wrongWindowRef = useRef(0);
   const streakRef = useRef(0);
   const answersRef = useRef(0);
-
-  // optional sprites
   const sheetRef = useRef<HTMLImageElement | null>(null);
 
-  // React UI state
   const [running, setRunning] = useState(false);
   const [timeLeft, setTimeLeft] = useState(60);
   const [score, setScore] = useState(0);
   const [level, setLevel] = useState<Level>("A1");
   const [soundOn, setSoundOn] = useState(true);
   const [classMode, setClassMode] = useState(false);
-
-  // Audio (no files)
   const audioCtxRef = useRef<AudioContext | null>(null);
-
-  // canvas sizing
   const sizeRef = useRef({ w: 900, h: 520, dpr: 1 });
-
-  const levelBadge = useMemo(() => level, [level]);
 
   function ensureAudio() {
     if (!soundOn) return null;
     try {
       if (!audioCtxRef.current) {
-        audioCtxRef.current = new (window.AudioContext ||
-          (window as any).webkitAudioContext)();
+        audioCtxRef.current = new (window.AudioContext || (window as any).webkitAudioContext)();
       }
-      if (audioCtxRef.current.state === "suspended") {
-        audioCtxRef.current.resume().catch(() => {});
-      }
+      if (audioCtxRef.current.state === "suspended") audioCtxRef.current.resume();
       return audioCtxRef.current;
-    } catch {
-      return null;
-    }
+    } catch { return null; }
   }
 
   function playTone(kind: "correct" | "wrong" | "bling", intensity = 1) {
-    if (!soundOn) return;
-    if (classMode) return; // silent for classroom
+    if (!soundOn || classMode) return;
     const ac = ensureAudio();
     if (!ac) return;
-
     const now = ac.currentTime;
     const o = ac.createOscillator();
     const g = ac.createGain();
-
-    const base =
-      kind === "correct" ? 660 : kind === "wrong" ? 180 : 980;
-    const dur = kind === "bling" ? 0.10 : 0.12;
-
+    const base = kind === "correct" ? 660 : kind === "wrong" ? 180 : 980;
+    const dur = kind === "bling" ? 0.15 : 0.12;
     o.type = kind === "wrong" ? "square" : "sine";
     o.frequency.setValueAtTime(base, now);
-    o.frequency.exponentialRampToValueAtTime(
-      base * (kind === "wrong" ? 0.7 : 1.3),
-      now + dur
-    );
-
+    o.frequency.exponentialRampToValueAtTime(base * (kind === "wrong" ? 0.7 : 1.3), now + dur);
     g.gain.setValueAtTime(0.0001, now);
     g.gain.exponentialRampToValueAtTime(0.22 * intensity, now + 0.01);
     g.gain.exponentialRampToValueAtTime(0.0001, now + dur);
-
     o.connect(g);
     g.connect(ac.destination);
     o.start(now);
     o.stop(now + dur + 0.02);
   }
 
-  function primeSprites() {
-    // optional sprite sheet (5x2 = 10 frames)
-    const img = new Image();
-    img.src = "/sprites/balloons_sheet.png";
-    img.onload = () => (sheetRef.current = img);
-    img.onerror = () => (sheetRef.current = null);
-  }
-
   function resizeCanvas() {
     const wrap = wrapRef.current;
     const canvas = canvasRef.current;
     if (!wrap || !canvas) return;
-
     const rect = wrap.getBoundingClientRect();
     const wCss = Math.max(320, Math.floor(rect.width));
-    const hCss = Math.max(420, Math.floor(rect.height || 520));
+    const hCss = 520;
     const dpr = Math.max(1, Math.min(2.5, window.devicePixelRatio || 1));
-
-    sizeRef.current = { w: wCss, h: 520, dpr }; // fixed height for consistent gameplay
-
+    sizeRef.current = { w: wCss, h: hCss, dpr };
     canvas.width = Math.floor(wCss * dpr);
-    canvas.height = Math.floor(520 * dpr);
+    canvas.height = Math.floor(hCss * dpr);
     canvas.style.width = `${wCss}px`;
-    canvas.style.height = `520px`;
-
+    canvas.style.height = `${hCss}px`;
     const ctx = canvas.getContext("2d");
-    if (!ctx) return;
-    ctxRef.current = ctx;
-
-    // transform: draw in CSS px coordinates
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    if (ctx) ctxRef.current = ctx;
   }
 
   function makeQuestion(lvl: Level) {
     const li = levelIndex(lvl);
-
-    // Mixed: mostly current level, sometimes neighbor levels
-    const pool = BANK.filter((q) => {
-      const qi = levelIndex(q.level);
-      if (qi === li) return true;
-      // sprinkle neighbors
-      if (Math.abs(qi - li) === 1) return Math.random() < 0.25;
-      return Math.random() < 0.08;
-    });
-
+    let pool = BANK.filter((q) => levelIndex(q.level) === li);
+    if (pool.length === 0) pool = BANK;
     const correct = pickOne(pool);
-
     const wrongPool = BANK.filter((q) => q.word !== correct.word);
     const wrongs = shuffle(wrongPool).slice(0, 3).map((q) => q.word);
-
     const options = shuffle([correct.word, ...wrongs]);
-
-    // prompt is definition (NOT synonym)
-    questionRef.current = {
-      prompt: `Definition: ${correct.def}`,
-      correctWord: correct.word,
-    };
-
-    return options.map((t) => ({
-      text: t,
-      isCorrect: t === correct.word,
-    }));
+    questionRef.current = { prompt: `Definition: ${correct.def}`, correctWord: correct.word };
+    return options.map((t) => ({ text: t, isCorrect: t === correct.word }));
   }
 
   function makeBalloons() {
     const { w, h } = sizeRef.current;
-    const lvl = levelRef.current;
-
-    const opts = makeQuestion(lvl);
+    const opts = makeQuestion(levelRef.current);
     const count = 4;
-
-    const baseY = h + 80;
-    const xs = shuffle(
-      Array.from({ length: count }, (_, i) => (w / (count + 1)) * (i + 1))
-    );
-
-    const balloons: Balloon[] = [];
-    for (let i = 0; i < count; i++) {
-      const r = 56 + Math.random() * 20; // mobile-friendly
-      balloons.push({
-        id: `${Date.now()}_${i}_${Math.random().toString(16).slice(2)}`,
-        x: xs[i] + (Math.random() * 30 - 15),
-        y: baseY + i * 40,
-        r,
-        vy: 120 + Math.random() * 60, // px/sec
-        text: opts[i].text,
-        isCorrect: opts[i].isCorrect,
-        frame: Math.floor(Math.random() * 10),
-      });
-    }
-    balloonsRef.current = balloons;
+    const xs = shuffle(Array.from({ length: count }, (_, i) => (w / (count + 1)) * (i + 1)));
+    balloonsRef.current = opts.map((opt, i) => ({
+      id: `${Date.now()}_${i}`,
+      x: xs[i],
+      y: h + 100 + i * 40,
+      r: 56 + Math.random() * 15,
+      vy: 110 + Math.random() * 50,
+      text: opt.text,
+      isCorrect: opt.isCorrect,
+      frame: Math.floor(Math.random() * 10),
+      frameAcc: 0
+    }));
   }
 
+  // --- DÜZELTME 2: Play Again & Start logic ---
   function start() {
-    // prime audio on user gesture
     ensureAudio();
     playTone("bling", 0.8);
-
     setScore(0);
     setLevel("A1");
     levelRef.current = "A1";
-
     streakRef.current = 0;
     correctWindowRef.current = 0;
     wrongWindowRef.current = 0;
     answersRef.current = 0;
-
     setTimeLeft(60);
     timeLeftRef.current = 60;
     uiTimerAccRef.current = 0;
-
+    
+    // Önce state'i setle, sonra loop'u başlat
     setRunning(true);
     runningRef.current = true;
-
+    
     resizeCanvas();
     makeBalloons();
-
     lastTRef.current = performance.now();
     if (rafRef.current) cancelAnimationFrame(rafRef.current);
     rafRef.current = requestAnimationFrame(loop);
@@ -375,415 +274,201 @@ export default function WordMeaningPage() {
   function adjustLevelAfterAnswer(isCorrect: boolean) {
     if (isCorrect) correctWindowRef.current += 1;
     else wrongWindowRef.current += 1;
-
-    // every 5 answers, adjust
     answersRef.current += 1;
     if (answersRef.current % 5 !== 0) return;
 
     let lvl = levelRef.current;
     const li = levelIndex(lvl);
+    if (correctWindowRef.current >= 4 && li < 2) lvl = li === 0 ? "A2" : "B1";
+    else if (wrongWindowRef.current >= 2 && li > 0) lvl = li === 2 ? "A2" : "A1";
 
-    const c = correctWindowRef.current;
-    const w = wrongWindowRef.current;
-
-    // reset window
     correctWindowRef.current = 0;
     wrongWindowRef.current = 0;
-
-    if (c >= 4 && li < 2) {
-      lvl = li === 0 ? "A2" : "B1";
-    } else if (w >= 2 && li > 0) {
-      lvl = li === 2 ? "A2" : "A1";
-    }
-
     if (lvl !== levelRef.current) {
       levelRef.current = lvl;
       setLevel(lvl);
     }
   }
 
+  // --- DÜZELTME 1: Yanlış Cevapta Tüm Balonları Temizle ---
   function onHitBalloon(b: Balloon) {
-    const q = questionRef.current;
-    if (!q) return;
-
     if (b.isCorrect) {
       setScore((s) => s + 10);
       streakRef.current += 1;
-
-      // small time reward
       timeLeftRef.current = Math.min(120, timeLeftRef.current + 1);
-
       playTone("correct", 1);
-
-      // combo bling at 5,10,15...
-      if (streakRef.current > 0 && streakRef.current % 5 === 0) {
-        playTone("bling", 1.3);
-      }
-
+      if (streakRef.current % 5 === 0) playTone("bling", 1.2);
       adjustLevelAfterAnswer(true);
-      // new round
-      makeBalloons();
+      makeBalloons(); // Yeni soru
     } else {
-      setScore((s) => Math.max(0, s - 3));
+      setScore((s) => Math.max(0, s - 5));
       streakRef.current = 0;
-
-      // time penalty
-      timeLeftRef.current = Math.max(0, timeLeftRef.current - 2);
-
+      timeLeftRef.current = Math.max(0, timeLeftRef.current - 3);
       playTone("wrong", 1);
       adjustLevelAfterAnswer(false);
-
-      // remove only the tapped balloon (keep others)
-      balloonsRef.current = balloonsRef.current.filter((x) => x.id !== b.id);
-      if (balloonsRef.current.length === 0) makeBalloons();
+      // Yanlışta her şeyi temizle ve yeni soruya geç (Cezalandırıcı Mekanik)
+      makeBalloons(); 
     }
   }
 
+  // --- DÜZELTME 3: Balloon Regeneration ---
   function update(dt: number) {
     if (!runningRef.current) return;
-
-    // TIMER — single source
     const nt = Math.max(0, timeLeftRef.current - dt);
     timeLeftRef.current = nt;
-
-    // UI sync (10 fps)
     uiTimerAccRef.current += dt;
     if (uiTimerAccRef.current >= 0.1) {
       uiTimerAccRef.current = 0;
       setTimeLeft(nt);
     }
+    if (nt <= 0) { endGame(); return; }
 
-    if (nt <= 0) {
-      endGame();
-      return;
-    }
-
-    // balloons move (CSS px physics)
-    const { h } = sizeRef.current;
     const bs = balloonsRef.current;
     for (const b of bs) {
       b.y -= b.vy * dt;
-      // animate frame slowly
-      b.frame = (b.frame + 1) % 10;
+      b.frameAcc += dt * 8; // Animasyon hızı kontrolü
+      b.frame = Math.floor(b.frameAcc) % 10;
     }
 
-    // recycle if all left
-    const alive = bs.filter((b) => b.y + b.r > -40);
-    balloonsRef.current = alive.length ? alive : bs;
-    if (!alive.length) makeBalloons();
-  }
-
-  function drawBalloon(
-    ctx: CanvasRenderingContext2D,
-    b: Balloon,
-    sheet: HTMLImageElement | null
-  ) {
-    // sprite or fallback
-    if (sheet && sheet.width > 0 && sheet.height > 0) {
-      const cols = 5;
-      const rows = 2;
-      const cellW = sheet.width / cols;
-      const cellH = sheet.height / rows;
-
-      const f = b.frame % 10;
-      const col = f % cols;
-      const row = (f / cols) | 0;
-
-      const sx = col * cellW;
-      const sy = row * cellH;
-
-      const s = b.r * 2.25;
-      ctx.drawImage(
-        sheet,
-        sx,
-        sy,
-        cellW,
-        cellH,
-        b.x - s / 2,
-        b.y - s / 2,
-        s,
-        s
-      );
+    // Temizleme ve Yenileme
+    const alive = bs.filter((b) => b.y + b.r > -50);
+    if (alive.length === 0) {
+      makeBalloons();
     } else {
-      ctx.beginPath();
-      ctx.arc(b.x, b.y, b.r, 0, Math.PI * 2);
-      ctx.fillStyle = b.isCorrect
-        ? "rgba(34,197,94,0.85)"
-        : "rgba(59,130,246,0.75)";
-      ctx.fill();
-      ctx.lineWidth = 3;
-      ctx.strokeStyle = "rgba(0,0,0,0.25)";
-      ctx.stroke();
+      balloonsRef.current = alive;
     }
-
-    // TEXT (very visible)
-    const fontSize = Math.max(18, b.r * 0.55);
-    ctx.save();
-    ctx.globalAlpha = 1;
-    ctx.font = `900 ${Math.round(fontSize)}px ui-sans-serif, system-ui`;
-    ctx.textAlign = "center";
-    ctx.textBaseline = "middle";
-
-    // shadow + stroke
-    ctx.shadowColor = "rgba(0,0,0,0.35)";
-    ctx.shadowBlur = 6;
-    ctx.shadowOffsetY = 2;
-
-    ctx.lineWidth = 8;
-    ctx.strokeStyle = "rgba(0,0,0,0.78)";
-    ctx.strokeText(b.text, b.x, b.y);
-
-    ctx.fillStyle = "rgba(255,255,255,0.98)";
-    ctx.fillText(b.text, b.x, b.y);
-
-    ctx.restore();
   }
 
   function draw() {
     const ctx = ctxRef.current;
     if (!ctx) return;
+    const { w, h, dpr } = sizeRef.current;
 
-    const { w, h } = sizeRef.current;
-
-    // clear in CSS px space (because transform already applied)
-    ctx.save();
-    ctx.setTransform(sizeRef.current.dpr, 0, 0, sizeRef.current.dpr, 0, 0);
-    ctx.clearRect(0, 0, w, 520);
-    ctx.restore();
-
-    // background
-    ctx.save();
-    ctx.globalAlpha = 1;
+    // --- DÜZELTME 4: Güvenli Canvas Clear ---
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.clearRect(0, 0, canvasRef.current!.width, canvasRef.current!.height);
+    
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     ctx.fillStyle = "#0b1220";
-    ctx.fillRect(0, 0, w, 520);
-    ctx.restore();
+    ctx.fillRect(0, 0, w, h);
 
-    // balloons
-    const sheet = sheetRef.current;
+    // Balonlar
     for (const b of balloonsRef.current) {
-      drawBalloon(ctx, b, sheet);
-    }
+      ctx.beginPath();
+      ctx.arc(b.x, b.y, b.r, 0, Math.PI * 2);
+      ctx.fillStyle = b.isCorrect ? "rgba(34,197,94,0.9)" : "rgba(59,130,246,0.8)";
+      ctx.fill();
+      ctx.lineWidth = 3;
+      ctx.strokeStyle = "white";
+      ctx.stroke();
 
-    // ✅ PROMPT (SORU) — ALWAYS ON TOP
-    const prompt = questionRef.current?.prompt ?? "";
-    if (prompt) {
+      // Metin
       ctx.save();
-      ctx.globalAlpha = 1;
+      ctx.font = `bold ${Math.max(16, b.r * 0.45)}px sans-serif`;
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
-      ctx.font = `900 22px ui-sans-serif, system-ui`;
-
-      ctx.lineWidth = 6;
-      ctx.strokeStyle = "rgba(0,0,0,0.9)";
-      ctx.fillStyle = "rgba(255,255,255,0.98)";
-
-      const px = w / 2;
-      const py = 44;
-
-      ctx.strokeText(prompt, px, py);
-      ctx.fillText(prompt, px, py);
+      ctx.fillStyle = "white";
+      ctx.shadowColor = "black";
+      ctx.shadowBlur = 4;
+      ctx.fillText(b.text, b.x, b.y);
       ctx.restore();
     }
 
-    // small HUD inside canvas (optional)
-    ctx.save();
-    ctx.globalAlpha = 0.95;
-    ctx.font = `800 14px ui-sans-serif, system-ui`;
-    ctx.fillStyle = "rgba(255,255,255,0.9)";
-    ctx.fillText(`Combo: ${streakRef.current}`, 16, 510);
-    ctx.restore();
+    // Prompt (Soru)
+    const prompt = questionRef.current?.prompt ?? "";
+    if (prompt) {
+      ctx.save();
+      ctx.font = "bold 20px sans-serif";
+      ctx.textAlign = "center";
+      ctx.fillStyle = "white";
+      ctx.shadowColor = "black";
+      ctx.shadowBlur = 10;
+      ctx.fillText(prompt, w / 2, 40);
+      ctx.restore();
+    }
   }
 
   function loop(t: number) {
     const dt = Math.min(0.05, (t - lastTRef.current) / 1000);
     lastTRef.current = t;
-
     update(dt);
     draw();
-
-    if (runningRef.current) {
-      rafRef.current = requestAnimationFrame(loop);
-    }
+    if (runningRef.current) rafRef.current = requestAnimationFrame(loop);
   }
 
-  // resize + sprites
+  // --- DÜZELTME 5: Seviye Değişince Soru Yenileme ---
+  useEffect(() => {
+    if (runningRef.current) makeBalloons();
+  }, [level]);
+
   useEffect(() => {
     resizeCanvas();
-    primeSprites();
     const onR = () => resizeCanvas();
     window.addEventListener("resize", onR);
     return () => window.removeEventListener("resize", onR);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // pointer/touch
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
-
-    function handlePointerDown(e: PointerEvent) {
+    const handlePointerDown = (e: PointerEvent) => {
       if (!runningRef.current) return;
-      if (timeLeftRef.current <= 0) return;
-
       const rect = canvas.getBoundingClientRect();
-      const x = e.clientX - rect.left; // CSS px (we draw in CSS px)
-      const y = e.clientY - rect.top;
-
-      let best: { b: Balloon; d2: number } | null = null;
-      for (const b of balloonsRef.current) {
-        const dx = x - b.x;
-        const dy = y - b.y;
-        const hitR = b.r * 1.15;
-        const d2 = dx * dx + dy * dy;
-        if (d2 <= hitR * hitR) {
-          if (!best || d2 < best.d2) best = { b, d2 };
+      const px = e.clientX - rect.left;
+      const py = e.clientY - rect.top;
+      for (const b of [...balloonsRef.current].reverse()) {
+        const dx = px - b.x;
+        const dy = py - b.y;
+        if (dx * dx + dy * dy <= (b.r * 1.2) ** 2) {
+          onHitBalloon(b);
+          break;
         }
       }
-      if (best) onHitBalloon(best.b);
-    }
-
-    canvas.addEventListener("pointerdown", handlePointerDown, { passive: true });
-    return () =>
-      canvas.removeEventListener("pointerdown", handlePointerDown as any);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [soundOn, classMode]);
+    };
+    canvas.addEventListener("pointerdown", handlePointerDown);
+    return () => canvas.removeEventListener("pointerdown", handlePointerDown);
+  }, [level]);
 
   return (
-    <main className="min-h-screen bg-slate-50 text-slate-900">
-      <div className="max-w-5xl mx-auto px-3 py-8">
-        <div className="mb-4 flex items-start justify-between gap-3">
+    <main className="min-h-screen bg-slate-100 p-4 font-sans">
+      <div className="max-w-4xl mx-auto">
+        <div className="flex justify-between items-center mb-4 bg-white p-4 rounded-2xl shadow-sm">
           <div>
-            <h1 className="text-2xl md:text-3xl font-black tracking-tight">
-              🎈 Word Meaning Pop
-            </h1>
-            <p className="text-slate-600 font-semibold">
-              A1–A2–B1 Mixed • 100 Questions • Tap the correct balloon
-            </p>
-            <p className="text-slate-500 text-sm mt-1">
-              (Optional) Sprites:{" "}
-              <code className="px-1 py-0.5 bg-white border rounded">
-                /public/sprites/balloons_sheet.png
-              </code>
-            </p>
+            <h1 className="text-xl font-black">🎈 WordMeaningPop</h1>
+            <div className="text-xs font-bold text-slate-500 uppercase tracking-widest">EnglishMeter.net</div>
           </div>
-
-          <div className="flex flex-col items-end gap-2">
-            <div className="flex gap-2">
-              <button
-                onClick={() => setSoundOn((v) => !v)}
-                className="px-3 py-2 rounded-xl bg-white border shadow-sm font-bold text-sm hover:bg-slate-50"
-              >
-                {soundOn ? "🔊 Sound: ON" : "🔇 Sound: OFF"}
-              </button>
-              <button
-                onClick={() => setClassMode((v) => !v)}
-                className="px-3 py-2 rounded-xl bg-white border shadow-sm font-bold text-sm hover:bg-slate-50"
-              >
-                {classMode ? "🏫 Class Mode: ON" : "🎮 Class Mode: OFF"}
-              </button>
-            </div>
-
-            <div className="flex gap-2">
-              <div className="px-3 py-2 rounded-xl bg-white border shadow-sm text-sm font-black">
-                ⏱️ {Math.ceil(timeLeft)}s
-              </div>
-              <div className="px-3 py-2 rounded-xl bg-white border shadow-sm text-sm font-black">
-                ⭐ {score}
-              </div>
-              <div className="px-3 py-2 rounded-xl bg-white border shadow-sm text-sm font-black">
-                🎯 Level {levelBadge}
-              </div>
-            </div>
-
-            <div className="text-xs font-bold text-slate-500">
-              Combo:{" "}
-              <span className="text-slate-800">{streakRef.current}</span> (bling
-              at 5,10,15…)
-            </div>
+          <div className="flex gap-4 font-bold text-sm">
+            <div className="bg-blue-50 px-3 py-1 rounded-lg">⭐ {score}</div>
+            <div className="bg-green-50 px-3 py-1 rounded-lg">🎯 {level}</div>
+            <div className={`px-3 py-1 rounded-lg ${timeLeft < 10 ? 'bg-red-50 text-red-600 animate-pulse' : 'bg-slate-50'}`}>⏱️ {Math.ceil(timeLeft)}s</div>
           </div>
         </div>
 
-        <div
-          ref={wrapRef}
-          className="relative rounded-2xl overflow-hidden border bg-white shadow-sm"
-          style={{ height: 520 }}
-        >
-          <canvas
-            ref={canvasRef}
-            className="block w-full select-none touch-none"
-          />
-
-          {!running && timeLeft > 0 && (
-            <div className="absolute inset-0 bg-black/30 flex items-center justify-center p-4">
-              <div className="bg-white rounded-2xl p-6 md:p-8 text-center max-w-md w-full shadow-xl">
-                <h2 className="text-2xl md:text-3xl font-black mb-2">
-                  Ready?
-                </h2>
-                <p className="text-slate-600 font-semibold mb-6">
-                  Tap the correct word balloon. Correct answers add +1s.
-                </p>
-
-                <div className="grid grid-cols-1 gap-3">
-                  <button
-                    onClick={start}
-                    className="px-6 py-3 bg-black text-white rounded-xl font-black text-lg hover:bg-slate-900"
-                  >
-                    START
+        <div ref={wrapRef} className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-900">
+          <canvas ref={canvasRef} className="block w-full touch-none" />
+          
+          {(!running || timeLeft <= 0) && (
+            <div className="absolute inset-0 flex items-center justify-center bg-black/60 backdrop-blur-sm p-6">
+              <div className="bg-white p-8 rounded-3xl text-center shadow-2xl max-w-sm w-full">
+                <h2 className="text-3xl font-black mb-2">{timeLeft <= 0 ? "Time's Up!" : "Ready?"}</h2>
+                {timeLeft <= 0 && <p className="text-4xl font-black text-blue-600 mb-6">{score} PTS</p>}
+                <button 
+                  onClick={start}
+                  className="w-full py-4 bg-blue-600 text-white rounded-2xl font-black text-xl hover:bg-blue-700 transition-transform active:scale-95 shadow-lg shadow-blue-200"
+                >
+                  {timeLeft <= 0 ? "PLAY AGAIN" : "START GAME"}
+                </button>
+                <div className="mt-4 flex justify-center gap-2">
+                  <button onClick={() => setSoundOn(!soundOn)} className="text-xs font-bold text-slate-400 border p-2 rounded-lg italic">
+                    {soundOn ? "🔊 Audio On" : "🔇 Audio Off"}
                   </button>
-
-                  <button
-                    onClick={() => {
-                      ensureAudio();
-                      playTone("bling", 1);
-                    }}
-                    className="px-6 py-3 bg-white border rounded-xl font-black hover:bg-slate-50"
-                  >
-                    🔔 Test Sound
-                  </button>
-                </div>
-
-                <div className="mt-4 text-xs text-slate-500 font-semibold">
-                  Auto level adjusts every 5 answers (4+ correct → level up, 2+
-                  wrong → level down)
-                </div>
-              </div>
-            </div>
-          )}
-
-          {timeLeft <= 0 && (
-            <div className="absolute inset-0 bg-black/50 flex items-center justify-center p-4">
-              <div className="bg-white rounded-2xl p-8 text-center max-w-md w-full shadow-xl">
-                <h2 className="text-3xl font-black mb-2">Time’s Up!</h2>
-                <p className="text-xl mb-6">
-                  Final Score: <span className="font-black">{score}</span>
-                </p>
-                <div className="flex gap-3 justify-center">
-                  <button
-                    onClick={() => {
-                      setTimeLeft(60);
-                      timeLeftRef.current = 60;
-                      setRunning(false);
-                      runningRef.current = false;
-                    }}
-                    className="px-6 py-3 bg-white border rounded-xl font-black hover:bg-slate-50"
-                  >
-                    Close
-                  </button>
-                  <button
-                    onClick={start}
-                    className="px-6 py-3 bg-black text-white rounded-xl font-black hover:bg-slate-900"
-                  >
-                    Play Again
+                  <button onClick={() => setClassMode(!classMode)} className="text-xs font-bold text-slate-400 border p-2 rounded-lg italic">
+                    {classMode ? "🏫 Class Mode" : "🎮 Game Mode"}
                   </button>
                 </div>
               </div>
             </div>
           )}
-        </div>
-
-        <div className="mt-4 text-sm text-slate-600 font-semibold">
-          ✅ No synonyms • ✅ English-only • ✅ Mobile-friendly taps • ✅ WebAudio
-          sounds • ✅ Visible prompt on canvas
         </div>
       </div>
     </main>
