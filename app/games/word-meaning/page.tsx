@@ -297,7 +297,7 @@ function pickOne<T>(arr: T[]): T {
     
     // Wind Sound Acc
     windSoundAccRef.current += dt;
-    if (windSoundAccRef.current > 1.2) { playWind(); windSoundAccRef.current = 0; }
+    if (windSoundAccRef.current > 1.2) { playHappyAmbient(); windSoundAccRef.current = 0; }
 
     timeLeftRef.current -= dt;
     if (timeLeftRef.current <= 0) { setRunning(false); runningRef.current = false; return; }
