@@ -216,7 +216,6 @@ export const fenData: SubjectData = {
           "Atmosferinin yok denecek kadar az olması",
           "Dünya'dan uzak olması",
           "Işık kaynağı olmaması",
-        ],
         correct: 1,
         explanation: "Atmosferin yokluğudur.",
       },
