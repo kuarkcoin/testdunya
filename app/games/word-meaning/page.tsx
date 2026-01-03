@@ -601,7 +601,28 @@ export default function WordMeaningBalloonPage() {
     for (const b of balloonsRef.current) {
       drawBalloon(ctx, b, sheet, cols, cellW, cellH);
     }
+   const prompt = questionRef.current?.prompt ?? "";
 
+  ctx.save();
+  ctx.globalAlpha = 1;
+  ctx.textAlign = "center";
+  ctx.textBaseline = "middle";
+
+  ctx.font = `900 ${Math.round(28 * dpr)}px ui-sans-serif, system-ui`;
+
+  ctx.lineWidth = Math.max(3, 7 * dpr);
+  ctx.strokeStyle = "rgba(0,0,0,0.85)";
+  ctx.fillStyle = "rgba(255,255,255,0.98)";
+
+  const px = W / 2;
+  const py = Math.round(54 * dpr);
+
+  if (prompt) {
+    ctx.strokeText(prompt, px, py);
+    ctx.fillText(prompt, px, py);
+  }
+  ctx.restore();
+}
     // pop FX
     const pop = popRef.current;
     if (pop) {
@@ -651,6 +672,7 @@ export default function WordMeaningBalloonPage() {
       ctx.fillStyle = b.isCorrect ? "rgba(34,197,94,0.85)" : "rgba(59,130,246,0.75)";
       ctx.fill();
     }
+    
 
     // text (VERY visible)
     const fontSize = Math.max(18, b.r * 0.62);
