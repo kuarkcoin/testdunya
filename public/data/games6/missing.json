@@ -7,7 +7,7 @@
       "sequence": ["🔴", "🔵", "🔴", "?"],
       "choices": ["🔴", "🔵", "🟢", "🟡"],
       "answer": "🔵",
-      "hint": "Renkler sırayla değişiyor."
+      "hint": "Kırmızı ve mavi sırayla."
     },
     {
       "id": "m002",
@@ -16,7 +16,7 @@
       "sequence": ["⭐", "⭐", "🌙", "⭐", "⭐", "?"],
       "choices": ["⭐", "🌙", "☀️", "🍀"],
       "answer": "🌙",
-      "hint": "İkisi bir, biri farklı."
+      "hint": "İki yıldız, bir ay."
     },
     {
       "id": "m003",
@@ -25,7 +25,7 @@
       "sequence": ["🍎", "🍌", "🍎", "🍌", "?"],
       "choices": ["🍎", "🍌", "🍇", "🍓"],
       "answer": "🍎",
-      "hint": "Sırayla gidiyor: elma, muz..."
+      "hint": "Elma-muz tekrarı."
     },
     {
       "id": "m004",
@@ -45,6 +45,7 @@
       "answer": "8",
       "hint": "+2 ekleniyor."
     },
+
     {
       "id": "m006",
       "title": "Kayıp Olanı Bul 6",
@@ -61,7 +62,7 @@
       "sequence": ["🐶", "🐱", "🐶", "🐱", "?"],
       "choices": ["🐶", "🐭", "🐱", "🐰"],
       "answer": "🐶",
-      "hint": "Köpek-kedi-köpek-kedi..."
+      "hint": "Köpek-kedi tekrarı."
     },
     {
       "id": "m008",
@@ -70,7 +71,7 @@
       "sequence": ["🔺", "🔻", "🔺", "?"],
       "choices": ["🔺", "🔻", "⬛", "⬜"],
       "answer": "🔻",
-      "hint": "Yukarı-aşağı tekrarı."
+      "hint": "Yukarı-aşağı."
     },
     {
       "id": "m009",
@@ -79,7 +80,7 @@
       "sequence": ["🟡", "🟡", "🟡", "🔴", "🟡", "🟡", "🟡", "?"],
       "choices": ["🔴", "🟡", "🟢", "🔵"],
       "answer": "🔴",
-      "hint": "Her 4. sırada kırmızı."
+      "hint": "Her 4. kırmızı."
     },
     {
       "id": "m010",
@@ -88,7 +89,7 @@
       "sequence": ["A", "B", "C", "?"],
       "choices": ["D", "E", "B", "A"],
       "answer": "D",
-      "hint": "Harfler sırayla."
+      "hint": "Harf sırası."
     },
 
     {
@@ -107,7 +108,7 @@
       "sequence": ["🌞", "🌧️", "🌞", "🌧️", "?"],
       "choices": ["🌞", "❄️", "🌧️", "🌈"],
       "answer": "🌞",
-      "hint": "Güneş-yağmur-güneş..."
+      "hint": "Güneş-yağmur."
     },
     {
       "id": "m013",
@@ -116,7 +117,7 @@
       "sequence": ["🧊", "🧊", "🔥", "🧊", "🧊", "?"],
       "choices": ["🔥", "🧊", "💧", "🌪️"],
       "answer": "🔥",
-      "hint": "İki buz, bir ateş."
+      "hint": "2 buz 1 ateş."
     },
     {
       "id": "m014",
@@ -134,8 +135,9 @@
       "sequence": ["👟", "👟", "🧦", "👟", "👟", "?"],
       "choices": ["🧦", "👟", "🧤", "👕"],
       "answer": "🧦",
-      "hint": "İki ayakkabı, bir çorap."
+      "hint": "2 ayakkabı 1 çorap."
     },
+
     {
       "id": "m016",
       "title": "Kayıp Olanı Bul 16",
@@ -143,7 +145,7 @@
       "sequence": ["🔵", "🔵", "🟢", "🔵", "🔵", "?"],
       "choices": ["🟢", "🔵", "🔴", "🟡"],
       "answer": "🟢",
-      "hint": "İki mavi, bir yeşil."
+      "hint": "2 mavi 1 yeşil."
     },
     {
       "id": "m017",
@@ -161,7 +163,7 @@
       "sequence": ["⬛", "⬜", "⬛", "⬜", "?"],
       "choices": ["⬛", "⬜", "🟥", "🟦"],
       "answer": "⬛",
-      "hint": "Siyah-beyaz tekrarı."
+      "hint": "Siyah-beyaz."
     },
     {
       "id": "m019",
@@ -170,7 +172,7 @@
       "sequence": ["🍉", "🍉", "🍓", "🍉", "🍉", "?"],
       "choices": ["🍓", "🍉", "🍌", "🍇"],
       "answer": "🍓",
-      "hint": "İki karpuz, bir çilek."
+      "hint": "2 karpuz 1 çilek."
     },
     {
       "id": "m020",
@@ -179,7 +181,7 @@
       "sequence": ["🟦", "🟥", "🟨", "🟦", "🟥", "?"],
       "choices": ["🟩", "🟨", "🟦", "🟥"],
       "answer": "🟨",
-      "hint": "Mavi-kırmızı-sarı tekrar ediyor."
+      "hint": "3 renk döngüsü."
     },
 
     {
@@ -198,7 +200,7 @@
       "sequence": ["👶", "🧒", "👦", "?"],
       "choices": ["👨", "👦", "🧒", "👶"],
       "answer": "👨",
-      "hint": "Büyüyor!"
+      "hint": "Büyüme sırası."
     },
     {
       "id": "m023",
@@ -207,7 +209,7 @@
       "sequence": ["🕐", "🕑", "🕒", "?"],
       "choices": ["🕓", "🕔", "🕒", "🕕"],
       "answer": "🕓",
-      "hint": "Saatler ilerliyor."
+      "hint": "Saat ilerliyor."
     },
     {
       "id": "m024",
@@ -225,99 +227,101 @@
       "sequence": ["🌲", "🌳", "🌲", "🌳", "?"],
       "choices": ["🌲", "🌵", "🌳", "🌴"],
       "answer": "🌲",
-      "hint": "İki ağaç türü sırayla."
+      "hint": "İki ağaç türü."
     },
+
     {
       "id": "m026",
       "title": "Kayıp Olanı Bul 26",
       "prompt": "Dizideki eksik olanı seç.",
-      "sequence": ["🟢", "🟡", "🔴", "🟢", "🟡", "?"],
-      "choices": ["🔴", "🟢", "🟡", "🔵"],
-      "answer": "🔴",
-      "hint": "Yeşil-sarı-kırmızı."
+      "sequence": ["2", "4", "3", "6", "4", "?"],
+      "choices": ["8", "6", "5", "7"],
+      "answer": "8",
+      "hint": "Biri +1, biri ×2."
     },
     {
       "id": "m027",
       "title": "Kayıp Olanı Bul 27",
       "prompt": "Dizideki eksik olanı seç.",
-      "sequence": ["2", "3", "2", "3", "?"],
-      "choices": ["2", "1", "4", "3"],
-      "answer": "2",
-      "hint": "2-3 tekrar ediyor."
+      "sequence": ["🧃", "🧃", "🥛", "🧃", "🥛", "?"],
+      "choices": ["🥛", "🧃", "🍵", "🫖"],
+      "answer": "🧃",
+      "hint": "A-A-B-A-B-A."
     },
     {
       "id": "m028",
       "title": "Kayıp Olanı Bul 28",
       "prompt": "Dizideki eksik olanı seç.",
-      "sequence": ["🧃", "🧃", "🥛", "🧃", "🧃", "?"],
-      "choices": ["🥛", "🧃", "🍵", "🫖"],
-      "answer": "🥛",
-      "hint": "İki meyve suyu, bir süt."
+      "sequence": ["🐣", "🐥", "🐔", "🐓", "?"],
+      "choices": ["🥚", "🐔", "🐓", "🦆"],
+      "answer": "🥚",
+      "hint": "Döngü tamamlanıyor."
     },
     {
       "id": "m029",
       "title": "Kayıp Olanı Bul 29",
       "prompt": "Dizideki eksik olanı seç.",
-      "sequence": ["🐣", "🐥", "🐔", "?"],
-      "choices": ["🐔", "🦆", "🐓", "🥚"],
-      "answer": "🐓",
-      "hint": "Büyüdü, horoz olabilir!"
+      "sequence": ["🧱", "🧱", "🎈", "🧱", "🧱", "🎈", "?"],
+      "choices": ["🎈", "🧱", "🧸", "⭐"],
+      "answer": "🧱",
+      "hint": "Her 3. farklı."
     },
     {
       "id": "m030",
       "title": "Kayıp Olanı Bul 30",
       "prompt": "Dizideki eksik olanı seç.",
-      "sequence": ["🧱", "🧱", "🧱", "🎈", "🧱", "🧱", "🧱", "?"],
-      "choices": ["🎈", "🧱", "🧸", "⭐"],
-      "answer": "🎈",
-      "hint": "Her 4. sırada balon."
+      "sequence": ["🍪", "🍪", "🍪", "🧁", "🍪", "🍪", "🍪", "?"],
+      "choices": ["🧁", "🍪", "🍰", "🍩"],
+      "answer": "🧁",
+      "hint": "Her 4. farklı."
     },
 
     {
       "id": "m031",
       "title": "Kayıp Olanı Bul 31",
       "prompt": "Dizideki eksik olanı seç.",
-      "sequence": ["🍪", "🍪", "🍪", "🧁", "🍪", "🍪", "🍪", "?"],
-      "choices": ["🧁", "🍪", "🍰", "🍩"],
-      "answer": "🧁",
-      "hint": "Her 4. sırada farklı tatlı."
+      "sequence": ["1", "2", "1", "2", "1", "?"],
+      "choices": ["2", "3", "1", "4"],
+      "answer": "2",
+      "hint": "1-2 döngüsü."
     },
     {
       "id": "m032",
       "title": "Kayıp Olanı Bul 32",
       "prompt": "Dizideki eksik olanı seç.",
-      "sequence": ["🐸", "🐸", "🐰", "🐸", "🐸", "?"],
-      "choices": ["🐰", "🐸", "🐱", "🐶"],
-      "answer": "🐰",
-      "hint": "İki kurbağa, bir tavşan."
+      "sequence": ["🟣", "🟣", "🟣", "🟠", "🟣", "🟣", "🟣", "?"],
+      "choices": ["🟠", "🟣", "🔵", "🟢"],
+      "answer": "🟠",
+      "hint": "Her 4. farklı."
     },
     {
       "id": "m033",
       "title": "Kayıp Olanı Bul 33",
       "prompt": "Dizideki eksik olanı seç.",
-      "sequence": ["🟣", "🟣", "🟣", "🟠", "🟣", "🟣", "🟣", "?"],
-      "choices": ["🟠", "🟣", "🔵", "🟢"],
-      "answer": "🟠",
-      "hint": "Her 4. sırada turuncu."
+      "sequence": ["🟥", "🟦", "🟩", "🟥", "🟦", "?"],
+      "choices": ["🟩", "🟥", "🟨", "🟦"],
+      "answer": "🟩",
+      "hint": "3 renk döngüsü."
     },
     {
       "id": "m034",
       "title": "Kayıp Olanı Bul 34",
       "prompt": "Dizideki eksik olanı seç.",
-      "sequence": ["1", "2", "1", "2", "1", "?"],
-      "choices": ["2", "3", "1", "4"],
-      "answer": "2",
-      "hint": "1-2 tekrarı."
+      "sequence": ["🔺", "🔺", "⬛", "🔺", "🔺", "?"],
+      "choices": ["⬛", "🔺", "⬜", "🔻"],
+      "answer": "⬛",
+      "hint": "2 şekil + 1 farklı."
     },
     {
       "id": "m035",
       "title": "Kayıp Olanı Bul 35",
       "prompt": "Dizideki eksik olanı seç.",
-      "sequence": ["🔺", "🔺", "⬛", "🔺", "🔺", "?"],
-      "choices": ["⬛", "🔺", "⬜", "🔻"],
-      "answer": "⬛",
-      "hint": "İki üçgen, bir kare."
+      "sequence": ["🍋", "🍋", "🍊", "🍋", "🍋", "?"],
+      "choices": ["🍊", "🍋", "🍎", "🍌"],
+      "answer": "🍊",
+      "hint": "2-1 meyve kuralı."
     },
+
     {
       "id": "m036",
       "title": "Kayıp Olanı Bul 36",
@@ -325,20 +329,11 @@
       "sequence": ["🧠", "📚", "🧠", "📚", "?"],
       "choices": ["📚", "🧠", "✏️", "🎨"],
       "answer": "🧠",
-      "hint": "Beyin-kitap tekrarı."
+      "hint": "Anlamlı tekrar."
     },
     {
       "id": "m037",
       "title": "Kayıp Olanı Bul 37",
-      "prompt": "Dizideki eksik olanı seç.",
-      "sequence": ["🟥", "🟦", "🟩", "🟥", "🟦", "?"],
-      "choices": ["🟩", "🟥", "🟨", "🟦"],
-      "answer": "🟩",
-      "hint": "Kırmızı-mavi-yeşil."
-    },
-    {
-      "id": "m038",
-      "title": "Kayıp Olanı Bul 38",
       "prompt": "Dizideki eksik olanı seç.",
       "sequence": ["🐢", "🐇", "🐢", "🐇", "?"],
       "choices": ["🐢", "🐌", "🐇", "🦊"],
@@ -346,22 +341,31 @@
       "hint": "Kaplumbağa-tavşan."
     },
     {
+      "id": "m038",
+      "title": "Kayıp Olanı Bul 38",
+      "prompt": "Dizideki eksik olanı seç.",
+      "sequence": ["🟦", "🟧", "🟦", "🟧", "?"],
+      "choices": ["🟧", "🟦", "🟪", "🟩"],
+      "answer": "🟦",
+      "hint": "A-B tekrar."
+    },
+    {
       "id": "m039",
       "title": "Kayıp Olanı Bul 39",
       "prompt": "Dizideki eksik olanı seç.",
-      "sequence": ["🍋", "🍋", "🍊", "🍋", "🍋", "?"],
-      "choices": ["🍊", "🍋", "🍎", "🍌"],
-      "answer": "🍊",
-      "hint": "İki limon, bir portakal."
+      "sequence": ["🐸", "🐸", "🐰", "🐸", "🐸", "?"],
+      "choices": ["🐰", "🐸", "🐱", "🐶"],
+      "answer": "🐰",
+      "hint": "2-1 hayvan."
     },
     {
       "id": "m040",
       "title": "Kayıp Olanı Bul 40",
       "prompt": "Dizideki eksik olanı seç.",
-      "sequence": ["🟦", "🟧", "🟦", "🟧", "?"],
-      "choices": ["🟧", "🟦", "🟪", "🟩"],
-      "answer": "🟦",
-      "hint": "Mavi-turuncu tekrarı."
+      "sequence": ["🟦", "🟥", "🟨", "🟦", "🟥", "?"],
+      "choices": ["🟨", "🟦", "🟩", "🟥"],
+      "answer": "🟨",
+      "hint": "3'lü döngü (zor)."
     }
   ]
 }
