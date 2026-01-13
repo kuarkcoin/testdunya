@@ -772,6 +772,19 @@ export default function HomePage() {
     </div>
   </div>
 </Link>
+<Link
+  href="/gorevde-yukselme"
+  className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-900 via-indigo-900 to-black p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl border border-white/10"
+>
+  <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-indigo-200">
+    🏛️ Mevzuat • Görevde Yükselme
+  </div>
+  <h3 className="mb-2 text-2xl font-black tracking-tight">Görevde Yükselme</h3>
+  <p className="text-indigo-100/90 text-sm">
+    Ortak Konular • 4 test/der s (25 soru) • Karma Deneme • Rozet Sistemi
+  </p>
+  <div className="mt-6 font-black">Başlat →</div>
+</Link>
 
         </section>
         
