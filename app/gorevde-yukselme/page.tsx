@@ -5,10 +5,10 @@ import Link from 'next/link';
 
 type Badge = { title: string; desc: string; at: string };
 
+// ✅ TEK ANAYASA: 3 ayrı sayfa kaldırıldı, 1 ders yapıldı.
 const subjects = [
-  { slug: 'tc-anayasasi-genel-esaslar', title: 'TC Anayasası (Genel Esaslar)' },
-  { slug: 'tc-anayasasi-temel-haklar', title: 'TC Anayasası (Temel hak ve ödevler)' },
-  { slug: 'tc-anayasasi-temel-organlar', title: 'TC Anayasası (Devletin Temel Organları)' },
+  { slug: 'anayasa', title: 'T.C. Anayasası' },
+
   { slug: 'dmk-657', title: '657 Sayılı Devlet Memurları Kanunu (1-212)' },
   { slug: 'etik-5176', title: '5176 Sayılı Etik Kurulu + Yönetmelik' },
   { slug: 'isg-6331', title: '6331 Sayılı İş Sağlığı ve Güvenliği Kanunu' },
@@ -77,10 +77,17 @@ export default function GorevdeYukselmeHome() {
 
         <div className="flex items-center justify-between gap-4">
           <div>
-            <h1 className="text-3xl md:text-4xl font-black text-slate-900">Görevde Yükselme • Ortak Konular</h1>
-            <p className="text-slate-600 font-semibold mt-2">Ders seç → 4 test (25 soru) • + Karma Deneme</p>
+            <h1 className="text-3xl md:text-4xl font-black text-slate-900">
+              Görevde Yükselme • Ortak Konular
+            </h1>
+            <p className="text-slate-600 font-semibold mt-2">
+              Ders seç → 4 test (25 soru) • + Karma Deneme
+            </p>
           </div>
-          <Link href="/" className="px-4 py-2 rounded-xl bg-white border border-slate-200 font-bold text-slate-700 hover:bg-slate-100">
+          <Link
+            href="/"
+            className="px-4 py-2 rounded-xl bg-white border border-slate-200 font-bold text-slate-700 hover:bg-slate-100"
+          >
             ← Ana Sayfa
           </Link>
         </div>
@@ -127,17 +134,26 @@ export default function GorevdeYukselmeHome() {
 
         {/* Dersler */}
         <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {subjects.map(s => {
+          {subjects.map((s) => {
             const wrongCount = stats.bySubject[s.slug] || 0;
+
+            // ✅ Anayasa özel route: /test/gorevde-yukselme/anayasa
+            const href = s.slug === 'anayasa' ? '/test/gorevde-yukselme/anayasa' : `/gorevde-yukselme/${s.slug}`;
+
+            // ✅ Kart alt yazısı: anayasa 100 soru
+            const metaText = s.slug === 'anayasa' ? '4 Test • 100 Soru' : '4 Test • 25 Soru';
+
             return (
               <Link
                 key={s.slug}
-                href={`/gorevde-yukselme/${s.slug}`}
+                href={href}
                 className="group bg-white border border-slate-200 rounded-2xl p-5 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition"
               >
                 <div className="font-black text-slate-900 text-lg">{s.title}</div>
+
                 <div className="mt-3 flex items-center justify-between">
-                  <div className="text-sm font-bold text-slate-500">4 Test • 25 Soru</div>
+                  <div className="text-sm font-bold text-slate-500">{metaText}</div>
+
                   {wrongCount > 0 ? (
                     <span className="text-xs font-black px-2 py-1 rounded-full bg-rose-100 text-rose-700 border border-rose-200">
                       {wrongCount} hata
@@ -148,6 +164,7 @@ export default function GorevdeYukselmeHome() {
                     </span>
                   )}
                 </div>
+
                 <div className="mt-4 text-indigo-700 font-black">Derse Gir →</div>
               </Link>
             );
