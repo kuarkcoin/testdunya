@@ -1,0 +1,280 @@
+[
+  {
+    "id": "etik5176-1-q1",
+    "prompt": "Soru 1) 5176 sayılı Kanun’un temel amacı aşağıdakilerden hangisidir?",
+    "A": "Memurların mali haklarını artırmak",
+    "B": "Kamu görevlilerinin etik davranış ilkelerini belirlemek",
+    "C": "Disiplin cezalarını ağırlaştırmak",
+    "D": "Sendikal hakları düzenlemek",
+    "E": "Atama usullerini değiştirmek",
+    "correct": "B",
+    "explanation": "5176 sayılı Kanun, kamu görevlilerinin uyması gereken etik davranış ilkelerini belirlemek amacıyla çıkarılmıştır."
+  },
+  {
+    "id": "etik5176-1-q2",
+    "prompt": "Soru 2) Kamu Görevlileri Etik Kurulu aşağıdakilerden hangisiyle kurulmuştur?",
+    "A": "657 sayılı Kanun",
+    "B": "5176 sayılı Kanun",
+    "C": "5018 sayılı Kanun",
+    "D": "298 sayılı Kanun",
+    "E": "3046 sayılı Kanun",
+    "correct": "B",
+    "explanation": "Kamu Görevlileri Etik Kurulu, 5176 sayılı Kanun ile kurulmuştur."
+  },
+  {
+    "id": "etik5176-1-q3",
+    "prompt": "Soru 3) Kamu Görevlileri Etik Kurulu kaç üyeden oluşur?",
+    "A": "5",
+    "B": "7",
+    "C": "9",
+    "D": "11",
+    "E": "13",
+    "correct": "C",
+    "explanation": "Etik Kurul, 9 üyeden oluşur."
+  },
+  {
+    "id": "etik5176-1-q4",
+    "prompt": "Soru 4) Etik Kurul üyeleri kaç yıl için seçilir?",
+    "A": "2",
+    "B": "3",
+    "C": "4",
+    "D": "5",
+    "E": "6",
+    "correct": "D",
+    "explanation": "Etik Kurul üyeleri 5 yıl için seçilir."
+  },
+  {
+    "id": "etik5176-1-q5",
+    "prompt": "Soru 5) Aşağıdakilerden hangisi etik davranış ilkeleri arasında yer alır?",
+    "A": "Keyfilik",
+    "B": "Tarafsızlık",
+    "C": "Ayrımcılık",
+    "D": "Gizli çıkar sağlama",
+    "E": "Yetki aşımı",
+    "correct": "B",
+    "explanation": "Tarafsızlık, etik davranış ilkeleri arasında yer alır."
+  },
+  {
+    "id": "etik5176-1-q6",
+    "prompt": "Soru 6) Kamu görevlilerinin görevlerini yerine getirirken uyması gereken temel ilke aşağıdakilerden hangisidir?",
+    "A": "Kişisel çıkar",
+    "B": "Kamu yararı",
+    "C": "Siyasi tercih",
+    "D": "Yakınlık ilişkisi",
+    "E": "Özel menfaat",
+    "correct": "B",
+    "explanation": "Kamu görevlileri görevlerini yerine getirirken kamu yararını esas alır."
+  },
+  {
+    "id": "etik5176-1-q7",
+    "prompt": "Soru 7) Etik davranış ilkeleri açısından hediye alma konusu nasıl düzenlenmiştir?",
+    "A": "Her koşulda serbesttir",
+    "B": "Görevle bağlantılı hediyeler yasaktır",
+    "C": "Sadece bayramlarda serbesttir",
+    "D": "Amir izniyle her zaman alınabilir",
+    "E": "Parasal değeri yüksek olanlar serbesttir",
+    "correct": "B",
+    "explanation": "Görevle bağlantılı olarak hediye almak etik ilkelere aykırıdır."
+  },
+  {
+    "id": "etik5176-1-q8",
+    "prompt": "Soru 8) Aşağıdakilerden hangisi çıkar çatışmasına örnek teşkil eder?",
+    "A": "Mevzuata uygun işlem yapmak",
+    "B": "Kamu kaynaklarını etkin kullanmak",
+    "C": "Görevden doğan yetkiyi kişisel menfaat için kullanmak",
+    "D": "Tarafsız karar almak",
+    "E": "Hizmeti eşit sunmak",
+    "correct": "C",
+    "explanation": "Görevden doğan yetkinin kişisel menfaat için kullanılması çıkar çatışmasıdır."
+  },
+  {
+    "id": "etik5176-1-q9",
+    "prompt": "Soru 9) Kamu görevlileri görevleri sırasında hangi davranıştan kaçınmalıdır?",
+    "A": "Şeffaflıktan",
+    "B": "Hesap verebilirlikten",
+    "C": "Ayrımcılıktan",
+    "D": "Tarafsızlıktan",
+    "E": "Nezaketten",
+    "correct": "C",
+    "explanation": "Kamu görevlileri ayrımcı davranışlardan kaçınmalıdır."
+  },
+  {
+    "id": "etik5176-1-q10",
+    "prompt": "Soru 10) Etik davranış ilkeleri hangi kamu görevlilerini kapsar?",
+    "A": "Sadece üst düzey yöneticileri",
+    "B": "Sadece memurları",
+    "C": "Tüm kamu görevlilerini",
+    "D": "Sözleşmeli personeli kapsamaz",
+    "E": "Geçici personeli kapsamaz",
+    "correct": "C",
+    "explanation": "Etik davranış ilkeleri tüm kamu görevlileri için geçerlidir."
+  },
+
+  {
+    "id": "etik5176-1-q11",
+    "prompt": "Soru 11) Kamu görevlilerinin saygınlığını zedeleyen davranışlar nasıl değerlendirilir?",
+    "A": "Normal kabul edilir",
+    "B": "Etik ilkelere aykırıdır",
+    "C": "Sadece uyarı ile geçilir",
+    "D": "Disiplin kapsamı dışındadır",
+    "E": "Özel hayata girer",
+    "correct": "B",
+    "explanation": "Saygınlığı zedeleyen davranışlar etik ilkelere aykırıdır."
+  },
+  {
+    "id": "etik5176-1-q12",
+    "prompt": "Soru 12) Kamu görevlilerinin görevlerini yerine getirirken dürüst olması hangi ilke kapsamındadır?",
+    "A": "Şeffaflık",
+    "B": "Dürüstlük",
+    "C": "Eşitlik",
+    "D": "Nezaket",
+    "E": "Tarafsızlık",
+    "correct": "B",
+    "explanation": "Dürüstlük, temel etik davranış ilkelerindendir."
+  },
+  {
+    "id": "etik5176-1-q13",
+    "prompt": "Soru 13) Etik Kurulun temel görevlerinden biri aşağıdakilerden hangisidir?",
+    "A": "Disiplin cezası vermek",
+    "B": "Etik ihlallerini incelemek",
+    "C": "Atama yapmak",
+    "D": "Maaş belirlemek",
+    "E": "Kadroları düzenlemek",
+    "correct": "B",
+    "explanation": "Etik Kurul, etik ihlallerini incelemekle görevlidir."
+  },
+  {
+    "id": "etik5176-1-q14",
+    "prompt": "Soru 14) Kamu görevlilerinin hesap verebilir olması hangi ilkenin sonucudur?",
+    "A": "Gizlilik",
+    "B": "Şeffaflık",
+    "C": "Ayrımcılık",
+    "D": "Keyfilik",
+    "E": "Yetki aşımı",
+    "correct": "B",
+    "explanation": "Şeffaflık, hesap verebilirliği beraberinde getirir."
+  },
+  {
+    "id": "etik5176-1-q15",
+    "prompt": "Soru 15) Etik davranış ilkeleri açısından kamu görevlisinin hediye almaması hangi amaca yöneliktir?",
+    "A": "Kamu güvenini azaltmak",
+    "B": "Tarafsızlığı korumak",
+    "C": "Gelirini artırmak",
+    "D": "Özel hayatı sınırlamak",
+    "E": "Görev süresini uzatmak",
+    "correct": "B",
+    "explanation": "Hediye yasağı, tarafsızlığın korunması amacı taşır."
+  },
+
+  {
+    "id": "etik5176-1-q16",
+    "prompt": "Soru 16) Kamu görevlilerinin görevlerini yerine getirirken dil, din, ırk ayrımı yapmaması hangi ilkeye girer?",
+    "A": "Eşitlik",
+    "B": "Gizlilik",
+    "C": "Yetki",
+    "D": "Sadakat",
+    "E": "Hiyerarşi",
+    "correct": "A",
+    "explanation": "Eşitlik ilkesi ayrımcılığı yasaklar."
+  },
+  {
+    "id": "etik5176-1-q17",
+    "prompt": "Soru 17) Kamu görevlilerinin görev sırasında elde ettikleri bilgileri kişisel çıkar için kullanması neyi ihlal eder?",
+    "A": "Nezaket",
+    "B": "Şeffaflık",
+    "C": "Gizlilik",
+    "D": "Tarafsızlık",
+    "E": "Eşitlik",
+    "correct": "C",
+    "explanation": "Görev sırasında elde edilen bilgilerin kişisel çıkar için kullanılması gizlilik ilkesini ihlal eder."
+  },
+  {
+    "id": "etik5176-1-q18",
+    "prompt": "Soru 18) Kamu görevlilerinin görevlerini yerine getirirken hesap verebilir olması hangi değeri güçlendirir?",
+    "A": "Kamu güvenini",
+    "B": "Keyfiliği",
+    "C": "Ayrımcılığı",
+    "D": "Gizliliği",
+    "E": "Yetki aşımını",
+    "correct": "A",
+    "explanation": "Hesap verebilirlik kamu güvenini artırır."
+  },
+  {
+    "id": "etik5176-1-q19",
+    "prompt": "Soru 19) Etik davranış ilkelerine aykırı fiillerin incelenmesi kimin yetkisindedir?",
+    "A": "Cumhurbaşkanının",
+    "B": "Danıştayın",
+    "C": "Kamu Görevlileri Etik Kurulunun",
+    "D": "TBMM'nin",
+    "E": "Sayıştayın",
+    "correct": "C",
+    "explanation": "Etik ihlallerini inceleme yetkisi Etik Kurula aittir."
+  },
+  {
+    "id": "etik5176-1-q20",
+    "prompt": "Soru 20) Kamu görevlisinin görevini kişisel menfaat için kullanması aşağıdakilerden hangisine aykırıdır?",
+    "A": "Kamu yararı",
+    "B": "Hiyerarşi",
+    "C": "Yetki",
+    "D": "Disiplin",
+    "E": "İzin",
+    "correct": "A",
+    "explanation": "Kişisel menfaat kamu yararı ilkesine aykırıdır."
+  },
+
+  {
+    "id": "etik5176-1-q21",
+    "prompt": "Soru 21) Kamu görevlileri görev sırasında hangi tutumu benimsemelidir?",
+    "A": "Taraflı",
+    "B": "Keyfi",
+    "C": "Dürüst ve tarafsız",
+    "D": "Ayrımcı",
+    "E": "Gizli",
+    "correct": "C",
+    "explanation": "Etik ilkeler dürüst ve tarafsız davranışı esas alır."
+  },
+  {
+    "id": "etik5176-1-q22",
+    "prompt": "Soru 22) Etik davranış ilkeleri açısından kamu görevlisinin yetkisini aşması nasıl değerlendirilir?",
+    "A": "Doğal kabul edilir",
+    "B": "Etik ihlalidir",
+    "C": "Yetki genişliği sayılır",
+    "D": "Sorun oluşturmaz",
+    "E": "Özel hayata girer",
+    "correct": "B",
+    "explanation": "Yetki aşımı etik ilkelere aykırıdır."
+  },
+  {
+    "id": "etik5176-1-q23",
+    "prompt": "Soru 23) Kamu görevlilerinin hizmet sunumunda vatandaşlara karşı davranışı nasıl olmalıdır?",
+    "A": "Seçici",
+    "B": "Ayrımcı",
+    "C": "Eşit ve adil",
+    "D": "Keyfi",
+    "E": "Sınırlayıcı",
+    "correct": "C",
+    "explanation": "Kamu hizmeti eşitlik ve adalet ilkelerine göre sunulur."
+  },
+  {
+    "id": "etik5176-1-q24",
+    "prompt": "Soru 24) Kamu görevlisinin etik ilkelere aykırı davranması durumunda ne yapılır?",
+    "A": "Hiçbir işlem yapılmaz",
+    "B": "Etik Kurul tarafından incelenir",
+    "C": "Doğrudan görevden çıkarılır",
+    "D": "Yalnızca uyarılır",
+    "E": "Özel hayata girer",
+    "correct": "B",
+    "explanation": "Etik ihlaller Etik Kurul tarafından incelenir."
+  },
+  {
+    "id": "etik5176-1-q25",
+    "prompt": "Soru 25) Etik davranış ilkelerinin uygulanmasındaki temel hedef aşağıdakilerden hangisidir?",
+    "A": "Kamu yönetiminde güveni artırmak",
+    "B": "Memurların sayısını azaltmak",
+    "C": "Disiplin cezalarını artırmak",
+    "D": "Yetki devrini kaldırmak",
+    "E": "İzinleri sınırlandırmak",
+    "correct": "A",
+    "explanation": "Etik ilkelerin temel hedefi kamu yönetimine olan güveni artırmaktır."
+  }
+]
