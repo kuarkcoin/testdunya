@@ -1,0 +1,281 @@
+[
+  {
+    "id": "etik5176-2-q1",
+    "prompt": "Soru 1) Etik davranış ilkeleri kapsamında “çıkar çatışması” en doğru nasıl tanımlanır?",
+    "A": "Kamu görevlisinin görevini hızlı yapması",
+    "B": "Kamu görevlisinin görevinden doğan yetkisini özel menfaati için kullanma ihtimali doğuran durum",
+    "C": "Kamu görevlisinin vatandaşla iletişim kurması",
+    "D": "Kamu görevlisinin amirine bilgi vermesi",
+    "E": "Kamu görevlisinin mesaiye geç kalması",
+    "correct": "B",
+    "explanation": "Çıkar çatışması, kamu görevlisinin görevinin tarafsızlığını zedeleyebilecek özel menfaat ilişkilerinin ortaya çıkmasıdır."
+  },
+  {
+    "id": "etik5176-2-q2",
+    "prompt": "Soru 2) Aşağıdakilerden hangisi “saydamlık/şeffaflık” ilkesine örnektir?",
+    "A": "Kararların gerekçesiz alınması",
+    "B": "Hizmet süreçlerinin açık ve denetlenebilir olması",
+    "C": "İşlemlerin kişiye göre değişmesi",
+    "D": "Bilgi vermekten kaçınılması",
+    "E": "İşlemlerin gizli yürütülmesi",
+    "correct": "B",
+    "explanation": "Şeffaflık, süreçlerin açık ve denetlenebilir olmasını ifade eder."
+  },
+  {
+    "id": "etik5176-2-q3",
+    "prompt": "Soru 3) Etik ilkeler açısından kamu görevlisi, kamu kaynaklarını nasıl kullanmalıdır?",
+    "A": "Kişisel ihtiyaçları için",
+    "B": "Siyasi amaçlarla",
+    "C": "Kamu yararı doğrultusunda, etkin ve verimli",
+    "D": "Sadece amirinin talimatıyla, gerekçesiz",
+    "E": "İstediği gibi",
+    "correct": "C",
+    "explanation": "Kamu kaynakları kamu yararı için etkin, verimli ve ekonomik kullanılmalıdır."
+  },
+  {
+    "id": "etik5176-2-q4",
+    "prompt": "Soru 4) Kamu görevlisinin, hizmet sunduğu kişilere karşı “eşitlik” ilkesine aykırı davranması ne doğurur?",
+    "A": "Hizmet kalitesi artar",
+    "B": "Ayrımcılık ve etik ihlali oluşur",
+    "C": "Mevzuat açısından her zaman serbesttir",
+    "D": "Hizmet hızlanır",
+    "E": "Etik ilke ile ilgisi yoktur",
+    "correct": "B",
+    "explanation": "Eşitlik ilkesine aykırı davranış ayrımcılık doğurur ve etik ihlalidir."
+  },
+  {
+    "id": "etik5176-2-q5",
+    "prompt": "Soru 5) Aşağıdakilerden hangisi “tarafsızlık” ilkesini en iyi ifade eder?",
+    "A": "Yakınlara öncelik tanımak",
+    "B": "İşlemleri kişisel görüşe göre yapmak",
+    "C": "Siyasi veya kişisel etkilerden bağımsız karar vermek",
+    "D": "Bazı kişilere kolaylık sağlamak",
+    "E": "Sadece tanıdıklara hizmet etmek",
+    "correct": "C",
+    "explanation": "Tarafsızlık; siyasi, kişisel ve dış etkilerden bağımsız şekilde karar almayı ifade eder."
+  },
+
+  {
+    "id": "etik5176-2-q6",
+    "prompt": "Soru 6) Etik ilkeler açısından kamu görevlisinin görev sırasında öğrendiği bilgileri üçüncü kişilerle paylaşması hangi ilkeyi ihlal eder?",
+    "A": "Nezaket",
+    "B": "Gizlilik",
+    "C": "Liyakat",
+    "D": "Yarışma",
+    "E": "Temsil",
+    "correct": "B",
+    "explanation": "Görev sırasında edinilen bilgilerin korunması gizlilik ilkesinin gereğidir."
+  },
+  {
+    "id": "etik5176-2-q7",
+    "prompt": "Soru 7) Aşağıdakilerden hangisi etik ilkeler kapsamında “hesap verebilirlik” ile en çok ilişkilidir?",
+    "A": "İşlemlerin denetlenebilir olması",
+    "B": "İşlemlerin gizli yürütülmesi",
+    "C": "İşlemlerin kişiye göre değişmesi",
+    "D": "Kararların gerekçesiz olması",
+    "E": "Bilgi talebinin reddi",
+    "correct": "A",
+    "explanation": "Hesap verebilirlik, yapılan işlemlerin gerekçeli ve denetlenebilir olmasını gerektirir."
+  },
+  {
+    "id": "etik5176-2-q8",
+    "prompt": "Soru 8) Kamu görevlisinin göreviyle ilgili bir konuda, yakın akrabasının çıkarı için işlem yapması neye örnektir?",
+    "A": "Eşit hizmet",
+    "B": "Çıkar çatışması / tarafsızlık ihlali",
+    "C": "Saydamlık",
+    "D": "Nezaket",
+    "E": "Kamu yararı",
+    "correct": "B",
+    "explanation": "Yakınların çıkarı için işlem yapmak çıkar çatışması yaratır ve tarafsızlığı zedeler."
+  },
+  {
+    "id": "etik5176-2-q9",
+    "prompt": "Soru 9) Etik davranış ilkeleri açısından “kamu yararı” neyi ifade eder?",
+    "A": "Kamu görevlisinin kişisel menfaatini",
+    "B": "Toplumun genel çıkarını",
+    "C": "Sadece amirin çıkarını",
+    "D": "Sadece kurumun gelirini",
+    "E": "Özel sektörün çıkarını",
+    "correct": "B",
+    "explanation": "Kamu yararı, toplumun genel çıkarını ifade eder."
+  },
+  {
+    "id": "etik5176-2-q10",
+    "prompt": "Soru 10) Aşağıdakilerden hangisi “dürüstlük” ilkesine aykırı bir davranıştır?",
+    "A": "Gerçeğe uygun bilgi vermek",
+    "B": "Yanıltıcı beyanda bulunmak",
+    "C": "Hizmeti eşit sunmak",
+    "D": "Kamu kaynaklarını korumak",
+    "E": "Kamu yararını gözetmek",
+    "correct": "B",
+    "explanation": "Yanıltıcı beyan dürüstlük ilkesine aykırıdır."
+  },
+
+  {
+    "id": "etik5176-2-q11",
+    "prompt": "Soru 11) Etik ilkeler açısından hediye kabulüyle ilgili genel yaklaşım aşağıdakilerden hangisidir?",
+    "A": "Görevle ilgili her hediye serbesttir",
+    "B": "Görevle ilgili hediyeler, tarafsızlığı zedeleyebileceği için kabul edilmemelidir",
+    "C": "Sadece pahalı hediyeler serbesttir",
+    "D": "Sadece nakit hediyeler serbesttir",
+    "E": "Hediye konusu etik ilkelerle ilgili değildir",
+    "correct": "B",
+    "explanation": "Görevle bağlantılı hediyeler tarafsızlığı zedeleyebileceğinden kabul edilmemelidir."
+  },
+  {
+    "id": "etik5176-2-q12",
+    "prompt": "Soru 12) Kamu görevlisinin görevini yaparken, mevzuat dışı şekilde bir kişiye kolaylık sağlaması hangi ilkeye aykırıdır?",
+    "A": "Eşitlik ve tarafsızlık",
+    "B": "Nezaket",
+    "C": "İletişim",
+    "D": "Eğitim",
+    "E": "Kılık-kıyafet",
+    "correct": "A",
+    "explanation": "Mevzuat dışı ayrıcalık tanımak eşitlik ve tarafsızlık ilkelerine aykırıdır."
+  },
+  {
+    "id": "etik5176-2-q13",
+    "prompt": "Soru 13) Etik ilkeler kapsamında kamu görevlisinin görevini “özenle” yapması ne anlama gelir?",
+    "A": "İşi geciktirmek",
+    "B": "İşi baştan savma yapmak",
+    "C": "İşi dikkatli, zamanında ve kaliteli yürütmek",
+    "D": "İşi kişiye göre değiştirmek",
+    "E": "İşi sadece sözlü talimatla yapmak",
+    "correct": "C",
+    "explanation": "Özen, görevin dikkatle, zamanında ve kaliteli şekilde yürütülmesini ifade eder."
+  },
+  {
+    "id": "etik5176-2-q14",
+    "prompt": "Soru 14) Kamu görevlisinin, görev yaptığı kurumun itibarını zedeleyici davranışları hangi kapsamda değerlendirilir?",
+    "A": "Etik davranış ilkelerine aykırıdır",
+    "B": "Her zaman normaldir",
+    "C": "Sadece vatandaş için geçerlidir",
+    "D": "Etik Kurulun konusu değildir",
+    "E": "Sadece özel hukuk konusudur",
+    "correct": "A",
+    "explanation": "Kurumun itibarını zedeleyen davranışlar etik ilkelere aykırıdır."
+  },
+  {
+    "id": "etik5176-2-q15",
+    "prompt": "Soru 15) Kamu görevlisinin görevle bağlantılı olarak reklam, tanıtım veya yönlendirme yapması hangi riski doğurur?",
+    "A": "Tarafsızlık ve çıkar çatışması riskini",
+    "B": "Hizmet hızını artırır",
+    "C": "Şeffaflığı artırır",
+    "D": "Kamu yararını artırır",
+    "E": "Etik ilke ile ilgisi yoktur",
+    "correct": "A",
+    "explanation": "Görevle bağlantılı yönlendirme, tarafsızlık ve çıkar çatışması riski doğurur."
+  },
+
+  {
+    "id": "etik5176-2-q16",
+    "prompt": "Soru 16) Aşağıdakilerden hangisi “saygı ve nezaket” ilkesinin gereğidir?",
+    "A": "Vatandaşı terslemek",
+    "B": "Vatandaşı küçümsemek",
+    "C": "Hizmet sunarken nazik ve saygılı olmak",
+    "D": "Vatandaşı bekletmek",
+    "E": "Bilgi vermemek",
+    "correct": "C",
+    "explanation": "Kamu hizmetinde saygı ve nezaket esastır."
+  },
+  {
+    "id": "etik5176-2-q17",
+    "prompt": "Soru 17) Kamu görevlisinin, görevde elde ettiği imkanlarla yakınlarına menfaat sağlaması hangi ilkeye aykırıdır?",
+    "A": "Kamu yararı",
+    "B": "Nezaket",
+    "C": "Gizlilik",
+    "D": "İletişim",
+    "E": "Temsil",
+    "correct": "A",
+    "explanation": "Görev imkanlarını menfaat için kullanmak kamu yararı ilkesine aykırıdır."
+  },
+  {
+    "id": "etik5176-2-q18",
+    "prompt": "Soru 18) Etik ilkeler kapsamında “kamu kaynaklarının israfı” nasıl değerlendirilir?",
+    "A": "Normal",
+    "B": "Etik ihlali",
+    "C": "Özel hayat kapsamı",
+    "D": "Sadece mali konu",
+    "E": "İzinle mümkün",
+    "correct": "B",
+    "explanation": "Kamu kaynaklarının israfı etik ilkelere aykırıdır."
+  },
+  {
+    "id": "etik5176-2-q19",
+    "prompt": "Soru 19) Kamu görevlisinin yaptığı işlemlerde “gerekçe” sunması hangi ilkeyi güçlendirir?",
+    "A": "Keyfilik",
+    "B": "Hesap verebilirlik",
+    "C": "Ayrımcılık",
+    "D": "Kapalılık",
+    "E": "Gizlilik",
+    "correct": "B",
+    "explanation": "Gerekçeli işlem, hesap verebilirliği güçlendirir."
+  },
+  {
+    "id": "etik5176-2-q20",
+    "prompt": "Soru 20) Aşağıdakilerden hangisi etik ilkelere uygun davranış örneğidir?",
+    "A": "İşlemi tanıdığa hızlı yapmak",
+    "B": "Herkese aynı prosedürü uygulamak",
+    "C": "Bilgiyi karşılığında vermek",
+    "D": "Hediye kabul etmek",
+    "E": "Yetkiyi kişisel işte kullanmak",
+    "correct": "B",
+    "explanation": "Eşitlik ve tarafsızlık gereği herkese aynı prosedür uygulanmalıdır."
+  },
+
+  {
+    "id": "etik5176-2-q21",
+    "prompt": "Soru 21) Kamu görevlisinin, göreviyle ilgili bir firmadan menfaat sağlaması hangi sonuçlara yol açar?",
+    "A": "Şeffaflığı artırır",
+    "B": "Kamu yararına uygundur",
+    "C": "Çıkar çatışması ve etik ihlali doğurur",
+    "D": "Sadece özel hukuk konusu olur",
+    "E": "Sorun oluşturmaz",
+    "correct": "C",
+    "explanation": "Görevle ilgili menfaat sağlamak çıkar çatışması yaratır ve etik ihlalidir."
+  },
+  {
+    "id": "etik5176-2-q22",
+    "prompt": "Soru 22) Etik ilkeler açısından “kurumsal amaç” ile “kişisel amaç” çatıştığında kamu görevlisi neyi esas almalıdır?",
+    "A": "Kişisel amacı",
+    "B": "Yakınlarının amacı",
+    "C": "Kurumsal amaç ve kamu yararını",
+    "D": "Siyasi amacı",
+    "E": "Özel sektör amacını",
+    "correct": "C",
+    "explanation": "Kamu görevlisi kurumsal amaç ve kamu yararını esas alır."
+  },
+  {
+    "id": "etik5176-2-q23",
+    "prompt": "Soru 23) Etik davranış ilkeleri açısından kamu görevlisi “çıkar çatışması” doğuran bir durumla karşılaştığında ne yapmalıdır?",
+    "A": "Durumu gizlemelidir",
+    "B": "Durumu normal karşılamalıdır",
+    "C": "Durumu bildirip gerekli önlemleri almalıdır",
+    "D": "Hediye kabul etmelidir",
+    "E": "İşlemi hızlandırmalıdır",
+    "correct": "C",
+    "explanation": "Çıkar çatışması doğuran durumlar bildirilmeli ve önlenmelidir."
+  },
+  {
+    "id": "etik5176-2-q24",
+    "prompt": "Soru 24) Kamu görevlisinin, vatandaşın bilgi edinme talebine mevzuata uygun şekilde cevap vermesi hangi ilkeye katkı sağlar?",
+    "A": "Saydamlık",
+    "B": "Keyfilik",
+    "C": "Ayrımcılık",
+    "D": "Gizleme",
+    "E": "Yetki aşımı",
+    "correct": "A",
+    "explanation": "Bilgi edinme süreçleri saydamlığı (şeffaflığı) artırır."
+  },
+  {
+    "id": "etik5176-2-q25",
+    "prompt": "Soru 25) Etik ilkelere uyumun kamu yönetimindeki en temel sonucu aşağıdakilerden hangisidir?",
+    "A": "Kamu yönetimine duyulan güvenin artması",
+    "B": "İş yükünün artması",
+    "C": "Mevzuatın azalması",
+    "D": "Kurumların kapanması",
+    "E": "Denetimin kaldırılması",
+    "correct": "A",
+    "explanation": "Etik ilkelere uyum, kamu yönetimine duyulan güveni artırır."
+  }
+]
