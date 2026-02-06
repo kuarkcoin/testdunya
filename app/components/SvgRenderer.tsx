@@ -8,6 +8,9 @@ export type SvgElement = {
   d?: string;
   sw?: number;
   dash?: boolean;
+  fill?: string;
+  stroke?: string;
+  opacity?: number;
 };
 
 export type SvgData = {
@@ -30,10 +33,10 @@ export default function SvgRenderer({ data, className }: { data: SvgData; classN
       {data.elements.map((el, i) => {
         // Her eleman için temel özellikleri hazırla
         const commonProps = {
-          key: i,
-          stroke: "currentColor",
+          stroke: el.stroke ?? "currentColor",
           strokeWidth: el.sw || 4,
-          fill: "none",
+          fill: el.fill ?? "none",
+          opacity: el.opacity,
           strokeDasharray: el.dash ? "10,5" : undefined,
           className: "transition-all duration-300"
         };
@@ -44,6 +47,7 @@ export default function SvgRenderer({ data, className }: { data: SvgData; classN
             if (el.w === undefined || el.h === undefined) return null;
             return (
               <rect
+                key={i}
                 x={el.x || 0} y={el.y || 0} width={el.w} height={el.h}
                 {...commonProps}
               />
@@ -53,6 +57,7 @@ export default function SvgRenderer({ data, className }: { data: SvgData; classN
             if (el.r === undefined) return null;
             return (
               <circle
+                key={i}
                 cx={el.cx || 0} cy={el.cy || 0} r={el.r}
                 {...commonProps}
               />
@@ -60,6 +65,7 @@ export default function SvgRenderer({ data, className }: { data: SvgData; classN
           case 'line':
             return (
               <line
+                key={i}
                 x1={el.x1 || 0} y1={el.y1 || 0} x2={el.x2 || 0} y2={el.y2 || 0}
                 strokeLinecap="round"
                 {...commonProps}
@@ -69,6 +75,7 @@ export default function SvgRenderer({ data, className }: { data: SvgData; classN
             if (!el.d) return null;
             return (
               <path
+                key={i}
                 d={el.d}
                 strokeLinejoin="round"
                 strokeLinecap="round"

@@ -19,6 +19,70 @@ const opt = (elements: any[], viewBox = "0 0 100 100"): { svg: SvgData } => ({
   svg: { viewBox, elements } as SvgData,
 });
 
+const cube3d = (
+  x: number,
+  y: number,
+  size: number,
+  colors: { top: string; left: string; right: string },
+  flip = false
+): SvgData["elements"] => {
+  const dx = size;
+  const dy = size * 0.6;
+  const leftColor = flip ? colors.right : colors.left;
+  const rightColor = flip ? colors.left : colors.right;
+
+  return [
+    {
+      t: "path",
+      d: `M ${x} ${y} L ${x + dx} ${y - dy} L ${x + 2 * dx} ${y} L ${x + dx} ${y + dy} Z`,
+      fill: colors.top,
+      stroke: "#1f2937",
+      sw: 1.5,
+    },
+    {
+      t: "path",
+      d: `M ${x} ${y} L ${x + dx} ${y + dy} L ${x + dx} ${y + dy + size} L ${x} ${y + size} Z`,
+      fill: leftColor,
+      stroke: "#1f2937",
+      sw: 1.5,
+    },
+    {
+      t: "path",
+      d: `M ${x + dx} ${y + dy} L ${x + 2 * dx} ${y} L ${x + 2 * dx} ${y + size} L ${x + dx} ${y + dy + size} Z`,
+      fill: rightColor,
+      stroke: "#1f2937",
+      sw: 1.5,
+    },
+  ];
+};
+
+const cubeGroup = (
+  cellX: number,
+  cellY: number,
+  count: number,
+  colors: { top: string; left: string; right: string },
+  flip = false
+): SvgData["elements"] => {
+  const baseX = cellX + 22;
+  const baseY = cellY + 48;
+  const size = 14;
+  const positions =
+    count === 1
+      ? [{ x: 0, y: 0 }]
+      : count === 2
+        ? [
+            { x: -14, y: 6 },
+            { x: 14, y: -6 },
+          ]
+        : [
+            { x: -16, y: 10 },
+            { x: 16, y: 10 },
+            { x: 0, y: -10 },
+          ];
+
+  return positions.flatMap((pos) => cube3d(baseX + pos.x, baseY + pos.y, size, colors, flip));
+};
+
 export const questions: IQQuestion[] = [
   // =========================================================
   // 1–8: ISINMA (kolay Raven)
@@ -1471,7 +1535,7 @@ export const questions: IQQuestion[] = [
   correct: 0,
 },
 
-// 29) EXTREME: anti-diagonal = X, others = O
+// 29) 3D COLOR MATRIX (145 IQ)
 {
   id: "iq-mixed-29",
   domain: "visual",
@@ -1491,29 +1555,42 @@ export const questions: IQQuestion[] = [
       { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
       { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
 
-      { t: "circle", cx: 55, cy: 55, r: 18, sw: 4 },
-      { t: "circle", cx: 155, cy: 55, r: 18, sw: 4 },
-      { t: "line", x1: 230, y1: 30, x2: 280, y2: 80, sw: 4 },
-      { t: "line", x1: 280, y1: 30, x2: 230, y2: 80, sw: 4 },
+      // Row 1: one cube (blue, green, orange)
+      ...cubeGroup(10, 10, 1, { top: "#bfdbfe", left: "#60a5fa", right: "#2563eb" }, false),
+      ...cubeGroup(110, 10, 1, { top: "#bbf7d0", left: "#4ade80", right: "#16a34a" }, true),
+      ...cubeGroup(210, 10, 1, { top: "#fed7aa", left: "#fb923c", right: "#ea580c" }, false),
 
-      { t: "circle", cx: 55, cy: 155, r: 18, sw: 4 },
-      { t: "line", x1: 130, y1: 130, x2: 180, y2: 180, sw: 4 },
-      { t: "line", x1: 180, y1: 130, x2: 130, y2: 180, sw: 4 },
-      { t: "circle", cx: 255, cy: 155, r: 18, sw: 4 },
+      // Row 2: two cubes
+      ...cubeGroup(10, 110, 2, { top: "#bfdbfe", left: "#60a5fa", right: "#2563eb" }, false),
+      ...cubeGroup(110, 110, 2, { top: "#bbf7d0", left: "#4ade80", right: "#16a34a" }, true),
+      ...cubeGroup(210, 110, 2, { top: "#fed7aa", left: "#fb923c", right: "#ea580c" }, false),
 
-      { t: "line", x1: 30, y1: 230, x2: 80, y2: 280, sw: 4 },
-      { t: "line", x1: 80, y1: 230, x2: 30, y2: 280, sw: 4 },
-      { t: "circle", cx: 155, cy: 255, r: 18, sw: 4 },
+      // Row 3: three cubes
+      ...cubeGroup(10, 210, 3, { top: "#bfdbfe", left: "#60a5fa", right: "#2563eb" }, false),
+      ...cubeGroup(110, 210, 3, { top: "#bbf7d0", left: "#4ade80", right: "#16a34a" }, true),
     ],
   },
   options: [
-    opt([{ t: "circle", cx: 50, cy: 50, r: 18, sw: 4 }]), // ✅ circle
-    opt([{ t: "line", x1: 20, y1: 20, x2: 80, y2: 80, sw: 4 }, { t: "line", x1: 80, y1: 20, x2: 20, y2: 80, sw: 4 }]),
-    opt([]),
-    opt([{ t: "circle", cx: 50, cy: 50, r: 10, sw: 4 }]),
-    opt([{ t: "rect", x: 30, y: 30, w: 40, h: 40, sw: 4 }]),
+    opt(
+      cubeGroup(0, 0, 3, { top: "#fed7aa", left: "#fb923c", right: "#ea580c" }, false)
+    ), // ✅ three orange cubes, normal orientation
+    opt(
+      cubeGroup(0, 0, 3, { top: "#e9d5ff", left: "#a855f7", right: "#7e22ce" }, false)
+    ), // wrong hue cycle
+    opt(
+      cubeGroup(0, 0, 3, { top: "#fed7aa", left: "#fb923c", right: "#ea580c" }, true)
+    ), // wrong rotation (faces flipped)
+    opt(
+      cubeGroup(0, 0, 2, { top: "#fed7aa", left: "#fb923c", right: "#ea580c" }, false)
+    ), // wrong count
+    opt([
+      { t: "rect", x: 28, y: 28, w: 44, h: 44, sw: 2, fill: "#fb923c", stroke: "#1f2937" },
+      { t: "rect", x: 18, y: 18, w: 44, h: 44, sw: 2, fill: "#fdba74", stroke: "#1f2937" },
+    ]), // wrong depth (flat squares)
   ],
   correct: 0,
+  explanation:
+    "Logic: (1) Row rule = cube count increases 1→2→3. (2) Column rule = hue shifts blue → green → orange. (3) Column 2 flips the cube faces (left/right shading swap). Correct option: three orange cubes with normal orientation. Distractors: purple breaks hue cycle; flipped orange breaks rotation rule; two cubes breaks count; flat squares break the 3D depth rule.",
 },
 
 // 30) EXTREME: add, subtract, add (dot arithmetic) => 4 dots
