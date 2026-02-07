@@ -43,18 +43,14 @@ const ALPHABET: Letter[] = [
   { upper: "Z", lower: "z", say: ["ze", "z"] }
 ];
 
+// ✅ Vercel/Node/TS her ortamda güvenli: \p{L} yok
 const normalizeTR = (s: string) =>
   s
     .toLocaleLowerCase("tr-TR")
-    .replace(/[^\p{L}\s]/gu, " ")
+    .replace(/[^a-zçğıöşüı\s]/gi, " ")
     .replace(/\s+/g, " ")
     .trim();
 
-/**
- * Toleranslı eşleşme:
- * - Tam eşleşme
- * - Cümle içinde geçiyorsa (örn: "bu a" / "a harfi")
- */
 const matchesSaid = (saidRaw: string, accepted: string[]) => {
   const said = normalizeTR(saidRaw);
   if (!said) return false;
@@ -63,71 +59,47 @@ const matchesSaid = (saidRaw: string, accepted: string[]) => {
     const na = normalizeTR(a);
     if (!na) return false;
     if (said === na) return true;
-    // kelime sınırlarıyla arama
-    return (` ${said} `).includes(` ${na} `) || (` ${na} `).includes(` ${said} `) || said.includes(na);
+    // Cümle içinde geçiyorsa da kabul et: "bu a", "a harfi" vs.
+    return (` ${said} `).includes(` ${na} `) || said.includes(na);
   });
 };
 
+// ✅ yanlış + hard harfleri daha sık (basit ağırlık)
 function buildQueue(stats: Record<string, { ok: number; wrong: number }>) {
-  // Hard harfleri ve yanlış yapılanları daha sık getir (basit ağırlık)
   const pool: Letter[] = [];
+
   for (const l of ALPHABET) {
     const st = stats[l.upper];
     const wrong = st?.wrong ?? 0;
     const ok = st?.ok ?? 0;
 
-    // temel ağırlık
     let w = 1;
-
-    // "hard" ise +1
     if (l.hard) w += 1;
-
-    // yanlış sayısı kadar +, doğru fazla ise biraz azalt
     w += Math.min(3, wrong);
     if (ok >= 2 && wrong === 0) w = Math.max(1, w - 1);
 
     for (let i = 0; i < w; i++) pool.push(l);
   }
 
-  // karıştır
+  // Fisher-Yates shuffle
   for (let i = pool.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [pool[i], pool[j]] = [pool[j], pool[i]];
   }
 
-  // Aynı harf art arda gelmesin diye ufak düzeltme
-  const res: Letter[] = [];
-  const seen = new Set<string>();
-  for (let i = 0; i < pool.length; i++) {
-    const cand = pool[i];
-    if (res.length === 0) {
-      res.push(cand);
-      continue;
-    }
-    const prev = res[res.length - 1];
-    if (prev.upper === cand.upper) {
-      // farklı bir harf bulup swapla
-      let swapped = false;
+  // Aynı harf art arda gelmesin (küçük düzeltme)
+  for (let i = 1; i < pool.length; i++) {
+    if (pool[i].upper === pool[i - 1].upper) {
       for (let k = i + 1; k < pool.length; k++) {
-        if (pool[k].upper !== prev.upper) {
+        if (pool[k].upper !== pool[i - 1].upper) {
           [pool[i], pool[k]] = [pool[k], pool[i]];
-          res.push(pool[i]);
-          swapped = true;
           break;
         }
       }
-      if (!swapped) res.push(cand);
-    } else {
-      res.push(cand);
     }
   }
 
-  // Unique bir tur istiyorsan: aşağıdaki blokla benzersizleştir.
-  // Ama "ağırlık" mantığı tekrarlı harf üretebilir; çocuk oyununda bu iyi.
-  // İstersen sadece bir tur olsun diye:
-  // return [...ALPHABET].sort(() => Math.random() - 0.5);
-
-  return res;
+  return pool;
 }
 
 export default function AlphabetGame() {
@@ -137,13 +109,11 @@ export default function AlphabetGame() {
   const [score, setScore] = useState(0);
   const [stars, setStars] = useState(0);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
-
   const [stats, setStats] = useState<Record<string, { ok: number; wrong: number }>>({});
 
-  const trVoice = useRef<SpeechSynthesisVoice | null>(null);
+  // ✅ TS/DOM lib sorunlarını tamamen bitirmek için any kullandım
+  const trVoice = useRef<any>(null);
   const isSpeakingRef = useRef(false);
-
-  // SpeechRecognition ref (cleanup için)
   const recRef = useRef<any>(null);
 
   const supportsSpeech = useMemo(() => {
@@ -167,15 +137,17 @@ export default function AlphabetGame() {
 
   const speak = useCallback((text: string, onEnd?: () => void) => {
     if (typeof window === "undefined") return;
-    const synth = window.speechSynthesis;
+    const synth = (window as any).speechSynthesis;
     if (!synth) return;
 
-    // mevcut konuşmayı kes
     try {
-      synth.cancel();
+      synth.cancel?.();
     } catch {}
 
-    const u = new SpeechSynthesisUtterance(text);
+    const Utter = (window as any).SpeechSynthesisUtterance;
+    if (!Utter) return;
+
+    const u = new Utter(text);
     u.lang = "tr-TR";
     if (trVoice.current) u.voice = trVoice.current;
 
@@ -191,7 +163,6 @@ export default function AlphabetGame() {
       onEnd?.();
     };
 
-    // bazı tarayıcılarda cancel sonrası hemen speak sorun çıkarabiliyor
     setTimeout(() => {
       try {
         synth.speak(u);
@@ -201,40 +172,24 @@ export default function AlphabetGame() {
     }, 60);
   }, []);
 
-  const resetGame = useCallback(() => {
-    stopRecognition();
-    try {
-      window.speechSynthesis?.cancel?.();
-    } catch {}
-    isSpeakingRef.current = false;
-
-    setScore(0);
-    setStars(0);
-    setErrorMsg(null);
-    setStats({});
-
-    // başlangıç kuyruğu: hard'lar +1 ağırlık ile
-    const initialQueue = buildQueue({});
-    setQueue(initialQueue);
-    setCurrent(initialQueue[0] ?? null);
-    setPhase("loading"); // sesler hazırsa teach'e döndürecek
-  }, [stopRecognition]);
-
-  // 🔊 Sesleri yükle ve bekle (TR varsa seç, yoksa fallback ile devam et)
+  // 🔊 Sesleri yükle (TR varsa seç, yoksa fallback ile devam)
   useEffect(() => {
     if (typeof window === "undefined") return;
 
-    const synth = window.speechSynthesis;
+    const synth = (window as any).speechSynthesis;
+    if (!synth) {
+      setPhase("teach");
+      return;
+    }
+
     const loadVoices = () => {
       const voices = synth.getVoices?.() ?? [];
       const tr =
-        voices.find((v) => v.lang?.toLowerCase().startsWith("tr")) ||
-        voices.find((v) => v.lang?.toLowerCase().includes("tr")) ||
+        voices.find((v: any) => String(v.lang || "").toLowerCase().startsWith("tr")) ||
+        voices.find((v: any) => String(v.lang || "").toLowerCase().includes("tr")) ||
         null;
 
       trVoice.current = tr;
-
-      // TR voice olmasa bile oyunu başlat (fallback voice ile)
       setPhase((p) => (p === "loading" ? "teach" : p));
     };
 
@@ -246,18 +201,18 @@ export default function AlphabetGame() {
     };
   }, []);
 
-  // İlk queue oluştur
+  // 🎲 İlk queue
   useEffect(() => {
     const initialQueue = buildQueue({});
     setQueue(initialQueue);
     setCurrent(initialQueue[0] ?? null);
   }, []);
 
-  // queue değişince current güncelle
+  // queue değişince current
   useEffect(() => {
     setCurrent(queue[0] ?? null);
-    if (queue.length === 0 && phase !== "done") setPhase("done");
-  }, [queue]); // eslint-disable-line react-hooks/exhaustive-deps
+    if (queue.length === 0) setPhase("done");
+  }, [queue]);
 
   const next = useCallback(() => {
     stopRecognition();
@@ -272,46 +227,38 @@ export default function AlphabetGame() {
       return nq;
     });
 
-    // current değişimi effect ile gelecek
     setPhase("teach");
   }, [stopRecognition]);
 
-  // Faz değişim seslendirmeleri
+  // Faz seslendirmeleri
   useEffect(() => {
     if (!current) return;
     if (phase === "loading" || phase === "listen" || phase === "done") return;
 
     if (phase === "teach") {
-      speak(`Bu büyük ${current.upper}, bu da küçük ${current.lower}. Söyle bakalım.`, () => {
-        // konuşma bittikten sonra buton hazır (listen kullanıcıda)
-      });
+      speak(`Bu büyük ${current.upper}, bu da küçük ${current.lower}. Söyle bakalım.`);
     } else if (phase === "correct") {
-      speak("Harika! Çok güzel söyledin.", () => {
-        setTimeout(next, 700);
-      });
+      speak("Harika! Çok güzel söyledin.", () => setTimeout(next, 700));
     } else if (phase === "wrong") {
-      speak(`Neredeyse oluyordu. Bu harf ${current.upper}. Bir daha deneyelim.`, () => {
-        // yanlışta otomatik tekrar dinleme YOK: çocuk butona basarak tekrar dener
-        // istersen otomatik dinleme: setTimeout(() => listen(), 400);
-      });
+      speak(`Neredeyse oluyordu. Bu harf ${current.upper}. Bir daha deneyelim.`);
     }
   }, [phase, current, speak, next]);
 
   const listen = useCallback(() => {
     if (typeof window === "undefined") return;
-    if (!supportsSpeech) {
-      setErrorMsg("Tarayıcınız ses tanımayı desteklemiyor. Lütfen Chrome kullanın.");
-      return;
-    }
     if (!current) return;
 
-    // konuşurken dinleme başlatma
+    if (!supportsSpeech) {
+      setErrorMsg("Tarayıcınız ses tanımayı desteklemiyor. Lütfen Chrome kullanın.");
+      setPhase("teach");
+      return;
+    }
+
     if (isSpeakingRef.current) return;
 
     setErrorMsg(null);
     setPhase("listen");
 
-    // önceki recognition varsa kapat
     stopRecognition();
 
     const w = window as any;
@@ -325,14 +272,11 @@ export default function AlphabetGame() {
     rec.interimResults = false;
     rec.maxAlternatives = 3;
 
-    const finishToTeach = () => {
-      // Eğer hala listen'da kaldıysa teach'e dön
-      setPhase((p) => (p === "listen" ? "teach" : p));
-    };
+    const finishToTeach = () => setPhase((p) => (p === "listen" ? "teach" : p));
 
     rec.onresult = (e: any) => {
-      const best = e?.results?.[0]?.[0]?.transcript ?? "";
-      const ok = matchesSaid(best, current.say);
+      const transcript = e?.results?.[0]?.[0]?.transcript ?? "";
+      const ok = matchesSaid(transcript, current.say);
 
       setStats((p) => ({
         ...p,
@@ -352,7 +296,6 @@ export default function AlphabetGame() {
     };
 
     rec.onerror = (ev: any) => {
-      // izin yok / mikrofon hatası / network vs.
       const code = ev?.error;
       if (code === "not-allowed" || code === "service-not-allowed") {
         setErrorMsg("Mikrofon izni gerekli. Tarayıcıdan mikrofon izni verip tekrar deneyin.");
@@ -365,9 +308,7 @@ export default function AlphabetGame() {
     };
 
     rec.onend = () => {
-      // sonuç gelmediyse (sessizlik), teach'e geri dön
       finishToTeach();
-      // cleanup
       stopRecognition();
     };
 
@@ -378,31 +319,32 @@ export default function AlphabetGame() {
       setPhase("teach");
       stopRecognition();
     }
-  }, [current, stopRecognition, supportsSpeech]);
+  }, [current, supportsSpeech, stopRecognition]);
 
-  // unmount cleanup
+  // Unmount cleanup
   useEffect(() => {
     return () => {
       stopRecognition();
       try {
-        window.speechSynthesis?.cancel?.();
+        (window as any).speechSynthesis?.cancel?.();
       } catch {}
     };
   }, [stopRecognition]);
 
-  // Done ekranı
+  // ✅ DONE ekranı
   if (phase === "done") {
     return (
       <div className="min-h-screen bg-slate-100 flex items-center justify-center p-4">
         <div className="bg-white p-8 rounded-[2.5rem] shadow-2xl w-full max-w-sm text-center border-8 border-indigo-50">
           <div className="text-5xl font-black text-indigo-600 mb-4">🎉 BİTTİ!</div>
+
           <div className="flex justify-center gap-3 mb-6">
             <div className="bg-amber-100 text-amber-700 px-4 py-1 rounded-full font-bold text-sm">⭐ {stars}</div>
             <div className="bg-indigo-100 text-indigo-700 px-4 py-1 rounded-full font-bold text-sm">🧠 {score} Puan</div>
           </div>
+
           <button
             onClick={() => {
-              // istatistiğe göre yeni queue üret (zor/yanlışlar daha sık)
               const newQueue = buildQueue(stats);
               setQueue(newQueue);
               setCurrent(newQueue[0] ?? null);
@@ -412,13 +354,6 @@ export default function AlphabetGame() {
             className="w-full py-4 rounded-2xl font-black text-xl transition-all active:scale-95 shadow-lg bg-indigo-600 text-white hover:bg-indigo-500 shadow-indigo-200"
           >
             TEKRAR OYNA 🔁
-          </button>
-
-          <button
-            onClick={resetGame}
-            className="w-full mt-3 py-3 rounded-2xl font-black text-base transition-all active:scale-95 border-2 border-slate-200 text-slate-700 hover:bg-slate-50"
-          >
-            SIFIRLA 🧼
           </button>
 
           <details className="mt-8 text-left">
@@ -454,7 +389,6 @@ export default function AlphabetGame() {
   }
 
   if (!current) {
-    // Queue effect ile done'a geçer, ama güvenlik için
     return (
       <div className="min-h-screen flex items-center justify-center text-4xl font-black text-indigo-600">
         🎉 ALFABE BİTTİ!
@@ -515,7 +449,6 @@ export default function AlphabetGame() {
 
           <button
             onClick={() => {
-              // Harfi tekrar anlat (teach)
               stopRecognition();
               setErrorMsg(null);
               setPhase("teach");
