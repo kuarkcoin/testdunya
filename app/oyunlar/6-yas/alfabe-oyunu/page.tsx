@@ -4,274 +4,190 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from "react"
 
 type Phase = "teach" | "turn" | "correct" | "wrong";
 
-const LETTER_PAIR = { upper: "A", lower: "a" };
+type Letter = {
+  upper: string;
+  lower: string;
+  say: string[];
+  hard?: boolean;
+};
 
-function isSpeechSupported() {
-  return typeof window !== "undefined" && "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
-}
+const ALPHABET: Letter[] = [
+  { upper: "A", lower: "a", say: ["a"] },
+  { upper: "B", lower: "b", say: ["be", "b"] },
+  { upper: "C", lower: "c", say: ["ce", "c"], hard: true },
+  { upper: "Ç", lower: "ç", say: ["çe", "ç"], hard: true },
+  { upper: "D", lower: "d", say: ["de", "d"] },
+  { upper: "E", lower: "e", say: ["e"] },
+  { upper: "F", lower: "f", say: ["fe", "f"] },
+  { upper: "G", lower: "g", say: ["ge", "g"] },
+  { upper: "Ğ", lower: "ğ", say: ["yumuşak ge", "yumusak ge", "ğ"], hard: true },
+  { upper: "H", lower: "h", say: ["he", "h"] },
+  { upper: "I", lower: "ı", say: ["ı"], hard: true },
+  { upper: "İ", lower: "i", say: ["i"], hard: true },
+  { upper: "J", lower: "j", say: ["je", "j"] },
+  { upper: "K", lower: "k", say: ["ke", "k"] },
+  { upper: "L", lower: "l", say: ["le", "l"] },
+  { upper: "M", lower: "m", say: ["me", "m"] },
+  { upper: "N", lower: "n", say: ["ne", "n"] },
+  { upper: "O", lower: "o", say: ["o"] },
+  { upper: "Ö", lower: "ö", say: ["ö"], hard: true },
+  { upper: "P", lower: "p", say: ["pe", "p"] },
+  { upper: "R", lower: "r", say: ["re", "r"] },
+  { upper: "S", lower: "s", say: ["se", "s"] },
+  { upper: "Ş", lower: "ş", say: ["şe", "ş"], hard: true },
+  { upper: "T", lower: "t", say: ["te", "t"] },
+  { upper: "U", lower: "u", say: ["u"] },
+  { upper: "Ü", lower: "ü", say: ["ü"], hard: true },
+  { upper: "V", lower: "v", say: ["ve", "v"] },
+  { upper: "Y", lower: "y", say: ["ye", "y"] },
+  { upper: "Z", lower: "z", say: ["ze", "z"] }
+];
 
-export default function Page() {
+const HARD_REPEAT_MULTIPLIER = 2;
+
+const normalizeTR = (s: string) =>
+  s.toLocaleLowerCase("tr-TR").replace(/[^\p{L}]/gu, "").trim();
+
+export default function AlphabetGame() {
+  const [queue, setQueue] = useState<Letter[]>([]);
+  const [current, setCurrent] = useState<Letter | null>(null);
   const [phase, setPhase] = useState<Phase>("teach");
-  const [voiceOn, setVoiceOn] = useState(true);
-  const confettiSeed = useRef(0);
-  const [confettiKey, setConfettiKey] = useState(0);
-  const trVoiceRef = useRef<SpeechSynthesisVoice | null>(null);
-  const speakCooldownRef = useRef(0);
 
-  useEffect(() => {
-    if (!isSpeechSupported()) return;
+  const [score, setScore] = useState(0);
+  const [stars, setStars] = useState(0);
 
-    const pickTrVoice = () => {
-      try {
-        const voices = window.speechSynthesis.getVoices();
-        const trVoice = voices.find((voice) => voice.lang?.toLowerCase().startsWith("tr"));
-        trVoiceRef.current = trVoice ?? null;
-      } catch {
-        trVoiceRef.current = null;
-      }
-    };
-
-    pickTrVoice();
-    window.speechSynthesis.onvoiceschanged = pickTrVoice;
-
-    return () => {
-      if (window.speechSynthesis) window.speechSynthesis.onvoiceschanged = null;
-    };
-  }, []);
-
-  const stopSpeak = useCallback(() => {
-    if (!isSpeechSupported()) return;
-    try {
-      window.speechSynthesis.cancel();
-    } catch {}
-  }, []);
-
-  const speak = useCallback(
-    (text: string) => {
-      if (!text || !voiceOn || !isSpeechSupported()) return;
-
-      const now = Date.now();
-      if (now - speakCooldownRef.current < 300) return;
-      speakCooldownRef.current = now;
-
-      try {
-        if (window.speechSynthesis.speaking) window.speechSynthesis.cancel();
-
-        const utterance = new SpeechSynthesisUtterance(text);
-        utterance.lang = "tr-TR";
-        utterance.rate = 0.9;
-        utterance.pitch = 1.05;
-        utterance.volume = 0.9;
-        if (trVoiceRef.current) utterance.voice = trVoiceRef.current;
-
-        window.speechSynthesis.speak(utterance);
-      } catch {}
-    },
-    [voiceOn]
+  const [stats, setStats] = useState<Record<string, { ok: number; wrong: number }>>(
+    {}
   );
 
-  const teachText = `Önce büyük ${LETTER_PAIR.upper}, sonra küçük ${LETTER_PAIR.lower}.`;
-  const turnText = `Sıra sende! Önce büyük ${LETTER_PAIR.upper}, sonra küçük ${LETTER_PAIR.lower}.`;
+  const trVoice = useRef<SpeechSynthesisVoice | null>(null);
+
+  // 🎲 Karışık + zor harf ağırlıklı sıra
+  useEffect(() => {
+    const weighted: Letter[] = [];
+    ALPHABET.forEach((l) => {
+      weighted.push(l);
+      if (l.hard) {
+        for (let i = 0; i < HARD_REPEAT_MULTIPLIER; i++) weighted.push(l);
+      }
+    });
+    setQueue(weighted.sort(() => Math.random() - 0.5));
+  }, []);
 
   useEffect(() => {
-    if (phase === "teach") {
-      speak(teachText);
-    }
-    if (phase === "turn") {
-      speak(turnText);
-    }
-    if (phase === "wrong") {
-      speak("Tekrar deneyelim.");
-    }
-    if (phase === "correct") {
-      speak("Harika söyledin!");
-    }
-  }, [phase, speak, teachText, turnText]);
+    if (!queue.length) return;
+    setCurrent(queue[0]);
+  }, [queue]);
 
-  const onCorrect = useCallback(() => {
-    confettiSeed.current += 1;
-    setConfettiKey(confettiSeed.current);
-    setPhase("correct");
+  // 🔊 Türkçe ses
+  useEffect(() => {
+    const voices = speechSynthesis.getVoices();
+    trVoice.current = voices.find((v) => v.lang.startsWith("tr")) || null;
   }, []);
 
-  const onWrong = useCallback(() => {
-    setPhase("wrong");
+  const speak = useCallback((text: string) => {
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = "tr-TR";
+    if (trVoice.current) u.voice = trVoice.current;
+    speechSynthesis.speak(u);
   }, []);
 
-  const resetTurn = useCallback(() => {
-    setPhase("turn");
-  }, []);
+  useEffect(() => {
+    if (!current) return;
+    if (phase === "teach")
+      speak(`Bu büyük ${current.upper}, bu da küçük ${current.lower}. Söyle bakalım.`);
+    if (phase === "correct") speak("Harika! Çok güzel söyledin.");
+    if (phase === "wrong")
+      speak(`Bu ${current.upper}. Dinle: ${current.say[0]}`);
+  }, [phase, current, speak]);
 
-  const confettiPieces = useMemo(() => {
-    const total = 30;
-    return Array.from({ length: total }, (_, index) => {
-      const left = Math.random() * 100;
-      const delay = Math.random() * 0.4;
-      const duration = 1.6 + Math.random() * 0.8;
-      const size = 6 + Math.random() * 6;
-      const colors = ["#f97316", "#22c55e", "#3b82f6", "#a855f7", "#facc15"];
-      const background = colors[index % colors.length];
-      return { left, delay, duration, size, background };
-    });
-  }, [confettiKey]);
+  // 🎤 Speech Recognition
+  const listen = () => {
+    const w = window as any;
+    const SR = w.SpeechRecognition || w.webkitSpeechRecognition;
+    if (!SR || !current) return;
+
+    const rec = new SR();
+    rec.lang = "tr-TR";
+    rec.onresult = (e: any) => {
+      const said = normalizeTR(e.results[0][0].transcript);
+      const ok = current.say.some((s) => normalizeTR(s) === said);
+
+      setStats((p) => ({
+        ...p,
+        [current.upper]: {
+          ok: (p[current.upper]?.ok || 0) + (ok ? 1 : 0),
+          wrong: (p[current.upper]?.wrong || 0) + (!ok ? 1 : 0)
+        }
+      }));
+
+      if (ok) {
+        setScore((s) => s + 10);
+        setStars((s) => s + 1);
+        setPhase("correct");
+        setTimeout(next, 800);
+      } else {
+        setPhase("wrong");
+      }
+    };
+    rec.start();
+  };
+
+  const next = () => {
+    setQueue((q) => q.slice(1));
+    setPhase("teach");
+  };
+
+  if (!current)
+    return <div className="p-10 text-center text-xl">🎉 Tüm harfler tamamlandı!</div>;
 
   return (
-    <div className="min-h-screen bg-white">
-      <div className="mx-auto flex max-w-3xl flex-col gap-6 p-6">
-        <header className="flex flex-wrap items-center justify-between gap-3">
-          <div>
-            <h1 className="text-2xl font-semibold text-slate-900">Alfabe Oyunu</h1>
-            <p className="text-slate-600">Büyük harf ile küçük harfi sırayla söyle.</p>
-          </div>
-          <div className="flex items-center gap-2">
-            <button
-              onClick={() => {
-                setVoiceOn((prev) => !prev);
-                stopSpeak();
-              }}
-              className="rounded-xl border border-slate-200 px-4 py-2 text-sm text-slate-700 focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2"
-            >
-              {voiceOn ? "🔊 Ses Açık" : "🔇 Ses Kapalı"}
-            </button>
-            <button
-              onClick={() => speak(phase === "turn" ? turnText : teachText)}
-              className="rounded-xl border border-slate-200 px-4 py-2 text-sm text-slate-700 focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2"
-            >
-              🎧 Dinle
-            </button>
-          </div>
-        </header>
+    <div className="min-h-screen bg-slate-50 flex items-center justify-center">
+      <div className="bg-white p-8 rounded-3xl shadow-xl w-[360px] text-center">
+        <h1 className="text-xl font-bold mb-2">Harf Arkadaşım ⭐</h1>
 
-        <section className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
-          <div className="flex flex-col items-center gap-4 text-center">
-            <div className="text-sm font-semibold uppercase tracking-wide text-slate-500">Örnek</div>
-            <div className="flex flex-wrap items-center justify-center gap-4">
-              <span className="flex h-28 w-28 items-center justify-center rounded-3xl bg-white text-6xl font-bold text-indigo-600 shadow-sm">
-                {LETTER_PAIR.upper}
-              </span>
-              <span className="text-4xl text-slate-400">→</span>
-              <span className="flex h-28 w-28 items-center justify-center rounded-3xl bg-white text-6xl font-bold text-emerald-600 shadow-sm">
-                {LETTER_PAIR.lower}
-              </span>
-            </div>
-            <p className="max-w-xl text-lg text-slate-700">Önce büyük harfi, sonra küçük harfi söyle.</p>
-          </div>
-        </section>
+        <div className="flex justify-center gap-6 my-6">
+          <div className="text-7xl font-black text-indigo-600">{current.upper}</div>
+          <div className="text-7xl font-black text-emerald-600">{current.lower}</div>
+        </div>
 
-        <section className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-6">
-          {phase === "correct" && (
-            <div className="pointer-events-none absolute inset-0">
-              {confettiPieces.map((piece, index) => (
-                <span
-                  key={`${confettiKey}-${index}`}
-                  className="confetti-piece"
-                  style={{
-                    left: `${piece.left}%`,
-                    animationDelay: `${piece.delay}s`,
-                    animationDuration: `${piece.duration}s`,
-                    width: `${piece.size}px`,
-                    height: `${piece.size * 1.4}px`,
-                    background: piece.background,
-                  }}
-                />
-              ))}
-            </div>
-          )}
+        <div className="mb-4 text-sm text-slate-500">
+          ⭐ {stars} | 🧠 Puan: {score}
+        </div>
 
-          {phase === "teach" && (
-            <div className="flex flex-col items-center gap-4 text-center">
-              <h2 className="text-2xl font-semibold text-slate-900">Hazırlan!</h2>
-              <p className="text-slate-600">Şimdi benimle birlikte tekrar et.</p>
-              <button
-                onClick={() => setPhase("turn")}
-                className="rounded-2xl bg-indigo-600 px-6 py-3 text-lg font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2"
-              >
-                Sıra Sende
-              </button>
-            </div>
-          )}
+        {phase === "teach" && (
+          <button
+            onClick={() => {
+              setPhase("turn");
+              listen();
+            }}
+            className="w-full bg-indigo-600 text-white py-3 rounded-xl font-bold"
+          >
+            Söyle 🎤
+          </button>
+        )}
 
-          {phase === "turn" && (
-            <div className="flex flex-col items-center gap-4 text-center">
-              <div className="text-sm font-semibold uppercase tracking-wide text-slate-500">Sıra Sende</div>
-              <h2 className="text-3xl font-bold text-slate-900">{LETTER_PAIR.upper} → {LETTER_PAIR.lower}</h2>
-              <p className="text-lg text-slate-600">Çocuk söyleyince aşağıdan seç.</p>
-              <div className="flex flex-wrap items-center justify-center gap-3">
-                <button
-                  onClick={onCorrect}
-                  className="rounded-2xl bg-emerald-500 px-6 py-3 text-lg font-semibold text-white shadow-sm hover:bg-emerald-400 focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
-                >
-                  ✅ Doğru söyledi
-                </button>
-                <button
-                  onClick={onWrong}
-                  className="rounded-2xl bg-rose-500 px-6 py-3 text-lg font-semibold text-white shadow-sm hover:bg-rose-400 focus-visible:ring-2 focus-visible:ring-rose-500 focus-visible:ring-offset-2"
-                >
-                  ❌ Yanlış oldu
-                </button>
-              </div>
-            </div>
-          )}
+        {phase === "wrong" && (
+          <button
+            onClick={() => {
+              setPhase("turn");
+              listen();
+            }}
+            className="w-full border-2 border-indigo-600 text-indigo-600 py-3 rounded-xl font-bold"
+          >
+            Tekrar Dene 🔄
+          </button>
+        )}
 
-          {phase === "wrong" && (
-            <div className="flex flex-col items-center gap-4 text-center">
-              <div className="flex h-24 w-24 items-center justify-center rounded-full bg-rose-50 text-6xl text-rose-500">✕</div>
-              <h2 className="text-2xl font-semibold text-slate-900">Tekrar deneyelim</h2>
-              <p className="text-slate-600">Önce büyük harf, sonra küçük harf.</p>
-              <button
-                onClick={resetTurn}
-                className="rounded-2xl border border-slate-200 px-6 py-3 text-lg font-semibold text-slate-700 hover:border-slate-300 focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2"
-              >
-                Tekrar Söyle
-              </button>
-            </div>
-          )}
-
-          {phase === "correct" && (
-            <div className="flex flex-col items-center gap-4 text-center">
-              <div className="text-6xl">🎉</div>
-              <h2 className="text-2xl font-semibold text-slate-900">Harika!</h2>
-              <p className="text-slate-600">Doğru söyledin. Bir daha deneyebiliriz.</p>
-              <button
-                onClick={resetTurn}
-                className="rounded-2xl bg-indigo-600 px-6 py-3 text-lg font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2"
-              >
-                Tekrar Oyna
-              </button>
-            </div>
-          )}
-        </section>
-
-        <p className="text-xs text-slate-500">
-          Not: Sesli anlatım için cihazda ses desteği ve ilk etkileşim gerekir.
-        </p>
+        {/* 👨‍👩‍👧 Ebeveyn Modu */}
+        <details className="mt-6 text-left text-xs">
+          <summary className="cursor-pointer font-semibold">👨‍👩‍👧 Ebeveyn Modu</summary>
+          <pre className="mt-2 bg-slate-100 p-2 rounded">
+{JSON.stringify(stats, null, 2)}
+          </pre>
+        </details>
       </div>
-
-      <style jsx>{`
-        .confetti-piece {
-          position: absolute;
-          top: -10px;
-          border-radius: 999px;
-          opacity: 0;
-          animation-name: confetti-fall;
-          animation-timing-function: ease-out;
-          animation-iteration-count: 1;
-        }
-
-        @keyframes confetti-fall {
-          0% {
-            transform: translateY(0) rotate(0deg);
-            opacity: 0;
-          }
-          10% {
-            opacity: 1;
-          }
-          100% {
-            transform: translateY(360px) rotate(160deg);
-            opacity: 0;
-          }
-        }
-      `}</style>
     </div>
   );
 }
