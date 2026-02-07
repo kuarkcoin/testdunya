@@ -7,7 +7,7 @@ type Phase = "loading" | "teach" | "listen" | "correct" | "wrong" | "done";
 type Letter = {
   upper: string;
   lower: string;
-  say: string[]; // kabul edilen söyleyişler
+  say: string[];
   hard?: boolean;
 };
 
@@ -22,8 +22,8 @@ const ALPHABET: Letter[] = [
   { upper: "G", lower: "g", say: ["ge", "g"] },
   { upper: "Ğ", lower: "ğ", say: ["yumuşak ge", "yumusak ge", "ğ", "yumuşak g"], hard: true },
   { upper: "H", lower: "h", say: ["he", "h"] },
-  { upper: "I", lower: "ı", say: ["ı"], hard: true },
-  { upper: "İ", lower: "i", say: ["i"], hard: true },
+  { upper: "I", lower: "ı", say: ["ı", "i"], hard: true }, // motor karıştırabiliyor
+  { upper: "İ", lower: "i", say: ["i", "ı"], hard: true }, // motor karıştırabiliyor
   { upper: "J", lower: "j", say: ["je", "j"] },
   { upper: "K", lower: "k", say: ["ke", "k"] },
   { upper: "L", lower: "l", say: ["le", "l"] },
@@ -43,7 +43,7 @@ const ALPHABET: Letter[] = [
   { upper: "Z", lower: "z", say: ["ze", "z"] }
 ];
 
-// ✅ Vercel/Node/TS her ortamda güvenli: \p{L} yok
+// ✅ Vercel/Node/TS her ortamda güvenli
 const normalizeTR = (s: string) =>
   s
     .toLocaleLowerCase("tr-TR")
@@ -59,12 +59,10 @@ const matchesSaid = (saidRaw: string, accepted: string[]) => {
     const na = normalizeTR(a);
     if (!na) return false;
     if (said === na) return true;
-    // Cümle içinde geçiyorsa da kabul et: "bu a", "a harfi" vs.
     return (` ${said} `).includes(` ${na} `) || said.includes(na);
   });
 };
 
-// ✅ yanlış + hard harfleri daha sık (basit ağırlık)
 function buildQueue(stats: Record<string, { ok: number; wrong: number }>) {
   const pool: Letter[] = [];
 
@@ -81,13 +79,13 @@ function buildQueue(stats: Record<string, { ok: number; wrong: number }>) {
     for (let i = 0; i < w; i++) pool.push(l);
   }
 
-  // Fisher-Yates shuffle
+  // shuffle
   for (let i = pool.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [pool[i], pool[j]] = [pool[j], pool[i]];
   }
 
-  // Aynı harf art arda gelmesin (küçük düzeltme)
+  // aynı harf ardışık olmasın
   for (let i = 1; i < pool.length; i++) {
     if (pool[i].upper === pool[i - 1].upper) {
       for (let k = i + 1; k < pool.length; k++) {
@@ -111,7 +109,7 @@ export default function AlphabetGame() {
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const [stats, setStats] = useState<Record<string, { ok: number; wrong: number }>>({});
 
-  // ✅ TS/DOM lib sorunlarını tamamen bitirmek için any kullandım
+  // ✅ TS/DOM tip problemlerini sıfırlamak için any
   const trVoice = useRef<any>(null);
   const isSpeakingRef = useRef(false);
   const recRef = useRef<any>(null);
@@ -163,6 +161,7 @@ export default function AlphabetGame() {
       onEnd?.();
     };
 
+    // cancel sonrası güvenli gecikme
     setTimeout(() => {
       try {
         synth.speak(u);
@@ -172,7 +171,7 @@ export default function AlphabetGame() {
     }, 60);
   }, []);
 
-  // 🔊 Sesleri yükle (TR varsa seç, yoksa fallback ile devam)
+  // 🔊 sesleri yükle
   useEffect(() => {
     if (typeof window === "undefined") return;
 
@@ -201,33 +200,27 @@ export default function AlphabetGame() {
     };
   }, []);
 
-  // 🎲 İlk queue
+  // 🎲 ilk queue
   useEffect(() => {
     const initialQueue = buildQueue({});
     setQueue(initialQueue);
     setCurrent(initialQueue[0] ?? null);
   }, []);
 
-  // queue değişince current
-  useEffect(() => {
-    setCurrent(queue[0] ?? null);
-    if (queue.length === 0) setPhase("done");
-  }, [queue]);
-
+  // ✅ KRİTİK FIX: next() içinde current + phase atomik güncelleniyor (eski harf tekrar konuşmaz)
   const next = useCallback(() => {
     stopRecognition();
     setErrorMsg(null);
 
     setQueue((q) => {
       const nq = q.slice(1);
-      if (nq.length === 0) {
-        setPhase("done");
-        return [];
-      }
+      const nc = nq[0] ?? null;
+
+      setCurrent(nc);
+      setPhase(nq.length === 0 ? "done" : "teach");
+
       return nq;
     });
-
-    setPhase("teach");
   }, [stopRecognition]);
 
   // Faz seslendirmeleri
@@ -321,6 +314,11 @@ export default function AlphabetGame() {
     }
   }, [current, supportsSpeech, stopRecognition]);
 
+  const progressPct = useMemo(() => {
+    const doneCount = Math.max(0, ALPHABET.length - Math.min(ALPHABET.length, queue.length));
+    return Math.round((doneCount / ALPHABET.length) * 100);
+  }, [queue.length]);
+
   // Unmount cleanup
   useEffect(() => {
     return () => {
@@ -331,7 +329,6 @@ export default function AlphabetGame() {
     };
   }, [stopRecognition]);
 
-  // ✅ DONE ekranı
   if (phase === "done") {
     return (
       <div className="min-h-screen bg-slate-100 flex items-center justify-center p-4">
@@ -399,6 +396,11 @@ export default function AlphabetGame() {
   return (
     <div className="min-h-screen bg-slate-100 flex items-center justify-center p-4">
       <div className="bg-white p-8 rounded-[2.5rem] shadow-2xl w-full max-w-sm text-center relative overflow-hidden border-8 border-indigo-50">
+        {/* Progress */}
+        <div className="w-full bg-slate-200 h-2 rounded-full overflow-hidden mb-4" aria-label={`İlerleme: %${progressPct}`}>
+          <div className="bg-indigo-500 h-full transition-all duration-500" style={{ width: `${progressPct}%` }} />
+        </div>
+
         {/* Puan Durumu */}
         <div className="flex justify-between items-center mb-6">
           <div className="bg-amber-100 text-amber-700 px-4 py-1 rounded-full font-bold text-sm">⭐ {stars}</div>
@@ -411,7 +413,10 @@ export default function AlphabetGame() {
         </div>
 
         {/* Harf Kartları */}
-        <div className="flex justify-center gap-8 my-10 relative">
+        <div
+          className="flex justify-center gap-8 my-10 relative"
+          aria-label={`Büyük harf ${current.upper}, küçük harf ${current.lower}`}
+        >
           {phase === "listen" && (
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-32 h-32 bg-indigo-500/10 rounded-full animate-ping"></div>
@@ -437,6 +442,7 @@ export default function AlphabetGame() {
           ) : (
             <button
               onClick={listen}
+              aria-label="Mikrofonu aç ve söyle"
               className={`w-full py-4 rounded-2xl font-black text-xl transition-all active:scale-95 shadow-lg ${
                 phase === "wrong"
                   ? "bg-white border-4 border-rose-500 text-rose-500"
@@ -453,6 +459,7 @@ export default function AlphabetGame() {
               setErrorMsg(null);
               setPhase("teach");
             }}
+            aria-label="Harfı tekrar anlat"
             className="w-full py-3 rounded-2xl font-black text-base transition-all active:scale-95 border-2 border-slate-200 text-slate-700 hover:bg-slate-50"
           >
             TEKRAR ANLAT 🔊
@@ -460,6 +467,7 @@ export default function AlphabetGame() {
 
           <button
             onClick={next}
+            aria-label="Sonraki harfe geç"
             className="w-full py-3 rounded-2xl font-black text-base transition-all active:scale-95 border-2 border-slate-200 text-slate-700 hover:bg-slate-50"
           >
             GEÇ ⏭️
