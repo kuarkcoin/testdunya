@@ -2,7 +2,7 @@
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
-type Phase = "teach" | "turn" | "correct" | "wrong";
+type Phase = "teach" | "turn" | "listen" | "correct" | "wrong" | "loading";
 
 type Letter = {
   upper: string;
@@ -12,7 +12,7 @@ type Letter = {
 };
 
 const ALPHABET: Letter[] = [
-  { upper: "A", lower: "a", say: ["a"] },
+  { upper: "A", lower: "a", say: ["a", "akadem"] },
   { upper: "B", lower: "b", say: ["be", "b"] },
   { upper: "C", lower: "c", say: ["ce", "c"], hard: true },
   { upper: "Ç", lower: "ç", say: ["çe", "ç"], hard: true },
@@ -20,7 +20,7 @@ const ALPHABET: Letter[] = [
   { upper: "E", lower: "e", say: ["e"] },
   { upper: "F", lower: "f", say: ["fe", "f"] },
   { upper: "G", lower: "g", say: ["ge", "g"] },
-  { upper: "Ğ", lower: "ğ", say: ["yumuşak ge", "yumusak ge", "ğ"], hard: true },
+  { upper: "Ğ", lower: "ğ", say: ["yumuşak ge", "yumusak ge", "ğ", "yumuşak g"], hard: true },
   { upper: "H", lower: "h", say: ["he", "h"] },
   { upper: "I", lower: "ı", say: ["ı"], hard: true },
   { upper: "İ", lower: "i", say: ["i"], hard: true },
@@ -43,149 +43,187 @@ const ALPHABET: Letter[] = [
   { upper: "Z", lower: "z", say: ["ze", "z"] }
 ];
 
-const HARD_REPEAT_MULTIPLIER = 2;
-
 const normalizeTR = (s: string) =>
   s.toLocaleLowerCase("tr-TR").replace(/[^\p{L}]/gu, "").trim();
 
 export default function AlphabetGame() {
   const [queue, setQueue] = useState<Letter[]>([]);
   const [current, setCurrent] = useState<Letter | null>(null);
-  const [phase, setPhase] = useState<Phase>("teach");
-
+  const [phase, setPhase] = useState<Phase>("loading");
   const [score, setScore] = useState(0);
   const [stars, setStars] = useState(0);
-
-  const [stats, setStats] = useState<Record<string, { ok: number; wrong: number }>>(
-    {}
-  );
-
+  const [stats, setStats] = useState<Record<string, { ok: number; wrong: number }>>({});
+  
   const trVoice = useRef<SpeechSynthesisVoice | null>(null);
+  const isSpeakingRef = useRef(false);
 
-  // 🎲 Karışık + zor harf ağırlıklı sıra
+  // 🔊 Sesleri yükle ve bekle
   useEffect(() => {
-    const weighted: Letter[] = [];
-    ALPHABET.forEach((l) => {
-      weighted.push(l);
-      if (l.hard) {
-        for (let i = 0; i < HARD_REPEAT_MULTIPLIER; i++) weighted.push(l);
+    const loadVoices = () => {
+      const voices = window.speechSynthesis.getVoices();
+      const tr = voices.find((v) => v.lang.startsWith("tr"));
+      if (tr) {
+        trVoice.current = tr;
+        if (phase === "loading") setPhase("teach");
       }
-    });
-    setQueue(weighted.sort(() => Math.random() - 0.5));
+    };
+    loadVoices();
+    window.speechSynthesis.onvoiceschanged = loadVoices;
+    return () => { window.speechSynthesis.onvoiceschanged = null; };
+  }, [phase]);
+
+  // 🎲 Karışık harf sırası oluştur
+  useEffect(() => {
+    const weighted = [...ALPHABET].sort(() => Math.random() - 0.5);
+    setQueue(weighted);
   }, []);
 
   useEffect(() => {
-    if (!queue.length) return;
-    setCurrent(queue[0]);
+    if (queue.length > 0) setCurrent(queue[0]);
   }, [queue]);
 
-  // 🔊 Türkçe ses
-  useEffect(() => {
-    const voices = speechSynthesis.getVoices();
-    trVoice.current = voices.find((v) => v.lang.startsWith("tr")) || null;
-  }, []);
-
-  const speak = useCallback((text: string) => {
-    speechSynthesis.cancel();
+  const speak = useCallback((text: string, onEnd?: () => void) => {
+    if (typeof window === "undefined" || !window.speechSynthesis) return;
+    window.speechSynthesis.cancel();
+    
     const u = new SpeechSynthesisUtterance(text);
     u.lang = "tr-TR";
     if (trVoice.current) u.voice = trVoice.current;
-    speechSynthesis.speak(u);
+    
+    u.onstart = () => { isSpeakingRef.current = true; };
+    u.onend = () => {
+      isSpeakingRef.current = false;
+      if (onEnd) onEnd();
+    };
+    
+    window.speechSynthesis.speak(u);
   }, []);
 
+  // Faz değişim seslendirmeleri
   useEffect(() => {
-    if (!current) return;
-    if (phase === "teach")
+    if (!current || phase === "loading" || phase === "listen") return;
+    
+    if (phase === "teach") {
       speak(`Bu büyük ${current.upper}, bu da küçük ${current.lower}. Söyle bakalım.`);
-    if (phase === "correct") speak("Harika! Çok güzel söyledin.");
-    if (phase === "wrong")
-      speak(`Bu ${current.upper}. Dinle: ${current.say[0]}`);
+    } else if (phase === "correct") {
+      speak("Harika! Çok güzel söyledin.", () => {
+        setTimeout(next, 1000);
+      });
+    } else if (phase === "wrong") {
+      speak(`Neredeyse oluyordu. Bu harf ${current.upper}. Bir daha deneyelim.`);
+    }
   }, [phase, current, speak]);
-
-  // 🎤 Speech Recognition
-  const listen = () => {
-    const w = window as any;
-    const SR = w.SpeechRecognition || w.webkitSpeechRecognition;
-    if (!SR || !current) return;
-
-    const rec = new SR();
-    rec.lang = "tr-TR";
-    rec.onresult = (e: any) => {
-      const said = normalizeTR(e.results[0][0].transcript);
-      const ok = current.say.some((s) => normalizeTR(s) === said);
-
-      setStats((p) => ({
-        ...p,
-        [current.upper]: {
-          ok: (p[current.upper]?.ok || 0) + (ok ? 1 : 0),
-          wrong: (p[current.upper]?.wrong || 0) + (!ok ? 1 : 0)
-        }
-      }));
-
-      if (ok) {
-        setScore((s) => s + 10);
-        setStars((s) => s + 1);
-        setPhase("correct");
-        setTimeout(next, 800);
-      } else {
-        setPhase("wrong");
-      }
-    };
-    rec.start();
-  };
 
   const next = () => {
     setQueue((q) => q.slice(1));
     setPhase("teach");
   };
 
-  if (!current)
-    return <div className="p-10 text-center text-xl">🎉 Tüm harfler tamamlandı!</div>;
+  // 🎤 Konuşma Tanıma (Speech Recognition)
+  const listen = () => {
+    const w = window as any;
+    const SR = w.SpeechRecognition || w.webkitSpeechRecognition;
+    
+    if (!SR) {
+      alert("Tarayıcınız ses tanımayı desteklemiyor. Lütfen Chrome kullanın.");
+      return;
+    }
+
+    if (isSpeakingRef.current) return;
+
+    setPhase("listen");
+    const rec = new SR();
+    rec.lang = "tr-TR";
+    rec.continuous = false;
+
+    rec.onresult = (e: any) => {
+      const said = normalizeTR(e.results[0][0].transcript);
+      const isOk = current?.say.some((s) => normalizeTR(s) === said);
+
+      setStats((p) => ({
+        ...p,
+        [current!.upper]: {
+          ok: (p[current!.upper]?.ok || 0) + (isOk ? 1 : 0),
+          wrong: (p[current!.upper]?.wrong || 0) + (!isOk ? 1 : 0)
+        }
+      }));
+
+      if (isOk) {
+        setScore((s) => s + 10);
+        setStars((s) => s + 1);
+        setPhase("correct");
+      } else {
+        setPhase("wrong");
+      }
+    };
+
+    rec.onerror = () => {
+      setPhase("teach");
+    };
+
+    rec.start();
+  };
+
+  if (phase === "loading") return <div className="min-h-screen flex items-center justify-center font-bold">Sesler Yükleniyor...</div>;
+  if (!current) return <div className="min-h-screen flex items-center justify-center text-4xl font-black text-indigo-600">🎉 ALFABE BİTTİ!</div>;
 
   return (
-    <div className="min-h-screen bg-slate-50 flex items-center justify-center">
-      <div className="bg-white p-8 rounded-3xl shadow-xl w-[360px] text-center">
-        <h1 className="text-xl font-bold mb-2">Harf Arkadaşım ⭐</h1>
-
-        <div className="flex justify-center gap-6 my-6">
-          <div className="text-7xl font-black text-indigo-600">{current.upper}</div>
-          <div className="text-7xl font-black text-emerald-600">{current.lower}</div>
+    <div className="min-h-screen bg-slate-100 flex items-center justify-center p-4">
+      <div className="bg-white p-8 rounded-[2.5rem] shadow-2xl w-full max-w-sm text-center relative overflow-hidden border-8 border-indigo-50">
+        
+        {/* Puan Durumu */}
+        <div className="flex justify-between items-center mb-6">
+          <div className="bg-amber-100 text-amber-700 px-4 py-1 rounded-full font-bold text-sm">⭐ {stars}</div>
+          <div className="bg-indigo-100 text-indigo-700 px-4 py-1 rounded-full font-bold text-sm">🧠 {score} Puan</div>
         </div>
 
-        <div className="mb-4 text-sm text-slate-500">
-          ⭐ {stars} | 🧠 Puan: {score}
+        <h1 className="text-2xl font-black text-slate-800 mb-8">Harf Arkadaşım</h1>
+
+        {/* Harf Kartları */}
+        
+        <div className="flex justify-center gap-8 my-10 relative">
+          {phase === "listen" && (
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-32 h-32 bg-indigo-500/10 rounded-full animate-ping"></div>
+            </div>
+          )}
+          <div className="text-8xl font-black text-indigo-600 drop-shadow-sm">{current.upper}</div>
+          <div className="text-8xl font-black text-emerald-600 drop-shadow-sm">{current.lower}</div>
         </div>
 
-        {phase === "teach" && (
-          <button
-            onClick={() => {
-              setPhase("turn");
-              listen();
-            }}
-            className="w-full bg-indigo-600 text-white py-3 rounded-xl font-bold"
-          >
-            Söyle 🎤
-          </button>
-        )}
+        {/* Aksiyon Butonları */}
+        <div className="space-y-4">
+          {phase === "listen" ? (
+            <div className="py-4 text-indigo-600 font-bold animate-pulse">Seni dinliyorum... 🎤</div>
+          ) : phase === "correct" ? (
+            <div className="py-4 text-emerald-600 font-bold text-xl">Harikasın! 🌟</div>
+          ) : (
+            <button
+              onClick={listen}
+              className={`w-full py-4 rounded-2xl font-black text-xl transition-all active:scale-95 shadow-lg ${
+                phase === "wrong" 
+                ? "bg-white border-4 border-rose-500 text-rose-500" 
+                : "bg-indigo-600 text-white hover:bg-indigo-500 shadow-indigo-200"
+              }`}
+            >
+              {phase === "wrong" ? "BİR DAHA DENE 🔄" : "SÖYLE 🎤"}
+            </button>
+          )}
+        </div>
 
-        {phase === "wrong" && (
-          <button
-            onClick={() => {
-              setPhase("turn");
-              listen();
-            }}
-            className="w-full border-2 border-indigo-600 text-indigo-600 py-3 rounded-xl font-bold"
-          >
-            Tekrar Dene 🔄
-          </button>
-        )}
-
-        {/* 👨‍👩‍👧 Ebeveyn Modu */}
-        <details className="mt-6 text-left text-xs">
-          <summary className="cursor-pointer font-semibold">👨‍👩‍👧 Ebeveyn Modu</summary>
-          <pre className="mt-2 bg-slate-100 p-2 rounded">
-{JSON.stringify(stats, null, 2)}
-          </pre>
+        {/* Ebeveyn Paneli */}
+        <details className="mt-10 text-left">
+          <summary className="text-xs font-bold text-slate-400 cursor-pointer hover:text-slate-600 transition">EBEVEYN MODU</summary>
+          <div className="mt-4 bg-slate-50 p-4 rounded-2xl max-h-40 overflow-y-auto border border-slate-100">
+            <h3 className="text-xs font-bold mb-2 border-b pb-1">Hata/Doğru İstatistiği:</h3>
+            {Object.entries(stats).map(([harf, s]) => (
+              <div key={harf} className="text-[10px] flex justify-between font-mono">
+                <span>Harf {harf}:</span>
+                <span className="text-emerald-600">✓{s.ok}</span>
+                <span className="text-rose-600">✗{s.wrong}</span>
+              </div>
+            ))}
+          </div>
         </details>
       </div>
     </div>
