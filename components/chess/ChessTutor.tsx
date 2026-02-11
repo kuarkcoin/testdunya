@@ -65,6 +65,7 @@ export default function ChessTutor() {
   const best = top3[0];
 
   const onSquareClick = (square: string) => {
+    if (loading) return;
     setError('');
     setCustomMove('');
 
@@ -94,6 +95,8 @@ export default function ChessTutor() {
     }
 
     setSelectedTo(square);
+    const autoMove = `${selectedFrom}${square}`;
+    void playVsStockfish(autoMove);
   };
 
   const clearSelection = () => {
@@ -130,8 +133,9 @@ export default function ChessTutor() {
     }
   };
 
-  const playVsStockfish = async () => {
-    const move = currentMove;
+  const playVsStockfish = async (forcedMove?: string) => {
+    if (loading) return;
+    const move = (forcedMove || currentMove).trim();
     if (!move || move.length < 4) {
       setError('Önce hamle seçin veya UCI girin (örn: e2e4).');
       return;
@@ -179,6 +183,7 @@ export default function ChessTutor() {
             <div>
               <h1 className="text-2xl font-bold">/chess — Stockfish ile Oyna</h1>
               <p className="text-sm text-slate-300">Tahtadan hamle seç, Stockfish cevap versin; sonra “neden bu hamle” açıklamasını iste.</p>
+              <p className="text-xs text-cyan-300 mt-1">Sıra: {sideToMove === 'w' ? 'Beyaz' : 'Siyah'} | Kareye tıklayınca hamle otomatik oynatılır.</p>
             </div>
             <button onClick={() => setFen(START_FEN)} className="rounded bg-slate-700 px-3 py-2 text-sm">Pozisyonu Sıfırla</button>
           </div>
@@ -220,7 +225,7 @@ export default function ChessTutor() {
           </div>
 
           <div className="flex flex-wrap gap-2">
-            <button disabled={loading} onClick={fetchHint} className="rounded bg-emerald-600 px-4 py-2 font-semibold">İpucu Al</button>
+            <button disabled={loading} onClick={fetchHint} className="rounded bg-emerald-600 px-4 py-2 font-semibold">Hamle Yardımı / Taktik</button>
             <button
               disabled={loading}
               onClick={() => {
@@ -237,7 +242,7 @@ export default function ChessTutor() {
             >
               Taşı Oynat (lokal)
             </button>
-            <button disabled={loading} onClick={playVsStockfish} className="rounded bg-blue-600 px-4 py-2 font-semibold">Hamleyi Oyna (Stockfish cevaplasın)</button>
+            <button disabled={loading} onClick={playVsStockfish} className="rounded bg-blue-600 px-4 py-2 font-semibold">Hamleyi Oyna (manuel)</button>
             <button disabled={loading} onClick={clearSelection} className="rounded bg-slate-700 px-4 py-2">Seçimi Temizle</button>
             <button
               disabled={!playData}
