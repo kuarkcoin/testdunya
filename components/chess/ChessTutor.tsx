@@ -242,7 +242,7 @@ export default function ChessTutor() {
             >
               Taşı Oynat (lokal)
             </button>
-            <button disabled={loading} onClick={playVsStockfish} className="rounded bg-blue-600 px-4 py-2 font-semibold">Hamleyi Oyna (manuel)</button>
+            <button disabled={loading} onClick={() => void playVsStockfish()} className="rounded bg-blue-600 px-4 py-2 font-semibold">Hamleyi Oyna (manuel)</button>
             <button disabled={loading} onClick={clearSelection} className="rounded bg-slate-700 px-4 py-2">Seçimi Temizle</button>
             <button
               disabled={!playData}
