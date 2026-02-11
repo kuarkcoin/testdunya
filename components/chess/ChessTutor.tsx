@@ -35,6 +35,12 @@ function parseUci(uci: string) {
   };
 }
 
+function pieceBelongsToSide(piece: string | null, side: 'w' | 'b') {
+  if (!piece) return false;
+  const isWhite = piece === piece.toUpperCase();
+  return side === 'w' ? isWhite : !isWhite;
+}
+
 export default function ChessTutor() {
   const [fen, setFen] = useState(START_FEN);
   const [difficulty, setDifficulty] = useState(5);
@@ -49,19 +55,44 @@ export default function ChessTutor() {
   const [stockfishCmd, setStockfishCmd] = useState('');
 
   const board = useMemo(() => parseFenBoard(fen), [fen]);
+  const boardMap = useMemo(() => new Map(board.map((cell) => [cell.square, cell.piece])), [board]);
+  const sideToMove = (fen.split(' ')[1] || 'w') as 'w' | 'b';
   const cache = useMemo(() => new Map<string, HintResponse>(), []);
 
-  const currentMove = customMove || `${selectedFrom}${selectedTo}`;
+  const currentMove = (customMove || `${selectedFrom}${selectedTo}`).trim();
 
   const top3 = playData?.engine.top3 || hint?.topMovesSan || [];
   const best = top3[0];
 
   const onSquareClick = (square: string) => {
+    setError('');
+    setCustomMove('');
+
+    const piece = boardMap.get(square) || null;
+
     if (!selectedFrom) {
+      if (!piece) return;
+      if (!pieceBelongsToSide(piece, sideToMove)) {
+        setError(`Sıra ${sideToMove === 'w' ? 'Beyaz' : 'Siyah'}'da.`);
+        return;
+      }
       setSelectedFrom(square);
       setSelectedTo('');
       return;
     }
+
+    if (selectedFrom === square) {
+      setSelectedFrom('');
+      setSelectedTo('');
+      return;
+    }
+
+    if (piece && pieceBelongsToSide(piece, sideToMove)) {
+      setSelectedFrom(square);
+      setSelectedTo('');
+      return;
+    }
+
     setSelectedTo(square);
   };
 
@@ -100,7 +131,7 @@ export default function ChessTutor() {
   };
 
   const playVsStockfish = async () => {
-    const move = currentMove.trim();
+    const move = currentMove;
     if (!move || move.length < 4) {
       setError('Önce hamle seçin veya UCI girin (örn: e2e4).');
       return;
@@ -123,7 +154,6 @@ export default function ChessTutor() {
       });
       const json = await res.json();
       if (!res.ok) {
-        setFen(fenBefore);
         throw new Error(json.error || 'Hamle işlenemedi');
       }
 
@@ -131,7 +161,8 @@ export default function ChessTutor() {
       setFen(json.fenAfterEngine);
       clearSelection();
     } catch (e) {
-      setError(e instanceof Error ? e.message : 'Bilinmeyen hata');
+      const base = e instanceof Error ? e.message : 'Bilinmeyen hata';
+      setError(`${base}\nMotor hamlesi gelmedi; kullanıcı hamlesi tahtada bırakıldı.`);
     } finally {
       setLoading(false);
     }
@@ -194,9 +225,9 @@ export default function ChessTutor() {
               disabled={loading}
               onClick={() => {
                 try {
-                  const move = currentMove.trim();
-                  if (!move) throw new Error('Hamle girin.');
-                  setFen((prev) => applyUciMoveToFen(prev, move));
+                  setError('');
+                  if (!currentMove) throw new Error('Hamle girin.');
+                  setFen((prev) => applyUciMoveToFen(prev, currentMove));
                   clearSelection();
                 } catch (err) {
                   setError(err instanceof Error ? err.message : 'Hamle uygulanamadı');
