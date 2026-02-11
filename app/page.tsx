@@ -341,6 +341,22 @@ export default function HomePage() {
             })}
           </div>
         </section>
+
+        <section className="bg-white rounded-2xl shadow-xl shadow-indigo-100/40 overflow-hidden border-2 border-indigo-100">
+          <div className="p-4 md:p-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+            <div>
+              <h2 className="text-2xl md:text-3xl font-black text-slate-800 tracking-tight">Chess Premium Coach</h2>
+              <p className="text-slate-500 text-base">Stockfish MultiPV=3 ile her hamlede Top 3 continuation ve eval farkı.</p>
+            </div>
+            <Link
+              href="/chess"
+              className="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-bold transition-all"
+            >
+              /chess Aç
+            </Link>
+          </div>
+        </section>
+
 {/* --- MEB CURRICULUM (İLKÖĞRETİM) --- */}
 <section className="bg-white rounded-2xl shadow-xl shadow-amber-100/50 overflow-hidden border-2 border-amber-100 relative mb-10">
   <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-yellow-400 to-orange-500"></div>
