@@ -46,6 +46,7 @@ export default function ChessTutor() {
   const [hint, setHint] = useState<HintResponse | null>(null);
   const [playData, setPlayData] = useState<PlayResponse | null>(null);
   const [engineCoachOpen, setEngineCoachOpen] = useState(false);
+  const [stockfishCmd, setStockfishCmd] = useState('');
 
   const board = useMemo(() => parseFenBoard(fen), [fen]);
   const cache = useMemo(() => new Map<string, HintResponse>(), []);
@@ -76,7 +77,7 @@ export default function ChessTutor() {
     setPlayData(null);
     setEngineCoachOpen(false);
 
-    const key = `${fen}::${difficulty}::live`;
+    const key = `${fen}::${difficulty}::live::${stockfishCmd}`;
     try {
       if (cache.has(key)) {
         setHint(cache.get(key)!);
@@ -85,7 +86,7 @@ export default function ChessTutor() {
       const res = await fetch('/api/chess/analyze', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ fen, difficulty, chosenType: 'HINT', chosenMoveSan: '' }),
+        body: JSON.stringify({ fen, difficulty, chosenType: 'HINT', chosenMoveSan: '', stockfishCmd }),
       });
       const json = await res.json();
       if (!res.ok) throw new Error(json.error || 'İpucu alınamadı');
@@ -114,7 +115,7 @@ export default function ChessTutor() {
       const res = await fetch('/api/chess/play', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ fen, userMoveUci: move, difficulty }),
+        body: JSON.stringify({ fen, userMoveUci: move, difficulty, stockfishCmd }),
       });
       const json = await res.json();
       if (!res.ok) throw new Error(json.error || 'Hamle işlenemedi');
@@ -169,6 +170,9 @@ export default function ChessTutor() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <label className="text-sm md:col-span-2">Stockfish binary yolu (opsiyonel)
+              <input className="mt-1 w-full rounded bg-slate-800 p-2" value={stockfishCmd} onChange={(e) => setStockfishCmd(e.target.value)} placeholder="/usr/games/stockfish" />
+            </label>
             <label className="text-sm">Seçili hamle (UCI)
               <input className="mt-1 w-full rounded bg-slate-800 p-2" value={currentMove} onChange={(e) => setCustomMove(e.target.value)} placeholder="e2e4" />
             </label>

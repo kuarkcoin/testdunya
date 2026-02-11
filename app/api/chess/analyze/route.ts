@@ -17,6 +17,7 @@ export async function POST(req: NextRequest) {
       movetimeMs = 180,
       difficulty = 5,
       mode = 'live',
+      stockfishCmd,
     } = body || {};
 
     if (!fen) {
@@ -26,7 +27,7 @@ export async function POST(req: NextRequest) {
     const pgnMode = mode === 'pgn';
     const mappedMovetime = pgnMode ? 60 + Math.round((Math.max(1, Math.min(10, difficulty)) - 1) * (240 / 9)) : movetimeMs;
 
-    const analysis = await analyzeMultiPV({ fen, movetimeMs: mappedMovetime, multipv: 3 });
+    const analysis = await analyzeMultiPV({ fen, movetimeMs: mappedMovetime, multipv: 3, stockfishCmd });
     const sideToMove = (fen.split(' ')[1] || 'w') as 'w' | 'b';
 
     const topMovesSan: TopMove[] = analysis.lines.map((line) => {

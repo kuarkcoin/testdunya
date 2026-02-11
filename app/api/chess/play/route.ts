@@ -19,7 +19,7 @@ function toTopMoves(lines: { pvUci: string[]; scoreCp: number | null; scoreMate?
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const { fen, userMoveUci, difficulty = 5 } = body || {};
+    const { fen, userMoveUci, difficulty = 5, stockfishCmd } = body || {};
 
     if (!fen) return NextResponse.json({ error: 'fen gerekli' }, { status: 400 });
     if (!userMoveUci) return NextResponse.json({ error: 'userMoveUci gerekli' }, { status: 400 });
@@ -27,7 +27,7 @@ export async function POST(req: NextRequest) {
     const movetime = 90 + Math.round((Math.max(1, Math.min(10, difficulty)) - 1) * (210 / 9));
 
     const sideBefore = (fen.split(' ')[1] || 'w') as 'w' | 'b';
-    const preUser = await analyzeMultiPV({ fen, movetimeMs: movetime, multipv: 3 });
+    const preUser = await analyzeMultiPV({ fen, movetimeMs: movetime, multipv: 3, stockfishCmd });
     const topBeforeUser = toTopMoves(preUser.lines, sideBefore);
 
     const userCoach = buildNoAiCoachText({
@@ -38,10 +38,10 @@ export async function POST(req: NextRequest) {
       chosenType: 'USER',
     });
 
-    const fenAfterUser = await getFenAfterMove({ fen, uciMove: userMoveUci });
+    const fenAfterUser = await getFenAfterMove({ fen, uciMove: userMoveUci, stockfishCmd });
 
     const sideEngine = (fenAfterUser.split(' ')[1] || 'b') as 'w' | 'b';
-    const preEngine = await analyzeMultiPV({ fen: fenAfterUser, movetimeMs: movetime, multipv: 3 });
+    const preEngine = await analyzeMultiPV({ fen: fenAfterUser, movetimeMs: movetime, multipv: 3, stockfishCmd });
     const topBeforeEngine = toTopMoves(preEngine.lines, sideEngine);
 
     const engineMoveUci = preEngine.bestmoveUci;
@@ -53,7 +53,7 @@ export async function POST(req: NextRequest) {
       chosenType: 'ENGINE',
     });
 
-    const fenAfterEngine = await getFenAfterMove({ fen: fenAfterUser, uciMove: engineMoveUci });
+    const fenAfterEngine = await getFenAfterMove({ fen: fenAfterUser, uciMove: engineMoveUci, stockfishCmd });
 
     return NextResponse.json({
       fenBefore: fen,

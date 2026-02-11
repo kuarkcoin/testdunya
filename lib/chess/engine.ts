@@ -1,3 +1,4 @@
+import { accessSync, constants } from 'fs';
 import { spawn } from 'child_process';
 
 export type Line = {
@@ -24,6 +25,39 @@ const INFO_RE = /info\s+.*\bmultipv\s+(\d+)\b.*\bscore\s+(cp|mate)\s+(-?\d+)\b.*
 const BESTMOVE_RE = /^bestmove\s+(\S+)/;
 const FEN_LINE_RE = /^Fen:\s+(.+)$/i;
 
+const STOCKFISH_CANDIDATES = [
+  'stockfish',
+  '/usr/games/stockfish',
+  '/usr/bin/stockfish',
+  '/usr/local/bin/stockfish',
+  '/opt/homebrew/bin/stockfish',
+] as const;
+
+function canExecute(path: string) {
+  try {
+    accessSync(path, constants.X_OK);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+export function resolveStockfishCommand(preferred?: string) {
+  const candidates = [preferred, process.env.STOCKFISH_CMD, ...STOCKFISH_CANDIDATES].filter(Boolean) as string[];
+  const tried: string[] = [];
+
+  for (const candidate of candidates) {
+    tried.push(candidate);
+    if (candidate.includes('/')) {
+      if (canExecute(candidate)) return { cmd: candidate, tried };
+      continue;
+    }
+    return { cmd: candidate, tried };
+  }
+
+  throw new Error(`Stockfish komutu bulunamadı. Denenen yollar: ${tried.join(', ') || 'yok'}`);
+}
+
 type RunOptions = {
   commands: string[];
   stockfishCmd?: string;
@@ -31,9 +65,11 @@ type RunOptions = {
   timeoutMs?: number;
 };
 
-async function runUciSession({ commands, stockfishCmd = process.env.STOCKFISH_CMD || 'stockfish', waitFor, timeoutMs = 7000 }: RunOptions) {
+async function runUciSession({ commands, stockfishCmd, waitFor, timeoutMs = 7000 }: RunOptions) {
+  const resolved = resolveStockfishCommand(stockfishCmd);
+
   return new Promise<string[]>((resolve, reject) => {
-    const engine = spawn(stockfishCmd, [], { stdio: 'pipe' });
+    const engine = spawn(resolved.cmd, [], { stdio: 'pipe' });
     const output: string[] = [];
     let stderr = '';
     let finished = false;
@@ -48,7 +84,7 @@ async function runUciSession({ commands, stockfishCmd = process.env.STOCKFISH_CM
     };
 
     const timer = setTimeout(() => {
-      done(new Error('Stockfish timeout.'));
+      done(new Error(`Stockfish timeout (${resolved.cmd}).`));
     }, timeoutMs);
 
     engine.stdout.on('data', (chunk) => {
@@ -57,9 +93,7 @@ async function runUciSession({ commands, stockfishCmd = process.env.STOCKFISH_CM
         const line = row.trim();
         if (!line) return;
         output.push(line);
-        if (waitFor && waitFor.test(line)) {
-          done();
-        }
+        if (waitFor && waitFor.test(line)) done();
       });
     });
 
@@ -67,11 +101,9 @@ async function runUciSession({ commands, stockfishCmd = process.env.STOCKFISH_CM
       stderr += String(chunk);
     });
 
-    engine.on('error', (err) => done(new Error(`Stockfish başlatılamadı: ${err.message}`)));
+    engine.on('error', (err) => done(new Error(`Stockfish başlatılamadı (${resolved.cmd}): ${err.message}`)));
     engine.on('close', (code) => {
-      if (!finished) {
-        done(new Error(`Stockfish erken kapandı (code=${code}). ${stderr}`));
-      }
+      if (!finished) done(new Error(`Stockfish erken kapandı (cmd=${resolved.cmd}, code=${code}). ${stderr}`));
     });
 
     commands.forEach((cmd) => engine.stdin.write(`${cmd}\n`));
@@ -95,24 +127,11 @@ export function parseInfoLine(line: string): Line | null {
   };
 }
 
-export async function analyzeMultiPV({
-  fen,
-  movetimeMs = 180,
-  depth,
-  multipv = 3,
-  stockfishCmd,
-}: AnalyzeParams): Promise<MultiPvAnalysis> {
+export async function analyzeMultiPV({ fen, movetimeMs = 180, depth, multipv = 3, stockfishCmd }: AnalyzeParams): Promise<MultiPvAnalysis> {
   const output = await runUciSession({
     stockfishCmd,
     waitFor: BESTMOVE_RE,
-    commands: [
-      'uci',
-      'isready',
-      `setoption name MultiPV value ${multipv}`,
-      'ucinewgame',
-      `position fen ${fen}`,
-      depth ? `go depth ${depth}` : `go movetime ${movetimeMs}`,
-    ],
+    commands: ['uci', 'isready', `setoption name MultiPV value ${multipv}`, 'ucinewgame', `position fen ${fen}`, depth ? `go depth ${depth}` : `go movetime ${movetimeMs}`],
   });
 
   let bestmoveUci = '';
@@ -125,14 +144,9 @@ export async function analyzeMultiPV({
     if (bm) bestmoveUci = bm[1];
   });
 
-  if (!bestmoveUci) {
-    throw new Error('bestmove alınamadı.');
-  }
+  if (!bestmoveUci) throw new Error('bestmove alınamadı.');
 
-  const lines = Array.from(linesByPv.values())
-    .sort((a, b) => a.multipv - b.multipv)
-    .slice(0, multipv);
-
+  const lines = Array.from(linesByPv.values()).sort((a, b) => a.multipv - b.multipv).slice(0, multipv);
   return { bestmoveUci, lines };
 }
 
