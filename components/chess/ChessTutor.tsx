@@ -1,7 +1,7 @@
 'use client';
 
 import { useMemo, useState } from 'react';
-import { parseFenBoard, pieceToUnicode } from '../../lib/chess/fen';
+import { applyUciMoveToFen, parseFenBoard, pieceToUnicode } from '../../lib/chess/fen';
 
 type TopMove = { san: string; evalCp: number | null; pvSanShort: string[]; scoreMate?: number | null };
 
@@ -111,14 +111,21 @@ export default function ChessTutor() {
     setHint(null);
     setEngineCoachOpen(false);
 
+    const fenBefore = fen;
     try {
+      const fenAfterUserLocal = applyUciMoveToFen(fenBefore, move);
+      setFen(fenAfterUserLocal);
+
       const res = await fetch('/api/chess/play', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ fen, userMoveUci: move, difficulty, stockfishCmd }),
+        body: JSON.stringify({ fen: fenBefore, userMoveUci: move, difficulty, stockfishCmd }),
       });
       const json = await res.json();
-      if (!res.ok) throw new Error(json.error || 'Hamle işlenemedi');
+      if (!res.ok) {
+        setFen(fenBefore);
+        throw new Error(json.error || 'Hamle işlenemedi');
+      }
 
       setPlayData(json);
       setFen(json.fenAfterEngine);
@@ -183,6 +190,22 @@ export default function ChessTutor() {
 
           <div className="flex flex-wrap gap-2">
             <button disabled={loading} onClick={fetchHint} className="rounded bg-emerald-600 px-4 py-2 font-semibold">İpucu Al</button>
+            <button
+              disabled={loading}
+              onClick={() => {
+                try {
+                  const move = currentMove.trim();
+                  if (!move) throw new Error('Hamle girin.');
+                  setFen((prev) => applyUciMoveToFen(prev, move));
+                  clearSelection();
+                } catch (err) {
+                  setError(err instanceof Error ? err.message : 'Hamle uygulanamadı');
+                }
+              }}
+              className="rounded bg-amber-600 px-4 py-2 font-semibold"
+            >
+              Taşı Oynat (lokal)
+            </button>
             <button disabled={loading} onClick={playVsStockfish} className="rounded bg-blue-600 px-4 py-2 font-semibold">Hamleyi Oyna (Stockfish cevaplasın)</button>
             <button disabled={loading} onClick={clearSelection} className="rounded bg-slate-700 px-4 py-2">Seçimi Temizle</button>
             <button

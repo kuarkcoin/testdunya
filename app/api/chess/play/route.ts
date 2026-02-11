@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { analyzeMultiPV, getFenAfterMove } from '../../../../lib/chess/engine';
+import { analyzeMultiPV } from '../../../../lib/chess/engine';
 import { buildNoAiCoachText, type TopMove } from '../../../../lib/chess/analyze';
+import { applyUciMoveToFen } from '../../../../lib/chess/fen';
 
 function evalForSide(cp: number | null, side: 'w' | 'b') {
   if (cp == null) return null;
@@ -38,7 +39,7 @@ export async function POST(req: NextRequest) {
       chosenType: 'USER',
     });
 
-    const fenAfterUser = await getFenAfterMove({ fen, uciMove: userMoveUci, stockfishCmd });
+    const fenAfterUser = applyUciMoveToFen(fen, userMoveUci);
 
     const sideEngine = (fenAfterUser.split(' ')[1] || 'b') as 'w' | 'b';
     const preEngine = await analyzeMultiPV({ fen: fenAfterUser, movetimeMs: movetime, multipv: 3, stockfishCmd });
@@ -53,7 +54,7 @@ export async function POST(req: NextRequest) {
       chosenType: 'ENGINE',
     });
 
-    const fenAfterEngine = await getFenAfterMove({ fen: fenAfterUser, uciMove: engineMoveUci, stockfishCmd });
+    const fenAfterEngine = applyUciMoveToFen(fenAfterUser, engineMoveUci);
 
     return NextResponse.json({
       fenBefore: fen,
@@ -70,7 +71,7 @@ export async function POST(req: NextRequest) {
         coachText: engineCoach,
       },
       movetime,
-      note: 'Hamleler UCI gösterimi ile işlenir; SAN dönüşümü bu sürümde yok.',
+      note: 'Tahta hamlesi anında FEN üzerinde uygulanır; SAN dönüşümü bu sürümde yok.',
     });
   } catch (error) {
     return NextResponse.json(
