@@ -191,7 +191,7 @@ export default function MistakesPage() {
                 (m.uniqueId ? m.uniqueId.split('-q')[0] : '');
 
               // --- DİL ALGILAMA MANTIĞI ---
-              const isEnglishContent = ['ielts', 'yds', 'yökdil', 'toefl', 'english'].some(keyword => 
+              const isEnglishContent = ['ielts', 'yds', 'yökdil', 'toefl', 'english', 'engesp'].some(keyword => 
                 titleSource.toLowerCase().includes(keyword)
               );
 

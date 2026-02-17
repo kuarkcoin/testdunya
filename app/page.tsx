@@ -160,6 +160,16 @@ const Sparkles = (props: React.SVGProps<SVGSVGElement>) => (
 // -------------------- DATA --------------------
 const examConfig = [
   {
+    id: 'engesp',
+    prefix: 'engesp',
+    title: 'C1-C2 English • Spanish',
+    count: 50,
+    activeLimit: 50,
+    desc: '50 test • her testte 50 İngilizce-İspanyolca açıklamalı soru.',
+    icon: <Globe className="w-6 h-6 text-white" />,
+    gradient: 'from-emerald-600 to-cyan-600',
+  },
+  {
     id: 'placement',
     prefix: 'ielts-level-test',
     title: 'Level Assessment',
@@ -275,6 +285,13 @@ export default function HomePage() {
             </p>
 
             <div className="flex flex-wrap gap-4 pt-4">
+              <button
+                onClick={() => isClient && document.getElementById('engesp-tests')?.scrollIntoView({ behavior: 'smooth' })}
+                className="px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl font-bold text-lg transition-all shadow-lg shadow-emerald-900/40"
+              >
+                C1-C2 İngilizce • İspanyolca (50 Test)
+              </button>
+
               <Link href="/mistakes" className="px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl font-bold text-lg transition-all flex items-center gap-2">
                 <span>📕</span> Hatalarım
               </Link>
@@ -794,7 +811,7 @@ export default function HomePage() {
           const hasMore = exam.activeLimit < exam.count;
 
           return (
-            <section key={exam.id} className="bg-white rounded-2xl shadow-xl shadow-slate-200/50 overflow-hidden border border-slate-100 transition-all hover:shadow-2xl hover:shadow-indigo-100/50">
+            <section id={exam.id === 'engesp' ? 'engesp-tests' : undefined} key={exam.id} className="bg-white rounded-2xl shadow-xl shadow-slate-200/50 overflow-hidden border border-slate-100 transition-all hover:shadow-2xl hover:shadow-indigo-100/50">
               <div className={`p-4 md:p-6 bg-gradient-to-r ${exam.gradient} text-white flex items-center justify-between`}>
                 <div className="flex items-center gap-4">
                   <div className="p-3 bg-white/20 backdrop-blur-sm rounded-xl shadow-inner">{exam.icon}</div>
@@ -814,7 +831,7 @@ export default function HomePage() {
               <div className="p-3 md:p-6 bg-slate-50/50">
                 <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-8 gap-2 md:gap-4">
                   {Array.from({ length: loopCount }, (_, i) => i + 1).map((num) => {
-                    const testLinkId = `${exam.prefix}-${num}`;
+                    const testLinkId = exam.id === 'engesp' ? `engesp${num}` : `${exam.prefix}-${num}`;
                     const isDone = (completed[exam.id] || []).includes(num);
                     const isActive = num <= exam.activeLimit;
 
