@@ -1,302 +1,302 @@
 [
   {
     "id": "anayasa-2-1",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (26)",
+    "question": "1982 Anayasası'nın 3. maddesine göre, Türkiye Devleti'nin 'dili' ile ilgili hüküm tam olarak nasıldır?",
     "options": [
-      "T.C. Anayasası ile bağdaşmayan uygulama 26",
-      "T.C. Anayasası açısından yanlış hüküm 26",
-      "T.C. Anayasası kapsamında doğru ifade 26",
-      "T.C. Anayasası ile ilgili hatalı yorum 26"
+      "Resmi dili Türkçedir.",
+      "Dili Türkçedir.",
+      "Ana dili Türkçedir.",
+      "Devlet dili Türkçedir."
     ],
-    "answer": "C",
-    "explanation": "Doğru cevap C. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 26."
+    "answer": "B",
+    "açıklama": "Doğru cevap B. Anayasa'nın 3. maddesinde 'Türkiye Devleti, ülkesi ve milletiyle bölünmez bir bütündür. Dili Türkçedir.' ifadesi yer alır. 'Resmi dil' ibaresi 1982 Anayasası metninde doğrudan bu şekilde geçmez."
   },
   {
     "id": "anayasa-2-2",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (27)",
+    "question": "Anayasa'ya göre, kişinin vücut bütünlüğüne dokunulabilmesi (tıbbi zorunluluklar hariç) neye bağlıdır?",
     "options": [
-      "T.C. Anayasası açısından yanlış hüküm 27",
-      "T.C. Anayasası kapsamında doğru ifade 27",
-      "T.C. Anayasası ile ilgili hatalı yorum 27",
-      "T.C. Anayasası ile bağdaşmayan uygulama 27"
+      "Kişinin rızasına",
+      "Hekim kararına",
+      "Bakanlık iznine",
+      "Emniyet amirinin emrine"
     ],
-    "answer": "B",
-    "explanation": "Doğru cevap B. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 27."
+    "answer": "A",
+    "açıklama": "Doğru cevap A. Anayasa'nın 17. maddesine göre; tıbbi zorunluluklar ve kanunda yazılı haller dışında, kişinin vücut bütünlüğüne dokunulamaz; rızası olmadan bilimsel ve tıbbi deneylere tabi tutulamaz."
   },
   {
     "id": "anayasa-2-3",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (28)",
+    "question": "Anayasa'nın 42. maddesine göre, eğitim ve öğretim hürriyeti neye aykırı olamaz?",
     "options": [
-      "T.C. Anayasası kapsamında doğru ifade 28",
-      "T.C. Anayasası ile ilgili hatalı yorum 28",
-      "T.C. Anayasası ile bağdaşmayan uygulama 28",
-      "T.C. Anayasası açısından yanlış hüküm 28"
+      "Genel ahlaka",
+      "Okul yönetimine",
+      "Anayasa'ya sadakat borcuna",
+      "Yerel geleneklere"
     ],
-    "answer": "A",
-    "explanation": "Doğru cevap A. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 28."
+    "answer": "C",
+    "açıklama": "Doğru cevap C. Eğitim ve öğretim, Atatürk ilkeleri ve inkılapları doğrultusunda, çağdaş bilim ve eğitim esaslarına göre yapılır. Bu esaslara aykırı eğitim ve öğretim yerleri açılamaz. Eğitim hürriyeti Anayasa'ya sadakat borcuna aykırı kullanılamaz."
   },
   {
     "id": "anayasa-2-4",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (29)",
+    "question": "Siyasi partilerin 'ticari faaliyetlere' girişmeleri ile ilgili Anayasa hükmü nedir?",
     "options": [
-      "T.C. Anayasası ile ilgili hatalı yorum 29",
-      "T.C. Anayasası ile bağdaşmayan uygulama 29",
-      "T.C. Anayasası açısından yanlış hüküm 29",
-      "T.C. Anayasası kapsamında doğru ifade 29"
+      "Serbesttir.",
+      "Sadece yayıncılık alanında serbesttir.",
+      "Kesinlikle yasaktır.",
+      "Maliye Bakanlığı iznine tabidir."
     ],
-    "answer": "D",
-    "explanation": "Doğru cevap D. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 29."
+    "answer": "C",
+    "açıklama": "Doğru cevap C. Siyasi partiler ticari faaliyetlere girişemezler. Gelirleri sadece üye aidatları, bağışlar ve devlet yardımlarından oluşur."
   },
   {
     "id": "anayasa-2-5",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (30)",
+    "question": "TBMM üyelerinin, meclis çalışmalarındaki oy ve sözlerinden dolayı sorumlu tutulamamasına ne ad verilir?",
     "options": [
-      "T.C. Anayasası ile bağdaşmayan uygulama 30",
-      "T.C. Anayasası açısından yanlış hüküm 30",
-      "T.C. Anayasası kapsamında doğru ifade 30",
-      "T.C. Anayasası ile ilgili hatalı yorum 30"
+      "Yasama dokunulmazlığı",
+      "Yasama sorumsuzluğu",
+      "Kürsü masuniyeti",
+      "Siyasi bağışıklık"
     ],
-    "answer": "C",
-    "explanation": "Doğru cevap C. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 30."
+    "answer": "B",
+    "açıklama": "Doğru cevap B. Yasama sorumsuzluğu (mutlak dokunulmazlık); milletvekillerinin Meclis çalışmalarındaki oy ve sözlerinden, bunları dışarıda tekrarlamalarından dolayı sorumlu tutulamamasıdır ve süreklidir."
   },
   {
     "id": "anayasa-2-6",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (31)",
+    "question": "2017 Anayasa değişikliği ile TBMM'nin bilgi edinme ve denetim yollarından hangisi kaldırılmıştır?",
     "options": [
-      "T.C. Anayasası açısından yanlış hüküm 31",
-      "T.C. Anayasası kapsamında doğru ifade 31",
-      "T.C. Anayasası ile ilgili hatalı yorum 31",
-      "T.C. Anayasası ile bağdaşmayan uygulama 31"
+      "Yazılı soru",
+      "Meclis araştırması",
+      "Gensoru",
+      "Genel görüşme"
     ],
-    "answer": "B",
-    "explanation": "Doğru cevap B. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 31."
+    "answer": "C",
+    "açıklama": "Doğru cevap C. Parlamenter sistemin bir aracı olan ve hükümeti düşürme yetkisi veren 'Gensoru', Cumhurbaşkanlığı Hükümet Sistemi'ne geçişle birlikte kaldırılmıştır."
   },
   {
     "id": "anayasa-2-7",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (32)",
+    "question": "TBMM'de 'Bütçe Kanunu' teklifini sunma yetkisi kime aittir?",
     "options": [
-      "T.C. Anayasası kapsamında doğru ifade 32",
-      "T.C. Anayasası ile ilgili hatalı yorum 32",
-      "T.C. Anayasası ile bağdaşmayan uygulama 32",
-      "T.C. Anayasası açısından yanlış hüküm 32"
+      "Maliye Bakanı",
+      "TBMM Plan ve Bütçe Komisyonu",
+      "Cumhurbaşkanı",
+      "En çok üyeye sahip parti grubu"
     ],
-    "answer": "A",
-    "explanation": "Doğru cevap A. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 32."
+    "answer": "C",
+    "açıklama": "Doğru cevap C. Anayasa'nın 161. maddesine göre; Cumhurbaşkanı, bütçe kanun teklifini mali yılbaşından en az yetmiş beş gün önce Türkiye Büyük Millet Meclisine sunar."
   },
   {
     "id": "anayasa-2-8",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (33)",
+    "question": "TBMM Başkanı seçimi en fazla kaç turda tamamlanır?",
     "options": [
-      "T.C. Anayasası ile ilgili hatalı yorum 33",
-      "T.C. Anayasası ile bağdaşmayan uygulama 33",
-      "T.C. Anayasası açısından yanlış hüküm 33",
-      "T.C. Anayasası kapsamında doğru ifade 33"
+      "2 tur",
+      "3 tur",
+      "4 tur",
+      "5 tur"
     ],
-    "answer": "D",
-    "explanation": "Doğru cevap D. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 33."
+    "answer": "C",
+    "açıklama": "Doğru cevap C. TBMM Başkanı seçimi gizli oyla yapılır. İlk iki turda üye tamsayısının 2/3'ü, üçüncü turda salt çoğunluk aranır. Üçüncü turda salt çoğunluk sağlanamazsa, bu turda en çok oy alan iki aday için dördüncü tur yapılır ve en fazla oy alan seçilir."
   },
   {
     "id": "anayasa-2-9",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (34)",
+    "question": "Milletlerarası antlaşmaların onaylanmasının uygun bulunması yetkisi kime aittir?",
     "options": [
-      "T.C. Anayasası ile bağdaşmayan uygulama 34",
-      "T.C. Anayasası açısından yanlış hüküm 34",
-      "T.C. Anayasası kapsamında doğru ifade 34",
-      "T.C. Anayasası ile ilgili hatalı yorum 34"
+      "Dışişleri Bakanlığı",
+      "Cumhurbaşkanı",
+      "TBMM",
+      "Danıştay"
     ],
     "answer": "C",
-    "explanation": "Doğru cevap C. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 34."
+    "açıklama": "Doğru cevap C. Milletlerarası antlaşmaları onaylamak Cumhurbaşkanının görevi olsa da, bu antlaşmaların onaylanmasını bir kanunla 'uygun bulmak' TBMM'nin yetkisindedir."
   },
   {
     "id": "anayasa-2-10",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (35)",
+    "question": "Cumhurbaşkanı, TBMM tarafından kabul edilen kanunları kaç gün içinde yayımlar veya geri gönderir?",
     "options": [
-      "T.C. Anayasası açısından yanlış hüküm 35",
-      "T.C. Anayasası kapsamında doğru ifade 35",
-      "T.C. Anayasası ile ilgili hatalı yorum 35",
-      "T.C. Anayasası ile bağdaşmayan uygulama 35"
+      "7 gün",
+      "10 gün",
+      "15 gün",
+      "30 gün"
     ],
-    "answer": "B",
-    "explanation": "Doğru cevap B. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 35."
+    "answer": "C",
+    "açıklama": "Doğru cevap C. Cumhurbaşkanı, kanunları 15 gün içinde yayımlar veya yayımlanmasını kısmen veya tamamen uygun bulmazsa aynı süre içinde gerekçesiyle birlikte TBMM'ye geri gönderir."
   },
   {
     "id": "anayasa-2-11",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (36)",
+    "question": "Bir kimse en fazla kaç defa Cumhurbaşkanı seçilebilir?",
     "options": [
-      "T.C. Anayasası kapsamında doğru ifade 36",
-      "T.C. Anayasası ile ilgili hatalı yorum 36",
-      "T.C. Anayasası ile bağdaşmayan uygulama 36",
-      "T.C. Anayasası açısından yanlış hüküm 36"
+      "1",
+      "2",
+      "3",
+      "Sınırsız"
     ],
-    "answer": "A",
-    "explanation": "Doğru cevap A. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 36."
+    "answer": "B",
+    "açıklama": "Doğru cevap B. Anayasa'nın 101. maddesine göre bir kimse en fazla iki defa Cumhurbaşkanı seçilebilir."
   },
   {
     "id": "anayasa-2-12",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (37)",
+    "question": "Cumhurbaşkanlığı Kararnameleri (CBK) ile kanunlar arasında uyuşmazlık olması durumunda hangisi uygulanır?",
     "options": [
-      "T.C. Anayasası ile ilgili hatalı yorum 37",
-      "T.C. Anayasası ile bağdaşmayan uygulama 37",
-      "T.C. Anayasası açısından yanlış hüküm 37",
-      "T.C. Anayasası kapsamında doğru ifade 37"
+      "Daha sonra çıkan norm uygulanır.",
+      "Cumhurbaşkanlığı Kararnamesi uygulanır.",
+      "Konuya göre Anayasa Mahkemesi karar verir.",
+      "Kanun hükümleri uygulanır."
     ],
     "answer": "D",
-    "explanation": "Doğru cevap D. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 37."
+    "açıklama": "Doğru cevap D. Anayasa'nın 104. maddesine göre; Cumhurbaşkanlığı kararnamesi ile kanunlarda farklı hükümler bulunması halinde, kanun hükümleri uygulanır."
   },
   {
     "id": "anayasa-2-13",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (38)",
+    "question": "Devlet Denetleme Kurulu (DDK) aşağıdakilerden hangisini denetleyemez?",
     "options": [
-      "T.C. Anayasası ile bağdaşmayan uygulama 38",
-      "T.C. Anayasası açısından yanlış hüküm 38",
-      "T.C. Anayasası kapsamında doğru ifade 38",
-      "T.C. Anayasası ile ilgili hatalı yorum 38"
+      "Türk Silahlı Kuvvetleri",
+      "Yargı organları",
+      "Üniversiteler",
+      "Sendikalar"
     ],
-    "answer": "C",
-    "explanation": "Doğru cevap C. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 38."
+    "answer": "B",
+    "açıklama": "Doğru cevap B. 2017 değişikliği ile TSK denetim kapsamına alınmıştır. Ancak 'Yargı organları' DDK'nın denetim alanı dışındadır."
   },
   {
     "id": "anayasa-2-14",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (39)",
+    "question": "Başkomutanlık, TBMM adına kim tarafından temsil edilir?",
     "options": [
-      "T.C. Anayasası açısından yanlış hüküm 39",
-      "T.C. Anayasası kapsamında doğru ifade 39",
-      "T.C. Anayasası ile ilgili hatalı yorum 39",
-      "T.C. Anayasası ile bağdaşmayan uygulama 39"
+      "TBMM Başkanı",
+      "Genelkurmay Başkanı",
+      "Milli Savunma Bakanı",
+      "Cumhurbaşkanı"
     ],
-    "answer": "B",
-    "explanation": "Doğru cevap B. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 39."
+    "answer": "D",
+    "açıklama": "Doğru cevap D. Anayasa'nın 117. maddesine göre; Başkomutanlık, Türkiye Büyük Millet Meclisinin manevi varlığından ayrılamaz ve Cumhurbaşkanı tarafından temsil olunur."
   },
   {
     "id": "anayasa-2-15",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (40)",
+    "question": "Anayasa Mahkemesi'ne 'Bireysel Başvuru' yapabilmek için hangi şartın gerçekleşmesi gerekir?",
     "options": [
-      "T.C. Anayasası kapsamında doğru ifade 40",
-      "T.C. Anayasası ile ilgili hatalı yorum 40",
-      "T.C. Anayasası ile bağdaşmayan uygulama 40",
-      "T.C. Anayasası açısından yanlış hüküm 40"
+      "Sadece dava açılmış olması",
+      "Olağan kanun yollarının tüketilmiş olması",
+      "TBMM İnsan Hakları Komisyonuna başvurulmuş olması",
+      "Savcılıktan izin alınması"
     ],
-    "answer": "A",
-    "explanation": "Doğru cevap A. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 40."
+    "answer": "B",
+    "açıklama": "Doğru cevap B. Bireysel başvuru yapılabilmesi için olağan kanun yollarının (istinaf, temyiz vb.) tüketilmiş olması zorunludur."
   },
   {
     "id": "anayasa-2-16",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (41)",
+    "question": "Danıştay üyelerinin dörtte birini (1/4) kim seçer?",
     "options": [
-      "T.C. Anayasası ile ilgili hatalı yorum 41",
-      "T.C. Anayasası ile bağdaşmayan uygulama 41",
-      "T.C. Anayasası açısından yanlış hüküm 41",
-      "T.C. Anayasası kapsamında doğru ifade 41"
+      "TBMM",
+      "Adalet Bakanı",
+      "Cumhurbaşkanı",
+      "Hâkimler ve Savcılar Kurulu"
     ],
-    "answer": "D",
-    "explanation": "Doğru cevap D. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 41."
+    "answer": "C",
+    "açıklama": "Doğru cevap C. Danıştay üyelerinin dörtte üçü Hâkimler ve Savcılar Kurulu, dörtte biri ise Cumhurbaşkanı tarafından seçilir."
   },
   {
     "id": "anayasa-2-17",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (42)",
+    "question": "Yargıtay Cumhuriyet Başsavcısı ve Vekili kim tarafından seçilir?",
     "options": [
-      "T.C. Anayasası ile bağdaşmayan uygulama 42",
-      "T.C. Anayasası açısından yanlış hüküm 42",
-      "T.C. Anayasası kapsamında doğru ifade 42",
-      "T.C. Anayasası ile ilgili hatalı yorum 42"
+      "Yargıtay Genel Kurulu",
+      "Adalet Bakanı",
+      "Hâkimler ve Savcılar Kurulu",
+      "Cumhurbaşkanı"
     ],
-    "answer": "C",
-    "explanation": "Doğru cevap C. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 42."
+    "answer": "D",
+    "açıklama": "Doğru cevap D. Yargıtay Genel Kurulunun kendi üyeleri arasından göstereceği adaylar arasından, Cumhurbaşkanı tarafından 4 yıl için seçilirler."
   },
   {
     "id": "anayasa-2-18",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (43)",
+    "question": "Sayıştay, denetimlerini kim adına yapar?",
     "options": [
-      "T.C. Anayasası açısından yanlış hüküm 43",
-      "T.C. Anayasası kapsamında doğru ifade 43",
-      "T.C. Anayasası ile ilgili hatalı yorum 43",
-      "T.C. Anayasası ile bağdaşmayan uygulama 43"
+      "Cumhurbaşkanı adına",
+      "TBMM adına",
+      "Maliye Bakanlığı adına",
+      "Türk Milleti adına"
     ],
     "answer": "B",
-    "explanation": "Doğru cevap B. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 43."
+    "açıklama": "Doğru cevap B. Sayıştay, merkezi yönetim bütçesi kapsamındaki kamu idarelerinin gelir ve giderlerini Türkiye Büyük Millet Meclisi (TBMM) adına denetler."
   },
   {
     "id": "anayasa-2-19",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (44)",
+    "question": "Aşağıdakilerden hangisi kamu hizmeti görevlileriyle ilgili Anayasa'da belirtilen temel ilkelerden biri değildir?",
     "options": [
-      "T.C. Anayasası kapsamında doğru ifade 44",
-      "T.C. Anayasası ile ilgili hatalı yorum 44",
-      "T.C. Anayasası ile bağdaşmayan uygulama 44",
-      "T.C. Anayasası açısından yanlış hüküm 44"
+      "Liyakat",
+      "Sınıflandırma",
+      "Kariyer",
+      "Rotasyon"
     ],
-    "answer": "A",
-    "explanation": "Doğru cevap A. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 44."
+    "answer": "D",
+    "açıklama": "Doğru cevap D. Memurluk mesleğinin üç temel ilkesi; Sınıflandırma, Kariyer ve Liyakat'tir. Rotasyon bir atama yöntemidir, anayasal bir ilke değildir."
   },
   {
     "id": "anayasa-2-20",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (45)",
+    "question": "Kamu görevlilerinin, kanuna aykırı buldukları emri yerine getirmemekte direnmesi ancak amirin emri nasıl yinelemesiyle ortadan kalkar?",
     "options": [
-      "T.C. Anayasası ile ilgili hatalı yorum 45",
-      "T.C. Anayasası ile bağdaşmayan uygulama 45",
-      "T.C. Anayasası açısından yanlış hüküm 45",
-      "T.C. Anayasası kapsamında doğru ifade 45"
+      "Sözlü olarak tekrarlamasıyla",
+      "Telefonla bildirmesiyle",
+      "Yazı ile yenilemesiyle",
+      "Tanık huzurunda söylemesiyle"
     ],
-    "answer": "D",
-    "explanation": "Doğru cevap D. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 45."
+    "answer": "C",
+    "açıklama": "Doğru cevap C. Amir emrinde ısrar eder ve bu emrini yazı ile yenilerse, memur bu emri yapmaya mecburdur; ancak sorumluluk emri verene ait olur (Konusu suç teşkil eden emirler hariç)."
   },
   {
     "id": "anayasa-2-21",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (46)",
+    "question": "Üniversite rektörlerini seçme ve atama yetkisi kime aittir?",
     "options": [
-      "T.C. Anayasası ile bağdaşmayan uygulama 46",
-      "T.C. Anayasası açısından yanlış hüküm 46",
-      "T.C. Anayasası kapsamında doğru ifade 46",
-      "T.C. Anayasası ile ilgili hatalı yorum 46"
+      "YÖK Başkanı",
+      "Milli Eğitim Bakanı",
+      "Cumhurbaşkanı",
+      "TBMM Başkanı"
     ],
     "answer": "C",
-    "explanation": "Doğru cevap C. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 46."
+    "açıklama": "Doğru cevap C. Kanunda belirlenen usullere göre rektörleri atama yetkisi Cumhurbaşkanı'na aittir."
   },
   {
     "id": "anayasa-2-22",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (47)",
+    "question": "Kamu kurumu niteliğindeki meslek kuruluşlarının (Barolar, Odalar vb.) organlarının görevine ancak kim son verebilir?",
     "options": [
-      "T.C. Anayasası açısından yanlış hüküm 47",
-      "T.C. Anayasası kapsamında doğru ifade 47",
-      "T.C. Anayasası ile ilgili hatalı yorum 47",
-      "T.C. Anayasası ile bağdaşmayan uygulama 47"
+      "İlgili Bakanlık",
+      "Valilik",
+      "Yargı (Mahkeme) kararı",
+      "Cumhurbaşkanlığı Kararnamesi"
     ],
-    "answer": "B",
-    "explanation": "Doğru cevap B. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 47."
+    "answer": "C",
+    "açıklama": "Doğru cevap C. Bu kuruluşların seçimle gelen organlarının görevlerine ancak kanunun öngördüğü durumlarda yargı kararıyla son verilebilir."
   },
   {
     "id": "anayasa-2-23",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (48)",
+    "question": "Anayasa'nın 73. maddesine göre 'Vergi Ödevi' ile ilgili olarak vergi neye göre alınır?",
     "options": [
-      "T.C. Anayasası kapsamında doğru ifade 48",
-      "T.C. Anayasası ile ilgili hatalı yorum 48",
-      "T.C. Anayasası ile bağdaşmayan uygulama 48",
-      "T.C. Anayasası açısından yanlış hüküm 48"
+      "Herkese eşit miktarda",
+      "Mali güce göre",
+      "Yaşa göre",
+      "Eğitim durumuna göre"
     ],
-    "answer": "A",
-    "explanation": "Doğru cevap A. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 48."
+    "answer": "B",
+    "açıklama": "Doğru cevap B. Herkes, kamu giderlerini karşılamak üzere 'mali gücüne göre' vergi ödemekle yükümlüdür."
   },
   {
     "id": "anayasa-2-24",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (49)",
+    "question": "2017 Anayasa değişikliği ile aşağıdakilerden hangisi kaldırılmıştır?",
     "options": [
-      "T.C. Anayasası ile ilgili hatalı yorum 49",
-      "T.C. Anayasası ile bağdaşmayan uygulama 49",
-      "T.C. Anayasası açısından yanlış hüküm 49",
-      "T.C. Anayasası kapsamında doğru ifade 49"
+      "Askeri Yargıtay",
+      "Sayıştay",
+      "Yüksek Seçim Kurulu",
+      "Uyuşmazlık Mahkemesi"
     ],
-    "answer": "D",
-    "explanation": "Doğru cevap D. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 49."
+    "answer": "A",
+    "açıklama": "Doğru cevap A. 2017 değişikliği ile Askeri Yargıtay ve Askeri Yüksek İdare Mahkemesi (AYİM) kaldırılarak askeri yargı (disiplin mahkemeleri hariç) sonlandırılmıştır."
   },
   {
     "id": "anayasa-2-25",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (50)",
+    "question": "Anayasa'nın başlangıç metnine göre egemenlik kime aittir?",
     "options": [
-      "T.C. Anayasası ile bağdaşmayan uygulama 50",
-      "T.C. Anayasası açısından yanlış hüküm 50",
-      "T.C. Anayasası kapsamında doğru ifade 50",
-      "T.C. Anayasası ile ilgili hatalı yorum 50"
+      "Kayıtsız şartsız Millete",
+      "TBMM'ye",
+      "Devlet Başkanına",
+      "Hukuk kurallarına"
     ],
-    "answer": "C",
-    "explanation": "Doğru cevap C. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 50."
+    "answer": "A",
+    "açıklama": "Doğru cevap A. Anayasa'nın hem başlangıç kısmında hem de 6. maddesinde 'Egemenlik, kayıtsız şartsız Milletindir' ifadesi yer alır."
   }
 ]
