@@ -1,302 +1,302 @@
 [
   {
     "id": "anayasa-4-1",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (76)",
+    "question": "1982 Anayasası'na göre, Türkiye Büyük Millet Meclisi (TBMM) Başkanlığı seçimi bir yasama döneminde kaç kez yapılır?",
     "options": [
-      "T.C. Anayasası kapsamında doğru ifade 76",
-      "T.C. Anayasası ile ilgili hatalı yorum 76",
-      "T.C. Anayasası ile bağdaşmayan uygulama 76",
-      "T.C. Anayasası açısından yanlış hüküm 76"
+      "1 kez",
+      "2 kez",
+      "3 kez",
+      "Her yıl"
     ],
-    "answer": "A",
-    "explanation": "Doğru cevap A. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 76."
+    "answer": "B",
+    "açıklama": "Doğru cevap B. Bir yasama döneminde iki defa Meclis Başkanı seçimi yapılır. İlk seçilenin görev süresi 2 yıl, ikinci devre için seçilenin görev süresi ise o yasama döneminin sonuna kadardır."
   },
   {
     "id": "anayasa-4-2",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (77)",
+    "question": "Milletvekillerinin, meclis çalışmalarındaki oy ve sözlerinden dolayı sorumlu tutulamamasına ne ad verilir?",
     "options": [
-      "T.C. Anayasası ile ilgili hatalı yorum 77",
-      "T.C. Anayasası ile bağdaşmayan uygulama 77",
-      "T.C. Anayasası açısından yanlış hüküm 77",
-      "T.C. Anayasası kapsamında doğru ifade 77"
+      "Yasama dokunulmazlığı",
+      "Yasama sorumsuzluğu",
+      "Siyasi parti üyeliği",
+      "Milletvekilliği sıfatı"
     ],
-    "answer": "D",
-    "explanation": "Doğru cevap D. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 77."
+    "answer": "B",
+    "açıklama": "Doğru cevap B. Yasama sorumsuzluğu (Kürsü masuniyeti); milletvekillerinin meclis çalışmalarındaki oy ve sözlerinden, bunları dışarıda tekrarlamalarından dolayı sorumlu tutulamamasıdır, mutlaktır ve kaldırılamaz."
   },
   {
     "id": "anayasa-4-3",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (78)",
+    "question": "Anayasa'ya göre, Cumhurbaşkanı kararnameleri (olağan dönem) ile kanunlar arasında çatışma olması durumunda hangisi uygulanır?",
     "options": [
-      "T.C. Anayasası ile bağdaşmayan uygulama 78",
-      "T.C. Anayasası açısından yanlış hüküm 78",
-      "T.C. Anayasası kapsamında doğru ifade 78",
-      "T.C. Anayasası ile ilgili hatalı yorum 78"
+      "Cumhurbaşkanı kararnamesi",
+      "Kanun",
+      "Önce çıkan düzenleme",
+      "Anayasa Mahkemesi kararı beklenir"
     ],
-    "answer": "C",
-    "explanation": "Doğru cevap C. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 78."
+    "answer": "B",
+    "açıklama": "Doğru cevap B. Anayasa'nın 104. maddesine göre; Cumhurbaşkanlığı kararnamesi ile kanunlarda farklı hükümler bulunması halinde, kanun hükümleri uygulanır."
   },
   {
     "id": "anayasa-4-4",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (79)",
+    "question": "Aşağıdakilerden hangisi Milli Güvenlik Kurulu (MGK) üyesi değildir?",
     "options": [
-      "T.C. Anayasası açısından yanlış hüküm 79",
-      "T.C. Anayasası kapsamında doğru ifade 79",
-      "T.C. Anayasası ile ilgili hatalı yorum 79",
-      "T.C. Anayasası ile bağdaşmayan uygulama 79"
+      "Adalet Bakanı",
+      "Dışişleri Bakanı",
+      "Jandarma Genel Komutanı",
+      "Hava Kuvvetleri Komutanı"
     ],
-    "answer": "B",
-    "explanation": "Doğru cevap B. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 79."
+    "answer": "C",
+    "açıklama": "Doğru cevap C. 2017 Anayasa değişikliği ile Jandarma Genel Komutanı MGK üyeliğinden çıkarılmıştır."
   },
   {
     "id": "anayasa-4-5",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (80)",
+    "question": "Savaş hali ilanına karar verme yetkisi kime aittir?",
     "options": [
-      "T.C. Anayasası kapsamında doğru ifade 80",
-      "T.C. Anayasası ile ilgili hatalı yorum 80",
-      "T.C. Anayasası ile bağdaşmayan uygulama 80",
-      "T.C. Anayasası açısından yanlış hüküm 80"
+      "Cumhurbaşkanı",
+      "Genelkurmay Başkanı",
+      "Türkiye Büyük Millet Meclisi (TBMM)",
+      "Milli Savunma Bakanı"
     ],
-    "answer": "A",
-    "explanation": "Doğru cevap A. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 80."
+    "answer": "C",
+    "açıklama": "Doğru cevap C. Milletlerarası hukukun meşru saydığı hallerde savaş hali ilanına Türkiye Büyük Millet Meclisi karar verir."
   },
   {
     "id": "anayasa-4-6",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (81)",
+    "question": "Anayasa Mahkemesi, Yüce Divan sıfatıyla yargılama yaparken savcılık görevini kim yürütür?",
     "options": [
-      "T.C. Anayasası ile ilgili hatalı yorum 81",
-      "T.C. Anayasası ile bağdaşmayan uygulama 81",
-      "T.C. Anayasası açısından yanlış hüküm 81",
-      "T.C. Anayasası kapsamında doğru ifade 81"
+      "Adalet Bakanı",
+      "Anayasa Mahkemesi Başkanı",
+      "Yargıtay Cumhuriyet Başsavcısı",
+      "Cumhurbaşkanı Yardımcısı"
     ],
-    "answer": "D",
-    "explanation": "Doğru cevap D. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 81."
+    "answer": "C",
+    "açıklama": "Doğru cevap C. Yüce Divan yargılamalarında savcılık görevini Yargıtay Cumhuriyet Başsavcısı veya Yargıtay Cumhuriyet Başsavcısı Vekili yapar."
   },
   {
     "id": "anayasa-4-7",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (82)",
+    "question": "Aşağıdakilerden hangisi 1982 Anayasası'nda düzenlenen bir 'sosyal ve ekonomik hak' değildir?",
     "options": [
-      "T.C. Anayasası ile bağdaşmayan uygulama 82",
-      "T.C. Anayasası açısından yanlış hüküm 82",
-      "T.C. Anayasası kapsamında doğru ifade 82",
-      "T.C. Anayasası ile ilgili hatalı yorum 82"
+      "Ailenin korunması",
+      "Sendika kurma hakkı",
+      "Konut dokunulmazlığı",
+      "Sağlık hakkı"
     ],
     "answer": "C",
-    "explanation": "Doğru cevap C. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 82."
+    "açıklama": "Doğru cevap C. Konut dokunulmazlığı, 'Kişi Hakları ve Ödevleri' (Negatif Statü Hakları) bölümünde yer alır; sosyal ve ekonomik bir hak değildir."
   },
   {
     "id": "anayasa-4-8",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (83)",
+    "question": "Devlet Denetleme Kurulu (DDK) üyelerini ve başkanını kim atar?",
     "options": [
-      "T.C. Anayasası açısından yanlış hüküm 83",
-      "T.C. Anayasası kapsamında doğru ifade 83",
-      "T.C. Anayasası ile ilgili hatalı yorum 83",
-      "T.C. Anayasası ile bağdaşmayan uygulama 83"
+      "TBMM Başkanı",
+      "Cumhurbaşkanı",
+      "Başbakan",
+      "Yargıtay"
     ],
     "answer": "B",
-    "explanation": "Doğru cevap B. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 83."
+    "açıklama": "Doğru cevap B. Devlet Denetleme Kurulu Cumhurbaşkanlığına bağlıdır; üyelerini ve başkanını Cumhurbaşkanı atar."
   },
   {
     "id": "anayasa-4-9",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (84)",
+    "question": "TBMM Genel Kurulu'nda bir kanun teklifinin kabul edilmesi için gereken asgari karar yetersayısı kaçtır?",
     "options": [
-      "T.C. Anayasası kapsamında doğru ifade 84",
-      "T.C. Anayasası ile ilgili hatalı yorum 84",
-      "T.C. Anayasası ile bağdaşmayan uygulama 84",
-      "T.C. Anayasası açısından yanlış hüküm 84"
+      "139",
+      "151",
+      "184",
+      "301"
     ],
-    "answer": "A",
-    "explanation": "Doğru cevap A. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 84."
+    "answer": "B",
+    "açıklama": "Doğru cevap B. Karar yetersayısı, toplantıya katılanların salt çoğunluğudur; ancak bu sayı üye tamsayısının dörtte birinin bir fazlasından (151'den) az olamaz."
   },
   {
     "id": "anayasa-4-10",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (85)",
+    "question": "Hâkimler ve Savcılar Kurulu'nun (HSK) başkanı kimdir?",
     "options": [
-      "T.C. Anayasası ile ilgili hatalı yorum 85",
-      "T.C. Anayasası ile bağdaşmayan uygulama 85",
-      "T.C. Anayasası açısından yanlış hüküm 85",
-      "T.C. Anayasası kapsamında doğru ifade 85"
+      "Yargıtay Başkanı",
+      "Adalet Bakanı",
+      "Cumhurbaşkanı",
+      "Anayasa Mahkemesi Başkanı"
     ],
-    "answer": "D",
-    "explanation": "Doğru cevap D. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 85."
+    "answer": "B",
+    "açıklama": "Doğru cevap B. Anayasa'nın 159. maddesine göre Hâkimler ve Savcılar Kurulu'nun Başkanı Adalet Bakanı'dır."
   },
   {
     "id": "anayasa-4-11",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (86)",
+    "question": "Anayasa'ya göre, 'kamulaştırma' işlemi hangi tür mallar için yapılabilir?",
     "options": [
-      "T.C. Anayasası ile bağdaşmayan uygulama 86",
-      "T.C. Anayasası açısından yanlış hüküm 86",
-      "T.C. Anayasası kapsamında doğru ifade 86",
-      "T.C. Anayasası ile ilgili hatalı yorum 86"
+      "Devlet malları",
+      "Özel mülkiyetteki taşınmaz mallar",
+      "Taşınır mallar",
+      "Vakıf malları"
     ],
-    "answer": "C",
-    "explanation": "Doğru cevap C. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 86."
+    "answer": "B",
+    "açıklama": "Doğru cevap B. Kamulaştırma, kamu yararının gerektirdiği hallerde, karşılığı peşin ödenmek şartıyla, özel mülkiyette bulunan taşınmaz malların tamamının veya bir kısmının devlet mülkiyetine geçirilmesidir."
   },
   {
     "id": "anayasa-4-12",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (87)",
+    "question": "Anayasa değişikliği teklifi TBMM üye tamsayısının en az kaçta kaçının yazılı teklifi ile verilebilir?",
     "options": [
-      "T.C. Anayasası açısından yanlış hüküm 87",
-      "T.C. Anayasası kapsamında doğru ifade 87",
-      "T.C. Anayasası ile ilgili hatalı yorum 87",
-      "T.C. Anayasası ile bağdaşmayan uygulama 87"
+      "1/3 (200 milletvekili)",
+      "1/5 (120 milletvekili)",
+      "Salt çoğunluk (301 milletvekili)",
+      "3/5 (360 milletvekili)"
     ],
-    "answer": "B",
-    "explanation": "Doğru cevap B. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 87."
+    "answer": "A",
+    "açıklama": "Doğru cevap A. Anayasa'nın değiştirilmesi, TBMM üye tamsayısının en az üçte biri (1/3) yani 200 milletvekili tarafından yazılı olarak teklif edilebilir."
   },
   {
     "id": "anayasa-4-13",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (88)",
+    "question": "2017 Anayasa değişikliği ile yargı yetkisine ilişkin 9. maddeye hangi ifade eklenmiştir?",
     "options": [
-      "T.C. Anayasası kapsamında doğru ifade 88",
-      "T.C. Anayasası ile ilgili hatalı yorum 88",
-      "T.C. Anayasası ile bağdaşmayan uygulama 88",
-      "T.C. Anayasası açısından yanlış hüküm 88"
+      "Bağımsız",
+      "Tarafsız",
+      "Hızlı",
+      "Adil"
     ],
-    "answer": "A",
-    "explanation": "Doğru cevap A. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 88."
+    "answer": "B",
+    "açıklama": "Doğru cevap B. Yargı yetkisi, Türk Milleti adına 'bağımsız ve tarafsız' mahkemelerce kullanılır. (Tarafsız ibaresi 2017'de eklenmiştir)."
   },
   {
     "id": "anayasa-4-14",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (89)",
+    "question": "Cumhurbaşkanı yardımcılarını ve bakanları atama ve görevden alma yetkisi kime aittir?",
     "options": [
-      "T.C. Anayasası ile ilgili hatalı yorum 89",
-      "T.C. Anayasası ile bağdaşmayan uygulama 89",
-      "T.C. Anayasası açısından yanlış hüküm 89",
-      "T.C. Anayasası kapsamında doğru ifade 89"
+      "TBMM",
+      "Cumhurbaşkanı",
+      "Yüksek Seçim Kurulu",
+      "Başbakan"
     ],
-    "answer": "D",
-    "explanation": "Doğru cevap D. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 89."
+    "answer": "B",
+    "açıklama": "Doğru cevap B. Yürütme yetkisine sahip olan Cumhurbaşkanı, yardımcılarını ve bakanları atar ve görevlerine son verir."
   },
   {
     "id": "anayasa-4-15",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (90)",
+    "question": "Anayasa'ya göre, vergi, resim, harç ve benzeri mali yükümlülükler ne ile konulur, değiştirilir veya kaldırılır?",
     "options": [
-      "T.C. Anayasası ile bağdaşmayan uygulama 90",
-      "T.C. Anayasası açısından yanlış hüküm 90",
-      "T.C. Anayasası kapsamında doğru ifade 90",
-      "T.C. Anayasası ile ilgili hatalı yorum 90"
+      "Yönetmelik",
+      "Kanun",
+      "Genelge",
+      "Cumhurbaşkanı Kararı"
     ],
-    "answer": "C",
-    "explanation": "Doğru cevap C. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 90."
+    "answer": "B",
+    "açıklama": "Doğru cevap B. Vergi ödevi maddesine göre; vergi, resim, harç ve benzeri mali yükümlülükler kanunla konulur, değiştirilir veya kaldırılır."
   },
   {
     "id": "anayasa-4-16",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (91)",
+    "question": "Hangi suçlardan hüküm giyenler, affa uğrasalar bile milletvekili seçilemezler?",
     "options": [
-      "T.C. Anayasası açısından yanlış hüküm 91",
-      "T.C. Anayasası kapsamında doğru ifade 91",
-      "T.C. Anayasası ile ilgili hatalı yorum 91",
-      "T.C. Anayasası ile bağdaşmayan uygulama 91"
+      "Taksirli suçlar",
+      "Yüz kızartıcı suçlar (zimmet, hırsızlık vb.)",
+      "Trafik suçları",
+      "Hakaret"
     ],
     "answer": "B",
-    "explanation": "Doğru cevap B. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 91."
+    "açıklama": "Doğru cevap B. Zimmet, ihtilas, irtikâp, rüşvet, hırsızlık, dolandırıcılık, sahtecilik gibi yüz kızartıcı suçlardan hüküm giyenler, affa uğrasalar bile milletvekili seçilemezler."
   },
   {
     "id": "anayasa-4-17",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (92)",
+    "question": "Aşağıdakilerden hangisi TBMM'nin görev ve yetkilerinden biri değildir?",
     "options": [
-      "T.C. Anayasası kapsamında doğru ifade 92",
-      "T.C. Anayasası ile ilgili hatalı yorum 92",
-      "T.C. Anayasası ile bağdaşmayan uygulama 92",
-      "T.C. Anayasası açısından yanlış hüküm 92"
+      "Kanun koymak, değiştirmek ve kaldırmak",
+      "Bütçe ve kesinhesap kanun tekliflerini görüşmek ve kabul etmek",
+      "Para basılmasına karar vermek",
+      "Kanunları iptal etmek"
     ],
-    "answer": "A",
-    "explanation": "Doğru cevap A. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 92."
+    "answer": "D",
+    "açıklama": "Doğru cevap D. Kanunları Anayasa'ya aykırılık gerekçesiyle iptal etme yetkisi Anayasa Mahkemesi'ne aittir."
   },
   {
     "id": "anayasa-4-18",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (93)",
+    "question": "Olağanüstü Hal (OHAL) ilan edilen dönemlerde çıkarılan Cumhurbaşkanlığı Kararnameleri için aşağıdakilerden hangisi doğrudur?",
     "options": [
-      "T.C. Anayasası ile ilgili hatalı yorum 93",
-      "T.C. Anayasası ile bağdaşmayan uygulama 93",
-      "T.C. Anayasası açısından yanlış hüküm 93",
-      "T.C. Anayasası kapsamında doğru ifade 93"
+      "Anayasa Mahkemesi tarafından denetlenebilir.",
+      "Sadece temel hakları düzenleyebilir.",
+      "Yargısal denetimi yoktur.",
+      "Meclis onayı gerekmez."
     ],
-    "answer": "D",
-    "explanation": "Doğru cevap D. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 93."
+    "answer": "C",
+    "açıklama": "Doğru cevap C. Anayasa'nın 148. maddesine göre olağanüstü hallerde ve savaş hallerinde çıkarılan Cumhurbaşkanlığı Kararnamelerinin şekil ve esas bakımından Anayasaya aykırılığı iddiasıyla Anayasa Mahkemesine dava açılamaz."
   },
   {
     "id": "anayasa-4-19",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (94)",
+    "question": "Anayasa'ya göre, Cumhurbaşkanı kanunları tekrar görüşülmek üzere TBMM'ye geri gönderirken (veto), hangi kanunu geri gönderemez?",
     "options": [
-      "T.C. Anayasası ile bağdaşmayan uygulama 94",
-      "T.C. Anayasası açısından yanlış hüküm 94",
-      "T.C. Anayasası kapsamında doğru ifade 94",
-      "T.C. Anayasası ile ilgili hatalı yorum 94"
+      "Ceza Kanunu",
+      "Bütçe Kanunu",
+      "Seçim Kanunu",
+      "Vergi Kanunu"
     ],
-    "answer": "C",
-    "explanation": "Doğru cevap C. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 94."
+    "answer": "B",
+    "açıklama": "Doğru cevap B. Cumhurbaşkanı, yayımlanmasını kısmen veya tamamen uygun bulmadığı kanunları TBMM'ye geri gönderebilir ancak Bütçe Kanununu geri gönderemez."
   },
   {
     "id": "anayasa-4-20",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (95)",
+    "question": "Sayıştay'ın başkanı ve üyeleri kim tarafından seçilir?",
     "options": [
-      "T.C. Anayasası açısından yanlış hüküm 95",
-      "T.C. Anayasası kapsamında doğru ifade 95",
-      "T.C. Anayasası ile ilgili hatalı yorum 95",
-      "T.C. Anayasası ile bağdaşmayan uygulama 95"
+      "Cumhurbaşkanı",
+      "TBMM",
+      "Hâkimler ve Savcılar Kurulu",
+      "Anayasa Mahkemesi"
     ],
     "answer": "B",
-    "explanation": "Doğru cevap B. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 95."
+    "açıklama": "Doğru cevap B. Sayıştay, TBMM adına denetim yapan bir organdır ve başkanı ile üyeleri TBMM tarafından seçilir."
   },
   {
     "id": "anayasa-4-21",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (96)",
+    "question": "Uyuşmazlık Mahkemesi Başkanı kim tarafından ve nereden seçilir?",
     "options": [
-      "T.C. Anayasası kapsamında doğru ifade 96",
-      "T.C. Anayasası ile ilgili hatalı yorum 96",
-      "T.C. Anayasası ile bağdaşmayan uygulama 96",
-      "T.C. Anayasası açısından yanlış hüküm 96"
+      "Cumhurbaşkanı tarafından",
+      "TBMM tarafından",
+      "Anayasa Mahkemesi tarafından kendi üyeleri arasından",
+      "Yargıtay Genel Kurulunca"
     ],
-    "answer": "A",
-    "explanation": "Doğru cevap A. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 96."
+    "answer": "C",
+    "açıklama": "Doğru cevap C. Uyuşmazlık Mahkemesi Başkanlığını, Anayasa Mahkemesince, kendi üyeleri arasından görevlendirilen bir üye yapar."
   },
   {
     "id": "anayasa-4-22",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (97)",
+    "question": "Kamu hizmetine girmede, görevin gerektirdiği niteliklerden başka hiçbir ayrım gözetilemeyeceğini düzenleyen ilke hangisidir?",
     "options": [
-      "T.C. Anayasası ile ilgili hatalı yorum 97",
-      "T.C. Anayasası ile bağdaşmayan uygulama 97",
-      "T.C. Anayasası açısından yanlış hüküm 97",
-      "T.C. Anayasası kapsamında doğru ifade 97"
+      "Eşitlik ilkesi",
+      "Kariyer ilkesi",
+      "Sınıflandırma ilkesi",
+      "Güvence ilkesi"
     ],
-    "answer": "D",
-    "explanation": "Doğru cevap D. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 97."
+    "answer": "A",
+    "açıklama": "Doğru cevap A. Anayasa'nın 70. maddesi 'Hizmete alınmada, görevin gerektirdiği niteliklerden başka hiçbir ayırım gözetilemez' diyerek kamu hizmetine girişte eşitlik ilkesini vurgular."
   },
   {
     "id": "anayasa-4-23",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (98)",
+    "question": "Anayasa'nın 51. maddesine göre, çalışanlar ve işverenler önceden izin almaksızın ne kurma hakkına sahiptir?",
     "options": [
-      "T.C. Anayasası ile bağdaşmayan uygulama 98",
-      "T.C. Anayasası açısından yanlış hüküm 98",
-      "T.C. Anayasası kapsamında doğru ifade 98",
-      "T.C. Anayasası ile ilgili hatalı yorum 98"
+      "Dernek",
+      "Vakıf",
+      "Sendika",
+      "Siyasi Parti"
     ],
     "answer": "C",
-    "explanation": "Doğru cevap C. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 98."
+    "açıklama": "Doğru cevap C. Çalışanlar ve işverenler, üyelerinin çalışma ilişkilerinde, ekonomik ve sosyal hak ve menfaatlerini korumak ve geliştirmek için önceden izin almaksızın sendikalar ve üst kuruluşlar kurma hakkına sahiptir."
   },
   {
     "id": "anayasa-4-24",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (99)",
+    "question": "Anayasa'ya göre, kanunsuz emir ile ilgili olarak, konusu suç teşkil eden emir hakkında memur ne yapmalıdır?",
     "options": [
-      "T.C. Anayasası açısından yanlış hüküm 99",
-      "T.C. Anayasası kapsamında doğru ifade 99",
-      "T.C. Anayasası ile ilgili hatalı yorum 99",
-      "T.C. Anayasası ile bağdaşmayan uygulama 99"
+      "Yazılı olarak isterse yapar.",
+      "Sorumluluk amire aittir diyerek yapar.",
+      "Hiçbir suretle yerine getirmez.",
+      "Üst makama şikayet eder ama emri uygular."
     ],
-    "answer": "B",
-    "explanation": "Doğru cevap B. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 99."
+    "answer": "C",
+    "açıklama": "Doğru cevap C. Konusu suç teşkil eden emir, hiçbir suretle yerine getirilmez; yerine getiren kimse sorumluluktan kurtulamaz."
   },
   {
     "id": "anayasa-4-25",
-    "question": "T.C. Anayasası konusunda aşağıdakilerden hangisi doğrudur? (100)",
+    "question": "Cumhurbaşkanlığı Kararnameleri Resmi Gazete'de yayımlandıktan sonra, aksi belirtilmemişse ne zaman yürürlüğe girer?",
     "options": [
-      "T.C. Anayasası kapsamında doğru ifade 100",
-      "T.C. Anayasası ile ilgili hatalı yorum 100",
-      "T.C. Anayasası ile bağdaşmayan uygulama 100",
-      "T.C. Anayasası açısından yanlış hüküm 100"
+      "45 gün sonra",
+      "1 yıl sonra",
+      "Yayımlandığı gün",
+      "Takip eden ayın başında"
     ],
-    "answer": "A",
-    "explanation": "Doğru cevap A. T.C. Anayasası için doğru ifade: T.C. Anayasası kapsamında doğru ifade 100."
+    "answer": "C",
+    "açıklama": "Doğru cevap C. Kanunlar ve Cumhurbaşkanlığı kararnameleri, yürürlük tarihi belirtilmemişse Resmi Gazete'de yayımlandığı gün yürürlüğe girer."
   }
 ]
