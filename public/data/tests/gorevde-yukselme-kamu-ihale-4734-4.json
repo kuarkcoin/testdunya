@@ -1,302 +1,302 @@
 [
   {
-    "id": "kamu-ihale-4734-4-1",
-    "question": "4734 Sayılı Kamu İhale Kanunu konusunda aşağıdakilerden hangisi doğrudur? (76)",
+    "id": "kik4734-4-1",
+    "question": "4734 sayılı Kamu İhale Kanunu'na göre, idarelerin sözleşme süresi uzatımı ve benzeri kararları alırken dikkate alabileceği 'Mücbir Sebepler' arasında aşağıdakilerden hangisi sayılmamıştır?",
     "options": [
-      "4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 76",
-      "4734 Sayılı Kamu İhale Kanunu ile ilgili yanlış yorum 76",
-      "4734 Sayılı Kamu İhale Kanunu ile bağdaşmayan uygulama 76",
-      "4734 Sayılı Kamu İhale Kanunu açısından geçersiz hüküm 76"
-    ],
-    "answer": "A",
-    "explanation": "Doğru seçenek A şıkkıdır. 4734 Sayılı Kamu İhale Kanunu için temel ilke: 4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 76."
-  },
-  {
-    "id": "kamu-ihale-4734-4-2",
-    "question": "4734 Sayılı Kamu İhale Kanunu konusunda aşağıdakilerden hangisi doğrudur? (77)",
-    "options": [
-      "4734 Sayılı Kamu İhale Kanunu ile ilgili yanlış yorum 77",
-      "4734 Sayılı Kamu İhale Kanunu ile bağdaşmayan uygulama 77",
-      "4734 Sayılı Kamu İhale Kanunu açısından geçersiz hüküm 77",
-      "4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 77"
+      "Doğal afetler",
+      "Kanuni grev",
+      "Genel salgın hastalık",
+      "İsteklinin kendi kusurundan kaynaklanan ekonomik darboğaz"
     ],
     "answer": "D",
-    "explanation": "Doğru seçenek D şıkkıdır. 4734 Sayılı Kamu İhale Kanunu için temel ilke: 4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 77."
+    "açıklama": "Doğru cevap D. Kanunun 10. maddesi ve ilgili diğer mevzuat hükümleri uyarınca mücbir sebepler; doğal afetler, kanuni grev, genel salgın hastalık, kısmî veya genel seferberlik ilânı gibi kişinin iradesi dışında gelişen durumlardır. İsteklinin ticari basiretsizliği veya kusurundan kaynaklanan ekonomik sorunlar mücbir sebep sayılamaz."
   },
   {
-    "id": "kamu-ihale-4734-4-3",
-    "question": "4734 Sayılı Kamu İhale Kanunu konusunda aşağıdakilerden hangisi doğrudur? (78)",
+    "id": "kik4734-4-2",
+    "question": "İhale üzerinde bırakılan isteklinin geçici teminatı ne zaman iade edilir?",
     "options": [
-      "4734 Sayılı Kamu İhale Kanunu ile bağdaşmayan uygulama 78",
-      "4734 Sayılı Kamu İhale Kanunu açısından geçersiz hüküm 78",
-      "4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 78",
-      "4734 Sayılı Kamu İhale Kanunu ile ilgili yanlış yorum 78"
-    ],
-    "answer": "C",
-    "explanation": "Doğru seçenek C şıkkıdır. 4734 Sayılı Kamu İhale Kanunu için temel ilke: 4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 78."
-  },
-  {
-    "id": "kamu-ihale-4734-4-4",
-    "question": "4734 Sayılı Kamu İhale Kanunu konusunda aşağıdakilerden hangisi doğrudur? (79)",
-    "options": [
-      "4734 Sayılı Kamu İhale Kanunu açısından geçersiz hüküm 79",
-      "4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 79",
-      "4734 Sayılı Kamu İhale Kanunu ile ilgili yanlış yorum 79",
-      "4734 Sayılı Kamu İhale Kanunu ile bağdaşmayan uygulama 79"
+      "İhale kararının onaylandığı gün",
+      "Sözleşme imzalandıktan hemen sonra",
+      "İşin %50'si tamamlandığında",
+      "İşin kesin kabulü yapıldığında"
     ],
     "answer": "B",
-    "explanation": "Doğru seçenek B şıkkıdır. 4734 Sayılı Kamu İhale Kanunu için temel ilke: 4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 79."
+    "açıklama": "Doğru cevap B. Kanunun 44. maddesine göre; ihale üzerinde kalan istekli sözleşmeyi imzalayıp kesin teminatı verdikten sonra geçici teminatı iade edilir. Diğer isteklilerin geçici teminatları ise ihale kararı kesinleştikten sonra iade edilir."
   },
   {
-    "id": "kamu-ihale-4734-4-5",
-    "question": "4734 Sayılı Kamu İhale Kanunu konusunda aşağıdakilerden hangisi doğrudur? (80)",
+    "id": "kik4734-4-3",
+    "question": "İhaleye katılımda yeterlik kurallarının düzenlendiği 10. maddeye göre, aşağıdakilerden hangisi bir isteklinin doğrudan ihale dışı bırakılma nedenlerinden biridir?",
     "options": [
-      "4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 80",
-      "4734 Sayılı Kamu İhale Kanunu ile ilgili yanlış yorum 80",
-      "4734 Sayılı Kamu İhale Kanunu ile bağdaşmayan uygulama 80",
-      "4734 Sayılı Kamu İhale Kanunu açısından geçersiz hüküm 80"
+      "İlgili idareye şikayet başvurusunda bulunmuş olmak",
+      "İhale dokümanını EKAP üzerinden indirmiş olmak",
+      "Kesinleşmiş sosyal güvenlik primi borcu olmak",
+      "Şirket merkezinin ihale yapılan şehirden farklı bir ilde olması"
     ],
-    "answer": "A",
-    "explanation": "Doğru seçenek A şıkkıdır. 4734 Sayılı Kamu İhale Kanunu için temel ilke: 4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 80."
+    "answer": "C",
+    "açıklama": "Doğru cevap C. Kanunun 10. maddesine göre; Türkiye'nin veya kendi ülkesinin mevzuat hükümleri uyarınca kesinleşmiş sosyal güvenlik primi veya vergi borcu olan istekliler ihale dışı bırakılır."
   },
   {
-    "id": "kamu-ihale-4734-4-6",
-    "question": "4734 Sayılı Kamu İhale Kanunu konusunda aşağıdakilerden hangisi doğrudur? (81)",
+    "id": "kik4734-4-4",
+    "question": "Yayımlanan ihale ilanlarında hata bulunması durumunda, bu hataların düzeltilerek ihalenin yapılabilmesi için 'Düzeltme İlanı' yayımlanabilir. Bu işlem ile ilgili temel kural nedir?",
     "options": [
-      "4734 Sayılı Kamu İhale Kanunu ile ilgili yanlış yorum 81",
-      "4734 Sayılı Kamu İhale Kanunu ile bağdaşmayan uygulama 81",
-      "4734 Sayılı Kamu İhale Kanunu açısından geçersiz hüküm 81",
-      "4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 81"
+      "Düzeltme ilanı sadece ulusal televizyon kanallarında yapılır.",
+      "İlanın yayımlanmasını izleyen 15 gün içinde hatalı hususlar için düzeltme ilanı yapılabilir.",
+      "İhale günü geldiğinde ihale komisyonu başkanı hatayı sözlü olarak düzelterek ihaleyi yapar.",
+      "Hatalı ilan kesinlikle düzeltilemez, ihale anında iptal edilir."
+    ],
+    "answer": "B",
+    "açıklama": "Doğru cevap B. Kanunun 26. maddesine göre; ilânlarda Kanunun 24. maddesindeki (İlanlarda bulunması zorunlu hususlar) hatalar bulunması halinde, ilânın yayımlanmasını takip eden 15 gün içinde düzeltme ilânı yapılmak suretiyle ihale gerçekleştirilebilir."
+  },
+  {
+    "id": "kik4734-4-5",
+    "question": "İhaleyi yapan idarenin ihale saatinden önce ihaleyi iptal etmesi halinde, bu durum isteklilere ve istekli olabileceklere nasıl duyurulur?",
+    "options": [
+      "İhale salonuna asılan bir not ile duyurulur.",
+      "İhalenin iptal edildiği anında ilan edilir ve ihale dokümanı alanlara derhal bildirilir.",
+      "İptal gerekçesi gizli tutulur, hiçbir bildirim yapılmaz.",
+      "Sadece ihaleyi kazanma ihtimali olan firmalara özel mektup gönderilir."
+    ],
+    "answer": "B",
+    "açıklama": "Doğru cevap B. Kanunun 16. maddesine göre; ihalenin iptal edilmesi halinde bu durum bütün isteklilere derhal ilan edilerek duyurulur ve ihale dokümanı almış olanlara derhal bildirilir."
+  },
+  {
+    "id": "kik4734-4-6",
+    "question": "Aşağıdakilerden hangisi idare tarafından hazırlanan ve ihaleye çıkılırken isteklilere sunulan 'İhale Dokümanı'nın bir parçası değildir?",
+    "options": [
+      "İdari Şartname",
+      "Teknik Şartname",
+      "Sözleşme Tasarısı",
+      "İstekliye ait İş Bitirme Belgesi"
     ],
     "answer": "D",
-    "explanation": "Doğru seçenek D şıkkıdır. 4734 Sayılı Kamu İhale Kanunu için temel ilke: 4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 81."
+    "açıklama": "Doğru cevap D. İhale dokümanı idarece hazırlanır ve idari şartname, teknik şartname, sözleşme tasarısı ve gerekli diğer belgeleri içerir. 'İş Bitirme Belgesi' ise ihale dokümanı değil, isteklinin yeterliliğini ispat etmek için teklifiyle birlikte idareye sunduğu belgedir."
   },
   {
-    "id": "kamu-ihale-4734-4-7",
-    "question": "4734 Sayılı Kamu İhale Kanunu konusunda aşağıdakilerden hangisi doğrudur? (82)",
+    "id": "kik4734-4-7",
+    "question": "Kamu İhale Kanunu'na göre 'İstekli Olabilecekler' (henüz teklif vermemiş ancak ihale dokümanı almış olanlar) ihale sürecinin hangi aşamasına karşı şikayet başvurusunda bulunabilirler?",
     "options": [
-      "4734 Sayılı Kamu İhale Kanunu ile bağdaşmayan uygulama 82",
-      "4734 Sayılı Kamu İhale Kanunu açısından geçersiz hüküm 82",
-      "4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 82",
-      "4734 Sayılı Kamu İhale Kanunu ile ilgili yanlış yorum 82"
-    ],
-    "answer": "C",
-    "explanation": "Doğru seçenek C şıkkıdır. 4734 Sayılı Kamu İhale Kanunu için temel ilke: 4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 82."
-  },
-  {
-    "id": "kamu-ihale-4734-4-8",
-    "question": "4734 Sayılı Kamu İhale Kanunu konusunda aşağıdakilerden hangisi doğrudur? (83)",
-    "options": [
-      "4734 Sayılı Kamu İhale Kanunu açısından geçersiz hüküm 83",
-      "4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 83",
-      "4734 Sayılı Kamu İhale Kanunu ile ilgili yanlış yorum 83",
-      "4734 Sayılı Kamu İhale Kanunu ile bağdaşmayan uygulama 83"
+      "Sadece ihale komisyonunun kesinleşen kararına karşı",
+      "İhale ilanına ve ihale dokümanına karşı",
+      "Diğer firmaların teklif zarflarının şekline karşı",
+      "Aşırı düşük teklif sorgulama sonuçlarına karşı"
     ],
     "answer": "B",
-    "explanation": "Doğru seçenek B şıkkıdır. 4734 Sayılı Kamu İhale Kanunu için temel ilke: 4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 83."
+    "açıklama": "Doğru cevap B. Kanunun 55. maddesine göre, istekli olabilecekler, teklif sunmadıkları için ihale sonucuna veya diğer firmaların belgelerine itiraz edemezler; sadece ihale ilânı veya ihale dokümanının içeriğine karşı şikayet başvurusunda bulunabilirler."
   },
   {
-    "id": "kamu-ihale-4734-4-9",
-    "question": "4734 Sayılı Kamu İhale Kanunu konusunda aşağıdakilerden hangisi doğrudur? (84)",
+    "id": "kik4734-4-8",
+    "question": "İhale komisyonunun toplanması ve karar alması ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": [
-      "4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 84",
-      "4734 Sayılı Kamu İhale Kanunu ile ilgili yanlış yorum 84",
-      "4734 Sayılı Kamu İhale Kanunu ile bağdaşmayan uygulama 84",
-      "4734 Sayılı Kamu İhale Kanunu açısından geçersiz hüküm 84"
+      "Komisyon başkanı izne ayrıldığında komisyon başkansız toplanabilir.",
+      "İhale komisyonu eksiksiz olarak toplanmak zorundadır, asıl üyenin katılamaması halinde yedek üye katılır.",
+      "Komisyon salt çoğunlukla toplanır, eksik üyelerin oyları çekimser sayılır.",
+      "Muhasebe personeli komisyona sadece bilgi vermek için katılır, oy hakkı yoktur."
+    ],
+    "answer": "B",
+    "açıklama": "Doğru cevap B. Kanunun 6. maddesine göre ihale komisyonu eksiksiz toplanır ve kararlar çoğunlukla alınır. Komisyon üyeleri çekimser oy kullanamazlar. Asıl üyenin olmadığı durumlarda yerine yedek üye geçmek zorundadır."
+  },
+  {
+    "id": "kik4734-4-9",
+    "question": "Kamu İhale Kurulu tarafından ihale uyuşmazlıkları (itirazen şikayetler) ile ilgili alınan nihai kararlar kamuoyuna nerede duyurulur?",
+    "options": [
+      "Kurumun internet sayfasında (EKAP)",
+      "Sadece Resmi Gazete'de",
+      "Tirajı en yüksek 5 yerel gazetede",
+      "Adalet Bakanlığı UYAP sisteminde"
     ],
     "answer": "A",
-    "explanation": "Doğru seçenek A şıkkıdır. 4734 Sayılı Kamu İhale Kanunu için temel ilke: 4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 84."
+    "açıklama": "Doğru cevap A. Kanunun 56. maddesine göre, Kamu İhale Kurulunun itirazen şikayet başvuruları üzerine aldığı uyuşmazlık kararları Resmi Gazete'de yayımlanmaz; taraflara tebliğ edilir ve Kurumun resmi internet sayfasında (EKAP'ta) yayımlanarak kamuoyuna duyurulur."
   },
   {
-    "id": "kamu-ihale-4734-4-10",
-    "question": "4734 Sayılı Kamu İhale Kanunu konusunda aşağıdakilerden hangisi doğrudur? (85)",
+    "id": "kik4734-4-10",
+    "question": "Birden fazla firmanın bir araya gelerek 'Konsorsiyum' oluşturması durumunda, ortaklığı idareye karşı temsil eden ana firmaya ne ad verilir?",
     "options": [
-      "4734 Sayılı Kamu İhale Kanunu ile ilgili yanlış yorum 85",
-      "4734 Sayılı Kamu İhale Kanunu ile bağdaşmayan uygulama 85",
-      "4734 Sayılı Kamu İhale Kanunu açısından geçersiz hüküm 85",
-      "4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 85"
+      "Pilot Ortak",
+      "Koordinatör Ortak",
+      "Alt Yüklenici",
+      "Garantör Firma"
+    ],
+    "answer": "B",
+    "açıklama": "Doğru cevap B. Kanunun 14. maddesinde; iş ortaklığında en çok hisseye sahip olan ortak 'Pilot Ortak' olarak, konsorsiyumlarda ise işi koordine eden ana firma 'Koordinatör Ortak' olarak isimlendirilmiştir."
+  },
+  {
+    "id": "kik4734-4-11",
+    "question": "İsteklilerin idareye sundukları 'Teklif Mektupları' ile ilgili aşağıdaki şartlardan hangisi geçerlilik koşulu değildir?",
+    "options": [
+      "Yazılı ve imzalı olması",
+      "Teklif edilen bedelin rakam ve yazı ile birbirine uygun olarak açıkça yazılması",
+      "Üzerinde kazıntı, silinti, düzeltme bulunmaması",
+      "Noter tarafından mutlaka onaylanmış olması"
     ],
     "answer": "D",
-    "explanation": "Doğru seçenek D şıkkıdır. 4734 Sayılı Kamu İhale Kanunu için temel ilke: 4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 85."
+    "açıklama": "Doğru cevap D. Kanunun 30. maddesine göre teklif mektubunun yazılı olması, ad-soyad/unvan bulunması, yetkili kişi tarafından imzalanması, bedelin rakam ve yazı ile birbiriyle uyumlu ve net yazılması şarttır ancak noter onayı şartı bulunmamaktadır."
   },
   {
-    "id": "kamu-ihale-4734-4-11",
-    "question": "4734 Sayılı Kamu İhale Kanunu konusunda aşağıdakilerden hangisi doğrudur? (86)",
+    "id": "kik4734-4-12",
+    "question": "Bir ihaleye katılan isteklinin o ihale için idareye birden fazla (birbirinden farklı) teklif sunmasına ne ad verilir ve bu durum hangi şarta bağlıdır?",
     "options": [
-      "4734 Sayılı Kamu İhale Kanunu ile bağdaşmayan uygulama 86",
-      "4734 Sayılı Kamu İhale Kanunu açısından geçersiz hüküm 86",
-      "4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 86",
-      "4734 Sayılı Kamu İhale Kanunu ile ilgili yanlış yorum 86"
+      "Tamamlayıcı teklif - Her zaman serbesttir.",
+      "Eksik teklif - Asla yapılamaz.",
+      "Alternatif teklif - Sadece ihale dokümanında izin verilmiş olması halinde sunulabilir.",
+      "Opsiyonlu teklif - Sadece yabancı firmalar sunabilir."
     ],
     "answer": "C",
-    "explanation": "Doğru seçenek C şıkkıdır. 4734 Sayılı Kamu İhale Kanunu için temel ilke: 4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 86."
+    "açıklama": "Doğru cevap C. Kanunun 17. maddesine göre, alternatif teklif verebilme halleri dışında (ihale dokümanında buna açıkça cevaz verilmiş olması hariç) ihalelerde bir istekli tarafından birden fazla teklif verilmesi yasak fiil ve davranıştır."
   },
   {
-    "id": "kamu-ihale-4734-4-12",
-    "question": "4734 Sayılı Kamu İhale Kanunu konusunda aşağıdakilerden hangisi doğrudur? (87)",
+    "id": "kik4734-4-13",
+    "question": "İhale süreçlerinde kanunda belirtilen 'ilan sürelerinin' hesaplanmasında uygulanan temel kural aşağıdakilerden hangisidir?",
     "options": [
-      "4734 Sayılı Kamu İhale Kanunu açısından geçersiz hüküm 87",
-      "4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 87",
-      "4734 Sayılı Kamu İhale Kanunu ile ilgili yanlış yorum 87",
-      "4734 Sayılı Kamu İhale Kanunu ile bağdaşmayan uygulama 87"
-    ],
-    "answer": "B",
-    "explanation": "Doğru seçenek B şıkkıdır. 4734 Sayılı Kamu İhale Kanunu için temel ilke: 4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 87."
-  },
-  {
-    "id": "kamu-ihale-4734-4-13",
-    "question": "4734 Sayılı Kamu İhale Kanunu konusunda aşağıdakilerden hangisi doğrudur? (88)",
-    "options": [
-      "4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 88",
-      "4734 Sayılı Kamu İhale Kanunu ile ilgili yanlış yorum 88",
-      "4734 Sayılı Kamu İhale Kanunu ile bağdaşmayan uygulama 88",
-      "4734 Sayılı Kamu İhale Kanunu açısından geçersiz hüküm 88"
+      "İlanın yapıldığı gün dikkate alınır, ihale günü dikkate alınmaz.",
+      "İlanın yapıldığı gün sayılmaz, ihale günü sayılır.",
+      "Hem ilan günü hem de ihale günü sürelere dâhil edilir.",
+      "Resmi tatiller ilan sürelerinin hesabında düşülür."
     ],
     "answer": "A",
-    "explanation": "Doğru seçenek A şıkkıdır. 4734 Sayılı Kamu İhale Kanunu için temel ilke: 4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 88."
+    "açıklama": "Doğru cevap A. Kanunun 13. maddesindeki düzenlemelere göre, ilan sürelerinin hesaplanmasında ilanın yayımlandığı gün hesaba katılır ancak ihalenin yapılacağı gün (teklif verme günü) hesaba katılmaz."
   },
   {
-    "id": "kamu-ihale-4734-4-14",
-    "question": "4734 Sayılı Kamu İhale Kanunu konusunda aşağıdakilerden hangisi doğrudur? (89)",
+    "id": "kik4734-4-14",
+    "question": "İdarelerin ihtiyaçlarını peyderpey karşılamak için yaptığı 'Çerçeve Anlaşma' ihalelerinin geçerli sayılabilmesi için, sözleşme imzalanacak istekli sayısı (yeterli teklif olması kaydıyla) en az kaç olmalıdır?",
     "options": [
-      "4734 Sayılı Kamu İhale Kanunu ile ilgili yanlış yorum 89",
-      "4734 Sayılı Kamu İhale Kanunu ile bağdaşmayan uygulama 89",
-      "4734 Sayılı Kamu İhale Kanunu açısından geçersiz hüküm 89",
-      "4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 89"
+      "En az 1 istekli",
+      "En az 3 istekli",
+      "En az 5 istekli",
+      "En az 10 istekli"
+    ],
+    "answer": "B",
+    "açıklama": "Doğru cevap B. Kanunun Ek Madde 2 çerçeve anlaşmalar düzenlemesine göre, idareler çerçeve anlaşma yapabilmek için (yeterli sayıda uygun teklif bulunması kaydıyla) en az 3 (üç) istekli ile anlaşma imzalamak zorundadır."
+  },
+  {
+    "id": "kik4734-4-15",
+    "question": "Bir Ortak Girişimi (İş Ortaklığı veya Konsorsiyum) oluşturan tüzel kişi üyelerin, aynı ihaleye ayrıca şahsen veya başka bir ortaklık içinde teklif vermeleri durumunda uygulanacak işlem nedir?",
+    "options": [
+      "En düşük olan teklifleri kabul edilir, diğeri reddedilir.",
+      "Yasak fiil ve davranış sayılır; her iki teklif de değerlendirme dışı bırakılır ve haklarında işlem (teminat iradı vb.) yapılır.",
+      "İdare onlara tercih yapmaları için 3 gün süre verir.",
+      "Kamu İhale Kurumu'na durum bildirilir, Kurum karar verene kadar ihale durdurulur."
+    ],
+    "answer": "B",
+    "açıklama": "Doğru cevap B. Kanunun 17. maddesine göre, bir isteklinin kendisi veya başkaları adına doğrudan veya dolaylı olarak, asaleten veya vekaleten birden fazla teklif vermesi (ortak girişim üyelerinin şahsen teklif vermesi dahil) yasak fiil ve davranıştır."
+  },
+  {
+    "id": "kik4734-4-16",
+    "question": "İhale süreci tamamlanıp 'Kesinleşen İhale Kararı' tüm isteklilere tebliğ edildikten sonra, ihaleyi kazanan adayla sözleşme imzalamak için beklenmesi gereken 'asgari yasal bekleme (şikayet/itiraz) süresi' ne kadardır?",
+    "options": [
+      "Bekleme süresi yoktur, aynı gün imzalanabilir.",
+      "Tebligattan itibaren 3 gün",
+      "Tebligattan itibaren 5 gün",
+      "Tebligattan itibaren 10 gün"
     ],
     "answer": "D",
-    "explanation": "Doğru seçenek D şıkkıdır. 4734 Sayılı Kamu İhale Kanunu için temel ilke: 4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 89."
+    "açıklama": "Doğru cevap D. Kanunun 41. maddesine göre; ihale sonucunun bütün isteklilere bildiriminden itibaren on (10) gün (ön yeterlik ilanı veya ihale ilanı gerekmeyen bazı acil işlerde 5 gün) geçmedikçe sözleşme imzalanamaz. Bu süre isteklilerin şikayet haklarını kullanabilmeleri için öngörülmüştür."
   },
   {
-    "id": "kamu-ihale-4734-4-15",
-    "question": "4734 Sayılı Kamu İhale Kanunu konusunda aşağıdakilerden hangisi doğrudur? (90)",
+    "id": "kik4734-4-17",
+    "question": "Kamu ihalelerine katılmaktan 'Yasaklama Kararları', kararı veren idare veya Bakanlık tarafından karar tarihinden itibaren en geç kaç gün içinde yayımlanmak üzere gönderilir ve nerede yayımlanır?",
     "options": [
-      "4734 Sayılı Kamu İhale Kanunu ile bağdaşmayan uygulama 90",
-      "4734 Sayılı Kamu İhale Kanunu açısından geçersiz hüküm 90",
-      "4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 90",
-      "4734 Sayılı Kamu İhale Kanunu ile ilgili yanlış yorum 90"
-    ],
-    "answer": "C",
-    "explanation": "Doğru seçenek C şıkkıdır. 4734 Sayılı Kamu İhale Kanunu için temel ilke: 4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 90."
-  },
-  {
-    "id": "kamu-ihale-4734-4-16",
-    "question": "4734 Sayılı Kamu İhale Kanunu konusunda aşağıdakilerden hangisi doğrudur? (91)",
-    "options": [
-      "4734 Sayılı Kamu İhale Kanunu açısından geçersiz hüküm 91",
-      "4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 91",
-      "4734 Sayılı Kamu İhale Kanunu ile ilgili yanlış yorum 91",
-      "4734 Sayılı Kamu İhale Kanunu ile bağdaşmayan uygulama 91"
+      "7 gün içinde Kamu İhale Bülteninde",
+      "15 gün içinde Resmi Gazete'de",
+      "30 gün içinde EKAP ana sayfasında",
+      "45 gün içinde yerel gazetelerde"
     ],
     "answer": "B",
-    "explanation": "Doğru seçenek B şıkkıdır. 4734 Sayılı Kamu İhale Kanunu için temel ilke: 4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 91."
+    "açıklama": "Doğru cevap B. Kanunun 58. maddesine göre; yasaklama kararları, yasaklamayı gerektiren fiil veya davranışın tespit edildiği tarihi izleyen en geç kırkbeş gün içinde verilir ve verilen bu karar, karar tarihinden itibaren en geç onbeş (15) gün içinde Resmi Gazetede yayımlanmak üzere gönderilir."
   },
   {
-    "id": "kamu-ihale-4734-4-17",
-    "question": "4734 Sayılı Kamu İhale Kanunu konusunda aşağıdakilerden hangisi doğrudur? (92)",
+    "id": "kik4734-4-18",
+    "question": "Kamu İhale Kurumu'nun genel idari teşkilatlanmasında merkez binası hangi ilde bulunmaktadır?",
     "options": [
-      "4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 92",
-      "4734 Sayılı Kamu İhale Kanunu ile ilgili yanlış yorum 92",
-      "4734 Sayılı Kamu İhale Kanunu ile bağdaşmayan uygulama 92",
-      "4734 Sayılı Kamu İhale Kanunu açısından geçersiz hüküm 92"
-    ],
-    "answer": "A",
-    "explanation": "Doğru seçenek A şıkkıdır. 4734 Sayılı Kamu İhale Kanunu için temel ilke: 4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 92."
-  },
-  {
-    "id": "kamu-ihale-4734-4-18",
-    "question": "4734 Sayılı Kamu İhale Kanunu konusunda aşağıdakilerden hangisi doğrudur? (93)",
-    "options": [
-      "4734 Sayılı Kamu İhale Kanunu ile ilgili yanlış yorum 93",
-      "4734 Sayılı Kamu İhale Kanunu ile bağdaşmayan uygulama 93",
-      "4734 Sayılı Kamu İhale Kanunu açısından geçersiz hüküm 93",
-      "4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 93"
-    ],
-    "answer": "D",
-    "explanation": "Doğru seçenek D şıkkıdır. 4734 Sayılı Kamu İhale Kanunu için temel ilke: 4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 93."
-  },
-  {
-    "id": "kamu-ihale-4734-4-19",
-    "question": "4734 Sayılı Kamu İhale Kanunu konusunda aşağıdakilerden hangisi doğrudur? (94)",
-    "options": [
-      "4734 Sayılı Kamu İhale Kanunu ile bağdaşmayan uygulama 94",
-      "4734 Sayılı Kamu İhale Kanunu açısından geçersiz hüküm 94",
-      "4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 94",
-      "4734 Sayılı Kamu İhale Kanunu ile ilgili yanlış yorum 94"
-    ],
-    "answer": "C",
-    "explanation": "Doğru seçenek C şıkkıdır. 4734 Sayılı Kamu İhale Kanunu için temel ilke: 4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 94."
-  },
-  {
-    "id": "kamu-ihale-4734-4-20",
-    "question": "4734 Sayılı Kamu İhale Kanunu konusunda aşağıdakilerden hangisi doğrudur? (95)",
-    "options": [
-      "4734 Sayılı Kamu İhale Kanunu açısından geçersiz hüküm 95",
-      "4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 95",
-      "4734 Sayılı Kamu İhale Kanunu ile ilgili yanlış yorum 95",
-      "4734 Sayılı Kamu İhale Kanunu ile bağdaşmayan uygulama 95"
+      "İstanbul",
+      "Ankara",
+      "İzmir",
+      "Bursa"
     ],
     "answer": "B",
-    "explanation": "Doğru seçenek B şıkkıdır. 4734 Sayılı Kamu İhale Kanunu için temel ilke: 4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 95."
+    "açıklama": "Doğru cevap B. Kamu İhale Kurumu (KİK), kanunla kurulmuş özerk bir yapı olup merkezi Başkent Ankara'dadır."
   },
   {
-    "id": "kamu-ihale-4734-4-21",
-    "question": "4734 Sayılı Kamu İhale Kanunu konusunda aşağıdakilerden hangisi doğrudur? (96)",
+    "id": "kik4734-4-19",
+    "question": "İhaleyi kazanan birinci teklif sahibi sözleşmeyi imzalamazsa ve ardından ekonomik açıdan en avantajlı ikinci teklif sahibi de sözleşmeyi imzalamaktan imtina ederse ihaleyi yapan idarenin uygulayacağı işlem nedir?",
     "options": [
-      "4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 96",
-      "4734 Sayılı Kamu İhale Kanunu ile ilgili yanlış yorum 96",
-      "4734 Sayılı Kamu İhale Kanunu ile bağdaşmayan uygulama 96",
-      "4734 Sayılı Kamu İhale Kanunu açısından geçersiz hüküm 96"
-    ],
-    "answer": "A",
-    "explanation": "Doğru seçenek A şıkkıdır. 4734 Sayılı Kamu İhale Kanunu için temel ilke: 4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 96."
-  },
-  {
-    "id": "kamu-ihale-4734-4-22",
-    "question": "4734 Sayılı Kamu İhale Kanunu konusunda aşağıdakilerden hangisi doğrudur? (97)",
-    "options": [
-      "4734 Sayılı Kamu İhale Kanunu ile ilgili yanlış yorum 97",
-      "4734 Sayılı Kamu İhale Kanunu ile bağdaşmayan uygulama 97",
-      "4734 Sayılı Kamu İhale Kanunu açısından geçersiz hüküm 97",
-      "4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 97"
-    ],
-    "answer": "D",
-    "explanation": "Doğru seçenek D şıkkıdır. 4734 Sayılı Kamu İhale Kanunu için temel ilke: 4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 97."
-  },
-  {
-    "id": "kamu-ihale-4734-4-23",
-    "question": "4734 Sayılı Kamu İhale Kanunu konusunda aşağıdakilerden hangisi doğrudur? (98)",
-    "options": [
-      "4734 Sayılı Kamu İhale Kanunu ile bağdaşmayan uygulama 98",
-      "4734 Sayılı Kamu İhale Kanunu açısından geçersiz hüküm 98",
-      "4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 98",
-      "4734 Sayılı Kamu İhale Kanunu ile ilgili yanlış yorum 98"
+      "Üçüncü sıradaki istekli davet edilir.",
+      "Pazarlık usulüyle rastgele bir firmayla anlaşılır.",
+      "Her iki firmanın da geçici teminatı gelir kaydedilerek ihale iptal edilir.",
+      "İkinci firmanın teminatı iade edilir ve süreç başa sarar."
     ],
     "answer": "C",
-    "explanation": "Doğru seçenek C şıkkıdır. 4734 Sayılı Kamu İhale Kanunu için temel ilke: 4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 98."
+    "açıklama": "Doğru cevap C. Kanunun 44. maddesine göre; ekonomik açıdan en avantajlı ikinci teklif sahibinin de sözleşmeyi imzalamaması durumunda, bu isteklinin de geçici teminatı bütçeye gelir kaydedilerek ihale iptal edilir."
   },
   {
-    "id": "kamu-ihale-4734-4-24",
-    "question": "4734 Sayılı Kamu İhale Kanunu konusunda aşağıdakilerden hangisi doğrudur? (99)",
+    "id": "kik4734-4-20",
+    "question": "Kamu İhale Kurumu'nun yürütme ve karar organı olan Kamu İhale Kurulunun başkanı ve üyelerinin görev süresi kaç yıldır?",
     "options": [
-      "4734 Sayılı Kamu İhale Kanunu açısından geçersiz hüküm 99",
-      "4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 99",
-      "4734 Sayılı Kamu İhale Kanunu ile ilgili yanlış yorum 99",
-      "4734 Sayılı Kamu İhale Kanunu ile bağdaşmayan uygulama 99"
+      "2 yıl",
+      "3 yıl",
+      "4 yıl",
+      "5 yıl"
+    ],
+    "answer": "C",
+    "açıklama": "Doğru cevap C. Kanunun 53. maddesine göre, Kamu İhale Kurulunun biri başkan ve biri ikinci başkan olmak üzere 9 üyesinin görev süresi dört (4) yıldır."
+  },
+  {
+    "id": "kik4734-4-21",
+    "question": "Aşağıdakilerden hangisi Kanunun 22. maddesinde düzenlenen 'Doğrudan Temin' yönteminin özelliklerinden biri değildir?",
+    "options": [
+      "İhale komisyonu kurma zorunluluğu bulunmaz.",
+      "Alımın Kamu İhale Bülteni'nde önceden ilan edilmesi şarttır.",
+      "Kesin teminat alınması idarenin takdirindedir.",
+      "İhtiyacın sadece gerçek veya tüzel tek bir kişi tarafından karşılanabileceğinin tespiti halinde uygulanabilir."
     ],
     "answer": "B",
-    "explanation": "Doğru seçenek B şıkkıdır. 4734 Sayılı Kamu İhale Kanunu için temel ilke: 4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 99."
+    "açıklama": "Doğru cevap B. Doğrudan temin yönteminde ilan yapılması zorunlu değildir. İhtiyaçlar, idarece görevlendirilecek kişi veya kişiler tarafından piyasa fiyat araştırması yapılarak doğrudan temin edilebilir."
   },
   {
-    "id": "kamu-ihale-4734-4-25",
-    "question": "4734 Sayılı Kamu İhale Kanunu konusunda aşağıdakilerden hangisi doğrudur? (100)",
+    "id": "kik4734-4-22",
+    "question": "Kamu ihalelerinde istekliler tarafından sunulan tekliflerin, belgelerin ve sözleşmelerin hazırlanmasında kullanılan kural dil aşağıdakilerden hangisidir?",
     "options": [
-      "4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 100",
-      "4734 Sayılı Kamu İhale Kanunu ile ilgili yanlış yorum 100",
-      "4734 Sayılı Kamu İhale Kanunu ile bağdaşmayan uygulama 100",
-      "4734 Sayılı Kamu İhale Kanunu açısından geçersiz hüküm 100"
+      "İngilizce",
+      "İhaleyi kazananın ana dili",
+      "Türkçe",
+      "İngilizce ve Türkçe çift dilli"
     ],
-    "answer": "A",
-    "explanation": "Doğru seçenek A şıkkıdır. 4734 Sayılı Kamu İhale Kanunu için temel ilke: 4734 Sayılı Kamu İhale Kanunu kapsamında doğru ifade 100."
+    "answer": "C",
+    "açıklama": "Doğru cevap C. Kanunun 65. maddesi (ve İdari Şartnameler) uyarınca, ihale dokümanı, teklifler ve sözleşme metinlerinin kural olarak Türkçe (Türk dili) olarak düzenlenmesi esastır. Yabancı dildeki belgelerin Türkçe tercümeleri istenir."
+  },
+  {
+    "id": "kik4734-4-23",
+    "question": "Aşırı düşük tekliflerin idare tarafından sorgulanmadan (savunma istenmeden) doğrudan reddedilebilmesi hangi durumlarda mümkündür?",
+    "options": [
+      "İhale yetkilisi keyfi olarak karar verirse.",
+      "Sadece mal alımı ihalelerinde.",
+      "İlan ve ihale dokümanında aşırı düşük tekliflerin açıklama istenilmeksizin reddedileceğinin açıkça belirtilmiş olması halinde.",
+      "Hiçbir zaman doğrudan reddedilemez, kesinlikle açıklama istenmek zorundadır."
+    ],
+    "answer": "C",
+    "açıklama": "Doğru cevap C. Kanunun 38. maddesine eklenen hüküm uyarınca; Kurum, ihale konusu işin türü vb. kriterlere göre açıklama istenilmeksizin aşırı düşük tekliflerin reddedilmesine ilişkin düzenlemeler yapabilir. İdareler bunu önceden ilan ve ihale dokümanında belirtmek şartıyla uygulayabilir."
+  },
+  {
+    "id": "kik4734-4-24",
+    "question": "İhaleye katılan bir firmanın, ihale esnasında sahte belge sunarak 'ihaleye fesat karıştırdığı' ihale komisyonu tarafından tespit edilirse, uygulanacak yaptırım aşağıdakilerden hangisidir?",
+    "options": [
+      "Sadece teklifi reddedilir, başka bir yaptırım uygulanmaz.",
+      "İstekli ihale dışı bırakılır, geçici teminatı gelir kaydedilir ve hakkında yasaklama işlemi başlatılır.",
+      "Sözlü uyarı verilir ve sahte belgenin gerçeği istenir.",
+      "İhale o an bütün istekliler için iptal edilir."
+    ],
+    "answer": "B",
+    "açıklama": "Doğru cevap B. Sahte belge sunmak Kanunun 17. maddesine göre yasak fiil ve davranıştır. Bu tespiti yapılan istekli ihale dışı bırakılır, geçici teminatı irat (gelir) kaydedilir ve hakkında kamu ihalelerine katılmaktan yasaklama hükümleri uygulanır."
+  },
+  {
+    "id": "kik4734-4-25",
+    "question": "İhale sürecinin tekliflerin açılmasına ilişkin 'ilk oturumunda', ihale komisyonunun teklif zarfları üzerinde yapacağı şekil denetiminde uygun olmadığı tespit edilen zarflar için hangi işlem yapılır?",
+    "options": [
+      "Hemen açılarak içindeki eksikler tespit edilir ve istekliye haber verilir.",
+      "Zarf açılmadan değerlendirme dışı bırakılır ve gerekçesi tutanağa yazılarak istekliye iade edilir.",
+      "Eksikler tamamlanması koşuluyla şarta bağlı olarak açılır.",
+      "Zarf açılır ancak sadece idari şartname dosyaları okunur."
+    ],
+    "answer": "B",
+    "açıklama": "Doğru cevap B. Kanunun 36. maddesine göre; ihale komisyonunca teklif zarfları incelenirken, 30'uncu maddenin birinci fıkrasına uygun olmayan zarflar (imzasız, kaşesiz, ihale adı eksik vb.) bir tutanak ile belirlenerek değerlendirmeye alınmaz ve açılmadan reddedilir."
   }
 ]
