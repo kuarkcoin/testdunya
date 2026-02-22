@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useCallback, useRef } from 'react';
+import React, { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 
@@ -29,6 +29,12 @@ interface Question {
 }
 
 type Mode = 'exam' | 'practice';
+
+interface PracticeFeedback {
+  questionId: string;
+  correctAnswer: string;
+  explanation: string;
+}
 
 // --- STATIC LABELS ---
 const getLabels = (isGlobal: boolean) => ({
@@ -162,6 +168,7 @@ QuestionCard.displayName = 'QuestionCard';
 export default function QuizPage() {
   const params = useParams();
   const testId = (params?.testId as string) || (params?.id as string);
+  const isHmgs = testId?.startsWith('hmgs-') || false;
 
   const isGlobal = testId?.includes('ielts') || false;
   const labels = getLabels(isGlobal);
@@ -175,6 +182,9 @@ export default function QuizPage() {
   const [error, setError] = useState('');
 
   const [audioSrc, setAudioSrc] = useState<string | null>(null);
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [practiceModeEnabled, setPracticeModeEnabled] = useState(false);
+  const [practiceFeedback, setPracticeFeedback] = useState<PracticeFeedback | null>(null);
 
   // ✅ NEW: Exam / Practice mode
   const [mode, setMode] = useState<Mode>('exam'); // default: exam
@@ -220,6 +230,8 @@ export default function QuizPage() {
     setAnswers({});
     setShowResult(false);
     setScore(0);
+    setCurrentQuestionIndex(0);
+    setPracticeFeedback(null);
 
     const jsonUrl = `/data/tests/${testId}.json`;
 
@@ -229,6 +241,7 @@ export default function QuizPage() {
         return res.json();
       })
       .then(rawdata => {
+        const durationFromFile = typeof rawdata?.durationSeconds === 'number' ? rawdata.durationSeconds : null;
         let normalizedQuestions: Question[] = [];
 
         // --- SENARYO A: READING & LISTENING ---
@@ -314,7 +327,9 @@ export default function QuizPage() {
         setQuestions(normalizedQuestions);
 
         // ✅ MODE TIME LOGIC
-        if (mode === 'practice') {
+        if (isHmgs) {
+          setTimeLeft(durationFromFile ?? 5400);
+        } else if (mode === 'practice') {
           setTimeLeft(null); // süresiz
         } else {
           // exam: süreli
@@ -333,11 +348,11 @@ export default function QuizPage() {
         setError("Error loading test.");
         setLoading(false);
       });
-  }, [testId, isGlobal, mode]);
+  }, [testId, isGlobal, mode, isHmgs]);
 
   // 2) TIMER (Exam mode only)
   useEffect(() => {
-    if (mode !== 'exam') return;              // ✅ only exam
+    if (!isHmgs && mode !== 'exam') return;
     if (timeLeft === null || showResult || loading) return;
     if (timeLeft <= 0) { handleSubmit(); return; }
 
@@ -346,11 +361,63 @@ export default function QuizPage() {
     }, 1000);
 
     return () => clearInterval(timerId);
-  }, [timeLeft, showResult, loading, mode]);
+  }, [timeLeft, showResult, loading, mode, isHmgs]);
+
+  const currentQuestion = useMemo(() => {
+    if (!isHmgs) return null;
+    return questions[currentQuestionIndex] ?? null;
+  }, [isHmgs, questions, currentQuestionIndex]);
 
   const handleAnswerChange = useCallback((qId: string, val: string) => {
+    if (!isHmgs) {
+      setAnswers(prev => ({ ...prev, [qId]: val }));
+      return;
+    }
+
+    const q = questions.find((item) => item.id === qId);
+    if (!q || practiceFeedback) return;
+
     setAnswers(prev => ({ ...prev, [qId]: val }));
-  }, []);
+    const isCorrect = q.answer === val;
+
+    if (!practiceModeEnabled || isCorrect) {
+      setPracticeFeedback(null);
+      setCurrentQuestionIndex((prev) => Math.min(prev + 1, questions.length - 1));
+      return;
+    }
+
+    setPracticeFeedback({
+      questionId: q.id,
+      correctAnswer: q.answer,
+      explanation: q.explanation || '',
+    });
+  }, [isHmgs, practiceModeEnabled, questions, practiceFeedback]);
+
+  const handlePracticeContinue = useCallback(() => {
+    setPracticeFeedback(null);
+    setCurrentQuestionIndex((prev) => Math.min(prev + 1, questions.length - 1));
+  }, [questions.length]);
+
+  useEffect(() => {
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (!isHmgs || showResult || loading || !currentQuestion) return;
+      if (practiceFeedback) return;
+
+      const target = event.target as HTMLElement | null;
+      const tag = target?.tagName?.toLowerCase();
+      if (tag === 'input' || tag === 'textarea' || (target as HTMLElement)?.isContentEditable) return;
+
+      const key = event.key.toUpperCase();
+      if (!['A', 'B', 'C', 'D', 'E'].includes(key)) return;
+      if (!currentQuestion.choices.some((choice) => choice.id === key)) return;
+
+      event.preventDefault();
+      handleAnswerChange(currentQuestion.id, key);
+    };
+
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [currentQuestion, handleAnswerChange, isHmgs, loading, practiceFeedback, showResult]);
 
   const handleSubmit = () => {
     let correctCount = 0;
@@ -514,37 +581,43 @@ export default function QuizPage() {
       <div className="sticky top-0 z-30 bg-white/95 backdrop-blur-md shadow-md border-b border-slate-200 transition-all">
         <div className="max-w-3xl mx-auto px-4 py-3">
 
-          {/* ✅ MODE TOGGLE */}
           <div className="flex items-center justify-between gap-3 mb-3">
-            <Link href="/" className="p-2 rounded-full hover:bg-slate-100 text-slate-500 transition">
+            <Link href={isHmgs ? '/hmgs' : '/'} className="p-2 rounded-full hover:bg-slate-100 text-slate-500 transition">
               <ArrowLeft className="w-6 h-6" />
             </Link>
 
-            <div className="flex items-center gap-2 bg-slate-100 p-1 rounded-2xl border border-slate-200">
-              <button
-                onClick={() => setModeSafe('exam')}
-                className={`px-4 py-2 rounded-xl text-sm font-black transition ${
-                  mode === 'exam'
-                    ? 'bg-slate-900 text-white shadow'
-                    : 'text-slate-600 hover:bg-white'
-                }`}
-                title={labels.modeHint}
-              >
-                {labels.modeExam}
-              </button>
+            {isHmgs ? (
+              <label className="flex items-center gap-2 bg-slate-100 px-4 py-2 rounded-xl border border-slate-200 text-sm font-bold text-slate-700">
+                <input
+                  type="checkbox"
+                  checked={practiceModeEnabled}
+                  onChange={(e) => setPracticeModeEnabled(e.target.checked)}
+                />
+                Pratik Mod
+              </label>
+            ) : (
+              <div className="flex items-center gap-2 bg-slate-100 p-1 rounded-2xl border border-slate-200">
+                <button
+                  onClick={() => setModeSafe('exam')}
+                  className={`px-4 py-2 rounded-xl text-sm font-black transition ${
+                    mode === 'exam' ? 'bg-slate-900 text-white shadow' : 'text-slate-600 hover:bg-white'
+                  }`}
+                  title={labels.modeHint}
+                >
+                  {labels.modeExam}
+                </button>
 
-              <button
-                onClick={() => setModeSafe('practice')}
-                className={`px-4 py-2 rounded-xl text-sm font-black transition ${
-                  mode === 'practice'
-                    ? 'bg-indigo-600 text-white shadow'
-                    : 'text-slate-600 hover:bg-white'
-                }`}
-                title={labels.modeHintPractice}
-              >
-                {labels.modePractice}
-              </button>
-            </div>
+                <button
+                  onClick={() => setModeSafe('practice')}
+                  className={`px-4 py-2 rounded-xl text-sm font-black transition ${
+                    mode === 'practice' ? 'bg-indigo-600 text-white shadow' : 'text-slate-600 hover:bg-white'
+                  }`}
+                  title={labels.modeHintPractice}
+                >
+                  {labels.modePractice}
+                </button>
+              </div>
+            )}
 
             <button
               onClick={handleSubmit}
@@ -554,8 +627,7 @@ export default function QuizPage() {
             </button>
           </div>
 
-          {/* ✅ TIMER (Exam only) */}
-          {mode === 'exam' && (
+          {(isHmgs || mode === 'exam') && (
             <div className="flex items-center justify-center mb-3">
               <div
                 className={`flex items-center gap-2 text-lg font-mono font-bold px-4 py-1.5 rounded-xl border-2 ${
@@ -598,25 +670,60 @@ export default function QuizPage() {
             </div>
           )}
 
-          {/* ✅ Small Mode info */}
           <div className="text-center text-xs font-bold text-slate-500 mt-2">
-            {mode === 'exam' ? labels.modeHint : labels.modeHintPractice}
+            {isHmgs
+              ? practiceModeEnabled
+                ? 'Pratik mod: yanlışta açıklamayı gör, Devam ile ilerle.'
+                : 'Normal mod: sorular arasında otomatik ilerleme aktif.'
+              : mode === 'exam'
+                ? labels.modeHint
+                : labels.modeHintPractice}
           </div>
 
         </div>
       </div>
 
       <div className="max-w-3xl mx-auto px-4 space-y-8 mt-8">
-        {questions.map((q, idx) => (
-          <QuestionCard
-            key={q.id}
-            q={q}
-            idx={idx}
-            answer={answers[q.id] || ''}
-            onAnswer={handleAnswerChange}
-            labels={labels}
-          />
-        ))}
+        {isHmgs && currentQuestion && (
+          <div className="text-sm font-bold text-slate-500">Soru {currentQuestionIndex + 1} / {questions.length}</div>
+        )}
+
+        {isHmgs && currentQuestion ? (
+          <>
+            <QuestionCard
+              key={currentQuestion.id}
+              q={currentQuestion}
+              idx={currentQuestionIndex}
+              answer={answers[currentQuestion.id] || ''}
+              onAnswer={handleAnswerChange}
+              labels={labels}
+            />
+
+            {practiceFeedback?.questionId === currentQuestion.id && (
+              <div className="rounded-2xl border border-amber-200 bg-amber-50 p-5 space-y-3">
+                <div className="font-bold text-amber-900">Yanlış cevap. Doğru şık: {practiceFeedback.correctAnswer}</div>
+                {practiceFeedback.explanation && <p className="text-sm text-amber-800">{practiceFeedback.explanation}</p>}
+                <button
+                  onClick={handlePracticeContinue}
+                  className="px-5 py-2 rounded-xl bg-amber-600 text-white font-bold hover:bg-amber-700"
+                >
+                  Devam
+                </button>
+              </div>
+            )}
+          </>
+        ) : (
+          questions.map((q, idx) => (
+            <QuestionCard
+              key={q.id}
+              q={q}
+              idx={idx}
+              answer={answers[q.id] || ''}
+              onAnswer={handleAnswerChange}
+              labels={labels}
+            />
+          ))
+        )}
 
         <div className="pt-8 pb-12 flex justify-center">
           <button

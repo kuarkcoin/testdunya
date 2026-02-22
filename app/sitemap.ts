@@ -45,6 +45,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
+
+  const hmgsRoutes = ['/hmgs', ...Array.from({ length: 20 }, (_, idx) => `/test/hmgs-${idx + 1}`)].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: lastMod,
+    changeFrequency: 'weekly' as const,
+    priority: route === '/hmgs' ? 0.9 : 0.8,
+  }))
+
   // 4. AI Destekli Oyunlar (Engagement Artırıcı içerikler)
   const gameRoutes = [
     '/speedrun',
@@ -60,5 +68,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  return [...mainRoutes, ...examHubs, ...ieltsRoutes, ...gameRoutes]
+  return [...mainRoutes, ...examHubs, ...ieltsRoutes, ...hmgsRoutes, ...gameRoutes]
 }
