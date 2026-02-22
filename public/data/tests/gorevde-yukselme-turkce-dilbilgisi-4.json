@@ -1,302 +1,302 @@
 [
   {
-    "id": "turkce-dilbilgisi-4-1",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (76)",
+    "id": "turkce-4-1",
+    "question": "Aşağıdaki sözcüklerin hangisinde ünlü düşmesi (hece düşmesi) yoktur?",
     "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 76",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 76",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 76",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 76"
-    ],
-    "answer": "A",
-    "explanation": "Doğru seçenek A şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 76."
-  },
-  {
-    "id": "turkce-dilbilgisi-4-2",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (77)",
-    "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 77",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 77",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 77",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 77"
+      "Ufkumuz",
+      "Karnı",
+      "İlerliyor",
+      "Durumu"
     ],
     "answer": "D",
-    "explanation": "Doğru seçenek D şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 77."
+    "açıklama": "Doğru cevap D. 'Ufuk-umuz' (ufkumuz), 'Karın-ı' (karnı), 'İleri-liyor' (ilerliyor) sözcüklerinde ünlü düşmesi vardır. 'Durumu' (durum-u) sözcüğünde herhangi bir ses düşmesi yoktur."
   },
   {
-    "id": "turkce-dilbilgisi-4-3",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (78)",
+    "id": "turkce-4-2",
+    "question": "Aşağıdaki cümlelerin hangisinde ünsüz benzeşmesi (sertleşmesi) kuralına uyulmamasından kaynaklanan bir yazım yanlışı vardır?",
     "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 78",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 78",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 78",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 78"
-    ],
-    "answer": "C",
-    "explanation": "Doğru seçenek C şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 78."
-  },
-  {
-    "id": "turkce-dilbilgisi-4-4",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (79)",
-    "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 79",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 79",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 79",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 79"
+      "Kitaplar rafta çok güzel duruyor.",
+      "Sabahları ağaçda öten kuşları dinlerdim.",
+      "Dolaptan soğuk suyu çıkarıp içti.",
+      "Yavaşça yerinden kalkıp kapıya yöneldi."
     ],
     "answer": "B",
-    "explanation": "Doğru seçenek B şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 79."
+    "açıklama": "Doğru cevap B. Sert ünsüzle (ç) biten 'ağaç' kelimesine gelen bulunma durumu eki '-ta' şeklinde sertleşmelidir. 'Ağaçda' değil, 'ağaçta' yazılmalıdır."
   },
   {
-    "id": "turkce-dilbilgisi-4-5",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (80)",
+    "id": "turkce-4-3",
+    "question": "Kurum, kuruluş, kurul ve iş yeri adlarına gelen çekim ekleri kesme işaretiyle ayrılmaz. Buna göre aşağıdakilerden hangisinde yazım yanlışı yapılmıştır?",
     "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 80",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 80",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 80",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 80"
+      "Türkiye Büyük Millet Meclisine",
+      "Türk Dil Kurumunun",
+      "Bakanlar Kurulu'na",
+      "Marmara Üniversitesinden"
     ],
-    "answer": "A",
-    "explanation": "Doğru seçenek A şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 80."
+    "answer": "C",
+    "açıklama": "Doğru cevap C. Kural gereği kurum ve kuruluşlara gelen ekler kesme işaretiyle ayrılmaz. 'Bakanlar Kuruluna' şeklinde bitişik yazılmalıydı."
   },
   {
-    "id": "turkce-dilbilgisi-4-6",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (81)",
+    "id": "turkce-4-4",
+    "question": "Aşağıdaki cümlelerin hangisinde 'ki'nin yazımıyla ilgili bir yanlışlık yapılmıştır?",
     "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 81",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 81",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 81",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 81"
+      "Mademki gelmeyecektin, neden önceden haber vermedin?",
+      "Oysaki ona bütün gerçekleri anlatmıştım.",
+      "Sen yeterki iste, her şeyi yaparım.",
+      "Evdeki hesap çarşıya uymadı."
+    ],
+    "answer": "C",
+    "açıklama": "Doğru cevap C. 'Yeter ki' ifadesindeki 'ki' bağlaçtır ve her zaman ayrı yazılır. A ve B seçeneklerindeki 'ki'ler kalıplaştığı için (SOMBAHÇEM kuralı) bitişik yazılır."
+  },
+  {
+    "id": "turkce-4-5",
+    "question": "Aşağıdaki cümlelerin hangisinde zarf-fiil (bağ-fiil / ulaç) kullanılmamıştır?",
+    "options": [
+      "Koşarak yanıma geldi ve sarıldı.",
+      "Güneş doğunca yola çıkmaya karar verdik.",
+      "Kitap okumak onun en sevdiği aktiviteydi.",
+      "Çocuklar durmaksızın oyun oynuyorlardı."
+    ],
+    "answer": "C",
+    "açıklama": "Doğru cevap C. 'Okumak' kelimesindeki '-mak' isim-fiil (mastar) ekidir. A'da 'koş-arak', B'de 'doğ-unca', D'de 'dur-maksızın' zarf-fiildir."
+  },
+  {
+    "id": "turkce-4-6",
+    "question": "Aşağıdaki cümlelerin hangisinde virgülün (,) kullanımı yanlıştır?",
+    "options": [
+      "Uzun, yorucu ve sıcak bir günün ardından eve döndük.",
+      "Evet, teklifinizi seve seve kabul ediyorum.",
+      "Yaşlı kadın, merdivenleri ağır ağır çıkıyordu.",
+      "Ders çalışıp, ödevlerini bitirdikten sonra dışarı çıktı."
     ],
     "answer": "D",
-    "explanation": "Doğru seçenek D şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 81."
+    "açıklama": "Doğru cevap D. Metin içinde 'ıp/ip, arak/erek' gibi zarf-fiil eki almış kelimelerden sonra (eğer ard arda sıralanan zarf fiiller yoksa) virgül konmaz."
   },
   {
-    "id": "turkce-dilbilgisi-4-7",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (82)",
+    "id": "turkce-4-7",
+    "question": "Aşağıdaki cümlelerin hangisinde zaman zarfı kullanılmamıştır?",
     "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 82",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 82",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 82",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 82"
-    ],
-    "answer": "C",
-    "explanation": "Doğru seçenek C şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 82."
-  },
-  {
-    "id": "turkce-dilbilgisi-4-8",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (83)",
-    "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 83",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 83",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 83",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 83"
-    ],
-    "answer": "B",
-    "explanation": "Doğru seçenek B şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 83."
-  },
-  {
-    "id": "turkce-dilbilgisi-4-9",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (84)",
-    "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 84",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 84",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 84",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 84"
-    ],
-    "answer": "A",
-    "explanation": "Doğru seçenek A şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 84."
-  },
-  {
-    "id": "turkce-dilbilgisi-4-10",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (85)",
-    "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 85",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 85",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 85",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 85"
+      "Yarın sabah erkenden yola çıkacağız.",
+      "Kışın buralara çok kar yağar.",
+      "Onu gördüğümde saat çok geçti.",
+      "Kırmızı arabasını garaja dikkatlice park etti."
     ],
     "answer": "D",
-    "explanation": "Doğru seçenek D şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 85."
+    "açıklama": "Doğru cevap D. D seçeneğinde fiile sorulan 'Nasıl?' sorusunun cevabı olan 'dikkatlice' sözcüğü durum zarfıdır. Cümlede zaman ('Ne zaman?') bildiren bir kelime yoktur."
   },
   {
-    "id": "turkce-dilbilgisi-4-11",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (86)",
+    "id": "turkce-4-8",
+    "question": "Fiilimsiler bazen fiilimsi özelliklerini tamamen yitirerek bir varlığın veya kavramın kalıcı adı olurlar. Aşağıdakilerin hangisinde bu duruma örnek bir kullanım vardır?",
     "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 86",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 86",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 86",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 86"
-    ],
-    "answer": "C",
-    "explanation": "Doğru seçenek C şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 86."
-  },
-  {
-    "id": "turkce-dilbilgisi-4-12",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (87)",
-    "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 87",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 87",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 87",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 87"
+      "Konuşmasını bitirince herkes onu alkışladı.",
+      "Annemin yaptığı dolma çok lezzetli olmuş.",
+      "Gülümseyen yüzler görmek beni mutlu ediyor.",
+      "Soruları çözmek için çok uğraştı."
     ],
     "answer": "B",
-    "explanation": "Doğru seçenek B şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 87."
+    "açıklama": "Doğru cevap B. 'Dolma' sözcüğü fiilimsi (isim-fiil) özelliğini kaybedip bir yemeğin kalıcı adı olmuştur."
   },
   {
-    "id": "turkce-dilbilgisi-4-13",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (88)",
+    "id": "turkce-4-9",
+    "question": "Zarf-fiiller cümleye 'zaman' veya 'durum' anlamı katarlar. Aşağıdaki cümlelerin hangisinde zarf-fiil cümleye diğerlerinden farklı bir anlam katmıştır?",
     "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 88",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 88",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 88",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 88"
-    ],
-    "answer": "A",
-    "explanation": "Doğru seçenek A şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 88."
-  },
-  {
-    "id": "turkce-dilbilgisi-4-14",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (89)",
-    "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 89",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 89",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 89",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 89"
+      "Çocuklar ağlayarak annelerinin yanına koştu.",
+      "Soruları düşünerek çözmelisin.",
+      "Gülerek içeri girdi ve masaya oturdu.",
+      "Zil çalınca herkes sınıflara koştu."
     ],
     "answer": "D",
-    "explanation": "Doğru seçenek D şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 89."
+    "açıklama": "Doğru cevap D. A, B ve C seçeneklerindeki zarf-fiiller fiile sorulan 'Nasıl?' sorusuna cevap verip 'durum' anlamı katarken, D seçeneğindeki 'çalınca' sözcüğü 'Ne zaman?' sorusuna cevap vererek cümleye 'zaman' anlamı katmıştır."
   },
   {
-    "id": "turkce-dilbilgisi-4-15",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (90)",
+    "id": "turkce-4-10",
+    "question": "Aşağıdaki cümlelerin hangisinde hem edat (ilgeç) hem de bağlaç kullanılmıştır?",
     "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 90",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 90",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 90",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 90"
-    ],
-    "answer": "C",
-    "explanation": "Doğru seçenek C şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 90."
-  },
-  {
-    "id": "turkce-dilbilgisi-4-16",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (91)",
-    "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 91",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 91",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 91",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 91"
+      "Senin kadar çalışkan bir öğrenci görmedim.",
+      "Sabaha kadar ders çalıştı ama sınavı geçemedi.",
+      "Kardeşimle ben aynı okula gidiyoruz.",
+      "Gerek annesi gerek babası ona destek oldu."
     ],
     "answer": "B",
-    "explanation": "Doğru seçenek B şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 91."
+    "açıklama": "Doğru cevap B. 'Sabaha kadar' ifadesindeki 'kadar' edattır. Cümledeki 'ama' kelimesi ise bağlaçtır."
   },
   {
-    "id": "turkce-dilbilgisi-4-17",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (92)",
+    "id": "turkce-4-11",
+    "question": "Aşağıdaki cümlelerin hangisinde yüklem 'dilek (tasarlama) kipleri'nden biriyle çekimlenmemiştir?",
     "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 92",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 92",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 92",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 92"
-    ],
-    "answer": "A",
-    "explanation": "Doğru seçenek A şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 92."
-  },
-  {
-    "id": "turkce-dilbilgisi-4-18",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (93)",
-    "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 93",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 93",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 93",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 93"
+      "Yarın akşam mutlaka bize gelmelisin.",
+      "Keşke havalar biraz daha ısınsa.",
+      "Biraz acele edin, geç kalıyoruz.",
+      "Bütün ödevlerini eksiksiz olarak yapıyor."
     ],
     "answer": "D",
-    "explanation": "Doğru seçenek D şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 93."
+    "açıklama": "Doğru cevap D. 'Yapıyor' fiili şimdiki zaman kipiyle (-yor) çekimlenmiştir; şimdiki zaman kipi haber (bildirme) kiplerindendir. A'da gereklilik, B'de şart, C'de emir kipi vardır (bunlar dilek kipleridir)."
   },
   {
-    "id": "turkce-dilbilgisi-4-19",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (94)",
+    "id": "turkce-4-12",
+    "question": "Aşağıdaki cümlelerin hangisinde zincirleme isim tamlaması vardır?",
     "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 94",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 94",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 94",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 94"
-    ],
-    "answer": "C",
-    "explanation": "Doğru seçenek C şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 94."
-  },
-  {
-    "id": "turkce-dilbilgisi-4-20",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (95)",
-    "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 95",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 95",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 95",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 95"
+      "Evin kırık kapısı rüzgarda ses çıkarıyordu.",
+      "Türkçe öğretmeninin masası çok düzenliydi.",
+      "Küçük çocuğun kırmızı ayakkabıları vardı.",
+      "Soğuk kış günleri insanı hüzünlendirir."
     ],
     "answer": "B",
-    "explanation": "Doğru seçenek B şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 95."
+    "açıklama": "Doğru cevap B. 'Türkçe öğretmeni-nin masa-sı' tamlamasında 'Türkçe', 'öğretmen' ve 'masa' isimleri bir araya gelerek zincirleme isim tamlaması oluşturmuştur."
   },
   {
-    "id": "turkce-dilbilgisi-4-21",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (96)",
+    "id": "turkce-4-13",
+    "question": "‘Öğrenciler, zor soruları sınavda dikkatlice çözdüler.’ cümlesinin öge dizilişi aşağıdakilerden hangisidir?",
     "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 96",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 96",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 96",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 96"
+      "Özne - Belirtili Nesne - Dolaylı Tümleç - Zarf Tümleci - Yüklem",
+      "Özne - Zarf Tümleci - Belirtili Nesne - Dolaylı Tümleç - Yüklem",
+      "Özne - Belirtisiz Nesne - Zarf Tümleci - Dolaylı Tümleç - Yüklem",
+      "Belirtili Nesne - Özne - Dolaylı Tümleç - Zarf Tümleci - Yüklem"
     ],
     "answer": "A",
-    "explanation": "Doğru seçenek A şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 96."
+    "açıklama": "Doğru cevap A. Çözdüler (Yüklem). Çözen kim? Öğrenciler (Özne). Neyi çözdüler? Zor soruları (Belirtili Nesne). Nerede? Sınavda (Dolaylı Tümleç). Nasıl? Dikkatlice (Zarf Tümleci)."
   },
   {
-    "id": "turkce-dilbilgisi-4-22",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (97)",
+    "id": "turkce-4-14",
+    "question": "Edilgen çatılı fiillerin bulunduğu cümlelerde işi yapan gerçek bir özne yoktur, nesne özne görevini üstlenir (sözde özne). Buna göre aşağıdakilerin hangisinde sözde özne kullanılmıştır?",
     "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 97",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 97",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 97",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 97"
+      "Okulun bütün camları tatilde silindi.",
+      "Annem misafirler için güzel yemekler hazırladı.",
+      "Çocuk, odasında kendi kendine oyun oynuyordu.",
+      "Öğretmen, dersi çok güzel bir şekilde anlattı."
+    ],
+    "answer": "A",
+    "açıklama": "Doğru cevap A. 'Silindi' fiilinde işi yapan (silen) belli değildir. Silinen nedir? 'Okulun bütün camları'. Burada nesne özne görevini üstlendiği için sözde öznedir."
+  },
+  {
+    "id": "turkce-4-15",
+    "question": "Aşağıdaki cümlelerden hangisi yapısına göre 'iç içe birleşik cümle'dir?",
+    "options": [
+      "Okula geldi ve eşyalarını sırasına bıraktı.",
+      "Öğretmenimiz, 'Yarınki sınava iyi çalışın.' dedi.",
+      "Kar yağınca okullar bir gün tatil edildi.",
+      "Bu kitabı okumanı sana çok tavsiye ediyorum."
+    ],
+    "answer": "B",
+    "açıklama": "Doğru cevap B. Bir cümlenin içinde, başkasına ait başka bir cümlenin (alıntı cümlenin) yer almasına iç içe birleşik cümle denir."
+  },
+  {
+    "id": "turkce-4-16",
+    "question": "Dönüşlü çatılı fiillerde özne, işi hem yapan hem de bu işten etkilenen durumundadır. Buna göre aşağıdaki fiillerden hangisi dönüşlüdür?",
+    "options": [
+      "Mektuplar dün sabah postaya verildi.",
+      "Hırsızlar polis ekiplerince yakalandı.",
+      "Genç kız, aynanın karşısında uzun süre tarandı.",
+      "Sokaklar sabaha kadar yıkandı."
+    ],
+    "answer": "C",
+    "açıklama": "Doğru cevap C. 'Tarandı' fiilinde genç kız eylemi (taranma) kendi kendine yapmış ve bu eylemden kendisi etkilenmiştir. Diğer seçenekler (verildi, yakalandı, yıkandı) eylemin başkası tarafından yapıldığı edilgen fiillerdir."
+  },
+  {
+    "id": "turkce-4-17",
+    "question": "Geçişli bir fiilin, '-r, -t, -tır' eklerinden birini alarak geçişlilik derecesinin artırılmasına ettirgen fiil denir. Aşağıdakilerden hangisi ettirgen bir fiildir?",
+    "options": [
+      "Çocuğu erkenden uyuttu.",
+      "Bizi anlattığı fıkralarla güldürdü.",
+      "Mektubu sekreterine yazdırdı.",
+      "Korku filmi izlerken çok korktu."
+    ],
+    "answer": "C",
+    "açıklama": "Doğru cevap C. 'Yazmak' fiili zaten geçişlidir (onu yazmak). '-dır' ekini alarak geçişlilik derecesi artırılmış ve eylem başkasına yaptırılmıştır (yazdırmak). Bu ettirgenliktir. A ve B geçişsizden geçişli olduğu için oldurgandır."
+  },
+  {
+    "id": "turkce-4-18",
+    "question": "Aşağıdaki cümlelerin hangisinde gereksiz sözcük kullanımından kaynaklanan bir anlatım bozukluğu vardır?",
+    "options": [
+      "Bana anlattığı tüm gizli sırları içimde saklayacağım.",
+      "Sınav sonuçları açıklandığında çok mutlu oldu.",
+      "İki arkadaş okul çıkışında uzun uzun dertleştiler.",
+      "Yarınki toplantı için herkes çok iyi hazırlanmalı."
+    ],
+    "answer": "A",
+    "açıklama": "Doğru cevap A. 'Sır' zaten gizli tutulan, saklanan bir bilgidir. Bu nedenle cümlede 'gizli' sözcüğünün kullanılması gereksizdir."
+  },
+  {
+    "id": "turkce-4-19",
+    "question": "Aşağıdaki cümlelerin hangisi 'amaç-sonuç' ilişkisi taşımaktadır?",
+    "options": [
+      "Kar yağdığı için yollar kapandı.",
+      "Çok yorulduğundan hemen yatağa uzandı.",
+      "İyi bir üniversite kazanmak için gece gündüz çalışıyor.",
+      "Seni göremedim diye çok üzüldüm."
+    ],
+    "answer": "C",
+    "açıklama": "Doğru cevap C. C cümlesinde eylemin yapılma amacı (iyi bir üniversite kazanmak) belirtilmiştir. A, B ve D seçenekleri neden-sonuç (sebep-sonuç) cümleleridir."
+  },
+  {
+    "id": "turkce-4-20",
+    "question": "Aşağıdaki cümlelerin hangisinin yüklemi yapısına göre 'türemiş' bir fiildir?",
+    "options": [
+      "Bütün gece uyumadı.",
+      "Kitabı bir çırpıda okudu.",
+      "Oyun oynarken birden ağlamaya başladı.",
+      "Yarın sabah Ankara'ya gidecek."
+    ],
+    "answer": "C",
+    "açıklama": "Doğru cevap C. 'Başladı' fiilinin kökü isim olan 'baş' kelimesidir. İsimden fiil yapan '-la' yapım ekini alarak 'başlamak' fiiline dönüşmüş, yani türemiştir."
+  },
+  {
+    "id": "turkce-4-21",
+    "question": "Noktalı virgül (;) aşağıdaki durumların hangisinde kullanılır?",
+    "options": [
+      "Kendisinden sonra açıklama yapılacak cümlenin sonunda.",
+      "Ögeleri arasında virgül bulunan sıralı cümleleri birbirinden ayırmak için.",
+      "Alıntı cümlelerin başında ve sonunda.",
+      "Özel isimlere getirilen çekim eklerini ayırmak için."
+    ],
+    "answer": "B",
+    "açıklama": "Doğru cevap B. Sıralı cümleleri normalde virgül ayırır; ancak bu cümlelerin kendi içinde zaten virgül kullanılmışsa, cümleleri birbirinden ayırmak için noktalı virgül kullanılır."
+  },
+  {
+    "id": "turkce-4-22",
+    "question": "Aşağıdaki cümlelerin hangisinde belgisiz zamir kullanılmıştır?",
+    "options": [
+      "Bazı günler hiç dışarı çıkmak istemiyorum.",
+      "Kimi insanlar yalnızlığı çok sever.",
+      "Biri benim masamdaki dosyaları karıştırmış.",
+      "Çoğu öğrenci bu konuyu anlamakta zorlandı."
+    ],
+    "answer": "C",
+    "açıklama": "Doğru cevap C. 'Biri' kelimesi ismin yerini belirsiz bir şekilde tuttuğu için belgisiz zamirdir. Diğer seçeneklerdeki 'bazı, kimi, çoğu' sözcükleri önlerindeki isimleri niteledikleri için belgisiz sıfattır."
+  },
+  {
+    "id": "turkce-4-23",
+    "question": "Aşağıdaki kelimelerden hangisinin sesteşi (eş seslisi) yoktur?",
+    "options": [
+      "Yaz",
+      "Gül",
+      "Çay",
+      "Masa"
     ],
     "answer": "D",
-    "explanation": "Doğru seçenek D şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 97."
+    "açıklama": "Doğru cevap D. 'Masa' kelimesinin tek bir anlamı vardır. 'Yaz' (mevsim / yazmak), 'Gül' (çiçek / gülmek), 'Çay' (içecek / küçük dere) kelimelerinin farklı anlamlara gelen sesteşleri vardır."
   },
   {
-    "id": "turkce-dilbilgisi-4-23",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (98)",
+    "id": "turkce-4-24",
+    "question": "Somut anlamlı bir sözcüğün cümlede mecazlaşarak soyut bir anlam kazanmasına 'soyutlama' denir. Aşağıdakilerin hangisinde soyutlama vardır?",
     "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 98",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 98",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 98",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 98"
+      "Ağacın kalın dalları rüzgarda kırıldı.",
+      "Yediğimiz meyvelerin tadı harikaydı.",
+      "Bu karanlık işlerin arkasında kim var?",
+      "Dağın zirvesine çıkınca derin bir nefes aldı."
     ],
     "answer": "C",
-    "explanation": "Doğru seçenek C şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 98."
+    "açıklama": "Doğru cevap C. 'Karanlık' kelimesi normalde ışığın olmaması durumudur (somut). Ancak cümlede 'kötü, yasa dışı, gizli' anlamında kullanılarak soyut bir anlama (soyutlama) bürünmüştür."
   },
   {
-    "id": "turkce-dilbilgisi-4-24",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (99)",
+    "id": "turkce-4-25",
+    "question": "Aşağıdaki cümlelerin hangisinde büyük harflerin yazımıyla ilgili bir kural hatası yapılmıştır?",
     "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 99",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 99",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 99",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 99"
+      "Avukat Hasan Bey dün duruşmaya katıldı.",
+      "Kedimiz Minnoş bugün bütün gün uyudu.",
+      "Mektubuna 'Canım Annem,' diyerek başlamış.",
+      "Güneş, Dünya'nın ve ayın etrafını aydınlatır."
     ],
-    "answer": "B",
-    "explanation": "Doğru seçenek B şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 99."
-  },
-  {
-    "id": "turkce-dilbilgisi-4-25",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (100)",
-    "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 100",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 100",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 100",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 100"
-    ],
-    "answer": "A",
-    "explanation": "Doğru seçenek A şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 100."
+    "answer": "D",
+    "açıklama": "Doğru cevap D. Dünya, Güneş, Ay kelimeleri gezegen/astronomi anlamında terim olarak kullanıldığında büyük harfle başlar. 'Ay'ın' şeklinde büyük harfle yazılıp kesme işareti ile ayrılmalıydı."
   }
 ]
