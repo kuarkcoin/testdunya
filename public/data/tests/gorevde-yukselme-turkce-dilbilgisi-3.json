@@ -1,302 +1,302 @@
 [
   {
-    "id": "turkce-dilbilgisi-3-1",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (51)",
+    "id": "turkce-3-1",
+    "question": "Aşağıdaki sözcüklerin hangisine '-(i)cik / -(ı)cık' küçültme eki getirildiğinde ünsüz düşmesi meydana gelmez?",
     "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 51",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 51",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 51",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 51"
-    ],
-    "answer": "B",
-    "explanation": "Doğru seçenek B şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 51."
-  },
-  {
-    "id": "turkce-dilbilgisi-3-2",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (52)",
-    "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 52",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 52",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 52",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 52"
-    ],
-    "answer": "A",
-    "explanation": "Doğru seçenek A şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 52."
-  },
-  {
-    "id": "turkce-dilbilgisi-3-3",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (53)",
-    "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 53",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 53",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 53",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 53"
+      "Küçük",
+      "Minik",
+      "Ufak",
+      "Dar"
     ],
     "answer": "D",
-    "explanation": "Doğru seçenek D şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 53."
+    "açıklama": "Doğru cevap D. 'Küçük' (küçücük), 'Minik' (minicik), 'Ufak' (ufacık) kelimelerinde 'k' ünsüzü düşer. Ancak 'Dar' kelimesine küçültme eki geldiğinde 'daracık' olur ve ünsüz düşmesi değil, ünlü türemesi (a) gerçekleşir."
   },
   {
-    "id": "turkce-dilbilgisi-3-4",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (54)",
+    "id": "turkce-3-2",
+    "question": "Aşağıdaki birleşik eylemlerden hangisinin yazımı yanlıştır?",
     "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 54",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 54",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 54",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 54"
+      "Fark etmek",
+      "Hissetmek",
+      "Terketmek",
+      "Seyretmek"
     ],
     "answer": "C",
-    "explanation": "Doğru seçenek C şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 54."
+    "açıklama": "Doğru cevap C. İsim soylu bir sözcükle yardımcı eylem (etmek, olmak, kılmak vb.) birleşirken ses düşmesi veya ses türemesi olmazsa ayrı yazılır. 'Terk etmek' sözcüğünde ses olayı olmadığı için ayrı yazılmalıdır."
   },
   {
-    "id": "turkce-dilbilgisi-3-5",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (55)",
+    "id": "turkce-3-3",
+    "question": "Aşağıdaki cümlelerin hangisinde iki noktanın (:) kullanımı doğrudur?",
     "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 55",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 55",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 55",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 55"
-    ],
-    "answer": "B",
-    "explanation": "Doğru seçenek B şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 55."
-  },
-  {
-    "id": "turkce-dilbilgisi-3-6",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (56)",
-    "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 56",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 56",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 56",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 56"
+      "Pazardan aldıklarım şunlardı: elma, armut, muz.",
+      "O kadar yorulmuştum ki: hemen uyudum.",
+      "Sana son kez söylüyorum: oraya gitmeyeceksin.",
+      "Kendimi tanıtayım: ben yeni Türkçe öğretmeninizim."
     ],
     "answer": "A",
-    "explanation": "Doğru seçenek A şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 56."
+    "açıklama": "Doğru cevap A. İki nokta, kendisiyle ilgili örnek verilecek veya açıklama yapılacak cümlenin sonuna konur. A seçeneğinde örnek verileceği için kullanımı doğrudur. B ve C'de gereksizdir, D'de ise açıklamadan sonra büyük harfle başlanmalıydı ('Ben...')."
   },
   {
-    "id": "turkce-dilbilgisi-3-7",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (57)",
+    "id": "turkce-3-4",
+    "question": "Aşağıdaki cümlelerin hangisinde belirtili isim tamlaması kullanılmıştır?",
     "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 57",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 57",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 57",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 57"
-    ],
-    "answer": "D",
-    "explanation": "Doğru seçenek D şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 57."
-  },
-  {
-    "id": "turkce-dilbilgisi-3-8",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (58)",
-    "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 58",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 58",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 58",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 58"
-    ],
-    "answer": "C",
-    "explanation": "Doğru seçenek C şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 58."
-  },
-  {
-    "id": "turkce-dilbilgisi-3-9",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (59)",
-    "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 59",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 59",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 59",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 59"
+      "Çam ağaçları mahalleye güzel bir koku yayıyordu.",
+      "Masanın ayağı kırılınca yere düştü.",
+      "Güneş gözlüğümü arabada unutmuşum.",
+      "Sokak lambası sabaha kadar yanık kaldı."
     ],
     "answer": "B",
-    "explanation": "Doğru seçenek B şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 59."
+    "açıklama": "Doğru cevap B. Belirtili isim tamlamasında hem tamlayan hem de tamlanan ek alır. 'Masa-nın ayak-ı (ayağı)' tamlaması belirtili isim tamlamasıdır. Diğer seçeneklerde (çam ağaçları, güneş gözlüğü, sokak lambası) belirtisiz isim tamlaması vardır."
   },
   {
-    "id": "turkce-dilbilgisi-3-10",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (60)",
+    "id": "turkce-3-5",
+    "question": "İsim cümlelerinde vurgu yüklemin kendisindedir. Buna göre aşağıdaki cümlelerin hangisinde vurgu yüklemdedir?",
     "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 60",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 60",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 60",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 60"
+      "Bugün hava dünkünden çok daha soğuktu.",
+      "Arabayı dikkatlice garaja park etti.",
+      "Yarın sabah erkenden toplantıya gideceğiz.",
+      "Kardeşim sınavı kazandığı için çok sevindi."
     ],
     "answer": "A",
-    "explanation": "Doğru seçenek A şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 60."
+    "açıklama": "Doğru cevap A. 'Soğuktu' sözcüğü ek fiil (-tu) almış bir isimdir ve cümle isim cümlesidir. İsim cümlelerinde vurgu yüklemin üzerinde olur. Diğer seçenekler fiil cümlesidir ve vurgu yüklemden önceki ögededir."
   },
   {
-    "id": "turkce-dilbilgisi-3-11",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (61)",
+    "id": "turkce-3-6",
+    "question": "Aşağıdaki cümlelerin hangisinde isim-fiil (mastar) kullanılmıştır?",
     "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 61",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 61",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 61",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 61"
-    ],
-    "answer": "D",
-    "explanation": "Doğru seçenek D şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 61."
-  },
-  {
-    "id": "turkce-dilbilgisi-3-12",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (62)",
-    "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 62",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 62",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 62",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 62"
-    ],
-    "answer": "C",
-    "explanation": "Doğru seçenek C şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 62."
-  },
-  {
-    "id": "turkce-dilbilgisi-3-13",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (63)",
-    "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 63",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 63",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 63",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 63"
+      "Görünmez kaza diye buna derler işte.",
+      "Onunla konuşmak bana her zaman iyi gelir.",
+      "Tanıdık yüzler görmek insanı rahatlatıyor.",
+      "Bize gülümsediğinde dünyalar benim oldu."
     ],
     "answer": "B",
-    "explanation": "Doğru seçenek B şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 63."
+    "açıklama": "Doğru cevap B. İsim-fiil ekleri '-ma, -ış, -mak' şeklindedir. 'Konuşmak' kelimesindeki '-mak' eki, fiili isimleştirmiştir ve isim-fiildir."
   },
   {
-    "id": "turkce-dilbilgisi-3-14",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (64)",
+    "id": "turkce-3-7",
+    "question": "Aşağıdaki cümlelerin hangisinde deyimin yanlış kullanılmasından kaynaklanan bir anlatım bozukluğu vardır?",
     "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 64",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 64",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 64",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 64"
+      "Sınavı kazandığını duyunca etekleri zil çaldı.",
+      "O kadar sinirlenmişti ki sevinçten ağzı kulaklarına varıyordu.",
+      "Bu zor günlerde ona omuz vermek hepimizin görevi.",
+      "Yaptığı hatalarla patronun gözünden düştü."
+    ],
+    "answer": "B",
+    "açıklama": "Doğru cevap B. 'Ağzı kulaklarına varmak' deyimi çok sevinmek, mutlu olmak anlamında kullanılır. 'Sinirlenmişti' ifadesiyle bu deyimin kullanılması anlamca çelişki yaratmış ve anlatım bozukluğuna yol açmıştır."
+  },
+  {
+    "id": "turkce-3-8",
+    "question": "Aşağıdaki sözcüklerin hangisinde kaynaştırma ünsüzü (y, ş, s, n) kullanılmamıştır?",
+    "options": [
+      "Arabayı",
+      "İkişer",
+      "Kapısı",
+      "Kitabın"
+    ],
+    "answer": "D",
+    "açıklama": "Doğru cevap D. 'Kitap' kelimesi '-ın' tamlayan ekini aldığında ünsüz yumuşamasına uğrayarak 'kitabın' olmuştur, araya kaynaştırma harfi girmemiştir. A'da 'y', B'de 'ş', C'de 's' kaynaştırma harfidir."
+  },
+  {
+    "id": "turkce-3-9",
+    "question": "Aşağıdaki cümlelerin hangisinde soru ekinin (mı/mi) yazımıyla ilgili bir yanlışlık yapılmıştır?",
+    "options": [
+      "Bu kitabı daha önce okumuş muydun?",
+      "Yarın akşam sen de bizimle sinemaya gelirmisin?",
+      "O güzelim ağaçları hiç acımadan kestiler mi?",
+      "Bana neden bu kadar kızgın olduğunu biliyor musun?"
+    ],
+    "answer": "B",
+    "açıklama": "Doğru cevap B. Soru eki 'mı/mi' her zaman kendinden önceki kelimeden ayrı yazılır. Kendinden sonra gelen kişi ekleri ise soru ekine bitişik yazılır. 'gelir misin?' şeklinde yazılmalıydı."
+  },
+  {
+    "id": "turkce-3-10",
+    "question": "Aşağıdaki cümlelerin hangisinde edat (ilgeç) kullanılmıştır?",
+    "options": [
+      "Hem çalışıyor hem de üniversitede okuyordu.",
+      "Hava karardı, bu yüzden hemen eve dönmeliyiz.",
+      "Buz gibi suyu içince boğazı ağrımaya başladı.",
+      "Seni aradım ama telefonun kapalıydı."
+    ],
+    "answer": "C",
+    "açıklama": "Doğru cevap C. 'Gibi' sözcüğü her zaman edattır ve cümleye benzerlik anlamı katar ('buz gibi su'). A'da 'hem... hem', B'de 'bu yüzden', D'de 'ama' bağlaçtır."
+  },
+  {
+    "id": "turkce-3-11",
+    "question": "Aşağıdaki cümlelerden hangisi yapısına göre 'şartlı birleşik cümle'dir?",
+    "options": [
+      "Erken kalkabilirsem seninle yürüyüşe çıkarım.",
+      "Bugün çok yoruldum, hemen uyuyacağım.",
+      "Kitabını okudu ve masanın üzerine bıraktı.",
+      "Güneş doğunca her yer aydınlandı."
     ],
     "answer": "A",
-    "explanation": "Doğru seçenek A şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 64."
+    "açıklama": "Doğru cevap A. Yan cümleciği şart kipi (-se/-sa) ile kurulan ve temel cümleye şart anlamıyla bağlanan cümlelere şartlı birleşik cümle denir. 'Kalkabilirsem' şartlı birleşiktir."
   },
   {
-    "id": "turkce-dilbilgisi-3-15",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (65)",
+    "id": "turkce-3-12",
+    "question": "Aşağıdaki fiillerden hangisi özne-yüklem ilişkisine göre 'işteş' çatılıdır?",
     "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 65",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 65",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 65",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 65"
-    ],
-    "answer": "D",
-    "explanation": "Doğru seçenek D şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 65."
-  },
-  {
-    "id": "turkce-dilbilgisi-3-16",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (66)",
-    "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 66",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 66",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 66",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 66"
-    ],
-    "answer": "C",
-    "explanation": "Doğru seçenek C şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 66."
-  },
-  {
-    "id": "turkce-dilbilgisi-3-17",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (67)",
-    "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 67",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 67",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 67",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 67"
+      "Çocuk yatmadan önce güzelce yıkandı.",
+      "Uzun yıllar mektuplaşarak haberleştiler.",
+      "Kardeşim sabah erkenden yola koyuldu.",
+      "Sınıftaki bütün camlar dün silindi."
     ],
     "answer": "B",
-    "explanation": "Doğru seçenek B şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 67."
+    "açıklama": "Doğru cevap B. İşteş fiiller '-ş' eki alır ve eylemin karşılıklı veya birlikte yapıldığını bildirir. 'Mektuplaşmak' ve 'haberleşmek' karşılıklı yapılan işteş fiillerdir."
   },
   {
-    "id": "turkce-dilbilgisi-3-18",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (68)",
+    "id": "turkce-3-13",
+    "question": "Aşağıdaki cümlelerin hangisinde altı çizili '-i / -ı' eki belirtme durumu (hal) eki değil, iyelik (aitlik) ekidir?",
     "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 68",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 68",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 68",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 68"
+      "Evi dün pırıl pırıl temizlemişler.",
+      "Kalemi masanın üzerinden alıp çantasına koydu.",
+      "Arabası yolda bozulunca mecburen taksi tuttu.",
+      "Kitabı bir solukta okuyup bitirdim."
+    ],
+    "answer": "C",
+    "açıklama": "Doğru cevap C. 'Kimin arabası?' sorusuna 'Onun arabası' cevabını alabildiğimiz için buradaki '-sı' aitlik bildiren iyelik ekidir. Diğer seçeneklerdeki '-i' ekleri 'neyi' sorusuna cevap veren belirtme durumu (hal) ekidir."
+  },
+  {
+    "id": "turkce-3-14",
+    "question": "Aşağıdaki sözcüklerden hangisi yapısına göre birleşik bir sözcük değildir?",
+    "options": [
+      "Aslanagzı",
+      "Kuşburnu",
+      "Demirbaş",
+      "Sarımtırak"
+    ],
+    "answer": "D",
+    "açıklama": "Doğru cevap D. 'Sarımtırak' sözcüğü 'sarı' ismine '-mtırak' küçültme/pekiştirme ekinin getirilmesiyle oluşturulmuş türemiş bir sözcüktür, iki ayrı kelimenin birleşimi değildir."
+  },
+  {
+    "id": "turkce-3-15",
+    "question": "Aşağıdaki cümlelerin hangisinde mantık ve sıralama hatasından kaynaklanan bir anlatım bozukluğu vardır?",
+    "options": [
+      "Bırakın patates soymayı, yemek bile yapamaz o.",
+      "Karşılıklı atışmalar sabaha kadar sürdü.",
+      "Herkes onu çok seviyor, kimse onu üzmüyordu.",
+      "Yeni gelen müdür çalışanlara kendisini tanıttı."
     ],
     "answer": "A",
-    "explanation": "Doğru seçenek A şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 68."
+    "açıklama": "Doğru cevap A. 'Patates soymak', 'yemek yapmaktan' daha basit bir eylemdir. Cümlenin doğrusu 'Bırakın yemek yapmayı, patates bile soyamaz o.' şeklinde olmalıydı. Derecelendirme hatası (mantık hatası) yapılmıştır."
   },
   {
-    "id": "turkce-dilbilgisi-3-19",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (69)",
+    "id": "turkce-3-16",
+    "question": "Aşağıdaki cümlelerin hangisinin sonuna soru işareti (?) konulmalıdır?",
     "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 69",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 69",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 69",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 69"
-    ],
-    "answer": "D",
-    "explanation": "Doğru seçenek D şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 69."
-  },
-  {
-    "id": "turkce-dilbilgisi-3-20",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (70)",
-    "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 70",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 70",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 70",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 70"
+      "Neden böyle davrandığını bir türlü anlayamadım",
+      "Akşam oldu mu sürüler döner yuvaya",
+      "Bu güzel havada evde oturulur mu hiç",
+      "Ne zaman geleceğini bana söylemedi"
     ],
     "answer": "C",
-    "explanation": "Doğru seçenek C şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 70."
+    "açıklama": "Doğru cevap C. C seçeneği, cevap beklemese bile duygu veya onaylama bildiren bir sözde soru cümlesidir ve sonuna soru işareti konur. A ve D seçenekleri soru anlamı taşımayan düz cümlelerdir. B'deki 'mu' eki ise zaman ('olduğu zaman') anlamı kattığı için sonuna nokta konur."
   },
   {
-    "id": "turkce-dilbilgisi-3-21",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (71)",
+    "id": "turkce-3-17",
+    "question": "‘O şirin kasabaya, doğup büyüdüğü yere, yıllar sonra tekrar döndü.’ cümlesinde ara söz hangi ögenin açıklayıcısıdır?",
     "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 71",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 71",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 71",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 71"
+      "Özne",
+      "Zarf Tümleci",
+      "Nesne",
+      "Dolaylı Tümleç"
+    ],
+    "answer": "D",
+    "açıklama": "Doğru cevap D. Nereye döndü? 'O şirin kasabaya' (Dolaylı Tümleç). İki virgül arasındaki 'doğup büyüdüğü yere' ifadesi, bu dolaylı tümlecin ne olduğunu açıklayan bir ara sözdür."
+  },
+  {
+    "id": "turkce-3-18",
+    "question": "Aşağıdaki kelimelerin hangisinde ünlü daralması meydana gelmemiştir?",
+    "options": [
+      "Bekliyor",
+      "Söylüyor",
+      "Anlıyor",
+      "Bakıyor"
+    ],
+    "answer": "D",
+    "açıklama": "Doğru cevap D. Ünlü daralması, sonu 'a/e' ile biten bir fiile '-yor' ekinin gelmesiyle 'a/e'nin 'ı,i,u,ü'ye dönüşmesidir. Bekle-yor (bekliyor), Söyle-yor (söylüyor), Anla-yor (anlıyor). Ancak 'bak-' fiili ünsüzle biter, aradaki 'ı' daralma değil, yardımcı sestir."
+  },
+  {
+    "id": "turkce-3-19",
+    "question": "Tarihlerin yazılışıyla ilgili aşağıdaki cümlelerin hangisinde bir yanlışlık yapılmıştır?",
+    "options": [
+      "Toplantı 15 Mayıs Salı günü yapılacak.",
+      "Okullar 15/09/2024 tarihinde açılacak.",
+      "Kardeşim eylül ayının ilk haftası doğdu.",
+      "Atatürk, 19 mayıs 1919'da Samsun'a çıktı."
+    ],
+    "answer": "D",
+    "açıklama": "Doğru cevap D. Belirli bir tarihi (gün ve yılı) bildiren ay ve gün adları büyük harfle başlar. '19 Mayıs 1919'da' şeklinde yazılmalıydı."
+  },
+  {
+    "id": "turkce-3-20",
+    "question": "Aşağıdaki fiillerden hangisi 'yeterlilik' fiilinin olumsuz şeklidir?",
+    "options": [
+      "Gelmeyebilirim",
+      "Yapamadım",
+      "Görmemelisin",
+      "Okumayacak"
     ],
     "answer": "B",
-    "explanation": "Doğru seçenek B şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 71."
+    "açıklama": "Doğru cevap B. Yeterlilik fiili '-(e)bilmek'tir. Olumsuzu yapılırken 'bilmek' kısmı düşer, yerine '-ama / -eme' eki gelir. Yapabildim -> Yapamadım (yeterlilik fiilinin olumsuzu). 'Gelmeyebilirim' ihtimalin olumsuzudur."
   },
   {
-    "id": "turkce-dilbilgisi-3-22",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (72)",
+    "id": "turkce-3-21",
+    "question": "Aşağıdaki cümlelerden hangisi anlamca olumsuz, biçimce olumlu bir cümledir?",
     "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 72",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 72",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 72",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 72"
+      "Onun anlattıklarına inanmıyor değilim.",
+      "Bu havada dışarı çıkılır mı hiç?",
+      "Ne aradı ne de bir mesaj attı.",
+      "Seni hiç unutur muyum?"
+    ],
+    "answer": "C",
+    "açıklama": "Doğru cevap C. Biçimce (yapıca) olumlu demek, cümlede '-ma/-me, değil, yok' gibi olumsuzluk bildiren ek veya kelimelerin olmaması demektir. 'Ne... ne...' bağlacı cümleyi yapıca olumlu gösterse de, cümleye 'aramadı ve mesaj atmadı' şeklinde olumsuz bir anlam katar."
+  },
+  {
+    "id": "turkce-3-22",
+    "question": "Aşağıdaki cümlelerin hangisinde 'yanmak' kelimesi mecaz anlamda kullanılmıştır?",
+    "options": [
+      "Sobadaki odunlar gürül gürül yanıyordu.",
+      "Güneşin altında çok kalınca omuzlarım yandı.",
+      "Sınavı kaçırırsam işte o zaman yandım.",
+      "Tavada unutulan soğanlar kömür gibi yanmış."
+    ],
+    "answer": "C",
+    "açıklama": "Doğru cevap C. 'Yandım' kelimesi C seçeneğinde ateşle tutuşmak anlamında değil, 'mahvolmak, çok zor duruma düşmek' anlamında (mecaz) kullanılmıştır."
+  },
+  {
+    "id": "turkce-3-23",
+    "question": "Aşağıdaki cümlelerin hangisinde belgisiz sıfat kullanılmamıştır?",
+    "options": [
+      "Kimi insanlar sabahları uyanmakta zorlanır.",
+      "Bazı günler hiç yataktan çıkasım gelmiyor.",
+      "Birkaç öğrenci bahçede öğretmenini bekliyordu.",
+      "Birçoğu bu konunun ne kadar önemli olduğunu biliyor."
+    ],
+    "answer": "D",
+    "açıklama": "Doğru cevap D. A'da 'kimi', B'de 'bazı', C'de 'birkaç' kelimeleri önlerindeki isimleri belttikleri için belgisiz sıfattır. D seçeneğindeki 'birçoğu' sözcüğü ise ismin yerine geçmiş ve iyelik eki (-u) almıştır, bu yüzden belgisiz zamirdir."
+  },
+  {
+    "id": "turkce-3-24",
+    "question": "‘Özel ve kamu kuruluşları bu projeye destek verdi.’ cümlesindeki anlatım bozukluğunun nedeni aşağıdakilerden hangisidir?",
+    "options": [
+      "Tamlama yanlışlığı",
+      "Özne eksikliği",
+      "Gereksiz sözcük kullanımı",
+      "Ek fiil eksikliği"
     ],
     "answer": "A",
-    "explanation": "Doğru seçenek A şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 72."
+    "açıklama": "Doğru cevap A. 'Özel kuruluşları' denemez. Sıfat tamlaması olan 'özel kuruluşlar' ile isim tamlaması olan 'kamu kuruluşları' aynı tamlanana (kuruluşları) bağlanamaz. Doğrusu: 'Özel kuruluşlar ve kamu kuruluşları...' olmalıdır."
   },
   {
-    "id": "turkce-dilbilgisi-3-23",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (73)",
+    "id": "turkce-3-25",
+    "question": "Aşağıdaki kelimelerden hangisine ünlüyle başlayan bir ek getirildiğinde ünsüz türemesi (ikizleşmesi) görülür?",
     "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 73",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 73",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 73",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 73"
-    ],
-    "answer": "D",
-    "explanation": "Doğru seçenek D şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 73."
-  },
-  {
-    "id": "turkce-dilbilgisi-3-24",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (74)",
-    "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 74",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 74",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 74",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 74"
+      "Şiir",
+      "Hukuk",
+      "His",
+      "Şart"
     ],
     "answer": "C",
-    "explanation": "Doğru seçenek C şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 74."
-  },
-  {
-    "id": "turkce-dilbilgisi-3-25",
-    "question": "Türkçe Dil Bilgisi ve Yazım Kuralları konusunda aşağıdakilerden hangisi doğrudur? (75)",
-    "options": [
-      "Türkçe Dil Bilgisi ve Yazım Kuralları açısından geçersiz hüküm 75",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 75",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile ilgili yanlış yorum 75",
-      "Türkçe Dil Bilgisi ve Yazım Kuralları ile bağdaşmayan uygulama 75"
-    ],
-    "answer": "B",
-    "explanation": "Doğru seçenek B şıkkıdır. Türkçe Dil Bilgisi ve Yazım Kuralları için temel ilke: Türkçe Dil Bilgisi ve Yazım Kuralları kapsamında doğru ifade 75."
+    "açıklama": "Doğru cevap C. Arapça kökenli bazı tek heceli kelimelere ünlüyle başlayan bir ek getirildiğinde sondaki ünsüz ikizleşir (türer). His + i = Hissi, Hak + ı = Hakkı, Sır + ı = Sırrı gibi."
   }
 ]
