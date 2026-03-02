@@ -7,7 +7,7 @@ import { Mic, Headphones, Gamepad2, BarChart3 } from 'lucide-react'
 import 'katex/dist/katex.min.css';
 import Navbar from './components/Navbar' 
 import Footer from './components/Footer'
-import DarkModeToggle from './components/DarkModeToggle'
+import ThemeToggle from './components/ThemeToggle'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -69,11 +69,14 @@ export default function RootLayout({
       <body className={`${inter.className} bg-white text-black dark:bg-zinc-950 dark:text-white transition-colors duration-300 antialiased relative min-h-screen flex flex-col`}>
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function () {
-  const theme = localStorage.getItem("theme");
-  if (theme === "dark") {
-    document.documentElement.classList.add("dark");
-  }
+            __html: `(function(){
+  try{
+    const t = localStorage.getItem("theme");
+    const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const theme = t || (prefersDark ? "dark" : "light");
+    if(theme === "dark") document.documentElement.classList.add("dark");
+    else document.documentElement.classList.remove("dark");
+  }catch(e){}
 })();`,
           }}
         />
@@ -110,9 +113,7 @@ export default function RootLayout({
           {/* Yan panel butonların mevcut kodunla aynı kalabilir */}
         </aside>
 
-        <div className="fixed top-4 right-4 z-50">
-          <DarkModeToggle />
-        </div>
+        <ThemeToggle />
 
         <Navbar />
         <main className="flex-1 w-full">{children}</main>

@@ -252,7 +252,7 @@ export default function HomePage() {
   }, [completed]);
 
   return (
-    <main className="min-h-screen bg-slate-50 font-sans text-slate-800">
+    <main className="min-h-screen font-sans text-zinc-900 dark:text-zinc-100">
       {/* --- HERO SECTION --- */}
       <div className="bg-gradient-to-r from-slate-900 via-indigo-900 to-slate-900 text-white pb-24 pt-10 px-4 md:px-8 mb-8">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
@@ -299,7 +299,7 @@ export default function HomePage() {
       {/* --- MAIN CONTENT AREA --- */}
       <div id="exams" className="max-w-7xl mx-auto px-2 md:px-6 -mt-20 space-y-10 pb-20 relative z-10">
         {/* --- IELTS GLOBAL SECTION --- */}
-        <section className="bg-white rounded-2xl shadow-xl shadow-sky-200/40 overflow-hidden border-2 border-sky-100 relative">
+        <section className="premium-card overflow-hidden relative">
           <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-sky-400 to-blue-600"></div>
 
           <div className="p-4 md:p-6 border-b border-slate-100 flex flex-col md:flex-row md:items-center justify-between gap-4">
@@ -309,7 +309,7 @@ export default function HomePage() {
               </div>
               <div>
                 <h2 className="text-2xl md:text-3xl font-black text-slate-800 tracking-tight">IELTS ACADEMIC</h2>
-                <p className="text-slate-500 text-base">Global English Preparation • Band 7.0+</p>
+                <p className="text-slate-600 dark:text-zinc-300 text-base">Global English Preparation • Band 7.0+</p>
               </div>
             </div>
             <div className="hidden md:block">
@@ -319,7 +319,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="p-3 md:p-6 bg-slate-50/50 grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-3 md:gap-4">
+          <div className="p-3 md:p-6 bg-zinc-50/80 dark:bg-zinc-950/40 grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-3 md:gap-4">
             {ieltsModules.map((module) => {
               let linkHref = `/test/${module.id}`;
               if (module.id === 'ielts-speaking') linkHref = '/ielts/speaking';
@@ -342,7 +342,7 @@ export default function HomePage() {
           </div>
         </section>
 {/* --- MEB CURRICULUM (İLKÖĞRETİM) --- */}
-<section className="bg-white rounded-2xl shadow-xl shadow-amber-100/50 overflow-hidden border-2 border-amber-100 relative mb-10">
+<section className="premium-card overflow-hidden relative mb-10">
   <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-yellow-400 to-orange-500"></div>
 
   <div className="p-4 md:p-6 border-b border-slate-100 flex items-center gap-4">
@@ -351,7 +351,7 @@ export default function HomePage() {
     </div>
     <div>
       <h2 className="text-2xl md:text-3xl font-black text-slate-800 tracking-tight">İLKÖĞRETİM DÜZEYİ</h2>
-      <p className="text-slate-500 text-base">MEB Müfredatına Uygun Çalışma Testleri</p>
+      <p className="text-slate-600 dark:text-zinc-300 text-base">MEB Müfredatına Uygun Çalışma Testleri</p>
     </div>
   </div>
 

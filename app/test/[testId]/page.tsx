@@ -111,7 +111,7 @@ const QuestionCard = React.memo(({
   labels: any;
 }) => {
   return (
-    <div className="bg-white p-6 md:p-8 rounded-3xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow duration-300">
+    <div className="premium-card p-6 md:p-8 rounded-3xl">
       <div className="flex items-center gap-3 mb-6">
         <span className="bg-slate-100 text-slate-500 text-xs font-black px-3 py-1 rounded-lg uppercase tracking-wider">
           {labels.question} {idx + 1}
@@ -242,11 +242,11 @@ export default function QuizPage() {
 
                 if (testId.includes('reading')) {
                   combinedPrompt = `
-                    <div class="mb-8 p-6 bg-white border-l-4 border-sky-500 shadow-sm rounded-r-xl text-slate-700 text-base leading-relaxed font-serif custom-reading-content">
+                    <div class="mb-8 p-6 bg-white/90 dark:bg-zinc-900/70 border-l-4 border-sky-500 shadow-sm rounded-r-xl text-slate-700 dark:text-zinc-200 text-base leading-relaxed font-serif custom-reading-content">
                       <h3 class="font-bold text-sky-900 text-xl mb-4 border-b border-sky-100 pb-2">${passage.title}</h3>
                       ${passage.text}
                     </div>
-                    <div class="font-bold text-slate-900 text-lg mt-6 pt-4 border-t border-slate-100">${q.prompt}</div>
+                    <div class="font-bold text-slate-900 dark:text-zinc-100 text-lg mt-6 pt-4 border-t border-slate-100 dark:border-zinc-700">${q.prompt}</div>
                   `;
                 }
 
@@ -411,7 +411,7 @@ export default function QuizPage() {
     if (score >= 48) { estimatedLevel = "C2 (Proficiency)"; estimatedBand = "Band 8.5 - 9.0"; badgeColor = "bg-fuchsia-100 text-fuchsia-700 border-fuchsia-200"; }
 
     return (
-      <div className="min-h-screen bg-slate-50 py-12 px-4">
+      <div className="min-h-screen py-12 px-4">
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="bg-white p-8 rounded-3xl shadow-xl border border-slate-200 text-center relative overflow-hidden">
             <h1 className="text-3xl font-black text-slate-800 mb-6">{labels.resultTitle}</h1>
@@ -508,10 +508,10 @@ export default function QuizPage() {
 
   // --- QUIZ SCREEN ---
   return (
-    <div className="min-h-screen bg-slate-50 pb-20">
+    <div className="min-h-screen pb-20">
 
       {/* STICKY HEADER */}
-      <div className="sticky top-0 z-30 bg-white/95 backdrop-blur-md shadow-md border-b border-slate-200 transition-all">
+      <div className="sticky top-0 z-30 bg-white/85 dark:bg-zinc-950/80 backdrop-blur-md shadow-md border-b border-zinc-200 dark:border-zinc-800 transition-all">
         <div className="max-w-3xl mx-auto px-4 py-3">
 
           {/* ✅ MODE TOGGLE */}
@@ -520,13 +520,13 @@ export default function QuizPage() {
               <ArrowLeft className="w-6 h-6" />
             </Link>
 
-            <div className="flex items-center gap-2 bg-slate-100 p-1 rounded-2xl border border-slate-200">
+            <div className="flex items-center gap-2 bg-zinc-100/90 dark:bg-zinc-900/70 p-1 rounded-2xl border border-zinc-200 dark:border-zinc-700">
               <button
                 onClick={() => setModeSafe('exam')}
                 className={`px-4 py-2 rounded-xl text-sm font-black transition ${
                   mode === 'exam'
-                    ? 'bg-slate-900 text-white shadow'
-                    : 'text-slate-600 hover:bg-white'
+                    ? 'premium-button shadow'
+                    : 'text-slate-700 dark:text-zinc-200 hover:bg-white dark:hover:bg-zinc-800'
                 }`}
                 title={labels.modeHint}
               >
@@ -537,8 +537,8 @@ export default function QuizPage() {
                 onClick={() => setModeSafe('practice')}
                 className={`px-4 py-2 rounded-xl text-sm font-black transition ${
                   mode === 'practice'
-                    ? 'bg-indigo-600 text-white shadow'
-                    : 'text-slate-600 hover:bg-white'
+                    ? 'premium-button shadow'
+                    : 'text-slate-700 dark:text-zinc-200 hover:bg-white dark:hover:bg-zinc-800'
                 }`}
                 title={labels.modeHintPractice}
               >
@@ -548,7 +548,7 @@ export default function QuizPage() {
 
             <button
               onClick={handleSubmit}
-              className="text-sm font-bold text-white bg-slate-900 px-6 py-2.5 rounded-xl hover:bg-slate-800 shadow-md"
+              className="premium-button text-sm font-bold px-6 py-2.5"
             >
               {labels.finish}
             </button>
@@ -579,7 +579,7 @@ export default function QuizPage() {
 
               <button
                 onClick={toggleSpeed}
-                className="bg-white border border-sky-200 text-sky-700 px-2 py-1 rounded text-xs font-bold hover:bg-sky-100 transition-colors w-12 text-center"
+                className="premium-input border-sky-200 dark:border-sky-700 text-sky-700 dark:text-sky-300 px-2 py-1 text-xs font-bold w-12 text-center"
                 title="Hız Değiştir"
               >
                 {playbackRate}x
@@ -599,7 +599,7 @@ export default function QuizPage() {
           )}
 
           {/* ✅ Small Mode info */}
-          <div className="text-center text-xs font-bold text-slate-500 mt-2">
+          <div className="text-center text-xs font-bold text-slate-600 dark:text-zinc-300 mt-2">
             {mode === 'exam' ? labels.modeHint : labels.modeHintPractice}
           </div>
 

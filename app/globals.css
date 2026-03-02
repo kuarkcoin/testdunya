@@ -2,15 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Arka plan ve font */
-:root {
-  color-scheme: light;
+@layer base {
+  :root {
+    --bg: 255 255 255;
+    --fg: 10 10 10;
+    --card: 255 255 255;
+    --muted: 245 245 245;
+    --border: 228 228 231;
+    --ring: 24 24 27;
+    color-scheme: light;
+  }
+
+  .dark {
+    --bg: 9 9 11;
+    --fg: 244 244 245;
+    --card: 24 24 27;
+    --muted: 39 39 42;
+    --border: 63 63 70;
+    --ring: 212 212 216;
+    color-scheme: dark;
+  }
+
+  body {
+    background: rgb(var(--bg));
+    color: rgb(var(--fg));
+    @apply antialiased transition-colors duration-300;
+  }
 }
 
-html.dark {
-  color-scheme: dark;
+@layer components {
+  .premium-card {
+    @apply rounded-2xl border border-zinc-200/80 dark:border-zinc-700/70 bg-white/80 dark:bg-zinc-900/60 backdrop-blur-md shadow-sm dark:shadow-[0_10px_30px_rgba(0,0,0,0.35)] transition-all duration-300 hover:shadow-md dark:hover:shadow-[0_12px_40px_rgba(0,0,0,0.45)] hover:-translate-y-[1px];
+  }
+
+  .premium-button {
+    @apply rounded-xl px-4 py-2 font-semibold bg-zinc-900 text-white hover:bg-zinc-800 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-white transition-all duration-300 shadow-sm hover:shadow-md;
+  }
+
+  .premium-input {
+    @apply rounded-xl border px-3 py-2 outline-none border-zinc-200 dark:border-zinc-700 bg-white/80 dark:bg-zinc-950/40 focus:ring-2 focus:ring-[rgb(var(--ring))] focus:ring-offset-2 focus:ring-offset-[rgb(var(--bg))];
+  }
 }
 
-body {
-  @apply bg-white text-black dark:bg-zinc-950 dark:text-white antialiased transition-colors duration-300;
+@layer utilities {
+  .dark .text-zinc-400 { @apply text-zinc-300; }
+  .dark .text-slate-500 { @apply text-zinc-300; }
+  .dark .text-slate-600 { @apply text-zinc-200; }
+  .dark .opacity-50 { opacity: .9; }
+  .dark .opacity-60 { opacity: .9; }
+  .dark .opacity-70 { opacity: .95; }
 }
