@@ -69,7 +69,7 @@ function formatText(text: string) {
   const cleanedText = text.replace(/\[attachment_.*?\]/g, "").replace(/\(attachment\)/g, "");
 
   if (cleanedText.includes('<div') || cleanedText.includes('<p>') || cleanedText.includes('custom-reading-content')) {
-    return <div className="prose prose-slate max-w-none" dangerouslySetInnerHTML={{ __html: cleanedText }} />;
+    return <div className="prose prose-zinc dark:prose-invert max-w-none prose-p:leading-relaxed prose-strong:text-zinc-900 dark:prose-strong:text-zinc-100" dangerouslySetInnerHTML={{ __html: cleanedText }} />;
   }
 
   const parts = String(cleanedText).split(/(\*\*.*?\*\*)/g);
@@ -113,11 +113,11 @@ const QuestionCard = React.memo(({
   return (
     <div className="premium-card p-6 md:p-8 rounded-3xl">
       <div className="flex items-center gap-3 mb-6">
-        <span className="bg-slate-100 text-slate-500 text-xs font-black px-3 py-1 rounded-lg uppercase tracking-wider">
+        <span className="bg-slate-100 dark:bg-zinc-800 text-slate-600 dark:text-zinc-200 text-xs font-black px-3 py-1 rounded-lg uppercase tracking-wider">
           {labels.question} {idx + 1}
         </span>
       </div>
-      <div className="text-lg sm:text-xl font-medium text-slate-800 mb-8 leading-relaxed">
+      <div className="text-lg sm:text-xl font-semibold text-slate-800 dark:text-zinc-100 mb-8 leading-relaxed">
         {formatText(q.prompt)}
       </div>
 
@@ -128,12 +128,12 @@ const QuestionCard = React.memo(({
             className={`group cursor-pointer flex items-center p-4 rounded-2xl border-2 transition-all duration-200 active:scale-[0.99] ${
               answer === c.id
                 ? 'border-indigo-600 bg-indigo-50/50 shadow-md ring-1 ring-indigo-600'
-                : 'border-slate-100 hover:border-indigo-300 hover:bg-indigo-50/10'
+                : 'border-slate-200 dark:border-zinc-700 hover:border-indigo-300 dark:hover:border-indigo-500 hover:bg-indigo-50/40 dark:hover:bg-indigo-500/10'
             }`}
           >
             <div
               className={`w-6 h-6 rounded-full border-2 flex items-center justify-center mr-4 transition-colors flex-shrink-0 ${
-                answer === c.id ? 'border-indigo-600 bg-indigo-600' : 'border-slate-300 group-hover:border-indigo-400'
+                answer === c.id ? 'border-indigo-600 bg-indigo-600' : 'border-slate-400 dark:border-zinc-500 group-hover:border-indigo-400 dark:group-hover:border-indigo-400'
               }`}
             >
               {answer === c.id && <div className="w-2.5 h-2.5 rounded-full bg-white shadow-sm" />}
@@ -147,7 +147,7 @@ const QuestionCard = React.memo(({
               onChange={() => onAnswer(q.id, c.id)}
             />
 
-            <span className={`text-base sm:text-lg select-none ${answer === c.id ? 'text-indigo-900 font-semibold' : 'text-slate-600 font-medium'}`}>
+            <span className={`text-base sm:text-lg select-none ${answer === c.id ? 'text-indigo-900 dark:text-indigo-200 font-semibold' : 'text-slate-700 dark:text-zinc-200 font-medium'}`}>
               {c.text}
             </span>
           </label>
