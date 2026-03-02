@@ -7,6 +7,7 @@ import { Mic, Headphones, Gamepad2, BarChart3 } from 'lucide-react'
 import 'katex/dist/katex.min.css';
 import Navbar from './components/Navbar' 
 import Footer from './components/Footer'
+import DarkModeToggle from './components/DarkModeToggle'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -64,8 +65,18 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="tr" className="scroll-smooth">
-      <body className={`${inter.className} bg-slate-50 text-slate-900 antialiased relative min-h-screen flex flex-col`}>
+    <html lang="tr" className="scroll-smooth" suppressHydrationWarning>
+      <body className={`${inter.className} bg-white text-black dark:bg-zinc-950 dark:text-white transition-colors duration-300 antialiased relative min-h-screen flex flex-col`}>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function () {
+  const theme = localStorage.getItem("theme");
+  if (theme === "dark") {
+    document.documentElement.classList.add("dark");
+  }
+})();`,
+          }}
+        />
 
         {/* --- JSON-LD (Google Rich Snippets için Kritik) --- */}
         <Script
@@ -98,6 +109,10 @@ export default function RootLayout({
         <aside className="fixed left-4 top-1/2 -translate-y-1/2 z-[100] hidden xl:flex flex-col gap-6">
           {/* Yan panel butonların mevcut kodunla aynı kalabilir */}
         </aside>
+
+        <div className="fixed top-4 right-4 z-50">
+          <DarkModeToggle />
+        </div>
 
         <Navbar />
         <main className="flex-1 w-full">{children}</main>
