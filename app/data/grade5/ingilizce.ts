@@ -205,221 +205,259 @@ export const ingilizceData: SubjectData = {
     explanation: "Görseldeki süper kahraman uçmaktadır (fly).",
   },
 ],
-  
-    test2: [
+  test2: [
       {
         id: "e5-1-t2-01",
         subject: "ingilizce",
         term: 1,
-        prompt: "Clara: 'I am from Germany.' Mark: 'So, you can speak ____.'",
-        options: ["German", "Germany", "English", "French"],
-        correct: 0,
-        explanation:
-          "Germany (Almanya) ülkesinden olan biri German (Almanca) konuşur. Dil ve ülke isimleri karıştırılmamalıdır.",
+        prompt: "What time is it in the picture?",
+        imageUrl: "/images/grade5/ingilizce/test2/e5-t2-img-01.webp",
+        options: [
+          "It is eight o'clock.",
+          "It is half past eight.",
+          "It is quarter past eight.",
+          "It is nine o'clock."
+        ],
+        correct: 1,
+        explanation: "Görselde saat 08:30'dur. 'Buçuk' anlamında 'half past' kullanılır."
       },
       {
         id: "e5-1-t2-02",
         subject: "ingilizce",
         term: 1,
-        prompt:
-          "I am good at drawing pictures and painting, but I dislike solving problems. My favorite lesson is ____.",
-        options: ["Maths", "Science", "Art", "Social Studies"],
+        prompt: "Look at the picture. What does he do every morning?",
+        imageUrl: "/images/grade5/ingilizce/test2/e5-t2-img-02.webp",
+        options: [
+          "He washes his face.",
+          "He combs his hair.",
+          "He brushes his teeth.",
+          "He eats breakfast."
+        ],
         correct: 2,
-        explanation:
-          "Resim yapmayı ve boyamayı seven birinin en sevdiği ders Görsel Sanatlar (Art) dersidir.",
+        explanation: "Görseldeki çocuk dişlerini fırçalamaktadır. Diş fırçalamak 'brush teeth' demektir."
       },
       {
         id: "e5-1-t2-03",
         subject: "ingilizce",
         term: 1,
-        prompt:
-          "A: '____ many languages do you speak?' B: 'Two. Turkish and English.'",
-        options: ["What", "How", "Where", "When"],
-        correct: 1,
-        explanation:
-          "Kaç tane (sayılabilenler için) sorusu sorulurken 'How many' kalıbı kullanılır.",
+        prompt: "According to the picture, she ________ lunch at school.",
+        imageUrl: "/images/grade5/ingilizce/test2/e5-t2-img-03.webp",
+        options: ["has", "have", "do", "does"],
+        correct: 0,
+        explanation: "Görselde öğle yemeği yiyen bir kız var. 'She' öznesi ile 'have' fiili 'has' şekline dönüşür."
       },
       {
         id: "e5-1-t2-04",
         subject: "ingilizce",
         term: 1,
-        prompt:
-          "To go to the cinema, go straight on Green Street and ____ the second left.",
-        options: ["turn", "take", "go", "look"],
-        correct: 1,
-        explanation:
-          "Yol tariflerinde 'ikinci soldan dön/ikinci sola sap' anlamında 'take the second left' kullanılır.",
+        prompt: "Which game are the children playing in the picture?",
+        imageUrl: "/images/grade5/ingilizce/test2/e5-t2-img-04.webp",
+        options: ["Tag", "Dodgeball", "Blind man's buff", "Hide and seek"],
+        correct: 2,
+        explanation: "Görselde gözleri bağlı bir şekilde oynayan çocuklar vardır. Körebe 'Blind man's buff' demektir."
       },
       {
         id: "e5-1-t2-05",
         subject: "ingilizce",
         term: 1,
-        prompt:
-          "The hospital is ____ the library. You must cross the street to go there.",
-        options: ["opposite", "between", "next to", "near"],
-        correct: 0,
-        explanation:
-          "Caddeyi geçmeniz gerekiyorsa hastane kütüphanenin 'karşısında' (opposite) yer alıyordur.",
+        prompt: "Look at the flag. Where is he from?",
+        imageUrl: "/images/grade5/ingilizce/test2/e5-t2-img-05.webp",
+        options: [
+          "He is from France.",
+          "He is from Germany.",
+          "He is from Spain.",
+          "He is from Italy."
+        ],
+        correct: 1,
+        explanation: "Görseldeki bayrak Almanya (Germany) bayrağıdır."
       },
       {
         id: "e5-1-t2-06",
         subject: "ingilizce",
         term: 1,
-        prompt:
-          "I enjoy playing checkers and chess, but I ____ playing dodgeball.",
-        options: ["love", "like", "don't like", "am"],
+        prompt: "What is the matter with her in the picture?",
+        imageUrl: "/images/grade5/ingilizce/test2/e5-t2-img-06.webp",
+        options: [
+          "She has a backache.",
+          "She has a broken arm.",
+          "She has a sore throat.",
+          "She has a toothache."
+        ],
         correct: 2,
-        explanation:
-          "Cümledeki 'but' (ama) kelimesi anlamın zıt yöne kayacağını gösterir. İlk kısım olumluysa ikinci kısım olumsuz olmalıdır.",
+        explanation: "Görseldeki kız eliyle boğazını tutmaktadır, bu da boğaz ağrısı (sore throat) olduğunu gösterir."
       },
       {
         id: "e5-1-t2-07",
         subject: "ingilizce",
         term: 1,
-        prompt: "Susan is from Britain. She is ____.",
-        options: ["English", "British", "American", "German"],
-        correct: 1,
-        explanation:
-          "Britain (Britanya) ülkesinden olanların milliyeti 'British' (İngiliz/Britanyalı) olarak adlandırılır.",
+        prompt: "Look at the sign. To go to the hospital, you should ________.",
+        imageUrl: "/images/grade5/ingilizce/test2/e5-t2-img-07.webp",
+        options: [
+          "go straight",
+          "turn right",
+          "turn left",
+          "cross the street"
+        ],
+        correct: 2,
+        explanation: "Görseldeki ok sola dönüşü göstermektedir. Sola dönmek 'turn left' demektir."
       },
       {
         id: "e5-1-t2-08",
         subject: "ingilizce",
         term: 1,
-        prompt: "Which of the following is an 'outdoor' game?",
-        options: ["Board games", "Computer games", "Hide and seek", "Chess"],
-        correct: 2,
-        explanation:
-          "Saklambaç (Hide and seek) genellikle dışarıda oynanan bir oyundur (outdoor game).",
+        prompt: "He has a broken leg. He ________ play football.",
+        imageUrl: "/images/grade5/ingilizce/test2/e5-t2-img-08.webp",
+        options: ["should", "must", "can", "mustn't"],
+        correct: 3,
+        explanation: "Görselde bacağı kırık bir çocuk ve üzeri çizilmiş bir futbol topu var. Kesinlikle oynamamalıdır (mustn't)."
       },
       {
         id: "e5-1-t2-09",
         subject: "ingilizce",
         term: 1,
-        prompt:
-          "A: 'Excuse me, is there a mosque near here?' B: 'Yes, it is ____ the museum and the bank.'",
-        options: ["under", "between", "on", "behind"],
-        correct: 1,
-        explanation:
-          "İki yer arasında olma durumu 'between' (arasında) edatı ile ifade edilir.",
+        prompt: "According to the picture, the bird ________ sing, but it ________ play the guitar.",
+        imageUrl: "/images/grade5/ingilizce/test2/e5-t2-img-09.webp",
+        options: [
+          "can / can",
+          "can't / can",
+          "can / can't",
+          "can't / can't"
+        ],
+        correct: 2,
+        explanation: "Görselde kuşun şarkı söyleyebildiği (can) ama gitar çalamadığı (can't) gösterilmektedir."
       },
       {
         id: "e5-1-t2-10",
         subject: "ingilizce",
         term: 1,
-        prompt: "I ____ play table tennis very well, but I can't swim.",
-        options: ["am", "do", "can", "is"],
-        correct: 2,
-        explanation:
-          "Yeteneklerden bahsederken 'can' (yapabilmek) modal fiili kullanılır.",
+        prompt: "What is his favorite hobby?",
+        imageUrl: "/images/grade5/ingilizce/test2/e5-t2-img-10.webp",
+        options: [
+          "Doing origami",
+          "Collecting stamps",
+          "Playing chess",
+          "Fishing"
+        ],
+        correct: 1,
+        explanation: "Görselde büyüteçle pulları inceleyen biri vardır. Pul biriktirmek 'collecting stamps' demektir."
       },
       {
         id: "e5-1-t2-11",
         subject: "ingilizce",
         term: 1,
-        prompt: "A: '____ is your favorite hobby?' B: 'Collecting stamps.'",
-        options: ["Where", "Who", "What", "How"],
-        correct: 2,
-        explanation:
-          "Hobinin ne olduğunu sorarken 'What' (Ne) soru kelimesi kullanılır.",
+        prompt: "Where is the bank? It is ________ the cafe and the school.",
+        imageUrl: "/images/grade5/ingilizce/test2/e5-t2-img-11.webp",
+        options: ["under", "next to", "opposite", "between"],
+        correct: 3,
+        explanation: "Görselde banka, kafe ile okulun 'arasında' (between) yer almaktadır."
       },
       {
         id: "e5-1-t2-12",
         subject: "ingilizce",
         term: 1,
-        prompt: "Ninety minus fifteen equals ____.",
-        options: ["Eighty-five", "Seventy-five", "Sixty-five", "Fifty-five"],
+        prompt: "He likes playing chess, but he ________ playing football.",
+        imageUrl: "/images/grade5/ingilizce/test2/e5-t2-img-12.webp",
+        options: ["loves", "dislikes", "enjoys", "is"],
         correct: 1,
-        explanation: "90 - 15 = 75 (Seventy-five).",
+        explanation: "Görselde çocuğun futboldan hoşlanmadığı yüz ifadesiyle belirtilmiştir (dislikes)."
       },
       {
         id: "e5-1-t2-13",
         subject: "ingilizce",
         term: 1,
-        prompt: "To get to the post office, ____ left into Rose Street.",
-        options: ["go", "turn", "take", "cross"],
-        correct: 1,
-        explanation:
-          "Bir sokağa 'dönmek' anlamında 'turn left/right' kalıbı kullanılır.",
+        prompt: "What is the matter with the child in the picture? He has ________.",
+        imageUrl: "/images/grade5/ingilizce/test2/e5-t2-img-13.webp",
+        options: [
+          "the flu",
+          "a toothache",
+          "a broken arm",
+          "a backache"
+        ],
+        correct: 0,
+        explanation: "Yatakta titreyen, ağzında derece olan ve yanında peçete bulunan çocuğun gribi (the flu) vardır."
       },
       {
         id: "e5-1-t2-14",
         subject: "ingilizce",
         term: 1,
-        prompt: "Which matching is 'WRONG'?",
-        options: [
-          "USA - American",
-          "France - French",
-          "Egypt - Egyptian",
-          "Spain - Spanishly",
-        ],
-        correct: 3,
-        explanation:
-          "Spain (İspanya) ülkesinin milliyeti 'Spanish' olmalıdır. Spanishly diye bir kullanım yoktur.",
+        prompt: "How does he go to school every morning?",
+        imageUrl: "/images/grade5/ingilizce/test2/e5-t2-img-14.webp",
+        options: ["By car", "On foot", "By bus", "By bike"],
+        correct: 2,
+        explanation: "Görselde öğrenci bir okul otobüsüne binmektedir (by bus)."
       },
       {
         id: "e5-1-t2-15",
         subject: "ingilizce",
         term: 1,
-        prompt: "My sister can play origami, but she ____ play tic-tac-toe.",
-        options: ["can", "isn't", "can't", "don't"],
-        correct: 2,
-        explanation:
-          "'But' bağlacı yeteneğin diğer oyunda olmadığını (olumsuzluk) gösterir.",
+        prompt: "Look at the map. She is from Turkey. She speaks ________.",
+        imageUrl: "/images/grade5/ingilizce/test2/e5-t2-img-15.webp",
+        options: ["Turkey", "Turkish", "English", "Germany"],
+        correct: 1,
+        explanation: "Türkiye'den olan biri Türkçe (Turkish) konuşur. Ülke ve dil isimleri karıştırılmamalıdır."
       },
       {
         id: "e5-1-t2-16",
         subject: "ingilizce",
         term: 1,
-        prompt: "A: 'Nice to meet you, Paul.' B: '____.'",
-        options: ["Fine, thanks", "Me too", "Good morning", "Goodbye"],
-        correct: 1,
-        explanation:
-          "Tanıştığına memnun olan birine 'Ben de (memnun oldum)' anlamında 'Me too' veya 'Nice to meet you, too' denir.",
+        prompt: "Where is the pharmacy? It is ________ the hospital. You must cross the street.",
+        imageUrl: "/images/grade5/ingilizce/test2/e5-t2-img-16.webp",
+        options: ["next to", "behind", "in front of", "opposite"],
+        correct: 3,
+        explanation: "Görselde eczane ve hastane yolun karşılıklı iki tarafındadır (opposite)."
       },
       {
         id: "e5-1-t2-17",
         subject: "ingilizce",
         term: 1,
-        prompt:
-          "Where is the pharmacy? It is ____ the bus stop. You can see it just behind the stop.",
-        options: ["next to", "opposite", "behind", "near"],
+        prompt: "Look at the objects. Which school subject is this?",
+        imageUrl: "/images/grade5/ingilizce/test2/e5-t2-img-17.webp",
+        options: ["Maths", "Art", "Science", "History"],
         correct: 2,
-        explanation:
-          "Soruda 'arkasında' ipucu verildiği için 'behind' (arkasında) seçilmelidir.",
+        explanation: "Görseldeki mikroskop, deney tüpleri ve koruyucu gözlük Fen Bilimleri (Science) dersine aittir."
       },
       {
         id: "e5-1-t2-18",
         subject: "ingilizce",
         term: 1,
-        prompt: "I am interested in experiment. My favorite subject is ____.",
-        options: ["Science", "Art", "Maths", "Music"],
-        correct: 0,
-        explanation:
-          "Deney (experiment) yapmaya ilgi duyan birinin favori dersi Fen Bilimleri (Science) olur.",
+        prompt: "He has a terrible stomachache. He ________ eat fast food.",
+        imageUrl: "/images/grade5/ingilizce/test2/e5-t2-img-18.webp",
+        options: ["should", "can", "shouldn't", "must"],
+        correct: 2,
+        explanation: "Karın ağrısı çeken biri hamburger gibi hazır yiyecekler yememelidir (shouldn't). Görseldeki iptal işareti bunu destekler."
       },
       {
         id: "e5-1-t2-19",
         subject: "ingilizce",
         term: 1,
-        prompt: "Which word is 'DIFFERENT'?",
-        options: ["Hiking", "Fishing", "Camping", "Library"],
-        correct: 3,
-        explanation:
-          "Hiking, Fishing ve Camping aktivitelerdir; Library (Kütüphane) ise bir yer ismidir.",
+        prompt: "Look at the clock. What time does she get up?",
+        imageUrl: "/images/grade5/ingilizce/test2/e5-t2-img-19.webp",
+        options: [
+          "She gets up at quarter to seven.",
+          "She gets up at quarter past seven.",
+          "She gets up at half past seven.",
+          "She gets up at seven o'clock."
+        ],
+        correct: 1,
+        explanation: "Görselde saat 07:15'i göstermektedir. 15 geçiyor demek için 'quarter past' kalıbı kullanılır."
       },
       {
         id: "e5-1-t2-20",
         subject: "ingilizce",
         term: 1,
-        prompt:
-          "A: '____ is the toy shop?' B: 'Go straight and turn right. It is next to the cafe.'",
-        options: ["What", "Where", "Who", "How"],
-        correct: 1,
-        explanation:
-          "Yer tarifi yapılan sorularda konum sormak için 'Where' (Nerede) kullanılır.",
-      },
+        prompt: "What are they doing in the picture?",
+        imageUrl: "/images/grade5/ingilizce/test2/e5-t2-img-20.webp",
+        options: [
+          "They are hiking.",
+          "They are fishing.",
+          "They are camping.",
+          "They are doing origami."
+        ],
+        correct: 2,
+        explanation: "Görselde çadır kurmuş olan çocuklar vardır. Bu eylem kamp yapmak (camping) anlamına gelir."
+      }
     ],
+     
     test3: [
       {
         id: "e5-1-t3-01",
