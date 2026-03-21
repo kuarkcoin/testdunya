@@ -1064,223 +1064,305 @@ export const ingilizceData: SubjectData = {
     ],
     test5: [
       {
-        id: "e5-1-t5-01",
-        subject: "ingilizce",
-        term: 1,
-        prompt:
-          "A: '____ is the concert hall?' B: 'Go straight, turn right and it is between the museum and the library.'",
-        options: ["What", "Where", "When", "Who"],
-        correct: 2,
-        explanation:
-          "Bir yerin konumunu veya adresini sormak için 'Where' (Nerede) soru kelimesi kullanılır.",
-      },
-      {
-        id: "e5-1-t5-02",
-        subject: "ingilizce",
-        term: 1,
-        prompt:
-          "I have a terrible toothache. I ____ eat candies or drink cold things.",
-        options: ["should", "can", "shouldn't", "must"],
-        correct: 2,
-        explanation:
-          "Diş ağrısı (toothache) çeken birine şeker yememesi veya soğuk içmemesi tavsiye edilir (shouldn't).",
-      },
-      {
-        id: "e5-1-t5-03",
-        subject: "ingilizce",
-        term: 1,
-        prompt: "My cousin is from Egypt. He is ____.",
-        options: ["Egypt", "Egyptian", "English", "French"],
-        correct: 1,
-        explanation:
-          "Egypt (Mısır) ülkesinden olanların milliyeti 'Egyptian'dır.",
-      },
-      {
-        id: "e5-1-t5-04",
-        subject: "ingilizce",
-        term: 1,
-        prompt:
-          "A: 'Can he play dodgeball?' B: 'No, but he ____ play checkers.'",
-        options: ["can", "do", "can't", "is"],
-        correct: 0,
-        explanation:
-          "Cümledeki 'but' (ama) zıtlık verir. İlk kısım olumsuzsa (can't/no), ikinci kısım olumlu (can) olmalıdır.",
-      },
-      {
-        id: "e5-1-t5-05",
-        subject: "ingilizce",
-        term: 1,
-        prompt: "Which one is 'NOT' a school subject?",
-        options: ["Science", "Maths", "Pharmacy", "History"],
-        correct: 2,
-        explanation:
-          "Science, Maths ve History ders isimleridir; Pharmacy (Eczane) ise bir yer ismidir.",
-      },
-      {
-        id: "e5-1-t5-06",
-        subject: "ingilizce",
-        term: 1,
-        prompt: "Mark ____ homework at 18:00, but I ____ my homework at 16:30.",
-        options: ["do / does", "does / do", "do / do", "does / does"],
-        correct: 1,
-        explanation: "He (Mark) öznesi 'does', I öznesi 'do' fiilini kullanır.",
-      },
-      {
-        id: "e5-1-t5-07",
-        subject: "ingilizce",
-        term: 1,
-        prompt:
-          "A: 'What is the matter with you?' B: 'I have a ____. I need a tissue (mendil).'",
-        options: ["broken leg", "runny nose", "backache", "toothache"],
-        correct: 1,
-        explanation:
-          "Mendil ihtiyacı duyan birinin 'burnu akıyordur' (runny nose).",
-      },
-      {
-        id: "e5-1-t5-08",
-        subject: "ingilizce",
-        term: 1,
-        prompt:
-          "The cinema is ____ the stationery and the toy shop. It is in the middle.",
-        options: ["next to", "opposite", "between", "near"],
-        correct: 2,
-        explanation:
-          "İki yerin 'ortasında' (in the middle) olma durumu 'between' (arasında) edatıyla ifade edilir.",
-      },
-      {
-        id: "e5-1-t5-09",
-        subject: "ingilizce",
-        term: 1,
-        prompt: "Which activity is an 'indoor' hobby?",
-        options: ["Camping", "Hiking", "Playing board games", "Fishing"],
-        correct: 2,
-        explanation:
-          "Board games (masa başı oyunları) kapalı alanlarda (indoor) yapılır; diğerleri dış mekan aktiviteleridir.",
-      },
-      {
-        id: "e5-1-t5-10",
-        subject: "ingilizce",
-        term: 1,
-        prompt: "A: '____ languages does she speak?' B: 'French and Spanish.'",
-        options: ["What", "How many", "Who", "Where"],
-        correct: 1,
-        explanation:
-          "Dillerin sayısını veya hangi diller olduğunu sormak için 'How many' (kaç tane) kalıbı kullanılır.",
-      },
-      {
-        id: "e5-1-t5-11",
-        subject: "ingilizce",
-        term: 1,
-        prompt: "My sister has a sore throat. She ____ drink cold water.",
-        options: ["should", "mustn't", "can", "shouldn't"],
-        correct: 3,
-        explanation:
-          "Boğaz ağrısı (sore throat) olan biri soğuk su içmemelidir (shouldn't).",
-      },
-      {
-        id: "e5-1-t5-12",
-        subject: "ingilizce",
-        term: 1,
-        prompt: "Ten o'clock + Fifteen minutes = ____.",
-        options: [
-          "Quarter past ten",
-          "Quarter to eleven",
-          "Half past ten",
-          "Ten o'clock",
+        "id": "e5-1-t5-01",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Look at the picture. ________ is the concert hall?",
+        "imageUrl": "/images/grade5/ingilizce/test5/e5-t5-img-01.webp",
+        "options": [
+          "What",
+          "Where",
+          "When",
+          "Who"
         ],
-        correct: 0,
-        explanation:
-          "10:00 + 15 dakika = 10:15. Bu da 'onun on beş geçmesi' (quarter past ten) demektir.",
+        "correct": 1,
+        "explanation": "Görselde elinde harita olan ve yol arayan biri var. Bir yerin konumunu veya adresini sormak için 'Where' (Nerede) soru kelimesi kullanılır."
       },
       {
-        id: "e5-1-t5-13",
-        subject: "ingilizce",
-        term: 1,
-        prompt: "I am from France. I am French. I speak ____.",
-        options: ["France", "French", "English", "Germany"],
-        correct: 1,
-        explanation:
-          "Fransız olan biri Fransızca (French) konuşur. Ülke ve dil isimleri karıştırılmamalıdır.",
-      },
-      {
-        id: "e5-1-t5-14",
-        subject: "ingilizce",
-        term: 1,
-        prompt:
-          "To go to the library, go straight and ____ the second left into Apple Street.",
-        options: ["turn", "take", "go", "look"],
-        correct: 1,
-        explanation:
-          "Yol tariflerinde 'ikinci soldan sap' anlamında 'take the second left' kullanılır.",
-      },
-      {
-        id: "e5-1-t5-15",
-        subject: "ingilizce",
-        term: 1,
-        prompt: "Which matching is 'WRONG'?",
-        options: [
-          "Headache - Head",
-          "Stomachache - Stomach",
-          "Toothache - Foot",
-          "Backache - Back",
+        "id": "e5-1-t5-02",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "He has a terrible toothache. He ________ eat candies.",
+        "imageUrl": "/images/grade5/ingilizce/test5/e5-t5-img-02.webp",
+        "options": [
+          "should",
+          "can",
+          "shouldn't",
+          "must"
         ],
-        correct: 2,
-        explanation:
-          "Toothache (diş ağrısı) dişle (tooth) ilgilidir, ayakla (foot) değil.",
+        "correct": 2,
+        "explanation": "Görselde diş ağrısı (toothache) çeken bir çocuk ve üzeri kırmızı ile çizilmiş şekerler var. Şeker yememelidir (shouldn't)."
       },
       {
-        id: "e5-1-t5-16",
-        subject: "ingilizce",
-        term: 1,
-        prompt: "A: '____ is your favorite hoby?' B: 'Doing origami.'",
-        options: ["What", "Who", "Where", "When"],
-        correct: 0,
-        explanation: "Hobinin ne olduğunu sormak için 'What' (Ne) kullanılır.",
-      },
-      {
-        id: "e5-1-t5-17",
-        subject: "ingilizce",
-        term: 1,
-        prompt: "I have a cough. I should ____.",
-        options: [
-          "drink cold coke",
-          "eat ice-cream",
-          "drink cough syrup",
-          "shout",
+        "id": "e5-1-t5-03",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Look at the flag. He is from Egypt. He is ________.",
+        "imageUrl": "/images/grade5/ingilizce/test5/e5-t5-img-03.webp",
+        "options": [
+          "Egypt",
+          "Egyptian",
+          "English",
+          "French"
         ],
-        correct: 2,
-        explanation:
-          "Öksürüğü (cough) olan birinin öksürük şurubu (cough syrup) içmesi gerekir.",
+        "correct": 1,
+        "explanation": "Görseldeki Mısır (Egypt) bayrağıdır. Mısır ülkesinden olanların milliyeti 'Egyptian' (Mısırlı) olur."
       },
       {
-        id: "e5-1-t5-18",
-        subject: "ingilizce",
-        term: 1,
-        prompt:
-          "Where is the post office? It is ____ the park. You must cross the street to go there.",
-        options: ["opposite", "next to", "under", "on"],
-        correct: 0,
-        explanation: "Caddeyi geçmek gerekiyorsa yer 'karşıdadır' (opposite).",
+        "id": "e5-1-t5-04",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "According to the picture, he ________ play dodgeball, but he ________ play checkers.",
+        "imageUrl": "/images/grade5/ingilizce/test5/e5-t5-img-04.webp",
+        "options": [
+          "can / can",
+          "can't / can",
+          "can / can't",
+          "can't / can't"
+        ],
+        "correct": 1,
+        "explanation": "Görselde yakantop (dodgeball) üzerinde çarpı işareti (can't), dama (checkers) üzerinde onay işareti (can) vardır."
       },
       {
-        id: "e5-1-t5-19",
-        subject: "ingilizce",
-        term: 1,
-        prompt: "My father ____ up very early every morning.",
-        options: ["get", "gets", "is", "do"],
-        correct: 1,
-        explanation:
-          "Geniş zamanda 'He' (my father) öznesi fiile '-s' takısı getirir (gets up).",
+        "id": "e5-1-t5-05",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Look at the objects. Which school subject is this?",
+        "imageUrl": "/images/grade5/ingilizce/test5/e5-t5-img-05.webp",
+        "options": [
+          "Science",
+          "Maths",
+          "Social Studies",
+          "Music"
+        ],
+        "correct": 2,
+        "explanation": "Görseldeki dünya küresi, eski haritalar ve pusula Sosyal Bilgiler (Social Studies) dersine aittir."
       },
       {
-        id: "e5-1-t5-20",
-        subject: "ingilizce",
-        term: 1,
-        prompt: "Sixty + Thirty = ?",
-        options: ["Seventy", "Eighty", "Ninety", "One hundred"],
-        correct: 2,
-        explanation: "60 + 30 = 90 (Ninety).",
+        "id": "e5-1-t5-06",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Look at the clock. Mark ________ his homework at 18:00.",
+        "imageUrl": "/images/grade5/ingilizce/test5/e5-t5-img-06.webp",
+        "options": [
+          "do",
+          "does",
+          "have",
+          "has"
+        ],
+        "correct": 1,
+        "explanation": "Görselde ödev yapan Mark görülüyor. 'He' (Mark) öznesi geniş zamanda 'do' fiilini 'does' olarak alır."
       },
+      {
+        "id": "e5-1-t5-07",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "What is the matter with the boy in the picture?",
+        "imageUrl": "/images/grade5/ingilizce/test5/e5-t5-img-07.webp",
+        "options": [
+          "He has a broken leg.",
+          "He has a runny nose.",
+          "He has a backache.",
+          "He has a toothache."
+        ],
+        "correct": 1,
+        "explanation": "Görselde elinde mendil (tissue) olan ve burnu akan bir çocuk var. Burun akıntısı 'runny nose' demektir."
+      },
+      {
+        "id": "e5-1-t5-08",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Where is the cinema? It is ________ the stationery and the toy shop.",
+        "imageUrl": "/images/grade5/ingilizce/test5/e5-t5-img-08.webp",
+        "options": [
+          "next to",
+          "opposite",
+          "between",
+          "near"
+        ],
+        "correct": 2,
+        "explanation": "Görselde sinema binası, kırtasiye ile oyuncakçı dükkanının 'arasında' (between) durmaktadır."
+      },
+      {
+        "id": "e5-1-t5-09",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "What are they doing in the picture?",
+        "imageUrl": "/images/grade5/ingilizce/test5/e5-t5-img-09.webp",
+        "options": [
+          "Camping",
+          "Hiking",
+          "Playing board games",
+          "Fishing"
+        ],
+        "correct": 2,
+        "explanation": "Görselde evin içinde masaüstü kutu oyunu oynayan çocuklar var. Bu eylem 'playing board games' olarak adlandırılır."
+      },
+      {
+        "id": "e5-1-t5-10",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Look at the speech bubbles. ________ languages does she speak?",
+        "imageUrl": "/images/grade5/ingilizce/test5/e5-t5-img-10.webp",
+        "options": [
+          "What",
+          "How many",
+          "Who",
+          "Where"
+        ],
+        "correct": 1,
+        "explanation": "Görselde kızın iki farklı dilde ('Bonjour' ve 'Hola') konuştuğu görülüyor. Adet sormak için 'How many' (kaç tane) kalıbı kullanılır."
+      },
+      {
+        "id": "e5-1-t5-11",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "My sister has a sore throat. She ________ drink cold water.",
+        "imageUrl": "/images/grade5/ingilizce/test5/e5-t5-img-11.webp",
+        "options": [
+          "should",
+          "mustn't",
+          "can",
+          "shouldn't"
+        ],
+        "correct": 3,
+        "explanation": "Görselde boğazı ağrıyan (sore throat) biri ve üzeri çizilmiş soğuk su var. Soğuk su içmemelidir (shouldn't)."
+      },
+      {
+        "id": "e5-1-t5-12",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Look at the clock. What time is it?",
+        "imageUrl": "/images/grade5/ingilizce/test5/e5-t5-img-12.webp",
+        "options": [
+          "It is quarter past ten.",
+          "It is quarter to eleven.",
+          "It is half past ten.",
+          "It is ten o'clock."
+        ],
+        "correct": 0,
+        "explanation": "Görseldeki saat 10:15'i göstermektedir. Bu da 'onu on beş (çeyrek) geçiyor' (quarter past ten) demektir."
+      },
+      {
+        "id": "e5-1-t5-13",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Look at the flag. She is from France. She speaks ________.",
+        "imageUrl": "/images/grade5/ingilizce/test5/e5-t5-img-13.webp",
+        "options": [
+          "France",
+          "French",
+          "English",
+          "Germany"
+        ],
+        "correct": 1,
+        "explanation": "Görseldeki Fransa (France) bayrağıdır. Fransız olan biri Fransızca (French) konuşur."
+      },
+      {
+        "id": "e5-1-t5-14",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Look at the map. To go to the library, you should ________.",
+        "imageUrl": "/images/grade5/ingilizce/test5/e5-t5-img-14.webp",
+        "options": [
+          "take the first right",
+          "take the second left",
+          "go straight ahead",
+          "cross the street"
+        ],
+        "correct": 1,
+        "explanation": "Görseldeki haritada ok işareti birinci sokağı geçip 'ikinci soldan' dönmektedir. Bu 'take the second left' demektir."
+      },
+      {
+        "id": "e5-1-t5-15",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "What is the matter with the man in the picture?",
+        "imageUrl": "/images/grade5/ingilizce/test5/e5-t5-img-15.webp",
+        "options": [
+          "He has a headache.",
+          "He has a stomachache.",
+          "He has a toothache.",
+          "He has a backache."
+        ],
+        "correct": 3,
+        "explanation": "Görselde elini beline koymuş ve acı çeken bir adam var. Bel/sırt ağrısı 'backache' demektir."
+      },
+      {
+        "id": "e5-1-t5-16",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "What is her favorite hobby?",
+        "imageUrl": "/images/grade5/ingilizce/test5/e5-t5-img-16.webp",
+        "options": [
+          "Doing origami",
+          "Playing dodgeball",
+          "Riding a bike",
+          "Fishing"
+        ],
+        "correct": 0,
+        "explanation": "Görselde renkli kağıtları katlayarak şekiller yapan (origami) bir kız çocuğu vardır."
+      },
+      {
+        "id": "e5-1-t5-17",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "He has a bad cough. He should drink ________.",
+        "imageUrl": "/images/grade5/ingilizce/test5/e5-t5-img-17.webp",
+        "options": [
+          "cold coke",
+          "coffee",
+          "cough syrup",
+          "lemonade"
+        ],
+        "correct": 2,
+        "explanation": "Görselde şiddetle öksüren (cough) bir çocuk ve yanında öksürük şurubu (cough syrup) vardır."
+      },
+      {
+        "id": "e5-1-t5-18",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Where is the post office? It is ________ the park.",
+        "imageUrl": "/images/grade5/ingilizce/test5/e5-t5-img-18.webp",
+        "options": [
+          "opposite",
+          "next to",
+          "under",
+          "on"
+        ],
+        "correct": 0,
+        "explanation": "Görselde postane ve park caddenin karşılıklı iki tarafındadır. Karşısında olmak 'opposite' kelimesiyle ifade edilir."
+      },
+      {
+        "id": "e5-1-t5-19",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "My father ________ up very early every morning.",
+        "imageUrl": "/images/grade5/ingilizce/test5/e5-t5-img-19.webp",
+        "options": [
+          "get",
+          "gets",
+          "is",
+          "do"
+        ],
+        "correct": 1,
+        "explanation": "Görselde sabah erken uyanan bir baba var. Geniş zamanda 'He' (my father) öznesi fiile '-s' takısı getirir (gets up)."
+      },
+      {
+        "id": "e5-1-t5-20",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Look at the clock. I go to bed at ________.",
+        "imageUrl": "/images/grade5/ingilizce/test5/e5-t5-img-20.webp",
+        "options": [
+          "half past eight",
+          "nine o'clock",
+          "half past nine",
+          "quarter to ten"
+        ],
+        "correct": 2,
+        "explanation": "Görseldeki saat 09:30'u göstermektedir. 30 (buçuk) 'half past' olarak ifade edilir (half past nine)."
+      }
     ],
     test6: [
       {
