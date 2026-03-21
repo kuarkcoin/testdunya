@@ -1266,12 +1266,12 @@ export const ingilizceData: SubjectData = {
         "imageUrl": "/images/grade5/ingilizce/test5/e5-t5-img-14.webp",
         "options": [
           "take the first right",
-          "take the second left",
+          "take the second right",
           "go straight ahead",
           "cross the street"
         ],
         "correct": 1,
-        "explanation": "Görseldeki haritada ok işareti birinci sokağı geçip 'ikinci soldan' dönmektedir. Bu 'take the second left' demektir."
+        "explanation": "Görseldeki haritada ok işareti birinci sokağı geçip 'ikinci sağdan' dönmektedir. Bu 'take the second right' demektir."
       },
       {
         "id": "e5-1-t5-15",
