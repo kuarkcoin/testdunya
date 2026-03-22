@@ -487,7 +487,6 @@ export const fenData: SubjectData = {
           "Dinamometrenin yayı esnekliğini kaybedip bozulmuştur.",
           "Cisim 5 Newton göstermiştir.",
           "Yay hiç uzamamıştır."
-"
         ],
         "correct": 1,
         "explanation": "Görselde 'Aşırı' yük asılan dinamometrenin yayının kalıcı olarak deforme olduğu ve ölçüm sınırının aşıldığı Modellemede açıkça görülmektedir."
