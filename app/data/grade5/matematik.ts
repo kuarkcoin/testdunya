@@ -491,13 +491,13 @@ export const matematikData: SubjectData = {
         "prompt": "Görselde dilimlenmiş pizzalarla modellenen kesir aşağıdakilerden hangisine eşittir?",
         "imageUrl": "/images/grade5/matematik/test3/m5-t3-img-06.webp",
         "options": [
-          "2 tam 1/4",
-          "2 tam 3/4",
-          "3 tam 1/4",
+          "2 tam 4/6",
+          "2 tam 3/6",
+          "3 tam 2/6",
           "11/4"
         ],
         "correct": 1,
-        "explanation": "Görselde hiç yenmemiş 2 tam pizza ve 4'e bölünüp 3 dilimi duran (3/4) bir pizza vardır. Bu da 2 tam 3/4 kesrini modeller (Bileşik hali 11/4'tür ancak tam sayılı hali şıklarda en uygunudur, şıklarda sadece B ve D doğru olabilir ama genelde ilk modelleme tam sayılı okunur)."
+        "explanation": "Görselde hiç yenmemiş 2 tam pizza ve 6'ya bölünüp 4 dilimi duran (4/6) bir pizza vardır. Bu da 2 tam 4/6 kesrini modeller."
       },
       {
         "id": "m5-1-t3-07",
