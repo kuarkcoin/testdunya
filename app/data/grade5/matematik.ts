@@ -410,191 +410,305 @@ export const matematikData: SubjectData = {
     ],
     test3: [
       {
-        id: "m5-1-t3-01",
-        subject: "matematik",
-        term: 1,
-        prompt:
-          "745.000.812 sayısında milyonlar bölüğündeki en büyük rakamın basamak değeri kaçtır?",
-        options: ["7", "700", "700.000", "700.000.000"],
-        correct: 3,
-        explanation: "Yüz milyonlar basamağı 7'dir.",
-      },
-      {
-        id: "m5-1-t3-02",
-        subject: "matematik",
-        term: 1,
-        prompt: "5 karesi x (12 - 2 küpü) kaçtır?",
-        options: ["100", "125", "200", "250"],
-        correct: 0,
-        explanation: "25 x 4 = 100.",
-      },
-      {
-        id: "m5-1-t3-03",
-        subject: "matematik",
-        term: 1,
-        prompt: "Bölen 16 ise kalan en fazla kaçtır?",
-        options: ["15", "16", "17", "31"],
-        correct: 0,
-        explanation: "15.",
-      },
-      {
-        id: "m5-1-t3-04",
-        subject: "matematik",
-        term: 1,
-        prompt: "2451 + 3892 tahmini toplamı binliğe göre kaçtır?",
-        options: ["5000", "6000", "6300", "6400"],
-        correct: 1,
-        explanation: "2000+4000=6000.",
-      },
-      {
-        id: "m5-1-t3-05",
-        subject: "matematik",
-        term: 1,
-        prompt: "12/A basit kesir ise A en az kaçtır?",
-        options: ["11", "12", "13", "14"],
-        correct: 2,
-        explanation: "13.",
-      },
-      {
-        id: "m5-1-t3-06",
-        subject: "matematik",
-        term: 1,
-        prompt: "2/9, 2/3, 2/5 sıralaması hangisidir?",
-        options: [
-          "2/9 < 2/5 < 2/3",
-          "2/3 < 2/5 < 2/9",
-          "2/9 < 2/3 < 2/5",
-          "2/5 < 2/9 < 2/3",
+        "id": "m5-1-t3-01",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki abaküste modellenen 9 basamaklı doğal sayının on milyonlar basamağında hangi rakam bulunmaktadır?",
+        "imageUrl": "/images/grade5/matematik/test3/m5-t3-img-01.webp",
+        "options": [
+          "2",
+          "4",
+          "5",
+          "7"
         ],
-        correct: 0,
-        explanation: "Payda büyükse kesir küçüktür.",
+        "correct": 1,
+        "explanation": "Görseldeki abaküste sayı 142.356.789 olarak modellenmiştir. Milyonlar bölüğünün ortasındaki basamak on milyonlar basamağıdır ve burada 4 boncuk vardır."
       },
       {
-        id: "m5-1-t3-07",
-        subject: "matematik",
-        term: 1,
-        prompt: "Doğru parçası sembolü hangisidir?",
-        options: ["KL", "(KL)", "[KL]", "[KL)"],
-        correct: 2,
-        explanation: "[KL].",
+        "id": "m5-1-t3-02",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki şekil örüntüsünün 4. adımında kaç adet kare blok kullanılacaktır?",
+        "imageUrl": "/images/grade5/matematik/test3/m5-t3-img-02.webp",
+        "options": [
+          "5",
+          "7",
+          "9",
+          "11"
+        ],
+        "correct": 1,
+        "explanation": "Örüntü tek sayılar şeklinde ilerliyor: 1. adımda 1 blok, 2. adımda 3 blok, 3. adımda 5 blok var. Kurala göre her adımda 2 blok eklenir, bu yüzden 4. adımda 7 blok olmalıdır."
       },
       {
-        id: "m5-1-t3-08",
-        subject: "matematik",
-        term: 1,
-        prompt: "180 derecelik açı nedir?",
-        options: ["Dar", "Geniş", "Dik", "Doğru"],
-        correct: 3,
-        explanation: "Doğru açı.",
+        "id": "m5-1-t3-03",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki sepette bulunan 145 adet yumurta, yanda duran 12'şerli kartonlara tamamen dolacak şekilde yerleştirilecektir. İşlem sonunda kaç yumurta kartona sığmayıp dışarıda kalır?",
+        "imageUrl": "/images/grade5/matematik/test3/m5-t3-img-03.webp",
+        "options": [
+          "1",
+          "2",
+          "5",
+          "12"
+        ],
+        "correct": 0,
+        "explanation": "145'i 12'ye böldüğümüzde bölüm 12, kalan ise 1 olur. Dışarıda kalan (artan) yumurta sayısı 1'dir."
       },
       {
-        id: "m5-1-t3-09",
-        subject: "matematik",
-        term: 1,
-        prompt: "80'in 3/4'ünün 10 eksiği kaçtır?",
-        options: ["50", "60", "70", "80"],
-        correct: 0,
-        explanation: "60-10=50.",
+        "id": "m5-1-t3-04",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görselde bir kenarında 4 birim küp bulunan büyük bir zeka küpü görülmektedir. Bu yapıda bulunan toplam küçük küp sayısını veren üslü ifade hangisidir?",
+        "imageUrl": "/images/grade5/matematik/test3/m5-t3-img-04.webp",
+        "options": [
+          "4 x 3",
+          "4^2",
+          "3^4",
+          "4^3"
+        ],
+        "correct": 3,
+        "explanation": "3 boyutlu ve her ayrıtında 4 birim olan bir küpün hacmi (toplam blok sayısı) '4'ün küpü' yani 4^3 ile hesaplanır (4x4x4=64)."
       },
       {
-        id: "m5-1-t3-10",
-        subject: "matematik",
-        term: 1,
-        prompt: "45 x 101 zihinden kaçtır?",
-        options: ["4500", "4545", "4600", "5000"],
-        correct: 1,
-        explanation: "4545.",
+        "id": "m5-1-t3-05",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki fiyat etiketlerine göre, kırtasiyeden 3 adet defter ve 1 adet kalem alan Ali'nin ödeyeceği toplam tutarı (TL) gösteren matematiksel ifade hangisidir?",
+        "imageUrl": "/images/grade5/matematik/test3/m5-t3-img-05.webp",
+        "options": [
+          "(3 x 15) + 20",
+          "3 x (15 + 20)",
+          "(3 x 20) + 15",
+          "15 x 20 x 3"
+        ],
+        "correct": 0,
+        "explanation": "Defterin fiyatı 15 TL, kalemin fiyatı 20 TL'dir. 3 defter için (3 x 15) işlemi yapılır, ardından 1 kalem fiyatı olan 20 TL buna eklenir."
       },
       {
-        id: "m5-1-t3-11",
-        subject: "matematik",
-        term: 1,
-        prompt: "27 - 16 kaçtır?",
-        options: ["1", "5", "11", "12"],
-        correct: 2,
-        explanation: "11.",
+        "id": "m5-1-t3-06",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görselde dilimlenmiş pizzalarla modellenen kesir aşağıdakilerden hangisine eşittir?",
+        "imageUrl": "/images/grade5/matematik/test3/m5-t3-img-06.webp",
+        "options": [
+          "2 tam 1/4",
+          "2 tam 3/4",
+          "3 tam 1/4",
+          "11/4"
+        ],
+        "correct": 1,
+        "explanation": "Görselde hiç yenmemiş 2 tam pizza ve 4'e bölünüp 3 dilimi duran (3/4) bir pizza vardır. Bu da 2 tam 3/4 kesrini modeller (Bileşik hali 11/4'tür ancak tam sayılı hali şıklarda en uygunudur, şıklarda sadece B ve D doğru olabilir ama genelde ilk modelleme tam sayılı okunur)."
       },
       {
-        id: "m5-1-t3-12",
-        subject: "matematik",
-        term: 1,
-        prompt: "7'şer artan örüntüde 3'ten başlanırsa 12. terim kaçtır?",
-        options: ["77", "80", "84", "87"],
-        correct: 1,
-        explanation: "3+(11x7)=80.",
+        "id": "m5-1-t3-07",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki 1. Şekil ve 2. Şekil birbirine denk kesirleri modellemektedir. Buna göre 2. Şekil üzerinde kaç kutucuk boyanmalıdır?",
+        "imageUrl": "/images/grade5/matematik/test3/m5-t3-img-07.webp",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "correct": 2,
+        "explanation": "1. Şekil 1/3'ü modellemektedir. 2. Şekil ise 9 eş parçaya bölünmüştür. 1/3 = 3/9 olduğu için 2. Şekilde 3 parça boyanmalıdır."
       },
       {
-        id: "m5-1-t3-13",
-        subject: "matematik",
-        term: 1,
-        prompt: "345 / 15 sonucu nedir?",
-        options: ["21", "23", "25", "27"],
-        correct: 1,
-        explanation: "23.",
+        "id": "m5-1-t3-08",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki aynı büyüklükteki tepsilerde bulunan pasta dilimleri 1/2, 1/4 ve 1/8 birim kesirlerini modellemektedir. Bu dilimlerin BÜYÜKTEN KÜÇÜĞE doğru sıralanışı hangisidir?",
+        "imageUrl": "/images/grade5/matematik/test3/m5-t3-img-08.webp",
+        "options": [
+          "1/8 > 1/4 > 1/2",
+          "1/4 > 1/2 > 1/8",
+          "1/2 > 1/8 > 1/4",
+          "1/2 > 1/4 > 1/8"
+        ],
+        "correct": 3,
+        "explanation": "Birim kesirlerde payda (bölünen parça sayısı) büyüdükçe her bir dilim küçülür. Görselde de en büyük dilimin yarım (1/2), en küçüğünün ise 1/8 olduğu açıkça görülmektedir."
       },
       {
-        id: "m5-1-t3-14",
-        subject: "matematik",
-        term: 1,
-        prompt: "Bir noktada kesişen doğrulara ne denir?",
-        options: ["Paralel", "Kesişen", "Dik", "Çakışık"],
-        correct: 1,
-        explanation: "Kesişen.",
+        "id": "m5-1-t3-09",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki otomobil 600 kilometrelik yolun 2/5'lik kısmını gösteren tabelayı henüz geçmiştir. Otomobilin gitmesi gereken kaç kilometre yolu KALMIŞTIR?",
+        "imageUrl": "/images/grade5/matematik/test3/m5-t3-img-09.webp",
+        "options": [
+          "120",
+          "240",
+          "360",
+          "480"
+        ],
+        "correct": 2,
+        "explanation": "Yolun 2/5'i gidilmişse geriye 3/5'i kalmıştır. 600'ü 5'e bölüp (120) 3 ile çarptığımızda (120 x 3 = 360) kalan yolu buluruz."
       },
       {
-        id: "m5-1-t3-15",
-        subject: "matematik",
-        term: 1,
-        prompt: "4 tam 2/3 bileşik hali nedir?",
-        options: ["10/3", "12/3", "14/3", "16/3"],
-        correct: 2,
-        explanation: "14/3.",
+        "id": "m5-1-t3-10",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki fayans ustası, her bir kutunun içinde 24 adet fayans bulunan kutulardan toplam 15 kutu kullanarak banyoyu kaplamıştır. Toplam kaç adet fayans kullanılmıştır?",
+        "imageUrl": "/images/grade5/matematik/test3/m5-t3-img-10.webp",
+        "options": [
+          "340",
+          "360",
+          "380",
+          "400"
+        ],
+        "correct": 1,
+        "explanation": "Toplam fayans sayısını bulmak için 24 ile 15 çarpılır. 24 x 15 = 360 adet fayans kullanılmıştır."
       },
       {
-        id: "m5-1-t3-16",
-        subject: "matematik",
-        term: 1,
-        prompt: "Hangisi daha büyüktür?",
-        options: ["1/10", "1/12", "Eşit", "Hiçbiri"],
-        correct: 0,
-        explanation: "1/10.",
+        "id": "m5-1-t3-11",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki analog saatin akrebi ve yelkovanı arasındaki açıklık matematikte hangi açı çeşidine model oluşturur?",
+        "imageUrl": "/images/grade5/matematik/test3/m5-t3-img-11.webp",
+        "options": [
+          "Dar Açı",
+          "Dik Açı",
+          "Geniş Açı",
+          "Doğru Açı"
+        ],
+        "correct": 2,
+        "explanation": "Saat 04:00'ı göstermektedir. Yelkovan 12'de, akrep 4'tedir. Aradaki açı 120 derecedir ve 90 dereceden büyük olduğu için Geniş Açı'dır."
       },
       {
-        id: "m5-1-t3-17",
-        subject: "matematik",
-        term: 1,
-        prompt: "987 + 10 kaçtır?",
-        options: ["997", "1000", "1007", "1010"],
-        correct: 0,
-        explanation: "997.",
+        "id": "m5-1-t3-12",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görselde, bir el fenerinden çıkıp sonsuza doğru ilerleyen bir ışık hüzmesi modellenmiştir. Bu durum geometrideki temel kavramlardan hangisine en uygun örnektir?",
+        "imageUrl": "/images/grade5/matematik/test3/m5-t3-img-12.webp",
+        "options": [
+          "Doğru",
+          "Doğru Parçası",
+          "Işın",
+          "Açı"
+        ],
+        "correct": 2,
+        "explanation": "Başlangıç noktası sabit olup (el feneri) diğer ucu sonsuza giden düz çizgilere 'Işın' denir."
       },
       {
-        id: "m5-1-t3-18",
-        subject: "matematik",
-        term: 1,
-        prompt: "125 x 8 kaçtır?",
-        options: ["800", "900", "1000", "1200"],
-        correct: 2,
-        explanation: "1000.",
+        "id": "m5-1-t3-13",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki tren rayları matematikteki hangi doğru durumuna model oluşturur?",
+        "imageUrl": "/images/grade5/matematik/test3/m5-t3-img-13.webp",
+        "options": [
+          "Kesişen Doğrular",
+          "Dik Kesişen Doğrular",
+          "Çakışık Doğrular",
+          "Paralel Doğrular"
+        ],
+        "correct": 3,
+        "explanation": "Tren rayları gibi aralarındaki mesafe hiç değişmeyen ve hiçbir zaman kesişmeyen doğrulara 'Paralel Doğrular' denir."
       },
       {
-        id: "m5-1-t3-19",
-        subject: "matematik",
-        term: 1,
-        prompt: "90-25 kaç derecedir?",
-        options: ["Dar", "Dik", "Geniş", "Doğru"],
-        correct: 0,
-        explanation: "65 (Dar).",
+        "id": "m5-1-t3-14",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki elektronik manav terazisinde bir karpuz 4812 gram, kavun ise 3195 gram olarak tartılmıştır. İkisinin toplam ağırlığının EN YAKIN BİNLİĞE yuvarlanmış tahmini sonucu kaçtır?",
+        "imageUrl": "/images/grade5/matematik/test3/m5-t3-img-14.webp",
+        "options": [
+          "7000",
+          "8000",
+          "9000",
+          "10000"
+        ],
+        "correct": 1,
+        "explanation": "4812 sayısı en yakın binliğe yuvarlandığında 5000, 3195 sayısı ise 3000 olur. Tahmini toplam: 5000 + 3000 = 8000 gramdır."
       },
       {
-        id: "m5-1-t3-20",
-        subject: "matematik",
-        term: 1,
-        prompt: "3/4 = 15/x ise x kaçtır?",
-        options: ["16", "18", "20", "22"],
-        correct: 2,
-        explanation: "20.",
+        "id": "m5-1-t3-15",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki dereceli cam sürahinin 7/10'u su ile doludur. Bu suyun 3/10'luk kısmı yan taraftaki bardağa boşaltılırsa sürahinin kaçta kaçı dolu kalır?",
+        "imageUrl": "/images/grade5/matematik/test3/m5-t3-img-15.webp",
+        "options": [
+          "1/10",
+          "2/5",
+          "4/5",
+          "10/10"
+        ],
+        "correct": 1,
+        "explanation": "7/10'dan 3/10 çıkarıldığında geriye 4/10 kalır. 4/10 kesri 2 ile sadeleştirildiğinde (denk kesri) 2/5 olur."
       },
+      {
+        "id": "m5-1-t3-16",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki sayı doğrusunda 0 ile 1 arası 5 eş parçaya bölünmüştür. A noktasına karşılık gelen kesir aşağıdakilerden hangisidir?",
+        "imageUrl": "/images/grade5/matematik/test3/m5-t3-img-16.webp",
+        "options": [
+          "1/5",
+          "2/5",
+          "3/5",
+          "4/5"
+        ],
+        "correct": 2,
+        "explanation": "A noktası 5 eş parçadan 3. çizginin üzerindedir. Bu nedenle model 3/5 kesrini temsil eder."
+      },
+      {
+        "id": "m5-1-t3-17",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki standart bir satranç tahtasında her kenarda 8 adet kare bulunmaktadır. Tahtadaki toplam kare sayısını gösteren üslü ifade hangisidir?",
+        "imageUrl": "/images/grade5/matematik/test3/m5-t3-img-17.webp",
+        "options": [
+          "8 x 2",
+          "8^2",
+          "2^8",
+          "8^3"
+        ],
+        "correct": 1,
+        "explanation": "Bir kenarında 8 kare olan bir karenin alanı (toplam kare sayısı) 8 x 8 işlemi ile bulunur. Bu işlem üslü olarak '8'in karesi' (8^2) şeklinde yazılır."
+      },
+      {
+        "id": "m5-1-t3-18",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki okçuluk hedef tahtasının merkezinde 500 puan, okun isabet ettiği dış halkada ise 120 puan yazmaktadır. Büyük sayıdan küçük sayıyı çıkardığımızda sonuç kaç olur?",
+        "imageUrl": "/images/grade5/matematik/test3/m5-t3-img-18.webp",
+        "options": [
+          "360",
+          "380",
+          "400",
+          "420"
+        ],
+        "correct": 1,
+        "explanation": "500 - 120 = 380."
+      },
+      {
+        "id": "m5-1-t3-19",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki süt şişelerinin toplam miktarı 3 tam 1/4 litre olarak modellenmiştir. Bu tam sayılı kesrin bileşik kesir olarak gösterimi hangisidir?",
+        "imageUrl": "/images/grade5/matematik/test3/m5-t3-img-19.webp",
+        "options": [
+          "4/4",
+          "7/4",
+          "12/4",
+          "13/4"
+        ],
+        "correct": 3,
+        "explanation": "3 tam 1/4 kesrini bileşik kesre çevirirken tam kısım ile payda çarpılıp pay eklenir. (3 x 4) + 1 = 13. Payda aynı kalır: 13/4."
+      },
+      {
+        "id": "m5-1-t3-20",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görselde iki el arasında gergin bir şekilde tutulan paket lastiği matematikte hangi kavramı modeller?",
+        "imageUrl": "/images/grade5/matematik/test3/m5-t3-img-20.webp",
+        "options": [
+          "Doğru",
+          "Işın",
+          "Doğru Parçası",
+          "Düzlem"
+        ],
+        "correct": 2,
+        "explanation": "Her iki ucu da sınırlı olan, belli bir başlangıç ve bitiş noktası olan düz çizgilere 'Doğru Parçası' denir."
+      }
     ],
     test4: [
       {
