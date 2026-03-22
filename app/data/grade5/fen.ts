@@ -207,259 +207,306 @@ export const fenData: SubjectData = {
     ],
     test2: [
       {
-        id: "f5-1-t2-01",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Güneş ve Dünya'nın hareketleri ile ilgili; I. Her ikisi de kendi ekseni etrafında döner. II. Her ikisi de saat yönünün tersine döner. III. Dünya, Güneş etrafında dolanma hareketi yapar. ifadelerinden hangileri doğrudur?",
-        options: ["I ve II", "II ve III", "I ve III", "I, II ve III"],
-        correct: 3,
-        explanation:
-          "Güneş ve Dünya hem kendi eksenleri etrafında dönerler, hem de bu dönüşleri saat yönünün tersine (batıdan doğuya) gerçekleştirirler. Ayrıca Dünya, Güneş etrafında dolanır.",
-      },
-      {
-        id: "f5-1-t2-02",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Ay'ın ana evreleri arasındaki süre yaklaşık 1 haftadır. Buna göre 'Yeni Ay' evresinden yaklaşık 21 gün sonra hangi ana evre görülür?",
-        options: ["İlk Dördün", "Dolunay", "Son Dördün", "Hilal"],
-        correct: 2,
-        explanation:
-          "7 gün sonra İlk Dördün, 14 gün sonra Dolunay, 21 gün sonra ise Son Dördün evresi görülür.",
-      },
-      {
-        id: "f5-1-t2-03",
-        subject: "fen",
-        term: 1,
-        prompt: "Mikroskobik canlılar ile ilgili hangi ifade 'yanlıştır'?",
-        options: [
-          "Bazıları sütten yoğurt yapılmasını sağlar.",
-          "Tamamı insan sağlığı için zararlıdır.",
-          "Uygun sıcaklık ve besin bulduklarında hızla çoğalırlar.",
-          "Besinlerin bozulmasına neden olabilirler.",
+        "id": "f5-1-t2-01",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Görseldeki modelde, Güneş ve Dünya'nın kendi eksenleri etrafındaki dönme yönleri ve Dünya'nın Güneş etrafındaki dolanma yolu gösterilmiştir. Bu modele göre yapılan aşağıdaki analizlerden hangisi DOĞRUDUR?",
+        "imageUrl": "/images/grade5/fen/test2/f5-t2-img-01.webp",
+        "options": [
+          "Güneş ve Dünya farklı yönlere dönmektedir.",
+          "Her ikisi de dönme hareketini saat yönünde yapar.",
+          "Dünya, Güneş'in etrafında saat yönünün tersine dolanır.",
+          "Dünya kendi etrafında dönmez, sadece dolanır."
         ],
-        correct: 1,
-        explanation:
-          "Mikroskobik canlıların tamamı zararlı değildir; bağırsaklarımızdaki K ve B vitamini üreten bakteriler veya sütten peynir yapanlar yararlıdır.",
+        "correct": 2,
+        "explanation": "Görseldeki oklar incelendiğinde; hem Güneş hem de Dünya kendi eksenleri etrafında saat yönünün tersine döner. Dünya, Güneş etrafında da saat yönünün tersine (ok işaretiyle belirtildiği gibi) dolanma hareketi yapar."
       },
       {
-        id: "f5-1-t2-04",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Bir bitkinin çiçekli mi yoksa çiçeksiz mi olduğuna karar vermek için aşağıdakilerden hangisinin varlığına bakmak yeterlidir?",
-        options: ["Kök", "Gövde", "Yaprak", "Tohum"],
-        correct: 3,
-        explanation:
-          "Sadece çiçekli bitkiler tohum ve meyve oluşturabilirler. Kök, gövde ve yaprak bazı çiçeksiz bitkilerde (eğrelti otu gibi) de bulunabilir.",
+        "id": "m5-1-t2-02",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Görseldeki Ay takviminde, '1. Gün' Ay'ın 'Yeni Ay' evresinde olduğu gösterilmiştir. Ay'ın ana evreleri arasındaki sürenin yaklaşık 1 hafta olduğu bilindiğine göre, '22. Gün' Ay hangi ana evrede görülür?",
+        "imageUrl": "/images/grade5/fen/test2/f5-t2-img-02.webp",
+        "options": [
+          "İlk Dördün",
+          "Dolunay",
+          "Son Dördün",
+          "Hilal"
+        ],
+        "correct": 2,
+        "explanation": "Yeni Ay evresinden (1. Gün) yaklaşık 7 gün sonra (8. Gün) İlk Dördün, 14 gün sonra (15. Gün) Dolunay ve 21 gün sonra (22. Gün) Son Dördün evresi görülür."
       },
       {
-        id: "f5-1-t2-05",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Yarasa ile ilgili verilen bilgilerden hangisi onu diğer kuşlardan ayırarak 'memeliler' grubuna dahil eder?",
-        options: [
-          "Uçabilmesi",
+        "id": "f5-1-t2-03",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Görselde, mikroskobik canlıların bir türünün sütten yoğurt yapılmasını sağladığı (Yararlı), diğer bir türünün ise besinlerin bozulmasına neden olduğu (Zararlı) modellenmiştir. Yalnızca bu görsele dayanarak yapılan hangi genelleme 'YANLIŞTIR'?",
+        "imageUrl": "/images/grade5/fen/test2/f5-t2-img-03.webp",
+        "options": [
+          "Mikroskobik canlılar besinlerin yapısını değiştirebilir.",
+          "Mikroskobik canlıların tamamı insan sağlığı için zararlıdır.",
+          "Bazı mikroskobik canlılar hızla çoğalarak besini bozabilir.",
+          "Bazı mikroskobik canlılardan besin üretiminde yararlanılır."
+        ],
+        "correct": 1,
+        "explanation": "Görselde hem yararlı hem de zararlı mikroskobik canlıların etkileri gösterilmiştir. Bu yüzden 'tamamı zararlıdır' ifadesi bu modele göre yanlıştır."
+      },
+      {
+        "id": "f5-1-t2-04",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Görseldeki şemada bir elma ağacı (Çiçekli) ve bir eğrelti otu (Çiçeksiz) karşılaştırılmıştır. Bir bitkinin bu iki gruptan hangisine ait olduğuna karar vermek için şemada hangi yapının varlığına bakmak yeterlidir?",
+        "imageUrl": "/images/grade5/fen/test2/f5-t2-img-04.webp",
+        "options": [
+          "Kök",
+          "Gövde",
+          "Yaprak",
+          "Meyve / Tohum"
+        ],
+        "correct": 3,
+        "explanation": "Kök, gövde ve yaprak görseldeki her iki bitki modelinde de bulunmaktadır (eğrelti otunda da kök/gövde/yaprak benzeri yapılar vardır ancak çiçek yoktur). Sadece elma ağacında 'meyve ve tohum' modeli vardır, bu da onun çiçekli bitki olduğunu gösterir."
+      },
+      {
+        "id": "f5-1-t2-05",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Görseldeki yarasa ve yavrularının modellenen bu eylemi, onun 'kuşlar' grubundan ayrılarak 'memeliler' grubuna dahil edilmesinin temel sebebidir. Bu eylem nedir?",
+        "imageUrl": "/images/grade5/fen/test2/f5-t2-img-05.webp",
+        "options": [
+          "Kanatlarıyla uçabilmesi",
           "Yavrularını sütle beslemesi",
-          "Kanatlarının olması",
-          "Gece avlanması",
+          "Vücudunun kıllarla kaplı olması",
+          "Gece avlanması"
         ],
-        correct: 1,
-        explanation:
-          "Yarasa uçabilen tek memelidir. Yavrularını doğurması ve sütle beslemesi onun memeli olduğunun kanıtıdır.",
+        "correct": 1,
+        "explanation": "Görselde anne yarasanın yavrusunu sütle beslediği gösterilmektedir. Bu eylem memeli hayvanlara özgü bir özelliktir."
       },
       {
-        id: "f5-1-t2-06",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Hassas ölçüm yapabilen bir dinamometre yapmak isteyen bir öğrenci aşağıdakilerden hangisini seçmelidir?",
-        options: [
-          "Kalın ve sert bir yay",
-          "Kısa ve kalın bir yay",
-          "İnce ve esnek bir yay",
-          "Plastik bir çubuk",
+        "id": "f5-1-t2-06",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Hassas ölçüm yapabilen (küçük kuvvetlerde bile uzayan) bir dinamometre yapmak isteyen bir öğrenci, görseldeki düzenekte modellenen yaylardan hangisini seçmelidir?",
+        "imageUrl": "/images/grade5/fen/test2/f5-t2-img-06.webp",
+        "options": [
+          "Kalın ve sert yay",
+          "Kısa ve kalın yay",
+          "İnce ve esnek yay",
+          "Plastik çubuk"
         ],
-        correct: 2,
-        explanation:
-          "İnce ve esnek yaylar küçük kuvvetlerde bile uzama gösterdiği için daha hassas ölçümler yapabilir.",
+        "correct": 2,
+        "explanation": "Düzeneğe 1 Newton gibi küçük bir ağırlık asıldığında, sadece ince ve esnek yayın boyunda belirgin bir uzama (hassasiyet) modellenmiştir. Kalın yaylar küçük kuvvetlerde hassas ölçüm yapamaz."
       },
       {
-        id: "f5-1-t2-07",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Dünya'dan bakıldığında Ay'ın hep aynı yüzünün görülmesinin temel sebebi nedir?",
-        options: [
-          "Ay'ın ışık kaynağı olmaması",
+        "id": "f5-1-t2-07",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Görselde, Ay'ın Dünya etrafındaki bir tam dolanımını yaparken (işaretli 'A' yüzü hep Dünya'ya dönük) modellenmiştir. Dünya'dan bakıldığında Ay'ın hep aynı yüzünün görülmesinin temel sebebi, görseldeki hangi durumun sonucudur?",
+        "imageUrl": "/images/grade5/fen/test2/f5-t2-img-07.webp",
+        "options": [
           "Ay'ın Dünya etrafında dolanması",
-          "Ay'ın kendi ekseni etrafında dönme süresi ile Dünya etrafında dolanma süresinin eşit olması",
-          "Dünya'nın Ay'dan daha büyük olması",
+          "Dünya'nın Ay'dan daha hızlı dönmesi",
+          "Ay'ın kendi etrafındaki dönme süresinin, Dünya etrafındaki dolanma süresine eşit olması",
+          "Ay'ın ışık kaynağı olmaması"
         ],
-        correct: 2,
-        explanation:
-          "Ay kendi etrafında ve Dünya etrafında yaklaşık 27.3 günde döner. Bu süre eşitliği hep aynı tarafı görmemize neden olur.",
+        "correct": 2,
+        "explanation": "Görselde Ay'ın işaretli 'A' yüzü her adımda Dünya'ya bakmaktadır. Bu, Ay'ın kendi etrafında 1 turu ile Dünya etrafında 1 turunun aynı sürede gerçekleştiğini gösterir."
       },
       {
-        id: "f5-1-t2-08",
-        subject: "fen",
-        term: 1,
-        prompt: "Mantarlar ile ilgili verilenlerden hangisi doğrudur?",
-        options: [
-          "Kendi besinini üretebilirler.",
-          "Çiçeksiz bitkiler grubuna girerler.",
-          "Bazı türleri besin olarak tüketilirken bazıları zehirlidir.",
-          "Kökleri sayesinde topraktan mineralleri kendileri üretirler.",
+        "id": "f5-1-t2-08",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Görseldeki 'Mantarlar Alemi' şemasında şapkalı mantarlar (Yararlı/Zararlı) ve küf mantarları gibi türler modellenmiştir. Yalnızca bu görsele dayanarak yapılan hangi çıkarım 'YANLIŞTIR'?",
+        "imageUrl": "/images/grade5/fen/test2/f5-t2-img-08.webp",
+        "options": [
+          "Tüm mantarlar bitkiler grubunda yer alır.",
+          "Bazı mantar türleri besin olarak tüketilirken bazıları zehirlidir.",
+          "Mantarlar, kendi besinini güneş ışığıyla üretemez.",
+          "Maya mantarları (görselde varsa) veya küf mantarları gözle görülmeyecek kadar küçük olabilir."
         ],
-        correct: 2,
-        explanation:
-          "Mantarlar bitki değildir, kendi besinlerini üretemezler. Şapkalı mantarların bazıları besleyiciyken bazıları öldürücü derecede zehirlidir.",
+        "correct": 0,
+        "explanation": "Görselde mantarların bitki olmadığına dair (örneğin fotosentez yapmadıkları) bir modelleme vardır. Mantarlar bitki değildir, şemada bitkiler grubuna ait bir modelleme yoktur."
       },
       {
-        id: "f5-1-t2-09",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Aşağıdaki canlılardan hangisi omurgasız hayvanlar grubunda yer alır?",
-        options: ["Yılan", "Kurbağa", "Ahtapot", "Sazan balığı"],
-        correct: 2,
-        explanation:
-          "Ahtapotun vücudunda kemik veya kıkırdaktan oluşan bir iskelet (omurga) bulunmaz.",
+        "id": "f5-1-t2-09",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Görseldeki canlılardan hangisinin vücudunda kemik veya kıkırdaktan oluşan bir iskelet (omurga) modeli bulunmaz?",
+        "imageUrl": "/images/grade5/fen/test2/f5-t2-img-09.webp",
+        "options": [
+          "Yılan",
+          "Kurbağa",
+          "Ahtapot",
+          "Sazan Balığı"
+        ],
+        "correct": 2,
+        "explanation": "Görseldeki X-ışını (röntgen) modelleri incelendiğinde; yılan, kurbağa ve balıkta belirgin bir omurga ve iskelet modeli varken, ahtapotun modelinde sert bir yapı görülmemektedir."
       },
       {
-        id: "f5-1-t2-10",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "10 bölmeli, en fazla 50 Newton ölçebilen bir dinamometrede her bir bölme kaç Newton'ı gösterir?",
-        options: ["2", "5", "10", "50"],
-        correct: 1,
-        explanation: "Maksimum kuvvet / Bölme sayısı = 50 / 10 = 5 Newton.",
+        "id": "f5-1-t2-10",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Görseldeki dinamometrenin ölçeği incelendiğinde; maksimum ölçüm sınırının 50 Newton olduğu ve bu aralığın 10 eş bölmeye ayrıldığı görülmektedir. Bu dinamometre üzerindeki 'X' ile gösterilen bir bölme kaç Newton'ı temsil eder?",
+        "imageUrl": "/images/grade5/fen/test2/f5-t2-img-10.webp",
+        "options": [
+          "2",
+          "5",
+          "10",
+          "50"
+        ],
+        "correct": 1,
+        "explanation": "Görselde ölçek 0'dan 50'ye kadar 10 bölmedir. Her bir bölme 50 / 10 = 5 Newton'ı gösterir."
       },
       {
-        id: "f5-1-t2-11",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Ay'ın yüzeyindeki kraterlerin milyonlarca yıl boyunca bozulmadan kalmasının sebebi nedir?",
-        options: [
-          "Ay'ın çok sert olması",
+        "id": "f5-1-t2-11",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Görselde, Dünya (Atmosferli) ve Ay (Atmosfersiz) yüzeylerinin milyonlarca yıl sonraki tahmini halleri modellenmiştir. Ay'ın yüzeyindeki kraterlerin ve izlerin bozulmadan kalmasının temel sebebi, görseldeki hangi durumun sonucudur?",
+        "imageUrl": "/images/grade5/fen/test2/f5-t2-img-11.webp",
+        "options": [
+          "Ay'ın Dünya'dan daha sert olması",
           "Ay'da hava olaylarının (rüzgar, yağmur) görülmemesi",
-          "Ay'ın Dünya'dan uzak olması",
           "Ay'ın Güneş ışığını yansıtması",
+          "Ay'ın Dünya'dan çok uzak olması"
         ],
-        correct: 1,
-        explanation:
-          "Ay'da atmosfer yok denecek kadar azdır. Bu yüzden rüzgar ve yağmur gibi aşındırıcı hava olayları olmaz, izler silinmez.",
+        "correct": 1,
+        "explanation": "Dünya modelinde hava olayları (rüzgar/yağmur) yüzeyi aşındırırken, Ay modelinde atmosfer olmadığı için bu hava olayları modellenmemiştir ve izler silinmez."
       },
       {
-        id: "f5-1-t2-12",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Güneş'in büyüklüğünü bir basketbol topuna benzetirsek, Dünya'yı neye benzetmemiz en uygun olur?",
-        options: ["Karpuz", "Voleybol topu", "Nohut tanesi", "Toplu iğne başı"],
-        correct: 2,
-        explanation:
-          "Güneş içine yaklaşık 1.3 milyon Dünya sığabilir. Basketbol topu yanındaki bir nohut tanesi bu oranı temsil edebilir.",
+        "id": "f5-1-t2-12",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Görselde, Güneş'in büyüklüğünü temsil eden bir basketbol topu ve yanına Dünya'yı temsil etmek üzere farklı büyüklüklerdeki nesneler koyulmuştur. Hangi nesne, Dünya'nın Güneş'e göre büyüklüğünü temsil eden bu ölçek modeline EN UYGUNDUR?",
+        "imageUrl": "/images/grade5/fen/test2/f5-t2-img-12.webp",
+        "options": [
+          "Karpuz",
+          "Voleybol Topu",
+          "Nohut Tanesi",
+          "Toplu İğne Başı"
+        ],
+        "correct": 2,
+        "explanation": "Görselde basketbol topu yanındaki 'nohut tanesi' (Güneş içine 1.3 milyon Dünya sığabileceği oranı) bu ölçek modeline en uygundur."
       },
       {
-        id: "f5-1-t2-13",
-        subject: "fen",
-        term: 1,
-        prompt: "Balina ve Yunus hangi canlı grubuna girer?",
-        options: ["Balıklar", "Sürüngenler", "Memeliler", "Amfibiler"],
-        correct: 2,
-        explanation:
-          "Balina ve yunus suda yaşamalarına rağmen doğurarak çoğalır ve yavrularını sütle beslerler, bu yüzden memelidirler.",
+        "id": "f5-1-t2-13",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Görseldeki 'Balina: Neden Memeli?' şemasında balinaların doğurarak çoğaldığı ve yavrularını sütle beslediği modellenmiştir. Bu şemaya göre, balinanın balıklar grubunda değil, memeliler grubunda yer almasının kanıtı hangisidir?",
+        "imageUrl": "/images/grade5/fen/test2/f5-t2-img-13.webp",
+        "options": [
+          "Su altında nefes alamaması",
+          "Yavrularını doğurması ve sütle beslemesi",
+          "Yüzgeçlerinin olması",
+          "Çok büyük olması"
+        ],
+        "correct": 1,
+        "explanation": "Şemada balinanın doğurması ve yavrusunu sütle beslemesi modellenerek memeli olduğu vurgulanmıştır (Balıklar yumurta ile çoğalır)."
       },
       {
-        id: "f5-1-t2-14",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Kuvvet ile ilgili; I. Dinamometre ile ölçülür. II. Birimi Newton'dur. III. Cisimlerin şeklini değiştirebilir. ifadelerinden hangileri doğrudur?",
-        options: ["I ve II", "II ve III", "I ve III", "I, II ve III"],
-        correct: 3,
-        explanation:
-          "Kuvvet bir enerji değil etkidir; Newton birimiyle ölçülür ve cisimlerin yönünü, hızını, şeklini değiştirebilir.",
+        "id": "f5-1-t2-14",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Görselde kuvvetin özellikleri ile ilgili üç farklı durum modellenmiştir: I. Dinamometre kullanımı, II. Newton (N) birimi, III. Esnek cismin şeklini değiştirme. Bu görsellere göre yapılan hangi çıkarım 'HATALIDIR'?",
+        "imageUrl": "/images/grade5/fen/test2/f5-t2-img-14.webp",
+        "options": [
+          "Kuvvet bir dinamometre ile ölçülür.",
+          "Kuvvet birimi Newton'dur (N).",
+          "Kuvvet cisimlerin şeklini değiştirebilir.",
+          "Kuvvet cisimlerin yönünü değiştiremez."
+        ],
+        "correct": 3,
+        "explanation": "Görsel III'te cismin şeklinin değiştiği modellenmiştir. Diğer görsellerde kuvvetin ölçümü ve birimi vardır. 'Yönünü değiştiremez' ifadesi bu modellemelere dayanarak söylenemez (Hatalıdır, çünkü kuvvet yönü değiştirir)."
       },
       {
-        id: "f5-1-t2-15",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Aşağıdaki canlılardan hangisi kendi besinini güneş ışığı kullanarak üretemez?",
-        options: ["Papatya", "Eğrelti Otu", "Küf Mantarı", "Çam Ağacı"],
-        correct: 2,
-        explanation:
-          "Küf mantarı bir mantardır. Mantarlar fotosentez yapamaz, besinlerini dışarıdan hazır alırlar.",
+        "id": "f5-1-t2-15",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Görselde dört farklı canlıya güneş ışığı vurmaktadır. Hangi canlı grupta modelli bir canlı, güneş ışığını kullanarak kendi besinini üretemez?",
+        "imageUrl": "/images/grade5/fen/test2/f5-t2-img-15.webp",
+        "options": [
+          "Papatya",
+          "Eğrelti Otu",
+          "Küf Mantarı",
+          "Çam Ağacı"
+        ],
+        "correct": 2,
+        "explanation": "Görselde küf mantarı (bir mantardır) dışındaki tüm bitkilerde güneş ışığı ile besin üretimi (fotosentez) modellenmiştir. Mantarlar bu işlemi yapamaz."
       },
       {
-        id: "f5-1-t2-16",
-        subject: "fen",
-        term: 1,
-        prompt: "Ay'ın Dünya etrafındaki bir tam dolanımı ne kadar sürer?",
-        options: ["24 saat", "27.3 gün", "29.5 gün", "365 gün"],
-        correct: 1,
-        explanation:
-          "Ay'ın Dünya etrafındaki dolanma süresi yaklaşık 27 gündür.",
+        "id": "f5-1-t2-16",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Görselde, '1. Gün' Ay'ın 'Yeni Ay' evresinde olduğu ve '28. Gün' tekrar Yeni Ay evresine döndüğü modellenmiştir. Bu Ay takvimi modeline göre, Ay'ın Dünya etrafındaki bir tam dolanımı yaklaşık ne kadar sürer?",
+        "imageUrl": "/images/grade5/fen/test2/f5-t2-img-16.webp",
+        "options": [
+          "24 saat",
+          "27 gün",
+          "30 gün",
+          "365 gün"
+        ],
+        "correct": 1,
+        "explanation": "Görseldeki takvim döngüsü (ana evreler) incelendiğinde; Yeni Ay evresinin tekrar görülmesi yaklaşık 27 gündür (bir ayın yaklaşık süresi)."
       },
       {
-        id: "f5-1-t2-17",
-        subject: "fen",
-        term: 1,
-        prompt: "Hangi mikroskobik canlı türü hastalıklara neden olabilir?",
-        options: [
+        "id": "f5-1-t2-17",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Görseldeki 'Mikroskobik Canlılar ve İnsan' şemasında hastalıklara neden olan bakteriler (Zararlı) ve yoğurt yapımında kullanılan bakteriler (Yararlı) modellenmiştir. Bu şemaya göre, hangi tür mikroskobik canlı hastalıklara neden olabilir?",
+        "imageUrl": "/images/grade5/fen/test2/f5-t2-img-17.webp",
+        "options": [
           "Bazı bakteriler",
-          "Maya mantarları",
+          "Maya mantarları (varsa)",
           "Yararlı bakteriler",
-          "Küf mantarları",
+          "Küf mantarları (varsa)"
         ],
-        correct: 0,
-        explanation:
-          "Bakterilerin bazı türleri verem, kolera, boğaz enfeksiyonu gibi hastalıklara yol açar.",
+        "correct": 0,
+        "explanation": "Şemada, 'Zararlı' grupta modelli olan bakterilerin hastalıklara yol açabileceği modellenmiştir."
       },
       {
-        id: "f5-1-t2-18",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Bitkilerde terleme ve gaz alışverişinin en yoğun yapıldığı bölüm hangisidir?",
-        options: ["Kök", "Gövde", "Yaprak", "Çiçek"],
-        correct: 2,
-        explanation:
-          "Yapraklar üzerindeki gözenekler sayesinde bitki nefes alır (gaz alışverişi) ve fazla suyu atar (terleme).",
-      },
-      {
-        id: "f5-1-t2-19",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "En fazla 20 Newton ölçen bir dinamometreye 25 Newton'lık bir cisim asılırsa ne olur?",
-        options: [
-          "Ölçüm hatasız yapılır.",
-          "Dinamometrenin yayı esnekliğini kaybedip bozulabilir.",
-          "Dinamometre 5 Newton gösterir.",
-          "Yay hiç uzamaz.",
+        "id": "f5-1-t2-18",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Görseldeki bitki yaprağının (yaprak) modellenen bu ana görevi nedir?",
+        "imageUrl": "/images/grade5/fen/test2/f5-t2-img-18.webp",
+        "options": [
+          "Topraktan su almak",
+          "Besin üretmek",
+          "Bitkiyi toprağa bağlamak",
+          "Üremeyi sağlamak"
         ],
-        correct: 1,
-        explanation:
-          "Her dinamometrenin bir ölçüm sınırı vardır. Bu sınır aşılırsa yay esneklik özelliğini kaybederek kalıcı olarak bozulur.",
+        "correct": 1,
+        "explanation": "Görselde yaprakta Güneş ışığı, su (H₂O) ve karbondioksit (CO₂) girişi ile oksijen (O₂) ve besin (glikoz) çıkışı modellenmiştir. Bu süreç besin üretimidir."
       },
       {
-        id: "f5-1-t2-20",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Güneş yüzeyindeki koyu renkli görünen bölgelere ne ad verilir?",
-        options: ["Krater", "Güneş Lekesi", "Güneş Işığı", "Alev"],
-        correct: 1,
-        explanation:
-          "Güneş üzerinde çevrelerine göre daha soğuk olan ve bu yüzden koyu görünen bölgelere 'Güneş Lekesi' denir.",
+        "id": "f5-1-t2-19",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Görseldeki deney düzeneklerinde, maksimum ölçüm sınırı 20 Newton olan bir dinamometreye sırasıyla 10 Newton ('Normal' yük) ve 25 Newton ('Aşırı' yük) modelli ağırlıklar asılmıştır. 'Aşırı' yük asılan düzenekte hangi olay modellenmiştir?",
+        "imageUrl": "/images/grade5/fen/test2/f5-t2-img-19.webp",
+        "options": [
+          "Ölçüm hatasız yapılmıştır.",
+          "Dinamometrenin yayı esnekliğini kaybedip bozulmuştur.",
+          "Cisim 5 Newton göstermiştir.",
+          "Yay hiç uzamamıştır."
+"
+        ],
+        "correct": 1,
+        "explanation": "Görselde 'Aşırı' yük asılan dinamometrenin yayının kalıcı olarak deforme olduğu ve ölçüm sınırının aşıldığı Modellemede açıkça görülmektedir."
       },
+      {
+        "id": "f5-1-t2-20",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Görseldeki magnified (büyütülmüş) Güneş yüzeyinde modellenen bu koyu renkli ve çevrelerine göre daha soğuk olan bölgelere ne ad verilir?",
+        "imageUrl": "/images/grade5/fen/test2/f5-t2-img-20.webp",
+        "options": [
+          "Krater",
+          "Güneş Lekesi",
+          "Güneş Işığı",
+          "Alev"
+        ],
+        "correct": 1,
+        "explanation": "Görseldeki büyütülmüş alanda, Güneş yüzeyinde çevrelerine göre daha koyu (Daha Soğuk - 3800 °C) olarak Modellemede 'Güneş Lekesi' adı verilir."
+      }
     ],
     test3: [
       {
