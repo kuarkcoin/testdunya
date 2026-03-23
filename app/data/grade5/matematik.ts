@@ -712,192 +712,305 @@ export const matematikData: SubjectData = {
     ],
     test4: [
       {
-        id: "m5-1-t4-01",
-        subject: "matematik",
-        term: 1,
-        prompt:
-          "Hangi sayının binler bölüğü rakamları toplamı, milyonlar bölüğünden 5 fazladır?",
-        options: ["123.456.789", "105.111.200", "240.745.812", "800.805.100"],
-        correct: 2,
-        explanation: "800.805.100: (8+0+5)-(8)=5.",
-      },
-      {
-        id: "m5-1-t4-02",
-        subject: "matematik",
-        term: 1,
-        prompt: "18 x 12 + 15 sonucu kaçtır?",
-        options: ["116", "131", "231", "216"],
-        correct: 2,
-        explanation: "216 + 15 = 231.",
-      },
-      {
-        id: "m5-1-t4-03",
-        subject: "matematik",
-        term: 1,
-        prompt: "2'nin küpü + 5'in karesi - 12 kaçtır?",
-        options: ["21", "25", "31", "45"],
-        correct: 0,
-        explanation: "8+25-12 = 21.",
-      },
-      {
-        id: "m5-1-t4-04",
-        subject: "matematik",
-        term: 1,
-        prompt:
-          "480 defter 24'lü paketlenip 45 TL'ye satılırsa toplam kazanç nedir?",
-        options: ["800", "900", "1000", "1100"],
-        correct: 1,
-        explanation: "20 x 45 = 900.",
-      },
-      {
-        id: "m5-1-t4-05",
-        subject: "matematik",
-        term: 1,
-        prompt: "18/24 kesrinin en sade hali nedir?",
-        options: ["2/3", "3/4", "4/5", "6/8"],
-        correct: 1,
-        explanation: "3/4.",
-      },
-      {
-        id: "m5-1-t4-06",
-        subject: "matematik",
-        term: 1,
-        prompt: "İki ucu sınırlı çizgiye ne denir?",
-        options: ["Doğru", "Işın", "Doğru Parçası", "Nokta"],
-        correct: 2,
-        explanation: "Doğru Parçası.",
-      },
-      {
-        id: "m5-1-t4-07",
-        subject: "matematik",
-        term: 1,
-        prompt: "A=12, B=5 ise A+B kaçtır?",
-        options: ["12", "15", "17", "20"],
-        correct: 2,
-        explanation: "17.",
-      },
-      {
-        id: "m5-1-t4-08",
-        subject: "matematik",
-        term: 1,
-        prompt: "120 ağacın 2/3'ü elma ise elmalar kirazdan kaç fazladır?",
-        options: ["40", "60", "80", "20"],
-        correct: 0,
-        explanation: "80-40=40.",
-      },
-      {
-        id: "m5-1-t4-09",
-        subject: "matematik",
-        term: 1,
-        prompt: "Dik + Dar açı hangisi olamaz?",
-        options: ["95", "135", "179", "185"],
-        correct: 3,
-        explanation: "90+90=180 max.",
-      },
-      {
-        id: "m5-1-t4-10",
-        subject: "matematik",
-        term: 1,
-        prompt: "9'dan başlayıp 8'er artan örüntüde 8. terim nedir?",
-        options: ["57", "65", "73", "81"],
-        correct: 1,
-        explanation: "9+56=65.",
-      },
-      {
-        id: "m5-1-t4-11",
-        subject: "matematik",
-        term: 1,
-        prompt: "25 x 48 zihinden yapılırken hangisi yanlıştır?",
-        options: ["48x100/4", "48x2x50", "4800/4", "25x48 tek tek"],
-        correct: 1,
-        explanation: "B seçeneği sonucu bozar.",
-      },
-      {
-        id: "m5-1-t4-12",
-        subject: "matematik",
-        term: 1,
-        prompt: "15/4 tam sayılı hali nedir?",
-        options: ["2 tam", "3 tam", "4 tam", "5 tam"],
-        correct: 1,
-        explanation: "3 tam 3/4.",
-      },
-      {
-        id: "m5-1-t4-13",
-        subject: "matematik",
-        term: 1,
-        prompt: "[AB) gösterimi nedir?",
-        options: [
-          "A kapalı B açık",
-          "İki ucu kapalı",
-          "A açık B kapalı",
-          "İki ucu ok",
+        "id": "m5-1-t4-01",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki çelik kasanın dijital ekranında 9 basamaklı bir şifre ('345.128.907') yazmaktadır. Kasanın açılması için binler bölüğündeki rakamların toplamının girilmesi gerekmektedir. Buna göre girilmesi gereken şifre kaçtır?",
+        "imageUrl": "/images/grade5/matematik/test4/m5-t4-img-01.webp",
+        "options": [
+          "11",
+          "12",
+          "16",
+          "17"
         ],
-        correct: 0,
-        explanation: "Işın.",
+        "correct": 0,
+        "explanation": "Sayının binler bölüğü ortadaki kısımdır (128). Bu rakamların toplamı: 1 + 2 + 8 = 11'dir."
       },
       {
-        id: "m5-1-t4-14",
-        subject: "matematik",
-        term: 1,
-        prompt: "144 bilyenin 3/6'sı sarı ise sarı bilye kaçtır?",
-        options: ["24", "48", "72", "96"],
-        correct: 2,
-        explanation: "144/2=72.",
+        "id": "m5-1-t4-02",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki eşit kollu terazinin sol kefesinde 5² ve 2³ gramlık iki ağırlık bulunmaktadır. Terazinin dengede olabilmesi için sağ kefeye kaç gramlık bir ağırlık konulmalıdır?",
+        "imageUrl": "/images/grade5/matematik/test4/m5-t4-img-02.webp",
+        "options": [
+          "16",
+          "29",
+          "31",
+          "33"
+        ],
+        "correct": 3,
+        "explanation": "5² (5'in karesi) = 5 x 5 = 25'tir. 2³ (2'nin küpü) = 2 x 2 x 2 = 8'dir. Sol kefedeki toplam ağırlık 25 + 8 = 33 gramdır."
       },
       {
-        id: "m5-1-t4-15",
-        subject: "matematik",
-        term: 1,
-        prompt: "A=8, B=3 ise A-B kaçtır?",
-        options: ["3", "5", "8", "11"],
-        correct: 1,
-        explanation: "8-3=5.",
+        "id": "m5-1-t4-03",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki 24 eş parçaya bölünmüş büyük boy çikolatanın 6 parçasını yiyen Ayşe'nin yediği miktarı gösteren EN SADE kesir aşağıdakilerden hangisidir?",
+        "imageUrl": "/images/grade5/matematik/test4/m5-t4-img-03.webp",
+        "options": [
+          "1/4",
+          "1/3",
+          "2/5",
+          "1/6"
+        ],
+        "correct": 0,
+        "explanation": "24 parçanın 6'sı 6/24 kesri ile ifade edilir. Her iki tarafı 6 ile sadeleştirdiğimizde 1/4 sonucunu buluruz."
       },
       {
-        id: "m5-1-t4-16",
-        subject: "matematik",
-        term: 1,
-        prompt: "450.000 / 1500 sonucu kaçtır?",
-        options: ["30", "300", "3000", "3"],
-        correct: 1,
-        explanation: "300.",
+        "id": "m5-1-t4-04",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki dizüstü bilgisayarın ekranı ile klavyesi arasındaki açıklık matematikteki hangi açı çeşidine model oluşturur?",
+        "imageUrl": "/images/grade5/matematik/test4/m5-t4-img-04.webp",
+        "options": [
+          "Dar Açı",
+          "Dik Açı",
+          "Geniş Açı",
+          "Doğru Açı"
+        ],
+        "correct": 2,
+        "explanation": "Bilgisayar ekranı dik (90 derece) konumdan daha fazla arkaya yatırıldığı için aradaki açı 90 dereceden büyüktür ve Geniş Açı oluşturur."
       },
       {
-        id: "m5-1-t4-17",
-        subject: "matematik",
-        term: 1,
-        prompt: "Hangisi 2/5'e denk değildir?",
-        options: ["4/10", "10/25", "20/50", "6/20"],
-        correct: 3,
-        explanation: "6/20.",
+        "id": "m5-1-t4-05",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki oyuncak kule örüntüsünün 1. adımında 2, 2. adımında 5, 3. adımında 8 adet blok kullanılmıştır. Bu örüntünün 5. adımını inşa etmek için kaç adet blok gereklidir?",
+        "imageUrl": "/images/grade5/matematik/test4/m5-t4-img-05.webp",
+        "options": [
+          "11",
+          "14",
+          "15",
+          "17"
+        ],
+        "correct": 1,
+        "explanation": "Örüntü her adımda 3 artmaktadır. 4. adımda 8+3 = 11, 5. adımda ise 11+3 = 14 blok kullanılır."
       },
       {
-        id: "m5-1-t4-18",
-        subject: "matematik",
-        term: 1,
-        prompt: "5000 - 2450 sonucu kaçtır?",
-        options: ["2550", "3450", "7450", "2650"],
-        correct: 0,
-        explanation: "2550.",
+        "id": "m5-1-t4-06",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki eşit büyüklükteki su depolarından birincisi 3/8, ikincisi 2/8 oranında doludur. İki depodaki su aynı depoda birleştirilirse deponun kaçta kaçı dolar?",
+        "imageUrl": "/images/grade5/matematik/test4/m5-t4-img-06.webp",
+        "options": [
+          "5/16",
+          "1/8",
+          "5/8",
+          "6/8"
+        ],
+        "correct": 2,
+        "explanation": "Paydaları aynı olan kesirlerde toplama yapılırken paylar toplanır, payda aynen yazılır. 3/8 + 2/8 = 5/8."
       },
       {
-        id: "m5-1-t4-19",
-        subject: "matematik",
-        term: 1,
-        prompt: "Dar + Geniş en az kaçtır?",
-        options: ["91", "92", "93", "180"],
-        correct: 1,
-        explanation: "1+91=92.",
+        "id": "m5-1-t4-07",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görselde iki ağaç arasına gergin bir şekilde bağlanmış ve iki ucundan düğümlenmiş çamaşır ipi, matematikteki hangi temel kavrama modeldir?",
+        "imageUrl": "/images/grade5/matematik/test4/m5-t4-img-07.webp",
+        "options": [
+          "Doğru",
+          "Işın",
+          "Doğru Parçası",
+          "Nokta"
+        ],
+        "correct": 2,
+        "explanation": "Her iki ucu da sınırlı (düğümlenmiş) olan ve uzatılamayan gergin çizgilere Doğru Parçası denir."
       },
       {
-        id: "m5-1-t4-20",
-        subject: "matematik",
-        term: 1,
-        prompt: "75 sayısının 4/5'ü kaçtır?",
-        options: ["15", "30", "45", "60"],
-        correct: 3,
-        explanation: "60.",
+        "id": "m5-1-t4-08",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki nakliye kamyonuna her biri 45 kg ağırlığında olan 120 adet çimento torbası yüklenmiştir. Kamyondaki toplam yük kaç kilogramdır?",
+        "imageUrl": "/images/grade5/matematik/test4/m5-t4-img-08.webp",
+        "options": [
+          "5200",
+          "5400",
+          "5600",
+          "6000"
+        ],
+        "correct": 1,
+        "explanation": "Toplam ağırlığı bulmak için 120 ile 45 çarpılır. 120 x 45 = 5400 kg."
       },
+      {
+        "id": "m5-1-t4-09",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki otomobilin navigasyon ekranında hedef noktaya '3812 metre' kaldığı yazmaktadır. Bu mesafeyi EN YAKIN BİNLİĞE yuvarlayarak tahmin eden sürücünün bulacağı sonuç kaçtır?",
+        "imageUrl": "/images/grade5/matematik/test4/m5-t4-img-09.webp",
+        "options": [
+          "3000",
+          "3500",
+          "3800",
+          "4000"
+        ],
+        "correct": 3,
+        "explanation": "3812 sayısı, yüzler basamağı 5'ten büyük (8) olduğu için bir üst binliğe yani 4000'e yuvarlanır."
+      },
+      {
+        "id": "m5-1-t4-10",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki eşit büyüklükteki üç pizzadan A pizzası 2, B pizzası 4, C pizzası 8 eş dilime bölünmüştür. Her pizzadan sadece 1 dilim alan Can'ın yediği pizza dilimlerinin BÜYÜKTEN KÜÇÜĞE sıralanışı nasıldır?",
+        "imageUrl": "/images/grade5/matematik/test4/m5-t4-img-10.webp",
+        "options": [
+          "A > B > C",
+          "C > B > A",
+          "B > A > C",
+          "A > C > B"
+        ],
+        "correct": 0,
+        "explanation": "Bir bütün ne kadar az parçaya bölünürse her bir parça o kadar büyük olur. 1/2 > 1/4 > 1/8 kuralına göre sıralama A > B > C şeklindedir."
+      },
+      {
+        "id": "m5-1-t4-11",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki kare şeklindeki meyve bahçesinin her bir kenarında 9 adet elma ağacı vardır. Bahçedeki toplam ağaç sayısını veren üslü ifade hangisidir?",
+        "imageUrl": "/images/grade5/matematik/test4/m5-t4-img-11.webp",
+        "options": [
+          "9 x 2",
+          "9³",
+          "9²",
+          "2⁹"
+        ],
+        "correct": 2,
+        "explanation": "Kare şeklindeki düzenekte toplam ağaç sayısı 9 x 9 işlemi ile bulunur. Bir sayının kendisiyle bir kez çarpımı o sayının karesidir (9²)."
+      },
+      {
+        "id": "m5-1-t4-12",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki 350 yolcu kapasiteli trenden inen yolcular, her biri en fazla 45 kişi alan otobüslerle şehir merkezine taşınacaktır. Tüm yolcuların taşınması için EN AZ kaç otobüse ihtiyaç vardır?",
+        "imageUrl": "/images/grade5/matematik/test4/m5-t4-img-12.webp",
+        "options": [
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "correct": 2,
+        "explanation": "350'yi 45'e böldüğümüzde bölüm 7, kalan 35 olur. Kalan 35 kişiyi taşımak için de 1 otobüse daha ihtiyaç vardır (7 + 1 = 8)."
+      },
+      {
+        "id": "m5-1-t4-13",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki tabaklarda 3 tane tam elma ve 1 tane yarım elma bulunmaktadır. Bu durumu ifade eden tam sayılı kesir aşağıdakilerden hangisidir?",
+        "imageUrl": "/images/grade5/matematik/test4/m5-t4-img-13.webp",
+        "options": [
+          "3 tam 1/4",
+          "3 tam 1/2",
+          "4 tam 1/2",
+          "3/2"
+        ],
+        "correct": 1,
+        "explanation": "3 bütün elma (3 tam) ve 1 yarım elma (1/2) birleştiğinde 3 tam 1/2 kesrini oluşturur."
+      },
+      {
+        "id": "m5-1-t4-14",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki alışveriş fişine göre alınan ürün 125 TL, kargo ücreti ise 18 TL'dir. Kuryeye 200 TL nakit veren bir müşteri kaç TL para üstü almalıdır?",
+        "imageUrl": "/images/grade5/matematik/test4/m5-t4-img-14.webp",
+        "options": [
+          "47",
+          "57",
+          "67",
+          "75"
+        ],
+        "correct": 1,
+        "explanation": "Toplam tutar: 125 + 18 = 143 TL'dir. Verilen paradan tutar çıkarılırsa: 200 - 143 = 57 TL para üstü alınır."
+      },
+      {
+        "id": "m5-1-t4-15",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki şehir haritasında Atatürk Caddesi ile Cumhuriyet Caddesi bir kavşakta 90 derecelik açıyla kesişmektedir. Bu durum geometrideki hangi doğru çeşidine örnektir?",
+        "imageUrl": "/images/grade5/matematik/test4/m5-t4-img-15.webp",
+        "options": [
+          "Paralel Doğrular",
+          "Dik Kesişen Doğrular",
+          "Çakışık Doğrular",
+          "Aykırı Doğrular"
+        ],
+        "correct": 1,
+        "explanation": "Birbirini 90 derecelik (dik) açı ile kesen doğrulara 'Dik Kesişen Doğrular' denir."
+      },
+      {
+        "id": "m5-1-t4-16",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki kütüphane rafında toplam 80 adet kitap bulunmaktadır. Kitapların 3/5'i hikaye kitabı olduğuna göre, rafta kaç adet hikaye kitabı vardır?",
+        "imageUrl": "/images/grade5/matematik/test4/m5-t4-img-16.webp",
+        "options": [
+          "32",
+          "40",
+          "48",
+          "64"
+        ],
+        "correct": 2,
+        "explanation": "80'in 3/5'ini bulmak için sayı paydaya bölünür, pay ile çarpılır. 80 / 5 = 16. Bulunan sonuç pay ile çarpılır: 16 x 3 = 48."
+      },
+      {
+        "id": "m5-1-t4-17",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görselde verilen '25 x 36' çarpma işlemini zihinden kolayca yapmak isteyen bir öğrenci, kara tahtaya hangi stratejiyi yazarsa işlemi DOĞRU yapmış olur?",
+        "imageUrl": "/images/grade5/matematik/test4/m5-t4-img-17.webp",
+        "options": [
+          "36 sayısını 4'e bölüp sonucu 100 ile çarpmak",
+          "36 sayısını 2 ile çarpıp sonucu 10'a bölmek",
+          "36'dan 25 çıkarıp kalanı 10 ile çarpmak",
+          "36 sayısını 100'e bölüp 4 ile çarpmak"
+        ],
+        "correct": 0,
+        "explanation": "Bir sayıyı zihinden 25 ile çarpmanın en pratik yolu, o sayıyı 4'e bölüp 100 ile çarpmaktır (Çünkü 100/4 = 25'tir)."
+      },
+      {
+        "id": "m5-1-t4-18",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki yelpaze tamamen açıldığında kenarları düz bir çizgi oluşturarak 180 derecelik bir açı meydana getirmektedir. Bu açı çeşidine ne ad verilir?",
+        "imageUrl": "/images/grade5/matematik/test4/m5-t4-img-18.webp",
+        "options": [
+          "Dar Açı",
+          "Dik Açı",
+          "Geniş Açı",
+          "Doğru Açı"
+        ],
+        "correct": 3,
+        "explanation": "Ölçüsü tam olarak 180 derece olan ve düz bir çizgi oluşturan açılara 'Doğru Açı' denir."
+      },
+      {
+        "id": "m5-1-t4-19",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki kesir modeli 2 tam 3/4 kesrini göstermektedir. Bu kesrin bileşik kesir olarak karşılığı aşağıdakilerden hangisidir?",
+        "imageUrl": "/images/grade5/matematik/test4/m5-t4-img-19.webp",
+        "options": [
+          "5/4",
+          "9/4",
+          "11/4",
+          "14/4"
+        ],
+        "correct": 2,
+        "explanation": "Tam sayılı kesri bileşik kesre çevirirken tam sayı payda ile çarpılır, pay ile toplanır. (2 x 4) + 3 = 11. Payda aynen kalır: 11/4."
+      },
+      {
+        "id": "m5-1-t4-20",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki büyük deponun içine eni, boyu ve yüksekliği 5'er adet kutu alacak şekilde küp biçiminde koliler yerleştirilmiştir. Depodaki toplam koli sayısını veren üslü ifade hangisidir?",
+        "imageUrl": "/images/grade5/matematik/test4/m5-t4-img-20.webp",
+        "options": [
+          "5 x 3",
+          "5²",
+          "5³",
+          "3⁵"
+        ],
+        "correct": 2,
+        "explanation": "Küp şeklindeki bir yapının içindeki toplam blok sayısı en, boy ve yüksekliğin çarpımı ile bulunur (5 x 5 x 5). Üç aynı sayının çarpımı o sayının küpüdür (5³)."
+      }
     ],
     test5: [
       {
