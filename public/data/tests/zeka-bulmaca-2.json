@@ -1,147 +1,147 @@
 {
   "slug": "test-2",
   "title": "Zeka Bulmacası 2",
-  "description": "Detective and visual logic puzzles",
+  "description": "Who is the thief?",
   "questions": [
     {
       "id": "zeka-2-q1",
       "imageUrl": "/images/zeka/test2/q1.webp",
       "question": "Who is the thief?",
       "options": [
-        "Left table",
-        "Middle table",
-        "Right table",
-        "Door area",
-        "Reception desk"
+        "The cashier",
+        "The cleaner",
+        "The customer in red",
+        "The security guard",
+        "The delivery worker"
       ],
       "correct": 2,
-      "explanation": "Right table is correct because the spilled paint is on the wrong hand."
+      "explanation": "The customer in red claims she just entered the store, but her hands are already stained with makeup powder from the broken display."
     },
     {
       "id": "zeka-2-q2",
       "imageUrl": "/images/zeka/test2/q2.webp",
       "question": "Who is the thief?",
       "options": [
-        "Broken clock",
-        "Wet umbrella",
-        "Fresh footprints",
-        "Open drawer",
-        "Coffee cup"
+        "The tourist",
+        "The waiter",
+        "The man with the hat",
+        "The woman by the window",
+        "The old man"
       ],
-      "correct": 3,
-      "explanation": "Open drawer is correct because the keycard log shows a single entry at the critical time."
+      "correct": 0,
+      "explanation": "The tourist says he just arrived, but his coffee cup is half empty and already cold."
     },
     {
       "id": "zeka-2-q3",
       "imageUrl": "/images/zeka/test2/q3.webp",
       "question": "Who is the thief?",
       "options": [
-        "The banker",
-        "The nurse",
-        "The student",
-        "The artist",
-        "The firefighter"
+        "The chef",
+        "The delivery man",
+        "The receptionist",
+        "The guest with a backpack",
+        "The bellboy"
       ],
-      "correct": 4,
-      "explanation": "The firefighter is correct because the cup is still hot, proving recent movement."
+      "correct": 1,
+      "explanation": "The delivery man claims he is here for the first time, but he is already using the staff-only entrance."
     },
     {
       "id": "zeka-2-q4",
       "imageUrl": "/images/zeka/test2/q4.webp",
       "question": "Who is the thief?",
       "options": [
-        "The chef",
-        "The doctor",
-        "The driver",
-        "The old woman",
-        "The gardener"
+        "The woman in blue",
+        "The gardener",
+        "The teenager",
+        "The police officer",
+        "The shop owner"
       ],
       "correct": 0,
-      "explanation": "The chef is correct because their timeline does not match the wall clock."
+      "explanation": "The woman in blue says she stayed on the bench, but her shoes have fresh grass stains matching the restricted garden area."
     },
     {
       "id": "zeka-2-q5",
       "imageUrl": "/images/zeka/test2/q5.webp",
       "question": "Who is the thief?",
       "options": [
-        "The woman in red",
-        "The man with the hat",
-        "The waiter",
-        "The old man",
-        "The police officer"
+        "The nurse",
+        "The visitor with flowers",
+        "The doctor",
+        "The patient",
+        "The cleaner"
       ],
-      "correct": 1,
-      "explanation": "The man with the hat is correct because the shoe prints match only one suspect."
+      "correct": 2,
+      "explanation": "The doctor claims he was not in the room, but he is still wearing surgical gloves, which are only used inside."
     },
     {
       "id": "zeka-2-q6",
       "imageUrl": "/images/zeka/test2/q6.webp",
       "question": "Who is the thief?",
       "options": [
-        "The teacher",
-        "The shopkeeper",
+        "The mechanic",
+        "The old woman",
+        "The man with glasses",
         "The courier",
-        "The tourist",
-        "The mechanic"
+        "The neighbor"
       ],
-      "correct": 2,
-      "explanation": "The courier is correct because the spilled paint is on the wrong hand."
+      "correct": 4,
+      "explanation": "The neighbor says he just arrived, but his shoes are muddy while the path outside is completely dry."
     },
     {
       "id": "zeka-2-q7",
       "imageUrl": "/images/zeka/test2/q7.webp",
       "question": "Who is the thief?",
       "options": [
-        "Left table",
-        "Middle table",
-        "Right table",
-        "Door area",
-        "Reception desk"
+        "The vendor",
+        "The student",
+        "The conductor",
+        "The businessman",
+        "The woman with the camera"
       ],
       "correct": 3,
-      "explanation": "Door area is correct because the keycard log shows a single entry at the critical time."
+      "explanation": "The businessman claims he was on the phone, but his phone screen is off and shows no active call."
     },
     {
       "id": "zeka-2-q8",
       "imageUrl": "/images/zeka/test2/q8.webp",
       "question": "Who is the thief?",
       "options": [
-        "Broken clock",
-        "Wet umbrella",
-        "Fresh footprints",
-        "Open drawer",
-        "Coffee cup"
+        "The fisherman",
+        "The diver",
+        "The tourist with the backpack",
+        "The lifeguard",
+        "The ice cream seller"
       ],
-      "correct": 4,
-      "explanation": "Coffee cup is correct because the cup is still hot, proving recent movement."
+      "correct": 3,
+      "explanation": "The lifeguard says he never left his post, but the rescue chair behind him is empty and the binoculars are missing."
     },
     {
       "id": "zeka-2-q9",
       "imageUrl": "/images/zeka/test2/q9.webp",
       "question": "Who is the thief?",
       "options": [
-        "The banker",
-        "The nurse",
-        "The student",
-        "The artist",
-        "The firefighter"
+        "The office manager",
+        "The employee",
+        "The cleaner",
+        "The guest",
+        "The security officer"
       ],
-      "correct": 0,
-      "explanation": "The banker is correct because their timeline does not match the wall clock."
+      "correct": 1,
+      "explanation": "The employee claims he just arrived, but his computer is already logged in and active."
     },
     {
       "id": "zeka-2-q10",
       "imageUrl": "/images/zeka/test2/q10.webp",
       "question": "Who is the thief?",
       "options": [
-        "The chef",
-        "The doctor",
-        "The driver",
-        "The old woman",
-        "The gardener"
+        "The cyclist",
+        "The shop owner",
+        "The police officer",
+        "The courier",
+        "The homeless man"
       ],
-      "correct": 1,
-      "explanation": "The doctor is correct because the shoe prints match only one suspect."
+      "correct": 3,
+      "explanation": "The courier says the package is sealed, but liquid is leaking from it, proving it was opened."
     }
   ]
 }
