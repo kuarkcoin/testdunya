@@ -508,8 +508,23 @@ export default function QuizPage() {
                     <div className="flex-grow">
                       <div className="text-lg font-medium text-slate-800 mb-5 leading-relaxed">{formatText(q.prompt)}</div>
                       {q.imageUrl && (
-                        <div className="mb-5 overflow-hidden rounded-xl border border-slate-200 bg-white">
-                          <img src={q.imageUrl} alt={`Question visual for ${q.id}`} className="w-full h-auto object-cover" loading="lazy" />
+                        <div
+                          className="mb-5 overflow-hidden rounded-xl border border-slate-200 bg-white cursor-zoom-in"
+                          onClick={() => setSelectedImage(q.imageUrl!)}
+                          role="button"
+                          tabIndex={0}
+                          onKeyDown={(e) => {
+                            if (e.key === 'Enter' || e.key === ' ') setSelectedImage(q.imageUrl!);
+                          }}
+                        >
+                          <Image
+                            src={q.imageUrl}
+                            alt={`Question visual for ${q.id}`}
+                            width={1200}
+                            height={900}
+                            className="w-full h-auto object-contain"
+                            unoptimized
+                          />
                         </div>
                       )}
 
@@ -695,7 +710,7 @@ export default function QuizPage() {
           onClick={closeImageModal}
         >
           <div
-            className="relative w-full h-full flex items-center justify-center animate-in zoom-in-95 duration-200"
+            className="relative flex items-center justify-center animate-in zoom-in-95 duration-200"
             onClick={(e) => e.stopPropagation()}
           >
             <button
