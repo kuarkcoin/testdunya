@@ -1,0 +1,142 @@
+[
+  {
+    "id": "zeka-40-soru-1",
+    "imageUrl": "/images/zeka/test40/q1.webp",
+    "question": "Who is pretending?",
+    "options": [
+      "Broken clock",
+      "Wet umbrella",
+      "Fresh footprints",
+      "Open drawer",
+      "Coffee cup"
+    ],
+    "correct": 2,
+    "explanation": "Fresh footprints is correct because the reflection in the mirror reveals the hidden item."
+  },
+  {
+    "id": "zeka-40-soru-2",
+    "imageUrl": "/images/zeka/test40/q2.webp",
+    "question": "Who is pretending?",
+    "options": [
+      "Person A",
+      "Person B",
+      "Person C",
+      "Person D",
+      "Person E"
+    ],
+    "correct": 4,
+    "explanation": "Person E is correct because the shoe prints match only one suspect."
+  },
+  {
+    "id": "zeka-40-soru-3",
+    "imageUrl": "/images/zeka/test40/q3.webp",
+    "question": "Who is pretending?",
+    "options": [
+      "The woman in red",
+      "The man with the hat",
+      "The waiter",
+      "The old man",
+      "The police officer"
+    ],
+    "correct": 1,
+    "explanation": "The man with the hat is correct because only one person has access to the locked room."
+  },
+  {
+    "id": "zeka-40-soru-4",
+    "imageUrl": "/images/zeka/test40/q4.webp",
+    "question": "Who is pretending?",
+    "options": [
+      "Suspect near the window",
+      "Suspect with gloves",
+      "Suspect with muddy shoes",
+      "Suspect with backpack",
+      "Suspect with umbrella"
+    ],
+    "correct": 3,
+    "explanation": "Suspect with backpack is correct because the spilled paint is on the wrong hand."
+  },
+  {
+    "id": "zeka-40-soru-5",
+    "imageUrl": "/images/zeka/test40/q5.webp",
+    "question": "Who is pretending?",
+    "options": [
+      "Left table",
+      "Middle table",
+      "Right table",
+      "Door area",
+      "Reception desk"
+    ],
+    "correct": 0,
+    "explanation": "Left table is correct because the phone photo timestamp proves the sequence."
+  },
+  {
+    "id": "zeka-40-soru-6",
+    "imageUrl": "/images/zeka/test40/q6.webp",
+    "question": "Who is pretending?",
+    "options": [
+      "Blue car owner",
+      "Green bike owner",
+      "Taxi driver",
+      "Security guard",
+      "Delivery worker"
+    ],
+    "correct": 2,
+    "explanation": "Taxi driver is correct because the keycard log shows a single entry."
+  },
+  {
+    "id": "zeka-40-soru-7",
+    "imageUrl": "/images/zeka/test40/q7.webp",
+    "question": "Who is pretending?",
+    "options": [
+      "Broken clock",
+      "Wet umbrella",
+      "Fresh footprints",
+      "Open drawer",
+      "Coffee cup"
+    ],
+    "correct": 4,
+    "explanation": "Coffee cup is correct because the broken glass is outside, not inside."
+  },
+  {
+    "id": "zeka-40-soru-8",
+    "imageUrl": "/images/zeka/test40/q8.webp",
+    "question": "Who is pretending?",
+    "options": [
+      "Person A",
+      "Person B",
+      "Person C",
+      "Person D",
+      "Person E"
+    ],
+    "correct": 1,
+    "explanation": "Person B is correct because the coffee steam shows the cup was just placed."
+  },
+  {
+    "id": "zeka-40-soru-9",
+    "imageUrl": "/images/zeka/test40/q9.webp",
+    "question": "Who is pretending?",
+    "options": [
+      "The woman in red",
+      "The man with the hat",
+      "The waiter",
+      "The old man",
+      "The police officer"
+    ],
+    "correct": 3,
+    "explanation": "The old man is correct because the security camera angle captures the real action."
+  },
+  {
+    "id": "zeka-40-soru-10",
+    "imageUrl": "/images/zeka/test40/q10.webp",
+    "question": "Who is pretending?",
+    "options": [
+      "Suspect near the window",
+      "Suspect with gloves",
+      "Suspect with muddy shoes",
+      "Suspect with backpack",
+      "Suspect with umbrella"
+    ],
+    "correct": 0,
+    "explanation": "Suspect near the window is correct because their timeline does not match the wall clock."
+  }
+]

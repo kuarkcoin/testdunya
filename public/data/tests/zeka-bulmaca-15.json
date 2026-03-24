@@ -1,0 +1,142 @@
+[
+  {
+    "id": "zeka-15-soru-1",
+    "imageUrl": "/images/zeka/test15/q1.webp",
+    "question": "What is wrong in the image?",
+    "options": [
+      "Blue car owner",
+      "Green bike owner",
+      "Taxi driver",
+      "Security guard",
+      "Delivery worker"
+    ],
+    "correct": 2,
+    "explanation": "Taxi driver is correct because the keycard log shows a single entry."
+  },
+  {
+    "id": "zeka-15-soru-2",
+    "imageUrl": "/images/zeka/test15/q2.webp",
+    "question": "What is wrong in the image?",
+    "options": [
+      "Broken clock",
+      "Wet umbrella",
+      "Fresh footprints",
+      "Open drawer",
+      "Coffee cup"
+    ],
+    "correct": 4,
+    "explanation": "Coffee cup is correct because the broken glass is outside, not inside."
+  },
+  {
+    "id": "zeka-15-soru-3",
+    "imageUrl": "/images/zeka/test15/q3.webp",
+    "question": "What is wrong in the image?",
+    "options": [
+      "Person A",
+      "Person B",
+      "Person C",
+      "Person D",
+      "Person E"
+    ],
+    "correct": 1,
+    "explanation": "Person B is correct because the coffee steam shows the cup was just placed."
+  },
+  {
+    "id": "zeka-15-soru-4",
+    "imageUrl": "/images/zeka/test15/q4.webp",
+    "question": "What is wrong in the image?",
+    "options": [
+      "The woman in red",
+      "The man with the hat",
+      "The waiter",
+      "The old man",
+      "The police officer"
+    ],
+    "correct": 3,
+    "explanation": "The old man is correct because the security camera angle captures the real action."
+  },
+  {
+    "id": "zeka-15-soru-5",
+    "imageUrl": "/images/zeka/test15/q5.webp",
+    "question": "What is wrong in the image?",
+    "options": [
+      "Suspect near the window",
+      "Suspect with gloves",
+      "Suspect with muddy shoes",
+      "Suspect with backpack",
+      "Suspect with umbrella"
+    ],
+    "correct": 0,
+    "explanation": "Suspect near the window is correct because their timeline does not match the wall clock."
+  },
+  {
+    "id": "zeka-15-soru-6",
+    "imageUrl": "/images/zeka/test15/q6.webp",
+    "question": "What is wrong in the image?",
+    "options": [
+      "Left table",
+      "Middle table",
+      "Right table",
+      "Door area",
+      "Reception desk"
+    ],
+    "correct": 2,
+    "explanation": "Right table is correct because the reflection in the mirror reveals the hidden item."
+  },
+  {
+    "id": "zeka-15-soru-7",
+    "imageUrl": "/images/zeka/test15/q7.webp",
+    "question": "What is wrong in the image?",
+    "options": [
+      "Blue car owner",
+      "Green bike owner",
+      "Taxi driver",
+      "Security guard",
+      "Delivery worker"
+    ],
+    "correct": 4,
+    "explanation": "Delivery worker is correct because the shoe prints match only one suspect."
+  },
+  {
+    "id": "zeka-15-soru-8",
+    "imageUrl": "/images/zeka/test15/q8.webp",
+    "question": "What is wrong in the image?",
+    "options": [
+      "Broken clock",
+      "Wet umbrella",
+      "Fresh footprints",
+      "Open drawer",
+      "Coffee cup"
+    ],
+    "correct": 1,
+    "explanation": "Wet umbrella is correct because only one person has access to the locked room."
+  },
+  {
+    "id": "zeka-15-soru-9",
+    "imageUrl": "/images/zeka/test15/q9.webp",
+    "question": "What is wrong in the image?",
+    "options": [
+      "Person A",
+      "Person B",
+      "Person C",
+      "Person D",
+      "Person E"
+    ],
+    "correct": 3,
+    "explanation": "Person D is correct because the spilled paint is on the wrong hand."
+  },
+  {
+    "id": "zeka-15-soru-10",
+    "imageUrl": "/images/zeka/test15/q10.webp",
+    "question": "What is wrong in the image?",
+    "options": [
+      "The woman in red",
+      "The man with the hat",
+      "The waiter",
+      "The old man",
+      "The police officer"
+    ],
+    "correct": 0,
+    "explanation": "The woman in red is correct because the phone photo timestamp proves the sequence."
+  }
+]

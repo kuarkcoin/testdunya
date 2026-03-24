@@ -419,6 +419,29 @@ export default function HomePage() {
 
 {/* --- GAME MODES --- */}
         <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-8">
+          {/* 0. ZEKA BULMACALARI */}
+          <Link
+            href="/zeka-bulmacalari"
+            className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-indigo-600 to-violet-700 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl sm:col-span-2"
+          >
+            <div className="absolute -top-8 -right-8 h-32 w-32 rounded-full bg-white/10 blur-2xl transition-all group-hover:bg-white/20"></div>
+            <div className="relative z-10 flex h-full flex-col justify-between">
+              <div>
+                <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-indigo-100 backdrop-blur-sm">
+                  <Brain className="h-4 w-4" /> New Category
+                </div>
+                <h3 className="mb-2 text-2xl font-black tracking-tight">Zeka Bulmacaları</h3>
+                <p className="text-indigo-100 opacity-90 text-sm">50 image-based mystery tests • 500 puzzle questions</p>
+              </div>
+              <div className="mt-6 flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-indigo-700 shadow-lg group-hover:scale-110 transition-transform">
+                  🕵️
+                </div>
+                <span className="font-bold text-sm">Explore →</span>
+              </div>
+            </div>
+          </Link>
+
           {/* 1. SPEEDRUN */}
           <Link
             href="/speedrun"

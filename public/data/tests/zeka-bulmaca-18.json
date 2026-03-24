@@ -1,0 +1,142 @@
+[
+  {
+    "id": "zeka-18-soru-1",
+    "imageUrl": "/images/zeka/test18/q1.webp",
+    "question": "Who owns the object?",
+    "options": [
+      "The woman in red",
+      "The man with the hat",
+      "The waiter",
+      "The old man",
+      "The police officer"
+    ],
+    "correct": 0,
+    "explanation": "The woman in red is correct because the phone photo timestamp proves the sequence."
+  },
+  {
+    "id": "zeka-18-soru-2",
+    "imageUrl": "/images/zeka/test18/q2.webp",
+    "question": "Who owns the object?",
+    "options": [
+      "Suspect near the window",
+      "Suspect with gloves",
+      "Suspect with muddy shoes",
+      "Suspect with backpack",
+      "Suspect with umbrella"
+    ],
+    "correct": 2,
+    "explanation": "Suspect with muddy shoes is correct because the keycard log shows a single entry."
+  },
+  {
+    "id": "zeka-18-soru-3",
+    "imageUrl": "/images/zeka/test18/q3.webp",
+    "question": "Who owns the object?",
+    "options": [
+      "Left table",
+      "Middle table",
+      "Right table",
+      "Door area",
+      "Reception desk"
+    ],
+    "correct": 4,
+    "explanation": "Reception desk is correct because the broken glass is outside, not inside."
+  },
+  {
+    "id": "zeka-18-soru-4",
+    "imageUrl": "/images/zeka/test18/q4.webp",
+    "question": "Who owns the object?",
+    "options": [
+      "Blue car owner",
+      "Green bike owner",
+      "Taxi driver",
+      "Security guard",
+      "Delivery worker"
+    ],
+    "correct": 1,
+    "explanation": "Green bike owner is correct because the coffee steam shows the cup was just placed."
+  },
+  {
+    "id": "zeka-18-soru-5",
+    "imageUrl": "/images/zeka/test18/q5.webp",
+    "question": "Who owns the object?",
+    "options": [
+      "Broken clock",
+      "Wet umbrella",
+      "Fresh footprints",
+      "Open drawer",
+      "Coffee cup"
+    ],
+    "correct": 3,
+    "explanation": "Open drawer is correct because the security camera angle captures the real action."
+  },
+  {
+    "id": "zeka-18-soru-6",
+    "imageUrl": "/images/zeka/test18/q6.webp",
+    "question": "Who owns the object?",
+    "options": [
+      "Person A",
+      "Person B",
+      "Person C",
+      "Person D",
+      "Person E"
+    ],
+    "correct": 0,
+    "explanation": "Person A is correct because their timeline does not match the wall clock."
+  },
+  {
+    "id": "zeka-18-soru-7",
+    "imageUrl": "/images/zeka/test18/q7.webp",
+    "question": "Who owns the object?",
+    "options": [
+      "The woman in red",
+      "The man with the hat",
+      "The waiter",
+      "The old man",
+      "The police officer"
+    ],
+    "correct": 2,
+    "explanation": "The waiter is correct because the reflection in the mirror reveals the hidden item."
+  },
+  {
+    "id": "zeka-18-soru-8",
+    "imageUrl": "/images/zeka/test18/q8.webp",
+    "question": "Who owns the object?",
+    "options": [
+      "Suspect near the window",
+      "Suspect with gloves",
+      "Suspect with muddy shoes",
+      "Suspect with backpack",
+      "Suspect with umbrella"
+    ],
+    "correct": 4,
+    "explanation": "Suspect with umbrella is correct because the shoe prints match only one suspect."
+  },
+  {
+    "id": "zeka-18-soru-9",
+    "imageUrl": "/images/zeka/test18/q9.webp",
+    "question": "Who owns the object?",
+    "options": [
+      "Left table",
+      "Middle table",
+      "Right table",
+      "Door area",
+      "Reception desk"
+    ],
+    "correct": 1,
+    "explanation": "Middle table is correct because only one person has access to the locked room."
+  },
+  {
+    "id": "zeka-18-soru-10",
+    "imageUrl": "/images/zeka/test18/q10.webp",
+    "question": "Who owns the object?",
+    "options": [
+      "Blue car owner",
+      "Green bike owner",
+      "Taxi driver",
+      "Security guard",
+      "Delivery worker"
+    ],
+    "correct": 3,
+    "explanation": "Security guard is correct because the spilled paint is on the wrong hand."
+  }
+]

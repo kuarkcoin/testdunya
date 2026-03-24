@@ -23,6 +23,7 @@ interface Choice {
 interface Question {
   id: string;
   prompt: string;
+  imageUrl?: string;
   choices: Choice[];
   answer: string;
   explanation?: string;
@@ -120,6 +121,11 @@ const QuestionCard = React.memo(({
       <div className="text-lg sm:text-xl font-semibold text-slate-800 dark:text-zinc-100 mb-8 leading-relaxed">
         {formatText(q.prompt)}
       </div>
+      {q.imageUrl && (
+        <div className="mb-8 overflow-hidden rounded-2xl border border-slate-200 dark:border-zinc-700 bg-white dark:bg-zinc-900">
+          <img src={q.imageUrl} alt={`Question visual for ${q.id}`} className="w-full h-auto object-cover" loading="lazy" />
+        </div>
+      )}
 
       <div className="grid gap-3">
         {q.choices.map((c) => (
@@ -288,9 +294,21 @@ export default function QuizPage() {
               text: String(optText),
             }));
 
-            let finalAnswerId = (anyItem.answer || anyItem.correct || "").toString().trim();
-            if (finalAnswerId.length === 1) finalAnswerId = finalAnswerId.toUpperCase();
-            else {
+            const rawAnswer = anyItem.answer ?? anyItem.correct ?? "";
+            let finalAnswerId = "";
+            if (typeof rawAnswer === 'number') {
+              finalAnswerId = choices[rawAnswer]?.id || "";
+            } else {
+              finalAnswerId = rawAnswer.toString().trim();
+            }
+
+            if (finalAnswerId.length === 1) {
+              const upper = finalAnswerId.toUpperCase();
+              const isLetter = upper >= 'A' && upper <= 'Z';
+              const maybeIndex = Number(finalAnswerId);
+              if (isLetter) finalAnswerId = upper;
+              else if (!Number.isNaN(maybeIndex)) finalAnswerId = choices[maybeIndex]?.id || "";
+            } else {
               const found = choices.find(c => c.text === finalAnswerId);
               if (found) finalAnswerId = found.id;
             }
@@ -298,6 +316,7 @@ export default function QuizPage() {
             return {
               id: anyItem.id || String(idx),
               prompt: anyItem.prompt || anyItem.question || anyItem.soru || "...",
+              imageUrl: anyItem.imageUrl || anyItem.image || undefined,
               choices,
               answer: finalAnswerId,
               explanation: findExplanation(anyItem),
@@ -452,6 +471,11 @@ export default function QuizPage() {
 
                     <div className="flex-grow">
                       <div className="text-lg font-medium text-slate-800 mb-5 leading-relaxed">{formatText(q.prompt)}</div>
+                      {q.imageUrl && (
+                        <div className="mb-5 overflow-hidden rounded-xl border border-slate-200 bg-white">
+                          <img src={q.imageUrl} alt={`Question visual for ${q.id}`} className="w-full h-auto object-cover" loading="lazy" />
+                        </div>
+                      )}
 
                       <div className="grid gap-2">
                         {q.choices.map((c) => {
