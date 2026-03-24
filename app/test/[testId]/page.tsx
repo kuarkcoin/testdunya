@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useParams } from 'next/navigation';
 
 // --- ICONS ---
@@ -103,12 +104,13 @@ function findExplanation(item: any): string {
 
 // --- MEMOIZED QUESTION CARD ---
 const QuestionCard = React.memo(({
-  q, idx, answer, onAnswer, labels,
+  q, idx, answer, onAnswer, onImageClick, labels,
 }: {
   q: Question;
   idx: number;
   answer: string;
   onAnswer: (qid: string, val: string) => void;
+  onImageClick: (url: string) => void;
   labels: any;
 }) => {
   return (
@@ -123,7 +125,20 @@ const QuestionCard = React.memo(({
       </div>
       {q.imageUrl && (
         <div className="mb-8 overflow-hidden rounded-2xl border border-slate-200 dark:border-zinc-700 bg-white dark:bg-zinc-900">
-          <img src={q.imageUrl} alt={`Question visual for ${q.id}`} className="w-full h-auto object-cover" loading="lazy" />
+          <button
+            type="button"
+            onClick={() => onImageClick(q.imageUrl!)}
+            className="block w-full cursor-zoom-in"
+            aria-label={`Open question image ${idx + 1} fullscreen`}
+          >
+            <Image
+              src={q.imageUrl}
+              alt={`Question visual for ${q.id}`}
+              width={1200}
+              height={800}
+              className="w-full h-auto object-cover"
+            />
+          </button>
         </div>
       )}
 
@@ -164,6 +179,48 @@ const QuestionCard = React.memo(({
 });
 QuestionCard.displayName = 'QuestionCard';
 
+const ImageFullscreenModal = ({
+  imageUrl,
+  onClose,
+}: {
+  imageUrl: string | null;
+  onClose: () => void;
+}) => {
+  if (!imageUrl) return null;
+
+  return (
+    <div
+      className="fixed inset-0 z-[100] bg-black/80 flex items-center justify-center p-4 sm:p-6 transition-opacity duration-300 animate-in fade-in"
+      onClick={onClose}
+      role="dialog"
+      aria-modal="true"
+    >
+      <button
+        type="button"
+        onClick={onClose}
+        className="absolute top-4 right-4 sm:top-6 sm:right-6 text-white/90 hover:text-white text-3xl leading-none font-light w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 transition"
+        aria-label="Close image preview"
+      >
+        ×
+      </button>
+
+      <div
+        className="relative transition-transform duration-300 animate-in zoom-in-95"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <Image
+          src={imageUrl}
+          alt="Fullscreen question preview"
+          width={1920}
+          height={1080}
+          className="object-contain w-auto h-auto max-w-[90vw] max-h-[90vh] rounded-xl"
+          priority
+        />
+      </div>
+    </div>
+  );
+};
+
 // --- MAIN PAGE COMPONENT ---
 export default function QuizPage() {
   const params = useParams();
@@ -181,6 +238,7 @@ export default function QuizPage() {
   const [error, setError] = useState('');
 
   const [audioSrc, setAudioSrc] = useState<string | null>(null);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   // ✅ NEW: Exam / Practice mode
   const [mode, setMode] = useState<Mode>('exam'); // default: exam
@@ -370,6 +428,24 @@ export default function QuizPage() {
   const handleAnswerChange = useCallback((qId: string, val: string) => {
     setAnswers(prev => ({ ...prev, [qId]: val }));
   }, []);
+
+  useEffect(() => {
+    if (!selectedImage) return;
+
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+
+    const handleEsc = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setSelectedImage(null);
+    };
+
+    window.addEventListener('keydown', handleEsc);
+
+    return () => {
+      window.removeEventListener('keydown', handleEsc);
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [selectedImage]);
 
   const handleSubmit = () => {
     let correctCount = 0;
@@ -638,6 +714,7 @@ export default function QuizPage() {
             idx={idx}
             answer={answers[q.id] || ''}
             onAnswer={handleAnswerChange}
+            onImageClick={setSelectedImage}
             labels={labels}
           />
         ))}
@@ -651,6 +728,8 @@ export default function QuizPage() {
           </button>
         </div>
       </div>
+
+      <ImageFullscreenModal imageUrl={selectedImage} onClose={() => setSelectedImage(null)} />
     </div>
   );
 }
