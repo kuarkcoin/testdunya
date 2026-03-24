@@ -1,147 +1,147 @@
 {
   "slug": "test-1",
   "title": "Zeka Bulmacası 1",
-  "description": "Detective and visual logic puzzles",
+  "description": "Who is the killer?",
   "questions": [
     {
       "id": "zeka-1-q1",
       "imageUrl": "/images/zeka/test1/q1.webp",
       "question": "Who is the killer?",
       "options": [
-        "The teacher",
-        "The shopkeeper",
-        "The courier",
-        "The tourist",
-        "The mechanic"
+        "The chef",
+        "The delivery man",
+        "The man in blue gloves",
+        "The waiter",
+        "The old woman"
       ],
-      "correct": 4,
-      "explanation": "The mechanic is correct because only one person has access to the locked room."
+      "correct": 2,
+      "explanation": "The man in blue gloves is the killer because he has blood on his glove and is hiding a suspicious bottle behind his back."
     },
     {
       "id": "zeka-1-q2",
       "imageUrl": "/images/zeka/test1/q2.webp",
       "question": "Who is the killer?",
       "options": [
-        "Left table",
-        "Middle table",
-        "Right table",
-        "Door area",
-        "Reception desk"
+        "The maid",
+        "The businessman",
+        "The bellboy",
+        "The tourist",
+        "The police officer"
       ],
-      "correct": 0,
-      "explanation": "Left table is correct because the phone timestamp proves the sequence of events."
+      "correct": 2,
+      "explanation": "The bellboy is the killer because there is a blood stain on his uniform, which matches the crime scene clue."
     },
     {
       "id": "zeka-1-q3",
       "imageUrl": "/images/zeka/test1/q3.webp",
       "question": "Who is the killer?",
       "options": [
-        "Broken clock",
-        "Wet umbrella",
-        "Fresh footprints",
-        "Open drawer",
-        "Coffee cup"
+        "The chef",
+        "The manager",
+        "The waiter",
+        "The customer",
+        "The cleaner"
       ],
-      "correct": 1,
-      "explanation": "Wet umbrella is correct because the broken glass direction exposes a staged scene."
+      "correct": 2,
+      "explanation": "The waiter is the killer because his hand is bleeding and the broken glass on his tray suggests he was directly involved."
     },
     {
       "id": "zeka-1-q4",
       "imageUrl": "/images/zeka/test1/q4.webp",
       "question": "Who is the killer?",
       "options": [
-        "The banker",
-        "The nurse",
-        "The student",
-        "The artist",
-        "The firefighter"
+        "The police officer",
+        "The jogger",
+        "The gardener",
+        "The woman with the dog",
+        "The old man"
       ],
       "correct": 2,
-      "explanation": "The student is correct because the security camera angle captures the decisive clue."
+      "explanation": "The gardener is the killer because he is holding a shovel with a suspicious red stain on it."
     },
     {
       "id": "zeka-1-q5",
       "imageUrl": "/images/zeka/test1/q5.webp",
       "question": "Who is the killer?",
       "options": [
-        "The chef",
+        "The nurse",
         "The doctor",
-        "The driver",
-        "The old woman",
-        "The gardener"
+        "The patient in the wheelchair",
+        "The cleaner",
+        "The visitor"
       ],
-      "correct": 3,
-      "explanation": "The old woman is correct because the reflection in the mirror reveals the hidden item."
+      "correct": 0,
+      "explanation": "The nurse is the killer because she is holding a syringe, which is the key clue in the hospital corridor."
     },
     {
       "id": "zeka-1-q6",
       "imageUrl": "/images/zeka/test1/q6.webp",
       "question": "Who is the killer?",
       "options": [
-        "The woman in red",
-        "The man with the hat",
-        "The waiter",
-        "The old man",
-        "The police officer"
+        "The man with the tablet",
+        "The crying woman",
+        "The blonde girl",
+        "The older man",
+        "The repairman"
       ],
       "correct": 4,
-      "explanation": "The police officer is correct because only one person has access to the locked room."
+      "explanation": "The repairman is the killer because he has blood on his arm and is next to an open toolbox containing sharp tools."
     },
     {
       "id": "zeka-1-q7",
       "imageUrl": "/images/zeka/test1/q7.webp",
       "question": "Who is the killer?",
       "options": [
-        "The teacher",
-        "The shopkeeper",
-        "The courier",
+        "The businessman",
+        "The student",
+        "The snack vendor",
         "The tourist",
-        "The mechanic"
+        "The conductor"
       ],
-      "correct": 0,
-      "explanation": "The teacher is correct because the phone timestamp proves the sequence of events."
+      "correct": 4,
+      "explanation": "The conductor is the killer because he is hiding a bloody wrench behind his back."
     },
     {
       "id": "zeka-1-q8",
       "imageUrl": "/images/zeka/test1/q8.webp",
       "question": "Who is the killer?",
       "options": [
-        "Left table",
-        "Middle table",
-        "Right table",
-        "Door area",
-        "Reception desk"
+        "The lifeguard",
+        "The diver",
+        "The tourist",
+        "The snack vendor",
+        "The fisherman"
       ],
-      "correct": 1,
-      "explanation": "Middle table is correct because the broken glass direction exposes a staged scene."
+      "correct": 4,
+      "explanation": "The fisherman is the killer because he is holding a knife with blood on it."
     },
     {
       "id": "zeka-1-q9",
       "imageUrl": "/images/zeka/test1/q9.webp",
       "question": "Who is the killer?",
       "options": [
-        "Broken clock",
-        "Wet umbrella",
-        "Fresh footprints",
-        "Open drawer",
-        "Coffee cup"
+        "The manager",
+        "The employee",
+        "The cleaner",
+        "The security officer",
+        "The guest"
       ],
-      "correct": 2,
-      "explanation": "Fresh footprints is correct because the security camera angle captures the decisive clue."
+      "correct": 1,
+      "explanation": "The employee is the killer because there is blood on his shirt, linking him directly to the victim and the weapon on the desk."
     },
     {
       "id": "zeka-1-q10",
       "imageUrl": "/images/zeka/test1/q10.webp",
       "question": "Who is the killer?",
       "options": [
-        "The banker",
-        "The nurse",
-        "The student",
-        "The artist",
-        "The firefighter"
+        "The homeless man",
+        "The courier",
+        "The police officer",
+        "The cyclist",
+        "The shop owner"
       ],
-      "correct": 3,
-      "explanation": "The artist is correct because the reflection in the mirror reveals the hidden item."
+      "correct": 1,
+      "explanation": "The courier is the killer because the box he is carrying has fresh blood on it."
     }
   ]
 }
