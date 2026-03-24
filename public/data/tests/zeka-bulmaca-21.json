@@ -1,142 +1,147 @@
-[
-  {
-    "id": "zeka-21-soru-1",
-    "imageUrl": "/images/zeka/test21/q1.webp",
-    "question": "Who is the killer?",
-    "options": [
-      "Blue car owner",
-      "Green bike owner",
-      "Taxi driver",
-      "Security guard",
-      "Delivery worker"
-    ],
-    "correct": 3,
-    "explanation": "Security guard is correct because the spilled paint is on the wrong hand."
-  },
-  {
-    "id": "zeka-21-soru-2",
-    "imageUrl": "/images/zeka/test21/q2.webp",
-    "question": "Who is the killer?",
-    "options": [
-      "Broken clock",
-      "Wet umbrella",
-      "Fresh footprints",
-      "Open drawer",
-      "Coffee cup"
-    ],
-    "correct": 0,
-    "explanation": "Broken clock is correct because the phone photo timestamp proves the sequence."
-  },
-  {
-    "id": "zeka-21-soru-3",
-    "imageUrl": "/images/zeka/test21/q3.webp",
-    "question": "Who is the killer?",
-    "options": [
-      "Person A",
-      "Person B",
-      "Person C",
-      "Person D",
-      "Person E"
-    ],
-    "correct": 2,
-    "explanation": "Person C is correct because the keycard log shows a single entry."
-  },
-  {
-    "id": "zeka-21-soru-4",
-    "imageUrl": "/images/zeka/test21/q4.webp",
-    "question": "Who is the killer?",
-    "options": [
-      "The woman in red",
-      "The man with the hat",
-      "The waiter",
-      "The old man",
-      "The police officer"
-    ],
-    "correct": 4,
-    "explanation": "The police officer is correct because the broken glass is outside, not inside."
-  },
-  {
-    "id": "zeka-21-soru-5",
-    "imageUrl": "/images/zeka/test21/q5.webp",
-    "question": "Who is the killer?",
-    "options": [
-      "Suspect near the window",
-      "Suspect with gloves",
-      "Suspect with muddy shoes",
-      "Suspect with backpack",
-      "Suspect with umbrella"
-    ],
-    "correct": 1,
-    "explanation": "Suspect with gloves is correct because the coffee steam shows the cup was just placed."
-  },
-  {
-    "id": "zeka-21-soru-6",
-    "imageUrl": "/images/zeka/test21/q6.webp",
-    "question": "Who is the killer?",
-    "options": [
-      "Left table",
-      "Middle table",
-      "Right table",
-      "Door area",
-      "Reception desk"
-    ],
-    "correct": 3,
-    "explanation": "Door area is correct because the security camera angle captures the real action."
-  },
-  {
-    "id": "zeka-21-soru-7",
-    "imageUrl": "/images/zeka/test21/q7.webp",
-    "question": "Who is the killer?",
-    "options": [
-      "Blue car owner",
-      "Green bike owner",
-      "Taxi driver",
-      "Security guard",
-      "Delivery worker"
-    ],
-    "correct": 0,
-    "explanation": "Blue car owner is correct because their timeline does not match the wall clock."
-  },
-  {
-    "id": "zeka-21-soru-8",
-    "imageUrl": "/images/zeka/test21/q8.webp",
-    "question": "Who is the killer?",
-    "options": [
-      "Broken clock",
-      "Wet umbrella",
-      "Fresh footprints",
-      "Open drawer",
-      "Coffee cup"
-    ],
-    "correct": 2,
-    "explanation": "Fresh footprints is correct because the reflection in the mirror reveals the hidden item."
-  },
-  {
-    "id": "zeka-21-soru-9",
-    "imageUrl": "/images/zeka/test21/q9.webp",
-    "question": "Who is the killer?",
-    "options": [
-      "Person A",
-      "Person B",
-      "Person C",
-      "Person D",
-      "Person E"
-    ],
-    "correct": 4,
-    "explanation": "Person E is correct because the shoe prints match only one suspect."
-  },
-  {
-    "id": "zeka-21-soru-10",
-    "imageUrl": "/images/zeka/test21/q10.webp",
-    "question": "Who is the killer?",
-    "options": [
-      "The woman in red",
-      "The man with the hat",
-      "The waiter",
-      "The old man",
-      "The police officer"
-    ],
-    "correct": 1,
-    "explanation": "The man with the hat is correct because only one person has access to the locked room."
-  }
-]
+{
+  "slug": "test-21",
+  "title": "Zeka Bulmacası 21",
+  "description": "Detective and visual logic puzzles",
+  "questions": [
+    {
+      "id": "zeka-21-q1",
+      "imageUrl": "/images/zeka/test21/q1.webp",
+      "question": "Who is the killer?",
+      "options": [
+        "Broken clock",
+        "Wet umbrella",
+        "Fresh footprints",
+        "Open drawer",
+        "Coffee cup"
+      ],
+      "correct": 4,
+      "explanation": "Coffee cup is correct because only one person has access to the locked room."
+    },
+    {
+      "id": "zeka-21-q2",
+      "imageUrl": "/images/zeka/test21/q2.webp",
+      "question": "Who is the killer?",
+      "options": [
+        "The banker",
+        "The nurse",
+        "The student",
+        "The artist",
+        "The firefighter"
+      ],
+      "correct": 0,
+      "explanation": "The banker is correct because the phone timestamp proves the sequence of events."
+    },
+    {
+      "id": "zeka-21-q3",
+      "imageUrl": "/images/zeka/test21/q3.webp",
+      "question": "Who is the killer?",
+      "options": [
+        "The chef",
+        "The doctor",
+        "The driver",
+        "The old woman",
+        "The gardener"
+      ],
+      "correct": 1,
+      "explanation": "The doctor is correct because the broken glass direction exposes a staged scene."
+    },
+    {
+      "id": "zeka-21-q4",
+      "imageUrl": "/images/zeka/test21/q4.webp",
+      "question": "Who is the killer?",
+      "options": [
+        "The woman in red",
+        "The man with the hat",
+        "The waiter",
+        "The old man",
+        "The police officer"
+      ],
+      "correct": 2,
+      "explanation": "The waiter is correct because the security camera angle captures the decisive clue."
+    },
+    {
+      "id": "zeka-21-q5",
+      "imageUrl": "/images/zeka/test21/q5.webp",
+      "question": "Who is the killer?",
+      "options": [
+        "The teacher",
+        "The shopkeeper",
+        "The courier",
+        "The tourist",
+        "The mechanic"
+      ],
+      "correct": 3,
+      "explanation": "The tourist is correct because the reflection in the mirror reveals the hidden item."
+    },
+    {
+      "id": "zeka-21-q6",
+      "imageUrl": "/images/zeka/test21/q6.webp",
+      "question": "Who is the killer?",
+      "options": [
+        "Left table",
+        "Middle table",
+        "Right table",
+        "Door area",
+        "Reception desk"
+      ],
+      "correct": 4,
+      "explanation": "Reception desk is correct because only one person has access to the locked room."
+    },
+    {
+      "id": "zeka-21-q7",
+      "imageUrl": "/images/zeka/test21/q7.webp",
+      "question": "Who is the killer?",
+      "options": [
+        "Broken clock",
+        "Wet umbrella",
+        "Fresh footprints",
+        "Open drawer",
+        "Coffee cup"
+      ],
+      "correct": 0,
+      "explanation": "Broken clock is correct because the phone timestamp proves the sequence of events."
+    },
+    {
+      "id": "zeka-21-q8",
+      "imageUrl": "/images/zeka/test21/q8.webp",
+      "question": "Who is the killer?",
+      "options": [
+        "The banker",
+        "The nurse",
+        "The student",
+        "The artist",
+        "The firefighter"
+      ],
+      "correct": 1,
+      "explanation": "The nurse is correct because the broken glass direction exposes a staged scene."
+    },
+    {
+      "id": "zeka-21-q9",
+      "imageUrl": "/images/zeka/test21/q9.webp",
+      "question": "Who is the killer?",
+      "options": [
+        "The chef",
+        "The doctor",
+        "The driver",
+        "The old woman",
+        "The gardener"
+      ],
+      "correct": 2,
+      "explanation": "The driver is correct because the security camera angle captures the decisive clue."
+    },
+    {
+      "id": "zeka-21-q10",
+      "imageUrl": "/images/zeka/test21/q10.webp",
+      "question": "Who is the killer?",
+      "options": [
+        "The woman in red",
+        "The man with the hat",
+        "The waiter",
+        "The old man",
+        "The police officer"
+      ],
+      "correct": 3,
+      "explanation": "The old man is correct because the reflection in the mirror reveals the hidden item."
+    }
+  ]
+}

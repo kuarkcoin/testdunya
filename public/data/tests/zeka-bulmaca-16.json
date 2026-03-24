@@ -1,142 +1,147 @@
-[
-  {
-    "id": "zeka-16-soru-1",
-    "imageUrl": "/images/zeka/test16/q1.webp",
-    "question": "Which suspect is innocent?",
-    "options": [
-      "Broken clock",
-      "Wet umbrella",
-      "Fresh footprints",
-      "Open drawer",
-      "Coffee cup"
-    ],
-    "correct": 3,
-    "explanation": "Open drawer is correct because the security camera angle captures the real action."
-  },
-  {
-    "id": "zeka-16-soru-2",
-    "imageUrl": "/images/zeka/test16/q2.webp",
-    "question": "Which suspect is innocent?",
-    "options": [
-      "Person A",
-      "Person B",
-      "Person C",
-      "Person D",
-      "Person E"
-    ],
-    "correct": 0,
-    "explanation": "Person A is correct because their timeline does not match the wall clock."
-  },
-  {
-    "id": "zeka-16-soru-3",
-    "imageUrl": "/images/zeka/test16/q3.webp",
-    "question": "Which suspect is innocent?",
-    "options": [
-      "The woman in red",
-      "The man with the hat",
-      "The waiter",
-      "The old man",
-      "The police officer"
-    ],
-    "correct": 2,
-    "explanation": "The waiter is correct because the reflection in the mirror reveals the hidden item."
-  },
-  {
-    "id": "zeka-16-soru-4",
-    "imageUrl": "/images/zeka/test16/q4.webp",
-    "question": "Which suspect is innocent?",
-    "options": [
-      "Suspect near the window",
-      "Suspect with gloves",
-      "Suspect with muddy shoes",
-      "Suspect with backpack",
-      "Suspect with umbrella"
-    ],
-    "correct": 4,
-    "explanation": "Suspect with umbrella is correct because the shoe prints match only one suspect."
-  },
-  {
-    "id": "zeka-16-soru-5",
-    "imageUrl": "/images/zeka/test16/q5.webp",
-    "question": "Which suspect is innocent?",
-    "options": [
-      "Left table",
-      "Middle table",
-      "Right table",
-      "Door area",
-      "Reception desk"
-    ],
-    "correct": 1,
-    "explanation": "Middle table is correct because only one person has access to the locked room."
-  },
-  {
-    "id": "zeka-16-soru-6",
-    "imageUrl": "/images/zeka/test16/q6.webp",
-    "question": "Which suspect is innocent?",
-    "options": [
-      "Blue car owner",
-      "Green bike owner",
-      "Taxi driver",
-      "Security guard",
-      "Delivery worker"
-    ],
-    "correct": 3,
-    "explanation": "Security guard is correct because the spilled paint is on the wrong hand."
-  },
-  {
-    "id": "zeka-16-soru-7",
-    "imageUrl": "/images/zeka/test16/q7.webp",
-    "question": "Which suspect is innocent?",
-    "options": [
-      "Broken clock",
-      "Wet umbrella",
-      "Fresh footprints",
-      "Open drawer",
-      "Coffee cup"
-    ],
-    "correct": 0,
-    "explanation": "Broken clock is correct because the phone photo timestamp proves the sequence."
-  },
-  {
-    "id": "zeka-16-soru-8",
-    "imageUrl": "/images/zeka/test16/q8.webp",
-    "question": "Which suspect is innocent?",
-    "options": [
-      "Person A",
-      "Person B",
-      "Person C",
-      "Person D",
-      "Person E"
-    ],
-    "correct": 2,
-    "explanation": "Person C is correct because the keycard log shows a single entry."
-  },
-  {
-    "id": "zeka-16-soru-9",
-    "imageUrl": "/images/zeka/test16/q9.webp",
-    "question": "Which suspect is innocent?",
-    "options": [
-      "The woman in red",
-      "The man with the hat",
-      "The waiter",
-      "The old man",
-      "The police officer"
-    ],
-    "correct": 4,
-    "explanation": "The police officer is correct because the broken glass is outside, not inside."
-  },
-  {
-    "id": "zeka-16-soru-10",
-    "imageUrl": "/images/zeka/test16/q10.webp",
-    "question": "Which suspect is innocent?",
-    "options": [
-      "Suspect near the window",
-      "Suspect with gloves",
-      "Suspect with muddy shoes",
-      "Suspect with backpack",
-      "Suspect with umbrella"
-    ],
-    "correct": 1,
-    "explanation": "Suspect with gloves is correct because the coffee steam shows the cup was just placed."
-  }
-]
+{
+  "slug": "test-16",
+  "title": "Zeka Bulmacası 16",
+  "description": "Detective and visual logic puzzles",
+  "questions": [
+    {
+      "id": "zeka-16-q1",
+      "imageUrl": "/images/zeka/test16/q1.webp",
+      "question": "Which suspect is innocent?",
+      "options": [
+        "The banker",
+        "The nurse",
+        "The student",
+        "The artist",
+        "The firefighter"
+      ],
+      "correct": 4,
+      "explanation": "The firefighter is correct because the cup is still hot, proving recent movement."
+    },
+    {
+      "id": "zeka-16-q2",
+      "imageUrl": "/images/zeka/test16/q2.webp",
+      "question": "Which suspect is innocent?",
+      "options": [
+        "The chef",
+        "The doctor",
+        "The driver",
+        "The old woman",
+        "The gardener"
+      ],
+      "correct": 0,
+      "explanation": "The chef is correct because their timeline does not match the wall clock."
+    },
+    {
+      "id": "zeka-16-q3",
+      "imageUrl": "/images/zeka/test16/q3.webp",
+      "question": "Which suspect is innocent?",
+      "options": [
+        "The woman in red",
+        "The man with the hat",
+        "The waiter",
+        "The old man",
+        "The police officer"
+      ],
+      "correct": 1,
+      "explanation": "The man with the hat is correct because the shoe prints match only one suspect."
+    },
+    {
+      "id": "zeka-16-q4",
+      "imageUrl": "/images/zeka/test16/q4.webp",
+      "question": "Which suspect is innocent?",
+      "options": [
+        "The teacher",
+        "The shopkeeper",
+        "The courier",
+        "The tourist",
+        "The mechanic"
+      ],
+      "correct": 2,
+      "explanation": "The courier is correct because the spilled paint is on the wrong hand."
+    },
+    {
+      "id": "zeka-16-q5",
+      "imageUrl": "/images/zeka/test16/q5.webp",
+      "question": "Which suspect is innocent?",
+      "options": [
+        "Left table",
+        "Middle table",
+        "Right table",
+        "Door area",
+        "Reception desk"
+      ],
+      "correct": 3,
+      "explanation": "Door area is correct because the keycard log shows a single entry at the critical time."
+    },
+    {
+      "id": "zeka-16-q6",
+      "imageUrl": "/images/zeka/test16/q6.webp",
+      "question": "Which suspect is innocent?",
+      "options": [
+        "Broken clock",
+        "Wet umbrella",
+        "Fresh footprints",
+        "Open drawer",
+        "Coffee cup"
+      ],
+      "correct": 4,
+      "explanation": "Coffee cup is correct because the cup is still hot, proving recent movement."
+    },
+    {
+      "id": "zeka-16-q7",
+      "imageUrl": "/images/zeka/test16/q7.webp",
+      "question": "Which suspect is innocent?",
+      "options": [
+        "The banker",
+        "The nurse",
+        "The student",
+        "The artist",
+        "The firefighter"
+      ],
+      "correct": 0,
+      "explanation": "The banker is correct because their timeline does not match the wall clock."
+    },
+    {
+      "id": "zeka-16-q8",
+      "imageUrl": "/images/zeka/test16/q8.webp",
+      "question": "Which suspect is innocent?",
+      "options": [
+        "The chef",
+        "The doctor",
+        "The driver",
+        "The old woman",
+        "The gardener"
+      ],
+      "correct": 1,
+      "explanation": "The doctor is correct because the shoe prints match only one suspect."
+    },
+    {
+      "id": "zeka-16-q9",
+      "imageUrl": "/images/zeka/test16/q9.webp",
+      "question": "Which suspect is innocent?",
+      "options": [
+        "The woman in red",
+        "The man with the hat",
+        "The waiter",
+        "The old man",
+        "The police officer"
+      ],
+      "correct": 2,
+      "explanation": "The waiter is correct because the spilled paint is on the wrong hand."
+    },
+    {
+      "id": "zeka-16-q10",
+      "imageUrl": "/images/zeka/test16/q10.webp",
+      "question": "Which suspect is innocent?",
+      "options": [
+        "The teacher",
+        "The shopkeeper",
+        "The courier",
+        "The tourist",
+        "The mechanic"
+      ],
+      "correct": 3,
+      "explanation": "The tourist is correct because the keycard log shows a single entry at the critical time."
+    }
+  ]
+}

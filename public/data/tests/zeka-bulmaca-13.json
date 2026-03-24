@@ -1,142 +1,147 @@
-[
-  {
-    "id": "zeka-13-soru-1",
-    "imageUrl": "/images/zeka/test13/q1.webp",
-    "question": "Who is lying?",
-    "options": [
-      "Suspect near the window",
-      "Suspect with gloves",
-      "Suspect with muddy shoes",
-      "Suspect with backpack",
-      "Suspect with umbrella"
-    ],
-    "correct": 0,
-    "explanation": "Suspect near the window is correct because their timeline does not match the wall clock."
-  },
-  {
-    "id": "zeka-13-soru-2",
-    "imageUrl": "/images/zeka/test13/q2.webp",
-    "question": "Who is lying?",
-    "options": [
-      "Left table",
-      "Middle table",
-      "Right table",
-      "Door area",
-      "Reception desk"
-    ],
-    "correct": 2,
-    "explanation": "Right table is correct because the reflection in the mirror reveals the hidden item."
-  },
-  {
-    "id": "zeka-13-soru-3",
-    "imageUrl": "/images/zeka/test13/q3.webp",
-    "question": "Who is lying?",
-    "options": [
-      "Blue car owner",
-      "Green bike owner",
-      "Taxi driver",
-      "Security guard",
-      "Delivery worker"
-    ],
-    "correct": 4,
-    "explanation": "Delivery worker is correct because the shoe prints match only one suspect."
-  },
-  {
-    "id": "zeka-13-soru-4",
-    "imageUrl": "/images/zeka/test13/q4.webp",
-    "question": "Who is lying?",
-    "options": [
-      "Broken clock",
-      "Wet umbrella",
-      "Fresh footprints",
-      "Open drawer",
-      "Coffee cup"
-    ],
-    "correct": 1,
-    "explanation": "Wet umbrella is correct because only one person has access to the locked room."
-  },
-  {
-    "id": "zeka-13-soru-5",
-    "imageUrl": "/images/zeka/test13/q5.webp",
-    "question": "Who is lying?",
-    "options": [
-      "Person A",
-      "Person B",
-      "Person C",
-      "Person D",
-      "Person E"
-    ],
-    "correct": 3,
-    "explanation": "Person D is correct because the spilled paint is on the wrong hand."
-  },
-  {
-    "id": "zeka-13-soru-6",
-    "imageUrl": "/images/zeka/test13/q6.webp",
-    "question": "Who is lying?",
-    "options": [
-      "The woman in red",
-      "The man with the hat",
-      "The waiter",
-      "The old man",
-      "The police officer"
-    ],
-    "correct": 0,
-    "explanation": "The woman in red is correct because the phone photo timestamp proves the sequence."
-  },
-  {
-    "id": "zeka-13-soru-7",
-    "imageUrl": "/images/zeka/test13/q7.webp",
-    "question": "Who is lying?",
-    "options": [
-      "Suspect near the window",
-      "Suspect with gloves",
-      "Suspect with muddy shoes",
-      "Suspect with backpack",
-      "Suspect with umbrella"
-    ],
-    "correct": 2,
-    "explanation": "Suspect with muddy shoes is correct because the keycard log shows a single entry."
-  },
-  {
-    "id": "zeka-13-soru-8",
-    "imageUrl": "/images/zeka/test13/q8.webp",
-    "question": "Who is lying?",
-    "options": [
-      "Left table",
-      "Middle table",
-      "Right table",
-      "Door area",
-      "Reception desk"
-    ],
-    "correct": 4,
-    "explanation": "Reception desk is correct because the broken glass is outside, not inside."
-  },
-  {
-    "id": "zeka-13-soru-9",
-    "imageUrl": "/images/zeka/test13/q9.webp",
-    "question": "Who is lying?",
-    "options": [
-      "Blue car owner",
-      "Green bike owner",
-      "Taxi driver",
-      "Security guard",
-      "Delivery worker"
-    ],
-    "correct": 1,
-    "explanation": "Green bike owner is correct because the coffee steam shows the cup was just placed."
-  },
-  {
-    "id": "zeka-13-soru-10",
-    "imageUrl": "/images/zeka/test13/q10.webp",
-    "question": "Who is lying?",
-    "options": [
-      "Broken clock",
-      "Wet umbrella",
-      "Fresh footprints",
-      "Open drawer",
-      "Coffee cup"
-    ],
-    "correct": 3,
-    "explanation": "Open drawer is correct because the security camera angle captures the real action."
-  }
-]
+{
+  "slug": "test-13",
+  "title": "Zeka Bulmacası 13",
+  "description": "Detective and visual logic puzzles",
+  "questions": [
+    {
+      "id": "zeka-13-q1",
+      "imageUrl": "/images/zeka/test13/q1.webp",
+      "question": "Who is lying?",
+      "options": [
+        "The teacher",
+        "The shopkeeper",
+        "The courier",
+        "The tourist",
+        "The mechanic"
+      ],
+      "correct": 0,
+      "explanation": "The teacher is correct because the phone timestamp proves the sequence of events."
+    },
+    {
+      "id": "zeka-13-q2",
+      "imageUrl": "/images/zeka/test13/q2.webp",
+      "question": "Who is lying?",
+      "options": [
+        "Left table",
+        "Middle table",
+        "Right table",
+        "Door area",
+        "Reception desk"
+      ],
+      "correct": 1,
+      "explanation": "Middle table is correct because the broken glass direction exposes a staged scene."
+    },
+    {
+      "id": "zeka-13-q3",
+      "imageUrl": "/images/zeka/test13/q3.webp",
+      "question": "Who is lying?",
+      "options": [
+        "Broken clock",
+        "Wet umbrella",
+        "Fresh footprints",
+        "Open drawer",
+        "Coffee cup"
+      ],
+      "correct": 2,
+      "explanation": "Fresh footprints is correct because the security camera angle captures the decisive clue."
+    },
+    {
+      "id": "zeka-13-q4",
+      "imageUrl": "/images/zeka/test13/q4.webp",
+      "question": "Who is lying?",
+      "options": [
+        "The banker",
+        "The nurse",
+        "The student",
+        "The artist",
+        "The firefighter"
+      ],
+      "correct": 3,
+      "explanation": "The artist is correct because the reflection in the mirror reveals the hidden item."
+    },
+    {
+      "id": "zeka-13-q5",
+      "imageUrl": "/images/zeka/test13/q5.webp",
+      "question": "Who is lying?",
+      "options": [
+        "The chef",
+        "The doctor",
+        "The driver",
+        "The old woman",
+        "The gardener"
+      ],
+      "correct": 4,
+      "explanation": "The gardener is correct because only one person has access to the locked room."
+    },
+    {
+      "id": "zeka-13-q6",
+      "imageUrl": "/images/zeka/test13/q6.webp",
+      "question": "Who is lying?",
+      "options": [
+        "The woman in red",
+        "The man with the hat",
+        "The waiter",
+        "The old man",
+        "The police officer"
+      ],
+      "correct": 0,
+      "explanation": "The woman in red is correct because the phone timestamp proves the sequence of events."
+    },
+    {
+      "id": "zeka-13-q7",
+      "imageUrl": "/images/zeka/test13/q7.webp",
+      "question": "Who is lying?",
+      "options": [
+        "The teacher",
+        "The shopkeeper",
+        "The courier",
+        "The tourist",
+        "The mechanic"
+      ],
+      "correct": 1,
+      "explanation": "The shopkeeper is correct because the broken glass direction exposes a staged scene."
+    },
+    {
+      "id": "zeka-13-q8",
+      "imageUrl": "/images/zeka/test13/q8.webp",
+      "question": "Who is lying?",
+      "options": [
+        "Left table",
+        "Middle table",
+        "Right table",
+        "Door area",
+        "Reception desk"
+      ],
+      "correct": 2,
+      "explanation": "Right table is correct because the security camera angle captures the decisive clue."
+    },
+    {
+      "id": "zeka-13-q9",
+      "imageUrl": "/images/zeka/test13/q9.webp",
+      "question": "Who is lying?",
+      "options": [
+        "Broken clock",
+        "Wet umbrella",
+        "Fresh footprints",
+        "Open drawer",
+        "Coffee cup"
+      ],
+      "correct": 3,
+      "explanation": "Open drawer is correct because the reflection in the mirror reveals the hidden item."
+    },
+    {
+      "id": "zeka-13-q10",
+      "imageUrl": "/images/zeka/test13/q10.webp",
+      "question": "Who is lying?",
+      "options": [
+        "The banker",
+        "The nurse",
+        "The student",
+        "The artist",
+        "The firefighter"
+      ],
+      "correct": 4,
+      "explanation": "The firefighter is correct because only one person has access to the locked room."
+    }
+  ]
+}

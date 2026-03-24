@@ -1,142 +1,147 @@
-[
-  {
-    "id": "zeka-38-soru-1",
-    "imageUrl": "/images/zeka/test38/q1.webp",
-    "question": "Who owns the object?",
-    "options": [
-      "Left table",
-      "Middle table",
-      "Right table",
-      "Door area",
-      "Reception desk"
-    ],
-    "correct": 0,
-    "explanation": "Left table is correct because the phone photo timestamp proves the sequence."
-  },
-  {
-    "id": "zeka-38-soru-2",
-    "imageUrl": "/images/zeka/test38/q2.webp",
-    "question": "Who owns the object?",
-    "options": [
-      "Blue car owner",
-      "Green bike owner",
-      "Taxi driver",
-      "Security guard",
-      "Delivery worker"
-    ],
-    "correct": 2,
-    "explanation": "Taxi driver is correct because the keycard log shows a single entry."
-  },
-  {
-    "id": "zeka-38-soru-3",
-    "imageUrl": "/images/zeka/test38/q3.webp",
-    "question": "Who owns the object?",
-    "options": [
-      "Broken clock",
-      "Wet umbrella",
-      "Fresh footprints",
-      "Open drawer",
-      "Coffee cup"
-    ],
-    "correct": 4,
-    "explanation": "Coffee cup is correct because the broken glass is outside, not inside."
-  },
-  {
-    "id": "zeka-38-soru-4",
-    "imageUrl": "/images/zeka/test38/q4.webp",
-    "question": "Who owns the object?",
-    "options": [
-      "Person A",
-      "Person B",
-      "Person C",
-      "Person D",
-      "Person E"
-    ],
-    "correct": 1,
-    "explanation": "Person B is correct because the coffee steam shows the cup was just placed."
-  },
-  {
-    "id": "zeka-38-soru-5",
-    "imageUrl": "/images/zeka/test38/q5.webp",
-    "question": "Who owns the object?",
-    "options": [
-      "The woman in red",
-      "The man with the hat",
-      "The waiter",
-      "The old man",
-      "The police officer"
-    ],
-    "correct": 3,
-    "explanation": "The old man is correct because the security camera angle captures the real action."
-  },
-  {
-    "id": "zeka-38-soru-6",
-    "imageUrl": "/images/zeka/test38/q6.webp",
-    "question": "Who owns the object?",
-    "options": [
-      "Suspect near the window",
-      "Suspect with gloves",
-      "Suspect with muddy shoes",
-      "Suspect with backpack",
-      "Suspect with umbrella"
-    ],
-    "correct": 0,
-    "explanation": "Suspect near the window is correct because their timeline does not match the wall clock."
-  },
-  {
-    "id": "zeka-38-soru-7",
-    "imageUrl": "/images/zeka/test38/q7.webp",
-    "question": "Who owns the object?",
-    "options": [
-      "Left table",
-      "Middle table",
-      "Right table",
-      "Door area",
-      "Reception desk"
-    ],
-    "correct": 2,
-    "explanation": "Right table is correct because the reflection in the mirror reveals the hidden item."
-  },
-  {
-    "id": "zeka-38-soru-8",
-    "imageUrl": "/images/zeka/test38/q8.webp",
-    "question": "Who owns the object?",
-    "options": [
-      "Blue car owner",
-      "Green bike owner",
-      "Taxi driver",
-      "Security guard",
-      "Delivery worker"
-    ],
-    "correct": 4,
-    "explanation": "Delivery worker is correct because the shoe prints match only one suspect."
-  },
-  {
-    "id": "zeka-38-soru-9",
-    "imageUrl": "/images/zeka/test38/q9.webp",
-    "question": "Who owns the object?",
-    "options": [
-      "Broken clock",
-      "Wet umbrella",
-      "Fresh footprints",
-      "Open drawer",
-      "Coffee cup"
-    ],
-    "correct": 1,
-    "explanation": "Wet umbrella is correct because only one person has access to the locked room."
-  },
-  {
-    "id": "zeka-38-soru-10",
-    "imageUrl": "/images/zeka/test38/q10.webp",
-    "question": "Who owns the object?",
-    "options": [
-      "Person A",
-      "Person B",
-      "Person C",
-      "Person D",
-      "Person E"
-    ],
-    "correct": 3,
-    "explanation": "Person D is correct because the spilled paint is on the wrong hand."
-  }
-]
+{
+  "slug": "test-38",
+  "title": "Zeka Bulmacası 38",
+  "description": "Detective and visual logic puzzles",
+  "questions": [
+    {
+      "id": "zeka-38-q1",
+      "imageUrl": "/images/zeka/test38/q1.webp",
+      "question": "Who owns the object?",
+      "options": [
+        "Left table",
+        "Middle table",
+        "Right table",
+        "Door area",
+        "Reception desk"
+      ],
+      "correct": 0,
+      "explanation": "Left table is correct because their timeline does not match the wall clock."
+    },
+    {
+      "id": "zeka-38-q2",
+      "imageUrl": "/images/zeka/test38/q2.webp",
+      "question": "Who owns the object?",
+      "options": [
+        "Broken clock",
+        "Wet umbrella",
+        "Fresh footprints",
+        "Open drawer",
+        "Coffee cup"
+      ],
+      "correct": 1,
+      "explanation": "Wet umbrella is correct because the shoe prints match only one suspect."
+    },
+    {
+      "id": "zeka-38-q3",
+      "imageUrl": "/images/zeka/test38/q3.webp",
+      "question": "Who owns the object?",
+      "options": [
+        "The banker",
+        "The nurse",
+        "The student",
+        "The artist",
+        "The firefighter"
+      ],
+      "correct": 2,
+      "explanation": "The student is correct because the spilled paint is on the wrong hand."
+    },
+    {
+      "id": "zeka-38-q4",
+      "imageUrl": "/images/zeka/test38/q4.webp",
+      "question": "Who owns the object?",
+      "options": [
+        "The chef",
+        "The doctor",
+        "The driver",
+        "The old woman",
+        "The gardener"
+      ],
+      "correct": 3,
+      "explanation": "The old woman is correct because the keycard log shows a single entry at the critical time."
+    },
+    {
+      "id": "zeka-38-q5",
+      "imageUrl": "/images/zeka/test38/q5.webp",
+      "question": "Who owns the object?",
+      "options": [
+        "The woman in red",
+        "The man with the hat",
+        "The waiter",
+        "The old man",
+        "The police officer"
+      ],
+      "correct": 4,
+      "explanation": "The police officer is correct because the cup is still hot, proving recent movement."
+    },
+    {
+      "id": "zeka-38-q6",
+      "imageUrl": "/images/zeka/test38/q6.webp",
+      "question": "Who owns the object?",
+      "options": [
+        "The teacher",
+        "The shopkeeper",
+        "The courier",
+        "The tourist",
+        "The mechanic"
+      ],
+      "correct": 0,
+      "explanation": "The teacher is correct because their timeline does not match the wall clock."
+    },
+    {
+      "id": "zeka-38-q7",
+      "imageUrl": "/images/zeka/test38/q7.webp",
+      "question": "Who owns the object?",
+      "options": [
+        "Left table",
+        "Middle table",
+        "Right table",
+        "Door area",
+        "Reception desk"
+      ],
+      "correct": 1,
+      "explanation": "Middle table is correct because the shoe prints match only one suspect."
+    },
+    {
+      "id": "zeka-38-q8",
+      "imageUrl": "/images/zeka/test38/q8.webp",
+      "question": "Who owns the object?",
+      "options": [
+        "Broken clock",
+        "Wet umbrella",
+        "Fresh footprints",
+        "Open drawer",
+        "Coffee cup"
+      ],
+      "correct": 2,
+      "explanation": "Fresh footprints is correct because the spilled paint is on the wrong hand."
+    },
+    {
+      "id": "zeka-38-q9",
+      "imageUrl": "/images/zeka/test38/q9.webp",
+      "question": "Who owns the object?",
+      "options": [
+        "The banker",
+        "The nurse",
+        "The student",
+        "The artist",
+        "The firefighter"
+      ],
+      "correct": 3,
+      "explanation": "The artist is correct because the keycard log shows a single entry at the critical time."
+    },
+    {
+      "id": "zeka-38-q10",
+      "imageUrl": "/images/zeka/test38/q10.webp",
+      "question": "Who owns the object?",
+      "options": [
+        "The chef",
+        "The doctor",
+        "The driver",
+        "The old woman",
+        "The gardener"
+      ],
+      "correct": 4,
+      "explanation": "The gardener is correct because the cup is still hot, proving recent movement."
+    }
+  ]
+}
