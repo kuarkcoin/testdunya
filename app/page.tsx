@@ -425,413 +425,202 @@ export default function HomePage() {
     className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-indigo-600 to-violet-700 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl sm:col-span-2"
   >
     <div className="absolute -top-8 -right-8 h-32 w-32 rounded-full bg-white/10 blur-2xl transition-all group-hover:bg-white/20"></div>
-
     <div className="relative z-10 flex h-full flex-col justify-between">
       <div>
         <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-indigo-100 backdrop-blur-sm">
           <Brain className="h-4 w-4" /> New Category
         </div>
-
-        {/* 🔥 BAŞLIK */}
-        <h3 className="mb-2 text-2xl font-black tracking-tight">
-          Brain Puzzles
-        </h3>
-
-        {/* 🔥 ALT METİN */}
-        <p className="text-indigo-100 opacity-90 text-sm">
-          50 image-based mystery tests • 500 puzzle questions
-        </p>
+        <h3 className="mb-2 text-2xl font-black tracking-tight">Brain Puzzles</h3>
+        <p className="text-indigo-100 opacity-90 text-sm">50 image-based mystery tests • 500 puzzle questions</p>
       </div>
-
       <div className="mt-6 flex items-center gap-3">
-        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-indigo-700 shadow-lg group-hover:scale-110 transition-transform">
-          🧠
-        </div>
-
+        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-indigo-700 shadow-lg group-hover:scale-110 transition-transform">🧠</div>
         <span className="font-bold text-sm">Explore →</span>
       </div>
     </div>
   </Link>
+
+  {/* SpeedRun */}
+  <Link
+    href="/speedrun"
+    className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-violet-600 to-indigo-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
+  >
+    <div className="relative z-10 flex flex-col justify-between h-full">
+      <div>
+        <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-indigo-100 backdrop-blur-sm">
+          <TimerIcon className="h-4 w-4" /> Challenge
+        </div>
+        <h3 className="mb-2 text-2xl font-black tracking-tight">SpeedRun</h3>
+        <p className="text-indigo-100 opacity-90 text-sm">Race against time!</p>
+      </div>
+      <div className="mt-6 flex items-center gap-3">
+        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-indigo-600 shadow-lg group-hover:scale-110 transition-transform">
+          <GamepadIcon className="h-5 w-5" />
+        </div>
+        <span className="font-bold text-sm">Play →</span>
+      </div>
+    </div>
+  </Link>
+
+  {/* Flashcards */}
+  <Link
+    href="/flashcards"
+    className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
+  >
+    <div className="relative z-10 flex flex-col justify-between h-full">
+      <div>
+        <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-teal-100 backdrop-blur-sm">
+          <FlashcardIcon className="h-4 w-4" /> Study
+        </div>
+        <h3 className="mb-2 text-2xl font-black tracking-tight">Flashcards</h3>
+        <p className="text-teal-50 opacity-90 text-sm">1000+ IELTS Vocab.</p>
+      </div>
+      <div className="mt-6 flex items-center gap-3">
+        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-emerald-600 shadow-lg group-hover:scale-110 transition-transform">
+          <Book className="h-5 w-5" />
+        </div>
+        <span className="font-bold text-sm">Study →</span>
+      </div>
+    </div>
+  </Link>
+
+  {/* 6 Yaş Oyunları */}
+  <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-amber-400 to-orange-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl sm:col-span-2 lg:col-span-2">
+    <div className="absolute -top-6 -right-6 h-32 w-32 rounded-full bg-white/15 blur-2xl transition-all group-hover:bg-white/25"></div>
+    <div className="relative z-10 flex flex-col h-full justify-between">
+      <div>
+        <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-amber-100 backdrop-blur-sm border border-white/20">
+          🧒 6 Yaş • Zeka Oyunları
+        </div>
+        <h3 className="mb-2 text-2xl font-black tracking-tight">Minikler İçin Oyunlar</h3>
+        <p className="text-amber-50/90 text-sm">Sıralama, dikkat ve mantık oyunları.</p>
+      </div>
+      <div className="mt-6 grid grid-cols-1 gap-2">
+        <Link href="/oyunlar/6-yas/kayip-olani-bul" className="rounded-xl bg-white text-orange-600 px-4 py-3 text-sm font-bold flex items-center justify-between hover:bg-orange-50 transition">
+          <span>🧩 Kayıp Olanı Bul</span>
+          <span>→</span>
+        </Link>
+        <Link href="/oyunlar/6-yas/siralama" className="rounded-xl bg-white text-orange-600 px-4 py-3 text-sm font-bold flex items-center justify-between hover:bg-orange-50 transition">
+          <span>✅ Sıralama Mantığı</span>
+          <span>→</span>
+        </Link>
+        <Link href="/oyunlar/6-yas/matris" className="rounded-xl bg-white text-orange-600 px-4 py-3 text-sm font-bold flex items-center justify-between hover:bg-orange-50 transition">
+          <span>🧩 Matris Tamamlama</span>
+          <span>→</span>
+        </Link>
+        <Link href="/oyunlar/6-yas/labirent" className="rounded-xl bg-white text-orange-600 px-4 py-3 text-sm font-bold flex items-center justify-between hover:bg-orange-50 transition">
+          <span>🐰 Labirent</span>
+          <span>→</span>
+        </Link>
+      </div>
+    </div>
+  </div>
+
+  {/* Word Hunter */}
+  <Link href="/kelime-avcisi" className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl">
+    <div className="absolute top-0 right-0 -mt-4 -mr-4 h-32 w-32 rounded-full bg-white/10 blur-2xl transition-all group-hover:bg-white/20"></div>
+    <div className="relative z-10 flex flex-col justify-between h-full">
+      <div>
+        <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-amber-100 backdrop-blur-sm">
+          <Sparkles className="h-4 w-4" /> New AI Game
+        </div>
+        <h3 className="mb-2 text-2xl font-black tracking-tight">Word Hunter</h3>
+        <p className="text-amber-50 opacity-90 text-sm">AI defines, you guess.</p>
+      </div>
+      <div className="mt-6 flex items-center gap-3"><div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-orange-600 shadow-lg transition-transform group-hover:scale-110"><GamepadIcon className="h-5 w-5" /></div><span className="font-bold text-sm">Play →</span></div>
+    </div>
+  </Link>
+
+  {/* Wordle */}
+  <Link href="/wordle" className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-500 to-green-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl">
+    <div className="absolute top-0 right-0 -mt-4 -mr-4 h-32 w-32 rounded-full bg-white/10 blur-2xl transition-all group-hover:bg-white/20"></div>
+    <div className="relative z-10 flex flex-col justify-between h-full">
+      <div><div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-emerald-100 backdrop-blur-sm">🟩 WORDLE <span className="opacity-80">• Daily</span></div><h3 className="mb-2 text-2xl font-black tracking-tight">IELTS Wordle</h3><p className="text-emerald-50 opacity-90 text-sm">Guess the word in 6 tries</p></div>
+      <div className="mt-6 flex items-center gap-3"><div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-emerald-600 shadow-lg transition-transform group-hover:scale-110">🎯</div><span className="font-bold text-sm">Play →</span></div>
+    </div>
+  </Link>
+
+  {/* Word Meaning Pop */}
+  <Link href="/games/word-meaning" className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-yellow-400 to-amber-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl">
+    <div className="absolute -top-6 -right-6 h-32 w-32 rounded-full bg-white/15 blur-2xl transition-all group-hover:bg-white/25"></div>
+    <div className="relative z-10 flex flex-col justify-between h-full">
+      <div><div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-yellow-100 backdrop-blur-sm border border-white/20">🎈 New Game</div><h3 className="mb-2 text-2xl font-black tracking-tight">Word Meaning Pop</h3><p className="text-yellow-50/90 text-sm">Doğru anlamı bul, balonu patlat! Combo yap, süre kazan.</p></div>
+      <div className="mt-6 flex items-center gap-3"><div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-amber-700 shadow-lg transition-transform group-hover:scale-110">🎯</div><span className="font-bold text-sm">Play →</span></div>
+    </div>
+  </Link>
+
+  {/* Word Match */}
+  <Link href="/wordmatch" className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-fuchsia-600 to-purple-700 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl">
+    <div className="absolute top-0 right-0 -mt-4 -mr-4 h-32 w-32 rounded-full bg-white/10 blur-2xl transition-all group-hover:bg-white/20"></div>
+    <div className="relative z-10 flex flex-col justify-between h-full">
+      <div><div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-fuchsia-100 backdrop-blur-sm">🧩 Match <span className="opacity-80">• Training</span></div><h3 className="mb-2 text-2xl font-black tracking-tight">Word Match</h3><p className="text-fuchsia-50 opacity-90 text-sm">Match word ↔ meaning fast</p></div>
+      <div className="mt-6 flex items-center gap-3"><div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-purple-700 shadow-lg transition-transform group-hover:scale-110">✦</div><span className="font-bold text-sm">Play →</span></div>
+    </div>
+  </Link>
+
+  {/* IQ Test */}
+  <Link href="/iq-test" className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-sky-600 to-indigo-700 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl">
+    <div className="relative z-10 flex flex-col justify-between h-full">
+      <div><div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-sky-100 backdrop-blur-sm">🧩 IQ</div><h3 className="mb-2 text-2xl font-black tracking-tight">IQ Test (Hard)</h3><p className="text-sky-100 opacity-90 text-sm">30 questions • timed</p></div>
+      <div className="mt-6 flex items-center gap-3"><div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-indigo-700 shadow-lg transition-transform group-hover:scale-110">🎯</div><span className="font-bold text-sm">Start →</span></div>
+    </div>
+  </Link>
+
+  {/* Verbal Logic */}
+  <Link href="/verbal-test" className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-rose-500 to-pink-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl">
+    <div className="absolute top-0 right-0 -mt-4 -mr-4 h-32 w-32 rounded-full bg-white/10 blur-2xl transition-all group-hover:bg-white/20"></div>
+    <div className="relative z-10 flex flex-col justify-between h-full">
+      <div><div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-rose-100 backdrop-blur-sm">📚 Verbal <span className="opacity-80">• Global</span></div><h3 className="mb-2 text-2xl font-black tracking-tight">Verbal Logic</h3><p className="text-rose-100 opacity-90 text-sm">English reasoning & vocab</p></div>
+      <div className="mt-6 flex items-center gap-3"><div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-pink-600 shadow-lg transition-transform group-hover:scale-110">✍️</div><span className="font-bold text-sm">Start →</span></div>
+    </div>
+  </Link>
+
+  {/* Number Hunter */}
+  <Link href="/number-hunter" className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-cyan-600 to-blue-700 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl">
+    <div className="absolute -bottom-2 -left-2 h-24 w-24 rounded-full bg-white/10 blur-2xl transition-all group-hover:bg-cyan-400/20"></div>
+    <div className="relative z-10 flex flex-col justify-between h-full">
+      <div><div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-cyan-100 backdrop-blur-sm">🌐 Global <span className="opacity-80">• Multi-Language</span></div><h3 className="mb-2 text-2xl font-black tracking-tight">Number Hunter</h3><p className="text-cyan-100 opacity-90 text-sm">Global math speed challenge. Reach the target!</p></div>
+      <div className="mt-6 flex items-center gap-3"><div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-blue-700 shadow-lg transition-transform group-hover:scale-110">🎯</div><div className="flex flex-col"><span className="font-bold text-sm text-white">Play Global →</span><span className="text-[10px] text-cyan-200 font-medium">Leaderboard Active</span></div></div>
+    </div>
+  </Link>
+
+  {/* Color Logic */}
+  <Link href="/color-logic" className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-zinc-800 to-black p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl border border-zinc-700">
+    <div className="absolute -top-4 -right-4 h-24 w-24 rounded-full bg-cyan-500/10 blur-2xl transition-all group-hover:bg-cyan-500/30"></div>
+    <div className="relative z-10 flex flex-col justify-between h-full">
+      <div><div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-cyan-400 backdrop-blur-sm">🧠 Cognitive <span className="opacity-80">• Multi-Layer</span></div><h3 className="mb-2 text-2xl font-black tracking-tight">Color Logic</h3><p className="text-zinc-400 opacity-90 text-sm">Level up your brain. Master the Stroop effect with mirror & ghost modes.</p></div>
+      <div className="mt-6 flex items-center gap-3"><div className="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-500 text-black shadow-lg transition-transform group-hover:rotate-12"><Zap className="h-5 w-5 fill-black" /></div><div className="flex flex-col"><span className="font-bold text-sm text-white">Start Training →</span><span className="text-[10px] text-cyan-400 font-medium tracking-tight">Focus & Speed</span></div></div>
+    </div>
+  </Link>
+
+  {/* Chrono Link */}
+  <Link href="/chrono-link" className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-fuchsia-900 to-black p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl border border-fuchsia-800/30">
+    <div className="absolute -bottom-4 -right-4 h-32 w-32 rounded-full bg-fuchsia-500/10 blur-3xl transition-all group-hover:bg-fuchsia-500/20"></div>
+    <div className="relative z-10 flex flex-col justify-between h-full">
+      <div><div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-fuchsia-300 backdrop-blur-sm">🧩 Memory <span className="opacity-80">• Spatial Link</span></div><h3 className="mb-2 text-2xl font-black tracking-tight italic">Chrono Link</h3><p className="text-zinc-400 opacity-90 text-sm">Memorize the neural path and connect nodes. Challenge your working memory.</p></div>
+      <div className="mt-6 flex items-center gap-3"><div className="flex h-10 w-10 items-center justify-center rounded-full bg-fuchsia-500 text-black shadow-lg transition-transform group-hover:scale-110"><Brain className="h-5 w-5 fill-black" /></div><div className="flex flex-col"><span className="font-bold text-sm text-white">Initiate Link →</span><span className="text-[10px] text-fuchsia-400 font-medium tracking-tight">Memory & Focus</span></div></div>
+    </div>
+  </Link>
+
+  {/* Logic Lock */}
+  <Link href="/games/logic-lock" className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-900 via-indigo-950 to-black p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl border border-indigo-500/20">
+    <div className="absolute -top-4 -left-4 h-24 w-24 rounded-full bg-cyan-500/10 blur-2xl transition-all group-hover:bg-cyan-500/30"></div>
+    <div className="relative z-10 flex flex-col justify-between h-full">
+      <div><div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-cyan-500/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-cyan-400 backdrop-blur-sm border border-cyan-500/20"><Lock className="h-3 w-3" /> Mastermind <span className="opacity-80">• Daily Code</span></div><h3 className="mb-2 text-2xl font-black tracking-tight">Logic Lock</h3><p className="text-slate-400 opacity-90 text-sm">Crack the secret code. Use logic and hints to unlock the vault.</p></div>
+      <div className="mt-6 flex items-center gap-3"><div className="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-500 text-black shadow-lg transition-transform group-hover:rotate-12"><Target className="h-5 w-5 fill-black" /></div><div className="flex flex-col"><span className="font-bold text-sm text-white">Unlock Vault →</span><span className="text-[10px] text-cyan-400 font-medium tracking-tight">Logic & Deduction</span></div></div>
+    </div>
+  </Link>
+
+  {/* Görevde Yükselme */}
+  <Link href="/gorevde-yukselme" className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-900 via-indigo-900 to-black p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl border border-white/10">
+    <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-indigo-200">🏛️ Mevzuat • Görevde Yükselme</div>
+    <h3 className="mb-2 text-2xl font-black tracking-tight">Görevde Yükselme</h3>
+    <p className="text-indigo-100/90 text-sm">Ortak Konular • 4 test/der s (25 soru) • Karma Deneme • Rozet Sistemi</p>
+    <div className="mt-6 font-black">Başlat →</div>
+  </Link>
 </section>
 
-          {/* 1. SPEEDRUN */}
-          <Link
-            href="/speedrun"
-            className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-violet-600 to-indigo-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
-          >
-            <div className="relative z-10 flex flex-col justify-between h-full">
-              <div>
-                <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-indigo-100 backdrop-blur-sm">
-                  <TimerIcon className="h-4 w-4" /> Challenge
-                </div>
-                <h3 className="mb-2 text-2xl font-black tracking-tight">SpeedRun</h3>
-                <p className="text-indigo-100 opacity-90 text-sm">Race against time!</p>
-              </div>
-              <div className="mt-6 flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-indigo-600 shadow-lg group-hover:scale-110 transition-transform">
-                  <GamepadIcon className="h-5 w-5" />
-                </div>
-                <span className="font-bold text-sm">Play →</span>
-              </div>
-            </div>
-          </Link>
-
-          {/* 2. FLASHCARDS */}
-          <Link
-            href="/flashcards"
-            className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
-          >
-            <div className="relative z-10 flex flex-col justify-between h-full">
-              <div>
-                <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-teal-100 backdrop-blur-sm">
-                  <FlashcardIcon className="h-4 w-4" /> Study
-                </div>
-                <h3 className="mb-2 text-2xl font-black tracking-tight">Flashcards</h3>
-                <p className="text-teal-50 opacity-90 text-sm">1000+ IELTS Vocab.</p>
-              </div>
-              <div className="mt-6 flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-emerald-600 shadow-lg group-hover:scale-110 transition-transform">
-                  <Book className="h-5 w-5" />
-                </div>
-                <span className="font-bold text-sm">Study →</span>
-              </div>
-            </div>
-          </Link>
-{/* 0. 6 YAŞ OYUNLARI (NEW) */}
-<Link
-  href="/oyunlar/6-yas/siralama"
-  className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-amber-400 to-orange-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl sm:col-span-2 lg:col-span-2"
->
-  <div className="absolute -top-6 -right-6 h-32 w-32 rounded-full bg-white/15 blur-2xl transition-all group-hover:bg-white/25"></div>
-
-  <div className="relative z-10 flex flex-col h-full justify-between">
-    <div>
-      <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-amber-100 backdrop-blur-sm border border-white/20">
-<Link
- {/* 6 YAŞ OYUNLARI */}
-<Link
-  href="/oyunlar/6-yas/siralama"
-  className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-amber-400 to-orange-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl sm:col-span-2 lg:col-span-2"
->
-  <div className="absolute -top-6 -right-6 h-32 w-32 rounded-full bg-white/15 blur-2xl transition-all group-hover:bg-white/25"></div>
-
-  <div className="relative z-10 flex flex-col h-full justify-between">
-    
-    {/* ÜST */}
-    <div>
-      <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-amber-100 backdrop-blur-sm border border-white/20">
-        🧒 6 Yaş • Zeka Oyunları
-      </div>
-
-      <h3 className="mb-2 text-2xl font-black tracking-tight">
-        Minikler İçin Oyunlar
-      </h3>
-
-      <p className="text-amber-50/90 text-sm">
-        Sıralama, dikkat ve mantık oyunları.
-      </p>
-    </div>
-
-    {/* ALT LİST */}
-    <div className="mt-6 grid grid-cols-1 gap-2">
-
-      {/* AKTİF OYUN */}
-      <Link
-        href="/oyunlar/6-yas/kayip-olani-bul"
-        className="rounded-xl bg-white text-orange-600 px-4 py-3 text-sm font-bold flex items-center justify-between hover:bg-orange-50 transition"
-      >
-        <span>🧩 Kayıp Olanı Bul</span>
-        <span>→</span>
-      </Link>
-
-      <div className="rounded-xl bg-white/15 border border-white/20 px-4 py-3 text-sm font-bold flex items-center justify-between">
-        <span>✅ Sıralama Mantığı</span>
-        <span>→</span>
-      </div>
-
-      <div className="rounded-xl bg-white/10 border border-white/10 px-4 py-3 text-sm font-bold flex items-center justify-between opacity-80">
-        <span>🧩 Matris Tamamlama (yakında)</span>
-        <span>🔒</span>
-      </div>
-
-      <div className="rounded-xl bg-white/10 border border-white/10 px-4 py-3 text-sm font-bold flex items-center justify-between opacity-80">
-        <span>🐰 Labirent (yakında)</span>
-        <span>🔒</span>
-      </div>
-    </div>
-  </div>
-</Link>
-
-          {/* 3. WORD HUNTER */}
-          <Link
-            href="/kelime-avcisi"
-            className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
-          >
-            <div className="absolute top-0 right-0 -mt-4 -mr-4 h-32 w-32 rounded-full bg-white/10 blur-2xl transition-all group-hover:bg-white/20"></div>
-            <div className="relative z-10 flex flex-col justify-between h-full">
-              <div>
-                <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-amber-100 backdrop-blur-sm">
-                  <Sparkles className="h-4 w-4" /> New AI Game
-                </div>
-                <h3 className="mb-2 text-2xl font-black tracking-tight">Word Hunter</h3>
-                <p className="text-amber-50 opacity-90 text-sm">AI defines, you guess.</p>
-              </div>
-              <div className="mt-6 flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-orange-600 shadow-lg transition-transform group-hover:scale-110">
-                  <GamepadIcon className="h-5 w-5" />
-                </div>
-                <span className="font-bold text-sm">Play →</span>
-              </div>
-            </div>
-          </Link>
-
-          {/* 4. WORDLE (IELTS) */}
-          <Link
-            href="/wordle"
-            className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-500 to-green-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
-          >
-            <div className="absolute top-0 right-0 -mt-4 -mr-4 h-32 w-32 rounded-full bg-white/10 blur-2xl transition-all group-hover:bg-white/20"></div>
-
-            <div className="relative z-10 flex flex-col justify-between h-full">
-              <div>
-                <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-emerald-100 backdrop-blur-sm">
-                  🟩 WORDLE <span className="opacity-80">• Daily</span>
-                </div>
-                <h3 className="mb-2 text-2xl font-black tracking-tight">IELTS Wordle</h3>
-                <p className="text-emerald-50 opacity-90 text-sm">Guess the word in 6 tries</p>
-              </div>
-
-              <div className="mt-6 flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-emerald-600 shadow-lg transition-transform group-hover:scale-110">
-                  🎯
-                </div>
-                <span className="font-bold text-sm">Play →</span>
-              </div>
-            </div>
-          </Link>
-          {/* WORD MEANING BALLOON (NEW) */}
-<Link
-  href="/games/word-meaning"
-  className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-yellow-400 to-amber-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
->
-  <div className="absolute -top-6 -right-6 h-32 w-32 rounded-full bg-white/15 blur-2xl transition-all group-hover:bg-white/25"></div>
-
-  <div className="relative z-10 flex flex-col justify-between h-full">
-    <div>
-      <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-yellow-100 backdrop-blur-sm border border-white/20">
-        🎈 New Game
-      </div>
-      <h3 className="mb-2 text-2xl font-black tracking-tight">Word Meaning Pop</h3>
-      <p className="text-yellow-50/90 text-sm">
-        Doğru anlamı bul, balonu patlat! Combo yap, süre kazan.
-      </p>
-    </div>
-
-    <div className="mt-6 flex items-center gap-3">
-      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-amber-700 shadow-lg transition-transform group-hover:scale-110">
-        🎯
-      </div>
-      <span className="font-bold text-sm">Play →</span>
-    </div>
-  </div>
-</Link>
-
-          {/* 5. WORD MATCH (IELTS) */}
-          <Link
-            href="/wordmatch"
-            className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-fuchsia-600 to-purple-700 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
-          >
-            <div className="absolute top-0 right-0 -mt-4 -mr-4 h-32 w-32 rounded-full bg-white/10 blur-2xl transition-all group-hover:bg-white/20"></div>
-
-            <div className="relative z-10 flex flex-col justify-between h-full">
-              <div>
-                <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-fuchsia-100 backdrop-blur-sm">
-                  🧩 Match <span className="opacity-80">• Training</span>
-                </div>
-                <h3 className="mb-2 text-2xl font-black tracking-tight">Word Match</h3>
-                <p className="text-fuchsia-50 opacity-90 text-sm">Match word ↔ meaning fast</p>
-              </div>
-
-              <div className="mt-6 flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-purple-700 shadow-lg transition-transform group-hover:scale-110">
-                  ✦
-                </div>
-                <span className="font-bold text-sm">Play →</span>
-              </div>
-            </div>
-          </Link>
-
-          {/* 6. IQ TEST */}
-          <Link href="/iq-test" className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-sky-600 to-indigo-700 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl">
-            <div className="relative z-10 flex flex-col justify-between h-full">
-              <div>
-                <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-sky-100 backdrop-blur-sm">
-                  🧩 IQ
-                </div>
-                <h3 className="mb-2 text-2xl font-black tracking-tight">IQ Test (Hard)</h3>
-                <p className="text-sky-100 opacity-90 text-sm">30 questions • timed</p>
-              </div>
-              <div className="mt-6 flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-indigo-700 shadow-lg transition-transform group-hover:scale-110">
-                  🎯
-                </div>
-                <span className="font-bold text-sm">Start →</span>
-              </div>
-            </div>
-          </Link>
-           {/* 7. VERBAL REASONING */}
-          <Link
-            href="/verbal-test"
-            className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-rose-500 to-pink-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
-          >
-            <div className="absolute top-0 right-0 -mt-4 -mr-4 h-32 w-32 rounded-full bg-white/10 blur-2xl transition-all group-hover:bg-white/20"></div>
-
-            <div className="relative z-10 flex flex-col justify-between h-full">
-              <div>
-                <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-rose-100 backdrop-blur-sm">
-                  📚 Verbal <span className="opacity-80">• Global</span>
-                </div>
-                <h3 className="mb-2 text-2xl font-black tracking-tight">Verbal Logic</h3>
-                <p className="text-rose-100 opacity-90 text-sm">English reasoning & vocab</p>
-              </div>
-
-              <div className="mt-6 flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-pink-600 shadow-lg transition-transform group-hover:scale-110">
-                  ✍️
-                </div>
-                <span className="font-bold text-sm">Start →</span>
-              </div>
-            </div>
-          </Link>
-{/* 8. NUMBER HUNTER (GLOBAL MATH GAME) */}
-<Link
-  href="/number-hunter"
-  className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-cyan-600 to-blue-700 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
->
-  {/* Hareketli Arka Plan Işığı */}
-  <div className="absolute -bottom-2 -left-2 h-24 w-24 rounded-full bg-white/10 blur-2xl transition-all group-hover:bg-cyan-400/20"></div>
-
-  <div className="relative z-10 flex flex-col justify-between h-full">
-    <div>
-      <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-cyan-100 backdrop-blur-sm">
-        🌐 Global <span className="opacity-80">• Multi-Language</span>
-      </div>
-      <h3 className="mb-2 text-2xl font-black tracking-tight">Number Hunter</h3>
-      <p className="text-cyan-100 opacity-90 text-sm">Global math speed challenge. Reach the target!</p>
-    </div>
-
-    <div className="mt-6 flex items-center gap-3">
-      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-blue-700 shadow-lg transition-transform group-hover:scale-110">
-        🎯
-      </div>
-      <div className="flex flex-col">
-        <span className="font-bold text-sm text-white">Play Global →</span>
-        <span className="text-[10px] text-cyan-200 font-medium">Leaderboard Active</span>
-      </div>
-    </div>
-  </div>
-</Link>
-{/* 9. COLOR LOGIC (MULTI-LAYER GAME) */}
-<Link
-  href="/color-logic"
-  className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-zinc-800 to-black p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl border border-zinc-700"
->
-  {/* Neon Işık Efekti */}
-  <div className="absolute -top-4 -right-4 h-24 w-24 rounded-full bg-cyan-500/10 blur-2xl transition-all group-hover:bg-cyan-500/30"></div>
-
-  <div className="relative z-10 flex flex-col justify-between h-full">
-    <div>
-      <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-cyan-400 backdrop-blur-sm">
-        🧠 Cognitive <span className="opacity-80">• Multi-Layer</span>
-      </div>
-      <h3 className="mb-2 text-2xl font-black tracking-tight">Color Logic</h3>
-      <p className="text-zinc-400 opacity-90 text-sm">Level up your brain. Master the Stroop effect with mirror & ghost modes.</p>
-    </div>
-
-    <div className="mt-6 flex items-center gap-3">
-      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-500 text-black shadow-lg transition-transform group-hover:rotate-12">
-        <Zap className="h-5 w-5 fill-black" />
-      </div>
-      <div className="flex flex-col">
-        <span className="font-bold text-sm text-white">Start Training →</span>
-        <span className="text-[10px] text-cyan-400 font-medium tracking-tight">Focus & Speed</span>
-      </div>
-    </div>
-  </div>
-</Link>
-          {/* 10. CHRONO LINK (MEMORY & SPATIAL) */}
-<Link
-  href="/chrono-link"
-  className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-fuchsia-900 to-black p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl border border-fuchsia-800/30"
->
-  {/* Neon Mor Işık Efekti */}
-  <div className="absolute -bottom-4 -right-4 h-32 w-32 rounded-full bg-fuchsia-500/10 blur-3xl transition-all group-hover:bg-fuchsia-500/20"></div>
-
-  <div className="relative z-10 flex flex-col justify-between h-full">
-    <div>
-      <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-fuchsia-300 backdrop-blur-sm">
-        🧩 Memory <span className="opacity-80">• Spatial Link</span>
-      </div>
-      <h3 className="mb-2 text-2xl font-black tracking-tight italic">Chrono Link</h3>
-      <p className="text-zinc-400 opacity-90 text-sm">Memorize the neural path and connect nodes. Challenge your working memory.</p>
-    </div>
-
-    <div className="mt-6 flex items-center gap-3">
-      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-fuchsia-500 text-black shadow-lg transition-transform group-hover:scale-110">
-        <Brain className="h-5 w-5 fill-black" />
-      </div>
-      <div className="flex flex-col">
-        <span className="font-bold text-sm text-white">Initiate Link →</span>
-        <span className="text-[10px] text-fuchsia-400 font-medium tracking-tight">Memory & Focus</span>
-      </div>
-    </div>
-  </div>
-</Link>
-{/* 11. LOGIC LOCK ULTRA (NEW MASTERMIND GAME) */}
-<Link
-  href="/games/logic-lock"
-  className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-900 via-indigo-950 to-black p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl border border-indigo-500/20"
->
-  {/* Neon Mavi Işık Efekti */}
-  <div className="absolute -top-4 -left-4 h-24 w-24 rounded-full bg-cyan-500/10 blur-2xl transition-all group-hover:bg-cyan-500/30"></div>
-
-  <div className="relative z-10 flex flex-col justify-between h-full">
-    <div>
-      <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-cyan-500/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-cyan-400 backdrop-blur-sm border border-cyan-500/20">
-        <Lock className="h-3 w-3" /> Mastermind <span className="opacity-80">• Daily Code</span>
-      </div>
-      <h3 className="mb-2 text-2xl font-black tracking-tight">Logic Lock</h3>
-      <p className="text-slate-400 opacity-90 text-sm">Crack the secret code. Use logic and hints to unlock the vault.</p>
-    </div>
-
-    <div className="mt-6 flex items-center gap-3">
-      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-500 text-black shadow-lg transition-transform group-hover:rotate-12">
-        <Target className="h-5 w-5 fill-black" />
-      </div>
-      <div className="flex flex-col">
-        <span className="font-bold text-sm text-white">Unlock Vault →</span>
-        <span className="text-[10px] text-cyan-400 font-medium tracking-tight">Logic & Deduction</span>
-      </div>
-    </div>
-  </div>
-</Link>
-<Link
-  href="/gorevde-yukselme"
-  className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-900 via-indigo-900 to-black p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl border border-white/10"
->
-  <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-indigo-200">
-    🏛️ Mevzuat • Görevde Yükselme
-  </div>
-  <h3 className="mb-2 text-2xl font-black tracking-tight">Görevde Yükselme</h3>
-  <p className="text-indigo-100/90 text-sm">
-    Ortak Konular • 4 test/der s (25 soru) • Karma Deneme • Rozet Sistemi
-  </p>
-  <div className="mt-6 font-black">Başlat →</div>
-</Link>
-
-        </section>
-        
-        {/* --- NATIONAL EXAMS --- */}
+{/* --- NATIONAL EXAMS --- */}
         {examConfig.map((exam) => {
           const loopCount = SHOW_LOCKED_TESTS ? exam.count : exam.activeLimit;
           const hasMore = exam.activeLimit < exam.count;

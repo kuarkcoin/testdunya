@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
+import Image from 'next/image';
 
 // --- ICONS ---
 const Clock = (props: React.SVGProps<SVGSVGElement>) => (
@@ -103,13 +104,14 @@ function findExplanation(item: any): string {
 
 // --- MEMOIZED QUESTION CARD ---
 const QuestionCard = React.memo(({
-  q, idx, answer, onAnswer, labels,
+  q, idx, answer, onAnswer, labels, onImageClick,
 }: {
   q: Question;
   idx: number;
   answer: string;
   onAnswer: (qid: string, val: string) => void;
   labels: any;
+  onImageClick: (src: string) => void;
 }) => {
   return (
     <div className="premium-card p-6 md:p-8 rounded-3xl">
@@ -122,8 +124,23 @@ const QuestionCard = React.memo(({
         {formatText(q.prompt)}
       </div>
       {q.imageUrl && (
-        <div className="mb-8 overflow-hidden rounded-2xl border border-slate-200 dark:border-zinc-700 bg-white dark:bg-zinc-900">
-          <img src={q.imageUrl} alt={`Question visual for ${q.id}`} className="w-full h-auto object-cover" loading="lazy" />
+        <div
+          className="mb-8 overflow-hidden rounded-2xl border border-slate-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 cursor-zoom-in"
+          onClick={() => onImageClick(q.imageUrl!)}
+          role="button"
+          tabIndex={0}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') onImageClick(q.imageUrl!);
+          }}
+        >
+          <Image
+            src={q.imageUrl}
+            alt={`Question visual for ${q.id}`}
+            width={1200}
+            height={900}
+            className="w-full h-auto object-contain"
+            unoptimized
+          />
         </div>
       )}
 
@@ -181,6 +198,7 @@ export default function QuizPage() {
   const [error, setError] = useState('');
 
   const [audioSrc, setAudioSrc] = useState<string | null>(null);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   // ✅ NEW: Exam / Practice mode
   const [mode, setMode] = useState<Mode>('exam'); // default: exam
@@ -370,6 +388,24 @@ export default function QuizPage() {
   const handleAnswerChange = useCallback((qId: string, val: string) => {
     setAnswers(prev => ({ ...prev, [qId]: val }));
   }, []);
+
+  const closeImageModal = useCallback(() => {
+    setSelectedImage(null);
+  }, []);
+
+  useEffect(() => {
+    if (!selectedImage) return;
+    const onEsc = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') closeImageModal();
+    };
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    window.addEventListener('keydown', onEsc);
+    return () => {
+      document.body.style.overflow = prevOverflow;
+      window.removeEventListener('keydown', onEsc);
+    };
+  }, [selectedImage, closeImageModal]);
 
   const handleSubmit = () => {
     let correctCount = 0;
@@ -639,6 +675,7 @@ export default function QuizPage() {
             answer={answers[q.id] || ''}
             onAnswer={handleAnswerChange}
             labels={labels}
+            onImageClick={setSelectedImage}
           />
         ))}
 
@@ -651,6 +688,37 @@ export default function QuizPage() {
           </button>
         </div>
       </div>
+
+      {selectedImage && (
+        <div
+          className="fixed inset-0 z-[100] bg-black/80 backdrop-blur-[1px] flex items-center justify-center p-4 sm:p-6 animate-in fade-in duration-200"
+          onClick={closeImageModal}
+        >
+          <div
+            className="relative w-full h-full flex items-center justify-center animate-in zoom-in-95 duration-200"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              type="button"
+              onClick={closeImageModal}
+              className="absolute top-2 right-2 sm:top-4 sm:right-4 z-10 h-10 w-10 rounded-full bg-white/15 hover:bg-white/25 text-white text-2xl leading-none flex items-center justify-center transition"
+              aria-label="Close image preview"
+            >
+              ×
+            </button>
+
+            <Image
+              src={selectedImage}
+              alt="Question image fullscreen preview"
+              width={1920}
+              height={1080}
+              className="object-contain max-w-[90vw] max-h-[90vh] w-auto h-auto rounded-xl"
+              unoptimized
+              priority
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
