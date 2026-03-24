@@ -508,44 +508,52 @@ export default function HomePage() {
     <div>
       <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-amber-100 backdrop-blur-sm border border-white/20">
 <Link
-  href="/oyunlar/6-yas/kayip-olani-bul"
-  className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
+ {/* 6 YAŞ OYUNLARI */}
+<Link
+  href="/oyunlar/6-yas/siralama"
+  className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-amber-400 to-orange-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl sm:col-span-2 lg:col-span-2"
 >
-  <div className="relative z-10 flex flex-col justify-between h-full">
-    <div>
-      <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-amber-100 backdrop-blur-sm">
-        🧩 6 Yaş • Desen
-      </div>
-      <h3 className="mb-2 text-2xl font-black tracking-tight">Kayıp Olanı Bul</h3>
-      <p className="text-amber-50 opacity-90 text-sm">Eksik parçayı seç</p>
-    </div>
+  <div className="absolute -top-6 -right-6 h-32 w-32 rounded-full bg-white/15 blur-2xl transition-all group-hover:bg-white/25"></div>
 
-    <div className="mt-6 flex items-center gap-3">
-      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-orange-600 shadow-lg transition-transform group-hover:scale-110">
-        🎯
-      </div>
-      <span className="font-bold text-sm">Oyna →</span>
-    </div>
-  </div>
-</Link>
+  <div className="relative z-10 flex flex-col h-full justify-between">
+    
+    {/* ÜST */}
+    <div>
+      <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-amber-100 backdrop-blur-sm border border-white/20">
         🧒 6 Yaş • Zeka Oyunları
       </div>
 
-      <h3 className="mb-2 text-2xl font-black tracking-tight">Minikler İçin Oyunlar</h3>
+      <h3 className="mb-2 text-2xl font-black tracking-tight">
+        Minikler İçin Oyunlar
+      </h3>
+
       <p className="text-amber-50/90 text-sm">
-        Sıralama, dikkat ve mantık oyunları. Resimsiz başlayıp sonra görsellere geçebiliriz.
+        Sıralama, dikkat ve mantık oyunları.
       </p>
     </div>
 
+    {/* ALT LİST */}
     <div className="mt-6 grid grid-cols-1 gap-2">
+
+      {/* AKTİF OYUN */}
+      <Link
+        href="/oyunlar/6-yas/kayip-olani-bul"
+        className="rounded-xl bg-white text-orange-600 px-4 py-3 text-sm font-bold flex items-center justify-between hover:bg-orange-50 transition"
+      >
+        <span>🧩 Kayıp Olanı Bul</span>
+        <span>→</span>
+      </Link>
+
       <div className="rounded-xl bg-white/15 border border-white/20 px-4 py-3 text-sm font-bold flex items-center justify-between">
         <span>✅ Sıralama Mantığı</span>
         <span>→</span>
       </div>
+
       <div className="rounded-xl bg-white/10 border border-white/10 px-4 py-3 text-sm font-bold flex items-center justify-between opacity-80">
         <span>🧩 Matris Tamamlama (yakında)</span>
         <span>🔒</span>
       </div>
+
       <div className="rounded-xl bg-white/10 border border-white/10 px-4 py-3 text-sm font-bold flex items-center justify-between opacity-80">
         <span>🐰 Labirent (yakında)</span>
         <span>🔒</span>
