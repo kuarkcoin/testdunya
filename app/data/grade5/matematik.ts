@@ -1012,7 +1012,7 @@ export const matematikData: SubjectData = {
         "explanation": "Küp şeklindeki bir yapının içindeki toplam blok sayısı en, boy ve yüksekliğin çarpımı ile bulunur (5 x 5 x 5). Üç aynı sayının çarpımı o sayının küpüdür (5³)."
       }
     ],
-    test5: [
+   test5: [
       {
         "id": "m5-1-t5-01",
         "subject": "matematik",
