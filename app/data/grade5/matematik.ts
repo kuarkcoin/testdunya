@@ -1023,7 +1023,7 @@ export const matematikData: SubjectData = {
           "11",
           "12",
           "13",
-          "14"
+          "14" 
         ],
         "correct": 2,
         "explanation": "145'i 12'ye böldüğümüzde bölüm 12, kalan 1 olur. 12 sepet tamamen dolar, artan 1 elma için de ekstra 1 sepet daha gerekir. Toplam 13 sepet lazımdır."
