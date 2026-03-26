@@ -1589,16 +1589,16 @@ export const matematikData: SubjectData = {
         "id": "m5-1-t6-19",
         "subject": "matematik",
         "term": 1,
-        "prompt": "Görseldeki kesir modelinde, 5 eşit parçaya bölünmüş 3 adet tam daire vardır. Dairelerin ikisi tamamen boyalı, üçüncüsünün ise 3 parçası boyalıdır (13/5). Bu bileşik kesrin tam sayılı hali hangisidir?",
+        "prompt": "Görseldeki kesir modelinde, 6 eşit parçaya bölünmüş 3 adet tam daire vardır. Dairelerin ikisi tamamen boyalı, üçüncüsünün ise 4 parçası boyalıdır . Bu bileşik kesrin tam sayılı hali hangisidir?",
         "imageUrl": "/images/grade5/matematik/test6/m5-t6-img-19.webp",
         "options": [
-          "1 tam 3/5",
-          "2 tam 3/5",
-          "3 tam 2/5",
+          "1 tam 3/6",
+          "2 tam 4/6",
+          "3 tam 2/6",
           "2 tam 5/13"
         ],
         "correct": 1,
-        "explanation": "Görseldeki 2 tam daire '2 tam'ı, son dairedeki boyalı kısım ise '3/5'i ifade eder. 13'ü 5'e böldüğümüzde bölüm 2 (tam kısım), kalan 3 (pay) olur: 2 tam 3/5."
+        "explanation": "Görseldeki 2 tam daire '2 tam'ı, son dairedeki boyalı kısım ise '4/6'sı ifade eder. 2 (tam kısım),  4 (pay) olur: 2 tam 4/6."
       },
       {
         "id": "m5-1-t6-20",
