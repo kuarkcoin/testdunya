@@ -2220,225 +2220,307 @@ export const matematikData: SubjectData = {
         "explanation": "5² (5'in karesi) = 5 x 5 = 25 puandır. 3³ (3'ün küpü) = 3 x 3 x 3 = 27 puandır. Toplam puan: 25 + 27 = 52'dir."
       }
     ],
-    test9: [
-      // --- GÖRSEL ODAKLI SORULAR (%50) ---
+   test9: [
       {
-        id: "m5-1-t9-01",
-        subject: "matematik",
-        term: 1,
-        prompt: "Görseldeki abaküste yedi basamaklı bir doğal sayı modellenmiştir. Bu sayının okunuşu hangisidir?",
-        imageUrl: "/images/grade5/matematik/abakus-sayi.png",
-        options: ["3.201.005", "3.021.050", "3.210.500", "32.100.005"],
-        correct: 0,
-        explanation: "Basamaklardaki boncuk sayılarını yan yana dizdiğimizde 3.201.005 sayısını elde ederiz."
-      },
-      {
-        id: "m5-1-t9-02",
-        subject: "matematik",
-        term: 1,
-        prompt: "Sayı doğrusunda 'A' noktasına karşılık gelen bileşik kesir hangisidir?",
-        imageUrl: "/images/grade5/matematik/sayi-dogrusu-kesir.png",
-        options: [
-          "\\frac{7}{3}",
-          "\\frac{8}{3}",
-          "\\frac{9}{4}",
-          "\\frac{10}{3}"
+        "id": "m5-1-t9-01",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki bankamatik (ATM) ekranında müşterinin hesap bakiyesi '3.201.005 TL' olarak gösterilmektedir. Bu sayının okunuşu aşağıdakilerden hangisidir?",
+        "imageUrl": "/images/grade5/matematik/test9/m5-t9-img-01.webp",
+        "options": [
+          "Üç milyon yüz iki bin beş",
+          "Üç milyon iki yüz bir bin elli",
+          "Üç milyon iki yüz bir bin beş",
+          "Otuz iki milyon yüz bin beş"
         ],
-        correct: 1,
-        explanation: "2 tamdan sonra 3'te 2 ilerlenmiştir: 2 + \\frac{2}{3} = \\frac{8}{3} olur."
+        "correct": 2,
+        "explanation": "Milyonlar bölüğünde 3 (üç milyon), binler bölüğünde 201 (iki yüz bir bin), birler bölüğünde ise 005 (beş) rakamları vardır."
       },
       {
-        id: "m5-1-t9-03",
-        subject: "matematik",
-        term: 1,
-        prompt: "Görseldeki ABCD karesi için hangi ifade yanlıştır?",
-        imageUrl: "/images/grade5/matematik/kare-ozellik.png",
-        options: [
-          "Tüm iç açılar 90^\\circ'dir",
-          "Kenarlar paraleldir",
-          "Köşegenler farklıdır",
-          "Kenar uzunlukları eşittir"
+        "id": "m5-1-t9-02",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görselde, zıplayarak ilerleyen bir kurbağanın sayı doğrusu üzerindeki konumu modellenmiştir. Kurbağa 2 tam sayısını geçmiş ve sonraki aralığın 3. çizgisinde durmuştur. Her tam sayı arası 4 eş parçaya bölündüğüne göre, kurbağanın bulunduğu nokta hangi bileşik kesri ifade eder?",
+        "imageUrl": "/images/grade5/matematik/test9/m5-t9-img-02.webp",
+        "options": [
+          "7/4",
+          "9/4",
+          "11/4",
+          "13/4"
         ],
-        correct: 2,
-        explanation: "Karenin en temel özelliklerinden biri köşegen uzunluklarının birbirine eşit olmasıdır."
+        "correct": 2,
+        "explanation": "Kurbağa 2 tam ve 3/4 ilerlemiştir (2 tam 3/4). Bu tam sayılı kesri bileşik kesre çevirirsek: (2 x 4) + 3 = 11. Payda değişmez: 11/4."
       },
       {
-        id: "m5-1-t9-04",
-        subject: "matematik",
-        term: 1,
-        prompt: "Görseldeki 100'lük tabloda beyaz boyalı alanı ifade eden kesrin yüzde sembolü hangisidir?",
-        imageUrl: "/images/grade5/matematik/yuzdelik-tablo.png",
-        options: ["\\%35", "\\%45", "\\%55", "\\%65"],
-        correct: 1,
-        explanation: "100 kareden 45 tanesi beyaz boyalı olduğu için \\%45 olarak gösterilir."
-      },
-      {
-        id: "m5-1-t9-05",
-        subject: "matematik",
-        term: 1,
-        prompt: "Görselde verilen 'K' açısının türü aşağıdakilerden hangisidir?",
-        imageUrl: "/images/grade5/matematik/genis-aci.png",
-        options: ["Dar Açı", "Dik Açı", "Geniş Açı", "Doğru Açı"],
-        correct: 2,
-        explanation: "Ölçüsü 90^\\circ ile 180^\\circ arasında olan açılara geniş açı denir."
-      },
-      {
-        id: "m5-1-t9-06",
-        subject: "matematik",
-        term: 1,
-        prompt: "Görseldeki bölme işleminde verilmeyen 'Bölünen' sayı kaçtır?",
-        imageUrl: "/images/grade5/matematik/bolme-sorusu.png",
-        options: ["345", "358", "362", "375"],
-        correct: 1,
-        explanation: "(15 \\times 23) + 13 = 345 + 13 = 358."
-      },
-      {
-        id: "m5-1-t9-07",
-        subject: "matematik",
-        term: 1,
-        prompt: "Şekil örüntüsünde bir sonraki adımda kaç adet kare bulunmalıdır?",
-        imageUrl: "/images/grade5/matematik/sekil-oruntusu.png",
-        options: ["13", "15", "17", "19"],
-        correct: 2,
-        explanation: "Örüntü kuralı 4'er artarak ilerlemektedir: 5, 9, 13, 17..."
-      },
-      {
-        id: "m5-1-t9-08",
-        subject: "matematik",
-        term: 1,
-        prompt: "Görseldeki kesir karşılaştırmasında boş kutuya hangi sembol gelmelidir?",
-        imageUrl: "/images/grade5/matematik/kesir-kiyas.png",
-        options: [">", "<", "=", "\\le"],
-        correct: 0,
-        explanation: "Paydaları eşit olduğunda payı büyük olan daha büyüktür: \\frac{7}{12} > \\frac{5}{12}."
-      },
-      {
-        id: "m5-1-t9-09",
-        subject: "matematik",
-        term: 1,
-        prompt: "Verilen modelde taralı alanı ifade eden tam sayılı kesir hangisidir?",
-        imageUrl: "/images/grade5/matematik/tam-sayili-model.png",
-        options: [
-          "1 \\, \\frac{1}{4}",
-          "2 \\, \\frac{1}{4}",
-          "2 \\, \\frac{3}{4}",
-          "1 \\, \\frac{3}{4}"
+        "id": "m5-1-t9-03",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki kare şeklindeki pencerenin ardışık olmayan iki köşesi arasına dekoratif düz bir çıta (kırmızı çizgi) çekilmiştir. Bu çıtanın geometrideki adı nedir?",
+        "imageUrl": "/images/grade5/matematik/test9/m5-t9-img-03.webp",
+        "options": [
+          "Kenar",
+          "Işın",
+          "Köşegen",
+          "Açıortay"
         ],
-        correct: 2,
-        explanation: "İki tam dolu daire ve üçüncü dairenin 4'te 3'ü: 2 \\, \\frac{3}{4}."
+        "correct": 2,
+        "explanation": "Kare veya dikdörtgen gibi çokgenlerde, komşu olmayan (yan yana olmayan) iki köşeyi birleştiren doğru parçalarına 'Köşegen' denir."
       },
       {
-        id: "m5-1-t9-10",
-        subject: "matematik",
-        term: 1,
-        prompt: "Açı ölçer üzerinde gösterilen açının ölçüsü kaç derecedir?",
-        imageUrl: "/images/grade5/matematik/iletki-sorusu.png",
-        options: ["45^\\circ", "60^\\circ", "120^\\circ", "150^\\circ"],
-        correct: 1,
-        explanation: "İletki üzerindeki merkezden çıkan kollar arasındaki fark 60^\\circ'dir."
-      },
-
-      // --- METİN ODAKLI ZORLAYICI SORULAR ---
-      {
-        id: "m5-1-t9-11",
-        subject: "matematik",
-        term: 1,
-        prompt: "Bir çiftlikteki 450 tavuğun her biri günde 2 yumurta yapmaktadır. 10 günde toplam kaç yumurta elde edilir?",
-        options: ["4500", "9000", "10000", "12000"],
-        correct: 1,
-        explanation: "450 \\times 2 = 900 (bir gün). 900 \\times 10 = 9000."
-      },
-      {
-        id: "m5-1-t9-12",
-        subject: "matematik",
-        term: 1,
-        prompt: "729 sayısının 3^3 sayısına bölümü kaçtır?",
-        options: ["27", "33", "81", "243"],
-        correct: 0,
-        explanation: "3^3 = 27. 729 \\div 27 = 27."
-      },
-      {
-        id: "m5-1-t9-13",
-        subject: "matematik",
-        term: 1,
-        prompt: "Hangi kesir \\frac{1}{2}'den daha büyüktür?",
-        options: [
-          "\\frac{3}{8}",
-          "\\frac{4}{10}",
-          "\\frac{7}{12}",
-          "\\frac{5}{12}"
+        "id": "m5-1-t9-04",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki büyük fayans duvarı 100 adet küçük eş kareden oluşmaktadır. Bu karelerden 45 tanesi maviye boyanmıştır. Mavi boyalı alanı gösteren kesir sembolü aşağıdakilerden hangisidir?",
+        "imageUrl": "/images/grade5/matematik/test9/m5-t9-img-04.webp",
+        "options": [
+          "9/20",
+          "7/20",
+          "4/5",
+          "9/10"
         ],
-        correct: 2,
-        explanation: "\\frac{7}{12} yarımdan (yani 6/12'den) daha büyüktür."
+        "correct": 0,
+        "explanation": "100 kareden 45'i boyalıdır (45/100). Bu kesri en sade haline getirmek için pay ve paydayı 5'e böleriz. 45 ÷ 5 = 9, 100 ÷ 5 = 20. Sonuç 9/20'dir."
       },
       {
-        id: "m5-1-t9-14",
-        subject: "matematik",
-        term: 1,
-        prompt: "Bir çıkarma işleminde fark 2450, çıkan 1320 ise eksilen sayı kaçtır?",
-        options: ["1130", "2770", "3770", "4000"],
-        correct: 2,
-        explanation: "Eksilen = Çıkan + Fark -> 1320 + 2450 = 3770."
-      },
-      {
-        id: "m5-1-t9-15",
-        subject: "matematik",
-        term: 1,
-        prompt: "Aşağıdaki sayılardan hangisi en büyüktür?",
-        options: ["4.500.000", "4.050.000", "4.550.000", "4.505.000"],
-        correct: 2,
-        explanation: "Basamak değerleri kıyaslandığında 550 binlik kısım en büyüktür."
-      },
-      {
-        id: "m5-1-t9-16",
-        subject: "matematik",
-        term: 1,
-        prompt: "24 sayısının \\frac{3}{4}'ü kaçtır?",
-        options: ["12", "16", "18", "20"],
-        correct: 2,
-        explanation: "(24 \\div 4) \\times 3 = 18."
-      },
-      {
-        id: "m5-1-t9-17",
-        subject: "matematik",
-        term: 1,
-        prompt: "Bir açının ölçüsü dik açının ölçüsünden 25^\\circ eksiktir. Bu açı kaç derecedir?",
-        options: ["55^\\circ", "65^\\circ", "75^\\circ", "115^\\circ"],
-        correct: 1,
-        explanation: "Dik açı 90^\\circ'dir. 90 - 25 = 65^\\circ."
-      },
-      {
-        id: "m5-1-t9-18",
-        subject: "matematik",
-        term: 1,
-        prompt: "Bir yolun \\frac{5}{9}'unu giden bir şoförün geriye yolun kaçta kaçı kalmıştır?",
-        options: [
-          "\\frac{4}{5}",
-          "\\frac{4}{9}",
-          "\\frac{9}{5}",
-          "\\frac{1}{9}"
+        "id": "m5-1-t9-05",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki katlanır plaj sandalyesinin oturmalığı ile sırtlığı arasındaki açının ölçüsü 110 derecedir. Bu açıklık hangi açı çeşidine modeldir?",
+        "imageUrl": "/images/grade5/matematik/test9/m5-t9-img-05.webp",
+        "options": [
+          "Dar Açı",
+          "Dik Açı",
+          "Geniş Açı",
+          "Doğru Açı"
         ],
-        correct: 1,
-        explanation: "Yolun tamamı 1 bütündür: \\frac{9}{9} - \\frac{5}{9} = \\frac{4}{9}."
+        "correct": 2,
+        "explanation": "Ölçüsü 90 dereceden büyük ve 180 dereceden küçük olan (dik açıdan daha açık olan) açılara 'Geniş Açı' denir."
       },
       {
-        id: "m5-1-t9-19",
-        subject: "matematik",
-        term: 1,
-        prompt: "420 sayısının 100 katının 500 fazlası kaçtır?",
-        options: ["42.500", "420.500", "4.700", "425.000"],
-        correct: 0,
-        explanation: "420 \\times 100 = 42.000. 42.000 + 500 = 42.500."
+        "id": "m5-1-t9-06",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki oyuncak fabrikasında üretilen 358 adet ayıcık, her biri 15 ayıcık alan kutulara yerleştirilecektir. Paketleme tamamlandığında kutuya sığmayan (artan) ayıcık sayısı kaç olur?",
+        "imageUrl": "/images/grade5/matematik/test9/m5-t9-img-06.webp",
+        "options": [
+          "8",
+          "11",
+          "13",
+          "14"
+        ],
+        "correct": 2,
+        "explanation": "358'i 15'e böldüğümüzde bölüm 23, kalan ise 13 olur. Kutulara sığmayan 13 adet ayıcık kalır."
       },
-     {
-        id: "m5-1-t9-20",
-        subject: "matematik",
-        term: 1,
-        prompt: "Aşağıdaki sembollerden hangisi 'doğru parçası'nı temsil eder?",
-        options: ["[AB]", "AB", "(AB)", "\\overrightarrow{AB}"],
-        correct: 0,
-        explanation: "İki ucu kapalı sınırlı hatlar köşeli parantez [AB] ile gösterilir."
+      {
+        "id": "m5-1-t9-07",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki çiçek yaprakları örüntüsünün 1. adımında 5, 2. adımında 9, 3. adımında 13 yaprak vardır. Aynı kurala göre 4. adımdaki çiçekte kaç adet yaprak olmalıdır?",
+        "imageUrl": "/images/grade5/matematik/test9/m5-t9-img-07.webp",
+        "options": [
+          "15",
+          "16",
+          "17",
+          "19"
+        ],
+        "correct": 2,
+        "explanation": "Örüntü her adımda 4 artarak (5, 9, 13...) devam etmektedir. 3. adıma 4 eklersek: 13 + 4 = 17 yaprak olur."
       },
+      {
+        "id": "m5-1-t9-08",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki aynı büyüklükteki deney tüplerinden A tüpü 5/12, B tüpü ise 7/12 oranında sıvı ile doludur. Buna göre iki tüp arasındaki doğru karşılaştırma sembolü hangisidir?",
+        "imageUrl": "/images/grade5/matematik/test9/m5-t9-img-08.webp",
+        "options": [
+          "A > B",
+          "A < B",
+          "A = B",
+          "B < A"
+        ],
+        "correct": 1,
+        "explanation": "Paydaları eşit olan kesirlerde payı büyük olan daha fazladır. 7/12, 5/12'den büyüktür. Bu nedenle A < B (A küçüktür B'den) sembolü kullanılır."
+      },
+      {
+        "id": "m5-1-t9-09",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki masada 2 adet hiç açılmamış tam çikolata ve 4 eş parçaya bölünüp 3 parçası duran bir çikolata (3/4) vardır. Bu durumu ifade eden tam sayılı kesir hangisidir?",
+        "imageUrl": "/images/grade5/matematik/test9/m5-t9-img-09.webp",
+        "options": [
+          "1 tam 3/4",
+          "2 tam 1/4",
+          "2 tam 3/4",
+          "3 tam 1/4"
+        ],
+        "correct": 2,
+        "explanation": "İki bütün çikolata '2 tam'ı, son çikolata ise '3/4'ü gösterir. Birleşimi 2 tam 3/4 olarak okunur."
+      },
+      {
+        "id": "m5-1-t9-10",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki gönye kullanılarak bir masanın köşesinin açısı ölçülmektedir. Masanın köşesinde oluşan bu açı kaç derecedir?",
+        "imageUrl": "/images/grade5/matematik/test9/m5-t9-img-10.webp",
+        "options": [
+          "45",
+          "60",
+          "90",
+          "180"
+        ],
+        "correct": 2,
+        "explanation": "Dikdörtgen şeklindeki masa veya kağıt köşeleri her zaman dik açıdır. Gönye de dik açı ölçmek için kullanılır ve ölçüsü tam 90 derecedir."
+      },
+      {
+        "id": "m5-1-t9-11",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki tavuk çiftliğinde toplam 450 adet tavuk vardır ve her bir tavuk günde 2 yumurta yapmaktadır. 10 günlük sürenin sonunda çiftlikte toplam kaç yumurta birikir?",
+        "imageUrl": "/images/grade5/matematik/test9/m5-t9-img-11.webp",
+        "options": [
+          "4500",
+          "8000",
+          "9000",
+          "10000"
+        ],
+        "correct": 2,
+        "explanation": "Önce 1 gündeki yumurta sayısını buluruz: 450 x 2 = 900. Sonra bunu 10 gün ile çarparız: 900 x 10 = 9000 yumurta."
+      },
+      {
+        "id": "m5-1-t9-12",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki matematik oyununun ekranında '729 ÷ 3³' işlemi sorulmaktadır. Bu işlemin doğru sonucu aşağıdakilerden hangisidir?",
+        "imageUrl": "/images/grade5/matematik/test9/m5-t9-img-12.webp",
+        "options": [
+          "17",
+          "27",
+          "81",
+          "243"
+        ],
+        "correct": 1,
+        "explanation": "Önce üslü ifadenin değeri bulunur: 3³ (3'ün küpü) = 3 x 3 x 3 = 27'dir. Sonra bölme işlemi yapılır: 729 ÷ 27 = 27."
+      },
+      {
+        "id": "m5-1-t9-13",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki yakıt göstergesi yarım deponun (1/2) biraz üzerindedir. Aşağıdaki kesirlerden hangisi bu göstergedeki yakıt miktarını (yarımdan büyük olanı) temsil ediyor olabilir?",
+        "imageUrl": "/images/grade5/matematik/test9/m5-t9-img-13.webp",
+        "options": [
+          "3/8",
+          "4/10",
+          "7/12",
+          "5/12"
+        ],
+        "correct": 2,
+        "explanation": "Bir kesrin yarımdan büyük olması için payının, paydasının yarısından büyük olması gerekir. 12'nin yarısı 6'dır. 7/12 kesrinin payı (7) yarımdan (6) büyük olduğu için cevap 7/12'dir."
+      },
+      {
+        "id": "m5-1-t9-14",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki otoban haritasında, iki şeritli düz bir yol üzerinde ilerleyen mavi ve kırmızı araçların şeritleri birbirini asla kesmemektedir. Bu yol şeritleri hangi doğru çeşidine örnektir?",
+        "imageUrl": "/images/grade5/matematik/test9/m5-t9-img-14.webp",
+        "options": [
+          "Dik Kesişen Doğrular",
+          "Çakışık Doğrular",
+          "Paralel Doğrular",
+          "Işınlar"
+        ],
+        "correct": 2,
+        "explanation": "Aralarındaki uzaklık hiç değişmeyen ve hiçbir noktada kesişmeyen doğru modellerine 'Paralel Doğrular' denir."
+      },
+      {
+        "id": "m5-1-t9-15",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki araç galerisi tabelasında yazan '4.505.000 TL', '4.550.000 TL', '4.050.000 TL' ve '4.500.000 TL' fiyatlarındaki dört aracın en pahalısı (en büyük sayı) hangisidir?",
+        "imageUrl": "/images/grade5/matematik/test9/m5-t9-img-15.webp",
+        "options": [
+          "4.500.000",
+          "4.050.000",
+          "4.550.000",
+          "4.505.000"
+        ],
+        "correct": 2,
+        "explanation": "Milyonlar bölükleri aynı (4). Binler bölüklerine bakıldığında en büyük sayı 550'dir. Bu nedenle en büyük sayı 4.550.000'dir."
+      },
+      {
+        "id": "m5-1-t9-16",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki meyve sepetinde toplam 24 adet meyve vardır. Bu meyvelerin 3/4'ü elma olduğuna göre sepette kaç adet elma bulunmaktadır?",
+        "imageUrl": "/images/grade5/matematik/test9/m5-t9-img-16.webp",
+        "options": [
+          "12",
+          "16",
+          "18",
+          "20"
+        ],
+        "correct": 2,
+        "explanation": "Bir sayının kesir kadarını bulmak için paydaya bölüp pay ile çarparız. 24 ÷ 4 = 6. Bulunan sonucu pay ile çarparız: 6 x 3 = 18."
+      },
+      {
+        "id": "m5-1-t9-17",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görselde dikdörtgen şeklindeki duvarın köşesine (90 derece) yaslanmış bir merdiven vardır. Merdivenin duvar ile yaptığı açı, dik açıdan 25 derece eksiktir. Bu açı kaç derecedir?",
+        "imageUrl": "/images/grade5/matematik/test9/m5-t9-img-17.webp",
+        "options": [
+          "55",
+          "65",
+          "75",
+          "115"
+        ],
+        "correct": 1,
+        "explanation": "Dik açı her zaman 90 derecedir. 90'dan 25 dereceyi çıkardığımızda 90 - 25 = 65 derece kalır."
+      },
+      {
+        "id": "m5-1-t9-18",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki otobüs, gideceği 9 eşit mesafeli yolun 5'inci durağını geçmiştir (5/9'unu gitmiştir). Otobüsün varış noktasına ulaşması için yolun kaçta kaçı kalmıştır?",
+        "imageUrl": "/images/grade5/matematik/test9/m5-t9-img-18.webp",
+        "options": [
+          "3/9",
+          "4/9",
+          "4/5",
+          "9/5"
+        ],
+        "correct": 1,
+        "explanation": "Yolun tamamı 9/9 (1 bütün) olarak kabul edilir. Gidilen kısmı çıkarırsak: 9/9 - 5/9 = 4/9'u kalmıştır."
+      },
+      {
+        "id": "m5-1-t9-19",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki ürün etiketinde 'Fiyat: 420 TL' yazmaktadır. Bu üründen toptan olarak 100 adet alan bir mağaza sahibi, kasada toplam fiyata 500 TL de kargo ücreti ekletmiştir. Toplam fatura kaç TL olur?",
+        "imageUrl": "/images/grade5/matematik/test9/m5-t9-img-19.webp",
+        "options": [
+          "42.000",
+          "42.500",
+          "47.000",
+          "420.500"
+        ],
+        "correct": 1,
+        "explanation": "420'yi zihinden 100 ile çarpmak için sonuna iki sıfır ekleriz: 42.000 TL. Buna kargo ücretini eklersek: 42.000 + 500 = 42.500 TL."
+      },
+      {
+        "id": "m5-1-t9-20",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki iki raptiye arasına gerdirilmiş ve her iki ucu da raptiye ile sınırlandırılmış lastik bant, geometrideki hangi gösterimi temsil eder?",
+        "imageUrl": "/images/grade5/matematik/test9/m5-t9-img-20.webp",
+        "options": [
+          "[AB]",
+          "AB",
+          "(AB)",
+          "A -> B"
+        ],
+        "correct": 0,
+        "explanation": "İki ucu da kapalı ve sınırlandırılmış olan düz çizgilere 'Doğru Parçası' denir ve köşeli parantez [AB] sembolü ile gösterilir."
+      }
     ],
   // 🚀 TEST 10 BURADA BAĞLANIYOR:
     // Bu satır matematik-test10.ts içindeki tüm soruları buraya çeker.
