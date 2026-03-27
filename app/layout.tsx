@@ -1,32 +1,30 @@
-import './globals.css'
-import type { Metadata, Viewport } from 'next'
-import { Inter } from 'next/font/google'
-import Script from 'next/script'
-import { GoogleAnalytics } from '@next/third-parties/google'
-import { Mic, Headphones, Gamepad2, BarChart3 } from 'lucide-react'
+import './globals.css';
+import type { Metadata, Viewport } from 'next';
+import { Inter } from 'next/font/google';
+import Script from 'next/script';
+import { GoogleAnalytics } from '@next/third-parties/google';
 import 'katex/dist/katex.min.css';
-import Navbar from './components/Navbar' 
-import Footer from './components/Footer'
-import ThemeToggle from './components/ThemeToggle'
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import ThemeToggle from './components/ThemeToggle';
+import { buildOrganizationSchema } from '@/lib/schema';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://testdunya.net'),
   title: {
-    // Gemini 2.0 Flash vurgusu ve Türkçe/İngilizce dengesi sağlandı
-    default: 'TestDünya | Gemini 2.5 Flash Destekli Yapay Zeka Test Platformu',
-    template: '%s | TestDünya'
+    default: 'TestDünya | Ücretsiz Online Test Çöz Platformu',
+    template: '%s | TestDünya',
   },
-  description: 'Türkiye\'nin ilk Gemini 2.5 Flash tabanlı sınav hazırlık platformu. 5. Sınıf, LGS, YKS ve IELTS için kişiselleştirilmiş AI analizi ve ücretsiz deneme sınavları.',
-  keywords: [
-    'yapay zeka test çözme', 'Gemini 2.5 Flash eğitim', '5. sınıf testleri', 'lgs deneme sınavı',
-    'ücretsiz ielts simulator', 'online test çöz', 'yks deneme ai', 'akıllı soru analizi'
-  ],
+  description:
+    '5. sınıf testleri başta olmak üzere farklı seviyelerde online test çözebileceğiniz, görselli sorularla desteklenen ücretsiz eğitim platformu.',
+  keywords: ['5. sınıf testleri', 'online test çöz', 'görselli sorular', 'TestDünya'],
   authors: [{ name: 'TestDünya Ekibi' }],
   icons: { icon: '/favicon.ico' },
   openGraph: {
-    title: 'TestDünya | AI Destekli Sınav Hazırlık Merkezi',
-    description: 'Yanlışlarını Gemini 2.5 Flash teknolojisiyle analiz et, eksiklerini anında kapat. IELTS, YKS ve 5. Sınıf testlerinde yeni nesil deneyim.',
+    title: 'TestDünya | Online Test Çöz ve Kendini Geliştir',
+    description: '5. sınıf dersleri için görselli ve konu odaklı testler. Ücretsiz online çözüm deneyimi.',
     url: 'https://testdunya.net',
     siteName: 'TestDünya',
     locale: 'tr_TR',
@@ -35,7 +33,6 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-    // Google'ın içeriği daha iyi anlaması için ek talimatlar
     googleBot: {
       index: true,
       follow: true,
@@ -44,29 +41,34 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  verification: {
-    // Google Search Console doğrulaması için buraya kodunu ekleyebilirsin
-    // google: 'google-site-verification-kodun',
-  }
-}
+};
 
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
   maximumScale: 1,
   themeColor: '#4f46e5',
-}
+};
 
-// ... QuickLink bileşeni aynı kalabilir ...
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const websiteSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'TestDünya',
+    url: 'https://testdunya.net',
+    description: 'Ücretsiz online test çöz platformu.',
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: 'https://testdunya.net/search?q={search_term_string}',
+      'query-input': 'required name=search_term_string',
+    },
+  };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
   return (
     <html lang="tr" className="scroll-smooth" suppressHydrationWarning>
-      <body className={`${inter.className} bg-white text-black dark:bg-zinc-950 dark:text-white transition-colors duration-300 antialiased relative min-h-screen flex flex-col`}>
+      <body
+        className={`${inter.className} bg-white text-black dark:bg-zinc-950 dark:text-white transition-colors duration-300 antialiased relative min-h-screen flex flex-col`}
+      >
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(){
@@ -81,27 +83,13 @@ export default function RootLayout({
           }}
         />
 
-        {/* --- JSON-LD (Google Rich Snippets için Kritik) --- */}
+        <Script id="structured-data-website" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
         <Script
-          id="structured-data"
+          id="structured-data-organization"
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              "name": "TestDünya",
-              "url": "https://testdunya.net",
-              "description": "Yapay zeka destekli ücretsiz sınav pratik platformu.",
-              "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://testdunya.net/search?q={search_term_string}",
-                "query-input": "required name=search_term_string"
-              }
-            })
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(buildOrganizationSchema()) }}
         />
 
-        {/* --- GOOGLE ADSENSE --- */}
         <Script
           id="adsbygoogle-init"
           strategy="afterInteractive"
@@ -109,17 +97,12 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1700979325865596"
         />
 
-        <aside className="fixed left-4 top-1/2 -translate-y-1/2 z-[100] hidden xl:flex flex-col gap-6">
-          {/* Yan panel butonların mevcut kodunla aynı kalabilir */}
-        </aside>
-
         <ThemeToggle />
-
         <Navbar />
         <main className="flex-1 w-full">{children}</main>
         <Footer />
         <GoogleAnalytics gaId="G-ZQK5MCQ3EG" />
       </body>
     </html>
-  )
+  );
 }

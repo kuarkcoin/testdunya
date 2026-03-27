@@ -1,82 +1,23 @@
-import { MetadataRoute } from 'next'
+import { MetadataRoute } from 'next';
+import { SITE_URL, getAllGrade5Subjects, getAllTestsForSubject } from '@/lib/grade5Seo';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://testdunya.net'
-  const lastMod = new Date()
+  const now = new Date();
 
-  // 1. Ana Statik Sayfalar
-  const mainRoutes = [
-    '',               // Ana Sayfa
-    '/mistakes',      // Hata Analiz Merkezi
-    '/iletisim',      // İletişim
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: lastMod,
-    changeFrequency: 'daily' as const,
-    priority: route === '' ? 1.0 : 0.8,
-  }))
+  const evergreenRoutes = ['/', '/5-sinif', '/iletisim', '/hakkimizda', '/gizlilik', '/cookie', '/mistakes'];
 
-  // 2. Sınav Merkezleri (Yeni Nesil & KaTeX İçerik Vurgusu)
-  const examHubs = [
-    '/5-sinif', // Matematik ve İngilizce Yeni Nesil Görseller Burada!
-    '/8-sinif-lgs',
-    '/yks',
-    '/kpss',
-    '/tus',
-    '/dus',
-    '/hmgs',    // Hukuk sınavları kategorisi eklendi
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: lastMod,
-    changeFrequency: 'daily' as const,
-    priority: 0.9,
-  }))
+  const subjectRoutes = getAllGrade5Subjects().map((subject) => `/5-sinif/${subject.slug}`);
 
-  // 3. Dil Modülleri (IELTS & EnglishMeter Entegrasyonu)
-  const ieltsRoutes = [
-    '/ielts/speaking',
-    '/ielts/writing',
-    '/ielts/listening',
-    '/test/ielts-reading',
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: lastMod,
-    changeFrequency: 'weekly' as const,
-    priority: 0.8,
-  }))
+  const grade5TestRoutes = getAllGrade5Subjects().flatMap((subject) =>
+    getAllTestsForSubject(subject.slug).map((test) => test.path),
+  );
 
-  // 4. AI Destekli Oyunlar (Engagement Artırıcı İçerikler)
-  const gameRoutes = [
-    '/speedrun',
-    '/kelime-avcisi', // Word Hunter
-    '/number-hunter', // Matematik Oyunu
-    '/flashcards',
-    '/iq-test',
-    '/wordle',
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: lastMod,
-    changeFrequency: 'weekly' as const,
-    priority: 0.7,
-  }))
+  const uniqueRoutes = Array.from(new Set([...evergreenRoutes, ...subjectRoutes, ...grade5TestRoutes]));
 
-  // 5. YENİ EKLENEN: Alt Test Sayfaları (Google'ın Görselleri Bulması İçin Şart!)
-  // İleride bu kısmı veritabanından .map() ile dinamik çekebilirsin.
-  const testRoutes = [
-    '/5-sinif/ingilizce/test1',
-    '/5-sinif/ingilizce/test2',
-    '/5-sinif/ingilizce/test3',
-    '/5-sinif/ingilizce/test4',
-    '/5-sinif/ingilizce/test5',
-    '/5-sinif/ingilizce/test6',
-    '/5-sinif/fen/test2',
-    '/5-sinif/matematik/test3',
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: lastMod,
-    changeFrequency: 'weekly' as const,
-    priority: 0.8, 
-  }))
-
-  return [...mainRoutes, ...examHubs, ...ieltsRoutes, ...gameRoutes, ...testRoutes]
+  return uniqueRoutes.map((route) => ({
+    url: `${SITE_URL}${route}`,
+    lastModified: now,
+    changeFrequency: route.includes('/5-sinif/') ? 'weekly' : 'daily',
+    priority: route === '/' ? 1 : route.startsWith('/5-sinif') ? 0.9 : 0.7,
+  }));
 }
