@@ -1938,7 +1938,7 @@ export const matematikData: SubjectData = {
         "id": "m5-1-t8-02",
         "subject": "matematik",
         "term": 1,
-        "prompt": "Görseldeki petek örüntüsünün 1. adımında 3, 2. adımında 8, 3. adımında 13 adet altıgen kullanılmıştır. Buna göre örüntünün 5. adımında kaç adet altıgen bulunmalıdır?",
+        "prompt": "Görseldeki petek örüntüsünün 1. adımında 3, 2. adımında 8, 3. adımında 12 adet altıgen kullanılmıştır. Buna göre örüntünün 5. adımında kaç adet altıgen bulunmalıdır?",
         "imageUrl": "/images/grade5/matematik/test8/m5-t8-img-02.webp",
         "options": [
           "15",
@@ -1946,8 +1946,8 @@ export const matematikData: SubjectData = {
           "19",
           "23"
         ],
-        "correct": 3,
-        "explanation": "Örüntü her adımda 4 artmaktadır. 4. adımda 13 + 5 = 18 altıgen, 5. adımda ise 18 + 5 = 23 altıgen olur."
+        "correct": 1,
+        "explanation": "Örüntü her adımda 5,4,3,2 artmaktadır. 4. adımda 12 + 3 = 15 altıgen, 5. adımda ise 15 + 2 = 17 altıgen olur."
       },
       {
         "id": "m5-1-t8-03",
