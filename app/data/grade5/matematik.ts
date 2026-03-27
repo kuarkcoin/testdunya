@@ -1938,7 +1938,7 @@ export const matematikData: SubjectData = {
         "id": "m5-1-t8-02",
         "subject": "matematik",
         "term": 1,
-        "prompt": "Görseldeki petek örüntüsünün 1. adımında 3, 2. adımında 7, 3. adımında 11 adet altıgen kullanılmıştır. Buna göre örüntünün 5. adımında kaç adet altıgen bulunmalıdır?",
+        "prompt": "Görseldeki petek örüntüsünün 1. adımında 3, 2. adımında 8, 3. adımında 13 adet altıgen kullanılmıştır. Buna göre örüntünün 5. adımında kaç adet altıgen bulunmalıdır?",
         "imageUrl": "/images/grade5/matematik/test8/m5-t8-img-02.webp",
         "options": [
           "15",
@@ -1946,8 +1946,8 @@ export const matematikData: SubjectData = {
           "19",
           "23"
         ],
-        "correct": 2,
-        "explanation": "Örüntü her adımda 4 artmaktadır. 4. adımda 11 + 4 = 15 altıgen, 5. adımda ise 15 + 4 = 19 altıgen olur."
+        "correct": 3,
+        "explanation": "Örüntü her adımda 4 artmaktadır. 4. adımda 13 + 5 = 18 altıgen, 5. adımda ise 18 + 5 = 23 altıgen olur."
       },
       {
         "id": "m5-1-t8-03",
@@ -2013,10 +2013,10 @@ export const matematikData: SubjectData = {
         "id": "m5-1-t8-07",
         "subject": "matematik",
         "term": 1,
-        "prompt": "Görseldeki dev küp, küçük birim küplerin birleştirilmesiyle oluşturulmuştur. Küpün eni, boyu ve yüksekliği 6'şar birim küpten oluşmaktadır. Bu yapının içindeki toplam küçük küp sayısını veren üslü ifade hangisidir?",
+        "prompt": "Görseldeki dev küp, küçük birim küplerin birleştirilmesiyle oluşturulmuştur. Küpün eni, boyu ve yüksekliği 5'er birim küpten oluşmaktadır. Bu yapının içindeki toplam küçük küp sayısını veren üslü ifade hangisidir?",
         "imageUrl": "/images/grade5/matematik/test8/m5-t8-img-07.webp",
         "options": [
-          "6 x 3",
+          "5x 3",
           "6²",
           "3⁶",
           "6³"
@@ -2148,7 +2148,7 @@ export const matematikData: SubjectData = {
         "id": "m5-1-t8-16",
         "subject": "matematik",
         "term": 1,
-        "prompt": "Görseldeki otomobilin hız göstergesi 140 km/h hızını göstermektedir. İbrenin sıfır noktası ile yaptığı açı, 90 dereceyi geçmiştir. Bu açıya ne ad verilir?",
+        "prompt": "Görseldeki otomobilin hız göstergesi 125 km/h hızını göstermektedir. İbrenin sıfır noktası ile yaptığı açı, 90 dereceyi geçmiştir. Bu açıya ne ad verilir?",
         "imageUrl": "/images/grade5/matematik/test8/m5-t8-img-16.webp",
         "options": [
           "Dar Açı",
