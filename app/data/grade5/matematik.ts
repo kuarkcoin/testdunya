@@ -2017,9 +2017,9 @@ export const matematikData: SubjectData = {
         "imageUrl": "/images/grade5/matematik/test8/m5-t8-img-07.webp",
         "options": [
           "5x 3",
-          "6²",
-          "3⁶",
-          "6³"
+          "5²",
+          "5⁶",
+          "5³"
         ],
         "correct": 3,
         "explanation": "Bir küpün hacmi (toplam blok sayısı), bir ayrıtının kendisiyle üç kez çarpılmasıyla bulunur (6 x 6 x 6). Bu ifade '6'nın küpü' (6³) olarak yazılır."
