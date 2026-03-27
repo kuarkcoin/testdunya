@@ -2043,16 +2043,16 @@ export const matematikData: SubjectData = {
         "id": "m5-1-t8-09",
         "subject": "matematik",
         "term": 1,
-        "prompt": "Görseldeki sürahilerden 4 tanesi su ile tamamen doludur. Son sürahinin ise sadece 2/3'ü doludur. Toplam su miktarını gösteren kesrin BİLEŞİK KESİR olarak yazılışı hangisidir?",
+        "prompt": "Görseldeki sürahilerden 3 tanesi su ile tamamen doludur. Son 2 sürahinin ise sadece 2/3'ü doludur. Toplam su miktarını gösteren kesrin BİLEŞİK KESİR olarak yazılışı hangisidir?",
         "imageUrl": "/images/grade5/matematik/test8/m5-t8-img-09.webp",
         "options": [
           "10/3",
-          "14/3",
+          "13/3",
           "16/3",
           "18/3"
         ],
         "correct": 1,
-        "explanation": "Görsel 4 tam 2/3 kesrini ifade eder. Bileşik kesre çevirmek için tam kısım ile payda çarpılıp pay eklenir. (4 x 3) + 2 = 14. Payda aynen kalır: 14/3."
+        "explanation": "Görsel 3 tam 2X(2/3) kesrini ifade eder. Bileşik kesre çevirmek için tam kısım ile payda çarpılıp pay eklenir. (3 x 3) + 4/3 = 13. Payda aynen kalır: 13/3."
       },
       {
         "id": "m5-1-t8-10",
