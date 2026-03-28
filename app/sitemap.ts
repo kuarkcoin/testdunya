@@ -5,26 +5,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const lastMod = new Date()
 
   // 1. Ana Statik Sayfalar
-  const mainRoutes = [
-    '',               // Ana Sayfa
-    '/mistakes',      // Hata Analiz Merkezi
-    '/iletisim',      // İletişim
-  ].map((route) => ({
+  const mainRoutes = ['', '/mistakes', '/iletisim'].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: lastMod,
     changeFrequency: 'daily' as const,
     priority: route === '' ? 1.0 : 0.8,
   }))
 
-  // 2. Sınav Merkezleri (Yeni Nesil & KaTeX İçerik Vurgusu)
+  // 2. Sınav Merkezleri (Görsel ve KaTeX vurgulu ana kategoriler)
   const examHubs = [
-    '/5-sinif', // Matematik ve İngilizce Yeni Nesil Görseller Burada!
-    '/8-sinif-lgs',
-    '/yks',
-    '/kpss',
-    '/tus',
-    '/dus',
-    '/hmgs',    // Hukuk sınavları kategorisi eklendi
+    '/5-sinif', '/8-sinif-lgs', '/yks', '/kpss', '/tus', '/dus', '/hmgs'
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: lastMod,
@@ -32,51 +22,33 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }))
 
-  // 3. Dil Modülleri (IELTS & EnglishMeter Entegrasyonu)
-  const ieltsRoutes = [
-    '/ielts/speaking',
-    '/ielts/writing',
-    '/ielts/listening',
-    '/test/ielts-reading',
+  // 3. Test Sayfaları (İşte burası 400+ sayfanın yönetildiği yer)
+  // NOT: Burayı ileride "const tests = await getTestsFromDB()" şeklinde veritabanına bağla!
+  const generatedTestRoutes = [
+    // 5. Sınıf İngilizce (1'den 100'e kadar otomatik oluşturma örneği)
+    ...Array.from({ length: 100 }, (_, i) => `/5-sinif/ingilizce/test${i + 1}`),
+    // 5. Sınıf Matematik
+    ...Array.from({ length: 150 }, (_, i) => `/5-sinif/matematik/test${i + 1}`),
+    // 5. Sınıf Fen Bilimleri
+    ...Array.from({ length: 150 }, (_, i) => `/5-sinif/fen/test${i + 1}`),
+    // Türkçe (Şekilsiz olsa da SEO için eklenmeli)
+    '/5-sinif/turkce/test1',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: lastMod,
-    changeFrequency: 'weekly' as const,
-    priority: 0.8,
-  }))
-
-  // 4. AI Destekli Oyunlar (Engagement Artırıcı İçerikler)
-  const gameRoutes = [
-    '/speedrun',
-    '/kelime-avcisi', // Word Hunter
-    '/number-hunter', // Matematik Oyunu
-    '/flashcards',
-    '/iq-test',
-    '/wordle',
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: lastMod,
-    changeFrequency: 'weekly' as const,
+    changeFrequency: 'daily' as const, // İçerik her gün artıyorsa daily kalmalı
     priority: 0.7,
   }))
 
-  // 5. YENİ EKLENEN: Alt Test Sayfaları (Google'ın Görselleri Bulması İçin Şart!)
-  // İleride bu kısmı veritabanından .map() ile dinamik çekebilirsin.
-  const testRoutes = [
-    '/5-sinif/ingilizce/test1',
-    '/5-sinif/ingilizce/test2',
-    '/5-sinif/ingilizce/test3',
-    '/5-sinif/ingilizce/test4',
-    '/5-sinif/ingilizce/test5',
-    '/5-sinif/ingilizce/test6',
-    '/5-sinif/fen/test2',
-    '/5-sinif/matematik/test3',
-  ].map((route) => ({
+  // Diğer modülleri (IELTS ve Oyunlar) buraya eklemeye devam edebilirsin...
+  const otherRoutes = [
+    '/ielts/speaking', '/speedrun', '/kelime-avcisi'
+  ].map(route => ({
     url: `${baseUrl}${route}`,
     lastModified: lastMod,
     changeFrequency: 'weekly' as const,
-    priority: 0.8, 
+    priority: 0.6,
   }))
 
-  return [...mainRoutes, ...examHubs, ...ieltsRoutes, ...gameRoutes, ...testRoutes]
+  return [...mainRoutes, ...examHubs, ...generatedTestRoutes, ...otherRoutes]
 }
