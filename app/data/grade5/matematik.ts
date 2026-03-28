@@ -2270,16 +2270,16 @@ export const matematikData: SubjectData = {
         "id": "m5-1-t9-04",
         "subject": "matematik",
         "term": 1,
-        "prompt": "Görseldeki büyük fayans duvarı 100 adet küçük eş kareden oluşmaktadır. Bu karelerden 45 tanesi maviye boyanmıştır. Mavi boyalı alanı gösteren kesir sembolü aşağıdakilerden hangisidir?",
+        "prompt": "Görseldeki büyük fayans duvarı 100 adet küçük eş kareden oluşmaktadır. Bu karelerden 58 tanesi maviye boyanmıştır. Mavi boyalı alanı gösteren kesir sembolü aşağıdakilerden hangisidir?",
         "imageUrl": "/images/grade5/matematik/test9/m5-t9-img-04.webp",
         "options": [
-          "9/20",
-          "7/20",
+          "29/50",
+          "58/100",
           "4/5",
           "9/10"
         ],
         "correct": 0,
-        "explanation": "100 kareden 45'i boyalıdır (45/100). Bu kesri en sade haline getirmek için pay ve paydayı 5'e böleriz. 45 ÷ 5 = 9, 100 ÷ 5 = 20. Sonuç 9/20'dir."
+        "explanation": "100 kareden 58'i boyalıdır (58/100). Bu kesri en sade haline getirmek için pay ve paydayı 2'ye böleriz. 58 ÷ 2 = 29, 100 ÷ 2 = 50. Sonuç 29/50'dir."
       },
       {
         "id": "m5-1-t9-05",
