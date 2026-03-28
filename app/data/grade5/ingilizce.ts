@@ -1668,228 +1668,305 @@ export const ingilizceData: SubjectData = {
     ],
     test7: [
       {
-        id: "e5-1-t7-01",
-        subject: "ingilizce",
-        term: 1,
-        prompt: "I am from Japan. I speak ____ and my nationality is ____.",
-        options: [
-          "Japan / Japanese",
-          "Japanese / Japanese",
-          "Japanese / Japan",
-          "Japan / Japan",
+        "id": "e5-1-t7-01",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Look at the picture. Where is the cat? It is ________ the box.",
+        "imageUrl": "/images/grade5/ingilizce/test7/e5-t7-img-01.webp",
+        "options": [
+          "on",
+          "in",
+          "under",
+          "at"
         ],
-        correct: 1,
-        explanation:
-          "Japonya'dan olan birinin dili de (Japanese) milliyeti de (Japanese) aynı kelimeyle ifade edilir.",
+        "correct": 1,
+        "explanation": "Görselde kedi kutunun 'içinde'dir. Bir şeyin içinde olma durumunu belirtmek için 'in' edatı kullanılır."
       },
       {
-        id: "e5-1-t7-02",
-        subject: "ingilizce",
-        term: 1,
-        prompt:
-          "A: '____ is your favorite subject?' B: 'I love experiments, so it is Science.'",
-        options: ["Where", "Who", "What", "When"],
-        correct: 2,
-        explanation:
-          "Bir şeyin ne olduğunu (favori dersin ne?) sormak için 'What' kullanılır.",
-      },
-      {
-        id: "e5-1-t7-03",
-        subject: "ingilizce",
-        term: 1,
-        prompt:
-          "The library is ____ the park. You must cross the street to go there.",
-        options: ["next to", "opposite", "under", "between"],
-        correct: 1,
-        explanation:
-          "Caddeyi geçmek (cross the street) gerekiyorsa, o yer 'karşıdadır' (opposite).",
-      },
-      {
-        id: "e5-1-t7-04",
-        subject: "ingilizce",
-        term: 1,
-        prompt:
-          "I ____ my teeth after breakfast, but my little sister ____ them before breakfast.",
-        options: [
-          "brush / brush",
-          "brushes / brush",
-          "brush / brushes",
-          "brushes / brushes",
+        "id": "e5-1-t7-02",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Where are the books? They are ________ the desk.",
+        "imageUrl": "/images/grade5/ingilizce/test7/e5-t7-img-02.webp",
+        "options": [
+          "on",
+          "in",
+          "at",
+          "under"
         ],
-        correct: 2,
-        explanation:
-          "'I' öznesi takısız (brush), 'she' (little sister) öznesi '-es' takılı (brushes) fiil alır.",
+        "correct": 0,
+        "explanation": "Kitaplar masanın 'üzerinde' (yüzeyine temas ediyor) olduğu için 'on' edatı kullanılır."
       },
       {
-        id: "e5-1-t7-05",
-        subject: "ingilizce",
-        term: 1,
-        prompt:
-          "A: 'What is the matter with her?' B: 'She has a ____. She shouldn't drink cold beverages.'",
-        options: ["broken arm", "sore throat", "backache", "headache"],
-        correct: 1,
-        explanation:
-          "Soğuk içecekler içmemesi gereken birinin boğazı ağrıyordur (sore throat).",
-      },
-      {
-        id: "e5-1-t7-06",
-        subject: "ingilizce",
-        term: 1,
-        prompt:
-          "The mosque is ____ the museum and the bank. It is in the middle.",
-        options: ["between", "behind", "near", "on"],
-        correct: 0,
-        explanation:
-          "İki yerin 'ortasında' (in the middle) olma durumu 'between' (arasında) edatıyla anlatılır.",
-      },
-      {
-        id: "e5-1-t7-07",
-        subject: "ingilizce",
-        term: 1,
-        prompt: "I am good at solving problems. My favorite lesson is ____.",
-        options: ["Music", "P.E.", "Maths", "Art"],
-        correct: 2,
-        explanation:
-          "Problem çözme yeteneği Matematik (Maths) dersiyle ilgilidir.",
-      },
-      {
-        id: "e5-1-t7-08",
-        subject: "ingilizce",
-        term: 1,
-        prompt: "A: 'Can you play chess?' B: 'No, but I ____ play checkers.'",
-        options: ["can", "am", "can't", "is"],
-        correct: 0,
-        explanation:
-          "'But' bağlacı zıtlık verir. İlk kısım 'No' (can't) ise ikinci kısım 'can' olmalıdır.",
-      },
-      {
-        id: "e5-1-t7-09",
-        subject: "ingilizce",
-        term: 1,
-        prompt: "What time is it? (10:15)",
-        options: [
-          "It is quarter to ten.",
-          "It is quarter past ten.",
-          "It is half past ten.",
-          "It is ten o'clock.",
+        "id": "e5-1-t7-03",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Look at the dog. It is sleeping ________ the bed.",
+        "imageUrl": "/images/grade5/ingilizce/test7/e5-t7-img-03.webp",
+        "options": [
+          "in",
+          "on",
+          "at",
+          "under"
         ],
-        correct: 1,
-        explanation: "10:15, 'onu çeyrek geçiyor' (quarter past ten) demektir.",
+        "correct": 3,
+        "explanation": "Köpek yatağın 'altında' uyumaktadır. Altında anlamı katan edat 'under' kelimesidir."
       },
       {
-        id: "e5-1-t7-10",
-        subject: "ingilizce",
-        term: 1,
-        prompt: "I want to watch a movie. Where should I go?",
-        options: ["Bakery", "Pharmacy", "Cinema", "Library"],
-        correct: 2,
-        explanation: "Film izlemek için sinemaya (cinema) gidilir.",
-      },
-      {
-        id: "e5-1-t7-11",
-        subject: "ingilizce",
-        term: 1,
-        prompt: "Which of the following is an 'outdoor' game?",
-        options: ["Hide and seek", "Board games", "Chess", "Computer games"],
-        correct: 0,
-        explanation: "Saklambaç (Hide and seek) dışarıda oynanan bir oyundur.",
-      },
-      {
-        id: "e5-1-t7-12",
-        subject: "ingilizce",
-        term: 1,
-        prompt:
-          "A: 'I have a high temperature.' B: 'You ____ stay in bed and rest.'",
-        options: ["can't", "should", "shouldn't", "mustn't"],
-        correct: 1,
-        explanation:
-          "Ateşi olan birine yatakta kalıp dinlenmesi tavsiye edilir (should).",
-      },
-      {
-        id: "e5-1-t7-13",
-        subject: "ingilizce",
-        term: 1,
-        prompt: "To go to the toy shop, go straight and ____ the first right.",
-        options: ["look", "turn", "take", "cross"],
-        correct: 2,
-        explanation:
-          "Yol tariflerinde 'sağdan sap' derken 'take the first/second right' kullanılır.",
-      },
-      {
-        id: "e5-1-t7-14",
-        subject: "ingilizce",
-        term: 1,
-        prompt:
-          "A: '____ languages do you speak?' B: 'Two. German and English.'",
-        options: ["Where", "What", "How many", "Who"],
-        correct: 2,
-        explanation:
-          "Kaç tane (sayılabilen) olduğunu sormak için 'How many' kullanılır.",
-      },
-      {
-        id: "e5-1-t7-15",
-        subject: "ingilizce",
-        term: 1,
-        prompt: "I enjoy ____. I have a tent and a flashlight.",
-        options: ["fishing", "camping", "hiking", "cycling"],
-        correct: 1,
-        explanation:
-          "Çadır (tent) ve el feneri (flashlight) kamp yapmak (camping) ile ilgilidir.",
-      },
-      {
-        id: "e5-1-t7-16",
-        subject: "ingilizce",
-        term: 1,
-        prompt: "My father is from the UK. He is ____.",
-        options: ["American", "German", "British", "French"],
-        correct: 2,
-        explanation:
-          "Birleşik Krallık (UK) vatandaşı olan kişilere 'British' denir.",
-      },
-      {
-        id: "e5-1-t7-17",
-        subject: "ingilizce",
-        term: 1,
-        prompt:
-          "A: 'Excuse me, ____ is the post office?' B: 'It is next to the cafe.'",
-        options: ["What", "Who", "Where", "When"],
-        correct: 2,
-        explanation: "Yer sormak için 'Where' kullanılır.",
-      },
-      {
-        id: "e5-1-t7-18",
-        subject: "ingilizce",
-        term: 1,
-        prompt: "Which matching is 'WRONG'?",
-        options: [
-          "Art - Painting",
-          "Maths - Numbers",
-          "P.E. - Singing",
-          "Science - Experiments",
+        "id": "e5-1-t7-04",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Where is the boy? He is waiting ________ the bus stop.",
+        "imageUrl": "/images/grade5/ingilizce/test7/e5-t7-img-04.webp",
+        "options": [
+          "at",
+          "in",
+          "on",
+          "under"
         ],
-        correct: 2,
-        explanation:
-          "P.E. (Beden Eğitimi) dersi sporla ilgilidir, şarkı söylemek (singing) Müzik dersiyle ilgilidir.",
+        "correct": 0,
+        "explanation": "Otobüs durağı, kapı önü gibi belirli bir noktada bekleme durumlarında 'at' (at the bus stop) kullanılır."
       },
       {
-        id: "e5-1-t7-19",
-        subject: "ingilizce",
-        term: 1,
-        prompt: "I don't like horror movies. They are ____.",
-        options: ["funny", "frightening", "exciting", "enjoyable"],
-        correct: 1,
-        explanation:
-          "Korku filmlerini sevmeme nedeni onların 'korkutucu' (frightening) olmasıdır.",
+        "id": "e5-1-t7-05",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Look at the clock. I wake up ________ 08:00 every morning.",
+        "imageUrl": "/images/grade5/ingilizce/test7/e5-t7-img-05.webp",
+        "options": [
+          "in",
+          "on",
+          "at",
+          "under"
+        ],
+        "correct": 2,
+        "explanation": "İngilizcede saatleri söylerken her zaman 'at' edatı kullanılır (at 8 o'clock)."
       },
       {
-        id: "e5-1-t7-20",
-        subject: "ingilizce",
-        term: 1,
-        prompt: "Sixty + Twenty = ?",
-        options: ["Seventy", "Eighty", "Ninety", "One hundred"],
-        correct: 1,
-        explanation: "60 + 20 = 80 (Eighty).",
+        "id": "e5-1-t7-06",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Look at the calendar. We play basketball ________ Sundays.",
+        "imageUrl": "/images/grade5/ingilizce/test7/e5-t7-img-06.webp",
+        "options": [
+          "in",
+          "at",
+          "on",
+          "under"
+        ],
+        "correct": 2,
+        "explanation": "Gün isimlerinden (Sunday, Monday vb.) önce daima 'on' edatı gelir."
       },
+      {
+        "id": "e5-1-t7-07",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Look at the visual. My birthday is ________ May.",
+        "imageUrl": "/images/grade5/ingilizce/test7/e5-t7-img-07.webp",
+        "options": [
+          "at",
+          "on",
+          "under",
+          "in"
+        ],
+        "correct": 3,
+        "explanation": "Aylardan (May, June vb.) ve yıllardan önce İngilizcede 'in' edatı kullanılır (in May)."
+      },
+      {
+        "id": "e5-1-t7-08",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Where is the clock? The clock is ________ the wall.",
+        "imageUrl": "/images/grade5/ingilizce/test7/e5-t7-img-08.webp",
+        "options": [
+          "on",
+          "in",
+          "at",
+          "under"
+        ],
+        "correct": 0,
+        "explanation": "Duvar (wall) bir yüzeydir. Bir yüzeyin üzerinde asılı/duruyor olma durumunda 'on' (on the wall) kullanılır."
+      },
+      {
+        "id": "e5-1-t7-09",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Someone is knocking. There is a man ________ the door.",
+        "imageUrl": "/images/grade5/ingilizce/test7/e5-t7-img-09.webp",
+        "options": [
+          "in",
+          "under",
+          "at",
+          "on"
+        ],
+        "correct": 2,
+        "explanation": "Kapıda (kapının önünde/o noktada) bekleyen biri için belirli bir konum bildiren 'at the door' ifadesi kullanılır."
+      },
+      {
+        "id": "e5-1-t7-10",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "It is very hot. The dog is sleeping ________ the tree.",
+        "imageUrl": "/images/grade5/ingilizce/test7/e5-t7-img-10.webp",
+        "options": [
+          "in",
+          "on",
+          "at",
+          "under"
+        ],
+        "correct": 3,
+        "explanation": "Görselde köpek ağacın gölgesinde, yani 'altında' yatmaktadır. Bu yüzden 'under' kullanılır."
+      },
+      {
+        "id": "e5-1-t7-11",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "What a beautiful day! There are many clouds ________ the sky.",
+        "imageUrl": "/images/grade5/ingilizce/test7/e5-t7-img-11.webp",
+        "options": [
+          "on",
+          "at",
+          "in",
+          "under"
+        ],
+        "correct": 2,
+        "explanation": "Gökyüzü (sky) 3 boyutlu geniş bir alan olarak kabul edilir, bu nedenle gökyüzünde derken 'in the sky' kalıbı kullanılır."
+      },
+      {
+        "id": "e5-1-t7-12",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Look at the moon and stars. Bats fly ________ night.",
+        "imageUrl": "/images/grade5/ingilizce/test7/e5-t7-img-12.webp",
+        "options": [
+          "in",
+          "on",
+          "under",
+          "at"
+        ],
+        "correct": 3,
+        "explanation": "Günün bölümlerinde 'in the morning/afternoon' denilse de, gece için özel bir istisna vardır ve daima 'at night' denir."
+      },
+      {
+        "id": "e5-1-t7-13",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Look at this old photo. Who is the tall man ________ the picture?",
+        "imageUrl": "/images/grade5/ingilizce/test7/e5-t7-img-13.webp",
+        "options": [
+          "on",
+          "at",
+          "in",
+          "under"
+        ],
+        "correct": 2,
+        "explanation": "Fotoğrafların, resimlerin veya kitapların içindeki nesnelerden/kişilerden bahsederken 'in' (in the picture) kullanılır."
+      },
+      {
+        "id": "e5-1-t7-14",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "I love this channel. There is a great cartoon ________ TV right now.",
+        "imageUrl": "/images/grade5/ingilizce/test7/e5-t7-img-14.webp",
+        "options": [
+          "in",
+          "on",
+          "at",
+          "under"
+        ],
+        "correct": 1,
+        "explanation": "Televizyon, internet veya radyo gibi elektronik yayın/ekranlardan bahsederken her zaman 'on' (on TV, on the internet) kullanılır."
+      },
+      {
+        "id": "e5-1-t7-15",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Look at the visual. We don't go to school ________ the weekend.",
+        "imageUrl": "/images/grade5/ingilizce/test7/e5-t7-img-15.webp",
+        "options": [
+          "in",
+          "on",
+          "under",
+          "at"
+        ],
+        "correct": 3,
+        "explanation": "Hafta sonu derken İngiliz İngilizcesinde (ve okullarımızdaki müfredatta) yaygın olarak 'at the weekend' kalıbı kullanılır."
+      },
+      {
+        "id": "e5-1-t7-16",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Look at the map. She lives ________ Istanbul.",
+        "imageUrl": "/images/grade5/ingilizce/test7/e5-t7-img-16.webp",
+        "options": [
+          "at",
+          "on",
+          "in",
+          "under"
+        ],
+        "correct": 2,
+        "explanation": "Şehir, ülke veya kıta gibi geniş coğrafi alanların içinde yaşandığını belirtmek için 'in' (in Istanbul) kullanılır."
+      },
+      {
+        "id": "e5-1-t7-17",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Look up! There is a big spider ________ the ceiling.",
+        "imageUrl": "/images/grade5/ingilizce/test7/e5-t7-img-17.webp",
+        "options": [
+          "in",
+          "on",
+          "at",
+          "under"
+        ],
+        "correct": 1,
+        "explanation": "Tavan (ceiling) düz bir yüzeydir. Yüzeye tutunan/yapışan nesneler için (tıpkı duvardaki gibi) 'on' kullanılır."
+      },
+      {
+        "id": "e5-1-t7-18",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Where are the students? They are ________ school right now.",
+        "imageUrl": "/images/grade5/ingilizce/test7/e5-t7-img-18.webp",
+        "options": [
+          "in",
+          "on",
+          "at",
+          "under"
+        ],
+        "correct": 2,
+        "explanation": "Okul, hastane, iş yeri gibi kurumsal yerlerde (o anda o kurumda bulunma anlamında) genellikle 'at' (at school) kullanılır."
+      },
+      {
+        "id": "e5-1-t7-19",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Look at the living room. The nice rug is ________ the floor.",
+        "imageUrl": "/images/grade5/ingilizce/test7/e5-t7-img-19.webp",
+        "options": [
+          "in",
+          "on",
+          "at",
+          "under"
+        ],
+        "correct": 1,
+        "explanation": "Zemin (floor) bir yüzeydir. Halı da bu yüzeyin üzerine serildiği için 'on the floor' denir."
+      },
+      {
+        "id": "e5-1-t7-20",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Look at the room in the picture. Which sentence is CORRECT?",
+        "imageUrl": "/images/grade5/ingilizce/test7/e5-t7-img-20.webp",
+        "options": [
+          "The dog is on the table.",
+          "The bird is under the cage.",
+          "The cat is on the sofa.",
+          "The cat is at the sofa."
+        ],
+        "correct": 2,
+        "explanation": "Görselde kedi kanepenin üzerindedir (on the sofa). Köpek masanın altında (under), kuş ise kafesin içindedir (in)."
+      }
     ],
     test8: [
       {
