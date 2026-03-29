@@ -2131,8 +2131,8 @@ export const ingilizceData: SubjectData = {
           "Twelve",
           "Thirteen"
         ],
-        "correct": 2,
-        "explanation": "Görseldeki pastanın üzerinde tam 12 adet mum bulunmaktadır. Bu yüzden çocuk on iki (Twelve) yaşındadır."
+        "correct": 1,
+        "explanation": "Görseldeki pastanın üzerinde tam 11 adet mum bulunmaktadır. Bu yüzden çocuk on bir (Eleven) yaşındadır."
       },
       {
         "id": "e5-1-t8-12",
