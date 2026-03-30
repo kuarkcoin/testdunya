@@ -2553,21 +2553,19 @@ export const ingilizceData: SubjectData = {
     "explanation": "'Cold' (soğuk) tek hecelidir ve karşılaştırma durumunda sonuna '-er' takısı alarak 'colder' olur."
   },
   {
-    "id": "e5-1-t9-20",
-    "subject": "ingilizce",
-    "term": 1,
-    "prompt": "Fill in the blank: A house is ________ than a flat. (expensive)",
-    "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-20.webp",
-    "options": [
-      "expensiver",
-      "more expensive",
-      "expensive",
-      "most expensive"
-    ],
-    "correct": 1,
-    "explanation": "'Expensive' (pahalı) çok heceli bir sıfattır, bu yüzden önüne 'more' (daha) getirilerek karşılaştırma yapılır."
-  }
+  "id": "e5-1-t9-20",
+  "subject": "ingilizce",
+  "term": 1,
+  "prompt": "Fill in the blank: A house is ________ than a flat. (expensive)",
+  "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-20.webp",
+  "options": [
+    "expensiver",
+    "more expensive",
+    "expensive",
+    "most expensive"
+  ],
+  "correct": 1,
+  "explanation": "'Expensive' (pahalı) çok heceli bir sıfattır, bu yüzden önüne 'more' (daha) getirilerek karşılaştırma yapılır."
+}
 ],
-test2: [],-- DOSYANIN EN SONU
- 
-  
+test2: [],
