@@ -2270,13 +2270,12 @@ export const ingilizceData: SubjectData = {
         "explanation": "Görselde kitaplarla dolu bir odada 'Keep Quiet' (Sessiz Olun) işareti yapan bir görsel var. Bu kural en belirgin olarak kütüphanelerde (library) geçerlidir."
       }
     ],
-    test9: [
+  test9: [
       {
         "id": "e5-1-t9-01",
         "subject": "ingilizce",
         "term": 1,
         "prompt": "Read the dialogue. Mia: 'What are you doing this afternoon?' Tom: 'I ________ my room right now.'",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-01.webp",
         "options": [
           "tidy",
           "am tidying",
@@ -2291,7 +2290,6 @@ export const ingilizceData: SubjectData = {
         "subject": "ingilizce",
         "term": 1,
         "prompt": "Read the sentence. 'Tom usually ________ computer games in the afternoon, but today is different.'",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-02.webp",
         "options": [
           "plays",
           "play",
@@ -2306,7 +2304,6 @@ export const ingilizceData: SubjectData = {
         "subject": "ingilizce",
         "term": 1,
         "prompt": "Read the text. 'My sister is preparing the food and my parents ________ a barbecue in the garden today.'",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-03.webp",
         "options": [
           "has",
           "have",
@@ -2321,7 +2318,6 @@ export const ingilizceData: SubjectData = {
         "subject": "ingilizce",
         "term": 1,
         "prompt": "Read the text. 'Hello! I'm Bruce. It is 6:30 pm now. My mother ________ dinner in the kitchen.'",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-04.webp",
         "options": [
           "prepares",
           "prepare",
@@ -2336,7 +2332,6 @@ export const ingilizceData: SubjectData = {
         "subject": "ingilizce",
         "term": 1,
         "prompt": "Read the text. 'Bruce and his sister play chess in the evening because they ________ playing board games.'",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-05.webp",
         "options": [
           "likes",
           "like",
@@ -2350,8 +2345,7 @@ export const ingilizceData: SubjectData = {
         "id": "e5-1-t9-06",
         "subject": "ingilizce",
         "term": 1,
-        "prompt": "Look at the kitchen picture. ________ two knives on the table.",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-06.webp",
+        "prompt": "Fill in the blank with the correct option: ________ two knives on the kitchen table.",
         "options": [
           "There is",
           "There are",
@@ -2359,14 +2353,13 @@ export const ingilizceData: SubjectData = {
           "Are there"
         ],
         "correct": 1,
-        "explanation": "Mutfaktaki 'iki bıçak' (two knives) çoğuldur. Çoğul nesnelerin varlığını belirtmek için 'There are' kalıbı kullanılır."
+        "explanation": "Cümledeki 'iki bıçak' (two knives) çoğuldur. Çoğul nesnelerin varlığını belirtmek için 'There are' kalıbı kullanılır."
       },
       {
         "id": "e5-1-t9-07",
         "subject": "ingilizce",
         "term": 1,
-        "prompt": "Look at the living room picture. ________ a TV on the wall.",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-07.webp",
+        "prompt": "Fill in the blank with the correct option: ________ a TV on the wall in the living room.",
         "options": [
           "There are",
           "Are there",
@@ -2374,14 +2367,13 @@ export const ingilizceData: SubjectData = {
           "Is there"
         ],
         "correct": 2,
-        "explanation": "Salondaki 'bir televizyon' (a TV) tekildir. Tekil nesnelerin varlığını belirtmek için 'There is' kalıbı kullanılır."
+        "explanation": "Cümledeki 'bir televizyon' (a TV) tekildir. Tekil nesnelerin varlığını belirtmek için 'There is' kalıbı kullanılır."
       },
       {
         "id": "e5-1-t9-08",
         "subject": "ingilizce",
         "term": 1,
-        "prompt": "Look at the kitchen picture. ________ an oven in the kitchen?",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-08.webp",
+        "prompt": "Complete the question: ________ an oven in the kitchen?",
         "options": [
           "Are there",
           "Is there",
@@ -2395,8 +2387,7 @@ export const ingilizceData: SubjectData = {
         "id": "e5-1-t9-09",
         "subject": "ingilizce",
         "term": 1,
-        "prompt": "Look at the living room picture. Are there any pillows on the sofa? - Yes, ________.",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-09.webp",
+        "prompt": "Read the short dialogue. A: 'Are there any pillows on the sofa?' B: 'Yes, ________.'",
         "options": [
           "there are",
           "there is",
@@ -2404,14 +2395,13 @@ export const ingilizceData: SubjectData = {
           "it is"
         ],
         "correct": 0,
-        "explanation": "Kanepede yastıklar (çoğul) olduğu için 'Are there...?' sorusuna 'Yes, there are' şeklinde kısa cevap verilir."
+        "explanation": "'Are there...?' (Çoğul) sorusuna olumlu cevap verilirken 'Yes, there are' kalıbı kullanılır."
       },
       {
         "id": "e5-1-t9-10",
         "subject": "ingilizce",
         "term": 1,
         "prompt": "Fill in the blank: A castle is ________ than a flat. (large)",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-10.webp",
         "options": [
           "more large",
           "larger",
@@ -2426,7 +2416,6 @@ export const ingilizceData: SubjectData = {
         "subject": "ingilizce",
         "term": 1,
         "prompt": "Fill in the blank: A village is ________ than a city. (peaceful)",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-11.webp",
         "options": [
           "peacefuler",
           "peaceful",
@@ -2441,7 +2430,6 @@ export const ingilizceData: SubjectData = {
         "subject": "ingilizce",
         "term": 1,
         "prompt": "Fill in the blank: A city is ________ than a town. (crowded)",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-12.webp",
         "options": [
           "more crowded",
           "crowdeder",
@@ -2456,7 +2444,6 @@ export const ingilizceData: SubjectData = {
         "subject": "ingilizce",
         "term": 1,
         "prompt": "Fill in the blank: A shopping mall is ________ than a sports centre. (big)",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-13.webp",
         "options": [
           "biger",
           "more big",
@@ -2471,7 +2458,6 @@ export const ingilizceData: SubjectData = {
         "subject": "ingilizce",
         "term": 1,
         "prompt": "Fill in the blank: A flat is ________ than a house with a garden. (small)",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-14.webp",
         "options": [
           "small",
           "more small",
@@ -2486,7 +2472,6 @@ export const ingilizceData: SubjectData = {
         "subject": "ingilizce",
         "term": 1,
         "prompt": "Fill in the blank: Our new house is ________ than our old house. (comfortable)",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-15.webp",
         "options": [
           "comfortabler",
           "comfortable",
@@ -2501,7 +2486,6 @@ export const ingilizceData: SubjectData = {
         "subject": "ingilizce",
         "term": 1,
         "prompt": "Fill in the blank: Traffic in the city centre is ________ than in a town. (bad)",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-16.webp",
         "options": [
           "bader",
           "worse",
@@ -2516,7 +2500,6 @@ export const ingilizceData: SubjectData = {
         "subject": "ingilizce",
         "term": 1,
         "prompt": "Fill in the blank: A balcony is ________ than a corridor. (wide)",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-17.webp",
         "options": [
           "wider",
           "more wide",
@@ -2531,7 +2514,6 @@ export const ingilizceData: SubjectData = {
         "subject": "ingilizce",
         "term": 1,
         "prompt": "Fill in the blank: My room is ________ than yours. (good)",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-18.webp",
         "options": [
           "gooder",
           "more good",
@@ -2546,7 +2528,6 @@ export const ingilizceData: SubjectData = {
         "subject": "ingilizce",
         "term": 1,
         "prompt": "Fill in the blank: Canada is ________ than Turkiye. (cold)",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-19.webp",
         "options": [
           "cold",
           "more cold",
@@ -2561,7 +2542,6 @@ export const ingilizceData: SubjectData = {
         "subject": "ingilizce",
         "term": 1,
         "prompt": "Fill in the blank: A house is ________ than a flat. (expensive)",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-20.webp",
         "options": [
           "expensiver",
           "more expensive",
