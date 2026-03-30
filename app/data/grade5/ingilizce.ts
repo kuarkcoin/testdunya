@@ -2568,7 +2568,6 @@ export const ingilizceData: SubjectData = {
         explanation: "'Expensive' (pahalı) çok heceli bir sıfattır, bu yüzden önüne 'more' (daha) getirilerek karşılaştırma yapılır."
       }
     ],
-  },
   term2: {
     test1: [
       {
