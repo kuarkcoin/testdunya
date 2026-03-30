@@ -2267,485 +2267,307 @@ export const ingilizceData: SubjectData = {
           "In a cafe"
         ],
         test9: [
-      {
-        "id": "e5-1-t9-01",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Read the dialogue. Mia: 'What are you doing this afternoon?' Tom: 'I ________ my room right now.'",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-01.webp",
-        "options": [
-          "tidy",
-          "am tidying",
-          "tidies",
-          "is tidying"
-        ],
-        "correct": 1,
-        "explanation": "Diyalogda 'right now' (şu an) ifadesi kullanıldığı için Şimdiki Zaman (Present Continuous) gerekir. 'I' öznesi ile 'am + V(ing)' kullanılır."
-      },
-      {
-        "id": "e5-1-t9-02",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Read the sentence. 'Tom usually ________ computer games in the afternoon, but today is different.'",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-02.webp",
-        "options": [
-          "plays",
-          "play",
-          "is playing",
-          "playing"
-        ],
-        "correct": 0,
-        "explanation": "'Usually' (genellikle) kelimesi Geniş Zaman (Simple Present) gerektirir. 'Tom' (He) öznesi olduğu için fiil '-s' takısı alır (plays)."
-      },
-      {
-        "id": "e5-1-t9-03",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Read the text. 'My sister is preparing the food and my parents ________ a barbecue in the garden today.'",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-03.webp",
-        "options": [
-          "has",
-          "have",
-          "is having",
-          "are having"
-        ],
-        "correct": 3,
-        "explanation": "'Today' (bugün) kelimesi ve devam eden bir eylem anlatıldığı için Şimdiki Zaman kullanılır. 'My parents' (Onlar) çoğul olduğu için 'are having' olur."
-      },
-      {
-        "id": "e5-1-t9-04",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Read the text. 'Hello! I'm Bruce. It is 6:30 pm now. My mother ________ dinner in the kitchen.'",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-04.webp",
-        "options": [
-          "prepares",
-          "prepare",
-          "is preparing",
-          "are preparing"
-        ],
-        "correct": 2,
-        "explanation": "Bruce o an (now) saat 6:30'da olanları anlatmaktadır. 'My mother' (She) tekil özne olduğu için 'is preparing' (hazırlıyor) kullanılır."
-      },
-      {
-        "id": "e5-1-t9-05",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Read the text. 'Bruce and his sister play chess in the evening because they ________ playing board games.'",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-05.webp",
-        "options": [
-          "likes",
-          "like",
-          "are liking",
-          "is liking"
-        ],
-        "correct": 1,
-        "explanation": "Sevmek, hoşlanmak (like) fiili Geniş Zaman ile kullanılır. 'They' (Onlar) öznesi olduğu için fiil ek almaz (like)."
-      },
-      {
-        "id": "e5-1-t9-06",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Look at the kitchen picture. ________ two knives on the table.",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-06.webp",
-        "options": [
-          "There is",
-          "There are",
-          "Is there",
-          "Are there"
-        ],
-        "correct": 1,
-        "explanation": "Mutfaktaki 'iki bıçak' (two knives) çoğuldur. Çoğul nesnelerin varlığını belirtmek için 'There are' kalıbı kullanılır."
-      },
-      {
-        "id": "e5-1-t9-07",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Look at the living room picture. ________ a TV on the wall.",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-07.webp",
-        "options": [
-          "There are",
-          "Are there",
-          "There is",
-          "Is there"
-        ],
-        "correct": 2,
-        "explanation": "Salondaki 'bir televizyon' (a TV) tekildir. Tekil nesnelerin varlığını belirtmek için 'There is' kalıbı kullanılır."
-      },
-      {
-        "id": "e5-1-t9-08",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Look at the kitchen picture. ________ an oven in the kitchen?",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-08.webp",
-        "options": [
-          "Are there",
-          "Is there",
-          "There is",
-          "There are"
-        ],
-        "correct": 1,
-        "explanation": "Soru işareti (?) olan bu cümlede 'bir fırın' (an oven) sorulmaktadır. Tekil soru kalıbı 'Is there' ile başlar."
-      },
-      {
-        "id": "e5-1-t9-09",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Look at the living room picture. Are there any pillows on the sofa? - Yes, ________.",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-09.webp",
-        "options": [
-          "there are",
-          "there is",
-          "they are",
-          "it is"
-        ],
-        "correct": 0,
-        "explanation": "Kanepede yastıklar (çoğul) olduğu için 'Are there...?' sorusuna 'Yes, there are' şeklinde kısa cevap verilir."
-      },
-      {
-        "id": "e5-1-t9-10",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Fill in the blank: A castle is ________ than a flat. (large)",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-10.webp",
-        "options": [
-          "more large",
-          "larger",
-          "largest",
-          "large"
-        ],
-        "correct": 1,
-        "explanation": "İki şeyi karşılaştırırken (Comparative) 'large' gibi tek heceli sıfatların sonuna '-r' veya '-er' eklenir. Doğru cevap 'larger' (daha büyük) olur."
-      },
-      {
-        "id": "e5-1-t9-11",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Fill in the blank: A village is ________ than a city. (peaceful)",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-11.webp",
-        "options": [
-          "peacefuler",
-          "peaceful",
-          "more peaceful",
-          "most peaceful"
-        ],
-        "correct": 2,
-        "explanation": "'Peaceful' (huzurlu) çok heceli bir kelimedir. Çok heceli kelimelerin önüne 'more' (daha) getirilerek karşılaştırma yapılır."
-      },
-      {
-        "id": "e5-1-t9-12",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Fill in the blank: A city is ________ than a town. (crowded)",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-12.webp",
-        "options": [
-          "more crowded",
-          "crowdeder",
-          "crowded",
-          "crowdest"
-        ],
-        "correct": 0,
-        "explanation": "'Crowded' (kalabalık) çok heceli bir sıfat olduğu için 'daha kalabalık' demek için başına 'more' getirilir."
-      },
-      {
-        "id": "e5-1-t9-13",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Fill in the blank: A shopping mall is ________ than a sports centre. (big)",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-13.webp",
-        "options": [
-          "biger",
-          "more big",
-          "biggest",
-          "bigger"
-        ],
-        "correct": 3,
-        "explanation": "'Big' kelimesi tek hecelidir ve son harfi ikileşerek '-er' takısı alır (bigger = daha büyük)."
-      },
-      {
-        "id": "e5-1-t9-14",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Fill in the blank: A flat is ________ than a house with a garden. (small)",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-14.webp",
-        "options": [
-          "small",
-          "more small",
-          "smaller",
-          "smallest"
-        ],
-        "correct": 2,
-        "explanation": "'Small' (küçük) kelimesi tek hecelidir, bu yüzden sonuna '-er' takısı alarak 'smaller' (daha küçük) olur."
-      },
-      {
-        "id": "e5-1-t9-15",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Fill in the blank: Our new house is ________ than our old house. (comfortable)",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-15.webp",
-        "options": [
-          "comfortabler",
-          "comfortable",
-          "more comfortable",
-          "most comfortable"
-        ],
-        "correct": 2,
-        "explanation": "'Comfortable' (rahat) kelimesi uzun (çok heceli) olduğu için önüne 'more' kelimesi eklenir."
-      },
-      {
-        "id": "e5-1-t9-16",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Fill in the blank: Traffic in the city centre is ________ than in a town. (bad)",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-16.webp",
-        "options": [
-          "bader",
-          "worse",
-          "more bad",
-          "badder"
-        ],
-        "correct": 1,
-        "explanation": "Dikkat! 'Bad' (kötü) düzensiz bir sıfattır. Karşılaştırma yaparken tamamen değişerek 'worse' (daha kötü) kelimesine dönüşür."
-      },
-      {
-        "id": "e5-1-t9-17",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Fill in the blank: A balcony is ________ than a corridor. (wide)",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-17.webp",
-        "options": [
-          "wider",
-          "more wide",
-          "wide",
-          "widest"
-        ],
-        "correct": 0,
-        "explanation": "'Wide' (geniş) sıfatı 'e' harfi ile bittiği için sonuna sadece '-r' takısı alarak 'wider' olur."
-      },
-      {
-        "id": "e5-1-t9-18",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Fill in the blank: My room is ________ than yours. (good)",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-18.webp",
-        "options": [
-          "gooder",
-          "more good",
-          "better",
-          "best"
-        ],
-        "correct": 2,
-        "explanation": "Dikkat! 'Good' (iyi) düzensiz bir sıfattır. 'Daha iyi' demek için tamamen değişerek 'better' kelimesine dönüşür."
-      },
-      {
-        "id": "e5-1-t9-19",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Fill in the blank: Canada is ________ than Turkiye. (cold)",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-19.webp",
-        "options": [
-          "cold",
-          "more cold",
-          "colder",
-          "coldest"
-        ],
-        "correct": 2,
-        "explanation": "'Cold' (soğuk) tek hecelidir ve karşılaştırma durumunda sonuna '-er' takısı alarak 'colder' olur."
-      },
-     {
-        id: "e5-1-t9-20",
-        subject: "ingilizce",
-        term: 1,
-        prompt: "Fill in the blank: A house is ________ than a flat. (expensive)",
-        imageUrl: "/images/grade5/ingilizce/test9/e5-t9-img-20.webp",
-        options: [
-          "expensiver",
-          "more expensive",
-          "expensive",
-          "most expensive"
-        ],
-        correct: 1,
-        explanation: "'Expensive' (pahalı) çok heceli bir sıfattır, bu yüzden önüne 'more' (daha) getirilerek karşılaştırma yapılır."
-      }
-    ]
-  }, // <-- term1 BİTTİ
-  term2: { // <-- term2 BAŞLADI
-    test1: [
-      {
-        id: "e5-2-06",
-        subject: "ingilizce",
-        term: 2,
-        prompt: "What time is it? (08:30)",
-        options: [
-          "It is eight o'clock.",
-          "It is half past eight.",
-          "It is quarter past eight.",
-          "It is nine o'clock.",
-        ],
-        correct: 1,
-        explanation: "Buçuk yarım demektir.",
-      },
-      {
-        id: "e5-2-07",
-        subject: "ingilizce",
-        term: 2,
-        prompt: "I ____ my teeth every morning.",
-        options: ["wash", "comb", "brush", "eat"],
-        correct: 2,
-        explanation: "Fırçalamak brush'tır.",
-      },
-      {
-        id: "e5-2-08",
-        subject: "ingilizce",
-        term: 2,
-        prompt: "He ____ lunch at 12 o'clock.",
-        options: ["has", "have", "do", "does"],
-        correct: 0,
-        explanation: "He has alır.",
-      },
-      {
-        id: "e5-2-09",
-        subject: "ingilizce",
-        term: 2,
-        prompt: "Would you like some cake?",
-        options: ["Yes, please", "No, I am not", "I am ten", "Fine, thanks"],
-        correct: 0,
-        explanation: "Kabul ederken Yes please.",
-      },
-      {
-        id: "e5-2-10",
-        subject: "ingilizce",
-        term: 2,
-        prompt: "Which animal lives in the forest?",
-        options: ["Cow", "Chicken", "Bear", "Cat"],
-        correct: 2,
-        explanation: "Ayı ormanda yaşar.",
-      },
-      {
-        id: "e5-2-12",
-        subject: "ingilizce",
-        term: 2,
-        prompt: "I feel ____. I need a glass of water.",
-        options: ["hungry", "happy", "thirsty", "tired"],
-        correct: 2,
-        explanation: "Susayan su ister.",
-      },
-      {
-        id: "e5-2-14",
-        subject: "ingilizce",
-        term: 2,
-        prompt: "How can I go to the hospital? - ____ straight and turn left.",
-        options: ["Go", "Read", "Wait", "Look"],
-        correct: 0,
-        explanation: "Gitmek go'dur.",
-      },
-      {
-        id: "e5-zn-12",
-        subject: "ingilizce",
-        term: 2,
-        prompt: "Which one is a health problem?",
-        options: ["Happy", "Broken leg", "Hungry", "Tall"],
-        correct: 1,
-        explanation: "Kırık bacak problemdir.",
-      },
-      {
-        id: "e5-zn-14",
-        subject: "ingilizce",
-        term: 2,
-        prompt: "I ____ breakfast every morning.",
-        options: ["do", "go", "have", "play"],
-        correct: 2,
-        explanation: "Kahvaltı yapmak have'dir.",
-      },
-      {
-        id: "e5-zn-16",
-        subject: "ingilizce",
-        term: 2,
-        prompt: "I am thirsty. I want to drink ____.",
-        options: ["Pizza", "Water", "Sandwich", "Apple"],
-        correct: 1,
-        explanation: "Su içilir.",
-      },
-      {
-        id: "e5-zn-18",
-        subject: "ingilizce",
-        term: 2,
-        prompt: "What is the weather like? - It is ____. Take your umbrella.",
-        options: ["Sunny", "Rainy", "Hot", "Windy"],
-        correct: 1,
-        explanation: "Yağmurda şemsiye alınır.",
-      },
-      {
-        id: "e5-zn-20",
-        subject: "ingilizce",
-        term: 2,
-        prompt: "Dogs are ____ animals.",
-        options: ["Wild", "Jungle", "Dangerous", "Friendly"],
-        correct: 3,
-        explanation: "Dost canlısıdırlar.",
-      },
-      {
-        id: "e5-hard-nv-02",
-        subject: "ingilizce",
-        term: 2,
-        prompt: "Doctor: 'What is the matter with you?' Patient: 'I feel very cold and I am shivering.' Doctor: 'You have ____.'",
-        options: ["a broken leg", "a toothache", "the flu", "a sore throat"],
-        correct: 2,
-        explanation: "Titreme grip belirtisidir.",
-      },
-      {
-        id: "e5-hard-nv-03",
-        subject: "ingilizce",
-        term: 2,
-        prompt: "Which of the following is 'NOT' a morning routine?",
-        options: [
-          "Get out of bed",
-          "Have breakfast",
-          "Do homework",
-          "Wash hands and face",
-        ],
-        correct: 2,
-        explanation: "Ödev akşam yapılır.",
-      },
-      {
-        id: "e5-hard-nv-05",
-        subject: "ingilizce",
-        term: 2,
-        prompt: "Tom: '____ is the party?' Jerry: 'It is at eight o'clock.'",
-        options: ["Where", "What time", "Who", "How many"],
-        correct: 1,
-        explanation: "Zaman sorulur.",
-      },
-      {
-        id: "e5-adv-02",
-        subject: "ingilizce",
-        term: 2,
-        prompt: "A: '____ is the chemist's?' B: 'It is opposite the bank.'",
-        options: ["What", "Who", "Where", "When"],
-        correct: 2,
-        explanation: "Yer sormak Where.",
-      },
-      {
-        id: "e5-adv-03",
-        subject: "ingilizce",
-        term: 2,
-        prompt: "Which activity is 'not' related to health and fitness?",
-        options: ["Hiking", "Eating junk food", "Cycling", "Jogging"],
-        correct: 1,
-        explanation: "Abur cubur zararlıdır.",
-      },
-      {
-        id: "e5-adv-05",
-        subject: "ingilizce",
-        term: 2,
-        prompt: "Sally: 'I have a high temperature and a backache.' Advice: 'You ____ go outside.'",
-        options: ["should", "can", "mustn't", "don't"],
-        correct: 2,
-        explanation: "Çıkmamalıdır.",
-      }
+  {
+    "id": "e5-1-t9-01",
+    "subject": "ingilizce",
+    "term": 1,
+    "prompt": "Read the dialogue. Mia: 'What are you doing this afternoon?' Tom: 'I ________ my room right now.'",
+    "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-01.webp",
+    "options": [
+      "tidy",
+      "am tidying",
+      "tidies",
+      "is tidying"
     ],
-    test2: []
+    "correct": 1,
+    "explanation": "Diyalogda 'right now' (şu an) ifadesi kullanıldığı için Şimdiki Zaman (Present Continuous) gerekir. 'I' öznesi ile 'am + V(ing)' kullanılır."
+  },
+  {
+    "id": "e5-1-t9-02",
+    "subject": "ingilizce",
+    "term": 1,
+    "prompt": "Read the sentence. 'Tom usually ________ computer games in the afternoon, but today is different.'",
+    "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-02.webp",
+    "options": [
+      "plays",
+      "play",
+      "is playing",
+      "playing"
+    ],
+    "correct": 0,
+    "explanation": "'Usually' (genellikle) kelimesi Geniş Zaman (Simple Present) gerektirir. 'Tom' (He) öznesi olduğu için fiil '-s' takısı alır (plays)."
+  },
+  {
+    "id": "e5-1-t9-03",
+    "subject": "ingilizce",
+    "term": 1,
+    "prompt": "Read the text. 'My sister is preparing the food and my parents ________ a barbecue in the garden today.'",
+    "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-03.webp",
+    "options": [
+      "has",
+      "have",
+      "is having",
+      "are having"
+    ],
+    "correct": 3,
+    "explanation": "'Today' (bugün) kelimesi ve devam eden bir eylem anlatıldığı için Şimdiki Zaman kullanılır. 'My parents' (Onlar) çoğul olduğu için 'are having' olur."
+  },
+  {
+    "id": "e5-1-t9-04",
+    "subject": "ingilizce",
+    "term": 1,
+    "prompt": "Read the text. 'Hello! I'm Bruce. It is 6:30 pm now. My mother ________ dinner in the kitchen.'",
+    "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-04.webp",
+    "options": [
+      "prepares",
+      "prepare",
+      "is preparing",
+      "are preparing"
+    ],
+    "correct": 2,
+    "explanation": "Bruce o an (now) saat 6:30'da olanları anlatmaktadır. 'My mother' (She) tekil özne olduğu için 'is preparing' (hazırlıyor) kullanılır."
+  },
+  {
+    "id": "e5-1-t9-05",
+    "subject": "ingilizce",
+    "term": 1,
+    "prompt": "Read the text. 'Bruce and his sister play chess in the evening because they ________ playing board games.'",
+    "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-05.webp",
+    "options": [
+      "likes",
+      "like",
+      "are liking",
+      "is liking"
+    ],
+    "correct": 1,
+    "explanation": "Sevmek, hoşlanmak (like) fiili Geniş Zaman ile kullanılır. 'They' (Onlar) öznesi olduğu için fiil ek almaz (like)."
+  },
+  {
+    "id": "e5-1-t9-06",
+    "subject": "ingilizce",
+    "term": 1,
+    "prompt": "Look at the kitchen picture. ________ two knives on the table.",
+    "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-06.webp",
+    "options": [
+      "There is",
+      "There are",
+      "Is there",
+      "Are there"
+    ],
+    "correct": 1,
+    "explanation": "Mutfaktaki 'iki bıçak' (two knives) çoğuldur. Çoğul nesnelerin varlığını belirtmek için 'There are' kalıbı kullanılır."
+  },
+  {
+    "id": "e5-1-t9-07",
+    "subject": "ingilizce",
+    "term": 1,
+    "prompt": "Look at the living room picture. ________ a TV on the wall.",
+    "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-07.webp",
+    "options": [
+      "There are",
+      "Are there",
+      "There is",
+      "Is there"
+    ],
+    "correct": 2,
+    "explanation": "Salondaki 'bir televizyon' (a TV) tekildir. Tekil nesnelerin varlığını belirtmek için 'There is' kalıbı kullanılır."
+  },
+  {
+    "id": "e5-1-t9-08",
+    "subject": "ingilizce",
+    "term": 1,
+    "prompt": "Look at the kitchen picture. ________ an oven in the kitchen?",
+    "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-08.webp",
+    "options": [
+      "Are there",
+      "Is there",
+      "There is",
+      "There are"
+    ],
+    "correct": 1,
+    "explanation": "Soru işareti (?) olan bu cümlede 'bir fırın' (an oven) sorulmaktadır. Tekil soru kalıbı 'Is there' ile başlar."
+  },
+  {
+    "id": "e5-1-t9-09",
+    "subject": "ingilizce",
+    "term": 1,
+    "prompt": "Look at the living room picture. Are there any pillows on the sofa? - Yes, ________.",
+    "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-09.webp",
+    "options": [
+      "there are",
+      "there is",
+      "they are",
+      "it is"
+    ],
+    "correct": 0,
+    "explanation": "Kanepede yastıklar (çoğul) olduğu için 'Are there...?' sorusuna 'Yes, there are' şeklinde kısa cevap verilir."
+  },
+  {
+    "id": "e5-1-t9-10",
+    "subject": "ingilizce",
+    "term": 1,
+    "prompt": "Fill in the blank: A castle is ________ than a flat. (large)",
+    "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-10.webp",
+    "options": [
+      "more large",
+      "larger",
+      "largest",
+      "large"
+    ],
+    "correct": 1,
+    "explanation": "İki şeyi karşılaştırırken (Comparative) 'large' gibi tek heceli sıfatların sonuna '-r' veya '-er' eklenir. Doğru cevap 'larger' (daha büyük) olur."
+  },
+  {
+    "id": "e5-1-t9-11",
+    "subject": "ingilizce",
+    "term": 1,
+    "prompt": "Fill in the blank: A village is ________ than a city. (peaceful)",
+    "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-11.webp",
+    "options": [
+      "peacefuler",
+      "peaceful",
+      "more peaceful",
+      "most peaceful"
+    ],
+    "correct": 2,
+    "explanation": "'Peaceful' (huzurlu) çok heceli bir kelimedir. Çok heceli kelimelerin önüne 'more' (daha) getirilerek karşılaştırma yapılır."
+  },
+  {
+    "id": "e5-1-t9-12",
+    "subject": "ingilizce",
+    "term": 1,
+    "prompt": "Fill in the blank: A city is ________ than a town. (crowded)",
+    "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-12.webp",
+    "options": [
+      "more crowded",
+      "crowdeder",
+      "crowded",
+      "crowdest"
+    ],
+    "correct": 0,
+    "explanation": "'Crowded' (kalabalık) çok heceli bir sıfat olduğu için 'daha kalabalık' demek için başına 'more' getirilir."
+  },
+  {
+    "id": "e5-1-t9-13",
+    "subject": "ingilizce",
+    "term": 1,
+    "prompt": "Fill in the blank: A shopping mall is ________ than a sports centre. (big)",
+    "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-13.webp",
+    "options": [
+      "biger",
+      "more big",
+      "biggest",
+      "bigger"
+    ],
+    "correct": 3,
+    "explanation": "'Big' kelimesi tek hecelidir ve son harfi ikileşerek '-er' takısı alır (bigger = daha büyük)."
+  },
+  {
+    "id": "e5-1-t9-14",
+    "subject": "ingilizce",
+    "term": 1,
+    "prompt": "Fill in the blank: A flat is ________ than a house with a garden. (small)",
+    "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-14.webp",
+    "options": [
+      "small",
+      "more small",
+      "smaller",
+      "smallest"
+    ],
+    "correct": 2,
+    "explanation": "'Small' (küçük) kelimesi tek hecelidir, bu yüzden sonuna '-er' takısı alarak 'smaller' (daha küçük) olur."
+  },
+  {
+    "id": "e5-1-t9-15",
+    "subject": "ingilizce",
+    "term": 1,
+    "prompt": "Fill in the blank: Our new house is ________ than our old house. (comfortable)",
+    "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-15.webp",
+    "options": [
+      "comfortabler",
+      "comfortable",
+      "more comfortable",
+      "most comfortable"
+    ],
+    "correct": 2,
+    "explanation": "'Comfortable' (rahat) kelimesi uzun (çok heceli) olduğu için önüne 'more' kelimesi eklenir."
+  },
+  {
+    "id": "e5-1-t9-16",
+    "subject": "ingilizce",
+    "term": 1,
+    "prompt": "Fill in the blank: Traffic in the city centre is ________ than in a town. (bad)",
+    "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-16.webp",
+    "options": [
+      "bader",
+      "worse",
+      "more bad",
+      "badder"
+    ],
+    "correct": 1,
+    "explanation": "Dikkat! 'Bad' (kötü) düzensiz bir sıfattır. Karşılaştırma yaparken tamamen değişerek 'worse' (daha kötü) kelimesine dönüşür."
+  },
+  {
+    "id": "e5-1-t9-17",
+    "subject": "ingilizce",
+    "term": 1,
+    "prompt": "Fill in the blank: A balcony is ________ than a corridor. (wide)",
+    "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-17.webp",
+    "options": [
+      "wider",
+      "more wide",
+      "wide",
+      "widest"
+    ],
+    "correct": 0,
+    "explanation": "'Wide' (geniş) sıfatı 'e' harfi ile bittiği için sonuna sadece '-r' takısı alarak 'wider' olur."
+  },
+  {
+    "id": "e5-1-t9-18",
+    "subject": "ingilizce",
+    "term": 1,
+    "prompt": "Fill in the blank: My room is ________ than yours. (good)",
+    "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-18.webp",
+    "options": [
+      "gooder",
+      "more good",
+      "better",
+      "best"
+    ],
+    "correct": 2,
+    "explanation": "Dikkat! 'Good' (iyi) düzensiz bir sıfattır. 'Daha iyi' demek için tamamen değişerek 'better' kelimesine dönüşür."
+  },
+  {
+    "id": "e5-1-t9-19",
+    "subject": "ingilizce",
+    "term": 1,
+    "prompt": "Fill in the blank: Canada is ________ than Turkiye. (cold)",
+    "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-19.webp",
+    "options": [
+      "cold",
+      "more cold",
+      "colder",
+      "coldest"
+    ],
+    "correct": 2,
+    "explanation": "'Cold' (soğuk) tek hecelidir ve karşılaştırma durumunda sonuna '-er' takısı alarak 'colder' olur."
+  },
+  {
+    "id": "e5-1-t9-20",
+    "subject": "ingilizce",
+    "term": 1,
+    "prompt": "Fill in the blank: A house is ________ than a flat. (expensive)",
+    "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-20.webp",
+    "options": [
+      "expensiver",
+      "more expensive",
+      "expensive",
+      "most expensive"
+    ],
+    "correct": 1,
+    "explanation": "'Expensive' (pahalı) çok heceli bir sıfattır, bu yüzden önüne 'more' (daha) getirilerek karşılaştırma yapılır."
   }
-}; // <-- DOSYANIN EN SONU
+],
+test2: [],-- DOSYANIN EN SONU
  
   
