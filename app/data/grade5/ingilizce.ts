@@ -2572,7 +2572,6 @@ export const ingilizceData: SubjectData = {
         "explanation": "Görselde kitaplarla dolu bir odada 'Keep Quiet' (Sessiz Olun) işareti yapan bir görsel var. Bu kural en belirgin olarak kütüphanelerde (library) geçerlidir."
       }
     ],
-  },
   term2: {
     test1: [
       {
