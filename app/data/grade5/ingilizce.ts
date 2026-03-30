@@ -2552,7 +2552,7 @@ export const ingilizceData: SubjectData = {
     "correct": 2,
     "explanation": "'Cold' (soğuk) tek hecelidir ve karşılaştırma durumunda sonuna '-er' takısı alarak 'colder' olur."
   },
-  {
+ {
   "id": "e5-1-t9-20",
   "subject": "ingilizce",
   "term": 1,
