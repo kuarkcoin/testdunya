@@ -2551,6 +2551,288 @@ export const ingilizceData: SubjectData = {
         "correct": 1,
         "explanation": "'Expensive' (pahalı) çok heceli bir sıfattır, bu yüzden önüne 'more' (daha) getirilerek karşılaştırma yapılır."
       }
+    ],
+    test10: [
+      {
+        "id": "e5-1-t10-01",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Read the sentence and fill in the blank: 'I ________ up at 7 o'clock every morning.'",
+        "options": [
+          "wakes",
+          "wake",
+          "am waking",
+          "waking"
+        ],
+        "correct": 1,
+        "explanation": "'Every morning' (her sabah) ifadesi Geniş Zaman (Simple Present) gerektirir. 'I' öznesi ile fiil ek almaz, yalın halinde kullanılır (wake)."
+      },
+      {
+        "id": "e5-1-t10-02",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Read the time: 08:45. Which option is correct?",
+        "options": [
+          "It is quarter past eight.",
+          "It is quarter to eight.",
+          "It is quarter to nine.",
+          "It is half past eight."
+        ],
+        "correct": 2,
+        "explanation": "08:45 saati 'dokuza çeyrek var' şeklinde okunur. İngilizcede 'çeyrek var' ifadesi 'quarter to' kalıbıyla söylenir (quarter to nine)."
+      },
+      {
+        "id": "e5-1-t10-03",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Complete the dialogue. A: '________ do you have lunch?' B: 'At half past twelve.'",
+        "options": [
+          "Where",
+          "What",
+          "Who",
+          "What time"
+        ],
+        "correct": 3,
+        "explanation": "Cevapta 'buçukta' (at half past twelve) diyerek bir saat/zaman belirtildiği için soruda 'Saat kaçta?' anlamına gelen 'What time' sorulmalıdır."
+      },
+      {
+        "id": "e5-1-t10-04",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Read the sentence: 'She has a terrible toothache.' What is your advice?",
+        "options": [
+          "She should eat some chocolate.",
+          "She shouldn't go to the dentist.",
+          "She shouldn't eat candies.",
+          "She should drink cold water."
+        ],
+        "correct": 2,
+        "explanation": "Dişi ağrıyan (toothache) birine verilecek en mantıklı tavsiye 'şeker yememesi gerektiği'dir (shouldn't eat candies)."
+      },
+      {
+        "id": "e5-1-t10-05",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Fill in the blank: 'He has a runny nose. He needs a ________.'",
+        "options": [
+          "plaster",
+          "tissue",
+          "blanket",
+          "syrup"
+        ],
+        "correct": 1,
+        "explanation": "Burun akıntısı (runny nose) olan birinin peçeteye/kağıt mendile (tissue) ihtiyacı vardır."
+      },
+      {
+        "id": "e5-1-t10-06",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Complete the dialogue. Doctor: 'What is the ________ with you?' Patient: 'I feel cold and tired.'",
+        "options": [
+          "illness",
+          "health",
+          "matter",
+          "problem"
+        ],
+        "correct": 2,
+        "explanation": "İngilizcede 'Neyin var? / Sorun nedir?' diye sormak için kalıplaşmış olan 'What is the matter with you?' ifadesi kullanılır."
+      },
+      {
+        "id": "e5-1-t10-07",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Fill in the blank: 'My brother ________ play the piano, but he can play the guitar.'",
+        "options": [
+          "can",
+          "can't",
+          "should",
+          "must"
+        ],
+        "correct": 1,
+        "explanation": "Cümledeki 'but' (ama) bağlacı zıtlık bildirir. Gitar çalabildiğine (can) göre, piyanoyu çalamıyordur (can't)."
+      },
+      {
+        "id": "e5-1-t10-08",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Complete the dialogue. A: 'Do you like board games?' B: 'Yes, I really enjoy playing ________.'",
+        "options": [
+          "dodgeball",
+          "tag",
+          "chess",
+          "hide and seek"
+        ],
+        "correct": 2,
+        "explanation": "Soru 'masa oyunlarını' (board games) sormaktadır. Şıklardaki tek masa oyunu satrançtır (chess)."
+      },
+      {
+        "id": "e5-1-t10-09",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Fill in the blank: 'He is from Spain. He speaks ________.'",
+        "options": [
+          "Spain",
+          "Spanish",
+          "English",
+          "Italian"
+        ],
+        "correct": 1,
+        "explanation": "İspanya'dan (Spain) gelen biri İspanyolca (Spanish) konuşur."
+      },
+      {
+        "id": "e5-1-t10-10",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Fill in the blank: 'The hospital is ________ the pharmacy and the park.'",
+        "options": [
+          "next to",
+          "opposite",
+          "between",
+          "under"
+        ],
+        "correct": 2,
+        "explanation": "İki farklı yer (pharmacy and park) belirtildiği için hastane bu iki yerin 'arasında' (between) olmalıdır."
+      },
+      {
+        "id": "e5-1-t10-11",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Read the sentence: 'I want to buy some medicine. I should go to the ________.'",
+        "options": [
+          "bakery",
+          "library",
+          "pharmacy",
+          "toy shop"
+        ],
+        "correct": 2,
+        "explanation": "İlaç (medicine) satın almak isteyen birinin eczaneye (pharmacy) gitmesi gerekir."
+      },
+      {
+        "id": "e5-1-t10-12",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Complete the direction: '________ straight ahead and take the second right.'",
+        "options": [
+          "Turn",
+          "Cross",
+          "Go",
+          "Take"
+        ],
+        "correct": 2,
+        "explanation": "Düz gitmek anlamındaki yön tarifi kalıbı 'Go straight ahead' şeklinde kullanılır."
+      },
+      {
+        "id": "e5-1-t10-13",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Complete the dialogue. A: 'Can you ride a horse?' B: 'No, ________.'",
+        "options": [
+          "I am not",
+          "I don't",
+          "I can",
+          "I can't"
+        ],
+        "correct": 3,
+        "explanation": "Soru 'Can' yardımcı fiili ile sorulduğu için ve cevap 'No' (Hayır) ile başladığı için 'I can't' kullanılmalıdır."
+      },
+      {
+        "id": "e5-1-t10-14",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Read the text: 'He loves folding paper and making shapes. His favorite hobby is ________.'",
+        "options": [
+          "collecting stamps",
+          "doing origami",
+          "playing checkers",
+          "hiking"
+        ],
+        "correct": 1,
+        "explanation": "Kağıt katlayıp şekiller yapmak (folding paper) origami yapmaktır (doing origami)."
+      },
+      {
+        "id": "e5-1-t10-15",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Read the text: 'We usually play ________ in the garden. One person closes their eyes and tries to catch us.'",
+        "options": [
+          "tic-tac-toe",
+          "chess",
+          "blind man's buff",
+          "dodgeball"
+        ],
+        "correct": 2,
+        "explanation": "Bir kişinin gözlerini kapatıp (closes their eyes) diğerlerini yakalamaya çalıştığı oyun körebedir (blind man's buff)."
+      },
+      {
+        "id": "e5-1-t10-16",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Fill in the blank: 'I wash my ________ before breakfast.'",
+        "options": [
+          "teeth",
+          "hair",
+          "hands and face",
+          "clothes"
+        ],
+        "correct": 2,
+        "explanation": "Sabah rutinlerinde kahvaltıdan önce eller ve yüz (hands and face) yıkanır. Dişler fırçalanır (brush), saç taranır (comb)."
+      },
+      {
+        "id": "e5-1-t10-17",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Read the sentence: 'My mother is ________ dinner in the kitchen right now.'",
+        "options": [
+          "prepare",
+          "prepares",
+          "preparing",
+          "prepared"
+        ],
+        "correct": 2,
+        "explanation": "'Right now' (şu an) ifadesi ve 'is' yardımcı fiili kullanıldığı için fiile '-ing' takısı getirilmelidir (preparing)."
+      },
+      {
+        "id": "e5-1-t10-18",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Fill in the blank with the correct question form: '________ a hospital near here?'",
+        "options": [
+          "Is there",
+          "Are there",
+          "There is",
+          "There are"
+        ],
+        "correct": 0,
+        "explanation": "Cümle bir soru cümlesidir ve 'bir hastane' (a hospital) tekil olduğu için soru 'Is there' kalıbıyla başlar."
+      },
+      {
+        "id": "e5-1-t10-19",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Fill in the blank: 'A cheetah is ________ than a turtle.'",
+        "options": [
+          "fast",
+          "faster",
+          "more fast",
+          "fastest"
+        ],
+        "correct": 1,
+        "explanation": "İki hayvan karşılaştırılmaktadır. 'Fast' (hızlı) tek heceli bir sıfat olduğu için sonuna '-er' takısı alarak 'faster' (daha hızlı) olur."
+      },
+      {
+        "id": "e5-1-t10-20",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Read the sentence: 'The library is ________ the school. They are face to face across the street.'",
+        "options": [
+          "next to",
+          "behind",
+          "under",
+          "opposite"
+        ],
+        "correct": 3,
+        "explanation": "'Face to face across the street' (caddenin karşısında yüz yüze) ifadesi, iki binanın 'karşılıklı' (opposite) olduğunu gösterir."
+      }
     ]
   },
   term2: {
