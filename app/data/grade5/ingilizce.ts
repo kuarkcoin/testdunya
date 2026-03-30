@@ -2552,26 +2552,23 @@ export const ingilizceData: SubjectData = {
         "correct": 2,
         "explanation": "'Cold' (soğuk) tek hecelidir ve karşılaştırma durumunda sonuna '-er' takısı alarak 'colder' olur."
       },
-      {
-        "id": "e5-1-t9-20",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Fill in the blank: A house is ________ than a flat. (expensive)",
-        "imageUrl": "/images/grade5/ingilizce/test9/e5-t9-img-20.webp",
-        "options": [
+     {
+        id: "e5-1-t9-20",
+        subject: "ingilizce",
+        term: 1,
+        prompt: "Fill in the blank: A house is ________ than a flat. (expensive)",
+        imageUrl: "/images/grade5/ingilizce/test9/e5-t9-img-20.webp",
+        options: [
           "expensiver",
           "more expensive",
           "expensive",
           "most expensive"
         ],
-        "correct": 1,
-        "explanation": "'Expensive' (pahalı) çok heceli bir sıfattır, bu yüzden önüne 'more' (daha) getirilerek karşılaştırma yapılır."
+        correct: 1,
+        explanation: "'Expensive' (pahalı) çok heceli bir sıfattır, bu yüzden önüne 'more' (daha) getirilerek karşılaştırma yapılır."
       }
     ],
-        "correct": 1,
-        "explanation": "Görselde kitaplarla dolu bir odada 'Keep Quiet' (Sessiz Olun) işareti yapan bir görsel var. Bu kural en belirgin olarak kütüphanelerde (library) geçerlidir."
-      }
-    ],
+  },
   term2: {
     test1: [
       {
@@ -2750,4 +2747,6 @@ export const ingilizceData: SubjectData = {
       },
     ],
     test2: [],
+  },
+};
   
