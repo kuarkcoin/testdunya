@@ -2750,5 +2750,4 @@ export const ingilizceData: SubjectData = {
       },
     ],
     test2: [],
-  },
-};
+  
