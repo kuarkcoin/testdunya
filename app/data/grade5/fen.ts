@@ -796,283 +796,287 @@ export const fenData: SubjectData = {
         "explanation": "Tam gölge oluşumu için; ışık kaynağı, opak cisim ve ekran (duvar vb.) şarttır. Saydam bir cisme ihtiyaç yoktur."
       }
     ],
-    test4: [
+  test4: [
       {
-        id: "f5-1-t4-01",
-        subject: "fen",
-        term: 1,
-        prompt: "Güneş'in yapısı ile ilgili verilenlerden hangisi 'yanlıştır'?",
-        options: [
-          "Isı ve ışık kaynağımız olan orta büyüklükte bir yıldızdır.",
-          "Yüzey sıcaklığı merkez sıcaklığından daha fazladır.",
-          "Dünya gibi katmanlardan oluşur.",
-          "Kendi ekseni etrafında dönme hareketi yapar.",
+        "id": "f5-2-t4-01",
+        "subject": "fen",
+        "term": 2,
+        "prompt": "Kemik ve kas sağlığımızı korumak için günlük hayatta dikkat etmemiz gereken kurallar vardır. Buna göre, okula giderken ağır bir sırt çantasını taşımanın en sağlıklı yolu aşağıdakilerden hangisidir?",
+        "options": [
+          "Çantayı tek omzumuza asarak taşımak",
+          "Çantayı iki omzumuza birden asarak ağırlığı eşit dağıtmak",
+          "Çantayı sadece sağ elimizde taşımak",
+          "Çantayı göğsümüzün önünde tutarak taşımak"
         ],
-        correct: 1,
-        explanation:
-          "Güneş'in merkez sıcaklığı (15 milyon °C), yüzey sıcaklığından (6000 °C) çok daha fazladır. Yüzeyin daha sıcak olduğu bilgisi yanlıştır.",
+        "correct": 1,
+        "explanation": "Ağır çantaların tek omuzda taşınması omurga eğriliğine neden olur. Sağlığımız için ağırlık iki omuza eşit olarak dağıtılmalıdır."
       },
       {
-        id: "f5-1-t4-02",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Ay'ın evreleri ile ilgili; I. Yeni Ay'dan sonra Hilal görülür. II. İlk Dördün'den sonra Şişkin Ay görülür. III. Dolunay'dan sonra Son Dördün görülür. ifadelerinden hangileri doğrudur?",
-        options: ["I ve II", "II ve III", "I ve III", "I, II ve III"],
-        correct: 3,
-        explanation:
-          "Ay'ın evreleri sırasıyla: Yeni Ay -> Hilal -> İlk Dördün -> Şişkin Ay -> Dolunay -> Şişkin Ay -> Son Dördün -> Hilal şeklindedir. Verilenlerin tümü doğrudur.",
-      },
-      {
-        id: "f5-1-t4-03",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Aşağıdaki tabloda bazı canlılar ve grupları eşleştirilmiştir:\n(1) Yarasa - Kuşlar\n(2) Fok - Memeliler\n(3) Penguen - Kuşlar\n(4) Semender - Sürüngenler\nHangi eşleştirmeler 'hatalıdır'?",
-        options: ["1 ve 2", "1 ve 4", "2 ve 3", "3 ve 4"],
-        correct: 1,
-        explanation:
-          "Yarasa memelidir (kuş değildir). Semender iki yaşamlıdır/amfibi (sürüngen değildir). Fok memeli, penguen ise bir kuştur.",
-      },
-      {
-        id: "f5-1-t4-04",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Bitkilerin yapraklarında gerçekleşen 'fotosentez' olayı için aşağıdakilerden hangisine ihtiyaç duyulmaz?",
-        options: ["Güneş Işığı", "Su", "Karbondioksit", "Besin"],
-        correct: 3,
-        explanation:
-          "Fotosentez besin üretme olayıdır; yani besin bu işlemin sonucunda oluşur, işlemin başlaması için dışarıdan hazır alınmasına gerek yoktur.",
-      },
-      {
-        id: "f5-1-t4-05",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "10 bölmeli bir dinamometre en fazla 100 Newton (N) ölçebiliyor. Bu dinamometreye 30 N ağırlığında bir cisim asıldığında yay kaç bölme dışarı çıkar?",
-        options: ["1", "3", "5", "10"],
-        correct: 1,
-        explanation:
-          "Her bölme 100 / 10 = 10 N ölçer. 30 N için 30 / 10 = 3 bölme uzama gerçekleşir.",
-      },
-      {
-        id: "f5-1-t4-06",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Ay'ın yüzeyinde görülen rüzgar ve yağmurun olmaması durumu Ay'ın hangi özelliği ile 'doğrudan' ilgilidir?",
-        options: [
-          "Atmosferinin yok denecek kadar az olması",
-          "Kendi ekseni etrafında çok yavaş dönmesi",
-          "Işık kaynağı olmaması",
-          "Dünya'dan küçük olması",
+        "id": "f5-2-t4-02",
+        "subject": "fen",
+        "term": 2,
+        "prompt": "Gelişme çağındaki çocukların kemiklerinin sertleşmesi ve uzaması için bazı besinleri bolca tüketmesi gerekir. Aşağıdaki besin gruplarından hangisi kemik gelişimi için en faydalıdır?",
+        "options": [
+          "Süt, yoğurt ve peynir",
+          "Kola, cips ve çikolata",
+          "Ekmek, makarna ve pirinç",
+          "Şeker, lokum ve bisküvi"
         ],
-        correct: 0,
-        explanation:
-          "Hava olaylarının (rüzgar, yağış vb.) oluşması için hava tabakası (atmosfer) gereklidir. Ay'da bu tabaka yoktur.",
+        "correct": 0,
+        "explanation": "Kemiklerin güçlenmesi için kalsiyum mineraline ihtiyaç vardır. Kalsiyum en çok süt ve süt ürünlerinde bulunur."
       },
       {
-        id: "f5-1-t4-07",
-        subject: "fen",
-        term: 1,
-        prompt: "Güneş'in yapısındaki en bol bulunan iki gaz hangisidir?",
-        options: [
-          "Oksijen - Azot",
-          "Hidrojen - Helyum",
-          "Karbondioksit - Hidrojen",
-          "Helyum - Argon",
+        "id": "f5-2-t4-03",
+        "subject": "fen",
+        "term": 2,
+        "prompt": "Yerden çok ağır bir koliyi kaldırmak isteyen bir işçi, bel fıtığı olmamak ve omurgasını korumak için nasıl hareket etmelidir?",
+        "options": [
+          "Dizlerini hiç bükmeden belinden eğilmeli",
+          "Hızlıca ve aniden koliyi yukarı çekmeli",
+          "Dizlerini bükerek çömelmeli ve bacaklarından güç alarak kalkmalı",
+          "Kollarını gergin tutup yükü vücudundan uzakta tutmalı"
         ],
-        correct: 1,
-        explanation:
-          "Güneş'in yaklaşık %73'ü Hidrojen, %25'i Helyum gazından oluşur.",
+        "correct": 2,
+        "explanation": "Yerden ağır bir yük kaldırılırken bele yük bindirilmemeli, dizler bükülüp çömelerek bacak kaslarından güç alınmalıdır."
       },
       {
-        id: "f5-1-t4-08",
-        subject: "fen",
-        term: 1,
-        prompt: "Mantarların özellikleri ile ilgili hangisi 'yanlıştır'?",
-        options: [
-          "Bazı türleri besin olarak tüketilir.",
-          "Bitkiler gibi kendi besinlerini üretirler.",
-          "Nemli ve karanlık ortamlarda iyi gelişirler.",
-          "Mikroskobik türleri besinlerin bozulmasına neden olur.",
+        "id": "f5-2-t4-04",
+        "subject": "fen",
+        "term": 2,
+        "prompt": "Uzun süre bilgisayar veya masa başında ders çalışan bir öğrencinin iskelet sağlığını koruması için nasıl oturması gerekir?",
+        "options": [
+          "Sırtını dik tutmalı ve sandalyenin arkalığına yaslanmalı",
+          "Sandalyenin ucunda kambur durarak oturmalı",
+          "Ayaklarını havada sallandırarak oturmalı",
+          "Masaya çok yaklaşıp boynunu bükerek çalışmalı"
         ],
-        correct: 1,
-        explanation:
-          "Mantarlar bitki değildir; klorofilleri yoktur ve fotosentez yapamazlar. Besinlerini dışarıdan hazır alırlar.",
+        "correct": 0,
+        "explanation": "Doğru oturuş pozisyonunda sırt dik olmalı, omurga sandalyeye yaslanarak desteklenmeli ve ayaklar yere düz basmalıdır."
       },
       {
-        id: "f5-1-t4-09",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Aşağıdaki canlılardan hangisinin vücudu pullarla kaplıdır ve yumurta ile çoğalır?",
-        options: ["Yunus", "Alabalık", "Yarasa", "Balina"],
-        correct: 1,
-        explanation:
-          "Alabalık bir balıktır; pulları vardır ve yumurtlar. Yunus, yarasa ve balina ise memelidir (doğurarak çoğalırlar).",
-      },
-      {
-        id: "f5-1-t4-10",
-        subject: "fen",
-        term: 1,
-        prompt: "Kuvvet ile ilgili verilenlerden hangisi 'hatalıdır'?",
-        options: [
-          "Dinamometre ile ölçülür.",
-          "Cisimlerin süratini değiştirebilir.",
-          "Birimi Celsius (C)'tur.",
-          "Cisimlerin yönünü değiştirebilir.",
+        "id": "f5-2-t4-05",
+        "subject": "fen",
+        "term": 2,
+        "prompt": "Beden eğitimi dersinde veya spor müsabakalarından önce öğretmenlerin öğrencilere 'ısınma hareketleri' yaptırmasının temel fen bilimleri nedeni nedir?",
+        "options": [
+          "Öğrencilerin daha çok terlemesini sağlamak",
+          "Kasların ve eklemlerin aniden zorlanıp sakatlanmasını önlemek",
+          "Öğrencilerin boyunun daha hızlı uzamasını sağlamak",
+          "Maçın daha uzun sürmesini sağlamak"
         ],
-        correct: 2,
-        explanation:
-          "Kuvvetin birimi Newton (N)'dur. Celsius sıcaklık birimidir.",
+        "correct": 1,
+        "explanation": "Spora başlamadan önce kasları esnetmek ve ısıtmak, kramp veya kas yırtılması gibi sakatlıkların önüne geçer."
       },
       {
-        id: "f5-1-t4-11",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Dünya'dan bakıldığında Ay'ın hep aynı yüzünün görülmesinin nedeni nedir?",
-        options: [
-          "Ay'ın ışığı yansıtması",
-          "Ay'ın Dünya'ya çok yakın olması",
-          "Ay'ın kendi etrafında ve Dünya etrafında dönme süresinin eşit olması",
-          "Ay'ın atmosferinin olmaması",
+        "id": "f5-2-t4-06",
+        "subject": "fen",
+        "term": 2,
+        "prompt": "Ali, düz bir plastik borunun bir ucundan baktığında odadaki lambanın ışığını görebilmektedir. Ancak boruyu tam ortasından bükerek 'V' şekline getirdiğinde ışığı göremez. Bu deney ışığın hangi özelliğini ispatlar?",
+        "options": [
+          "Işığın her yöne yayıldığını",
+          "Işığın dalgalar halinde yayıldığını",
+          "Işığın doğrusal yolla yayıldığını",
+          "Işığın boşlukta yayılabildiğini"
         ],
-        correct: 2,
-        explanation:
-          "Ay kendi ekseni etrafındaki dönüşünü ve Dünya etrafındaki dolanışını yaklaşık 27,3 günde tamamlar. Bu süre eşitliği hep aynı tarafı görmemizi sağlar.",
+        "correct": 2,
+        "explanation": "Işık, düz çizgiler halinde (doğrusal) ilerler. Boru büküldüğünde ışık kıvrımlı yolu dönemez ve gözümüze ulaşamaz."
       },
       {
-        id: "f5-1-t4-12",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Hangi canlı grubunda yer alan bireylerin tamamı sadece mikroskopla görülebilir?",
-        options: ["Mantarlar", "Bakteriler", "Bitkiler", "Omurgasızlar"],
-        correct: 1,
-        explanation:
-          "Bakterilerin tamamı tek hücrelidir ve gözle görülemezler. Mantarların (şapkalı mantar) ve bitkilerin gözle görülen türleri vardır.",
-      },
-      {
-        id: "f5-1-t4-13",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Bitkilerde suyun topraktan alınarak yapraklara taşınmasını sağlayan yapı hangisidir?",
-        options: ["Çiçek", "Gövde", "Yaprak", "Tohum"],
-        correct: 1,
-        explanation:
-          "Gövde, köklerden gelen su ve mineralleri yapraklara ve çiçeğe taşıyan bir köprü görevi görür.",
-      },
-      {
-        id: "f5-1-t4-14",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Aşağıdakilerden hangisi yararlı mikroskobik canlıların yaptığı bir iştir?",
-        options: [
-          "Dişlerin çürümesi",
-          "Sütün yoğurda dönüşmesi",
-          "Besinlerin küflenmesi",
-          "Zehirlenmelere yol açması",
+        "id": "f5-2-t4-07",
+        "subject": "fen",
+        "term": 2,
+        "prompt": "Karanlık bir odanın tam ortasında tavana asılı olan tek bir ampul yakıldığında, odanın sadece altı değil, duvarları ve köşeleri de aydınlanır. Bu durum ışığın hangi özelliğinin sonucudur?",
+        "options": [
+          "Işığın sadece aydınlıkta yayılmasının",
+          "Işığın sadece doğrusal yayılmasının",
+          "Işık kaynağından çıkan ışınların her yöne yayılmasının",
+          "Işığın opak maddelerden geçebilmesinin"
         ],
-        correct: 1,
-        explanation:
-          "Yoğurt, peynir ve turşu yapımı yararlı bakteriler sayesinde gerçekleşir; diğerleri zararlı etkilerdir.",
+        "correct": 2,
+        "explanation": "Ampul gibi ışık kaynaklarından çıkan ışınlar önlerinde bir engel yoksa sadece tek bir çizgi halinde değil, uzayda her yöne doğru yayılırlar."
       },
       {
-        id: "f5-1-t4-15",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Güneş ve Dünya'nın büyüklükleri karşılaştırıldığında hangisi doğrudur?",
-        options: [
-          "Dünya, Güneş'ten büyüktür.",
-          "Güneş içine yaklaşık 100 tane Dünya sığar.",
-          "Güneş içine yaklaşık 1.3 milyon tane Dünya sığar.",
-          "Güneş ve Dünya aynı büyüklüktedir.",
+        "id": "f5-2-t4-08",
+        "subject": "fen",
+        "term": 2,
+        "prompt": "Tiyatro salonlarında veya konserlerde sahnedeki oyuncuyu aydınlatmak için kullanılan spot ışıklarına yandan bakıldığında, ışığın havada dümdüz bir çizgi şeklinde ilerlediği görülür. Bu gözlem ışıkla ilgili hangi bilgiyi doğrular?",
+        "options": [
+          "Işık ışınları doğrusal olarak yayılır.",
+          "Işık saydam olmayan maddelerden geçemez.",
+          "Işık sesten daha yavaş yayılır.",
+          "Işık sadece yapay kaynaklardan elde edilir."
         ],
-        correct: 2,
-        explanation:
-          "Güneş çok devasa bir gök cismidir; içine bir milyondan fazla Dünya sığabilir.",
+        "correct": 0,
+        "explanation": "Havada süzülen toz tanecikleri sayesinde spot ışıklarının izlediği yolu görebiliriz. Bu yolun dümdüz bir çizgi olması ışığın doğrusal yayıldığını kanıtlar."
       },
       {
-        id: "f5-1-t4-16",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Bir dinamometrenin hassasiyetini artırmak için aşağıdakilerden hangisi yapılmalıdır?",
-        options: [
-          "Daha kalın bir yay kullanılmalı.",
-          "Daha ince ve esnek bir yay kullanılmalı.",
-          "Dinamometrenin boyu kısaltılmalı.",
-          "Daha ağır bir kanca takılmalı.",
+        "id": "f5-2-t4-09",
+        "subject": "fen",
+        "term": 2,
+        "prompt": "Aşağıdakilerden hangisi ışığın yayılmasını göstermek için bilimsel çizimlerde kullanılan 'ışın' kavramının doğru tanımıdır?",
+        "options": [
+          "Işığın hızını ölçmeye yarayan alettir.",
+          "Işığın izlediği yolu gösteren, başlangıç noktası belli ve ucu ok şeklinde olan düz çizgilerdir.",
+          "Işığın rengini değiştiren cam parçasıdır.",
+          "Sadece güneşten gelen ışıklara verilen isimdir."
         ],
-        correct: 1,
-        explanation:
-          "İnce ve esnek yaylar küçük kuvvetlerde bile uzadığı için daha hassas (ayrıntılı) ölçüm yapar.",
+        "correct": 1,
+        "explanation": "Fen bilimlerinde ışığın izlediği yolu kağıt üzerinde göstermek için çizilen yönlü düz çizgilere 'ışın' denir."
       },
       {
-        id: "f5-1-t4-17",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Mantarların üremesini sağlayan mikroskobik yapılara ne ad verilir?",
-        options: ["Tohum", "Spor", "Çiçek", "Kök"],
-        correct: 1,
-        explanation:
-          "Mantarlar çiçekli bitkiler gibi tohumla değil, 'spor' adı verilen çok küçük yapılarla çoğalırlar.",
-      },
-      {
-        id: "f5-1-t4-18",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Aşağıdakilerden hangisi omurgalı canlıların ortak özelliği 'değildir'?",
-        options: [
-          "Akciğer solunumu yapmak",
-          "İç iskelete sahip olmak",
-          "Vücudunda kemik veya kıkırdak bulunması",
-          "Sinir şeridinin sırtta olması",
+        "id": "f5-2-t4-10",
+        "subject": "fen",
+        "term": 2,
+        "prompt": "Maddeler ışığı geçirme durumlarına göre üçe ayrılır. Üzerine düşen ışığın tamamına yakınını arka tarafa geçiren ve arkasındaki cisimlerin net görünmesini sağlayan maddelere ne ad verilir?",
+        "options": [
+          "Opak Madde",
+          "Yarı Saydam Madde",
+          "Saydam Madde",
+          "Yansıtıcı Madde"
         ],
-        correct: 0,
-        explanation:
-          "Balıklar solungaç solunumu yapar. Akciğer solunumu tüm omurgalıların (balıklar hariç) ortak özelliği değildir.",
+        "correct": 2,
+        "explanation": "Pencere camı, şeffaf plastik veya temiz su gibi ışığı çok iyi geçiren maddelere 'Saydam Madde' denir."
       },
       {
-        id: "f5-1-t4-19",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Ay'ın yüzeyindeki toz tabakasının astronotların ayak izlerini uzun süre korumasının sebebi nedir?",
-        options: [
-          "Tozun çok yapışkan olması",
-          "Rüzgar ve yağmurun olmaması",
-          "Ay'ın ışık kaynağı olması",
-          "Ay'ın Dünya'dan büyük olması",
+        "id": "f5-2-t4-11",
+        "subject": "fen",
+        "term": 2,
+        "prompt": "Ahmet odasının penceresinden dışarıya bakmak istemiş ancak pencereye takılan kalın karton güneşlik yüzünden dışarıyı hiç görememiş ve odası karanlık kalmıştır. Bu durumda kalın karton hangi madde grubuna girer?",
+        "options": [
+          "Saydam",
+          "Opak (Saydam olmayan)",
+          "Yarı saydam",
+          "Işık kaynağı"
         ],
-        correct: 1,
-        explanation:
-          "Ay'da rüzgar olmadığı için tozlar yerinden oynamaz ve ayak izleri milyonlarca yıl bozulmadan kalabilir.",
+        "correct": 1,
+        "explanation": "Kalın karton, tahta, beton duvar veya metal gibi ışığı arka tarafa hiç geçirmeyen maddelere opak madde denir."
       },
       {
-        id: "f5-1-t4-20",
-        subject: "fen",
-        term: 1,
-        prompt:
-          "Hangi seçenekteki canlı grubu bitkilere en çok benzer ancak çiçekleri ve tohumları yoktur?",
-        options: [
-          "Mantarlar",
-          "Çiçeksiz Bitkiler",
-          "Mikroskobik Canlılar",
-          "Omurgasızlar",
+        "id": "f5-2-t4-12",
+        "subject": "fen",
+        "term": 2,
+        "prompt": "Aşağıdaki eşleştirmelerden hangisinde maddenin ışığı geçirme özelliği YANLIŞ verilmiştir?",
+        "options": [
+          "Pencere camı -> Saydam",
+          "Tahta kapı -> Opak",
+          "Tül perde -> Yarı saydam",
+          "Buzlu cam -> Saydam"
         ],
-        correct: 1,
-        explanation:
-          "Eğrelti otu ve karayosunu gibi çiçeksiz bitkiler, bitki grubundadır ama çiçek/tohum yapıları yoktur.",
+        "correct": 3,
+        "explanation": "Buzlu cam arkasındaki cisimleri net göstermez, ışığın sadece bir kısmını geçirir. Bu yüzden saydam değil, yarı saydamdır."
       },
+      {
+        "id": "f5-2-t4-13",
+        "subject": "fen",
+        "term": 2,
+        "prompt": "Gözlük camlarının üretiminde kullanılan malzemenin ışığı geçirme özelliği açısından nasıl olması zorunludur?",
+        "options": [
+          "Opak olmalıdır ki gözler güneşten korunsun.",
+          "Yarı saydam olmalıdır ki etraf bulanık görünsün.",
+          "Saydam olmalıdır ki ışığı tam geçirip net bir görüntü sağlasın.",
+          "Ayna gibi yansıtıcı olmalıdır."
+        ],
+        "correct": 2,
+        "explanation": "Gözlüklerin amacı görme kusurlarını giderip net bir görüntü sunmaktır. Bu yüzden saydam (ışığı tam geçiren) maddelerden yapılırlar."
+      },
+      {
+        "id": "f5-2-t4-14",
+        "subject": "fen",
+        "term": 2,
+        "prompt": "Tam gölge oluşumu ile ilgili aşağıda verilen bilgilerden hangisi KESİNLİKLE DOĞRUDUR?",
+        "options": [
+          "Saydam maddelerin arkasında her zaman kopkoyu bir tam gölge oluşur.",
+          "Gölgenin oluşabilmesi için ortamda birden fazla ışık kaynağı olmalıdır.",
+          "Işık kaynağı ile perde arasına opak bir cisim konulduğunda tam gölge oluşur.",
+          "Cismin gölgesi her zaman cismin kendi renginde olur."
+        ],
+        "correct": 2,
+        "explanation": "Tam gölge oluşumunun temel kuralı, ışık kaynağından gelen ışınların opak (ışığı geçirmeyen) bir cisim tarafından engellenmesidir."
+      },
+      {
+        "id": "f5-2-t4-15",
+        "subject": "fen",
+        "term": 2,
+        "prompt": "Zeynep, karanlık bir odada el fenerini duvara tutmuş, fener ile duvar arasına ise metal bir kupa koyarak duvarda kupanın gölgesini oluşturmuştur. Zeynep duvardaki gölgeyi BÜYÜTMEK için ne yapmalıdır?",
+        "options": [
+          "Metal kupayı el fenerine doğru yaklaştırmalıdır.",
+          "Metal kupayı el fenerinden uzaklaştırıp duvara yaklaştırmalıdır.",
+          "El fenerini kapatıp odayı aydınlatmalıdır.",
+          "Daha küçük bir el feneri kullanmalıdır."
+        ],
+        "correct": 0,
+        "explanation": "Cisim (engel) ışık kaynağına yaklaştıkça, cismin engellediği ışınların açısı genişler ve perdedeki (duvardaki) gölge büyür."
+      },
+      {
+        "id": "f5-2-t4-16",
+        "subject": "fen",
+        "term": 2,
+        "prompt": "Güneşli bir günde okul bahçesinde duran bir bayrak direğinin gölgesi sabahtan akşama kadar gözlemlenmiştir. Bayrak direğinin gölgesinin EN KISA olduğu zaman dilimi hangisidir?",
+        "options": [
+          "Sabah güneşin ilk doğduğu an",
+          "İkindi vakti",
+          "Güneş ışınlarının en dik geldiği öğle vakti",
+          "Akşam güneş batmadan hemen önce"
+        ],
+        "correct": 2,
+        "explanation": "Işık kaynağı cisme ne kadar dik (tepeden) gelirse gölge o kadar kısa olur. Bu nedenle gölge boyu öğle vakti en kısadır."
+      },
+      {
+        "id": "f5-2-t4-17",
+        "subject": "fen",
+        "term": 2,
+        "prompt": "Bir gölge oyununda oyuncu, elleriyle kartaldan tavşana kadar çeşitli figürler yaparak duvarda bu hayvanların gölgelerini oluşturmaktadır. Duvardaki gölgenin, oyuncunun elleriyle yaptığı şekle benzemesinin asıl sebebi nedir?",
+        "options": [
+          "Işığın sesten hızlı yayılması",
+          "Işık ışınlarının doğrusal yolla yayılması",
+          "Ellerin saydam bir madde olması",
+          "Duvarın beyaz renkte olması"
+        ],
+        "correct": 1,
+        "explanation": "Işık doğrusal yayıldığı için, ellerin (opak cismin) yanından geçebilen ışınlar duvarda ellerin tam sınırlarını çizer ve şekline benzeyen bir gölge oluşturur."
+      },
+      {
+        "id": "f5-2-t4-18",
+        "subject": "fen",
+        "term": 2,
+        "prompt": "El feneri ile aydınlatılan bir toptan tam gölge elde edilmiştir. Top, el fenerine sabit kalmak şartıyla, gölgenin düştüğü PERDE (ekran) toptan UZAKLAŞTIRILIRSA gölgenin boyutu nasıl değişir?",
+        "options": [
+          "Gölge boyu küçülür.",
+          "Gölge boyu büyür.",
+          "Gölge boyu değişmez.",
+          "Gölge tamamen yok olur."
+        ],
+        "correct": 1,
+        "explanation": "Işık ışınları toptan geçemedikleri için doğrusal olarak genişleyerek yollarına devam ederler. Ekran toptan uzaklaştıkça, genişleyen bu karanlık alan ekranın üzerine daha büyük düşer."
+      },
+      {
+        "id": "f5-2-t4-19",
+        "subject": "fen",
+        "term": 2,
+        "prompt": "Bir odada masanın üzerinde duran vazo, el feneri ile aydınlatılmaktadır. El fenerini vazonun sağ tarafından tuttuğumuzda, vazonun gölgesi ne tarafa düşer?",
+        "options": [
+          "El fenerinin tutulduğu sağ tarafa",
+          "Vazonun tam üstüne",
+          "Vazonun sol tarafına",
+          "Vazonun altına"
+        ],
+        "correct": 2,
+        "explanation": "Gölge her zaman ışık kaynağının zıt (ters) yönünde oluşur. Işık sağdan geliyorsa, gölge solda oluşur."
+      },
+      {
+        "id": "f5-2-t4-20",
+        "subject": "fen",
+        "term": 2,
+        "prompt": "Aşağıdaki cisimlerin hangisini güneşe karşı tuttuğumuzda arkasında koyu, belirgin ve tam bir gölge oluşması beklenmez?",
+        "options": [
+          "Kalın bir okuma kitabı",
+          "Demir para",
+          "Şeffaf poşet dosyası",
+          "Seramik fincan"
+        ],
+        "correct": 2,
+        "explanation": "Tam gölge oluşumu için opak madde şarttır. Şeffaf poşet dosyası ışığı büyük oranda geçirdiği için (saydam/yarı saydam olduğu için) arkasında koyu ve net bir gölge oluşturmaz."
+      }
     ],
     test5: [
   { 
