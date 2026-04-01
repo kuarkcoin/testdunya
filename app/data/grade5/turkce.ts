@@ -1907,266 +1907,286 @@ export const turkceData: SubjectData = {
     ],
     test8: [
       {
-        id: "t5-1-t8-01",
-        subject: "turkce",
-        term: 1,
-        prompt:
-          "Aşağıdaki cümlelerin hangisinde 'sayıların yazımı' ile ilgili bir yanlışlık yapılmıştır?",
-        options: [
-          "Sınavda 2'inci olduk.",
-          "Onar onar gruplara ayrıldık.",
-          "Bu yıl 15. yaşımı kutlayacağım.",
-          "Kitabı 25 liraya aldım.",
+        "id": "s5-2-t8-01",
+        "subject": "sosyal",
+        "term": 2,
+        "prompt": "Tarihte yazıyı icat ederek bilgi aktarımını kolaylaştıran ve tarihi devirlerin başlamasını sağlayan Mezopotamya medeniyeti hangisidir?",
+        "options": [
+          "Sümerler",
+          "Babiller",
+          "Asurlar",
+          "Hititler"
         ],
-        correct: 0,
-        explanation:
-          "Sıra sayıları rakamla yazıldığında ek, rakamın okunuşuna göre gelir. '2'nci' şeklinde yazılmalıdır (İkinci).",
+        "correct": 0,
+        "explanation": "Sümerler, kil tabletler üzerine yazdıkları 'Çivi Yazısı'nı icat ederek tarihi devirleri başlatan ilk uygarlıktır."
       },
       {
-        id: "t5-1-t8-02",
-        subject: "turkce",
-        term: 1,
-        prompt:
-          "Hangi metin türünde kahramanlar genellikle hayvanlardır ve sonunda bir ders verilir?",
-        options: ["Hikaye", "Masal", "Fabl", "Anı"],
-        correct: 2,
-        explanation:
-          "Hayvanların konuşturulduğu ve ahlaki bir ders içeren kısa anlatılara fabl denir.",
-      },
-      {
-        id: "t5-1-t8-03",
-        subject: "turkce",
-        term: 1,
-        prompt:
-          "Aşağıdaki cümlelerin hangisinde 'ünsüz benzeşmesi' (sertleşme) yoktur?",
-        options: [
-          "Sınıfta kimse kalmadı.",
-          "Yavaşça yanıma yaklaştı.",
-          "Kitabı çantasına koydu.",
-          "Aşçı yemeği çok tuzlu yapmış.",
+        "id": "s5-2-t8-02",
+        "subject": "sosyal",
+        "term": 2,
+        "prompt": "Anadolu medeniyetlerinden biri olan Lidyalıların parayı icat etmeleri, insanlık tarihinde en çok hangi alanı etkilemiş ve kolaylaştırmıştır?",
+        "options": [
+          "Tarım",
+          "Mimari",
+          "Ticaret",
+          "Sanat"
         ],
-        correct: 2,
-        explanation:
-          "A seçeneğinde (Sınıf-ta), B seçeneğinde (Yavaş-ça), D seçeneğinde (Aş-çı) sertleşme varken C seçeneğinde yoktur.",
+        "correct": 2,
+        "explanation": "Paranın icat edilmesiyle alışverişte takas (ürün değişimi) usulü sona ermiş ve ticaret çok büyük bir hız kazanmıştır."
       },
       {
-        id: "t5-1-t8-04",
-        subject: "turkce",
-        term: 1,
-        prompt: "Aşağıdaki cümlelerin hangisinde bir 'varsayım' anlamı vardır?",
-        options: [
-          "Keşke daha erken gelseydin.",
-          "Tut ki piyangodan büyük ikramiye sana çıktı.",
-          "Yarın kar yağabilir.",
-          "Haftaya sınav sonuçları açıklanacak.",
+        "id": "s5-2-t8-03",
+        "subject": "sosyal",
+        "term": 2,
+        "prompt": "Tarihte bilinen ilk yazılı ve sert kanunları yapan, 'kısasa kısas' kuralını uygulayan Mezopotamya kralı ve bu medeniyet aşağıdakilerden hangisidir?",
+        "options": [
+          "Midas - Frigler",
+          "Hammurabi - Babiller",
+          "Urgakina - Sümerler",
+          "Tavananna - Hititler"
         ],
-        correct: 1,
-        explanation:
-          "'Tut ki', 'diyelim ki', 'farz et ki' gibi ifadeler gerçekleşmemiş bir olayı gerçekleşmiş gibi kabul eder.",
+        "correct": 1,
+        "explanation": "Babil Kralı Hammurabi, tarihte kendi adıyla bilinen ve oldukça sert cezalara (kısasa kısas) sahip olan Hammurabi Kanunları'nı yapmıştır."
       },
       {
-        id: "t5-1-t8-05",
-        subject: "turkce",
-        term: 1,
-        prompt: "Hangi seçenekteki kelimenin kökü 'isim'dir?",
-        options: ["Yazıcı", "Gözlükçü", "Süzgeç", "Koşucu"],
-        correct: 1,
-        explanation:
-          "Gözlükçü kelimesinin kökü 'Göz' ismidir. Diğerleri yaz-, süz- ve koş- fiillerinden türemiştir.",
-      },
-      {
-        id: "t5-1-t8-06",
-        subject: "turkce",
-        term: 1,
-        prompt: "Aşağıdaki deyimlerden hangisi 'çok sevinmek' anlamındadır?",
-        options: [
-          "Gözüne girmek",
-          "Ağzı kulaklarına varmak",
-          "Kulak kabartmak",
-          "Burnu havada olmak",
+        "id": "s5-2-t8-04",
+        "subject": "sosyal",
+        "term": 2,
+        "prompt": "Hititler, tanrılarına hesap vermek amacıyla bir yıl içinde yaşanan iyi veya kötü tüm olayları 'Anal' adını verdikleri yıllıklara yazmışlardır. Bu durum Hititlerde neyin geliştiğini gösterir?",
+        "options": [
+          "Objektif (tarafsız) tarih yazıcılığının",
+          "Tarım ve hayvancılığın",
+          "Sınıf ayrımının",
+          "Çok tanrılı inancın"
         ],
-        correct: 1,
-        explanation:
-          "Ağzı kulaklarına varmak, büyük bir neşe ve mutluluk durumunu ifade eder.",
+        "correct": 0,
+        "explanation": "Yenilgileri ve kötü olayları bile tanrıdan korktukları için değiştirmeden (tarafsızca) yazmaları, objektif tarih yazıcılığını başlatmıştır."
       },
       {
-        id: "t5-1-t8-07",
-        subject: "turkce",
-        term: 1,
-        prompt: "Hangi cümlede 'karşılaştırma' yapılmıştır?",
-        options: [
-          "Bugün hava düne göre daha sıcak.",
-          "Çocuklar parkta neşeyle oynuyor.",
-          "Kitap okumayı çok seviyorum.",
-          "Annem çok güzel yemek yapar.",
+        "id": "s5-2-t8-05",
+        "subject": "sosyal",
+        "term": 2,
+        "prompt": "Doğu Anadolu'da Tuşpa (Van) çevresinde kurulan, tarımı geliştirmek için 'Şamran Kanalı'nı inşa eden ve dağlık bölgede yaşadıkları için taş işçiliğinde ileri giden medeniyet hangisidir?",
+        "options": [
+          "Frigler",
+          "İyonlar",
+          "Urartular",
+          "Lidyalılar"
         ],
-        correct: 0,
-        explanation:
-          "Bugünkü hava ile dünkü hava 'sıcaklık' yönünden kıyaslanmıştır.",
+        "correct": 2,
+        "explanation": "Urartular Doğu Anadolu'da yaşamış, sulama kanalları ve barajlar yaparak tarımı geliştirmiş, taşları oyarak kaleler inşa etmişlerdir."
       },
       {
-        id: "t5-1-t8-08",
-        subject: "turkce",
-        term: 1,
-        prompt: "Aşağıdaki cümlelerin hangisinde 'amaç-sonuç' ilişkisi vardır?",
-        options: [
-          "Yağmur yağdığı için ıslandım.",
-          "Ders çalışmak üzere odasına çekildi.",
-          "Sınavı kazandığına çok sevindi.",
-          "Yorgun olduğu için hemen uyudu.",
+        "id": "s5-2-t8-06",
+        "subject": "sosyal",
+        "term": 2,
+        "prompt": "Ticareti geliştirmek için Anadolu'ya gelen, 'Karum' adı verilen pazarlar kuran ve Anadolu'ya çivi yazısını getirerek Anadolu'nun tarihi devirlere geçmesini sağlayan Mezopotamya uygarlığı hangisidir?",
+        "options": [
+          "Sümerler",
+          "Asurlar",
+          "Babiller",
+          "Hititler"
         ],
-        correct: 1,
-        explanation:
-          "Odaya çekilme eylemi 'ders çalışma amacıyla' yapılmıştır.",
+        "correct": 1,
+        "explanation": "Asurlar, ticari faaliyetleri sayesinde Sümerlerden öğrendikleri yazıyı Anadolu'ya taşımış ve Anadolu'da tarihi devirleri başlatmışlardır."
       },
       {
-        id: "t5-1-t8-09",
-        subject: "turkce",
-        term: 1,
-        prompt:
-          "Noktalama işaretlerinden hangisi, kendisinden sonra örnek verilecek cümlenin sonuna konur?",
-        options: ["İki nokta", "Noktalı virgül", "Üç nokta", "Virgül"],
-        correct: 0,
-        explanation:
-          "Açıklama yapılacak veya örnek verilecek yerlerden önce iki nokta (:) kullanılır.",
-      },
-      {
-        id: "t5-1-t8-10",
-        subject: "turkce",
-        term: 1,
-        prompt: "Aşağıdaki kelimelerden hangisinde 'ünlü düşmesi' vardır?",
-        options: ["Karnım", "Çiçekler", "Kalemim", "Sokakta"],
-        correct: 0,
-        explanation: "Karın-ım birleşirken ikinci hecedeki 'ı' sesi düşer.",
-      },
-      {
-        id: "t5-1-t8-11",
-        subject: "turkce",
-        term: 1,
-        prompt: "Aşağıdaki cümlelerin hangisinde 'abartma' (mübalağa) vardır?",
-        options: [
-          "Güneş bize gülümsüyordu.",
-          "Bir ah çeksem dağı taşı eritir.",
-          "Deniz kıyısında taş topladık.",
-          "Okula gitmek için erkenden kalktı.",
+        "id": "s5-2-t8-07",
+        "subject": "sosyal",
+        "term": 2,
+        "prompt": "Ege kıyılarında kurulan, deniz ticaretiyle zenginleşen ve özgür düşünce ortamı sayesinde Thales, Hipokrat, Pisagor gibi birçok bilim insanının yetiştiği Anadolu medeniyeti hangisidir?",
+        "options": [
+          "İyonlar",
+          "Urartular",
+          "Frigler",
+          "Lidyalılar"
         ],
-        correct: 1,
-        explanation:
-          "Bir insanın ah çekerek dağı taşı eritmesi fiziksel olarak imkansızdır, abartmadır.",
+        "correct": 0,
+        "explanation": "İyonlarda baskıcı bir yönetim olmaması (özgür düşünce) bilimin ve sanatın çok hızlı gelişmesini sağlamıştır."
       },
       {
-        id: "t5-1-t8-12",
-        subject: "turkce",
-        term: 1,
-        prompt: "Hangi kelime yapım eki alarak yeni bir anlam kazanmıştır?",
-        options: ["Masalar", "Yolcu", "Defterim", "Kitapta"],
-        correct: 1,
-        explanation:
-          "Yol isminden '-cu' eki ile 'yolculuk yapan kişi' anlamında yeni bir kelime türemiştir.",
-      },
-      {
-        id: "t5-1-t8-13",
-        subject: "turkce",
-        term: 1,
-        prompt: "Aşağıdakilerden hangisi bir 'nesnel' cümledir?",
-        options: [
-          "Kırmızı en güzel renktir.",
-          "Film çok sürükleyiciydi.",
-          "Türkiye'nin üç tarafı denizlerle çevrilidir.",
-          "Yemek harika kokuyor.",
+        "id": "s5-2-t8-08",
+        "subject": "sosyal",
+        "term": 2,
+        "prompt": "Tarım ve hayvancılığa çok önem veren, 'Öküz kesenin veya saban kıranın cezası ölümdür' şeklinde sert kanunlar yapan ve aynı zamanda 'fibula' adı verilen çengelli iğneyi icat eden medeniyet hangisidir?",
+        "options": [
+          "Hititler",
+          "Sümerler",
+          "Babiller",
+          "Frigler"
         ],
-        correct: 2,
-        explanation:
-          "Üç tarafın denizlerle çevrili olması kanıtlanabilir bir gerçektir.",
+        "correct": 3,
+        "explanation": "Frigler için tarım vazgeçilmezdi. Bu yüzden tarımı ve tarım aletlerini koruyan çok sert kanunlar yapmışlardır."
       },
       {
-        id: "t5-1-t8-14",
-        subject: "turkce",
-        term: 1,
-        prompt: "Aşağıdaki atasözlerinden hangisi 'tutumluluk' ile ilgilidir?",
-        options: [
-          "Ak akçe kara gün içindir.",
-          "İşleyen demir ışıldar.",
-          "Ağaç yaşken eğilir.",
-          "Bir elin nesi var iki elin sesi var.",
+        "id": "s5-2-t8-09",
+        "subject": "sosyal",
+        "term": 2,
+        "prompt": "Demokrasi ile yönetilen devletlerde, devleti yönetecek kişilerin halk tarafından belirli bir süre için oy kullanılarak seçilmesi demokrasinin hangi temel ilkesi ile açıklanır?",
+        "options": [
+          "Eşitlik",
+          "Milli Egemenlik",
+          "Özgürlük",
+          "Çoğulculuk"
         ],
-        correct: 0,
-        explanation:
-          "Biriktirilen paranın zor günlerde fayda sağlayacağını anlatır.",
+        "correct": 1,
+        "explanation": "Yönetme yetkisinin herhangi bir krala veya zümreye değil, millete (halka) ait olmasına Milli Egemenlik denir."
       },
       {
-        id: "t5-1-t8-15",
-        subject: "turkce",
-        term: 1,
-        prompt: "Hangi seçenekte 'kişileştirme' sanatı yapılmıştır?",
-        options: [
-          "Bulutlar ağlıyordu bu sabah.",
-          "Kar her yeri beyaza boyadı.",
-          "Güneş doğunca uyandık.",
-          "Rüzgar çok sert esiyor.",
+        "id": "s5-2-t8-10",
+        "subject": "sosyal",
+        "term": 2,
+        "prompt": "Aşağıdakilerden hangisi cumhuriyet yönetiminin temel özelliklerinden biri DEĞİLDİR?",
+        "options": [
+          "Yöneticiler halkın oylarıyla belirli bir süre için seçilir.",
+          "Egemenlik kayıtsız şartsız milletindir.",
+          "Yöneticiler yetkiyi ömür boyu, babadan oğula geçecek şekilde kullanır.",
+          "Tüm vatandaşlar yasalar ve kanunlar önünde eşittir."
         ],
-        correct: 0,
-        explanation:
-          "Bulutların 'ağlaması' insana ait bir özelliğin doğaya verilmesidir.",
+        "correct": 2,
+        "explanation": "Yönetimin ömür boyu sürdüğü ve babadan oğula geçtiği sistem Cumhuriyet değil, Monarşi (Krallık/Padişahlık) sistemidir."
       },
       {
-        id: "t5-1-t8-16",
-        subject: "turkce",
-        term: 1,
-        prompt: "Hangi kelimenin yazımı yanlıştır?",
-        options: ["Birkaç", "Birçok", "Pekçok", "Herhangi"],
-        correct: 2,
-        explanation: "'Pek çok' her zaman ayrı yazılır.",
-      },
-      {
-        id: "t5-1-t8-17",
-        subject: "turkce",
-        term: 1,
-        prompt: "Bir metnin 'yardımcı fikirleri' ile ilgili hangisi doğrudur?",
-        options: [
-          "Ana fikri desteklerler.",
-          "Metnin en genel yargısıdır.",
-          "Genelde tek cümledir.",
-          "Metnin başlığı ile aynıdır.",
+        "id": "s5-2-t8-11",
+        "subject": "sosyal",
+        "term": 2,
+        "prompt": "Demokratik ülkelerde farklı siyasi partilerin kurulması ve seçimlerde birden fazla adayın veya partinin halkın oylarına sunulması, demokrasinin hangi ilkesinin bir sonucudur?",
+        "options": [
+          "Çoğulculuk",
+          "Eşitlik",
+          "İnsan Haklarına Saygı",
+          "Özgürlük"
         ],
-        correct: 0,
-        explanation:
-          "Yardımcı fikirler ana fikrin ispatlanmasını ve anlaşılmasını sağlar.",
+        "correct": 0,
+        "explanation": "Farklı görüşlerin ve fikirlerin siyasette temsil edilebilmesi için birden fazla partinin bulunmasına 'çoğulculuk' ilkesi denir."
       },
       {
-        id: "t5-1-t8-18",
-        subject: "turkce",
-        term: 1,
-        prompt: "Aşağıdaki kelimelerden hangisi 'somut' bir anlam taşır?",
-        options: ["Sevgi", "Cesaret", "Rüzgar", "Rüya"],
-        correct: 2,
-        explanation:
-          "Rüzgar hissedilebilir (dokunma duyusu) olduğu için somuttur.",
-      },
-      {
-        id: "t5-1-t8-19",
-        subject: "turkce",
-        term: 1,
-        prompt: "Aşağıdaki kelime çiftlerinden hangisi 'zıt anlamlı' değildir?",
-        options: [
-          "Siyah - Kara",
-          "Hızlı - Yavaş",
-          "Büyük - Küçük",
-          "Zengin - Fakir",
+        "id": "s5-2-t8-12",
+        "subject": "sosyal",
+        "term": 2,
+        "prompt": "Sınıf başkanlığı seçiminde Ayşe, Ali ve Mert'in aday olması ve tüm öğrencilerin kendi hür iradeleriyle, baskı altında kalmadan istedikleri kişiye oy vermesi demokrasinin en çok hangi özelliğini gösterir?",
+        "options": [
+          "Seçme ve seçilme hakkını",
+          "Haberleşme hürriyetini",
+          "Eğitim hakkını",
+          "Yerleşme ve seyahat özgürlüğünü"
         ],
-        correct: 0,
-        explanation: "Siyah ve kara eş anlamlıdır.",
+        "correct": 0,
+        "explanation": "Aday olmak 'seçilme' hakkını, oy vererek desteklediği kişiyi belirlemek ise 'seçme' hakkını temsil eder."
       },
       {
-        id: "t5-1-t8-20",
-        subject: "turkce",
-        term: 1,
-        prompt:
-          "Aşağıdaki noktalama işaretlerinden hangisi, tamamlanmış cümlelerin sonuna konur?",
-        options: ["Üç nokta", "Nokta", "Soru işareti", "Ünlem"],
-        correct: 1,
-        explanation: "Yargısı bitmiş düz cümlelerin sonuna nokta konur.",
+        "id": "s5-2-t8-13",
+        "subject": "sosyal",
+        "term": 2,
+        "prompt": "Aşağıdakilerden hangisi demokratik bir toplumda yaşayan vatandaşlardan beklenen bir davranış OLAMAZ?",
+        "options": [
+          "Farklı düşüncelere ve inançlara saygı göstermek",
+          "Kendi fikrini başkalarına zorla kabul ettirmeye çalışmak",
+          "Kanunlara, yasalara ve toplum kurallarına uymak",
+          "Haksızlığa uğradığında hakkını şiddete başvurmadan yasal yollarla aramak"
+        ],
+        "correct": 1,
+        "explanation": "Demokrasilerde herkes fikrini özgürce ifade eder ancak kimse kendi fikrini başkasına baskı veya zor kullanarak kabul ettiremez."
       },
+      {
+        "id": "s5-2-t8-14",
+        "subject": "sosyal",
+        "term": 2,
+        "prompt": "Haklarını bilen ve kullanan, aynı zamanda devlete ve topluma karşı sorumluluklarını yerine getiren kişilere 'etkin vatandaş' denir. Buna göre aşağıdakilerden hangisi etkin bir vatandaşın özelliklerinden biri DEĞİLDİR?",
+        "options": [
+          "Kazancına göre düzenli olarak vergisini öder.",
+          "Seçim zamanı geldiğinde ülkesi için oy kullanır.",
+          "Sorunların çözümünde sadece kendi çıkarlarını düşünerek hareket eder.",
+          "Çevresine karşı duyarlıdır, doğayı ve kamu mallarını korur."
+        ],
+        "correct": 2,
+        "explanation": "Etkin vatandaş bencil değildir. Sadece kendi çıkarlarını değil, toplumun huzurunu ve ülkesinin menfaatlerini de düşünür."
+      },
+      {
+        "id": "s5-2-t8-15",
+        "subject": "sosyal",
+        "term": 2,
+        "prompt": "Devletin yol, okul, hastane yapabilmesi ve kamu hizmetlerini vatandaşlara kesintisiz sunabilmesi için vatandaşların yerine getirmesi gereken temel ekonomik sorumluluk aşağıdakilerden hangisidir?",
+        "options": [
+          "Askerlik yapmak",
+          "Vergi vermek",
+          "Oy kullanmak",
+          "Kanunlara uymak"
+        ],
+        "correct": 1,
+        "explanation": "Devletin temel gelir kaynağı vatandaşlardan ve kurumlardan topladığı vergilerdir. Toplanan bu vergiler halka hizmet olarak geri döner."
+      },
+      {
+        "id": "s5-2-t8-16",
+        "subject": "sosyal",
+        "term": 2,
+        "prompt": "Aldığı bir teknolojik ürün bozuk çıkan ve mağaza tarafından fişi olmasına rağmen iadesi kabul edilmeyen etkin bir vatandaşın ilk olarak ne yapması beklenir?",
+        "options": [
+          "Tüketici Hakem Heyetine dilekçe ile başvurarak yasal hakkını araması",
+          "Ürünü çöpe atıp aynı mağazadan yenisini alması",
+          "Mağaza çalışanlarıyla kavga edip olay çıkarması",
+          "Durumu kabullenip hiçbir şey yapmaması"
+        ],
+        "correct": 0,
+        "explanation": "Etkin vatandaş sorunlarını şiddetle veya sineye çekerek çözmez; yasal yollara (Tüketici Hakem Heyeti, dilekçe hakkı) başvurarak hakkını arar."
+      },
+      {
+        "id": "s5-2-t8-17",
+        "subject": "sosyal",
+        "term": 2,
+        "prompt": "Bir vatandaşın, yaşadığı mahalledeki sokak lambalarının haftalardır yanmaması nedeniyle belediyeye durumun düzeltilmesi için bir dilekçe yazması, onun hangi özelliğini gösterir?",
+        "options": [
+          "Etkin ve duyarlı bir vatandaş olduğunu",
+          "Sadece kendi kişisel çıkarlarını düşündüğünü",
+          "Toplumsal sorumluluklarından kaçtığını",
+          "Kurallara uymayan biri olduğunu"
+        ],
+        "correct": 0,
+        "explanation": "Çevresindeki aksaklıkları fark edip resmi kanallarla çözüm aramak etkin ve bilinçli vatandaşlığın en güzel örneklerindendir."
+      },
+      {
+        "id": "s5-2-t8-18",
+        "subject": "sosyal",
+        "term": 2,
+        "prompt": "18 yaşını doldurmuş her Türkiye Cumhuriyeti vatandaşının seçimlerde oy kullanması bir vatandaşlık görevidir. Oy kullanmanın ülke yönetimine en büyük katkısı nedir?",
+        "options": [
+          "Ülkenin ekonomik olarak zenginleşmesini doğrudan sağlamak",
+          "Halkın iradesini meclise yansıtarak kendi kendini yönetmesini sağlamak",
+          "Toplumdaki eğitim seviyesini hemen yükseltmek",
+          "Vatandaşların yurtdışına seyahat etmesini kolaylaştırmak"
+        ],
+        "correct": 1,
+        "explanation": "Oy kullanmak, milletin kendi yöneticilerini seçerek meclise göndermesini ve ülke yönetiminde doğrudan söz sahibi olmasını sağlar."
+      },
+      {
+        "id": "s5-2-t8-19",
+        "subject": "sosyal",
+        "term": 2,
+        "prompt": "Etkin bir vatandaş çevre bilincine sahiptir. Buna göre aşağıdakilerden hangisi etkin vatandaşın doğaya ve çevreye karşı sorumluluklarından biridir?",
+        "options": [
+          "Atıkları geri dönüşüm kutuları yerine sokağa atmak",
+          "Doğal kaynakları (su, elektrik vb.) israf etmeden bilinçli kullanmak",
+          "Piknik alanlarında yaktığı ateşi söndürmeden bırakmak",
+          "Çevre kirliliğine şahit olduğunda görmezden gelmek"
+        ],
+        "correct": 1,
+        "explanation": "Kaynakların tükenmesini önlemek ve doğayı korumak için elektrik, su gibi kaynakları tasarruflu kullanmak vatandaşlık bilincidir."
+      },
+      {
+        "id": "s5-2-t8-20",
+        "subject": "sosyal",
+        "term": 2,
+        "prompt": "Aşağıdakilerden hangisi hem bir 'vatandaşlık hakkı' hem de demokratik ülkelerde yerine getirilmesi gereken bir 'sorumluluk/görev' olarak kabul edilir?",
+        "options": [
+          "Dilekçe vermek",
+          "Vergi vermek",
+          "Askerlik yapmak",
+          "Oy kullanmak"
+        ],
+        "correct": 3,
+        "explanation": "Seçme ve seçilme temel bir anayasal haktır; ancak demokrasinin işleyebilmesi için sandığa gidip oy kullanmak aynı zamanda ülkeye karşı bir görevdir."
+      }
+    ],
     ],
   },
   term2: {
