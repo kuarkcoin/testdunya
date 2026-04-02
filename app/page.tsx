@@ -553,6 +553,29 @@ export default function HomePage() {
     </div>
   </Link>
 
+  {/* Sert Ünsüz Yolu */}
+  <Link
+    href="/turkce-oyunlari/sert-unsuz-yolu"
+    className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-sky-500 to-indigo-700 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
+  >
+    <div className="absolute -top-4 -right-4 h-32 w-32 rounded-full bg-white/10 blur-2xl transition-all group-hover:bg-white/20"></div>
+    <div className="relative z-10 flex h-full flex-col justify-between">
+      <div>
+        <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-sky-100 backdrop-blur-sm">
+          🚗 Türkçe Mini Oyun
+        </div>
+        <h3 className="mb-2 text-2xl font-black tracking-tight">Sert Ünsüz Yolu</h3>
+        <p className="text-sm text-sky-50 opacity-90">Arabanı sür, sert ünsüzleri topla, bölümü tamamla.</p>
+      </div>
+      <div className="mt-6 flex items-center gap-3">
+        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-indigo-700 shadow-lg transition-transform group-hover:scale-110">
+          🛣️
+        </div>
+        <span className="text-sm font-bold">Play →</span>
+      </div>
+    </div>
+  </Link>
+
   {/* Wordle */}
   <Link
     href="/wordle"

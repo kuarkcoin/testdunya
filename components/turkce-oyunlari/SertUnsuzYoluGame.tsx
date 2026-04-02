@@ -134,10 +134,7 @@ export default function SertUnsuzYoluGame() {
             continue;
           }
 
-          if (item.y > roadHeight + 70) {
-            survivors.push(item);
-            continue;
-          }
+          if (item.y > roadHeight + 70) continue;
 
           survivors.push(item);
         }
@@ -321,6 +318,10 @@ export default function SertUnsuzYoluGame() {
                 className="absolute h-12 w-12 -translate-x-1/2 rounded-full bg-white/80 p-1 shadow-lg md:h-14 md:w-14"
                 style={{ left, top: `${item.y}px` }}
                 draggable={false}
+                onError={(event) => {
+                  const target = event.currentTarget;
+                  target.style.display = "none";
+                }}
               />
             );
           }
@@ -385,7 +386,7 @@ export default function SertUnsuzYoluGame() {
           disabled={game.status === "running"}
           className="rounded-2xl bg-emerald-500 px-5 py-4 text-lg font-black text-white disabled:cursor-not-allowed disabled:bg-emerald-300"
         >
-          Başlat
+          {game.status === "paused" ? "Devam Et" : "Başlat"}
         </button>
         <button
           onClick={pauseGame}
