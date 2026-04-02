@@ -576,6 +576,29 @@ export default function HomePage() {
     </div>
   </Link>
 
+  {/* Türkçe Oyunları Merkezi */}
+  <Link
+    href="/turkce-oyunlari"
+    className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-teal-500 to-cyan-700 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
+  >
+    <div className="absolute -top-4 -right-4 h-32 w-32 rounded-full bg-white/10 blur-2xl transition-all group-hover:bg-white/20"></div>
+    <div className="relative z-10 flex h-full flex-col justify-between">
+      <div>
+        <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-cyan-100 backdrop-blur-sm">
+          🇹🇷 Türkçe Oyunları
+        </div>
+        <h3 className="mb-2 text-2xl font-black tracking-tight">Türkçe Oyun Merkezi</h3>
+        <p className="text-sm text-cyan-50 opacity-90">Harfler, heceler, yazım kuralları, anlam bilgisi ve paragrafı oyunla öğren.</p>
+      </div>
+      <div className="mt-6 flex items-center gap-3">
+        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-cyan-700 shadow-lg transition-transform group-hover:scale-110">
+          📚
+        </div>
+        <span className="text-sm font-bold">Keşfet →</span>
+      </div>
+    </div>
+  </Link>
+
   {/* Wordle */}
   <Link
     href="/wordle"
