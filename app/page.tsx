@@ -565,13 +565,13 @@ export default function HomePage() {
           🚗 Türkçe Mini Oyun
         </div>
         <h3 className="mb-2 text-2xl font-black tracking-tight">Sert Ünsüz Yolu</h3>
-        <p className="text-sm text-sky-50 opacity-90">Arabanı sür, sert ünsüzleri topla, bölümü tamamla.</p>
+        <p className="text-sm text-sky-50 opacity-90">Arabanı sür, sert ünsüzleri topla, seviyeleri geç, rozetleri kazan.</p>
       </div>
       <div className="mt-6 flex items-center gap-3">
         <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-indigo-700 shadow-lg transition-transform group-hover:scale-110">
           🛣️
         </div>
-        <span className="text-sm font-bold">Play →</span>
+        <span className="text-sm font-bold">Play → • Yeni</span>
       </div>
     </div>
   </Link>
