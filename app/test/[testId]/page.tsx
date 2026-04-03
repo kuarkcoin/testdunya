@@ -4,6 +4,7 @@ import React, { useState, useEffect, useCallback, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useParams } from 'next/navigation';
+import { getParagrafTestNoFromDataId, getParagrafTestQuestions } from '../../data/paragrafTests';
 
 // --- ICONS ---
 const Clock = (props: React.SVGProps<SVGSVGElement>) => (
@@ -284,6 +285,45 @@ export default function QuizPage() {
     setAnswers({});
     setShowResult(false);
     setScore(0);
+
+    const paragrafTestNo = getParagrafTestNoFromDataId(testId);
+
+    if (paragrafTestNo) {
+      const rawList = getParagrafTestQuestions(paragrafTestNo);
+
+      const normalizedQuestions: Question[] = rawList.map((item, idx) => {
+        const choices: Choice[] = item.options.map((optText, optIdx) => ({
+          id: String.fromCharCode(65 + optIdx),
+          text: String(optText),
+        }));
+
+        return {
+          id: item.id || `paragraf-${paragrafTestNo}-${idx + 1}`,
+          prompt: item.prompt,
+          choices,
+          answer: choices[item.correct]?.id || '',
+          explanation: item.explanation,
+        };
+      });
+
+      if (normalizedQuestions.length === 0) {
+        setError(isGlobal ? 'No questions found.' : 'Soru bulunamadı.');
+        setLoading(false);
+        return;
+      }
+
+      setQuestions(normalizedQuestions);
+
+      if (mode === 'practice') {
+        setTimeLeft(null);
+      } else {
+        const calc = normalizedQuestions.length * 60;
+        setTimeLeft(calc < 600 ? 600 : calc);
+      }
+
+      setLoading(false);
+      return;
+    }
 
     const jsonUrl = `/data/tests/${testId}.json`;
 
