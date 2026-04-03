@@ -3,11 +3,12 @@ import TurkceGameEngine from "../../../components/turkce-oyunlari/TurkceGameEngi
 import { getTurkceGameBySlug } from "../../../components/turkce-oyunlari/turkce-games-config";
 
 type Props = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
-export default function TurkceGameDetailPage({ params }: Props) {
-  const game = getTurkceGameBySlug(params.slug);
+export default async function TurkceGameDetailPage({ params }: Props) {
+  const { slug } = await params;
+  const game = getTurkceGameBySlug(slug);
 
   if (!game) {
     return (
