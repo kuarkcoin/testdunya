@@ -2813,10 +2813,10 @@ test11: [
           "26/10",
           "17/5 ile 3 tam 1/2 eşittir."
         ],
-        "correct": 1,
-        "explanation": "Hepsini ondalık sayıya veya ortak paydaya çevirelim. 17/5 = 34/10. 3 tam 1/2 = 7/2 = 35/10. 26/10 aynen kalır. En büyük 35/10 yani 3 tam 1/2'dir."
+       correct: 1,
+        explanation: "Hepsini ondalık sayıya veya ortak paydaya çevirelim. 17/5 = 34/10. 3 tam 1/2 = 7/2 = 35/10. 26/10 aynen kalır. En büyük 35/10 yani 3 tam 1/2'dir."
       }
     ],
-    test1: [] // Şimdilik içi boş kalabilir
+    test1: []
   }
-}; // matematikData artık SubjectData tipine tam uyumlu!Data artık SubjectData tipine tam uyumlu!
+};
