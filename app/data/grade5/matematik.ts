@@ -2802,7 +2802,7 @@ test11: [
         "correct": 2,
         "explanation": "Hepsini paydası 8 olacak şekilde eşitleyelim: Ayşe 11/4 = 22/8. Fatma 2 tam 1/2 = 5/2 = 20/8. Zeynep = 23/8. En büyük pay Zeynep'e (23/8) ait olduğu için en çok o koşmuştur."
       },
-      {
+     {
         "id": "m5-2-t11-20",
         "subject": "matematik",
         "term": 2,
@@ -2817,9 +2817,6 @@ test11: [
         "explanation": "Hepsini ondalık sayıya veya ortak paydaya çevirelim. 17/5 = 34/10. 3 tam 1/2 = 7/2 = 35/10. 26/10 aynen kalır. En büyük 35/10 yani 3 tam 1/2'dir."
       }
     ],
-       
-  // BU KISMI EKLEMEN ŞART:
-  term2: {
-    test1: [], // Şimdilik içi boş kalabilir
-  },
-}; // matematikData artık SubjectData tipine tam uyumlu!
+    test1: [] // Şimdilik içi boş kalabilir
+  }
+}; // matematikData artık SubjectData tipine tam uyumlu!Data artık SubjectData tipine tam uyumlu!
