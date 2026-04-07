@@ -2748,7 +2748,76 @@ test11: [
         "id": "m5-2-t11-16",
         "subject": "matematik",
         "term": 2,
-        "prompt": "Görseldeki sayı doğrusunda
+        "prompt": "Görseldeki sayı doğrusunda 2 ile 3 noktaları arası 5 eşit parçaya bölünmüş ve A noktası işaretlenmiştir. A noktasına karşılık gelen değerin BİLEŞİK KESİR hali nedir?",
+        "imageUrl": "/images/grade5/matematik/test11/m5-t11-img-16.webp",
+        "options": [
+          "11/5",
+          "12/5",
+          "13/5",
+          "14/5"
+        ],
+        "correct": 2,
+        "explanation": "Sayı doğrusunda 2 tam geçilmiş ve 5 parçalık aralığın 3. noktası işaretlenmiştir. Bu 2 tam 3/5'tir. Bileşik kesre çevirince (2x5)+3 = 13/5 olur."
+      },
+      {
+        "id": "m5-2-t11-17",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Ayşe elindeki kurdelenin 3 tam 1/4 metresini el işi dersinde kullanmıştır. Bu uzunluğu tam olarak temsil eden DENK KESİR aşağıdakilerden hangisi olabilir?",
+        "options": [
+          "13/4",
+          "26/8",
+          "15/4",
+          "A ve B şıklarının her ikisi de"
+        ],
+        "correct": 3,
+        "explanation": "3 tam 1/4 kesri bileşik kesir olarak 13/4'tür. 13/4 kesrini 2 ile genişletirsek (pay ve paydayı 2 ile çarparsak) 26/8 elde ederiz. İkisi de doğrudur."
+      },
+      {
+        "id": "m5-2-t11-18",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir terzi takım elbise dikmek için 4 tam 2/3 metre kumaş kullanmıştır. Bu kumaş miktarını sadece 'üçte birlik' (1/3) parçalar olarak düşünürsek, ustanın elinde kaç tane 1/3'lük parça vardır?",
+        "options": [
+          "10",
+          "12",
+          "14",
+          "16"
+        ],
+        "correct": 2,
+        "explanation": "4 tam 2/3 kesrini bileşik kesre çevirirsek (4x3)+2 = 14/3 elde ederiz. Bu da 14 adet 1/3'lük parça demektir."
+      },
+      {
+        "id": "m5-2-t11-19",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Görselde bir koşu parkurunda yarışan üç sporcu yer almaktadır. Ayşe yolun 11/4'ünü, Fatma 2 tam 1/2'sini, Zeynep ise 23/8'ini tamamlamıştır. En uzun mesafeyi koşarak lider durumda olan kimdir?",
+        "imageUrl": "/images/grade5/matematik/test11/m5-t11-img-19.webp",
+        "options": [
+          "Ayşe",
+          "Fatma",
+          "Zeynep",
+          "Hepsi eşit koşmuştur."
+        ],
+        "correct": 2,
+        "explanation": "Hepsini paydası 8 olacak şekilde eşitleyelim: Ayşe 11/4 = 22/8. Fatma 2 tam 1/2 = 5/2 = 20/8. Zeynep = 23/8. En büyük pay Zeynep'e (23/8) ait olduğu için en çok o koşmuştur."
+      },
+      {
+        "id": "m5-2-t11-20",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Tahtaya 17/5, 3 tam 1/2 ve 26/10 kesirleri yazılmıştır. Bu üç kesri BÜYÜKTEN KÜÇÜĞE doğru sıraladığımızda en başta hangi kesir yer alır?",
+        "options": [
+          "17/5",
+          "3 tam 1/2",
+          "26/10",
+          "17/5 ile 3 tam 1/2 eşittir."
+        ],
+        "correct": 1,
+        "explanation": "Hepsini ondalık sayıya veya ortak paydaya çevirelim. 17/5 = 34/10. 3 tam 1/2 = 7/2 = 35/10. 26/10 aynen kalır. En büyük 35/10 yani 3 tam 1/2'dir."
+      }
+    ],
+       
   // BU KISMI EKLEMEN ŞART:
   term2: {
     test1: [], // Şimdilik içi boş kalabilir
