@@ -2522,11 +2522,10 @@ export const matematikData: SubjectData = {
         "explanation": "İki ucu da kapalı ve sınırlandırılmış olan düz çizgilere 'Doğru Parçası' denir ve köşeli parantez [AB] sembolü ile gösterilir."
       }
     ],
-  // 🚀 TEST 10 BURADA BAĞLANIYOR:
-    // Bu satır matematik-test10.ts içindeki tüm soruları buraya çeker.
-    ...matematikTest10.term1, 
+  ...matematikTest10.term1, 
   }, // term1 bitti (Burası term1'in sonu)
-test11: [
+  term2: { // <--- İŞTE EKSİK OLAN KAHRAMAN BU! 2. Dönemi başlatıyoruz.
+    test11: [
       {
         "id": "m5-2-t11-01",
         "subject": "matematik",
