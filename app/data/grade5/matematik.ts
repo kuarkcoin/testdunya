@@ -3106,6 +3106,306 @@ export const matematikData: SubjectData = {
         "explanation": "İki doğru birbirini dik olarak (T şeklinde veya artı şeklinde) kestiğinde oluşan 4 açının her biri tam olarak 90 derecedir."
       }
     ],
+         {
+        "id": "m5-2-t13-1",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "3/4 kesrini 5 ile genişletirsek aşağıdaki kesirlerden hangisini elde ederiz?",
+        "imageUrl": "",
+        "options": [
+          "8/9",
+          "15/20",
+          "3/20",
+          "15/4"
+        ],
+        "correct": 1,
+        "explanation": "Genişletme işleminde kesrin hem payı hem de paydası aynı sayıyla çarpılır. 3 x 5 = 15 ve 4 x 5 = 20 olduğundan yeni kesrimiz 15/20 olur."
+      },
+      {
+        "id": "m5-2-t13-2",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "18/24 kesrinin en sade hâli aşağıdakilerden hangisidir?",
+        "imageUrl": "",
+        "options": [
+          "9/12",
+          "6/8",
+          "3/4",
+          "2/3"
+        ],
+        "correct": 2,
+        "explanation": "Bir kesri en sade hâline getirmek için pay ve paydasını en büyük ortak bölenlerine bölmeliyiz. 18 ve 24'ü 6'ya böldüğümüzde (18÷6=3, 24÷6=4) en sade hâli olan 3/4'ü buluruz."
+      },
+      {
+        "id": "m5-2-t13-3",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "36/48 kesrini en sade hâline getirmek isteyen bir öğrenci, kesrin pay ve paydasını en büyük hangi sayıya bölmelidir?",
+        "imageUrl": "",
+        "options": [
+          "4",
+          "6",
+          "12",
+          "24"
+        ],
+        "correct": 2,
+        "explanation": "36 ve 48 sayılarının her ikisini de kalansız bölebilen en büyük sayı 12'dir. Bu sayıya bölündüğünde kesir doğrudan 3/4 olan en sade hâline ulaşır."
+      },
+      {
+        "id": "m5-2-t13-4",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir kesri sadeleştirmek veya genişletmek, o kesrin değerini nasıl etkiler?",
+        "imageUrl": "",
+        "options": [
+          "Değerini küçültür.",
+          "Değerini büyütür.",
+          "Değerini değiştirmez.",
+          "Değerini sıfır yapar."
+        ],
+        "correct": 2,
+        "explanation": "Sadeleştirme ve genişletme işlemleri sadece kesrin görünümünü (parça sayısını) değiştirir, bütün içindeki değerini (büyüklüğünü) asla değiştirmez. Bu kesirlere denk kesirler denir."
+      },
+      {
+        "id": "m5-2-t13-5",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Ayşe, öğretmeninin tahtaya yazdığı 12/18 kesrini önce en sade hâline getirmiş, daha sonra elde ettiği bu yeni kesri 5 ile genişletmiştir. Buna göre Ayşe'nin bulduğu son kesir aşağıdakilerden hangisidir?",
+        "imageUrl": "",
+        "options": [
+          "10/15",
+          "5/9",
+          "60/90",
+          "15/20"
+        ],
+        "correct": 0,
+        "explanation": "Önce sadeleştirme: 12 ve 18'i 6'ya bölersek 2/3 olur. Sonra 5 ile genişletme: 2x5=10 ve 3x5=15. Sonuç 10/15 olarak bulunur."
+      },
+      {
+        "id": "m5-2-t13-6",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Aşağıdaki kesirlerden hangisi 1/2 (yarım) kesrine denk değildir?",
+        "imageUrl": "",
+        "options": [
+          "2/4",
+          "3/6",
+          "4/9",
+          "5/10"
+        ],
+        "correct": 2,
+        "explanation": "Payı paydasının yarısı olan kesirler 1/2'ye denktir (2/4, 3/6, 5/10 gibi). Ancak 4 sayısı 9'un yarısı olmadığı için 4/9 kesri 1/2'ye denk değildir."
+      },
+      {
+        "id": "m5-2-t13-7",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "2/5 = A/15 denkliğinin sağlanabilmesi için A yerine hangi sayı gelmelidir?",
+        "imageUrl": "",
+        "options": [
+          "4",
+          "6",
+          "8",
+          "10"
+        ],
+        "correct": 1,
+        "explanation": "Paydadaki 5 sayısı 3 ile çarpılarak 15 olmuş (genişletilmiş). Eşitliğin bozulmaması için paydaki 2'yi de 3 ile çarpmalıyız. 2 x 3 = 6."
+      },
+      {
+        "id": "m5-2-t13-8",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "3/7 = 12/B olduğuna göre B yerine hangi sayı yazılmalıdır?",
+        "imageUrl": "",
+        "options": [
+          "21",
+          "24",
+          "28",
+          "35"
+        ],
+        "correct": 2,
+        "explanation": "Paydaki 3 sayısı 4 ile çarpılarak 12 bulunmuş. O hâlde paydadaki 7'yi de 4 ile çarpmalıyız. 7 x 4 = 28 olur."
+      },
+      {
+        "id": "m5-2-t13-9",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "20/50 kesrinin en sade hâli aşağıdakilerden hangisidir?",
+        "imageUrl": "",
+        "options": [
+          "2/5",
+          "4/10",
+          "1/5",
+          "10/25"
+        ],
+        "correct": 0,
+        "explanation": "20 ve 50 sayıları en büyük 10'a tam bölünür. Her ikisini de 10'a böldüğümüzde kesrin en sade hâli olan 2/5'i elde ederiz."
+      },
+      {
+        "id": "m5-2-t13-10",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "5/8 kesrini 4 ile genişletirsek hangi kesri elde ederiz?",
+        "imageUrl": "",
+        "options": [
+          "9/12",
+          "20/32",
+          "20/8",
+          "5/32"
+        ],
+        "correct": 1,
+        "explanation": "Kesri 4 ile genişletmek, payı ve paydayı 4 ile çarpmak demektir. 5 x 4 = 20 ve 8 x 4 = 32. Cevap 20/32'dir."
+      },
+      {
+        "id": "m5-2-t13-11",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Aşağıdaki kesirlerden hangisi en sade hâlindedir?",
+        "imageUrl": "",
+        "options": [
+          "4/8",
+          "6/9",
+          "5/7",
+          "10/15"
+        ],
+        "correct": 2,
+        "explanation": "4/8 kesri 4 ile, 6/9 kesri 3 ile, 10/15 kesri 5 ile sadeleştirilebilir. 5/7 kesrinin pay ve paydası 1'den başka ortak bir sayıya bölünemediği için en sade hâlindedir."
+      },
+      {
+        "id": "m5-2-t13-12",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir pastanın 4/16'sını yiyen Ali, aslında pastanın en sade hâliyle kaçta kaçını yemiştir?",
+        "imageUrl": "",
+        "options": [
+          "1/2",
+          "1/3",
+          "1/4",
+          "1/8"
+        ],
+        "correct": 2,
+        "explanation": "4/16 kesrini en sade hâline getirmek için payı ve paydayı 4'e böleriz. 4 ÷ 4 = 1 ve 16 ÷ 4 = 4. Yani pastanın 1/4'ünü (çeyreğini) yemiştir."
+      },
+      {
+        "id": "m5-2-t13-13",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "45/60 kesrinin en sade hâli kaçtır?",
+        "imageUrl": "",
+        "options": [
+          "3/4",
+          "4/5",
+          "15/20",
+          "9/12"
+        ],
+        "correct": 0,
+        "explanation": "45 ve 60 sayılarının her ikisi de en büyük 15'e tam bölünür. 45 ÷ 15 = 3 ve 60 ÷ 15 = 4 olur. En sade hâli 3/4'tür."
+      },
+      {
+        "id": "m5-2-t13-14",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "7/9 kesrini paydası 27 olacak şekilde genişlettiğimizde yeni kesrin payı kaç olur?",
+        "imageUrl": "",
+        "options": [
+          "14",
+          "21",
+          "28",
+          "35"
+        ],
+        "correct": 1,
+        "explanation": "Paydanın 27 olması için 9'u 3 ile çarpmamız gerekir. Dengenin bozulmaması için payı (7) da 3 ile çarparız. 7 x 3 = 21 olur."
+      },
+      {
+        "id": "m5-2-t13-15",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Aşağıdaki denkliklerden hangisi yanlıştır?",
+        "imageUrl": "",
+        "options": [
+          "1/3 = 3/9",
+          "2/5 = 4/10",
+          "3/4 = 9/16",
+          "1/2 = 5/10"
+        ],
+        "correct": 2,
+        "explanation": "3/4 kesrini 3 ile genişletirsek payı 9, paydası 12 (9/12) olur. Seçenekte 9/16 verilmiştir, bu yanlıştır."
+      },
+      {
+        "id": "m5-2-t13-16",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "24/36 kesrini 12 ile sadeleştirirsek hangi kesri buluruz?",
+        "imageUrl": "",
+        "options": [
+          "12/18",
+          "6/9",
+          "4/6",
+          "2/3"
+        ],
+        "correct": 3,
+        "explanation": "Sadeleştirme işleminde pay ve paydayı istenen sayıya böleriz. 24 ÷ 12 = 2 ve 36 ÷ 12 = 3. Sonuç 2/3 olur."
+      },
+      {
+        "id": "m5-2-t13-17",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "15/A = 3/4 denkliğinde A yerine gelmesi gereken sayı kaçtır?",
+        "imageUrl": "",
+        "options": [
+          "16",
+          "20",
+          "24",
+          "30"
+        ],
+        "correct": 1,
+        "explanation": "Pay kısmındaki 3 sayısı 5 ile genişletilerek 15 olmuş. Aynı işlemin paydaya da uygulanması gerekir. 4 x 5 = 20."
+      },
+      {
+        "id": "m5-2-t13-18",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "40/100 kesrini en sade hâline getirmek için pay ve paydayı hangi sayıya bölmeliyiz?",
+        "imageUrl": "",
+        "options": [
+          "10",
+          "20",
+          "40",
+          "50"
+        ],
+        "correct": 1,
+        "explanation": "40 ve 100'ü bölebilen en büyük sayı 20'dir. Her ikisini 20'ye böldüğümüzde kesrin en sade hâli olan 2/5'i elde ederiz."
+      },
+      {
+        "id": "m5-2-t13-19",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Payı 18 olan ve 2/3 kesrine denk olan kesrin paydası kaçtır?",
+        "imageUrl": "",
+        "options": [
+          "21",
+          "24",
+          "27",
+          "30"
+        ],
+        "correct": 2,
+        "explanation": "2/3 kesrinin payı 18 olması için 9 ile genişletilmesi gerekir (2 x 9 = 18). Aynı şekilde paydayı da 9 ile çarparız (3 x 9 = 27)."
+      },
+      {
+        "id": "m5-2-t13-20",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Aşağıdaki kesirlerden hangisi sadeleştirilemez?",
+        "imageUrl": "",
+        "options": [
+          "7/11",
+          "8/12",
+          "9/15",
+          "14/21"
+        ],
+        "correct": 0,
+        "explanation": "8/12 kesri 4 ile, 9/15 kesri 3 ile, 14/21 kesri 7 ile sadeleştirilebilir. 7/11 kesrinin pay ve paydası ortak bir sayıya bölünemediği için en sade hâlindedir."
+      }
     test2: []
   }
 };
