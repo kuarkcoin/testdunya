@@ -2526,7 +2526,229 @@ export const matematikData: SubjectData = {
     // Bu satır matematik-test10.ts içindeki tüm soruları buraya çeker.
     ...matematikTest10.term1, 
   }, // term1 bitti (Burası term1'in sonu)
-
+test11: [
+      {
+        "id": "m5-2-t11-01",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Alanı 36 santimetrekare olan ve kenar uzunlukları doğal sayı olan bir dikdörtgenin çevre uzunluğu EN AZ kaç santimetre olabilir? (Not: Kare de özel bir dikdörtgendir.)",
+        "options": [
+          "24",
+          "26",
+          "30",
+          "40"
+        ],
+        "correct": 0,
+        "explanation": "Alanı 36 olan dikdörtgenin kenarları: 1x36 (Ç=74), 2x18 (Ç=40), 3x12 (Ç=30), 4x9 (Ç=26) ve 6x6 (Ç=24) olabilir. Kare de bir dikdörtgen olduğu için çevre en az 24 cm olur."
+      },
+      {
+        "id": "m5-2-t11-02",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Görseldeki gibi çevre uzunluğu 20 cm olan, kenar uzunlukları doğal sayı olan bir dikdörtgenin alanı EN ÇOK kaç santimetrekare olabilir?",
+        "imageUrl": "/images/grade5/matematik/test11/m5-t11-img-02.webp",
+        "options": [
+          "21",
+          "24",
+          "25",
+          "30"
+        ],
+        "correct": 2,
+        "explanation": "Çevresi 20 cm ise kısa ve uzun kenar toplamı 10 cm'dir. Kenarları 5 ve 5 seçersek (kare) alanı en büyük değeri yani 5x5=25 santimetrekareyi alır."
+      },
+      {
+        "id": "m5-2-t11-03",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Dikdörtgen şeklindeki bir masanın boyu, eninin 3 katı uzunluğundadır. Masanın çevresi 320 cm olduğuna göre alanı kaç santimetrekaredir?",
+        "options": [
+          "3200",
+          "4800",
+          "5400",
+          "6400"
+        ],
+        "correct": 1,
+        "explanation": "Enine 1 kat dersek boyu 3 kat olur. Çevre = 2 x (1 kat + 3 kat) = 8 kat. 8 kat = 320 ise 1 kat (en) = 40 cm'dir. Boyu = 120 cm olur. Alan = 40 x 120 = 4800 santimetrekaredir."
+      },
+      {
+        "id": "m5-2-t11-04",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Görselde verilen bir kenarı 12 m, diğer kenarı 8 m olan dikdörtgen şeklindeki bahçenin etrafına 2 sıra tel çekilecektir. Toplam kaç metre tel gerekir?",
+        "imageUrl": "/images/grade5/matematik/test11/m5-t11-img-04.webp",
+        "options": [
+          "40",
+          "60",
+          "80",
+          "120"
+        ],
+        "correct": 2,
+        "explanation": "Bahçenin çevresi = 2 x (12 + 8) = 40 metredir. 2 sıra tel çekileceği için 40 x 2 = 80 metre tel gerekir."
+      },
+      {
+        "id": "m5-2-t11-05",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Kare şeklindeki bir kartonun çevresi 36 cm'dir. Bu kartonlardan 4 tanesi yan yana getirilerek tek bir dikdörtgen oluşturuluyor. Yeni oluşan büyük dikdörtgenin alanı kaç santimetrekare olur?",
+        "options": [
+          "144",
+          "324",
+          "400",
+          "576"
+        ],
+        "correct": 1,
+        "explanation": "Karenin çevresi 36 cm ise bir kenarı 36 / 4 = 9 cm'dir. Bir karenin alanı 9 x 9 = 81 cm2'dir. 4 tane karton yan yana gelirse toplam alan 4 x 81 = 324 cm2 olur."
+      },
+      {
+        "id": "m5-2-t11-06",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Görseldeki uzunluğu 6 m ve genişliği 4 m olan dikdörtgen şeklindeki odanın zeminine, alanı 1 metrekare olan kare fayanslardan döşenecektir. Odanın tamamı için kaç adet fayans gerekir?",
+        "imageUrl": "/images/grade5/matematik/test11/m5-t11-img-06.webp",
+        "options": [
+          "10",
+          "20",
+          "24",
+          "48"
+        ],
+        "correct": 2,
+        "explanation": "Odanın toplam alanı 6 x 4 = 24 metrekaredir. Fayansların her birinin alanı 1 metrekare olduğu için 24 / 1 = 24 adet fayans gerekir."
+      },
+      {
+        "id": "m5-2-t11-07",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Kenar uzunlukları 10 m ve 15 m olan dikdörtgen şeklindeki bir bahçenin TAM KÖŞESİNDEN, kenarları 3 m ve 4 m olan dikdörtgen şeklinde bir parça kesilip çıkarılıyor. Kalan şeklin çevre uzunluğu ilk duruma göre nasıl değişir?",
+        "options": [
+          "Değişmez",
+          "7 metre kısalır",
+          "14 metre kısalır",
+          "7 metre uzar"
+        ],
+        "correct": 0,
+        "explanation": "Dikdörtgenin tam köşesinden dikdörtgen bir parça çıkarıldığında, eksilen kenarların yerine içeride onlara eşit uzunlukta iki yeni kenar oluşur. Bu nedenle çevre uzunluğu değişmez."
+      },
+      {
+        "id": "m5-2-t11-08",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Görseldeki içi boş dikdörtgen çerçevenin dış kenar uzunlukları 20 cm ve 30 cm'dir. Çerçevenin tahta kısmının kalınlığı her yönden 2 cm olduğuna göre, içine resim konulan boş kısmın alanı kaç santimetrekaredir?",
+        "imageUrl": "/images/grade5/matematik/test11/m5-t11-img-08.webp",
+        "options": [
+          "416",
+          "468",
+          "504",
+          "600"
+        ],
+        "correct": 0,
+        "explanation": "Her yönden 2 cm pay bırakıldığı için iç kısmın kısa kenarı 20 - 4 = 16 cm, uzun kenarı 30 - 4 = 26 cm olur. Alan = 16 x 26 = 416 santimetrekaredir."
+      },
+      {
+        "id": "m5-2-t11-09",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Alanı 48 santimetrekare ve kenar uzunlukları doğal sayı olan BÜTÜN farklı dikdörtgenler bir kâğıda çiziliyor. Çizilebilecek bu dikdörtgenlerin çevre uzunlukları arasında aşağıdakilerden hangisi YOKTUR?",
+        "options": [
+          "98",
+          "52",
+          "38",
+          "40"
+        ],
+        "correct": 3,
+        "explanation": "Alanı 48 olan dikdörtgenler: 1x48 (Ç=98), 2x24 (Ç=52), 3x16 (Ç=38), 4x12 (Ç=32), 6x8 (Ç=28). Şıklardaki 40 cm olamaz."
+      },
+      {
+        "id": "m5-2-t11-10",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Görselde Ali'nin yediği pizzalar gösterilmiştir. Ali toplamda 13/4 (dörtte on üç) dilim pizza yemiştir. Bu ifadeyi tam sayılı kesir olarak nasıl gösteririz?",
+        "imageUrl": "/images/grade5/matematik/test11/m5-t11-img-10.webp",
+        "options": [
+          "2 tam 3/4",
+          "3 tam 1/4",
+          "4 tam 1/3",
+          "3 tam 3/4"
+        ],
+        "correct": 1,
+        "explanation": "13'ü 4'e böldüğümüzde bölüm 3 (tam kısım), kalan ise 1 (pay) olur. Payda değişmez. Sonuç: 3 tam 1/4 olur."
+      },
+      {
+        "id": "m5-2-t11-11",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir marketteki elmaların 2 tam 3/5 kilogramı satılmıştır. Bu miktarın BİLEŞİK KESİR olarak gösterimi aşağıdakilerden hangisidir?",
+        "options": [
+          "11/5",
+          "13/5",
+          "15/5",
+          "17/5"
+        ],
+        "correct": 1,
+        "explanation": "Tam sayılı kesri bileşik kesre çevirirken tam kısım ile payda çarpılıp pay ile toplanır. (2 x 5) + 3 = 13. Payda aynı kalır: 13/5."
+      },
+      {
+        "id": "m5-2-t11-12",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Görseldeki ölçü kabında bulunan su miktarı 18/7 litredir. Bu su miktarını tam sayılı kesre çevirdiğimizde, tam kısım ile kesir kısmındaki payın TOPLAMI kaç olur?",
+        "imageUrl": "/images/grade5/matematik/test11/m5-t11-img-12.webp",
+        "options": [
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "correct": 2,
+        "explanation": "18 / 7 işlemi yapıldığında tam kısım 2, kalan (pay) 4 olur. Yani 2 tam 4/7. Tam kısım (2) ile payın (4) toplamı 6'dır."
+      },
+      {
+        "id": "m5-2-t11-13",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir yarışmacı yolun 25/6 kilometresini koşmuştur. Yarışmacı toplam kaç TAM kilometre koşmuş ve bir sonraki kilometrenin ne kadarını tamamlamıştır?",
+        "options": [
+          "3 tam kilometre, sonraki kilometrenin 5/6'sını",
+          "4 tam kilometre, sonraki kilometrenin 1/6'sını",
+          "4 tam kilometre, sonraki kilometrenin 5/6'sını",
+          "5 tam kilometre, sonraki kilometrenin 1/6'sını"
+        ],
+        "correct": 1,
+        "explanation": "25'i 6'ya böldüğümüzde 4 tam çıkar ve kalan 1 olur. Bu da 4 tam 1/6 demektir. Yani 4 tam kilometre bitmiş, 5. kilometrenin ise 1/6'sı koşulmuştur."
+      },
+      {
+        "id": "m5-2-t11-14",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Görselde masanın üzerinde 3 tam ve 1 adet yarım çikolata bulunmaktadır. Bu toplam çikolata miktarının BİLEŞİK KESİR olarak gösterimi hangisidir?",
+        "imageUrl": "/images/grade5/matematik/test11/m5-t11-img-14.webp",
+        "options": [
+          "5/2",
+          "6/2",
+          "7/2",
+          "9/2"
+        ],
+        "correct": 2,
+        "explanation": "3 tam ve 1 yarım, 3 tam 1/2 şeklinde yazılır. Bileşik kesre çevirmek için (3 x 2) + 1 = 7 bulunur. Sonuç 7/2'dir."
+      },
+      {
+        "id": "m5-2-t11-15",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Tam 4 arkadaş, ellerindeki 15 adet elmayı hiç artmayacak şekilde eşit olarak paylaşacaktır. Her birine düşen elma miktarını gösteren kesir aşağıdakilerden hangisidir?",
+        "options": [
+          "4/15",
+          "11/4",
+          "15/4",
+          "19/4"
+        ],
+        "correct": 2,
+        "explanation": "15 adet elmayı 4 kişiye böldüğümüz için her birine 15/4 elma düşer (3 tam 3/4 elma)."
+      },
+      {
+        "id": "m5-2-t11-16",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Görseldeki sayı doğrusunda
   // BU KISMI EKLEMEN ŞART:
   term2: {
     test1: [], // Şimdilik içi boş kalabilir
