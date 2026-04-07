@@ -2816,6 +2816,296 @@ export const matematikData: SubjectData = {
         explanation: "Hepsini ondalık sayıya veya ortak paydaya çevirelim. 17/5 = 34/10. 3 tam 1/2 = 7/2 = 35/10. 26/10 aynen kalır. En büyük 35/10 yani 3 tam 1/2'dir."
       }
     ],
-    test1: []
+         test12: [
+      {
+        "id": "m5-2-t12-01",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Görseldeki 100 eş kareye bölünmüş modelin bir kısmı boyanmıştır. Bu modelin ifade ettiği ondalık gösterimi ve yüzde (%) sembolü ile yazılışını bulunuz.",
+        "imageUrl": "/images/grade5/matematik/test12/m5-t12-img-01.webp",
+        "options": [
+          "0,45 ve %45",
+          "0,55 ve %55",
+          "0,60 ve %60",
+          "0,05 ve %5"
+        ],
+        "correct": 0,
+        "explanation": "Görselde 100 karenin 45 tanesi boyanmıştır. Bu durum kesir olarak 45/100, ondalık gösterim olarak 0,45 ve yüzde olarak %45 şeklinde ifade edilir."
+      },
+      {
+        "id": "m5-2-t12-02",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir marketten 12,45 TL'ye çikolata ve 8,90 TL'ye bisküvi alan Ayşe, kasiyere 50 TL vermiştir. Ayşe'nin alacağı para üstünü hesaplayınız.",
+        "options": [
+          "28,65",
+          "29,65",
+          "28,55",
+          "29,55"
+        ],
+        "correct": 0,
+        "explanation": "Önce harcanan toplam tutarı bulalım: 12,45 + 8,90 = 21,35 TL. Para üstünü bulmak için 50,00 TL'den çıkaralım: 50,00 - 21,35 = 28,65 TL."
+      },
+      {
+        "id": "m5-2-t12-03",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Okunuşu 'On sekiz tam binde kırk beş' olan ondalık gösterimi rakamlarla yazınız ve onda birler basamağındaki rakamı bulunuz.",
+        "options": [
+          "Rakam: 0",
+          "Rakam: 4",
+          "Rakam: 5",
+          "Rakam: 8"
+        ],
+        "correct": 0,
+        "explanation": "Sayının rakamla yazılışı 18,045'tir. Virgülden sonraki ilk basamak olan onda birler basamağında '0' (sıfır) rakamı bulunmaktadır."
+      },
+      {
+        "id": "m5-2-t12-04",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Görseldeki sayı doğrusunda 1 ile 2 arası 10 eşit parçaya bölünmüş ve A noktası işaretlenmiştir. A noktasına karşılık gelen ondalık gösterimi yazınız.",
+        "imageUrl": "/images/grade5/matematik/test12/m5-t12-img-04.webp",
+        "options": [
+          "1,3",
+          "1,6",
+          "1,7",
+          "1,8"
+        ],
+        "correct": 2,
+        "explanation": "Sayı doğrusunda 1 tamdan sonra 10 eşit parçanın 7.sine gelinmiştir. Bu da 1 tam 7/10 yani 1,7 ondalık gösterimine eşittir."
+      },
+      {
+        "id": "m5-2-t12-05",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir çiftçi, tarlasındaki 80 kilogram elmanın %25'ini satmıştır. Çiftçinin sattığı elma miktarını kilogram cinsinden hesaplayınız.",
+        "options": [
+          "15",
+          "20",
+          "25",
+          "30"
+        ],
+        "correct": 1,
+        "explanation": "%25 ifadesi çeyrek (1/4) demektir. 80 kilogramın çeyreğini bulmak için 4'e böleriz: 80 / 4 = 20 kg elma satılmıştır."
+      },
+      {
+        "id": "m5-2-t12-06",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Görseldeki ayakkabının etiket fiyatı 300 TL'dir. Mağaza bu ayakkabıya %30 indirim uygulamaktadır. İndirimli satış fiyatını hesaplayarak bulunuz.",
+        "imageUrl": "/images/grade5/matematik/test12/m5-t12-img-06.webp",
+        "options": [
+          "190",
+          "210",
+          "240",
+          "270"
+        ],
+        "correct": 1,
+        "explanation": "Önce indirimi bulalım: 300 x (30/100) = 90 TL indirim. Satış fiyatı = 300 - 90 = 210 TL'dir."
+      },
+      {
+        "id": "m5-2-t12-07",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir depodaki suyun 3/5'i kullanılmıştır. Kullanılan su miktarını yüzde (%) sembolü ile ifade ediniz.",
+        "options": [
+          "%35",
+          "%50",
+          "%60",
+          "%75"
+        ],
+        "correct": 2,
+        "explanation": "Yüzde olarak ifade etmek için kesrin paydasını 100 yapmalıyız. 3/5 kesrini 20 ile genişletirsek 60/100 elde ederiz. Bu da %60 demektir."
+      },
+      {
+        "id": "m5-2-t12-08",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Görseldeki karne tablosunda, Can'ın girdiği sınavda 50 sorunun 42'sine doğru cevap verdiği görülmektedir. Can'ın doğru cevaplama oranını yüzde (%) olarak hesaplayınız.",
+        "imageUrl": "/images/grade5/matematik/test12/m5-t12-img-08.webp",
+        "options": [
+          "%42",
+          "%64",
+          "%84",
+          "%92"
+        ],
+        "correct": 2,
+        "explanation": "Can'ın doğrusu kesir olarak 42/50'dir. Yüzdeye çevirmek için paydayı 2 ile genişletirsek 84/100 yani %84 sonucuna ulaşırız."
+      },
+      {
+        "id": "m5-2-t12-09",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Tahtaya yazılan 0,4 ; 0,45 ; 0,09 ; 0,405 ondalık gösterimlerini KÜÇÜKTEN BÜYÜĞE doğru sıralayınız. Baştan 3. sırada hangi sayı yer alır?",
+        "options": [
+          "0,09",
+          "0,4",
+          "0,405",
+          "0,45"
+        ],
+        "correct": 2,
+        "explanation": "Basamakları eşitlemek için sonlarına sıfır koyalım: 0,400 ; 0,450 ; 0,090 ; 0,405. Sıralama: 0,090 < 0,400 < 0,405 < 0,450. Baştan 3. sayı 0,405'tir."
+      },
+      {
+        "id": "m5-2-t12-10",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir okuldaki 400 öğrencinin %40'ı kız öğrencidir. Bu okuldaki erkek öğrenci sayısını işlem yaparak bulunuz.",
+        "options": [
+          "160",
+          "200",
+          "240",
+          "260"
+        ],
+        "correct": 2,
+        "explanation": "Kızların oranı %40 ise, erkeklerin oranı %100 - %40 = %60'tır. 400 öğrencinin %60'ı: (400 x 60) / 100 = 240 erkek öğrenci vardır."
+      },
+      {
+        "id": "m5-2-t12-11",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Görseldeki ABC üçgeninin iç açılarından ikisi 50° ve 70° olarak verilmiştir. Buna göre 'x' ile gösterilen üçüncü açının ölçüsünü hesaplayınız.",
+        "imageUrl": "/images/grade5/matematik/test12/m5-t12-img-11.webp",
+        "options": [
+          "50°",
+          "60°",
+          "70°",
+          "80°"
+        ],
+        "correct": 1,
+        "explanation": "Bir üçgenin iç açıları toplamı 180°'dir. Verilen açıları toplayalım: 50 + 70 = 120°. Üçüncü açıyı bulmak için: 180 - 120 = 60° olur."
+      },
+      {
+        "id": "m5-2-t12-12",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir dar açının alabileceği en büyük doğal sayı değeri ile en küçük geniş açının doğal sayı değerini toplayınız. Sonuç kaç derecedir?",
+        "options": [
+          "179",
+          "180",
+          "181",
+          "182"
+        ],
+        "correct": 1,
+        "explanation": "Dar açı 90'dan küçük olduğu için en fazla 89° olabilir. Geniş açı 90'dan büyük olduğu için en az 91° olabilir. Toplamları 89 + 91 = 180°'dir."
+      },
+      {
+        "id": "m5-2-t12-13",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Görseldeki analog saat tam 03:00'ı göstermektedir. Bu durumda saatin akrep ve yelkovanı arasında oluşan açı çeşidini belirtiniz.",
+        "imageUrl": "/images/grade5/matematik/test12/m5-t12-img-13.webp",
+        "options": [
+          "Dar Açı",
+          "Geniş Açı",
+          "Dik Açı",
+          "Doğru Açı"
+        ],
+        "correct": 2,
+        "explanation": "Saat 3:00 iken yelkovan 12'nin, akrep ise 3'ün üzerindedir. Aralarındaki mesafe tam 90 derecelik bir 'Dik Açı' oluşturur."
+      },
+      {
+        "id": "m5-2-t12-14",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir otoyol yapım ekibi projenin 0,35'lik kısmını asfaltlamıştır. Geriye kalan ASFALTLANMAMIŞ kısmı yüzde (%) sembolü ile ifade ediniz.",
+        "options": [
+          "%35",
+          "%45",
+          "%65",
+          "%75"
+        ],
+        "correct": 2,
+        "explanation": "0,35 ondalık gösterimi %35 demektir. Yolun tamamı %100 olduğu için, asfaltlanmayan kısım %100 - %35 = %65'tir."
+      },
+      {
+        "id": "m5-2-t12-15",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "16 / 25 kesrini ondalık gösterim biçiminde yazınız ve çözüm sonucunu belirtiniz.",
+        "options": [
+          "0,16",
+          "0,32",
+          "0,64",
+          "0,80"
+        ],
+        "correct": 2,
+        "explanation": "Ondalık gösterim için paydayı 100 yapmalıyız. 16/25 kesrini 4 ile genişletirsek 64/100 elde ederiz. Bu da 0,64 demektir."
+      },
+      {
+        "id": "m5-2-t12-16",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Görseldeki paralelkenarın ardışık iki iç açısı olan A ve B açılarının ölçüleri toplamı kaç derecedir? Geometri kurallarına göre hesaplayınız.",
+        "imageUrl": "/images/grade5/matematik/test12/m5-t12-img-16.webp",
+        "options": [
+          "90°",
+          "180°",
+          "270°",
+          "360°"
+        ],
+        "correct": 1,
+        "explanation": "Paralelkenar, eşkenar dörtgen ve yamuk gibi çokgenlerde yan yana olan (ardışık) iki iç açının toplamı daima 180°'dir."
+      },
+      {
+        "id": "m5-2-t12-17",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Ali'nin 200 TL harçlığı vardır. Parasının %30'u ile kitap, %15'i ile kırtasiye malzemesi almıştır. Ali'nin geriye ne kadar parası kaldığını hesaplayınız.",
+        "options": [
+          "90 TL",
+          "110 TL",
+          "130 TL",
+          "150 TL"
+        ],
+        "correct": 1,
+        "explanation": "Toplam harcama yüzdesi: %30 + %15 = %45'tir. Geriye kalan parasının yüzdesi: %100 - %45 = %55. 200 TL'nin %55'i: 200 x 55 / 100 = 110 TL kalmıştır."
+      },
+      {
+        "id": "m5-2-t12-18",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir ondalık gösterimin onda birler basamağında 6, binde birler basamağında 9, yüzler basamağında 2 ve birler basamağında 4 vardır. Söylenmeyen diğer basamakları SIFIR olan bu sayıyı oluşturunuz.",
+        "options": [
+          "24,609",
+          "204,69",
+          "204,609",
+          "240,609"
+        ],
+        "correct": 2,
+        "explanation": "Yüzler: 2, Onlar: 0, Birler: 4 -> Tam kısım: 204. Onda birler: 6, Yüzde birler: 0, Binde birler: 9 -> Kesir kısmı: ,609. Sayı: 204,609."
+      },
+      {
+        "id": "m5-2-t12-19",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Karesi 64 olan doğal sayı ile küpü 27 olan doğal sayıyı bulunuz ve bu iki sayıyı toplayınız.",
+        "options": [
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "correct": 2,
+        "explanation": "Hangi sayının kendisiyle çarpımı (karesi) 64'tür? 8x8=64 (Sayı 8). Hangi sayının üç kez yan yana çarpımı (küpü) 27'dir? 3x3x3=27 (Sayı 3). Toplamları: 8 + 3 = 11."
+      },
+      {
+        "id": "m5-2-t12-20",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Görselde iki doğru birbirini dik olarak kesmektedir. Bu kesişim sonucunda ortaya çıkan açıların her birinin ölçüsü kaç derecedir?",
+        "imageUrl": "/images/grade5/matematik/test12/m5-t12-img-20.webp",
+        "options": [
+          "45°",
+          "90°",
+          "180°",
+          "360°"
+        ],
+        "correct": 1,
+        "explanation": "İki doğru birbirini dik olarak (T şeklinde veya artı şeklinde) kestiğinde oluşan 4 açının her biri tam olarak 90 derecedir."
+      }
+    ],
+    test2: []
   }
 };
