@@ -2824,13 +2824,13 @@ export const matematikData: SubjectData = {
         "prompt": "Görseldeki 100 eş kareye bölünmüş modelin bir kısmı boyanmıştır. Bu modelin ifade ettiği ondalık gösterimi ve yüzde (%) sembolü ile yazılışını bulunuz.",
         "imageUrl": "/images/grade5/matematik/test12/m5-t12-img-01.webp",
         "options": [
-          "0,45 ve %45",
+          "0,46 ve %46",
           "0,55 ve %55",
           "0,60 ve %60",
           "0,05 ve %5"
         ],
         "correct": 0,
-        "explanation": "Görselde 100 karenin 45 tanesi boyanmıştır. Bu durum kesir olarak 45/100, ondalık gösterim olarak 0,45 ve yüzde olarak %45 şeklinde ifade edilir."
+        "explanation": "Görselde 100 karenin 46 tanesi boyanmıştır. Bu durum kesir olarak 46/100, ondalık gösterim olarak 0,45 ve yüzde olarak %45 şeklinde ifade edilir."
       },
       {
         "id": "m5-2-t12-02",
