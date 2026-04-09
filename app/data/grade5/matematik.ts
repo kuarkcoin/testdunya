@@ -2830,7 +2830,7 @@ export const matematikData: SubjectData = {
           "0,05 ve %5"
         ],
         "correct": 0,
-        "explanation": "Görselde 100 karenin 46 tanesi boyanmıştır. Bu durum kesir olarak 46/100, ondalık gösterim olarak 0,45 ve yüzde olarak %45 şeklinde ifade edilir."
+        "explanation": "Görselde 100 karenin 46 tanesi boyanmıştır. Bu durum kesir olarak 46/100, ondalık gösterim olarak 0,46 ve yüzde olarak %46 şeklinde ifade edilir."
       },
       {
         "id": "m5-2-t12-02",
