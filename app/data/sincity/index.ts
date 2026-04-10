@@ -1128,10 +1128,290 @@ export const tarihParagrafSorulari4: TarihParagrafQuestion[] = Array.from({ leng
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
+const PARAGRAPH_THEMES_5 = [
+  {
+    title: 'Lale Çılgınlığı',
+    passage: '1630\'larda Hollanda\'da sıradan bir lale soğanı, lüks bir malikâneyle aynı fiyata satılmaya başlanmıştı. "Lale Çılgınlığı" olarak bilinen bu dönemde insanlar, tarlalarını ve evlerini satıp hiç görmedikleri lale soğanlarına yatırım yapıyorlardı. Ancak 1637\'de piyasa aniden çöktüğünde, ellerindeki soğanların aslında değersiz birer bitki kökü olduğunu fark ettiler. Bu olay, tarihteki ilk büyük ekonomik balon olarak kayıtlara geçmiştir. Lale Çılgınlığı, insanın rasyonel düşünmeyi bırakıp sürü psikolojisiyle hareket ettiğinde, kâğıt üzerindeki suni değerlerin nasıl yıkıcı bir felakete dönüşebileceğinin en renkli örneğidir.',
+    questionStem: 'Bu parçada Lale Çılgınlığı olayı üzerinden asıl anlatılmak istenen nedir?',
+    options: [
+      'Hollanda\'nın tarım politikalarının Avrupa ekonomisini derinden etkilediği',
+      'Sürü psikolojisiyle ve gerçek bir üretime dayanmadan yaratılan suni ekonomik değerlerin (balonların) eninde sonunda çökmeye mahkûm olduğu',
+      'Lalenin o dönemde sadece zenginlerin ulaşabileceği nadide bir sanat eseri olarak görüldüğü',
+      'İnsanların doğaya yatırım yapmasının her zaman kârlı bir sonuç doğurduğu'
+    ],
+    correct: 1,
+    explanation: 'Gerçek bir değere dayanmadan tamamen sürü psikolojisiyle şişirilen piyasaların eninde sonunda çöküp yıkıma uğrayacağı vurgulanmıştır.'
+  },
+  {
+    title: 'Antikythera Düzeneği',
+    passage: '1901 yılında Yunanistan açıklarında batan antik bir Roma gemisinde tuhaf, bronz bir cihaz bulundu. "Antikythera Düzeneği" adı verilen bu paslı dişli çarklar bütünü, aslında Güneş\'in, Ay\'ın ve gezegenlerin hareketlerini milimetrik bir hesapla tahmin edebilen, 2000 yıllık analog bir bilgisayardı. O güne kadar tarihçiler, böylesine karmaşık bir çark sisteminin ancak 14. yüzyılda Avrupa\'da icat edildiğine inanıyordu. Bu olağanüstü cihaz, antik çağlardaki insanların sadece felsefe ve sanatla uğraşmadığını; aynı zamanda modern mühendisliğe meydan okuyan, unutulmuş ileri bir teknolojik zekâya sahip olduklarını kanıtlamaktadır.',
+    questionStem: 'Antikythera Düzeneği\'nin keşfinin tarih bilimi üzerindeki asıl etkisi ne olmuştur?',
+    options: [
+      'Romalı denizcilerin yön bulmak için yıldızları değil, mekanik pusulaları kullandığını göstermesi',
+      'Antik çağ toplumlarının teknolojik ve mühendislik bilgisinin, sanılandan çok daha ileri bir seviyede olduğunu ispatlaması',
+      'Bronz madeninin ilk olarak Yunanlılar tarafından işlendiğini kesinleştirmesi',
+      'Dünyanın ilk bilgisayarının bir zaman makinesi olarak tasarlandığını ortaya koyması'
+    ],
+    correct: 1,
+    explanation: 'Cihazın karmaşıklığı, antik çağ insanlarının sadece felsefe değil, sanılandan çok daha ileri bir mühendislik ve teknolojik zekâya sahip olduğunu ispatlar.'
+  },
+  {
+    title: '1914 Noel Ateşkesi',
+    passage: 'Birinci Dünya Savaşı\'nın en kanlı günlerinde, 1914\'ün Noel gecesinde Batı Cephesi\'nde inanılmaz bir olay yaşandı. Hiçbir komutanın emri olmadan, siperlerdeki İngiliz ve Alman askerleri silahlarını bırakıp "Sessiz Gece" ilahisini söylemeye başladılar. Taraflar "Tarafsız Bölge"de buluştu, birbirlerine sigara ve çikolata ikram edip futbol oynadılar. Birkaç saatliğine de olsa düşmanlık yerini insanlığa bıraktı. Ertesi gün komutanların tehditleriyle askerler yeniden birbirlerini öldürmeye zorlansalar da, bu "Noel Ateşkesi", insanın içindeki şefkat ve barış arzusunun, savaşın o karanlık ve mekanik nefretinden bile daha güçlü olduğunu gösteren ölümsüz bir andır.',
+    questionStem: '1914 Noel Ateşkesi olayından çıkarılabilecek en kapsamlı yargı aşağıdakilerden hangisidir?',
+    options: [
+      'Savaşlarda dini günlerin çatışmaları durdurmak için resmi olarak ateşkes ilan edilen dönemler olduğu',
+      'Askerlerin komutanlarına isyan ederek savaşı tamamen bitirmeye çalıştığı',
+      'Savaşın yarattığı yıkıcı nefret ortamında bile, insanların içindeki barış ve empati duygusunun (insani özün) anlık da olsa galip gelebileceği',
+      'İngiliz ve Alman askerlerinin kültürel olarak birbirlerine çok benzediği'
+    ],
+    correct: 2,
+    explanation: 'Askerlerin emir olmadan siperden çıkıp dostça vakit geçirmesi, insanın içindeki barış ve şefkat duygusunun savaşın nefretinden daha güçlü olduğunu kanıtlar.'
+  },
+  {
+    title: 'Mansa Musa\'nın Haccı',
+    passage: '14. yüzyılda Mali İmparatoru Mansa Musa, Mekke\'ye hacca giderken yanına o kadar çok altın almıştı ki, geçtiği şehirlere sadaka olarak tonlarca altın dağıttı. Kahire\'de yaptığı harcamalar ve dağıttığı altınlar yüzünden bölgedeki altının değeri on yıl boyunca dibe vurdu ve Mısır ekonomisi büyük bir enflasyon krizi yaşadı. Zenginliğin bir toplumu ihya edeceği düşünülürken, kontrolsüzce piyasaya sürülen devasa bir servet, aslında o servetin kendi değerini yok etmişti. Mansa Musa\'nın bu efsanevi yolculuğu, zenginliğin miktarından ziyade, ekonomik dengenin ve piyasa dinamiklerinin ne kadar kırılgan olduğunu gösteren tarihi bir derstir.',
+    questionStem: 'Mansa Musa\'nın hac yolculuğunun anlatıldığı bu parçadan ekonomiyle ilgili hangi sonuç çıkarılabilir?',
+    options: [
+      'Altın madeninin miktarının artmasının bir ülkenin siyasi gücünü doğrudan artırdığı',
+      'Piyasaya aniden ve kontrolsüzce giren büyük miktardaki zenginliğin, paranın (altının) değerini düşürerek ekonomik krizlere (enflasyona) yol açabileceği',
+      'Ticaret yollarının güvenliğinin sadece ekonomik zenginlikle sağlanabileceği',
+      'Hükümdarların kişisel harcamalarının halk tarafından her zaman desteklendiği'
+    ],
+    correct: 1,
+    explanation: 'Altının bolca dağıtılmasıyla değerinin dibe vurması, piyasaya kontrolsüz giren servetin kendi değerini yok ederek krize (enflasyona) yol açtığını gösterir.'
+  },
+  {
+    title: '1518 Dans Salgını',
+    passage: '1518 yazında Strasbourg sokaklarında Frau Troffea adında bir kadın aniden dans etmeye başladı. Günlerce durmaksızın süren bu dansa kısa sürede yüzlerce kişi katıldı. İnsanlar ayakları kanayana, kalp krizi geçirip yorgunluktan ölene kadar günlerce dans ettiler. Tıp ve tarih uzmanları, bu "Dans Salgını"nın bulaşıcı bir hastalıktan ziyade; açlık, hastalık ve ağır çalışma koşullarının yarattığı aşırı stresin tetiklediği kitlesel bir psikolojik histeri krizi (psikojenik hastalık) olduğu konusunda hemfikirdir. Bu tuhaf olay, insan zihninin ağır travmalar ve çaresizlik karşısında bedeni nasıl mantık dışı bir tepkiyle iflasa sürükleyebileceğinin en karanlık örneklerinden biridir.',
+    questionStem: 'Parçaya göre 1518 Dans Salgını\'nın asıl ortaya çıkış nedeni nedir?',
+    options: [
+      'Strasbourg halkının geleneksel bir festivali abartarak kutlaması',
+      'Bozuk gıdalardan kaynaklanan nörolojik bir zehirlenme vakası',
+      'Ağır yaşam koşullarının, çaresizliğin ve aşırı stresin toplumu sürüklediği kitlesel bir psikolojik çöküş (histeri) hali',
+      'Dönemin yöneticilerini protesto etmek amacıyla başlatılan sivil bir itaatsizlik eylemi'
+    ],
+    correct: 2,
+    explanation: 'Metinde olayın bulaşıcı bir hastalıktan ziyade, çaresizlik ve stresin tetiklediği "kitlesel bir psikolojik histeri krizi" olduğu açıkça ifade edilmiştir.'
+  },
+  {
+    title: 'Voynich El Yazması',
+    passage: '15. yüzyıla tarihlendirilen Voynich El Yazması, bilinen hiçbir dile benzemeyen garip bir alfabeyle yazılmış ve dünyada var olmayan egzotik bitki, tuhaf astronomik harita çizimleriyle dolu gizemli bir kitaptır. Yüzlerce yıldır dünyanın en ünlü kriptologları, dilbilimcileri ve yapay zekâ programları bu kitabın şifresini çözmeye çalışmış ancak tek bir kelimesini bile çevirememişlerdir. Bazıları bunun bir orta çağ doktorunun gizli defteri olduğunu, bazıları ise zenginleri dolandırmak için uydurulmuş zekice bir şarlatanlık (sahte kitap) olduğunu savunur. Voynich El Yazması, bilgiye her an ulaşabildiğimizi sandığımız bu modern çağda bile, geçmişin bize ne kadar kapalı ve çözülemez olabileceğini yüzümüze çarpan sessiz bir bilmecedir.',
+    questionStem: 'Voynich El Yazması ile ilgili asıl vurgulanmak istenen aşağıdakilerden hangisidir?',
+    options: [
+      'Orta Çağ tıp biliminin modern tıptan çok daha ileri seviyede sırlar barındırdığı',
+      'Modern teknolojinin ve şifre biliminin tüm çabalarına rağmen çözülemeyen bu eserin, geçmişin aşılamaz gizemini temsil ettiği',
+      'Kitabın kesin olarak uzaylılar tarafından dünyada bırakılmış bir mesaj olduğu',
+      'İçindeki bitki çizimlerinin günümüz biyoloji bilimine büyük katkılar sağladığı'
+    ],
+    correct: 1,
+    explanation: 'Yapay zekâ ve şifrecilerin bile çözemediği bu kitabın, bilgi çağına rağmen geçmişin kapalı ve çözülemez (aşılamaz bir bilmece) yapısını temsil ettiği vurgulanmıştır.'
+  },
+  {
+    title: 'Kayıp Roanoke Kolonisi',
+    passage: '1587\'de İngiltere, Kuzey Amerika\'ya 115 kişilik bir yerleşimci grubu gönderdi ve Roanoke Kolonisi\'ni kurdu. Vali John White, erzak getirmek için İngiltere\'ye döndü ancak savaş nedeniyle üç yıl gecikti. Geri döndüğünde koloni tamamen yok olmuştu. Ne bir ceset, ne bir savaş izi ne de bir mektup vardı. Sadece bir ağaca kazınmış "CROATOAN" kelimesi kalmıştı. Kolonistlerin yerli kabilelere mi karıştığı, açlıktan mı öldüğü yoksa İspanyollar tarafından mı kaçırıldığı hiçbir zaman çözülemedi. Roanoke, yeni ufuklar keşfetme arzusuyla yola çıkan insanoğlunun, vahşi doğanın sessizliği içinde nasıl iz bırakmadan yutulabileceğinin en ürkütücü hikâyesidir.',
+    questionStem: 'Roanoke Kolonisi\'nin hikâyesinden yola çıkarak ulaşılabilecek temel sonuç nedir?',
+    options: [
+      'İngilizlerin Amerika kıtasındaki ilk yerleşim girişimlerinin askeri saldırılar nedeniyle başarısız olduğu',
+      'Yeni bir kıta keşfetme ve yerleşme çabasının, doğanın bilinmezliği karşısında insanın iz bırakmadan yok olmasına (yutulmasına) yol açabileceği',
+      'Kolonistlerin İngiltere\'ye dönmek için kendi gemilerini inşa ettikleri',
+      'Ağaca kazınan kelimenin İngilizce\'de "kurtuluş" anlamına geldiği'
+    ],
+    correct: 1,
+    explanation: 'Hiçbir iz bulunamadan 115 kişinin yok olması, yeni ufuklar keşfetme arzusunun vahşi doğada iz bırakmadan yutulmakla sonuçlanabileceğini gösterir.'
+  },
+  {
+    title: 'Apollo 13: Başarılı Başarısızlık',
+    passage: '1970 yılında Ay\'a iniş yapmak üzere fırlatılan Apollo 13 uzay aracında, dünyadan yüz binlerce kilometre uzaktayken oksijen tankı patladı. Ay\'a inmek bir yana, üç astronotun hayatta kalması mucizelere bağlıydı. Houston\'daki mühendisler ve uzaydaki ekip, koli bandı, plastik torbalar ve çorapları kullanarak derme çatma bir hava filtresi yaptılar ve modülü bir cankurtaran sandalına çevirdiler. Görev asli amacına ulaşamamış olsa da, astronotların sağ salim dünyaya dönmesi nedeniyle tarihe "Başarılı Başarısızlık" olarak geçti. Apollo 13, kriz anlarında soğukkanlılığın ve yaratıcı takım çalışmasının, kusursuz teknolojiden bile daha hayati olduğunu kanıtlamıştır.',
+    questionStem: 'Apollo 13 görevinin "Başarılı Başarısızlık" olarak adlandırılmasının asıl nedeni nedir?',
+    options: [
+      'Ay\'a inilememesine rağmen (başarısızlık), kriz anında yaratıcı zekâ ve takım çalışmasıyla astronotların hayatının kurtarılması (başarı)',
+      'Uzay aracının tamamen parçalanmasına rağmen Ay yüzeyine ait fotoğrafların dünyaya gönderilebilmesi',
+      'Oksijen tankı patlamasının aslında planlanmış bilimsel bir deney olması',
+      'Mühendislerin yeni uzay araçları tasarlamak için hükümetten daha fazla bütçe almayı başarması'
+    ],
+    correct: 0,
+    explanation: 'Görev asıl amacı olan Ay\'a inme konusunda başarısız olsa da, koli bandı ve çorapla yaratıcı çözümler üretilerek can kaybının önlenmesi onu bir "başarı" kılmıştır.'
+  },
+  {
+    title: 'Sıfırın İcadı',
+    passage: 'Günümüzde matematiğin ve dijital dünyanın kalbi olan "sıfır" (0) rakamı, aslında uzun süre insan zihninin kabul etmekte zorlandığı bir felsefi sorundu. Antik Yunanlılar ve Romalılar "hiçliği" temsil eden bir sayı olamayacağına inanıyor, matematikte sadece var olan şeyleri sayıyorlardı. Sıfır kavramı, ilk kez Hindistan\'da hem bir "yokluk" felsefesi hem de bir basamak tutucu olarak geliştirildi, ardından İslam âlimleri tarafından Avrupa\'ya taşındı. Sıfırın matematiğe dâhil olması, karmaşık hesaplamaları, cebiri ve modern bilgisayar algoritmalarını mümkün kıldı. Hiçliği ifade eden bu küçük çember, aslında dünyadaki her şeyin hesaplanabilmesinin anahtarı olmuştur.',
+    questionStem: 'Sıfırın (0) icadıyla ilgili parçada vurgulanan asıl düşünce aşağıdakilerden hangisidir?',
+    options: [
+      'Antik Romalıların matematiksel hesaplamalarda Hintlilerden daha pratik yöntemler kullandığı',
+      'Hiçliği (yokluğu) temsil eden ve başlarda kabul görmeyen bu soyut kavramın, cebirin ve modern dijital teknolojilerin (hesaplanabilir dünyanın) temelini oluşturduğu',
+      'Sıfır rakamının sadece astronomik mesafeleri ölçmek için icat edildiği',
+      'İslam âlimlerinin matematikten ziyade felsefe ile ilgilendiği'
+    ],
+    correct: 1,
+    explanation: 'Başlangıçta kabul görmeyen bir hiçlik sembolünün (sıfırın), karmaşık cebirin ve bugünkü bilgisayar dünyasının (hesaplanabilmenin) temeli olduğu vurgulanmıştır.'
+  },
+  {
+    title: 'İbn Battuta\'nın Seyahatleri',
+    passage: '14. yüzyılda Fas\'tan yola çıkan İbn Battuta, dönemin en büyük kâşifi olan Marco Polo\'nun seyahatlerinden üç kat daha fazla mesafe (yaklaşık 120 bin kilometre) kat etmiştir. Çin\'den Afrika\'nın derinliklerine, Anadolu\'dan Hindistan\'a kadar uzanan 30 yıllık yolculuğunda sadece bir tüccar veya gözlemci gibi davranmadı; gittiği yerlerde kadılık (hâkimlik) yaptı, evlendi ve o kültürlerin bizzat bir parçası oldu. Marco Polo dışarıdan bakan yabancı bir elçiyken, İbn Battuta İslam coğrafyasının evrensel bağları sayesinde nereye giderse gitsin kendini evinde hisseden içsel bir gezgindi. Onun seyahatnamesi, sınırların sadece haritalarda olduğunu, aynı inanç ve kültürel değerlerin kıtaları nasıl tek bir ev haline getirdiğini gösterir.',
+    questionStem: 'Yazar, İbn Battuta ile Marco Polo\'yu karşılaştırırken İbn Battuta\'nın hangi özelliğini öne çıkarmaktadır?',
+    options: [
+      'Çok daha tehlikeli savaş bölgelerinden geçerek cesaretini kanıtlamasını',
+      'Gittiği coğrafyalara yabancı bir gözlemci olarak değil, kültürel bağları sayesinde o toplumun bir parçası (içsel bir gezgin) olarak dâhil olmasını',
+      'Seyahatlerini sadece ekonomik kazanç (ticaret) amacıyla planlamış olmasını',
+      'Deniz yolculuklarından ziyade kara yolculuklarına ağırlık vermesini'
+    ],
+    correct: 1,
+    explanation: 'Polo "yabancı bir elçi" iken, İbn Battuta\'nın evlenip, hâkimlik yapıp gittiği kültürlerin bir parçası (içsel bir gezgin) olması onu ayıran en önemli özelliktir.'
+  },
+  {
+    title: 'Hammurabi Kanunları',
+    passage: 'MÖ 1750 civarında Babil Kralı Hammurabi, dünyanın ilk kapsamlı ve sistemli yazılı yasa metni olan Hammurabi Kanunları\'nı devasa bir diorit taşa kazıttı. "Göze göz, dişe diş" (kısas) prensibine dayanan bu 282 maddelik kanun, günümüz insan hakları standartlarına göre son derece acımasız ve sınıfsal (köle ile özgür insana farklı cezalar veren) görünse de, tarihte bir devrimdi. Çünkü o güne kadar cezalar, yöneticilerin anlık keyfine ve öfkesine göre veriliyordu. Hammurabi, kanunları taşa kazıyarak adaleti kişilerin tekelinden çıkarıp kurallara bağladı. Bu taş, ne kadar sert olursa olsun, yazılı hukukun keyfi otoriteden daha üstün olduğunun ilk resmi ilanıdır.',
+    questionStem: 'Hammurabi Kanunları\'nın acımasız görünmesine rağmen tarihsel açıdan bir "devrim" olarak kabul edilmesinin nedeni nedir?',
+    options: [
+      'Toplumdaki tüm sınıfları (köle ve özgür insan) tamamen eşit haklara kavuşturması',
+      'Suç oranlarını Babil imparatorluğunda sıfıra indirmeyi başarması',
+      'Cezaları yöneticilerin keyfi kararlarından çıkarıp, herkesin önceden bildiği sabit ve yazılı (objektif) bir hukuk sistemine bağlaması',
+      'Sadece dini inançlara dayanan kuralları içerdiği için rahiplerin yetkisini artırması'
+    ],
+    correct: 2,
+    explanation: 'Adaletin padişahın/yöneticinin anlık öfkesine değil, taşa yazılmış sabit ve yazılı kurallara (hukukun üstünlüğüne) bağlanması onu bir devrim yapmıştır.'
+  },
+  {
+    title: 'Alesia Kuşatması',
+    passage: 'MÖ 52 yılında Jül Sezar, Alesia kentinde Galyalı lider Vercingetorix\'i kuşattı. Şehri çembere almak için devasa bir sur inşa ettiren Sezar, Galyalıların dışarıdan devasa bir destek ordusu çağırdığını öğrenince tarihte eşi görülmemiş bir taktik uyguladı: Kendi kuşatma surunun arkasına, dışarıdan gelecek orduya karşı savunma yapmak için ikinci bir sur daha inşa etti. Böylece Roma ordusu, iki sur arasında hem kuşatan hem de kuşatılan konumunda savaştı. Sezar\'ın bu çifte duvar stratejisiyle savaşı kazanması, askeri dehanın sadece kılıç sallamak değil, kriz anında coğrafyayı ve mühendisliği zekice kendi lehine çevirmek olduğunu kanıtlar.',
+    questionStem: 'Alesia Kuşatması\'ndaki çifte duvar stratejisi, Jül Sezar\'ın hangi yönünü vurgulamaktadır?',
+    options: [
+      'Düşmanla doğrudan yüzleşmekten korkan savunmacı yapısını',
+      'Kriz anlarında mühendislik ve zekâyı kullanarak savaşın şartlarını (coğrafyayı) lehine çevirebilen taktiksel dehasını',
+      'Ordusundaki asker sayısının Galyalılardan çok daha fazla olmasına güvenmesini',
+      'Savaşta her zaman barışçıl diplomasi yollarını denemeyi tercih etmesini'
+    ],
+    correct: 1,
+    explanation: 'İki sur arasına sıkışmasına rağmen çifte duvar (mühendislik ve zekâ) stratejisiyle krizi kendi lehine çevirmesi onun taktiksel dehasını gösterir.'
+  },
+  {
+    title: 'Rasputin\'in Suikastı',
+    passage: '1916 yılında Rus Çarlığı çöküşün eşiğindeyken, sarayda büyük bir etkiye sahip olan mistik şifacı Rasputin\'i öldürmek için soylular bir suikast planladı. Efsaneye göre Rasputin\'e önce siyanürlü pastalar yedirildi, zehir etki etmeyince defalarca kurşunlandı. Yine ölmeyip kaçmaya çalışınca sopalarla dövüldü ve en sonunda donmuş Neva Nehri\'ne atılarak boğuldu. Rasputin\'in bu abartılı ve mistik ölüm hikâyesi, muhtemelen suikastçıların kendi beceriksizliklerini örtmek için uydurdukları bir efsaneydi. Ancak bu karanlık figürün ölümü, çürümüş ve halktan kopmuş Rus Çarlığı\'nın yaklaşan kanlı devrimden (Bolşevik Devrimi) kaçamayacağının ilk işaret fişeğiydi.',
+    questionStem: 'Yazar, Rasputin\'in abartılı ölüm efsanesinin asıl arka planını nasıl yorumlamaktadır?',
+    options: [
+      'Rasputin\'in gerçekten de doğaüstü güçlere sahip bir şifacı (büyücü) olduğuna inanması',
+      'Suikastı düzenleyen soyluların kendi yetersizliklerini ve beceriksizliklerini gizlemek için bu miti uydurduklarını düşünmesi',
+      'Rus halkının Rasputin\'i çok sevdiği için onun ölümünü kahramanca bir destana çevirmesi',
+      'Zehirin o dönemde yeterince etkili bir ölüm aracı olmadığının kanıtlanması'
+    ],
+    correct: 1,
+    explanation: 'Metinde açıkça "bu abartılı hikâye muhtemelen suikastçıların kendi beceriksizliklerini örtmek için uydurdukları bir efsaneydi" tespiti yapılmıştır.'
+  },
+  {
+    title: 'Stanford Hapishane Deneyi',
+    passage: '1971 yılında psikolog Philip Zimbardo, sıradan ve sağlıklı üniversite öğrencilerini sahte bir hapishaneye yerleştirip onlara rastgele "gardiyan" ve "mahkûm" rolleri verdi. Sadece iki hafta sürmesi planlanan deney, gardiyan rolündeki öğrencilerin mahkûmlara acımasızca psikolojik işkence yapmaya başlaması üzerine altıncı günde dehşet içinde sonlandırıldı. İnsanların kendilerine verilen gücü ve üniformayı sorgulamadan benimsemesi kan dondurucuydu. Bu deney, kötülüğün doğuştan gelen bir karakter bozukluğu değil; gücün, kontrolsüz otoritenin ve bulunulan ortamın (sistemin) sıradan bir insanı bile nasıl bir sadiste dönüştürebileceğinin en sarsıcı ispatıdır.',
+    questionStem: 'Stanford Hapishane Deneyi\'nin ortaya koyduğu en temel psikolojik gerçek nedir?',
+    options: [
+      'Hapishanelerdeki fiziksel koşulların iyileştirilmesinin mahkûmları daha itaatkâr yaptığı',
+      'Kötülüğün (veya sadist davranışların) kişinin doğuştan gelen karakteriyle değil, eline geçen güç ve içinde bulunduğu ortamla (sistemle) şekillenebileceği',
+      'Üniversite öğrencilerin strese dayanma kapasitelerinin çok düşük olduğu',
+      'Sadece daha önce suç işlemiş kişilerin başkalarına zarar verebileceği'
+    ],
+    correct: 1,
+    explanation: 'Deney; gücün ve verilen rolün (ortamın), tamamen sıradan ve sağlıklı insanları bile zalim birer karaktere dönüştürebileceğini ispatlamıştır.'
+  },
+  {
+    title: 'Büyük Emu Savaşı',
+    passage: '1932 yılında Avustralya hükümeti, tarlaları tahrip eden devasa uçamayan kuş sürülerine (Emu\'lara) karşı orduyu göreve çağırdı. I. Dünya Savaşı gazisi askerler, makineli tüfeklerle binlerce kuşa savaş açtılar. Ancak Emular o kadar hızlı koşuyor ve dağınık gruplar halinde hareket ediyorlardı ki, askeri taktikler tamamen işlevsiz kaldı. Binlerce mermi harcanmasına rağmen sadece birkaç düzine kuş vurulabildi ve ordu "yenilgiyi" kabul edip geri çekildi. Büyük Emu Savaşı komik bir tarihi anekdot gibi görünse de, insanoğlunun teknolojik kibrinin ve ağır silahlarının, doğanın milyonlarca yıllık adaptasyon yeteneği karşısında ne kadar komik ve çaresiz kalabileceğinin bir kanıtıdır.',
+    questionStem: 'Büyük Emu Savaşı hikâyesinden çıkarılabilecek asıl mesaj aşağıdakilerden hangisidir?',
+    options: [
+      'Avustralya ordusunun o dönemde yeterli cephane ve mühimmata sahip olmadığı',
+      'Tarım zararlılarıyla mücadelenin tek yolunun kimyasal ilaçlar kullanmak olduğu',
+      'İnsanoğlunun silah teknolojisine ve kibrine rağmen, doğanın kendi kuralları ve adaptasyon yeteneği karşısında yenilgiye uğrayabileceği',
+      'Kuşların zekâ seviyesinin insanlardan çok daha üstün olduğu'
+    ],
+    correct: 2,
+    explanation: 'Ordunun ve makineli tüfeklerin (teknolojik kibir), hızlı koşan ve dağınık hareket eden kuşlar (doğanın adaptasyonu) karşısında çaresiz kalması vurgulanmıştır.'
+  },
+  {
+    title: 'Kleopatra\'nın Ölümü',
+    passage: 'Mısır\'ın son kraliçesi Kleopatra, Romalı komutan Octavian\'a yenilip esir düştüğünde, Roma sokaklarında zincirlenmiş bir ganimet olarak sergileneceğini biliyordu. Bu aşağılanmayı reddeden kraliçe, efsaneye göre kendini zehirli bir engereğe sokturarak intihar etti. Kleopatra hayatı boyunca güzelliğiyle değil, politik zekâsı, dil yeteneği ve Roma\'nın en güçlü adamlarını (Sezar ve Antonius) manipüle edebilmesiyle ülkesini ayakta tutmuştu. Kendi ölümünü bile bir yenilgi olarak değil, düşmanına boyun eğmeyen, ilahi ve dokunulmaz bir efsanenin doğuşu olarak kurguladı. O, tarih sahnesinden silinirken bile kendi hikâyesinin kontrolünü elden bırakmayan eşsiz bir imaj yöneticisiydi.',
+    questionStem: 'Yazar, Kleopatra\'nın intiharını hangi açıdan değerlendirmektedir?',
+    options: [
+      'Savaş kaybetmenin verdiği derin bir depresyon ve psikolojik zayıflık',
+      'Roma kültürüne uyum sağlayamayacağını anlamasının getirdiği çaresizlik',
+      'Düşmanına esir düşüp aşağılanmayı reddeden, kendi imajını ve efsanesini korumak için tasarlanmış son bir irade (kontrol) gösterisi',
+      'Mısır dini inançlarında intiharın kutsal bir eylem olarak kabul edilmesi'
+    ],
+    correct: 2,
+    explanation: 'İntihar etmesi bir yenilgi değil; Roma\'da ganimet gibi sergilenmeyi reddetmesi, hikâyesinin kontrolünü bırakmaması ve bir efsane yaratması (imaj yönetimi) olarak değerlendirilmiştir.'
+  },
+  {
+    title: 'Büyük Melas Seli',
+    passage: '1919 yılının Ocak ayında ABD\'nin Boston kentinde, akılalmaz bir sanayi felaketi yaşandı. Devasa bir tankın patlaması sonucu, 8 milyon litreden fazla sıcak ve yapışkan melas (pekmez) şurubu 50 km hızla sokaklara döküldü. Bu yapışkan tsunami, binaları ezdi ve 21 kişinin boğularak ölmesine neden oldu. Kazanın sebebi, şirketin tankı inşa ederken ucuza kaçması, mühendislik testlerini görmezden gelmesi ve sızıntıları gizlemek için tankı kahverengiye boyamasıydı. Boston Melas Seli, kâr hırsının ve sanayideki denetimsizliğin, en masum görünen maddeleri bile nasıl ölümcül bir kitle imha silahına dönüştürebileceğinin en yapışkan ve acı örneğidir.',
+    questionStem: 'Boston Melas Seli felaketinin asıl sorumlusu olarak parçada ne gösterilmiştir?',
+    options: [
+      'Boston şehrinin altyapısının böyle bir sele uygun olmaması',
+      'Havanın aniden ısınmasıyla melasın kimyasal bir reaksiyona girmesi',
+      'Şirketin maliyetleri kısmak (kâr hırsı) uğruna mühendislik ve güvenlik kurallarını ihmal etmesi',
+      'Sokaktaki insanların bu kadar hızlı akan bir sıvıya karşı hazırlıksız yakalanması'
+    ],
+    correct: 2,
+    explanation: 'Olayın sebebinin tankın ucuza inşa edilmesi, testlerin görmezden gelinmesi ve sızıntının gizlenmesi (denetimsizlik ve kâr hırsı) olduğu parçada açıkça verilmiştir.'
+  },
+  {
+    title: 'Posta Güvercini Cher Ami',
+    passage: 'Birinci Dünya Savaşı sırasında, Amerikan ordusuna bağlı bir tabur (Kayıp Tabur) düşman hattının arkasında sıkışıp kalmıştı. Kendi topçuları tarafından yanlışlıkla vuruluyorlardı ve tüm iletişim hatları kesilmişti. Binbaşı, son çare olarak "Cher Ami" adlı bir posta güvercinini gökyüzüne saldı. Güvercin uçarken Almanlar tarafından vuruldu; göğsünden yaralandı, bir gözünü kaybetti ve bir bacağı koptu. Ancak pes etmedi. Kanlar içinde uçmaya devam edip 40 kilometre ötedeki karargâha ulaştı ve bacağına bağlı o hayat kurtaran mesajı iletti. 194 askerin hayatı, teknolojinin tıkandığı yerde, bir avuçluk yaralı bir kuşun inatçı kanat çırpışlarına borçludur.',
+    questionStem: 'Cher Ami\'nin hikâyesinden çıkarılabilecek temel vurgu aşağıdakilerden hangisidir?',
+    options: [
+      'Hayvanların savaşlarda kullanılmasının etik dışı olduğu',
+      'İletişim teknolojilerinin I. Dünya Savaşı\'nda tamamen işlevsiz kaldığı',
+      'Modern savaşın karmaşasında ve teknolojinin çöktüğü anlarda bile, bir hayvanın fedakârlığının (inadının) yüzlerce hayatı kurtarabileceği',
+      'Kuşların yön bulma yeteneklerinin radyo dalgalarıyla karıştığı'
+    ],
+    correct: 2,
+    explanation: 'İletişimin çöktüğü, kendi topçularının onları vurduğu bir kriz anında, tek gözünü ve bacağını kaybeden bir güvercinin inatla uçarak 194 askeri kurtarması vurgulanmaktadır.'
+  },
+  {
+    title: 'Asurbanipal Kütüphanesi',
+    passage: 'Tarihte bilinen ilk sistemli kütüphane, MÖ 7. yüzyılda Yeni Asur İmparatoru Asurbanipal tarafından Ninova\'da kuruldu. O dönemin kralları genellikle kestikleri başlarla ve yaktıkları şehirlerle övünürken, Asurbanipal okuma yazma bilmesiyle ve ele geçirdiği ülkelerdeki kil tabletleri toplayarak oluşturduğu devasa arşiviyle gurur duyuyordu. İmparatorluk yıkılıp Ninova şehri alevlere teslim olduğunda, ateşte pişen kil tabletler yok olmak yerine daha da sertleşerek günümüze kadar ulaştı. Ünlü Gılgamış Destanı da bu tabletlerin arasından çıkmıştır. Asurbanipal\'in bilgiye duyduğu bu saplantı, kılıçla kurulan imparatorlukların yıkılsa bile, kil tabletlere kazınan bilginin yangınlardan bile sağ çıkabileceğini kanıtladı.',
+    questionStem: 'Asurbanipal Kütüphanesi\'nin günümüze ulaşmasında parçada bahsedilen "ironik (şaşırtıcı)" durum nedir?',
+    options: [
+      'Tabletlerin tamamen altından yapılmış olması nedeniyle erimemeleri',
+      'Şehri yok eden büyük yangının (ateşin), normalde her şeyi küle çevirirken kil tabletleri pişirip sertleştirerek binlerce yıl korunmalarını sağlaması',
+      'Asurbanipal\'in tabletleri düşmanlardan korumak için yerin çok derinlerine gömmesi',
+      'Kütüphanenin sadece tıp bilimiyle ilgili metinler içerdiği için düşmanlar tarafından saygı görmesi'
+    ],
+    correct: 1,
+    explanation: 'Her şeyi yok etmesi beklenen yangının, kil tabletleri tam aksine pişirip sertleştirerek yok olmaktan kurtarması (zıt ve şaşırtıcı durum) parçanın ironisidir.'
+  },
+  {
+    title: 'Özgürlük Heykeli\'nin Orijinal Rengi',
+    passage: 'New York limanında yükselen ve tüm dünyaya umut ile özgürlüğü simgeleyen ünlü Özgürlük Heykeli, 1886\'da Fransa tarafından ABD\'ye hediye edildiğinde günümüzdeki o meşhur turkuaz-yeşil renginde değildi. Dışı tamamen ince bir bakır tabakasıyla kaplıydı ve tıpkı yeni basılmış bir bozuk para gibi parlak, kızıl-kahverengi bir renge sahipti. Yıllar içinde oksitlenme (patina) süreciyle bakır, o ikonik yeşil zırhına büründü. Başlangıçta halk heykeli temizlemek istese de, bu yeşil tabakanın altındaki metali çürümekten koruduğu anlaşıldı. Bazen değişen ve yaşlanan bir dış görünüş, bir anıtı yıkımdan koruyan en sağlam kalkan ve o anıtı eşsiz kılan asıl karakter olabilir.',
+    questionStem: 'Özgürlük Heykeli\'nin renk değişimi üzerinden yazar nasıl bir çıkarım yapmaktadır?',
+    options: [
+      'Fransa\'nın hediye ettiği metalin aslında çok kalitesiz olduğu',
+      'New York\'un hava kirliliğinin heykeli hızla yaşlandırdığı',
+      'Zamanın getirdiği değişimin (oksitlenmenin) her zaman bir bozulma değil, eseri koruyan ve ona asıl kimliğini (karakterini) kazandıran faydalı bir kalkan olabileceği',
+      'Anıtların düzenli olarak boyanıp temizlenmesi gerektiği'
+    ],
+    correct: 2,
+    explanation: 'Heykelin yaşlanıp yeşile dönmesinin (oksitlenmenin) altındaki metali koruduğu ve ona ikonik karakterini verdiği belirtilerek değişimin faydalı/koruyucu olabileceği ifade edilmiştir.'
+  }
+];
+
+// Test 5 Üretici Makine
+export const tarihParagrafSorulari5: TarihParagrafQuestion[] = Array.from({ length: 50 }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_5[idx % PARAGRAPH_THEMES_5.length];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-tarih5-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
+
 // paragrafTests.ts dosyasının hata vermemesi için iki listeyi birleştirip eski adıyla dışa aktarıyoruz:
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari,
   ...tarihParagrafSorulari2,
   ...tarihParagrafSorulari3,
-  ...tarihParagrafSorulari4
+  ...tarihParagrafSorulari4,
+  ...tarihParagrafSorulari5
 ];
