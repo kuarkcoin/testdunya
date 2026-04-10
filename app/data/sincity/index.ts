@@ -850,9 +850,288 @@ export const tarihParagrafSorulari3: TarihParagrafQuestion[] = Array.from({ leng
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
+const PARAGRAPH_THEMES_4 = [
+  {
+    title: 'Rubicon Nehrini Geçmek',
+    passage: 'MÖ 49 yılında Jül Sezar, ordusuyla birlikte Galya ile Roma arasındaki sınırı belirleyen incecik Rubicon nehrinin kıyısına geldi. Roma yasalarına göre bir komutanın ordusuyla bu nehri geçmesi devlete savaş açmak, yani vatana ihanet demekti. Sezar uzun bir tereddüdün ardından "Zarlar atıldı" (Alea iacta est) diyerek atını suya sürdü. Bu hamle, Roma Cumhuriyeti\'nin sonunu getirip İmparatorluğun kapılarını açtı. "Rubicon\'u geçmek" deyimi o günden beri, geri dönüşü olmayan o keskin çizgiyi aşmayı ve sonuçlarına katlanarak büyük bir riske girmeyi ifade eder.',
+    questionStem: 'Bu metne göre "Rubicon\'u geçmek" ifadesinin sembolize ettiği durum aşağıdakilerden hangisidir?',
+    options: [
+      'Askeri dehanın ve taktiksel üstünlüğün her zaman galip geleceği',
+      'Bir liderin halkı tarafından desteklendiğinde yenilmez olduğu',
+      'Geri dönüşü olmayan bir karar alarak tüm sonuçları (riskleri) göze alma anı',
+      'Sınır güvenliğinin antik çağlarda bile çok ciddiye alındığı'
+    ],
+    correct: 2,
+    explanation: 'Sezar\'ın nehri geçerek devlete savaş açması ve geri dönüşü olmayan bir adım atması, bu ifadenin "geri dönülemez bir karar alıp riskleri göze almak" anlamını taşıdığını gösterir.'
+  },
+  {
+    title: 'Navajo Şifrecileri',
+    passage: 'İkinci Dünya Savaşı sırasında Pasifik cephesinde Japonlar, Amerikalıların tüm telsiz şifrelerini anında kırıyordu. Çaresiz kalan Amerikan ordusu, dilleri daha önce hiç yazılı hale getirilmemiş, aşırı karmaşık bir yapıya sahip olan Navajo yerlilerini askere aldı. Navajolar, savaş alanındaki mesajları kendi dillerinde, doğa terimleriyle kodlayarak ilettiler. Milyonlarca dolarlık makinelerin ve dâhilerin kıramadığı bu canlı şifre sistemi, savaşı Müttefiklere kazandıran en büyük etkenlerden biri oldu. Teknoloji ne kadar ilerlerse ilerlesin, kadim insan kültürünün karmaşıklığı bazen en kusursuz makineyi bile yenebilir.',
+    questionStem: 'Navajo şifrecilerinin başarısı üzerinden anlatılmak istenen temel düşünce nedir?',
+    options: [
+      'Yerli halkların savaşçı ruhlarının modern ordulardan daha güçlü olduğu',
+      'Yazılı olmayan dillerin öğrenilmesinin ve gramerinin oluşturulmasının imkânsızlığı',
+      'Modern teknolojinin ve makinelerin bile, kadim ve doğal insan kültürünün o karmaşık yapısı karşısında çaresiz kalabileceği',
+      'Savaşlarda istihbaratın askeri teçhizattan daha fazla bütçe gerektirdiği'
+    ],
+    correct: 2,
+    explanation: 'Japonların makinelerle kıramadığı şifrenin Navajo yerlilerinin doğal diliyle kurulması, teknolojinin insan kültürünün (kadim dilin) karmaşıklığı karşısında çaresiz kalabileceğini vurgular.'
+  },
+  {
+    title: 'Sputnik\'in Bip Sesi',
+    passage: '4 Ekim 1957\'de Sovyetler Birliği, dünyanın ilk yapay uydusu Sputnik 1\'i uzaya fırlattığında, bu metalik kürenin radyolara gönderdiği o basit "bip-bip" sesi tüm Amerika\'da bir panik dalgası yarattı. Sovyetlerin uzaydan başlarına nükleer bomba atabileceği korkusu, Amerikan hükümetini eğitim sistemini baştan aşağı değiştirmeye, NASA\'yı kurmaya ve milyarlarca doları bilime yatırmaya itti. Gökyüzündeki o küçücük uydu, Soğuk Savaş\'ın seyrini değiştirmiş; korkunun, bazen insanoğlunu bilimsel gelişmeye iten en büyük motivasyon kaynağı olduğunu kanıtlamıştır.',
+    questionStem: 'Sputnik 1\'in fırlatılmasının Amerikan toplumu ve devleti üzerindeki asıl etkisi ne olmuştur?',
+    options: [
+      'Amerikan halkının uzaylıların varlığına olan inancını artırması',
+      'Yarattığı güvenlik korkusu (panik) sayesinde, Amerika\'nın bilim, eğitim ve uzay araştırmalarında devasa atılımlar yapmasını tetiklemesi',
+      'Amerika ile Sovyetler Birliği arasında doğrudan bir nükleer savaşın başlamasına yol açması',
+      'Sovyetlerin teknolojik üstünlüğünün tamamen kabul edilip uzay yarışından çekilmelerine neden olması'
+    ],
+    correct: 1,
+    explanation: 'Sputnik\'in gönderdiği "bip" sesinin yarattığı korkunun Amerika\'yı eğitim sistemini değiştirmeye ve NASA\'yı kurmaya (bilimsel atılım) ittiği belirtilmiştir.'
+  },
+  {
+    title: 'Eratosthenes ve Gölgeler',
+    passage: 'MÖ 240 yılında İskenderiye Kütüphanesi\'nin müdürü Eratosthenes, Dünya\'nın çevresini hesaplamak gibi imkânsız görünen bir işe girişti. Ne uyduları vardı ne de uçakları. Sadece bir çubuğun iki farklı şehirde, yılın aynı gününde yere düşen gölge açılarını ölçtü. Geometriyi ve bir deveden elde ettiği iki şehir arasındaki mesafe bilgisini kullanarak, Dünya\'nın çevresini bugünkü gerçek değere sadece %1\'lik bir hata payıyla hesaplamayı başardı. Eratosthenes, evrenin sırlarını çözmek için en ileri teknolojiye değil, sadece dikkatli bir gözleme ve keskin bir insan aklına ihtiyaç olduğunu kanıtlayan ilk büyük kâşiftir.',
+    questionStem: 'Eratosthenes\'in başarısı bilim tarihi açısından neyi sembolize etmektedir?',
+    options: [
+      'Güneş ışınlarının dünyanın her yerine aynı açıyla düşmediğini',
+      'Develerin o dönemde bir uzunluk ölçü birimi olarak kullanıldığını',
+      'İnsanın ileri teknolojiye sahip olmadan da, sadece matematiksel akıl ve gözlemle evrenin büyük sırlarını çözebileceğini',
+      'İskenderiye Kütüphanesi\'nin antik dünyanın en zengin teknolojik araçlarına sahip olduğunu'
+    ],
+    correct: 2,
+    explanation: 'Sadece bir çubuk, gölge ve akıl (geometri) kullanarak Dünya\'nın çevresini hesaplaması, aklın ve gözlemin teknolojisiz de büyük sırlar çözebileceğini sembolize eder.'
+  },
+  {
+    title: 'Buz Adam Ötzi',
+    passage: '1991 yılında Alpler\'de buzulların erimesiyle bulunan Ötzi, günümüzden tam 5300 yıl önce yaşamış bir insandı. Bilim insanları onu incelediğinde midesindeki son yemeği, kıyafetlerindeki polenleri ve en önemlisi sırtına saplanmış olan ok ucunu buldular. Ötzi bir kazaya kurban gitmemiş, yüksek dağlarda bir düşmanından kaçarken pusuya düşürülerek öldürülmüştü. Bu donmuş beden, tarih kitaplarının sadece büyük imparatorluklardan ve efsanevi savaşlardan ibaret olmadığını; sıradan bir insanın binlerce yıl önce yaşadığı cinayetin ve korkunun bile tarihin en çarpıcı parçası olabileceğini bizlere fısıldar.',
+    questionStem: 'Yazar, Ötzi\'nin hikâyesi üzerinden tarih bilimine dair nasıl bir yaklaşım sunmaktadır?',
+    options: [
+      'Tarih araştırmalarında sadece adli tıp uzmanlarının söz sahibi olması gerektiği',
+      'Tarihin sadece kralların ve savaşların değil, sıradan insanların kişisel trajedilerinin (Ötzi\'nin cinayeti gibi) de değerli bir parçası olduğu',
+      'Antik çağlarda insanların sanıldığından çok daha huzurlu ve barışçıl yaşadığı',
+      'Buzulların erimesinin tarih öncesi döneme ait tüm kalıntıları yok etme tehlikesi taşıdığı'
+    ],
+    correct: 1,
+    explanation: 'Ötzi\'nin öldürülmesinin, tarih kitaplarının sadece krallardan değil, sıradan insanların korku ve cinayetlerinden de (kişisel trajediler) ibaret olabileceğini gösterdiği vurgulanmıştır.'
+  },
+  {
+    title: 'Maginot Hattı Yanılgısı',
+    passage: 'Birinci Dünya Savaşı\'nın yıkımından ders aldığını sanan Fransa, sınırlarına yeraltı sığınakları, devasa toplar ve kilometrelerce uzanan tünellerden oluşan "Maginot Hattı"nı inşa etti. Fransızlar bu hattın geçilemez olduğuna inanıyor ve kendilerini tamamen güvende hissediyordu. Ancak 1940 yılında Alman ordusu bu aşılmaz duvara saldırmak yerine, ormanlık alandan dolaşarak hattın arkasına sızdı ve Fransa birkaç hafta içinde düştü. Maginot Hattı, durağan ve değişime kapalı savunma sistemlerinin, hızlı ve yaratıcı (esnek) bir zekâ karşısında ne kadar kolay çöktüğünün tarihsel bir kanıtıdır.',
+    questionStem: 'Fransa\'nın Maginot Hattı\'na rağmen yenilmesi hangi stratejik yanılgıyı (hatayı) göstermektedir?',
+    options: [
+      'Askeri harcamaların ülke ekonomisini çökertip iç karışıklığa yol açtığını',
+      'Durağan (sabit) fiziksel engellere ve değişmez planlara körü körüne güvenmenin, düşmanın esnek ve yenilikçi taktikleri karşısında çaresiz kalacağı gerçeğini',
+      'Alman ordusunun sahip olduğu silahların beton delme özelliğine sahip olduğunu',
+      'Savunma hatlarının sadece düz arazilere inşa edilmesi gerektiğini'
+    ],
+    correct: 1,
+    explanation: 'Fransızların sabit ve durağan bir hatta körü körüne güvenip, Almanların etrafından dolaşması (esnek zekâ) karşısında yenilmeleri; durağanlığın esneklik karşısındaki zayıflığını anlatır.'
+  },
+  {
+    title: 'Medici Ailesi ve Rönesans',
+    passage: 'Orta Çağ Avrupa\'sı karanlık ve dogmalar içinde yüzerken, İtalya\'nın Floransa kenti birdenbire sanatın ve bilimin başkenti oldu. Bu mucizenin arkasında bir kral ya da papa değil, zengin bir bankacı aile olan Mediciler vardı. Mediciler, Michelangelo, Leonardo da Vinci ve Galileo gibi dehalara hiçbir karşılık beklemeden sponsor oldular. Onları maddi kaygılardan kurtararak sadece yaratmaya teşvik ettiler. Rönesans dediğimiz aydınlanma, aslında dehanın filizlenebilmesi için gereken suyun, yani maddi himayenin (patronajın) doğru insanların eline verilmesinin bir sonucudur.',
+    questionStem: 'Rönesans\'ın Floransa\'da doğuşunda Medici ailesinin asıl rolü nedir?',
+    options: [
+      'Sanatçıları bankacılık sektöründe çalıştırarak onlara iş imkânı sunmaları',
+      'Devlet yönetimini ele geçirerek sanata dair zorunlu kanunlar çıkarmaları',
+      'Deha sahibi insanları maddi kaygılardan kurtaracak ekonomik desteği (patronajı) sağlayarak onların özgürce üretmelerine olanak tanımaları',
+      'Leonardo da Vinci ve Michelangelo gibi sanatçıları bizzat yetiştirip eğitmeleri'
+    ],
+    correct: 2,
+    explanation: 'Medicilerin sanatçılara sponsor olup onları maddi kaygıdan kurtarması (patronaj/himaye) ve yaratmaya teşvik etmesi, onların Rönesans\'taki asıl rolüdür.'
+  },
+  {
+    title: 'Tunguska Gizemi',
+    passage: '30 Haziran 1908 sabahı Sibirya\'nın ıssız Tunguska bölgesinde gökyüzü aniden alev aldı. Hiroşima\'ya atılan atom bombasından 1000 kat daha güçlü bir patlama yaşandı ve 80 milyon ağaç anında devrildi. İlginç olan, ortada hiçbir krater veya göktaşı kalıntısı yoktu. Bilim insanları bunun havada patlayan bir kuyrukluyıldız parçası veya meteor olduğu sonucuna vardılar. Eğer bu patlama dört saat gecikmeyle yaşansaydı, Dünya\'nın dönüşünden dolayı Londra veya Paris gibi bir metropol tamamen haritadan silinecekti. Tunguska, insanoğlunun kibrine karşı, evrenin kör tesadüflerinin ve yıkıcı gücünün ürpertici bir hatırlatıcısıdır.',
+    questionStem: 'Tunguska olayı, yazar tarafından hangi felsefi yaklaşımla değerlendirilmektedir?',
+    options: [
+      'Ormanlık alanların yerleşim yerlerinden uzak olmasının önemini gösteren bir uyarı',
+      'İnsanoğlunun evrendeki varlığının, doğanın öngörülemez ve devasa güçleri (ve kör tesadüfler) karşısında son derece kırılgan ve şansa bağlı olduğu',
+      'Göktaşlarının değerli madenler içermesi nedeniyle bilimsel olarak daha iyi incelenmesi gerektiği',
+      '1900\'lü yılların başındaki bilimsel ekipmanların bu tür olayları tespit edemeyecek kadar ilkel olduğu'
+    ],
+    correct: 1,
+    explanation: 'Eğer 4 saat gecikseydi bir metropolü silecek olan bu patlama, insanoğlunun evrenin kör tesadüfleri ve yıkıcı gücü karşısındaki kırılganlığını/şans eseri yaşamasını anlatır.'
+  },
+  {
+    title: 'Yenilmez Armada',
+    passage: '1588 yılında İspanya Kralı, "Yenilmez Armada" adını verdiği o güne kadar görülmüş en büyük donanmayı İngiltere\'yi işgal etmek için yola çıkardı. İngiliz donanması sayıca azdı ama İspanyol kalyonları devasa, ağır ve hantaldı. Asıl yıkım savaşla değil, İngiliz Kanalı\'nda patlayan korkunç bir fırtınayla geldi. İspanyol gemileri kayalıklara çarparak parçalandı ve tarihin en büyük donanması denizin dibini boyladı. İngilizler bu fırtınaya "Protestan Rüzgârı" adını verdiler. Bu tarihi hezimet, en büyük askeri hazırlıkların bile doğanın anlık bir öfkesi karşısında nasıl çaresiz kalabileceğinin destanıdır.',
+    questionStem: 'İspanyol Armadası\'nın çöküşündeki belirleyici faktör parçada nasıl açıklanmıştır?',
+    options: [
+      'İngiliz ordusunun beklenenden çok daha modern silahlara sahip olması',
+      'İspanyol askerlerinin isteksizce savaşması ve komutanlarına isyan etmesi',
+      'Beklenmedik bir fırtınanın (doğa olayının) devasa ve hantal İspanyol donanmasını yok etmesi',
+      'İngiliz gemilerinin devasa boyutlarının İspanyolları korkutması'
+    ],
+    correct: 2,
+    explanation: 'Yenilmez denen donanmanın asıl yıkımının savaşla değil, patlayan fırtına (Protestan Rüzgârı) ve doğanın gücü nedeniyle kayalıklara çarpmasıyla yaşandığı vurgulanmıştır.'
+  },
+  {
+    title: 'Dinozorların Sonu ve Biz',
+    passage: '66 milyon yıl önce, günümüz Meksika kıyılarına (Chicxulub) çarpan devasa bir asteroit, yeryüzündeki yaşamın %75\'ini, başta dinozorlar olmak üzere yok etti. Güneş ışığını yıllarca kesen toz bulutları, dev kertenkelelerin sonunu getirirken, yer altında yaşayan ve az yiyecekle yetinebilen küçük, fare benzeri memelilere hayatta kalma şansı verdi. Eğer o asteroit dünyaya çarpmamış olsaydı, o küçük memeliler evrimleşip insan türünü oluşturamayacak, dinozorlar ise gezegenin hakimi kalmaya devam edecekti. Bizim varlığımız, evrenin milyonlarca yıl önce oynadığı kör bir bilardo oyununun tesadüfi bir sonucudur.',
+    questionStem: 'Dinozorların yok oluşu ve insanların ortaya çıkış süreciyle ilgili asıl vurgulanan nedir?',
+    options: [
+      'Büyük canlıların her zaman küçük canlılardan daha zayıf olduğu',
+      'İnsanlığın varoluşunun zorunlu ve kusursuz bir planın değil, felaketlerin yol açtığı rastlantısal (tesadüfi) bir kırılmanın sonucu olduğu',
+      'Uzaydan gelen tehlikelere karşı memeli hayvanların özel bir altıncı hissi olduğu',
+      'İklim değişikliklerinin canlı evrimini hiçbir şekilde etkilemediği'
+    ],
+    correct: 1,
+    explanation: 'İnsan türünün (memelilerin) evrimleşmesinin, o asteroidin çarpması gibi kör ve tesadüfi bir olay olmasaydı gerçekleşmeyeceği (rastlantısallık) anlatılmıştır.'
+  },
+  {
+    title: 'Ölümsüz Hücreler: Henrietta Lacks',
+    passage: '1951 yılında Henrietta Lacks adlı siyahi bir kadın, rahim ağzı kanseri tedavisi görürken doktorlar ondan habersiz bir doku örneği aldılar. Henrietta kısa süre sonra acılar içinde öldü; ancak hücreleri (HeLa hücreleri) laboratuvar ortamında ölmeyip çoğalmaya devam eden ilk insan hücreleri oldu. Bugün çocuk felci aşısından kanser araştırmalarına kadar sayısız tıbbi devrim, ondan izinsiz alınan bu "ölümsüz" hücreler sayesinde yapıldı. Bilim dünyası milyarlarca dolar kâr ederken, Henrietta\'nın ailesi yıllarca sağlık sigortası bile olmadan yoksulluk içinde yaşadı. HeLa hücreleri, tıp tarihindeki ilerlemenin bazen ne kadar karanlık ve etik dışı bir sömürü barındırdığının kanıtıdır.',
+    questionStem: 'Henrietta Lacks (HeLa) hücreleri olayında yazarın odaklandığı asıl sorun nedir?',
+    options: [
+      'Kanser araştırmalarının diğer tıbbi alanlardan daha yavaş ilerlemesi',
+      'Tıbbi gelişmelerin sağladığı büyük faydanın arkasında, hastanın rızasının alınmaması ve ailesinin yoksul bırakılması gibi etik dışı bir sömürünün yatması',
+      'Laboratuvar ortamında hücre çoğaltmanın sadece şans eseri başarılabilen bir yöntem olması',
+      'Siyahi Amerikalıların tıp bilimine olan katkılarının genetik nedenlere dayanması'
+    ],
+    correct: 1,
+    explanation: 'Habersiz alınan dokuların tıbbi devrimler yapması ve milyarlar kazandırması ancak ailesinin yoksulluk çekmesi; bilimin arkasındaki etik dışı sömürüyü vurgular.'
+  },
+  {
+    title: 'Voyager Altın Plağı',
+    passage: '1977 yılında fırlatılan Voyager uzay araçları, insan yapımı olup dünyadan en uzağa giden nesnelerdir. Üzerlerinde, Amerikalı astronom Carl Sagan\'ın öncülüğünde hazırlanan ve bakırdan yapılmış bir "Altın Plak" bulunur. Bu plakta rüzgârın, kuşların sesi, 55 farklı dilde selamlama, müzikler ve insanın anatomik çizimleri yer alır. Güneş sistemini çoktan terk eden bu araç, bir milyar yıl boyunca uzayın karanlığında bozulmadan kalacaktır. Altın Plak, evrendeki diğer zeki yaşamlara "Biz buradaydık ve güzel şeyler ürettik" deme çabamızın; yok oluşa karşı insanlığın o kırılgan ama son derece naif başkaldırısının sembolüdür.',
+    questionStem: 'Voyager Altın Plağı\'nın uzaya gönderilme felsefesi (amacı) yazar tarafından nasıl yorumlanmıştır?',
+    options: [
+      'Uzaylıların teknolojimizi inceleyip bize teknolojik yardım göndermesini sağlama amacı',
+      'Gezegenimizin coğrafi koordinatlarını paylaşarak potansiyel tehlikeleri davet eden bir hata',
+      'İnsanlığın evrende bir iz bırakma isteğinin, yok oluşa meydan okuyan iyimser ve naif (sanatsal) bir çabası',
+      'Sadece farklı dillerin uzay koşullarındaki dayanıklılığını ölçen bilimsel bir deney'
+    ],
+    correct: 2,
+    explanation: 'Plağın milyar yıl kalacak olması ve "Biz buradaydık" deme çabası olarak betimlenmesi, insanlığın yok oluşa karşı evrende bir iz bırakma (iyimser/naif) arzusu olarak yorumlanmıştır.'
+  },
+  {
+    title: 'Gılgamış Destanı',
+    passage: 'Tarihin bilinen ilk yazılı edebi eseri olan Sümerlerin Gılgamış Destanı, yenilmez bir kralın kahramanlıklarından ziyade, insanın en derin korkusunu anlatır: Ölüm. Gılgamış, en yakın dostu Enkidu öldüğünde ilk kez kendi faniliğiyle yüzleşir ve ölümsüzlüğü bulmak için tehlikeli bir yolculuğa çıkar. Sonunda anlar ki, tanrıların sadece kendine sakladığı ölümsüzlük insan için imkânsızdır; insana kalan tek şey, yaşarken adını kalıcı kılacak eserler bırakmaktır. Yaklaşık 4 bin yıl önce kil tabletlere kazınan bu hikâye, insan doğasının ve varoluşsal krizlerimizin binlerce yıldır milim bile değişmediğinin kanıtıdır.',
+    questionStem: 'Gılgamış Destanı\'nın ana mesajı ve edebi önemi parçada nasıl özetlenmiştir?',
+    options: [
+      'Kralların tanrılardan daha güçlü olduğunu anlatan bir siyasi propaganda olması',
+      'Sümerlerin ahiret inancının (ölümden sonra yaşamın) temellerini atan dini bir metin olması',
+      'İnsanın ölüm korkusu ve ölümsüzlük arayışını işleyerek, insan psikolojisinin (varoluş krizinin) çağlar boyunca değişmediğini göstermesi',
+      'Kahramanlık ve savaş hikâyelerinin her dönemde çok okunduğunu kanıtlaması'
+    ],
+    correct: 2,
+    explanation: 'Destanın insanın en derin korkusunu (ölümü) işlemesi ve ölümsüzlük arayışını anlatması, insan doğasının ve varoluşsal krizinin 4 bin yıldır değişmediğini gösterir.'
+  },
+  {
+    title: 'Waterloo ve Kibrin Düşüşü',
+    passage: 'Napolyon Bonapart, Avrupa\'yı kasıp kavuran bir askeri dâhiydi; ancak 1815\'teki Waterloo Savaşı\'nda hayatının en ağır yenilgisini aldı. Bu yenilgi sadece birleşik İngiliz ve Prusya ordularının gücünden kaynaklanmadı. Napolyon\'un geçmişteki sayısız zaferinin getirdiği aşırı özgüven, rakiplerini hafife almasına ve savaş sabahı yağan şiddetli yağmura rağmen topçu birliklerini bekletmeyerek taktiksel bir inatlaşmaya girmesine neden oldu. Waterloo, tarihte yeteneğin kibre yenik düştüğü, geçmiş başarıların insanı körleştiren bir tuzağa dönüşebileceğini gösteren en meşhur çöküştür.',
+    questionStem: 'Napolyon\'un Waterloo\'da yenilmesinin asıl psikolojik nedeni nedir?',
+    options: [
+      'Yağan yağmurun askerlerin moralini tamamen bitirmesi',
+      'Birleşik Avrupa ordularının sayısının çok fazla olmasından korkması',
+      'Sürekli kazandığı zaferlerin onda yarattığı kibrin (aşırı özgüvenin) onu hatalı kararlara ve inatlaşmaya sürüklemesi',
+      'Askerlerine yeterli yiyecek sağlayamadığı için ordunun isyan etmesi'
+    ],
+    correct: 2,
+    explanation: 'Yenilginin asıl nedeninin "geçmiş zaferlerin getirdiği aşırı özgüven, rakipleri hafife alma ve kibre yenik düşme" olduğu metinde açıkça belirtilmiştir.'
+  },
+  {
+    title: '1929 Kara Perşembe',
+    passage: '1920\'lerin Amerika\'sı, herkesin borsadan zengin olduğuna inandığı ve sonsuz tüketim çılgınlığının yaşandığı "Kükreyen Yirmiler" dönemiydi. Ancak krediyle alınan hisse senetleri üzerine kurulan bu kâğıttan şato, 24 Ekim 1929 "Kara Perşembe" günü çöktü. İnsanlar bir gecede tüm servetlerini kaybetti, bankalar iflas etti, milyonlarca kişi işsiz kalarak sokaklarda çorba kuyruklarına girdi. Bu Büyük Buhran, kontrolsüz açgözlülüğün ve gerçek üretime dayanmayan suni zenginliğin, bir gün mutlaka kendi ağırlığı altında ezilerek çökeceğinin tarihteki en sert ekonomik dersidir.',
+    questionStem: '1929 Büyük Buhranı (Kara Perşembe) olayından çıkarılabilecek temel ekonomik ders nedir?',
+    options: [
+      'Borsaya yatırım yapmanın her zaman kârlı bir gelir kapısı olduğu',
+      'Devletin ekonomiye hiçbir şekilde müdahale etmemesi gerektiği',
+      'Gerçek üretime (temele) dayanmayan, borç ve kontrolsüz açgözlülükle şişen suni ekonomilerin eninde sonunda yıkılmaya mahkûm olduğu',
+      'Sadece zenginlerin para kaybettiği krizlerin toplumu fazla etkilemediği'
+    ],
+    correct: 2,
+    explanation: 'Krediyle alınan hisselere (suni zenginliğe) ve açgözlülüğe dayalı ekonominin kâğıttan şato gibi çöktüğünün belirtilmesi, gerçek üretime dayanmayan ekonomilerin yıkılacağını gösterir.'
+  },
+  {
+    title: 'Silinen Firavun: Hatşepsut',
+    passage: 'Antik Mısır\'ın en güçlü kadın firavunlarından biri olan Hatşepsut, ülkesini yıllarca barış ve refah içinde yönetti. Ancak ölümünden yıllar sonra tahta geçen üvey oğlu III. Thutmose, onun adını tüm tapınaklardan, heykellerden ve dikilitaşlardan sildirmeye çalıştı. Amacı, bir kadının firavun olabileceği fikrini tarih sahnesinden tamamen silmekti. Yüzyıllar boyunca başarılı olan bu sansür, modern arkeologların kırık heykelleri birleştirmesiyle bozuldu. Hatşepsut\'un hikâyesi, tarihi yazanların (ve silenlerin) gücü ne kadar ellerinde tutarlarsa tutsunlar, gerçeğin taşların arasından bir gün mutlaka gün yüzüne çıkacağını kanıtlar.',
+    questionStem: 'Parçada Hatşepsut\'un heykellerinin ve isminin silinmesi olayı üzerinden ne anlatılmak istenmiştir?',
+    options: [
+      'Kadın yöneticilerin erkeklere göre barışa daha çok önem verdiği',
+      'Gücü elinde tutanların tarihi kendi isteklerine göre silme çabalarının (sansürün), gerçekler karşısında eninde sonunda başarısız olacağı',
+      'Antik Mısır\'da dikilitaşların üzerine sadece dini metinlerin yazıldığı',
+      'Arkeolojinin, geçmişe dair kanıtları bulmak yerine efsaneler ürettiği'
+    ],
+    correct: 1,
+    explanation: 'İsminin silinerek tarihten koparılmaya çalışılmasına rağmen arkeologlarca bulunması, sansürcülerin gücü ne olursa olsun gerçeğin eninde sonunda gün yüzüne çıkacağını anlatır.'
+  },
+  {
+    title: 'Frankenstein ve Buz Gibi Bir Yaz',
+    passage: '1815 yılında Endonezya\'daki Tambora Yanardağı patladığında, külleri tüm dünyayı kapladı ve 1816 yılı Avrupa\'da "Yazsız Yıl" olarak tarihe geçti. Sürekli yağan yağmur ve soğuk yüzünden İsviçre\'de bir evde mahsur kalan 18 yaşındaki Mary Shelley, can sıkıntısını gidermek için arkadaşlarıyla kimin daha korkunç bir hikâye yazacağı konusunda iddiaya girdi. Dışarıdaki o kasvetli ve karanlık havanın etkisiyle, ölü parçalardan canavar yaratan Dr. Frankenstein\'ın hikâyesini kaleme aldı. Doğanın dünyanın bir ucunda yarattığı bir iklim felaketi, diğer ucunda edebiyat tarihinin en büyük bilimkurgu başyapıtlarından birini doğurmuştu.',
+    questionStem: 'Mary Shelley\'nin "Frankenstein" romanını yazma süreciyle ilgili asıl anlatılmak istenen nedir?',
+    options: [
+      'Romanın aslında Mary Shelley\'nin doktor olan arkadaşları tarafından yazıldığı',
+      'Bilimkurgu edebiyatının sadece soğuk iklimli ülkelerde gelişebileceği',
+      'Dünyanın bir ucundaki coğrafi/iklimsel bir olayın (patlamanın), tesadüfi bir şekilde edebi bir başyapıtın doğuş zeminini hazırlayabildiği',
+      'Yanardağ patlamalarının her zaman insanların psikolojisini olumlu etkilediği'
+    ],
+    correct: 2,
+    explanation: 'Endonezya\'daki yanardağ patlamasının Avrupa\'da yazsız yıla sebep olup Mary Shelley\'i eve hapsetmesi ve romanın bu ortamda yazılması, doğa olaylarının edebi eserlere tesadüfi zemin hazırladığını gösterir.'
+  },
+  {
+    title: 'Vikinglerin Güneş Taşı',
+    passage: 'Vikingler pusula olmadan, sisli ve tamamen bulutlu Kuzey denizlerinde yollarını nasıl bulup Amerika kıtalarına kadar gidebilmişlerdi? Efsanelerde geçen büyülü "Güneş Taşları"nın bir masal olduğu sanılıyordu. Ancak modern bilim insanları bu taşın "Kalsit" adı verilen ve ışığı polarize etme (kutuplaştırma) yeteneğine sahip bir kristal olduğunu keşfetti. Güneş tamamen bulutların arkasında saklansa bile, bu taşı gökyüzüne tuttuklarında ışığın kırılmasından Güneş\'in tam konumunu tespit edebiliyorlardı. Modern bilimin gizemini yeni çözdüğü bu kristal, antik denizcilerin doğayı gözlemleyerek buldukları kusursuz bir optik mühendislik harikasıydı.',
+    questionStem: 'Vikinglerin "Güneş Taşı" kullanımı, tarih ve bilim açısından bize neyi göstermektedir?',
+    options: [
+      'Vikinglerin savaşçı kimliklerinden çok ticari kimliklerinin geliştiğini',
+      'Pusulanın icadının denizcilikte çok da önemli bir devrim olmadığını',
+      'Antik dönem efsanelerinin bazen abartı değil, arkasında üstün bir gözlem ve mühendislik (bilimsel gerçeklik) barındıran zekice icatlar olduğunu',
+      'Kalsit kristalinin sadece soğuk iklimlerde bulunabilen bir maden olduğunu'
+    ],
+    correct: 2,
+    explanation: 'Efsane sanılan büyülü taşın aslında ışığı polarize eden bilimsel/optik bir araç olduğunun anlaşılması, antik efsanelerin arkasında üstün bir gözlem ve bilimsel gerçeklik yatabileceğini gösterir.'
+  },
+  {
+    title: 'Taç Mahal\'in Gözyaşları',
+    passage: 'Hindistan\'da Şah Cihan tarafından, ölen eşi Mümtaz Mahal anısına yaptırılan Taç Mahal, saf beyaz mermerden yapılmış kusursuz bir aşk anıtı olarak bilinir. Ancak bu mimari şaheserin arkasında karanlık bir bedel vardır. 22 yıl süren inşaat boyunca imparatorluğun hazinesi tamamen tükenmiş, halk ağır vergiler altında ezilerek açlık çekmiştir. En acı verici olan ise, Şah Cihan\'ın bu eserin bir kopyasının bir daha asla yapılamaması için mimarların ellerini kestirdiği efsanesidir. Taç Mahal, güzelliğin ve aşkın ölümsüzleştirilmesi için gücün nasıl acımasızca kullanılabileceğinin en ihtişamlı kanıtıdır.',
+    questionStem: 'Yazar, Taç Mahal\'i değerlendirirken onun hangi iki zıt yönünü karşılaştırmaktadır?',
+    options: [
+      'Mimarideki yenilikçi tarzı ile geleneksel Hint motifleri arasındaki farkı',
+      'Şah Cihan\'ın eşine duyduğu sevgi ile çocuklarına duyduğu nefreti',
+      'Dışarıdan görünen kusursuz estetik güzelliği (aşk anıtı) ile arka planında yatan ekonomik çöküş, sömürü ve acımasızlığı',
+      'Beyaz mermerin dayanıklılığı ile zaman içindeki sararmasını'
+    ],
+    correct: 2,
+    explanation: 'Metin, Taç Mahal\'i "kusursuz bir aşk anıtı" olarak överken, aynı zamanda hazinenin tükenmesi, halkın aç kalması ve mimarların ellerinin kesilmesi gibi "acımasız" arka planını karşılaştırır.'
+  },
+  {
+    title: 'Martin Luther\'in Çivisi',
+    passage: '1517 yılında Alman bir keşiş olan Martin Luther, Katolik Kilisesi\'nin halka "Cennetten arsa sattığı" (Endüljans) yozlaşmış sisteme isyan ederek 95 maddelik itirazını Wittenberg Kilisesi\'nin kapısına çiviledi. O dönemde matbaanın yeni icat edilmiş olması sayesinde, bu maddeler kopyalanıp haftalar içinde tüm Avrupa\'ya yayıldı. Luther\'in bir tahta kapıya vurduğu o çekiç darbesi, sadece bir kiliseyi ikiye bölmedi; insanların Tanrı ile aralarına hiçbir aracı kurum koymadan doğrudan bağ kurabilecekleri Protestanlık hareketini başlattı. Tarih, bazen devasa ordularla değil, haksızlığa karşı çivilenmiş basit bir kâğıt parçasıyla değişir.',
+    questionStem: 'Martin Luther\'in eyleminin başarısında, kişisel cesaretinin yanı sıra parçada vurgulanan diğer asıl etken nedir?',
+    options: [
+      'Diğer ülkelerin krallarının ona askeri birlikler göndererek koruması',
+      'Matbaa teknolojisinin yeni icat edilmiş olmasıyla fikirlerinin hızla kopyalanıp geniş kitlelere yayılabilmesi',
+      'Katolik Kilisesi\'nin o dönemde maddi olarak tamamen iflas etmiş olması',
+      'Halkın artık kiliselere gitmek istemeyen ateist bir düşünceye sahip olması'
+    ],
+    correct: 1,
+    explanation: 'İtirazların kapıya asılması kadar, matbaa sayesinde kopyalanıp tüm Avrupa\'ya yayılmasının (teknolojinin fikir yaymadaki gücü) hareketin başlamasında etkili olduğu belirtilmiştir.'
+  }
+];
+
+// Test 4 (Veya nasıl isimlendirmek istersen) için üretici makine:
+export const tarihParagrafSorulari4: TarihParagrafQuestion[] = Array.from({ length: 50 }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_4[idx % PARAGRAPH_THEMES_4.length];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-tarih4-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
 // paragrafTests.ts dosyasının hata vermemesi için iki listeyi birleştirip eski adıyla dışa aktarıyoruz:
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari,
   ...tarihParagrafSorulari2,
-  ...tarihParagrafSorulari3
+  ...tarihParagrafSorulari3,
+  ...tarihParagrafSorulari4
 ];
