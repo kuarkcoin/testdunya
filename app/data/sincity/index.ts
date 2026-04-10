@@ -573,8 +573,286 @@ export const tarihParagrafSorulari2: TarihParagrafQuestion[] = Array.from({ leng
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
+const PARAGRAPH_THEMES_3 = [
+  {
+    title: 'Sokrates\'in Baldıran Zehri',
+    passage: 'MÖ 399 yılında Atina mahkemesi, "gençlerin ahlakını bozmak" ve "tanrılara inanmamak" suçlamasıyla filozof Sokrates\'i ölüme mahkûm etti. Öğrencileri ona kaçması için rüşvet ve imkân sunsa da o, "Bedenim kaçabilir ama savunduğum ilkeler Atina\'da kalırsa yaşamanın ne anlamı var?" diyerek bunu reddetti ve baldıran zehrini kendi elleriyle içti. Sokrates\'in ölümü, bir insanın fiziksel varlığını feda etme pahasına kendi doğrusundan ve fikir namusundan taviz vermeyişinin tarihteki en asil ve trajik sembolüdür.',
+    questionStem: 'Bu metne göre Sokrates\'in kaçmayı reddetmesinin temel nedeni aşağıdakilerden hangisidir?',
+    options: [
+      'Atina dışındaki şehirlerde yaşamanın çok daha tehlikeli ve zor olduğuna inanması',
+      'Yaşlılığından dolayı kaçış yolculuğunun fiziksel zorluklarına katlanmak istememesi',
+      'Hayatta kalmak uğruna inançlarından ve felsefi ilkelerinden vazgeçmeyi onursuzluk olarak görmesi',
+      'Mahkemenin verdiği ölüm cezasının son anda halk tarafından affedileceğini umması'
+    ],
+    correct: 2,
+    explanation: 'Sokrates\'in "Bedenim kaçabilir ama ilkelerim kalırsa yaşamanın ne anlamı var?" sözü, inançlarından taviz vermek yerine onurlu bir ölümü seçtiğini açıkça göstermektedir.'
+  },
+  {
+    title: 'Gutenberg ve Matbaa Devrimi',
+    passage: '15. yüzyıla kadar Avrupa\'da kitaplar rahipler tarafından elle yazılıyordu ve sadece çok zenginlerin ulaşabildiği nadide lükslerdi. Johannes Gutenberg, hareketli metal harflerle çalışan matbaayı icat ettiğinde sadece bir makine yapmamış, Avrupa\'nın kaderini değiştirmişti. İncil\'in seri üretilip halkın kendi dilinde okumaya başlamasıyla kilisenin bilgi üzerindeki tekelini yıktı. Rönesans, Reform ve Bilimsel Devrim\'in yolu, Gutenberg\'in o gürültülü ve mürekkepli makinesinden çıkan kâğıtlarla döşenmiştir.',
+    questionStem: 'Yazar, Gutenberg\'in icadının asıl önemini hangi ifadeyle vurgulamaktadır?',
+    options: [
+      'Kâğıt üretim teknolojilerini geliştirerek ticari bir canlanma yaratmasıyla',
+      'Avrupa dillerinin dilbilgisi kurallarını standart bir hale getirmesiyle',
+      'Bilgiyi seçkinlerin tekelinden çıkarıp kitlelere ulaştırarak toplumsal ve zihinsel devrimleri tetiklemesiyle',
+      'İşsiz kalan rahiplere kilise dışında yeni istihdam alanları yaratmasıyla'
+    ],
+    correct: 2,
+    explanation: 'Matbaanın kilisenin bilgi tekelini yıktığı ve Rönesans/Reform gibi devrimlerin yolunu açtığı belirtilerek bilginin demokratikleşmesi vurgulanmıştır.'
+  },
+  {
+    title: 'Göbeklitepe: Tarihin Sıfır Noktası',
+    passage: 'Şanlıurfa yakınlarındaki Göbeklitepe keşfedilene kadar tarihçiler, insanoğlunun önce tarımı icat edip yerleşik hayata geçtiğini, sonra da ibadet etmek için tapınaklar inşa ettiğini sanıyordu. Ancak 12 bin yıllık bu devasa ve karmaşık tapınak kompleksi, inşa edildiği dönemde insanların hala avcı-toplayıcı olduğunu kanıtladı. T sütunlara kazınmış semboller, insanların yerleşik hayata geçmesinin asıl sebebinin tarım değil, inançları etrafında toplanma ve devasa tapınaklar inşa etme güdüsü olduğunu gösterdi. Göbeklitepe, bildiğimiz tarih kitaplarının ilk sayfasını kökünden değiştirmiştir.',
+    questionStem: 'Göbeklitepe\'nin keşfinin tarih bilimi üzerindeki en büyük etkisi nedir?',
+    options: [
+      'Anadolu\'nun dünyanın en eski tarım merkezi olduğunu kesin olarak ispatlaması',
+      'Avcı-toplayıcı insanların mimari yapılar inşa edemeyeceği teorisini güçlendirmesi',
+      'İnsanoğlunun yerleşik hayata geçişinde tarımın değil, inanç ve tapınak inşa etme motivasyonunun öncelikli olduğunu kanıtlaması',
+      'T sütunların dünyadaki ilk yazılı metinler olduğunu ortaya çıkarması'
+    ],
+    correct: 2,
+    explanation: 'Parçada Göbeklitepe\'nin, insanların önce tarımı bulduğu tezini çürüterek, yerleşik hayatın asıl sebebinin inanç ve tapınak inşası olduğunu gösterdiği ifade edilmiştir.'
+  },
+  {
+    title: 'Marie Curie\'nin Fedakârlığı',
+    passage: 'Radyoaktivite üzerine yaptığı çalışmalarla iki farklı alanda Nobel Ödülü kazanan ilk insan olan Marie Curie, bilime olan tutkusunun bedelini en ağır şekilde ödemiştir. Radyum elementini keşfetmek için yıllarca yalıtımsız laboratuvarlarda, önlüksüz bir şekilde radyoaktif maddelerle çalıştı. Not defterleri bugün bile o kadar radyasyon yaymaktadır ki, ancak kurşun kaplı kasalarda saklanabilmekte ve özel giysilerle incelenebilmektedir. Marie Curie\'nin hayatı, bilimsel ilerlemenin bazen kişisel sağlığın ve varlığın sessizce feda edilmesiyle mümkün olduğunun en asil kanıtıdır.',
+    questionStem: 'Bu metinden Marie Curie ile ilgili çıkarılabilecek en kapsamlı yargı aşağıdakilerden hangisidir?',
+    options: [
+      'Çalışmalarının tehlikelerini önceden fark edemediği için kazara hastalandığı',
+      'İnsanlığın bilgi birikimini ileriye taşımak uğruna kendi sağlığını ve hayatını bilinçli ve adanmış bir şekilde feda ettiği',
+      'Nobel ödülünü aldıktan sonra laboratuvar çalışmalarını tamamen bıraktığı',
+      'Bilim dünyasında kadınların desteklenmesi için kampanyalar yürüttüğü'
+    ],
+    correct: 1,
+    explanation: 'Kendi not defterlerinin bile hala radyasyon yaydığı ve bilime tutkusu yüzünden sağlığını feda ettiği anlatılarak onun bilimsel adanmışlığı vurgulanmıştır.'
+  },
+  {
+    title: 'Nikola Tesla ve Alternatif Akım',
+    passage: 'Günümüzde kullandığımız elektrik şebekelerinin temelini atan Nikola Tesla, zihni yüzyıllar ötesinde yaşayan bir dâhiydi. Ancak onun en büyük zayıflığı, bilimsel vizyonunu ticari bir kâra dönüştürememesiydi. Thomas Edison gibi pratik tüccarların aksine Tesla, elektriği kablosuz olarak tüm dünyaya bedava dağıtmayı hayal ediyordu. Yatırımcılar bu fikirden kâr edemeyeceklerini anladıklarında desteklerini çektiler. Hayatının son yıllarını borç içinde, otel odalarında güvercinleri besleyerek geçiren Tesla\'nın hikâyesi, vahşi kapitalizmin saf dehayla nasıl acımasızca alay ettiğinin özetidir.',
+    questionStem: 'Parçada Nikola Tesla\'nın başarısızlığının (veya yalnızlığının) temel nedeni olarak ne gösterilmektedir?',
+    options: [
+      'Geliştirdiği teknolojilerin dönemine göre çok ilkel ve yetersiz kalması',
+      'Diğer bilim insanlarının onun icatlarını kıskanarak ona engel olmaları',
+      'Bilimsel ideallerini ve insanlığa fayda sağlama vizyonunu, dönemin ticari ve kapitalist çıkarlarına uyarlayamaması',
+      'İletişim becerilerinin zayıf olması nedeniyle destekçilerini ikna edememesi'
+    ],
+    correct: 2,
+    explanation: 'Elektriği bedava dağıtma hayali nedeniyle yatırımcıların desteğini çekmesi ve Tesla\'nın ticari kâr güdememesi (kapitalizme yenilmesi) temel neden olarak verilmiştir.'
+  },
+  {
+    title: 'Kadeş: Tarihin İlk Barışı',
+    passage: 'MÖ 1274 yılında Mısır Firavunu II. Ramses ile Hitit Kralı Muvatalli arasında gerçekleşen Kadeş Savaşı, binlerce savaş arabasının çarpıştığı antik çağın en büyük meydan muharebelerinden biriydi. Ancak bu savaşın asıl önemi kanlı çarpışmalarda değil, savaşın ardından gümüş tabletlere kazınan Kadeş Antlaşması\'nda yatar. Tarafların birbirine üstünlük kuramaması sonucu imzalanan bu belge, tarihte bilinen en eski "eşitlik ilkesine dayalı" yazılı barış antlaşmasıdır. Kadeş, savaşların sadece kılıçlarla kazanılmadığını, diplomasinin de en az askerlik kadar hayati bir devlet sanatı olduğunu kanıtlar.',
+    questionStem: 'Kadeş Antlaşması\'nın dünya tarihindeki özgünlüğü ve önemi nedir?',
+    options: [
+      'Mısır İmparatorluğu\'nun Hititler üzerindeki kesin egemenliğini tescillemesi',
+      'Kâğıt üzerine yazılmış ilk diplomatik metin olma özelliğini taşıması',
+      'Tarafların birbirini yok edemediği bir ortamda diplomasi ve eşitlik ilkesiyle oluşturulan tarihin ilk yazılı barış antlaşması olması',
+      'Savaş arabalarının kullanımını uluslararası alanda yasaklayan ilk belge olması'
+    ],
+    correct: 2,
+    explanation: 'Metinde Kadeş\'in asıl öneminin, eşitlik ilkesine dayalı tarihin en eski yazılı barış antlaşması ve diplomasinin gücü olduğu belirtilmiştir.'
+  },
+  {
+    title: 'Hannibal ve Alp Dağları',
+    passage: 'MÖ 218 yılında Kartacalı komutan Hannibal, Roma\'ya saldırmak için kimsenin aklına gelmeyecek bir rota seçti: Devasa ordusu ve savaş filleriyle birlikte, aşılmaz denilen karlı Alp Dağları\'nı geçmek. Buzlu uçurumlar, dondurucu soğuklar ve dağ kabilelerinin saldırıları ordusunun yarısını yok etti. Ancak İtalya\'ya inmeyi başardığında, Romalılar karşılarında o karlı zirvelerden inen askerleri ve filleri görünce psikolojik olarak darmadağın oldular. Hannibal\'ın bu hamlesi, stratejide sürpriz unsurunun ve imkânsızı denemenin, düşmanın kılıcından bile daha keskin bir silah olduğunu gösterir.',
+    questionStem: 'Hannibal\'ın Alp Dağları\'nı geçme stratejisinin Roma ordusu üzerindeki asıl etkisi nedir?',
+    options: [
+      'Romalıların dağ savaşları konusunda eksik olduklarını fark etmelerini sağlaması',
+      'Savaş filleri sayesinde Roma ordusunun asker sayısını kolayca eşitlemesi',
+      'Aşılmaz denilen bir engelin aşılarak gelinmesiyle Roma ordusunda derin bir psikolojik yıkım (sürpriz ve şok etkisi) yaratması',
+      'Romalıların kendi topraklarında savaşmanın avantajlarını sonuna kadar kullanmalarını engellemesi'
+    ],
+    correct: 2,
+    explanation: 'Aşılmaz denilen dağları filleriyle aşarak aniden karşılarına çıkmasının, Romalıları psikolojik olarak darmadağın ettiği (sürpriz unsurunun etkisi) vurgulanmıştır.'
+  },
+  {
+    title: 'Rosalind Franklin\'in Çalınan Keşfi',
+    passage: 'Bugün DNA\'nın çift sarmallı yapısını keşfedenler olarak James Watson ve Francis Crick bilinir ve bu keşifleriyle Nobel Ödülü almışlardır. Ancak bu keşfin arkasındaki asıl mimar, X-ışını kristalografisi ile DNA\'nın o meşhur "Fotoğraf 51" adlı yapısını görüntüleyen Rosalind Franklin\'dir. Franklin\'in çalışması, onun izni ve haberi olmadan Watson ve Crick\'e gösterilmiş ve teorilerini kurmaları sağlanmıştır. Kansere yenik düşerek genç yaşta ölen Franklin, yaşamı boyunca hakkı olan saygıyı görememiştir. Bu olay, bilim tarihinin bazen kimin bulduğuyla değil, kimin sesi daha gür çıkıp sahiplendiğiyle yazıldığının kanıtıdır.',
+    questionStem: 'Parçaya göre Rosalind Franklin ile ilgili vurgulanan adaletsizlik nedir?',
+    options: [
+      'Yaptığı keşfin önemini kavrayamayıp çalışmalarını yarıda bırakması',
+      'Nobel ödülünü sadece kadın olduğu için kasıtlı olarak reddetmesi',
+      'DNA yapısını aydınlatan asıl görsel kanıtı bulmasına rağmen, çalışmasının izinsiz kullanılması ve bilimsel başarısının başkalarına mal edilmesi',
+      'Çalışmalarında kullandığı X-ışınlarının sağlığını bozması konusunda uyarılmaması'
+    ],
+    correct: 2,
+    explanation: 'Franklin\'in "Fotoğraf 51" ile asıl görsel kanıtı bulmasına rağmen çalışmasının ondan habersiz alınıp ödülün başkalarına (Watson ve Crick) verilmesi adaletsizliğin özüdür.'
+  },
+  {
+    title: 'Kristof Kolomb\'un Yanılgısı',
+    passage: '1492 yılında Kristof Kolomb, sürekli batıya giderek zenginliklerle dolu Hindistan\'a ulaşacağını iddia edip yola çıktığında matematiksel olarak büyük bir hata yapmıştı; dünyanın çevresini olduğundan çok daha küçük hesaplamıştı. Eğer Karayipler\'deki adalara çarpmasaydı, mürettebatı erzak yetersizliğinden okyanusun ortasında ölecekti. Ölene kadar yeni bir kıta bulduğunu kabul etmeyen ve orayı Asya sanan Kolomb\'un hikâyesi oldukça ironiktir. Bazen insanlık tarihindeki en büyük keşifler, kusursuz bir planlamanın değil, devasa bir yanılgının ve kör bir şansın eseri olabilir.',
+    questionStem: 'Kolomb\'un Amerika kıtasını keşif süreciyle ilgili yazarın asıl anlatmak istediği nedir?',
+    options: [
+      'Denizcilik tecrübesinin matematiksel hesaplamalardan daha değerli olduğu',
+      'Coğrafi keşiflerin her zaman hükümdarların zorlamasıyla gerçekleştiği',
+      'Büyük tarihi dönüm noktalarının bazen doğru hesapların değil, tamamen hatalı öngörülerin ve tesadüflerin bir sonucu olarak ortaya çıkabildiği',
+      'Yeni kıtalara ulaşmanın tek yolunun sürekli aynı yöne gitmek olduğu'
+    ],
+    correct: 2,
+    explanation: 'Dünyayı küçük hesaplaması (matematiksel hata) ve ölene dek Asya sanması, en büyük keşiflerin bazen kusursuz plan değil, devasa bir yanılgı ve şans eseri olduğunu kanıtlar.'
+  },
+  {
+    title: 'Büyük Londra Yangını (1666)',
+    passage: '1666 yılında bir fırıncı dükkânında başlayan küçük bir kıvılcım, ahşap evlerin iç içe geçtiği ve sokakların çöp dolu olduğu Orta Çağ Londra\'sını günlerce kül etti. Şehrin %80\'inden fazlası harabeye döndü, ancak bu devasa felaket aynı zamanda şehrin kurtuluşu oldu. Yangın, şehri yıllardır kırıp geçiren veba salgınını taşıyan fareleri ve pireleri de yok etmişti. Ayrıca yeniden inşa sürecinde tuğla ve taş binalar zorunlu kılındı, sokaklar genişletildi. Büyük Londra Yangını, felaketlerin bazen çürümüş eski yapıları temizlemek ve modern bir gelecek inşa etmek için acımasız ama gerekli bir alev olduğunu gösterir.',
+    questionStem: 'Parçaya göre Büyük Londra Yangını\'nın şehir üzerindeki "olumlu" etkileri arasında hangisi yer almaz?',
+    options: [
+      'Şehrin altyapısının ve mimarisinin daha modern ve güvenli (tuğla/taş) hale getirilmesi',
+      'Dar sokakların genişletilerek olası yeni yangınlara karşı tedbir alınması',
+      'Yangının, vebaya neden olan canlıları yok ederek salgının bitmesine yardımcı olması',
+      'Ahşap bina üretiminde kullanılan ormanların kesilmesinin tamamen yasaklanması'
+    ],
+    correct: 3,
+    explanation: 'Ormanların kesilmesinin yasaklandığına dair metinde hiçbir bilgi yoktur. Diğer şıklar yangının olumlu sonuçları olarak paragrafta geçmektedir.'
+  },
+  {
+    title: 'Mimar Sinan\'ın Bekleyişi',
+    passage: 'Kanuni Sultan Süleyman, kendi adına yaptıracağı o muazzam Süleymaniye Camii\'nin inşaatı sırasında Mimar Sinan\'ın temelleri atıp aylarca hiçbir şey yapmadan beklemesine çok sinirlenmiştir. Hatta dedikodular, Sinan\'ın aklını yitirdiğini söylüyordu. Oysa büyük usta, devasa kubbenin ve minarelerin ağırlığını taşıyacak olan temelin oturmasını, zeminin sıkışmasını bekliyordu. Sinan\'ın o sabırlı bekleyişi sayesinde Süleymaniye, İstanbul\'daki sayısız depreme rağmen yüzyıllardır ayakta kalmıştır. Gerçek kalıcılık, hızlı yükselmekte değil; görünmeyen temele ne kadar sabır ve zaman yatırıldığında gizlidir.',
+    questionStem: 'Mimar Sinan\'ın Süleymaniye Camii inşasındaki tutumu hangi kavramla en iyi açıklanır?',
+    options: [
+      'Gelenekçilik ve estetik kaygı',
+      'Acelecilik ve hırs',
+      'Sabır, öngörü ve sağlamlık (bilimsellik)',
+      'İtaat ve tevazu'
+    ],
+    correct: 2,
+    explanation: 'Temelin oturması için Padişahın öfkesine rağmen aylarca beklemesi, onun sabrını, öngörüsünü ve yapının sağlamlığına verdiği bilimsel önemi gösterir.'
+  },
+  {
+    title: 'Leif Erikson ve Unutulan Keşif',
+    passage: 'Tarih kitapları Amerika\'yı keşfeden kişi olarak Kristof Kolomb\'u yazar. Oysa Kolomb\'dan tam 500 yıl önce, İzlandalı bir Viking olan Leif Erikson ve mürettebatı Kuzey Amerika (Kanada) kıyılarına ulaşmış ve orada "Vinland" adını verdikleri bir yerleşim kurmuşlardı. Ancak Vikinglerin bu keşfi Avrupa\'nın geri kalanında bir yankı uyandırmadı, yazılı kültüre güçlü bir şekilde aktarılmadı ve ticari bir sömürü ağına dönüşmedi. Bu nedenle unutulup gitti. Tarih her zaman ilk yapanları değil; yaptığı işi dünyaya en gürültülü şekilde duyuranları ve sistemi kendi lehine kullananları hatırlar.',
+    questionStem: 'Yazar Leif Erikson örneğinden yola çıkarak tarih bilimiyle ilgili hangi eleştiriyi yapmaktadır?',
+    options: [
+      'Tarihin her zaman yazılı belgelere değil, efsanelere dayanarak yazıldığını',
+      'Bir başarının tarihe mal olması için sadece ilk olmanın yetmediğini, bunun geniş kitlelere duyurulup ticari/siyasi bir etki yaratması gerektiğini',
+      'Kuzeyli toplumların denizcilik başarılarının kasıtlı olarak tarih kitaplarından silindiğini',
+      'Kolomb\'un keşiflerinin abartıldığı kadar büyük bir etki yaratmadığını'
+    ],
+    correct: 1,
+    explanation: 'Leif Erikson 500 yıl önce keşfetmesine rağmen tarih onu değil Kolomb\'u hatırlar. Çünkü başarının dünyaya duyurulması ve etki (ticari/siyasi) yaratması gerektiği vurgulanmıştır.'
+  },
+  {
+    title: 'Hindenburg Felaketi',
+    passage: '1937 yılında Nazi Almanyasının gururu olan devasa zeplin Hindenburg, Amerika\'ya iniş yaparken saniyeler içinde alev topuna döndü. Bu kaza havacılık tarihindeki en ölümcül kaza değildi; ancak felaketi efsanevi kılan şey, olayın kameralar tarafından saniye saniye kaydedilmesi ve radyodan canlı olarak, hıçkırıklar içinde yayınlanmasıydı. Görüntülerin dünyada yarattığı şok o kadar büyüktü ki, bir zamanlar geleceğin seyahat aracı olarak görülen zeplin çağı o gün aniden sona erdi. Hindenburg olayı, medyanın ve görsel şokun, insan algısını ve teknolojik ilerlemeyi tek bir günde nasıl bitirebileceğinin en canlı örneğidir.',
+    questionStem: 'Hindenburg zeplininin yanmasını tarihte bu kadar etkili kılan asıl sebep nedir?',
+    options: [
+      'Kazada çok sayıda sivil yolcunun ve önemli devlet adamının hayatını kaybetmesi',
+      'Zeplin teknolojisinin uçak teknolojisinden daha geride olduğunun matematiksel olarak kanıtlanması',
+      'Olayın görsel ve işitsel medya (kameralar/radyo) aracılığıyla tüm dünyaya anında ve dramatik bir şekilde aktarılması',
+      'Kullanılan yanıcı hidrojen gazının tüm rezervlerinin bu patlamayla tükenmesi'
+    ],
+    correct: 2,
+    explanation: 'Metne göre felaketi efsanevi kılan ve zeplin çağını bitiren asıl şey, olayın kameralar ve radyo aracılığıyla canlı ve dramatik bir şekilde kitlelere aktarılmasıdır.'
+  },
+  {
+    title: 'İbn-i Sina\'nın Kanun\'u',
+    passage: '11. yüzyılda yaşamış olan İslam âlimi İbn-i Sina (Avicenna), tıp, felsefe ve matematik alanlarında çağının çok ötesinde eserler verdi. En ünlü eseri "El-Kanun fi\'t-Tıbb" (Tıbbın Kanunu), sadece Doğu\'da kalmamış, Latinceye çevrilerek Avrupa üniversitelerinde tam 500 yıl boyunca temel tıp ders kitabı olarak okutulmuştur. Kendi coğrafyasının dışında bile bilime yön veren bu eser, bilginin dini, dili ve ırkı olmadığının; evrensel bir değer olarak insanlığın ortak karanlığını aydınlatan tek meşale olduğunun en güzel kanıtıdır.',
+    questionStem: 'İbn-i Sina\'nın eserinin Avrupa\'da 500 yıl okutulması aşağıdakilerden hangisinin göstergesidir?',
+    options: [
+      'Orta Çağ Avrupa\'sında tıp biliminin tamamen yasaklanmış olduğunun',
+      'İbn-i Sina\'nın hayatının büyük bir kısmını Avrupa üniversitelerinde geçirdiğinin',
+      'Bilimsel bilginin kültürel ve coğrafi sınırları aşarak evrensel bir kabul ve geçerlilik gördüğünün',
+      'Doğu tıbbının sadece bitkisel tedavi yöntemlerine dayandığının'
+    ],
+    correct: 2,
+    explanation: 'İslam âlimi olan İbn-i Sina\'nın eserinin Avrupa\'da 500 yıl okutulması, bilimin din, dil, ırk ayrımı tanımayan evrensel bir değer olduğunu kanıtlar.'
+  },
+  {
+    title: 'Kopernik ve Yıkılan Ego',
+    passage: 'Polonyalı astronom Nikolas Kopernik, ölümünden hemen önce yayınladığı kitabında Dünya\'nın evrenin merkezinde sabit durmadığını, aksine Güneş\'in etrafında döndüğünü iddia etti. O güne kadar insanoğlu, kendini Tanrı\'nın en özel yaratığı olarak evrenin merkezine koymuştu. Kopernik Devrimi, sadece astronomik bir keşif değil, aynı zamanda insanın o devasa egosuna indirilmiş ağır bir darbeydi. Uçsuz bucaksız evrenin merkezinde değil, sıradan bir yıldızın etrafında dolanan sıradan bir kayanın üzerinde olduğumuzu anlamak, insanlık için hem ürkütücü hem de özgürleştirici bir aydınlanmaydı.',
+    questionStem: 'Kopernik\'in keşfinin insanlar üzerindeki "psikolojik ve felsefi" etkisi parçada nasıl açıklanmaktadır?',
+    options: [
+      'Güneş\'in ısı ve ışık kaynağı olduğunu keşfetmenin insanlara güven vermesi',
+      'İnsanoğlunun evrenin merkezinde ve en önemli varlık olduğu inancını (egosunu) yıkarak evrendeki asıl sıradan konumunu göstermesi',
+      'Dünya dışı yaşamlara olan merakı artırarak uzay yolculuklarının başlamasına zemin hazırlaması',
+      'Kiliseye olan inancın artmasına ve dini dogmaların daha çok benimsenmesine neden olması'
+    ],
+    correct: 1,
+    explanation: 'Dünya\'nın evrenin merkezinde olmadığı gerçeğinin, insanın kendini evrenin merkezine koyan devasa egosuna indirilmiş bir darbe olduğu ve konumumuzun sıradanlığını gösterdiği vurgulanmıştır.'
+  },
+  {
+    title: 'Güney Kutbu Yarışı: Amundsen ve Scott',
+    passage: '1911 yılında Güney Kutbu\'na ilk ulaşan insan olmak için Norveçli Roald Amundsen ve İngiliz Robert Falcon Scott arasında kıyasıya bir yarış başladı. Scott, teknolojiye ve motorlu kızaklara güveniyordu ancak dondurucu soğukta motorlar bozuldu, atlar öldü. Amundsen ise kutup yerlilerinden (Eskimolardan) köpek kızaklarını ve hayvan kürklerini kullanmayı öğrenmiş, yolculuğu en ince detayına kadar planlamıştı. Amundsen zafere ulaşıp sağ salim dönerken, Scott ve ekibi donarak can verdi. Bu tarihi yarış, doğaya kibirle meydan okumak yerine ona saygı duyarak hazırlanmanın, hayatta kalmanın tek kuralı olduğunu gösterir.',
+    questionStem: 'Güney Kutbu yarışında Amundsen\'i başarıya, Scott\'ı ise ölüme götüren asıl fark nedir?',
+    options: [
+      'Scott\'ın yarışa çok daha geç başlaması nedeniyle kış şartlarına yakalanması',
+      'Amundsen\'in kibirden uzak durup yerel (doğaya uyumlu) yöntemleri öğrenerek titiz bir planlama yapması; Scott\'ın ise yeni teknolojiye aşırı ve yersiz güvenmesi',
+      'Norveçlilerin genetik olarak soğuğa İngilizlerden daha dayanıklı olması',
+      'İngiliz hükümetinin Scott\'a yeterli maddi desteği sağlamaması'
+    ],
+    correct: 1,
+    explanation: 'Amundsen\'in Eskimolardan (doğaya uygun yöntemler) öğrenerek plan yapması, Scott\'ın ise motorlu kızaklara (teknolojik kibir) güvenip hata yapması aralarındaki temel farktır.'
+  },
+  {
+    title: 'Frida Kahlo\'nun Acısı',
+    passage: 'Meksikalı ressam Frida Kahlo, henüz genç bir kızken geçirdiği korkunç trafik kazası sonucu hayatı boyunca omurgasında çelik korselerle, yatağa bağımlı ve dinmeyen fiziksel acılar içinde yaşamak zorunda kaldı. Ancak o, kaderine boyun eğip karanlık bir odaya kapanmak yerine, yatağının tavanına astırdığı bir ayna sayesinde kendini çizmeye başladı. "Kendi gerçekliğimi resmediyorum" diyen Frida, parçalanmış bedenini ve fırtınalı aşk acılarını o kadar canlı ve cesur renklere dönüştürdü ki, acıdan bir sanat şaheseri doğurdu. Onun hayatı, yıkımın ortasında bile insanın yaratıcı gücünün nasıl filizlenebileceğinin en renkli kanıtıdır.',
+    questionStem: 'Parçaya göre Frida Kahlo\'nun sanatının kaynağı ve özelliği aşağıdakilerden hangisidir?',
+    options: [
+      'Geleneksel Meksika kültürünün motiflerini tamamen reddederek Batı sanatına yönelmesi',
+      'Sağlıklı ve mutlu bir yaşam sürmenin insanı sanattan uzaklaştırdığını savunması',
+      'Geçirdiği büyük kaza ve yaşadığı fiziksel/ruhsal acıları, yaratıcı bir enerjiye dönüştürerek kendi gerçekliğini cesurca tuvale aktarması',
+      'Sadece rüyalarında gördüğü gerçeküstü (sürrealist) manzaraları resmetmesi'
+    ],
+    correct: 2,
+    explanation: 'Frida\'nın trafik kazası sonucu yaşadığı fiziksel acıları ve ruhsal sancıları yatağındaki ayna sayesinde canlı renklere dönüştürüp kendi gerçekliğini resmettiği anlatılmıştır.'
+  },
+  {
+    title: 'Piri Reis\'in Gizemli Haritası',
+    passage: 'Osmanlı denizcisi Piri Reis\'in 1513 yılında ceylan derisi üzerine çizdiği dünya haritası, günümüzde bile bilim insanlarını şaşkına çevirmeye devam etmektedir. O dönemde henüz keşfedilmemiş olan Güney Amerika kıyılarını inanılmaz bir doğrulukla göstermesinin yanı sıra, Antarktika kıtasını da buzullarla kaplanmadan önceki (milyonlarca yıl önceki) haliyle çizdiği iddia edilmektedir. Piri Reis bu haritayı, antik dönemden kalan kayıp haritaları birleştirerek çizdiğini belirtmiştir. Bu gizemli eser, insanoğlunun geçmişinde bizim bugün bildiğimizden çok daha ileri bir coğrafi bilginin var olmuş olabileceğine dair heyecan verici bir fısıltıdır.',
+    questionStem: 'Piri Reis haritasını günümüzde bile "gizemli ve şaşırtıcı" kılan temel etken nedir?',
+    options: [
+      'Haritanın o dönemde çok nadir bulunan ceylan derisi üzerine çizilmiş olması',
+      'Osmanlı İmparatorluğu\'nun denizcilikteki üstünlüğünü kanıtlayan ilk belge sayılması',
+      'Çizildiği dönemde henüz keşfedilmemiş yerleri ve Antarktika\'nın buzsuz halini son derece isabetli bir şekilde yansıtması',
+      'Haritanın bazı parçalarının hala okyanusun dibinde olduğunun düşünülmesi'
+    ],
+    correct: 2,
+    explanation: 'Metinde haritanın asıl gizeminin, 1513 yılında henüz bilinmeyen Güney Amerika kıyılarını ve Antarktika\'nın buzsuz halini inanılmaz doğrulukla göstermesi olduğu belirtilmiştir.'
+  },
+  {
+    title: 'Nelson Mandela ve Affetmek',
+    passage: 'Güney Afrika\'daki ırkçı Apartheid rejimine karşı mücadele ettiği için 27 yıl boyunca küçük bir hücrede esir tutulan Nelson Mandela, hapisten çıktığında intikam peşinde koşan öfkeli bir adam değildi. Ülkesinin ilk siyahi devlet başkanı seçildiğinde, kendisini yıllarca hapseden beyaz yöneticilerle barış masasına oturdu ve "Geçmişin acılarına takılıp kalırsak, geleceğin umudunu inşa edemeyiz" dedi. Mandela, bir ulusu kurtarmanın yolunun düşmanı yok etmekten değil, kendi içindeki nefreti yenip affetmekten geçtiğini göstererek adını tarihe altın harflerle yazdırdı.',
+    questionStem: 'Nelson Mandela\'nın yönetim felsefesini özetleyen en uygun ifade aşağıdakilerden hangisidir?',
+    options: [
+      'Güç elde edildiğinde geçmişte yapılan haksızlıkların bedelinin en ağır şekilde ödetilmesi',
+      'Toplumsal barışın ve geleceğin inşasının, intikam duygusundan arınarak uzlaşma ve affetme erdemiyle mümkün olması',
+      'Irk ayrımcılığının önüne geçmek için ülkedeki tüm farklı kültürlerin tek bir dil altında birleştirilmesi',
+      'Hapishanelerin toplumsal birer ıslah merkezine dönüştürülmesi için reformlar yapılması'
+    ],
+    correct: 1,
+    explanation: 'Mandela\'nın 27 yıl hapis yatmasına rağmen intikam yerine barış masasına oturması ve "nefreti yenip affetmenin" önemini vurgulaması, onun uzlaşmacı felsefesini gösterir.'
+  },
+  {
+    title: 'Terracotta Ordusu',
+    passage: 'MÖ 210 yılında ölen Çin\'in ilk İmparatoru Qin Shi Huang, ölümden öylesine korkuyordu ki, öteki dünyada kendisini koruması için topraktan, gerçek insan boyutlarında, yüz hatları birbirinden tamamen farklı 8 binden fazla asker, at ve savaş arabası yaptırdı. Yer altına gömülen bu "Terracotta Ordusu", binlerce yıl gizli kaldıktan sonra 1974\'te bir çiftçi tarafından tesadüfen bulundu. Bu devasa yeraltı ordusu, insanoğlunun ne kadar mutlak bir güce ve servete sahip olursa olsun, ölüm gerçeği karşısındaki o derin çaresizliğini ve ölümsüzlük arzusu için girdiği akılalmaz çabayı simgeler.',
+    questionStem: 'Yazarın "Terracotta Ordusu" üzerinden insan doğasına dair çıkardığı sonuç nedir?',
+    options: [
+      'Antik çağlardaki heykel sanatının günümüz teknolojisinden çok daha ileride olduğu',
+      'Askeri disiplinin öteki dünyada bile devam edeceğine inanıldığı',
+      'Mutlak güce sahip liderlerin bile ölüm korkusu karşısında aciz kaldığı ve ölümsüzlük arzusuyla mantık dışı işlere kalkışabildiği',
+      'Tarım işçilerinin (çiftçilerin) tarihi keşiflerde arkeologlardan daha şanslı olduğu'
+    ],
+    correct: 2,
+    explanation: 'İmparatorun öteki dünyada korunmak için binlerce asker yaptırması, ne kadar güçlü olursa olsun insanın ölüm karşısındaki çaresizliğini ve ölümsüzlük arzusunu yansıtır.'
+  }
+];
+
+export const tarihParagrafSorulari3: TarihParagrafQuestion[] = Array.from({ length: 50 }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_3[idx % PARAGRAPH_THEMES_3.length];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-tarih3-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
 // paragrafTests.ts dosyasının hata vermemesi için iki listeyi birleştirip eski adıyla dışa aktarıyoruz:
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari,
-  ...tarihParagrafSorulari2
+  ...tarihParagrafSorulari2,
+  ...tarihParagrafSorulari3
 ];
