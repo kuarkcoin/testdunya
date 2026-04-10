@@ -271,12 +271,285 @@ const PARAGRAPH_THEMES = [
   }
 ];
 
-export const sincityParagrafQuestions: SincityParagrafQuestion[] = Array.from({ length: 50 }, (_, idx) => {
+export interface TarihParagrafQuestion {
+  id: string;
+  subject: 'turkce'; // İstersen 'sosyal' olarak değiştirebilirsin
+  term: number;
+  prompt: string;
+  options: string[];
+  correct: number;
+  explanation: string;
+}
+
+const PARAGRAPH_THEMES = [
+  {
+    title: 'Galileo\'nun Yargılanması',
+    passage: 'Galileo Galilei, 1633 yılında Engizisyon mahkemesi karşısına çıkarıldığında, dünyanın Güneş etrafında döndüğünü savunduğu için sapkınlıkla suçlanıyordu. Yaşlı ve hasta olan bilim insanı, işkence tehdidi altında teorisini reddetmek zorunda kaldı. Ancak mahkeme salonundan çıkarken "Yine de dönüyor!" diye mırıldandığı rivayet edilir. Bu olay, dogmatik inançların bilimsel gerçeği bir süreliğine susturabilse de, hakikatin er ya da geç kendi yolunu bulacağını ve baskıyla yok edilemeyeceğini gösteren tarihi bir dönüm noktasıdır.',
+    questionStem: 'Bu parçada Galileo\'nun yaşadıkları üzerinden asıl anlatılmak istenen nedir?',
+    options: [
+      'Bilim insanlarının toplumsal kurallara her zaman uyması gerektiği',
+      'Baskıcı ve dogmatik otoritelerin, bilimsel gerçeklerin ortaya çıkmasını sonsuza dek engelleyemeyeceği',
+      'Gökbiliminin diğer bilim dallarına göre daha geç geliştiği',
+      'Engizisyon mahkemelerinin zamanla bilimsel çalışmaları desteklediği'
+    ],
+    correct: 1,
+    explanation: 'Galileo\'nun baskı altında teorisini reddetse de "Yine de dönüyor" demesi, gerçeğin baskıyla yok edilemeyeceğini ve eninde sonunda ortaya çıkacağını vurgular.'
+  },
+  {
+    title: 'Rosa Parks ve Otobüs Boykotu',
+    passage: '1955 yılında ABD\'nin Montgomery şehrinde, siyahi bir kadın olan Rosa Parks, otobüste beyaz bir yolcuya yer vermeyi reddettiği için tutuklandı. Bu sessiz ama kararlı sivil itaatsizlik eylemi, sadece bir otobüs koltuğu meselesi değildi; yıllardır biriken ırk ayrımcılığına karşı bardağı taşıran son damlaydı. Parks\'ın bu hareketi, Martin Luther King önderliğindeki devasa bir boykotu ateşledi ve sivil haklar hareketinin sembolü oldu. Bazen tarihin akışını değiştirmek için devrimci ordulara değil, sadece ayağa kalkmayı reddeden yorgun bir bedenin cesaretine ihtiyaç vardır.',
+    questionStem: 'Rosa Parks\'ın eylemiyle ilgili parçada vurgulanan temel düşünce aşağıdakilerden hangisidir?',
+    options: [
+      'Şehir içi ulaşım kurallarının yeniden düzenlenmesini sağladığı',
+      'Büyük toplumsal değişimlerin, şiddet içermeyen, küçük ama kararlı bireysel direnişlerle başlayabileceği',
+      'Irkçılığın sadece Amerika kıtasına özgü bir problem olduğu',
+      'Toplumsal hareketlerin her zaman karizmatik liderler tarafından başlatıldığı'
+    ],
+    correct: 1,
+    explanation: 'Rosa Parks\'ın sadece yerinden kalkmayı reddetmesiyle devasa bir sivil haklar hareketini başlatması, küçük ama kararlı bir direnişin büyük değişimler yaratabileceğini gösterir.'
+  },
+  {
+    title: 'Büyük İskender ve Gordion Düğümü',
+    passage: 'Antik çağ efsanelerine göre, Frigya başkenti Gordion\'da bir arabaya atılmış ve çözülmesi imkânsız olan karmaşık bir düğüm vardı. Kâhinin kehanetine göre bu düğümü çözen kişi tüm Asya\'nın hâkimi olacaktı. Birçok kişi yıllarca düğümü çözmeye çalışıp başarısız oldu. MÖ 333 yılında şehre gelen Büyük İskender, düğümü çözmek için uğraşmak yerine kılıcını çekip onu tek hamlede ortadan ikiye kesti. Bu olay, karmaşık ve içinden çıkılmaz gibi görünen sorunların, bazen kuralları yıkan basit, doğrudan ve cesur bir yaklaşımla çözülebileceğini gösterir.',
+    questionStem: 'Büyük İskender\'in Gordion Düğümü\'nü kesmesi, aşağıdakilerden hangisinin bir sembolü olarak değerlendirilebilir?',
+    options: [
+      'Geleneksel yöntemlere ve kurallara sıkı sıkıya bağlı kalmanın',
+      'Sorunlar karşısında sabırlı ve detaycı bir analiz yapmanın',
+      'Aşılmaz gibi görünen problemlerde kalıpların dışında, cesur ve kestirme çözümler üretmenin',
+      'Askeri gücün her zaman diplomatik zekâdan üstün olduğunun'
+    ],
+    correct: 2,
+    explanation: 'Düğümü geleneksel yollarla çözmek yerine kılıcıyla kesmesi, karmaşık problemlere karşı alışılmışın dışında (pratik ve cesur) çözümler üretmeyi simgeler.'
+  },
+  {
+    title: 'Bağdat\'ın Düşüşü',
+    passage: '1258 yılında Hülagü Han komutasındaki Moğol ordusu, o dönemin İslam ve bilim dünyasının kalbi olan Bağdat\'ı işgal etti. Yalnızca şehir yağmalanmadı; yüzyılların birikimini barındıran efsanevi kütüphane Beyt\'ül Hikme de yok edildi. Moğollar o kadar çok kitabı Dicle Nehri\'ne attılar ki, nehrin günlerce mürekkep renginde, simsiyah aktığı söylenir. Bu yıkım, sadece bir imparatorluğun çöküşü değil, aynı zamanda Doğu\'nun bilimsel ve kültürel altın çağının telafisi zor bir şekilde duraklamasıdır. Kültürel hafızanın yok edilmesi, bir medeniyete vurulabilecek en ölümcül darbedir.',
+    questionStem: 'Yazar, Bağdat\'ın işgali ve kitapların nehre atılması olayından nasıl bir sonuç çıkarmaktadır?',
+    options: [
+      'Savaşlarda en az can kaybının siviller arasında yaşandığı',
+      'Kültürel ve bilimsel hafızanın tahrip edilmesinin, medeniyetlerin çöküşündeki en ağır darbe olduğu',
+      'Moğolların bilimsel eserleri kendi ülkelerine taşıyarak korudukları',
+      'Bağdat\'ın sadece askeri bir merkez olduğu için hedef seçildiği'
+    ],
+    correct: 1,
+    explanation: 'Nehrin mürekkep akması ve kitapların yok edilmesinin "telafisi zor bir duraklama" olarak verilmesi, kültürel hafızanın yıkımının en ölümcül darbe olduğunu anlatır.'
+  },
+  {
+    title: 'Alan Turing ve Enigma',
+    passage: 'II. Dünya Savaşı sırasında Nazi Almanyası, "Enigma" adını verdikleri bir makine ile tüm askeri iletişimini kırılması imkânsız görünen bir şifreleme sistemiyle yürütüyordu. Ancak İngiliz matematikçi Alan Turing ve ekibi, bu şifreleri çözebilmek için bir başka makine (ilk bilgisayarlardan biri) icat etti. Enigma\'nın şifresinin kırılması, Müttefiklere savaşın gidişatını önceden bilme avantajı sağladı ve tarihçilere göre savaşı en az iki yıl kısaltarak milyonlarca insanın hayatını kurtardı. Savaşın asıl galibi cephedeki tanklar değil, karanlık bir odada çalışan parlak bir zekâydı.',
+    questionStem: 'Enigma makinesinin şifresinin kırılması olayının asıl önemi nedir?',
+    options: [
+      'Almanya\'nın teknolojik olarak İngiltere\'den geri olduğunu göstermesi',
+      'Bilgisayar teknolojisinin yalnızca askeri amaçlarla kullanılabileceğini kanıtlaması',
+      'Savaşların kaderinin sadece fiziksel güçle değil, teknolojik üstünlük ve zekâ ile belirlenebileceğini göstermesi',
+      'Matematik biliminin diğer tüm bilim dallarından daha önemli olduğunu ispatlaması'
+    ],
+    correct: 2,
+    explanation: 'Savaşın galibinin tanklar değil, karanlık bir odadaki parlak bir zekâ olduğu ifadesi, zekânın ve teknolojinin savaşların kaderini belirleyebileceğini gösterir.'
+  },
+  {
+    title: 'Berlin Duvarı\'nın Yıkılışı',
+    passage: 'Soğuk Savaş\'ın en somut sembolü olan Berlin Duvarı, 1961\'den 1989\'a kadar bir şehri, aileleri ve bir ulusu ikiye böldü. Betondan ve dikenli tellerden oluşan bu duvar, sadece Doğu ve Batı arasındaki ideolojik uçurumu değil, aynı zamanda insanların özgürlük arayışının nasıl hapsedilmeye çalışıldığını temsil ediyordu. 9 Kasım 1989\'da siyasi bir hata sonucu sınırların açılacağı duyurulduğunda, binlerce insan duvara akın etti ve balyozlarla duvarı kendi elleriyle yıktı. Bu olay, hiçbir fiziksel engelin, özgürleşmeye karar vermiş bir kitlenin iradesine karşı duramayacağının en güçlü kanıtıdır.',
+    questionStem: 'Berlin Duvarı\'nın yıkılışıyla ilgili parçada vurgulanan asıl düşünce aşağıdakilerden hangisidir?',
+    options: [
+      'Siyasi kararların her zaman toplumun faydasına sonuçlandığı',
+      'Fiziksel sınırların ve baskıcı yapıların, toplumların özgürlük iradesi karşısında dayanamayacağı',
+      'Almanya\'nın ekonomik olarak Avrupa\'nın en güçlü ülkesi haline geldiği',
+      'Soğuk Savaş dönemindeki teknolojik rekabetin uzay yarışını hızlandırdığı'
+    ],
+    correct: 1,
+    explanation: 'Binlerce insanın balyozlarla duvarı yıkması, hiçbir fiziksel engelin özgürleşmeye karar vermiş bir halk iradesine karşı duramayacağını vurgular.'
+  },
+  {
+    title: 'Boston Çay Partisi',
+    passage: '1773 yılında Amerika\'daki kolonistler, İngiltere\'nin kendilerinden temsil hakkı vermeksizin ağır vergiler almasına isyan etti. Gecenin karanlığında Kızılderili kılığına giren bir grup, Boston Limanı\'na demirlemiş olan İngiliz gemilerine sızarak tonlarca çayı denize döktü. "Temsil yoksa vergi de yok" sloganıyla alevlenen bu eylem, basit bir vandallık değil, Amerikan Bağımsızlık Savaşı\'nı tetikleyen ilk büyük başkaldırıydı. Bu olay, adil olmayan bir ekonomik düzenin, yönetilenlerde nasıl radikal bir uyanış yaratabileceğinin tarihsel bir örneğidir.',
+    questionStem: 'Boston Çay Partisi eyleminin temel gerekçesi ve sonucu parçada nasıl açıklanmıştır?',
+    options: [
+      'Yerli halkın haklarını korumak amacıyla yapılmış sembolik bir protestodur.',
+      'Kolonistlerin çay tüketimini azaltmak için başlattığı bir sağlık kampanyasıdır.',
+      'Temsil hakkı olmadan dayatılan haksız vergilere karşı çıkılmış ve bu durum bağımsızlık mücadelesini ateşlemiştir.',
+      'İngiliz gemilerinin limanları kirletmesine karşı çevreci bir tepki olarak doğmuştur.'
+    ],
+    correct: 2,
+    explanation: '"Temsil yoksa vergi de yok" sloganı eşliğinde yapılan eylemin, bağımsızlık savaşını tetikleyen ilk başkaldırı olduğu belirtilmiştir.'
+  },
+  {
+    title: 'Diyojen ve Büyük İskender',
+    passage: 'Antik Yunan\'da bir fıçının içinde yaşayan, dünya nimetlerini reddeden filozof Diyojen\'in şöhretini duyan Büyük İskender onu ziyarete gider. İskender, güneşlenen filozofa hürmetle yaklaşarak "Benden bir dileğin var mı?" diye sorar. Tüm Asya\'nın fatihi olan bu güçlü krala Diyojen\'in cevabı kısa ve sarsıcıdır: "Gölge etme, başka ihsan istemem." Bu tarihi diyalog, gerçek özgürlüğün ve iç huzurun, dış dünyadaki güçten, servetten ve iktidardan bağımsız olduğunu; en büyük otoritenin bile maddi arzulardan arınmış bir zihin karşısında aciz kalabileceğini gösterir.',
+    questionStem: 'Diyojen\'in Büyük İskender\'e verdiği cevapla asıl anlatmak istediği nedir?',
+    options: [
+      'Filozofların devlet yönetimine karışmaktan her zaman kaçındığı',
+      'Maddi güç ve iktidarın, dünyevi arzulardan arınmış bir zihin için hiçbir değer taşımadığı',
+      'Büyük İskender\'in sandığı kadar güçlü bir hükümdar olmadığı',
+      'Güneş ışığının insan sağlığı için her şeyden daha önemli olduğu'
+    ],
+    correct: 1,
+    explanation: 'Asya\'nın fatihine "Gölge etme" diyen Diyojen, gerçek özgürlüğün güce veya servete bağlı olmadığını, bunlardan arınmış bir zihnin her şeyden üstün olduğunu ifade eder.'
+  },
+  {
+    title: 'Magna Carta',
+    passage: '1215 yılında İngiltere\'de Kral Yurtsuz John, soyluların baskısına dayanamayarak Magna Carta (Büyük Ferman) belgesini imzalamak zorunda kaldı. O güne kadar kralların yetkisi tanrısal ve sınırsız kabul edilirken, bu belgeyle kralın yetkileri ilk kez yazılı olarak kısıtlandı ve hukukun üstünlüğü ilkesi doğdu. Magna Carta, sadece dönemin İngiliz soylularına haklar veren bir metin değil; keyfi yönetime karşı hukukun, tek adam gücüne karşı anayasal düzenin zaferini müjdeleyen, modern demokrasilerin temel taşıdır.',
+    questionStem: 'Magna Carta\'nın insanlık tarihindeki asıl önemi aşağıdakilerden hangisidir?',
+    options: [
+      'Soyluların halk üzerindeki baskısını tamamen ortadan kaldırması',
+      'Mutlak ve sınırsız olan kraliyet gücünün hukukun üstünlüğü ilkesiyle sınırlandırılabileceğini göstermesi',
+      'İngiltere\'nin ekonomik olarak kalkınmasını sağlayan ticari haklar içermesi',
+      'Dini otoritelerin devlet yönetimindeki etkisini artırması'
+    ],
+    correct: 1,
+    explanation: 'Belgeyle birlikte kralların sınırsız yetkisinin ilk kez yazılı olarak kısıtlanması ve hukukun üstünlüğünün doğması, anayasal düzenin temel taşı olmasını sağlamıştır.'
+  },
+  {
+    title: 'Çiçek Hastalığı ve İnkalar',
+    passage: 'İspanyol fatih Francisco Pizarro, 16. yüzyılda küçük bir birlikle İnka İmparatorluğu\'na saldırdığında, bu devasa medeniyetin sadece çelik kılıçlar ve tüfeklerle yıkıldığı sanılır. Oysa İnkaların asıl katili, Avrupalıların yanlarında bilmeden getirdikleri görünmez bir silahtı: Çiçek hastalığı. Bağışıklık sistemleri bu yeni virüse tamamen yabancı olan yerli halk, savaş meydanından çok yataklarında kırıldı. İnkaların çöküşü, insanlık tarihinde biyolojik faktörlerin, en güçlü ordulardan bile daha yıkıcı bir fetih aracı olabildiğini trajik bir şekilde kanıtlar.',
+    questionStem: 'İnka İmparatorluğu\'nun çöküşüyle ilgili parçada asıl vurgulanan faktör nedir?',
+    options: [
+      'İspanyolların kullandığı ateşli silahların teknolojik üstünlüğü',
+      'İnka ordusunun savaş taktikleri konusunda yetersiz kalması',
+      'Avrupalıların taşıdığı yabancı hastalıkların (biyolojik etkenlerin), askeri güçten çok daha büyük bir yıkıma neden olması',
+      'İnkaların kendi iç savaşları yüzünden zayıf düşerek kolayca teslim olmaları'
+    ],
+    correct: 2,
+    explanation: 'İnkaların asıl katilinin çelik kılıçlar değil, bağışıklıklarının olmadığı çiçek hastalığı olması; biyolojik etkenlerin ordulardan daha yıkıcı olduğunu gösterir.'
+  },
+  {
+    title: 'Marco Polo\'nun Seyahatnamesi',
+    passage: 'Venedikli tüccar Marco Polo, 13. yüzyılda Asya\'nın derinliklerine, Kubilay Han\'ın sarayına kadar uzanan ve yıllar süren bir yolculuk yaptı. Döndüğünde hapishanede geçirdiği günlerde bu maceralarını yazıya döktü. Eserinde anlattığı kâğıt para, posta teşkilatı ve devasa kömür madenleri, o dönemki Avrupalılara birer peri masalı gibi geldi ve ona yalancı dediler. Ancak bu kitap, yıllar sonra Kristof Kolomb dâhil birçok kâşife ilham kaynağı oldu. Bir dönemin inanılmayan "yalanları", gelecek nesillerin dünyayı keşfetmesini sağlayan en değerli rehberlere dönüşebilir.',
+    questionStem: 'Marco Polo\'nun eseri ve yaşadıkları üzerinden ulaşılabilecek temel yargı nedir?',
+    options: [
+      'Tüccarların asıl amacının farklı kültürleri keşfetmek olduğu',
+      'Toplumların, kendi algı sınırlarını aşan yeni bilgilere başlangıçta direnç gösterse de, bu vizyonun geleceği şekillendirebileceği',
+      'Asya medeniyetinin teknolojik olarak Avrupa\'dan her zaman üstün olduğu',
+      'Seyahatnamelerin sadece abartılı kurgulardan ibaret olduğu'
+    ],
+    correct: 1,
+    explanation: 'Anlattıklarına başlangıçta "yalan" denmesi (direnç gösterilmesi) ancak sonradan Kolomb gibi kâşiflere ilham olması, bu bilgilerin geleceği şekillendirebileceğini gösterir.'
+  },
+  {
+    title: 'Bastille Baskını',
+    passage: '14 Temmuz 1789\'da öfkeli Paris halkı, kraliyetin mutlakiyetçi baskısının sembolü olan Bastille Hapishanesi\'ni bastı. İçeride sadece yedi mahkûm bulunmasına rağmen bu olay askeri değil, psikolojik bir zaferdi. Halk, yüzyıllardır korktuğu ve boyun eğdiği monarşinin aşılmaz kalesini yıkarak, egemenliğin asıl sahibinin kendisi olduğunu tüm Avrupa\'ya ilan etti. Bastille baskını, fiziksel bir binanın yıkılışından çok, korku duvarlarının ve feodal ayrıcalıkların insan zihninde yıkılışının sembolüdür.',
+    questionStem: 'Bastille baskınının Fransız Devrimi\'ndeki asıl rolü parçada nasıl açıklanmıştır?',
+    options: [
+      'Hapishanedeki binlerce siyasi suçlunun serbest bırakılmasıyla askeri gücün artması',
+      'Monarşinin baskıcı sembolünün yıkılmasıyla halkın kendi gücünü fark edip korku eşiğini aşması',
+      'Kraliyet ailesinin hapishaneye saklanmasını engellemek için stratejik bir adım olması',
+      'Avrupa\'daki diğer ülkelerden askeri destek alınmasını sağlaması'
+    ],
+    correct: 1,
+    explanation: 'Olayın askeri değil psikolojik bir zafer olduğu, halkın korktuğu kalesini yıkarak korku duvarlarını aştığı ve egemenliği eline aldığı belirtilmiştir.'
+  },
+  {
+    title: 'Sanayi Devrimi ve Çocuk İşçiler',
+    passage: '18. yüzyılda İngiltere\'de başlayan Sanayi Devrimi, insanlık için üretimi artırıp modern dünyanın kapılarını araladı. Ancak bu madalyonun karanlık bir yüzü vardı: Çocuk işçiler. Fabrikaların dar makinelerinin arasına girebildikleri ve daha ucuza çalıştırıldıkları için binlerce çocuk, eğitim hakkından mahrum kalarak tehlikeli ve acımasız koşullarda köle gibi çalıştırıldı. Sanayileşmenin göklere yükselen o gri dumanı, aslında bir neslin çalınan çocukluğunun ve vahşi kapitalizmin sömürü üzerine kurulan acımasız temelinin bir göstergesiydi.',
+    questionStem: 'Yazar, Sanayi Devrimi\'ni değerlendirirken asıl olarak neyi eleştirmektedir?',
+    options: [
+      'Makinelerin insan gücünün yerini almasıyla işsizliğin artmasını',
+      'Teknolojik ilerleme ve ekonomik büyümenin, çocukların sömürülmesi gibi ağır bir insani bedel (etik dışı) üzerine inşa edilmesini',
+      'İngiltere\'nin bu devrimi diğer ülkelerle paylaşmakta gecikmesini',
+      'Kırsal kesimden şehirlere göçün hızlanmasıyla çarpık kentleşmenin başlamasını'
+    ],
+    correct: 1,
+    explanation: 'Sanayi devriminin üretimi artırmasına karşın (ekonomik büyüme), bunun çocukların köle gibi çalıştırılması ve eğitim haklarının çalınması (insani bedel) pahasına yapılmasını eleştirir.'
+  },
+  {
+    title: 'İspanyol Gribi Sansürü',
+    passage: 'Birinci Dünya Savaşı bitmek üzereyken ortaya çıkan İspanyol Gribi, savaşın kendisinden çok daha fazla can aldı. Savaşan ülkeler, askerlerin moralini bozmamak için basına sansür uyguladı ve salgını gizledi. Sansüre katılmayan tek ülke tarafsız İspanya olduğu için hastalık tarihe "İspanyol Gribi" olarak geçti. Cephelerdeki dar siperler ve kıtalararası asker hareketliliği, virüsün ölümcül bir hızla dünyaya yayılmasına neden oldu. Bu pandemi, savaşın yarattığı kaotik ortamın ve devletlerin gerçeği gizleme politikasının bir felaketi nasıl küresel bir kâbusa çevirdiğinin kanıtıdır.',
+    questionStem: 'İspanyol Gribi salgınının yıkıcı boyutlara ulaşmasında parçaya göre hangi faktör etkili olmuştur?',
+    options: [
+      'Veba hastalığından daha bulaşıcı bir mikrop türü olması',
+      'Savaş ortamının getirdiği hareketlilik ve devletlerin uyguladığı sansür (gerçeği gizleme) politikaları',
+      'İspanya\'nın hastalığı diğer ülkelere bilerek yayması',
+      'Savaş döneminde tıbbi ilaç üretiminin tamamen durdurulmuş olması'
+    ],
+    correct: 1,
+    explanation: 'Parçada devletlerin askerlerin moralini bozmamak için salgını gizlediği (sansür) ve asker hareketliliğinin hastalığı yaydığı vurgulanmıştır.'
+  },
+  {
+    title: 'Sümerler ve Yazının İcadı',
+    passage: 'Tarihte yazının icadı, şairlerin duygularını ifade etmesi veya kralların destanlar yazdırması amacıyla olmadı. Sümerler yazıyı, tapınaklara getirilen tahıl çuvallarının, hayvanların ve vergilerin kaydını tutmak için, tamamen ekonomik ve bürokratik bir ihtiyaçtan icat ettiler. Kil tabletler üzerine çizilen o ilk çivi yazısı işaretleri, aslında muhasebe kayıtlarıydı. İnsanlık tarihinin en büyük kültürel devrimi olan yazının kökeninde entelektüel bir arayış değil, karmaşıklaşan toplumsal düzenin yarattığı pragmatik bir zorunluluk yatar.',
+    questionStem: 'Yazının icadıyla ilgili parçada vurgulanan asıl düşünce nedir?',
+    options: [
+      'Edebi eserler yaratmak için bilinçli bir sanatsal çabayla ortaya çıktığı',
+      'Medeniyetlerin dini inançlarını gelecek nesillere aktarma isteğinden doğduğu',
+      'Gelişen ve karmaşıklaşan ekonomik ve idari hayatın (muhasebe) doğurduğu zorunlu ve pratik bir ihtiyaç sonucu bulunduğu',
+      'Sadece kralların ve rahiplerin kullanabildiği gizli bir şifreleme sistemi olduğu'
+    ],
+    correct: 2,
+    explanation: 'Yazının edebi veya entelektüel bir amaçla değil, tahıl çuvallarının kaydını tutmak gibi ekonomik/bürokratik bir zorunlulukla (pragmatik) bulunduğu anlatılır.'
+  },
+  {
+    title: 'Pearl Harbor Baskını',
+    passage: '7 Aralık 1941 sabahı Japon İmparatorluğu\'nun Hawaii\'deki Amerikan donanma üssü Pearl Harbor\'a düzenlediği ani hava saldırısı, savaş tarihinin en büyük stratejik kumarıydı. Japonya, Amerikan Pasifik Filosunu felç ederek Asya\'da rahatça yayılmayı hedeflemişti. Baskın kısa vadede başarılı olsa da, o güne kadar savaştan uzak duran ve "uyuyan bir dev" olan Amerika\'yı tam kalbinden öfkelendirerek İkinci Dünya Savaşı\'na aktif olarak girmesine neden oldu. Taktiksel bir zafer gibi görünen bu saldırı, Japonya\'nın kendi sonunu getiren stratejik bir intihardı.',
+    questionStem: 'Yazar, Pearl Harbor baskınını genel olarak nasıl değerlendirmektedir?',
+    options: [
+      'Amerikan istihbaratının tarihi bir başarısızlığı olarak',
+      'Kısa vadede askeri bir başarı sağlasa da uzun vadede ülkenin kendi yıkımını hazırlayan ölümcül bir stratejik hata olarak',
+      'Savaş uçaklarının gemilere karşı üstünlüğünü kanıtlayan bir teknoloji denemesi olarak',
+      'Japonya\'nın ekonomik krizden çıkmak için yaptığı zorunlu bir hamle olarak'
+    ],
+    correct: 1,
+    explanation: 'Baskının başta başarılı olduğu ancak uyuyan devi (Amerika\'yı) savaşa sokarak Japonya\'nın kendi sonunu getirdiği (stratejik intihar) belirtilmiştir.'
+  },
+  {
+    title: 'Çin Seddi',
+    passage: 'Dünyanın en büyük savunma projesi olan Çin Seddi, göçebe boyların (özellikle Hunların) saldırılarını engellemek amacıyla yapıldı. Milyonlarca işçinin hayatına mal olan binlerce kilometrelik bu duvar, fiziksel bir engel olmanın ötesinde bir anlam taşıyordu. Çin İmparatorluğu bu duvarla sadece düşmanlarını dışarıda bırakmıyor, aynı zamanda kendi halkını ve medeniyetini "barbar" olarak gördüğü dış dünyadan izole ediyordu. Bir savunma aracı olarak ne kadar işe yaradığı tartışılsa da Çin Seddi, içe kapanma ve değişime direnme psikolojisinin taştan bir anıtıdır.',
+    questionStem: 'Parçada Çin Seddi ile ilgili savunulan asıl görüş nedir?',
+    options: [
+      'Sadece askeri amaçlarla yapılmış kusursuz ve aşılamaz bir güvenlik kalkanı olduğu',
+      'Göçebe toplulukların yerleşik hayata geçmesini hızlandırdığı',
+      'Askeri bir savunma hattı olmasının yanı sıra, kültürel bir izolasyonun ve içe kapanma zihniyetinin sembolü olduğu',
+      'Dünya ticaret yollarının güvenliğini sağlamak için inşa edildiği'
+    ],
+    correct: 2,
+    explanation: 'Duvarın sadece düşmanları değil, dış dünyayı dışarıda bırakarak halkı izole ettiği ve içe kapanma zihniyetinin bir anıtı olduğu vurgulanmıştır.'
+  },
+  {
+    title: 'Giyotin',
+    passage: 'Fransız Devrimi sırasında Dr. Joseph Guillotin tarafından "insancıl ve eşitlikçi bir idam aracı" olarak önerilen giyotin, kısa sürede Terör Dönemi\'nin kanlı sembolü oldu. Eskiden idamlar kişinin soylu veya avam olmasına göre farklı ve genellikle acı verici şekillerde yapılırken, giyotin ölümü sınıf farkı gözetmeksizin herkes için standart ve saniyeler süren mekanik bir işleme dönüştürdü. Ancak bu soğuk mekanikleşme, adaleti değil; devletin adam öldürme işini bir fabrika bandı sıradanlığına ve duyarsızlığına indirgeyen dehşet verici bir verimliliği temsil ediyordu.',
+    questionStem: 'Yazar, giyotinin Fransız Devrimi\'ndeki rolünü nasıl yorumlamaktadır?',
+    options: [
+      'İdamları daha acısız hale getirerek insan haklarına katkı sağladığını',
+      'Sınıf eşitliği sağlama iddiasıyla ortaya çıkmasına rağmen, insan hayatını ve ölümü değersizleştiren sıradan ve mekanik bir şiddet aracına dönüştüğünü',
+      'Sadece soyluları cezalandırmak için kullanılan özel bir araç olduğunu',
+      'Devrim mahkemelerinin iş yükünü azaltarak daha adil kararlar verilmesini sağladığını'
+    ],
+    correct: 1,
+    explanation: 'Sınıf farkını kaldırma amacıyla gelse de, ölümü fabrika bandı sıradanlığına (mekanikleşmeye) indirgediği ve insan hayatını değersizleştirdiği savunulmuştur.'
+  },
+  {
+    title: 'Spartalı Leonidas ve Termopylae',
+    passage: 'MÖ 480 yılında Kral Leonidas komutasındaki 300 Spartalı asker, devasa Pers ordusunu Termopylae Geçidi\'nde günlerce durdurdu. Sayıca çok az olmalarına rağmen coğrafyanın avantajını ve askeri disiplinlerini kullanarak yenilmez denilen Persleri püskürttüler. İhanet sonucu kuşatılıp hepsi ölene dek savaşsalar da, bu direniş tüm Yunan şehir devletlerine zaman kazandırdı ve cesaret verdi. Termopylae sadece bir savaş değil; teslimiyetin mantıklı göründüğü anlarda bile, onur ve vatan için gösterilen sarsılmaz fedakârlığın tarihteki en epik destanıdır.',
+    questionStem: 'Termopylae Muharebesi\'nin tarihe geçen asıl önemi parçada nasıl ifade edilmiştir?',
+    options: [
+      'Yunanlıların coğrafya bilgisinin Perslerden daha iyi olduğunu göstermesi',
+      'Askeri disiplinin silah teknolojisinden daha önemli olduğunu kanıtlaması',
+      'Kesin yenilgi anında bile gösterilen cesaretin ve fedakârlığın, bütün bir milletin moralini ve kaderini değiştirebilecek efsanevi bir direniş olması',
+      'Savaşlarda casusların ve ihanetlerin belirleyici rol oynadığını ortaya koyması'
+    ],
+    correct: 2,
+    explanation: 'Kuşatılıp ölmelerine rağmen (kesin yenilgi anı) gösterilen sarsılmaz direnişin diğer Yunan şehirlerine zaman ve cesaret kazandırdığı vurgulanmıştır.'
+  },
+  {
+    title: 'Macellan Bulutları',
+    passage: 'İlk denizciler yön bulmak için gökyüzüne bakmak zorundaydı. Macellan güney yarımküreye yelken açtığında, Avrupalıların o güne kadar hiç görmediği iki puslu galaksi fark etti. Günümüzde "Macellan Bulutları" olarak bilinen bu cüce galaksiler, aslında denizcilerin yolunu aydınlatmaktan çok daha fazlasını yaptı; insanoğlunun evrenin sınırlarına dair dar algısını yıktı. Bilinmeyen sularda cesaretle ilerleyen denizciler, sadece yeni kıtalar değil, kafalarını kaldırıp gökyüzüne baktıklarında yepyeni evrenler de keşfettiler. Keşif, sadece ileriye değil, aynı zamanda yukarıya bakabilmektir.',
+    questionStem: 'Parçada "Macellan Bulutları"nın keşfi üzerinden verilen asıl mesaj nedir?',
+    options: [
+      'Denizciliğin astronomi biliminden daha hızlı geliştiği',
+      'Karanlıkta yön bulmanın tek yolunun yıldızları izlemek olduğu',
+      'Cesaretle yapılan keşif yolculuklarının, insanın sadece coğrafi değil, evrensel (vizyoner) algısını da genişlettiği',
+      'Güney yarımkürenin astronomik gözlemler için kuzeyden daha elverişli olduğu'
+    ],
+    correct: 2,
+    explanation: 'Denizcilerin yeni galaksiler bularak evrensel sınırları yıktığı, yani keşfin sadece coğrafi (ileri) değil, vizyoner (yukarı/evrensel) bir algıyı da genişlettiği belirtilmiştir.'
+  }
+];
+
+export const tarihParagrafSorulari: TarihParagrafQuestion[] = Array.from({ length: 50 }, (_, idx) => {
   const theme = PARAGRAPH_THEMES[idx % PARAGRAPH_THEMES.length];
   const qNo = idx + 1;
 
   return {
-    id: `sincity-paragraf-${qNo}`,
+    id: `turkce-tarih-p-${qNo}`,
     subject: 'turkce',
     term: 2,
     prompt: `${theme.passage}\n\n${theme.questionStem}`,
