@@ -559,3 +559,8 @@ export const tarihParagrafSorulari2: TarihParagrafQuestion[] = Array.from({ leng
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
+// paragrafTests.ts dosyasının hata vermemesi için iki listeyi birleştirip eski adıyla dışa aktarıyoruz:
+export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
+  ...tarihParagrafSorulari,
+  ...tarihParagrafSorulari2
+];
