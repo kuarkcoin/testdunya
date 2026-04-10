@@ -281,7 +281,7 @@ export interface TarihParagrafQuestion {
   explanation: string;
 }
 
-const PARAGRAPH_THEMES = [
+const PARAGRAPH_THEMES_2 = [
   {
     title: 'Galileo\'nun Yargılanması',
     passage: 'Galileo Galilei, 1633 yılında Engizisyon mahkemesi karşısına çıkarıldığında, dünyanın Güneş etrafında döndüğünü savunduğu için sapkınlıkla suçlanıyordu. Yaşlı ve hasta olan bilim insanı, işkence tehdidi altında teorisini reddetmek zorunda kaldı. Ancak mahkeme salonundan çıkarken "Yine de dönüyor!" diye mırıldandığı rivayet edilir. Bu olay, dogmatik inançların bilimsel gerçeği bir süreliğine susturabilse de, hakikatin er ya da geç kendi yolunu bulacağını ve baskıyla yok edilemeyeceğini gösteren tarihi bir dönüm noktasıdır.',
@@ -544,12 +544,13 @@ const PARAGRAPH_THEMES = [
   }
 ];
 
-export const tarihParagrafSorulari: TarihParagrafQuestion[] = Array.from({ length: 50 }, (_, idx) => {
-  const theme = PARAGRAPH_THEMES[idx % PARAGRAPH_THEMES.length];
+// ÜRETİCİ MAKİNENİN İSMİNİ DE 2 OLARAK GÜNCELLEDİK:
+export const tarihParagrafSorulari2: TarihParagrafQuestion[] = Array.from({ length: 50 }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_2[idx % PARAGRAPH_THEMES_2.length];
   const qNo = idx + 1;
 
   return {
-    id: `turkce-tarih-p-${qNo}`,
+    id: `turkce-tarih2-p-${qNo}`,
     subject: 'turkce',
     term: 2,
     prompt: `${theme.passage}\n\n${theme.questionStem}`,
