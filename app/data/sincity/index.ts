@@ -270,7 +270,21 @@ const PARAGRAPH_THEMES = [
     explanation: 'Silahlanma yarışı (rekabet) ile başlayan bu olayın, o an televizyon başındaki herkesi sınırları kaldırarak "insan" olma gururunda birleştirmesi (evrensel ilham) vurgulanmıştır.'
   }
 ];
+// İŞTE EKSİK OLAN 1. MAKİNE BURADA:
+export const tarihParagrafSorulari: SincityParagrafQuestion[] = Array.from({ length: 50 }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES[idx % PARAGRAPH_THEMES.length];
+  const qNo = idx + 1;
 
+  return {
+    id: `turkce-tarih-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
 export interface TarihParagrafQuestion {
   id: string;
   subject: 'turkce'; // İstersen 'sosyal' olarak değiştirebilirsin
