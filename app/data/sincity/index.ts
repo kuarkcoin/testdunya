@@ -1406,6 +1406,283 @@ export const tarihParagrafSorulari5: TarihParagrafQuestion[] = Array.from({ leng
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
+const PARAGRAPH_THEMES_6 = [
+  {
+    title: 'Phineas Gage ve Beynin Sırrı',
+    passage: '1848 yılında bir demiryolu işçisi olan Phineas Gage, bir patlama sonucu kafatasını delip geçen metrelerce uzunluktaki demir bir çubukla yaralandı. Herkes onun ölmesini beklerken, o mucizevi bir şekilde iyileşti ve ayağa kalktı. Ancak fiziksel olarak sağlığına kavuşan Gage\'in kişiliği tamamen değişmişti. Eskiden kibar, çalışkan ve saygılı bir adamken; kazadan sonra küfürbaz, dürtüsel ve güvenilmez birine dönüştü. Gage\'in bu trajik hikâyesi, insan ruhunun ve karakterinin (ahlakın) kalpte veya soyut bir ruhta değil, beynin fiziksel kıvrımlarında (frontal lobda) gizli olduğunu kanıtlayan tıptaki en büyük dönüm noktalarından biridir.',
+    questionStem: 'Phineas Gage olayının tıp ve psikoloji tarihindeki asıl önemi nedir?',
+    options: [
+      'İnsanların demir ve metal zehirlenmelerine karşı sanılandan daha dirençli olduğunu göstermesi',
+      'Kişilik, ahlak ve karar verme gibi soyut kavramların beynin fiziksel yapısıyla (biyolojiyle) doğrudan bağlantılı olduğunu kanıtlaması',
+      'İş kazalarının önlenmesi için modern iş güvenliği yasalarının çıkarılmasını sağlaması',
+      'Tıbbi müdahale olmadan da ağır beyin hasarlarının zamanla kendiliğinden iyileşebileceğini ortaya koyması'
+    ],
+    correct: 1,
+    explanation: 'Çubuk beynini deldikten sonra Gage\'in kişiliğinin (ahlakının) tamamen değişmesi, insan karakterinin soyut bir ruh değil, beynin fiziksel bir ürünü olduğunu kanıtlamıştır.'
+  },
+  {
+    title: 'Vespasian ve İdrar Vergisi',
+    passage: 'Roma İmparatoru Vespasian, devletin tükenen hazinesini doldurmak için tarihin en ilginç vergilerinden birini koydu: Şehirdeki umumi tuvaletlerden toplanan idrardan alınan vergi (idrar o dönemde amonyak içerdiği için çamaşır yıkamakta ve dericilikte kullanılıyordu). Oğlu Titus bu durumu iğrenç bulup babasını eleştirdiğinde, Vespasian idrar vergisinden elde edilen bir altını oğlunun burnuna tutup o meşhur sözü söyledi: "Pecunia non olet" (Paranın kokusu yoktur). Bu tarihi anekdot, devletlerin ve kapitalist aklın gelir elde etmek söz konusu olduğunda ahlaki veya estetik değerleri nasıl kolayca bir kenara itebildiğinin en net (ve en kötü kokulu) simgesidir.',
+    questionStem: 'İmparator Vespasian\'ın "Paranın kokusu yoktur" sözüyle asıl vurgulamak istediği düşünce nedir?',
+    options: [
+      'Temizlik ve hijyenin Roma kültüründe paradan daha değersiz olduğu',
+      'Vergi adaletsizliğinin halk arasında her zaman büyük isyanlara neden olduğu',
+      'Ekonomik çıkar ve devletin gelir elde etmesi söz konusu olduğunda, o paranın kaynağının ahlaki veya estetik açıdan iğrenç olmasının önemsenmediği',
+      'Antik dönemde altının sahte olup olmadığını anlamak için koklama yönteminin kullanıldığı'
+    ],
+    correct: 2,
+    explanation: 'İdrardan alınan vergiye iğrenen oğluna "Paranın kokusu yoktur" demesi, paranın kaynağının (isterse iğrenç olsun) ekonomik çıkar karşısında önemsizleştiğini gösterir.'
+  },
+  {
+    title: 'Pergamon (Bergama) ve Parşömen',
+    passage: 'Antik çağda yazılı eserler, Mısır\'da üretilen papirüs kâğıtlarına yazılıyordu. İskenderiye Kütüphanesi ile rekabet halinde olan Anadolu\'daki Pergamon (Bergama) Kütüphanesi, Mısır kralını öylesine korkuttu ki, Mısır aniden Bergama\'ya papirüs ihracatını yasakladı (ambargo uyguladı). Bergamalılar bu kriz karşısında pes etmek yerine, koyun ve keçi derilerini özel bir işlemden geçirerek papirüsten çok daha dayanıklı, iki yüzüne de yazılabilen yeni bir kâğıt icat ettiler: "Pergamin" yani günümüzdeki adıyla Parşömen. Bu olay, tarihteki ambargo ve engellemelerin, yok oluşa değil; zekâyı tetikleyerek çok daha üstün yeniliklere (inovasyona) yol açabileceğinin efsanevi bir kanıtıdır.',
+    questionStem: 'Bergamalıların parşömeni icat etme süreci üzerinden ulaşılabilecek temel yargı aşağıdakilerden hangisidir?',
+    options: [
+      'Hayvansal ürünlerin her zaman bitkisel ürünlerden daha dayanıklı olduğu',
+      'Karşılaşılan dış baskıların, ambargoların ve krizlerin, insan zekâsını zorlayarak daha üstün ve kalıcı yenilikler (inovasyon) doğurabileceği',
+      'Mısır medeniyetinin kültürel olarak Anadolu medeniyetlerinden daha geri planda kaldığı',
+      'Antik dönemdeki kütüphanelerin sadece krallar tarafından kullanılabildiği'
+    ],
+    correct: 1,
+    explanation: 'Papirüs ambargosu (kriz/engel) yüzünden Bergamalıların pes etmeyip daha üstün olan parşömeni icat etmeleri, krizlerin inovasyonu tetiklediğini gösterir.'
+  },
+  {
+    title: 'Hasan Sabbah ve Fedaileri',
+    passage: '11. yüzyılda Sarp Elburz Dağları\'ndaki Alamut Kalesi\'ne yerleşen Hasan Sabbah, tarihin ilk ve en korkutucu suikast örgütü olan Haşhaşileri (Suikastçılar/Assassins) kurdu. Sabbah\'ın gücü devasa ordulardan değil, zihinlerini tamamen yıkadığı ve kendisine körü körüne itaat eden az sayıdaki fedailerinden geliyordu. Sahte bir cennet vaadiyle ölüm korkusunu sıfırladığı bu gençler, dönemin en güçlü sultanlarını ve vezirlerini (Nizamülmülk gibi) korumalarının ortasında hançerleyerek öldürdüler. Alamut efsanesi, ikna edilmiş ve ölüm korkusunu yenmiş bir avuç fanatiğin, kılıçla kuşanan devasa imparatorlukları psikolojik olarak nasıl felç edebileceğinin ürpertici bir ispatıdır.',
+    questionStem: 'Hasan Sabbah\'ın Alamut Kalesi\'nde kurduğu düzen, tarihi süreçte gücün hangi boyutunu temsil etmektedir?',
+    options: [
+      'Orduların teknolojik silahlarla donatıldığında yenilmez olmasını',
+      'İnancın ve psikolojik manipülasyonun (zihin kontrolünün), sayısal ve askeri üstünlükten çok daha asimetrik ve korkutucu bir güce dönüşebilmesini',
+      'Dağlık coğrafyaların her zaman savunma için en ideal alanlar olmasını',
+      'Ortadoğu\'daki suikastların sadece ekonomik nedenlerle işlendiğini'
+    ],
+    correct: 1,
+    explanation: 'Küçük bir fedai grubunun sahte cennet vaadiyle (zihin kontrolü) devasa imparatorlukları felç etmesi, psikolojik manipülasyonun asimetrik gücünü temsil eder.'
+  },
+  {
+    title: 'Tordesillas: Dünyayı İkiye Bölen Çizgi',
+    passage: '1494 yılında, dönemin en büyük iki deniz gücü olan İspanya ve Portekiz, yeni keşfedilen kıtaları paylaşmak için sürekli çatışıyordu. Papa\'nın onayıyla Tordesillas Antlaşması imzalandı. Harita üzerinde Atlas Okyanusu\'nun ortasından dikey bir çizgi çekildi; çizginin batısında kalan henüz keşfedilmemiş tüm topraklar İspanya\'ya, doğusunda kalanlar ise Portekiz\'e verildi (Brezilya\'nın Portekizce konuşmasının sebebi budur). Bu antlaşma, orada yaşayan milyonlarca yerli halkın varlığını ve kültürünü hiçe sayarak, Avrupalı imparatorlukların bir masada cetvelle tüm dünyayı kendi mülkleri gibi paylaştıkları tarihteki en büyük ve en küstah sömürgecilik (kibir) eylemidir.',
+    questionStem: 'Tordesillas Antlaşması\'nın anlatıldığı bu parçada, yazarın eleştirdiği asıl tutum nedir?',
+    options: [
+      'Papa\'nın sadece iki ülkenin çıkarlarını koruyan taraflı bir karar vermesi',
+      'Harita çizim tekniklerinin o dönemde çok ilkel olması nedeniyle yanlış hesaplamalar yapılması',
+      'Avrupalı güçlerin (imparatorlukların), diğer halkların varlığını yok sayarak koca bir gezegeni masa başında mülkleri gibi bölüştükleri sömürgeci kibri',
+      'İspanya\'nın denizcilikte Portekiz\'den daha güçlü olmasına rağmen az toprak alması'
+    ],
+    correct: 2,
+    explanation: 'Milyonlarca yerli halkın yok sayılarak dünyanın masada cetvelle ikiye bölünmesi, sömürgeci kibrin ve diğer halkları hiçe saymanın bir eleştirisidir.'
+  },
+  {
+    title: 'Orson Welles ve Dünyalar Savaşı',
+    passage: '1938 yılının Cadılar Bayramı gecesinde, Amerikalı tiyatrocu Orson Welles radyoda H.G. Wells\'in "Dünyalar Savaşı" adlı romanını canlı bir haber bülteni formatında sahneledi. Spiker, uzaylıların dünyaya saldırdığını, zehirli gazlar ve ısı ışınlarıyla şehirleri yıktığını panik içinde anlatıyordu. Oyunun başında bunun bir kurgu olduğu anons edilmesine rağmen, yayını sonradan açan binlerce Amerikalı gerçekten Marslıların saldırdığını sanarak yollara döküldü, karakollara sığındı ve bir kitlesel histeri yaşandı. Bu radyo tiyatrosu, kitle iletişim araçlarının (medyanın) insan algısını nasıl kolayca manipüle edebileceğinin ve kalabalıkların paniğe ne kadar yatkın olduğunun korkutucu bir provasıydı.',
+    questionStem: 'Dünyalar Savaşı radyo yayını olayının ortaya koyduğu en çarpıcı toplumsal gerçek nedir?',
+    options: [
+      'İnsanların uzaylıların varlığına dair bilimsel kanıtlar araması',
+      'Kitle iletişim araçlarının (medyanın), gerçek ile kurguyu birbirine karıştırarak büyük toplulukları kolayca paniğe (histeriye) sürükleme gücü',
+      'Radyo tiyatrosunun televizyondan daha etkili bir sanat dalı olduğu',
+      'Hükümetlerin acil durumlara karşı hiçbir kriz planının bulunmadığı'
+    ],
+    correct: 1,
+    explanation: 'Bir kurgunun haber bülteni gibi sunulmasıyla binlerce kişinin paniğe kapılması, medyanın manipülasyon gücünü ve kitlelerin histeriye yatkınlığını gösterir.'
+  },
+  {
+    title: 'Semmelweis: Deliren Kâhin',
+    passage: '19. yüzyılın ortalarında Viyana\'daki doğumevlerinde her üç anneden biri "loğusa humması"ndan ölüyordu. Doktor Ignaz Semmelweis, ölümlerin sebebinin morgdan çıkıp ellerini yıkamadan doğuma giren doktorlar olduğunu fark etti. Çözüm çok basitti: "Ellerinizi klorlu suyla yıkayın." Bu basit kural ölümleri bıçak gibi kesti. Ancak o dönemin "elleri kirli" kibirli tıp otoriteleri, bir doktorun elinin ölüm taşıyamayacağını iddia ederek Semmelweis\'i dışladılar. İşinden kovulan ve meslektaşları tarafından alaya alınan Semmelweis, sonunda bir tımarhaneye kapatıldı ve orada gardiyanlar tarafından dövülerek öldürüldü. Tarih, statükonun (kibirli otoritelerin) yeni bir doğruyu kabul etmektense, gerçeği söyleyeni delirtmeyi tercih ettiğinin kanıtlarıyla doludur.',
+    questionStem: 'Dr. Semmelweis\'in hikâyesi üzerinden çıkarılabilecek ana düşünce aşağıdakilerden hangisidir?',
+    options: [
+      'Tıp biliminde hijyenin öneminin ilk kez 20. yüzyılda anlaşıldığı',
+      'Kurumlaşmış otoritelerin ve kibrin, çok basit ve hayat kurtarıcı bilimsel doğrulara bile yenilik korkusuyla düşmanca direnebileceği',
+      'Avrupa\'daki hastanelerin altyapılarının salgın hastalıkları önlemeye yetmediği',
+      'Sadece tıp fakültesinden mezun olanların yeni keşifler yapabileceği'
+    ],
+    correct: 1,
+    explanation: 'Ellerini yıkamayan kibirli doktorların (statükonun) doğruyu söyleyen Semmelweis\'i dışlayıp tımarhaneye atması, otoritenin bilimsel doğrulara bile kibri yüzünden direnebileceğini gösterir.'
+  },
+  {
+    title: 'Milgram Deneyi ve Otorite',
+    passage: '1961 yılında psikolog Stanley Milgram, sıradan insanların otorite karşısında ne kadar ileri gidebileceğini ölçmek için bir deney tasarladı. Deneklere, yan odadaki bir öğrenciye (aslında çığlık atan bir oyuncu) kelimeleri yanlış bildikçe elektrik şoku vermeleri söylendi. Şok seviyesi "ölümcül" düzeye gelmesine ve yan odadan acı dolu yalvarışlar gelmesine rağmen, beyaz önlüklü araştırmacı "Devam etmeniz gerekiyor" dediği için deneklerin %65\'i şok vermeye sonuna kadar devam etti. Milgram deneyi, tarihteki büyük katliamların psikopatlar tarafından değil; sadece "bana verilen emri yerine getiriyordum" diyen itaatkâr, sıradan insanlar tarafından gerçekleştirildiğini dondurucu bir şekilde kanıtladı.',
+    questionStem: 'Milgram Deneyi\'nin insan doğası hakkında ortaya çıkardığı asıl acı gerçek nedir?',
+    options: [
+      'İnsanların genetik olarak şiddete ve başkalarına fiziksel acı çektirmeye eğilimli olduğu',
+      'Sıradan insanların, kendi vicdanlarına ters düşse bile otorite (emir) karşısında başkalarına ölümcül zararlar verebileceği',
+      'Laboratuvar ortamındaki stresin insanların zihinsel sağlığını kalıcı olarak bozduğu',
+      'Sadece iyi eğitim almamış insanların emirleri sorgulamadan uyguladığı'
+    ],
+    correct: 1,
+    explanation: 'Deneklerin vicdanen rahatsız olsalar bile sırf beyaz önlüklü kişi emrettiği için (otorite) ölümcül şok vermeye devam etmeleri, sıradan insanın otoriteye körü körüne itaatini kanıtlar.'
+  },
+  {
+    title: 'Çocuk Haçlı Seferi',
+    passage: '1212 yılında Avrupa\'da, yetişkin şövalyelerin başaramadığını masumiyetleriyle başaracaklarına inanan on binlerce çocuk ve genç bir araya geldi. "Çocuk Haçlı Seferi" olarak bilinen bu trajik yürüyüşte, Akdeniz\'in sularının önlerinde ikiye ayrılacağına ve Kudüs\'ü kan dökmeden alacaklarına inandırılmışlardı. Ancak ne deniz ikiye yarıldı ne de kutsal topraklara ulaştılar. Çoğu yolda açlıktan ve hastalıktan öldü, geri kalanlar ise fırsatçı tüccarlar tarafından gemilere doldurulup Kuzey Afrika\'da köle olarak satıldı. Bu karanlık olay, saf inancın ve masumiyetin, fanatik düşünceler ve acımasız çıkar odakları tarafından nasıl korkunç bir felakete sürüklenebileceğinin ağıtıdır.',
+    questionStem: 'Çocuk Haçlı Seferi\'nin anlatıldığı bu metinde vurgulanan asıl eleştiri nedir?',
+    options: [
+      'Avrupalı kralların askeri stratejilerde yetersiz kalması',
+      'Masumiyetin ve saf inancın (dini fanatizmin), mantık dışı idealler uğruna sömürülerek korkunç trajedilere yol açması',
+      'Orta Çağ\'da çocukların denizcilik eğitimi almadan gemilere bindirilmesi',
+      'Akdeniz ticaretinin sadece köle tüccarlarının elinde olması'
+    ],
+    correct: 1,
+    explanation: 'Denizin yarılacağına inandırılan masum çocukların ölüme veya köleliğe terk edilmesi, saf inancın fanatizm ve çıkar odakları tarafından sömürülmesini eleştirir.'
+  },
+  {
+    title: 'Martha: Son Yolcu Güvercini',
+    passage: '19. yüzyılın başlarında Kuzey Amerika semalarında uçan Yolcu Güvercinlerinin sayısının 3 ila 5 milyar arasında olduğu tahmin ediliyordu. Sürüler geçmeye başladığında gökyüzü saatlerce kararıyor, adeta bir güneş tutulması yaşanıyordu. İnsanlar, bu devasa bolluğun asla tükenmeyeceğine inanarak kuşları ağlarla, dinamitlerle, hatta zehirli gazlarla endüstriyel boyutta avladılar. O devasa türden geriye kalan tek kuş olan "Martha", 1914 yılında Cincinnati Hayvanat Bahçesi\'ndeki kafesinde yapayalnız öldüğünde, bir tür tamamen yok oldu. Martha\'nın sessiz ölümü, doğanın sonsuz olduğuna dair insan kibrinin ve kontrolsüz açgözlülüğün ne kadar yıkıcı olduğunun en acı kanıtıdır.',
+    questionStem: 'Yolcu Güvercinlerinin tükeniş öyküsünden çıkarılması gereken en önemli ders nedir?',
+    options: [
+      'Hayvanat bahçelerinin vahşi hayvanların ömrünü kısalttığı',
+      'Kuş türlerinin göç yollarının sanayileşme yüzünden bozulduğu',
+      'Doğadaki hiçbir kaynağın sonsuz olmadığı, insan açgözlülüğünün en bol (tükenmez sanılan) varlıkları bile hızla yok edebileceği',
+      'Teknolojik silahların sadece savaşlarda kullanılması gerektiği'
+    ],
+    correct: 2,
+    explanation: 'Sayıları milyarları bulan (tükenmez sanılan) bir türün bile açgözlü avlanma sonucu sıfıra inmesi, doğanın sonsuz olmadığını ve insanın yıkıcılığını gösterir.'
+  },
+  {
+    title: 'Panoptikon ve Görünmez İktidar',
+    passage: '18. yüzyılda filozof Jeremy Bentham, "Panoptikon" adında kusursuz bir hapishane tasarladı. Bu tasarımda hücreler dairesel bir şekilde dizilmişti ve ortada karanlık bir gözetleme kulesi vardı. Işık oyunları sayesinde mahkûmlar kuleyi göremiyor, gardiyanın kendilerine bakıp bakmadığını asla bilemiyordu. İzlenmedikleri anlarda bile "Ya izleniyorsam?" korkusuyla kendi kendilerini disipline ediyor, kurallara uyuyorlardı. Filozof Michel Foucault\'ya göre modern toplumlar da devasa birer Panoptikon\'dur. Kameralar, sosyal medya ve devlet denetimi sayesinde; güce ihtiyaç duymadan, bireylerin kendi kendilerinin gardiyanı olduğu görünmez bir iktidar yaratılmıştır.',
+    questionStem: 'Panoptikon hapishane tasarımı, modern toplumlara uyarlandığında asıl olarak neyi sembolize etmektedir?',
+    options: [
+      'Hapishane koşullarının eskiye göre çok daha insani hale geldiğini',
+      'Bireylerin, sürekli izlenme ihtimali (gözetim duygusu) üzerinden kendi kendilerini denetlediği (içselleştirdiği) görünmez bir otoriteyi',
+      'Mimari yapıların psikoloji üzerindeki etkisinin geçici olduğunu',
+      'Devletlerin güvenlik güçlerine (gardiyanlara) olan ihtiyacının tamamen bittiğini'
+    ],
+    correct: 1,
+    explanation: 'Mahkûmların izlenip izlenmediğini bilmeden kendi kendilerini disipline etmesi, modern toplumdaki "sürekli gözetim altında olma korkusuyla insanın kendi kendisinin gardiyanı olması"nı sembolize eder.'
+  },
+  {
+    title: 'Feynman ve Soğuk O-Ring',
+    passage: '1986 yılında Challenger uzay mekiği fırlatıldıktan 73 saniye sonra parçalanarak infilak etti. Kazayı araştıran komisyonda dâhi fizikçi Richard Feynman da vardı. NASA yöneticileri suçu karmaşık teknik detaylara atmaya çalışırken, Feynman kameraların önünde buzlu bir bardak suyun içine kauçuk bir conta (O-ring) attı. Soğuk suda donan contanın esnekliğini kaybettiğini basitçe gösterdi. Kazanın asıl sebebi, yöneticilerin fırlatma tarihlerini tutturmak için (halkla ilişkiler baskısıyla) mühendislerin "hava çok soğuk, bu contalar patlar" uyarısını görmezden gelmesiydi. Feynman\'ın şu meşhur sözü tarihe geçti: "Halkla ilişkiler adına doğayı kandıramazsınız, çünkü doğa asla aldanmaz."',
+    questionStem: 'Challenger kazasının anlatıldığı bu parçaya göre, felaketin asıl arka planında yatan faktör nedir?',
+    options: [
+      'Uzay teknolojisinin henüz insanlı uçuşlar için yeterince gelişmemiş olması',
+      'Richard Feynman\'ın NASA yöneticileriyle olan kişisel husumeti',
+      'Kurumsal imaj (halkla ilişkiler) ve baskıların, mühendislerin bilimsel ve güvenlik uyarılarının önüne geçmesi',
+      'Hava sıcaklıklarının uzay mekiklerinin fırlatılmasında hiçbir etkiye sahip olmaması'
+    ],
+    correct: 2,
+    explanation: 'Feynman\'ın deneyiyle kazanın, yöneticilerin fırlatma tarihlerini tutturmak uğruna mühendislerin "hava çok soğuk" uyarısını (bilimi) görmezden gelmesi yüzünden yaşandığı kanıtlanmıştır.'
+  },
+  {
+    title: 'Hawthorne Etkisi',
+    passage: '1920\'lerde Chicago\'daki Hawthorne fabrikasında işçilerin verimliliğini artırmak için bir deney yapıldı. Aydınlatma artırıldığında işçilerin üretimi yükseldi. Ancak bilim insanlarını şaşırtan şey, aydınlatma tekrar azaltılıp eski loş haline getirildiğinde de verimliliğin artmaya devam etmesiydi! Uzun araştırmalar sonucu gerçek anlaşıldı: İşçiler ışık değiştiği için veya mola süreleri uzadığı için değil; sadece birileri onları izlediği, önemsendiği ve deneye dâhil edildikleri için daha iyi çalışıyorlardı. "Hawthorne Etkisi" adı verilen bu durum, insanın sadece mekanik bir dişli olmadığını, izlendiğini ve değer gördüğünü hissetmesinin en güçlü motivasyon kaynağı olduğunu kanıtladı.',
+    questionStem: 'Hawthorne Etkisi\'nin psikoloji ve yönetim bilimine katkısı aşağıdakilerden hangisidir?',
+    options: [
+      'Fabrikalardaki ışıklandırmanın çalışan sağlığı üzerindeki etkisini matematiksel olarak kanıtlaması',
+      'Fiziksel çalışma koşullarından ziyade, bireylerin gözlemlenme ve önemsenme (psikolojik ilgi) duygusunun performansı artırdığını ortaya koyması',
+      'Mola sürelerinin uzun tutulmasının işçileri tembelliğe ittiğini göstermesi',
+      'Çalışanların sadece yüksek maaş beklentisiyle daha fazla ürettiğini ispatlaması'
+    ],
+    correct: 1,
+    explanation: 'Işık azaltıldığında bile üretimin artması, işçilerin fiziksel koşullardan (ışık) ziyade "izlendiklerini ve önemsendiklerini" hissettikleri için daha iyi çalıştığını gösterir.'
+  },
+  {
+    title: 'Platon\'un Mağara Alegorisi',
+    passage: 'Platon meşhur mağara alegorisinde, doğduklarından beri karanlık bir mağarada zincirlenmiş insanları anlatır. Bu insanlar sadece arkalarındaki ateşin, karşılarındaki duvara yansıttığı gölgeleri izler ve o gölgeleri "gerçek" sanırlar. Bir gün zincirlerinden kurtulan bir mahkûm mağaradan dışarı çıkar ve güneşi, gerçek dünyayı görür. Gözleri başlangıçta kamaşsa da hakikati anlar. Ancak heyecanla mağaraya dönüp diğerlerine gölgelerin sahte olduğunu söylediğinde, kimse ona inanmaz; hatta düzenlerini ve rahat yalanlarını bozduğu için onu öldürmek isterler. Bu hikâye, insanların yanılsamalar (cehalet) içindeki konfor alanlarını, hakikatin o acı verici ve sarsıcı ışığına her zaman tercih ettiklerinin en büyük felsefi kanıtıdır.',
+    questionStem: 'Platon\'un Mağara Alegorisi\'ne göre, insanların zincirlerinden kurtulan mahkûma (hakikati getirene) düşmanca davranmasının asıl nedeni nedir?',
+    options: [
+      'Güneş ışığının mağaradaki herkesin gözünü kör etmesinden korkmaları',
+      'Mahkûmun onlardan para talep ederek çıkarlarına dokunması',
+      'Hakikatin acı verici olmasından dolayı, alıştıkları sahte konfor alanlarını (cehaletlerini) kaybetmek istememeleri',
+      'Gölgelerin ardındaki ateşin aniden sönerek onları karanlıkta bırakması'
+    ],
+    correct: 2,
+    explanation: 'Alegoride insanların gölgeleri gerçek sanması ve doğruyu anlatanı öldürmek istemeleri, cehaletin ve yalanın verdiği rahatlıktan vazgeçmek (hakikatin acısıyla yüzleşmek) istememelerinden kaynaklanır.'
+  },
+  {
+    title: 'Demirbaş Şarl ve Osmanlı',
+    passage: 'İsveç Kralı XII. Karl, 1709 yılında Rus Çarı Deli Petro\'ya karşı Poltava\'da ağır bir yenilgi aldıktan sonra yaralı bir halde Osmanlı İmparatorluğu\'na sığındı. Misafirliği birkaç ay sürecek sanılırken, Kral tam beş yıl boyunca Osmanlı topraklarında (Bender\'de) kaldı. Sürekli Osmanlı hazinesinden para harcayarak devleti Rusya\'ya karşı yeni bir savaşa kışkırtmaya çalıştı. Ülkesine dönmesi için verilen onca çabaya rağmen gitmemekte direnince, Türk halkı ona "Demirbaş" (devlete zimmetli, yerinden oynamayan eşya) lakabını taktı. "Demirbaş Şarl"ın hikâyesi, kişisel hırsları yüzünden ülkesini felakete sürükleyen bir liderin, gurur ve inat uğruna düştüğü o trajikomik çaresizliğin simgesidir.',
+    questionStem: 'İsveç Kralı\'na Osmanlı halkı tarafından "Demirbaş" lakabının verilmesinin temel nedeni nedir?',
+    options: [
+      'Savaşlarda gösterdiği çelik (demir) gibi bükülmez iradesi',
+      'Rusya\'ya karşı Osmanlı ordusunu modernize ederek demir döküm fabrikaları kurdurması',
+      'Osmanlı topraklarına sığınıp, her türlü çabaya rağmen yıllarca gitmeyerek adeta devlete ait sabit bir eşya (demirbaş) gibi orada kalması',
+      'Deli Petro\'nun ordularını durdurabilen tek Avrupalı lider olması'
+    ],
+    correct: 2,
+    explanation: 'Misafirliğinin 5 yıl sürmesi ve gitmemek için diretmesi nedeniyle ona "yerinden oynamayan, devlete zimmetli eşya" anlamına gelen Demirbaş lakabı takılmıştır.'
+  },
+  {
+    title: 'İnkaların Khipu (Düğüm) Yazısı',
+    passage: 'Amerika kıtasının en büyük medeniyetlerinden biri olan İnkalar, devasa taş tapınaklar yapmış, binlerce kilometrelik yollar döşemiş ve karmaşık bir vergi sistemi kurmuşlardı. İşin garibi, bütün bunları harflerden oluşan bir "yazı sistemi" olmadan başardılar. Bunun yerine "Khipu" adı verilen, farklı renkteki iplerin üzerine atılan binlerce düğümden oluşan şifreli bir sistem kullanıyorlardı. Her ipin rengi, düğümün şekli ve yeri, nüfus sayımından vergi kayıtlarına, hatta tarihi destanlara kadar devasa verileri depolayabiliyordu. Khipu, "uygarlık" dediğimiz şeyin tek bir standart yoldan (harflerden) ilerlemediğini; insan zekâsının verileri depolamak için ne kadar farklı ve muazzam sistemler (dokunsal yazılar) icat edebileceğini gösterir.',
+    questionStem: 'Khipu sisteminin varlığı, uygarlık tarihi açısından neyi kanıtlamaktadır?',
+    options: [
+      'İnkaların Avrupalılar gelene kadar matematikten tamamen habersiz olduklarını',
+      'Gelişmiş bir medeniyet kurmak ve karmaşık verileri kaydetmek için klasik (harflere dayalı) yazı sisteminin tek seçenek olmadığını',
+      'İplerden yapılan düğümlerin kâğıttan çok daha uzun ömürlü olduğunu',
+      'Sadece tekstil ticareti yapan toplumların düğüm sistemine ihtiyaç duyduğunu'
+    ],
+    correct: 1,
+    explanation: 'İnkaların harf olmadan devasa bir medeniyet kurup verileri düğümlerle (Khipu) kaydetmesi, insan zekâsının gelişmek için klasik yazıya muhtaç olmadığını, alternatif yollar üretebildiğini gösterir.'
+  },
+  {
+    title: 'Dunning-Kruger Etkisi',
+    passage: '1995 yılında McArthur Wheeler adında bir adam, yüzüne limon suyu sürerek banka soymaya kalktı. Limon suyunun gizli mürekkep yapımında kullanıldığını bildiği için, yüzüne sürdüğünde güvenlik kameralarına karşı "görünmez" olacağına yürekten inanıyordu. Yakalandığında şaşkınlık içindeydi. Bu tuhaf ve komik olay, psikologlar David Dunning ve Justin Kruger\'e ilham oldu. Yaptıkları araştırmalar şu efsanevi gerçeği ortaya çıkardı: Bir konuda çok az bilgisi olan insanlar, ne kadar cahil olduklarını görecek kapasiteye sahip olmadıkları için kendilerini o konunun uzmanı sanırlar. "Dunning-Kruger Etkisi", cahilliğin insana bilgiden çok daha büyük ve tehlikeli bir özgüven verdiğinin bilimsel adıdır.',
+    questionStem: 'Dunning-Kruger Etkisi\'nin temel psikolojik tanımı parçaya göre aşağıdakilerden hangisidir?',
+    options: [
+      'Zeki insanların her zaman kendilerinden şüphe ederek hata yapma korkusu yaşaması',
+      'Limon suyu gibi kimyasalların insan beyni üzerinde halüsinasyonlara yol açması',
+      'Bilgi ve beceri düzeyi düşük olan insanların, eksikliklerini fark edememeleri nedeniyle kendilerinde sahte ve tehlikeli bir özgüven (üstünlük) hissetmeleri',
+      'Hırsızlık eğilimi olan bireylerin güvenlik güçlerini hafife alma psikolojisi'
+    ],
+    correct: 2,
+    explanation: 'Çok az bilgisi olanların ne kadar cahil olduklarını görecek kapasitede olmamaları ve cahilliğin bilgiden daha büyük bir özgüven vermesi durumu tanımlanmaktadır.'
+  },
+  {
+    title: 'Kumran (Ölü Deniz) Yazmaları',
+    passage: '1947 yılında Bedevi bir çoban çocuk, kaybolan keçisini ararken Ölü Deniz yakınlarındaki Kumran mağaralarına rastgele bir taş attı. İçeriden gelen çömlek kırılma sesi, sadece bir vazonun değil; 2000 yıldır gizli kalan bir tarihin de kapağını kırmıştı. Mağaralarda, parşömen ve papirüslere yazılmış, Eski Ahit\'in bilinen en eski kopyalarını barındıran yüzlerce parça (Ölü Deniz Yazmaları) bulundu. Dinler tarihini derinden sarsan ve kutsal metinlerin kökenine ışık tutan bu devasa arkeolojik keşif; yıllarca süren planlı kazılarla veya ileri teknoloji uydularla değil, sadece keçisini arayan bir çocuğun elinden çıkan rastgele bir taşla başlamıştır.',
+    questionStem: 'Ölü Deniz Yazmaları\'nın keşfediliş hikâyesi, tarihi süreçlerle ilgili hangi düşünceyi destekler niteliktedir?',
+    options: [
+      'Büyük tarihi ve arkeolojik keşiflerin bazen devasa bütçelere değil, tamamen sıradan ve tesadüfi (rastlantısal) küçük olaylara bağlı olabileceğini',
+      'Dinler tarihine ait belgelerin mağaralarda saklanmasının metinlerin tamamen çürümesine neden olduğunu',
+      'Çobanların antik çağ dillerini akademisyenlerden daha iyi okuyup anladığını',
+      'Geçmiş medeniyetlerin kendi izlerini bilerek ve isteyerek yok etmeye çalıştığını'
+    ],
+    correct: 0,
+    explanation: 'Dinler tarihini sarsan 2000 yıllık bir keşfin bir çocuğun rastgele attığı taşla başlaması, büyük olayların tesadüfi (rastlantısal) anlara bağlı olabileceğini gösterir.'
+  },
+  {
+    title: 'Sisifos Söyleni',
+    passage: 'Antik Yunan mitolojisinde Sisifos, tanrıları kandırdığı için korkunç bir cezaya çarptırılır. Sonsuza dek büyük bir kayayı dik bir tepenin zirvesine çıkarmak zorundadır. Ancak kaya tam zirveye ulaştığında her defasında elinden kayıp aşağı yuvarlanır ve Sisifos her şeye yeniden başlamak zorundadır. Filozof Albert Camus, bu efsaneyi modern insanın varoluşsal anlamsızlığına benzetir. Her sabah kalkıp aynı işe gitmek, aynı faturaları ödemek de Sisifos\'un kayası gibi anlamsız bir döngüdür. Ancak Camus ekler: "Tepelere doğru didinmek, bir insan yüreğini doldurmaya yeter. Sisifos\'u mutlu hayal etmeliyiz." Anlam, zirveye ulaşmakta değil; kayayı itme eyleminin, yani direnişin ta kendisindedir.',
+    questionStem: 'Albert Camus\'nün "Sisifos Söyleni" üzerinden modern insana verdiği asıl felsefi mesaj nedir?',
+    options: [
+      'İnsanın doğaüstü güçlere (tanrılara) karşı gelmesinin her zaman büyük acılarla sonuçlanacağı',
+      'Modern çalışma hayatının anlamsızlığı karşısında insanın her şeyi bırakıp tamamen izole bir yaşam sürmesi gerektiği',
+      'Hayatın ve döngünün kendisi anlamsız (absürt) görünse bile, insanın bu mücadeleyi benimseyerek (direnerek) eylemin kendisinde mutluluk ve anlam bulabileceği',
+      'Fiziksel olarak yorucu işlerin insanın psikolojisini düzelttiği'
+    ],
+    correct: 2,
+    explanation: 'Döngü anlamsız olsa da "tepelere doğru didinmek insan yüreğini doldurur" sözü, mutluluğun ve anlamın zirvede değil mücadele ve direnişte (eylemin kendisinde) olduğunu anlatır.'
+  },
+  {
+    title: 'Çin\'in Serçe Katliamı',
+    passage: '1958 yılında Çin lideri Mao Zedong, tarımsal verimi artırmak için tarlalardaki tohumları yediğini düşündüğü serçelere karşı ülke çapında bir "yok etme" kampanyası başlattı. Halk, tencerelere vurarak kuşları uçmaya zorluyor ve yorgunluktan düşen milyonlarca serçeyi öldürüyordu. Kampanya ilk başta başarılı sayıldı, ancak doğa intikamını almakta gecikmedi. Serçeler yok olunca, ekinlere saldıran çekirgeleri ve böcekleri yiyecek kimse kalmamıştı. Ortaya çıkan devasa böcek istilası, Çin tarihindeki en büyük kıtlığa (Büyük Çin Kıtlığı) neden oldu ve milyonlarca insan açlıktan öldü. Bu olay, ekosistemin görünmez zincirlerinden tek bir halkanın bile kibirle koparılmasının, insanlık için nasıl ölümcül bir faturaya dönüşebileceğinin kanıtıdır.',
+    questionStem: 'Çin\'deki serçe katliamının yıkıcı sonuçları, aşağıdakilerden hangisinin önemini vurgulamaktadır?',
+    options: [
+      'Tarımsal üretimde kimyasal böcek ilaçlarının kullanımının zorunlu olduğunu',
+      'Devlet liderlerinin halkın beslenme alışkanlıklarına müdahale etmemesi gerektiğini',
+      'Doğadaki hiçbir canlının gereksiz olmadığını ve ekosistemin denge zincirine yapılan bilinçsiz müdahalelerin felaket getireceğini',
+      'Kuş türlerinin diğer tüm hayvan türlerinden daha hızlı ürediğini'
+    ],
+    correct: 2,
+    explanation: 'Serçelerin yok edilmesinin ardından çekirge istilası yaşanması ve kıtlığın çıkması, ekosistemin dengesine (zincirin halkalarına) yapılan kibirli müdahalenin ölümcül felaket getirdiğini gösterir.'
+  }
+];
+
+export const tarihParagrafSorulari6: TarihParagrafQuestion[] = Array.from({ length: 50 }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_6[idx % PARAGRAPH_THEMES_6.length];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-tarih6-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
 
 // paragrafTests.ts dosyasının hata vermemesi için iki listeyi birleştirip eski adıyla dışa aktarıyoruz:
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
@@ -1413,5 +1690,6 @@ export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari2,
   ...tarihParagrafSorulari3,
   ...tarihParagrafSorulari4,
-  ...tarihParagrafSorulari5
+  ...tarihParagrafSorulari5,
+  ...tarihParagrafSorulari6
 ];
