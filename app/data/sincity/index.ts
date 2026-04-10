@@ -10,264 +10,264 @@ export interface SincityParagrafQuestion {
 
 const PARAGRAPH_THEMES = [
   {
-    title: 'Şehrin Anatomisi',
-    passage: 'Şehir, paslı bir neşter gibi her gece umutlarımızı derimizden kazıyordu. Sokak lambalarının cılız ışığı, kaldırımlardaki kan lekelerini aydınlatmak yerine onları gölgelerle birleştirip saklıyordu. Binalar, gökyüzüne uzanan kibirli mezar taşlarıydı. Burada hayatta kalmanın tek kuralı vardı: Vicdanını, ilk köşedeki rehin dükkanına satıp karşılığında sessizlik satın almak.',
-    questionStem: 'Bu parçada şehirle ilgili asıl vurgulanmak istenen aşağıdakilerden hangisidir?',
+    title: 'Brütüs\'ün İhaneti',
+    passage: 'Jül Sezar\'ın M.Ö. 44 yılında Roma Senatosu\'nda suikasta kurban gitmesi, tarihin en dramatik ihanet sahnelerinden biridir. Sezar, etrafını saran yirmi üç suikastçı arasında en güvendiği dostu, evladı gibi sevdiği Brütüs\'ü gördüğünde fiziksel olarak direnmeyi bırakmış ve o meşhur "Sen de mi Brütüs?" sözünü fısıldayarak cübbesini yüzüne çekmiştir. Bu olay, siyasi hırsların ve sözde cumhuriyeti koruma idealinin, en derin sadakat bağlarını bile nasıl koparabildiğini gösterir. İhanetin asıl acısı, bedene saplanan hançerlerden değil, güvenilen bir yüzden gelmesidir.',
+    questionStem: 'Bu parçadan çıkarılabilecek en kapsamlı yargı aşağıdakilerden hangisidir?',
     options: [
-      'Geceleri suç oranının gündüze göre daha fazla arttığı',
-      'İnsanların manevi değerlerini yok eden, acımasız ve yozlaştırıcı bir yapıya sahip olduğu',
-      'Mimari yapısının insan psikolojisini olumsuz yönde etkilediği',
-      'Ekonomik zorlukların insanları suça iten en temel etken olduğu'
+      'Roma Cumhuriyeti\'nin yıkılmasının tek nedeninin senato içindeki çıkar çatışmaları olduğu',
+      'İhanetin yarattığı psikolojik yıkımın, fiziksel acıdan çok daha ağır olduğu ve siyasi ihtirasların dostlukları yok edebildiği',
+      'Sezar\'ın, halk tarafından sevilmediği için kendi yakın çevresini koruyamadığı',
+      'Siyasi suikastların sadece eski çağlarda görülen ilkel bir yöntem olduğu'
     ],
     correct: 1,
-    explanation: 'Şehrin umutları kazıyan paslı bir neştere benzetilmesi ve hayatta kalmak için vicdanın satılması gerektiği vurgusu, şehrin yozlaştırıcı ve acımasız yapısını gösterir.'
+    explanation: 'Parçada Sezar\'ın Brütüs\'ü gördüğünde direnmeyi bırakması ve ihanetin acısının hançerden derin olması, ihanetin psikolojik yıkımını ve siyasi hırsların dostluğu yenebileceğini vurgular.'
   },
   {
-    title: 'Sahte Adalet',
-    passage: 'Kör tanrıçanın terazisi bu metropolde çoktan bozulmuştu; artık ağır basan taraf haklı olan değil, kefeye daha fazla kanlı banknot koyabilendi. Adalet sarayının mermer merdivenleri, kravatlı hırsızların ayak sesleriyle aşınırken, dışarıdaki yağmur sadece fakirlerin günahlarını yıkamakla meşguldü. Yasalar, zenginleri koruyan çelik bir yelek, yoksulların ise boynuna dolanan bir ipten ibaretti.',
-    questionStem: 'Yazarın "hukuk sistemi"ne yönelik temel eleştirisi aşağıdakilerden hangisidir?',
+    title: 'Neron ve Yanan Roma',
+    passage: 'MS 64 yılındaki Büyük Roma Yangını altı gün boyunca şehri kasıp kavururken, İmparator Neron\'un tepeden şehri izleyip lir çaldığı efsanesi günümüze kadar ulaşmıştır. Tarihsel kayıtlara göre Neron yangın sırasında Roma\'da bile değildi; ancak yangın sonrası halkın öfkesini dindirmek ve kendi üzerindeki "şehri o yaktı" şüphelerini dağıtmak için o dönemde yeni ve zayıf bir grup olan Hıristiyanları "günah keçisi" ilan etti. Bu olay, yöneticilerin kriz anlarında kitle psikolojisini yönetmek için gerçekleri nasıl saptırdığının çarpıcı bir örneğidir.',
+    questionStem: 'Yazar, Büyük Roma Yangını ve Neron üzerinden asıl neyi vurgulamaktadır?',
     options: [
-      'Kanunların zamanın gerisinde kalıp güncellenememesi',
-      'Hâkim ve savcıların yeterli eğitime sahip olmaması',
-      'Adaletin ekonomik güce göre şekillenip sınıfsal bir eşitsizlik yaratması',
-      'Suç oranlarının artmasıyla mahkemelerin iş yükünün altından kalkamaması'
+      'Neron\'un sanata olan düşkünlüğünün devlet işlerini aksattığını',
+      'Kriz yönetiminde kitleleri sakinleştirmek için gerçeklerin çarpıtılıp hedef saptırma (günah keçisi) taktiğinin kullanıldığını',
+      'Roma\'nın büyük oranda ahşap yapılarından oluşmasının yangını hızlandırdığını',
+      'Hıristiyanların Roma\'da her zaman el üstünde tutulan bir sınıf olduğunu'
+    ],
+    correct: 1,
+    explanation: 'Neron\'un halkın öfkesini dindirmek için Hıristiyanları suçlaması, kriz anlarında bir günah keçisi yaratarak algı yönetimi yapıldığını gösterir.'
+  },
+  {
+    title: 'Truva Atı: Zekânın Zaferi',
+    passage: 'On yıl süren kanlı kuşatmaya rağmen aşılamayan Truva surları, kaba kuvvetle değil, Odysseus\'un kurnazca bir zekâ oyunuyla düşmüştür. Yunanlıların geri çekiliyormuş gibi yapıp sahilde tanrılara bir sunu olarak bıraktıkları devasa tahta at, Truvalılar tarafından büyük bir zafer ganimeti olarak şehrin içine alınmıştır. Kutlamalar bitip gece karanlığı çöktüğünde atın içinden çıkan Yunan askerleri, şehrin kapılarını açarak Truva\'nın sonunu getirmiştir. Truva Atı, fiziksel gücün tıkandığı yerde stratejinin devreye girdiğini kanıtlar.',
+    questionStem: 'Truva Atı efsanesinden çıkarılabilecek temel ders aşağıdakilerden hangisidir?',
+    options: [
+      'Savaşlarda zaferin her zaman en kalabalık ve donanımlı orduya ait olduğu',
+      'Düşmandan gelen ani iyiliklerin veya hediyelerin arkasında yıkıcı bir tuzak (kurnazlık) olabileceği',
+      'Surların yüksekliğinin ve kalınlığının şehir savunmasında tek başına yeterli olduğu',
+      'Askeri başarıların tamamen tesadüflere ve şansa dayandığı'
+    ],
+    correct: 1,
+    explanation: 'Düşmanın bıraktığı bir hediyenin (tahta at) aslında şehrin sonunu getiren bir tuzak olması, düşmandan gelen hediyelere şüpheyle yaklaşılması gerektiğini anlatır.'
+  },
+  {
+    title: 'Donmuş Zaman: Pompei',
+    passage: 'MS 79 yılında Vezüv Yanardağı patladığında, dönemin en lüks ve hareketli Roma şehirlerinden biri olan Pompei, saatler içinde metrelerce yüksekliğindeki kızgın kül ve sünger taşı tabakasının altına gömüldü. İnsanlar kaçmaya bile fırsat bulamadan günlük rutinleri içinde taşlaştılar. Fırındaki ekmekler, masadaki şarap kadehleri ve insanların son yüz ifadeleri yüzyıllar boyunca o küllerin altında bozulmadan kaldı. Pompei, insanlığın kurduğu en büyük medeniyetlerin bile doğanın anlık bir öfkesi karşısında ne kadar aciz olduğunun dilsiz bir kanıtıdır.',
+    questionStem: 'Bu metne göre Pompei felaketi insanlığa nasıl bir mesaj vermektedir?',
+    options: [
+      'Volkanik arazilerin tarım için oldukça verimli topraklar sunduğunu',
+      'Teknolojik gelişmelerin doğal afetleri önlemede kesin bir çözüm olduğunu',
+      'İnsanlığın kurduğu medeniyetlerin ve gücün, doğanın yıkıcı kuvveti karşısında çaresiz ve geçici olduğunu',
+      'Eski çağlarda insanların afet planlaması konusunda çok daha bilinçli olduğunu'
     ],
     correct: 2,
-    explanation: 'Parçada adaletin terazisinin paraya göre tarttığı ve yasaların zenginleri koruyup yoksulları cezalandırdığı (sınıfsal eşitsizlik) ifade edilmiştir.'
+    explanation: 'Lüks bir şehrin aniden küller altında kalması ve insanların kaçamaması, insanın doğa karşısındaki acizliğini (çaresizliğini) simgeler.'
   },
   {
-    title: 'Geçmişin Hayaletleri',
-    passage: 'Geçmiş, ucuz bir motelin rutubetli tavanı gibiydi; ne kadar gözünü kaçırmaya çalışırsan çalış, o kahverengi su lekeleri hep oradaydı. Yıllar önce tetiği çekerken hissettiğim o anlık soğukkanlılık, şimdi her gece uykumu bölen sağır edici bir çığlığa dönüşmüştü. Hafıza, insanın kendi kendine oynadığı en acımasız kumardı ve ben bütün fişlerimi o karanlık sokakta çoktan kaybetmiştim.',
-    questionStem: 'Kahramanın "geçmiş" ile olan ilişkisi aşağıdakilerin hangisinde doğru ifade edilmiştir?',
+    title: 'Titanic: Kibrin Batışı',
+    passage: '1912 yılında ilk seferine çıkan Titanic, dönemin mühendislik harikası ve "Tanrı bile batıramaz" denilen bir kibir abidesiydi. Geminin devasa lüksü ve teknolojik donanımı, insanlarda doğaya tamamen boyun eğdirdiklerine dair sahte bir inanç yaratmıştı. Ancak bir nisan gecesi, o "batmaz" denilen çelik dev, bir buzdağına çarparak okyanusun karanlık sularına gömüldü. Yeterli can filikasının bulunmaması, tasarımdaki kibrin insan hayatına ne kadar pahalıya mal olduğunun acı bir göstergesiydi.',
+    questionStem: 'Yazar, Titanic felaketini anlatırken asıl neyi eleştirmektedir?',
     options: [
-      'Geçmişteki başarılarından güç alarak geleceğe umutla bakmaktadır.',
-      'Yaptığı hataları unutarak kendine yeni ve temiz bir sayfa açmıştır.',
-      'Hafızasından silmek istediği eylemlerin vicdani yükü altında ezilmektedir.',
-      'Eski dostlarının ihanetini bir türlü kabullenememektedir.'
+      'Gemi personelinin yeterli denizcilik eğitimine sahip olmamasını',
+      'İnsanoğlunun teknolojiye olan aşırı güveninin yarattığı büyüklenmeyi (kibri) ve tedbirsizliği',
+      'Okyanus yolculuklarının hava şartları nedeniyle her zaman risk taşıdığını',
+      'Gemideki lüks eşyaların geminin ağırlığını artırarak batmasına yol açmasını'
+    ],
+    correct: 1,
+    explanation: '"Tanrı bile batıramaz" düşüncesi ve can filikası eksikliği, teknolojiye duyulan kibrin ve aşırı güvenin faciaya yol açtığını gösterir.'
+  },
+  {
+    title: 'Marie Antoinette ve Pasta',
+    passage: 'Fransız Devrimi öncesinde halk açlıktan kırılırken, Kraliçe Marie Antoinette\'in "Ekmek bulamazlarsa pasta yesinler" dediği rivayet edilir. Günümüz tarihçileri Kraliçe\'nin böyle bir söz söylemediğini, bunun devrimciler tarafından üretilmiş bir kara propaganda olduğunu kanıtlamıştır. Ancak halk, sarayın lüksüne o kadar öfkeli ve Kraliçe\'ye o kadar yabancıydı ki, bu söylenti bir alev gibi yayıldı. Gerçeğin ne olduğu değil, kitlelerin o an neye inanmak istediği tarihi değiştirmişti.',
+    questionStem: 'Marie Antoinette ile ilgili bu olaydan çıkarılabilecek temel sosyolojik sonuç nedir?',
+    options: [
+      'Kraliyet ailesinin halkın beslenme alışkanlıklarını değiştirmeye çalıştığı',
+      'Tarihsel dönüm noktalarında söylentilerin ve algı yönetiminin, yalana dayalı olsa bile gerçeklerden daha etkili olabildiği',
+      'Fransız Devrimi\'nin sadece ekonomik sebeplerle değil, kültürel farklılıklarla başladığı',
+      'Halkın yöneticilere olan sevgisinin her koşulda sarsılmaz olduğu'
+    ],
+    correct: 1,
+    explanation: 'Sözün yalan olmasına rağmen devrimi alevlendirmesi, kitle psikolojisinde algının ve söylentilerin gerçeklerden daha güçlü olabildiğini kanıtlar.'
+  },
+  {
+    title: 'İskenderiye Kütüphanesi',
+    passage: 'Antik dünyanın en büyük bilgi merkezi olan İskenderiye Kütüphanesi, yüz binlerce el yazması parşömenle insanlığın ortak hafızasıydı. Farklı dönemlerde yaşanan savaşlar, isyanlar ve yangınlar sonucunda bu kütüphane tamamen yok oldu. O alevlerle birlikte sadece kâğıtlar değil; antik çağın astronomi, tıp, matematik ve felsefe birikimi de küle döndü. Bu yıkım, medeniyetin ne kadar kırılgan olduğunu ve bilginin korunmamasının insanlığı yüzyıllarca geriye götürebileceğini gösteren trajik bir kayıptır.',
+    questionStem: 'İskenderiye Kütüphanesi\'nin yok olmasının insanlık tarihindeki asıl etkisi nedir?',
+    options: [
+      'İskenderiye şehrinin ticari önemini yitirmesine neden olması',
+      'Bilgi birikiminin ve ortak hafızanın silinerek insanlığın bilimsel gelişiminin büyük bir kesintiye uğraması',
+      'Antik dönemdeki savaşların tamamen sona ermesini sağlaması',
+      'Papirüs ve parşömen yerine yeni yazı materyallerinin icat edilmesini hızlandırması'
+    ],
+    correct: 1,
+    explanation: 'Yüz binlerce eserin yanmasıyla astronomi, tıp gibi bilimsel birikimlerin küle dönmesi, insanlığın gelişiminin ve ortak hafızasının büyük bir darbe aldığını gösterir.'
+  },
+  {
+    title: 'Rosetta Taşı\'nın Şifresi',
+    passage: '1799\'da Napolyon\'un askerleri tarafından Mısır\'da bulunan Rosetta Taşı, üzerinde aynı metnin Antik Mısır hiyeroglifleri, Demotik yazı ve Antik Yunanca olmak üzere üç farklı dilde kazındığı bir granit bloktu. Bilim insanı Champollion, Yunanca metni rehber alarak yüzyıllardır okunamayan gizemli hiyerogliflerin şifresini çözmeyi başardı. Bu sıradan gibi görünen taş, dilsiz kalmış koca bir medeniyetin yeniden konuşmasını sağlayarak Mısırbilim (Ejiptoloji) adında yepyeni bir bilim dalının doğmasına yol açtı.',
+    questionStem: 'Bu metne göre Rosetta Taşı\'nın tarihteki önemi aşağıdakilerden hangisidir?',
+    options: [
+      'Napolyon\'un Mısır seferindeki askeri başarılarını kutlayan bir anıt olması',
+      'Antik döneme ait üç farklı dili içermesi sayesinde, unutulmuş Mısır medeniyetinin tarihinin aydınlatılmasına anahtar (şifre çözücü) olması',
+      'Dünyadaki en eski ve en değerli granit taşı olarak müzelerde sergilenmesi',
+      'Antik Yunan kültürünün Mısır kültüründen daha üstün olduğunu kanıtlaması'
+    ],
+    correct: 1,
+    explanation: 'Taşın üzerindeki bilinen Yunanca sayesinde bilinmeyen hiyerogliflerin çözülmesi, onu sessiz kalmış Mısır medeniyetinin tarihini aydınlatan bir anahtar yapmıştır.'
+  },
+  {
+    title: 'Kelebek Etkisi: Saraybosna Suikastı',
+    passage: '28 Haziran 1914\'te Saraybosna\'da, Sırp milliyetçisi Gavrilo Princip\'in silahından çıkan iki kurşun, Avusturya-Macaristan Veliahdı Franz Ferdinand\'ı öldürdü. Görünüşte bölgesel bir suikast olan bu olay, Avrupa\'daki gizli ittifaklar ağını tetikledi. Ülkeler birbiri ardına savaş ilan etti ve sadece birkaç hafta içinde tüm dünya I. Dünya Savaşı\'nın içine sürüklendi. Bu olay, tarihte küçük ve yerel bir kıvılcımın, doğru şartlar altında tüm gezegeni nasıl ateşe verebileceğinin en korkunç örneğidir.',
+    questionStem: 'Yazar, Franz Ferdinand suikastını anlatırken tarihsel olayların hangi özelliğine dikkat çekmektedir?',
+    options: [
+      'Tarihi olayların her zaman ekonomik temellere dayandığına',
+      'Yerel ve küçük çaplı gibi görünen bir eylemin, zincirleme reaksiyonla küresel ve yıkıcı sonuçlar doğurabileceğine',
+      'Suikastların savaşları önlemede zaman zaman etkili bir diplomatik araç olduğuna',
+      'Liderlerin güvenliğinin uluslararası anlaşmalarla tam olarak sağlanabileceğine'
+    ],
+    correct: 1,
+    explanation: 'İki kurşunun tüm dünyayı savaşa sürüklemesi, küçük bir olayın zincirleme etkiyle (kelebek etkisi) küresel felaketlere yol açabileceğini gösterir.'
+  },
+  {
+    title: 'Çernobil: Gizlenen Gerçekler',
+    passage: '1986 yılında Çernobil Nükleer Santrali\'nde meydana gelen patlama, insanlık tarihinin en büyük çevre felaketidir. Ancak felaketin boyutunu büyüten şey radyasyonun kendisinden çok, Sovyet yetkililerin durumu dünyadan ve kendi halkından günlerce saklama çabasıydı. İnsanlar ölümcül radyasyon bulutları altında 1 Mayıs kutlamalarına çıkarıldı. Çernobil, teknolojinin tehlikelerinden ziyade, otoriter sistemlerde şeffaflığın olmamasının ve gerçeğin örtbas edilmesinin ne kadar ölümcül olabileceğini acı bir şekilde kanıtladı.',
+    questionStem: 'Parçaya göre Çernobil felaketini asıl yıkıcı kılan faktör aşağıdakilerden hangisidir?',
+    options: [
+      'Nükleer santralin inşasında kullanılan malzemelerin kalitesizliği',
+      'Santral çalışanlarının eğitim seviyelerinin yetersiz olması',
+      'Yönetimin felaketi saklayarak şeffaf davranmaması ve halkı tehlikeye atması',
+      'Radyasyonun çevre ülkelere rüzgâr yoluyla çok hızlı yayılması'
     ],
     correct: 2,
-    explanation: 'Geçmişin tavandaki rutubet lekesi gibi sürekli orada olması ve tetiği çekmenin uykularını bölen bir çığlığa dönüşmesi, kahramanın vicdani bir azap çektiğini (ezildiğini) gösterir.'
+    explanation: 'Metinde felaketin boyutunu büyüten şeyin "radyasyonun kendisinden çok, gerçeğin örtbas edilmesi ve şeffaflığın olmaması" olduğu açıkça vurgulanmıştır.'
   },
   {
-    title: 'Neon Yalanlar',
-    passage: 'Göz alıcı neon tabelalar, şehrin çürüyen cesedini saklayan pahalı bir makyajdan farksızdı. Kırmızı ve mavi ışıkların asfalttaki yansımaları, pencerelerin ardında sessizce ağlayanların gözyaşlarına karışıyordu. Herkes bu ışıltılı illüzyona bilerek kanıyor, vitrinlerin sahte vaatlerine tapınarak kendi karanlık gerçekliklerinden kaçıyordu.',
-    questionStem: 'Parçadaki "neon tabelalar" neyi sembolize etmektedir?',
+    title: 'Hatanın İcadı: Penisilin',
+    passage: '1928 yılında İskoç bilim insanı Alexander Fleming, tatile çıkarken laboratuvarındaki petri kaplarını temizlemeyi unuttu. Döndüğünde, kaplardan birinde üreyen yeşil bir küfün etrafındaki tehlikeli bakterileri öldürdüğünü fark etti. Bu dikkatsizlik sonucu ortaya çıkan "Penicillium notatum" adlı küf, modern tıbbın seyrini değiştiren ilk antibiyotik olan penisilinin keşfiydi. Bilim tarihi, sadece sistemli çalışmaların değil, bazen "hata" olarak görülen detayları fark edebilecek keskin bir zekânın da dünyayı kurtarabileceğini gösterir.',
+    questionStem: 'Penisilinin keşif hikâyesinden çıkarılabilecek temel düşünce nedir?',
     options: [
-      'Şehrin ekonomik kalkınmasını ve modernleşmesini',
-      'Gerçek acıları ve toplumsal çürümüşlüğü örten aldatıcı bir vitrini',
-      'Karanlık sokakları aydınlatarak güvenliği sağlayan bir unsuru',
-      'İnsanların sanata ve estetiğe olan duyarlılığını'
-    ],
-    correct: 1,
-    explanation: 'Neon tabelalar, şehrin çürüyen cesedini saklayan pahalı bir makyaj olarak betimlenerek, gerçeği örten aldatıcı bir vitrin/illüzyon olarak sembolize edilmiştir.'
-  },
-  {
-    title: 'İhanetin Anatomisi',
-    passage: 'İhanet, bu sokaklarda bir istisna değil, nefes almak kadar sıradan bir refleksti. Sırtımda hissettiğim o soğuk namlu, bir düşmanın değil, yıllarca aynı ekmeği böldüğüm adamın elindeydi. Şaşırmadım. Bu şehirde sadakat, cebinde paran bitene kadar kiralayabildiğin ucuz bir fahişeydi sadece. Dostluklar ise, ilk kurşun atılana kadar süren kırılgan ateşkeslerden ibaretti.',
-    questionStem: 'Bu metinden ihanetle ilgili olarak aşağıdakilerden hangisi çıkarılabilir?',
-    options: [
-      'Sadece zayıf karakterli insanların başvurduğu bir yöntemdir.',
-      'Şehrin doğasına işlemiş, kaçınılmaz ve sıradanlaşmış bir durumdur.',
-      'Genellikle dışarıdan, hiç tanınmayan insanlardan gelir.',
-      'Sadece büyük ekonomik krizlerin yaşandığı dönemlerde ortaya çıkar.'
-    ],
-    correct: 1,
-    explanation: 'İhanetin nefes almak kadar sıradan bir refleks olduğu ve dostlukların kırılgan ateşkeslerden ibaret olduğu belirtilerek, ihanetin o şehirde kaçınılmaz ve sıradan bir şey (normalize olmuş) olduğu vurgulanmıştır.'
-  },
-  {
-    title: 'Duygusuzluk',
-    passage: 'Artık kimsenin ölümü haber değeri taşımıyordu. Dün gece köşebaşında vurulan adamın kanı henüz kurumadan, sabahın ilk saatlerinde takım elbiseli kalabalıklar o kanın üzerinden atlayarak işlerine yetişme telaşına düştüler. Ölüm, trajik bir son olmaktan çıkmış, sadece trafiği aksatan can sıkıcı bir pürüze dönüşmüştü. Bizler ruhumuzu beton dökerken kaybetmiştik.',
-    questionStem: 'Bu parçada asıl yakınılan (şikâyet edilen) durum nedir?',
-    options: [
-      'İş hayatının stresi altında ezilen insanların yorgunluğu',
-      'Medyanın olayları halka eksik ve taraflı yansıtması',
-      'Şiddetin kanıksanması ve insan hayatının değersizleşmesi',
-      'Emniyet güçlerinin suçluları yakalamada yetersiz kalması'
+      'Bilimsel başarıların tamamen tesadüflere bağlı olduğu ve çok çalışmanın önemsiz olduğu',
+      'Dikkatsizlik ve hataların her zaman insanlığa fayda sağlayan sonuçlar doğurduğu',
+      'Bilimde rastlantısal (tesadüfi) olayların, onları doğru yorumlayabilen gözlemci bir zekâyla birleştiğinde devrim yaratabileceği',
+      'Laboratuvar hijyeninin bilimsel deneylerin sonucunu hiçbir şekilde etkilemediği'
     ],
     correct: 2,
-    explanation: 'Ölümün trafik aksatan bir pürüz olarak görülmesi ve insanların kanın üzerinden atlayıp geçmesi, toplumun ölüme ve şiddete karşı duyarsızlaştığını (insan hayatının değersizleştiğini) gösterir.'
+    explanation: 'Fleming\'in unuttuğu bir kaptaki (rastlantı) küfü inceleyip antibiyotiği bulması, tesadüflerin ancak iyi bir gözlemci zekâyla birleştiğinde devrim yaratacağını gösterir.'
   },
   {
-    title: 'Korkunun Kokusu',
-    passage: 'Korku bu şehirde soyut bir kelime değildi; paslı demir, ter ve bayat sigara dumanından oluşan genzi yakan bir kokusu vardı. O koku ciğerlerinize dolduğunda, sokağın sonundaki gölgenin sizin için orada olduğunu anlardınız. Kaçmak faydasızdı; çünkü korku sizden daha hızlı koşar ve her zaman sizi kendi evinizde, en güvendiğiniz kilidin ardında beklerdi.',
-    questionStem: 'Parçadaki "korku" kavramıyla ilgili anlatılmak istenen aşağıdakilerden hangisidir?',
+    title: 'Spartaküs İsyanı',
+    passage: 'M.Ö. 73 yılında, gladyatör Spartaküs liderliğinde bir araya gelen yetmiş köle, Roma İmparatorluğu\'nun yenilmez ordularına karşı başkaldırdı. Yıllarca süren bu isyan, sayıları on binleri bulan bir köle ordusuna dönüştü. Spartaküs ve ordusu sonunda yenilip çarmıha gerilseler de, bu olay tarihe sadece bir askeri çatışma olarak geçmedi. Özgürlük ateşinin, en zincire vurulmuş bedenlerde bile asla söndürülemeyeceğini ve insanın onuru için imkânsıza kafa tutabileceğini gösteren ölümsüz bir sembol oldu.',
+    questionStem: 'Spartaküs İsyanı\'nın tarihsel süreçteki asıl değeri aşağıdakilerden hangisidir?',
     options: [
-      'İnsanların sadece karanlık sokaklarda hissettiği geçici bir duygudur.',
-      'Kaçınılması imkânsız, fiziksel olarak hissedilebilen ve bireyi her yerde bulan bir tehdittir.',
-      'Sadece suçluların kendi iç dünyalarında yaşadıkları psikolojik bir yanılsamadır.',
-      'Cesaretle üzerine gidildiğinde kolayca yenilebilen zihinsel bir zayıflıktır.'
-    ],
-    correct: 1,
-    explanation: 'Korkunun somut bir kokusu olduğunun söylenmesi ve kaçmanın faydasız olup her yerde kişiyi bulması, onun kaçınılmaz ve fiziksel olarak da varlığını hissettiren bir tehdit olduğunu ifade eder.'
-  },
-  {
-    title: 'Umut Zehri',
-    passage: 'Umut, çaresizlere satılan en tehlikeli uyuşturucuydu. \"Yarın daha iyi olacak\" yalanı, insanların isyan etmesini engelleyen, onları çürümüş sisteme itaatkâr köleler haline getiren kusursuz bir kilit mekanizmasıydı. Ben bu zehri yıllar önce içmeyi bıraktım. Artık biliyordum ki, bu şehirde güneş sadece gökdelenlerin en üst katlarındaki camları parlatmak için doğardı.',
-    questionStem: 'Kahramanın "umut" kavramına bakış açısı aşağıdakilerden hangisidir?',
-    options: [
-      'Hayatta kalmak için tutunulması gereken en güçlü manevi dayanaktır.',
-      'Sistemin sömürüsünü gizleyen, bireyi pasifleştirip isyanı önleyen bir yalandır.',
-      'Sadece zenginlerin ulaşabileceği pahalı ve lüks bir duygudur.',
-      'Toplumdaki yardımlaşma ve dayanışma duygusunu artıran birleştirici bir unsurdur.'
-    ],
-    correct: 1,
-    explanation: 'Umut; insanları itaatkâr köleler yapan, isyanı engelleyen tehlikeli bir uyuşturucu ve yalan olarak betimlenmiştir. Bu da onu bireyi pasifleştiren bir araç yapar.'
-  },
-  {
-    title: 'Gece ve Maskeler',
-    passage: 'Güneş battığında, insanların yüzlerindeki o saygın vatandaş maskeleri de eriyip kaybolurdu. Gece, herkesin asıl kimliğine kavuştuğu devasa bir günahkârlar balosuydu. Gündüz adliye koridorlarında dürüstlük nutukları atanlar, gece en izbe barlarda ruhlarını şeytana pazarlardı. Karanlık, kusurları örtmezdi bu şehirde; aksine onları tüm çıplaklığıyla sahneye çıkarırdı.',
-    questionStem: 'Bu parçada "gece" kavramına yüklenen işlev aşağıdakilerden hangisidir?',
-    options: [
-      'İnsanların günün yorgunluğunu attığı huzurlu bir sığınak olması',
-      'Suçluların kimliklerini gizleyerek rahatça hareket etmesini sağlaması',
-      'Toplumsal ikiyüzlülüğün sona erip, insanların gerçek (karanlık) yüzlerinin ortaya çıkması',
-      'Sadece yalnız ve mutsuz insanların uyanık kaldığı melankolik bir zaman dilimi olması'
+      'Roma İmparatorluğu\'nun askeri taktiklerini değiştirmesine neden olması',
+      'Kölelerin de iyi birer asker olabileceğini kanıtlaması',
+      'Yenilgiyle sonuçlansa bile, insan onurunun ve özgürlük iradesinin baskıya karşı direniş sembolü haline gelmesi',
+      'Antik dönemde köleliğin tamamen kaldırılmasını sağlaması'
     ],
     correct: 2,
-    explanation: 'Metne göre gece olduğunda maskeler düşmekte, gündüz saygın görünenlerin asıl çirkin ve günahkâr kimlikleri (ikiyüzlülükleri) ortaya çıkmaktadır.'
+    explanation: 'İsyan yenilgiyle sonuçlansa da, özgürlük ateşinin sönmeyeceği ve insanın onuru için imkansıza kafa tutabileceği (direniş sembolü) vurgulanmıştır.'
   },
   {
-    title: 'Sessizliğin Çığlığı',
-    passage: 'Siren sesleri sustuğunda başlayan o ağır sessizlik, huzurun değil, yaklaşan fırtınanın habercisiydi. Pencerelerin ardına saklanıp nefesini tutan halk, dışarıda kopan kıyamete kör ve sağır kalmayı seçmişti. Çünkü bu şehirde hayatta kalmanın ilk kuralı, hiçbir şey görmemiş ve hiçbir şey duymamış olmaktı. Dilsiz şeytanların krallığıydı burası; ve sükût, en büyük suç ortaklığıydı.',
-    questionStem: 'Yazar "sükût, en büyük suç ortaklığıydı" sözüyle ne anlatmak istemiştir?',
+    title: 'Salem Cadı Mahkemeleri',
+    passage: '1692 yılında Amerika\'nın Salem kasabasında birkaç genç kızın tuhaf davranışlar sergilemesiyle başlayan süreç, kasabayı bir histeri krizine sürükledi. Korku ve cehalet, komşuyu komşuya düşman etti; somut hiçbir kanıt olmaksızın, sadece "rüyasında gördüğünü" iddia eden çocukların sözleriyle onlarca masum insan cadılık suçlamasıyla asıldı. Salem, adaletin delillerle değil de toplumun yersiz korkuları ve kitlesel paranoyası ile yönlendirildiğinde nasıl bir cinayet makinesine dönüşebileceğinin en karanlık uyarısıdır.',
+    questionStem: 'Salem Cadı Mahkemeleri olayından günümüze yönelik çıkarılabilecek asıl ders nedir?',
     options: [
-      'Sessiz kalmanın insanları dinlendiren ve ruhu arındıran bir meditasyon olduğunu',
-      'Haksızlıklar karşısında tepki vermemenin, suçu işleyenleri onaylamak ve desteklemek anlamına geldiğini',
-      'Tehlike anında panik yapmayıp sessizce beklemenin en mantıklı savunma yöntemi olduğunu',
-      'Konuşmanın yasak olduğu baskıcı rejimlerde insanların birbirine yabancılaştığını'
+      'Cadılık ve doğaüstü olayların o dönemde gerçekten var olduğu',
+      'Toplumsal korku ve paranoyanın kanıtsız suçlamalarla birleştiğinde adaleti çökertip masumları yok edebileceği',
+      'Küçük kasabalarda yargı sisteminin her zaman kusursuz işlediği',
+      'Gençlerin söylediklerinin hukukta her zaman mutlak doğru kabul edilmesi gerektiği'
     ],
     correct: 1,
-    explanation: 'Kötülükler ve suçlar karşısında görmezden gelip sessiz kalmak (sükût), o suça göz yummak yani suça ortak olmak demektir.'
+    explanation: 'Somut kanıt olmadan sadece korku ve rüyalarla insanların asılması, kitlesel paranoyanın ve korkunun adaleti nasıl çökerttiğini anlatır.'
   },
   {
-    title: 'Satılık Vicdanlar',
-    passage: 'Vicdan, lüks restoranların menülerinde bulunmayan ama arka sokaklardaki karanlık anlaşmalarda ilk masaya sürülen para birimiydi. Herkesin bir fiyatı vardı; kimi bir avuç bozukluğa, kimi lüks bir arabaya ruhunu devrediyordu. Satın alınamayan adamlar ise dürüst oldukları için değil, sadece onlara teklif edilen rakam henüz yeterince büyük olmadığı için öyle görünüyorlardı.',
-    questionStem: 'Parçaya göre "vicdan ve dürüstlük" ile ilgili yazarın savunduğu düşünce nedir?',
+    title: 'Kara Ölüm: Yıkımın Getirdiği Değişim',
+    passage: '14. yüzyılda Asya\'dan Avrupa\'ya ticaret gemilerindeki pirelerle taşınan veba (Kara Ölüm), Avrupa nüfusunun üçte birini yok etti. Sokaklar cesetlerle doldu, şehirler hayalet kasabalara döndü. Ancak bu devasa trajedinin sosyolojik bir yan etkisi oldu: Nüfusun azalmasıyla iş gücü kıymete bindi. Toprak ağalarına (derebeylerine) bağımlı olan köylüler, daha yüksek ücretler talep etmeye ve haklar kazanmaya başladı. Tarihin en büyük felaketlerinden biri, paradoksal bir şekilde Avrupa\'da feodalizmin çöküşünü hızlandırdı.',
+    questionStem: 'Veba salgınının Avrupa üzerindeki etkisini anlatan bu parçada yazarın vurguladığı temel durum nedir?',
     options: [
-      'Dürüstlüğün doğuştan gelen değiştirilemez bir karakter özelliği olduğu',
-      'Ekonomik zorlukların insanları ister istemez vicdansızlığa ittiği',
-      'Gerçek anlamda dürüst kimsenin olmadığı, herkesin bir menfaat karşılığında ilkelerinden vazgeçebileceği',
-      'Zenginlerin fakirlere göre vicdani konularda daha hassas olduğu'
+      'Hastalıkların tıbbi gelişimleri zorunlu hale getirdiği',
+      'Büyük çaplı ve yıkıcı bir demografik felaketin, beklenmedik şekilde ekonomik ve sınıfsal (sosyolojik) değişimlere yol açtığı',
+      'Ticaret yollarının tamamen kapanmasıyla Avrupa\'nın içine kapandığı',
+      'Salgının köylüler arasında dayanışmayı azaltıp iç savaşlar çıkardığı'
+    ],
+    correct: 1,
+    explanation: 'Vebanın nüfusu yok etmesinin (felaket), iş gücünü değerli kılıp feodalizmi çökertmesi (sosyolojik ve ekonomik değişim) anlatılarak felaketin paradoksal sonucu vurgulanmıştır.'
+  },
+  {
+    title: 'Bir Çağın Kapanışı: İstanbul\'un Fethi',
+    passage: '1453 yılında Fatih Sultan Mehmet\'in İstanbul\'u fethetmesi, sadece bir şehrin el değiştirmesi değildi. O güne kadar "asılamaz" denilen devasa Bizans surlarının, Şahi adı verilen dev toplarla yıkılabileceği kanıtlandı. Bu teknolojik şok dalgası Avrupa\'da yankılandı; krallar, kendi topraklarındaki asi derebeylerinin şatolarını toplarla yıkarak merkezi krallıklarını güçlendirdiler. İstanbul\'un düşüşü, askeri teknolojinin (topların) feodal sistemi nasıl tarihe gömdüğünün ve Orta Çağ\'ı nasıl kapattığının sembolüdür.',
+    questionStem: 'İstanbul\'un Fethi\'nin Avrupa siyasi yapısına (feodalizme) olan asıl etkisi parçada nasıl açıklanmıştır?',
+    options: [
+      'Bizanslı bilginlerin Avrupa\'ya kaçarak Rönesans\'ı başlatmasıyla',
+      'Yeni ticaret yollarının aranmasının Coğrafi Keşiflere yol açmasıyla',
+      'Aşılamaz sanılan surların toplarla yıkılabileceğinin görülmesinin, şatolara güvenen derebeylik sisteminin sonunu getirmesiyle',
+      'Osmanlı tehlikesine karşı Avrupa ülkelerinin siyasi birleşme kararı almasıyla'
     ],
     correct: 2,
-    explanation: 'Metinde herkesin bir fiyatı olduğu ve satın alınamayanların sadece teklif edilen rakam az olduğu için henüz satılmadığı (yani herkesin çıkar karşılığı taviz verebileceği) savunulmuştur.'
+    explanation: 'Parçada fetih sırasında topların surları yıkmasının, Avrupa\'daki kralların şatoları yıkmasına ilham verdiği ve feodalizmi çökerttiği (derebeylik sistemini yıktığı) belirtilmiştir.'
   },
   {
-    title: 'Kaderin Zarları',
-    passage: 'Kendi seçimlerimizle yaşadığımızı sanmak, bu devasa kumarhanede krupiyenin bize anlattığı en güzel masaldı. Biz zarları attığımızı zannederken, masanın altındaki görünmez bir el çoktan hangi rakamın geleceğini belirlemişti. Özgür irade, kaybedenlerin teselli bulmak için uydurduğu şık bir kelimeden ibaretti. Çark dönüyor, bilye düşüyor ve biz sadece bize biçilen trajedinin figüranlığını yapıyorduk.',
-    questionStem: 'Parçada "özgür irade" kavramına yönelik yazarın yaklaşımı hangisidir?',
+    title: 'Krakatoa: Dünyanın Duyduğu Çığlık',
+    passage: '1883 yılında Endonezya\'daki Krakatoa Yanardağı patladığında, ortaya çıkan ses o kadar şiddetliydi ki yaklaşık 5000 kilometre uzaktaki adalardan bile duyuldu. Patlamanın püskürttüğü devasa kül bulutu atmosferi kapladı ve dünyadaki ortalama sıcaklık yıllarca düştü. Avrupa\'da ve Amerika\'da gökyüzü aylarca tuhaf kırmızı ve mor renklere büründü. Krakatoa felaketi, gezegenimizin aslında sınırları olmayan tek bir organizma olduğunu ve dünyanın bir ucundaki olayın diğer ucunu nasıl etkileyebileceğini gösterdi.',
+    questionStem: 'Krakatoa patlamasının anlatıldığı bu parçanın ana düşüncesi nedir?',
     options: [
-      'İnsanın kaderini kendi çabası ve seçimleriyle şekillendirebileceği',
-      'Özgür iradenin bir yanılsama olduğu ve olayların önceden kurgulanmış bir sistemin kontrolünde ilerlediği',
-      'Kumara ve şansa dayalı hayatların insanı iradesizleştirdiği',
-      'Yalnızca güçlü ve zengin insanların özgür iradeye sahip olabileceği'
+      'Yanardağ patlamalarının her zaman uzun süreli buzul çağlarına neden olduğu',
+      'Gezegenimizdeki doğa olaylarının yerel kalmayıp küresel bir ekolojik bağa ve etkiye sahip olduğu',
+      'Endonezya coğrafyasının yaşamak için dünyanın en tehlikeli yeri olduğu',
+      'Gökyüzündeki renk değişimlerinin sadece volkanik patlamalarla açıklanabileceği'
     ],
     correct: 1,
-    explanation: 'Seçimlerimizin bir masal olduğu, zarların sonucunun görünmez bir el tarafından belirlendiği ve özgür iradenin bir teselli (yanılsama) olduğu anlatılmıştır (Determinizm).'
+    explanation: 'Endonezya\'daki patlamanın Avrupa\'daki gökyüzünü değiştirmesi ve sıcaklığı düşürmesi, dünyanın birbirine bağlı (küresel ekolojik bağ) tek bir organizma olduğunu gösterir.'
   },
   {
-    title: 'Aşkın Rengi',
-    passage: 'Onun dudaklarındaki gülümseme, içine düşeceğimi bildiğim zehirli bir sarmaşık gibiydi. Gözlerindeki sahte masumiyetin ardında, pusuya yatmış bir engereğin sabrı saklıydı. Bu şehirde aşk, iki kişinin birbirini iyileştirmesi değil; kimin diğerini daha önce yok edeceği üzerine oynanan ölümcül bir rus ruletiydi. Onu sevmek, kendi idam fermanımı sevinçle imzalamaktı.',
-    questionStem: 'Bu metinde "aşk", aşağıdaki kavramlardan hangisiyle özdeşleştirilmiştir?',
+    title: 'Bir İnancın Gücü: Jan Dark',
+    passage: 'Yüzyıl Savaşları sırasında İngiliz işgali altındaki Fransa umutsuzluk içindeyken, 17 yaşında okuma yazma bilmeyen köylü bir kız olan Jan Dark ortaya çıktı. Tanrı\'dan ilahi mesajlar aldığını ve Fransa\'yı kurtaracağını söyleyerek moralsiz orduya liderlik etti ve imkânsız görünen zaferler kazandı. Sonunda ihanete uğrayıp İngilizler tarafından yakılarak öldürülse de, onun tutuşturduğu vatanseverlik ateşi Fransızları birleştirdi. Jan Dark, sarsılmaz bir inancın ve adanmışlığın koca bir milletin kaderini nasıl değiştirebileceğinin en somut örneğidir.',
+    questionStem: 'Yazar Jan Dark\'ın hikâyesinde asıl olarak hangi kavramın gücünü ön plana çıkarmaktadır?',
     options: [
-      'Fedakârlık ve karşılıksız bağlılık',
-      'Geçmişin yaralarını saran manevi bir sığınak',
-      'Kaçınılmaz bir yıkım ve ölümcül bir tuzak',
-      'Toplumsal kurallara karşı bir başkaldırı'
+      'Savaşlarda kullanılan modern askeri taktiklerin',
+      'Kadınların orduda daha fazla yer alması gerektiğinin',
+      'Sarsılmaz bir inancın, kararlılığın ve bireysel adanmışlığın toplumları harekete geçiren gücünün',
+      'Diplomatik müzakerelerin savaşlardan daha kesin sonuçlar verdiğinin'
     ],
     correct: 2,
-    explanation: 'Aşk zehirli bir sarmaşığa, engereğe, rus ruletine ve idam fermanına benzetilerek; iyileştirici değil, yok edici (yıkıcı) bir tuzak olarak gösterilmiştir (Femme Fatale motifi).'
+    explanation: 'Okuma yazma bilmeyen bir köylü kızının sadece inancıyla moralsiz bir orduya liderlik edip milleti birleştirmesi, bireysel inancın ve adanmışlığın gücünü vurgular.'
   },
   {
-    title: 'Mekanik Hayatlar',
-    passage: 'Her sabah aynı gri binalardan, aynı asık suratlarla kusan milyonlarca yürüyen cesettik biz. Kan damarlarımızda kan değil, kredi kartı borçları ve ödenmemiş faturaların stresi akıyordu. Saat çarklarının arasında ezilen et parçalarından farksızdık. Kimse birbirinin gözünün içine bakmıyor, sadece önündeki ekrana kilitlenmiş halde kendi dijital zindanında çürümeyi bekliyordu.',
-    questionStem: 'Parçada modern şehir insanıyla ilgili olarak aşağıdakilerden hangisi eleştirilmektedir?',
+    title: 'Macellan\'ın Tamamlanamayan Yolculuğu',
+    passage: 'Ferdinand Macellan, 1519 yılında beş gemiyle batıya doğru yelken açarak dünyanın etrafını tam bir tur dolaşmayı hedefledi. O güne kadar haritalanmamış okyanuslarda isyanlar, açlık ve hastalıkla boğuştu. Macellan, Filipinler\'de yerlilerle girdiği bir çatışmada hayatını kaybetti. Ancak yola çıkan beş gemiden sadece biri (Victoria), üç yıl sonra perişan haldeki 18 denizciyle İspanya\'ya dönmeyi başardı. Kaptanı ölmüş olsa da bu yolculuk, dünyanın yuvarlak olduğunu uygulamalı olarak kanıtlayan ilk büyük zaferdi.',
+    questionStem: 'Bu metne göre Macellan\'ın yolculuğu ile ilgili aşağıdakilerden hangisi söylenebilir?',
     options: [
-      'İnsanların doğadan uzaklaşıp kırsal yaşama özlem duyması',
-      'Maddi kaygılar ve mekanik rutinler içinde insani duyguların ve iletişimin yitirilmesi',
-      'Teknolojinin yetersiz kalması sonucu iş hayatının zorlaşması',
-      'Kredi kartı kullanımının ekonomik krizi daha da derinleştirmesi'
-    ],
-    correct: 1,
-    explanation: 'Yürüyen cesetlere benzetilen insanların borç stresiyle mekanikleştiği, göz teması kurmayarak (iletişimsizlik) dijital ekranlara gömüldüğü ve hissizleştiği eleştirilmiştir.'
-  },
-  {
-    title: 'Silahın Ağırlığı',
-    passage: 'Namlunun ucundan çıkan bir saniyelik alev, bir insanın tüm geçmişini ve geleceğini silip atmaya yetiyordu. Silahı elinde tutan güçlendiğini sanır, oysa asıl tetik, tutanın ruhunda çekilirdi. Verdiğim her canla birlikte kendi insanlığımdan bir parça kopardığımı hissediyordum. Belimde taşıdığım bu paslı metal, beni koruyan bir kalkan değil; ruhumu azar azar emen kara bir delikti.',
-    questionStem: 'Silah kullanmanın kahraman üzerindeki etkisi aşağıdakilerden hangisidir?',
-    options: [
-      'Kendini şehrin yenilmez ve tek hakimi hissetmesini sağlamıştır.',
-      'Düşmanlarına karşı ona büyük bir güven ve huzur vermiştir.',
-      'Karşı tarafı yok ederken aslında kendi ruhsal çöküşünü ve insanlığından uzaklaşmasını hızlandırmıştır.',
-      'Adaleti sağlamak adına girdiği yolda onun en büyük yardımcısı olmuştur.'
+      'Yolculuğa katılan tüm gemi ve mürettebatın başarılı bir şekilde ülkeye döndüğü',
+      'Sadece ticari amaçlarla yapılan kolay ve sorunsuz bir sefer olduğu',
+      'Macellan\'ın yolculuğu bizzat tamamlayamamasına rağmen, insanlık tarihi için çığır açıcı bir keşfe imza atıldığı',
+      'Dünyanın yuvarlak olduğunun yerliler tarafından Macellan\'a öğretildiği'
     ],
     correct: 2,
-    explanation: 'Her canla birlikte kendi insanlığından koptuğunu ve silahın ruhunu emen bir kara delik olduğunu söylemesi, şiddetin kişinin kendi ruhunu (insanlığını) da yok ettiğini gösterir.'
+    explanation: 'Macellan\'ın ölmesine rağmen kalan bir geminin turu tamamlayıp dünyanın yuvarlak olduğunu kanıtlaması, lider ölmüş olsa da amacın gerçekleştiğini (çığır açıcı keşif) gösterir.'
   },
   {
-    title: 'Aynadaki Yabancı',
-    passage: 'Aynaya her baktığımda karşılaştığım yüz, yıllar önce yola çıkarken sahip olduğum idealist adama ait değildi artık. Çizgilerde sadece yaşlılığın değil, verilen tavizlerin, söylenen yalanların ve yutulan gururun izleri vardı. Canavarlarla savaşırken canavara dönüşmemek için yemin etmiştim; oysa şimdi, avladığım adamların nefesini kendi ciğerlerimde hissediyordum.',
-    questionStem: 'Bu metne göre kahramanın "aynaya baktığında" hissettiği asıl duygu nedir?',
+    title: 'Wright Kardeşler ve Yerçekimi',
+    passage: '1903 yılında Wilbur ve Orville Wright kardeşler ilk motorlu uçağı uçurduklarında, gazeteler bu olayı haber yapmaya bile değer görmedi. Dönemin en saygın bilim insanları havadan ağır bir makinenin uçmasının fiziksel olarak imkânsız olduğunu savunuyordu. Bisiklet tamircisi olan bu iki kardeş, akademik unvanları olmamasına rağmen binlerce deneme-yanılma ve kendi tasarladıkları rüzgâr tüneli sayesinde yerçekimine meydan okudular. Onların hikâyesi, dogmalara ve toplumsal şüphelere karşı tutkunun ve azmin zaferidir.',
+    questionStem: 'Wright Kardeşler\'in uçuş deneyiminden yola çıkarak ulaşılabilecek genel yargı nedir?',
     options: [
-      'Yılların geçmesiyle kaybettiği gençliğine duyduğu derin özlem',
-      'Zamanla ideallerini yitirip, mücadele ettiği kötü niyetli insanlara benzemesinden duyduğu acı bir yüzleşme',
-      'Bütün zorluklara rağmen hayatta kalmayı başarmış olmanın verdiği gurur',
-      'Kendine yeni hedefler belirleyememenin yarattığı vizyonsuzluk'
-    ],
-    correct: 1,
-    explanation: 'Canavarla savaşırken canavara dönüşmesi, söylenen yalanlar ve yutulan gurur; kahramanın ideallerini kaybedip savaştığı kötülüğün bir parçası haline geldiğini gösterir.'
-  },
-  {
-    title: 'Küller ve Şehir',
-    passage: 'Yangın bittikten sonra geriye kalan sadece gri bir kül yığını değildi; o küller, bu şehrin temeline harç yapılmış ihanetlerin ve gözyaşlarının kalıntısıydı. Yeniden inşa edilen her gökdelen, bir öncekini yakanların cebini dolduruyordu. Yıkım, bu metropolde bir son değil; zenginlerin servetine servet katmak için periyodik olarak sahneledikleri vahşi bir tiyatroydu sadece.',
-    questionStem: 'Yazar, şehirdeki "yıkım ve yeniden inşa" süreçlerini nasıl yorumlamaktadır?',
-    options: [
-      'Şehrin modernleşmesi ve daha sağlam yapılara kavuşması için zorunlu bir adım',
-      'Eski mimarinin korunmamasının yol açtığı kültürel bir yozlaşma',
-      'Güç odaklarının (zenginlerin) kendi ekonomik çıkarları uğruna kasten yarattığı sömürü odaklı bir döngü',
-      'Doğal afetlerin şehir planlaması üzerindeki kaçınılmaz ve yıkıcı etkisi'
+      'Büyük buluşların her zaman üniversitelerde ve akademik çevrelerde yapıldığı',
+      'Medyanın bilimsel gelişmeleri her zaman anında destekleyip kitlelere ulaştırdığı',
+      'Bilimsel otoritenin imkânsız dediği şeylerin bile, tutkulu bir çalışma ve inançla (azimli denemelerle) başarılabileceği',
+      'Havacılık tarihinin sadece bisiklet tamircileri tarafından şekillendirildiği'
     ],
     correct: 2,
-    explanation: 'Metinde yangın/yıkımın zenginlerin servetini artırmak için sahneledikleri "vahşi bir tiyatro" olduğu söylenerek, yıkımın rant (ekonomik çıkar) amaçlı kurgulandığı vurgulanmıştır.'
+    explanation: 'Bilim insanlarının imkânsız dediği ve basının görmezden geldiği bir şeyi iki bisiklet tamircisinin başarması, azmin ve tutkunun dogmaları (kalıplaşmış inançları) yıkabileceğini gösterir.'
   },
   {
-    title: 'Saat Tik-Takları',
-    passage: 'Odamdaki antika duvar saatinin tik-takları, zamanın ilerlediğini değil; ölümün ağır ağır ayak sesleriyle bana yaklaştığını haber veriyordu. Beklemek, bir kurşun yemekten çok daha eziyetliydi. Namlu şakağınıza dayandığında her şey bir saniyede biterdi; ama o odada, sessizliğin ve tik-takların arasında kendi sonunuzu beklerken binlerce kez ölür, binlerce kez dirilirdiniz.',
-    questionStem: 'Bu parçada kahramanın psikolojisi ile ilgili aşağıdakilerden hangisi söylenebilir?',
+    title: 'Ay\'daki Ayak İzi: Apollo 11',
+    passage: '1969 yılında Apollo 11 göreviyle Neil Armstrong Ay yüzeyine adım attığında "Benim için küçük, insanlık için dev bir adım" demişti. Soğuk Savaş\'ın en gergin günlerinde, Amerika ve Sovyetler arasındaki yıkıcı bir silahlanma yarışının parçası olarak başlayan bu uzay rekabeti, o an için dünyadaki tüm sınırları sildi. Televizyon başında nefesini tutan milyonlarca insan ırk, dil veya ideoloji ayrımı gözetmeksizin sadece "insan" olmanın gururunu yaşadı. O ayak izi, rekabetin bile bazen insanlık için evrensel bir ilhama dönüşebileceğinin kanıtıdır.',
+    questionStem: 'Yazar, Apollo 11 Ay\'a iniş olayının hangi yönünü ön plana çıkarmaktadır?',
     options: [
-      'Zamanı iyi değerlendiremediği için derin bir pişmanlık duymaktadır.',
-      'Sessizlik ve bekleyişin getirdiği belirsizlik, ona fiziksel acıdan veya ölümden daha fazla ruhsal eziyet çektirmektedir.',
-      'Antika saatlerin nostaljik yapısı ona geçmişte yaptığı hataları hatırlatmaktadır.',
-      'Ölüm korkusunu yenmek için zaman algısını tamamen yitirmeyi arzulamaktadır.'
-    ],
-    correct: 1,
-    explanation: 'Kurşun yemenin bir saniye süreceği ancak saatin tik-takları arasında ölümü beklemenin insana binlerce kez ölümü yaşattığı (bekleyişin/belirsizliğin büyük eziyet olduğu) ifade edilmiştir.'
-  },
-  {
-    title: 'Kiralık Kalemler',
-    passage: 'Gerçeği yazmak eskiden gazetecilerin namusuydu. Şimdi ise haber daireleri, büyük şirketlerin basın bültenlerini halka kusan gösterişli birer hoparlörden ibaret. Kelimelerin gücü, onları kimin finanse ettiğine bağlı olarak şekil değiştiriyor. Halk, manşetlerde kendi gerçeğini değil; sadece elitlerin onların inanmasını istediği parlak ve uyuşturucu senaryoları okuyor.',
-    questionStem: 'Parçada "basın ve medya" kurumlarına yöneltilen asıl eleştiri nedir?',
-    options: [
-      'Gazetecilerin dil ve yazım kurallarına yeterince dikkat etmemesi',
-      'Teknolojinin gelişmesiyle basılı gazetelerin yerini dijital haberlerin alması',
-      'Medyanın halkı aydınlatma görevini terk edip güç odaklarının (elitlerin) çıkarlarına hizmet eden bir manipülasyon aracı olması',
-      'Halkın haber okuma alışkanlığının giderek azalması ve basına olan ilgisizliği'
+      'Uzay teknolojilerinin günlük hayattaki pratik kullanımlarını',
+      'Soğuk Savaş dönemindeki siyasi rekabetin ve düşmanlığın asla sona ermediğini',
+      'Rekabetçi siyasi bir motivasyonla başlasa da, sonucun tüm insanlığı birleştiren evrensel ve gurur verici bir başarıya dönüştüğünü',
+      'Ay yüzeyinde bırakılan ayak izinin coğrafi ve bilimsel araştırmalara yön verdiğini'
     ],
     correct: 2,
-    explanation: 'Gazetelerin şirketlerin hoparlörüne dönüştüğü ve halka gerçekler yerine elitlerin senaryolarının yutturulduğu söylenerek medyanın manipülatif (yönlendirici) ve satılmış yapısı eleştirilmiştir.'
-  },
-  {
-    title: 'Yağmurun Sırrı',
-    passage: 'Bazıları yağmurun gökyüzünün gözyaşları olduğuna inanır, romantik şiirler yazarlardı. Oysa ben o kara bulutların, şehre bakıp mideleri bulandığı için asfalta tükürdüklerini düşünüyordum. Bu kadar çok günahı, bu kadar ihaneti ve pisliği başka hangi su temizleyebilirdi ki? Ama nafileydi; su buharlaşıp uçar, geriye yine o genzi yakan çürüme kokusu kalırdı.',
-    questionStem: 'Kahramanın "yağmur" doğa olayına yüklediği anlama göre, aşağıdakilerden hangisi onun dünya görüşüyle örtüşür?',
-    options: [
-      'Doğa, insanların yarattığı kirliliği her zaman affeden ve temizleyen şefkatli bir annedir.',
-      'Şehirdeki ahlaki kirlilik ve yozlaşma o kadar derindir ki, hiçbir doğa olayı veya çaba bu çürümüşlüğü kalıcı olarak temizleyemez.',
-      'İklim değişiklikleri ve doğa olayları, insanların sanayileşme hırsının kaçınılmaz bir sonucudur.',
-      'İnsanların duygu durumları, havanın güneşli veya yağmurlu olmasına göre sürekli değişkenlik gösterir.'
-    ],
-    correct: 1,
-    explanation: 'Yağmurun romantik değil, şehrin pisliğine duyulan bir tiksinti (tükürük) olduğu ve suyu uçunca geriye yine çürümenin kaldığı belirtilerek yozlaşmanın kalıcılığı (temizlenemezliği) vurgulanmıştır.'
+    explanation: 'Silahlanma yarışı (rekabet) ile başlayan bu olayın, o an televizyon başındaki herkesi sınırları kaldırarak "insan" olma gururunda birleştirmesi (evrensel ilham) vurgulanmıştır.'
   }
 ];
 
