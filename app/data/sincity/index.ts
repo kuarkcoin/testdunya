@@ -3087,6 +3087,283 @@ export const edebiyatParagrafSorulari10: BilimParagrafQuestion[] = Array.from({ 
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
+const PARAGRAPH_THEMES_12 = [
+  {
+    title: 'Dünyayı Kurtaran Adam: Stanislav Petrov',
+    passage: '26 Eylül 1983 gece yarısı, Sovyet nükleer uyarı sistemleri aniden çığlık atmaya başladı: Ekranda, Amerika\'nın Sovyetler\'e 5 adet nükleer füze fırlattığı yazıyordu. Prosedür kesindi: Karşı saldırı başlatılmalı ve dünya nükleer bir cehenneme sürüklenmeliydi. Ancak nöbetçi subay Stanislav Petrov, sistemin "kesin" uyarısına rağmen duraksadı. "Saldıracak olsalar 5 füzeyle değil, yüzlerce füzeyle saldırırlardı" diyerek bunun bir sistem hatası olduğuna kanaat getirdi ve alarmı üstlerine bildirmedi. Haklıydı; güneş ışınları bulutlardan yansıyıp uyduları kandırmıştı. O gece dünya, kusursuz sanılan devasa bir teknolojinin (makinenin) değil; kuralları ve algoritmaları reddeden bir insanın soğukkanlı sezgisi sayesinde kurtuldu.',
+    questionStem: 'Stanislav Petrov olayından yola çıkarak teknoloji ve insan ilişkisine dair çıkarılabilecek temel ders nedir?',
+    options: [
+      'Güneş ışınlarının elektronik cihazlar üzerinde her zaman kalıcı hasarlar bıraktığı',
+      'Askeri prosedürlerin ve kuralların kriz anlarında her zaman en güvenilir rehber olduğu',
+      'Kusursuz sanılan teknolojik sistemlerin bile yanılacağı ve kriz anlarında insan sezgisinin (soğukkanlı muhakemenin) makinelerden çok daha hayati (kurtarıcı) olduğu',
+      'Nükleer savaş tehdidinin sadece psikolojik bir manipülasyon aracı olduğu'
+    ],
+    correct: 2,
+    explanation: 'Makinenin kesin fırlatma uyarısına rağmen Petrov\'un soğukkanlı sezgisiyle (insani muhakemesiyle) hatayı fark etmesi, insan sezgisinin teknolojinin üzerinde bir kurtarıcı olduğunu kanıtlar.'
+  },
+  {
+    title: 'Tramvay İkilemi (Trolley Problem)',
+    passage: 'Felsefenin en meşhur ahlaki deneylerinden biri olan Tramvay İkilemi şöyledir: Kontrolden çıkmış bir tramvay, raylara bağlanmış 5 kişinin üzerine doğru hızla gitmektedir. Sizin elinizde bir makas kolu vardır; eğer kolu çekerseniz tramvay diğer raya geçecek, ancak o rayda bağlı olan 1 kişiyi ezip öldürecektir. Hiçbir şey yapmazsanız 5 kişi ölecek, müdahale ederseniz sizin eyleminiz yüzünden 1 kişi ölecektir. Bu karanlık senaryo, bizi şu korkunç gerçekle yüzleştirir: "Çoğunluğun faydası" uğruna masum birini bilerek feda etmek cinayet midir, yoksa ahlaki bir zorunluluk mu? Ahlak, sadece sonuçların matematiği midir, yoksa eylemin niyetine bağlı sarsılmaz bir çizgi mi?',
+    questionStem: 'Tramvay İkilemi düşünce deneyinin felsefede tartışmaya açtığı asıl "karanlık (çözümsüz)" konu nedir?',
+    options: [
+      'Raylı sistemlerin o dönemde yetersiz güvenlik önlemleriyle çalışması',
+      'İnsanların tehlike anında çoğunlukla kaçmayı tercih etmesi ve sorumluluktan korkması',
+      'Çoğunluğun hayatını kurtarmak için (faydacılık) masum birini feda etmenin ahlaki bir doğru mu yoksa bir cinayet mi olduğu sorunsalı',
+      'Tramvay kazalarının diğer kazalara göre daha travmatik psikolojik etkiler bırakması'
+    ],
+    correct: 2,
+    explanation: 'Deney, 5 kişiyi kurtarmak için 1 kişiyi bilerek feda etmenin (sayısal faydanın) ahlaki olarak doğru mu yoksa cinayet mi olduğu şeklindeki felsefi çıkmazı tartışır.'
+  },
+  {
+    title: 'Kessler Sendromu: Uzaydaki Hapishanemiz',
+    passage: 'İnsanoğlu gökyüzüne uydular fırlatıp teknolojik kibrini uzaya taşırken, geride devasa bir çöplük bıraktı. NASA bilim insanı Donald Kessler\'ın ortaya attığı "Kessler Sendromu"na göre; Dünya\'nın yörüngesindeki ömrünü yitirmiş uydular ve metal parçaları bir gün birbirine çarpmaya başlayacak. Bu çarpışmalar binlerce yeni şarapnel yaratacak ve o şarapneller saatte 28 bin km hızla diğer uyduları parçalayarak zincirleme bir reaksiyona neden olacak. Sonuç: Dünya\'nın etrafı geçilemez bir mermi (çöp) bulutuyla kaplanacak. İletişim, GPS ve internet anında çökeceği gibi, yüzlerce yıl boyunca Dünya\'dan başka bir uzay aracı fırlatmak imkânsız hale gelecek. İnsanoğlu, kendi ürettiği teknolojik çöplerin ördüğü görünmez bir kafeste, kendi gezegenine hapsolacaktır.',
+    questionStem: 'Kessler Sendromu\'nun gerçekleşmesi durumunda ortaya çıkacak asıl ironik (korkutucu) felaket nedir?',
+    options: [
+      'Uzaylıların dünyayı keşfetmesinin tamamen engellenmesi',
+      'İnsanoğlunun uzayı fethetmek için ürettiği teknolojinin (ve çöplerinin), sonunda onu uzaya çıkamaz hale getirip kendi gezegenine hapsetmesi',
+      'Küresel ısınmanın uzaydaki çöpler yüzünden daha da hızlanması',
+      'Meteor çarpmalarının dünya yüzeyinde çok daha yıkıcı etkiler bırakması'
+    ],
+    correct: 1,
+    explanation: 'Uzayı keşfetmek için atılan uyduların çöp bulutuna dönüp, insanın uzaya çıkmasını (ve haberleşmesini) engelleyecek bir hapishaneye dönüşmesi olayın asıl korkutucu ironisidir.'
+  },
+  {
+    title: 'Çin Odası Argümanı',
+    passage: 'Filozof John Searle, "Yapay zekâ gerçekten düşünebilir mi?" sorusuna "Çin Odası" argümanıyla sarsıcı bir cevap verir. Çince bilmeyen bir adamı kapalı bir odaya koyun ve eline Çince sembollerin nasıl eşleştirileceğini gösteren (eğer şu şekil gelirse bu şekli ver diyen) koca bir kural kitabı verin. Dışarıdan biri odaya Çince bir soru attığında, adam kitaba bakıp doğru Çince sembolleri dışarı uzatır. Dışarıdaki kişi, içeridekinin anadil seviyesinde Çince bildiğine yemin edebilir; oysa adam hiçbir şey anlamamış, sadece şekilleri (algoritmaları) eşleştirmiştir. Bilgisayarlar da böyledir. Ne kadar zeki veya duygusal cevaplar verirlerse versinler, onlar hiçbir şeyi "anlamazlar"; sadece başarılı birer taklitçi (şekil eşleştirici) ve ruhsuz birer illüzyondurlar.',
+    questionStem: 'Çin Odası Argümanı, Yapay Zekâ (AI) teknolojisi hakkında hangi felsefi gerçeği kanıtlamaya çalışır?',
+    options: [
+      'Çince gibi karmaşık dillerin bilgisayarlar tarafından asla tercüme edilemeyeceğini',
+      'Yapay zekânın ne kadar kusursuz cevaplar üretirse üretsin, aslında bir bilince (anlama yetisine) sahip olmadığını, sadece komutları (sembolleri) eşleştiren bir taklitçi olduğunu',
+      'Gelecekte bilgisayarların insan beyninin yerini tamamen alacağını',
+      'Dil öğrenmenin sadece ezber yeteneğiyle ilgili biyolojik bir süreç olduğunu'
+    ],
+    correct: 1,
+    explanation: 'Çince bilmeyen adamın sadece kitapla şekil eşleştirmesi; bilgisayarların da anlamadan (bilinçsizce) sadece kodları/sembolleri eşleştiren birer taklitçi olduğunu kanıtlar.'
+  },
+  {
+    title: 'Universe 25 (Fare Ütopyası)',
+    passage: '1960\'larda etolog John B. Calhoun, hastalıkların, yırtıcıların ve açlığın olmadığı; sınırsız yiyecek ve mükemmel bir sıcaklığa sahip devasa bir fare şehri (Universe 25) kurdu. Nüfus hızla arttı, ancak alan daralmaya başladığında farelerin psikolojisi çöktü. "Davranışsal Çöküş" adı verilen bir evreye girdiler: Anneler yavrularını terk etti, erkekler sebepsiz yere birbirini öldürmeye başladı ve "Güzeller" adı verilen bir grup fare, toplumdan tamamen izole olup sadece tüylerini yalayarak yaşamaya başladı. Sonunda üreme tamamen durdu ve o kusursuz ütopya, farelerin kendi kendilerini yok ettiği bir hayalet şehre dönüştü. Calhoun\'un ütopyası, fiziksel ihtiyaçların sınırsızca karşılandığı ama kişisel alanın (anlamın) yok olduğu kalabalıkların, kaçınılmaz olarak cinnete ve yok oluşa sürüklendiğini kanıtlar.',
+    questionStem: 'Universe 25 (Fare Ütopyası) deneyi, toplum bilimciler için neyin sarsıcı bir metaforudur?',
+    options: [
+      'Farelerin genetik olarak doğuştan şiddete eğilimli hayvanlar olduğunun',
+      'Fiziksel tehlikelerin olmamasının canlıları daha tembel yaptığı gerçeğinin',
+      'Sınırsız kaynağa rağmen aşırı kalabalıklaşmanın ve anlam/amaç yitiminin, toplumları psikolojik bir cinnete ve "davranışsal çöküşe" (yok oluşa) götüreceğinin',
+      'Bulaşıcı hastalıkların kapalı alanlarda çok daha hızlı yayıldığının'
+    ],
+    correct: 2,
+    explanation: 'Açlık veya yırtıcı tehlikesi olmamasına rağmen (sınırsız kaynak), aşırı nüfus ve alan daralmasının fareleri psikolojik çöküşe/cinnete (davranışsal çöküşe) sürüklemesi metnin asıl mesajıdır.'
+  },
+  {
+    title: 'Halo Etkisi (Hale Yanılgısı)',
+    passage: 'Neden yakışıklı bir aktörün aynı zamanda çok zeki, iyi kalpli ve başarılı bir baba olduğunu varsayarız? Veya neden güzel bir kadının bir suçu işleme ihtimali bize daha düşük gelir? Psikolojide buna "Halo Etkisi" (Hale Yanılgısı) denir. Beynimiz, bir insanın sadece tek bir olumlu özelliğine (genellikle dış görünüşüne) bakarak, onun karakterindeki diğer tüm bilinmeyen özelliklerin de mükemmel olduğuna dair körü körüne bir inanç geliştirir. Zihnimiz, o kişiye adeta meleklerin taktığı o ışıltılı "haleyi" takar. Halo Etkisi, insan mantığının ne kadar yüzeysel olduğunu ve "güzel olan iyidir" yalanına ne kadar kolay kanabildiğimizi gösteren evrimsel bir tasarım hatasıdır.',
+    questionStem: 'Halo Etkisi kavramı, insanların karar verirken düştüğü hangi psikolojik tuzağı (yanılgıyı) tanımlar?',
+    options: [
+      'Güzellik salonlarının ve estetik cerrahinin insan psikolojisini bozmasını',
+      'İnsanların genellikle güvendikleri kişilerden ihanet görme korkusunu',
+      'Bir kişinin tek bir olumlu özelliği (özellikle güzelliği) üzerinden, o kişinin diğer tüm (bilinmeyen) özelliklerinin de mükemmel olduğuna dair mantıksız bir varsayıma (ön yargıya) düşülmesini',
+      'Sinema aktörlerinin rol yeteneklerinin gerçek hayattaki davranışlarını da etkilemesini'
+    ],
+    correct: 2,
+    explanation: 'Sadece dış görünüşüne bakıp o kişinin zeki ve iyi kalpli olduğunu varsaymamız (tek bir özelliğin tüm algıyı kör etmesi) Halo Etkisi yanılgısını açıklar.'
+  },
+  {
+    title: 'Carrington Olayı: Güneşin Öfkesi',
+    passage: '1859 yılının Eylül ayında, Dünya daha önce hiç görmediği bir manzarayla karşılaştı. Güneş\'te yaşanan devasa bir patlama (Jeomanyetik Fırtına) sonucu, Kuzey Işıkları Küba ve Hawaii\'den bile görülecek kadar güneye indi. Gökyüzü o kadar parlaktı ki, madenciler sabah olduğunu sanıp uykularından uyandılar. Olayın en korkunç yanı, dönemin tek teknolojisi olan telgraf hatlarının aniden alev alması ve operatörleri elektrik çarparak hastanelik etmesiydi. "Carrington Olayı" olarak bilinen bu güneş fırtınası bugün yaşansaydı; dünyadaki tüm uydular, elektrik şebekeleri ve internet saniyeler içinde yanarak kül olurdu. İnsanoğlunun onca kibriyle inşa ettiği bu devasa dijital medeniyet, Güneş\'in tek bir şiddetli hapşırığıyla saniyeler içinde Taş Devri\'ne dönecek kadar kırılgandır.',
+    questionStem: 'Carrington Olayı\'nın hatırlattığı evrensel ve teknolojik gerçeklik nedir?',
+    options: [
+      'Güneş lekelerinin küresel ısınmayı durdurabilecek tek doğal faktör olduğu',
+      'İnsanoğlunun inşa ettiği modern ve devasa dijital (teknolojik) medeniyetin, doğanın/evrenin (Güneş\'in) tek bir şiddetli doğa olayı karşısında saniyeler içinde çökebilecek kadar kırılgan olduğu',
+      'Telgraf hatlarının o dönemde yeterli izolasyona sahip olmadan üretildiği',
+      'Kuzey Işıkları\'nın sadece radyoaktif gazlardan oluştuğu'
+    ],
+    correct: 1,
+    explanation: 'Güneşin tek bir patlamasıyla (hapşırığıyla) tüm telgraf ağlarının yanması; bugünkü dijital dünyamızın doğa karşısında ne kadar kırılgan olduğunu gösterir.'
+  },
+  {
+    title: 'Deep Blue ve Kasparov: Kırılan Ego',
+    passage: '1997 yılında dünya satranç şampiyonu Garry Kasparov, IBM\'in geliştirdiği "Deep Blue" adlı süper bilgisayarın karşısına oturduğunda oldukça kibirliydi; bir makinenin insan yaratıcılığını asla yenemeyeceğini düşünüyordu. Ancak maçın bir noktasında Deep Blue, hiçbir mantıklı insanın yapmayacağı, tamamen anlamsız görünen ama stratejik olarak kusursuz bir hamle (fedakârlık) yaptı. Kasparov şoka girdi, makinenin gerçekten düşünebildiğine ve kendisiyle oynadığına inandı. Psikolojik olarak darmadağın olan Kasparov maçı kaybetti. Oysa makine düşünmüyor, saniyede 200 milyon hamle hesaplıyordu. Kasparov\'u yenen şey makinenin zekâsı değil, insanın o mükemmel sanılan zihninin, kendi icat ettiği soğuk bir hesap makinesi karşısında yaşadığı o aşağılayıcı "korku ve özgüven çöküşü"ydü.',
+    questionStem: 'Kasparov\'un Deep Blue\'ya yenilmesi, metne göre asıl olarak hangi duruma bağlanmıştır?',
+    options: [
+      'Bilgisayarın o dönemde bilinen tüm satranç oyunlarını ezberlemiş olmasına',
+      'Satrancın tamamen matematiksel bir oyun olup insan yaratıcılığına ihtiyaç duymamasına',
+      'Makinenin yapay bir zekâya sahip olmasından ziyade, Kasparov\'un makinenin hamlesini yanlış yorumlayarak (korkuya kapılarak) yaşadığı psikolojik çöküşe ve ego kaybına',
+      'IBM mühendislerinin oyun sırasında dışarıdan makineye gizlice yardım etmesine'
+    ],
+    correct: 2,
+    explanation: 'Kasparov\'u yenen şeyin makinenin zekâsı değil, Kasparov\'un makinenin düşündüğünü sanarak kapıldığı "psikolojik korku ve özgüven çöküşü" olduğu parçada açıkça belirtilmiştir.'
+  },
+  {
+    title: 'Gyges\'in Yüzüğü',
+    passage: 'Platon, Devlet adlı eserinde sarsıcı bir hikâye anlatır: Gyges adında dürüst bir çoban, yerin altında bulduğu bir yüzüğü parmağına taktığında tamamen görünmez olduğunu fark eder. Görünmezliğin verdiği bu mutlak güçle birlikte, o "dürüst" çoban aniden değişir; saraya girer, kraliçeyi baştan çıkarır, kralı öldürür ve tahtı ele geçirir. Platon şu korkutucu soruyu sorar: "Eğer hiç kimsenin sizi görmeyeceğinden ve cezalandırmayacağından emin olsaydınız, hala ahlaklı davranır mıydınız?" Gyges\'in Yüzüğü, insan doğasının o karanlık sırrını ifşa eder: Bizi ahlaklı ve iyi yapan şey içimizdeki o yüce erdemler değil; çoğu zaman sadece yakalanma, dışlanma ve cezalandırılma korkusudur.',
+    questionStem: 'Platon\'un "Gyges\'in Yüzüğü" hikâyesi, insan ahlakının kökeniyle ilgili neyi iddia etmektedir?',
+    options: [
+      'Ahlaklı davranışların insan doğasında var olan değişmez genetik bir kod olduğunu',
+      'İnsanların güç ve servet elde ettiklerinde bile geçmişteki erdemlerini koruyabildiğini',
+      'İnsanın ahlaklı görünmesinin (iyi davranmasının) temel nedeninin içsel bir erdem değil; genellikle görünür olmanın getirdiği toplumsal baskı, dışlanma ve cezalandırılma korkusu olduğunu',
+      'Sihirli eşyaların mitolojide her zaman felaket getirdiğini'
+    ],
+    correct: 2,
+    explanation: 'Görünmez olan dürüst çobanın anında suç işlemesi; bizi ahlaklı yapan şeyin erdem değil, yakalanma/cezalandırılma korkusu olduğunu gösterir.'
+  },
+  {
+    title: 'Babil Kütüphanesi (Borges)',
+    passage: 'Arjantinli yazar Jorge Luis Borges, "Babil Kütüphanesi" adlı hikâyesinde evreni devasa bir kütüphane olarak tasvir eder. Bu kütüphanede, alfabedeki harflerin rastgele dizilimiyle yazılabilecek "mümkün olan tüm kitaplar" vardır. Yani hayatınızın eksiksiz hikâyesi, evrenin sırrı, kanserin tedavisi ve gelecekteki tüm icatlar o raflarda bir yerlerdedir. Ancak sorun şudur: Bu anlamlı kitapların yanında, harflerin rastgele basıldığı katrilyonlarca "anlamsız" kitap da vardır. İnsanlar doğru kitabı bulmak için ömürlerini harcar, çıldırır ve intihar ederler. Borges\'in bu distopyası, günümüz "İnternet Çağı"nın kusursuz bir özetidir: Sonsuz verinin (bilginin) olduğu yerde, anlamsızlık (gürültü) o kadar büyüktür ki, gerçeği bulmak imkânsızlaşır. Aşırı bilgi, aydınlanma değil; körlüğün ta kendisidir.',
+    questionStem: 'Babil Kütüphanesi hikâyesi, modern İnternet Çağı hakkında nasıl bir eleştirel paralellik sunmaktadır?',
+    options: [
+      'İnternetin matbaadan daha hızlı bilgi yaydığını ve insanları daha bilge yaptığını',
+      'Sonsuz miktardaki bilginin ve verinin (gürültünün), değerli gerçeği bulmayı imkânsız hale getirerek aydınlanma yerine bir tür "zihinsel körlük" (anlamsızlık) yarattığını',
+      'Kitap okuma alışkanlığının dijitalleşme ile birlikte tamamen yok olduğunu',
+      'Kütüphanelerin arşivleme sistemlerinin dijital verilere göre daha güvenilir olduğunu'
+    ],
+    correct: 1,
+    explanation: 'Sonsuz sayıda anlamsız kitap (veri) içinde gerçeği bulmanın çıldırtıcı olması; internet çağında "aşırı bilginin aydınlanma değil körlük (anlamsızlık) yarattığı" eleştirisine paraleldir.'
+  },
+  {
+    title: 'Therac-25: Ölümcül Algoritma',
+    passage: '1980\'lerde hastanelere kurulan Therac-25, kanser hastalarına radyasyon tedavisi uygulayan, dönemin en gelişmiş bilgisayar kontrollü tıbbi cihazıydı. Önceki cihazların aksine, güvenlik kilitleri fiziksel donanımla değil, tamamen "yazılım" (kod) ile kontrol ediliyordu. Ancak yazılımda ufak bir mantık hatası vardı: Eğer teknisyen verileri klavyede çok hızlı girerse, makine hata veriyor ve hastaya alması gerekenin 100 katı (ölümcül) radyasyon veriyordu. Doktorlar makinenin "kusursuz" olduğuna o kadar inanmışlardı ki, hastalar çığlık çığlığa yanarken bile cihazın hata kodunu görmezden gelip denemeye devam ettiler ve altı kişiyi öldürdüler. Therac-25 faciası, insanoğlunun göremediği algoritmik bir koda duyduğu o körü körüne ve kibirli inancın, nasıl ölümcül bir silah olabileceğinin ilk dijital kanıtıdır.',
+    questionStem: 'Therac-25 faciasının tıbbi bir skandala dönüşmesinin temel sebebi nedir?',
+    options: [
+      'Kanser hastalarının radyasyon tedavisine karşı alerjik reaksiyon göstermesi',
+      'Hastanelerin bütçe yetersizliği yüzünden makinenin eski versiyonlarını kullanması',
+      'Teknolojiye ve yazılıma (makinenin kusursuzluğuna) duyulan körü körüne inancın, hastaların acısını ve yazılımdaki ölümcül hatayı görmezden gelmeye neden olması',
+      'Doktorların teknisyenleri yeterince iyi eğitememiş olması'
+    ],
+    correct: 2,
+    explanation: 'Doktorların makinenin kusursuz olduğuna inanıp, hastaların çığlıklarını görmezden gelerek radyasyon vermeye devam etmeleri; teknolojiye duyulan körü körüne inancın felaket getirdiğini gösterir.'
+  },
+  {
+    title: 'Arecibo Mesajı: Evrene Atılan Taş',
+    passage: '1974 yılında bilim insanları, Porto Riko\'daki devasa Arecibo radyo teleskobunu yıldız kümelerine çevirdiler ve evrenin derinliklerine 1679 bitlik, piksellerden oluşan bir radyo mesajı gönderdiler. Bu mesajda DNA yapımız, insan figürü, Güneş sistemindeki yerimiz ve nüfusumuz gibi en temel sırlarımız yer alıyordu. Amaç, uzaylılara "Biz buradayız" demekti. Ünlü fizikçi Stephen Hawking gibi bazı düşünürler bunu dehşet verici bir hata olarak gördü: "Gelişmiş bir medeniyete yerimizi söylemek, Amerika\'yı yeni keşfeden İspanyollara bağıran yerlilerin durumuna düşmektir." Arecibo Mesajı, insanoğlunun sonsuz merakı ve naif kibriyle, karanlık bir ormana "Ben buradayım, gelip beni bulun!" diye bağırmasından başka bir şey değildir.',
+    questionStem: 'Bazı bilim insanlarının (Hawking gibi) Arecibo Mesajı\'nı tehlikeli bir hata olarak görmesinin asıl gerekçesi nedir?',
+    options: [
+      'Radyo dalgalarının uzaydaki diğer uyduların sinyallerini bozma ihtimali',
+      'Evrendeki potansiyel (gelişmiş) medeniyetlere, kendi yerimizi ve biyolojik zayıflıklarımızı bildirerek dünyayı olası bir sömürü veya yok edilme tehdidine açık hale getirmek',
+      'Mesajın gönderildiği yıldız kümesinin zaten ölü ve yaşamsız bir bölge olması',
+      '1679 bitlik bir mesajın uzaylılar tarafından deşifre edilemeyecek kadar ilkel kalması'
+    ],
+    correct: 1,
+    explanation: 'İspanyollara bağıran yerliler benzetmesi kullanılarak; gelişmiş uzaylı medeniyetlere yerimizi söylemenin sömürülme veya yok edilme tehdidine (av konumuna düşmeye) yol açacağı gerekçesi vurgulanmıştır.'
+  },
+  {
+    title: 'Büyük Londra Sisi (1952)',
+    passage: 'Aralık 1952\'de Londra, tarihinin en korkunç kışlarından birini yaşadı. Havayı ısıtmak için milyonlarca bacadan pompalanan kalitesiz kömür dumanı, rüzgârsız havayla birleşip şehrin üzerine sarı-siyah, asidik bir zehir bulutu gibi çöktü. Görüş mesafesi sıfıra indi; kuşlar uçarken boğulup sokaklara düştü, sinema salonlarında arka sıralar perdeyi göremiyordu. Dört gün süren bu "Büyük Sis" boyunca tam 12.000 Londralı zehir soluyarak boğularak öldü. Bu olay bir doğa felaketi değil; Sanayi Devrimi\'nin kibrinin, kontrolsüz üretimin ve çevreyi hiçe sayan acımasız ilerleme hırsının insanoğluna kestiği o zehirli ve ölümcül faturadır.',
+    questionStem: 'Büyük Londra Sisi olayının tarihsel ve çevresel bağlamdaki asıl sorumlusu olarak ne gösterilmiştir?',
+    options: [
+      'Londra\'nın coğrafi olarak her zaman sisli ve rüzgârsız bir vadi (çukur) içinde bulunması',
+      'İngiliz halkının hastalıklara karşı bağışıklık sisteminin o dönemde çok zayıf olması',
+      'Doğa felaketinden ziyade; Sanayi Devrimi\'nin getirdiği kontrolsüz büyüme hırsının, çevre duyarsızlığının ve aşırı (kalitesiz) kömür kullanımının yarattığı insan eliyle yapılmış bir yıkım olması',
+      'Şehirde yeterli hastane ve tıbbi maske stokunun bulunmaması'
+    ],
+    correct: 2,
+    explanation: 'Olayın doğa felaketi değil, Sanayi Devrimi kibrinin ve çevreyi hiçe sayan kontrolsüz üretim/kömür yakma hırsının (insan eliyle yapılan) faturası olduğu belirtilmiştir.'
+  },
+  {
+    title: 'Tanganyika Kahkaha Salgını',
+    passage: '1962 yılında Afrika\'nın Tanganyika (bugünkü Tanzanya) bölgesindeki bir yatılı kız okulunda üç öğrenci sebepsiz yere gülmeye başladı. Bu masum kıkırdama kısa sürede okuldaki yüzlerce öğrenciye, oradan da çevre köylerdeki binlerce insana bulaştı. İnsanlar günlerce, nefessiz kalıp bayılana, ciltlerinde yaralar çıkana kadar histerik bir şekilde gülüyor ve ağlıyordu. Okullar kapatıldı, bölge karantinaya alındı. Bilim insanları bunun ne bir virüs ne de zehirlenme olduğunu anladı. Bu, ülkenin yeni bağımsızlık kazanmasının ve katı İngiliz eğitim sisteminin çocuklar üzerinde yarattığı o boğucu stresin dışa vurumuydu (Psikojenik Histeri). Bazen kahkaha bir neşe belirtisi değil; çaresiz kalmış, sıkışmış bir ruhun ve bedenin çığlık atma şeklidir.',
+    questionStem: 'Tanganyika Kahkaha Salgını\'nın ortaya çıkmasındaki asıl neden parçada nasıl açıklanmıştır?',
+    options: [
+      'Bölgedeki içme sularına karışan halüsinojenik (uyuşturucu) bir mantarın yarattığı etki',
+      'Afrika kültüründeki geleneksel dans ve gülme festivallerinin kontrolden çıkması',
+      'Yeni siyasi değişimlerin ve katı eğitim sisteminin yarattığı aşırı baskının (stresin), kitleler üzerinde yol açtığı kontrol edilemez bir psikolojik histeri (dışavurum) krizi',
+      'Öğrencilerin okul yönetimine karşı bilerek ve organize bir şekilde başlattıkları protesto'
+    ],
+    correct: 2,
+    explanation: 'Virüs veya zehir değil; bağımsızlık ve katı eğitimin yarattığı boğucu stresin dışavurumu (psikojenik histeri) olduğu açıkça vurgulanmıştır.'
+  },
+  {
+    title: 'Foucault Sarkacı',
+    passage: '1851 yılında Fransız fizikçi Léon Foucault, Dünya\'nın kendi ekseni etrafında döndüğünü ispatlamak için devasa bir deneye imza attı. Paris\'teki Panthéon\'un kubbesinden 67 metre uzunluğunda bir tele bağladığı 28 kiloluk bir pirinç gülle sarkıttı. Sarkacın ucundaki iğne, zemindeki kum tabakasına çizgiler çiziyordu. Sarkaç sadece ileri-geri sallanıyordu, ancak zaman ilerledikçe kumdaki çizgiler yavaşça dönerek bir daire oluşturmaya başladı! Oysa sarkaç yön değiştirmiyordu; dönen şey bizzat Dünya\'nın (ve binanın) kendisiydi. Foucault\'nun bu dâhiyane ve sessiz deneyi, yıldızlara veya uzaya bakmadan, sadece ayaklarımızın altındaki zeminin nasıl durmaksızın hareket ettiğini kanıtlayan eşsiz bir fizik şiiridir.',
+    questionStem: 'Foucault Sarkacı\'nın işleyişi ve bilim tarihindeki önemi nedir?',
+    options: [
+      'Yerçekiminin dünyanın her noktasında aynı kuvvette olmadığını kanıtlaması',
+      'Dünya\'nın kendi ekseni etrafında döndüğü gerçeğini, uzaya çıkmaya gerek kalmadan, sarkaç sabit kalırken altındaki zeminin (dünyanın) dönmesi mantığıyla ispatlayan görsel (somut) bir deney olması',
+      'Pirinç madeninin manyetik alanlardan etkilenmeyen tek metal olduğunu göstermesi',
+      'Panthéon kubbesinin mimari hataları yüzünden sürekli sallandığını ortaya koyması'
+    ],
+    correct: 1,
+    explanation: 'Sarkaç sabit sallanırken altındaki kumun çizgilerle dönmesi; Dünya\'nın (zeminin) kendi ekseni etrafında döndüğünü uzaya çıkmadan somutça kanıtlayan bir deneydir.'
+  },
+  {
+    title: 'Baader-Meinhof Fenomeni (Frekans İllüzyonu)',
+    passage: 'Yeni bir araba satın aldığınızda, aniden yollarda hep sizin arabanızın aynısından görmeye başlarsınız. Ya da yeni duyduğunuz nadir bir kelime, o hafta boyunca defalarca karşınıza çıkar. Sanki evren size mesaj gönderiyor gibidir. Psikolojide buna "Baader-Meinhof Fenomeni" (Frekans İllüzyonu) denir. Aslında arabaların veya kelimenin sayısı artmamıştır. Sadece insan beyni, devasa veri yığını içinde kaybolmamak için, dikkatini çeken (yeni öğrendiği) o belirli örüntüyü çevrede sürekli taramaya (seçiciliğe) başlar. Bu durum, gördüğümüz gerçekliğin evrensel bir nesnellik değil; sadece beyin filtremizin (ilgimizin) o an neye ayarlandığına bağlı tamamen yanıltıcı bir simülasyon olduğunu ispatlar.',
+    questionStem: 'Baader-Meinhof Fenomeni, insan beyninin çevreyi algılama şekliyle ilgili hangi durumu açıklamaktadır?',
+    options: [
+      'Beynin yaşlandıkça yeni bilgileri öğrenmekte zorlandığını ve sürekli eskileri tekrar ettiğini',
+      'İnsanların tesadüflere ve evrensel (mistik) enerjilere inanma eğiliminde olduğunu',
+      'Dış dünyadaki gerçekliğin değişmemesine rağmen, beynimizin yeni öğrendiği veya odaklandığı bir şeye karşı "algıda seçicilik" geliştirerek onu her yerde görüyormuş gibi bir illüzyon yaratmasını',
+      'Reklamcıların insanların rüyalarına subliminal (gizli) mesajlar yerleştirebildiğini'
+    ],
+    correct: 2,
+    explanation: 'Arabaların sayısının artmamasına rağmen, beynin yeni öğrendiği bilgiye (örüntüye) odaklanıp onu her yerde taramaya başlaması "algıda seçicilik" (frekans illüzyonu) olarak tanımlanır.'
+  },
+  {
+    title: 'Gödel\'in Eksiklik Teoremleri',
+    passage: 'Yüzyıllar boyunca matematikçiler, matematiğin evrendeki her şeyi açıklayabilen "kusursuz ve eksiksiz" bir mantık sistemi olduğuna inanıyorlardı. Ancak 1931\'de 25 yaşındaki Kurt Gödel, bu kibirli rüyayı paramparça etti. Gödel, yayınladığı teoremle matematikte her zaman "doğru olan ama kanıtlanamayan" bazı ifadelerin mecburen var olacağını ispatladı. Yani matematik, kendi içindeki bir formülün doğruluğunu ispatlamak için o sistemin dışına çıkmak zorundaydı; hiçbir kapalı sistem kendi kendine yetemezdi. Gödel\'in bu çalışması sadece matematiği değil, felsefeyi de sarsmış; insan aklının, mantığının ve kurduğu sistemlerin hiçbir zaman "mutlak her şeyi" açıklayabilecek kadar kusursuz olamayacağını acı bir şekilde kanıtlamıştır.',
+    questionStem: 'Gödel\'in Eksiklik Teoremleri\'nin matematik ve felsefe dünyasına vurduğu "asıl darbe" nedir?',
+    options: [
+      'Matematiksel formüllerin zamanla geçerliliğini yitiren geçici kurallar olduğunu göstermesi',
+      'Matematiğin ve insan mantığının, her şeyi kendi başına ve eksiksiz bir şekilde kanıtlayabilen (kendi kendine yeten) mutlak ve kusursuz bir sistem olduğu inancını yıkması',
+      'Rakamların ve sayıların aslında evrende var olmayan kurgusal şekiller olduğunu savunması',
+      'Felsefenin matematikten çok daha üstün ve analitik bir bilim dalı olduğunu ispatlaması'
+    ],
+    correct: 1,
+    explanation: 'Her zaman doğru olan ama kanıtlanamayan ifadelerin varlığını ispatlayarak, matematiğin (ve insan aklının/mantığının) her şeyi kanıtlayabilen kusursuz/eksiksiz bir sistem olduğu kibrini (inancını) yıkmasıdır.'
+  },
+  {
+    title: 'Phaistos Diski',
+    passage: '1908 yılında Girit adasında bulunan Phaistos Diski, pişmiş topraktan yapılmış, üzerinde sarmal (helezonik) şeklinde 241 tuhaf sembol barındıran 4000 yıllık bir objedir. Üzerindeki semboller tek tek elle çizilmemiş, matbaadan binlerce yıl önce küçük mühürler yardımıyla kilin üzerine basılmıştır (tarihteki ilk daktilo örneği). Ancak asıl gizem yapılış şeklinde değil, içeriğindedir. Dünyanın en iyi şifre kırıcıları ve dilbilimcileri yüzyıldır uğraşmasına rağmen, bu diskte ne yazdığı hala tamamen bir sırdır. Phaistos Diski, geçmişte kalan bazı seslerin, ne kadar uğraşırsak uğraşalım, o karanlık zaman girdabından çıkıp günümüzle konuşmayı sonsuza dek reddedeceğinin (aşılamaz bir sessizliğin) hüzünlü bir sembolüdür.',
+    questionStem: 'Phaistos Diski\'ni arkeoloji ve dilbilimi açısından bu kadar eşsiz (gizemli) kılan temel faktör nedir?',
+    options: [
+      'Diskin altından yapılmış olması ve değerinin ölçülememesi',
+      'Mühür basma (ilkel matbaa) tekniğiyle yazılmış olmasına rağmen, üzerindeki dillerin ve şifrelerin günümüzde bile tüm çabalara karşı çözülememiş (sessiz) kalması',
+      'Girit adasının sadece savaşçılar tarafından kullanılabilen gizli bir kodesi (şifresi) olduğunu kanıtlaması',
+      'Uzaylıların dünyaya bıraktığı ilk yazılı kanıt olduğuna dair iddialar barındırması'
+    ],
+    correct: 1,
+    explanation: 'Matbaadan binlerce yıl önce mühürlerle (ilkel daktilo) basılmasına rağmen en iyi dilbilimciler/şifreciler tarafından yüzyıldır çözülememesi (sır kalması) onu eşsiz kılar.'
+  },
+  {
+    title: 'Vampir Yarasalar ve Diğerkâmlık (Altruizm)',
+    passage: 'Doğanın sadece acımasız ve bencil, "güçlü olanın hayatta kaldığı" bir yer olduğu sanılır. Ancak vampir yarasalar bu ezberi bozar. Bu yarasalar iki gece kan içmezlerse açlıktan ölürler. Araştırmacılar, gece avdan eli boş dönen (aç kalan) bir yarasanın, mağaradaki diğer yarasalara yaklaşıp onları yaladığını gözlemlemiştir. Avdan tok dönen arkadaşları (veya akraba olmayan yarasalar bile) midelerindeki kanın bir kısmını kusarak o aç yarasa ile paylaşır ve onu ölümden kurtarır. İlginç olan, eğer bir yarasa tokken kanını paylaşmazsa (bencillik yaparsa), diğerleri bunu unutmaz ve o yarasa aç kaldığında ona kimse kan vermez. İnsanoğluna özgü sandığımız dayanışma, adalet ve "iyilik" (altruizm), aslında doğanın hayatta kalmak için kullandığı en karanlık evrimsel silahlardan biridir.',
+    questionStem: 'Vampir yarasalar üzerinden anlatılan durum, doğanın kanunları hakkında hangi geleneksel görüşü çürütmektedir?',
+    options: [
+      'Yarasaların sadece mağaralarda yaşayabilen karanlık yaratıklar olduğu görüşünü',
+      'Doğanın tamamen bencil, sadece güçlünün zayıfı ezdiği (acımasız) bir yapı olduğu inancını çürüterek; yardımlaşmanın, iyiliğin ve adaletin evrimsel bir hayatta kalma stratejisi olduğunu göstermesi',
+      'Hayvanların birbirleriyle iletişim kurmak için sadece sesleri kullandığı görüşünü',
+      'Kan ile beslenmenin hayvanlar aleminde evrimsel bir çıkmaz sokak olduğu tezini'
+    ],
+    correct: 1,
+    explanation: 'Aç kalana kan vermeleri ve bencil olanı dışlamaları (adalet/iyilik); doğanın sadece bencil ve "güçlünün zayıfı ezdiği" yer olduğu ezberini bozup altruizmin (yardımlaşmanın) hayatta kalma stratejisi olduğunu gösterir.'
+  },
+  {
+    title: 'Vasa Gemisi: Kibrin Batışı',
+    passage: '1628 yılında İsveç Kralı II. Gustaf, ülkesinin gücünü dünyaya göstermek için "Vasa" adında devasa ve aşırı süslü bir savaş gemisi yaptırdı. Kral, geminin daha görkemli olması için tasarımın dışına çıkarak son anda üst güverteye ekstra bir kat daha çıkılmasını ve onlarca devasa bronz topun oraya yerleştirilmesini emretti. Mühendisler bunun geminin dengesini bozacağını biliyordu ama krala itiraz etmek imkânsızdı. Masa başındaki o şatafatlı kibir, denizin fizik kurallarıyla çarpıştığında sonuç acımasız oldu: Vasa, ilk yolculuğunda limandan ayrıldıktan sadece 20 dakika sonra hafif bir rüzgârla alabora olup 30 denizcisiyle birlikte dibe battı. Vasa\'nın enkazı, fizik kurallarını ve aklı hiçe sayan lider kibrinin (egosunun) her zaman kendi yarattığı denizde boğulmaya mahkûm olduğunun görkemli bir ispatıdır.',
+    questionStem: 'Vasa gemisinin henüz ilk yolculuğunda batmasının temel nedeni parçaya göre nedir?',
+    options: [
+      'Düşman donanmasının gemiye liman çıkışında beklenmedik bir saldırı düzenlemesi',
+      'Kralın gösteriş ve kibir uğruna mühendisliği (fizik kurallarını) hiçe sayıp geminin dengesini bozacak ağır eklemeler yaptırması ve otoritesinin eleştirilememesi',
+      'Kullanılan ahşap malzemenin Baltık Denizi\'nin tuzlu sularında saniyeler içinde çürümesi',
+      'Mürettebatın gemiyi kullanacak denizcilik yeteneğine sahip olmayan acemilerden seçilmesi'
+    ],
+    correct: 1,
+    explanation: 'Kralın gücünü göstermek (kibir/gösteriş) için mühendislerin uyarısına rağmen geminin dengesini bozacak ekstra kat ve ağır toplar koydurması batışın temel nedenidir.'
+  }
+];
+
+export const teknolojiParagrafSorulari12: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_12.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_12[idx];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-teknoloji12-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
 
 // paragrafTests.ts dosyasının hata vermemesi için iki listeyi birleştirip eski adıyla dışa aktarıyoruz:
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
@@ -3100,5 +3377,6 @@ export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...felsefeParagrafSorulari8,
   ...psikolojiParagrafSorulari9,
   ...edebiyatParagrafSorulari10,
-  ...gizemParagrafSorulari11
+  ...gizemParagrafSorulari11,
+  ...teknolojiParagrafSorulari12
 ];
