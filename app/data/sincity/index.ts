@@ -4196,6 +4196,283 @@ export const felsefeParagrafSorulari15: BilimParagrafQuestion[] = Array.from({ l
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
+const PARAGRAPH_THEMES_16 = [
+  {
+    title: 'Hayatta Kalanma Önyargısı (Survivorship Bias)',
+    passage: 'İkinci Dünya Savaşı sırasında Amerikan ordusu, üsse delik deşik dönen bombardıman uçaklarını inceleyerek, uçakların en çok kurşun alan (kanat ve gövde) kısımlarını zırhla kaplamaya karar verdi. Ancak matematikçi Abraham Wald bu karara şiddetle karşı çıktı. "Zırhı, kurşun izi olan yerlere değil, hiç kurşun izi olmayan (motor ve kokpit) yerlere koymalısınız" dedi. Çünkü o delik deşik uçaklar, kanatlarından vurulmalarına rağmen "hayatta kalıp" dönebilenlerdi. Motordan vurulanlar ise asla geri dönememişti. İnsanoğlunun en büyük mantık hatalarından biri olan "Hayatta Kalanma Önyargısı", sadece başarı hikâyelerine (dönen uçaklara) odaklanıp, başarısızlığın asıl ve ölümcül nedenlerini (dönemeyenleri) körü körüne gözden kaçırmamıza neden olur.',
+    questionStem: 'Hayatta Kalanma Önyargısı kavramı, karar verme süreçlerimizdeki hangi mantık hatasını tanımlar?',
+    options: [
+      'Askeri stratejilerde mühendislik hesaplamalarından çok istatistiksel verilerin kullanılması zorunluluğunu',
+      'Sadece başarılı olan örneklere (hayatta kalanlara) odaklanıp, asıl gerçeği ve ölümcül zayıflıkları barındıran başarısız örnekleri (yok olanları) göz ardı etme körlüğünü',
+      'Uçakların hayatta kalma şansının zırh kalınlığından ziyade pilotun yeteneğine bağlı olduğunu',
+      'Geçmişteki savaşlardan alınan derslerin günümüz savaş teknolojisinde hiçbir işe yaramadığını'
+    ],
+    correct: 1,
+    explanation: 'Sadece geri dönen (hayatta kalan) uçaklara bakıp asıl ölümcül hasarı alan (dönemeyen) uçakları hesaba katmamak, başarıya odaklanıp asıl zayıflığı görmeme körlüğünü ifade eder.'
+  },
+  {
+    title: 'Benjamin Libet Deneyi ve Özgür İrade',
+    passage: '1980\'lerde nörolog Benjamin Libet, insanlık tarihinin en felsefi deneylerinden birini yaptı. Katılımcılardan bir düğmeye basmalarını ve düğmeye basmaya "karar verdikleri o anı" saatte işaretlemelerini istedi. Bu sırada beyin aktiviteleri (EEG) ölçülüyordu. Sonuçlar dehşet vericiydi: Katılımcıların beyni, kişi düğmeye basmaya bilinçli olarak "karar vermeden" tam yarım saniye önce harekete geçme emrini zaten vermişti! Yani biz bir şeyi seçtiğimizi sandığımızda, beynimiz o kararı çoktan karanlıkta almış; bilinçli zihnimiz ise bu kararı sadece sonradan kendisine aitmiş gibi sahiplenmişti. Libet deneyi, "özgür irade" dediğimiz o kutsal tacın, aslında beynimizin biyolojik kimyasının bize sunduğu gecikmeli bir illüzyon olabileceğini fısıldar.',
+    questionStem: 'Benjamin Libet\'in deneyi, insan varoluşundaki hangi temel inancı sarsmaktadır?',
+    options: [
+      'İnsanların dikkat sürelerinin zamanla teknolojinin etkisiyle kısaldığını',
+      'Fiziksel reflekslerimizin zihinsel düşüncelerimizden çok daha yavaş çalıştığını',
+      'Kararlarımızı kendi "özgür irademizle" ve bilinçli olarak aldığımız (kontrolün bizde olduğu) inancını yıkarak, bilincin sadece beynin önceden aldığı bir kararın izleyicisi (illüzyonu) olabileceğini',
+      'EEG cihazlarının insan beynindeki duygusal tepkileri ölçmede yetersiz kaldığını'
+    ],
+    correct: 2,
+    explanation: 'Beynin biz bilinçli karar vermeden yarım saniye önce harekete geçmesi; özgür iradenin ve bilinçli seçim kontrolünün sadece gecikmeli bir illüzyon olabileceği gerçeğini ortaya koyar.'
+  },
+  {
+    title: 'Üçüncü Dalga Deneyi (Faşizmin Doğuşu)',
+    passage: '1967 yılında lise öğretmeni Ron Jones, öğrencilerine faşizmin Alman toplumunda nasıl bu kadar kolay yayıldığını göstermek için bir deney yaptı. Sınıfta disiplin, aidiyet ve üstünlük temeline dayalı "Üçüncü Dalga" adında bir hareket kurdu. Sadece birkaç gün içinde o sıradan, özgürlükçü gençler; diğer öğrencileri dışlayan, kendi aralarında gizli selamlaşmalar yapan ve harekete karşı çıkanları fişleyip cezalandıran acımasız birer faşist askere dönüştüler. Deney dördüncü günde dehşet içinde sonlandırıldı. Üçüncü Dalga deneyi, zorbalığın ve faşizmin tarihte kalmış bir kaza olmadığını; insanın o ilkel "güçlü bir gruba ait olma ve itaat etme" arzusunda pusuya yatan, saniyeler içinde uyanabilecek bulaşıcı bir psikolojik hastalık olduğunu kanıtlar.',
+    questionStem: 'Ron Jones\'un "Üçüncü Dalga" deneyi, otoriter ve faşist eğilimlerin kökenini neye bağlamaktadır?',
+    options: [
+      'Öğrencilerin evde ailelerinden gördükleri şiddet ve baskı ortamına',
+      'Alman genetiğinin nesilden nesile aktarılan tarihsel bir mirasına',
+      'İnsan psikolojisinde her zaman pusuda bekleyen "güçlü bir gruba aidiyet, disiplin ve itaat etme" arzusunun yarattığı o karanlık ve bulaşıcı cazibeye',
+      'Lise müfredatlarında siyaset biliminin yeterince detaylı işlenmemesine'
+    ],
+    correct: 2,
+    explanation: 'Sıradan gençlerin birkaç günde faşiste dönüşmesi; faşizmin tarihte kalmadığını, insanın içindeki "gruba aidiyet ve itaat" arzusundan beslenen bulaşıcı bir cazibe olduğunu gösterir.'
+  },
+  {
+    title: 'Ego Tükenmesi (Ego Depletion)',
+    passage: 'Psikolog Roy Baumeister, bir grup aç öğrenciyi fırından yeni çıkmış, taze çikolatalı kurabiyelerle dolu bir odaya soktu. Öğrencilerin yarısına kurabiyelerden yemeleri izni verildi; diğer yarısına ise kurabiyelere dokunmamaları ve sadece önlerindeki çiğ turpları yemeleri söylendi. Turp yiyenler nefis kokuya rağmen kendilerini zorlukla tuttular. Daha sonra tüm öğrencilere çözülmesi imkânsız bir geometri sorusu verildi. Kurabiye yiyenler soruyu çözmek için ortalama 19 dakika çabalarken, nefsine hâkim olup turp yiyenler sadece 8 dakika sonra pes ettiler! "Ego Tükenmesi" olarak bilinen bu keşif, iradenin sınırsız bir karakter özelliği değil; tıpkı bir kas gibi kullanıldıkça yorulan, tükenebilen ve dinlenmeye muhtaç biyolojik (zihinsel) bir enerji kaynağı olduğunu kanıtlar.',
+    questionStem: 'Ego Tükenmesi deneyi, "irade (nefsine hâkim olma)" kavramı hakkında hangi geleneksel inancı çürütmüştür?',
+    options: [
+      'İradenin beslenme alışkanlıklarıyla hiçbir ilgisi olmadığı inancını',
+      'İradenin doğuştan gelen, sarsılmaz ve sınırsız bir ahlaki karakter özelliği olduğu inancını yıkarak; onun kullanıldıkça yorulan ve tükenen bir "kas (enerji)" olduğunu göstermiştir',
+      'Zeki öğrencilerin iradeli öğrencilere göre daha çabuk pes ettiği yönündeki ön yargıyı',
+      'İradenin sadece çocukluk döneminde geliştirilebileceği fikrini'
+    ],
+    correct: 1,
+    explanation: 'Kurabiye yememek için iradesini (enerjisini) harcayanların soruda çabuk pes etmesi, iradenin sınırsız bir ahlak özelliği değil, tıpkı bir kas gibi yorulup tükenen bir enerji olduğunu kanıtlar.'
+  },
+  {
+    title: 'Capgras Sendromu: Yabancılaşan Sevdiklerimiz',
+    passage: 'Nörolojik bir kâbus olan Capgras Sendromu\'na yakalanan hastalar, anne, baba veya eşlerinin aslında uzaylılar veya robotlar tarafından değiştirilmiş "birebir kopyalar (sahtekârlar)" olduğuna kesin olarak inanırlar. Beynin görsel tanıma merkezi kusursuz çalışır; hasta karşısındaki kişinin annesine benzediğini görür. Ancak yüzü gördüğümüzde kalbimizi ısıtan ve sevgi hissettiren duygu merkezine (amigdalaya) giden kablolar (sinirler) kopmuştur. Görsel vardır ama "duygu" yoktur. Beyin bu mantıksız boşluğu doldurmak için korkunç bir yalan uydurur: "Ona benziyor ama ona karşı hiçbir şey hissetmiyorum, demek ki bu bir sahtekâr!" Capgras Sendromu, birini tanımanın sadece onu gözle görmek değil, o görünüşe ruhumuzdaki duygusal imzanın (hislerin) eşlik etmesi zorunluluğu olduğunu kanıtlar.',
+    questionStem: 'Capgras Sendromu, insan beynindeki "tanıma (kimlik teşhisi)" süreciyle ilgili hangi gerçeği ortaya koyar?',
+    options: [
+      'Görme yetisinin yaşlandıkça insan yüzlerini hatırlamakta zorlandığını',
+      'Robotların ve yapay zekânın insanları kusursuzca taklit etme yeteneğine ulaştığını',
+      'Birini gerçekten tanımanın sadece "görsel eşleşme" ile bitmediğini; görselliğin mutlaka beynin içindeki "duygusal tepki (his)" ile birleşmesi gerektiğini',
+      'İnsanların travma anlarında sevdikleri kişileri tamamen unuttuklarını'
+    ],
+    correct: 2,
+    explanation: 'Görsel olarak tanımasına rağmen duygu bağı (siniri) koptuğu için kişiyi "sahtekâr" sanması; tanımanın sadece görsellik değil, mutlaka duygusal bir tepki (his) barındırması gerektiğini gösterir.'
+  },
+  {
+    title: 'Lady Macbeth Etkisi: Ruhun Yıkanması',
+    passage: 'Shakespeare\'in ünlü karakteri Lady Macbeth, işlediği cinayetin ardından ellerindeki o görünmez kanı çıkarmak için hastalıklı bir şekilde sürekli ellerini yıkar. Bilim insanları bu edebi metaforun gerçekliğini test etmek için katılımcılardan geçmişte yaptıkları etik dışı, ahlaksız bir eylemi hatırlamalarını istediler. Ardından onlara bir hediye seçme hakkı verildi: Katılımcıların ezici çoğunluğu kalem veya çikolata yerine "ıslak mendil ve sabun" seçti! "Lady Macbeth Etkisi" adı verilen bu durum; suçluluk hissinin sadece soyut bir vicdan azabı olmadığını, beynin ahlaki kirlenmeyi "fiziksel bir kirlenme" gibi algılayarak, bedeni (elleri) temizleyip ruhu arındırma yönünde kelimenin tam anlamıyla somut ve biyolojik bir refleks geliştirdiğini kanıtlar.',
+    questionStem: 'Lady Macbeth Etkisi deneyinin sonuçlarına göre "suçluluk ve ahlaki kirlenme" hissi insan beyninde nasıl işlenmektedir?',
+    options: [
+      'İnsanların suçluluk duygusunu bastırmak için tatlı gıdalara (çikolataya) yönelmesiyle',
+      'Ahlaki suçların zamanla unutularak beynin kendini koruma altına almasıyla',
+      'Ahlaki (soyut) kirlenmenin beyin tarafından fiziksel bir kirlenme gibi algılanıp, kişinin temizlik malzemelerine (sabuna/yıkanmaya) yönelerek somut bir arınma refleksi geliştirmesiyle',
+      'Kötü anıların beynin konuşma merkezine zarar vererek kişinin iletişimini bozmasıyla'
+    ],
+    correct: 2,
+    explanation: 'Ahlaksız eylemi hatırlayanların hediye olarak sabun/ıslak mendil seçmesi; beynin soyut ahlaki kiri fiziksel bir kirlenme gibi algılayıp bedensel arınma refleksi geliştirdiğini ispatlar.'
+  },
+  {
+    title: 'Skinner\'ın Batıl İnançlı Güvercinleri',
+    passage: 'Psikolog B.F. Skinner, aç güvercinleri bir kutuya koydu ve kutudaki mekanizmayı, güvercinler ne yaparsa yapsın "tamamen rastgele" olarak 15 saniyede bir yem düşürecek şekilde ayarladı. Bir süre sonra kutuya baktığında şoke edici bir manzara gördü: Bir güvercin sürekli kendi etrafında dönüyor, diğeri kafasını köşeye vuruyor, bir diğeri tek ayak üstünde sekiyordu. Güvercinler, yem düştüğü o saniyede tesadüfen hangi hareketi yapıyorlarsa, "Yemi getiren şey benim bu hareketim" diye düşünmüş ve o anlamsız ritüeli kutsal bir büyü gibi tekrarlamaya başlamışlardı! Bu deney, stadyumda aynı çorabı giyerek takımının kazanacağına inanan taraftardan, yağmur duasına çıkan ilkel kabilelere kadar, insanoğlunun nedensellik kurma (batıl inanç ve ritüel yaratma) konusundaki o çaresiz ve trajikomik algı hatasının aynasıdır.',
+    questionStem: 'Skinner\'ın güvercin deneyi, toplumdaki "batıl inançların ve ritüellerin" doğuşu hakkında hangi psikolojik mekanizmayı açıklamaktadır?',
+    options: [
+      'Kuşların ve insanların açlık anında zekâ seviyelerinin tamamen eşitlendiğini',
+      'Birbiriyle hiçbir alakası olmayan rastgele ödüller (olaylar) ile o anki rastgele eylemler arasında, zihnin sahte bir "neden-sonuç" ilişkisi (kontrol yanılsaması) kurarak bu davranışları kutsallaştırmasını',
+      'Genetik mirasımızda büyücülük ve şamanizmin doğuştan var olan kodlar olduğunu',
+      'Hayvanların belirli ödüller karşısında sirk eğitimine yatkınlıklarını'
+    ],
+    correct: 1,
+    explanation: 'Yemin rastgele düşmesine rağmen güvercinin "ben döndüğüm için yem geldi" sanması; rastgele olaylar arasında sahte bir neden-sonuç (batıl inanç) ilişkisi kurma zaafını açıklar.'
+  },
+  {
+    title: 'Grup Düşüncesi (Groupthink) ve Felaketler',
+    passage: '1961\'de ABD Başkanı Kennedy ve hepsi birbirinden zeki, Harvard mezunu danışman ordusu, Küba\'daki Domuzlar Körfezi Çıkarması\'nı planladı. Askeri bir intihar olan bu planın faciayla sonuçlanacağı çok açıktı, ama kimse itiraz etmedi ve operasyon hezimetle bitti. Psikolog Irving Janis buna "Grup Düşüncesi" dedi. İnsanlar zeki olsalar bile, güçlü ve karizmatik bir liderin olduğu, uyumun (konsensüsün) her şeyden üstün tutulduğu bir gruba girdiklerinde eleştirel düşünmeyi kapatırlar. Grubun ahengini bozmamak ve "uyumsuz" damgası yememek için herkes içindeki şüpheyi susturur. En parlak zihinlerden oluşan bir oda dolusu dâhi, sırf kalabalığa ayak uydurmak (sürüye uymak) uğruna, tek bir aptalın bile yapmayacağı ölümcül kararlara imza atabilir.',
+    questionStem: 'Grup Düşüncesi (Groupthink) kavramına göre, çok zeki insanlardan oluşan ekiplerin felaket getiren kararlar almasının asıl nedeni nedir?',
+    options: [
+      'Gruptaki bireylerin rekabet yüzünden birbirlerinden bilgi saklaması',
+      'Grubun uyumunu (ahengini) bozmamak ve dışlanmamak (lideri onaylamak) adına, bireylerin kendi eleştirel akıllarını ve şüphelerini kasıtlı olarak susturmaları',
+      'Eğitim seviyesi yüksek insanların sokak hayatının gerçeklerinden tamamen kopuk olması',
+      'Zaman baskısı nedeniyle detaylı araştırma yapmaya fırsat bulamamaları'
+    ],
+    correct: 1,
+    explanation: 'Zeki insanların itiraz etmemesi; dışlanmamak ve grubun uyumunu bozmamak adına eleştirel aklı devre dışı bırakıp içlerindeki şüpheyi susturmalarıyla (Grup Düşüncesi) açıklanır.'
+  },
+  {
+    title: 'Plastik El İllüzyonu (Rubber Hand)',
+    passage: 'Bir laboratuvarda katılımcının sol eli bir masanın üzerine konur ve bir paravanla görüşünden gizlenir. Katılımcının görebileceği yere ise gerçeğe birebir benzeyen plastik bir el konulur. Araştırmacı, hem gizli olan gerçek ele hem de plastik ele aynı anda, senkronize bir şekilde fırçayla dokunur. Birkaç dakika sonra katılımcının beyni şok edici bir algı kayması yaşar: Gerçek elini tamamen unutup, o plastik eli "kendi bedeni" olarak benimser! Araştırmacı aniden plastik ele bir çekiçle vurduğunda, katılımcı dehşet içinde irkilir ve terlemeye başlar. "Plastik El İllüzyonu", benlik (beden algısı) dediğimiz o sarsılmaz aidiyetin; göz ve dokunma duyusunun senkronizasyonuyla beynin içinde saniyeler içinde kurgulanabilen (ve hacklenebilen) esnek bir yazılımdan ibaret olduğunu kanıtlar.',
+    questionStem: 'Plastik El İllüzyonu deneyinin insan beyni ve bedeni hakkındaki en sarsıcı bulgusu nedir?',
+    options: [
+      'İnsan beyninin plastik maddelere karşı doğuştan gelen alerjik bir korku (fobi) barındırması',
+      'Vücudumuza ve uzuvlarımıza duyduğumuz aidiyetin (beden algısının) değişmez fiziksel bir gerçeklik değil, beynin duyuları birleştirerek anlık kurguladığı, kolayca kandırılabilir (hacklenebilir) bir illüzyon olması',
+      'Görme engelli insanların bu tür illüzyonlara asla kapılmadığının ispatlanması',
+      'Fırça darbelerinin insan derisinde uyuşukluk yaratarak acı hissini tamamen ortadan kaldırması'
+    ],
+    correct: 1,
+    explanation: 'Plastik ele vurulduğunda kişinin irkilmesi; bedenimizin sınırlarına dair algımızın değişmez bir gerçek değil, beynin kurguladığı ve kolayca hacklenebilen esnek bir yazılım (illüzyon) olduğunu kanıtlar.'
+  },
+  {
+    title: 'Ganzfeld Etkisi ve Deliliğin Sınırı',
+    passage: 'Beynimiz dış dünyadan sürekli veri almak üzere tasarlanmıştır. Peki ya tüm veriyi keserseniz ne olur? "Ganzfeld Etkisi" deneyinde katılımcının gözlerine ışığı süzen yarım pinpon topları kapatılır, kulaklarına ise radyodaki cızırtı (beyaz gürültü) verilir. Dış dünyadan tamamen izole olan beyin, sadece 15 dakika içinde paniğe kapılır. Karanlıkta kalan bir sinema projektörü gibi kendi filmini oynatmaya başlar. Katılımcılar etrafta uçan atlar, konuşan ölüler görür ve inanılmaz derecede gerçekçi halüsinasyonlar yaşarlar. Bu deney; gerçeklik dediğimiz şeyin aslında dışarıdaki dünya değil, beynimizin o dış verileri yorumlama biçimi olduğunu; eğer dışarıdan veri gelmezse aklın anında kendi cehennemini (deliliğini) yarattığını ispatlar.',
+    questionStem: 'Ganzfeld Etkisi deneyine göre halüsinasyonların (sanrıların) ortaya çıkmasının asıl mekanizması nedir?',
+    options: [
+      'Beyaz gürültünün kulak zarına verdiği kalıcı fiziksel hasar',
+      'Pinpon toplarının içindeki kimyasalların göz retinasını zehirlemesi',
+      'Dış dünyadan gelen duyusal verilerin (ışık/ses) tamamen kesilmesiyle veri açlığı çeken beynin paniğe kapılıp kendi gerçekliğini (kurgularını) üretmeye başlaması',
+      'Katılımcıların uzun süre uyumadıkları için uyanıkken rüya görmeye başlaması'
+    ],
+    correct: 2,
+    explanation: 'Gözün ve kulağın izole edilmesiyle verisiz (aç) kalan beynin paniğe kapılıp boşluğu kendi yarattığı halüsinasyonlarla doldurması, Ganzfeld Etkisi\'nin temel mekanizmasıdır.'
+  },
+  {
+    title: 'Çıpalama Etkisi (Anchoring Bias)',
+    passage: 'Mahatma Gandhi\'nin kaç yaşında öldüğünü tahmin etmeniz istenseydi muhtemelen bir mantık yürütürdünüz. Ancak psikologlar, soruyu sormadan önce bir gruba "Sizce Gandhi 114 yaşına kadar yaşadı mı?", diğer gruba ise "Sizce 35 yaşından sonra mı öldü?" diye sordular. 114 sayısını duyan grup ortalama 73 tahmininde bulunurken; 35 sayısını duyan grup ortalama 50 tahmininde bulundu. Sayıların Gandhi\'nin ölümüyle hiçbir ilgisi veya mantığı yoktu! "Çıpalama Etkisi" denen bu zaaf, insan beyninin pazarlık yaparken veya tahminde bulunurken duyduğu ilk bilgiye (çıpaya) körü körüne takılıp kalarak bütün mantığını o sayının etrafında şekillendirdiğini kanıtlar. Bağımsız irademiz ve objektif mantığımız, duyduğumuz ilk alakasız fısıltıyla kolayca rehin alınabilir.',
+    questionStem: 'Çıpalama Etkisi (Anchoring Bias) kavramı, insan zihninin karar verme sürecindeki hangi zaafını ortaya koyar?',
+    options: [
+      'İnsanların tarihi karakterlerin yaşamlarına yeterince ilgi duymadığını',
+      'Bir tahminde veya pazarlıkta bulunurken, objektif bir değerlendirme yapmak yerine, zihnin duyduğu "ilk bilgiye veya sayıya" (alakasız olsa bile) takılıp kalarak kararlarını o sınıra göre şekillendirmesi zaafını',
+      'Soruların soruluş tarzının stres yaratarak zihinsel hesaplama yeteneğini düşürdüğünü',
+      'Yaşlılık ve ölüm kavramlarının insanlarda mantıklı düşünmeyi engelleyen bir fobi olduğunu'
+    ],
+    correct: 1,
+    explanation: 'Alakasız olsa bile 114 veya 35 sayılarının tahminleri doğrudan etkilemesi; zihnin duyduğu "ilk bilgiye (çıpaya)" takılıp objektif değerlendirme yapamama zaafını açıklar.'
+  },
+  {
+    title: 'Plasebo Butonları: Kontrol İllüzyonu',
+    passage: 'Büyük şehirlerdeki yaya geçidi butonlarına veya asansörlerdeki "kapı kapatma" düğmelerine hırsla ve defalarca bastığımız anlar vardır. Oysa New York gibi metropollerdeki asansör butonlarının %80\'i sistemden tamamen koparılmıştır ve hiçbir işe yaramazlar. Işıklar ve asansörler tamamen otomatik bir zamanlayıcıya bağlıdır. Ancak yetkililer bu butonları bilerek orada bırakırlar. Çünkü insanoğlu beklemeye, çaresizliğe ve "kontrolün kendisinde olmadığı" bir akışa tahammül edemez. O sahte düğmeye basmak, dış dünyayı yönettiğimize dair bize psikolojik bir rahatlama (terapi) sağlar. "Plasebo Butonları", modern hayatın o devasa ve ruhsuz makinesinde çırpınan insana sunulan en zararsız, en sahte ama en gerekli kontrol illüzyonudur.',
+    questionStem: 'Asansörlerdeki "Plasebo Butonları"nın çalışmamasına rağmen sistemde bırakılmasının temel psikolojik işlevi nedir?',
+    options: [
+      'Elektrik devrelerinin bozulma ihtimaline karşı yedek bir güvenlik mekanizması olarak bekletilmeleri',
+      'Şehir mimarisinin klasik alışkanlıklardan (tasarımlardan) kolayca vazgeçememesi',
+      'İnsanın bekleme anındaki çaresizliğini yatıştırmak ve ona "sürecin kontrolünün kendi elinde olduğu" şeklinde sahte ama rahatlatıcı bir psikolojik illüzyon sunmak',
+      'Çocukların makinelerle oynamasını sağlayarak onların dikkatini başka yöne çekmek'
+    ],
+    correct: 2,
+    explanation: 'Butonların işe yaramamasına rağmen orada bırakılması, çaresizce bekleyen insana "kontrol bende" hissi (sahte bir psikolojik illüzyon ve rahatlama) sunmak içindir.'
+  },
+  {
+    title: 'Kokteyl Partisi Etkisi (Algıda Seçicilik)',
+    passage: 'Devasa ve son derece gürültülü bir partide (kokteylde) olduğunuzu düşünün. Etrafta yüksek sesli bir müzik, çınlayan kadehler ve aynı anda konuşan onlarca insan vardır. Zihniniz bu uğultunun çoğunu anlamsız bir arka plan gürültüsü olarak çöpe atar. Ta ki... Odanın en uzak köşesindeki biri sizin adınızı fısıldayana kadar! O saniye tüm gürültü kesilir ve kulaklarınız o sesi bir lazer gibi yakalar. "Kokteyl Partisi Etkisi" denen bu olay, beynimizin aslında odadaki her kelimeyi bilinçaltında kaydettiğini, ancak şalteri sadece "kendi adımız (egomuz)" söz konusu olduğunda açarak onu bilince taşıdığını gösterir. Dünyanın en gelişmiş ve en bencil filtresi, bizzat insan beynidir.',
+    questionStem: 'Kokteyl Partisi Etkisi, insan beyninin bilgi işleme kapasitesi hakkında neyi ispatlamaktadır?',
+    options: [
+      'Gürültülü ortamlarda işitme duyusunun kendini korumak için geçici olarak kapandığını',
+      'Beynin arka plandaki tüm gürültüyü kaydetmesine rağmen, sadece kişisel ve egosantrik önemi olan (adımız gibi) verileri ayrıştırarak bilince taşıyan seçici bir filtreleme yeteneğini',
+      'İnsanların kalabalık ortamlarda her zaman dedikodu yapmaya daha eğilimli olduğunu',
+      'Yüksek sesli müziğin insan beynindeki dil merkezini kısa süreliğine felç ettiğini'
+    ],
+    correct: 1,
+    explanation: 'Odadaki o kadar gürültü içinde sadece kendi adımızı duymamız, beynimizin bilinçaltında her şeyi kaydetse de sadece "bize (egomuza) ait" olan veriyi seçip bilince taşıdığını (seçici filtreyi) kanıtlar.'
+  },
+  {
+    title: 'Stendhal Sendromu (Güzellik Şoku)',
+    passage: '1817 yılında Fransız yazar Stendhal, Floransa\'daki Santa Croce Bazilikası\'nı gezerken Michelangelo, Machiavelli ve Galileo\'nun mezarlarının ve devasa Rönesans fresklerinin karşısında durur. O kadar yoğun bir tarihi ve sanatsal mükemmelliğe maruz kalır ki; kalbi hızla çarpmaya başlar, başı döner, midesi bulanır ve sonunda halüsinasyonlar görerek bayılır. Yıllar içinde Floransa\'yı ziyaret eden yüzlerce turist aynı baygınlık ve panik atağı yaşayınca psikiyatri buna "Stendhal Sendromu" adını verdi. Bu sendrom; estetiğin, güzelliğin ve sanatın sadece göze hitap eden zararsız bir zevk olmadığını; insan sinir sistemini kelimenin tam anlamıyla çökertebilecek ve aklı yerinden edebilecek kadar vahşi (yıkıcı) bir güç barındırdığını kanıtlar.',
+    questionStem: 'Stendhal Sendromu\'nun ortaya çıkardığı durum, sanatın ve estetiğin gücü hakkında nasıl bir gerçeği vurgular?',
+    options: [
+      'Eski dönem ressamlarının tablolarında kullandığı kurşun bazlı boyaların insanları zehirlediğini',
+      'Sanatın ve yoğun (kusursuz) estetik güzelliğin, sadece sakinleştirici bir zevk değil; sinir sistemini felç edip insanı fiziksel ve psikolojik bir şoka (yıkıma) sokabilecek kadar muazzam bir güç olduğunu',
+      'Kiliselerin ve müzelerin kapalı atmosferinin insanlarda oksijen yetersizliği yarattığını',
+      'Tarihi eserleri görmenin yaşlı insanlarda geçmişe dair pişmanlıkları tetiklediğini'
+    ],
+    correct: 1,
+    explanation: 'Kusursuz sanat eserleri karşısında insanların kalp çarpıntısı yaşayıp bayılması (Stendhal Sendromu); güzelliğin ve sanatın insan sinir sistemini çökertebilecek kadar sarsıcı/yıkıcı bir güç olduğunu vurgular.'
+  },
+  {
+    title: 'Sahtekâr Sendromu (Imposter Syndrome)',
+    passage: 'Albert Einstein ölmeden bir ay önce dostuna şöyle bir itirafta bulunur: "Hayatım boyunca yaptığım çalışmaların bu kadar abartılması bana kendimi bir dolandırıcı (sahtekâr) gibi hissettiriyor." Tüm dünyayı değiştiren bir dâhi neden kendini sahtekâr hissetsin? Psikolojide "Sahtekâr Sendromu" denilen bu durum; son derece yetenekli, başarılı ve zeki insanların, başarılarının kendi yeteneklerinden değil, sadece "şans eseri" olduğuna inanmaları ve bir gün çevrelerindeki herkesin onların aslında "cahil birer dolandırıcı" olduğunu fark edeceği korkusuyla (anksiyetesiyle) yaşamalarıdır. Cahiller yeteneklerinden en ufak bir şüphe duymazken (Dunning-Kruger), aklın ve bilginin zirvesine ulaşanların yetersizlik hissiyle (sahtekâr korkusuyla) kıvranması evrenin en acımasız ironisidir.',
+    questionStem: 'Sahtekâr Sendromu\'nun (Imposter Syndrome) merkezinde yatan psikolojik yanılgı nedir?',
+    options: [
+      'Başarısız insanların kendi hatalarını kabul etmeyip her şeyi çevrelerindeki insanlara bağlaması',
+      'Dolandırıcıların suçluluk duygusuyla eninde sonunda polise teslim olma içgüdüsü',
+      'Gerçekten yetenekli ve başarılı olan bireylerin, kendi başarılarını zekâlarına değil şansa bağlayarak, "aslında yetersiz olduklarının bir gün ortaya çıkacağı" yönünde yaşadıkları temelsiz (ve ironik) anksiyete',
+      'Bilim insanlarının yaşlandıkça eski teorilerinin yanlış çıkmasından duyduğu korku'
+    ],
+    correct: 2,
+    explanation: 'Einstein gibi dâhilerin bile başarılarını şansa bağlayıp "sahtekâr olduğum anlaşılacak" korkusu yaşaması; yetenekli insanların yaşadığı o temelsiz yetersizlik (sahtekâr) hezeyanını tanımlar.'
+  },
+  {
+    title: 'Deindividuation (Kimliksizleşme) ve Kötülük',
+    passage: 'Cadılar Bayramı\'nda çocukların bir masadan "sadece birer tane şeker almaları" tembihlenir. Araştırmalar, çocukların yüzlerinde maske yokken (kimlikleri belliyken) kurallara harfiyen uyduğunu gösterir. Ancak yüzlerinde anonim kalmalarını sağlayan kostüm maskeleri varken, çocukların ezici bir çoğunluğu kuralları çiğneyip avuç dolusu şeker çalar. Psikolojide "Kimliksizleşme" (Deindividuation) olarak adlandırılan bu olgu, kalabalıkların ve anonimliğin karanlık yüzüdür. Sosyal medyadaki sahte profillerin arkasına sığınanların sergilediği o korkunç linç ve linç kültürü de aynı refleksten doğar. İnsandan kimliğini, yüzünü ve ismini (bireyselliğini) aldığınız an, ahlak ve medeniyetin o ince örtüsü yırtılır; geriye sadece cezalandırılma korkusu olmayan acımasız bir canavar kalır.',
+    questionStem: 'Kimliksizleşme (Deindividuation) kavramı, ahlaki davranışların temelinde neyin yattığını savunmaktadır?',
+    options: [
+      'Tatlı yiyeceklerin çocukların otokontrol mekanizmasını biyolojik olarak bozduğunu',
+      'Ahlakın ve kurallara uymanın içsel bir erdemden ziyade; "kimliğin (yüzün) bilinmesi" ve bunun getirdiği cezalandırılma (dışlanma) korkusuna bağlı olduğunu, anonimliğin (maskenin) bu sınırı kaldırdığını',
+      'Toplu kutlamaların ve bayramların insanların kurallara saygısını artırdığını',
+      'Kötülüğün tamamen genetik bir miras olup çevresel faktörlerden etkilenmediğini'
+    ],
+    correct: 1,
+    explanation: 'Maskeli çocukların (veya sahte profillerin) kuralları çiğnemesi; ahlakın aslında içsel erdem değil, kimliğin bilinmesi (hesap verebilirlik/korku) olduğunu, anonimliğin bu sınırı yıktığını gösterir.'
+  },
+  {
+    title: 'Kör Görme (Blindsight) Paradoksu',
+    passage: 'Beyninin "birincil görsel korteks" kısmı felç veya hasar görmüş olan bazı hastalar tıbben tamamen kördürler; gözlerinin önünde ne olduğunu hiçbir şekilde bilinçli olarak "göremezler". Ancak doktorlar bu hastalardan, karanlık odada aniden yanan bir ışığın yerini işaret etmelerini veya kendilerine fırlatılan bir topu yakalamalarını istediklerinde şok edici bir şey olur. Hastalar "Hiçbir şey görmüyorum, sadece atıp tutuyorum" demelerine rağmen, ışığın yerini kusursuzca gösterir ve topu havada yakalarlar! "Kör Görme" adı verilen bu durum; gözlerin hâlâ veriyi alıp beynin en ilkel alt katmanlarına (hayatta kalma merkezine) ilettiğini, sadece bizim o üst düzey "bilincimizin" (vizyonumuzun) bu veriden habersiz olduğunu kanıtlar. Yani beynimiz dünyayı bilir, ama "bizim" bundan haberimiz yoktur.',
+    questionStem: 'Kör Görme (Blindsight) vakası, insan bilinci ve algısı hakkında hangi sıra dışı gerçeği ispatlamaktadır?',
+    options: [
+      'Körlüğün gözlerden değil her zaman beyin sarsıntılarından kaynaklandığını',
+      'Gözleri görmeyen insanların işitme ve dokunma duyularının çok daha fazla geliştiğini',
+      'Algılama (veriyi işleme ve tepki verme) eyleminin bilinçten tamamen bağımsız çalışabildiğini; beynin çevreyi kusursuzca işlediği halde bilincimizin (kendi farkındalığımızın) bundan habersiz kalabileceğini',
+      'Tıbbi cihazların beyin hasarlarını tespit etmede her zaman hata yaptığını'
+    ],
+    correct: 2,
+    explanation: 'Kör olduğunu söyleyen hastanın atılan topu yakalaması; verinin beyin tarafından (ilkel düzeyde) işlendiğini ancak bilincin bundan habersiz kaldığını, yani algının bilinçten bağımsız da çalışabileceğini kanıtlar.'
+  },
+  {
+    title: 'Munchausen Sendromu by Proxy (Vekâleten Hastalık)',
+    passage: 'Tıp tarihindeki en karanlık psikolojik bozukluklardan biri, annelerin (veya bakıcıların) tamamen sağlıklı olan çocuklarını kasten hasta etmesi, hatta zehirlemesidir. Amaç çocuğu öldürmek değil; hastanelere koşarak, doktorların ve çevrenin "Ne kadar fedakâr ve zavallı bir anne" diyerek ona acımasını, ilgi göstermesini (kahraman ilan edilmesini) sağlamaktır. "Munchausen by Proxy" adı verilen bu korkunç sendrom, anne şefkati ve koruma içgüdüsü dediğimiz o en kutsal insani duygunun, kişinin kendi narsisistik açlığını ve ilgi (şefkat) görme krizini doyurmak için bizzat evladını acımasızca bir enstrümana (kurbana) dönüştürmesidir. Şeytan bazen boynuzlu bir canavar değil, elinde ilaç şişesiyle ağlayan bir kurtarıcıdır.',
+    questionStem: 'Munchausen by Proxy sendromunun merkezinde yatan asıl psikolojik (ve karanlık) motivasyon nedir?',
+    options: [
+      'Annelerin çocukluklarında doktor olma hayallerini gerçekleştirememiş olmaları',
+      'Kişinin kendi narsisistik ilgi, övgü ve kahramanlık (şefkat görme) açlığını doyurmak uğruna, en kutsal bağ olan evladını bile kasten zehirleyip onu bir kurban aracı olarak kullanması',
+      'Maddi destek ve ilaç yardımı almak için devleti dolandırma isteği',
+      'Bozuk genetiğe sahip çocukların daha çabuk hastalanmaya yatkın olması'
+    ],
+    correct: 1,
+    explanation: 'Annenin ilgi ve övgü görmek ("fedakâr anne" denilmesi) için sağlıklı çocuğunu kasten hasta etmesi, narsisistik bir açlığı ve en kutsal bağın kurbana dönüştürülmesini açıklar.'
+  },
+  {
+    title: 'Paylaşılmış Psikoz (Folie à Deux)',
+    passage: 'Delilik genellikle bireyin kendi beyninin içindeki biyolojik bir çöküş olarak görülür. Ancak "Folie à Deux" (İki Kişilik Delilik) vakalarında durum dehşet vericidir. Tamamen izole yaşayan iki kişiden biri ağır bir psikoz (şizofreni) krizine girer ve evde uzaylıların olduğunu veya devletin onları dinlediğini sanır. Normalde sağlıklı olan diğer kişi (eşi veya kardeşi), bu yoğun izolasyon ve duygusal bağımlılık nedeniyle hastayı iyileştirmek yerine; onun sanrılarına ikna olur ve aynı kâbusu (olmayan uzaylıları) o da kusursuz bir inançla görmeye başlar. Delilik bazen organik bir beyin hasarı değil; duygusal yakınlık, sevgi ve aşırı izolasyon yoluyla tıpkı bir virüs gibi zihinden zihne atlayan, gerçeği bükebilen bulaşıcı bir felakettir.',
+    questionStem: 'Paylaşılmış Psikoz (Folie à Deux) kavramı, delilik (psikoz) olgusu hakkında neyi kanıtlamaktadır?',
+    options: [
+      'Aynı evde yaşayan insanların genetik olarak birbirlerine benzemeye başladığını',
+      'Uzaylılara ve komplo teorilerine inananların genellikle izole ortamlarda yaşadığını',
+      'Psikotik hezeyanların (deliliğin) sadece bireysel biyolojik bir hastalık olmadığını; yoğun duygusal bağ ve izolasyon ortamında, tamamen sağlıklı bir zihne bile (bir virüs gibi) bulaşabilen sosyal ve psikolojik bir aktarım olduğunu',
+      'Psikiyatri doktorlarının hastalarla çok fazla vakit geçirmesinin tehlikeli olduğunu'
+    ],
+    correct: 2,
+    explanation: 'Sağlıklı birinin, izole ortamda hastanın sanrılarına (uzaylılara vb.) inanıp onu görmeye başlaması; deliliğin sadece biyolojik değil, duygusal bağ ve izolasyonla bulaşan (aktarılan) bir fenomen olduğunu gösterir.'
+  },
+  {
+    title: 'Sokrates ve Mutlu Domuz İkilemi (J.S. Mill)',
+    passage: '19. yüzyıl filozofu John Stuart Mill, "Zevk ve Haz" kavramlarını tartışırken o meşhur ve sarsıcı ikilemi ortaya atar: "Halinden memnun (mutlu) bir domuz olmak mı daha iyidir, yoksa acı çeken (mutsuz) bir Sokrates olmak mı?" Sığ bir akıl için cevap mutluluktur. Ancak Mill\'e göre, cehaletin o güvenli çamurunda hiçbir dert tasa bilmeden yatan domuzun hazzı, kalitesiz ve aşağılıktır. İnsanı insan yapan şey, sadece acı çekme ve mutsuz olma pahasına bile olsa evrenin derinliklerini, gerçeğin yükünü ve varoluşun trajedisini kavrama cesaretidir. Gerçek aydınlanma, aptalların o sorunsuz tebessümünde değil; hakikati taşıyan zihnin o asil ve yorgun gözyaşlarında gizlidir.',
+    questionStem: 'John Stuart Mill\'in "Mutlu domuz mu, acı çeken Sokrates mi?" ikilemiyle savunduğu asıl felsefi düşünce nedir?',
+    options: [
+      'İnsanların her ne pahasına olursa olsun mutluluğu ve fiziksel konforu seçmesi gerektiği',
+      'Hayvanların dünyayı algılama biçiminin insanlardan çok daha saf ve dürüst olduğu',
+      'Cehaletin getirdiği sığ ve kalitesiz bir mutluluk (haz) yerine; farkındalığın, aydınlanmanın ve gerçeği kavrama yetisinin getirdiği asil acıyı (mutsuzluğu) seçmenin insanın en yüce erdemi olduğu',
+      'Sokrates\'in felsefe yaparken genellikle hayvan metaforları kullandığı'
+    ],
+    correct: 2,
+    explanation: 'Mill\'in, domuzun sığ mutluluğundansa, evrenin trajedisini kavrayan Sokrates\'in asil acısını yüceltmesi; cehaletin mutluluğu yerine aydınlanmanın (gerçeğin) yükünü/acısını seçmenin erdem olduğunu savunur.'
+  }
+];
+
+export const psikolojiParagrafSorulari16: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_16.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_16[idx];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-psikoloji16-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
 // paragrafTests.ts dosyasının hata vermemesi için iki listeyi birleştirip eski adıyla dışa aktarıyoruz:
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari,
@@ -4212,5 +4489,6 @@ export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...teknolojiParagrafSorulari12,
   ...sosyolojiParagrafSorulari13,
   ...felsefeParagrafSorulari14,
-  ...felsefeParagrafSorulari15
+  ...felsefeParagrafSorulari15,
+  ...psikolojiParagrafSorulari16
 ];
