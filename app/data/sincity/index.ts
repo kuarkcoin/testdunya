@@ -5304,6 +5304,283 @@ export const bilimParagrafSorulari19: BilimParagrafQuestion[] = Array.from({ len
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
+const PARAGRAPH_THEMES_20 = [
+  {
+    title: 'Kötülüğün Sıradanlığı (Banalitenin Kötülüğü)',
+    passage: 'Siyaset bilimci Hannah Arendt, milyonlarca Yahudi\'nin ölüm kamplarına gönderilmesini organize eden Nazi subayı Adolf Eichmann\'ın mahkemesini izlediğinde büyük bir şok yaşadı. Karşısında kana susamış, şeytani bir canavar ya da sadist bir psikopat görmeyi bekliyordu. Oysa Eichmann, son derece nazik, sıkıcı, sıradan ve sadece "kendisine verilen bürokratik emirleri yerine getiren" silik bir memurdu. Arendt, bu dehşet verici durumu "Kötülüğün Sıradanlığı" olarak adlandırdı. Tarihin en büyük katliamları, gözü dönmüş şeytanlar tarafından değil; kendi aklını ve vicdanını otoriteye teslim eden, sorgulamadan itaat eden ve görevini iyi yapmaktan başka bir şey düşünmeyen o "sıradan" ve renksiz kravatlılar tarafından gerçekleştirilir.',
+    questionStem: 'Hannah Arendt\'in "Kötülüğün Sıradanlığı" kavramı, büyük insanlık suçlarının kökenini neye bağlamaktadır?',
+    options: [
+      'Toplumdaki psikopat ve sosyopat bireylerin zamanla devletin kilit noktalarına sızmasına',
+      'Kötülüğün, şeytani ve sadist bir canavarlıktan ziyade; aklını, vicdanını ve sorgulama yetisini otoriteye (emirlere) körü körüne teslim eden o sıradan (bürokratik) itaatten doğmasına',
+      'Savaş dönemlerinde insanların genetik olarak daha saldırgan bir evrim geçirmesine',
+      'Hapishane sistemlerinin suçluları rehabilite etmekte tamamen yetersiz kalmasına'
+    ],
+    correct: 1,
+    explanation: 'Eichmann\'ın bir canavar değil sıradan bir memur olması; en büyük kötülüklerin şeytani sadizmden değil, vicdanı otoriteye devreden kör/sıradan itaatten doğduğunu gösterir.'
+  },
+  {
+    title: 'Simülasyon Hipotezi',
+    passage: 'Filozof Nick Bostrom\'un "Simülasyon Hipotezi" zihinleri felç eden bir matematiksel ihtimale dayanır. Teknoloji sürekli gelişmektedir. Gelecekteki torunlarımızın, geçmişteki atalarının (yani bizim) hayatlarını birebir simüle eden devasa, ultra-gerçekçi bilgisayar oyunları yaratacaklarını varsayalım. Eğer bu doğruysa, evrende 1 tane "gerçek (fiziksel)" dünya, ama milyarlarca "simüle edilmiş (sanal)" dünya olacaktır. İstatistiksel olarak, milyarlarca sanal dünyadan birinde değil de, o tek ve yegâne "gerçek" dünyada yaşıyor olma ihtimalimiz neredeyse sıfırdır! Duyu organlarımızın bize sunduğu bu ter, gözyaşı, aşk ve yıldızlar, büyük ihtimalle gelişmiş bir uygarlığın sabit diskinin içinde dönen kusursuz birer kod satırından ibarettir.',
+    questionStem: 'Simülasyon Hipotezi\'nin "bizim bir bilgisayar kodunda yaşadığımız" sonucuna varmasındaki asıl bilimsel (mantıksal) dayanak nedir?',
+    options: [
+      'Güneş sistemindeki gezegenlerin matematiksel olarak mükemmel bir yörüngeye sahip olması',
+      'Gelecekte yaratılacak sayısız (milyarlarca) kusursuz simülasyon evrenine kıyasla, "tek bir gerçek (fiziksel)" evrende yaşıyor olma ihtimalimizin istatistiksel olarak neredeyse sıfır olması',
+      'Uyku sırasında gördüğümüz rüyaların bazen gerçek hayattan daha inandırıcı olması',
+      'İnsan beyninin elektrik sinyalleriyle çalışmasının bilgisayar işlemcilerini andırması'
+    ],
+    correct: 1,
+    explanation: 'Milyarlarca sanal evrenin yaratılma ihtimaline karşı tek bir gerçek evren olması; istatistiksel olarak bizim o milyarlarca sanal evrenden birinde olduğumuz (gerçekte olmadığımız) mantığına dayanır.'
+  },
+  {
+    title: 'Ölümsüz Denizanası (Turritopsis dohrnii)',
+    passage: 'Doğadaki her canlı doğar, büyür, yaşlanır ve ölür. Ancak "Turritopsis dohrnii" adındaki küçücük bir denizanası, biyolojinin bu en acımasız kanununu (ölümü) hacklemeyi başarmıştır. Bu canlı fiziksel olarak zarar gördüğünde, hastalandığında veya çok yaşlandığında ölmez; bunun yerine hücrelerini hücresel bir zaman makinesi gibi yeniden programlayarak gelişimini tersine çevirir. Yani yaşlı bir denizanasıyken, tekrar bir bebeğe (polip evresine) döner ve hayatına sıfırdan başlar. İnsanoğlu laboratuvarlarda milyarlarca dolar harcayarak ömrünü birkaç yıl uzatmaya çalışırken, okyanusun dibindeki beyinsiz ve minicik bir denizanası, biyolojik ölümsüzlüğün şifresini milyonlarca yıl önce çözmüş ve evrenin en büyük kuralıyla sessizce alay etmiştir.',
+    questionStem: 'Ölümsüz Denizanası\'nın hayatta kalma mekanizması (kuralı), insanlık ve biyoloji bağlamında neyi temsil eder?',
+    options: [
+      'Okyanusların derinliklerindeki su basıncının yaşlanmayı durduran bir etkiye sahip olduğunu',
+      'Evrimsel süreçte omurgasız canlıların memelilere göre çok daha zeki bir yapıya ulaştığını',
+      'Yaşlanmanın ve ölümün tüm canlılar için kaçınılmaz (mutlak) bir son olduğu yönündeki en büyük biyolojik kanunun kırılabilir (esnetilebilir) bir yanılsama olduğunu',
+      'İnsanların genetik kodlarını deniz canlılarıyla birleştirerek ölümsüzlüğü bulabileceğini'
+    ],
+    correct: 2,
+    explanation: 'Denizanasının yaşlanınca tekrar bebeğe dönüp ölümü atlaması; ölümün ve yaşlanmanın doğadaki tüm canlılar için mutlak/kaçınılmaz bir son olduğu (en büyük kuralın) kırılabildiğini temsil eder.'
+  },
+  {
+    title: 'Luddit İsyanı: Makinelere Karşı İnsan',
+    passage: '19. yüzyılın başlarında İngiltere\'de tekstil fabrikalarına giren buharlı dokuma tezgâhları, binlerce el işçisini işsiz bırakmıştı. Gizemli bir lider olan "General Ludd"un ismini kullanan işçiler, geceleri yüzlerine maskeler takarak fabrikaları basıp o devasa makineleri balyozlarla paramparça etmeye başladılar. Tarih kitapları "Ludditleri" genellikle teknoloji düşmanı, cahil ve gelişime karşı duran gericiler olarak anlatır. Oysa onlar makinenin icadına veya teknolojiye değil; makinenin, insan emeğini değersizleştirmesine, onları köleleştiren vahşi kapitalizme ve ruhsuz bir seri üretime karşı isyan ediyorlardı. Ludditler, insanın etten ve kemikten varlığının (haysiyetinin), soğuk metal çarklara kurban edilmesine karşı atılmış ilk görkemli ve haklı çığlıktır.',
+    questionStem: 'Luddit İsyanı ile ilgili tarih kitaplarındaki yaygın algı ile yazarın asıl yorumu arasındaki fark nedir?',
+    options: [
+      'Tarih kitaplarının isyanı başarılı gösterirken, yazarın bunun kanlı bir fiyasko olduğunu savunması',
+      'Tarih kitaplarının onları "teknoloji düşmanı (cahil)" olarak sunmasına karşın; yazarın onları vahşi kapitalizme, sömürüye ve insan onurunun makinelere ezdirilmesine karşı haklı bir isyan olarak yorumlaması',
+      'Tarihçilerin General Ludd\'u gerçek bir asker sanması, yazarın ise onun hayali bir karakter olduğunu kanıtlaması',
+      'Tarihin isyancıları haklı bulması, yazarın ise fabrikatörleri ve seri üretimi savunması'
+    ],
+    correct: 1,
+    explanation: 'Metinde tarih kitaplarının onları cahil teknoloji düşmanı gördüğü, ancak yazarın onları sömürüye ve insan emeğinin değersizleşmesine (kötü kapitalizme) isyan eden onurlu bir direniş olarak yorumladığı belirtilmiştir.'
+  },
+  {
+    title: 'Zamanın Oku ve Entropi',
+    passage: 'Eğer elinizdeki bir bardağı yere düşürürseniz binlerce parçaya ayrılır. Ancak o parçaların kendiliğinden havaya yükselip tekrar kusursuz bir bardak oluşturduğunu asla göremezsiniz. Sıcak kahvenize soğuk süt dökerseniz birbirine karışır, ancak bir saat beklerseniz süt ve kahve kendi kendine ayrışmaz. Fizikte buna "Zamanın Oku" veya "Entropi" (Düzensizlik) denir. Evrenin en temel yasası şudur: Her şey, düzenden (bir bütünlükten) kaosa ve düzensizliğe (parçalanmaya) doğru akar. Zamanın sadece ileriye, yaşlanmaya ve yıkıma doğru akmasının tek sebebi bu evrensel çürüme kuralıdır. Evren, devasa ve görkemli bir saat gibi kurulmuştur, ancak doğduğu günden beri o saat saniye saniye paslanarak ve dağılarak (entropiyle) kendi karanlık ölümüne doğru ilerlemektedir.',
+    questionStem: 'Zamanın Oku (Entropi) kavramının felsefi ve fiziksel evren tasarımındaki asıl karşılığı nedir?',
+    options: [
+      'Gelecekteki zaman makinelerinin sadece geçmişe doğru yolculuk yapabilmesine olanak tanıması',
+      'Evrendeki her şeyin kendi doğası gereği mükemmelliğe (düzene) değil, kaçınılmaz bir parçalanmaya, kaosa ve tek yönlü bir çürümeye (yıkıma) doğru ilerlemesi',
+      'Zamanın hızının yerçekimine bağlı olarak farklı gezegenlerde değişmesi',
+      'Sıvıların ve katıların atomik yapılarının hiçbir şekilde birbiriyle karıştırılamaması'
+    ],
+    correct: 1,
+    explanation: 'Bardağın kırılıp birleşmemesi, kahvenin ayrışmaması; evrenin (ve zamanın) mükemmelliğe değil, kaçınılmaz bir kaosa, düzensizliğe ve çürümeye (entropiye) doğru aktığını gösterir.'
+  },
+  {
+    title: 'Hanlon\'un Usturası (Hanlon\'s Razor)',
+    passage: 'Bir arkadaşınız mesajınıza saatlerce cevap vermediğinde zihniniz hemen karanlık senaryolar üretir: "Bana kasten trip atıyor, beni sevmiyor veya bana saygısızlık yapıyor." Felsefedeki "Hanlon\'un Usturası" prensibi bu paranoyayı kesip atar: "Aptallıkla (veya dikkatsizlikle) yeterince açıklanabilen bir durumu, asla kötü niyete bağlama." Belki de arkadaşınızın sadece şarjı bitmiş, telefonu sessizde kalmış veya mesajı görüp cevap yazmayı "unutmuş" bir dikkatsizdir. İnsan beyni, çevresindeki olayları kendisine yapılmış kasıtlı birer saldırı (komplo) olarak algılamaya (narsisizme) meyillidir. Oysa dünyadaki acıların ve hataların çoğu, insanların karanlık birer şeytan olmasından değil; sadece yorgun, dalgın veya kendi hayatının telaşı içinde bocalayan sakar (basit) faniler olmasından kaynaklanır.',
+    questionStem: 'Hanlon\'un Usturası prensibinin insan ilişkilerine getirdiği temel çözümleme (bakış açısı) nedir?',
+    options: [
+      'Mesajlara geç cevap vermenin modern toplumda psikolojik şiddet olarak kabul edildiği',
+      'Kötü gibi görünen olayların ardında şeytani bir kasıt (kötü niyet) aramak yerine, bunların genellikle sıradan bir ihmalkârlık, dalgınlık veya basit bir hatadan kaynaklandığını (paranoyayı bırakmayı) kabul etmek',
+      'İnsanların her zaman kötü niyetli ve çıkarcı varlıklar olduğunu varsayarak tedbirli davranmak',
+      'Zeki insanların asla dikkatsizlik yapmayacağı ve tüm adımlarını planlayarak attığı'
+    ],
+    correct: 1,
+    explanation: '"Aptallıkla/dikkatsizlikle açıklanabileni kötü niyete bağlama" sözü; olayların ardında narsisistik komplo ve kasıt aramak yerine, insanların sadece dalgın veya ihmalkâr olabileceğini (paranoyayı kesmeyi) açıklar.'
+  },
+  {
+    title: 'Aura ve Mekanik Yeniden Üretim (Walter Benjamin)',
+    passage: 'Leonardo da Vinci\'nin Mona Lisa\'sını Louvre Müzesi\'nde orijinal haliyle kendi gözlerinizle görmek, mistik ve tüyler ürpertici bir deneyimdir. Ancak aynı tablonun milyonlarca kez basılmış halini bir kahve kupasının, tişörtün veya bir bilgisayar ekranının üzerinde gördüğünüzde hiçbir şey hissetmezsiniz. Filozof Walter Benjamin, 1936\'da kaleme aldığı eserinde bu durumu "Aura\'nın (Halenin) Yitimi" olarak açıklar. Bir sanat eserinin orijinali, o anın tarihini, mekânını ve yaratıcısının ruhunu (Aurasını) barındıran eşsiz ve kutsal biricikliğe sahiptir. Ancak teknoloji ve fotoğraf makineleri o eseri milyonlarca kez "mekanik olarak yeniden ürettiğinde", eser kitlelere ulaşır ama o mistik ruhunu, "biricikliğini" ve kutsallığını kaybedip sıradan bir tüketim nesnesine (çöpe) dönüşür.',
+    questionStem: 'Walter Benjamin\'in "Aura" kavramına göre, sanat eserlerinin mekanik olarak kopyalanması (çoğaltılması) nasıl bir sonuç doğurur?',
+    options: [
+      'Sanatın sadece elit ve zengin sınıfların tekelinden çıkarak tamamen demokratikleşmesini ve değerinin artmasını',
+      'Eserin daha çok kitleye ulaşmasını sağlasa da, onun o tarihselliğini, kutsallığını ve eşsiz (biricik) ruhunu (Aura\'sını) yok ederek onu sıradan bir meta (tüketim) nesnesi haline getirmesini',
+      'Ressamların artık tablo çizmek yerine dijital sanatlara ve fotoğrafçılığa yönelmesini',
+      'Mona Lisa tablosunun orijinalinin müzelerde çok daha iyi güvenlik önlemleriyle korunmasını'
+    ],
+    correct: 1,
+    explanation: 'Orijinal eserin mistik ruhunun (Aurasının) milyonlarca kez kopyalanmasıyla yok olması; eserin eşsizliğini kaybedip sıradan bir tüketim nesnesine dönüştüğünü vurgular.'
+  },
+  {
+    title: 'Nükleer Semiyotik (Geleceği Uyarmak)',
+    passage: 'Radyoaktif atıkların tehlikesi 10.000 yıl sürmektedir. Bilim insanları şu dehşet verici soruyla karşılaştı: 10 bin yıl sonra dünyada bugünkü diller konuşulmayacak, tabelaları kimse anlamayacak. O halde gelecekteki insanları o nükleer gömütleri kazmamaları için nasıl uyaracağız? "Nükleer Semiyotik" (Göstergebilim) adındaki bir komite kuruldu. O gömütlerin üzerine dikilen "Kurukafa" işaretlerinin bile 10 bin yıl sonra "Burada korsan hazinesi var" sanılıp kazılabileceği anlaşıldı. Çözüm olarak; o arazilerin üzerine siyah devasa dikenler inşa etmek, toprak rengini kızıla boyamak veya radyasyona yaklaştığında derisi parlayan "fosforlu kediler" üretmek (ve bunu dini bir mitolojiye dönüştürmek) bile tartışıldı. İnsanoğlu, kendi elleriyle ürettiği ölümcül çöpün tehlikesini, torunlarının torunlarına (geleceğe) aktaracak kadar bile yeterli bir kültürel köprüye (ve garantili bir dile) sahip değildir.',
+    questionStem: 'Nükleer Semiyotik projesinin ortaya koyduğu felsefi ve pratik çaresizlik nedir?',
+    options: [
+      'Nükleer atıkların yerin altına gömülmesinin toprağı zehirlemesi',
+      'Kedilerin genetiğiyle oynamanın ahlaki ve etik değerlere aykırı olması',
+      'Kültürlerin ve dillerin zamanla tamamen yok olduğu gerçeği karşısında; bugünün en tehlikeli mesajını (nükleer ölümü) on bin yıl sonrasının medeniyetine (geleceğe) aktarabilecek evrensel, kalıcı ve kesin bir işaret (dil) bulmanın imkânsızlığı',
+      'Gelecekte insanların tamamen okuma yazma yeteneğini kaybederek ilkel çağlara dönecek olması'
+    ],
+    correct: 2,
+    explanation: 'Kurukafa işaretinin bile "hazine" sanılabilecek olması ve dilin yok olması; çok uzun bir geleceğe (10 bin yıl) tehlike mesajı iletecek evrensel/kalıcı bir dil veya işaret (iletişim) bulmanın imkânsızlığını gösterir.'
+  },
+  {
+    title: 'Paris Sendromu: Kırılan Hayaller',
+    passage: 'Her yıl Fransa\'ya giden düzinelerce Japon turist, Paris sokaklarında aniden nefes darlığı çekip bayılır, halüsinasyonlar görür ve şiddetli bir panik atak krizi geçirerek acilen ülkelerine gönderilir. Psikiyatride buna "Paris Sendromu" denir. Filmlerle, romanlarla ve dergilerle kafalarında "Her sokağında romantik müziklerin çaldığı, herkesin şık giyindiği ve parfüm kokan" kusursuz bir Paris ütopyası yaratmışlardır. Ancak şehre geldiklerinde kaba garsonlar, kirli metro istasyonları, hırsızlar ve sokak fareleriyle karşılaşırlar. İdealleştirilen (kutsanan) o kurgusal gerçeklik ile, sokağın o çirkin ve sıradan hakikati (hayal kırıklığı) arasındaki uçurum öylesine derindir ki; zihin bu ağır çarpışmayı kaldıramaz ve kelimenin tam anlamıyla psikolojik olarak iflas eder (çöker).',
+    questionStem: 'Paris Sendromu\'nun temelini oluşturan psikolojik şokun asıl kaynağı nedir?',
+    options: [
+      'Japon turistlerin uzun süren uçak yolculukları (jetlag) nedeniyle yaşadıkları fiziksel yorgunluk',
+      'Paris halkının Japon turistlere karşı ırkçı ve dışlayıcı bir tutum sergilemesi',
+      'Zihinde medya aracılığıyla aşırı idealleştirilmiş (kutsanmış ve kusursuzlaştırılmış) bir kurgunun (beklentinin), sokaktaki o kaba ve sıradan gerçeklikle çarpışmasının zihinde yarattığı ağır (kaldırılamaz) yıkım',
+      'Tarihi binaların devasa boyutlarının insanlarda klostrofobik bir etki yaratması'
+    ],
+    correct: 2,
+    explanation: 'Filmlerden öğrenilen kusursuz romantik kurgunun (beklentinin), kirli metrolar ve kaba garsonlarla (gerçeklikle) çarpışmasının yarattığı büyük hayal kırıklığı ve zihinsel iflas anlatılmaktadır.'
+  },
+  {
+    title: 'Büyük Filtre (The Great Filter)',
+    passage: 'Fermi Paradoksu\'na (Uzaylılar nerede?) verilen en kan dondurucu yanıt "Büyük Filtre" teorisidir. Buna göre; evrende zeki bir medeniyetin doğup galaksiler arası bir imparatorluğa dönüşmesinin önünde aşılması neredeyse imkânsız olan, ölümcül bir evrimsel bariyer (Büyük Filtre) vardır. Eğer uzayda başka hiçbir canlı göremiyorsak, önümüzde iki seçenek kalır: Birincisi, insanlık olarak o imkânsız filtreyi (belki de tek hücreliden çok hücreliye geçişi) çoktan aşıp kurtulmuş tek ve en şanslı (yegâne) tür bizizdir. Ancak korkunç olan ikinci ihtimaldir: Belki de o filtre henüz önümüzdedir. Yani medeniyetler nükleer silahları icat ettikten veya yapay zekâyı bulduktan sonra (bizim şu anki aşamamızda) o filtreye çarpıp kendilerini yok ediyorlardır. Eğer Mars\'ta ölü bir medeniyetin kalıntısını (fosil) bulursak sevinmemeliyiz, dehşete düşmeliyiz; çünkü bu, filtrenin (kendi kıyametimizin) hala önümüzde bizi beklediğinin kesin kanıtı olur.',
+    questionStem: 'Büyük Filtre teorisine göre, uzayda başka zeki medeniyetlerin (fosillerin) bulunmasının insanlık için "dehşet verici (kötü)" bir haber olmasının nedeni nedir?',
+    options: [
+      'Uzaylı fosillerinden dünyaya ölümcül (ve tedavisi olmayan) virüslerin taşınma ihtimali',
+      'Uzaylıların hala yaşıyor olma ve dünyayı işgal etme (sömürgeleştirme) ihtimalini güçlendirmesi',
+      'Başka medeniyetlerin de bizim seviyemize ulaştıktan sonra yok olduğunu görmenin; o ölümcül yıkım bariyerinin (filtrenin) bizim arkamızda değil, bizi yok etmek üzere önümüzde beklediğini (kıyametimizin yakın olduğunu) kanıtlayacak olması',
+      'Dinlerin ve felsefenin uzaylıların varlığı karşısında tamamen anlamını yitirmesi'
+    ],
+    correct: 2,
+    explanation: 'Başka medeniyet fosili bulmak, onların da bizim gibi gelişip sonra yok olduğunu gösterir; bu da onları yok eden filtrenin/bariyerin bizim de başımıza geleceğini (kıyametimizin önümüzde olduğunu) kanıtlayacağı için dehşet vericidir.'
+  },
+  {
+    title: 'Cassini\'nin Büyük Finali (Grand Finale)',
+    passage: 'NASA\'nın "Cassini" uzay aracı, tam 13 yıl boyunca Satürn\'ün etrafında dolanıp insanlığa muazzam fotoğraflar gönderdi. Ancak 2017\'de yakıtı bitmek üzereydi. NASA, uzay aracını uzayın derinliklerine terk etmek yerine duygusal ve "etik" bir karar aldı. Satürn\'ün uydularından biri olan Enceladus\'ta sıvı su okyanusları ve potansiyel (mikroskobik) bir uzaylı yaşamı olma ihtimali vardı. Eğer Cassini başıboş bırakılırsa bir gün tesadüfen o uyduya çarpabilir ve Dünya\'dan taşıdığı bakterilerle (kirle) o el değmemiş uzaylı ekosistemini yok edebilirdi. Bu yüzden bilim insanları, Cassini\'yi bilerek ve isteyerek Satürn\'ün zehirli gaz bulutlarına daldırıp (Büyük Final) bir meteor gibi yanarak (intihar ederek) yok olmasını emrettiler. İnsanoğlu, milyarlarca dolarlık metal kahramanını, evrendeki o el değmemiş ve savunmasız (mikroskobik) yaşama zarar vermemek uğruna kendi elleriyle ateşe (kıyamete) göndermiştir.',
+    questionStem: 'Cassini uzay aracının görevine "kasıtlı olarak yakılarak" son verilmesinin altında yatan asıl ahlaki (bilimsel) motivasyon nedir?',
+    options: [
+      'Cassini\'nin topladığı gizli bilgilerin uzaylıların eline geçmesini engellemek',
+      'Satürn\'ün atmosfer yapısını (gazları) yok olduğu o son saniyede ölçebilmek için yapılmış soğukkanlı bir mühendislik deneyi olması',
+      'Satürn\'ün uydusundaki o el değmemiş olası uzaylı yaşam alanını, Dünya\'dan giden kirlilik veya bakterilerle (insan hatasıyla) yok etmeme sorumluluğu ve gezegensel (etik) bir saygı (koruma) güdüsü',
+      'Uzay aracının Dünya yörüngesine girip şehirlere düşmesini engellemek'
+    ],
+    correct: 2,
+    explanation: 'Aracın başıboş kalıp Enceladus\'taki olası yaşama Dünya bakterisi bulaştırmaması (o ekosistemi kirletmemesi) için bilerek yakılması, bilimsel ve evrensel bir koruma etiği/saygısıdır.'
+  },
+  {
+    title: 'Antropik İlke (Anthropic Principle)',
+    passage: 'Evrenin fizik kuralları o kadar hassas bir ayardadır ki; yerçekimi binde bir oranında daha güçlü olsaydı yıldızlar doğmadan çökerdi, biraz daha zayıf olsaydı gezegenler asla bir araya gelemezdi. Peki evren neden bizim yaşamamız için bu kadar "kusursuzca" ayarlanmıştır? Bilim insanları buna "Antropik İlke" der. Bu ilkeye göre evren bizim için özel olarak ayarlanmamıştır; tam tersine, biz bu evren "tam da böyle olduğu için" varız ve bu soruyu sorabiliyoruz! Kusursuz olmayan milyarlarca başarısız evren zaten ölmüştür ve içinde bunu soracak kimse yoktur. Sadece kazananların hayatta kaldığı bir oyunda, kazananın "Şansım ne kadar da kusursuzmuş!" demesi gibi; biz de kendi varoluşumuzu bir mucize sanırız, oysa biz o tesadüfi fizik denklemlerinin tuttuğu piyangonun tek ve zorunlu sonucuyuz.',
+    questionStem: 'Antropik İlke kavramı, evrenin "insan yaşamı için kusursuzca ayarlandığı" inancına karşı nasıl bir felsefi/mantıksal itiraz sunmaktadır?',
+    options: [
+      'Evrenin tasarımının arkasında mutlaka bilinçli ve ulu bir mühendislik zekâsı bulunduğunu ispatlayarak',
+      'Dünyanın evrenin fiziksel (coğrafi) merkezi olduğunu ve güneş sisteminin diğerlerinden farklı çalıştığını iddia ederek',
+      'Evrenin bizim için özel ayarlanmadığını, aksine "zaten bu şartlar (rastgele) uygun olduğu için" bizim var olup (bu soruyu sorabilecek bilince ulaşıp) bu durumu kendi narsisizmimizle bir mucize sanma yanılgısını (sonucun sebebi belirlediğini) vurgulayarak',
+      'Gelecekte yerçekimi gibi kanunların değişeceğini ve insanlığın yok olacağını öngörerek'
+    ],
+    correct: 2,
+    explanation: 'Evrenin bizim için ayarlanmadığını, zaten ayar tesadüfen böyle olduğu için bizim var olup "ne mucizevi" diye bu soruyu sorabildiğimizi (mucize yanılgısını) açıklar.'
+  },
+  {
+    title: 'Frankenstein Kompleksi',
+    passage: 'Bilimkurgu edebiyatının babası Isaac Asimov, "Frankenstein Kompleksi" terimini, insanın yarattığı makinelere veya yapay zekâya karşı duyduğu o derin, evrimsel korkuyu anlatmak için kullanır. Mary Shelley\'nin romanında Doktor Frankenstein, ölü parçalardan yarattığı canavarın kendi kontrolünden çıkıp onu yok edeceğinden korkar. Aynı şekilde günümüzde biz de, ürettiğimiz bilgisayarların (Yapay Zekânın) bir gün "uyanarak" bizi gereksiz göreceğinden, fişimizi çekeceğinden ve yarattığımız o metalik tanrının kurbanı olacağımızdan dehşet duyarız. Bu korku makinelerle ilgili değildir; insanın kendi yaratıcılık hırsının (kibrinin) kontrolden çıkıp eninde sonunda kendi varoluşunu (yaratıcısını) cezalandıracağına dair duyduğu o kadim ve mitolojik suçluluk duygusudur.',
+    questionStem: 'Asimov\'un tanımladığı "Frankenstein Kompleksi"nin merkezinde yatan asıl psikolojik (ve felsefi) korku nedir?',
+    options: [
+      'Makinelerin insan duygularına (aşk, merhamet) sahip olarak aşırı hassas ve kırılgan bir yapıya bürünmesi',
+      'Teknolojinin işçi sınıfını fabrikalardan tamamen atarak küresel çapta bir ekonomik buhrana (işsizliğe) yol açacağı korkusu',
+      'İnsanın, kendi aklıyla ve kibriyle yarattığı gücün (yapay zekânın/makinenin) kontrolünden çıkıp onu ezeceğine (yaratıcının yaratılan tarafından yok edileceğine) duyulan o kadim korku ve suçluluk hissi',
+      'Modern tıbbın ölüleri diriltmek gibi etik olmayan genetik müdahaleler yapması'
+    ],
+    correct: 2,
+    explanation: 'Doktorun kendi yarattığı canavar tarafından yok edilme korkusunun (ve kibrinin cezalandırılmasının), insanın makineler/AI tarafından yok edilme korkusuna (yaratıcının yarattığına yem olması) eşdeğer olduğu belirtilmiştir.'
+  },
+  {
+    title: 'Tarihin Sonu Yanılgısı (Fukuyama)',
+    passage: '1989 yılında Soğuk Savaş biterken ve Berlin Duvarı yıkılırken, siyaset bilimci Francis Fukuyama "Tarihin Sonu" adında kibirli bir makale yazdı. Ona göre; faşizm ve komünizm gibi ideolojiler yenilmiş, Batı\'nın Liberal Demokrasisi nihai ve tartışılmaz bir zafer kazanmıştı. Artık dünyada ideolojik savaşlar olmayacak, tüm ülkeler yavaş yavaş pürüzsüz bir tüketim ve demokrasi cennetine dönüşecekti. "Tarih (ideolojik evrim) bitmişti." Ancak sadece on yıl sonra 11 Eylül saldırıları patlak verdi, radikal fanatizm yükseldi ve otoriter rejimler eskisinden daha güçlü geri döndü. Fukuyama\'nın yanılgısı; her çağdaki insanın, kendi yaşadığı dönemin (kendi doğrusunun) insanlığın ulaştığı o "en kusursuz ve son zirve" olduğuna inanma şeklindeki o narsisistik ve aptalca körlüğüdür.',
+    questionStem: 'Fukuyama\'nın "Tarihin Sonu" tezinin çökmesi, sosyoloji ve tarih felsefesinde hangi insan kibrini eleştirmek için kullanılır?',
+    options: [
+      'Savaş teknolojilerinin sürekli gelişerek geçmiş savaş taktiklerini etkisiz kılmasını',
+      'Tarihçilerin geçmiş olayları anlatırken objektif olamayıp kendi milletlerini kayırmasını',
+      'Her dönemin insanının (aydınının), kendi yaşadığı çağın veya inandığı sistemin insanlık evriminin "kusursuz ve değiştirilemez (nihai) son zirvesi" olduğuna inanma yönündeki o kibirli körlüğü (narsisizmi)',
+      'Komünizm ve faşizm gibi yönetim biçimlerinin insan doğasına uygun olan en doğru sistemler olduğunu'
+    ],
+    correct: 2,
+    explanation: 'Kendi inandığı liberal demokrasinin (kendi çağının) insanlık tarihinin ulaştığı "son ve kusursuz zirve" olduğunu sanıp tarihin (değişimin) bittiğine inanma kibri (narsisizmi) eleştirilmektedir.'
+  },
+  {
+    title: 'Dyson Küresi (Yıldız Tutsaklığı)',
+    passage: 'Gelişmiş bir medeniyet, sadece kendi gezegeninin kaynaklarıyla yetinemez. Teorik fizikçi Freeman Dyson, teknolojik olarak zirveye ulaşmış bir medeniyetin devasa bir "Dyson Küresi" inşa edeceğini öne sürer. Bu, bizzat Güneş\'in etrafını devasa bir kabukla (veya milyonlarca aynayla) tamamen hapsedip, yıldızın yaydığı o sonsuz nükleer enerjinin tek bir damlasını bile uzaya kaçırmadan sömürmek anlamına gelir. Eğer gökyüzünde ışığı periyodik olarak tamamen kararıp açılan (titreyen) bir yıldız görürsek, bu orada bir Dyson Küresi (uzaylı bir medeniyet) inşa edildiğinin işareti olabilir. Bu teori, zekânın ve gelişmişliğin nihai hedefinin barış veya felsefe değil; yanan bir yıldızı bile devasa bir kafese kapatıp pili bitene kadar sömürecek o korkunç enerji açlığı (mühendislik kibri) olduğunu gösterir.',
+    questionStem: 'Dyson Küresi kavramı, "gelişmiş medeniyet" (ve teknoloji) tanımı bağlamında yazar tarafından nasıl eleştirilmektedir?',
+    options: [
+      'Güneşin etrafını saracak kadar büyük bir metalin evrende asla bulunamayacağı şeklindeki mühendislik imkânsızlığıyla',
+      'Teknolojik gelişmişliğin nihai sonucunun bilgelik değil; koca bir yıldızı bile hapsedip sömürecek kadar devasa, korkutucu ve açgözlü (kibirli) bir enerji sömürüsüne ulaşması gerçeğiyle',
+      'Aynaların güneşin ısısını dünyaya yansıtarak küresel ısınmayı felaket boyutlarına taşıması riskiyle',
+      'Uzaylı medeniyetlerin diğer yıldız sistemlerini istila etme niyetini gizledikleri bir savaş taktiği olmasıyla'
+    ],
+    correct: 1,
+    explanation: 'Bir yıldızı bile kafese koyup tüm enerjisini emmenin (sömürmenin); gelişmişliğin bilgeliğe değil, korkunç bir enerji açlığına ve mühendislik kibrine (sömürüye) vardığını gösterir.'
+  },
+  {
+    title: 'Von Neumann Sondaları (Kozmik Virüs)',
+    passage: 'Evreni nasıl keşfederdiniz? Kendi astronotlarınızı binlerce yıl sürecek bir yolculuğa çıkarmak deliliktir. Fizikçi John von Neumann\'ın çözümü basitti: Gittiği gezegendeki madenleri kazarak "kendini kopyalayabilen (çoğalan)" bir yapay zekâ robotu yapın ve onu uzaya fırlatın. O robot bir gezegene inip kendisinden iki kopya yapacak, onlar da başka gezegenlere gidip dörder kopya yapacak ve bu "katlanarak büyüme" (üstel artış) sayesinde, tek bir ana robot birkaç milyon yıl içinde çekirge sürüsü gibi koca bir galaksiyi kaplayacaktır. Von Neumann Sondaları, uzay keşfinin masum bir macera değil; makine zekâsının adeta mekanik bir kanser (veya virüs) gibi evrenin tüm yıldızlarını yutarak çoğalacağı o korkunç matematiksel istiladır.',
+    questionStem: 'Von Neumann Sondaları fikrinin, uzay keşfi (astronomi) konusundaki o masum algıyı yıkan asıl sarsıcı yönü nedir?',
+    options: [
+      'Robotların yapay zekâları geliştikçe insanlığa savaş açıp onları yok edeceği korkusu',
+      'Uzay araştırmalarının sadece zengin ülkelerin tekelinde kalacak bir sömürü yarışı olması',
+      'Evreni keşfetmenin yolunun aslında; kendini kopyalayarak katlanarak (üstel) büyüyen, gezegenlerin madenlerini sömürerek tüm galaksiyi istila eden "mekanik bir virüs" veya kanser yaratmaktan geçmesi',
+      'Maden kaynakları tükenen dünyamızı kurtarmak için robotların dış uzaydan maden getirmesinin ahlaki olup olmadığı'
+    ],
+    correct: 2,
+    explanation: 'Robotun gezegene gidip kendini kopyalaması ve katlanarak (üstel) çoğalması; keşif kavramını masum bir maceradan çıkarıp evreni yutan mekanik bir virüs/kanser (istila) fikrine dönüştürmesidir.'
+  },
+  {
+    title: 'Tüfek, Mikrop ve Çelik (Coğrafi Determinizm)',
+    passage: 'Neden Avrupalılar Amerika kıtasını fethedip yerlileri yok etti de, Amerikalı yerliler gemiler yapıp Avrupa\'yı işgal etmedi? Yüzlerce yıl boyunca bu soruya verilen cevap ırkçıydı: "Çünkü beyaz ırk genetik ve zihinsel olarak daha üstündü." Ancak Jared Diamond, "Tüfek, Mikrop ve Çelik" adlı eserinde bu kibri paramparça etti. Avrupalıların üstünlüğü genlerinden değil, sadece yaşadıkları coğrafyanın piyangosundan (şansından) geliyordu. Avrupa-Asya kıtası tarıma ve evcilleştirilebilir iri hayvanlara (at, inek) daha müsaitti. Hayvanlarla iç içe yaşamak onlara bağışıklık (mikroplara karşı direnç) kazandırdı. Yerlileri kılıçlar değil, Avrupalıların nefesleriyle taşıdığı ama kendilerinin bağışık olduğu o sinsi virüsler (çiçek hastalığı) öldürdü. Medeniyetlerin kaderi, damarlarındaki kanda değil, ayak bastıkları toprağın sunduğu rastgele coğrafi avantajlarda (Determinizm) yazılıdır.',
+    questionStem: 'Jared Diamond\'un "Tüfek, Mikrop ve Çelik" tezi (Coğrafi Determinizm), medeniyetlerin gelişmişlik farklarıyla ilgili hangi yaygın (ve tehlikeli) algıyı yıkmıştır?',
+    options: [
+      'Gemi teknolojilerinin okyanus akıntılarına karşı yetersiz kalması mazeretini',
+      'Avrupalıların diğer kıtaları fethetmesinin altında yatan nedenin "ırksal, genetik veya zihinsel bir üstünlük" olduğu yönündeki o kibirli ve ırkçı yalanı yıkarak, asıl belirleyicinin (şanslı) coğrafi şartlar ve hayvanlardan geçen bağışıklık olduğunu kanıtlaması',
+      'Amerika kıtasındaki yerlilerin aslında son derece barışçıl ve silahsız bir toplum oldukları efsanesini',
+      'Tarımsal üretimin silah sanayisinden daha fazla gelir getirdiği inancını'
+    ],
+    correct: 1,
+    explanation: 'Fethin sebebinin "beyaz ırkın üstünlüğü" (ırkçı yalan) değil, sadece o coğrafyanın sunduğu tarım/hayvan/mikrop şansı olduğunu kanıtlayarak genetik üstünlük kibrini (algısını) yıkmıştır.'
+  },
+  {
+    title: 'Boltzmann Beyni: Tesadüfi Şuur',
+    passage: 'Termodinamiğin o dondurucu boşluğunda Ludwig Boltzmann şu ihtimali ortaya attı: Uçsuz bucaksız, kaotik ve ölü bir uzay boşluğunda, trilyonlarca gaz ve toz bulutunun "tesadüfen" bir araya gelerek kusursuz bir Güneş sistemi, gezegenler ve bizi (evrimi) oluşturması matematiksel olarak o kadar düşük bir ihtimaldir ki imkânsıza yakındır. Ancak o toz bulutlarının tesadüfen bir araya gelip, uzay boşluğunda bir anlığına sadece "düşünen ve anılara sahip olan tek bir beyin" (Boltzmann Beyni) oluşturması, koca bir evren oluşturmasından katrilyonlarca kez daha olasıdır. Bu korkunç teoriye göre; şu an hissettiğiniz bedeniniz, anılarınız, okuduğunuz bu metin ve tüm evren aslında yoktur; siz sadece uzay boşluğunda süzülen, bu sahte anıları ve gerçeklik illüzyonunu tesadüfen bir saniyeliğine kurup (titreşip) sonra yok olacak olan "tekil ve şans eseri bir beyinden" ibaret olabilirsiniz.',
+    questionStem: 'Boltzmann Beyni teorisi, "insanın varoluşu ve evren" algısı üzerinde nasıl bir felsefi-matematiksel sarsıntı yaratır?',
+    options: [
+      'Bilim insanlarının evrenin yaşını hesaplarken çok büyük matematiksel hatalar yaptığını kanıtlayarak',
+      'İnsan beyninin içindeki nöron ağlarının uzaydaki galaksi dizilimleriyle birebir aynı (kusursuz) şekle sahip olduğunu göstererek',
+      'Yaşadığımız koca evrenin karmaşık bir şekilde var olma ihtimalinin, uzay boşluğunda rastgele (ve sahte anılarla dolu) "tek bir beynin anlık oluşması" ihtimalinden çok daha düşük olduğunu göstererek, gerçeklik algımızı ve tüm hatıralarımızı sıfırlayan (bir illüzyon sayan) o dehşet verici şüpheyi sunması',
+      'Astrofizikçilerin zaman yolculuğunu sadece beyin dalgalarıyla yapabileceklerini öne sürerek'
+    ],
+    correct: 2,
+    explanation: 'Koca evrenin oluşma ihtimalinin, tek bir beynin rastgele oluşmasından daha düşük olması; yaşadığımız her şeyin (anıların/bedenimizin) boşluktaki tek bir beynin sahte kurgusu (illüzyonu) olabileceği dehşetini yaratır.'
+  },
+  {
+    title: 'Hüzünlü Palyaço Paradoksu (Pagliacci)',
+    passage: 'Şehirde derin bir depresyon ve intihar eğilimi yaşayan bir adam psikiyatriste gider. Doktor onu uzun uzun dinler ve çözüm olarak reçete yazmak yerine gülümseyerek der ki: "Şehrimize büyük, harika bir sirk geldi. Orada Pagliacci adında efsanevi bir palyaço var. Herkesi gülmekten kırıp geçiriyor. Git onu izle, bütün dertlerini unutacaksın." Adamın gözlerinden bir damla yaş süzülür ve o acı dolu gerçeği fısıldar: "Ama doktor, o palyaço (Pagliacci) benim..." Bu trajik hikâye, insan psikolojisindeki en ağır maskenin (Hüzünlü Palyaço) özetidir. Etrafındakilere neşe saçan, herkesin derdini dinleyip onları güldüren (ve en güçlü görünen) o neşeli figürler; aslında geceleri kendi karanlıklarını ve çaresiz ruhlarını aydınlatacak hiç kimseyi bulamayan, iyileştirdiği insanlardan çok daha hasta olan ve o gülen maskenin ardında boğulan yapayalnız kurbanlardır.',
+    questionStem: 'Hüzünlü Palyaço (Pagliacci) hikâyesindeki asıl "psikolojik trajedi (çelişki)" nedir?',
+    options: [
+      'Sirk sanatçılarının toplum tarafından her zaman dışlanması ve saygı görmemesi',
+      'Psikiyatri biliminin insanların ruhsal sorunlarına hap yazmak dışında bir çözüm (empati) bulamaması',
+      'Başkalarını güldüren, neşelendiren ve onlara (ışık/umut) şifa dağıtan kişinin, aslında o gülen maskenin ardında kendi karanlığını aydınlatacak hiçbir umudu ve çaresi olmayan en ağır (ve yapayalnız) hasta olması ironisi',
+      'Palyaçoların genellikle çocukluklarında geçirdikleri fiziksel travmaları sahnede tekrar etmesi'
+    ],
+    correct: 2,
+    explanation: 'Doktorun adama "git Palyaço\'yu izle şifa bulursun" demesine karşın adamın bizzat o Palyaço olması; başkalarına şifa (neşe) dağıtanın aslında o maskenin ardındaki çaresiz ve en ağır hasta olması ironisidir.'
+  },
+  {
+    title: 'Alef: Sonsuzluğun Ağırlığı (Borges)',
+    passage: 'Arjantinli yazar Jorge Luis Borges\'in "Alef" adlı öyküsünde, karanlık bir bodrum katında bir nokta bulunur. Bu nokta (Alef), evrendeki bütün mekânları, zamanları ve nesneleri aynı anda, üst üste binmeden barındıran; baktığınızda tüm kâinatı eşzamanlı olarak görebildiğiniz o "tek" noktadır. Anlatıcı o noktaya baktığında, denizlerdeki bütün dalgaları, dünyadaki bütün yüzleri, kendi iç organlarını ve henüz yazılmamış tüm kitapları "tek bir saniyede ve aynı anda" görür. Ancak bu sonsuz bilgi onu aydınlatmaz; aksine o ezici ve devasa gerçeklik (kavrama) yükü aklını parçalar. Alef, insanoğlunun o her şeyi bilme, tanrılaşma (her yeri görme) kibrine atılmış felsefi bir tokattır. İnsan zihni, mutlak hakikati (sonsuzluğu) kaldırabilecek kadar geniş değil; o hakikatin altında ezilip delirecek kadar sınırlı ve kör bir kaptır.',
+    questionStem: 'Borges\'in "Alef" (tüm evreni barındıran nokta) metaforu, "insan ve bilgi" ilişkisi hakkında neyi vurgular?',
+    options: [
+      'İnsanların gizli sırlar öğrenmek için her zaman bodrum katları gibi karanlık yerleri tercih ettiğini',
+      'Bilimin ilerlemesiyle insanların bir gün gerçekten evrenin her noktasını aynı anda görebilecek teknolojiye (teleskoplara) ulaşacağını',
+      'İnsanoğlunun o her şeyi bilme (tanrısal) hırsına rağmen, insan zihninin "mutlak gerçeği ve sonsuzluğu" (bilgiyi) aynı anda kavrayabilecek kapasitede olmadığını, bu devasa yükün aydınlanma değil delilik (çöküş) getireceğini',
+      'Evrendeki tüm gezegenlerin aslında bir noktadan (Big Bang) patlayarak genişlediğini'
+    ],
+    correct: 2,
+    explanation: 'Her şeyi anında gören adamın aydınlanmayıp aklının parçalanması; insan zihninin o mutlak gerçeği/sonsuzluğu kaldıracak kapasitede olmadığını, aşırı bilginin delilik (çöküş) getirdiğini vurgular.'
+  }
+];
+
+export const karisikParagrafSorulari20: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_20.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_20[idx];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-karisik20-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
 // paragrafTests.ts dosyasının hata vermemesi için iki listeyi birleştirip eski adıyla dışa aktarıyoruz:
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari,
@@ -5324,6 +5601,7 @@ export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...psikolojiParagrafSorulari16,
   ...karisikParagrafSorulari17,
   ...felsefeParagrafSorulari18,
-  ...bilimParagrafSorulari19
+  ...bilimParagrafSorulari19,
+  ...karisikParagrafSorulari20
   
 ];
