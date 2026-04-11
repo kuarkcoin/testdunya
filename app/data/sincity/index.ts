@@ -3919,6 +3919,283 @@ export const felsefeParagrafSorulari14: BilimParagrafQuestion[] = Array.from({ l
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
+const PARAGRAPH_THEMES_15 = [
+  {
+    title: '52 Hertz Balinası: Kozmik Yalnızlık',
+    passage: 'Okyanusun derinliklerinde, bilim insanlarının 1989\'dan beri takip ettiği bir balina yaşamaktadır. Ancak bu balina sürüsünden tamamen kopmuştur ve yapayalnızdır. Sebebi ise fiziksel bir engel değil, iletişimdeki trajik bir uyumsuzluktur. Normal balinalar 10 ila 39 hertz arasında ses çıkarıp haberleşirken, bu balina şarkılarını 52 hertz frekansında söylemektedir. Şarkısı o kadar incedir ki, devasa okyanusta ona cevap verebilecek, onu duyabilecek tek bir türdeşi bile yoktur. "Dünyanın en yalnız balinası" olarak bilinen bu canlı, kalabalıklar içinde çığlık çığlığa konuşup da kimse tarafından duyulmayan (anlaşılmayan) modern insanın o sağır edici ve trajik yalnızlığının en kusursuz felsefi karşılığıdır.',
+    questionStem: '52 Hertz Balinası\'nın durumu, insan psikolojisindeki hangi çıkmazı sembolize etmektedir?',
+    options: [
+      'Toplumdan dışlanmamak için insanların kendi fikirlerinden (seslerinden) vazgeçmesini',
+      'Fiziksel olarak kalabalıkların (türdeşlerin) içinde olunmasına rağmen, frekans uyumsuzluğu (anlaşılamamak) nedeniyle çekilen o derin ve aşılmaz yalnızlık hissini',
+      'Deniz altı kirliliğinin canlıların iletişim yollarını tamamen bozmasını',
+      'Farklı dilleri konuşan insanların birbirleriyle asla ortak bir kültür kuramayacağı gerçeğini'
+    ],
+    correct: 1,
+    explanation: 'Balinanın sesinin (şarkısının) diğerleri tarafından duyulmaması nedeniyle yapayalnız kalması; insanın kalabalıklar içinde "anlaşılamama" yüzünden çektiği derin yalnızlığı sembolize eder.'
+  },
+  {
+    title: 'Phalaris\'in Boğası: Kötülüğün İronisi',
+    passage: 'Antik Yunan\'da Akragas tiranı Phalaris, düşmanlarına acı çektirmek için Perilaus adlı bir heykeltıraşa korkunç bir işkence aleti yaptırır. Bu alet, içi boş ve tamamen pirinçten yapılmış devasa bir boğa heykelidir. Kurban içine atılır, altından ateş yakılır ve kurbanın çığlıkları boğanın burnundaki özel borulardan geçerek korkunç bir "boğa böğürmesi" (müzik) gibi duyulur. İcat tamamlandığında Tiran Phalaris, aletin nasıl çalıştığını test etmek için içine ilk olarak mucidin ta kendisini, yani Perilaus\'u attırır ve onu diri diri kızartır. "Phalaris\'in Boğası", kötülüğü ve şiddeti kendi elleriyle (zekâsıyla) tasarlayanların, eninde sonunda kendi icat ettikleri cehennemin ilk kurbanı olacaklarını gösteren kusursuz bir tarihi adalettir.',
+    questionStem: 'Phalaris\'in Boğası hikâyesindeki asıl "ironi (kaderin cilvesi)" nedir?',
+    options: [
+      'Boğanın içine atılan kurbanların çığlıklarının bir müzik aleti gibi duyulması',
+      'Tiranın kendi gücünü kanıtlamak için sanatı ve heykeltıraşlığı kötüye kullanması',
+      'Başkalarına en acımasız işkenceyi çektirmek için kusursuz bir kötülük aracı tasarlayan mucidin (heykeltıraşın), bizzat kendi tasarladığı şiddetin ilk kurbanı olması',
+      'Pirinç madeninin ısıyı çok çabuk iletmesinin bir işkence yöntemine dönüşmesi'
+    ],
+    correct: 2,
+    explanation: 'Kötülük aletini tasarlayan adamın o aletin içinde ilk öldürülen kişi olması, kötülüğü inşa edenin kendi icadına kurban gitmesi şeklindeki ironiyi oluşturur.'
+  },
+  {
+    title: 'Ağaçların Gizli Ağı (Wood Wide Web)',
+    passage: 'Doğanın sadece acımasız bir rekabet, güçlü ağacın güneş ışığını kaparak zayıfı öldürdüğü bencil bir orman olduğu sanılırdı. Ancak bilim insanları orman tabanının altında devasa bir "Mikoriza (Mantar) Ağı" keşfettiler. Ağaçlar bu mantar kökleri sayesinde tıpkı bir internet ağı gibi birbirine bağlıdır. Eğer ormanın bir köşesindeki genç bir fidan güneş alamıyor ve ölmek üzereyse, yaşlı (anne) ağaçlar bu yeraltı ağını kullanarak ona kendi besinlerini, karbonu ve suyu transfer ederler. Hastalanan bir ağaç, ölmeden önce tüm savunma enzimlerini diğer ağaçlara aktararak onları uyarır. Bu "Gizli Ağ", doğanın merkezinde vahşi bir bencilliğin değil; kusursuz bir dayanışmanın, fedakârlığın ve ortak yaşamın yattığını kanıtlayan devrimsel bir buluştur.',
+    questionStem: 'Ağaçların "Mikoriza Ağı" üzerinden haberleşmesi, doğa kanunları hakkındaki hangi klasik algıyı yerle bir etmiştir?',
+    options: [
+      'Mantarların orman ekosistemi için zararlı ve parazit canlılar olduğu inancını',
+      'Doğanın (evrimin) sadece güçlülerin ayakta kaldığı (zayıfın ezildiği) bencil ve acımasız bir rekabet arenası olduğu algısını yıkarak; temelinde fedakârlık ve kusursuz bir dayanışma olduğunu',
+      'Ağaçların besinlerini sadece yaprakları aracılığıyla güneşten sentezlediği teorisini',
+      'Genç fidanların yaşlı ağaçların gölgesinde asla büyüyemeyeceği algısını'
+    ],
+    correct: 1,
+    explanation: 'Yaşlı ağaçların hastalanan veya güneş alamayan ağaçlara besin göndermesi; doğanın acımasız bir rekabet (zayıfın ezildiği bir yer) değil, bir dayanışma ve fedakârlık ağı olduğunu gösterir.'
+  },
+  {
+    title: 'Hypatia\'nın Ölümü ve Aklın Düşüşü',
+    passage: 'MS 415 yılında, İskenderiye Kütüphanesi\'nin son büyük bilimi insanı, filozof ve astronom Hypatia, sokak ortasında dogmatik ve fanatik bir çete tarafından paramparça edilerek öldürüldü. Suçu; felsefe yapmak, kadın olmasına rağmen erkeklere astronomi öğretmek ve sorgulamaktı. Gözü dönmüş kalabalık, onun bedenini midye kabuklarıyla derisini yüzerek yaktı. Hypatia\'nın o sokakta can verişi sadece bir cinayet değildir; antik çağın o aydınlık, hoşgörülü ve sorgulayıcı (klasik) zihninin, yerini Orta Çağ\'ın karanlık, tahammülsüz ve kanlı fanatizmine bıraktığı o ebedi çöküşün (akıl tutulmasının) miladıdır.',
+    questionStem: 'Yazar, Hypatia\'nın öldürülmesini tarihsel süreçte neyin sembolü olarak değerlendirmektedir?',
+    options: [
+      'Kadınların antik çağlarda eğitim almasının yasalara aykırı olduğunun',
+      'İskenderiye şehrinin siyasi başkent olma özelliğini tamamen yitirmesinin',
+      'Bilimin, aklın ve hoşgörünün (aydınlanmanın); dogmatik, tahammülsüz ve vahşi bir fanatizm karşısında yenilerek Orta Çağ karanlığının başlamasının (aklın düşüşünün)',
+      'Astronominin felsefeden ayrılarak bağımsız bir bilim dalı haline gelmesinin'
+    ],
+    correct: 2,
+    explanation: 'Hypatia\'nın fanatikler tarafından öldürülmesi; aklın, felsefenin ve hoşgörünün Orta Çağ karanlığına (fanatizme) yenik düşmesinin miladı olarak sembolize edilmiştir.'
+  },
+  {
+    title: 'Kuzey Sentinel Adası: İzolasyonun Kalesi',
+    passage: 'Hindistan açıklarındaki Kuzey Sentinel Adası\'nda yaşayan yerli halk, 60 bin yıldır dış dünyayla hiçbir iletişim kurmamış, ateşi nasıl yakacaklarını bile bilmeyen bir kabiledir. Adalarına yaklaşan helikopterlere, balıkçılara ve hatta misyonerlere anında zehirli oklarla saldırıp onları öldürürler. Hindistan hükümeti bile adaya gitmeyi yasaklamıştır. Modern insan onları "ilkel ve vahşi" olarak görür. Oysa Sentinelliler, aslında modern dünyanın getireceği o ölümcül virüsleri, sömürüyü, asimilasyonu ve betonlaşmayı sezgisel olarak reddeden; kendi saflıklarını ve özgürlüklerini "uygarlığın o zehirli hediyelerine" karşı kanlarıyla koruyan, dünyadaki son onurlu ve sarsılmaz izolasyon kalesidir.',
+    questionStem: 'Parçaya göre Sentinel kabilesinin dış dünyaya karşı gösterdiği vahşi ve saldırgan tutumun asıl (felsefi) sebebi nedir?',
+    options: [
+      'Adada bulunan değerli altın madenlerini dış güçlerden saklama çabası',
+      'Sadece avcılık ve toplayıcılıkla geçindikleri için misafirperverlik duygularının gelişmemiş olması',
+      'Modern dünyanın getireceği hastalık, sömürü ve kültürel yok oluşa karşı, kendi doğal saflıklarını (özgürlüklerini ve izolasyonlarını) koruma amaçlı bilinçli bir savunma kalkanı',
+      'Uçan araçları (helikopterleri) kendi dini inançlarındaki şeytani figürler sanmaları'
+    ],
+    correct: 2,
+    explanation: 'Dış dünyaya saldırmaları ilkellik değil; sömürüye, asimilasyona ve modern uygarlığın zehrine karşı kendi saflıklarını ve özgürlüklerini (izolasyonu) koruma çabası olarak yorumlanmıştır.'
+  },
+  {
+    title: 'Kola Süper Derin Sondajı',
+    passage: 'Soğuk Savaş döneminde Sovyetler Birliği ile Amerika sadece uzayda değil, yerin dibinde de yarışıyordu. 1970\'lerde Sovyet bilim insanları, Kola Yarımadası\'nda yerkabuğunu delerek dünyanın merkezine inmek için bir sondaj başlattılar. Tam 24 yıl boyunca kazdılar ve 12 kilometre derinliğe (insanlığın ulaştığı en derin nokta) indiler. Ancak sondajı durdurmak zorunda kaldılar; çünkü kayalar o derinlikte 180 derece sıcaklığa ulaşmış, matkap uçları plastiğe dönüp erimeye başlamıştı. İnsanoğlu galaksilerin milyarlarca ışık yılı ötesindeki kara delikleri fotoğraflayabilmiş, sınırları aşmıştır; ancak kendi üzerinde yaşadığı gezegenin derisinin birkaç kilometre altına inmeye kalktığında cehennem sıcağına çarpıp aciz kalmıştır. Ayaklarımızın altındaki dünya, başımızın üstündeki gökyüzünden daha büyük bir bilinmezdir.',
+    questionStem: 'Kola Sondajı deneyimi, bilimsel araştırmalar bağlamında hangi ironik (şaşırtıcı) gerçeği göz önüne sermektedir?',
+    options: [
+      'Sovyet teknolojisinin madencilik alanında Amerika\'dan çok daha geride olduğunu',
+      'İnsanoğlunun evrenin en uzak köşelerini keşfedecek teknolojiye sahipken, bizzat kendi ayaklarının altındaki gezegenin derinliklerine (sıcaklığa) nüfuz etmekte aciz ve çaresiz kalmasını',
+      'Yeraltı kaynaklarının (petrolün) sanıldığından çok daha derinlerde bulunduğunu',
+      'Matkap uçlarının uzay teknolojisine göre çok daha yavaş geliştiğini'
+    ],
+    correct: 1,
+    explanation: 'Galaksileri fotoğraflarken yerin 12 km altına inince sıcaktan matkapların eriyip kazının durması; insanın uzak evrene hükmederken kendi gezegeninin derinlikleri karşısında aciz kalmasıdır (ironidir).'
+  },
+  {
+    title: 'Tardigradlar (Su Ayıları) ve Ölümsüzlük',
+    passage: 'Gözle zor görülen, sekiz bacaklı mikroskobik canlılar olan Tardigradlar (Su Ayıları), doğanın en büyük anomalisidir. Bir tardigradı alın; 150 derece kaynar suya atın, eksi 272 dereceyle (mutlak sıfır) dondurun, okyanusun en derin çukurundaki devasa basıncın içine sokun veya nükleer bir patlamanın ortasına bırakın. Hatta onları uzay boşluğuna atın. Hiçbirinde ölmezler. Vücutlarındaki suyu dışarı atarak "kriptobiyoz" adı verilen derin bir uykuya geçerler ve yıllar sonra bir damla suyla tekrar hayata dönerler. İnsanoğlu küçücük bir virüsle veya iklim değişikliğiyle yok olma paniği yaşarken; bu minicik su ayıları, dayanıklılığın boyutla değil, esneklikle (biyolojik uyumla) ölçüldüğünü göstererek bizim o devasa ve kırılgan kibrimizle alay ederler.',
+    questionStem: 'Tardigradların olağanüstü dayanıklılığı, insanoğlunun varoluşuna dair hangi gerçeği (eleştiriyi) ortaya koyar?',
+    options: [
+      'Uzay araştırmalarında hayvan deneklerin kullanımının etik (ahlaki) sorunlar taşıdığını',
+      'Tüm canlıların aslında aynı hücresel kökenden geldiğini',
+      'İnsanoğlunun zekâsına ve devasa boyutuna duyduğu kibrin, en zorlu felaketlere bile (kriptobiyoz ile) esneyerek uyum sağlayan bu mikroskobik canlının dayanıklılığı (varoluşu) karşısında son derece kırılgan ve aciz kaldığını',
+      'Aşırı soğuk ortamların hücre yenilenmesini durdurarak ölümsüzlük sağladığını'
+    ],
+    correct: 2,
+    explanation: 'Tardigradın uzayda veya kaynar suda bile ölmemesi, boyut ve teknolojiyle övünen (kibirli) insanın kırılganlığıyla alay ettiğini ve dayanıklılığın esneklik/uyum olduğunu gösterir.'
+  },
+  {
+    title: 'Uzay Kalemi (Space Pen) Efsanesi',
+    passage: 'Yıllarca dilden dile dolaşan meşhur bir hikâye vardır: Uzay yarışında NASA, yerçekimsiz ortamda tükenmez kalemlerin yazmadığını fark eder. Çözüm bulmak için milyonlarca dolar harcayıp basınçla çalışan bir "Uzay Kalemi" icat ederler. Sovyet kozmonotlar ise çok daha zekice bir şey yaparlar: Sadece kurşunkalem kullanırlar! Bu hikâye o kadar popülerdir ki, bürokratik israfın ve Batı kibrinin sembolü haline gelmiştir. Ancak bu hikâye koca bir yalandır. Aslında kurşunkalemden kırılan grafit tozları havada süzülerek uzay aracının elektronik sistemlerine girip ölümcül kısa devrelere ve yangınlara yol açmaktadır. Yani Ruslar da daha sonra o pahalı tükenmez kalemden satın almışlardır. Bu efsane; insanların sıkıcı gerçeklere değil, basit, kıvrak ve otoriteyi (NASA\'yı) aptal gösteren "komik kurgulara" inanmaya her zaman daha teşne olduğunu ispatlar.',
+    questionStem: 'Uzay Kalemi efsanesinin yıllarca popüler kalıp doğru sanılmasının asıl sosyolojik nedeni parçada neye bağlanmıştır?',
+    options: [
+      'Sovyetler Birliği\'nin medya ve propaganda konusunda çok başarılı olmasına',
+      'Tükenmez kalem şirketlerinin bu hikâyeyi kendi reklamları için gizlice yaymasına',
+      'İnsan zihninin, karmaşık/sıkıcı bilimsel gerçekler yerine; elit otoriteyi (NASA\'yı) beceriksiz ve aptal gösteren basit, kıvrak ve ironik kurgulara (yalanlara) inanmaya olan zaafına',
+      'Kurşun kalemlerin gerçekten de uzay koşullarında tükenmez kalemden daha güvenli olmasına'
+    ],
+    correct: 2,
+    explanation: 'Grafit tozunun ölümcül olması gerçeğinin (sıkıcı bilim) göz ardı edilip, NASA\'yı aptal gösteren o ironik ve basit kurguya inanmanın insan zihninin zaafı olduğu vurgulanmıştır.'
+  },
+  {
+    title: 'Cotard Sendromu (Yürüyen Ceset Yanılgısı)',
+    passage: 'Psikiyatride bilinen en ürkütücü ve felsefi hastalıklardan biri "Cotard Sendromu"dur. Bu nörolojik rahatsızlığa yakalanan hastalar, kesin bir inançla "ölü olduklarını", organlarının çürüdüğünü veya kanlarının kalmadığını savunurlar. Yemek yemeyi bırakırlar çünkü bir cesedin yemeğe ihtiyacı yoktur. Beynin duygu (amigdala) ve yüz tanıma (fusiform gyrus) bölümleri arasındaki bağ koptuğu için, kişi kendi yüzüne aynada baktığında hiçbir duygusal aidiyet hissetmez. Mantık onu hayatta olduğuna ikna edemez. Bu korkunç hastalık bize varoluşumuzun o kırılgan sınırını gösterir: "Yaşıyorum" demek sadece nefes almak veya kalbin atması değil; beynimizin bize yaşadığımıza dair anbean o duygusal hikâyeyi (illüzyonu) fısıldamasıdır. O fısıltı kesilirse, atan bir kalple bile yaşayan bir cesede dönüşürüz.',
+    questionStem: 'Cotard Sendromu\'nun insan varoluşu hakkında öğrettiği asıl felsefi/biyolojik ders nedir?',
+    options: [
+      'Ölüm korkusunun bazı insanlarda yeme bozukluklarına (anoreksiya) yol açması',
+      'Ayna karşısında geçirilen uzun saatlerin nörolojik hastalıklara davetiye çıkarması',
+      'Hayatta olma (yaşama) hissinin sadece kalbin atmasıyla (fiziksel canlılıkla) ilgili olmadığı; bunun, beynin bize sürekli sunduğu "duygusal bağ ve aidiyet (illüzyon)" ağının bir ürünü olduğu',
+      'Sinir sistemi hasarlarının eninde sonunda bütün iç organları çürüterek iflas ettirdiği'
+    ],
+    correct: 2,
+    explanation: 'Kalp atmasına rağmen beynin duygu bağı koptuğu için kişinin kendini ölü sanması; "yaşıyorum" hissinin sadece biyoloji değil, beynin kurduğu bir duygusal aidiyet/hikâye olduğunu kanıtlar.'
+  },
+  {
+    title: 'Mary Anning: Kayaların Gizli Annesi',
+    passage: '19. yüzyılın başlarında, İngiltere sahillerinde fırtınalardan sonra kayaları kazan genç bir kadın, bilim dünyasını kökünden sarsacak bir şey buldu: Dünyanın ilk İhtiyozor (deniz dinozoru) fosili. Mary Anning adındaki bu yoksul kadın, tek bir üniversite eğitimi almamış olmasına rağmen, yıllarca uçurumlarda asılı kalarak Pterozor ve Plesiyozor iskeletlerini gün yüzüne çıkardı. Ancak o dönemki kibirli Londra Jeoloji Topluluğu, bir "kadının" ve bir "alt sınıf mensubunun" makale yayınlamasına izin vermedi. Onun bulduğu fosilleri satın alan erkek bilim insanları, o kemiklere kendi isimlerini verdiler ve şöhret oldular. Mary Anning, bilimin köklerinin sadece laboratuvarlarda değil, isimleri (cinsiyetleri yüzünden) tarihten kasıtlı olarak silinmiş o yoksul ve tutkulu insanların nasırlı ellerinde yattığını gösteren hüzünlü bir efsanedir.',
+    questionStem: 'Mary Anning\'in hikâyesi, 19. yüzyıl bilim dünyasının hangi karanlık yönünü (zaafını) eleştirmektedir?',
+    options: [
+      'Fosil kazılarının gerekli güvenlik önlemleri alınmadan uçurumlarda yapılması',
+      'Bilimsel keşiflerin sadece laboratuvar ortamında yapıldığı yalanını',
+      'Bilimsel şöhretin ve akademik onay mekanizmasının; liyakate (gerçek emeğe) değil, cinsiyetçi kibre ve sınıfsal (elit) ayrımcılığa (eril tahakküme) dayanmasını',
+      'Jeoloji biliminin astronomi bilimi kadar değer görmemesini'
+    ],
+    correct: 2,
+    explanation: 'Fosilleri Mary\'nin bulmasına rağmen, cinsiyeti ve yoksulluğu yüzünden dışlanıp emeğinin elit erkekler tarafından çalınması, dönemin cinsiyetçi ve sınıfsal kibrini eleştirir.'
+  },
+  {
+    title: 'Zombi Karıncalar (Ophiocordyceps)',
+    passage: 'Yağmur ormanlarında yaşayan bir karınca, bir gün aniden sürüsünden ayrılır. Kendi isteği dışında ağaçların yüksek dallarına tırmanır, bir yaprağın damarına dişlerini kilitler ve orada felç geçirerek ölür. Sebebi intihar değil, beynini ele geçiren "Ophiocordyceps" adlı bir mantardır. Mantar, karıncanın zihnine kimyasal sinyaller göndererek onu bir kukla gibi yönetmiş; kendi sporlarını (tohumlarını) rüzgârla en uzak mesafeye yayabilmek için karıncayı yüksek bir noktaya çıkarıp orada öldürmüştür. Bu mikroskobik dehşet, "Özgür irade nedir?" sorusunu suratımıza çarpar. Bir canlının kendi bedeni üzerindeki kontrolünün, zihnine dışarıdan sızan ufacık bir kimyasal (veya bir fikir) tarafından nasıl saniyeler içinde gasp edilip sahibini ölüme götürebileceğini gösterir.',
+    questionStem: 'Zombi Karınca ve Mantar (Cordyceps) ilişkisi, yazar tarafından hangi felsefi kavramı tartışmak için bir metafor olarak kullanılmıştır?',
+    options: [
+      'Yağmur ormanlarının giderek yok olmasının tehlikelerini',
+      'İklim krizinin karınca sürüleri üzerindeki yön bulma etkisini',
+      'Bir canlının "özgür irade" ve "beden kontrolü" dediği şeyin, dışarıdan sızan parazit bir gücün (kimyasalın/fikrin) kontrolüne girerek nasıl kolayca yok edilebileceğini (iradenin kırılganlığını)',
+      'Mantarların orman ekosistemindeki en yararlı temizleyici (çürütücü) organizma olduğunu'
+    ],
+    correct: 2,
+    explanation: 'Mantarın karıncanın zihnini ele geçirip onu intihara (yükseğe çıkıp ölmeye) sürüklemesi; özgür iradenin dışarıdan sızan bir güçle nasıl gasp edilebileceğinin metaforudur.'
+  },
+  {
+    title: 'Stradivarius Kemanları ve Küçük Buz Çağı',
+    passage: 'Antonio Stradivari\'nin 17. yüzyılda ürettiği o efsanevi kemanların sesi, bugün milyonlarca dolarlık teknolojilerle ve lazer analizleriyle bile hala kopyalanamamaktadır. Kimisi onun gizli bir vernik kullandığını, kimisi de tahtayı özel kimyasallara batırdığını iddia etti. Oysa gerçek sır, doğanın o dönemde dünyayı mahveden bir felaketinde saklıydı. Stradivari\'nin yaşadığı dönem, Avrupa\'da "Küçük Buz Çağı"nın en sert yıllarıydı. Bu dondurucu soğuklar yüzünden ağaçlar çok yavaş büyümüş, odunları eşi benzeri görülmemiş bir sıklığa ve yoğunluğa ulaşmıştı. O mucizevi akustik (ses), aydınlık ve sıcak günlerin değil, kemanı oluşturan o ağacın dondurucu soğukta ve acımasız kış şartlarında yıllarca verdiği hayatta kalma mücadelesinin sonucuydu. Kusursuzluk, konforun değil; felaketin dirence dönüşmesinin ürünüdür.',
+    questionStem: 'Stradivarius kemanlarının eşsiz sesinin "Küçük Buz Çağı"na bağlanması, sanat ve kusursuzluk hakkında neyi sembolize etmektedir?',
+    options: [
+      'Müzik aleti yapımında gizli kimyasalların ve verniklerin kullanılmasının etik dışı olduğunu',
+      'Mükemmelliğin (o eşsiz kalitenin), rahat ve sıcak koşullarda değil; ancak dondurucu bir felaketin (acı ve zorluğun) içinde verilen dirençli bir mücadeleyle ortaya çıkabileceğini',
+      'Stradivari\'nin kemanlarını üretirken akustik hesaplamalarda çok başarısız olduğunu',
+      'Küresel ısınma nedeniyle günümüzde bir daha asla müzik aleti üretilemeyeceğini'
+    ],
+    correct: 1,
+    explanation: 'Ağacın dondurucu soğukta yavaş ve yoğun büyümesinin o eşsiz sesi vermesi; kusursuzluğun konfordan değil, felaket/zorluk içindeki dirençten doğduğunu sembolize eder.'
+  },
+  {
+    title: 'Gladyatör Terinin Satılması',
+    passage: 'Antik Roma\'da Kolezyum\'un arenasında savaşan gladyatörler, ölüm makinesi köleler olarak görülse de aslında dönemin "popstarlarıydı". Ancak işin asıl ilginç yanı arenadaki vahşet değil, tribünlerin ardında dönen iğrenç (ama tanıdık) bir sektördü. Arenadan sağ çıkan şampiyon gladyatörlerin derilerinden özel aletlerle (strigil) kazınan kir, kan ve ter karışımı sular küçük şişelere dolduruluyor; zengin Romalı kadınlara ve aristokratlara cilt bakımı (krem) veya aşk iksiri (afrodizyak) olarak fahiş fiyatlara satılıyordu! İnsanoğlunun ünlü olanın (şöhretin) her zerresini metalaştırma, acıyı ve teri bile bir "statü ve cazibe" aracı olarak ambalajlayıp satma (tüketim) histerisi, modern kapitalizmin icadı değil, binlerce yıllık değişmez bir insanlık virüsüdür.',
+    questionStem: 'Gladyatör terinin zenginlere fahiş fiyatlara satılması olayı, yazar tarafından hangi modern kavrama benzetilerek eleştirilmektedir?',
+    options: [
+      'Kadınların antik çağlardan beri kozmetik ürünlere çok fazla para harcamasına',
+      'Modern tıbbın ve ilaç endüstrisinin (eczacılığın) kökenlerinin aslında çok hijyenik olmadığına',
+      'Şöhretin (popülerliğin) ve insan bedeninin/acısının bile bir statü nesnesi olarak pazarlanıp paraya çevrildiği o hastalıklı tüketim (metalaştırma) kültürüne',
+      'Gladyatörlerin kazandıkları paraları bağışlayarak özgürlüklerini satın aldığına'
+    ],
+    correct: 2,
+    explanation: 'Kan ve terin "popstar" algısıyla zenginlere güzellik iksiri olarak satılması; şöhretin ve acının metalaştırılarak pazarlanmasının (modern kapitalizmin/tüketimin) bin yıllık bir histeri olduğunu gösterir.'
+  },
+  {
+    title: 'Kuru Hastalığı (Gülümseyen Ölüm)',
+    passage: 'Papua Yeni Gine\'deki Fore kabilesinde 1950\'lerde korkunç ve gizemli bir hastalık baş gösterdi. "Kuru" (Titreme) adı verilen bu hastalıkta insanlar dengelerini kaybediyor ve en sonunda yüzlerinde korkunç, histerik bir gülümsemeyle (gülme krizleriyle) kasılarak ölüyorlardı. Bilim insanları uzun araştırmalar sonucu bu "Gülümseyen Ölüm"ün sebebini bulduklarında kanları dondu. Bu bir virüs veya genetik hastalık değildi; kabile üyeleri, ölen yakınlarına duydukları derin saygı ve yas ritüelinin bir parçası olarak onların beyinlerini yiyorlardı. Beyindeki bir "prion" (katlanmış protein) ölüden diriye geçerek bu dehşeti yaratıyordu. Kuru hastalığı, kültürel dogmaların (ve kutsal sayılan ritüellerin) biyolojik gerçeklikle (doğayla) çarpıştığında, iyi niyetin bile nasıl kendi kendini yok eden gülen bir intihara dönüşebileceğinin acı kanıtıdır.',
+    questionStem: 'Fore kabilesinde görülen Kuru hastalığının sebebi dikkate alındığında, bu olaydan çıkarılabilecek sosyo-felsefi sonuç nedir?',
+    options: [
+      'Gülümsemenin ve kahkaha atmanın bazı toplumlarda üzüntüyü gizlemek için kullanılan bir maske olduğu',
+      'Tropikal bölgelerdeki virüslerin soğuk iklimlere göre çok daha hızlı mutasyona uğradığı',
+      'Geleneksel, iyi niyetli veya kutsal sayılan kültürel (dini) ritüellerin, doğanın katı biyolojik gerçekliğiyle uyuşmadığında (çarpıştığında) toplumu ölümcül bir yıkıma (intihara) sürükleyebileceği',
+      'Yamyamlık yapan kabilelerin askerî açıdan diğer kabilelere her zaman üstünlük kurduğu'
+    ],
+    correct: 2,
+    explanation: 'Ölüye saygı ritüeli (kutsal dogma) olarak beyin yemenin biyolojik olarak ölüm saçması; dogmaların doğa kanunlarıyla uyuşmadığında ölümcül/yıkıcı olduğunu kanıtlar.'
+  },
+  {
+    title: 'Fantom Uzuv (Hayalet Ağrı)',
+    passage: 'Bir savaş gazisinin veya kazazedenin kolu kesildikten (ampute edildikten) sonra yaşadığı şey, sadece uzvun eksikliği değildir. O olmayan kolda kaşıntı, uyuşma ve hatta çıldırtıcı bir acı (Fantom Ağrısı) hissedebilir. Kol fiziksel olarak yoktur, toprağa gömülmüştür; ancak beynin içindeki kortikal haritada (zihinde) kolun temsil edildiği nöronlar hala hayattadır ve o boşluktan çığlık çığlığa sinyaller göndermektedir. Hastalar olmayan ellerinin yumruk şeklinde sıkışıp kaldığını hissederek acıdan kıvranırlar. Fantom Uzuv sendromu bize gerçekliğin aslında nerede olduğunu fısıldar: Hissettiğimiz acılar, dokunuşlar ve hatta dünya; bedenimizin dışındaki fiziksel nesnelerde değil, tamamen kafatasımızın içindeki o karanlık odada (beynimizde) üretilen kusursuz bir simülasyondur.',
+    questionStem: 'Fantom Uzuv (Hayalet Ağrı) sendromu, gerçeklik ve algı (bilinç) bağlamında hangi felsefi savı destekler niteliktedir?',
+    options: [
+      'Kesilen organların yerine takılan protezlerin sinir sistemiyle asla uyum sağlayamayacağını',
+      'Hissettiğimiz acının veya varlığın (algının), dış dünyadaki fiziksel bedene değil; tamamen beynin kendi içinde oluşturduğu nörolojik bir haritaya (simülasyona/kurguya) dayandığını',
+      'Amputasyon ameliyatlarında anestezi kullanımının o dönemlerde yetersiz olduğunu',
+      'İnsanların kaybettikleri eşyalara veya kişilere karşı aşırı duygusal bağlılık geliştirdiğini'
+    ],
+    correct: 1,
+    explanation: 'Olmayan kolda acı hissedilmesi; algıladığımız gerçekliğin ve acının dış dünyadaki bedende değil, beyindeki o nörolojik haritada (simülasyonda) üretildiğini kanıtlar.'
+  },
+  {
+    title: 'Babil\'in Asma Bahçeleri: Aşkın Çölü',
+    passage: 'Antik Dünyanın Yedi Harikası\'ndan biri olan Babil\'in Asma Bahçeleri, hikâyeye göre Kral Nebukadnezar tarafından, dağlık ve yeşil memleketini özleyip çölün ortasında depresyona giren eşi Amytis için yaptırılmıştır. Çatılardan şelaleler akan, egzotik ağaçlarla dolu bu devasa teraslı vaha, bir mühendislik mucizesidir. Ancak ilginç olan şudur: Arkeologlar Babil kalıntılarında böyle bir bahçeye ait tek bir iz, tek bir çivi bile bulamamışlardır! Diğer tüm harikaların kanıtı varken, o koca bahçe bir hayalet gibidir. Belki de Babil\'in Asma Bahçeleri hiçbir zaman var olmadı. O, tarihin en güzel yalanı, insanın sevdiği birini mutlu etmek (onun acısını dindirmek) uğruna çölün ortasında bile cenneti var edebileceğine (gerçekliği bükeceğine) dair uydurulmuş o görkemli ve romantik bir metafordur.',
+    questionStem: 'Yazar, arkeolojik kanıtı bulunmayan Babil\'in Asma Bahçeleri\'ni felsefi (edebi) olarak nasıl yorumlamaktadır?',
+    options: [
+      'Antik Babil mimarisinin kullanılan taşların kalitesizliği nedeniyle tamamen çürüyüp toza karıştığı',
+      'Kralların devlet hazinesini eşlerinin şımarık istekleri uğruna boş yere tükettiği',
+      'Gerçekte var olmasa bile; insanın sevdiği kişinin acısını dindirmek (aşk) uğruna imkânsızı başarabileceğine, çölü bile cennete çevirebileceğine dair üretilmiş romantik (şiirsel) bir metafor (yalan) olduğu',
+      'Eski çağ tarihçilerinin diğer medeniyetleri abartarak anlatan yeteneksiz yalancılar olduğu'
+    ],
+    correct: 2,
+    explanation: 'Kanıt bulunamamasına rağmen bu hikâyenin, "sevgi uğruna çölün ortasında cenneti yaratma çabasına dair görkemli ve romantik bir yalan (metafor)" olarak yorumlanmasıdır.'
+  },
+  {
+    title: 'Kevlar\'ın İcadı (Stephanie Kwolek)',
+    passage: '1965 yılında kimyager Stephanie Kwolek, otomobil lastiklerini daha hafif hale getirecek, benzin tasarrufu sağlayacak sert bir plastik üretmeye çalışıyordu. Karışımlarını hazırlarken asistanı o bulanık ve sulu sıvıyı "Bu işe yaramaz, iptal edelim" diyerek dökmek istedi. Kwolek ısrar etti ve karışımı makinede eğirdiğinde, çelikten beş kat daha güçlü ama iplik kadar hafif bir lif elde etti! Otomobil lastiği için çıkılan yolda, yanlışlıkla kurşungeçirmez yeleklerin hammaddesi olan "Kevlar" icat edilmişti. O günden beri Kevlar, savaş alanlarında ve polis teşkilatlarında milyonlarca insanın hayatını kurtardı. Bilim, genellikle sizin haritaya çizdiğiniz o düz yolda ilerlemez; asıl mucizeler, "işe yaramaz" denilip çöpe atılmak üzere olan o bulanık sapaklarda gizlidir.',
+    questionStem: 'Kevlar\'ın icat süreci, bilimsel araştırmaların doğası hakkında hangi gerçeği ortaya koymaktadır?',
+    options: [
+      'Bilim insanlarının sadece otomotiv sektörüne hizmet ettiğinde başarılı icatlar yapabildiğini',
+      'Kimyasal deneylerde güvenlik önlemi alınmazsa ölümcül patlamaların kaçınılmaz olduğunu',
+      'Büyük ve hayat kurtarıcı bilimsel keşiflerin her zaman planlı bir hedefin değil; ısrar, tesadüf ve "işe yaramaz" sanılan hatalı rotaların (esnekliğin) bir sonucu olabileceğini',
+      'Kadın kimyagerlerin laboratuvarlarda her zaman asistanlardan daha fazla çalıştığını'
+    ],
+    correct: 2,
+    explanation: 'Lastik yapmak isterken "çöpe atılacak" bulanık bir sıvıdan çelikten sağlam Kevlar (kurşungeçirmez yelek) çıkması; mucizelerin planlı hedefte değil, hatalı/tesadüfi sapaklarda gizli olduğunu kanıtlar.'
+  },
+  {
+    title: 'Kan Alma (Flobotomi) Çılgınlığı',
+    passage: '1799 yılının soğuk bir Aralık gününde, ABD\'nin ilk başkanı George Washington boğaz enfeksiyonu geçirip hastalandı. Dönemin tıp dünyasına egemen olan "Dört Sıvı" teorisine göre, hastalığın sebebi bedendeki "kötü kan" idi. Gelen saygın doktorlar, Washington\'ı iyileştirmek için sülükler ve neşterlerle onun bedeninden litrelerce kan boşalttılar. Boğazındaki iltihap geçmediği gibi, kan kaybından şoka giren başkan saatler içinde hayatını kaybetti. Modern bilimin kurucuları onu bir bakterinin değil, kendi elleriyle uyguladıkları bir cehaletin kurbanı yaptılar. Washington\'ın ölümü; bir bilginin (veya inancın) sadece o dönemde otoriteler tarafından "mutlak doğru" (dogma) kabul ediliyor olmasının, onu cehaletin elindeki en keskin ve yasal bir cinayet silahı olmaktan kurtaramadığını gösterir.',
+    questionStem: 'George Washington\'ın ölümüne sebep olan "kan alma" tedavisi, bilim ve otorite hakkında neyi eleştirmektedir?',
+    options: [
+      'Geleneksel bitkisel tedavi yöntemlerinin kimyasal ilaçlardan daha faydalı olduğunu',
+      'O dönemin doktorlarının başkanlık kurumuna (siyasete) gizli bir düşmanlık beslediğini',
+      'Sorgulanmayan, otorite tarafından "mutlak bilimsel doğru" olarak kabul edilen yaygın inançların (dogmaların), aslında insanı yasal yollarla öldürebilen korkunç bir cehalet olabileceğini',
+      'ABD\'nin ilk yıllarında hastane altyapılarının yetersizliğini'
+    ],
+    correct: 2,
+    explanation: 'Saygın doktorların "kötü kanı boşaltma" dogmasıyla başkanı kan kaybından öldürmesi; sorgulanmayan otoritelerin ve sözde mutlak bilimsel doğruların (dogmaların) yasal bir cinayet aracı/cehalet olabileceğini eleştirir.'
+  },
+  {
+    title: 'Oumuamua: Yıldızlararası Misafir',
+    passage: '2017 yılında Hawaii\'deki teleskoplar, Güneş sistemimize dışarıdan giren ilk yıldızlararası nesneyi tespit etti ve ona "Oumuamua" (Uzaktan Gelen İlk Haberci) adını verdi. Puro şeklindeki bu tuhaf kırmızı kaya, bizim sistemimizdeki hiçbir yıldıza veya asteroide benzemiyordu. İnanılmaz bir hızla Güneş\'in etrafından sapan bu nesne, hiçbir şekilde yavaşlamadan veya bize bir mesaj bırakmadan karanlık uzay boşluğuna doğru yoluna devam etti. Kimi astronomlar onun uzaylılara ait terk edilmiş bir yelkenli olabileceğini bile düşündü. Oumuamua\'nın o sessiz geçip gidişi; koca evrenin bizim varlığımızı veya dünyamızı zerre kadar umursamadığını, bizim o devasa ve kibirli kozmik sahnede, sadece hızla geçip gidilen, camından dışarı bile bakılmayan sıradan bir dinlenme tesisi olduğumuzu yüzümüze çarpan soğuk bir gerçektir.',
+    questionStem: 'Yazar, Oumuamua asteroidinin Güneş sistemimizden geçip gitmesini insanlık açısından nasıl (felsefi olarak) yorumlamaktadır?',
+    options: [
+      'Güneş sisteminin dış uzaydan gelecek asteroit çarpışmalarına karşı tamamen savunmasız olduğu',
+      'Dünya dışı akıllı yaşam formlarının teknolojik olarak bizden çok daha ilkel olduğu',
+      'Bu sessiz (ilgisiz) geçişin, insanın evrendeki merkezi ve önemli konumuna dair kibrini yıktığı; evrenin bize karşı tamamen kayıtsız (umursamaz) olduğunu gösterdiği',
+      'Gelecekte yıldızlararası seyahat yapmak için puro şeklindeki uzay gemileri üretmemiz gerektiği'
+    ],
+    correct: 2,
+    explanation: 'Nesnenin hiç yavaşlamadan ve umursamadan geçip gitmesi; evrenin bizim varlığımızı umursamadığına, insanın o "önemli" ve "merkezde" olduğu kibrinin anlamsızlığına (kayıtsızlığa) vurgu yapar.'
+  },
+  {
+    title: 'Jing Ke ve İmparatora Suikast',
+    passage: 'MÖ 227\'de, Çin\'i acımasızca işgal eden acımasız Kral Zheng\'i (geleceğin İlk İmparatoru) durdurmak için Jing Ke adlı bir suikastçı gönüllü oldu. Plan kusursuzdu; barış elçisi kılığına girip sunacağı haritanın içine zehirli bir hançer sakladı. Kral haritayı açarken hançeri kaptı ama kral kaçmayı başardı. Kanlı bir kovalamacanın ardından muhafızlar Jing Ke\'yi kılıçtan geçirdi. Jing Ke, başarısız olduğunu ve öleceğini bildiği o son saniyede, sarayın sütununa yaslanıp kralın yüzüne bakarak kahkahalarla gülmeye başladı ve ona hakaret etti. Suikast başarısız olmuştu ama Jing Ke\'nin o son kahkahası tarihe geçti. O kahkaha; mutlak gücün (imparatorluğun) karşısında ezilse bile, ona boyun eğmeyi reddeden, ölümü kucaklayarak zorbalıkla alay eden o yenilmez insan onurunun ebedi yankısıdır.',
+    questionStem: 'Jing Ke\'nin suikastı başaramayıp ölmeden önce "kahkahalarla gülmesi", yazar tarafından neyin sembolü olarak görülmektedir?',
+    options: [
+      'Suikastçının aldığı eğitimler yüzünden akıl sağlığını ve mantığını kaybetmesinin',
+      'Kral Zheng\'in aslında halk tarafından ne kadar çok sevilen komik bir lider olduğunun',
+      'Başarısızlık ve kesin ölüm karşısında bile; mutlak güce (zorbalığa) boyun eğmeyi reddeden, korkuyu aşmış yenilmez insan onurunun (direnişin)',
+      'Gizli hançer üzerine sürülen zehrin insan beyninde halüsinasyon ve histeri krizleri yaratmasının'
+    ],
+    correct: 2,
+    explanation: 'Başarısızlığa ve ölüme rağmen sütuna yaslanıp imparatorla alay etmesi/gülmesi; mutlak güce boyun eğmeyen, korkuyu yenmiş insan onurunu ve direnişini sembolize eder.'
+  }
+];
+
+export const felsefeParagrafSorulari15: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_15.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_15[idx];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-felsefe15-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
 // paragrafTests.ts dosyasının hata vermemesi için iki listeyi birleştirip eski adıyla dışa aktarıyoruz:
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari,
@@ -3934,5 +4211,6 @@ export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...gizemParagrafSorulari11,
   ...teknolojiParagrafSorulari12,
   ...sosyolojiParagrafSorulari13,
-  ...felsefeParagrafSorulari14
+  ...felsefeParagrafSorulari14,
+  ...felsefeParagrafSorulari15
 ];
