@@ -4750,6 +4750,283 @@ export const karisikParagrafSorulari17: BilimParagrafQuestion[] = Array.from({ l
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
+const PARAGRAPH_THEMES_18 = [
+  {
+    title: 'Kargo Kültleri (Cargo Cults)',
+    passage: 'İkinci Dünya Savaşı sırasında, Pasifik\'teki ıssız adalara Amerikan uçakları inmiş ve yerli halka daha önce hiç görmedikleri konserveler, çikolatalar ve ilaçlar (kargolar) getirmişti. Savaş bitip uçaklar gittiğinde, yerliler o "ilahi" kargoları geri getirmek için ormanda ahşaptan devasa sahte uçaklar, bambudan kontrol kuleleri inşa ettiler ve göğüslerine "USA" yazıp ateşler yakarak gökyüzünü beklemeye başladılar. "Kargo Kültleri" adı verilen bu sosyolojik fenomen, insan zihninin en acınası zaafıdır: Bir sistemin mekaniğini (neden-sonuç ilişkisini) anlamadığımızda, sadece dışarıdan görünen şekilleri (ritüelleri) körü körüne taklit ederek büyülü bir şekilde aynı sonuca (başarıya) ulaşacağımızı sanırız.',
+    questionStem: 'Kargo Kültleri kavramı, toplumsal davranışlar üzerinden hangi "mantık hatasını (yanılgıyı)" eleştirmektedir?',
+    options: [
+      'Toplumların her zaman dışarıdan gelen (yabancı) kültürlere karşı düşmanca bir tavır sergilemesini',
+      'Bir başarının veya sistemin arkasındaki asıl mekanizmayı (neden-sonuç bağını) anlamadan, sadece dışsal ritüelleri (şekli) taklit ederek aynı sonuca ulaşılabileceğine dair o akıl dışı inancı',
+      'Gelişmemiş toplumların savaş dönemlerinde ekonomik olarak çok daha hızlı kalkındığını',
+      'İnsanoğlunun teknolojik aletlere karşı her zaman korku dolu bir tapınma geliştirmesini'
+    ],
+    correct: 1,
+    explanation: 'Ahşaptan uçak yapıp kargo (ödül) beklemek; sistemin nasıl çalıştığını (neden-sonuç) anlamadan sadece şekli taklit ederek aynı başarıyı bekleme yanılgısını sembolize eder.'
+  },
+  {
+    title: 'Schopenhauer ve Kirpi İkilemi',
+    passage: 'Filozof Arthur Schopenhauer, insan ilişkilerindeki o kahredici çıkmazı "Kirpi İkilemi" ile açıklar. Dondurucu bir kış günü, bir grup kirpi donmamak için birbirine yaklaşır. Ancak yakınlaştıklarında dikenleri birbirine batar ve acı içinde tekrar uzaklaşırlar. Soğuk tekrar bastırdığında yine yaklaşır, dikenler batınca yine uzaklaşırlar. İnsanların sevgi ve yakınlık arayışı da böyledir. İçimizdeki yalnızlık ve üşüme hissi bizi başkalarına (ilişkilere) iter; ancak fazla yaklaştığımızda birbirimizin kusurları, bencillikleri ve beklentileri tıpkı birer diken gibi tenimize batar. İdeal olan, ne donacak kadar uzak ne de kanayacak kadar yakın durduğumuz o "nezaket ve mesafe" çizgisini bulabilmektir.',
+    questionStem: 'Kirpi İkilemi (Porcupine Dilemma), insan ilişkilerindeki hangi felsefi ve psikolojik çıkmazı (çatışmayı) anlatmaktadır?',
+    options: [
+      'İnsanların sadece zor zamanlarda (kışın) birbirlerine yardım etme eğiliminde olduğunu',
+      'Toplumdan tamamen izole olmanın, psikolojik yaralar almaktan her zaman daha güvenli olduğunu',
+      'Yakınlık (sevgi) ihtiyacının bizi birleşmeye itmesine rağmen, fazla yakınlaşmanın kaçınılmaz olarak acı ve zarar (çatışma) getirdiği gerçeğini',
+      'Hayvanların sosyal davranışlarının insanlardan çok daha fedakârca olduğunu'
+    ],
+    correct: 2,
+    explanation: 'Üşümemek için yaklaşan ama dikenleri yüzünden acı çeken kirpiler; insanın sevgi (yakınlık) arayışı ile bu yakınlığın getirdiği kaçınılmaz acı (kusurlar) arasındaki çatışmayı anlatır.'
+  },
+  {
+    title: 'Laplace\'ın Şeytanı ve Kader',
+    passage: 'Fransız matematikçi Pierre-Simon Laplace, evrenin tamamen matematiksel ve belirlenimci (determinist) bir saat gibi çalıştığına inanırdı. 1814\'te şu ürpertici felsefi deneyi sundu: Eğer evrendeki tüm atomların şu anki tam konumunu ve hızını bilen süper zeki bir varlık (Laplace\'ın Şeytanı) olsaydı, bu varlık fizik kurallarını kullanarak evrenin geçmişteki ve milyarlarca yıl gelecekteki her saniyesini kesin olarak görebilirdi. Eğer her atomun hareketi fizik yasalarına göre önceden belliyse; bizim aldığımız kararlar, âşık olmamız veya cinayet işlememiz de aslında en başından beri yazılmış bir matematiksel zorunluluktur. Bu teori, "özgür irade" dediğimiz o kibirli tacı başımızdan alıp, bizi devasa bir makinenin çaresiz dişlilerine dönüştürür.',
+    questionStem: 'Laplace\'ın Şeytanı düşünce deneyinin insanlık adına yarattığı asıl felsefi kriz nedir?',
+    options: [
+      'Süper zeki varlıkların uzaylılar şeklinde dünyamızı ziyaret edebileceği teorisi',
+      'Eğer evrendeki her şey önceden belirlenmiş (determinist) kesin bir fiziksel matematikse, insanın kendi hayatını kendi kararlarıyla yönettiğine dair "özgür irade" inancının tamamen bir illüzyon olması',
+      'Matematik biliminin henüz atomların hızını ölçecek kadar gelişmemiş olması',
+      'Fizik yasalarının zaman içinde değişerek geleceği belirsiz kılması'
+    ],
+    correct: 1,
+    explanation: 'Her atomun hareketi ve geleceği belliyse, bizim kararlarımızın da zorunlu (matematiksel) olduğu ve "özgür iradenin bir illüzyon" olduğu krizi vurgulanmıştır.'
+  },
+  {
+    title: 'Siyah Kuğu Teorisi (Black Swan)',
+    passage: 'Yüzyıllar boyunca Avrupalılar, dünyadaki tüm kuğuların "beyaz" olduğuna mutlak bir imanla inanıyorlardı. Ta ki 17. yüzyılda Avustralya\'da "Siyah Kuğular" keşfedilene kadar. Tek bir gözlem, bin yıllık kusursuz bir inancı yerle bir etti. Ekonomist Nassim Taleb, bu olayı tarihteki öngörülemeyen, ihtimal dışı görülen ama gerçekleştiğinde dünyayı kökünden sarsan felaketleri (veya icatları) tanımlamak için kullandı: İnternetin icadı, 11 Eylül saldırıları veya küresel krizler birer Siyah Kuğu\'dur. İşin trajikomik yanı, insan beyni bu şok edici felaketler yaşandıktan hemen sonra, geriye dönüp "Zaten olacağı belliydi, sinyaller vardı" diyerek sahte bir rasyonalizasyon kurgular. Olayı öngörememe cehaletimizi, sonradan uydurduğumuz kurgularla (bahanelerle) örtbas ederiz.',
+    questionStem: 'Siyah Kuğu Teorisi\'nde yazarın insan zihniyle ilgili eleştirdiği asıl "zaaf" nedir?',
+    options: [
+      'Büyük felaketleri önlemek için teknolojik yatırımları yeterince desteklememesi',
+      'Beklenmedik (öngörülemeyen) büyük bir olay yaşandıktan sonra, o olayı aslında en başından beri öngörülebilirmiş gibi rasyonelleştirerek (bahaneler kurgulayarak) kendi cehaletini örtbas etmesi',
+      'Hayvan türlerinin coğrafi dağılımını bilimsel olarak doğru analiz edememesi',
+      'Kriz anlarında hızlı ve mantıklı karar alamayıp paniğe kapılması'
+    ],
+    correct: 1,
+    explanation: 'Felaket olduktan sonra "zaten belliydi" diyerek sahte bir kurgu (rasyonalizasyon) oluşturmamız; kendi öngörememe cehaletimizi örtbas etme zaafımız olarak eleştirilmiştir.'
+  },
+  {
+    title: 'Potemkin Köyleri (Sahte İhtişam)',
+    passage: '1787 yılında Rus Çariçesi II. Katerina, Kırım\'ı ziyarete gidecekti. Ancak bölge yoksulluk, harabe ve sefalet içindeydi. Çariçenin gözdesi Prens Grigori Potemkin, hükümdarın morali bozulmasın diye nehir kıyısına sadece ön cephesi olan, içi boş, devasa kartondan evler (film setleri gibi) inşa ettirdi. Figüran köylüler temiz kıyafetlerle Çariçeye el sallıyor, o geçtikten sonra sahte köy sökülüp geceleyin nehrin ilerisine tekrar kuruluyordu. Çariçe, ülkesinin cennet gibi olduğuna inanarak oradan ayrıldı. "Potemkin Köyleri" deyimi, siyasette ve modern bürokraside; içerideki yozlaşmayı, çürümeyi ve başarısızlığı gizlemek için dışarıya sunulan o sahte, makyajlı ve kartondan "başarı" illüzyonunu temsil eden evrensel bir yalana dönüşmüştür.',
+    questionStem: 'Siyasi ve bürokratik dilde kullanılan "Potemkin Köyleri" kavramı mecazi olarak neyi tanımlar?',
+    options: [
+      'Savaş zamanlarında düşmanı yanıltmak için kurulan askeri tuzakları',
+      'İçerideki gerçek bir yıkımı, yoksulluğu ve çürümüşlüğü (başarısızlığı) otoriteden veya halktan saklamak amacıyla kurgulanan sahte, gösterişli ve vitrinden ibaret başarı illüzyonunu',
+      'Kırsal kesimden şehirlere yapılan göçü engellemek için kurulan tarım alanlarını',
+      'Tarihi eserleri aslına uygun bir şekilde restore etme çabasını'
+    ],
+    correct: 1,
+    explanation: 'Sefaleti gizlemek için kartondan sahte evler (vitrin) yapılması; içteki çürümeyi gizlemek için sunulan makyajlı ve sahte başarı illüzyonunu (vitrini) tanımlar.'
+  },
+  {
+    title: 'Sineklerin Tanrısı (Uygarlığın Cilası)',
+    passage: 'William Golding\'in "Sineklerin Tanrısı" romanında, medeni, iyi eğitimli ve İngiliz disipliniyle yetişmiş bir grup okul çocuğu ıssız bir adaya düşer. Başlangıçta kurallar koyar, meclis kurarlar. Ancak kurtarılma umudu azaldıkça ve korku büyüdükçe, o iyi eğitimli çocuklar yüzlerini boyayan, birbirini mızraklayan ve insan kurban eden vahşi birer kabile üyesine dönüşürler. Golding, bu sarsıcı eserle, kötülüğün toplumdan veya dışarıdaki bir canavardan gelmediğini yüzümüze çarpar. Medeniyet, yasalar ve ahlak dediğimiz şey; insan doğasının o ilkel, vahşi ve karanlık çekirdeğinin üzerine çekilmiş incecik ve kolayca dökülebilen bir boyadan (ciladan) ibarettir.',
+    questionStem: 'Sineklerin Tanrısı romanındaki çocukların vahşileşme süreci, yazarın insan doğasıyla ilgili hangi felsefi inancını yansıtır?',
+    options: [
+      'Çocukların ailelerinden uzakta her zaman daha özgür ve barışçıl bir düzen kurabileceğini',
+      'Eğitimin ve disiplinin insan karakterini ömür boyu kusursuz bir şekilde şekillendirdiğini',
+      'Medeniyetin ve ahlaki kuralların, içimizde doğuştan var olan o ilkel ve karanlık (vahşi) çekirdeği sadece geçici olarak örten çok ince ve kırılgan bir cila olduğunu',
+      'Adalardaki zorlu iklim şartlarının insan genetiğinde hızlı mutasyonlara yol açtığını'
+    ],
+    correct: 2,
+    explanation: 'İyi eğitimli çocukların hızla vahşileşmesi; medeniyetin ve ahlakın aslında içimizdeki ilkel ve karanlık doğamızı örten ince/kırılgan bir cila olduğunu gösterir.'
+  },
+  {
+    title: 'Ters Etki Yasası (Backfire Effect)',
+    passage: 'Eğer bir kişinin yıllarca inandığı siyasi veya dini bir görüşün kesin olarak "yanlış" olduğunu kanıtlayan somut, bilimsel belgeler sunarsanız ne olur? Mantıken fikrini değiştirmesi gerekir, değil mi? Psikologlar bunun tam tersi olduğunu kanıtlamıştır. Bireye, inancını yıkan inkar edilemez kanıtlar sunduğunuzda, birey hatasını kabul etmek yerine o yanlış inanca eskisinden çok daha fanatik ve agresif bir şekilde bağlanır. Buna "Ters Etki Yasası" denir. Çünkü beyin, inanç sistemine yapılan o entelektüel saldırıyı, fiziksel olarak canına kastedilen bir "tehdit" gibi algılar ve mantığı kapatarak savunma mekanizmasını devreye sokar. Gerçekler (kanıtlar), kemikleşmiş dogmaları asla tedavi etmez; sadece o hastalıklı fanatizmi daha da alevlendirir.',
+    questionStem: 'Ters Etki Yasası (Backfire Effect) kavramı, insanların "kanıtlar" karşısındaki tutumunu nasıl açıklamaktadır?',
+    options: [
+      'İnsanların sadece televizyon veya medyadan duydukları bilimsel kanıtlara inandığını',
+      'Zihnin, kemikleşmiş inançlarına sunulan karşıt (doğru) kanıtları mantıksal bir veri olarak değil, "fiziksel bir tehdit" gibi algılayarak o yanlış dogmalara daha da fanatikçe sarıldığını',
+      'İnsanların uzun makaleler yerine kısa ve görsel olarak sunulan kanıtlara daha çabuk ikna olduğunu',
+      'Yaşlı insanların yeni kanıtları gençlere göre çok daha hızlı kabul ve analiz ettiğini'
+    ],
+    correct: 1,
+    explanation: 'İnancını yıkan kanıt sunulduğunda beynin bunu fiziksel tehdit gibi algılayıp fikre daha agresif/fanatik bağlanması; kanıtların dogmaları tedavi etmeyip alevlendirdiğini açıklar.'
+  },
+  {
+    title: 'Mitridatizm (Zehirle Beslenmek)',
+    passage: 'Antik çağlarda Pontus Kralı VI. Mithridates, çevresindeki herkesin onu zehirleyerek öldürmek istediğine dair devasa bir paranoyaya kapılmıştı. Suikastları engellemek için akılalmaz bir yöntem buldu: Her gün azar azar, öldürücü olmayan dozlarda her türlü zehri içmeye başladı. Amacı, bedenini tüm zehirlere karşı bağışık hale getirmekti (Buna Mitridatizm denir). Yıllar sonra Romalılar sarayını kuşattığında ve esir düşeceğini anladığında, onursuzca yaşamak yerine yüzüğündeki ölümcül zehri içerek intihar etmek istedi. Ancak zehir işe yaramadı! Kendi kurduğu o paranoyak bağışıklık sistemi, kralın son kaçış biletini de elinden almıştı. Mithridates\'in hikâyesi, korkularımıza karşı ördüğümüz o aşılmaz duvarların, gün gelip bizi içine hapseden birer zindana dönüştüğünün ironik destanıdır.',
+    questionStem: 'Kral Mithridates\'in intihar girişiminin başarısızlıkla sonuçlanmasındaki felsefi ironi (çelişki) nedir?',
+    options: [
+      'Romalı askerlerin krala zehir yerine yanlışlıkla su içirmeleri',
+      'Ölümden (suikasttan) korunmak için geliştirdiği paranoyak savunma mekanizmasının (bağışıklığın), en çaresiz anında ona huzurlu bir ölüm seçeneğini bile yasaklayıp onu esarete mahkûm etmesi',
+      'Kullandığı zehirlerin o dönemde sadece hayvanlar üzerinde ölümcül bir etkiye sahip olması',
+      'Kralın aslında ölmek istememesi ve intihar ediyor gibi rol yapması'
+    ],
+    correct: 1,
+    explanation: 'Suikasttan korunmak için zehire bağışıklık kazanması (savunma), esir düşeceğinde intihar etmesini (son kaçışını) engelleyerek onu esarete mahkûm etmesi asıl ironidir.'
+  },
+  {
+    title: 'Lascaux Mağarası: Zamanda Bırakılan İz',
+    passage: '1940 yılında Fransa\'da ormanda gezen çocuklar tesadüfen Lascaux Mağarası\'nı buldular. Mağaranın duvarları günümüzden 15.000 yıl önce çizilmiş muazzam at, geyik ve boğa figürleriyle doluydu. Ancak duvarlarda asıl ürpertici olan sanat değil, boyanın içine batırılıp duvara püskürtülmesiyle oluşturulan "negatif el izleriydi". O ilkel atalarımız, karanlık ve dondurucu bir çağda, vahşi hayvanların tehdidi altındayken o mağaraya girip neden ellerinin izini duvara bırakmıştı? Bu sadece bir ritüel veya av büyüsü değildi. O eller, karanlık boşluğa ve binlerce yıl sonrasına (bize) doğru uzatılmış, "Biz de vardık, yaşadık, korktuk ve buradaydık!" diyen evrensel, çaresiz ve muazzam bir varoluş çığlığıdır. Sanat, ölümün mutlak unutuşuna karşı insanın attığı ilk imzadır.',
+    questionStem: 'Lascaux Mağarası\'ndaki "el izleri", yazar tarafından insanoğlunun hangi temel duygusunun bir dışavurumu olarak yorumlanmıştır?',
+    options: [
+      'Gelecek nesillere avcılık ve toplayıcılık stratejilerini aktarma (eğitim) çabası',
+      'Fiziksel tehlikelere (hayvanlara) karşı duvarları bir sığınak olarak görme korkusu',
+      'Ölüme ve mutlak unutuluşa karşı direnerek, zamanın ötesine "ben de vardım ve yaşadım" mesajını iletme (varoluşunu kanıtlama ve iz bırakma) arzusu',
+      'Mağara duvarlarındaki nemi engellemek için geliştirilen ilkel bir yalıtım yöntemi'
+    ],
+    correct: 2,
+    explanation: 'Duvara el izi bırakmanın "Biz de buradaydık" diyen bir varoluş çığlığı olarak tanımlanması; bunun ölüme ve unutuluşa karşı kalıcı bir iz bırakma (varoluş) arzusu olduğunu gösterir.'
+  },
+  {
+    title: 'Sokrates\'in At Sineği',
+    passage: 'Sokrates, Atina mahkemesinde idama mahkûm edildiğinde, kendini savunurken şehrin durumunu efsanevi bir metaforla anlatır. Atina devletini, asil ve gösterişli ama fazla beslenmekten dolayı irileşmiş, tembel ve ağırkanlı dev bir ata benzetir. Kendisini ise bu atı uyandırmak, rahatsız etmek ve harekete geçirmek için Tanrı tarafından gönderilmiş küçük bir "at sineği" olarak tanımlar. Atina halkı onu gerçeği aradığı için değil, o rehavet dolu cahil uykularını (konfor alanlarını) bozduğu, canlarını yakan o sarsıcı soruları sorduğu için öldürmüştür. Toplumlar, kendilerine ninniler (yalanlar) söyleyen dalkavukları baş tacı ederken; uykularını bölen, onları hakikatin sancısıyla uyandıran entelektüelleri (sinekleri) her zaman birer hain olarak görüp ezmek isterler.',
+    questionStem: 'Sokrates\'in kendisini bir "at sineği"ne benzetmesi, aydının (entelektüelin) toplumdaki asıl işlevinin ne olduğunu vurgular?',
+    options: [
+      'Toplumun estetik ve sanatsal değerlerini yüceltmek için övgü dolu eserler üretmek',
+      'Toplumsal düzene zarar vermemek için sessiz kalıp siyasi otoritelere itaat etmek',
+      'Toplumun içinde bulunduğu rehaveti, cehaleti ve tembel uykuyu (konforu); rahatsız edici sorularla, eleştirilerle (sokarak) bozup onları hakikate uyandırmak',
+      'Askeri saldırılara karşı halkı savaş meydanlarına davet eden bir komutan olmak'
+    ],
+    correct: 2,
+    explanation: 'Atina\'yı tembel bir at, kendini ise onu uyandıran at sineği olarak tanımlaması; aydının görevinin toplumu rahatsız edici sorularla cehalet uykusundan (rehavetten) uyandırmak olduğunu vurgular.'
+  },
+  {
+    title: 'Golem Etkisi (Karanlık Beklenti)',
+    passage: 'Pygmalion etkisinin o korkunç ve karanlık ikizine "Golem Etkisi" denir. Efsaneye göre Golem, Yahudi mitolojisinde kilden yapılmış, sahibinin emirlerini ruhsuz bir şekilde yerine getiren, canavarlaşmaya müsait kaba bir yaratıktır. Psikolojide bu kavram şu gerçeği açıklar: Eğer bir öğretmen, patron veya yönetici; karşınızdaki kişiye "başarısız, yeteneksiz veya aptal" gözüyle bakar ve ondan hiçbir beklentisi olmazsa, o kişi (ne kadar yetenekli olursa olsun) bu negatif enerjiyi içselleştirir. Kendine olan inancını yitirir ve otoritenin ondan beklediği o "aptal ve başarısız" karaktere bürünerek performansı dibe vurur. Kötü veya yeteneksiz insan yoktur; sadece, otoritenin zehirli (düşük) beklentileriyle kendi potansiyelinin mezarına diri diri gömülmüş kurbanlar vardır.',
+    questionStem: 'Golem Etkisi kavramı, insanların başarısızlığının (veya düşüşünün) arkasındaki asıl faktörü neye bağlamaktadır?',
+    options: [
+      'Kişinin doğuştan gelen (genetik) zekâ geriliğine ve yeteneksizliğine',
+      'Bireyin aşırı özgüven (kibir) nedeniyle çalışmayı bırakıp tembelliğe sürüklenmesine',
+      'Otorite figürlerinin (öğretmen/patron) bireye yönelik sürekli "düşük (negatif) beklentiler" beslemesinin, kişinin bu zehirli algıyı içselleştirip kendi potansiyelini yok etmesine',
+      'Kötü arkadaş ortamlarının insanları suç işlemeye teşvik etmesine'
+    ],
+    correct: 2,
+    explanation: 'Otoritenin kişiye "başarısız/aptal" gözüyle bakıp düşük beklentiye girmesinin, kişinin bu negatifliği içselleştirerek kendi potansiyelini yok etmesine (başarısız olmasına) bağlar.'
+  },
+  {
+    title: 'Ouroboros: Kuyruğunu Yiyen Yılan',
+    passage: 'Eski Mısır\'dan İskandinav mitolojisine kadar dünyanın hemen hemen her kültüründe ortaya çıkan ortak bir sembol vardır: Ouroboros. Bu figür, kendi kuyruğunu ağzına almış, kendini yiyerek beslenen dairesel bir yılandır. Ouroboros sadece ölümün değil, ölümün bizzat hayatı (yeniden doğuşu) beslediği o ebedi döngünün simgesidir. Başlangıç sondur, son ise yeni bir başlangıçtır. Evrendeki hiçbir şey tamamen yok olmaz; çürüyen yaprak toprağı besler, patlayan yıldızlar yeni gezegenlerin atomlarını yaratır. Bu kadim sembol, modern insanın doğrusal (bir yerde başlayıp kesin olarak biten) zaman algısını yıkarak, varoluşun aslında kendi yıkımından sürekli olarak kendini doğuran sonsuz bir çark olduğunu fısıldar.',
+    questionStem: 'Ouroboros (kendi kuyruğunu yiyen yılan) sembolünün temsil ettiği felsefi (evrensel) kavram aşağıdakilerden hangisidir?',
+    options: [
+      'Yılan gibi zehirli hayvanların doğadaki en acımasız avcılar olduğu gerçeği',
+      'İnsan hayatının tamamen şans eseri ilerleyen doğrusal (kısa) bir süreç olduğu',
+      'Varoluşun (ve zamanın) kesin bir sonu olmayan, ölümün (yıkımın) sürekli olarak yeniden doğuşu (hayatı) beslediği sonsuz, ebedi bir döngü (çark) olduğu',
+      'Kibirli ve bencil insanların eninde sonunda kendi kendilerini yiyip yok edeceği (açgözlülük)'
+    ],
+    correct: 2,
+    explanation: 'Yılanın kendini yiyerek var olması; ölümün hayatı beslediği, sonun yeni bir başlangıç olduğu sonsuz ve ebedi bir varoluş döngüsünü (çarkı) temsil eder.'
+  },
+  {
+    title: 'Diogenes\'in Feneri',
+    passage: 'Gündüz vakti elinde yanan bir fenerle Atina sokaklarında dolaşan filozof Diogenes (Diyojen), insanların "Bu aydınlıkta elinde fenerle ne arıyorsun?" sorusuna hep aynı sarsıcı cevabı verirdi: "Dürüst bir insan arıyorum." Onun bu davranışı elbette gözlerinin bozuk olmasından kaynaklanmıyordu. Bu eylem, kibir ve refah içinde yüzen, kendini medeniyetin zirvesi sanan Atina toplumuna yapılmış kusursuz bir tiyatro, felsefi bir tokattı. Diogenes o fenerle; güneşin (maddi aydınlığın) sokakları ve binaları aydınlatabileceğini, ancak insanların içindeki o derin ahlaki çürümüşlüğü (karanlığı) aydınlatmaya yetmeyeceğini, o koca şehirde vicdan sahibi tek bir insan bile kalmadığını haykırıyordu.',
+    questionStem: 'Diogenes\'in güpegündüz elinde fenerle dolaşması eyleminin asıl amacı (eleştirisi) nedir?',
+    options: [
+      'Güneş ışığının insan gözüne verdiği zararlara dikkat çekmek',
+      'Toplumun maddi (fiziksel) aydınlık ve refah içinde görünmesine rağmen, ahlaki (vicdani) açıdan karanlıkta ve dürüstlükten tamamen yoksun (çürümüş) olduğunu yüzlerine çarpmak',
+      'Atina\'daki sokak lambalarının ve altyapının eksikliğini yöneticilere protesto etmek',
+      'Gündüzleri uyuyan ve sadece geceleri dışarı çıkan bir felsefi tarikat kurmak'
+    ],
+    correct: 1,
+    explanation: 'Gündüz fenerle dürüst insan araması; güneş aydınlatsa da toplumun içinin ahlaki ve vicdani olarak kapkaranlık (çürümüş) olduğu gerçeğini (ikiyüzlülüğü) protesto etmektir.'
+  },
+  {
+    title: 'MacGuffin (Hitchcock\'un İllüzyonu)',
+    passage: 'Efsanevi yönetmen Alfred Hitchcock\'un sinemaya kazandırdığı "MacGuffin" kavramı, filmlerde karakterlerin uğruna öldüğü, çaldığı ve peşinden koştuğu ama aslında izleyici için (ve hikâyenin özünde) hiçbir anlamı olmayan "şey"dir. Bu bir mikroçip, gizli bir evrak çantası veya büyülü bir yüzük olabilir. MacGuffin\'in ne olduğu önemli değildir; önemli olan onun yarattığı o amansız koşuşturmaca, rekabet ve karakterlerin dönüşümüdür. Aslında insan hayatı da devasa bir Hitchcock filmidir ve hepimiz kendi MacGuffin\'lerimizin peşinden koşarız: Çok daha fazla para, yeni bir unvan veya son model bir araba... Uğruna ömrümüzü tükettiğimiz o hedeflerin çoğu (elde ettiğimizde anlarız ki) anlamsız birer bahanedir; asıl gerçeklik (ve trajedimiz) o hedefe koşarken dönüştüğümüz kişidir.',
+    questionStem: 'Hitchcock\'un "MacGuffin" kavramı, insan hayatına (psikolojisine) uyarlandığında neyi ifade etmektedir?',
+    options: [
+      'Sinema filmlerinin gerçek hayattaki şiddeti artırarak insanları suça teşvik ettiğini',
+      'Hayatta uğruna ömrümüzü harcadığımız (para, statü gibi) nihai hedeflerin aslında anlamsız birer bahane (illüzyon) olduğunu; asıl anlamın (ve trajedinin) o kovalama sürecinde şekillenen karakterimiz (yolculuk) olduğunu',
+      'Hedefsiz yaşayan insanların her zaman psikolojik bunalımlara sürüklendiğini',
+      'Maddi zenginliğin insanlara her koşulda mutlak mutluluk getirdiğini'
+    ],
+    correct: 1,
+    explanation: 'Karakterlerin anlamsız bir çantanın peşinden koşması gibi, insanın da para/statü (MacGuffin) peşinden koştuğu; asıl olayın hedefin kendisi değil, o koşturmaca/yolculuk sürecindeki dönüşümümüz olduğu ifade edilmiştir.'
+  },
+  {
+    title: 'Şeytanın Avukatı (Advocatus Diaboli)',
+    passage: 'Günümüzde genellikle gıcık ve her şeye itiraz eden kişiler için kullanılan "Şeytanın Avukatı" deyimi, aslında Katolik Kilisesi\'nin 1587\'de kurduğu son derece resmi ve akılcı bir makamdır. Kilise, bir kişiyi "Aziz" (kutsal) ilan etmeden önce, salondaki körü körüne hayranlık ve tapınma duygusunu kırmak için özel bir avukat atardı. Bu avukatın tek görevi, o kişinin mucizelerini çürütmek, onun aslında kötü, çıkarcı veya sıradan biri olduğuna dair en acımasız argümanları (şeytanın argümanlarını) sunmaktı. Amaç gerçeği inanç fanatizminden korumaktı. Şeytanın Avukatı kavramı bize, mutlak doğru kabul edilen en kutsal odalarda bile (devlette, şirkette veya bilimde) inancın zehirlenmesini önlemek için, her şeye acımasızca "hayır" diyebilen şüpheci (skeptik) bir sese mutlaka ihtiyaç olduğunu kanıtlar.',
+    questionStem: '"Şeytanın Avukatı" makamının kurulmasındaki asıl mantıksal (işlevsel) amaç nedir?',
+    options: [
+      'Kilisenin şeytani ritüelleri inceleyip yasaklamak için özel bir departman kurması',
+      'Dini törenlerde halkı korkutarak kiliseye olan itaati ve bağışları artırmak',
+      'Körü körüne inancın ve fanatizmin gerçeği kör etmesini (yanılgıyı) önlemek amacıyla, kurumsal olarak her iddiayı sarsacak acımasız ve şüpheci (skeptik) bir karşıt ses barındırma zorunluluğu',
+      'Suç işleyen rahiplerin mahkemelerde daha adil yargılanabilmesini sağlamak'
+    ],
+    correct: 2,
+    explanation: 'Herkesin aziz ilan etmek istediği birine karşı çıkıp mucizeleri çürütme (karşıt argüman sunma) görevi; körü körüne inancı ve fanatizmi önlemek, kurumsal şüpheyi (skeptizmi) canlı tutmak amacıyladır.'
+  },
+  {
+    title: 'Tsundoku: Okunmayan Kitap Dağları',
+    passage: 'Japonca bir kelime olan "Tsundoku", insanın sürekli kitap satın alması ancak onları hiç okumadan komodinlerin, masaların üzerinde devasa kuleler halinde istiflemesi (biriktirmesi) durumudur. Bu sadece basit bir alışveriş bağımlılığı (istifçilik) değildir; çok daha felsefi bir illüzyondur. İnsan, raftaki o kalın felsefe veya bilim kitabını satın aldığında, kitabın kapağına dokunmanın o eserdeki bilgeliği, statüyü ve erdemi kendi zihnine anında transfer ettiği şeklinde sahte (psikolojik) bir tatmin yaşar. Kitabı okumanın getireceği yorgunluğa katlanmadan, sadece ona "sahip olarak" kültürlü hissetme yanılsamasıdır. Tsundoku, modern insanın "olmak" (okuyup değişmek) yerine, sadece "sahip olarak" (satın alarak) o kimliği kiralayabileceğine dair düştüğü en entelektüel kibridir.',
+    questionStem: 'Tsundoku fenomeninin temelinde yatan asıl psikolojik (ve tüketimsel) yanılgı nedir?',
+    options: [
+      'Japon yayıncılık sektörünün insanları sürekli yeni kitaplar almaya zorlaması',
+      'İnsanın, zorlu bir okuma ve zihinsel değişim ("olmak") sürecine girmek yerine, kitabı sadece "satın alarak (sahip olarak)" onun bilgeliğine ve entelektüel statüsüne zahmetsizce ulaştığına dair yaşadığı sahte tatmin illüzyonu',
+      'Evdeki dekorasyonu tamamlamak için kitapların en ucuz ve gösterişli aksesuarlar olması',
+      'İnsanların yaşlandıkça görme yetilerini kaybettikleri için kitap okumayı mecburen bırakmaları'
+    ],
+    correct: 1,
+    explanation: 'Okuma (emek) zahmetine girmeden sadece kitabı "satın alarak" o kültürü ve bilgeliği zihnine transfer ettiğini (sahip olarak "olma" kimliğini kiraladığını) sanması asıl psikolojik illüzyondur.'
+  },
+  {
+    title: 'Pavlov\'un Modern Köpekleri',
+    passage: 'Rus fizyolog İvan Pavlov, köpeklerine her et vermeden önce bir zil çalmış; bir süre sonra ortada hiç et olmamasına rağmen, köpekler sadece zili duyduklarında bile (şartlanarak) ağızlarından salya akıtmaya başlamışlardı. Bu "Klasik Koşullanma" deneyi bir asır önce laboratuvarda kaldı sanırız. Oysa modern çağın dev teknoloji şirketleri, Pavlov\'un deneyini cebimizdeki telefonlarla tüm insanlığa uygulamaktadır. Ekranda yanan küçük bir kırmızı "bildirim" noktası veya gelen kısa bir "titreşim" sesi, aslında Pavlov\'un zilinden farksızdır. Ortada gerçek bir tehlike veya değerli bir ödül olmamasına rağmen, o zili (bildirimi) duyduğumuz an zihnimiz dopamin salgılar ve elimiz kontrolsüzce (koşullanmış bir köpek gibi) o ekrana gider. İrademizin sahibi olduğumuzu sanırken, milyarlarca dolarlık algoritmaların kusursuzca eğittiği modern deneklerizdir.',
+    questionStem: 'Yazar, Pavlov\'un zil deneyini akıllı telefon bildirimleriyle kıyaslayarak hangi gerçeği eleştirmektedir?',
+    options: [
+      'Köpeklerin duyma yetilerinin insanlardan çok daha hassas ve gelişmiş olduğunu',
+      'Teknoloji şirketlerinin, telefon bildirimlerini (zili) kullanarak insan beyninin dopamin sistemini hacklediğini ve bizi "özgür iradeden yoksun, şartlanmış (koşullanmış) birer bağımlı denek" haline getirdiğini',
+      'Telefonlardan yayılan radyasyonun beynin hafıza merkezini tamamen yok ettiğini',
+      'Akıllı cihazların insanların iş ve okul verimliliğini inanılmaz derecede artırdığını'
+    ],
+    correct: 1,
+    explanation: 'Bildirim sesiyle ekrana elimizin gitmesi ile zili duyan köpeğin salya akıtması benzetilmiş; teknoloji şirketlerinin dopaminle bizi (iradesiz) koşullanmış denekler haline getirdiği eleştirilmiştir.'
+  },
+  {
+    title: 'Mandelbrot Kümesi (Fraktal Evren)',
+    passage: 'Matematikçi Benoit Mandelbrot, 1979\'da bilgisayarlar yardımıyla "Fraktal Geometri" adında zihin yakan bir boyut keşfetti. "Mandelbrot Kümesi" adı verilen bu şekilde, bilgisayar ekranındaki o tuhaf şekle ne kadar yaklaşırsanız (zoom yaparsanız), aynı karmaşık desenin sonsuza kadar kendi içinde tekrar ettiğini görürsünüz. Bir kar tanesine yakından baktığınızda aynı kar tanesi şeklini görmeniz veya ağaç dallarının damarlarındaki o sonsuz tekrar gibi. Mandelbrot\'un bu keşfi felsefeyi sarsmıştır: Çünkü evrenin o dehşet verici, başa çıkılmaz, kaotik ve sonsuz karmaşıklığı; aslında temelinde çok basit, minicik ve öngörülebilir tek bir matematik formülünün (kuralların) sonsuz kez tekrar etmesinden ibarettir. Kaos, aslında henüz kodunu çözemediğimiz muazzam bir düzendir.',
+    questionStem: 'Mandelbrot Kümesi (Fraktallar) keşfinin evren algımız üzerinde yarattığı asıl felsefi sarsıntı nedir?',
+    options: [
+      'Kar tanelerinin hiçbirinin aslında birbirine benzemediğini mikroskobik olarak kanıtlaması',
+      'Evrendeki tüm düzensizliklerin ve kaosun, teknoloji ilerledikçe insan kontrolüne gireceği',
+      'Dışarıdan sonsuz, kaotik ve karmaşık görünen evrensel yapının, aslında temelinde yatan çok basit ve düzenli bir kuralın (matematik formülünün) sonsuz tekrarından (düzeninden) doğduğunu göstermesi',
+      'Bilgisayarların ürettiği şekillerin doğadaki gerçek şekillere asla benzemeyeceğini ispatlaması'
+    ],
+    correct: 2,
+    explanation: 'Sonsuz ve karmaşık (kaotik) görünen desenlerin aslında çok basit tek bir matematik formülünün sonsuz tekrarı olması; kaosun altında muazzam ve basit bir düzenin yattığını ispatlar.'
+  },
+  {
+    title: 'Oblomovluk (Eylemsizliğin İsyanı)',
+    passage: 'Rus yazar İvan Gonçarov\'un ölümsüz karakteri İlya İlyiç Oblomov, günlerini sadece yatağında, eski sabahlığıyla yatarak ve hiçbir şey yapmayarak geçirir. Toplum onu "tembel, uyuşuk ve işe yaramaz" olarak damgalar. Ancak Oblomov\'un yatağı bir tembellik sığınağı değil; dışarıdaki dünyanın o anlamsız telaşına, bürokratik riyakârlığına, insanların mevki ve para uğruna birbirini ezip durduğu o absürt fare yarışına karşı felsefi ve pasif bir isyandır. Oblomov yataktan çıkmaz, çünkü dışarıda uğruna ayağa kalkmaya, ceket giymeye ve ruhunu kirletmeye değecek dürüst hiçbir şey (hiçbir anlam) bulamaz. Oblomovluk; ahlaksız bir eylem (çarkın dişlisi) olmaktansa, masum bir "eylemsizlik (hiçlik)" içinde çürümeyi seçmenin o trajikomik feryadıdır.',
+    questionStem: 'Oblomov karakterinin sürekli yatakta yatması (Oblomovluk), yazar tarafından nasıl (felsefi bir açıdan) değerlendirilmektedir?',
+    options: [
+      'Fiziksel hastalıkların (depresyonun) Rus toplumunda çok yaygın olması ve tıbbın yetersiz kalması',
+      'Sadece mirasyedi (zengin) soyluların çalışmaya ihtiyaç duymadıkları için yaşadıkları şımarık bir hayat tarzı',
+      'Basit bir fiziksel tembellikten ziyade; mevki, para ve riyakârlık üzerine kurulu o anlamsız (ahlaksız) modern hayata ve fare yarışına katılmayı reddeden "pasif, ahlaki bir isyan ve eylemsizlik" tercihi',
+      'Uyku düzeni bozulan insanların toplumsal hayata uyum sağlamasının imkânsız olduğu'
+    ],
+    correct: 2,
+    explanation: 'Oblomov\'un yataktan çıkmaması basit bir tembellik değil; dışarıdaki sahte, çıkarcı ve ahlaksız "fare yarışına" (modern hayata) katılmayı reddeden ahlaki ve pasif bir isyan (eylemsizlik) olarak değerlendirilmektedir.'
+  },
+  {
+    title: 'Nietzsche ve Bengi Dönüş (Eternal Return)',
+    passage: 'Nietzsche\'nin felsefe tarihine fırlattığı en ağır bomba "Bengi Dönüş" (Ebedi Tekerrür) kavramıdır. Bizi şu korkunç zihinsel teste sokar: Gecenin bir yarısı bir iblis yanına gelse ve sana "Şu an yaşadığın bu hayatı, aynı sevinçler, aynı ihanetler, aynı gözyaşları ve aynı detaylarla sonsuza kadar, defalarca ve defalarca yeniden yaşamak zorundasın!" dese ne yapardın? Kendini yere atıp o iblise lanet mi okurdun, yoksa ona sarılıp "Sen bir Tanrısın!" mı derdin? Bengi Dönüş, ölümden sonraki bir cennet vaadine sığınan zayıflara atılmış bir tokattır. Hayatı (kaderini) gerçekten sevmek, o hayatı içindeki en korkunç acılarla bile sonsuz kez yeniden yaşamayı coşkuyla isteyecek kadar (kendi varoluşunu) yüceltmektir.',
+    questionStem: 'Nietzsche\'nin "Bengi Dönüş" testi, insanın hayatla (varoluşuyla) kurduğu ilişkiyi hangi kritere göre sınamaktadır?',
+    options: [
+      'Ölümden sonra cennete gitmek için ne kadar çok iyilik yaptığına',
+      'Hayatında karşılaştığı sorunlardan (acılardan) kaçmak için ne kadar çabuk pes ettiğine',
+      'Yaşadığı hayatı (tüm acıları ve hatalarıyla birlikte), hiçbir detayı değiştirmeden "sonsuz kez yeniden yaşamayı isteyecek kadar" sevip sevmediğine ve o hayatı (varoluşunu) onaylayıp onaylamadığına',
+      'Geçmişte yaptığı kötü eylemlerin vicdan azabından kurtulmak için hafızasını silmek isteyip istemediğine'
+    ],
+    correct: 2,
+    explanation: 'İblisin "bu hayatı aynen sonsuz kez yaşayacaksın" demesi karşısında vereceğimiz tepki; hayatımızı tüm acılarıyla birlikte sonsuz kez yeniden isteyecek kadar sevip (onaylayıp) onaylamadığımızı sınar.'
+  }
+];
+
+export const felsefeParagrafSorulari18: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_18.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_18[idx];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-felsefe18-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
 // paragrafTests.ts dosyasının hata vermemesi için iki listeyi birleştirip eski adıyla dışa aktarıyoruz:
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari,
@@ -4768,5 +5045,6 @@ export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...felsefeParagrafSorulari14,
   ...felsefeParagrafSorulari15,
   ...psikolojiParagrafSorulari16,
-  ...karisikParagrafSorulari17
+  ...karisikParagrafSorulari17,
+  ...felsefeParagrafSorulari18
 ];
