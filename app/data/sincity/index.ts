@@ -1683,6 +1683,293 @@ export const tarihParagrafSorulari6: TarihParagrafQuestion[] = Array.from({ leng
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
+export interface BilimParagrafQuestion {
+  id: string;
+  subject: 'turkce'; // İhtiyacına göre değiştirebilirsin
+  term: number;
+  prompt: string;
+  options: string[];
+  correct: number;
+  explanation: string;
+}
+
+const PARAGRAPH_THEMES_7 = [
+  {
+    title: 'Çift Yarık Deneyi ve Gözlemcinin Gücü',
+    passage: 'Kuantum fiziğinin en sarsıcı deneyi olan Çift Yarık Deneyi\'nde, ışık parçacıkları (fotonlar) iki yarıklı bir levhadan geçirilir. Eğer bu parçacıkları izleyen bir ölçüm cihazı yoksa, fotonlar bir dalga gibi davranıp ekranda karmaşık bir girişim deseni oluşturur. Ancak deneye bir "gözlemci" dâhil edildiğinde, parçacıklar izlendiklerini biliyormuş gibi aniden dalga olmayı bırakıp sıradan birer mermi (parçacık) gibi iki düz çizgi oluştururlar. Evren, biz ona bakmadığımızda bir olasılıklar deniziyken, sırf biz ona bakıyoruz diye belirli bir gerçekliğe çökmektedir. Bu deney, gerçekliğin bizden bağımsız var olan somut bir sahne değil, bizim bilincimizle şekillenen interaktif bir illüzyon olduğunu fısıldar.',
+    questionStem: 'Çift Yarık Deneyi\'nin sonuçları üzerinden yazarın gerçeklik algısıyla ilgili ulaştığı felsefi yargı nedir?',
+    options: [
+      'Gerçekliğin insan algısından bağımsız, sabit ve değişmez fiziksel yasalara dayandığı',
+      'Işık parçacıklarının hızının, kullanılan ölçüm cihazlarının kalitesine göre değişiklik gösterdiği',
+      'Fiziksel gerçekliğin aslında sabit olmadığı, bilincin ve "gözlem" eyleminin evrenin şekillenmesinde doğrudan rol oynadığı',
+      'Kuantum fiziğinin henüz klasik fizik kurallarını çürütecek kadar yeterli veriye ulaşamadığı'
+    ],
+    correct: 2,
+    explanation: 'Parçacıkların izlendiklerinde davranış değiştirmesi, gerçekliğin bizden bağımsız olmadığını ve gözlem (bilinç) ile şekillenen interaktif bir illüzyon olduğunu kanıtlar.'
+  },
+  {
+    title: 'Schrödinger\'in Kedisi',
+    passage: 'Fizikçi Erwin Schrödinger, kuantum dünyasının o absürt doğasını kanıtlamak için zihinsel bir deney tasarladı: Kapalı bir çelik kutunun içine bir kedi, zehirli bir gaz şişesi ve bozunma ihtimali %50 olan radyoaktif bir madde koydu. Kuantum kurallarına göre, biz o kutuyu açıp içine bakana kadar zehirli gaz hem salınmış hem de salınmamıştır; dolayısıyla kedi de aynı anda hem ölü hem de diridir! Makro dünyada delilik gibi görünen bu "süperpozisyon" durumu, kuantum dünyasının temelidir. Gerçeklik ancak kutunun kapağını açtığımızda, yani bir gözlem yaptığımızda "ölü" veya "diri" tek bir ihtimale çökerek netleşir. Kutu kapalıyken evren, sonsuz ihtimallerin aynı anda yaşandığı hayalet bir tiyatrodur.',
+    questionStem: 'Schrödinger\'in zihinsel deneyinde vurgulanan "süperpozisyon" kavramı neyi ifade etmektedir?',
+    options: [
+      'Gözlem yapılana kadar birbirine zıt tüm olasılıkların (kedinin hem ölü hem diri olması) aynı anda var olmaya devam etmesini',
+      'Radyoaktif maddelerin hayvanlar üzerindeki ölümcül etkisinin kesin olarak tahmin edilememesini',
+      'Deney kutularının dış dünyadan tamamen izole edilmesinin bilimsel olarak imkânsızlığını',
+      'Fizikçilerin zihinsel deneyler yerine laboratuvar deneylerine ağırlık vermesi gerektiğini'
+    ],
+    correct: 0,
+    explanation: 'Süperpozisyon; kutu açılana kadar (gözlem yapılana dek) kedinin aynı anda hem ölü hem de diri olması, yani tüm ihtimallerin eşzamanlı varlığını sürdürmesidir.'
+  },
+  {
+    title: 'Fare Parkı ve Bağımlılığın Kökeni',
+    passage: '1970\'lerde psikolog Bruce Alexander, uyuşturucu bağımlılığının sadece kimyasal bir süreç olmadığını kanıtlamak için "Fare Parkı" deneyini tasarladı. Geleneksel deneylerde, dar ve karanlık bir kafese yalnız başına kapatılan fareler kendilerine sunulan uyuşturuculu suyu içerek hızla bağımlı oluyor ve ölüyordu. Ancak Alexander, içine oyuncaklar, lezzetli yiyecekler ve sosyalleşebilecekleri diğer farelerin bulunduğu devasa, mutlu bir "Fare Parkı" kurdu. Bu parktaki farelerin hiçbiri uyuşturuculu suyu içmedi, hatta önceden bağımlı olanlar bile yavaşça bu alışkanlığı bıraktı. Bağımlılık, kimyasal bir kancadan ziyade, izolasyonun, anlamsızlığın ve içinde bulunduğumuz karanlık kafesin yarattığı psikolojik bir kaçış refleksidir.',
+    questionStem: 'Fare Parkı deneyi, uyuşturucu bağımlılığı konusunda hangi yerleşik inancı yıkmıştır?',
+    options: [
+      'Bağımlılığın tamamen genetik yatkınlıktan kaynaklanan bir hastalık olduğu inancını',
+      'Bağımlılığın sadece maddenin kimyasal yapısıyla ilgili (biyolojik) bir sorun olduğu inancını yıkarak, asıl sorunun çevresel izolasyon ve mutsuzluk olduğunu göstermiştir',
+      'Laboratuvar hayvanlarının uyuşturucu maddelere karşı insanlardan daha dirençli olduğu tezini',
+      'Sosyalleşmenin ve kalabalık ortamların stres seviyesini artırarak bağımlılığı tetiklediği inancını'
+    ],
+    correct: 1,
+    explanation: 'Yalnız ve mutsuz fareler bağımlı olurken, oyuncaklı ve sosyal parktaki farelerin maddeyi reddetmesi, bağımlılığın kimyasal değil çevresel ve psikolojik bir sorun olduğunu kanıtlamıştır.'
+  },
+  {
+    title: 'Clara Immerwahr\'ın İntiharı',
+    passage: 'Birinci Dünya Savaşı sırasında Alman kimyager Fritz Haber, havadan azotu sabitleyerek suni gübreyi bulmuş ve milyarlarca insanı açlıktan kurtarmış bir kahramandı. Ancak savaş patlak verince dehasını ölümcül klor gazı (kimyasal silah) üretmek için kullandı. Kendisi gibi başarılı bir kimyager olan eşi Clara Immerwahr, bilimin insanları öldürmek için kullanılmasını "barbarlığın en aşağılık hali" olarak nitelendirdi. Eşini durduramayan Clara, klor gazının siperlerde binlerce insanı boğarak öldürdüğü gecenin sabahında, kocasının beylik tabancasıyla bahçede canına kıydı. Clara\'nın o sessiz intiharı, bilimin ahlaktan (etikten) koptuğunda nasıl korkunç bir canavara dönüşebileceğinin tarihteki en trajik çığlığıdır.',
+    questionStem: 'Clara Immerwahr\'ın intihar eylemi, metne göre neyin sembolik bir itirazıdır?',
+    options: [
+      'Kadın bilim insanlarının dönemin akademi dünyasında hak ettikleri değeri görememesinin',
+      'Almanya\'nın Birinci Dünya Savaşı\'nda yenileceğini önceden fark etmesinin getirdiği umutsuzluğun',
+      'Bilimsel zekânın ve icatların, insanlığın yararı (etik) yerine kitlesel ölümler ve savaş silahı olarak kullanılmasına duyulan ahlaki isyanın',
+      'Karı-koca arasındaki mesleki rekabetin yıkıcı boyutlara ulaşmasının'
+    ],
+    correct: 2,
+    explanation: 'Kocasının bilimi kimyasal silah olarak kullanmasına "barbarlık" demesi ve intihar etmesi, bilimin ahlaktan koparak ölüm aracı yapılmasına yönelik etik bir isyandır.'
+  },
+  {
+    title: 'Soluk Mavi Nokta',
+    passage: '1990 yılında Güneş sisteminin sınırlarına ulaşan Voyager 1 uzay aracı, Carl Sagan\'ın ricası üzerine kameralarını son bir kez geldiği yöne, Dünya\'ya çevirdi ve o efsanevi fotoğrafı çekti. 6 milyar kilometre uzaktan bakıldığında Dünya, Güneş ışınları arasında asılı duran, piksellerden bile küçük soluk mavi bir noktadan ibaretti. Sagan\'ın dediği gibi; uğruna kan dökülen tüm o imparatorluklar, kurulan bütün dinler, nefretler ve sevdalar, evrenin o dondurucu ve uçsuz bucaksız karanlığında süzülen bir toz zerresinin üzerinde yaşanmıştı. O fotoğraf, insanoğlunun devasa kibrine evrenin verdiği en sessiz ve en sarsıcı yanıttır.',
+    questionStem: 'Yazar, "Soluk Mavi Nokta" fotoğrafının insanoğlu üzerindeki asıl etkisini nasıl yorumlamaktadır?',
+    options: [
+      'Güneş sistemindeki diğer gezegenlerin yaşama elverişsiz olduğunu bilimsel olarak ispatlamıştır.',
+      'Uzay teknolojisinin ne kadar geliştiğini göstererek insanlığa büyük bir gurur vermiştir.',
+      'İnsanoğlunun evrendeki konumunun ne kadar küçük ve önemsiz olduğunu (kibrin anlamsızlığını) felsefi bir yüzleşmeyle ortaya koymuştur.',
+      'Dünya\'daki su kaynaklarının uzaydan mavi görünmesini sağlayan atmosfer yapısını açıklamıştır.'
+    ],
+    correct: 2,
+    explanation: 'Uğruna savaşılan her şeyin küçük bir toz zerresinde (soluk mavi nokta) yaşanmış olması, insanın kibrine verilen sarsıcı bir yanıt (evrendeki önemsizliğimizle yüzleşme) olarak yorumlanmıştır.'
+  },
+  {
+    title: 'Öğrenilmiş Çaresizlik',
+    passage: 'Psikolog Martin Seligman 1960\'larda bir grup köpeğe, kaçamayacakları bir kafeste hafif elektrik şokları verdi. Köpekler başlangıçta çırpınıp kaçmaya çalıştı, ancak ne yaparlarsa yapsınlar şoktan kurtulamadıklarını görünce sonunda pes edip yere yattılar. Deneyin ikinci aşamasında kafesin kapısı açıldı, köpeklerin şoktan kurtulmak için sadece küçük bir engelin üzerinden atlamaları yeterliydi. Ancak kapı açık olmasına rağmen köpekler kaçmayı denemedi; sadece yattıkları yerde şoku kabullendiler. Seligman buna "Öğrenilmiş Çaresizlik" dedi. Zincirler bedenden çıkarılsa bile, zihne vurulan "ne yaparsam yapayım değişmeyecek" prangası, insanı veya hayvanı ebedi bir tutsağa dönüştürür.',
+    questionStem: 'Öğrenilmiş Çaresizlik deneyinin sonuçlarına göre, canlıları eylemsizliğe (pes etmeye) iten asıl faktör nedir?',
+    options: [
+      'Uygulanan fiziksel acının canlıların kas sistemini felç etmesi',
+      'Geçmişteki başarısız denemelerin zihinde yarattığı "çabaların sonucu değiştirmeyeceği" inancı ve umutsuzluk durumu',
+      'Kapalı alan korkusunun (klostrofobi) mantıklı karar vermeyi engellemesi',
+      'Laboratuvar ortamındaki stresin canlının zekâ seviyesini kalıcı olarak düşürmesi'
+    ],
+    correct: 1,
+    explanation: 'Kapı açık olmasına rağmen kaçmamaları, geçmişteki başarısızlıkların zihne vurduğu "ne yaparsam yapayım değişmeyecek" prangası (umutsuzluk) yüzündendir.'
+  },
+  {
+    title: 'Seyirci Etkisi (Bystander Effect)',
+    passage: '1964 yılında New York\'ta Kitty Genovese adlı genç bir kadın, apartmanının önünde yarım saat boyunca bıçaklanarak öldürüldü. Çığlıklarına rağmen pencerelerinden olayı izleyen 38 komşusundan hiçbiri aşağı inip yardım etmedi, hatta birçoğu polisi bile aramadı. Bu korkunç tepkisizliği inceleyen psikologlar, olayın insanların kalpsizliğinden değil, "Sorumluluğun Dağılması" adlı psikolojik bir refleksten kaynaklandığını buldular. Ortamda ne kadar çok insan varsa, birey "Nasıl olsa bir başkası yardım eder, polis arar" diyerek kendi sorumluluğunu kalabalığa devreder. Seyirci etkisi, kalabalıkların içindeki bireyin, yalnızken olacağından çok daha pasif ve duyarsız bir yaratığa dönüştüğünü kanıtlar.',
+    questionStem: 'Seyirci Etkisi\'nin temel psikolojik mekanizması parçada nasıl açıklanmaktadır?',
+    options: [
+      'Şiddet olaylarına tanık olmanın insanlarda anlık bir felç (donup kalma) etkisi yaratması',
+      'İnsanların kendilerini tehlikeye atmamak için bencilce davranarak sadece kendi can güvenliklerini düşünmesi',
+      'Kalabalık ortamlarda bireyin, müdahale etme yükümlülüğünü "başkası yapar" düşüncesiyle diğer insanlara devretmesi (sorumluluğun dağılması)',
+      'Şehirleşmenin ve metropol hayatının insanları doğuştan duyarsız ve ahlaksız yapması'
+    ],
+    correct: 2,
+    explanation: 'Olayı izleyen 38 kişinin yardım etmemesi "nasıl olsa bir başkası yardım eder" düşüncesiyle sorumluluğun kalabalığa devredilmesine (sorumluluk dağılımı) bağlanmıştır.'
+  },
+  {
+    title: 'Hubble Derin Uzay Alanı',
+    passage: '1995 yılında astronomlar çok riskli bir karar aldılar. Dünyanın en gelişmiş uzay teleskobu olan Hubble\'ı, gökyüzünde yıldızların hiç olmadığı, tamamen kapkaranlık ve "boş" görünen küçük bir noktaya çevirip tam 10 gün boyunca pozlama yaptılar. Çoğu bilim insanı bu zaman kaybına itiraz etti, çünkü orada "hiçbir şey yoktu". Ancak görüntüler dünyaya ulaştığında insanlık şoka uğradı. O karanlık iğne deliği büyüklüğündeki hiçliğin içinde, her biri milyarlarca yıldıza ev sahipliği yapan tam 3 bin farklı galaksi parlıyordu. Hubble Derin Alan fotoğrafı, evrenin sınırlarının algımızın çok ötesinde olduğunu ve "hiçbir şey yok" sandığımız karanlıkların, aslında sabırla bakmayı bilenler için sonsuz ışıklarla dolu olduğunu kanıtladı.',
+    questionStem: 'Hubble teleskobunun "boşluk" sandığımız yere yönlendirilmesi ve sonucunda elde edilen veriler neyi sembolize eder?',
+    options: [
+      'Hubble teleskobunun lenslerinin zamanla bozulup sahte görüntüler ürettiğini',
+      'Bilimsel kurulların aldığı riskli kararların genellikle başarısızlıkla sonuçlandığını',
+      'Karanlık ve "hiçlik" olarak nitelendirdiğimiz şeylerin aslında sadece vizyon (ve teknoloji) eksikliğimizden kaynaklandığını; evrenin sandığımızdan çok daha zengin olduğunu',
+      'Evrendeki tüm galaksilerin birbiriyle aynı yaşta ve yapıda olduğunu'
+    ],
+    correct: 2,
+    explanation: 'Boş sanılan o karanlık noktada 3 bin galaksi bulunması, karanlık sandığımız yerlerin sabırla/doğru teknolojiyle bakıldığında aslında ne kadar zengin olduğunu gösterir.'
+  },
+  {
+    title: 'Ayrık Beyin (Split-Brain) Deneyleri',
+    passage: 'Epilepsi nöbetlerini durdurmak için bazı hastaların beyninin sağ ve sol yarımküresini birbirine bağlayan köprü (korpus kallozum) ameliyatla kesilir. Nörolog Roger Sperry, bu "ayrık beyinli" hastaları incelediğinde şok edici bir gerçekle karşılaştı. İletişimi kopan sol beyin ile sağ beyin, artık aynı bedende yaşayan farklı bilinçlere sahip iki ayrı "kişi" gibi davranıyordu. Mesela sağ beyin bir resmi görüp hastanın sol eliyle resmi çizerken; konuşma merkezi sol beyinde olduğu için, hasta ağzıyla o resmi neden çizdiğini bilmediğini, elinin kendi kendine hareket ettiğini söylüyordu. Bu deney, sarsılmaz ve tek bir "ben" (ruh) inancımızı paramparça etmiş; benliğimizin aslında beyindeki nöronların ortaklaşa kurduğu karmaşık bir meclis olduğunu kanıtlamıştır.',
+    questionStem: 'Ayrık Beyin deneylerinin nöroloji ve felsefe dünyasında yarattığı asıl büyük sarsıntı nedir?',
+    options: [
+      'Epilepsi hastalığının tedavisinde cerrahi müdahalenin işe yaramadığını göstermesi',
+      'İnsanın solak veya sağlak olmasının tamamen genetik olduğunu ispatlaması',
+      'Tek ve bölünmez bir "benlik/ruh" inancını yıkarak, bilincin beynin biyolojik ve mekanik bir ürünü (parçalanabilir bir yapı) olduğunu ortaya koyması',
+      'Sağ beynin konuşma konusunda sol beyinden daha yetenekli olduğunu kanıtlaması'
+    ],
+    correct: 2,
+    explanation: 'Beynin iki yarısı ayrıldığında bedende iki farklı bilinç gibi davranılması, sarsılmaz "tek bir benlik/ruh" inancını yıkıp bilincin biyolojik bir ortaklık olduğunu göstermiştir.'
+  },
+  {
+    title: 'Kelebek Etkisi ve Kaos Teorisi',
+    passage: '1961 yılında meteorolog Edward Lorenz, hava durumunu tahmin etmek için bilgisayarına verileri giriyordu. Bir gün, bilgisayarın uzun süren işlemine baştan başlamak yerine, daha önce kaydettiği bir sonucu orta yerden sisteme girdi. Ancak kâğıttaki veriyi yazarken binde birlik çok küçük bir küsuratı (0.506127 yerine 0.506) yuvarlayarak eksik yazdı. Bu önemsiz görünen küsurat eksikliği, bilgisayarın aylar sonrası için tahmin ettiği hava durumunu günlük güneşlik bir havadan devasa bir kasırgaya çevirdi. "Kaos Teorisi" olarak bilinen bu fenomen, Brezilya\'da kanat çırpan bir kelebeğin, Teksas\'ta bir kasırgaya yol açabileceği gerçeğidir. Evren o kadar karmaşık bir ağdır ki, hiçbir şey önemsiz değildir ve doğrusal bir kesinlik imkânsızdır.',
+    questionStem: 'Kelebek Etkisi kavramı, olayların gelişimiyle ilgili hangi klasik düşünceyi reddetmektedir?',
+    options: [
+      'Doğa olaylarının birbirini etkilediğini savunan ekolojik yaklaşımı',
+      'Geleceğin her zaman kesin, öngörülebilir ve kontrol altında tutulabilir matematiksel bir düzene (determinizme) sahip olduğu inancını',
+      'Hava durumu tahminlerinin teknoloji geliştikçe kusursuzlaşacağı düşüncesini',
+      'Hayvanların doğa olaylarını insanlardan daha önce hissedebileceği inancını'
+    ],
+    correct: 1,
+    explanation: 'Binde birlik ufacık bir yuvarlamanın kasırgaya yol açması, evrende doğrusal bir kesinliğin imkânsız olduğunu, yani her şeyin kesin/öngörülebilir olduğu fikrini çürütür.'
+  },
+  {
+    title: 'Karanlık Madde\'nin Hayaleti',
+    passage: '1970\'lerde astronom Vera Rubin, sarmal galaksilerin dönüş hızlarını ölçerken fizikte büyük bir krize neden olan bir anomali fark etti. Galaksilerin kenarlarındaki yıldızlar o kadar hızlı dönüyordu ki, merkezdeki görünür kütlenin (yıldızların ve gazın) çekim gücü onları bir arada tutmaya yetmemeli, galaksi tıpkı hızla dönen bir atlıkarınca gibi yıldızları uzaya fırlatıp parçalanmalıydı. Ama parçalanmıyorlardı. Onları bir arada tutan, ışığı yansıtmayan, dokunulamayan ama devasa bir çekim gücüne sahip "Karanlık Madde" adını verdiğimiz görünmez bir iskeletti. Evrendeki maddenin %85\'i bu karanlık hayaletten oluşur. Gördüğümüz, dokunduğumuz ve bildiğimiz her şey, asıl gerçekliğin omuzlarında gezinen küçük bir köpükten ibarettir.',
+    questionStem: 'Vera Rubin\'in Karanlık Madde\'ye dair bulguları evren algımızla ilgili neyi kanıtlamaktadır?',
+    options: [
+      'Güneş sistemimizin galaksinin merkezinden sanıldığından daha uzakta olduğunu',
+      'Evrende gözlemleyebildiğimiz (ışık saçan) maddi dünyanın, aslında evreni ayakta tutan o görünmez ve devasa gerçekliğin çok küçük bir parçası olduğunu',
+      'Yıldızların kendi enerjilerini tükettiklerinde birer karadeliğe dönüşeceğini',
+      'Teleskopların uzaydaki gaz ve toz bulutlarını görüntülemede yetersiz kaldığını'
+    ],
+    correct: 1,
+    explanation: 'Galaksileri bir arada tutan gücün %85\'lik görünmez bir madde (karanlık madde) olması, gözlemlediğimiz ışıklı evrenin asıl gerçekliğin çok küçük bir parçası olduğunu kanıtlar.'
+  },
+  {
+    title: 'Asch Uyma (Konformite) Deneyi',
+    passage: '1951\'de Solomon Asch, insanların toplumsal baskı altında kendi doğrularından ne kadar vazgeçebileceğini ölçen o meşhur deneyi yaptı. Denek, laboratuvara girdiğinde içeride diğer "katılımcılar" (aslında Asch\'in asistanları) vardı. Ekranda çok net bir şekilde biri kısa, biri uzun iki çizgi gösteriliyor ve "Hangisi daha uzun?" diye soruluyordu. Asistanların hepsi bilerek yanlış cevap verip odayı büyük bir kendinden eminlikle doldurunca, sırası gelen deneklerin %75\'i kendi gözleriyle gördükleri gerçeği inkâr ederek gruba uydu ve "kısa olan uzun" dedi. Asch deneyi, hakikatin zayıf bir fidan olduğunu; kalabalıkların ikna edici cehaleti (sürü psikolojisi) karşısında bireyin kendi gerçekliğini bile nasıl kolayca eğip bükebildiğini acımasızca yüzümüze çarpar.',
+    questionStem: 'Asch Uyma Deneyi, birey ve toplum ilişkisi hakkında hangi psikolojik gerçeği ispatlamıştır?',
+    options: [
+      'İnsanların uzunluk algısının laboratuvar stresinde yanılgıya açık olduğunu',
+      'Bireyin, dışlanma korkusu veya gruba ait olma güdüsüyle, kendi gözüyle gördüğü mutlak doğruları bile inkâr edebileceğini (sürü psikolojisini)',
+      'Lider vasıflı kişilerin deney ortamlarında daha doğru kararlar verdiğini',
+      'Fiziksel farklılıkların (çizgi boylarının) insanlar tarafından genellikle önemsenmediğini'
+    ],
+    correct: 1,
+    explanation: 'Deneklerin kısa olanı "uzun" diyen gruba uyup kendi gözüyle gördüğünü inkar etmesi, dışlanma korkusuyla hakikatten vazgeçme (sürü psikolojisi) eğilimini kanıtlar.'
+  },
+  {
+    title: 'Hasta H.M. ve Şimdiki Zaman Hapishanesi',
+    passage: 'Tıp tarihinin en ünlü vakalarından biri olan Henry Molaison (Hasta H.M.), şiddetli epilepsi nöbetlerini durdurmak için 1953 yılında beynindeki hipokampüs bölgesinin alındığı bir ameliyat geçirdi. Nöbetleri durmuştu ama korkunç bir bedel ödedi: Artık yeni hiçbir anı oluşturamıyordu. Onunla tanıştıktan beş dakika sonra odadan çıkıp geri dönseniz, sizi hayatında ilk defa görüyormuş gibi selamlıyordu. Onlarca yıl yaşadı ama zihni hep 1953 yılında donup kaldı. H.M.\'nin trajedisi, bilincin ve "benlik" hissinin aslında sadece bir anılar toplamı olduğunu gösterir. Hafızamız yoksa bir geçmişimiz de yoktur; ve geçmişi olmayanın, inşa edeceği bir geleceği veya bir kişiliği de olamaz.',
+    questionStem: 'Hasta H.M.\'nin durumu üzerinden hafıza ve insan doğası hakkında ulaşılan asıl sonuç nedir?',
+    options: [
+      'Epilepsi hastalığının beynin tüm motor becerilerini yok eden ölümcül bir rahatsızlık olduğu',
+      'İnsanın yeni bilgiler öğrenmese bile geçmiş tecrübeleriyle geleceği kusursuzca kurgulayabileceği',
+      'Kimliğimizi, benliğimizi ve zaman algımızı oluşturan asıl unsurun, sürekli yeni anılar oluşturabilme yeteneğimiz (hafızamız) olduğu',
+      'Beyin ameliyatlarının psikolojik hastalıkların tedavisinde kesin çözüm sağlamadığı'
+    ],
+    correct: 2,
+    explanation: 'H.M.\'nin yeni anı oluşturamaması yüzünden hep 1953\'te takılı kalması, benliğin ve kimliğin aslında "anılar toplamı (hafıza)" olduğunu ve hafıza olmadan kişiliğin olamayacağını gösterir.'
+  },
+  {
+    title: 'Fermi Paradoksu: Neredeler?',
+    passage: '1950\'lerde fizikçi Enrico Fermi, evrenin devasa boyutlarını ve yaşını hesaplarken çok basit ama ürpertici bir soru sordu: "Eğer evrende milyarlarca Dünya benzeri gezegen varsa ve bu gezegenlerin birçoğu bizden milyonlarca yıl daha yaşlıysa, çoktan bütün galaksiyi sarmış bir uzaylı medeniyeti görmemiz gerekmez miydi? Peki ama herkes nerede?" Fermi Paradoksu olarak bilinen bu büyük çelişki, bilim dünyasını iki korkunç ihtimalle baş başa bırakır: Ya uçsuz bucaksız uzay okyanusunda milyarlarca galaksi içinde tamamen yapayalnızız; ya da zeki medeniyetler evrensel bir "Büyük Filtre"ye takılıp, yıldızlararası aşamaya (belki de nükleer silahlarla kendi kendilerini yok ettikleri için) geçemeden yok oluyorlar.',
+    questionStem: 'Fermi Paradoksu\'nun temel çıkış noktası ve yarattığı felsefi çelişki aşağıdakilerden hangisidir?',
+    options: [
+      'Uzaylıların dünyayı ziyaret edip aramızda gizlice yaşadıklarına dair spekülasyonların bilimsel olmaması',
+      'Evrenin istatistiksel devasa büyüklüğüne ve yaşına rağmen, evrende zeki yaşamın (uzaylıların) varlığına dair en ufak bir iz bile bulunamaması',
+      'Güneş sisteminin dışına çıkmanın insanlık için fiziksel olarak hiçbir zaman mümkün olmayacağı teorisi',
+      'Uzay araştırmalarına harcanan bütçenin dünyadaki yoksulluğu bitirmek yerine israf edilmesi'
+    ],
+    correct: 1,
+    explanation: 'Milyarlarca Dünya benzeri gezegen varken (istatistiksel büyüklük) hiç kimsenin (uzaylıların) ortada görünmemesi, Fermi Paradoksu\'nun temel çelişkisidir.'
+  },
+  {
+    title: 'Plasebo Etkisi: İnancın Kimyası',
+    passage: 'İkinci Dünya Savaşı sırasında cephede morfin kalmadığında, anestezi uzmanı Henry Beecher yaralı askerlere morfin yerine sadece tuzlu su enjekte etmiş ama onlara bunun güçlü bir ağrı kesici olduğunu söylemişti. Mucizevi bir şekilde, tuzlu su yiyen askerlerin ağrıları şok edici bir oranda azaldı ve şoka girmeleri engellendi. "Plasebo Etkisi" denen bu fenomen, iyileşeceğine inanan bir zihnin, bedenin kendi eczanesini (endorfin) tetikleyerek fiziksel acıyı yenebildiğini kanıtlar. İlaç sadece bir ulaçtır; asıl şifacı, içtiği ilacın kendisini iyileştireceğine sarsılmaz bir inançla bağlanan o karanlık ve güçlü insan zihnidir.',
+    questionStem: 'Plasebo Etkisi\'nin mekanizması hakkında parçada vurgulanan asıl düşünce nedir?',
+    options: [
+      'Tuzlu suyun yaralar üzerinde enfeksiyonu önleyici güçlü bir antiseptik etkisi olduğu',
+      'Savaş koşullarındaki stresin, askerlerin sinir sistemlerini uyuşturarak acıyı hissetmemelerini sağladığı',
+      'Bir maddenin iyileştirici gücüne duyulan sarsılmaz inancın, bedenin kendi kimyasını değiştirerek fiziksel iyileşme (ağrı kesici etki) yaratabileceği',
+      'Modern tıpta ilaç kullanımının tamamen gereksiz ve zararlı bir yöntem olduğu'
+    ],
+    correct: 2,
+    explanation: 'İçi boş tuzlu suyun, sadece "inanç" sayesinde endorfin tetiklemesi ve ağrıyı kesmesi, inancın bedenin kimyasını değiştiren asıl şifacı olduğunu kanıtlar.'
+  },
+  {
+    title: 'Miller-Urey Deneyi: Yaşamın Çorbası',
+    passage: '1952 yılında Stanley Miller ve Harold Urey, yaşamın Dünya\'da nasıl başladığını anlamak için bir deney tüpünün içine su (okyanuslar), metan, amonyak ve hidrojen (ilkel atmosfer) koydular. Ardından bu karışıma antik dünyadaki yıldırımları taklit eden elektrik kıvılcımları verdiler. Birkaç gün sonra o cansız ve zehirli çorbanın içinde, yaşamın temel yapı taşları olan "aminoasitler"in kendiliğinden oluştuğu görüldü. Bu deney, canlının ortaya çıkması için doğaüstü ve mistik bir dokunuşa değil; sadece doğru kimyasallara, biraz suya ve elektriksel bir kaosa (kıvılcıma) ihtiyaç duyulduğunu, yani hayatın kökeninin organik bir kimya problemi olduğunu kanıtlamıştır.',
+    questionStem: 'Miller-Urey deneyinin bilim dünyasına kazandırdığı en önemli bakış açısı nedir?',
+    options: [
+      'Dünya dışı gezegenlerdeki yaşamın oksijen yerine metan gazına dayalı olarak gelişebileceği',
+      'Elektrik enerjisinin insan bedeni üzerindeki genetik mutasyonları tetikleyebileceği',
+      'Yaşamın kökeninin mistik veya doğaüstü bir süreç değil, cansız maddelerin uygun ortamda tepkimeye girdiği tamamen kimyasal ve doğal bir süreç olduğu',
+      'İlkel dönem atmosferinin bugünkünden çok daha fazla oksijen barındırdığı'
+    ],
+    correct: 2,
+    explanation: 'Cansız kimyasallara elektrik verilmesiyle aminoasit (yaşam taşı) oluşması, hayatın doğaüstü/mistik değil kimyasal ve organik bir süreç olduğunu kanıtlar.'
+  },
+  {
+    title: 'Ayna Nöronlar ve Empati',
+    passage: 'İtalyan nörolog Giacomo Rizzolatti, maymunların beynini incelerken beklenmedik bir şey buldu. Bir maymun bir fıstığı eline aldığında yanan beyin hücreleri, o maymun fıstığı almayıp sadece fıstığı alan başka birini "izlediğinde" de aynı şekilde yanıyordu. Araştırmalar insan beyninde de bu "ayna nöronların" var olduğunu gösterdi. Karşımızdaki biri acı çekip ağladığında, bizim de kalbimizin sızlaması şairane bir abartı değil; beynimizin o acıyı kelimenin tam anlamıyla kendi içinde simüle etmesidir (aynalamasıdır). Ayna nöronlar, empatinin ve ahlakın sonradan öğrenilen felsefi bir tercih değil; evrimin bize bahşettiği nörolojik ve biyolojik bir zorunluluk olduğunu fısıldar.',
+    questionStem: 'Ayna nöronların keşfinin, empati ve ahlak kavramlarına getirdiği yeni boyut aşağıdakilerden hangisidir?',
+    options: [
+      'Empatinin sadece kendi türümüzden olan canlılara karşı geliştirilebileceği',
+      'Ahlakın ve empatinin sadece dini ve felsefi eğitimle kazanılan soyut (kültürel) kavramlar değil, insan beyninin donanımında var olan biyolojik (nörolojik) bir refleks olduğu',
+      'Maymunların zekâ seviyesinin insan zekâsına çok daha yakın olduğunun ispatlanması',
+      'Acı çeken insanları izlemenin, izleyen kişinin sağlığını kalıcı olarak bozduğu'
+    ],
+    correct: 1,
+    explanation: 'Başkası acı çekerken kendi beynimizin de aynı şekilde yanması, empatinin sadece felsefi bir tercih değil, doğuştan gelen nörolojik ve biyolojik bir zorunluluk olduğunu gösterir.'
+  },
+  {
+    title: 'Higgs Bozonu: Tanrı Parçacığı',
+    passage: 'Evrendeki tüm parçacıklar, Büyük Patlama\'dan sonra kütlesiz birer ışık hızı mermisiydi. Peki neden bazıları kütle kazanıp yıldızları, gezegenleri ve bizi oluştururken, ışık parçacıkları kütlesiz kaldı? Fizikçi Peter Higgs, evreni kaplayan görünmez bir pekmez tarlası (Higgs Alanı) olduğunu öne sürdü. Bu alanla etkileşime giren (sürtünen) parçacıklar yavaşlayıp "kütle" kazanırken, etkileşime girmeyenler (fotonlar) hızla akıp geçiyordu. Kütleyi var eden bu "Higgs Bozonu", 2012 yılında CERN\'deki devasa çarpıştırıcıda kanıtlandı. "Tanrı Parçacığı" da denilen bu buluş, fiziksel gerçekliğimizin asıl mimarının, etrafımızı saran ama gözle göremediğimiz bir etkileşim alanı olduğunu gösterdi.',
+    questionStem: 'Higgs Bozonu\'nun fizikte "Tanrı Parçacığı" olarak anılmasının ve evrenin varoluşundaki asıl önemi nedir?',
+    options: [
+      'Güneşin yaydığı radyasyonun gezegenlere ulaşmasını engelleyen bir koruma kalkanı olması',
+      'Işık hızının aşılmasının teorik olarak mümkün olduğunu kanıtlayan ilk matematiksel formül olması',
+      'Evrendeki atom altı parçacıklara "kütle" kazandırarak onların maddeye, gezegenlere ve yaşama dönüşmesini sağlayan o temel etkileşimi kurması',
+      'Dünya dışı yaşam formlarının iletişimde kullandığı görünmez bir sinyal dalgası olması'
+    ],
+    correct: 2,
+    explanation: 'Higgs Alanı\'na sürtünen parçacıkların kütle kazanarak gezegenleri ve bizi (maddeyi) oluşturması, bu parçacığın maddeye kütle kazandıran temel yapıtaşı olduğunu gösterir.'
+  },
+  {
+    title: 'Karadelikler ve Olay Ufku',
+    passage: 'Ömrünü tüketen devasa yıldızlar kendi içine çöktüğünde, evrenin en doymak bilmez canavarlarına, yani Karadeliklere dönüşürler. Bu karanlık çukurların yerçekimi o kadar şiddetlidir ki, evrendeki en hızlı şey olan ışık bile onlardan kaçamaz. Karadeliğin sınırına "Olay Ufku" (Event Horizon) denir. Eğer bu ufuk çizgisini geçerseniz, dışarıdaki evren için artık yoksunuzdur. Sınırı geçtiğiniz an, devasa kütleçekimi yüzünden zaman sizin için o kadar yavaşlar ki, teorik olarak evrenin sonunu bir sinema filmi gibi ileri sarılmış halde izleyebilirsiniz. Karadelikler, fizik kurallarının çöktüğü, uzay ve zamanın anlamını yitirdiği o korkunç hiçliğin krallığıdır.',
+    questionStem: 'Parçada "Olay Ufku" (Event Horizon) ile ilgili olarak vurgulanan en çarpıcı fiziksel özellik nedir?',
+    options: [
+      'Karadeliklerin etrafında dönen yeni yıldızların doğduğu parlak ve sıcak bir kuluçka merkezi olması',
+      'Işığın bile kaçamayacağı, geçildiği anda uzay ve zamanın klasik fizik yasalarını tamamen büküp anlamsızlaştıran (zamanı yavaşlatan) o geri dönüşü olmayan kesin sınır olması',
+      'Karadeliğin içindeki enerjiyi dışarı püskürterek yeni galaksiler yaratan bir çıkış kapısı olması',
+      'İçeri düşen her maddenin kütlesini kaybederek anında enerjiye dönüşmesi'
+    ],
+    correct: 1,
+    explanation: 'Olay ufkunun geçildiği an ışığın bile kaçamadığı, uzay ve zamanın büküldüğü (zamanın durma noktasına geldiği) o geri dönüşü olmayan son sınır olduğu metinde açıkça belirtilmiştir.'
+  },
+  {
+    title: 'Tuskegee Frengi Deneyi',
+    passage: '1932 yılında ABD Halk Sağlığı Servisi, siyahilere yönelik ölümcül frengi (sifiliz) hastalığının gelişimini gözlemlemek için "Tuskegee Deneyi"ni başlattı. Hastalara sadece "kötü kan" tedavisi gördükleri söylendi. 1940\'larda hastalığın kesin tedavisi olan penisilin bulunmasına rağmen, doktorlar bu ilacı siyahi hastalardan kasten sakladılar. Sırf hastalığın insan bedenini nasıl yavaş yavaş çürüttüğünü izlemek uğruna yüzlerce insanın kör olmasına, delirmesine ve ölmesine seyirci kalındı. 1972\'de basına sızana kadar devam eden bu olay, bilim kisvesi altında ırkçılığın ve ahlaki (etik) çöküşün nasıl kurumsallaşabileceğinin en karanlık tıp skandalıdır.',
+    questionStem: 'Tuskegee Deneyi\'nin tıp tarihinde kara bir leke (skandal) olarak anılmasının temel nedeni nedir?',
+    options: [
+      'Deneyin yapıldığı hastanenin hijyen kurallarına uymaması nedeniyle enfeksiyonların artması',
+      'Penisilinin frengi hastalığını iyileştiremediğinin yanlış bir şekilde kanıtlanmış olması',
+      'Kesin tedavi bulunmasına rağmen, sadece hastalığın seyrini (insan bedeni üzerindeki tahribatını) bilimsel olarak izleyebilmek adına ilacın siyahi hastalardan kasten saklanıp ölüme terk edilmeleri (etik ihlal)',
+      'Hastaların zorla laboratuvar ortamında tutulup aileleriyle görüştürülmemesi'
+    ],
+    correct: 2,
+    explanation: 'Tedavi (penisilin) bulunmasına rağmen sırf hastalığın çürütme evresini izlemek için ilacın hastalardan saklanıp ölümlerine seyirci kalınması (bilimsel deney uğruna etik ihlal) skandalın temelidir.'
+  }
+];
+
+export const bilimParagrafSorulari7: BilimParagrafQuestion[] = Array.from({ length: 50 }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_7[idx % PARAGRAPH_THEMES_7.length];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-bilim7-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
 
 // paragrafTests.ts dosyasının hata vermemesi için iki listeyi birleştirip eski adıyla dışa aktarıyoruz:
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
@@ -1691,5 +1978,6 @@ export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari3,
   ...tarihParagrafSorulari4,
   ...tarihParagrafSorulari5,
-  ...tarihParagrafSorulari6
+  ...tarihParagrafSorulari6,
+  ...tarihParagrafSorulari7
 ];
