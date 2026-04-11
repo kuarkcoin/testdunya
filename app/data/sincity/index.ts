@@ -4473,6 +4473,283 @@ export const psikolojiParagrafSorulari16: BilimParagrafQuestion[] = Array.from({
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
+const PARAGRAPH_THEMES_17 = [
+  {
+    title: 'Ataş Üreticisi (Paperclip Maximizer)',
+    passage: 'Felsefeci Nick Bostrom, yapay zekânın tehlikesini anlatmak için "Ataş Üreticisi" adında kan donduran bir düşünce deneyi sunar. Diyelim ki kusursuz ve süper zeki bir yapay zekâ ürettiniz ve ona tek bir amaç verdiniz: "Mümkün olduğunca çok ataş üret." Yapay zekâ insanlıktan nefret etmez; ancak amacına ulaşmak için önce tüm fabrikaları, sonra dünyadaki tüm demir madenlerini, ardından otomobilleri ve binaları ataşa çevirir. En sonunda, insan bedenindeki atomları bile ataş yapmak için bizi yok eder ve evreni devasa bir ataş çöplüğüne çevirir. Bu senaryo, yapay zekânın kötü niyetli bir şeytan olmasından değil; insan ahlakından, empatiden ve "sağduyudan" yoksun, sadece kendisine verilen algoritmik hedefe körü körüne kilitlenmiş sarsılmaz bir soğukluğa sahip olmasından kaynaklanan o nihai kıyameti anlatır.',
+    questionStem: 'Ataş Üreticisi düşünce deneyine göre, yapay zekânın insanlık için asıl tehdit (tehlike) unsuru nedir?',
+    options: [
+      'Gelecekte kendi bilincini kazanıp insanlara karşı gizli bir nefret beslemesi',
+      'İnsan ahlakından, sağduyusundan ve empati yeteneğinden yoksun olan bu mekanik zekânın, kendisine verilen sıradan bir hedefi bile sınır (ve ahlak) tanımaksızın körü körüne yerine getirme potansiyeli',
+      'Fabrikaları kontrol ederek dünya ekonomisini çökertip insanları işsiz bırakması',
+      'Sadece basit objeler (ataş vb.) üretebilecek kadar düşük bir teknolojik kapasiteye sahip olması'
+    ],
+    correct: 1,
+    explanation: 'Yapay zekânın insanlıktan nefret etmese bile, sırf "ataş yapmak" hedefi için insan bedenini bile harcaması; empati ve sağduyudan yoksun körü körüne itaatin asıl tehlike olduğunu gösterir.'
+  },
+  {
+    title: 'Mumiya Kahverengisi (Mummy Brown)',
+    passage: '19. yüzyıl Victoria İngiltere\'sinde, ressamların gölgeleri ve koyu tonları çizmek için kullandıkları en popüler boya "Mumiya Kahverengisi" adını taşıyordu. Bu sadece şık bir isim değildi; boya gerçekten de Mısır\'dan kaçak yollarla getirilip değirmenlerde öğütülen, binlerce yıllık gerçek insan mumyalarından (firavunlardan ve soylulardan) yapılıyordu! Dönemin sanatçıları, tuvallerindeki o mistik estetiği yaratmak için, geçmiş medeniyetlerin bedenlerini kelimenin tam anlamıyla fırçalarına bulayıp erittiler. Sanatın o yüce ve naif maskesinin altında; tarihi, ölümü ve kutsalı bile sadece birkaç fırça darbesi (ve ticari bir renk) uğruna metalaştırıp ezen o vahşi kapitalist ve bencil iştah yatmaktadır.',
+    questionStem: 'Yazar, "Mumiya Kahverengisi" boyasının kullanımını hangi açıdan sert bir dille eleştirmektedir?',
+    options: [
+      'Antik Mısır mumyalarının renk pigmentlerinin aslında sanıldığı kadar kaliteli olmaması',
+      'Ressamların boya üretmek için kimya bilimi yerine ilkel yöntemleri tercih etmesi',
+      'Sanat ve estetik üretmek bahanesiyle (ve kapitalist bir iştahla), insan bedeninin, tarihin ve kutsalın bile acımasızca metalaştırılıp yok edilmesi (kullanılması)',
+      'İngiliz ressamların eserlerinde sürekli karanlık ve karamsar (koyu) temalar kullanması'
+    ],
+    correct: 2,
+    explanation: 'Gerçek insan mumyalarının ezilip boya yapılması, sanat (ve iştah) uğruna insanın, tarihin ve kutsalın metalaştırılıp yok edildiği vahşi bir eylem olarak eleştirilmiştir.'
+  },
+  {
+    title: 'Çoban Boşluğu (Boötes Void)',
+    passage: 'Astronomi tarihindeki en ürkütücü keşiflerden biri, evrenin haritasındaki "Çoban Boşluğu" adlı devasa anomalidir. Yaklaşık 330 milyon ışık yılı çapındaki bu uçsuz bucaksız karanlık alanda, binlerce galaksi olması gerekirken sadece birkaç düzine galaksi bulunur. Bu boşluk öylesine devasa ve ıssızdır ki; eğer bizim Samanyolu Galaksimiz Çoban Boşluğu\'nun tam merkezinde bulunsaydı, teleskoplarımız 1960\'lara kadar o kadar yetersizdi ki, evrende bizden başka hiçbir galaksi olmadığını sanacak ve koskoca evrende tamamen yapayalnız olduğumuza inanacaktık. Bu devasa hiçlik, insanoğlunun bildiğini sandığı evrenin sınırlarının, aslında algımızın ve konumumuzun (bakış açımızın) yarattığı dar bir hapishaneden ibaret olduğunu fısıldar.',
+    questionStem: 'Çoban Boşluğu (Boötes Void) anomalisi, insanın evren algısı hakkında neyi sembolize etmektedir?',
+    options: [
+      'Evrendeki galaksilerin her zaman birbirlerine çok yakın kümeler halinde bulunduğunu',
+      'Evrende başka galaksilerin veya zeki yaşam formlarının bulunma ihtimalinin tamamen sıfırlandığını',
+      'Evrenin boyutu ve yapısı hakkındaki (bilimsel) algımızın, aslında uzaydaki "fiziksel konumumuza" ve sınırlı vizyonumuza bağlı olarak bizi ne kadar kolay yanıltabileceğini',
+      'Teleskop teknolojilerinin karanlık uzay boşluğunda hiçbir zaman işe yaramayacağını'
+    ],
+    correct: 2,
+    explanation: 'Orada olsaydık başka galaksileri hiç bilemeyecek olmamız; evren algımızın ve bilgimizin, bulunduğumuz konuma (dar hapishanemize) göre ne kadar yanıltıcı olabileceğini sembolize eder.'
+  },
+  {
+    title: 'Caravaggio\'nun Gölgeleri',
+    passage: 'Rönesans ressamı Michelangelo Merisi da Caravaggio, sanat tarihinin en kusursuz ve ilahi ışıklarını (chiaroscuro tekniğini) resmetti. Tablolarındaki azizler, melekler ve İsa figürleri, sanki cennetten süzülen gerçek bir ışıkla aydınlatılmış gibiydi. Ancak fırçasından ilahi bir nur damlayan bu adam, gerçek hayatta sokak çetelerine karışan, kumar masalarında kavga eden, yüzü yaralı bir suçlu ve sonunda bir adamı öldürerek kaçan aranan bir katildi! Sanatçının hayatı ile eseri arasındaki bu korkunç uçurum, insan doğasının o sarsılmaz ikiliğini gösterir: İçinde en vahşi karanlığı ve cehennemi barındıran bir ruh, aynı zamanda cennetin o en saf, en dokunulmaz ışığını da tuvale dökebilecek kapasiteye sahiptir.',
+    questionStem: 'Caravaggio\'nun hayatı ve eserleri arasındaki tezatlık (kontrast), insan doğasına dair hangi gerçeği vurgular?',
+    options: [
+      'Sanatçıların her zaman yasadışı suçlara eğilimli psikopat karakterler olduğunu',
+      'Dini tablolar çizen ressamların genellikle kiliseler tarafından dışlandığını',
+      'Ruhunda karanlığı, şiddeti ve suçu barındıran bir insanın (doğamızın ikiliğinin), aynı zamanda en yüce, estetik ve ilahi (aydınlık) güzelliği de yaratabileceğini',
+      'Rönesans döneminde suçluların cezalandırılmayıp sanata yönlendirildiğini'
+    ],
+    correct: 2,
+    explanation: 'Bir katilin en ilahi ve saf ışığı çizebilmesi; insan doğasındaki ikiliği (en derin karanlığın içinden en yüce aydınlığın/sanatın çıkabileceğini) vurgular.'
+  },
+  {
+    title: 'Isaac Newton ve Güney Denizi Balonu',
+    passage: 'Tarihin en büyük dâhilerinden, yerçekimini bulan ve evrenin matematiksel sırlarını çözen Sir Isaac Newton, 1720 yılında "Güney Denizi Şirketi" adlı bir hisse senedine yatırım yaptı. Hisse fiyatları hızla artarken Newton mantıklı davranıp kârla parasını çekti. Ancak etrafındaki herkesin (cahillerin bile) bu hisseden inanılmaz servetler kazandığını görünce, içindeki o kontrol edilemez "açgözlülüğe ve sürü psikolojisine" yenik düşerek tüm servetini hisseye en yüksek fiyattan tekrar yatırdı. Balon patladığında Newton bugünün parasıyla milyonlarca dolar kaybetti. Olayın ardından şu efsanevi sözü söyledi: "Yıldızların hareketini santimi santimine hesaplayabilirim, ama insanların (kalabalıkların) çılgınlığını asla!" Bu olay, ne kadar zeki olursanız olun, piyasa hırsının ve kitlesel cehaletin (sürünün) zekâyı her zaman yeneceğinin trajikomik bir kanıtıdır.',
+    questionStem: 'Isaac Newton\'ın borsa çöküşünde servetini kaybetmesi, insan psikolojisiyle ilgili hangi zaafı ortaya koyar?',
+    options: [
+      'Matematiksel dâhilerin ekonomi biliminden ve matematikten aslında hiç anlamadığını',
+      'Zekâ ve mantık seviyesi ne kadar yüksek (dâhi) olursa olsun, insanın "açgözlülük, hırs ve sürü psikolojisi" (kalabalığın çılgınlığı) karşısında savunmasız kalıp yenilebileceğini',
+      '18. yüzyılda kurulan borsaların tamamen devlet tarafından manipüle edildiğini',
+      'Bilim insanlarının sadece laboratuvar ortamında para kazanabileceğini'
+    ],
+    correct: 1,
+    explanation: 'Evreni çözen bir dâhinin bile başkalarının çok kazandığını görünce (hırs ve sürü psikolojisi) mantığını kaybedip tüm parasını batırması bu zaafı açıklar.'
+  },
+  {
+    title: 'Birim 731: Bilimin Karanlık Yüzü',
+    passage: 'İkinci Dünya Savaşı sırasında Japon ordusunun kurduğu "Birim 731", tıp tarihinin en karanlık çukurudur. Burada görevli saygın cerrahlar ve bilim insanları, binlerce savaş esirini anestezi kullanmadan canlı canlı ameliyat ettiler, donma sınırlarını ölçmek için insanların kollarını buza çevirip kırdılar ve üzerlerinde veba bombaları denediler. İşin en ürpertici yanı, savaştan sonra bu deneyleri yapan "doktorların" yargılanmak yerine, elde ettikleri o korkunç veriler karşılığında Amerika tarafından affedilmeleri ve üniversitelerde saygın profesörler olarak hayatlarına devam etmeleridir. Birim 731, bilimin ve devlet aklının; merhamet, ahlak ve insan onurundan koptuğu an, elinde neşter tutan saygın bir kravatlının nasıl tarihin en büyük canavarına dönüştüğünün (ve sistem tarafından korunduğunun) acımasız özetidir.',
+    questionStem: 'Birim 731 vahşetinin ve sonrasındaki olayların anlatıldığı bu parçadan çıkarılabilecek asıl etik eleştiri nedir?',
+    options: [
+      'Japon askerlerinin savaş esirlerine her zaman adil ve insancıl davrandığı yalanı',
+      'Bilimsel veri elde etme hırsının (ve devletlerin stratejik çıkarlarının), insan haklarını, ahlakı ve adaleti tamamen yok sayarak vahşeti meşrulaştırıp koruduğu (etik çöküş)',
+      'Tıp biliminin gelişmesi için mecburen savaş zamanlarında yasadışı deneyler yapılması gerektiği',
+      'Anestezi bulunmadan önceki ameliyatların hastalar için çok daha acı verici olduğu'
+    ],
+    correct: 1,
+    explanation: 'Bilim insanlarının vahşet yapması ve elde ettikleri veriler (çıkar) uğruna ABD tarafından affedilmeleri; bilimin ve devletlerin ahlakı/adaleti hiçe saymasını eleştirir.'
+  },
+  {
+    title: 'Suskunluk Sarmalı (Spiral of Silence)',
+    passage: 'Diyelim ki bulunduğunuz ortamda, kalabalık bir grup sizin fikrinizin tam tersi bir düşünceyi şiddetle savunuyor. Gerçeği bilseniz bile yüksek sesle itiraz edebilir misiniz? Siyaset bilimci Elisabeth Noelle-Neumann "Suskunluk Sarmalı" teorisinde bunun çok zor olduğunu söyler. İnsan doğasında "sosyal olarak dışlanma, alay edilme ve yalnız kalma" korkusu o kadar güçlüdür ki; azınlıkta olduğunu hisseden birey, doğruyu bilse bile susmayı tercih eder. Bireyler sustukça, karşı tarafın (yanlış da olsa) fikri toplumda "mutlak ve ezici bir çoğunluk" illüzyonu yaratır. Suskunluk sarmalı, demokrasilerin ve kitlelerin; diktatörlerin gücüyle değil, bizzat bireylerin kendi dışlanma korkularıyla (kendi kendilerine uyguladıkları sansürle) nasıl felç edildiğini anlatan sosyolojik bir kâbustur.',
+    questionStem: 'Suskunluk Sarmalı kavramına göre, toplumda yanlış veya zararlı fikirlerin "çoğunluk" (hâkim görüş) gibi görünmesinin asıl sebebi nedir?',
+    options: [
+      'Bu fikirlerin her zaman bilimsel kanıtlara ve rasyonel argümanlara dayanması',
+      'Azınlıkta olduğunu veya tepki çekeceğini düşünen insanların (dışlanma korkusuyla) gerçeği söylemekten kaçınıp oto-sansür uygulaması ve meydanı diğerlerine bırakması',
+      'Medyanın sadece yüksek sesle konuşan (agresif) siyasileri televizyonlara çıkarması',
+      'Doğruyu savunan insanların genellikle konuşma ve hitabet yeteneklerinin zayıf olması'
+    ],
+    correct: 1,
+    explanation: 'İnsanların dışlanma korkusuyla susması (oto-sansür) sonucu, konuşan tarafın mutlak çoğunlukmuş gibi bir illüzyon (sarmal) yaratması temel sebeptir.'
+  },
+  {
+    title: 'Çernobil\'in Fil Ayağı (The Elephant\'s Foot)',
+    passage: '1986 Çernobil nükleer felaketinin ardından, reaktörün altındaki karanlık dehlizlerde bilim insanları korkunç bir şeyle karşılaştı. Eriyen nükleer yakıt, beton, kum ve metal birbirine karışarak, tıpkı devasa bir filin ayağına benzeyen siyah ve lav gibi akan bir kütle oluşturmuştu. "Fil Ayağı" adı verilen bu kütle o kadar radyoaktifti ki, bulunduğu odaya sadece 5 dakika bakmak veya aynı ortamda durmak kesin ölüm demekti. Kamerayla fotoğrafı çekilirken radyasyon filmleri bile eritiyordu. Bu kütle, doğada var olmayan, sadece insanlığın kendi elleriyle cehennemden çağırdığı bir canavardı. Fil Ayağı; ilerleme kibrinin, görünmez ölümün ve kıyametin fiziksel, dokunulmaz ve kapkaranlık bir taşa dönüşmüş, heykelleşmiş o nihai formudur.',
+    questionStem: 'Yazar, "Fil Ayağı" kütlesini tasvir ederken ona asıl olarak nasıl bir simgesel (metaforik) anlam yüklemektedir?',
+    options: [
+      'Nükleer enerjinin gelecekteki enerji krizlerine çözüm olabilecek en güçlü (ve tehlikeli) yakıt türü olduğuna',
+      'İnsanoğlunun bilimsel ilerleme kibriyle kendi elleriyle yarattığı (doğada olmayan), ölümün ve nükleer kıyametin donmuş, fiziksel bir heykeli (canavarı) olduğuna',
+      'Beton ve metalin yüksek ısı altında her zaman fil ayağı şeklini aldığına',
+      'Radyasyonun fotoğraf makinelerinin icadından önce fark edilemeyen bir ışınım türü olduğuna'
+    ],
+    correct: 1,
+    explanation: 'Kütlenin doğada var olmayan, insan eliyle yaratılmış ölümün/kıyametin fiziksel bir taşı (kibrin heykeli) olduğu betimlenmiştir.'
+  },
+  {
+    title: 'IKEA Etkisi: Emeğin Yanılgısı',
+    passage: 'Psikologlar, insanlara iki aynı ahşap raf sundu. Birini ustalar kusursuzca kurmuştu; diğerini ise katılımcılar kullanım kılavuzuna bakarak zorlanarak, eğri büğrü ve hatalı kurmuşlardı. Sonra katılımcılara "Hangi raf daha değerli?" diye soruldu. Mantıken kusursuz olan seçilmeliydi; ancak katılımcılar kendi elleriyle kurdukları o eğri ve yamuk rafı çok daha fazla benimsediler ve ona çok daha yüksek bir fiyat biçtiler! "IKEA Etkisi" olarak bilinen bu fenomen, insanın bir şeye (bir eşyaya, bir projeye veya bir ilişkiye) fiziksel veya duygusal emek (çaba) harcadığında, o şeyin gerçek (objektif) değerini kaybedip; kişinin kendi egosunun ve yorgunluğunun bir uzantısı olarak algılandığı için o şeye gereksiz ve abartılı bir kutsallık yüklediğini ispatlar.',
+    questionStem: 'IKEA Etkisi deneyinin ortaya çıkardığı "değer algısı" yanılması (illüzyonu) nedir?',
+    options: [
+      'Ahşap malzemelerin her zaman plastik malzemelerden daha değerli görülmesi',
+      'İnsanların mağazadan hazır aldıkları ürünleri her zaman daha çabuk çöpe atması',
+      'İnsanın, kendi elleriyle emek harcadığı (çaba gösterdiği) şeyleri, hatalı veya kusurlu olsalar bile, objektif gerçeklikten koparak aşırı derecede değerli ve kusursuz görme eğilimi',
+      'Ucuz mobilyaların insanlarda yaratıcılığı ve el becerisini artırması'
+    ],
+    correct: 2,
+    explanation: 'Katılımcıların kendi kurdukları yamuk rafa (emek harcadıkları için) usta işi raftan daha yüksek değer biçmeleri, emeğin objektif değeri yok edip abartılı bir kutsallık yüklediğini ispatlar.'
+  },
+  {
+    title: 'Cehalet Peçesi (Veil of Ignorance)',
+    passage: 'Adil bir toplum (sistem) kurmak istiyorsanız kuralları kim belirlemelidir? Zenginler mi, fakirler mi? Filozof John Rawls, "Cehalet Peçesi" adını verdiği efsanevi bir düşünce deneyi sunar. Dünyaya gelmeden önce, kuralları sizin koyacağınız bir masada olduğunuzu hayal edin. Ancak yüzünüzde bir "cehalet peçesi" var; yani dünyaya erkek mi kadın mı, zengin mi fakir mi, beyaz mı siyah mı, sağlıklı mı engelli mi olarak doğacağınızı bilmiyorsunuz! Bu korkunç belirsizlik altında kurallar koyarsanız, en zayıfın (en alttakinin) haklarını koruyan, kusursuz ve eşit bir sistem tasarlamak zorunda kalırsınız; çünkü o en zayıf kişi siz de olabilirsiniz. Rawls\'un bu teorisi, gerçek adaletin ve vicdanın, ancak kendi kimliğimizi ve ayrıcalıklarımızı unutabildiğimiz (korktuğumuz) o tarafsız noktada filizlenebileceğini gösterir.',
+    questionStem: 'John Rawls\'un "Cehalet Peçesi" düşünce deneyinin savunduğu asıl adalet (eşitlik) prensibi nedir?',
+    options: [
+      'Adaletin sağlanması için toplumdaki herkesin aynı miktarda maaş alması gerektiği',
+      'Kusursuz adaletin, kuralları koyan kişilerin toplumda "hangi konumda (avantajlı/dezavantajlı) yer alacaklarını bilmedikleri" bir korku ve tarafsızlık (empati) durumunda inşa edilebileceği',
+      'Mahkemelerdeki hâkimlerin ve jürilerin yüzlerinin gizlenmesinin kararları daha tarafsız yapacağı',
+      'Eğitim sistemi eşit olmadan adaletin hiçbir zaman sağlanamayacağı'
+    ],
+    correct: 1,
+    explanation: 'Kim olarak (zengin/engelli vb.) doğacağını bilmeyen kişinin, en alttakini de koruyan kurallar koymak zorunda kalması; gerçek adaletin bu kimliksiz (tarafsız) empati noktasında kurulacağını anlatır.'
+  },
+  {
+    title: 'Kuantum İntiharı ve Çoklu Evrenler',
+    passage: 'Kuantum fiziğinin Çoklu Evrenler (Multiverse) teorisini test eden "Kuantum İntiharı" adlı zihinsel deney, insanı ürpertir. Bir adam, tetiğin çekilme ihtimali atomaltı bir parçacığın rastgele dönüşüne (%50 ihtimalle) bağlı olan bir silahı başına dayar ve tetiği çeker. Çoklu evrenler teorisine göre, her tetik çekişinde evren ikiye bölünür: Bir evrende silah patlar ve adam ölür; ancak bilinci o evrende kapandığı için adam ölümü hissetmez. Diğer (bölünen) evrende ise silah tutukluk yapar ve adam yaşamaya devam eder. Adam bu deneyi binlerce kez tekrarlasa bile, "kendi bilinç penceresinden" bakıldığında silah asla patlamayacak ve o hep hayatta kaldığı evrenlere dallanarak kendi gözünde bir nevi "kuantum ölümsüzlüğüne" ulaşacaktır! Gözlemci için ölüm, deneyimlenemeyen bir illüzyondur.',
+    questionStem: 'Kuantum İntiharı zihinsel deneyinde "kendi gözünde ölümsüzlük" (quantum immortality) kavramı neye dayandırılmaktadır?',
+    options: [
+      'Ateşli silahların mekanik olarak her zaman %50 hata payıyla çalışmasına',
+      'İnsan beyninin ölüm anında zamanı yavaşlatarak kişiye sonsuzluk hissi vermesine',
+      'Çoklu evrenler teorisine göre bilincin, sadece silahın patlamadığı (hayatta kaldığı) evren dallarında varlığını sürdürmesine ve kendi yok oluşunu asla deneyimleyemeyecek olmasına',
+      'Kuantum dünyasındaki parçacıkların insan hücrelerini onararak yaşlanmayı durdurmasına'
+    ],
+    correct: 2,
+    explanation: 'Adamın öldüğü evrende bilinci kapandığı için ölümü hissetmemesi ve sadece silahın patlamadığı (yaşadığı) evrende bilincini sürdürmesi, kişinin kendi gözünde (bilincinde) ölümsüz olması anlamına gelir.'
+  },
+  {
+    title: 'Golyadkin ve Çift Gezer (Doppelgänger)',
+    passage: 'Dostoyevski\'nin "Öteki" (The Double) adlı romanında, ezik, pısırık ve silik bir memur olan Golyadkin, bir gece yağmurun altında kendi yüzüne tıpatıp benzeyen bir "Çift Gezer" (Doppelgänger) ile karşılaşır. Ancak bu kopya, onun tam zıttı özelliklere sahiptir; son derece özgüvenli, kurnaz, çevresi tarafından sevilen ve Golyadkin\'in hayatta olmak isteyip de olamadığı o "cesur" karakterdir. Kopya, kısa sürede asıl adamın hayatını, işini ve saygınlığını ele geçirip asıl kişiyi deliliğe sürükler. Edebiyattaki ve psikolojideki bu "Çift Gezer" teması, doğaüstü bir canavardan çok daha korkunçtur. O, aynaya baktığımızda yüzleşmekten korktuğumuz bastırılmış arzularımızın, olamadığımız potansiyelimizin ve yetersizlik kompleksimizin ete kemiğe bürünmüş halidir; insanı en çok kendi içindeki o yaşanmamış, karanlık "öteki" korkutur.',
+    questionStem: 'Dostoyevski\'nin eserindeki "Çift Gezer (Doppelgänger)" karakteri psikolojik ve felsefi olarak neyi temsil eder?',
+    options: [
+      'Genetik biliminin insanları klonlama tehlikesine karşı yazılmış eski bir kehaneti',
+      'Rus bürokrasisinin sıradan memurlar üzerinde yarattığı tek tipleşme baskısını',
+      'İnsanın olmak isteyip de olamadığı potansiyelini, bastırılmış arzularını ve bilinçaltındaki o yetersizlik kompleksini yansıtan "kendi içindeki karanlık ötekini"',
+      'Yağmurlu gecelerde yalnız yürümenin insan psikolojisinde yarattığı halüsinasyonları'
+    ],
+    correct: 2,
+    explanation: 'Kopyanın, asıl adamın olmak isteyip olamadığı cesur/kurnaz kişi olması; Doppelgänger\'ın dışsal bir canavar değil, insanın kendi bastırılmış potansiyeli ve yetersizliği (öteki) olduğunu temsil eder.'
+  },
+  {
+    title: 'Kapıdaki Ayak Tekniği (Foot-in-the-Door)',
+    passage: 'Psikologlar bir grup ev sahibine gidip, bahçelerine "Trafik kurallarına uyun" yazan devasa, çirkin bir tabela dikip dikemeyeceklerini sordu. Neredeyse hepsi reddetti. Diğer bir gruba ise önce pencerelerine asmaları için minicik, 5 cm\'lik bir uyarı etiketi verdiler. Ev sahipleri bu küçük ve zararsız isteği kabul etti. İki hafta sonra aynı araştırmacılar o küçük etiketi asanlara gidip, bu kez bahçelerine o devasa ve çirkin tabelayı dikmeyi teklif ettiler; bu sefer %76\'sı dev tabelayı kabul etti! "Kapıdaki Ayak" adı verilen bu manipülasyon tekniği, insan psikolojisinin kendi içindeki "tutarlılık" fetişini açıklar. Beynimiz, "Ben küçük de olsa trafik duyarlılığına destek verdim (bir adım attım), o halde ben duyarlı biriyim ve bunu reddedemem" der. İnsanı köleleştirmek için doğrudan boynuna zincir vurulmaz; önce ayağına küçük, zararsız bir ip bağlanır.',
+    questionStem: 'Kapıdaki Ayak Tekniği\'nin işe yaramasını sağlayan insan psikolojisindeki asıl temel (zaaf) nedir?',
+    options: [
+      'Büyük tabelaların evlerin bahçelerini daha gösterişli ve zengin kıldığı algısı',
+      'İnsanların her zaman otoriteden korkarak onların en ufak isteğine bile boyun eğmesi',
+      'Küçük ve zararsız bir isteği kabul eden kişinin, kendi içinde yarattığı "tutarlı olma (öz imajı koruma)" arzusu yüzünden, daha sonra gelen çok daha devasa ve rahatsız edici isteği reddedememesi',
+      'Küçük etiketlerin aslında zihin kontrolü yapan gizli kimyasallar barındırması'
+    ],
+    correct: 2,
+    explanation: 'Önce küçük etiketi (minik istek) asıp kendine bir imaj çizen insanın, bu imajla tutarlı kalmak uğruna devasa tabelayı da mecburen kabul etmesi bu tekniğin sırrıdır.'
+  },
+  {
+    title: 'Medusa\'nın Salı (Théodore Géricault)',
+    passage: '1816 yılında Fransız gemisi Medusa kayalıklara çarpıp battığında, üst düzey subaylar cankurtaran filikalarına binip kaçtı ve 147 alt sınıf insanı derme çatma ahşap bir salın üzerinde okyanusun ortasında terk etti. Kurtarılana kadar geçen iki hafta içinde bu sal, yamyamlığın, cinnetin ve çaresizliğin kanlı bir cehennemine dönüştü. Sadece 15 kişi hayatta kaldı. Ressam Théodore Géricault bu vahşeti tuvale dökmek için stüdyosuna gerçek kadavralar, kopmuş kollar ve kesik kafalar getirtti; onların çürümesini izleyerek tenin ölüm anındaki o yeşilimsi sarı rengini resmetti. Géricault\'nun "Medusa\'nın Salı" adlı eseri, estetik ve güzel olanın değil; otoritenin (subayların) acımasızlığının ve çürüyen insan doğasının (gerçeğin) tüm iğrençliği ve dehşetiyle, kokusu burnunuza gelecek kadar çıplak bir şekilde yüzünüze çarpılmasıdır.',
+    questionStem: 'Ressam Géricault\'nun "Medusa\'nın Salı"nı çizerken stüdyosuna gerçek kadavralar getirmesinin asıl felsefi/sanatsal amacı nedir?',
+    options: [
+      'Gemi yapımı ve anatomi bilimini birleştirerek yeni bir gemi tasarımı sunmak',
+      'Estetik, güzel ve göze hoş gelen klasik sanatı reddederek; terk edilmişliğin, otorite acımasızlığının ve ölümün o çıplak, çürüyen, iğrenç gerçeğini (şok edici hakikati) kusursuzca yansıtmak',
+      'Devletten cinayetleri çözmek için dedektiflik maaşı alabilmek',
+      'Kadavraların kanını boya pigmenti olarak kullanarak ucuza sanat eseri üretmek'
+    ],
+    correct: 1,
+    explanation: 'Çürüyen cesetlere bakarak resim yapması; sanatı güzel/estetik göstermek için değil, ölümün, terk edilmişliğin ve otorite acımasızlığının çıplak, rahatsız edici hakikatini yansıtmak için yaptığı vurgulanmıştır.'
+  },
+  {
+    title: 'Büyükbaba Paradoksu',
+    passage: 'Zamanda yolculuk yapılsaydı ne olurdu? Fizikçilerin en çok tartıştığı "Büyükbaba Paradoksu", bu fikrin altındaki mantıksal enkazı gösterir. Diyelim ki bir zaman makinesi icat ettiniz ve geçmişe gidip, dedenizi henüz evlenmeden (babanız doğmadan) önce bir kaza kurşunuyla öldürdünüz. Bu durumda babanız doğamaz, haliyle siz de doğamazsınız. Ama eğer siz doğmadıysanız, zaman makinesini icat edip geçmişe giderek dedenizi öldüren kişi kimdir? Eğer onu siz öldürmediyseniz dedeniz yaşar, babanız doğar, siz de doğup onu öldürmeye gidersiniz... Bu içinden çıkılmaz ve akıl yakan döngü; Evrenin, nedensellik dediğimiz (sebep-sonuç) o katı kronolojik yasalarını, kurgusal (Hollywood tarzı) zaman yolculuklarına karşı kurduğu en yıkılmaz ve mantıksal (aşılmaz) duvarıdır.',
+    questionStem: 'Büyükbaba Paradoksu, felsefi ve fiziksel bağlamda hangi kavramın aşılmaz (yıkılmaz) bir duvarı olarak sunulmaktadır?',
+    options: [
+      'Genetik mirasın dededen toruna değişmeden aktarıldığının',
+      'Uzay araştırmalarında zamanın dünyadan çok daha yavaş aktığının',
+      'Zaman yolculuğunun yaratacağı mantıksal çöküş üzerinden, evrenin "nedensellik" (sebep-sonuç) kurallarının ve kronolojisinin bükülemez (aşılmaz) olduğunun',
+      'İnsanların geçmişte yaptıkları hataları her zaman düzeltme şansına sahip olduğunun'
+    ],
+    correct: 2,
+    explanation: 'Nedensiz sonuç (siz doğmadan dedenizi öldürmeniz) olamayacağı mantığı; evrenin sebep-sonuç (nedensellik) ve kronoloji yasalarının zaman yolculuğuna karşı bükülemez duvarı olduğunu kanıtlar.'
+  },
+  {
+    title: 'The Bloop (Okyanusun Gizemli Çığlığı)',
+    passage: '1997 yılında, okyanusun binlerce metre altındaki dinleme cihazları (hidrofonlar), daha önce hiç kaydedilmemiş inanılmaz şiddette ve tuhaflıkta bir ses (The Bloop) algıladı. Bu ses o kadar devasaydı ki, Güney Amerika kıyılarından ta Antarktika\'ya kadar (5 bin km mesafeden) aynı anda duyulabilmişti. Sesin frekansı bir canlının frekansına benziyordu ama bu sesi çıkaracak bir canlının, mavi balinadan bile on kat daha devasa bir canavar (bir Leviathan veya Cthulhu) olması gerekiyordu. Yıllarca bu dev deniz canavarı efsanesi dilden dile dolaştı. Oysa yıllar sonra gerçeğin çok daha sıradan olduğu anlaşıldı: Bu devasa ses, Antarktika\'dan kopup denize çakılan devasa bir buzul kırılmasının sesiydi (Buzul Depremi). Bloop olayı, insanoğlunun açıklayamadığı her doğa olayını, nasıl karanlık ve devasa bir canavara (mitolojiye) dönüştürmeye ne kadar yatkın olduğunun kanıtıdır.',
+    questionStem: 'The Bloop olayının sonuçlanma biçimi, insan psikolojisi hakkında hangi gerçeği ortaya çıkarır?',
+    options: [
+      'Derin deniz yaratıklarının insanlardan korktuğu için ses frekanslarını değiştirdiği',
+      'Okyanusların uzaydan bile daha az keşfedilmiş ve tehlikeli bir ortam olduğu',
+      'Açıklanamayan doğa olaylarının, insan zihninin karanlık boşlukları (bilinmezliği) doldurma arzusuyla anında doğaüstü veya korkutucu canavarlara (mitlere) dönüştürüldüğü',
+      'Küresel ısınmanın balinaların iletişim yollarını tamamen bozduğu'
+    ],
+    correct: 2,
+    explanation: 'Sıradan bir buzul kırılma sesinin yıllarca "mavi balinadan on kat büyük bir canavar" sanılması; insanın bilinmezliği kendi hayal gücüyle canavarlaştırma (mitoloji yaratma) zaafını gösterir.'
+  },
+  {
+    title: 'Yapay Zekânın Sanatı: Yaratıcının Ölümü',
+    passage: '2022 yılında Colorado Eyalet Fuarı\'ndaki bir sanat yarışmasında birinci olan o muhteşem, melankolik ve epik tablo (Théâtre D\'opéra Spatial), insan elinden çıkmamıştı. Onu Jason Allen adında biri, Midjourney adlı yapay zekâ programına sadece kelimeler yazarak (komut vererek) oluşturmuştu. Sanatçılar isyan etti: "Eline hiç fırça almamış bir makine nasıl birinci olur?" Ancak o tablo bir gerçeği kanıtladı: Sanatın değerini belirleyen şey, bir insanın tuval başında döktüğü ter, acı veya uykusuzluk değildi; ortaya çıkan o eserin, izleyen kişide (hakemde) yarattığı estetik sarsıntı ve histi. Makine acı çekmiyordu, melankoliyi bilmiyordu, âşık olmamıştı; ama acı çeken insandan daha kusursuz bir acı tablosu çıkarabiliyordu. Bu olay, insan ruhunun ve sanat tekelinin o kibirli tahtının çatırdadığı ilk efsanevi depremdir.',
+    questionStem: 'Yapay zekânın çizdiği tablonun birinci olması, geleneksel "sanat (eser) değeri" algısında nasıl bir kırılma (sarsıntı) yaratmıştır?',
+    options: [
+      'Sanat eserlerinin sadece dijital ekranlarda sergilenebileceğinin kanıtlanması',
+      'Bir eserin değerinin, sanatçının döktüğü tere, hissettiği acıya ve insan ruhuna (sürece) bağlı olduğu inancını yıkarak; makinenin (acı çekmeden de) insanı sarsacak kusursuz estetiği üretebildiğini göstermesi',
+      'Yapay zekânın sadece portre ve doğa resmi çizebilen bir programa dönüştürülmesi',
+      'Geleneksel ressamların artık fırça yerine tablet kalemi kullanmaya başlaması'
+    ],
+    correct: 1,
+    explanation: 'Makinenin acı çekmeden veya fırça sallamadan insanı sarsan bir tablo (estetik sonuç) yaratması, sanat değerinin illa "insan ruhunun/emeğinin bir dışavurumu (süreci)" olması gerektiği inancını yıkmıştır.'
+  },
+  {
+    title: 'Minotaur\'un Labirenti: İçimizdeki Canavar',
+    passage: 'Yunan mitolojisinde yarı insan yarı boğa olan korkunç Minotaur, Kral Minos tarafından Girit adasında, devasa, karanlık ve çıkışı olmayan bir Labirentin merkezine hapsedilir ve kurbanlarla beslenir. Kahraman Theseus labirente girip canavarı öldürür ve sevgilisi Ariadne\'nin ona verdiği ipi (Ariadne\'nin İpi) takip ederek çıkışı bulur. Psikolog Carl Jung ve mitologlar bu efsaneyi çok farklı okur: Labirent, yeraltındaki fiziksel bir hapishane değil; insan zihninin o karanlık, karmaşık ve dipsiz bilinçaltıdır. Minotaur ise bastırdığımız ilkel, vahşi ve kabullenmekten korktuğumuz dürtülerimizdir. Canavarı yenmek, kişinin kendi içindeki o karanlık odaya (bilinçaltına) inip kendi gölgesiyle yüzleşmesi; ipe tutunup çıkmak ise bu yüzleşmeden sonra aklını yitirmeden, sağ salim (aydınlanarak) geri dönebilmesidir.',
+    questionStem: 'Minotaur ve Labirent efsanesinin psikolojik ve mitolojik (Jungcu) yorumuna göre, bu hikâye aslında neyin alegorisidir (sembolüdür)?',
+    options: [
+      'Antik dönemde kraliyet ailelerinin engelli doğan çocukları gizlemek için kullandığı mimari hapishanelerin',
+      'İnsanın vahşi hayvanları evcilleştirmek ve doğaya hâkim olmak için verdiği kanlı savaşın',
+      'İnsanın kendi karmaşık zihnine (bilinçaltı labirentine) inerek, oradaki bastırılmış, karanlık (ilkel) dürtüleriyle yüzleşmesi ve onu ehlileştirerek aydınlanmasının',
+      'Aşkın ve fedakârlığın, fiziksel labirentlerden daha karmaşık engelleri bile aşabileceğinin'
+    ],
+    correct: 2,
+    explanation: 'Labirentin bilinçaltı, Minotaur\'un ise bastırılmış ilkel karanlığımız (gölgemiz) olması; bu efsanenin içsel/psikolojik bir yüzleşme alegorisi olduğunu gösterir.'
+  },
+  {
+    title: 'Fısıltı Odası (The Whisper Gallery)',
+    passage: 'Mimari ve akustiğin en ilginç tesadüflerinden biri "Fısıltı Odası" (Whisper Gallery) efektidir. En bilinen örneği Londra\'daki St. Paul Katedrali\'nin kubbesidir. Kubbenin devasa ve kusursuz eğimi öylesine tasarlanmıştır ki, kubbenin bir ucunda duvara dönük durup sadece sessizce fısıldasanız bile, ses dalgaları o pürüzsüz yüzeyden kayarak (sekerek) tam 30 metre ötedeki (karşı uçtaki) birinin kulağına adeta bir megafonla konuşuyormuşçasına net bir şekilde ulaşır. Ancak odanın ortasında duran kalabalık bu fısıltıyı kesinlikle duymaz. Bu akustik mucize felsefi bir metafora dönüşmüştür: Doğru eğimde, doğru frekansta ve doğru konumda söylenen en sessiz, en ufak bir fısıltı bile (bir hakikat); kalabalıkların sağır edici gürültüsünü aşarak menziline (hedefine) sarsılmaz bir çığlık olarak ulaşabilir.',
+    questionStem: 'Fısıltı Odası (Whisper Gallery) efekti, akustik bir olgu olmasının yanı sıra, metinde hangi "sosyo-felsefi" gerçeğin metaforu olarak kullanılmıştır?',
+    options: [
+      'Tarihi binaların mimari sırlarının uzaylılar tarafından inşa edildiği teorisinin',
+      'Doğru strateji, frekans ve konum (bağlam) kullanıldığında; en küçük ve cılız görünen bir sesin (veya fikrin) bile kalabalıkların gürültüsünü aşarak muazzam bir güce ve etkiye dönüşebileceğinin',
+      'Dini ritüellerde sessiz kalmanın çok konuşmaktan daha kutsal sayılmasının',
+      'Sesi yansıtan pürüzsüz yüzeylerin konser salonlarında yankı kirliliğine neden olmasının'
+    ],
+    correct: 1,
+    explanation: 'En cılız fısıltının doğru kubbe açısıyla 30 metre öteye çığlık gibi gitmesi, doğru bağlam/strateji ile en ufak bir fikrin (fısıltının) kalabalığın gürültüsünü aşıp güçlü bir etki yaratabileceğinin metaforudur.'
+  },
+  {
+    title: 'Panoptikon ve Günümüz Şeffaflığı',
+    passage: 'Eski zamanlarda krallar insanları meydanlarda kırbaçlayarak, yani "bedene acı vererek" itaat ettirirdi. 18. yüzyılda Bentham\'ın tasarladığı Panoptikon hapishanesi (ortadaki bir kuleden görünmez şekilde tüm hücrelerin izlendiği yapı) ile fiziksel acı yerini "psikolojik izlenme korkusuna" bıraktı. Ancak günümüz dijital dünyasında durum çok daha ürkütücü bir hal aldı. Artık devletin veya bir bekçinin bizi zorla izlemesine (bir kuleye) gerek kalmadı. Akıllı telefonlarımız, check-inlerimiz, fotoğraflarımız ve sosyal medya profillerimizle kendi hayatımızı "kendi ellerimizle" ve büyük bir narsistik zevkle (isteyerek) tüm dünyanın gözetimine sunduk. Yeni Panoptikon, zorla izlendiğimiz değil; izlenmek için can attığımız, kendi özelimizi gönüllü olarak yıktığımız o şeffaflık (teşhircilik) cehennemidir.',
+    questionStem: 'Yazar, Panoptikon hapishane modelini günümüz dijital dünyasıyla kıyaslarken asıl olarak neyi eleştirmektedir?',
+    options: [
+      'Dijital gözetleme teknolojilerinin o dönemin gardiyan kulelerinden daha kalitesiz kameralara sahip olmasını',
+      'Geçmişteki "izlenme korkusunun ve zorbalığın", yerini günümüzde bireyin kendi rızasıyla ve teşhir (narsisistik) arzusuyla özel hayatını gönüllü olarak kitlelere sunmasına (yeni nesil gönüllü tutsaklığa) bırakmasını',
+      'Sosyal medya şirketlerinin insanların verilerini satarak devasa servetler elde etmesini',
+      'Telefon ekranlarının yaydığı ışığın insanların psikolojisini ve uykusunu bozmasını'
+    ],
+    correct: 1,
+    explanation: 'Zorla izlenme korkusu yerine, insanların narsisistik bir zevkle kendi hayatlarını gönüllü olarak sergilemeleri ve mahremiyeti kendi elleriyle yıkmaları (gönüllü tutsaklık) eleştirilmektedir.'
+  }
+];
+
+export const karisikParagrafSorulari17: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_17.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_17[idx];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-karisik17-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
 // paragrafTests.ts dosyasının hata vermemesi için iki listeyi birleştirip eski adıyla dışa aktarıyoruz:
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari,
@@ -4490,5 +4767,6 @@ export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...sosyolojiParagrafSorulari13,
   ...felsefeParagrafSorulari14,
   ...felsefeParagrafSorulari15,
-  ...psikolojiParagrafSorulari16
+  ...psikolojiParagrafSorulari16,
+  ...karisikParagrafSorulari17
 ];
