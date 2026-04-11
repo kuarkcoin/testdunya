@@ -2257,6 +2257,283 @@ export const felsefeParagrafSorulari8: BilimParagrafQuestion[] = Array.from({ le
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
+const PARAGRAPH_THEMES_9 = [
+  {
+    title: 'Rosenhan Deneyi: Tımarhanedeki Sağlamlar',
+    passage: '1973 yılında psikolog David Rosenhan, psikiyatri hastanelerinin "deli" ile "akıllı"yı gerçekten ayırt edip edemeyeceğini test etmek için korkunç bir oyun oynadı. Kendisi dâhil sekiz tamamen sağlıklı insanı, sadece "sesler duyuyorum" yalanıyla farklı hastanelere yatırdı. İçeri girdikleri andan itibaren tamamen normal davrandılar. Ancak doktorlar ve hemşireler onların normal olduğunu asla fark etmedi; not tutmalarını bile "yazma kompülsiyonu" (psikolojik bir kriz) olarak fişlediler. İşin ürpertici yanı, sahte hastaların sağlıklı olduğunu doktorlar değil, içerideki gerçek şizofreni hastaları anladı. Rosenhan deneyi, bir insana "deli" etiketini (damgasını) yapıştırdığınızda, onun en normal davranışlarının bile o etiketin karanlık filtresinden geçerek nasıl bir hastalığa yorulduğunu acımasızca yüzümüze çarpar.',
+    questionStem: 'Rosenhan Deneyi\'nin psikiyatri dünyasında yarattığı asıl sarsıntı aşağıdakilerden hangisidir?',
+    options: [
+      'Şizofreni hastalarının diğer insanlardan çok daha zeki ve gözlemci olduğunun kanıtlanması',
+      'Bir kez yapıştırılan "hastalık" veya "delilik" etiketinin (önyargının), otoritenin o kişiyle ilgili tüm objektif algısını kör etmesi',
+      'Akıl hastanelerindeki doktorların bilerek ve isteyerek sağlıklı insanları esir tutması',
+      'Sesler duymanın aslında psikolojik bir hastalık değil, fizyolojik bir sorun olduğunun anlaşılması'
+    ],
+    correct: 1,
+    explanation: 'Doktorların, etiketlenen kişilerin en normal hareketlerini bile hastalık sanması, bir etiketin otoritenin objektif algısını (gerçekliği) nasıl kör ettiğini ispatlar.'
+  },
+  {
+    title: 'Harlow\'un Maymunları',
+    passage: '1950\'lerde psikolog Harry Harlow, sevginin sadece "karın doyurmaktan" ibaret olup olmadığını anlamak için yavru maymunları annelerinden ayırdı. Onları iki cansız maket annenin olduğu bir kafese koydu: Biri göğsünde süt biberonu olan soğuk tellerden yapılmış bir anne, diğeri ise süt vermeyen ama yumuşacık havluya sarılmış sıcak bir anneydi. Bilim dünyası, yavruların süt veren tel anneye bağlanacağını sanıyordu. Ancak yavrular sadece acıktıklarında tel anneye gidip süt içiyor, günün geri kalan 22 saatini o süt vermeyen yumuşak havlu anneye sıkıca sarılarak geçiriyorlardı. Harlow bu acımasız deneyle, sevginin ve bağlanmanın sadece biyolojik bir beslenme takası olmadığını; şefkatin, dokunmanın ve sıcaklığın en az yemek kadar hayati bir ihtiyaç olduğunu kanıtladı.',
+    questionStem: 'Harlow\'un Maymun Deneyi, anne-bebek bağı (sevgi) konusunda hangi geleneksel inanışı çürütmüştür?',
+    options: [
+      'Bağlanmanın ve sevginin temelinde sadece beslenme (süt) ve fiziksel ihtiyaçların karşılanmasının yattığı inancını',
+      'Yavru maymunların maketlerle asla duygusal bağ kuramayacağı düşüncesini',
+      'Anne sütünün yavruların zihinsel gelişimi için tek şart olduğu tezini',
+      'Korku anında hayvanların her zaman en çok yiyecek veren kişiye koştuğu inancını'
+    ],
+    correct: 0,
+    explanation: 'Süt vermemesine rağmen yumuşak anneye sarılmaları, sevginin sadece "karın doyurma/beslenme" takası olduğu yönündeki o dönemin geleneksel biyolojik inancını çürütmüştür.'
+  },
+  {
+    title: 'Küçük Albert Deneyi',
+    passage: '1920 yılında psikolog John B. Watson, dokuz aylık "Küçük Albert" adlı bir bebeği laboratuvarına getirdi. Bebek beyaz bir fareden hiç korkmuyor, onunla oyun oynuyordu. Ancak Watson, Albert fareye her dokunduğunda arkadan devasa bir demir çubuğa çekiçle vurarak korkunç bir ses çıkardı. Bebek günlerce bu sesten dehşete düştü. Sonunda ortada hiçbir ses olmasa bile, beyaz fareyi gördüğü an histerik bir şekilde ağlamaya başladı. Hatta korkusu beyaz tavşanlara ve beyaz sakallı maskelere bile sıçradı. Bilim tarihinin en ahlaksız deneylerinden biri olan Küçük Albert, fobilerimizin ve korkularımızın doğuştan gelmediğini; dış dünya tarafından zihnimize zorla kodlanan (öğrenilmiş) psikolojik birer virüs olduğunu kanıtlamıştır.',
+    questionStem: 'Küçük Albert Deneyi, insan psikolojisindeki fobilerle ilgili neyi ispatlamaktadır?',
+    options: [
+      'Bebeklerin hayvanlara karşı doğuştan gelen gizli bir nefrete sahip olduğunu',
+      'Yüksek sesin bebeklerin işitme duyusuna kalıcı zararlar verdiğini',
+      'Korku ve fobilerin genetik (doğuştan) değil, çevresel faktörler ve travmatik eşleştirmelerle sonradan inşa edilen (öğrenilen) tepkiler olduğunu',
+      'Beyaz rengin insan psikolojisinde her zaman korkuyu tetikleyen evrimsel bir şifre olduğunu'
+    ],
+    correct: 2,
+    explanation: 'Albert\'in baştan korkmadığı fareye, yüksek sesle eşleştirildikten sonra korkmaya başlaması, fobilerin doğuştan gelmediğini, çevresel olarak öğrenildiğini kanıtlar.'
+  },
+  {
+    title: 'İyi Samiriyeli Deneyi ve Zaman',
+    passage: '1973\'te psikologlar, ilahiyat fakültesi öğrencileriyle ahlak üzerine bir deney yaptı. Öğrencilerden, İncil\'deki yardımlaşmayı anlatan "İyi Samiriyeli" hikâyesi üzerine bir konuşma yapmak için yan binaya gitmeleri istendi. Yolun ortasında acı içinde inleyen, hasta bir aktör yerleştirildi. Öğrencilerin bazılarına "Geç kaldınız, acele edin", bazılarına ise "Vaktiniz bol, yavaş gidebilirsiniz" dendi. Sonuç sarsıcıydı: İyilik üzerine vaaz vermeye giden ve "geç kaldığı" söylenen öğrencilerin %90\'ı yerdeki adamın üstünden atlayıp onu görmezden geldi! Vakti olanların ise çoğu yardım etti. Bu deney, insanoğlunun ahlaki değerlerinin ve vicdanının ne kadar yüce olursa olsun, "zaman baskısı" ve aciliyet karşısında nasıl saniyeler içinde buharlaşıp çöktüğünün acı bir göstergesidir.',
+    questionStem: 'İyi Samiriyeli Deneyi\'nin sonuçlarına göre, insanın ahlaki bir eylemde (yardım etmede) bulunmasını engelleyen asıl dış faktör nedir?',
+    options: [
+      'Kişinin aldığı dini veya ahlaki eğitimin yetersiz olması',
+      'Toplumsal statüsünü kaybetme korkusu yaşaması',
+      'İçinde bulunduğu durumsal aciliyetin (zaman baskısının), sahip olduğu ahlaki değerleri askıya almasına neden olması',
+      'Yerde yatan kişinin tehlikeli bir suçlu olabileceğine dair duyulan paranoya'
+    ],
+    correct: 2,
+    explanation: 'İyilik vaazı vermeye giden öğrencilerin sırf "geç kaldıkları" için adamı ezip geçmesi, ahlaki değerlerin zaman baskısı ve aciliyet karşısında çöktüğünü gösterir.'
+  },
+  {
+    title: 'Görünmez Goril Deneyi',
+    passage: 'Psikologlar Christopher Chabris ve Daniel Simons, insan algısının körlüğünü kanıtlamak için basit bir video hazırladı. İnsanlardan, ekrandaki beyaz tişörtlü oyuncuların kendi aralarında kaç kez paslaştığını saymaları istendi. Görev bittiğinde katılımcılara şu soruldu: "Peki, videonun ortasında sahneye girip göğsünü yumruklayan devasa gorili gördünüz mü?" Katılımcıların yarısı şok içindeydi; ortada bir goril olmadığına yemin ettiler. Videoyu tekrar izlediklerinde ise gözlerine inanamadılar. "Dikkat Körlüğü" denen bu fenomen, gözlerimizin bir kamera gibi etrafı kaydetmediğini; zihnimizin sadece odaklandığı şeye inanıp, geri kalan devasa gerçekliği tamamen sildiğini (körü körüne yoksaydığını) ispatlar.',
+    questionStem: 'Görünmez Goril Deneyi, insan algısı hakkında hangi rahatsız edici gerçeği ortaya koymaktadır?',
+    options: [
+      'Göz hastalıklarının sanıldığından çok daha yaygın ve sinsi bir şekilde ilerlediğini',
+      'İnsan zihninin aynı anda iki farklı matematiksel işlemi (pas saymayı) yapamayacak kadar kapasitesiz olduğunu',
+      'Belirli bir göreve aşırı odaklanıldığında, gözümüzün önünde duran çok belirgin ve büyük gerçeklikleri bile tamamen körleşerek kaçırabileceğimizi',
+      'Siyah ve koyu renklerin insan beyni tarafından beyaz renklere göre daha zor algılandığını'
+    ],
+    correct: 2,
+    explanation: 'Pas saymaya odaklanan insanların kocaman bir gorili görmemesi, yoğun odaklanma anlarında (dikkat körlüğü) apaçık gerçekleri bile kaçırabildiğimizi ispatlar.'
+  },
+  {
+    title: 'Bilişsel Çelişki: 1 Doların Yalanı',
+    passage: 'Psikolog Leon Festinger, 1959\'da katılımcılara saatlerce tahta mandalları çevirdikleri inanılmaz sıkıcı bir görev verdi. Görev bittiğinde, katılımcıların bir kısmına dışarıdaki bekleyen kişiye "Bu görev çok eğlenceliydi" yalanını söylemeleri için 1 dolar, diğerlerine ise 20 dolar ödendi. Sonrasında onlara görevi gerçekten sevip sevmedikleri soruldu. 20 dolar alanlar görevin çok sıkıcı olduğunu itiraf etti; çünkü yalan söylemek için "20 dolar aldım" gibi mantıklı bir bahaneleri vardı. Ancak sadece 1 dolar alanlar, bu kadar ucuz bir paraya yalan söylemiş olmanın verdiği "Bilişsel Çelişki" (içsel huzursuzluk) yüzünden kendi kendilerini kandırdılar ve "Aslında görev fena değildi, eğlendim" demeye başladılar. İnsanoğlu, kendi ikiyüzlülüğüyle yüzleşmemek için, inançlarını davranışlarına uyduracak şekilde gerçekliği yeniden yazar.',
+    questionStem: 'Bilişsel Çelişki (Cognitive Dissonance) deneyine göre, 1 dolar alanların görevi "eğlenceli" bulmasının asıl psikolojik nedeni nedir?',
+    options: [
+      'Küçük bir ödüle yalan söylemiş olma duygusunun (çelişkinin) yarattığı rahatsızlığı gidermek için kendi kendilerini kandırıp inançlarını değiştirmeleri',
+      '1 doların o dönemin şartlarında 20 dolardan çok daha değerli bir para birimi olması',
+      'Tahta mandalları çevirmenin zamanla meditatif ve dinlendirici bir etki yaratması',
+      'Az para aldıkları için araştırmacılara acıyıp onları mutlu etmeye çalışmaları'
+    ],
+    correct: 0,
+    explanation: '1 doların yetersiz bir bahane olması sebebiyle yaşanan içsel çelişkiyi/rahatsızlığı gidermek için gerçeği büküp "aslında eğlendim" diyerek kendilerini kandırmalarıdır.'
+  },
+  {
+    title: 'Hırsızlar Mağarası Deneyi',
+    passage: '1954 yılında Muzafer Sherif, tamamen normal 22 erkek çocuğunu bir yaz kampına götürdü ve onları birbirinden habersiz iki gruba ayırdı (Kartallar ve Çıngıraklı Yılanlar). Gruplar birbirini keşfettiğinde, araştırmacılar aralarında ödüllü yarışmalar düzenleyerek rekabeti körükledi. Sadece birkaç gün içinde bu masum çocuklar birbirlerinin bayraklarını yakan, birbirine bıçak çeken vahşi düşmanlara dönüştüler. Ancak Sherif, bu nefreti bitirmek için psikolojik bir hamle yaptı: Kampa gelen su borusunu bozdu. Susuz kalan iki düşman grup, hayatta kalmak için o boruyu omuz omuza verip onarmak zorunda kaldı. Su aktığında, düşmanlık bitmişti. Önyargı ve nefret çok kolay inşa edilir; ancak bunu yok etmenin tek yolu, her iki tarafı da tehdit eden daha büyük bir "ortak hedef" yaratmaktır.',
+    questionStem: 'Hırsızlar Mağarası Deneyi\'ne göre, toplumsal gruplar arasındaki köklü düşmanlıkların (çatışmaların) çözülmesindeki en etkili yöntem nedir?',
+    options: [
+      'Gruplar arasında düzenli olarak kültürel ve sanatsal yarışmalar düzenlemek',
+      'Liderleri bir araya getirerek barış antlaşmaları imzalatmaya zorlamak',
+      'Her iki grubun da tek başına çözemeyeceği, birleşmek zorunda oldukları üst düzey ve hayati bir "ortak hedef" (veya tehlike) yaratmak',
+      'Grupları birbirinden tamamen izole ederek birbirlerini görmelerini engellemek'
+    ],
+    correct: 2,
+    explanation: 'Düşman olan çocukların su borusunu tamir etmek için birleşip barışması, çatışmaların ancak herkesi ilgilendiren üst düzey bir ortak hedefle (su krizi) aşılabileceğini gösterir.'
+  },
+  {
+    title: 'Sahte Anı Sendromu',
+    passage: 'Hafızamızın, geçmişi tıpkı bir kamera gibi eksiksiz kaydettiğini sanırız. Oysa psikolog Elizabeth Loftus bunun devasa bir yanılsama olduğunu kanıtladı. Loftus, "Kayıp Alışveriş Merkezi" deneyinde, katılımcıların aileleriyle anlaştı ve onlara çocukken yaşamadıkları sahte bir anıyı anlattı: "Beş yaşındayken bir alışveriş merkezinde kaybolmuştun, ağlıyordun ve yaşlı bir kadın seni bulmuştu." Katılımcıların %25\'i bu yalanı sadece kabul etmekle kalmadı; üzerine detaylar eklemeye, o yaşlı kadının kıyafetini ve hissettikleri korkuyu tasvir etmeye başladılar! Hafıza güvenilir bir arşivci değil; diğer insanların telkinleriyle geçmişi durmaksızın yeniden yazan yetenekli ve tehlikeli bir bilimkurgu yazarıdır.',
+    questionStem: 'Elizabeth Loftus\'un "Sahte Anı" deneyleri, insan belleği hakkında hangi rahatsız edici durumu kanıtlar niteliktedir?',
+    options: [
+      'Çocukluk anılarının yaş ilerledikçe tamamen silindiğini ve beynin kapasitesinin küçüldüğünü',
+      'İnsan beyninin, dışarıdan gelen telkinler ve yönlendirmelerle hiç yaşanmamış olayları bile kusursuzca (ve inançla) kurgulayabilecek kadar manipülasyona açık olduğunu',
+      'Alışveriş merkezi gibi kalabalık yerlerin çocuklarda kalıcı travmalar yarattığını',
+      'İnsanların yalan söyleme becerilerinin zekâ seviyeleriyle doğru orantılı olarak arttığını'
+    ],
+    correct: 1,
+    explanation: 'İnsanların hiç yaşamadıkları kaybolma olayına inandıkları gibi üzerine detay da eklemeleri, hafızanın dış telkinlerle sahte anılar üretebilecek kadar manipülasyona açık olduğunu kanıtlar.'
+  },
+  {
+    title: 'Capilano Asma Köprüsü: Yanlış Atfedilen Aşk',
+    passage: 'Psikologlar Arthur Aron ve Donald Dutton, duygularımızın bizi nasıl kandırdığını göstermek için muazzam bir deney yaptı. Çekici bir kadın araştırmacı, bir grup erkeğin yanına sağlam ve alçak bir köprüde; diğer grubun yanına ise rüzgârda sallanan, metrelerce yüksekteki korkutucu Capilano Asma Köprüsü\'nün tam ortasında yaklaştı. Kadın her iki gruba da anket yapıp telefon numarasını verdi. Korkutucu köprüdeki erkeklerin neredeyse tamamı kadını arayıp çıkma teklif etti; çünkü sallanan köprünün yarattığı adrenalin, kalp çarpıntısı ve terlemeyi beyinleri yanlış yorumlamış, bu fiziksel korku belirtilerini "kadına karşı duyulan cinsel çekim (aşk)" sanmışlardı. Zihnimiz, bedenimizin verdiği tepkileri okurken çoğu zaman berbat bir çevirmendir.',
+    questionStem: 'Capilano Asma Köprüsü deneyi, insan duygularının oluşumuyla ilgili hangi psikolojik hatayı (fenomeni) ispatlamaktadır?',
+    options: [
+      'Erkeklerin doğa sporları ve macera anlarında romantik ilişkilerden kaçındığını',
+      'Yükseklik korkusunun insanlarda kalıcı bir kalp ritmi bozukluğuna yol açtığını',
+      'İnsan beyninin, tehlike veya korkunun yarattığı fiziksel uyarılmayı (çarpıntıyı) yanlış yorumlayarak bunu romantik bir çekim veya aşk sanması (duygunun yanlış atfedilmesi)',
+      'Kadın araştırmacıların deneylerde erkek katılımcıları her zaman manipüle ettiğini'
+    ],
+    correct: 2,
+    explanation: 'Köprünün korkusuyla artan kalp atışını beynin "kadına duyulan aşk" olarak yanlış yorumlaması, fiziksel uyarılmanın duygulara yanlış atfedildiğini kanıtlar.'
+  },
+  {
+    title: 'Mavi Gözlülerin Tiranlığı',
+    passage: '1968\'de Martin Luther King suikasta kurban gittiğinde, ilkokul öğretmeni Jane Elliott, 8 yaşındaki beyaz öğrencilerine ayrımcılığın ne kadar iğrenç olduğunu öğretmek için bir deney yaptı. Sınıfa girdi ve "Mavi gözlü çocuklar daha zeki, daha üstün ve daha temizdir" dedi. Kahverengi gözlülere yakalar takıldı ve onlara dışlanmış (aşağı) bir sınıf gibi davranıldı. Sadece 15 dakika içinde o masum çocukların içinden birer canavar çıktı. Mavi gözlüler, kahverengi gözlü arkadaşlarına hakaret etmeye, onları ezmeye ve dışlamaya başladı. Irkçılık ve ayrımcılık insan doğasının genetik bir kaderi değil; otorite tarafından zihinlere enjekte edilen ve saniyeler içinde masumiyeti kibre çeviren suni bir yalandır.',
+    questionStem: 'Jane Elliott\'ın Mavi/Kahverengi göz deneyi, ırkçılık ve ayrımcılık hakkında topluma nasıl bir mesaj vermektedir?',
+    options: [
+      'Çocukların göz rengine göre akademik başarılarının gerçekten de değişiklik gösterdiğini',
+      'Ayrımcılığın doğuştan gelen genetik bir refleks olduğunu ve değiştirilemeyeceğini',
+      'Irkçılığın ve sınıfsal üstünlük inancının (ötekileştirmenin), dışarıdan/otorite tarafından öğretilen ve çok hızlı yayılan tehlikeli ve suni bir kurgu olduğunu',
+      'İlkokul öğrencilerinin soyut ahlaki kavramları algılayacak zekâ seviyesine sahip olmadığını'
+    ],
+    correct: 2,
+    explanation: 'Sırf öğretmen "mavi gözlüler üstündür" dedi diye çocukların saniyeler içinde zalimleşmesi, ırkçılığın ve ayrımcılığın otorite tarafından öğretilen suni bir yalan (kurgu) olduğunu gösterir.'
+  },
+  {
+    title: 'Barnum Etkisi: Falcıların Sırrı',
+    passage: 'Psikolog Bertram Forer, öğrencilerine bir kişilik testi yaptı ve sonuçların haftaya açıklanacağını söyledi. Ertesi hafta her öğrenciye ismine özel hazırlanmış (!) bir sonuç zarfı verdi. Öğrenciler sonuçları okuyup 5 üzerinden 4.26 gibi devasa bir puanla testin karakterlerini "kusursuzca" özetlediğini söylediler. Oysa Forer herkese kelimesi kelimesine aynı metni vermişti: "Bazen dışa dönüksün, bazen içe kapanık. Kendini eleştirme eğilimin var ama kullanılmayan büyük bir potansiyel taşıyorsun..." "Barnum Etkisi" denen bu psikolojik zaaf, astrolojinin ve falcıların en büyük silahıdır. İnsan egosu öylesine aç ve özel hissetmeye öylesine muhtaçtır ki; herkese uyan sıradan, genel geçer ve ucu açık yalanları sanki sadece kendisine söylenmiş evrensel bir sır gibi sahiplenir.',
+    questionStem: 'Barnum (Forer) Etkisi, insanların burç yorumlarına ve fallara inanmasını hangi psikolojik zaafla açıklamaktadır?',
+    options: [
+      'Geleceği önceden bilme isteğinin yarattığı aşırı kaygı ve stres durumuyla',
+      'İnsanın kendini özel ve benzersiz hissetme (ego) arzusu yüzünden, aslında herkese uyabilen genel geçer ifadeleri kendine has mutlak doğrular olarak kabullenmesiyle',
+      'Astrolojinin binlerce yıllık bilimsel bir geçmişe dayanmasının yarattığı güvenle',
+      'Gençlerin yaşlılara göre soyut kavramlara daha fazla ilgi duymasıyla'
+    ],
+    correct: 1,
+    explanation: 'Herkese verilen aynı genel geçer metni öğrencilerin kendi karakterleri sanıp yüksek puan vermesi, egonun özel hissetme arzusuyla sıradan sözleri sahiplendiğini kanıtlar.'
+  },
+  {
+    title: 'Çerçeveleme (Framing) Etkisi',
+    passage: 'Nobel ödüllü psikolog Daniel Kahneman, insanların kararlarında ne kadar rasyonel olduğunu test etti. İki farklı doktor grubuna aynı riskli ameliyatı sundu. Bir gruba "Bu ameliyatın bir ay yaşama şansı %90\'dır" dedi. Diğer gruba ise "Bu ameliyatta ilk bir ay içinde ölüm oranı %10\'dur" dedi. Matematiksel olarak iki oran da tamamen aynı ihtimali gösteriyordu. Ancak %90 yaşama şansı duyan doktorların ezici çoğunluğu ameliyatı onaylarken, %10 ölüm riskini duyan doktorlar ameliyatı reddetti. "Çerçeveleme Etkisi", kararlarımızın mantığa veya matematiğe göre değil; bilginin bize nasıl bir kelime oyunuyla (çerçeveyle) sunulduğuna ve zihnimizin kayıplardan ne kadar korktuğuna bağlı olduğunu ispatlar.',
+    questionStem: 'Çerçeveleme Etkisi\'nin karar alma mekanizmamız üzerindeki sarsıcı etkisi nedir?',
+    options: [
+      'İnsanların matematiksel hesaplamalarda genellikle teknolojik araçlara ihtiyaç duyması',
+      'Aynı bilginin olumlu veya olumsuz kelimelerle (farklı bir çerçeveyle) sunulmasının, insan mantığını devre dışı bırakarak tamamen farklı kararlar verdirebilmesi',
+      'Doktorların cerrahi müdahalelerde her zaman en yüksek riski göze alması',
+      'Ölüm korkusunun insanları daha fazla kitap okumaya ve araştırmaya yöneltmesi'
+    ],
+    correct: 1,
+    explanation: 'Matematiksel olarak %90 yaşama ile %10 ölüm aynı olmasına rağmen doktorların farklı kararlar vermesi, bilginin sunuluş biçiminin (çerçevenin) mantığı devre dışı bıraktığını gösterir.'
+  },
+  {
+    title: 'Pratfall Etkisi: Kusurun Çekiciliği',
+    passage: 'Hepimiz kusursuz, hata yapmayan ve her şeyi bilen insanlara hayran olduğumuzu düşünürüz. Ancak psikolog Elliot Aronson "Pratfall Etkisi" ile bunun tam tersini kanıtladı. Bir deneyde katılımcılara çok başarılı ve kusursuz konuşan bir öğrencinin ses kaydı dinletildi. Herkes onu çok beğendi. Ancak aynı öğrenci kaydın sonunda elindeki kahveyi kazara üzerine döktüğünde ve utançla güldüğünde, dinleyicilerin o kişiye duyduğu beğeni ve sempati tavan yaptı. Kusursuzluk, bizi içten içe tehdit eder ve o kişiyi insanüstü (soğuk) bir yere konumlandırmamıza neden olur. Oysa küçük bir hata, küçük bir sakarlık, o aşılmaz zırhı deler; karşımızdakinin bizim gibi "kusurlu bir insan" olduğunu hatırlatarak onu çok daha çekici ve sevilmeye layık kılar.',
+    questionStem: 'Pratfall Etkisi\'ne göre, çok başarılı bir insanın küçük bir hata veya sakarlık yapması toplum tarafından nasıl algılanır?',
+    options: [
+      'Onun aslında o kadar da zeki olmadığı düşünülerek hızla saygınlığını yitirmesine neden olur.',
+      'Rekabetçi bir dünyada bu zayıflığın anında kullanılarak kişinin dışlanmasıyla sonuçlanır.',
+      'Onun o soğuk ve kusursuz imajını kırarak, daha insani, cana yakın ve sempati duyulabilir (çekici) bir hale gelmesini sağlar.',
+      'Çevresindeki insanların da bilinçli olarak hata yapmaya başlamasına (kötü örnek olmasına) yol açar.'
+    ],
+    correct: 2,
+    explanation: 'Başarılı birinin kahve dökmesiyle sempatisinin tavan yapması, küçük hataların o kusursuz zırhı kırıp kişiyi daha insani ve çekici kıldığını kanıtlar.'
+  },
+  {
+    title: 'Benjamin Franklin Etkisi',
+    passage: 'Eğer birinin sizi sevmesini istiyorsanız ona iyilik yapmalısınız, değil mi? Hayır. Benjamin Franklin, siyasetteki en azılı düşmanını kendine dost yapmak için ondan çok nadir bulunan bir kitabı ödünç istedi. Düşmanı kitabı verdi ve kısa süre sonra şaşırtıcı bir şekilde Franklin\'e karşı nazik ve destekleyici bir tavır sergilemeye başladı. Psikoloji bu durumu "Bilişsel Çelişki" ile açıklar: Zihnimiz "Nefret ettiğim birine neden iyilik yapıyorum?" sorusunun yarattığı huzursuzluğu çözmek için, durumu tersten kurgular ve "Ona iyilik yaptığıma göre, aslında o fena biri değil, onu seviyor olmalıyım" yalanına inanır. Yani biz sevdiklerimize iyilik yapmayız; iyilik yaptıklarımızı sevmeye başlarız.',
+    questionStem: 'Benjamin Franklin Etkisi\'nin temelini oluşturan psikolojik mekanizma parçada nasıl açıklanmaktadır?',
+    options: [
+      'Kitap okumanın insanların empati duygusunu ve siyasi uzlaşma kültürünü artırması',
+      'Sevmediğimiz birine iyilik yaptığımızda zihnimizin yaşadığı çelişkiyi gidermek için, "Ona yardım ettiğime göre onu seviyor olmalıyım" diyerek duygularımızı davranışımıza uydurması',
+      'İyilik gören kişinin minnet duygusu altında ezilerek düşmanlığından kendiliğinden vazgeçmesi',
+      'Siyasetçilerin halka şirin görünmek için sahte dostluklar kurma eğiliminde olması'
+    ],
+    correct: 1,
+    explanation: 'Zihnin nefret ettiği birine iyilik yapma çelişkisini çözmek için "ona yardım ettiğime göre fena biri değil" diyerek duygularını davranışına uydurması Benjamin Franklin etkisidir.'
+  },
+  {
+    title: 'Kontrol Yanılsaması',
+    passage: 'Psikolog Ellen Langer, ofis çalışanlarına piyango biletleri sattı. Bir gruba biletler rastgele dağıtıldı; diğer gruba ise bilet numaralarını kendilerinin seçme hakkı verildi. Çekilişten hemen önce Langer insanlara gidip biletlerini geri satın almak istediğini söyledi. Rastgele bilet alanlar biletlerini ortalama 2 dolara satmaya razı oldu. Ancak numarayı "kendi seçenler", biletlerini 8 dolardan aşağı satmayı reddetti! Oysa piyango tamamen şansa dayalıydı ve bir numarayı kişinin kendisinin seçmesi kazanma ihtimalini yüzde bir bile artırmıyordu. "Kontrol Yanılsaması", insanoğlunun kibridir. Rastgele gelişen evrensel veya şansa bağlı olayları, sırf işin içine dâhil olduk diye kendi irademizle etkileyebileceğimize dair o ahmakça ve derin inancımızdır.',
+    questionStem: 'Kontrol Yanılsaması deneyi, insan zihninin hangi irrasyonel (mantık dışı) eğilimini kanıtlamaktadır?',
+    options: [
+      'Piyango ve kumar oyunlarında matematiksel hesaplamaların her zaman işe yaradığını',
+      'Kişinin kendi yaptığı bir seçimin (müdahalenin), tamamen tesadüfe ve şansa dayalı olayların sonucunu değiştirebileceğine (kontrol edebileceğine) inanması kibrini',
+      'Ofis çalışanlarının dışarıdan gelen araştırmacılara karşı her zaman güvensiz davrandığını',
+      'İnsanların ellerindeki eşyaları sattıklarında her zaman pişmanlık duygusu yaşadığını'
+    ],
+    correct: 1,
+    explanation: 'Bilet numarasını kendi seçtiği için piyangoyu kazanma şansının arttığını sanan (kibrini gösteren) insanların, rastgele şansa müdahale edebileceğine inanması Kontrol Yanılsamasıdır.'
+  },
+  {
+    title: 'Adil Dünya İnancı (Just-World Hypothesis)',
+    passage: 'Haberlerde gece vakti ıssız bir sokakta saldırıya uğrayan birini gördüğümüzde, zihnimizde hemen o fısıltı yankılanır: "O saatte orada ne işi vardı?" Psikolog Melvin Lerner, insanların neden mağdurları (kurbanları) suçlamaya bu kadar eğilimli olduğunu inceledi. Sebebi acımasızlık değil, korkudur. Eğer kötü şeylerin, hiçbir suçu olmayan tamamen masum insanların başına "rastgele" gelebileceğini kabul edersek, bu dünyanın korkunç, güvensiz ve kaotik bir yer olduğunu da kabul etmemiz gerekir. Bunu reddetmek için zihnimiz "Adil Dünya İnancı"na sığınır ve "Kurban mutlaka bir hata yapmıştır, bu yüzden benim başıma gelmeyecek" der. Mağduru suçlamak, evrenin rastgele zulmü karşısında beynimizin ördüğü konforlu ama ahlaksız bir yalan duvarıdır.',
+    questionStem: 'İnsanların mağdurları (kurbanları) suçlamasının (Adil Dünya İnancı) altında yatan asıl psikolojik neden nedir?',
+    options: [
+      'Kurbanların her zaman gizli suç dosyalarının bulunduğuna dair kanıtlar olması',
+      'İnsanların genetik olarak empati yoksunu ve başkalarının acısından zevk alan varlıklar olması',
+      'Kötülüğün rastgele olduğunu kabul etmenin getireceği güvensizlik korkusunu bastırmak ve "dünyanın adil bir yer olduğu, benim başıma gelmeyeceği" yanılsamasını koruma çabası',
+      'Medyada çıkan haberlerin insanları kasten yanlış yönlendirerek kurbanı suçlu göstermesi'
+    ],
+    correct: 2,
+    explanation: 'Kötülüğün rastgele olduğunu kabul edemeyen zihnin, korkuyu bastırmak için kurbanı suçlayıp "dünya adildir, suçlu cezasını çekti, bana bir şey olmaz" yalanına sığınması anlatılmıştır.'
+  },
+  {
+    title: 'Seçim Paradoksu: Reçel Deneyi',
+    passage: 'Klasik ekonomi bilimi, insanlara ne kadar çok seçenek sunarsanız o kadar mutlu ve özgür olacaklarını savunur. Psikolog Barry Schwartz "Seçim Paradoksu" ile bunun bir efsane olduğunu kanıtladı. Meşhur reçel deneyinde, bir markette müşterilere önce 24 çeşit reçel tattırıldı; insanların ilgisi büyüktü ama sadece %3\'ü reçel satın aldı. Ertesi gün seçenek sadece 6 çeşide düşürüldü. İlgi daha azdı ama bu kez müşterilerin tam %30\'u reçel satın aldı! Sınırsız özgürlük ve sonsuz seçenek insanı mutlu etmez, aksine beyni felç eder (karar yorgunluğu). Seçmediğimiz diğer ihtimallerin (kaçan fırsatların) pişmanlığı o kadar büyüktür ki, bizi bir kafese hapseder. Tüketim çağında gerçek özgürlük, daha fazlasına sahip olmak değil, seçenekleri eleyebilmektir.',
+    questionStem: 'Reçel Deneyi\'nin ortaya koyduğu "Seçim Paradoksu", hangi geleneksel inancı yıkmıştır?',
+    options: [
+      'Tüketicilerin sadece ucuz ve kalitesiz ürünleri tercih ettiği inancını',
+      'Fazla seçeneğin insanları daha özgür, kararlı ve mutlu yapacağı (satışları artıracağı) yönündeki inancı yıkarak, aşırı seçeneğin zihni felç ettiğini göstermiştir',
+      'Tatlı gıdaların insanlar üzerinde bağımlılık yaptığı inancını',
+      'Gıda sektöründe reklamcılığın ürün kalitesinden daha önemli olduğu inancını'
+    ],
+    correct: 1,
+    explanation: '24 çeşitte satışın %3, 6 çeşitte satışın %30 olması; fazla seçeneğin mutlu/özgür etmediğini, aksine karar yorgunluğu yaratarak beyni felç ettiğini göstermiştir.'
+  },
+  {
+    title: 'Salt Maruz Kalma Etkisi (Mere Exposure)',
+    passage: 'Psikolog Robert Zajonc, katılımcılara anlamlarını bilmedikleri anlamsız Çince karakterler veya daha önce hiç görmedikleri rastgele insan yüzleri gösterdi. Bazı karakterleri sadece bir kez, bazılarını ise deney boyunca yirmi kez gösterdi. Deneyin sonunda katılımcılara hangi karakterleri "daha sempatik ve olumlu" buldukları soruldu. İstisnasız hepsi, anlamını bilmemelerine rağmen en çok maruz kaldıkları (en sık gördükleri) karakterleri daha çok sevdiklerini söylediler. "Salt Maruz Kalma Etkisi", reklamcıların ve politikacıların bizi yönettiği o karanlık arka kapıdır. Bir şeye sırf tekrar tekrar ve sıkça maruz kaldığımız için (aşina olduğumuz için) onun güvenli ve "iyi" olduğunu sanırız. Tercihlerimiz, özgür irademizin değil, gözümüzün neye daha çok zorlandığının bir sonucudur.',
+    questionStem: 'Salt Maruz Kalma Etkisi\'nin kararlarımız ve beğenilerimiz üzerindeki gücü nedir?',
+    options: [
+      'İnsanların her zaman kendilerinden farklı ve yeni olan şeylere karşı büyük bir merak duyması',
+      'Sıkça karşılaştığımız ve aşina olduğumuz şeylere (reklamlar, yüzler vb.) sırf o tekrar yüzünden sempati duyup onları güvenli/iyi olarak tercih etmemiz',
+      'Çince gibi zor dillerin görsel hafıza sayesinde çok daha kolay öğrenilebilmesi',
+      'Karmaşık görsellerin insan psikolojisinde her zaman korku ve tehdit algısı yaratması'
+    ],
+    correct: 1,
+    explanation: 'Katılımcıların anlamını bilmese de yirmi kez gördüğü şekli sevmesi; sıkça maruz kaldığımız, aşina olduğumuz şeyleri sırf o tekrar yüzünden seçtiğimizi kanıtlar.'
+  },
+  {
+    title: 'Sahne Işığı Etkisi (Spotlight Effect)',
+    passage: 'Ergenlikte veya yetişkinlikte, yüzümüzde bir sivilce çıktığında veya kahveyi üzerimize döktüğümüzde, sokaktaki herkesin bize baktığını, bizi yargıladığını ve rezil olduğumuzu düşünürüz. Psikolog Thomas Gilovich bunu test etmek için bir öğrenciye, üzerinde çok utanç verici, devasa bir Barry Manilow resmi olan tişört giydirdi ve onu kalabalık bir sınıfa soktu. Öğrenciye sorsalar sınıfın en az yarısı onunla alay etmiş ve o tişörtü fark etmişti. Oysa sınıftakilere sorulduğunda, o iğrenç tişörtü fark edenlerin oranı sadece %20 idi. "Sahne Işığı Etkisi" şu tokat gibi gerçeği vurur: Bizler kendi dünyamızın başrol oyuncusuyuz ve tüm spot ışıklarının bizim üzerimizde olduğunu sanırız; oysa geri kalan milyarlarca insanın kendi hayatlarının telaşından bize bakacak ne vakti ne de ilgisi vardır.',
+    questionStem: 'Sahne Işığı Etkisi (Spotlight Effect), insanların sosyal ortamlardaki hangi yanılgısını tanımlar?',
+    options: [
+      'Utanç verici kıyafetler giyen kişilerin toplumdan tamamen dışlanarak yalnızlaştığını',
+      'Diğer insanların dikkatini ve yargılayıcı bakışlarını (aslında kimsenin o kadar umurunda olmasak da) kendi üzerimizde devasa bir şekilde abartma ve merkeze koyma yanılgısını',
+      'Sınıf ortamlarının öğrencilerin stres seviyesini düşürerek odaklanmalarını artırdığını',
+      'İnsanların sadece popüler kültür ikonlarını (ünlü şarkıcıları) takip etme eğiliminde olduğunu'
+    ],
+    correct: 1,
+    explanation: 'Utanç verici tişörtü herkesin gördüğünü sanan öğrencinin yanılması; kendi üzerimizdeki dikkati (kimsenin umurunda olmasak da) devasa bir şekilde abartmamız yanılgısını gösterir.'
+  },
+  {
+    title: 'Nocebo Etkisi: Beklentinin Zehri',
+    passage: 'Plasebo etkisinin karanlık ve şeytani ikizi olan "Nocebo Etkisi", insan beyninin ne kadar ölümcül bir silah olabileceğinin ispatıdır. Bir ilaç deneyinde, hastalara tamamen zararsız şeker hapları verilmiş, ancak onlara "Bu ilacın şiddetli mide bulantısı ve döküntü gibi yan etkileri olabilir" denmiştir. İlaçta hiçbir etken madde olmamasına rağmen, hastaların büyük bir kısmı kıvranarak kusmaya başlamış ve vücutlarında gerçekten de yaralar çıkmıştır. Nocebo, zihnimizin kötümser ve korkutucu bir telkini alıp, vücudumuza o fiziksel zararı kendi elleriyle ürettirmesidir. Dışarıdan bir zehir içmemize gerek yoktur; çaresizliğe ve hastalığa olan derin inancımız, damarlarımızda kendi zehrini yaratacak güce sahiptir.',
+    questionStem: 'Nocebo Etkisi kavramı parçada nasıl tanımlanmaktadır?',
+    options: [
+      'Şeker hastalarının ilaç kullanımında yaşadığı metabolik bir kriz durumu',
+      'Hastaların doktorların tavsiyelerini bilerek ve isteyerek uygulamaktan kaçınması',
+      'Kötü bir yan etki veya hastalık (korku/telkin) beklentisinin, ortada gerçek bir neden (zehir) yokken bile vücutta o fiziksel zararı (hastalığı) gerçekten üretmesi',
+      'Olumlu düşünmenin insan bedeni üzerindeki her türlü hastalığı kalıcı olarak iyileştirmesi'
+    ],
+    correct: 2,
+    explanation: 'Zararsız şeker hapı yiyenlerin "yan etki olacak" korkusu (telkini) yüzünden gerçekten kusup yara dökmesi, zihnin kötümser beklentiyle fiziksel zarar üretmesini tanımlar.'
+  }
+];
+
+export const psikolojiParagrafSorulari9: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_9.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_9[idx];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-psikoloji9-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
 // paragrafTests.ts dosyasının hata vermemesi için iki listeyi birleştirip eski adıyla dışa aktarıyoruz:
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari,
@@ -2266,5 +2543,6 @@ export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari5,
   ...tarihParagrafSorulari6,
   ...bilimParagrafSorulari7,
-  ...felsefeParagrafSorulari8
+  ...felsefeParagrafSorulari8,
+  ...psikolojiParagrafSorulari9
 ];
