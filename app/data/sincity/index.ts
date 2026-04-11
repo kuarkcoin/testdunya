@@ -2534,6 +2534,283 @@ export const psikolojiParagrafSorulari9: BilimParagrafQuestion[] = Array.from({ 
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
+const PARAGRAPH_THEMES_10 = [
+  {
+    title: 'İkarus\'un Düşüşü',
+    passage: 'Yunan mitolojisinde mimar Daedalus, oğlu İkarus ile birlikte hapsoldukları labirentten kaçmak için balmumu ve kuş tüylerinden kanatlar yapar. Oğluna tek bir uyarıda bulunur: "Ne denize çok yakın uçup kanatlarını ıslat, ne de güneşe çok yaklaşıp balmumunu erit." Ancak gökyüzüne yükseldiğinde uçmanın o kusursuz hazzı ve kibri İkarus\'un aklını başından alır. Güneşe doğru tırmandıkça balmumu erir ve İkarus denize çakılarak ölür. İkarus\'un hikâyesi, sadece söz dinlemeyen bir çocuğun masalı değildir; o, insanoğlunun sınırlarını aşma arzusunun o sarhoş edici güzelliğini ve kibrin getirdiği kaçınılmaz trajik yıkımı anlatan ölümsüz bir destandır.',
+    questionStem: 'İkarus\'un uçuşu ve düşüşü, insan doğasındaki hangi çatışmayı (ikilemi) sembolize etmektedir?',
+    options: [
+      'Kuşak çatışmasını ve gençlerin tecrübeli yetişkinlerin tavsiyelerini her zaman yanlış anladığını',
+      'İnsanoğlunun yerçekimine ve doğa kanunlarına karşı duyduğu anlamsız öfkeyi',
+      'Sınırları aşma tutkusunun (hırsın) verdiği sarhoş edici haz ile, bu kibrin (ölçüsüzlüğün) getirdiği kaçınılmaz ve trajik yıkım arasındaki o ince çizgiyi',
+      'Özgürlüğe ulaşmak için her türlü fedakârlığın mubah sayılması gerektiğini'
+    ],
+    correct: 2,
+    explanation: 'Güneşe çok yaklaşma kibri ve uçmanın hazzı yüzünden ölmesi; insanın sınırları aşma tutkusu ile kibrin getirdiği yıkım arasındaki çatışmayı sembolize eder.'
+  },
+  {
+    title: 'Kassandra\'nın Laneti',
+    passage: 'Troya prensesi Kassandra, Tanrı Apollon tarafından geleceği görme yeteneğiyle ödüllendirilir. Ancak Apollon\'un aşkına karşılık vermeyince, tanrı onu korkunç bir şekilde lanetler: "Geleceği her zaman kusursuzca göreceksin ama kimse sana asla inanmayacak." Kassandra, Troya Atı\'nın bir tuzak olduğunu, şehrin yanıp kül olacağını gözyaşları içinde çığlık çığlığa anlatır ama halk ona sadece bir deliymiş gibi güler ve onu dışlar. Kassandra Kompleksi, yaklaşan bir felaketi tüm gerçekliğiyle görüp de etrafındaki o sağır edici cehaleti ve kalabalıkları bir türlü ikna edemeyen aydınların (entelektüellerin) ebedi ve kahredici yalnızlığıdır.',
+    questionStem: 'Kassandra\'nın yaşadığı trajedi, günümüz toplumlarında hangi durumu tanımlamak için güçlü bir metafordur?',
+    options: [
+      'Geleceği planlamadan anı yaşayan insanların kaygısızlığını',
+      'Gerçeği ve yaklaşan tehlikeyi (felaketi) çok net gören ancak cahil kalabalıkları (toplumu) bir türlü ikna edemeyen aydın insanın çaresizliğini ve yalnızlığını',
+      'Kadınların antik çağlardan beri siyasette ve devlet yönetiminde söz sahibi olamamasını',
+      'Savaş dönemlerinde üretilen dedikoduların ve komplo teorilerinin halk üzerindeki etkisini'
+    ],
+    correct: 1,
+    explanation: 'Geleceği (gerçeği) bilip de kimseyi inandıramamak; gerçeği gören aydının cahil toplum karşısındaki sağır edici çaresizliğini ve yalnızlığını ifade eder.'
+  },
+  {
+    title: 'Damokles\'in Kılıcı',
+    passage: 'Antik çağda, Kral Dionysios\'un gücüne ve servetine imrenen dalkavuk Damokles, bir günlüğüne kralın tahtına oturma fırsatı bulur. Altın kadehlerden şarap içip lüks içinde yüzerken, aniden tam başının üzerinde, sadece incecik bir at kılına bağlanmış, ucu aşağı bakan devasa ve keskin bir kılıç fark eder. O andan itibaren yediği yemeğin, gücün ve zenginliğin hiçbir anlamı kalmaz; her saniye ölüm korkusuyla titremeye başlar. "Damokles\'in Kılıcı", büyük bir gücün veya yüksek bir makamın dışarıdan ihtişamlı görünse de, aslında sahibini her an yok olabileceği sürekli bir stres, tehlike ve anksiyete (korku) altında yaşattığını anlatan kusursuz bir alegoridir.',
+    questionStem: 'Damokles\'in Kılıcı hikâyesinin iktidar ve güç kavramlarına getirdiği asıl eleştiri nedir?',
+    options: [
+      'Kralların genellikle suikastçılardan korktuğu için paranoyak bir hayat sürdüğü',
+      'Lüks ve zenginliğin, insanları her zaman şımartıp ahlaktan uzaklaştırdığı',
+      'Dışarıdan imrenilerek bakılan mutlak gücün ve yüksek makamların, aslında sahibini her an kopabilecek bir ipliğe bağlı, sürekli ve yok edici bir tehdit (stres) altında yaşattığı',
+      'Halktan gelen yöneticilerin saray hayatının kurallarına asla uyum sağlayamayacağı'
+    ],
+    correct: 2,
+    explanation: 'İnce bir kıla bağlı kılıcın altında oturmak, mutlak gücün dışarıdan görkemli olsa da aslında sürekli bir tehlike ve stres barındırdığını vurgular.'
+  },
+  {
+    title: 'Prokrustes\'in Yatağı',
+    passage: 'Yunan mitolojisinde Prokrustes adında acımasız bir hancı vardır. Gelen misafirleri demir bir yatağa yatırır. Eğer misafirin boyu yataktan kısaysa, adamı zincirlerle çekerek ve kemiklerini kırarak yatağın boyuna uzatır. Eğer misafirin boyu yataktan uzunsa, bu kez adamın dışarı taşan ayaklarını veya başını testereyle keserek onu yatağa uydurur. "Prokrustes\'in Yatağı", kendi dar kalıplarını, ideolojilerini veya sistemlerini tek geçerli doğru kabul edip; doğadaki, sanattaki veya insandaki o eşsiz çeşitliliği zorbalıkla, kesip biçerek kendi tek tip kalıbına (standarda) sokmaya çalışan dogmatik sistemlerin kan dondurucu sembolüdür.',
+    questionStem: 'Prokrustes\'in Yatağı metaforu, toplumsal ve siyasi alanda hangi durumu eleştirmek için kullanılır?',
+    options: [
+      'Turizm ve konaklama sektöründeki ilkel ve kötü koşulları',
+      'Bireylerin fiziksel özelliklerine göre ayrımcılığa uğramasını',
+      'Bireysel farklılıkları (çeşitliliği) yok sayarak, insanları tek tip bir düşünceye, sisteme veya dogmatik kalıba zorla (şiddetle) uydurmaya çalışan diktacı zihniyeti',
+      'Toplumdaki suçluların kendi yöntemleriyle adalet dağıtmaya çalışmasını'
+    ],
+    correct: 2,
+    explanation: 'İnsanları kesip biçerek tek bir demir yatağa (kalıba) uydurmaya çalışmak, bireysel farklılıkları yok edip herkesi tek tip bir düşünceye zorlayan sistemleri eleştirir.'
+  },
+  {
+    title: 'Kral Midas ve Altın Dokunuş',
+    passage: 'Kral Midas, Tanrı Dionysos\'tan "dokunduğu her şeyin altına dönüşmesini" diler. Dileği gerçekleştiğinde çok sevinir; sarayının duvarlarını, masaları, elmaları altına çevirir. Ancak acıkıp bir lokma ekmek almak istediğinde, ekmek ağzında katı bir altın külçesine dönüşür. Şarabı boğazını yakan sıvı bir altına döner. En kötüsü, onu tebrik etmeye koşan biricik kızına sarıldığında, kızı cansız bir altın heykeline dönüşür. Dünyanın en zengin adamı, artık dünyanın en yoksul ve çaresiz babasıdır. Midas\'ın laneti, insanoğlunun sonu gelmez açgözlülüğünün, değer verdiği her canlı şeyi (sevgiyi, yaşamı) nasıl cansız ve soğuk bir metale (maddeye) kurban ettiğinin trajedisidir.',
+    questionStem: 'Kral Midas efsanesi, insanın bitmek bilmeyen madde (zenginlik) arzusuyla ilgili hangi acı gerçeği vurgular?',
+    options: [
+      'Altın madeninin eski çağlardan beri en değerli yatırım aracı olduğunu',
+      'Sınırsız bir zenginlik ve açgözlülük hırsının, hayattaki en temel insani ihtiyaçları (sevgi, beslenme, yaşam) yok ederek kişiyi mutlak bir çaresizliğe ve manevi yoksulluğa sürükleyeceğini',
+      'Kraliyet ailelerinin halktan kopuk yaşadığı için gerçek dünyanın acılarını anlayamadığını',
+      'Doğaüstü güçlerin insanlara her zaman mutsuzluk getirdiğini'
+    ],
+    correct: 1,
+    explanation: 'Her şeyi altına çeviren hırsın sonunda yemeği ve çocuğunu bile yok etmesi, kontrolsüz açgözlülüğün insanı temel yaşam bağlarından koparıp manevi yoksulluğa ittiğini gösterir.'
+  },
+  {
+    title: 'Babil Kulesi',
+    passage: 'Eski Ahit\'te geçen Babil Kulesi hikâyesine göre, tüm insanlık tek bir dil konuşurken, kibirlenip "Göklere, Tanrı\'ya ulaşacak kadar yüksek bir kule" inşa etmeye karar verirler. İnsanların bu kibrine öfkelenen Tanrı, onları cezalandırmak için kuleyi yıkmaz; bunun yerine hepsine farklı diller verir. Aynı dili konuşamayan, birbirini anlayamayan insanlar kaosa sürüklenir, kule yarım kalır ve dünyanın dört bir yanına dağılırlar. Babil efsanesi, fiziksel bir yıkım hikâyesi değildir. İnsanlığın en büyük gücünün "ortak iletişim" olduğunu; bu iletişim (anlayış) koptuğunda ise en ihtişamlı medeniyetlerin bile kendi içindeki gürültü ve anlaşmazlıklarla (kaosla) parçalanmaya mahkûm olduğunu gösterir.',
+    questionStem: 'Babil Kulesi efsanesinin temelinde yatan felsefi ve sosyolojik mesaj nedir?',
+    options: [
+      'Antik dönemde yüksek katlı mimari yapıların inşasının teknik olarak imkânsızlığı',
+      'Farklı dillerin öğrenilmesinin toplumlar arasındaki ticareti canlandırdığı',
+      'Bir toplumun inşasındaki (birliğindeki) en büyük harcın "ortak iletişim ve anlayış" olduğu; iletişimsizliğin ise kibri bile yerle bir eden en büyük yıkım olduğu',
+      'İnsanların sadece aynı coğrafyada yaşarlarsa barış içinde kalabilecekleri'
+    ],
+    correct: 2,
+    explanation: 'Kulenin fiziksel bir darbeyle değil, dillerin karışmasıyla (iletişimsizlikle) yıkılması, toplumun temel harcının ortak anlayış ve iletişim olduğunu gösterir.'
+  },
+  {
+    title: 'Cesur Yeni Dünya (Aldous Huxley)',
+    passage: 'Aldous Huxley\'in "Cesur Yeni Dünya" adlı distopyasında, devleti yönetenler insanları kontrol etmek için şiddete, kamçılara veya hapishanelere ihtiyaç duymazlar. Geliştirdikleri "Soma" adlı mutluluk hapı ve sürekli tüketilen ucuz eğlenceler sayesinde, insanlar kendi tutsaklıklarına âşık hale getirilmiştir. Kimse kitapları yasaklamaz, çünkü zaten kimse kitap okumak istemez. İnsanlar acı çekmekten kaçıp sahte bir haz denizinde boğuldukları için düşünmeyi, isyan etmeyi ve sorgulamayı unutmuşlardır. Huxley\'in kâbusu, insanlığın zorbalıkla değil; eğlenceyle, uyuşturan hazlarla ve dikkat dağıtıcı önemsiz şeylerle köleleştirildiği, gülümseyen bir diktatörlüktür.',
+    questionStem: 'Huxley\'in "Cesur Yeni Dünya" distopyasında anlatılan köleleştirme (kontrol) yöntemi, klasik diktatörlüklerden hangi yönüyle ayrılır?',
+    options: [
+      'Halkı korkutmak için sürekli savaş çıkarılmasıyla',
+      'İnsanların fiziksel baskı veya korkuyla değil; sürekli sunulan yapay hazlar, eğlence ve uyuşma yoluyla kendi tutsaklıklarını (köleliklerini) gönüllü olarak sevmelerinin sağlanmasıyla',
+      'Teknolojinin tamamen yasaklanarak toplumun ilkel çağlara geri döndürülmesiyle',
+      'Devletin sadece belirli bir seçkin sınıfı kontrol altında tutmasıyla'
+    ],
+    correct: 1,
+    explanation: 'Baskı ve şiddet yerine "Soma" hapı ve ucuz eğlenceler kullanılarak insanların tutsaklıklarına âşık edilmesi, korku yerine "hazla kontrol" yöntemini gösterir.'
+  },
+  {
+    title: '1984 ve Çiftdüşün (Doublethink)',
+    passage: 'George Orwell\'in "1984" adlı kâbusunda, Okyanusya devletinin insan zihnini yok etmek için kullandığı en büyük silah "Çiftdüşün" (Doublethink) kavramıdır. Çiftdüşün, insanın birbirine tamamen zıt iki fikre aynı anda inanması ve her ikisinin de doğru olduğunu savunmasıdır. Parti, "Savaş Barıştır", "Özgürlük Köleliktir", "Cehalet Güçtür" der ve halk buna inanır. Kişi, devletin yalan söylediğini bilir ama aynı anda o yalanın mutlak gerçek olduğuna kendini inandırır. Orwell\'in yarattığı bu evren, otoritenin sadece insan bedenine değil; gerçeğin ve mantığın kendisine tecavüz ederek, bireyin kendi aklına olan güvenini sıfırladığı kusursuz bir zihin hapishanesidir.',
+    questionStem: 'Orwell\'in "Çiftdüşün" (Doublethink) kavramıyla asıl anlatmak istediği psikolojik/siyasi tehlike nedir?',
+    options: [
+      'Toplumun her gün farklı bir ideolojiye inanma ihtiyacı hissetmesi',
+      'Dilin yetersizliği yüzünden insanların duygularını doğru ifade edememesi',
+      'Otoritenin (devletin) gerçeği ve mantığı o kadar bükmesi ki; bireyin kendi zekâsını inkâr ederek birbirine zıt iki kavrama aynı anda inanacak kadar zihinsel bir yıkıma uğraması',
+      'Barış dönemlerinin savaş dönemlerinden daha tehlikeli sonuçlar doğurması'
+    ],
+    correct: 2,
+    explanation: 'Savaşın barış olduğuna inanmak gibi zıt fikirleri kabul etme zorunluluğu, otoritenin gerçeği bükerek bireyin mantığını (zihinsel direncini) sıfırlamasını ifade eder.'
+  },
+  {
+    title: 'Fahrenheit 451: Yanan Kitaplar',
+    passage: 'Ray Bradbury\'nin "Fahrenheit 451" romanında itfaiyecilerin görevi yangın söndürmek değil; kitap buldukları evleri ve kitapları ateşe vermektir. Ancak hikâyenin en sarsıcı yanı, devletin kitapları zorla yakmaya başlamadan önce, halkın zaten kendi iradesiyle kitap okumayı bırakmış olmasıdır. İnsanlar uzun felsefi düşüncelerden, kendilerini mutsuz eden veya rahatsız eden fikirlerden kaçmış; sadece dev ekranlı televizyonların ve yüzeysel eğlencelerin içine sığınmışlardır. Bradbury\'ye göre bir kültürü yok etmek için kitapları yakmanıza gerek yoktur; insanların o kitapları okumasını engellemeniz ve zihinlerini sığ bir gürültüyle doldurmanız yeterlidir. Yanan kâğıtlar, sadece çoktan ölmüş bir zihnin cenaze ateşidir.',
+    questionStem: 'Bradbury\'nin "Fahrenheit 451" evreninde kitapların yakılmasından daha vahim olan asıl toplumsal çöküş nedir?',
+    options: [
+      'İtfaiyecilerin asıl mesleklerini unutup devlete itaat etmeleri',
+      'İnsanların rahatsız edici derin (felsefi) gerçeklerle yüzleşmekten korkup kendi rızalarıyla sığ bir cehaleti ve yüzeysel eğlenceyi seçmiş olmaları',
+      'Yangınların hava kirliliğine yol açarak insan sağlığını bozması',
+      'Televizyonların radyolardan daha popüler bir kitle iletişim aracı haline gelmesi'
+    ],
+    correct: 1,
+    explanation: 'Devlet yakmadan önce halkın derin düşünmekten kaçıp yüzeysel eğlencelere (televizyonlara) sığınarak okumayı bırakması asıl büyük çöküştür.'
+  },
+  {
+    title: 'Kaptan Ahab ve Moby Dick',
+    passage: 'Herman Melville\'in ölümsüz eseri "Moby Dick"te Kaptan Ahab, bir bacağını koparan o devasa beyaz balinayı (Moby Dick\'i) avlamak için tüm gemisini ve mürettebatını okyanusların sonuna kadar peşinden sürükler. Balina sadece bir hayvan değil; Ahab\'ın gözünde doğanın anlamsızlığını, tanrının acımasızlığını ve kendi eksikliğini temsil eden bir takıntıdır. Ahab\'ın intikam hırsı öylesine kör edicidir ki, gemisi Pequod\'u ve etrafındaki herkesi o beyaz hiçliğin içine kasten sürer. Moby Dick, sadece bir denizcilik macerası değil; insanın içindeki karanlık bir saplantının, kontrol edilemeyen bir intikam ateşinin sonunda nasıl sahibinin kendisini yutan bir cehenneme dönüştüğünün felsefi destanıdır.',
+    questionStem: 'Kaptan Ahab\'ın Moby Dick\'e olan saplantılı takibinin sembolize ettiği felsefi/psikolojik tema aşağıdakilerden hangisidir?',
+    options: [
+      'İnsanoğlunun doğayı ehlileştirme ve kontrol altına alma çabasının kaçınılmaz zaferi',
+      'Denizcilik mesleğinin ve okyanusların insana verdiği özgürlük hissi',
+      'Kontrol edilemeyen kör bir intikam hırsının ve saplantının (obsesyonun), sonunda kişinin sadece kendini değil, çevresini de yok eden bir cehenneme dönüşmesi',
+      'Balina avcılığının 19. yüzyıl ekonomisindeki yeri ve önemi'
+    ],
+    correct: 2,
+    explanation: 'Ahab\'ın bir bacağı için tüm gemisini felakete sürüklemesi, kör bir intikam ve saplantının kişiyi ve çevresini yok eden bir yıkıma (cehenneme) dönüştüğünü gösterir.'
+  },
+  {
+    title: 'Kavanozdaki Beyin (Matrix Alegorisi)',
+    passage: 'Felsefede "Kavanozdaki Beyin" adında ürpertici bir düşünce deneyi vardır. Diyelim ki gece uyurken kötü niyetli bir bilim insanı beyninizi kafatasınızdan çıkardı, onu besleyici bir sıvıyla dolu kavanoza koydu ve tüm sinir uçlarınızı süper bir bilgisayara bağladı. Bilgisayar beyninize kusursuz elektrik sinyalleri gönderiyor: Şu an bu metni okuduğunuzu, nefes aldığınızı ve bir bedeniniz olduğunu hissediyorsunuz. Her şey o kadar gerçek ki, aradaki farkı anlama şansınız sıfır. Matrix filminin de temeli olan bu şüphecilik, aslında en büyük kesinliğimize saldırır: Duyu organlarımızın bize sunduğu "gerçeklik", beynimizin içindeki karanlık odaya yansıtılan kusursuz bir simülasyondan ibaret olabilir mi?',
+    questionStem: 'Kavanozdaki Beyin düşünce deneyinin felsefi olarak sorguladığı asıl temel kavram nedir?',
+    options: [
+      'Gelecekteki tıbbi ameliyatların etik (ahlaki) sınırları ve kuralları',
+      'Bilgisayarların insan beyninden daha zeki (yapay zekâ) olma ihtimali',
+      'Duyu organlarımızın bizi yanıltma ihtimali üzerinden, algıladığımız dış dünyanın "mutlak gerçekliği" (epistemolojik kesinliğimiz)',
+      'Sıvı içinde yaşatılan organların ne kadar süre canlı kalabileceği'
+    ],
+    correct: 2,
+    explanation: 'Deneyin asıl amacı; sinyallerle yaratılan bir dünyayı gerçekten ayıramıyorsak, duyu organlarımıza güvenip güvenemeyeceğimizi (dış dünyanın mutlak gerçekliğini) sorgulamaktır.'
+  },
+  {
+    title: 'Truman Sendromu (Sahte Gerçeklik)',
+    passage: '1998 yapımı The Truman Show filminde, başkarakter Truman Burbank doğduğu günden beri devasa bir stüdyonun içinde, tamamen oyuncularla dolu sahte bir dünyada yaşadığından habersizdir. Ailesi, karısı ve dostları birer aktördür ve hayatı 7/24 tüm dünyaya canlı yayınlanmaktadır. Ancak Truman gün geçtikçe etrafındaki tuhaflıkları (düşen spot ışıkları, tekrarlanan replikler) fark eder ve dış dünyayı (hakikati) bulmak için denize açılır. Psikolojide "Truman Sendromu" olarak bilinen bu sanrı, modern insanın kendi hayatının bir kurgu olduğuna, etrafındaki herkesin ona bir oyun oynadığına dair duyduğu o derin şüphedir. Film, güvenli ve mutlu bir yalan ile; acı verici, fırtınalı ama özgür (gerçek) dünya arasındaki o ebedi insan tercihini anlatır.',
+    questionStem: 'The Truman Show (Truman Sendromu) hikâyesinin felsefi merkezinde yatan temel ikilem (çatışma) nedir?',
+    options: [
+      'Televizyon kanallarının reyting uğruna insan hayatını hiçe sayması',
+      'Gemi yolculuklarının deniz korkusunu yenmedeki psikolojik etkisi',
+      'İnsanın, güvenli, konforlu ama sahte (yalan) bir hayatı mı; yoksa acı verici, bilinmezliklerle dolu ama özgür (gerçek) bir hayatı mı seçeceği ikilemi',
+      'Gelişen teknolojinin mahremiyet (özel hayat) kavramını tamamen yok etmesi'
+    ],
+    correct: 2,
+    explanation: 'Truman\'ın güvenli stüdyoyu terk edip fırtınalı denize açılması; konforlu sahte bir hayat ile acı verici ama gerçek (özgür) bir hayat arasındaki felsefi tercihi yansıtır.'
+  },
+  {
+    title: 'Dorian Gray\'in Portresi',
+    passage: 'Oscar Wilde\'ın "Dorian Gray\'in Portresi" adlı eserinde, inanılmaz derecede yakışıklı olan Dorian, bir ressamın çizdiği kendi portresini gördüğünde şeytani bir dilekte bulunur: "Keşke ben hep böyle genç ve güzel kalsam da, benim yerime bu tablo yaşlansa." Dileği kabul olur. Dorian yıllar boyunca her türlü ahlaksızlığa, suça ve zevke dalar; bedeni hiç yaşlanmaz, hep kusursuz kalır. Ancak tavan arasına sakladığı portresi, işlediği her günahta çirkinleşir, irin bağlar ve ruhunun o iğrenç çürümüşlüğünü bir ayna gibi yansıtır. Bu hikâye, dış görünüşün (estetiğin) kutsandığı bir toplumda, maskelerin ardında saklanan insan ruhunun o sessiz, karanlık ve çürümüş yıkımının kusursuz bir portresidir.',
+    questionStem: 'Dorian Gray\'in Portresi hikâyesinin odaklandığı asıl ahlaki ve psikolojik tema nedir?',
+    options: [
+      'Sanat eserlerinin (tabloların) zaman içinde fiziksel olarak yıpranması ve değerini kaybetmesi',
+      'Gençlik ve güzelliğe (dış görünüşe) tapınmanın ardında, içsel ahlakın ve insan ruhunun (vicdanın) nasıl çürüyüp yozlaştığı',
+      'Ressamların modelleriyle kurdukları gizli ve tehlikeli duygusal bağlar',
+      'Ölümsüzlüğün ancak bilimsel ilerlemelerle mümkün olabileceği inancı'
+    ],
+    correct: 1,
+    explanation: 'Dorian\'ın dışarıdan güzel kalıp işlediği günahlarla tablosunun çirkinleşmesi; dış güzelliğin ardında saklanan ruhsal ve ahlaki çürümüşlüğü sembolize eder.'
+  },
+  {
+    title: 'Don Kişot ve Yeldeğirmenleri',
+    passage: 'Miguel de Cervantes\'in ölümsüz karakteri Don Kişot, çok fazla şövalye romanı okuduğu için aklını yitirmiş ve kendini dünyadaki kötülükleri düzeltecek bir şövalye sanan yaşlı bir adamdır. Paslı bir zırh ve sıska bir atla yollara düşer. Onun en meşhur macerası, tarlalardaki devasa yeldeğirmenlerini "kolları olan devasa canavarlar" sanıp onlara mızrağıyla saldırmasıdır. Çevresindekiler ona deli dese de, Don Kişot aslında grileşmiş, çıkarcı ve büyüsünü yitirmiş bir dünyaya karşı açılmış tek kişilik, asil bir isyandır. O yeldeğirmenlerine saldırmak, mantığın sınırlarını aşıp, ideallerin ve hayallerin o asil çılgınlığını, sığ gerçekliğe tercih etmektir.',
+    questionStem: 'Yazar, Don Kişot\'un yeldeğirmenlerine saldırmasını (deliliğini) nasıl yorumlamaktadır?',
+    options: [
+      'Aşırı kitap okumanın yaşlı insanlarda yarattığı kalıcı bir beyin hasarı olarak',
+      'Dönemin İspanya\'sında tarım teknolojilerine (yeldeğirmenlerine) karşı verilen ekonomik bir tepki olarak',
+      'Sıradan, çıkarcı ve hayal gücünden yoksun gerçek dünyaya karşı verilmiş, idealler uğruna girişilen asil ve romantik bir isyan olarak',
+      'Askeri taktiklerin sivil hayatta uygulanmasının yarattığı trajikomik bir kaza olarak'
+    ],
+    correct: 2,
+    explanation: 'Don Kişot\'un deliliğinin, "grileşmiş, çıkarcı bir dünyaya karşı açılmış asil bir isyan" olarak tanımlanması; idealizmin sığ gerçekliğe başkaldırısını ifade eder.'
+  },
+  {
+    title: 'Kabil ve Habil: İçimizdeki Cinayet',
+    passage: 'İbrahimî dinlerin anlatısına göre, insanlık tarihinin ilk cinayeti iki kardeş arasında işlenir. Kabil bir çiftçi, kardeşi Habil ise bir çobandır. Tanrı, Habil\'in sunduğu kanlı kurbanı kabul ederken, Kabil\'in sunduğu toprağın mahsullerini reddeder. İçine düşen o devasa kıskançlık ve yetersizlik hissiyle (kibirle) gözü dönen Kabil, kardeşi Habil\'i öldürür. Bu hikâye, kötülüğün dışarıdan gelen şeytani bir güç değil, bizzat insanın kendi doğasında, en yakınındakine (kardeşine) duyduğu kıskançlıkta saklı olduğunu gösterir. İnsanlık tarihinin ilk eyleminin bir "kardeş katli" olması, medeniyetimizin sevgi üzerine değil, kan ve rekabet üzerine inşa edildiğine dair kan dondurucu bir metafordur.',
+    questionStem: 'Kabil ve Habil hikâyesi üzerinden insan doğasına dair yapılan asıl psikolojik/felsefi tespit nedir?',
+    options: [
+      'Tarım toplumlarının göçebe hayvancılık yapan toplumlardan daha zengin olduğu',
+      'Kötülüğün ve şiddetin dış (doğaüstü) bir güçten değil, bizzat insanın kendi içindeki kıskançlık, rekabet ve kibir gibi ilkel duygulardan doğduğu',
+      'Dini ritüellerde her zaman hayvansal gıdaların bitkisel gıdalara tercih edilmesi gerektiği',
+      'Kardeşler arasındaki çatışmaların sadece miras paylaşımından kaynaklandığı'
+    ],
+    correct: 1,
+    explanation: 'Cinayetin, Kabil\'in içindeki kıskançlık ve kibirle işlenmesi; kötülüğün dışarıdan bir şeytan değil, insanın kendi doğasından kaynaklandığını gösterir.'
+  },
+  {
+    title: 'Sirenlerin Şarkısı ve Odysseus',
+    passage: 'Homeros\'un Odysseia destanında, Odysseus gemisiyle Sirenlerin yaşadığı adanın yakınından geçer. Sirenler, öylesine büyüleyici ve karşı konulmaz bir şarkı söylerler ki, o sesi duyan her denizci aklını yitirir, denize atlar ve kayalıklarda parçalanarak ölür. Odysseus o ilahi sesi duymayı çok ister ama ölmek de istemez. Dâhice bir plan yapar: Tüm mürettebatının kulaklarını balmumuyla tıkar, kendisini ise geminin ana direğine sıkıca bağlatır. "Ne kadar yalvarırsam yalvarayım beni çözmeyin" der. O dayanılmaz şarkıyı duyduğunda çırpınır, ipleri koparmak ister ama bağlı olduğu için kurtulur. Bu mit, insanın kendi zayıflıklarını (dürtülerini) önceden bilip, aklıyla o dürtülere karşı (direğe bağlanmak gibi) önlem alabilmesinin felsefesidir.',
+    questionStem: 'Odysseus\'un kendini gemi direğine bağlatması, insan iradesine dair hangi kavramı sembolize eder?',
+    options: [
+      'Korkularla yüzleşmek yerine onlardan tamamen kaçıp saklanmayı',
+      'Müzik ve sanatın insan psikolojisi üzerindeki yıkıcı (hipnotik) etkisini',
+      'İnsanın kendi ilkel dürtülerini ve zayıflıklarını önceden kabullenip, akıl yoluyla bu zaaflara karşı kendini dizginlemesini (irade kontrolünü)',
+      'Gemi kaptanlarının mürettebatına güvenmeyip tüm kararları tek başına almasını'
+    ],
+    correct: 2,
+    explanation: 'Kendini direğe bağlatıp kulakları tıkatması; zaaflarını önceden bilip akıl/irade yoluyla baştan çıkarıcı güce karşı önlem almasını sembolize eder.'
+  },
+  {
+    title: 'Narkissos ve Ekrandaki Yansıma',
+    passage: 'Yunan mitolojisinde Narkissos, ormanda gezerken berrak bir su birikintisine eğilir ve sudaki yansımasını görür. Kendi yüzünün kusursuz güzelliğine öylesine âşık olur ki, o görüntüden bir saniye bile gözlerini ayıramaz. Yemek yemeyi, su içmeyi unutur ve o yansımanın başında eriyerek ölür. Binlerce yıl önce yazılan bu efsane, aslında bugünün akıllı telefon ekranlarına gömülmüş, sosyal medyadaki filtreli "yansımalarına" (sahte benliklerine) âşık olan modern insanın kâbusudur. Narsisizm, kendini çok sevmek değil; kendi yansıman dışında dünyadaki hiçbir gerçekliği göremeyecek kadar körleşmek ve o sahte görüntünün içinde boğulmaktır.',
+    questionStem: 'Yazar, Narkissos mitini günümüz modern toplumuna uyarlarken neyi eleştirmektedir?',
+    options: [
+      'Temiz su kaynaklarının azalması nedeniyle doğada vakit geçirmenin zorlaşmasını',
+      'Güzellik salonlarının ve kozmetik sektörünün insanlar üzerindeki ekonomik baskısını',
+      'İnsanların sosyal medya ekranlarındaki sahte benliklerine (kendi yansımalarına) saplantılı şekilde bağlanıp, gerçek dünyadan koparak körleşmesini (narsisizmi)',
+      'Ormanlık alanlarda tek başına seyahat etmenin getirdiği psikolojik tehlikeleri'
+    ],
+    correct: 2,
+    explanation: 'Narkissos\'un sudaki yansımasına âşık olup erimesi, günümüz insanının akıllı telefon ekranlarındaki kendi filtreli yansımalarına bakarak gerçeklikten kopmasını (narsisizmi) eleştirir.'
+  },
+  {
+    title: 'Golyat ve Davut: Asimetrik Güç',
+    passage: 'Efsaneye göre Golyat (Calut), tepeden tırnağa zırhlı, devasa boyutlarda, elinde yenilmez kılıcı olan bir savaş makinesidir. İsrailoğulları ordusundan kimse onunla teke tek dövüşmeye cesaret edemez. Çoban bir çocuk olan Davut, zırh giymeyi veya kılıç almayı reddeder. Nehrin kenarından beş pürüzsüz taş alır ve sapanıyla Golyat\'ın zırhının açıkta bıraktığı tek yere, tam alnının ortasına taşı fırlatarak devi yere serer. Golyat ve Davut hikâyesi, "Büyük her zaman kazanır" kuralının bir yalan olduğunu; asıl gücün devasa zırhlarda değil, kuralları reddetmekte, çeviklikte ve düşmanın o aşılmaz sanılan kibrindeki (hantallığındaki) o küçücük zayıf noktayı bulmakta saklı olduğunu gösterir.',
+    questionStem: 'Davut\'un Golyat\'ı yenmesi, güç ve strateji bağlamında neyi temsil eder?',
+    options: [
+      'Geleneksel ve ağır zırhlı orduların savunma savaşlarında her zaman daha avantajlı olduğunu',
+      'Fiziksel büyüklüğün ve ağır silahların, kuralları yıkan çevik (asimetrik) bir zekâ ve doğru yere yapılmış küçük bir hamle karşısında çaresiz kalabileceğini',
+      'Gençlerin yaşlı savaşçılara karşı her zaman daha merhametli davrandığını',
+      'Antik savaşlarda sadece uzaktan atılan silahların kullanılmasının bir kural olduğunu'
+    ],
+    correct: 1,
+    explanation: 'Davut\'un kılıç yerine sapan kullanarak dev bir savaşçıyı tek taşla devirmesi; fiziksel gücün (büyüklüğün), kuralları yıkan çevik ve asimetrik bir zekâ karşısında yenilebileceğini temsil eder.'
+  },
+  {
+    title: 'Aşil\'in Topuğu',
+    passage: 'Yunan mitolojisinin en yenilmez savaşçısı Aşil (Akhilleus), bebekken annesi tarafından kutsal Styx nehrine batırılır. Bu sihirli su, değdiği her yeri silah işlemez bir zırha dönüştürür. Ancak annesi onu topuğundan tutarak suya daldırdığı için, Aşil\'in topuğu ıslanmaz ve ölümlü (savunmasız) kalır. Yıllar sonra Truva savaşında sayısız orduyu tek başına yok eden bu yenilmez yarı-tanrı, Truva prensi Paris\'in attığı zehirli bir okun tam o ıslanmayan topuğuna saplanmasıyla hayatını kaybeder. "Aşil Topuğu", ne kadar güçlü, zengin veya yenilmez görünürse görünsün, her insanın, her ordunun veya her imparatorluğun mutlaka onu yerle bir edecek o küçücük, gizli bir zayıflığı (kırılganlığı) olduğunu hatırlatır.',
+    questionStem: 'Aşil\'in (Akhilleus) hikâyesinde yer alan "Aşil Topuğu" kavramı mecazi olarak neyi ifade eder?',
+    options: [
+      'Ailelerin çocuklarını aşırı korumacı yetiştirmesinin onlara zarar verdiğini',
+      'İnsanların sadece ayak veya bacak yaralanmalarından hayatını kaybettiği antik inancı',
+      'Dışarıdan ne kadar yenilmez veya mükemmel görünürse görünsün, her sistemin veya kişinin yıkımına yol açabilecek o küçük, gizli ve kritik zayıflık noktasını',
+      'Savaşlarda zehirli ok kullanmanın düşmanı psikolojik olarak korkuttuğunu'
+    ],
+    correct: 2,
+    explanation: 'Yenilmez bir savaşçının topuğundan vurulup ölmesi; her mükemmel/yenilmez gücün ardında onu yıkabilecek küçük ve kritik bir zayıflık noktası ("Aşil Topuğu") barındırdığını ifade eder.'
+  },
+  {
+    title: 'Felsefe Taşı ve Simya',
+    passage: 'Orta Çağ boyunca simyacıların en büyük takıntısı, sıradan metalleri (kurşunu) saf altına çevireceğine ve içene ölümsüzlük bahşedeceğine inanılan "Felsefe Taşı"nı bulmaktı. Yüzlerce yıl boyunca karanlık laboratuvarlarda asitler kaynatıldı, zehirli dumanlar solundu. Simyacılar o büyülü taşı asla bulamadılar; ancak bu umutsuz arayış sırasında bilmeden modern kimyanın temellerini (damıtmayı, fosforu, asitleri) buldular. Felsefe Taşı, insanoğlunun ulaşılamaz hayallerinin peşinden koşarken, o hayale giden yolda döktüğü terin ve harcadığı emeğin, aslında aradığı o efsanevi altından çok daha değerli ve gerçek (bilimsel) hazineler yarattığının şiirsel bir kanıtıdır.',
+    questionStem: 'Simyacıların "Felsefe Taşı" arayışlarının bilim tarihindeki ironik (şaşırtıcı) sonucu parçada nasıl ifade edilmiştir?',
+    options: [
+      'Kurşunu altına çevirmenin aslında çok basit bir formülü olduğunu keşfetmeleri',
+      'Hedefledikleri imkânsız (hayali) büyüye asla ulaşamamalarına rağmen, bu süreçteki denemelerinin modern kimyanın o gerçek ve değerli temellerini atması',
+      'Ölümsüzlük iksirini bularak insan ömrünü laboratuvar ortamında uzatmayı başarmaları',
+      'Asitlerin zehirli dumanından dolayı simyacıların çoğunun akıl sağlığını yitirmesi'
+    ],
+    correct: 1,
+    explanation: 'Felsefe Taşı (büyü) bulunamasa da bu umutsuz arayış sırasında damıtma/asitler gibi modern kimyanın temellerinin bulunması, ulaşılamaz hedeflerin gerçek hazineler (bilim) yaratabildiğini gösterir.'
+  }
+];
+
+export const edebiyatParagrafSorulari10: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_10.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_10[idx];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-edebiyat10-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
 // paragrafTests.ts dosyasının hata vermemesi için iki listeyi birleştirip eski adıyla dışa aktarıyoruz:
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari,
@@ -2544,5 +2821,6 @@ export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari6,
   ...bilimParagrafSorulari7,
   ...felsefeParagrafSorulari8,
-  ...psikolojiParagrafSorulari9
+  ...psikolojiParagrafSorulari9,
+  ...edebiyatParagrafSorulari10
 ];
