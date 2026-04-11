@@ -5027,6 +5027,283 @@ export const felsefeParagrafSorulari18: BilimParagrafQuestion[] = Array.from({ l
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
+const PARAGRAPH_THEMES_19 = [
+  {
+    title: 'Şeytan Çekirdeği (The Demon Core)',
+    passage: '1946 yılında Los Alamos laboratuvarında fizikçi Louis Slotin, "Şeytan Çekirdeği" adı verilen plütonyum küresinin üzerinde kritik kütle deneyi yapıyordu. İki yarım küreyi birbirine yaklaştırırken, aradaki mesafeyi korumak için sadece basit, düz uçlu bir tornavida kullanıyordu! Slotin bu aşırı tehlikeli deneye "Ejderhanın kuyruğunu gıdıklamak" diyordu. O gün tornavida kaydı, küreler kapandı ve odayı ölümcül, kör edici mavi bir radyasyon ışığı kapladı. Slotin küreleri elleriyle ayırıp odadaki diğer bilim insanlarını kurtardı ama kendisi 9 gün içinde eriyerek can verdi. Bu olay; insanoğlunun evrendeki en yıkıcı ve tanrısal gücü (atomu) kontrol ederken, ona sıradan bir el aletiyle (tornavidayla) müdahale edecek kadar kibre ve ölümcül bir laubaliliğe kapılmasının en trajik sembolüdür.',
+    questionStem: 'Şeytan Çekirdeği deneyindeki kaza, bilim insanlarının tutumu hakkında hangi felsefi ironiyi (çelişkiyi) göz önüne sermektedir?',
+    options: [
+      'Plütonyum gibi elementlerin laboratuvar ortamında asla kontrol edilemeyeceği gerçeğini',
+      'Bilim insanlarının hayat kurtarmak uğruna kendi canlarını feda eden kusursuz kahramanlar olduğunu',
+      'İnsanoğlunun evrendeki en devasa ve apokaliptik gücü (atomu) kontrol ederken bile, ona basit bir tornavidayla yaklaşacak kadar inanılmaz bir kibre, sıradanlığa ve laubaliliğe kapılmasını',
+      'Nükleer enerjinin sadece savaşlarda kullanılması gerektiği yönündeki siyasi inancı'
+    ],
+    correct: 2,
+    explanation: 'Dünyayı yok edecek bir güce basit bir tornavidayla (ve laubalilikle) müdahale edilmesi; insanın o devasa güç karşısındaki kibrini ve ölümcül sıradanlığını (ironiyi) sembolize eder.'
+  },
+  {
+    title: 'Vavilov Enstitüsü Kuşatması',
+    passage: 'İkinci Dünya Savaşı\'nda Nazi ordusu Leningrad\'ı 872 gün boyunca kuşattığında, şehirde bir milyondan fazla insan açlıktan öldü. Şehrin kalbindeki Vavilov Enstitüsü\'nde ise dünyanın en büyük ve en değerli "tohum bankası" bulunuyordu. İçeride tonlarca pirinç, buğday ve patates vardı. Ancak enstitüdeki dokuz botanikçi bilim insanı, o tohumlara dokunmaktansa masalarında açlıktan eriyerek ölmeyi tercih ettiler. Çünkü o tohumlar, savaş bittikten sonra insanlığın (tarımın) geleceğini ve biyolojik çeşitliliğini yeniden inşa edecek olan kutsal bir mirastı. Vavilov kahramanları, bilimin sadece laboratuvarda yapılan bir meslek değil; insanlığın geleceğini, kendi ilkel hayatta kalma (açlık) içgüdüsünden bile üstün tutan o eşsiz, asil ve sarsılmaz inanç olduğunu kanıtlamıştır.',
+    questionStem: 'Vavilov Enstitüsü\'ndeki bilim insanlarının eylemi, ahlaki ve bilimsel bağlamda neyin en yüce göstergesidir?',
+    options: [
+      'Bilim insanlarının yiyeceklerin bozulduğunu düşünerek zehirlenmekten korktuklarının',
+      'Nazi ordusunun tohum bankasına yaklaşmasını engellemek için kurulan askeri bir direnişin',
+      'Bireyin kendi temel varoluş (hayatta kalma) içgüdüsünü bile hiçe sayarak; insanlığın, bilimin ve doğanın geleceğini koruma uğruna gösterdiği o sarsılmaz fedakârlığın (adanmışlığın)',
+      'Sovyet yönetiminin bilim insanlarına uyguladığı katı sansür ve ölüm cezalarının'
+    ],
+    correct: 2,
+    explanation: 'Açlıktan ölmelerine rağmen tohumları yememeleri; kendi canlarından ziyade insanlığın ve doğanın geleceğini (bilimsel mirası) korumaya yönelik eşsiz bir fedakârlığı ve adanmışlığı gösterir.'
+  },
+  {
+    title: 'Akıllı Hans (Clever Hans) İllüzyonu',
+    passage: '1900\'lerin başında Almanya\'da "Akıllı Hans" adında bir at, toynağını yere vurarak matematik işlemleri çözüyor, tarih sorularına cevap veriyordu. Herkes onun bir insan zekâsına sahip olduğuna inandı. Ta ki psikolog Oskar Pfungst bu mucizeyi inceleyene kadar. Pfungst şunu fark etti: Soruyu soran kişi cevabı bilmiyorsa veya at soru soranın yüzünü göremiyorsa, Hans soruları asla bilemiyordu! At aslında matematik yapmıyordu; sadece karşısındaki insanın, doğru sayıya yaklaşıldığında nefesini tutması veya kaşını kaldırması gibi "mikro mimiklerini" okuyup toynağını vurmayı durduruyordu. "Akıllı Hans Etkisi", insanın doğaya ve hayvanlara bakarken kendi zekâsını (istediği cevabı) onlara yansıtıp, kendi kendini büyülediği (manipüle ettiği) o safdil kibrinin bilimsel adıdır.',
+    questionStem: 'Akıllı Hans hikâyesi, insan psikolojisinin olayları yorumlama biçimiyle ilgili hangi gerçeği ortaya koyar?',
+    options: [
+      'Hayvanların matematiksel zekâya sahip olsalar bile bunu insanlardan gizleme eğilimini',
+      'Atların görme yeteneklerinin insanlardan çok daha gelişmiş bir yapıya sahip olduğunu',
+      'İnsanların, karşılarındaki canlıların veya olayların aslında çok basit olan reflekslerini (beden dillerini) göz ardı ederek, onlara kendi zekâlarını ve bekledikleri karmaşık cevapları yansıtma (kendi illüzyonuna inanma) zaafını',
+      'Psikoloji biliminin hayvan deneylerinde her zaman başarısız sonuçlar verdiğini'
+    ],
+    correct: 2,
+    explanation: 'Atın sadece insan mimiklerini okumasına rağmen insanların onun matematik bildiğini sanması; insanın doğaya kendi zekâsını ve beklediği cevabı yansıtma (kendi illüzyonuna inanma) zaafını açıklar.'
+  },
+  {
+    title: 'Biyosfer 2: Doğayı Taklit Etme Kibri',
+    passage: '1991 yılında, gelecekte Mars\'a kurulacak kolonilere hazırlık için Arizona çölüne devasa bir cam fanus (Biyosfer 2) inşa edildi. İçine okyanus, yağmur ormanı ve tarım alanları konularak 8 bilim insanı buraya kilitlendi. İnsanoğlu, milyarlarca yılda oluşan Dünya\'nın kusursuz ekolojik dengesini kendi elleriyle taklit edebileceğini sanıyordu. Ancak deney feci şekilde çöktü. Betondaki bir kimyasal hata yüzünden oksijen seviyesi ölümcül şekilde düştü, karbondioksit tavan yaptı. Tarım alanları kurudu, içeride sadece hamamböcekleri ve karıncalar çoğaldı. En kötüsü, bilim insanları stresten çıldırarak birbirlerine düşman oldular. Biyosfer 2, insanın doğanın milyarlarca yıllık kusursuz ve vahşi dengesini birkaç mühendislik denklemiyle cam bir kavanoza sığdırabileceğine dair duyduğu o teknolojik kibrin (Tanrıcılık oynamanın) devasa bir mezar taşıdır.',
+    questionStem: 'Biyosfer 2 deneyinin çöküşü, insan-doğa ilişkisine dair hangi felsefi eleştiriyi barındırmaktadır?',
+    options: [
+      'Dünya dışı gezegenlerde (Mars\'ta) su bulmanın imkânsızlığına dair bilimsel kanıtı',
+      'Bilim insanlarının kapalı alanlarda psikolojik olarak çalışmaya elverişli olmadığını',
+      'İnsanoğlunun, doğanın milyarlarca yılda kurduğu o karmaşık ve kusursuz dengeyi, kendi ilkel teknolojisiyle kolayca kopyalayıp yönetebileceğine dair beslediği o küstah ve başarısız kibri (yanılgıyı)',
+      'Böcek türlerinin diğer tüm hayvan türlerinden daha hızlı evrimleştiği gerçeğini'
+    ],
+    correct: 2,
+    explanation: 'Deneyin çökmesi; insanın doğanın milyarlarca yıllık kusursuz dengesini cam bir fanusta kopyalayabileceğini sanmasının (teknolojik kibrinin) feci bir şekilde patlamasıdır.'
+  },
+  {
+    title: 'Trepansasyon (Kafatası Delgisi)',
+    passage: 'Arkeolojik kazılarda, binlerce yıl öncesine ait ve üzerinde kusursuz, yuvarlak delikler açılmış insan kafatasları bulunur. Bu deliğin etrafındaki kemiklerin iyileşme izleri, hastaların bu korkunç ameliyattan (Trepansasyon) sonra yıllarca yaşadığını kanıtlar. Antik insanlar bu ameliyatı beyin cerrahisi yapmak için değil, sara nöbeti veya migren geçiren kişinin kafasının içindeki "kötü ruhların (şeytanların)" dışarı çıkması için bir baca açmak amacıyla yapıyorlardı. Ancak işin en çılgın tarafı şudur: Kafatasını delmek, beyin kanaması veya kafa travması yaşayan hastalarda kafa içi basıncı gerçekten de düşürüyor ve hastanın hayatını kurtarıyordu! Bu durum; insanlık tarihinde bazen tamamen irrasyonel, büyülü ve yanlış bir inancın, tesadüfen son derece doğru ve hayat kurtaran bir tıbbi sonuca ulaşabileceğinin kanıtıdır.',
+    questionStem: 'Trepansasyon (Kafatası delme) uygulaması, bilim tarihindeki hangi ilginç çelişkiyi (ironiyi) göz önüne sermektedir?',
+    options: [
+      'Antik dönemde kullanılan cerrahi aletlerin modern aletlerden çok daha keskin ve steril olduğunu',
+      'İnsan beyninin her türlü darbeye karşı kendisini tamamen onarabilme yeteneğini',
+      'Tamamen mantık dışı, büyüsel ve yanlış bir inançla (kötü ruhları çıkarma) yapılan bir eylemin, tesadüfi bir şekilde tıbben doğru ve hayat kurtaran bir sonuca ulaşması çelişkisini',
+      'Geçmişte insanların kötü ruhlara inanmadığı halde dini otoritelerden korktukları için bu ameliyatı yaptırdıklarını'
+    ],
+    correct: 2,
+    explanation: '"Şeytanı çıkarmak" gibi büyüsel/yanlış bir inançla kafatasını delmenin, kafa içi basıncı düşürüp gerçekten hayat kurtarması (yanlış inanç, doğru sonuç) bu ironiyi açıklar.'
+  },
+  {
+    title: 'Kardaşev Ölçeği: Tanrılığın Matematiği',
+    passage: '1964 yılında Rus astrofizikçi Nikolay Kardaşev, evrendeki olası medeniyetlerin gelişmişlik düzeyini ölçmek için ahlaki veya kültürel değerleri değil, acımasız bir matematiksel kriteri seçti: "Enerji Tüketimi". Kardaşev Ölçeği\'ne göre; Tip 1 medeniyet kendi gezegenindeki tüm enerjiyi kontrol eden, Tip 2 kendi yıldızının (Güneşin) enerjisini devasa bir küreyle hapseden, Tip 3 ise tüm galaksinin enerjisini emen tanrısal bir medeniyettir. Peki insanlık nerededir? Biz henüz Tip 1 bile değiliz; gezegenimizin enerjisini tam kullanamayan, 0.73 seviyesinde ilkel bir türüz. Kardaşev bize şunu fısıldar: Evrensel ölçekte medeniyet, ne kadar çok kitap yazdığınız veya barış içinde yaşadığınızla değil; doğaya ve evrene ne kadar şiddetli bir şekilde boyun eğdirip onun enerjisini (damarlarını) sömürebildiğinizle ölçülür.',
+    questionStem: 'Kardaşev Ölçeği\'nin medeniyet kavramına getirdiği asıl (ve acımasız) bakış açısı nedir?',
+    options: [
+      'Gelecekte teknolojinin tamamen duracağı ve insanların ilkel hayata döneceği',
+      'Gelişmişliğin ahlak, kültür veya barış gibi insani değerlerle değil; doğrudan evrenin kaynaklarını (enerjiyi) sömürme ve doğaya mutlak boyun eğdirme kapasitesiyle ölçüldüğü',
+      'Uzaylıların insanlıktan çok daha ahlaklı ve merhametli bir düzene sahip olduğu',
+      'Enerji tüketiminin artmasının gezegenlerin yörüngelerini bozarak evreni yok edeceği'
+    ],
+    correct: 1,
+    explanation: 'Medeniyetin ahlak veya kitapla değil, yıldızların/galaksinin enerjisini sömürme (kullanma) kapasitesiyle ölçülmesi, bu acımasız metrik bakış açısını tanımlar.'
+  },
+  {
+    title: 'Sahte Ameliyatlar (Placebo Surgery)',
+    passage: 'Diz ağrısı çeken hastalar üzerinde yapılan bir tıbbi deney tıp dünyasını şoka uğrattı. Doktor Bruce Moseley, hastaların yarısına gerçek bir diz ameliyatı yaptı. Diğer yarısına ise anestezi verdi, dizlerine sadece bir kesik attı, ameliyat sesleri çıkaran bir kaset çaldı ve hiçbir şey yapmadan dizlerini tekrar dikti! Uyandıklarında tüm hastalara ameliyatın başarılı olduğu söylendi. Yıllar süren takiplerin ardından, "sahte" ameliyat olan hastaların da gerçek ameliyat olanlar kadar iyileştiği, ağrılarının tamamen geçtiği ve rahatça yürümeye başladıkları görüldü. Bu deney, insan zihninin bedeni kandıran basit bir illüzyonist olmadığını; mutlak bir inancın, bizzat bedenin anatomisini ve kimyasını değiştirebilecek kadar güçlü ve kusursuz bir cerrah (neşter) olduğunu kanıtlar.',
+    questionStem: 'Sahte Ameliyat deneyinin tıp bilimine gösterdiği en sarsıcı gerçek nedir?',
+    options: [
+      'Diz ameliyatlarının aslında tıp literatüründe tamamen gereksiz bir müdahale olduğu',
+      'Anestezi ilaçlarının kemik dokusunu onarıcı gizli bir kimyasal etkiye sahip olduğu',
+      'İnsanın beynindeki "mutlak inancın", hiçbir fiziksel (gerçek) müdahale yapılmasa bile bedeni fiziksel olarak iyileştirebilecek kadar somut ve cerrahi bir güce (Plasebo) sahip olduğu',
+      'Doktorların hastalarla iletişim kurmamasının ameliyat başarısını artırdığı'
+    ],
+    correct: 2,
+    explanation: 'Sadece kesik atılıp hiçbir şey yapılmayan hastaların da iyileşmesi; zihindeki mutlak inancın (plasebonun) bedeni fiziksel olarak onaracak cerrahi bir güce sahip olduğunu kanıtlar.'
+  },
+  {
+    title: 'Starfish Prime: Gökyüzünü Körü Etmek',
+    passage: '1962 yılında, Soğuk Savaş\'ın zirvesindeyken ABD ordusu "Starfish Prime" projesini hayata geçirdi ve atmosferin 400 kilometre üzerinde (uzayda) 1.4 megatonluk bir nükleer bomba patlattı. Amaç, nükleer radyasyonun dünyanın manyetik alanını nasıl etkileyeceğini görmekti. Patlama öylesine şiddetliydi ki, Hawaii semalarında kan kırmızısı devasa yapay auroralar oluştu, radyasyon fırtınası yörüngedeki uyduları anında kızartıp yok etti ve Dünya\'nın etrafında yıllarca sürecek yapay bir radyasyon kuşağı yarattı. Starfish Prime, insanoğlunun teknolojik gövde gösterisi uğruna, sadece kendi gezegenini değil; evrenin dokunulmaz sanılan o karanlık ve sessiz gökyüzünü bile kör edecek kadar tehlikeli bir kibre ve pervasızlığa (hubris) ulaştığının belgesidir.',
+    questionStem: 'Starfish Prime deneyi, insanlık ve teknoloji bağlamında neyin eleştirisidir?',
+    options: [
+      'Uzay boşluğunda ses yayılmadığı için patlamaların aslında tehlikesiz olduğu yanılgısının',
+      'Devletlerin siyasi gövde gösterisi (kibir) uğruna, sadece yeryüzünü değil, gökyüzünün (evrenin) doğal işleyişini bile kör edecek kadar sınır tanımaz ve pervasız bir yıkıcılığa ulaşmasının',
+      'Nükleer silahların küresel ısınmayı durdurabilecek bir alternatif olarak görülmesinin',
+      'Radyasyonun atmosferi delerek dünyaya uzaylı virüslerinin girmesine yol açtığının'
+    ],
+    correct: 1,
+    explanation: 'Sırf denemek ve güç göstermek için uzayda nükleer patlatıp uyduları kör etmesi; insanoğlunun gökyüzünü bile pervasızca ve kibre kapılarak tahrip etmesinin eleştirisidir.'
+  },
+  {
+    title: 'Tazmanya Kaplanı Benjamin',
+    passage: 'Dünya üzerindeki en eşsiz canlılardan biri olan Tazmanya Kaplanı (Thylacine), sırtında kaplan çizgileri olan bir kanguruya benzerdi. Çiftçilerin koyunlarını yediği bahanesiyle acımasızca avlandılar ve türleri yok olma noktasına geldi. 1936 yılında Hobart Hayvanat Bahçesi\'nde, bu türün yeryüzündeki son ve tek temsilcisi olan "Benjamin" adındaki Tazmanya Kaplanı kalmıştı. Ancak o karanlık gece, bakıcısı kapıyı kilitlemeyi unuttuğu için Benjamin açıkta kaldı ve dondurucu soğukta donarak öldü. 4 milyon yıldır bu gezegende yaşayan, fırtınalara ve buzul çağlarına direnen görkemli bir türün sonu; devasa bir savaşla veya göktaşıyla değil, sıradan bir insanın kapıyı kilitlemeyi unuttuğu o sessiz, sıradan ve kahredici ihmalkârlığıyla geldi.',
+    questionStem: 'Tazmanya Kaplanı Benjamin\'in ölüm şekli, bir türün yok oluşuna dair nasıl bir "trajik ironi" barındırmaktadır?',
+    options: [
+      'Hayvanat bahçelerinin vahşi hayvanların ömrünü uzatmadaki yetersizliği',
+      'Avcıların hayvanlara acımadan onları tamamen kürkleri için avlaması',
+      'Milyonlarca yıl hayatta kalmayı başaran devasa ve görkemli bir evrimsel tarihin; büyük bir felaketle değil, bir insanın "sıradan, sessiz ve basit bir ihmalkârlığı" (kapıyı kilitlememesi) ile son bulması',
+      'Kanguruların ve kaplanların genetik olarak soğuğa karşı çok dayanıksız olması'
+    ],
+    correct: 2,
+    explanation: '4 milyon yıllık evrimin ve buzul çağlarını atlatan bir türün sonunun, destansı bir felaketle değil, bir bakıcının kapıyı kilitlemeyi unutması gibi sıradan/basit bir ihmalle gelmesi olayın trajik ironisidir.'
+  },
+  {
+    title: 'Galvani ve Dans Eden Kurbağalar',
+    passage: '1780 yılında İtalyan anatomist Luigi Galvani, laboratuvarında ölü kurbağa bacaklarını incelerken, metal neşterin kurbağanın sinirine değmesiyle ölü bacağın aniden şiddetle tekme attığını (kasıldığını) gördü. Galvani şoka girmişti; cansız bedeni dirilten ve harekete geçiren bu gizemli gücün "Hayvansal Elektrik" (ruh) olduğuna, yaşamın sırrını bulduğuna inandı. Oysa ortada ruh falan yoktu; sadece farklı iki metalin kurbağanın ıslak dokusuyla birleşerek basit bir pil (elektrik akımı) yaratması söz konusuydu. Ancak Galvani\'nin bu yanılgısı, "ölü bedeni elektrikle diriltme" fikrini öylesine ateşledi ki, yıllar sonra Mary Shelley\'nin o ölümsüz "Frankenstein" canavarının ilham kaynağı oldu. Bilimde yanılgılar bazen gerçeğin kendisinden daha sarsıcı efsaneler doğurur.',
+    questionStem: 'Galvani\'nin kurbağa deneyi, bilimin ve edebiyatın kesiştiği noktada neyi sembolize etmektedir?',
+    options: [
+      'Kurbağaların sinir sistemlerinin memelilerden çok farklı çalıştığını',
+      'Bilimsel araştırmalardaki tamamen yanlış bir yorumlamanın (illüzyonun), insanlık tarihinin en ikonik kurgularından (Frankenstein) birine ilham vererek gerçeği aşan bir efsane yaratabileceğini',
+      'Elektriğin icadının aslında tıp bilimi sayesinde gerçekleştiğini',
+      'Ölülerin elektrik akımıyla gerçekten yeniden hayata döndürülebileceği fikrini'
+    ],
+    correct: 1,
+    explanation: 'Galvani\'nin basit bir pil reaksiyonunu "ruhun elektriği" (diriliş) sanıp yanılmasına rağmen, bu yanılgının Frankenstein gibi ölümsüz bir efsane yaratması vurgulanmıştır.'
+  },
+  {
+    title: 'Kim Peek: Gerçek Yağmur Adam',
+    passage: 'Dünyaca ünlü "Rain Man" (Yağmur Adam) filmine ilham veren Kim Peek, beyninin sağ ve sol yarımkürelerini birbirine bağlayan "Korpus Kallozum" köprüsü olmadan doğmuştu. Bu eksiklik ona insanüstü bir güç verdi: İki gözüyle aynı anda kitabın karşılıklı iki sayfasını 8 saniyede okuyabiliyor ve okuduğu 12.000 kitabın %98\'ini kelimesi kelimesine hatırlıyordu. O, yürüyen devasa bir kütüphaneydi. Ancak madalyonun diğer yüzü trajikti; Kim, devasa veri tabanına rağmen tek başına gömleğini ilikleyemiyor, bir atasözünü (mecazı) asla anlayamıyor ve kendi başına hayatını sürdüremiyordu. Kim Peek bize insan beyninin sırrını fısıldar: Zekâ (veya bilinç) sadece sonsuz veriyi depolamak değildir; o verileri birbirine bağlayan, anlamlandıran ve soyutlayan o görünmez "bağlantı (köprü)" kapasitesidir.',
+    questionStem: 'Kim Peek\'in durumu, "insan zekâsı" kavramını tanımlarken hangi unsurun daha kritik olduğunu göstermektedir?',
+    options: [
+      'Ezber yeteneğinin ve hızlı okumanın hayatı kolaylaştıran en önemli beceri olduğu',
+      'Zekânın sadece saf bilgi ve veriyi devasa oranda depolamak olmadığı; asıl zekânın o bilgileri birbirine bağlamak, soyutlamak ve günlük hayata uyarlayabilmek (köprü kurmak) olduğu',
+      'Otizmli bireylerin sanatsal yaratıcılık konusunda diğer insanlardan daha yetenekli olduğu',
+      'İnsan beyninin sol yarımküresinin sağ yarımküreden daha önemli işlevlere sahip olduğu'
+    ],
+    correct: 1,
+    explanation: '12.000 kitap ezberlemesine rağmen düğmesini ilikleyememesi veya mecaz anlayamaması; zekânın sadece veri depolamak değil, o verileri bağlamak ve soyutlamak (anlamlandırmak) olduğunu kanıtlar.'
+  },
+  {
+    title: 'Mpemba Etkisi: İnadına Gerçek',
+    passage: '1963 yılında Tanzanyalı ortaokul öğrencisi Erasto Mpemba, dondurma yaparken sıcak sütün soğuk sütten daha çabuk donduğunu fark etti. Bu mantıksız durumu lise öğretmenlerine söylediğinde, öğretmenleri onunla alay etti ve "Bu fizik kurallarına aykırı, seninki Mpemba\'nın hayalperest fiziği!" diyerek onu aşağıladılar. Ancak Mpemba pes etmedi ve okula konferansa gelen ünlü fizikçi Denis Osborne\'a aynı soruyu sordu. Osborne gülmedi, laboratuvarda denedi ve şoka girdi: Sıcak su, belirli koşullarda gerçekten de soğuk sudan daha hızlı donuyordu! "Mpemba Etkisi" olarak tıp ve fizik literatürüne giren bu olay; akademik kibrin, ön kabullerin ve "ben bilirim" egosunun, en basit ve saf bir gerçeği (doğa olayını) bile görmezden gelerek kendini nasıl kör ettiğinin en güzel ispatıdır.',
+    questionStem: 'Mpemba Etkisi\'nin bilim tarihindeki öyküsü, aslında neyin eleştirisidir?',
+    options: [
+      'Gelişmekte olan ülkelerdeki laboratuvar ve eğitim koşullarının yetersizliğinin',
+      'Suyun termodinamik kurallarına tamamen aykırı, açıklanamaz mistik bir sıvı olmasının',
+      'Kurumsallaşmış akademik kibrin ve ön yargıların (dogmaların), saf bir gözleme dayanan basit gerçekleri bile nasıl aşağılayıp körü körüne reddettiğinin',
+      'Lise müfredatlarının üniversite eğitimine göre her zaman daha teorik ve pratik dışı kalmasının'
+    ],
+    correct: 2,
+    explanation: 'Öğretmenlerin çocuğun gözlemiyle alay edip onu aşağılaması, ancak çocuğun haklı çıkması; akademik kibrin ve ön yargıların basit bir gerçeğe karşı nasıl körleştiğini eleştirir.'
+  },
+  {
+    title: 'N-Işınları (N-Rays) Yanılgısı',
+    passage: '1903 yılında Fransız fizikçi René Blondlot, her maddeden yayılan yepyeni ve gizemli bir ışın bulduğunu iddia etti ve buna "N-Işını" adını verdi. Kısa sürede onlarca ünlü bilim insanı laboratuvarlarında bu ışınları "gördüklerini" onayladılar, makaleler yayınlandı, Fransa bu büyük buluşla gurur duydu. Ta ki Amerikalı fizikçi Robert Wood, Blondlot\'un laboratuvarına gizlice girip, ışınları ölçen cihazın içindeki kritik prizmayı cebine saklayana kadar. Prizma olmamasına (makine bozuk olmasına) rağmen, Blondlot odada hala N-ışınlarını gördüğünü iddia etmeye devam etti! Ortada bir ışın falan yoktu. N-Işınları vakası, bilim insanı bile olsa, insanın görmek istediği şeye o kadar şiddetli inandığında, kendi zihninin yarattığı halüsinasyonları bile gerçek birer veri sanabileceğini (kolektif onaylanma yanlılığını) gösterir.',
+    questionStem: 'N-Işınları yanılgısı, bilimsel araştırmaların karşısındaki hangi büyük psikolojik tehlikeyi göz önüne sermektedir?',
+    options: [
+      'Laboratuvar aletlerinin zamanla kalibrasyonlarının bozulup yanlış veriler üretmesini',
+      'Bilim insanlarının sadece para ve şöhret kazanmak için kasıtlı olarak sahte veriler üretmesini',
+      'İnsanın (ve bilim camiasının) beklentilerine ve inançlarına o kadar sıkı bağlanması ki, ortada hiçbir fiziksel kanıt yokken bile "görmek istediğini görmesi" (onaylanma yanlılığı/kolektif halüsinasyon) tehlikesini',
+      'Amerikalı ve Fransız bilim insanları arasındaki milliyetçi kıskançlığın bilimi durdurmasını'
+    ],
+    correct: 2,
+    explanation: 'Prizma yokken bile ışını gördüğünü iddia etmesi ve onlarca kişinin bunu onaylaması; insanların inanmak istedikleri şeye körü körüne bağlanıp (onaylanma yanlılığı) halüsinasyon görmesi tehlikesini anlatır.'
+  },
+  {
+    title: 'K-T Sınırı: İridyum Anomalisi',
+    passage: 'Yıllarca bilim dünyası dinozorların nasıl yok olduğunu tartıştı; volkanlar, iklim krizi veya hastalıklar suçlandı. Fizikçi Luis Alvarez ve oğlu, İtalya\'da dağlardaki kaya katmanlarını incelerken tam da dinozorların yok olduğu 66 milyon yıl öncesine ait incecik, kil gibi bir tabaka buldular. Bu tabakada, Dünya yüzeyinde bulunmayan ancak asteroitlerde bolca bulunan "İridyum" elementi akılalmaz derecede yüksekti. Dünyanın her yerinde tam o tarihte aynı iridyum tozu vardı. Dinozorların yavaşça değil, gökyüzünden düşen devasa bir ateş topuyla (asteroitle) bir gecede yok olduğu bu şekilde kanıtlandı. K-T Sınırı, gezegenimizin kabuğunun aslında devasa ve acımasız bir cinayet günlüğü olduğunu; en apokaliptik kıyametlerin bile sadece bir milimetrelik kozmik bir toz tabakasına sığdırılabileceğini kanıtlar.',
+    questionStem: 'K-T Sınırında İridyum bulunmasının anlatıldığı bu parçadan çıkarılacak temel bilimsel (ve felsefi) mesaj nedir?',
+    options: [
+      'Dinozorların uzaydan gelen radyasyon yüzünden genetik mutasyona uğradığı',
+      'Evrendeki elementlerin zamanla dünyadaki dağ oluşumlarını etkilediği',
+      'Dünya tarihinin (ve en korkunç kıyametlerin) yeryüzü katmanlarında silinmez bir günlük gibi saklandığı; gökten düşen bir felaketin (asteroidin) bir milimetrelik tozla bile kusursuzca kanıtlanabildiği',
+      'İridyum madeninin gelecekteki enerji krizlerini çözebilecek tek element olduğu'
+    ],
+    correct: 2,
+    explanation: '66 milyon yıl önceki bir asteroid çarpmasının kaya katmanındaki incecik iridyum tozuyla kanıtlanması; dünyanın kabuğunun, en büyük kıyametleri bile (toz halinde) kaydeden bir günlük olduğunu gösterir.'
+  },
+  {
+    title: 'Taos Uğultusu (The Taos Hum)',
+    passage: 'ABD\'nin New Mexico eyaletindeki Taos kasabasında yaşayan halkın yaklaşık %2\'si, gece gündüz susmayan, derinden gelen, düşük frekanslı dizel bir motor sesine benzer bir uğultu duymaktadır. İşin korkunç tarafı, bölgeye kurulan en hassas mikrofonlar ve dinleme cihazları hiçbir ses dalgası kaydetmemektedir. Uzmanlara göre ortada fiziksel bir ses yoktur. Ancak o %2\'lik kesim, uğultu yüzünden uykusuzluk çekmekte, çıldırmakta ve hatta bazıları intihara sürüklenmektedir. Taos Uğultusu, deliliğin sınırlarında dolaşan bir işkencedir. Dünyanın en dayanılmaz acısı, size fiziksel bir zarar verilmesi değil; beyninizin içinde yankılanan o sağır edici kâbusu, yanınızdaki hiç kimseye (ve bilime) ispatlayamayarak kendi gerçekliğinizin içinde bir mahkûm gibi tek başınıza çırpınmanızdır.',
+    questionStem: 'Taos Uğultusu\'nu deneyimleyen insanların asıl psikolojik işkencesi parçada neye bağlanmıştır?',
+    options: [
+      'Gürültü kirliliğinin kasabadaki ekonomik faaliyetleri tamamen durdurmasına',
+      'İnsanların gizli askeri deneyler yapıldığını düşünerek hükümete karşı derin bir paranoya beslemesine',
+      'Sesi sadece kendilerinin duyması ve en hassas cihazların bile bunu kaydedememesi nedeniyle; çektikleri acıyı (gerçekliği) kimseye ispatlayamamanın verdiği o yalnızlık ve çaresizlik hissine',
+      'Düşük frekanslı seslerin insanlarda kalıcı duyma kaybı (sağırlık) yaratmasına'
+    ],
+    correct: 2,
+    explanation: 'Cihazların bile ölçemediği sesi sadece onların duyması; kendi beynindeki acıyı kimseye ispatlayamamanın getirdiği o korkunç yalnızlık ve çaresizliği (işkenceyi) açıklar.'
+  },
+  {
+    title: 'Deniz Gergedanı (Narval) Boynuzu',
+    passage: 'Orta Çağ boyunca Avrupalı krallar, hastalıkları iyileştirdiğine ve zehirleri yok ettiğine inandıkları büyülü "Tekboynuzlu At" (Unicorn) boynuzlarına servet ödüyorlardı. Oysa satın aldıkları şey, Kuzey Buz Denizi\'nde yaşayan Deniz Gergedanlarının (Narval) kafasından uzanan uzun spiral dişti. Narvalın bu dişi savaşmak veya buzu kırmak için değil; üzerinde milyonlarca sinir ucu bulunan, suyun tuzluluğunu, sıcaklığını ve avların hareketini algılamaya yarayan devasa ve aşırı hassas bir duyu organıydı. Yani doğanın gerçeği, insanların uydurduğu efsaneden çok daha büyüleyiciydi. Bu tarihi yanılgı, insanoğlunun; doğanın o mükemmel ve karmaşık mühendisliğini anlamak yerine, onu her zaman kendi mistik ve bencil masallarına (şifa efsanelerine) indirgemeyi seçtiğini gösterir.',
+    questionStem: 'Narval dişi (boynuzu) üzerinden yazarın insanlık tarihine yönelttiği eleştiri nedir?',
+    options: [
+      'Deniz hayvanlarının kürk ve boynuz ticareti için acımasızca katledilmesi',
+      'İnsanın, doğanın o karmaşık ve büyüleyici biyolojik mühendisliğini anlamaya çalışmak yerine, cehaletle onu kendi uydurduğu mistik ve bencil masallara (büyülü boynuz efsanesine) alet etmesi',
+      'Kuzey Buz Denizi\'ndeki canlıların evrimsel sürecini henüz tam olarak tamamlayamaması',
+      'Orta Çağ krallarının bilimden uzaklaşıp tamamen dini dogmalara inanması'
+    ],
+    correct: 1,
+    explanation: 'Milyonlarca sinir uçlu devasa bir duyu organını (muazzam biyolojiyi) anlamayıp onu "sihirli tekboynuzlu at boynuzu" sanarak satın almaları, doğayı mistik masallara (cehalete) indirgeme eleştirisidir.'
+  },
+  {
+    title: 'Faj Tedavisi (Bacteriophage)',
+    passage: '1917\'de Felix d\'Herelle, bakterileri yiyip yok eden mikroskobik virüsleri, yani "Bakteriyofajları" keşfetti. Sovyet bilim insanları bu virüsleri kullanarak enfeksiyonları tedavi eden kusursuz bir sistem geliştirdiler. Ancak Soğuk Savaş\'ın Demir Perdesi indiğinde, Batı dünyası Sovyetlerin bu keşfini görmezden geldi ve sadece Penisilini (antibiyotikleri) yüceltti. Bugün antibiyotiklerin aşırı kullanımı yüzünden bakteriler direnç kazandı ve "Süper Bakteriler" insanlığı tehdit ediyor. Batı bilimi çaresizce, yüz yıl önce siyasi inat uğruna çöpe attığı Sovyetlerin o Faj Tedavisine geri dönmeye çalışıyor. Bilim her ne kadar evrensel ve tarafsız olduğunu iddia etse de, çoğu zaman siyasetin, kibrin ve jeopolitik sınırların ördüğü duvarlara çarparak insanlığın kurtuluşunu onlarca yıl geciktirebilen tutsak bir sistemdir.',
+    questionStem: 'Faj Tedavisinin batı dünyasında yüzyıl sonra tekrar gündeme gelmesi, bilim hakkında hangi gerçeği ortaya koymaktadır?',
+    options: [
+      'Antibiyotiklerin aslında insan sağlığı için hiçbir zaman faydalı bir buluş olmadığı gerçeğini',
+      'Bilimin her zaman tamamen tarafsız, evrensel ve bağımsız olduğu yönündeki o idealize edilmiş inancı',
+      'Bilimin ve hayat kurtaran icatların bile; siyasi rekabet, kibir ve jeopolitik düşmanlıklar (Soğuk Savaş) yüzünden nasıl görmezden gelinip insanlığın zararına geciktirilebildiğini',
+      'Virüslerin bakterilere oranla laboratuvar ortamında çok daha hızlı mutasyona uğradığını'
+    ],
+    correct: 2,
+    explanation: 'Sovyet keşfi olduğu için Batı\'nın yüz yıl boyunca Faj tedavisini görmezden gelmesi; bilimin tarafsız olmadığını, siyasi kibir ve sınırlarla kısıtlandığını/geciktirildiğini kanıtlar.'
+  },
+  {
+    title: 'Drake Denklemi: Kozmik Yalnızlığın Matematiği',
+    passage: '1961 yılında astrofizikçi Frank Drake, evrende bizimle iletişim kurabilecek uzaylı medeniyetlerin sayısını tahmin etmek için bir denklem yazdı. Bu denklemde galaksideki yıldız oluşum hızını, gezegen barındıran yıldızları ve o gezegenlerde zeki yaşamın gelişme ihtimallerini çarptı. Ancak Drake\'in amacı kesin bir "sayı" bulmak değildi; çünkü denklemdeki değişkenlerin çoğu tamamen bizim tahminlerimize (cehaletimize) bağlıydı. Denklemin asıl büyüleyici tarafı şuydu: Evrenin derinliklerine bakarken sorduğumuz o "Yapayalnız mıyız?" şeklindeki felsefi çığlığımızı, ilk defa rasyonel bir çarpım tablosuna ve bilimsel bir çerçeveye oturtmuştu. Drake Denklemi, cevabı olmayan bir matematik problemi değil; insanın kozmik yalnızlığının ve sınır tanımayan merakının formüle dökülmüş bir aynasıdır.',
+    questionStem: 'Drake Denklemi\'nin bilim tarihindeki asıl felsefi/sembolik önemi parçada nasıl açıklanmıştır?',
+    options: [
+      'Gelecek 50 yıl içinde uzaylılarla kesin olarak iletişim kurulacağını matematiksel olarak kanıtlaması',
+      'Rakamlardan kesin bir sonuç (sayı) elde etmekten ziyade, insanoğlunun evrendeki yalnızlık ve zeki yaşam arayışı (merakı) gibi derin felsefi sorunlarını rasyonel/bilimsel bir çerçeveye oturtması',
+      'Güneş sistemindeki yıldızların yaşlarını çok daha hassas bir şekilde ölçmeye olanak tanıması',
+      'Dünya dışı yaşamı araştırmanın astronomi için bir zaman kaybı olduğunu istatistiklerle ispatlaması'
+    ],
+    correct: 1,
+    explanation: 'Denklemin asıl amacının kesin bir sayı bulmak değil, "yapayalnız mıyız?" felsefi çığlığını rasyonel/bilimsel bir çerçeveye oturtmak (merakın formülü olmak) olduğu açıkça belirtilmiştir.'
+  },
+  {
+    title: 'Kör Saatçi (Blind Watchmaker)',
+    passage: 'Bir çölde yürürken yerde tıkır tıkır çalışan karmaşık bir cep saati bulursanız, bunun zeki bir saatçi tarafından tasarlandığını bilirsiniz. Ancak evrimsel biyolog Richard Dawkins, "Kör Saatçi" kavramıyla doğadaki o kusursuz canlıları (örneğin insan gözünü) açıklarken bu mantığı reddeder. Doğanın bir planı, bir mühendislik çizimi veya geleceğe dair bir hedefi yoktur. Evrim, deneme yanılma yoluyla, tamamen rastgele mutasyonları acımasız bir doğal seçilim süzgecinden geçirerek ilerler. İşine yarayanı tutar, yaramayanı acımasızca çöpe atar (yok eder). Gördüğümüz o "kusursuz tasarım" illüzyonu, aslında kör, bilinçsiz ve milyonlarca yıl süren bir katliam ve ayıklanma sürecinin hayatta kalan son şanslı bakiyesidir.',
+    questionStem: 'Richard Dawkins\'in "Kör Saatçi" metaforu, doğadaki "kusursuzluk" algısını nasıl açıklamaktadır?',
+    options: [
+      'Canlıların vücut yapılarının sanıldığından çok daha basit ve ilkel bir işleyişe sahip olduğu gerçeğiyle',
+      'Doğanın, her canlıyı gelecekte karşılaşacağı tehlikelere karşı önceden (zeki bir planla) tasarladığı düşüncesiyle',
+      'Kusursuz gibi görünen tasarımların ardında zeki bir plancının değil; milyonlarca yıllık rastgele deneme-yanılma ve acımasız doğal seçilim (kör bir ayıklanma) sürecinin yattığıyla',
+      'Hayvanların göz yapılarının insanların inşa ettiği saatlerden daha karmaşık bir mekanizmaya sahip olmasıyla'
+    ],
+    correct: 2,
+    explanation: 'Cep saati örneğine karşı çıkarak, doğadaki kusursuzluğun zeki bir tasarımdan değil; rastgele mutasyonların kör/bilinçsiz ve acımasız bir doğal seçilimle ayıklanmasından doğduğunu savunur.'
+  },
+  {
+    title: 'Alfred Wegener ve Pangea',
+    passage: '1912 yılında meteorolog Alfred Wegener, bir dünya haritasına bakarken Güney Amerika ile Afrika\'nın kıyılarının tıpkı bir yapbozun parçaları gibi birbirine uyduğunu fark etti. Dünyanın eskiden "Pangea" adlı tek bir süper kıta olduğunu ve kıtaların yavaşça birbirinden ayrıldığını (Kıta Kayması Teorisi) savundu. Dönemin kibirli jeologları, "Bir meteorolog bize kayaları öğretemez!" diyerek onunla alay ettiler ve teorisini çöpe attılar. Wegener, teorisini kanıtlayacak deliller bulmak için Grönland buzuluna gittiğinde donarak öldü. Ölümünden on yıllar sonra, deniz tabanı ölçümleri ve tektonik levhaların keşfi onu haklı çıkardı. Wegener\'in trajedisi, akademik kurumların (diploma kibrinin), alan dışından gelen dâhiyane bir fikri sırf "unvanı uymuyor" diye nasıl boğup ölüme terk ettiğinin en soğuk kanıtıdır.',
+    questionStem: 'Alfred Wegener\'in Kıta Kayması teorisinin reddedilme süreci, akademik dünyayla ilgili hangi kusuru (hastalığı) göz önüne sermektedir?',
+    options: [
+      '1900\'lü yıllarda harita çizim tekniklerinin çok hatalı olması nedeniyle bilim insanlarının yanılgıya düşmesini',
+      'Bilimsel kurumların hakikate odaklanmak yerine; alan dışından gelen yenilikçi fikirleri sırf unvan (diploma) kibri yüzünden körü körüne reddeden o dogmatik ve dışlayıcı (tutucu) yapısını',
+      'Meteoroloji biliminin o dönemde henüz geçerli bir akademik disiplin olarak kabul edilmemesini',
+      'Grönland gibi soğuk bölgelerde bilimsel araştırmaların devlet tarafından yasaklanmış olmasını'
+    ],
+    correct: 1,
+    explanation: 'Jeologların sırf o bir "meteorolog" diye doğru teorisini (unvan kibriyle) aşağılayıp çöpe atması; akademik dünyanın hakikate değil dogmatik/dışlayıcı bir unvan kibrine sahip olduğunu eleştirir.'
+  }
+];
+
+export const bilimParagrafSorulari19: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_19.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_19[idx];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-bilim19-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
 // paragrafTests.ts dosyasının hata vermemesi için iki listeyi birleştirip eski adıyla dışa aktarıyoruz:
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari,
@@ -5046,5 +5323,7 @@ export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...felsefeParagrafSorulari15,
   ...psikolojiParagrafSorulari16,
   ...karisikParagrafSorulari17,
-  ...felsefeParagrafSorulari18
+  ...felsefeParagrafSorulari18,
+  ...bilimParagrafSorulari19
+  
 ];
