@@ -2663,13 +2663,13 @@ export const matematikData: SubjectData = {
         "prompt": "Görselde Ali'nin yediği pizzalar gösterilmiştir. Ali toplamda 13/4 (dörtte on üç) dilim pizza yemiştir. Bu ifadeyi tam sayılı kesir olarak nasıl gösteririz?",
         "imageUrl": "/images/grade5/matematik/test11/m5-t11-img-10.webp",
         "options": [
-          "2 tam 3/4",
+          "2 tam 5/8",
           "3 tam 1/4",
           "4 tam 1/3",
           "3 tam 3/4"
         ],
-        "correct": 1,
-        "explanation": "13'ü 4'e böldüğümüzde bölüm 3 (tam kısım), kalan ise 1 (pay) olur. Payda değişmez. Sonuç: 3 tam 1/4 olur."
+        "correct": 0,
+        "explanation": "2 tam pizza 16/8, 5 pizza 3.cü pizzada vardır."
       },
       {
         "id": "m5-2-t11-11",
