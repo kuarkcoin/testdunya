@@ -2796,7 +2796,283 @@ const PARAGRAPH_THEMES_10 = [
     explanation: 'Felsefe Taşı (büyü) bulunamasa da bu umutsuz arayış sırasında damıtma/asitler gibi modern kimyanın temellerinin bulunması, ulaşılamaz hedeflerin gerçek hazineler (bilim) yaratabildiğini gösterir.'
   }
 ];
+const PARAGRAPH_THEMES_11 = [
+  {
+    title: 'Dyatlov Geçidi Vakası',
+    passage: '1959 yılının dondurucu kışında, Ural Dağları\'nda kamp yapan dokuz tecrübeli Rus dağcı, gece yarısı çadırlarını içeriden keserek, eksi 30 derecede yarı çıplak ve ayakkabısız bir şekilde karanlığa kaçtılar. Haftalar sonra bulunan cesetlerinin bazılarında ağır radyasyon, bazılarında ise araba çarpmasına eşdeğer iç kanamalar vardı; üstelik dillerinden biri kayıptı. Uzaylılardan gizli askeri deneylere kadar sayısız komplo teorisi üretildi. Ancak asıl ürkütücü olan, doğanın ve paniğin insan aklını nasıl saniyeler içinde ilkel bir dehşete sürükleyebileceğidir. Dyatlov Geçidi, insanoğlunun ıssız karanlıklar karşısındaki o kırılgan ve çaresiz küçüklüğünün en soğuk kanıtıdır.',
+    questionStem: 'Dyatlov Geçidi vakasıyla ilgili yazarın asıl odaklandığı "ürpertici" (psikolojik) boyut nedir?',
+    options: [
+      'Rus ordusunun o dönemde siviller üzerinde gizli radyasyon deneyleri yapması',
+      'Olayın uzaylılar tarafından gerçekleştirilmiş olabileceğine dair kanıtların gizlenmesi',
+      'İnsanoğlunun mantığının ve tecrübesinin, doğanın ve ilkel paniğin yarattığı o bilinmez dehşet karşısında saniyeler içinde çöküp sıfırlanabilmesi',
+      'Dağcılık sporunun her zaman ölümcül bir risk taşıdığının bilimsel olarak kanıtlanması'
+    ],
+    correct: 2,
+    explanation: 'Dokuz tecrübeli dağcının çadırı içeriden kesip eksi 30 derecede yarı çıplak kaçması, mantığın doğa ve panik (dehşet) karşısında saniyeler içinde çökmesini (ilkel korkuyu) sembolize eder.'
+  },
+  {
+    title: 'Paskalya Adası (Rapa Nui) ve Ekolojik İntihar',
+    passage: 'Pasifik Okyanusu\'nun ortasındaki izole Paskalya Adası, devasa taştan Moai heykelleriyle ünlüdür. Adalılar, atalarını onurlandırmak ve kabileler arası güç gösterisi yapmak için bu tonlarca ağırlıktaki heykelleri inşa edip taşımak uğruna adadaki tüm ağaçları kestiler. Ağaçlar bitince erozyon başladı, tarım çöktü, kano yapamadıkları için balık tutamadılar ve sonunda yamyamlığa varan bir iç savaşla kendi medeniyetlerini yok ettiler. Paskalya Adası\'nın o sessiz ve dev heykelleri, sadece antik bir mimari harikası değil; kibrin ve statü hırsının, üzerinde yaşanılan ekosistemi (yaşam kaynağını) nasıl körü körüne tükettiğinin taştan bir anıtıdır.',
+    questionStem: 'Paskalya Adası halkının çöküşü, günümüz dünyasına yönelik nasıl bir evrensel uyarı barındırmaktadır?',
+    options: [
+      'Devasa heykellerin ve anıtların her zaman toplumların ekonomisini çökerttiği',
+      'Güç gösterisi ve kibir uğruna doğal kaynakların (ekosistemin) sınırlarının tüketilmesi durumunda, o toplumun kaçınılmaz bir ekolojik intihara sürükleneceği',
+      'Okyanus ortasındaki adaların tarım yapmak için elverişli topraklara sahip olmadığı',
+      'Kabileler arası savaşların sadece farklı dini inançlardan dolayı ortaya çıktığı'
+    ],
+    correct: 1,
+    explanation: 'Heykel taşıma hırsı uğruna ağaçları tüketip yok olmaları; statü/kibir uğruna doğayı tüketmenin toplumları ekolojik intihara (yok oluşa) götüreceği uyarısını barındırır.'
+  },
+  {
+    title: 'Andes Uçak Kazası (1972)',
+    passage: '1972 yılında Uruguaylı bir ragbi takımını taşıyan uçak, aşılmaz And Dağları\'nın karlı zirvelerine çakıldı. Hayatta kalanlar, eksi 40 derecede, yiyeceksiz ve kurtarılma umudu olmadan 72 gün boyunca bir buzulun üzerinde yaşam mücadelesi verdi. Radyodan arama çalışmalarının durdurulduğunu duyduklarında, ölmemek için hayatlarındaki en korkunç, en aşılamaz ahlaki sınırı geçtiler: Ölen arkadaşlarının bedenlerini yemek zorunda kaldılar. Bu olay bir yamyamlık hikâyesi değil; insan iradesinin, yaşama tutunma içgüdüsünün ve dayanışmanın, ahlaki tabuların bile ötesine geçebilen o karanlık ama görkemli direniş destanıdır.',
+    questionStem: 'Andes uçak kazasından kurtulanların hikâyesi, yazar tarafından hangi kavrama örnek olarak gösterilmektedir?',
+    options: [
+      'Dağlık bölgelerde uçuş rotalarının mutlaka değiştirilmesi gerektiğine',
+      'Ragbi oyuncularının diğer insanlardan fiziksel olarak daha dayanıklı olduğuna',
+      'İnsanın yaşama tutunma içgüdüsünün ve hayatta kalma iradesinin, en güçlü ahlaki tabuları ve toplumsal kuralları bile aşabilecek kadar ilkel ve sarsılmaz olduğuna',
+      'Kurtarma ekiplerinin zorlu hava koşullarında yetersiz kaldığına'
+    ],
+    correct: 2,
+    explanation: 'Yaşamak için ölenleri yemeleri bir yamyamlık değil; hayatta kalma iradesinin ve yaşama içgüdüsünün ahlaki sınırları/tabuları aşabilecek kadar sarsılmaz bir direniş olduğunu gösterir.'
+  },
+  {
+    title: 'Shackleton ve Endurance Destanı',
+    passage: '1915 yılında kâşif Ernest Shackleton ve mürettebatı, Antarktika\'yı yürüyerek geçmek için yola çıktıklarında gemileri "Endurance" devasa buzkütleleri arasında sıkışıp ezildi. Dünyanın en soğuk, en ıssız ve en acımasız cehenneminde mahsur kalmışlardı. Shackleton, adamlarını umutsuzluğa düşürmemek için katı bir rutin uyguladı; onlara futbol oynattı, köpek yarışları düzenledi. Aylar sonra, küçük bir cankurtaran sandalıyla okyanusun en tehlikeli fırtınalarını aşarak yardım getirmeyi başardı. Tam 2 yıl süren bu kâbusta tek bir adamını bile kaybetmedi. Shackleton\'ın liderliği, gerçek zaferin hedefe ulaşmak değil; cehennemin ortasında bile umudu ve insan onurunu ayakta tutabilmek olduğunu kanıtlar.',
+    questionStem: 'Shackleton\'ın Antarktika macerasındaki liderlik anlayışının temel felsefesi nedir?',
+    options: [
+      'Buzkıran gemilerinin teknolojik altyapısını geliştirmek',
+      'Hedefe ulaşmak imkânsızlaştığında (gemileri battığında), asıl zaferin ve liderliğin; mürettebatın umudunu, disiplinini ve insan onurunu koruyarak onları hayatta tutmak olduğunu bilmek',
+      'Antarktika\'nın yer altı kaynaklarını keşfetmek için mürettebatın hayatını tehlikeye atmak',
+      'Sadece fiziksel olarak en güçlü denizcileri seçerek takım kurmak'
+    ],
+    correct: 1,
+    explanation: 'Gemisi batmasına rağmen adamlarına futbol oynatıp disiplini koruması ve kimseyi kaybetmemesi, liderliğin hedefe ulaşmaktan ziyade "umudu ve onuru ayakta tutmak" olduğunu gösterir.'
+  },
+  {
+    title: 'Çernobil\'in Üç Dalgıcı (Fedaileri)',
+    passage: '1986 Çernobil felaketinde, eriyen nükleer reaktör çekirdeğinin altındaki devasa su havuzuna ulaşması an meselesiydi. Eğer o erimiş yakıt suyla temas etseydi, yaşanacak devasa buhar patlaması tüm Avrupa\'yı yüzyıllarca yaşanmaz bir nükleer çöle çevirecekti. Vanaları açıp suyu boşaltmak için, radyasyonla kaynayan o kapkaranlık suya üç mühendis kendi istekleriyle daldılar. Valeriy, Alexei ve Boris adındaki bu adamlar, karanlıkta sadece el yordamıyla vanaları buldular ve dünyayı kurtardılar. Milyonların hayatı, isimleri tarihin tozlu sayfalarında kaybolmuş üç sıradan insanın, o radyasyonlu karanlıkta sessizce aldığı ölümcül bir karara borçludur.',
+    questionStem: 'Çernobil dalgıçlarının hikâyesi, kahramanlık kavramı üzerine nasıl bir çıkarım sunmaktadır?',
+    options: [
+      'Kahramanlığın her zaman devlet tarafından yüksek madalyalarla ödüllendirildiği',
+      'Büyük kurtuluşların her zaman devasa ordularla değil, milyonların kaderini değiştiren sıradan insanların kendi hayatlarını feda ettiği isimsiz ve sessiz fedakârlıklarla (iradeyle) sağlandığı',
+      'Nükleer santrallerin su havuzlarının her zaman patlama riski taşıdığı',
+      'Mühendislerin radyasyona karşı özel koruyucu giysiler tasarladığı'
+    ],
+    correct: 1,
+    explanation: 'Tüm Avrupa\'yı kurtaranların adları bile unutulmuş üç mühendis olması, kahramanlığın gösterişli değil; sessiz, isimsiz ve sıradan insanların devasa fedakârlıkları olduğunu anlatır.'
+  },
+  {
+    title: 'D.B. Cooper\'ın Kusursuz Soygunu',
+    passage: '1971 yılında "Dan Cooper" takma adlı, şık takım elbiseli bir adam, Seattle\'a giden bir yolcu uçağını kaçırdı. Kimseye zarar vermeden nazikçe 200 bin dolar fidye ve dört paraşüt istedi. İstekleri karşılanıp uçak tekrar havalandığında, şiddetli bir yağmur fırtınasının ortasında, paralarla birlikte uçağın arka kapısından atlayarak karanlık gecenin içine karıştı. Yıllarca süren devasa FBI araştırmalarına, dağ taş aranmasına rağmen ne cesedi bulundu ne de paralar harcandı. D.B. Cooper vakası, sadece çözülememiş bir suç değil; sıradan insanın, devleti ve sistemi zekâsıyla alt edip havaya (bir hayalete) karışabileceğine dair duyulan gizli ve romantik bir halk efsanesine dönüşmüştür.',
+    questionStem: 'D.B. Cooper soygununun Amerikan toplumunda "romantik bir halk efsanesine" dönüşmesinin nedeni parçada nasıl açıklanmıştır?',
+    options: [
+      'Soyguncunun çaldığı paraları fakir halka dağıtması',
+      'Şık ve nazik bir adamın şiddet kullanmadan, devletin tüm gücünü ve sistemini zekâsıyla alt edip iz bırakmadan bir hayalete dönüşmesinin uyandırdığı gizli hayranlık',
+      'Uçak kaçırma olaylarının o dönemde sık görülen sıradan bir eylem olması',
+      'FBI\'ın soyguncuyu kasıtlı olarak yakalamadığına dair komplo teorileri'
+    ],
+    correct: 1,
+    explanation: 'Kimseye zarar vermeden (nazikçe) sistemi alt edip karanlığa karışması (yakalanmaması), toplumda ona karşı gizli ve romantik bir hayranlık (efsaneleşme) uyandırmıştır.'
+  },
+  {
+    title: 'Mary Celeste: Hayalet Gemi',
+    passage: '1872 yılında Atlantik Okyanusu\'nda sürüklenen "Mary Celeste" adlı ticaret gemisi bulunduğunda, içinde tek bir canlı bile yoktu. Gemide hiçbir boğuşma izi yoktu, yemekler masalardaydı, kargodaki değerli alkol fıçıları dokunulmamıştı ve mürettebatın kişisel eşyaları yerli yerindeydi. Sadece cankurtaran filikası eksikti ve herkes sanki aniden, büyük bir panikle gemiyi terk etmiş gibiydi. Deniz canavarları, korsanlar veya Bermuda Şeytan Üçgeni... Yüzlerce teori üretildi. Mary Celeste\'nin o boş güvertesi, okyanusun engin sessizliğinin, insanın tüm mantığını ve kanıt arayışını yutan en büyük ve en çözülemez sırrı olarak tarihe kazındı.',
+    questionStem: 'Mary Celeste gemisinin bir "hayalet gemi" efsanesine dönüşmesinin asıl sebebi nedir?',
+    options: [
+      'Mürettebatın gemide bıraktığı gizemli şifreli mektuplar',
+      'Geminin korsanlar tarafından tüm değerli eşyaları alınarak yağmalanması',
+      'Ortada hiçbir mantıklı sebep, tehlike veya boğuşma izi yokken (eşyalar yerindeyken), mürettebatın gemiyi aniden ve açıklanamaz bir panikle terk etmiş olması',
+      'Geminin aslında hiçbir zaman var olmamış fiktif bir edebi kurgu olması'
+    ],
+    correct: 2,
+    explanation: 'Değerli eşyaların ve yemeklerin bile yerinde durmasına rağmen (boğuşma yokken) insanların açıklanamaz bir panikle filikayla kaçması, olayı mantıksız ve çözülemez bir hayalet efsanesi yapar.'
+  },
+  {
+    title: 'Somerton Adamı (Taman Shud)',
+    passage: '1948 yılında Avustralya\'nın Somerton plajında, takım elbiseli, hiçbir kimlik taşımayan ve etiketleri sökülmüş kıyafetler giyen ölü bir adam bulundu. Vücudunda zehir izi yoktu. Cebinde, gizli bir bölmeye dikilmiş küçük bir kâğıt parçasında Farsça "Taman Shud" (Bitti/Tamamlandı) yazıyordu. Bu kâğıdın koparıldığı nadir bir şiir kitabı yakındaki bir arabada bulundu; kitabın arkasında şifreli harfler ve bir hemşirenin telefon numarası vardı. Soğuk Savaş casusluğu mu, trajik bir aşk hikâyesi mi yoksa kusursuz bir cinayet mi? Somerton Adamı, cevabı ölümün ötesinde kalmış, insanın geride bıraktığı izlerin (şifrelerin) bazen gerçeği aydınlatmak yerine o sırrı sonsuza dek nasıl mühürlediğinin bir kanıtıdır.',
+    questionStem: 'Somerton Adamı vakasının edebiyat ve sinemaya bile ilham veren o "çözülemez" doğası neyden kaynaklanmaktadır?',
+    options: [
+      'Bulunan cesedin ünlü bir siyasetçiye çok benzemesi',
+      'Kıyafet etiketlerinin kesik olması, Farsça not, şifreli harfler ve sahipsiz kimlik gibi birbiriyle bağlantısız görünen esrarengiz ipuçlarının hiçbir zaman mantıklı bir bütüne (sonuca) ulaşamaması',
+      'Polisin olayı bilerek halktan yıllarca gizlemesi',
+      'Zehir uzmanlarının o dönemde otopsi yapacak teknolojiye sahip olmaması'
+    ],
+    correct: 1,
+    explanation: 'Etiketsiz kıyafet, gizli bölmedeki Farsça not, şifreli kitap gibi ipuçlarının (sırların) cevaba ulaşmak yerine gerçeği sonsuza dek mühürlemesi olayın çözülemez doğasını yansıtır.'
+  },
+  {
+    title: 'Wow! Sinyali',
+    passage: '1977 yılında astronom Jerry Ehman, uzayın derinliklerini dinleyen radyo teleskobunun çıktılarında, 72 saniye süren inanılmaz derecede güçlü ve spesifik bir radyo dalgası fark etti. Verilerin yanına şaşkınlıkla kırmızı bir kalemle "Wow!" (Vay canına!) yazdı. Sinyal, tam da zeki bir uzaylı medeniyetinin iletişim kurmak için kullanması beklenen frekanstaydı (Hidrojen frekansı). O günden beri teleskoplar aynı noktayı milyonlarca kez dinledi ama evren o sese bir daha asla geri dönmedi, tam bir sessizliğe büründü. "Wow! Sinyali", kozmik okyanusta yapayalnız mıyız sorusuna verilmiş anlık bir göz kırpma mıydı, yoksa sadece evrenin rastgele bir gürültüsü müydü? Bu sessizlik, bilinmezliğin yarattığı en sağır edici çığlıktır.',
+    questionStem: 'Wow! Sinyali\'ni uzay araştırmaları tarihinde bu kadar dramatik ve özel kılan durum nedir?',
+    options: [
+      'Uzaylıların dünyaya fiziksel olarak ilk kez bir uydu göndermiş olması',
+      'Sinyalin, zeki bir medeniyetten gelme ihtimali en yüksek özellikleri taşımasına rağmen bir daha asla tekrarlanmaması ve evrenin yeniden derin bir sessizliğe gömülmesi',
+      'Radyo dalgalarının dünyanın dönüş eksenini kısa süreliğine bozması',
+      'Sinyali alan Jerry Ehman\'ın daha sonra NASA\'dan kovulması'
+    ],
+    correct: 1,
+    explanation: 'Tam da uzaylılardan beklenen (hidrojen) frekansında ve çok güçlü gelmesine rağmen 72 saniyeden sonra evrenin bir daha asla bu sesi tekrarlamaması (sessizlik) olayı dramatik kılar.'
+  },
+  {
+    title: 'I. Dünya Savaşı ve Sahte Paris',
+    passage: 'Birinci Dünya Savaşı sırasında gece uçuşu yapan Alman zeplinleri ve bombardıman uçakları Paris\'i yıkmakla tehdit ediyordu. Fransız yetkililer akılalmaz bir plan yaptı: Gerçek Paris\'in 24 kilometre uzağına, ışıklandırmaları, sahte sokakları, tren istasyonları ve hatta ahşaptan yapılmış sahte fabrikalarıyla bir "Gölge Paris" inşa ettiler. Amaç, karanlıkta yönünü şaşıran düşman pilotlarını kandırıp bombaları boş tarlalara (sahte şehre) atmalarını sağlamaktı. Savaş bitmeden tam anlamıyla kullanılamasa da bu proje, insanoğlunun kriz anlarında devasa bir şehri bile tiyatro sahnesine çevirebilecek (illüzyon yaratacak) kadar ileri düzey bir taktiksel kurnazlığa sahip olduğunu gösterir.',
+    questionStem: 'Sahte Paris\'in inşa edilme stratejisi, savaş ve savunma taktikleri hakkında neyi ortaya koymaktadır?',
+    options: [
+      'Alman pilotlarının coğrafya bilgilerinin çok zayıf olduğunu',
+      'Savunmanın her zaman çelik zırhlarla veya silahlarla değil; bazen düşmanın algısını manipüle eden devasa mimari kurgular (illüzyon ve hile) ile de yapılabildiğini',
+      'Paris halkının savaş boyunca şehri tamamen terk ettiğini',
+      'Fransız mimarisinin o dönemde ahşap yapılaşmaya geçiş yaptığını'
+    ],
+    correct: 1,
+    explanation: 'Bombardımanı engellemek için silah yerine ahşap ve ışıklandırmalarla devasa bir sahte şehir (illüzyon) inşa edilmesi, savunmanın algı yönetimi ve kurnazlıkla da yapılabileceğini gösterir.'
+  },
+  {
+    title: '536 Yılı: Tarihin En Kötü Yılı',
+    passage: 'Tarihçilere göre insanlık tarihinin yaşamak için en korkunç yılı ne 1914, ne de 1939\'du; asıl kâbus 536 yılıydı. İzlanda veya Kuzey Amerika\'daki devasa bir volkan patlaması sonucu ortaya çıkan küller, güneşin önünü tamamen kapattı. Avrupa, Ortadoğu ve Asya ardışık 18 ay boyunca zifiri karanlığa gömüldü. Yaz ortasında kar yağdı, ekinler dondu, kıtlık baş gösterdi ve ardından milyonlarca insanı yok eden Jüstinyen Vebası patlak verdi. O yıl insanlar, dünyanın (kıyametin) sonunun geldiğine inanmışlardı. 536 yılı, medeniyetlerin inşa ettiği onca kibrin ve imparatorluğun, doğanın tek bir nefesiyle (güneşi kapatmasıyla) nasıl anında ölümcül bir çöküşe sürüklenebileceğinin ispatıdır.',
+    questionStem: '536 yılının "tarihin en kötü yılı" ilan edilmesinin altında yatan doğa-insan ilişkisi gerçeği nedir?',
+    options: [
+      'İnsanların güneşe tapmayı bırakıp tek tanrılı dinlere geçmesi',
+      'Doğanın (volkanik bir patlamanın) güneşi kapatacak kadar devasa bir güce sahip olmasının, tüm insanlık medeniyetini, ekonomisini ve sağlığını (kıtlık ve vebayla) bir anda çökertmeye yetmesi',
+      'Volkanik küllerin toprağı daha verimli hale getirerek yeni tarım devrimlerini başlatması',
+      'Avrupa ve Asya ülkelerinin o karanlık dönemde barış antlaşmaları imzalaması'
+    ],
+    correct: 1,
+    explanation: 'Tek bir patlamanın güneşi 18 ay kapatıp ekinleri dondurması ve vebaya yol açması; medeniyetin kibrinin doğanın tek bir hamlesiyle (gücüyle) nasıl çökebileceğini kanıtlar.'
+  },
+  {
+    title: 'Qin Shi Huang ve Ölümsüzlük İksiri',
+    passage: 'Çin\'i ilk kez tek bayrak altında toplayan İmparator Qin Shi Huang, suikastlardan o kadar korkuyordu ki bir paranoyaya sürüklenmişti. En büyük takıntısı ölümü yenmekti. Bütün saray bilginlerine ve simyacılarına "ölümsüzlük iksirini" bulmalarını emretti. Simyacılar ona gümüş renginde, büyülü ve parlak bir sıvı sundular: Cıva. İmparator ölümsüz olacağına inanarak yıllarca bu sıvı cıva haplarını yuttu. Ancak onu ebediyete kavuşturacağını sandığı bu iksir, aslında onun beynini eriten ve genç yaşta ölümüne neden olan zehrin ta kendisiydi. İnsanın mutlak güç elde ettiğinde mantığını kaybetmesi ve ölümü yenme kibrinin, onu bizzat ölümün kucağına itmesi tarihi bir ironidir.',
+    questionStem: 'İmparator Qin Shi Huang\'ın ölümsüzlük arayışının felsefi ironisi (çelişkisi) parçada nasıl ifade edilmektedir?',
+    options: [
+      'Simyacıların imparatoru kasten ve bilerek zehirlemesi',
+      'İmparatorun ölümsüzlük (yaşam) arayışıyla ve kibriyle yuttuğu mucizevi iksirin (cıvanın), aslında kendi sonunu (ölümünü) getiren zehrin ta kendisi olması',
+      'Cıva kullanımının o dönemde Çin tıbbında çok yaygın bir ağrı kesici olması',
+      'Ölüm korkusu yüzünden imparatorluğun tüm sınırlarını dış dünyaya kapatması'
+    ],
+    correct: 1,
+    explanation: 'Ölümden kaçmak ve ölümsüz olmak için içtiği büyülü maddenin onu zehirleyip öldürmesi; yaşam arayışının bizzat ölümün nedeni olması olayın ironisidir (çelişkisidir).'
+  },
+  {
+    title: 'Nazca Çizgileri',
+    passage: 'Peru\'nun ıssız çöllerinde devasa boyutlarda çizilmiş maymun, örümcek ve kuş figürleri bulunur. "Nazca Çizgileri" olarak bilinen bu geometrik ve kusursuz şekiller, öylesine büyüktür ki ancak yerden yüzlerce metre yüksekte (uçaktan) bakıldığında bir anlam ifade ederler. Antik Nazca halkının uçma teknolojisi olmadığına göre, bu devasa figürleri kimin için ve nasıl yaptıkları hala büyük bir sırdır. Uzaylılar için bir iniş pisti mi, yoksa tanrılara yağmur getirmeleri için çizilmiş devasa birer dua mı? Sebebi ne olursa olsun, Nazca Çizgileri insanoğlunun; sadece çevresindeki insanlara değil, gökyüzünün (tanrıların veya evrenin) o sonsuz sessizliğine de devasa izler bırakarak "biz buradayız" deme çabasıdır.',
+    questionStem: 'Nazca Çizgileri\'nin yazar tarafından yorumlanışındaki asıl sembolik anlam nedir?',
+    options: [
+      'Nazca halkının astronomi ve uzaylı teknolojisi konusunda bugünden daha ileri olduğu',
+      'Çöl kumlarının rüzgârla şekillenerek tesadüfi hayvan figürleri oluşturduğu',
+      'O şekillerin, sadece gökyüzünden (yukarıdan) görülebilmesine rağmen yapılmış olmasının; insanın evrenin sonsuzluğuna karşı "biz buradayız" diyerek iz bırakma arzusu (aşkınlık) taşıdığı',
+      'Figürlerin diğer kabileleri korkutmak için birer savaş sembolü olarak tasarlandığı'
+    ],
+    correct: 2,
+    explanation: 'Yerden görünmeyen şekillerin gökyüzüne doğru (tanrılara/evrene) çizilmesi; insanın sadece yeryüzüne değil, evrenin sonsuzluğuna da bir iz bırakma (biz buradayız deme) arzusunu sembolize eder.'
+  },
+  {
+    title: 'Bağdat Pili',
+    passage: '1938 yılında Irak\'ta yapılan kazılarda, 2000 yıllık kilden bir çömlek bulundu. İçinde bakır bir silindir ve onun da ortasında demir bir çubuk vardı. Bu düzenek sirke veya şarap gibi asidik bir sıvıyla doldurulduğunda, modern bir "pil" gibi elektrik üretebiliyordu. Bilim insanları şok içindeydi; çünkü elektriğin icadına (Alessandro Volta\'ya) daha 1800 yıl vardı. Antik Perslerin bu elektrik akımını altın kaplama (elektroliz) yapmak için veya dini ayinlerde insanları "kutsal bir karıncalanma" hissiyle büyülemek için kullandıkları düşünülüyor. "Bağdat Pili", teknoloji ve ilerleme dediğimiz düz çizginin aslında bazen binlerce yıl önce keşfedilip, tarih sayfalarında kaybolup giden (unutulan) döngüsel bir sıçrama olabileceğini fısıldar.',
+    questionStem: 'Bağdat Pili\'nin keşfi, tarih ve teknoloji algımıza nasıl bir eleştiri/yenilik getirmektedir?',
+    options: [
+      'Elektriğin antik çağlarda evleri aydınlatmak için yaygın bir şekilde kullanıldığını',
+      'Teknolojik ilerlemenin her zaman dünden bugüne düz ve sürekli bir çizgi (ilerleme) olmadığı; bazı büyük buluşların binlerce yıl önce icat edilip sonra unutulmuş (kaybolmuş) olabileceği',
+      'Perslerin İtalyan bilim adamı Volta\'dan teknolojiyi çaldığını',
+      'Kilden yapılan çömleklerin demiri paslanmaktan sonsuza kadar koruduğunu'
+    ],
+    correct: 1,
+    explanation: 'Volta\'dan 1800 yıl önce pil benzeri bir aletin bulunması, teknolojinin sürekli ve düz ilerleyen bir çizgi olmadığını, geçmişte bulunup sonra unutulmuş sıçramalar olabileceğini kanıtlar.'
+  },
+  {
+    title: 'Amelia Earhart\'ın Ufku',
+    passage: 'Havacılık tarihinin en büyük efsanelerinden Amelia Earhart, 1937\'de Dünya\'nın etrafını uçakla turlayan ilk kadın olmak için yola çıktığında, Pasifik Okyanusu\'nun üzerinde telsizi aniden sustu. Kendisi ve uçağı hiçbir zaman bulunamadı. Kaza yaptı, ıssız bir adada açlıktan öldü veya Japonlara esir düştü... Teoriler hiç bitmedi. Ancak Earhart\'ı efsane yapan şey onun kayboluşu değil, kalkıştan önce söylediği şu sözdü: "Bunu sadece yapmak istediğim için yapıyorum. Kadınlar da erkeklerin denediği şeyleri denemeli." Earhart\'ın okyanusun üzerinde sırra kadem basması, onu bir kurbana değil; korkunun sınırlarını zorlarken ufuk çizgisiyle bütünleşen cesaretin ve tutkunun ölümsüz bir ikonuna dönüştürmüştür.',
+    questionStem: 'Yazar, Amelia Earhart\'ın kayboluşunu (ölümünü) nasıl bir yaklaşımla değerlendirmektedir?',
+    options: [
+      'Gerekli güvenlik önlemleri alınmadan yapılan sorumsuz ve amatörce bir hata olarak',
+      'Onu başarısız bir kurban olarak değil; cinsiyet kalıplarını ve korkunun sınırlarını yıkarak, idealleri uğruna ufukla bütünleşen ebedi bir cesaret sembolü olarak',
+      'Dönemin teknolojisinin okyanus aşırı uçuşlar için tamamen yetersiz olduğunun bilimsel kanıtı olarak',
+      'Hükümetlerin kadın pilotları arama kurtarma çalışmalarında ihmalkâr davrandığına dair bir tepki olarak'
+    ],
+    correct: 1,
+    explanation: 'Kayboluşunu bir trajedi/kurbanlık değil; "korkunun sınırlarını zorlarken ufukla bütünleşen cesaretin ve (cinsiyet engellerine karşı) tutkunun ikonu" olarak yüceltmektedir.'
+  },
+  {
+    title: 'Apollo 11\'in Karantina Odası',
+    passage: '1969\'da Neil Armstrong ve ekibi Ay\'dan döndüklerinde kahramanlar gibi omuzlarda taşınmadılar. Okyanusa indiklerinde hemen özel bir kapsüle konup, Dünya\'da tam 21 gün boyunca izole bir "karantina" odasına kapatıldılar. Sebebi basitti: Bilim insanları, Ay yüzeyinde Dünya\'daki tüm yaşamı saniyeler içinde yok edebilecek bilinmeyen bir uzay mikrobu (patojen) olma ihtimalinden dehşete düşmüşlerdi. İnsanoğlu uzayın sınırlarını fethetmiş, en büyük zaferini kazanmıştı; ama aynı zamanda fethettiği o karanlık boşluğun, geri dönüşte onu tamamen yok edebileceğinin derin ve ilkel korkusunu yaşıyordu. Apollo 11 karantinası, en büyük keşiflerin her zaman en büyük paranoyalarla (korkularla) el ele yürüdüğünün kanıtıdır.',
+    questionStem: 'Ay\'dan dönen astronotların 21 gün karantinada tutulması, uzay keşifleriyle ilgili hangi psikolojik/bilimsel durumu özetler?',
+    options: [
+      'Astronotların uzayda geçirdikleri psikolojik travmayı atlatmaları için yalnız kalmaları gerektiği',
+      'En görkemli zafer ve keşif anlarında bile, insanoğlunun o bilinmeyen yeni dünyadan gelebilecek (uzay mikrobu gibi) yıkıcı bir tehlikeye karşı duyduğu derin korku ve paranoyayı',
+      'Uzay gemisindeki oksijenin dünyadaki havaya hemen uyum sağlayamayacağı gerçeğini',
+      'Ay yüzeyindeki tozların insan derisine radyasyon yanığı yapma tehlikesini'
+    ],
+    correct: 1,
+    explanation: 'Zafer anında bile Ay\'dan gelebilecek bir mikrobun dünyayı yok edeceği korkusuyla izole edilmeleri; en büyük keşiflerin en büyük bilinmezlik korkusu (paranoya) ile iç içe olduğunu gösterir.'
+  },
+  {
+    title: 'Gize Piramitleri ve Özgür İrade',
+    passage: 'Yıllarca bize Mısır Piramitlerinin kan, ter ve kırbaç altında ezilen milyonlarca köle tarafından inşa edildiği anlatıldı. Ancak son arkeolojik kazılar bu popüler masalı yerle bir etti. Piramit işçilerinin mezarları incelendiğinde, bu insanların köle değil, yüksek maaşlı (bira ve et ile beslenen), sağlık hizmeti alan saygın zanaatkârlar ve işçiler olduğu ortaya çıktı. Hatta iş kazasında kırılan kemiklerinin ameliyat edildiği bile görüldü. Piramitler bir zorbalığın (kırbacın) eseri değil; inancın, devasa bir ulusal organizasyonun ve binlerce özgür insanın ortak bir kutsal amaç etrafında gönüllü olarak kenetlenmesinin sonucudur. İnsanoğlu inandığı bir amaç uğruna çalışıyorsa, en ağır taşı bile sırtında bir tüy gibi taşır.',
+    questionStem: 'Piramitleri inşa edenlerin "köle değil, maaşlı ve gönüllü zanaatkârlar" olduğunun anlaşılması, neyi sembolize etmektedir?',
+    options: [
+      'Mısırlıların kölelik kavramını tarihte ilk kaldıran medeniyet olduğunu',
+      'Piramitlerin uzaylılar tarafından inşa edildiği teorilerinin geçersizliğini',
+      'Dünyanın en devasa yapılarının (mucizelerinin) kırbaç ve zorbalıkla değil; ortak bir inanç etrafında kenetlenen özgür irade ve ulusal organizasyonla inşa edildiğini',
+      'Antik dönemde bira ve etin günümüzden daha değersiz gıdalar sayıldığını'
+    ],
+    correct: 2,
+    explanation: 'Kırbaçlanan köleler mitinin çökmesi ve işçilerin saygın zanaatkârlar olması; devasa eserlerin zorbalıkla değil, inanç, organizasyon ve özgür iradeyle yapıldığını sembolize eder.'
+  },
+  {
+    title: 'Herostratos Sendromu',
+    passage: 'MÖ 356 yılında Yunanistan\'ın Efes kentinde, antik dünyanın yedi harikasından biri olan o muazzam Artemis Tapınağı kundaklanarak küle çevrildi. Yakalanan kundakçı Herostratos, bunu neden yaptığı sorulduğunda şu korkunç cevabı verdi: "Adımı tarihe yazdırmak, sonsuza dek unutulmamak için." Şehir yönetimi, onun amacına ulaşmasını engellemek için adının anılmasını yasakladı (Damnatio Memoriae). Ancak bu yasak işe yaramadı; tarih onu, iyi bir eser bırakamayıp şöhret uğruna muazzam bir güzelliği yok edenlerin piri olarak kaydetti. "Herostratos Sendromu", insanın içindeki o doymak bilmez tanınma arzusunun (şöhret hırsının), yıkıcılığı ve terörü bile nasıl bir tatmin aracına dönüştürebileceğinin en hastalıklı (toksik) kanıtıdır.',
+    questionStem: 'Efes\'teki Artemis Tapınağı\'nın yakılması olayından yola çıkarak tanımlanan "Herostratos Sendromu" nedir?',
+    options: [
+      'Antik dönemdeki mimari eserlerin tahtadan yapılması nedeniyle ateşe dayanıksız olması durumu',
+      'İnsanın sadece kötülük ve şiddet yapmak amacıyla içgüdüsel olarak yangın çıkarmaya (piromani) eğilimli olması',
+      'Tarihe geçmek (şöhret olmak) ve unutulmamak uğruna, kişinin hiçbir ahlaki sınır tanımadan iyi ve güzel olan şeyleri bile yok etme (yıkıcılık) hırsı',
+      'Şehir yönetimlerinin suçluları cezalandırmak yerine onları tarihten silmeye çalışması'
+    ],
+    correct: 2,
+    explanation: 'Herostratos\'un sırf adını tarihe yazdırmak (şöhret) için dünyanın en güzel tapınaklarından birini yakması; tanınma hırsının kötülük ve yıkıcılığa dönüşmesini ifade eder.'
+  },
+  {
+    title: 'Çavdar Mahmuzu ve Cadı Avları',
+    passage: '1692 Salem Cadı Mahkemelerinde düzgün insanlar birdenbire çıldırarak birbirlerini cadılıkla suçlamış, sanrılar görmüş ve 20 masum insanı asmışlardı. Tarihçiler yüzyıllarca bunun dini bir histeri olduğunu savundu. Ancak modern bilim daha ürkütücü bir teori ortaya koydu: O yıl yağan yoğun yağmurlar, depolardaki çavdar tahıllarında "Çavdar Mahmuzu" (Ergot) adlı bir mantarın üremesine neden olmuştu. Bu mantar, LSD uyuşturucusunun doğal hammaddesidir! Yani o dindar insanlar içine şeytan girdiği için değil, farkında olmadan haftalarca LSD\'li ekmekler yedikleri için toplu olarak kimyasal halüsinasyonlar görüyorlardı. Tarihin en karanlık ahlaki cinayetlerinden biri, belki de sadece bozulmuş bir dilim ekmeğin içindeki küçücük bir mantarın yarattığı biyolojik bir felaketti.',
+    questionStem: 'Salem Cadı Avları ile ilgili ortaya atılan "Çavdar Mahmuzu" teorisi, olayı hangi boyutuyla yeniden yorumlamaktadır?',
+    options: [
+      'Salem halkının büyücülük ve kara büyü konusunda sanılandan daha bilgili olmasıyla',
+      'Kötülüğün dini (histerik) veya ahlaki bir kötülükten ziyade; bozuk gıdanın beyni zehirlemesi sonucu ortaya çıkan biyolojik (kimyasal) ve tesadüfi bir halüsinasyon felaketi olmasıyla',
+      'LSD uyuşturucusunun 1600\'lü yıllarda kasıtlı olarak bir biyolojik silah gibi kullanılmasıyla',
+      'Tarım ilaçlarının eksikliğinin her zaman toplumsal ölümlere yol açtığı teziyle'
+    ],
+    correct: 1,
+    explanation: 'İçine şeytan girdiği sanılan insanların aslında (LSD içeren) mantarlı ekmek yediği için halüsinasyon görmesi; olayın dini/ahlaki değil, biyolojik bir zehirlenme olduğunu savunur.'
+  },
+  {
+    title: 'Kristal Kafatasları Yanılgısı',
+    passage: '19. yüzyılın sonlarında müzelerde aniden, tamamen pürüzsüz kuvars taşından oyulmuş "Kristal Kafatasları" belirmeye başladı. Satıcılar bunların antik Maya ve Aztek rahiplerine ait, uzaylılar tarafından bırakılmış şifa ve lanet saçan nesneler olduğunu iddia ettiler. Tüm dünya bu gizeme inandı. Ancak yıllar sonra elektron mikroskoplarıyla yapılan incelemeler gerçeği yüzümüze çarptı: Kafataslarının üzerindeki kesik izleri, 19. yüzyılda Almanya\'da kullanılan modern döner zımparalara aitti. Ortada bir Maya efsanesi değil; sadece paraya tapan zeki kalpazanlar ve egzotik (uzaylı) gizemlere inanmaya dünden razı olan, kolayca kandırılabilir büyük bir insan kalabalığı vardı. İnsanoğlu, sıkıcı gerçeğe katlanmaktansa fantastik bir yalana inanmayı her zaman tercih eder.',
+    questionStem: 'Kristal Kafatasları\'nın modern aletlerle yapıldığının anlaşılması, insan doğasına dair hangi zaafı göz önüne sermiştir?',
+    options: [
+      'Aztek ve Maya medeniyetlerinin zanaat konusunda modern sanattan daha ileri olduğu',
+      'Alman teknolojisinin 19. yüzyılda bile taş oymacılığında kusursuz çalıştığı',
+      'İnsanların sıradan (sıkıcı) gerçekleri kabullenmek yerine, içlerindeki heyecan arayışıyla mistik ve fantastik (egzotik) yalanlara inanmaya her zaman meyilli olması zaafını',
+      'Müzelerin eserleri satın alırken yeterli bilimsel laboratuvar testleri yapmadığı'
+    ],
+    correct: 2,
+    explanation: 'Kalpazanların yaptığı sahte bir kafatasına tüm dünyanın "Maya veya uzaylı efsanesi" diye inanması; insanların sıkıcı gerçekler yerine fantastik yalanlara inanma zaafını (meylini) gösterir.'
+  }
+];
 
+export const gizemParagrafSorulari11: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_11.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_11[idx];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-gizem11-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
 export const edebiyatParagrafSorulari10: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_10.length }, (_, idx) => {
   const theme = PARAGRAPH_THEMES_10[idx];
   const qNo = idx + 1;
@@ -2811,6 +3087,7 @@ export const edebiyatParagrafSorulari10: BilimParagrafQuestion[] = Array.from({ 
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
+
 // paragrafTests.ts dosyasının hata vermemesi için iki listeyi birleştirip eski adıyla dışa aktarıyoruz:
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari,
@@ -2822,5 +3099,6 @@ export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...bilimParagrafSorulari7,
   ...felsefeParagrafSorulari8,
   ...psikolojiParagrafSorulari9,
-  ...edebiyatParagrafSorulari10
+  ...edebiyatParagrafSorulari10,
+  ...gizemParagrafSorulari11
 ];
