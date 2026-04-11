@@ -270,20 +270,21 @@ const PARAGRAPH_THEMES = [
     explanation: 'Silahlanma yarışı (rekabet) ile başlayan bu olayın, o an televizyon başındaki herkesi sınırları kaldırarak "insan" olma gururunda birleştirmesi (evrensel ilham) vurgulanmıştır.'
   }
 ];
-// İŞTE EKSİK OLAN 1. MAKİNE BURADA:
-export const tarihParagrafSorulari: SincityParagrafQuestion[] = Array.from({ length: 50 }, (_, idx) => {
-  const theme = PARAGRAPH_THEMES[idx % PARAGRAPH_THEMES.length];
-  const qNo = idx + 1;
-
-  return {
-    id: `turkce-tarih-p-${qNo}`,
-    subject: 'turkce',
-    term: 2,
-    prompt: `${theme.passage}\n\n${theme.questionStem}`,
-    options: [...theme.options],
-    correct: theme.correct,
-    explanation: `${theme.explanation} (Soru ${qNo})`,
-  };
+// 1. MAKİNE
+export const tarihParagrafSorulari: SincityParagrafQuestion[] = Array.from(
+  { length: PARAGRAPH_THEMES.length }, 
+  (_, idx) => {
+    const theme = PARAGRAPH_THEMES[idx];
+    const qNo = idx + 1;
+    return {
+      id: `turkce-tarih-p-${qNo}`,
+      subject: 'turkce',
+      term: 2,
+      prompt: `${theme.passage}\n\n${theme.questionStem}`,
+      options: [...theme.options],
+      correct: theme.correct,
+      explanation: `${theme.explanation} (Soru ${qNo})`,
+    };
 });
 export interface TarihParagrafQuestion {
   id: string;
@@ -558,20 +559,21 @@ const PARAGRAPH_THEMES_2 = [
   }
 ];
 
-// ÜRETİCİ MAKİNENİN İSMİNİ DE 2 OLARAK GÜNCELLEDİK:
-export const tarihParagrafSorulari2: TarihParagrafQuestion[] = Array.from({ length: 50 }, (_, idx) => {
-  const theme = PARAGRAPH_THEMES_2[idx % PARAGRAPH_THEMES_2.length];
-  const qNo = idx + 1;
-
-  return {
-    id: `turkce-tarih2-p-${qNo}`,
-    subject: 'turkce',
-    term: 2,
-    prompt: `${theme.passage}\n\n${theme.questionStem}`,
-    options: [...theme.options],
-    correct: theme.correct,
-    explanation: `${theme.explanation} (Soru ${qNo})`,
-  };
+// 2. MAKİNE
+export const tarihParagrafSorulari2: TarihParagrafQuestion[] = Array.from(
+  { length: PARAGRAPH_THEMES_2.length }, 
+  (_, idx) => {
+    const theme = PARAGRAPH_THEMES_2[idx];
+    const qNo = idx + 1;
+    return {
+      id: `turkce-tarih2-p-${qNo}`,
+      subject: 'turkce',
+      term: 2,
+      prompt: `${theme.passage}\n\n${theme.questionStem}`,
+      options: [...theme.options],
+      correct: theme.correct,
+      explanation: `${theme.explanation} (Soru ${qNo})`,
+    };
 });
 const PARAGRAPH_THEMES_3 = [
   {
@@ -836,19 +838,21 @@ const PARAGRAPH_THEMES_3 = [
   }
 ];
 
-export const tarihParagrafSorulari3: TarihParagrafQuestion[] = Array.from({ length: 50 }, (_, idx) => {
-  const theme = PARAGRAPH_THEMES_3[idx % PARAGRAPH_THEMES_3.length];
-  const qNo = idx + 1;
-
-  return {
-    id: `turkce-tarih3-p-${qNo}`,
-    subject: 'turkce',
-    term: 2,
-    prompt: `${theme.passage}\n\n${theme.questionStem}`,
-    options: [...theme.options],
-    correct: theme.correct,
-    explanation: `${theme.explanation} (Soru ${qNo})`,
-  };
+// 3. MAKİNE
+export const tarihParagrafSorulari3: TarihParagrafQuestion[] = Array.from(
+  { length: PARAGRAPH_THEMES_3.length }, 
+  (_, idx) => {
+    const theme = PARAGRAPH_THEMES_3[idx];
+    const qNo = idx + 1;
+    return {
+      id: `turkce-tarih3-p-${qNo}`,
+      subject: 'turkce',
+      term: 2,
+      prompt: `${theme.passage}\n\n${theme.questionStem}`,
+      options: [...theme.options],
+      correct: theme.correct,
+      explanation: `${theme.explanation} (Soru ${qNo})`,
+    };
 });
 const PARAGRAPH_THEMES_4 = [
   {
@@ -1113,20 +1117,21 @@ const PARAGRAPH_THEMES_4 = [
   }
 ];
 
-// Test 4 (Veya nasıl isimlendirmek istersen) için üretici makine:
-export const tarihParagrafSorulari4: TarihParagrafQuestion[] = Array.from({ length: 50 }, (_, idx) => {
-  const theme = PARAGRAPH_THEMES_4[idx % PARAGRAPH_THEMES_4.length];
-  const qNo = idx + 1;
-
-  return {
-    id: `turkce-tarih4-p-${qNo}`,
-    subject: 'turkce',
-    term: 2,
-    prompt: `${theme.passage}\n\n${theme.questionStem}`,
-    options: [...theme.options],
-    correct: theme.correct,
-    explanation: `${theme.explanation} (Soru ${qNo})`,
-  };
+// 4. MAKİNE
+export const tarihParagrafSorulari4: TarihParagrafQuestion[] = Array.from(
+  { length: PARAGRAPH_THEMES_4.length }, 
+  (_, idx) => {
+    const theme = PARAGRAPH_THEMES_4[idx];
+    const qNo = idx + 1;
+    return {
+      id: `turkce-tarih4-p-${qNo}`,
+      subject: 'turkce',
+      term: 2,
+      prompt: `${theme.passage}\n\n${theme.questionStem}`,
+      options: [...theme.options],
+      correct: theme.correct,
+      explanation: `${theme.explanation} (Soru ${qNo})`,
+    };
 });
 const PARAGRAPH_THEMES_5 = [
   {
@@ -1391,20 +1396,21 @@ const PARAGRAPH_THEMES_5 = [
   }
 ];
 
-// Test 5 Üretici Makine
-export const tarihParagrafSorulari5: TarihParagrafQuestion[] = Array.from({ length: 50 }, (_, idx) => {
-  const theme = PARAGRAPH_THEMES_5[idx % PARAGRAPH_THEMES_5.length];
-  const qNo = idx + 1;
-
-  return {
-    id: `turkce-tarih5-p-${qNo}`,
-    subject: 'turkce',
-    term: 2,
-    prompt: `${theme.passage}\n\n${theme.questionStem}`,
-    options: [...theme.options],
-    correct: theme.correct,
-    explanation: `${theme.explanation} (Soru ${qNo})`,
-  };
+// 5. MAKİNE
+export const tarihParagrafSorulari5: TarihParagrafQuestion[] = Array.from(
+  { length: PARAGRAPH_THEMES_5.length }, 
+  (_, idx) => {
+    const theme = PARAGRAPH_THEMES_5[idx];
+    const qNo = idx + 1;
+    return {
+      id: `turkce-tarih5-p-${qNo}`,
+      subject: 'turkce',
+      term: 2,
+      prompt: `${theme.passage}\n\n${theme.questionStem}`,
+      options: [...theme.options],
+      correct: theme.correct,
+      explanation: `${theme.explanation} (Soru ${qNo})`,
+    };
 });
 const PARAGRAPH_THEMES_6 = [
   {
@@ -1669,19 +1675,21 @@ const PARAGRAPH_THEMES_6 = [
   }
 ];
 
-export const tarihParagrafSorulari6: TarihParagrafQuestion[] = Array.from({ length: 50 }, (_, idx) => {
-  const theme = PARAGRAPH_THEMES_6[idx % PARAGRAPH_THEMES_6.length];
-  const qNo = idx + 1;
-
-  return {
-    id: `turkce-tarih6-p-${qNo}`,
-    subject: 'turkce',
-    term: 2,
-    prompt: `${theme.passage}\n\n${theme.questionStem}`,
-    options: [...theme.options],
-    correct: theme.correct,
-    explanation: `${theme.explanation} (Soru ${qNo})`,
-  };
+// 6. MAKİNE
+export const tarihParagrafSorulari6: TarihParagrafQuestion[] = Array.from(
+  { length: PARAGRAPH_THEMES_6.length }, 
+  (_, idx) => {
+    const theme = PARAGRAPH_THEMES_6[idx];
+    const qNo = idx + 1;
+    return {
+      id: `turkce-tarih6-p-${qNo}`,
+      subject: 'turkce',
+      term: 2,
+      prompt: `${theme.passage}\n\n${theme.questionStem}`,
+      options: [...theme.options],
+      correct: theme.correct,
+      explanation: `${theme.explanation} (Soru ${qNo})`,
+    };
 });
 export interface BilimParagrafQuestion {
   id: string;
@@ -1956,21 +1964,22 @@ const PARAGRAPH_THEMES_7 = [
   }
 ];
 
-export const bilimParagrafSorulari7: BilimParagrafQuestion[] = Array.from({ length: 50 }, (_, idx) => {
-  const theme = PARAGRAPH_THEMES_7[idx % PARAGRAPH_THEMES_7.length];
-  const qNo = idx + 1;
-
-  return {
-    id: `turkce-bilim7-p-${qNo}`,
-    subject: 'turkce',
-    term: 2,
-    prompt: `${theme.passage}\n\n${theme.questionStem}`,
-    options: [...theme.options],
-    correct: theme.correct,
-    explanation: `${theme.explanation} (Soru ${qNo})`,
-  };
+// 7. MAKİNE (Bilim)
+export const bilimParagrafSorulari7: BilimParagrafQuestion[] = Array.from(
+  { length: PARAGRAPH_THEMES_7.length }, 
+  (_, idx) => {
+    const theme = PARAGRAPH_THEMES_7[idx];
+    const qNo = idx + 1;
+    return {
+      id: `turkce-bilim7-p-${qNo}`,
+      subject: 'turkce',
+      term: 2,
+      prompt: `${theme.passage}\n\n${theme.questionStem}`,
+      options: [...theme.options],
+      correct: theme.correct,
+      explanation: `${theme.explanation} (Soru ${qNo})`,
+    };
 });
-
 // paragrafTests.ts dosyasının hata vermemesi için iki listeyi birleştirip eski adıyla dışa aktarıyoruz:
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari,
