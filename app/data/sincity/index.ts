@@ -1980,6 +1980,283 @@ export const bilimParagrafSorulari7: BilimParagrafQuestion[] = Array.from(
       explanation: `${theme.explanation} (Soru ${qNo})`,
     };
 });
+const PARAGRAPH_THEMES_8 = [
+  {
+    title: 'Van Gogh ve Yıldızlı Gece',
+    passage: 'Vincent van Gogh, sanat tarihinin en meşhur eseri olan "Yıldızlı Gece"yi boyadığında, lüks bir atölyede değil, kendi isteğiyle yattığı bir akıl hastanesinin demir parmaklıklı penceresinin ardındaydı. Ağır halüsinasyonlar ve derin bir yalnızlık çekiyordu. O tablodaki gökyüzü sakin ve huzurlu değildir; girdaplar halinde dönen, patlayan ve izleyeni içine çeken şiddetli bir kozmik kaostur. Van Gogh, kendi zihnindeki o karanlık ve korkutucu fırtınayı fırça darbeleriyle tuvale kusarak onu ehlileştirmişti. Sanat, kusursuz aklın bir ürünü değil; bazen parçalanmış bir ruhun hayatta kalmak için attığı son ve en görkemli çığlıktır.',
+    questionStem: 'Yazar, Van Gogh\'un "Yıldızlı Gece" eseri üzerinden sanatın doğasına dair nasıl bir çıkarım yapmaktadır?',
+    options: [
+      'Sanatın sadece maddi refah ve huzur (konfor alanı) içindeyken üretilebileceği',
+      'Ruhsal hastalıkların sanatsal yeteneği tamamen yok ettiği ve eserleri anlaşılmaz kıldığı',
+      'Sanatın, kusursuz bir aklın değil, parçalanmış bir ruhun acılarını (zihinsel kaosunu) sağaltma ve hayatta kalma çabası olduğu',
+      'Gerçeküstü doğa manzaralarının sanatseverler tarafından her zaman daha çok ilgi gördüğü'
+    ],
+    correct: 2,
+    explanation: 'Van Gogh\'un zihnindeki karanlık fırtınayı tuvale kusarak ehlileştirmesi, sanatın kusursuz bir aklın değil, parçalanmış bir ruhun hayatta kalma çığlığı olduğunu gösterir.'
+  },
+  {
+    title: 'Beethoven\'ın Sessiz Zirvesi',
+    passage: 'Müzik tarihinin en büyük dehalarından Ludwig van Beethoven, 9. Senfoni\'yi bestelediğinde ve eserin prömiyerini bizzat yönettiğinde artık tamamen sağırdı. Orkestra muazzam bir coşkuyla eseri bitirdiğinde, Beethoven arkası dönük olduğu için salonda kopan alkış tufanını ne duydu ne de gördü. Bir müzisyen onu nazikçe omuzlarından tutup kalabalığa döndürene kadar, yarattığı mucizenin yankısından habersizdi. Beethoven\'ın bu durumu, yaratıcılığın ve dehanın fiziksel duyulardan bağımsız, tamamen zihnin ve ruhun içinde yankılanan, dış dünyayı aşan ilahi bir irade olduğunu kanıtlar.',
+    questionStem: 'Beethoven\'ın 9. Senfoni\'yi sağırken bestelemesi ve yönetmesi, yaratıcılık bağlamında neyin sembolüdür?',
+    options: [
+      'Müzikteki başarının tamamen matematiksel notasyonlara bağlı olduğunun',
+      'Yaratıcılığın ve dehanın fiziksel engelleri (duyuları) aşan, tamamen zihinsel ve içsel (ruhsal) bir irade olduğunun',
+      'Sanatçıların eserlerini üretirken seyircinin tepkisini asla umursamadığının',
+      'Klasik müziğin sadece işitme engelliler tarafından tam anlamıyla anlaşılabileceğinin'
+    ],
+    correct: 1,
+    explanation: 'Tamamen sağır olmasına rağmen müziğin zirvesine ulaşması, yaratıcılığın fiziksel duyulara değil, içsel (ruhsal ve zihinsel) iradeye dayandığını gösterir.'
+  },
+  {
+    title: 'Theseus\'un Gemisi',
+    passage: 'Antik Yunan filozofu Plutarkhos efsanevi bir düşünce deneyi sunar: Kahraman Theseus\'un gemisi, yıllar içinde çürüyen her bir tahtası sökülüp yenisiyle değiştirilerek limanda korunur. Sonunda geminin orijinal hiçbir parçası kalmaz. Soru şudur: Bu gemi hala Theseus\'un gemisi midir? Eğer öyleyse, sökülen eski tahtalarla ikinci bir gemi inşa etseydik, hangisi gerçek Theseus\'un gemisi olurdu? Bu paradoks, kimlik kavramını sarsar. Bizler de hücrelerimiz yıllar içinde tamamen yenilendiğinde, anılarımız ve inançlarımız değiştiğinde, on yıl önceki "biz" ile hala aynı kişi miyizdir? Kimlik, parçaların kendisi mi yoksa o parçaları bir arada tutan görünmez bütünlük müdür?',
+    questionStem: 'Theseus\'un Gemisi paradoksunun insan doğasına (kimliğe) uyarlanmış halindeki asıl felsefi sorgulama nedir?',
+    options: [
+      'İnsan hücrelerinin kendini yenileme hızının yaşlanmayı nasıl etkilediği',
+      'Zaman içinde fiziksel ve zihinsel olarak tamamen değişen bir insanın, kendi "öz kimliğini" (benliğini) nasıl muhafaza ettiği veya hala aynı kişi olup olmadığı',
+      'Anıların silinmesinin insanın kişiliğini tamamen yok edip etmediği',
+      'Geçmişteki hatalarından ders çıkaran insanların daha erdemli bir karaktere büründüğü'
+    ],
+    correct: 1,
+    explanation: 'Geminin tüm parçaları değiştiğinde aynı gemi olup olmadığı sorusu insana uyarlandığında; hücreleri ve zihni değişen insanın hala aynı "benlik" olup olmadığı sorgulanır.'
+  },
+  {
+    title: 'Dostoyevski\'nin İdam Mangası',
+    passage: '1849 yılında 28 yaşındaki yazar Fyodor Dostoyevski, siyasi suçlamalarla idama mahkûm edildi. Gözleri bağlandı, idam mangasının karşısına dizildi ve tüfeklerin horoz seslerini duydu. Tam tetiğe basılacakken, Çar\'ın affı okundu ve cezası Sibirya\'da küreğe çevrildi. Ölümün o soğuk nefesini ensesinde hisseden Dostoyevski için zaman bükülmüştü. Hayatta kaldığına inanamıyordu. Bu sahte idam, onun ruhunu parçalayıp yeniden inşa etti. Sibirya dönüşü yazdığı "Suç ve Ceza", "Karamazov Kardeşler" gibi şaheserler, ölümle o birkaç saniyelik yüzleşmenin ürünüdür. Hayatın gerçek anlamı ve değeri, ancak onun elinizden zorla alındığını hissettiğiniz o kör edici uçurumun kenarında kavranabilir.',
+    questionStem: 'İdamdan son anda kurtulma olayının Dostoyevski\'nin yaşamı ve sanatı üzerindeki asıl etkisi nedir?',
+    options: [
+      'Siyasi olaylardan tamamen uzaklaşarak sadece romantik eserler yazmaya başlaması',
+      'Ölümle burun buruna gelmesinin (yüzleşmesinin) ruhunda yarattığı sarsıntının, hayatın anlamını kavramasını sağlayarak onu edebi bir dehaya dönüştürmesi',
+      'Yaşadığı travma yüzünden uzun yıllar boyunca hiçbir edebi eser üretememesi',
+      'Hapishane koşullarını protesto etmek için eserlerinde devlet yöneticilerini sertçe eleştirmesi'
+    ],
+    correct: 1,
+    explanation: 'Ölümün kıyısından dönmesinin ruhunu yeniden inşa edip onu o şaheserleri yazmaya itmesi, ölümle yüzleşmenin hayata anlam kattığını ve dehasını ateşlediğini gösterir.'
+  },
+  {
+    title: 'Kintsugi: Kusurların Güzelliği',
+    passage: 'Japonların "Kintsugi" adı verilen kadim bir tamir sanatı vardır. Bir çay kâsesi veya vazo kırıldığında, onu çöpe atmaz veya kırık izlerini saklayacak renksiz bir yapıştırıcıyla birleştirmezler. Aksine, kırılan parçaları altın tozu karıştırılmış özel bir reçineyle birleştirirler. Vazo eskisinden çok daha değerli, altın damarlarıyla parlayan eşsiz bir esere dönüşür. Bu sanatın altındaki felsefe muazzamdır: Kırılmak (yara almak) utanılacak veya saklanacak bir kusur değildir; aksine o nesnenin (veya insanın) yaşanmışlığının, hayatta kalma direncinin bir kanıtıdır. İnsan da tıpkı o vazo gibi, gizlediği kusurları ve iyileşen yaralarıyla çok daha değerlidir.',
+    questionStem: 'Kintsugi felsefesinin "insan hayatına" uyarlanmış temel mesajı aşağıdakilerden hangisidir?',
+    options: [
+      'Geçmişte yaşanan kötü olayların tamamen unutulup zihinden silinmesi gerektiği',
+      'İnsanların hatalarını ve zayıflıklarını diğer insanlardan gizlemesinin en güvenli yol olduğu',
+      'Fiziksel güzelliğin ruhsal güzellikten her zaman daha çok itibar gördüğü',
+      'Yaşanan acıların, travmaların ve kusurların (kırıkların) insanı değersizleştirmediği, aksine bu onarılmış yaraların insanı daha güçlü, olgun ve değerli kıldığı'
+    ],
+    correct: 3,
+    explanation: 'Kırıkların altınla birleştirilerek değer kazanması; insanın da yara almasının utanılacak bir şey olmadığını, iyileşen yaraların insanı daha değerli ve eşsiz kıldığını sembolize eder.'
+  },
+  {
+    title: 'Turing Testi: Makinedeki Hayalet',
+    passage: '1950 yılında Alan Turing, "Makineler düşünebilir mi?" sorusunu felsefi bir tartışma olmaktan çıkarıp pratik bir deneye dönüştürdü. Turing Testi şudur: Bir insan (hakem), iki farklı odayla yazılı olarak iletişim kurar. Odaların birinde bir insan, diğerinde ise bir bilgisayar programı vardır. Eğer hakem, sorduğu karmaşık sorulara aldığı cevaplardan hangisinin insan, hangisinin makine olduğunu ayırt edemezse, makine testi geçmiş (düşünebiliyor) kabul edilir. Ancak bu test asıl korkutucu soruyu arkasında bırakır: Eğer bir makine insanı kusursuzca taklit edebiliyorsa, bizim "bilinç" ve "ruh" dediğimiz o kutsal kavramlar da sadece karmaşık birer algoritmadan mı ibarettir?',
+    questionStem: 'Turing Testi\'nin arkasında yatan asıl "korkutucu (felsefi)" sorgulama parçaya göre nedir?',
+    options: [
+      'Bilgisayarların insanları işsiz bırakarak küresel bir ekonomik krize neden olması',
+      'Makinelerin insanları kusursuzca taklit edebilmesi durumunda, "bilinç" ve "ruh" gibi insana özgü sayılan yüce kavramların da aslında biyolojik birer algoritmaya indirgenme ihtimali',
+      'Yazılı iletişimin yüz yüze iletişimden daha aldatıcı ve yetersiz olduğunun kanıtlanması',
+      'İnsan zekâsının makineler karşısında giderek gerilediğinin kabul edilmesi'
+    ],
+    correct: 1,
+    explanation: 'Makinenin insanı taklit etmesi durumunda, kutsal saydığımız bilinç ve ruhun da sadece karmaşık bir algoritmadan ibaret olup olmadığı ihtimali, metindeki asıl felsefi sorgulamadır.'
+  },
+  {
+    title: 'Ozymandias ve Çöldeki Heykel',
+    passage: 'İngiliz şair Percy Bysshe Shelley, "Ozymandias" adlı ünlü şiirinde uçsuz bucaksız, ıssız bir çölün ortasında bulunmuş kırık dökük devasa bir heykelden bahseder. Heykelin kaidesinde şu kibirli sözler kazılıdır: "Benim adım Ozymandias, kralların kralı! Ey Güçlüler, eserlerime bakın ve çaresizliğe kapılın!" Oysa o yazının etrafında bakılacak hiçbir eser kalmamıştır; sadece yalnızlık, çürümüş taşlar ve sonsuz bir kum denizi vardır. Shelley bu şiirle, ne kadar kudretli olurlarsa olsunlar, kralların, diktatörlerin ve insan kibrinin zamanın (doğanın) o sessiz ve acımasız silgisi karşısında eninde sonunda bir kum tanesine dönüşeceğini tokat gibi yüzümüze çarpar.',
+    questionStem: 'Shelley\'nin "Ozymandias" şiirindeki yıkık heykel ve kaidedeki yazı arasındaki tezatlık (kontrast) neyi sembolize eder?',
+    options: [
+      'Mimaride taş kullanımının dayanıklılık açısından yanlış bir tercih olduğunu',
+      'Sanat eserlerinin devlet adamlarının isimlerini sonsuza dek yaşatabileceğini',
+      'Zamanın ve doğanın yok edici gücü karşısında, dünyevi iktidarın (kibrin) ve "ölümsüzlük" iddiasının trajikomik bir hiçliğe mahkûm olduğunu',
+      'Çöl ikliminin antik kalıntıları korumada diğer iklimlerden daha başarısız olduğunu'
+    ],
+    correct: 2,
+    explanation: 'Kaidedeki "eserlerime bakın" yazısının etrafında sadece kum ve hiçlik olması; dünyevi gücün ve kibrin zaman karşısında bir hiçliğe mahkûm olduğunu (tezatlık) sembolize eder.'
+  },
+  {
+    title: 'Genel Bakış Etkisi (Overview Effect)',
+    passage: 'Uzaya giden astronotların çoğu dünyaya döndüklerinde derin bir psikolojik ve felsefi dönüşüm yaşarlar. Buna "Genel Bakış Etkisi" denir. Uzayın o zifiri karanlığında, sınır çizgilerinin, tel örgülerin ve haritaların olmadığı; sadece incecik bir atmosferle korunan o kırılgan, mavi topu gördüklerinde insanlığın tüm savaşları, milliyetçilikleri ve siyasi kavgaları onlara inanılmaz derecede aptalca gelir. Üzerinde yaşadığımız gezegen, fethedilecek parçalara ayrılmış bir savaş alanı değil; uzayın dondurucu boşluğunda hep birlikte seyahat ettiğimiz ortak bir cankurtaran sandalıdır. Uzaydan bakıldığında ayrı gayrı yoktur; sadece tek bir insanlık ailesi vardır.',
+    questionStem: 'Astronotların yaşadığı "Genel Bakış Etkisi", insanlığın hangi yerleşik algısını kökünden sarsmaktadır?',
+    options: [
+      'Teknolojinin doğaya verdiği zararların boyutunu',
+      'Dünyanın uzaydaki diğer gezegenlerden çok daha küçük olduğu gerçeğini',
+      'Ülkeler, sınırlar ve milliyetçilik gibi dünyevi ayrımların (yapay bölünmelerin) yüceltilen ve savaşılan değerler olması yanılgısını',
+      'Uzaylıların dünyayı dışarıdan gizlice izlediği komplo teorilerini'
+    ],
+    correct: 2,
+    explanation: 'Uzaydan sınır çizgilerinin görünmemesi ve savaşların aptalca gelmesi, dünyadaki siyasi/milliyetçi ayrımların (yapay bölünmelerin) anlamsızlığını göstererek bu algıyı sarsar.'
+  },
+  {
+    title: 'Mandela Etkisi',
+    passage: 'Binlerce insan, Monopoly oyununun maskotunun gözlük taktığına veya Volkswagen logosunda bir çizgi olmadığına yemin edebilir; oysa bunlar hiçbir zaman öyle olmamıştır. Buna "Mandela Etkisi" denir (çünkü pek çok insan Nelson Mandela\'nın 1980\'lerde hapiste öldüğünü hatırlıyordu, oysa 2013\'te özgürken ölmüştü). Bu fenomen, insan hafızasının bir video kamera gibi gerçekleri birebir kaydetmediğini, aksine anıları sürekli yeniden yazan, dış etkenlerden etkilenen kurgusal bir hikâye anlatıcısı olduğunu kanıtlar. Çok emin olduğumuz, "kendi gözlerimle gördüm" dediğimiz gerçeklikler bile, bazen beynimizin uydurduğu ve kalabalıkların birbirine bulaştırdığı toplu bir halüsinasyondan ibarettir.',
+    questionStem: 'Mandela Etkisi\'nin varlığı, "insan hafızası" ile ilgili hangi gerçeği ortaya koymaktadır?',
+    options: [
+      'Hafızanın yaşlandıkça tamamen silindiği ve yerine yenilerinin yazılamadığı',
+      'Hafızanın objektif (tarafsız) bir kayıt cihazı olmadığı; dış etkenlerle değişebilen, kurgusal ve yanıltıcı bir yapıya sahip olduğu',
+      'İnsanların sadece travmatik olayları hatırlamaya eğilimli olduğu',
+      'Medyanın insanların zihnine mikroçiplerle sahte anılar yerleştirdiği'
+    ],
+    correct: 1,
+    explanation: 'Metinde hafızanın bir video kamera olmadığı, anıları sürekli yeniden yazan kurgusal bir hikâye anlatıcısı olduğu (objektif olmadığı, yanıltıcı olduğu) vurgulanmıştır.'
+  },
+  {
+    title: 'Marshmallow Deneyi ve İrade',
+    passage: '1960\'larda Stanford Üniversitesi\'nde küçük çocuklara bir deney yapıldı: Önlerine bir adet lokum (marshmallow) kondu ve "Eğer ben odadan çıkıp gelene kadar (15 dakika) bunu yemezsen, sana ikinci bir lokum daha vereceğim" dendi. Kimi çocuklar kapı kapanır kapanmaz lokumu yuttu, kimileri ise kendilerini zor tutarak direndi ve ödülü aldı. Bilim insanları bu çocukları onlarca yıl takip ettiğinde sarsıcı bir sonuçla karşılaştılar: 15 dakika bekleyebilen (hazzı erteleyebilen) çocuklar, akademik hayatta, kariyerlerinde ve sağlıklarında diğerlerinden çok daha başarılı olmuşlardı. Zekâ veya yetenekten ziyade; anlık dürtülere gem vurabilmek, yani irade (hazzı erteleme), insan hayatındaki asıl başarının anahtarıydı.',
+    questionStem: 'Marshmallow Deneyi\'nin uzun vadeli sonuçlarına göre, yaşam boyu başarının asıl belirleyicisi nedir?',
+    options: [
+      'Çocukluk döneminde alınan yüksek zekâ (IQ) puanları',
+      'Anlık heves ve arzulara karşı koyabilme, daha büyük ödüller için sabredebilme (hazzı erteleme) iradesi',
+      'Ailenin çocuğa sunduğu sosyo-ekonomik ve kültürel imkânlar',
+      'Çocukların okul hayatlarında gördükleri katı disiplin eğitimi'
+    ],
+    correct: 1,
+    explanation: '15 dakika bekleyebilenlerin hayatta çok daha başarılı olması; zekâdan ziyade anlık dürtülere gem vurabilmenin (hazzı erteleme iradesinin) başarının anahtarı olduğunu gösterir.'
+  },
+  {
+    title: 'Pygmalion Etkisi: Kehanetin Gerçekleşmesi',
+    passage: 'Yunan mitolojisinde heykeltıraş Pygmalion, fildişinden yaptığı bir kadın heykeline öylesine âşık olur ve onun gerçek olacağına öylesine inanır ki, Tanrılar bu inancı ödüllendirerek heykeli canlandırır. Psikolojide "Pygmalion Etkisi" (Kendini Gerçekleştiren Kehanet) olarak bilinen bu fenomen, okullarda deneylerle kanıtlanmıştır. Öğretmenlere, aslında tamamen sıradan olan bazı öğrencilerin "üstün zekâlı" olduğu yalanı söylendiğinde; öğretmenler yıl boyunca farkında olmadan o çocuklara daha fazla ilgi göstermiş, daha çok cesaretlendirmiştir. Yılsonunda o "sıradan" çocukların başarıları gerçekten de tavan yapmıştır. İnsanlar, etraflarındaki (özellikle güvendikleri) otorite figürlerinin onlara biçtiği beklenti kalıplarına uyacak şekilde kendi sınırlarını yeniden çizerler.',
+    questionStem: 'Pygmalion Etkisi\'nin eğitim ve yönetim alanındaki asıl karşılığı (anlamı) aşağıdakilerden hangisidir?',
+    options: [
+      'Öğrencilere zor görevler vermenin onların özgüvenini kırarak başarısızlığa ittiği',
+      'Başkalarının bizim hakkımızdaki yüksek veya düşük beklentilerinin, davranışlarımızı ve nihai performansımızı (başarımızı) doğrudan şekillendirmesi',
+      'Sadece zeki çocukların özel ilgiyle desteklenmesi gerektiği',
+      'Mitolojik hikâyelerin günümüz eğitim sisteminde materyal olarak kullanılmasının faydaları'
+    ],
+    correct: 1,
+    explanation: 'Öğretmenlerin "üstün zekâlı" sanıp beklentiyi yüksek tuttukları sıradan çocukların gerçekten de başarılarının tavan yapması, beklentilerin performansı şekillendirdiğini gösterir.'
+  },
+  {
+    title: 'Kırık Camlar Teorisi',
+    passage: 'Eğer terk edilmiş bir binanın tek bir camı kırılır ve hemen tamir edilmezse, yoldan geçenler "burası sahipsiz, kimsenin umurunda değil" diye düşünür. Kısa süre sonra diğer camlar da kırılır, duvarlara yazılar yazılır ve o bina suçluların sığınağına dönüşür. Buna kriminolojide "Kırık Camlar Teorisi" denir. Toplumdaki düzensizlik, küçük tavizlerle başlar. Yere atılan tek bir çöpün temizlenmemesi, o sokağın çöplüğe dönmesinin ilk adımıdır. Kötülük veya suç, doğrudan büyük bir karanlıkla değil; küçük, tolere edilmiş (göz yumulmuş) ihmallerin yarattığı psikolojik boşluktan (sahipsizlik hissinden) beslenerek bir salgın gibi yayılır.',
+    questionStem: 'Kırık Camlar Teorisi\'ne göre suçun veya toplumsal düzensizliğin yayılmasındaki asıl tetikleyici nedir?',
+    options: [
+      'Ekonomik krizlerin insanları mecburen hırsızlığa ve suça itmesi',
+      'Polis sayısının yetersiz olması nedeniyle suçluların yakalanamaması',
+      'Küçük ihlallere (kırık cam, çöp vb.) göz yumulmasının, ortamda "sahipsizlik ve otorite eksikliği" hissi yaratarak daha büyük suçlara cesaret vermesi',
+      'Kötü niyetli insanların özellikle eski ve terk edilmiş binaları hedef alması'
+    ],
+    correct: 2,
+    explanation: 'Tek bir kırık camın tamir edilmemesinin (küçük bir ihmal) insanlara "burası sahipsiz" mesajı vererek diğer suçları tetiklediği açıkça belirtilmiştir.'
+  },
+  {
+    title: 'Amor Fati: Kaderini Sev',
+    passage: 'Alman filozof Friedrich Nietzsche, hayatın acımasızlığı karşısında ezilmemek için Stoacı felsefeden beslenen "Amor Fati" (Kaderini Sev) kavramını yüceltir. Amor Fati, başımıza gelen hastalıkları, ihanetleri veya felaketleri sadece pasif bir şekilde "kabullenmek" değildir. Ondan çok daha fazlasıdır: O acıları hayatın mükemmel yapbozunun ayrılmaz, estetik ve gerekli birer parçası olarak kucaklamaktır. Ateşin içinden geçmeden çeliğin dövülemeyeceği gibi, o acılar yaşanmasaydı şu an olduğumuz kişiye dönüşemezdik. Hayatı gerçekten sevmek, sadece güneşli günleri değil, bizi yere seren o karanlık fırtınaları da coşkuyla bağrımıza basmaktır.',
+    questionStem: 'Nietzsche\'nin "Amor Fati" (Kaderini Sev) felsefesi ile insanın acılara karşı takınması gereken tavır nedir?',
+    options: [
+      'Acı veren olayları hızla unutup zihinden silerek sürekli mutlu olmaya çalışmak',
+      'Kaderin değiştirilemez olduğunu düşünüp hiçbir eylemde bulunmadan pasif bir umutsuzluğa kapılmak',
+      'Yaşanan felaketleri ve acıları, kişiliği şekillendiren ve olgunlaştıran zorunlu/değerli birer parça olarak görüp coşkuyla kabullenmek',
+      'Acı çekmemek için insanlardan uzaklaşarak tamamen izole (yalnız) bir yaşam sürmek'
+    ],
+    correct: 2,
+    explanation: 'Amor Fati\'nin felaketleri pasif kabullenmek değil, onları "yapbozun gerekli bir parçası" olarak görüp bizi şu anki kişiye dönüştürdüğü için coşkuyla kucaklamak olduğu vurgulanmıştır.'
+  },
+  {
+    title: 'Ockham\'ın Usturası',
+    passage: '14. yüzyıl filozofu William of Ockham, bilim ve mantık dünyasında devrim yaratan bir prensip öne sürdü: "Varlıklar gereksiz yere çoğaltılmamalıdır." Bugün "Ockham\'ın Usturası" olarak bilinen bu kural, bir olayı açıklayan birden fazla teori varsa, en az varsayıma dayanan (en basit) açıklamanın genellikle doğru olduğunu söyler. Eğer gece bahçenizden tıkırtılar geliyorsa, bunun uzaylıların iniş yapması veya gizli ajanların operasyon yapması ihtimali de vardır; ancak bir kedinin çöp kutusunu karıştırıyor olması çok daha az varsayım gerektirdiği için en olası gerçektir. Bu ustura, insan aklının komplo teorilerine ve karmaşık fantezilere olan zaafını kesip atan keskin bir mantık kılıcıdır.',
+    questionStem: 'Ockham\'ın Usturası prensibinin temel mantığı aşağıdakilerden hangisidir?',
+    options: [
+      'Bir sorunun çözümü için her zaman en yeni ve en karmaşık teknolojilerin kullanılması gerektiği',
+      'Olayları açıklarken, karmaşık senaryolar (komplolar) yerine, en az varsayıma dayanan en basit ve sade açıklamanın tercih edilmesi',
+      'Geçmişte yaşanan olayların günümüz mantığıyla açıklanamayacağı',
+      'Filozofların her zaman bilim insanlarından daha doğru tahminler yaptığı'
+    ],
+    correct: 1,
+    explanation: 'Prensibin, bir olayı açıklayan teoriler arasında "en az varsayıma dayanan (en basit) açıklamanın genellikle doğru olduğu" kuralı olduğu belirtilmiştir.'
+  },
+  {
+    title: 'Ortak Malların Trajedisi',
+    passage: 'Ekonomist Garrett Hardin, "Ortak Malların Trajedisi" kavramıyla bireysel bencilliğin toplumsal yıkımını anlatır. Herkese açık bir mera düşünün. Her çoban, kendi kârını artırmak için o meraya bir koyun daha getirir. Bir koyunun eklenmesinin çobana faydası %100\'dür, ancak otların tükenmesinin zararı tüm köye paylaştırılır. Her çoban bu mantıkla bencilce davranıp koyun eklemeye devam ettiğinde, mera tamamen kurur ve köydeki tüm koyunlar ölür. Bireysel düzeyde son derece rasyonel ve mantıklı görünen kısa vadeli kâr hırsı, toplumsal ve ekolojik düzeyde hepimizin bindiği dalı kesmesiyle sonuçlanır. İklim krizinden okyanusların kirlenmesine kadar tüm felaketlerimizin altında bu trajedi yatar.',
+    questionStem: 'Ortak Malların Trajedisi kavramının merkezinde yatan asıl çatışma nedir?',
+    options: [
+      'Köylülerin tarım yöntemleri konusunda yeterince bilgi sahibi olmaması',
+      'Devletin ortak arazilere yüksek vergiler koyarak üretimi engellemesi',
+      'Bireyin kısa vadeli kendi çıkarını maksimize etme (bencillik) güdüsünün, uzun vadede ortak kaynakları tüketerek tüm toplumu yıkıma sürüklemesi',
+      'Hayvancılığın tarımsal faaliyetlere göre çok daha maliyetli olması'
+    ],
+    correct: 2,
+    explanation: 'Her çobanın kendi çıkarı (bencillik) için meraya koyun eklemesinin sonunda merayı kurutması, bireysel çıkarın ortak kaynağı tüketerek herkesi yıkıma götürmesini (çatışmayı) anlatır.'
+  },
+  {
+    title: 'Tekinsiz Vadi (Uncanny Valley)',
+    passage: 'Robotik alanında yapılan araştırmalar ilginç bir psikolojik reaksiyonu ortaya koydu. Bir robot veya animasyon karakteri insana hiç benzemediğinde (örn: WALL-E) ona sempati duyarız. İnsana benzemeye başladıkça empatimiz artar. Ancak bu benzerlik %90\'lara ulaştığında; yani insan gibi görünen ama gözlerinde ruh olmayan, hafif sarsak hareket eden bir android gördüğümüzde aniden derin bir iğrenme ve korku hissederiz. Bu düşüş noktasına "Tekinsiz Vadi" denir. Evrimsel psikologlara göre bu ürperti, beynimizin o robotu "hasta, zombi veya ceset" olarak algılayıp hastalıktan korunmak için verdiği ilkel bir alarm refleksidir. Kusursuz olmayan taklit, zihnimizde yaşamı değil, ölümü çağrıştırır.',
+    questionStem: 'İnsanların robotlara veya animasyonlara karşı hissettiği "Tekinsiz Vadi" ürpertisinin evrimsel nedeni parçada nasıl açıklanmıştır?',
+    options: [
+      'İnsanoğlunun makinelerin dünyayı ele geçireceğine dair fütüristik korkuları',
+      'Robotların tamamen insana benzemeye (kusursuza) çok yaklaştığı anlardaki o küçük mekanik hataların, beynimizde "hastalık, zombi veya ceset" algısı yaratarak evrimsel bir kaçış (korunma) refleksi tetiklemesi',
+      'Robotların yapımında kullanılan soğuk metallerin insan tenine benzememesi',
+      'Sosyolojik olarak insanların sadece kendi ırkından olanlara empati duyabilmesi'
+    ],
+    correct: 1,
+    explanation: 'İnsana çok benzeyip tam benzeyemeyen (ruhsuz/sarsak) androidlerin beynimizde "hasta, ceset" algısı yaratıp ilkel bir alarm/korunma refleksi tetiklediği belirtilmiştir.'
+  },
+  {
+    title: 'Overton Penceresi',
+    passage: 'Siyasette ve medyada "Overton Penceresi" adı verilen bir kavram vardır. Bu pencere, toplumun o dönemde kabul edip tartışabileceği "normal ve makul" fikirlerin çerçevesidir. Ancak bu pencere sabit değildir. Marjinal, radikal veya uçuk bir fikri doğrudan kabul ettiremezsiniz. Bunun yerine, medya o konuyu sürekli tartışmaya açar, önce "düşünülemez" olan fikir "radikal" olur, sonra "kabul edilebilir" aşamasına gelir ve en sonunda "popüler" bir devlet politikasına dönüşür. Pencere sinsice kaydırılmıştır. Toplumlar, dün duyduklarında dehşete düşecekleri uygulamaları, yavaş yavaş ısıtılan sudaki bir kurbağa gibi bugün kendi istekleriyle alkışlayarak kabul edebilirler.',
+    questionStem: 'Overton Penceresi kavramı, toplumların manipülasyonu ile ilgili hangi gerçeği ifade eder?',
+    options: [
+      'Toplumların her zaman muhafazakâr kalıp yeniliklere direndiğini',
+      'Kabul edilemez (radikal) görünen fikirlerin, medya ve siyaset aracılığıyla sürekli gündemde tutularak aşamalı bir şekilde normalleştirilebileceğini (pencerenin kaydırılması)',
+      'Medyanın toplumu yönlendirme gücünün internetin icadıyla birlikte tamamen bittiğini',
+      'Halkın siyasilerin fikirlerini her koşulda sorgulamadan reddettiğini'
+    ],
+    correct: 1,
+    explanation: 'Düşünülemez bir fikrin yavaş yavaş ısıtılarak önce radikal, sonra kabul edilebilir ve popüler hale gelmesi (pencerenin kaydırılması), aşamalı normalleştirmeyi ifade eder.'
+  },
+  {
+    title: 'Logoterapi ve Anlam Arayışı',
+    passage: 'Psikiyatrist Viktor Frankl, İkinci Dünya Savaşı\'nda Auschwitz toplama kampına gönderildiğinde, etrafındaki insanların gaz odalarından önce umutsuzluktan öldüğüne şahit oldu. Hayatta kalmayı başaranlar, fiziksel olarak en güçlü olanlar değil; kampın dışında kavuşmak istedikleri bir sevdalısı, yazmak istedikleri bir kitabı veya yaşamaya devam etmek için bir "anlamı" olanlardı. Frankl buradan yola çıkarak "Logoterapi"yi kurdu. Ona göre insanın temel güdüsü Freud\'un dediği gibi haz veya Adler\'in dediği gibi güç değil, "anlam" arayışıdır. Nietzsche\'nin sözüyle bunu özetler: "Yaşamak için bir nedeni (neden) olan kişi, her türlü nasıla katlanabilir."',
+    questionStem: 'Viktor Frankl\'ın toplama kampı gözlemlerine dayanarak kurduğu "Logoterapi"nin merkezindeki temel felsefe nedir?',
+    options: [
+      'İnsan psikolojisinde cinselliğin ve bilinçaltı dürtülerin her şeyden üstün olduğu',
+      'Fiziksel gücün ve kas kütlesinin hayatta kalmanın tek garantisi olduğu',
+      'İnsanı hayatta tutan ve en ağır acılara katlanmasını sağlayan asıl gücün "haz" veya "güç" değil, hayata tutunacak bireysel bir "anlam" bulmak olduğu',
+      'Büyük travmalar yaşayan insanların bir daha asla normal bir psikolojiye dönemeyeceği'
+    ],
+    correct: 2,
+    explanation: 'Frankl\'a göre temel güdünün haz veya güç değil "anlam arayışı" olduğu; bir anlamı (nedeni) olanın her şeye katlanabileceği belirtilmiştir.'
+  },
+  {
+    title: 'Zeigarnik Etkisi',
+    passage: '1920\'lerde psikolog Bluma Zeigarnik, bir restoranda otururken garsonların onca kalabalık siparişi hiçbir yere yazmadan nasıl eksiksiz hatırladıklarını inceledi. Gözlemi şuydu: Garsonlar, siparişleri sadece yemekler masaya gidene (işlem tamamlanana) kadar hatırlıyor, hesap ödendikten saniyeler sonra o masanın ne yediğini tamamen unutuyorlardı. Bu duruma "Zeigarnik Etkisi" denir. İnsan beyni, bitirilmemiş, yarım kalmış veya kesintiye uğramış işleri sürekli canlı tutarak zihni meşgul ederken; tamamlanan işleri hafızadan hızla siler. Ayrılıkların acısının veya yarım kalan aşkların yıllarca unutulmamasının sebebi "çok sevmek" değil, beynimizin o yarım kalmış dosyayı bir türlü kapatamamasıdır.',
+    questionStem: 'Zeigarnik Etkisi\'nin tanımına göre, zihnimizin anıları saklama (hatırlama) biçimi hangi kritere bağlıdır?',
+    options: [
+      'Olayların ne kadar travmatik veya sevindirici (duygusal şiddetli) olduğuna',
+      'Deneyimlenen sürecin tamamlanıp tamamlanmadığına (yarım kalanların hatırlanıp, bitenlerin unutulmasına)',
+      'Olayı yaşarken yanımızda başka insanların (sosyal desteğin) olup olmadığına',
+      'Görsel hafızamızın işitsel hafızamızdan daha güçlü çalışmasına'
+    ],
+    correct: 1,
+    explanation: 'Garsonların bitmemiş siparişi hatırlayıp hesap ödenince (tamamlanınca) unutması; beynin tamamlanmayan/yarım kalan işleri hatırlayıp bitenleri sildiği kuralına (Zeigarnik) dayanır.'
+  },
+  {
+    title: 'Buğday Tanesi ve Satranç',
+    passage: 'Satrancı icat eden Hintli bilge, oyununu krala sunduğunda kral çok etkilenir ve "Dile benden ne dilersen!" der. Bilge, mütevazı bir gülümsemeyle "Tahtanın ilk karesine bir buğday tanesi koyun. İkinci kareye iki, üçüncüye dört, dördüncüye sekiz... Her karede iki katına çıkararak 64 kareyi doldurun" der. Kral bu ucuz isteğe güler. Ancak hesaplamalar başladığında saray matematiğe çarpar: Tahtanın sonlarına gelindiğinde gereken buğday miktarı, sadece kralın depolarını değil, tüm dünyada binlerce yıl üretilecek buğdaydan daha fazladır (yaklaşık 18 kentilyon tane). Bu efsane, insan beyninin "üstel (geometrik) büyümeyi" sezgisel olarak kavramaktaki yetersizliğini ve matematiğin o sessiz, sarsıcı gücünü gösterir.',
+    questionStem: 'Satranç tahtası efsanesinin anlatıldığı bu parçadan çıkarılabilecek temel sonuç nedir?',
+    options: [
+      'Satranç oyununun aslında tarımsal bir strateji üzerine kurulduğu',
+      'Hint medeniyetinin o dönemde buğday üretimi konusunda kıtlık yaşadığı',
+      'İnsan zihninin "üstel (katlanarak) büyümeyi" tahmin etmede yetersiz kaldığı ve matematiğin (geometrik artışın) göründüğünden çok daha devasa (sarsıcı) bir güce sahip olduğu',
+      'Kralların, halkın basit isteklerini bile karşılamayacak kadar kibirli olduğu'
+    ],
+    correct: 2,
+    explanation: 'Kralın ucuz sandığı bu isteğin dünyadaki tüm buğdaydan fazla çıkması, insan beyninin üstel (katlanarak) büyümeyi kavramaktaki yetersizliğini ve matematiğin sarsıcı gücünü kanıtlar.'
+  }
+];
+
+export const felsefeParagrafSorulari8: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_8.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_8[idx];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-felsefe8-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
 // paragrafTests.ts dosyasının hata vermemesi için iki listeyi birleştirip eski adıyla dışa aktarıyoruz:
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari,
@@ -1988,5 +2265,6 @@ export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari4,
   ...tarihParagrafSorulari5,
   ...tarihParagrafSorulari6,
-  ...bilimParagrafSorulari7
+  ...bilimParagrafSorulari7,
+  ...felsefeParagrafSorulari8
 ];
