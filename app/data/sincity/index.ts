@@ -1979,5 +1979,5 @@ export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari4,
   ...tarihParagrafSorulari5,
   ...tarihParagrafSorulari6,
-  ...tarihParagrafSorulari7
+  ...bilimParagrafSorulari7
 ];
