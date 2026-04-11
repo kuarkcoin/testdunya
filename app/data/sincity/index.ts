@@ -3364,6 +3364,284 @@ export const teknolojiParagrafSorulari12: BilimParagrafQuestion[] = Array.from({
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
+const PARAGRAPH_THEMES_13 = [
+  {
+    title: 'Radyum Kızları',
+    passage: '1920\'lerde Amerika\'da saat kadranlarına karanlıkta parlayan radyum boyası süren genç kadınlar, fırçaların ucunu sivriltmek için onları dudaklarının arasına alıyorlardı. Şirket yöneticileri radyumun zararsız olduğunu söylüyordu; oysa kendileri laboratuvarlarda kurşun önlüklerle çalışıyordu. Yıllar sonra bu kadınların çeneleri erimeye, kemikleri un ufak olmaya ve karanlıkta parlayarak ölmeye başladıklarında bile şirketler gerçeği inkâr etti. "Radyum Kızları", kapitalizmin kâr hırsı uğruna insan hayatını nasıl pervasızca, kelimenin tam anlamıyla "içten içe çürüterek" harcayabildiğinin ve gerçeği örtbas etme çabasının tarihteki en fosforlu ve korkunç kanıtıdır.',
+    questionStem: 'Radyum Kızları\'nın yaşadığı trajedi, dönemin sanayi anlayışı hakkında neyi göz önüne sermektedir?',
+    options: [
+      'Kadın işçilerin sanayi sektöründe erkeklere göre daha dikkatsiz ve eğitimsiz olduğunu',
+      'Bilimsel araştırmaların o dönemde radyumun zararlarını tespit edebilecek seviyede olmadığını',
+      'Şirketlerin (kapitalist kâr hırsının), tehlikeyi bilmelerine rağmen işçi sağlığını hiçe sayarak gerçeği örtbas etme (sömürü) ahlaksızlığını',
+      'Karanlıkta parlayan saatlerin o dönemde sanıldığından çok daha az talep gördüğünü'
+    ],
+    correct: 2,
+    explanation: 'Yöneticilerin tehlikeyi bilip kurşun önlük giymesine rağmen işçilere "zararsız" demesi, kâr hırsı uğruna insan hayatının hiçe sayıldığı ahlaksız bir sömürüyü kanıtlar.'
+  },
+  {
+    title: 'Oppenheimer ve Bhagavad Gita',
+    passage: '16 Temmuz 1945\'te, New Mexico çöllerinde dünyanın ilk atom bombası "Trinity" patlatıldığında, gökyüzünü binlerce güneşten daha parlak, kör edici bir ışık kapladı. Projenin mimarı fizikçi J. Robert Oppenheimer, yarattığı o devasa ölüm mantarının göğe yükselişini izlerken zafer çığlıkları atmadı. Aksine, dudaklarından Hint destanı Bhagavad Gita\'dan şu kan dondurucu ve hüzünlü dize döküldü: "Şimdi ben ölüm oldum, dünyaların yok edicisi." Oppenheimer o saniye anlamıştı; insanlık artık kendi kendini tek bir tuşla yok edebilecek o nihai ve tanrısal güce ulaşmıştı. Bu an, bilimin o masum keşif arzusunun, insanlığın elinde nasıl apokaliptik bir kâbusa dönüştüğünün felsefi kırılma noktasıdır.',
+    questionStem: 'Oppenheimer\'ın atom bombasının patlaması karşısında hissettiği duygu durumu parçada nasıl ifade edilmiştir?',
+    options: [
+      'Yıllarca süren emeğinin sonucunu almanın verdiği derin bir bilimsel gurur ve tatmin',
+      'Bilimsel bir buluşun, insanoğluna kendi türünü yok etme (apokaliptik) gücü vermesinden doğan felsefi bir dehşet ve vicdani bir sarsıntı',
+      'Bombanın yeterince güçlü olmadığını düşünerek yaşadığı büyük bir teknik hayal kırıklığı',
+      'Sovyetler Birliği\'ni mağlup edeceğine dair duyduğu kesin ve kibirli bir güven'
+    ],
+    correct: 1,
+    explanation: '"Dünyaların yok edicisi oldum" sözü ve zafer çığlığı atmaması, buluşunun insanlığa getireceği yıkımı fark etmesinden doğan dehşeti ve vicdani sarsıntıyı gösterir.'
+  },
+  {
+    title: 'Kobra Etkisi (Cobra Effect)',
+    passage: 'Hindistan İngiliz sömürgesi altındayken, Delhi sokaklarındaki kobra yılanlarının sayısından rahatsız olan İngiliz hükümeti dâhice (!) bir plan yaptı: Getirilen her ölü kobra için halka para ödülü verilecekti. Başlangıçta işe yaradı, yılan sayısı azaldı. Ancak kısa süre sonra Hintliler, sadece ödül parasını almak için evlerinde gizlice kobra üretmeye başladılar! Hükümet durumu fark edip ödül sistemini iptal edince, halk ellerinde kalan değersiz binlerce kobrayı sokaklara saldı. Sonuç, eskisinden çok daha büyük bir kobra istilası oldu. "Kobra Etkisi", karmaşık bir sorunu sadece yüzeysel teşviklerle (parayla) çözmeye çalışmanın, sorunu çözmek bir yana, nasıl kendi ellerinizle daha da ölümcül hale getirebileceğinin efsanevi bir örneğidir.',
+    questionStem: 'Kobra Etkisi kavramı, yönetim ve kriz çözme politikaları hakkında hangi önemli dersi vermektedir?',
+    options: [
+      'Halkın hayvan sevgisinin ekonomik çıkarlardan her zaman daha üstün olduğunu',
+      'Karmaşık sorunlara yönelik yüzeysel ve sadece maddi teşvike dayalı eksik çözümlerin, beklenmedik yan etkiler doğurarak sorunu eskisinden çok daha felaket bir boyuta taşıyabileceğini',
+      'Yabancı yöneticilerin yerel halkın dini inançlarına asla saygı duymadığını',
+      'Hindistan ikliminin zehirli yılanların üremesi için dünyadaki en elverişli yer olduğunu'
+    ],
+    correct: 1,
+    explanation: 'Ödül sisteminin (yüzeysel çözüm) insanları yılan üretmeye itip, ödül bitince sokakların yılan dolması; eksik çözümlerin sorunu daha da büyütebileceğini kanıtlar.'
+  },
+  {
+    title: 'Diderot Etkisi',
+    passage: '18. yüzyıl Fransız filozofu Denis Diderot, hayatı boyunca yoksul yaşamıştı. Bir gün Rus Çariçesi ona yüklü bir para ve hediye olarak kusursuz, kırmızı, ipek bir sabahlık gönderdi. Diderot o muhteşem sabahlığı giydiğinde kendini çok şık hissetti; ancak birden çalışma masasının o sabahlığa hiç uymadığını (eski kaldığını) fark edip yeni bir masa aldı. Sonra sandalyeyi, halıyı, perdeleri ve tabloları değiştirdi. Bir tek sabahlığa uydurmak için evdeki her şeyi yenileyen Diderot, sonunda devasa bir borç batağına sürüklenip eskisinden daha yoksul ve mutsuz oldu. "Diderot Etkisi", insanın sahip olduğu bir lüksün, ona yetmek yerine, kendisini tamamlayacak yeni lüksler talep ederek kişiyi nasıl dipsiz bir tüketim ve borç sarmalına çektiğini anlatan kusursuz bir sosyolojik tespittir.',
+    questionStem: 'Diderot Etkisi\'nin temelinde yatan insan davranış modeli aşağıdakilerden hangisidir?',
+    options: [
+      'İnsanların sadece hediye edilen eşyaları uzun süre kullanma eğiliminde olması',
+      'Yeni ve gösterişli (lüks) bir eşya edinmenin, kişinin mevcut standartlarını yetersiz bulmasına yol açarak onu durdurulamaz bir tüketim (alma) zincirine sürüklemesi',
+      'Filozofların genellikle maddi dünyadan tamamen kopuk ve tutumlu bir hayat sürmesi',
+      'İnsanın yoksulluktan kurtulur kurtulmaz eski dostlarını unutma eğiliminde olması'
+    ],
+    correct: 1,
+    explanation: 'Kırmızı bir sabahlık yüzünden evdeki her şeyin eski görünmesi ve hepsinin yenilenmesi; yeni bir lüksün zincirleme bir tüketim (alma) histerisi yarattığını gösterir.'
+  },
+  {
+    title: 'Zhuangzi ve Kelebek Rüyası',
+    passage: 'Antik Çin filozofu Zhuangzi, bir gece rüyasında kendini özgürce uçan, neşeli bir kelebek olarak gördü. Kelebek, Zhuangzi adında bir adam olduğunu tamamen unutmuştu. Filozof aniden uyandığında, yatağında yine o bildiği insan bedeniyle duruyordu. Ancak zihnine şu ürpertici felsefi şüphe düştü: "Acaba ben rüyasında kelebek olduğunu gören bir insan mıyım; yoksa şu an rüyasında Zhuangzi adında bir insan olduğunu gören bir kelebek miyim?" Bu kısacık anekdot, insanlık tarihinin en büyük varoluşsal çıkmazlarından biridir. Duyu organlarımıza ve algımıza duyduğumuz o sarsılmaz güvenin, aslında sadece uzun süreli bir rüyanın ikna edici illüzyonu olabileceği ihtimali, gerçeklik algımızı paramparça eder.',
+    questionStem: 'Zhuangzi\'nin Kelebek Rüyası hikâyesi, felsefede öncelikli olarak hangi kavramı tartışmaya açmaktadır?',
+    options: [
+      'Hayvanların da insanlar gibi karmaşık ve derin rüyalar görebilme yetisine sahip olduğunu',
+      'İnsan beyninin uyku sırasında fiziksel acıları hissetmeme mekanizmasını',
+      'Duyu organlarımızın bize sunduğu "mutlak gerçeklik" algısının doğruluğunu ve uyanık olduğumuz hayatın aslında ikna edici bir rüya (illüzyon) olma ihtimalini',
+      'İnsanın yaşlandıkça çocukluk anılarını giderek daha net hatırlamaya başlamasını'
+    ],
+    correct: 2,
+    explanation: '"Rüyasında insan olduğunu gören bir kelebek miyim?" sorusu, yaşadığımız mutlak gerçekliğin aslında bir rüya (illüzyon) olup olmadığını, yani gerçeklik algımızı sorgular.'
+  },
+  {
+    title: 'Diego de Landa ve Kültürel Soykırım',
+    passage: '1562 yılında, İspanyol rahip Diego de Landa, Amerika kıtasındaki Maya halkını "şeytani inançlardan kurtarıp Hristiyanlaştırmak" amacıyla tarihin en büyük kültürel soykırımlarından birine imza attı. Rahiplerin topladığı, Mayaların binlerce yıllık astronomi, tıp, tarih ve edebiyat bilgisini barındıran tüm "Kodeks"leri (hiyeroglif kitapları) tek bir gecede devasa bir ateşte yaktı. Gözleri önünde binlerce yıllık hafızaları küle dönen Mayalar acı içinde feryat ediyordu. Landa günlüğüne "İçinde şeytanın yalanlarından başka bir şey yoktu, hepsini yaktık" yazdı. Bu olay, "kurtuluş ve medeniyet" maskesi takmış dogmatik bir cehaletin, kendisinden farklı olan bir kültürü nasıl bir gecede tarihten (hafızadan) silebileceğinin kan donduran kanıtıdır.',
+    questionStem: 'Diego de Landa\'nın Maya kitaplarını yakması eylemi, yazar tarafından nasıl değerlendirilmektedir?',
+    options: [
+      'Hristiyanlık dininin o coğrafyada hızla yayılmasını sağlayan stratejik ve haklı bir başarı olarak',
+      'Maya dilinin öğrenilmesinin çok zor olmasından dolayı yapılmış pratik (zorunlu) bir temizlik işlemi olarak',
+      'Sözde bir kurtuluş ve dini arınma bahanesi (maskesi) altında, koca bir medeniyetin binlerce yıllık bilgi birikimini ve hafızasını yok eden dogmatik bir kültürel soykırım olarak',
+      'Kağıt yapımında kullanılan malzemelerin bulaşıcı hastalık yaydığı için mecburen ateşe verilmesi olarak'
+    ],
+    correct: 2,
+    explanation: 'Yazar, bu eylemi "kurtuluş ve medeniyet maskesi takmış dogmatik bir cehaletin" yarattığı bir "kültürel soykırım" (hafıza silme) olarak değerlendirmektedir.'
+  },
+  {
+    title: 'John Snow ve Geniş Sokak Pompası',
+    passage: '1854 yılında Londra\'da korkunç bir Kolera salgını baş gösterdi. Dönemin tıp otoriteleri, hastalığın havadan (Miasma-kötü hava) yayıldığına inanıyordu. Doktor John Snow ise bu dogmaya karşı çıktı. Kapı kapı dolaşıp ölenlerin adreslerini bir haritaya işaretlediğinde, ölümlerin "Broad Street" (Geniş Sokak) üzerindeki tek bir su pompasının etrafında kümelendiğini fark etti. Hastalık havadan değil, lağım karışmış bu sudan geliyordu. Yetkililer ona inanmak istemese de Snow, kendi başına gidip pompanın kolunu söktü ve salgın bıçak gibi kesildi. John Snow\'un bu hareketi, asırlık köhne inançların ve unvanlı otoritelerin kibrinin, basit bir veri analizi (haritalama) ve cesur bir akıl karşısında nasıl çöktüğünün efsanevi başlangıcıdır.',
+    questionStem: 'John Snow\'un kolera salgınını durdurma süreci, bilim tarihi açısından neyin zaferi olarak kabul edilebilir?',
+    options: [
+      'Salgın hastalıklarda en iyi yöntemin insanları karantinaya almak olduğunun',
+      'Tıp fakültesindeki uzun eğitimlerin pratik hayatta her zaman işe yaradığının',
+      'Geleneksel inançlara ve otoritelerin kibrine (dogmalara) karşı; somut verilere, gözleme ve analitik aklın (bilimin) ortaya koyduğu mutlak zaferin',
+      'Su pompalarının her zaman salgın hastalık ürettiği gerçeğinin'
+    ],
+    correct: 2,
+    explanation: 'Otoritelerin "kötü hava" (dogma) inancına karşı Snow\'un haritalama (veri/gözlem) yaparak pompanın kolunu sökmesi, analitik aklın dogmalara karşı zaferini simgeler.'
+  },
+  {
+    title: 'Kafka\'nın Dönüşümü ve İşe Yaramazlık',
+    passage: 'Franz Kafka\'nın "Dönüşüm" adlı romanında, Gregor Samsa bir sabah yatağında kendini devasa ve iğrenç bir böceğe dönüşmüş olarak bulur. Ancak hikâyenin asıl sarsıcı yanı Gregor\'un böceğe dönüşmesi değil, etrafındakilerin buna verdiği tepkidir. Evin tüm geçimini sağlayan Gregor böcek olunca, ailesi önce şok yaşar, sonra ondan iğrenir ve en sonunda ona tamamen kayıtsız kalıp ölmesini beklerler. Gregor artık para kazanamadığı (işe yaramadığı) an, ailesi için bir yüke, bir çöpe dönüşmüştür. Kafka\'nın bu şaheseri, kapitalist ve çıkarcı modern toplumda, insanın değerinin sadece "ne kadar ürettiğiyle" (işe yaramasıyla) ölçüldüğünü; çarkın dışına çıktığınız an en sevdikleriniz tarafından bile nasıl böcek gibi ezilip dışlanacağınızı yüzümüze çarpar.',
+    questionStem: 'Kafka\'nın "Dönüşüm" eserinde Gregor Samsa\'nın böceğe dönüşmesi üzerinden yapılan asıl sosyolojik eleştiri nedir?',
+    options: [
+      'İnsanların doğaya ve hayvanlara karşı duyduğu yersiz tiksinti',
+      'Çalışma saatlerinin uzunluğunun insanı bedensel olarak tüketip deforme etmesi',
+      'Modern toplumda bireyin değerinin sadece "ekonomik faydasına (üretimine)" indirgenmesi ve faydası biten insanın kendi ailesi tarafından bile ötekileştirilip dışlanması',
+      'Böcek fobisinin (entomofobi) toplumda sanıldığından çok daha yaygın olması'
+    ],
+    correct: 2,
+    explanation: 'Gregor para kazanamadığı an ailesinin ondan iğrenip ölmesini beklemesi, modern toplumda insanın değerinin sadece "ürettiği fayda" ile ölçüldüğünü (dışlanmayı) eleştirir.'
+  },
+  {
+    title: 'Bobo Bebeği Deneyi (Bandura)',
+    passage: '1961 yılında Albert Bandura, şiddetin insanın içinde doğuştan var olan bir dürtü mü, yoksa görerek öğrenilen bir davranış mı olduğunu test etti. Bir grup çocuğu, içi hava dolu hacıyatmaz benzeri bir oyuncakla (Bobo Bebeği) dolu odaya aldı. Ancak çocukları odaya sokmadan önce onlara bir video izletti: Videoda bir yetişkin, Bobo bebeğine acımasızca çekiçle vuruyor, tekmeliyor ve küfrediyordu. Videoyu izleyen çocuklar odaya girdiklerinde, yetişkinleri birebir taklit ederek bebeği dövmeye başladılar; hatta videoda olmayan yeni işkence yöntemleri (oyuncak silahla vurmak gibi) icat ettiler. Şiddet içeren video izlemeyen çocuklar ise bebekle sadece barışçıl oyunlar oynadı. Bu deney, kötülüğün genetik bir kader değil, toplumdan (yetişkinlerden) kopyalanan bulaşıcı bir virüs (sosyal öğrenme) olduğunu ispatladı.',
+    questionStem: 'Bandura\'nın Bobo Bebeği Deneyi\'nin sonuçlarına göre şiddet eğilimi nasıl açıklanmaktadır?',
+    options: [
+      'Erkek çocukların kız çocuklara göre doğuştan daha agresif olmasıyla',
+      'Şiddetin genetik veya doğuştan gelen (içgüdüsel) bir dürtü değil, çevreyi (yetişkinleri) gözlemleme yoluyla kopyalanan ve öğrenilen bir davranış olmasıyla',
+      'Oda sıcaklığının ve fiziksel koşulların çocukların stres seviyesini artırmasıyla',
+      'Oyuncakların şeklinin (hacıyatmaz) insan psikolojisinde şiddeti tetiklemesiyle'
+    ],
+    correct: 1,
+    explanation: 'Şiddet izleyen çocukların oyuncağı dövmesi, izlemeyenlerin barışçıl oynaması; şiddetin genetik değil (gözlem/taklit yoluyla) sosyal olarak öğrenilen bir virüs olduğunu kanıtlar.'
+  },
+  {
+    title: 'Tifolu Mary: Özgürlük mü, Toplum mu?',
+    passage: '1900\'lerin başında New York\'ta zengin ailelerin yanında aşçılık yapan Mary Mallon, gittiği her eve ölümcül Tifo hastalığını bulaştırıyordu. İlginç olan, Mary\'nin kendisinin turp gibi sağlıklı olmasıydı (tarihteki bilinen ilk asemptomatik taşıyıcı). Yetkililer ona aşçılığı bırakmasını söylediğinde Mary buna öfkeyle karşı çıktı, hastalığı kendisinin yaydığına asla inanmadı ve sahte isimlerle aşçılık yapmaya, insanları zehirlemeye devam etti. Sonunda devlet onu yakalayıp ıssız bir adada, ölene kadar 26 yıl boyunca zorunlu karantinaya kapattı. "Tifolu Mary" vakası, tıbbi bir olaydan çok öte; "Bireyin özgürlüğü nerede biter, toplumun sağlığını korumak adına devlet bir insanı suçu olmadan ömür boyu hapsedebilir mi?" şeklindeki o devasa ahlaki ve hukuki ikilemin tam merkezidir.',
+    questionStem: 'Tifolu Mary vakasının odaklandığı temel ahlaki ve hukuki çatışma (ikilem) nedir?',
+    options: [
+      'Zengin ailelerin aşçılara ve hizmetlilere uyguladığı haksız sömürü',
+      'Tıp biliminin o dönemde bulaşıcı hastalıkların teşhisinde çok yetersiz kalması',
+      'Hastalığı bilerek yaymayan (kendi hasta olmayan) bir bireyin "kişisel özgürlüğü" ile, halk sağlığını (kitleyi) korumak için devletin uyguladığı "zorunlu kısıtlama/karantina" arasındaki sınır tartışması',
+      'Gıda sektöründe kadınların çalışmasının engellenmesi için üretilen siyasi bahaneler'
+    ],
+    correct: 2,
+    explanation: 'Mary\'nin aşçılık yapma (kişisel özgürlük) isteği ile devletin halkı korumak için onu 26 yıl hapsetmesi; bireysel özgürlük ile toplum sağlığı arasındaki ahlaki/hukuki sınır çatışmasını ifade eder.'
+  },
+  {
+    title: 'Kemik Savaşları: Toksik Rekabet',
+    passage: '19. yüzyılın sonlarında Amerika\'da, paleontoloji tarihinin en büyük buluşları aynı zamanda en utanç verici ahlaksızlıklarına sahne oldu. Othniel Marsh ve Edward Cope adlı iki bilim insanı, yeni dinozor fosilleri bulmak için öyle hastalıklı bir rekabete (Kemik Savaşları) giriştiler ki, bilim tamamen rafa kalktı. Birbirlerinin kazı alanlarına casuslar yolladılar, fosilleri çaldılar ve en iğrenci; "Ben çıkaramıyorsam o da bulamasın" diyerek, içinde paha biçilmez milyonlarca yıllık dinozor iskeletlerinin bulunduğu mağaraları dinamitle havaya uçurdular. Bilimi ileri taşımak için başlayan bu serüven, insan egosunun ve şöhret hırsının, uğrunda savaştığı o "hakikati" bile gözünü kırpmadan yok edebilecek kadar toksik bir canavara dönüşebileceğini gösterdi.',
+    questionStem: 'Kemik Savaşları olayında eleştirilen "bilim dışı ve toksik" insan davranışı aşağıdakilerden hangisidir?',
+    options: [
+      'Paleontoloji biliminin jeolojiye göre daha az popüler olması',
+      'Dinozor fosillerinin devlet tarafından izinsiz olarak satılması',
+      'Bilimsel aydınlanma ve gerçeği bulma amacının yerini; kişisel ego, şöhret hırsı ve rakibini yok etmek uğruna bizzat o değerli gerçeği (fosilleri) tahrip etmeye bırakması',
+      'Kazı çalışmalarında dinamit gibi çevreye zararlı patlayıcıların kullanılması'
+    ],
+    correct: 2,
+    explanation: 'İki bilim insanının ego ve hırs yüzünden, bulmak için uğraştıkları fosilleri (hakikati) dinamitle yok etmeleri; bilimin şöhret hırsına kurban edilmesini eleştirir.'
+  },
+  {
+    title: 'Canavar Deneyi (The Monster Study)',
+    passage: '1939 yılında Wendell Johnson, kekemeliğin genetik değil psikolojik olduğunu kanıtlamak için 22 yetim çocuk üzerinde "Canavar Deneyi" adını alacak korkunç bir çalışma yaptı. Tamamen akıcı ve düzgün konuşan sağlıklı çocukların yarısına haftalarca "Çok kötü konuşuyorsun, kekemeliğin başlıyor, konuşmadan önce iyice düşün, yoksa sus" diyerek sürekli psikolojik baskı (negatif telkin) uyguladı. Sonuç yıkıcıydı. Tamamen sağlıklı olan o çocuklar içine kapandı, anksiyete krizleri geçirdi ve hayatları boyunca kalıcı konuşma bozuklukları yaşadılar. Bu zalim deney, otorite figürlerinin kelimelerinin ve "olumsuz etiketlemelerin", sağlıklı bir insan zihnini nasıl ömür boyu sakat bırakabilen (ve gerçeğe dönüşen) ölümcül bir silaha dönüştüğünü ispatlar.',
+    questionStem: 'Canavar Deneyi\'nin sonuçlarına göre insan psikolojisine zarar veren asıl yıkıcı etken nedir?',
+    options: [
+      'Yetimhanelerin fiziksel olarak çocukların gelişimine uygun olmayan kötü koşulları',
+      'Kekemeliğin sadece biyolojik (genetik) bir sorun değil, bulaşıcı bir hastalık olması',
+      'Otorite figürlerinin uyguladığı sürekli negatif telkinlerin (olumsuz etiketlemenin), tamamen sağlıklı bireylerin bile zihnini sakat bırakıp o kusuru gerçeğe dönüştürmesi',
+      'Çocukların kendilerinden daha büyük çocuklarla iletişim kurmaktan kaçınması'
+    ],
+    correct: 2,
+    explanation: 'Sağlıklı çocuklara "kekeliyorsun" denmesiyle gerçekten kekeme olmaları; otoritenin negatif telkininin/etiketlemesinin zihni sakatlayıp o kusuru gerçeğe dönüştürdüğünü (kendini gerçekleştiren kehanet) kanıtlar.'
+  },
+  {
+    title: 'Werther Etkisi ve Bulaşıcı İntihar',
+    passage: '1774 yılında Alman yazar Goethe, "Genç Werther\'in Acıları" adlı romanını yayımladığında Avrupa\'yı sarsan bir moda başladı. Romandaki ana karakter Werther, imkânsız bir aşk yüzünden mavi frakını, sarı yeleğini giyerek intihar ediyordu. Romanın yayımlanmasından sonra Avrupa\'da yüzlerce genç erkek, tıpkı Werther gibi mavi frak ve sarı yelek giyerek aynı yöntemle hayatına son vermeye başladı. Durum o kadar kontrolden çıktı ki kitap birçok ülkede yasaklandı. Psikolojide "Werther Etkisi" (Kopyacı İntihar) olarak bilinen bu fenomen; insanın çaresizlik ve bunalım anlarında medya, sanat veya popüler figürler aracılığıyla sunulan o romantikleştirilmiş ölüm fikrinden ne kadar kolay etkilenip (bulaşıcı bir hastalık gibi) taklit edebildiğini gösterir.',
+    questionStem: 'Werther Etkisi, sosyoloji ve kitle psikolojisi açısından hangi tehlikeyi ortaya koymaktadır?',
+    options: [
+      'Romantik edebiyatın gençleri her zaman okumaya daha fazla teşvik ettiğini',
+      'Medyanın, edebiyatın veya popüler kurguların; intihar gibi uç (trajik) eylemleri romantikleştirerek, psikolojik buhrandaki kitleler üzerinde bulaşıcı (taklitçi) bir etki yaratabileceğini',
+      'Mavi ve sarı gibi canlı renklerin insan psikolojisinde depresyonu tetiklediğini',
+      'Kitap yasaklamalarının halkı o kitaba daha fazla yönelttiğini (Ters Psikoloji)'
+    ],
+    correct: 1,
+    explanation: 'Roman karakterinin intiharının gençler tarafından kıyafetine kadar taklit edilmesi; medyanın/sanatın trajik eylemleri romantikleştirerek kitlelerde bulaşıcı (taklit) bir eylem yaratabileceğini kanıtlar.'
+  },
+  {
+    title: 'Uzun Kaşıklar Alegorisi',
+    passage: 'Doğu felsefesinde Cennet ve Cehennemin farkını anlatan meşhur bir alegori vardır. Bir adam Cehennemi ziyarete gider; ortada devasa bir kazan nefis çorba kaynamaktadır. Etrafındaki insanlar ise açlıktan bir deri bir kemik kalmıştır. Kollarından daha uzun olan kaşıklarla çorbayı alabilmekte, ancak kaşık çok uzun olduğu için ağızlarına götürememektedirler. Adam Cennete geçer; ortada yine aynı çorba, aynı uzun kaşıklar vardır. Ancak buradaki insanlar çok sağlıklı ve mutludur. Çünkü Cennetteki insanlar uzun kaşıklarla çorbayı alıp kendi ağızlarına götürmeye çalışmak yerine, kaşığı karşısındaki arkadaşına uzatıp onu beslemektedir. Cennet ve Cehennem dışarıdan inşa edilen farklı iki mekân değildir; insanın bencilliği (kendini doyurma hırsı) ile diğerkâmlığı (dayanışması) arasındaki o felsefi seçimin ta kendisidir.',
+    questionStem: 'Uzun Kaşıklar Alegorisi\'ne göre, "Cennet ve Cehennem" arasındaki asıl fark neyle açıklanmaktadır?',
+    options: [
+      'Fiziksel imkânların, yiyeceklerin ve mekân tasarımlarının kalitesiyle',
+      'İnsanların o mekâna gelmeden önce dünyada işledikleri günahların ağırlığıyla',
+      'Mekânların aynı olmasına rağmen, bireylerin olaylara bencilce (sadece kendi çıkarı) yaklaşması ile dayanışma ve yardımlaşma (diğerkâmlık) ile yaklaşması arasındaki ahlaki tercihle',
+      'Kaşıkların uzunluk ölçülerinin kişilerin zekâsına göre farklılık göstermesiyle'
+    ],
+    correct: 2,
+    explanation: 'Her iki yerde de şartlar (uzun kaşık ve çorba) aynıyken cehennemin aç, cennetin tok olması; farkın dışsal koşullar değil, bencillik ve dayanışma (ahlaki tercih) olduğunu gösterir.'
+  },
+  {
+    title: 'Henrietta Swan Leavitt: Unutulan Deha',
+    passage: '1900\'lerin başında Harvard Gözlemevi\'nde, "bilgisayar" (hesaplayıcı) olarak adlandırılan bir grup kadın, teleskop camlarındaki yıldız noktalarını saymak gibi sıkıcı işler için asgari ücretle çalıştırılıyordu. Bu kadınlardan biri olan işitme engelli Henrietta Swan Leavitt, binlerce yıldızın parlaklık değişimlerini inceleyerek astronomi tarihini sarsacak bir kural (Sefeid Değişkenleri formülünü) buldu. Bu formül, yıldızların ve galaksilerin bizden ne kadar uzakta olduğunu ölçmenin "ilk cetveli" oldu. Eğer onun bulduğu bu evrensel cetvel olmasaydı, Edwin Hubble evrenin genişlediğini asla kanıtlayamayacaktı. Leavitt hak ettiği övgüyü yaşarken asla alamadı. Bilim tarihi, isimleri altın harflerle yazılan erkek dehaların yanı sıra, o dehaların omuzlarına basarak yükseldiği isimsiz ve unutulmuş kadınların sessiz emeğiyle doludur.',
+    questionStem: 'Henrietta Swan Leavitt\'in hikâyesi, bilim tarihindeki hangi adaletsizliğe dikkat çekmektedir?',
+    options: [
+      'Teleskop teknolojilerinin sadece zengin ülkeler tarafından üretilebilmesine',
+      'Engelli bireylerin akademi dünyasında her zaman ayrıcalıklı bir konumda tutulmasına',
+      'Tarihi değiştiren en kritik (temel) buluşların bile arkasında duran kadınların ve alt kademe çalışanların emeğinin, dönemin cinsiyetçi (veya hiyerarşik) yapısı yüzünden görünmez kılınmasına',
+      'Astronomi biliminin matematik ve fizik kadar saygı görmemesine'
+    ],
+    correct: 2,
+    explanation: 'Leavitt\'in bulduğu formül olmadan Hubble\'ın başarılı olamayacağı ancak övgüyü alamaması; kadınların/alt kademe çalışanların temel emeklerinin cinsiyetçi veya hiyerarşik sistemde görünmez kalmasını (adaletsizliği) anlatır.'
+  },
+  {
+    title: 'Halifax Patlaması (1917)',
+    passage: 'Birinci Dünya Savaşı sırasında Kanada\'nın Halifax limanında, savaş bölgesine gitmek üzere ağzına kadar patlayıcı ve cephane dolu Fransız gemisi Mont-Blanc, bir Norveç gemisiyle çarpıştı. Mont-Blanc alev aldı. Tehlikenin farkında olmayan binlerce sivil, kıyıya ve evlerinin pencerelerine koşarak bu ilginç "gemi yangınını" adeta bir sinema filmi izler gibi seyretmeye başladı. Yirmi dakika sonra gemi, atom bombası icat edilene kadar insanlık tarihinin gördüğü en büyük suni patlamayla infilak etti. 2 bin kişi anında öldü, pencerelerden izleyen binlerce insan ise patlayan cam kırıkları yüzünden kör oldu. Halifax felaketi, tehlikeyi eğlenceli bir seyirlik sanan o saf insan merakının, gerçeğin ölümcül şiddetiyle çarpıştığında nasıl karanlık bir kâbusa dönüştüğünün en trajik özetidir.',
+    questionStem: 'Halifax Patlaması\'nın sivil kayıpları artırmasındaki asıl trajik (ve psikolojik) faktör nedir?',
+    options: [
+      'Gemilerdeki patlayıcıların o dönemde tamamen yasadışı olarak taşınması',
+      'Kanada hükümetinin halka önceden hiçbir tahliye uyarısı yapmaması',
+      'Tehlikeyi idrak edemeyen halkın, felaketi (yangını) ilginç bir görsel şov (seyirlik) sanarak cam kenarlarına doluşması ve saf merakın bedelini ölümle/körlükle ödemesi',
+      'Liman kentlerindeki evlerin tahtadan yapılmış ve patlamaya dayanıksız olması'
+    ],
+    correct: 2,
+    explanation: 'Binlerce insanın tehlikeyi anlamayıp yangını sinema izler gibi izlemesi ve camların patlamasıyla kör/ölü olması; saf insan merakının tehlikeyle birleştiği o trajik anı (seyirlik algısını) ifade eder.'
+  },
+  {
+    title: 'Stockholm Sendromu',
+    passage: '1973 yılında İsveç\'in başkenti Stockholm\'de bir bankayı basan soyguncular, dört banka çalışanını altı gün boyunca rehin aldı. Polis, rehineleri kurtarmak için operasyon yaptığında şok edici bir manzarayla karşılaştı: Rehineler kendilerini kurtarmaya gelen polislere saldırıyor, soygunculara (kendilerini ölümle tehdit eden esir edicilerine) siper oluyorlardı. Dava sürecinde rehineler soyguncuların avukat masraflarını bile ödediler. Psikolojide "Stockholm Sendromu" olarak bilinen bu akılalmaz durum, kurbanın maruz kaldığı yoğun korku, çaresizlik ve hayatta kalma içgüdüsüyle; kendisini esir alan, ezen ve şiddet uygulayan kişiye karşı minnet (aşk/sadakat) duyarak onunla bağ kurmasıdır. İnsan zihni, en çaresiz anında hayatta kalabilmek için kendi katiline bile âşık olacak kadar şekil değiştirebilir.',
+    questionStem: 'Stockholm Sendromu, insan zihninin şiddet ve tehlike altındayken gösterdiği hangi psikolojik savunmayı tanımlar?',
+    options: [
+      'Tehlike anında hafızanın tamamen silinerek olayın unutulması (amnezi) refleksi',
+      'Kurbanın yoğun korku ve çaresizlik karşısında hayatta kalabilmek (kendini güvende hissetmek) için, kendisine zulmeden (esir alan) otoriteyle mantık dışı bir sadakat veya sevgi bağı kurmasını',
+      'Rehinelerin, soyguncuların ideolojik fikirlerine anında inanıp onları haklı bulması',
+      'Korkunun insanlarda aşırı saldırganlık (agresyon) yaratarak çevrelerindeki herkese zarar verme isteği'
+    ],
+    correct: 1,
+    explanation: 'Rehinelerin kurtarıcılara saldırıp soygunculara (katillerine) minnet duyması, çaresizlik anında hayatta kalmak için ezen kişiyle bağ kurma (savunma) refleksini tanımlar.'
+  },
+  {
+    title: 'Sfenks\'in Bilmecesi',
+    passage: 'Yunan mitolojisinde Thebai kentinin kapısında bekleyen aslan gövdeli, insan başlı canavar Sfenks, şehre girenlere şu bilmeceyi sorar: "Sabahları dört ayaklı, öğlenleri iki ayaklı, akşamları ise üç ayaklı olan yaratık nedir?" Bilemeyenleri anında parçalayarak yutar. Kahraman Oidipus (Oedipus) korkusuzca canavarın karşısına geçer ve cevap verir: "İnsandır! Bebekken (sabah) emekler, büyüdüğünde (öğlen) iki ayağı üzerinde dikilir, yaşlandığında (akşam) ise bir bastona dayanarak üç ayakla yürür." Sfenks yenilgiyi kabul edip kendini uçurumdan atar. Bu mitolojik bulmaca aslında evrenin en büyük sırrını ifşa eder: Doğadaki canavarların veya felaketlerin ötesinde, en büyük, en değişken ve en çözülemez bilmece bizzat insanın kendi kısa, kırılgan ve trajik hayat döngüsüdür.',
+    questionStem: 'Oidipus\'un çözdüğü Sfenks\'in bilmecesi, mecazi (felsefi) olarak neyi vurgulamaktadır?',
+    options: [
+      'Günün farklı saatlerinde insan psikolojisinin değişkenlik gösterdiğini',
+      'Canavarları alt etmenin tek yolunun kılıç değil, yüksek bir zekâ olduğunu',
+      'Evrendeki en büyük ve trajik bilmecenin (gerçeğin), insanın kendi varoluşu, yaşlanması ve kırılgan hayat (zaman) döngüsü olduğunu',
+      'Antik dönemde insanların fizyolojik olarak günümüzden farklı evrimleştiğini'
+    ],
+    correct: 2,
+    explanation: 'Bilmecenin cevabının (emekleyen bebek, dik yürüyen adam, bastonlu yaşlı) İnsan olması; mitin asıl vurgusunun insanın kendi kısa ve trajik varoluş/zaman döngüsü olduğunu gösterir.'
+  },
+  {
+    title: 'Büyük İrlanda Kıtlığı (Patates Yanıklığı)',
+    passage: '1845 yılında İrlanda\'da tarım arazilerini "Patates Yanıklığı" adı verilen bir mantar hastalığı vurduğunda, tek bir ürün çeşidine (monokültür) bağlı olan adanın tüm gıda kaynağı bir gecede çürüdü. Ancak İrlanda nüfusunun %25\'ini (yaklaşık bir milyon kişiyi) yok eden şey sadece bu mantar değildi. O dönem İrlanda\'yı yöneten İngiliz İmparatorluğu, "serbest piyasa ekonomisi" (laissez-faire) kuralları gereği, adadaki diğer tüm kaliteli gıdaları, tahılları ve etleri silahlı askerlerin koruması altında gemilerle İngiltere\'ye ihraç etmeye devam etti. İnsanlar sokaklarda çimen yiyerek açlıktan can verirken limanlardan gıda dolusu gemiler kalkıyordu. Bu olay, kıtlığın sadece doğanın değil; siyasi kibrin, sömürgeci kayıtsızlığın ve acımasız bir ekonomik ideolojinin insan eliyle yarattığı kitlesel bir cinayet olduğunun kanıtıdır.',
+    questionStem: 'Büyük İrlanda Kıtlığı felaketini "kitlesel bir cinayete" dönüştüren asıl faktör parçada nasıl açıklanmıştır?',
+    options: [
+      'İrlanda halkının tarım konusunda İngilizlerden çok daha eğitimsiz olması',
+      'Sadece doğanın getirdiği patates hastalığı değil; İngiliz yönetiminin ekonomik ideoloji (kâr ve serbest piyasa) uğruna adadaki diğer gıdaları sömürgeci bir acımasızlıkla ihraç etmeye devam etmesi',
+      'Avrupa\'daki diğer ülkelerin İrlanda\'ya yardım gemileri göndermeyi reddetmesi',
+      'Patatesin insan beslenmesi için aslında hiç uygun ve besleyici bir bitki olmaması'
+    ],
+    correct: 1,
+    explanation: 'Açlıktan insanlar ölürken İngilizlerin serbest piyasa bahanesiyle kaliteli gıdayı ihraç etmeye (sömürüye) devam etmesi, olayın doğa felaketinden öte siyasi/ekonomik bir cinayet olduğunu açıklar.'
+  },
+  {
+    title: 'Pandora\'nın Kutusu ve Umut',
+    passage: 'Yunan mitolojisinde ilk kadın olan Pandora\'ya tanrılar tarafından asla açmaması söylenen kilitli bir kutu (pithos) hediye edilir. Ancak merakına yenik düşen Pandora kutunun kapağını araladığında; savaşlar, hastalıklar, keder ve ölüm gibi dünyayı mahvedecek tüm kötülükler bir anda gökyüzüne yayılır. Pandora dehşet içinde kapağı kapattığında, kutunun en dibinde sadece tek bir şey kalmıştır: "Umut". Binlerce yıldır bu hikâye, kötülüklerin içinde umudun bir teselli (hediye) olarak kaldığı şeklinde yorumlanır. Ancak filozof Nietzsche buna şiddetle karşı çıkar: "Umut kötülüklerin en kötüsüdür, çünkü insanın çektiği işkenceyi (acıyı) uzatır." Kutunun dibinde kalan şey bir kurtarıcı mıdır, yoksa acı çeken insana boş bir vaat sunarak pes etmesini engelleyen o en sinsi ve acımasız ceza mıdır?',
+    questionStem: 'Parçada yer alan Nietzsche\'nin "Umut" kavramına yaklaşımı nasıldır?',
+    options: [
+      'Umudun, zor zamanlarda insanların psikolojik olarak hayatta kalmasını sağlayan en güçlü ilaç olduğu',
+      'Kutudan çıkan diğer tüm kötülüklerin aslında insanın kendi hatalarının bir sonucu olduğu',
+      'Umudun bir teselli veya hediye değil; boş vaatler sunarak insanın çektiği acıyı (işkenceyi) gereksiz yere uzatan en sinsi kötülük (ceza) olduğu',
+      'Tanrıların insanlara acıdığı için kutunun dibine bilerek olumlu bir güç bıraktığı'
+    ],
+    correct: 2,
+    explanation: 'Nietzsche\'nin "Umut kötülüklerin en kötüsüdür, çünkü işkenceyi uzatır" sözü, umudun bir teselli değil, boş vaatlerle acıyı uzatan sinsi bir ceza olduğu yaklaşımını netleştirir.'
+  }
+];
+
+// Test 13 Üretici Makine
+export const sosyolojiParagrafSorulari13: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_13.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_13[idx];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-sosyoloji13-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
 
 // paragrafTests.ts dosyasının hata vermemesi için iki listeyi birleştirip eski adıyla dışa aktarıyoruz:
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
@@ -3378,5 +3656,6 @@ export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...psikolojiParagrafSorulari9,
   ...edebiyatParagrafSorulari10,
   ...gizemParagrafSorulari11,
-  ...teknolojiParagrafSorulari12
+  ...teknolojiParagrafSorulari12,
+  ...sosyolojiParagrafSorulari13
 ];
