@@ -3642,7 +3642,283 @@ export const sosyolojiParagrafSorulari13: BilimParagrafQuestion[] = Array.from({
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
+const PARAGRAPH_THEMES_14 = [
+  {
+    title: 'Goya\'nın Karanlık Zihni: Satürn',
+    passage: 'İspanyol ressam Francisco Goya, hayatının son demlerinde sağırlık ve derin bir depresyonla boğuşurken evinin duvarlarına o meşhur "Kara Tablolar" serisini çizdi. Bunların en dehşet vericisi, kendi çocuklarını parçalayarak yiyen mitolojik tanrı Satürn\'ün (Kronos) resmidir. Goya bu tabloyu satmak veya sergilemek için yapmadı; bu doğrudan kendi karanlığıyla, ölüm korkusuyla ve zamanın (Satürn\'ün) her canlıyı yutup yok eden o acımasız iştahıyla yüzleşmesiydi. Tablodaki Satürn\'ün gözlerindeki o vahşi ama bir o kadar da korkmuş ifade, gücün ve cinnetin iç içe geçtiği bir kâbustur. Sanat, bazen dünyaya sunulan bir hediye değil, sanatçının kendi şeytanlarını hapsettiği bir tımarhane duvarıdır.',
+    questionStem: 'Yazar, Goya\'nın "Çocuklarını Yiyen Satürn" tablosunu hangi felsefi temelle açıklamaktadır?',
+    options: [
+      'Goya\'nın Yunan mitolojisine duyduğu hayranlığın ve estetik kaygının bir dışavurumu olarak',
+      'Sanatın sadece ticari amaçlarla (sergilemek için) değil, bazen ressamın kendi içsel korkularını (zamanın yok ediciliğini) ve cinnetini tuvale hapsederek sağalma çabası olarak',
+      'İspanya iç savaşının halk üzerinde yarattığı ekonomik buhranın bir sembolü olarak',
+      'Çocuklara karşı duyulan bastırılmış bir öfkenin psikanalitik yansıması olarak'
+    ],
+    correct: 1,
+    explanation: 'Tabloyu sergilemek için değil evinin duvarına çizmesi ve zamanın acımasız iştahıyla yüzleşmesi; sanatın bazen şeytanları hapsetme/sağalma çabası olduğunu gösterir.'
+  },
+  {
+    title: 'Karanlık Orman Teorisi (Dark Forest)',
+    passage: 'Eğer evrende milyarlarca gezegen varsa neden hiçbir uzaylı bizimle iletişime geçmiyor? Çinli bilimkurgu yazarı Liu Cixin, Fermi Paradoksu\'na "Karanlık Orman Teorisi" ile kan dondurucu bir cevap verir. Evren, her medeniyetin elinde tüfeğiyle sessizce gezindiği karanlık bir ormandır. Hayatta kalmanın ilk kuralı sessiz olmaktır. Çünkü karanlıkta bir ateş yakıp "Ben buradayım!" diye bağırdığınız an (Arecibo mesajı gibi), ormandaki diğer daha güçlü, paranoyak ve yok edici avcılar konumunuzu tespit edip sizi anında yok edecektir. Bu teoriye göre; uzayın o derin sessizliği, orada kimsenin olmamasından değil, oradaki herkesin hayatta kalmak için nefesini tutup saklanmasından (korkudan) kaynaklanmaktadır.',
+    questionStem: 'Karanlık Orman Teorisi, evrendeki "büyük sessizliği" hangi psikolojik ve stratejik gerekçeyle açıklamaktadır?',
+    options: [
+      'Uzaylıların radyo dalgaları yerine bizim bilmediğimiz telepati yöntemlerini kullanmasıyla',
+      'Gelişmiş medeniyetlerin insanlık gibi ilkel bir türle muhatap olmak istememesi kibriyle',
+      'Evrenin tehlikeli bir avlanma sahası olduğu varsayımıyla, her medeniyetin yok edilme (av olma) korkusuyla bilinçli ve stratejik bir şekilde sessiz kalıp saklanmasıyla',
+      'Uzaydaki mesafelerin çok uzun olması nedeniyle sinyallerin yolda kaybolmasıyla'
+    ],
+    correct: 2,
+    explanation: 'Ormandaki diğer avcılardan korunmak için ateş yakmamak (sessiz kalmak); evrendeki sessizliğin korkuya dayalı bilinçli bir hayatta kalma (gizlenme) stratejisi olduğunu anlatır.'
+  },
+  {
+    title: 'Mona Lisa\'nın Şöhreti',
+    passage: 'Leonardo da Vinci\'nin "Mona Lisa" tablosu günümüzde Louvre Müzesi\'nde kurşungeçirmez camların ardında dünyanın en ünlü eseri olarak korunmaktadır. Oysa 1911 yılına kadar müzenin sıradan bir duvarında asılı duran, çok az kişinin umursadığı küçük bir portreydi. O yıl, Vincenzo Peruggia adlı bir hırsız tabloyu çaldı. Günlerce gazetelerde kayıp tablonun fotoğrafları basıldı, müzenin önünde izdihamlar yaşandı; insanlar eserin kendisini değil, "duvardaki boşluğunu" izlemek için sıraya girdiler. İki yıl sonra tablo bulunduğunda artık küresel bir fenomene dönüşmüştü. Mona Lisa\'nın efsanesi, da Vinci\'nin fırça darbelerinden çok, o çalınma hikâyesinin medyada yarattığı devasa gizem ve "ulaşılamazlık" algısına borçludur.',
+    questionStem: 'Mona Lisa tablosunun günümüzdeki şöhretinin asıl kaynağı parçada nasıl açıklanmıştır?',
+    options: [
+      'Leonardo da Vinci\'nin kullandığı eşsiz "sfumato" tekniğinin sanat eleştirmenlerince sonradan fark edilmesi',
+      'Eserin sanatsal veya estetik üstünlüğünden ziyade, çalınmasıyla birlikte medyanın yarattığı gizem ve ulaşılamazlık algısının (psikolojik merakın) onu bir fenomene dönüştürmesi',
+      'Fransız hükümetinin tabloyu çalındıktan sonra dünya turuna çıkarması',
+      'Portredeki kadının gülüşündeki sırrın bilim insanları tarafından kanıtlanması'
+    ],
+    correct: 1,
+    explanation: 'Çalınana kadar umursanmayan tablonun, çalındıktan sonra medyadaki haberler ve "duvardaki boşluğu" sayesinde fenomene dönüşmesi, şöhretin medya ve gizem algısına dayandığını gösterir.'
+  },
+  {
+    title: 'Svalbard: Kıyamet Kasası',
+    passage: 'Kuzey Kutbu\'na çok yakın buzullarla kaplı ıssız bir Norveç adasında, dağın derinliklerine oyulmuş "Svalbard Küresel Tohum Deposu" bulunur. Bu depo bir nükleer savaşa, asteroit çarpmasına veya küresel bir iklim felaketine karşı dayanıklı inşa edilmiştir. Amacı altını, parayı veya sanat eserlerini korumak değil; dünyadaki tüm bitki ve tarım ürünlerinin tohumlarını dondurarak muhafaza etmektir. Kıyamet günü geldiğinde insanlığı yeniden başlatacak olan şey ne bilgisayarlar ne de silahlardır; sadece cebinize sığacak kadar küçük olan bir avuç buğday ve mısır tohumudur. Svalbard, modern insanın teknolojik kibrine rağmen, hayatta kalmak için hala o ilkel toprağa ve tohumun mucizesine ne kadar muhtaç olduğunun dondurucu bir itirafıdır.',
+    questionStem: 'Svalbard Küresel Tohum Deposu\'nun inşası, insanlık ve teknoloji hakkında hangi felsefi (ironik) gerçeği göz önüne sermektedir?',
+    options: [
+      'İskandinav ülkelerinin küresel ısınmadan en az etkilenecek coğrafya olması',
+      'Ne kadar ileri teknolojiye ve silahlara sahip olursak olalım, insanlığın varoluşunu sürdürmesinin (kıyamet sonrasının) eninde sonunda ilkel bir tohuma ve doğaya (toprağa) muhtaç olduğu gerçeği',
+      'Modern bilimin bitkilerin genetiğini değiştirerek onları ölümsüzleştirmeyi başarması',
+      'Savaşlardan kaçan insanların sığınmak için yeraltı şehirleri inşa etme zorunluluğu'
+    ],
+    correct: 1,
+    explanation: 'Kıyamet gününde insanlığı silahların veya teknolojinin değil, sadece bir tohumun kurtaracak olması; teknolojik kibre rağmen doğaya olan o ilkel ve vazgeçilmez muhtaçlığımızı (ironiyi) vurgular.'
+  },
+  {
+    title: 'Dr. Jekyll ve Mr. Hyde',
+    passage: 'Robert Louis Stevenson\'ın ölümsüz eseri "Dr. Jekyll ve Mr. Hyde", sadece bir korku romanı değil, insan ruhunun derinliklerindeki o ürkütücü ikiliğin (şizofreninin) manifestosudur. Saygın, ahlaklı ve yardımsever Doktor Jekyll, içindeki karanlık ve vahşi dürtüleri bastırmak yerine, ürettiği bir iksirle onlara fiziksel bir beden (Mr. Hyde) verir. Başlangıçta bu kötücül alter egosunu kontrol edebileceğini sanır, ancak Hyde güçlenir ve yavaş yavaş asıl bedeni ele geçirir. Bu hikâye, medeniyetin ve ahlakın insan doğasına giydirdiği o incecik takım elbisenin altında her zaman vahşi ve dizginlenemez bir ilkel canavarın pusuya yattığını; onunla oynayanın eninde sonunda ona dönüşeceğini fısıldar.',
+    questionStem: 'Dr. Jekyll ve Mr. Hyde romanının insan doğasına dair sunduğu temel psikolojik eleştiri nedir?',
+    options: [
+      'Tıbbi deneylerin ve kimyasal ilaçların insan beyninde kalıcı şizofreniye yol açtığı',
+      'İnsanın sadece iyi veya sadece kötü olmadığı; uygar ve ahlaklı maskenin (bastırılmışlığın) altında, kontrol edilmediğinde kişiyi yutacak kadar güçlü ve ilkel bir karanlık (ikilik) barındırdığı',
+      'Toplumdaki saygın insanların her zaman gizli suç örgütleriyle bağlantılı olduğu',
+      'Fiziksel görünümün (çirkinliğin) toplumda her zaman kötülükle özdeşleştirilmesi'
+    ],
+    correct: 1,
+    explanation: 'Saygın doktorun içindeki vahşi dürtülerin bedene kavuşup onu ele geçirmesi; uygar maskenin altındaki ilkel karanlığı (ikiliği) ve bastırılanın yıkıcılığını simgeler.'
+  },
+  {
+    title: 'Medusa\'nın Gözyaşları',
+    passage: 'Yunan mitolojisinde Medusa, yılan saçlı, bakışlarıyla insanı taşa çeviren korkunç bir canavar olarak bilinir ve kahraman Perseus tarafından başı kesilerek öldürülür. Ancak hikâyenin kökeni çok daha trajiktir. Medusa aslında Athena\'nın tapınağında güzelliğiyle herkesi büyüleyen masum bir rahibedir. Deniz tanrısı Poseidon ona tapınakta zorla sahip olur. Ancak tanrıça Athena, kendi tapınağını kirlettiği için suçlu olan Poseidon\'u cezalandıramaz; öfkesini kurbanın (masum Medusa\'nın) kendisinden çıkarır ve onu o çirkin canavara dönüştürür. Medusa\'nın efsanesi, bir canavar masalı değil; gücün (otoritenin) kendi suçlarını örtbas etmek için asıl kurbanı nasıl şeytanlaştırdığının ve onu bir canavara dönüştürdüğünün binlerce yıllık adaletsiz feryadıdır.',
+    questionStem: 'Yazar, Medusa efsanesinin kökenini inceleyerek mitoloji ve güç ilişkisi üzerine nasıl bir sonuca varmaktadır?',
+    options: [
+      'Antik dönemde kadınların denizcilikle ilgilenmesinin kesinlikle yasaklandığına',
+      'Otoritenin (tanrıların), asıl suçluyu cezalandırmak yerine haksızlığa uğrayan mağduru (kurbanı) şeytanlaştırıp suçlayarak kendi düzenini koruduğu adaletsizliğine',
+      'Fiziksel güzelliğin her zaman kibir ve felaket getirdiğine',
+      'Mitolojik kahramanların (Perseus) sadece çirkin yaratıklarla savaştığına'
+    ],
+    correct: 1,
+    explanation: 'Poseidon yerine masum Medusa\'nın (kurbanın) canavara dönüştürülüp cezalandırılması; gücün/otoritenin kendi suçunu örtmek için kurbanı suçlayıp şeytanlaştırdığını anlatır.'
+  },
+  {
+    title: 'Zeno\'nun Paradoksu: Aşil ve Kaplumbağa',
+    passage: 'Antik Yunan filozofu Zeno, hareketin ve zamanın sadece bir illüzyon olduğunu kanıtlamak için meşhur "Aşil ve Kaplumbağa" paradoksunu ortaya atar. Efsanevi hızlı koşucu Aşil, kendinden 100 metre ileride başlayan bir kaplumbağa ile yarışır. Zeno\'ya göre Aşil asla kaplumbağayı geçemez! Çünkü Aşil kaplumbağanın ilk başladığı 100. metreye geldiğinde, kaplumbağa az da olsa (diyelim 1 metre) ileri gitmiş olacaktır. Aşil o 1 metreyi koştuğunda, kaplumbağa yine minik bir adım atacaktır. Aradaki mesafe sonsuz kez bölünebileceği için Aşil teorik olarak rakibini asla yakalayamaz. Günlük hayatta Aşil onu saniyeler içinde geçse de, bu mantık bulmacası insan aklının; matematiğin o "sonsuz bölünebilirlik" kavramı karşısında nasıl kilitlenip aciz kaldığının kusursuz bir örneğidir.',
+    questionStem: 'Zeno\'nun Aşil ve Kaplumbağa paradoksu, felsefi ve matematiksel olarak neyi sorgulamaktadır?',
+    options: [
+      'Hayvanların doğuştan gelen hayatta kalma (kaçış) reflekslerinin çok hızlı olduğunu',
+      'Gündelik hayatta (fiziksel gerçeklikte) çok basit ve çözülebilir olan bir hareketin, teorik ve matematiksel (sonsuzluk) mantıkla analiz edildiğinde nasıl içinden çıkılmaz bir illüzyona (imkânsızlığa) dönüştüğünü',
+      'Antik Yunan sporcularının antrenman eksikliklerini ve hatalarını',
+      'Zamanın her insan için farklı hızlarda aktığını (göreceliliği)'
+    ],
+    correct: 1,
+    explanation: 'Gerçekte Aşil\'in hemen geçmesine rağmen matematikte mesafenin sonsuz kez bölünmesiyle olayın imkânsızlaşması; fiziksel gerçekliğin teorik/matematiksel mantık karşısında nasıl kilitlendiğini (illüzyonu) gösterir.'
+  },
+  {
+    title: 'İvan İlyiç\'in Ölümü (Tolstoy)',
+    passage: 'Tolstoy\'un "İvan İlyiç\'in Ölümü" adlı başyapıtında, kahramanımız İvan sıradan, saygın ve tamamen toplumun ondan beklediği gibi bir hayat yaşayan yüksek rütbeli bir yargıçtır. Ancak bir gün ölümcül ve ağrılı bir hastalığa yakalanır. Ölüm döşeğinde kıvranırken asıl acı veren şey hastalığı değil, etrafındaki doktorların, eşinin ve arkadaşlarının ona "iyileşeceksin" diye yalan söyleyerek onun ölüm gerçeğini görmezden gelmeleridir. İvan o yatakta hayatının tamamen sahte, başkalarına yaranmak üzerine kurulmuş boş bir kurgu olduğunu fark eder. Tolstoy bize şu sert gerçeği vurur: Ölümün o buz gibi dürüstlüğü kapıyı çaldığında, toplumun bize giydirdiği tüm o "başarı ve statü" maskeleri erir; geriye sadece yaşanmamış, yalan bir hayatın dayanılmaz pişmanlığı kalır.',
+    questionStem: 'Tolstoy\'un eseri üzerinden İvan İlyiç\'in ölüm döşeğindeki "asıl felsefi trajedisi" nedir?',
+    options: [
+      'Tıbbi imkânların yetersizliği nedeniyle çok fazla fiziksel acı çekmesi',
+      'Ailesine bırakacak yeterli bir mirasının olmamasından duyduğu endişe',
+      'Ölüm gerçeğiyle yüzleştiğinde, toplumun onayına (statüye) göre şekillendirdiği hayatının aslında tamamen sahte ve yaşanmamış (boş) bir yalan olduğunu fark etmesi',
+      'İş yerindeki rakiplerinin onun hastalığına sevinmesi'
+    ],
+    correct: 2,
+    explanation: 'İvan\'ın asıl acısının hastalık değil, "hayatının sahte ve başkalarına yaranmak üzerine kurulmuş olduğunu fark etmesi" olduğu vurgulanmıştır.'
+  },
+  {
+    title: 'Veblen Etkisi (Gösterişçi Tüketim)',
+    passage: 'Klasik ekonomi kurallarına göre bir ürünün fiyatı artarsa ona olan talep düşer. Ancak sosyolog Thorstein Veblen, lüks ürünlerde bu kuralın tam tersine çalıştığını kanıtladı. "Veblen Etkisi" olarak bilinen bu teoriye göre; lüks bir çantanın, spor arabanın veya saatin fiyatı ne kadar yüksekse, zenginler o ürünü o kadar çok satın almak ister. Çünkü o eşyanın asıl amacı işlevselliği değil, etraftaki insanlara "Ben bunu alabilecek kadar güçlüyüm" mesajını veren bir statü sembolü (gösteriş) olmasıdır. Modern insan, üşüdüğü için değil, diğerlerini kıskandırmak için ceket giyer hale gelmiştir. Tüketim, bir ihtiyaç giderme aracı olmaktan çıkmış; başkalarının gözündeki değerimizi satın aldığımız devasa ve kaba bir tiyatroya dönüşmüştür.',
+    questionStem: 'Veblen Etkisi (Gösterişçi Tüketim) kavramı modern tüketicinin hangi psikolojik yönünü eleştirmektedir?',
+    options: [
+      'İnsanların ucuz ve kalitesiz ürünleri alarak ülke ekonomisine zarar vermesini',
+      'Ürünlerin sadece temel fiziksel (işlevsel) ihtiyaçları karşılamak için değil, toplumdaki diğer insanlara üstünlük ve statü mesajı vermek (kibir ve gösteriş) amacıyla satın alınmasını',
+      'Markaların reklam bütçelerini ürün kalitesinden daha yüksek tutmasını',
+      'Temel gıda maddelerindeki fiyat artışlarının yoksullaşmayı hızlandırmasını'
+    ],
+    correct: 1,
+    explanation: 'Ürünün fiyatı arttıkça daha çok alınması; eşyanın işlevinden ziyade başkalarına "güçlüyüm" mesajı (statü/gösteriş) vermek için alındığını kanıtlar.'
+  },
+  {
+    title: 'Tantalos\'un İşkencesi',
+    passage: 'Yunan mitolojisinde Tantalos, tanrılara kafa tuttuğu için Tartaros\'ta (yeraltı dünyasında) eşi benzeri görülmemiş bir cezaya çarptırılır. O, boynuna kadar berrak ve serin bir suyun içinde durmaktadır ve hemen başının üzerinde en lezzetli meyvelerle dolu ağaç dalları sarkmaktadır. Ancak Tantalos susuzluktan kavrulup su içmek için eğildiğinde sular çekilip kurur; açlıktan meyveye uzandığında ise rüzgâr dalları ulaşılamaz bir yüksekliğe savurur. Arzu ettiği şey tam gözünün önündedir ama ona asla dokunamaz. "Tantalos İşkencesi", modern insanın tüketim çağındaki doymak bilmezliğini simgeler: Her şeye sahip olma arzusuyla yanıp tutuşan zihnimiz, hedefe tam ulaştığını sandığı an haz uzaklaşır ve bizler tatmin edilemez bir eksiklik (açlık) hissiyle sonsuz bir döngüde kıvranırız.',
+    questionStem: 'Tantalos\'un İşkencesi miti, modern insanın hangi psikolojik çıkmazını alegorik olarak anlatmaktadır?',
+    options: [
+      'Su ve gıda kaynaklarının küresel ısınmayla birlikte tükenme noktasına gelmesini',
+      'İnsan doğasındaki doymak bilmez (tatmin edilemez) arzu döngüsünü; hedeflenen şeye ulaşıldığı sanıldığı an, hazzın uzaklaşıp yerini ebedi bir açlığa (eksikliğe) bırakmasını',
+      'Tanrılara karşı gelmenin ve kibrin (hibris) fiziksel hastalıklarla cezalandırılmasını',
+      'Tarım yapmayı bilmeyen toplumların açlıkla terbiye edilmesini'
+    ],
+    correct: 1,
+    explanation: 'Suya ve meyveye uzandıkça onların kaçması; modern insanın doymak bilmezliğini, ulaşıldı sanılan hedefin/hazzın hep uzaklaşmasını ve ebedi eksiklik/açlık hissini sembolize eder.'
+  },
+  {
+    title: 'Russell\'ın Çaydanlığı',
+    passage: 'Filozof Bertrand Russell, kanıtlanamayan iddiaların tehlikesini anlatmak için absürt bir zihinsel deney kurguladı: "Eğer ben Dünya ile Mars arasında, güneşin etrafında eliptik bir yörüngede dönen porselen bir çaydanlık olduğunu iddia edersem ve bu çaydanlığın teleskoplarla görülemeyecek kadar küçük olduğunu söylersem, kimse benim yanıldığımı ispatlayamaz." Ancak bu durum, uzayda uçan bir çaydanlık olduğu fikrini rasyonel ve saygıdeğer kılmaz. Russell\'ın Çaydanlığı, bilimde ve felsefede "ispat yükü"nün kimde olduğunu gösteren keskin bir kılıçtır: İnanılması imkânsız (absürt) bir iddiayı ortaya atan kişi, karşı tarafın o iddiayı "çürütememesine" sığınarak haklı çıkamaz. İddia sahibinin, o çaydanlığın (veya inancın) orada olduğunu kanıtlaması gerekir.',
+    questionStem: 'Russell\'ın Çaydanlığı argümanının temel felsefi mesajı aşağıdakilerden hangisidir?',
+    options: [
+      'Güneş sistemindeki gezegenlerin yörüngelerinde çok sayıda uzay çöpü bulunduğu',
+      'Teleskop teknolojisinin gelişmesinin felsefi tartışmaları tamamen bitireceği',
+      'Mantık ve bilimde bir iddiayı kanıtlama sorumluluğunun (ispat yükünün) iddiayı ortaya atana ait olduğu; bir şeyin yokluğunun (çürütülememesinin) onun varlığına kanıt sayılamayacağı',
+      'Astronomi biliminin sıradan nesnelerle (çaydanlık gibi) açıklanmasının bilime saygısızlık olduğu'
+    ],
+    correct: 2,
+    explanation: 'Küçücük bir çaydanlığın var olduğunu iddia edip "hadi olmadığını kanıtla" demenin absürtlük olduğu; ispat yükünün iddiayı atana ait olduğunu ve çürütülememenin kanıt olmadığını açıklar.'
+  },
+  {
+    title: 'Ada Lovelace ve Şiirsel Bilim',
+    passage: '19. yüzyılın ortalarında, devasa dişliler ve çarklarla çalışan ilk mekanik bilgisayar olan "Analitik Makine" tasarlandığında, mucidi Charles Babbage bile bu aletin sadece gelişmiş bir hesap makinesi olduğunu sanıyordu. Ancak ünlü şair Lord Byron\'ın kızı olan matematikçi Ada Lovelace, bu metal yığınına baktığında sadece rakamları değil, olasılıkları gördü. O, makinenin doğru kodlandığında harfleri, müzik notalarını ve algoritmaları da işleyebileceğini yazdı (tarihin ilk bilgisayar programcısı oldu). Babasından miras aldığı hayal gücünü (şiiri) matematiksel mantıkla birleştiren Ada, "Şiirsel Bilim" adını verdiği vizyonuyla, soğuk metallerin bir gün sanat üretebileceğini modern bilgisayarlardan tam bir asır önce öngörmüştü. İnovasyon, aklın ve hayal gücünün sınırları reddeden o eşsiz evliliğinden doğar.',
+    questionStem: 'Ada Lovelace\'i tarihin ilk bilgisayar programcısı ve vizyoneri yapan asıl yeteneği parçada nasıl vurgulanmıştır?',
+    options: [
+      'Babasının bıraktığı büyük servet sayesinde dönemin en iyi üniversitelerinde eğitim görmesi',
+      'Sadece matematiksel ve analitik mantıkla değil, şiirsel (sanatsal) hayal gücünü kullanarak makinenin sadece rakamları değil, müziği ve dili de işleyebilecek potansiyelini öngörebilmesi',
+      'Charles Babbage\'ın eksik bıraktığı makineyi bizzat atölyede kendi elleriyle inşa etmesi',
+      'İngiliz kraliyet ailesini bu makinenin üretimi için ikna eden üstün diplomatik becerisi'
+    ],
+    correct: 1,
+    explanation: 'Sadece rakamları görenlerin aksine, "şiirsel bilim" ve hayal gücüyle makinenin notaları ve algoritmaları işleyebileceğini öngörmesi onu tarihin ilk programcısı/vizyoneri yapmıştır.'
+  },
+  {
+    title: 'Derinkuyu Yeraltı Şehri',
+    passage: 'Kapadokya\'nın altında, tesadüfen bir evin bodrum duvarının yıkılmasıyla keşfedilen Derinkuyu, 85 metre derinliğe inen ve aynı anda 20 bin kişinin yaşayabileceği devasa bir yeraltı şehridir. Havalandırma bacaları, şaraphaneleri, okulları ve hayvan ahırlarıyla kusursuz bir mimariye sahiptir. Antik çağlarda insanların o devasa kayaları sadece el aletleriyle oyup güneşsiz karanlığa sığınmalarının tek bir nedeni vardı: İstila ve ölüm korkusu. Derinkuyu bir mimari şaheser olmaktan ziyade, insanoğlunun dışarıdaki vahşi dünyadan (ve düşmandan) kaçmak için gökyüzünü ve güneşi bile feda ederek toprağın rahmine saklandığı o devasa, klostrofobik korkunun ve hayatta kalma iradesinin taştan anıtıdır.',
+    questionStem: 'Yazar, Derinkuyu yeraltı şehrinin inşasını hangi temel insani güdüyle açıklamaktadır?',
+    options: [
+      'Yer altı sularına daha kolay ulaşarak tarımsal üretimi artırma çabası',
+      'Kışın dondurucu soğuklardan korunmak için alternatif bir yaşam alanı arayışı',
+      'Mimari yetenekleri test edip gelecek nesillere gösterişli eserler bırakma isteği',
+      'İstila ve ölüm korkusu karşısında, güneşi ve gökyüzünü bile feda etmeyi göze alacak kadar güçlü olan hayatta kalma (korunma) içgüdüsü'
+    ],
+    correct: 3,
+    explanation: 'İnsanların güneşsiz karanlığa sığınmasının tek nedeninin "istila ve ölüm korkusu" olduğu, hayatta kalma iradesiyle güneşi feda ettikleri vurgulanmıştır.'
+  },
+  {
+    title: 'Macbeth\'in Kehaneti',
+    passage: 'Shakespeare\'in ölümsüz tragedyası Macbeth\'te, başarılı bir komutan olan Macbeth, üç cadıyla karşılaşır. Cadılar ona "Bir gün Kral olacaksın" kehanetinde bulunurlar. Bu sözü duyan Macbeth\'in içindeki o gizli ve karanlık hırs uyanır. Oysa cadılar ona kral olması için cinayet işlemesini söylememiştir; ancak kehanetin gerçekleşmesini hızlandırmak isteyen Macbeth, mevcut kralı uykusunda hançerler, arkadaşlarını öldürür ve bir kan gölüne batarak paranoyak bir tiran haline gelir. Sonunda kendi halkı tarafından yok edilir. Macbeth\'in çöküşü, kehanetlerin (geleceğin) değiştirilemez bir kader olmadığını; asıl felaketin, insanın o duyduğu kehanete körü körüne inanarak (ve hırsına yenilerek) o felaketi kendi elleriyle inşa etmesi (Kendini Gerçekleştiren Kehanet) olduğunu gösterir.',
+    questionStem: 'Macbeth\'in tragedyası, "gelecek ve insan iradesi" arasındaki ilişki üzerine nasıl bir mesaj vermektedir?',
+    options: [
+      'Cadıların ve doğaüstü varlıkların insan aklını her zaman kontrol edebildiğini',
+      'İnsanların güç elde ettiğinde çevrelerindekilere karşı daha merhametli davrandığını',
+      'Kehanetin (kaderin) sihirli bir güçten ziyade, insanın kendi içindeki hırsı tetikleyerek kişinin o sonu kendi elleriyle ve iradesiyle hazırlamasına (kendini gerçekleştiren kehanet) neden olduğunu',
+      'Kralların her zaman en yakın komutanları tarafından ihanete uğradığını'
+    ],
+    correct: 2,
+    explanation: 'Cadılar sadece kral olacağını söylemiş, ancak Macbeth hırsına yenilip cinayet işleyerek o kehaneti kendi elleriyle (kendini gerçekleştiren kehanet olarak) inşa etmiştir.'
+  },
+  {
+    title: 'Louis Pasteur ve Kuduz Aşısı',
+    passage: '1885 yılında Fransız kimyager Louis Pasteur, geliştirdiği ve henüz hayvanlar dışında hiç test etmediği kuduz aşısını büyük bir ahlaki ikilem karşısında denemek zorunda kaldı. Kuduz bir köpek tarafından 14 yerinden ısırılan 9 yaşındaki Joseph Meister ona getirildiğinde çocuk kesin olarak ölecekti. Pasteur bir doktor olmadığı için çocuğa müdahale etmesi yasadışıydı; aşı işe yaramazsa veya çocuğu öldürürse katil ilan edilebilirdi. Ancak risk aldı ve o deneysel aşıyı haftalarca çocuğa enjekte etti. Çocuk tamamen iyileşti. Pasteur\'ün bu cesareti, bilimin sadece laboratuvar masalarındaki güvenli formüllerden ibaret olmadığını; asıl ilerlemenin, inisiyatif alıp kariyerini (ve ahlaki yargılanmayı) riske atarak insan hayatı uğruna karanlığa adım atan cesur dehalar sayesinde yaşandığını kanıtlar.',
+    questionStem: 'Pasteur\'ün kuduz aşısını 9 yaşındaki çocuğa uygulaması olayındaki asıl "ahlaki ve mesleki" kırılma (cesaret) noktası nedir?',
+    options: [
+      'Kuduz hastalığının o dönemde Avrupa\'da en yaygın ölüm sebebi olması',
+      'Doktor olmadığı için yasal olarak suç işleme (katil ilan edilme) riskini göze alarak, kesin ölümcül bir vaka karşısında inisiyatif ve sorumluluk üstlenmesi',
+      'Aşının formülünü diğer doktorlardan gizleyerek patentini tek başına almak istemesi',
+      'Hayvanlar üzerinde yaptığı deneylerin tamamen başarısız olmasına rağmen insanlarda denemesi'
+    ],
+    correct: 1,
+    explanation: 'Doktor olmadığı için yasadışı bir işlem yapıp katil ilan edilme riskini (kariyer/ahlaki yargılanma) göze alarak inisiyatif alması, asıl mesleki cesaret (kırılma) noktasıdır.'
+  },
+  {
+    title: 'Kognitif Rahatlık (Cognitive Fluency)',
+    passage: 'Bir iddia kulağa kafiyeli, basit veya görsel olarak kalın (bold) harflerle yazılmışsa beynimiz ona daha çabuk inanır. Psikolojide buna "Kognitif Rahatlık" (Bilişsel Akıcılık) denir. Beyin, enerji harcamaktan nefret eden tembel bir organdır. Karmaşık, uzun cümlelerle anlatılan bilimsel bir gerçektense; basit, ritmik ve kolay sindirilen bir yalana anında inanmayı (onu "doğru" kabul etmeyi) tercih eder. "İşleyen demir ışıldar" gibi atasözlerinin tartışılmaz doğrular gibi kabul edilmesinin sırrı anlamında değil, beynin bu akıcılığa duyduğu zaafta yatar. Sosyal medyada dolaşan dezenformasyonun (sahte haberlerin) bu kadar hızlı yayılmasının asıl nedeni insanların aptal olması değil, beynimizin "kolay olanı doğru sanma" gibi ölümcül ve tembel bir algı hatasına sahip olmasıdır.',
+    questionStem: 'Kognitif Rahatlık (Bilişsel Akıcılık) kavramına göre yalan (sahte) haberlerin hızla kabul görmesinin nedeni nedir?',
+    options: [
+      'İnsanların bilimsel makalelere ulaşacak yeterli teknolojik altyapıya sahip olmaması',
+      'İnsan beyninin enerjisini korumak (tembellik) amacıyla; karmaşık ve zor anlaşılan gerçekler yerine, basit, kafiyeli ve akıcı (sindirmesi kolay) ifadeleri otomatik olarak "doğru" kabul etme zaafı',
+      'Sosyal medya şirketlerinin kasıtlı olarak doğru haberleri gizleyen algoritmalar kullanması',
+      'Görsel olarak kalın (bold) harflerle yazılan metinlerin göz retinasını daha fazla uyarması'
+    ],
+    correct: 1,
+    explanation: 'Beynin tembel bir organ olup enerji harcamamak için basit, ritmik ve kolay anlaşılan iddiaları (kognitif rahatlık) otomatik olarak "doğru" sanması yanılgısını açıklar.'
+  },
+  {
+    title: 'Antroposen Çağı: İnsanın Kayası',
+    passage: 'Dünya milyarlarca yıllık tarihinde Buzul Çağı, Jura Dönemi gibi jeolojik ve doğal değişimlere şahit oldu. Ancak bilim insanları artık yeni bir jeolojik çağa girdiğimizi savunuyor: "Antroposen" (İnsan Çağı). Çünkü milyonlarca yıl sonra gelecekteki arkeologlar (veya uzaylılar) dünyamızın tortul tabakalarını kazdıklarında dinozor fosilleri değil; radyasyon izleri, mikroplastikler, devasa alüminyum kutu dağları ve betona gömülü tavuk kemikleri bulacaklar. İnsanoğlu sadece şehirler inşa eden biyolojik bir tür olmaktan çıkmış; iklimi, okyanusları ve yerkabuğunu (tıpkı bir göktaşı veya volkan gibi) kökünden ve kalıcı olarak değiştiren tektonik (jeolojik) bir yıkım gücüne dönüşmüştür.',
+    questionStem: 'Yazar, yaşadığımız çağı "Antroposen (İnsan Çağı)" olarak tanımlarken asıl olarak neyi vurgulamaktadır?',
+    options: [
+      'İnsanoğlunun mimari yapılar inşa etme konusunda geçmiş medeniyetlerden daha zayıf olduğunu',
+      'Doğal afetlerin günümüzde geçmiş yüzyıllara oranla çok daha sık yaşanmasını',
+      'İnsanın sadece çevreyi kirleten bir varlık değil, yerkürenin jeolojik yapısını (tortul tabakalarını, iklimini) kalıcı olarak değiştiren devasa ve yıkıcı bir doğa gücü (meteor gibi) haline geldiğini',
+      'Plastik kullanımının gelecekteki enerji krizlerine çözüm olabileceğini'
+    ],
+    correct: 2,
+    explanation: 'İnsanın sadece biyolojik bir tür değil; iklimi, okyanusları ve tortul tabakaları (plastik/radyasyonla) kalıcı olarak değiştiren "jeolojik ve tektonik bir yıkım gücü"ne dönüştüğü vurgulanmıştır.'
+  },
+  {
+    title: 'Küçük Prens ve Sayıların Hükmü',
+    passage: 'Antoine de Saint-Exupéry\'nin "Küçük Prens" kitabında şöyle bir bölüm geçer: "Büyüklere yeni bir arkadaşınızdan bahsettiğinizde, size hiçbir zaman onun ses tonunun nasıl olduğunu, hangi oyunları sevdiğini veya kelebek koleksiyonu olup olmadığını sormazlar. Onun yerine \'Kaç yaşında? Kaç kardeşi var? Babası ne kadar kazanıyor?\' diye sorarlar. Ancak bu sayıları öğrendiklerinde onu tanıdıklarını sanırlar." Exupéry\'nin bu naif ama sarsıcı gözlemi, yetişkinlerin (modern toplumun) dünyayı algılama biçimindeki o ruhsuz mekanikleşmeyi eleştirir. Büyümek dediğimiz şey bilgeliğe ulaşmak değil; bir şeyin özünü (ruhunu ve duygusunu) görme yeteneğini kaybedip, hayatı sadece ölçülebilen sayılara, banknotlara ve istatistiklere indirgeyen o sığ ve yozlaşmış körlüğe teslim olmaktır.',
+    questionStem: 'Küçük Prens\'teki bu alıntı üzerinden "yetişkin (modern) topluma" yöneltilen asıl eleştiri nedir?',
+    options: [
+      'Yetişkinlerin çocuklarla oyun oynamak yerine sürekli çalıştıkları için onlara yeterince vakit ayıramaması',
+      'Büyüme (yetişkinleşme) sürecinde insanların empati ve hayal gücünü (özü görme yetisini) yitirerek, hayatı ve insanları sadece rakamlar, statüler ve maddi istatistikler üzerinden değerlendiren sığ bir körlüğe düşmesi',
+      'Matematik eğitiminin çocuk yaşlarda verilmesinin yaratıcılığı öldürmesi',
+      'Arkadaşlık ilişkilerinde yaş ve kardeş sayısı gibi faktörlerin aslında çok önemli olması'
+    ],
+    correct: 1,
+    explanation: 'Yetişkinlerin sevilen oyunlar yerine yaşı ve maaşı (sayıları) sorması; büyüdükçe ruhun/özün kaybedilip hayatın sadece rakamlara/statüye indirgendiği o sığ körlüğü eleştirir.'
+  },
+  {
+    title: 'Karbon-14 Tarihlemesi: Zamanın Saati',
+    passage: 'Bir arkeolog çöldeki bir kemik parçasına veya bir mağara duvarındaki kömür izine bakıp onun "3200 yıl önceye ait" olduğunu nasıl bu kadar kesin söyleyebilir? Bunun sırrı "Karbon-14" atomunda gizlidir. Atmosferde oluşan bu radyoaktif atom, nefes alan her canlı bitki ve hayvana geçer. Ancak canlı öldüğü an (nefes almayı kestiğinde) yeni karbon alımı durur ve içindeki Karbon-14 atomları bir saat gibi tıkır tıkır, sabit bir hızla (yarılanma ömrüyle) eksilmeye başlar. Ölü bir kemikteki karbon miktarına bakmak, o canlının "kum saatinin" ne kadar aktığını görmektir. Karbon-14 yöntemi; ölümün bıraktığı o donuk kalıntıların aslında tamamen sessiz olmadığını, içlerinde zamanı milim milim geriye sayan gizli ve atomik bir kronometre taşıdıklarını gösteren muazzam bir bilimsel zaferdir.',
+    questionStem: 'Karbon-14 yönteminin çalışma mantığını özetleyen ana fikir parçada nasıl ifade edilmiştir?',
+    options: [
+      'Toprak altında kalan kemiklerin diğer minerallerle birleşerek taşlaşması',
+      'Canlılar yaşadığı sürece radyoaktif maddelerin onlara hiçbir zarar vermemesi',
+      'Ölüm anında dışarıdan karbon alımının durmasıyla, bedende kalan Karbon-14 atomlarının sabit bir hızla eksilmesinin (yarılanmasının) geçmişe dönük atomik bir zaman ölçer (kum saati) işlevi görmesi',
+      'Mağara duvarlarındaki resimlerin yapımında kullanılan boyaların yaşlandıkça renk değiştirmesi'
+    ],
+    correct: 2,
+    explanation: 'Ölüm anında karbon alımının durup, içerideki Karbon-14\'ün sabit hızla eksilmesi; bu eksilme miktarının canlının ölüm zamanını ölçen bir kum saati (kronometre) işlevi gördüğünü açıklar.'
+  },
+  {
+    title: 'Bermuda Şeytan Üçgeni İllüzyonu',
+    passage: 'On yıllar boyunca kitaplara, filmlere ve efsanelere konu olan Bermuda Şeytan Üçgeni\'nde uçakların uzaylılar tarafından kaçırıldığı, gemilerin boyutlar arası portallara yutulduğu iddia edildi. Oysa modern havacılık ve sigorta (Lloyd\'s) şirketlerinin istatistik verileri incelendiğinde şok edici bir gerçek ortaya çıktı: Bermuda üçgenindeki kaza oranı, okyanusun diğer yoğun trafikli bölgelerinden (örneğin İngiliz Kanalı\'ndan) bir milim bile fazla değildi! Ancak medya, bu bölgedeki sıradan bir fırtına kazasını "gizemli bir kayboluş" manşetiyle sunarak algıyı yönetti. Bermuda efsanesi, tehlikeli suların değil; medyanın abartmasının, algıda seçiciliğin ve insanın sıkıcı istatistiklere bakmaktansa fantastik canavar masallarına (komplolara) inanmayı tercih etmesinin ürettiği küresel bir illüzyondur.',
+    questionStem: 'Bermuda Şeytan Üçgeni efsanesinin oluşumundaki asıl neden parçada neye bağlanmıştır?',
+    options: [
+      'Bölgedeki okyanus akıntılarının diğer denizlerden çok daha tehlikeli ve girdaplı olmasına',
+      'İstatistiksel olarak bölgedeki kaza oranlarının diğer bölgelerle aynı olmasına (sıradanlığına) rağmen; medyanın olayları abartması ve insanların gizem/komplo teorilerine inanma zaafının yarattığı bir algı yanılsamasına',
+      'Uçakların yön bulma sistemlerinin (pusulaların) sadece bu bölgede manyetik alana kapılıp bozulmasına',
+      'Sigorta şirketlerinin o bölgedeki kazalara kasıtlı olarak daha yüksek tazminat ödemesine'
+    ],
+    correct: 1,
+    explanation: 'İstatistiklerin kaza oranının normal olduğunu göstermesi, efsanenin asıl sebebinin; medyanın abartısı, algı yönetimi ve insanın fantastik yalanlara inanma zaafı olduğunu ortaya koyar.'
+  }
+];
 
+export const felsefeParagrafSorulari14: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_14.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_14[idx];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-felsefe14-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
 // paragrafTests.ts dosyasının hata vermemesi için iki listeyi birleştirip eski adıyla dışa aktarıyoruz:
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari,
@@ -3657,5 +3933,6 @@ export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...edebiyatParagrafSorulari10,
   ...gizemParagrafSorulari11,
   ...teknolojiParagrafSorulari12,
-  ...sosyolojiParagrafSorulari13
+  ...sosyolojiParagrafSorulari13,
+  ...felsefeParagrafSorulari14
 ];
