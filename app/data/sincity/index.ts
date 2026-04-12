@@ -5581,6 +5581,284 @@ export const karisikParagrafSorulari20: BilimParagrafQuestion[] = Array.from({ l
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
+const PARAGRAPH_THEMES_21 = [
+  {
+    title: 'Rashomon Etkisi: Hakikatin Parçalanması',
+    passage: 'Japon yönetmen Akira Kurosawa\'nın efsanevi "Rashomon" filminde, ormanda işlenen bir cinayet dört farklı tanık tarafından mahkemede anlatılır. Haydut, maktulün karısı, ölü adamın ruhu ve ormandaki bir oduncu, aynı olayı öylesine farklı, kendi egolarını aklayacak ve diğerini suçlayacak şekilde kusursuzca anlatırlar ki; ortada tek bir cinayet olmasına rağmen dört farklı gerçeklik ortaya çıkar. Hangisi doğru söylüyordur? Aslında hepsi kendi açısından doğruyu anlatmaktadır. Psikolojiye "Rashomon Etkisi" olarak geçen bu fenomen; mutlak ve tarafsız bir "hakikatin" olmadığını, gerçeğin her zaman onu izleyen kişinin anılarına, korkularına ve narsisizmine göre bükülen (kurgulanan) öznel bir illüzyon olduğunu acımasızca kanıtlar.',
+    questionStem: 'Rashomon Etkisi, insan doğası ve algısıyla ilgili hangi sarsıcı felsefi/psikolojik gerçeği savunmaktadır?',
+    options: [
+      'İnsanların mahkeme salonlarında korkuya kapılarak her zaman yalan söyleme eğiliminde olduğunu',
+      'Ormanlık ve ıssız alanların insan psikolojisinde halüsinasyonları tetiklediğini',
+      'Mutlak, tek ve tarafsız bir "hakikatin" bulunmadığını; gerçeğin her zaman kişinin kendi egosuna ve bakış açısına göre bükülen öznel bir kurgu (illüzyon) olduğunu',
+      'Japon kültüründe onur kavramının adaletten daha üstün tutulduğunu'
+    ],
+    correct: 2,
+    explanation: 'Dört kişinin aynı olayı kendi egosuna göre farklı (ve doğruymuş gibi) anlatması; mutlak gerçeğin olmadığını, hakikatin öznel bir kurgu (illüzyon) olduğunu savunur.'
+  },
+  {
+    title: 'Streisand Etkisi: Sansürün Megafonu',
+    passage: '2003 yılında ünlü şarkıcı Barbra Streisand, evinin havadan çekilmiş bir fotoğrafını yayınlayan küçük bir web sitesine fotoğrafı kaldırması için 50 milyon dolarlık devasa bir dava açtı. Dava açılmadan önce o fotoğrafı sitede sadece 6 kişi (onlar da avukatlardı) indirmişti. Ancak "Streisand bir fotoğrafı sildirmeye çalışıyor!" haberi medyaya düşünce, bir ay içinde milyonlarca insan siteye akın etti ve o fotoğraf internetin en çok paylaşılan görsellerinden biri oldu. "Streisand Etkisi" denen bu ironi; bir bilgiyi zorla saklamaya, sansürlemeye veya yasaklamaya çalışmanın, o bilgiyi yok etmek yerine ona devasa bir megafon tutarak (merakı kışkırtarak) tüm dünyaya yaydığını kanıtlayan muazzam bir sosyolojik bumerangdır.',
+    questionStem: 'Streisand Etkisi kavramı, sansür ve yasaklama girişimlerinin genellikle nasıl bir sonuç doğurduğunu açıklamaktadır?',
+    options: [
+      'Yasaklanan içeriklerin zamanla halk tarafından unutularak değerini kaybettiğini',
+      'Bir bilgiyi zorla gizlemeye veya yasaklamaya (sansürlemeye) çalışmanın, insanlardaki merak duygusunu kışkırtarak o bilginin yok olmak yerine bir bumerang gibi patlayıp milyonlara yayılmasına neden olduğunu',
+      'Ünlü sanatçıların hukuk sistemini kullanarak medyayı kolayca susturabildiğini',
+      'İnternet sitelerinin her zaman ünlülerin özel hayatına saygı duyduğunu'
+    ],
+    correct: 1,
+    explanation: 'Sadece 6 kişinin gördüğü resmi sildirmeye çalışmanın milyonların o resmi görmesine yol açması; sansürün aslında gizlemek yerine bilgiyi patlatan bir megafon (bumerang) olduğunu gösterir.'
+  },
+  {
+    title: 'Çehov\'un Silahı: Sanatta ve Hayatta Anlam',
+    passage: 'Ünlü Rus yazar Anton Çehov, sanatsal kurgunun en değişmez kuralını şöyle özetler: "Eğer hikâyenin birinci bölümünde duvarda asılı bir tüfek olduğunu söylüyorsanız, o tüfek üçüncü bölümde mutlaka patlamalıdır. Eğer patlamayacaksa, o tüfeği oraya hiç asmamalısınız." "Çehov\'un Silahı" olarak bilinen bu prensip, sadece tiyatro veya edebiyat için değil, insan hayatı için de kusursuz bir minimalizm ve anlam felsefesidir. Eserde (veya hayatımızda) yer alan her detayın, her eşyanın ve her cümlenin bütünsel bir amaca (anlama) hizmet etmesi gerekir. İşlevi olmayan, sonuca bağlanmayan, sadece gösteriş için orada duran her detay; sanatın da, yaşamın da o asil sadeliğini zehirleyen gereksiz bir gürültüden ibarettir.',
+    questionStem: 'Çehov\'un Silahı prensibinin temelinde yatan edebi ve felsefi anlayış nedir?',
+    options: [
+      'Sanat eserlerinde şiddet ve cinayet ögelerinin her zaman ilgi çektiği',
+      'Tiyatro sahnelerinin olabildiğince çok eşyayla (dekorla) doldurulması gerektiği',
+      'Eserdeki (ve hayattaki) her detayın mutlaka bütünsel bir amaca (sonuca) hizmet etmesi gerektiği; işlevi olmayan, gereksiz her unsurun (gösterişin) atılması gerektiği (minimalizm ve anlamlılık)',
+      'Rus edebiyatının diğer edebiyatlardan çok daha kuralcı bir yapıya sahip olduğu'
+    ],
+    correct: 2,
+    explanation: 'Asılı duran tüfeğin mutlaka patlaması (işe yaraması) gerektiği, aksi halde orada olmaması gerektiği kuralı; gereksiz detayların atılmasını ve her şeyin bir amaca/işleve hizmet etmesi gerektiğini savunur.'
+  },
+  {
+    title: 'Batık Maliyet Yanılgısı (Sunk Cost Fallacy)',
+    passage: 'Gittiğiniz bir sinema filminin ilk yarım saatinde filmin berbat olduğunu anladınız. Salondan çıkıp gitmeniz gerekirken, "O kadar bilet parası verdim, vaktimi harcadım, bari sonunu göreyim" diyerek kendinize işkence etmeye devam edersiniz. Aynı şey yürümediği belli olan ilişkiler, batan şirketler ve kazanılmayacak savaşlar için de geçerlidir. "Batık Maliyet Yanılgısı" denen bu psikolojik körlük; insanın sırf geçmişte para, zaman veya duygu "yatırımı yaptı" diye, aslında açıkça zararına olan (yıkıcı) bir süreci inatla sürdürmeye devam etmesidir. İnsan zihni, yaptığı hatayı (kaybı) kabullenip kesip atmaktansa, o hatanın üzerine daha fazla yatırım yaparak kendi yıkımını devasa bir enkaza dönüştürmeyi tercih eden mantıksız bir kumarcıdır.',
+    questionStem: 'Batık Maliyet Yanılgısı (Sunk Cost Fallacy), insanların hangi mantıksız tutumunu eleştirmektedir?',
+    options: [
+      'İnsanların genellikle pahalı ürünlerin kaliteli olduğunu sanması',
+      'Sırf geçmişte maddi veya manevi bir emek (yatırım) harcandı diye; açıkça zarar getiren ve kurtarılması imkânsız olan yıkıcı bir durumu bitirmek yerine inatla devam ettirerek kaybı büyütmesi',
+      'Sinema biletlerinin fiyatlarının sürekli artmasının kültürel etkinlikleri azaltması',
+      'Başarısız olan projelerin her zaman başkaları tarafından finanse edilmesi'
+    ],
+    correct: 1,
+    explanation: 'Berbat olduğunu anladığı filme sırf bilet parası verdi diye katlanmaya devam etmesi; geçmişteki yatırım yüzünden zararına olan eylemi inatla sürdürme mantıksızlığını açıklar.'
+  },
+  {
+    title: 'Peter İlkesi (Liyakatin Çöküşü)',
+    passage: 'Büyük şirketlerde veya devlet dairelerinde neden en üst düzey yöneticiler genellikle en beceriksiz ve yeteneksiz kişilerden oluşur? Sosyolog Laurence J. Peter bu trajikomik durumu "Peter İlkesi" ile kusursuzca açıklar: Bir çalışan kendi pozisyonunda başarılı oldukça bir üst pozisyona terfi ettirilir. Bu terfiler, kişi "kendi yeteneksizlik seviyesine (başarısız olacağı noktaya)" ulaşana kadar devam eder. Kişi o pozisyonda çuvalladığı için bir daha terfi edemez ve emekli olana kadar o yeteneksiz olduğu koltuğu işgal eder. Sonuç: Hiyerarşik sistemlerin zirveleri, aslında o işi yapamayan, kendi kifayetsizlik sınırında asılı kalmış çapsız yöneticilerden oluşan devasa ve felç olmuş birer çöplüğe dönüşür.',
+    questionStem: 'Peter İlkesi\'ne göre, hiyerarşik sistemlerde (şirket/devlet) zirvelerin yeteneksiz insanlarla dolmasının asıl nedeni nedir?',
+    options: [
+      'Zeki insanların genellikle kendi işlerini kurarak maaşlı çalışmaktan kaçınması',
+      'İnsanların başarılı oldukça terfi etmesi ve eninde sonunda "kendi yeteneksizlik sınırına" çarpıp orada takılı kalmaları (başarısız oldukları koltuğu işgal etmeleri)',
+      'Yöneticilerin bilerek ve isteyerek akrabalarını yüksek pozisyonlara yerleştirmesi (nepotizm)',
+      'Alt kademedeki çalışanların üst yöneticileri sürekli sabote etmesi'
+    ],
+    correct: 1,
+    explanation: 'Kişinin başarılı oldukça terfi alıp, başarısız olduğu an o koltukta sonsuza dek kalması; sistemin zirvelerinin liyakatsiz kişilerle dolmasının mekanizmasını açıklar.'
+  },
+  {
+    title: 'Kuleshov Etkisi: Sinemanın İllüzyonu',
+    passage: 'Sovyet sinemacı Lev Kuleshov, insan zihninin nasıl kolayca manipüle edildiğini göstermek için bir deney yaptı. Ekrana, hiçbir mimik barındırmayan tamamen tepkisiz bir aktörün yüzünü koydu. Bu yüzün hemen ardına sırasıyla üç farklı görüntü ekledi: Bir tabak sıcak çorba, tabutta ölü bir çocuk ve uzanan güzel bir kadın. İzleyiciler aktörün yüzü hiç değişmemesine rağmen birinci görüntüde aktörün "çok aç ve arzulu" baktığına, ikinci görüntüde "derin bir hüzün" yaşadığına, üçüncüde ise "şehvet" duyduğuna yemin ettiler! "Kuleshov Etkisi" şunu ispatlar: Anlam (ve duygu), görüntünün kendi içinde değil; o görüntülerin arka arkaya diziliş şeklindedir. Beynimiz, iki alakasız kare arasında nedensellik bağı kurarak, ortada olmayan o sahte duyguyu kendi elleriyle (kurgulayarak) inşa eder.',
+    questionStem: 'Kuleshov Etkisi deneyi, insan algısının (ve sinema kurgusunun) hangi özelliğini ortaya koymaktadır?',
+    options: [
+      'İnsan yüzündeki mikro mimiklerin duyguları ele vermekte çok başarısız olduğunu',
+      'Anlamın ve duygunun tek bir görüntünün kendisinde değil; beynin, art arda gelen alakasız görüntüler arasında bağlantı (kurgu) kurarak o duyguyu kendiliğinden üretmesinde saklı olduğunu',
+      'Sovyet oyuncuların duygusal sahnelerde Batılı oyunculardan daha yetenekli olduğunu',
+      'İnsanların acıkan birini gördüklerinde her zaman daha fazla empati kurduğunu'
+    ],
+    correct: 1,
+    explanation: 'Tepkisiz yüzün ardından gelen çorbaya/tabuta göre izleyicinin farklı duygu algılaması; anlamın görüntünün kendisinde değil, beynin kurduğu o bağlantıda (kurguda) yattığını kanıtlar.'
+  },
+  {
+    title: 'İkizler Paradoksu ve Görelilik',
+    passage: 'Albert Einstein\'ın İzafiyet Teorisi, zamanın herkes için aynı hızda akan sabit bir nehir olduğu inancını paramparça etti. "İkizler Paradoksu" bunu en acımasız haliyle anlatır: Yirmili yaşlarındaki tek yumurta ikizlerinden biri dünyada kalırken, diğeri ışık hızına yakın bir uzay gemisiyle derin uzaya fırlatılır. Uzaydaki kardeş için sadece 5 yıl geçer, ancak o 5 yılın sonunda dünyaya geri döndüğünde, dünyada kalan ikiz kardeşini 80 yaşında, bastonlu ve ölmek üzere olan bir ihtiyar olarak bulur! Hız arttıkça zaman bükülmüş ve yavaşlamıştır. Zaman, evrenin o dondurucu ve sarsılmaz mutlak hâkimi değil; hızın ve kütleçekiminin elinde hamur gibi esneyen, izafi (kişiye göre değişen) trajik bir illüzyondur.',
+    questionStem: 'İkizler Paradoksu düşünce deneyinin, geleneksel evren ve zaman algımıza vurduğu en büyük darbe nedir?',
+    options: [
+      'Uzay yolculuklarının insan bedenindeki hücre yenilenmesini tamamen durdurması',
+      'Zamanın tüm evrende aynı hızda işleyen mutlak ve sabit bir kural olduğu inancını yıkarak; zamanın hıza bağlı olarak bükülen, kişiye göre değişen (izafi/göreceli) bir kavram olduğunu kanıtlaması',
+      'Işık hızına çıkmanın teorik olarak insan bedeni için ölümcül olacağını göstermesi',
+      'İkiz kardeşlerin genetik bağlarının uzayda bile birbirlerini hissetmelerini sağlaması'
+    ],
+    correct: 1,
+    explanation: 'Bir ikiz 5 yıl yaşarken diğerinin 80 yaşına gelmesi; zamanın sabit bir nehir değil, hıza göre esneyen ve kişiye göre değişen (izafi) bir illüzyon olduğunu gösterir.'
+  },
+  {
+    title: 'Flatland (Düzland) Alegorisi',
+    passage: 'Edwin A. Abbott\'un "Düzland" (Flatland) adlı başyapıtında, sadece eni ve boyu olan iki boyutlu bir evren anlatılır. Bu evrende yaşayan bir Kare, bir gün üç boyutlu bir Küre ile karşılaşır. Küre, Kareye yukarıyı, derinliği ve üçüncü boyutu anlatmaya çalışır; ancak Kare için "yukarı" kavramı tamamen anlamsızdır, onun aklı sadece sağa, sola ve ileriye basmaktadır. Sonunda Küre, Kareyi alıp üç boyutlu evrene çıkardığında, Kare gördüğü o devasa hakikat karşısında dehşete düşer. Düzland bir geometri masalı değildir; o, üç boyutlu bir kafese hapsolmuş biz insanların (kibirlilerin), aklımızın ve duyu organlarımızın sınırları dışında kalan o evrensel sırları, kuantum boyutlarını veya tanrısal gerçeklikleri kavramaktaki o çaresiz, sığ ve acınası körlüğümüzün (yetersizliğimizin) en tokat gibi alegorisidir.',
+    questionStem: 'Flatland (Düzland) alegorisi, insan zihni ve evrensel gerçeklik (hakikat) hakkında neyi sembolize eder?',
+    options: [
+      'Geometrinin sadece matematikçiler tarafından anlaşılabilecek kadar sıkıcı bir alan olduğunu',
+      'Tıpkı iki boyutlu bir varlığın üçüncü boyutu anlayamaması gibi, üç boyutlu fiziksel algıya hapsolmuş insanın da kendi sınırlı zihniyle evrenin ötesini (ve yüksek hakikatleri) kavramada ne kadar sığ ve kör (aciz) kaldığını',
+      'Paralel evrenler arasında seyahat etmenin sadece şekil değiştirerek mümkün olabileceğini',
+      'Küre gibi kusursuz şekillerin doğada karelerden daha çok bulunduğunu'
+    ],
+    correct: 1,
+    explanation: 'İki boyutlu karenin üçüncü boyutu anlayamaması metaforuyla; üç boyutlu insanın da kendi algı kafesine hapsolup yüksek gerçeklikleri (hakikati) kavramada ne kadar kör/yetersiz kaldığı vurgulanmıştır.'
+  },
+  {
+    title: 'Hayvanat Bahçesi Hipotezi (Zoo Hypothesis)',
+    passage: 'Gökbilimci John Allen Ball, "Uzaylılar nerede?" sorusuna kan dondurucu bir açıklama getirir: Hayvanat Bahçesi Hipotezi. Bu teoriye göre, evrende bizden milyonlarca yıl daha gelişmiş sayısız medeniyet vardır ve onlar bizim nerede olduğumuzu çok iyi bilmektedirler. Ancak teknolojik olarak o kadar geride, vahşi ve ilkel bir türüz ki; onlar bizimle iletişime geçmek yerine dünyamızı "kozmik bir doğa koruma alanı (hayvanat bahçesi)" ilan etmişlerdir. Bizi, kendi evrimsel gelişimimizi tamamlayana kadar uzaktan, görünmez bir şekilde ve sessizce izlemektedirler (tıpkı bizim belgesellerde aslanları izlediğimiz gibi). Yani gökyüzündeki sessizlik kimsenin olmamasından değil; seyircilerin, kafesteki vahşi hayvanları (bizi) ürkütmemek için bilerek sessiz kalmasındandır.',
+    questionStem: 'Hayvanat Bahçesi Hipotezi\'nin, uzaylıların bizimle iletişime geçmemesine dair getirdiği sarsıcı açıklama nedir?',
+    options: [
+      'Uzaylıların radyo sinyallerini algılayacak teknolojiye henüz ulaşamamış olması',
+      'Dünya dışı varlıkların aslında çok barışçıl ve mikroskobik canlılar olması',
+      'Uzaylıların teknolojik ve ahlaki olarak o kadar gelişmiş olması ki; bizi ilkel, vahşi bir tür olarak görüp evrimimize müdahale etmemek adına dünyamızı izole edilmiş (karantinaya alınmış) bir kozmik hayvanat bahçesi gibi uzaktan ve sessizce izlemeleri',
+      'Güneş sistemimizin uzaylıların ilgisini çekmeyecek kadar sönük bir yıldız kümesinde bulunması'
+    ],
+    correct: 2,
+    explanation: 'Uzaylıların bizimle iletişime geçmemesinin sebebi olarak; bizi ilkel bulup evrimimizi bozmamak adına (bir hayvanat bahçesi gibi) dışarıdan sessizce izledikleri hipotezi (karantina/izolasyon) sunulmuştur.'
+  },
+  {
+    title: 'Panspermi Teorisi: Biz Uzaylıyız',
+    passage: 'Bilim insanları yıllarca yaşamın Dünya\'daki ilkel çorbalarda kendiliğinden oluştuğunu savundu. Ancak "Panspermi Teorisi" bu inancı yıkarak çok daha fantastik bir köken önerir. Bu teoriye göre; yaşamın temel yapıtaşları (aminoasitler ve dirençli mikroorganizmalar) Dünya\'da oluşmadı, uzayın derinliklerinde süzülen meteorlar ve kuyrukluyıldızlar aracılığıyla donmuş bir halde yeryüzüne çakılarak okyanuslara tohumlandı. Eğer Panspermi teorisi doğruysa, gökyüzüne bakıp "Uzaylılar nerede?" diye sormamız büyük bir ironidir; çünkü o meteorla gelen tohumlardan evrimleşen bizler, zaten milyarlarca yıl önce bu gezegene çarparak yerleşmiş olan o uzaylıların ta kendisiyiz.',
+    questionStem: 'Panspermi Teorisi\'nin kabul edilmesi durumunda, insanlık ve evren hakkında ortaya çıkacak olan felsefi "ironi" nedir?',
+    options: [
+      'Meteorların aslında gezegenleri yok etmek için değil kurtarmak için gönderildiği',
+      'Yaşamın sadece sulak okyanuslarda başlayabileceği inancının çökmesi',
+      'Hayatın yapıtaşlarının uzaydan geldiği gerçeği karşısında; dışarıda "uzaylı" arayan insanoğlunun, evrimsel kökeni itibarıyla bu gezegene dışarıdan gelmiş olan o "uzaylı türün" bizzat kendisi olması ironisi',
+      'Dünyanın atmosferinin uzaydan gelen her türlü virüse karşı tamamen korumasız olduğu'
+    ],
+    correct: 2,
+    explanation: 'Yaşamın tohumlarının meteorlarla uzaydan geldiği tezi doğruysa; dışarıda uzaylı arayan bizim, aslında uzaydan gelen tohumların devamı (yani bizzat uzaylı) olduğumuz ironisi anlatılmaktadır.'
+  },
+  {
+    title: 'Yığın Paradoksu (Sorites Paradox)',
+    passage: 'Antik Yunan filozoflarının ortaya attığı "Sorites (Yığın) Paradoksu", insan dilinin ve algısının ne kadar aciz olduğunu gösterir. Önünüzde 1 milyon kum tanesinden oluşan bir yığın var. İçinden 1 tane alırsanız, o hala bir kum yığını mıdır? Evet. Bir tane daha alırsanız? Yine evet. Peki kum tanelerini tek tek almaya devam ederseniz, o yığın tam olarak "hangi kum tanesi alındığında" yığın olmaktan çıkar? İki kum tanesi yığın mıdır? Üç tane? Kesin bir sınır yoktur. Bu paradoks, doğada "kel, zengin, yığın veya yaşlı" gibi kavramların aslında fiziksel (kesin) bir sınırı olmadığını, sadece insan dilinin (ve beyninin) karmaşık gerçeği basitleştirmek için uydurduğu belirsiz ve kusurlu birer etiket olduğunu ispatlar.',
+    questionStem: 'Yığın (Sorites) Paradoksu, felsefi olarak hangi temel yetersizliğimizi veya yanılgımızı ortaya koyar?',
+    options: [
+      'Kum taneleri gibi küçük nesnelerin gözle görülmesinin zorluğunu',
+      'Doğadaki değişimlerin sürekli ve kesintisiz (grift) olmasına rağmen; insan dilinin ve kavramlarının (kel, zengin, yığın gibi) bu sürekliliği kesin sınırlarla belirlemede düştüğü o kusurlu acizliği (belirsizliği)',
+      'Çöllerin zamanla rüzgâr erozyonuyla yok olduğu gerçeğini',
+      'Antik Yunan filozoflarının matematiksel hesaplamalarda çok zayıf kaldıklarını'
+    ],
+    correct: 1,
+    explanation: 'Tek tek alınan kumun ne zaman "yığın" olmaktan çıktığının bilinememesi; doğadaki kesintisizliğe karşı insan dilinin ve kullandığı etiketlerin (kavramların) kesin sınırlar çizmedeki kusurlu acizliğini gösterir.'
+  },
+  {
+    title: 'Matta Etkisi (Matthew Effect)',
+    passage: 'İncil\'deki bir ayetten (Kimde varsa ona daha çok verilecek) ismini alan "Matta Etkisi", sosyolog Robert Merton tarafından bilime ve topluma uyarlanmıştır. Dünyanın "saf bir liyakat (hak ediş)" üzerine kurulduğu büyük bir yalandır. Eğer iki bilim insanı aynı anda bir makale yayınlarsa, daha önceden "ünlü" olan bilim insanının makalesi binlerce kez atıf alırken, tanınmayan gencin makalesi çöpe gider. Veya küçük bir avantajla doğan bir çocuk (iyi bir ilkokula gitmek gibi), bu avantajı sayesinde daha iyi liseye, oradan da milyonerliğe sıçrar. Matta Etkisi şudur: "Zengin daha zengin, bilinen daha bilinir olur." Başarı dediğimiz şey çoğu zaman saf yetenek değil; en baştaki o ufacık (ve bazen tesadüfi) avantajın zamanla çığ gibi büyüyen birikimli kayırmacılığıdır.',
+    questionStem: 'Matta Etkisi\'nin toplumsal (ve bilimsel) başarı algısına getirdiği eleştiri aşağıdakilerden hangisidir?',
+    options: [
+      'Dini metinlerde geçen kuralların ekonomi biliminde birebir uygulanamayacağı',
+      'Dünyanın saf ve adil bir "liyakat (yetenek)" sistemiyle işlemediği; başarı ve şöhretin genellikle geçmişten gelen küçük avantajların (ve tanınırlığın) kartopu gibi büyümesiyle oluşan haksız bir birikim (kayırmacılık) olduğu',
+      'Bilim insanlarının yaşlandıkça genç meslektaşlarına oranla daha az araştırma yaptığı',
+      'Sadece zengin ailelerden gelenlerin edebiyat ve sanatta yetenekli olabileceği'
+    ],
+    correct: 1,
+    explanation: 'Ünlü olanın daha çok atıf alması veya baştaki avantajın kişiyi milyoner yapması; başarının saf liyakat değil, sahip olunan avantajın haksızca büyümesi (zenginin daha zengin olması) gerçeğini eleştirir.'
+  },
+  {
+    title: 'Gresham Yasası ve Kültürel Çöküş',
+    passage: '16. yüzyılda İngiliz finansçı Thomas Gresham şu meşhur ekonomi kuralını koydu: "Kötü para, iyi parayı piyasadan kovar." Eğer piyasada hem saf altından yapılmış değerli paralar, hem de içine bakır karıştırılmış değersiz paralar dolaşıyorsa; insanlar altını yastık altına saklar (piyasadan çeker) ve sadece o değersiz paralarla alışveriş yaparlar. Sonunda piyasa tamamen çöpe (kötü paraya) kalır. Günümüzde sosyologlar bu yasayı modern kültüre uyarlamıştır: Bir televizyon kanalında (veya sosyal medyada) hem derin, düşündürücü bir belgesel; hem de ucuz, bağrışmalı, sığ bir yarışma varsa, o kalitesiz ve ucuz içerik saniyeler içinde reytingleri silip süpürür ve kaliteli işi ekranlardan kovar. Kötü kültür, iyi kültürü yener; çünkü sığlığın tüketimi her zaman dehadan daha zahmetsiz ve bulaşıcıdır.',
+    questionStem: 'Ekonomideki Gresham Yasası ("Kötü para iyi parayı kovar") kavramının modern kültüre uyarlanmış hali neyi savunmaktadır?',
+    options: [
+      'Televizyon kanallarının ekonomik olarak her zaman iflas etme riski taşıdığını',
+      'İnsanların eski dönemlere ait antika paralara ve eşyalara her zaman daha çok ilgi duyduğunu',
+      'Zahmetsiz, ucuz ve sığ kültür ürünlerinin (kötü paranın); derin, kaliteli ve düşündürücü (iyi) eserleri reyting ve tüketim gücüyle piyasadan (ve toplumsal ilgiden) tamamen silip attığını',
+      'Belgesel izleyen insanların genellikle daha fazla altın biriktirme eğiliminde olduğunu'
+    ],
+    correct: 2,
+    explanation: 'Ucuz ve bağrışmalı yarışmaların derin belgeselleri reytingle yok etmesi; ekonomideki "kötü paranın iyi parayı kovması" kuralının kültürdeki (sığ olanın kaliteliyi yok etmesi) yansımasını savunur.'
+  },
+  {
+    title: 'Haşlanmış Kurbağa Sendromu',
+    passage: 'Eğer bir kurbağayı kaynar su dolu bir tencereye atarsanız, can havliyle zıplayıp anında kaçar. Ancak kurbağayı oda sıcaklığında ılık bir suya koyup, altındaki ateşi yavaş yavaş, derece derece açarsanız; kurbağa suyun ısındığını fark etmez. Su kaynama noktasına ulaştığında kurbağa gevşemiş ve kasları uyuşmuştur, artık zıplayacak hali kalmaz ve haşlanarak ölür. "Haşlanmış Kurbağa Sendromu", toplumların ve bireylerin yavaş yavaş artan kötülüğe, diktatörlüğe, hak ihlallerine veya zehirli bir ilişkiye karşı verdikleri o sessiz ve felç olmuş tepkisizliği anlatır. Tehlike aniden (şokla) gelmez; adım adım, alıştıra alıştıra (normalleştirilerek) geldiğinde, insan isyan etme yetisini kaybeder ve kendi yıkımının konforunda sessizce can verir.',
+    questionStem: 'Haşlanmış Kurbağa Sendromu\'nun toplumsal psikolojide işaret ettiği en sinsi ve tehlikeli durum nedir?',
+    options: [
+      'Hayvanların ani ısı değişimlerine karşı geliştirdikleri evrimsel savunma mekanizmaları',
+      'Kötülüğün, baskının veya hak ihlallerinin aniden (şokla) değil de, yavaş yavaş ve alıştıra alıştıra (normalleştirilerek) gelmesi durumunda toplumun isyan (tepki) refleksini yitirerek kendi yıkımına boyun eğmesi',
+      'İnsanların sıcak sularda yüzdüklerinde kaslarının aşırı derecede gevşeyerek tehlikelere açık hale gelmesi',
+      'Diktatörlük rejimlerinin genellikle soğuk iklimli ülkelerde değil, sıcak ülkelerde daha kolay kurulması'
+    ],
+    correct: 1,
+    explanation: 'Suyun yavaşça ısınmasıyla kurbağanın ölene dek tepki vermemesi; kötülüğün yavaş ve alıştıra alıştıra gelmesinin toplumların isyan/tepki refleksini felç edip yıkımı normalleştirmesini sembolize eder.'
+  },
+  {
+    title: 'Gözetim Kapitalizmi (Surveillance Capitalism)',
+    passage: 'Eskiden bir şirket ayakkabı veya araba üretir ve size satardı. Müşteri sizdiniz, ürün ise eşyaydı. Harvard Profesörü Shoshana Zuboff, "Gözetim Kapitalizmi" kavramıyla dijital çağın bu denklemi nasıl kan dondurucu bir şekilde tersine çevirdiğini anlatır. Sosyal medya platformları, arama motorları ve navigasyon uygulamaları tamamen "bedava"dır. Peki bu devasa şirketler trilyonlarca doları nasıl kazanmaktadır? Cevap çok basittir: Bedava olan bir sistemde "ürün" sizsinizdir! Sizin beğenileriniz, korkularınız, kiminle mesajlaştığınız ve nereye gittiğiniz (tüm mahremiyetiniz) anbean işlenip satılabilir verilere dönüştürülür. Şirketler artık mal satmıyor; doğrudan insan davranışını (sizin geleceğinizi) tahmin edip onu reklamcılara pazarlayan dijital bir köle pazarı işletiyorlar.',
+    questionStem: 'Gözetim Kapitalizmi (Surveillance Capitalism) kavramına göre, modern dijital çağdaki en büyük ekonomik dönüşüm (tehlike) nedir?',
+    options: [
+      'İnsanların artık nakit para yerine sadece dijital kripto paralarla alışveriş yapmaya başlaması',
+      'Teknoloji şirketlerinin fiziksel fabrikalar kurmayı bırakıp sadece yazılım üretmeye odaklanması',
+      'İnternet hizmetlerinin "bedava" sunulması maskesi altında; asıl ürünün (satılan malın) doğrudan insanın mahremiyeti, davranışları ve kişisel verileri haline geldiği yeni bir pazarın kurulması',
+      'Sosyal medyanın gençlerin ders çalışma sürelerini kısaltarak akademik başarıyı düşürmesi'
+    ],
+    correct: 2,
+    explanation: 'Bedava hizmet veren şirketlerin trilyonlar kazanması, asıl satılan malın (ürünün) doğrudan kullanıcının mahremiyeti, verileri ve davranışları (Gözetim Kapitalizmi) olduğunu açıklar.'
+  },
+  {
+    title: 'Cunningham Yasası',
+    passage: 'İnternet dünyasının o tuhaf dinamiklerini açıklayan "Cunningham Yasası" şöyledir: "İnternette doğru cevabı almanın en iyi yolu, soru sormak değil; yanlış bir cevap (veya bilgi) paylaşmaktır." Eğer bir foruma girip "Dünyanın en uzun nehri hangisidir?" diye sorarsanız kimse ilgilenmez. Ancak "Dünyanın en uzun nehri Thames nehridir" diye yazarsanız, dakikalar içinde onlarca kişi size aptal olduğunuzu söylemek ve doğrunun Nil veya Amazon olduğunu kanıtlamak için klavyelere saldırır. Bu yasa, insan egosunun o hastalıklı doğasını ifşa eder: İnsanoğlu karşısındakine "yardımcı olmak" (soru cevaplamak) için pek hevesli değildir; ancak bir başkasının yanlışını düzelterek "kendi zekâsını ve üstünlüğünü kanıtlama" fırsatı bulduğunda, kibirle ve coşkuyla harekete geçer.',
+    questionStem: 'Cunningham Yasası\'nın ("Doğruyu bulmak için yanlış bir şey yazın") işe yaramasının temelinde yatan psikolojik dürtü nedir?',
+    options: [
+      'İnternet kullanıcılarının coğrafya ve tarih konularına özel bir ilgi duyması',
+      'İnsanların bir başkasına iyilik yapma veya bilgi verme arzusundan çok; başkasının hatasını düzelterek kendi zekâsını (egosunu ve üstünlüğünü) kanıtlama dürtüsünün çok daha güçlü (kışkırtıcı) olması',
+      'Yanlış bilgilerin sosyal medya algoritmaları tarafından daha hızlı öne çıkarılması',
+      'İnsanların uzun soruları okumaya üşenip sadece kısa ve yanlış iddialara cevap vermesi'
+    ],
+    correct: 1,
+    explanation: 'Soru sorana kimsenin cevap vermeyip, yanlış yazana herkesin saldırması; insanların asıl derdinin yardım etmek değil, başkasının hatasını düzelterek kendi egosunu/zekâsını kanıtlama hırsı olduğunu gösterir.'
+  },
+  {
+    title: 'Lindy Etkisi: Eskiyen Teknolojiler, Ölümsüz Klasikler',
+    passage: 'Bir akıllı telefon satın aldığınızda, onun en fazla 3-5 yıl ömrü olduğunu bilirsiniz. Yeni çıkan bir pop şarkısı birkaç ay sonra tamamen unutulur. Ancak Platon\'un felsefesi veya Beethoven\'ın bir senfonisi yüzlerce yıldır varlığını korur. Matematikçi Benoit Mandelbrot buna "Lindy Etkisi" adını vermiştir: İnsan yapımı teknolojilerde ve biyolojik canlılarda yaşlandıkça "ölme" ihtimali artar; ancak fikirler, kitaplar ve kültürel konseptler gibi "bozulmayan (cansız)" şeylerde durum tam tersidir. Homeros\'un İlyada destanı 2500 yıldır okunuyorsa, bir 2500 yıl daha okunacağı garantidir. Lindy Etkisi bize şunu söyler: Geleceği öngörmek istiyorsanız bugün çıkan parlak ve yeni teknolojilere değil; zamanın o acımasız ve silici testinden geçerek hayatta kalmayı başarmış o sessiz klasiklere (kadim fikirlere) bakmalısınız.',
+    questionStem: 'Lindy Etkisi kavramı, kültürel eserlerin (fikirlerin) dayanıklılığı ve geleceği hakkında nasıl bir kural ortaya koymaktadır?',
+    options: [
+      'Klasik eserlerin eski dillerde yazıldığı için modern toplumlar tarafından anlaşılamayacağını',
+      'Canlıların ve teknolojilerin aksine; kültürel bir fikrin veya eserin yaşı (geçmişteki ömrü) ne kadar eskiyse, zamana meydan okuyup gelecekte de yaşama ihtimalinin o kadar yüksek olduğunu',
+      'Sadece dijital ortama aktarılan kitapların sonsuza kadar saklanabileceğini',
+      'Yeni icatların ve pop şarkılarının her zaman eski eserlerden daha kaliteli (estetik) olduğunu'
+    ],
+    correct: 1,
+    explanation: 'Canlıların/teknolojinin yaşlandıkça ölmesi ama kitapların/fikirlerin yaşlandıkça geleceğe kalma şansının artması; eskinin (klasiklerin) zamana meydan okuma gücünü (Lindy Etkisini) açıklar.'
+  },
+  {
+    title: 'Batavia Gemi Kazası ve Psikopatın Yükselişi',
+    passage: '1629 yılında Hollanda gemisi Batavia, ıssız bir mercan resifine çarparak battı. Kaptan yardım çağırmak için küçük bir tekneyle uzaklaşırken, geride kalan yüzlerce insan adada mahsur kaldı. Bu umutsuz çaresizlik ortamında, Jeronimus Cornelisz adında bir tüccar (hiçbir rütbesi olmamasına rağmen) karizması ve gaddarlığıyla gücü ele geçirdi. Cornelisz, adadaki yiyecekleri tekeline aldı ve kendine sadık bir grup katil (asker) yarattı. Aylar içinde hiçbir mantıklı sebep yokken zevk için bebekleri, kadınları ve muhalifleri katlederek 120 masum insanı öldürdü. Batavia enkazı, medeniyet dediğimiz kanunların ve üniformaların olmadığı (izole) bir kriz anında, karizmatik bir psikopatın korku ve itaati kullanarak bir toplumu saniyeler içinde nasıl cehenneme sürükleyebileceğinin (gerçek hayattaki Sineklerin Tanrısı\'nın) kanlı bir belgeselidir.',
+    questionStem: 'Batavia gemi kazası (Jeronimus Cornelisz\'in liderliği) olayının insan doğası üzerine verdiği sarsıcı (sosyolojik) mesaj nedir?',
+    options: [
+      'Denizcilik yasalarının o dönemde çok eksik ve hatalarla dolu olması',
+      'Hollandalı tüccarların ticaret yaparken her zaman şiddete başvurma eğiliminde olması',
+      'Uygarlık yasalarının, otoritenin ve denetimin ortadan kalktığı (izole) bir kriz ortamında; karizmatik bir psikopatın, korkuyu ve manipülasyonu kullanarak sıradan insanları vahşete ve cehenneme sürükleyebilecek kadar kolayca gücü ele geçirebilmesi',
+      'Mercan resiflerinde hayatta kalmanın insan psikolojisinde halüsinasyonlara neden olması'
+    ],
+    correct: 2,
+    explanation: 'Kaptan gidip yasalar yok olduğunda, rütbesiz bir tüccarın korkuyla gücü ele geçirip 120 kişiyi katletmesi; medeniyetin çöküşü anında psikopatların korkuyla toplumu cehenneme (Sineklerin Tanrısı gibi) sürükleyebileceğini gösterir.'
+  },
+  {
+    title: 'Ebbinghaus Unutma Eğrisi',
+    passage: 'Birçoğumuz ezberlediğimiz bilgileri ertesi gün unuttuğumuzda hafızamızın "bozuk veya yetersiz" olduğunu düşünerek kendimize kızarız. Oysa 19. yüzyılda psikolog Hermann Ebbinghaus, "Unutma Eğrisi" deneyiyle bunun bir hata değil, kusursuz bir biyolojik tasarım olduğunu kanıtladı. Beyin, yeni öğrendiği bir verinin (eğer tekrar edilmezse veya hayati bir önemi yoksa) %70\'ini sadece 24 saat içinde çöpe atar. Çünkü beynin birincil görevi her şeyi hatırlamak (depolamak) değil; acımasızca eleyerek, sadece hayatta kalmamızı sağlayacak en taze ve en önemli verilere yer açmaktır. Unutmak bir zayıflık veya sistem hatası (bug) değildir; beynimizin o devasa ve gereksiz gürültü çöplüğünde boğulup delirmemizi engelleyen, bizi hayatta tutan muazzam bir savunma ve temizlik stratejisidir (feature).',
+    questionStem: 'Ebbinghaus\'un "Unutma Eğrisi" teorisi, "unutmak" eylemine dair geleneksel ve olumsuz algıyı nasıl yıkmıştır?',
+    options: [
+      'Unutkanlığın aslında beslenme yetersizliği ve vitamin eksikliğinden kaynaklanan bir hastalık olduğunu savunarak',
+      'İnsanların yaşlandıkça beyin hücrelerinin küçülmesi nedeniyle hafızalarının kaçınılmaz olarak zayıfladığını göstererek',
+      'Unutmayı bir hafıza zayıflığı veya kusuru (hata) olarak değil; beynin, gereksiz gürültüden arınarak sadece hayati bilgilere odaklanmasını ve delirmekten kurtulmasını sağlayan "kusursuz bir savunma ve temizlik mekanizması" olarak tanımlayarak',
+      'Hafızanın sadece uyku sırasında yeni bilgileri kalıcı belleğe aktardığını ispatlayarak'
+    ],
+    correct: 2,
+    explanation: 'Unutmanın bir hata (bug) değil, beynin gereksiz bilgileri atıp delirmekten kurtulmasını sağlayan muazzam bir temizlik ve savunma stratejisi (feature) olduğunu göstererek olumsuz algıyı yıkmıştır.'
+  },
+  {
+    title: 'Maxwell\'in Şeytanı ve Evrenin Sonu',
+    passage: 'Evrenin en kesin yasası olan Termodinamiğin 2. Yasasına (Entropi) göre, her şey düzenden kaosa doğru (dağılmaya) gider ve ısı her zaman sıcaktan soğuğa akar. Fizikçi James Clerk Maxwell 1867\'de bu yasayı kırmak için felsefi bir deney (Maxwell\'in Şeytanı) kurguladı: Ortadan ikiye bölünmüş bir kutunun kapısında mikroskobik, zeki bir "şeytan" bekler. Bu şeytan, hızlı (sıcak) moleküller geldiğinde kapıyı açıp sağ tarafa alır, yavaş (soğuk) moleküller geldiğinde ise sol tarafa alır. Sonunda kutunun bir tarafı cehennem gibi ısınırken diğer tarafı buz gibi olur. Yani şeytan, entropiyi geriye çevirmiş ve evrenin en büyük kuralını yıkmıştır! Bu zihinsel deney, sadece fizikte değil felsefede de büyük bir kavgaya neden oldu: Eğer bilgi (ölçüm yapan bilinçli bir şeytan/zekâ) işin içine girerse, evrenin o tek yönlü, ölüme ve kaosa (entropiye) giden kaderi gerçekten geri çevrilebilir mi?',
+    questionStem: 'Maxwell\'in Şeytanı düşünce deneyinin, evrensel yasalarla (Entropi ile) girdiği asıl felsefi/fiziksel çatışma nedir?',
+    options: [
+      'Şeytanların (kötü ruhların) insan bedenindeki hücresel yaşlanmayı hızlandırıp hızlandıramayacağı',
+      'Zeki bir müdahalenin (bilgi ve ölçüm yapan bir bilincin), evrenin tek yönlü olan kaosa ve çürümeye (entropiye) gidiş kuralını teorik olarak tersine çevirip (düzen yaratıp) yaratamayacağı sorunsalı',
+      'Kutuların içindeki gazların ısındıkça patlama riski taşıması ve laboratuvar güvenliğinin ihlal edilmesi',
+      'Termodinamik yasalarının sadece dünya atmosferi içinde geçerli olup uzayda çalışmaması'
+    ],
+    correct: 1,
+    explanation: 'Zeki bir şeytanın kapıyı açıp kapatarak sıcak ve soğuğu ayırması (düzen kurması); bilgi ve zekânın, evrenin kaosa/çürümeye giden o yıkılmaz entropi yasasını tersine çevirip çeviremeyeceğini sorgular.'
+  }
+];
+
+// 21. MAKİNE (Düzeltilmiş Hali)
+export const felsefeParagrafSorulari21: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_21.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_21[idx];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-felsefe21-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
 // paragrafTests.ts dosyasının hata vermemesi için iki listeyi birleştirip eski adıyla dışa aktarıyoruz:
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari,
@@ -5603,5 +5881,5 @@ export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...felsefeParagrafSorulari18,
   ...bilimParagrafSorulari19,
   ...karisikParagrafSorulari20
-  
+  ...felsefeParagrafSorulari21
 ];
