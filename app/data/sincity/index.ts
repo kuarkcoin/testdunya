@@ -5880,6 +5880,6 @@ export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...karisikParagrafSorulari17,
   ...felsefeParagrafSorulari18,
   ...bilimParagrafSorulari19,
-  ...karisikParagrafSorulari20
+  ...karisikParagrafSorulari20,
   ...felsefeParagrafSorulari21
 ];
