@@ -8354,6 +8354,283 @@ export const felsefeParagrafSorulari30: BilimParagrafQuestion[] = Array.from({ l
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
+const PARAGRAPH_THEMES_31 = [
+  {
+    title: 'Arşimet ve Kaba Kuvvetin Zaferi',
+    passage: 'MÖ 212 yılında Romalı askerler Sirakuza kentini işgal ettiklerinde, kentin sokaklarında kan gövdeyi götürüyordu. Ancak tarihin en büyük matematikçi ve mühendislerinden olan Arşimet, bu kanlı kaosun ortasında evinin bahçesinde kumlara çizdiği geometri problemleriyle meşguldü. Yanına kılıcını çekmiş, kan ter içindeki bir Roma askeri geldiğinde, Arşimet başını bile kaldırmadan tarihe geçen o umursamaz ve dâhiyane cümleyi kurdu: "Noli turbare circulos meos!" (Çemberlerimi bozma!). Asker hiçbir şey anlamadı ve kılıcını indirip Arşimet\'i oracıkta öldürdü. Arşimet\'in ölümü sadece bir cinayet değildir; saf aklın, bilginin ve derin düşüncenin o ulvi kulesinin; cehaletin, kaba kuvvetin ve silahın (askerin) o sağır edici ve kör karanlığı karşısında saniyeler içinde nasıl acımasızca parçalandığının en trajik felsefi anıtıdır.',
+    questionStem: 'Arşimet\'in ölümü (Romalı askere verdiği tepki), tarih ve felsefe bağlamında neyin sembolik bir çarpışmasıdır?',
+    options: [
+      'Matematik biliminin savaş dönemlerinde tamamen işlevsiz ve gereksiz kaldığının',
+      'Antik dönemde bilim insanlarının savaşlardan korkmayacak kadar cesur (savaşçı) bir ruha sahip olduğunun',
+      'Saf aklın, düşüncenin ve entelektüel derinliğin; cehalet, kaba kuvvet ve şiddet karşısında ne kadar kırılgan, savunmasız ve anlaşılamaz olduğunun (aklın kaba kuvvete yenilişinin)',
+      'Romalıların geometri ve matematikten nefret ettikleri için bilerek bilim insanlarını hedef aldığının'
+    ],
+    correct: 2,
+    explanation: 'Arşimet\'in kumdaki "çemberleriyle" (saf akıl ve bilim) uğraşırken cahil bir askerin kılıcıyla (kaba kuvvetle) öldürülmesi; aklın ve düşüncenin, şiddet ve cehalet karşısındaki trajik kırılganlığını (çarpışmasını) sembolize eder.'
+  },
+  {
+    title: 'Ténéré Ağacı (Kozmik Absürtlük)',
+    passage: 'Afrika\'daki devasa ve dondurucu derecede kurak Sahra Çölü\'nün tam kalbinde, "L\'Arbre du Ténéré" (Ténéré Ağacı) adında bir akasya ağacı yaşardı. Etrafındaki 400 kilometre boyunca tek bir ağaç, gölge veya yeşillik yoktu. Köklerini yerin metrelerce altındaki suya ulaştırmayı başaran bu ağaç, hayatta kalmanın ve direncin evrensel bir mucizesiydi; tüm kervanların ve kâşiflerin kutsal bir pusulası haline gelmişti. Ancak 1973 yılında inanılmaz, akılalmaz ve absürt bir şey oldu: Çölde giden sarhoş bir kamyon şoförü, 400 kilometre çapındaki o bomboş arazide çarpa çarpa tam gidip o tek ağaca çarptı ve onu kökünden sökerek öldürdü! Ténéré Ağacı\'nın ölümü, doğanın o milyonlarca yıllık sarsılmaz direncinin; insanoğlunun o anlamsız, kör ve trajikomik aptallığı (absürtlüğü) karşısında saniyeler içinde nasıl un ufak olduğunun en acımasız şakasıdır.',
+    questionStem: 'Ténéré Ağacı\'nın ölüm şekli, yazar tarafından insanoğlu ve doğa ilişkisine dair nasıl bir metafor (şaka) olarak sunulmuştur?',
+    options: [
+      'Gelecekteki ulaşım araçlarının çöl koşullarına tamamen uygun olarak tasarlanması gerektiği',
+      'Çöl ekosisteminin dışarıdan gelen bitki türlerini er ya da geç yok ettiği (kabul etmediği) gerçeği',
+      'Doğanın o sarsılmaz ve mucizevi hayatta kalma iradesinin; insanoğlunun o kör, anlamsız, rastgele ve trajikomik "absürtlük/aptallık" seviyesi karşısında bile ne kadar çaresiz (ve yok edilebilir) olduğu gerçeği',
+      'Kamyon şoförlerinin eski çağlardaki kervanlardan daha dikkatsiz olduğu eleştirisi'
+    ],
+    correct: 2,
+    explanation: '400 km bomboş çölde mucizevi bir şekilde hayatta kalan tek ağaca bir sarhoşun gidip çarpması; doğanın mucizevi direncinin, insan aptallığının (absürtlük ve kaosunun) kör yıkıcılığına kurban gitmesi metaforudur.'
+  },
+  {
+    title: 'Corrupted Blood Salgını (Sanal Dünyada Gerçek Yıkım)',
+    passage: '2005 yılında "World of Warcraft" (WoW) adlı devasa çok oyunculu çevrimiçi oyunda, yapımcıların kazara yarattığı bir kod hatası yüzünden "Corrupted Blood" (Bozuk Kan) adında sanal, bulaşıcı ve ölümcül bir hastalık patlak verdi. Karakterler birbirlerine yaklaştıklarında virüs bulaşıyor ve ölüyorlardı. Oyun şirketinin asıl şok olduğu şey kod hatası değil, "oyuncuların tepkisiydi". Salgın başladığında bazı oyuncular kendilerini karantinaya aldı, bazıları iyileştirici (doktor) olup hayatlarını tehlikeye attı. Ancak en korkuncu; bazı oyuncular bilerek hastalığı kapıyor ve "virüsü yaymak (terörizm yapmak) için" kalabalık şehirlere koşarak herkesi kasten öldürüyordu! Gerçek dünyadaki epidemiyologlar (salgın uzmanları) bu sanal kaosu inceleyerek insan davranışının modellemesini çıkardılar. Bu olay; kurgusal bir piksel evreninde (simülasyonda) bile, insan doğasının o karanlık, bencil, yıkıcı ve kaotik gerçeğinin asla gizlenemediğinin dijital ispatıdır.',
+    questionStem: 'World of Warcraft\'taki "Corrupted Blood" (sanal salgın) olayı, bilim insanlarına insan doğası hakkında hangi paha biçilmez veriyi sunmuştur?',
+    options: [
+      'Bilgisayar kodlarının gelecekte insan beynini fiziksel olarak hasta edebileceği tehlikesini',
+      'Dijital ve tamamen kurgusal (sanal) bir ortamda bile; insanların fedakârlık, panik ve "kötü niyetli yıkıcılık (terörizm)" gibi en çıplak ve gerçek içgüdülerini (doğalarını) aynen sergilediklerini',
+      'Video oyunlarının sadece genç yaştaki çocukların psikolojisini bozduğunu',
+      'İnternet bağlantılarının kesilmesinin salgın hastalıkları anında durdurabileceğini'
+    ],
+    correct: 1,
+    explanation: 'Oyuncuların karantinaya girmesi veya bilerek virüs yayması; sanal bir simülasyonda bile insan doğasının o gerçekçi (iyi ve kötü) içgüdülerini birebir sergilediğini ispatlamıştır.'
+  },
+  {
+    title: 'Gombe Şempanze Savaşı (Doğanın Masumiyeti Yalanı)',
+    passage: 'Yüzyıllar boyunca filozoflar (özellikle J.J. Rousseau), insanın doğuştan "iyi ve masum" olduğunu, vahşetin ve savaşın sadece "insanlığın kurduğu medeniyetler ve mülkiyet" yüzünden ortaya çıktığını savundu (Soylu Vahşi Miti). Ancak 1974\'te primatolog Jane Goodall, Tanzanya\'nın Gombe ormanlarında kan dondurucu bir gerçeği kameraya aldı. Ormandaki şempanzeler iki gruba bölünmüş ve tam dört yıl sürecek acımasız bir savaşa tutuşmuşlardı. Şempanzeler; sınır devriyeleri atıyor, pusu kuruyor, esir aldıkları rakiplerine işkence yapıyor ve onları yavaş yavaş paramparça ederek öldürüyorlardı! Savaş, medeniyetin bir icadı değil; DNA\'mıza kazınmış evrimsel bir mirastı. Gombe Savaşı, doğanın masumiyetine duyulan o romantik ve felsefi kibri paramparça etmiş; "kötülüğün, şiddetin ve organize cinayetin" hayvanlar âleminde de var olan, ilkel ve biyolojik bir strateji olduğunu (Rousseau\'nun yalanını) yüzümüze çarpmıştır.',
+    questionStem: 'Jane Goodall\'ın belgelediği "Gombe Şempanze Savaşı", felsefe ve antropoloji dünyasındaki hangi "romantik algıyı" yerle bir etmiştir?',
+    options: [
+      'Şempanzelerin meyve ve bitkilerle beslenen tamamen otçul (zararsız) varlıklar olduğu düşüncesini',
+      'Ormanların kesilerek şehirlerin kurulmasının vahşi hayvanları göçe zorladığı gerçeğini',
+      'Savaşın, şiddetin ve organize cinayetin sadece "insanlığa ve kurulan medeniyete" özgü sonradan öğrenilmiş bir bozulma olduğu; doğanın ve ilkel halin ise saf, masum ve barışçıl ("Soylu Vahşi") olduğu yönündeki romantik inancı',
+      'Afrika kıtasındaki hayvanların iklim değişikliklerine karşı dayanıklı olduğu inancını'
+    ],
+    correct: 2,
+    explanation: 'Şempanzelerin 4 yıl pusu kurup işkenceyle savaşması; vahşetin ve savaşın sadece medeni insanın bir buluşu değil, doğanın/evrimin (ilkel halin) kendi içinde var olan karanlık bir strateji olduğunu kanıtlayıp "Soylu Vahşi/Masum Doğa" inancını yıkmıştır.'
+  },
+  {
+    title: 'Ataş Harekâtı (Operation Paperclip)',
+    passage: 'İkinci Dünya Savaşı bittiğinde, Nazi Almanyası\'nın V-2 roketlerini tasarlayan, toplama kamplarındaki köle işçileri ölümüne çalıştıran ve binlerce masumun kanı elinde olan Wernher von Braun ve ekibi, savaş suçlusu olarak asılmayı bekliyordu. Ancak ABD hükümeti, Sovyetlerle başlayacak olan Soğuk Savaş\'ta teknolojik üstünlüğü ele geçirmek için ahlakı ve adaleti saniyeler içinde çöpe attı. "Ataş Harekâtı" (Operation Paperclip) adıyla, 1600\'den fazla Nazi bilim insanının geçmiş dosyalarını silerek onları gizlice Amerika\'ya kaçırdılar. Dünün o kanlı savaş suçluları, NASA\'nın en tepe yöneticileri yapıldı ve Apollo programını yöneterek insanları Ay\'a çıkardılar! Bu harekât; devlet aklının ve "bilimsel ilerleme" hırsının, stratejik menfaat söz konusu olduğunda; vicdanı, adaleti ve milyonlarca masumun kanını bir "kâğıt ataşıyla" dosyalayıp nasıl acımasızca (pragmatizmle) aklayabildiğinin tarihteki en iğrenç (ve riyakâr) belgesidir.',
+    questionStem: 'Ataş Harekâtı (Operation Paperclip) olayı, devlet politikaları ve "bilimsel ilerleme" hakkında neyin trajik bir eleştirisidir?',
+    options: [
+      'Roket teknolojisinin sadece savaşlarda kullanılarak sivil havacılığın engellenmesinin',
+      'ABD\'nin Avrupa ülkelerinden gelen beyin göçünü yeterince desteklememesinin',
+      'Devletlerin ve bilimsel pragmatizmin (ilerleme hırsının), kendi stratejik/teknolojik menfaatleri uğruna; adaleti, ahlakı ve savaş suçlarını (kanlı bir geçmişi) gözünü kırpmadan nasıl örtbas edip (riyakârca) aklayabildiğinin',
+      'Nazilerin uzay teknolojisinde aslında Amerikalılardan çok daha geride olduğunun'
+    ],
+    correct: 2,
+    explanation: 'Savaş suçlusu Nazilerin uzay yarışını kazanmak uğruna affedilip NASA\'nın başına getirilmesi; devletlerin menfaat/bilimsel ilerleme hırsı uğruna adaleti ve ahlakı nasıl riyakârca çöpe attığının (aklancılığın) eleştirisidir.'
+  },
+  {
+    title: 'Codex Gigas (Şeytanın İncili)',
+    passage: '13. yüzyılda Bohemya\'da bir manastırda, kuralları çiğnediği için duvarın içine canlı canlı örülerek ölüme mahkûm edilen bir keşiş, af dilemek için o güne kadar görülmemiş devasa bir kitap (dünyanın tüm bilgisini içeren bir İncil) yazmaya söz verir. Üstelik bunu "tek bir gecede" yapacaktır! Kitap (Codex Gigas), gerçekten de ertesi sabah hazır bulunur. Devasa sayfaları 160 eşek derisinden yapılmıştır ve ortasında korkunç boyutta bir Şeytan tasviri vardır (Bu yüzden Şeytanın İncili denir). Efsaneye göre keşiş, kitabı bitiremeyeceğini anlayınca gece ruhunu şeytana satmış ve kitabı ona yazdırmıştır. Modern bilim insanları kitabı incelediğinde kan dondurucu bir gerçeği fark ettiler: Kitabın başından sonuna kadar yazı karakteri, mürekkep yoğunluğu ve stili "milim bile değişmeden" tek bir kişinin elinden çıkmıştı. Oysa bir insanın bu devasa eseri yazması aralıksız 30 yılını almalıydı! Codex Gigas; insanın ölüm korkusu, inancı ve iradesi birleştiğinde, mantığın ve zamanın sınırlarını nasıl imkânsız bir fanatizmle aşabileceğinin o karanlık, çözülemez ve şeytani mührüdür.',
+    questionStem: 'Codex Gigas (Şeytanın İncili) kitabının modern analizleri sonucunda ulaşılan "bilimsel (şaşırtıcı)" bulgu nedir ve neyi sembolize eder?',
+    options: [
+      'Kitabın aslında birden fazla yazar tarafından farklı yüzyıllarda yazılıp birleştirildiğini ve efsanenin kurgu olduğunu',
+      'Kullanılan mürekkebin o dönemde sadece zehirli bitkilerden elde edildiğini ve yazarları öldürdüğünü',
+      'Arasıksız 30 yıl sürmesi gereken bu devasa eserin başından sonuna kadar kusursuzca (milim değişmeden) "tek bir insanın" elinden çıkmış olması; insan iradesinin ve inancının (ölüm korkusuyla) sınırları nasıl imkânsızca zorladığını',
+      'Kitabın içindeki yazıların tamamen rastgele ve anlamsız sembollerden oluştuğunu'
+    ],
+    correct: 2,
+    explanation: '30 yıl sürecek devasa eserin başından sonuna milim değişmeden tek bir kişinin elinden çıkması (bilimsel bulgu); ölüm korkusu ve inancın insan iradesini nasıl imkânsız bir fanatizme ulaştırdığını sembolize eder.'
+  },
+  {
+    title: 'Han van Meegeren (Sahtekârın Zaferi)',
+    passage: '1945 yılında Hollanda\'da ressam Han van Meegeren, paha biçilmez bir "Vermeer" tablosunu Nazi lideri Hermann Göring\'e satarak ülkesinin kültürel mirasına "ihanet etmekten (vatan hainliğinden)" idama mahkûm edildi. Mahkemede kendini kurtarmak için öyle bir itirafta bulundu ki sanat dünyası felç oldu: "Ben vatan haini değilim! Göring\'e sattığım o tablo orijinal bir Vermeer değildi, onu kendi ellerimle ben çizdim, ben bir sahtekârım!" O güne kadar dünyanın en büyük sanat eleştirmenleri o tablonun "Vermeer\'in en büyük şaheseri" olduğuna yemin etmişlerdi. Mahkeme inanmadı, van Meegeren hücresinde gözetim altında yeni bir sahte Vermeer çizerek yeteneğini kanıtladı ve vatan haini olmaktan kurtulup "Nazileri dolandıran halk kahramanı" ilan edildi! Bu olay, sanat dünyasının ve "uzmanların (eleştirmenlerin)" o içi boş kibrini paramparça eder. Eserin estetik güzelliği değil; altına atılan o sahte "imzanın (markanın)" insan algısını nasıl kör edip kandırdığının tarihteki en komik ve dâhiyane tokatıdır.',
+    questionStem: 'Han van Meegeren olayının sanat dünyasındaki "uzmanlara (eleştirmenlere)" yönelttiği asıl felsefi eleştiri nedir?',
+    options: [
+      'Müzayede evlerinin eserleri koruma konusunda güvenlik zafiyeti yaşadığı',
+      'Sanatçıların savaş dönemlerinde sadece para kazanmak için sanat ürettikleri',
+      'Sanat otoritelerinin bir eseri değerlendirirken estetik değere ve kaliteye değil; sadece altındaki o sahte "imzaya (marka değerine)" tapınarak körleştikleri ve kendi uzmanlıklarının aslında ne kadar içi boş bir illüzyon (kibir) olduğu',
+      'Ressamların eski tabloları restore ederken boyaların orijinal yapısını bozdukları'
+    ],
+    correct: 2,
+    explanation: 'Eleştirmenlerin sahte bir tabloyu "şaheser" ilan etmesi; sanat otoritelerinin esere değil "imzaya/markaya" körü körüne taptığını ve uzmanlık kibrinin içi boş bir illüzyon olduğunu kanıtlar.'
+  },
+  {
+    title: 'Büyük Patlama ve Antimadde Asimetrisi',
+    passage: 'Fizik yasalarına göre, 13.8 milyar yıl önce Büyük Patlama (Big Bang) yaşandığında, ortaya eşit miktarda "Madde" ve onun zıttı olan "Antimadde" çıkmalıydı. Madde ve Antimadde karşılaştığı an birbirini yok eder ve geriye sadece saf bir enerji (ışık) kalır. Eğer evren kusursuz çalışsaydı, tüm maddeler ve antimaddeler birbirini yok edecek ve kâinat tamamen boş, ışıktan ibaret ve ruhsuz bir hiçliğe dönecekti! Ancak akılalmaz bir şey oldu: Her bir milyar antimadde parçacığına karşılık, tam bir milyar "artı BİR" madde parçacığı yaratıldı. O birbirini yok eden milyarlarca savaşın ardından geriye sadece o minicik, milyarda birlik "artı madde (kusur/asimetri)" sağ kaldı. Biz, Güneş, yıldızlar, aşık olduğumuz insanlar ve okuduğunuz bu kitap; işte o milyarda birlik kusurun, o eşitsizliğin (asimetrinin) hayatta kalan tortusuyuz. Evrende kusursuzluk (eşitlik) ölüm demektir; hayat ve varoluş, doğanın yaptığı o minicik, o muazzam ve isyankâr "hatanın" (kusurun) ta kendisidir.',
+    questionStem: 'Antimadde Asimetrisi olgusu, "varoluş ve kusursuzluk" kavramları hakkında fiziğin bize öğrettiği hangi felsefi paradoksu açıklar?',
+    options: [
+      'Gezegenlerin sadece Güneş\'ten kopan parçalarla oluştuğunu',
+      'Evrendeki tüm maddelerin aslında zamanla antimaddeye dönüşüp yok olacağını',
+      'Kusursuzluğun (tam eşitliğin) aslında evrenin yok olması (hiçlik) anlamına geldiğini; yaşamın, gerçekliğin ve varoluşumuzun, doğanın yaptığı o "milyarda birlik küçük bir hataya, kusura (asimetriye)" borçlu olduğumuz paradoksunu',
+      'Işık enerjisinin maddeye göre daha üstün ve kalıcı bir form olduğunu'
+    ],
+    correct: 2,
+    explanation: 'Madde-antimadde eşitliğinin birbirini yok edeceği (kusursuzluğun ölüm olduğu); varoluşumuzun o arta kalan minik hataya/asimetriye (kusura) bağlı olduğu paradoksunu açıklar.'
+  },
+  {
+    title: 'Balina Leşinin Düşüşü (Whale Fall)',
+    passage: 'Okyanusun binlerce metre altındaki karanlık, basınçlı ve dondurucu derinliklerde hayat neredeyse imkânsızdır; orası devasa bir çöldür. Ancak yukarıda ölen devasa bir balinanın bedeni o karanlık çukura düştüğünde (Whale Fall), evrenin en şiirsel biyolojik mucizesi başlar. O tek bir balina ölüsü, o ıssız karanlıkta bir anda vahalar (şenlik) yaratır. Önce köpekbalıkları eti koparır, ardından kemik solucanları, bakteriler ve yengeçler gelir. Bir balinanın tek bir ölü bedeni, o karanlık cehennemin ortasında tam 50 yıl boyunca aralıksız yaşayacak yepyeni ve devasa bir ekosistemi tek başına besler! Okyanusun dibi bize şu felsefi gerçeği fısıldar: Ölüm, sadece bir bitiş, bir yok oluş veya bir trajedi değildir; doğru (doğal) bağlamda gerçekleştiğinde ölüm, binlerce yeni hayatı (tohumu) besleyen, onları karanlığın kalbinde yeniden var eden doğanın en cömert ve en görkemli "doğum" sahnesidir.',
+    questionStem: 'Balina Leşi (Whale Fall) olgusu, "Ölüm" kavramına dair nasıl bir evrensel (ve ekolojik) bakış açısı sunmaktadır?',
+    options: [
+      'Büyük deniz canlılarının ölümlerinin okyanus sularını zehirleyerek felaketler yarattığı',
+      'Ölümün sadece sonlu ve trajik bir yok oluş (bitiş) olmadığı; doğanın döngüsü içinde, karanlıkta ve hiçlikte bile binlerce yeni yaşamı besleyen, yeşerten ve var eden en cömert (en görkemli) "doğum/başlangıç" eylemi olduğu',
+      'Okyanus tabanındaki canlıların yüzeye çıkamayacak kadar basınca bağımlı olduğu',
+      'Balina avcılığının deniz ekosistemini korumak için aslında gerekli bir eylem olduğu'
+    ],
+    correct: 1,
+    explanation: 'Ölen balinanın okyanus dibinde 50 yıl boyunca yeni bir ekosistemi beslemesi; ölümün sadece bir son değil, doğada binlerce yeni hayatı var eden cömert bir "doğum/başlangıç" eylemi olduğunu anlatır.'
+  },
+  {
+    title: 'Kutup Yıldızı\'nın Kayması (Presesyon)',
+    passage: 'Binlerce yıl boyunca denizciler, kâşifler ve çölleri aşan kervanlar yönlerini bulmak için gökyüzündeki o sarsılmaz, yeri asla değişmeyen mutlak rehbere güvendiler: Kutup Yıldızı (Polaris). O, gökyüzünün çivisi, değişmezliğin ve sadakatin evrensel sembolüydü. Oysa modern astronomi, Dünya\'nın kendi ekseni etrafında dönerken tıpkı yavaşlayan bir topaç gibi yalpaladığını (Presesyon) kanıtladı. Bu yalpalanma yüzünden Dünya\'nın kutup ekseni milim milim kaymaktadır. Sonuç mu? 5000 yıl önce Mısırlıların Kutup Yıldızı Polaris değil, "Thuban" yıldızıydı. Ve 12.000 yıl sonra bizim o sarsılmaz rehberimiz yerini "Vega" yıldızına bırakacaktır! Kutup Yıldızı\'nın o yavaş ve dilsiz kayışı; insanoğlunun inandığı, güvendiği ve sığındığı "mutlak, ebedi ve değişmez" hiçbir rehberin (veya inancın) olmadığını; en sarsılmaz sandığımız doğruların bile, evrenin o baş döndürücü ve devasa zaman çarkı içinde eninde sonunda nöbetini (yerini) terk edecek geçici birer illüzyon olduğunu yüzümüze vurur.',
+    questionStem: 'Kutup Yıldızı\'nın zamanla değişmesi (Presesyon) olgusu, yazar tarafından hangi felsefi eleştiri (veya farkındalık) için bir metafor olarak kullanılmıştır?',
+    options: [
+      'Antik dönem denizcilerinin aslında çok yanlış rotalarda seyahat ederek kaybolduklarına',
+      'Yıldızların yaydıkları ışığın zamanla azalarak yok olduğu bilimsel gerçeğine',
+      'İnsanoğlunun evrende inandığı, güvendiği ve "sabit, mutlak, ebedi" sandığı tüm rehberlerin (doğruların) aslında sadece o anlık zaman dilimine ait geçici ve değişken illüzyonlar (nöbetçiler) olduğuna',
+      'Dünya\'nın dönüş hızının yavaşlayarak yerçekimini tamamen zayıflatacağına'
+    ],
+    correct: 2,
+    explanation: 'En sabit sandığımız Kutup Yıldızının bile yer değiştirmesi; insanoğlunun inandığı tüm "mutlak ve ebedi (değişmez) doğruların/rehberlerin" aslında zamanın çarkında geçici ve değişken illüzyonlar olduğu metaforudur.'
+  },
+  {
+    title: 'Karneades\'in Tahtası (Hayatta Kalma Ahlakı)',
+    passage: 'MÖ 2. yüzyılda Yunan filozofu Karneades, ahlak felsefesinin kalbini söken şu meşhur düşünce deneyini kurgular: "İki denizci gemi kazası geçirip okyanusun ortasına düşer. İkisi birden, suyun üzerinde yüzen bir tahta parçasına tutunur. Ancak tahta ikisinin ağırlığını kaldıramayacak kadar küçüktür ve batmaya başlar. Denizcilerden biri, hayatta kalmak için (kendi canını kurtarmak adına) diğer denizciyi iter, onu boğulmaya terk eder ve tek başına o tahtaya tutunarak kurtulur." Soru şudur: Suya iten denizci bir katil midir, ahlaksız mıdır? Yoksa doğanın en temel kuralı olan "hayatta kalma içgüdüsünün" haklı (ve yasal) bir uygulayıcısı mıdır? Karneades\'in Tahtası bize o dondurucu gerçeği fısıldar: O sıcak salonlarımızda, tok karnımızla yazdığımız o yüce, dokunulmaz ve erdemli "ahlak yasaları"; okyanusun dondurucu sularında, ölümle burun buruna gelinen o son çaresizlik saniyesinde kelimenin tam anlamıyla sulara gömülüp (geçersiz kalıp) yerini içimizdeki o vahşi, acımasız ve bencil canavara bırakmaya mahkûmdur.',
+    questionStem: 'Karneades\'in Tahtası düşünce deneyi, "Ahlak" kavramının sınırları hakkında neyi savunmaktadır?',
+    options: [
+      'Gemicilik ve denizcilik yasalarının antik çağlardan beri çok yetersiz olduğunu',
+      'İnsanların her zaman kendi hayatlarından çok başkalarının hayatını kurtarmaya meyilli olduğunu (diğerkâmlığı)',
+      'İnsanın konfor ortamında ürettiği "yüce ahlak kurallarının"; ölüm tehlikesi, çaresizlik ve hayatta kalma içgüdüsü (varoluş savaşı) devreye girdiğinde tamamen geçersiz kalarak çökebileceğini (ahlakın kırılganlığını)',
+      'Deniz kazalarında her zaman en fiziksel güce sahip olanın hayatta kalacağı evrimsel kuralını'
+    ],
+    correct: 2,
+    explanation: 'Adamın arkadaşını itip tahtayı alması; salonlarda yazılan o yüce ahlak yasalarının, ölüm/hayatta kalma anında sulara gömülüp geçersiz (kırılgan) kalacağını savunur.'
+  },
+  {
+    title: 'Gattaca ve Kusursuzluk Kâbusu (CRISPR)',
+    passage: 'Genetik mühendisliğinin (CRISPR gibi) hızla ilerlediği modern çağımız, 1997 yapımı bilimkurgu şaheseri "Gattaca"yı bir kehanete dönüştürdü. O dünyada, bebekler doğmadan önce laboratuvarlarda tasarlanmaktadır; hastalıklı, zayıf veya kısa boylu genler silinmekte, hepsi birer kusursuz "Yunan heykeli (Valid)" gibi doğmaktadır. Genetiğiyle oynanmamış (aşkla doğan) çocuklar ise "Geçersiz (In-Valid)" ilan edilip toplumdan dışlanmaktadır. Ancak Gattaca bize kusursuzluğun zaferini değil, kâbusunu gösterir. Çünkü o laboratuvar bebekleri hastalıksızdır ama ruhsuzdur, tutkudan yoksundur; her şeyleri önceden belirlendiği için hayal kurma ve isyan etme yetilerini kaybetmişlerdir. İnsanı o görkemli, sınırları yıkan ve sanat üreten "insan" yapan şey onun genetik kusursuzluğu değildir; tam aksine, zaafları, hastalıkları, zayıflıkları ve o zayıflıkları aşmak için kendi içinde yaktığı o umutsuz ama destansı isyan (irade) ateşidir. Kusursuzluk; insanın o kırılgan, kaotik ve şiirsel ruhuna vurulmuş en steril prangadır.',
+    questionStem: 'Gattaca evrenindeki genetik mühendislik kurgusu (kusursuzluk arayışı), insan doğası hakkında yazar tarafından nasıl eleştirilmektedir?',
+    options: [
+      'Tıbbi gelişmelerin sadece zenginlerin tekelinde kalıp sınıfsal bir adaletsizlik yaratması eleştirisiyle',
+      'Hastalıklardan arındırılmış bir toplumun ekonomik olarak daha zayıf ve tembel hale geleceği öngörüsüyle',
+      'Genetik kusursuzluğun (tasarımın); insanı insan yapan (ve sanat/isyan üreten) o kırılganlıkları, zaafları ve iradeyi yok ederek, bizi ruhsuz, tutkusuz ve steril birer robotik köleye dönüştüren (insani özü çalan) bir kâbus olduğu teziyle',
+      'Genleriyle oynanmış çocukların spor müsabakalarında doğal insanlara karşı haksız rekabet yaratmasıyla'
+    ],
+    correct: 2,
+    explanation: 'Kusursuz heykeller gibi doğan çocukların tutkusuz/ruhsuz olması; genetik kusursuzluğun insanın zaaflarını (ve ondan doğan isyanını/ruhunu) yok ederek onu steril bir köleye çevirdiği eleştirisidir.'
+  },
+  {
+    title: 'Aylak Sınıfın Teorisi (Veblen ve Bronzlaşmak)',
+    passage: 'Sosyolog Thorstein Veblen, "Aylak Sınıfın Teorisi"nde statü ve zenginlik göstergelerinin zamanla ne kadar absürt şekillerde değiştiğini anlatır. 19. yüzyılın başlarında, Avrupa ve Amerika\'da "soluk ve bembeyaz bir ten" en büyük zenginlik ve soyluluk belirtisiydi. Neden mi? Çünkü sadece tarlada köle gibi çalışan fakir işçilerin derisi güneşten yanar (bronzlaşır); zengin soylular ise şemsiyelerin altında güneşe çıkmadan oturabilirdi. Ancak Sanayi Devrimi ile işçiler kapalı ve karanlık fabrikalarda (güneşsiz) köle gibi çalışmaya başlayınca durum tamamen tersine döndü! Artık soluk tenli olmak fakir fabrika işçisi (hasta) olmak demekti. Zenginler (statü sahipleri) aniden deniz kenarlarına tatile gitmeye ve "bronzlaşmaya" başladılar. Çünkü bronz bir ten, "Benim karanlık fabrikalarda çalışmaya ihtiyacım yok, sahilde aylaklık yapacak (tatil yapacak) boş vaktim ve param var!" demenin yeni ve küstah göstergesiydi. İnsanlığın "güzellik" dediği o sahte maske, aslında dönemin ekonomik kibrinden (sınıf farkından) başka bir şey değildir.',
+    questionStem: 'Veblen\'in "Aylak Sınıfın Teorisi"ne göre ten rengi algısının (soluk tenden bronz tene) değişmesi, güzellik algısı hakkında neyi ifşa eder?',
+    options: [
+      'İnsanların güneş ışığının D vitamini sağladığını tıbben geç keşfettiğini',
+      'Toplumların güzellik (ve estetik) algısının aslında doğal bir zevk olmadığını; dönemin çalışma şartlarına göre şekillenen ve sadece "benim çalışmaya ihtiyacım yok (boş vaktim var)" kibrini yansıtan ekonomik bir "statü ve gösteriş" aracı olduğunu',
+      'Tarım işçilerinin zamanla fabrikalara göre daha çok para kazandığını',
+      'Avrupa ikliminin Sanayi Devrimi ile birlikte çok daha bulutlu ve kapalı bir hale geldiğini'
+    ],
+    correct: 1,
+    explanation: 'Soluk tenin tarlaya, bronz tenin fabrikaya göre statü sembolü olması; güzelliğin/estetiğin aslında doğal değil, dönemin ekonomik şartlarına göre "aylaklık (çalışmamak) ve statü göstergesi" (kibir) olduğunu ifşa eder.'
+  },
+  {
+    title: 'Sokrates ve Yazının İcadına İsyan',
+    passage: 'Modern çağda bizler kitapları, ansiklopedileri ve yazıyı "medeniyetin" en büyük hafızası olarak kutsarız. Oysa felsefenin atası Sokrates (ve onu anlatan Platon\'un Phaidros diyalogu) yazının icadına büyük bir nefret ve korkuyla karşı çıkmıştır! Sokrates\'e göre yazı, insanın zihnini geliştiren bir ilaç değil, aksine onu felç eden sinsi bir zehirdir. O şöyle der: "İnsanlar yazıyı kullandıklarında artık bir şeyi akıllarında tutmaya (ezberlemeye) gerek duymayacaklar. Hafızalarını çalıştırmayacaklar; bilgilerini kendi içlerinde (ruhlarında) değil, dışarıdaki ölü ve soğuk kâğıt parçalarının üzerinde taşıyacaklar. Onlar bilgeliğe sahip olduklarını sanacaklar ama aslında sadece kelimelerin sahte ve ruhsuz gölgelerine (bilgi illüzyonuna) sahip olan içi boş birer kaba dönüşecekler." Sokrates\'in bu 2500 yıllık uyarısı; günümüzde beynimizi tamamen akıllı telefonlara ve Google arama çubuklarına (dış hafızaya) teslim edip, hiçbir şeyi kendi zihnimizde tutamadığımız o "dijital bunamamızın ve içi boşalmış bilgelik kibrimizin" en korkutucu kehanetidir.',
+    questionStem: 'Sokrates\'in "Yazının İcadına" karşı çıkmasındaki temel felsefi gerekçesi parçada nasıl ifade edilmiştir?',
+    options: [
+      'Yazılı metinlerin zamanla krallar tarafından sansürlenecek ve yakılacak olması ihtimali',
+      'Kelimelerin kâğıda dökülmesinin şiirin ve edebiyatın o müzikal (sözlü) estetiğini tamamen bozması',
+      'Yazının, insanların hafızasını tembelleştirerek bilgiyi içselleştirmelerini (ruhlarına katmalarını) engellemesi ve onlara gerçek bilgelik yerine sadece dışarıda duran "sahte bir bilgi kibri (illüzyonu)" vermesi',
+      'Papirüs ve kâğıt üretiminin dönemin ekonomik şartlarına göre çok maliyetli bir teknoloji olması'
+    ],
+    correct: 2,
+    explanation: 'Sokrates\'in, yazının insan hafızasını tembelleştirip bilgiyi dışarıdaki "ölü kâğıtlara" yükleterek insanı "içi boş bir kaba (sahte bilgeliğe)" çevireceğini savunması asıl gerekçesidir.'
+  },
+  {
+    title: 'Büyük Şikago Yangını (Felaketin Dikey Evrimi)',
+    passage: '1871 yılının sıcak bir Ekim akşamında, Şikago şehrinde küçük bir ahırda başlayan yangın (efsaneye göre bir ineğin feneri devirmesiyle), tamamı ahşaptan inşa edilmiş olan o devasa şehri üç gün boyunca cehennem gibi yaktı. Şehrin üçte biri harabeye döndü, yüz bin kişi evsiz kaldı. Ancak o küllerin arasından, mimari tarihin en büyük devrimi doğdu! Şehir kül olduğu için mühendisler ve mimarlar, şehri yatay olarak ahşapla yeniden kurmak yerine; yepyeni, yanmaz, güçlü bir iskelet sistemi (Çelik Konstrüksiyon) kullanarak binaları gökyüzüne doğru (dikey olarak) inşa etmeye başladılar. Dünyanın "ilk Gökdelenleri" işte o devasa enkazın içinden doğdu. Büyük Şikago Yangını bize evrensel bir gerçeği kanıtlar: Bazen tarihteki o en korkunç, en yıkıcı alevler (felaketler), insanlığı köhne kalıplarından kurtarıp onu gökyüzüne tırmanmaya zorlayan en görkemli (ve zorunlu) evrimsel şok dalgasıdır.',
+    questionStem: 'Büyük Şikago Yangını olayından çıkarılabilecek sosyo-tarihsel (ve felsefi) sonuç nedir?',
+    options: [
+      'Şehir planlamasında hayvanların ve ahırların şehir dışına çıkarılması gerektiği zorunluluğu',
+      'Devasa bir felaketin (yıkımın), sadece bir trajedi değil; aynı zamanda eski (köhne) kalıpları yakarak insanlığı zorunlu, yepyeni ve çok daha görkemli bir yaratıcılığa (gökdelenlerin dikey evrimine) zorlayan bir sıçrama (katalizör) olması',
+      'Çelik kullanımının ahşaba göre aslında çok daha ucuz ve kolay işlenebilir bir madde olduğunun anlaşılması',
+      'Amerika\'nın yangınlardan sonra Avrupalı mimarlardan yardım istemek zorunda kalması'
+    ],
+    correct: 1,
+    explanation: 'Yangının ahşap şehri kül edip, insanları çelik iskeletle gökdelenler inşa etmeye itmesi; felaketlerin eski kalıpları yıkarak yepyeni ve görkemli bir evrimsel sıçramaya (yaratıcılığa) zorlayan bir güç olduğunu gösterir.'
+  },
+  {
+    title: 'Herculaneum Parşömenleri (Geçmişin Dijital Dirilişi)',
+    passage: 'MS 79 yılında Vezüv yanardağı patladığında sadece Pompei değil, komşu sahil kasabası Herculaneum da küllerin altında kaldı. O kasabada lüks bir villanın kütüphanesindeki yüzlerce paha biçilmez parşömen rulosu, 500 derecelik ısıyla anında yanıp simsiyah "kömür kütlelerine" dönüştü. Arkeologlar yüzyıllar boyunca bu kömürleşmiş tomarları açmaya çalıştıkça, o narin kâğıtlar ellerinde ufalanıp küle döndü (okunamadı). Ta ki modern teknoloji devreye girene kadar! Bilim insanları o kömür rulolarını fiziksel olarak hiç açmadan, yüksek X-ışınları (parçacık hızlandırıcılar) ve "Yapay Zekâ" kullanarak, kömürün iç kıvrımlarındaki görünmez mürekkep izlerini sanal ortamda harf harf okumayı başardılar. Bu olay; geçmişin o donmuş ve yanmış sessizliğinin, modern aklın ve ışığın teknolojisiyle 2000 yıl sonra yeniden konuşmaya başladığı, tarihin ölümden sanal olarak diriltildiği o en epik (ve sarsılmaz) bilimsel diriliştir.',
+    questionStem: 'Herculaneum Parşömenleri\'nin günümüzde okunabilmesi süreci, tarih ve modern teknoloji arasındaki ilişkiyi nasıl tanımlar?',
+    options: [
+      'Tarihçilerin eski dilleri çevirmede modern bilgisayarlardan hala daha iyi olduklarını',
+      'Yanardağ patlamalarının aslında antik eserleri tamamen yok etmeyip sadece koruma altına aldığını',
+      'Fiziksel olarak yok olmuş (kömürleşmiş) ve aşılamaz sanılan o suskun tarihsel engelin; dokunmaya gerek kalmadan, ileri teknoloji ve yapay zekâ sayesinde "sanal olarak (mucizevi bir şekilde)" çözülüp (diriltilip) tarihin yeniden konuşturulmasını',
+      'Antik Roma edebiyatının Yunan felsefesinden çok daha geride kalmış basit metinlerden oluştuğunu'
+    ],
+    correct: 2,
+    explanation: 'Dokunulduğunda dağılan kömür rulolarının X-ışınları ve yapay zekâyla açılmadan (sanal olarak) okunması; aşılamaz sanılan geçmişin/ölümün, modern teknoloji sayesinde çözülüp diriltildiğini tanımlar.'
+  },
+  {
+    title: 'Sykes-Picot: Çizgilerle Yaratılan Cehennem',
+    passage: 'Birinci Dünya Savaşı\'nın ortasında (1916), İngiliz diplomat Mark Sykes ve Fransız diplomat François Georges-Picot, gizlice bir odaya kapandılar. Önlerine Ortadoğu\'nun koca haritasını koydular ve ellerine bir "cetvel" alıp, o binlerce yıllık dağları, nehirleri ve çölleri dümdüz (suni) çizgilerle ikiye böldüler. Çizdikleri o düz çizgiler (sınırlar); bölgede yaşayan Arapların, Kürtlerin, Şiilerin veya Sünnilerin etnik ve kültürel gerçekliklerini (dağılımlarını) zerre kadar umursamıyordu; sadece petrolü ve sömürge menfaatlerini hesaplıyordu. Cetvelle çizilen bu "suni sınırlar", birbirine düşman kabileleri aynı devlete tıktı, aynı aileleri ise tel örgülerle böldü. Bugün Ortadoğu\'da bitmek bilmeyen o kanlı kaos, savaşlar ve bitmeyen gözyaşları; aslında kâğıt üzerinde, rahat koltuklarında oturan iki kibirli Batılı diplomatın, insan hayatını ve coğrafyayı sadece bir "mühendislik oyunu (kalem izi)" sanarak yarattığı o yüzyıllık yapay cehennemin kanayan faturasıdır.',
+    questionStem: 'Sykes-Picot Antlaşması (cetvelle çizilen sınırlar), Ortadoğu coğrafyası ve emperyalizm bağlamında neyin en trajik kanıtıdır?',
+    options: [
+      'İngiliz ve Fransız diplomatların o dönemde haritacılık biliminde çok geri kalmış olduklarının',
+      'Bölgedeki halkların kendi aralarında anlaşamayarak dışarıdan bir otoriteye ihtiyaç duyduklarının',
+      'Emperyalist (sömürgeci) kibrin; bölgenin kültürel ve tarihi (organik) gerçekliklerini hiçe sayarak masa başında kâğıda çizdiği o "suni (düz) çizgilerin", milyonlarca insanı yüzyıllık kanlı bir kaosa ve yapay bir cehenneme hapsettiğinin',
+      'Ortadoğu\'daki petrol kaynaklarının o dönemde henüz tam olarak keşfedilemediğinin'
+    ],
+    correct: 2,
+    explanation: 'Kültürel gerçekliği yok sayıp sadece çıkarlar için cetvelle çizilen o suni haritaların; emperyalist kibrin, insanları nasıl yüzyıllık bir kaosa (yapay bir cehenneme) hapsettiğinin kanıtı olduğu vurgulanır.'
+  },
+  {
+    title: 'Solvay Konferansı (Zekânın Fotoğrafı)',
+    passage: '1927 yılında Belçika\'da düzenlenen Solvay Konferansı\'nda çekilen o meşhur fotoğraf, insanlık tarihinin ulaştığı en yoğun ve en ağır "zekâ" toplanmasıdır. Bir merdivende poz veren 29 kişinin içinde Albert Einstein, Marie Curie, Max Planck, Niels Bohr, Erwin Schrödinger ve Werner Heisenberg gibi bilim tarihinin tanrıları bir aradaydı ve bu kişilerin 17\'si Nobel ödüllüydü! Ancak o fotoğraf sadece dâhilerin bir pozu değildi; o fotoğraf, evrene bakışımızın parçalanıp yeniden yazıldığı o en kanlı felsefi savaşın (Kuantum mekaniği tartışmalarının) arenasıydı. Einstein o masada "Tanrı evrenle zar atmaz!" diyerek evrenin belirlenebilir (kesin) kuralları olduğuna isyan ediyor; Niels Bohr ise ona "Tanrı\'ya ne yapacağını söylemeyi bırak!" diye kükrüyordu. O tek bir fotoğraf karesi; evrenin o kusursuz sanılan devasa saat mekanizmasının sökülüp, yerine o tuhaf, öngörülemez ve olasılıklara dayalı Kuantum denizinin (kaosun) getirildiği o tarihi cinayetin (ve devrimin) donmuş belgesidir.',
+    questionStem: '1927 Solvay Konferansı fotoğrafının çekildiği o atmosfer, bilim ve felsefe tarihi açısından neyin "arena (çarpışma)" noktasıdır?',
+    options: [
+      'Avrupa ülkelerinin Birinci Dünya Savaşı sonrasında barış ve kardeşlik mesajı vermek için bir araya gelmesinin',
+      'Einstein\'ın (mutlak/belirlenimci evren) görüşleri ile Kuantum fiziğinin (olasılık/kaos) görüşlerinin çarpıştığı; evren algımızın kökünden parçalanıp yeniden yazıldığı (klasik fiziğin tahtının devrildiği) o büyük entelektüel savaşın',
+      'Bilim insanlarının sanat ve felsefeyi tamamen reddederek sadece matematiksel verilere tapınmasının',
+      'Kadın bilim insanlarının (Marie Curie gibi) akademi dünyasında ilk kez kabul edilmeye başlanmasının'
+    ],
+    correct: 1,
+    explanation: 'Einstein ("Tanrı zar atmaz") ile Bohr ("Tanrıya ne yapacağını söyleme") arasındaki tartışmanın (mutlak evren vs kuantum/olasılık); evren algısının parçalanıp yeniden yazıldığı (klasik fiziğin yıkıldığı) o en büyük entelektüel savaş olduğu vurgulanır.'
+  },
+  {
+    title: 'Mesa Verde (İhtişamı Terk Edebilmek)',
+    passage: 'Kuzey Amerika\'da günümüz Colorado sınırlarında yaşayan kadim Anasazi halkı, 12. yüzyılda uçurumların ve devasa kayalıkların içine, ulaşılması imkânsız ama bir o kadar da muazzam çok katlı taş saraylar (Mesa Verde) inşa ettiler. İnanılmaz bir mimari dehayla doğanın sarp bağrına sığınmışlardı. Ancak 1300\'lü yıllarda çok tuhaf bir şey oldu. Büyük ve uzun süreli bir kuraklık baş gösterdiğinde; bu halk o devasa, kan ter içinde inşa ettikleri şaheser kalelerine saplanıp kalmak, orada açlıktan (inatla) ölmek yerine; o muhteşem şehirlerini, eşyalarını ve tapınaklarını arkalarına bile bakmadan "bir gecede" sessizce terk ettiler ve sırra kadem bastılar. Mesa Verde\'nin o boş taş odaları, insanoğluna o en zor (ve en bilgece) felsefeyi fısıldar: Gerçek güç, bir şeyler inşa edip ona mülkiyet kibriyle (ölümüne) sarılmak değildir. Asıl güç ve bilgelik; doğa seni uyardığında, kendi ellerinle yaptığın o en ihtişamlı (ve kibirli) eseri bile hayatta kalmak uğruna "terk edebilme" ve vazgeçebilme erdemidir.',
+    questionStem: 'Anasazi halkının Mesa Verde\'deki devasa (ve korunaklı) şehirlerini terk edip gitmesi, insan kibri ve varoluşu hakkında nasıl bir "bilgelik" dersi verir?',
+    options: [
+      'Dağlık ve kayalık bölgelerin insan sağlığı (oksijen) açısından aslında çok zararlı olduğunu',
+      'Mimari yapıların her zaman düşman kabilelerin saldırılarına karşı yetersiz kalacağını',
+      'İnsanın inşa ettiği (ve sahip olduğu) o en görkemli, eşsiz ve kibirli mülkiyete inatla (ve ölümüne) sarılmak yerine; doğanın kanunları (kuraklık) karşısında hayatta kalmak için o ihtişamdan "vazgeçebilme (terk edebilme)" erdemine (bilgeliğine) sahip olduğunu',
+      'Tarımsal aletlerin gelişmemesinin göçebe yaşamı kalıcı hayattan daha üstün kıldığını'
+    ],
+    correct: 2,
+    explanation: 'Emeği ve ihtişamı (kibri) bir kenara bırakıp sırf hayatta kalmak için şehri terk edebilmeleri; inatla mülkiyete/kibre sarılmak yerine vazgeçebilme erdeminin (bilgeliğin) asıl güç olduğunu anlatır.'
+  },
+  {
+    title: 'Fermat\'nın Son Teoremi (Aklın Sınırları)',
+    passage: '1637 yılında Fransız matematikçi Pierre de Fermat, okuduğu bir kitabın kenarına basit gibi görünen bir denklem yazdı (xn + yn = zn, n>2 için tamsayı çözümü yoktur) ve altına şu o efsanevi, kışkırtıcı (ve kibirli) notu düştü: "Bu teoremin gerçekten de harika bir kanıtını buldum, ama kitabın bu kenar boşluğu onu yazmak için çok dar." Bu tek bir cümle, o günden sonra dünyanın en parlak beyinlerini, Euler\'den Gauss\'a kadar tüm dâhileri 358 yıl boyunca çıldırttı! Binlerce matematikçi o "dar kenar boşluğuna sığmayan" ispatı bulmak için ömrünü tüketti, delirip gidenler oldu. Fermat belki gerçekten çözmüştü, belki de büyük bir şaka yapmıştı. Teorem ancak 1995 yılında Andrew Wiles tarafından 130 sayfalık, modern (Fermat\'ın o dönemde bilmesinin imkânsız olduğu) matematiği kullanarak çözülebildi. Fermat\'ın Son Teoremi; basit bir notun (ve küçük bir kibrin), koca bir insanlık aklını asırlar boyunca kendi sınırlarında nasıl çaresizce kırbaçlayıp, uykusuz ve takıntılı bir zindana (labirente) hapsedebildiğinin en şiirsel (ve zalim) kanıtıdır.',
+    questionStem: 'Fermat\'nın Son Teoremi\'nin 358 yıl boyunca çözülememesi (ve Fermat\'ın kenar notu), matematik ve insan aklı hakkında neyin trajikomik bir metaforudur?',
+    options: [
+      'Matematik biliminin diğer bilim dallarına göre (fizik ve kimya) çok daha yavaş ilerleyen sıkıcı bir dal olmasının',
+      'Basit gibi görünen kışkırtıcı bir cümlenin (küçük bir kibrin); dünyanın en üstün zekâlarını bile yüzlerce yıl boyunca uykusuz, takıntılı ve içinden çıkılmaz bir akıl labirentine (çaresizliğe) hapsederek onların sınırlarıyla alay edebilmesinin',
+      'Eski çağlardaki bilim insanlarının modern bilim insanlarına göre zihinsel (IQ) olarak çok daha üstün kapasitelere sahip olduğunun mutlak ispatı',
+      'Matematiksel formüllerin zamanla geçerliliğini yitirerek tamamen anlamsız sayılara dönüştüğünün'
+    ],
+    correct: 1,
+    explanation: 'Fermat\'ın "yerim dar" notunun dâhileri 358 yıl çıldırtması; basit ve kışkırtıcı bir kibrin, insan aklını nasıl takıntılı, çaresiz ve içinden çıkılmaz bir zindana (labirente) hapsedip onunla alay edebildiğinin metaforudur.'
+  }
+];
+
+export const felsefeParagrafSorulari31: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_31.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_31[idx];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-felsefe31-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
 // paragrafTests.ts dosyasının hata vermemesi için iki listeyi birleştirip eski adıyla dışa aktarıyoruz:
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari,
@@ -8385,7 +8662,8 @@ export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...felsefeParagrafSorulari27,
   ...felsefeParagrafSorulari28,
   ...karisikParagrafSorulari29,
-  ...felsefeParagrafSorulari30
+  ...felsefeParagrafSorulari30,
+  ...felsefeParagrafSorulari31
   
   
 ];
