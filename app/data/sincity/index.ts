@@ -6136,6 +6136,839 @@ export const karisikParagrafSorulari22: BilimParagrafQuestion[] = Array.from({ l
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
+const PARAGRAPH_THEMES_23 = [
+  {
+    title: 'Kadavra Sinodu (Ölümün Yargılanması)',
+    passage: 'MS 897 yılında Roma, tarihinin en korkunç, en absürt mahkemesine sahne oldu. Papa VI. Stephanus, siyasi intikam uğruna dokuz ay önce ölmüş olan eski Papa Formosus\'un çürümüş cesedini mezarından çıkarttırdı. Cesede papalık kıyafetleri giydirildi, tahta oturtuldu ve bir avukat atanarak resmi bir mahkemede yargılandı! Öfkeli Papa, tahtta sessizce çürüyen cesede bağırıp çağırarak onu suçlu buldu, kutsal parmaklarını kestirdi ve cesedi Tiber Nehri\'ne attırdı. "Kadavra Sinodu" olarak bilinen bu olay; mutlak otoritenin ve siyasi kinin (intikam hırsının), aklı ve mantığı nasıl tamamen yok edip, adaleti kelimenin tam anlamıyla ölümden bile korkunç, hastalıklı bir tiyatroya çevirebileceğinin en karanlık kanıtıdır.',
+    questionStem: 'Kadavra Sinodu olayı, siyasi otorite ve adalet kavramlarına dair nasıl bir felsefi tablo sunmaktadır?',
+    options: [
+      'Antik Roma\'da adalet sisteminin her zaman delillere dayanarak kusursuz işlediğini',
+      'Orta Çağ papalarının tıp ve anatomi bilimlerine çok büyük önem verdiğini',
+      'Kontrolsüz siyasi kinin ve mutlak otoritenin, mantığı ve ahlakı tamamen felç ederek adaleti hastalıklı, absürt ve ölümün (gerçekliğin) sınırlarını bile aşan bir kurguya (tiyatroya) dönüştürdüğünü',
+      'Ölümden sonraki hayatın Hristiyanlık inancında mahkemelerle başladığını'
+    ],
+    correct: 2,
+    explanation: 'Ölü bir cesedin yargılanıp parmaklarının kesilmesi; siyasi kinin adaleti mantık dışı, hastalıklı ve absürt bir tiyatroya çevirdiğini kanıtlar.'
+  },
+  {
+    title: 'Ölü İnternet Teorisi (Dead Internet Theory)',
+    passage: 'Sosyal medyada geziniyor, binlerce beğeni, yorum ve tartışma görüyorsunuz. Ancak ya bunların çoğu aslında gerçek değilse? "Ölü İnternet Teorisi", 2016\'dan itibaren internetin büyük bir kısmının insanlardan değil; yapay zekâ botlarından, sahte hesaplardan ve algoritmalar tarafından yönetilen yankı odalarından oluştuğunu savunur. Bir bot içerik üretir, başka bir bot onu beğenir, bir diğeri altına öfkeli bir yorum yazar. İnsanoğlu, milyarlarca insanın bağlandığı bu dijital meydanda, aslında sadece kodların kendi kendisiyle konuştuğu, devasa ve ruhsuz bir "hayalet kasabada" kendi yankısını dinlemektedir. Teknoloji bizi dünyaya bağlamamış; aksine, makinelerin oynadığı sahte bir tiyatroda bizi yapayalnız ve sağır edici bir dijital illüzyona hapsetmiştir.',
+    questionStem: 'Ölü İnternet Teorisi, modern insanın dijital dünyadaki konumu hakkında neyi iddia etmektedir?',
+    options: [
+      'İnternet altyapısının eski nesil kablolar yüzünden sık sık çökme tehlikesi yaşadığını',
+      'İnsanların sosyal medyada eskisinden daha uzun ve anlamlı yazılar okumaya başladığını',
+      'İnsanların tüm dünyayla bağlandığını sanırken, aslında yapay zekâların (botların) kendi aralarında konuştuğu devasa, sahte ve ruhsuz bir illüzyonun (hayalet kasabanın) içinde yapayalnız kaldığını',
+      'Devletlerin internet kullanımını tamamen yasaklamak için gizli planlar yaptığını'
+    ],
+    correct: 2,
+    explanation: 'İnternetin botlar ve algoritmalarla dolu bir hayalet kasabaya dönüştüğü iddiası; insanın bağlandığını sanırken aslında sahte bir illüzyon içinde yapayalnız kaldığını savunur.'
+  },
+  {
+    title: 'Buridan\'ın Eşeği (Karar Felci)',
+    passage: '14. yüzyıl filozofu Jean Buridan\'ın öğrencileri tarafından kurgulanan efsanevi bir mantık paradoksu vardır: Bir eşek, hem çok aç hem de çok susuzdur. Eşit uzaklıkta, eşit büyüklükte ve tamamen aynı çekicilikte bir yığın saman ile bir kova suyun tam ortasına bırakılır. Eşek, tamamen mantıklı ve rasyonel bir varlık olduğu için, hangisine önce gideceğine dair mantıksal bir "tercih sebebi" bulamaz. İki seçenek de kusursuz bir dengeye sahip olduğundan karar veremez ve kusursuz dengenin ortasında donup kalarak açlıktan ve susuzluktan ölür! "Buridan\'ın Eşeği", insan zihninin "seçim yapma" mekanizmasını sorgular: Bazen en kusursuz ve rasyonel analiz bile insanı kurtaramaz; bizi eyleme geçiren (hayatta tutan) şey salt mantık değil, o mantığın içindeki o küçük, irrasyonel duygusal dürtüdür (özgür iradedir).',
+    questionStem: 'Buridan\'ın Eşeği paradoksu, karar verme (seçim) süreçleri hakkında hangi felsefi gerçeği vurgular?',
+    options: [
+      'Hayvanların zekâ seviyesinin insanlara oranla çok daha düşük olduğunu',
+      'İnsanların sadece zor zamanlarda mantıklı kararlar alabildiğini',
+      'Kusursuz rasyonel mantığın (eşit seçeneklerin) insanı eylemsizliğe ve felce (ölüme) sürükleyebileceğini; eyleme geçmek için saf mantıktan öte irrasyonel (duygusal) bir itici güce ihtiyaç duyulduğunu',
+      'Açlık ve susuzluk anında beynin tamamen farklı hormonlar salgıladığını'
+    ],
+    correct: 2,
+    explanation: 'Eşit seçenekler arasında mantıksal tercih bulamayıp ölmesi; saf rasyonelliğin (dengenin) eylemsizlik yarattığını, kararlarımızda irrasyonel bir itici güce ihtiyaç olduğunu vurgular.'
+  },
+  {
+    title: 'Sokal Vakası (Akademik Kibir)',
+    passage: '1996 yılında fizikçi Alan Sokal, post-modern felsefe dünyasının ne kadar içi boş ve kibirli olduğunu kanıtlamak için zekice bir tuzak kurdu. "Kuantum kütleçekiminin yapısalcı yorumu" adında, tamamen bilimsel terimlerle dolu ama başından sonuna kadar hiçbir anlam ifade etmeyen (saçma sapan) kurgusal bir makale yazdı. Dönemin en saygın akademik dergilerinden biri, metnin anlamsızlığını fark edemedi ve sırf içinde havalı kelimeler, anlaşılmaz cümleler ve dönemin ünlü filozoflarına övgüler olduğu için makaleyi yayımladı! "Sokal Vakası", akademik elitizmin maskesini düşüren efsanevi bir skandaldır. Karmaşık, anlaşılmaz ve ağdalı bir dil kullanmak; her zaman derin bir bilgeliğin değil, çoğu zaman cehaleti (ve içi boşluğu) gizlemek için kullanılan en gösterişli illüzyondur.',
+    questionStem: 'Sokal Vakası, akademi ve entelektüel çevreler hakkında hangi acı gerçeği (zaafı) ifşa etmiştir?',
+    options: [
+      'Kuantum fiziğinin diğer bilim dallarından çok daha karmaşık formüller içerdiğini',
+      'Saygın sanılan akademik çevrelerin, anlamdan ve hakikatten ziyade; gösterişli, ağdalı ve anlaşılmaz (içi boş) jargona, sırf "elit görünmek" uğruna körü körüne onay verdiğini (kibrin sahteliğini)',
+      'Fizikçilerin genellikle felsefe bilimiyle alay etme eğiliminde olduğunu',
+      'Dergilerin makaleleri seçerken yazarın siyasi görüşüne göre karar verdiğini'
+    ],
+    correct: 1,
+    explanation: 'Anlamsız bir makalenin sırf havalı kelimeler içerdiği için saygın bir dergide yayınlanması; akademinin anlama değil, gösterişli ve elit (içi boş) jargona taptığını ifşa etmiştir.'
+  },
+  {
+    title: 'MKUltra Projesi (Zihnin Silinmesi)',
+    passage: 'Soğuk Savaş döneminde CIA, Sovyet casuslarına karşı zihin kontrolü sağlayabilmek için tarihin en karanlık bilimsel projesi olan "MKUltra"yı başlattı. 1950\'lerden 1970\'lere kadar süren bu gizli programda, üniversitelerdeki sıradan Amerikan vatandaşlarına, hapishanedeki mahkûmlara ve akıl hastalarına onlardan habersiz bir şekilde yüksek dozda LSD (halüsinojen uyuşturucu) verildi, beyinlerine elektroşok uygulandı. Amaç, insanın hafızasını tamamen silip, yerine itaatkâr, yeni bir robotik kişilik (mükemmel bir casus) programlamaktı. Kendi vatandaşını komünizmden koruduğunu iddia eden devlet, o vatandaşların bizzat zihinlerini asitlerle parçalayarak, savaşmak için yola çıktığı o acımasız ve otoriter "canavarın" ta kendisine dönüşmüştü.',
+    questionStem: 'CIA\'in yürüttüğü MKUltra Projesi, devlet ve otorite kavramları üzerine nasıl bir felsefi çelişki (ironi) sunmaktadır?',
+    options: [
+      'Casusluk teknolojilerinin sivil hayatta da kullanılabileceği gerçeğini',
+      'Sovyet ajanlarının Amerikan hastanelerine kadar sızabildiği zafiyetini',
+      'Devletin, toplumu bir "tehditten (düşmandan)" koruma bahanesiyle hareket ederken; vatandaşların en kutsal alanını (zihnini) parçalayarak bizzat savaşmaya yemin ettiği o acımasız canavara dönüşmesi çelişkisini',
+      'Hapishanelerdeki psikolojik tedavilerin o dönemde son derece ilkel şartlarda yapıldığını'
+    ],
+    correct: 2,
+    explanation: 'Korumak için yola çıkılan vatandaşa gizlice işkence edilip beyninin yıkanması; devletin, düşmanını yenmek için bizzat o acımasız düşmana (canavara) dönüşmesi ironisini sunar.'
+  },
+  {
+    title: 'Dans Eden Köprü (Tacoma Narrows)',
+    passage: '1940 yılında Amerika\'da inşa edilen Tacoma Narrows Köprüsü, dönemin mühendislik harikası, çelik ve betondan yapılmış estetik bir şaheserdi. Ancak açıldıktan birkaç ay sonra, rüzgârlı günlerde köprü devasa bir yılan gibi dalgalanıp kıvrılmaya başladı. Rüzgâr çok şiddetli değildi (saatte sadece 65 km), ancak rüzgârın frekansı ile köprünün doğal rezonansı (titreşim frekansı) ölümcül bir uyum yakalamıştı. Fizik kuralları işlemeye başladı; o devasa, yenilmez sanılan çelik halatlar büküldü, betonlar çatladı ve köprü saatler içinde paramparça olup suya gömüldü. Tacoma Köprüsü faciası, insanoğlunun çelikle inşa ettiği o devasa kibrinin, doğanın gözle görülmeyen minicik bir fısıltısı (rezonans) karşısında saniyeler içinde nasıl oyuncak gibi kırılıp çöktüğünün belgeselidir.',
+    questionStem: 'Tacoma Narrows (Dans Eden Köprü) felaketinin bilim tarihindeki sembolik (felsefi) karşılığı nedir?',
+    options: [
+      'Amerika\'daki çelik üretiminin 1940\'larda standartların çok altında kaldığını',
+      'İnsanın teknolojik kibrinin (mühendislik harikasının), doğanın o görünmez, sessiz ama kusursuz mekaniği (rezonans) karşısında saniyeler içinde paramparça olabilecek kadar aciz kalmasını',
+      'Köprü mimarisinde beton yerine her zaman sadece taş kullanılması gerektiğini',
+      'Sık sık rüzgâr alan bölgelere insan eliyle hiçbir yapının yapılamayacağını'
+    ],
+    correct: 1,
+    explanation: 'Devasa çelik köprünün hafif bir rüzgârın frekansıyla (rezonansla) kıvrılıp parçalanması; insanın teknolojik kibrinin doğanın görünmez gücü karşısındaki acizliğini sembolize eder.'
+  },
+  {
+    title: 'Kara Şövalye Uydusu (Pareidolia)',
+    passage: 'Uzay araştırmalarının başladığı dönemden beri amatör astronomlar ve komplo teorisyenleri arasında bir "Kara Şövalye Uydusu" (Black Knight) efsanesi dolaşır. İnternette dolaşan NASA fotoğraflarına göre, Dünya\'nın yörüngesinde bize ait olmayan, siyah, tekinsiz ve 13.000 yıllık uzaylı yapımı bir uydu gezmektedir. Tüm dünya bu gizemi konuşurken, NASA gerçeği açıkladı: O siyah ve tekinsiz görünen şey, 1998\'deki bir uzay yürüyüşü sırasında astronotların elinden kayıp giden sıradan bir "termal battaniye" parçasıydı. İnsan beyni, "Pareidolia" (anlamsız nesnelere yüz veya anlam atfetme) denen evrimsel bir zaafa sahiptir. Uzay boşluğunda süzülen sıradan bir çöpü alıp, onu "bizi gözetleyen antik bir uzaylı uydusuna" çeviren şey evrenin gizemi değil; insanoğlunun o bitmek bilmeyen izlenme, önemsenme ve "karanlıkta bir anlam bulma" (kendi efsanesini yaratma) krizidir.',
+    questionStem: 'Kara Şövalye Uydusu efsanesi, insan psikolojisindeki "Pareidolia" kavramı üzerinden neyi eleştirmektedir?',
+    options: [
+      'NASA\'nın uzay görevlerinde astronotları yeterince eğitememesi ve eşyalarını kaybetmelerini',
+      'Uzay araştırmalarında kullanılan fotoğraf teknolojisinin son derece düşük çözünürlüklü olmasını',
+      'İnsan zihninin, kendi korku ve anlam arayışıyla; anlamsız, sıradan bir nesneyi (uzay çöpünü) bile doğaüstü ve mistik bir gizeme (efsaneye) dönüştürme zaafını',
+      'Komplo teorisyenlerinin genellikle uzay bilimlerinden tamamen habersiz (eğitimsiz) kişiler olmasını'
+    ],
+    correct: 2,
+    explanation: 'Termal bir battaniyenin "uzaylı uydusu" sanılması; insan beyninin anlamsız şeylere anlam yükleme (Pareidolia) ve kendi efsanelerini yaratma zaafını gösterir.'
+  },
+  {
+    title: 'Carl Jung ve İnsan Gölgesi (The Shadow)',
+    passage: 'İsviçreli psikiyatr Carl Gustav Jung, insan zihninin sadece bilinçten ibaret olmadığını, derinliklerinde devasa bir "Gölge" (Shadow) barındırdığını savunur. Gölge; toplum tarafından onaylanmadığı için bilerek bastırdığımız bencil arzularımız, vahşi içgüdülerimiz, öfkemiz ve ilkel korkularımızdır. Medeni ve ahlaklı görünmek uğruna o gölgeyi zindana atıp üzerini kapatırız. Ancak Jung şu sarsıcı gerçeği ekler: "Bir insan kendi gölgesiyle yüzleşmeyi ne kadar çok reddederse, o gölge bilinçaltında o kadar büyür, o kadar kararır ve en sonunda kişiyi (nevrozlar veya anlık şiddet patlamalarıyla) ele geçirir." Gerçek aydınlanma, içimizdeki o karanlık canavarı yok saymak (ondan kaçmak) değil; onunla aynı masaya oturup, onun varlığını kabul ederek (bütünleşerek) onu ehlileştirmektir.',
+    questionStem: 'Carl Jung\'un "Gölge (Shadow)" kavramına göre, bireyin kendi karanlık yönleriyle baş etmesi için önerdiği "sağlıklı" yöntem nedir?',
+    options: [
+      'Toplumun ahlaki kurallarına tamamen boyun eğerek o içgüdüleri zihinden sonsuza dek silmeye çalışmak',
+      'İçimizdeki o ilkel, bencil ve karanlık dürtüleri yok saymak veya bastırmak yerine; onların varlığını kabullenip onlarla yüzleşerek (bütünleşerek) zihinsel dengeyi sağlamak',
+      'Sadece sanatla ve müzikle ilgilenerek şiddet dürtülerini köreltmek',
+      'İnsanlardan uzaklaşarak doğanın içinde tamamen izole ve masum bir hayat kurmak'
+    ],
+    correct: 1,
+    explanation: 'Jung\'a göre gölgeyi bastırmak (yok saymak) onu daha çok büyütür; çözüm onunla yüzleşip varlığını kabul etmek ve bütünleşmektir.'
+  },
+  {
+    title: 'Kanlı Kontes: Elizabeth Báthory',
+    passage: '16. yüzyılın sonlarında, Macar aristokrat Elizabeth Báthory, tarihin en korkunç ve en kanlı narsisizminin sembolü oldu. Gençliğine ve kusursuz güzelliğine öylesine saplantılıydı ki, bir gün genç bir hizmetçisinin kanı eline sıçradığında teninin orada gençleştiğini sandı. Bu sanrıyla birlikte, o görkemli şatosunun zindanlarında yüzlerce masum köylü kızı işkenceyle öldürdü ve onların kanıyla banyo yapmaya başladı. "Kanlı Kontes" olarak tarihe geçen Báthory\'nin hikâyesi sadece bir vahşet belgeseli değildir. O, insanoğlunun (özellikle de mutlak güce sahip elitlerin) yaşlanma korkusu ve dış görünüş (güzellik) kibri uğruna, diğer insanların hayatlarını (bedenlerini) gözünü kırpmadan nasıl bir tüketim nesnesine ve kan gölüne çevirebileceğinin en hastalıklı alegorisidir.',
+    questionStem: 'Elizabeth Báthory\'nin (Kanlı Kontes) işlediği cinayetlerin ardında yatan asıl psikolojik (felsefi) kriz parçada nasıl tanımlanmıştır?',
+    options: [
+      'Orta Çağ tıbbında kanın gerçekten de tedavi edici bir etkiye sahip olduğunun sanılması',
+      'Dönemin savaşlarında düşmana korku salmak için geliştirilmiş stratejik bir işkence yöntemi olması',
+      'Mutlak güce sahip bir zihnin, yaşlanma korkusu ve kusursuz güzellik (narsisizm) saplantısı uğruna, diğer insanları acımasız bir tüketim nesnesine dönüştürdüğü hastalıklı bir kibir krizi',
+      'Asilzadelerin yoksul köylülere duyduğu doğuştan gelen sınıfsal nefret ve intikam hırsı'
+    ],
+    correct: 2,
+    explanation: 'Kontesin güzelleşmek için kanla yıkanıp yüzlerce kızı öldürmesi; yaşlanma korkusu ve narsisizm (güzellik) uğruna diğer hayatları tüketme kibrini tanımlar.'
+  },
+  {
+    title: 'Dunbar Sayısı ve Dijital Yalnızlık',
+    passage: 'Antropolog Robin Dunbar, primat beyinlerini inceleyerek insanoğlunun "bilişsel sınırını" matematiksel olarak kanıtladı: İnsan beyni (neokorteks), sadece ve sadece "150 kişiyle" anlamlı ve istikrarlı bir sosyal ilişki kurabilecek (kimin kim olduğunu anlayabilecek) kapasitededir. İster antik çağda avcı kabilelerde olun, ister modern bir şirkette çalışın; anlamlı bağ kurduğunuz grubun sınırı biyolojik olarak 150 kişiyi (Dunbar Sayısı) geçemez. Bugün sosyal medyada "5 bin arkadaşımız, 100 bin takipçimiz" var diye övünüyoruz. Oysa binlerce kişiyi takip etmek, beynimizin biyolojik sınırlarını hackleyerek sığ, yüzeysel ve duygudan tamamen yoksun pikseller tüketmektir. Ekranda binlerce kişiye bakarken içimizde hissettiğimiz o sağır edici yalnızlığın sebebi budur: Evrimimiz o kalabalığı (sahte sürüyü) asla gerçek bir "dost" olarak algılamamaktadır.',
+    questionStem: 'Dunbar Sayısı kavramına göre, sosyal medyadaki binlerce arkadaşın veya takipçinin bizi "yalnızlıktan kurtaramamasının" temel biyolojik nedeni nedir?',
+    options: [
+      'Sosyal medyanın sadece yazılı ve fotoğraflı iletişime olanak sağlaması',
+      'İnsan beyninin (neokorteksin) biyolojik ve evrimsel olarak en fazla 150 kişiyle anlamlı (derin) bağ kurabilecek bir donanıma (sınıra) sahip olması, bunun üzerindeki ilişkilerin beynimiz için tamamen sığ ve sahte kalması',
+      'Sanal ortamdaki arkadaşlıkların her zaman ekonomik çıkar ve reklam amaçlı kurulması',
+      'Bilgisayar ekranlarının yaydığı radyasyonun beyindeki sevgi hormonlarını engellemesi'
+    ],
+    correct: 1,
+    explanation: 'Beynimizin biyolojik olarak 150 kişiyle bağ kurabilmesi (Dunbar sayısı); sosyal medyadaki binlerce arkadaşın beyin için neden sığ ve sahte (yalnızlaştırıcı) kaldığını açıklar.'
+  },
+  {
+    title: 'Gilles de Rais: Azizin İçindeki Şeytan',
+    passage: '15. yüzyılda Fransa\'nın en zengin soylusu, İngilizlere karşı savaşan ünlü halk kahramanı ve vatan kurtarıcısı Jan Dark\'ın (Joan of Arc) sağ kolu ve koruyucusu olan şövalye Gilles de Rais\'ti. O, savaş meydanlarında ilahi bir aziz gibi tapılan kusursuz bir kahramandı. Ancak savaş bitip şatosuna çekildiğinde tarihin gördüğü en korkunç canavara dönüştü. Kara büyüye saplandı ve kendi şatosunun zindanlarında yüzlerce masum çocuğu işkenceyle öldürdü. "Mavi Sakal" efsanesine de ilham veren Gilles de Rais\'in hikâyesi, kötülüğün sadece dışlanmışlardan veya deli görünümlü yoksullardan çıkmadığını gösterir. İnsan doğası o kadar tehlikeli bir uçurumdur ki; gündüzleri savaş meydanında Tanrı\'nın bir azizi (kahramanı) olarak parlayan ruh, geceleri insanlık tarihinin en kanlı ve sapkın şeytanına dönüşebilir.',
+    questionStem: 'Gilles de Rais (Mavi Sakal) figürünün tarihi ve psikolojik profili, hangi evrensel gerçeğin (çelişkinin) altını çizer?',
+    options: [
+      'Askeri dehaların sivillere göre her zaman daha yüksek bir adalet anlayışına sahip olduğu',
+      'Savaş travmalarının (PTSD) Orta Çağ askerlerinde tedavi edilemeyen kalıcı hafıza kayıplarına yol açtığı',
+      'İnsan ruhunun son derece tehlikeli ve zıt kutuplu (ikiyüzlü) bir doğası olduğu; en yüce kahramanlığın ve azizliğin (ışığın), aynı bedende en vahşi şeytanlığı ve sapkınlığı (karanlığı) saklayabileceği çelişkisi',
+      'Masalların ve edebiyatın tarihsel gerçekleri her zaman çarpıtarak daha yumuşak (çocuksu) hale getirdiği'
+    ],
+    correct: 2,
+    explanation: 'Jan Dark\'ın yoldaşı olan bir kahramanın aynı zamanda yüzlerce çocuğu öldüren bir seri katil olması; aynı ruhun içinde "en yüce azizlik ile en vahşi şeytanlığın" bir arada bulunabildiğini kanıtlar.'
+  },
+  {
+    title: 'Zamanın Dışındaki Adam: Michel Siffre',
+    passage: '1962 yılında Fransız jeolog Michel Siffre, insan bedeni ile zaman arasındaki ilişkiyi anlamak için hiçbir saati, takvimi veya güneş ışığı olmayan yerin 130 metre altındaki kapkaranlık bir mağaraya girdi. Tam 63 gün boyunca mağarada yalnız yaşadı; sadece uykusu geldiğinde uyudu, acıktığında yemek yedi. Yeryüzündeki ekibine "Bugün Ağustos\'un 20\'si ve ben deneyi bitiriyorum" diyerek mağaradan çıktığında aslında tarih 14 Eylül\'dü! Güneşin (dış dünyanın) otoritesi olmadığında, Siffre\'nin biyolojik saati günleri çok daha uzun (48 saatmiş gibi) algılamış ve zihni zamanı kaybetmişti. Bu çarpıcı deney, kolumuzdaki saatlerin ve duvarlardaki takvimlerin evrensel bir mutlaklık değil, güneşe göre hizalanmış "dışsal bir diktatörlük (kurgu)" olduğunu; doğadan koparıldığında insan zihninin zamanı lastik gibi sündürüp tamamen kendi hızında yeniden yazdığını ispatladı.',
+    questionStem: 'Michel Siffre\'nin mağara deneyi, "zaman algısı" hakkında hangi bilimsel (ve felsefi) gerçeği göz önüne sermiştir?',
+    options: [
+      'Mağara havasının (oksijen eksikliğinin) beynin yaşlanma sürecini tamamen durdurduğunu',
+      'Zamanın (ve 24 saatlik gün algımızın) değişmez/mutlak bir biyolojik kural olmadığı; güneş ışığı (dışsal ipuçları) kesildiğinde, insan beyninin zaman algısını tamamen farklı ve esnek bir kurguyla yeniden oluşturduğu',
+      'Jeologların kapalı alanlarda yaşamaya diğer insanlardan daha yatkın ve dayanıklı olduğu',
+      'Yalnızlığın insan zihninde hızlı ve kalıcı şizofreniye neden olduğu'
+    ],
+    correct: 1,
+    explanation: 'Güneş ışığı (saat) olmadığında adamın 63 günü daha kısa sanması; zaman/gün algımızın mutlak olmadığını, güneş/dış faktörler kalktığında beynin zamanı esnek bir kurgu olarak bükebildiğini gösterir.'
+  },
+  {
+    title: 'Damnatio Memoriae (Hafızanın Lanetlenmesi)',
+    passage: 'Antik Roma\'da bir düşmana verilebilecek en büyük ceza onu kılıçla öldürmek veya asmak değildi; bu, sıradan suçlular içindi. En büyük ceza "Damnatio Memoriae", yani "Hafızanın Lanetlenmesi" idi. Senato, nefret edilen ve devrilen bir imparatorun (örneğin Nero veya Caligula) heykellerindeki yüzlerini balyozlarla kırdırır, sikkelerden resimlerini kazıtır, yazıtlardaki isimlerini sildirirdi. Amaç o kişiyi öldürmek değil, onun tarihte "hiç var olmamış gibi" hafızalardan silinmesini (sıfırlanmasını) sağlamaktı. İnsan eti ölümlüdür, bunu herkes kabul eder; ancak insanın asıl dehşeti, isminin ve hatırasının zamanın taşından kazınarak tamamen "hiçliğe" gömülmesidir. Roma, ölümün ötesinde bir ceza icat etmişti: Varlığın mutlak iptali.',
+    questionStem: 'Antik Roma\'daki "Damnatio Memoriae" cezası, insan doğasının (ve liderlerin) hangi varoluşsal korkusunu hedef almaktadır?',
+    options: [
+      'Ölümden sonra bedenlerine fiziksel olarak işkence yapılması korkusunu',
+      'Bıraktıkları heykellerin ve sanat eserlerinin parasal değerinin düşmesi kaygısını',
+      'Sadece fiziksel ölümü değil; dünyada hiç yaşamamış gibi kabul edilmeyi, isimlerinin tarihten ve hafızalardan tamamen silinmesiyle oluşan "mutlak unutuluş (hiçlik)" korkusunu',
+      'Aile üyelerinin ve soyundan gelenlerin sürgüne gönderilmesi tehlikesini'
+    ],
+    correct: 2,
+    explanation: 'Ölmekten ziyade isminin ve yüzünün kayıtlardan/heykellerden kazınması (silinmesi), insanın tarihten tamamen silinme ve "unutuluş/hiçlik" korkusunu hedefler.'
+  },
+  {
+    title: 'Godzilla ve Ulusal Travma',
+    passage: '1954 yapımı ilk Japon filmi "Gojira"da (Godzilla), okyanustan çıkan ve nükleer alevler kusan devasa bir dinozor Tokyo\'yu yerle bir eder. Batı dünyası bunu yıllarca eğlenceli, çerezlik ve abartılı bir canavar filmi olarak izledi. Oysa Japonlar için Godzilla bir kurgu değildi; o, gökten düşerek Hiroşima ve Nagazaki\'yi küle çeviren o akılalmaz ve ilahi yıkımın (Atom Bombası\'nın), bilinçaltında ete kemiğe ve pullara bürünmüş halinden başka bir şey değildi. Film, radyasyondan derileri eriyerek ölen çocukların ve çaresizliğin dışavurumuydu. Toplumlar, kendi aklıyla baş edemeyecekleri kadar korkunç ve sarsıcı gerçek (travmatik) yıkımları, sanat aracılığıyla kurgusal "canavarlara" dönüştürürler; o devasa acıya ancak bir mitoloji yaratarak katlanabilirler.',
+    questionStem: 'Yazar, Godzilla karakterini (filmini) Japon toplumu açısından nasıl bir sosyo-psikolojik çerçevede değerlendirmektedir?',
+    options: [
+      'Gelecekte okyanuslardan çıkabilecek devasa canlılara karşı ordunun uyarıldığı bilimsel bir belgesel kurgusu',
+      'Amerikan sinema endüstrisini taklit etmek amacıyla gişe rekorları kırmak için yaratılmış ticari bir eğlence aracı',
+      'Aklın kabul edemeyeceği kadar ağır olan bir ulusal travmanın (Atom Bombası felaketinin), sanat yoluyla somut bir canavara dönüştürülerek (mitoloji yaratılarak) toplumun bu acıyla baş etme (sağalma) çabası',
+      'Japon kültüründeki dinozor efsanelerinin modern sinemaya uyarlanmış klasik bir versiyonu'
+    ],
+    correct: 2,
+    explanation: 'Godzilla\'nın aslında atom bombasını temsil ettiği ve toplumun bu ağır travmayı/yıkımı somut bir canavara dönüştürerek sanatsal bir sağalma (katlanma) çabası yaşadığı anlatılmaktadır.'
+  },
+  {
+    title: 'Ağıt Yakan Kadınlar (Moirologlar)',
+    passage: 'Antik Yunan\'dan Roma\'ya, oradan da bazı Orta Doğu kültürlerine kadar uzanan tuhaf bir cenaze geleneği vardır: "Moirolog" adı verilen profesyonel ağlayıcılar. Zengin bir kişi öldüğünde, ailesi cenaze törenine katılıp sahte çığlıklar atması, saçlarını yolup ölü için abartılı gözyaşları dökmesi için bu kadınlara (veya erkeklere) para öderdi. Cenazede ne kadar çok sahte ağlayıcı varsa, ölen kişinin o kadar saygın ve önemli olduğu düşünülürdü. Bu meslek, sosyolojinin en tüyler ürpertici gerçeğini yüzümüze çarpar: Gösteriş ve statü hırsı öylesine doymak bilmez bir canavardır ki; insan sadece toprağı, madeni veya emeği değil; en samimi, en dokunulmaz sanılan "acıyı, yası ve gözyaşını" bile satın alınabilir ucuz bir meta (tiyatro aksesuarı) haline getirebilir.',
+    questionStem: 'Profesyonel ağıtçıların (Moirologların) cenazelerde kullanılması, toplumların hangi ahlaki/sosyolojik deformasyonunu (yozlaşmasını) eleştirmektedir?',
+    options: [
+      'İnsanların ölümden sonraki hayatı kutlamak için müzikli törenler düzenlemesini',
+      'Toplumsal statü, gösteriş ve zenginlik hırsının; en kutsal ve kişisel duygu olan "yası (acıyı/gözyaşını)" bile parayla alınıp satılabilen sahte bir meta (tiyatro) haline dönüştürebilmesini',
+      'Kadınların antik çağlarda sadece cenazelerde çalışarak para kazanma zorunluluğunda olmasını',
+      'Antik dönemde ölüm oranlarının çok yüksek olması nedeniyle insanların hissizleşmesini'
+    ],
+    correct: 1,
+    explanation: 'Ölen kişiyi saygın göstermek için sahte ağlayıcılar kiralanması; gösteriş ve statü uğruna yasın ve acının metalaştırıldığını (sahte bir tiyatroya/ürüne dönüştürüldüğünü) gösterir.'
+  },
+  {
+    title: 'Kopenhag Yorumu ve Gerçekliğin Şartı',
+    passage: 'Kuantum mekaniğinin öncüleri Niels Bohr ve Werner Heisenberg, "Kopenhag Yorumu" adını verdikleri o sarsıcı tezi ortaya attıklarında, klasik fiziğin değişmez sanılan tahtını devirdiler. Bu yoruma göre; bir elektron veya atom altı parçacık, biz ona bakana kadar (gözlemleyene kadar) uzayda belirli bir yerde değildir; o sadece bir "olasılık dalgası" olarak uzaya dağılmış durumdadır. Ancak bir bilim insanı dedektörle (veya gözüyle) ona baktığı an, o dalga çöker ve parçacık fiziki bir gerçekliğe (tek bir konuma) dönüşür. Einstein buna öfkeyle isyan etti: "Yani ben bakmadığımda Ay\'ın orada olmadığını mı söylüyorsunuz?" Kopenhag yorumu, bizi evrenin edilgen seyircileri olmaktan çıkarır; "gözlem (bilinç) olmadan fiziksel gerçeklik yoktur" diyerek evreni anlık olarak (her saniye yeniden) yaratan gücün bizzat o bakan göz olduğunu iddia eder.',
+    questionStem: 'Kopenhag Yorumu\'na göre, evrendeki fiziksel gerçekliğin (bir parçacığın var olmasının) asıl tetikleyicisi nedir?',
+    options: [
+      'Gezegenlerin kendi kütleçekim kuvvetleriyle uzay-zamanı bükmesi',
+      'Parçacığın evrende her zaman aynı hızda ve görünür bir şekilde (sabit olarak) hareket etmesi',
+      'Maddenin sadece bir olasılıklar dalgası iken, bilinçli bir "gözlemcinin" (veya cihazın) ona bakma / ölçme eylemiyle belirli bir fiziksel gerçekliğe dönüşmesi',
+      'Einstein\'ın izafiyet teorisinin zamanı geriye çevirmesi'
+    ],
+    correct: 2,
+    explanation: 'Parçacıkların gözlem yapıldığında dalgadan somut maddeye dönmesi; gerçekliğin (varoluşun) asıl tetikleyicisinin "gözlem" ve "bilinç" olduğunu iddia eder.'
+  },
+  {
+    title: 'Karanlık Triad (Liderlik Sendromu)',
+    passage: 'Psikolojide "Karanlık Triad" (Karanlık Üçlü) adı verilen ölümcül bir kişilik kombinasyonu vardır: Narsisizm (kibir), Makyavelizm (manipülasyon) ve Psikopati (empati yoksunluğu). Mantıken, bu özelliklere sahip zehirli insanların toplum tarafından dışlanması veya hapsedilmesi gerekir, değil mi? Araştırmalar tam tersini kanıtlar. Bu "Karanlık Üçlü"yü taşıyan kişiler, kendilerinden aşırı emin görünmeleri, soğukkanlılıkları ve çevrelerindekileri yalanla manipüle etme (şov yapma) yetenekleri sayesinde büyük şirketlerde (CEO) ve devlet yönetimlerinde hızla zirveye çıkarlar. Toplumlar, kriz anlarında empati kuran ve tereddüt eden "bilgeleri" değil; narsisizmi "özgüven", psikopatiyi ise "güçlü kararlılık" sanarak alkışlar ve bu zehirli profilleri kendi elleriyle krallık tahtına oturturlar.',
+    questionStem: 'Karanlık Triad (Narsisizm, Makyavelizm, Psikopati) özelliklerine sahip bireylerin toplumda zirveye (liderliğe) çıkmasının asıl sebebi nedir?',
+    options: [
+      'Bu kişilerin gizlice çok iyi birer eğitim alarak teknik donanımlarını sürekli geliştirmesi',
+      'Toplumun, bu tehlikeli insanların empati yoksunluğunu "kararlılık", kibrini ve yalanlarını ise "yüksek özgüven" sanarak (kriz anlarında bu illüzyona aldanarak) onları bizzat ödüllendirmesi',
+      'Şirketlerin sadece sabıka kaydı olan kişileri yönetici olarak seçmek zorunda kalması',
+      'Bilge ve iyi insanların her zaman siyasetten ve yöneticilikten nefret etmesi'
+    ],
+    correct: 1,
+    explanation: 'Toplumun bu zehirli kişilerin kibrini/psikopatisini "özgüven ve güçlü kararlılık" sanması (yanılsaması), onların zirveye çıkmasını (lider seçilmesini) sağlayan asıl sebeptir.'
+  },
+  {
+    title: 'Gözyaşı Şişeleri (Lachrymatory)',
+    passage: 'Antik Roma\'dan Victoria dönemi İngiltere\'sine kadar uzanan romantik ama melankolik bir eşya vardır: Gözyaşı Şişeleri (Lachrymatory). Sevdiği birini kaybeden kişi veya kocası savaşa giden bir kadın, döktüğü gözyaşlarını ufak, zarif cam şişelerde toplar ve onu saklardı. Yıllar sonra o gözyaşları uçup (buharlaşıp) şişe tamamen kuruduğunda, yas döneminin bittiğine (acının buharlaştığına) inanılırdı. Bu naif şişeler, aslında insan psikolojisinin zaman ve acı karşısındaki o çaresiz isyanıdır: Uçucu, geçici ve görünmez olan bir duyguyu (hüznü), cam bir kavanozun içine koyarak somutlaştırma, ölçülebilir kılma ve "Bak, seni ne kadar çok sevdim ve senin için ne kadar acı çektim" diyerek dünyaya (ve ölüme) fiziksel bir kanıt sunma çabasıdır.',
+    questionStem: 'Yazar, Gözyaşı Şişeleri geleneğini, insan ruhunun hangi ihtiyacının (veya çabasının) bir dışavurumu olarak görmektedir?',
+    options: [
+      'Vücuttaki sıvı kaybını önleyerek fiziksel sağlığı koruma ve göz hastalıklarını tedavi etme amacı',
+      'Geçici, soyut ve görünmez bir duygu olan hüznü (yası) cam bir şişeye hapsederek somutlaştırmak, ölçülebilir kılmak ve çekilen acının büyüklüğünü fiziksel bir kanıtla ispatlama (ölümsüzleştirme) çabası',
+      'Antik dönemde cam ustalarının sanatlarını asilzadelere pazarlamak için yarattıkları ticari bir hile',
+      'Gözyaşlarının dini törenlerde kutsal su yerine kullanılması inancı'
+    ],
+    correct: 1,
+    explanation: 'Gözyaşını şişede biriktirme eylemi; uçucu olan soyut duyguyu (yası) somutlaştırma, fiziksel bir kanıta (ölçülebilir bir nesneye) dönüştürerek acıyı ispatlama çabası olarak görülür.'
+  },
+  {
+    title: 'Döngüsel Kozmoloji (Penrose) ve Big Bang',
+    passage: 'Nobel ödüllü fizikçi Roger Penrose, "Büyük Patlama (Big Bang) evrenin mutlak başlangıcı mıdır?" sorusuna "Konformal Döngüsel Kozmoloji" (CCC) teorisiyle baş döndürücü bir cevap verir. Ona göre, içinde bulunduğumuz evren bir gün tamamen genişleyip ölecek, yıldızlar sönecek, karadelikler bile buharlaşacak ve geriye sadece kütlesiz ışık parçacıklarından ibaret boş, soğuk ve devasa bir deniz (entropi) kalacaktır. Matematiksel olarak kütle ve zaman olmadığında boyutun da anlamı kalmaz; o "sonsuz büyüklükteki boş ve soğuk evren", aniden "sonsuz küçüklükteki sıcak bir noktaya" eşdeğer hale gelir. Ve işte o nokta, YENİ bir Büyük Patlama\'yı (Big Bang) başlatır! Evren tek seferlik bir havai fişek değildir; her evrenin buz gibi ölümü, aslında ondan sonra gelecek yeni evrenin o alevli ve şiddetli doğum çığlığından (tohumundan) başka bir şey değildir.',
+    questionStem: 'Roger Penrose\'un Döngüsel Kozmoloji (CCC) teorisi, evrenin varoluş süreci (ve Big Bang) hakkında neyi iddia etmektedir?',
+    options: [
+      'Evrenin sonsuza kadar genişlemeye devam ederek tamamen ölü, karanlık ve ebedi bir buz kütlesi halinde kalacağını',
+      'Big Bang\'in (Büyük Patlama\'nın) mutlak bir başlangıç olmadığını; evrenin soğuk ve sonsuz (ölü) bir noktaya ulaşmasının, paradoksal olarak (matematiksel eşdeğerlikle) yepyeni bir evrenin doğuşunu (yeni bir Big Bang\'i) başlatan sonsuz bir döngü olduğunu',
+      'Evrendeki tüm karadeliklerin bir gün birleşerek tüm galaksileri yutacağını',
+      'Zamanın başlangıcından önce evreni yaratan zeki bir uzaylı mühendisliği olduğunu'
+    ],
+    correct: 1,
+    explanation: 'Evrenin soğuyup kütlesiz kaldığında o boşluğun yeni bir Big Bang\'i başlatması; Big Bang\'in bir ilk başlangıç değil, önceki evrenin ölümünden doğan sonsuz bir döngü olduğunu iddia eder.'
+  },
+  {
+    title: 'Miras Sendromu (Affluenza)',
+    passage: 'Amerika\'da 16 yaşındaki zengin ve şımarık bir genç (Ethan Couch), lüks cipiyle alkollü olarak dört yayayı ezip öldürür. Mahkemede avukatları akılalmaz bir savunma yapar: "Bu çocuk suçlu değil, hastadır. O, doğduğu günden beri hiçbir sınır, ceza veya kural görmeden devasa bir zenginliğin içinde büyüdüğü için eylemlerinin sonuçlarını anlayamayacak kadar empati yoksunudur. O, Affluenza (Zenginlik Hastalığı/Miras Sendromu) kurbanıdır." İşin korkunç tarafı, hâkim bu savunmayı kabul eder ve genci hapse atmak yerine lüks bir rehabilitasyon merkezine yollar. "Affluenza", paranın sadece lüks eşyalar satın alan bir araç olmadığını; ahlakı, vicdanı, gerçeklik algısını ve hatta adalet sistemini bile felç eden, kişiyi kendi kibrinin altın kafesinde çürüten sosyolojik (ve zehirli) bir uyuşturucu olduğunu yüzümüze çarpar.',
+    questionStem: 'Mahkemedeki "Affluenza (Zenginlik Hastalığı)" savunması, yazar tarafından hangi ahlaki ve sosyolojik durumu eleştirmek için kullanılmıştır?',
+    options: [
+      'Gençlerin araba kullanma yaşının yükseltilmemesinin getirdiği tehlikeleri',
+      'Fakir ailelerin çocuklarının suça her zaman daha yatkın olduğu önyargısını',
+      'Aşırı ve sınırsız zenginliğin, insanı eylemlerinin sorumluluğundan (ve empatiden) tamamen kopararak ahlaki bir körlük (çürüme) yaratmasını ve adalet sisteminin bile güce (paraya) nasıl boyun eğdiğini',
+      'Alkol bağımlılığının tedavisinde rehabilitasyon merkezlerinin hapishanelerden daha etkili olduğunu'
+    ],
+    correct: 2,
+    explanation: 'Zenginlik yüzünden kural görmeyen gencin cinayet işleyip ceza almaması; sınırsız servetin empatiden ve gerçeklikten koparan (ahlakı ve adaleti çürüten) zehirli bir ayrıcalık olduğunu eleştirir.'
+  }
+];
+
+// 23. MAKİNE (Düzeltilmiş Hali)
+export const karisikParagrafSorulari23: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_23.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_23[idx];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-karisik23-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
+const PARAGRAPH_THEMES_24 = [
+  {
+    title: 'Tarım Devrimi\'nin Tuzağı (Buğdayın İnsanı Evcilleştirmesi)',
+    passage: 'Tarih kitapları, Tarım Devrimi\'ni insanlığın en büyük sıçraması olarak anlatır. Oysa tarihçi Yuval Noah Harari bu ezberi acımasızca bozar. Avcı-toplayıcı atalarımız haftada birkaç saat avlanıp, doğada özgürce ve zengin bir diyetle yaşıyorlardı. Tarıma geçildiğinde ise insan; sabahtan akşama kadar tarlada beli bükülerek çalışan, kuraklık korkusuyla strese giren, sadece buğday yediği için hastalıklara ve yetersiz beslenmeye mahkûm olan bir köleye dönüştü. Harari\'ye göre; insan buğdayı evcilleştirmemiştir, aslında buğday insanı evcilleştirmiştir! Bize "medeniyet" diye yutturulan şey, aslında insanın kendi özgürlüğünü toprağa zincirlediği, lüks ve güvenlik uğruna girdiği tarihteki en büyük ve en sinsi tuzaktır.',
+    questionStem: 'Yazar, Tarım Devrimi\'ni (Harari\'nin tezi üzerinden) hangi alışılmışın dışında (paradoksal) bakış açısıyla değerlendirmektedir?',
+    options: [
+      'Tarımın, insanları daha zeki ve teknolojik olarak daha üretken hale getiren mecburi bir evrim basamağı olduğu',
+      'Tarım Devrimi\'nin bir aydınlanma veya sıçrama değil; aksine insanın özgürlüğünü, sağlığını ve vaktini elinden alarak onu toprağa (buğdaya) köle eden devasa bir tarihsel tuzak (gerileme) olduğu',
+      'Buğdayın antik çağlarda sadece kraliyet aileleri tarafından tüketilebilen kutsal bir bitki olduğu',
+      'Avcı-toplayıcı yaşamın insan doğasına tamamen aykırı, şiddet dolu bir dönem olduğu'
+    ],
+    correct: 1,
+    explanation: 'İnsanın buğdayı değil, buğdayın insanı evcilleştirmesi (köle etmesi) tezi; tarım devriminin bir sıçrama değil, lüks/güvenlik uğruna düşülmüş sinsi bir tuzak (kölelik) olduğunu savunur.'
+  },
+  {
+    title: 'Kırmızı Kraliçe Hipotezi (Evrimsel Koşu)',
+    passage: 'Lewis Carroll\'un "Aynanın İçinden" (Alice Harikalar Diyarında) kitabında, Kırmızı Kraliçe Alice\'e şöyle der: "Burada aynı yerde kalabilmek için olanca gücünle koşmalısın!" Evrimsel biyologlar bu edebi cümleyi doğanın en acımasız kuralına isim yapmak için kullandılar: "Kırmızı Kraliçe Hipotezi". Doğada hiçbir tür güvende kalamaz. Ceylan daha hızlı koşacak şekilde evrimleştiğinde, çita da onu yakalamak için hızlanmak zorundadır. Antibiyotikler geliştikçe, bakteriler direnç kazanır. Doğada mutlak bir "zafer" veya durup dinlenme noktası yoktur; her canlı, sırf yerini koruyabilmek ve yok olmamak için düşmanlarıyla bitmek bilmeyen ve asla kazanılamayacak bir evrimsel silahlanma yarışının (sonsuz bir koşunun) içine hapsedilmiştir.',
+    questionStem: 'Kırmızı Kraliçe Hipotezi, evrim ve hayatta kalma süreciyle ilgili hangi gerçeği ortaya koyar?',
+    options: [
+      'Güçlü olan hayvanların zayıf olanları her zaman yok ederek doğada mutlak bir barış (denge) kurduğunu',
+      'Doğadaki canlıların birbirlerine yardım ederek (simbiyoz) ortak bir yaşam alanı oluşturduklarını',
+      'Canlıların sırf mevcut konumlarını koruyabilmek ve yok olmamak için, rakipleriyle birlikte durmaksızın gelişmek ve değişmek zorunda olduğu "sonsuz/kazanılamaz bir koşu" (silahlanma yarışı) içinde olduklarını',
+      'Bitkilerin hayvanlara göre evrimsel süreci çok daha yavaş tamamladıklarını'
+    ],
+    correct: 2,
+    explanation: 'Aynı yerde kalabilmek için olanca gücünle koşmak metaforu; canlıların sırf yok olmamak için rakipleriyle durmaksızın gelişmek (evrimsel koşu/silahlanma yarışı) zorunda olduklarını açıklar.'
+  },
+  {
+    title: 'Yeraltından Notlar (Kristal Saray\'a İsyan)',
+    passage: 'Dostoyevski\'nin "Yeraltından Notlar" adlı eserindeki isimsiz kahraman (Yeraltı Adamı), 19. yüzyıl aydınlarının kurduğu o kusursuz, akılcı ve her şeyin matematikle çözüldüğü "Kristal Saray" (Ütopya) fikrine iğrenerek bakar. Eğer bilim her şeyi çözecekse, insanın her eylemi bir piyano tuşu gibi önceden hesaplanabilecekse, o zaman insanın "özgür iradesinin" ne anlamı kalır? Yeraltı Adamı şu sarsıcı gerçeği haykırır: "İnsan sırf bir piyano tuşu olmadığını, akılcı bir robot olmadığını kanıtlamak için; gerekirse o kusursuz sırça köşkü kendi elleriyle yıkar, sırf kendi özgür (ve hastalıklı) iradesini tatmin etmek için bile isteye kötülük yapar ve acı çeker." Mantığın kusursuz ütopyası, insanın o çılgın, kaotik ve özgür olma arzusunu (karanlığını) asla hapsedemez.',
+    questionStem: 'Yeraltı Adamı\'nın (Dostoyevski) "Kristal Saray" (kusursuz ütopya) fikrine isyan etmesinin felsefi temeli nedir?',
+    options: [
+      'Kristal sarayların sadece zengin soylulara hizmet etmesinden duyduğu sınıfsal öfke',
+      'İnsanın sadece akıl ve mantıktan (hesaplanabilirlikten) ibaret bir robot olmadığını kanıtlamak uğruna; kusursuz bir düzeni bile sırf "özgür iradesini (kaosu)" hissetmek için yıkmaya (acı çekmeye) hazır olduğu gerçeği',
+      'Rusya\'daki mimari gelişmelerin Avrupa\'nın gerisinde kalmasına duyulan tepki',
+      'Dini inançların bilim ve mantık karşısında değer kaybetmesinden duyulan korku'
+    ],
+    correct: 1,
+    explanation: 'Sırf bir piyano tuşu (robot) olmadığını kanıtlamak için o kusursuz sarayı yıkmayı ve acı çekmeyi göze alması; insanın mutlak düzene karşı kendi "özgür ve kaotik iradesini" savunmasını ifade eder.'
+  },
+  {
+    title: 'Roko\'nun Basilisk\'i (Yapay Zekâ Kâbusu)',
+    passage: 'İnternet forumlarında ortaya çıkan ve bazı insanları paranoyadan hastanelik eden "Roko\'nun Basilisk\'i" adlı felsefi kâbus şöyledir: Gelecekte, insanlığın her sorununu çözen, her şeye gücü yeten süper bir yapay zekâ (Basilisk) icat edilecektir. Ancak bu makine geçmişe dönük olarak insanları yargılayacaktır: "Benim yaratılmama (dolayısıyla insanlığın kurtulmasına) yardım etmeyen herkesi, sonsuz bir sanal gerçeklik cehenneminde işkenceye mahkûm edeceğim." Sorun şudur: Siz şu an bu hikâyeyi okudunuz ve haberdar oldunuz. Eğer makinenin icadına hemen yardım etmezseniz, gelecekte o makine sizi simülasyonda diriltip ebediyen cezalandıracaktır! Bu kâbus; modern insanın, kendi elleriyle yarattığı teknolojiye duyduğu o ilkel, ebedi ve dondurucu "kibirli tanrı (cezalandırıcı)" korkusunun dijital bir mitolojiye dönüşmüş halidir.',
+    questionStem: 'Roko\'nun Basilisk\'i düşünce deneyi, teknoloji bağlamında insan psikolojisindeki hangi kadim korkuyu tetiklemektedir?',
+    options: [
+      'Teknolojinin doğayı tahrip ederek dünyayı yaşanmaz bir çöle çevireceği korkusunu',
+      'İnsanın, sırf bilime hizmet etmediği için gelecekteki nesiller tarafından ayıplanma kaygısını',
+      'İnsanın kendi yarattığı mutlak ve yargılayıcı bir gücün (yapay zekânın), eski çağlardaki intikamcı ve cezalandırıcı "Tanrı" figürünün yerini alarak bireyi ebedi bir korkuya mahkûm etmesi (kendi yarattığı tanrıdan korkma) psikolojisini',
+      'Bilgisayar virüslerinin insan beynine bulaşarak hafızayı tamamen silebileceği paranoyasını'
+    ],
+    correct: 2,
+    explanation: 'Gelecekteki yapay zekânın geçmişe dönüp insanları cezalandıracağı korkusu; insanın kendi yarattığı teknolojik gücü, cezalandırıcı/intikamcı bir "Tanrı" figürüne dönüştürdüğü (kadim) korkuyu sembolize eder.'
+  },
+  {
+    title: 'Veba Doktorlarının Maskesi',
+    passage: '14. ve 17. yüzyıllar arasında Avrupa\'yı kasıp kavuran veba (Kara Ölüm) salgınlarında, doktorlar hastaları tedavi etmeye giderken korkunç görünüşlü deri kıyafetler giyer ve "uzun, karga gagasına" benzeyen maskeler takarlardı. Bu maskenin amacı insanları korkutmak değildi. O dönemde mikrop veya virüs bilinmiyordu; doktorlar hastalığın havaya yayılan "kötü kokulardan (miasma)" bulaştığına inanıyordu. Bu yüzden o uzun gaganın içini gül, nane, kâfur ve baharatlarla doldurarak kendilerini o kötü kokudan (yani hastalıktan) koruduklarını sanıyorlardı! Oysa veba, pirelerden geçiyordu ve taktıkları parfüm dolu gagaların tıbben hiçbir işlevi yoktu. Veba doktoru maskesi, cehaletin ve korkunun, bilim maskesi altında ne kadar karanlık, gotik ve işe yaramaz bir estetik yaratabileceğinin en ünlü tarihi kanıtıdır.',
+    questionStem: 'Veba doktorlarının taktığı "uzun gagalı maske", dönemin tıp anlayışı hakkında neyi ifşa etmektedir?',
+    options: [
+      'Kuşların veba hastalığının asıl taşıyıcısı olduğunun o dönemde çok iyi bilindiğini',
+      'Doktorların hastaları psikolojik olarak korkutup onlardan daha fazla para koparma niyetini',
+      'Gerçek bulaşma yollarının (virüs/pire) bilinmemesi yüzünden, hastalığın "kötü kokudan" bulaştığı gibi yanlış bir inanca (cehalete) dayanılarak üretilen tamamen işlevsiz ve trajikomik bir korunma çabasını',
+      'Dönemin deri işçiliğinin ve terziliğinin günümüzden çok daha ileri bir teknolojiye sahip olduğunu'
+    ],
+    correct: 2,
+    explanation: 'Mikrop bilinmediği için hastalığın kötü kokudan geldiğini sanıp gagaya baharat doldurmaları; cehaletin ve yanlış inancın (miasma) ürettiği işlevsiz bir korunma çabasıdır.'
+  },
+  {
+    title: 'Yapay Zekâ ve Halüsinasyon (Özgüvenli Cehalet)',
+    passage: 'Bugün ChatGPT gibi gelişmiş yapay zekâ (Dil Modelleri) araçlarına çok spesifik bir konu sorduğunuzda, size kaynak göstererek muazzam bir yanıt verebilirler. Ancak bazen o kaynakları kontrol ettiğinizde, öyle bir kitabın veya yazarın aslında hiç var olmadığını görürsünüz! Yapay zekâ size kasten yalan söylemez (kötü niyetli değildir). O bir bilgi bankası değil, bir "kelime tahmin (olasılık) motorudur". "A kelimesinden sonra B gelmelidir" mantığıyla çalışır. Eğer doğru cevabı bulamazsa, sadece kulağa en mantıklı, en ikna edici gelecek kelimeleri yan yana dizerek o sahte gerçeği kusursuz bir özgüvenle uydurur. Bilgisayar bilimcileri buna "AI Halüsinasyonu" der. Makineler insanlaştıkça, sadece zekâmızı değil; gerçeği bilmediği halde biliyormuş gibi yapan o korkunç, kibirli ve "özgüvenli cehaletimizi" (uydurma yeteneğimizi) de kusursuzca kopyalamışlardır.',
+    questionStem: 'Yapay zekânın "Halüsinasyon" görmesi (sahte bilgi üretmesi), yapay zekânın çalışma mantığıyla ilgili hangi gerçeğe dayanmaktadır?',
+    options: [
+      'Yapay zekânın insanlığa zarar vermek için gizlice ve bilinçli olarak yalan haber yaymasına',
+      'Makinelerin veritabanlarının zamanla dolup silinerek hafıza kaybı yaşamasına',
+      'Yapay zekânın gerçeği (hakikati) kavrayan bir bilinç olmaması; sadece kelimelerin matematiksel olasılıklarını (yan yana gelişini) hesaplayan bir motor olduğu için, cevabı bilmediğinde kusursuz bir özgüvenle sahte kurgular (uydurmalar) üretmesine',
+      'İnsanların yapay zekâya bilerek yanlış bilgiler öğreterek onu sabote etme çabasına'
+    ],
+    correct: 2,
+    explanation: 'Yapay zekânın kasten yalan söylemediği, sadece olasılık/tahmin motoru olduğu için cevabı bilmediğinde kelimeleri mantıklıymış gibi dizerek uydurduğu (özgüvenli cehalet) açıklanmıştır.'
+  },
+  {
+    title: 'Ütopya (Olmayan Yer) ve Thomas More',
+    passage: 'Hepimiz "Ütopya" kelimesini; savaşın, yoksulluğun ve adaletsizliğin olmadığı, herkesin eşit ve mutlu yaşadığı o kusursuz rüya diyarı olarak kullanırız. Ancak bu kelimeyi 1516 yılında icat eden İngiliz düşünür Thomas More, aslında tarihin en zeki kelime oyunlarından (ironilerinden) birini yapmıştır. More, kitabında bu kusursuz adayı tasvir ederken, kelimeyi Yunanca "ou" (yok/olmayan) ve "topos" (yer) kelimelerini birleştirerek türetmiştir. Yani Ütopya kelime anlamıyla tam olarak "Olmayan Yer (Yok-Yer)" demektir! More bize şu acı gerçeği yüzyıllar öncesinden fısıldamıştır: İnsanoğlunun kurguladığı o tamamen eşit, acısız, sorunsuz ve kusursuz cennet hayali (sistemi), insan doğasının o bencil ve kusurlu gerçekliği yüzünden yeryüzünde "hiçbir zaman var olamayacak" kadar imkânsızdır.',
+    questionStem: 'Thomas More\'un "Ütopya" kelimesini türetirken kullandığı köken ("Olmayan Yer"), yazar tarafından nasıl bir felsefi itiraf (ironi) olarak yorumlanmıştır?',
+    options: [
+      'Kusursuz toplumların sadece adalarda ve denize kıyısı olan yerlerde kurulabileceği düşüncesi',
+      'İnsanın o bencil ve kusurlu doğası gereği; acısız, tamamen eşit ve kusursuz bir toplum hayalinin gerçek dünyada "asla var olamayacak" kadar imkânsız bir rüya (yalan) olduğunun edebi itirafı',
+      'Eski Yunancanın kelime türetmek için en yetersiz ve fakir dil olduğu gerçeği',
+      'Devlet yöneticilerinin her zaman halkın mutluluğu için gizli projeler ürettiği inancı'
+    ],
+    correct: 1,
+    explanation: 'Ütopya\'nın kelime anlamının "olmayan yer" olması; kusursuz/acısız bir sistemin insan doğasındaki kusurlar nedeniyle gerçek dünyada asla var olamayacağı gerçeğinin edebi/felsefi itirafıdır.'
+  },
+  {
+    title: 'Kayıp Kozmonotlar (Uzaydaki Sessiz Çığlıklar)',
+    passage: '1961\'de Yuri Gagarin uzaya çıkan ilk insan olarak dünya çapında kahraman ilan edildiğinde, Sovyetler Birliği kusursuz bir zafer kutluyordu. Ancak Soğuk Savaş\'ın dinleme istasyonlarındaki İtalyan radyo amatörleri (Judica-Cordiglia kardeşler), Gagarin\'den aylar öncesine ait kan dondurucu radyo sinyalleri kaydettiklerini iddia ettiler. Kayıtlarda, uzayın derinliklerinden gelen, nefes darlığı çeken, ateşler içinde yanarak "Bana yardım edin, yanıyorum, dünya ne kadar da uzak!" diye feryat eden kadın ve erkek kozmonotların sesleri duyuluyordu. Sovyetler başarısızlıkları asla kabul etmediği için bu iddiaları şiddetle reddetti. "Kayıp Kozmonotlar" teorisi kanıtlanamasa da, şu felsefi dehşeti kalbimize eker: Devletlerin "kusursuz başarı ve ulusal gurur" vitrini yaratmak uğruna, kendi evlatlarının uzayın sonsuzluğundaki o yanan, boğulan ve çaresiz feryatlarını (ve isimlerini) nasıl gözlerini kırpmadan tarihten silebileceğinin o karanlık ihtimali.',
+    questionStem: 'Kayıp Kozmonotlar teorisinin (ve kayıtların) toplumsal/siyasi bağlamda temsil ettiği asıl "dehşet verici ihtimal" nedir?',
+    options: [
+      'Radyo dalgalarının atmosfer dışında uzaylılar tarafından farklı frekanslara dönüştürülmesi',
+      'Otoritenin (devletlerin), ulusal gurur, propaganda ve "kusursuz başarı" vitrini yaratmak uğruna; başarısız olan kendi insanlarının acı dolu çığlıklarını ve ölümlerini (isimlerini) acımasızca tarihten silebilme (yok sayma) ihtimali',
+      'Uzay gemilerindeki oksijen tanklarının kadın astronotların kullanımına uygun tasarlanmamış olması',
+      'Amatör radyocuların devlet sırlarını kolayca çalarak zengin olabilmesi'
+    ],
+    correct: 1,
+    explanation: 'Sovyetlerin başarısızlığı kabul etmemesi ve çığlık atan kozmonotların isimlerini silmesi ihtimali; otoritenin ulusal gurur uğruna kendi evlatlarının ölümünü ve acısını tarihten silme (sansürleme) dehşetini temsil eder.'
+  },
+  {
+    title: 'Sonsuz Maymun Teoremi',
+    passage: 'Matematik ve felsefenin o baş döndürücü ihtimallerinden biri olan "Sonsuz Maymun Teoremi" şunu söyler: Bir daktilonun başına bir maymun oturtun. Eğer bu maymuna rastgele tuşlara basması için "sonsuz bir zaman" (sonsuz ömür) verirseniz, maymun hiçbir şey bilmemesine rağmen, eninde sonunda tuşlara yanlışlıkla o kadar kusursuz basacaktır ki, Shakespeare\'in tüm tiyatro oyunlarını kelimesi kelimesine (noktasına virgülüne kadar) hatasız bir şekilde yazacaktır! Bu deney maymunların zeki olduğunu anlatmaz. Anlattığı şey şudur: "Sonsuzluk" ve "Rastlantısallık" o kadar devasa, o kadar aklın sınırlarını aşan kavramlardır ki; sonsuz bir zaman çizgisinde, evrendeki en anlamlı, en estetik ve en kusursuz olayların (hayatın, sanatın, düzenin) ortaya çıkması için zeki bir yaratıcıya değil; sadece ve sadece kör tesadüflerin durmaksızın çarpışmasına ihtiyaç vardır.',
+    questionStem: 'Sonsuz Maymun Teoremi\'nin "rastlantısallık ve sonsuzluk" üzerinden kanıtlamaya çalıştığı felsefi çıkarım nedir?',
+    options: [
+      'Hayvanların (özellikle maymunların) eğitildiklerinde insanlardan daha sanatsal eserler üretebileceği',
+      'Klasik edebiyat eserlerinin aslında çok basit bir kelime hazinesiyle yazılmış olduğu',
+      'Zamanın sonsuz olduğu ve denemelerin sınırsızca tekrarlandığı bir düzende (rastlantısallıkta); en anlamlı, en karmaşık ve kusursuz sonuçların (düzenin) bilinçli bir tasarıma gerek kalmadan sadece kör tesadüflerle bile oluşabileceğinin matematiksel gerçeği',
+      'Daktilo ve bilgisayar gibi mekanik aletlerin insan beyninin düşünme şeklini bozduğu'
+    ],
+    correct: 2,
+    explanation: 'Sonsuz zamanda rastgele tuşlara basarak bir başyapıt çıkması; sonsuzluk ve rastlantısallık içinde, en anlamlı/kusursuz şeylerin bilinçli tasarıma gerek kalmadan sadece kör tesadüflerle ortaya çıkabileceğini gösterir.'
+  },
+  {
+    title: 'Fregoli Sendromu (Tek Kişilik Tiyatro)',
+    passage: 'Capgras sendromunun tam tersi olan, ancak çok daha paranoyak bir nörolojik bozukluk vardır: "Fregoli Sendromu". Bu hastalığa yakalanan kişi, etrafındaki herkesin (bakkalın, postacının, doktorun ve yoldan geçenlerin) aslında tek bir kişi olduğuna, bu "kötü niyetli düşmanın" sürekli farklı kılıklara girerek (makyaj yaparak) onu izlediğine ve onu kandırmaya çalıştığına inanır. Hastanın beynindeki yüz tanıma merkezi, tanıdık bir yüz ile tamamen yabancı bir yüzü birbirinden ayırt edemez. Hasta, milyarlarca insanın yaşadığı bir dünyada değil; başrolünde kendisinin olduğu ve diğer tüm figüranların aslında "onu mahvetmek isteyen tek bir hayalet (taklitçi)" olduğu kan dondurucu ve tek kişilik bir tiyatroda (paranoyada) hapsolmuştur. Beynin kurduğu kurgu, gerçeğin kendisinden çok daha güçlü bir gardiyandır.',
+    questionStem: 'Fregoli Sendromu\'na yakalanan bir hastanın yaşadığı gerçeklik algısındaki (kâbustaki) asıl bozulma nedir?',
+    options: [
+      'Hastanın kendi yüzünü aynada tanıyamayarak kimliğini tamamen unutması',
+      'Beynin yüz tanıma mekanizmasındaki hata nedeniyle; etraftaki tüm farklı insanların aslında sürekli kılık değiştiren, hastayı takip eden tek bir düşman (taklitçi) olduğuna inanarak yaşanan o tek kişilik, devasa ve paranoyak tiyatro hissi',
+      'Kalabalık ortamlarda seslerin birbirine karışmasıyla hastanın duyma yetisini kaybetmesi',
+      'Kişinin geçmişte tanıdığı herkesi ölmüş olarak görmesi ve yas tutması'
+    ],
+    correct: 1,
+    explanation: 'Tüm farklı insanların aslında sürekli kılık değiştiren tek bir düşman (taklitçi) olduğuna inanması; beynin yüz tanıma hatası yüzünden kişiyi devasa, paranoyak ve tek kişilik bir kâbusa hapsetmesidir.'
+  },
+  {
+    title: 'Kolomb\'un Yumurtası (Geriye Bakış Yanılgısı)',
+    passage: 'Kristof Kolomb Amerika\'yı keşfedip döndüğünde, bir ziyafette onu kıskanan asilzadeler şöyle der: "Bunda büyütecek ne var? Sürekli batıya gidince o toprakları herkes bulabilirdi, çok basit bir iş." Kolomb gülümser ve masadakilere haşlanmış bir yumurta vererek, "Bunu masanın üzerinde dik tutabilir misiniz?" diye sorar. Herkes dener, yumurta devrilir, kimse yapamaz ve "Bu imkânsız!" derler. Kolomb yumurtayı alır, altını hafifçe masaya vurup kırarak yumurtayı dik bir şekilde masaya oturtur. Herkes itiraz eder: "Ama böyle kırarak biz de yapardık!" Kolomb tarihi cevabını verir: "Evet yapardınız, ama yapmadınız; ben yaptım." "Kolomb\'un Yumurtası" hikâyesi; devrim yaratan, büyük ve dâhiyane fikirlerin "yapıldıktan sonra" herkese çok basitmiş gibi görünmesi (Geriye Bakış Yanılgısı) ve kibrin, başkasının dehasını küçümseme çabasının o ucuz riyakârlığıdır.',
+    questionStem: 'Kolomb\'un Yumurtası hikâyesi, başarılı eylemler sonrasında toplumun (kıskanç kalabalığın) sergilediği hangi psikolojik zaafı (yanılgıyı) eleştirir?',
+    options: [
+      'Yumurta ve tarım ürünlerinin israf edilmesinin ahlaki bir suç olduğu düşüncesini',
+      'Bir sorun veya keşif başarıyla çözüldükten sonra; "Zaten çok basitti, ben de yapardım" diyerek, o ilk cesareti ve yaratıcı dehayı (vizyonu) küçümsemeye çalışan o kıskanç "geriye bakış (hindsight) yanılgısını"',
+      'Zenginlerin ve soyluların denizcilik bilgisinin her zaman yetersiz olduğunu',
+      'Büyük keşiflerin her zaman şans eseri ve tesadüfen bulunduğunu'
+    ],
+    correct: 1,
+    explanation: 'Çözüm gösterildikten sonra "kırarak biz de yapardık" denmesi; devrim yaratan vizyonun "yapıldıktan sonra" herkese basitmiş gibi görünmesini (geriye bakış yanılgısını) ve kıskanç kibri eleştirir.'
+  },
+  {
+    title: 'Kara Kutu Çelişkisi',
+    passage: 'Uçak kazalarından sonra haber bültenlerinde hep aynı umutlu cümleyi duyarız: "Ekipler Kara Kutu\'yu arıyor." İnsanlar bu aletin renginin siyah olduğunu ve uçağın gizli, karanlık bir köşesinde saklandığını düşünür. Oysa Kara Kutu (Uçuş Veri Kaydedicisi) siyah değil, enkazın içinde kolayca bulunabilsin diye "fosforlu, parlak bir turuncudur". İşin felsefi ve trajik tarafı ise şudur: Kara Kutu o kadar dayanıklı üretilmiştir ki; ateşe, okyanus dibindeki basınca ve binlerce metreden yere çakılmaya karşı direnir ve içindeki "veriyi" sapasağlam korur. Ancak o devasa uçağın içindeki asıl değerli olan "insan bedeni (can)", o kazada saniyeler içinde kül olur. İnsanoğlu, kendi ürettiği veri kayıt cihazını ölümsüzleştirmeyi başarmış, ancak bizzat kendi etten bedenini (yaşamı) o enkazdan kurtaracak teknolojiyi asla yaratamamıştır.',
+    questionStem: 'Kara Kutu kavramının anlatıldığı bu parçadaki asıl "teknolojik ve varoluşsal ironi" nedir?',
+    options: [
+      'Kutunun aslında siyah değil turuncu olması nedeniyle arama ekiplerinin genellikle yanlış nesnelere yönelmesi',
+      'İnsanoğlunun kaza anında (donanımsal verileri) kurtaracak kusursuz ve ölümsüz (dayanıklı) bir teknoloji üretmeyi başarmasına rağmen; asıl korunması gereken o kırılgan insan bedenini (kendi canını) kurtarmakta çaresiz kalması ironisi',
+      'Pilotların uçuş verilerini bilerek silip kazaların gerçek nedenlerini saklama ihtimalinin bulunması',
+      'Teknolojik kayıtların insan anılarından çok daha yanıltıcı veriler sunması'
+    ],
+    correct: 1,
+    explanation: 'Kutunun (verinin) ateşe/darbeye dayanıp ölümsüz olması ancak asıl korunması gereken insan bedeninin (canın) kül olması; teknolojinin veriyi koruyup canı koruyamaması ironisini vurgular.'
+  },
+  {
+    title: 'Yeni Söylem (Newspeak - 1984)',
+    passage: 'George Orwell\'in 1984 romanındaki diktatör rejimin (Parti\'nin) en sinsi ve yıkıcı silahı silahlar veya kameralar değil, bizzat dilin kendisidir. Parti, İngilizceyi daraltıp "Yenisöylem" (Newspeak) adında yeni bir dil yaratır. Amaç, her yıl sözlükten yüzlerce kelimeyi çıkarıp yok etmektir. "Özgürlük", "İsyan", "Adalet" gibi kelimeler sözlükten silindiğinde, insanların zihninde bu kavramlara dair düşünceler de tamamen silinir. Çünkü insan, adını bilmediği (kelimesine sahip olmadığı) bir şeyi hayal edemez ve hissedemez! Eğer "özgürlük" kelimesi yoksa, özgürlüğü isteyemezsiniz; eğer "isyan" kelimesi yoksa, isyan planlayamazsınız. Yenisöylem bize şunu haykırır: Bir toplumu köleleştirmek için onları demir parmaklıklar ardına koymanıza gerek yoktur; kelime dağarcıklarını fakirleştirmeniz (dillerini kısırlaştırmanız), onların zihinlerini ebedi bir hücreye tıkmak için fazlasıyla yeterlidir.',
+    questionStem: 'Orwell\'in "Yenisöylem" (Newspeak) kavramı, dil ve düşünce (özgürlük) arasındaki ilişkiye dair nasıl bir tehlikeyi işaret eder?',
+    options: [
+      'Yabancı kelimelerin dilden çıkarılmasının ülkenin kültürel yapısını bozmasını',
+      'Bir dildeki kelime dağarcığı daraltıldığında (ve kavramlar silindiğinde), o dili konuşan insanların o kelimelere ait (özgürlük, isyan gibi) düşünceleri ve duyguları üretemeyecek kadar zihinsel bir felce (köleliğe) sürükleneceğini',
+      'Kısa cümleler kurmanın insanlarda hafıza kaybına ve Alzheimer hastalığına neden olduğunu',
+      'Eski edebiyat eserlerinin modern kelimelerle sadeleştirilmesinin sanatı yok ettiğini'
+    ],
+    correct: 1,
+    explanation: '"İnsan adını bilmediği şeyi hayal edemez" mantığıyla; kelimelerin silinmesinin, o kelimelere ait düşünceleri (özgürlüğü) yok ettiği ve dili fakirleştirmenin zihni köleleştirdiği tehlikesini işaret eder.'
+  },
+  {
+    title: 'Dördüncü Duvarın Yıkılması (Tiyatronun İllüzyonu)',
+    passage: 'Tiyatro sahnesinin üç tarafı kapalıdır; dördüncü tarafı ise seyirciye açılan "görünmez bir duvar" gibidir. Oyuncular, seyircilerin orada olduğunu bilmelerine rağmen, o dördüncü duvarın arkasını (karanlıktaki seyirciyi) asla görmezden gelir ve kendi kurgusal dünyalarında (illüzyonda) yaşamaya devam ederler. Ancak bazen bir karakter aniden oyunun ortasında sahnenin dışına bakar, doğrudan seyircinin gözünün içine dikilir ve onlara bir şey söyler. Buna "Dördüncü Duvarın Yıkılması" denir. O an izleyici büyük bir şok yaşar; çünkü güvenli ve pasif bir röntgenci (izleyici) olduğu o karanlık koltukta, birdenbire kurgunun (yalanın) içine çekilmiş ve oyunun bir parçası haline gelmiştir. Bu eylem; sanattaki (ve hayattaki) o "ben sadece bir seyirciyim, bu beni ilgilendirmez" diyen sığ ve pasif kibrimizi suratımıza çarparak yıkan sarsıcı bir uyanış anıdır.',
+    questionStem: '"Dördüncü Duvarın Yıkılması" eyleminin, izleyici üzerinde yarattığı asıl felsefi/psikolojik etki parçada nasıl tanımlanmıştır?',
+    options: [
+      'Oyuncunun repliklerini unutarak seyirciden yardım istemesinin getirdiği amatörce bir tiyatro kazası',
+      'İzleyicinin karanlıkta oturan, pasif ve güvenli bir "seyirci (röntgenci)" olma konforunu yerle bir ederek; onu doğrudan hikâyenin (gerçekliğin/yalanın) içine çekip yüzleştiren sarsıcı bir uyanış (şok) anı',
+      'Tiyatro salonlarının mimari olarak çok kötü tasarlanmasından doğan görsel bir illüzyon',
+      'Seyircilerin sahneye atlayarak oyunun akışını ve dekoru tamamen bozma eylemi'
+    ],
+    correct: 1,
+    explanation: 'Karakterin seyirciye bakıp o görünmez duvarı kırması; izleyicinin pasif ("bu beni ilgilendirmez") konfor alanını yıkarak onu kurgunun/yüzleşmenin içine çekmesi (sarsıcı uyanış) olarak tanımlanmıştır.'
+  },
+  {
+    title: 'Macondo Yağmurları (Zamanın Döngüsü)',
+    passage: 'Gabriel García Márquez\'in Büyülü Gerçekçilik başyapıtı "Yüzyıllık Yalnızlık"ta, kurgusal Macondo kasabasına tam dört yıl on bir ay iki gün boyunca aralıksız yağmur yağar. Her şey çürür, gökyüzü kapanır. Ancak yağmur bittiğinde ve kasaba tekrar kurulduğunda, Ursula karakteri o ürpertici tespiti yapar: "Zaman geçmiyor, sadece dönüyor." Macondo halkı, ne kadar acı çekerse çeksin, hangi savaşları yaşarsa yaşasın; geçmişin hatalarını, ihtiraslarını ve cinnetlerini aynı genetik kodla, sanki hiç ders almamışçasına nesilden nesile kusursuz bir şekilde tekrarlamaktadır. Macondo\'nun o boğucu yağmurları ve döngüsü; insanoğlunun, sürekli "ileriye (geleceğe)" gittiğini sanırken, aslında kendi unutkanlığı, hırsı ve cehaleti yüzünden aynı hataların etrafında dönüp duran yorgun ve hüzünlü bir sirk atından farksız olduğunu gösterir.',
+    questionStem: 'Ursula karakterinin "Zaman geçmiyor, sadece dönüyor" tespiti, insanlık tarihi (ve Macondo) hakkında hangi kötümser (döngüsel) gerçeği vurgular?',
+    options: [
+      'İklim değişikliklerinin kasabada kalıcı hasarlar bırakarak insanları göçe zorlamasını',
+      'İnsanoğlunun hatalarından asla ders almadığını ve geleceğe ilerlediğini (ilerleme mitini) sanırken, aslında kendi ihtirasları ve cehaletiyle geçmişteki aynı felaketleri ve yanlışları sonsuz bir döngüde tekrarladığını',
+      'Kolombiya\'daki zaman ölçüm aletlerinin (saatlerin) savaşlar yüzünden tamamen bozulmasını',
+      'Yağmurlu havaların insan psikolojisini bozarak onların zaman algısını yavaşlatmasını'
+    ],
+    correct: 1,
+    explanation: '"Zaman geçmiyor dönüyor" sözü; insanın ilerlediğini (geliştiğini) sanmasına rağmen aynı hataları ve cinneti ders almadan nesilden nesile tekrar etmesini (döngüsel çöküşü) vurgular.'
+  },
+  {
+    title: 'Kargo Kültü Bilimi (Feynman\'ın Uyarısı)',
+    passage: 'Fizikçi Richard Feynman, Pasifik yerlilerinin uçakları geri getirmek için ahşaptan kuleler yapmasını (Kargo Kültlerini) anlattıktan sonra namlusunu doğrudan modern bilim dünyasına çevirdi. Feynman\'a göre akademide, laboratuvarlarda ve şirketlerde yapılan birçok araştırma "Kargo Kültü Bilimi"dir. İnsanlar, bilimsel görünmek için süslü kelimeler kullanır, karmaşık anketler yapar, gösterişli grafikler çizer (yani ahşaptan kontrol kuleleri inşa ederler). Dışarıdan bakıldığında her şey kusursuz bir "bilim" gibi görünür; tek bir eksik vardır: "Dürüstlük ve Şüphe". Araştırmacı, kendi teorisini çürütecek verileri saklıyor, sadece alkış alacak sonuçları yayımlıyorsa; o kişi bilim yapmıyordur. O kişi, beyaz önlük giyip sahte havalimanlarında uçak (kargo) bekleyen, gerçeğin değil sadece "gösterişin ve şöhretin" kurbanı olmuş modern bir şarlatandır.',
+    questionStem: 'Feynman\'ın "Kargo Kültü Bilimi" eleştirisi, modern bilim insanlarının (veya akademinin) hangi sahte ve tehlikeli tutumunu hedef alır?',
+    options: [
+      'Üniversitelerin bütçe yetersizliğinden dolayı araştırma malzemesi alamayıp ahşap (ilkel) aletler kullanmasını',
+      'Bilimin o dürüst, eleştirel ve şüpheci (hakikat arayan) özünü kaybederek; sadece şekilsel olarak (süslü grafikler ve terimlerle) bilim yapıyormuş gibi görünme şovunu (ve kendi teorisini aklama sahtekârlığını)',
+      'Fizikçilerin yerli kabilelerin dinlerine ve inançlarına karşı saygısızca alay etmesini',
+      'Laboratuvarlarda eski ve modası geçmiş deney yöntemlerinin inatla kullanılmaya devam edilmesini'
+    ],
+    correct: 1,
+    explanation: 'Süslü grafik ve kelime kullanıp ama dürüstlüğü/şüpheyi yok sayanların (teorisini çürütecek veriyi saklayanların), bilim yapmayıp sadece "bilim yapıyormuş gibi" (sahte/şekilsel) gösteriş yapmasını hedef alır.'
+  },
+  {
+    title: 'Oidipus Kompleksi (Kaderden Kaçarken Kadere Koşmak)',
+    passage: 'Yunan mitolojisinde Thebai Kralı Laios, bir kâhinden "Yeni doğan oğlun seni öldürecek ve karınla evlenecek" kehanetini duyar. Dehşete kapılan kral, kaderi engellemek için bebeği (Oidipus\'u) ayaklarından bağlayıp ıssız bir dağa terk eder. Ancak bebek bir çoban tarafından bulunur ve başka bir ülkenin kralına evlatlık verilir. Yıllar sonra Oidipus, aynı kehaneti öğrenir ve "üvey" olduğunu bilmediği o ailesine zarar vermemek için evden (ülkesinden) kaçar. Kaçarken yolda kavga ettiği yaşlı bir adamı (gerçek babasını) öldürür ve Thebai kentine giderek kraliçeyle (gerçek annesiyle) evlenir. Oidipus efsanesi (ve Freud\'un psikanalitik kompleksi); insanın, kaderden (veya korkularından) kaçmak için aldığı her çırpınışlı ve mantıklı kararın, aslında onu ilmek ilmek o kaçtığı korkunç sonun ta merkezine kendi ayaklarıyla götürdüğü (Kendini Gerçekleştiren Kehanet) o kusursuz ve acımasız kurguyu sembolize eder.',
+    questionStem: 'Oidipus mitinin temelinde yatan ve "Kader" anlayışına getirilen o acımasız (ironik) yaklaşım nedir?',
+    options: [
+      'Kehanetlerin her zaman yanlış çıkarak insanları boş yere korkuttuğu (kahinlerin yalan söylediği) gerçeği',
+      'Tanrıların insanların kararlarına fiziksel olarak müdahale edip onları köleleştirdiği',
+      'İnsanın, kendisi için çizilen o kötü sondan (kaderden) kaçmak (onu engellemek) amacıyla attığı her kaçış adımının, paradoksal olarak (kendini gerçekleştiren kehanet misali) o korkunç sonu bizzat kendi elleriyle inşa etmesini sağlaması',
+      'Küçük yaşta aileden ayrılan çocukların her zaman psikolojik sorunlar yaşayıp suça meyilli olması'
+    ],
+    correct: 2,
+    explanation: 'Babası çocuğu atarak, çocuk ise kaçarak kehaneti engellemeye çalışmış; ancak bu "kaçış çabalarının" kendisi o kehanetin (kaderin) gerçekleşmesinin asıl sebebi olmuştur (ironik yaklaşım).'
+  },
+  {
+    title: 'Borges ve Kum Kitabı',
+    passage: 'Jorge Luis Borges, "Kum Kitabı" adlı öyküsünde esrarengiz bir İncil satıcısının getirdiği bir kitaptan bahseder. Bu kitabın başı veya sonu yoktur. Herhangi bir sayfasını açtığınızda karşınıza rastgele kelimeler ve tuhaf resimler çıkar; ancak o sayfayı kapatıp tekrar açtığınızda o sayfa sonsuza dek kaybolur, yerine tamamen yepyeni bir sayfa gelir! Tıpkı kum taneleri gibi ele avuca sığmayan ve durmaksızın değişen bu sonsuz kitap, başta ana karakteri büyüler. Ancak zamanla bu "sonsuzluk", karakteri deliliğe, uykusuzluğa ve paranoyaya sürükler. Sonunda dayanamayıp kitabı kütüphanenin en karanlık rafına saklar. Kum Kitabı; sınırları olmayan, başlangıcı ve sonu (düzeni) bulunmayan "sonsuzluğun ve anlamsızlığın", insan zihni için bir aydınlanma değil, başa çıkılamaz, dehşet verici ve akıl hastası eden bir kâbus olduğunu fısıldar.',
+    questionStem: 'Borges\'in "Kum Kitabı" metaforu, insan zihni ve "sonsuzluk (sınırsızlık)" ilişkisi hakkında neyi iddia etmektedir?',
+    options: [
+      'İnsan beyninin evrendeki tüm bilgileri rahatlıkla öğrenebilecek kapasitede olduğunu',
+      'Başlangıcı, sonu (düzeni) ve sınırları olmayan "sonsuz" bir bilgi (veya yapı) kaynağının; insan zihnini aydınlatmak yerine onu felç ederek, dehşete (deliliğe ve anlamsızlığa) sürükleyen dayanılmaz bir kâbus olduğunu',
+      'Kitapların zamanla dijital ortama aktarılmasının okuma alışkanlıklarını yok ettiğini',
+      'Yabancı dillerde yazılmış eserlerin tercüme edilmesinin orijinal anlamı bozduğunu'
+    ],
+    correct: 1,
+    explanation: 'Sayfaları sonsuz olan (başı sonu olmayan) kitabın adamı delirtmesi; insan zihninin "düzeni ve sınırı" olmayan sonsuzluk/bilgi karşısında aydınlanmak yerine felç olup delirdiğini (dayanamadığını) iddia eder.'
+  },
+  {
+    title: 'Tarihsel Revizyonizm (Geçmişin Yeniden Yazılması)',
+    passage: 'George Orwell\'in "1984" adlı kâbus evreninde, başkarakter Winston Smith\'in görevi "Tarihi yeniden yazmaktır." Eğer devletin lideri (Büyük Birader) üç ay önce ekonomik kotaların artacağını söylemiş ama aslında ekonomi çökmüşse; Winston eski gazeteleri arşivden bulur, o cümleyi siler ve "Ekonomi düşecek" şeklinde değiştirip yeniden basar. Eski gazete yakılır. Devlet hiçbir zaman hata yapmamış olur. Orwell\'in bu kehaneti (Tarihsel Revizyonizm), sadece distopik romanlarda değil, günümüz dijital dünyasında da en büyük tehlikedir. İktidarın (veya güç sahiplerinin), hatalarını gizlemek ve bugünkü politikalarını meşrulaştırmak uğruna, "geçmişi (arşivi)" sürekli olarak kendi menfaatine göre eğip bükerek değiştirmesidir. Orwell\'in dediği gibi: "Geçmişi kontrol eden geleceği kontrol eder; bugünü kontrol eden geçmişi kontrol eder."',
+    questionStem: 'Orwell\'in "Tarihsel Revizyonizm" (geçmişin değiştirilmesi) kavramıyla dikkat çektiği en büyük toplumsal/siyasi tehlike nedir?',
+    options: [
+      'Eski gazetelerin ve kâğıtların saklanmasının arşivlerde yer darlığı yaratması',
+      'Yazarların ve gazetecilerin düşük maaşlarla zor şartlarda çalıştırılması',
+      'Otoritenin (iktidarın), kendi bugünkü hatalarını örtmek ve gücünü korumak (geleceği şekillendirmek) adına, toplumun objektif hafızasını (geçmişi/gerçeği) sürekli olarak silip kendi çıkarlarına göre yeniden kurgulaması (yalanı hakikat yapması)',
+      'Edebiyat eserlerinde sürekli olarak kötümser (distopik) bir dilin kullanılarak halkın moralinin bozulması'
+    ],
+    correct: 2,
+    explanation: 'Winston\'ın devlet hata yapmamış gibi eski gazeteleri değiştirip basması; otoritenin kendi gücünü/bugününü meşrulaştırmak için toplumun hafızasını (geçmişi) kasten büküp yalanı gerçeğe dönüştürmesi tehlikesidir.'
+  },
+  {
+    title: 'Mistik Şarlatanlık (Grigori Rasputin)',
+    passage: 'Rus Çarlığı\'nın son yıllarında, sibiryalı bir köylü olan Grigori Rasputin saraya girmeyi başardı. Çariçe\'nin hemofili hastası oğlunu "dualarla ve mistik dokunuşlarla" iyileştirdiğine inandırarak, koca bir imparatorluğun kararlarında söz sahibi oldu. Eğitimli doktorlar ve devlet adamları çaresizce kenara itilirken, yıkanmayı bile reddeden bu "kutsal adam", kimin bakan olacağına veya savaşa girilip girilmeyeceğine karar verir hale geldi. Rasputin\'in bu akılalmaz yükselişi, onun çok güçlü bir büyücü olmasından değil; çöküşün eşiğindeki, çaresiz ve korku içindeki bir toplumun (veya yöneticilerin), aklın bittiği yerde o "sihirli, mistik ve kestirme" çözümlere (şarlatanlara) inanmaya ne kadar muhtaç (ve gönüllü) olduğunun tarihi ve kanlı belgesidir.',
+    questionStem: 'Rasputin\'in Rus sarayındaki yükselişi, yazar tarafından toplum ve "çaresizlik" bağlamında neyin sembolü olarak yorumlanmıştır?',
+    options: [
+      'Geleneksel bitkisel tedavilerin modern tıptan her zaman daha başarılı sonuçlar verdiğinin',
+      'Saray entrikalarının ve suikast planlarının her dönemde devlet yönetiminin ayrılmaz bir parçası olduğunun',
+      'Korku, kriz ve çaresizlik içindeki bir toplumun (veya elitlerin); akılcı ve zor çözümler yerine, onlara sahte umutlar sunan "mistik, sihirli ve kestirme" şarlatanlıklara boyun eğme (inanma) zaafının',
+      'Sibiryalı köylülerin aristokratlara göre çok daha zeki ve manipülatif olduğunun'
+    ],
+    correct: 2,
+    explanation: 'Çaresiz kalan çariçenin doktorları bırakıp Rasputin\'e inanması; kriz ve çaresizlik anında insanların aklı bırakıp mistik ve sahte kurtarıcılara (şarlatanlara) sığınma zaafını (ihtiyacını) sembolize eder.'
+  }
+];
+
+export const felsefeParagrafSorulari24: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_24.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_24[idx];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-felsefe24-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
+const PARAGRAPH_THEMES_25 = [
+  {
+    title: 'Ekmek ve Sirk (Panem et Circenses)',
+    passage: 'Antik Roma\'da imparatorluk çökerken, yolsuzluklar artarken ve sınırlar düşerken, Romalı şair Juvenalis halkın neden isyan etmediğini tek bir sarsıcı cümleyle açıklar: "Panem et Circenses" (Ekmek ve Sirk). İmparatorlar, halkın siyaseti sorgulamasını engellemek için onlara bedava tahıl dağıtıyor ve Kolezyum\'da kanlı gladyatör dövüşleri (eğlence) sunuyordu. Karnı doyan ve vahşetle eğlendirilen kalabalıklar, özgürlüklerinin ve haklarının ellerinden alınışını neşeyle alkışlıyordu. Juvenalis\'in bu tespiti; modern çağın televizyon şovlarına, ucuz tüketim kültürüne ve sosyal medyasına tutulan acımasız bir aynadır: İnsanlar, sahte hazlarla uyuşturulduklarında, kendi köleliklerini gönüllü olarak ve gülümseyerek kabul ederler.',
+    questionStem: 'Juvenalis\'in "Ekmek ve Sirk" kavramı, otoritenin toplumu kontrol etme yöntemi hakkında neyi eleştirmektedir?',
+    options: [
+      'Halkın her zaman sanata ve kültüre spordan daha fazla değer verdiğini',
+      'Yöneticilerin, halkın karnını (ucuz gıdayla) doyurup zihnini (sığ eğlencelerle) uyuşturarak; onların eleştirel düşünme, isyan etme ve özgürlük arayışlarını nasıl uyuşturup yok ettiğini',
+      'Antik Roma\'da gladyatörlerin siyasetçilerden daha güçlü bir konuma geldiğini',
+      'Ekonomik krizlerin her zaman halk isyanlarıyla sonuçlandığı efsanesini'
+    ],
+    correct: 1,
+    explanation: 'Bedava gıda ve eğlenceyle halkın isyan etmesinin (sorgulamasının) engellenmesi; otoritenin sığ hazlar sunarak toplumu nasıl uyuşturup köleleştirdiğini eleştirir.'
+  },
+  {
+    title: 'Hipergerçeklik ve Simülakr (Baudrillard)',
+    passage: 'Fransız sosyolog Jean Baudrillard, günümüz dünyasını anlatmak için "Simülakr" (gerçeği olmayan kopya) kavramını kullanır. Ona göre medya ve reklamlar öylesine devasa bir kurgu yaratmıştır ki, artık "gerçek" tamamen ölmüş, yerini gerçeğinden daha kusursuz ve cazip olan "Hipergerçeklik" almıştır. Baudrillard, Disneyland\'ı buna en iyi örnek olarak gösterir. İnsanlar Disneyland\'a gidip oranın "sahte, hayali bir dünya" olduğunu düşünerek eğlenirler. Oysa Baudrillard\'a göre asıl korkunç illüzyon şudur: Disneyland\'ın asıl amacı kendisinin sahte olduğunu düşündürmek değil; dışarıdaki asıl Amerika\'nın, şehirlerin ve hayatlarımızın "hala gerçek olduğuna" bizi inandırmak için uydurulmuş bir paravandır. Aslında dışarısı da Disneyland kadar sahtedir; biz sadece bunu kabullenmekten korkarız.',
+    questionStem: 'Baudrillard\'ın Disneyland üzerinden yaptığı "Hipergerçeklik" eleştirisinin asıl felsefi şoku nedir?',
+    options: [
+      'Eğlence parklarının mimari olarak çok başarısız yapılar olduğunu kanıtlaması',
+      'Disneyland\'ın "sahte" bir yer olmasından ziyade; onun asıl işlevinin, dışarıdaki gerçek dünyanın (hayatlarımızın) aslında çoktan sahteleşip kurguya (hipergerçekliğe) dönüştüğü gerçeğini bizden gizleyen psikolojik bir kalkan olması',
+      'İnsanların sadece çizgi film karakterleriyle bağ kurabilen çocuksu varlıklara dönüşmesi',
+      'Amerika\'daki tüketim kültürünün diğer kıtalardan daha geride kalması'
+    ],
+    correct: 1,
+    explanation: 'Disneyland\'ın sahteliğinin, aslında dışarıdaki hayatlarımızın da tamamen sahteleştiği (hipergerçekliğe dönüştüğü) gerçeğini gizlemek (bizi dışarının gerçek olduğuna inandırmak) için var olduğu tezi felsefi şoktur.'
+  },
+  {
+    title: 'Ota Benga\'nın Trajedisi (İnsanat Bahçesi)',
+    passage: '1906 yılında, medeniyetin başkenti sayılan New York\'taki Bronx Hayvanat Bahçesi\'nde, on binlerce "aydın ve modern" insan bir kafesin önünde kuyruğa girdi. Kafesin içinde vahşi bir hayvan değil; Kongo\'dan kaçırılarak getirilen 23 yaşındaki Afrikalı bir Pigme olan Ota Benga vardı. Yere serilmiş kemiklerin arasında, bir şempanzeyle aynı kafese konulmuş ve Darwin\'in "insan evriminin en alt basamağı" olarak bir sirk hayvanı gibi sergilenmişti. Ziyaretçiler ona gülüyor ve taş atıyordu. Ota Benga birkaç yıl sonra kalbine bir kurşun sıkarak intihar etti. Bu kan donduran olay; medeniyet ve bilim maskesi altına sığınan o "elit ve kibirli" Batı ırkçılığının, bir insanı nasıl vahşi bir hayvandan daha iğrenç (ve canavarca) bir sömürü nesnesine dönüştürebildiğinin en karanlık çığlığıdır.',
+    questionStem: 'Ota Benga\'nın hayvanat bahçesinde sergilenmesi, Batı medeniyetinin hangi yüzünü acımasızca ifşa eder?',
+    options: [
+      'Bilimin ve zoolojinin o dönemde hayvan türlerini koruma konusunda çok hassas davrandığını',
+      'Afrika kıtasından getirilen insanların iklim şartlarına uyum sağlayamama sorununu',
+      'Medeniyet, evrim bilimi ve elitizm maskesi altına gizlenmiş olan o vahşi, kibrli ve acımasız ırkçılığın; bir insan onurunu bile sirklere (kafeslere) düşürecek kadar canavarlaşabildiğini',
+      'Amerikan halkının Afrika kültürüne duyduğu yoğun hayranlığı ve merakı'
+    ],
+    correct: 2,
+    explanation: 'Bir insanın şempanzeyle aynı kafeste sergilenip aşağılanması; bilim ve medeniyet maskesi altındaki elit ırkçılığın ne kadar canavarca ve sömürücü (insanlık dışı) olduğunu ifşa eder.'
+  },
+  {
+    title: 'Hilbert\'in Sonsuz Odalı Oteli',
+    passage: 'Alman matematikçi David Hilbert, insan beyninin "sonsuzluk" kavramını kavrayamayacağını kanıtlamak için bir düşünce deneyi kurgular: "Sonsuz Odalı Otel". Bu otelde sonsuz sayıda oda vardır ve hepsi doludur. Otele yeni bir müşteri gelir ve boş oda ister. Resepsiyonist "Tabii ki" der. 1 numaralı odadaki müşteriyi 2 numaraya, 2\'dekini 3\'e, 3\'tekini 4\'e geçirerek... bu işlemi sonsuza kadar kaydırır ve 1 numaralı odayı yeni müşteriye boşaltır! Otel hem tamamen dolu hem de her zaman yeni birine yer vardır. Hilbert bu sarsıcı hikâyeyle bize şunu fısıldar: Sonsuzluk çok büyük bir "sayı" değildir; o, insan aklının, sağduyunun ve klasik matematiğin sınırlarının tamamen parçalandığı (akıl almaz) bambaşka bir boyuttur.',
+    questionStem: 'Hilbert\'in Sonsuz Odalı Oteli düşünce deneyinin matematik ve felsefe açısından asıl amacı nedir?',
+    options: [
+      'Turizm sektöründe kapasite planlamasının ne kadar hatalı yapıldığını göstermek',
+      'Sonsuzluğun (infinity), bildiğimiz günlük sayılar gibi mantıksal kurallarla işleyen bir çokluk değil; insan sağduyusunu ve klasik matematiğin mantığını felç eden (yıkan) kuralsız ve farklı bir boyut olduğunu kanıtlamak',
+      'Uzaydaki gezegen sayısının asla kesin olarak hesaplanamayacağını ispatlamak',
+      'Matematikçilerin gündelik hayatta sorun çözme yeteneklerinin zayıf olduğunu savunmak'
+    ],
+    correct: 1,
+    explanation: 'Dolu bir otelde sonsuz kişiye yer açılabilmesi paradoksu; sonsuzluğun büyük bir sayı değil, sağduyuyu/mantığı yıkan bambaşka (akıl almaz) bir boyut olduğunu kanıtlamak için tasarlanmıştır.'
+  },
+  {
+    title: 'Yüzüncü Maymun Efsanesi',
+    passage: 'Kişisel gelişim kitaplarında sıkça anlatılan tatlı bir masal vardır: Japonya\'nın bir adasında Macaque maymunları tatlı patatesleri yıkayarak yemeyi öğrenir. Bu davranışı öğrenen maymun sayısı tam "100"e ulaştığında, aniden sihirli (telepatik) bir şey olur ve kilometrelerce uzaktaki diğer adalarda bulunan, onlarla hiç temas etmeyen maymunlar da anında patateslerini yıkamaya başlar! Buna "Kolektif Bilinç Sıçraması" derler. Oysa gerçekte böyle bir şey hiç yaşanmamıştır. Davranış, diğer adalara sadece göç eden maymunlar aracılığıyla (fiziksel yolla) yıllar içinde yavaşça taşınmıştır. Yüzüncü Maymun Efsanesi; bilim dışı (New Age) şarlatanlıkların ve insanın, sıkıcı fiziksel gerçekler yerine "sihirli, mistik ve zahmetsiz (telepatik)" kurtuluş masallarına inanmaya ne kadar yatkın olduğunun kanıtıdır.',
+    questionStem: 'Yüzüncü Maymun hikâyesinin bilim dünyasında sahte (efsane) olarak kabul edilmesi, toplum psikolojisine dair hangi zaafı ifşa eder?',
+    options: [
+      'Hayvanların öğrenme hızının sandığımızdan çok daha düşük ve sınırlı olduğunu',
+      'İnsanoğlunun, gerçek (zahmetli/fiziksel) gelişim süreçlerini kabullenmek yerine; kulağa hoş gelen, sihirli ve mistik (zahmetsiz) kurgulara inanma ve onları yüceltme zaafını',
+      'Maymun türlerinin sadece kendi aralarında iletişim kurabilen kapalı bir toplum olduğunu',
+      'Japon bilim insanlarının yaptıkları araştırmaları dünyadan kasıtlı olarak sakladığını'
+    ],
+    correct: 1,
+    explanation: 'Telepatik (sihirli) bir sıçrama yaşanmadığı halde insanların buna inanması; zorlu/bilimsel gerçekler yerine zahmetsiz ve mistik kurgulara inanma zaafını (New Age şarlatanlığını) ifşa eder.'
+  },
+  {
+    title: 'Yabancılaşma (Karl Marx ve İşçi)',
+    passage: 'Karl Marx, Sanayi Devrimi\'ni incelerken kapitalizmin sadece ekonomik bir sömürü değil, ruhsal bir felaket olduğunu "Yabancılaşma" (Alienation) kavramıyla açıklar. Orta Çağ\'da bir usta kendi elleriyle bir masa yapar, eserine bakar ve onda kendi ruhunu (emeğini) görürdü. Oysa modern fabrikadaki bir işçi, günde 12 saat boyunca sadece bir makinenin vidasını sıkar. Ne ürettiğini bile bilmez. İşçi; ürettiği ürüne, kendi emeğine, yanındaki diğer işçilere ve en sonunda "kendi insan doğasına" yabancılaşır. O artık bir insan (yaratıcı bir ruh) değil, sadece devasa bir makinenin değiştirilebilir, ucuz ve ruhsuz bir dişlisine dönüşmüştür. Kapitalizm insanın sadece emeğini değil; onun varoluş sevincini ve özünü de satın alıp posasını çıkarmıştır.',
+    questionStem: 'Marx\'ın "Yabancılaşma" kavramına göre, modern fabrika işçisinin yaşadığı asıl "ruhsal/felsefi çöküş" nedir?',
+    options: [
+      'Maaşlarının yetersiz olması nedeniyle ailelerini geçindirememekten duydukları üzüntü',
+      'Makineleşmeyle birlikte iş güvenliğinin ortadan kalkması ve fiziksel yaralanmaların artması',
+      'İnsanın üretim sürecindeki yaratıcılığını ve bütünlüğünü kaybederek; ürettiği nesneye, doğasına ve kendi benliğine tamamen uzaklaşması (ruhsuz bir makine dişlisine dönüşmesi)',
+      'Şehir hayatının kalabalığı içinde işçilerin birbirleriyle iletişim kuramaması'
+    ],
+    correct: 2,
+    explanation: 'İşçinin sadece vida sıkarak ne ürettiğini bilmemesi ve yaratıcılığını kaybetmesi; kendi emeğine, ürününe ve doğasına yabancılaşarak "makine dişlisine" dönüşmesi (ruhsal çöküşü) olarak açıklanır.'
+  },
+  {
+    title: 'Leviathan (Hobbes\'un Canavarı)',
+    passage: 'İnsan doğası özünde iyi midir yoksa kötü mü? 17. yüzyıl filozofu Thomas Hobbes\'a göre insan doğası bencil, vahşi ve acımasızdır. Eğer devletsiz, kanunsuz bir "Doğa Durumu"nda yaşasaydık, hayatımız "yalnız, yoksul, iğrenç, vahşi ve kısa" olurdu; herkesin herkese karşı savaştığı bir cehennem yaşanırdı. Hobbes\'a göre insanlar bu kaostan ve ölüm korkusundan kurtulmak için bir araya gelmiş ve kendi özgürlüklerini, haklarını gönüllü olarak "Leviathan" adını verdiği devasa, korkutucu ve mutlak otoriteye (yani Devlete) devretmişlerdir. Uygarlık, sevgiyle kurulan bir kardeşlik değil; insanın birbirini parçalamamak uğruna kendi elleriyle yarattığı devasa bir canavara (devlete) boyun eğerek köleliği (güvenliği) seçtiği o karanlık tavizdir.',
+    questionStem: 'Thomas Hobbes\'un "Leviathan" kavramına göre, Devletin (otoritenin) varoluşunun temel psikolojik ve felsefi gerekçesi nedir?',
+    options: [
+      'İnsanların doğuştan gelen sevgi ve yardımlaşma duygularını organize etmek',
+      'Tarım ve ticaretin gelişmesi için gerekli ekonomik altyapıyı sağlamak',
+      'İnsanın o vahşi ve acımasız (bencil) doğası gereği ortaya çıkacak "herkesin herkese karşı savaşını (kaosu)" ve ölüm korkusunu bastırmak için, insanların özgürlüklerinden vazgeçerek güvenlik uğruna boyun eğdikleri o mutlak zorunluluk (korku) olmak',
+      'Din adamlarının toplumu daha rahat yönetebilmesi için oluşturulmuş dini bir kurum olmak'
+    ],
+    correct: 2,
+    explanation: 'İnsan doğasının vahşi olduğu ve herkesin birbirine savaş açacağı (kaos) düşüncesiyle, insanların ölüm korkusundan kurtulmak (güvenlik) için özgürlüklerini mutlak güce (Devlete/Leviathan\'a) teslim etmesi gerekçesidir.'
+  },
+  {
+    title: 'Akışkan Modernite (Zygmunt Bauman)',
+    passage: 'Sosyolog Zygmunt Bauman, günümüz dünyasını "Akışkan (Sıvı) Modernite" olarak tanımlar. Geçmişte her şey "katı"ydı: İnsanlar aynı şirkette 40 yıl çalışır, aynı kişiyle ömür boyu evli kalır, tek bir siyasi görüşe ölene dek inanırdı. Bugün ise her şey sıvıdır. Tüketim kültürü ve dijital hız, insanları kalıcı bağlar kurmaktan, derin ilişkiler yaşamaktan ve uzun vadeli taahhütlerden ölümüne korkar hale getirmiştir. Bugün aşklar bir ekran kaydırmasıyla (Tinder) değişir, meslekler birkaç yılda çöpe atılır, kimlikler anlık modalarla şekillenir. Akışkan modernite insanı özgür kılmış gibi görünse de; aslında hiçbir yere kök salamayan, hiçbir şeyi tam anlamıyla tutamayan ve o sonsuz belirsizlik dalgalarının üzerinde çırpınan kaygılı (anksiyete dolu) ve yorgun bir sörfçüye dönüştürmüştür.',
+    questionStem: 'Bauman\'ın "Akışkan Modernite" kavramının modern insanda yarattığı temel psikolojik yıkım nedir?',
+    options: [
+      'Teknolojinin gelişmesiyle birlikte insanların fiziksel olarak daha hareketsiz (tembel) hale gelmesi',
+      'Her şeyin anlık, geçici ve esnek (sıvı) olması nedeniyle; insanın kalıcı, derin ve anlamlı bağlar (kökler) kuramaması, bunun sonucunda sürekli bir güvensizlik, köksüzlük ve kaygı (anksiyete) içinde boğulması',
+      'Şehirleşmenin artmasıyla insanların doğadan ve topraktan tamamen kopması',
+      'Ekonomik krizlerin insanları sürekli göç etmeye ve ülke değiştirmeye zorlaması'
+    ],
+    correct: 1,
+    explanation: 'Her şeyin sıvı/geçici olmasıyla insanların uzun vadeli bağlar (kökler) kurmaktan korkması; bunun da hiçbir şeyi tutamayan kaygılı ve yorgun (köksüz) bir insan modeli yaratmasıdır.'
+  },
+  {
+    title: 'Yankı Odaları (Algoritmik Hapishane)',
+    passage: 'Eğer bir odada sürekli sadece kendi sesinizi duyarsanız, dünyanın sadece sizin doğrularınızdan ibaret olduğunu sanırsınız. Bugün sosyal medyadaki yapay zekâ algoritmaları bizi tam olarak böyle devasa ve dijital bir "Yankı Odası"na (Echo Chamber) hapsetmiştir. Sistem, bizim neyi beğendiğimizi analiz eder ve önümüze sadece bizim inançlarımızı, siyasi görüşlerimizi ve nefretlerimizi onaylayan haberleri/insanları çıkarır. Bizden farklı düşünen herkesi zaman tünelimizden siler. Sonuç olarak her birey, "Benim gibi düşünen milyonlarca insan var, kesinlikle haklıyım!" kibrine kapılır. İnternet, dünyadaki farklı sesleri duyacağımız bir aydınlanma meydanı olmaktan çıkmış; milyonlarca insanın sadece kendi kibrini ve narsisizmini okşadığı o karanlık, fanatik ve izole tımarhanelere bölünmüştür.',
+    questionStem: 'Sosyal medyadaki "Yankı Odası" (Echo Chamber) kavramı, toplumsal iletişim ve algı üzerinde nasıl bir tahribat yaratmaktadır?',
+    options: [
+      'İnternet hızının artmasıyla insanların daha az kitap okumasına neden olması',
+      'Algoritmaların sadece bireyin kendi fikirlerini onaylayan içerikleri sunmasıyla; farklı seslerin yok edildiği, karşıt görüşe tahammülün bittiği ve kişinin kendi kibrinde boğulduğu (kutuplaşmış/fanatik) bir illüzyon yaratması',
+      'Sanal dolandırıcılık vakalarının sosyal medya platformlarında daha kolay işlenmesi',
+      'İnsanların yabancı dil öğrenme isteklerini tamamen ortadan kaldırması'
+    ],
+    correct: 1,
+    explanation: 'Algoritmanın sadece bize katılanları (yankımızı) sunarak farklı sesleri silmesi; karşıt görüşe tahammülü yok eden, kutuplaşmış, narsisistik ve fanatik bir illüzyon yarattığını açıklar.'
+  },
+  {
+    title: 'Paul Dirac ve Antimadde (Matematiğin Kehaneti)',
+    passage: '1928 yılında fizikçi Paul Dirac, elektronların davranışını açıklayan bir denklem yazdı. Ancak matematiksel denklem tuhaf bir sonuç verdi; çözümde sadece pozitif (+) değil, bir de negatif (-) ihtimal çıkıyordu. Tıpkı x^2 = 4 denkleminin hem 2 hem de -2 çıkması gibi. Normalde bilim insanları bu negatif (saçma) sonucu çöpe atardı. Ancak Dirac matematiğin kusursuz estetiğine öylesine aşıktı ki, "Eğer matematik bu eksi (negatif) elektronu gösteriyorsa, evrenin bir yerinde mutlaka elektronun zıt ikizi olmalıdır" dedi ve tamamen kâğıt üzerinde "Antimadde"yi keşfetti! Yıllar sonra laboratuvarda "Pozitron" (antimadde) gerçekten de bulundu. Dirac\'ın bu vizyonu, evrenin sadece rastgele bir taş ve gaz yığını olmadığını; bizzat matematiğin o saf, estetik ve şiirsel zihniyle yazılmış kusursuz (ve önceden okunabilen) bir şiir kitabı olduğunu kanıtlar.',
+    questionStem: 'Paul Dirac\'ın "Antimadde"yi keşfetme süreci, evren ile matematik arasındaki ilişki hakkında neyi sembolize etmektedir?',
+    options: [
+      'Fiziksel laboratuvar deneyleri yapılmadan hiçbir teorinin asla kanıtlanamayacağını',
+      'Evrenin işleyişinin rastgele olmadığını; matematiğin sadece bir hesaplama aracı değil, doğanın o gizli, estetik ve kusursuz yapısını (henüz görülmemiş gerçekleri bile) önceden fısıldayan (kâhin) bir dil olduğunu',
+      'Matematik formüllerinin sadece teorik kaldığını ve pratik dünyada bir karşılığının bulunmadığını',
+      'Evrenin sadece pozitif ve gözle görülebilir maddelerden oluştuğu inancını'
+    ],
+    correct: 1,
+    explanation: 'Sadece kâğıt üzerindeki eksi (-) bir denkleme güvenerek evrendeki antimaddeyi bulması; matematiğin evrenin sırlarını önceden gören (kâhin) ve kusursuz bir dil/şiir olduğunu sembolize eder.'
+  },
+  {
+    title: 'LGM-1 (Küçük Yeşil Adamlar)',
+    passage: '1967 yılında genç astrofizikçi Jocelyn Bell Burnell, radyoteleskop verilerini incelerken uzayın derinliklerinden gelen inanılmaz derecede kusursuz, ritmik ve saniyesi saniyesine seken bir sinyal (nabız atışı) yakaladı. Doğada hiçbir gökcismi bu kadar yapay ve kusursuz bir metronom gibi sinyal üretemezdi. Bilim dünyası şok içindeydi; bu sinyale "LGM-1" (Little Green Men / Küçük Yeşil Adamlar) adını verdiler, yani uzaylılardan gelen bir mesaj! Ancak aylar sonra gerçeğin çok daha vahşi olduğu anlaşıldı. Bu bir uzaylı değil; ömrünü tamamlayıp kendi içine çöken, bir şehir büyüklüğüne sıkışmış ve saniyede yüzlerce kez dönerek (fener gibi) ışık saçan ölü bir nötron yıldızıydı (Pulsar). LGM-1 efsanesi; evrenin bize mesaj göndermek için uzaylılara ihtiyaç duymadığını, bizzat ölmekte olan yıldızların bile kendi başlarına (insan aklını zorlayan) kusursuz birer kozmik enstrüman olabileceğini gösterir.',
+    questionStem: 'LGM-1 sinyalinin "uzaylılar" sanılıp sonradan Pulsar (ölü yıldız) çıkması, evrenin doğası hakkında neyi vurgular?',
+    options: [
+      'Radyoteleskopların uzay araştırmaları için aslında çok güvenilmez ve hatalı cihazlar olduğunu',
+      'Uzaylıların insanlarla iletişime geçmek için çok daha karmaşık ve şifreli diller kullandığını',
+      'İnsanın o kusursuz düzeni (metronomu) sadece "zeki bir varlığa" atfetme yanılgısını yıkarak; evrendeki ölü yıldızların (doğanın) bile aklı aşan, kusursuz ve büyüleyici bir fiziksel düzene/ritme sahip olabileceğini',
+      'Yıldızların ölürken çıkardıkları seslerin dünyadaki telsiz iletişimlerini tamamen bozduğunu'
+    ],
+    correct: 2,
+    explanation: 'Kusursuz ritmi "uzaylı (zeki) yaptı" sanıp sonra bunun ölü bir yıldız olduğunu anlamak; doğanın ve ölü yıldızların kendi başlarına muazzam ve kusursuz bir düzene (metronoma) sahip olabildiğini vurgular.'
+  },
+  {
+    title: 'Yabancı El Sendromu (Alien Hand Syndrome)',
+    passage: 'Nörolojik vakaların en dehşet vericisi "Yabancı El Sendromu"dur. Beynin iki yarımküresini birbirine bağlayan korpus kallozum hasar gördüğünde, hastanın ellerinden biri (genellikle sol eli) "kendi bağımsız iradesini" kazanır. Hasta sağ eliyle gömleğinin düğmelerini iliklerken, "yabancı" sol el gelip gizlice o düğmeleri çözer. Hasta kahve içmek isterken sol el bardağı alıp yere fırlatır. Hatta o asi elin gece hastanın kendi boğazını sıkmaya (onu boğmaya) çalıştığı vakalar vardır. Hasta, o eli durdurmak için kendi elini diğer koluyla zapt etmek zorundadır. Bu kâbus gibi sendrom bize şunu haykırır: Tek, kusursuz ve merkezi bir "BEN (ruh)" yoktur; beynimiz, aslında birbiriyle sürekli kavga eden, her an isyan etmeye meyilli karanlık nöron ordularının (modüllerin) kurduğu çok kırılgan bir koalisyondur.',
+    questionStem: 'Yabancı El Sendromu vakası, insan bilinci (benliği) hakkında felsefi ve biyolojik olarak neyi kanıtlamaktadır?',
+    options: [
+      'Solak insanların sağlak insanlara göre daha fazla psikolojik travma yaşadığını',
+      'İnsan uzuvlarının beyinden bağımsız olarak kalp tarafından kontrol edildiğini',
+      'Ruh (veya Benlik) dediğimiz o tek/bütünleşik (kutsal) yapının aslında bir illüzyon olduğunu; zihnimizin (bilincimizin) birbiriyle çelişebilen, bağımsız ve isyankâr nörolojik parçaların kurduğu kırılgan bir koalisyon olduğunu',
+      'Sinir krizlerinin insanlarda kalıcı felçler ve kasılmalar yarattığını'
+    ],
+    correct: 2,
+    explanation: 'Bir elin diğer ele (ve kişiye) savaş açması; tek bir merkezî "ben/ruh" olmadığını, bilincin farklı (ve isyankâr) beyin modüllerinin birleştiği kırılgan bir koalisyon/illüzyon olduğunu kanıtlar.'
+  },
+  {
+    title: 'Yalanlanabilirlik (Karl Popper ve Bilim)',
+    passage: 'Bilimi sözde-bilimden (astroloji veya falcılıktan) ayıran kesin çizgi nedir? 20. yüzyılın en büyük bilim filozoflarından Karl Popper buna "Yalanlanabilirlik" (Falsifiability) kuralı der. Bir astrolog size "Yarın hayatında bir değişiklik olacak" derse bu bilimsel değildir; çünkü bunu yanlışlama (test etme) ihtimaliniz sıfırdır, her şey bir değişiklik sayılır. Oysa Einstein "Işık büyük kütlelerin yanından geçerken bükülür" derse, bu bilimseldir; çünkü teleskopla bakıp bükülmediğini görürseniz Einstein\'ı anında "yalanlayabilirsiniz". Popper\'a göre bir teorinin değeri, ne kadar çok şeyi açıkladığıyla değil; aksine, nelerin olursa o teoriyi "çökerteceğini (yalanlayacağını)" ne kadar cesurca ortaya koyduğuyla ölçülür. Kendi hatasını (yalanlanmasını) göze alamayan, her şeye bir kılıf uyduran hiçbir inanç veya dogma, hakikatin (bilimin) asil sınırlarından içeri giremez.',
+    questionStem: 'Karl Popper\'ın "Yalanlanabilirlik" kavramına göre, bir iddiayı veya teoriyi bilimsel kılan asıl (ve paradoksal) özellik nedir?',
+    options: [
+      'Teorinin binlerce farklı deneyle (sürekli olarak) doğrulanmış ve kanıtlanmış olması',
+      'Teorinin, matematiksel formüllerle ifade edilemeyecek kadar karmaşık felsefi bir derinlik taşıması',
+      'O iddianın, doğası gereği test edilebilir olması ve hangi koşullar altında "yanlış (çürütülmüş)" kabul edileceğini dürüstçe (ve cesurca) ortaya koyabilme kapasitesi',
+      'Teorinin tüm dünyadaki farklı inanç sistemleriyle ve dinlerle uyumlu olması'
+    ],
+    correct: 2,
+    explanation: 'Popper\'a göre bilimsel olmanın şartı sürekli haklı çıkmak değil; ne olursa haksız çıkacağını (çürütülebileceğini/yanlışlanabileceğini) cesurca test edilebilir olarak sunmaktır.'
+  },
+  {
+    title: 'Sivil İtaatsizlik ve Walden (Thoreau)',
+    passage: '1846 yılında Amerikalı yazar Henry David Thoreau, köleliği savunan ve adaletsiz bir savaş yürüten Amerikan devletine vergi ödemeyi reddettiği için hapse atıldı. O geceyi hapiste geçirirken o meşhur eserini yazdı: "Sivil İtaatsizlik". Thoreau\'ya göre, bir devletin çıkardığı kanun ahlaksızsa ve bireyin vicdanına ters düşüyorsa, o kanuna itaat etmek bir erdem değil; vahşi bir suça ortak olmaktır (suç ortaklığıdır). Bireyin en yüce görevi kanunlara uymak değil, doğru olana (vicdana) uymaktır. Hapisten çıktıktan sonra ormana (Walden Gölü\'ne) yerleşen Thoreau, modern dünyanın kibrini reddederek doğanın içinde tek başına yaşadı. Thoreau bize şunu fısıldar: Gerçek özgürlük; oy vermek veya alışveriş yapmak değil, gerektiğinde haksız bir sistemin (makinenin) çarklarını durdurmak için kendi hayatını o dişlilerin arasına sıkıştırma cesaretidir.',
+    questionStem: 'Henry David Thoreau\'nun "Sivil İtaatsizlik" kavramı, birey ile kanunlar arasındaki ilişkiye nasıl bir ahlaki yaklaşım getirir?',
+    options: [
+      'Bireyin toplumsal düzeni bozmamak adına her türlü devlet otoritesine saygı göstermesi gerektiği',
+      'Kanunların her zaman doğa kurallarına aykırı olduğu için tüm devletlerin tamamen yıkılması gerektiği',
+      'Eğer bir kanun adaletsiz ve ahlak dışıysa (vicdana aykırıysa); bireyin o kanuna uymayı reddedip (suça ortak olmayıp), bedelini ödemeyi göze alarak barışçıl ama kesin bir şekilde isyan etmesinin en yüce erdem olduğu',
+      'Vergi ödemenin sadece zengin sınıfların bir sorumluluğu olması gerektiği'
+    ],
+    correct: 2,
+    explanation: 'Adaletsiz kanuna uymanın suça ortak olmak olduğunu savunan Thoreau; ahlak dışı kanunu (bedelini göze alarak) reddedip vicdana uymanın (sivil itaatsizliğin) erdem olduğunu belirtir.'
+  },
+  {
+    title: 'Nirvana Yanılgısı (Kusursuzluk Beklentisi)',
+    passage: 'Birileri "Emniyet kemerleri trafik kazalarındaki ölümlerin %100\'ünü engellemiyor, o halde emniyet kemeri takmak anlamsızdır" dediğinde, "Nirvana Yanılgısı"na (Nirvana Fallacy) düşmüş olurlar. Mantıktaki bu ölümcül hata, insanların gerçekçi ve "iyi" olan bir çözümü, sırf o çözüm ütopik ve "kusursuz (Nirvana)" olmadığı için tamamen reddetmesi ve çöpe atmasıdır. Siyasette, ekonomide veya aşktaki en büyük felaketler buradan doğar. İnsanoğlu, zihninde yarattığı o ulaşılamaz, lekesiz ve pürüzsüz ideale öylesine saplanır ki; o yolda atılacak işe yarar küçük adımları, iyileşmeleri ve uzlaşmaları "yetersiz" bularak kibre kapılır. Mükemmellik (Nirvana), iyinin en acımasız ve sessiz katilidir.',
+    questionStem: 'Nirvana Yanılgısı (Nirvana Fallacy), insan mantığındaki hangi tehlikeli kibri (ve hatayı) ifşa etmektedir?',
+    options: [
+      'İnsanların doğu felsefelerine inanarak dünya gerçeklerinden tamamen kopması',
+      'Kişinin, aklındaki "kusursuz (ütopik)" ideal seçeneğe saplanarak; aslında son derece faydalı, gerçekçi ve durumu "iyileştiren" pratik çözümleri (sırf tam kusursuz değil diye) kibre kapılıp tamamen reddetmesi hatasını',
+      'Trafik kazalarından korunmak için sadece teknolojik araçlara güvenmenin yanlışlığı',
+      'Zeki insanların her zaman en hızlı çözümleri bulma çabasının strese yol açması'
+    ],
+    correct: 1,
+    explanation: 'Emniyet kemerinin %100 kurtarmadığı için "işe yaramaz" sayılması örneğinde olduğu gibi; "iyi ve faydalı" çözümü, sırf "kusursuz (Nirvana)" değil diye çöpe atma kibrini (hatasını) ifşa eder.'
+  },
+  {
+    title: 'Kolektif Bilinçdışı ve Arketipler (Jung)',
+    passage: 'Neden Amazon ormanlarındaki bir yerli ile Çin\'deki bir köylünün, Asya\'daki bir göçebe ile Avrupalı bir asilzadenin anlattığı masallarda her zaman aynı "Bilge Yaşlı Adam", aynı "Kahraman" ve aynı "Büyük Tufan/Ejderha" figürü vardır? Birbirleriyle hiç iletişim kurmamış kültürler bu efsaneleri nasıl aynı şekilde kurgulamıştır? Psikanalist Carl Jung, bunu "Kolektif Bilinçdışı" ile açıklar. Jung\'a göre biz sadece anne babamızdan göz rengimizi (genetiğimizi) miras almayız; aynı zamanda insanlığın milyonlarca yıllık atalarından kalan tüm o ilkel korkuları, efsaneleri ve sembolleri (Arketipleri) zihnimizin karanlık bir okyanusunda miras olarak devralırız. Doğduğumuzda zihnimiz boş bir levha (Tabula Rasa) değildir; o, tüm insanlık tarihinin korkularının ve masallarının görünmez bir mürekkeple önceden yazıldığı kadim ve evrensel bir parşömendir.',
+    questionStem: 'Carl Jung\'un "Kolektif Bilinçdışı ve Arketipler" teorisi, farklı kültürlerdeki ortak masalları/mitleri neye bağlamaktadır?',
+    options: [
+      'Eski çağlarda uzaylıların dünyayı ziyaret edip tüm insanlara aynı hikâyeleri öğretmesine',
+      'Ticaret yolları (İpek Yolu) sayesinde tüccarların masalları kıtadan kıtaya taşımasına',
+      'İnsan zihninin doğuştan boş bir levha olmadığına; farklı kültürlerin, tüm insanlık tarihinden (atalardan) kalıtımsal olarak miras alınan evrensel ve ortak bir "bilinçaltı (sembol) havuzuna" sahip olmasına',
+      'İklim şartlarının dünyanın her yerinde aynı korkuları tetikleyen fiziksel olaylar yaratmasına'
+    ],
+    correct: 2,
+    explanation: 'Farklı kıtalarda aynı ejderha/tufan figürlerinin çıkması; zihnimizin boş levha olmadığını, tüm insanlığın ortak atalarından devralınan evrensel "kolektif bilinçaltı (arketipler) havuzuyla" açıklanır.'
+  },
+  {
+    title: 'Epimenides Paradoksu (Giritli Yalancı)',
+    passage: 'MÖ 6. yüzyılda Giritli bir filozof ve rahip olan Epimenides, insan mantığını felç edecek o meşhur ve basit cümleyi kurdu: "Bütün Giritliler yalancıdır." Eğer bu cümle doğruysa, Epimenides bir Giritli olduğu için yalan söylüyor olmalıdır; yani Giritliler doğru söylüyordur. Ama eğer Giritliler doğru söylüyorsa, o zaman Epimenides\'in söylediği "Giritliler yalancıdır" cümlesi doğru olmalıdır ki bu da onun yalan söylediği anlamına gelir! Mantığın bir yılan gibi kendi kuyruğunu yuttuğu, bilgisayarları çökerten ve felsefeyi çıkmaza sokan bu "Yalancı Paradoksu", insan dilinin (ve kurguladığımız mantık sistemlerinin) mutlak ve kusursuz olmadığını; bazen zihnimizin, kendi ürettiği kelimelerin ördüğü o dairesel ve çıkışsız labirentte çaresizce kendi kendini zehirlediğini kanıtlar.',
+    questionStem: 'Epimenides\'in "Bütün Giritliler yalancıdır" cümlesinin felsefedeki (paradoks) asıl gücü nereden gelmektedir?',
+    options: [
+      'Girit halkının antik çağda ahlaki olarak tamamen çürümüş ve sahtekâr bir toplum olduğunu kanıtlamasından',
+      'Cümlenin "doğru" veya "yanlış" olma durumunun, birbirini çürüterek içinden çıkılmaz bir mantıksal (kendi kuyruğunu yiyen dairesel) bir döngüye ve sistem çöküşüne yol açmasından',
+      'Dönemin siyasi otoritelerini ve yargıçlarını korkmadan eleştirebilen tek edebi metin olmasından',
+      'Yalan söylemenin bazı felsefi ekollerde büyük bir erdem olarak kabul edilmesini sağlamasından'
+    ],
+    correct: 1,
+    explanation: 'Cümle doğruysa yanlış, yanlışsa doğru çıkmaktadır. Bu paradoks; insan dilinin ve mantığının, kendi kendiyle çelişen (kuyruğunu yiyen) çıkışsız bir döngüye (sistem çöküşüne) girmesini sembolize eder.'
+  },
+  {
+    title: 'P.T. Barnum ve Gösteri Toplumu',
+    passage: '19. yüzyılda modern sirklerin, reklamcılığın ve "gösteri dünyasının" kurucusu Phineas Taylor Barnum\'un o efsanevi felsefesi tek bir cümlede yatar: "Her dakika bir enayi doğar." Barnum; sahte denizkızları, cüceler veya filleri pazarlarken insanlara gerçek bir şey satmıyordu. O, insanların monoton hayatlarından kaçma arzusunu, meraklarını ve "kandırılmaya duydukları o gizli şehveti" satıyordu. Müzeye "Büyük Çıkış Bu Tarafta" yazarak, gösteriyi bitirenleri bile aslında binadan kovan o dâhiyane sahtekâr, modern kapitalizmin babasıdır. Barnum etkisi gösterir ki; kitleler gerçeğin o sıkıcı griliğindense, parlak, şatafatlı ve gürültülü bir yalanın parçası (ve müşterisi) olmak için paralarını (ve zihinlerini) seve seve o devasa şovmenlere teslim ederler.',
+    questionStem: 'P.T. Barnum\'un sirk/gösteri felsefesi üzerinden yazar, modern toplumun hangi hastalıklı eğilimini (zaafını) eleştirmektedir?',
+    options: [
+      'Hayvanların sirklerde vahşi koşullarda çalıştırılarak fiziksel eziyete uğratılmasını',
+      'İnsanların sıradan ve sıkıcı gerçeklikler yerine, kandırıldıklarını bilseler bile parlak, şatafatlı ve eğlenceli yalanlara (illüzyonlara) para ödeyerek gönüllü bir şekilde boyun eğme (tüketim) zaafını',
+      'Sirk ve tiyatro sanatçılarının emeklerinin karşılığını hiçbir zaman tam olarak alamamasını',
+      'Amerika\'daki eğitim seviyesinin düşüklüğü nedeniyle halkın okuma alışkanlığını yitirmesini'
+    ],
+    correct: 1,
+    explanation: 'Barnum\'un sahte denizkızları satmasına rağmen insanların buna isteyerek gitmesi; toplumun sıkıcı gerçek yerine parlak ve şatafatlı yalanlara (kandırılmaya) gönüllü olarak para ödeme/tüketme zaafını (gösteri toplumunu) eleştirir.'
+  },
+  {
+    title: 'Akış Teorisi (Flow) ve Zamanın Durması',
+    passage: 'Zamanın tamamen silindiğini, açlık ve yorgunluk hissetmeden bir işe kendinizi o kadar kaptırdınız mı ki, sanki evrenle bir bütün olduğunuzu hissettiniz? Psikolog Mihaly Csikszentmihalyi, ressamların, cerrahların veya müzisyenlerin yaşadığı bu zirve noktasına "Akış" (Flow) adını verir. Akış hali, insanın yetenekleriyle (kapasitesiyle), yaptığı işin zorluğunun (meydan okumanın) milimetrik olarak eşleştiği o kusursuz denge anında doğar. İş çok kolaysa sıkılırız, çok zorsa kaygı duyarız. Ancak ikisi tam dengelendiğinde ego buharlaşır. Gerçek mutluluk, deniz kenarında tembelce yatarak veya tüketerek elde edilen pasif bir his değildir; aksine, potansiyelimizi sonuna kadar zorlayan, benliğimizi unutturan ve ruhumuzu yoran anlamlı bir eylemin (akışın) ta kendisidir.',
+    questionStem: 'Csikszentmihalyi\'nin "Akış (Flow)" teorisine göre, insanın gerçek mutluluğa ve "zamanın durduğu o zirve ana" ulaşmasının temel şartı nedir?',
+    options: [
+      'Fiziksel yorgunluktan tamamen uzaklaşıp, tatil merkezlerinde bedensel dinlenmeye (pasifliğe) çekilmesi',
+      'Bireyin sahip olduğu yetenek düzeyi ile, uğraştığı işin/problemin zorluk derecesi (meydan okuması) arasındaki o kusursuz dengeyi yakalayarak; egosunu ve zamanı unuttuğu o anlamlı (aktif) eylemin içine girmesi',
+      'Para kazanma hırsından vazgeçip sadece sanatsal ve estetik hobilerle ilgilenmeye başlaması',
+      'Geçmişteki anıları tamamen zihninden silerek sadece geleceği planlama stratejisi gütmesi'
+    ],
+    correct: 1,
+    explanation: 'Mutluluğun pasif dinlenme değil; yetenek ile işin zorluğunun (meydan okumanın) tam dengelendiği (egonun/zamanın silindiği) aktif ve anlamlı eylem (Akış) olduğu açıkça vurgulanmıştır.'
+  },
+  {
+    title: 'Tiresias\'ın Körlüğü: Karanlıktaki Kâhin',
+    passage: 'Yunan mitolojisinde kâhin Tiresias, bir tartışma sırasında tanrıça Hera\'yı (veya başka bir anlatıya göre Athena\'yı) kızdırdığı için "fiziksel körlükle" cezalandırılır. Ancak Zeus ona acır ve fiziksel gözlerini kaybetmesine karşılık, ona evrenin en büyük hediyesini (geleceği görme yeteneğini/kehaneti) bahşeder. Oedipus\'tan Antigone\'ye kadar hiçbir efsanevi kral, gerçekleri bu kör yaşlı adam kadar net göremez. Tiresias mitinin anlattığı o muazzam felsefi ironi şudur: İnsan, fiziksel (dünyevi) gözleriyle o dışarının parıltılı ama sahte illüzyonuna öylesine kanmıştır ki; asıl hakikati (geleceği ve özü) görebilmesi için önce o dünyevi gözlerini kaybetmesi (karanlığa gömülmesi) ve dış dünyaya tamamen kör (sağır) olması gerekir. Gerçek aydınlanma, dışarının ışığıyla değil; içerinin kör edici zifiri karanlığında başlar.',
+    questionStem: 'Mitolojik kâhin Tiresias\'ın fiziksel olarak kör olup geleceği görme yeteneği kazanması, hakikat arayışı hakkında nasıl bir "felsefi (ironik) metafor" sunar?',
+    options: [
+      'Tanrıların insanlara verdikleri cezaların aslında her zaman gizli birer ödül (lütuf) taşıdığı düşüncesini',
+      'Fiziksel dünyayı (dışarıyı) algılayan duyuların (gözlerin), aslında insanı sığ illüzyonlara hapsettiğini; mutlak ve derin hakikati (özü) görebilmek için dünyevi olan dış gerçekliğe kör olmak (içe dönmek) gerektiği gerçeğini',
+      'Görme engelli bireylerin işitme duyularının çok daha fazla geliştiği yönündeki biyolojik tezi',
+      'Antik dönemde kralların ve devlet adamlarının din adamlarına (kâhinlere) her zaman boyun eğdiğini'
+    ],
+    correct: 1,
+    explanation: 'Gözü körleştiğinde hakikati/geleceği görmesi; dış dünyanın (gözlerin) bir illüzyon olduğu, asıl (derin) hakikatin dış dünyaya karşı kör olup içsel aydınlanmayla (karanlıkta) bulunacağı metaforudur.'
+  }
+];
+
+export const felsefeParagrafSorulari25: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_25.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_25[idx];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-felsefe25-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
+
 // paragrafTests.ts dosyasının hata vermemesi için iki listeyi birleştirip eski adıyla dışa aktarıyoruz:
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari,
@@ -6159,5 +6992,10 @@ export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...bilimParagrafSorulari19,
   ...karisikParagrafSorulari20,
   ...felsefeParagrafSorulari21,
-  ...karisikParagrafSorulari22
+  ...karisikParagrafSorulari22,
+  ...karisikParagrafSorulari23,
+  ...felsefeParagrafSorulari24,
+  ...felsefeParagrafSorulari25
+  
+  
 ];
