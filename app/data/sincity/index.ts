@@ -5859,6 +5859,283 @@ export const felsefeParagrafSorulari21: BilimParagrafQuestion[] = Array.from({ l
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
+const PARAGRAPH_THEMES_22 = [
+  {
+    title: 'Büyük Patlamanın Yankısı ve Güvercin Dışkısı',
+    passage: '1964 yılında astronomlar Arno Penzias ve Robert Wilson, devasa bir radyo anteniyle uzayı dinlerken sürekli rahatsız edici, cızırtılı bir dip gürültüsü duydular. Antenin içine yuva yapmış güvercinlerin dışkılarının bu sese neden olduğunu düşünüp anteni günlerce temizlediler; ancak o cızırtı hiç kesilmedi. Yıllar sonra anlaşıldı ki, o silemedikleri gürültü aslında 13.8 milyar yıl önce gerçekleşen Büyük Patlama\'nın (Big Bang) evrenin dokusunda bıraktığı o ebedi yankıydı (Kozmik Mikrodalga Arka Plan Işıması). Bilim tarihinin bu en büyük keşiflerinden biri, insanoğlunun evrenin yaratılış anına ait o en yüce (kutsal) sırrı, başlangıçta sadece sıradan bir "kuş pisliği" sanarak temizlemeye çalışması gibi muazzam ve komik bir kozmik ironiyle taçlanmıştır.',
+    questionStem: 'Büyük Patlama\'nın (Big Bang) yankısının keşfediliş hikâyesindeki asıl "kozmik ironi (çelişki)" nedir?',
+    options: [
+      'Gelişmiş radyo antenlerinin kuşlar tarafından kolayca yuva olarak kullanılabilmesi',
+      'Bilim insanlarının evrenin başlangıcına ait (kutsal ve yüce) o en büyük sırrı, ilk başta sıradan, rahatsız edici bir "kuş pisliği (kir)" sanarak temizlemeye çalışması',
+      'Uzaydan gelen sinyallerin her zaman parazitli ve anlamsız sesler olarak algılanması',
+      'Kozmik ışımaların insan kulağının duyamayacağı kadar düşük bir frekansta olması'
+    ],
+    correct: 1,
+    explanation: 'Evrenin yaratılış çığlığı gibi yüce bir sırrın, sıradan ve rahatsız edici bir güvercin pisliği (kir) sanılıp silinmeye çalışılması olayın asıl kozmik ironisidir.'
+  },
+  {
+    title: 'Dodo Kuşunun Trajedisi (Evrimsel Saflık)',
+    passage: 'Mauritius adasında yaşayan Dodo kuşları, adada hiçbir vahşi yırtıcı (düşman) olmadığı için milyonlarca yıl içinde uçma yeteneklerini kaybetmiş ve hantallaşmışlardı. Ancak 16. yüzyılda adaya ilk Avrupalı denizciler ayak bastığında, Dodolar kaçmak veya saldırmak yerine, içgüdüsel bir "korkusuzluk ve merakla" bu yabancıların yanına yürüyüp onlara yaklaştılar. İnsanlar, kendilerine güvenerek yaklaşan bu kuşları sopalarla vurarak eğlence için katlettiler ve türlerini tamamen yok ettiler. Dodo kuşunun yok oluşu bir doğa felaketi değil; izole ve güvenli bir dünyada büyüyen saf (kötülük bilmeyen) bir canlının, acımasız bir yırtıcıyla (insanla) karşılaştığında ödediği o ölümcül "evrimsel saflık" ve "yersiz güven" faturasıdır.',
+    questionStem: 'Dodo kuşunun neslinin tükenmesi, evrimsel (ve psikolojik) bağlamda neyin trajedisini sembolize etmektedir?',
+    options: [
+      'Kanatlarını kullanmayan canlıların zamanla uçma yetisini kaybederek evrimsel bir gerileme yaşamasının',
+      'İzole ortamlarda tehlike (kötülük) görmeden büyüyen canlıların, acımasız gerçeklikle karşılaştıklarında sergiledikleri o ölümcül saflığın ve yersiz güvenin (savunmasızlığın)',
+      'Denizcilerin yanlarında getirdikleri virüslerin ada ekosistemlerini saniyeler içinde yok edebilmesinin',
+      'Kuş türlerinin diğer yırtıcı hayvanlara göre doğada çok daha zayıf ve av olmaya yatkın olmasının'
+    ],
+    correct: 1,
+    explanation: 'Düşman görmedikleri için insanlara merakla yaklaşıp katledilmeleri; kötülük bilmeyen o "evrimsel saflığın ve yersiz güvenin" yarattığı ölümcül trajediyi sembolize eder.'
+  },
+  {
+    title: 'Aptallar Gemisi (Platon\'un Demokrasi Eleştirisi)',
+    passage: 'Platon "Devlet" adlı eserinde demokrasinin kusurunu efsanevi bir alegoriyle (Aptallar Gemisi) anlatır. Bir gemi düşünün; kaptanı güçlü ama sağır ve uzağı göremeyen biridir. Tayfalar ise denizcilikten hiç anlamamalarına rağmen dümeni ele geçirmek için sürekli kavga eder, kaptanı uyuşturucuyla uyutup gemiyi yağmalarlar. Gemide yıldızlara bakarak yön bulmayı (navigasyonu) bilen tek bir bilge denizci vardır; ancak cahil tayfalar o bilgeyi "işe yaramaz, boş konuşan bir ahmak" diyerek dışlarlar. Gemi eninde sonunda kayalıklara çarpıp batar. Platon bu hikâye ile demokrasinin o karanlık zaafını vurur: Bilgi ve liyakat dışlandığında; gemiyi (devleti) yönetenler en bilge olanlar değil, kalabalıkları en iyi kandırabilen ve en yüksek sesle bağıran manipülatörler (aptallar) olacaktır.',
+    questionStem: 'Platon\'un "Aptallar Gemisi" alegorisinde demokrasi sistemine yönelttiği asıl felsefi eleştiri nedir?',
+    options: [
+      'Devlet yönetiminin her zaman güçlü askerler (kaptanlar) tarafından diktatörlükle yönetilmesi gerektiği',
+      'Liyakat ve bilgelik dışlandığında, yönetimin (dümenin) işi bilenlerin değil; kalabalıkları en iyi kandıran cahil ama yüksek sesli manipülatörlerin (tayfaların) eline geçerek toplumu yıkıma sürükleyeceği',
+      'Denizcilik gibi zor mesleklerin halkın genel oyuyla değil, kraliyet atamalarıyla belirlenmesi zorunluluğu',
+      'Eğitimsiz halkın her zaman yöneticilere sadık kalıp isyan etmekten korktuğu'
+    ],
+    correct: 1,
+    explanation: 'Bilge denizcinin dışlanıp cahil tayfaların gemiyi yönetmesi; demokraside liyakatin yerini yüksek sesli (cahil) manipülatörlerin alması eleştirisidir.'
+  },
+  {
+    title: 'Tutsak İkilemi (Oyun Teorisi ve İhanet)',
+    passage: 'Oyun Teorisinin en meşhur problemi olan "Tutsak İkilemi" şöyledir: İki suç ortağı yakalanıp ayrı hücrelere konur. Polisin elinde yeterli delil yoktur. Eğer ikisi de susarsa sadece 1\'er yıl yatacaklardır. Ancak polisin teklifi sinsidir: "Eğer sen konuşur, arkadaşını satarsan serbest kalırsın, o 10 yıl yatar." Eğer ikisi de birbirine ihanet edip konuşursa ikisi de 5\'er yıl yatacaktır. Mantıken ikisinin de susması (işbirliği) her ikisi için de en kârlı seçenektir. Ancak insanlar diğerinin sessiz kalacağına (güvene) asla tam olarak inanamadıkları ve kendi çıkarlarını maksimize etmek istedikleri için genellikle ihanet etmeyi (konuşmayı) seçer ve ikisi de 5 yıl ceza yer. Bu ikilem, insan aklının sırf "bencilce ve rasyonel" davrandığı için, aslında herkesin yararına olan o kusursuz dayanışmayı (güveni) nasıl kendi elleriyle yıktığının trajik matematiksel ispatıdır.',
+    questionStem: 'Tutsak İkilemi (Prisoner\'s Dilemma), insan davranışlarındaki hangi trajik çelişkiyi (zaafı) ortaya koymaktadır?',
+    options: [
+      'Suçluların polis baskısı altında her zaman yalan söyleme eğiliminde olmasını',
+      'İnsanların kendi bencil (rasyonel) çıkarlarını koruma güdüsü ve güven eksikliği yüzünden, aslında her iki tarafın da faydasına olacak olan o "en iyi sonucu (dayanışmayı)" kendi elleriyle sabote etmesini',
+      'Hapishane koşullarının suçluları birbirine düşman ederek rehabilite etmeyi engellemesini',
+      'Adalet sisteminin her zaman güçlü olanı koruyup zayıf olanı cezalandırdığını'
+    ],
+    correct: 1,
+    explanation: 'En kârlısı susmak (dayanışma) iken güven eksikliği ve bencillik yüzünden ihanet edip 5 yıl yatmaları; bencil aklın dayanışmayı/en iyi sonucu sabote ettiğini gösterir.'
+  },
+  {
+    title: 'Parkinson Yasası (Bürokratik Zaman)',
+    passage: 'İngiliz tarihçi C. Northcote Parkinson, bürokrasinin ve şirketlerin nasıl çalıştığını incelerken o meşhur "Parkinson Yasası"nı formüle etmiştir: "Bir iş, onun tamamlanması için ayrılan zamanı dolduracak kadar esner ve genişler." Eğer bir e-posta yazmak için size 2 saat verilirse, o iş tam 2 saat sürer. Aynı e-posta için size 2 hafta süre verilirse, siz o 2 haftayı taslaklar çıkararak, kelimeleri değiştirerek ve gereksiz bir kaygı (stres) yaşayarak harcarsınız; iş yine tam 2 hafta sürer! Bu yasa; çalışma hayatındaki o devasa meşguliyetin (toplantıların ve kâğıt işlerinin) çoğunun aslında sahte olduğunu; insanın "çok çalışıyormuş gibi" görünmek uğruna zamanı kendi ürettiği o anlamsız bürokratik gürültüyle (kof bir şişkinlikle) doldurduğunu kanıtlar.',
+    questionStem: 'Parkinson Yasası ("İş, ayrılan zamanı dolduracak kadar genişler"), çalışma hayatındaki hangi yanılgıyı ifşa etmektedir?',
+    options: [
+      'Çalışanların maaşları arttıkça iş verimliliklerinin aynı oranda düştüğünü',
+      'Zamanın kısıtlı olmasının insan beyninde yaratıcılığı tamamen durdurduğunu',
+      'Bürokrasideki veya iş hayatındaki o devasa meşguliyetin (uzun çalışma saatlerinin) çoğunun aslında verimlilik değil; insanın o boş vakti sahte bir çabayla (kof bir gürültüyle) doldurma illüzyonu olduğunu',
+      'Teknolojinin iş süreçlerini hızlandırmak yerine daha da karmaşıklaştırdığını'
+    ],
+    correct: 2,
+    explanation: '2 saatlik işin 2 haftaya esnemesi; iş hayatındaki o "çok yoğun" görünme halinin aslında zamanı kof/sahte bir bürokratik çabayla doldurma illüzyonu olduğunu ifşa eder.'
+  },
+  {
+    title: 'Deus Ex Machina (Makinedeki Tanrı)',
+    passage: 'Antik Yunan tiyatrosunda oyun yazarları, hikâyeyi içinden çıkılmaz bir düğüme soktuklarında çok ucuz bir hileye başvururlardı. Sahnenin tepesindeki bir vinç (makine) yardımıyla sahneye bir "Tanrı" heykeli indirilir ve bu tanrı tek bir sözle tüm sorunları anında çözerdi. Buna "Deus Ex Machina" (Makineden İnen Tanrı) denirdi. Aristoteles bu yöntemi, yazarın yeteneksizliği ve tembelliği olarak ağır bir dille eleştirdi. Günümüzde bu kavram, insanların kendi eylemlerinin o katı (ve acı verici) mantıksal sonuçlarıyla yüzleşmek yerine; gökten inecek sihirli bir kahramana, piyangoya veya ani bir mucizeye (kurtarıcıya) bel bağlama şeklindeki o pasif, tembel ve çaresiz psikolojisini tanımlamak için kullanılan felsefi bir metafora dönüşmüştür.',
+    questionStem: 'Deus Ex Machina (Makineden İnen Tanrı) kavramı, tiyatro terimi olmaktan çıkıp insan psikolojisine uyarlandığında neyi eleştirir?',
+    options: [
+      'Teknolojik makinelerin insanın inanç sistemlerini yok ederek onu mutsuzluğa sürüklemesini',
+      'İnsanın kendi hatalarının mantıksal ve acı verici sonuçlarıyla yüzleşmek (sorumluluk almak) yerine, sorunları anında çözecek dışsal ve sihirli bir "mucizeye (kurtarıcıya)" bel bağlayan o tembel/pasif çaresizliğini',
+      'Antik dönem tiyatrolarında kullanılan mekanik sistemlerin aslında çok ilkel olmasını',
+      'Din adamlarının toplumu korkutmak için kullandığı kurgusal mitolojik hikâyeleri'
+    ],
+    correct: 1,
+    explanation: 'Sahneye inen tanrının sorunu anında çözmesi; insanın sorumluluk/sonuçlarla yüzleşmek yerine dışarıdan (sihirli) bir kurtarıcı/mucize bekleme tembelliğini eleştirir.'
+  },
+  {
+    title: 'Bhopal Felaketi (Sessiz Katliam)',
+    passage: '3 Aralık 1984 gecesi, Hindistan\'ın Bhopal kentinde binlerce insan uykularındayken üzerlerine beyaz, yoğun bir sis çöktü. Bu bir sis değil, Union Carbide adlı Amerikan böcek ilacı fabrikasından sızan siyanür (metil izosiyanat) gazıydı. 15 bin kişi ciğerleri kanayarak, boğularak ve kör olarak can verdi; yarım milyon insan sakat kaldı. Bu bir endüstriyel kaza değildi; şirket maliyetleri (masrafları) kısmak için güvenlik sistemlerini, soğutucuları ve alarm altyapılarını kasıtlı olarak kapatmış, vanaları paslanmaya terk etmişti. Bhopal Felaketi; vahşi kapitalizmin ve şirket kârlarının, insan hayatını (ve ahlakı) bilançolardaki bir "maliyet kalemi" olarak görüp gözünü kırpmadan nasıl sessiz bir gaz odasına çevirebileceğinin tarihteki en kanlı belgesidir.',
+    questionStem: 'Bhopal Felaketi\'nin bir "kaza" olmaktan çıkıp "katliam" olarak anılmasının temel gerekçesi parçada nasıl açıklanmıştır?',
+    options: [
+      'Fabrikada üretilen gazın aslında böcek ilacı değil, gizli bir askeri silah olması',
+      'Felaketin kaçınılmaz bir doğa olayından değil; şirketin sırf masrafları kısmak (kârını artırmak) uğruna güvenlik sistemlerini bilerek kapatıp insan hayatını hiçe sayan ahlaksız (kapitalist) tercihinden kaynaklanması',
+      'Hindistan hükümetinin olaya müdahale etmek yerine halkı fabrikada çalışmaya zorlaması',
+      'Gazın sızıntı hızının o dönemin mühendisliği tarafından asla hesaplanamayacak kadar yüksek olması'
+    ],
+    correct: 1,
+    explanation: 'Maliyetleri kısmak için güvenlik sistemlerinin bilerek (kasten) kapatılması; olayın bir kaza değil, kâr uğruna insan hayatını hiçe sayan bir şirket katliamı olduğunu gösterir.'
+  },
+  {
+    title: 'Winchester Gizem Evi (Travmanın Mimarisi)',
+    passage: 'Silah tüccarı William Winchester öldüğünde, eşi Sarah Winchester devasa bir mirasla dul kaldı. Ancak Sarah, kocasının ürettiği silahlarla ölen binlerce insanın ruhunun kendisine musallat olduğuna (lanetlendiğine) inanıyordu. Bir medyumun tavsiyesiyle, Kaliforniya\'da devasa bir malikâne inşa etmeye başladı ve inşaat 38 yıl boyunca (o ölene dek) hiç durmadı. Ancak bu ev normal değildi; hayaletlerin kafasını karıştırmak için tavana açılan merdivenler, tuğla duvara açılan kapılar ve labirent gibi koridorlar yaptırdı. Winchester Gizem Evi, sadece tuhaf bir mimari eser değildir; o, insanın zihnindeki o devasa korkuyu (ve suçluluk travmasını) dindirebilmek için, fiziksel duvarlar örerek kendi vicdanından ve hayaletlerinden kaçmaya çalışmasının o umutsuz, çaresiz ve taştan kâbusudur.',
+    questionStem: 'Sarah Winchester\'ın evine anlamsız kapılar ve merdivenler (gizemler) inşa etmesinin arkasındaki asıl psikolojik motivasyon nedir?',
+    options: [
+      'Gelecekte bu evin bir müze olacağını düşünerek ticari bir turizm cazibesi yaratma hırsı',
+      'Mimari kuralları yıkarak dönemin sanat anlayışına (ve estetiğine) karşı başlattığı avangart bir isyan',
+      'İçinde taşıdığı o devasa ölüm (suçluluk) travması ve hayalet korkusundan kurtulabilmek için, fiziksel mekânı (mimariyi) bir kaçış ve saklanma labirenti olarak kullanma çaresizliği',
+      'Evin içine girebilecek gerçek hırsızları ve düşmanları tuzağa düşürmek için tasarladığı bir güvenlik sistemi'
+    ],
+    correct: 2,
+    explanation: 'Ölenlerin ruhundan korktuğu için tavana merdiven, duvara kapı yapması; içsel suçluluk travmasından (hayaletlerden) mimari bir labirent örerek kaçma çaresizliğini anlatır.'
+  },
+  {
+    title: 'Boş Çerçeveler (Isabella Stewart Gardner Müzesi)',
+    passage: '1990 yılında, Boston\'daki Isabella Stewart Gardner Müzesi\'ne polis kılığında giren iki hırsız, aralarında Rembrandt ve Vermeer\'in bulunduğu paha biçilmez 13 tabloyu çerçevelerinden keserek çaldı. Aradan otuz yıldan fazla zaman geçmesine rağmen o tablolar asla bulunamadı. Ancak müze yönetimi çok felsefi bir karar aldı: Çalınan tabloların yerlerine yeni eserler asmak yerine, o "boş çerçeveleri" aynı duvarlarda asılı bırakmaya devam ettiler. Bugün müzeye giden binlerce insan, tabloların kendisinden çok o boş çerçeveleri izlemek için sıraya girmektedir. O boş çerçeveler; sanatın (ve insanın) sadece var olduğu (göründüğü) anlarda değil, geri dönülemez bir şekilde "kaybedildiği (yok olduğu) anlarda" yarattığı o kahredici boşluk hissiyle de ne kadar güçlü ve ölümsüz bir iz bırakabileceğinin kusursuz bir kanıtıdır.',
+    questionStem: 'Müze yönetiminin "boş çerçeveleri" duvarda bırakması, ziyaretçiler üzerinde nasıl bir felsefi/psikolojik etki (algı) yaratmıştır?',
+    options: [
+      'Hırsızların müzeye geri dönüp tabloları gizlice çerçevelere geri takacağı inancını',
+      'Sanatın sadece fiziksel varlığıyla (boyasıyla) değil, kaybedilenin ardından bıraktığı o "büyük eksiklik ve boşluk hissiyle" de izleyiciyi sarsan (ölümsüz) bir güce sahip olduğu algısını',
+      'Müze yönetiminin çalınan eserlerin aslında sahte olduğuna dair gizli bir mesaj verme çabasını',
+      'Sanat eserlerinin çerçeveler olmadan hiçbir estetik değer taşımadığı yönündeki eleştiriyi'
+    ],
+    correct: 1,
+    explanation: 'İnsanların boş çerçeveyi izlemesi; sanatın sadece varlığıyla değil, "kaybedilişin (yokluğun) yarattığı o boşluk hissiyle de" ölümsüz ve sarsıcı bir etki bıraktığını gösterir.'
+  },
+  {
+    title: 'Max Headroom Korsan Yayını (Sinyal İhlali)',
+    passage: '22 Kasım 1987 gecesi Chicago\'da binlerce insan televizyonlarında haber bültenini izlerken ekran aniden karardı. Görüntü geldiğinde, sarsıntılı bir arka planın önünde yüzünde ürkütücü bir "Max Headroom" maskesi olan kimliği belirsiz bir adam belirdi. İki dakika boyunca ekranda inleyerek, bağırarak ve gülerek anlamsız (sürreal) hareketler yaptı, sonra yayın normale döndü. FBI günlerce aradı ama bu korsan yayını kimin, nereden, nasıl yaptığı (hacklediği) asla bulunamadı. O dönemde devasa yayın antenleri kırılamaz sanılıyordu. "Max Headroom Olayı", teknolojik sistemlerimizin (medyanın) ne kadar dokunulmaz ve güçlü görünürse görünsün; evinin garajında oturan, sistemi anlayan tek bir anarşist (veya şakacı) tarafından saniyeler içinde nasıl aciz (ve komik) bir duruma düşürülebileceğinin en gerçeküstü kanıtıdır.',
+    questionStem: 'Max Headroom olayının Amerikan toplumunda (ve teknoloji dünyasında) yarattığı asıl şok edici kırılma nedir?',
+    options: [
+      'Televizyon programcılarının izleyicileri eğlendirmek için kasten sahte haberler üretmesi',
+      'Devletin ve büyük medyanın "aşılamaz, kusursuz" sanılan devasa teknolojik yayın altyapısının; aslında anonim ve sıradan biri tarafından saniyeler içinde kırılarak (hacklenerek) ne kadar savunmasız (kırılgan) olduğunun ispatlanması',
+      'Plastik maske üreten şirketlerin bu olaydan sonra iflas etmesi',
+      'Haber bültenlerinde şiddet içerikli görüntülerin yayınlanmasının tamamen yasaklanması'
+    ],
+    correct: 1,
+    explanation: 'Aşılamaz sanılan devasa yayın sisteminin yüzü maskeli biri tarafından saniyeler içinde hacklenmesi; teknolojik altyapının (devletin/medyanın) aslında ne kadar savunmasız ve kırılgan olduğunu ispatlamıştır.'
+  },
+  {
+    title: 'Gogol\'un Palto\'su (Küçük Adamın Ezilişi)',
+    passage: 'Rus yazar Nikolay Gogol\'un "Palto" adlı öyküsünde, Akakiy Akakiyeviç adında silik, yoksul ve sürekli alay edilen bir memur vardır. Hayattaki tek amacı, kendisini soğuktan ve aşağılanmaktan koruyacak yeni, şık bir palto diktirebilmektir. Yemez içmez, yıllarca para biriktirir ve o muazzam paltoya kavuşur. Paltoyu giydiği ilk gün toplum ona saygı duyar; ancak gece sokakta paltosu çalınır. Polise ve rütbeli "Önemli Kişilere" yalvarır ama o acımasız bürokrasi onu sadece azarlar ve kovar. Akakiy kahrından ve soğuktan hastalanıp ölür. Dostoyevski\'nin "Hepimiz Gogol\'un Palto\'sundan çıktık" dediği bu eser; devasa, soğuk ve kibirli devlet (bürokrasi) çarklarının arasında ezilen o çaresiz, yalnız ve "sıradan küçük insanın" sessiz çığlığının, edebiyat tarihindeki en acımasız anıtıdır.',
+    questionStem: 'Gogol\'un "Palto" öyküsünde Akakiy Akakiyeviç karakteri üzerinden yapılan asıl toplumsal (sistemsel) eleştiri nedir?',
+    options: [
+      'Yoksul insanların paralarını tasarruf etmek yerine gösterişli kıyafetlere harcayarak lüks düşkünü olması',
+      'Rusya\'daki çetin kış şartlarının memurların sağlığını kalıcı olarak bozması',
+      'Devasa, kibirli ve ruhsuz bürokrasi (devlet/toplum) çarklarının; kendisinden güçsüz olan o "sıradan, çaresiz küçük insanı" nasıl görmezden gelip acımasızca ezip yok ettiği',
+      'Sokak güvenliğinin sağlanamamasının (hırsızlığın) ekonomik krizleri tetiklemesi'
+    ],
+    correct: 2,
+    explanation: 'Akakiy\'nin paltosu çalındıktan sonra yetkililer (Önemli Kişiler) tarafından azarlanıp ölüme terk edilmesi; bürokrasinin/toplumun "sıradan küçük insanı" nasıl ezip yok ettiğinin (duyarsızlığın) eleştirisidir.'
+  },
+  {
+    title: 'Praglı Golem (Kontrolden Çıkan Güç)',
+    passage: '16. yüzyılda, Prag\'daki Yahudi gettosu sürekli saldırılara uğruyordu. Efsaneye göre Haham Loew, halkını korumak için nehir kenarındaki çamurdan devasa bir heykel (Golem) yaptı ve alnına mistik kelimeler yazarak ona can verdi. Golem, efendisinin emirlerine harfiyen uyuyor ve mahalleyi acımasızca koruyordu. Ancak zamanla bu cansız ve ruhsuz toprak yığını kontrolden çıkmaya, koruması gereken insanları da parçalamaya başladı. Haham sonunda Golem\'in alnındaki yazıyı silerek onu tekrar cansız bir çamura çevirmek zorunda kaldı. "Praglı Golem" efsanesi, günümüz Yapay Zekâ (AI) ve teknoloji tartışmalarının en kadim atasıdır. İnsanoğlu, kendini korumak veya işlerini yaptırmak için "ruhu, vicdanı ve ahlakı olmayan" devasa bir güç yarattığında; o gücün eninde sonunda kontrolden çıkıp kendi yaratıcısını ezeceğine dair duyulan o ilkel korkunun (ve kibrin) taştan simgesidir.',
+    questionStem: 'Praglı Golem efsanesinin, modern dünyadaki "Yapay Zekâ" tartışmalarıyla kurduğu felsefi paralellik (metafor) nedir?',
+    options: [
+      'Yapay zekânın sadece dini ve mistik şifrelerle programlanabileceği gerçeği',
+      'İnsanın kendisini koruması veya hizmet etmesi için yarattığı "ruhsuz ve ahlaktan yoksun" devasa gücün (makinenin), bir gün kontrolden çıkıp bizzat kendi yaratıcısını yok etme tehlikesi (ve korkusu)',
+      'Çamur (silikon) tabanlı işlemcilerin günümüzde bilgisayar teknolojisinde kullanılması',
+      'Büyük şehirlerde güvenlik güçlerinin yetersiz kalarak robot polislere ihtiyaç duyması'
+    ],
+    correct: 1,
+    explanation: 'Koruyucu olarak yaratılan ruhsuz Golem\'in kontrolden çıkıp yaratıcısına saldırması; yapay zekânın (ruhsuz gücün) kontrolden çıkıp insanlığı yok etme korkusuna (Frankenstein kibrine) kusursuz bir paraleldir.'
+  },
+  {
+    title: 'Tenerife Uçak Kazası (Otorite Körü)',
+    passage: '1977 yılında İspanya\'nın Tenerife adasında, sivil havacılık tarihinin en ölümcül kazası (583 ölü) yaşandı. Yoğun bir sisin içinde, KLM ve Pan Am havayollarına ait iki devasa Boeing 747 pistte çarpıştı. Ancak bu kaza mekanik bir arızadan değil, "psikolojik" bir felaketten doğdu. KLM uçağının kaptanı Veldhuyzen van Zanten, şirketin en efsanevi, en rütbeli ve poster yüzü olan pilotuydu. Kule uçuş izni vermemesine rağmen sisin içinde gaza basıp kalkışa geçti. Yanında oturan genç yardımcı pilot (ve uçuş mühendisi) bir şeylerin yanlış olduğunu biliyor, diğer uçağın pistte olabileceğini görüyordu; ancak o "efsanevi ve kusursuz" kaptana karşı çıkmaya, onu sertçe durdurmaya cesaret (ve cüret) edemedi. Tenerife faciası; otorite kibrinin ve hiyerarşi karşısındaki o körü körüne itaatin, mantığı ve apaçık gerçeği bile nasıl ölüme (suskunluğa) sürüklediğinin en kanlı ispatıdır.',
+    questionStem: 'Tenerife Uçak Kazası\'nın temelinde yatan ve ölümleri kaçınılmaz kılan "psikolojik (insani) hata" nedir?',
+    options: [
+      'Uçaklardaki radar sistemlerinin sisli havalarda kesinlikle çalışmaması',
+      'Hiyerarşinin ve "otoriteye duyulan mutlak itaatin" (otorite körlüğünün), alt kademedeki bireylerin gördükleri açık tehlikeyi dile getirmesini (eleştirel aklı) felç ederek onları ölümcül bir suskunluğa itmesi',
+      'Her iki uçağın kaptanlarının birbirleriyle olan eski ve kişisel düşmanlığı',
+      'Yolcuların uçak içinde paniğe kapılarak kokpite girmeye çalışması'
+    ],
+    correct: 1,
+    explanation: 'Yardımcı pilotun hatayı görmesine rağmen "efsanevi" kaptana karşı çıkamaması; otorite kibrinin ve hiyerarşik itaatin eleştirel aklı felç etmesi (otorite körlüğü) olarak açıklanır.'
+  },
+  {
+    title: 'Odin\'in Fedakârlığı (Yggdrasil)',
+    passage: 'İskandinav mitolojisinin baş tanrısı Odin, sonsuz bilgeliğe (runelerin sırrına) ulaşmak için muazzam bir bedel ödemek zorundadır. O, evrenin merkezindeki Hayat Ağacı\'na (Yggdrasil\'e) kendi kendini baş aşağı asar. Tam dokuz gün ve dokuz gece boyunca aç, susuz ve kendi mızrağıyla yaralanmış halde o ağaçta sallanır. Hatta bilgelik kuyusundan (Mimir) su içebilmek için tek gözünü yuvasından oyup kuyuya atar. Odin, tanrı olmasına rağmen "bilginin" bedavaya elde edilemeyeceğini bilir. O, aydınlanmak uğruna acı çekmeyi, karanlığa dalmayı ve kendinden bir parçayı feda etmeyi seçer. Odin\'in bu fedakârlığı; gerçek bilgeliğin kitap sayfalarını çevirerek değil, insanın kendi konfor alanını parçalayarak, kibrini kurban ederek ve hakikatin o acı veren yükünü omuzlayarak kazanılabileceğinin alegorisidir.',
+    questionStem: 'Odin\'in Yggdrasil ağacına asılıp gözünü feda etmesi efsanesi, "gerçek bilgiye (bilgeliğe) ulaşma" süreci hakkında neyi sembolize eder?',
+    options: [
+      'Tanrıların fiziksel olarak acı çekmediklerini ve bu eylemin sadece insanları korkutmak için bir tiyatro olduğunu',
+      'Gerçek bilgeliğin (aydınlanmanın) zahmetsiz ve bedavaya elde edilemeyeceğini; bunun için kişinin kendi konforunu, kibrini (ve hatta bedeninden bir parçayı) feda etmesi, derin bir acı ve bedel ödemesi gerektiğini',
+      'Ağaçların mitolojide bilgiyi depolayan sihirli birer kütüphane işlevi gördüğünü',
+      'Tek gözlü olmanın İskandinav savaşçıları için bir rütbe ve üstünlük sayıldığını'
+    ],
+    correct: 1,
+    explanation: 'Odin\'in günlerce asılı kalıp gözünü oyması; bilgeliğin bedavaya/kolayca alınamayacağını, bunun devasa bir acı, fedakârlık ve konfor/kibir yıkımı gerektirdiğini sembolize eder.'
+  },
+  {
+    title: 'McGurk Etkisi (Duyuların Çarpışması)',
+    passage: 'Bir videoda, bir adamın dudaklarının açıkça "Ga-Ga-Ga" dediğini görüyorsunuz. Ancak videonun arka planındaki ses (hoparlörden gelen ses) aslında "Ba-Ba-Ba" demektedir. Gözünüz "Ga"yı görüyor, kulağınız "Ba"yı duyuyor. Peki beyniniz ne yapar? Delirir mi? Hayır. Beyin anında o iki uyumsuz veriyi alıp pürüzsüzce kurgular ve size bambaşka, üçüncü bir ses duyurur: "Da-Da-Da!" Psikolojide "McGurk Etkisi" denen bu olay, dışarıdaki gerçekliğin doğrudan zihnimize girmediğini ispatlar. Duyularımız birbiriyle çeliştiğinde, beynimiz gerçeği bize olduğu gibi sunmaz; çelişkiyi örtbas etmek (mantıklı bir hikâye kurmak) için anında yepyeni, tamamen uydurma (halüsinatif) bir gerçeklik yaratır. Gördüğümüz ve duyduğumuz dünya, objektif bir belgesel değil, beynimizin canlı yayında montajladığı kurgusal bir sinema filmidir.',
+    questionStem: 'McGurk Etkisi (gözün farklı, kulağın farklı veri aldığı deney), algımız ve "gerçeklik" hakkında hangi sarsıcı gerçeği kanıtlar?',
+    options: [
+      'İnsanların yaşlandıkça işitme duyularının görme duyularına göre daha çabuk bozulduğunu',
+      'İnsan beyninin, birbiriyle çelişen duyusal verilerle karşılaştığında gerçeği olduğu gibi kabul etmek yerine; çelişkiyi örtmek için yepyeni ve tamamen kurgusal (sahte) bir gerçeklik üreterek bizi kandırdığını',
+      'Görsel algının işitsel algıdan daha yavaş (gecikmeli) çalıştığını ve beynin senkronizasyon hatası yaptığını',
+      'Yabancı dillerdeki hecelerin insan beyni tarafından hiçbir zaman tam olarak anlaşılamadığını'
+    ],
+    correct: 1,
+    explanation: 'Gözün "Ga", kulağın "Ba" duymasına rağmen beynin "Da" (yepyeni bir ses) yaratması; beynin çelişen verileri örtmek için anında sahte bir gerçeklik/kurgu uydurduğunu (bizi kandırdığını) ispatlar.'
+  },
+  {
+    title: 'Fantazmagorya (Korku Sinemasının Doğuşu)',
+    passage: '18. yüzyılın sonlarında, Paris ve Londra sokaklarında "Fantazmagorya" (Phantasmagoria) adı verilen karanlık ve ürkütücü gösteriler düzenlenirdi. Göstericiler, kapkaranlık bir odaya seyircileri toplar ve "Büyülü Fener" (ilkel bir projeksiyon) kullanarak dumanların üzerine iskeletler, iblisler ve ölülerin hayaletlerini yansıtırlardı. Duman hareket ettikçe hayaletler seyircilerin üzerine doğru geliyormuş gibi görünürdü. İnsanlar çığlık çığlığa kaçışır, bayılır ama ertesi gün bu korkunç gösteriyi izlemek için tekrar para öderlerdi. Fantazmagorya, modern korku sinemasının atasıdır. Bu olay, insanoğlunun o en tuhaf psikolojik mazoşizmini ortaya koyar: Fiziksel olarak güvende olduğumuzu (karanlık bir koltukta oturduğumuzu) bildiğimiz anlarda, kendi zihnimizi dehşete düşürmekten, ölümle ve karanlıkla (kurgusal olarak) yüzleşmekten derin ve hastalıklı bir haz (eğlence) duyarız.',
+    questionStem: 'Fantazmagorya gösterilerinin (ve korku sinemasının) insanlar tarafından bu kadar talep görmesinin altındaki asıl psikolojik neden (paradoks) nedir?',
+    options: [
+      'İnsanların ölümden sonraki hayata dair dini inançlarını güçlendirme arzusu',
+      'Fiziksel olarak güvende (hayatta) olduklarını bildikleri ortamlarda, ölüm ve dehşet hissiyle "kurgusal olarak" yüzleşmenin insanlarda derin ve paradoksal bir haz (eğlence/mazoşizm) yaratması',
+      'Gösterilerde kullanılan dumanın insan beyninde halüsinasyon yaratan uyuşturucu maddeler içermesi',
+      'Avrupa halkının orta çağdaki cadı efsanelerini unutmak istemesi'
+    ],
+    correct: 1,
+    explanation: 'İnsanların çığlık atıp bayılmasına rağmen tekrar para ödemesi; fiziksel güvendeyken kurgusal olarak korkuyla/ölümle yüzleşmenin insana paradoksal bir haz ve eğlence verdiğini açıklar.'
+  },
+  {
+    title: 'Kırmızı Ringa Balığı (Red Herring)',
+    passage: 'Eski zamanlarda kaçakçılar ve suçlular, peşlerindeki polis köpeklerinin koku alma duyusunu şaşırtmak için yollarına (bambaşka bir yöne doğru) keskin kokulu "Kırmızı Ringa Balığı" sürterlerdi. Köpekler asıl izi bırakıp o keskin ve sahte balık kokusunun peşinden giderdi. Bugün edebiyatta, sinemada ve siyasette bu taktik "Red Herring" (Şaşırtmaca) olarak bilinir. Yazar (veya politikacı), sizin asıl gerçeğe ulaşmanızı engellemek için ortaya çok ilgi çekici, bağırıp çağıran ama konuyla tamamen alakasız sahte bir detay (kriz) atar. Zihin, o anlamsız ama keskin kokulu detaya o kadar odaklanır ki; asıl katili, asıl ekonomik krizi veya asıl gerçeği gözden kaçırır. İnsan zihni, karmaşık ve acı veren asıl gerçeği aramaktansa; önüne atılan o parlak ve basit yalanın peşinden koşmaya (havlamaya) her zaman daha yatkındır.',
+    questionStem: 'Edebiyatta ve siyasette kullanılan "Kırmızı Ringa Balığı (Red Herring)" taktiğinin asıl amacı nedir?',
+    options: [
+      'Toplumun deniz ürünleri ve balıkçılık sektörüne olan ilgisini artırmak',
+      'İnsanların uzun odaklanma sürelerini artırarak analitik düşünme yeteneklerini geliştirmek',
+      'Ortaya son derece ilgi çekici ancak konuyla tamamen alakasız (sahte) bir kriz/detay atarak, insanların dikkatini dağıtıp onların asıl tehlikeden (veya hakikatten) uzaklaşmasını sağlamak',
+      'Köpeklerin koku alma yeteneklerini polis teşkilatları için daha verimli kullanmak'
+    ],
+    correct: 2,
+    explanation: 'Kaçakçıların asıl izi kaybettirmek için sahte ve keskin bir koku (balık) kullanması metaforu; siyasette ve kurguda, dikkat dağıtıcı sahte bir detayla (şaşırtmacayla) halkı asıl gerçekten uzaklaştırmayı tanımlar.'
+  },
+  {
+    title: 'Sessizlik Kuleleri (Zerdüştlerin Gökyüzü Mezarları)',
+    passage: 'Kadim Zerdüştlük inancında ateş, su ve toprak kusursuz ve kutsal elementlerdir. Bir insan öldüğünde, o bedenin (cesedin) çürüyerek o kutsal elementleri (toprağı veya ateşi) kirletmesine (bulaşmasına) asla izin verilmez. Bu yüzden Zerdüştler ölülerini gömmez veya yakmazlar. Cesetleri, şehirlerin dışındaki dağ tepelerine inşa edilmiş "Sessizlik Kuleleri"ne (Dakhma) götürüp çırılçıplak bırakırlar. Gökten inen akbabalar, birkaç saat içinde bedendeki tüm etleri yiyerek temizler; geriye kalan kemikler ise güneşin kavurucu ışığında beyazlayıp toza dönüşür. Dışarıdan vahşice görünen bu "Gökyüzü Mezarları", aslında insanın kibrine atılmış en zarif çentiktir. İnsanoğlu, öldükten sonra devasa mermer anıtların altında yatmayı (doğaya hükmetmeyi) değil; doğanın bir parçası olarak sessizce diğer canlıların midesinde (ekosistemde) eriyip gitmeyi, o büyük ve vahşi döngüye sıfır ego ile teslim olmayı seçmiştir.',
+    questionStem: 'Zerdüştlükteki "Sessizlik Kuleleri (Gökyüzü Mezarları)" ritüeli, ölüm ve doğa ilişkisi bağlamında neyi sembolize etmektedir?',
+    options: [
+      'Toprak yetersizliğinden dolayı mecburen uygulanan pratik ve hijyenik bir çöp imha yöntemini',
+      'Kuşların ve akbabaların Zerdüşt dininde tanrısal yaratıklar olarak kabul edildiğini',
+      'İnsanın öldükten sonra görkemli anıtlar dikme (doğaya hükmetme) kibrini reddederek; kendi bedenini ekosistemin bir parçası olarak doğaya (hayvanlara) sunması ve o vahşi döngüye sıfır egoyla teslim (feda) olmasını',
+      'Ateş ve suyun insan bedeniyle temas etmesi durumunda küresel bir felaket yaşanacağı korkusunu'
+    ],
+    correct: 2,
+    explanation: 'Ölüyü gömmek yerine akbabalara yedirmek; mermer anıtlara (kibre) karşı çıkarak insanın doğayı kirletmeden ekosistemin döngüsüne sıfır egoyla teslim olmasını (çevreci/ruhani bir alçakgönüllülüğü) sembolize eder.'
+  },
+  {
+    title: 'Büyük Koku (1858 Londra\'sı)',
+    passage: '1858 yılının kavurucu yazında, dönemin en büyük ve en güçlü imparatorluğunun başkenti olan Londra hayatının en utanç verici krizini yaşadı: "Büyük Koku" (The Great Stink). Şehrin iki buçuk milyonluk nüfusunun tüm kanalizasyonu, atıkları ve sanayi atıkları doğrudan Thames nehrine dökülüyordu. Nehir o kadar iğrenç bir lağım çukuruna dönüşmüştü ki, sıcaklık artınca havaya yayılan hidrojen sülfür kokusu şehrin üzerine ölümcül bir sis gibi çöktü. Durum o kadar katlanılmazdı ki, dünyayı yöneten İngiliz Parlamentosu koku yüzünden pencerelerine klora batırılmış perdeler asmak zorunda kaldı ve en sonunda binayı terk edip (çalışmayı durdurup) kaçtılar. Büyük Koku; teknolojinin, sanayinin ve "sınırsız ilerleme" kibrinin; altyapı (ve doğa) yok sayıldığında kendi ürettiği dışkının ve çöpün içinde boğulmaya ne kadar mahkûm olduğunun trajikomik belgesidir.',
+    questionStem: 'Büyük Koku (The Great Stink) felaketi, Sanayi Devrimi ve modernleşme kibri hakkında nasıl bir eleştiri barındırır?',
+    options: [
+      'Sıcak havaların İngiltere gibi soğuk iklim ülkelerinde her zaman ölümcül salgınlara yol açtığını',
+      'Thames nehrinin doğal yapısının su akıntılarını engellediğini',
+      'Doğayı (ve altyapıyı) hiçe sayarak sadece teknoloji ve sanayi (büyüme) odaklı ilerleyen bir medeniyetin, eninde sonunda kendi ürettiği kirliliğin (dışkının) kurbanı olarak felç olacağını',
+      'Politikacıların halkın yaşadığı sorunları asla umursamadığını ve kaçtığını'
+    ],
+    correct: 2,
+    explanation: 'Sanayi ve nüfus büyürken altyapının hiçe sayılıp nehrin lağıma dönmesi ve parlamentoyu felç etmesi; sınırsız ilerleme kibrinin doğayı/altyapıyı yok saydığında kendi çöpünde boğulacağı (felç olacağı) gerçeğini eleştirir.'
+  },
+  {
+    title: 'Ockham\'ın Süpürgesi (Gerçeği Halı Altına Süpürmek)',
+    passage: 'Bilimde, en basit açıklamanın doğru olduğunu savunan "Ockham\'ın Usturası"nı hepimiz biliriz. Ancak biyolog Sidney Brenner bunun tam zıttı olan ve çok daha karanlık olan bir durumu "Ockham\'ın Süpürgesi" olarak adlandırmıştır. Bilim insanları veya siyasetçiler, ortaya koydukları o "çok güzel, pürüzsüz ve popüler" teoriyi bozacak, o sisteme uymayacak tuhaf (aykırı) veriler veya kanıtlar bulduklarında ne yaparlar? Bunları teorilerini düzeltmek için kullanmak yerine, tıpkı tozları halının altına süpürür gibi kasıtlı olarak görmezden gelir, sansürler veya "bunlar anomali (istisna)" diyerek çöpe atarlar (süpürürler). Ockham\'ın Süpürgesi; gerçeği bulma aşkının, kişinin kendi egosunu, inancını ve o "kusursuz sanılan teorisini" koruma hırsı karşısında yenik düşerek, hakikatin nasıl kasten örtbas edildiğinin bilimsel adıdır.',
+    questionStem: 'Ockham\'ın Süpürgesi (Ockham\'s Broom) kavramı, araştırmacıların veya ideologların hangi "bilim ve ahlak dışı" davranışını tanımlamaktadır?',
+    options: [
+      'Sadece basit açıklamaları kabul ederek karmaşık bilimsel verileri analiz etmekten kaçınmalarını',
+      'Laboratuvar ortamlarının hijyenik olmamasına bağlı olarak deney sonuçlarının sürekli hatalı çıkmasını',
+      'Kendi savundukları teorinin (inancın) kusursuzluğunu korumak adına, o teoriye uymayan aykırı (gerçek) verileri kasten görmezden gelip halı altına süpürmelerini (örtbas etmelerini)',
+      'Ockham\'ın Usturası prensibini yanlış anladıkları için sürekli komplo teorileri üretmelerini'
+    ],
+    correct: 2,
+    explanation: 'Kendi pürüzsüz teorilerine (egolarına) uymayan aykırı kanıtları/verileri reddedip "anomali" diyerek (halı altına süpürerek) görmezden gelmeleri (örtbas), bu kavramın asıl eleştirisidir.'
+  }
+];
+
+export const karisikParagrafSorulari22: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_22.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_22[idx];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-karisik22-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
 // paragrafTests.ts dosyasının hata vermemesi için iki listeyi birleştirip eski adıyla dışa aktarıyoruz:
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari,
@@ -5881,5 +6158,6 @@ export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...felsefeParagrafSorulari18,
   ...bilimParagrafSorulari19,
   ...karisikParagrafSorulari20,
-  ...felsefeParagrafSorulari21
+  ...felsefeParagrafSorulari21,
+  ...karisikParagrafSorulari22
 ];
