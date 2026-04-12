@@ -8631,6 +8631,284 @@ export const felsefeParagrafSorulari31: BilimParagrafQuestion[] = Array.from({ l
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
+const PARAGRAPH_THEMES_32 = [
+  {
+    title: 'Brandolini Yasası (Saçmalığın Asimetrisi)',
+    passage: 'İnternet çağında bir yalanın neden doğrudan (hakikatten) çok daha hızlı yayıldığını merak ettiniz mi? İtalyan yazılımcı Alberto Brandolini bu korkunç gerçeği tek bir formülle, "Saçmalık Asimetrisi Prensibi" ile açıklar: "Bir saçmalığı (yalanı veya iftirayı) çürütmek için harcanması gereken enerji, o saçmalığı üretmek için harcanan enerjiden en az bir büyüklük sırası daha fazladır." Cahil birinin sosyal medyada "Dünya düzdür" diye bir yalan uydurması sadece 5 saniyesini alır. Ancak bir bilim insanının bu saçmalığı çürütmek için sayfalarca makale yazması, deney yapması ve kanıt sunması günlerini alır. Brandolini Yasası, hakikatin neden her zaman yenilmeye mahkûm olduğunu fısıldar: Yalan bedava, hızlı ve sınırsızken; hakikat her zaman yavaş, pahalı ve yorgundur.',
+    questionStem: 'Brandolini Yasası\'na göre, dijital çağda yalanların (dezenformasyonun) gerçeklere galip gelmesinin asıl matematiksel (ve psikolojik) nedeni nedir?',
+    options: [
+      'İnsanların bilimsel makaleleri okuyacak kadar yüksek bir eğitim seviyesine sahip olmaması',
+      'Bir yalanı (saçmalığı) üretmenin son derece zahmetsiz ve saniyelik bir iş olmasına karşın; o yalanı çürütüp hakikati kanıtlamanın devasa bir zaman, emek ve enerji gerektirmesi (asimetri)',
+      'Hükümetlerin ve medyanın her zaman yalan haberleri (sansasyonları) destekleyen algoritmalar kullanması',
+      'Doğru bilginin genellikle karmaşık matematiksel formüllerle yazıldığı için anlaşılamaması'
+    ],
+    correct: 1,
+    explanation: 'Yalan üretmenin 5 saniye, onu çürütmenin (hakikati kanıtlamanın) ise günler sürmesi; yalan ile hakikat arasındaki o yorucu ve adaletsiz enerji farkını (asimetriyi) açıklar.'
+  },
+  {
+    title: 'Korsakoff Sendromu (Uydurulmuş Geçmiş)',
+    passage: 'Ağır alkolizmin beyni tahrip etmesiyle ortaya çıkan "Korsakoff Sendromu"ndaki hastalar, yakın geçmişe dair anılarını tamamen kaybederler. Ancak beyinleri bu "karanlık boşluk" gerçeğiyle yüzleşmek (hafıza kaybını kabullenmek) yerine dehşet verici bir savunma mekanizması geliştirir: Konfabulasyon (Masallama). Hastaya "Dün ne yaptın?" diye sorulduğunda, hafızasındaki o boşluğu doldurmak için anında, tamamen kurgusal, absürt ama sarsılmaz bir inançla savunduğu yalanlar (sahte anılar) uydurmaya başlar. "Dün Paris\'te kralla yemek yedim" der ve buna kendisi de %100 inanır! Korsakoff hastaları bize zihnimizin en kırılgan sırrını fısıldar: İnsan beyni, "hiçlikten (bilmemekten)" öylesine ölümcül bir dehşet duyar ki; o karanlık boşluğa düşmektense, kusursuz bir özgüvenle kendi uydurduğu sahte bir yalana (kurguya) tapınmayı tercih eder.',
+    questionStem: 'Korsakoff Sendromu\'ndaki "Konfabulasyon (sahte anı uydurma)" refleksi, insan beyninin hangi temel varoluşsal korkusundan beslenir?',
+    options: [
+      'Alkolün sinir hücrelerinde yarattığı kimyasal bir zehirlenmeyle insanın agresifleşmesi korkusundan',
+      'Toplum tarafından dışlanma ve sevilmeme korkusundan',
+      'Hafızadaki o karanlık "boşluk (hiçlik/bilmeme)" durumuyla yüzleşmenin getirdiği o devasa dehşetten kaçma; bunun yerine uydurma bir yalanla kendini güvende hissetme ihtiyacından',
+      'Geçmişte işlenen suçların ve günahların cezasını çekme korkusundan'
+    ],
+    correct: 2,
+    explanation: 'Beynin anıları unuttuğunu (hiçliği) kabullenmek yerine anında sahte anılar (yalanlar) uydurması; zihnin boşluktan/hiçlikten duyduğu o ölümcül korkuyu ve yalanla kendini güvende hissetme refleksini ifşa eder.'
+  },
+  {
+    title: 'Abilene Paradoksu (Nezaket Tuzağı)',
+    passage: 'Teksas\'ta sıcak bir yaz günü, dört kişilik bir aile verandada serinlerken biri "Hadi 50 mil ötedeki Abilene\'e yemeğe gidelim" der. Dört kişi o kavurucu sıcakta tozlu yolları aşar, berbat bir yemek yiyip perişan halde eve dönerler. Evde biri "Çok kötüydü, ben aslında hiç gitmek istememiştim" diye itiraf eder. Diğeri "Ben de sadece siz istiyorsunuz diye kabul ettim" der. Sonunda anlaşılır ki; aslında gruptaki hiç kimse Abilene\'e gitmek istememiştir! Herkes, diğerlerinin gitmek istediğini sanarak "uyum sağlamak (nezaket göstermek)" uğruna kendi isteğini susmuştur. Yönetim bilimindeki "Abilene Paradoksu", kitlelerin veya şirketlerin en trajik zehridir: Bir gruptaki herkesin içinden reddettiği, kimsenin istemediği aptalca bir karar; sırf kimse "oyunbozan" olmak istemediği (sahte bir nezaket sergilediği) için oybirliğiyle alınıp felaketle sonuçlanabilir.',
+    questionStem: 'Abilene Paradoksu, grup dinamikleri (ve karar alma süreçleri) hakkında hangi yıkıcı "sosyal yanılgıyı" kanıtlar?',
+    options: [
+      'Grup liderlerinin her zaman kendi bencil çıkarlarını diğer üyelere zorla dayattığı gerçeğini',
+      'İnsanların (uyumsuz görünmeme korkusuyla) birbirlerinin asıl niyetlerini yanlış okuyarak; aslında gruptaki hiç kimsenin istemediği yıkıcı (aptalca) bir kararı sırf "sahte bir nezaket ve uyum" uğruna oybirliğiyle alabilme (kolektif felç) yanılgısını',
+      'Sıcak hava ve fiziksel yorgunluğun insanlarda mantıklı karar alma yetisini tamamen bitirdiğini',
+      'Aile içindeki yaş hiyerarşisinin her zaman yanlış kararlara yol açtığını'
+    ],
+    correct: 1,
+    explanation: 'Kimsenin istemediği bir yere sırf "diğerleri istiyor sanarak (uyum uğruna)" gidilmesi; sahte nezaket ve uyumsuz olma korkusunun kolektif bir felakete (hiç kimsenin istemediği karara) yol açtığını kanıtlar.'
+  },
+  {
+    title: 'Echo Miti (Yankının Laneti)',
+    passage: 'Yunan mitolojisinde orman perisi (Nymph) Echo, gevezeliğiyle tanrıça Hera\'yı o kadar sinirlendirir ki, Hera onu korkunç bir şekilde lanetler: Echo artık asla kendi cümlelerini kuramayacak, sadece başkalarının ona söylediği "son birkaç kelimeyi" tekrarlayabilecektir! (Yankı kelimesi buradan gelir). Echo, âşık olduğu Narkissos\'a aşkını haykırmak ister ama dili mühürlüdür; adam ona ne söylerse sadece onun son kelimelerini çaresizce tekrar eder ve sonunda acıdan eriyerek görünmez bir sese dönüşür. Echo\'nun laneti; modern çağda kendi düşüncesini, kendi eleştirel aklını ve orijinal sesini kaybederek; sadece toplumun, medyanın veya ideolojilerin kendisine sunduğu o hazır kelimeleri (sloganları) tekrarlayan; kendi ruhu olmayan modern insanın (yankı odalarındaki o papağanların) trajik ve dilsiz efsanesidir.',
+    questionStem: 'Mitolojideki "Echo\'nun Laneti (Sadece başkalarının son sözünü tekrar etme)", günümüz insanı için neyin felsefi bir metaforudur?',
+    options: [
+      'İletişim teknolojilerinin (telefonların) ses dalgalarını doğaya zarar vermeden nasıl ilettiğinin',
+      'Aşk acısının insanları fiziksel olarak eriterek doğanın bir parçasına (sese) dönüştürdüğünün',
+      'Bireyin kendi özgün aklını, düşüncesini ve eleştirel sesini kaybederek; sadece dışarıdan (sistemden/medyadan) duyduğu hazır kalıpları (sloganları) papağan gibi tekrarlayan ruhsuz bir "yankıya" dönüşmesinin',
+      'Ormanlarda yüksek sesle konuşmanın doğa ruhlarını her zaman kızdıracağının'
+    ],
+    correct: 2,
+    explanation: 'Echo\'nun kendi cümlesini kuramayıp sadece söylenenin sonunu tekrarlaması; modern insanın kendi özgün düşüncesini (sesini) yitirip sadece medyanın/sistemin sloganlarını tekrarlayan ruhsuz bir "yankı" olmasının metaforudur.'
+  },
+  {
+    title: 'Hitchens\'ın Usturası (Kanıtın Yükü)',
+    passage: 'Felsefede tartışmaların kaderini belirleyen kurallar vardır. Ünlü gazeteci ve düşünür Christopher Hitchens, her türlü dogmayı, komplo teorisini ve mistik yalanı tek kılıç darbesiyle kesip atan o sarsılmaz kuralı ("Hitchens\'ın Usturası") şöyle formüle etmiştir: "Kanıtsız olarak ileri sürülen her iddia, yine kanıtsız olarak reddedilebilir." Eğer biri size gelip "Mars\'ın merkezinde çay içen mor elfler var, hadi olmadığını kanıtla!" derse, o elflerin olmadığını kanıtlamak sizin (bilimin) görevi değildir. İddiayı (yükü) ortaya atan kişi kanıt sunmuyorsa, sizin o iddiayı ciddiye alma, çürütmeye çalışma veya ona saygı duyma zorunluluğunuz yoktur. Hitchens\'ın Usturası; zihnimizi rehin almaya çalışan şarlatanlara, kanıtsız dogmalara ve "aksini ispatla" kibrine karşı aklın çektiği en acımasız ve en özgürleştirici resttir.',
+    questionStem: 'Hitchens\'ın Usturası ("Kanıtsız iddia kanıtsız reddedilir") kuralı, mantık ve tartışma felsefesinde asıl olarak neyi güvence altına alır?',
+    options: [
+      'Sadece üniversite mezunlarının bilimsel tartışmalara katılabileceği kuralını',
+      'İspat yükünün (kanıtlama zorunluluğunun) iddiayı reddedene değil, iddiayı "ortaya atana" ait olduğunu; böylece aklın, kanıtsız (dogmatik) şarlatanlıklara ve safsatalara karşı korunmasını',
+      'Evrendeki her şeyin mutlaka fiziksel bir laboratuvar kanıtı olmak zorunda olduğunu',
+      'Eski çağlardan günümüze ulaşan mitolojik hikâyelerin aslında tamamen gerçek olduğunu'
+    ],
+    correct: 1,
+    explanation: 'Bir iddiayı ortaya atanın kanıt sunmak zorunda olduğu (ispat yükü); kanıtsız iddiaların ciddiye alınmadan reddedilebileceği (dogmalara karşı aklın korunması) kuralıdır.'
+  },
+  {
+    title: 'Hiper-Normalleşme (Sahte Düzeni Yaşatmak)',
+    passage: '1980\'lerin sonlarında Sovyetler Birliği içeriden tamamen çürümüştü. Ekonomi iflas etmiş, teknoloji durmuş, ideoloji koca bir yalana dönüşmüştü. Ancak antropolog Alexei Yurchak\'ın "Hiper-Normalleşme" (Hypernormalisation) olarak adlandırdığı kan dondurucu bir tiyatro yaşanıyordu: Politikacılar sistemin çöktüğünü biliyordu. Halk da sistemin çöktüğünü biliyordu. Politikacılar, halkın her şeyi bildiğini biliyordu; halk da politikacıların onların bildiğini bildiğini biliyordu! Ancak alternatif bir dünya hayal edemedikleri için, herkes "sistem kusursuz çalışıyormuş gibi" yapmaya (o sahte tiyatroyu oynamaya) devam etti. Yalan o kadar devasa ve kapsayıcıydı ki, yeni bir "normal" (Hiper-Normal) olmuştu. Bu kavram bugün bizim dünyamıza da bir aynadır: Finansal krizlerin, iklim felaketlerinin ve adaletsizliğin ortasında herkes gerçeği bilir; ancak kimse çarkın dışına çıkmaya cesaret edemediği için hepimiz o sahte gösteriyi (yalanı) yaşatmaya devam ederiz.',
+    questionStem: 'Hiper-Normalleşme kavramı, çöken bir sistem karşısında toplumun (ve yöneticilerin) sergilediği hangi "patolojik (hastalıklı)" durumu tanımlar?',
+    options: [
+      'Toplumun çöken sisteme anında büyük silahlı devrimlerle karşılık vermesini',
+      'Sistemin (ve yalanın) çöktüğünü herkesin "açıkça" bilmesine rağmen, alternatif (yeni) bir gerçeklik hayal edilemediği için, tüm toplumun sanki her şey yolundaymış gibi o sahte tiyatroyu oynamaya (yalanı normalleştirmeye) devam etmesi kâbusunu',
+      'Yöneticilerin ekonomi bozulduğunda hemen istifa edip ülkeyi terk etme eğilimini',
+      'Teknolojik gelişmelerin hızlanmasıyla toplumun yalan haberleri saniyeler içinde ayırt edebilmesini'
+    ],
+    correct: 1,
+    explanation: 'Herkesin yalanı bilmesine rağmen alternatif bulamadığı için "sistem çalışıyormuş gibi" yapmaya devam etmesi (yalanın yeni normal olması); Hiper-Normalleşme\'nin asıl patolojik durumudur.'
+  },
+  {
+    title: 'Hedonik Koşu Bandı (Mutluluk İllüzyonu)',
+    passage: 'Hepimiz kendimize şu yalanı söyleriz: "Şu terfiyi alırsam, şu arabayı alırsam veya şu kişiyle evlenirsem hayatım boyunca mutlu olacağım." Psikologlar bunu araştırdığında o sarsıcı "Hedonik Koşu Bandı" (Hedonic Treadmill) kuralını buldular. İster piyangoyu kazanıp milyoner olun, ister feci bir kaza geçirip felç kalın; insan beyni birkaç ay süren geçici bir şoktan sonra, o yeni duruma "adapte olur" ve mutluluk seviyeniz kaza geçirmeden (veya piyango çıkmadan) önceki eski, sıradan fabrika ayarlarına (temel seviyesine) geri döner! Tıpkı bir koşu bandında kan ter içinde koşan ama aslında bir milim bile ileri gitmeyen bir sporcu gibi; insanoğlu da yeni eşyalar, yeni aşklar ve yeni statüler uğruna ömrünü tüketerek koşar, ancak günün sonunda hep aynı tatminsizliğin (aynı boşluğun) sıfır noktasına geri döner. Mutluluk ulaşılacak bir zirve değil, sürekli adapte olunan bir illüzyondur.',
+    questionStem: 'Hedonik Koşu Bandı (Hedonic Treadmill) teorisi, insanın "mutluluk" arayışı hakkında hangi trajik gerçeği ispatlar?',
+    options: [
+      'Piyango kazanan insanların her zaman kazadan felç kalan insanlardan daha depresif olduğunu',
+      'Fiziksel sporların ve koşmanın beyindeki endorfin seviyesini kalıcı olarak düşürdüğünü',
+      'İnsanın hedeflerine ulaştığında (veya felaketler yaşadığında) kalıcı bir hisse sahip olamayacağını; beynin her yeni duruma hızla adapte olarak bizi sürekli aynı (tatminsiz) başlangıç noktasına döndürdüğünü',
+      'Mutluluğun sadece çok para kazanmakla doğrudan orantılı ve kalıcı bir his olduğunu'
+    ],
+    correct: 2,
+    explanation: 'Ne olursa olsun (piyango veya felaket) beynin o duruma adapte olup eski başlangıç noktasına (tatminsizliğe) geri dönmesi; mutluluk arayışının kalıcı bir zirve değil, bitmeyen (koşu bandı gibi) bir adaptasyon/illüzyon olduğunu ispatlar.'
+  },
+  {
+    title: 'Maymun Pençesi (Dileklerin Kâbusu)',
+    passage: 'W.W. Jacobs\'un efsanevi korku öyküsü "Maymun Pençesi"nde, yaşlı bir çifte üç dilek hakkı veren sihirli, kurumuş bir maymun pençesi hediye edilir. Çift, borçlarını ödemek için masumca "200 sterlin" diler. Ertesi gün kapı çalar; oğullarının çalıştığı fabrikada bir makinenin içine düşerek korkunç bir şekilde parçalanarak öldüğünü söylerler ve şirket tazminat olarak aileye tam "200 sterlin" öder! Edebiyattaki bu "Maymun Pençesi" motifi, insanın hırsına ve doğanın kanunlarını bükme arzusuna verilmiş en karanlık felsefi cevaptır: Evren, sizden esirgediği bir şeyi (haksız bir dileği) size vermek zorunda kalırsa, o isteğinizi (en korkunç ve ironik bedelleri ödeterek) karanlık bir lanete çevirerek verir. Bedeli ödenmemiş (ve hakedilmemiş) hiçbir arzunun sonu aydınlık olamaz.',
+    questionStem: 'Maymun Pençesi öyküsündeki "dileğin gerçekleşme şekli", insan arzuları ve evren ilişkisi hakkında neyi sembolize eder?',
+    options: [
+      'Sihirli eşyaların her zaman zenginlik ve mutluluk getiren doğaüstü lütuflar olduğunu',
+      'İnsanın emek vermeden (kısa yoldan ve hırsla) elde etmek istediği dileklerin; doğanın (veya kaderin) kanunları tarafından en acımasız, ironik ve korkunç bedeller ödetilerek bir lanete dönüştürüleceği gerçeğini',
+      'Fabrikalardaki iş güvenliği eksikliğinin 19. yüzyılda had safhada olduğunu',
+      'Maymunların efsanelerde her zaman insanlara kötülük yapmak için yaratılmış varlıklar olduğunu'
+    ],
+    correct: 2,
+    explanation: 'Borç ödemek için dilenen paranın, oğullarının ölümü (tazminat) olarak korkunç bir bedelle gelmesi; emek verilmeden hırsla istenen dileklerin (doğanın kuralları büküldüğünde) acımasız bir lanete dönüşeceğini sembolize eder.'
+  },
+  {
+    title: 'Gell-Mann Amnezisi (Medya Körlüğü)',
+    passage: 'Ünlü yazar Michael Crichton, fizikçi arkadaşı Murray Gell-Mann ile sohbet ederken medyanın o "ikiyüzlü ve felç edici" etkisini şu efsanevi örnekle tanımlar (Gell-Mann Amnezi Etkisi): Gazeteyi açarsınız ve tamamen uzmanı olduğunuz (örneğin nükleer fizik veya kendi mesleğiniz) bir konu hakkında yazılmış bir makale okursunuz. Makale o kadar cehaletle, yanlışlarla ve uydurmalarla doludur ki sinirden çıldırırsınız. "Gazeteciler hiçbir şey bilmiyor!" diye bağırırsınız. Ancak o haberi bitirip, gazetenin sayfasını çevirip "Ortadoğu Politikaları" veya "Ekonomi" sayfasına geldiğinizde, o saniye mucizevi bir "hafıza kaybı (amnezi)" yaşarsınız! Az önce nükleer fizik hakkında zırvalayan (yalancı) o aynı gazetenin, ekonomi veya siyaset hakkında yazdığı her kelimeye bir anda "mutlak hakikat"miş gibi körü körüne inanırsınız. Bu etki, insan zihninin gerçeği aramaktansa; otoriteye (matbaanın mürekkebine) tapınmaya ne kadar gönüllü ve aptalca bir zaafı olduğunu kanıtlar.',
+    questionStem: 'Gell-Mann Amnezisi (Medya Körlüğü), insanın okuduğu haberlere karşı sergilediği hangi "trajikomik çelişkiyi" ifşa eder?',
+    options: [
+      'İnsanların uzun makaleleri okurken dikkat sürelerinin çok kısa olduğu için son kısımları hatırlayamaması',
+      'Kendi uzmanlık alanındaki haberin yalan ve cehaletle dolu olduğunu anlayan (eleştiren) kişinin, sayfayı çevirdiği an o eleştirel aklını unutup (amnezi yaşayıp) bilmediği konulardaki haberlere aynı gazete üzerinden körü körüne inanma çelişkisini',
+      'Gazetecilerin genellikle fizik ve matematik alanında başarısız ancak siyaset alanında çok bilgili olması',
+      'Yaşlı insanların gazetelerdeki küçük puntolu yazıları okurken yaşadıkları fiziksel hafıza kaybı'
+    ],
+    correct: 1,
+    explanation: 'Kendi bildiği konuda yalan yazan medyaya, sayfayı çevirince bilmediği konuda (körü körüne) inanması; insanın otorite (matbaa) karşısında o eleştirel aklını anında kaybetme (amnezi) çelişkisini ifşa eder.'
+  },
+  {
+    title: 'Yıldız Tozu (Kozmik Kimlik)',
+    passage: 'İnsanlık binlerce yıl kendini doğadan kopuk, gökten zembille inmiş ayrıcalıklı (tanrısal) bir varlık sandı. Ancak astrofizik bize o ezici ve şairane gerçeği tokat gibi çarptı: Kanımızdaki demir, kemiklerimizdeki kalsiyum, beynimizdeki karbon ve aldığımız her nefesteki oksijen... Bunların hiçbiri Dünya\'da oluşmadı! Bunların hepsi, milyarlarca yıl önce uzayın karanlığında kendi içine çöküp patlayan devasa ve yaşlı yıldızların (Süpernovaların) nükleer fırınlarında pişirildi ve o patlamayla uzaya saçıldı. Bizler bu evrenin dışından gelen yabancılar değiliz; biz, bizzat o milyarlarca yıllık yıldızların patlamış cesetlerinden (küllerinden) doğduk. Astrofizikçi Carl Sagan\'ın o efsanevi sözüyle: "Bizler yıldız tozundan yapıldık; biz, evrenin kendi kendini tanımak (ve hissetmek) için yarattığı o bilinçli parçayız." Bu, insanın egosunu ezen ama onu kâinatla sonsuz bir şiirle birleştiren en büyük bilimsel uyanıştır.',
+    questionStem: 'Carl Sagan\'ın "Bizler yıldız tozundan yapıldık" sözü, insanoğlunun evrendeki konumu hakkında nasıl bir felsefi aydınlanma (vizyon) sunar?',
+    options: [
+      'Güneşin radyasyonunun insan genetiğini bozarak yeni hastalıklara yol açtığını',
+      'İnsanın doğadan kopuk (ayrıcalıklı) bir varlık olduğu kibrini yıkarak; bedeniyle ve atomlarıyla bizzat evrenin organik (yıldızlardan doğan) bir parçası olduğu, "evrenin kendini deneyimleyen bilinci" olduğu gerçeğini (bütünleşmeyi)',
+      'Uzaydan gelen göktaşlarının dünyada yaşamı yok edeceği korkusunu',
+      'Dünyadaki altın ve demir madenlerinin uzaylılar tarafından bilerek dünyamıza bırakıldığını'
+    ],
+    correct: 1,
+    explanation: 'Bedenimizdeki elementlerin yıldız patlamalarından gelmesi; insanın evrenden ayrı/kopuk bir varlık değil, evrenin bizzat kendisinden (yıldızlardan) doğmuş "kâinatın kendini deneyimleyen bilinci" olduğu gerçeğini aydınlatır.'
+  },
+  {
+    title: 'Philae Uzay Aracı (Sonsuz Uyku)',
+    passage: '2014 yılında, insanlık tarihinin en çılgın ve romantik uzay operasyonlarından biri gerçekleşti. Dünyadan tam 10 yıl önce fırlatılan ve 500 milyon kilometre yol giden "Rosetta" uzay aracı, saatte 135.000 km hızla giden bir kuyrukluyıldızın (67P) yörüngesine girdi. Ardından minicik bir sonda olan "Philae"yi o karanlık ve buzlu kayanın üzerine fırlattı. Ancak Philae, zıpkınları çalışmadığı için yüzeyde iki kez sekti ve güneş almayan karanlık bir yarığın içine (gölgeye) düştü! Bilim insanları nefeslerini tuttu. Philae o zifiri karanlıkta sadece 60 saat çalışabildi, elindeki tüm bilimsel verileri hızla Dünya\'ya fırlattı ve güneş panelleri şarj olamadığı için bataryaları biterek o sonsuz, dondurucu karanlıkta (milyarlarca yıl sürecek) ebedi uykusuna yattı. Philae; insanoğlunun o sınır tanımaz, cüretkâr merakının ve evrenin ıssızlığında donarak ölen o romantik, metalik hüznünün sembolüdür.',
+    questionStem: 'Philae uzay sondasının kuyrukluyıldız üzerindeki (karanlığa düşüp bataryasının bitmesi) macerası, yazar tarafından neyin sembolü olarak tasvir edilmiştir?',
+    options: [
+      'Güneş enerjisi sistemlerinin uzay araştırmaları için aslında ne kadar işlevsiz ve yetersiz olduğunun',
+      'İnsanoğlunun kâinatı çözme yönündeki o cüretkâr, sınır tanımaz merakının; evrenin o dondurucu, karanlık ve ıssız köşelerine kadar uzanan o romantik (ve fedakâr) hüznünün',
+      'Avrupa Uzay Ajansı\'nın (ESA) uzay görevlerinde mühendislik hesaplamalarını tamamen yanlış yaptığının',
+      'Kuyrukluyıldızların yüzeylerinin aslında devasa okyanuslarla kaplı olduğunun'
+    ],
+    correct: 1,
+    explanation: 'Sondanın 500 milyon km uzakta verileri gönderip karanlıkta ebedi uykuya dalması; insanın cüretkâr merakının ve evrenin ıssızlığındaki o romantik/fedakâr metalik hüznün sembolü olarak betimlenmiştir.'
+  },
+  {
+    title: 'Erotomani (Tek Kişilik Aşk)',
+    passage: 'Aşkın her zaman iki kişi arasında yaşandığı sanılır; ancak psikiyatride "De Clérambault Sendromu" (Erotomani) adı verilen öyle korkunç bir delilik vardır ki, aşk tek kişilik, zırhlı bir kâbusa dönüşür. Bu sanrıya yakalanan hasta, genellikle kendisinden çok daha yüksek statüdeki birinin (bir ünlünün, politikacının veya doktorun) "kendisine delicesine âşık olduğuna" %100 inanır! Gerçekte o ünlü kişi hastayı hiç tanımıyordur. Ancak hasta, televizyondaki ünlünün taktığı kravat renginden, sunduğu haberdeki göz kırpışından veya sosyal medyadaki alakasız bir kelimesinden bile "kendisine gizli ve tutkulu aşk mesajları" verildiğini çıkarır. Ünlü kişi onu reddettiğinde bile, hasta bunu "İlişkimizi gizli tutmak için yalan söylüyor, aslında beni seviyor" diye yorumlar. Erotomani; insan zihninin onaylanma ve sevilme açlığının, mantığı ve dış gerçekliği tamamen yok ederek kişiyi kendi inşa ettiği sarsılmaz ve hastalıklı bir hayal dünyasına (tek kişilik bir aşka) nasıl hapsedebildiğinin en ürkütücü kanıtıdır.',
+    questionStem: 'Erotomani (De Clérambault Sendromu) hastalarının yaşadığı durum, "insan zihni ve gerçeklik" hakkında bize neyi gösterir?',
+    options: [
+      'Aşkın her zaman karşı taraftan olumlu bir geri dönüş (ilgi) aldığında büyüyüp güçlendiğini',
+      'İnsanların sadece televizyon figürlerine âşık olabildiklerini',
+      'Zihnin o aşırı sevilme (onaylanma) açlığıyla; gerçekliği, reddedilmeyi ve mantığı tamamen devre dışı bırakarak her türlü alakasız eylemi kendi "narsisistik kurgusuna (illüzyonuna)" uyacak şekilde bükebilme gücünü (tehlikesini)',
+      'Psikiyatri ilaçlarının hastalarda aşk duygusunu tamamen sildiğini'
+    ],
+    correct: 2,
+    explanation: 'Hiç tanımayan birinin kravat renginden bile gizli aşk mesajı çıkarmak ve reddedilmeyi bile aşka yormak; zihnin sevilme açlığıyla gerçekliği büküp kendi narsisistik illüzyonuna hapsedebilme gücünü gösterir.'
+  },
+  {
+    title: 'Kuantum Zeno Etkisi (Gözlemin Gücü)',
+    passage: 'Gündelik hayatta "Kaynayan tencereye bakarsan kaynamaz" diye meşhur bir söz vardır. Fizik dünyası, bu batıl inancın kuantum mekaniğinde "Kuantum Zeno Etkisi" (Quantum Zeno Effect) adıyla kelimenin tam anlamıyla gerçek olduğunu kanıtladı! Bir radyoaktif atom normal şartlarda belirli bir süre içinde bozunarak parçalanır. Ancak bilim insanları o atoma sürekli olarak, hiç durmadan "ölçüm yaparlarsa (gözlemlerlerse)", atomun bozunma süreci donup kalır; sistem zamanın içinde felç olur ve atom parçalanamaz! Gözlem (bilinçli bakış), evrenin işleyişine dışarıdan bakan pasif bir kamera değildir; o, bizzat nesnenin fiziksel durumunu değiştiren, zamanı durduran ve kuantum dünyasını "donduran" aktif ve sarsıcı bir müdahaledir. İzlediğimiz evren, biz onu izlediğimiz için öyle davranan bir illüzyondur.',
+    questionStem: 'Kuantum Zeno Etkisi ("İzlenen tencere kaynamaz"), gözlem (ve ölçüm) eyleminin fizikteki yeri hakkında hangi devrimsel (sarsıcı) gerçeği ifşa eder?',
+    options: [
+      'Radyoaktif maddelerin laboratuvar ortamında izlenmesinin bilim insanlarına ölümcül zararlar verebileceğini',
+      'Gözlemlemenin (ölçüm yapmanın) evreni pasifçe izleyen bir eylem değil; nesnenin fiziksel durumuna anında müdahale eden, onun doğal değişimini (bozunmasını) donduracak (felç edecek) kadar güçlü ve aktif bir "fiziksel güç" olduğunu',
+      'Kuantum dünyasındaki kuralların mutfak aletleri (tencereler) üzerinde de birebir çalıştığını',
+      'Gözlerimizin yaydığı radyasyonun atomları parçaladığını'
+    ],
+    correct: 1,
+    explanation: 'Atoma sürekli ölçüm (gözlem) yapıldığında bozunmanın (değişimin) donup kalması; gözlem yapmanın pasif bir izleme değil, evrene anında müdahale eden (donduran) aktif bir fiziksel güç olduğunu kanıtlar.'
+  },
+  {
+    title: 'Kargaların Adli Tıbbı (Evrimsel Yas)',
+    passage: 'Bir karga öldüğünde, etraftaki diğer kargaların onun cansız bedeninin etrafında toplandıkları ve "sessizce bekledikleri" görülür. Dışarıdan bakan romantik bir insan için bu, ölümün hüznüyle yapılan duygusal bir "cenaze (yas) törenidir". Oysa hayvan davranış bilimcileri gerçeğin çok daha dondurucu ve mekanik olduğunu kanıtladılar. Kargalar oraya ağlamaya değil; arkadaşları olan o kargayı neyin öldürdüğünü (kedi mi, zehir mi, insan mı?) incelemek için bir tür "olay yeri incelemesi (adli tıp)" yapmaya gelirler! Ölüm nedenini tespit edip, aynı hataya düşmemek için o bölgeyi veya nesneyi kara listeye alırlar. İnsanoğlu, doğanın bu buz gibi (acımasız) ve analitik hayatta kalma stratejisini, kendi duygusal filtrelerinden geçirip "yas ve gözyaşı" olarak yorumlama kibrinden asla vazgeçmez.',
+    questionStem: 'Kargaların ölüleri etrafında toplanması örneği (ve gerçek nedeni), insanın doğaya bakış açısındaki hangi yanılgıyı (antropomorfizm) eleştirir?',
+    options: [
+      'Kuşların cenaze törenlerini antik çağlardan beri insanlardan taklit ettikleri inancını',
+      'İnsanın, doğanın o soğuk, analitik ve hayatta kalmaya dayalı evrimsel stratejilerini; kendi insani (romantik ve duygusal) filtrelerinden geçirip onlara "yas, ahlak veya şefkat" atfederek doğayı romantikleştirme (ve kendini kandırma) yanılgısını',
+      'Kargaların ölüm kavramını hiçbir zaman idrak edemeyeceği yönündeki bilimsel iddiayı',
+      'Hayvanların kendi aralarında iletişim kuramadıklarını ve sadece içgüdüsel sesler çıkardığını'
+    ],
+    correct: 1,
+    explanation: 'Kargaların arkadaşlarına ağlamak için değil, ölüm nedenini araştırmak (adli tıp/hayatta kalma) için toplanması; insanın doğanın soğuk mantığını kendi duygusal/romantik filtreleriyle yorumlama (kendini kandırma) yanılgısını eleştirir.'
+  },
+  {
+    title: 'Wabi-Sabi (Kusurun Yüceltilmesi)',
+    passage: 'Antik Yunan\'dan beri Batı dünyası "kusursuzluğa" tapar; kırılmayan mermer heykellere, pürüzsüz yüzeylere, altın orana ve zamanın eskitemeyeceği (ölümsüz) simetrilere... Oysa Japon felsefesi "Wabi-Sabi", bu Batılı kibre derin bir neşter vurur. Wabi-Sabi\'ye göre asıl güzellik kusursuzlukta değil; "eksik, geçici ve kusurlu" olandadır. Yosun tutmuş eski bir taş, kenarı hafifçe çatlamış el yapımı bir çay fincanı veya sonbaharda sararıp dökülen (kırılgan) bir yaprak, fabrikadan yeni çıkmış pürüzsüz bir porselenden bin kat daha değerlidir. Çünkü o kırıklar ve yosunlar, nesnenin "yaşadığının, zamanın acımasız fırtınalarına göğüs gerdiğinin" (yaşanmışlığın) kanıtıdır. Kusursuzluk ölü ve donuktur; oysa kusur (asimetri), hayatın o geçici, yaralı ama sarsılmaz nefesidir.',
+    questionStem: 'Wabi-Sabi felsefesi, Batı\'nın "mermer (kusursuz)" güzellik algısına karşı neyi savunmaktadır?',
+    options: [
+      'Güzelliğin sadece fabrikalarda üretilen modern sanat eserlerinde bulunabileceğini',
+      'Estetiğin (ve gerçek değerin); kusursuz, simetrik ve ölümsüz olana değil, aksine nesnenin doğallığını, yaşanmışlığını ve zamanın izlerini (ölümlülüğünü) taşıyan "eksik, kırılgan ve kusurlu" olana ait olduğunu',
+      'Eski eşyaların her zaman hastalık taşıdığı için atılıp yenilerinin alınması gerektiğini',
+      'Batı sanatının Japon sanatından her zaman daha renkli ve dikkat çekici olduğunu'
+    ],
+    correct: 1,
+    explanation: 'Batı\'nın kusursuz mermerine karşı, Wabi-Sabi\'nin yosunlu taşı veya kırık fincanı yüceltmesi; asıl güzelliğin "yaşanmışlık, eksiklik ve kusurda" (geçicilikte) yattığını savunur.'
+  },
+  {
+    title: 'Şibbolet (Ölümcül Parola)',
+    passage: 'Eski Ahit\'te anlatılan tüyler ürpertici bir hikâye vardır. Gileadlılar, savaştan kaçan Efrayimlileri nehir geçişinde yakalamak için bir tuzak kurarlar. Kaçan kişiye "Sen Efrayimli misin?" diye sormazlar; sadece ondan bir kelimeyi söylemesini isterler: "Şibbolet" (Shibboleth). Efrayimlilerin lehçesinde "ş" sesi yoktur, bu yüzden "Sibbolet" derler. Sırf tek bir harfi (ş yerine s) farklı telaffuz eden 42.000 Efrayimli, o saniye kılıçtan geçirilir! Tarihe geçen bu "Şibbolet" kavramı; dilin sadece bir iletişim ve sevgi köprüsü olmadığını, aynı zamanda insanlığın "Bizden olan" ile "Bizden olmayan (Düşman)"ı birbirinden ayırmak için (boğazını kesmek üzere) kullandığı en ilkel, en zalim ve en kanlı "kabile şifresi (sınır duvarı)" olduğunu ispatlar.',
+    questionStem: 'Tarihteki "Şibbolet" (Shibboleth) vakası, "Dil (Lisan)" kavramının hangi karanlık (ve sosyolojik) işlevini ortaya koyar?',
+    options: [
+      'Dilin zamanla gramer kurallarını kaybederek tamamen yozlaştığını',
+      'Dilin (ve telaffuzun) sadece bir iletişim aracı değil; insan gruplarının (kabilelerin) kendinden olmayanları (ötekini/düşmanı) tespit edip dışlamak ve yok etmek için kullandığı "ölümcül bir ayrımcılık (şifre/sınır) silahı" olduğunu',
+      'Eski çağlarda insanların sadece savaş kelimelerini ezberlediğini',
+      'Farklı dillerin birbirine karışmasının her zaman kültürel bir zenginlik yarattığını'
+    ],
+    correct: 1,
+    explanation: 'Sırf "ş" sesini "s" olarak telaffuz ettiği için insanların öldürülmesi; dilin sadece iletişim değil, "bizden olan/olmayan" ayrımını (kabileciliği) belirleyen ölümcül bir silah (sınır) olduğunu ortaya koyar.'
+  },
+  {
+    title: 'Sonder (Başkalarının Evreni)',
+    passage: 'Otobüs durağında beklerken yanınızdan yürüyüp geçen yüzlerce insan görürsünüz; sizin için onlar sadece gri, anlamsız birer silüet, arka plan figüranlarıdır. Ta ki o derin ve sarsıcı aydınlanma anı (Sonder) zihninize çarpana kadar. "Sonder" kavramı, şu idraki tanımlar: O an yanınızdan geçen sıradan bir yabancının da; tıpkı sizin gibi âşık olduğu, terk edildiği, geceleri tavana bakıp ağladığı, devasa sırlar taşıdığı ve merkezinde kendisinin olduğu "destansı, karmaşık ve uçsuz bucaksız bir evrene (hayata)" sahip olduğunu aniden fark etmektir! Bizler kendi dünyamızın başrolü olduğumuzu sanan narsisistik bir körlüğe sahibizdir; oysa kâinat, her biri kendi hikâyesinin başrolü olan (ve bizim sadece yanından geçip gittiğimiz) milyarlarca ana karakterin oluşturduğu devasa bir trafik sıkışıklığıdır.',
+    questionStem: 'Sonder kavramının insana yaşattığı o felsefi (ve psikolojik) "uyanış", neyin reddedilmesi üzerine kuruludur?',
+    options: [
+      'İnsanların toplu taşıma araçlarında geçirdikleri sürenin zaman kaybı olduğu düşüncesinin',
+      'Herkesin hayatının sıradan, basit ve tekdüze bir kurgudan ibaret olduğu fikrinin',
+      'Sadece kendimizin derin, karmaşık ve önemli bir hayata (başrole) sahip olduğumuz yönündeki o narsisistik (bencil) "Ana Karakter Sendromu\'nun"; diğer yabancıların da aynı derinliğe sahip olduğu gerçeğiyle (empatiyle) yıkılmasının',
+      'Şehir hayatının insanda derin bir yalnızlık ve yabancılaşma hissi yaratmasının'
+    ],
+    correct: 2,
+    explanation: 'Sıradan bir yabancının da bizim kadar derin ve destansı bir hayata (merkeze) sahip olduğunu fark etmek (Sonder); sadece kendimizin "başrol" olduğu kibrini (Ana Karakter Sendromu\'nu) yıkan bir aydınlanmadır.'
+  },
+  {
+    title: 'Bilinmeyen Bilinmeyenler (Mutlak Körlük)',
+    passage: 'Eski ABD Savunma Bakanı Donald Rumsfeld, bilgi ve strateji hakkında tarihe geçen o dil büken (ama kusursuz) felsefeyi yaptı: "Bilinen bilinenler vardır; bildiğimizi bildiğimiz şeyler. Bilinen bilinmeyenler vardır; bilmediğimizi bildiğimiz şeyler (henüz çözemediğimiz konular). Ancak en tehlikelisi Bilinmeyen Bilinmeyenlerdir (Unknown Unknowns); yani \'bilmediğimizi dahi bilmediğimiz\' şeyler." Bir imparatorluğu, şirketi veya insan hayatını çökerten şey, farkında olduğu riskler (ekonomi, savaş vs.) değildir; onu çökerten şey, ufkunda ve hayal dünyasında (radarında) bile olmayan, varlığından bile habersiz olduğu o kör noktadan gelen devasa asteroittir. Evrenin en tehlikeli karanlığı cehalet değildir; ne kadar cahil olduğumuzun bile farkında olamadığımız o "mutlak ve kibirli körlüğümüzdür."',
+    questionStem: 'Rumsfeld\'in "Bilinmeyen Bilinmeyenler" (Unknown Unknowns) kavramı, devletlerin veya insanların çöküşünün asıl kaynağını neye bağlar?',
+    options: [
+      'Çok iyi bilinen ekonomik risklerin zamanında çözülmeyip ertelenmesine',
+      'Bilim insanlarının ve istihbaratın bilerek yanlış (sahte) raporlar vermesine',
+      'Karşılaşılan sorunların çözümünde (bilinen sorunlarda) her zaman çok geç kalınmasına',
+      'İnsanı veya sistemi yıkan asıl felaketin, üzerine çalışılan riskler değil; kişinin (veya sistemin) algı sınırlarının (ve radarının) tamamen dışında kalan, varlığından (ve ihtimalinden) bile haberdar olmadığı o "mutlak kör nokta" olmasına'
+    ],
+    correct: 3,
+    explanation: 'Bildiğimizi veya bilmediğimizi bildiklerimiz (radardakiler) değil; varlığından (tehlikesinden) bile tamamen habersiz olduğumuz (radar dışı/mutlak körlük) şeylerin bizi çökerteceğini vurgular.'
+  },
+  {
+    title: 'Macbeth\'in Hançeri (Kurgusal Suçluluk)',
+    passage: 'Shakespeare\'in efsanevi trajedisi Macbeth\'te, Kral Duncan\'ı öldürmek üzere yola çıkan Macbeth\'in gözlerinin önünde, havada süzülen, sapı ona dönük ve üzeri kanlı, "hayali bir hançer" belirir. Macbeth o hançeri tutmaya çalışır ama eli boşlukta kalır; o fiziksel bir silah değil, zihnin bir halüsinasyonudur. "Bu gördüğüm bir hançer mi, yoksa ateşli beynimin bir uydurması mı?" diye feryat eder. Macbeth\'in havada gördüğü o hançer, sadece bir delilik belirtisi değildir. O hançer, insan ruhunun; "cinayeti henüz işlemeden önce bile" hissettiği o korkunç suçluluğun, korkunun ve hırsın (bilinçaltının) fiziksel bir nesneye (maddeye) bürünüp uzaya fırlatılmış halidir. İnsan, kendi karanlık arzusunu (ve cezasını) eyleme dökmeden önce bile onu kendi gözleriyle bir kâbus olarak yaratabilen tek varlıktır.',
+    questionStem: 'Macbeth\'in havada süzülen "hayali hançeri" görmesi (halüsinasyonu), yazar tarafından edebi ve psikolojik olarak neyin metaforu olarak sunulmaktadır?',
+    options: [
+      'Orta Çağ şatolarında kullanılan büyü ve cadı iksirlerinin insanlarda yarattığı kalıcı zehirlenmenin',
+      'İnsanın içindeki hırsın ve suçluluk duygusunun o kadar yoğun bir güce sahip olması ki; kişinin cinayeti "henüz fiziksel olarak işlemeden önce bile" kendi karanlık bilinçaltını somut bir nesne (kâbus) olarak gözlerinin önünde yaratabilmesinin',
+      'Suikast silahlarının o dönemde büyücüler tarafından havada asılı kalacak şekilde tasarlanmasının',
+      'Kral Duncan\'ın hayaletinin Macbeth\'i önceden uyararak onu cinayetten vazgeçirme çabasının'
+    ],
+    correct: 1,
+    explanation: 'Fiziksel olarak var olmayan kanlı hançeri görmesi; insanın içindeki hırsın ve (henüz işlenmemiş cinayetin) suçluluğunun o kadar güçlü olması ki, bilinçaltının bunu somut bir kâbusa (nesneye) dönüştürmesinin metaforudur.'
+  },
+  {
+    title: 'Pollyanna İlkesi (Tehlikeli İyimserlik)',
+    passage: 'Çocukluğumuzdan beri bize öğretilen "Polyannacılık" (her şeyin iyi tarafını görmek) saf ve masum bir felsefe gibi görünür. Psikolojide "Pollyanna İlkesi" olarak bilinen bu durum, beynimizin geçmişteki "olumsuz anıları (acıları)" bastırarak, sadece "olumlu ve tatlı" olanları hatırlama eğilimidir. Kulağa bir şifa gibi gelse de, evrimsel psikologlara göre bu korkunç bir tuzaktır! Eğer bir toplum (veya birey) yaşadığı travmaları, ihanetleri ve felaketleri hızla unutup sürekli "Her şey düzelecek, o kadar da kötü değildi" diyerek o kör iyimserliğe (toksik pozitivizme) sığınırsa; geçmişin hatalarından asla ders çıkaramaz! Pollyanna ilkesi, bizi delirmekten kurtaran bir ağrı kesici olduğu kadar; aynı ateşe bin kere elimizi sokmamıza neden olan, tehlikeyi görmezden gelen o sinsi ve ahmakça "körlüğümüzün" de ta kendisidir.',
+    questionStem: 'Psikolojideki "Pollyanna İlkesi (Sürekli İyimserlik)", yazar tarafından sadece bir teselli değil, hangi tehlikeli "zaafın" kaynağı olarak eleştirilmektedir?',
+    options: [
+      'Kötü anıların sürekli hatırlanarak toplumun toplu depresyona girmesi ve üretimin durması zaafının',
+      'İyimserliğin insanı yaşlandıran hücresel bir zehir olduğu yönündeki biyolojik iddianın',
+      'Beynin olumsuz anıları ve felaketleri hızla bastırıp (unutup) sadece iyiye odaklanmasının; hatalardan ders çıkarılmasını engelleyen, tehlikeyi görmezden gelip bizi aynı felaketleri tekrarlamaya iten o ahmakça "körlük ve uyuşma" tuzaklığının',
+      'Sadece çocukların sahip olduğu saf ve masum dünya algısının yetişkinler tarafından da taklit edilmesinin'
+    ],
+    correct: 2,
+    explanation: 'Beynin acıları unutup hep iyiye (iyimserliğe) odaklanması kulağa şifa gibi gelse de; hatalardan ders çıkarmamızı engelleyen, aynı ateşe elimizi sokturan o ahmakça körlüğün (tehlikenin) kaynağı olarak eleştirilmiştir.'
+  }
+];
+
+// 28. MAKİNE
+export const felsefeParagrafSorulari32: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_32.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_32[idx];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-felsefe32-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
 // paragrafTests.ts dosyasının hata vermemesi için iki listeyi birleştirip eski adıyla dışa aktarıyoruz:
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari,
@@ -8663,7 +8941,8 @@ export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...felsefeParagrafSorulari28,
   ...karisikParagrafSorulari29,
   ...felsefeParagrafSorulari30,
-  ...felsefeParagrafSorulari31
+  ...felsefeParagrafSorulari31,
+  ...felsefeParagrafSorulari32
   
   
 ];
