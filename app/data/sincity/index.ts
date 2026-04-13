@@ -9463,6 +9463,578 @@ export const felsefeParagrafSorulari34: BilimParagrafQuestion[] = Array.from({ l
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
+const PARAGRAPH_THEMES_35 = [
+  {
+    title: 'Epigenetik Travma (Kiraz Çiçeği Deneyi)',
+    passage: 'Bilim insanları yıllarca genetiğin sadece göz rengi veya boy uzunluğu gibi fiziksel özellikleri aktardığına inandı. Ancak Emory Üniversitesi\'nde yapılan "Kiraz Çiçeği Deneyi" bu ezberi paramparça etti. Araştırmacılar, laboratuvar farelerine her kiraz çiçeği kokusu verdiklerinde hafif bir elektrik şoku uyguladılar. Fareler kısa sürede bu kokudan ölümüne korkmayı öğrendi. Asıl sarsıcı olan ise şuydu: Bu farelerin yavruları ve hatta "torunları", hayatlarında hiçbir zaman elektrik şoku yememelerine ve kiraz çiçeği kokusuyla hiç karşılaşmamalarına rağmen; o kokuyu ilk duydukları an dehşete kapılıp titremeye başladılar! "Epigenetik" adı verilen bu bilimsel devrim, korkularımızın, travmalarımızın ve acılarımızın sadece psikolojik anılar olmadığını; bizzat DNA\'mıza kazınarak nesiller ötesine (torunlarımıza) fısıldanan biyolojik bir kâbus (miras) olduğunu kanıtlar.',
+    questionStem: 'Kiraz Çiçeği Deneyi (Epigenetik), genetik miras kavramı hakkında hangi sarsıcı gerçeği ispatlamıştır?',
+    options: [
+      'Hayvanların koku alma duyularının nesilden nesile giderek daha da zayıfladığını',
+      'Sadece fiziksel özelliklerin değil; yaşanan ağır travmaların ve korkuların da hücresel düzeyde DNA\'ya kazınarak (biyolojik olarak) gelecek nesillere aktarılabileceğini',
+      'Elektrik şokunun farelerin beyinlerinde kalıcı bir hafıza silinmesine neden olduğunu',
+      'Kiraz çiçeği kokusunun kemirgenler için doğada her zaman zehirli bir sinyal olduğunu'
+    ],
+    correct: 1,
+    explanation: 'Hiç şok yemeyen torunların bile kokudan korkması; travmaların ve korkuların sadece psikolojik değil, DNA üzerinden hücresel/biyolojik bir miras olarak aktarıldığını (Epigenetik) ispatlar.'
+  },
+  {
+    title: 'Yorumlayıcı Modül (Sağ ve Sol Beyin Yalanları)',
+    passage: 'Nörobilimci Michael Gazzaniga, beyninin sağ ve sol yarımküresi (korpus kallozum köprüsü) cerrahi olarak ayrılmış hastalar üzerinde tarihin en tuhaf deneyini yaptı. Hastanın sağ beynine "Yürü" yazılı bir komut gösterildi. Sağ beyin dili bilmediği için hasta neden yürüdüğünü "sözlü" olarak açıklayamaz, ama komuta uyup ayağa kalkıp yürümeye başlar. Araştırmacı hastaya "Neden ayağa kalktın?" diye sorduğunda, dili ve mantığı yöneten sol beyin, o komutu hiç görmediği halde "Bilmiyorum" demez! Anında kusursuz ve mantıklı bir yalan uydurarak, "Gidip kendime bir kola alacaktım" der. Sol beynimizde yatan bu "Yorumlayıcı (Interpreter) Modül", insanın en büyük zaafını ifşa eder: Beynimiz, bilmediği ve kontrol etmediği eylemlerin bile sebebini (hiçlikten) anında kurgulayarak; kendimizi her zaman "mantıklı, kararlı ve irade sahibi" sanmamızı sağlayan o kusursuz yalan makinesidir.',
+    questionStem: 'Gazzaniga\'nın "Yorumlayıcı Modül" deneyi, insan iradesi ve mantığı hakkında neyi kanıtlamaktadır?',
+    options: [
+      'Sağ beynin motor becerilerde sol beyinden çok daha zayıf olduğunu',
+      'İnsanların yalan söylerken fiziksel olarak gözlerini kaçırma eğiliminde olduğunu',
+      'Zihnimizin (sol beynin), gerçek sebebini bilmediği dürtüsel eylemlere bile anında mantıklı kılıflar (bahaneler/yalanlar) uydurarak, bize sahte bir "bilinçli kontrol ve irade" illüzyonu yaşattığını',
+      'Beyin köprüsü kesilen hastaların zamanla tamamen konuşma yetisini kaybettiğini'
+    ],
+    correct: 2,
+    explanation: 'Sol beynin hiç görmediği komuta rağmen anında "kola alacaktım" yalanını uydurması; zihnimizin bilmediği eylemlere mantıklı kılıflar uydurarak bize sahte bir irade/kontrol illüzyonu yaşattığını kanıtlar.'
+  },
+  {
+    title: 'Otel Temizlikçileri Deneyi (Fiziksel Plasebo)',
+    passage: 'Psikolog Alia Crum ve Ellen Langer, otellerde günde 15 oda temizleyen, kan ter içinde kalan ama yine de kilo veremeyen ve sağlık sorunları yaşayan temizlik işçileri üzerinde bir araştırma yaptı. İşçilere "Yaptığınız bu fiziksel iş, aslında doktorların tavsiye ettiği günlük egzersiz miktarını fazlasıyla karşılıyor" diyen bilimsel bir sunum yapıldı ve onlara yaptıkları hareketlerin kaç kalori yaktığı anlatıldı. İşçilerin çalışma saatleri, diyetleri veya hareketleri bir milim bile değişmedi. Sadece 4 hafta sonra, bu sunumu dinleyen işçilerin kiloları düştü, kan basınçları azaldı ve vücut yağ oranları sağlıklı bir seviyeye indi! "Zihin-Beden Bağlantısı"nı ispatlayan bu deney; bir eylemin fiziksel sonucunun (zayıflamanın) sadece kasların çalışmasına değil, beynin o eylemin "ne işe yaradığına" dair duyduğu inanca (algıya) muhtaç olduğunu gösteren muazzam bir biyolojik mucizedir.',
+    questionStem: 'Otel Temizlikçileri Deneyi\'nin sonuçları, "zihin ve beden" ilişkisine dair hangi sarsıcı gerçeği ortaya koyar?',
+    options: [
+      'Temizlik ürünlerinde bulunan kimyasalların insan metabolizmasını zamanla yavaşlattığını',
+      'Sadece fiziksel hareketin değil, kişinin yaptığı o hareketin "kendisine faydalı (egzersiz) olduğuna dair" zihinsel inancının ve algısının, bedenin fizyolojik tepkilerini (kilo vermeyi) doğrudan değiştirebildiğini',
+      'İnsanların diyet yapmadan sadece çalışarak hiçbir zaman kilo veremeyeceğini',
+      'Otel işçilerinin psikolojik strese karşı masa başı çalışanlardan daha dayanıklı olduğunu'
+    ],
+    correct: 1,
+    explanation: 'İşçilerin diyeti veya hareketi değişmediği halde, sırf "yaptığım iş egzersizmiş" inancıyla kilo vermeleri; zihinsel algının/inancın bedenin fizyolojik tepkilerini değiştirebildiğini (Plasebo) ispatlar.'
+  },
+  {
+    title: 'Radyologların Görünmez Gorili (Uzmanlık Körlüğü)',
+    passage: '"Görünmez Goril" deneyini (basketbol pasları sayılırken sahneye giren gorili görmeme durumu) hepimiz sıradan insanların bir zaafı sanırız. Ancak Harvard araştırmacıları, bu testi dünyanın en keskin gözlerine sahip "Uzman Radyologlara" uyguladılar. Onlara içinde küçük kanser nodülleri (nodül) bulmaları gereken akciğer röntgenleri verdiler. Ancak röntgenlerden birinin tam ortasına, bir nodülden 48 kat daha büyük olan ve açıkça görülen "bir goril silüeti" yerleştirdiler! Radyologların %83\'ü, gözlerini o gorilin tam üzerinden defalarca geçirmelerine rağmen (göz takip cihazlarıyla kanıtlandı) o devasa gorili göremediler. "Uzmanlık Körlüğü" adı verilen bu durum, eğitimin ve tecrübenin algımızı genişletmediğini; tam aksine bizi sadece "aradığımız şeye (kanser nodülüne)" odaklayarak, beklenmedik (ve devasa) hakikatlere karşı sıradan insanlardan çok daha ölümcül bir körlüğe mahkûm ettiğini ispatlar.',
+    questionStem: 'Radyologlara uygulanan Görünmez Goril deneyi, "uzmanlık ve tecrübe" kavramları hakkında hangi ironik gerçeği ifşa eder?',
+    options: [
+      'Doktorların röntgen filmlerini genellikle aşırı yorgun ve uykusuzken incelediklerini',
+      'Uzmanlığın ve yüksek tecrübenin, insan algısını geliştirmek yerine onu sadece "beklenen hedefe" (dar bir tünele) kilitleyerek, gözünün önündeki devasa ve aykırı gerçeklere karşı sarsıcı bir körlük yarattığını',
+      'Akciğer filmlerinde siyah ve beyaz renklerin birbirine karışarak göz yanılmasına neden olduğunu',
+      'Radyologların kanser teşhisi koyarken aslında tamamen bilgisayar yazılımlarına güvendiklerini'
+    ],
+    correct: 1,
+    explanation: 'Gözü gorilin üzerinden geçen uzmanların onu görmemesi; uzmanlığın algıyı açmadığını, aksine sadece aranan hedefe odaklanarak diğer devasa gerçeklere karşı (tünel vizyonu) bir körlük yarattığını ifşa eder.'
+  },
+  {
+    title: 'Glifatik Sistem (Beynin Gece Yıkaması)',
+    passage: 'İnsan ömrünün üçte biri uykuda geçer. Evrimsel açıdan bakıldığında, vahşi doğada saatlerce bilinçsizce yatmak yenmeye (av olmaya) davetiye çıkaran korkunç bir dezavantajdır. Peki doğa neden "uykuya" bu kadar muhtaçtır? Bilim insanları 2013 yılında beynin "Glifatik Sistem"ini keşfettiğinde bu sır çözüldü. Biz uyanıkken nöronlarımız sürekli çalışır ve etraflarında "amiloid beta" adı verilen zehirli (Alzheimer\'a yol açan) atık proteinler birikir. Biz uykuya daldığımızda mucizevi bir şey olur: Beyin hücrelerimiz kelimenin tam anlamıyla %60 oranında "küçülür (büzüşür)". Bu küçülme sayesinde hücreler arasında devasa boşluklar açılır ve beyin omurilik sıvısı bu kanallardan sel gibi akarak o zehirli atıkları yıkayıp (süpürüp) beyni temizler! Uyku bir dinlenme molası değildir; uyku, zihnimizin kendi çöpünde boğulup ölmemek için her gece girdiği, evrensel ve hayati bir bulaşık makinesi (arınma) döngüsüdür.',
+    questionStem: 'Glifatik Sistemin keşfi, "Uyku" eyleminin biyolojik (ve evrimsel) işlevini nasıl yeniden tanımlamıştır?',
+    options: [
+      'Uykunun sadece kasların ve kemiklerin fiziksel olarak büyümesine yardımcı olan pasif bir dinlenme süreci olarak',
+      'Uykunun, beynin uyanıkken ürettiği ölümcül ve zehirli atıkları (proteinleri) temizlemek için hücrelerin büzüşerek beyin sıvısına yol açtığı "aktif, hayati ve mekanik bir yıkama (arınma)" işlemi olarak',
+      'Rüyaların insan psikolojisini iyileştirmek için üretilen rastgele elektrik sinyalleri olarak',
+      'Vahşi doğada hayvanların avcılardan saklanmak için geliştirdiği bir kamuflaj yöntemi olarak'
+    ],
+    correct: 1,
+    explanation: 'Hücrelerin büzüşerek sıvının zehirli atıkları yıkaması; uykunun pasif bir dinlenme değil, beyni zehirlerden arındıran aktif, hayati ve mekanik bir yıkama döngüsü olduğunu gösterir.'
+  },
+  {
+    title: 'Roseto Etkisi (Toplumsal Bağların Ömrü)',
+    passage: '1960\'larda Amerika\'nın Roseto kasabasında doktorları şoka sokan bir anomali yaşanıyordu. Kasaba halkı domuz yağıyla besleniyor, sürekli sigara içiyor, obezite sınırlarında dolaşıyor ve ağır işlerde çalışıyordu. Ancak 65 yaş altı hiç kimse kalp krizi geçirmiyordu ve ölüm oranları tüm Amerika ortalamasının yarısı kadardı! Bilim insanları suları, genetiği ve diyeti inceledi ama sırrı bulamadı. Cevap laboratuvarda değil, sosyolojide gizliydi. İtalyan göçmenlerin kurduğu bu kasabada üç kuşak aynı evde yaşıyor, akşamları tüm kasaba büyük sofralarda birlikte yemek yiyor, yaşlılara sonsuz saygı duyuluyor ve kimse yalnız bırakılmıyordu (Stres ve yalnızlık sıfırdı). "Roseto Etkisi" tıp dünyasına şu felsefi tokatı attı: En sağlıklı diyetler veya egzersizler bile; sevginin, güçlü toplumsal bağların ve "aidiyet (yalnız olmama) hissinin" damarlara zerk ettiği o görünmez, mucizevi kalp kalkanı kadar hayat kurtarıcı değildir.',
+    questionStem: 'Roseto Etkisi, modern tıbbın (ve insanların) sağlık algısı üzerine nasıl bir sarsıcı gerçeği ispatlamıştır?',
+    options: [
+      'Domuz yağının ve kolesterolün sanıldığından çok daha sağlıklı besinler olduğunu',
+      'Küçük kasabalardaki hava kirliliği oranının büyük metropollere göre çok daha düşük olduğunu',
+      'Fiziksel sağlığın ve uzun ömrün sadece diyet ve genetikle değil; güçlü toplumsal bağların, dayanışmanın ve aidiyet hissinin (psikolojik güvenliğin) yarattığı o muazzam zihinsel kalkanla korunduğunu',
+      'Genetik mirasın her zaman beslenme alışkanlıklarına galip gelerek hastalıkları önlediğini'
+    ],
+    correct: 2,
+    explanation: 'Kötü beslenmeye rağmen kalp krizi olmaması; sağlığın ve uzun ömrün sadece diyet değil, sevgi, dayanışma ve toplumsal aidiyetin (psikolojik kalkanın) bir sonucu olduğunu ispatlar.'
+  },
+  {
+    title: 'Akasya Ağaçlarının Görünmez Savaşı',
+    passage: 'Afrika savanalarında zürafalar, muazzam dikenlerine rağmen Akasya ağaçlarının yapraklarını afiyetle yerler. Ancak zürafalar bir ağaçtan sadece birkaç dakika beslendikten sonra o ağacı bırakıp, yanındaki ağaca geçmek yerine, rüzgârın tersi yönünde en az 100 metre ilerideki başka bir ağaca yürürler. Neden mi? Çünkü saldırıya uğrayan Akasya ağacı saniyeler içinde havaya "Etilen gazı" salgılar. Bu gaz, rüzgârla uçarak çevredeki diğer ağaçlara "Tehlike var, yeniliyoruz!" mesajı taşır. Sinyali alan diğer ağaçlar, yapraklarına derhal "tannin" adlı acı ve ölümcül bir zehir pompalar! Zürafa bunu bildiği için, rüzgârın sinyal taşıyamadığı (ters yöndeki) habersiz ağaçları bulmaya gider. Bu bilimsel keşif; doğanın sessiz, cansız ve çaresiz bitkilerden ibaret olmadığını; görünmez gazlarla çığlık atıp organize bir şekilde savaşabilen devasa, zeki ve entegre bir savunma ordusu olduğunu kanıtlar.',
+    questionStem: 'Akasya ağaçları ve zürafalar arasındaki etkileşim, "bitki krallığı (doğa)" hakkında hangi efsanevi (ve bilimsel) gerçeği ifşa eder?',
+    options: [
+      'Zürafaların tat alma duyularının yaşlandıkça tamamen köreldiğini ve zehri hissetmediklerini',
+      'Bitkilerin çevrelerinden tamamen habersiz, izole ve çaresiz (cansız) varlıklar olduğu inancını yıkarak; havaya saldıkları kimyasal sinyallerle iletişim kurabilen, organize ve zeki bir savunma ağına sahip olduklarını',
+      'Etilen gazının atmosferdeki sera etkisini artıran en tehlikeli karbon türevi olduğunu',
+      'Ağaçların sadece kökleri vasıtasıyla topraktan besin ve su alışverişi yapabildiğini'
+    ],
+    correct: 1,
+    explanation: 'Ağacın havaya etilen gazı salıp diğer ağaçların yapraklarına zehir pompalaması; bitkilerin dilsiz/çaresiz değil, kimyasallarla çığlık atıp haberleşen zeki ve organize bir savunma ağı (ordusu) olduğunu ifşa eder.'
+  },
+  {
+    title: 'Karanlık Akış (Dark Flow)',
+    passage: 'Evrenin Büyük Patlama\'dan sonra her yöne eşit ve homojen (rastgele) bir şekilde genişlemesi gerektiği bilimsel bir dogmadır. Ancak 2008 yılında NASA astronomları kozmik mikrodalga arka plan ışımalarını incelerken fizikte soğuk duş etkisi yaratan bir "anomali" buldular. Yüzlerce devasa galaksi kümesi, saniyede yüzlerce kilometre hızla rastgele genişlemek yerine; hepsi birden evrenin tek bir noktasına (Centaurus ve Vela takımyıldızları arasına) doğru devasa bir nehir gibi akıp gidiyordu! "Karanlık Akış" (Dark Flow) adı verilen bu fenomen, bizim evrenimizin sınırlarının ötesinde; o milyarlarca galaksiyi bile kendi üzerine çekecek kadar devasa, korkunç ve kütleli (belki de paralel bir evrenin kütleçekimine ait) bir "Hiçlik Çekicisinin" varlığına işaret eder. Görebildiğimiz bu sonsuz evren, belki de sadece daha büyük bir okyanusa akan minicik bir dereden ibarettir.',
+    questionStem: 'Karanlık Akış (Dark Flow) fenomeninin astronomi dünyasında yarattığı asıl felsefi/bilimsel sarsıntı (gizem) nedir?',
+    options: [
+      'Galaksilerin birbirlerine çarpıp yok olma ihtimalinin matematiksel olarak sıfırlandığı gerçeği',
+      'Evrenin her yöne eşit genişlediği inancını yıkarak; milyarlarca galaksiyi evrenimizin ötesine doğru (belki de başka bir evrenin çekimine) sürükleyen o "bilinmeyen ve devasa çekim gücünün" varlığı',
+      'Karanlık maddenin evrenin genişleme hızını yavaşlatarak tüm gezegenleri dondurması',
+      'Yıldızların sadece sıcak bölgelerde yoğunlaşıp soğuk alanlardan kaçması'
+    ],
+    correct: 1,
+    explanation: 'Galaksilerin rastgele değil tek bir yöne akması; evrenimizin sınırlarının (görebildiğimiz ufkun) ötesinde, bu galaksileri kendine çeken devasa ve bilinmeyen bir gücün (veya paralel evrenin) olduğu şokunu yaratmıştır.'
+  },
+  {
+    title: 'Fetal Mikrokimerizm (Annede Kalan İzi)',
+    passage: 'Bir kadın hamile kaldığında, annenin bedeni ile fetüs (bebek) plasenta aracılığıyla besin ve oksijen alışverişi yapar. Ancak son yıllarda yapılan genetik araştırmalar, bu bağın sadece gıdayla sınırlı olmadığını, hücresel düzeyde ölümsüz bir değiş tokuş olduğunu kanıtladı. "Fetal Mikrokimerizm" adı verilen bu süreçte, bebeğin kök hücreleri plasentayı aşarak annenin kanına karışır; kalbine, beynine ve ciğerlerine yerleşerek orada yaşamaya devam eder. Yıllar sonra bebek doğup büyüse bile, hatta o bebek anne karnında ölse veya düşse bile; o fetüse ait (DNA\'sı farklı olan) o hücreler, annenin beyninde ve kalbinde on yıllarca yaşamaya (ve anneyi onarmaya) devam eder. Bir annenin "Evladım benim bir parçamdır" sözü şiirsel bir metafor veya edebi bir abartı değildir; o, mikroskobik, genetik ve tam anlamıyla kusursuz (ve biyolojik) bir gerçektir.',
+    questionStem: 'Fetal Mikrokimerizm araştırmaları, anne ile çocuk arasındaki bağı hangi bilimsel düzleme taşıyarak kanıtlamıştır?',
+    options: [
+      'Hamilelik sırasında annenin aldığı besinlerin bebeğin göz rengini kalıcı olarak belirlediğine',
+      'Bebeklik çağındaki psikolojik travmaların yetişkinlikteki genetik hastalıkları tetiklediğine',
+      'Anne ve bebek arasındaki bağın sadece doğumla biten fiziksel (süreli) bir süreç değil; bebeğin hücrelerinin yıllarca annenin organlarında (beyninde/kalbinde) yaşamaya devam ettiği kalıcı, hücresel ve biyolojik bir gerçek (mikrokimerizm) olduğuna',
+      'Erkek çocukların kız çocuklarına göre anneye genetik olarak daha fazla zarar verdiğine'
+    ],
+    correct: 2,
+    explanation: 'Bebeğin kök hücrelerinin annenin beyninde/kalbinde yıllarca kalması; "çocuğum benim parçamdır" lafının sadece duygusal değil, hücresel ve biyolojik olarak kalıcı (fiziksel) bir gerçek olduğunu kanıtlar.'
+  },
+  {
+    title: 'Oksitosin Paradoksu (Aşkın ve Irkçılığın Hormonu)',
+    passage: 'Beynimizin salgıladığı "Oksitosin" hormonu yıllarca popüler bilimde "Sarılma, Aşk ve Bağlanma Hormonu" olarak pazarlandı. Annelerin bebeklerini sevmesi, âşıkların birbirine bağlanması bu sihirli molekül sayesindeydi. Ancak Amsterdam Üniversitesi\'nde yapılan son deneyler, aşkın (ve bu hormonun) o karanlık ve ırkçı arka yüzünü ifşa etti. Oksitosin verilen denekler kendi gruplarından (kendi ırkından veya takımından) olan kişilere karşı inanılmaz bir sevgi ve fedakârlık gösterirken; kendi gruplarından "olmayan" yabancılara karşı eskisinden çok daha şüpheci, öfkeli, dışlayıcı ve (ırkçı) saldırgan davranışlar sergilemeye başladılar! Oksitosin bir "evrensel barış" iksiri değildi. Bu hormon, kabileciliğin yakıtıydı: İnsanoğlu "kendi kabilesini (bizden olanı)" daha çok sevmek ve korumak için, dışarıdakilerden (ötekilerden) daha çok nefret etmek (ve savaşmak) zorundaydı. Sevginin biyolojisi, nefreti doğuran o aynı kimyasal denklemin ta kendisidir.',
+    questionStem: 'Oksitosin hormonuyla ilgili yeni araştırmalar, "sevgi ve bağlanma" kavramının hangi karanlık (çelişkili) evrimsel yanını ortaya çıkarmıştır?',
+    options: [
+      'Oksitosinin zamanla beynin hafıza merkezini uyuşturarak insanları unutkan yaptığı',
+      'Sevginin (oksitosinin) herkesi kucaklayan evrensel bir barış hormonu değil; aksine "kendi grubunu (bizden olanı)" sevdikçe "ötekine (yabancıya)" karşı dışlayıcılığı ve saldırganlığı (kabileciliği/ırkçılığı) artıran çelişkili (karanlık) bir evrimsel silah olduğu',
+      'Aşk hormonunun sadece çocukluk döneminde salgılandığı ve yetişkinlikte tamamen bittiği',
+      'Hayvanların oksitosin hormonunu insanlardan çok daha fazla üreterek barışçıl yaşadığı'
+    ],
+    correct: 1,
+    explanation: 'Oksitosin alanların "kendi grubuna" sevgisi artarken "yabancılara" karşı şüphe ve saldırganlık (ırkçılık/kabilecilik) geliştirmesi; sevginin biyolojisinin ötekileştirme ve nefreti besleyen çelişkili (karanlık) yönünü ortaya çıkarır.'
+  }
+];
+
+export const felsefeParagrafSorulari35: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_35.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_35[idx];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-felsefe35-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
+
+const PARAGRAPH_THEMES_36 = [
+  {
+    title: 'Grigoriy Perelman ve Sıfır İhtirası',
+    passage: '2006 yılında Rus matematikçi Grigoriy Perelman, yüzyıldır kimsenin çözemediği evrenin şeklini açıklayan o meşhur "Poincaré Sanısı"nı çözerek matematiğin zirvesine oturdu. Bilim dünyası ona 1 milyon dolarlık Milenyum Ödülü\'nü ve matematiğin Nobel\'i sayılan Fields Madalyası\'nı vermek için kapısına dayandı. Ancak Perelman, ödüllerin hepsini elinin tersiyle iterek; "Eğer kanıtım doğruysa, başka bir onaya veya ödüle ihtiyacım yoktur" dedi ve annesiyle paylaştığı, böceklerin gezindiği eski bir apartman dairesinde yoksulluk (ve sessizlik) içinde yaşamaya devam etti. Perelman\'ın bu eylemi basit bir delilik veya kibrin değil; hakikatin (bilginin), o kirli şöhrete, medyaya ve kâğıt banknotlara (kapitalizme) tahvil edilmesini (metalaştırılmasını) reddeden; akademik ve modern kibrin suratına atılmış, tarihteki en onurlu felsefi tokattır.',
+    questionStem: 'Grigoriy Perelman\'ın 1 milyon dolarlık ödülü reddetmesi, bilim ve hakikat bağlamında neyin sembolik bir itirazıdır?',
+    options: [
+      'Rus bilim insanlarının uluslararası ödülleri siyasi nedenlerle boykot etme geleneğinin',
+      'Matematik formüllerinin maddi dünyada hiçbir pratik (ve ekonomik) karşılığının olmadığının',
+      'Bulunan "hakikatin (bilginin)" kendi başına zaten mutlak ve yeterli olduğu; bunun şöhret, para ve akademik onay mekanizmaları (kapitalizm) tarafından metalaştırılıp kirletilmesine karşı gösterilen onurlu bir isyanın',
+      'Dâhilerin genellikle para yönetimi konusunda son derece beceriksiz ve cahil olmalarının'
+    ],
+    correct: 2,
+    explanation: 'Hakikatin kendi kendine yettiğini söyleyip milyon doları itmesi; bilginin/hakikatin kapitalizm, şöhret ve otoriteler tarafından metalaştırılmasına (kirletilmesine) karşı asil ve felsefi bir isyandır.'
+  },
+  {
+    title: 'Hiroo Onoda (29 Yıllık Yalan)',
+    passage: 'İkinci Dünya Savaşı\'nın bittiği 1945 yılında, Filipinler\'in ıssız Lubang adasındaki Japon istihbarat subayı Hiroo Onoda\'ya savaşın sona erdiği haberi bir türlü ulaşmadı. Onoda, ormanın derinliklerinde tam 29 yıl boyunca "savaşın devam ettiğine" inanarak gerilla gibi saklandı ve savaştı. Yıllarca gökyüzünden atılan Japonya\'nın teslim belgelerini, ailesinden gelen mektupları ve hoparlörden yapılan çağrıları "düşman propagandası ve kurnazca bir yalan" sanarak reddetti. Onoda ancak 1974\'te, eski komutanı bizzat adaya gidip ona "silah bırakma emri" verdiğinde gerçeği kabullenebildi. Onoda\'nın hikâyesi bir kahramanlık veya vatanseverlik destanı değildir. O; bir ideolojiye, bir kurguya (inanca) saplanıp kalan insan zihninin; gözünün önünde apaçık duran somut gerçekliğe karşı kendi ördüğü o zihinsel hapishanede, mantığı ve dünyayı on yıllarca nasıl inatla (körü körüne) reddedebileceğinin en trajik ve acımasız kanıtıdır.',
+    questionStem: 'Hiroo Onoda\'nın ormanda 29 yıl boyunca savaşması, "insan psikolojisi ve inanç" hakkında neyi ifşa etmektedir?',
+    options: [
+      'Japon askerlerinin fiziksel olarak doğa şartlarına inanılmaz derecede uyum sağlayabildiğini',
+      'Bir kurguya (ideolojiye) derinden saplanmış olan insan zihninin; kendi inancını (haklılığını) korumak uğruna, apaçık ve somut gerçekleri bile yıllarca (körü körüne) reddederek kendi yarattığı bir illüzyon hapishanesinde yaşayabilme çaresizliğini',
+      'İkinci Dünya Savaşı döneminde kullanılan iletişim araçlarının (radyoların) çok yetersiz olduğunu',
+      'Ormanlarda yalnız yaşamanın insanlarda hafıza kaybına ve Alzheimer hastalığına neden olduğunu'
+    ],
+    correct: 1,
+    explanation: 'Atılan gazeteleri/mektupları bile "düşman yalanı" sanarak 29 yıl inanmaması; zihnin kendi inancını (kurgusunu) korumak için somut gerçeğe bile yıllarca kör kalabilme (illüzyon hapishanesi) trajedisini ifşa eder.'
+  },
+  {
+    title: 'Stalker ve Dilek Odası (Tarkovski)',
+    passage: 'Andrey Tarkovski\'nin "Stalker" (İz Sürücü) adlı başyapıtında, fizik kurallarının çöktüğü gizemli bir Bölge\'nin (Zone) kalbinde bir "Oda" vardır. Efsaneye göre bu Oda, içine giren kişinin "en gizli, en içten" dileğini anında gerçekleştirmektedir. Bir karakter, ölümcül hasta olan kardeşini iyileştirmek için Odaya girer. Ancak dışarı çıktığında kardeşi iyileşmez, adamın banka hesabı aniden milyonlarca dolarla dolar! Ve adam eve dönüp intihar eder. Çünkü Oda; insanın ağzından dökülen o süslü, ahlaki ve fedakârca dilekleri değil; insanın bile yüzleşmekten korktuğu, bilinçaltındaki o en bencil, en karanlık ve "asıl (bastırılmış) gerçek arzusunu" yerine getirmiştir. Stalker\'ın Odası bize şu dondurucu felsefi aynayı tutar: İnsanoğlu kendi içindeki o çürümüş ve bencil karanlık (gerçek doğası) ile yüzleşmeye asla hazır değildir; en büyük kâbusumuz, kendi gizli arzularımızın gerçekleşmesidir.',
+    questionStem: 'Stalker filmindeki "Dilek Odası"nın çalışma mantığı, insan doğası ve ahlak üzerine nasıl bir psikolojik şok (kâbus) sunar?',
+    options: [
+      'Bilimkurgu filmlerindeki uzaylı teknolojilerinin aslında insan beynini okuyamayacağı gerçeğini',
+      'Zenginliğin ve paranın insanlara her zaman mutsuzluk (ve intihar) getireceği yönündeki ekonomik kuralı',
+      'İnsanın kendine biçtiği o yüce/ahlaki maskenin bir yalan olduğunu; bilinçaltında yatan ve kişinin bile yüzleşmekten korktuğu o asıl "bencil ve karanlık" arzularla (gerçek doğasıyla) yüzleşmesinin getirdiği o yıkıcı/trajik dehşeti',
+      'Kardeşler arasındaki bağların zor zamanlarda her zaman koptuğu şeklindeki sosyolojik teoriyi'
+    ],
+    correct: 2,
+    explanation: 'Odanın adamın ahlaki/süslü duasını değil, bilinçaltındaki bencil ve karanlık arzusunu (parayı) gerçekleştirmesi; insanın kendi gizli/kötü doğasıyla (maskesiz haliyle) yüzleşmesinin yarattığı o yıkıcı dehşeti sunar.'
+  },
+  {
+    title: 'Kierkegaard ve Uçurumun Kenarı (Angst)',
+    passage: 'Yüksek bir dağın zirvesine veya uçurumun tam kenarına geldiğinizde içinizi tuhaf, ürpertici ve baş döndürücü bir korku sarar. Danimarkalı filozof Søren Kierkegaard\'a göre bu hissettiğiniz şey basit bir "aşağı düşme (kaza) korkusu" değildir! Sizi asıl dehşete düşüren şey, tam o saniyede "kendi özgür iradenizle, isterseniz kendinizi bir adım atıp aşağı atabilme gücüne (potansiyeline)" sahip olmanızdır! Kierkegaard buna "Angst" (Kaygı / Varoluşsal Bunalım) adını verir. Bu kaygı, özgürlüğün getirdiği o devasa baş dönmesidir. İnsan, kendi hayatını tamamen yok edebilecek veya kökünden değiştirebilecek o korkutucu gücü (özgür iradeyi) kendi ellerinde hissettiği an, o sınırsızlık karşısında panikler. Özgürlük, bir cennet bahçesi değil; insanın kendi sınırlarını aşabilme ihtimalinin yarattığı o karanlık ve dondurucu uçurumdur.',
+    questionStem: 'Kierkegaard\'ın "Angst (Kaygı)" kavramına göre, uçurumun kenarında hissedilen baş dönmesinin asıl felsefi nedeni nedir?',
+    options: [
+      'Yüksek rakımlarda oksijen eksikliği nedeniyle beynin denge merkezinin geçici olarak felç olması',
+      'Yüksek rüzgârların veya kaygan zeminlerin kazaya davetiye çıkarması korkusu',
+      'Kişinin, kendi iradesiyle "kendisini o boşluğa atabilme (yok etme) özgürlüğüne ve potansiyeline" sahip olduğunu anladığı o an hissettiği, özgürlüğün getirdiği o korkutucu, sınırsız ve devasa sorumluluk (baş dönmesi)',
+      'Dağlık bölgelerde yaşayan insanların doğaüstü güçlere olan inancının zayıflaması'
+    ],
+    correct: 2,
+    explanation: 'Düşme korkusu değil, "istersem kendimi atabilirim" şeklindeki o korkunç irade/potansiyel farkındalığı; özgürlüğün (ve kendi kendini yok etme gücünün) getirdiği o derin varoluşsal kaygıyı (Angst) açıklar.'
+  },
+  {
+    title: 'Michelangelo ve Eksiltme Sanatı',
+    passage: 'Rönesans\'ın efsanevi heykeltıraşı Michelangelo, dünyanın en kusursuz ve en estetik heykellerinden biri olan o devasa "Davut" heykelini bitirdiğinde, kendisine bu mükemmel eseri (şekli) o sert mermerden nasıl var ettiği sorulur. Michelangelo\'nun verdiği o dâhiyane cevap, sadece sanata değil insan felsefesine de bir formüldür: "Davut zaten en başından beri o mermer bloğunun içindeydi; ben sadece ona ait olmayan fazlalıkları yonttum ve onu özgür bıraktım." Bizler hayatı ve başarıyı hep dışarıdan üzerimize yeni bir şeyler "eklemek, yığmak ve biriktirmek" olarak algılarız. Oysa Michelangelo\'nun felsefesi tam tersini haykırır: Gerçek bilgeliğe ve kusursuzluğa; dışarıdan sahte zenginlikler (maskeler) ekleyerek değil; içimizdeki hırsı, kibri, yalanları ve bizi biz yapmayan o gereksiz "fazlalıkları söküp (eksiltip) atarak" kendi özümüze ulaşmakla varılır.',
+    questionStem: 'Michelangelo\'nun "Davut heykelini yaratırken sadece fazlalıkları yonttum" sözü, hayat felsefesi (bilgelik) bağlamında neyi sembolize eder?',
+    options: [
+      'Güzelliğin sadece doğada bulunan sert ve beyaz taşlardan (mermerden) elde edilebileceğini',
+      'Mükemmelliğin ve bilgeliğin; dışarıdan sürekli yeni şeyler (maskeler/zenginlik) eklemekle değil, insanı kendi özünden uzaklaştıran o gereksiz fazlalıkların, hırsların ve kibrin (eksiltme yoluyla) sökülüp atılmasıyla (içsel bir arınmayla) ortaya çıkacağını',
+      'Heykel sanatının resim sanatından çok daha zor ve uzun süren bir meslek olduğunu',
+      'Eski ustaların kullandığı aletlerin günümüz aletlerinden çok daha hassas ve kaliteli olduğunu'
+    ],
+    correct: 1,
+    explanation: 'Davut\'un içerde olup fazlalıkların atılması; bilgeliğin ve mükemmelliğin "dışarıdan eklemekle" değil, gereksiz hırs/kibir fazlalıklarını "eksiltmekle/arınmakla" (özü ortaya çıkarmakla) elde edildiğini sembolize eder.'
+  },
+  {
+    title: 'Feynman\'ın Kasa Hırsızlığı (Güvenlik İllüzyonu)',
+    passage: 'İkinci Dünya Savaşı sırasında, Amerika\'nın en gizli (ve en ölümcül) nükleer sırlarının (Manhattan Projesi) tutulduğu Los Alamos laboratuvarlarında çalışan dâhi fizikçi Richard Feynman, boş vakitlerinde eğlenceli ve korkunç bir hobi edindi: "Kasa kırmak". Dünyanın en önemli nükleer şifrelerinin korunduğu o devasa çelik kasaları saniyeler içinde açıyor ve içine "Sıradan bir acemi tarafından açıldı" yazılı küçük kâğıtlar bırakıyordu. Yöneticiler dehşete düştü. Oysa Feynman üstün bir maymuncuk ustası değildi; o sadece insan doğasını (zaafları) hacklemişti. İnsanlar, dünyanın en gizli şifresini belirlerken bile o "tembel ve romantik" akıllarına yenik düşüp eşlerinin doğum tarihini, çocuklarının adını veya "1234" gibi ezberlemesi kolay sayıları koyuyorlardı! Feynman\'ın bu şakası, teknolojinin o devasa güvenlik çeliklerinin (ve şifrelerinin); "insanın o tembel, bencil ve öngörülebilir aptallığı (zaafı)" devreye girdiği an nasıl sıradan bir kâğıttan ev gibi çöktüğünün (güvenliğin bir illüzyon olduğunun) kanıtıdır.',
+    questionStem: 'Feynman\'ın nükleer laboratuvardaki çelik kasaları kolayca açabilmesi, güvenlik ve sistemler hakkında hangi "insani (psikolojik) zaafı" ifşa eder?',
+    options: [
+      'O dönemde üretilen çelik kasaların mekanik şifreleme sistemlerinin fabrikasyon hatalarla dolu olmasını',
+      'Dâhi fizikçilerin aynı zamanda doğuştan gelen inanılmaz birer el becerisine (hırsızlık yeteneğine) sahip olduklarını',
+      'Ne kadar ileri teknoloji ve devasa çelik şifreler (güvenlik sistemleri) üretilirse üretilsin; işin içine insanın "tembel, öngörülebilir ve romantik" doğası (basit şifre koyma zaafı) girdiğinde o sistemin saniyeler içinde çökebilen bir illüzyona dönüştüğünü',
+      'Savaş dönemlerinde laboratuvarlarda yeterince askeri personelin ve güvenlik kamerasının bulunmamasını'
+    ],
+    correct: 2,
+    explanation: 'Çelik kasaların değil, "eşinin doğum tarihini şifre yapan insanın" tembelliğinin hacklenmesi; en güçlü güvenliğin bile insanın o basit, tembel ve öngörülebilir zaafıyla bir illüzyona dönüştüğünü ifşa eder.'
+  },
+  {
+    title: 'Turing\'in Bisiklet Zinciri (Dâhinin Hapishanesi)',
+    passage: 'Bilgisayar biliminin kurucusu, Enigma\'yı kıran o devasa beyin Alan Turing\'in gündelik hayatta kullandığı eski bir bisikleti vardı. Bu bisikletin zinciri sürekli atıyordu. Sıradan bir insan o bisikleti tamirciye götürür ve zinciri düzelttirirdi. Ancak Turing bunu reddetti. O, bisiklete binip denemeler yaparak, zincirin "tam olarak kaçıncı devirde ve pedalda" attığını matematiksel olarak hesapladı! Artık bisiklete biniyor, pedal turlarını içinden sayıyor ve tam zincirin atacağı o kritik saniyede pedal çevirmeyi bırakarak zincirin atmasını engelliyordu. Bu trajikomik hikâye, dâhilerin o hastalıklı ve dar zindanını özetler: Bazen çok zeki olmak bir lütuf değil, lanettir. Kusursuz bir mantık (ve deha), insanı en basit ve pratik (tamirciye gitmek gibi) çözümlerden kopararak; hayatın en sıradan problemlerini bile çözülmesi gereken devasa ve yorucu bir matematiksel cehenneme (hapishaneye) çevirir.',
+    questionStem: 'Alan Turing\'in bisikletinin zincirini tamirciye vermek yerine pedal sayılarını matematiksel olarak hesaplaması, "deha (yüksek zekâ)" hakkında neyin metaforudur?',
+    options: [
+      'Matematikçilerin fiziksel güç ve kas koordinasyonu gerektiren konularda her zaman yeteneksiz olduklarının',
+      'Dâhiliğin (yüksek zekânın) insanı her zaman mutlu ve zengin eden sihirli bir özellik olduğunun',
+      'Aşırı analitik ve kusursuz bir mantığın (dehanın), kişiyi gündelik/pratik çözümlerden (sıradanlıktan) kopararak; basit hayat problemlerini bile sürekli hesaplama yapılan yorucu ve takıntılı bir zihin hapishanesine çevirmesinin (lanetinin)',
+      'O dönemde bisiklet tamircisi bulmanın ekonomik olarak imkânsız olmasının'
+    ],
+    correct: 2,
+    explanation: 'Zinciri düzeltmek yerine pedal sayarak (karmaşık hesaplarla) sürmesi; yüksek zekânın/dehanın basit/pratik çözümleri atlayarak insanı kendi mantığının o yorucu ve takıntılı zindanına hapsetmesinin metaforudur.'
+  },
+  {
+    title: 'Kan Şelalesi (Mistiğin Çöküşü)',
+    passage: 'Antarktika\'nın o bembeyaz, dondurucu ve ölü buzullarının arasında bulunan "Taylor Buzulu"ndan aşağı, kıpkırmızı ve kan revan içinde akan dehşet verici bir şelale (Blood Falls) dökülür. İlk kâşifler ve denizciler bunu gördüklerinde dehşete düştüler; bu, doğaüstü bir lanet, şeytani bir kan gölü veya dünyanın sonunu haber veren kıyamet gibi görünüyordu. Ancak modern bilim bu mitolojiyi tek bir neşterle kesti: O kan değildi. Buzulun binlerce metre altında, 1.5 milyon yıldır havayla hiç temas etmemiş, aşırı tuzlu ve "demir" zengini yeraltı sularında yaşayan bakteriler vardı. O su, buzulun çatlağından sızıp ilk kez oksijenle (havayla) temas ettiğinde "demir anında paslandı" (oksitlendi) ve kırmızıya döndü! "Kan Şelalesi", doğanın en korkunç ve şeytani sanılan gizemlerinin bile; aslında bilimin o soğuk, moleküler ve oksitlenen laboratuvarı karşısında nasıl sıradanlaşıp efsanesini yitirdiğinin (aydınlandığının) kanıtıdır.',
+    questionStem: 'Antarktika\'daki "Kan Şelalesi"nin bilimsel olarak açıklanması, insanlığın olayları algılayışı hakkında nasıl bir felsefi zaferi (veya uyanışı) temsil eder?',
+    options: [
+      'Buzulların altındaki deniz canlılarının aslında sanıldığından daha büyük boyutta olduğunun anlaşılmasını',
+      'İnsanoğlunun korkudan doğaüstü (kıyamet/lanet) anlamlar yükleyerek efsaneleştirdiği (ve kutsallaştırdığı) o korkutucu doğa olaylarının; bilimin, oksijenin ve aklın o rasyonel (soğuk) analizi karşısında aydınlanarak o mistik/karanlık maskesini düşürmesini',
+      'Demir madeninin sadece sıcak iklimlerde paslandığı yönündeki eski inancın doğrulanmasını',
+      'Antarktika\'nın hiçbir zaman yaşanabilir bir kıta olamayacağının kesin kanıtını'
+    ],
+    correct: 1,
+    explanation: 'Kan/lanet sanılan şeyin aslında paslanan demir olduğunun (bilimle) çözülmesi; insanın bilinmeyene yüklediği mistik/korkutucu efsanelerin, aklın ve bilimin rasyonel analizi karşısında çökmesini (aydınlanmayı) temsil eder.'
+  },
+  {
+    title: 'Olympe de Gouges ve Devrimin İkiyüzlülüğü',
+    passage: '1789 Fransız Devrimi, tüm dünyaya "Özgürlük, Eşitlik ve Kardeşlik" sloganını altın harflerle duyurdu ve "İnsan ve Yurttaş Hakları Bildirgesi"ni yayınladı. Ancak Olympe de Gouges adlı cesur bir aydın, bu parıltılı metni okuduğunda o iğrenç (ve eril) ikiyüzlülüğü fark etti: Bildirgedeki "İnsan (Homme)" kelimesi sadece ve sadece "Erkekleri" kapsıyor, kadınları yine köle ve vatandaşlıktan yoksun bırakıyordu! Olympe hemen kalemi eline aldı ve "Kadın ve Yurttaş Hakları Bildirgesi"ni yazdı. Bildirgesinde o meşhur ve sarsıcı maddeyi ekledi: "Kadının darağacına çıkma hakkı varsa, kürsüye de çıkma (siyaset yapma) hakkı olmalıdır!" Devrimciler ne yaptı dersiniz? Eşitlik diye bağıran o aydınlar, sırf kadınlar için de gerçek eşitlik istediği için Olympe de Gouges\'u giyotine (darağacına) gönderdiler! Bu olay, tarihteki devrimlerin ve "evrensel insan hakları" çığlıklarının; kendi çıkarlarına (ve eril kibrine) dokunulduğunda nasıl anında bencil, kör ve kanlı birer tiranlığa (ikiyüzlülüğe) dönüştüğünün en utanç verici anıtıdır.',
+    questionStem: 'Olympe de Gouges\'un yazdığı bildirge yüzünden (Fransız Devrimcileri tarafından) idam edilmesi, "devrim ve eşitlik" kavramları hakkında hangi karanlık gerçeği ifşa eder?',
+    options: [
+      'Kadınların o dönemde siyasi konularda konuşabilecek eğitime sahip olmadığını',
+      'Giyotin kullanımının Fransız Devrimi sırasında kontrolden çıkarak tüm aydınları hedef aldığını',
+      'Evrensel "eşitlik ve özgürlük" iddiasıyla yola çıkan devrimlerin bile, kendi içindeki bağnazlıkları (eril kibri) aşamadığını ve sadece belirli bir zümrenin çıkarına dokunulduğunda o "devrimcilerin" anında acımasız ve ikiyüzlü birer zorba tiran (katil) haline geldiğini',
+      'O dönemki bildirgelerin el yazısıyla yazıldığı için yanlış anlaşılmalara yol açtığını'
+    ],
+    correct: 2,
+    explanation: 'Eşitlik için devrim yapanların, eşitlik isteyen kadını (kendi iktidarlarına/erilliğine dokunduğu için) idam etmesi; devrimlerin ve yüce ideallerin aslında nasıl bencil, bağnaz ve ikiyüzlü (tiranlık) olabildiğini ifşa eder.'
+  },
+  {
+    title: 'John Harvey Kellogg ve Ahlakın Diyetisyeni',
+    passage: 'Bugün marketlerde satılan o masum Mısır Gevreklerinin (Corn Flakes) icat edilme hikâyesi, aslında din, bilim ve baskının o tuhaf ve karanlık sentezidir. 19. yüzyılda fanatik ve dindar bir doktor olan John Harvey Kellogg, toplumdaki suçların, günahların ve hastalıkların (özellikle cinsel dürtülerin) baharatlı, etli ve lezzetli yemeklerden kaynaklandığına inanıyordu. Ona göre insanın ruhu ve ahlakı mideden yönetiliyordu. İnsanların içindeki o vahşi "günah (haz) ateşini" söndürmek, dürtülerini köreltmek ve onları "ahlaklı (uysal)" hale getirmek için; dünyadaki en tatsız, en lezzetsiz, tuzsuz ve sıkıcı yiyeceği icat etti: Haşlanıp preslenmiş mısır ezmesi (Mısır Gevreği). Kellogg\'un bu trajikomik icadı; otoritenin (veya inancın) insanın içindeki o kaotik, tutkulu ve ateşli doğayı (insani özü) ehlileştirmek ve kontrol etmek uğruna onu nasıl tatsız, lezzetsiz ve mekanik bir diyete (kalıba) hapsetmeye çalıştığının en çıtırdayan kanıtıdır.',
+    questionStem: 'John Harvey Kellogg\'un Mısır Gevreği\'ni icat edişindeki asıl felsefi (psikolojik) motivasyon (veya yanılgı) neye dayanmaktadır?',
+    options: [
+      'Mısırın etten ve baharattan çok daha ucuz bir hammadde olması sebebiyle ekonomik bir tekelleşme hırsına',
+      'İnsanın içindeki o karmaşık ve tutkulu (haz odaklı) doğayı ve cinsel dürtüleri (günahları); onu tamamen lezzetsiz, tatsız ve sıkıcı bir diyete mahkûm ederek (fiziksel baskıyla) köreltip "ahlaklı ve uysal" bir robot yaratma inancına',
+      'O dönemde Avrupa\'da yaşanan büyük et ve protein kıtlığına karşı toplumu doyurma çabasına',
+      'Gevrek yemenin insan ömrünü laboratuvar verilerine göre en az 20 yıl uzattığı şeklindeki bilimsel gerçeğe'
+    ],
+    correct: 1,
+    explanation: 'Kellogg\'un amacı beslenme değil, tatsız tuzsuz bir yiyecekle insanın tutkularını (cinsel dürtüleri/hazzı) köreltmek ve onu ahlaklı/uysal yapmaktı; yani insanın doğasını fiziksel bir diyetle ehlileştirme kibridir.'
+  }
+];
+
+export const bilimParagrafSorulari36: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_36.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_36[idx];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-bilim36-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
+const PARAGRAPH_THEMES_37 = [
+  {
+    title: 'Londra Taksicileri ve Nöroplastisite',
+    passage: 'Yüzyıllar boyunca bilim insanları, insan beyninin yetişkinliğe ulaştığında fiziksel yapısının (nöron ağlarının) donduğuna, sabit bir donanıma dönüştüğüne inandılar. Ancak nörobilimci Eleanor Maguire, dünyanın en karmaşık şehir haritasına sahip olan Londra\'da çalışan taksi şoförlerinin beyinlerini MR cihazıyla incelediğinde bu dogma paramparça oldu. Şoförlerin beynindeki uzamsal hafıza merkezi olan "Hipokampüs", sıradan insanlara göre fiziksel olarak çok daha büyük ve kalındı! Üstelik meslekte geçirilen yıl arttıkça, beynin bu bölgesi de büyümeye devam ediyordu. "Nöroplastisite" olarak adlandırılan bu devrimsel buluş; beynimizin sabit, değişmez bir donanım (kaya) değil, tıpkı bir kas gibi deneyimlerimizle, öğrendiklerimizle ve çabalarımızla fiziksel olarak kendi kendini yeniden şekillendirebilen (esnek) ve anbean değişen canlı bir heykeltıraş olduğunu kanıtlamıştır.',
+    questionStem: 'Londra Taksicileri araştırmasının (Nöroplastisitenin keşfi) bilim dünyasındaki asıl sarsıcı etkisi nedir?',
+    options: [
+      'Karmaşık şehirlerde yaşamanın insanlarda kalıcı yön bulma bozukluklarına (stres kaynaklı hasarlara) neden olduğunu kanıtlaması',
+      'İnsan beyninin yetişkinlikte değişmez, sabit bir donanıma (yapıya) dönüştüğü inancını yıkarak; zihnin deneyim ve öğrenme yoluyla fiziksel anatomi olarak da büyüyüp şekillenebilen (esnek/plastik) bir organ olduğunu ispatlaması',
+      'İnsan beyninin hacimsel olarak büyüdükçe yaratıcılık yeteneğini hızla kaybettiğini göstermesi',
+      'Taksi şoförlerinin diğer meslek gruplarına göre genetik olarak farklı bir beyin yapısıyla doğduklarını kanıtlaması'
+    ],
+    correct: 1,
+    explanation: 'Beynin yetişkinlikte sabit/değişmez bir kaya değil; öğrenme ve deneyimle fiziksel olarak şekil değiştiren, büyüyen esnek bir organ (nöroplastisite) olduğunun kanıtlanmasıdır.'
+  },
+  {
+    title: 'Seçim Körlüğü (Choice Blindness)',
+    passage: 'İnsanoğlu kendi kararlarını bilerek ve mantıkla aldığını sanır. Psikolog Petter Johansson bu kibri efsanevi bir deneyle test etti. Katılımcılara iki farklı insan fotoğrafı gösterip "Hangisi daha çekici?" diye sordu. Katılımcı örneğin A fotoğrafını seçti. Araştırmacı, bir sihirbaz el çabukluğuyla katılımcıya seçtiği fotoğraf yerine "reddedip seçmediği" B fotoğrafını verdi ve sordu: "Neden bu kişiyi seçtin?" Şok edici sonuç şuydu: Katılımcıların %70\'inden fazlası önlerindeki fotoğrafın değiştirildiğini fark etmedi! Daha da korkuncu, kendi seçmedikleri o B fotoğrafına bakıp, "Gözleri çok güzeldi, bu yüzden seçtim" diyerek, aslında hiç almadıkları bir kararı anında mantıklı bahanelerle (rasyonalizasyonla) savunmaya başladılar! "Seçim Körlüğü" denilen bu zaaf, insan beyninin gerçeği arayan bir organ değil; o an önüne konulan durumu (kendi kibrini korumak için) anında haklı çıkaran usta ve şuursuz bir "yalan uydurma (avukatlık)" makinesi olduğunu ispatlar.',
+    questionStem: 'Seçim Körlüğü (Choice Blindness) deneyi, insan beyninin karar verme ve savunma mekanizması hakkında hangi ürkütücü gerçeği ifşa eder?',
+    options: [
+      'Görsel hafızamızın isimleri hatırlamada çok yetersiz kaldığını',
+      'İnsanların anlık kararlar alırken genellikle tamamen şansa güvendiğini',
+      'Beynimizin, hiç almadığı (ve kandırıldığı) kararları bile fark edemeyecek kadar kör olduğunu; dahası, bu sahte durumu korumak uğruna anında mantıklı bahaneler (rasyonalizasyonlar) üreterek kendi yalanına inanan bir avukat gibi çalıştığını',
+      'Fiziksel çekiciliğin her zaman insanların mantığını geçici olarak dondurduğunu'
+    ],
+    correct: 2,
+    explanation: 'Seçmediği fotoğrafı fark edemeyip bir de "şundan dolayı seçtim" diye uydurması; beynimizin gerçeği görmeyip anında durumu meşrulaştıran (yalan kurgulayan) bir avukat gibi çalıştığını ispatlar.'
+  },
+  {
+    title: 'Toxoplasma Gondii (Zombi Fareler)',
+    passage: 'Kedi dışkısında üreyen "Toxoplasma Gondii" adındaki tek hücreli mikroskobik bir parazit, hayatta kalmak için korkunç bir strateji geliştirmiştir. Bu parazitin çoğalabilmesi için mutlaka bir kedinin midesine ulaşması gerekir. Peki bunu nasıl yapar? Bir farenin beynine sızarak! Parazit fareye bulaştığında, farenin beynindeki "kedi idrarından korkma" (hayatta kalma) devresini fiziksel olarak hackler (kapatır). Daha da korkuncu, bu korkuyu cinsel bir çekime dönüştürür. Parazitli fare, kediden kaçmak yerine adeta âşık olmuş gibi kediye doğru koşar ve bilerek av olur! Biyolojideki bu zihin kontrolü mekanizması, "özgür irade" dediğimiz kavramın o sarsılmaz kutsallığına atılmış kanlı bir çiziktir. Koskoca bir memeli beyninin, tek hücreli bir organizmanın kimyasal spreyiyle saniyeler içinde intihara sürüklenen bir robota (kuklaya) dönüşebilmesi, bilincimizin ne kadar kırılgan bir kimyasal kurgu olduğunu fısıldar.',
+    questionStem: 'Toxoplasma Gondii parazitinin farelerin beynini ele geçirmesi, "özgür irade ve davranış" kavramları bağlamında felsefi olarak neyi sembolize eder?',
+    options: [
+      'Kedilerin avlanma tekniklerinin evrimsel süreçte giderek gerilediğini',
+      'Memelilerin her zaman korkularıyla yüzleşmek zorunda olduğunu',
+      'Özgür irade, hayatta kalma içgüdüsü ve karar alma mekanizmasının sarsılmaz bir ruhsal özellik olmadığını; küçücük (ve yabancı) bir kimyasal/biyolojik ajan tarafından bile anında hacklenip, canlının ölümcül bir kuklaya (robota) dönüştürülebileceği o kimyasal kırılganlığı',
+      'Parazitlerin sadece sıcak iklimlerde zihin kontrolü yapabildiği gerçeğini'
+    ],
+    correct: 2,
+    explanation: 'Parazitin farenin hayatta kalma içgüdüsünü (iradesini) hackleyip onu kediye yem etmesi; özgür iradenin ve davranışlarımızın aslında kimyasal etkilere ne kadar açık, sarsılabilir ve kukla (kırılgan) bir mekanizma olduğunu sembolize eder.'
+  },
+  {
+    title: 'Dopamin ve Beklenti (Wolfram Schultz)',
+    passage: 'Nörobilimci Wolfram Schultz, beynimizdeki ödül hormonu olan dopaminin nasıl çalıştığını çözmek için maymunlarla bir deney yaptı. Maymunlara bir ışık yandığında (ipucu), hemen ardından lezzetli bir meyve suyu (ödül) verildi. Klasik inanç, maymun meyve suyunu içtiğinde (ödüle ulaştığında) beyninin mutluluktan dopamin patlaması yaşayacağı yönündeydi. Oysa veriler şok ediciydi: Dopamin patlaması meyve suyu içildiğinde değil, "ışık yandığı an (ödül beklentisi başladığında)" yaşanıyordu! Meyve suyu geldiğinde ise beyin tepki vermiyor, zaten beklenen şey gerçekleştiği için sakin kalıyordu. Daha trajik olanı; ışık yanıp da meyve suyu verilmediğinde, maymunun dopamin seviyesi adeta uçuruma çakılıyor ve ağır bir yoksunluk (hayal kırıklığı) yaşıyordu. Bu deney modern insanın trajedisini özetler: Bizi heyecanlandıran şey hedefe veya başarıya "ulaşmak" değil; ona ulaşacağımıza dair duyduğumuz o gerilimli "beklentidir". Hedef ele geçirildiği an büyü bozulur; çünkü insan beyni zevk almak için değil, daima "daha fazlasını istemek (beklemek)" için tasarlanmıştır.',
+    questionStem: 'Schultz\'un dopamin deneyi, insan mutluluğu ve "ödül sistemi" hakkında hangi paradoksal gerçeği kanıtlamaktadır?',
+    options: [
+      'Tatlı gıdaların hayvan beyninde geçici bir körlük yarattığını',
+      'Hazzın (ve dopamin patlamasının) asıl kaynağının ödüle veya hedefe "ulaşmak" değil; o ödüle kavuşacağımıza dair duyduğumuz "beklenti ve umut" anı olduğunu; hedefe varıldığında hissin sönüp yok olduğunu',
+      'Beklentilerin her zaman karşılanmamasının insanları daha güçlü ve sabırlı yaptığını',
+      'Dopamin hormonunun sadece fiziksel acı anlarında vücudu korumak için salgılandığını'
+    ],
+    correct: 1,
+    explanation: 'Dopaminin ödül alındığında değil, ışık yandığında (beklenti anında) salgılanması; mutluluğun hedefe sahip olmakta değil, "hedefe ulaşma beklentisinde/arzusunda" yattığı paradoksunu kanıtlar.'
+  },
+  {
+    title: 'Turna Balığı Sendromu (Cam Bölme Deneyi)',
+    passage: 'Araştırmacılar, son derece yırtıcı ve aç bir turna balığını (Pike) içi küçük yem balıklarıyla dolu bir akvaryuma koydular. Ancak turna balığı ile yemlerin arasına görünmez (şeffaf) bir cam bölme yerleştirdiler. Turna balığı günlerce o küçük balıkları yemek için hızla saldırdı, ancak her seferinde o görünmez cama şiddetle çarparak burnunu kanattı. Onlarca acı verici denemeden sonra balık pes etti ve saldırmayı tamamen bıraktı. İşin asıl ürpertici kısmı deneyin ikinci aşamasındaydı: Bilim insanları o cam bölmeyi akvaryumdan çıkardılar! Artık engel yoktu, yem balıkları turna balığının etrafında, hatta burnunun dibinde rahatça yüzüyordu. Ancak turna balığı onları yemek için tek bir hamle bile yapmadı ve sonunda yiyecek dolu bir akvaryumda açlıktan öldü! "Pike Sendromu" olarak bilinen bu fenomen; insanın geçmişte yaşadığı başarısızlıkların ve acıların, zihnimizde nasıl aşılmaz, görünmez (ve sahte) "cam duvarlar" inşa ettiğinin; şartlar tamamen değişse bile, o zihinsel prangaların insanı kendi potansiyelinin ortasında nasıl eylemsizliğe ve ruhsal bir ölüme (öğrenilmiş çaresizliğe) sürüklediğinin kanıtıdır.',
+    questionStem: 'Turna Balığı (Pike) Sendromu deneyi, geçmişteki başarısızlıkların canlılar üzerinde nasıl bir psikolojik hasar (körlük) bıraktığını göstermektedir?',
+    options: [
+      'Görsel algının zamanla zayıflayarak avlanma yeteneğini tamamen bitirmesini',
+      'Geçmişte yaşanan acılı başarısızlıkların zihne "aşılmaz, görünmez (sahte) engeller" inşa etmesini; fiziksel engeller ortadan kalksa bile, kişinin bu zihinsel inanç yüzünden eyleme geçemeyip fırsatların ortasında (öğrenilmiş çaresizlikle) yok olmasını',
+      'Hayvanların cam ve şeffaf nesneleri algılayabilecek bir beyin yapısına sahip olmamasını',
+      'Açlık sınırına gelen canlıların agresifleşmek yerine diğer canlılarla dostane bir iletişim kurmasını'
+    ],
+    correct: 1,
+    explanation: 'Cam kaldırılmasına rağmen balığın yememesi; geçmişteki acılı başarısızlıkların zihinde yarattığı o sahte "aşılmazlık" inancının (öğrenilmiş çaresizliğin), engeller kalktığında bile insanı eylemsizliğe mahkûm ettiğini gösterir.'
+  },
+  {
+    title: 'Lydia Fairchild ve İnsan Kimerası',
+    passage: '2002 yılında Lydia Fairchild adında bir kadın, devletten sosyal yardım alabilmek için üç çocuğuyla birlikte rutin bir DNA testine girdi. Sonuçlar çıktığında doktorlar ve mahkeme şoka girdi: DNA eşleşmesine göre, Lydia kesinlikle o çocukların annesi değildi! Oysa çocukları kendi rahminde taşıyıp doğurduğuna herkes şahitti. Mahkeme kadını sahtekârlıkla ve çocuk hırsızlığıyla suçladı. Aylar süren derin genetik araştırmalar sonucunda tıp dünyasını paramparça eden o "uzaylı" gerçek ortaya çıktı: Lydia bir "Kimera"ydı (Chimerism). Lydia anne karnındayken aslında ikiz bebek olarak büyümüş, ancak gebeliğin başlarında kendi ikizini (kardeşini) hücre bazında emip yutarak tek bir bedene dönüşmüştü! Yani Lydia\'nın vücudunda "iki farklı insana ait DNA" yaşıyordu. Cildi ve saçı kendi DNA\'sını taşırken, üreme organları (ve dolayısıyla doğurduğu çocukların genleri) anne karnında yuttuğu o doğmamış kız kardeşine aitti! Lydia Fairchild vakası; insanın genetik olarak tek, sarsılmaz ve homojen bir "birey" olduğu kibrini yıkarak, bedenimizin aslında başka yaşamların kalıntılarını da içinde barındıran kaotik ve birleşik bir "ekosistem" olduğunu kanıtlayan biyolojik bir felsefe dersidir.',
+    questionStem: 'Lydia Fairchild (İnsan Kimerası) vakası, biyoloji ve insan kimliği (benliği) hakkında hangi klasik ve mutlak inancı yerle bir etmiştir?',
+    options: [
+      'DNA testlerinin sadece suçluları tespit etmekte kullanılabilecek basit bir yöntem olduğu inancını',
+      'İnsanların doğuştan itibaren göz ve ten rengini asla değiştiremeyecekleri yönündeki biyolojik kuralı',
+      'İnsanın hücresel olarak "tek, homojen ve bölünmez bir birey (genetik kimlik)" olduğu inancını yıkarak; tek bir insan bedeninin aslında birden fazla kişiye (ikizine) ait farklı DNA dizilimlerini barındırabilen, birleşik (kaotik) bir genetik ekosistem olabileceğini',
+      'Anne ve bebek arasındaki genetik bağın sadece kan gruplarıyla belirlendiği teorisini'
+    ],
+    correct: 2,
+    explanation: 'Bir kadının iki farklı DNA (kendisinin ve yuttuğu ikizinin genlerini) taşıması; insanın "tek ve homojen bir genetik birey" olduğu inancını çökertip, bedenin birleşik bir genetik ekosistem olabileceğini ispatlar.'
+  },
+  {
+    title: 'LIGO ve Yerçekimsel Dalgalar (Uzayın Sesi)',
+    passage: 'Albert Einstein 1916\'da kâğıt üzerinde akılalmaz bir teori sundu: "Eğer evrende çok devasa ve şiddetli bir olay (örneğin iki karadeliğin çarpışması) yaşanırsa, bu çarpışma uzay ve zamanın dokusunu tıpkı göle atılan bir taşın yarattığı dalgalar gibi titretmeli ve bükmelidir." Ancak bu dalgalanmalar Dünya\'ya ulaşana kadar bir protonun binde biri kadar küçüleceği için, Einstein bile bunun asla ölçülemeyeceğini düşündü. Tam 100 yıl sonra, 2015 yılında bilim insanları LIGO adında, L şeklinde ve kollarında devasa lazerler olan bir cihaz kurdular. Ve bir sabah, lazer ışınlarının boyunda atomdan bile küçük bir "esneme ve sıkışma" oldu; cihaz "chirp" (cıvıltı) diye ince bir ses çıkardı. Bu ses, 1.3 milyar ışık yılı uzakta, güneşten 30 kat büyük iki karadeliğin ölümcül bir şekilde birbirine çarpıp birleşmesinin, uzay-zaman dokusunda yarattığı o sarsıntının Dünya kıyısına vuran dalgasıydı! LIGO deneyi bize, koca evrenin soğuk, boş ve sessiz bir tiyatro sahnesi değil; milyarlarca yıl önceki kıyametlerin ve çarpışmaların üzerinde titreştiği, esneyip bükülebilen, devasa ve görünmez bir "kozmik davul zarı" olduğunu ispatlamıştır.',
+    questionStem: 'LIGO deneyinin "Yerçekimsel Dalgaları" ölçmeyi başarması, evrenin fiziksel yapısı hakkında bize nasıl (şiirsel/fiziksel) bir vizyon sunmuştur?',
+    options: [
+      'Güneş sistemimizin evrenin tam merkezinde ve tamamen hareketsiz bir bölgede olduğunu',
+      'Karadeliklerin sadece çevrelerindeki yıldızları yutan ve hiçbir iz bırakmayan sessiz canavarlar olduğunu',
+      'Uzay boşluğunun katı, sessiz ve boş bir hiçlik değil; devasa olayların (çarpışmaların) etkisiyle dalgalanan, esneyen ve o kozmik fırtınaların izini milyarlarca yıl boyunca taşıyarak titreşen devasa, canlı bir doku (davul zarı) olduğunu',
+      'Einstein\'ın genel görelilik teorisinin matematiksel olarak tamamen yanlış hesaplandığını'
+    ],
+    correct: 2,
+    explanation: 'İki karadeliğin çarpışmasının Dünya\'daki lazerin boyunu esnetmesi; uzayın boş ve katı bir alan değil, dalgalanan, esneyen ve titreşen "canlı bir doku (davul zarı)" olduğunu kanıtlar.'
+  },
+  {
+    title: 'Georg Cantor (Sonsuzlukların Çıldırtan Matematiği)',
+    passage: 'İnsanoğlu "sonsuzluk" kavramını tek ve aşılamaz, her şeyi içine alan mutlak bir sınır (hiçlik) olarak düşünürdü. 19. yüzyılda matematikçi Georg Cantor bu algıya kafa tuttu ve "Küme Teorisi" ile zihinleri eriten o matematiksel vahiyi (keşfi) sundu: "Bütün sonsuzluklar birbirine eşit değildir; bazı sonsuzluklar diğer sonsuzluklardan DAHA BÜYÜKTÜR!" Örneğin, 1,2,3 diye saydığımız tam sayıların sonsuzluğu ile, sadece 1 ile 2 arasında var olan ondalık sayıların (1.1, 1.12, 1.123...) sonsuzluğu eşit değildir; ondalık sayıların sonsuzluğu, tam sayıların sonsuzluğunu kendi içinde ezip yutan çok daha devasa (farklı bir mertebede) bir sonsuzluktur! Cantor, insan aklını bu sonsuzluklar hiyerarşisiyle (Alef sayıları) tanıştırdığında, dönemin matematikçileri onu "din düşmanı ve şarlatan" ilan ettiler. Akıl sağlığı bu devasa kavramların ağırlığına dayanamayan Cantor, hayatının son yıllarını ağır depresyon ve sanrılarla bir akıl hastanesinde geçirdi. Cantor\'un matematiği, insan beyninin kibrini paramparça ederek; aklımızın, evrenin o dipsiz, çok katmanlı ve hiyerarşik uçurumları (sonsuzlukları) karşısında çıldırmadan ayakta kalamayacak kadar küçük bir kâse olduğunu ispatlayan trajik bir destandır.',
+    questionStem: 'Georg Cantor\'un "Sonsuzlukların büyüklüklerinin birbirinden farklı olduğunu" ispatlaması, insan aklına dair neyin trajik bir uyanışıdır?',
+    options: [
+      'Sayıların aslında fiziksel dünyada karşılığı olmayan tamamen kurgusal semboller olduğunun',
+      'İnsanın sonsuzluğu "tek, düz ve basit bir kavram" sanma kibrinin yıkılarak; aklımızın evrenin o dipsiz, katmanlı ve aşılamaz (çıldırtıcı) matematiksel uçurumları karşısında ne kadar kırılgan ve çaresiz olduğunun',
+      'Ondalık sayıların günlük hayatta tam sayılardan daha çok kullanılması gerektiğinin',
+      'Deliliğin sadece genetik bir miras olup matematik bilimiyle hiçbir ilgisi olmadığının'
+    ],
+    correct: 1,
+    explanation: 'Sonsuzluğun tek bir şey olmayıp "daha büyük sonsuzluklar" hiyerarşisi barındırdığını kanıtlaması; evrenin dipsiz boyutları karşısında insan aklının basit, kibrli ve çıldırmaya müsait (kırılgan) bir kâse olduğunu gösterir.'
+  },
+  {
+    title: 'Telomerler ve Stresin Biyolojisi (Elizabeth Blackburn)',
+    passage: 'Yaşlanmanın sadece zamanın ilerlemesiyle ilgili biyolojik bir kader olduğu sanılırdı. Ancak Nobel ödüllü biyolog Elizabeth Blackburn, hücrelerimizin kromozomlarının ucunda bulunan ve tıpkı ayakkabı bağcıklarının ucundaki plastik koruyuculara benzeyen "Telomer" adlı yapıları keşfetti. Telomerler, hücre her bölündüğünde biraz kısalır ve tamamen tükendiklerinde hücre ölür (yaşlanırız). Asıl sarsıcı devrim ise şuydu: Blackburn, sürekli hasta çocuklarına bakan anneleri veya ağır travma yaşayan insanları incelediğinde, bu kişilerin telomerlerinin normalden çok daha "hızlı ve şiddetli" bir şekilde kısaldığını (parçalandığını) kanıtladı! Yani yaşadığımız o soyut stres, endişe ve ağır psikolojik acılar; sadece zihnimizde uçuşan görünmez düşünceler değildir. Onlar, kelimenin tam anlamıyla hücrelerimizin içine girip, DNA\'mızın koruyucu kalkanlarını (telomerleri) asit gibi eriten, bizi içeriden hücresel boyutta (fiziksel olarak) yaşlandıran ve çürüten somut, biyolojik birer zehirdir.',
+    questionStem: 'Elizabeth Blackburn\'ün "Telomer" araştırmaları, stres ve psikolojik acıların bedenimizdeki etkisi hakkında hangi sarsıcı gerçeği kanıtlamıştır?',
+    options: [
+      'Psikolojik sorunların sadece uyku düzenini bozarak insanları daha sinirli yaptığını',
+      'Stresin ve travmaların zihinsel (soyut/görünmez) bir his olmaktan çıkarak; hücresel bazda DNA\'mızın kalkanlarını (telomerleri) eriten ve bizi fiziksel olarak (biyolojik saatimizi hızlandırarak) yaşlandıran somut bir zehir olduğunu',
+      'Yaşlanmanın tek nedeninin kalitesiz gıdalarla beslenmek olduğunu ve bunun telomerleri kopardığını',
+      'Hücrelerin bölünme hızının sadece coğrafi iklim şartlarına bağlı olarak değiştiğini'
+    ],
+    correct: 2,
+    explanation: 'Stresin telomerleri (ayakkabı bağı uçlarını) hızla kısaltıp hücreyi öldürdüğünü kanıtlaması; soyut sandığımız acı ve stresin, aslında bizi hücresel düzeyde eriten somut ve fiziksel bir zehir/yaşlanma motoru olduğunu ispatlar.'
+  },
+  {
+    title: 'Propranolol ile Hafıza Silme (Eternal Sunshine)',
+    passage: 'Ağır savaş travması (PTSD) yaşayan askerler veya saldırıya uğramış kurbanlar, o kâbus dolu anıyı hatırladıklarında beyinleri aynı korkuyu ve acıyı fiziksel olarak tekrar tekrar yaşar. Yıllarca anıların değişmez birer granit taş olduğu sanıldı. Ancak nörobilimciler, beynin anıları hatırlama şeklindeki o muazzam (ve hacklenebilir) zaafı buldular. Bir anıyı hatırladığımızda, beyin onu raftan alıp masaya koyar ve anı o an "yeniden şekillendirilebilir (esnek)" hale gelir; işi bitince de onu "yeniden kaydederek" rafa kaldırır. Bilim insanları travmalı hastalara o korkunç anıyı anlattırırken (anı raftayken) onlara "Propranolol" adında bir tansiyon/adrenalin düşürücü ilaç verdiler. Beyin o anıyı rafa geri kaldırırken, ilacın etkisiyle anıya eşlik eden o çarpıntı, korku ve "duygusal acı" kısmı fiziksel olarak silinmişti! Hasta olayı bir film gibi hatırlıyor ama o anıyı yaşarken hissettiği "acı (duygu)" tamamen buharlaşmıştı. Bu bilimsel devrim, anılarımızın sarsılmaz gerçekler değil; her hatırladığımızda (ve müdahale ettiğimizde) üzerine yeni bir yalan ve filtre yazabileceğimiz, kimyasal ve kurgusal birer word belgesi olduğunu kanıtlar.',
+    questionStem: 'Propranolol kullanılarak anıların "duygusal yükünün silinmesi" araştırması, insan hafızasının (belleğin) yapısı hakkında neyi ifşa etmektedir?',
+    options: [
+      'Tansiyon ilaçlarının insan beyninde kalıcı unutkanlığa (Alzheimer\'a) yol açtığı tehlikesini',
+      'İnsan beyninin acı anılara karşı doğuştan gelen bir dayanıklılık mekanizması olduğunu',
+      'Anıların bir kez yazılıp dondurulmuş (sabit) tarihi belgeler olmadığı; her hatırlandığında beynin o anıyı "yeniden yazıp kurguladığı" (esnek) ve bu sırada kimyasal müdahalelerle o anının taşıdığı duygusal acının silinerek hacklenebileceği gerçeğini',
+      'Travmalarla yüzleşmenin hastaların psikolojisini her zaman eskisinden daha kötü bir hale getirdiğini'
+    ],
+    correct: 2,
+    explanation: 'Anı hatırlandığında esnekleşmesi ve ilacın etkisiyle acı duygusunun "yeniden kaydedilirken" silinmesi; hafızanın sabit bir taş değil, sürekli yeniden yazılan (ve kimyasal olarak hacklenebilen) esnek bir kurgu olduğunu ifşa eder.'
+  },
+  {
+    title: 'Çernobil\'in Radyotrofik Mantarları (Ölümü Yemek)',
+    passage: '1986 yılında Çernobil nükleer santrali patladığında, yayılan inanılmaz boyuttaki gama radyasyonu bölgedeki tüm canlı hayatını, ağaçları ve böcekleri saniyeler içinde ölümcül bir cehenneme çevirdi. O harabenin içinde bir daha hiçbir canlının barınamayacağı düşünülüyordu. Ancak 1991 yılında, reaktörün o karanlık, kapkara ve en ölümcül noktalarında kapkara duvar lekeleri fark edildi. Robotlarla alınan numuneler bilim dünyasını şoka soktu: Bu siyah lekeler "Cladosporium sphaerospermum" adı verilen bir tür mantardı. İnsanoğlunun hücrelerini parçalayan, DNA\'sını eriten o ölümcül radyasyon; bu mantarların hücrelerindeki yoğun melanin pigmenti tarafından adeta bir "fotosentez (radyosentez)" işlemiyle emiliyor ve mantar için büyüme enerjisine (besine) dönüşüyordu! İnsanın ürettiği o devasa kıyamet makinesi ve ölüm ışınları; doğanın o sessiz, sinsi ve mutlak uyum yeteneği karşısında sadece basit bir "akşam yemeğine" indirgenmiştir. Doğa, ölümü bile yiyerek hayatta kalacak kadar yenilmez bir ustadır.',
+    questionStem: 'Çernobil reaktöründe bulunan "Radyotrofik Mantarlar", evrim ve doğa hakkında yazar tarafından neyin metaforu olarak kullanılmıştır?',
+    options: [
+      'Nükleer radyasyonun sadece bitki türlerinde kalıcı genetik mutasyonlara yol açabildiğinin',
+      'İnsanoğlunun teknolojik kibrine (ve yarattığı ölümcül radyasyon kıyametine) rağmen; doğanın, en zehirli ve yıkıcı ortamı (ölümü) bile kendisine yeni bir besin (yaşam) kaynağına dönüştürebilecek o esnek, sınır tanımaz ve yenilmez uyum (evrim) gücünün',
+      'Mantarların güneş ışığı olmadan (karanlıkta) sadece nemli ortamlarda üreyebileceğinin kanıtının',
+      'Nükleer santrallerin temizliği için insan gücü yerine her zaman böceklerin kullanılması gerektiğinin'
+    ],
+    correct: 2,
+    explanation: 'Ölümcül radyasyonu emerek enerjiye/yemeğe dönüştüren mantarlar; doğanın, insanın yarattığı o en büyük yıkımı/ölümü bile yutarak hayatta kalmayı başaran o esnek ve yenilmez (uyum/evrim) gücünün metaforudur.'
+  },
+  {
+    title: 'İnsan Ekolokasyonu (Daniel Kish ve Körlerin Görmesi)',
+    passage: 'Daniel Kish henüz 1 yaşındayken yakalandığı kanser yüzünden iki gözünü de tamamen kaybetti. Ancak bugün o bir rehber köpek veya beyaz baston kullanmıyor; dağlarda bisiklet sürüyor, kamp yapıyor ve çevresindeki nesnelerin yerini santimi santimine biliyor. Bunu nasıl mı yapıyor? Sürekli olarak dilini damağına vurarak "klik" sesleri çıkarıyor ve tıpkı yarasalar veya yunuslar gibi, o ses dalgalarının nesnelere çarpıp geri dönme süresinden (ekolokasyon) etrafındaki binaların, ağaçların ve arabaların şeklini üç boyutlu olarak beyninde çiziyor! Daha da sarsıcı olanı, fMRI cihazlarıyla beyni incelendiğinde bilim insanları o mucizeyi gördüler: Daniel sesleri işitirken, beyninin "İşitme Merkezi" değil; kör olduğu için yıllardır atıl duran "Görme Merkezi (Görsel Korteks)" alev alev yanıyordu! İnsan beyni; bir işlevi (gözleri) bozulduğunda kaderine boyun eğip karanlıkta çürümek yerine, elindeki diğer sensörleri (kulakları) kullanarak kendi devrelerini (görsel haritasını) anında yeniden lehimleyecek kadar akışkan, acımasız ve sınır tanımaz bir yazılım (nöroplastisite) dehasıdır.',
+    questionStem: 'Daniel Kish\'in ses çıkararak (ekolokasyonla) çevresini algılaması ve görsel korteksinin çalışması, insan beyni hakkında neyi ispatlamaktadır?',
+    options: [
+      'Gözleri görmeyen insanların zamanla hayvanlarla telepati yoluyla anlaşabildiğini',
+      'İnsan beyninin, tek bir duyu organına (göze) bağlı, sabit ve çaresiz bir donanım olmadığını; eksiklik anında diğer duyuları (sesi) kullanarak kendini yeniden programlayabilen (kablolarını yeniden döşeyebilen) son derece esnek, dinamik ve mucizevi bir organ (nöroplastisite) olduğunu',
+      'İşitme duyusunun karanlık ortamlarda görme duyusuna göre insanı daha çok yorduğunu',
+      'Görme engellilerin beyin hacimlerinin normal insanlardan çok daha büyük olduğunu'
+    ],
+    correct: 2,
+    explanation: 'Sesleri duyduğunda beynin "görme merkezinin" aydınlanması; beynin sabit bir kutu değil, göz bozulduğunda kulağı "görme" aracı olarak kullanacak kadar kendini yeniden programlayabilen esnek (plastik/nöroplastisite) bir deha olduğunu ispatlar.'
+  },
+  {
+    title: 'Uçan Atom Saatleri (Hafele-Keating Deneyi)',
+    passage: 'Zamanın hepimiz için aynı hızda ilerleyen, mutlak ve sarsılmaz bir nehir olduğuna inanırız. Albert Einstein ise 1905\'te "Hızlanan bir nesne için zaman, duran bir nesneye göre daha yavaş akar" (Zaman Genişlemesi) dediğinde herkes ona deli gözüyle baktı. 1971 yılında fizikçiler J.C. Hafele ve Richard Keating, bu felsefi deliliği somut bir deneye döktüler. Saniyenin milyarda birini bile şaşmayan dört adet son derece hassas "Sezyum Atom Saati" aldılar. İkisini yerde (laboratuvarda) bıraktılar, diğer ikisini ise sivil yolcu uçaklarına yükleyip dünyanın etrafında günlerce, yüksek hızda uçurdular. Uçaklar yere inip saatler karşılaştırıldığında o tüyler ürpertici sonuç ortaya çıktı: Uçakta hızla seyahat eden saatler, yerde duran saatlerden "saniyenin milyarda birkaçı kadar" GERİDE kalmıştı (zaman uçaktakiler için fiziksel olarak daha yavaş akmıştı). Hafele-Keating deneyi; zamanın mutlak bir evrensel diktatör olmadığını, hızın (ve yerçekiminin) ağırlığı altında bükülüp yavaşlayan esnek ve plastik bir kumaş olduğunu laboratuvar matematiğiyle yüzümüze çarptı.',
+    questionStem: 'Hafele-Keating deneyi (uçakta geri kalan atom saatleri), fizik ve evren algımızdaki hangi asırlık dogmayı yerle bir etmiştir?',
+    options: [
+      'Atom saatlerinin yüksek irtifalardaki basınç nedeniyle mekanik olarak bozulmaya meyilli olduğu inancını',
+      'Zamanın evrendeki herkes (ve her yer) için eşit, sarsılmaz ve mutlak bir hızla ilerlediği dogmasını yıkarak; zamanın hareket hızına göre esneyebilen, bükülebilen ve kişiye özel (göreceli) akan fiziksel bir boyut olduğunu somut olarak ispatlaması',
+      'Yolcu uçaklarının okyanuslar üzerinde manyetik alanlardan etkilenerek yönlerini kaybettiği teorisini',
+      'Einstein\'ın fiziksel deneyler yapmak yerine sadece zihinsel felsefe (matematik) ürettiği eleştirisini'
+    ],
+    correct: 1,
+    explanation: 'Uçaktaki saatlerin yerdekilere göre geri kalması; zamanın herkes için "mutlak/eşit" aktığı dogmasını yıkıp, hıza göre bükülen (yavaşlayan) esnek ve göreceli bir yapı olduğunu somut olarak kanıtlamıştır.'
+  },
+  {
+    title: 'Casimir Etkisi (Hiçliğin Enerjisi)',
+    passage: 'Odanızdaki tüm eşyaları boşaltın. Sonra havayı emin. Işığı, radyasyonu ve ısıyı tamamen yalıtın. Geriye ne kalır? Mantıken "Mutlak bir Hiçlik (Boşluk)". Hollandalı fizikçi Hendrik Casimir 1948\'de bu "hiçlik" algısına bir bomba bıraktı. O kadar mükemmel bir boşluğun (vakumun) içine, birbirine mikroskobik derecede yakın duran iki adet şarj edilmemiş (nötr) metal plaka yerleştirilirse ne olacağını hesapladı. Klasik fiziğe göre iki metal hareketsiz durmalıydı. Oysa Casimir Etkisi devredeydi: O iki metal plaka, aniden görünmez bir güç tarafından birbirine doğru şiddetle İTİLDİ! Peki onları kim itmişti? Kuantum dünyasının o delirtici cevabı şuydu: "Boşluk" sandığımız yer aslında boş değildir! Kuantum vakumu, saniyenin milyarda biri kadar bir sürede var olup tekrar yok olan "Sanal Parçacıklarla" (Virtual Particles) kaynayan devasa bir okyanustur. Levhaların dışındaki sanal parçacıkların basıncı, içindekilerden fazla olduğu için levhalar birbirine yapışmıştır. Evrende "mutlak hiçlik" diye bir şey yoktur; karanlık ve boş sandığımız sahneler, henüz aklımızın göremediği fırtınaların ve sonsuz enerjilerin kaynadığı birer kazandır.',
+    questionStem: 'Casimir Etkisi deneyi (ve Sanal Parçacıklar), fizikte "boşluk (vakum)" kavramına dair neyi ispatlamaktadır?',
+    options: [
+      'Metal plakaların uzay boşluğunda kendi kütleçekimleri nedeniyle her zaman birbirini ittiğini',
+      'Kuantum dünyasının sadece sıcak ve aydınlık ortamlarda ölçülebilir sonuçlar verdiğini',
+      'Evrende "mutlak, ölü ve sessiz bir hiçlik (boşluk)" olamayacağını; en kusursuz boşluğun bile sürekli var olup yok olan sanal parçacıkların (enerjinin) kaynadığı aktif ve canlı bir deniz olduğunu',
+      'Fizikçilerin deneylerinde kullandıkları mikroskobik kameraların görüntüleri çarpıttığını'
+    ],
+    correct: 2,
+    explanation: 'Mükemmel boşluktaki levhaların sanal parçacık basıncıyla birbirine itilmesi; "mutlak hiçlik/boşluk" sandığımız şeyin aslında var olup yok olan enerjilerle (sanal parçacıklarla) kaynayan aktif bir okyanus olduğunu ispatlar.'
+  },
+  {
+    title: 'Çöp DNA Yanılgısı (Junk DNA)',
+    passage: 'İnsan Genomu Projesi ile DNA\'mızın haritası çıkarıldığında biyologlar büyük bir şok yaşadı. DNA\'mızın sadece %2\'si protein kodluyor, yani göz rengimizi, organlarımızı veya enzimlerimizi oluşturuyordu. Peki ya geriye kalan o devasa %98\'lik kısım ne işe yarıyordu? Bilim dünyası, o an anlayamadığı bu devasa bölüme hemen "Çöp DNA (Junk DNA)" adını yapıştırdı. Bu kısmın evrimden arta kalan, hiçbir işe yaramayan anlamsız evrimsel atıklar (parazitler) olduğuna inandılar. Ancak on yıllar sonra (Epigenetik bilimi geliştikçe), o "çöp" sanılan karanlık bölgelerin; hangi genin nerede, ne zaman açılıp kapanacağına (şalterlerin nerede olduğuna) karar veren, hastalıkları engelleyen ve o %2\'lik aktif geni yöneten "Muazzam Bir Kontrol ve İşletim Sistemi" olduğu ortaya çıktı! "Çöp DNA" terimi, bilim tarihinin en utanç verici kibirlerinden biridir: İnsanoğlu (ve bilim), o daracık aklıyla henüz anlayamadığı (işlevini süremediği) o engin ve karmaşık mekanizmayı, incelemek yerine ona hemen "Çöp" damgası vurup kibirle görmezden gelme (kendi cehaletini aklama) zaafına sahiptir.',
+    questionStem: 'Bilim dünyasının DNA\'nın %98\'ine "Çöp DNA" demesi ve sonradan yanıldığını anlaması, bilim insanlarının (ve insanın) hangi kibirli tutumunu eleştirir?',
+    options: [
+      'Biyologların genetik biliminden ziyade anatomiye (organlara) odaklanmasının getirdiği başarıyı',
+      'Bilimin, laboratuvar imkânları yetersiz olduğunda deneyleri tamamen yarıda kesip pes etme alışkanlığını',
+      'İnsanın (ve otoritenin), kendi mevcut aklıyla ve teknolojisiyle "henüz anlayamadığı, karmaşık ve karanlık" olan bir yapıyı/bilgiyi (gizemini araştırmak yerine) kibre kapılıp hemen "işe yaramaz/çöp" olarak damgalayarak kendi cehaletini örtbas etme zaafını',
+      'Genetik biliminin insanları sadece biyolojik bir makine olarak görerek felsefeden uzaklaşmasını'
+    ],
+    correct: 2,
+    explanation: 'Anlaşılamayan o devasa %98\'lik kısmı araştırmak yerine hemen "çöp" (işe yaramaz) diye damgalamak; bilimin ve insanın anlayamadığı şeyleri kibre kapılarak değersizleştirip kendi cehaletini örtbas etme zaafını eleştirir.'
+  },
+  {
+    title: 'Bilişsel Yük ve Gözbebekleri (Kahneman\'ın Aynası)',
+    passage: 'Yüz yüze konuşurken karşınızdaki insanın sizi gerçekten dinleyip dinlemediğini (veya aklının ne kadar zorlandığını) anlamak ister misiniz? Nobel ödüllü Daniel Kahneman bunu ispatlamıştır. Gözbebeklerimiz sadece ışığa karşı değil, "zihinsel (bilişsel) yüke" karşı da kusursuz bir refleksle açılıp kapanır. Kahneman bir deneyde insanlara gitgide zorlaşan matematik işlemleri (17x24 gibi) sorar. İnsan beyni bu soruyu çözmek için tam kapasite (odaklanma) moduna geçtiğinde, gözbebekleri o saniye fiziksel olarak büyür (genişler). Düşünme ve çabalama süreci boyunca gözbebekleri o devasa boyutta kalır. Ancak beyin cevabı bulduğu an veya (asıl kritik olanı) "soruyu çözemeyeceğini anlayıp pes ettiği (vazgeçtiği) o ilk saniyede", gözbebekleri anında küçülür (daralır). Gözbebekleri ruhun değil, "Zihinsel Emeğin" en şeffaf aynasıdır. Sizinle tartışan birinin gözbebekleri küçüldüyse, o artık argümanlarınızı anlamaya çalışmaktan vazgeçmiş (şalteri indirmiş) demektir.',
+    questionStem: 'Kahneman\'ın "Gözbebeği Genişlemesi" araştırması, beyin fonksiyonları ve "bilişsel çaba" hakkında bize neyi gösterir?',
+    options: [
+      'Göz retinasının çok fazla ışık aldığında insan beyninde uyku hali (yorgunluk) yarattığını',
+      'Matematik problemlerinin insanlarda anksiyete (panik atak) krizi geçirttiği gerçeğini',
+      'Zihinsel emeğin (düşünme çabasının veya zihnin pes etmesinin) sadece soyut ve içsel bir süreç olmadığını; anlık olarak gözbebeklerinin genişleyip daralmasıyla ölçülebilen "kusursuz ve tamamen fiziksel/somut" bir göstergesi olduğunu',
+      'İnsanların yalan söylerken gözbebeklerini bilerek küçülterek karşı tarafı manipüle etme yeteneğini'
+    ],
+    correct: 2,
+    explanation: 'Matematik çözerken gözbebeğinin büyüyüp, pes edildiği an küçülmesi; zihinsel çabanın (bilişsel yükün) soyut bir şey değil, göz üzerinden okunabilen somut ve fiziksel bir tepki/ayna olduğunu ispatlar.'
+  },
+  {
+    title: 'Belyaev\'in Gümüş Tilkileri (Evcilleştirme Sendromu)',
+    passage: '1959 yılında Sovyet genetikçi Dmitry Belyaev, köpeklerin (kurtlardan) nasıl evcilleştiğini anlamak için vahşi gümüş tilkiler üzerinde efsanevi bir deney başlattı. Formülü çok basitti: İnsana saldıran (agresif) tilkileri eledi, sadece insana yaklaşan ve en "uysal" (sakin) olan tilkileri seçip birbirleriyle çiftleştirdi. Sadece uysallık (davranış) üzerinden yapılan bu seçilim, birkaç nesil sonra şok edici bir biyolojik yan etki (mutasyon) yarattı. Uysal tilkilerin kulakları kıvrıklaşmaya (köpekler gibi sarkmaya), kuyrukları kıvrılmaya, kürklerinde inekler gibi beyaz benekler çıkmaya ve kafatasları küçülmeye (çocuksu görünmeye) başladı! "Evcilleştirme Sendromu" adı verilen bu olay bilime şunu kanıtladı: Doğada "davranış (huy)" ile "fiziksel anatomi (şekil)", birbirinden bağımsız çekmeceler değildir. Bir canlıyı uysallaştırmak (agresif hormonlarını kısmak) için onunla oynadığınızda, evrim ona zorunlu bir paket (yan etki) sunarak onun bedensel (fiziksel) anatomisini ve vahşi (özgün) estetiğini de geri dönülemez bir şekilde değiştirip ehlileştirir.',
+    questionStem: 'Belyaev\'in "Gümüş Tilki" deneyi, evrimsel biyolojide (davranış ve anatomi ilişkisinde) neyi ispatlamıştır?',
+    options: [
+      'Tilkilerin genetik olarak kurtlardan ve köpeklerden çok daha zeki ve agresif olduğunu',
+      'Evrimde sadece "uysallık (davranış)" odaklı bir seçilim yapılmasının, o canlının agresif hormonlarını değiştirdiği için; kulakların sarkması, beneklerin çıkması gibi "biyolojik (fiziksel/anatomik) değişimleri de" mecburi ve kaçınılmaz bir yan etki olarak (paket halinde) beraberinde getirdiğini',
+      'Sovyet genetikçilerin hayvanlara eziyet ederek onları laboratuvar ortamlarında kasten mutasyona uğrattığını',
+      'Hayvanların kürklerindeki renk değişimlerinin sadece beslenme alışkanlıklarıyla (diyetle) ilgili olduğunu'
+    ],
+    correct: 1,
+    explanation: 'Sadece uysal (davranış) olanların çiftleştirilmesinin, kulak sarkması ve benek çıkması (fiziksel anatomi) gibi yapısal değişimleri de paket halinde (Evcilleştirme Sendromu olarak) beraberinde getirdiği kanıtlanmıştır.'
+  },
+  {
+    title: 'Sıçrayan Genler (Barbara McClintock)',
+    passage: '1940\'larda genetik dünyası, DNA\'yı kütüphanedeki sabit bir raf, genleri ise o raflarda "asla yer değiştirmeyen (sabit) kitaplar" olarak görüyordu (Statik Genom). Ancak biyolog Barbara McClintock, mısır koçanlarının renklerindeki farklılıkları mikroskopta incelerken bu kibri yerle bir etti. O, bazı genlerin DNA ipliği üzerinde kelimenin tam anlamıyla koptuğunu, hareket ettiğini ve başka bir bölgeye giderek oraya (kopyalanıp) yapıştığını gördü! "Transpozonlar" (Sıçrayan Genler) adı verilen bu buluşu açıkladığında, dönemin erkek egemen (ve kibirli) bilim dünyası onunla alay etti ve onu delilikle suçladı. 30 yıl boyunca dışlanan McClintock, 1983\'te (81 yaşındayken) haklılığı ispatlanıp Nobel Ödülü aldığında bilim dünyası diz çöktü. O, DNA\'mızın sabit ve okunmayı bekleyen ölü bir metin değil; genlerin anbean yer değiştirdiği, kendi kendini yeniden düzenleyen, çevresel stresle şekillenen dinamik, kaotik ve "canlı bir ekosistem" olduğunu kanıtlamıştı.',
+    questionStem: 'Barbara McClintock\'un "Sıçrayan Genler" (Transpozonlar) keşfi, DNA (genetik) hakkındaki hangi statik dogmayı yıkmıştır?',
+    options: [
+      'Mısır bitkisinin insan DNA\'sına en yakın genetik yapıya sahip olduğu inancını',
+      'Genlerin DNA zinciri üzerinde yerleri "sabit ve asla değişmeyen (hareketsiz)" talimatlar olduğu inancını yıkarak; DNA\'nın aslında genlerin koptuğu, hareket ettiği (sıçradığı) dinamik, kaotik ve kendini yeniden düzenleyen canlı bir ekosistem olduğunu',
+      'Genetik hastalıkların tedavisinde kimyasal ilaç kullanımının kesinlikle işe yaramadığı dogmasını',
+      'Bilim dünyasındaki Nobel ödüllerinin sadece laboratuvar kimyagerlerine verildiği kuralını'
+    ],
+    correct: 1,
+    explanation: 'Genlerin sabit ve yer değiştirmeyen (statik) yapılar olduğu inancı; McClintock\'un genlerin sıçradığı, koptuğu ve kendini yeniden düzenleyen (dinamik/canlı) bir yapı (transpozonlar) olduğu keşfiyle yıkılmıştır.'
+  },
+  {
+    title: 'Fantom Titreşim Sendromu (Teknolojik Halüsinasyon)',
+    passage: 'Akıllı telefonlar hayatımıza girdiğinden beri tuhaf bir hastalık türedi. Yolda yürürken veya çalışırken, cebinizde telefonunuzun titrediğini hissediyorsunuz. Elinizi hızla cebinize atıyorsunuz, ancak ekran karanlık; sizi kimse aramamış veya mesaj atmamıştır. Bacağınızdaki o fiziksel titreşim hissi tamamen beyninizin bir uydurmasıdır! Psikolojide buna "Fantom Titreşim Sendromu" (Phantom Vibration Syndrome) denir. Modern insanın beyni, akıllı telefonlardan gelen o anlık dopamin ödüllerine (mesaj ve bildirimlere) o kadar yoğun bir şekilde şartlanmış ve bağımlı hale gelmiştir ki; beyindeki nörolojik algı mekanizması (kablolar), "beklediği" o uyarıcı gelmediğinde, bacağınızdaki pantolon sürtünmesini bile bir telefon titreşimi olarak (sahte sinyal) algılayacak şekilde yeniden programlanmıştır. Bu, bir psikolojik yorgunluk değil; teknolojinin, evrimleşmiş insan beynini fiziksel olarak hackleyip bizi kendi ürettiğimiz o dijital halüsinasyonların kölesi (siborgu) yaptığının kanıtıdır.',
+    questionStem: 'Fantom Titreşim Sendromu (Telefonsuz Titreşim Hissi), insan ile teknoloji ilişkisi hakkında hangi sarsıcı gerçeği göstermektedir?',
+    options: [
+      'Cep telefonlarının yaydığı radyasyonun bacak kaslarında kalıcı ve istemsiz fiziksel kasılmalara (kramplara) neden olduğunu',
+      'Teknoloji bağımlılığının ve dopamin beklentisinin, insan beynindeki algı mekanizmasını fiziksel olarak (hackleyerek) yeniden programladığını; beynin, beklentiyi karşılamak için olmayan sinyalleri (titreşim halüsinasyonunu) kendi kendine üretecek kadar köleleştiğini',
+      'Günümüzdeki telefon sensörlerinin çok hassas olduğu için en ufak rüzgârda bile kendi kendine titreştiğini',
+      'İnsanların sosyal hayatta daha fazla iletişim kurmak için telefonlara bağımlı olma numarası yaptığını'
+    ],
+    correct: 1,
+    explanation: 'Telefon çalmamasına rağmen cebimizde titreşim hissetmemiz; teknoloji (dopamin) bağımlılığının beyin algılarını hackleyip (yeniden programlayıp) beklentiyi karşılamak için sahte fiziksel sinyaller (halüsinasyon) üretecek kadar zihni köleleştirdiğini gösterir.'
+  },
+  {
+    title: 'Sperry\'nin Kurbağa Gözü Deneyi (Biyolojinin Zindanı)',
+    passage: 'Nörobilimci Roger Sperry, beyin ile gözler arasındaki o evrimsel bağlantıyı test etmek için acımasız ama dâhiyane bir deney yaptı. Bir kurbağanın göz küresini ameliyatla yerinden çıkardı, 180 derece ters çevirdi (baş aşağı getirdi) ve sinirleri tekrar dikti. İyileşen kurbağanın önüne yukarıda uçan bir sinek (yem) konulduğunda; kurbağa sineği yakalamak için dilini yukarı fırlatmak yerine, "aşağıya (yere)" doğru fırlatıyordu (çünkü ters dönmüş gözü sineği aşağıda görüyordu). Ancak asıl dehşet verici olan sonuç şuydu: Kurbağa her denemesinde diliyle yere vurup aç kalmasına, bu hatayı binlerce kez tekrarlamasına rağmen "öğrenerek" o hatayı asla düzeltemedi! Sonsuza kadar aşağı vurmaya devam etti. Sperry\'nin deneyi, evrimin o trajik duvarını kanıtlar: Çoğu canlının biyolojik donanımı ve içgüdüleri öylesine katı, esnemez ve sabit bir şekilde kablolanmıştır ki; dış dünya (gerçeklik) tamamen değişse bile, o canlı yeni duruma uyum sağlayamaz ve kendi "sabit biyolojik kodunun" (hatanın) zindanında çırpınarak ölmeye mahkûm olur.',
+    questionStem: 'Roger Sperry\'nin "Kurbağanın gözünü ters çevirme" deneyindeki kurbağanın davranışları, biyolojik içgüdüler hakkında neyi kanıtlar?',
+    options: [
+      'Kurbağaların avlanırken gözlerinden ziyade koku alma duyularını kullandığını ve bu yüzden aç kaldığını',
+      'Beyin ameliyatlarının (sinir kesilmelerinin) canlıların motor kas yeteneklerini felç edip onları tamamen hareketsiz bıraktığını',
+      'Genetik ve biyolojik içgüdülerin ne kadar katı, esnemez (ve öğrenmeye kapalı) bir kablo bağlantısı olduğunu; canlının yeni gerçekliğe uyum sağlayamayarak (öğrenemeyerek) kendi hatalı donanımının esiri (ve kurbanı) olabileceğini',
+      'Sineklerin kurbağalardan daha zeki manevralar yaparak av olmaktan kolayca kurtulduğunu'
+    ],
+    correct: 2,
+    explanation: 'Ters gözlü kurbağanın aç kalmasına rağmen hatasını hiç düzeltememesi (öğrenememesi); biyolojik donanımın ve içgüdülerin ne kadar katı/esnemez bir zindan olduğunu ve uyum (öğrenme) yeteneğinin olmadığını kanıtlar.'
+  }
+];
+
+export const bilimParagrafSorulari37: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_37.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_37[idx];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-bilim37-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
 // paragrafTests.ts dosyasının hata vermemesi için iki listeyi birleştirip eski adıyla dışa aktarıyoruz:
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari,
@@ -9498,7 +10070,12 @@ export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...felsefeParagrafSorulari31,
   ...felsefeParagrafSorulari32,
   ...felsefeParagrafSorulari33,
-  ...felsefeParagrafSorulari34
+  ...felsefeParagrafSorulari34,
+  ...felsefeParagrafSorulari35,
+  ...bilimParagrafSorulari36,
+  ...bilimParagrafSorulari37
+  
+  
   
   
 ];
