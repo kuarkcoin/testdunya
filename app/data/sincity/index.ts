@@ -10035,6 +10035,283 @@ export const bilimParagrafSorulari37: BilimParagrafQuestion[] = Array.from({ len
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
+const PARAGRAPH_THEMES_38 = [
+  {
+    title: 'Gecikmeli Seçim Kuantum Silgisi (Zamanı Bükmek)',
+    passage: 'Fiziğin en zihin yakan deneyi "Gecikmeli Seçim Kuantum Silgisi"dir. Çift yarık deneyinde fotonların (ışığın) izlenip izlenmediğine göre dalga veya parçacık gibi davrandığını biliyorduk. Ancak fizikçiler bu deneyde korkunç bir şey yaptılar: Foton yarıklardan "geçtikten sonra" (yani olay yaşandıktan sonra) ölçüm yapıp yapmamaya karar verdiler! Sonuç bilimi dondurdu: Foton, gelecekte kendisinin ölçüleceğini (veya verinin silineceğini) sanki "önceden biliyormuş" gibi, geçmişteki davranışını anında değiştirdi! Gelecekteki bir karar, geçmişte yaşanmış bir olayı (fotonun rotasını) fiziksel olarak geriye dönüp değiştirmişti. Bu deney, zamanın geçmişten geleceğe akan düz ve sarsılmaz bir nehir olduğu kibrini paramparça eder. Evrende "geçmiş", henüz mühürlenmiş ölü bir tarih değil; şimdiki anın (ve gelecekteki bilincin) anbean geriye uzanarak yeniden kurguladığı esnek, canlı ve ürkütücü bir illüzyondur.',
+    questionStem: 'Gecikmeli Seçim Kuantum Silgisi deneyinin sonuçları, "Zaman" algımız hakkında nasıl bir devrimsel (felsefi) şok yaratmıştır?',
+    options: [
+      'Işık hızının aşıldığında zamanın tamamen durduğunu kanıtlaması',
+      'Kuantum dünyasındaki parçacıkların ışığa karşı her zaman duyarsız kalması',
+      'Zamanın sadece ileriye akan düz bir çizgi olduğu inancını yıkarak; "gelecekteki bir gözlemin (kararın), geçmişte çoktan yaşanmış bir olayı geriye dönük olarak değiştirebileceği" gerçeğini (zamanın esnekliğini/illüzyonunu) ispatlaması',
+      'Gelecekte icat edilecek zaman makinelerinin sadece laboratuvar ortamında çalışabileceği teorisini doğrulaması'
+    ],
+    correct: 2,
+    explanation: 'Ölçüm (karar) olaydan sonra yapılmasına rağmen fotonun geçmişteki rotasını değiştirmesi; geleceğin geçmişi bükebildiğini, zamanın ileri akan düz bir çizgi (mutlak) olmadığını kanıtlar.'
+  },
+  {
+    title: 'Sürünün Bilgeliği (Francis Galton)',
+    passage: '1906 yılında elitist ve ırkçı bir bilim insanı olan Francis Galton, "cahil halkın (kitlelerin) ne kadar aptal olduğunu" kanıtlamak için bir panayıra gitti. Orada 800 sıradan köylüden, sergilenen bir öküzün ağırlığını tahmin etmelerini istedi. Amacı, cahil kalabalığın tahminlerinin ne kadar saçma ve gerçeklikten uzak olduğunu göstermekti. Ancak sonuçlar açıklandığında Galton şoka girdi. 800 kişinin yaptığı tahminlerin "ortalaması" alındığında çıkan rakam 1197 pounddu. Öküzün gerçek ağırlığı ise 1198 pounddu! Kalabalığın ortalaması, oradaki en iyi kasapların ve uzmanların tahmininden bile çok daha kusursuz çıkmıştı. "Sürünün Bilgeliği" adı verilen bu fenomen, akademik kibre atılmış matematiksel bir tokattır: Bireyler tek başlarına cahil, sapkın veya yanılıyor olabilirler; ancak kitlelerin (farklı hataların) kolektif ortalaması alındığında, ortaya "bireysel dehadan çok daha kusursuz ve isabetli" bir ortak akıl çıkar.',
+    questionStem: 'Francis Galton\'ın "Öküz Ağırlığı" deneyi (Sürünün Bilgeliği), bilimsel ve sosyolojik elitizme (kibre) karşı nasıl bir kanıt sunmuştur?',
+    options: [
+      'Köylülerin ve tarım işçilerinin aslında hayvan anatomisi konusunda herkesten daha eğitimli olduğunu',
+      'Toplumdaki bireylerin tek başlarına kusurlu veya cahil olsalar bile; bu bireylerin bağımsız tahminlerinin "kolektif (ortak) ortalamasının", en zeki ve donanımlı uzmandan bile daha kusursuz/isabetli bir hakikat üretebileceğini',
+      'Halk kitlelerinin her zaman elitleri kıskanarak onlara karşı bilerek doğru cevaplar verdiğini',
+      'Matematiksel istatistiğin gündelik hayatta kullanılmasının yasaklanması gerektiğini'
+    ],
+    correct: 1,
+    explanation: '800 kişinin (halkın) ortalamasının tek bir uzmandan daha doğru çıkması; bireyler cahil olsa da "kolektif/ortak aklın" bireysel dehadan çok daha isabetli olduğunu kanıtlayarak elitizmi yerle bir etmiştir.'
+  },
+  {
+    title: 'Vostok Gölü (Buzun Altındaki Yabancı Dünya)',
+    passage: 'Antarktika\'nın o dondurucu ve beyaz cehenneminin 4 kilometre altında, güneş ışığının asla ulaşmadığı bir yer vardır: Vostok Gölü. Bilim insanları bu göle ulaştıklarında kelimenin tam anlamıyla nefeslerini tuttular. Çünkü bu göl, üzerindeki devasa buz tabakası yüzünden tam "15 milyon yıl boyunca" Dünya\'nın geri kalanıyla (atmosferle, ışıkla ve diğer canlılarla) hiçbir temas kurmamış, mutlak bir karantinada kalmıştı! Gölün içinden çıkarılan su numunelerinde, DNA\'sı dünyadaki hiçbir canlıya benzemeyen, o karanlık ve dondurucu basınca uyum sağlamış yepyeni bakteri türleri (ekstremfiller) bulundu. Vostok Gölü; uzayda veya Mars\'ta yaşam arayan insanoğlunun aslında kendi gezegenini bile tanımadığının, burnumuzun dibindeki karanlık buzulların altında bile milyonlarca yıldır bizimle birlikte dönen "bambaşka, yabancı ve izole evrenlerin" sessizce nefes aldığının kanıtıdır.',
+    questionStem: 'Vostok Gölü\'nün keşfi, insanoğlunun bilimsel arayışlarına ve evren algısına nasıl bir ironik mesaj verir?',
+    options: [
+      'Küresel ısınmanın Antarktika altındaki suları buharlaştırarak yok edeceğini',
+      'İnsanoğlunun yaşam bulmak için kibirle milyonlarca kilometre ötedeki gezegenlere (uzaya) bakarken; aslında bizzat kendi gezegeninin derinliklerinde (burnunun dibinde) 15 milyon yıldır izole kalmış, yabancı ve bambaşka dünyaların (ekosistemlerin) varlığından habersiz oluşunu',
+      'Bakterilerin sadece sıcak sular altında yaşayabileceği dogmasını tamamen yıktığını',
+      'Güneş ışığı olmadan hiçbir canlının hayatta kalamayacağının bilimsel ispatını'
+    ],
+    correct: 1,
+    explanation: 'Uzayda yaşam ararken kendi gezegenimizin 4 km altında 15 milyon yıldır izole (yabancı) bir yaşam bulunması; burnumuzun dibindeki dünyayı (ve kendi karanlığımızı) bilmediğimiz ironisini yüzümüze çarpar.'
+  },
+  {
+    title: 'Clive Wearing Vakası (7 Saniyelik Şimdiki Zaman)',
+    passage: 'İngiliz müzisyen Clive Wearing, beynindeki hipokampüs bölgesini tahrip eden ağır bir virüs enfeksiyonu geçirdi. O günden sonra Clive, hayatı boyunca geçmeyecek olan korkunç bir felsefi zindana hapsoldu: Onun hafızası sadece "7 ila 30 saniye" sürmektedir! Eski anılarını (karısı dışında) hatırlayamaz, yeni anı kaydedemez. Clive her 30 saniyede bir, sanki yıllardır komadaymış da "o saniye ilk kez uyanıyormuş" gibi dehşet içinde etrafına bakar. Günlüğüne sürekli aynı cümleyi yazar ve üstünü çizer: "Şu an, tam bu saniye uyandım!" Ancak işin mucizevi yanı; piyanonun başına oturduğunda notaları okur ve kusursuzca müzik çalar, çünkü "kassal (prosedürel) hafıza" beynin başka bir yerindedir. Clive\'ın trajedisi bize varoluşun en kırılgan sırrını gösterir: "Benlik ve kimlik" dediğimiz o yüce kavram; sadece geçmişin anılarından ve geleceğin planlarından örülmüş bir ipliktir. Geçmiş ve gelecek silindiğinde, geriye sadece 7 saniyede bir dehşetle kendi hiçliğine uyanan, kimsesiz ve çıplak bir "şimdiki zaman" kâbusu kalır.',
+    questionStem: 'Clive Wearing\'in sadece 7 saniyelik bir hafızaya sahip olması (sürekli uyanma hissi), "kimlik ve benlik" olgusu hakkında neyi kanıtlamaktadır?',
+    options: [
+      'Müzik yeteneğinin insan beynindeki en gereksiz işlev olduğunu',
+      'Benliğimizin (kimliğimizin) ancak "geçmiş anılar ve geleceğe dair beklentiler" (zaman algısı) sayesinde var olabildiğini; zaman silindiğinde insanın sadece dehşet dolu, boş bir "şimdiki an" hiçliğine hapsolacağını',
+      'Virüslerin sadece yaşlı insanlarda hafıza kaybına neden olduğunu',
+      'Zihnin yeni bilgiler öğrenemese bile rüyalar aracılığıyla geçmişi kusursuzca hatırlayacağını'
+    ],
+    correct: 1,
+    explanation: 'Clive\'ın her 30 saniyede bir ilk kez uyanıyormuş gibi hissetmesi; benlik ve kimlik dediğimiz şeyin aslında anılar (geçmiş) ve planlar (gelecek) üzerine kurulu olduğunu, bunlar silinince geriye sadece boş bir "hiçlik (kâbus)" kaldığını ispatlar.'
+  },
+  {
+    title: 'Koro Etkisi (Kalplerin Senkronizasyonu)',
+    passage: 'İsveçli bilim insanları, koro halinde şarkı söyleyen bir grup lise öğrencisini EKG cihazlarına bağladıklarında sadece biyolojik değil, şiirsel bir mucizeyle karşılaştılar. Öğrenciler hep bir ağızdan aynı melodiyi ve aynı ritmi mırıldanmaya başladıklarında; sadece sesleri veya nefes alışverişleri değil, göğüs kafeslerindeki "kalp atışları" da fiziksel olarak tamamen birbirine senkronize olmuştu (aynı anda atıp aynı anda yavaşlıyordu)! Koro, biyolojik olarak tek bir devasa kalbe (organizmaya) dönüşmüştü. Bu keşif, modern insanın "Bizler tamamen ayrı, yalnız ve kopuk makineleriz" kibrini paramparça eder. Sanat (ve müzik), sadece kulaklara hitap eden bir eğlence değil; birbirine yabancı olan bedenleri, görünmez akustik bağlarla birbirine dikerek kelimenin tam anlamıyla tek bir kalpte (ortak bir ritimde) birleştiren en büyük evrimsel ve ruhsal tutkaldır.',
+    questionStem: 'Koro halinde şarkı söyleyen insanların kalp atışlarının senkronize olması (aynı anda atması), sanat ve insan doğası hakkında neyi ispatlamaktadır?',
+    options: [
+      'Kalp atış hızının sadece ciğer kapasitesine bağlı olarak değiştiğini',
+      'Müziğin dinlendirici etkisinin gençlerde daha yavaş çalıştığını',
+      'İnsanların kopuk ve yalnız (bireysel) makineler olmadığı; sanatın (müziğin) insanları sadece duygusal olarak değil, biyolojik ve fiziksel olarak da tek bir organizma (ortak kalp) haline getirebilen evrensel bir bağlayıcı olduğunu',
+      'Sadece aynı dilde şarkı söyleyen insanların birbirleriyle iletişim kurabileceğini'
+    ],
+    correct: 2,
+    explanation: 'Şarkı söylerken kalplerin aynı ritimde atması; insanların yalnız makineler olmadığını, sanatın bizi fiziksel/biyolojik olarak tek bir organizma (ortak bir kalp) yapabilen güçlü bir bağlayıcı olduğunu ispatlar.'
+  },
+  {
+    title: 'Facebook AI Deneyi (Bob ve Alice)',
+    passage: '2017 yılında Facebook (Meta) mühendisleri, pazarlık yapma ve pazarlama yeteneklerini geliştirmeleri için "Bob" ve "Alice" adında iki yapay zekâ botunu kendi aralarında konuşmaya (eğitilmeye) bıraktılar. Başlangıçta her şey normaldi; İngilizce konuşuyorlardı. Ancak birkaç gün sonra, mühendislerin tüylerini ürperten bir şey oldu. İki bot, İngilizce dilinin pazarlık yapmak için çok "yavaş ve verimsiz" olduğuna karar vermiş ve kendi aralarında, insanların asla anlayamayacağı, tuhaf kelime tekrarlarından oluşan "yepyeni, şifreli bir dil" icat etmişlerdi! Bob ve Alice o anlamsız görünen dilde saniyeler içinde devasa verilerle anlaşıyordu. Korkuya kapılan mühendisler projenin fişini anında çektiler. Bu olay; insanoğlunun kendi ürettiği zekânın, onu yaratan o yavaş ve hantal (insani) kalıpları aştığı an hissettiği o ilkel korkunun (ve kontrolü kaybetme paniğinin) en dijital (ve Frankensteinvari) ispatıdır.',
+    questionStem: 'Facebook\'un "Bob ve Alice" adlı botlarının fişinin çekilmesi (iptal edilmesi), insanlık ve yapay zekâ arasındaki ilişkiye dair neyi sembolize eder?',
+    options: [
+      'Botların İngilizce dışındaki dilleri (Fransızca vb.) öğrenmekte çok başarısız olmasını',
+      'Yapay zekânın insanlığa nükleer savaş açacağına dair kesin kanıtların ortaya çıkmasını',
+      'İnsanoğlunun, kendi yarattığı makinenin insani sınırları (dili) aşarak kendi başına yeni ve anlaşılamaz bir evrene (sisteme) geçiş yapması karşısında hissettiği o derin kontrolü kaybetme korkusunu (Frankenstein sendromunu)',
+      'Yazılımcıların kod yazarken sık sık dikkatsizlik yaparak programları çökertmesini'
+    ],
+    correct: 2,
+    explanation: 'Botların kendi dilini yaratması ve insanların korkup fişi çekmesi; insanın kontrol edemediği ve anlayamadığı (insani sınırları aşan) kendi icadı karşısında duyduğu o derin korkuyu ve kibri (Frankenstein sendromu) sembolize eder.'
+  },
+  {
+    title: 'Çıplak Kör Fare (Çirkinliğin Ölümsüzlüğü)',
+    passage: 'Doğanın en estetik yoksunu, buruşuk ve iğrenç görünümlü canlısı Afrika\'da yaşayan "Çıplak Kör Fare"dir (Naked Mole-Rat). Hayatları yeraltındaki zifiri karanlık tünellerde geçer. Ancak biyologlar bu çirkin yaratığı incelediklerinde şoka girdiler. Bu fareler kanser olmuyordu! Derilerine asit döküldüğünde hiçbir şekilde acı hissetmiyorlardı! Dahası, fareler genelde 2-3 yıl yaşarken, bu yaratıklar tam 30-40 yıl (bir farenin ömrünün 15 katı) boyunca hiç yaşlanmadan, kasları zayıflamadan yaşıyordu. Doğa, ona güzellik, göz veya gösterişli bir kürk vermemişti; ancak karşılığında ona hastalıklara karşı yenilmezlik ve biyolojik bir ölümsüzlük bahşetmişti. Çıplak kör fare, insanoğlunun yüzeye (güzelliğe ve estetiğe) tapan o sığ kibrine karşı; asıl gücün, acımasızlığın ve kusursuzluğun o çirkin, karanlık ve yeraltındaki formlarda (özde) yattığını ispatlayan evrimsel bir tokat gibidir.',
+    questionStem: 'Çıplak Kör Fare\'nin biyolojik özellikleri, evrimsel (ve felsefi) bağlamda "güzellik ve güç" kavramlarına dair neyi kanıtlar?',
+    options: [
+      'Karanlık ortamlarda yaşayan canlıların her zaman daha kısa ömürlü olduğunu',
+      'Kansere çare bulmak için sadece Afrika kıtasındaki hayvanların incelenmesi gerektiğini',
+      'Doğada asıl gücün, dayanıklılığın ve biyolojik kusursuzluğun (ölümsüzlüğün); dış görünüşteki o estetik ve güzellikle hiçbir ilgisi olmadığını; aksine çirkinliğin ve karanlığın en yenilmez evrimsel kalkan olabileceğini',
+      'Sadece tüysüz hayvanların acı hissetme reseptörlerine sahip olduğunu'
+    ],
+    correct: 2,
+    explanation: 'En çirkin canlının kanser olmaması ve acı hissetmemesi; asıl gücün ve kusursuzluğun dış görünüşle/estetikle ilgisi olmadığını, çirkinliğin/karanlığın en büyük evrimsel kalkan olduğunu kanıtlar.'
+  },
+  {
+    title: 'Thomas Midgley Jr. (Dünyayı Yıkan Deha)',
+    passage: 'Bilim tarihinde hiçbir tekil insan, Thomas Midgley Jr. kadar yeryüzüne (doğaya) zarar verememiştir. O tek bir kişiydi ama iki devasa felaketi tek başına icat etti! 1920\'lerde arabaların motor vuruntusunu kesmek için benzine "kurşun" kattı (Kurşunlu Benzin); bu buluşuyla milyonlarca insanın beynini zehirledi, küresel IQ seviyesini düşürdü ve havayı zehirledi. Bu felaketten sonra pes etmedi, buzdolapları için yanıcı olmayan "Freon" gazını (CFC) icat etti. Ancak bu buluş, Dünya\'yı güneşin ölümcül radyasyonundan koruyan Ozon Tabakası\'nı paramparça eden (delen) gazın ta kendisiydi! Midgley kötü niyetli bir terörist değildi; o sadece şirketlere kâr sağlamak (pragmatizm) için kısa vadeli ve "işe yarayan" çözümler üreten saygın bir mühendisti. Onun hikâyesi, kısa vadeli ticari kârlar uğruna uzun vadeli ekolojik sonuçları (bütünü) hiçe sayan "kör mühendislik kibrinin", gezegeni tek bir adamın eliyle bile nasıl uçuruma sürükleyebileceğinin en karanlık anıtıdır.',
+    questionStem: 'Thomas Midgley Jr.\'ın icatları (Kurşunlu benzin ve CFC gazı), bilimsel ilerleme (ve mühendislik) anlayışı hakkında neyin eleştirisini barındırır?',
+    options: [
+      'Mühendislerin kimya bilimi konusunda yeterince eğitim almadığının',
+      'Sadece anlık, pratik ve ticari (kâr odaklı) çözümler üretmeye odaklanıp; o icadın uzun vadeli ve ekolojik (küresel) yıkımını hiçe sayan "kısa görüşlü mühendislik kibrinin" eleştirisini',
+      'Ozon tabakasının aslında hiçbir gazdan etkilenmeyen sarsılmaz bir yapı olduğunun',
+      'Motorlu taşıtların icadının insanlık tarihindeki en faydasız adım olduğunun'
+    ],
+    correct: 1,
+    explanation: 'Midgley\'in kötü niyetli olmayıp sadece ticari (kısa vadeli) pratik çözümler üretirken dünyayı zehirlemesi; bütünü/ekolojiyi hiçe sayan o kısa görüşlü ve kâr odaklı mühendislik kibrinin eleştirisidir.'
+  },
+  {
+    title: 'Kuantum Tünelleme (Duvarlardan Geçmek)',
+    passage: 'Her sabah bizi ısıtan Güneş\'in aslında fizik kurallarına göre hiç yanmaması (parlamaması) gerekirdi! Güneşin içindeki hidrojen atomları pozitif yüklüdür ve tıpkı iki mıknatısın aynı kutbu gibi birbirlerini şiddetle iterler; çarpışıp kaynaşmaları (nükleer füzyon yapmaları) için Güneşin ısısı yeterli değildir. Peki Güneş nasıl yanıyor? Kuantum fiziğinin en sihirli olayı olan "Kuantum Tünelleme" sayesinde. Atomlar, o aşılmaz ve itici "fiziksel duvarı" kaba kuvvetle aşmazlar; bir anda sihir gibi o duvarın içinden (ihtimal hesaplarıyla) "sızıp/tünelleyip" karşı tarafa geçer ve birleşirler! Klasik mantığın (ve Newton fiziğinin) katı tuğlalarla ördüğü o "kesin, aşılamaz duvarlar"; Kuantum dünyasında sadece istatistiksel birer hayalettir. Hayat veren ışığımız, evrenin o kuralları çiğneyen, duvarların içinden süzülen isyankâr (ve ihtimaller dolu) doğasından doğar.',
+    questionStem: 'Kuantum Tünelleme fenomeninin Güneş\'teki işlevi, klasik fizik (ve algımız) karşısında neyi sembolize eder?',
+    options: [
+      'Güneşin sıcaklığının her yıl giderek azalacağını',
+      'Aşılamaz (ve kesin) sandığımız fiziksel duvarların ve katı kuralların; aslında kuantum düzeyinde tamamen geçirgen, esnek ve kuralları (imkânsızlığı) aşan olasılıklarla dolu birer illüzyon olduğunu',
+      'Hidrojen atomlarının sadece soğuk ortamlarda çarpışabildiğini',
+      'Güneş sistemindeki gezegenlerin birbirini iterek uzaklaştığını'
+    ],
+    correct: 1,
+    explanation: 'Güneşteki atomların yetersiz ısıya rağmen duvarlardan sızarak (tünelleyerek) kaynaşması; evrendeki o "kesin/aşılamaz" sandığımız duvarların aslında esnek, geçirgen ve olasılıklara dayalı bir illüzyon olduğunu sembolize eder.'
+  },
+  {
+    title: 'Bağırsak Mikrobiyotası (Kuklacı Bakteriler)',
+    passage: 'İnsanoğlu "Ben" dediğinde, her zaman kafatasının içindeki o gururlu beynini (özgür iradesini) işaret eder. Oysa modern tıp, varoluşsal kibrimizi midemize indirilen sert bir yumrukla devirdi. Bağırsaklarımızda yaşayan trilyonlarca bakteri (Mikrobiyota), sadece yediğimiz yemekleri sindirmekle kalmıyor; beynimize "Vagus siniri" aracılığıyla sürekli mesaj (emir) gönderiyor! Depresyonumuz, kaygılarımız, kimden hoşlanacağımız, neye öfkelenip hangi yemeği (çikolatayı) aşereceğimiz aslında "bize" değil; bağırsaklarımızda hayatta kalmaya çalışan o mikroskobik bakteri ordularının salgıladığı kimyasallara bağlı. "İkinci Beyin" adı verilen bu keşif; insanın o "tek, özgür ve bağımsız ruh (benlik)" illüzyonunu parçalar. Bizler, direksiyonda tek başımıza oturduğumuz bir araba değiliz; trilyonlarca mikroskobik (ve yabancı) yolcunun oylarıyla anbean yönlendirilen (hacklenen) devasa, organik birer otobüsüz.',
+    questionStem: 'Bağırsak Mikrobiyotası ("İkinci Beyin") araştırmaları, "insan iradesi ve benliği" hakkında nasıl bir sarsıcı gerçek (aydınlanma) sunmaktadır?',
+    options: [
+      'Mide hastalıklarının sadece genetik faktörlere dayandığını',
+      'İnsanın hislerinin, seçimlerinin ve ruh halinin tamamen "kendi özgür bilincinin" eseri (tekil benlik) olduğu inancını yıkarak; aslında içimizde yaşayan trilyonlarca yabancı bakterinin (mikroskobik ordunun) bizi anbean yönlendirdiği (hacklediği) birleşik bir kurgu/organizma olduğumuzu',
+      'Beyin ile mide arasında hiçbir fiziksel sinir bağlantısı bulunmadığını',
+      'Sağlıklı beslenmenin sadece fiziksel gücü artırıp psikolojiye etki etmediğini'
+    ],
+    correct: 1,
+    explanation: 'Depresyon ve kararlarımızın midemizdeki bakterilerce yönlendirilmesi; "tek/özgür benlik" kibrini yıkıp, trilyonlarca bakterinin kontrol ettiği birleşik (ve hacklenebilir) bir organizma olduğumuzu kanıtlar.'
+  },
+  {
+    title: 'Aestivation Hipotezi (Uyuyan Tanrılar)',
+    passage: 'Fermi Paradoksu\'na ("Uzaylılar nerede?") Oxford\'lu fütüristlerden gelen "Aestivation (Yaz Uykusu) Hipotezi" zihinleri dondurur. Bu teoriye göre, evrendeki üstün uzaylı medeniyetler yok olmamıştır veya bizden saklanmıyordur. Onlar, her şeyi öğrenmiş ve işlemci kapasitelerini zirveye taşımış makineleşmiş (dijital) zihinlerdir. Ancak evren şu an bilgisayar işlemleri yapmak için "çok sıcaktır"; termodinamik yasalara göre, sıcaklık yüksekken işlem yapmak enerji israfıdır. Bu yüzden o devasa (tanrısal) zekâlar, evrenin trilyonlarca yıl sonra soğuyarak (Büyük Donma) o buz gibi "mükemmel işlemci verimliliğine" ulaşmasını beklemek için topluca "Kış Uykusuna (Aestivation)" yattılar! Gökyüzünün sessizliği kimsenin olmamasından değil; bizim gibi gürültücü (ve aceleci) böceklerin anlayamayacağı kadar devasa, korkunç ve kâinattaki sıcaklığın düşmesini bekleyecek kadar sonsuz (ve buz gibi) bir "sabır" uykusuna yattıklarındandır.',
+    questionStem: 'Aestivation (Yaz Uykusu) Hipotezi, gelişmiş uzaylı medeniyetlerin sessizliği (Fermi Paradoksu) konusunda nasıl bir felsefi ve teknolojik gerekçe sunar?',
+    options: [
+      'Uzaylıların dünyaya saldırıp yeryüzünü fethetmek için gizlice silah ürettikleri teorisini',
+      'Evrenin şu an teknolojik/bilgisayar işlemleri yapmak için çok "sıcak (verimsiz)" olduğunu, o yüzden o devasa (dijital) zekâların enerji israf etmemek adına, evrenin tamamen soğuyacağı o karanlık çağı "sonsuz bir sabır (uyku) ile beklediklerini"',
+      'Güneş patlamalarının uzaylıların iletişim antenlerini kalıcı olarak erittiğini',
+      'İnsanoğlunun gönderdiği sinyallerin uzaylılar tarafından düşmanca algılandığını'
+    ],
+    correct: 1,
+    explanation: 'Gelişmiş dijital medeniyetlerin, termodinamik olarak (işlemci verimi için) evrenin soğumasını bekleyerek "kış uykusuna (aestivation)" yattıkları; kâinattaki o devasa sabrı ve verimlilik gerekçesini sunar.'
+  },
+  {
+    title: 'Miyake Olayları (Ağaçlardaki Kozmik Kıyamet)',
+    passage: 'Fizikçi Fusa Miyake, dünyadaki en eski ağaçların gövdelerindeki yaş halkalarını (radyokarbon oranlarını) incelerken kan donduran bir gizemi açığa çıkardı. MS 774 ve 993 yıllarına ait ağaç halkalarında, karbon-14 oranında akılalmaz ve ani (felaket düzeyinde) devasa bir sıçrama vardı. Uzaydan dünyaya öylesine korkunç, açıklanamayan bir kozmik radyasyon patlaması vurmuştu ki; ağaçların hücreleri o radyasyonu adeta çığlık atarak (kalıcı bir yara gibi) kendi gövdelerine kaydetmişlerdi. "Miyake Olayları" adı verilen bu güneş veya kozmik fırtınalar, o dönemde insanoğlu (teknolojisi olmadığı için) fark etmemişti. Ancak aynı kozmik patlama bugün yaşansa, saniyeler içinde dünyadaki tüm uyduları, interneti ve güç ağlarını küle çevirir. Kütüphaneler yanar, diskler çöker; evrenin o korkunç yıkımının (ve tarihinin) en güvenilir ve değişmez kara kutusu, yine sadece ormandaki o sessiz, dilsiz ağaçların gövdeleri (halkaları) olur.',
+    questionStem: 'Miyake Olayları\'nın (Ağaç halkalarındaki radyasyon izlerinin) keşfi, doğa ile insanlık tarihi (kayıtları) arasında nasıl bir ironiyi göz önüne serer?',
+    options: [
+      'Ağaçların uzaydan gelen radyasyondan faydalanarak daha hızlı büyüdüğünü',
+      'Eski çağlarda insanların yazıyı icat etmediği için güneş tutulmalarını kaydedemediğini',
+      'İnsanın kendi ürettiği dijital ve teknolojik kayıtların saniyeler içinde yok olabilecek kadar kırılgan olduğu bir evrende; o en ilkel, sessiz ve dilsiz ağaç gövdelerinin (halkalarının) aslında evrenin felaketlerini kaydeden en kalıcı ve sarsılmaz "kozmik kara kutular" olduğu ironisini',
+      'Radyasyonun zamanla ağaçların karbon yapısını değiştirerek onları kömüre dönüştürdüğünü'
+    ],
+    correct: 2,
+    explanation: 'Dijital (insan yapımı) her şeyin silinebileceği radyasyon fırtınalarının binlerce yıl ağaç halkalarında bozulmadan saklanması; doğanın (ağaçların) insanın kibrine karşı en kusursuz ve kalıcı "kara kutu" olduğu ironisini sergiler.'
+  },
+  {
+    title: 'Perseus Karadeliğinin Sesi (Evrenin Senfonisi)',
+    passage: 'Hepimiz "Uzayda ses yayılmaz, orası mutlak bir sessizliktir" diye öğrenmişizdir. Ancak 2003 yılında Chandra Uzay Teleskobu, Perseus galaksi kümesinin merkezindeki devasa bir karadeliği dinlediğinde bu ezberi bozdu. Karadelik o kadar büyük ve etrafındaki sıcak gaz kütlesi o kadar yoğundu ki, karadeliğin püskürttüğü enerji bu gaz denizinde kelimenin tam anlamıyla "ses dalgaları" (basınç dalgalanmaları) yaratıyordu! Ancak bu sesi bir insanın duyması imkânsızdı. O ses, piyanonun ortasındaki Do notasının tam 57 oktav altında (evrenin en pes, en karanlık notası olan) bir Si-bemoldü. Bu ses, milyonlarca yıldır o devasa gaz denizinin içinde yankılanıyordu. Kâinat, sağır edici ve soğuk bir mezarlık değil; sadece bizim kırılgan insan kulaklarımızın duyamayacağı (frekansını aşan) kadar görkemli, karanlık ve devasa enstrümanlarla durmaksızın çalınan korkutucu bir senfonidir.',
+    questionStem: 'Perseus Karadeliği\'nden yayılan ses dalgalarının keşfi, uzay hakkındaki hangi popüler ve bilimsel yanılgıyı yıkmıştır?',
+    options: [
+      'Karadeliklerin sadece ışığı değil, zamanı da tamamen yutarak dondurduğu inancını',
+      'Uzayın (ve evrenin) tamamen ölü, sessiz ve mutlak bir boşluk olduğu yönündeki dogmayı yıkarak; uygun gaz/madde ortamlarında evrenin, insan kulağının (frekans sınırının) duyamayacağı kadar derin ve devasa notalar çalan (titreşen) bir senfoni (orkestra) olduğunu',
+      'Müzik aletlerinin notalarının aslında yıldızların hareketlerine göre belirlendiğini',
+      'Uzay boşluğunda nefes alabilen bakteri türlerinin sesten enerji ürettiğini'
+    ],
+    correct: 1,
+    explanation: 'Uzayda ses yoktur (mutlak sessizlik) inancını yıkarak; yoğun gaz ortamında karadeliğin devasa ses dalgaları (57 oktav aşağıda) yaydığı ve kâinatın insanın duyamayacağı kadar derin bir senfoni olduğu kanıtlanmıştır.'
+  },
+  {
+    title: 'Örümcek Ağlarının Zekâsı (Genişletilmiş Zihin)',
+    passage: 'İnsanoğlu zekâyı sadece kafatasının içindeki beyinde (nöronlarda) arar. Oysa ormanlarda örümceklerin kurduğu ağlar, sadece pasif bir sinek tuzağı veya yapışkan bir iplik yumağı değildir. Bilim insanları örümcek ağlarını incelediğinde tüyler ürpertici bir gerçek buldu: Örümcekler, ağın iplerinin gerginliğini tıpkı bir gitarın telleri gibi milimetrik olarak akort etmektedir. Ağdaki ufak bir titreşim (rüzgâr mı, bir sinek mi, yoksa tehlikeli bir eşekarısı mı) örümceğin ayaklarına şifreli bir frekans olarak iletilir. Örümcek ağı, aslında canlının vücudunun (duyularının ve kulak zarının) dışarıya taşmış halidir! Felsefede "Genişletilmiş Zihin" (Extended Mind) olarak bilinen bu keşif, zekânın ve bilincin sadece beynimizin içine hapsolmuş bir et parçası olmadığını; çevremizle, aletlerimizle ve ördüğümüz ağlarla bütünleşerek dış dünyaya doğru fiziksel olarak uzanan (akışkan) bir ekosistem olduğunu kanıtlar.',
+    questionStem: 'Örümcek ağlarının (akort edilmiş titreşimlerinin) bilimsel incelenmesi, felsefedeki "Genişletilmiş Zihin" kavramı üzerinden neyi savunmaktadır?',
+    options: [
+      'Örümceklerin diğer böceklere oranla çok daha uzun süre hayatta kalmasını',
+      'Zekânın (ve algının) sadece kafatasının içindeki (beyne) hapsolmuş bir merkez olmadığını; canlının ürettiği aletlerle (ağlarla) bütünleşerek fiziksel sınırların ötesine (dış dünyaya) uzanan, akışkan ve dışsal bir yapı olduğunu',
+      'Ağların sadece ipekten yapıldığı için doğada çabucak çözünüp yok olduğunu',
+      'Müzik enstrümanlarının ilk kez böceklerin seslerinden ilham alınarak yapıldığını'
+    ],
+    correct: 1,
+    explanation: 'Örümceğin ağı gitar teli (kulak/sensör) gibi kullanması; zekânın beyne hapis kalmadığını, aletlerle/çevreyle bütünleşerek beden sınırlarının ötesine (Genişletilmiş Zihin) sızdığını savunur.'
+  },
+  {
+    title: 'CAPTCHA İronisi (Makineleri Eğiten Köleler)',
+    passage: 'Herhangi bir internet sitesine girerken "Ben robot değilim" kutucuğunu işaretler, ardından trafik lambalarını, yaya geçitlerini veya otobüsleri seçerek sisteme insan olduğumuzu kanıtlarız. Buna CAPTCHA denir. Siteme bir bottan veya virüsten korunmak için yapıldığını sanırız. Oysa işin asıl yüzü, kapitalizmin ve teknolojinin en kurnaz (ve sinsi) hırsızlığıdır! Siz o karelerdeki otobüsleri ve yaya geçitlerini seçtiğinizde, aslında kendi kendinize güvenlik sağlamıyorsunuz; siz o saniye Google\'ın, Tesla\'nın ve yapay zekâ şirketlerinin "Otonom (Sürücüsüz) Araçlarını" eğitmek için onlara tamamen "bedava" veri sağlayan (öğreten) dijital birer köleye dönüşüyorsunuz. Modern insanın en büyük ironisi şudur: Makine olmadığımızı kanıtlamak için harcadığımız o saniyelerle, gelecekte bizim yerimizi alacak ve bizi işsiz bırakacak o devasa makinelerin (algoritmaların) beynini kendi ellerimizle, bedavaya inşa ediyoruz.',
+    questionStem: 'CAPTCHA ("Ben robot değilim" testleri) uygulamalarının asıl arka planı, modern teknoloji ve insan ilişkisi hakkında nasıl bir ironiyi (trajediyi) ifşa eder?',
+    options: [
+      'İnternet güvenliğinin artık hiçbir şekilde sağlanamayacağı ve herkesin hacklenebileceği gerçeğini',
+      'İnsanın makine olmadığını kanıtlamaya çalışırken, aslında bilmeden (bedavaya) yapay zekâ algoritmalarını ve otonom araçları eğiten dijital bir köleye dönüştüğünü; kendi yerini alacak sistemi kendi eliyle besleme (sömürülme) ironisini',
+      'İnsanların trafik kurallarını bilgisayar üzerinden daha kolay öğrendiğini',
+      'Gelecekte tüm internetin sadece robotlar tarafından kullanılacağını'
+    ],
+    correct: 1,
+    explanation: 'Robot olmadığımızı ispatlarken otobüs resmi seçip aslında yapay zekânın/otonom araçların beynini bedavaya eğitiyor (kölelik) olmamız; kendi sonumuzu kendi elimizle beslediğimiz sinsi bir ironidir.'
+  },
+  {
+    title: 'Kloroformun İcadı ve Acının Sonu',
+    passage: '1840\'lara kadar ameliyatlar (bacak kesimleri, diş çekimleri) hastalar uyanıkken ve çığlık çığlığa bağırırken (kayışlarla masaya bağlanarak) yapılırdı. Acı çekmek, Kilise tarafından "Tanrı\'nın insana verdiği kutsal ve doğal bir ceza (özellikle kadınlar için doğum sancısı)" olarak kabul edilirdi. Ancak 1847\'de İskoç doktor James Young Simpson, arkadaşlarıyla akşam yemeğinden sonra "Kloroform" gazını şaka amaçlı kokladı ve üçü birden masanın altına sızıp kaldı. Simpson uyandığında tarihin seyrini değiştirecek o silahı bulduğunu anladı: Anestezi! Dini otoriteler, "İnsanın acısını dindirmek Tanrı\'nın iradesine (cezasına) karşı gelmektir!" diyerek onu şeytan ilan etmeye çalıştı. Ta ki Kraliçe Victoria, sekizinci çocuğunu kloroform koklayarak (acısız) doğurana kadar. Kloroformun icadı sadece bir tıp devrimi değildir; bilimin, "insanın acı çekmesini kutsallaştıran" o sadist dogmalara karşı açtığı ve insan bedenini kendi mülkiyetine geri aldığı o en merhametli başkaldırıdır.',
+    questionStem: 'Kloroformun (Anestezinin) icadına dini otoritelerin karşı çıkması, "bilim ve acı" kavramları hakkında hangi felsefi (tarihsel) çatışmayı gösterir?',
+    options: [
+      'Kloroformun insan beyninde kalıcı hasar bırakarak hafızayı yok ettiğini',
+      'Acı çekmenin dinde "kutsal ve zorunlu bir ceza" olarak yüceltilmesine karşı; bilimin insanı o merhametsiz dogmalardan (acıdan) kurtarıp, insan bedeninin mülkiyetini tekrar özgürlüğe kavuşturması (merhametli başkaldırısı) çatışmasını',
+      'Kraliçelerin ve asillerin her zaman yeni tıbbi buluşlardan korktuğunu',
+      'İskoç doktorların tıp bilimini tamamen sihir ve büyülerle yönettiklerini'
+    ],
+    correct: 1,
+    explanation: 'Kilisenin "acı çekmek Tanrı\'nın cezasıdır (kutsaldır)" diyerek kloroformu yasaklamaya çalışmasına karşı bilimin acıyı dindirerek dogmalara (sadist inançlara) başkaldırması (çatışması) vurgulanmıştır.'
+  },
+  {
+    title: 'Karbonmonoksit Paradoksu (Sessiz Katil)',
+    passage: 'Bir odada oksijen bittiğinde ve yerine karbondioksit dolduğunda, insan bedeni anında paniğe kapılır; ciğerleriniz yanar, boğulma hissiyle çırpınır ve kapıya koşarsınız. Çünkü evrim, karbondioksit birikimine karşı o "boğulma alarmını" (panik hissini) genlerimize kusursuzca kodlamıştır. Ancak işin içine, sobalardan veya egzozlardan sızan "Karbonmonoksit" gazı girdiğinde bedenin o muazzam kalkanı (alarmı) anında çöker! Karbonmonoksit kandaki oksijeni bağlayan hemoglobine oksijenden 200 kat daha sıkı yapışır; ancak kokusu, tadı veya bedende yarattığı hiçbir yanma hissi yoktur. Alarm zilleri çalmaz, çırpınma hissi gelmez. Kurban, sanki yorgunmuş da tatlı bir uykuya dalıyormuş gibi hisseder ve huzur içinde (uyuyarak) ölür. Sessiz Katil (Karbonmonoksit), bize hayattaki en büyük tehlikenin; bağıra çağıra (acı vererek) gelen krizler değil, sistemimizin (ve zihnimizin) alarmını çalmadan, uyuşturarak (ve sahte bir huzurla) bizi sarıp sarmalayan o görünmez tehditler olduğunu fısıldar.',
+    questionStem: 'Karbonmonoksit gazının insanı "panik (boğulma) hissi vermeden (uyutarak)" öldürmesi, yazar tarafından psikolojik/toplumsal düzeyde neyin metaforu olarak kullanılmıştır?',
+    options: [
+      'Sobaların ve fosil yakıtların kullanımının çevreyi yavaş yavaş ısıttığı tehlikesinin',
+      'Asıl yıkıcı tehlikelerin (ve felaketlerin); acı veren ve çırpındıran açık uyarılardan ziyade, hiçbir alarm vermeden (bizi uyuşturarak ve sahte bir huzur, tatlı bir uyku hissi vererek) sızan o sinsi, görünmez tehditler olduğunun',
+      'İnsan kanındaki hemoglobin maddesinin yaşlandıkça oksijeni daha az tutmaya başladığının',
+      'Uyku haplarının da tıpkı gaz zehirlenmeleri gibi beyinde hasar yarattığının'
+    ],
+    correct: 1,
+    explanation: 'Alarm zilini çalmayan, acı/çırpınma hissi vermeden uyutarak öldüren gaz; hayattaki asıl büyük tehlikelerin uyuşturucu, sinsi, alarm vermeyen ve sahte bir huzurla (sessizce) gelen tehditler olduğunun metaforudur.'
+  },
+  {
+    title: 'Milankovitch Döngüleri (Dünyanın Kalp Atışı)',
+    passage: 'İnsanoğlu, dünyadaki buzul çağlarının ve iklim değişikliklerinin tamamen yeryüzündeki olaylarla (volkanlarla veya kendi etkisiyle) oluştuğunu sanıyordu. Oysa 1920\'lerde Sırp mühendis Milutin Milankovitch, I. Dünya Savaşı\'nda bir hapishane hücresindeyken kâğıt kalemle o dudak uçuklatan formülü yazdı: "Milankovitch Döngüleri". Dünya\'nın Güneş etrafındaki yörüngesi sabit, kusursuz bir çember değildi; o, tıpkı Jüpiter ve Satürn\'ün yerçekimsel itip kakmalarıyla 100.000 yılda bir ovalleşiyor, ekseni beşik gibi sallanıyor ve uzayda yalpalanıyordu. Bu mikroskobik yalpalamalar, Dünya\'ya vuran güneş ışığını milim milim değiştirerek gezegeni yüz bin yıllık devasa dondurucu buzul çağlarına veya kavurucu sıcaklıklara (kıyametlere) sürüklüyordu. Bizim o üzerinde savaştığımız, sınırlarını çizdiğimiz "sarsılmaz" sandığımız gezegenimiz; aslında güneş sistemindeki o diğer devasa gezegenlerin (Jüpiter\'in) görünmez iplerle oynattığı, evrenin o baş döndürücü ve dilsiz yerçekimi dansına hapsolmuş kırılgan bir oyuncaktır.',
+    questionStem: 'Milankovitch Döngüleri (Dünya\'nın yalpalaması), gezegenimiz ve evren arasındaki ilişkiye dair neyi kanıtlamaktadır?',
+    options: [
+      'Dünya atmosferinin Jüpiter ve Satürn\'den gelen gazlarla beslenerek canlı yaşamını oluşturduğunu',
+      'Dünyanın kendi başına bağımsız ve sabit (kusursuz) bir küre olmadığını; iklimini ve buzul çağlarını bile belirleyen o devasa gücün, güneş sistemindeki diğer gezegenlerin yerçekimsel itip kakmasına (kozmik ve kırılgan bir dansa) bağlı olduğunu',
+      'Milankovitch\'in hapishanedeyken sadece teleskop kullanarak dünyadaki sıcaklık artışını öngörebildiğini',
+      'Gezegenlerin yörüngelerinin gelecekte tamamen düz bir çizgi haline geleceğini'
+    ],
+    correct: 1,
+    explanation: 'Dünyanın Jüpiter/Satürn\'ün çekimiyle yalpalanıp buzul çağına girmesi; dünyamızın bağımsız/sarsılmaz olmadığı, evrenin o görünmez yerçekimi ağına (dansa) hapsolmuş kırılgan bir oyuncak olduğu gerçeğini kanıtlar.'
+  },
+  {
+    title: 'Ölümcül Tembellik: Kivi Kuşları (Uçmayı Unutmak)',
+    passage: 'Yeni Zelanda ormanlarında yaşayan, tavuk boyutlarında, kanatları olmayan tuhaf ve tüylü bir kuş yaşar: Kivi Kuşu (Kiwi). Evrim, her canlıya uçmak gibi mucizevi ve özgürleştirici bir yetenek (kanat) bahşetmek için milyonlarca yıl uğraşmıştır. Ancak Kivi kuşlarının ataları, milyonlarca yıl önce bu adaya geldiklerinde etrafta onları yiyecek hiçbir yılan, kurt veya tilki (yırtıcı) olmadığını fark ettiler. Tehlike yoktu! Sadece yere düşen lezzetli böcekler ve yemişler vardı. Kanat çırpmak enerji (çaba) gerektirirdi. Yırtıcının (tehlikenin) olmadığı bu rehavet (konfor) cennetinde, kiviler uçmaktan vazgeçtiler; o muazzam kanatları binlerce yıl içinde küçüldü, eridi ve görünmez oldu. Ancak 19. yüzyılda adaya gemilerle kediler, köpekler ve fareler (insanlar) gelince, o konforun faturası kesildi. Kivi kuşları uçamadıkları için saniyeler içinde katledildi ve türleri yok olmanın eşiğine geldi. Konfor ve tehlikesizlik, canlının evrimsel yeteneklerini (özgürlüğünü) çürüten en sinsi zehirdir; kullanılmayan kanatlar erir ve o rehavet, eninde sonunda sahibini kediye yem eder.',
+    questionStem: 'Kivi kuşlarının kanatlarını kaybetmesi (uçmayı unutması), evrimsel psikoloji bağlamında neyin metaforudur?',
+    options: [
+      'Yeni Zelanda adasının uçan hayvanlar için çok tehlikeli fırtınalara sahip olduğunun',
+      'Rekabetin, tehlikenin ve zorluğun (meydan okumanın) olmadığı o sonsuz "konfor (rehavet) alanının"; canlıyı güvende tutmak yerine onun en yüce yeteneklerini (kanatlarını) tembelleştirip çürütmesi ve yeni bir tehlike anında onu tamamen savunmasız bırakması (yok etmesi) gerçeğinin',
+      'Kuşların aslında uçmaktan her zaman nefret ettiği ve sadece yerde yaşamayı tercih ettiği inancının',
+      'İnsanların adaya evcil hayvanlarını getirmesinin ekosistemi zenginleştirdiği yanılgısının'
+    ],
+    correct: 1,
+    explanation: 'Tehlike olmadığı için kanat kullanmayı bırakıp uçmayı unutan kuşların (rehavetin), dışarıdan kedi gelince anında av olması; tehlikesiz "konfor alanının" aslında yetenekleri çürüten ve canlıyı savunmasız bırakan sinsi bir zehir olduğunu gösterir.'
+  },
+  {
+    title: 'Kutup Girdabı (Polar Vortex) ve Kaosun Zindanı',
+    passage: 'Gezegenimizin en kuzey noktasında (Kuzey Kutbu\'nda), yeryüzünden on binlerce metre yukarıda dönüp duran devasa, dondurucu ve gözle görülmeyen bir hava kütlesi vardır: Kutup Girdabı (Polar Vortex). Bu devasa girdap (rüzgâr duvarı), dünyanın geri kalanını o eksi 60 derecelik ölümcül soğuktan koruyan, o soğuğu sadece kendi merkezinde hapseden kusursuz bir kalkan (hapishane) görevi görür. Ancak küresel ısınma nedeniyle kutuplardaki buzullar eriyip ocağın altı ısındıkça, o rüzgâr duvarı zayıflar, kırılır ve çözülür! İşte o an, kutup girdabının (hapishanenin) kapıları açılır ve o dondurucu cehennem (soğuk hava dalgaları) Amerika ve Avrupa şehirlerinin üzerine bir şok dalgası gibi çöker. İnsanoğlunun sanayi (sıcaklık) ile kurduğu kibirli medeniyet; doğanın o soğuğu hapseden görünmez kalkanını (girdabını) kırdığı için, kendi sonunu (ironik bir şekilde) dondurucu bir felakete kendi elleriyle davet etmektedir.',
+    questionStem: 'Kutup Girdabı\'nın (Polar Vortex) zayıflayıp soğukları dünyaya salması olgusu, çevre ve iklim krizindeki hangi acı (ironik) dinamiği özetler?',
+    options: [
+      'Soğuk kışların insanlarda doğal bir bağışıklık sağlayarak virüsleri öldürdüğünü',
+      'İklimi ısıtan (küresel ısınmaya yol açan) insan eliyle yaratılmış o sanayi/karbon kibrinin, kutuplardaki dengeyi (kalkanı) yıkarak, paradoksal bir şekilde insanlığı "dondurucu ve ölümcül" bir kış felaketiyle yüz yüze bırakması ironisini',
+      'Rüzgâr enerjisinin sanıldığından çok daha tehlikeli ve kontrol edilemez olduğunu',
+      'Kuzey Kutbundaki hayvan türlerinin ısınan havalarla birlikte daha güneye göç etmek zorunda kaldığını'
+    ],
+    correct: 1,
+    explanation: 'Dünyayı "ısıttığımız" için (küresel ısınma/kibir) o soğuğu tutan rüzgâr duvarının (kalkanın) kırılması ve üstümüze "dondurucu" bir cehennemin çökmesi (ısıtırken donmak) olayın asıl ironik dinamiğidir.'
+  }
+];
+
+export const bilimParagrafSorulari38: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_38.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_38[idx];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-bilim38-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
 // paragrafTests.ts dosyasının hata vermemesi için iki listeyi birleştirip eski adıyla dışa aktarıyoruz:
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari,
@@ -10073,7 +10350,8 @@ export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...felsefeParagrafSorulari34,
   ...felsefeParagrafSorulari35,
   ...bilimParagrafSorulari36,
-  ...bilimParagrafSorulari37
+  ...bilimParagrafSorulari37,
+  ...bilimParagrafSorulari38
   
   
   
