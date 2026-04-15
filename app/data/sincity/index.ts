@@ -10312,7 +10312,7 @@ export const bilimParagrafSorulari38: BilimParagrafQuestion[] = Array.from({ len
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
-const PARAGRAPH_THEMES_38 = [
+const PARAGRAPH_THEMES_39 = [
   {
     title: 'Ayna Kutusu Terapisi (Fantom Acıyı Hacklemek)',
     passage: 'Bir kaza sonucu kolunu kaybeden hastalar, yıllar geçse bile o "olmayan kollarında" çıldırtıcı bir acı (Fantom Ağrısı) çekerler. Kesik olan uç sanki bir mengenede sıkışmış gibidir. Nörobilimci V.S. Ramachandran, bu insanlara ağrı kesici vermek yerine dâhiyane ve felsefi bir hile yaptı: "Ayna Kutusu". Hastanın sağlam kolunu bir kutuya soktu ve ortadaki aynaya bakmasını istedi. Hasta aynaya baktığında, sağlam kolunun yansımasını sanki "kesilen koluymuş" gibi gördü! Ramachandran hastaya "Şimdi elini açıp rahatlat" dediğinde, beyni aynadaki (sahte) elin açıldığını gördü ve yıllardır o olmayan koldan gelen korkunç acı saniyeler içinde buharlaşıp bitti! Bu deney, insan beyninin ne kadar zeki ama aynı zamanda ne kadar kolay kandırılabilir olduğunu kanıtlar. Acı, fiziksel bir yara değil; beynin uydurduğu nörolojik bir kurgudur ve beyni sadece yine onun dilinden konuşan "görsel bir yalanla (illüzyonla)" iyileştirebilirsiniz.',
@@ -10575,12 +10575,12 @@ const PARAGRAPH_THEMES_38 = [
   }
 ];
 
-export const bilimParagrafSorulari38: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_38.length }, (_, idx) => {
-  const theme = PARAGRAPH_THEMES_38[idx];
+export const bilimParagrafSorulari39: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_39.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_39[idx];
   const qNo = idx + 1;
 
   return {
-    id: `turkce-bilim38-p-${qNo}`,
+    id: `turkce-bilim39-p-${qNo}`,
     subject: 'turkce',
     term: 2,
     prompt: `${theme.passage}\n\n${theme.questionStem}`,
@@ -10589,7 +10589,7 @@ export const bilimParagrafSorulari38: BilimParagrafQuestion[] = Array.from({ len
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
-const PARAGRAPH_THEMES_39 = [
+const PARAGRAPH_THEMES_40 = [
   {
     title: 'Vajont Barajı Faciası (Mühendisliğin İntiharı)',
     passage: '1960\'larda İtalyan mühendisler, Avrupa\'nın en yüksek barajını (Vajont Barajı\'nı) inşa etmek için Alp dağlarındaki bir vadiyi seçtiler. Ancak barajın hemen yanındaki dağın adı yerel dilde "Monte Toc" (Yürüyen Dağ) idi ve bölge halkı o dağın çürük olduğunu yüzyıllardır biliyordu. Mühendisler, modern betonlarına ve hesaplamalarına öylesine körü körüne güvendiler ki, dağın kayma sinyallerini (uyarılarını) görmezden geldiler. 9 Ekim 1963 gecesi dağın devasa bir parçası kırılarak baraj gölüne düştü. Baraj yıkılmadı! Ancak düşen devasa kaya, suyu 250 metre havaya fırlatarak (mega-tsunami yaratarak) barajın üzerinden aşırdı ve aşağıdaki Longarone kasabasını saniyeler içinde haritadan sildi; 2000 kişi uykusunda boğuldu. Vajont faciası bir doğa olayı değildir; o, kağıt üzerindeki formülleri doğanın milyarlarca yıllık tecrübesinden üstün gören o "modern mühendislik kibrinin" taştan ve sudan bir mezar taşıdır.',
@@ -10852,12 +10852,12 @@ const PARAGRAPH_THEMES_39 = [
   }
 ];
 
-export const bilimParagrafSorulari39: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_39.length }, (_, idx) => {
-  const theme = PARAGRAPH_THEMES_39[idx];
+export const bilimParagrafSorulari40: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_40.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_40[idx];
   const qNo = idx + 1;
 
   return {
-    id: `turkce-bilim39-p-${qNo}`,
+    id: `turkce-bilim40-p-${qNo}`,
     subject: 'turkce',
     term: 2,
     prompt: `${theme.passage}\n\n${theme.questionStem}`,
@@ -10866,7 +10866,7 @@ export const bilimParagrafSorulari39: BilimParagrafQuestion[] = Array.from({ len
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
-const PARAGRAPH_THEMES_40 = [
+const PARAGRAPH_THEMES_41 = [
   {
     title: 'Omelas\'ı Terk Edenler (Faydacılığın Kâbusu)',
     passage: 'Ursula K. Le Guin\'in efsanevi öyküsü "Omelas\'ı Terk Edenler"de, hastalık, savaş ve kederin olmadığı, herkesin sonsuz bir mutluluk ve refah içinde yaşadığı kusursuz bir ütopya anlatılır. Ancak bu cennetin kan donduran bir kuralı vardır: Tüm şehrin bu mutlak mutluluğunun devam edebilmesi için, karanlık bir bodrum katında, pislik içinde, tek bir masum çocuğun sonsuza dek işkence görmesi ve aç bırakılması şarttır! O çocuğu kurtarmak, tüm şehrin cennetini yıkmak demektir. Şehir halkı bu gerçeği bilir; kimi ağlar, kimi kendini kandırarak kabullenir. Ancak bazıları bu ahlaksız mutluluğa dayanamayıp şehri (Omelas\'ı) sessizce terk eder ve bilinmeze doğru yürürler. Bu hikâye, "Çoğunluğun iyiliği için azınlığı feda etmek mubahtır" diyen o soğuk Faydacılık (Utilitarianism) felsefesinin suratına atılmış en sert tokattır. Tek bir masumun kanı (ve acısı) üzerine inşa edilen hiçbir refah, ahlaki bir cennet değil; sadece süslenmiş bir cehennemdir.',
@@ -11129,12 +11129,12 @@ const PARAGRAPH_THEMES_40 = [
   }
 ];
 
-export const bilimParagrafSorulari40: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_40.length }, (_, idx) => {
-  const theme = PARAGRAPH_THEMES_40[idx];
+export const bilimParagrafSorulari41: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_41.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_41[idx];
   const qNo = idx + 1;
 
   return {
-    id: `turkce-bilim40-p-${qNo}`,
+    id: `turkce-bilim41-p-${qNo}`,
     subject: 'turkce',
     term: 2,
     prompt: `${theme.passage}\n\n${theme.questionStem}`,
@@ -11184,7 +11184,8 @@ export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...bilimParagrafSorulari37,
   ...bilimParagrafSorulari38,
   ...bilimParagrafSorulari39,
-  ...bilimParagrafSorulari40
+  ...bilimParagrafSorulari40,
+  ...bilimParagrafSorulari41
   
   
   
