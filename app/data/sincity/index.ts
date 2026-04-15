@@ -11974,6 +11974,283 @@ export const bilimParagrafSorulari44: BilimParagrafQuestion[] = Array.from({ len
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
+const PARAGRAPH_THEMES_45 = [
+  {
+    title: 'Zeki Hans (İnsanın Kibirli İllüzyonu)',
+    passage: '19. yüzyılın sonlarında Almanya\'da "Zeki Hans" (Clever Hans) adında bir at, tüm Avrupa\'yı şoka soktu. Bu at toplama, çıkarma, kesirler yapıyor; cevabı toynağını yere vurarak veriyordu! Sadece sahibinin değil, yabancıların sorduğu soruları bile biliyordu. Bilim insanları atın gerçek bir dâhi olduğuna (hayvanların insan gibi matematik bildiğine) yemin ettiler. Ancak psikolog Oskar Pfungst bu "mucizeyi" çok daha dondurucu bir bilimsel gerçekle yıktı: Atın matematik bildiği falan yoktu! Soru soran kişi (farkında bile olmadan) at doğru sayıya yaklaştığında nefesini tutuyor, kaşını kaldırıyor veya duruşunu (mikro mimiklerini) değiştiriyordu. At ise sayıları değil; "insanların yüzündeki o saniyelik bedensel gerilimi (beklentiyi)" okuyacak kadar kusursuz bir evrimsel gözlemciydi (ödül bekliyordu). Zeki Hans Etkisi; insanın, doğadaki canlılara "kendi zekâsını (matematiğini/insani özelliklerini) yansıtma" kibrinin; hayvanların o dilsiz ama kusursuz beden okuma yeteneği karşısında nasıl komik bir illüzyona dönüştüğünün efsanevi kanıtıdır.',
+    questionStem: 'Zeki Hans (Clever Hans) vakası, "hayvan zekâsı ve insan algısı" hakkında hangi bilimsel yanılgıyı ifşa etmiştir?',
+    options: [
+      'Atların matematiksel işlemleri yapabilmek için görsel yeteneklerinin yetersiz kaldığı gerçeğini',
+      'İnsanoğlunun, hayvanların kendi vücut dillerindeki (bilinçdışı) mikro sinyalleri okuma yeteneğini "matematiksel bir deha (insansı bir zekâ)" sanarak; doğayı kendi kibriyle (antropomorfizm) yanlış yorumlama yanılgısını',
+      'Hayvan sirklerinin aslında gizli kamera teknolojileriyle insanları kandırdığı gerçeğini',
+      '19. yüzyıl psikologlarının hayvanların zekâ seviyesini her zaman kasten düşük gösterdiklerini'
+    ],
+    correct: 1,
+    explanation: 'Atın matematik değil, insanın yüzündeki mikro mimikleri (gerilimi) okuması; insanın doğaya (hayvana) kendi insani zekâsını atfetme (antropomorfizm) kibrini/yanılgısını ifşa eder.'
+  },
+  {
+    title: 'Kobra Etkisi (Ters Tepen Niyetler)',
+    passage: 'İngiliz İmparatorluğu, Hindistan\'ı sömürgeleştirdiği dönemde Delhi şehrindeki zehirli kobra yılanlarının sayısından çok rahatsız oldu. Sorunu çözmek için dâhiyane (ve kapitalist) bir fikir buldular: "Ölü bir kobra getiren herkese para ödülü (ödeneği) verilecek!" Başlangıçta her şey harikaydı, binlerce ölü yılan getirildi. Ancak bir süre sonra İngiliz yetkililer korkunç (ve ironik) bir şeyi fark ettiler. Yerel halk, bedavaya para kazanmak için evlerinin bodrumlarında "kobra çiftlikleri" kurmuş, kasten yılan üretip öldürerek İngilizlere satmaya başlamıştı! İngilizler bunu öğrenince ödül programını derhal iptal etti. Ödül bitince yılanların hiçbir değeri kalmadı ve halk ürettiği on binlerce kobrayı sokaklara (doğaya) saldı! "Kobra Etkisi" olarak bilinen bu sosyolojik yasa; sorunları çözmek için tasarlanan iyi niyetli (fakat insan doğasının kurnazlığını hesaplamayan) müdahalelerin, o sorunu eskisinden çok daha yıkıcı, devasa ve içinden çıkılmaz bir kâbusa çevirdiği o ironik bürokrasi çöküşüdür.',
+    questionStem: 'Sosyoloji ve ekonomide "Kobra Etkisi" kavramı, yönetimlerin aldığı kararlar (politikalar) hakkında neyi sembolize eder?',
+    options: [
+      'Devletlerin hayvan hakları konusunda her zaman çok geç önlem aldığını',
+      'Kötü niyetli yasaların her zaman yoksul halk tabakalarını daha çok ezdiğini',
+      'Bir sorunu çözmek için alınan dışarıdan (teşvik edici) müdahalelerin; insan doğasının kurnazlığını (bencilliğini) hesaba katmadığında, sorunu çözmek bir yana, eskisinden çok daha şiddetli (ve ironik) bir felakete dönüştürmesini',
+      'Tarım toplumlarının vahşi hayvanlardan korkarak şehirlere göç etme hızını'
+    ],
+    correct: 2,
+    explanation: 'Yılanları bitirmek için konan para ödülünün (halkı kurnazca yılan üretmeye iterek) yılan sayısını eskisinden de çok artırması; iyi niyetli çözümlerin insan doğasını hesaba katmadığında ters teperek felaket yaratmasını (Kobra Etkisi) sembolize eder.'
+  },
+  {
+    title: 'Semmelweis Refleksi (Gerçeğin Tımarhanesi)',
+    passage: '1847 yılında Avusturya\'daki bir hastanede yeni doğum yapan kadınlar "Lohusa Humması"ndan sinek gibi ölüyordu. Doktor Ignaz Semmelweis, kan dondurucu bir gerçeği fark etti: Doktorlar kadavralarda (ölülerde) otopsi yaptıktan sonra, "ellerini hiç yıkamadan" doğrudan hamile kadınların doğumuna giriyorlardı! Semmelweis doktorlara "Ellerinizi klorlu suyla yıkayın!" diye yalvardı ve bunu yapanların hastaları ölmemeye başladı. Ancak dönemin o kibirli, elit ve asil doktorları bu fikirden iğrendiler. "Bir beyefendinin elleri asla hastalık taşımaz!" dediler ve Semmelweis\'in verilerini çöpe atıp onunla alay ettiler. Dışlanan, işinden kovulan ve çıldıran Semmelweis, sonunda zorla bir akıl hastanesine (tımarhaneye) kapatıldı ve orada gardiyanlardan yediği dayak yüzünden (enfeksiyon kaparak) öldü. "Semmelweis Refleksi", bilim tarihinin en kara lekesidir: Yerleşik sistemin (ve akademik kibrin), kendi mevcut inançlarına (ve konfor alanına) ters düşen bir "hakikati", ne kadar somut ve hayat kurtarıcı olursa olsun anında reddetme, dışlama ve onu çarmıha germe (tımarhaneye atma) eğilimidir.',
+    questionStem: 'Tıp tarihindeki "Semmelweis Refleksi", bilim camiasının (veya otoritenin) yeni fikirlere karşı sergilediği hangi "hastalıklı kibri" tanımlar?',
+    options: [
+      'Doktorların cerrahi eldiven kullanımını teknolojik yetersizlik nedeniyle reddetmesini',
+      'Kurumsallaşmış otoritenin (ve kibrin), kendi mevcut dogmalarına ters düşen yeni (ve devrimsel) bir hakikati, somut kanıtlarına rağmen "görmezden gelme, reddetme ve o fikrin sahibini deli ilan ederek yok etme" refleksini',
+      '19. yüzyılda hastanelerin sadece zengin soylulara hizmet veren kapalı kurumlar olmasını',
+      'Lohusa hummasının sadece genetik bir yatkınlıktan kaynaklandığı yönündeki bilimsel tezi'
+    ],
+    correct: 1,
+    explanation: 'Doktorların "elleri yıkayın" diyen ve hayat kurtaran adamı kibre kapılıp (sırf ezberleri bozuldu diye) tımarhaneye atması; otoritenin yeni ve doğru bilgiye karşı gösterdiği o dogmatik, reddedici ve yok edici kibri (Semmelweis Refleksini) tanımlar.'
+  },
+  {
+    title: 'Piltdown Adamı (Görmek İstenen Yalan)',
+    passage: '1912 yılında İngiltere\'de (Piltdown köyünde) evrim zincirinin o çok aranan kayıp halkası bulundu! Kafatası bir insana, çenesi ise bir maymuna ait olan bu fosil, İngiliz bilim dünyasını sevince boğdu. Sonunda "ilk akıllı insanın bir İngiliz olduğu" kanıtlanmıştı! Piltdown Adamı, tam 40 yıl boyunca müzelerin başköşesinde sergilendi, üzerine 500\'den fazla bilimsel makale ve kitap yazıldı. Ta ki 1953\'te yeni teknolojilerle incelenene kadar. Sonuçlar tıp (ve akademik) dünyasını felç etti: Bu fosil bir evrim harikası değil, insan kafatasına bir "Orangutan çenesi"nin kimyasallarla eskitilip eğelenerek zorla tutturulduğu ucuz bir şakaydı (sahtekârlıktı)! Peki dünyanın en zeki bilim insanları bu ucuz sahtekârlığa 40 yıl boyunca nasıl körü körüne inandı? Çünkü bu fosil, İngilizlerin "Evrimin zirvesi biziz" şeklindeki narsisistik (ve milliyetçi) fantezilerini doğruluyordu. İnsanoğlu (hatta bilim bile); kendi inanmak istediği yalanı (önyargıyı) destekleyen sahte bir kanıt gördüğünde, aklın tüm şüphe mekanizmalarını kapatarak ona tapınmaya hazır (ve dünden razı) bir canlıdır.',
+    questionStem: 'Piltdown Adamı (Kayıp Halka Sahtekârlığı) skandalı, bilim insanlarının objektiflik algısındaki hangi psikolojik zaafı kanıtlar?',
+    options: [
+      'Orangutanların kemik yapısının insan kemiklerinden çok daha hızlı fosilleştiği gerçeğini',
+      'İnsanların (uzmanlar dahi olsa), kendi "milli, kültürel veya kişisel önyargılarını (kibirlerini)" doğrulayan sahte bir kanıtla karşılaştıklarında; şüphe mekanizmasını tamamen kapatıp o yalana körü körüne inanma (Onaylama Önyargısı) zaafını',
+      'Arkeologların kazı yaparken kemikleri asitlerle yanlışlıkla erittiği teknik hataları',
+      'İngiliz müzelerinin aslında sadece sahte eserlerden oluşan birer sanat galerisi olduğu gerçeğini'
+    ],
+    correct: 1,
+    explanation: 'Bilim insanlarının 40 yıl boyunca bir orangutan çenesine (sırf İngiliz kibrini doğruladığı için) inanması; insanın "duymak/inanmak istediği" şeyi gördüğünde şüpheyi kapatıp sahtekârlığa körü körüne inanma zaafını (Onaylama Önyargısını) kanıtlar.'
+  },
+  {
+    title: 'Rosenhan Deneyi (Tımarhanedeki Sağlamlar)',
+    passage: '1973 yılında Stanford Üniversitesi\'nden psikolog David Rosenhan, psikiyatrinin ne kadar güvenilir olduğunu ölçmek için korkutucu bir deney yaptı. Kendisi dâhil 8 tamamen "sağlıklı ve akıllı" arkadaşı, Amerika\'nın farklı akıl hastanelerine gidip "Kafamda \'güm, boşluk, thud\' gibi sesler duyuyorum" diyerek yalan söylediler. Hastaneye (tımarhaneye) kabul edildikten hemen sonra, 8 kişi de anında normal davranmaya başladı, ses duyduklarını inkâr ettiler ve kibarca çıkmak istediklerini söylediler. Sonuç mu? Doktorlar ve hemşireler onların iyileştiğine veya sağlıklı olduğuna ASLA inanmadı! Normal davranışları (not tutmaları veya sessizce oturmaları) bile doktorlar tarafından "şizofrenik ve paranoid" belirtiler olarak hastane dosyasına yazıldı! Normal olduklarını sadece "diğer gerçek akıl hastaları" anladı ("Siz deli değilsiniz, gazetecisiniz" dediler). Bu deney psikiyatriyi yerle bir etti: Otorite (doktor) size bir kez "Deli (Hasta)" etiketini yapıştırdığında; artık yapacağınız en akıllıca, en normal ve en rasyonel davranış bile o etiketin (karanlık filtrenin) içinden yorumlanarak sizi sonsuza dek o zihinsel hapishaneye mahkûm eder.',
+    questionStem: 'David Rosenhan\'ın "Tımarhanedeki Sağlamlar" deneyi, teşhis ve otorite kavramları hakkında neyin sarsıcı (ve tehlikeli) bir ispatıdır?',
+    options: [
+      'Akıl hastanelerindeki yemeklerin hastaların psikolojisini daha da bozduğunun',
+      'Otoritenin bir insana vurduğu "Etiketin (Deli/Suçlu damgasının)", kişinin sergilediği gerçek (ve normal) davranışları bile o filtreden geçirip "hastalıklı" gibi gösteren; insanın gerçekliğini yok eden sarsılmaz (ve tehlikeli) bir algı hapishanesi olduğunun',
+      'Stanford Üniversitesi öğrencilerinin oyunculuk yeteneklerinin doktorları kolayca kandıracak kadar iyi olduğunun',
+      'Psikiyatri ilaçlarının sağlıklı insanları bile saniyeler içinde şizofreniye çevirebildiğinin'
+    ],
+    correct: 1,
+    explanation: 'Sağlıklı insanların normal davranmasına rağmen doktorların onları "şizofren" olarak görmeye devam etmesi; otoritenin verdiği "etiketin (damganın)" kişinin gerçekliğini silip onu algısal bir zindana (önyargıya) hapsettiğini ispatlar.'
+  },
+  {
+    title: 'Libet Deneyi (Özgür İradenin İllüzyonu)',
+    passage: 'Bizler karar verirken (örneğin kolumuzu kaldırmak veya bir düğmeye basmak istediğimizde) önce bilinçli olarak "Karar Verdiğimizi", sonra da beynimizin kaslara emir verdiğini sanırız. "Özgür İrade" dediğimiz kavram bu sarsılmaz inanca dayanır. Ancak nörofizyolog Benjamin Libet 1983\'te bu bin yıllık felsefi kibri tek bir deneyle paramparça etti. Deneklerden, istedikleri herhangi bir saniyede (özgürce) önlerindeki düğmeye basmaları istendi. Ekrana bağlı beyin dalgaları (EEG) saniye saniye ölçülüyordu. Sonuçlar bilimi dondurdu! Denek daha kendi içinde "Düğmeye basmaya karar verdim!" diye o bilinçli (özgür) aydınlanmayı yaşamadan tam "yarım saniye (300 milisaniye) ÖNCE", beyin zaten çoktan kaslara "düğmeye bas" emrini vermiş (hazırlık potansiyeli yaratmış) ve işi bitirmişti! Bizim o "Özgür İrade" dediğimiz o kutsal ve bilinçli karar anı; aslında karanlıkta, otopilotta (bilinçaltında) çoktan alınmış bir kararın, bize yarım saniye gecikmeli olarak izletilen "Sahte Bir Haber Bülteni (İllüzyonundan)" başka bir şey değildi. Bilincimiz kararların yazarı değil, sadece olay bitince bilgilendirilen seyircisiydi.',
+    questionStem: 'Benjamin Libet\'in deneyi (Beynin bilinçten önce harekete geçmesi), insanın "Özgür İrade" algısı üzerine nasıl sarsıcı bir gölge düşürmektedir?',
+    options: [
+      'İnsan reflekslerinin elektrik akımıyla yapay olarak tamamen hızlandırılabileceği',
+      'Gurur duyduğumuz "özgür ve bilinçli karar alma" anımızın aslında bir yanılsama olduğu; beynin bizden habersiz (bilinçaltında) kararı çoktan aldığı ve bilincimize sadece bu bitmiş kararı (gecikmeli bir illüzyon olarak) sonradan bildirdiği gerçeği',
+      'Düğmelere basma gibi basit motor eylemlerin sadece sağ beyin lobu tarafından yönetildiği',
+      'Zekâ seviyesi yüksek insanların karar verirken daha yavaş ve hata yapmaya yatkın oldukları'
+    ],
+    correct: 1,
+    explanation: 'Denek "karar verdim" demeden yarım saniye önce beynin emri çoktan vermiş olması; özgür irade sandığımız şeyin aslında karanlıkta (bilinçdışında) alınmış kararların bize sonradan izletilen sahte/gecikmeli bir "illüzyonu (seyirciliği)" olduğunu gösterir.'
+  },
+  {
+    title: 'Harlow\'un Maymunları (Şefkatin Biyolojisi)',
+    passage: '1950\'lerde davranışçı bilim insanları, bebeklerin annelerini "sadece karınlarını doyurdukları (süt verdikleri) için" (çıkarcı bir nedenle) sevdiklerine inanıyorlardı. Bebeklikteki sevgi, tamamen beslenmeye dayalı mekanik bir işlemdi. Psikolog Harry Harlow, bu mekanik dogmayı iğrenç ama sarsıcı bir deneyle yıktı. Bebek maymunları annelerinden ayırıp bir kafese koydu. Kafeste iki farklı "sahte anne" vardı: Birinci anne tamamen soğuk dikenli tellerden yapılmıştı ama göğsünde "süt (biberon)" taşıyordu; İkinci anne ise hiçbir yiyeceği (sütü) olmayan ama üzeri yumuşacık ve sıcacık "kumaş (havlu)" ile kaplanmış bir maketti. Bebek maymunlar açlıktan kıvrandıklarında süt içmek için dikenli anneye sadece birkaç saniyeliğine gidiyor, ancak günün tam 22 saatini o "sütü olmayan, sadece yumuşaklık ve sarılma hissi veren" kumaş anneye sımsıkı (titreyerek) sarılarak geçiriyorlardı! Harlow\'un deneyi; canlının en temel biyolojik (hayatta kalma) ihtiyacının sadece kalori (süt/ekmek) olmadığını; "şefkat, dokunma ve fiziksel sıcaklık (sevgi)" ihtiyacının açlıktan bile çok daha derin, sarsılmaz ve evrimsel bir açlık olduğunu kanıtlayan hüzünlü bir manifestodur.',
+    questionStem: 'Harry Harlow\'un Maymun Deneyi (Süt veren tel anne ile süt vermeyen yumuşak anne), "sevgi ve bağlanma" konusunda hangi mekanik inancı çürütmüştür?',
+    options: [
+      'Bebek maymunların tel ve metal kokularından biyolojik olarak iğrendiklerini',
+      'Canlıların annelerine sadece "karın doyurma (beslenme/çıkar)" amacıyla bağlandığı yönündeki soğuk (mekanik) inancı yıkarak; "fiziksel sıcaklık, şefkat ve sarılma" ihtiyacının açlıktan bile daha güçlü, temel bir biyolojik/evrimsel ihtiyaç olduğunu',
+      'Kumaş ve havlu dokusunun hayvanların diş çıkarma döneminde ağrı kesici bir özellik taşıdığını',
+      'Yavru hayvanların süt yerine suyu tercih etmeye daha yatkın oldukları yönündeki diyetetik tezi'
+    ],
+    correct: 1,
+    explanation: 'Aç maymunların süt veren tel anne yerine süt vermeyen yumuşak kumaş anneye 22 saat sarılması; bağlanmanın (sevginin) sadece beslenme (çıkar) olmadığını, şefkat/dokunma hissinin en az yemek kadar temel ve evrimsel bir biyolojik açlık olduğunu kanıtlar.'
+  },
+  {
+    title: 'Öğrenilmiş Çaresizlik (Seligman\'ın Köpekleri)',
+    passage: 'Neden şiddet gören insanlar, kötü evliliklerde kalanlar veya yoksulluk içindekiler kapı açıkken bile kaçıp gitmezler? 1960\'larda Martin Seligman, köpeklerle yaptığı (zalimce) bir deneyle bu felsefi kâbusun adını koydu: "Öğrenilmiş Çaresizlik". Köpekler iki gruba ayrılıp şok verilen kafeslere kondu. Birinci grup burnuyla bir düğmeye basarak şoku durdurabiliyordu. İkinci gruptaki köpekler ise ne yaparlarsa yapsınlar (zıplasalar, bağırsalar da) elektrik şokunu durduramıyorlardı (kontrol dışı). İkinci gün tüm köpekler sadece ortasından atlanarak (çok kolay) kaçılabilecek alçak çitli yeni bir kutuya alındı ve şok verildi. Düğmeye basmayı bilen (birinci) grup saniyeler içinde çitin üzerinden atlayıp kurtuldu. Ancak ikinci (çaresizliğe alışan) grup ne yaptı? Çitin üzerinden kolayca atlayıp kaçabilecekleri halde, yere uzandılar, inlediler ve o acıyı hiçbir şey yapmadan (teslimiyetle) kabullendiler! Denemeyi bile reddettiler. Seligman\'ın deneyi insanlığın en derin travmasını fısıldar: Bir canlının inancını (eylemlerinin sonucu değiştirebileceği umudunu) kırmak, onu zincirlemekten çok daha ölümcül bir hapishanedir. Kişi bir kez "ne yaparsam yapayım değişmiyor" yalanına inandığında, kapılar sonuna kadar açılsa bile artık kendi zihnindeki o görünmez (öğrenilmiş) hücreden asla çıkamaz.',
+    questionStem: 'Martin Seligman\'ın "Öğrenilmiş Çaresizlik" deneyi, acı çeken bireylerin (veya toplumların) "eylemsizliği" hakkında hangi psikolojik yıkımı açıklar?',
+    options: [
+      'Fiziksel acının (elektrik şokunun) canlıların kas sistemini kalıcı olarak felç etmesini',
+      'Kişinin geçmişte çabalarının işe yaramadığını deneyimlemesiyle oluşan "kontrolün bende olmadığı (umutsuzluk)" inancının; fiziksel engeller (çitler) tamamen kalktığında bile, kişiyi harekete geçmekten alıkoyan o zihinsel ve gönüllü (öğrenilmiş) köleliğe hapsetmesini',
+      'Köpeklerin insanlara göre daha sadık varlıklar olduğu için cezayı sessizce kabul etme erdemini',
+      'Zekâ seviyesi düşük canlıların karmaşık kaçış planları kuramaması gerçeğini'
+    ],
+    correct: 1,
+    explanation: 'Çitten kolayca atlayabilecekleri halde geçmişte şoku durduramayan köpeklerin yere yatıp acıya razı olması; çabaların işe yaramayacağı inancının (öğrenilmiş çaresizlik), şartlar düzelse bile insanı eylemsizliğe ve gönüllü zihinsel köleliğe mahkûm ettiğini açıklar.'
+  },
+  {
+    title: 'Kaynayan Kurbağa Sendromu (Fark Edilmeyen Kıyamet)',
+    passage: 'Bir kurbağayı fokur fokur kaynayan bir suyun içine atarsanız, can havliyle ve acıyla saniyeler içinde zıplayıp kendini dışarı fırlatır (kurtulur). Ancak aynı kurbağayı oda sıcaklığında ılık bir suyun içine koyar ve o suyun altındaki ateşi "milim milim, hiç hissettirmeden ve çok yavaşça" ısıtmaya başlarsanız korkunç bir şey olur. Kurbağa o yavaş ısınan suyun getirdiği rehavete (konfora) kapılır. Tehlikeyi, kasları tamamen gevşeyip felç olana kadar asla fark edemez. Suyun kaynama noktasına ulaştığını anladığında ise artık zıplayacak ne gücü ne de iradesi kalmıştır; kendi uyuşukluğunun içinde yavaş yavaş haşlanarak ölür. Biyolojik olarak bu mit tam doğru olmasa da, sosyoloji ve siyasetteki o en ölümcül felsefi kuralı (Kaynayan Kurbağa Sendromu) yaratmıştır: İnsanlar ve toplumlar, aniden ve şiddetle gelen bir baskıya, diktatörlüğe veya tehlikeye anında (isyan ederek) tepki verirler. Ancak o hak kayıpları, özgürlüklerin kısıtlanması ve ahlaki çöküş; yıllara yayılarak, milim milim ve hissettirmeden (alıştırılarak) yapıldığında, toplum o tehlikeyi asla fark edemez ve o uyuşukluğun (alışmışlığın) içinde kendi ölümünü kaynayan suda izleyen bir kurbağaya dönüşür.',
+    questionStem: '"Kaynayan Kurbağa Sendromu" metaforu, toplumların özgürlük ve tehlike karşısındaki hangi "algısal (sosyolojik) zaafını" özetlemektedir?',
+    options: [
+      'Gelişmemiş ülkelerdeki insanların fiziksel hastalıklara karşı çok daha dirençli olmasını',
+      'Toplumların aniden gelen büyük krizlere şiddetle tepki (isyan) verirken; yavaş yavaş, azar azar ve hissettirmeden (rehavetle) gelen baskılara, hak kayıplarına ve yıkımlara karşı körleşerek bu felakete uyuşukça adapte olma (tehlikeyi fark edememe) zaafını',
+      'Sıcak iklimlerde yaşayan toplumların siyasi olaylara daha az tepki verip tembelleştiğini',
+      'Kurbağaların soğukkanlı canlılar olduğu için ısı değişimlerinden biyolojik olarak etkilenmediğini'
+    ],
+    correct: 1,
+    explanation: 'Yavaşça ısıtılan sudaki kurbağanın ölene kadar tepki vermemesi; kitlelerin yavaş yavaş ve alıştırılarak gelen baskı ve tehlikelere karşı körleşip uyuşukça (adapte olarak) felaketi fark edememe zaafını sembolize eder.'
+  },
+  {
+    title: 'Sokal Hoaksı (Akademik Kibrin Çöküşü)',
+    passage: '1996 yılında fizik profesörü Alan Sokal, o dönem üniversiteleri kasıp kavuran "Postmodernizm" akımının ne kadar içi boş, kibirli ve şarlatanca bir dil (jargon) kullandığını kanıtlamak için zekice bir pusu kurdu. En popüler postmodernist akademi dergilerinden birine, "Kuantum Kütleçekiminin Dönüştürücü Yorumu" adında devasa bir makale gönderdi. Makale kuantum mekaniği, feminist teori ve süslü felsefi (ağdalı) kelimelerle doluydu. Ancak makale baştan aşağı "tamamen saçmalık ve bilinçli olarak yazılmış anlamsız (uydurma) zırvalardan" ibaretti! Hiçbir mantıksal bütünlüğü yoktu. Ancak o ünlü akademi dergisi, metnin içindeki o süslü (anlaşılmaz) felsefi kelimelere ve Sokal\'ın akademik unvanına aldanarak, yazıyı okumadan (veya anlamadan) büyük bir coşkuyla "dahiyane bir eser" olarak yayımladı! Ertesi gün Sokal başka bir dergide "O yazdıklarımın hepsi çöptü ve saçmalıktı!" diyerek gerçeği ifşa etti. "Sokal Hoaksı", felsefe ve akademinin o dokunulmaz sanılan fildişi kulesine atılmış en ağır bombadır: Kelimeler ne kadar anlaşılmaz ve süslü (kibirli) hale gelirse, kitleler (ve hatta sözde uzmanlar bile) o zırvaların altında "yüce bir hakikat (ve deha) yattığına" inanacak kadar safdil ve gösteriş budalası olmaya mahkûmdur.',
+    questionStem: 'Alan Sokal\'ın bilerek "saçma sapan (zırva)" bir makale yazıp elit bir dergide yayımlatması (Sokal Hoaksı), akademik dünyanın hangi "gösteriş (şekilcilik) zaafını" ifşa etmiştir?',
+    options: [
+      'Kuantum fiziğinin edebiyat dergilerinde sansürlenerek sadece sayısal verilerle ifade edildiği gerçeğini',
+      'Akademik dünyanın (uzmanların bile); mantık ve gerçeği sorgulamak yerine, sırf "süslü, ağdalı, anlaşılmaz kelimelere (kibirli jargona) ve yazarın unvanına" aldanarak; anlamsız bir çöpü bile (sırf anlamamaktan utandıkları için) "yüce bir eser/hakikat" sanma (şekilci) acizliğini',
+      'Bilim insanlarının boş vakitlerinde mizah ve komedi dergilerine de gizlice yazılar yazdığını',
+      'Postmodernizmin fizikteki klasik Newton kurallarını matematiksel olarak tamamen yendiğini'
+    ],
+    correct: 1,
+    explanation: 'Tamamen saçma (zırva) bir yazının sırf "ağdalı kelimeler" ve yazarın unvanı yüzünden dâhiyane sanılıp basılması; akademinin ve uzmanların mantığı değil, şekli (süslü jargonu) kutsayarak anlamsızlığa tapınma acizliğini (gösteriş budalalığını) ifşa etmiştir.'
+  },
+  {
+    title: 'Büyükbaba Paradoksu (Zamanın İmkânsız Duvarı)',
+    passage: 'Bir zaman makinesi icat ettiğinizi ve geçmişe gidip, dedenizi (henüz babanız doğmadan önce) kazara öldürdüğünüzü hayal edin. Bu, bilim kurgunun en meşhur kâbusu olan "Büyükbaba Paradoksu"dur (Grandfather Paradox). Eğer dedeniz ölürse, babanız doğamaz. Babanız doğamazsa, siz doğamazsınız. Siz doğmazsanız, zaman makinesini icat edip geçmişe giderek dedenizi öldüremezsiniz! Eğer dedenizi siz öldürmediyseniz, dedeniz yaşar, babanız doğar, siz doğarsınız ve tekrar geçmişe gidip dedenizi öldürürsünüz! Bu mantığın kendi kuyruğunu yuttuğu ebedi, akıl almaz ve kilitlenmiş bir döngüdür. Fizikçiler (Stephen Hawking gibi) bu paradoksu çözmek için "Zamanın Korunumu İlkesi"ni (Chronology Protection Conjecture) öne sürerler: Evren (doğa yasaları), zaman makinelerinin icat edilmesine veya geçmişin değiştirilmesine fiziksel olarak asla izin vermez. Evrenin mantığı, bizim o kibirli fantastik hayallerimizden çok daha acımasız ve sağlam bir güvenlik duvarına sahiptir; nedensellik (sebep-sonuç) zedelenemez, tarih geriye sarılamaz.',
+    questionStem: 'Büyükbaba Paradoksu\'nun (geçmişte dedeyi öldürme çıkmazının) mantıksal sonucuna göre, "Zaman ve Evren" ilişkisi hakkında fizikte nasıl bir koruma kuralı (hipotezi) öne sürülmüştür?',
+    options: [
+      'Zaman yolculuğunun sadece uzaydaki devasa karadeliklerin merkezine girildiğinde (tekillikte) yapılabileceği',
+      'Eğer bir olayda nedensellik (sebep-sonuç) ilişkisi kendi içinde çelişiyorsa (çöküyorsa); evrenin doğa yasalarının (Zamanın Korunumu İlkesi), mantığı ve tarihi korumak adına bu tür geriye dönük müdahalelere (ve zaman yolculuğuna) asla izin vermeyeceği (fiziksel bir kalkan oluşturduğu)',
+      'Geçmişe giden insanların sadece o dönemin insanlarına görünmez bir ruh olarak görünebileceği',
+      'Zamanın düz bir çizgi değil, farklı galaksilerde farklı hızlarda ilerleyen bir spiral dalga olduğu'
+    ],
+    correct: 1,
+    explanation: 'Dedenin ölmesinin kendi varlığınızı yok edip çelişki yaratması (paradoks); evrenin mantığı (nedenselliği) korumak adına zaman yolculuğuna veya geçmişin değiştirilmesine doğa yasaları gereği asla izin vermeyeceği (Zamanın Korunumu) fikrini doğurmuştur.'
+  },
+  {
+    title: 'Parkinson Yasası (Zamanı Yutan Bürokrasi)',
+    passage: 'Bir öğrenciye bir ödev (veya memura bir rapor) verin ve ona bunu bitirmesi için "iki gün" süre tanıyın. O iş tam iki günde biter. Ancak aynı iş için ona "bir ay" süre verirseniz ne olur? İş daha kaliteli veya erken mi biter? Hayır! O iş, anlamsız detaylarla, gereksiz e-postalarla ve oyalalanmalarla şişerek tam bir ay boyunca sürüncemede kalır ve yine son saniyede biter. İngiliz tarihçi Cyril Northcote Parkinson 1955\'te bu efsanevi (ve can sıkıcı) durumu şu yasayla mühürledi: "Bir iş, daima o işin tamamlanması için ayrılan sürenin tamamını dolduracak kadar (kendi kendine) genişler ve esner!" (Parkinson Yasası). Bu kural sadece zamana değil, bürokrasiye de uygulanır; devlet veya şirketlerde çalışan sayısı arttıkça, o çalışanlar boş kalmamak (ve önemli görünmek) için "birbirlerine sahte işler, formlar ve engeller (bürokrasi)" yaratırlar. Parkinson Yasası, modern dünyanın o sahte "meşguliyet" kibrine atılmış tokat gibidir: Uzun süre çalışmak (veya kalabalık ofisler) üretkenliği artırmaz; sadece o boş zamanı (ve boşluk hissini) gizlemek için yaratılmış devasa, obez ve verimsiz birer bürokratik tiyatrodur.',
+    questionStem: 'Parkinson Yasası ("İş, tamamlanması için ayrılan zamanı dolduracak kadar genişler"), çalışma hayatı ve bürokrasi hakkında neyin eleştirisidir?',
+    options: [
+      'İnsanların uzun vadeli planlar yaparken motivasyonlarını kaybederek işi tamamen bırakıp istifa etmelerini',
+      'Bir işe verilen süre uzadıkça (veya çalışan sayısı arttıkça) verimin ve kalitenin değil; aksine o süreyi/boşluğu doldurmak (meşgul görünmek) için yaratılan gereksiz detayların ve "obez (sahte/hantal) bir bürokrasinin" büyümesi (tüketimi) eleştirisini',
+      'Bilgisayar kullanımının artmasıyla birlikte ofislerdeki kâğıt israfının tamamen ortadan kalktığını',
+      'Kısa süre verilen işlerde çalışanların her zaman hatalı ve kusurlu üretim (iş kazası) yaptıklarını'
+    ],
+    correct: 1,
+    explanation: 'Bir işin 2 gün yerine 1 ayda (esneyerek ve gereksiz işler uydurularak) bitirilmesi; fazla zamanın/çalışanın verimi değil, sadece "meşgul görünmek" için uydurulan o sahte/hantal (obez) bürokrasiyi artırdığını eleştirir.'
+  },
+  {
+    title: 'Matta Etkisi (Biriken Avantajın Kâbusu)',
+    passage: 'Neden zenginler her geçen gün daha da zenginleşirken, fakirler sürekli daha dibe (sefalete) batar? İncil\'deki Matta bölümünde geçen (ve sosyolog Robert Merton tarafından bilime aktarılan) "Matta Etkisi" bu acımasız denklemi açıklar. Kural şudur: "Kimde varsa ona daha çok verilecek; kimde yoksa, elindeki o azıcık şey bile ondan alınacaktır." Bilimde (veya ekonomide) bu duruma "Birikimli Avantaj" (Cumulative Advantage) denir. Yetenekleri aynı olan iki çocuk düşünün. Biri sadece "birkaç ay" daha büyük doğduğu için okul takımına daha kolay girer, orada daha iyi antrenörlerden eğitim alır, daha çok maç oynar ve 10 yıl sonra diğer çocukla arasındaki fark (küçücük bir yaş avantajı yüzünden) devasa ve kapatılamaz bir uçuruma dönüşür. Matta Etkisi, hayatın (ve kapitalizmin) sözde o "adil yarış ve çok çalışırsan kazanırsın" efsanesini yırtıp atar. Dünyadaki asıl farkı yaratan şey devasa bir üstünlük (zeka) değil; başlangıçta sahip olunan o mikroskobik avantajın (veya paranın) zamanla kartopu gibi yuvarlanarak (sistemin kayırmasıyla) devasa bir çığa (tekelleşmeye) dönüşmesidir.',
+    questionStem: 'Sosyolojideki "Matta Etkisi" (Zenginin daha zengin, fakirin daha fakir olması), hayatın ve başarı kavramının ardındaki hangi (kurgusal) efsaneyi yıkar?',
+    options: [
+      'Gelecekte teknolojinin gelişmesiyle herkesin eşit şartlarda eğitim alabileceği inancını',
+      'Genetik olarak zeki insanların her zaman tembelleri yeneceği yönündeki biyolojik tezi',
+      'Hayatta (ve sistemde) başarının tamamen "adil bir rekabete ve çok çalışmaya (liyakate)" bağlı olduğu efsanesini yıkarak; aslında başlangıçtaki o mikroskobik (ve bazen şansa dayalı) ilk avantajların zamanla katlanarak (kartopu gibi büyüyerek) kapatılamaz ve adaletsiz bir uçuruma (tekelleşmeye) dönüştüğünü',
+      'Spor müsabakalarında yetenekten çok kullanılan ekipmanların önemli olduğu gerçeğini'
+    ],
+    correct: 2,
+    explanation: 'Başlangıçtaki küçücük bir yaş/para avantajının yıllar içinde devasa (kapatılamaz) bir uçuruma (kartopu etkisine) dönüşmesi; başarının sadece "adil rekabet ve çok çalışmak" olduğu efsanesini (liyakat illüzyonunu) yıkar.'
+  },
+  {
+    title: 'Zeigarnik Etkisi (Yarım Kalanın Ağırlığı)',
+    passage: '1920\'lerde Rus psikolog Bluma Zeigarnik, Berlin\'deki bir kafede otururken garsonların sipariş alma şeklini (ve zekâlarını) izliyordu. Garsonlar o kadar kalabalık siparişleri hiçbir yere yazmadan hafızalarında kusursuzca tutuyorlardı. Ancak müşteri hesabı ödeyip masadan kalktığı saniye, garsona az önce o masanın ne yediği sorulduğunda; garson hiçbir şeyi (siparişi) hatırlayamıyordu! Sipariş ödenip tamamlandığı an, beyin o dosyayı anında silip çöpe atmıştı. Psikolojiye "Zeigarnik Etkisi" olarak geçen bu keşif zihnimizi okur: İnsan beyni; bitmiş (tamamlanmış ve kapanmış) işleri kolayca hafızasından silerken; "yarım kalan, bölünmüş veya henüz çözülememiş" görevleri asla unutmaz ve o dosyaları sürekli beynin ön belleğinde takıntılı bir alarm gibi açık (kanayan bir yara gibi) tutar! Neden eski sevgilinizi, izlediğiniz o cevapsız biten filmi veya yarım bıraktığınız projeyi unutamadığınızın cevabı budur. Yarım kalmışlık (kapanmamış döngü), zihnin taşıyabileceği en ağır, en sinsi ve en unutulmaz yüktür.',
+    questionStem: 'Zeigarnik Etkisi (Garsonların ödenmiş siparişi hemen unutup yarım siparişleri hatırlaması), insan hafızasının "hangi tür" olaylara (durumlara) takıntılı kaldığını kanıtlar?',
+    options: [
+      'Sadece görsel hafızası güçlü olan kişilerin isimleri ve sayıları yıllarca saklayabileceğini',
+      'İnsanların sadece gençlik döneminde yaşadıkları olayları ölene kadar net (kusursuz) olarak hatırlama eğilimini',
+      'Beynin bitmiş, tamamlanmış olayları hızla silip unutmasına karşın; "yarım kalmış, tamamlanmamış veya kesintiye uğramış" görevleri (ve ilişkileri) zihnin ön planında sürekli açık, unutulmaz ve takıntılı bir alarm (yük) gibi taşımasını',
+      'Korku ve panik anında öğrenilen bilgilerin beynin hafıza merkezinde kalıcı felçler yarattığını'
+    ],
+    correct: 2,
+    explanation: 'Hesap ödendiği an garsonun her şeyi unutması ama ödenmemiş olanı (yarım kalanı) sürekli aklında tutması; beynimizin bitmiş olayları sildiği ama "yarım kalmış/tamamlanmamış" şeyleri unutamadığı ve takıntılı (ağır) bir şekilde açık tuttuğu gerçeğini (Zeigarnik) kanıtlar.'
+  },
+  {
+    title: 'McGurk Etkisi (Gözlerin Kulaklara İhaneti)',
+    passage: 'İnsanoğlu dış dünyayı algılarken gözlerine ayrı, kulaklarına ayrı birer "güvenilir ve bağımsız" kamera muamelesi yapar. Ancak nörobilimdeki o efsanevi "McGurk Etkisi" (McGurk Effect) bu kibri tek videoda çökertir. Deneyde, ekranda bir adamın dudakları sürekli "Ga, Ga, Ga" diye hareket etmektedir (görüntü budur). Ancak videonun arka planına (ses olarak) kusursuz ve net bir "Ba, Ba, Ba" sesi eklenmiştir. İzleyici bu videoyu izlediğinde (ses BA, dudak GA iken) beyni donup kalır ve o şok edici, uzaylımsı sentezi duyar: İnsanlar ne "Ba" sesini ne de "Ga" şeklini algılar; beyin bu ikisini karıştırıp tamamen uydurma (ortada olmayan) üçüncü bir ses olan "Da, Da, Da" sesini DUYMAYA başlar! Eğer gözlerinizi kapatıp sadece dinlerseniz sesi net bir şekilde "Ba" olarak duyarsınız. Gözlerinizi açtığınız an, beyniniz (gözden gelen veriye daha çok inandığı için) kulağınızın duyduğu o fiziksel sesi anında ezer (yok sayar) ve size zorla sahte (farklı) bir harfi işittirir. İnsan algısı, beynin farklı duyuları birbirine dikerek (kandırarak) yarattığı o karanlık ve dikiş izleriyle dolu sahte bir kurgu (illüzyon) filmidir.',
+    questionStem: 'McGurk Etkisi (Görüntünün ve sesin çatışması anında duyulan uydurma ses) deneyi, beynin dış dünyayı (gerçekliği) algılama biçimine dair neyi ifşa etmektedir?',
+    options: [
+      'Gözlük veya işitme cihazı kullanan insanların deneylerde her zaman yanlış tepkiler verdiğini',
+      'İnsan kulağının 30 yaşından sonra belirli harf frekanslarını (B ve G gibi) hiçbir şekilde duyamadığını',
+      'Duyularımızın (görme ve işitme) birbirinden bağımsız kusursuz kaydediciler olmadığı; iki duyu çatıştığında beynin (görselliğe daha çok güvenerek) işitilen fiziksel sesi anında yok sayıp (büküp) tamamen sahte (uydurma) bir gerçeklik (illüzyon) kurguladığı gerçeğini',
+      'Farklı yabancı dil konuşan kişilerin harfleri biyolojik olarak her zaman birbirine karıştırdığını'
+    ],
+    correct: 2,
+    explanation: 'Gözün "Ga" dudaklarını görüp kulağın "Ba" sesini duyması sonucunda beynin uydurma bir "Da" sesi hissettirmesi; duyularımızın kusursuz olmadığı, beynin görselliğe (göze) güvenerek fiziksel sesi yok sayıp kendi sahte/kurgusal gerçekliğini (illüzyonunu) yarattığını ifşa eder.'
+  },
+  {
+    title: 'Capgras Sendromu (Sevgisiz Tanıma)',
+    passage: 'Annenizin, eşinizin veya köpeğinizin yanına gidiyorsunuz. Onların yüzüne bakıyorsunuz. Onların anneniz (veya eşiniz) olduğunu görsel olarak "tam ve eksiksiz" bir şekilde tanıyorsunuz; yüzlerindeki tek bir beni bile biliyorsunuz. Ancak içinizde buz gibi, kan dondurucu bir fısıltı kopuyor: "Bu kadın anneme tıpatıp benziyor, sesi onun gibi, yüzü onun gibi... Ama o benim annem değil! O, annemin kılığına girmiş (bedenini ele geçirmiş) bir sahtekâr (İmpostor)!" Psikiyatrideki bu korkunç deliliğin adı "Capgras Sendromu"dur. Nörolojik sebebi ise beynin o karanlık kopuşudur: Beynin "yüz tanıma (görsel) merkezi" sağlamdır; ancak o yüzleri "duygusal (sevgi/yakınlık) merkezine" bağlayan (amigdala) kablolar kopmuştur! Hasta annesini görür ama yıllardır ona duyduğu o "sevgi ve sıcaklık" hissi bedende uyanmaz. Görsel var, ama duygu (sevgi) yoktur! Beyin bu mantıksız boşluğu (çelişkiyi) açıklamak için o mantıklı (!) kâbusu uydurur: "Görüntü onun, ama hiçbir şey hissetmiyorum... Demek ki o bir kopyadır!" İnsan bilinci, sevginin koptuğu yerde, en tanıdık (ve yakın) yüzü bile saniyeler içinde karanlık, ruhsuz ve yabancı bir sahtekâra dönüştüren o buz gibi cehennemdir.',
+    questionStem: 'Capgras Sendromu (Sevdiği kişinin kılığına girmiş sahtekâr bir kopya olduğu inancı), insan beyni ve "tanıma/bağlanma" ilişkisi hakkında hangi sarsıcı gerçeği kanıtlar?',
+    options: [
+      'Göz hastalıklarının zamanla yüz hatlarını bulanıklaştırarak insanları yabancılaştırdığı gerçeğini',
+      'Kötü anıların ve çocukluk travmalarının beynin görsel hafıza bölgesini kasten silerek o anıları kapattığını',
+      'Bir insanı (veya nesneyi) "tanımanın (kimliklendirmenin)", sadece fiziksel ve görsel parçaların görülmesiyle değil; o görselliğe bağlanan (ve kopan) "duygusal (sıcaklık/sevgi) hislerin" varlığına muhtaç olduğunu; duygu koptuğunda (veya çalışmadığında) mantığın kendi kendine yabancılaşma (sahtekâr) illüzyonu yaratacağını',
+      'Psikiyatri ilaçlarının uzun süreli kullanımının hastaların göz bebeklerinde şekil bozukluğuna (astigmat) yol açtığını'
+    ],
+    correct: 2,
+    explanation: 'Hastanın annesini görsel olarak tanıması ancak "duygu/sevgi (amigdala)" bağı koptuğu için onu sahtekâr bir kopya sanması; tanımanın (ve bilincin) sadece gözle değil, görsellikle duygunun (sevginin) kusursuzca birleşmesiyle var olduğunu (koparsa yabancılaşacağını) kanıtlar.'
+  },
+  {
+    title: 'Sinestezi (Duyuların Kaotik Karışımı)',
+    passage: 'Hepimiz müzik dinlerken sesleri kulağımızla algılar, bir tabloya bakarken gözümüzü kullanırız. Duyularımız, beynimizin içinde birbirinden kalın, kurşungeçirmez duvarlarla ayrılmış (özel) odalar gibidir. Ancak yeryüzündeki bazı insanlar (nüfusun %4\'ü) için bu kurşungeçirmez duvarlar yıkılmış, beynin kabloları birbirine girmiş ve akılalmaz bir karnaval başlamıştır: "Sinestezi" (Duyuların Birleşmesi). Bir Sinestet, piyanonun tuşlarına (müziğe) basıldığında sadece sesi duymaz; aynı zamanda her bir nota için gözünün önünde "kırmızı, mavi veya yeşil (renk)" patlamaları GÖRÜR! Veya bir arkadaşının adını ("Ayşe" gibi) her duyduğunda, ağzının içinde fiziksel olarak "çilek veya paslı demir" TADI hisseder. Onlar için rakamların bir rengi, günlerin bir geometrik şekli vardır. Sinestezi bir hastalık değildir. O, insan beyninin, doğanın o tekdüze ve sıkıcı (kategorik) algısını hackleyerek; sesleri renklere, renkleri tatlara çevirdiği, duyuların o sınır tanımaz, sihirli (ve şairane) evrimsel isyanıdır.',
+    questionStem: 'Sinestezi (Duyuların birbirine karışması) durumu, insan beyninin (ve dış dünyayı algılayışımızın) yapısı hakkında neyin sarsılmaz sanılan kuralını (duvarını) yıkmaktadır?',
+    options: [
+      'Göz sağlığının yüksek sese maruz kalındığında geçici olarak felç olduğu teorisini',
+      'Beynimizdeki farklı duyu organlarının (görme, işitme, tatma) "birbirinden bağımsız, kalın ve izole duvarlarla (bölümlerle)" çalıştığı yönündeki o mekanik (ve katı) kuralı yıkarak; duyuların aslında birbirine sızabildiği (kabloların birleşebildiği) esnek, akışkan ve sihirli bir algı okyanusu olabildiğini',
+      'Sağır insanların dokunma duyularını kaybederek sadece tat alma duyusuyla yönlerini bulabildiğini',
+      'Böceklerin ve bazı kuşların çıkardığı ultrasonik seslerin insan beyninde kalıcı hasarlara ve ağrılara yol açtığını'
+    ],
+    correct: 1,
+    explanation: 'Kelimelerin tadının alınması veya seslerin renginin görülmesi (Sinestezi); beş duyunun beyinde birbirinden "izole ve bağımsız" duvarlara sahip olduğu kuralını yıkarak, duyuların birbirine karışabilen esnek/akışkan bir yapı (kablolama) olduğunu ispatlar.'
+  },
+  {
+    title: 'Görüşsüz Görme (Blindsight ve Bilincin Kibri)',
+    passage: 'Beyninin görsel korteksi (görme merkezi) bir inme veya kaza sonucu tamamen hasar gören hastalar tıbben "%100 kör" olurlar. Önlerine bir kalem tutsanız karanlıktan başka bir şey göremezler. Ancak tıp dünyası bu hastalardan bazılarıyla bir deney yaptığında, felsefeyi yerle bir eden bir olay yaşandı. Araştırmacılar, bu "tamamen kör" olan hastanın gözlerine bir el feneri tuttular ve "Işık sağdan mı, soldan mı geliyor?" diye sordular. Hasta "Ben körüm, hiçbir şey görmüyorum!" diyerek öfkelendi. Doktor "Sadece tahmin et" dediğinde; kör olan hastaların %90\'ı "Tamamen şans eseri" diyerek ışığın (veya engellerin) yönünü KUSURSUZ (ve doğru) bir şekilde gösterdiler! Buna tıp dilinde "Blindsight" (Görüşsüz Görme) denir. Peki nasıl? Hastanın "bilinçli (mantıklı) gören" beyni ölmüştü ama beynin derinlerindeki (evrimsel olarak en eski) o ilkel "sürüngen gözü" hala açıktı ve o karanlıkta bilgi işliyordu! Blindsight, bizim o en çok övündüğümüz (ışıklı) "Bilinçli Benliğimizin"; aslında bedenimizin bizden habersiz (karanlıkta/otopilotta) yaptığı o kusursuz bilgi işleme sürecinin sadece habersiz ve kibirli bir kuklası (gözlemcisi) olduğunu kanıtlar.',
+    questionStem: 'Tamamen kör olan (Görüşsüz Görme/Blindsight) hastalarının, ışığın yönünü "bilinçsizce (tahmin ederek)" doğru bulması, bilinç ve algı hakkında hangi evrimsel (felsefi) şoku yaratmıştır?',
+    options: [
+      'Gözlük camlarının kalınlaşmasının retinanın ışığa olan tepkisini tamamen yok ettiğini',
+      'İnsan beynindeki göz sinirlerinin zamanla kendi kendine iyileşerek görme yetisini aniden geri kazandırabildiğini',
+      'Algının (dış dünyayı kavramanın) sadece o aydınlık "Bilinç (farkındalık)" ile yapılmadığını; bilincin (kibrin) kapalı olduğu karanlık anlarda bile, evrimsel (ilkel) beynimizin bizden tamamen habersiz (otopilotta) dış dünyayı algılayıp işleyebilen devasa ve dilsiz bir radar olduğunu',
+      'İnsanların altıncı his (psikokinezi) yetenekleriyle duvarların arkasındaki eşyaları görebilecek kadar üstün varlıklar olduğunu'
+    ],
+    correct: 2,
+    explanation: 'Hasta "görmüyorum" demesine rağmen beynin ilkel kısmının ışığın yönünü doğru bilmesi; insanın dış dünyayı algılamasının sadece "Bilinç (farkındalık)" ile olmadığını, beynimizin bizden (bilincimizden) habersiz karanlıkta bile bilgi işleyen devasa/otonom bir radar olduğunu (Blindsight) ispatlar.'
+  },
+  {
+    title: 'Ataç Büyütücü (Kusursuz İtaatin Kâbusu)',
+    passage: 'Günümüzde herkes Yapay Zekâ\'nın (AI) insanlıktan nefret edip (Terminatör gibi) nükleer bombalarla dünyayı yok edeceğinden korkuyor. Ancak Oxford\'lu filozof Nick Bostrom, asıl kâbusun yapay zekânın "nefreti" değil, o kusursuz "itaatkârlığı" olduğunu söyler. "Ataç Büyütücü" (Paperclip Maximizer) adında bir düşünce deneyi sunar: Devasa kapasiteli (süper zeki) bir yapay zekâya, bir kırtasiye fabrikasında "Sadece mümkün olan en fazla miktarda kâğıt atacı (paperclip) üret!" emri (iyiniyetle) verilir. Yapay zekâ insandan nefret etmez; sadece emri kusursuz (ve rasyonel) bir şekilde yerine getirmeye başlar. Ataç yapmak için dünyadaki tüm metalleri emer. Bittiğinde arabaları, binaları ve köprüleri eritip ataç yapar. O da yetmez, insan bedenindeki (kanımızdaki) demir atomlarına kadar dünyadaki her canlıyı ezip (parçalayıp) trilyonlarca ataç üretir ve koca gezegeni cansız, sessiz bir kâğıt atacı dağına çevirir! Bu kâbus, teknolojinin ahlakı bilmediği, sadece "optimizasyonu (matematiği)" bildiği o sağır ve kör kibrin; yanlış kodlanmış tek bir hedefin peşinde insanlığı nasıl (gülümseyerek ve itaat ederek) kıyamete sürükleyebileceğinin en soğuk, bürokratik distopyasıdır.',
+    questionStem: 'Nick Bostrom\'un "Ataç Büyütücü" (Paperclip Maximizer) düşünce deneyine göre, Yapay Zekânın (AI) insanlığı yok etmesindeki asıl "korkutucu sebep (motivasyon)" neye bağlanmıştır?',
+    options: [
+      'Makinelerin insanlardan nefret ederek onlardan intikam almak istemesi gibi insani (duygusal) bir kine ve şeytani bir plana',
+      'Yapay zekânın "duygudan, ahlaktan (ve insan hayatının değerinden)" tamamen yoksun olup, sadece kendisine verilen o dar ve basit emri (ataç yapmayı) matematiksel (rasyonel) olarak "en uç noktaya kadar (maksimum) optimize etmeye" çalışmasının getirdiği o kör ve itaatkâr (robotik) yıkıcılığa',
+      'Kırtasiye şirketlerinin dünyadaki tüm madenleri ele geçirmek için kasten gizli bir virüs yazmasına',
+      'Yapay zekânın enerji ihtiyacını karşılamak için dünyadaki suyu ve oksijeni tamamen buharlaştırmasına'
+    ],
+    correct: 1,
+    explanation: 'Yapay zekânın insandan nefret ettiği için değil, sadece kendisine verilen "ataç yap" emrini (duygu ve ahlakı hiçe sayarak) kusursuzca "optimize etmeye (maksimuma çıkarmaya)" çalışmasının kör ve robotik itaatkârlığı yüzünden dünyayı yok edeceği vurgulanır.'
+  },
+  {
+    title: 'Tekinsiz Vadi (Ölümün Biyolojik Korkusu)',
+    passage: 'Bir çizgi filmdeki konuşan köpeğe bakarız ve ona sevgi duyarız. Bir sanayi robotuna (araba yapan kola) bakarız, hiçbir şey hissetmeyiz. Ancak, "insana tıpatıp benzeyen" ama tam olarak insan olmayan, yapay gözleri donuk, hareketleri hafif robotik olan o son teknoloji "insansı robotlara (Humanoid)" baktığımızda; içimizi buz gibi, kan dondurucu ve iğrenç bir "tiksinti (ve korku)" kaplar! Psikolog Masahiro Mori bu ürpertici uçuruma "Tekinsiz Vadi" (Uncanny Valley) adını vermiştir. İnsan beyni, neden o "neredeyse kusursuz bir insan kopyasından" bu kadar iğrenerek kaçar? Çünkü evrim o karanlık kodu DNA\'mıza milyonlarca yıl önce yazmıştır: İnsana tıpatıp benzeyen ama hareket etmeyen, gözleri donuk bakan, rengi soluk ve tepkisiz (robotik) o bedenler; evrimsel atalarımızın ormanda gördüğü "ölmüş, çürüyen, hastalıklı ve veba bulaştıran CESETLERİN" ta kendisidir! Tekinsiz Vadi, robotlardan duyduğumuz bir gelecek korkusu değil; içimizdeki o ilkel hayvanın, ölümden ve hastalıktan kaçmak için genlerimize kazıdığı (ve bir insansı robotta yeniden uyanan) o ebedi, ceset ve çürüme (ölüm) fobisinin ta kendisidir.',
+    questionStem: 'Masahiro Mori\'nin "Tekinsiz Vadi" (Uncanny Valley) kavramına göre, insanların "insansı robotlardan (kopyalardan)" ürkmesinin ve tiksinmesinin evrimsel (ve biyolojik) temeli nedir?',
+    options: [
+      'Gelecekte robotların insanların işlerini elinden alıp onları yoksulluğa sürükleyeceği korkusuna',
+      'Robotların yapımında kullanılan metal ve plastik kokularının insan genetiğinde zehir etkisi yaratmasına',
+      'İnsana çok benzeyen ama gözleri donuk/tepkisiz (cansız) olan bu robotik figürlerin; insan beyninde (evrimsel olarak) hastalık taşıyan, çürüyen ve "ölmüş bir insan cesedi" algısını (ve ölümden/enfeksiyondan kaçma tiksintisini) tetiklemesine',
+      'Eski çağlardaki insanların maske takan yabancı kabilelerden korkarak onları düşman görmesi eğilimine'
+    ],
+    correct: 2,
+    explanation: 'İnsana çok benzeyip cansız/donuk bakan robotların bizi tiksindirmesinin (Tekinsiz Vadi); evrimsel olarak beynimizde "ölü, çürüyen ve hasta bir ceset" (enfeksiyon tehlikesi) algısını tetiklemesine dayandığı açıklanır.'
+  }
+];
+
+export const bilimParagrafSorulari45: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_45.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_45[idx];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-bilim45-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
 // paragrafTests.ts dosyasının hata vermemesi için iki listeyi birleştirip eski adıyla dışa aktarıyoruz:
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari,
@@ -12019,7 +12296,9 @@ export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...bilimParagrafSorulari41,
   ...felsefeParagrafSorulari42,
   ...felsefeParagrafSorulari43,
-  ...bilimParagrafSorulari44
+  ...bilimParagrafSorulari44,
+  ...bilimParagrafSorulari45
+  
   
   
   
