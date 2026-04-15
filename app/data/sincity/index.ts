@@ -11143,6 +11143,283 @@ export const bilimParagrafSorulari41: BilimParagrafQuestion[] = Array.from({ len
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
+const PARAGRAPH_THEMES_42 = [
+  {
+    title: 'Büyük Filtre (Kozmik Sessizlik)',
+    passage: 'Evrende milyarlarca galaksi ve trilyonlarca yaşanabilir gezegen var. Matematiksel olarak uzaylı medeniyetlerin çoktan her yeri doldurmuş olması gerekirdi. Fizikçi Enrico Fermi o dondurucu soruyu sordu: "Peki ama herkes nerede?" Bu sağır edici kozmik sessizliği açıklayan en korkutucu teori "Büyük Filtre"dir (The Great Filter). Bu teoriye göre, evrende yaşam ortaya çıksa bile, zeki medeniyetlerin uzaya açılmasını (tanrılaşmasını) engelleyen, onları mutlaka yok eden "aşılamaz bir evrimsel duvar (filtre)" vardır. Kâbus şudur: Biz insanlık olarak bu filtreyi (nükleer savaşı, iklim krizini veya yapay zekâyı) henüz aşmadık. Gökyüzünün sessiz olması, bizden önceki tüm zeki medeniyetlerin bu filtreye çarpıp yok olduğunun (kendi kendilerini imha ettiklerinin) kanıtıdır. Evrenin sessizliği bir huzur değil, bizim de sıramızı beklediğimiz devasa bir kozmik mezarlığın fısıltısıdır.',
+    questionStem: 'Büyük Filtre (The Great Filter) teorisine göre, uzaydaki (Fermi Paradoksu) sağır edici sessizliğin asıl felsefi/bilimsel nedeni nedir?',
+    options: [
+      'Uzaylıların dünyadaki insanlardan nefret ettiği için kasten iletişim kurmaması',
+      'Zeki medeniyetlerin teknolojik olarak belli bir seviyeye ulaştıklarında, uzaya yayılamadan önce mutlaka kendi sonlarını getiren (onları yok eden) aşılamaz bir "evrimsel/teknolojik bariyere (filtreye)" çarpıp yok olmaları',
+      'Evrendeki ses dalgalarının karanlık madde tarafından emilerek yok edilmesi',
+      'Uzay gemilerinin ışık hızına ulaşamadığı için galaksiler arası seyahatin imkânsız olması'
+    ],
+    correct: 1,
+    explanation: 'Herkes nerede sorusuna verilen cevap; zeki türlerin uzaya yayılmadan önce kendi kendilerini yok etmelerine neden olan o "aşılamaz ölümcül duvara (filtreye)" çarpmalarıdır.'
+  },
+  {
+    title: 'Theseus\'un Gemisi (Kimlik İllüzyonu)',
+    passage: 'Antik Yunan felsefesinin en zihin yakan paradoksu "Theseus\'un Gemisi"dir. Büyük kahraman Theseus\'un gemisi limana çekilir. Yıllar geçtikçe ahşap tahtaları çürür ve ustalar çürüyen her tahtayı yenisiyle değiştirir. 50 yıl sonra geminin üzerindeki "orijinal tek bir tahta bile" kalmamıştır; hepsi yenilenmiştir. Soru şudur: Limanda duran bu gemi, hala Theseus\'un gemisi midir, yoksa yepyeni bir gemi mi olmuştur? Eğer oysa, eski tahtaları toplayıp başka bir gemi yapsak asıl gemi hangisi olur? Bu paradoks, gemiyle değil, "İnsan" ile ilgilidir! İnsan vücudundaki hücrelerin tamamı her 7-10 yılda bir ölür ve yenilenir. 10 yıl önceki beyniniz, deriniz ve kalbiniz bugün fiziksel olarak tamamen yok olmuştur. Theseus\'un gemisi bize şu gerçeği fırlarır: "Ben" dediğimiz o sarsılmaz (kalıcı) kimlik, aslında fiziksel bir gerçeklik değil; beynimizin anılarla birbirine teyellediği, sürekli değişen bir nehrin üzerine kurulmuş dilsiz bir illüzyondur.',
+    questionStem: 'Theseus\'un Gemisi paradoksu, "İnsan ve Kimlik (Benlik)" kavramlarına dair hangi sarsıcı gerçeği sorgulatır?',
+    options: [
+      'Antik dönem gemicilik teknolojisinin modern teknolojiden çok daha dayanıklı olduğunu',
+      'İnsanın ahlaki değerlerinin yaşlandıkça tamamen değişime uğradığını',
+      'Fiziksel parçalarımız (hücrelerimiz) sürekli değişip yenilendiği halde, kendimize hala aynı "Ben (kimlik)" dememizin; aslında fiziksel bir kalıcılık değil, zihnin kurguladığı bir hafıza illüzyonu (süreklilik kurgusu) olduğunu',
+      'Gemi veya eşyalarla kurulan duygusal bağların insanı her zaman psikolojik olarak zayıflattığını'
+    ],
+    correct: 2,
+    explanation: 'Parçaları tamamen değişen geminin "aynı" kalıp kalmadığı sorusu; hücreleri tamamen yenilenen insanın "Ben aynıyım" hissinin fiziksel değil, zihinsel bir illüzyon/kurgu olduğunu sorgulatır.'
+  },
+  {
+    title: 'Phineas Gage (Ruhun Parçalanışı)',
+    passage: '1848 yılında demiryolu işçisi Phineas Gage, kazara patlayan bir dinamit yüzünden korkunç bir yara aldı. Bir metre uzunluğunda, kalın bir demir çubuk sol yanağından girdi, beyninin frontal lobunu parçalayarak kafatasının üstünden çıkıp uçtu! Mucizevi bir şekilde Gage ölmedi, ayağa kalktı ve konuşmaya devam etti. Ancak asıl şok aylar sonra yaşandı. Kazadan önce son derece kibar, ahlaklı, dindar ve çalışkan olan Gage; iyileştikten sonra küfürbaz, ahlaksız, dürtüsel ve saldırgan bir canavara dönüşmüştü! Arkadaşları "Bu artık Gage değil" dediler. Bu trajik kaza, felsefe ve din tarihinin o bin yıllık dogmasını (Ruh kavramını) tek kalemde yıktı: İnsanın "Ahlakı, kişiliği ve ruhu" (bedenden bağımsız) ilahi bir bulut değildir; onlar, kelimenin tam anlamıyla etten ve kandan oluşan frontal lobun (beynin) içine hapsolmuş kimyasal bir yazılımdır. Demir çubuk beyni yırttığında, o yüce "Ruh" da saniyeler içinde parçalanıp çökmüştür.',
+    questionStem: 'Phineas Gage kazası (Demir çubuk giren adamın karakter değiştirmesi), felsefe ve bilim dünyasında neyin kesin kanıtı olmuştur?',
+    options: [
+      '19. yüzyıldaki demiryolu işçilerinin ağır çalışma şartları altında zaten agresifleştiğinin',
+      'İnsanın "kişiliği, ahlakı ve ruhu" olarak adlandırılan o yüce (soyut) kavramların; bedenden bağımsız ilahi bir varlık olmadığını, doğrudan beynin fiziksel/kimyasal anatomisine (frontal loba) bağlı birer "biyolojik yazılım" olduğunu',
+      'Ağır fiziksel travmaların insanların sadece anılarını sildiğini (amnezi) kanıtladığının',
+      'Din ve ahlak eğitiminin beyin hasarlarını iyileştirebilen tek ruhsal tedavi yönteminin olduğunun'
+    ],
+    correct: 1,
+    explanation: 'Beynin ön lobu parçalandığında adamın "ahlakının/kişiliğinin" tamamen değişmesi; ruh ve ahlakın soyut/ilahi bir bulut değil, beynin fiziksel ve biyolojik yapısına bağlı (hasar görebilen) bir yazılım olduğunu kanıtlar.'
+  },
+  {
+    title: 'Dunning-Kruger Etkisi (Cehaletin Özgüveni)',
+    passage: '1995 yılında McArthur Wheeler adında bir hırsız, yüzüne "limon suyu" sürerek iki bankayı güpegündüz, maskesiz soydu. Yakalandığında polislere şaşkınlıkla "Ama yüzüme görünmez mürekkep (limon suyu) sürmüştüm, kameralar beni nasıl gördü?" diye sordu. Bu aptallık seviyesi psikologlar Dunning ve Kruger\'ı harekete geçirdi. Yaptıkları araştırma o dondurucu gerçeği (Dunning-Kruger Etkisini) ortaya çıkardı: Bir konuda "tamamen cahil olan" insanlar, sadece o konuyu bilmemekle kalmazlar; aynı zamanda ne kadar cahil olduklarını idrak edebilecek (farkına varacak) "bilişsel kapasiteden de yoksundurlar". Bu yüzden kendilerini dâhi sanarak o korkunç, cahil cesaretini (kibirli özgüveni) sergilerler. Oysa konuyu gerçekten bilen uzmanlar, o alanın ne kadar derin ve karmaşık olduğunu bildikleri için daima şüpheci ve güvensizdirler. Cehalet, insanın beynine bilginin kendisinden çok daha büyük, sarsılmaz ve küstah bir özgüven zerk eden tehlikeli bir uyuşturucudur.',
+    questionStem: 'Dunning-Kruger Etkisi\'nin temel psikolojik paradoksu aşağıdakilerden hangisidir?',
+    options: [
+      'Zeki insanların her zaman suç işlemeye ve dolandırıcılığa daha yatkın olması',
+      'Bir konuda aşırı bilgisiz (cahil) olan bireylerin, ne kadar bilgisiz olduklarını fark edecek "kapasiteden de yoksun" oldukları için, kendilerini uzman sanarak küstah ve devasa bir "sahte özgüvene" kapılmaları paradoksu',
+      'Limon suyu gibi kimyasalların insan beyninde geçici körlük ve halüsinasyon yaratması',
+      'Üniversite mezunlarının pratik hayatta cahillerden her zaman daha başarısız olması'
+    ],
+    correct: 1,
+    explanation: 'Cahillerin cahil olduklarını anlayacak kapasiteleri olmadığı için kendilerini dâhi (aşırı özgüvenli) sanmaları; gerçek uzmanların ise şüpheci olması Dunning-Kruger etkisinin asıl paradoksudur.'
+  },
+  {
+    title: 'Milgram Deneyi (Otoritenin Kuklaları)',
+    passage: 'İkinci Dünya Savaşı\'ndan sonra Naziler yargılanırken hepsi aynı savunmayı yaptı: "Biz sadece emirlere uyuyorduk!" Psikolog Stanley Milgram, "Sıradan insanlar gerçekten sırf emir verildi diye vahşice cinayet işler mi?" sorusunu laboratuvara taşıdı. Gönüllü deneklerden, yandaki odada bulunan (ve acı çekme rolü yapan) bir öğrenciye her yanlış cevapta elektrik şoku vermelerini istedi. Şok seviyesi 450 volta (Ölümcül tehlike / XXX) kadar çıkıyordu. Karşı odadan çığlıklar, "Kalbim dayanmıyor, beni çıkarın!" feryatları yükselmesine rağmen, deneklerin yanındaki "beyaz önlüklü araştırmacı (otorite)" sadece sakin bir sesle "Lütfen teste devam edin" dedi. Sonuç kan dondurucuydu: Sıradan, masum ve iyi kalpli insanların %65\'i, karşıdaki insanın öleceğini bile bile şalteri sonuna kadar (450 volta) indirip o ölümcül şoku verdiler! Milgram deneyi, insanın içindeki vahşetin kaynağının kana susamışlık değil; "Otoriteye (üniformaya/emre) boyun eğme" konusundaki o korkunç, iradesiz ve robotik köleliğimiz olduğunu ispatladı.',
+    questionStem: 'Stanley Milgram\'ın "Elektrik Şoku Deneyi", sıradan insanların sergilediği vahşet hakkında hangi sarsıcı sosyolojik/psikolojik tespiti yapmıştır?',
+    options: [
+      'İnsanların gizliden gizliye elektrik enerjisine ve teknolojik aletlere tapındığını',
+      'Kötülüğün ve cinayetin sadece psikopatlara özgü olmadığı; sıradan ve masum insanların bile, "meşru ve güçlü bir otorite (üniforma)" onlara emir verdiğinde (sorumluluğu devrettiklerinde), ahlaklarını kapatıp ölümcül birer kuklaya (katile) dönüşebileceği gerçeğini',
+      'Elektrik şokunun eğitimde hafızayı ve öğrenmeyi artırdığını savunan bilimsel kibri',
+      'Deneklerin karşısındaki kişilerin aslında hiç acı çekmediğini anlamalarının getirdiği rahatlamayı'
+    ],
+    correct: 1,
+    explanation: 'Sıradan insanların sırf "beyaz önlüklü adam emir verdi diye" çığlıklara rağmen ölümcül şoku vermesi; kötülüğün otoriteye boyun eğme (sorumluluğu devretme) ile tetiklendiğini ve herkesin bir katile dönüşebileceğini ispatlar.'
+  },
+  {
+    title: 'Soluk Mavi Nokta (Kozmik Tevazu)',
+    passage: '1990 yılında, Güneş sisteminin sınırlarını terk eden Voyager 1 uzay aracı, bilim insanı Carl Sagan\'ın özel isteğiyle kamerasını son bir kez arkaya, Dünya\'ya çevirdi ve o efsanevi fotoğrafı çekti. 6 milyar kilometre uzaktan çekilen o fotoğrafta, Dünya devasa uzay boşluğunun içinde süzülen "soluk, küçücük mavi bir toz zerresi"nden (Pale Blue Dot) ibaretti. Sagan o fotoğrafa bakıp insan kibrini un ufak eden şu manifestoyu yazdı: "O noktaya tekrar bakın. O, evimiz. O, biziz. Sevdiğiniz herkes, tanıdığınız herkes, adını duyduğunuz herkes, gelmiş geçmiş her insan hayatını orada yaşadı. İdeolojilerimiz, ekonomik doktrinlerimiz, şanlı krallarımız, kahramanlarımız, âşıklarımız, her aziz ve her günahkâr... Güneş ışınında asılı duran o toz zerresinin üzerinde yaşadı. O görünmez noktanın minicik bir kısmına anlık olarak hükmedebilmek için ne nehirler dolusu kanlar döktük." Soluk Mavi Nokta, evrenin o soğuk ve devasa boşluğunda; kibrimizin, savaşlarımızın ve sınırlarımızın ne kadar anlamsız, mikroskobik ve trajikomik bir illüzyon olduğunu gösteren en acımasız ve merhametli aynadır.',
+    questionStem: 'Carl Sagan\'ın "Soluk Mavi Nokta" (Pale Blue Dot) fotoğrafı üzerinden vurguladığı asıl felsefi mesaj nedir?',
+    options: [
+      'Dünyanın atmosferinin giderek incelerek mavi rengini kaybedeceği yönündeki iklimsel kehanet',
+      'Güneş ışınlarının uzay araçlarının kameralarına her zaman zarar verebileceği uyarısı',
+      'İnsanoğlunun savaşlarını, ideolojilerini ve imparatorluk (sınır) kibrini paramparça ederek; evrenin o devasa boşluğunda sadece küçücük bir "toz zerresi" olduğumuzu (kozmik tevazuyu ve evrensel birliğimizi) hatırlatması',
+      'Uzay araştırmalarına ayrılan bütçelerin dünya sorunlarını çözmekten çok daha önemli olduğu'
+    ],
+    correct: 2,
+    explanation: 'Dünyanın 6 milyar km uzaktan sadece bir "toz zerresi" gibi görünmesi; üzerindeki tüm savaşların ve sınırların kibrini yıkarak, insanoğluna kozmik bir tevazu ve birlik dersi (mesajı) verir.'
+  },
+  {
+    title: 'Kintsugi (Yaraların Altınla Kaplanması)',
+    passage: 'Batı kültüründe bir vazo veya porselen kâse kırıldığında o artık "çöp"tür veya kırıklar görünmeyecek şekilde (utançla) yapıştırılmaya çalışılır. Ancak Japon felsefesinde buna tam zıt, muazzam bir sanat vardır: "Kintsugi" (Altın Doğrama). Japon ustalar, kırılan bir kâsenin parçalarını atmazlar veya gizlemezler. Aksine, o kırık çatlakları "sıvı altın veya gümüş" ile birleştirip yapıştırırlar! Kâse onarıldığında, üzerindeki o yara izleri (altın damarlar gibi) eskisinden çok daha belirgin, kusurlu ama büyüleyici bir güzelliğe kavuşur. Kintsugi\'nin felsefesi şudur: Bir nesnenin (veya insanın) kırılması (hasar alması) onun değerini düşürmez. O acılar, o travmalar ve hayatın açtığı kırıklar bizim utanılacak kusurlarımız değil; bizi eşsiz yapan, bizi olgunlaştıran ve "yaşanmışlığımızın" altınla çizilmiş onurlu tarihleridir. Kusursuzluk sıkıcıdır; bizi asıl değerli (ve güzel) kılan şey, kırıklarımızı nasıl taşıdığımızdır.',
+    questionStem: 'Japonların kırık eşyaları altınla onarma sanatı (Kintsugi), insan psikolojisi ve yaşam felsefesi bağlamında neyin metaforudur?',
+    options: [
+      'Altın ve gümüş gibi madenlerin porselen yapıştırıcısı olarak diğer kimyasallardan çok daha sağlam olduğunun',
+      'Eski eşyaları geri dönüştürerek ekonomik olarak tasarruf sağlama ve israfı önleme çabasının',
+      'İnsanın hayatında yaşadığı acıların, travmaların ve "kırıkların" (kusurların) saklanması gereken utançlar olmadığı; aksine, bizi olgunlaştıran, eşsiz kılan ve gururla taşınması gereken (altınla çizilmiş) değerli "yaşanmışlık izleri" olduğu felsefesinin',
+      'Batı sanatının Japon sanatından estetik olarak her zaman daha üstün ve kusursuz olduğunun'
+    ],
+    correct: 2,
+    explanation: 'Kırıkların atılmayıp altınla belirginleştirilmesi; insanın yara ve travmalarını utanç (kusur) olarak saklamak yerine, onu değerli/eşsiz kılan onurlu "yaşanmışlık izleri" olarak kabul edip yüceltmesi felsefesidir.'
+  },
+  {
+    title: 'Ortak Malların Trajedisi (Bencilin Kıyımı)',
+    passage: 'Ekonomi ve ekoloji biliminin en karanlık teorilerinden biri "Ortak Malların Trajedisi"dir (Tragedy of the Commons). Bir köyde, herkese açık ve ücretsiz olan yemyeşil bir ortak mera düşünün. Mantıklı (ve bencil) bir çoban şöyle düşünür: "Eğer sürüme bir inek daha eklersem, sütün kârı %100 bana ait olacak; ancak o fazladan ineğin meraya vereceği zarar tüm köylülere bölünecek." Bu matematiksel bencillik kusursuzdur! Köydeki her çoban bu rasyonel bencil hesabı yapar ve sürüsüne inek eklemeye devam eder. Sonuç? Ortak mera saniyeler içinde aşırı otlatmadan çöle döner, tüm otlar biter ve köydeki tüm inekler açlıktan ölür! İnsanoğlunun otonom doğası budur: Okyanusları kirletirken, ormanları keserken veya trafiğe çıkarken hep "Benim yaptığım küçük kâr (veya zarar) koca sisteme ne yapabilir ki?" kibrine sığınırız. Ancak milyarlarca insanın bu "rasyonel bencilliği" birleştiğinde, sonuç her zaman kaçınılmaz, kolektif ve ölümcül bir kıyamettir.',
+    questionStem: 'Ortak Malların Trajedisi kavramı, bireysel mantık ile toplumsal/ekolojik sonuç arasındaki hangi "yıkıcı paradoksu" açıklar?',
+    options: [
+      'Köylülerin hayvancılık yapmak yerine tarıma yönelmesinin ekonomiyi her zaman canlandırdığını',
+      'Her bireyin sadece kendi (kısa vadeli) "kişisel ve rasyonel kârını" düşünerek hareket etmesinin (bencilliğin); uzun vadede hepimize ait olan "ortak kaynakların (doğanın/sistemin)" tükenmesine ve kolektif bir yıkıma/kıyamete (paradoksa) yol açtığını',
+      'Özel mülkiyetin tamamen yasaklanarak tüm malların devlete ait olması gerektiği komünist ideolojisini',
+      'Hayvanların otlaklarda serbest bırakılmasının bulaşıcı hastalıkları artırdığı bilimsel gerçeğini'
+    ],
+    correct: 1,
+    explanation: 'Her çobanın kendi kârını düşünerek meraya inek eklemesinin tüm merayı (ortak malı) çökertmesi; bireysel "rasyonel bencilliğin" birleştiğinde kolektif yıkıma ve kıyamete (trajik paradoksa) neden olduğunu açıklar.'
+  },
+  {
+    title: 'Stanford Hapishane Deneyi (Zalimliğin Kostümü)',
+    passage: '1971 yılında psikolog Philip Zimbardo, Stanford Üniversitesi\'nin bodrum katına sahte bir hapishane kurdu. Tamamen sağlıklı, normal ve iyi kalpli 24 üniversite öğrencisini rastgele iki gruba ayırdı: Mahkûmlar ve Gardiyanlar. Gardiyanlara üniforma, cop ve gözlük verildi. Deneyin 2 hafta sürmesi planlanıyordu. Ancak sadece 2. günün sonunda "iyi kalpli" öğrenciler (gardiyanlar), mahkûmlara akılalmaz, sadistçe işkenceler yapmaya (psikolojik eziyet etmeye) başladılar. Mahkûmlar sinir krizi geçirdi, isyanlar çıktı. Gardiyanlar yetkilerinin sarhoşluğuna öylesine kapılmıştı ki, Zimbardo deneyi 6. günde dehşet içinde sonlandırmak zorunda kaldı! Bu deney insanın "kötülük" algısını darmadağın eder: Kötülük veya sadizm her zaman doğuştan gelen (veya psikopatlara özgü) bir karakter bozukluğu değildir. Sıradan, ahlaklı bir insana sadece "güçlü bir kostüm, bir rol (otorite) ve uygun bir sistem" verdiğinizde, içinizdeki o vahşi diktatörün saniyeler içinde (vicdanı unutarak) nasıl uyandığını kanıtlayan kapkaranlık bir aynadır.',
+    questionStem: 'Stanford Hapishane Deneyi, sıradan insanların sergilediği vahşet ve "kötülük" hakkında sosyolojik olarak neyi ispatlamıştır?',
+    options: [
+      'Üniversite öğrencilerinin ergenlik döneminde her zaman suç işlemeye meyilli olduklarını',
+      'Hapishanelerdeki fiziksel koşulların mahkûmların psikolojisini iyileştirmede yetersiz kaldığını',
+      'Kötülüğün (ve sadizmin) her zaman içsel/doğuştan bir karakter bozukluğu olmadığını; sıradan bir insana "mutlak güç, üniforma (rol) ve otoriter bir sistem" sunulduğunda, şartların onu saniyeler içinde vicdansız bir zorbaya dönüştürebileceğini',
+      'Gardiyanların aslında gizlice para karşılığında mahkûmlara işkence etmeyi kabul ettiklerini'
+    ],
+    correct: 2,
+    explanation: 'İyi kalpli öğrencilerin gardiyan üniforması giyince sadiste dönüşmesi; kötülüğün sadece karakterde değil, kişiye sunulan o "güç, rol ve sistem" (şartlar) sayesinde anında ortaya çıkabilen (uyandırılabilen) bir potansiyel olduğunu ispatlar.'
+  },
+  {
+    title: 'Kelebek Etkisi (Lorenz Çekicisi)',
+    passage: '1960\'larda meteorolog Edward Lorenz, bilgisayarında hava durumunu simüle eden matematiksel bir denklem çözüyordu. Bir gün aynı denklemi tekrar çalıştırırken, zamandan tasarruf etmek için 0.506127 olan bir başlangıç rakamını, sadece sondaki küsuratları silerek 0.506 olarak girdi. Bu "binde birlik" mikroskobik değişiklik (fark), simülasyonun sonunda sadece ufak bir rüzgâr sapması yaratmadı; günler sonra koca bir fırtınanın (kasırganın) rotasını ve tüm iklimi tamamen değiştirdi! Lorenz bu durumu o efsanevi (ve tüyler ürpertici) sözle açıkladı: "Brezilya\'da kanat çırpan bir kelebek, Teksas\'ta bir kasırgaya neden olabilir." (Kelebek Etkisi / Kaos Teorisi). Bu keşif, evrenin determinist (kusursuz hesaplanabilir) bir saat mekanizması olmadığını kanıtlar. Evren, o kadar hassas, pamuk ipliğine bağlı ve akılalmaz derecede birbirine entegre (kaotik) bir ağdır ki; hayatımızdaki en küçük, en önemsiz (küsurat) sandığımız bir an veya kelime, yıllar sonra kendi kaderimizde bir tayfuna (veya kıyamete) dönüşebilir.',
+    questionStem: 'Kaos Teorisi\'ndeki "Kelebek Etkisi" (mikroskobik bir farkın fırtınaya neden olması), evren ve kader algımız hakkında neyi sembolize eder?',
+    options: [
+      'Kelebeklerin kanatlarındaki statik elektriğin atmosferdeki rüzgârları yönlendirdiği biyolojik gerçeğini',
+      'Bilgisayarların karmaşık matematiksel hesaplamalarda her zaman hata (bug) verebileceğini',
+      'Evrenin ve hayatın, birbiriyle inanılmaz derecede hassas ve kopmaz bağlarla (ağlarla) örülü olduğunu; bu yüzden önemsiz/küçük sandığımız (binde birlik) en ufak bir başlangıç değişikliğinin bile zamanla devasa ve öngörülemez felaketlere (veya değişimlere) yol açabileceğini',
+      'Hava durumunun aylar öncesinden kusursuz bir şekilde tahmin edilebileceğine dair bilimsel umudu'
+    ],
+    correct: 2,
+    explanation: 'Binde birlik sayının silinmesinin koca kasırgaya yol açması (Kelebek Etkisi); evrenin ve hayatın o kadar hassas bir kaotik ağa sahip olduğunu, en ufak bir detayın bile devasa/öngörülemez sonuçlar doğurabileceğini sembolize eder.'
+  },
+  {
+    title: 'Hawthorne Etkisi (İzlenmenin Ağırlığı)',
+    passage: '1920\'lerde Chicago\'daki Hawthorne Elektrik Fabrikası\'nda, işçilerin verimliliğini artırmak için psikologlar tarafından bir dizi deney yapıldı. Çalışma alanının ışıkları artırıldı; üretim fırladı! Sonra molalar uzatıldı; üretim yine arttı. Ancak bilim insanlarını şoka sokan an şuydu: Işıkları tekrar kısıp ortamı karanlık (kötü) hale getirdiklerinde bile üretim artmaya devam etti! İşçileri motive eden şey fiziksel şartlar (ışık veya mola) değildi. Onları daha hızlı çalışmaya (kendi sınırlarını aşmaya) iten tek şey; "Bilim insanları tarafından İZLENİYOR (denek) olduklarının farkında olmalarıydı!" Psikolojiye "Hawthorne Etkisi" olarak geçen bu fenomen; insanın kendi doğal, saf halinde kalamayan kurgusal bir varlık olduğunu ispatlar. Bir insanın üzerine bir kamera, bir göz veya bir otorite (dikkat) çevrildiğinde; insan anında kendi gerçek doğasını askıya alır ve izleyicinin ondan beklediği o ideal "role (performansa)" bürünür. İzlemek, sadece gözlemlemek değil; gerçeği anında bozan ve değiştiren fiziksel bir müdahaledir.',
+    questionStem: 'Hawthorne Etkisi (İzlenildiğini bilen işçilerin sürekli çok çalışması), insan davranışı ve "gerçeklik" üzerinde neyin yıkıcı bir etkisini kanıtlar?',
+    options: [
+      'İşçilerin fabrikalardaki aydınlatma yetersizliği yüzünden kalıcı göz hasarları yaşamasını',
+      'Bir insanı (veya olayı) "izleme / gözlemleme" eyleminin pasif bir kayıt olmadığını; insanın izlendiğini (denek olduğunu) fark ettiği an kendi doğal halini bırakıp beklentilere uygun sahte bir performansa (role) bürünerek "gerçekliği anında değiştirdiği" gerçeğini',
+      'Elektrik fabrikalarındaki iş güvenliği uzmanlarının işçilere zorla ağır mesai yaptırdığı kibrini',
+      'Müzik ve molaların insanları her zaman tembelleştirerek verimi düşürdüğü yönündeki ekonomik kuralı'
+    ],
+    correct: 1,
+    explanation: 'Işık kısılsa bile sırf "izlendiklerini bildikleri için" verimin artması; izlenme (gözlem) eyleminin insanı doğal halinden çıkarıp sahte bir performansa (role) iterek asıl gerçeği değiştirdiğini/bozduğunu kanıtlar.'
+  },
+  {
+    title: 'Platon\'un Mağara Alegorisi (Uyanışın Cezası)',
+    passage: 'Platon\'un "Devlet" adlı eserindeki Mağara Alegorisi, insanlığın cehaletine tutulmuş en sarsıcı (ve acı verici) felsefi aynadır. Doğduklarından beri karanlık bir mağarada zincirlenmiş, sırtları mağaranın girişine dönük tutsaklar hayal edin. Arkalarından geçen nesnelerin sadece duvara vuran "gölgelerini" görürler ve hayatları boyunca bu gölgeleri "tek gerçeklik" sanırlar. Bir gün tutsaklardan biri zincirlerini kırar, mağaradan çıkar ve Güneş\'i, asıl gerçek dünyayı (ağaçları, renkleri) görür. Gözleri ışıktan kör olacak gibi acı çeker ama sonunda "Aydınlanır" (Hakikati bulur). Bu aydınlanmış kişi, diğer tutsakları da kurtarmak için mağaranın karanlığına geri döner ve onlara "Duvarlardakiler sadece yalan birer gölge, asıl gerçek dışarıda!" der. Peki zincirliler ne yapar? Ona inanmazlar, alay ederler, onun dışarıda delirdiğini düşünürler ve zincirlerini çözmeye çalıştığı için onu "öldürürler". Platon bize şu ebedi trajediyi fısıldar: Cahiller, kendi alıştıkları yalan dünyasını (karanlığı) o kadar severler ki; onlara hakikati (ışığı) getiren o aydınlanmış kişiyi kurtarıcı değil, düzenlerini bozan bir düşman olarak görüp çarmıha gererler.',
+    questionStem: 'Platon\'un Mağara Alegorisi\'nde, mağaraya geri dönen aydınlanmış kişinin "diğer tutsaklar tarafından öldürülmek istenmesi", toplumsal bağlamda neyin felsefi bir metaforudur?',
+    options: [
+      'Güneş ışığının insan gözünde kalıcı körlük (hasar) yarattığı fiziksel gerçeğinin',
+      'Toplumun (cahillerin), alıştıkları ve güvende hissettikleri o konforlu "yalanlarına (gölgelerine)" öylesine bağımlı olduklarının ki; onları bu karanlıktan (cehaletten) kurtarıp hakikati (ışığı) sunan aydınları düşman ve deli ilan ederek yok etme (öldürme) eğilimlerinin',
+      'Zincirlenmiş insanların uzun süre hareketsiz kaldıkları için fiziksel olarak çok saldırganlaştıklarının',
+      'Antik Yunan\'daki mağaraların suçluları hapsetmek için kullanılan karanlık bir zindan olduğunun'
+    ],
+    correct: 1,
+    explanation: 'Zincirlilerin gölgeleri gerçek sanıp, onlara güneşi anlatan (aydınlanmış) kişiyi öldürmek istemesi; toplumun kendi konforlu cehaletini/yalanını korumak uğruna hakikati söyleyen aydınları yok etme (düşman görme) eğiliminin metaforudur.'
+  },
+  {
+    title: 'Ozymandias (Çöldeki Kırık Heykel)',
+    passage: 'İngiliz şair Percy Bysshe Shelley\'nin "Ozymandias" adlı efsanevi şiirinde, bir gezgin ıssız ve uçsuz bucaksız bir çölün ortasında, kuma yarı yarıya gömülmüş, devasa ama paramparça olmuş taştan bir insan yüzü ve iki kırık bacak bulur. Bu harabenin altındaki kaidede şu inanılmaz kibirli ve korkutucu yazı kazınmıştır: "Benim adım Ozymandias, Kralların Kralı! Ey Güçlüler, benim inşa ettiğim bu ihtişamlı eserlere bakın ve çaresizlik içinde titreyin!" Ancak gezgin etrafına bakar; o kırık heykelin etrafında titrenecek hiçbir eser, hiçbir saray veya şehir yoktur. Sadece ufka kadar uzanan, o heykeli yutmuş olan uçsuz bucaksız, sessiz ve ıssız çöl kumları kalmıştır. Ozymandias (Firavun Ramses), sanat tarihinin en güçlü hicvidir: İnsanoğlu ne kadar büyük bir iktidar, saray veya yenilmez bir medeniyet kurarsa kursun; o devasa siyasi kibir, zamanın (ve doğanın) o dilsiz, acımasız ve yutucu rüzgârı karşısında eninde sonunda kumların altında çürüyen alaycı bir taş parçasına (hiçliğe) dönüşmeye mahkûmdur.',
+    questionStem: 'Shelley\'in "Ozymandias" şiirindeki "Kralların Kralı" yazısına rağmen etrafta sadece uçsuz bucaksız kumların kalması, felsefi olarak neyin kesin (ve ironik) çöküşünü sembolize eder?',
+    options: [
+      'Antik Mısır\'daki heykeltıraşların kullandığı taş blokların çöl sıcağına dayanıklı olmadığının',
+      'İktidarın, siyasi gücün ve insanın "ben ölümsüzüm/yenilmezim" diyerek inşa ettiği o devasa kibrinin; zamanın (ve doğanın) o silici/yutucu hiçliği karşısında ne kadar aciz, geçici ve trajikomik bir harabeye (yok oluşa) mahkûm olduğunun',
+      'Çöl fırtınalarının yön değiştirerek eski medeniyetleri başka bölgelere göçe zorladığının',
+      'Mısır firavunlarının hazinelerini her zaman heykellerin altına saklayarak hırsızlardan koruduğunun'
+    ],
+    correct: 1,
+    explanation: 'Kaidedeki o "titreyin" diyen devasa kibre rağmen etrafın sadece kum ve hiçlik olması; insanın mutlak gücünün ve kibrinin zaman/doğa karşısında silinmeye (çürüyüp harabe olmaya) mahkûm olduğu ironisini sembolize eder.'
+  },
+  {
+    title: 'Kessler Sendromu (Kendi Kafesimizi Örmek)',
+    passage: '1978 yılında NASA bilim insanı Donald Kessler, uzay çağının o şatafatlı rüyasına korkunç bir matematik kâbusu fırlattı (Kessler Sendromu). Yörüngeye fırlattığımız binlerce uydu, yakıt tankı ve roket parçası uzayda saatte 28.000 kilometre hızla serseri birer mermi gibi dönmektedir. Kessler dedi ki: Eğer uzayda iki uydu çarpışırsa, milyonlarca yeni şarapnel parçası oluşur. Bu parçalar diğer uydulara çarpar, onlar da parçalanır. Bu "zincirleme reaksiyon (domino etkisi)" saniyeler içinde tüm yörüngeyi milyarlarca kurşunun uçuştuğu geçilemez bir çöp bulutuna (hurdalığa) çevirir! Eğer bu kâbus yaşanırsa, dünyadaki tüm internet ve GPS çökmekle kalmaz; uzaya fırlatacağımız her roket anında parçalanacağı için, insanlık kendi yarattığı bu kurşun bulutunun (uzay çöpünün) altında yüzlerce yıl boyunca Dünya\'ya (kendi gezegenine) hapsolmuş birer mahkûma dönüşür. Kessler Sendromu; insanoğlunun kâr ve iletişim hırsıyla (plansızca) attığı teknolojik adımların, nasıl kendi elleriyle gökyüzüne ördüğü ve içinden asla çıkamayacağı devasa bir "dijital zindana" dönüşebileceğinin bilimsel kanıtıdır.',
+    questionStem: 'Kessler Sendromu\'nun (uzay çöplerinin zincirleme çarpışması) gerçekleşmesi durumunda insanlığı bekleyen asıl felsefi/teknolojik "ironi (hapishane)" nedir?',
+    options: [
+      'Göktaşlarının dünya atmosferini delerek okyanusların tamamen buharlaşmasına neden olması',
+      'İnsanoğlunun evreni keşfetmek ve (iletişimle) özgürleşmek uğruna uzaya gönderdiği o kibrin (teknolojinin); zincirleme bir yıkımla gökyüzünü geçilemez bir zırha çevirerek, bizi kendi ürettiğimiz çöplerin altında Dünya\'ya (kendi gezegenimize) ebediyen hapsetmesi (kendi zindanımızı örmesi) ironisi',
+      'Uyduların zamanla yerçekimine yenilip şehirlerin üzerine nükleer bombalar gibi düşmesi',
+      'Uzaylıların dünyayı izlemek için gönderdikleri casus uyduların sinyallerini bozabilme ihtimali'
+    ],
+    correct: 1,
+    explanation: 'Uzayı keşfetmek için atılan uyduların (ve çöplerin) çarpışarak dünyadan çıkışı ebediyen kapatması; teknolojinin/hırsın bizi kendi yarattığımız çöplük sayesinde dünyamıza (kendi ellerimizle ördüğümüz bir zindana) hapsetmesi ironisidir.'
+  },
+  {
+    title: 'Ölü İnternet Teorisi (Robotların Kalabalığı)',
+    passage: 'Günün birinde internete girdiğinizi, milyonlarca yorum, tartışma, beğeni ve video gördüğünüzü hayal edin. Herkes birbiriyle kavga ediyor, linçler yaşanıyor, akımlar doğuyor. Ancak arka planda kan dondurucu bir sır var: "Ölü İnternet Teorisi" (Dead Internet Theory). Bu komplo/distopya teorisine göre; 2016\'lardan sonra internetteki o "gerçek insan" trafiği çoktan ölmüştür! Şu an gördüğümüz o devasa kalabalık, yorum yazanlar, siyasi tartışmalar başlatanlar ve beğeni butonlarına basanların %90\'ı aslında sadece Yapay Zekâ (AI) botlarından ve sahte hesaplardan ibarettir! Yani internet, insanların konuştuğu organik bir meydan değil; sadece hükümetlerin ve şirketlerin algı yönetmek, ürün satmak ve korku yaymak için çalıştırdığı milyarlarca "botun (robotun) kendi kendisiyle konuştuğu", bizim de o sahte yankı odasında kendimizi "toplumun içindeymişiz" gibi hissettiğimiz devasa bir tiyatrodur (hayalet kasabadır). Ekranda hissettiğiniz o kalabalık, makinelerin sessizliğinden başka bir şey değildir.',
+    questionStem: 'Ölü İnternet Teorisi\'nin (Dead Internet Theory) modern insanın dijital yaşamı hakkında sunduğu o "karanlık illüzyon (kâbus)" nedir?',
+    options: [
+      'İnternet kablolarının ve sunucuların zamanla aşınarak veri aktarımını tamamen durduracağı korkusu',
+      'İnsanın internette milyonlarca "gerçek insanla" etkileşim kurduğunu (sosyalleştiğini) sanırken; aslında şirketlerin/algoritmaların ürettiği ve robotların (botların) kendi kendisiyle konuştuğu o sahte, ruhsuz ve manipülatif bir tiyatroda (yapay kalabalıkta) mutlak bir yalnızlık içinde olduğu kâbusu',
+      'Klavye kullanmanın insanlarda parmak eklemlerini zayıflatarak evrimsel bir geri dönüşe yol açması',
+      'Gelecekte internete girmek için sadece beynimize mikroçiplerin takılmasının zorunlu olacağı'
+    ],
+    correct: 1,
+    explanation: 'Gerçek sandığımız o milyonlarca yorumun/kalabalığın aslında sadece botların (AI) birbirleriyle konuştuğu sahte bir tiyatro olması; insanın dijital dünyadaki sosyalleşme sanrısının aslında mutlak (ve manipüle edilen) bir yalnızlık/illüzyon olduğu kâbusunu sunar.'
+  },
+  {
+    title: 'Sisifos Söyleni (Absürde Başkaldırı)',
+    passage: 'Yunan mitolojisinde Kral Sisifos, tanrıları kandırdığı için o korkunç ebedi cezaya çarptırılır: Devasa ve ağır bir kayayı, dik bir dağın zirvesine kadar elleriyle iterek çıkarmak zorundadır. Ancak kaya tam zirveye ulaştığında, aniden ellerinden kayar ve dağın en dibine (sıfır noktasına) tekrar yuvarlanır. Sisifos dağdan aşağı iner ve o kayayı yeniden, sonsuza dek aynı zirveye çıkarmaya mahkûmdur. Filozof Albert Camus, bu akılalmaz ve "tamamen anlamsız (absürt)" cezayı, modern insanın varoluşuyla (her sabah işe gitmesi, fatura ödemesi ve sonunda ölmesiyle) özdeşleştirir. Peki insan bu anlamsız döngü karşısında intihar mı etmelidir? Camus o şok edici felsefi patlamayı yapar: Hayır! Sisifos o kayayı yukarı iterken, kaderinin anlamsızlığını "bilerek (bilinçle)" omuzlar. Tanrıların ona verdiği o acımasız cezayı, kendi iradesiyle (isyanıyla) kabullenir. Camus şöyle der: "Tepelere doğru didinmek, insan yüreğini doldurmaya yeter. Sisifos\'u mutlu olarak hayal etmeliyiz." Anlam, zirveye ulaşmakta değil; kayayı iterken (o saçmalığa inat) gösterdiğimiz o onurlu isyanın ta kendisindedir.',
+    questionStem: 'Albert Camus\'nün "Sisifos Söyleni" felsefesinde, hayatın o saçma ve bitmek bilmez anlamsız (absürt) döngüsüne karşı bireye önerdiği o "onurlu tavır (kurtuluş)" nedir?',
+    options: [
+      'Kayayı itmekten tamamen vazgeçerek tanrılara yalvarmak ve af dilemek',
+      'Hayatın (ve ölümün) anlamsız ve absürt bir döngü olduğunu (kaderini) "tam bir bilinçle" kabullenip; bu anlamsızlığa pes etmek/intihar etmek yerine, kayayı her gün inatla yukarı iterek (mücadele ederek) o saçmalığa başkaldırmak ve o isyanda "kendi mutluluğunu (anlamını)" yaratmak',
+      'Dağın zirvesinde başka insanlarla bir araya gelerek taşı yerinde tutacak makineler inşa etmek',
+      'Eski mitolojik tanrılara olan inancı tamamen silerek sadece modern bilime tapınmak'
+    ],
+    correct: 1,
+    explanation: 'Sisifos\'un (insanın) kaderinin anlamsız olduğunu bilmesine rağmen, pes etmek yerine o kayayı inatla/bilinçle itmesi; absürtlüğe karşı onurlu bir isyan (başkaldırı) sergileyip mutluluğu o mücadelenin kendisinde (sürecinde) bulmasıdır.'
+  },
+  {
+    title: 'Ebbinghaus Unutma Eğrisi (Zihnin Sızdıran Kovası)',
+    passage: 'Alman psikolog Hermann Ebbinghaus, 1885 yılında insan hafızasının nasıl çalıştığını (veya nasıl çöktüğünü) bulmak için kendi üzerinde acımasız bir deney yaptı. Hiçbir anlamı olmayan, rastgele harflerden oluşan binlerce heceyi (WID, ZOF gibi) ezberledi. Ardından zamanla bunları nasıl unuttuğunu saniye saniye grafiğe döktü. Çıkan o meşhur "Unutma Eğrisi" (Forgetting Curve) kâbus gibi bir bilançoydu: İnsanoğlu, öğrendiği yeni bir bilginin (eğer tekrar etmezse) tam "%50\'sini" daha "İLK BİR SAAT" içinde beyninden silip çöpe atıyordu! 24 saat sonra bilginin %70\'i, bir ay sonra ise %80\'i kalıcı olarak buharlaşıyordu. Ebbinghaus bize insanın o zeki (hafıza) kibrini yıkan gerçeği sundu: Beynimiz, içine atılan her şeyi güvenle saklayan kilitli bir çelik kasa değildir; o, altına devasa bir delik açılmış, suyun saniyeler içinde aktığı sızdıran bir kovadır. Bir bilgiyi "öğrendim" sanmak, onu saniyeler içinde unuttuğumuzu fark edemememizin o küstah illüzyonudur.',
+    questionStem: 'Ebbinghaus Unutma Eğrisi\'nin istatistiksel sonuçları, insan beyninin (hafızanın) yapısı hakkında hangi "kibirli algıyı" yerle bir etmektedir?',
+    options: [
+      'Ergenlik döneminde insanların hiçbir şeyi ezberleyemeyeceği yönündeki gelişimsel teoriyi',
+      'İnsanların gördükleri yüzleri isimlerden çok daha hızlı unuttuklarına dair görsel yanılgıyı',
+      'Öğrendiğimiz (ve anladığımız) bilgilerin beynimizde "kalıcı ve sarsılmaz bir çelik kasada" korunduğu kibrini yıkarak; hafızamızın (eğer tekrar edilmezse) bilginin %50\'sini ilk bir saatte çöpe atan, deliği delinmiş, sürekli sızdıran (zayıf) bir kova olduğu gerçeğini',
+      'Alman dilinin ezberlenmesinin İngilizceye göre çok daha zor olduğu dilbilim kuralını'
+    ],
+    correct: 2,
+    explanation: 'Öğrenilen bilginin bir saatte %50\'sinin unutulması; hafızamızın her şeyi saklayan kusursuz/sabit bir kasa (kibir) değil, delik bir kova gibi saniyeler içinde sızdıran/buharlaştıran (unutkan) zayıf bir yapı olduğunu ispatlar.'
+  },
+  {
+    title: 'Tramvay Problemi (Fiziksel Ahlak)',
+    passage: 'Felsefe profesörü Philippa Foot\'un ortaya attığı o meşhur "Tramvay Problemi" (Trolley Problem), ahlakı laboratuvar masasına yatırır. Bir tramvay kontrolden çıkmıştır ve raylara bağlanmış 5 masum işçiyi ezmek üzeredir. Siz elinizdeki kolu çekerseniz, tramvay diğer raya geçecek ve sadece 1 işçiyi ezecektir. (1 kişiyi feda edip 5 kişiyi kurtarmak). Çoğu insan "Kolu çekerim, 5 can 1 candan değerlidir" (Faydacılık) der. Ancak filozof sorunun ikinci aşamasına (Şişman Adam) geçer: Bu kez rayların üzerinde bir köprüdesiniz. Tramvay yine 5 kişiye gidiyor. Yanınızda çok iri, şişman bir adam var. Eğer o şişman adamı ellerinizle "itip" raylara atarsanız (öldürürseniz), adamın bedeni tramvayı durduracak ve 5 kişi kurtulacaktır. İkisi de aynı matematiktir (1 ölü, 5 kurtuluş). Ancak bu kez insanların %90\'ı "Adamı aşağı itemem!" der. Ahlakımız (ve vicdanımız) mantığa değil, "fiziksel eyleme (temasa)" bağlıdır. Bir kolu uzaktan çekip adam öldürmek kolaydır; ancak o cinayeti bizzat (dokunarak) kendi ellerinle işlemek, ahlakın o süslü matematiğini anında çöpe attıran (kitleleri donduran) ilkel bir bariyerdir.',
+    questionStem: 'Tramvay Problemi\'nin ikinci versiyonu (Şişman Adamı itmek), insanların "Ahlaki karar alma" mekanizmasındaki hangi çelişkiyi (ikiyüzlülüğü) ifşa eder?',
+    options: [
+      'Şişman insanların toplum tarafından her zaman potansiyel bir suçlu (kurban) olarak görülme eğilimini',
+      'Tramvay gibi yüksek hızlı araçların fren sistemlerinin asla güvenilir olmadığı mühendislik gerçeğini',
+      'İnsanların (1 kişi ölsün 5 kişi kurtulsun diye) uzaktan mekanik bir "kol çekmeyi" mantıklı (ahlaki) bulurken; aynı sonucu (matematiği) verecek olsa bile, o kişiyi "bizzat kendi elleriyle (fiziksel temasla) iterek öldürmekten" dehşete düşmeleri; yani ahlakın matematiğe değil, "cinayetin fizikselliğine (elleri kirletmemeye)" bağlı olduğu çelişkisini',
+      'İnsanların sadece kendi tanıdıkları akrabalarını kurtarmak için adam öldürebileceği kuralını'
+    ],
+    correct: 2,
+    explanation: 'Aynı matematik (1 ölü 5 kurtulan) olmasına rağmen; kol çekmenin kolay, adamı bizzat elle itmenin (fiziksel temas/cinayet) kabul edilemez bulunması; ahlakın mantığa/matematiğe değil, "elleri kirletmemeye (fiziksel bariyerlere)" bağlı olduğunu (çelişkiyi) ifşa eder.'
+  },
+  {
+    title: 'Pygmalion Etkisi (Beklentinin Büyüsü)',
+    passage: 'Psikolog Robert Rosenthal, bir ilkokulda sıradan bir zekâ testi yaptı. Ancak öğretmenlere (gizlice) büyük bir yalan söyledi. Öğretmenlere, sınıftaki bazı rastgele seçilmiş öğrencilerin (test sonuçlarına göre) "dâhi olduklarını ve yıl sonunda muazzam bir başarı sıçraması yapacaklarını" söyledi. O çocuklar aslında tamamen sıradan, ortalama öğrencilerdi. Sene sonu geldiğinde, bilim dünyasını donduran o mucize gerçekleşti: O rastgele seçilen (sözde dâhi) öğrencilerin IQ skorları ve başarıları gerçekten de inanılmaz derecede fırlamış ve sınıfın en iyileri olmuşlardı! Neden mi? Çünkü öğretmenler, onların "dâhi" olduğuna inandıkları için, yıl boyunca onlara bilmeden daha çok gülümsedi, daha sabırlı davrandı ve onlara (farkında olmadan) çok daha şefkatli bir ortam sundu. "Pygmalion Etkisi" (Kendi Kendini Gerçekleştiren Kehanet) denen bu fenomen, insanın o dilsiz çaresizliğini fısıldar: Bizler kendi potansiyelimizin tohumuyla değil; başkalarının bize biçtiği o "karanlık veya parlak beklentilerin (etiketlerin)" suyunda büyüyüp şekillenen, dışarıdan kurgulanmış birer heykeliz.',
+    questionStem: 'Pygmalion Etkisi (Kendi Kendini Gerçekleştiren Kehanet) araştırması, "başarı ve zekâ" gelişiminde neyin (biyolojiden) çok daha belirleyici (sihirli) bir etki yarattığını ispatlamıştır?',
+    options: [
+      'Günde içilen süt ve protein miktarının beyin gelişimindeki tek matematiksel gerçek olduğunu',
+      'Dâhiliğin sadece genetik (doğuştan gelen) değiştirilemez bir kader (DNA zinciri) olduğunu',
+      'Kişinin doğuştan gelen genetik potansiyelinden ziyade; otoritenin (öğretmenin/toplumun) o kişiye yüklediği "yüksek veya düşük beklentinin (inancın)", kişinin performansını o beklentiye göre (bilinçdışı bir destekle) fiziksel olarak yeniden şekillendirebildiği (kurguladığı) gerçeğini',
+      'Test sorularının kolay hazırlanmasının öğrencileri geçici olarak daha zeki hissettirdiği göz yanılgısını'
+    ],
+    correct: 2,
+    explanation: 'Sıradan çocukların sırf "öğretmenler onlardan dâhilik beklediği (onlara öyle inandığı)" için gerçekten dâhiye dönüşmesi; başarının/zekânın genetikten ziyade "dışarıdan yüklenen beklentilerin (inancın) sihirli/dönüştürücü etkisine" bağlı olduğunu ispatlar.'
+  },
+  {
+    title: 'Genel Bakış Etkisi (Sınırların İllüzyonu)',
+    passage: 'Bir savaş uçağı pilotunu veya siyasiciyi alın, onu bir roketin ucuna bağlayıp uzaya fırlatın. Yeryüzünden 400 kilometre yukarıda, Uluslararası Uzay İstasyonu\'nun o küçük cam penceresinden Dünya\'ya baktığında yaşayacağı psikolojik çöküş (ve aydınlanma) bilimsel olarak tescillidir: "Genel Bakış Etkisi" (Overview Effect). Astronot o simsiyah karanlığın ortasında parlayan gezegenimize baktığında, okulda ona öğretilen o haritalardaki "kırmızı, mavi ülke sınırlarını, telleri veya ulusları" göremez. Ortada vatan hainliği, ırk, din veya siyasi bölünme yoktur; sadece uzayın o dondurucu ve ölümcül boşluğunda asılı duran, devasa bir uzay gemisinin içinde hayatta kalmaya çalışan kırılgan bir mürettebat (tek bir aile) vardır. O pencereden bakan herkesin zihnindeki o milliyetçi ve bencil kibir anında paramparça olur. Sınırlarımız, pasaportlarımız ve düşmanlıklarımız; uzayın o derin sessizliği karşısında insanların yeryüzündeki toprağa kendi elleriyle çizdiği, evrenin zerre kadar umursamadığı komik, kanlı ve yapay birer akıl hastalığından (illüzyondan) ibarettir.',
+    questionStem: 'Astronotların uzaydan Dünya\'ya baktıklarında yaşadıkları "Genel Bakış Etkisi" (Overview Effect), insanlığın yeryüzündeki hangi siyasi kurgusunu (kibrini) yerle bir eder?',
+    options: [
+      'Gezegenimizin atmosferinin dışarıdan bakıldığında zehirli gaz bulutlarıyla kaplı olduğu şeklindeki çevre kirliliği endişesini',
+      'Dünya haritalarındaki "ülke sınırlarının, ırkların ve milliyetçi düşmanlıkların" aslında doğanın (ve evrenin) bir parçası olmayan; insanların kendi kibriyle (ve kanla) çizdiği tamamen yapay, kırılgan ve trajikomik bir illüzyon (akıl hastalığı) olduğu gerçeğini',
+      'Yerçekiminin uzayda kaybolmasıyla insan kemiklerinin fiziksel olarak erimeye başladığı biyolojik korkusunu',
+      'Uzay araştırmalarına harcanan paraların dünyadaki açlığı bitirebileceği yönündeki felsefi itirazı'
+    ],
+    correct: 1,
+    explanation: 'Uzaydan bakıldığında haritalardaki "ülke sınırlarının/bölünmelerin" görünmemesi; yeryüzündeki tüm o savaşların, sınırların ve milliyetçi kibrin (evren karşısında) insanların kendi elleriyle uydurduğu sahte, yapay ve trajikomik bir illüzyon olduğunu yerle bir eder.'
+  }
+];
+
+export const felsefeParagrafSorulari42: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_42.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_42[idx];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-felsefe42-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
 // paragrafTests.ts dosyasının hata vermemesi için iki listeyi birleştirip eski adıyla dışa aktarıyoruz:
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari,
@@ -11185,7 +11462,8 @@ export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...bilimParagrafSorulari38,
   ...bilimParagrafSorulari39,
   ...bilimParagrafSorulari40,
-  ...bilimParagrafSorulari41
+  ...bilimParagrafSorulari41,
+  ...felsefeParagrafSorulari42
   
   
   
