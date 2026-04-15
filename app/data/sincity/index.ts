@@ -11420,6 +11420,283 @@ export const felsefeParagrafSorulari42: BilimParagrafQuestion[] = Array.from({ l
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
+const PARAGRAPH_THEMES_43 = [
+  {
+    title: 'Karanlık Orman Teorisi (Kozmik Paranoya)',
+    passage: 'Bilim kurgu yazarı Liu Cixin, Fermi Paradoksu\'ndaki o meşhur "Uzaylılar nerede, neden evren bu kadar sessiz?" sorusuna kan dondurucu bir cevap verir: "Karanlık Orman Teorisi". Evren, her medeniyetin elinde tüfeğiyle sessizce yürüyen birer avcı olduğu zifiri karanlık bir ormandır. Bu ormanda hayatta kalmanın tek bir kuralı vardır: Sessiz olmak! Çünkü eğer bir medeniyet yerini belli eden bir sinyal (ışık/ses) gönderirse, karanlıktaki diğer avcılar onun iyi niyetli mi yoksa tehlikeli mi olduğunu bilemezler. Evrensel boyutta en rasyonel (ve güvenli) strateji, yerini belli eden o ahmak avcıyı anında yok etmektir! Biz insanlar uzaya "Buradayız!" diye altın plaklar ve radyo sinyalleri gönderirken barışçıl ve romantik olduğumuzu sanıyoruz. Oysa Karanlık Orman kuralına göre biz; etrafı devasa, yaşlı ve acımasız avcılarla dolu karanlık bir ormanın ortasında, ateş yakıp "Ben buradayım!" diye çığlık atan, yaklaşan felaketten habersiz kibirli ve ahmak çocuklardan başka bir şey değiliz.',
+    questionStem: 'Karanlık Orman Teorisi, evrendeki sessizliği (uzaylıların yokluğunu) ve insanoğlunun uzaya sinyal gönderme çabasını felsefi olarak nasıl yorumlar?',
+    options: [
+      'Uzaylıların ses dalgalarını algılayacak biyolojik kulaklara sahip olmadığı yönündeki bilimsel gerçekle',
+      'Evrendeki sessizliğin barışçıl bir boşluk değil, "hayatta kalmak için gizlenen avcıların" yarattığı korkunç bir paranoya olduğu; insanın uzaya sinyal göndermesinin ise romantik bir keşif değil, kendi sonunu davet eden ahmakça (intihara meyilli) bir kibir olduğu gerçeğiyle',
+      'Radyo sinyallerinin güneş rüzgârları tarafından engellendiği için mesajlarımızın hiçbir yere ulaşmadığı teziyle',
+      'Uzaylıların sadece kendi aralarında savaştıkları için dünyayı ciddiye almadıkları fikriyle'
+    ],
+    correct: 1,
+    explanation: 'Evrenin herkesin saklandığı karanlık bir orman (paranoya) olduğu ve yerini belli edenin yok edileceği teorisi; insanoğlunun uzaya romantik sinyaller göndermesinin aslında kendi sonunu davet eden ahmakça bir intihar (kibir) olduğunu vurgular.'
+  },
+  {
+    title: 'Panoptikon (Görünmez İktidarın Zindanı)',
+    passage: '18. yüzyılda filozof Jeremy Bentham, kusursuz bir hapishane tasarımı hayal etti: "Panoptikon". Dairesel bir binanın tam ortasında yüksek bir gözetleme kulesi vardır. Kuledeki gardiyan tüm hücreleri net bir şekilde görebilir; ancak hücrelerdeki mahkûmlar, kulenin içindeki gardiyanı (ışık oyunları sayesinde) asla göremezler! Mahkûm, o an izlenip izlenmediğini hiçbir zaman bilemez. İşte felsefi şok (ve modern kâbus) burada başlar: Mahkûm, "her an izleniyor olma ihtimali" yüzünden bir süre sonra dışarıdaki gardiyana ihtiyaç duymaz; o görünmez otoriteyi kendi zihnine kopyalar (içselleştirir) ve kendi kendisinin gardiyanı (kölesi) olur! Fransız düşünür Foucault\'ya göre modern toplum tam olarak devasa bir Panoptikon\'dur. Kameralar, sosyal medya ve devlet; bizi fiziksel zincirlerle değil, "sürekli izlenme hissiyle" felç ederek, kendi hareketlerimizi otosansürle kontrol ettiğimiz (kendi zihnimize hapsettiği) o görünmez, steril ve kusursuz köleliğe mahkûm etmiştir.',
+    questionStem: 'Bentham\'ın "Panoptikon" tasarımı, iktidarın (otoritenin) modern toplumlar üzerindeki kontrol mekanizmasını nasıl açıklar?',
+    options: [
+      'Mahkûmların sadece karanlık hücrelerde tutularak psikolojik olarak çökertilmesiyle',
+      'Otoritenin görünmez kılındığı ve "her an izlenme ihtimalinin" yaratıldığı bir sistemde; bireyin dışsal bir şiddete gerek kalmadan, otoriteyi içselleştirip (otosansürle) bizzat kendi kendisinin gardiyanı (kölesi) haline dönüşmesiyle',
+      'Hapishanelerdeki güvenlik kameralarının sayısının artırılarak suç oranlarının sıfıra indirilmesiyle',
+      'Sadece suçluların değil, gardiyanların da sistem tarafından cezalandırılmasıyla'
+    ],
+    correct: 1,
+    explanation: 'Mahkûmun gardiyanı görmeden "sürekli izleniyorum" hissiyle kendi kendini kontrol etmesi; modern otoritenin şiddetle değil, izlenme hissi (otosansür) yaratarak insanı kendi zihninin gönüllü kölesi/gardiyanı yaptığı gerçeğini açıklar.'
+  },
+  {
+    title: '1518 Dans Salgını (Cinnetin Ritmi)',
+    passage: '1518 yılının Temmuz ayında, Strasbourg (Fransa) sokaklarında Frau Troffea adında bir kadın aniden sokağa çıkıp çılgınca dans etmeye başladı. Müzik yoktu, kutlama yoktu. Birkaç gün içinde ona onlarca kişi, bir ay içinde ise tam 400 kişi katıldı! İnsanlar ayakları kanayana, kalp krizi geçirip (yorgunluktan) ölene kadar gece gündüz durmaksızın dans ediyorlardı. Yetkililer bu deliliği durdurmak için ne yaptı dersiniz? "Daha çok dans ederlerse yorulup bırakırlar" diyerek oraya müzisyenler kiralayıp sahneler kurdular ve cinneti daha da büyüttüler! "Dans Vebası" adı verilen bu olay biyolojik bir hastalık değildi; açlık, sefalet, hastalık ve Kilise baskısının altında ezilen toplumun yaşadığı "Kitlesel Psikojenik Hastalık"tı (Toplu Histeri). İnsan zihni, o dayanılmaz, ezici ve rasyonel çaresizlik (stres) karşısında kırıldığında; bedeni mantığın kontrolünden çıkarıp, acıyı ve çöküşü "ölümcül, ritmik ve bulaşıcı bir cinnet ayinine (dansa)" dönüştürebilir.',
+    questionStem: '1518 Dans Salgını (ölene kadar dans etme), toplumsal psikoloji hakkında hangi dondurucu gerçeği ispatlar?',
+    options: [
+      'Orta Çağ müzik aletlerinin yaydığı frekansların insan beyninde epilepsi nöbetleri yarattığını',
+      'Rönesans öncesi Avrupa\'sında eğlence kültürünün çok daha şiddetli ve tehlikeli olduğunu',
+      'Ağır toplumsal travmaların, açlığın ve rasyonel çaresizliğin (stresin); kitlelerin zihnini kırarak, acıyı ve çöküşü bulaşıcı, ölümcül ve mantık dışı bir "toplu cinnet (histeri) ayinine" dönüştürebildiğini',
+      'Avrupa toplumlarının eski mitolojik tanrılara tapınmak için gizli şifreler kullandığını'
+    ],
+    correct: 2,
+    explanation: 'Açlık ve sefalet altındaki insanların ölene kadar dans etmesi; ezici toplumsal stresin/çaresizliğin zihni kırıp, acıyı mantık dışı ve bulaşıcı bir toplu cinnete (histeriye) dönüştürebildiğini ispatlar.'
+  },
+  {
+    title: 'Potemkin Köyleri (Sahte Refah İllüzyonu)',
+    passage: '1787 yılında Rus Çariçesi II. Katerina, yeni fethettiği Kırım bölgelerini teftiş etmek için nehir üzerinden görkemli bir gemi yolculuğuna çıktı. Ancak bölge aslında savaş yorgunu, fakir ve harabeydi. Çariçenin sevgilisi ve komutanı olan Grigori Potemkin, çariçe bu rezaleti görmesin diye tarihin en büyük tiyatrosunu kurdu. Nehrin kıyılarına sadece "ön cephesi" olan, tahtadan ve boyadan yapılmış sahte (iki boyutlu) evler inşa ettirdi. Kostüm giydirilmiş figüran köylüler çariçenin gemisi geçerken ateş yakıp el sallıyor, neşeli şarkılar söylüyorlardı. Gemi geçtikten sonra sahte köy sökülüp, gece boyunca nehrin daha ilerisine (çariçe ertesi gün tekrar görsün diye) hızla yeniden kuruluyordu! Siyasette "Potemkin Köyleri" (Potemkin Villages) olarak anılan bu kavram; otoritenin (ve sistemin) ardındaki o çürümüş, yoksul ve karanlık hakikati gizlemek uğruna; kitlelere ve yöneticilere sunulan o şatafatlı, iki boyutlu ve kurgusal "sahte refah (vitrin)" illüzyonunun ebedi adıdır.',
+    questionStem: 'Siyaset biliminde "Potemkin Köyleri" kavramı, yönetimler ve toplumlar hakkında neyin metaforu olarak kullanılır?',
+    options: [
+      'Rus mimarisinin o dönemde ahşap kullanarak depremlere karşı ne kadar dayanıklı yapılar ürettiğinin',
+      'Tarımsal kalkınmanın sadece nehir kenarlarında yaşayan köylüler tarafından sağlanabileceğinin',
+      'İktidarların (veya kurumların); arka plandaki sefaleti, çürümüşlüğü ve başarısızlığı gizlemek uğruna, dışarıdan bakıldığında kusursuz görünen ama içi tamamen boş olan "sahte, iki boyutlu bir refah vitrini (illüzyonu)" yaratmalarının',
+      'Halkın yöneticilerini mutlu etmek için kendi rızalarıyla büyük festivaller düzenlemesinin'
+    ],
+    correct: 2,
+    explanation: 'Çariçe görmesin diye kurulan içi boş/iki boyutlu sahte evler; iktidarların asıl sefaleti ve çürümüşlüğü örtbas etmek için yarattığı o gösterişli ama sahte "vitrin (refah illüzyonu)" metaforudur.'
+  },
+  {
+    title: 'Çernobil\'in Fil Ayağı (Ölümün Fiziksel Hali)',
+    passage: '1986\'da Çernobil 4 numaralı reaktörü patladığında, nükleer yakıt çubukları, beton ve kum eriyerek lav gibi akışkan, radyoaktif bir magmaya (Koryum) dönüştü. Bu lav reaktörün altına sızdı ve soğuduğunda, devasa bir filin ayağına benzeyen 2 metrelik kırışık bir kütle ("Fil Ayağı") halini aldı. 1986 yılında bu kütlenin yanına yaklaşmak değil, onunla aynı odada "300 saniye" kalmak bile hücrelerinizin erimesi ve kesin ölüm demekti. Yaydığı radyasyon o kadar yoğundu ki, odanın içine gönderilen robotların ve kameraların elektronik beyinleri anında kavrulup yanıyordu! İnsanoğlu kendi eliyle öylesine mutlak, öylesine dokunulmaz ve iğrenç bir "Kötülük (Kıyamet Kütlesi)" yaratmıştı ki; onu ne yok edebiliyor, ne soğutabiliyor ne de yüzüne bakabiliyordu. "Fil Ayağı", insanın teknolojik kibrinin kontrolden çıktığında, doğanın o masum kurallarını bükerek yeraltının karanlığında ebediyen bekleyen, yanına yaklaşılamaz, dokunulamaz (kutsal olmayan) "saf ve fiziksel bir ölüm tanrısına" dönüştüğünün en dondurucu anıtıdır.',
+    questionStem: 'Çernobil\'deki "Fil Ayağı" (Corium kütlesi), insanlık ve teknoloji tarihi açısından yazar tarafından nasıl tasvir edilmiştir?',
+    options: [
+      'Gelecekte enerji sorununu çözecek yepyeni ve sonsuz bir nükleer pil potansiyeli olarak',
+      'İnsanoğlunun teknolojik kibrinin (hatasının) yarattığı; yanına yaklaşılamayan, dokunulamayan ve kameraları bile eriten, yeraltına gizlenmiş o mutlak, iğrenç ve "fizikselleşmiş (somut) bir ölüm tanrısı (kıyamet kütlesi)" olarak',
+      'Radyasyonun beton ve demiri eriterek uzaylı bir maddeye dönüştürdüğü efsanesi olarak',
+      'Bilim insanlarının laboratuvar kazalarını örtbas etmek için uydurdukları korkutucu bir masal olarak'
+    ],
+    correct: 1,
+    explanation: 'İnsanın hatasıyla oluşan, 5 dakikada öldüren ve kameraları yakan bu erimiş nükleer kütle; teknolojik kibrin yarattığı, dokunulamaz ve somut (fizikselleşmiş) bir "ölüm tanrısı / kötülük anıtı" olarak tasvir edilmiştir.'
+  },
+  {
+    title: 'Mandela Etkisi (Hafızanın Virüsü)',
+    passage: '2010 yılında Fiona Broome adında bir araştırmacı, Nelson Mandela\'nın 1980\'lerde hapishanede trajik bir şekilde öldüğünü "çok net bir şekilde" hatırladığını söyledi. İşin korkunç tarafı, internette binlerce insan da Mandela\'nın hapiste öldüğüne, cenaze törenini televizyonda izlediklerine yemin ediyordu! Oysa Mandela 1990\'da hapisten çıkmış, devlet başkanı olmuş ve 2013\'te ölmüştü. "Mandela Etkisi" olarak adlandırılan bu kitle psikolojisi fenomeni, Monopoly adamının gözlüğü olduğuna veya Pikachu\'nun kuyruğunda siyah bir çizgi olduğuna yemin eden milyonlarca insanla kanıtlandı. Bu olay, insanlığa en sarsıcı zihinsel tokatlardan birini atar: O çok güvendiğimiz, sarsılmaz birer granit taş sandığımız "Geçmiş (Hafızamız)", aslında beynimizin anlık olarak kurguladığı, başkalarının anılarıyla (veya toplumsal telkinlerle) kolayca bulaşıp değiştirilebilen, sahte, akışkan ve "kolektif bir yalan (virüs)" üretmeye son derece müsait bir illüzyondur.',
+    questionStem: 'Mandela Etkisi (kitlelerin hiç yaşanmamış bir olayı yaşanmış gibi hatırlaması), "İnsan Hafızası" hakkında neyi ifşa eder?',
+    options: [
+      'İnternet ve televizyon haberlerinin aslında hükümetler tarafından tamamen gizli şifrelerle yayınlandığını',
+      'O sarsılmaz (kesin) gerçekler sandığımız kişisel ve toplumsal hafızamızın; dış telkinlerle kolayca bükülebilen, kitlelerin birbirine bulaştırarak uydurabildiği sahte, akışkan ve "kolektif bir kurgu (illüzyon)" olduğunu',
+      'Tarihi figürlerin (Mandela gibi) ölüm tarihlerinin devlet sırrı olarak kasten halktan saklandığını',
+      'Yaşlılıkla birlikte insanların görsel detayları hatırlamakta gençlere göre daha başarısız olduğunu'
+    ],
+    correct: 1,
+    explanation: 'Binlerce insanın yaşanmamış bir ölümü (veya çizimi) net şekilde hatırlaması; sarsılmaz sandığımız hafızanın aslında dış etkilere açık, sahte ve kolektif olarak kurgulanabilen (akışkan) bir illüzyon olduğunu ifşa eder.'
+  },
+  {
+    title: 'Pirinç Boğa (Kendi İcadında Yanmak)',
+    passage: 'Antik Yunan\'da, Akragas tiranı (zalim kralı) Phalaris, düşmanlarına işkence etmek için yepyeni bir yöntem arıyordu. Atinalı heykeltıraş Perilaos, ona altı boş, devasa ve pirinçten yapılmış bir "Boğa" heykeli sundu. Kurban boğanın içine hapsedilecek, alttan ateş yakılacak ve kurban içeride kızararak can verecekti. Dâhi (ve sadist) mühendis Perilaos heykelin burnuna öyle bir boru sistemi kurmuştu ki, kurbanın içeriden gelen o korkunç acı çığlıkları, dışarıya sanki "kükreyen bir boğanın müzikal ve büyüleyici sesi" gibi yansıyacaktı! Tiran Phalaris bu şeytani icada hayran kaldı ve sistemin gerçekten çalışıp çalışmadığını test etmek istedi. Bunun için icadın sahibi olan mühendis Perilaos\'u zorla boğanın içine soktu ve ateşi yaktırdı! "Pirinç Boğa" efsanesi; başkalarına acı çektirmek, yok etmek ve zulmetmek uğruna (kibirle) yaratılan o ahlaksız teknolojilerin (ve icatların), eninde sonunda kendi yaratıcısını (mühendisini) yutan o ölümcül alevlere (adalet ironisine) dönüştüğünün en kanlı manifestosudur.',
+    questionStem: 'Mühendis Perilaos\'un kendi icat ettiği (kurbanı yakan) Pirinç Boğa\'nın içinde öldürülmesi, felsefi ve teknolojik bağlamda neyin metaforudur?',
+    options: [
+      'Antik Yunan krallarının sanata ve estetiğe ne kadar büyük değer verdiklerinin kanıtının',
+      'Metal ve pirinç alaşımlarının ses dalgalarını iletmedeki kusursuz akustiğinin',
+      'Başkalarına zulmetmek (veya yok etmek) kibriyle yaratılan ahlaksız, yıkıcı sistemlerin ve teknolojilerin; eninde sonunda dönüp kendi yaratıcısını kurban eden (yutan) ironik bir adalete dönüştüğünün',
+      'Hayvan figürlü putların antik çağlarda dini kurban ayinleri için kullanıldığının'
+    ],
+    correct: 2,
+    explanation: 'Sadist işkence aletini yapan adamın (kralın emriyle) kendi aletinin içinde yakılması; ahlaksız ve yıkıcı icatların (kötülüğün) dönüp kendi yaratıcısını yutacağı o evrensel/ironik adaletin metaforudur.'
+  },
+  {
+    title: 'Ockham\'ın Usturası (Basitliğin Zaferi)',
+    passage: 'Gökyüzünde açıklayamadığınız parlak bir ışık gördünüz. Bu ışık ya çok gizli teknolojiye sahip galaksiler arası uzaylıların gemisidir ya da sadece atmosferdeki bir hava durumu (veya uçak) yansımasıdır. 14. yüzyıl filozofu William of Ockham, aklın bu karmaşasını çözen o efsanevi mantık kuralını (Ockham\'ın Usturası) şöyle formüle etti: "Varlıkları (ihtimalleri) gereksiz yere çoğaltmayın!" Yani, bir olayı açıklayan birden fazla teori varsa; içlerinde en az varsayıma (en az abartıya) dayanan, en basit olan açıklama genellikle doğru olandır. İnsanoğlunun zihni, belirsizlik karşısında komplo teorilerine, devasa gizli örgütlere ve doğaüstü karmaşalara (masallara) sığınmaya çok yatkındır. Oysa "Ockham\'ın Usturası", o gereksiz, karmaşık ve mistik (paranoyak) kurguları tek bir kılıç darbesiyle kesip atarak; hakikatin çoğu zaman o sıkıcı, sıradan ve çırılçıplak duran "basitliğinde" yattığını yüzümüze çarpar.',
+    questionStem: 'Ockham\'ın Usturası (Ockham\'s Razor) ilkesi, olayları açıklarken insan zihninin hangi hastalıklı eğilimini (zaafını) kesip atmayı amaçlar?',
+    options: [
+      'İnsanların sadece matematikle açıklanabilen karmaşık bilimsel makaleleri okuma tembelliğini',
+      'Belirsizlik karşısında; gerçeği aramak yerine gereksiz varsayımlarla dolu, abartılı, mistik ve karmaşık "komplo teorilerine (masallara/paranoyalara)" sığınma eğilimini; bunun yerine en az varsayıma sahip (en basit) olanı seçmeyi',
+      'Filozofların her zaman krallara yaranmak için siyasi ve uzun manifestolar yazma alışkanlığını',
+      'Gökyüzündeki olayların sadece astronomi kurallarıyla değil, burçlarla (astrolojiyle) da bağlantılı olduğu kibrini'
+    ],
+    correct: 1,
+    explanation: '"Gereksiz varsayımları çoğaltmayın (en basit olanı seçin)" kuralı; insan zihninin olayları açıklarken basit ve sıkıcı gerçekler yerine abartılı, mistik ve karmaşık komplo teorilerine sığınma zaafını (kesip atmayı) amaçlar.'
+  },
+  {
+    title: 'Kargo Kültü (Şekilci İllüzyon)',
+    passage: 'İkinci Dünya Savaşı sırasında Amerikan ordusu, Pasifik okyanusundaki ıssız (ve ilkel kabilelerin yaşadığı) adalara üsler kurdu. Gökten uçaklar iniyor; askerlere konserve yiyecekler, radyolar ve giysiler (Kargo) getiriyordu. Yerliler bu "cennetten inen" ganimetlere hayran kaldı. Ancak savaş bitip askerler adaları terk ettiğinde kargolar kesildi. Kabile ne yaptı dersiniz? Okyanus kenarına kargılardan (bambudan) sahte uçaklar, tahtadan radyo antenleri ve hindistan cevizinden kulaklıklar (sahte kontrol kuleleri) inşa ettiler! Askerler gibi yürüyüş yapıyor, meşaleler yakarak gökyüzünden tekrar uçak (kargo) inmesini bekliyorlardı. Fizikçi Richard Feynman, bilimin (ve modern insanın) düştüğü en büyük tuzağı anlatmak için buna "Kargo Kültü Bilimi" dedi. İnsanoğlu (veya bazı kurumlar), bir şeyin "neden ve nasıl" çalıştığını (nedenselliği) anlamadan, sadece onun "dış görünüşünü (şeklini/ritüelini)" körü körüne taklit ederek başarıya (veya cennete) ulaşacağını sanan o acınası ve ahmakça şekilciliğe (illüzyona) tapınmaktadır.',
+    questionStem: 'Feynman\'ın Pasifik adalarındaki yerliler üzerinden tanımladığı "Kargo Kültü (Cargo Cult)" kavramı, günümüz modern insanına (ve kurumlarına) dair neyin eleştirisidir?',
+    options: [
+      'İlkel kabilelerin aslında teknolojik icatlar yapabilecek gizli bir zekâya sahip olduğunun',
+      'Bir olayın ardındaki "gerçek işleyişi ve nedenselliği (özü)" kavramadan; sadece o işin dış formunu, ritüellerini ve "görüntüsünü (şeklini)" taklit ederek aynı başarıyı (kargoyu) elde edeceğini sanan o içi boş, ahmakça "şekilcilik (taklit) illüzyonunun"',
+      'Amerikan ordusunun savaş sırasında sivil halka yeterince yiyecek dağıtmayıp onları açlığa mahkûm etmesinin',
+      'Tahta ve bambu gibi doğal malzemelerin uçak yapımında çelikten daha aerodinamik olduğunun'
+    ],
+    correct: 1,
+    explanation: 'Yerlilerin uçak (sistem) mantığını anlamadan sadece tahtadan uçak yapıp (şekli taklit edip) yemek beklemesi; modern insanın da özü anlamadan sadece "şekli/ritüeli" taklit ederek başarı beklediği (içi boş şekilcilik/Kargo Kültü) yanılgısını eleştirir.'
+  },
+  {
+    title: 'Antroposen Çağı (İnsanın Jeolojik İzi)',
+    passage: 'Dünya milyarlarca yıl boyunca Jura, Kretase, Pleistosen gibi tamamen doğanın (buzulların ve meteorların) şekillendirdiği jeolojik çağlar yaşadı. Ancak bilim insanları (jeologlar), 20. yüzyılın ortalarından itibaren dünyanın yepyeni, kan dondurucu bir jeolojik çağa girdiğini ilan ettiler: "Antroposen" (İnsan Çağı). Milyonlarca yıl sonra dünyayı kazacak olan uzaylı bir jeolog; kaya katmanlarının arasında dinozor kemikleri veya eğrelti otları değil; plastikten oluşan tortular (plastiglomerat), nükleer denemelerden arta kalan radyoaktif (sezyum) katmanları ve milyarlarca tavuk kemiğinden oluşan sentetik bir fosil tabakası bulacaktır. İnsanoğlu artık sadece bir biyolojik tür veya tarihsel bir figür değildir; o, tıpkı kıtaları bölen bir deprem veya dünyayı yok eden bir asteroit gibi, bizzat gezegenin fiziksel (kaya) anatomisini kökünden değiştiren, zehirleyen ve kalıcı olarak damgalayan "yıkıcı bir jeolojik (doğal) güce (felakete)" dönüşmüştür.',
+    questionStem: 'Jeologların "Antroposen" (İnsan Çağı) tanımı, insanoğlunun yeryüzündeki konumu (ve etkisi) hakkında nasıl sarsıcı bir seviye (boyut) atlamıştır?',
+    options: [
+      'İnsanın sadece tarihsel ve kültürel bir canlı olmaktan çıkarak; bizzat bir asteroit veya yanardağ gibi, gezegenin "kaya (fosil) katmanlarını ve jeolojik (fiziksel) anatomisini kalıcı olarak şekillendiren ve zehirleyen devasa (yıkıcı) bir güce" dönüştüğünü ilan ederek',
+      'İnsanların artık uzay madenciliğine başlayarak dünyadaki tüm kayaları uzaya taşıyacağını kanıtlayarak',
+      'Nükleer radyasyonun sadece atmosferde kalıp toprağa hiçbir şekilde karışmadığını ve doğayı temizlediğini savunarak',
+      'Dinozorların aslında insanlar tarafından değil, iklim krizleri tarafından yok edildiği yönündeki klasik teoriyi destekleyerek'
+    ],
+    correct: 0,
+    explanation: 'Plastik ve radyasyon kalıntılarının kaya katmanlarına kazınması (Antroposen); insanın sadece bir canlı türü değil, tıpkı meteor veya deprem gibi yeryüzünün jeolojisini kalıcı olarak değiştiren (ve zehirleyen) fiziksel/devasa bir felaket gücüne dönüştüğünü ilan eder.'
+  },
+  {
+    title: 'Fare Parkı Deneyi (Bağımlılığın Kafesi)',
+    passage: '1970\'lerdeki klasik deneylerde, daracık ve boş bir kafese kapatılan farenin önüne iki su şişesi konulurdu (biri normal, diğeri eroin/kokainli su). Fare her zaman uyuşturuculu suyu içer ve aşırı dozdan ölürdü. Tıp dünyası bunu "İlaçlar (kimyasallar) karşı konulamaz derecede bağımlılık yapar" diye yorumladı. Ancak psikolog Bruce Alexander bu kibrin yüzüne tükürdü: "Fare boş, karanlık ve yalnız bir hücrede çıldırmak üzere; tabii ki uyuşturucuyu seçecek!" Alexander "Fare Parkı" adında; içinde oyuncakların, tünellerin, dönme dolapların ve çiftleşecek diğer farelerin olduğu devasa (mutlu) bir cennet inşa etti. Ve o bağımlılık yapan suları oraya da koydu. Sonuç bilimi sarstı: Fare Parkı\'ndaki (sosyal ve mutlu) farelerin neredeyse hiçbiri o zehirli suyu içmedi! İçenler bile bağımlı olmadı. Bu efsanevi deney, bağımlılığın kimyasal (biyolojik) bir kader değil; yalnızlığa, anlamsızlığa, strese ve içine hapsedildiğimiz o "toplumsal kafeslere (mutsuzluğa)" karşı verilen çaresiz bir "adaptasyon (uyuşturma)" çığlığı olduğunu ispatladı.',
+    questionStem: 'Bruce Alexander\'ın "Fare Parkı (Rat Park)" deneyi, madde bağımlılığının asıl kökeni hakkında geleneksel (kimyasal) tıp inancını nasıl çürütmüştür?',
+    options: [
+      'Farelerin genetik olarak uyuşturucu maddelere karşı doğal bir bağışıklık geliştirdiğini kanıtlayarak',
+      'Bağımlılığın, maddenin (kimyasalın) kendi gücünden ziyade; bireyin içine itildiği "yalnızlık, anlamsızlık ve izolasyon kafesine (çevresel mutsuzluğa)" karşı geliştirdiği bir kaçış (uyum/çaresizlik) refleksi olduğunu ispatlayarak',
+      'Bağımlılık tedavisinde sadece daha güçlü kimyasal hapların (panzehirlerin) kullanılması gerektiğini vurgulayarak',
+      'Oyun alanlarındaki plastik oyuncakların farelerin beyninde zehirlenmeye yol açtığını göstererek'
+    ],
+    correct: 1,
+    explanation: 'Mutlu ve sosyal (parktaki) farelerin uyuşturucuyu reddetmesi; bağımlılığın salt kimyasal bir kader değil, yalnızlık ve mutsuzluk (boş kafes) ortamından kaçmak için başvurulan bir çaresizlik (çevresel adaptasyon) olduğunu kanıtlar.'
+  },
+  {
+    title: 'Kuleşov Etkisi (Algının Montajı)',
+    passage: 'Sinema tarihinin ilk yıllarında (1910\'larda), Sovyet yönetmen Lev Kuleşov insan algısını hackleyen o efsanevi deneyi yaptı. Ekranda çok ünlü bir aktörün (İvan Mozzhukhin) tamamen "duygusuz, ifadesiz ve boş" bakan yüzü gösterildi. Ardından yönetmen bu yüzü üç farklı görüntüyle montajladı: Önce masada duran bir tas çorbayla, sonra tabutun içindeki ölü bir kız çocuğuyla ve son olarak çekici bir kadınla. Seyirciler bu üç sahneyi izlediklerinde ayağa kalkıp aktörün oyunculuğunu ayakta alkışladılar! "Çorbaya bakarken ne kadar derin bir açlık hissetti, çocuğa bakarken nasıl da kahroldu, kadına bakarken nasıl da arzuladı!" dediler. Oysa aktörün yüzü (kayıt) her üçünde de "birebir aynıydı" (tek bir kareydi). Kuleşov Etkisi, gerçeğin ve algının sarsıcı illüzyonunu kanıtlar: İnsan zihni, nesnelerin kendi (nesnel) içeriğine değil, onların "yan yana geliş biçimine (bağlama/montaja)" tepki verir. Biz dünyayı olduğu gibi görmeyiz; biz onu, beynimizin o iki kopuk görüntü arasına (kendi eliyle) yazıp uydurduğu sahte bir senaryo (bağlam) üzerinden algılarız.',
+    questionStem: 'Kuleşov Etkisi (Aynı yüz ifadesinin farklı nesnelerle farklı duygular uyandırması), insan algısı ve gerçeği kavrama biçimi hakkında neyi ifşa eder?',
+    options: [
+      'Sessiz sinema oyuncularının günümüz oyuncularından yüz mimiklerini (kaslarını) çok daha iyi kullandıklarını',
+      'İnsan beyninin, tekil (nesnel) görüntülerden ziyade, görüntülerin "yan yana (bağlam içinde) dizilişine" bakarak aradaki boşluğu kendi uydurduğu (öznel) bir duygu ve senaryo (illüzyon) ile doldurduğu gerçeğini',
+      'Çorba, ölüm ve aşk temalarının insan psikolojisini her zaman negatif yönde (korkuyla) etkilediğini',
+      'Sinemada kullanılan siyah beyaz filtrelerin insanların empati yeteneğini tamamen yok ettiğini'
+    ],
+    correct: 1,
+    explanation: 'Aktörün yüzü aynı olmasına rağmen izleyicinin (çorbaya/tabuta göre) açlık veya hüzün algılaması; insanın tekil gerçeğe değil, parçaların yan yana gelişine (bağlama/montaja) bakarak beyninde o anı kendi (sahte) duygularıyla doldurduğunu (Kuleşov Etkisini) ifşa eder.'
+  },
+  {
+    title: 'Acoustic Kitty (Casusluğun Absürtlükleri)',
+    passage: '1960\'larda Soğuk Savaş paranoyasının zirvesinde, Amerikan gizli servisi CIA tarihin en pahalı, en şeytani ve en trajikomik casusluk projesini hayata geçirdi: "Operation Acoustic Kitty" (Akustik Kedicik). Sovyet diplomatların parklardaki gizli konuşmalarını dinlemek için, canlı bir kedinin kulağına mikrofon, göğüs kafesine verici ve kuyruğuna da bir radyo anteni "ameliyatla" (ve korkunç bir zalimlikle) yerleştirildi! Proje için 20 milyon dolar harcandı ve kedi yıllarca eğitildi. Büyük gün geldiğinde, milyon dolarlık casus kedi "sırları dinlemesi için" Washington\'daki bir parkta iki Sovyet ajanının yanına gizlice serbest bırakıldı. Peki o teknoloji harikası kedi ne yaptı? Hedefe gitmek yerine, parkta uçuşan bir kelebeğin (veya kuşun) peşine takıldı ve yola atlayarak hızla geçen bir taksinin altında kalıp saniyeler içinde ezildi! Akustik Kedicik; insanın, doğayı (ve kaosu) devasa bütçeler ve teknolojiyle mutlak bir kontrol altına alabileceği kibrinin; hayatın o en sıradan, basit ve öngörülemez rastlantıları (bir araba tekerleği) karşısında nasıl komik, iğrenç ve sefil bir şekilde ezildiğinin (rezil olduğunun) tarihi şamarıdır.',
+    questionStem: 'CIA\'in 20 milyon dolarlık "Acoustic Kitty" (Casus Kedi) projesinin bir taksi kazasıyla saniyeler içinde bitmesi, felsefi ve teknolojik bağlamda neyin ironisidir?',
+    options: [
+      'Kedilerin köpeklerden çok daha az zeki ve eğitilemez (hafızasız) varlıklar olduğunun',
+      'Sovyet ajanlarının aslında taksi şoförü kılığına girerek Amerikan projelerini (kasten) sabote ettiğinin',
+      'İnsanoğlunun doğayı ve canlıları "üstün teknoloji ve devasa bütçelerle (kibirle) mutlak kontrol edebileceği" yanılgısının; hayatın o öngörülemez, kaotik ve sıradan (absürt) rastlantıları karşısında anında ezilip rezil olmasının ironisi',
+      'Soğuk savaş döneminde veterinerlerin tıp bilimini kötüye kullanarak hayvanları katlettiğinin'
+    ],
+    correct: 2,
+    explanation: '20 milyon dolar harcanan teknolojik/kibirli (ameliyatlı) kedi projesinin, sıradan bir sokak taksisinin altında (kaos/rastlantı) ezilmesi; insanın doğayı mutlak kontrol edebileceği kibrinin, hayatın öngörülemez absürtlüklerine yenilişinin ironisidir.'
+  },
+  {
+    title: 'Peter Prensibi (Liyakatin Sınırı)',
+    passage: 'Herkesin cevabını aradığı o evrensel soruyu soralım: Neden kurumların, şirketlerin ve devletlerin tepe noktaları çoğunlukla "beceriksiz, bilgisiz ve yeteneksiz" yöneticilerle doludur? 1969\'da sosyolog Laurence J. Peter, hiyerarşinin bu acımasız ve komik kanununu "Peter Prensibi" ile açıkladı. Bir işçi (örneğin bir mühendis) kendi işinde çok başarılıysa, onu ödüllendirmek için "terfi" ettirirler (müdür yaparlar). O yeni pozisyonda da başarılı olursa, yine terfi ettirirler. Bu yükseliş ne zamana kadar sürer? Kişi, "artık başarılı olamadığı, becerilerinin yetmediği ve çuvalladığı (yetersizlik sınırına ulaştığı)" o son pozisyona gelene kadar! Ve orada (başarısız olduğu için) takılı kalır, bir daha terfi edemez. Peter Prensibi\'nin felsefi şoku şudur: Hiyerarşik her sistem, başarılı insanları (eninde sonunda) kapasitelerini aşan bir noktaya iterek onları "yetersiz/beceriksiz" oldukları o zirveye (makama) kasten çiviler. Dünyayı yönetenler, aslında kendi başarılarının kurbanı olarak "liyakatsizlik sınırlarına" hapsolmuş o zavallılardır.',
+    questionStem: 'Peter Prensibi (The Peter Principle), bürokraside ve kurumlarda üst düzey (tepe) pozisyonların neden genellikle "yetersiz/beceriksiz" insanlarla dolduğunu nasıl açıklar?',
+    options: [
+      'Zeki ve yetenekli insanların şirketlerdeki stresi kaldıramayıp genellikle erkenden istifa ederek kendi işlerini kurmasıyla',
+      'Kurumların başarılı çalışanları "başarısız (yetersiz) olacakları o sınır noktasına" ulaşana dek sürekli terfi ettirmesi ve kişilerin o liyakatsiz oldukları zirve pozisyonunda sonsuza dek (çakılı) kalması mekanizmasıyla',
+      'Patronların sadece kendi akrabalarını (nepotizm) kayırarak üst düzey pozisyonlara atama alışkanlığıyla',
+      'Eğitim sisteminin modern çağda sadece ezberci gençler yetiştirip pratik zekâyı tamamen öldürmesiyle'
+    ],
+    correct: 1,
+    explanation: 'Başarılı kişinin terfi ede ede sonunda "başarısız olduğu/kapasitesini aştığı" bir makama gelip orada çakılı kalması; sistemin en tepe noktaları neden kendi liyakat sınırında (yetersizlikte) takılmış insanlarla doldurduğunu açıklar.'
+  },
+  {
+    title: 'Cotard Sendromu (Yürüyen Cesetler)',
+    passage: 'Psikiyatrideki en tüyler ürpertici (ve felsefi) zihinsel çöküşlerden biri "Cotard Sendromu"dur (Yürüyen Ceset Sendromu). Bu hastalığa yakalanan kişiler, biyolojik olarak kalpleri atmasına, nefes almalarına ve konuşmalarına rağmen; "öldüklerine, kanlarının çekildiğine, organlarının çürüdüğüne ve aslında var olmadıklarına" (kesin bir inançla) emindirler! Bir Cotard hastası olan Matmazel X, doktorlara "Ben sadece bir deri ve kemik yığınıyım, midem yok, yaşamıyorum" diyerek yemek yemeyi reddetmiş ve sonunda gerçekten açlıktan ölmüştür. Nöroloji, bu kâbusu beynin "duygu (amigdala)" ile "yüz tanıma (görsel)" merkezleri arasındaki kabloların kopmasıyla açıklar. Hasta aynaya bakar, kendi yüzünü görür ama hiçbir "hissiyat (duygusal bağ)" yaşamaz. Bu boşluk o kadar dehşet vericidir ki, beyin bunu tek bir mantıkla yorumlar: "Eğer hiçbir şey hissetmiyorsam, o halde ben ölüyüm!" Cotard Sendromu, varoluşumuzun o ürkütücü sınırını çizer: Bizi "canlı (var)" kılan şey etten kemikten atan bir kalp değil; bedenimizle kurduğumuz o kırılgan, duygusal ve ruhsal illüzyon (kablolama) bağıdır. Bağ koparsa, yürüyen bir cesede dönüşürüz.',
+    questionStem: 'Cotard Sendromu (hastanın öldüğüne inanması), insanın "Canlılık (Varoluş)" algısı hakkında neyin eksikliğinin yarattığı bir kâbus olarak açıklanmaktadır?',
+    options: [
+      'Geceleri uykusuz kalmanın veya aşırı yorgunluğun insan zihninde yarattığı geçici halüsinasyon krizlerinin',
+      'Kişinin fiziksel olarak (kalben) yaşamasına rağmen; beynin görsel algısı ile "duygusal (hissetme) merkezi" arasındaki bağ koptuğunda, hiçbir şey hissedememenin yarattığı o derin boşluğu beynin "Ben ölüyüm (hiçliğim)" diye yorumlaması (kabloların kopması) kâbusunun',
+      'Mezarlık kenarlarında yaşayan insanların zamanla psikolojik olarak ölüme özenme dürtüsünün',
+      'Ağır virüs enfeksiyonlarının kasları dondurarak insanı fiziksel bir koma (katalepsi) haline sokmasının'
+    ],
+    correct: 1,
+    explanation: 'Hasta aynada kendini görmesine rağmen duygu merkeziyle (amigdalayla) bağ koptuğu için "hiçbir şey hissetmez"; beyin de bu duygusal boşluğu "demek ki ölüyüm" diye yorumlar. Yani canlılık, bedenin duyguyla kurduğu o bağa bağlıdır.'
+  },
+  {
+    title: 'Voynich El Yazması (Anlamsızlığın Kutsanması)',
+    passage: '15. yüzyıla ait karbon testiyle doğrulanmış kalın bir kitap düşünün. İçinde daha önce dünyada hiç görülmemiş tuhaf bitkilerin çizimleri, çıplak kadınların yıldız haritalarındaki banyo sahneleri ve tamamen bilinmeyen (uzaylımsı) harflerle yazılmış sayfalarca metin var. "Voynich El Yazması" adı verilen bu kitap, yüzyıllardır dünyanın en iyi kriptologları, dilbilimcileri ve İkinci Dünya Savaşı\'ndaki kod kırıcılar (ve yapay zekâ) tarafından incelendi. Sonuç: Sıfır! Tek bir kelimesi bile çözülemedi. Çoğu modern bilim insanına göre bu kitap, Orta Çağ\'da zengin bir asili (veya kralı) dolandırmak için zeki bir sahtekârın "tamamen anlamsız, rastgele harfler ve şekiller çizerek" uydurduğu devasa (içi boş) bir şakadan ibarettir. Voynich El Yazması; insan aklının o en büyük zaafının (apofeni), yani "ortada hiçbir anlam (veya sır) olmamasına rağmen, anlamsızlığın (kaosun) içinde bile zorla devasa bir gizem (ve kutsallık) arama takıntısının" 600 yıllık suskun anıtıdır.',
+    questionStem: 'Voynich El Yazması\'nın büyük ihtimalle "anlamsız bir dolandırıcılık (şaka)" olduğu yönündeki tez, insanoğlunun hangi takıntılı yapısını (zaafını) eleştirir?',
+    options: [
+      'Orta Çağ bilim insanlarının sadece büyü ve sihirle ilgilenerek matematiği tamamen dışladığını',
+      'Kitapların ve parşömenlerin zamanla havayla temas edip şifrelerinin fiziksel olarak silineceğini',
+      'İnsanın (ve aklın), ortada sadece boş ve anlamsız (rastgele) bir kurgu olsa bile; o "anlamsızlığın (hiçliğin)" içinde zorla devasa bir gizem, anlam ve şifre bulmaya (ve onu kutsamaya) çalışması takıntısını',
+      'Antik dönemde yaşamış uzaylıların sadece kendi dillerini konuşan insanları seçtiğini'
+    ],
+    correct: 2,
+    explanation: 'Kitabın uydurma (anlamsız bir şaka) olma ihtimaline rağmen dâhilerin 600 yıl onu çözmeye çalışması; insan aklının anlamsızlık/kaos içinde bile zorla bir sır ve anlam bulma (apofeni/takıntı) zaafını eleştirir.'
+  },
+  {
+    title: 'Büyük Emu Savaşı (Doğanın Alaycı Zaferi)',
+    passage: '1932 yılında Avustralya hükümeti, buğday tarlalarını istila eden binlerce "Emu" kuşuna (devasa, uçamayan devekuşu benzeri hayvanlara) karşı resmi olarak ordusunu göreve çağırdı! Binbaşı Meredith komutasındaki askerler, makineli tüfekler (Lewis guns) ve binlerce mermiyle o kuş sürüsünün karşısına dikildiler. Savaşın birkaç saatte biteceğini ve insan teknolojisinin doğayı ezip geçeceğini sandılar. Ancak tüyler ürpertici bir şey oldu: Emu kuşları ateş açıldığında öyle bir anarşik zekâyla ve hızla (saatte 50 km) küçük gruplara ayrılarak dağıldılar ki; askerlerin makineli tüfekleri tamamen işlevsiz kaldı! Günlerce süren savaşın sonunda ordu 10.000 mermi harcadı ama sadece birkaç yüz Emu vurabildi. Askerler pes edip geri çekildi! "Büyük Emu Savaşı", insanlığın kibrine atılmış en komik ama en felsefi tokatlardan biridir: Doğanın milyonlarca yıllık (esnek, kaotik ve hızlı) evrimsel uyumu; insanın çelikten, baruttan ve matematikten oluşan o hantal, kibirli askerî makinesini (tarihte ilk kez uçamayan kuşlar tarafından) dize getirerek onunla alay etmiştir.',
+    questionStem: 'Avustralya ordusunun "Büyük Emu Savaşı"nda uçamayan kuşlara yenilmesi, "teknoloji ve doğa" ilişkisi hakkında neyin trajikomik (ironik) bir ispatıdır?',
+    options: [
+      'Kuşların tüylerinin mermileri sektirecek kadar çelik gibi sert ve koruyucu bir zırha dönüştüğünün',
+      'Avustralya ordusunun o dönemde I. Dünya Savaşından kalma çok bozuk silahlar kullandığının',
+      'İnsanın en gelişmiş teknolojik (askeri) kibrinin ve hantal yıkım gücünün; doğanın milyonlarca yıllık esnek, hızlı, kaotik (ve anarşik) evrimsel uyumu karşısında saniyeler içinde çaresiz kalıp (komik bir şekilde) yenilgiye uğrayabileceğinin',
+      'Tarımsal ilaçların hayvanları mutasyona uğratarak onları insanlardan daha zeki varlıklara dönüştürdüğünün'
+    ],
+    correct: 2,
+    explanation: 'Makineli tüfekli ordunun, hızla dağılan (evrimsel refleks/kaos) uçamayan kuşlar karşısında çaresiz kalıp pes etmesi; insanın teknolojik/askeri kibrinin doğanın esnek uyumu karşısındaki o komik (ve ironik) yenilgisini ispatlar.'
+  },
+  {
+    title: 'Çince Odası Argümanı (Sahte Anlayış)',
+    passage: 'Yapay zekâ (bilgisayar) gerçekten düşünebilir mi, yoksa sadece taklit mi eder? Filozof John Searle, bu soruyu "Çince Odası" (Chinese Room) argümanıyla yıkar. Kapalı bir odaya, Çince tek bir kelime dahi bilmeyen (İngilizce konuşan) bir adamı koyun. Adama, dışarıdan kâğıda yazılı Çince sorular verilsin. Adamın elinde, "Eğer şu şekil gelirse, yanına şu şekli çiz ve dışarı ver" yazan devasa bir kural kitabı (algoritma) olsun. Adam sadece o kitaptaki şekilleri eşleştirerek dışarıya kusursuz Çince cevaplar gönderir. Dışarıdaki Çinliler içeridekini "Çince bilen (düşünen) bir dâhi" sanırlar! Oysa adam içeride sadece şekilleri (sembolleri) oynatmış, hiçbirinin "anlamını (manasını)" zerre kadar anlamamıştır (İdrak sıfırdır). Bu düşünce deneyi, ChatGPT gibi günümüz yapay zekâlarına tutulan en korkutucu aynadır: Makineler ne kadar kusursuz şiir yazarsa yazsın veya satranç oynarsa oynasın; onlar sadece sembolleri eşleştiren (Çince odasındaki) karanlık ve kör birer sözlük bekçisidir. Onlarda zekâ (sentaks) vardır ama "Bilinç ve Anlam (Semantik)" asla yoktur.',
+    questionStem: 'John Searle\'ün "Çince Odası" (Chinese Room) argümanı, yapay zekânın (bilgisayarların) sınırları hakkında felsefi olarak neyi savunmaktadır?',
+    options: [
+      'Gelecekte bilgisayarların sadece Çince dillerini çevirmekte başarılı olup İngilizceyi anlayamayacağını',
+      'Yapay zekânın insanları köleleştirecek kadar üstün bir "duygusal (hissi)" zekâya ulaşacağını',
+      'Makinelerin ne kadar kusursuz tepki (cevap) verirse versin; onların sadece şekilleri (sembolleri) kural kitabına göre dizen sentaktik araçlar olduğunu, kelimelerin "asıl anlamını (semantiğini/bilincini)" hiçbir zaman idrak edemediklerini (sahte bir anlayış sergilediklerini)',
+      'Çince gibi karmaşık harflere sahip dillerin bilgisayar kodlarına çevrilmesinin matematiksel olarak imkânsız olduğunu'
+    ],
+    correct: 2,
+    explanation: 'Adamın Çince bilmeden sadece şekilleri eşleştirip doğru cevap vermesi; yapay zekânın da ne kadar zeki görünse de kelimelerin "anlamını (bilincini)" asla bilmediğini, sadece sembol dizen (sahte) bir sentaks makinesi olduğunu savunur.'
+  },
+  {
+    title: 'Demokles\'in Kılıcı (İktidarın Bedeli)',
+    passage: 'Antik Sirakuza tiranı (kralı) Dionysios, lüks, altın, güç ve saraylar içinde yaşıyordu. Dalkavuğu olan Demokles, ona sürekli ne kadar şanslı ve mutlu olduğunu söyleyip kralın yerine geçmek istediğini belirtiyordu. Kral ona "Peki, bir günlüğüne tahtıma otur" dedi. Demokles altın tahta oturdu, önüne ziyafetler, içkiler ve hizmetkârlar dizildi. Tam o lüksün sarhoşluğunu yaşarken başını yukarı kaldırdı ve kanı dondu! Tam başının üzerinde, tavandan sadece "incecik bir at kılıyla" asılmış devasa, ağır ve sivri bir kılıç duruyordu! Kıl koptuğu an kılıç kafasını parçalayacaktı. Demokles ziyafeti, tahtı ve gücü anında bırakıp kaçarak canını kurtardı. Kral ona dönüp acımasızca gülümsedi. "Demokles\'in Kılıcı" metaforu, gücün ve iktidarın dışarıdan (cahil gözlere) sadece şatafatlı bir cennet gibi göründüğünü; oysa o tahtta (güçte) oturmanın, her an suikasta, ihanete veya çöküşe uğrama tehlikesiyle, uykuları kaçıran incecik bir ipe bağlı "sarsılmaz ve felç edici bir dehşet (kâbus)" olduğunu yüzümüze çarpar.',
+    questionStem: 'Mitolojideki "Demokles\'in Kılıcı" hikâyesi, güç ve iktidar (taht) sahibi olmak hakkında dışarıdan (dalkavuklardan) görünmeyen hangi asıl gerçeği (kâbusu) tasvir eder?',
+    options: [
+      'Kralların savaş meydanlarında her zaman kılıç kuşanarak en önde savaşmak zorunda olduklarını',
+      'İktidarın (gücün) dışarıdan sadece şatafat, lüks ve mutluluk (cennet) gibi görünmesine rağmen; aslında her an düşme, ihanete uğrama ve yok olma korkusuyla incecik bir ipe (tehlikeye) bağlı, felç edici bir ölümcül gerilim (kâbus) olduğunu',
+      'Eski çağlarda saraylardaki tavan süslemelerinin depremlerde kralların kafasına düşme riskinin yüksekliğini',
+      'Zenginlerin ve kralların yemek yerken her zaman suikasta uğramamak için askerleriyle aynı sofraya oturduğunu'
+    ],
+    correct: 1,
+    explanation: 'Tahtın üzerinde at kılına bağlı (her an düşebilecek) bir kılıcın olması; iktidarın lüks (cennet) değil, her an yok olma korkusuyla yaşanan kesintisiz ve ince ipe bağlı bir ölümcül kâbus (tehlike) olduğunu tasvir eder.'
+  },
+  {
+    title: 'Diderot Etkisi (Tüketimin Sonsuz Sarmalı)',
+    passage: '18. yüzyılın büyük Fransız aydınlanmacı filozofu Denis Diderot, hayatı boyunca yoksul (ve bilge) bir adam olarak yaşamıştı. Ancak bir gün Rus Çariçesi ona yüklü bir para ödedi ve Diderot bu parayla kendisine çok şık, kırmızı, lüks bir "sabahlık (röpteşambır)" satın aldı. Mutluydu. Ancak o lüks sabahlığı giyip evinde oturduğunda, etrafına baktı ve beyni ona bir oyun oynadı: "Bu şatafatlı ve mükemmel sabahlık, eski püskü masama, yırtık halıma ve soluk sandalyeme hiç uymuyor!" Diderot, o sabahlığa (yeni standarda) uyması için önce masasını değiştirdi, sonra halısını, sonra tablolarını... En sonunda tüm parasını bitirip (borca batıp) eskisinden çok daha sefil ve mutsuz bir insana dönüştü! Felsefe ve ekonomiye "Diderot Etkisi" olarak geçen bu hastalık; insanoğlunun tek bir yeni eşya (veya başarı) elde ettiğinde, o eşyanın hayatındaki diğer her şeyi (sahip olduklarını) aniden "yetersiz ve çirkin" gösterdiği; ve insanı asla tatmin olmayan, her şeyi birbiriyle uyumlu hale getirmeye çalışırken onu dibe çeken o "tüketim, doyumsuzluk ve borç sarmalına" (illüzyona) düşüşünün efsanevi kanıtıdır.',
+    questionStem: 'Diderot Etkisi (yeni alınan sabahlığın tüm evi değiştirtmesi), tüketim ve insan psikolojisi bağlamında neyin "karanlık sarmalını (illüzyonunu)" özetler?',
+    options: [
+      'Filozofların maddi konulardan anlamadığı için ellerine geçen ilk parayı hemen kumar veya borsada kaybetmelerini',
+      'İnsanın aldığı yeni ve lüks bir eşyanın (standardın), elindeki diğer tüm şeyleri aniden "yetersiz/uyumsuz" göstererek; kişiyi, her şeyi o yeni seviyeye uydurmak uğruna bitmek bilmeyen bir doyumsuzluk ve tüketim (borç) zincirine sürüklemesi hastalığını',
+      'Kırmızı renkli kıyafetlerin insan psikolojisinde aşırı agresiflik ve harcama dürtüsü yarattığını kanıtlayan renk psikolojisini',
+      'Fransız aydınlarının Rus Çariçesine yaranmak için bilerek evlerini lüks eşyalarla döşeme kibrini'
+    ],
+    correct: 1,
+    explanation: 'Yeni ve lüks bir sabahlığın (standardın) evi çirkin gösterip tüm eşyaları (uyum uğruna) değiştirtmesi ve adamı batırması; insanın o doyumsuz, bitmek bilmeyen "tüketim ve yetersizlik sarmalına (Diderot Etkisine)" düşüşünü özetler.'
+  }
+];
+
+export const felsefeParagrafSorulari43: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_43.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_43[idx];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-felsefe43-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
 // paragrafTests.ts dosyasının hata vermemesi için iki listeyi birleştirip eski adıyla dışa aktarıyoruz:
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari,
@@ -11463,7 +11740,8 @@ export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...bilimParagrafSorulari39,
   ...bilimParagrafSorulari40,
   ...bilimParagrafSorulari41,
-  ...felsefeParagrafSorulari42
+  ...felsefeParagrafSorulari42,
+  ...felsefeParagrafSorulari43
   
   
   
