@@ -12463,6 +12463,283 @@ export const bilimParagrafSorulari46: BilimParagrafQuestion[] = Array.from({ len
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
+const PARAGRAPH_THEMES_47 = [
+  {
+    title: 'Hayatta Kalanlık Önyargısı (Abraham Wald\'ın Uçakları)',
+    passage: 'İkinci Dünya Savaşı sırasında Amerikan ordusu, savaştan dönen bombardıman uçaklarını inceledi. Uçakların kanatları ve gövdeleri kurşun delikleriyle delik deşikti. Komutanlar anında o kibirli kararı verdiler: "Bu delik deşik olan kanatları ve gövdeleri ekstra zırhla kaplayalım!" Ancak dâhi matematikçi Abraham Wald bu karara şiddetle itiraz etti ve o sarsıcı felsefi tokatı attı: "Hayır! Zırhı, uçakların hiç kurşun yememiş (sağlam kalmış) gibi görünen motorlarına takmalısınız!" Neden mi? Çünkü komutanlar sadece "savaştan sağ dönebilen (hayatta kalan)" şanslı uçaklara bakıyorlardı. Kanadından vurulan uçak bir şekilde üsse dönebiliyordu; ancak "motorundan" vurulan uçaklar okyanusun dibine çakılmış, bir daha asla geri dönememişti! "Hayatta Kalanlık Önyargısı" (Survivorship Bias), insanın başarıya olan körü körüne inancıdır: Bizler sadece zirveye çıkan başarılı insanlara (veya sağ dönen uçaklara) odaklanıp onların hikâyesini kutsarken; aynı yoldan gidip yok olan (görünmez) binlerce kurbanın o sessiz mezarlığını görmezden gelme ahmaklığına düşeriz.',
+    questionStem: 'Abraham Wald\'ın "Hayatta Kalanlık Önyargısı" (Survivorship Bias) üzerinden askeri komutanlara verdiği ders, insan psikolojisindeki hangi "körlüğü" eleştirmektedir?',
+    options: [
+      'Orduların savaş zamanında mühendislerin tavsiyelerini her zaman göz ardı etmesi gerçeğini',
+      'İnsanın sadece "başarılı olanlara (sağ kalanlara)" odaklanarak tüm analizleri onlar üzerinden yapması; ancak asıl gerçeğin ve tehlikenin, yok olan (geri dönemeyen) sessiz kurbanların o görünmez hikâyesinde saklı olduğunu görememesi (kibrini)',
+      'Savaş uçaklarının tasarımında her zaman maliyetin kaliteden daha çok önemsendiği yönündeki ekonomik kuralı',
+      'Uçakların kanat bölgelerinin motorlara göre her zaman daha hayati bir aerodinamik işlev taşıdığını'
+    ],
+    correct: 1,
+    explanation: 'Sadece sağ dönen uçakların kurşun izlerine bakıp motorları (asıl vurulup düşenleri) görmezden gelmek; başarıya odaklanıp yok olanların (başarısızlıkların) sessiz mezarlığını görememe (körlük) zaafıdır.'
+  },
+  {
+    title: 'Kötülüğün Sıradanlığı (Adolf Eichmann)',
+    passage: 'Milyonlarca Yahudinin gaz odalarına gönderilmesini organize eden Nazi subayı Adolf Eichmann, 1961\'de Kudüs\'te mahkemeye çıkarıldığında, tüm dünya kafeste şeytani boynuzları olan, kana susamış vahşi bir canavar (sadist) görmeyi bekliyordu. Oysa karşılarında kelleşmiş, son derece kibar, sıkıcı, sıradan bir memur duruyordu! Filozof Hannah Arendt bu mahkemeyi izlediğinde o dondurucu gerçeği yazdı: "Kötülüğün Sıradanlığı" (Banality of Evil). Eichmann bir psikopat değildi, kurbanlarından nefret etmiyordu; o sadece "terfi almak, yasalara uymak ve kendisine verilen masa başı (lojistik) emirlerini kusursuzca yerine getirmek" isteyen itaatkâr bir bürokrattı. İşin asıl kâbusu da buydu: Tarihin en büyük kötülükleri, sadist şeytanlar tarafından değil; kendi aklını ve vicdanını otoriteye kiralayıp "Ben sadece görevimi yapıyordum!" diyen o sıradan, sıkıcı ve itaatkâr devlet memurları tarafından işlenir.',
+    questionStem: 'Hannah Arendt\'in "Kötülüğün Sıradanlığı" kavramı, büyük katliamların ve vahşetlerin kökeni hakkında neyi ispatlamaktadır?',
+    options: [
+      'Kötülüğün her zaman doğuştan gelen şeytani (psikopatik) bir genetik bozukluk olduğunu',
+      'Tarihteki en büyük vahşetlerin kana susamış canavarlar tarafından değil; aklını (vicdanını) askıya alıp sadece "üstlerinin verdiği emirleri (kuralları) körü körüne uygulayan" o sıradan ve itaatkâr memurlar tarafından gerçekleştirildiği gerçeğini',
+      'Mahkemelerin savaş suçlularını yargılarken her zaman merhametli davrandığını',
+      'Faşist rejimlerin sadece eğitimsiz ve cahil askerler kullanarak ayakta kaldığını'
+    ],
+    correct: 1,
+    explanation: 'Eichmann\'ın canavar değil, sadece emirleri uygulayan sıkıcı bir memur olması; kötülüğün şeytani bir sadizmden değil, "ben sadece görevimi yaptım" diyen o sıradan/itaatkâr memur vicdansızlığından geldiğini kanıtlar.'
+  },
+  {
+    title: 'Evren 25 Deneyi (Fare Ütopyası)',
+    passage: '1960\'larda John B. Calhoun, fareler için kusursuz bir "Cennet (Evren 25)" inşa etti. Hastalık yoktu, yırtıcı kedi yoktu, hava sıcaklığı kusursuzdu ve sonsuz (sınırsız) miktarda yiyecek/su vardı. Herkes bu ütopyada farelerin mutlu bir şekilde sonsuza dek çoğalacağını sanıyordu. Ancak sonuç bir psikolojik kıyametti! Sınırsız kaynaklara rağmen nüfus 2200\'e ulaştığında sistem aniden çöktü ("Davranışsal Çöküş"). Fareler çalışmayı, çiftleşmeyi ve sosyalleşmeyi bıraktı. Bazı erkek fareler sadece tüylerini yalayarak saatlerce boş boş oturdu (Güzeller). Anneler yavrularını yedi, şiddet ve cinnet patlak verdi ve en sonunda bu kusursuz "cennetteki" farelerin tamamı kendi kendine tükenerek (üremeyerek) neslini yok etti! Evren 25 deneyi, insanoğluna o en karanlık varoluşsal tokatı atar: Mücadele etmenin, zorluğun ve "hayatta kalma stresinin" olmadığı o mutlak konfor (ve sınırsız refah) alanı bir ütopya değil; canlının içindeki yaşama sevincini, anlam arayışını ve ruhunu felç ederek onu sessiz bir intihara sürükleyen kusursuz bir biyolojik cehennemdir.',
+    questionStem: 'John B. Calhoun\'un "Evren 25 (Fare Ütopyası)" deneyi, mutlak refah ve zorlukların olmaması durumu hakkında felsefi olarak neyi kanıtlar?',
+    options: [
+      'Farelerin genetik olarak sınırlı alanlarda yaşamaya uygun olmayan canlılar olduğunu',
+      'Tüm zorlukların, tehlikelerin ve mücadelelerin (stresin) sıfırlandığı o mutlak konfor ve sınırsız kaynak (ütopya) ortamının; canlıda mutluluk değil, aksine yaşama amacını (ruhunu) yok ederek onu cinnete ve kendi neslini tüketmeye iten bir "kâbus (cehennem)" olduğunu',
+      'Hayvanların bol yiyecek bulduklarında sadece uyumayı tercih ederek evrimleşmeyi durdurduğunu',
+      'Nüfus planlamasının sadece yırtıcı hayvanların (kedilerin) varlığıyla sağlanabileceğini'
+    ],
+    correct: 1,
+    explanation: 'Sınırsız yiyecek/güvenlik olan ütopyada farelerin çıldırıp yok olması; mücadelenin/zorluğun olmadığı o mutlak konfor alanının, canlının yaşama sevincini/anlamını yok eden (ve onu çökerten) bir cehennem olduğunu kanıtlar.'
+  },
+  {
+    title: 'Streisand Etkisi (Sansürün İntiharı)',
+    passage: '2003 yılında ünlü şarkıcı Barbra Streisand, evinin havadan çekilmiş bir fotoğrafının internette bir arşiv sitesinde (kıyı erozyonu araştırması için) yayımlandığını fark etti. O güne kadar fotoğrafı sadece 6 kişi (onlar da araştırmacı) indirmişti. Streisand, gizliliğinin ihlal edildiğini söyleyerek fotoğrafın internetten kaldırılması için 50 milyon dolarlık devasa ve şatafatlı bir dava açtı. Sonuç ne oldu? Dava haberlere çıkınca, milyonlarca insan "Acaba neyi saklıyor?" diyerek o siteye akın etti ve fotoğraf saniyeler içinde tam 420.000 kez indirildi! İnternet literatürüne "Streisand Etkisi" olarak geçen bu olay, sansürün (ve otoritenin) o komik ve intihara meyilli fiyaskosudur: Bir bilgiyi, fotoğrafı veya fikri zorla gizlemeye, yasaklamaya ve örtbas etmeye çalıştığınızda; o yasaklama eyleminin bizzat kendisi, dünyanın en büyük megafonuna dönüşerek o gizli bilgiyi milyonlarca insanın beynine anında ve geri döndürülemez bir şekilde kazır. Sansür, hakikatin en bedava reklamıdır.',
+    questionStem: 'Barbra Streisand\'ın açtığı davanın "Streisand Etkisi"ne dönüşmesi, bilgi ve sansür bağlamında neyin ironisidir?',
+    options: [
+      'Ünlülerin açtığı davaların hukuk sisteminde her zaman reddedilerek sonuçsuz kalmasının',
+      'Bir bilgiyi (veya görseli) zorla gizleme ve sansürleme çabasının, o bilgiyi yok etmek yerine, insanların merakını tetikleyerek (dev bir megafon gibi) o bilginin milyonlarca kişiye çok daha hızlı yayılmasını sağladığı o komik ironinin (sansürün kendi kendini vurmasının)',
+      'Hava fotoğrafçılığının kişisel mahremiyet yasalarını tamamen ihlal etmesinin',
+      'İnternet sitelerinin her zaman telif haklarına saygı duyarak resimleri otomatik silmesinin'
+    ],
+    correct: 1,
+    explanation: 'Gizlemek için açılan davanın resmi 420 bin kez indirtmesi; bir şeyi zorla yasaklamanın/sansürlemenin onu yok etmek yerine çok daha büyük kitlelere yayarak (sansürün kendi kendini vurduğu) bir megafona dönüştüğünü gösterir.'
+  },
+  {
+    title: 'Yazsız Yıl (1816) ve Frankenstein',
+    passage: '1815 yılında Endonezya\'daki Tambora Yanardağı öylesine korkunç bir şiddetle patladı ki, gökyüzüne fışkıran milyonlarca ton kül tüm dünyanın atmosferini (güneşi) kapattı. Ertesi yıl (1816), tarihe "Yazsız Yıl" olarak geçti. Avrupa ve Amerika\'da temmuz ayında bile kar yağıyor, gökyüzü kopkoyu bir kırmızıyla yanıyor, ekinler donuyor ve kıtlık baş gösteriyordu. Bu küresel ve dondurucu kıyametin ortasında, 19 yaşındaki Mary Shelley ve arkadaşları (Lord Byron gibi şairler) İsviçre\'de bir evde mahsur kaldılar. Dışarıdaki o fırtınalı, karanlık ve hastalıklı atmosfere bakarak vakit geçirmek için aralarında bir "korku hikâyesi yazma" yarışması düzenlediler. Mary Shelley, dışarıdaki o kül ve ölüm dolu gökyüzünden aldığı ilhamla, dünya edebiyatının en büyük felsefi başyapıtlarından birini, "Frankenstein"ı o karanlık odada yarattı. Doğa, güneşi çalarak insanoğluna bir kıyamet yaşatmış; ancak insan zihni (sanat), o kapalı zindanın içindeki korkuyu ve karanlığı yoğurarak ölümsüz bir başyapıt doğurmuştur.',
+    questionStem: 'Tambora Yanardağı\'nın patlamasıyla yaşanan "Yazsız Yıl (1816)" ile Frankenstein romanının doğuşu arasındaki ilişki neyin metaforudur?',
+    options: [
+      'İklim değişikliklerinin insanların sadece iç mekânlarda yaşamaya başlamasına neden olduğunun',
+      'Küresel ve fiziksel felaketlerin (doğanın yarattığı karanlık ve krizlerin), insan zihnini hapsedip umutsuzluğa sürüklese de; aynı zamanda o kâbusun içinden edebiyatın ve sanatın en ölümsüz, karanlık şaheserlerini (yaratıcılığı) doğuran bir katalizör olabilmesinin',
+      'Roman yazarlarının her zaman volkanik dağların etrafında inzivaya çekildiğinin',
+      '19. yüzyılda ısınma teknolojisi olmadığı için insanların evlerde sürekli kitap okuduğunun'
+    ],
+    correct: 1,
+    explanation: 'Yanardağın getirdiği karanlık/kıyamet yılı yüzünden eve kapanan Mary Shelley\'in Frankenstein\'ı yazması; dışarıdaki (doğal) felaketin ve karanlığın, insan zihninde ölümsüz ve karanlık bir şaheser (sanat) doğuran bir katalizöre dönüşebildiğinin metaforudur.'
+  },
+  {
+    title: 'Mahkûm İkilemi (Güvensizliğin Trajedisi)',
+    passage: 'Oyun Teorisi\'nin en sarsıcı zihin oyunu "Mahkûm İkilemi"dir (Prisoner\'s Dilemma). İki suç ortağı polis tarafından yakalanıp ayrı sorgu odalarına alınır. Kural şudur: İkisi de susarsa sadece 1\'er yıl hapis yatacaklardır (En kârlı senaryo). Ancak biri konuşur diğeri susarsa; konuşan serbest kalacak, susan (ihanete uğrayan) 10 yıl yatacaktır! Eğer ikisi de birbirini satıp konuşursa 5\'er yıl yatacaklardır. Mantıken, iki mahkûmun da birbirine güvenip "susması" ve 1\'er yılla kurtulmaları gerekir. Ancak o karanlık sorgu odasında, her iki mahkûm da "Ya o beni satarsa ve ben 10 yıl yatarsam?" korkusuna (bencilliğe) yenik düşer. Kendini korumak (veya karşıdakini satmak) için ikisi de "konuşmayı" seçer ve rasyonel ihanet yüzünden ikisi de 5\'er yıl hapse mahkûm olur! Bu oyun, insanlık tarihinin özetidir: Toplumlar, devletler ve insanlar, aralarında bir güven (ahlak) köprüsü kuramadıklarında; herkesin sadece kendi "rasyonel ve bencil çıkarını" düşünmesi, eninde sonunda tüm sistemi (herkesi) daha kötü bir felakete ve kolektif bir yıkıma sürükler.',
+    questionStem: 'Mahkûm İkilemi (Prisoner\'s Dilemma) düşünce deneyi, "Bireysel Mantık ve Toplumsal Güven" ilişkisine dair hangi karanlık çelişkiyi ifşa eder?',
+    options: [
+      'Suçluların polis sorgularında her zaman doğruyu söyleme eğiliminde olduğunu',
+      'Polislerin çapraz sorgu taktikleriyle tüm sırları kolayca çözebileceğini',
+      'Bireylerin, karşısındakine güvenemediği için tamamen "kendi bencil ve rasyonel çıkarlarına" göre karar vermesinin (ihanetin); işin sonunda herkes için (ortaklaşa) en zararlı ve en felaket sonuca (kolektif yıkıma) yol açtığı gerçeğini',
+      'Hapis cezalarının caydırıcı olmadığı için insanların daha çok suç işlediğini'
+    ],
+    correct: 2,
+    explanation: 'İkisinin de birbirine güvenmeyip bencilce kendini kurtarmak için konuşması ve sonucunda ikisinin de (en ağır cezayı) alması; bireysel/bencil mantığın, güven yokluğunda "kolektif bir yıkıma" (herkese zarar veren sonuca) yol açtığını ifşa eder.'
+  },
+  {
+    title: 'Boltzmann Beyni (Evrensel Halüsinasyon)',
+    passage: 'Astrofiziğin en ürpertici (ve çıldırtıcı) felsefi teorilerinden biri "Boltzmann Beyni"dir. Termodinamik yasalarına göre, evren gibi bu kadar devasa, kompleks ve galaksilerle dolu bir yapının düşük entropiden (düzenli bir şekilde) tesadüfen oluşma ihtimali milyarlarca kez milyarda sıfırdır! Fizikçi Ludwig Boltzmann\'ın denklemlerine göre, kozmik boşlukta dolaşan atomların tamamen rastgele çarpışarak aniden (kısa bir süreliğine) çalışan, anıları olan ve "düşünen tek bir insan beynini" (Boltzmann Beyni) yaratma ihtimali; koca bir evrenin var olma ihtimalinden trilyonlarca kat daha "YÜKSEKTİR". Bu korkunç denkleme göre; şu an okuduğunuz bu kelimeler, yıldızlar, arkadaşlarınız ve tüm tarih gerçekte var olmayabilir! Sadece uzay boşluğunda kuantum dalgalanmalarıyla şans eseri (ve saniyelik) ortaya çıkmış "tek bir yalnız beyinsiniz" ve tüm o devasa evren kurgusu (ve geçmişiniz), o beynin o saniye gördüğü sahte bir halüsinasyondan ibaret olabilir. Bilim, solipsizmin (tekbenciliğin) bu en dondurucu ve yalnız zindanına matematiğin anahtarıyla kapı aralar.',
+    questionStem: 'Boltzmann Beyni teorisinin (Tek bir beynin tesadüfen oluşmasının evrenin oluşmasından daha olası olması) insan algısı üzerindeki sarsıcı argümanı nedir?',
+    options: [
+      'Gelecekte insanların beyinlerinin bedenlerinden ayrılarak uzay boşluğunda yaşayabileceği',
+      'Bütün kâinatın, yıldızların ve geçmiş anılarımızın aslında fiziksel bir gerçeklik olmadığı; "uzay boşluğunda anlık olarak tesadüfen oluşmuş tek bir beynin (sizin beyninizin) o saniye gördüğü devasa bir halüsinasyondan (illüzyondan)" ibaret olabileceği ihtimali',
+      'İnsan beyninin evrenin sadece %5\'ini algılayabilecek kadar küçük bir işlemci olduğu',
+      'Atomların uzay boşluğunda zamanla aşınarak düşünme yeteneklerini tamamen kaybettiği'
+    ],
+    correct: 1,
+    explanation: 'Bir beynin oluşma ihtimalinin evrenden yüksek olması; şu anki tüm evrenin ve geçmişin aslında sadece o anlık oluşan "tek bir beynin gördüğü (büyük) bir halüsinasyon" olabileceği sarsıntısını (solipsizmi) yaratır.'
+  },
+  {
+    title: 'Tuskegee Frengi Deneyi (Bilimin İhaneti)',
+    passage: '1932 yılında Amerikan hükümeti (Halk Sağlığı Servisi), frengi (sifiliz) hastalığının insan bedeni üzerindeki "doğal yıkımını" izlemek için Alabama\'da korkunç bir deney başlattı (Tuskegee Deneyi). Araştırmaya 399 fakir, siyahi erkek dâhil edildi. Onlara "kötü kan" hastalığı için tedavi edildikleri yalanı söylendi. Oysa asıl kâbus 1940\'larda "Penisilin"in icat edilmesiyle başladı! Frengiyi kesin olarak iyileştiren (ve ucuz olan) bu ilaç bulunduğu halde; doktorlar o hastalara ilacı KASTEN vermediler! Deneyi bozmamak ve hastalığın beyni, gözleri ve kalbi nasıl çürüttüğünü (ölüm anına kadar) sadece izleyip "veri toplamak" uğruna, o masum adamları eşlerine ve doğan çocuklarına hastalık bulaştırarak 40 yıl boyunca ölüme terk ettiler (Deney 1972\'de basına sızana kadar sürdü). Tuskegee Deneyi; bilimin ve "nesnel veri (akıl)" fetişizminin, ahlak ve vicdandan koptuğunda, insan bedenini (ve azınlıkları) nasıl laboratuvardaki ruhsuz ve değersiz bir kobaya (metaya) çevirip soğukkanlılıkla katledebildiğinin en iğrenç anıtıdır.',
+    questionStem: 'Tuskegee Frengi Deneyi\'nde (tedavi bulunduğu halde hastalara bilerek ilaç verilmemesi), tıp ve otorite hakkında hangi ahlaki çürüme (ve ihanet) ifşa olmuştur?',
+    options: [
+      'Penisilin ilacının siyahilerde yan etki gösterdiği için sadece beyazlara verildiği tıbbi yalanı',
+      'Bilimsel "veri toplama ve nesnel merak" hırsının (otoritenin); ahlakı, vicdanı ve insan haklarını tamamen çöpe atarak, masum insanları göz göre göre acı içinde çürümeye (ve ölüme) terk edecek kadar "soğukkanlı bir katile (ve sömürücüye)" dönüştüğü gerçeği',
+      'Doktorların o dönemde frengi hastalığının bulaşıcı olduğunu henüz bilmedikleri yanılgısı',
+      'Fakir hastaların hastanelerde tedavi olmayı reddederek geleneksel tıbba başvurmaları'
+    ],
+    correct: 1,
+    explanation: 'Tedavi (penisilin) bulunmasına rağmen sırf "hastalığın ilerleyişini izlemek (veri toplamak)" için hastalara ilaç verilmemesi; bilimin ahlakı ve vicdanı kaybettiğinde insanı değersiz bir "kobaya (denek)" çevirip katleden o soğukkanlı kibrini ifşa eder.'
+  },
+  {
+    title: 'Overton Penceresi (Siyasetin Esnek Çerçevesi)',
+    passage: 'Toplumların köleliğe, kadın haklarına veya faşizme olan bakış açıları nasıl değişir? Siyaset bilimci Joseph Overton, "Overton Penceresi" kavramıyla toplumun ahlakının ve fikirlerinin aslında ne kadar manipülatif (esnek) bir kurgu olduğunu gösterir. Bu pencere, o dönem toplumun "kabul edebileceği, normal gördüğü" fikirlerin sınırını (çerçevesini) çizer. Pencerenin dışındaki fikirler "radikal, düşünülemez ve delice" bulunur. Ancak usta politikacılar ve medya o pencereyi kırmazlar; onu yavaş yavaş "sağa veya sola kaydırırlar". Eğer siz medyada "düşünülemez" olan o uçuk (örneğin faşist) fikri sürekli tekrarlar, onu tartışmaya açarsanız; toplum başlangıçta tepki gösterse de, aylar sonra o fikir "radikal" olmaktan çıkıp "kabul edilebilir (normal)" bir görüş olarak o pencerenin içine dâhil olur! İnsanoğlunun ahlaki doğruları ve siyasi kırmızı çizgileri mutlak veya ebedi taşlar değildir; onlar, algı yönetimiyle (medyayla) kolayca kaydırılıp bükülebilen, kitleleri fark ettirmeden radikalleştiren "kâğıttan ve seyyar bir pencereden" ibarettir.',
+    questionStem: 'Overton Penceresi kavramı, toplumların "ahlaki ve siyasi doğruları (normal algısı)" hakkında neyi kanıtlamaktadır?',
+    options: [
+      'Toplumların her zaman muhafazakâr kalarak yeni fikirlere karşı şiddetli ayaklanmalar çıkardığını',
+      'Siyasi ve ahlaki "doğruların (kabul edilebilirliğin)" mutlak/sabit gerçekler olmadığını; medya ve algı yönetimiyle o pencerenin (sınırın) yavaş yavaş kaydırılarak, başlangıçta "delice/radikal" bulunan fikirlerin bile zamanla topluma "normal" olarak kabul ettirilebildiğini',
+      'Diktatörlük rejimlerinin fikirleri halka sorarak şeffaf bir şekilde yönettiğini',
+      'Kitlelerin eğitim seviyesi arttıkça televizyon izlemeyi tamamen bıraktıklarını'
+    ],
+    correct: 1,
+    explanation: '"Düşünülemez" fikirlerin tartışılıp yavaşça normalleşmesi (Pencerenin kayması); toplumun ahlaki/siyasi doğrularının sabit/mutlak olmadığını, algı operasyonlarıyla kolayca bükülüp radikal fikirlerin (gizlice) normalleştirilebileceğini ispatlar.'
+  },
+  {
+    title: 'Gordion Düğümü (Kuralları Parçalamak)',
+    passage: 'Antik çağın en meşhur kehanetine göre; Frigya\'nın başkenti Gordion\'daki bir tapınakta, kızılcık dallarından öylesine karmaşık, başı ve sonu belli olmayan bir "düğüm" atılmıştı ki, bu düğümü çözen kişinin tüm Asya\'nın hâkimi olacağına inanılırdı. Yüzlerce kral, bilge ve asker yıllarca o tapınağa geldi, tırnaklarını kanatarak o düğümü klasik yollarla "çözmeye (açmaya)" çalıştı ama hepsi başarısız oldu. MÖ 333\'te Büyük İskender tapınağa girdi. Düğüme dikkatle baktı, ucunun bulunamayacağını (sistemin kendi içinde kilitli olduğunu) anladı. Parmaklarıyla ipleri çözmek (kurallara uymak) yerine, kılıcını çekti ve tek bir muazzam darbeyle o devasa düğümü "ortadan ikiye böldü" (parçaladı)! İskender sadece Asya\'nın fatihi olmamıştır; o felsefeye o asi manifestoyu bırakmıştır: İçinden çıkılmaz hale gelmiş, köhnemiş ve kilitlenmiş bir sistemi (düğümü) düzeltmenin yolu, o sistemin kendi anlamsız "kurallarına uyarak" onunla oynamak değildir. Gerçek deha ve liderlik, o imkânsız kuralları kökünden kesip atmak (sistemi parçalamak) cesaretidir.',
+    questionStem: 'Büyük İskender\'in "Gordion Düğümü"nü çözmek yerine kılıcıyla kesmesi, karşılaşılan imkânsız problemler (ve sistemler) karşısında neyin metaforudur?',
+    options: [
+      'İnsanların karmaşık zekâ oyunlarına ayıracak kadar sabrının bulunmamasının',
+      'İçinden çıkılmaz (kilitlenmiş) bir sorunu çözmenin yolunun, o sistemin koyduğu "köhnemiş kurallara itaat ederek (sabrederek)" değil; aksine dışarıdan, sarsıcı ve radikal bir hamleyle (kılıçla) o kuralları ve sistemi tamamen "parçalama (kuralları yıkma) cesaretinde" yattığının',
+      'Antik dönemdeki iplerin kılıçlarla bile zor kesilecek kadar sağlam örüldüğünün',
+      'Kralların zorbalık yaparak her zaman kendi istedikleri yasaları halka dayattığının'
+    ],
+    correct: 1,
+    explanation: 'Çözmek için iplerle uğraşmak (sistemin kuralına uymak) yerine kılıçla kesmesi; gerçek dehanın, kilitlenmiş sorunları o köhne kurallara itaat ederek değil, sistemi (kılıçla/radikalce) parçalayarak aşma cesareti olduğunu gösterir.'
+  },
+  {
+    title: 'Siyah Kuğu Teorisi (Öngörülemezliğin Kibri)',
+    passage: 'Yüzyıllar boyunca Avrupalılar dünyadaki tüm kuğuların "beyaz" olduğuna mutlak bir inançla emindiler; çünkü hayatlarında başka renk kuğu görmemişlerdi. Ancak 1697\'de Avustralya kıtası keşfedildiğinde, oradaki göllerde yüzen "Siyah Kuğular" görüldü ve o sarsılmaz (matematiksel) kesinlik saniyeler içinde çöktü! Düşünür Nassim Nicholas Taleb, modern dünyayı yöneten (ve bizi mahveden) bu yanılgıya "Siyah Kuğu Teorisi" (Black Swan) der. Ekonomistler, devletler ve risk uzmanları; geçmişteki istatistiklere (beyaz kuğulara) bakarak geleceği "kusursuzca tahmin ettiklerini" sanırlar. Ancak dünyayı değiştiren, borsaları çökerten, imparatorlukları yıkan veya pandemileri başlatan şeyler o hesaplanabilir günlük olaylar değildir! Dünyayı değiştiren şeyler; hiç kimsenin öngöremediği, ihtimal dahi vermediği, aniden ortaya çıkıp tüm kuralları baştan yazan o aşırı nadir "Siyah Kuğulardır". İnsan aklı, devasa bir kibrin içine hapsolmuştur; geçmişe bakarak geleceği (kaosu) evcilleştirdiğini sanır, oysa kâinat sürprizlerin ve mutlak öngörülemezliğin anarşik tiyatrosudur.',
+    questionStem: 'Nassim Taleb\'in "Siyah Kuğu Teorisi", modern insanın (ve uzmanların) gelecek planlamaları (öngörüleri) hakkında hangi büyük kibrini yerle bir eder?',
+    options: [
+      'Gelecekte hayvan türlerinin tükenerek dünyadaki ekosistemi geri dönülemez şekilde bozacağı korkusunu',
+      'Uzmanların "geçmiş tecrübelere ve istatistiklere (beyaz kuğulara)" bakarak geleceği kontrol edebildiklerini (tahmin edebildiklerini) sanma kibrini yıkarak; aslında tarihi ve dünyayı şekillendiren şeyin, tamamen hesap dışı, sürpriz ve öngörülemez (Siyah Kuğu) olaylar olduğunu',
+      'Bilgisayar algoritmalarının borsa çökmelerini engellemek için her zaman geç kaldığını',
+      'Avrupalıların siyah rengi her zaman bir yas ve ölüm sembolü olarak gördüğü gerçeğini'
+    ],
+    correct: 1,
+    explanation: 'Sadece beyaz kuğu gördükleri için "hepsi beyazdır" sanmaları; insanların geçmiş istatistiklere bakarak geleceği öngördüklerini sanma kibrini (oysa tarihi öngörülemez Siyah Kuğuların belirlediğini) yerle bir eder.'
+  },
+  {
+    title: 'Lindy Etkisi (Zamanın Acımasız Testi)',
+    passage: 'Modern dünyada her gün "Büyük bir devrim yaratacak, her şeyi değiştirecek!" denilen yepyeni teknolojiler, kitaplar veya diyetler (modalar) çıkar ve sadece birkaç yıl içinde unutulup çöpe gider. Ancak 2500 yıl önce yazılan Sokrates\'in felsefesi veya 2000 yıllık satranç oyunu hala sapasağlam ayaktadır. Neden mi? "Lindy Etkisi" denen o acımasız ve sessiz kural yüzünden! İnsan ömrü yaşlandıkça ölüme yaklaşır; ancak "çürümeyen nesneler, fikirler, kitaplar ve teknolojiler" (somut olmayan şeyler) için kural tam tersidir! Bir kitap veya bir teknoloji bugüne kadar ne kadar uzun süre hayatta kalmışsa (kaç yüzyıl dayanmışsa), onun gelecekte de o kadar uzun süre hayatta kalma (var olma) ihtimali artar. Yeni olan her şey kırılgandır ve çoğunlukla bir hevestir. Gerçek değer ve sağlamlık; süslü reklamlarla değil, kaosun, fırtınaların ve milyarlarca insanın eleştirisinden (o en kanlı filtreden) sağ çıkmayı başaran "Zamanın" o dilsiz ve acımasız testinde yatar.',
+    questionStem: 'Lindy Etkisi\'nin temel argümanına göre, bir fikrin, kitabın veya icadın "gerçek değerini (ve gelecekteki dayanıklılığını)" kanıtlayan asıl unsur nedir?',
+    options: [
+      'Çıktığı ilk gün medyada yarattığı büyük reklam ve satış rekorları (popülerliği)',
+      'O eserin veya fikrin; üretildiği günden bugüne kadar, modaya, kaosa ve değişimlere karşı ne kadar uzun süre ayakta kalabildiği; yani "Zamanın o acımasız testinden (filtresinden) geçerek yıllanmış/sağlamlaşmış" olması',
+      'Eseri üreten kişinin akademik olarak ne kadar zeki ve ödüllü olduğu gerçeği',
+      'Gelecek nesillerin o icadı dijital ortama aktarabilme (kopyalayabilme) hızı'
+    ],
+    correct: 1,
+    explanation: 'Yeni şeylerin heves olup eskilerin kalıcı olması (Lindy Etkisi); bir şeyin gerçek dayanıklılığının ve değerinin "zamanın testinden (filtresinden) ne kadar uzun süre sağ çıktığına" bağlı olduğunu kanıtlar.'
+  },
+  {
+    title: 'Schrödinger\'in Kedisi (Gerçekliğin Yaratıcısı)',
+    passage: 'Kuantum fiziğinin babalarından Erwin Schrödinger, meslektaşlarının "Evrendeki her şey biz ona bakana kadar belirsizdir" teorisiyle alay etmek için o meşhur kâbusu tasarladı: "Schrödinger\'in Kedisi". Kapalı ve çelik bir kutunun içine canlı bir kedi, bir şişe zehirli gaz ve o gazı serbest bırakacak rastgele çalışan radyoaktif bir atom yerleştirdi. Kuantum kurallarına göre, o atomun parçalanma (ve gazı açma) ihtimali %50\'dir. Ancak asıl şok şudur: Kutu kapalı kaldığı sürece, kedi içeride sadece "yaşıyor" veya "ölü" değildir; kedi o kutunun içinde kelimenin tam anlamıyla "AYNI ANDA HEM ÖLÜ HEM DE CANLI"dır (Süperpozisyon)! Gerçeklik (kedinin kaderi) kutunun içinde netleşmez; gerçeklik, dışarıdaki "bilinçli bir gözlemci (insan)" o kutunun kapağını açıp içeri BİR BAKIŞ FIRLATTIĞI AN çöker ve iki ihtimalden birine karar verir. Bu düşünce deneyi, evrenin bizden bağımsız, katı ve sarsılmaz bir nesne olduğu kibrini yıkar. Kâinat, ancak bir "izleyicinin (bilincin) gözleri" ona dokunduğunda şekil alan, şifresini bilincimize teslim eden karanlık bir illüzyon sahnesidir.',
+    questionStem: 'Schrödinger\'in Kedisi düşünce deneyine (Kuantum Süperpozisyonuna) göre, fiziksel "gerçekliğin (olayın sonucunun)" netleşmesini sağlayan asıl güç nedir?',
+    options: [
+      'Zehirli gazın kutunun içindeki sıcaklıkla kimyasal tepkimeye girmesi',
+      'Olayın sadece kutunun (kapalı kapıların) içindeki mekanik rastlantılara (zar atımına) bağlı olduğu düşüncesi',
+      'Gerçekliğin kendi başına katı ve kesin olmaması; o olayın "bilinçli bir gözlemci tarafından (kapağın açılıp bakılmasıyla)" izlendiği (gözlemlendiği) an dalga fonksiyonunun çökerek tek bir gerçeğe dönüşmesi (Gözlemcinin yaratıcı gücü)',
+      'Radyoaktif atomların zamanla havaya karışarak kedinin DNA\'sını mutasyona uğratması'
+    ],
+    correct: 2,
+    explanation: 'Kutu açılana kadar kedinin "hem ölü hem canlı" olması; gerçekliğin kendi başına net olmadığı, ancak "bilinçli bir gözlemcinin bakışıyla (ölçümüyle)" çöküp kesinleştiği (gözlemcinin gücü) gerçeğini anlatır.'
+  },
+  {
+    title: 'Golem Etkisi (Negatif Beklentinin Laneti)',
+    passage: 'Bir insana (veya bir topluma) sürekli olarak "Sen aptalsın, başarısızsın ve asla bir şey yapamazsın" derseniz ne olur? Psikolojideki "Golem Etkisi", beklentilerin sadece başarıyı değil, felaketi de nasıl yarattığını ifşa eder. Efsaneye göre Golem, Yahudi mitolojisinde çamurdan yaratılan ama kontrolden çıkarak yıkım getiren bir canavardır. Laboratuvarlarda ve okullarda yapılan deneylerde, otorite figürleri (öğretmenler veya patronlar) bazı kişilere kasten "Düşük zekâlı ve yeteneksiz" muamelesi yaptıklarında; o kişilerin gerçekten de IQ seviyelerinin düştüğü, hata yapma oranlarının tavan yaptığı ve kendi potansiyellerini (kendilerine olan inançlarını yitirerek) sabote ettikleri görüldü! Golem Etkisi, otoritenin sadece sopayla değil, "karanlık beklentilerle" insanı nasıl yok ettiğinin kanıtıdır. İnsanoğlu, kendi içindeki cevhere değil; çoğunlukla başkalarının (otoritenin) onun alnına yapıştırdığı o karanlık "sen beceremezsin" etiketinin içine sıkışarak kendi mezarını kazan kırılgan bir heykeldir.',
+    questionStem: 'Psikolojideki "Golem Etkisi", insan potansiyeli ve başarısızlık (çöküş) hakkında neyi ispatlamaktadır?',
+    options: [
+      'Başarısızlığın tamamen genetik kodlara (DNA\'ya) bağlı değiştirilemez bir kader olduğunu',
+      'Otoritenin (öğretmen/toplum) bireye yüklediği "negatif beklentilerin ve başarısızlık (aptal) etiketinin"; kişide kendini gerçekleştiren bir lanete dönüşerek, bireyin potansiyelini (kendine inancını) çökertip onu gerçekten başarısız bir kurbana (Goleme) dönüştürdüğünü',
+      'İnsanların sadece zorlu fiziksel işlerde çalışırken başarısız olma eğiliminde olduğunu',
+      'Çamurla oynamanın ve doğayla iç içe olmanın zekâ seviyesini düşürdüğünü'
+    ],
+    correct: 1,
+    explanation: 'Kişiye "başarısızsın/aptalsın" beklentisiyle yaklaşıldığında gerçekten de IQ\'sunun ve başarsının çökmesi; negatif beklentilerin/etiketlerin (Golem Etkisi) kişinin potansiyelini sabote edip kendini gerçekleştiren karanlık bir lanet olduğunu ispatlar.'
+  },
+  {
+    title: 'Krakatoa Patlaması (Kıyametin Sesi)',
+    passage: 'İnsanoğlu, konserlerdeki devasa hoparlörlerin veya fırlatılan roketlerin sesiyle böbürlenir. Oysa 26 Ağustos 1883 sabahı, Endonezya açıklarındaki "Krakatoa Yanardağı" patladığında, yeryüzü tarihinin kaydedilmiş "en yüksek, en korkunç ve en sağır edici SESİNİ" çıkardı. Patlamanın şiddeti Hiroşima atom bombasının tam 10.000 katıydı! Dağın kükremesi o kadar güçlüydü ki; 3100 kilometre uzaktaki Avustralya\'da insanlar top atışı yapılıyor sandı, 4800 kilometre ötedeki adalarda bile net bir şekilde duyuldu! Patlamanın yarattığı o görünmez şok (ses) dalgası, Dünya\'nın çevresini tam 4 kez dolaştı (barometreler günlerce titredi) ve 65 kilometre ötedeki gemicilerin kulak zarlarını saniyeler içinde kanatarak patlattı. Krakatoa\'nın o dondurucu çığlığı; yeryüzünde tanrıcılık oynayan, binalar dikip okyanusları aşan insanoğlunun o cılız kibrine karşı; gezegenin (doğanın) sadece tek bir nefesle (akustik bir kıyametle) tüm dünyayı nasıl sağır edebileceğinin ve ezip geçebileceğinin en ihtişamlı feryadıdır.',
+    questionStem: 'Krakatoa Yanardağı\'nın patlamasının (ve çıkardığı o devasa ses dalgasının) dünya çapındaki etkisi, "doğa ve insanlık" hakkında neyi sembolize eder?',
+    options: [
+      'Volkanik küllerin atmosferi kaplayarak dünyadaki oksijen seviyesini tamamen bitirdiğini',
+      'İnsanoğlunun teknolojik ve mimari kibrinin ne kadar gürültülü olursa olsun; doğanın, tek bir saniyelik patlamayla (akustik şok dalgasıyla) tüm gezegeni saracak ve insanları sağır edecek kadar "devasa, ölçülemez ve ezici bir güce (kıyamete)" sahip olduğunu',
+      'Yanardağların sadece okyanus ortasındaki ıssız adalara zarar verdiği gerçeğini',
+      'Ses dalgalarının suyun altında havaya göre çok daha yavaş yayıldığını'
+    ],
+    correct: 1,
+    explanation: 'Patlamanın sesinin 4800 km öteden duyulup dünyanın etrafını 4 kez turlaması; doğanın o tek bir nefesinin (akustik gücünün), insan kibrini ezip geçen ne kadar devasa ve kıyametvari bir güce sahip olduğunu sembolize eder.'
+  },
+  {
+    title: 'Terrakotta Ordusu (Ölümü Fethetme Kibri)',
+    passage: 'MÖ 210 yılında Çin\'in ilk İmparatoru Çin Şi Huang, dünyadaki altı devleti ezip kanla birleştirdikten sonra, kılıcını hayatındaki en korkunç düşmana çekti: "Ölüme!" Yaşlanmaktan ve ölmekten o kadar çok korkuyordu ki, yeraltında kendine devasa bir mezar kompleksi yaptırdı. Ancak bu sıradan bir mezar değildi; imparator, ölümden sonraki yeraltı dünyasında da (Hades\'te) savaşabilmek ve ruhları yönetebilmek için tam 8.000 adet gerçek insan boyutunda "kilden (pişmiş topraktan) asker, okçu ve at" (Terrakotta Ordusu) yaptırıp onlarla birlikte gömüldü! Her bir askerin yüz ifadesi, saçı ve zırhı birbirinden farklı (özenle) yontulmuştu. Terrakotta Ordusu bir sanat eseri değildir. O; mutlak iktidarın (gücün), dünya üzerindeki her şeye boyun eğdirdikten sonra, doğanın o en sessiz, en kaçınılmaz ve en mutlak kuralı olan "Ölüme" karşı bile bir ordu kurarak savaşabileceğini (ve onu fethedebileceğini) sanan o sınırsız, çıldırtıcı ve acınası (tanrısal) kibrin taştan pişirilmiş kâbusudur.',
+    questionStem: 'İmparator Çin Şi Huang\'ın 8.000 kişilik "Terrakotta (Kil) Ordusu" ile gömülmesi, iktidar ve ölüm ilişkisi hakkında neyin felsefi bir anıtıdır?',
+    options: [
+      'Çinli heykeltıraşların kil ve seramik sanatında ne kadar büyük bir teknolojik seviyeye ulaştıklarının',
+      'Mutlak gücü elinde tutan bir tiranın, doğanın o en sarsılmaz (kaçınılmaz) yasası olan "Ölümü" bile; askerlerle, kılıçlarla ve yeraltı ordularıyla (kibirle) fethedebileceğini sanan o çıldırtıcı (ve acınası) tanrılaşma hırsının',
+      'İmparatorun aslında askerlerinden nefret ettiği için onların heykellerini yeraltına gömmek istemesinin',
+      'Eski Çin dinlerinde ruhların yeraltında her zaman barış ve sessizlik içinde yaşayacağı inancının'
+    ],
+    correct: 1,
+    explanation: 'İmparatorun ölüme karşı savaşmak için kilden 8000 asker yaptırması; mutlak iktidarın (tiranın), o kaçınılmaz doğa yasası olan "ölümü" bile orduyla (kibirle) yenebileceğini sanan o çıldırtıcı tanrılaşma hırsının anıtıdır.'
+  },
+  {
+    title: 'Forer Etkisi (Astrolojinin Bencil Kibri)',
+    passage: 'Güneş burcunuzun günlük yorumunu okuduğunuzda "İçinizde kullanmadığınız büyük bir potansiyel var, bazen insanlara karşı çok vericisiniz, bazen ise kendinizi kapatıyorsunuz" gibi cümleleri görür ve "Aman Tanrım, beni anlatıyor!" diye büyülenirsiniz. Psikolog Bertram Forer, 1948\'de bu kibri yıkan o efsanevi deneyi yaptı. Öğrencilerine tamamen "onlara özel (kişiselleştirilmiş)" olduğunu söylediği kişilik testleri dağıttı. Sonra öğrencilere bu analizin ne kadar doğru olduğunu sordu. Sınıfın %85\'i "Beni kusursuz ve eksiksiz tarif etmiş" diyerek 5 üzerinden 4.26 puan verdi! Oysa Forer\'in o kâğıtlara yazdığı metin, sıradan bir gazetedeki astroloji köşesinden kopyaladığı ve "tüm sınıfa dağıttığı aynı (tek tip) yalan metinden" ibaretti! Forer Etkisi (Barnum Etkisi) şunu yüzümüze haykırır: İnsanoğlunun egosu (narsisizmi) o kadar açtır ve "kendini özel hissetmeye" o kadar isteklidir ki; son derece genel, yuvarlak ve belirsiz cümleleri bile anında (ve körü körüne) kendi hayatına yontarak, o kâğıt parçasında kendi "eşsiz ve ulvi ruhunun" okunduğu (kutsandığı) illüzyonuna sarılır.',
+    questionStem: 'Forer Etkisi (Astroloji testindeki aynı yalan metne herkesin inanması), insan egosuna (ve astrolojiye) dair hangi trajikomik gerçeği kanıtlar?',
+    options: [
+      'Gezegenlerin hareketlerinin insan psikolojisini doğrudan şekillendirdiğini ve yıldız haritalarının doğru olduğunu',
+      'İnsanın (kendi egosunun) "kendini özel ve eşsiz hissetme" açlığı yüzünden; son derece genel, yuvarlak ve herkese uyan (sahte) cümleleri bile anında kendi hayatına yontup (körü körüne) o metnin sadece kendini anlattığına inanma (illüzyon) zaafını',
+      'Genç üniversite öğrencilerinin kişilik testlerini her zaman dikkatsizce doldurup hocaları kandırdığını',
+      'Burçların aslında 12 değil, insan karakterine göre sonsuz sayıya ulaştığı gerçeğini'
+    ],
+    correct: 1,
+    explanation: 'Herkesin aynı metne "tam beni anlatıyor" demesi (Forer Etkisi); insan egosunun "özel hissetme açlığı" yüzünden genel/yuvarlak cümleleri kibre kapılıp kendine yonttuğu (ve körü körüne inandığı) zaafını kanıtlar.'
+  },
+  {
+    title: 'Durma Problemi (Turing\'in Duvarı)',
+    passage: 'İnsanoğlu bilgisayarların (ve matematiğin) yeterli zaman ve güç verildiğinde dünyadaki "her sorunu" eninde sonunda çözeceğine (Tanrılaşacağına) inanır. Ancak bilgisayar biliminin babası Alan Turing, 1936\'da kaleme aldığı "Halting Problem" (Durma Problemi) ile bu kibre aşılmaz bir beton duvar örmüştür. Turing, matematikte bir makinenin "kendi üzerinde çalıştırdığı bir programın" sonsuza kadar takılıp kalacağını mı, yoksa bir noktada durup (işlemi bitirip) durmayacağını önceden hesaplayıp hesaplayamayacağını araştırdı. Çıkan sonuç bilim dünyasını felç etti: Bunu hesaplamanın "kesinlikle" matematiksel (mantıksal) bir yolu YOKTUR! Turing bunu kusursuzca ispatladı. Ne kadar güçlü, ne kadar zeki (veya yapay zekâlı) bir bilgisayar inşa ederseniz edin; evrende ve mantıkta, makinelerin ve aklın "ASLA (ve hiçbir zaman) çözemeyeceği, o sınırı geçemeyeceği" mutlak kör noktalar (imkânsızlıklar) vardır. İnsanın icat ettiği makine bile, evrenin o dilsiz ve çözülemez kilitlerine boyun eğmeye mahkûmdur.',
+    questionStem: 'Alan Turing\'in "Durma Problemi"ni (Halting Problem) matematiksel olarak kanıtlaması, bilgisayar ve bilim felsefesine nasıl bir "mutlak sınır" koymuştur?',
+    options: [
+      'Bilgisayarların elektrik kesintisi yaşandığında verileri tamamen silerek hafıza kaybına uğradığını',
+      'Yeterli zaman ve güç verildiğinde makinelerin (ve aklın) evrendeki "her sorunu (sırrı) çözebileceği" yönündeki o tanrısal kibri yıkarak; mantık ve hesaplamanın doğasında bile asla aşılamayacak (makinelerin çaresiz kalacağı) mutlak ve çözülemez duvarların var olduğunu',
+      'İngiliz kriptologların İkinci Dünya Savaşında şifre kırmak için bilgisayarları kasten yanlış kodladığını',
+      'Matematik formüllerinin sadece kâğıt üzerinde doğru çıkıp bilgisayar ekranlarında hata verdiğini'
+    ],
+    correct: 1,
+    explanation: 'Bir programın durup durmayacağının asla bilinemeyeceğinin ispatlanması; bilgisayarların ve aklın her şeyi (sınırsızca) çözebileceği kibrini yıkarak, mantığın doğasında asla aşılamayacak çözülemez/mutlak duvarların olduğunu gösterir.'
+  },
+  {
+    title: 'Rubicon Nehrini Geçmek (Geri Dönülmez Karar)',
+    passage: 'MÖ 49 yılında Roma İmparatorluğu\'nun kaderi (ve dünyanın seyri) tek bir adamın attığı adımda asılı kalmıştı. Jül Sezar, Galya savaşlarından dönerken, senatonun ordusunu dağıtması emrine karşı geldi. Ordusuyla birlikte, Roma topraklarını ayıran o küçük, sığ ve önemsiz "Rubicon Nehri"nin kıyısına geldi. Roma yasalarına göre, bir komutanın bu nehri ordusuyla geçmesi (silahla girmesi) kesinlikle "vatana ihanet" demekti ve cezası ölümdü! Sezar atının üzerinde uzun süre düşündü. Karşıya geçerse ya Roma\'nın hâkimi olacak ya da vatan haini olarak parçalanacaktı. Atını nehre sürdü ve o efsanevi cümleyi fısıldadı: "Alea iacta est" (Zarlar atıldı / Ok yaydan çıktı). O sığ suyu geçerek koca bir Cumhuriyeti yıkıp imparatorluğu kurdu. "Rubicon\'u geçmek", sıradan bir nehir yürüyüşü değildir. İnsan hayatında ve tarihte öyle saniyeler, öyle eşikler vardır ki; atılan o küçücük adım geri alınamaz, köprüler yıkılır ve kişi (veya tarih) kendi kaderinin o korkutucu, belirsiz ama mutlak fırtınasına (yıkıma veya zafere) dönüşü olmayan bir şekilde fırlatılır.',
+    questionStem: 'Jül Sezar\'ın "Rubicon Nehrini Geçmesi" olayı (Alea iacta est), insan kararları ve tarih bağlamında neyin en epik metaforudur?',
+    options: [
+      'Orduların deniz ve nehir savaşlarında genellikle köprüleri kullanmaktan çekindiğinin',
+      'Romalı senatörlerin komutanlara verdikleri emirleri aslında hiçbir zaman uygulamadığının',
+      'İnsan hayatında (ve tarihte) alınan bazı kararların (aşılan incecik sınırların); "geri dönüşü olmayan, tüm eski kuralları yıkan ve kaderin zarının artık kesin olarak atıldığı" o korkutucu ve mutlak kırılma (dönüm) noktalarının',
+      'Suikastçilerin her zaman nehir kenarlarında pusu kurarak kralları öldürdüğünün'
+    ],
+    correct: 2,
+    explanation: 'Sezar\'ın nehri (ve yasayı) geçerek "Zarlar atıldı" demesi; insan hayatındaki o incecik ama "geri dönüşü olmayan, eskiyi yıkan ve kaderi mutlak şekilde değiştiren" kırılma (eşik) anlarının epik metaforudur.'
+  },
+  {
+    title: 'Pauli Dışlama İlkesi (Maddenin İllüzyonu)',
+    passage: 'Ayağınızı sertçe yere vurun. Yer sağlamdır, aşağı düşmezsiniz. Duvara yaslandığınızda duvar sizi tutar. İnsanoğlu binlerce yıl boyunca dünyanın "katı, sıkı ve dopdolu (madde)" olduğuna inandı. Oysa kuantum fiziği bu kibri de paramparça etti. Vücudumuzu ve duvarları oluşturan atomların %99.999999\'u tamamen "BOŞLUKTUR!" (Hiçliktir). Peki madem her şey boşluk, neden ayaklarımız boşluktan kayıp dünyanın merkezine doğru düşmüyor? Cevap, o dondurucu kuantum kuralında (Pauli Dışlama İlkesi) yatar. Fizikçi Wolfgang Pauli şunu keşfetti: Evrendeki fermiyonlar (elektronlar gibi madde parçacıkları), asla ve asla "aynı kuantum durumunu (aynı yeri ve kimliği)" paylaşamazlar! Sizin ayakkabınızdaki elektronlar ile yerdeki elektronlar birbirine yaklaştığında, doğanın o matematiksel "kimlik/benzersizlik" kuralı devreye girer ve birbirlerini inanılmaz bir şiddetle iterler (reddedeler). Dünyanın katı ve sert olması, maddenin doluluğundan değil; evrenin parçacıklara koyduğu o görünmez, matematiksel "sen benim yerime geçemezsin (benzersizlik)" kuralının o sert ve itici dışlanmasından kaynaklanan muazzam bir dokunma illüzyonudur.',
+    questionStem: 'Wolfram Pauli\'nin "Dışlama İlkesi", katı sandığımız (dünyanın ve nesnelerin) fiziksel gerçekliği hakkında nasıl zihin yakan bir hakikati (illüzyonu) ortaya koyar?',
+    options: [
+      'Gezegenlerin çekirdeklerindeki demirin, dışarıdaki nesneleri mıknatıs gibi kendine çektiği gerçeğini',
+      'Nesnelerin sert ve katı olmasının (içlerinin dolu olmasından değil); atomların %99\'unun boşluk olmasına rağmen, elektronların "aynı alanı (kimliği) paylaşamama" kuralı yüzünden birbirini iterek yarattıkları o görünmez, matematiksel bir "reddetme (dokunma) illüzyonu" olduğunu',
+      'İnsan hücrelerinin zamanla sertleşerek kemik dokusuna dönüşüp doğayı hissetmeyi engellediğini',
+      'Kuantum dünyasında nesnelerin birbirinin içinden hiçbir direnç görmeden hayalet gibi geçebildiğini'
+    ],
+    correct: 1,
+    explanation: 'Maddenin %99\'unun boşluk olmasına rağmen iç içe geçmemesi; katılık/sertlik hissinin maddenin doluluğu değil, elektronların "aynı yeri paylaşmama (birbirini itme)" şeklindeki matematiksel kuralının (Pauli Dışlama) yarattığı bir illüzyon olduğunu ortaya koyar.'
+  }
+];
+
+export const felsefeParagrafSorulari47: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_47.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_47[idx];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-felsefe47-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari,
   ...tarihParagrafSorulari2,
@@ -12509,7 +12786,10 @@ export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...felsefeParagrafSorulari43,
   ...bilimParagrafSorulari44,
   ...bilimParagrafSorulari45,
-  ...bilimParagrafSorulari46
+  ...bilimParagrafSorulari46,
+  ...felsefeParagrafSorulari47
+  
+  
   
   
   
