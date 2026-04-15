@@ -10589,6 +10589,283 @@ export const bilimParagrafSorulari38: BilimParagrafQuestion[] = Array.from({ len
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
+const PARAGRAPH_THEMES_39 = [
+  {
+    title: 'Vajont Barajı Faciası (Mühendisliğin İntiharı)',
+    passage: '1960\'larda İtalyan mühendisler, Avrupa\'nın en yüksek barajını (Vajont Barajı\'nı) inşa etmek için Alp dağlarındaki bir vadiyi seçtiler. Ancak barajın hemen yanındaki dağın adı yerel dilde "Monte Toc" (Yürüyen Dağ) idi ve bölge halkı o dağın çürük olduğunu yüzyıllardır biliyordu. Mühendisler, modern betonlarına ve hesaplamalarına öylesine körü körüne güvendiler ki, dağın kayma sinyallerini (uyarılarını) görmezden geldiler. 9 Ekim 1963 gecesi dağın devasa bir parçası kırılarak baraj gölüne düştü. Baraj yıkılmadı! Ancak düşen devasa kaya, suyu 250 metre havaya fırlatarak (mega-tsunami yaratarak) barajın üzerinden aşırdı ve aşağıdaki Longarone kasabasını saniyeler içinde haritadan sildi; 2000 kişi uykusunda boğuldu. Vajont faciası bir doğa olayı değildir; o, kağıt üzerindeki formülleri doğanın milyarlarca yıllık tecrübesinden üstün gören o "modern mühendislik kibrinin" taştan ve sudan bir mezar taşıdır.',
+    questionStem: 'Vajont Barajı felaketinin temelinde yatan ve insanlığı yıkıma götüren asıl felsefi/psikolojik neden parçada nasıl açıklanmıştır?',
+    options: [
+      'Kullanılan çimento ve demir malzemelerin o dönemde standartların çok altında (kalitesiz) olması',
+      'Modern mühendisliğin (ve aklın), kendi formüllerine körü körüne güvenerek (kibre kapılıp) doğanın o açık uyarılarını ve yerel tecrübeyi hiçe saymasının getirdiği kaçınılmaz yıkım (intihar)',
+      'Dağların isimlerinin mitolojik hikâyelerden gelmesinin bilim insanlarında yersiz bir korku (paranoya) yaratması',
+      'İtalyan hükümetinin baraj inşaatı için yeterli bütçeyi sağlamaması nedeniyle projenin yarım kalması'
+    ],
+    correct: 1,
+    explanation: 'Barajın yıkılmaması ama dağın düşerek suyu taşırması; mühendislerin kağıt üzerindeki kibrinin, doğanın çürük dağ uyarısını (yerel tecrübeyi) hiçe sayarak kendi felaketini hazırladığını gösterir.'
+  },
+  {
+    title: 'Nyos Gölü (Sessiz Katliam)',
+    passage: 'Doğal afetler genellikle şatafatlıdır; depremler yeri sarsar, volkanlar ateş püskürür, kasırgalar kükrer. Ancak 21 Ağustos 1986 gecesi Kamerun\'daki Nyos Gölü çevresinde yaşananlar, doğanın en sinsi ve dilsiz katliamıydı. Gölün derinliklerinde biriken milyonlarca ton Karbondioksit (CO2) gazı, küçük bir sarsıntıyla aniden "geğirerek" su yüzeyine çıktı. Havadan ağır olan bu görünmez ve kokusuz gaz bulutu, gölün etrafındaki vadilere sessizce süzüldü. İnsanlar, çocuklar ve binlerce hayvan hiçbir çığlık atmadan, uykularında tatlı bir yorgunluk hissiyle boğularak can verdi (1700 ölü). Ertesi sabah ortada ne bir yıkıntı, ne bir kan, ne de bir yangın izi vardı; sadece mutlak, dondurucu ve cesetlerle dolu bir sessizlik kalmıştı. Nyos Gölü olayı; ölümün ve kıyametin her zaman gürültüyle gelmediğini, doğanın cephaneliğindeki en kusursuz silahın "görünmezlik ve sessizlik" olduğunu fısıldar.',
+    questionStem: 'Nyos Gölü (Limnik Patlama) felaketinin "doğal afet" algısı üzerinde yarattığı sarsıcı farkındalık (ironi) nedir?',
+    options: [
+      'Karbondioksit gazının sadece Afrika kıtasında ölümcül zehirlenmelere yol açtığı gerçeği',
+      'Volkanik göllerin etrafında yaşamın teknolojiyle tamamen güvenli hale getirilebileceği yanılgısı',
+      'Felaketlerin (kıyametin) her zaman gürültülü, sarsıcı ve fiziksel bir yıkımla gelmek zorunda olmadığı; doğanın, kokusuz, sessiz ve hiçbir iz bırakmayan "görünmez bir silahla" da devasa bir katliam (uyku halinde ölüm) yapabileceği gerçeği',
+      'Göl sularının ani ısınıp buharlaşmasının bölgedeki oksijen miktarını artırdığı inancı'
+    ],
+    correct: 2,
+    explanation: 'Deprem veya ateş olmadan, kokusuz bir gazın insanları sessizce ve iz bırakmadan öldürmesi; felaketlerin (kıyametin) her zaman gürültülü değil, sinsi, dilsiz ve görünmez bir şekilde de gelebileceğini kanıtlar.'
+  },
+  {
+    title: 'Kuzgunların Kini (Evrimsel Hafıza)',
+    passage: 'Kuş beyinli diyerek küçümsediğimiz kargalar ve kuzgunlar üzerinde Seattle\'da inanılmaz bir deney yapıldı. Araştırmacılar ürkütücü maskeler takarak kampüsteki kuzgunları yakalayıp halkaladılar (korkuttular) ve sonra serbest bıraktılar. Yıllar geçti, o kuzgunlar yaşlanıp öldü. Ancak 15 yıl sonra bile, o maskeyi takan bir araştırmacı kampüse adım attığında; "deneye hiç katılmamış, o olayı hiç yaşamamış olan yeni nesil genç kuzgunlar" bile anında çığlık çığlığa bağırarak adama saldırmaya başladı! Kuzgunlar sadece yüzleri kusursuzca hatırlamakla kalmıyor; kinlerini, düşmanlarını ve korkularını kendi yavrularına (ve sürünün diğer üyelerine) bir "kültür" gibi aktararak o nefreti nesiller boyu yaşatıyorlardı. Hayvanlar âlemi sadece içgüdüsel anlarla yaşamaz; onlarda da tıpkı insanlar gibi nesilden nesile aktarılan dilsiz bir "tarih", karanlık bir "kültürel hafıza" ve sönmeyen bir "kan davası" vardır.',
+    questionStem: 'Kuzgunların maskeli araştırmacılara yıllar sonra bile saldırması (kin tutması), hayvan davranışları hakkında hangi ezber bozan gerçeği ispatlar?',
+    options: [
+      'Kuşların renk körü oldukları için sadece korkutucu maskeleri seçebildiklerini',
+      'Hayvanların hafızasının sadece bir hafta sürdüğünü ve çabuk unuttuklarını',
+      'Hayvanların (kuzgunların) sadece anlık içgüdülerle yaşamadığını; düşmanların yüzlerini (nefreti/kini) hatırlayıp bu bilgiyi yeni nesillere öğreterek (kültürel bir aktarımla) nesiller boyu süren bir "tarihsel hafıza" ve "kan davası" yarattıklarını',
+      'Maskelerin yaydığı plastik kokusunun kuşların sinir sistemini saldırganlaştırdığını'
+    ],
+    correct: 2,
+    explanation: 'Deneyi hiç yaşamamış yeni nesil kuzgunların bile maskeye saldırması; hayvanlarda sadece anlık içgüdü olmadığını, nefreti ve düşmanı nesilden nesile öğreten bir "kültürel aktarım (tarihsel hafıza)" olduğunu ispatlar.'
+  },
+  {
+    title: 'Kardiyak Hücrelerin Senkronizasyonu (Biyolojik Toplum)',
+    passage: 'Bilim insanları tek bir kalp kası hücresini (kardiyomiyosit) bir petri kabına koyduklarında, bu hücrenin kendi başına, tamamen düzensiz ve rastgele bir ritimle kasılıp attığını (titrediğini) görürler. Kabın içine başka bir kalp hücresi daha koyarlar; o da kendi rastgele ritminde atmaya başlar. Ancak bu iki hücre kabın içinde birbirine doğru büyüyüp de "fiziksel olarak birbirine temas ettikleri" o sihirli saniyede inanılmaz bir şey olur: İkisi anında kendi bireysel ritimlerinden (anarşiden) vazgeçer ve tamamen senkronize olarak "tek bir ritimde (ortak bir kalp gibi)" atmaya başlarlar! Biyolojideki bu hücresel mucize, sosyolojinin de en saf özetidir: İnsan (veya hücre) tek başınayken kaotik, yalnız ve düzensiz bir ritme sahiptir; ancak bir ötekiyle (toplumla) temas ettiği an, hayatta kalmak ve anlam üretmek için kendi kaosundan vazgeçip o "ortak ve senkronize ahenge" (medeniyete) boyun eğmek zorundadır.',
+    questionStem: 'Petri kabındaki kalp hücrelerinin temas anında "senkronize (tek ritimde) atmaya başlaması", insan ve toplum ilişkisi bağlamında neyin (biyolojik) metaforudur?',
+    options: [
+      'Hücrelerin laboratuvar ortamında dışarıdan verilen elektrik akımlarıyla kontrol edilebileceğinin',
+      'Bireyin yalnızken kaotik ve düzensiz bir ritme sahipken; bir başkasıyla (toplumla) temas ettiği an hayatta kalmak ve "bütün" olmak adına bireysel anarşisini bırakıp ortak bir ahenge (toplumsal senkronizasyona) katılma zorunluluğunun',
+      'Kalp hastalıklarının sadece genetik faktörlerle değil, beslenme şekliyle de bulaşıcı olabileceğinin',
+      'Hücrelerin yaşlandıkça kendi ritimlerini tamamen kaybederek ölüme sürüklendiklerinin'
+    ],
+    correct: 1,
+    explanation: 'Ayrı ayrı düzensiz atan hücrelerin temas anında tek bir ritimde atması; yalnız/kaotik olan insanın, toplumla (ötekiyle) karşılaştığında o kaosu bırakıp ortak bir ahenge/düzene (medeniyete) senkronize olmasını sembolize eder.'
+  },
+  {
+    title: 'Jason Padgett (Edinilmiş Savant Sendromu)',
+    passage: 'Jason Padgett sıradan bir mobilya satıcısıydı. Hayatında matematiğe zerre ilgi duymamıştı. 2002 yılında bir bar çıkışında saldırıya uğradı ve başına ağır bir darbe aldı. Beyninde kanama oldu. Ancak hastaneden taburcu olduğunda dünyası tamamen değişmişti. Artık musluktan akan suyu, ağaçların yapraklarını veya güneş ışığını sıradan bir nesne olarak değil; kusursuz birer "fraktal ve geometrik denklem" olarak, karmaşık matematik formülleri şeklinde "görüyordu"! Beyin hasarı, onun zihnindeki o sıradanlık filtresini kapatmış ve o güne kadar gizli duran, aklın sınırlarını aşan bir matematiksel deha bölgesini (Savant Sendromu\'nu) aktif hale getirmişti. Padgett\'in bu sarsıcı hikâyesi bize dâhi olmanın (Einstein veya Mozart olmanın) dışarıdan öğrenilen bir şey olmadığını söyler. Deha ve aydınlanma, hepimizin kafatasının içinde (kilitli bir odada) uyumaktadır; o kapının kilidini kırmak için bazen sadece kafaya yenecek o travmatik (ve kazara) bir darbeye ihtiyaç vardır.',
+    questionStem: 'Jason Padgett\'in başına darbe aldıktan sonra aniden (Edinilmiş) matematik dâhisine dönüşmesi, "insan zekâsı ve deha" hakkında neyi kanıtlamaktadır?',
+    options: [
+      'Matematik biliminin sadece beynin hasarlı bölgelerinde işlenebilen soyut bir yanılsama olduğunu',
+      'Dehanın (yüksek zekânın) dışarıdan eğitimle öğrenilen bir şey olmadığını; her insanın beyninde kilitli olarak (doğuştan) var olan, ancak çoğumuzda kapalı duran bu potansiyelin uygun bir travma (darbe) ile aniden açılabileceği (kilitli potansiyel) gerçeğini',
+      'Bar kavgalarının ve şiddetin modern toplumda insanların psikolojisini tamamen sıfırladığını',
+      'Geometri ve fraktal şekillerin göz retinasındaki çiziklerden kaynaklanan fiziksel bir kusur olduğunu'
+    ],
+    correct: 1,
+    explanation: 'Hiç matematik bilmeyen adamın darbeden sonra dâhi olması; dehanın dışarıdan değil, beyinde doğuştan kilitli olan (ve travmayla aniden açılabilen) gizli/uyuyan bir potansiyel olduğunu kanıtlar.'
+  },
+  {
+    title: 'Düşmüş Astronot Heykeli (Fallen Astronaut)',
+    passage: '1971 yılında Apollo 15 mürettebatı, Ay yüzeyinden ayrılmadan hemen önce, kraterin sessiz bir köşesine 8 santimetrelik alüminyumdan yapılmış küçük, stilize bir insan heykeli (Fallen Astronaut) ve yanına küçük bir plaket bıraktı. O plakette, uzay yarışında hayatını kaybeden 14 astronotun (ve kozmonotun) isimleri yazılıydı. İşin en sarsıcı yanı; Soğuk Savaş\'ın zirvesinde, dünyada nükleer füzelerle birbirini yok etmeye yemin etmiş Amerika ve Sovyetler Birliği\'nin (düşmanların) ölen çocuklarının isimleri, o plakette yan yana, kardeşçe ve hiyerarşisiz bir şekilde yazılmıştı. Siyasetin dünyada ayırdığı, birbirine düşman ettiği insanları; ancak Dünya\'dan 380 bin kilometre uzaktaki o havasız, sessiz ve ölü kayanın (Ay\'ın) üzerindeki o küçük alüminyum mezarlık birleştirebilmişti. İnsanoğlu, gerçek barışı kurmak için kendi gezegenini terk edip uzayın dondurucu karanlığına gitmek zorundadır.',
+    questionStem: 'Ay yüzeyine bırakılan "Düşmüş Astronot" (Fallen Astronaut) heykeli ve plaketi, Soğuk Savaş dönemi (ve insanlık) bağlamında neyin sembolüdür?',
+    options: [
+      'Uzay mekiği yapımında kullanılan alüminyum maddesinin ay yüzeyinde erimeden kalabildiğinin',
+      'Uzay yarışının galibinin Amerika olduğunu Sovyetlere kanıtlamak için bırakılan bir gövde gösterisinin',
+      'Dünyada (siyasetle) birbirini yok etmeye çalışan düşman ulusların; ancak dünyanın (siyasetin) dışına, uzayın o ölümcül sessizliğine çıktıklarında acıda birleşebilen (ortak insanlık onuruna sahip çıkan) sessiz ve evrensel bir kardeşlik mezarlığının',
+      'Astronotların Ay\'da yaşamak için sanatsal heykellere ihtiyaç duyduğunun'
+    ],
+    correct: 2,
+    explanation: 'Soğuk Savaş\'ta düşman olan ABD ve Sovyet astronotlarının isimlerinin Ay\'da (siyasetin dışında) yan yana anılması; siyasetin böldüğü insanların, uzayın ıssızlığında acıda birleşebilen evrensel bir kardeşlik kurabildiğini sembolize eder.'
+  },
+  {
+    title: 'Kuantum Fotosentezi (Bitkilerin Bilgisayarı)',
+    passage: 'Bir ağacın yaprağına çarpan tek bir güneş ışını (foton), o enerjiyi yaprağın içindeki "reaksiyon merkezine" ulaştırmak için milyonlarca farklı rota seçebilir. Eğer o foton yanlış rotaya girerse yolda ısıya dönüşüp kaybolur. Peki bitkiler bu enerjinin %99\'unu (kusursuz bir verimle) merkeze nasıl taşıyor? Biyofizikçiler gerçeği bulduğunda akıllarını yitirdiler: Yaprakların içindeki o mikroskobik yapı, kuantum fiziğindeki "Süperpozisyon" (aynı anda birden fazla yerde olma) kuralını kullanıyordu! Foton, merkeze gitmek için "aynı anda" o milyonlarca farklı rotayı (aynı saniyede) deniyor, en hızlı ve engelsiz olan yolu bulduğunda anında o tek doğru rotaya çöküyor ve enerjiyi aktarıyordu. Bizim laboratuvarlarda milyarlarca dolara zar zor kurduğumuz o "Kuantum Bilgisayarları"nın algoritmalarını; beyni ve gözü olmayan o dilsiz yeşil yapraklar, milyarlarca yıldır kusursuz bir şekilde, bedavaya hesaplayıp çalıştırıyordu.',
+    questionStem: 'Bitkilerde keşfedilen "Kuantum Fotosentezi" olgusu, doğa ve teknoloji kıyaslamasında insanlığın hangi yanılgısını (kibrini) tokatlar?',
+    options: [
+      'Güneş ışığının bitkiler için aslında zehirli bir radyasyon kaynağı olduğu yanılgısını',
+      'İnsanoğlunun "en karmaşık ve zeki hesaplama sistemlerini (kuantum bilgisayarlarını)" laboratuvarda sadece kendisinin ürettiği kibrini yıkarak; beyni olmayan bir yaprağın bile milyarlarca yıldır bu kuantum hesaplamalarını %99 verimle (bedavaya) çözdüğü gerçeğini',
+      'Yaprakların sonbaharda sararmasının tamamen soğuk havadan kaynaklandığı bilgisini',
+      'Fiziğin sadece uzay boşluğunda, biyolojinin ise karada işlediği yönündeki akademik ayrımı'
+    ],
+    correct: 1,
+    explanation: 'Milyarlarca dolarlık kuantum bilgisayarı mantığını sıradan bir yaprağın milyarlarca yıldır (süperpozisyonla) kullanması; insanın teknolojik kibrini yıkarak, doğanın o dilsiz ve devasa zekâsını (matematiğini) yüzümüze çarpar.'
+  },
+  {
+    title: 'Lagrange Noktaları (Evrenin Otoparkı)',
+    passage: 'Uzay boşluğu, gezegenlerin, yıldızların ve devasa karadeliklerin kütleçekim kuvvetleriyle (rüzgârlarıyla) birbirini çekiştirdiği korkunç, fırtınalı ve kaotik bir savaş alanıdır. Ancak matematikçi Joseph-Louis Lagrange 18. yüzyılda kâğıt üzerinde şaşırtıcı bir huzur noktası buldu. Örneğin Dünya ile Güneş\'in çekim kuvvetlerinin birbirine zıt düşüp kelimenin tam anlamıyla "sıfırlandığı", iki devasa gücün birbirini iptal ettiği 5 adet "Lagrange Noktası" (L1, L2...) vardı! O noktaya giderseniz yerçekimi yoktur; orada öylece donup kalır, uzayın fırtınasında savrulmadan ebediyen sabit beklersiniz. (Bugün milyar dolarlık James Webb Teleskobu işte o "L2" noktasına park etmiştir). Evren bize şunu fısıldar: En büyük kaosların, en yıkıcı fırtınaların ve çekim savaşlarının tam ortasında bile; matematiğin kusursuzca gizlediği, iki gücün çarpışarak "mutlak bir sükûnete (dengeye)" dönüştüğü o dokunulmaz, ebedi "sessizlik (huzur) vahaları" daima mevcuttur.',
+    questionStem: 'Lagrange Noktaları\'nın (kütleçekiminin sıfırlandığı yerlerin) varlığı, evrenin yapısı (ve felsefesi) hakkında neyi sembolize eder?',
+    options: [
+      'Gezegenlerin zamanla güneşin içine düşerek eriyeceği yönündeki karanlık bir sonu',
+      'Uzayın sadece ve sadece yıkıcı bir kaos ve şiddetli savaşlardan (çekimlerden) ibaret olmadığını; bu devasa fırtınaların çarpıştığı noktalarda bile "matematiksel bir dengenin (ve mutlak bir sükûnet vahasının/otoparkının)" var olabileceğini',
+      'Uzay gemilerinin yakıtlarının Güneşin sıcaklığıyla sonsuza kadar şarj edilebileceğini',
+      'Matematik formüllerinin sadece kâğıt üzerinde kaldığını ve evrende fiziksel bir karşılığı olmadığını'
+    ],
+    correct: 1,
+    explanation: 'Dünya ve Güneş çekiminin birbirini iptal edip L2 noktasında sıfır (sabit) bir otopark yaratması; en devasa kaosların/savaşların ortasında bile matematiksel bir dengenin ve "mutlak bir sükûnet vahasının" var olduğunu sembolize eder.'
+  },
+  {
+    title: 'Aristarkhos\'un Çaresizliği (Erken Gelen Hakikat)',
+    passage: 'Tarih kitapları bize, Dünya\'nın evrenin merkezinde olmadığını ve Güneş\'in etrafında döndüğünü (Helyosantrizm) ilk bulan kişinin 1543 yılında Kopernik olduğunu öğretir. Oysa devasa bir yalan (veya unutuluş) içindeyiz! Kopernik\'ten tam 18 asır önce (MÖ 3. yy), Antik Yunan astronomu Sisamlı Aristarkhos aynı teoriyi matematiksel olarak kanıtlamış ve Güneş merkezli bir evren modeli çizmişti. Peki neden dünya onu dinlemedi de 1800 yıl karanlıkta kaldı? Çünkü o dönemde, Aristo ve Batlamyus\'un "Dünya merkezdedir" diyen o kibirli, dalkavuk ve egoyu okşayan (insanı merkeze koyan) teorileri toplumda çok daha popülerdi! Hakikat (Aristarkhos), popülizme ve otoritenin şovuna yenilmiş, üstü örtülüp çöpe atılmıştı. Aristarkhos\'un trajedisi şudur: Bir doğruyu (hakikati) bulmak asla yeterli değildir; asıl mesele, o hakikati kabul edecek (kibrinden vazgeçecek) kadar olgunlaşmış ve aydınlanmış bir döneme (zamanlamaya) denk gelmektir.',
+    questionStem: 'Aristarkhos\'un Güneş merkezli evren teorisinin 1800 yıl boyunca görmezden gelinmesi, "Bilgi ve Toplum" ilişkisine dair hangi trajik kuralı ifşa eder?',
+    options: [
+      'Antik dönemde bilim insanlarının kitap basacak (matbaa) teknolojisine sahip olmamasını',
+      'Hakikati (doğruyu) bilimsel olarak bulmanın tek başına yetmediğini; toplumun kibrini okşayan "popüler ve yanlış (otoriter)" dogmaların, o hakikati (zamanı gelmediyse) yüzyıllarca çöpe atıp susturabileceği trajedisini',
+      'Yunan mitolojisindeki güneş tanrılarının bilimsel araştırmalara her zaman engel olduğunu',
+      'Kopernik\'in aslında tüm çalışmalarını Aristarkhos\'tan gizlice çaldığını ve intihal yaptığını'
+    ],
+    correct: 1,
+    explanation: 'Aristarkhos\'un doğruyu bulmasına rağmen Aristo\'nun popüler kibrine (dünya merkezdedir fikrine) yenilmesi; hakikatin tek başına yetmediğini, toplumun hazır değilse o doğruyu otorite/popülizm uğruna çöpe atabileceğini (zamanlama trajedisini) gösterir.'
+  },
+  {
+    title: 'Ig Nobel Ödülleri (Absürtlükten Doğan Bilgelik)',
+    passage: 'Her yıl Harvard Üniversitesi\'nde, bilim dünyasının o asık suratlı, soğuk ve kibirli ciddiyetiyle alay eden muhteşem bir tören düzenlenir: "Ig Nobel Ödülleri". Bu ödül, "Önce insanları güldüren, sonra da düşündüren" bilimsel araştırmalara verilir. Örneğin; bir kurbağayı mıknatısla havaya kaldıran fizikçiye, ağaçkakanların neden baş ağrısı çekmediğini bulan doktora veya kara deliklerin içine düşmenin neye benzeyeceğini ketçapla hesaplayan matematikçiye verilir. İnsanlar bu ödüllerle dalga geçtiğini sanır. Oysa Ig Nobel, felsefenin o en keskin kılıcıdır: Bilim, sadece beyaz önlüklü kravatlıların sıkıcı laboratuvar formülleri değildir; bilim, insanın dünyayı anlamak için sorduğu en absürt, en saçma ve en çocuksu "Neden?" sorusunun ta kendisidir. Kâinatı çözen asıl dâhiler, oyun oynamayı ve saçmalamayı (merakını) asla bırakmayan o çılgın zihinlerdir.',
+    questionStem: 'Ig Nobel Ödülleri\'nin felsefesi ("Önce güldüren, sonra düşündüren" araştırmalar), bilimsel sürece dair hangi geleneksel "algıyı" yerle bir eder?',
+    options: [
+      'Sadece milyonlarca dolar bütçesi olan deneylerin başarıya ulaştığı yönündeki ekonomik algıyı',
+      'Bilimin sadece aşırı ciddi, soğuk, sıkıcı ve ulaşılamaz (beyaz önlüklü) bir otorite işi olduğu kibrini yıkarak; asıl bilimin temelinde çocuksu bir merakın, oyun oynamanın, mizahın ve absürtlükten doğan "dâhiyane bir sorgulamanın" yattığı gerçeğini',
+      'Harvard Üniversitesi\'nin Nobel komitesiyle yıllardır süren gizli ve sert siyasi rekabetini',
+      'Hayvanlar üzerinde yapılan saçma deneylerin insan sağlığına doğrudan fiziksel katkılar sunduğunu'
+    ],
+    correct: 1,
+    explanation: 'Kurbağa uçurmak gibi komik/absürt deneylere ödül verilmesi; bilimin sadece soğuk/ciddi bir kural değil, çocuksu merakın, oyunun ve absürtlükten doğan felsefi bir uyanışın (mizahın) eseri olduğunu kanıtlar.'
+  },
+  {
+    title: 'London Çekici (Jeolojik İllüzyon)',
+    passage: '1936 yılında Teksas\'ta yürüyüş yapan bir aile, kayanın içine tamamen gömülmüş (ve sapı taşlaşmış) eski, demir bir çekiç buldular (London Hammer). Yaratılışçılar (ve bilim karşıtları) çıldırdı: O kayanın yaşı jeolojik olarak tam "400 milyon" yıldı! 400 milyon yıl önce insan (ve metal alet) yoksa, evrim teorisi koca bir yalandı! Bu olay on yıllarca bilime karşı bir silah (Oopart - Zamansız Eser) olarak kullanıldı. Ancak bilim gerçeği ortaya çıkardığında o "mucize" anında patladı. Çekiç gerçekten de 19. yüzyıla (1800\'lere) aitti. Ancak içine düştüğü o mağara veya göletteki yoğun kireçtaşı ve mineraller, 400 milyon yılda değil; suyun kimyasal reaksiyonu sayesinde sadece "birkaç on yıl" içinde o çekicin etrafında beton gibi donarak (konkresyon) o sahte "antik kayayı" oluşturmuştu. İnsanoğlu, kendi inancını (dogmasını) aklamak için, fiziksel bir gerçeği (illüzyonu) araştırmadan körü körüne kutsamaya ne kadar da açtır.',
+    questionStem: 'London Çekici (kayaya gömülü çekiç) olayının bilimsel olarak çözülmesi, toplumların "gizemlere" yaklaşımındaki hangi tehlikeli zaafı açığa çıkarır?',
+    options: [
+      'Metal aletlerin kireçli sularda hiçbir zaman paslanmayacağı gerçeğini',
+      'İnsanların, kendi dogmalarını (veya inançlarını) haklı çıkarmak uğruna, karşılarına çıkan her "sıradışı illüzyonu (anomaliyi)" bilimsel olarak sorgulamadan (hemen mucize/kanıt ilan ederek) körü körüne kutsama (kandırılmaya aç olma) zaafını',
+      'Arkeologların buldukları eserlerin yaşını her zaman kasten milyonlarca yıl geriye çekerek yalan söylediğini',
+      'Jeolojik süreçlerin her zaman milyonlarca yıl sürdüğü için çekicin de mecburen o kadar eski olması gerektiğini'
+    ],
+    correct: 2,
+    explanation: '1800\'lerden kalma bir çekicin hızla donan kireç yüzünden 400 milyon yıllık mucize sanılması; insanların kendi inançlarını aklamak için (bilimi reddederek) her yanılsamayı körü körüne "mucize" ilan etme zaafını açığa çıkarır.'
+  },
+  {
+    title: 'Ölüler Kitabı (Mısır\'ın Hile Kodları)',
+    passage: 'Biz modernler, Antik Mısır\'ın meşhur "Ölüler Kitabı"nı (Book of the Dead), sadece iyi ahlakı öğütleyen kutsal, ilahi ve dindar bir dua kitabı sanırız. Oysa metinler (hiyeroglifler) çözüldüğünde ortaya çıkan gerçek, modern din felsefesini şoka sokmuştur! O parşömenler ahlak kitabı değil; ölen kişinin yeraltı dünyasındaki (Hades\'teki) tanrıları ve canavarları "nasıl kandıracağını" adım adım anlatan bir tür "Kopya Kâğıdı (Hile Kodu / Cheat Code)" idi! Ölen kişi o büyüleri ezberleyerek; yeraltı labirentlerindeki şifreli kapıları açıyor, iblislerin isimlerini söyleyerek onları felç ediyor ve en önemlisi Osiris\'in terazisinde "Kalbi tartılırken" kalbine büyü yaparak onun yalan söylemesini (ağır basmamasını) sağlıyordu! Antik Mısır için ölümden sonraki hayat (cennet), dünyadaki iyi ahlakla kazanılan bir ödül değil; kuralları, şifreleri ve büyüleri bildiğinizde Tanrıların o bürokratik labirentini hackleyebileceğiniz (kandırabileceğiniz) devasa bir sınav oyunuydu.',
+    questionStem: 'Antik Mısır\'daki "Ölüler Kitabı"nın gerçek içeriğinin anlaşılması, o dönemin "Ahiret ve Adalet" anlayışına dair hangi sarsıcı farkındalığı yaratır?',
+    options: [
+      'Cennete gitmenin tek yolunun fakirlere sürekli maddi yardım yapmak olduğunu',
+      'Ölümden sonraki hayatın ve kurtuluşun (cennetin); dünyevi bir "ahlak, iyilik ve vicdan" meselesi değil, doğru büyüleri (hile kodlarını) bilerek Tanrıların bürokratik sistemini (terazisini) kandırma (hackleme) üzerine kurulu pragmatik bir kurgu olduğunu',
+      'Mısırlıların ahiret hayatına hiç inanmadıklarını ve ölümle her şeyin bittiğini savunduklarını',
+      'Sadece firavunların ve zengin rahiplerin okuma yazma bildiği için cennete gidebileceğini'
+    ],
+    correct: 2,
+    explanation: 'Kitabın ahlak değil, terazide kalbe yalan söyleten (büyü/hile) kodları içermesi; ahiretin vicdani bir sınav değil, tanrısal sistemi kandırmaya (hacklemeye) yönelik kurallı bir oyun/bürokrasi olarak algılandığını gösterir.'
+  },
+  {
+    title: 'Gödel\'in Ontolojik Kanıtı (Matematiksel Teoloji)',
+    passage: 'Eksiklik teoremleriyle insan aklının sınırlarını ezip geçen matematikçi Kurt Gödel, hayatının sonlarına doğru ölüm korkusu ve paranoya krizleri geçirirken akılalmaz bir sayfa bıraktı: "Gödel\'in Ontolojik Kanıtı". Gödel, felsefi inancı olan "Tanrı\'nın varlığını" edebiyatla, ahlakla veya doğayla değil; doğrudan "Modal Mantık ve Matematiksel Denklemlerle (aksiyomlarla)" kanıtlamaya çalışmıştı. Saf, soğuk ve ruhsuz mantık sembollerini alt alta dizerek, evrende "tüm olumlu (pozitif) özellikleri barındıran üstün bir varlığın (Tanrı\'nın) matematiksel olarak var olmak zorunda olduğu" sonucuna varmıştı. İnsanlık tarihi boyunca inanç (din) hep kalbe, ruhsallığa ve teslimiyete aitti. Gödel\'in bu denklemi; insan aklının çaresiz kaldığı o büyük "ölüm" karşısında, inancın o ilahi sıcaklığını bile matematiğin o soğuk, sarsılmaz demir kafesine (denkleme) hapsetmeye çalışmasının yarattığı en hüzünlü ve en cüretkâr entelektüel kibridir.',
+    questionStem: 'Kurt Gödel\'in Tanrı\'yı "matematiksel/modal mantıkla" kanıtlamaya çalışması, felsefi olarak neyin trajik (ve cüretkâr) bir girişimi olarak değerlendirilebilir?',
+    options: [
+      'Kuantum mekaniğinin dini inançları tamamen yok edeceği kehanetinin',
+      'Dinlerin aslında uzaylılar tarafından matematiksel formüllerle dünyaya indirildiğinin',
+      'Ölüm korkusu karşısında çaresizleşen en üstün aklın bile; ruhani, hissi ve inanca dayalı o "ilahi (soyut)" kavramı (Tanrı\'yı), matematiğin o soğuk, hesaplanabilir ve sarsılmaz rasyonel kafesine (denklemine) hapsetmeye çalışma (somutlaştırma) cüretkârlığının',
+      'Matematik biliminin felsefe dünyası tarafından hiçbir zaman ciddiye alınmamasının'
+    ],
+    correct: 2,
+    explanation: 'İnanca ait (soyut) olan Tanrı\'yı soğuk mantık (matematik) formülleriyle ispatlamaya çalışması; insan aklının çaresizlik (ölüm) anında ilahi olanı bile rasyonel bir denkleme/kafese hapsetme cüretidir.'
+  },
+  {
+    title: 'Karanlık Yıldızlar (Hayalet Fırınlar)',
+    passage: 'Bugün gökyüzünde gördüğümüz Güneş ve tüm yıldızlar, hidrojen atomlarının birbiriyle çarpışıp (nükleer füzyon) helyuma dönüşmesiyle o parlak ateşi yakarlar. Ancak astrofizikçiler James Webb Uzay Teleskobu ile evrenin en bebeklik (ilkel) dönemine baktıklarında kuralları yıkan teorik canavarlarla karşılaştılar: "Karanlık Yıldızlar" (Dark Stars). Evrenin o ilk karanlık çağında, yıldızları yakan şey nükleer füzyon değildi! Bu devasa (güneşten milyonlarca kat büyük ve şişkin) yıldızlar, içlerindeki görünmez "Karanlık Madde" parçacıklarının (WIMP) birbirleriyle çarpışıp kendilerini yok etmesiyle (imha/enerjiyle) yanıyorlardı. Onlar sıcak değil, dondurucu ve soluk bir ışık yayan hayalet fırınlardı. Karanlık Yıldızlar, bizim o çok iyi bildiğimiz fizik ve ısı kurallarının evrenin başlangıcında geçersiz olduğunu; kâinatın beşiğinin, bugün gözle göremediğimiz o karanlık (hayalet) maddelerin kendi kendilerini yiyerek başlattığı (tutuşturduğu) bambaşka, soğuk ve efsanevi bir cehennem olduğunu fısıldar.',
+    questionStem: 'Karanlık Yıldızlar (Dark Stars) teorisi, evrenin erken dönemleri (başlangıcı) hakkında hangi bilimsel ezberi yerle bir etmektedir?',
+    options: [
+      'Gezegenlerin sadece toz bulutlarının soğumasıyla ortaya çıktığı inancını',
+      'Yıldızların (ve evrenin ilk ışığının) her zaman günümüzdeki gibi hidrojenin çarpışmasıyla (nükleer füzyonla) yandığı inancını yıkarak; o ilk devasa ışık kaynaklarının görünmez "Karanlık Madde"nin kendi kendini imha etmesiyle yanan farklı ve soğuk (hayalet) fırınlar olduğu gerçeğini',
+      'Uzay boşluğunda kara deliklerin hiçbir zaman yıldızları yutamayacağı bilgisini',
+      'James Webb teleskobunun aslında geçmişi değil sadece geleceği görebildiği yanılgısını'
+    ],
+    correct: 1,
+    explanation: 'Yıldızların her zaman hidrojen füzyonuyla yandığı ezberini yıkarak; evrenin ilk yıldızlarının "Karanlık Madde"nin kendini imha etmesiyle yanan farklı, devasa ve soluk (hayalet) fırınlar olduğunu gösterir.'
+  },
+  {
+    title: 'Vladimir Demikhov (Kafa Nakli Kâbusu)',
+    passage: '1954 yılında Sovyet cerrah Vladimir Demikhov, tıp tarihinin en sınırları zorlayan (ve mide bulandıran) ameliyatına imza attı. Yetişkin bir Alman kurdu köpeğinin boynuna, ön ayaklarıyla birlikte yavru bir köpeğin "kafasını ve omuzlarını" canlı canlı nakletti! Yavru köpek uyanıp etrafına baktı, inleyerek havladı ve hatta uzatılan sütü içti (süt yemek borusu olmadığı için dışarı akıyordu). Çift başlı bu grotesk canavar, Sovyetlerin bilimi tanrılaştırdığı bir dünyada birkaç gün yaşayıp öldü. Batı dünyası dehşete düşmüştü; bu tıbbi bir gelişme değil, bir Frankenstein cinnetiydi. Demikhov\'un bu ameliyatı, "Yapabiliriz, o halde yapmalıyız!" (yapabilirlik ile ahlak arasındaki çatışmayı) diyen bilimin o buz gibi kibrini simgeler. Bilim, ahlaki pusulasını (vicdanı) kaybettiğinde; merak, kelimenin tam anlamıyla masumiyetin boynuna iki başlı ucube bir kâbus dikmekten çekinmeyecektir.',
+    questionStem: 'Demikhov\'un "Çift Başlı Köpek" ameliyatı, bilim ve tıp felsefesinde hangi sınırın aşıldığını (çatışmasını) eleştirir?',
+    options: [
+      'Köpeklerin genetik yapısının diğer memelilere oranla çok daha çabuk bozulduğunu',
+      'Bilimin ahlaktan (vicdandan) koptuğunda; "Bunu yapacak teknolojim/kapasitem var, o halde kesinlikle yapmalıyım" (Tanrıcılık) kibrine kapılarak, canavarlar (ve ucube kâbuslar) yaratmaktan bile çekinmeyen o korkunç (Frankenstein) sapmasını',
+      'Sovyetler Birliği\'nin uzay yarışında geri kalmamak için köpekleri astronot olarak eğittiğini',
+      'Modern cerrahinin hayvanlar üzerinde deney yapılmadan asla ilerleyemeyeceği gerçeğini'
+    ],
+    correct: 2,
+    explanation: 'Cerrahın sırf "yapabiliyorum" diyerek köpeğe ikinci bir baş nakletmesi; bilimin ahlakı/vicdanı çiğneyerek "Tanrıcılık/Frankenstein" kibrine (ve ucube kâbuslara) kaydığı o ahlaki sınırı eleştirir.'
+  },
+  {
+    title: 'Golyat Kurbağası (Hayvani Mühendislik)',
+    passage: 'İnsanoğlu "çevreyi kendi ihtiyaçlarına göre şekillendirme (mühendislik/inşaat)" yeteneğinin sadece kendine ve kunduz gibi birkaç memeliye ait bir zekâ parıltısı olduğunu düşünerek övünür. Oysa Afrika\'da yaşayan, bir ev kedisi boyutlarındaki (ve 3.5 kilo ağırlığındaki) "Golyat Kurbağası" (Goliath Frog) bu kibirli ezberi yıkar. Bu dev kurbağa, yavruları (iribaşları) için güvenli bir üreme havuzu yaratmak uğruna; nehir yatağındaki, ağırlığı 2 kiloyu bulan devasa kayaları kollarıyla kucaklayarak taşır, etrafını çamurla sıvar ve nehrin akıntısından tamamen izole, duvarlarla örülü özel (yapay) bir "kreş (gölet)" inşa eder! Kurbağanın bu mimari çabası, zekânın sadece beyin korteksi büyük memelilere ait bir lüks olmadığını; doğadaki o kaygan, vıraklayan ve ilkel sandığımız "amfibilerin (kurbağaların)" bile yavrularını korumak için doğayı kendi iradesiyle eğip bükecek kadar şaşırtıcı bir (mühendislik) tasarım kapasitesine sahip olduğunu yüzümüze çarpar.',
+    questionStem: 'Golyat Kurbağası\'nın kayaları taşıyarak kendi "göletini (kreşini)" inşa etmesi, biyoloji dünyasındaki hangi "insan merkezci (kibirli)" algıyı çürütür?',
+    options: [
+      'Kurbağaların sadece sıcak ve çamurlu su birikintilerinde yaşayabildikleri tezini',
+      'Doğayı kendi ihtiyaçları için fiziksel olarak yeniden tasarlama (mühendislik/inşaat) yeteneğinin sadece insana ve büyük memelilere özgü olduğu inancını yıkarak; ilkel sandığımız amfibilerin bile bu "tasarım ve alet/doğa kullanma" zekâsına sahip olduğunu',
+      'Büyük vücutlu hayvanların her zaman daha fazla yiyeceğe ihtiyaç duyduğu için agresifleştiğini',
+      'Afrika ikliminin canlıların genetik yapısını değiştirerek onları devasa boyutlara ulaştırdığını'
+    ],
+    correct: 1,
+    explanation: 'Kurbağanın kaya taşıyıp havuz/duvar inşa etmesi; "doğayı şekillendirme (mühendislik)" zekâsının sadece insana/memeliye ait olduğu kibrini (insan merkezci algıyı) yıkar.'
+  },
+  {
+    title: 'Plüton\'un İptali (Bilimsel Etiketleme İllüzyonu)',
+    passage: '2006 yılında Uluslararası Astronomi Birliği bir oylama yaptı ve çocukluğumuzdan beri 9. gezegen olarak bildiğimiz Plüton\'u "gezegenlikten" kovup, onu "cüce gezegen" statüsüne (hiçliğe) düşürdü. Dünya çapında insanlar bu karara üzüldü, sanki Plüton yok edilmiş gibi yas tutuldu. Oysa Plüton uzayda bir milim bile yerinden oynamadı, kütlesi küçülmedi, kayaları erimedi; o milyarlarca yıldır döndüğü o dondurucu yörüngede dönmeye aynı ihtişamla devam ediyordu! Değişen tek şey, kâğıt üzerinde beyaz önlüklü insanların kullandığı "kelimeler ve sınıflandırma kutuları" idi. Plüton\'un iptali, bilimin evrene dair o en büyük felsefi illüzyonunu ifşa eder: Bizler doğayı (ve evreni) o "kelimelerin, sınırların ve kutuların (kavramların)" ta kendisi sanırız. Oysa bilim, o devasa ve dilsiz evrenin gerçekliği değil; sadece bizim o kaosu anlamlandırmak için kendi zihnimizde uydurduğumuz kâğıttan (ve sürekli değişen) bir haritadır.',
+    questionStem: 'Plüton\'un "gezegenlikten çıkarılması" olayı, bilim felsefesinde (ve dil bağlamında) neyin en sarsıcı kanıtı olarak sunulmaktadır?',
+    options: [
+      'Güneş sistemindeki gezegenlerin zamanla güneşin çekim gücünden kurtularak uzaya savrulduğunun',
+      'Bilimsel kavramların (etiketlerin/kutuların) nesnelerin mutlak gerçeği (kendisinden) olmadığını; evren sabit kalsa bile, bizim o evreni anlamak için uydurduğumuz "dilin ve sınıflandırmaların" tamamen insan uydurması (ve değişebilir) kurgusal haritalar olduğunun',
+      'Uzay araştırmalarına ayrılan bütçelerin gereksiz yere sadece büyük gezegenlere harcandığının',
+      'Teleskopların çözünürlüğü arttıkça eski gezegenlerin aslında birer göktaşı (asteroit) olduğunun anlaşıldığının'
+    ],
+    correct: 1,
+    explanation: 'Plüton yerinde durmasına rağmen unvanının değişmesi; bilimin/kelimelerin evrenin gerçekliği değil, insanın uydurduğu ve sürekli değişebilen kurgusal etiketler (kâğıttan haritalar) olduğunu ispatlar.'
+  },
+  {
+    title: 'Quorum Sensing (Bakterilerin Demokrasisi)',
+    passage: 'Bizler bakterileri tek başlarına vücudumuza girip anlamsızca (akılsızca) saldıran basit düşmanlar sanırız. Oysa 1970\'lerde biyolog Bonnie Bassler "Quorum Sensing" (Çoğunluğu Algılama) mekanizmasını bulduğunda tıp dünyası buz kesti. Vücuda giren bakteriler anında saldırmazlar! Önce saklanırlar ve çevrelerine "autoinducer" adı verilen kimyasal sinyaller (parolalar) salgılarlar. Her bir bakteri, etrafta kendi türünden kaç kişi olduğunu bu kimyasalları sayarak ölçer. Eğer sayıları insanın bağışıklık sistemini yenecek o "korkunç baraja (çoğunluğa)" ulaşmamışsa, hepsi sessizce beklemeye devam eder. Ancak yeterli sayıya (oy çokluğuna) ulaştıkları o saniye, trilyonlarcası birden eşzamanlı olarak düğmeye basar ve ölümcül toksinlerini aynı anda salgılayarak bedeni felç eder! Doğadaki en ilkel, beyinsiz sandığımız tek hücreli yaratıkların (bakterilerin) bile; insanlara saldırmadan önce kendi aralarında kusursuz bir kimyasal "seçim (oylama ve diplomasi)" yaptığını görmek, mikro dünyanın o sağır edici ve zeki ordularına karşı hissettiğimiz en çaresiz dehşettir.',
+    questionStem: 'Bakterilerdeki "Quorum Sensing (Çoğunluğu Algılama)" mekanizması, tek hücreli organizmaların davranışlarıyla ilgili hangi geleneksel inancı (kibri) parçalamaktadır?',
+    options: [
+      'Bakterilerin sadece kirli sularda ve havasız ortamlarda hayatta kalabileceği inancını',
+      'Antibiyotiklerin her türlü mikrobu anında öldürerek insanı kurtarabileceği yanılgısını',
+      'Bakterilerin akılsız, amaçsız ve tek başlarına rastgele saldıran ilkel düşmanlar olduğu kibrini yıkarak; aslında onların, yeterli sayıya ulaşmadan saldırmayan, kendi aralarında kimyasal bir "oylama (iletişim ve organizasyon)" yapabilen zeki ordular olduğunu',
+      'Bağışıklık sistemimizin bakterilerden çok daha yavaş çalıştığı gerçeğini'
+    ],
+    correct: 2,
+    explanation: 'Bakterilerin beklemesi ve yeterli sayıya ulaştıklarında hep birlikte (kimyasal iletişimle) saldırması; onların akılsız/rastgele değil, organize olan ve kendi arasında "oylama (iletişim)" yapan zeki bir sistem olduğunu kanıtlar.'
+  },
+  {
+    title: 'Chien-Shiung Wu (Evrenin Solaklığı)',
+    passage: 'Fizikçiler uzun yıllar doğanın mükemmel bir "simetriye" (Parite korunumu) sahip olduğuna körü körüne inandılar. Evrendeki bir olayı aynadan (tam tersi) izleseydiniz bile fizik kuralları birebir aynı işlemeliydi; doğa sağ ile solu eşit derecede (ayrım yapmadan) severdi. Ancak 1956\'da kadın fizikçi Chien-Shiung Wu, Kobalt-60 atomlarını mutlak sıfıra kadar dondurarak o efsanevi (ve kuralları yıkan) deneyini yaptı. Sonuç kuantum dünyasını şoka soktu: Çözünen elektronlar her yöne eşit dağılmak yerine, belirgin bir şekilde "SOL" tarafa doğru daha fazla fırlıyordu! Doğa tarafsız değildi; evrenin temelinde (zayıf nükleer kuvvette) gözle görülür bir asimetri, bir çarpıklık ve kelimenin tam anlamıyla bir "Solaklık" vardı! Wu\'nun bu devrimsel keşfi (ona Nobel verilmese bile), felsefeyi kökünden sarstı: Tanrı\'nın (veya Evrenin) kusursuz, pürüzsüz ve simetrik bir ayna olduğu kurgusu çökmüş; kâinatın asıl varoluşunun (bizi biz yapan şeyin) o temelindeki "kusurda ve simetri kırılmasında (asimetride)" yattığı ispatlanmıştı.',
+    questionStem: 'Chien-Shiung Wu\'nun Parite (Simetri) İhlali deneyi, evrenin temel kuralları hakkında bilim dünyasına nasıl bir felsefi tokat atmıştır?',
+    options: [
+      'Kobalt maddesinin uzay çalışmalarında kullanılabilecek en tehlikeli element olduğunu',
+      'Fizik yasalarının sadece laboratuvar ortamında geçerli olduğunu ve dış dünyada değiştiğini',
+      'Doğanın (evrenin) her zaman kusursuz, dengeli ve "simetrik" bir yapı olduğu yönündeki o kibirli/estetik inancı yerle bir ederek; evrenin asıl temelinde bir "asimetri (çarpıklık/kusur ve solaklık)" yattığını ispatlaması',
+      'Atomların dondurulmasının onların tüm enerjisini tamamen sıfırladığı yalanını'
+    ],
+    correct: 2,
+    explanation: 'Elektronların ağırlıklı olarak sol tarafa gitmesi (simetri ihlali); doğanın kusursuz/eşit bir ayna (simetrik) olduğu inancını yıkıp, evrenin temelinde bir asimetri (çarpıklık/kusur) yattığını ispatlar.'
+  },
+  {
+    title: 'Güneş Yansıtıcısı (Arşimet\'in Ölüm Işını)',
+    passage: 'MÖ 212\'de Sirakuza kuşatması sırasında efsaneye göre Arşimet, devasa bronz aynaları (kalkanları) sahil boyunca dizmiş ve Güneş\'in ışınlarını odaklayarak yaklaşan devasa Roma donanmasının ahşap gemilerini uzaktan alev alev yakmıştı! "Arşimet\'in Ölüm Işını" yüzyıllar boyunca bir mitoloji (masal) olarak görüldü; hatta modern programlar (MythBusters) bunu denediğinde, gemiyi yakmanın o kadar da kolay olmadığını kanıtladı. Ancak bu efsanenin bilim tarihindeki asıl büyüleyici tarafı gemilerin gerçekten yanıp yanmadığı değildir. Asıl dehşet şudur: İnsanoğlu (ve insan aklı), o dokunulmaz, gökyüzünde parlayan ve hayat veren o en yüce ilahi gücü (Güneş\'i) bile; pürüzsüz bir aynayla hapsedip, onu kendi türünü yok etmek için acımasız ve kavurucu bir "silaha" (lazer ışınına) dönüştürmeyi hayal edebilecek kadar (daha o çağlarda bile) tehlikeli, yıkıcı ve sınır tanımaz bir deha (ve karanlık fantezi) barındırıyordu.',
+    questionStem: 'Yazar, "Arşimet\'in Ölüm Işını" efsanesini, gerçek olup olmamasından (bilimsel ispatından) bağımsız olarak neyin felsefi bir metaforu olarak değerlendirir?',
+    options: [
+      'Güneş enerjisinin antik çağlardan beri evleri ısıtmak için kullanıldığının bir ispatı olarak',
+      'Roma ordusunun deniz savaşlarında ne kadar zayıf ve korkak olduğunun edebi bir abartısı olarak',
+      'Olay mit olsa bile, insan aklının (ve mühendislik hırsının); doğanın en ulu, hayat veren gücünü (Güneşi) bile bükerek kendi türünü yok edecek acımasız bir silaha dönüştürmeyi hayal edebilecek kadar o karanlık, yıkıcı ve cüretkâr potansiyeline',
+      'Ayna üretiminin ve cam ustalığının o dönemki askeri zaferlerin tek anahtarı olduğuna'
+    ],
+    correct: 2,
+    explanation: 'Güneşin ışığıyla gemi yakma efsanesi; insan aklının hayat veren gücü (güneşi) bile kendi türünü yok edecek bir silaha çevirmeyi (bükmeyi) hayal edebilen o karanlık/cüretkâr potansiyelinin metaforudur.'
+  }
+];
+
+export const bilimParagrafSorulari39: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_39.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_39[idx];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-bilim39-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
 // paragrafTests.ts dosyasının hata vermemesi için iki listeyi birleştirip eski adıyla dışa aktarıyoruz:
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari,
@@ -10628,7 +10905,8 @@ export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...felsefeParagrafSorulari35,
   ...bilimParagrafSorulari36,
   ...bilimParagrafSorulari37,
-  ...bilimParagrafSorulari38
+  ...bilimParagrafSorulari38,
+  ...bilimParagrafSorulari39
   
   
   
