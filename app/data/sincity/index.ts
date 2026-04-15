@@ -10312,6 +10312,283 @@ export const bilimParagrafSorulari38: BilimParagrafQuestion[] = Array.from({ len
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
+const PARAGRAPH_THEMES_38 = [
+  {
+    title: 'Ayna Kutusu Terapisi (Fantom Acıyı Hacklemek)',
+    passage: 'Bir kaza sonucu kolunu kaybeden hastalar, yıllar geçse bile o "olmayan kollarında" çıldırtıcı bir acı (Fantom Ağrısı) çekerler. Kesik olan uç sanki bir mengenede sıkışmış gibidir. Nörobilimci V.S. Ramachandran, bu insanlara ağrı kesici vermek yerine dâhiyane ve felsefi bir hile yaptı: "Ayna Kutusu". Hastanın sağlam kolunu bir kutuya soktu ve ortadaki aynaya bakmasını istedi. Hasta aynaya baktığında, sağlam kolunun yansımasını sanki "kesilen koluymuş" gibi gördü! Ramachandran hastaya "Şimdi elini açıp rahatlat" dediğinde, beyni aynadaki (sahte) elin açıldığını gördü ve yıllardır o olmayan koldan gelen korkunç acı saniyeler içinde buharlaşıp bitti! Bu deney, insan beyninin ne kadar zeki ama aynı zamanda ne kadar kolay kandırılabilir olduğunu kanıtlar. Acı, fiziksel bir yara değil; beynin uydurduğu nörolojik bir kurgudur ve beyni sadece yine onun dilinden konuşan "görsel bir yalanla (illüzyonla)" iyileştirebilirsiniz.',
+    questionStem: 'Ayna Kutusu (Mirror Box) terapisinin başarısı, "Acı ve Beyin" ilişkisi hakkında bize neyi ispatlamaktadır?',
+    options: [
+      'Kopan uzuvların sinir uçlarının zamanla yeniden büyüyerek iyileşebildiğini',
+      'Acının her zaman fiziksel bir yaralanmadan kaynaklandığını ve sadece ağır kimyasal ilaçlarla durdurulabileceğini',
+      'Acının bedensel değil tamamen nörolojik (beynin kurguladığı) bir algı olduğunu ve bu algının, beyni ikna eden basit bir "görsel illüzyon (yalan)" sayesinde anında hacklenip (kapatılıp) tedavi edilebileceğini',
+      'Ayna karşısında yapılan egzersizlerin kas yapısını güçlendirdiğini'
+    ],
+    correct: 2,
+    explanation: 'Olmayan kolun acısının sadece aynadaki bir yansımayı (görsel yalanı) izleyerek durması; acının fiziksel değil nörolojik bir kurgu olduğunu ve beynin görsel bir illüzyonla hacklenerek iyileştirilebileceğini kanıtlar.'
+  },
+  {
+    title: 'Cıvık Mantarın Zekâsı (Beyinsiz Mühendis)',
+    passage: 'Beyni, sinir sistemi veya gözleri olmayan tek hücreli sarı bir amip türü (Physarum polycephalum) ne kadar zeki olabilir? Japon bilim insanları bu "cıvık mantar"ı bir petri kabına koydular ve Tokyo şehrinin haritasını modelleyerek, önemli metro istasyonlarının bulunduğu noktalara yulaf ezmesi bıraktılar. Mantar, yiyeceklere ulaşmak için önce her yöne (kaotik) dallar uzattı; ancak yiyecekleri bulduktan sadece birkaç saat sonra, tüm gereksiz dallarını budayarak noktalar arasındaki "en kısa, en verimli ve en hızlı" ağı kurdu! Şok edici olan şuydu: Mantarın hiçbir beyni olmadan oluşturduğu bu ağ, Japon mühendislerin milyonlarca dolar harcayarak yıllarca üzerinde çalışıp tasarladıkları "Tokyo Metro Ağı"nın birebir aynısıydı! Bu deney insanlığın o eşsiz kibrini yüzüne çarpar: "Zekâ ve mühendislik" sadece insan kafatasına (beynine) hapsolmuş bir ayrıcalık değildir; doğanın o sessiz, ilkel ve beyinsiz formlarında bile kusursuzca işleyen evrensel bir problem çözme algoritmasıdır.',
+    questionStem: 'Cıvık Mantar (Physarum) deneyi, "Zekâ ve Mantık" kavramları hakkında hangi geleneksel yanılgıyı yıkmıştır?',
+    options: [
+      'Mantarların güneş ışığına maruz kaldığında daha hızlı büyüdüğü gerçeğini',
+      'Gelişmiş zekânın, mühendisliğin ve problem çözme yeteneğinin sadece "büyük bir beyne (merkezi sinir sistemine)" sahip olan insanlara özgü olduğu inancını yıkarak; doğanın o beyni bile olmayan en ilkel canlılarında dahi kusursuz bir optimizasyon ve zekâ algoritması bulunduğunu',
+      'Japon mühendislerin ulaşım ağlarını her zaman rastgele tasarladığını',
+      'Tek hücreli canlıların insan genetiğine saldırmak için organize olabileceğini'
+    ],
+    correct: 1,
+    explanation: 'Beyni bile olmayan bir mantarın koca Tokyo metro ağının en verimli halini saatler içinde çizmesi; zekânın ve problem çözmenin (mühendisliğin) sadece insana/beyne özgü bir ayrıcalık olmadığını kanıtlar.'
+  },
+  {
+    title: 'Değişim Körlüğü (Kapı Deneyi)',
+    passage: 'Sokakta yürürken elinde harita olan bir turist size yaklaşıp yol soruyor. Siz haritaya bakıp tarif ederken, o an aranızdan büyük bir kapı taşıyan iki işçi geçiyor. Kapı geçerken, yol soran turist gizlice işçilerin arkasına saklanıyor ve yerini (giysisi ve boyu tamamen farklı olan) bir başka kişiye bırakıyor. Kapı geçip gittiğinde, karşınızda bambaşka bir adam durmasına rağmen, ona yol tarif etmeye devam eder miydiniz? Araştırmacılar (Simons ve Levin) bu deneyi yaptıklarında, insanların %50\'si karşısındaki adamın tamamen değiştiğini FARK ETMEDİ! Psikolojide "Değişim Körlüğü" (Change Blindness) denilen bu fenomen şunu ispatlar: Beynimiz dünyayı pikseller veya fotoğraf kareleri gibi ezberlemez; beynimiz sadece "kavramları" kaydeder. Sizin zihniniz o an karşınızdaki kişinin göz rengine değil, "Yol soran turist" kategorisine odaklanmıştır. Bu yüzden o kategoriye (beklentiye) uyan her türlü devasa değişikliğe karşı kelimenin tam anlamıyla körleşiriz.',
+    questionStem: 'Değişim Körlüğü (Kapı Deneyi), insan beyninin çevresini algılama biçimi hakkında neyi kanıtlamaktadır?',
+    options: [
+      'İnsanların yabancılara yardım ederken her zaman aşırı stres ve heyecan yaşadığını',
+      'Beynin her detayı bir kamera gibi kaydetmek yerine, sadece duruma ait "kavramı (kategoriyi)" kaydederek enerjisini koruduğunu; bu yüzden gözümüzün önünde gerçekleşen devasa ve apaçık görsel değişiklikleri bile (eğer beklentimize uymuyorsa) tamamen fark edemeyip körleştiğini',
+      'Gündüz vakti yapılan deneylerde göz retinasının geçici olarak felç geçirdiğini',
+      'İnsanların sadece aynı boyda ve aynı kıyafetteki insanlara empati duyabildiğini'
+    ],
+    correct: 1,
+    explanation: 'Karşıdaki adam değişmesine rağmen fark edilmemesi; beynin detayları (kamera gibi) değil, sadece "yol soran adam" kavramını kaydettiği için devasa değişikliklere karşı körleştiğini (algısal tasarrufu) ispatlar.'
+  },
+  {
+    title: 'Bouba ve Kiki Etkisi (Dillerin Evrensel Şifresi)',
+    passage: 'Eğer "masa" kelimesini biz "sandalye", sandalyeyi de "masa" olarak adlandırsaydık hiçbir şey değişmezdi, değil mi? Dilbilimciler yüzyıllar boyunca kelimelerin ve seslerin tamamen "rastgele ve keyfi" uydurulduğuna inandılar. Ancak "Bouba ve Kiki" deneyi bu inancı yıktı. Bilim insanları biri yumuşak hatlı, kıvrımlı ve bulutsu; diğeri ise yıldız gibi çok sivri köşeli ve keskin uçlu iki şekil çizdiler. Farklı dillere sahip binlerce insana şu soruyu sordular: "Bu şekillerden hangisinin adı Bouba, hangisinin adı Kiki\'dir?" İnsanların %95\'i, dillerinden bağımsız olarak, yuvarlak şekle "Bouba", sivri şekle ise "Kiki" dedi! Bu tesadüf değildir. İnsan beyni, harflerin çıkardığı sert (Kiki) veya yumuşak (Bouba) akustik sesleri, dış dünyadaki fiziksel şekillerin (sivri veya yuvarlak) doğasıyla otomatik olarak eşleştirir. Konuştuğumuz diller sadece keyfi (uydurulmuş) kurallar bütünü değil; insan beyninin nörolojik ve biyolojik anatomisiyle (duyuların ortak haritasıyla) derinden mühürlenmiş evrensel bir senfonidir.',
+    questionStem: 'Bouba-Kiki Etkisi deneyi, "dil ve ses" kavramları hakkında hangi geleneksel inancı (dogmayı) çürütmüştür?',
+    options: [
+      'Dünyadaki tüm dillerin tek bir ana dilden (Örneğin Sanskritçe) türediğini',
+      'Kelimelerin ve seslerin nesnelerle eşleştirilmesinin "tamamen rastgele ve uydurma (keyfi)" olduğu inancını yıkarak; seslerin akustik doğası ile nesnelerin fiziksel şekilleri (sivrilik/yuvarlaklık) arasında beynin doğuştan gelen evrensel (nörolojik) bir bağı (eşleşmesi) olduğunu',
+      'İnsanların harfleri sadece yazılı olarak gördüklerinde anlayabildiklerini',
+      'Ses tellerinin sivri nesnelere bakarken zarar gördüğünü'
+    ],
+    correct: 1,
+    explanation: 'İnsanların %95\'inin sivri şekle Kiki, yuvarlağa Bouba demesi; kelimelerin uydurma/rastgele (keyfi) olmadığını, beynin seslerle fiziksel şekiller arasında evrensel (nörolojik) bir bağ kurduğunu kanıtlar.'
+  },
+  {
+    title: 'Stroop Etkisi (Otomatikleşmenin Zindanı)',
+    passage: 'Önünüzde bir kâğıt var ve üzerinde "KIRMIZI" kelimesi yazıyor, ancak kelime "Mavi" renkli bir mürekkeple yazılmış. Sizden kelimenin anlamını değil, sadece yazıldığı "mürekkebin rengini" söylemeniz isteniyor. Çok basit görünür, ancak denediğinizde beyninizin teklediğini, duraksadığınızı ve dili sürçtüğünü fark edersiniz. J.R. Stroop tarafından bulunan bu etki, beynin nasıl çalıştığını gösteren acımasız bir testtir. Okuma eylemi, insan zihninde öylesine derin ve "otomatik" bir alışkanlık haline gelmiştir ki; beynimiz o kelimenin anlamını biz istemesek bile saniyenin onda biri hızında okur! Rengi (mavi) algılamamız ise daha yavaş ve "bilinçli" bir çaba gerektirir. İşte bu yüzden, otomatikleşmiş, sığ (okuma) refleksimiz ile; bilinçli, analitik (renk bulma) çabamız birbirine çarpar ve zihni kilitler. "Stroop Etkisi"; öğrenilmiş alışkanlıkların ve otomatik tepkilerin, insanın özgür iradesini (ve o anki bilinçli kontrolünü) saniyeler içinde nasıl felç edebildiğinin nörolojik kanıtıdır.',
+    questionStem: 'Stroop Etkisi (Mavi renkle yazılmış "Kırmızı" kelimesi testi), insan zihninin hangi zayıflığını (çatışmasını) ortaya koyar?',
+    options: [
+      'Renk körlüğünün insan toplumunda sanıldığından çok daha yaygın bir hastalık olduğunu',
+      'Bilinçaltına yerleşmiş ve "otomatikleşmiş" derin alışkanlıkların (okumanın); anlık, bilinçli ve yavaş çaba gerektiren (rengi söyleme) iradeyi bloke ederek beyni felç edebileceği (kilitlenme) gerçeğini',
+      'Sözcüklerin her dilde farklı renklere karşılık geldiğini',
+      'Okuma hızının insanların zekâ seviyesini doğrudan belirlediğini'
+    ],
+    correct: 1,
+    explanation: 'Kelimeyi otomatik okuyan beynin, mürekkep rengini söylerken (bilinçli çabada) kilitlenmesi; kemikleşmiş/otomatik alışkanlıkların, insanın bilinçli iradesini ve anlık kontrolünü felç ettiğini (çatışmayı) ortaya koyar.'
+  },
+  {
+    title: 'Ringelmann Etkisi (Sosyal Kaytarma)',
+    passage: '1913 yılında Fransız ziraat mühendisi Max Ringelmann, insanların "grup içinde" ne kadar verimli çalıştıklarını ölçmek için basit bir halat çekme deneyi yaptı. Bir kişinin halatı tek başına çekerken uyguladığı güç %100 kabul edildi. Ancak aynı halata iki kişi geçip çektiğinde, kişi başı uygulanan güç %93\'e, üç kişi olduğunda %85\'e ve sekiz kişilik bir grupta kişi başı uygulanan güç sadece %49\'a düştü! Gruptaki kişi sayısı arttıkça, herkesin uyguladığı bireysel güç (ve çaba) hızla eriyordu. "Sosyal Kaytarma" (Ringelmann Etkisi) adı verilen bu fenomen, insan doğasının o bencil karanlığını ifşa eder: Sorumluluk ve başarı sadece bize ait olduğunda her şeyimizi ortaya koyarız; ancak kalabalığın (grubun) içinde anonimleştiğimiz ve "Nasıl olsa başkası benim yerime asılır (yapar)" illüzyonuna düştüğümüz an, en çalışkan insan bile anında o sinsi tembelliğe ve bencilliğe teslim olur.',
+    questionStem: 'Max Ringelmann\'ın halat çekme deneyi, grup dinamikleri (ve insan doğası) hakkında hangi "sosyolojik/psikolojik zaafı" kanıtlamıştır?',
+    options: [
+      'Halatların çok kişi tarafından çekildiğinde fiziksel olarak daha kolay kopmaya meyilli olduğunu',
+      'Grup içindeki kalabalık arttıkça, kişilerin "sorumluluğun bölündüğüne (nasıl olsa başkası yapar)" inanarak kendi bireysel çabalarını (ve emeklerini) kasten düşürme (Sosyal Kaytarma / tembellik) zaafını',
+      'İnsanların sadece kendi aile üyeleriyle çalışırken motive olabildiğini',
+      'Bireylerin grup içinde çalışırken birbirlerini motive ederek üretim kapasitelerini artırdığını'
+    ],
+    correct: 1,
+    explanation: 'Halatı çeken kişi sayısı arttıkça uygulanan bireysel gücün düşmesi; kalabalıklaştıkça "başkası yapar" mantığıyla sorumluluğun dağılmasını ve insanın bencilce tembelleşme (sosyal kaytarma) zaafını kanıtlar.'
+  },
+  {
+    title: 'Garcia Etkisi (Evrimsel Şartlanma)',
+    passage: 'Psikolojideki klasik inanca (Pavlov\'a) göre; herhangi bir uyarıcı (zil sesi), herhangi bir sonuçla (et beklentisiyle) eğitilerek şartlanabilirdi. Ancak psikolog John Garcia farelerle yaptığı deneyde bu ezberi bozdu. Farelere radyasyon verilip (veya ilaçla) mide bulantısı yaşatıldı. Fareler bu "mide bulantısını", o sırada odada yanan parlak ışığa veya çalan zile "asla" bağlamadılar. Onlar mide bulantısını (sadece ve sadece) o gün yediklerin yemeğin "TADINA" bağladılar! "Garcia Etkisi" (Tat Tiksintisi) şunu ispatladı: İnsan veya hayvan beyni boş bir levha (tabula rasa) değildir. Her şeyi her şeye şartlayamazsınız. Milyonlarca yıllık evrim, beynimize "Zehirlendiysen (miden bulanıyorsa) bunun sebebi ışık veya ses değil, yediğin bir şeydir!" şeklindeki o hayat kurtarıcı, katı ve silinmez genetik kuralı kodlamıştır. Öğrenme süreci sadece bizim irademize değil, evrimin bize çizdiği o sert biyolojik otobanlara bağlıdır.',
+    questionStem: 'Garcia Etkisi (Tat Tiksintisi) deneyi, klasik şartlanma (öğrenme) teorilerine karşı nasıl bir "evrimsel itiraz" sunmaktadır?',
+    options: [
+      'Farelerin tat alma duyularının görme ve duyma duyularına göre tamamen yok olduğunu',
+      'Canlıların (her uyarıcıyı her sonuca bağlayabilen) boş bir zihinle doğmadığı; aksine milyonlarca yıllık evrimsel bir hazırlıkla doğarak "mide bulantısını sadece yiyeceklerin tadına bağlamak" gibi genetik olarak kodlanmış (sınırlı/özel) hayatta kalma reflekslerine sahip olduğu',
+      'Radyasyonun farelerde kalıcı körlük ve sağırlık yaratarak öğrenmeyi engellediği',
+      'Hayvanların laboratuvar ortamlarında doğal davranışlarını her zaman kasten gizlediği'
+    ],
+    correct: 1,
+    explanation: 'Farenin mide bulantısını ışığa değil sadece tada bağlaması; beynin boş bir levha olmadığını, "zehirlenme yediğin şeydendir" kuralının evrim tarafından genlerimize peşinen (biyolojik bariyer/hazırlık olarak) kodlandığını ispatlar.'
+  },
+  {
+    title: 'Hollanda Açlık Kışı (Travmanın DNA\'sı)',
+    passage: 'İkinci Dünya Savaşı\'nın sonlarına doğru (1944), Naziler Hollanda\'ya gıda girişini keserek aylarca süren ve 20.000 kişinin öldüğü korkunç bir kıtlık ("Açlık Kışı") yarattı. O kış hamile olan anneler, günde sadece bir dilim ekmek ve lale soğanı yiyerek hayatta kalmaya çalıştı. Bilim insanları o kıtlıkta doğan çocukları onyıllar boyunca takip ettiğinde kan dondurucu bir tabloyla karşılaştı. O zor şartlarda doğan çocuklar (ve hatta onların çocukları), hayatları boyunca hep obez, diyabet hastası ve kalp krizine yatkın oldular! Annelerinin açlık çekerken hissettiği o çaresizlik ve panik, "DNA\'nın üzerindeki genlerin okunma biçimini (Epigenetik şalterleri)" kalıcı olarak değiştirmişti. Bebeklerin genleri, "Dünyada yemek yok, bulduğun her kaloriyi anında yağa çevir ve sakla!" diye programlanmıştı. Bu olay, "geçmişin" sadece tarih kitaplarında kalmadığını; atalarımızın çektiği açlığın, hüznün ve travmaların bizzat hücrelerimize (genlerimize) biyolojik birer emir (kader) olarak yazıldığını kanıtlayan en hüzünlü ve çarpıcı keşiftir.',
+    questionStem: 'Hollanda Açlık Kışı araştırmasının (Epigenetik) sonuçları, insanın fiziksel gelişimi hakkında hangi ezber bozan gerçeği ifşa etmektedir?',
+    options: [
+      'Lale soğanlarının insan sağlığı için aslında çok besleyici ve faydalı bir sebze olduğunu',
+      'Avrupalıların metabolizmasının savaştan sonra değişime uğrayarak hızlandığını',
+      'İnsanın kaderinin sadece doğduğu andaki diyetine değil; annesinin (ve atalarının) geçmişte yaşadığı aşırı açlık ve travmaların, genlerin çalışma biçimini (Epigenetik) kalıcı olarak değiştirerek gelecek nesilleri biyolojik olarak (hastalıklara/obeziteye) mahkûm ettiği gerçeğini',
+      'Hamilelik sırasında çok yemek yemenin bebeklerin zekâsını artırdığı yönündeki inancı'
+    ],
+    correct: 2,
+    explanation: 'Açlık çeken annelerin çocuklarının (besin kıtlığına karşı genleri değiştiği için) obez ve diyabetik olması; ataların yaşadığı travma ve açlığın sadece tarih olmadığını, epigenetik yolla (biyolojik bir kader gibi) nesillere genetik olarak aktarıldığını kanıtlar.'
+  },
+  {
+    title: 'Gözyaşının Topoğrafyası (Duygunun Şekli)',
+    passage: 'Gözyaşı sadece tuzlu bir su mudur? Sanatçı ve fotoğrafçı Rose-Lynn Fisher, yüzlerce farklı gözyaşı damlasını toplayıp kurutarak onları devasa elektron mikroskopları altında fotoğrafladı. Projenin adı "Gözyaşının Topoğrafyası" idi. Sonuçlar bilimkurgu filmlerini andırıyordu: İnsan güldüğünde döktüğü "Mutluluk Gözyaşları" ile, soğan doğrarken döktüğü "Refleks Gözyaşları" ve ağır bir yas (ayrılık) anında döktüğü "Acı Gözyaşları", mikroskop altında tıpkı kar taneleri gibi tamamen birbirinden farklı, büyüleyici ve eşsiz kristal şekillere (haritalara) sahip olarak kurumuştu! Gözyaşı, gözün terlemesi veya basit bir biyolojik sıvı atımı değildir. O, insan ruhunun o an içinde bulunduğu duygusal krizin (hüznün, sevincin veya paniğin), bedenin içindeki kimyayı anında değiştirerek, dış dünyaya (mikroskobik camların üzerine) çizdiği o kusursuz, sessiz ve fiziksel (geometrik) birer sanat eseridir (imzasıdır).',
+    questionStem: 'Rose-Lynn Fisher\'ın mikroskop altında incelediği gözyaşları, "duygu ve beden" ilişkisi hakkında bize neyi göstermektedir?',
+    options: [
+      'Gözyaşlarının içindeki tuz oranının coğrafi iklim şartlarına göre sürekli değiştiğini',
+      'İnsanın yaşadığı soyut (ve geçici) duygusal durumların (aşk, hüzün, mutluluk); bedenin ürettiği o sıvı damlasının (gözyaşının) kimyasal yapısını tamamen değiştirerek, o duygunun fiziksel (ve geometrik) bir haritasını (kristalini) oluşturabildiğini',
+      'Soğan doğrarken dökülen gözyaşlarının diğerlerinden çok daha asidik ve göze zararlı olduğunu',
+      'Erkeklerin ve kadınların gözyaşlarının farklı renklere sahip olduğunu'
+    ],
+    correct: 1,
+    explanation: 'Mutluluk, acı ve soğan gözyaşlarının kuruduğunda tamamen farklı geometrik/kristal şekiller alması; soyut sandığımız duyguların, bedenin kimyasını (sıvısını) değiştirerek o duygunun fiziksel/geometrik bir imzasını (haritasını) oluşturabildiğini ispatlar.'
+  },
+  {
+    title: 'NASA İkizler Deneyi (Uzayın Bedeni Yeniden Yazması)',
+    passage: 'Scott ve Mark Kelly, genetik olarak (tek yumurta ikizi oldukları için) birbirinin tamamen aynısı olan iki Amerikan astronotuydu. NASA, uzayın insan bedeni üzerindeki etkisini ölçmek için efsanevi bir deney yaptı: Mark Dünya\'da kalırken, Scott Uluslararası Uzay İstasyonu\'nda (ISS) tam bir yıl yaşadı. Scott Dünya\'ya döndüğünde, bilim insanları iki kardeşin DNA\'sını karşılaştırdı ve sonuçlar şok ediciydi! Scott\'ın (uzaydakinin) genlerinin okunma biçimi (epigenetiği) değişmiş, bağırsak bakterileri tamamen farklılaşmış ve en inanılmazı: Hücre yaşlanmasını gösteren DNA\'nın ucundaki o "Telomerleri", dünyada kalan kardeşine göre beklenmedik bir şekilde "uzamış" (yani hücreleri gençleşmiş) idi! (Ancak dünyaya dönünce hızla tekrar eski haline döndü). Bu deney, insan genetiğinin demirden ve taştan, değişmez bir kader levhası olmadığını; insanın sadece "bulunduğu çevreye ve yerçekimine" anında uyum sağlayarak kendi kullanım kılavuzunu (DNA\'sını) baştan yazabilen, akışkan ve sonsuz bir biyolojik yazılım (mucize) olduğunu kanıtlamıştır.',
+    questionStem: 'NASA İkizler Deneyi\'nin (uzaya giden Scott ile dünyada kalan Mark\'ın) genetik (ve telomer) sonuçları, evrim ve insan DNA\'sı hakkında neyi ispatlar?',
+    options: [
+      'Uzaydaki radyasyonun astronotları tamamen körleştiren kalıcı bir DNA mutasyonuna yol açtığını',
+      'Tek yumurta ikizlerinin yaşlandıkça genetik olarak birbirlerine daha çok benzediklerini',
+      'İnsanın DNA\'sının doğduktan sonra (zamanla) "sabit ve değişmez bir kader" olmadığı inancını yıkarak; bedenin, yerçekimsiz ve zorlu uzay şartlarına anında (esnekçe) adapte olup, genlerin (telomerlerin) okunma biçimini değiştirebilen, canlı ve akışkan bir biyolojik yazılım olduğunu',
+      'Astronotların Mars\'ta koloniler kurmaları için önce genetiklerini hayvanlarla melezlemeleri gerektiğini'
+    ],
+    correct: 2,
+    explanation: 'Aynı ikizden uzaydakinin DNA\'sı ve telomerleri değiştiğinde (esneklik), DNA\'nın (insanın) yerçekimi/uzay şartlarına (veya ortama) anında uyum sağlayarak kendini yeniden yazabilen, akışkan ve canlı bir yazılım (kaderin değişebilirliği) olduğu kanıtlanır.'
+  },
+  {
+    title: 'DeepDream (Yapay Zekânın Kâbusu)',
+    passage: '2015 yılında Google mühendisleri, yapay zekânın görüntüleri "nasıl tanıdığını (gördüğünü)" anlamak için DeepDream adında bir deney yaptılar. Zeki bir algoritmaya milyonlarca köpek, göz ve bina resmi göstererek onları tanımayı öğrettiler. Ancak sonra, o yapay zekâya "tamamen boş (anlamsız) bir bulut fotoğrafı" verdiler ve ondan, o boşluğun içinde "neyi görüyorsa onu abartarak çizmesini (hayal etmesini)" istediler. Yapay zekâ çalışmaya başladı ve saniyeler içinde o bulutun içinden; her yerden fışkıran devasa, irinli gözbebekleri, binaların üzerine binen tüyler ürpertici köpek suratları ve sayısız örümcek bacakları (kâbuslar) çizdi! Bu bir sistem hatası değildi; yapay zekâ sadece "bildiği her şeyi (köpekleri ve gözleri)", boşlukta bile "zorla görmeye (anlam bulmaya)" çalışıyordu. DeepDream, makinelerin "halüsinasyon (rüya)" görebildiğinin kanıtıdır. İnsanın pareidolia (bulutlarda yüz görme) zaafı, bizim yarattığımız kodlara (zekâya) bulaşmış; o soğuk matematik, korkunç ve kâbus gibi bir sürrealist ressama dönüşmüştür.',
+    questionStem: 'Google\'ın DeepDream deneyindeki yapay zekânın "anlamsız (boş) bir fotoğrafa" bakarak ondan köpekler ve gözler (kâbuslar) üretmesi, insan ve makine ilişkisi hakkında neyi ifşa eder?',
+    options: [
+      'Gelecekteki sanat eserlerinin tamamen fırça kullanılmadan dijital ekranlara geçiş yapmasını',
+      'Hayvan resimlerinin yapay zekâ algoritmalarını bozarak makinenin işlemci hızını yavaşlattığını',
+      'Makinenin (insanın uydurduğu kodların) "hiçlik ve anlamsızlık (boş bir bulut)" karşısında bile, bildiği her nesneyi zorla oraya uydurmaya (anlam aramaya/pareidolia) çalışması; insan aklının o "anlam bulma/halüsinasyon görme" krizinin makinelere de bulaştığı (geçtiği) bir kâbus',
+      'Bilgisayar programcılarının bilinçli olarak insanları korkutmak için sürreal filmler tasarladığını'
+    ],
+    correct: 2,
+    explanation: 'Boş bir bulutta zorla kendi bildiği köpekleri/gözleri (kâbusları) üretmesi; insanın "boşlukta anlam/yüz bulma (pareidolia)" zaafının, yarattığı zekâya da (makineye) bulaşarak halüsinasyon gören sürrealist bir kâbus (özellik) olduğunu ifşa eder.'
+  },
+  {
+    title: 'Mantis Karidesi (Algının Körlüğü)',
+    passage: 'Bir gökkuşağına veya bir çiçeğe baktığınızda, dünyanın o "tüm büyüleyici ve eksiksiz renklerini" gördüğünüzü mü sanıyorsunuz? Biyoloji bize o narsisistik algımızı yıkmamız için denizin dibinde yaşayan o agresif "Mantis Karidesi"ni (Peygamberdevesi Karidesi) sunar. İnsanın gözünde renkleri algılayan sadece 3 çeşit reseptör (hücre konisi) vardır (Kırmızı, Yeşil, Mavi); köpeklerde sadece 2 tane vardır. Ancak o renkli, tuhaf okyanus karidesinin gözlerinde tam "16 farklı renk reseptörü" bulunur! Bizim o mükemmel sanıp şiirler yazdığımız doğayı, onlar kızılötesi ve ultraviyole (insan beyninin asla hayal bile edemeyeceği milyarlarca yeni rengin, ateşin ve titreşimin patladığı) o tarifsiz ve devasa bir karnaval gibi görür. Bizim evrene dair algımız mutlak veya kusursuz değildir; biz, asıl renklerin, alevlerin ve devasa bir gerçekliğin oynamakta olduğu bir okyanus sinemasının, sadece küçücük bir siyah-beyaz köşesinden (penceresinden) izleyen acınası ve kör seyircileriyiz.',
+    questionStem: 'Mantis Karidesinin göz yapısındaki (16 renk reseptörü) biyolojik zenginlik, yazar tarafından insan algısına dair nasıl bir "felsefi (ve eleştirel) ayna" olarak kullanılmıştır?',
+    options: [
+      'Okyanus kirliliğinin canlıların göz retinasında mutasyonlar yarattığını ve körlüğe neden olduğunu',
+      'Deniz canlılarının sadece derin sularda renkleri daha net görebilecek fiziksel yapıya sahip olduğunu',
+      'İnsanoğlunun, evreni ve doğayı kendi 3 reseptörlü gözüyle "tam (mükemmel) olarak gördüğü" kibrini (narsisizmini) yıkarak; aslında kâinatın bizim hayal dahi edemeyeceğimiz kadar devasa, renkli (farklı boyutlu) bir şölen olduğu ve bizim o gerçeğin yanında kör ve sığ seyirciler (kısıtlı olduğumuz) eleştirisini',
+      'Böceklerin ve kabukluların okyanuslardan ziyade karada yaşayabilecek kadar evrimleştiğini'
+    ],
+    correct: 2,
+    explanation: '16 reseptörlü bir karidese karşı bizim 3 reseptörlü gözümüzün kıyası; insanın "dünyayı tam ve mükemmel gördüğü" kibrini yıkarak, bizim asıl renkli ve devasa evrene karşı aslında kör/sığ seyirciler olduğumuzun aynasıdır.'
+  },
+  {
+    title: 'Asitlenen Okyanuslar ve Sağır Balıklar',
+    passage: 'Sanayi devriminden beri fabrikalarımızla ve arabalarımızla atmosfere milyarlarca ton Karbondioksit (CO2) saldık. İklim krizini genellikle eriyen buzullar, yanan ormanlar ve sıcak hava olarak (görsel bir yıkım) algılarız. Ancak deniz biyologları, asıl ve sinsi kıyametin çoktan başladığını kanıtladılar. Okyanuslar, havadaki o devasa CO2\'yi emerler, ancak bunun bir bedeli vardır: Su asitlenir. Okyanus sularının pH dengesi değiştiğinde, mercan resiflerindeki küçük palyaço balıklarının (ve diğer yavruların) beyinlerindeki o "koku alma" ve "avcıdan kaçma" nöronları (algıları) kelimenin tam anlamıyla felç oldu. Oksitlenen (asitli) suda yaşayan balıklar, artık düşmanlarının (köpekbalıklarının) kokusunu alamıyor, onlardan saklanmak yerine âşık olmuş gibi "avcılarının ağzına doğru yüzerek (intihar ederek)" kurban oluyorlardı. İnsanoğlunun bacalarından tüten o sessiz zehir; doğayı sadece yakıp kurutmamış, canlıların hayatta kalma (korku) içgüdülerini ve beyinlerini hackleyerek, okyanusu sinsi, dilsiz ve kimyasal bir toplu mezara (intihar odasına) çevirmiştir.',
+    questionStem: 'Okyanusların asitlenmesinin balıklar üzerindeki etkisi, yazar tarafından "iklim krizinin" hangi sinsi (ve yıkıcı) boyutunu eleştirmek için bir örnek (metafor) olarak sunulmaktadır?',
+    options: [
+      'Denizanası gibi omurgasız canlıların asitli sularda diğer türlerden daha hızlı üreyerek okyanusları işgal etmesini',
+      'Balıkçılık sektöründeki ağ kullanımının deniz tabanındaki yosunlara zarar vermesini',
+      'İklim krizini (kirliliği) sadece gözle görülür bir felaket (eriyen buzullar) sanan algıyı yıkarak; aslında o zehrin, canlıların en temel (görünmez) "koku, savunma ve hayatta kalma içgüdülerini (beyinlerini)" silerek, doğayı sessiz bir kimyasal kâbusa (intihar odasına/yıkıma) çevirmesini',
+      'Karbondioksit gazının deniz altındaki aktif volkanik dağların sönmesine ve soğumasına neden olmasını'
+    ],
+    correct: 2,
+    explanation: 'Asitlenen suyun balığın koku almasını ve korkusunu silip avcıya doğru yüzdürmesi; iklim krizinin sadece eriyen buzullar değil, canlının beynini ve içgüdülerini (sessizce) hackleyen sinsi, kimyasal ve görünmez bir felaket/cinayet olduğunu anlatır.'
+  },
+  {
+    title: 'Dolbear Yasası (Doğanın Termometresi)',
+    passage: '1897 yılında Amerikalı fizikçi ve mühendis Amos Dolbear, yaz akşamlarının o gürültülü ve sinir bozucu cırcır böceklerini (Oecanthinae) dinlerken; o seslerin sadece çiftleşmek için rastgele atılmış bir çığlık olmadığını, doğanın içine gizlenmiş, dondurucu derecede kusursuz ve çalışan bir matematiksel denklem olduğunu keşfetti! Dolbear, "Bir cırcır böceğinin 14 saniye boyunca çıkardığı cıvıltı sayısını (ritmini) sayıp, o sayıya 40 eklerseniz; o anki havanın tam sıcaklığını (Fahrenhayt cinsinden) kusursuz bir termometre gibi hesaplarsınız" kuralını (Dolbear Yasası) buldu. Hava soğudukça böceğin kaslarının kimyasal tepkimesi yavaşlar, cıvıltı aralığı uzar; hava ısındıkça böcek hızlanır. Bizim o karanlık çalılıklardan gelen ve basit bir böcek ötüşü sandığımız o (cansıkıcı) gürültü; aslında evrenin termodinamik yasalarının, kimyanın ve biyolojinin tek bir farenheit derecesi bile şaşmadan saniye saniye işleyen (ve bize havanın sıcaklığını fısıldayan) o devasa ve canlı, organik termometresinin ta kendisidir.',
+    questionStem: 'Dolbear Yasası\'nın (cırcır böceği sesinden hava sıcaklığını ölçmenin) keşfi, doğa (ve kâinat) ile ilgili hangi bilimsel gerçeği (veya uyanışı) temsil eder?',
+    options: [
+      'Gürültü kirliliğinin sadece böcekler değil, kuşlar üzerinde de yön bulma kaybına (sağırlığa) yol açtığı tehlikesini',
+      'Sadece bir laboratuvarda dijital aletlerle (teknolojiyle) bulunabilecek sıcaklık ölçümünün; aslında o rastgele, sinir bozucu sandığımız bir böceğin ötüşünün içinde (doğanın kendi organik ve kusursuz matematiğinde) saklı olduğunu',
+      'Termometre icadından önce insanların sadece cırcır böceklerini kullanarak tarlalarını suladığını',
+      'Sıcak havaların cırcır böceklerinin ömrünü kalıcı olarak kısalttığını ve onları neslinin tükenmesine ittiğini'
+    ],
+    correct: 1,
+    explanation: 'Böceğin sesindeki ritmin havanın sıcaklığını kusursuzca (matematiksel) ölçmesi; rastgele bir gürültü sandığımız şeyin aslında doğanın kendi içine yerleşmiş kusursuz bir "organik termometre (matematik/saat)" olduğunu kanıtlar.'
+  },
+  {
+    title: 'Mikro-Uyku (Zihnin Sigorta Attırması)',
+    passage: 'Uzun ve yorucu bir yolculukta direksiyon sallarken veya bitmek bilmeyen uykusuz bir gecenin ortasında bilgisayara bakarken; gözleriniz açık olmasına (ve yola baktığınıza emin olmanıza) rağmen, o korkunç saniyelerde hiçbir şey hatırlamadığınız anlar olur. Araba birden şeritten çıkmıştır! Siz uyuduğunuzu sanmazsınız; ancak beyniniz sizin o inatçı "Ben uyanığım, direniyorum" kibrinize ve yalanınıza (dayanma iradenize) savaş açarak, "Mikro-Uyku (Micro-Sleep)" adı verilen o sinsi, tehlikeli ama hayati olan karanlık molayı verir. Beyin, tüm o sinir ağları yandığında ve korteks iflas ettiğinde, sahibinin (bilincinin) iznini beklemeden veya göz kapaklarını kapatma ihtiyacı bile duymadan, saniyeler boyunca (1 ila 15 saniye) tüm sistemi gizlice "fişten çeker" ve kapanır. İnsanın iradesi, o yorulan beynin biyolojik diktatörlüğü (kendi kendini hayatta tutma ve kapatma arzusu) karşısında bir oyuncaktan başka bir şey değildir.',
+    questionStem: 'Mikro-uyku deneyimi (göz açıkken beynin kapanması), "insan iradesi ve biyolojik kontrol" hakkında hangi sarsıcı gerçeği göstermektedir?',
+    options: [
+      'Araba kullanırken müzik dinlemenin insanlarda kalıcı işitme kaybı yarattığı',
+      'İnsanın beynini kahve ve ilaçlarla her zaman (sınırsızca) uyanık tutabileceği inancını',
+      'Kişinin uykusuzluğa (yorulmaya) karşı direnen o inatçı "bilincinin ve iradesinin"; sınırına gelmiş (iflas eden) o biyolojik beynin, kişiden izinsizce ve göz açıkken bile (zorla) sistemi fişten çekmesi (kapanması) karşısında ne kadar aciz bir oyuncak (illüzyon) kaldığını',
+      'İnsanların gündüzleri göz kapaklarının daha sık kapanıp açıldığı'
+    ],
+    correct: 2,
+    explanation: 'İnatla uyanık kalmak istememize rağmen, beynin gözümüz açıkken bile 3 saniyeliğine fişi çekip (bizi) kapatması; irademizin (ve dayanma gücümüzün) yorgun bir beynin diktatörlüğü karşısında ne kadar aciz/illüzyon (oyuncak) kaldığını gösterir.'
+  },
+  {
+    title: 'Nükleer Şarap Testi (Sezyum-137 ve Atom Çağının İzi)',
+    passage: 'Zengin koleksiyonerler, dünyanın en ünlü müzayedelerinde, üzerinde 1700\'lü ve 1800\'lü yılların (Fransız Devrimi veya Thomas Jefferson dönemi) tarihleri bulunan tozlu ve çok nadir (paha biçilmez) eski şarap şişeleri için milyonlarca dolar harcarlar. Ancak 2000\'li yıllarda bu şarapların gerçek mi, yoksa ustaca yıllandırılmış birer sahtekârlık (kalpazanlık) işi mi olduğunu anlamak için bilim dünyası şişeleri açmadan o kusursuz dedektiflik yöntemini buldu. Testin adı "Sezyum-137" idi! Doğada ve eski yıllarda asla bulunmayan "Sezyum-137" izotopu, dünyada ancak 1945\'te İnsanoğlu Hiroşima\'da o ilk atom bombasını patlattıktan (ve atmosferi radyasyonla kirlettikten) sonra yağmurlarla toprağa inmiş, oradan da üzüm bağlarına ve şişelenen "tüm sulara" kazınmıştı. Bir şişenin içinde tek bir Sezyum-137 atomu varsa, o şarap ne kadar eski görünürse görünsün, kesinlikle 1945\'ten sonra yapılmış bir yalandı (sahteydi)! İnsanoğlunun o devasa kibriyle yarattığı Nükleer Yıkım (Kıyametin ışını); sadece gökyüzünü ve nesilleri zehirlememiş, lüks mahzenlerde yudumlanan kadehlerin, üzümlerin ve koca bir yalan tarihinin içine, asla silinemeyecek o karanlık, bilimsel ve radyasyonlu imzasını (saatini) atmıştır.',
+    questionStem: 'Eski şarapların sahte olup olmadığını anlamak için kullanılan "Sezyum-137 Testi", bilimsel olarak neyin tespiti üzerinden bir doğrulama yapmaktadır?',
+    options: [
+      'Şarabın içindeki alkol oranının zamanla buharlaşıp azaldığını ölçerek',
+      'Kullanılan cam şişelerin 19. yüzyıla ait antika bir kalıptan çıkıp çıkmadığını lazerlerle tarayarak',
+      'Doğada bulunmayan (ancak 1945\'te insanlığın patlattığı Atom Bombası/nükleer testlerle atmosfere yayılan) "Sezyum-137" radyasyon izotopunun o şarabın içinde olup olmadığına (varsa, 1945\'ten sonra üretildiğine) bakarak',
+      'Üzümlerin yetiştiği bölgenin topraklarındaki asit dengesini geçmiş yüzyılların kayıtlarıyla karşılaştırarak'
+    ],
+    correct: 2,
+    explanation: '1700\'lerden kaldığı söylenen şarapta, (sadece 1945 atom bombası patlamalarından sonra havaya ve üzümlere karışan) Sezyum-137 varsa; o şarabın kesinlikle 1945 sonrasına ait (sahte) bir ürün olduğu bilimsel bir gerçek (kanıt) olarak kullanılmıştır.'
+  },
+  {
+    title: 'Süperakışkan Helyum (Yerçekimine İnat Tırmanan Sıvı)',
+    passage: 'Bir bardağın içine su koyarsanız, o su sonsuza kadar orada (yerçekiminin esiri olarak) uslu uslu durur. Bu, Sir Isaac Newton\'ın klasik fiziğinin (dünyamızın) kurallarıdır. Ancak bilim insanları Helyum gazını alıp onu "Mutlak Sıfır" (-273 derece) olan o evrensel ölüm sınırına kadar dondurup (soğutup) bir sıvıya ("Süperakışkan Helyum-4"e) dönüştürdüklerinde, fizik kurallarının o sarsılmaz cam duvarı çatırdar ve çöker. Süperakışkan helyumu bir bardağın içine koyduğunuzda; o sıvı, bardağın dibinde uslu uslu durmak (yerçekimine boyun eğmek) yerine; içindeki hiçbir (sıfır) sürtünme sayesinde kendi kendine bardağın cam duvarlarından yukarıya tırmanır, kenardan sızar ve damla damla yerçekimini yenerek o kaptan (kendi hapishanesinden) dışarı kaçar! Üstelik bu sıvı, bir fırıldak gibi çevrildiğinde sonsuza kadar hiç yavaşlamadan dönebilir (enerjisini kaybetmez). Süperakışkanlar; klasik mantığımızın o "Herkes yerçekimine mahkûmdur" diyen kibrini ezen, kuantum dünyasının o kuralları büken, tuhaf ve isyankâr doğasının çıplak (ve ürpertici) bir illüzyonu (hayaleti) gibi gözümüzün önünde tırmanır.',
+    questionStem: 'Süperakışkan Helyum deneyinin fizikte (ve insan algısında) yıktığı asıl kural nedir?',
+    options: [
+      'Güneş sistemindeki gazların çok yüksek basınçlarda ancak katı hale geçebildiği teorisini',
+      'Sıvıların (Helyumun mutlak sıfıra soğutulup sıfır sürtünmeye ulaşmasıyla) yerçekiminin esiri olarak kaplarda sabit kalacağı şeklindeki "Klasik Newton Fiziği" algısını; sıvının bardağın duvarlarından tırmanarak (kuralları aşarak) kuantum dünyasının (isyankâr) tuhaflığını kanıtlamasını',
+      'Helyum gazının aslında uzay gemilerinde kullanılabilecek mükemmel bir ısıtıcı yakıt olduğu inancını',
+      'Metallerin mutlak sıfır derecesinde zamanla esnekleşerek eridiğini'
+    ],
+    correct: 1,
+    explanation: 'Mutlak sıfıra yaklaşan helyumun sürtünmesi sıfırlandığı için duvarlara tırmanıp (yerçekimine kafa tutup) kaçması; klasik fiziğin (Newton) o mutlak kurallarını yıkarak kuantum tuhaflığının (isyanının) varlığını kanıtlamasını tanımlar.'
+  },
+  {
+    title: 'Zift Damlası Deneyi (Bilimin Devasa Sabrı)',
+    passage: '1927 yılında Avustralyalı Profesör Thomas Parnell, öğrencilerine katı gibi görünen bazı maddelerin aslında milyonlarca kez yavaşlamış birer "sıvı" olduğunu kanıtlamak için (akıl almaz bir sabırla) bir deney başlattı. Katran gibi kapkara ve bir çekiçle vurulduğunda cam gibi kırılan o sert "zift (pitch)" parçasını eritti, bir huniye (kaba) döktü ve onun damlamasını beklemeye başladı. Bu bekleyiş o kadar yavaş ve eziyet vericiydi ki, o damlanın ucundan kopup yere düşmesi tam "8-9 YIL" sürüyordu! Deneyi başlatan profesör, kendi ömrü boyunca o damlanın sadece birkaç kez düşüşüne (ve on yıllarca bekleyişine) tanık oldu ve öldü. Deneyi asistanları ve sonraki nesil (yaklaşık 100 yıl boyunca) nöbeti devralarak izlemeye devam etti. Bu zamana kadar huniden sadece 9 kez damla düştü ve 10. damla (kamera altında) ancak on yıllar sonra düşecektir! "Zift Damlası Deneyi" (tarihin en uzun süren deneyi); insanın o aceleci, tüketim histerisi dolu ve anında "sonuç/ödül" isteyen hız kibrine karşı; bilimin insan ömrünü ve nesilleri aşan, o sessiz, ağır, sarsılmaz (ve katran gibi dondurucu) asil SABRININ en güzel anıtıdır.',
+    questionStem: 'Zift Damlası Deneyi\'nin (The Pitch Drop Experiment) laboratuvardaki o asırlık ve sönmeyen devamlılığı, bilimsel yöntemin ve felsefenin hangi büyük erdemini (dersini) sembolize etmektedir?',
+    options: [
+      'Bilgisayar destekli kameraların insan gözünden daha detaylı ölçümler yapabilmesini',
+      'Bilimin sadece hızlı sonuç alan projeleri destekleyen kâr amacı güden şirketlerin elinde olduğunu',
+      'Modern insanın anında sonuç (hız) bekleme ve tüketme kibrine (histerisine) karşı; hakikati kanıtlamak uğruna insan ömrünü, jenerasyonları aşan o sessiz, sarsılmaz, asil ve devasa (yüzyıllık) "sabrı (ve adanmışlığı)"',
+      'Katran (zift) kullanımının eski çağlarda yol yapımı için tek geçerli malzeme olmasını'
+    ],
+    correct: 2,
+    explanation: 'Bir damla için 9 yıl beklemesi ve 100 yıldır deneyin hocadan öğrenciye (nesilden nesile) aktarılması; bilimin anında sonuç (hız) bekleyen modern hırsa karşı ne kadar asil, sabırlı ve ömrü aşan bir adanmışlık (erdem) olduğunu sembolize eder.'
+  },
+  {
+    title: 'Flynn Etkisi (Zekânın Adaptasyonu mu?)',
+    passage: '1984 yılında araştırmacı James Flynn, zekâ testlerinin (IQ) tarihini incelerken sosyolojiyi ve psikolojiyi sarsan o devasa "anomaliyi" keşfetti: 1930\'lardan beri, her yeni neslin IQ testi skoru, bir önceki nesle göre dünya genelinde istikrarlı (ve devasa bir hızla) yukarı doğru fırlıyor ve artıyordu (Buna Flynn Etkisi denir). Öyle ki, 1930\'larda ortalama kabul edilen (100 IQ) bir insanı bugünkü testlere soksaydınız, "zihinsel engelli" (düşük zekâ) sınırında kalırdı! Peki insanlık bu kadar kısa sürede (evrimsel olarak imkânsız olan birkaç on yılda) biyolojik olarak genetik bir mucizeyle aniden "daha mı zeki" oldu? Çoğu bilim insanına göre Hayır! İnsanın biyolojisi gelişmedi; değişen şey eğitim sisteminin (ve modern dünyanın), insan beynini sadece "soyut mantık yürütmeye, ekranlara bakmaya, test çözmeye ve çoktan seçmeli (bilgi analiz etme) şablonlarına" uygun şekilde şartlaması (antrenman yaptırması) idi. Zekâ artmadı; biz sadece o modern ve mekanik kurgunun (testlerin/okulun) dilini çok iyi oynayan, soyut algılaması artmış, ama sokaktaki/doğadaki pratik zekâsını yitiren (hackleyen) modern oyunculara dönüştük.',
+    questionStem: 'Flynn Etkisi (Yeni nesillerin IQ puanlarındaki o devasa artış) ile ilgili bilim insanlarının getirdiği asıl sosyolojik/felsefi itiraz (gerçek) nedir?',
+    options: [
+      'Gıdalardaki vitaminlerin beynin fiziksel boyutunu (kafatası hacmini) geçmiş yüzyıllara göre çok daha fazla büyüttüğü ve beyni ağırlaştırdığı',
+      'İnsanlığın genetik (evrimsel) olarak daha üstün/zeki (üst insan) bir türe biyolojik bir sıçrama yaptığı gerçeği',
+      'İnsanların "gerçekte/biyolojik" olarak daha zeki (bilge) olmadıkları; artan skorların sadece eğitimin (ve modern hayatın) beynimizi o soyut/test mantığına uygun birer "makineye (iyi test çözen oyuncuya)" dönüştürmesinin bir sonucu (antrenmanı/kurgusu) olduğu gerçeği',
+      'Zekâ testlerinin 1930\'lardan günümüze kadar hiçbir şekilde değiştirilmeden aynı sorulardan oluştuğu'
+    ],
+    correct: 2,
+    explanation: 'IQ\'nun artması beynin genetik/biyolojik bir evrim (gerçek zekâ) geçirmesi değil; modern eğitimin ve toplumun bizi o "soyut/test mantığına" alıştırması (iyi antrenman/oyuncu yapması) şeklindeki adaptasyona (itiraza) dayanır.'
+  },
+  {
+    title: 'Westermarck Etkisi (Ahlakın Biyolojisi)',
+    passage: 'Yüzyıllar boyunca filozoflar, ensestin (kardeşlerin birbiriyle evlenmesinin) her kültürde en büyük "ahlaki ve dini" günah ve yasak (tabu) kabul edilmesini; insanlığın kültürel bir yüceliği, kuralları, utanma duygusu veya ilahi bir emri olarak yorumladılar. Ancak Finlandiyalı antropolog Edvard Westermarck bu romantik (ahlaki) illüzyonu, evrimin o soğuk (biyolojik) tokatıyla yıktı. Westermarck\'a göre (ve sonradan İsrail Kibutzlarında ve Tayvan\'daki topluluklarda yapılan deneylerle kanıtlandığı üzere); çocukların (kan bağı olmasalar bile) aynı odada, aynı yuvada ve aynı koku (yakınlık) ile "ilk 6 yılı" bir arada geçirdiklerinde (birlikte büyüdüklerinde), insan beyni (evrim) onlara karşı "cinsel tiksinti" (desensitization) yaratan biyolojik bir blokaj salgılar (Westermarck Etkisi). Çünkü doğa, genlerin (akraba evliliğinin) yarattığı hastalıkları (mutasyonları) engellemek için bu "tiksintiyi" insan DNA\'sına bir hayatta kalma kalkanı olarak kodlamıştır. Ensestin yasak olması; dinlerin, filozofların ve kanunların yarattığı "yüce ve kültürel bir ahlak/utanma" değil; milyonlarca yıllık acımasız evrimin, hastalıklı genleri elemeye (bizi korumaya) programladığı o soğuk, biyolojik, hormonel (ve ilkel) tiksintinin ta kendisidir!',
+    questionStem: 'Westermarck Etkisi (Birlikte büyüyenlerin cinsel çekim duymaması), "Ensest Tabusu ve Ahlak" kavramına dair (filozofları şaşırtan) hangi bilimsel uyanışı sunmaktadır?',
+    options: [
+      'Ahlak kurallarının ve yasakların sadece krallar ve devlet yöneticileri (yasalar) tarafından zorla dayatılan siyasi kontrol araçları olduğunu',
+      'İnsanlarda ensestin (ve tabunun) kaynağının; dini veya kültürel (yüce/sosyolojik) bir ahlak eğitiminden (utanmadan) değil; doğanın (evrimin) genetik hastalıkları engellemek için insanın hormonlarına (beynine) kodladığı, o tamamen soğuk, biyolojik bir korunma (tiksinti) mekanizmasından ibaret olduğunu',
+      'Avrupa\'daki kraliyet ailelerinin bu biyolojik kuralı asla tanımayarak genlerini koruduğunu',
+      'Aynı evde büyüyen çocukların her zaman birbirlerini kıskanarak rekabet içinde olduklarını'
+    ],
+    correct: 1,
+    explanation: 'Ensest tabusunun (ahlakın) dinden veya yüce bir kültür/utanmadan değil; evrimin genetik hastalıkları korumak (engellemek) için kodladığı o "soğuk/biyolojik tiksintiden (hormon/hayatta kalma mekanizmasından)" geldiğini ispatlayarak felsefi ahlakı biyolojiye indirgemesidir.'
+  }
+];
+
+export const bilimParagrafSorulari38: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_38.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_38[idx];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-bilim38-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
 // paragrafTests.ts dosyasının hata vermemesi için iki listeyi birleştirip eski adıyla dışa aktarıyoruz:
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari,
