@@ -11697,6 +11697,283 @@ export const felsefeParagrafSorulari43: BilimParagrafQuestion[] = Array.from({ l
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
+const PARAGRAPH_THEMES_44 = [
+  {
+    title: 'Şeytan Çekirdeği (Louis Slotin ve Kibrin Bedeli)',
+    passage: '1946 yılında Los Alamos laboratuvarında fizikçi Louis Slotin, "Şeytan Çekirdeği" (Demon Core) adı verilen 6 kiloluk plütonyum küresiyle tehlikeli bir deney yapıyordu. Amacı, kürenin üzerine berilyum yarımküreleri kapatarak onu kritik kütlenin (patlamanın) tam sınırına getirmekti. Diğer fizikçiler bu deneye "Uyanan bir ejderhanın kuyruğunu gıdıklamak" derdi ve özel güvenlik aletleri kullanılırdı. Ancak Slotin öylesine kibirli ve aşırı özgüvenliydi ki, koca bir nükleer reaksiyonu sadece sıradan bir "düz tornavida" ile araya sıkıştırarak durduruyordu! Beklenen oldu; tornavida kaydı, küreler kapandı ve oda anında mavi bir radyasyon flaşıyla aydınlandı. Slotin, hatasını anlayıp küreyi eliyle fırlattı ama iş işten geçmişti; aldığı devasa radyasyon yüzünden 9 gün içinde hücreleri eriyerek (korkunç acılar içinde) öldü. Bu olay; en üstün aklın ve bilimsel dehanın bile, bir anlık kibir ve ciddiyetsizlik (şovmenlik) karşısında nasıl saniyeler içinde o ölümcül ve affetmeyen fizik kurallarına kurban gideceğinin trajik bir aynasıdır.',
+    questionStem: 'Louis Slotin\'in "Şeytan Çekirdeği" (Demon Core) deneyinde hayatını kaybetmesi, bilim insanlarına dair hangi tehlikeli zaafın (kibrin) bir göstergesidir?',
+    options: [
+      'Plütonyum elementinin o dönemde henüz tam olarak keşfedilmemiş rastgele bir madde olmasının',
+      'Bilimsel bir dehanın bile, sahip olduğu "aşırı özgüven ve kibir (şovmenlik)" yüzünden doğanın o acımasız ve ölümcül fizik kurallarını hafife alarak; çok basit bir hatayla (tornavida kaymasıyla) kendi felaketini kendi elleriyle hazırlaması zaafının',
+      'Nükleer araştırmaların sadece askeri amaçlarla yapıldığı için bilim insanlarını intihara sürüklemesinin',
+      'O dönemdeki laboratuvarlarda radyasyonu ölçecek hiçbir teknolojik cihazın bulunmamasının'
+    ],
+    correct: 1,
+    explanation: 'Nükleer bir reaksiyonu kibirle/şovmenlikle sadece bir tornavidayla tutmaya çalışırken elinin kayıp ölmesi; aşırı özgüvenin ve kibrin, en büyük dehaları bile doğanın acımasız kurallarına nasıl kurban ettiğini gösterir.'
+  },
+  {
+    title: 'Göbeklitepe (Önce Tapınak, Sonra Şehir)',
+    passage: 'Tarih kitapları bize yüzyıllar boyunca şu düz ve mekanik evrimi öğretti: "İnsanoğlu önce buğdayı evcilleştirdi (tarımı buldu), karnı doyup köyler kurduktan sonra da (bol vakti olduğu için) kendine dinler ve tapınaklar icat etti." Ancak 1995 yılında Şanlıurfa\'da bulunan Göbeklitepe bu ezberi dinamitledi! Günümüzden 12.000 yıl önce, insanların henüz çanak çömleği, tekerleği ve tarımı bilmediği (sadece vahşi avcı-toplayıcı oldukları) bir çağda, devasa ve mükemmel yontulmuş taş sütunlardan oluşan o muazzam tapınağı inşa ettikleri ortaya çıktı. Alman Arkeolog Klaus Schmidt\'in dediği gibi: "Önce tapınak geldi, şehir (ve tarım) onun ardından geldi." İnsanı medeniyete ve yerleşik hayata zorlayan şey "ekonomik açlık veya buğday" değildi; onları bir araya getiren, o devasa taşları taşıtan ve organize olmaya (işbirliğine) iten şey "İnanç (din) ve ortak bir anlam arayışıydı." Medeniyeti doğuran şey mide değil, ruhtur.',
+    questionStem: 'Göbeklitepe\'nin keşfi, insanlık tarihi ve "medeniyetin doğuşu" hakkında hangi köklü akademik dogmayı yerle bir etmiştir?',
+    options: [
+      'Taş işlemeciliğinin sadece Antik Mısır ve Yunan medeniyetlerinde var olduğu inancını',
+      '"İnsanın önce tarımı bulup yerleşik hayata geçtiği, sonra dinleri/tapınakları kurduğu" inancını yıkarak; aslında insanı organize edip medeniyete (ve tarıma) iten asıl itici gücün "ortak bir inanç ve tapınak inşa etme arzusu (ruhsal ihtiyaç)" olduğunu ispatlayarak',
+      'Avcı-toplayıcı insanların hayvanlardan korktuğu için sadece mağaralarda yaşayabildiği teorisini',
+      'İlk insanların gökyüzündeki yıldızlara bakarak matematik bilimini icat ettiği yönündeki tezi'
+    ],
+    correct: 1,
+    explanation: 'Tarım yokken devasa tapınak yapılması; medeniyeti ve yerleşik hayatı (ekonominin/buğdayın değil) "inancın ve tapınma ihtiyacının" başlattığını ispatlayarak tarihsel dizilimi (dogmayı) tersyüz etmiştir.'
+  },
+  {
+    title: 'Starfish Prime (Uzayı Nükleerle Vurmak)',
+    passage: '1962 yılında, Soğuk Savaş\'ın o en karanlık ve akıl dışı zirvesinde, Amerika Birleşik Devletleri "Uzayda nükleer bomba patlatırsak ne olur?" sorusunun cevabını merak etti ve "Starfish Prime" projesini başlattı. Yeryüzünden 400 kilometre yukarıda (atmosferin dışında), Hiroşima\'ya atılanın 100 katı gücünde bir hidrojen bombası patlatıldı! Gökyüzü anında kan kırmızısı ve yeşil auroralara (yapay kuzey ışıklarına) büründü. Ancak doğa, bu kibre anında ölümcül bir faturayla cevap verdi. Patlamanın yarattığı devasa Elektromanyetik Darbe (EMP), 1400 kilometre ötedeki Hawaii adasını vurdu; sokak lambaları patladı, telefon hatları sustu, alarmlar çıldırdı. Daha da kötüsü, patlama dünyanın manyetik alanına öylesine bir radyasyon enjekte etti ki, yörüngedeki uyduların üçte biri kavrulup çöpe döndü! Starfish Prime; insanoğlunun bilimsel merak adı altında, sonuçlarını hesaplamadan (ve doğanın/uzayın o hassas dengesini hiçe sayarak) tetiği çektiği o en şımarık, en tehlikeli ve en apokaliptik fantezinin adıdır.',
+    questionStem: 'Starfish Prime projesi (Uzayda nükleer patlama), Soğuk Savaş dönemi bilim zihniyetinin hangi "sorumsuz (kibirli)" yönünü ifşa eder?',
+    options: [
+      'Güneş fırtınalarının yeryüzündeki elektrik hatlarını her an yok edebileceği gerçeğini',
+      'Sovyetler Birliği\'nin nükleer silah üretiminde çok daha ileri bir teknolojiye sahip olmasını',
+      'İnsanoğlunun, sonuçlarını öngöremediği halde (EMP ve uyduların çökmesi), doğanın ve uzayın hassas dengesini hiçe sayarak "kibirli bir merak ve güç gösterisi" uğruna kozmik bir felakete (kıyamete) tetiği çekme sorumsuzluğunu',
+      'Nükleer enerjinin gelecekte atmosferi temizleyerek küresel ısınmayı durduracağı yalanını'
+    ],
+    correct: 2,
+    explanation: 'Sonuçlarını bilmeden uzayda bomba patlatıp Hawaii\'nin elektriğini kesmek ve uyduları yakmak; insanın güç gösterisi ve merak uğruna doğanın dengesini hiçe sayan o sorumsuz kibrini ifşa eder.'
+  },
+  {
+    title: 'Asch Deneyi (Sürünün Görünmez Baskısı)',
+    passage: '1951 yılında Solomon Asch tarafından yapılan deney, insan psikolojisinin o dondurucu zayıflığını laboratuvarda kanıtladı. Odaya alınan bir gerçek deneğe ve önceden ayarlanmış (işbirlikçi) yedi kişiye çok basit iki kart gösterildi. Bir kartta tek bir çizgi, diğer kartta ise farklı uzunlukta üç çizgi vardı. "Hangi çizgiler aynı boyda?" diye soruldu. Cevap 5 yaşındaki bir çocuğun bile görebileceği kadar "açık ve netti". Ancak ayarlanmış o yedi kişi (kasten) hep bir ağızdan "Yanlış çizginin" doğru olduğunu söylediler. Sıra o odadaki tek gerçek deneğe geldiğinde ne oldu? Deneklerin %75\'i, kendi gözlerinin o açık ve net bir şekilde gördüğü "gerçeği (hakikati)" inkâr ettiler ve (sırf gruba uyumsuz olmamak, dışlanmamak için) o apaçık "yalana" katılarak yanlış cevabı verdiler! Asch Deneyi, faşizmin ve kitle hezeyanlarının matematiğidir: Çoğunluğun baskısı (sürü psikolojisi), insanın sadece fikrini değil, bizzat gözünün gördüğü fiziksel gerçeği bile eğip bükecek (veya susturacak) kadar korkunç bir diktatördür.',
+    questionStem: 'Solomon Asch\'in Çizgi Deneyi, kitle psikolojisi ve birey (hakikat) ilişkisi hakkında neyi kanıtlamaktadır?',
+    options: [
+      'İnsanların uzun süre odaklandıklarında görsel yanılsamalar (optik illüzyonlar) yaşayabileceğini',
+      'Bireyin, sadece "çoğunluktan dışlanmamak ve gruba uyum sağlamak" uğruna; bizzat kendi gözleriyle gördüğü o en basit, apaçık (matematiksel) gerçeği bile inkâr ederek sürünün yalanına (körlüğe) gönüllü olarak teslim olma zaafını',
+      'Zekâ seviyesi yüksek olan kişilerin grup ortamlarında her zaman daha fazla konuşarak liderlik yaptığını',
+      'Çizim yeteneğinin sadece sağ beyin lobu gelişmiş insanlara özgü sanatsal bir yetenek olduğunu'
+    ],
+    correct: 1,
+    explanation: 'Gözünün gördüğü doğruyu sırf diğer yedi kişi yanlış dedi diye inkâr etmesi; çoğunluk baskısının (dışlanma korkusunun) insanın en açık fiziksel gerçeği bile inkâr etmesine (sürüye teslim olmasına) yol açtığını kanıtlar.'
+  },
+  {
+    title: 'Radyum Kızları (Ölümcül Parıltı)',
+    passage: '1920\'lerde Amerika\'da saat kadranlarını karanlıkta parlasın diye "Radyum" karışımlı bir boyayla boyayan genç kızlar vardı (Radium Girls). Şirket yöneticileri onlara bu boyanın tamamen zararsız olduğunu, hatta cildi güzelleştiren sihirli bir iksir olduğunu söylüyorlardı. Kızlar o kadar saf ve mutluydu ki, dudaklarını, tırnaklarını ve dişlerini bile bu parlayan boyayla boyayıp partilere gidiyorlardı. Ancak patronlar ve laboratuvar bilimcileri o atölyelerde kurşun yeleklerle (korunarak) dolaşıyordu! Yıllar sonra o genç kızların çeneleri kelimenin tam anlamıyla çürüyüp yüzlerinden düşmeye, kemikleri peynir gibi ufalanıp kanserden ölmeye başladıklarında, şirket tüm kayıtları sildi ve onları "frengi" olmakla suçlayarak ahlaksızca iftira attı. "Radyum Kızları", kapitalizmin ve o sözde "aydınlanmacı bilimin"; kâr uğruna insan hayatını nasıl göz göre göre, yalanlarla dolu ve ölümcül bir parıltının içine (radyasyon fırınına) attığının en karanlık ve trajik davasıdır.',
+    questionStem: 'Radyum Kızları (Radium Girls) olayı, sanayi kapitalizmi ve bilim etiği hakkında neyin en utanç verici örneğidir?',
+    options: [
+      'Genç kadınların moda uğruna kendi sağlıklarını bilerek ve isteyerek tehlikeye atmalarının',
+      'Radyasyonun sadece karanlık ortamlarda aktif hale gelen biyolojik bir bakteri türü olduğunun',
+      'Sermaye ve şirket kibrinin; gerçeği (radyasyonun tehlikesini) çok iyi bilmelerine rağmen kâr uğruna işçilere yalan söylemesi ve onları göz göre göre çürüyerek ölüme terk etmesi (kapitalist sömürü ve ahlaksızlığın) gerçeğini',
+      'Saat üretiminin 20. yüzyılda Amerika ekonomisinin tek can damarı olduğu yönündeki inancın'
+    ],
+    correct: 2,
+    explanation: 'Patronların kurşun yelek giyip kızlara "boya faydalıdır" demesi ve kızların çenesi çürürken onlara iftira atılması; kapitalizmin/sermayenin kâr uğruna insan hayatını kasten hiçe saydığı o ahlaksız/ölümcül sömürüyü gösterir.'
+  },
+  {
+    title: 'Sahte Ameliyat Deneyi (Plasebonun Bıçağı)',
+    passage: 'Tıp dünyası "Plasebo Etkisini" (şeker hapı verip iyileştirme) yıllardır biliyordu. Ancak 2002 yılında Dr. Bruce Moseley bu etkiyi aklın sınırlarını zorlayan bir noktaya taşıdı: "Sahte Ameliyat" (Sham Surgery). Diz kireçlenmesi ve korkunç ağrılar çeken hastalara, ameliyathaneye alınıp anestezi verildi. Ancak doktor onların dizini tedavi etmedi; sadece diz kapaklarına bistüriyle üç küçük "sahte çizik (kesik)" atıp onları geri dikti ve hastaları uyandırdı! Şok edici sonuç şuydu: Gerçek ameliyat olanlarla, o "sahte çiziği yiyen" hastalar birebir aynı oranda iyileşti! Hastalar koltuk değneklerini attılar, yıllar sonra basketbol oynamaya başladılar. Zihinleri "Ben büyük bir ameliyat oldum ve iyileştim" kurgusuna o kadar derinden inanmıştı ki; beyin kendi eczanesini açmış, ağrıları kesmiş ve dizi fiziksel olarak onarmıştı. İnsan zihni, doktorun bistürisinden çok daha keskin, kâinatın en kusursuz ve en gizemli cerrahıdır.',
+    questionStem: 'Sahte Ameliyat (Sham Surgery) deneyindeki "fiziksel iyileşme" sonucu, tıp ve insan beyni hakkında hangi muazzam gücü kanıtlamıştır?',
+    options: [
+      'Diz rahatsızlıklarının aslında sadece spor yapmamaktan kaynaklanan basit kramplar olduğunu',
+      'Anestezi gazlarının insan kemiklerini hızla onaran gizli ve kimyasal bir formüle sahip olduğunu',
+      'İnancın ve "iyileşeceğine dair beklentinin" sadece psikolojik bir rahatlama değil; beynin kimyasını değiştirerek, bedendeki fiziksel bir hastalığı (sanki ameliyat olmuş gibi) gerçekten tedavi edebilen somut ve hücresel bir cerrah/güç (Plasebo) olduğunu',
+      'Doktorların ameliyatlarda kullandıkları neşterlerin (bistürilerin) her zaman mikrop saçtığını'
+    ],
+    correct: 2,
+    explanation: 'Sadece çizik atılmasına rağmen hastaların "ameliyat oldum" inancıyla koltuk değneklerini atması; inancın/beklentinin (Plasebo) sadece psikolojik değil, bedeni hücresel bazda iyileştiren somut ve muazzam bir cerrahi güç olduğunu kanıtlar.'
+  },
+  {
+    title: 'Antikythera Düzeneği (Zamanın Dışındaki Makine)',
+    passage: '1901 yılında Yunanistan\'ın Antikythera adası açıklarında batan bir Roma gemisinden, paslanmış ve birleşmiş bronz dişlilerden oluşan bir cihaz çıkarıldı. Yıllarca önemsenmeyen bu cihaz, 1970\'lerde X-ışınlarıyla incelendiğinde arkeoloji dünyası kelimenin tam anlamıyla felç oldu! MÖ 150 yıllarında yapılmış olan bu "Antikythera Düzeneği"; güneş tutulmalarını, gezegenlerin yörüngelerini, ayın evrelerini ve olimpiyat oyunlarının tarihlerini milimetrik olarak hesaplayan tam teşekküllü "dünyanın ilk analog bilgisayarıydı!" Oysa bu karmaşıklıkta (diferansiyel dişlilere sahip) bir teknolojinin, Avrupa\'da ancak 1500 yıl sonra (Rönesans\'ta saat kuleleriyle) icat edildiği sanılıyordu. Antikythera Düzeneği, modern insanın o "Tarih, ilkelden gelişmişe doğru ilerleyen düz ve pürüzsüz bir ok çizgisidir" şeklindeki kibrini paramparça eder. Tarih düz bir ilerleme değil; bazen 1500 yıllık karanlık çağlarla, devasa teknolojik unutuluşlarla ve çöküşlerle dolu kopuk ve engebeli bir kâbustur.',
+    questionStem: 'Antikythera Düzeneği\'nin (2000 yıllık analog bilgisayarın) keşfi, modern tarih anlayışındaki hangi kibirli "yanılgıyı" yerle bir etmiştir?',
+    options: [
+      'Yunanlıların aslında hiçbir zaman deniz ticareti yapmadığı yönündeki klasik görüşü',
+      'Tarihin her zaman "ilkelden (cahillikten) moderne (gelişmişe) doğru kesintisiz, düz ve sürekli yukarı çıkan bir çizgi" olduğu şeklindeki kibri yıkarak; aslında medeniyetlerin devasa bilgi kayıpları ve asırlar süren karanlık çöküşler yaşayabileceğini',
+      'Bronz ve bakır madenlerinin su altında yüzyıllar boyunca asla oksitlenmeden (paslanmadan) kalabileceğini',
+      'Olimpiyat oyunlarının aslında uzaylılar tarafından organize edildiğine dair komplo teorilerini'
+    ],
+    correct: 1,
+    explanation: '1500 yıl sonra icat edildiği sanılan bir teknolojinin MÖ 150\'de yapılmış olması; tarihin sürekli ileri giden düz bir çizgi olduğu kibrini yıkarak, medeniyetlerin muazzam gerilemeler (unutuluşlar/karanlık çağlar) yaşayabileceğini kanıtlar.'
+  },
+  {
+    title: 'Tunguska Olayı (Görünmez Suikastçı)',
+    passage: '30 Haziran 1908 sabahı, Sibirya\'nın ıssız Tunguska ormanlarında, Hiroşima atom bombasından tam 1000 kat daha güçlü ve devasa bir patlama meydana geldi. Patlama öylesine şiddetliydi ki, İngiltere\'deki sismograflar bile titredi ve Avrupa\'da geceleri gökyüzü kitap okunacak kadar aydınlık kaldı. Ancak yıllar sonra Sovyet bilim insanları o cehennemin merkezine ulaştıklarında akıllarını yitirecek gibi oldular: Ortada ne bir meteor parçası, ne de açılmış bir "krater (çukur)" vardı! Milyonlarca ağaç merkezden dışarıya doğru kibrit çöpü gibi yere yatırılmış, merkezdekiler ise dalları yanarak dimdik (telefon direği gibi) ayakta kalmıştı. Bilim, bu hayalet kıyameti sonradan çözdü: Devasa bir meteor, atmosfere girip yeryüzüne "çarpmadan önce" yerden 10 km havada (basınçtan dolayı) patlamış, o şok dalgası ormanı dümdüz etmiş ve meteor tamamen buharlaşıp gaza dönüşmüştü! Tunguska; evrenin (ve doğanın) bir gezegeni yok etmek için her zaman yeryüzüne bir taş çarpmasına (krater bırakmasına) ihtiyaç duymadığını, okyanusları ve ormanları "hiçbir iz bırakmadan, havada patlayan dilsiz bir şok dalgasıyla" da haritadan silebileceğinin kozmik dehşetidir.',
+    questionStem: 'Tunguska Olayı\'nda (Hiroşima\'dan 1000 kat güçlü patlamada) yeryüzünde "hiçbir krater veya meteor izi (kalıntısı)" bulunamaması neyi ispatlamıştır?',
+    options: [
+      'Patlamanın aslında bir göktaşı değil, Sovyetlerin gizlice test ettiği yeraltı nükleer bombaları olduğunu',
+      'Devasa meteorların, yeryüzüne çarpmadan (krater açmadan) kilometrelerce yüksekte "havada sürtünmeyle patlayarak" buharlaşabildiğini ve o görünmez şok dalgasının yeryüzünü hiç iz bırakmadan dümdüz eden bir kıyamete (suikaste) yol açabileceğini',
+      'Sibirya ormanlarındaki ağaçların kök yapısının patlamalara karşı çok esnek ve dayanıklı olduğunu',
+      'Uzaydan gelen radyo dalgalarının sadece ağaçların tepe noktalarını yakarak onları kuruttuğunu'
+    ],
+    correct: 1,
+    explanation: 'Krater olmaması; meteorun yere çarpmadan havada patlayarak buharlaştığını ve o görünmez/izsiz şok dalgasının yeryüzünü dümdüz edecek kadar yıkıcı bir kozmik suikast/kıyamet olabileceğini ispatlamıştır.'
+  },
+  {
+    title: 'Fantom Zaman Hipotezi (Tarihin İllüzyonu)',
+    passage: 'Avrupa tarihine baktığımızda, MS 614 ile 911 yılları arasında mimarinin durduğu, bilimin tamamen karanlığa gömüldüğü (Karanlık Çağlar) ve yazılı belgenin neredeyse hiç olmadığı tuhaf, "boş" bir dönem görürüz. Alman tarihçi Heribert Illig, 1991\'de ortaya attığı "Fantom Zaman Hipotezi" ile bu boşluğa o çıldırtıcı felsefi bombayı bıraktı: "O karanlık çağlar hiçbir zaman yaşanmadı! 614 ile 911 yılları arasındaki 297 yıl, tarihe kasten, sonradan eklenmiş sahte (hayalet) bir zaman dilimidir." Illig\'e göre Kutsal Roma İmparatoru III. Otto ve Papa II. Sylvester, kendi saltanatlarını milenyuma (MS 1000 yılına) denk getirmek ve Büyük Şarlman (Charlemagne) adında tamamen "kurgusal (hiç yaşamamış)" efsanevi bir imparator icat etmek için tarihi masa başında ileri sarmışlar (değiştirmişlerdi). Bu teori (ana akım tarihçilerce şiddetle reddedilse de), insanoğluna o çok güvendiği "Tarih"in; aslında geçmişteki galiplerin, rahiplerin ve kralların masa başında yazıp sildiği (veya eklediği), esnek, kurgusal ve manipüle edilebilir politik bir masaldan ibaret olabileceği paranoyasını yaşatan en sarsıcı düşünce deneyidir.',
+    questionStem: 'Heribert Illig\'in "Fantom Zaman Hipotezi" (297 yıllık sahte tarih uydurulduğu iddiası), kanıtlanmamış olsa bile "Tarih bilimi" hakkında nasıl bir felsefi şüphe (kâbus) doğurur?',
+    options: [
+      'Gelecekteki zaman makinelerinin geçmişe giderek savaşların sonucunu değiştireceği korkusu',
+      'En mutlak ve sarsılmaz (gerçek) sandığımız "Tarihsel Kronolojinin" (zamanın) bile; aslında güç (ve iktidar) sahipleri tarafından kendi siyasi kârları uğruna masa başında rahatça yazılıp silinebilecek esnek ve sahte bir "kurgu (masal)" olabileceği şüphesi',
+      'Orta Çağ\'da yaşamış olan tüm bilim insanlarının aslında gizlice uzaylılar tarafından eğitildiği iddiası',
+      'Eski takvimlerin güneş değil ay hareketlerine göre hesaplanmasının günümüzde küresel ısınmaya neden olduğu'
+    ],
+    correct: 1,
+    explanation: 'Yüzlerce yılın masa başında uydurulmuş olabileceği teorisi (Fantom Zaman); o çok güvendiğimiz "tarihin/zamanın" bile iktidarlar tarafından siyasi çıkar için kolayca yazılıp silinebilen sahte bir kurgu (masal) olabileceği şüphesini/paranoyasını doğurur.'
+  },
+  {
+    title: 'Wow! Sinyali (Kozmik Telefonun Çalması)',
+    passage: '15 Ağustos 1977 gecesi, gökbilimci Jerry Ehman Ohio\'daki "Büyük Kulak" (Big Ear) radyo teleskobunun başında uzayın dondurucu sessizliğini dinliyordu. Birden yazıcıdan dökülen kâğıtta inanılmaz bir veri akışı oldu: "6EQUJ5". Bu, Yay takımyıldızının derinliklerinden gelen, doğal hiçbir gökcismine benzemeyen, dar bantlı ve aşırı güçlü bir radyo sinyaliydi. Tam "72 saniye" sürdü ve aniden kesildi. Ehman heyecandan kâğıdın yanına kırmızı kalemle o meşhur "Wow!" kelimesini yazdı. Dünyadaki tüm antenler anında o noktaya çevrildi. Ancak hiçbir şey bulunamadı. O sinyal bir daha asla, ama asla tekrar etmedi. "Wow! Sinyali", insanoğlunun evrendeki yalnızlık krizine atılmış en acımasız ve gizemli düğümdür: Evrenin sonsuz karanlığından bir anlığına kozmik bir telefon çalmış, biz ahizeyi kaldırmadan saniyeler önce o hat kapanmış ve arayan kişi (veya şey) bizi o sağır edici hiçlikle bir daha uyanmamak üzere ebediyen baş başa bırakmıştır.',
+    questionStem: '1977 yılında alınan 72 saniyelik "Wow! Sinyali"nin bir daha asla tekrarlanmaması, uzay araştırmaları ve insanlık için neyin felsefi/kozmik bir trajedisidir?',
+    options: [
+      'Dünya dışındaki gezegenlerde sadece ilkel bakterilerin yaşadığını kanıtlayan kesin bir verinin',
+      'Radyo dalgalarının dünyanın manyetik alanını delerek ozon tabakasına zarar vermesinin',
+      'Evrenin sonsuz ıssızlığında, zeki bir varlığa ait olabilecek (karanlık ormandan gelen) o tek, kesin ve gürültülü çığlığın (telefonun); sadece bir anlığına duyulup sonra "ebedi bir sessizliğe ve cevapsızlığa (hiçliğe)" gömülmesinin (yalnızlık krizinin) trajedisi',
+      'Sovyetler Birliği\'nin Amerika\'yı korkutmak için uzaydan sahte sinyaller yolladığının'
+    ],
+    correct: 2,
+    explanation: '72 saniye çalan ve bir daha asla tekrar etmeyen o gizemli sinyal; insanın evrendeki yalnızlığında çalan kozmik bir telefonun anında kapanarak bizi tekrar o ebedi ve sağır edici hiçlikle/sessizlikle baş başa bırakmasının trajedisidir.'
+  },
+  {
+    title: 'Tardigratlar (Ölümsüzlüğün Boyutu)',
+    passage: 'Dünyadaki en yenilmez, en yok edilemez (kıyametlerden sağ çıkan) canlı bir aslan veya balina değildir; mikroskop altında sadece yarım milimetre boyunda olan ve su ayısı olarak bilinen sekiz bacaklı "Tardigrat"tır. Bilim insanları bu minicik canavarı -272 derece mutlak soğuğa (uzay boşluğuna), 150 derece kaynar suya, okyanusun en derin noktasındaki basıncın 6 katına ve insana anında ölüm getirecek radyasyonun yüzlerce katına maruz bıraktılar. Sonuç? Tardigrat, vücudundaki suyu tamamen boşaltıp bir cam (kristal) gibi kuruyarak metabolizmasını %0.01\'e indirdi (Kriptobiyoz) ve o ölümcül testlerin hepsinden sağ çıktı! Üzerine su damlatılınca yıllar sonra tekrar uyandı ve yürümeye devam etti. Tardigrat, evrimsel gücün ve hayatta kalmanın o devasa kaslarda, sivri dişlerde veya akılda olmadığını; asıl ölümsüzlüğün küçülmekte, görünmez olmakta ve fırtına anında direnmek yerine "neredeyse ölü taklidi yapıp (kuruyup) durabilmekte" (esneklikte) saklı olduğunu ispatlayan mikroskobik bir tanrıdır.',
+    questionStem: 'Tardigratların (Su ayılarının) zorlu şartlarda gösterdiği "Kriptobiyoz (kuruyup donma)" yeteneği, "güç ve hayatta kalma" algısında neyi yıkar?',
+    options: [
+      'Hayatta kalmak için canlıların her zaman deniz kenarlarında yaşamak zorunda olduğu inancını',
+      'Yenilmezliğin ve gücün; "devasa kaslar, sivri dişler veya saldırganlıkla" ilgili olduğu kibrini yıkarak; asıl ölümsüzlüğün/gücün, fırtına karşısında küçülebilecek (ve neredeyse ölü gibi durup kendini beklemeye alabilecek) o esnek, mikroskobik sabırda ve adaptasyonda olduğunu',
+      'Radyasyonun hücre çekirdeklerini mutasyona uğratarak hayvanları devasa canavarlara dönüştürdüğü teorisini',
+      'Mikroskobik canlıların ömrünün her zaman birkaç saniye olduğu gerçeğini'
+    ],
+    correct: 1,
+    explanation: 'Tardigratların kasla/büyüklükle değil, küçücük kalarak ve kuruyup donarak (esneklikle/Kriptobiyoz) kıyametlerden sağ çıkması; gücün devasa kaslarda değil, uyum sağlamakta ve esneklikte yattığı algısını kanıtlar.'
+  },
+  {
+    title: 'Baader-Meinhof Fenomeni (Zihnin Desen Uydurması)',
+    passage: 'Hayatınızda ilk kez duyduğunuz yeni bir kelimeyi (veya satın aldığınız yeni marka bir arabayı), o günden sonra aniden her yerde, her sokakta ve televizyonda görmeye başladığınızı hissettiniz mi? Sanki evren o kelimeyi sırf size bir "mesaj (işaret)" vermek için her yere serpiştirmiş gibidir. Psikolojide buna "Frekans İllüzyonu" veya "Baader-Meinhof Fenomeni" denir. Aslında o kelime veya araba hep oradaydı, sayıları bir gecede artmadı! Artan şey, beyninizin "algıda seçicilik" mekanizmasıdır. Beynimiz, saniyede gözümüze çarpan milyonlarca önemsiz veriyi çöpe atar; ancak "yeni öğrendiği (ve önem verdiği)" bir şeyi radarına aldığında, onu o kaotik gürültünün içinden cımbızla çekerek bilincimize fırlatır. Bu fenomen, insanoğlunun en tatlı ve en tehlikeli kibridir: Biz evrenin bize gizli mesajlar verdiğini veya mucizeler yolladığını sanırız; oysa biz, kendi beynimizin milyarlarca rastgelelik içinde zorla kendi kendine "desenler (ve sahte anlamlar)" uydurduğu devasa bir yansıma odasında (simülasyonda) yaşıyoruz.',
+    questionStem: 'Baader-Meinhof Fenomeni (Yeni öğrenilen şeyi aniden her yerde görmek), insanın gerçeklik ve "evrensel mesaj" algısı hakkında neyi ispatlar?',
+    options: [
+      'Pazarlama ve reklam şirketlerinin beyin dalgalarımızı okuyarak televizyonlarda bize özel reklamlar (bilinçaltı mesajları) gösterdiğini',
+      'İnsanın evrenden (veya kaderden) "gizli mesajlar/mucizeler" aldığı kibrinin aslında bir yalan olduğunu; bunun beynin rastgelelik ve kaos içinde (algıda seçicilikle) zorla "kendi kendine sahte desenler ve anlamlar ürettiği" bir illüzyon (oyun) olduğunu',
+      'Görme yeteneğinin sadece genç yaşlarda çevresel detaylara dikkat edecek kadar gelişmiş olduğunu',
+      'Yabancı dil öğrenen insanların zamanla kendi ana dillerini konuşmayı unutma tehlikesini'
+    ],
+    correct: 1,
+    explanation: 'Yeni arabayı her yerde görünce "evren bana işaret veriyor" sanmamızın (Baader-Meinhof), aslında beynin algıda seçicilikle kaostan kendi kendine "sahte desenler ve anlamlar (illüzyon)" uydurması olduğu ispatlanır.'
+  },
+  {
+    title: 'Fulguritler (Yıldırımın Fosili)',
+    passage: 'Gökyüzünden yeryüzüne saniyenin binde biri gibi korkunç bir hızla inen, havayı 30.000 dereceye (Güneşin yüzeyinden 5 kat daha sıcak) kadar ısıtan o saf, yıkıcı ve kaotik enerjiye "Yıldırım" deriz. Yıldırım, çöldeki kuma veya toprağa çarptığı an o korkunç enerji, kumu saniyeler içinde eritir, sıvı bir cama dönüştürür ve yerin altına doğru tıpkı bir ağaç kökü gibi dallanarak ilerler. Saniyeler sonra soğuduğunda, toprağın altında o saf kaosun (ve enerjinin) fiziksel şeklini almış, dondurulmuş ve içi boş, camsı, mükemmel heykeller oluşur. Bunlara "Fulgurit" (Taşlaşmış Yıldırım) denir. Fulguritler, doğanın en absürt ve en şiirsel heykeltıraşlık (sanat) eserleridir. Onlar; yakıp yok eden o ölümcül, saniyeler süren ve akıp giden mutlak kaosun; toprak tarafından hapsedilip, donarak (kristalleşerek) zamanın içine "fiziksel, kırılgan ve ebedi bir sanat eseri (anı)" olarak kazındığı o büyülü noktanın ta kendisidir.',
+    questionStem: 'Yazar, Fulguritlerin (Yıldırımın toprağa çarpıp camlaşması) oluşumunu felsefi ve estetik bağlamda nasıl bir "sanatsal/doğal" süreç olarak tasvir etmektedir?',
+    options: [
+      'Güneş ışınlarının çöl kumlarını yavaş yavaş ısıtarak yüzyıllar içinde muazzam cam heykeller yaratması süreci olarak',
+      'Tamamen yıkıcı, yakıcı, saniyelik ve şekilsiz olan "mutlak kaosun (enerjinin)"; doğa tarafından hapsedilip saniyeler içinde donarak (kristalleşerek), sonsuza dek kalıcı, kırılgan ve estetik bir "fiziksel sanat eserine (anıya)" dönüşmesi olarak',
+      'Eski çağlardaki insanların ateşi bulmak için yıldırımları bilerek cam kaplara hapsetme ritüeli olarak',
+      'Kum fırtınalarının topraktaki mineralleri aşındırarak yeraltında su tünelleri açması süreci olarak'
+    ],
+    correct: 1,
+    explanation: 'Yıkıcı, saniyelik ve şekilsiz o korkunç enerjinin (yıldırımın) kuma çarpıp anında donarak bir cam heykele dönüşmesi; kaosun hapsedilip ebedi/fiziksel bir sanat eserine (Fulgurit) dönüşmesi olarak tasvir edilmiştir.'
+  },
+  {
+    title: 'Mincemeat Harekâtı (Tiyatronun Zaferi)',
+    passage: 'İkinci Dünya Savaşı sırasında (1943), İngiliz istihbaratı Sicilya\'yı işgal etmek istiyordu ama Naziler orada devasa bir orduyla bekliyordu. İngilizler, tankla tüfekle değil, tarihin en karanlık ve edebi "yalanıyla" savaşı kazanmaya karar verdiler: "Mincemeat Harekâtı". Bir morgdan, intihar etmiş evsiz ve isimsiz bir adamın cesedini aldılar. Ona "Binbaşı William Martin" adında sahte bir kimlik kartı, sahte aşk mektupları, tiyatro biletleri ve cebine (Sicilya\'ya değil de) Yunanistan\'a saldırılacağını yazan "ÇOK GİZLİ" sahte askeri planlar koydular. Cesedi İspanya kıyılarına (denize) bıraktılar. Naziler cesedi bulup mektupları okuduklarında, bu kusursuz ve detaylı "hayali kurguya" öylesine inandılar ki; koca ordularını Sicilya\'dan çekip yanlış yere gönderdiler! İngilizler Sicilya\'yı rahatça ele geçirdi. Mincemeat Harekâtı; savaşların her zaman çelikle ve kanla değil, insan aklının (ve istihbaratın) kurduğu kusursuz edebi kurguların (yalanların/tiyatronun) gücüyle o en zeki orduları (ve imparatorlukları) bile nasıl kör edip felç edebildiğinin kanıtıdır.',
+    questionStem: 'Mincemeat Harekâtı (Ölü bedene sahte mektuplar konulması), savaş ve strateji tarihinde neyin (hangi gücün) zaferini sembolize eder?',
+    options: [
+      'Deniz kuvvetlerinin hava kuvvetlerinden her zaman daha baskın bir savaş aracı olduğunun',
+      'Savaşların ve zaferlerin her zaman kaba kuvvet (silah ve asker) ile değil; insan aklının kurduğu "detaylı, edebi ve kusursuz kurguların (yalanın/tiyatronun)", düşmanın algısını ve ordularını nasıl manipüle edip felç edebildiğinin (istihbarat zekâsının) zaferini',
+      'Nazilerin aslında savaşmak istemediği için bilerek yanlış bölgelere asker gönderdiğinin',
+      'Kimlik kartlarının ve mektupların o dönemde deniz suyuna dayanıklı mürekkeplerle yazıldığının'
+    ],
+    correct: 1,
+    explanation: 'Ölü bir evsizin cebindeki "sahte aşk mektupları ve planlarla" koca Nazi ordusunun yönünün değiştirilmesi; savaşın topla tüfekle değil, kusursuz bir kurgunun (tiyatronun/yalanın) yarattığı manipülasyonla kazanıldığını sembolize eder.'
+  },
+  {
+    title: 'Çoklu Evrenler ve Everett (Iraksayan Çaresizlik)',
+    passage: 'Kuantum fiziğinde bir atom, ölçüm yapılana kadar "aynı anda" farklı durumlarda (süperpozisyonda) olabilir. Biz baktığımızda dalga fonksiyonu çöker ve tek bir gerçeklik oluşur (Kopenhag yorumu). Ancak fizikçi Hugh Everett 1957\'de bu yoruma isyan etti ve insanı dehşete düşüren "Çoklu Evrenler (Many-Worlds)" teorisini ortaya attı. Everett\'e göre dalga fonksiyonu hiçbir zaman çökmez! Siz hayatınızda bir karar anına geldiğinizde (Örneğin: A kapısından mı, B kapısından mı çıksam?), siz A kapısından çıktığınızda evren o saniye ikiye bölünür! İçinde "B kapısından çıkan" sizin olduğunuz yepyeni, devasa, gerçek ve paralel bir evren yaratılır. Everett\'in bu teorisi, her saniye aldığımız milyonlarca kararla milyarlarca yeni (ve gerçek) evren kopyası yarattığımızı söyler. Bu fiziksel özgürlük gibi görünse de; aslında insanın, omuzlarında "yaptığı (veya yapmadığı) her seçimin sonsuz ağırlığını (ve alternatif kâbusunu)" taşıdığı, varoluşun hiçbir kararının silinemediği o sonsuz, boğucu ve kozmik bir zindandır.',
+    questionStem: 'Hugh Everett\'in "Çoklu Evrenler" (Many-Worlds) yorumu, insanın "seçim ve kararları" bağlamında nasıl bir felsefi ağırlık (ve kâbus) sunar?',
+    options: [
+      'Geçmişte yapılan hataların sadece rüyalarda görülebileceği ve unutulacağı gerçeğini',
+      'Her karar anımızda evrenin ikiye bölünerek o "seçmediğimiz/yapmadığımız" alternatifin de başka bir gerçeklikte yaşamaya devam etmesi; dolayısıyla varoluşumuzun, o sonsuz "yapılmayan seçimlerin" silinemez ve ağır yüküyle dolduğu o boğucu (kozmik) zindanı',
+      'İnsanların sadece A kapısından çıkmayı sevdikleri için B kapısının fiziksel olarak yok olduğunu',
+      'Karar vermenin kuantum dünyasında hiçbir etki yaratmadığını ve kaderin değişmezliğini'
+    ],
+    correct: 1,
+    explanation: 'Seçmediğimiz her ihtimalin (B kapısının) paralel bir evrende yaşamaya devam etmesi; kararlarımızın hiçbir alternatifinin yok olmadığı (sonsuz evrenler yarattığı) o boğucu ve ağır felsefi kâbusu (ağırlığı) sunar.'
+  },
+  {
+    title: 'Carrington Olayı (Güneşin Hapşırığı)',
+    passage: '1 Eylül 1859\'da, gökbilimci Richard Carrington Güneş\'i izlerken Güneş lekelerinin üzerinde devasa, kör edici beyaz bir parlama gördü. O an Güneş kelimenin tam anlamıyla dünyaya doğru hapşırmıştı! Okyanuslar dolusu yüklü plazma (Jeomanyetik Fırtına) saatte milyonlarca kilometre hızla Dünya\'ya çarptı. Olay öylesine şiddetliydi ki, gece vakti Küba\'da ve Hawaii\'de bile gökyüzü kan kırmızısı (kuzey ışıklarıyla) aydınlandı; insanlar sabah oldu sanıp işe gitmeye kalktı! Daha da şok edici olanı; o dönemin tek teknolojisi olan "Telgraf hatları" anında çöktü, fişe takılı olmayan telgraf makineleri bile havadan aldıkları statik elektrikle kendi kendine mesaj göndermeye ve kıvılcım çıkarıp kâğıtları yakmaya başladı! Eğer o 1859 "Carrington Olayı" (Güneş Fırtınası) bugün, bizim cep telefonlarına, uydulara, bankacılık sistemine ve nükleer santrallere bağlı olduğumuz bu modern (kibirli) çağda yaşansaydı; tüm elektrik şebekemiz saniyeler içinde eriyip çöker, dünya ekonomisi buharlaşır ve insanlık sadece birkaç saat içinde (tek bir kurşun atılmadan) Taş Devri\'ne geri dönerdi. Evrenin bize bir kıyamet yaşatması için meteorlara ihtiyacı yoktur; sadece Güneş\'in küçük bir öksürüğü yeterlidir.',
+    questionStem: '1859 Carrington Olayı\'nın (Güneş Fırtınası\'nın) günümüzde yaşanma ihtimali, modern teknolojik çağımız hakkında neyin sarsıcı bir uyarısıdır?',
+    options: [
+      'Güneş panellerinin enerji üretiminde eskisinden daha verimli çalışacağı bir döneme girileceğini',
+      'İnternet şirketlerinin dünyayı yöneten tek otorite haline geleceğini',
+      'Modern çağın övündüğü (ve tamamen bağımlı olduğu) o devasa teknolojik ve ekonomik sistemin; Güneş\'in sıradan bir manyetik patlaması (öksürüğü) karşısında saniyeler içinde eriyip insanlığı anında Taş Devrine döndürebilecek kadar kırılgan ve pamuk ipliğine bağlı olduğu gerçeğini',
+      'Telgraf makinelerinin cep telefonlarından çok daha ileri ve güvenilir bir iletişim aracı olduğunu'
+    ],
+    correct: 2,
+    explanation: '1859\'da telgrafları yakan güneş fırtınasının bugün uyduları ve şebekeleri saniyeler içinde çökerteceği gerçeği; modern teknolojik kibrimizin (sistemimizin) Güneş\'in bir hapşırığıyla Taş Devri\'ne dönecek kadar zayıf ve kırılgan (pamuk ipliğine bağlı) olduğunu uyarır.'
+  },
+  {
+    title: 'Voyager Altın Plağı (Kozmik Şişedeki Mesaj)',
+    passage: '1977 yılında fırlatılan Voyager uzay araçlarının üzerine, astrofizikçi Carl Sagan başkanlığındaki bir ekip tarafından saf altından yapılmış bir "Plak (The Golden Record)" yerleştirildi. Bu plağın içinde Mozart\'ın müziği, yağmurun ve kahkahaların sesi, bir anne öpücüğü ve 55 farklı dilde söylenen "Merhaba" kelimesi kazılıydı. Üzerine de radyoaktif uranyumdan bir saat (ömrünü göstersin diye) ve plağı nasıl çalacaklarına dair bir kullanım kılavuzu (harita) çizilmişti. Voyager, güneş sistemini terk etti ve şu an o dondurucu, sessiz boşlukta saniyede 17 kilometre hızla, milyarlarca yıl sürecek o sonsuz ve yalnız seyahatine devam ediyor. O altın plak, sadece uzaylılara atılmış bir merhaba mesajı değildir; o, güneş patlayıp yeryüzü (insanlık) kül olduktan milyarlarca yıl sonra bile, karanlığın içinde uçmaya devam edecek olan türümüzün en acınası, en kırılgan ve en onurlu varoluş çığlığıdır: "Biz bir zamanlar vardık, biz buradaydık ve biz sevmeyi biliyorduk." O plak, kozmik okyanusa fırlattığımız ve muhtemelen hiç kimsenin açmayacağı o ebedi "şişedeki mesajdır".',
+    questionStem: 'Voyager uzay aracındaki "Altın Plak" (The Golden Record), yazar tarafından salt bir iletişim aracı olmaktan çok, felsefi ve varoluşsal bağlamda neyin metaforu olarak yüceltilmektedir?',
+    options: [
+      'Müziğin (Mozart\'ın) uzaylıların silah sistemlerini bozarak onları sakinleştiren bir frekans olmasının',
+      'İnsanlığın, güneş sistemi yok olduktan (biz öldükten) sonra bile evrenin karanlığında süzülmeye devam edecek olan; "Biz buradaydık ve vardık" demeye çalışan o en kırılgan, hüzünlü ve onurlu "ölümsüzlük (unutulmama) çığlığının/mesajının"',
+      'Altın madeninin uzay boşluğunda oksitlenmeyerek en değerli yatırım aracı olduğunu kanıtlamasının',
+      '55 farklı dilin gelecekte tek bir dünya dili haline geleceğinin (küreselleşmenin) kanıtının'
+    ],
+    correct: 1,
+    explanation: 'Plaktaki müzik ve seslerin, insanlık yok olduktan sonra bile kâinatta gezecek olması; insanın evren karşısındaki o kırılgan, hüzünlü ve varoluşsal "unutulmama (biz buradaydık)" çığlığını (ve ölümsüzlük arzusunu) sembolize eder.'
+  },
+  {
+    title: 'Challenger Faciası ve Feynman\'ın Buzu',
+    passage: '28 Ocak 1986 sabahı, tüm dünyanın canlı yayında izlediği Challenger Uzay Mekiği, fırlatıldıktan sadece 73 saniye sonra gökyüzünde korkunç bir ateş topuna dönüşerek patladı; içindeki yedi astronot parçalanarak öldü. NASA yöneticileri, bunun "öngörülemez, trajik bir kaza" olduğunu söyleyerek olayı örtbas etmeye çalıştılar. Ancak araştırma komisyonunda bulunan dâhi fizikçi Richard Feynman, bürokrasinin bu kibrini canlı yayında yaptığı tek bir "bardak" deneyiyle paramparça etti! Feynman, fırlatma günündeki havanın (sıfırın altında) çok soğuk olduğunu biliyordu. Kameraların önünde, mekiğin yakıt tanklarını birleştiren o ünlü kauçuk "O-Ring" contasını kopardı ve onu "içi buzlu su dolu bir bardağa" soktu. Kauçuk o soğukta esnekliğini anında kaybetti, dondu ve kaskatı kesilerek kırıldı! Feynman o dondurucu cümleyi kurdu: "Doğa kandırılamaz. Halkla ilişkiler (ve siyasi şov) için fizik kurallarını yok sayamazsınız." Challenger patlaması bir teknoloji kazası değildir; yöneticilerin kendi programlarını (kibirlerini) yetiştirmek uğruna, mühendislerin "Hava çok soğuk, contalar donar!" şeklindeki çığlıklarını susturup, yedi insanı göz göre göre ölüme yolladığı (bürokrasinin fiziği kandırma çabası) bir cinayettir.',
+    questionStem: 'Richard Feynman\'ın Challenger faciasını açıklarken "buzlu su bardağındaki conta (O-Ring)" deneyini yapması, NASA\'nın (bürokrasinin) hangi ölümcül yalanını ifşa etmiştir?',
+    options: [
+      'Roket yakıtının donduğunda yanıcı özelliğini kaybederek patlamayı önlediği yalanını',
+      'Faciayı "öngörülemez bir kaza" gibi gösteren yöneticilerin; aslında halkla ilişkiler ve siyasi şov uğruna, mühendislerin "soğuk havada kauçuk esnemez (donar)" uyarılarını hiçe sayarak doğanın (fiziğin) kurallarını kandırmaya çalıştığı (ve cinayet işlediği) yalanını',
+      'Uzay mekiklerinin hiçbir zaman atmosferden çıkamayacağı yönündeki komplo teorisini',
+      'Kauçuk malzemenin sadece yaz aylarında eritilerek şekillendirilebileceği yalanını'
+    ],
+    correct: 1,
+    explanation: 'Feynman\'ın buzlu suyla contanın donduğunu (esnekliğini kaybettiğini) ispatlaması; NASA\'nın faciayı "öngörülemez kaza" diyerek örtbas etmeye çalıştığı yalanını yıkarak, bürokrasinin kasten fiziği/doğayı hiçe saydığını ifşa etmiştir.'
+  },
+  {
+    title: 'Nocebo Etkisi (Zihnin Ölümcül Laneti)',
+    passage: 'Şeker hapı yutarak (inançla) iyileşen insanların mucizesine "Plasebo" deriz. Peki ya zihnin bunun tam tersini yapabilme, yani "kendini inandırarak kendi kendini öldürebilme" gücüne ne deriz? Buna "Nocebo Etkisi" denir. 1970\'lerde Sam Shoeman adında bir adama ileri derece karaciğer kanseri teşhisi kondu ve doktorlar ona "Sadece birkaç ay ömrün kaldı" dedi. Adam hastaneye yattı, günden güne eridi, ruhu çöktü ve tam doktorların söylediği o ay (beklendiği gibi) öldü. Ancak işin dehşet verici kısmı otopside ortaya çıktı: Sam\'in karaciğerindeki tümör o kadar küçüktü ki, adamı öldürmesi bir yana, zarar vermesi bile imkânsızdı! Sam\'i kanser hücreleri öldürmemişti; onu öldüren şey, doktorların o "Kesinlikle öleceksin!" sözünün beynine bir lanet (virüs) gibi kazınması ve zihninin kendi bedenine, organlarına (ve kalbine) o "Ölüm Emrini (Nocebo)" göndererek fişi çekmesiydi. İnsan beyni sadece en büyük eczane (şifa) değil; aynı zamanda, kelimelerin ve inancın kurşun gibi işlediği en zehirli ve kendi kendini vuran en keskin suikastçıdır.',
+    questionStem: 'Sam Shoeman\'ın (küçük bir tümöre rağmen) doktorun "öleceksin" sözüyle gerçekten ölmesi (Nocebo Etkisi), zihnin insan bedeni üzerindeki hangi korkunç (karanlık) gücünü ispatlar?',
+    options: [
+      'Kanser hastalıklarının her zaman ilk evrede kalbi durdurarak öldürdüğü gerçeğini',
+      'İnsan zihninin (inancın) sadece iyileştirici (Plasebo) bir güç olmakla kalmayıp; aynı zamanda dışarıdan gelen negatif bir telkine (korkuya/söze) kesin olarak inandığında, kendi bedensel fonksiyonlarını kapatarak kendini zehirleyebilecek (ve öldürebilecek) kadar mutlak bir "suikastçı (Nocebo)" olabileceğini',
+      'Otopside kullanılan kimyasalların tümörleri küçülterek adli tıp uzmanlarını yanılttığını',
+      'Karaciğer yetmezliğinin hiçbir zaman ölümcül bir hastalık olmadığı yönündeki tezi'
+    ],
+    correct: 1,
+    explanation: 'Adamı tümörün değil, "öleceksin" inancının (Nocebo) öldürmesi; zihnin inandığı yalanı bedene uygulayarak kendini zehirleyip öldürebilen (suikastçı) korkunç bir güce sahip olduğunu ispatlar.'
+  },
+  {
+    title: 'Trepannasyon (Kafatasını Delmek)',
+    passage: 'Modern tıp, beyin ameliyatlarını mikroskobik lazerler ve anesteziyle yapar. Ancak Peru, Fransa ve Afrika\'daki 10.000 yıllık Neolitik çağ (Taş Devri) mezarlarını kazan arkeologlar, kan donduran bir gerçeği gün yüzüne çıkardı. İskeletlerin kafataslarında (kusursuz şekilde ve kasten) açılmış daire şeklinde delikler vardı: "Trepannasyon" (Baş Delgi Ameliyatı). Dahası, kemiklerin kenarlarındaki iyileşme izlerinden anlaşılıyordu ki, o insanlar anestezi ve antibiyotik olmadan "canlı canlı" kafaları delindikten sonra yıllarca (hayatta kalarak) o delikle yaşamaya devam etmişlerdi! Peki neden? Eski çağ şamanları (veya o dönemin cerrahları), epilepsi, migren veya şizofreni krizlerini biyolojik bir hastalık değil; bedeni ele geçiren "kötü ruhların (iblislerin)" bir isyanı olarak görüyordu. Kafatasına o deliği açmak, içeride sıkışan o kötü ruha "dışarı uçup kaçması için" bir pencere (baca) açma ritüeliydi. Trepannasyon, sadece ilkel ve vahşi bir cerrahi (deney) değil; aklın o en ilkel çağlarda bile, çaresizlik (delilik ve hastalık) karşısında "bir şeyler yapmalıyım!" diyen o cesur, çırpınan ve (taştan aletlerle bile) doğaya müdahale etmeye çalışan kanlı felsefi inadıdır.',
+    questionStem: 'Taş Devri\'nde yapılan "Trepannasyon" (Kafatasını Delme) işlemlerinin temelindeki ilkel (ve psikolojik/dini) gerekçe parçada nasıl açıklanmıştır?',
+    options: [
+      'İnsan beyninin güneş ışığı aldığında daha fazla enerji (zekâ) ürettiğine dair ilkel bir astronomi inancı',
+      'Savaşlarda alınan kılıç darbelerinin yarattığı beyin kanamalarını akıtmak için yapılan tıbbi ve estetik bir müdahale',
+      'Migren veya delilik gibi zihinsel hastalıkların biyolojik değil "kötü ruhların (iblislerin) ele geçirmesi" olarak algılanması ve o kafatası deliğinin, içerideki kötü ruha "dışarı çıkması için açılan ritüelistik bir baca (kaçış penceresi)" olması',
+      'Eski çağlardaki insanların saç ekimi ve kafatası şekillendirme (güzellik) modası'
+    ],
+    correct: 2,
+    explanation: 'Delik açmanın tıbbi/estetik değil, hastalığı "kötü ruh" sanıp onun bedenden çıkıp uçması için bir "baca/pencere" (dini/ritüelistik bir kaçış) açma amacıyla yapıldığı açıkça vurgulanmıştır.'
+  }
+];
+
+export const bilimParagrafSorulari44: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_44.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_44[idx];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-bilim44-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
 // paragrafTests.ts dosyasının hata vermemesi için iki listeyi birleştirip eski adıyla dışa aktarıyoruz:
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari,
@@ -11741,7 +12018,8 @@ export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...bilimParagrafSorulari40,
   ...bilimParagrafSorulari41,
   ...felsefeParagrafSorulari42,
-  ...felsefeParagrafSorulari43
+  ...felsefeParagrafSorulari43,
+  ...bilimParagrafSorulari44
   
   
   
