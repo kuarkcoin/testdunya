@@ -10866,6 +10866,283 @@ export const bilimParagrafSorulari39: BilimParagrafQuestion[] = Array.from({ len
     explanation: `${theme.explanation} (Soru ${qNo})`,
   };
 });
+const PARAGRAPH_THEMES_40 = [
+  {
+    title: 'Omelas\'ı Terk Edenler (Faydacılığın Kâbusu)',
+    passage: 'Ursula K. Le Guin\'in efsanevi öyküsü "Omelas\'ı Terk Edenler"de, hastalık, savaş ve kederin olmadığı, herkesin sonsuz bir mutluluk ve refah içinde yaşadığı kusursuz bir ütopya anlatılır. Ancak bu cennetin kan donduran bir kuralı vardır: Tüm şehrin bu mutlak mutluluğunun devam edebilmesi için, karanlık bir bodrum katında, pislik içinde, tek bir masum çocuğun sonsuza dek işkence görmesi ve aç bırakılması şarttır! O çocuğu kurtarmak, tüm şehrin cennetini yıkmak demektir. Şehir halkı bu gerçeği bilir; kimi ağlar, kimi kendini kandırarak kabullenir. Ancak bazıları bu ahlaksız mutluluğa dayanamayıp şehri (Omelas\'ı) sessizce terk eder ve bilinmeze doğru yürürler. Bu hikâye, "Çoğunluğun iyiliği için azınlığı feda etmek mubahtır" diyen o soğuk Faydacılık (Utilitarianism) felsefesinin suratına atılmış en sert tokattır. Tek bir masumun kanı (ve acısı) üzerine inşa edilen hiçbir refah, ahlaki bir cennet değil; sadece süslenmiş bir cehennemdir.',
+    questionStem: 'Le Guin\'in "Omelas\'ı Terk Edenler" öyküsü, hangi siyasi ve ahlaki felsefeyi (ve toplum yapısını) sert bir şekilde eleştirmektedir?',
+    options: [
+      'Toplumların zenginleştikçe sanata ve felsefeye daha az zaman ayırmasını',
+      'Bir ülkenin gelişmesi için sadece genç nüfusa yatırım yapılması gerektiğini',
+      '"Çoğunluğun refahı ve mutluluğu uğruna, bir masumun (azınlığın) acı çekmesini ve feda edilmesini meşru kılan" o faydacı (utilitarian) ve ahlaksız sistemi',
+      'Karanlık bodrum katlarının insan sağlığı üzerindeki fiziksel zararlarını'
+    ],
+    correct: 2,
+    explanation: 'Şehrin mutlak mutluluğunun tek bir çocuğun işkence görmesine bağlanması; çoğunluğun faydası için masum bir azınlığın feda edilmesini meşru gören o "faydacı" ahlaksızlığı (sistemi) eleştirir.'
+  },
+  {
+    title: 'Piyangocu (Geleneklerin Vahşeti)',
+    passage: 'Shirley Jackson\'ın 1948\'de yayımlanan "Piyangocu" (The Lottery) adlı öyküsünde, güneşli ve huzurlu bir Amerikan kasabasındaki insanlar, her yıl haziran ayında neşeyle meydanda toplanıp bir piyango çekerler. Herkes bunun sıradan bir kutlama olduğunu sanır. Ta ki kurayı çeken (kazanan!) o zavallı kadının etrafı bir anda komşuları, arkadaşları ve hatta kendi çocukları tarafından sarılana kadar. Kasaba halkı, sırf "yıllardır süregelen bir gelenek" olduğu için (ve mısır hasadının iyi geçeceğine inandıkları için), kurayı çeken o masum kadını acımasızca taşlayarak öldürür! Öykü yayımlandığında tüm Amerika şoka girer. Jackson\'ın bu şaheseri; toplumların, kökenini ve mantığını bilmedikleri "karanlık geleneklere" (ve kör inançlara) sırf "hep böyle yapılıyordu" diyerek nasıl vahşice ve şuursuzca itaat edebildiklerinin (sürü psikolojisinin) en kanlı kanıtıdır.',
+    questionStem: '"Piyangocu" öyküsünde (kazananın taşlanarak öldürülmesi ritüeli), insan doğası ve toplum hakkında neyin eleştirisi yapılmaktadır?',
+    options: [
+      'Şans oyunlarının (piyango) köylüleri ekonomik olarak fakirleştirmesinin',
+      'Tarım toplumlarında mısır hasadının çok zor ve stresli bir iş olmasının',
+      'Sırf "yüzyıllardır süren bir gelenek" (adet) olduğu için, toplumların aklını ve vicdanını kaybederek, en vahşi ve mantıksız cinayetleri bile körü körüne (ve neşeyle) işleyebilmesi (sürü kibrinin) eleştirisi',
+      'Köy meydanlarının siyasi toplantılar için çok dar ve güvensiz olduğu gerçeğinin'
+    ],
+    correct: 2,
+    explanation: 'Hasat için her yıl birini taşlamaları; aklı devreden çıkarıp sırf "gelenek" diye en akıl dışı vahşetlere körü körüne itaat eden o sürü psikolojisinin eleştirisidir.'
+  },
+  {
+    title: 'Gammaz Yürek (Suçluluğun Çığlığı)',
+    passage: 'Edgar Allan Poe\'nun "Gammaz Yürek" (The Tell-Tale Heart) adlı kült öyküsünde, ana karakter birlikte yaşadığı yaşlı adamı (onun cam gibi donuk gözünden nefret ettiği için) kusursuz bir planla öldürür. Cesedi parçalayıp odanın ahşap zemin tahtalarının altına saklar. Kendinden çok emindir, hiçbir delil bırakmamıştır. Polisler gelip evde arama yaparken, katil onlara neşeyle çay ikram eder. Ancak aniden, zeminin altından boğuk bir ritim (güm... güm... güm...) duymaya başlar. Polisler hiçbir şey duymaz. Ses giderek artar, dayanılmaz bir gürültüye (sağır edici bir kalp atışına) dönüşür. Katil çıldırır; o sesin ölen adamın kalbi olduğuna inanarak yerleri söker ve polislere ağlayarak cinayeti itiraf eder! Oysa atan şey adamın kalbi değil, katilin kendi beyninin içindeki o ezici "suçluluk duygusudur". Vicdan, fiziksel kanıtları yok etseniz bile, zihnin içinden feryat ederek insanı çıldırtan ve kendi kendini ele vermeye mahkûm eden en kusursuz dedektiftir.',
+    questionStem: 'Edgar Allan Poe\'nun "Gammaz Yürek" öyküsünde duyulan (ve katili delirten) o kalp atışı sesi, psikolojik olarak neyi sembolize etmektedir?',
+    options: [
+      'Polislerin eve gelirken yanlarında getirdikleri gizli bir yalan makinesi cihazını',
+      'Ahşap evlerin zeminlerinden gelen doğal esneme ve çürüme seslerini',
+      'Cinayetin fiziksel kanıtları (delilleri) yok edilse bile, insanın asla susturamayacağı o devasa içsel yargıcını; yani "vicdan azabını ve suçluluk duygusunun" zihinde yarattığı o sağır edici ve çıldırtıcı yankıyı',
+      'Kurbanın aslında ölmemiş olup tahtaların altından yardım istemeye çalışmasını'
+    ],
+    correct: 2,
+    explanation: 'Polisin duymadığı ama katili çıldırtan o kalp sesi; fiziksel kanıt yok edilse de insanın kendi içindeki o bastırılamaz vicdan azabını (suçluluk hissini) ve zihinsel çöküşü sembolize eder.'
+  },
+  {
+    title: 'İl Braghettone (Ahlak Kibrinin Sansürü)',
+    passage: 'Rönesans dehası Michelangelo, Vatikan\'daki Sistine Şapeli\'nin duvarına o muazzam "Kıyamet Günü" freskini çizdiğinde, tablodaki yüzlerce figür (Azizler dahil) çırılçıplaktı. Michelangelo için bu çıplaklık, insanın Tanrı karşısındaki saflığını, masumiyetini ve etin ruhsal doğasını temsil ediyordu. Ancak Papa ve dönemin muhafazakâr kilise yetkilileri bu şaheseri "iğrenç, ahlaksız ve genelevlere layık" bularak dehşete düştüler. Michelangelo öldükten hemen sonra, Daniele da Volterra adında bir ressam kiralandı. Görevi, o eşsiz tablodaki tüm figürlerin mahrem yerlerine fırçayla bezler, yapraklar ve "donlar" çizmektir! Volterra bu yüzden tarihe "İl Braghettone" (Doncu/Pantoloncu) adıyla alay konusu olarak geçmiştir. Bu utanç verici olay; otoritenin o sığ ve yobaz ahlak kibrinin, insanın kendi doğasından (kendi bedeninden) duyduğu o hastalıklı utancı bastırmak uğruna, dünyanın en büyük sanat eserine bile nasıl vandalca (sansürle) tecavüz edebildiğinin tarihi kanıtıdır.',
+    questionStem: 'Michelangelo\'nun eserine sonradan "kıyafet/don" çizilmesi olayı (İl Braghettone), sanat ve otorite ilişkisi hakkında neyin trajik (ve komik) bir eleştirisidir?',
+    options: [
+      'Soğuk kış aylarında kilisedeki fresklerin nemden korunması gerektiğinin',
+      'Sanatın, doğanın (bedenin) o saf ve çıplak hakikatini resmetmesine karşılık; otoritenin sığ, şekilci ve hastalıklı bir "ahlak/utanç kibriyle" o sanata kaba bir şekilde müdahale edip onu sansürlemesinin (vandalizminin)',
+      'Michelangelo\'nun aslında insan anatomisini çizerken çok büyük oran hataları yapmış olmasının',
+      'Rönesans dönemi kumaş ve tekstil modasının hızla gelişerek resim sanatına yön vermesinin'
+    ],
+    correct: 1,
+    explanation: 'Saf çıplaklığın üzerine otorite emriyle kasten don (bez) çizilmesi; sığ bir ahlak kibrinin ve bedenden duyulan utancın, sanata uyguladığı o vandalca sansürü (ve ikiyüzlülüğü) eleştirir.'
+  },
+  {
+    title: 'Galler Prensi\'nin Günah Keçisi (Whipping Boy)',
+    passage: 'Orta Çağ ve Rönesans İngiltere\'sinde, kralların mutlak (ilahi) bir güce sahip olduğuna inanılırdı. Bu yüzden, genç bir veliaht prens yaramazlık yaptığında veya dersini çalışmadığında, öğretmenlerinin veya görevlilerin onu dövmesi, tokatlaması (kraliyet kanına dokunması) kesinlikle yasaktı! Peki disiplin nasıl sağlanacaktı? Akılalmaz bir riyakârlıkla: "Whipping Boy" (Günah Keçisi / Şamar Oğlanı) adı verilen yoksul veya soylu olmayan bir çocuk, prensle birlikte büyütülürdü. Prens bir hata yaptığında, prensin gözleri önünde o masum "Şamar Oğlanı" kırbaçlanırdı! Ceza sistemi, prensin arkadaşı acı çekerken vicdan azabı duyup uslanacağı (empati yapacağı) varsayımı üzerine kuruluydu. Bu uygulama, adaletin ve bedel ödemenin hiçbir zaman "eşit" olmadığını; gücün ve statünün, kendi işlediği suçun acısını (cezasını) bile gözünü kırpmadan en alttakine (masum olana) yüklediği o sınıfsal kibrin en iğrenç icadıdır.',
+    questionStem: '"Şamar Oğlanı (Whipping Boy)" uygulaması, aristokrasinin "adalet ve sorumluluk" anlayışına dair hangi ikiyüzlülüğü göz önüne sermektedir?',
+    options: [
+      'Prenslerin eğitimlerinde fiziksel cezanın öğrenmeyi hızlandırdığına dair bilimsel inancı',
+      'Güç ve statü sahibi olanların (kraliyetin), kendi işledikleri hataların bedelini (acıları ve cezaları) bile asla kendilerinin ödemeyip, bu yükü tamamen masum ve güçsüz alt sınıflara aktaran o dokunulmaz (sınıfsal) ikiyüzlülüğünü',
+      'Çocukların saraylarda birbirleriyle rekabet ederek daha hırslı yetişmelerini',
+      'İngiltere\'de fakir ailelerin çocuklarının sarayda daha iyi beslenme imkânı bulduğunu'
+    ],
+    correct: 2,
+    explanation: 'Prensin suçu için masum çocuğun dövülmesi; otoritenin/zenginin kendi hatasının bedelini bile güçsüzlere (masumlara) ödeten o dokunulmaz ve riyakâr sınıfsal kibrini ifşa eder.'
+  },
+  {
+    title: 'Roma\'nın Kurşun Zehirlenmesi (Lüksün İntiharı)',
+    passage: 'Roma İmparatorluğu\'nun devasa su kemerleri mühendisliğin zirvesiydi. Ancak elit (zengin) Romalılar, o su borularını yaparken demir veya taş yerine, kolay işlenebilen "Kurşun" (Plumbum) madenini kullandılar. Sadece bu kadarla kalmadılar; şaraplarını daha "tatlı" yapmak, yemeklerine lezzet katmak ve kozmetik ürünlerini beyazlatmak için kurşun tozunu (sapa) çılgınca tükettiler. Kurşun, ağır ve sinsi bir nöro-toksindi. Yıllar boyunca o zehirli suyu içen, o tatlı şarabı yudumlayan elit tabaka (imparatorlar, senatörler ve generaller) yavaş yavaş sinir sistemlerini kaybettiler. Kısırlık, delilik (paranoya) ve şiddetli bunamalar baş gösterdi. Caligula ve Nero gibi imparatorların o akıl almaz cinnetleri tesadüf değildi. Dünyanın o yenilmez imparatorluğu; kılıçlarla veya dış düşmanlarla değil, bizzat o çok övündüğü kendi lüksü, damak tadı ve kibri (kurşunu) tarafından içeriden (sessiz bir hücresel intiharla) çürütülmüştür.',
+    questionStem: 'Roma İmparatorluğu\'nun çöküşünde rol oynayan "Kurşun Zehirlenmesi" olgusu, medeniyetlerin yok oluşu hakkında nasıl felsefi bir metafor sunar?',
+    options: [
+      'Dışarıdan gelen barbar saldırılarının Roma ordularını savaş meydanlarında yok etmesi',
+      'Şarap ve alkol tüketiminin ahlaki çöküntü yaratarak dini inançları zayıflatması',
+      'En yenilmez görünen imparatorlukların (ve medeniyetlerin); dış düşmanlar tarafından değil, bizzat "kendi lüksleri, şımarıklıkları ve (kurşun gibi sinsi) kibirleri" tarafından içeriden, yavaş yavaş ve zihinsel bir çürüme (sessiz intihar) ile yıkılabileceği',
+      'Kurşun madeninin yeraltından çıkarılmasının o dönemde büyük depremleri tetiklemesi'
+    ],
+    correct: 2,
+    explanation: 'Lüks ve tat uğruna kurşun kullanıp delirmeleri; yenilmez medeniyetlerin dışarıdan değil, bizzat kendi şımarık lüksleri ve kibirleriyle içeriden sessizce zehirlenip çürüyebileceğinin metaforudur.'
+  },
+  {
+    title: 'Mikro İfadeler (Bedenin Dürüstlüğü)',
+    passage: 'İnsanoğlu, yalan söylemek (ve gerçek niyetini gizlemek) konusunda binlerce yıllık muazzam bir evrimsel yeteneğe sahiptir. Mükemmel bir ses tonuyla gülümseyebilir, yemin edebilir. Ancak psikolog Paul Ekman\'ın "Mikro İfadeler" (Microexpressions) üzerine yaptığı çalışmalar, bedenin o kusursuz ihanetini ortaya koydu. Bir insan kasten yalan söylediğinde veya hissettiği bir duyguyu (öfkeyi/tiksintiyi) zorla bastırdığında; yüzündeki kaslar "saniyenin yirmi beşte biri" (1/25) kadar kısa bir süreliğine o bastırılan asıl duyguyu istemsizce dışa vurur (yüzde minik bir spazm/asimetri oluşur) ve sonra hemen o sahte maskeyi geri takar. Ekman\'ın keşfi felsefeyi ürpertir: Dilimiz ne kadar usta bir yalancı olursa olsun; bedenimiz, evrimsel reflekslerimiz ve kaslarımız o yalanı söylemeyi reddeden, hakikati anında (mikro saniyelerde) dışarı sızdıran acımasız ve dürüst birer isyancıdır.',
+    questionStem: 'Paul Ekman\'ın "Mikro İfadeler" keşfi, insan psikolojisindeki hangi biyolojik (ve dürüst) mekanizmayı ifşa eder?',
+    options: [
+      'Sürekli yalan söyleyen insanların zamanla çene kaslarında kalıcı felçler yaşadığını',
+      'İnsanın dili ve aklı ne kadar profesyonel bir yalan kurgularsa kurgulasın; bedenin (ve yüz kaslarının), saniyenin çok küçük bir diliminde bile o sahte maskeyi yırtarak bastırılan asıl gerçeği (hakikati) istemsizce dışa vurma (isyankâr dürüstlüğü) refleksini',
+      'İnsanların sadece öfke anında gözlerini kırpmadan uzun süre sabit bakabildiğini',
+      'Sözlü iletişimin beden dilinden çok daha inandırıcı ve güçlü bir ikna yöntemi olduğunu'
+    ],
+    correct: 1,
+    explanation: 'Saniyenin 1/25\'inde yüzün asıl duyguyu sızdırması; dil yalan söylese de, bedenin ve kasların yalan söylemeyi reddedip bastırılan hakikati sızdıran isyankâr ve dürüst bir mekanizma olduğunu ispatlar.'
+  },
+  {
+    title: 'Citigroup Center Krizi (Mimarın Erdemi)',
+    passage: '1970\'lerde New York\'ta inşa edilen Citigroup Center, köşeleri boşlukta olan ve ortasındaki dört devasa sütun üzerinde yükselen dâhiyane bir gökdelendi. Binanın mimarı William LeMessurier, mühendislik harikasıyla övünüyordu. Ancak inşaat bittikten sonra bir öğrencinin sorusu üzerine hesaplamaları tekrar gözden geçirdiğinde kanı dondu: Rüzgâr tam çaprazdan vurursa bina kâğıt gibi yıkılacak ve binlerce insan ölecekti! Olayı gizleyebilirdi; ancak o, hapse girmeyi ve tüm kariyerinin bitmesini göze alarak bu ölümcül hatayı itiraf etti. Polisler fırtına anında tahliye planları yaparken; geceleri hiç kimse fark etmeden, kaynakçılar binanın iskeletini gizlice çelik levhalarla onardılar ve binayı yıkılmaktan kurtardılar. Citigroup krizi; hatayı örtbas edip binlerce insanın kanına giren o sıradan (bencil) kibirle; kendi hayatını yıkmayı göze alarak hatasını itiraf eden ve felaketi durduran o "üstün ahlaki erdemin (sorumluluğun)" mimari anıtıdır.',
+    questionStem: 'Mimar LeMessurier\'in Citigroup Center gökdelenindeki hatasını itiraf edip düzeltmesi olayı, hangi ahlaki kavramın zirvesi (timsali) olarak sunulur?',
+    options: [
+      'Sadece rüzgâr hesaplamalarını bilen mühendislerin gökdelen inşa etmesi gerektiğinin',
+      'Kişisel kibrini, itibarını ve kariyerini (bedelini) hiçe sayarak; kendi yaptığı ölümcül bir hatayı örtbas etmeyip itiraf etmenin ve binlerce hayatı kurtarmak için harekete geçmenin (sorumluluk ve dürüstlük erdeminin)',
+      'Öğrencilerin tecrübeli mimarlardan her zaman daha zeki ve yetenekli olduğunun',
+      'Çelik levhaların beton kolonlardan çok daha estetik bir mimari sunduğunun'
+    ],
+    correct: 1,
+    explanation: 'Mimarın kariyerini bitirme pahasına ölümcül hatasını gizlemeyip itiraf etmesi ve binayı onarması; kibrin yenildiği, sorumluluğun ve ahlaki erdemin (dürüstlüğün) zirvesi olarak sunulur.'
+  },
+  {
+    title: 'Kar Leoparlarının Yalnızlığı (İzolasyon Stratejisi)',
+    passage: 'Dünyanın en yüksek, en soğuk ve en ıssız bölgelerinde (Himalayalar ve Tibet dağlarında) yaşayan Kar Leoparları, doğanın en gizemli kedi türüdür. Onlar "hayalet kediler" olarak bilinir. Ancak onları efsanevi yapan şey renkleri değil, aralarındaki o ürkütücü mesafedir. Koca bir dağ silsilesinde bir Kar Leoparı, diğer bir Kar Leoparı ile karşılaşmamak için kendisine yüzlerce kilometrekarelik devasa bir alan çizer. Birbirlerini görmemek, koklamamak ve temas etmemek için aşırı bir titizlik gösterirler. İnsanoğlu bu durumu "hüzünlü bir yalnızlık" olarak algılar. Oysa o çetin zirvelerde kaynaklar öylesine kıttır ki; kalabalıklaşmak, sosyalleşmek ve bir araya gelmek onlar için dostluk değil, anında açlık ve ölüm (felaket) demektir. Kar Leoparı bize şunu anlatır: Doğada izolasyon (yalnızlık) her zaman bir ceza veya depresyon değildir; bazen o, en acımasız ve kıt şartlarda hayatta kalabilmek (varoluşu sürdürmek) için seçilmiş en asil, en zeki ve en zorunlu hayatta kalma stratejisidir.',
+    questionStem: 'Kar Leoparlarının birbirlerinden devasa mesafelerle uzak durması (yalnızlığı), insan merkezci "sosyalleşme" algısına nasıl bir evrimsel itiraz (farklılık) sunar?',
+    options: [
+      'Dağlık bölgelerde yaşayan hayvanların ses tellerinin gelişmediği için iletişim kuramadıklarına',
+      'Yalnızlığın (izolasyonun) her zaman hüzünlü bir psikolojik ceza (hastalık) olduğu inancını yıkarak; kaynakların kıt olduğu acımasız ortamlarda yalnızlığın bizzat "zeki ve zorunlu bir hayatta kalma (varoluş) stratejisi" olduğuna',
+      'Soğuk iklimlerde yaşayan kedigillerin kürklerinin sosyalleşmeye engel olacak kadar kalın olduğuna',
+      'Kar leoparlarının insanları gördüklerinde onlara saldırmak yerine kaçtığına'
+    ],
+    correct: 1,
+    explanation: 'İnsanın yalnızlığı "hüzün/ceza" sanmasına karşı, leoparların kıtlıkta açlıktan ölmemek için (bilinçli) izole olması; yalnızlığın doğada aslında zeki ve zorunlu bir hayatta kalma stratejisi olduğunu gösterir.'
+  },
+  {
+    title: 'Sinekkuşu Metabolizması (Biyolojik Kölelik)',
+    passage: 'Bir Sinekkuşu (Hummingbird) havada asılı kalırken saniyede 80 kez kanat çırpar ve kalbi dakikada 1200 kez atar. Bu, doğadaki en büyüleyici, en zarif ve en estetik uçuş şovudur. Ancak bu muazzam hızın arkasında korkunç bir "biyolojik zindan" yatar. Sinekkuşunun metabolizması o kadar hızlıdır ki, eğer birkaç saat boyunca aralıksız olarak çiçeklerden nektar (şeker) içmezse, enerjisi anında tükenir ve açlıktan (veya donarak) ölür. Uçuşundaki o müthiş özgürlük aslında devasa bir illüzyondur. O, doğanın gökyüzündeki serserisi değil; kendi vücudunun (kalbinin) bitmek bilmez enerji talebine boyun eğmiş, saniye saniye yiyecek bulmak zorunda olan ve en ufak bir dinlenmede ölümle burun buruna gelen "kendi hızının ve mükemmelliğinin en çaresiz kölesidir".',
+    questionStem: 'Sinekkuşunun saniyede 80 kez kanat çırpan o estetik uçuşu, biyolojik ve felsefi olarak neyin trajedisini barındırır?',
+    options: [
+      'Çiçek nektarlarının kuşlar için yeterince besleyici ve doyurucu olmadığı gerçeğini',
+      'Dışarıdan muazzam bir hız, zarafet ve özgürlük gibi görünen o mükemmelliğin; aslında canlının hayatta kalmak için (dinlenmeden) sürekli enerji bulmak zorunda olduğu yorucu ve acımasız bir "biyolojik kölelik (zindan)" olmasını',
+      'Kuşların diğer havada asılı kalan böceklere oranla çok daha uzun bir ömre sahip olmasını',
+      'Sinekkuşlarının kanat yapılarının aerodinamik kurallara tamamen aykırı olmasını'
+    ],
+    correct: 1,
+    explanation: 'Dışarıdan özgür ve zarif görünen o korkunç hızın, aslında kuşu saat başı nektar bulmaya (durursa ölmeye) mecbur bırakan amansız bir "biyolojik kölelik" (trajedi) olduğu vurgulanır.'
+  },
+  {
+    title: 'Bali Tapınak Maymunları (Şantaj Ekonomisi)',
+    passage: 'Endonezya\'nın Bali adasındaki Uluwatu Tapınağı\'nda yaşayan Makak maymunları, bilim dünyasını şoka sokan bir "suç örgütü" (ekonomi) modeli geliştirmişlerdir. Bu maymunlar, tapınağı ziyarete gelen turistlerin kafalarındaki güneş gözlüklerini, kameralarını veya şapkalarını büyük bir ustalıkla (ve çeteleşerek) çalarlar. Ancak o eşyalarla kaçmazlar! Bir duvarın üzerine çıkıp beklerler. Tapınak görevlileri (veya turist) gelip onlara muz, fıstık veya yumurta uzattığında, "takası (fidyeyi)" kabul eder ve o pahalı gözlüğü (eşyayı) yere bırakırlar. Eğer verilen yemeği beğenmezlerse (ucuz bulurlarsa) gözlüğü geri vermez, daha kaliteli bir yiyecek (rüşvet) talep ederler! Maymunların bu davranışı, "şantaj, fidye ve takas" gibi son derece karmaşık, soyut ve ahlak dışı sanılan o (sözde) insani ekonomik kurguların; aslında evrimsel olarak doğanın o çıkarcı ve zeki primat zihninde ne kadar organik bir şekilde filizlenebildiğini (hayvani mafyayı) gösterir.',
+    questionStem: 'Bali Tapınağı\'ndaki maymunların turistlerin gözlüklerini çalıp yemek karşılığı (fidye ile) geri vermesi, hayvan davranışları (ve ekonomi) hakkında neyi ifşa eder?',
+    options: [
+      'Güneş gözlüklerinin camlarının maymunların gözlerine zarar verdiği için onları kırmaya çalışmaları',
+      'Ormanlık alanlardaki meyve ağaçlarının azalması nedeniyle maymunların şehirlere göç etmesini',
+      '"Şantaj, rehin alma ve takas (ekonomik pazarlık)" gibi karmaşık ve sadece insana özgü (ahlaksız) sanılan soyut zihinsel modellerin; vahşi doğadaki primatlar tarafından da organize bir şekilde öğrenilip kullanılabildiği (hayvani suç zekâsı) gerçeğini',
+      'Turistlerin hayvanlara kasten zarar vermek için bilerek tuzaklar kurduğunu'
+    ],
+    correct: 2,
+    explanation: 'Çalınan gözlüğü yem (fidye) olarak kullanıp takas (pazarlık) yapmaları; "şantaj ve ticaret" gibi insana özgü sanılan kurnaz/karmaşık zekânın (suç ekonomisinin) hayvanlarda da gelişebildiğini ifşa eder.'
+  },
+  {
+    title: 'Yalnız George (Evrimin Kapanan Kapısı)',
+    passage: 'Galapagos adalarında yaşayan dev Pinta Adası kaplumbağalarından geriye sadece bir tane kalmıştı. Bilim insanları ona "Yalnız George" (Lonesome George) adını verdiler. George o kadar büyüktü ki, bir dinozor gibi görünüyordu; ancak o devasa kabuğunun altında, koca bir gezegende kendi türünden, kendi kanından başka hiçbir canlının (eşin) kalmadığı o sağır edici hiçliği taşıyordu. Bilim insanları onu başka alt türlerle çiftleştirmeye çalıştılar ama George hep başarısız oldu (veya reddetti). 2012 yılında George kafesinde sessizce son nefesini verdiğinde, sadece bir hayvan ölmedi. Onun ölümüyle birlikte, Dünya gezegeninde milyonlarca yıldır tıkır tıkır işleyen, evrimin o eşsiz ve o bölgeye has devasa genetik kitabı (Pinta kaplumbağası dalı) ebediyen ve geri dönülemez bir şekilde kapandı. Yalnız George, insanın doğaya verdiği zararın, sadece bir canlıyı değil, milyonlarca yıllık bir evrim haritasını (kütüphanesini) nasıl tek bir saniyede sonsuza dek yakıp kül ettiğinin o devasa, dilsiz ve hüzünlü anıtıdır.',
+    questionStem: 'Yalnız George\'un (Pinta Adası Kaplumbağasının) ölümü, sadece bireysel bir canlı kaybı olmaktan çıkıp doğa tarihi açısından neyin sembolü olmuştur?',
+    options: [
+      'Hayvanat bahçelerindeki veterinerlerin kaplumbağa hastalıklarını tedavi etmedeki yetersizliğinin',
+      'Bir hayvanın ölümünün ötesinde; milyonlarca yıllık eşsiz bir evrim dalının, genetik kütüphanenin ve o türe ait "varoluşun" (insan etkisiyle) dünya üzerinden geri dönülemez bir şekilde silinip ebediyen kapanmasının (yok oluşun) hüznü',
+      'Adalardaki bitki örtüsünün kurumasıyla büyük otçul hayvanların yiyecek bulamamasının',
+      'Kaplumbağaların ortalama yaşam sürelerinin sanıldığından çok daha kısa olduğunun kanıtı'
+    ],
+    correct: 1,
+    explanation: 'Türünün son örneği olan George\'un ölmesiyle milyonlarca yıllık genetik kütüphanenin (evrim dalının) geri dönülemez şekilde kapanması ve yok olması (insanın doğaya verdiği geri dönülemez zarar) sembolize edilir.'
+  },
+  {
+    title: 'Korkuluk Safsatası (Straw Man Fallacy)',
+    passage: 'Siyasette, tartışma programlarında veya sosyal medyada birinin sizin fikrinizi çürüttüğünü sanırsınız, oysa o aslında bambaşka bir şeyle dövüşüyordur! Buna felsefede "Korkuluk Safsatası" (Straw Man Fallacy) denir. Diyelim ki siz "Okullara daha fazla bütçe ayrılmalı" dersiniz. Karşınızdaki kişi "Yani sen devletin tüm bütçesini okullara verip ordumuzu silahsız ve savunmasız bırakmamızı, düşmanlara teslim olmamızı istiyorsun, bu vatan hainliğidir!" diye bağırır. Oysa siz böyle bir şey dememişsinizdir! O kişi sizin gerçek, sağlam argümanınıza saldırmak (ve onunla baş etmek) zor olduğu için; sizin argümanınızı çarpıtır, aşırı abartır ve içi boş, zayıf, uydurma bir "korkuluk" yaratır. Sonra da o kendi yarattığı (zayıf) korkuluğu kolayca devirerek tartışmayı kazandığını iddia eder. Korkuluk safsatası; aklın, gerçeğin ve dürüstlüğün; demagoji, sahtekârlık ve kurnazlıkla (ucuz bir zafer uğruna) nasıl katledildiğinin en popüler illüzyonudur.',
+    questionStem: 'Korkuluk Safsatası (Straw Man Fallacy), tartışmalarda kullanılan hangi "zihinsel kurnazlık ve sahtekârlığı" tanımlar?',
+    options: [
+      'Tartışan tarafların birbirlerinin geçmişteki hatalarını (özel hayatlarını) yüzlerine vurarak konuyu dağıtmasını (Ad Hominem)',
+      'Rakibin asıl (güçlü) argümanıyla yüzleşmekten kaçıp; onun fikrini kasıtlı olarak çarpıtarak (abartarak) içi boş, zayıf ve uydurma bir versiyonunu (korkuluğu) yaratması ve bu sahte hedefi yıkarak haklı çıkmış gibi görünme hilesini',
+      'Bir olayın sonucunun her zaman en kötü ihtimalle biteceğini (felaket) savunarak karşı tarafı korkutmayı',
+      'Bilimsel verilerin halkın anlayamayacağı kadar karmaşık kelimelerle ifade edilmesini'
+    ],
+    correct: 1,
+    explanation: 'Söylenmeyen bir şeyi söylenmiş gibi abartıp (sahte ve zayıf bir korkuluk yaratıp) ona saldırarak kolayca haklı çıkma hilesi; tartışmalardaki en yaygın sahtekârlığı/kurnazlığı (Korkuluk Safsatası\'nı) açıklar.'
+  },
+  {
+    title: 'Kaygan Zemin Safsatası (Slippery Slope)',
+    passage: 'Herhangi bir toplumsal değişime veya yeni bir fikre karşı çıkanların en çok kullandığı o zehirli ve felaket tellalı cümle şudur: "Eğer buna izin verirsek, yarın her şey mahvolur!" Felsefede buna "Kaygan Zemin Safsatası" (Slippery Slope) denir. Örneğin biri der ki: "Eğer çocukların okulda saçlarını uzatmasına izin verirsek, yarın okula pijama ile gelirler, sonra dersleri dinlemezler, sonra hepsi suç makinesi olur ve ülke çöker!" Bu argümanın içinde hiçbir rasyonel neden-sonuç (mantık) bağı yoktur; sadece zincirleme bir korku senaryosu uydurulur. A (saç uzatmak) olayı ile Z (ülkenin çökmesi) olayı arasında kurulan bu abartılı (ve asılsız) kaygan zemin; aslında muhafazakâr zihnin "değişime ve yeniliğe" karşı duyduğu o derin korkuyu (statükoyu koruma çabasını), mantık maskesi giydirerek kitlelere yutturma çabasıdır.',
+    questionStem: 'Kaygan Zemin Safsatası (Slippery Slope), yeniliklere karşı çıkarken hangi "mantık hatasını (korku taktiğini)" kullanır?',
+    options: [
+      'Yeni kuralların sadece zengin çocuklarına ayrıcalık sağladığını iddia etmeyi',
+      'Ortada rasyonel bir bağ olmamasına rağmen, küçük bir değişimin (A olayının) zincirleme ve abartılı felaketler silsilesi yaratarak en kötü sonuca (Z olayına) varacağını iddia edip kitleleri korkutma (değişimi engelleme) safsatasını',
+      'Okullardaki disiplin kurallarının tamamen kaldırılarak çocuklara sonsuz bir özgürlük verilmesi gerektiğini',
+      'Geçmişte yaşanan tarihi olayların sürekli tekrar edeceğine dair bilimsel istatistikleri'
+    ],
+    correct: 1,
+    explanation: 'Küçük bir değişimin (saç uzatmanın) mantıksız bir şekilde zincirleme felaketlere (ülkenin çökmesine) yol açacağı yalanını kurgulayarak değişimi engelleme çabası (korku taktiği), Kaygan Zemin safsatasıdır.'
+  },
+  {
+    title: 'Godwin Yasası (Tartışmanın İflası)',
+    passage: 'İnternet forumlarında, sosyal medyada veya hararetli bir televizyon tartışmasında dikkat edin; konu ne kadar sıradan olursa olsun (örneğin kedi mamaları veya trafik kuralları), o tartışma uzadıkça ve taraflar birbirini ikna edememeye başladıkça, aniden biri çıkar ve diğerine şöyle der: "Bu yaptığın tıpkı Nazilerin veya Hitler\'in yaptığı gibi bir faşizmdir!" Amerikalı yazar Mike Godwin bunu "Godwin Yasası" olarak formüle etmiştir: "Bir çevrimiçi tartışma uzadıkça, konunun er ya da geç Hitler\'e veya Nazilere gelme olasılığı %100\'e yaklaşır." Bu yasa, insan iletişimi hakkında karanlık bir gerçeği ifşa eder. Mantıklı argümanlar (fikirler ve kelimeler) tükendiğinde, insan beyni çaresizliğe düşer ve karşı tarafı alt etmek için onu dünyadaki "en mutlak (ve şeytani) kötülük" ile eşleştirip (onu canavarlaştırıp/Hitler\'e indirgeyip) tartışmayı ahlaki bir infaza dönüştürerek (aklı iflas ettirerek) kapatmayı seçer.',
+    questionStem: 'Godwin Yasası (Tartışmaların eninde sonunda Hitler/Nazi benzetmesine varması), insan iletişiminde neyin "iflas ettiğini" ve hangi psikolojik yola başvurulduğunu gösterir?',
+    options: [
+      'İnternet ortamının insanlara tarih bilincini (İkinci Dünya Savaşı gerçeklerini) öğrettiğini',
+      'Tarafların fikirleri ve "mantıklı (rasyonel) argümanları" tükendiğinde (akıl iflas ettiğinde), çaresizlikle karşı tarafı "mutlak kötülükle (şeytanlaştırmayla/faşizmle)" suçlayıp tartışmayı (ahlaki bir infazla) kolayca bitirme kurnazlığına başvurduğunu',
+      'Siyasi ideolojilerin sadece internet üzerinden örgütlendiğini',
+      'Modern çağdaki insanların diktatörlük özlemi içinde olduklarını'
+    ],
+    correct: 1,
+    explanation: 'Tartışma uzayınca karşı tarafın Nazi/Hitler ilan edilmesi; argümanlar (mantık) tükendiğinde kişinin rakibini en uç kötülükle (şeytanlaştırarak) karalayıp tartışmayı kolayca bitirme acizliğini (iflasını) gösterir.'
+  },
+  {
+    title: 'Kozmik Ufuk (Gözlemlenebilir Evrenin Aşılamaz Duvarı)',
+    passage: 'İnsanoğlu teleskoplarını sürekli geliştirerek evrenin sırrını tamamen çözeceğine inanır. Ancak astrofiziğin suratımıza çarptığı o dondurucu gerçek şudur: Evren hızlanarak genişlemektedir ve bizden yeterince uzakta olan galaksiler, ışık hızından bile daha hızlı bir şekilde bizden uzaklaşmaktadır! Bu, "Kozmik Ufuk" (Gözlemlenebilir Evrenin Sınırı) anlamına gelir. O ufkun ötesindeki galaksilerin ışığı, evrenin genişleme hızını aşıp da hiçbir zaman (sonsuza dek) Dünya\'ya ulaşamayacaktır. Ne kadar gelişmiş bir teknoloji (veya uzay gemisi) icat edersek edelim, o ufkun ötesini "asla" göremeyeceğiz, bilemeyeceğiz ve onlara ulaşamayacağız. Fizik kuralları, evrenin çok büyük bir kısmını bizden (ve tüm bilimden) kalıcı, kesin ve aşılmaz bir karanlık duvarla sonsuza dek saklamıştır. Kozmik Ufuk, insanın "her şeyi bilebilirim (tanrılaşabilirim)" kibrinin, kâinatın genişleyen fiziği karşısında çarptığı o mutlak ve ebedi körlük (hiçlik) duvarıdır.',
+    questionStem: 'Kozmik Ufuk (Evrenin genişlemesi yüzünden ışığın bize asla ulaşamayacağı sınır) kavramı, bilimin ve insanlığın "evreni tamamen keşfetme" kibrine karşı nasıl bir kesin (ve felsefi) engel sunar?',
+    options: [
+      'Güneşin yaydığı ışığın evrenin karanlığını aydınlatmaya gücünün yetmemesi',
+      'Gelecekte daha büyük teleskoplar yapıldığında bu sınırın rahatça aşılabileceği umudu',
+      'Teknoloji ne kadar gelişirse gelişsin; fizik kuralları gereği evrenin (ufkun ötesindeki) devasa bir kısmının ışığının bize hiçbir zaman ulaşamayacağı, dolayısıyla insanın bu mutlak ve aşılamaz karanlık (körlük) karşısında her şeyi "asla" bilemeyeceği gerçeği',
+      'Uzaylı medeniyetlerin kendi gezegenlerini karanlık enerjiyle gizlemesi'
+    ],
+    correct: 2,
+    explanation: 'Ufkun ötesindeki ışığın evrenin genişlemesi yüzünden bize asla ulaşamayacak olması; teknoloji ne olursa olsun insanın evrenin tamamını "asla" göremeyeceği ve bilemeyeceği yönündeki o fiziksel/mutlak körlük duvarını temsil eder.'
+  },
+  {
+    title: 'Shirky Prensibi (Kurumların İhaneti)',
+    passage: 'Clay Shirky, devasa bürokrasileri, yardım kuruluşlarını ve ticari şirketleri incelerken o acımasız kuralı ("Shirky Prensibi") yazdı: "Kurumlar, kendi varlıklarını sürdürebilmek için, aslında çözümlemekle görevli oldukları sorunu kasten korumaya (ve yaşatmaya) çalışırlar." Bir düşünün: Sokaktaki yoksulluğu veya bir hastalığı bitirmek için kurulan devasa bir ajans (veya ilaç şirketi), o sorunu tamamen ve kökünden "çözerse" ne olur? O kurumun binlerce çalışanı işsiz kalır, milyar dolarlık fonları (bütçesi) anında kesilir ve o kurum yok olur. İşte bu yüzden, sistemler sorunları tamamen bitirmek yerine, onları sadece "yönetilebilir, hafifletilmiş ama sonsuza dek sürecek (kronik) bir seviyede" tutarak; kendi maaşlarını, varlıklarını ve iktidarlarını garanti altına alırlar. Shirky Prensibi; insanı kurtaracağı iddia edilen devasa kurtarıcıların (sistemlerin), kâr ve bekâ uğruna aslında o cehennemin en sinsi ve gizli bekçilerine (ortaklarına) dönüştüğünü ifşa eder.',
+    questionStem: 'Shirky Prensibi, sorun çözmek için kurulan "kurumların (sistemlerin)" ahlaki ve pragmatik (çıkarcı) çöküşünü nasıl açıklar?',
+    options: [
+      'Kurumların teknolojiyi reddederek eski yöntemlerle çalışmakta ısrar etmesi',
+      'Kurumların (bürokrasinin/şirketlerin) kendi varlıklarını, bütçelerini ve işlerini kaybetmemek (yok olmamak) uğruna; aslında çözmekle görevli oldukları "sorunu" tamamen bitirmek yerine, onu kasten hayatta tutarak (kronikleştirerek) o sorundan beslenmeye devam etmesi ihaneti',
+      'Çalışanların maaşlarını yetersiz bularak işi bilerek yavaşlatması ve eylemsiz kalması',
+      'Devletlerin sadece zenginlere hizmet eden yasalar çıkarıp fakirleri göz ardı etmesi'
+    ],
+    correct: 1,
+    explanation: 'Bir kurumun sorunu çözerse kendi işinin ve bütçesinin bitecek olması nedeniyle; sorunu çözmek yerine onu gizlice yaşatıp ondan beslenmeye devam etmesi (sistemin kendi bekası için yaptığı pragmatik ihanet) açıklanır.'
+  },
+  {
+    title: 'Kalabalık Depremi (İzdihamın Fiziği)',
+    passage: 'Bir stadyumda veya kapalı bir konser salonunda aniden "Yangın var!" veya "Bomba var!" diye bağırılır. İnsanların hepsi hayatta kalmak (kurtulmak) için aynı anda, büyük bir panikle tek bir çıkış kapısına doğru hücum eder. Ancak bu bireysel kurtulma çabası korkunç bir fiziksel kâbusa dönüşür. İnsanlar kapıya öylesine sıkışır ki, bedenleri birbirine kitlenir ve kapı kelimenin tam anlamıyla tıkanır (kapanır). Psikolojide "Crowd Quake" (İzdiham Depremi / Kalabalık Akışkanı) denen bu olayda, kalabalık artık düşünen bireylerden değil; tıpkı boruya sıkışan sıvı (veya kum) tanecikleri gibi fiziksel, kör ve ezici bir basınç kitlesine dönüşür. İnsanların kapıda boğularak ve ezilerek ölmesinin sebebi yangın değil, tam olarak "kurtulma (kaçma) hırsının ta kendisidir." Bu trajedi; kriz anlarında bireysel paniğin ve körü körüne hırsın, herkesi kurtaracak olan aklı (ve düzeni) yıkarak, kitleyi kendi elleriyle kendi ölümünü yaratan (kapıyı kilitleyen) devasa, şuursuz bir canavara dönüştürdüğünün kanıtıdır.',
+    questionStem: 'İzdiham anlarında (Crowd Quake) insanların çıkış kapısında sıkışarak ölmesi, kriz ve panik anındaki insan davranışları hakkında neyi kanıtlar?',
+    options: [
+      'Binaların mimari olarak yangın çıkışlarının çok dar ve standartlara aykırı yapıldığını',
+      'Bireylerin sadece kendi canlarını kurtarmak için sergiledikleri o "kolektif panik ve kör hücumun"; rasyonel düzeni bozarak, bizzat o kurtuluş kapısını (çıkışı) kilitlediği ve kendi ölümünü kendi elleriyle yarattığı (bedenlerin akışkanlaşıp ezildiği) o trajik (ve fiziksel) gerçeği',
+      'İnsanların yangın dumanından zehirlenerek bilinçlerini tamamen kaybettiğini',
+      'Stadyum ve konser alanlarındaki güvenlik görevlilerinin insanları kasten içeri hapsettiğini'
+    ],
+    correct: 1,
+    explanation: 'Herkesin panikle aynı anda kaçmaya çalışmasının kapıyı tıkaması; bireysel kaçış hırsının (paniğin) rasyonelliği bozarak kitleyi kendi ölümünü kendi hazırlayan (fiziksel/ezici) bir kâbusa çevirdiğini kanıtlar.'
+  },
+  {
+    title: 'Tükenmez Kalem (Fikrin Cebimizde Gezmesi)',
+    passage: 'Yüzyıllar boyunca yazarlar, krallar ve filozoflar düşüncelerini yazmak için divit, kuş tüyü ve hokka (mürekkep şişesi) kullanmak zorundaydı. Yazı yazmak; masaya, şişeye ve sabit bir mekâna (hantallığa) bağlı ağır bir eylemdi. Ancak 1938 yılında, Macar gazeteci László Bíró matbaa mürekkebinin çabuk kuruduğunu fark etti ve ucunda minicik (dönen) bir bilye olan o efsanevi aleti icat etti: "Tükenmez Kalem" (Ballpoint Pen). Bu sadece kırtasiye malzemesi değildi; bu, düşüncenin, isyanın ve bilginin "özgürleşmesi" idi. Artık mürekkep şişelerine (masalara) mahkûm olmayan insan; sokakta, trende, savaş siperinde veya dağın zirvesinde, ilhamın geldiği o ilk saniyede anında aklındakini kâğıda dökebiliyordu. Tükenmez kalem; ağır ve elitist (sabit) olan yazma eylemini, sokaktaki sıradan insanın cebine sokarak (mobilize ederek) tüm dünyada düşünceyi ve iletişimi demokratikleştiren o küçük, ucuz ve dâhiyane (bilyeli) devrimdir.',
+    questionStem: 'László Bíró\'nun icat ettiği "Tükenmez Kalem", yazma eylemi ve düşünce tarihi (özgürlük) bağlamında nasıl bir felsefi (devrimsel) değişim yaratmıştır?',
+    options: [
+      'Kuş tüylerinin ve mürekkep şişelerinin üretiminin o dönemde tamamen yasaklanmasına',
+      'Yazı yazmayı (ve düşünceyi üretmeyi), sadece masaya ve hokkaya (sabit bir mekâna/elitizme) bağlı hantal bir eylem olmaktan çıkarıp; her an, her yerde cebimizde taşınabilen (mobil/özgür) ve tüm halk tabakalarına (demokratikleşen) ait hızlı bir eyleme dönüştürmesine',
+      'El yazısının estetik açıdan bozulmasına ve insanların daha çirkin yazmaya başlamasına',
+      'Matbaa teknolojisinin tamamen çökerek her kitabın tükenmez kalemle elle yazılmasına'
+    ],
+    correct: 1,
+    explanation: 'Ucunda bilye olan kalemin mürekkebi cebe sokması; yazı yazmayı/düşünceyi sabit bir masa/hokka zorunluluğundan (hantallıktan) kurtarıp, her an/her yerde ulaşılabilir (mobil ve demokratik) bir özgürlüğe çevirdiğini anlatır.'
+  },
+  {
+    title: 'Halo\'nun Kötü İkizi: Boynuz Etkisi (Horn Effect)',
+    passage: 'Halo (Hale) etkisinde, güzel veya yakışıklı birini gördüğümüzde o kişinin diğer tüm (bilinmeyen) özelliklerinin de "zeki ve iyi" olduğuna inanırız. Peki ya bunun tam zıttı? Psikolojide buna "Boynuz Etkisi" (Horn Effect) denir. Bir kişinin (veya grubun) sadece tek bir olumsuz özelliğine (fiziksel bir kusuruna, giyimine, kilosuna veya ırkına) bakarız ve beynimiz anında o kişiye şeytani bir "Boynuz" takar. O insanın geri kalan tüm karakterinin "aptal, tembel, ahlaksız ve kötü" olduğuna dair sarsılmaz (karanlık) bir önyargı inşa ederiz. Bu etki, ırkçılığın, zorbalığın ve sınıfsal dışlamanın (şeytanlaştırmanın) nörolojik kökenidir. İnsanoğlu, karmaşık ve derin bir ruhu tanımak için zaman harcamaktansa; en ufak bir fiziksel kusuru bahane edip karşısındakini tek kalemde (şeytan/kötü) ilan etmeyi (bilişsel tembelliği) seçen son derece sığ ve yargılayıcı bir hayvandır.',
+    questionStem: 'Boynuz Etkisi (Horn Effect), insan psikolojisindeki "önyargı ve dışlama" mekanizmasını nasıl açıklamaktadır?',
+    options: [
+      'İnsanların sadece kendilerinden daha başarılı (zengin) olan kişileri kıskanıp kötülediğini',
+      'Bir kişinin sahip olduğu "tek bir olumsuz (veya çirkin) özelliğe" bakarak; onun tüm kişiliğinin, zekâsının ve ahlakının da tamamen "kötü ve kusurlu (şeytani)" olduğuna dair yaratılan o sığ, haksız ve tembel (şeytanlaştırma) yanılgısını',
+      'Güzel insanların her zaman toplum tarafından gizlice cezalandırılmak istendiğini',
+      'Hayvanların boynuzlarına bakarak onların yaşlarını tahmin etme ritüelini'
+    ],
+    correct: 1,
+    explanation: 'Tek bir olumsuz/kusurlu özelliğine bakıp o kişinin tamamen kötü/aptal olduğuna inanmak (şeytanlaştırmak); insan zihninin o sığ, tembel ve haksız önyargısını (Boynuz Etkisini) açıklar.'
+  }
+];
+
+export const bilimParagrafSorulari40: BilimParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_40.length }, (_, idx) => {
+  const theme = PARAGRAPH_THEMES_40[idx];
+  const qNo = idx + 1;
+
+  return {
+    id: `turkce-bilim40-p-${qNo}`,
+    subject: 'turkce',
+    term: 2,
+    prompt: `${theme.passage}\n\n${theme.questionStem}`,
+    options: [...theme.options],
+    correct: theme.correct,
+    explanation: `${theme.explanation} (Soru ${qNo})`,
+  };
+});
 // paragrafTests.ts dosyasının hata vermemesi için iki listeyi birleştirip eski adıyla dışa aktarıyoruz:
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari,
@@ -10906,7 +11183,8 @@ export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...bilimParagrafSorulari36,
   ...bilimParagrafSorulari37,
   ...bilimParagrafSorulari38,
-  ...bilimParagrafSorulari39
+  ...bilimParagrafSorulari39,
+  ...bilimParagrafSorulari40
   
   
   
