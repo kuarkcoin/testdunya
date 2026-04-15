@@ -1,6 +1,6 @@
 import { sincityParagrafQuestions, type SincityParagrafQuestion } from './sincity';
 
-export const PARAGRAF_TEST_COUNT = 50;
+export const PARAGRAF_TEST_COUNT = 150;
 export const PARAGRAF_QUESTIONS_PER_TEST = 20;
 
 export interface ParagrafTestMeta {
