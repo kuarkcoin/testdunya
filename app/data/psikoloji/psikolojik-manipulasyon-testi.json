@@ -328,5 +328,115 @@
     "E": "Empati yorgunluğu",
     "correct": "A",
     "Açıklama": "Adil dünya hipotezi, insanların 'herkes hak ettiğini bulur' düşüncesiyle kendilerini güvende hissetmek için geliştirdikleri bir bilişsel yanlılıktır."
+  },
+  {
+    "id": 31,
+    "question": "Tamamlanmamış veya kesintiye uğramış işlerin, tamamlanmış işlere göre daha kolay ve net hatırlanması durumuna ne ad verilir?",
+    "A": "Zeigarnik Etkisi",
+    "B": "Plasebo Etkisi",
+    "C": "Hale Etkisi",
+    "D": "Kelebek Etkisi",
+    "E": "Pygmalion Etkisi",
+    "correct": "A",
+    "Açıklama": "Zeigarnik Etkisi, zihnin bitirilmemiş görevlere karşı bir meşguliyet içinde olduğunu ve bu yüzden onları daha iyi hatırladığını açıklar."
+  },
+  {
+    "id": 32,
+    "question": "Acil bir durumda çevredeki insan sayısı arttıkça, bireylerin yardım etme olasılığının düşmesine ne denir?",
+    "A": "Sosyal kanıt",
+    "B": "Seyirci etkisi (Bystander effect)",
+    "C": "Grup düşüncesi",
+    "D": "Otoriteye itaat",
+    "E": "Deizasyon",
+    "correct": "B",
+    "Açıklama": "Seyirci etkisi, sorumluluğun kalabalık içinde dağılması nedeniyle bireylerin yardım etme konusunda çekingen davranmasıdır."
+  },
+  {
+    "id": 33,
+    "question": "Astroloji, fal veya kişilik testlerindeki genel ve belirsiz ifadelerin kişiye özelmiş gibi algılanması hangi psikolojik fenomendir?",
+    "A": "Doğrulama yanlılığı",
+    "B": "Hale etkisi",
+    "C": "Barnum (Forer) Etkisi",
+    "D": "Spot ışığı etkisi",
+    "E": "Çerçeveleme etkisi",
+    "correct": "C",
+    "Açıklama": "Barnum Etkisi, insanların kendileri için özel olarak hazırlandığını düşündükleri genel kişilik tanımlarına yüksek doğruluk puanı verme eğilimidir."
+  },
+  {
+    "id": 34,
+    "question": "Kişinin başarılarını kendi yeteneklerine, başarısızlıklarını ise dış etkenlere (şanssızlık, haksızlık vb.) bağlaması hangisidir?",
+    "A": "Temel yükleme hatası",
+    "B": "Öz-hizmet (Self-serving) yanlılığı",
+    "C": "Bilişsel çelişki",
+    "D": "Dunning-Kruger etkisi",
+    "E": "İyimserlik önyargısı",
+    "correct": "B",
+    "Açıklama": "Öz-hizmet yanlılığı, egoyu korumak amacıyla olumluyu sahiplenme, olumsuzu dışsallaştırma eğilimidir."
+  },
+  {
+    "id": 35,
+    "question": "İnsanların 100 TL kazanmanın vereceği mutluluk yerine, 100 TL kaybetmenin vereceği acıyı çok daha şiddetli hissetmesi hangi ilkedir?",
+    "A": "Kayıptan kaçınma (Loss aversion)",
+    "B": "Batık maliyet yanılgısı",
+    "C": "Çıpalama etkisi",
+    "D": "Bolluk zihniyeti",
+    "E": "Zaman tercihi",
+    "correct": "A",
+    "Açıklama": "Kayıptan kaçınma ilkesine göre, kaybetmenin psikolojik maliyeti, eşdeğer bir kazancın getirisinden yaklaşık iki kat daha güçlüdür."
+  },
+  {
+    "id": 36,
+    "question": "Bir grup içinde çalışan bireylerin, tek başlarına çalıştıklarına göre daha az çaba sarf etme eğilimine ne denir?",
+    "A": "Sosyal kolaylaştırma",
+    "B": "Sosyal kaytarma (Social loafing)",
+    "C": "Grup içi kayırmacılık",
+    "D": "Grup kutuplaşması",
+    "E": "Sinerji etkisi",
+    "correct": "B",
+    "Açıklama": "Sosyal kaytarma, bireysel katkının kalabalık içinde fark edilmeyeceği düşünüldüğünde motivasyonun düşmesidir."
+  },
+  {
+    "id": 37,
+    "question": "Yeni öğrenilen bir kelimenin, ismin veya bilginin hemen ardından her yerde karşımıza çıkmaya başlaması illüzyonu nedir?",
+    "A": "Erişilebilirlik kısayolu",
+    "B": "Frekans illüzyonu (Baader-Meinhof)",
+    "C": "Doğrulama yanlılığı",
+    "D": "Geriye dönük bakış yanlılığı",
+    "E": "Seçici dikkat",
+    "correct": "B",
+    "Açıklama": "Frekans illüzyonu, seçici dikkat ve doğrulama yanlılığının birleşmesiyle bir şeyin sıklığının aniden arttığı sanrısıdır."
+  },
+  {
+    "id": 38,
+    "question": "Kişinin kendi inançlarının, değerlerinin ve alışkanlıklarının toplumun geneli tarafından da paylaşıldığını sanması hangisidir?",
+    "A": "Yanlış görüş birliği (False consensus)",
+    "B": "Ayna nöron etkisi",
+    "C": "Sosyal kanıt",
+    "D": "Halo etkisi",
+    "E": "Temel yükleme hatası",
+    "correct": "A",
+    "Açıklama": "Yanlış görüş birliği etkisi, insanların kendi fikirlerinin ne kadar yaygın olduğunu abartma eğilimidir."
+  },
+  {
+    "id": 39,
+    "question": "Bireyin bir gruba dahil olduktan sonra, o grubun üyelerini diğerlerinden daha yetenekli ve ahlaklı görme eğilimi nedir?",
+    "A": "Grup içi kayırmacılık (In-group bias)",
+    "B": "Dış grup homojenliği",
+    "C": "Sosyal karşılaştırma",
+    "D": "Otorite baskısı",
+    "E": "Kolektif narsisizm",
+    "correct": "A",
+    "Açıklama": "Grup içi kayırmacılık, kişinin kendi grubuna (takım, millet, arkadaş grubu vb.) haksız bir şekilde öncelik vermesidir."
+  },
+  {
+    "id": 40,
+    "question": "Birinin özgürlüğünün kısıtlandığını veya seçeneklerinin zorla daraltıldığını hissettiğinde, tam tersini yapma isteğine ne denir?",
+    "A": "Bilişsel esneklik",
+    "B": "Psikolojik tepkisellik (Reactance)",
+    "C": "Ters psikoloji",
+    "D": "Öğrenilmiş çaresizlik",
+    "E": "Duygusal zeka",
+    "correct": "B",
+    "Açıklama": "Psikolojik tepkisellik, bireyin seçim özgürlüğünü korumak adına yasaklanan veya baskılanan davranışı daha cazip bulmasıdır."
   }
 ]
