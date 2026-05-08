@@ -218,5 +218,115 @@
     "E": "Belki istemiyorum ama mecburum.",
     "correct": "B",
     "Açıklama": "Net, kısa ve tekrara kapalı sınır cümleleri ısrar ve yıldırma karşısında daha etkilidir."
+  },
+  {
+    "id": 21,
+    "question": "Bir kişinin savunduğu bir düşünce ile yaptığı davranışın çelişmesi sonucu yaşadığı içsel rahatsızlığa ne ad verilir?",
+    "A": "Bilişsel çelişki",
+    "B": "Plasebo etkisi",
+    "C": "Spot ışığı etkisi",
+    "D": "Dunning-Kruger sendromu",
+    "E": "Ayna nöron tepkisi",
+    "correct": "A",
+    "Açıklama": "Bilişsel çelişki, bireyin inançları, değerleri veya tutumları ile davranışları arasındaki tutarsızlıktan kaynaklanan gerginlik durumudur."
+  },
+  {
+    "id": 22,
+    "question": "Zarar edeceğini bildiği halde 'O kadar emek verdim / para harcadım, artık geri dönemem' diyerek bir işi sürdürmek hangi mantık hatasıdır?",
+    "A": "Kumarbaz yanılgısı",
+    "B": "Batık maliyet yanılgısı",
+    "C": "Çerçeveleme etkisi",
+    "D": "Erişilebilirlik kısayolu",
+    "E": "Sahte ikilem",
+    "correct": "B",
+    "Açıklama": "Batık maliyet yanılgısı, geçmişte yapılan ve geri alınamayacak yatırımlar (zaman, para, emek) nedeniyle mantıksız kararları sürdürme eğilimidir."
+  },
+  {
+    "id": 23,
+    "question": "Birinin, sadece dış görünüşü iyi olduğu için onun aynı zamanda zeki, güvenilir ve iyi kalpli olduğunu varsaymak hangi psikolojik etkidir?",
+    "A": "Barnum etkisi",
+    "B": "Seyirci etkisi",
+    "C": "Halo (Hale) etkisi",
+    "D": "Pygmalion etkisi",
+    "E": "Çıpalama etkisi",
+    "correct": "C",
+    "Açıklama": "Halo etkisi, bir kişi hakkındaki olumlu bir özelliğin, o kişinin diğer tüm özellikleri üzerinde de olumlu bir algı yaratmasıdır."
+  },
+  {
+    "id": 24,
+    "question": "Dijital dünyada, güvenilir bir kurum gibi davranarak (banka, e-ticaret sitesi vb.) şifre ve kredi kartı bilgilerini çalmaya çalışma yöntemine ne denir?",
+    "A": "DDoS saldırısı",
+    "B": "Deepfake",
+    "C": "Phishing (Oltalama)",
+    "D": "Algoritma manipülasyonu",
+    "E": "Veri madenciliği",
+    "correct": "C",
+    "Açıklama": "Oltalama, kullanıcıları kandırarak hassas bilgileri ele geçirmek amacıyla yapılan bir siber saldırı ve sosyal mühendislik türüdür."
+  },
+  {
+    "id": 25,
+    "question": "Kişinin sadece kendi görüşlerini destekleyen bilgileri görmesi, aksi yöndeki kanıtları ise görmezden gelmesi hangi zihinsel yanlılıktır?",
+    "A": "Doğrulama yanlılığı (Confirmation bias)",
+    "B": "Geriye dönük bakış yanlılığı",
+    "C": "Temel yükleme hatası",
+    "D": "İyimserlik önyargısı",
+    "E": "Grup düşüncesi",
+    "correct": "A",
+    "Açıklama": "Doğrulama yanlılığı, insanların mevcut inançlarını pekiştiren bilgileri arama ve yorumlama, aykırı bilgileri ise reddetme eğilimidir."
+  },
+  {
+    "id": 26,
+    "question": "Bir restoranda 'En çok tercih edilen menü' ibaresini görmek veya dolu bir mekanı tercih etmek hangi toplumsal mekanizmayı tetikler?",
+    "A": "Otoriteye itaat",
+    "B": "Sosyal kanıt (Social proof)",
+    "C": "Azlık ilkesi",
+    "D": "Karşılıklılık ilkesi",
+    "E": "Sempati etkisi",
+    "correct": "B",
+    "Açıklama": "Sosyal kanıt, insanların belirsiz durumlarda neyin doğru olduğuna karar vermek için başkalarının davranışlarına bakmasıdır."
+  },
+  {
+    "id": 27,
+    "question": "Toplantı veya arkadaş ortamında, telefonla ilgilenerek yanındaki kişiyi yok sayma ve iletişimi koparma davranışına ne ad verilir?",
+    "A": "Ghosting",
+    "B": "Breadcrumbing",
+    "C": "Phubbing",
+    "D": "Gaslighting",
+    "E": "Orbiting",
+    "correct": "C",
+    "Açıklama": "Phubbing (phone + snubbing), sosyal bir ortamda birinin telefonuna bakarak karşısındaki kişiyi ihmal etmesi durumudur."
+  },
+  {
+    "id": 28,
+    "question": "Bir pazarlık sırasında satıcının çok yüksek bir fiyat söyleyerek (çıpa atarak) daha sonra yaptığı indirimin gerçekte olduğundan daha büyük görünmesini sağlaması hangisidir?",
+    "A": "Çerçeveleme etkisi",
+    "B": "Çıpalama (Anchoring) etkisi",
+    "C": "Kayıptan kaçınma",
+    "D": "Sahip olma etkisi",
+    "E": "Zaman baskısı",
+    "correct": "B",
+    "Açıklama": "Çıpalama etkisi, insanların karar verirken karşılaştıkları ilk bilgi parçasına (sayı, fiyat vb.) aşırı derecede bağımlı kalmasıdır."
+  },
+  {
+    "id": 29,
+    "question": "Bilgi sahibi olunmayan bir konuda, en az bilgiye sahip kişilerin kendilerini o konunun uzmanıymış gibi görmesi hangi durumdur?",
+    "A": "Imposter sendromu",
+    "B": "Dunning-Kruger etkisi",
+    "C": "Pareto prensibi",
+    "D": "Stokholm sendromu",
+    "E": "Zweig etkisi",
+    "correct": "B",
+    "Açıklama": "Dunning-Kruger etkisi, yetkin olmayan kişilerin kendi becerilerini abartma, yetkin kişilerin ise becerilerini küçümseme eğilimidir."
+  },
+  {
+    "id": 30,
+    "question": "Kişinin, bir başkasının başına gelen kötü olayda 'Zaten hak etmişti, tedbirli olsaydı' diyerek dünyayı adil bir yer olarak görme çabası nedir?",
+    "A": "Adil dünya hipotezi",
+    "B": "Kurbanı suçlama",
+    "C": "Bilişsel esneklik",
+    "D": "Özgecilik",
+    "E": "Empati yorgunluğu",
+    "correct": "A",
+    "Açıklama": "Adil dünya hipotezi, insanların 'herkes hak ettiğini bulur' düşüncesiyle kendilerini güvende hissetmek için geliştirdikleri bir bilişsel yanlılıktır."
   }
 ]
