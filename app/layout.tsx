@@ -1,15 +1,11 @@
 import './globals.css'
 import type { Metadata, Viewport } from 'next'
-import { Inter } from 'next/font/google'
 import Script from 'next/script'
 import { GoogleAnalytics } from '@next/third-parties/google'
-import { Mic, Headphones, Gamepad2, BarChart3 } from 'lucide-react'
 import 'katex/dist/katex.min.css';
 import Navbar from './components/Navbar' 
 import Footer from './components/Footer'
 import ThemeToggle from './components/ThemeToggle'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: {
@@ -66,7 +62,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="tr" className="scroll-smooth" suppressHydrationWarning>
-      <body className={`${inter.className} bg-white text-black dark:bg-zinc-950 dark:text-white transition-colors duration-300 antialiased relative min-h-screen flex flex-col`}>
+      <body className="bg-white text-black dark:bg-zinc-950 dark:text-white transition-colors duration-300 antialiased relative min-h-screen flex flex-col font-sans">
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(){
