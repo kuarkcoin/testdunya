@@ -43,6 +43,7 @@ const getLabels = (isGlobal: boolean) => ({
   question: isGlobal ? "QUESTION" : "SORU",
   resultTitle: isGlobal ? "Test Result" : "Test Sonucu",
   correct: isGlobal ? "Correct" : "Doğru",
+  wrong: isGlobal ? "Wrong" : "Yanlış",
   total: isGlobal ? "Total" : "Toplam",
   score: isGlobal ? "Score" : "Başarı",
   backList: isGlobal ? "Back to List" : "Listeye Dön",
@@ -98,14 +99,14 @@ function formatText(text: string) {
 
 function findExplanation(item: any): string {
   return (
-    item.explanation || item.Explanation || item.aciklama || item.Açıklama ||
+    item["Açıklama"] || item.explanation || item.Explanation || item.aciklama ||
     item.solution || item.Solution || item.cozum || item.Çözüm || ""
   );
 }
 
 // --- MEMOIZED QUESTION CARD ---
 const QuestionCard = React.memo(({
-  q, idx, answer, onAnswer, onImageClick, labels,
+  q, idx, answer, onAnswer, onImageClick, labels, mode,
 }: {
   q: Question;
   idx: number;
@@ -113,7 +114,11 @@ const QuestionCard = React.memo(({
   onAnswer: (qid: string, val: string) => void;
   onImageClick: (url: string) => void;
   labels: any;
+  mode: Mode;
 }) => {
+  const showFeedback = mode === 'practice' && !!answer;
+  const isPracticeCorrect = answer === q.answer;
+
   return (
     <div className="premium-card p-6 md:p-8 rounded-3xl">
       <div className="flex items-center gap-3 mb-6">
@@ -144,37 +149,78 @@ const QuestionCard = React.memo(({
       )}
 
       <div className="grid gap-3">
-        {q.choices.map((c) => (
-          <label
-            key={c.id}
-            className={`group cursor-pointer flex items-center p-4 rounded-2xl border-2 transition-all duration-200 active:scale-[0.99] ${
-              answer === c.id
-                ? 'border-indigo-600 bg-indigo-50/50 shadow-md ring-1 ring-indigo-600'
-                : 'border-slate-200 dark:border-zinc-700 hover:border-indigo-300 dark:hover:border-indigo-500 hover:bg-indigo-50/40 dark:hover:bg-indigo-500/10'
-            }`}
-          >
-            <div
-              className={`w-6 h-6 rounded-full border-2 flex items-center justify-center mr-4 transition-colors flex-shrink-0 ${
-                answer === c.id ? 'border-indigo-600 bg-indigo-600' : 'border-slate-400 dark:border-zinc-500 group-hover:border-indigo-400 dark:group-hover:border-indigo-400'
-              }`}
+        {q.choices.map((c) => {
+          const isSelected = answer === c.id;
+          const isCorrectOption = q.answer === c.id;
+          const shouldShowCorrect = showFeedback && isCorrectOption;
+          const shouldShowWrong = showFeedback && isSelected && !isCorrectOption;
+          const isDimmed = showFeedback && !shouldShowCorrect && !shouldShowWrong;
+
+          let optionClass = 'group flex items-center text-left p-4 rounded-2xl border-2 transition-all duration-200 active:scale-[0.99] ';
+          let markerClass = 'w-6 h-6 rounded-full border-2 flex items-center justify-center mr-4 transition-colors flex-shrink-0 ';
+          let textClass = 'text-base sm:text-lg select-none ';
+
+          if (shouldShowCorrect) {
+            optionClass += 'border-emerald-500 bg-emerald-50 dark:bg-emerald-500/15 shadow-md ring-1 ring-emerald-500 cursor-default';
+            markerClass += 'border-emerald-600 bg-emerald-600 text-white';
+            textClass += 'text-emerald-900 dark:text-emerald-200 font-bold';
+          } else if (shouldShowWrong) {
+            optionClass += 'border-rose-500 bg-rose-50 dark:bg-rose-500/15 shadow-md ring-1 ring-rose-500 cursor-default';
+            markerClass += 'border-rose-600 bg-rose-600 text-white';
+            textClass += 'text-rose-900 dark:text-rose-200 font-bold';
+          } else if (isDimmed) {
+            optionClass += 'border-slate-200 dark:border-zinc-700 bg-slate-50/60 dark:bg-zinc-900/40 opacity-55 cursor-default';
+            markerClass += 'border-slate-300 dark:border-zinc-600';
+            textClass += 'text-slate-500 dark:text-zinc-400 font-medium';
+          } else if (isSelected) {
+            optionClass += 'border-indigo-600 bg-indigo-50/50 shadow-md ring-1 ring-indigo-600 cursor-pointer';
+            markerClass += 'border-indigo-600 bg-indigo-600';
+            textClass += 'text-indigo-900 dark:text-indigo-200 font-semibold';
+          } else {
+            optionClass += 'border-slate-200 dark:border-zinc-700 hover:border-indigo-300 dark:hover:border-indigo-500 hover:bg-indigo-50/40 dark:hover:bg-indigo-500/10 cursor-pointer';
+            markerClass += 'border-slate-400 dark:border-zinc-500 group-hover:border-indigo-400 dark:group-hover:border-indigo-400';
+            textClass += 'text-slate-700 dark:text-zinc-200 font-medium';
+          }
+
+          return (
+            <button
+              key={c.id}
+              type="button"
+              disabled={showFeedback}
+              onClick={() => onAnswer(q.id, c.id)}
+              className={optionClass}
+              aria-pressed={isSelected}
             >
-              {answer === c.id && <div className="w-2.5 h-2.5 rounded-full bg-white shadow-sm" />}
-            </div>
+              <div className={markerClass}>
+                {shouldShowCorrect ? '✓' : shouldShowWrong ? '✕' : isSelected ? <div className="w-2.5 h-2.5 rounded-full bg-white shadow-sm" /> : null}
+              </div>
 
-            <input
-              type="radio"
-              name={`question-${q.id}`}
-              className="hidden"
-              checked={answer === c.id}
-              onChange={() => onAnswer(q.id, c.id)}
-            />
-
-            <span className={`text-base sm:text-lg select-none ${answer === c.id ? 'text-indigo-900 dark:text-indigo-200 font-semibold' : 'text-slate-700 dark:text-zinc-200 font-medium'}`}>
-              {c.text}
-            </span>
-          </label>
-        ))}
+              <span className={textClass}>
+                {c.text}
+              </span>
+            </button>
+          );
+        })}
       </div>
+
+      {showFeedback && (
+        <div className={`mt-6 rounded-2xl border-2 p-5 animate-in fade-in ${
+          isPracticeCorrect
+            ? 'border-emerald-200 bg-emerald-50 text-emerald-900'
+            : 'border-rose-200 bg-rose-50 text-rose-900'
+        }`}>
+          <div className="font-black text-lg mb-3">
+            {isPracticeCorrect ? '✅ Doğru cevap!' : `❌ Yanlış cevap. Doğru cevap: ${q.answer}`}
+          </div>
+
+          {q.explanation && (
+            <div className="rounded-xl bg-white/70 dark:bg-zinc-950/20 p-4 border border-white/70 text-sm leading-relaxed">
+              <span className="font-black block mb-1">{labels.explanation}</span>
+              <span>{formatText(q.explanation)}</span>
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 });
@@ -466,8 +512,11 @@ export default function QuizPage() {
   }, [timeLeft, showResult, loading, mode]);
 
   const handleAnswerChange = useCallback((qId: string, val: string) => {
-    setAnswers(prev => ({ ...prev, [qId]: val }));
-  }, []);
+    setAnswers(prev => {
+      if (mode === 'practice' && prev[qId]) return prev;
+      return { ...prev, [qId]: val };
+    });
+  }, [mode]);
 
   useEffect(() => {
     if (!selectedImage) return;
@@ -533,7 +582,9 @@ export default function QuizPage() {
 
   // --- RESULT SCREEN ---
   if (showResult) {
-    const percentage = Math.round((score / questions.length) * 100);
+    const totalQuestions = questions.length;
+    const wrongCount = totalQuestions - score;
+    const percentage = totalQuestions > 0 ? Math.round((score / totalQuestions) * 100) : 0;
 
     let estimatedLevel = "A1 (Beginner)";
     let estimatedBand = "Band 2.0 - 3.0";
@@ -559,7 +610,24 @@ export default function QuizPage() {
               <span className="font-bold text-lg">{estimatedBand}</span>
             </div>
 
-            <div className="text-slate-500 font-bold text-lg">{score} / {questions.length} {labels.correct}</div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center mt-6">
+              <div className="rounded-2xl bg-emerald-50 border border-emerald-100 p-4">
+                <div className="text-2xl font-black text-emerald-600">{score}</div>
+                <div className="text-xs font-bold text-emerald-800 uppercase tracking-wide">{labels.correct}</div>
+              </div>
+              <div className="rounded-2xl bg-rose-50 border border-rose-100 p-4">
+                <div className="text-2xl font-black text-rose-600">{wrongCount}</div>
+                <div className="text-xs font-bold text-rose-800 uppercase tracking-wide">{labels.wrong}</div>
+              </div>
+              <div className="rounded-2xl bg-slate-50 border border-slate-100 p-4">
+                <div className="text-2xl font-black text-slate-700">{totalQuestions}</div>
+                <div className="text-xs font-bold text-slate-500 uppercase tracking-wide">{labels.total}</div>
+              </div>
+              <div className="rounded-2xl bg-indigo-50 border border-indigo-100 p-4">
+                <div className="text-2xl font-black text-indigo-600">%{percentage}</div>
+                <div className="text-xs font-bold text-indigo-800 uppercase tracking-wide">{labels.score}</div>
+              </div>
+            </div>
 
             <div className="flex justify-center gap-4 mt-8">
               <Link href="/" className="px-6 py-3 bg-slate-100 hover:bg-slate-200 transition text-slate-700 rounded-xl font-bold">{labels.homeButton}</Link>
@@ -756,6 +824,7 @@ export default function QuizPage() {
             onAnswer={handleAnswerChange}
             onImageClick={setSelectedImage}
             labels={labels}
+            mode={mode}
           />
         ))}
 
