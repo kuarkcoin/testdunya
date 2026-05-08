@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "question": "Bir kişi önce senden küçük ve masum görünen bir iyilik istiyor, ardından isteğini adım adım büyütüyorsa bu hangi tekniğe örnektir?",
+    "A": "Kademeli yaklaştırma",
+    "B": "Gaslighting",
+    "C": "Sosyal kanıt",
+    "D": "Sessizlikle cezalandırma",
+    "E": "Otorite baskısı",
+    "correct": "A",
+    "Açıklama": "Kademeli yaklaştırma, önce küçük bir kabul alıp sonra daha büyük istekleri normal göstermeye dayanır."
+  },
+  {
+    "id": 2,
+    "question": "Birinin 'Ben öyle demedim, sen yanlış hatırlıyorsun' diyerek seni sürekli kendi algından şüphe ettirmesi hangi davranışa örnektir?",
+    "A": "Love bombing",
+    "B": "Gaslighting",
+    "C": "Kıtlık baskısı",
+    "D": "Duygusal borçlandırma",
+    "E": "Sosyal kanıt",
+    "correct": "B",
+    "Açıklama": "Gaslighting, kişinin kendi hafızasından, algısından ve değerlendirme gücünden şüphe etmesine yol açan manipülatif bir davranıştır."
+  },
+  {
+    "id": 3,
+    "question": "Bir satıcının 'Bu fırsat sadece bugün geçerli, hemen karar vermen lazım' demesi hangi baskı türüne örnektir?",
+    "A": "Sessizlikle cezalandırma",
+    "B": "Duygusal borçlandırma",
+    "C": "Acele ettirme ve kıtlık baskısı",
+    "D": "Küçümseme",
+    "E": "Sahte yakınlık",
+    "correct": "C",
+    "Açıklama": "Acele ettirme ve kıtlık baskısı, kişinin düşünme süresini azaltarak hızlı karar vermesini sağlamaya çalışır."
+  },
+  {
+    "id": 4,
+    "question": "Bir kişi 'Beni sevseydin bunu yapardın' diyerek seni istemediğin bir davranışa zorluyorsa hangi yöntemi kullanıyordur?",
+    "A": "Bilgi boğma",
+    "B": "Sosyal kanıt",
+    "C": "Kademeli yaklaştırma",
+    "D": "Suçluluk yükleme",
+    "E": "Otorite baskısı",
+    "correct": "D",
+    "Açıklama": "Suçluluk yükleme, kişinin vicdanını hedef alarak onu kendi isteği dışında yönlendirmeye çalışmaktır."
+  },
+  {
+    "id": 5,
+    "question": "Başta aşırı ilgi, övgü ve sevgi gösterip daha sonra kontrolcü davranmaya başlamak hangi tekniğe örnektir?",
+    "A": "Love bombing",
+    "B": "Gaslighting",
+    "C": "Otorite baskısı",
+    "D": "Sosyal kanıt",
+    "E": "Bilgi boğma",
+    "correct": "A",
+    "Açıklama": "Love bombing, yoğun ilgiyle duygusal bağ kurup ardından kontrol davranışları geliştirmeye dayanır."
+  },
+  {
+    "id": 6,
+    "question": "Birinin 'Herkes bunu kabul etti, bir tek sen kaldın' demesi hangi manipülasyon türüdür?",
+    "A": "Sessizlikle cezalandırma",
+    "B": "Sosyal kanıt baskısı",
+    "C": "Gaslighting",
+    "D": "Özgüven kırma",
+    "E": "Kademeli yaklaştırma",
+    "correct": "B",
+    "Açıklama": "Sosyal kanıt baskısı, çoğunluğun davranışını doğruymuş gibi göstererek kişiyi etkilemeye çalışır."
+  },
+  {
+    "id": 7,
+    "question": "Kişinin 'Hayır' cevabına rağmen aynı isteği tekrar tekrar dile getirmek hangi davranıştır?",
+    "A": "Israr ve yıldırma",
+    "B": "Kıtlık baskısı",
+    "C": "Love bombing",
+    "D": "Otorite etkisi",
+    "E": "Sahte yakınlık",
+    "correct": "A",
+    "Açıklama": "Israr ve yıldırma, kişiyi mantıkla değil yorgunlukla razı etmeye çalışır."
+  },
+  {
+    "id": 8,
+    "question": "Birinin önce kabul edilmesi zor büyük bir istek yapıp, reddedilince daha küçük bir istek sunması hangi tekniktir?",
+    "A": "Gaslighting",
+    "B": "Sessizlikle cezalandırma",
+    "C": "Kapıyı yüzüne çarpma tekniği",
+    "D": "Sahte yakınlık",
+    "E": "Bilgi boğma",
+    "correct": "C",
+    "Açıklama": "Bu teknikte büyük istek reddedildikten sonra küçük istek daha makul görünür."
+  },
+  {
+    "id": 9,
+    "question": "Bir kişi konuşmayı keserek, mesajlara cevap vermeyerek seni geri adım atmaya zorluyorsa bu hangi davranıştır?",
+    "A": "Sosyal kanıt",
+    "B": "Kademeli yaklaştırma",
+    "C": "Bilgi boğma",
+    "D": "Sessizlikle cezalandırma",
+    "E": "Otorite baskısı",
+    "correct": "D",
+    "Açıklama": "Sessizlikle cezalandırma, iletişimi keserek karşı taraf üzerinde baskı kurma yöntemidir."
+  },
+  {
+    "id": 10,
+    "question": "Birinin 'Sen iyi bir insansın, beni kırmazsın' diyerek seni istemediğin bir şeye ikna etmeye çalışması hangi baskıya örnektir?",
+    "A": "Tutarlılık ve kimlik baskısı",
+    "B": "Kıtlık baskısı",
+    "C": "Bilgi boğma",
+    "D": "Gaslighting",
+    "E": "Sosyal kanıt",
+    "correct": "A",
+    "Açıklama": "Tutarlılık baskısında kişi, daha önceki kimlik algısı veya sözleri üzerinden yönlendirilmeye çalışılır."
+  },
+  {
+    "id": 11,
+    "question": "Birinin önce küçük bir iyilik yapıp sonra 'Ben senin için bunu yaptım, sen de bunu yapmalısın' demesi hangi davranıştır?",
+    "A": "Duygusal borçlandırma",
+    "B": "Sosyal kanıt",
+    "C": "Küçümseme",
+    "D": "Acele ettirme",
+    "E": "Gaslighting",
+    "correct": "A",
+    "Açıklama": "Duygusal borçlandırma, yapılan iyiliği daha sonra baskı aracına dönüştürmektir."
+  },
+  {
+    "id": 12,
+    "question": "Birinin 'Ben bu işi 20 yıldır yapıyorum, sen anlamazsın' diyerek itirazı susturmaya çalışması hangi baskı türüdür?",
+    "A": "Love bombing",
+    "B": "Otorite baskısı",
+    "C": "Sessizlikle cezalandırma",
+    "D": "Sosyal kanıt",
+    "E": "Kıtlık baskısı",
+    "correct": "B",
+    "Açıklama": "Otorite baskısı, unvan, yaş, tecrübe veya makam kullanılarak kişinin sorgulama hakkını zayıflatmaya çalışır."
+  },
+  {
+    "id": 13,
+    "question": "Sen 'Bana bağırman beni kırdı' dediğinde karşı tarafın 'Asıl sen beni bu hale getirdin' demesi hangi davranıştır?",
+    "A": "Konuyu tersine çevirme",
+    "B": "Sosyal kanıt",
+    "C": "Kademeli yaklaştırma",
+    "D": "Bilgi boğma",
+    "E": "Kıtlık baskısı",
+    "correct": "A",
+    "Açıklama": "Konuyu tersine çevirme, asıl davranışı konuşmak yerine karşı tarafı savunmaya zorlayan bir taktiktir."
+  },
+  {
+    "id": 14,
+    "question": "Sürekli 'Sen zaten yapamazsın, kim seni ciddiye alır?' gibi sözler kullanmak hangi etkiye yol açar?",
+    "A": "Özgüven kırma",
+    "B": "Love bombing",
+    "C": "Sahte yakınlık",
+    "D": "Sosyal kanıt",
+    "E": "Acele ettirme",
+    "correct": "A",
+    "Açıklama": "Özgüven kırma, kişinin kendine güvenini azaltarak onu daha kolay yönlendirilebilir hale getirebilir."
+  },
+  {
+    "id": 15,
+    "question": "'Ya benimlesin ya bana karşısın' gibi ifadeler hangi manipülasyon biçimine örnektir?",
+    "A": "Bilgi boğma",
+    "B": "Seçenekleri daraltma",
+    "C": "Gaslighting",
+    "D": "Duygusal borçlandırma",
+    "E": "Sessizlikle cezalandırma",
+    "correct": "B",
+    "Açıklama": "Seçenekleri daraltma, sanki sadece iki seçenek varmış gibi göstererek kişinin düşünme alanını sınırlar."
+  },
+  {
+    "id": 16,
+    "question": "Bir teklif sırasında çok hızlı konuşup çok fazla teknik detay vererek kişinin kafasını karıştırmak hangi yönteme örnektir?",
+    "A": "Bilgi boğma",
+    "B": "Love bombing",
+    "C": "Kademeli yaklaştırma",
+    "D": "Sosyal kanıt",
+    "E": "Sessizlikle cezalandırma",
+    "correct": "A",
+    "Açıklama": "Bilgi boğma, kişiyi aşırı detayla yorarak daha kolay kabul etmeye yönlendirme girişimidir."
+  },
+  {
+    "id": 17,
+    "question": "Birinin kısa sürede 'Sen bana çok benziyorsun, aramızda özel bir bağ var' diyerek hızlı güven kurmaya çalışması hangi davranış olabilir?",
+    "A": "Sahte yakınlık kurma",
+    "B": "Kıtlık baskısı",
+    "C": "Otorite baskısı",
+    "D": "Gaslighting",
+    "E": "Sosyal kanıt",
+    "correct": "A",
+    "Açıklama": "Sahte yakınlık, güven henüz oluşmadan hızlı samimiyet kurarak kişiyi etkileme çabasıdır."
+  },
+  {
+    "id": 18,
+    "question": "Birinin bazen çok ilgili, bazen tamamen soğuk davranarak seni sürekli belirsizlikte bırakması hangi döngüye örnektir?",
+    "A": "Aralıklı ödül-ceza",
+    "B": "Bilgi boğma",
+    "C": "Sosyal kanıt",
+    "D": "Otorite baskısı",
+    "E": "Kapıyı yüzüne çarpma",
+    "correct": "A",
+    "Açıklama": "Aralıklı ödül-ceza, belirsiz iyi-kötü davranış döngüsüyle kişide güçlü bir bağ ve beklenti oluşturabilir."
+  },
+  {
+    "id": 19,
+    "question": "Manipülatif bir teklif karşısında en sağlıklı ilk tepki aşağıdakilerden hangisidir?",
+    "A": "Herkes kabul ettiyse kabul etmek",
+    "B": "Karşı taraf kırılmasın diye susmak",
+    "C": "Düşünme süresi istemek ve sınır koymak",
+    "D": "Acele karar vermek",
+    "E": "Suçlu hissettiğin için kabul etmek",
+    "correct": "C",
+    "Açıklama": "Manipülasyona karşı en sağlıklı savunmalardan biri acele karar vermemek, düşünme süresi istemek ve net sınır koymaktır."
+  },
+  {
+    "id": 20,
+    "question": "Aşağıdaki cümlelerden hangisi ısrar karşısında sağlıklı bir sınır koyma cümlesidir?",
+    "A": "Tamam, yeter ki uzamasın.",
+    "B": "Hayır dedim, bu konuyu tekrar tartışmayacağım.",
+    "C": "Herkes yapıyorsa ben de yaparım.",
+    "D": "Sen kırılma diye kabul ediyorum.",
+    "E": "Belki istemiyorum ama mecburum.",
+    "correct": "B",
+    "Açıklama": "Net, kısa ve tekrara kapalı sınır cümleleri ısrar ve yıldırma karşısında daha etkilidir."
+  }
+]
