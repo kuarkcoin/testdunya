@@ -1318,5 +1318,116 @@
   "E": "Herkes ne yapıyorsa onu yapmak",
   "correct": "C",
   "Açıklama": "Manipülasyona karşı temel korunma yolları sınır koymak, düşünme süresi istemek ve gerekirse güvendiğin kişilerden destek almaktır."
-}
-  ]
+},
+  [
+  {
+    "id": 121,
+    "question": "Bir kişinin sürekli gelecek hakkında büyük vaatlerde bulunup (evlilik, iş ortaklığı vb.) mevcut hatalarını bu hayallerle örtbas etmesi hangi manipülasyona örnektir?",
+    "A": "Gelecek vaadiyle kandırma (Future Faking)",
+    "B": "Geçmişi hatırlatma",
+    "C": "Bilgi boğma",
+    "D": "Sağlıklı planlama",
+    "E": "Sosyal kanıt",
+    "correct": "A",
+    "Açıklama": "Future Faking, karşı tarafı sahte bir gelecek kurgusuna inandırarak şimdiki andaki sömürüyü sürdürme taktiğidir."
+  },
+  {
+    "id": 122,
+    "question": "Tam bir başarı elde ettiğinde, karşı tarafın kriterleri aniden değiştirip 'Evet yaptın ama şu da eksik' diyerek seni yetersiz hissettirmesi nedir?",
+    "A": "Hedef direklerini kaydırma (Moving the Goalposts)",
+    "B": "Love bombing",
+    "C": "Kademeli yaklaştırma",
+    "D": "Duygusal borçlandırma",
+    "E": "Otorite baskısı",
+    "correct": "A",
+    "Açıklama": "Bu teknikte manipülatör, hedefleri sürekli ulaşılmaz kılarak karşı tarafın onay alma ihtiyacını suistimal eder."
+  },
+  {
+    "id": 123,
+    "question": "Birinin sana sadece bağını koparmayacak kadar az ilgi gösterip, ciddi bir ilişki veya sorumluluktan kaçması durumuna ne ad verilir?",
+    "A": "Ekmek kırıntısı bırakma (Breadcrumbing)",
+    "B": "Açık bağlılık",
+    "C": "Sessizlikle cezalandırma",
+    "D": "Gaslighting",
+    "E": "Sosyal destek",
+    "correct": "A",
+    "Açıklama": "Breadcrumbing, karşı tarafı 'yedekte' tutmak için kısıtlı ve düzensiz ilgi gösterme biçimidir."
+  },
+  {
+    "id": 124,
+    "question": "Manipülatörün kendi yaptığı bir hatayı (örneğin yalan söylemek) sanki sen yapıyormuşsun gibi seni suçlaması hangi savunma mekanizmasıdır?",
+    "A": "Yansıtma (Projection)",
+    "B": "İnkar",
+    "C": "Yücelme",
+    "D": "Bastırma",
+    "E": "Özdeşim kurma",
+    "correct": "A",
+    "Açıklama": "Yansıtma, kişinin kendi kabul edilemez duygu veya davranışlarını başkasına atfederek suçluluktan kaçma çabasıdır."
+  },
+  {
+    "id": 125,
+    "question": "İlişki bittikten sonra manipülatörün seni tekrar kaosa çekmek için sahte bir pişmanlık veya acil durum bahanesiyle geri dönmesine ne denir?",
+    "A": "Vakumla geri çekme (Hoovering)",
+    "B": "Sessizce ayrılma",
+    "C": "Gaslighting",
+    "D": "Otorite baskısı",
+    "E": "Kademeli yaklaşma",
+    "correct": "A",
+    "Açıklama": "Hoovering, bir elektrikli süpürge gibi kişiyi tekrar manipülatif ilişkinin içine çekme girişimidir."
+  },
+  {
+    "id": 126,
+    "question": "Manipülatörün çevrendeki insanlara senin hakkında yanlış bilgiler vererek seni yalnızlaştırmaya çalışması hangi stratejidir?",
+    "A": "Karalama kampanyası (Smear Campaign)",
+    "B": "Sosyal kanıt",
+    "C": "Duygusal şantaj",
+    "D": "Kıtlık baskısı",
+    "E": "Love bombing",
+    "correct": "A",
+    "Açıklama": "Karalama kampanyası, mağdurun itibarını sarsarak sosyal destek sistemini yok etmeyi hedefler."
+  },
+  {
+    "id": 127,
+    "question": "Karşı tarafın asıl suçlu olduğu bir durumda ağlayarak veya kendini acındırarak senin ona teselli vermeni sağlaması hangisidir?",
+    "A": "Mağdur rolü oynamak (Playing the Victim)",
+    "B": "Açık iletişim",
+    "C": "Sorumluluk alma",
+    "D": "Tarafsız gözlem",
+    "E": "Sağlıklı empati",
+    "correct": "A",
+    "Açıklama": "Mağdur rolü, dikkati suçtan uzaklaştırıp sempati toplamak için kullanılan etkili bir manipülasyondur."
+  },
+  {
+    "id": 128,
+    "question": "Seni ailenden veya arkadaşlarından 'Onlar seni sevmiyor, sadece ben senin yanındayım' diyerek uzaklaştırmak hangi amaca hizmet eder?",
+    "A": "İzolasyon (Yalnızlaştırma)",
+    "B": "Güven inşası",
+    "C": "Sosyal kanıt",
+    "D": "Kademeli yaklaşma",
+    "E": "Otorite baskısı",
+    "correct": "A",
+    "Açıklama": "İzolasyon, kişinin dış dünyadan bilgi almasını engelleyerek manipülatöre olan bağımlılığını artırır."
+  },
+  {
+    "id": 129,
+    "question": "Manipülatif bir tartışmada duygusal tepki vermeyerek, bir 'gri kaya' gibi sıkıcı ve etkisiz davranmak hangi amaca hizmet eder?",
+    "A": "Manipülatörün senden beslenmesini engellemek",
+    "B": "Tartışmayı kazanmak",
+    "C": "Suçluluk hissettirmek",
+    "D": "Love bombing yapmak",
+    "E": "Otorite kurmak",
+    "correct": "A",
+    "Açıklama": "Gri Kaya (Grey Rock) yöntemi, manipülatöre aradığı duygusal tepkiyi vermeyerek onun ilgisini kaybetmesini sağlar."
+  },
+  {
+    "id": 130,
+    "question": "Birinin sürekli 'Sen çok hassassın, her şeyi abartıyorsun' diyerek duygularını geçersiz kılması hangisine örnektir?",
+    "A": "Duygusal geçersiz kılma (Invalidation)",
+    "B": "Sağlıklı geri bildirim",
+    "C": "Açık destek",
+    "D": "Tarafsız analiz",
+    "E": "Bilgilendirme",
+    "correct": "A",
+    "Açıklama": "Geçersiz kılma, karşı tarafın gerçeklik algısını bozarak kendi duygularına güvenmesini engeller."
+  }
+]
