@@ -283,6 +283,7 @@ export default function QuizPage() {
   const testId = (params?.testId as string) || (params?.id as string);
 
   const isGlobal = testId?.includes('ielts') || false;
+  const isPsychologyTest = testId === 'psikolojik-manipulasyon-testi';
   const labels = getLabels(isGlobal);
 
   const [questions, setQuestions] = useState<Question[]>([]);
@@ -733,6 +734,12 @@ export default function QuizPage() {
   const currentQuestion = questions[currentQuestionIndex];
   const currentAnswer = currentQuestion ? answers[currentQuestion.id] || '' : '';
   const isLastPracticeQuestion = currentQuestionIndex >= questions.length - 1;
+  const shouldShowAllPracticeQuestions = mode === 'practice' && isPsychologyTest;
+  const answeredPracticeCount = questions.filter((q) => !!answers[q.id]).length;
+  const correctPracticeCount = questions.filter((q) => answers[q.id] === q.answer).length;
+  const wrongPracticeCount = questions.filter((q) => answers[q.id] && answers[q.id] !== q.answer).length;
+  const isPsychologyPracticeComplete = shouldShowAllPracticeQuestions && answeredPracticeCount === questions.length;
+  const psychologyPracticePercentage = questions.length > 0 ? Math.round((correctPracticeCount / questions.length) * 100) : 0;
 
   // --- QUIZ SCREEN ---
   return (
@@ -835,7 +842,77 @@ export default function QuizPage() {
       </div>
 
       <div className="max-w-3xl mx-auto px-4 space-y-8 mt-8">
-        {mode === 'practice' && currentQuestion ? (
+        {shouldShowAllPracticeQuestions ? (
+          <>
+            <div className="sticky top-[112px] z-20 rounded-2xl border border-indigo-100 bg-white/90 p-4 shadow-lg backdrop-blur dark:border-zinc-700 dark:bg-zinc-950/90">
+              <div className="grid grid-cols-3 gap-3 text-center">
+                <div>
+                  <div className="text-xs font-bold uppercase tracking-wide text-slate-500 dark:text-zinc-400">Cevaplanan</div>
+                  <div className="text-lg font-black text-indigo-600">{answeredPracticeCount} / {questions.length}</div>
+                </div>
+                <div>
+                  <div className="text-xs font-bold uppercase tracking-wide text-slate-500 dark:text-zinc-400">{labels.correct}</div>
+                  <div className="text-lg font-black text-emerald-600">{correctPracticeCount}</div>
+                </div>
+                <div>
+                  <div className="text-xs font-bold uppercase tracking-wide text-slate-500 dark:text-zinc-400">{labels.wrong}</div>
+                  <div className="text-lg font-black text-rose-600">{wrongPracticeCount}</div>
+                </div>
+              </div>
+            </div>
+
+            {questions.map((q, idx) => {
+              const answer = answers[q.id] || '';
+
+              return (
+                <QuestionCard
+                  key={q.id}
+                  q={q}
+                  idx={idx}
+                  answer={answer}
+                  onAnswer={handleAnswerChange}
+                  onImageClick={setSelectedImage}
+                  labels={labels}
+                  showFeedback={!!answer}
+                  lockAfterAnswer
+                />
+              );
+            })}
+
+            {isPsychologyPracticeComplete && (
+              <div className="rounded-3xl border-2 border-indigo-100 bg-white p-6 text-center shadow-xl dark:border-zinc-700 dark:bg-zinc-900">
+                <h2 className="mb-5 text-2xl font-black text-slate-800 dark:text-zinc-100">{labels.resultTitle}</h2>
+                <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
+                  <div className="rounded-2xl bg-slate-50 p-4 dark:bg-zinc-800">
+                    <div className="text-2xl font-black text-slate-700 dark:text-zinc-100">{questions.length}</div>
+                    <div className="text-xs font-bold uppercase tracking-wide text-slate-500 dark:text-zinc-400">{labels.total}</div>
+                  </div>
+                  <div className="rounded-2xl bg-emerald-50 p-4 dark:bg-emerald-950/30">
+                    <div className="text-2xl font-black text-emerald-600">{correctPracticeCount}</div>
+                    <div className="text-xs font-bold uppercase tracking-wide text-emerald-800 dark:text-emerald-200">{labels.correct}</div>
+                  </div>
+                  <div className="rounded-2xl bg-rose-50 p-4 dark:bg-rose-950/30">
+                    <div className="text-2xl font-black text-rose-600">{wrongPracticeCount}</div>
+                    <div className="text-xs font-bold uppercase tracking-wide text-rose-800 dark:text-rose-200">{labels.wrong}</div>
+                  </div>
+                  <div className="rounded-2xl bg-indigo-50 p-4 dark:bg-indigo-950/30">
+                    <div className="text-2xl font-black text-indigo-600">%{psychologyPracticePercentage}</div>
+                    <div className="text-xs font-bold uppercase tracking-wide text-indigo-800 dark:text-indigo-200">{labels.score}</div>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            <div className="pt-4 pb-12 flex justify-center">
+              <button
+                onClick={handleSubmit}
+                className="w-full max-w-md py-4 rounded-2xl text-white text-xl font-bold shadow-xl bg-indigo-600 hover:bg-indigo-700"
+              >
+                {labels.completeTest}
+              </button>
+            </div>
+          </>
+        ) : mode === 'practice' && currentQuestion ? (
           <>
             <QuestionCard
               key={currentQuestion.id}
