@@ -878,5 +878,225 @@
     "E": "Seçici maruz kalma",
     "correct": "A",
     "Açıklama": "Rasyonel cehalet, bilginin maliyetinin beklenen getirisinden yüksek olduğu durumlarda bireyin mantıklı bir şekilde bilgisiz kalmayı tercih etmesidir."
-  }
-]
+  },
+  {
+  "id": 81,
+  "question": "Bir kişi 'Şimdi karar vermezsen bu fırsatı tamamen kaybedersin' diyorsa en sağlıklı tepki hangisidir?",
+  "A": "Hemen kabul etmek",
+  "B": "Başkaları ne yapıyorsa onu yapmak",
+  "C": "Acele karar vermemek ve düşünme süresi istemek",
+  "D": "Karşı taraf kızmasın diye onaylamak",
+  "E": "Detay sormadan ödeme yapmak",
+  "correct": "C",
+  "Açıklama": "Acele ettirme baskısına karşı en sağlıklı tepki düşünme süresi istemek ve kararını baskı altında vermemektir."
+},
+{
+  "id": 82,
+  "question": "Bir arkadaşın sürekli 'Gerçek dost olsan bunu yapardın' diyerek senden istemediğin şeyler istiyorsa bu hangi davranıştır?",
+  "A": "Duygusal şantaj",
+  "B": "Sağlıklı rica",
+  "C": "Sosyal destek",
+  "D": "Tarafsız öneri",
+  "E": "Açık iletişim",
+  "correct": "A",
+  "Açıklama": "Duygusal şantajda kişi sevgi, dostluk veya bağlılık duygusunu baskı aracı olarak kullanır."
+},
+{
+  "id": 83,
+  "question": "Birinin seni sürekli 'Çok abartıyorsun, herkes bunu normal karşılıyor' diyerek rahatsızlığını önemsiz göstermesi hangi riski taşır?",
+  "A": "Sınırlarının güçlenmesini",
+  "B": "Kendi algından şüphe etmeye başlamanı",
+  "C": "Daha objektif düşünmeni",
+  "D": "Daha hızlı karar vermeni",
+  "E": "İletişimin tamamen düzelmesini",
+  "correct": "B",
+  "Açıklama": "Bu tür ifadeler kişinin kendi duygusunu ve algısını sorgulamasına yol açabilir; gaslighting davranışına yaklaşır."
+},
+{
+  "id": 84,
+  "question": "Bir satış temsilcisi çok fazla teknik terim kullanıp konuyu karmaşıklaştırıyorsa ne yapmak en doğrusudur?",
+  "A": "Anlamadan kabul etmek",
+  "B": "Yazılı bilgi isteyip sonra değerlendirmek",
+  "C": "Sadece satıcının güvenine göre karar vermek",
+  "D": "Hemen ödeme yapmak",
+  "E": "Kararını başkasına bırakmak",
+  "correct": "B",
+  "Açıklama": "Bilgi boğma karşısında yazılı bilgi istemek, sakin değerlendirme yapmak ve gerekirse uzman görüşü almak sağlıklıdır."
+},
+{
+  "id": 85,
+  "question": "Bir kişi başta aşırı ilgi gösterip daha sonra 'Bana değer veriyorsan arkadaşlarınla görüşmezsin' diyorsa burada hangi dönüşüm vardır?",
+  "A": "Love bombing sonrası kontrol",
+  "B": "Sağlıklı bağlılık",
+  "C": "Tarafsız öneri",
+  "D": "Sosyal kanıt",
+  "E": "Kişisel gelişim desteği",
+  "correct": "A",
+  "Açıklama": "Aşırı ilgiyle bağ kurup sonra sosyal çevreyi kısıtlamaya çalışmak kontrolcü bir davranıştır."
+},
+{
+  "id": 86,
+  "question": "Birinin 'Ben senden büyüğüm, bu yüzden haklıyım' demesi hangi manipülasyon biçimine örnektir?",
+  "A": "Sosyal kanıt",
+  "B": "Otorite baskısı",
+  "C": "Kıtlık baskısı",
+  "D": "Love bombing",
+  "E": "Aralıklı ödül",
+  "correct": "B",
+  "Açıklama": "Yaş, unvan veya deneyim haklılığı otomatik olarak kanıtlamaz; otorite baskısı sorgulamayı azaltmaya çalışır."
+},
+{
+  "id": 87,
+  "question": "Bir teklif sana huzursuzluk veriyor ama karşı taraf sürekli 'Bana güvenmiyor musun?' diyorsa en sağlıklı cevap hangisidir?",
+  "A": "Güvenmediğimi kanıtlamamak için kabul ediyorum",
+  "B": "Güven ayrı, sınırlarım ayrı; düşünmeden karar vermeyeceğim",
+  "C": "Tamam, sorgulamadan yaparım",
+  "D": "Sen istiyorsan doğrudur",
+  "E": "Herkes kabul ettiyse ben de ederim",
+  "correct": "B",
+  "Açıklama": "Güven duygusu, kişinin sınırlarını ve düşünme hakkını ortadan kaldırmaz."
+},
+{
+  "id": 88,
+  "question": "Sahte yatırım vaatlerinde 'Bu gruptaki herkes kazandı' ifadesi çoğunlukla hangi baskıyı kullanır?",
+  "A": "Sosyal kanıt baskısı",
+  "B": "Sessizlikle cezalandırma",
+  "C": "Özgüven kırma",
+  "D": "Kademeli yaklaşma",
+  "E": "Doğrudan açıklık",
+  "correct": "A",
+  "Açıklama": "Başkalarının kazandığı iddiası, kişinin güvenini kazanmak için sosyal kanıt gibi kullanılabilir."
+},
+{
+  "id": 89,
+  "question": "Bir kişi seni sürekli bazen överek bazen yok sayarak belirsizlikte bırakıyorsa bu hangi döngüye benzer?",
+  "A": "Aralıklı ödül-ceza",
+  "B": "Açık iletişim",
+  "C": "Sağlıklı sınır",
+  "D": "Tarafsız geri bildirim",
+  "E": "Dengeli ilişki",
+  "correct": "A",
+  "Açıklama": "Aralıklı ödül-ceza, kişinin iyi davranışın tekrar gelmesini bekleyerek döngüye bağlanmasına neden olabilir."
+},
+{
+  "id": 90,
+  "question": "Birinin 'Hayır' cevabını kabul etmeyip konuyu defalarca açması karşısında en net sınır cümlesi hangisidir?",
+  "A": "Belki sonra kabul ederim",
+  "B": "Hayır dedim, bu konuyu tekrar tartışmayacağım",
+  "C": "Tamam, kırılma diye yaparım",
+  "D": "Sen bilirsin",
+  "E": "Herkes yapıyorsa ben de yapayım",
+  "correct": "B",
+  "Açıklama": "Israr karşısında kısa, net ve tekrara kapalı sınır cümleleri daha etkilidir."
+},
+{
+  "id": 91,
+  "question": "Aile içinde 'Biz senin için her şeyi yaptık, şimdi bunu yapmak zorundasın' denmesi hangi baskıya örnektir?",
+  "A": "Suçluluk yükleme",
+  "B": "Bilimsel açıklama",
+  "C": "Tarafsız öneri",
+  "D": "Sosyal kanıt",
+  "E": "Kıtlık etkisi",
+  "correct": "A",
+  "Açıklama": "Geçmiş fedakârlıkları kişinin karar özgürlüğünü baskılamak için kullanmak suçluluk yükleme davranışıdır."
+},
+{
+  "id": 92,
+  "question": "İş yerinde birinin 'Bu işi yapmazsan ekip ruhuna zarar verirsin' diyerek seni sürekli fazla mesaiye zorlaması hangi riski taşır?",
+  "A": "Sağlıklı iş bölümü",
+  "B": "Sınır ihlali ve suçluluk baskısı",
+  "C": "Adil performans değerlendirmesi",
+  "D": "Açık iletişim",
+  "E": "Tarafsız yönlendirme",
+  "correct": "B",
+  "Açıklama": "Ekip ruhu gibi değerler, kişinin sınırlarını aşmak için baskı aracına dönüştürülebilir."
+},
+{
+  "id": 93,
+  "question": "Bir kişinin 'Ya benim dediğimi yaparsın ya da beni hiç önemsemiyorsun' demesi hangi düşünce hatasına örnektir?",
+  "A": "Seçenekleri daraltma",
+  "B": "Kanıta dayalı düşünme",
+  "C": "Açık müzakere",
+  "D": "Tarafsız gözlem",
+  "E": "Sağlıklı empati",
+  "correct": "A",
+  "Açıklama": "Seçenekleri daraltma, sanki sadece iki uç seçenek varmış gibi göstererek kişiyi baskı altında bırakır."
+},
+{
+  "id": 94,
+  "question": "Bir dijital dolandırıcı 'Sadece sana özel gizli fırsat' diyorsa hangi iki unsur birlikte kullanılıyor olabilir?",
+  "A": "Kıtlık ve sahte ayrıcalık",
+  "B": "Açık kanıt ve şeffaflık",
+  "C": "Tarafsız analiz ve zaman tanıma",
+  "D": "Dürüst açıklama ve belge",
+  "E": "Sağlıklı sınır ve onay",
+  "correct": "A",
+  "Açıklama": "Sahte ayrıcalık ve kıtlık hissi, kişiyi hızlı ve sorgusuz karar vermeye itebilir."
+},
+{
+  "id": 95,
+  "question": "Birinin 'Bu konuyu konuşmak istemiyorum' deyip günlerce seni cezalandırır gibi susması hangi davranıştır?",
+  "A": "Sessizlikle cezalandırma",
+  "B": "Sağlıklı mola verme",
+  "C": "Açık iletişim",
+  "D": "Tarafsız dinleme",
+  "E": "Sosyal kanıt",
+  "correct": "A",
+  "Açıklama": "Sağlıklı mola açıklama ve süre içerir; cezalandırıcı sessizlik ise baskı kurma aracı olabilir."
+},
+{
+  "id": 96,
+  "question": "Bir kişi sürekli 'Sen zaten tek başına başaramazsın' diyorsa bunun temel etkisi ne olabilir?",
+  "A": "Kişinin özgüvenini azaltmak",
+  "B": "Kişiyi objektif bilgilendirmek",
+  "C": "Kişinin bağımsızlığını artırmak",
+  "D": "Sağlıklı motivasyon sağlamak",
+  "E": "Tarafsız rehberlik etmek",
+  "correct": "A",
+  "Açıklama": "Sürekli küçümseme kişinin özgüvenini zayıflatabilir ve bağımlı hissetmesine neden olabilir."
+},
+{
+  "id": 97,
+  "question": "Bir teklif karşısında 'Bunu yazılı olarak gönderin, inceleyip döneceğim' demek hangi açıdan faydalıdır?",
+  "A": "Baskı ve acele etkisini azaltır",
+  "B": "Manipülatörün işini kolaylaştırır",
+  "C": "Düşünmeden kabul etmeyi sağlar",
+  "D": "Sosyal kanıtı artırır",
+  "E": "Suçluluk hissini büyütür",
+  "correct": "A",
+  "Açıklama": "Yazılı bilgi istemek ve zaman kazanmak, ani baskı altında karar verme riskini azaltır."
+},
+{
+  "id": 98,
+  "question": "Bir ilişkide 'Bana güveniyorsan şifreni verirsin' cümlesine en sağlıklı yaklaşım hangisidir?",
+  "A": "Güven için tüm özel alanı kaldırmak gerekir",
+  "B": "Şifre paylaşımı güvenin zorunlu kanıtı değildir; mahremiyet sınırdır",
+  "C": "Karşı taraf istiyorsa verilmelidir",
+  "D": "Sevgiyi kanıtlamak için yapılmalıdır",
+  "E": "Herkes yapıyorsa doğrudur",
+  "correct": "B",
+  "Açıklama": "Güven, mahremiyetin ortadan kalkması anlamına gelmez; sağlıklı ilişkilerde kişisel sınırlar korunur."
+},
+{
+  "id": 99,
+  "question": "Manipülasyonu fark ettiğinde ilk adım olarak hangisi daha sağlıklıdır?",
+  "A": "Hemen karşı tarafı aşağılamak",
+  "B": "Duygusal tepkiyle karar vermek",
+  "C": "Durumu adlandırmak, sınır koymak ve gerekirse destek almak",
+  "D": "Kendini tamamen suçlamak",
+  "E": "Baskıya uyum sağlamak",
+  "correct": "C",
+  "Açıklama": "Manipülasyonu fark etmek, sınır koymak ve gerektiğinde güvendiğin kişilerden destek almak sağlıklı bir yaklaşımdır."
+},
+{
+  "id": 100,
+  "question": "Aşağıdakilerden hangisi manipülasyona karşı genel bir korunma ilkesidir?",
+  "A": "Acele karar vermek",
+  "B": "Hayır cevabından utanmak",
+  "C": "Sınırlarını net ifade etmek ve karar için zaman istemek",
+  "D": "Herkesin yaptığına uymak",
+  "E": "Suçlu hissettiğin her şeyi kabul etmek",
+  "correct": "C",
+  "Açıklama": "Net sınırlar, düşünme süresi ve bağımsız değerlendirme manipülasyona karşı temel korunma yollarıdır."
+}
+  ]
