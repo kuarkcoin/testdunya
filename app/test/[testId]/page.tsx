@@ -27,7 +27,7 @@ interface Question {
   prompt: string;
   imageUrl?: string;
   choices: Choice[];
-  answer: string;
+  correct: string;
   explanation?: string;
 }
 
@@ -43,6 +43,7 @@ const getLabels = (isGlobal: boolean) => ({
   question: isGlobal ? "QUESTION" : "SORU",
   resultTitle: isGlobal ? "Test Result" : "Test Sonucu",
   correct: isGlobal ? "Correct" : "Doğru",
+  wrong: isGlobal ? "Wrong" : "Yanlış",
   total: isGlobal ? "Total" : "Toplam",
   score: isGlobal ? "Score" : "Başarı",
   backList: isGlobal ? "Back to List" : "Listeye Dön",
@@ -51,6 +52,8 @@ const getLabels = (isGlobal: boolean) => ({
   explanation: isGlobal ? "Explanation:" : "Açıklama / Çözüm:",
   yourChoice: isGlobal ? "YOUR CHOICE" : "SEÇİMİN",
   correctBadge: isGlobal ? "CORRECT" : "DOĞRU",
+  correctAnswerFeedback: isGlobal ? "✅ Correct answer!" : "✅ Doğru cevap!",
+  wrongAnswerFeedback: isGlobal ? "❌ Wrong answer. Correct answer:" : "❌ Yanlış cevap. Doğru cevap:",
 
   // ✅ NEW (Exam/Practice)
   modeExam: isGlobal ? "Exam" : "Sınav",
@@ -98,14 +101,14 @@ function formatText(text: string) {
 
 function findExplanation(item: any): string {
   return (
-    item.explanation || item.Explanation || item.aciklama || item.Açıklama ||
+    item["Açıklama"] || item.explanation || item.Explanation || item.aciklama ||
     item.solution || item.Solution || item.cozum || item.Çözüm || ""
   );
 }
 
 // --- MEMOIZED QUESTION CARD ---
 const QuestionCard = React.memo(({
-  q, idx, answer, onAnswer, onImageClick, labels,
+  q, idx, answer, onAnswer, onImageClick, labels, mode,
 }: {
   q: Question;
   idx: number;
@@ -113,7 +116,12 @@ const QuestionCard = React.memo(({
   onAnswer: (qid: string, val: string) => void;
   onImageClick: (url: string) => void;
   labels: any;
+  mode: Mode;
 }) => {
+  const showFeedback = mode === 'practice' && !!answer;
+  const isCorrect = answer === q.correct;
+  const explanation = q.explanation || "";
+
   return (
     <div className="premium-card p-6 md:p-8 rounded-3xl">
       <div className="flex items-center gap-3 mb-6">
@@ -144,37 +152,82 @@ const QuestionCard = React.memo(({
       )}
 
       <div className="grid gap-3">
-        {q.choices.map((c) => (
-          <label
-            key={c.id}
-            className={`group cursor-pointer flex items-center p-4 rounded-2xl border-2 transition-all duration-200 active:scale-[0.99] ${
-              answer === c.id
-                ? 'border-indigo-600 bg-indigo-50/50 shadow-md ring-1 ring-indigo-600'
-                : 'border-slate-200 dark:border-zinc-700 hover:border-indigo-300 dark:hover:border-indigo-500 hover:bg-indigo-50/40 dark:hover:bg-indigo-500/10'
-            }`}
-          >
-            <div
-              className={`w-6 h-6 rounded-full border-2 flex items-center justify-center mr-4 transition-colors flex-shrink-0 ${
-                answer === c.id ? 'border-indigo-600 bg-indigo-600' : 'border-slate-400 dark:border-zinc-500 group-hover:border-indigo-400 dark:group-hover:border-indigo-400'
-              }`}
+        {q.choices.map((c) => {
+          const isSelected = answer === c.id;
+          const isCorrectOption = q.correct === c.id;
+          const shouldShowCorrect = showFeedback && isCorrectOption;
+          const shouldShowWrong = showFeedback && isSelected && !isCorrectOption;
+          const isDimmed = showFeedback && !shouldShowCorrect && !shouldShowWrong;
+          const isPracticeLocked = mode === 'practice' && !!answer;
+
+          const optionClass = shouldShowCorrect
+            ? 'border-emerald-500 bg-emerald-50 dark:bg-emerald-500/15 shadow-md ring-1 ring-emerald-500'
+            : shouldShowWrong
+              ? 'border-rose-500 bg-rose-50 dark:bg-rose-500/15 shadow-md ring-1 ring-rose-500'
+              : isDimmed
+                ? 'border-slate-200 dark:border-zinc-700 bg-slate-50/60 dark:bg-zinc-900/40 opacity-55'
+                : isSelected
+                  ? 'border-indigo-600 bg-indigo-50/50 shadow-md ring-1 ring-indigo-600'
+                  : 'border-slate-200 dark:border-zinc-700 hover:border-indigo-300 dark:hover:border-indigo-500 hover:bg-indigo-50/40 dark:hover:bg-indigo-500/10';
+
+          const markerClass = shouldShowCorrect
+            ? 'border-emerald-600 bg-emerald-600'
+            : shouldShowWrong
+              ? 'border-rose-600 bg-rose-600'
+              : isSelected
+                ? 'border-indigo-600 bg-indigo-600'
+                : 'border-slate-400 dark:border-zinc-500 group-hover:border-indigo-400 dark:group-hover:border-indigo-400';
+
+          const textClass = shouldShowCorrect
+            ? 'text-emerald-900 dark:text-emerald-200 font-semibold'
+            : shouldShowWrong
+              ? 'text-rose-900 dark:text-rose-200 font-semibold'
+              : isSelected
+                ? 'text-indigo-900 dark:text-indigo-200 font-semibold'
+                : 'text-slate-700 dark:text-zinc-200 font-medium';
+
+          return (
+            <label
+              key={c.id}
+              className={`group flex items-center p-4 rounded-2xl border-2 transition-all duration-200 ${isPracticeLocked ? 'cursor-not-allowed' : 'cursor-pointer active:scale-[0.99]'} ${optionClass}`}
             >
-              {answer === c.id && <div className="w-2.5 h-2.5 rounded-full bg-white shadow-sm" />}
-            </div>
+              <div
+                className={`w-6 h-6 rounded-full border-2 flex items-center justify-center mr-4 transition-colors flex-shrink-0 ${markerClass}`}
+              >
+                {(isSelected || shouldShowCorrect) && <div className="w-2.5 h-2.5 rounded-full bg-white shadow-sm" />}
+              </div>
 
-            <input
-              type="radio"
-              name={`question-${q.id}`}
-              className="hidden"
-              checked={answer === c.id}
-              onChange={() => onAnswer(q.id, c.id)}
-            />
+              <input
+                type="radio"
+                name={`question-${q.id}`}
+                className="hidden"
+                checked={isSelected}
+                disabled={isPracticeLocked}
+                onChange={() => onAnswer(q.id, c.id)}
+              />
 
-            <span className={`text-base sm:text-lg select-none ${answer === c.id ? 'text-indigo-900 dark:text-indigo-200 font-semibold' : 'text-slate-700 dark:text-zinc-200 font-medium'}`}>
-              {c.text}
-            </span>
-          </label>
-        ))}
+              <span className={`text-base sm:text-lg select-none ${textClass}`}>
+                {c.text}
+              </span>
+            </label>
+          );
+        })}
       </div>
+
+      {showFeedback && (
+        <div className={`mt-6 p-5 rounded-2xl border-2 animate-in fade-in ${isCorrect ? 'bg-emerald-50 border-emerald-200 text-emerald-900 dark:bg-emerald-500/10 dark:border-emerald-500/40 dark:text-emerald-100' : 'bg-rose-50 border-rose-200 text-rose-900 dark:bg-rose-500/10 dark:border-rose-500/40 dark:text-rose-100'}`}>
+          <div className="text-lg font-black mb-3">
+            {isCorrect ? labels.correctAnswerFeedback : `${labels.wrongAnswerFeedback} ${q.correct}`}
+          </div>
+
+          {explanation && (
+            <div className="pt-3 border-t border-current/15 text-sm sm:text-base leading-relaxed">
+              <span className="font-black">{labels.explanation}</span>{' '}
+              <span>{formatText(explanation)}</span>
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 });
@@ -301,7 +354,7 @@ export default function QuizPage() {
           id: item.id || `paragraf-${paragrafTestNo}-${idx + 1}`,
           prompt: item.prompt,
           choices,
-          answer: choices[item.correct]?.id || '',
+          correct: choices[item.correct]?.id || '',
           explanation: item.explanation,
         };
       });
@@ -362,7 +415,7 @@ export default function QuizPage() {
                   id: q.id || `q-${passage.passageId}-${idx}`,
                   prompt: combinedPrompt,
                   choices,
-                  answer: q.correct,
+                  correct: q.correct,
                   explanation: findExplanation(q),
                 });
               });
@@ -416,7 +469,7 @@ export default function QuizPage() {
               prompt: anyItem.prompt || anyItem.question || anyItem.soru || "...",
               imageUrl: anyItem.imageUrl || anyItem.image || undefined,
               choices,
-              answer: finalAnswerId,
+              correct: finalAnswerId,
               explanation: findExplanation(anyItem),
             };
           });
@@ -466,8 +519,11 @@ export default function QuizPage() {
   }, [timeLeft, showResult, loading, mode]);
 
   const handleAnswerChange = useCallback((qId: string, val: string) => {
-    setAnswers(prev => ({ ...prev, [qId]: val }));
-  }, []);
+    setAnswers(prev => {
+      if (mode === 'practice' && prev[qId]) return prev;
+      return { ...prev, [qId]: val };
+    });
+  }, [mode]);
 
   useEffect(() => {
     if (!selectedImage) return;
@@ -500,7 +556,7 @@ export default function QuizPage() {
 
     questions.forEach((q) => {
       const userVal = answers[q.id];
-      const isCorrect = (userVal === q.answer);
+      const isCorrect = (userVal === q.correct);
 
       if (isCorrect) {
         correctCount++;
@@ -513,7 +569,7 @@ export default function QuizPage() {
             testTitle: testId,
             prompt: q.prompt,
             choices: q.choices,
-            answer: q.answer,
+            answer: q.correct,
             myWrongAnswer: userVal,
             explanation: q.explanation,
             savedAt: new Date().toISOString(),
@@ -533,7 +589,9 @@ export default function QuizPage() {
 
   // --- RESULT SCREEN ---
   if (showResult) {
-    const percentage = Math.round((score / questions.length) * 100);
+    const totalQuestions = questions.length;
+    const wrongCount = totalQuestions - score;
+    const percentage = totalQuestions > 0 ? Math.round((score / totalQuestions) * 100) : 0;
 
     let estimatedLevel = "A1 (Beginner)";
     let estimatedBand = "Band 2.0 - 3.0";
@@ -559,7 +617,24 @@ export default function QuizPage() {
               <span className="font-bold text-lg">{estimatedBand}</span>
             </div>
 
-            <div className="text-slate-500 font-bold text-lg">{score} / {questions.length} {labels.correct}</div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-2xl mx-auto mt-2 text-left">
+              <div className="rounded-2xl bg-emerald-50 border border-emerald-100 p-4">
+                <div className="text-xs font-black text-emerald-600 uppercase tracking-wider">{labels.correct}</div>
+                <div className="text-2xl font-black text-emerald-700">{score}</div>
+              </div>
+              <div className="rounded-2xl bg-rose-50 border border-rose-100 p-4">
+                <div className="text-xs font-black text-rose-600 uppercase tracking-wider">{labels.wrong}</div>
+                <div className="text-2xl font-black text-rose-700">{wrongCount}</div>
+              </div>
+              <div className="rounded-2xl bg-slate-50 border border-slate-100 p-4">
+                <div className="text-xs font-black text-slate-500 uppercase tracking-wider">{labels.total}</div>
+                <div className="text-2xl font-black text-slate-700">{totalQuestions}</div>
+              </div>
+              <div className="rounded-2xl bg-indigo-50 border border-indigo-100 p-4">
+                <div className="text-xs font-black text-indigo-600 uppercase tracking-wider">{labels.score}</div>
+                <div className="text-2xl font-black text-indigo-700">%{percentage}</div>
+              </div>
+            </div>
 
             <div className="flex justify-center gap-4 mt-8">
               <Link href="/" className="px-6 py-3 bg-slate-100 hover:bg-slate-200 transition text-slate-700 rounded-xl font-bold">{labels.homeButton}</Link>
@@ -572,7 +647,7 @@ export default function QuizPage() {
 
             {questions.map((q, idx) => {
               const userAnswerId = answers[q.id];
-              const isCorrect = userAnswerId === q.answer;
+              const isCorrect = userAnswerId === q.correct;
               const isUserAnswered = !!userAnswerId;
 
               const cardBorder = isCorrect ? 'border-emerald-200' : isUserAnswered ? 'border-red-200' : 'border-amber-200';
@@ -596,7 +671,7 @@ export default function QuizPage() {
                       <div className="grid gap-2">
                         {q.choices.map((c) => {
                           const isSelected = userAnswerId === c.id;
-                          const isTheCorrectAnswer = c.id === q.answer;
+                          const isTheCorrectAnswer = c.id === q.correct;
 
                           let style = 'p-3 rounded-xl border flex items-center justify-between transition-all ';
                           if (isTheCorrectAnswer) style += 'bg-emerald-100 border-emerald-300 text-emerald-900 font-bold shadow-sm';
@@ -756,6 +831,7 @@ export default function QuizPage() {
             onAnswer={handleAnswerChange}
             onImageClick={setSelectedImage}
             labels={labels}
+            mode={mode}
           />
         ))}
 
