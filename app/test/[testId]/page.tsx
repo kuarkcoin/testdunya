@@ -158,11 +158,10 @@ function ShareParagraphButton({ paragraph }: { paragraph: string }) {
       <button
         type="button"
         onClick={handleShare}
-        className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white/80 px-3 py-2 text-sm font-semibold text-slate-700 transition hover:bg-gray-50 active:scale-[0.99] dark:border-slate-700 dark:bg-slate-900/60 dark:text-slate-100 dark:hover:bg-gray-800 sm:w-auto"
+        className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 text-slate-600 transition hover:bg-gray-50 active:scale-[0.99] dark:border-slate-700 dark:text-slate-100 dark:hover:bg-gray-800"
         aria-label="Paragrafı paylaş"
       >
         <ShareIcon className="h-4 w-4" aria-hidden="true" />
-        Paragrafı Paylaş
       </button>
       {message && (
         <span className="text-center text-xs font-bold text-emerald-600 dark:text-emerald-400" role="status" aria-live="polite">
