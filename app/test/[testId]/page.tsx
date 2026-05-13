@@ -216,9 +216,17 @@ function findExplanation(item: any): string {
   );
 }
 
+function shouldShowParagraphForQuestion(questionList: Question[], index: number): boolean {
+  const current = questionList[index];
+  if (!current?.paragraph) return false;
+
+  const previous = questionList[index - 1];
+  return current.paragraph !== previous?.paragraph || current.paragraphTitle !== previous?.paragraphTitle;
+}
+
 // --- MEMOIZED QUESTION CARD ---
 const QuestionCard = React.memo(({
-  q, idx, answer, onAnswer, onImageClick, labels, showFeedback = false, lockAfterAnswer = false,
+  q, idx, answer, onAnswer, onImageClick, labels, showFeedback = false, lockAfterAnswer = false, showParagraph = true,
 }: {
   q: Question;
   idx: number;
@@ -228,6 +236,7 @@ const QuestionCard = React.memo(({
   labels: any;
   showFeedback?: boolean;
   lockAfterAnswer?: boolean;
+  showParagraph?: boolean;
 }) => {
   const isAnswered = !!answer;
   const isCorrect = answer === q.answer;
@@ -242,28 +251,17 @@ const QuestionCard = React.memo(({
       </div>
       {q.paragraph ? (
         <>
-          <section className="mb-8 rounded-2xl border border-amber-200/60 bg-amber-50/40 p-4 shadow-sm dark:border-slate-700 dark:bg-slate-900/60 sm:p-5">
-            <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
-              <span className="rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-800 dark:bg-amber-900/30 dark:text-amber-200">
-                Okuma Parçası
-              </span>
-              {q.paragraphTitle && (
-                <span className="text-sm font-semibold text-slate-600 dark:text-slate-200">
-                  {q.paragraphTitle}
-                </span>
-              )}
-            </div>
-
-            <div className="border-l-4 border-amber-400 pl-4 dark:border-amber-500">
-              <div className="text-base font-normal leading-7 text-slate-800 dark:text-slate-100 sm:text-lg">
+          {showParagraph && (
+            <section className="mb-8 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-700 dark:bg-slate-900/60 sm:p-5">
+              <div className="text-base font-normal leading-7 text-slate-800 dark:text-slate-100 sm:text-lg sm:leading-8">
                 {formatText(q.paragraph)}
               </div>
-            </div>
 
-            <div className="mt-4 flex justify-end">
-              <ShareParagraphButton paragraph={q.paragraph} />
-            </div>
-          </section>
+              <div className="mt-4 flex justify-end">
+                <ShareParagraphButton paragraph={q.paragraph} />
+              </div>
+            </section>
+          )}
           <div className="text-lg sm:text-xl font-semibold text-slate-800 dark:text-zinc-100 mb-8 leading-relaxed">
             {formatText(q.questionPrompt || q.prompt)}
           </div>
@@ -1021,6 +1019,7 @@ export default function QuizPage() {
                   labels={labels}
                   showFeedback={!!answer}
                   lockAfterAnswer
+                  showParagraph={shouldShowParagraphForQuestion(questions, idx)}
                 />
               );
             })}
@@ -1097,6 +1096,7 @@ export default function QuizPage() {
                 onAnswer={handleAnswerChange}
                 onImageClick={setSelectedImage}
                 labels={labels}
+                showParagraph={shouldShowParagraphForQuestion(questions, idx)}
               />
             ))}
 
