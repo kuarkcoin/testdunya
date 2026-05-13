@@ -154,11 +154,11 @@ function ShareParagraphButton({ paragraph }: { paragraph: string }) {
   };
 
   return (
-    <div className="mt-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-end">
+    <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-end">
       <button
         type="button"
         onClick={handleShare}
-        className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white/80 px-3 py-2 text-sm font-bold text-slate-700 transition hover:bg-gray-50 active:scale-[0.99] dark:border-zinc-700 dark:bg-zinc-900/60 dark:text-zinc-200 dark:hover:bg-gray-800 sm:w-auto"
+        className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white/80 px-3 py-2 text-sm font-semibold text-slate-700 transition hover:bg-gray-50 active:scale-[0.99] dark:border-slate-700 dark:bg-slate-900/60 dark:text-slate-100 dark:hover:bg-gray-800 sm:w-auto"
         aria-label="Paragrafı paylaş"
       >
         <ShareIcon className="h-4 w-4" aria-hidden="true" />
@@ -242,17 +242,28 @@ const QuestionCard = React.memo(({
       </div>
       {q.paragraph ? (
         <>
-          <div className="mb-8 rounded-2xl border-l-4 border-sky-500 bg-white/90 p-5 text-slate-700 shadow-sm dark:bg-zinc-900/70 dark:text-zinc-200 sm:p-6">
-            {q.paragraphTitle && (
-              <h3 className="mb-4 border-b border-sky-100 pb-2 text-xl font-bold text-sky-900 dark:border-zinc-700 dark:text-sky-200">
-                {q.paragraphTitle}
-              </h3>
-            )}
-            <div className="font-serif text-base leading-relaxed">
-              {formatText(q.paragraph)}
+          <section className="mb-8 rounded-2xl border border-amber-200/60 bg-amber-50/40 p-4 shadow-sm dark:border-slate-700 dark:bg-slate-900/60 sm:p-5">
+            <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
+              <span className="rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-800 dark:bg-amber-900/30 dark:text-amber-200">
+                Okuma Parçası
+              </span>
+              {q.paragraphTitle && (
+                <span className="text-sm font-semibold text-slate-600 dark:text-slate-200">
+                  {q.paragraphTitle}
+                </span>
+              )}
             </div>
-            <ShareParagraphButton paragraph={q.paragraph} />
-          </div>
+
+            <div className="border-l-4 border-amber-400 pl-4 dark:border-amber-500">
+              <div className="text-base font-normal leading-7 text-slate-800 dark:text-slate-100 sm:text-lg">
+                {formatText(q.paragraph)}
+              </div>
+            </div>
+
+            <div className="mt-4 flex justify-end">
+              <ShareParagraphButton paragraph={q.paragraph} />
+            </div>
+          </section>
           <div className="text-lg sm:text-xl font-semibold text-slate-800 dark:text-zinc-100 mb-8 leading-relaxed">
             {formatText(q.questionPrompt || q.prompt)}
           </div>
