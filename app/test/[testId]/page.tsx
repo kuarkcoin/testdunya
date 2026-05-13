@@ -25,6 +25,9 @@ interface Choice {
 interface Question {
   id: string;
   prompt: string;
+  questionPrompt?: string;
+  paragraph?: string;
+  paragraphTitle?: string;
   imageUrl?: string;
   choices: Choice[];
   answer: string;
@@ -64,6 +67,112 @@ const getLabels = (isGlobal: boolean) => ({
 });
 
 // --- HELPERS ---
+
+function cleanShareText(text: string): string {
+  const normalized = String(text || '')
+    .replace(/<br\s*\/?>(\s*)/gi, '\n')
+    .replace(/<\/p>/gi, '\n')
+    .replace(/<[^>]*>/g, ' ')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/\s+\n/g, '\n')
+    .replace(/\n\s+/g, '\n')
+    .replace(/[ \t]{2,}/g, ' ')
+    .trim();
+
+  return normalized;
+}
+
+function splitParagraphPrompt(prompt: string): { paragraph?: string; questionPrompt: string } {
+  const cleanedPrompt = String(prompt || '').trim();
+  if (!cleanedPrompt) return { questionPrompt: '...' };
+
+  const parts = cleanedPrompt.split(/\n\s*\n/).map((part) => part.trim()).filter(Boolean);
+  if (parts.length < 2) return { questionPrompt: cleanedPrompt };
+
+  return {
+    paragraph: parts.slice(0, -1).join('\n\n'),
+    questionPrompt: parts[parts.length - 1],
+  };
+}
+
+const ShareIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+    <circle cx="18" cy="5" r="3" />
+    <circle cx="6" cy="12" r="3" />
+    <circle cx="18" cy="19" r="3" />
+    <path d="m8.59 13.51 6.83 3.98" />
+    <path d="m15.41 6.51-6.82 3.98" />
+  </svg>
+);
+
+function ShareParagraphButton({ paragraph }: { paragraph: string }) {
+  const [message, setMessage] = useState('');
+
+  const showCopiedMessage = () => {
+    setMessage('Paragraf kopyalandı.');
+    window.setTimeout(() => setMessage(''), 2400);
+  };
+
+  const handleShare = async () => {
+    const cleanText = cleanShareText(paragraph);
+    if (!cleanText) return;
+
+    try {
+      if (typeof navigator !== 'undefined' && typeof navigator.share === 'function') {
+        await navigator.share({
+          title: 'TestDünya Paragraf',
+          text: cleanText,
+          url: typeof window !== 'undefined' ? window.location.href : undefined,
+        });
+        return;
+      }
+
+      if (typeof navigator !== 'undefined' && navigator.clipboard) {
+        await navigator.clipboard.writeText(cleanText);
+        showCopiedMessage();
+        return;
+      }
+
+      if (typeof document !== 'undefined') {
+        const textarea = document.createElement('textarea');
+        textarea.value = cleanText;
+        textarea.setAttribute('readonly', '');
+        textarea.style.position = 'fixed';
+        textarea.style.top = '-9999px';
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        showCopiedMessage();
+      }
+    } catch (error) {
+      console.error('Paylaşım hatası:', error);
+    }
+  };
+
+  return (
+    <div className="mt-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-end">
+      <button
+        type="button"
+        onClick={handleShare}
+        className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white/80 px-3 py-2 text-sm font-bold text-slate-700 transition hover:bg-gray-50 active:scale-[0.99] dark:border-zinc-700 dark:bg-zinc-900/60 dark:text-zinc-200 dark:hover:bg-gray-800 sm:w-auto"
+        aria-label="Paragrafı paylaş"
+      >
+        <ShareIcon className="h-4 w-4" aria-hidden="true" />
+        Paragrafı Paylaş
+      </button>
+      {message && (
+        <span className="text-center text-xs font-bold text-emerald-600 dark:text-emerald-400" role="status" aria-live="polite">
+          {message}
+        </span>
+      )}
+    </div>
+  );
+}
+
 function formatTime(seconds: number): string {
   const m = Math.floor(seconds / 60);
   const s = seconds % 60;
@@ -131,9 +240,28 @@ const QuestionCard = React.memo(({
           {labels.question} {idx + 1}
         </span>
       </div>
-      <div className="text-lg sm:text-xl font-semibold text-slate-800 dark:text-zinc-100 mb-8 leading-relaxed">
-        {formatText(q.prompt)}
-      </div>
+      {q.paragraph ? (
+        <>
+          <div className="mb-8 rounded-2xl border-l-4 border-sky-500 bg-white/90 p-5 text-slate-700 shadow-sm dark:bg-zinc-900/70 dark:text-zinc-200 sm:p-6">
+            {q.paragraphTitle && (
+              <h3 className="mb-4 border-b border-sky-100 pb-2 text-xl font-bold text-sky-900 dark:border-zinc-700 dark:text-sky-200">
+                {q.paragraphTitle}
+              </h3>
+            )}
+            <div className="font-serif text-base leading-relaxed">
+              {formatText(q.paragraph)}
+            </div>
+            <ShareParagraphButton paragraph={q.paragraph} />
+          </div>
+          <div className="text-lg sm:text-xl font-semibold text-slate-800 dark:text-zinc-100 mb-8 leading-relaxed">
+            {formatText(q.questionPrompt || q.prompt)}
+          </div>
+        </>
+      ) : (
+        <div className="text-lg sm:text-xl font-semibold text-slate-800 dark:text-zinc-100 mb-8 leading-relaxed">
+          {formatText(q.prompt)}
+        </div>
+      )}
       {q.imageUrl && (
         <div className="mb-8 overflow-hidden rounded-2xl border border-slate-200 dark:border-zinc-700 bg-white dark:bg-zinc-900">
           <button
@@ -355,9 +483,13 @@ export default function QuizPage() {
           text: String(optText),
         }));
 
+        const { paragraph, questionPrompt } = splitParagraphPrompt(item.prompt);
+
         return {
           id: item.id || `paragraf-${paragrafTestNo}-${idx + 1}`,
           prompt: item.prompt,
+          questionPrompt,
+          paragraph,
           choices,
           answer: choices[item.correct]?.id || '',
           explanation: item.explanation,
@@ -419,6 +551,9 @@ export default function QuizPage() {
                 normalizedQuestions.push({
                   id: q.id || `q-${passage.passageId}-${idx}`,
                   prompt: combinedPrompt,
+                  questionPrompt: q.prompt,
+                  paragraph: passage.text,
+                  paragraphTitle: passage.title,
                   choices,
                   answer: q.correct,
                   explanation: findExplanation(q),
