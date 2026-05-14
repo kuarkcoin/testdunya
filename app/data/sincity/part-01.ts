@@ -1,4 +1,4 @@
-import type { BilimParagrafQuestion, SincityParagrafQuestion, TarihParagrafQuestion } from './types';
+import type { SincityParagrafQuestion, TarihParagrafQuestion } from './types';
 
 const PARAGRAPH_THEMES = [
   {
