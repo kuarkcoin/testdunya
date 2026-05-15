@@ -5,15 +5,16 @@ import EdirneMasallariClient from './EdirneMasallariClient'
 
 const pageUrl = 'https://testdunya.net/edirne-masallari'
 const title = 'Edirne Masalları | Kültürel Miras ve Çocuk Masalları'
-const description = 'Edirne’nin tarihî, kültürel ve doğal değerlerini çocuklara masal diliyle tanıtan TÜBİTAK tasarım projesi.'
+const description = 'Edirne’nin tarihî, kültürel ve doğal değerlerini çocuklara masal diliyle tanıtan dijital masal kitabı ve TÜBİTAK tasarım projesi.'
 const keywords = [
   'Edirne Masalları',
-  'Kırkpınar',
+  'çocuk masalları',
   'Selimiye Camii',
   'Meriç Nehri',
-  'çocuk masalları',
+  'Kırkpınar',
   'kültürel miras',
   'değerler eğitimi',
+  'TÜBİTAK projesi',
 ]
 
 export const metadata: Metadata = {
@@ -48,6 +49,8 @@ export const metadata: Metadata = {
     },
   },
 }
+
+const pdfUrl = '/pdf/edirne-masallari.pdf'
 
 const structuredData = [
   {
@@ -169,6 +172,19 @@ export default function EdirneMasallariPage() {
               <p className="mt-6 max-w-3xl text-lg leading-8 text-[#5d5148] dark:text-[#eadfcf]">
                 Bu proje, Edirne’nin tarihî, kültürel ve doğal değerlerini çocukların ilgisini çekecek özgün masallara dönüştürmeyi amaçlayan bir tasarım çalışmasıdır. Selimiye Camii, Meriç Nehri, Kırkpınar geleneği, köy yaşamı, çevre bilinci ve değerler eğitimi masal diliyle ele alınmıştır.
               </p>
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+                <a
+                  href={pdfUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-full bg-[#7a1f2b] px-6 py-3 text-sm font-extrabold text-white shadow-xl shadow-[#7a1f2b]/20 transition hover:-translate-y-0.5 hover:bg-[#5f1621] focus:outline-none focus:ring-4 focus:ring-[#d6b45d]/40 dark:bg-[#d6b45d] dark:text-[#1c1520] dark:hover:bg-[#efcf76]"
+                >
+                  📘 PDF Kitapçığı Aç
+                </a>
+                <span className="inline-flex items-center justify-center rounded-full border border-[#d6b45d]/35 bg-white/70 px-5 py-3 text-sm font-bold text-[#704b2a] backdrop-blur dark:bg-[#17111d]/70 dark:text-[#f3d9a4]">
+                  🕌 🌊 🏅 🌿 ✨ TÜBİTAK standına hazır dijital sunum
+                </span>
+              </div>
               <div className="mt-8 grid gap-3 text-sm font-bold text-[#17233f] dark:text-[#fff7df] sm:grid-cols-3">
                 <div className="rounded-2xl bg-white/70 p-4 ring-1 ring-[#d6b45d]/30 dark:bg-[#17111d]/70">Kırkpınar Ağası Alper Yazoğlu Ortaokulu</div>
                 <div className="rounded-2xl bg-white/70 p-4 ring-1 ring-[#d6b45d]/30 dark:bg-[#17111d]/70">2025-2026</div>
@@ -198,6 +214,26 @@ export default function EdirneMasallariPage() {
               </div>
             </div>
           </header>
+
+          <section className="mt-10 rounded-[2rem] border border-[#d6b45d]/30 bg-white/80 p-6 shadow-xl shadow-[#5b1f2a]/5 backdrop-blur dark:border-[#d6b45d]/20 dark:bg-[#151019]/85 dark:shadow-black/25 sm:p-8" aria-labelledby="proje-bilgileri">
+            <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
+              <div>
+                <p className="text-sm font-black uppercase tracking-[0.24em] text-[#7a1f2b] dark:text-[#ffd86a]">Proje Bilgileri</p>
+                <h2 id="proje-bilgileri" className="mt-2 text-2xl font-black tracking-tight text-[#17233f] dark:text-[#fff7df]">Kırkpınar Ağası Alper Yazoğlu Ortaokulu</h2>
+                <p className="mt-3 text-base font-bold text-[#704b2a] dark:text-[#f3d9a4]">2025-2026 • Edirne</p>
+              </div>
+              <div className="grid gap-4 sm:grid-cols-2">
+                <div className="rounded-3xl bg-[#fbf5e8] p-5 ring-1 ring-[#d6b45d]/30 dark:bg-[#211828]">
+                  <p className="text-xs font-black uppercase tracking-[0.2em] text-[#4f7d3a] dark:text-[#8fbd74]">Danışman Öğretmen</p>
+                  <p className="mt-2 text-lg font-black text-[#17233f] dark:text-[#fff7df]">Dilek CAN ULUSOY</p>
+                </div>
+                <div className="rounded-3xl bg-[#fbf5e8] p-5 ring-1 ring-[#d6b45d]/30 dark:bg-[#211828]">
+                  <p className="text-xs font-black uppercase tracking-[0.2em] text-[#4f7d3a] dark:text-[#8fbd74]">Projede Görev Alan Öğrenciler</p>
+                  <p className="mt-2 text-lg font-black leading-8 text-[#17233f] dark:text-[#fff7df]">Beren YORULMAZ<br />Kemak GÖKKUŞ<br />Ada GÜNDOĞDU</p>
+                </div>
+              </div>
+            </div>
+          </section>
 
           <section className="mt-14">
             <div className="mb-7 flex flex-col justify-between gap-3 sm:flex-row sm:items-end">
@@ -234,6 +270,29 @@ export default function EdirneMasallariPage() {
               </p>
             </SectionCard>
           </div>
+
+          <section className="mt-14 rounded-[2rem] border border-[#d6b45d]/30 bg-gradient-to-br from-white/85 via-[#fffaf0]/90 to-[#f1eadb]/90 p-6 shadow-xl shadow-[#5b1f2a]/5 backdrop-blur dark:border-[#d6b45d]/20 dark:from-[#151019]/90 dark:via-[#1d1622]/90 dark:to-[#211828]/90 sm:p-8">
+            <div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
+              <div>
+                <p className="text-sm font-black uppercase tracking-[0.24em] text-[#7a1f2b] dark:text-[#ffd86a]">QR Kod Bilgi Alanı</p>
+                <h2 className="mt-2 text-2xl font-black tracking-tight text-[#17233f] dark:text-[#fff7df]">Dijital Masal Kitabı</h2>
+                <p className="mt-3 max-w-3xl text-base leading-8 text-[#5d5148] dark:text-[#eadfcf]">
+                  Bu sayfa, 50x70 proje kapağındaki QR kod aracılığıyla ziyaretçilere dijital masal kitabı, PDF kitapçık ve sesli okuma seçenekleri sunmak için hazırlanmıştır.
+                </p>
+                <p className="mt-3 break-all rounded-2xl bg-[#fbf5e8] px-4 py-3 text-sm font-bold text-[#704b2a] ring-1 ring-[#d6b45d]/25 dark:bg-[#211828] dark:text-[#f3d9a4]">
+                  {pageUrl}
+                </p>
+              </div>
+              <a
+                href={pdfUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex shrink-0 items-center justify-center rounded-full bg-[#1d2f57] px-6 py-3 text-sm font-extrabold text-white shadow-xl shadow-[#1d2f57]/20 transition hover:-translate-y-0.5 hover:bg-[#162541] focus:outline-none focus:ring-4 focus:ring-[#d6b45d]/40 dark:bg-[#d6b45d] dark:text-[#1c1520] dark:hover:bg-[#efcf76]"
+              >
+                📘 PDF Kitapçığı Aç
+              </a>
+            </div>
+          </section>
         </div>
       </div>
     </>
