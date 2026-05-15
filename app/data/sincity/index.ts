@@ -17,12 +17,7 @@ import { bilimParagrafSorulari49, bilimParagrafSorulari50, bilimParagrafSorulari
 import { bilimParagrafSorulari53, bilimParagrafSorulari54, bilimParagrafSorulari55, bilimParagrafSorulari56, bilimParagrafSorulari57 } from './part-14';
 import { bilimParagrafSorulari58 } from './part-15'; 
 import { bilimParagrafSorulari59 } from './part-16';
-
-// --- YENİ EKLENEN TESTLERİ ÇAĞIRDIĞIMIZ YER ---
-// (Not: part-15 ve part-16 isimlerini kendi klasörüne göre ayarlayabilirsin)
-import { bilimParagrafSorulari58, bilimParagrafSorulari58_Ek } from './part-15'; 
-import { bilimParagrafSorulari59 } from './part-16'; 
-
+ 
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari,
   ...tarihParagrafSorulari2,
