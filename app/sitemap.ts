@@ -42,7 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Diğer modülleri (IELTS ve Oyunlar) buraya eklemeye devam edebilirsin...
   const otherRoutes = [
-    '/ielts/speaking', '/speedrun', '/kelime-avcisi'
+    '/ielts/speaking', '/speedrun', '/kelime-avcisi', '/edirne-masallari'
   ].map(route => ({
     url: `${baseUrl}${route}`,
     lastModified: lastMod,
