@@ -195,8 +195,7 @@ const PARAGRAPH_THEMES_58 = [
     explanation: 'Karganın taşla su seviyesini yükseltip kanca yapması; zekânın ve alet (fizik) kullanımının sadece insanlara/maymunlara (büyük beyne) ait bir tekel olduğu kibrini yıkarak, kuşların o küçücük (tüylü) beyninde bile o kusursuz dehanın (aklın) olduğunu ispatlar.'
   }
 ];
-
-export const bilimParagrafSorulari58_Ek = Array.from({ length: PARAGRAPH_THEMES_58.length }, (_, idx) => {
+  export const bilimParagrafSorulari58: SincityParagrafQuestion[] = Array.from({ length: PARAGRAPH_THEMES_58.length }, (_, idx) => {
   const theme = PARAGRAPH_THEMES_58[idx];
   // Bu grup 58. testin ikinci yarısını (ilk 10 sorunun devamını) oluşturuyor. İndeksi 11'den başlatıyoruz.
   const qNo = idx + 11; 
