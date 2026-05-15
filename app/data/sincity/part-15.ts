@@ -1,3 +1,4 @@
+import type { SincityParagrafQuestion } from './types';
 const PARAGRAPH_THEMES_58 = [
   {
     title: 'Batık Bedel Safsatası (Concorde Yanılgısı)',
