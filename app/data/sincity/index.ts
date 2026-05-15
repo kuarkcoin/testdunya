@@ -14,7 +14,11 @@ import { bilimParagrafSorulari37, bilimParagrafSorulari38, bilimParagrafSorulari
 import { bilimParagrafSorulari41, felsefeParagrafSorulari42, felsefeParagrafSorulari43, bilimParagrafSorulari44 } from './part-11';
 import { bilimParagrafSorulari45, bilimParagrafSorulari46, felsefeParagrafSorulari47, bilimParagrafSorulari48 } from './part-12';
 import { bilimParagrafSorulari49, bilimParagrafSorulari50, bilimParagrafSorulari51, bilimParagrafSorulari52 } from './part-13';
+
+// DİKKAT: Test 58'i hangi dosyaya koyduğuna göre burayı ayarla. Ben part-15'te olduğunu varsayıyorum.
+// Eğer part-14 içindeyse, import satırına virgül koyup bilimParagrafSorulari58, bilimParagrafSorulari58_Ek eklemen yeterli.
 import { bilimParagrafSorulari53, bilimParagrafSorulari54, bilimParagrafSorulari55, bilimParagrafSorulari56, bilimParagrafSorulari57 } from './part-14';
+import { bilimParagrafSorulari58, bilimParagrafSorulari58_Ek } from './part-15'; // <-- YENİ EKLENEN IMPORT
 
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari,
@@ -73,5 +77,7 @@ export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...bilimParagrafSorulari54,
   ...bilimParagrafSorulari55,
   ...bilimParagrafSorulari56,
-  ...bilimParagrafSorulari57
+  ...bilimParagrafSorulari57,
+  ...bilimParagrafSorulari58,     // <-- TEST 58 (İLK 10 SORU) BURAYA EKLENDİ
+  ...bilimParagrafSorulari58_Ek   // <-- TEST 58 (KALAN 15 SORU) BURAYA EKLENDİ
 ];
