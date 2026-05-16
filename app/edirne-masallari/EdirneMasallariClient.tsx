@@ -633,7 +633,9 @@ export default function EdirneMasallariClient() {
 
     const utterance = new SpeechSynthesisUtterance(`${tale.title}.\n\n${tale.text.join('\n\n')}`)
     utterance.lang = 'tr-TR'
-    utterance.rate = 0.95
+    utterance.rate = 1.08
+    utterance.pitch = 1.08
+    utterance.volume = 1
 
     if (turkishVoice) {
       utterance.voice = turkishVoice
