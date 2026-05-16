@@ -6,6 +6,7 @@ import 'katex/dist/katex.min.css';
 import Navbar from './components/Navbar' 
 import Footer from './components/Footer'
 import ThemeToggle from './components/ThemeToggle'
+import AdSenseScript from './components/AdSenseScript'
 
 export const metadata: Metadata = {
   title: {
@@ -98,12 +99,7 @@ export default function RootLayout({
         />
 
         {/* --- GOOGLE ADSENSE --- */}
-        <Script
-          id="adsbygoogle-init"
-          strategy="afterInteractive"
-          crossOrigin="anonymous"
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1700979325865596"
-        />
+        <AdSenseScript />
 
         <aside className="fixed left-4 top-1/2 -translate-y-1/2 z-[100] hidden xl:flex flex-col gap-6">
           {/* Yan panel butonların mevcut kodunla aynı kalabilir */}
