@@ -80,7 +80,7 @@ const structuredData = [
     learningResourceType: 'TÜBİTAK tasarım projesi dijital masal sunumu',
     creator: [
       { '@type': 'Person', name: 'Beren YORULMAZ' },
-      { '@type': 'Person', name: 'Kemak GÖKKUŞ' },
+      { '@type': 'Person', name: 'Kemal GÖKKUŞ' },
       { '@type': 'Person', name: 'Ada GÜNDOĞDU' },
     ],
     contributor: { '@type': 'Person', name: 'Dilek CAN ULUSOY', jobTitle: 'Danışman Öğretmen' },
@@ -242,7 +242,7 @@ export default function EdirneMasallariPage() {
                 <h2 className="mt-2 text-3xl font-black tracking-tight text-[#17233f] dark:text-[#fff7df]">Üç özgün Edirne masalı</h2>
               </div>
               <p className="max-w-xl text-sm leading-6 text-[#6c5d52] dark:text-[#d8cbbd]">
-                “Masalı Oku” düğmesiyle metinleri aynı sayfada açıp kapatabilirsiniz. PDF kitapçık alanı sonraki yayın aşaması için hazır bırakılmıştır.
+                “Masalı Oku” düğmesiyle metinleri aynı sayfada açıp kapatabilirsiniz. PDF kitapçığı açabilir, masalları aynı sayfada okuyabilir ve sesli okuma özelliğini kullanabilirsiniz.
               </p>
             </div>
             <EdirneMasallariClient />
