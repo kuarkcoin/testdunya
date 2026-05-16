@@ -208,7 +208,7 @@ export default function EdirneMasallariPage() {
                   </div>
                   <div>
                     <dt className="font-bold text-[#ffe7a1]">Projede Görev Alan Öğrenciler</dt>
-                    <dd>Beren YORULMAZ • Kemak GÖKKUŞ • Ada GÜNDOĞDU</dd>
+                    <dd>Beren YORULMAZ • Kemal GÖKKUŞ • Ada GÜNDOĞDU</dd>
                   </div>
                 </dl>
               </div>
