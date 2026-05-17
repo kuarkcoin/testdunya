@@ -1,9 +1,11 @@
 import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import EdirneMasallariClient from './EdirneMasallariClient'
 
 const pageUrl = 'https://testdunya.net/edirne-masallari'
+const ogImageUrl = 'https://testdunya.net/images/edirne-masallari-og.jpg'
 const title = 'Edirne Masalları | Kültürel Miras ve Çocuk Masalları'
 const description = 'Edirne’nin tarihî, kültürel ve doğal değerlerini çocuklara masal diliyle tanıtan dijital masal kitabı ve TÜBİTAK tasarım projesi.'
 const keywords = [
@@ -31,11 +33,20 @@ export const metadata: Metadata = {
     siteName: 'TestDünya',
     locale: 'tr_TR',
     type: 'website',
+    images: [
+      {
+        url: ogImageUrl,
+        width: 1200,
+        height: 630,
+        alt: 'Edirne Masalları dijital masal sayfası',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title,
     description,
+    images: [ogImageUrl],
   },
   robots: {
     index: true,
@@ -75,6 +86,7 @@ const structuredData = [
     name: 'Edirne Masalları',
     headline: 'Kültürel Miras, Doğa ve Değerler Eğitimi Temalı Çocuk Masalları',
     description,
+    image: ogImageUrl,
     inLanguage: 'tr-TR',
     educationalUse: ['Kültürel miras eğitimi', 'Değerler eğitimi', 'Çevre bilinci'],
     learningResourceType: 'TÜBİTAK tasarım projesi dijital masal sunumu',
@@ -182,7 +194,7 @@ export default function EdirneMasallariPage() {
                   📘 PDF Kitapçığı Aç
                 </a>
                 <span className="inline-flex items-center justify-center rounded-full border border-[#d6b45d]/35 bg-white/70 px-5 py-3 text-sm font-bold text-[#704b2a] backdrop-blur dark:bg-[#17111d]/70 dark:text-[#f3d9a4]">
-                  🕌 🌊 🏅 🌿 ✨ TÜBİTAK standına hazır dijital sunum
+                  🕌 🌊 🏅 🌿 ✨ TÜBİTAK proje sunumu için hazırlanmış dijital masal sayfası
                 </span>
               </div>
               <div className="mt-8 grid gap-3 text-sm font-bold text-[#17233f] dark:text-[#fff7df] sm:grid-cols-3">
@@ -193,6 +205,17 @@ export default function EdirneMasallariPage() {
             </div>
 
             <div className="rounded-[2.5rem] border border-[#d6b45d]/35 bg-[#fffaf0]/85 p-5 shadow-2xl shadow-[#5b1f2a]/10 backdrop-blur dark:border-[#d6b45d]/20 dark:bg-[#151019]/85 dark:shadow-black/30">
+              <div className="relative mb-5 overflow-hidden rounded-3xl border border-[#d6b45d]/30 shadow-xl">
+                <Image
+                  src="/images/edirne-masallari-og.jpg"
+                  alt="Edirne Masalları proje görseli"
+                  width={1200}
+                  height={630}
+                  priority
+                  sizes="(min-width: 1024px) 420px, 100vw"
+                  className="h-auto w-full object-cover"
+                />
+              </div>
               <div className="grid grid-cols-2 gap-4">
                 <FeatureIcon label="Selimiye" icon="🕌" />
                 <FeatureIcon label="Meriç" icon="🌊" />
@@ -229,7 +252,7 @@ export default function EdirneMasallariPage() {
                 </div>
                 <div className="rounded-3xl bg-[#fbf5e8] p-5 ring-1 ring-[#d6b45d]/30 dark:bg-[#211828]">
                   <p className="text-xs font-black uppercase tracking-[0.2em] text-[#4f7d3a] dark:text-[#8fbd74]">Projede Görev Alan Öğrenciler</p>
-                  <p className="mt-2 text-lg font-black leading-8 text-[#17233f] dark:text-[#fff7df]">Beren YORULMAZ<br />Kemak GÖKKUŞ<br />Ada GÜNDOĞDU</p>
+                  <p className="mt-2 text-lg font-black leading-8 text-[#17233f] dark:text-[#fff7df]">Beren YORULMAZ<br />Kemal GÖKKUŞ<br />Ada GÜNDOĞDU</p>
                 </div>
               </div>
             </div>

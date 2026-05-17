@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 
 const pdfUrl = '/pdf/edirne-masallari.pdf'
 
@@ -588,6 +588,8 @@ export default function EdirneMasallariClient() {
   const [activeSpeechTaleId, setActiveSpeechTaleId] = useState<string | null>(null)
   const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([])
   const [isSpeechSupported, setIsSpeechSupported] = useState(false)
+  const speechSessionRef = useRef(0)
+  const speechStartTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   useEffect(() => {
     const speechSynthesis = getSpeechSynthesis()
@@ -606,6 +608,13 @@ export default function EdirneMasallariClient() {
     speechSynthesis.addEventListener('voiceschanged', updateVoices)
 
     return () => {
+      speechSessionRef.current += 1
+
+      if (speechStartTimeoutRef.current) {
+        clearTimeout(speechStartTimeoutRef.current)
+        speechStartTimeoutRef.current = null
+      }
+
       speechSynthesis.removeEventListener('voiceschanged', updateVoices)
       speechSynthesis.cancel()
     }
@@ -616,42 +625,96 @@ export default function EdirneMasallariClient() {
     [voices],
   )
 
-  const handleSpeak = (tale: Tale) => {
+  const stopSpeech = useCallback(() => {
     const speechSynthesis = getSpeechSynthesis()
+    speechSessionRef.current += 1
 
-    if (!speechSynthesis || typeof SpeechSynthesisUtterance === 'undefined') {
-      return
+    if (speechStartTimeoutRef.current) {
+      clearTimeout(speechStartTimeoutRef.current)
+      speechStartTimeoutRef.current = null
     }
 
-    if (activeSpeechTaleId === tale.id) {
+    speechSynthesis?.cancel()
+    setActiveSpeechTaleId(null)
+  }, [])
+
+  const handleSpeak = useCallback(
+    (tale: Tale) => {
+      const speechSynthesis = getSpeechSynthesis()
+
+      if (!speechSynthesis || typeof SpeechSynthesisUtterance === 'undefined') {
+        return
+      }
+
+      if (activeSpeechTaleId === tale.id) {
+        stopSpeech()
+        return
+      }
+
+      speechSessionRef.current += 1
+
+      if (speechStartTimeoutRef.current) {
+        clearTimeout(speechStartTimeoutRef.current)
+        speechStartTimeoutRef.current = null
+      }
+
       speechSynthesis.cancel()
-      setActiveSpeechTaleId(null)
-      return
-    }
 
-    speechSynthesis.cancel()
+      const sessionId = speechSessionRef.current
+      const speechSegments = [tale.title, ...tale.text]
+      setActiveSpeechTaleId(tale.id)
 
-    const utterance = new SpeechSynthesisUtterance(`${tale.title}.\n\n${tale.text.join('\n\n')}`)
-    utterance.lang = 'tr-TR'
-    utterance.rate = 1.08
-    utterance.pitch = 1.08
-    utterance.volume = 1
+      const speakSegment = (segmentIndex: number) => {
+        if (speechSessionRef.current !== sessionId) {
+          return
+        }
 
-    if (turkishVoice) {
-      utterance.voice = turkishVoice
-    }
+        const segment = speechSegments[segmentIndex]
 
-    utterance.onend = () => {
-      setActiveSpeechTaleId((current) => (current === tale.id ? null : current))
-    }
+        if (!segment) {
+          setActiveSpeechTaleId((current) => (current === tale.id ? null : current))
+          return
+        }
 
-    utterance.onerror = () => {
-      setActiveSpeechTaleId((current) => (current === tale.id ? null : current))
-    }
+        const utterance = new SpeechSynthesisUtterance(segment)
+        utterance.lang = 'tr-TR'
+        utterance.rate = 1.08
+        utterance.pitch = 1.08
+        utterance.volume = 1
 
-    setActiveSpeechTaleId(tale.id)
-    speechSynthesis.speak(utterance)
-  }
+        if (turkishVoice) {
+          utterance.voice = turkishVoice
+        }
+
+        utterance.onend = () => {
+          if (speechSessionRef.current !== sessionId) {
+            return
+          }
+
+          if (segmentIndex + 1 < speechSegments.length) {
+            speakSegment(segmentIndex + 1)
+            return
+          }
+
+          setActiveSpeechTaleId((current) => (current === tale.id ? null : current))
+        }
+
+        utterance.onerror = () => {
+          if (speechSessionRef.current === sessionId) {
+            setActiveSpeechTaleId((current) => (current === tale.id ? null : current))
+          }
+        }
+
+        speechSynthesis.speak(utterance)
+      }
+
+      speechStartTimeoutRef.current = setTimeout(() => {
+        speechStartTimeoutRef.current = null
+        speakSegment(0)
+      }, 100)
+    },
+    [activeSpeechTaleId, stopSpeech, turkishVoice],
+  )
 
   return (
     <section className="grid gap-7 md:grid-cols-2 xl:grid-cols-3">
