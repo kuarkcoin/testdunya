@@ -3,6 +3,7 @@ import type { ReactNode } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import EdirneMasallariClient from './EdirneMasallariClient'
+import AnimatedEdirneIntro from './AnimatedEdirneIntro'
 
 const pageUrl = 'https://testdunya.net/edirne-masallari'
 const ogImageUrl = 'https://testdunya.net/images/edirne-masallari-og.jpg'
@@ -170,8 +171,9 @@ export default function EdirneMasallariPage() {
             <span aria-current="page">Edirne Masalları</span>
           </nav>
 
-          <header className="grid items-center gap-10 lg:grid-cols-[1.15fr_0.85fr]">
-            <div>
+          <header className="relative grid items-center gap-10 overflow-hidden rounded-[2rem] lg:grid-cols-[1.15fr_0.85fr]">
+            <AnimatedEdirneIntro />
+            <div className="relative z-10">
               <div className="inline-flex rounded-full border border-[#d6b45d]/40 bg-white/70 px-4 py-2 text-xs font-black uppercase tracking-[0.24em] text-[#7a1f2b] shadow-sm backdrop-blur dark:bg-[#17111d]/70 dark:text-[#ffd86a]">
                 TÜBİTAK Tasarım Projesi • 2025-2026
               </div>
@@ -204,7 +206,7 @@ export default function EdirneMasallariPage() {
               </div>
             </div>
 
-            <div className="rounded-[2.5rem] border border-[#d6b45d]/35 bg-[#fffaf0]/85 p-5 shadow-2xl shadow-[#5b1f2a]/10 backdrop-blur dark:border-[#d6b45d]/20 dark:bg-[#151019]/85 dark:shadow-black/30">
+            <div className="relative z-10 rounded-[2.5rem] border border-[#d6b45d]/35 bg-[#fffaf0]/85 p-5 shadow-2xl shadow-[#5b1f2a]/10 backdrop-blur dark:border-[#d6b45d]/20 dark:bg-[#151019]/85 dark:shadow-black/30">
               <div className="relative mb-5 overflow-hidden rounded-3xl border border-[#d6b45d]/30 shadow-xl">
                 <Image
                   src="/images/edirne-masallari-og.jpg"
