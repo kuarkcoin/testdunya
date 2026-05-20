@@ -17,6 +17,7 @@ import { bilimParagrafSorulari49, bilimParagrafSorulari50, bilimParagrafSorulari
 import { bilimParagrafSorulari53, bilimParagrafSorulari54, bilimParagrafSorulari55, bilimParagrafSorulari56, bilimParagrafSorulari57 } from './part-14';
 import { bilimParagrafSorulari58 } from './part-15'; 
 import { bilimParagrafSorulari59 } from './part-16';
+import { bilimParagrafSorulari60 } from './part-17';
  
 export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...tarihParagrafSorulari,
@@ -78,5 +79,6 @@ export const sincityParagrafQuestions: SincityParagrafQuestion[] = [
   ...bilimParagrafSorulari57,
   // --- YENİ EKLENEN TESTLERİ DİZİYE DÂHİL ETTİĞİMİZ YER ---
   ...bilimParagrafSorulari58,
-  ...bilimParagrafSorulari59
+  ...bilimParagrafSorulari59,
+  ...bilimParagrafSorulari60
 ];
