@@ -2,7 +2,7 @@ import { sincityParagrafQuestions, type SincityParagrafQuestion } from './sincit
 
 export const PARAGRAF_QUESTIONS_PER_TEST = 20;
 
-export const PARAGRAF_TEST_COUNT = Math.floor(
+export const PARAGRAF_TEST_COUNT = Math.ceil(
   sincityParagrafQuestions.length / PARAGRAF_QUESTIONS_PER_TEST
 );
 
@@ -19,6 +19,9 @@ export const PARAGRAF_TESTS: ParagrafTestMeta[] = Array.from(
   { length: PARAGRAF_TEST_COUNT },
   (_, idx) => {
     const id = idx + 1;
+    const start = idx * PARAGRAF_QUESTIONS_PER_TEST;
+    const end = start + PARAGRAF_QUESTIONS_PER_TEST;
+    const realQuestionCount = sincityParagrafQuestions.slice(start, end).length;
 
     return {
       id,
@@ -26,7 +29,7 @@ export const PARAGRAF_TESTS: ParagrafTestMeta[] = Array.from(
       dataId: `paragraf-test-${id}`,
       title: `Paragraf Test ${id}`,
       subtitle: 'Paragraf, anlam ve çıkarım becerisi testi',
-      questionCount: PARAGRAF_QUESTIONS_PER_TEST,
+      questionCount: realQuestionCount,
     };
   },
 );
