@@ -125,8 +125,13 @@ export default function AnimatedEdirneIntro() {
             linear-gradient(to bottom, rgba(15, 12, 19, 0.9), rgba(15, 12, 19, 0.56) 56%, rgba(15, 12, 19, 0.12));
         }
 
-        .edirne-scene-enter { animation: sceneRise 3.4s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
-        .edirne-sun-pulse { animation: glowPulse 7.5s ease-in-out infinite alternate; }
+        .edirne-scene-enter { 
+          animation: sceneRise 3.4s cubic-bezier(0.2, 0.7, 0.2, 1) both; 
+        }
+        .edirne-sun-pulse { 
+          animation: glowPulse 7.5s ease-in-out infinite alternate; 
+          will-change: transform, opacity;
+        }
         .dark .edirne-sun-pulse { opacity: 0.72; }
         .edirne-halo { animation: haloPulse 7s ease-in-out infinite alternate; }
 
@@ -143,9 +148,9 @@ export default function AnimatedEdirneIntro() {
 
         .meric-bridge { animation: bridgeSettle 3s ease-out both; }
 
-        .river-wave.wave-a { animation: flowA 24s linear infinite; }
-        .river-wave.wave-b { animation: flowB 19s linear infinite; }
-        .river-wave.wave-c { animation: flowC 29s linear infinite; }
+        .river-wave.wave-a { animation: flowA 24s linear infinite; will-change: transform; }
+        .river-wave.wave-b { animation: flowB 19s linear infinite; will-change: transform; }
+        .river-wave.wave-c { animation: flowC 29s linear infinite; will-change: transform; }
 
         .river-glints rect { animation: glintMove 6.4s ease-in-out infinite; }
         .river-glints rect:nth-child(2) { animation-delay: 0.8s; }
@@ -157,6 +162,7 @@ export default function AnimatedEdirneIntro() {
           opacity: 0;
           transform-origin: 1242px 336px;
           animation: wrestlerReveal 1.6s ease-out 1s forwards;
+          will-change: transform, opacity;
         }
 
         @keyframes sceneFade { from { opacity: 0; } to { opacity: 1; } }
@@ -177,7 +183,13 @@ export default function AnimatedEdirneIntro() {
         @media (max-width: 640px) {
           .edirne-scene-enter { transform: translateY(4px) scale(0.95); transform-origin: center top; }
           .meric-bridge { opacity: 0.88; }
-          .wrestler-mark { transform: translate(-34px, -4px) scale(0.9); }
+          .wrestler-mark { 
+            animation: wrestlerRevealMobile 1.6s ease-out 1s forwards !important;
+          }
+          @keyframes wrestlerRevealMobile { 
+            from { opacity: 0; transform: translate(-34px, 4px) scale(0.85); } 
+            to { opacity: 1; transform: translate(-34px, -4px) scale(0.9); } 
+          }
           .haze-2 { opacity: 0.7; }
         }
 
