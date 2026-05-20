@@ -20,7 +20,7 @@ export const PARAGRAF_TESTS: ParagrafTestMeta[] = Array.from({ length: PARAGRAF_
     slug: `test-${id}`,
     dataId: `paragraf-test-${id}`,
     title: `Paragraf Test ${id}`,
-    subtitle: '5. sınıf düzeyi okuduğunu anlama',
+    subtitle: 'Okuduğunu anlama ve paragraf yorumlama testi',
     questionCount: PARAGRAF_QUESTIONS_PER_TEST,
   };
 });
