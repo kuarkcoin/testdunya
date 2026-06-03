@@ -2836,7 +2836,208 @@ export const ingilizceData: SubjectData = {
     ]
   },
   term2: {
-    test1: [],
+   test1: [
+      // --- 2. DÖNEM GÖRSEL ODAKLI VE SEÇMELİ SORULAR ---
+      {
+        id: "e5-2-t1-img-01",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki yiyeceğe göre boşluğu doldurunuz. 'I love traditional Italian food. My favorite is ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test1/pasta.webp", // Makarna görseli
+        options: ["pizza", "pasta", "pancake", "pide"],
+        correct: 1,
+        explanation: "Görselde İtalyan mutfağına ait makarna (pasta) görülmektedir.",
+      },
+      {
+        id: "e5-2-t1-img-02",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki hayvana ve cümleye göre uygun kelimeyi seçiniz. 'A elephant is ________ than a monkey.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test1/elephant-monkey.webp", // Fil ve maymun yan yana
+        options: ["smaller", "heavier", "thinner", "faster"],
+        correct: 1,
+        explanation: "Fil, maymundan daha ağırdır. Karşılaştırma cümlesinde 'daha ağır' anlamına gelen 'heavier' kullanılmalıdır.",
+      },
+      {
+        id: "e5-2-t1-img-03",
+        subject: "ingilizce",
+        prompt: "Görseldeki parti malzemesine göre boşluğu doldurunuz. 'We need lots of colorful ____ for the birthday party.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test1/balloons.webp", // Renkli balonlar
+        options: ["candles", "invitation cards", "balloons", "presents"],
+        correct: 2,
+        explanation: "Görselde doğum günü partileri için kullanılan renkli balonlar (balloons) yer almaktadır.",
+      },
+      {
+        id: "e5-2-t1-img-04",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki fitness aktivitesine göre cümleyi tamamlayınız. 'He likes ________ in the park at weekends.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test1/jogging.webp", // Hafif tempo koşan adam
+        options: ["jogging", "swimming", "lifting weights", "playing chess"],
+        correct: 0,
+        explanation: "Görseldeki kişi parkta hafif tempolu koşu (jogging) yapmaktadır.",
+      },
+      {
+        id: "e5-2-t1-img-05",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki vahşi hayvanın yaşam alanına (habitat) göre boşluğu doldurunuz. 'Lions are wild animals. They live in the ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test1/savannah.webp", // Savan/Doğa görseli
+        options: ["ocean", "desert", "savannah", "farm"],
+        correct: 2,
+        explanation: "Aslanlar vahşi hayvanlardır ve doğal yaşam alanları savanlardır (savannah).",
+      },
+      {
+        id: "e5-2-t1-img-06",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki içeceğe göre diyalogdaki boşluğu doldurunuz. A: 'Would you like some ____?' B: 'Yes, please. I am very thirsty.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test1/lemonade.webp", // Limonata bardağı
+        options: ["tea", "coffee", "lemonade", "milk"],
+        correct: 2,
+        explanation: "Görselde buzlu ve limonlu bir bardak limonata (lemonade) sunulmaktadır.",
+      },
+      {
+        id: "e5-2-t1-img-07",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki çiftlik hayvanının yaptığı eyleme göre boşluğu doldurunuz. 'Look at the horse! It is ____ fast.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test1/horse-running.webp", // Koşan at
+        options: ["swimming", "running", "flying", "climbing"],
+        correct: 1,
+        explanation: "Görseldeki at hızla koşmaktadır (running). Şimdiki zaman yapısına uygundur.",
+      },
+      {
+        id: "e5-2-t1-img-08",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki davetiyeye göre parti ne zamandır? 'When is the party?'",
+        imageUrl: "/images/grade5/ingilizce/term2/test1/invitation-card.webp", // Üzerinde "Sunday, 4 pm" yazan kart
+        options: ["On Monday", "On Saturday", "On Wednesday", "On Sunday"],
+        correct: 3,
+        explanation: "Davetiye kartının (invitation card) üzerinde gün olarak Pazar (Sunday) belirtilmiştir.",
+      },
+      {
+        id: "e5-2-t1-img-09",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki spor kartına göre canlının türünü seçiniz. 'Dolphins live in the ocean. They are ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test1/dolphin.webp", // Yunus balığı görseli
+        options: ["reptiles", "birds", "mammals", "amphibians"],
+        correct: 2,
+        explanation: "Yunuslar okyanusta yaşarlar ancak balık değil, memeli (mammals) hayvanlardır.",
+      },
+      {
+        id: "e5-2-t1-img-10",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki kutlama türüne göre boşluğu doldurunuz. 'They are celebrating their ____ with a big cake.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test1/birthday-party.webp", // Doğum günü pastalı çocuk partisi
+        options: ["Halloween", "New Year", "Birthday", "Graduation"],
+        correct: 2,
+        explanation: "Görselde üzerinde mumlar olan bir pasta ile doğum günü (birthday) kutlanmaktadır.",
+      },
+      {
+        id: "e5-2-t1-img-11",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki menü kartına göre hangisi bir tatlıdır (dessert)?",
+        imageUrl: "/images/grade5/ingilizce/term2/test1/menu.webp", // Menü görseli (Soup, Pizza, Tea, Pudding içeren)
+        options: ["Soup", "Pizza", "Tea", "Pudding"],
+        correct: 3,
+        explanation: "Menüdeki seçeneklerden puding (pudding) bir tatlı (dessert) çeşididir.",
+      },
+      {
+        id: "e5-2-t1-img-12",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki kaplumbağa ve tavşan kıyaslamasına göre boşluğu doldurunuz. 'A turtle is ________ than a rabbit.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test1/turtle-rabbit.webp", // Kaplumbağa ve tavşan
+        options: ["faster", "slower", "taller", "bigger"],
+        correct: 1,
+        explanation: "Kaplumbağa tavşandan daha yavaştır. 'Daha yavaş' demek için 'slower' yapısı kullanılır.",
+      },
+      {
+        id: "e5-2-t1-img-13",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki aktiviteye göre boşluğu doldurunuz. 'My favorite fitness activity is ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test1/cycling.webp", // Bisiklete binen çocuk
+        options: ["cycling", "trekking", "swimming", "workout"],
+        correct: 0,
+        explanation: "Görselde bisiklete binme sporu yani 'cycling' yapılmaktadır.",
+      },
+      {
+        id: "e5-2-t1-img-14",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki tabelaya göre evcil hayvan sahibinin ne yapması gerekir? 'You should ________ your dog.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test1/walk-dog.webp", // Köpeğini gezdiren adam tabelası
+        options: ["feed", "vaccinate", "walk", "adopt"],
+        correct: 2,
+        explanation: "Görselde köpeği tasmasından tutup yürütme sembolü vardır. Köpek gezdirmek 'walk the dog' kalıbıdır.",
+      },
+      {
+        id: "e5-2-t1-img-15",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki vahşi hayvana göre cümleyi tamamlayınız. 'The ________ is a dangerous reptile with big teeth.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test1/crocodile.webp", // Timsah görseli
+        options: ["crocodile", "shark", "tiger", "snake"],
+        correct: 0,
+        explanation: "Görseldeki büyük dişli, tehlikeli sürüngen bir timsahtır (crocodile).",
+      },
+      {
+        id: "e5-2-t1-img-16",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki doğum günü detayına göre soruyu cevaplayınız. 'How many candles are there on the cake?'",
+        imageUrl: "/images/grade5/ingilizce/term2/test1/cake-candles.webp", // Üzerinde 5 mum olan pasta
+        options: ["three", "four", "five", "six"],
+        correct: 2,
+        explanation: "Görseldeki pastanın üzerinde tam 5 (five) adet mum bulunmaktadır.",
+      },
+      {
+        id: "e5-2-t1-img-17",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki restoranda garsona ne sipariş edersiniz? 'I want to drink something hot. Can I have a cup of ____, please?'",
+        imageUrl: "/images/grade5/ingilizce/term2/test1/tea.webp", // Fincanda sıcak çay
+        options: ["orange juice", "lemonade", "tea", "iced water"],
+        correct: 2,
+        explanation: "Görselde fincan içinde dumanı tüten sıcak bir çay (tea) resmi vardır.",
+      },
+      {
+        id: "e5-2-t1-img-18",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki tabelaya göre doğayı korumak için ne yapmalıyız? 'We should ________.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test1/plant-trees.webp", // Fidan diken eller sembolü
+        options: ["cut down trees", "plant trees", "pollute the environment", "hunt wild animals"],
+        correct: 1,
+        explanation: "Görselde fidan dikme / ağaçlandırma eylemi gösterilmektedir (plant trees).",
+      },
+      {
+        id: "e5-2-t1-img-19",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki hayvan barınağı (shelter) aktivitesine göre boşluğu doldurunuz. 'The girl is ____ the street dogs.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test1/feeding-dogs.webp", // Köpeklere mama veren kız
+        options: ["buying", "feeding", "frightening", "riding"],
+        correct: 1,
+        explanation: "Görseldeki kız köpekleri beslemektedir (feeding).",
+      },
+      {
+        id: "e5-2-t1-img-20",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki çocuğun fitness yapmak istememe sebebini belirten kelimeyi seçiniz. 'I can't lift this weight. I am very ________.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test1/weak-boy.webp", // Halteri kaldıramayan cılız çocuk
+        options: ["strong", "fast", "heavy", "weak"],
+        correct: 3,
+        explanation: "Halteri kaldıramayan çocuk güçsüz / zayıf (weak) olduğunu belirtmektedir.",
+      }
+    ],
     test2: []
   }
 };
