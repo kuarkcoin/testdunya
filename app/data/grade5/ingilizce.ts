@@ -2858,11 +2858,12 @@ export const ingilizceData: SubjectData = {
         correct: 1,
         explanation: "Fil, maymundan daha ağırdır. Karşılaştırma cümlesinde 'daha ağır' anlamına gelen 'heavier' kullanılmalıdır.",
       },
-      {
+     {
         id: "e5-2-t1-img-03",
         subject: "ingilizce",
+        term: 2, // <-- İŞTE UNUTULAN VE SİSTEMİ DURDURAN O KÜÇÜK SATIR BURADA!
         prompt: "Görseldeki parti malzemesine göre boşluğu doldurunuz. 'We need lots of colorful ____ for the birthday party.'",
-        imageUrl: "/images/grade5/ingilizce/term2/test1/balloons.webp", // Renkli balonlar
+        imageUrl: "/images/grade5/ingilizce/term2/test1/balloons.webp",
         options: ["candles", "invitation cards", "balloons", "presents"],
         correct: 2,
         explanation: "Görselde doğum günü partileri için kullanılan renkli balonlar (balloons) yer almaktadır.",
