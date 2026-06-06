@@ -2891,6 +2891,523 @@ export const fenData: SubjectData = {
         correct: 0,
         explanation: "Dinozor, mamut ve moa kuşlarının nesli tamamen tükenmiştir. Kelaynak kuşları ise ülkemizde koruma altındaki nesli tehlikede olan canlılardandır."
       }
+    ],
+    test3: [
+      // --- 5. SINIF FEN BİLİMLERİ 2. DÖNEM TEST 3 (BASİT ELEKTRİK DEVRELERİ) ---
+      // [1-10 Arası Sorular: Görsel Odaklı / Şekilli Sorular]
+      {
+        id: "f5-2-t3-img-01",
+        subject: "fen",
+        term: 2,
+        prompt: "Şekildeki basit elektrik devresinde lamba ışık vermemektedir. Devrenin tamamlanarak ampulün ışık vermesini sağlamak için hangi devre elemanının durumu değiştirilmelidir?",
+        imageUrl: "/images/grade5/fen/term2/test3/acik-anahtar.webp",
+        options: ["Pil sayısı artırılmalıdır.", "Açık olan anahtar kapatılmalıdır.", "Devreye bir ampul daha eklenmelidir.", "Bağlantı kablosu kısaltılmalıdır."],
+        correct: 1,
+        explanation: "Anahtar açık olduğunda elektrik akımı karşıya geçemez ve devre kesintiye uğrar. Anahtar kapatıldığında devre tamamlanır ve lamba yanar."
+      },
+      {
+        id: "f5-2-t3-img-02",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde bir elektrik devre elemanının gerçek resmi ve devre şemalarında kullanılan evrensel sembolü eşleştirilmiştir. Buna göre sembolü verilen devre elemanı hangisidir?",
+        imageUrl: "/images/grade5/fen/term2/test3/pil-sembol.webp",
+        options: ["Ampul", "Anahtar", "Pil", "Bağlantı kablosu"],
+        correct: 2,
+        explanation: "Devre şemalarında yan yana çizilen biri uzun (+) diğeri kısa (-) paralel çizgiler, devreye elektrik enerjisi sağlayan pili temsil eder."
+      },
+      {
+        id: "f5-2-t3-img-03",
+        subject: "fen",
+        term: 2,
+        prompt: "Özdeş pil ve ampullerle kurulan farklı elektrik devrelerindeki ampul parlaklıkları grafik üzerinde gösterilmiştir. Bu grafiğe göre aşağıdakilerden hangisi söylenebilir?",
+        imageUrl: "/images/grade5/fen/term2/test3/parlaklik-grafik.webp",
+        options: [
+          "Pil sayısı azaldıkça ampul parlaklığı artmıştır.",
+          "1. devredeki ampul sayısı 2. devreden daha fazladır.",
+          "Aynı sayıda ampul içeren devrelerden pil sayısı çok olanın parlaklığı en fazladır.",
+          "Devrelerdeki anahtarlar açık olduğu için parlaklıklar sıfırdır."
+        ],
+        correct: 2,
+        explanation: "Devredeki pil sayısının artması sağlanan enerji miktarını artıracağı için ampul parlaklığının da artmasına neden olur."
+      },
+      {
+        id: "f5-2-t3-img-04",
+        subject: "fen",
+        term: 2,
+        prompt: "Verilen elektrik devresi şeması dikkatlice incelendiğinde, devrenin özellikleri hakkında hangi seçenekteki bilgi doğru olur?",
+        imageUrl: "/images/grade5/fen/term2/test3/devre-sematik.webp",
+        options: [
+          "Devrede iki adet anahtar bulunmaktadır.",
+          "Devre kapalıdır ve ampuller ışık vermektedir.",
+          "Devrede 3 lamba ve kapalı bir anahtar vardır.",
+          "Devrede iki ampul, üç pil bulunur ve anahtar açıktır."
+        ],
+        correct: 3,
+        explanation: "Şemadaki semboller sayıldığında 2 adet ampul (çarpılı daire), 3 adet pil ve havada duran (açık) 1 adet anahtar açıkça görülmektedir."
+      },
+      {
+        id: "f5-2-t3-img-05",
+        subject: "fen",
+        term: 2,
+        prompt: "Görseldeki K ve L devrelerinde ampul parlaklığının değişme nedeni araştırılmaktadır. Bu deney düzeneğinde araştırmacının kendi isteğiyle değiştirdiği 'bağımsız değişken' hangisidir?",
+        imageUrl: "/images/grade5/fen/term2/test3/bagimsiz-degisken.webp",
+        options: ["Ampul sayısı", "Pil sayısı", "Ampul parlaklığı", "Bağlantı kablosunun boyu"],
+        correct: 1,
+        explanation: "Deneyde ampul sayıları eşit tutulurken, pil sayıları farklı seçilmiştir. Deneyde bizim değiştirdiğimiz bu etkene bağımsız değişken denir."
+      },
+      {
+        id: "f5-2-t3-img-06",
+        subject: "fen",
+        term: 2,
+        prompt: "Aşağıdaki görselde şematik sembolü verilen devre elemanının basit elektrik devresindeki temel görevi nedir?",
+        imageUrl: "/images/grade5/fen/term2/test3/ampul-sembolu.webp",
+        options: [
+          "Elektrik enerjisini ışık enerjisine dönüştürmek",
+          "Devredeki elektrik akımını açıp kapatmak",
+          "Devre için gerekli elektrik enerjisini üretmek",
+          "Elektrik enerjisini devre elemanlarına taşımak"
+        ],
+        correct: 0,
+        explanation: "İçinde çarpı işareti olan daire sembolü ampule aittir. Ampul, üzerinden geçen elektrik enerjisini ışık enerjisine dönüştürür."
+      },
+      {
+        id: "f5-2-t3-img-07",
+        subject: "fen",
+        term: 2,
+        prompt: "Görseldeki basit elektrik devresinde elemanlar arası bağlantılarda bir hata yapılmıştır. Bu hata nedeniyle ampul ışık vermediğine göre, yapılan hata hangisidir?",
+        imageUrl: "/images/grade5/fen/term2/test3/hatali-devre.webp",
+        options: [
+          "Devrede anahtar kullanılmaması",
+          "Pillerin ters (+ kutuplarının karşı karşıya) bağlanmış olması",
+          "Pil yatağı kullanılmaması",
+          "Ampulün duya yerleştirilmiş olması"
+        ],
+        correct: 1,
+        explanation: "Pillerin çalışabilmesi için artı (+) ve eksi (-) kutuplarının birbirini takip edecek şekilde düzgün bağlanması gerekir. Ters bağlanan piller akım üretemez."
+      },
+      {
+        id: "f5-2-t3-img-08",
+        subject: "fen",
+        term: 2,
+        prompt: "Grafikte sabit sayıda pil içeren bir devredeki ampul sayısının artışına bağlı olarak parlaklık değişimi verilmiştir. Bu grafiğe göre hangi sonuca ulaşılır?",
+        imageUrl: "/images/grade5/fen/term2/test3/ampul-parlaklik-grafik.webp",
+        options: [
+          "Ampul sayısı arttıkça parlaklık da artar.",
+          "Devredeki pil sayısı sürekli azaltılmıştır.",
+          "Ampul sayısı ile ampul parlaklığı ters orantılıdır.",
+          "Ampul sayısının değişmesi parlaklığı etkilemez."
+        ],
+        correct: 2,
+        explanation: "Grafikte ampul sayısı arttıkça parlaklık eğrisi aşağı doğru inmektedir. Bu durum ampul sayısı ile parlaklığın ters orantılı olduğunu gösterir."
+      },
+      {
+        id: "f5-2-t3-img-09",
+        subject: "fen",
+        term: 2,
+        prompt: "Dünyanın her yerindeki bilim insanlarının ortak bir dil kullanabilmesi amacıyla tasarlanan panoda soru işareti (?) olan yere hangi sembol çizilmelidir?",
+        imageUrl: "/images/grade5/fen/term2/test3/isik-sembol-bosluk.webp",
+        options: ["Düz bir çizgi", "İçinde X işareti olan bir daire", "Uzun ve kısa paralel iki çizgi", "Kalkık duran kesikli çizgi"],
+        correct: 1,
+        explanation: "Panoda gerçek resmi verilen ampulün bilimsel şemalardaki evrensel sembol karşılığı, içinde X işareti bulunan dairedir."
+      },
+      {
+        id: "f5-2-t3-img-10",
+        subject: "fen",
+        term: 2,
+        prompt: "Görseldeki düzenekte açık konumda olan anahtar kapatılarak lambanın yanması sağlanacaktır. Bu durumun şematik gösterimi hangisidir?",
+        imageUrl: "/images/grade5/fen/term2/test3/anahtar-degisim.webp",
+        options: [
+          "Çizginin tamamen ortadan silinmesi",
+          "Havada duran çizginin yatay hatta indirilerek düz çizgiyle birleştirilmesi",
+          "Dairenin içine bir çarpı işareti daha atılması",
+          "Çizgilerin dikey konuma getirilmesi"
+        ],
+        correct: 1,
+        explanation: "Anahtarın kapatılması, havada duran bağlantı kolunun indirilerek düz çizgiyle temas ettirilmesi ve akımın geçebileceği kesintisiz bir yol oluşturulmasıyla gösterilir."
+      },
+
+      // [11-20 Arası Sorular: Teorik / Bilgi Odaklı Sorular]
+      {
+        id: "f5-2-t3-11",
+        subject: "fen",
+        term: 2,
+        prompt: "Basit bir elektrik devresinde anahtar kapalı olduğu halde ampul ışık vermiyorsa, bunun nedeni aşağıdakilerden hangisi olamaz?",
+        options: [
+          "Pilin bitmiş olması",
+          "Bağlantı kablosunun içindeki iletken telin kopuk olması",
+          "Ampulün patlamış olması",
+          "Devrede pil yatağı ve duy kullanılması"
+        ],
+        correct: 3,
+        explanation: "Pil yatağı ve duy kullanmak devrenin çalışmasını engellemez, aksine elemanların daha düzenli ve sabit durmasını sağlar."
+      },
+      {
+        id: "f5-2-t3-12",
+        subject: "fen",
+        term: 2,
+        prompt: "Bir elektrik devresinde ampul sayısını değiştirmeden sadece pil sayısı artırılırsa ampul parlaklığındaki değişim ve bu deneydeki 'bağımlı değişken' hangisi olur?",
+        options: [
+          "Parlaklık azalır - Bağımlı değişken: Pil sayısı",
+          "Parlaklık artar - Bağımlı değişken: Ampul parlaklığı",
+          "Parlaklık değişmez - Bağımlı değişken: Ampul sayısı",
+          "Parlaklık artar - Bağımlı değişken: Pil sayısı"
+        ],
+        correct: 1,
+        explanation: "Pil sayısı artarsa enerji artar ve ampul daha parlak yanar. Pil sayısının değişmesine bağlı olarak değişen bu sonuç (parlaklık) bağımlı değişkendir."
+      },
+      {
+        id: "f5-2-t3-13",
+        subject: "fen",
+        term: 2,
+        prompt: "Elektrik devre elemanlarının resim yerine sembollerle gösterilmesinin temel amacı aşağıdakilerden hangisidir?",
+        options: [
+          "Devrelerin üretim maliyetini artırmak",
+          "Çizimlerin sadece mühendisler tarafından anlaşılmasını sağlamak",
+          "Dünyanın her yerinde ortak, standart ve anlaşılır bir bilim dili oluşturmak",
+          "Resim yeteneği kötü olan öğrencileri belirlemek"
+        ],
+        correct: 2,
+        explanation: "Sembolik gösterimler ortak bir bilim dili oluşturur. Böylece farklı dilleri konuşan insanlar aynı şemaya bakarak devreyi hatasız kurabilir."
+      },
+      {
+        id: "f5-2-t3-14",
+        subject: "fen",
+        term: 2,
+        prompt: "Bir öğrenci odasının lambasını açmak için duvardaki düğmeye basıyor ancak lamba ışık vermiyor. Bu durum basit elektrik devresi mantığıyla açıklandığında hangisi söylenebilir?",
+        options: [
+          "Duvardaki lamba düğmesi devredeki pili temsil eder.",
+          "Düğmeye basıldığında lamba yanmıyorsa devre kapalı konuma geçmiştir.",
+          "Devredeki anahtar açık kalmıştır veya hat üzerinde bir kopukluk vardır.",
+          "Lamba bozuk olsa bile devre kapalıysa kesinlikle ışık verir."
+        ],
+        correct: 2,
+        explanation: "Lambanın yanmaması, elektrik akımının pürüzsüzce dolanacağı kesintisiz yolun bir yerde kesildiğini (açık anahtar veya kopuk kablo) gösterir."
+      },
+      {
+        id: "f5-2-t3-15",
+        subject: "fen",
+        term: 2,
+        prompt: "Basit bir elektrik devresi şeması çizilirken bağlantı kablolarının gösterimiyle ilgili hangi kurala dikkat edilmelidir?",
+        options: [
+          "Kablolar pillerin sadece artı (+) kutbuna bağlanmalıdır.",
+          "Şemada kablolar kesintisiz düz çizgiler halinde gösterilmeli, arada boşluk kalmamalıdır.",
+          "Kabloların rengi şemada mutlaka boyanarak belirtilmelidir.",
+          "Kablolar ampul sembolünün tam üzerinden geçecek şekilde çizilmelidir."
+        ],
+        correct: 1,
+        explanation: "Devre şemalarında bağlantı kabloları kesintisiz düz çizgiler olarak çizilir. Çizgideki boşluk, akımın geçemediğini (kopukluk) ifade eder."
+      },
+      {
+        id: "f5-2-t3-16",
+        subject: "fen",
+        term: 2,
+        prompt: "Yan yana (seri) bağlı 3 ampul ve 1 pilden oluşan bir devrede ampullerden biri duydan sökülürse diğer ampullerin durumu hakkında ne söylenebilir?",
+        options: [
+          "Diğer ampuller daha parlak yanmaya başlar.",
+          "Diğer ampuller de akım kesileceği için anında söner.",
+          "Sadece pile en yakın olan ampul yanmaya devam eder.",
+          "Diğer ampullerin parlaklığı yarıya düşer."
+        ],
+        correct: 1,
+        explanation: "Ampullerden birinin sökülmesi veya patlaması, o noktada kablonun kopmasıyla aynı etkiyi yaratır; devre açık hale gelir ve tüm lambalar söner."
+      },
+      {
+        id: "f5-2-t3-17",
+        subject: "fen",
+        term: 2,
+        prompt: "Bilimsel bir deneyde 'kontrol edilen (sabit tutulan) değişken' kavramının açıklaması hangi seçenekte doğru verilmiştir?",
+        options: [
+          "Deneyde sürekli miktarı artırılan değişkendir.",
+          "Deney boyunca doğruluğu test edilen ana sonuçtur.",
+          "Deneyin adil olması için miktarı ve özellikleri tamamen aynı tutulan etkendir.",
+          "Deney bittikten sonra kendi kendine değişen değerdir."
+        ],
+        correct: 3,
+        explanation: "Deneyde sadece tek bir etkenin (bağımsız değişken) sonucunu görebilmek için, diğer tüm şartların tamamen eşit ve sabit tutulması gerekir."
+      },
+      {
+        id: "f5-2-t3-18",
+        subject: "fen",
+        term: 2,
+        prompt: "Elektrik devrelerinde kullanılan 'Duy' ve 'Pil Yatağı' elemanlarının devre şemalarında sembolik olarak çizilmeme nedeni nedir?",
+        options: [
+          "Bu elemanların çok ucuz ve dayanıksız parçalar olması",
+          "Çizim alanında gereksiz yer kaplamalarını engellemek",
+          "Akımın geçişine veya parlaklığa doğrudan elektriksel bir etki yapmayan, sadece sabitleyici parçalar olmaları",
+          "Bu parçaların gelecekte devrelerde kullanılmasının yasaklanacak olması"
+        ],
+        correct: 2,
+        explanation: "Duy ve pil yatağı sadece fiziksel sabitleyicilerdir. Devrenin elektriksel akışını, şemasını ve ampul parlaklığını doğrudan etkilemezler."
+      },
+      {
+        id: "f5-2-t3-19",
+        subject: "fen",
+        term: 2,
+        prompt: "Laboratuvarda kurduğu devredeki ampulün çok sönük yandığını gören bir öğrenci, ampulün daha parlak ışık vermesini sağlamak için hangisini yapmalıdır?",
+        options: [
+          "Devreye bir ampul daha eklemelidir.",
+          "Devredeki mevcut pillerden birini sökmelidir.",
+          "Devredeki ampul sayısını azaltmalı veya pil sayısını artırmalıdır.",
+          "Anahtarı tamamen açık konuma getirmelidir."
+        ],
+        correct: 2,
+        explanation: "Parlaklığı artırmak için ya enerji tüketen ortak sayısı (ampul) azaltılmalı ya da enerji sağlayan kaynak (pil) güçlendirilmelidir."
+      },
+      {
+        id: "f5-2-t3-20",
+        subject: "fen",
+        term: 2,
+        prompt: "Basit bir elektrik devresinde piller üzerinden geçen elektrik akımının yönü ile ilgili hangi kural doğrudur?",
+        options: [
+          "Akım pillerin sadece eksi kutbunda üretilir ve dışarı çıkmaz.",
+          "Elektrik akımının yönü pilin artı (+) kutbundan eksi (-) kutbuna doğrudur.",
+          "Akım kablonun dış rengine ve kalınlığına göre yön değiştirir.",
+          "Anahtar açık konuma getirildiğinde akım yönü tersine döner."
+        ],
+        correct: 1,
+        explanation: "Elektrik devrelerinde akımın yönü evrensel bilimsel kabul olarak her zaman pilin pozitif (+) ucundan çıkarak negatif (-) ucuna doğru ilerler."
+      }
+    ],
+    test4: [
+      // --- 5. SINIF FEN BİLİMLERİ 2. DÖNEM TEST 4 (GENEL TEKRAR VE TARAMA) ---
+      // [1-10 Arası Sorular: Görsel Odaklı / Şekilli Sorular]
+      {
+        id: "f5-2-t4-img-01",
+        subject: "fen",
+        term: 2,
+        prompt: "Görseldeki elektrik devresinde yer alan özdeş K, L ve M ampullerinin parlaklıklarının büyükten küçüğe sıralanışı hangi seçenekte doğru verilmiştir?",
+        imageUrl: "/images/grade5/fen/term2/test4/devre-parlaklik-kiyas.webp",
+        options: ["K > L > M", "M > L > K", "K = L = M", "K > M > L"],
+        correct: 2,
+        explanation: "Basit ve tek kollu (seri) devrelerde, pilden çıkan elektrik akımı tüm ampullerden eşit miktarda geçer. Bu yüzden özdeş K, L ve M ampullerinin parlaklıkları birbirine eşittir."
+      },
+      {
+        id: "f5-2-t4-img-02",
+        subject: "fen",
+        term: 2,
+        prompt: "Görseldeki düzenekte bir ışık kaynağının önüne yerleştirilen cismin ekrandaki tam gölgesinin sınırları net olarak çizilmiştir. Bu cismin türü aşağıdakilerden hangisidir?",
+        imageUrl: "/images/grade5/fen/term2/test4/golge-cisim-turu.webp",
+        options: ["Saydam madde", "Yarı saydam madde", "Opak madde", "Akışkan madde"],
+        correct: 2,
+        explanation: "Ekranda koyu ve net bir tam gölge oluşabilmesi için ışığın cisim tarafından tamamen engellenmesi gerekir. Işığı hiç geçirmeyen maddelere opak (saydam olmayan) madde denir."
+      },
+      {
+        id: "f5-2-t4-img-03",
+        subject: "fen",
+        term: 2,
+        prompt: "Sıcaklıkları görseldeki gibi verilen X ve Y sıvıları boş bir kapta karıştırılıyor. Isı alışverişi tamamlandığında karışımın son denge sıcaklığı aşağıdakilerden hangisi 'kesinlikle' olamaz?",
+        imageUrl: "/images/grade5/fen/term2/test4/karisim-sicaklik.webp",
+        options: ["30 °C", "45 °C", "60 °C", "75 °C"],
+        correct: 3,
+        explanation: "Isı alışverişinde denge sıcaklığı, karıştırılan maddelerin ilk sıcaklıklarının arasında bir değer almak zorundadır (20 °C ile 70 °C arasında). 75 °C bu sınırın dışındadır."
+      },
+      {
+        id: "f5-2-t4-img-04",
+        subject: "fen",
+        term: 2,
+        prompt: "Görseldeki dinamometreye asılan cisim yayın 4 bölme uzamasına neden olmuştur. Dinamometrenin her bir bölmesi 5 Newton'u gösterdiğine göre asılan cismin ağırlığı kaç N'dur?",
+        imageUrl: "/images/grade5/fen/term2/test4/dinamometre-hesap.webp",
+        options: ["10", "15", "20", "25"],
+        correct: 2,
+        explanation: "Dinamometredeki toplam ağırlık, uzanan bölme sayısı ile her bölmenin değerinin çarpılmasıyla bulunur: 4 bölme x 5 N = 20 N."
+      },
+      {
+        id: "f5-2-t4-img-05",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde ışığın yansıma kanunlarını gösteren bir şema verilmiştir. Şemada ok işareti ile gösterilen ve yüzeye dik olarak çizilen hayali çizgiye ne ad verilir?",
+        imageUrl: "/images/grade5/fen/term2/test4/yuzey-normali-sema.webp",
+        options: ["Gelen ışın", "Yansıyan ışın", "Yüzeyin normali", "Yansıma açısı"],
+        correct: 2,
+        explanation: "Işığın yansıtıcı yüzeye değdiği noktadan yüzeye dik (90 derece) olarak çizildiği varsayılan hayali çizgiye 'Yüzeyin Normali' (N) denir."
+      },
+      {
+        id: "f5-2-t4-img-06",
+        subject: "fen",
+        term: 2,
+        prompt: "Görseldeki kapta buz parçalarının ısıtılarak su haline geçmesi ve ardından gaz fazına ilerlemesi şematize edilmiştir. 1 numaralı ok yönünde gerçekleşen hal değişiminin adı nedir?",
+        imageUrl: "/images/grade5/fen/term2/test4/erime-buharlasma-sema.webp",
+        options: ["Erime", "Donma", "Yoğuşma", "Kırağılaşma"],
+        correct: 0,
+        explanation: "Katı haldeki buzun dışarıdan ısı alarak sıvı su haline geçmesi olayına erime adı verilir."
+      },
+      {
+        id: "f5-2-t4-img-07",
+        subject: "fen",
+        term: 2,
+        prompt: "Görseldeki şemada Güneş, Ay ve Dünya aynı doğrultuda sıralanmıştır. Ay'ın gölgesinin Dünya üzerine düştüğü bu doğa olayı hangisidir?",
+        imageUrl: "/images/grade5/fen/term2/test4/gunes-tutulmasi-kesit.webp",
+        options: ["Ay tutulması", "Güneş tutulması", "Mevsim oluşumu", "Gece-gündüz eşitliği"],
+        correct: 1,
+        explanation: "Ay, Güneş ile Dünya arasına girdiğinde Güneş ışınlarını engeller ve Dünya üzerinde belirli bir bölgeye gölgesi düşer. Bu olaya Güneş tutulması denir."
+      },
+      {
+        id: "f5-2-t4-img-08",
+        subject: "fen",
+        term: 2,
+        prompt: "Görseldeki özdeş iki elektrik devresinde pil sayıları eşit tutulurken, 2. devreye fazladan bir ampul daha eklenmiştir. Bu deneyde ölçülen 'bağımlı değişken' hangisidir?",
+        imageUrl: "/images/grade5/fen/term2/test4/ampul-degisken-deney.webp",
+        options: ["Pil sayısı", "Ampul sayısı", "Ampul parlaklığı", "Anahtarın konumu"],
+        correct: 2,
+        explanation: "Deneyde ampul sayısının değiştirilmesine bağlı olarak değişen sonuç ampul parlaklığıdır. Deneydeki sonuca (etkilenen değişkene) bağımlı değişken denir."
+      },
+      {
+        id: "f5-2-t4-img-09",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde çevre kirliliği türleri fotoğraflarla eşleştirilmiştir. Fabrika bacalarından çıkan gazların doğrudan neden olduğu kirlilik türü hangisidir?",
+        imageUrl: "/images/grade5/fen/term2/test4/hava-kirliligi-fabrika.webp",
+        options: ["Su kirliliği", "Toprak kirliliği", "Gürültü kirliliği", "Hava kirliliği"],
+        correct: 3,
+        explanation: "Fabrika bacalarından ve araç egzozlarından çıkan zehirli gazlar atmosferde birikerek hava kirliliğine neden olur."
+      },
+      {
+        id: "f5-2-t4-img-10",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde bir bilyenin serbest bırakıldıktan sonra pürüzlü tahta ve pürüzsüz cam zeminlerde kat ettiği mesafeler gösterilmiştir. Bilyenin cam zeminde daha uzağa gitmesinin nedeni nedir?",
+        imageUrl: "/images/grade5/fen/term2/test4/zemin-mesafe-surtunme.webp",
+        options: [
+          "Cam zemindeki sürtünme kuvvetinin tahta zeminden daha az olması",
+          "Tahta zeminin bilyeyi mıknatıs gibi çekmesi",
+          "Cam yüzeylerin cisimleri hızlandıran bir enerji üretmesi",
+          "Tahta yüzeyde yer çekiminin daha fazla olması"
+        ],
+        correct: 0,
+        explanation: "Pürüzsüz ve kaygan yüzeylerde (cam) sürtünme kuvveti azdır. Sürtünme az olduğu için cisim daha az dirençle karşılaşır ve daha uzağa gider."
+      },
+
+      // [11-20 Arası Sorular: Teorik / Bilgi Odaklı Sorular]
+      {
+        id: "f5-2-t4-11",
+        subject: "fen",
+        term: 2,
+        prompt: "Basit bir elektrik devresinde dolanan elektrik akımının izlediği yol ile ilgili aşağıda verilen bilgilerden hangisi doğrudur?",
+        options: [
+          "Akım pilin eksi (-) kutbundan çıkar, artı (+) kutbuna ulaşır.",
+          "Anahtar açık olduğunda akım kesintisiz olarak dolanmaya devam eder.",
+          "Elektrik akımı pilin artı (+) kutbundan çıkarak elemanları dolaşır ve eksi (-) kutbuna ulaşır.",
+          "Akım sadece ampulün içindeki cam söküldüğünde yön değiştirir."
+        ],
+        correct: 2,
+        explanation: "Elektrik devrelerinde akımın yönü her zaman pilin pozitif (+) kutbundan negatif (-) kutbuna doğru kabul edilir."
+      },
+      {
+        id: "f5-2-t4-12",
+        subject: "fen",
+        term: 2,
+        prompt: "Isı ve sıcaklık kavramları ile ilgili aşağıda verilen ifadelerden hangisi bilimsel olarak doğrudur?",
+        options: [
+          "Isı ve sıcaklık aynı kavramlardır, birimleri derecedir.",
+          "Isı termometre ile ölçülür, sıcaklık kalorimetre kabı ile hesaplanır.",
+          "Sıcaklık bir enerji türüdür, ısı ise enerjinin ölçüm biçimidir.",
+          "Isı bir enerji türüdür ve birimi Joule'dur; sıcaklık ise termometre ile ölçülür."
+        ],
+        correct: 3,
+        explanation: "Isı transfer edilen bir enerji türüdür (birimi Joule veya Kalori). Sıcaklık ise bir enerji değil, maddenin taneciklerinin ortalama kinetik enerjisinin bir göstergesidir (birimi °C)."
+      },
+      {
+        id: "f5-2-t4-13",
+        subject: "fen",
+        term: 2,
+        prompt: "Işığın maddelerle etkileşimi dikkate alındığında; sisli hava, buzlu cam ve tül perde ışığı geçirme özelliklerine göre hangi grupta yer alır?",
+        options: ["Saydam maddeler", "Yarı saydam maddeler", "Opak maddeler", "Yansıtıcı maddeler"],
+        correct: 1,
+        explanation: "Işığı tamamen geçirmeyip, üzerlerine düşen ışığı kısmen (bulanık şekilde) geçiren maddelere yarı saydam maddeler denir."
+      },
+      {
+        id: "f5-2-t4-14",
+        subject: "fen",
+        term: 2,
+        prompt: "Bir öğrenci özdeş ampul sayısını sabit tuttuğu bir devrede pil sayısını kademeli olarak artırıyor. Bu öğrencinin yaptığı deneyin araştırma sorusu hangisidir?",
+        options: [
+          "Ampul sayısının parlaklığa etkisi nedir?",
+          "Kablo boyu devrenin çalışmasını nasıl etkiler?",
+          "Pil sayısının ampul parlaklığına etkisi nedir?",
+          "Anahtarın açık olması devredeki akımı değiştirir mi?"
+        ],
+        correct: 2,
+        explanation: "Deneyde miktarı değiştirilen şey (bağımsız değişken) pil sayısıdır. Bu yüzden deney, pil sayısının ampul parlaklığı üzerindeki etkisini araştırmaktadır."
+      },
+      {
+        id: "f5-2-t4-15",
+        subject: "fen",
+        term: 2,
+        prompt: "Katı bir maddenin sıvı hale geçmeden doğrudan gaz haline geçmesi olayına ne ad verilir?",
+        options: ["Süblimleşme", "Kırağılaşma", "Yoğuşma", "Buharlaşma"],
+        correct: 0,
+        explanation: "Kuru buz veya naftalinde görüldüğü gibi, katı bir maddenin ısı alarak sıvılaşmadan doğrudan gaz fazına geçmesine süblimleşme denir."
+      },
+      {
+        id: "f5-2-t4-16",
+        subject: "fen",
+        term: 2,
+        prompt: "Ayakkabılarımızın tabanının tırtıklı yapılması ve kışın araç lastiklerine zincir takılmasının ortak bilimsel gerekçesi aşağıdakilerden hangisidir?",
+        options: [
+          "Sürtünme kuvvetini azaltarak daha hızlı hareket etmek",
+          "Yüzey pürüzlülüğünü artırarak sürtünme kuvvetini artırmak ve kaymayı önlemek",
+          "Maddelerin esneklik potansiyelini yükseltmek",
+          "Dinamometrelerin ölçüm hassasiyetini dengelemek"
+        ],
+        correct: 1,
+        explanation: "Tırtıklar ve zincirler yüzeydeki pürüz miktarını artırır. Pürüz arttıkça sürtünme kuvveti artar ve güvenli hareket sağlanır."
+      },
+      {
+        id: "f5-2-t4-17",
+        subject: "fen",
+        term: 2,
+        prompt: "Tam gölge oluşumu ve gölge boyunu etkileyen faktörlerle ilgili verilen bilgilerden hangisi yanlıştır?",
+        options: [
+          "Işık kaynağı opak cisme yaklaştırılırsa gölge boyu büyür.",
+          "Opak cisim perdeden uzaklaştırılıp ışık kaynağına yaklaştırılırsa gölge boyu küçülür.",
+          "Perde opak cisimden uzaklaştırılırsa gölge boyu büyür.",
+          "Işık doğrusal yayıldığı için opak cisimlerin arkasında karanlık alanlar (gölge) oluşur."
+        ],
+        correct: 1,
+        explanation: "Cisim ışık kaynağına yaklaştırıldığında ışınların önünü daha büyük bir açıyla kapatır ve perdedeki gölge boyu küçülmez, aksine büyür."
+      },
+      {
+        id: "f5-2-t4-18",
+        subject: "fen",
+        term: 2,
+        prompt: "İnsan faaliyetleri sonucu çevre kirliliğinin artması biyoçeşitliliği olumsuz etkiler. Aşağıdakilerden hangisi biyoçeşitliliği korumak için alınabilecek bir önlemdir?",
+        options: [
+          "Tarım arazilerinde aşırı kimyasal gübre kullanmak",
+          "Sanayi tesislerinin atıklarını doğrudan akarsulara boşaltmak",
+          "Doğal yaşam alanlarını (Milli Parklar) koruma altına almak ve av yasaklarına uymak",
+          "Ormanlık alanları keserek yerleşim yerine dönüştürmek"
+        ],
+        correct: 2,
+        explanation: "Milli parklar kurmak, ağaçlandırma yapmak ve kaçak avlanmayı engellemek canlı türlerinin neslinin korunmasını sağlayarak biyoçeşitliliği destekler."
+      },
+      {
+        id: "f5-2-t4-19",
+        subject: "fen",
+        term: 2,
+        prompt: "Dinamometrenin yapısında bulunan yayın esneklik özelliğini kaybederek kalıcı olarak uzaması (bozulması) aşağıdakilerden hangisiyle açıklanır?",
+        options: [
+          "Dinamometreye ölçebileceği maksimum değerden daha küçük bir yük asılmasıyla",
+          "Dinamometrenin esneklik sınırını aşan, taşıyabileceğinden çok daha büyük bir kuvvet uygulanmasıyla",
+          "Dinamometre yayı kalınlığının hassasiyeti artırmasıyla",
+          "Yayın yapıldığı metalin sıcaklıkla büzüşmesiyle"
+        ],
+        correct: 1,
+        explanation: "Her esnek maddenin bir dayanıklılık/esneklik sınırı vardır. Bu sınırın üzerinde bir kuvvet uygulandığında yay esneklik özelliğini kaybeder ve eski haline dönemez."
+      },
+      {
+        id: "f5-2-t4-20",
+        subject: "fen",
+        term: 2,
+        prompt: "Elektrik devre şemalarında devre elemanlarının resimleri yerine tüm dünyada standart sembollerin kullanılmasının ana nedeni nedir?",
+        options: [
+          "Resim çizmenin çok fazla zaman alması ve maliyetli olması",
+          "Sembollerin devreleri daha estetik göstermesi",
+          "Dünyanın neresinde olursa olsun tüm bilim insanlarının ve öğrencilerin pürüzsüzce anlayabileceği ortak bir bilim dili oluşturmak",
+          "Pil ve ampul üreticilerinin sembol kullanılmasını zorunlu tutması"
+        ],
+        correct: 2,
+        explanation: "Semboller evrenseldir. Dil, alfabe veya ülke değişse bile devre sembolleri aynı kaldığı için ortak bir bilim dili ve küresel anlaşılırlık sağlanır."
+      }
     ]
   } // term2 bitti
 }; // fenData bitti
