@@ -3039,6 +3039,199 @@ export const ingilizceData: SubjectData = {
         explanation: "Halteri kaldıramayan çocuk güçsüz / zayıf (weak) olduğunu belirtmektedir.",
       }
     ],
-    test2: []
-  }
-};
+    test2: [
+      // --- 5. SINIF İNGİLİZCE 2. DÖNEM TEST 2 ---
+      // [1-10 Arası Sorular: Görsel Odaklı / Şekilli Sorular]
+      {
+        id: "e5-2-t2-img-01",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the picture. Fill in the blank according to the classroom rule. 'Please, ________ your hand to speak.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test2/raise-hand.webp",
+        options: ["raise", "open", "listen", "write"],
+        correct: 0,
+        explanation: "Görselde parmak kaldıran bir student vardır. Sınıfta söz istemek için el kaldırmak 'raise your hand' kalıbı ile ifade edilir."
+      },
+      {
+        id: "e5-2-t2-img-02",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the picture and complete the family life activity. 'My father and I love ________ the car together on weekends.'",
+        imageUrl: "/images/grade5/ingilizce/test2/washing-car.webp",
+        options: ["driving", "washing", "buying", "repairing"],
+        correct: 1,
+        explanation: "Görselde babasıyla birlikte bahçede araba yıkayan bir çocuk vardır. Araba yıkamak 'washing the car' eylemidir."
+      },
+      {
+        id: "e5-2-t2-img-03",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the visual. What is the weather like in nature today? 'It is ________ and windy.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test2/stormy-weather.webp",
+        options: ["sunny", "hot", "stormy", "warm"],
+        correct: 2,
+        explanation: "Görselde şimşeklerin çaktığı, fırtınalı bir doğa resmi yer almaktadır. Fırtınalı 'stormy' anlamına gelir."
+      },
+      {
+        id: "e5-2-t2-img-04",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the neighborhood map. Where is the museum? 'The museum is ________ the park and the bank.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test2/map-between.webp",
+        options: ["next to", "opposite", "between", "behind"],
+        correct: 2,
+        explanation: "Görseldeki haritada müze binası, park ile bankanın tam ortasında (arasında) konumlanmıştır; yani 'between' kullanılmalıdır."
+      },
+      {
+        id: "e5-2-t2-img-05",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the future life prediction illustration. 'In the future, people will have ________ to travel into space.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test2/flying-cars.webp",
+        options: ["flying cars", "telephones", "traditional books", "old houses"],
+        correct: 0,
+        explanation: "Görselde geleceğin teknolojik dünyasında gökyüzünde uçan arabalar (flying cars) şematize edilmiştir."
+      },
+      {
+        id: "e5-2-t2-img-06",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the world globe graphic. Neil is from Canada. His nationality is ________.",
+        imageUrl: "/images/grade5/ingilizce/term2/test2/canada-globe.webp",
+        options: ["Canadian", "British", "French", "German"],
+        correct: 0,
+        explanation: "Kanada (Canada) ülkesinde yaşayan bir bireyin milliyeti 'Canadian' (Kanadalı) olarak söylenir."
+      },
+      {
+        id: "e5-2-t2-img-07",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the picture about personal daily routine. 'I always ________ my teeth twice a day.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test2/brush-teeth.webp",
+        options: ["wash", "brush", "comb", "clean"],
+        correct: 1,
+        explanation: "Görselde dişlerini fırçalayan bir çocuk görülmektedir. Diş fırçalamak 'brush teeth' kalıbıdır."
+      },
+      {
+        id: "e5-2-t2-img-08",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the school objects. Which class do these school items belong to? 'They are for ________ class.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test2/art-palette.webp",
+        options: ["Maths", "Art", "Science", "History"],
+        correct: 1,
+        explanation: "Görselde resim tuvali, fırçalar og boya paleti bulunmaktadır. Bu malzemeler Görsel Sanatlar (Art) dersine aittir."
+      },
+      {
+        id: "e5-2-t2-img-09",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the picture. Fill in the blank with the correct phrase about the text message. 'Don't cross the street. Look at the light. It is ________.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test2/red-light.webp",
+        options: ["green", "yellow", "red", "blue"],
+        correct: 2,
+        explanation: "Görselde yayalar için durulması gerektiğini belirten kırmızı trafik ışığı (red light) yanmaktadır."
+      },
+      {
+        id: "e5-2-t2-img-10",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the animal in nature. 'A ________ can run very fast, but it can't climb trees.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test2/cheetah.webp",
+        options: ["cheetah", "turtle", "monkey", "koala"],
+        correct: 0,
+        explanation: "Görselde doğada hızla koşan bir çita (cheetah) şematize edilmiştir."
+      },
+
+      // [11-20 Arası Sorular: Teorik / Bilgi Odaklı Sorular]
+      {
+        id: "e5-2-t2-11",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Read the classroom dialogue. Teacher: '________ is the dictionary?' Student: 'It is on the teacher's desk.'",
+        options: ["What", "Where", "When", "Who"],
+        correct: 1,
+        explanation: "Cevapta sözlüğün öğretmenin masasında (on the desk) olduğu belirtilerek yer bildirilmiştir. Yer soran soru kelimesi 'Where'dir."
+      },
+      {
+        id: "e5-2-t2-12",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Complete the text about family life: 'My mother cooks delicious food in the ________, and we have dinner together.'",
+        options: ["bathroom", "bedroom", "kitchen", "garage"],
+        correct: 2,
+        explanation: "Yemek pişirme eylemi evin mutfak (kitchen) bölümünde gerçekleştirilir."
+      },
+      {
+        id: "e5-2-t2-13",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Choose the correct option about nature and animals: 'Birds can ________ high in the sky, but they can't swim.'",
+        options: ["run", "fly", "jump", "walk"],
+        correct: 1,
+        explanation: "Kuşların gökyüzünde gerçekleştirebildiği doğal yetenek uçmaktır (fly)."
+      },
+      {
+        id: "e5-2-t2-14",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Complete the sentence about city life: 'I want to buy some fresh bread. I should go to the ________ in our neighborhood.'",
+        options: ["pharmacy", "bakery", "hospital", "library"],
+        correct: 1,
+        explanation: "Taze ekmek satın almak için mahalledeki fırına (bakery) gidilir."
+      },
+      {
+        id: "e5-2-t2-15",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Read the future life prediction: 'In the year 2050, robots ________ do all the hard housework for people.'",
+        options: ["did", "will", "are", "were"],
+        explanation: "Geleceğe yönelik plan ve tahminlerde (In the year 2050) gelecek zaman yardımcı fiili olan 'will' kullanılır.",
+        correct: 1
+      },
+      {
+        id: "e5-2-t2-16",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Complete the dialogue about life in the world. Tom: 'Where is Amy from?' Jack: 'She is from Germany. She speaks ________.'",
+        options: ["German", "Germany", "French", "English"],
+        correct: 0,
+        explanation: "Almanya'dan (Germany) gelen bir kişi dil olarak Almanca (German) konuşur."
+      },
+      {
+        id: "e5-2-t2-17",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Read the text about personal routine: 'I am a successful student. I always ________ my homework before I watch TV.'",
+        options: ["make", "do", "has", "have"],
+        correct: 1,
+        explanation: "İngilizcede ödev yapmak eylemi daima 'do homework' kalıbı ile birleşir."
+      },
+      {
+        id: "e5-2-t2-18",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Complete the sentence about school life: 'We have fun experiments in the ________ lab in our school.'",
+        options: ["music", "art", "science", "history"],
+        correct: 2,
+        explanation: "Eğlenceli bilimsel deneyler okulun fen laboratuvarında (science lab) yapılır."
+      },
+      {
+        id: "e5-2-t2-19",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Choose the correct comparative form: 'An elephant is ________ than a tiger.' (heavy)",
+        options: ["heavier", "heavy", "more heavy", "heaviest"],
+        correct: 0,
+        explanation: "Tek heceli/kısa sıfatlarda karşılaştırma (Comparative) yapılırken sıfatın sonuna '-er/ier' takısı gelir (heavier)."
+      },
+      {
+        id: "e5-2-t2-20",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Read the conversation about city rules. Officer: 'Excuse me! You ________ park your car here. Look at the sign.'",
+        options: ["should", "can", "mustn't", "must"],
+        correct: 2,
+        explanation: "Tabelaya göre yasak olan durumlarda veya kurallara aykırı durumlarda 'mustn't' (yasak/yapmamalısın) kullanılır."
+      }
+    ],
