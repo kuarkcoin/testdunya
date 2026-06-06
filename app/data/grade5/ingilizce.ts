@@ -3234,4 +3234,6 @@ export const ingilizceData: SubjectData = {
         correct: 2,
         explanation: "Tabelaya göre yasak olan durumlarda veya kurallara aykırı durumlarda 'mustn't' (yasak/yapmamalısın) kullanılır."
       }
-    ],
+    ] // <-- test2 dizisi bitti
+  } // <-- term2 nesnesi bitti
+}; // <-- ingilizceData ana nesnesi bitti (Dosyanın tamamen kapanışı)
