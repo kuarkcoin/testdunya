@@ -3386,7 +3386,7 @@ export const turkceData: SubjectData = {
         correct: 2,
         explanation: "Soru bildiren ve bir yanıt bekleyen tüm cümlelerin sonuna evrensel olarak soru işareti (?) konur."
       }
-    ]
-  }
-};
+    ] // test3 dizisinin sonu
+  } // term2 nesnesinin sonu
+}; // turkceData ana nesnesinin sonu (Dosyanın tamamen bitişi)
  
