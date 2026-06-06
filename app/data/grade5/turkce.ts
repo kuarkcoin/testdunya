@@ -3377,7 +3377,7 @@ export const turkceData: SubjectData = {
         correct: 2,
         explanation: "Sevgi, duyu organlarıyla algılanamayan, tamamen kalbi ve zihinsel bir duygu durumu olduğu için soyuttur."
       },
-      {
+     {
         id: "t5-2-t3-20",
         subject: "turkce",
         term: 2,
@@ -3386,8 +3386,7 @@ export const turkceData: SubjectData = {
         correct: 2,
         explanation: "Soru bildiren ve bir yanıt bekleyen tüm cümlelerin sonuna evrensel olarak soru işareti (?) konur."
       }
-    ]
-  }
-    test2: [],
-  },
-};
+    ] // <-- test3 bitti
+  } // <-- term2 bitti
+}; // <-- turkceData bitti
+ 
