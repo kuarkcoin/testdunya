@@ -2647,5 +2647,251 @@ export const fenData: SubjectData = {
         explanation: "50/10 = 5 N başına 1 cm düşer. 15 / 5 = 3 cm uzar."
       }
     ]
+    test2: [
+      // --- 5. SINIF FEN BİLİMLERİ 2. DÖNEM TEST 2 ---
+      // [1-10 Arası Sorular: Görsel Odaklı / Şekilli Sorular]
+      {
+        id: "f5-2-t2-img-01",
+        subject: "fen",
+        term: 2,
+        prompt: "Görseldeki özdeş dinamometrelere asılan K, L ve M cisimlerinin uzama miktarları verilmiştir. Buna göre cisimlerin ağırlıklarının büyükten küçüğe sıralanışı hangisidir?",
+        imageUrl: "/images/grade5/fen/term2/test2/dinamometre-uzama.webp",
+        options: ["K > L > M", "M > L > K", "L > K > M", "M > K > L"],
+        correct: 1,
+        explanation: "Dinamometrelerdeki uzama miktarı cismin ağırlığı ile doğru orantılıdır. En fazla uzayan M en ağır, en az uzayan K ise en hafiftir."
+      },
+      {
+        id: "f5-2-t2-img-02",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde bir bilyenin pürüzsüz mermer zemin ile pürüzlü halı zemindeki hareket mesafeleri şematize edilmiştir. Bu deneye göre aşağıdakilerden hangisi söylenebilir?",
+        imageUrl: "/images/grade5/fen/term2/test2/surtunme-zemin.webp",
+        options: [
+          "Halı zemindeki sürtünme kuvveti daha azdır.",
+          "Zemin pürüzlülüğü arttıkça sürtünme kuvveti artar.",
+          "Mermer zeminde cisim daha yavaş hareket eder.",
+          "Sürtünme kuvveti cismin kütlesine bağlıdır."
+        ],
+        correct: 1,
+        explanation: "Pürüzlü yüzeylerde (halı) sürtünme kuvveti daha fazla olduğu için cisim daha az mesafe kat eder. Pürüzlülük arttıkça sürtünme artar."
+      },
+      {
+        id: "f5-2-t2-img-03",
+        subject: "fen",
+        term: 2,
+        prompt: "Görseldeki kapta bulunan saf suyun ısıtılması sürecine ait sıcaklık-zaman grafiği verilmiştir. Grafikte yatay çizgi ile gösterilen ve sıcaklığın sabit kaldığı X noktası suyun hangi özelliğini gösterir?",
+        imageUrl: "/images/grade5/fen/term2/test2/su-kaynama-grafik.webp",
+        options: ["Donma noktası", "Erime noktası", "Kaynama noktası", "Yoğuşma noktası"],
+        correct: 2,
+        explanation: "Saf maddeler hal değiştirirken sıcaklıkları sabit kalır. Isıtılan suyun sıcaklığının 100 °C'de sabit kalması onun kaynama noktası olduğunu gösterir."
+      },
+      {
+        id: "f5-2-t2-img-04",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde bir mum alevinin arkasına yerleştirilen opak, yarı saydam ve saydam maddelerin ışığı geçirme durumları modellenmiştir. Buna göre 2 numaralı bölgeye yerleştirilen madde hangisi olabilir?",
+        imageUrl: "/images/grade5/fen/term2/test2/isik-gecirgenlik.webp",
+        options: ["Pencere camı", "Mukavva kutu", "Buzlu cam", "Demir levha"],
+        correct: 2,
+        explanation: "Görseldeki 2 numaralı bölge ışığı kısmen geçiren yarı saydam maddeleri temsil etmektedir. Şıklardaki buzlu cam yarı saydamdır."
+      },
+      {
+        id: "f5-2-t2-img-05",
+        subject: "fen",
+        term: 2,
+        prompt: "Görseldeki el fenerinin önüne yerleştirilen opak cismin arkasındaki perdede tam gölgesi oluşuyor. Perdedeki gölgenin boyutunu büyütmek için hangisi yapılmalıdır?",
+        imageUrl: "/images/grade5/fen/term2/test2/golge-boyu.webp",
+        options: [
+          "Işık kaynağını opak cisimden uzaklaştırmak",
+          "Opak cismi ışık kaynağına yaklaştırmak",
+          "Perdeyi opak cisimden uzaklaştırmak",
+          "Opak cismi büyüterek perdeye yaklaştırmak"
+        ],
+        correct: 1,
+        explanation: "Işık kaynağı ile opak cisim birbirine yaklaştıkça perdede oluşan tam gölgenin boyutu büyür."
+      },
+      {
+        id: "f5-2-t2-img-06",
+        subject: "fen",
+        term: 2,
+        prompt: "Görseldeki şemada Güneş, Dünya ve Ay'ın konumları verilmiştir. Bu konumda gerçekleşen gök olayı aşağıdakilerden hangisidir?",
+        imageUrl: "/images/grade5/fen/term2/test2/ay-tutulmasi-sema.webp",
+        options: ["Güneş tutulması", "Ay tutulması", "Gelgit olayı", "Mevsim geçişi"],
+        correct: 1,
+        explanation: "Dünya, Güneş ile Ay arasına girdiğinde Dünya'nın gölgesi Ay'ın üzerine düşer ve Ay tutulması gerçekleşir."
+      },
+      {
+        id: "f5-2-t2-img-07",
+        subject: "fen",
+        term: 2,
+        prompt: "Görseldeki termometrelerde aynı ortamda bulunan biri metal, diğeri tahta iki çubuğun sıcaklık ölçüm değerleri gösterilmiştir. Isı akış yönü ve denge sıcaklığı için hangisi doğrudur?",
+        imageUrl: "/images/grade5/fen/term2/test2/isi-alisverisi.webp",
+        options: [
+          "Isı akışı soğuk maddeden sıcak maddeye doğrudur.",
+          "Maddelerin son sıcaklıkları ilk sıcaklıklarından bağımsızdır.",
+          "Isı akışı sıcaklığı yüksek olandan düşük olana doğrudur.",
+          "Denge sıcaklığı iki sıcaklığın toplamına eşittir."
+        ],
+        correct: 2,
+        explanation: "Isı alışverişi her zaman sıcaklığı yüksek olan maddeden sıcaklığı düşük olan maddeye doğru gerçekleşir."
+      },
+      {
+        id: "f5-2-t2-img-08",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde pürüzsüz düz bir aynaya gelen ışık ışınının yansıması gösterilmiştir. Gelen ışın ile ayna yüzeyi arasındaki açı 40° olduğuna göre yansıma açısı kaç derecedir?",
+        imageUrl: "/images/grade5/fen/term2/test2/isik-yansima-aci.webp",
+        options: ["40", "50", "60", "90"],
+        correct: 1,
+        explanation: "Yüzeyin normali ayna ile 90 derecelik açı yapar. Gelen ışının ayna ile açısı 40° ise gelme açısı 90 - 40 = 50° olur. Gelme açısı yansıma açısına eşit olduğundan yansıma açısı da 50°'dir."
+      },
+      {
+        id: "f5-2-t2-img-09",
+        subject: "fen",
+        term: 2,
+        prompt: "Görseldeki şemada biyoçeşitliliği azaltan faktörler sınıflandırılmıştır. Soru işareti (?) olan yere aşağıdakilerden hangisi yazılabilir?",
+        imageUrl: "/images/grade5/fen/term2/test2/biyocesitlilik-faktor.webp",
+        options: ["Milli parkların artırılması", "Organik tarım yapılması", "Aşırı ve kaçak avlanma", "Atık suların arıtılması"],
+        correct: 2,
+        explanation: "Kaçak ve kontrolsüz avlanma, canlı türlerinin neslini tehlikeye atarak biyoçeşitliliği doğrudan tehdit eder."
+      },
+      {
+        id: "f5-2-t2-img-10",
+        subject: "fen",
+        term: 2,
+        prompt: "Görseldeki kapalı kapta gerçekleşen hal değişimi olayında taneciklerin düzensizliğinin arttığı ve dışarıdan ısı alındığı biliniyor. Bu olay hangisidir?",
+        imageUrl: "/images/grade5/fen/term2/test2/katı-sıvı-hal.webp",
+        options: ["Donma", "Yoğuşma", "Erime", "Kırağılaşma"],
+        correct: 2,
+        explanation: "Katı bir maddenin dışarıdan ısı alarak sıvı hale geçmesine erime denir. Erime sırasında tanecikler arası mesafe ve düzensizlik artar."
+      },
+
+      // [11-20 Arası Sorular: Teoretik / Bilgi Odaklı Sorular]
+      {
+        id: "f5-2-t2-11",
+        subject: "fen",
+        term: 2,
+        prompt: "Dinamometreler ile ilgili verilen bilgilerden hangisi yanlıştır?",
+        options: [
+          "İçerisinde esnek yay bulunur.",
+          "Kuvvetin büyüklüğünü ölçer.",
+          "Her dinamometrenin ölçebileceği maksimum bir sınır vardır.",
+          "Yay kalınlaştıkça dinamometrenin hassasiyeti artırılmış olur."
+        ],
+        correct: 3,
+        explanation: "Yay kalınlaştıkça dinamometre daha sertleşir ve büyük kuvvetleri ölçebilir ancak hassas (küçük) ölçüm yapma yeteneği azalır."
+      },
+      {
+        id: "f5-2-t2-12",
+        subject: "fen",
+        term: 2,
+        prompt: "Kışın karlı yollara tuz dökülmesi ve araç lastiklerine zincir takılmasının temel amacı sırasıyla hangi seçenekte doğru verilmiştir?",
+        options: [
+          "Sürtünmeyi artırmak - Sürtünmeyi azaltmak",
+          "Sürtünmeyi azaltmak - Sürtünmeyi artırmak",
+          "Sürtünmeyi artırmak - Sürtünmeyi artırmak",
+          "Sürtünmeyi azaltmak - Sürtünmeyi azaltmak"
+        ],
+        correct: 1,
+        explanation: "Tuz dökmek buzlanmayı önleyerek kaymayı (sürtünmeyi azaltmayı) hedefler, zincir takmak ise yüzey pürüzünü artırarak sürtünmeyi artırır."
+      },
+      {
+        id: "f5-2-t2-13",
+        subject: "fen",
+        term: 2,
+        prompt: "Aşağıda verilen maddelerden hangisi ışığı geçirme özelliğine göre diğerlerinden farklı bir grupta yer alır?",
+        options: ["Hava", "Su", "Şeffaf naylon", "Yağlı kağıt"],
+        correct: 3,
+        explanation: "Hava, su ve şeffaf naylon saydam maddelerken; yağlı kağıt ışığı kısmen geçiren yarı saydam bir maddedir."
+      },
+      {
+        id: "f5-2-t2-14",
+        subject: "fen",
+        term: 2,
+        prompt: "Isı alan saf bir katı maddenin erimeye başladığı andan tamamen eridiği ana kadar geçen sürede sıcaklığı nasıl değişir?",
+        options: ["Sürekli artar", "Sürekli azalır", "Sabit kalır", "Önce artar sonra azalır"],
+        correct: 2,
+        explanation: "Saf maddeler hal değiştirirken (erime, kaynama, donma vb.) dışarıdan ısı alsalar bile sıcaklıkları tamamen hal değişimi bitene kadar sabit kalır."
+      },
+      {
+        id: "f5-2-t2-15",
+        subject: "fen",
+        term: 2,
+        prompt: "Işığın düzgün yansıması ve dağınık yansıması ile ilgili aşağıda verilen özelliklerden hangisi ortaktır?",
+        options: [
+          "Yansıyan ışınların birbirine paralel olması",
+          "Net bir görüntünün oluşmasını sağlaması",
+          "Gelen ışınların yansıma kanunlarına uyması",
+          "Pürüzsüz yüzeylerde gerçekleşmesi"
+        ],
+        correct: 2,
+        explanation: "Yüzey nasıl olursa olsun (pürüzlü veya pürüzsüz), ışığın yansıdığı her durumda yansıma kanunları (gelme açısı = yansıma açısı) kesinlikle geçerlidir."
+      },
+      {
+        id: "f5-2-t2-16",
+        subject: "fen",
+        term: 2,
+        prompt: "Doğal çevrenin bozulması ve çevre kirliliğini önlemek amacıyla alınabilecek tedbirlerden hangisi yanlıştır?",
+        options: [
+          "Fosil yakıt kullanımını artırmak",
+          "Geri dönüşüm bilincini yaygınlaştırmak",
+          "Sanayi atıklarını arıtarak doğaya bırakmak",
+          "Yenilenebilir enerji kaynaklarına yönelmek"
+        ],
+        correct: 0,
+        explanation: "Fosil yakıtların (kömür, petrol vb.) artırılması hava kirliliğini ve küresel ısınmayı tetikler, çevreye zarar verir."
+      },
+      {
+        id: "f5-2-t2-17",
+        subject: "fen",
+        term: 2,
+        prompt: "Bir kutunun içine yerleştirilen yanan bir lambadan çıkan ışık ışınlarının kutunun deliklerinden dışarı çıkış şekli inceleniyor. Bu gözlem ışığın hangi özelliğini kanıtlar?",
+        options: [
+          "Işığın sadece boşlukta yayıldığını",
+          "Işığın her yöne ve doğrusal yayıldığını",
+          "Işığın yansıma özelliğinin olduğunu",
+          "Işığın maddelerden geçemediğini"
+        ],
+        correct: 1,
+        explanation: "Işık kaynağından çıkan ışınlar bir engel olmadığı sürece her yöne ve doğrusal (düz çizgiler halinde) yayılır."
+      },
+      {
+        id: "f5-2-t2-18",
+        subject: "fen",
+        term: 2,
+        prompt: "Aşağıdaki olayların hangisinde maddenin dış ortama 'ısı verdiği' söylenebilir?",
+        options: [
+          "Elinize dökülen kolonyanın buharlaşması",
+          "Kışın çatılardaki buzların erimesi",
+          "Buzdolabından çıkan su şişesinin dışının buğulanması (yoğuşma)",
+          "Islak çamaşırların kuruması"
+        ],
+        correct: 2,
+        explanation: "Yoğuşma olayı gazdan sıvıya geçiştir. Gaz maddeler sıvı hale geçerken dışarıya ısı verirler."
+      },
+      {
+        id: "f5-2-t2-19",
+        subject: "fen",
+        term: 2,
+        prompt: "Sürtünme kuvvetinin günlük yaşantımızdaki etkileriyle ilgili verilen örneklerden hangisi sürtünmeyi 'azaltmaya' yönelik bir uygulamadır?",
+        options: [
+          "Kapı menteşelerinin yağlanması",
+          "Haltercilerin ellerine özel toz sürmesi",
+          "Ayakkabı tabanlarının tırtıklı yapılması",
+          "Merdiven basamaklarına kaydırmaz bant yapıştırılması"
+        ],
+        correct: 0,
+        explanation: "Kapı menteşelerinin yağlanması aşınmayı ve gıcırtıyı engellemek için pürüzleri kapatarak sürtünmeyi azaltmayı amaçlar."
+      },
+      {
+        id: "f5-2-t2-20",
+        subject: "fen",
+        term: 2,
+        prompt: "Ülkemizde nesli tükenme tehlikesi altında olduğu için koruma altına alınan canlı türü aşağıdakilerden hangisidir?",
+        options: ["Kelaynak kuşu", "Dinozor", "Mamut", "Moa kuşu"],
+        correct: 0,
+        explanation: "Dinozor, mamut ve moa kuşlarının nesli tamamen tükenmiştir. Kelaynak kuşları ise ülkemizde koruma altındaki nesli tehlikede olan canlılardandır."
+      }
+    ]
   } // term2 bitti
 }; // fenData bitti
