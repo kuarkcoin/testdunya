@@ -3492,9 +3492,9 @@ export const matematikData: SubjectData = {
         term: 2,
         prompt: "Görseldeki kareli zeminde boyalı olarak verilen şeklin alanı kaç birimkaredir?",
         imageUrl: "/images/grade5/matematik/term2/test1/kareli-alan.webp",
-        options: ["12", "14", "16", "18"],
+        options: ["20", "21", "23", "25"],
         correct: 1,
-        explanation: "Boyalı bölgedeki tüm tam kareler sayıldığında şeklin alanının 14 birimkare olduğu bulunur."
+        explanation: "Boyalı bölgedeki tüm tam kareler sayıldığında şeklin alanının 21 birimkare olduğu bulunur."
       },
 
       // [11-20 Arası Sorular: Teorik / Bilgi Odaklı Sorular]
