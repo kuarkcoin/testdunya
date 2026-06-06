@@ -3509,7 +3509,6 @@ export const matematikData: SubjectData = {
           "AB Doğru Parçası $\\rightarrow$ [AB]",
           "A noktasının B noktasına uzaklığı $\\rightarrow$ |AB|"
         ],
-        options: ["AB Doğrusu $\\rightarrow$ AB", "AB Işını $\\rightarrow$ [AB)", "AB Doğru Parçası $\\rightarrow$ [AB]", "A noktasının B noktasına uzaklığı $\\rightarrow$ |AB|"],
         correct: 1,
         explanation: "AB ışınının sembolle gösteriminde başlangıç noktası kapalı olmalıdır. A başlangıç noktası ise $[AB)$ şeklinde yazılmalıdır, $[AB]$ doğru parçasıdır."
       },
