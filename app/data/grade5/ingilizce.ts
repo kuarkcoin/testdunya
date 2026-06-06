@@ -3057,7 +3057,7 @@ export const ingilizceData: SubjectData = {
         subject: "ingilizce",
         term: 2,
         prompt: "Look at the picture and complete the family life activity. 'My father and I love ________ the car together on weekends.'",
-        imageUrl: "/images/grade5/ingilizce/test2/washing-car.webp",
+        imageUrl: "/images/grade5/ingilizce/term2/test2/washing-car.webp",
         options: ["driving", "washing", "buying", "repairing"],
         correct: 1,
         explanation: "Görselde babasıyla birlikte bahçede araba yıkayan bir çocuk vardır. Araba yıkamak 'washing the car' eylemidir."
