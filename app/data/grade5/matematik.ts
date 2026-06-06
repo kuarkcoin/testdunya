@@ -3388,6 +3388,228 @@ export const matematikData: SubjectData = {
         "explanation": "24/32 kesrini 8 ile sadeleştiririz. Pay: 24 / 8 = 3. Payda: 32 / 8 = 4. En sade kesir 3/4'tür. Payda (4), paydan (3) sadece 1 fazladır."
       }
     ],
+         test1: [
+      // --- 5. SINIF MATEMATİK 2. DÖNEM TEST 1 (GEOMETRİ VE ÖLÇME) ---
+      // [1-10 Arası Sorular: Görsel Odaklı / Şekilli Sorular]
+      {
+        id: "m5-2-t1-img-01",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki kareli kağıtta A noktasının B noktasına göre konumu aşağıdakilerden hangisinde doğru olarak verilmiştir?",
+        imageUrl: "/images/grade5/matematik/term2/test1/nokta-konumu.webp",
+        options: [
+          "3 birim sağında, 2 birim yukarısında",
+          "4 birim solunda, 3 birim aşağısında",
+          "3 birim solunda, 4 birim yukarısında",
+          "4 birim sağında, 2 birim aşağısında"
+        ],
+        correct: 1,
+        explanation: "B noktasından başlayıp kareleri sayarak A noktasına ulaştığımızda; 4 birim sola ve 3 birim aşağıya gitmemiz gerekir."
+      },
+      {
+        id: "m5-2-t1-img-02",
+        subject: "fen",
+        term: 2,
+        prompt: "Görseldeki kareli zeminde verilen doğrulardan hangileri birbirine paraleldir?",
+        imageUrl: "/images/grade5/matematik/term2/test1/paralel-doğrular.webp",
+        options: ["d ve e doğruları", "d ve f doğruları", "e ve g doğruları", "f ve g doğruları"],
+        correct: 1,
+        explanation: "Aralarındaki dik mesafe her noktada eşit olan ve hiçbir zaman kesişmeyen d ve f doğruları birbirine paraleldir ($d // f$)."
+      },
+      {
+        id: "m5-2-t1-img-03",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki ABC üçgeninde verilen iç açılara göre, '?' ile gösterilen C açısının ölçüsü kaç derecedir?",
+        imageUrl: "/images/grade5/matematik/term2/test1/ucgen-ic-aci.webp",
+        options: ["45", "55", "65", "75"],
+        correct: 1,
+        explanation: "Üçgenin iç açıları toplamı $180^\\circ$ olduğundan; $180 - (80 + 45) = 180 - 125 = 55^\\circ$ bulunur."
+      },
+      {
+        id: "m5-2-t1-img-04",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki KLMN dörtgeni bir paralelkenardır. Verilen açı ölçüsüne göre L açısının ölçüsü kaç derecedir?",
+        imageUrl: "/images/grade5/matematik/term2/test1/paralelkenar-aci.webp",
+        options: ["60", "100", "120", "140"],
+        correct: 2,
+        explanation: "Paralelkenarda ardışık (komşu) iki açının toplamı $180^\\circ$ olduğundan; $180 - 60 = 120^\\circ$ olur."
+      },
+      {
+        id: "m5-2-t1-img-05",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki sıklık tablosunda bir sınıftaki öğrencilerin en sevdiği meyveler verilmiştir. Bu veriler sütun grafiğine aktarıldığında elma ve çilek sütunlarının boyları toplamı kaç birim olur?",
+        imageUrl: "/images/grade5/matematik/term2/test1/siklik-tablosu.webp",
+        options: ["14", "16", "18", "20"],
+        correct: 2,
+        explanation: "Tabloya göre elma sevenlerin sayısı 10, çilek sevenlerin sayısı 8'dir. Sütun boyları toplamı: $10 + 8 = 18$ birim olur."
+      },
+      {
+        id: "m5-2-t1-img-06",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde verilen ABCD dikdörtgeninin uzun kenarı 12 cm, kısa kenarı 5 cm'dir. Bu dikdörtgenin çevre uzunluğu kaç cm'dir?",
+        imageUrl: "/images/grade5/matematik/term2/test1/dikdortgen-cevre.webp",
+        options: ["17", "24", "34", "60"],
+        correct: 2,
+        explanation: "Dikdörtgenin çevresi kısa ve uzun kenarlarının toplamının 2 katıdır: $2 \\times (12 + 5) = 2 \\times 17 = 34$ cm."
+      },
+      {
+        id: "m5-2-t1-img-07",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki izometrik kağıda çizilmiş üçgen, kenar uzunluklarına göre hangi üçgen çeşidine örnektir?",
+        imageUrl: "/images/grade5/matematik/term2/test1/izometrik-ucgen.webp",
+        options: ["Çeşitkenar Üçgen", "İkizkenar Üçgen", "Eşkenar Üçgen", "Dik Açılı Üçgen"],
+        correct: 2,
+        explanation: "İzometrik kağıttaki noktalar arası mesafeler eşittir. Üçgenin tüm kenarları eşit birim sayısına sahip olduğundan eşkenar üçgendir."
+      },
+      {
+        id: "m5-2-t1-img-08",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki dijital tartıda ağırlığı 4 kg 250 g olarak gösterilen karpuzun ağırlığı toplam kaç gramdır?",
+        imageUrl: "/images/grade5/matematik/term2/test1/dijital-tarti.webp",
+        options: ["425", "4025", "4250", "42500"],
+        correct: 2,
+        explanation: "1 kg = 1000 gram olduğundan; 4 kg = 4000 gramdır. $4000 + 250 = 4250$ gram olur."
+      },
+      {
+        id: "m5-2-t1-img-09",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki dijital saat 14:15'i göstermektedir. Bu saatten 1 saat 45 dakika sonra saat kaçı gösterir?",
+        imageUrl: "/images/grade5/matematik/term2/test1/dijital-saat.webp",
+        options: ["15:00", "15:45", "16:00", "16:15"],
+        correct: 2,
+        explanation: "14:15'e önce 45 dakika eklersek 15:00 olur. Üzerine 1 saat daha eklediğimizde saat 16:00'yı gösterir."
+      },
+      {
+        id: "m5-2-t1-img-10",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki kareli zeminde boyalı olarak verilen şeklin alanı kaç birimkaredir?",
+        imageUrl: "/images/grade5/matematik/term2/test1/kareli-alan.webp",
+        options: ["12", "14", "16", "18"],
+        correct: 1,
+        explanation: "Boyalı bölgedeki tüm tam kareler sayıldığında şeklin alanının 14 birimkare olduğu bulunur."
+      },
+
+      // [11-20 Arası Sorular: Teorik / Bilgi Odaklı Sorular]
+      {
+        id: "m5-2-t1-11",
+        subject: "matematik",
+        term: 2,
+        prompt: "Geometrik kavramlar ve gösterimleri ile ilgili aşağıda verilen eşleştirmelerden hangisi yanlıştır?",
+        options: [
+          "AB Doğrusu $\\rightarrow$ AB",
+          "AB Işını $\\rightarrow$ [AB)",
+          "AB Doğru Parçası $\\rightarrow$ [AB]",
+          "A noktasının B noktasına uzaklığı $\\rightarrow$ |AB|"
+        ],
+        options: ["AB Doğrusu $\\rightarrow$ AB", "AB Işını $\\rightarrow$ [AB)", "AB Doğru Parçası $\\rightarrow$ [AB]", "A noktasının B noktasına uzaklığı $\\rightarrow$ |AB|"],
+        correct: 1,
+        explanation: "AB ışınının sembolle gösteriminde başlangıç noktası kapalı olmalıdır. A başlangıç noktası ise $[AB)$ şeklinde yazılmalıdır, $[AB]$ doğru parçasıdır."
+      },
+      {
+        id: "m5-2-t1-12",
+        subject: "matematik",
+        term: 2,
+        prompt: "Bir iç açısının ölçüsü $90^\\circ$ olan bir üçgenin diğer iki iç açısı ile ilgili aşağıdakilerden hangisi kesinlikle doğrudur?",
+        options: [
+          "Açılardan biri mutlaka geniş açıdır.",
+          "İki açının ölçüleri toplamı $90^\\circ$'dir.",
+          "Açılar her zaman birbirine eşittir.",
+          "Açılardan biri dik açı olabilir."
+        ],
+        correct: 1,
+        explanation: "Üçgenin iç açıları toplamı $180^\\circ$ olduğundan, dik açı çıkarıldığında kalan iki dar açının toplamı $180 - 90 = 90^\\circ$ olmak zorundadır."
+      },
+      {
+        id: "m5-2-t1-13",
+        subject: "matematik",
+        term: 2,
+        prompt: "Aşağıda verilen dörtgenlerden hangisinin karşılıklı kenar çiftleri paralel olmasına rağmen tüm iç açıları her zaman dik açı olmak zorunda DEĞİLDİR?",
+        options: ["Kare", "Dikdörtgen", "Eşkenar Dörtgen", "Yamuk"],
+        correct: 2,
+        explanation: "Kare ve dikdörtgenin tüm iç açıları $90^\\circ$'dir. Eşkenar dörtgenin karşılıklı kenarları paraleldir ancak açıları dik olmak zorunda değildir (karşılıklı açılar eşittir)."
+      },
+      {
+        id: "m5-2-t1-14",
+        subject: "matematik",
+        term: 2,
+        prompt: "Bir araştırmacı okulundaki öğrencilerin en çok dinlediği müzik türlerini belirlemek istiyor. Bu araştırma için seçilecek en uygun araştırma sorusu hangisidir?",
+        options: [
+          "En sevdiğiniz pop şarkıcısı kimdir?",
+          "Okulda hangi müzik aletleri çalınmaktadır?",
+          "En çok hangi müzik türünü dinlemekten hoşlanırsınız?",
+          "Müzik öğretmeninizin adı nedir?"
+        ],
+        correct: 2,
+        explanation: "Müzik türü tercihini genel olarak belirleyebilmek için doğrudan hangi müzik türünün dinlendiğini soran soru en uygun araştırma sorusudur."
+      },
+      {
+        id: "m5-2-t1-15",
+        subject: "matematik",
+        term: 2,
+        prompt: "Çevre uzunluğu 40 cm olan bir karenin alanı kaç santimetrekaredir?",
+        options: ["40", "80", "100", "160"],
+        correct: 2,
+        explanation: "Karenin bir kenar uzunluğu: $40 \\div 4 = 10$ cm'dir. Alanı ise iki kenarının çarpımıdır: $10 \\times 10 = 100$ santimetrekaredir."
+      },
+      {
+        id: "m5-2-t1-16",
+        subject: "matematik",
+        term: 2,
+        prompt: "Bir sinema filmi saat 20:45'te başlayıp 22:20'de bitmiştir. Bu film toplam kaç dakika sürmüştür?",
+        options: ["85", "95", "105", "115"],
+        correct: 1,
+        explanation: "20:45'ten 21:45'e 1 saat (60 dk) geçer. 21:45'ten 22:20'ye ise 35 dakika vardır. Toplam süre: $60 + 35 = 95$ dakikadır."
+      },
+      {
+        id: "m5-2-t1-17",
+        subject: "matematik",
+        term: 2,
+        prompt: "Kenar uzunlukları ardışık tam sayılar olan bir çeşitkenar üçgenin çevre uzunluğu 24 cm olduğuna göre, en uzun kenarı kaç cm'dir?",
+        options: ["7", "8", "9", "10"],
+        correct: 2,
+        explanation: "Ardışık sayılar dediği için ortanca kenar: $24 \\div 3 = 8$ cm'dir. Kenarlar 7, 8 ve 9 cm olur. En uzun kenar 9 cm'dir."
+      },
+      {
+        id: "m5-2-t1-18",
+        subject: "matematik",
+        term: 2,
+        prompt: "Bir ton ağırlığındaki un çuvallarından her biri 25 kg olan paketler yapılacaktır. Bu iş için toplam kaç paket gerekir?",
+        options: ["40", "400", "4000", "40000"],
+        correct: 0,
+        explanation: "1 ton = 1000 kg'dır. 1000 kg unu 25 kg'lık paketlere böldüğümüzde; $1000 \\div 25 = 40$ paket elde edilir."
+      },
+      {
+        id: "m5-2-t1-19",
+        subject: "matematik",
+        term: 2,
+        prompt: "Kısa kenarı 6 cm olan bir dikdörtgenin alanı, bir kenar uzunluğu 12 cm olan bir karenin alanına eşittir. Bu dikdörtgenin uzun kenarı kaç cm'dir?",
+        options: ["18", "24", "36", "48"],
+        correct: 1,
+        explanation: "Karenin alanı: $12 \\times 12 = 144$ cm²'dir. Dikdörtgenin alanı da 144 olmalıdır. Uzun kenar: $144 \\div 6 = 24$ cm bulunur."
+      },
+      {
+        id: "m5-2-t1-20",
+        subject: "matematik",
+        term: 2,
+        prompt: "Aşağıdaki zaman ölçüsü dönüşümlerinden hangisi YANLIŞTIR?",
+        options: [
+          "3 yıl = 36 ay",
+          "5 hafta = 35 gün",
+          "4 saat = 240 dakika",
+          "180 saniye = 4 dakika"
+        ],
+        correct: 3,
+        explanation: "1 dakika = 60 saniyedir. 180 saniye: $180 \\div 60 = 3$ dakika yapar, 4 dakika ifadesi yanlıştır."
+      }
+    ],
     test2: []
   }
 };
