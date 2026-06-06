@@ -3386,7 +3386,7 @@ export const turkceData: SubjectData = {
         correct: 2,
         explanation: "Soru bildiren ve bir yanıt bekleyen tüm cümlelerin sonuna evrensel olarak soru işareti (?) konur."
       }
-    ] // <-- test3 bitti
-  } // <-- term2 bitti
-}; // <-- turkceData bitti
+    ] 
+  } 
+}, // <-- BURADAKİ NOKTALI VİRGÜLÜ (;) SİLİP SADECE VİRGÜL (,) YAPTIK!
  
