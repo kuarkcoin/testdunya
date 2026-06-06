@@ -1,8 +1,8 @@
-
 [
     {
         "id": 1,
-        "question": "Bir hücrede rRNA sentezinin ve ribozom alt birimlerinin montajının en yoğun gerçekleştiği yapı aşağıdakilerden hangisidir? [attachment_0](attachment)",
+        "question": "Bir hücrede rRNA sentezinin ve ribozom alt birimlerinin montajının en yoğun gerçekleştiği yapı aşağıdakilerden hangisidir?",
+        "imageUrl": "/images/tus/deneme1/nukleolus.webp",
         "A": "Düz endoplazmik retikulum",
         "B": "Granüllü endoplazmik retikulum",
         "C": "Nukleolus (Çekirdekçik)",
@@ -13,7 +13,8 @@
     },
     {
         "id": 2,
-        "question": "Mitokondride oksidatif fosforilasyon ve ATP sentezinin gerçekleştiği, elektron taşıma zinciri elemanlarını barındıran yapı hangisidir? [attachment_1](attachment)",
+        "question": "Mitokondride oksidatif fosforilasyon ve ATP sentezinin gerçekleştiği, elektron taşıma zinciri elemanlarını barındıran yapı hangisidir?",
+        "imageUrl": "/images/tus/deneme1/mitokondri-zar.webp",
         "A": "Dış membran",
         "B": "İnter-membran aralığı",
         "C": "Kristaların iç yüzeyi (İç zar)",
@@ -46,7 +47,8 @@
     },
     {
         "id": 5,
-        "question": "Bir enzimatik reaksiyonda Km değerinin düşmesi, enzim ve substrat ilişkisi hakkında neyi ifade eder? [attachment_2](attachment)",
+        "question": "Bir enzimatik reaksiyonda Km değerinin düşmesi, enzim ve substrat ilişkisi hakkında neyi ifade eder?",
+        "imageUrl": "/images/tus/deneme1/enzim-km.webp",
         "A": "Enzimin substrata afinitesinin (ilgisinin) azaldığını",
         "B": "Enzimin substrata afinitesinin arttığını",
         "C": "Reaksiyon hızının (Vmax) arttığını",
@@ -79,7 +81,8 @@
     },
     {
         "id": 8,
-        "question": "Hücre membranının 'Akıcı Mozaik Model'ini gösteren yukarıdaki şemada, membranın akışkanlığını düzenleyen ve okla işaretlenen hidrofobik molekül aşağıdakilerden hangisidir? [attachment_8](attachment)",
+        "question": "Hücre membranının 'Akıcı Mozaik Model'ini gösteren yukarıdaki şemada, membranın akışkanlığını düzenleyen hidrofobik molekül aşağıdakilerden hangisidir?",
+        "imageUrl": "/images/tus/deneme1/akici-mozaik-zar.webp",
         "A": "Kolesterol",
         "B": "Fosfolipit",
         "C": "Glikolipid",
@@ -97,7 +100,7 @@
         "D": "Hücre membranının parçalanması ve içeriğin dışarı sızması",
         "E": "Rastgele DNA kırıkları",
         "correct": "C",
-        "Açıklama": "Apoptozda hücre küçülür, kromatin yoğunlaşır ve inflamasyon oluşmaz. Nekrozda ise hücre şişer ve inflamasyon vardır."
+        "Açıklama": "Apoptozda hücre küçülür, kromatin yoğunlaşır og inflamasyon oluşmaz. Nekrozda ise hücre şişer ve inflamasyon vardır."
     },
     {
         "id": 10,
@@ -112,7 +115,8 @@
     },
     {
         "id": 11,
-        "question": "Sinir hücresinde aksiyon potansiyelinin ekteki grafikte okla gösterilen 'hızlı depolarizasyon' (yükselme) fazından sorumlu olan iyon kanalı hangisidir? [attachment_3](attachment)",
+        "question": "Sinir hücresinde aksiyon potansiyelinin ekteki grafikte gösterilen 'hızlı depolarizasyon' (yükselme) fazından sorumlu olan iyon kanalı hangisidir?",
+        "imageUrl": "/images/tus/deneme1/aksiyon-potansiyeli.webp",
         "A": "Voltaj kapılı potasyum kanalı",
         "B": "Voltaj kapılı sodyum kanalı",
         "C": "L-tipi kalsiyum kanalı",
@@ -134,7 +138,8 @@
     },
     {
         "id": 13,
-        "question": "Yukarıdaki ışık mikroskobu görüntüsünde, anafaz evresindeki bir hücrede kromozomları kutuplara çeken iğ iplikleri (okla işaretli) ağırlıklı olarak hangi yapıdan oluşur? [attachment_9](attachment)",
+        "question": "Yukarıdaki ışık mikroskobu görüntüsünde, anafaz evresindeki bir hücrede kromozomları kutuplara çeken iğ iplikleri ağırlıklı olarak hangi yapıdan oluşur?",
+        "imageUrl": "/images/tus/deneme1/mikrotubul-anafaz.webp",
         "A": "Aktin filamentleri",
         "B": "Ara filamentler",
         "C": "Mikrotübüller (Tübülin)",
@@ -156,7 +161,8 @@
     },
     {
         "id": 15,
-        "question": "Yukarıdaki şemada temel yapısı gösterilen, monomerik formda bulunan ve plasentayı geçerek yenidoğana ilk aylarda pasif bağışıklık sağlayan immünoglobulin sınıfı hangisidir? [attachment_10](attachment)",
+        "question": "Yukarıdaki şemada temel yapısı gösterilen, monomerik formda bulunan ve plasentayı geçerek yenidoğana pasif bağışıklık sağlayan immünoglobulin sınıfı hangisidir?",
+        "imageUrl": "/images/tus/deneme1/igg-antikor.webp",
         "A": "IgA",
         "B": "IgE",
         "C": "IgM",
@@ -185,7 +191,7 @@
         "D": "Mikrofilamentler",
         "E": "Lipid sallar",
         "correct": "C",
-        "Açıklama": "Glikokaliks (karbonhidrat örtü), hücre kimliğini ve tanınmasını sağlar."
+        "Açıklama": "Glikokaliks (karbonhidrat örtü), hücre kimliğini og tanınmasını sağlar."
     },
     {
         "id": 18,
@@ -233,14 +239,15 @@
     },
     {
         "id": 22,
-        "question": "Ekteki Elektron Taşıma Zinciri (ETS) şemasında ok ile gösterilen Kompleks IV (Sitokrom c oksidaz) enzimini bloke ederek hücresel solunumu durduran ajan hangisidir? [attachment_11](attachment)",
+        "question": "Ekteki Elektron Taşıma Zinciri (ETS) şemasında gösterilen Kompleks IV (Sitokrom c oksidaz) enzimini bloke ederek hücresel solunumu durduran ajan hangisidir?",
+        "imageUrl": "/images/tus/deneme1/ets-kompleks4.webp",
         "A": "Oligomisin",
         "B": "Dinitrofenol",
         "C": "Siyanür",
         "D": "Rotenon",
         "E": "Atraktilozid",
         "correct": "C",
-        "Açıklama": "Siyanür ve Karbonmonoksit, Kompleks IV'ü inhibe ederek oksijen kullanımını engeller ve ATP üretimini durdurur."
+        "Açıklama": "Siyanür ve Karbonmonoksit, Kompleks IV'ü inhibe ederek oksijen kullanımını engeller og ATP üretimini durdurur."
     },
     {
         "id": 23,
@@ -288,7 +295,8 @@
     },
     {
         "id": 27,
-        "question": "Çekirdekli tüm hücrelerin yüzeyinde bulunan ve hücre içindeki (endojen/viral) antijenleri CD8+ T lenfositlere sunan molekül hangisidir? [attachment_4](attachment)",
+        "question": "Çekirdekli tüm hücrelerin yüzeyinde bulunan ve hücre içindeki antijenleri CD8+ T lenfositlere sunan molekül hangisidir?",
+        "imageUrl": "/images/tus/deneme1/mhc-sinif1.webp",
         "A": "MHC Sınıf I",
         "B": "MHC Sınıf II",
         "C": "TCR",
@@ -310,7 +318,8 @@
     },
     {
         "id": 29,
-        "question": "Yukarıdaki elektron mikroskobu kesitinde okla işaretlenen, periferik sinir sisteminde miyelin kılıfını üreterek sinir iletim hızını artıran hücre aşağıdakilerden hangisidir? [attachment_12](attachment)",
+        "question": "Yukarıdaki elektron mikroskobu kesitinde, periferik sinir sisteminde miyelin kılıfını üreterek sinir iletim hızını artıran hücre aşağıdakilerden hangisidir?",
+        "imageUrl": "/images/tus/deneme1/schwann-miyelin.webp",
         "A": "Astrosit",
         "B": "Oligodendrosit",
         "C": "Mikroglia",
@@ -332,7 +341,8 @@
     },
     {
         "id": 31,
-        "question": "Ani başlayan nefes darlığı ve göğüs ağrısı ile gelen genç erkek hastanın akciğer grafisinde sağ tarafta 'hiperlusensi' (siyahlaşma) ve akciğer parankim hattının çökmesi görülüyor. Tanı nedir? [attachment_5](attachment)",
+        "question": "Ani başlayan nefes darlığı ve göğüs ağrısı ile gelen genç erkek hastanın akciğer grafisinde sağ tarafta 'hiperlusensi' (siyahlaşma) ve akciğer parankim hattının çökmesi görülüyor. Tanı nedir?",
+        "imageUrl": "/images/tus/deneme1/pnomotoraks-xray.webp",
         "A": "Pnömoni",
         "B": "Plevral Efüzyon",
         "C": "Pnömotoraks",
@@ -354,7 +364,8 @@
     },
     {
         "id": 33,
-        "question": "Ekteki kranial MR kesitinde bilateral mamiller cisimciklerde hiperintens lezyonlar izlenen; konfüzyon, ataksi ve oftalmopleji tablosuyla (Wernicke Ensefalopatisi) acile getirilen kronik alkolik hastada eksik olan vitamin hangisidir? [attachment_13](attachment)",
+        "question": "Ekteki kranial MR kesitinde bilateral mamiller cisimciklerde hiperintens lezyonlar izlenen; konfüzyon, ataksi ve oftalmopleji tablosuyla acile getirilen kronik alkolik hastada eksik olan vitamin hangisidir?",
+        "imageUrl": "/images/tus/deneme1/mamiller-mr.webp",
         "A": "B1 (Tiamin)",
         "B": "B6 (Piridoksin)",
         "C": "B12 (Kobalamin)",
@@ -376,7 +387,8 @@
     },
     {
         "id": 35,
-        "question": "Yüksek ateş ve ense sertliği ile gelen hastadan alınan BOS örneğinin yukarıdaki Gram boyamasında nötrofiller içinde ve dışında Gram-negatif diplokoklar izlenmiştir. En olası etken hangisidir? [attachment_14](attachment)",
+        "question": "Yüksek ateş ve ense sertliği ile gelen hastadan alınan BOS örneğinin yukarıdaki Gram boyamasında nötrofiller içinde ve dışında Gram-negatif diplokoklar izlenmiştir. En olası etken hangisidir?",
+        "imageUrl": "/images/tus/deneme1/meningokok-gram.webp",
         "A": "Streptococcus pneumoniae",
         "B": "Haemophilus influenzae",
         "C": "Neisseria meningitidis",
@@ -409,7 +421,8 @@
     },
     {
         "id": 38,
-        "question": "Ekteki endoskopi görselinde duodenum arka duvarında aktif kanamalı bir ülser izlenmektedir. Bu bölgedeki ülserlerin penetrasyonu sonucu en sık masif kanamaya yol açan damar hangisidir? [attachment_15](attachment)",
+        "question": "Ekteki endoskopi görselinde duodenum arka duvarında aktif kanamalı bir ülser izlenmektedir. Bu bölgedeki ülserlerin penetrasyonu sonucu en sık masif kanamaya yol açan damar hangisidir?",
+        "imageUrl": "/images/tus/deneme1/duodenum-ulser.webp",
         "A": "Sol gastrik arter",
         "B": "Gastroduodenal arter",
         "C": "Splenik arter",
@@ -420,7 +433,8 @@
     },
     {
         "id": 39,
-        "question": "Yukarıdaki kranial BT kesitinde kortikal sulkuslarda belirginleşme olmaksızın ventriküllerde orantısız genişleme saptanan; yürüme bozukluğu (manyetik yürüyüş), idrar kaçırma ve demans şikayetleri olan hastada en olası tanı nedir? [attachment_16](attachment)",
+        "question": "Yukarıdaki kranial BT kesitinde kortikal sulkuslarda belirginleşme olmaksızın ventriküllerde orantısız genişleme saptanan; yürüme bozukluğu, idrar kaçırma ve demans şikayetleri olan hastada en olası tanı nedir?",
+        "imageUrl": "/images/tus/deneme1/hidrosefali-ct.webp",
         "A": "Alzheimer",
         "B": "Parkinson",
         "C": "Normal Basınçlı Hidrosefali (NPH)",
@@ -442,7 +456,8 @@
     },
     {
         "id": 41,
-        "question": "Ekteki abdominal BT kesitinde sağ alt kadranda çapı artmış, inflamasyonlu ve lümeninde fekalit (okla işaretli) bulunan apendiks izlenmektedir. Bu hastada fizik muayenede en belirgin hassasiyetin hangi noktada olması beklenir? [attachment_17](attachment)",
+        "question": "Ekteki abdominal BT kesitinde sağ alt kadranda çapı artmış, inflamasyonlu ve lümeninde fekalit bulunan apendiks izlenmektedir. Bu hastada fizik muayenede en belirgin hassasiyetin hangi noktada olması beklenir?",
+        "imageUrl": "/images/tus/deneme1/apandisit-ct.webp",
         "A": "Murphy noktası",
         "B": "McBurney noktası",
         "C": "Traube alanı",
@@ -475,7 +490,8 @@
     },
     {
         "id": 44,
-        "question": "Yukarıdaki Yüksek Çözünürlüklü Akciğer BT'sinde (HRCT) subplevral kistik boşluklar (arı peteği görünümü) izlenen İdiyopatik Pulmoner Fibrozis hastasının Solunum Fonksiyon Testi'nde (SFT) en karakteristik bulgu nedir? [attachment_18](attachment)",
+        "question": "Yukarıdaki Yüksek Çözünürlüklü Akciğer BT'sinde subplevral kistik boşluklar (arı peteği görünümü) izlenen İdiyopatik Pulmoner Fibrozis hastasının Solunum Fonksiyon Testi'nde en karakteristik bulgu nedir?",
+        "imageUrl": "/images/tus/deneme1/fibrozis-hrct.webp",
         "A": "Obstrüktif bozukluk",
         "B": "Difüzyon kapasitesinde (DLCO) azalma",
         "C": "Total akciğer kapasitesinde artma",
@@ -486,14 +502,15 @@
     },
     {
         "id": 45,
-        "question": "Kanlı ishal şikayetiyle gelen hastanın ekteki kolonoskopi görselinde; rektumdan proksimale doğru kesintisiz devam eden mukozal inflamasyon, eritem ve psödopolip oluşumları izlenmektedir. En olası tanı nedir? [attachment_19](attachment)",
+        "question": "Kanlı ishal şikayetiyle gelen hastanın ekteki kolonoskopi görselinde; rektumdan proksimale doğru kesintisiz devam eden mukozal inflamasyon, eritem ve psödopolip oluşumları izlenmektedir. En olası tanı nedir?",
+        "imageUrl": "/images/tus/deneme1/kolit-kolonoskopi.webp",
         "A": "Crohn Hastalığı",
         "B": "Ülseratif Kolit",
         "C": "İrritabl Bağırsak Sendromu",
         "D": "Çölyak Hastalığı",
         "E": "Divertikülit",
         "correct": "B",
-        "Açıklama": "Ülseratif kolitin endoskopik özellikleri; sürekli (kesintisiz) tutulum, rektumdan başlama ve psödopolip oluşumudur. Crohn ise atlamalı (yamalı) tutulum gösterir."
+        "Açıklama": "Ülseratif kolitin endoskopik özellikleri; sürekli (kesintisiz) tutulum, rektumdan başlama ve psödopolip oluşumudur. Crohn ise atlamalı tutulum gösterir."
     },
     {
         "id": 46,
@@ -508,7 +525,8 @@
     },
     {
         "id": 47,
-        "question": "Ekteki klinik fotoğrafta, günün ilerleyen saatlerinde belirginleşen pitozis (göz kapağı düşüklüğü) ve çift görme izlenen genç kadın hastada en olası tanı nedir? [attachment_20](attachment)",
+        "question": "Ekteki klinik fotoğrafta, günün ilerleyen saatlerinde belirginleşen pitozis ve çift görme izlenen genç kadın hastada en olası tanı nedir?",
+        "imageUrl": "/images/tus/deneme1/pitozis-klinik.webp",
         "A": "Multipl Skleroz",
         "B": "Miyastenia Gravis",
         "C": "Horner Sendromu",
@@ -519,18 +537,19 @@
     },
     {
         "id": 48,
-        "question": "Aşağıdaki akciğer hastalıklarından hangisi 'Restriktif' (Akciğerin genişleyemediği) akciğer hastalığı grubundadır?",
+        "question": "Aşağıdaki akciğer hastalıklarından hangisi 'Restriktif' akciğer hastalığı grubundadır?",
         "A": "Astım",
         "B": "KOAH",
         "C": "Pulmoner Fibrozis",
         "D": "Bronşektazi",
         "E": "Kronik Bronşit",
         "correct": "C",
-        "Açıklama": "Fibrozis akciğeri sertleştirir, genişlemesini engeller (Restriksiyon). Diğerleri hava yolunu tıkar (Obstrüksiyon)."
+        "Açıklama": "Fibrozis akciğeri sertleştirir, genişmesini engeller (Restriksiyon). Diğerleri hava yolunu tıkar (Obstrüksiyon)."
     },
     {
         "id": 49,
-        "question": "Genç bir kadın hastanın ekteki akciğer grafisinde 'Bilateral Hiler Lenfadenopati' (Patates çuvalı görünümü) izlenmektedir. Fizik muayenesinde bacak ön yüzünde eritema nodosum lezyonları saptanan bu hastada en olası tanı nedir? [attachment_21](attachment)",
+        "question": "Genç bir kadın hastanın ekteki akciğer grafisinde 'Bilateral Hiler Lenfadenopati' saptanmıştır. Muayenede bacak ön yüzünde eritema nodosum lezyonları saptanan bu hastada en olası tanı nedir?",
+        "imageUrl": "/images/tus/deneme1/sarkoidoz-xray.webp",
         "A": "Tüberküloz",
         "B": "Akciğer Kanseri",
         "C": "Sarkoidoz",
@@ -541,7 +560,8 @@
     },
     {
         "id": 50,
-        "question": "Akut Miyokard Enfarktüsü (Kalp krizi) şüphesiyle başvuran bir hastada, ekteki EKG trasesinde görülen ST segment yüksekliği (Elevasyonu) ne anlama gelir? [attachment_6](attachment)",
+        "question": "Akut Miyokard Enfarktüsü şüphesiyle başvuran bir hastada, ekteki EKG trasesinde görülen ST segment yüksekliği ne anlama gelir?",
+        "imageUrl": "/images/tus/deneme1/st-elevasyonu-ekg.webp",
         "A": "Sadece iskemi vardır",
         "B": "Koroner arter tam tıkanmıştır (Transmural hasar)",
         "C": "Perikardit vardır",
@@ -552,14 +572,15 @@
     },
     {
         "id": 51,
-        "question": "Toplum kökenli pnömoni nedeniyle başvuran hastanın ekteki balgam Gram boyamasında, PNL (nötrofil) kümeleri arasında lanset (mızrak) şeklinde Gram-pozitif diplokoklar görülmektedir. En olası etken hangisidir? [attachment_22](attachment)",
+        "question": "Toplum kökenli pnömoni nedeniyle başvuran hastanın ekteki balgam Gram boyamasında, PNL kümeleri arasında lanset şeklinde Gram-pozitif diplokoklar görülmektedir. En olası etken hangisidir?",
+        "imageUrl": "/images/tus/deneme1/pnomokok-gram.webp",
         "A": "Staphylococcus aureus",
         "B": "Streptococcus pneumoniae",
         "C": "Mycoplasma pneumoniae",
         "D": "Klebsiella pneumoniae",
         "E": "Legionella pneumophila",
         "correct": "B",
-        "Açıklama": "Gram-pozitif, lanset şekilli diplokoklar klasik tipik zatürrenin (Toplum kökenli pnömoni) en sık etkeni olan S. pneumoniae'dir."
+        "Açıklama": "Gram-pozitif, lanset şekilli diplokoklar klasik tipik zatürrenin en sık etkeni olan S. pneumoniae'dir."
     },
     {
         "id": 52,
@@ -574,7 +595,7 @@
     },
     {
         "id": 53,
-        "question": "Diyabetik nefropatisi (böbrek hasarı) olan bir hipertansiyon hastasında, böbreği koruyucu etkisi nedeniyle ilk tercih edilecek tansiyon ilacı grubu hangisidir?",
+        "question": "Diyabetik nefropatisi olan bir hipertansiyon hastasında, böbreği koruyucu etkisi nedeniyle ilk tercih edilecek tansiyon ilacı grubu hangisidir?",
         "A": "ACE İnhibitörleri / ARB'ler",
         "B": "Beta blokerler",
         "C": "Alfa blokerler",
@@ -585,7 +606,8 @@
     },
     {
         "id": 54,
-        "question": "Geçirilmiş ortopedik cerrahi sonrası ani başlayan nefes darlığı ile gelen hastanın ekteki Pulmoner BT Anjiyografisinde (CTPA) pulmoner arter dallarında dolum defekti (pıhtı) izlenmektedir. Bu tablonun (Pulmoner Emboli) gelişmesindeki en sık kaynak/risk faktörü nedir? [attachment_23](attachment)",
+        "question": "Geçirilmiş ortopedik cerrahi sonrası ani başlayan nefes darlığı ile gelen hastanın ekteki Pulmoner BT Anjiyografisinde pulmoner arter dallarında dolum defekti izlenmektedir. En olası tanı kaynağı nedir?",
+        "imageUrl": "/images/tus/deneme1/emboli-anjiyo.webp",
         "A": "Atriyal Fibrilasyon",
         "B": "Derin Ven Trombozu (DVT)",
         "C": "Endokardit",
@@ -607,7 +629,8 @@
     },
     {
         "id": 56,
-        "question": "Şiddetli karın ağrısı ile gelen hastanın ayakta çekilen direkt karın grafisinde 'diyafram altında serbest hava' (okla işaretli) görülmesi neyi gösterir? [attachment_7](attachment)",
+        "question": "Şiddetli karın ağrısı ile gelen hastanın ayakta çekilen direkt karın grafisinde 'diyafram altında serbest hava' görülmesi neyi gösterir?",
+        "imageUrl": "/images/tus/deneme1/diyafram-hava-xray.webp",
         "A": "Bağırsak tıkanıklığı",
         "B": "Gastrointestinal perforasyon (Mide/Bağırsak delinmesi)",
         "C": "Apandisit",
@@ -618,7 +641,8 @@
     },
     {
         "id": 57,
-        "question": "Ekteki akciğer grafisinde diyaframlarda düzleşme, kaburgalar arası mesafede artış (hiperinflasyon) ve akciğer alanlarında siyahlaşma izlenen KOAH hastasında, bu bulguların temel patofizyolojik nedeni nedir? [attachment_24](attachment)",
+        "question": "Ekteki akciğer grafisinde diyaframlarda düzleşme, kaburgalar arası mesafede artış ve akciğer alanlarında siyahlaşma izlenen KOAH hastasında, bu bulguların temel patofizyolojik nedeni nedir?",
+        "imageUrl": "/images/tus/deneme1/koah-hiperinflasyon.webp",
         "A": "Akciğerin elastik büzülmesinin artması",
         "B": "Havanın alveollerde hapsolması ve dışarı atılamaması (Hava hapsi)",
         "C": "Akciğer zarında sıvı toplanması",
@@ -651,7 +675,8 @@
     },
     {
         "id": 60,
-        "question": "Ekteki Basınç-Hacim (PV) eğrisinde diyastolik dolum fazının belirgin genişlediği ve izovolümetrik gevşeme fazının kaybolduğu izlenen; klinikte geniş nabız basıncı (su sıçraması nabzı) ve diyastolik üfürüm ile prezente olan kapak hastalığı hangisidir? [attachment_25](attachment)",
+        "question": "Ekteki Basınç-Hacim (PV) eğrisinde diyastolik dolum fazının belirgin genişlediği ve izovolümetrik gevşeme fazının kaybolduğu izlenen kapak hastalığı hangisidir?",
+        "imageUrl": "/images/tus/deneme1/aort-yetmezligi-pv.webp",
         "A": "Aort Darlığı",
         "B": "Mitral Darlık",
         "C": "Aort Yetmezliği",
@@ -661,4 +686,3 @@
         "Açıklama": "Aort yetmezliğinde diyastolde aorttan sol ventriküle kan kaçağı olduğu için izovolümetrik gevşeme bozulur ve volüm yüklenmesine bağlı geniş nabız basıncı görülür."
     }
 ]
-
