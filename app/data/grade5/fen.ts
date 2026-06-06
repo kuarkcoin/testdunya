@@ -2644,10 +2644,10 @@ export const fenData: SubjectData = {
         prompt: "50 N yük 10 cm uzatıyorsa, 15 N yük kaç cm uzatır?",
         options: ["2", "3", "5", "6"],
         correct: 1,
-        explanation: "50/10 = 5 N başına 1 cm düşer. 15 / 5 = 3 cm uzar."
-      }
-    ]
-    test2: [
+       2647 |         explanation: "50/10 = 5 N başına 1 cm düşer. 15 / 5 = 3 cm uzar."
+        }
+     ], // <-- VİRGÜLÜ BURAYA EKLEDİK!
+     test2: [
       // --- 5. SINIF FEN BİLİMLERİ 2. DÖNEM TEST 2 ---
       // [1-10 Arası Sorular: Görsel Odaklı / Şekilli Sorular]
       {
