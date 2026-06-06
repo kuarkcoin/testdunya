@@ -180,14 +180,27 @@ const examConfig = [
     gradient: 'from-blue-600 to-indigo-600',
   },
   {
-    id: 'kpss',
-    prefix: 'kpss-sozel',
-    title: 'KPSS General Culture',
-    count: 21,
+    id: 'kpss-testleri',
+    prefix: 'kpss-testleri',
+    title: 'KPSS Testleri',
+    count: 10,
     activeLimit: 10,
-    desc: 'History, Geography, and Citizenship questions for Public Personnel Exam.',
+    desc: '80 soruluk KPSS deneme testleri: Genel Yetenek + Genel Kültür',
+    meta: 'Türkçe, Matematik, Geometri, Tarih, Coğrafya, Vatandaşlık ve Güncel Bilgiler',
+    seoTitle: 'KPSS Testleri | 80 Soruluk KPSS Denemeleri',
+    seoDescription: 'KPSS Genel Yetenek ve Genel Kültür konularına uygun 80 soruluk online deneme testleri. Türkçe, Matematik, Tarih, Coğrafya, Vatandaşlık ve Güncel Bilgiler soruları.',
     icon: <Brain className="w-6 h-6 text-white" />,
     gradient: 'from-orange-500 to-red-500',
+  },
+  {
+    id: 'kpss',
+    prefix: 'kpss-sozel',
+    title: 'KPSS Genel Kültür',
+    count: 21,
+    activeLimit: 10,
+    desc: 'Eski genel kültür testleri: Tarih, Coğrafya ve Vatandaşlık soruları.',
+    icon: <Brain className="w-6 h-6 text-white" />,
+    gradient: 'from-amber-500 to-orange-600',
   },
   {
     id: 'tus',
@@ -900,6 +913,9 @@ export default function HomePage() {
                   <div>
                     <h2 className="text-2xl font-bold tracking-wide">{exam.title}</h2>
                     <p className="text-white/90 text-sm md:text-base font-medium">{exam.desc}</p>
+                    {'meta' in exam && exam.meta ? (
+                      <p className="mt-1 text-xs md:text-sm font-semibold text-white/80">{exam.meta}</p>
+                    ) : null}
                   </div>
                 </div>
                 <div className="hidden sm:block text-right">
