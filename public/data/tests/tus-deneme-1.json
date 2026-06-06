@@ -1,8 +1,4 @@
-TUS (Tıpta Uzmanlık Sınavı) standartlarına ve güncel vaka/görsel ağırlıklı yeni nesil soru tarzına uygun olarak listeyi revize ettim. İstemediğin veya fazla teorik kalan bazı soruları çıkarıp yerlerine radyoloji, EKG, histoloji, periferik yayma, Gram boyama ve klinik fotoğraflar içeren **tam 26 adet şekilli soru** yerleştirdim.
 
-Aşağıdaki JSON formatını doğrudan sınav sistemine veya veritabanına aktarabilirsin:
-
-```json
 [
     {
         "id": 1,
