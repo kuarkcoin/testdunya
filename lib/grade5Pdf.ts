@@ -17,6 +17,8 @@ export type GenerateGrade5PdfParams = {
 };
 
 type JsPdfInstance = {
+  addFileToVFS: (fileName: string, fontData: string) => void;
+  addFont: (postScriptName: string, fontName: string, fontStyle: string) => void;
   addImage: (imageData: string, format: string, x: number, y: number, width: number, height: number) => void;
   addPage: () => void;
   getNumberOfPages: () => number;
@@ -40,6 +42,9 @@ declare global {
   }
 }
 
+const TURKISH_FONT_NAME = 'DejaVuSans';
+const TURKISH_FONT_REGULAR_FILE = 'DejaVuSans.ttf';
+const TURKISH_FONT_BOLD_FILE = 'DejaVuSans-Bold.ttf';
 const OPTION_LETTERS = ['A', 'B', 'C', 'D'];
 const PAGE = {
   marginX: 16,
@@ -100,9 +105,25 @@ const getImageFormat = (dataUrl: string) => {
   return 'PNG';
 };
 
+const setTurkishFont = (doc: JsPdfInstance, style: 'normal' | 'bold' | 'italic' | 'bolditalic' = 'normal') => {
+  doc.setFont(TURKISH_FONT_NAME, style);
+};
+
+export const registerTurkishFont = async (doc: JsPdfInstance) => {
+  const { DEJAVU_SANS_BOLD_BASE64, DEJAVU_SANS_REGULAR_BASE64 } = await import('./grade5Fonts');
+
+  doc.addFileToVFS(TURKISH_FONT_REGULAR_FILE, DEJAVU_SANS_REGULAR_BASE64);
+  doc.addFileToVFS(TURKISH_FONT_BOLD_FILE, DEJAVU_SANS_BOLD_BASE64);
+  doc.addFont(TURKISH_FONT_REGULAR_FILE, TURKISH_FONT_NAME, 'normal');
+  doc.addFont(TURKISH_FONT_BOLD_FILE, TURKISH_FONT_NAME, 'bold');
+  doc.addFont(TURKISH_FONT_REGULAR_FILE, TURKISH_FONT_NAME, 'italic');
+  doc.addFont(TURKISH_FONT_BOLD_FILE, TURKISH_FONT_NAME, 'bolditalic');
+  setTurkishFont(doc);
+};
+
 const addFooter = (doc: JsPdfInstance) => {
   const pageCount = doc.getNumberOfPages();
-  doc.setFont('helvetica', 'normal');
+  setTurkishFont(doc);
   doc.setFontSize(8);
   doc.setTextColor(120, 120, 120);
 
@@ -113,7 +134,7 @@ const addFooter = (doc: JsPdfInstance) => {
 };
 
 const drawHeader = (doc: JsPdfInstance, title: string) => {
-  doc.setFont('helvetica', 'bold');
+  setTurkishFont(doc, 'bold');
   doc.setFontSize(16);
   doc.setTextColor(30, 41, 59);
   doc.text(title, PAGE.marginX, PAGE.marginTop);
@@ -165,7 +186,7 @@ const addQuestionImage = async (
     return nextY;
   } catch {
     let nextY = ensureSpace(doc, cursorY, 8, title);
-    doc.setFont('helvetica', 'italic');
+    setTurkishFont(doc, 'italic');
     doc.setFontSize(9);
     doc.setTextColor(148, 85, 0);
     doc.text('Not: Soru görseli PDF’ye eklenemedi.', PAGE.marginX + 4, nextY);
@@ -177,7 +198,7 @@ const addAnswerKeyPage = (doc: JsPdfInstance, selectedQuestions: Grade5PdfQuesti
   doc.addPage();
   drawHeader(doc, title);
 
-  doc.setFont('helvetica', 'bold');
+  setTurkishFont(doc, 'bold');
   doc.setFontSize(18);
   doc.setTextColor(30, 41, 59);
   doc.text('Cevap Anahtarı', PAGE.marginX, PAGE.marginTop + 20);
@@ -195,7 +216,7 @@ const addAnswerKeyPage = (doc: JsPdfInstance, selectedQuestions: Grade5PdfQuesti
     const y = startY + row * rowHeight;
     const answerLetter = OPTION_LETTERS[question.correct] ?? '-';
 
-    doc.setFont('helvetica', 'bold');
+    setTurkishFont(doc, 'bold');
     doc.setTextColor(79, 70, 229);
     doc.text(`${index + 1}.`, x, y);
     doc.setTextColor(15, 23, 42);
@@ -247,11 +268,12 @@ export const generateGrade5TestPdf = async ({
   const jsPDF = await loadJsPdf();
   const selectedQuestions = questions.slice(0, Math.min(limit, questions.length));
   const doc = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
+  await registerTurkishFont(doc);
   const title = `5. Sınıf ${subjectLabel} Test ${testNo}`;
 
   drawHeader(doc, title);
 
-  doc.setFont('helvetica', 'normal');
+  setTurkishFont(doc);
   doc.setFontSize(10);
   doc.setTextColor(71, 85, 105);
   doc.text(`${selectedQuestions.length} soru`, PAGE.marginX, PAGE.marginTop + 12);
@@ -262,7 +284,7 @@ export const generateGrade5TestPdf = async ({
   for (const [index, question] of selectedQuestions.entries()) {
     cursorY = ensureSpace(doc, cursorY, 22, title);
 
-    doc.setFont('helvetica', 'bold');
+    setTurkishFont(doc, 'bold');
     doc.setFontSize(11);
     doc.setTextColor(15, 23, 42);
     cursorY = addWrappedText(doc, `${index + 1}. ${question.prompt}`, PAGE.marginX, cursorY, textWidth, 5.5) + 3;
@@ -271,7 +293,7 @@ export const generateGrade5TestPdf = async ({
       cursorY = await addQuestionImage(doc, question.imageUrl, cursorY, title);
     }
 
-    doc.setFont('helvetica', 'normal');
+    setTurkishFont(doc);
     doc.setFontSize(10);
     doc.setTextColor(51, 65, 85);
 
