@@ -5,6 +5,7 @@ import Link from 'next/link';
 import 'katex/dist/katex.min.css';
 import { InlineMath } from 'react-katex';
 import ReactConfetti from 'react-confetti';
+import { generateGrade5TestPdf, type Grade5PdfLimit } from '../../lib/grade5Pdf';
 
 // VERİ IMPORTLARI
 import { matematikData } from '../data/grade5/matematik';
@@ -132,6 +133,7 @@ export default function Grade5Page() {
 
   const [aiFeedback, setAiFeedback] = useState<string | null>(null);
   const [loadingAi, setLoadingAi] = useState(false);
+  const [pdfDownloadingLimit, setPdfDownloadingLimit] = useState<Grade5PdfLimit | null>(null);
 
   // ✅ ÇOCUK DOSTU EK ÖZELLİKLER
   const [autoNext, setAutoNext] = useState(true); // seçince otomatik sonraki
@@ -181,6 +183,7 @@ export default function Grade5Page() {
       setAnswers({});
       setCurrentIdx(0);
       setAiFeedback(null);
+      setPdfDownloadingLimit(null);
       setView('quiz');
       lastAutoNextKeyRef.current = '';
       if (typeof window !== 'undefined') window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -222,6 +225,25 @@ export default function Grade5Page() {
   }, [view]);
 
   const subjectLabel = subjects.find((s) => s.id === selectedSubject)?.label ?? selectedSubject;
+
+  const handlePdfDownload = async (limit: Grade5PdfLimit) => {
+    if (view !== 'result' || quizQuestions.length === 0 || pdfDownloadingLimit !== null) return;
+
+    setPdfDownloadingLimit(limit);
+    try {
+      await generateGrade5TestPdf({
+        subjectId: selectedSubject,
+        subjectLabel,
+        testNo: selectedTestNo,
+        questions: quizQuestions,
+        limit,
+      });
+    } catch {
+      alert('PDF oluşturulurken bir sorun oluştu. Lütfen tekrar deneyin.');
+    } finally {
+      setPdfDownloadingLimit(null);
+    }
+  };
 
   // ✅ TTS (Soruyu Oku)
   const getSpeakLang = (subject: SubjectId) => {
@@ -670,7 +692,7 @@ const textToSpeak =
                     onClick={finishQuiz}
                     className={`${ui.bigBtn} bg-emerald-500 hover:bg-emerald-600 text-white font-black shadow-lg transition-all hover:scale-[1.02] active:scale-95`}
                   >
-                    Testi Bitir ✅
+                    Testi Tamamla
                   </button>
                 ) : (
                   <button
@@ -742,6 +764,36 @@ const textToSpeak =
                   <p className="text-base md:text-lg font-black text-indigo-500 truncate">
                     {subjectLabel} • T{selectedTestNo}
                   </p>
+                </div>
+              </div>
+
+              <div className="bg-slate-50 border border-slate-100 p-5 md:p-6 rounded-[1.75rem] text-left shadow-inner space-y-4">
+                <div>
+                  <h4 className="font-black text-slate-900 text-xl tracking-tight">PDF İndir</h4>
+                  <p className="text-slate-500 text-sm font-bold mt-1">
+                    Seçtiğin kadar sorudan oluşan PDF hazırlanır; cevap anahtarı en son sayfada yer alır.
+                  </p>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                  {([10, 15, 20] as Grade5PdfLimit[]).map((limit) => {
+                    const questionCount = Math.min(limit, quizQuestions.length);
+                    const isDownloading = pdfDownloadingLimit === limit;
+
+                    return (
+                      <button
+                        key={limit}
+                        type="button"
+                        onClick={() => handlePdfDownload(limit)}
+                        disabled={pdfDownloadingLimit !== null}
+                        className="py-4 px-4 bg-white border-2 border-indigo-100 text-indigo-700 rounded-[1.4rem] font-black text-sm md:text-base hover:bg-indigo-600 hover:text-white hover:border-indigo-600 transition-all shadow-sm disabled:opacity-60 disabled:cursor-wait"
+                      >
+                        <span className="block">{isDownloading ? 'Hazırlanıyor…' : `${limit} soru indir`}</span>
+                        {questionCount < limit && !isDownloading && (
+                          <span className="block text-[10px] font-bold opacity-75 mt-1">PDF’de {questionCount} soru olur</span>
+                        )}
+                      </button>
+                    );
+                  })}
                 </div>
               </div>
 
