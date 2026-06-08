@@ -2062,6 +2062,6 @@ export const turkceData: SubjectData = {
         correct: 0,
         explanation: "A seçeneği yüklemi bulunmayan eksiltili bir cümledir ve sonuna üç nokta (...) gelmesi kurallara tam uygundur."
       }
-    ],
+    ]
   }
 };
