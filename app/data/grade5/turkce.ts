@@ -3800,9 +3800,6 @@ export const turkceData: SubjectData = {
         correct: 2,
         explanation: "Yazarın metni yazma amacı olan ve okuyucuya vermek istediği temel öğüt ana fikirdir."
       }
-    ],
-    test2: []
-  }
-};
+    ]
   }
 };
