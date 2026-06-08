@@ -3940,6 +3940,252 @@ export const fenData: SubjectData = {
         correct: 3,
         explanation: "Kalın yaylar serttir ve uzamaları zordur. Bu yüzden kalın yaylı dinamometreler küçük kuvvetleri değil, çok büyük ve ağır kuvvetleri ölçmek için tasarlanmıştır."
       }
+    ],
+    test7: [
+      // --- 5. SINIF FEN BİLİMLERİ TEST 7 (GENEL TEKRAR) ---
+      // [1-10 Arası Sorular: Görsel Odaklı / Şekilli Sorular]
+      {
+        id: "f5-2-t7-img-01",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde Güneş, Dünya ve Ay'ın birbirlerine göre büyüklüklerini göstermek için bir model tasarlanmıştır. Bu modelde X, Y ve Z yerine sırasıyla hangi nesneler getirilirse doğru bir karşılaştırma yapılmış olur?",
+        imageUrl: "/images/grade5/fen/term2/test7/gunes-dunya-ay-model.webp",
+        options: [
+          "X: Bezelye, Y: Nohut, Z: Karpuz",
+          "X: Karpuz, Y: Nohut, Z: Bezelye",
+          "X: Nohut, Y: Bezelye, Z: Karpuz",
+          "X: Karpuz, Y: Bezelye, Z: Nohut"
+        ],
+        correct: 1,
+        explanation: "Gök cisimlerinin büyüklük sıralaması Güneş > Dünya > Ay şeklindedir. Bu yüzden en büyük olan X karpuz (Güneş), ortanca olan Y nohut (Dünya) ve en küçük olan Z bezelye (Ay) olmalıdır."
+      },
+      {
+        id: "f5-2-t7-img-02",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde Ay'ın Dünya etrafındaki dolanma hareketi sırasında Güneş ışınlarının geliş açısına göre oluşan bir ana evresi gösterilmiştir. Ay'ın tamamen karanlık göründüğü bu evre aşağıdakilerden hangisidir?",
+        imageUrl: "/images/grade5/fen/term2/test7/ayin-evreleri-yeniay.webp",
+        options: ["İlk dördün", "Dolunay", "Yeni ay", "Son dördün"],
+        correct: 2,
+        explanation: "Ay, Güneş ile Dünya arasındayken Dünya'ya bakan yüzü ışık alamaz ve karanlık görünür. Bu evre Ay'ın ilk ana evresi olan 'Yeni ay' evresidir."
+      },
+      {
+        id: "f5-2-t7-img-03",
+        subject: "fen",
+        term: 2,
+        prompt: "Görseldeki özdeş dinamometrelere asılan K, L ve M cisimlerinin yaylarda meydana getirdiği uzama miktarları verilmiştir. Buna göre cisimlerin kütleleri arasındaki ilişki hangi seçenekte doğru sıralanmıştır?",
+        imageUrl: "/images/grade5/fen/term2/test7/dinamometre-uzama-klm.webp",
+        options: ["K > L > M", "M > L > K", "L > K > M", "M > K > L"],
+        correct: 1,
+        explanation: "Dinamometredeki yayın uzama miktarı, asılan cismin uyguladığı kuvvet (ağırlık/kütle) ile doğru orantılıdır. Yayı en çok uzatan M cismi en ağır, en az uzatan K cismi ise en hafiftir."
+      },
+      {
+        id: "f5-2-t7-img-04",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde bir mikroskop altında incelenen ve kamçısı sayesinde hareket edebilen tek hücreli bir canlı türü gösterilmiştir. Bu canlı aşağıdaki gruplardan hangisine aittir?",
+        imageUrl: "/images/grade5/fen/term2/test7/mikroskobik-canli-amip.webp",
+        options: ["Mantarlar", "Bitkiler", "Mikroskobik Canlılar", "Hayvanlar"],
+        correct: 2,
+        explanation: "Gözle görülemeyecek kadar küçük olan, sadece mikroskop yardımıyla seçilebilen amip, öglena, paramezyum ve bakteriler 'Mikroskobik Canlılar' sınıfına girer."
+      },
+      {
+        id: "f5-2-t7-img-05",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde nemli bir ağaç gövdesinde ve ekmek üzerinde hızla çoğalan canlılar modellenmiştir. Kendi besinini üretemeyen ve bitki olmayan bu canlı grubu aşağıdakilerden hangisidir?",
+        imageUrl: "/images/grade5/fen/term2/test7/mantarlar-kuf-sapli.webp",
+        options: ["Bitkiler", "Mantarlar", "Hayvanlar", "Bakteriler"],
+        correct: 1,
+        explanation: "Görseldeki küf mantarı ve şapkalı mantarlar fotosentez yapamazlar, yani bitki değillerdir. Hazır besinle beslenen ayrı bir canlı grubu olan 'Mantarlar'dır."
+      },
+      {
+        id: "f5-2-t7-img-06",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde karanlık bir kutunun içine gönderilen ışık ışınlarının izlediği yollar doğrusal çizgilerle çizilmiştir. Bu şema ışığın hangi temel özelliğini kanıtlar?",
+        imageUrl: "/images/grade5/fen/term2/test7/isik-dogrusal-yayilma.webp",
+        options: [
+          "Işığın sadece dalgalar halinde yayıldığını",
+          "Işığın her yöne ve doğrusal (düz çizgiler şeklinde) yayıldığını",
+          "Işığın maddelerin içinden geçemediğini",
+          "Işığın yansıma yapamadığını"
+        ],
+        correct: 1,
+        explanation: "Işınların kaynaktan çıktıktan sonra her yöne düz çizgiler (oklar) halinde ilerlemesi, ışığın doğrusal yollarla yayıldığını gösteren en net kanıttır."
+      },
+      {
+        id: "f5-2-t7-img-07",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde bir ışık ışınının pürüzsüz düz aynaya çarpıp yansıması modellenmiştir. Şemadaki yansıma açısı (b) 40° olduğuna göre, gelen ışın ile yansıyan ışın arasındaki toplam açı kaç derecedir?",
+        imageUrl: "/images/grade5/fen/term2/test7/yansima-kanunu-aci.webp",
+        options: ["40°", "50°", "80°", "90°"],
+        correct: 2,
+        explanation: "Yansıma kanunlarına göre gelme açısı, yansıma açısına her zaman eşittir ($a = b = 40^\circ$). İkisinin arasındaki toplam açı ise $40^\circ + 40^\circ = 80^\circ$ olur."
+      },
+      {
+        id: "f5-2-t7-img-08",
+        subject: "fen",
+        term: 2,
+        prompt: "Görseldeki kapta bulunan saf katı bir maddeye ısı verilmeye başlandığında sıcaklığının belirli bir süre sonra sabit kaldığı (A noktası) görülüyor. Bu esnada maddede hangi olay gerçekleşmektedir?",
+        imageUrl: "/images/grade5/fen/term2/test7/hal-degisimi-erime.webp",
+        options: ["Yoğuşma", "Erime", "Donma", "Buharlaşma"],
+        correct: 1,
+        explanation: "Saf bir katı madde ısıtılırken sıcaklığın sabit kaldığı ilk nokta onun erime noktasıdır. Madde bu esnada katı halden sıvı hale (erime) geçmektedir."
+      },
+      {
+        id: "f5-2-t7-img-09",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde kurulan elektrik devresindeki ampulün parlaklığını artırmak isteyen bir öğrenci, düzenek üzerinde nasıl bir değişiklik yapmalıdır?",
+        imageUrl: "/images/grade5/fen/term2/test7/devre-parlaklik-degisken.webp",
+        options: [
+          "Devreye bir ampul daha seri eklemelidir.",
+          "Devredeki pil sayısını artırmalıdır.",
+          "Devredeki anahtarı açık konuma getirmelidir.",
+          "Kabloları daha uzun bir kabloyla değiştirmelidir."
+        ],
+        correct: 1,
+        explanation: "Bir devredeki pil sayısı (enerji kaynağı) artırılırsa ampul başına düşen elektrik enerjisi miktarı artar ve ampul daha parlak yanar."
+      },
+      {
+        id: "f5-2-t7-img-10",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde yerkabuğundaki ani kırılmalar ve sarsıntılarla meydana gelen yıkıcı bir doğa olayı şematize edilmiştir. Bu can ve mal kaybına yol açabilecek doğa olayı hangisidir?",
+        imageUrl: "/images/grade5/fen/term2/test7/deprem-doga-olayi.webp",
+        options: ["Heyelan", "Deprem", "Kasırga", "Sel"],
+        correct: 1,
+        explanation: "Yerkabuğundaki levha hareketleri ve kırılmalar sonucu oluşan sismik dalgalara ve sarsıntılara 'Deprem' adı verilir."
+      },
+
+      // [11-20 Arası Sorular: Teorik / Bilgi Odaklı Sorular]
+      {
+        id: "f5-2-t7-11",
+        subject: "fen",
+        term: 2,
+        prompt: "Ay'ın yüzeyinde çok sayıda meteor çarpması sonucu oluşmuş derin çukurlar (kraterler) bulunur. Dünya'ya da meteorlar yönelmesine rağmen Dünya yüzeyinde bu kadar çok krater oluşmamasının temel nedeni nedir?",
+        options: [
+          "Dünya'nın Ay'dan daha küçük olması",
+          "Dünya'nın kalın bir atmosfere sahip olması ve meteorları yakarak yok etmesi",
+          "Dünya'daki denizlerin meteorları eritmesi",
+          "Güneş'in Dünya'yı koruması"
+        ],
+        correct: 1,
+        explanation: "Dünya'nın kalın atmosferi, gelen gök taşlarını sürtünme etkisiyle yakarak parçalar. Ay'ın ise yok denecek kadar ince bir atmosferi olduğundan meteorlar doğrudan yüzeye çarparak kraterleri oluşturur."
+      },
+      {
+        id: "f5-2-t7-12",
+        subject: "fen",
+        term: 2,
+        prompt: "Kütle ve ağırlık kavramları ile ilgili aşağıda verilen bilgilerden hangisi 'ağırlık' kavramına ait bir özelliktir?",
+        options: [
+          "Eşit kollu terazi ile ölçülür ve her yerde sabittir.",
+          "Madde miktarının bir ölçüsüdür, birimi kilogramdır.",
+          "Cisme etki eden yer çekimi kuvvetidir, dinamometre ile ölçülür.",
+          "Bulunulan gezegene veya konuma göre asla değişmez."
+        ],
+        correct: 2,
+        explanation: "Ağırlık bir kuvvettir, yer çekimine bağlıdır, dinamometre ile ölçülür ve birimi Newton'dır (N). Kütle ise değişmeyen madde miktarıdır."
+      },
+      {
+        id: "f5-2-t7-13",
+        subject: "fen",
+        term: 2,
+        prompt: "Kışın karlı havalarda araç lastiklerine zincir takılması, sporcuların ayakkabılarının altına dişli çiviler (krampon) yaptırması hangi amaca yöneliktir?",
+        options: [
+          "Sürtünme kuvvetini azaltarak hızı artırmak",
+          "Sürtünme kuvvetini artırarak kaymayı ve kazaları önlemek",
+          "Cisimlerin kütlelerini hafifletmek",
+          "Işığın yansımasını engellemek"
+        ],
+        correct: 1,
+        explanation: "Lastiğe zincir takılması veya kramponların taban yapısı, yüzeydeki pürüzlülüğü dolayısıyla sürtünme kuvvetini artırarak güvenli tutunma sağlar."
+      },
+      {
+        id: "f5-2-t7-14",
+        subject: "fen",
+        term: 2,
+        prompt: "Bitkiler dünyası 'Çiçekli Bitkiler' ve 'Çiçeksiz Bitkiler' olarak ikiye ayrılır. Aşağıda verilen bitki çiftlerinden hangisi 'Çiçeksiz Bitkiler' grubuna örnek gösterilebilir?",
+        options: [
+          "Gül - Papatya",
+          "Elma ağacı - Domates",
+          "Eğrelti otu - Kara yosunu",
+          "Çam ağacı - Lale"
+        ],
+        correct: 2,
+        explanation: "Eğrelti otu, kara yosunu, at kuyruğu ve likenler çiçeği ve tohumu bulunmayan, nemli yerlerde yaşayan çiçeksiz bitkilerdir."
+      },
+      {
+        id: "f5-2-t7-15",
+        subject: "fen",
+        term: 2,
+        prompt: "Işığın maddelerle karşılaşması durumunda maddeler ışığı geçirme durumlarına göre sınıflandırılır. Buna göre, 'Buzlu cam - Temiz su - Tahta kapı' maddelerinin ışık geçirgenlik sıralaması sırasıyla nasıldır?",
+        options: [
+          "Yarı saydam - Saydam - Opak",
+          "Saydam - Yarı saydam - Opak",
+          "Opak - Saydam - Yarı saydam",
+          "Yarı saydam - Opak - Saydam"
+        ],
+        correct: 0,
+        explanation: "Buzlu cam ışığın bir kısmını geçirir (Yarı saydam), temiz su ışığı tamamen geçirir (Saydam), tahta kapı ise ışığı hiç geçirmez (Opak/Saydam olmayan)."
+      },
+      {
+        id: "f5-2-t7-16",
+        subject: "fen",
+        term: 2,
+        prompt: "Isı ve sıcaklık kavramları günlük yaşamda sıkça karıştırılır. Isı ve sıcaklık ile ilgili verilen bilgilerden hangisi doğrudur?",
+        options: [
+          "Sıcaklık bir enerji türüdür, termometre ile ölçülür.",
+          "Isı, maddeler arasında alınıp verilen bir enerjidir; birimi kalori veya joule'dür.",
+          "Isının birimi derece Celsius (°C) olarak ifade edilir.",
+          "Isı alan bir maddenin sıcaklığı her zaman kesinlikle düşer."
+        ],
+        correct: 1,
+        explanation: "Isı bir enerji türüdür, kalorimetre kabı ile hesaplanır ve birimi Joule/Kalori'dir. Sıcaklık ise bir enerji değil, ölçümdür ve birimi °C'dir."
+      },
+      {
+        id: "f5-2-t7-17",
+        subject: "fen",
+        term: 2,
+        prompt: "Yazın elektrik tellerinin sarkması, demiryolu raylarının arasındaki boşlukların kapanıp bükülmesi ısı etkisinin hangi sonucu ile doğrudan açıklanır?",
+        options: ["Donma", "Büzülme", "Genleşme", "Yoğuşma"],
+        correct: 2,
+        explanation: "Isı alan maddelerin hacimlerinin artarak boyca uzaması veya genişlemesi olayına 'Genleşme' denir. Tellerin sarkması genleşme örneğidir."
+      },
+      {
+        id: "f5-2-t7-18",
+        subject: "fen",
+        term: 2,
+        prompt: "Basit bir elektrik devresinde elemanların bilimsel gösterimleri için semboller kullanılır. Devre şemasında uzun ve kısa iki paralel çizgiden oluşan ($+|-$) sembol hangi elemanı temsil eder?",
+        options: ["Ampul", "Bağlantı kablosu", "Anahtar", "Pil (Batarya)"],
+        correct: 3,
+        explanation: "Uzun çizgi artı ($+$) kutbunu, kısa ve kalın çizgi eksi ($-$) kutbunu gösterecek şekilde yan yana çizilen sembol elektrik kaynağı olan 'Pil'e aittir."
+      },
+      {
+        id: "f5-2-t7-19",
+        subject: "fen",
+        term: 2,
+        prompt: "Bir bölgedeki canlı türlerinin sayıca ve çeşitçe zengin olmasına 'Biyoçeşitlilik' denir. Aşağıdakilerden hangisi biyoçeşitliliği doğrudan 'olumsuz' etkileyen bir durumdur?",
+        options: [
+          "Organik tarım yöntemlerinin yaygınlaştırılması",
+          "Sanayi atıklarının arıtılmadan akarsulara ve toprağa bırakılması",
+          "Milli park alanlarının ilan edilip koruma altına alınması",
+          "Ağaçlandırma çalışmalarının artırılması"
+        ],
+        correct: 1,
+        explanation: "Fabrika ve sanayi atıklarının doğaya zehirli şekilde bırakılması su ve toprak kirliliğine, dolayısıyla canlı türlerinin yok olmasına neden olur."
+      },
+      {
+        id: "f5-2-t7-20",
+        subject: "fen",
+        term: 2,
+        prompt: "Geri dönüşüm süreçleri, doğal kaynakların korunması açısından hayati önem taşır. Aşağıdaki maddelerden hangisinin geri dönüşüm kutusuna atılması çevre kirliliğini önlemede 'en az' etkiye sahiptir?",
+        options: ["Plastik şişeler", "Alüminyum içecek kutuları", "Meyve ve sebze kabukları", "Atık motor yağları"],
+        correct: 2,
+        explanation: "Meyve ve sebze kabukları organik atıklardır, doğada kısa sürede kendiliğinden çürüyerek gübreye dönüşür. Plastik, metal ve yağlar ise doğada yüzyıllarca kalıcı hasar bırakan yapay atıklardır."
+      }
     ]
   } // term2 bitti
 }; // fenData bitti
