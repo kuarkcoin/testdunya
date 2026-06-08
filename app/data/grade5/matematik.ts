@@ -3810,11 +3810,11 @@ export const matematikData: SubjectData = {
         correct: 1,
         explanation: "Dikdörtgenin içine çizilebilecek en büyük karenin bir kenarı, dikdörtgenin kısa kenarı kadar (10 m) olabilir. Havuz alanı: $10 \\times 10 = 100$ m². Kalan alan: $200 - 100 = 100$ m²."
       },
-      {
+    {
         id: "m5-2-t2-20",
         subject: "matematik",
         term: 2,
-        prompt: "Aşağıda verilen zaman ölçüsü birimleri arasındaki dönüşümlerden hangisi matematiksel olarak yanlıştır?",
+        prompt: "Aşağıda verilmiş olan zaman ölçüsü birimleri arasındaki dönüşümlerden hangisi matematiksel olarak yanlıştır?",
         options: [
           "5 dakika 20 saniye = 320 saniye",
           "3 saat 15 dakika = 195 dakika",
@@ -3824,7 +3824,6 @@ export const matematikData: SubjectData = {
         correct: 3,
         explanation: "1 gün = 24 saattir. 240 saat: $240 \\div 24 = 10$ gün yapmalıdır, 8 gün ifadesi matematiksel olarak yanlıştır."
       }
-    ],
-    test2: []
-  }
-};
+    ] // <-- test2 dizisinin sonu
+  } // <-- term2 nesnesinin sonu
+}; // <-- matematikData ana nesnesinin sonu (Dosyanın tamamen bitişi)
