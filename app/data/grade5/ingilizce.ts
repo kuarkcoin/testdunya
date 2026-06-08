@@ -3234,6 +3234,202 @@ export const ingilizceData: SubjectData = {
         correct: 2,
         explanation: "Tabelaya göre yasak olan durumlarda veya kurallara aykırı durumlarda 'mustn't' (yasak/yapmamalısın) kullanılır."
       }
-    ] // <-- test2 dizisi bitti
+    ], 
+    test3: [
+      // --- 5. SINIF İNGİLİZCE 2. DÖNEM TEST 3 ---
+      // [1-10 Arası Sorular: Görsel Odaklı / Şekilli Sorular]
+      {
+        id: "e5-2-t3-img-01",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the movie poster. What type of movie is this? 'I think it is a/an ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test3/animation-poster.webp",
+        options: ["horror movie", "animation", "documentary", "western"],
+        correct: 1,
+        explanation: "Görselde renkli, sevimli hayvan karakterlerinin yer aldığı bir çizgi sinema/animasyon (animation) afişi bulunmaktadır."
+      },
+      {
+        id: "e5-2-t3-img-02",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the visual. What does the boy think about this movie? 'He thinks it is ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test3/scared-boy-movie.webp",
+        options: ["funny", "scary", "boring", "pleasant"],
+        correct: 1,
+        explanation: "Görselde korkunç bir sahne izlerken gözlerini kapatan ve çok korkan bir çocuk var. Bu yüzden film onun için korkutucudur (scary)."
+      },
+      {
+        id: "e5-2-t3-img-03",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the party list. What do we need for the decoration? 'We need some ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test3/party-decor-list.webp",
+        options: ["beverages", "confetti and balloons", "birthday cake", "invitation cards"],
+        correct: 1,
+        explanation: "Görseldeki parti hazırlık listesinde süsleme (decoration) başlığının altında konfeti ve balonlar (confetti and balloons) yer almaktadır."
+      },
+      {
+        id: "e5-2-t3-img-04",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the birthday cake in the picture. Complete the sentence. 'Tim is ________ years old today.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test3/birthday-cake-11.webp",
+        options: ["nine", "ten", "eleven", "twelve"],
+        correct: 2,
+        explanation: "Görseldeki doğum günü pastasının üzerinde tam 11 (eleven) adet mum yanmaktadır."
+      },
+      {
+        id: "e5-2-t3-img-05",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the invitation card. When is the party? 'It is on ________.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test3/party-card-date.webp",
+        options: ["Saturday", "Sunday", "Friday", "Wednesday"],
+        correct: 0,
+        explanation: "Davetiye kartının (invitation card) üzerinde partinin günü Cumartesi (Saturday) olarak açıkça belirtilmiştir."
+      },
+      {
+        id: "e5-2-t3-img-06",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the fitness activity in the picture. Complete the sentence. 'My brother likes ________ in the pool on Fridays.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test3/swimming-pool.webp",
+        options: ["jogging", "cycling", "swimming", "hiking"],
+        correct: 2,
+        explanation: "Görselde havuzda yüzen bir çocuk modellenmiştir. Yüzmek 'swimming' elemidir."
+      },
+      {
+        id: "e5-2-t3-img-07",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the picture. Which sport can she do? 'She is very strong. She can ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test3/weightlifting.webp",
+        options: ["play tennis", "lift weights", "ride a horse", "do origami"],
+        correct: 1,
+        explanation: "Görselde spor salonunda ağırlık/halter kaldıran güçlü bir kız gösterilmektedir. Ağırlık kaldırmak 'lift weights' sporudur."
+      },
+      {
+        id: "e5-2-t3-img-08",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the animal shelter sign. What should the children do? 'They should ________ the animals.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test3/adopt-animals.webp",
+        options: ["hunt", "frighten", "adopt", "sell"],
+        correct: 2,
+        explanation: "Görseldeki barınak panosunda 'Don't buy, adopt!' (Satın almayın, sahiplenin!) yazmaktadır. Hayvanları sahiplenmek 'adopt' kelimesidir."
+      },
+      {
+        id: "e5-2-t3-img-09",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the child at the animal shelter. What is he doing? 'He is ________ the street cats.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test3/feeding-cats.webp",
+        options: ["feeding", "riding", "washing", "buying"],
+        correct: 0,
+        explanation: "Görselde kedilerin kabına mama döken merhametli bir çocuk vardır. Hayvan beslemek 'feeding' eylemidir."
+      },
+      {
+        id: "e5-2-t3-img-10",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the poster about saving nature. Complete the slogan. 'We must ________.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test3/save-water-poster.webp",
+        options: ["waste energy", "cut down trees", "save water", "pollute rivers"],
+        correct: 2,
+        explanation: "Görseldeki çevre afişinde damlayan bir musluk resmi ve altında su tasarrufu yapılması gerektiğini belirten 'save water' sloganı vardır."
+      },
+
+      // [11-20 Arası Sorular: Teorik / Bilgi Odaklı Sorular]
+      {
+        id: "e5-2-t3-11",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Read the movie conversation. Sue: 'What is the film about?' Tim: 'It is about a clever dog. It is very ________.'",
+        options: ["boring", "intelligent", "frightening", "scary"],
+        correct: 1,
+        explanation: "Soruda köpeğin 'clever' (akıllı) olduğu söylenmiştir. Şıklarda buna eş anlam olabilecek kelime 'intelligent' (zeki) seçeneğidir."
+      },
+      {
+        id: "e5-2-t3-12",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Complete the sentence about movie preferences: 'I don't like horror movies because I think they are ________.'",
+        options: ["funny", "exciting", "scary", "entertaining"],
+        correct: 2,
+        explanation: "Korku filmlerini sevmeme sebebi onların korkutucu (scary) olmasıyla açıklanabilir."
+      },
+      {
+        id: "e5-2-t3-13",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Read the party dialogue. Sally: 'Can I join your birthday party?' Kevin: 'Sure! Here is your ________.'",
+        options: ["shopping list", "invitation card", "beverage", "birthday cake"],
+        correct: 1,
+        explanation: "Birini partiye davet ederken veya kabul ederken ona davetiye kartı (invitation card) verilir."
+      },
+      {
+        id: "e5-2-t3-14",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Complete the sentence about party preparations: 'We must buy some ________ like fruit juice and lemonade for the guests.'",
+        options: ["candles", "presents", "beverages", "decorations"],
+        correct: 2,
+        explanation: "Meyve suyu ve limonata gibi içeceklere genel olarak İngilizcede 'beverages' (içecekler) denir."
+      },
+      {
+        id: "e5-2-t3-15",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Choose the correct phrase for fitness life: 'To stay healthy and fit, we should ________ every morning.'",
+        options: ["eat junk food", "do exercise", "watch TV for hours", "sleep all day"],
+        correct: 1,
+        explanation: "Sağlıklı ve formda kalmak (healthy and fit) için her sabah egzersiz yapmak (do exercise) gerekir."
+      },
+      {
+        id: "e5-2-t3-16",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Complete the text about sports: 'Mary loves outdoor sports. Her favorite activity is ________ in the green forest.'",
+        options: ["trekking", "playing chess", "doing origami", "watching cartoons"],
+        correct: 0,
+        explanation: "Yeşil ormanda açık havada yapılabilecek en uygun doğa sporu doğa yürüyüşüdür (trekking)."
+      },
+      {
+        id: "e5-2-t3-17",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Read the conversation about an animal shelter. Pupil: 'Can we ________ the dogs in the shelter?' Officer: 'Yes, but don't give them unhealthy food.'",
+        options: ["hunt", "feed", "frighten", "sell"],
+        correct: 1,
+        explanation: "Barınaktaki köpeklere yiyecek verilmesinden bahsedildiği için boşluğa beslemek anlamına gelen 'feed' fiili gelmelidir."
+      },
+      {
+        id: "e5-2-t3-18",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Choose the correct option about animal care: 'Vets (veterinarians) ________ sick or injured animals at the shelter.'",
+        options: ["examine and treat", "hunt and kill", "scare", "sell"],
+        correct: 0,
+        explanation: "Veterinerlerin (vets) görevi hasta veya yaralı hayvanları muayene ve tedavi etmektir (examine and treat)."
+      },
+      {
+        id: "e5-2-t3-19",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Choose the correct comparative sentence about nature: 'A jungle is ________ than a small park.' (beautiful)",
+        options: ["beautifuler", "more beautiful", "beautiful", "beautifulest"],
+        correct: 1,
+        explanation: "'Beautiful' çok heceli/uzun bir sıfat olduğu için karşılaştırma (Comparative) kuralına göre başına 'more' alır."
+      },
+      {
+        id: "e5-2-t3-20",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Complete the slogan about a green city: 'We shouldn't ________ the environment. We must keep our city clean.'",
+        options: ["protect", "save", "pollute", "plant"],
+        correct: 2,
+        explanation: "Şehri temiz tutmak istiyorsak çevreyi kirletmemeliyiz (shouldn't pollute)."
+      }
+    ], // <-- test2 dizisi bitti
   } // <-- term2 nesnesi bitti
 }; // <-- ingilizceData ana nesnesi bitti (Dosyanın tamamen kapanışı)
