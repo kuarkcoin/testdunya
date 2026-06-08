@@ -3626,6 +3626,202 @@ export const ingilizceData: SubjectData = {
         correct: 2,
         explanation: "Sokak hayvanlarını korumak için barınaktan bir köpek 'sahiplenilebilir' (adopt)."
       }
+    ],
+    test5: [
+      // --- 5. SINIF İNGİLİZCE 2. DÖNEM TEST 5 ---
+      // [1-10 Arası Sorular: Görsel Odaklı / Şekilli Sorular]
+      {
+        id: "e5-2-t5-img-01",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the movie scene. What type of movie is this? 'I think it is a/an ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test5/scifi-movie.webp",
+        options: ["comedy", "sci-fi movie", "documentary", "romance"],
+        correct: 1,
+        explanation: "Görselde uzay gemileri, robotlar ve fütüristik ögeler yer almaktadır. Bu tür filmlere bilim kurgu (sci-fi movie) denir."
+      },
+      {
+        id: "e5-2-t5-img-02",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the visual. What does the girl think about this comedy movie? 'She thinks it is ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test5/laughing-girl-movie.webp",
+        options: ["boring", "scary", "funny", "sad"],
+        correct: 2,
+        explanation: "Görselde televizyon izlerken kahkahalarla gülen bir kız çocuğu var. Bu, filmin eğlenceli/komik (funny) olduğunu gösterir."
+      },
+      {
+        id: "e5-2-t5-img-03",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the party table. What do we need for the guests to eat? 'We need a big ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test5/birthday-cake-slice.webp",
+        options: ["beverage", "birthday cake", "invitation card", "candle"],
+        correct: 1,
+        explanation: "Görselde parti masasının üzerinde dilimlenmiş büyük ve nefis bir doğum günü pastası (birthday cake) yer almaktadır."
+      },
+      {
+        id: "e5-2-t5-img-04",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the party list. What should we do before the party starts?",
+        imageUrl: "/images/grade5/ingilizce/term2/test5/send-invitations.webp",
+        options: ["Clean the house", "Send invitation cards", "Eat the cake", "Go to bed"],
+        correct: 1,
+        explanation: "Görseldeki listede 'To-Do List' başlığı altında arkadaşlara davetiye kartı göndermek (Send invitation cards) işaretlenmiştir."
+      },
+      {
+        id: "e5-2-t5-img-05",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the fitness activity. What is her favorite hobby to stay fit? 'She loves ____ in nature.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test5/hiking-forest.webp",
+        options: ["swimming", "hiking", "playing computer games", "lifting weights"],
+        correct: 1,
+        explanation: "Görselde sırt çantasıyla ormanda doğa yürüyüşü yapan bir kız vardır. Doğa yürüyüşü 'hiking'dir."
+      },
+      {
+        id: "e5-2-t5-img-06",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the gym picture. What is the boy doing? 'He is ________.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test5/doing-pushups.webp",
+        options: ["running", "swimming", "doing push-ups", "riding a bike"],
+        correct: 2,
+        explanation: "Görselde spor salonundaki minder üzerinde şınav çeken bir çocuk modellenmiştir. Şınav çekmek 'doing push-ups' eylemidir."
+      },
+      {
+        id: "e5-2-t5-img-07",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the animal shelter sign. What is the vet doing? 'The vet is ________ the sick puppy.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test5/vet-examining.webp",
+        options: ["hunting", "frightening", "examining", "selling"],
+        correct: 2,
+        explanation: "Görselde barınaktaki küçük ve hasta bir köpeği stetoskopla muayene eden veteriner vardır. Muayene etmek 'examining' kelimesidir."
+      },
+      {
+        id: "e5-2-t5-img-08",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the picture. Where are the farm animals sleeping? 'They are in the ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test5/barn-animals.webp",
+        options: ["jungle", "ocean", "desert", "barn"],
+        correct: 3,
+        explanation: "Görselde inek, koyun ve atların çiftlikteki ahır/samanlık (barn) içinde dinlendiği görülmektedir."
+      },
+      {
+        id: "e5-2-t5-img-09",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the environmental chart. What should we do to save our nature? 'We should ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test5/recycling-bins.webp",
+        options: ["cut down trees", "recycle our waste", "pollute the seas", "waste electricity"],
+        correct: 1,
+        explanation: "Görselde cam, kağıt ve plastik atıkların ayrıştırıldığı geri dönüşüm kutuları (recycling) yer almaktadır."
+      },
+      {
+        id: "e5-2-t5-img-10",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the future city image. 'In the future, cities will be greener and people will use ____ to protect nature.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test5/solar-panels.webp",
+        options: ["coal and oil", "solar panels", "flying trains", "plastic bags"],
+        correct: 1,
+        explanation: "Görselde geleceğin modern ve çevre dostu evlerinin çatısında güneş panelleri (solar panels) şematize edilmiştir."
+      },
+
+      // [11-20 Arası Sorular: Teorik / Bilgi Odaklı Sorular]
+      {
+        id: "e5-2-t5-11",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Read the sentence about movies: 'I love learning about real history and animals. My favorite movie type is a ________.'",
+        options: ["comedy", "horror movie", "documentary", "sci-fi"],
+        correct: 2,
+        explanation: "Gerçek tarihi ve hayvanların yaşamını (real history and animals) öğreten eğitici film türü belgeseldir (documentary)."
+      },
+      {
+        id: "e5-2-t5-12",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Complete the conversation: A: 'What is the film about?' B: 'It's about a brave hero. He fights bad people. It is very ________.'",
+        options: ["boring", "exciting", "sad", "frightening"],
+        correct: 1,
+        explanation: "Kötülere karşı savaşan cesur bir kahramanın maceraları heyecan vericidir (exciting)."
+      },
+      {
+        id: "e5-2-t5-13",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Read the party invitation text: 'Dear Mark, please come to my party. Don't forget to buy a fancy dress. It is a ________ party.'",
+        options: ["fancy dress", "pyjama", "barbecue", "pool"],
+        correct: 0,
+        explanation: "Özel kostümler veya eğlenceli maskeli elbiseler giyilmesi istenen parti türü kostüm partisidir (fancy dress party)."
+      },
+      {
+        id: "e5-2-t5-14",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Complete the sentence about party requirements: 'To blow out the ________ on my birthday cake, I need a match.'",
+        options: ["balloons", "presents", "candles", "invitations"],
+        correct: 2,
+        explanation: "Doğum günü pastasının üzerinde söndürülen/üflenen nesneler mumlardır (candles)."
+      },
+      {
+        id: "e5-2-t5-15",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Choose the correct advice for personal health: 'You look very tired and weak. You ________ do heavy workout today.'",
+        options: ["should", "must", "can", "shouldn't"],
+        correct: 3,
+        explanation: "Yorgun ve güçsüz (tired and weak) hisseden birine o gün ağır antrenman yapmaması (shouldn't) tavsiye edilir."
+      },
+      {
+        id: "e5-2-t5-16",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Complete the text about fitness: 'Jogging and cycling are popular ________ activities. They keep your heart healthy.'",
+        options: ["board", "indoor", "fitness", "computer"],
+        correct: 2,
+        explanation: "Hafif tempo koşu ve bisiklet sürmek, kalbi koruyan popüler sağlıklı yaşam/formda kalma (fitness) aktiviteleridir."
+      },
+      {
+        id: "e5-2-t5-17",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Read the animal shelter guide: 'We must keep the shelter clean and comfortable. We shouldn't ________ the street dogs.'",
+        options: ["protect", "save", "frighten", "feed"],
+        correct: 2,
+        explanation: "Hayvanları korumak istiyorsak sokak köpeklerini korkutmamalıyız (shouldn't frighten)."
+      },
+      {
+        id: "e5-2-t5-18",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Complete the sentence about nature life: 'Lions and tigers are not domestic animals. They are ________ animals and they hunt.'",
+        options: ["pet", "farm", "wild", "friendly"],
+        correct: 2,
+        explanation: "Aslanlar ve kaplanlar evcil değildir, doğada avlanan vahşi (wild) hayvanlardır."
+      },
+      {
+        id: "e5-2-t5-19",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Choose the correct comparative sentence structure: 'Living in a peaceful village is ________ than living in a loud city centre.'",
+        options: ["gooder", "better", "more good", "best"],
+        correct: 1,
+        explanation: "'Good' sıfatı düzensizdir ve karşılaştırma (Comparative) cümlelerinde 'better' yapısına dönüşür."
+      },
+      {
+        id: "e5-2-t5-20",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Complete the global world slogan: 'To protect our planet, we should plant more ________ and reduce plastic waste.'",
+        options: ["cars", "trees", "factories", "roads"],
+        correct: 1,
+        explanation: "Gezegenimizi korumak için daha fazla ağaç dikmeliyiz (plant more trees)."
+      }
     ],// <-- test2 dizisi bitti
   } // <-- term2 nesnesi bitti
 }; // <-- ingilizceData ana nesnesi bitti (Dosyanın tamamen kapanışı)
