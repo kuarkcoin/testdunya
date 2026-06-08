@@ -3822,6 +3822,202 @@ export const ingilizceData: SubjectData = {
         correct: 1,
         explanation: "Gezegenimizi korumak için daha fazla ağaç dikmeliyiz (plant more trees)."
       }
-    ],// <-- test2 dizisi bitti
+    ],
+    test6: [
+      // --- 5. SINIF İNGİLİZCE 2. DÖNEM TEST 6 ---
+      // [1-10 Arası Sorular: Görsel Odaklı / Şekilli Sorular]
+      {
+        id: "e5-2-t6-img-01",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the classroom picture. What is the teacher asking the students to do? 'Please, ________ to your teacher carefully.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test6/listen-teacher.webp",
+        options: ["listen", "talk", "run", "draw"],
+        correct: 0,
+        explanation: "Görselde tahta önündeki öğretmenini dikkatle dinleyen öğrenciler vardır. Dinlemek 'listen' fiili ile ifade edilir."
+      },
+      {
+        id: "e5-2-t6-img-02",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the family life scene. What are they doing in the living room? 'We love ________ movies together in the evenings.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test6/watching-movie.webp",
+        options: ["cooking", "watching", "cleaning", "playing"],
+        correct: 1,
+        explanation: "Görselde oturma odasında bir araya gelip televizyonda film izleyen mutlu bir aile gösterilmektedir. Film izlemek 'watching movies' eylemidir."
+      },
+      {
+        id: "e5-2-t6-img-03",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the animal in nature. 'A ________ has a very long neck. It can eat leaves from tall trees.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test6/giraffe.webp",
+        options: ["lion", "elephant", "giraffe", "monkey"],
+        correct: 2,
+        explanation: "Görselde uzun boynu sayesinde yüksek ağaç dallarındaki yaprakları yiyen bir zürafa (giraffe) resmi yer almaktadır."
+      },
+      {
+        id: "e5-2-t6-img-04",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the neighborhood city map. Where is the toy shop? 'The toy shop is ________ the shoe shop.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test6/map-nextto.webp",
+        options: ["opposite", "between", "under", "next to"],
+        correct: 3,
+        explanation: "Görseldeki haritada oyuncakçı dükkanı ve ayakkabıcı yan yanadır (bitişiğindedir); bu yüzden 'next to' kullanılmalıdır."
+      },
+      {
+        id: "e5-2-t6-img-05",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the future prediction illustration. 'In the future, global warming will increase. Deserts will be ________.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test6/larger-deserts.webp",
+        options: ["smaller", "larger", "greener", "colder"],
+        correct: 1,
+        explanation: "Görselde kuraklık ve küresel ısınma sebebiyle çöllerin daha da büyüdüğü (larger) şematize edilmiştir."
+      },
+      {
+        id: "e5-2-t6-img-06",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the world globe and flag icon. Pierre is from France. He speaks ________.",
+        imageUrl: "/images/grade5/ingilizce/term2/test6/france-flag.webp",
+        options: ["French", "France", "English", "Spanish"],
+        correct: 0,
+        explanation: "Fransa'dan (France) gelen bir kişinin konuştuğu dil 'French' (Fransızca) olarak adlandırılır."
+      },
+      {
+        id: "e5-2-t6-img-07",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the personal routine image. 'I always ________ my bed after I wake up.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test6/make-bed.webp",
+        options: ["wash", "comb", "make", "brush"],
+        correct: 2,
+        explanation: "Görselde sabah uyandıktan sonra yatağını düzenleyen/toplayan bir çocuk görülmektedir. Yatak toplamak 'make bed' kalıbıdır."
+      },
+      {
+        id: "e5-2-t6-img-08",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the school timetable chart. Which class is on Monday at 09:00? 'It is ________ class.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test6/maths-timetable.webp",
+        options: ["Art", "Music", "Maths", "Science"],
+        correct: 2,
+        explanation: "Görseldeki ders programında pazartesi sabahı ilk ders olarak Matematik (Maths) sembolü ve ismi yer almaktadır."
+      },
+      {
+        id: "e5-2-t6-img-09",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the health problem picture. What is the matter with the boy? 'He has a bad ________.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test6/coughing-boy.webp",
+        options: ["toothache", "cough", "broken arm", "sore throat"],
+        correct: 1,
+        explanation: "Görselde eliyle ağzını kapatarak şiddetle öksüren bir çocuk vardır. Öksürük 'cough' anlamına gelir."
+      },
+      {
+        id: "e5-2-t6-img-10",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Look at the fitness movie poster. What is their favorite outdoor sport? 'They like ________ in the mountains.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test6/hiking-mountains.webp",
+        options: ["swimming", "trekking", "doing origami", "playing tennis"],
+        correct: 1,
+        explanation: "Görselde dağlık patika bir alanda sırt çantalarıyla yürüyüş (trekking) yapan sporcular gösterilmiştir."
+      },
+
+      // [11-20 Arası Sorular: Teorik / Bilgi Odaklı Sorular]
+      {
+        id: "e5-2-t6-11",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Read the classroom rule: 'When the teacher is talking, you ________ shout or make noise.'",
+        options: ["should", "must", "mustn't", "can"],
+        correct: 2,
+        explanation: "Öğretmen konuşurken sınıfta bağırmak veya gürültü yapmak yasaktır; bu yüzden 'mustn't' kullanılmalıdır."
+      },
+      {
+        id: "e5-2-t6-12",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Complete the sentence about family life: 'On Sundays, we usually have a big ________ with my parents and grandparents in the garden.'",
+        options: ["dinner", "lunch", "breakfast", "supper"],
+        correct: 2,
+        explanation: "Pazar günleri ailece bahçede yapılan büyük ve geniş öğün genellikle sabah kahvaltısıdır (breakfast)."
+      },
+      {
+        id: "e5-2-t6-13",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Choose the correct option about animal habitats in nature: 'Whales and dolphins are big water creatures. They live in the ________.'",
+        options: ["desert", "forest", "ocean", "savannah"],
+        correct: 2,
+        explanation: "Balinalar ve yunuslar büyük deniz canlılarıdır ve okyanuslarda (ocean) yaşarlar."
+      },
+      {
+        id: "e5-2-t4-14",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Complete the text about neighborhood life: 'I want to borrow some interesting history books. I should go to the neighborhood ________.'",
+        options: ["bakery", "pharmacy", "hospital", "library"],
+        correct: 3,
+        explanation: "Kitap ödünç almak (borrow books) için gidilmesi gereken yer kütüphanedir (library)."
+      },
+      {
+        id: "e5-2-t6-15",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Read the future universe text: 'In the future, people will build green cities on other planets because Earth ________ be very crowded.'",
+        options: ["do", "did", "will", "is"],
+        correct: 2,
+        explanation: "Geleceğe yönelik 'tahmin' (In the future / will build) cümlelerinin devamında da 'will' kullanılır."
+      },
+      {
+        id: "e5-2-t6-16",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Complete the world culture sentence: 'Tokyo is the capital city of Japan. People living there are ________.'",
+        options: ["Japanese", "Japan", "Spanish", "British"],
+        correct: 0,
+        explanation: "Japonya'da (Japan) yaşayan insanların milliyeti 'Japanese' (Japon) olarak belirtilir."
+      },
+      {
+        id: "e5-2-t6-17",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Read the personal routine text: 'I have a structured day. I always ________ my face and hands before I have my breakfast.'",
+        options: ["comb", "brush", "wash", "make"],
+        correct: 2,
+        explanation: "Kahvaltıdan önce el ve yüz yıkamak 'wash my face and hands' şeklinde ifade edilir."
+      },
+      {
+        id: "e5-2-t6-18",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Complete the school life description: 'Our favorite school activity is playing volleyball in the sports hall during ________ class.'",
+        options: ["Maths", "Art", "Science", "P.E."],
+        correct: 3,
+        explanation: "Voleybol gibi fiziksel sporların yapıldığı ders Beden Eğitimi'dir (P.E. - Physical Education)."
+      },
+      {
+        id: "e5-2-t6-19",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Choose the correct comparative sentence about nature: 'A cheetah is ________ than a slow turtle.' (fast)",
+        options: ["fast", "faster", "more fast", "fastest"],
+        correct: 1,
+        explanation: "'Fast' tek heceli kısa bir sıfat olduğu için kıyaslama (Comparative) ekini '-er' olarak alır (faster)."
+      },
+      {
+        id: "e5-2-t6-20",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Complete the city animal shelter rule: 'We shouldn't harm street animals. We must ________ them and give them clean food.'",
+        options: ["hunt", "frighten", "protect", "sell"],
+        correct: 2,
+        explanation: "Sokak hayvanlarına zarar vermemek (shouldn't harm) aksine onları korumak (protect) gerekir."
+      }
+    ]// <-- test2 dizisi bitti
   } // <-- term2 nesnesi bitti
 }; // <-- ingilizceData ana nesnesi bitti (Dosyanın tamamen kapanışı)
