@@ -4020,9 +4020,9 @@ export const fenData: SubjectData = {
         term: 2,
         prompt: "Görselde bir ışık ışınının pürüzsüz düz aynaya çarpıp yansıması modellenmiştir. Şemadaki yansıma açısı (b) 40° olduğuna göre, gelen ışın ile yansıyan ışın arasındaki toplam açı kaç derecedir?",
         imageUrl: "/images/grade5/fen/term2/test7/yansima-kanunu-aci.webp",
-        options: ["40°", "50°", "80°", "90°"],
+        options: ["40°", "50°", "100°", "90°"],
         correct: 2,
-        explanation: "Yansıma kanunlarına göre gelme açısı, yansıma açısına her zaman eşittir ($a = b = 40^\circ$). İkisinin arasındaki toplam açı ise $40^\circ + 40^\circ = 80^\circ$ olur."
+        explanation: "Yansıma kanunlarına göre gelme açısı, yansıma açısına her zaman eşittir ($a = b = 40^\circ$). İkisinin arasındaki toplam açı ise $50^\circ + 50^\circ = 100^\circ$ olur."
       },
       {
         id: "f5-2-t7-img-08",
