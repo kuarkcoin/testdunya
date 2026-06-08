@@ -2062,6 +2062,1747 @@ export const turkceData: SubjectData = {
         correct: 0,
         explanation: "A seçeneği yüklemi bulunmayan eksiltili bir cümledir ve sonuna üç nokta (...) gelmesi kurallara tam uygundur."
       }
-    ]
+    ],
+      // ==========================================
+    // 2. DÖNEM 7. TEST (15 Soru - Zorlaştırılmış / Şekilsiz)
+    // ==========================================
+    test7: [
+      {
+        id: "t5-2-t7-01",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'açmak' sözcüğü, 'belirlenmiş bir sınırı veya kapsamı genişletmek, engelleri ortadan kaldırmak' anlamında kullanılmıştır?",
+        options: [
+          "Yoğun kar yağışının ardından belediye ekipleri kapanan köy yollarını açtı.",
+          "Yeni taşındıkları evin salonuna açık renkli, ferah bir boya açmışlar.",
+          "Ders çalışırken odaklanabilmek için bilgisayardan hafif bir müzik açtı.",
+          "Usta, masanın ayaklarını sabitlemek için derin bir vida deliği açtı."
+        ],
+        correct: 0,
+        explanation: "A seçeneğinde yolun açılması, ulaşıma engel olan kar bariyerinin ortadan kaldırılması ve yolun tekrar kullanılabilir hale getirilmesi anlamındadır."
+      },
+      {
+        id: "t5-2-t7-02",
+        subject: "turkce",
+        term: 2,
+        prompt: "Cümle içi anlam ilişkilerinde bazı sözcükler karşıtlık bildirirken, bazıları ise yakın anlamlılık ilişkisi kurar. Aşağıdaki cümlelerin hangisinde birbirine 'yakın anlamlı' olan sözcükler bir arada kullanılmıştır?",
+        options: [
+          "Gece gündüz demeden, hedeflerine ulaşmak için durmaksızın çalışıyordu.",
+          "Yalan yanlış bilgilerle etrafındaki insanları yönlendirmeye çalışması hiç hoş değil.",
+          "Aşağı yukarı on saattir direksiyon salladığı için gözleri kanlanmıştı.",
+          "Dost bildiğim insanların zor günümde düşmana dönüşmesi beni derinden yaraladı."
+        ],
+        correct: 1,
+        explanation: "'Yalan' ve 'yanlış' kelimeleri tam olarak zıt veya eş anlamlı değildir; aralarında yakın anlamlılık ilişkisi vardır."
+      },
+      {
+        id: "t5-2-t7-03",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde kesme işaretinin ($'$) kullanımı ile ilgili belirgin bir 'yazım yanlışı' yapılmıştır?",
+        options: [
+          "Dün akşam Türk Dil Kurumu'nun yeni yayınladığı kılavuzu inceledim.",
+          "23 Nisan 1920'de açılan meclis, milletin bağımsızlık simgesi olmuştur.",
+          "Ahmet Bey'in hazırladığı sunum, yönetim kurulundan tam not aldı.",
+          "LGS'ye hazırlanan öğrenciler kütüphanede sessizce kaynakları tarıyordu."
+        ],
+        correct: 0,
+        explanation: "Kurum, kuruluş, kurul ve iş yeri adlarına gelen ekler kesme işaretiyle ayrılmaz. 'Türk Dil Kurumunun' şeklinde bitişik yazılmalıdır."
+      },
+      {
+        id: "t5-2-t7-04",
+        subject: "turkce",
+        term: 2,
+        prompt: "Türkçede sonu sert ünsüzle biten kelimeler, ünlüyle başlayan bir ek aldıklarında yumuşarlar. Ancak bazı tek heceli kelimeler bu kurala uymayarak sertliğini korur. Hangisinde bu kurala 'aykırı' bir kullanım vardır?",
+        options: [
+          "Bardağın içindeki buzlar sıcak havanın etkisiyle hızla eridi.",
+          "Ağacın gölgesinde oturup kütüphaneden aldığı kitabı okuyordu.",
+          "Maçın ikinci yarısında attığı şut direkten dönünce çok üzüldü.",
+          "Çocuğun bacağı masanın sivri kenarına sertçe çarpmıştı."
+        ],
+        correct: 2,
+        explanation: "'Şut' kelimesi ünlüyle başlayan ek aldığında 'şudu' olmaz, 'şut' olarak kalır. Tek heceli kelimelerin yumuşamaya aykırılığına net bir örnektir."
+      },
+      {
+        id: "t5-2-t7-05",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde eylemin yapılma gerekçesi, henüz gerçekleşmemiş, geleceğe yönelik bir ideali veya hedefi (amacı) barındırmaktadır?",
+        options: [
+          "Geç uyandığından dolayı sabah okul servisinin ilk turunu kaçırmış.",
+          "Sınav sonuçları açıklandığı için okul panosunda büyük bir kalabalık oluştu.",
+          "Ailesine daha konforlu bir yaşam sunmak amacıyla bu zorlu işi kabul etti.",
+          "Yağmur aniden bastırınca piknik alanındaki herkes arabalara sığındı."
+        ],
+        correct: 2,
+        explanation: "C seçeneğinde işi kabul etme eylemi, 'konforlu yaşam sunmak' hedefi ve idealiyle (amacıyla) yapılmıştır."
+      },
+      {
+        id: "t5-2-t7-06",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki atasözlerinden hangisi, 'ortaklaşa ve birlik içinde yapılan işlerin çok daha kolay, güçlü ve başarılı bir şekilde sonuçlanacağını' savunur?",
+        options: [
+          "İşleyen demir ışıldar, pas tutmaz.",
+          "Sakla samanı, gelir zamanı; her şeyin bir vakti vardır.",
+          "Bir elin nesi var, iki elin sesi var; yardımlaşmak gerekir.",
+          "Ayağını yorganına göre uzatmayan borçtan kurtulamaz."
+        ],
+        correct: 2,
+        explanation: "'Bir elin nesi var, iki elin sesi var' atasözü toplumsal birliktelik, dayanışma ve ortak gücü (yardımlaşmayı) öğütler."
+      },
+      {
+        id: "t5-2-t7-07",
+        subject: "turkce",
+        term: 2,
+        prompt: "'Sessizlik' sözcüğünün kökü, kökünün türü ve aldığı eklerin işlevsel analizi hangi seçenekte eksiksiz ve doğru olarak verilmiştir?",
+        options: [
+          "Ses - İsim kökü / Kelime iki adet yapım eki alarak türemiştir.",
+          "Ses- - Fiil kökü / Kelime sadece çoğul eki alarak basit kalmıştır.",
+          "Sessiz - İsim kökü / Kelime bir adet çekim eki almıştır.",
+          "Seç- - Fiil kökü / Kelime ünsüz türemesine uğramıştır."
+        ],
+        correct: 0,
+        explanation: "Kelimenin kökü 'ses' ismidir. '-siz' eki isimden isim yapım ekidir, '-lik' eki de yine isimden isim yapım ekidir. Kelime iki kez türemiştir."
+      },
+      {
+        id: "t5-2-t7-08",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde yazar, doğruluğu kişiden kişiye değişmeyen, tamamen kanıtlanabilir 'nesnel' bir yargıya yer vermiştir?",
+        options: [
+          "Yazarın son kitabındaki betimlemeler okuyucunun ruhunu dinlendiriyor.",
+          "Şair, bu yapıtında hece ölçüsünün 11'li kalıbını ve düz kafiye örgüsünü kullanmıştır.",
+          "Eserdeki karakterlerin analizleri oldukça başarılı ve etkileyici kurgulanmış.",
+          "Öykülerin dili o kadar akıcı ki kitap bir solukta hayranlıkla bitiyor."
+        ],
+        correct: 1,
+        explanation: "Hece ölçüsünün kalıbı ve kafiye örgüsü matematiksel olarak sayılabilen, kişisel yorum içermeyen net nesnel bir bilgidir."
+      },
+      {
+        id: "t5-2-t7-09",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde ünsüz benzeşmesi (sertleşme) kuralına uyulmamasından kaynaklanan ciddi bir 'yazım yanlışı' yapılmıştır?",
+        options: [
+          "Ders notlarını kütüphanede unuttuğunu fark edince hemen geri döndü.",
+          "Saat tam olarak 15.00'da kalkan trene yetişmek için acele ediyordu.",
+          "Sınıftaki tüm öğrenciler sessizce öğretmenin anlatmasını bekledi.",
+          "Kitapçıdan yeni çıkan felsefe serisini indirimli fiyatla satın aldı."
+        ],
+        correct: 1,
+        explanation: "Saat 15.00 bitişi 'yüz' veya sıfır okunuşu değil, 'saat üç' okunuşuna göredir. Üç 'ç' (sert) ile biter, ek '-te' olmalıdır (15.00'te). 'da' yazımı hatadır."
+      },
+      {
+        id: "t5-2-t7-10",
+        subject: "turkce",
+        term: 2,
+        prompt: "Sözcükler bazen somut anlamlıyken mecazlaşarak soyut bir anlama bürünebilirler. Hangisinde 'yıkılmak' sözcüğü tamamen soyut/mecaz bir anlamda kullanılmıştır?",
+        options: [
+          "Depremin etkisiyle mahalledeki iki eski bina tamamen yıkıldı.",
+          "Fırtınada yol kenarındaki koca çınar ağacı büyük bir gürültüyle yıkıldı.",
+          "En güvendiği arkadaşının yalanını öğrenince adeta dünyası yıkıldı.",
+          "İnşaat alanındaki eski duvar iş makineleri yardımıyla yıkıldı."
+        ],
+        correct: 2,
+        explanation: "C seçeneğindeki 'dünyası yıkılmak', fiziksel bir çöküşü değil, yaşanan aşırı üzüntüyü, hayal kırıklığını ve ruhsal çöküntüyü ifade eden soyut bir mecazdır."
+      },
+      {
+        id: "t5-2-t7-11",
+        subject: "turkce",
+        term: 2,
+        prompt: "Bir metnin bütününde anlatılan genel durum, olay ya da kavrama konu denir. Hangisi bir metnin 'konusunu' bulmaya yönelik sorulması gereken en doğru sorudur?",
+        options: [
+          "Yazar bu metni yazarken okuyucuya hangi temel dersi vermeyi amaçlamıştır?",
+          "Bu metinde yazar asıl olarak neyi anlatmaktadır, üzerinde durulan şey nedir?",
+          "Metindeki yardımcı düşüncelerin ana düşünceyle olan bağı nasıl kurulmuştur?",
+          "Metnin başlığı yazarın kişisel görüşünü ne ölçüde yansıtmaktadır?"
+        ],
+        correct: 1,
+        explanation: "Metinde 'ne anlatılıyor?' sorusu bizi doğrudan metnin sınırlandırılmış içeriğine yani konusuna ulaştırır."
+      },
+      {
+        id: "t5-2-t7-12",
+        subject: "turkce",
+        term: 2,
+        prompt: "Çekim ekleri kelimenin anlamını değiştirmezken, yapım ekleri kelimeden tamamen yeni bir sözcük türetir. Hangisinde altı çizili kelime 'sadece çekim eki' almıştır?",
+        options: [
+          "Evdeki masanın çekmecesinde eski fotoğraflar duruyordu.",
+          "Gözlükçü, babamın cam reçetesini dikkatle inceleyip hazırladı.",
+          "Yolculuk esnasında yanına küçük bir su almayı ihmal etmemiş.",
+          "Sınıftaki yazılı sınav sonuçları okul panosuna asıldı."
+        ],
+        correct: 0,
+        explanation: "'Masanın' kelimesi sadece ilgi/tamlayan çekim eki almıştır, kelimenin anlamı değişmemiştir. Diğer şıklarda (göz-lük-çü, yol-cu-luk) yapım ekleri vardır."
+      },
+      {
+        id: "t5-2-t7-13",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde yer alan altı çizili kelimenin sesteşlik (eş sesli) özelliği 'yoktur'?",
+        options: [
+          "Kır gezisi sırasında rengarenk dağ çiçekleri topladık.",
+          "Defterine düz bir çizgi çizip altına notlar yazdı.",
+          "Eline batan küçük kıymık canını oldukça yakmıştı.",
+          "Odanın geniş pencerelerinden içeri serin bir hava girdi."
+        ],
+        correct: 3,
+        explanation: "Kır (renk/arazi/kırmak), çizgi (çizmek eylemi kökü sesteş varyantlar), el (organ/yabancı) sesteşken, 'pencere' kelimesinin sesteş karşılığı yoktur."
+      },
+      {
+        id: "t5-2-t7-14",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'kişileştirme' (teşhis) sanatı yapılmamıştır?",
+        options: [
+          "Güneş, bulutların arkasına saklanmış, çocukların oyununu izliyordu.",
+          "Kışın gelmesiyle yapraklarını döken ağaçlar hüzünlü bir sessizliğe büründü.",
+          "Dağların zirvesindeki beyaz karlar, güneş vurunca parıl parıl parlıyordu.",
+          "Küçük dere, denizle kavuşacağı anın heyecanıyla coşkuyla akıyordu."
+        ],
+        correct: 2,
+        explanation: "C seçeneğinde karların güneş vurunca parlaması tamamen gerçekçi bir fiziksel doğa olayıdır, insani bir özellik yüklenmemiştir."
+      },
+      {
+        id: "t5-2-t7-15",
+        subject: "turkce",
+        term: 2,
+        prompt: "Ünlü düşmesi kuralına göre iki heceli bazı kelimeler ünlüyle başlayan ek aldıklarında ikinci hecedeki dar ünlü düşer. Hangisinde bu kurala uymamaktan kaynaklı bir 'yazım hatası' yapılmıştır?",
+        options: [
+          "Onun attığı bu sinsi adımı önceden tahmin etmek neredeyse imkansızdı.",
+          "Aklıma gelen harika proje fikrini hemen kütüphanede not ettim.",
+          "Çocuğun burnu soğuk havanın etkisiyle kıpkırmızı kesilmişti.",
+          "Bunun tek sebebi sabır etmemen ve aceleci davranmandır."
+        ],
+        correct: 3,
+        explanation: "'Sabır etmek' yardımcı fiille birleşirken ünlü düşmesine uğramak zorundadır ve bitişik yazılmalıdır: 'sabretmemen' şeklinde olmalıdır, düşürülmemesi hatadır."
+      }
+    ],
+
+    // ==========================================
+    // 2. DÖNEM 8. TEST (15 Soru - Zorlaştırılmış / Şekilsiz)
+    // ==========================================
+    test8: [
+      {
+        id: "t5-2-t8-01",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'çevirmek' sözcüğü, 'bir şeyi kendi ekseni etrafında döndürmek' anlamının dışında, 'başkalaştırmak, yönlendirmek veya tercüme etmek' anlamında kullanılmıştır?",
+        options: [
+          "Usta, vidayı tornavida yardımıyla sağa doğru hızlıca çevirdi.",
+          "Yabancı dilde yazılmış bu tıp makalesini Türkçeye pürüzsüz çevirdi.",
+          "Çocuk, bisikletin pedalını eliyle hızlıca çevirip zinciri kontrol etti.",
+          "Direksiyonu aniden sola çevirince araba sert bir manevra yaptı."
+        ],
+        correct: 1,
+        explanation: "B seçeneğinde çevirmek kelimesi, bir dilden başka bir dile aktarmak, tercüme etmek anlamında kullanılmıştır."
+      },
+      {
+        id: "t5-2-t8-02",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde neden-sonuç (gerekçe) ilişkisi kurulurken, eylemin nedeni cümlenin başında değil de 'yüklemden sonra' bir ek cümleyle verilmiştir?",
+        options: [
+          "Sınava planlı çalışmadığı için hedeflediği yüksek puanı alamadı.",
+          "Yoğun sisten dolayı uçak seferleri sabaha kadar tamamen iptal edildi.",
+          "Dün akşamki toplantıya katılamadım; çünkü acil bir işim çıkmıştı.",
+          "Kütüphanedeki kaynak kitapları incelemek üzere erkenden evden çıktı."
+        ],
+        correct: 2,
+        explanation: "C seçeneğinde toplantıya katılamama sonucunun gerekçesi (nedeni), 'çünkü' bağlacından sonra gelen cümlede aktarılmıştır."
+      },
+      {
+        id: "t5-2-t8-03",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde büyük harflerin kullanımı ile ilgili net bir 'yazım yanlışı' yapılmıştır?",
+        options: [
+          "Bu yıl Van Kedisi neslini korumak için yeni barınaklar kuruldu.",
+          "Güneydoğu Anadolu Bölgesi, tarihi dokusuyla turistlerin ilgisini çekiyor.",
+          "Resmi Gazete'de yayınlanan yeni yönetmelik memurları ilgilendiriyor.",
+          "Ahmet Bey, Gümrük Muhafaza Müdürlüğünde uzun yıllar görev yapmış."
+        ],
+        correct: 0,
+        explanation: "Belli bir yer bildiren özel isimle kurulan tamlamalarda tür adları küçük harfle başlar: 'Van kedisi' şeklinde yazılmalıdır."
+      },
+      {
+        id: "t5-2-t8-04",
+        subject: "turkce",
+        term: 2,
+        prompt: "Sonu sert ünsüzlerle (f, s, t, k, ç, ş, h, p) biten bir kelimeye, yumuşak ünsüzle (c, d, g) başlayan bir ek geldiğinde, ekin başındaki ünsüz sertleşir. Hangisinde bu kurala örnek bir ses olayı 'yoktur'?",
+        options: [
+          "Sınıftaki panoya yeni LGS deneme tarihleri asıldı.",
+          "Kitapçıdan aldığım romanın kapağı çok etkileyiciydi.",
+          "Yavaşça kapıyı aralayıp içeriye göz attı.",
+          "Çocuğun kolu masanın kenarına sertçe çarptı."
+        ],
+        correct: 2,
+        explanation: "C seçeneğindeki 'aralayıp' veya 'yavaşça' kelimelerindeki yapı incelendiğinde 'yavaş-ça' benzeşmedir. Ancak 'kapağı' yumuşamadır. Soruda benzeşme olmayan aranıyor. (İpucu: Tüm kelimeler dikkatle incelendiğinde net ayırt edici yapı çıkacaktır)."
+      },
+      {
+        id: "t5-2-t8-05",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde bir durumun veya eylemin gerçekleşmesi, kesin olarak başka bir şartın yerine getirilmesine bağlı kılınmıştır?",
+        options: [
+          "Ödevlerini eksiksiz tamamlamak için kütüphaneye gitti.",
+          "Akşam eve erken gelirsen seninle bilgisayar oyunu oynayabiliriz.",
+          "Hava çok sıcak olduğundan dondurma hızlıca eridi.",
+          "Ders dinlerken düzenli not tuttuğu için konuyu iyi anlamış."
+        ],
+        correct: 1,
+        explanation: "Bilgisayar oyunu oynayabilme eylemi, 'akşam eve erken gelme' şartına (koşuluna) bağlanmıştır."
+      },
+      {
+        id: "t5-2-t8-06",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki atasözlerinden hangisi, 'bir işi yaparken veya bir karar verirken acele etmenin, sabırsız davranmanın hata getireceğini' vurgular?",
+        options: [
+          "Acele işe şeytan karışır, sakin olmak gerekir.",
+          "Sakla samanı, gelir zamanı; her şey değer kazanır.",
+          "Ağaç yaşken eğilir, eğitim küçük yaşta başlar.",
+          "Damlaya damlaya göl olur, birikim önemlidir."
+        ],
+        correct: 0,
+        explanation: "'Acele işe şeytan karışır' atasözü, sabırsızlıkla ve aceleyle yapılan işlerin yanlış veya eksik olacağını anlatır."
+      },
+      {
+        id: "t5-2-t8-07",
+        subject: "turkce",
+        term: 2,
+        prompt: "'Yazılışları aynı, anlamları tamamen farklı' olan kelimelere eş sesli denir. Hangisinde altı çizili sözcüğün sesteşi cümle içinde 'farklı' anlamda kullanılmıştır? (İpucu: Kelime 'kara' olsun)",
+        options: [
+          "Gemiler uzun bir yolculuğun ardından nihayet karaya yanaştı.",
+          "Kara gün dostu olduğunu bu zor günümüzde hepimize kanıtladı.",
+          "Defterine kapkara boyalarla büyük bir dağ resmi çizdi.",
+          "Kömür madeninden çıkan işçilerin yüzü kapkara olmuştu."
+        ],
+        correct: 0,
+        explanation: "A seçeneğindeki 'kara' toprak parçası (yeryüzü) anlamındayken, diğer şıklardaki 'kara' siyah renk veya kötü/talihsiz anlamındaki mecaz renk anlamındadır."
+      },
+      {
+        id: "t5-2-t8-08",
+        subject: "turkce",
+        term: 2,
+        prompt: "Kişisel beğeni, yorum ve kanaat içeren cümlelere öznel denir. Aşağıdakilerin hangisinde tamamen 'öznel' bir anlatım söz konusudur?",
+        options: [
+          "Yazar, bu eserinde Osmanlı Devleti'nin kuruluş dönemini anlatmaktadır.",
+          "Kitap, toplamda dört ana bölümden ve üç yüz elli sayfadan oluşuyor.",
+          "Kapak tasarımında kullanılan canlı renkler kitaba muhteşem bir estetik katmış.",
+          "Şair, bu şiir kitabını geçen ay İstanbul'daki bir basımevinde bastırdı."
+        ],
+        correct: 2,
+        explanation: "Canlı renklerin kitaba 'muhteşem bir estetik' kattığı ifadesi kişisel bir beğenidir, kanıtlanamaz; dolayısıyla özneldir."
+      },
+      {
+        id: "t5-2-t8-09",
+        subject: "turkce",
+        term: 2,
+        prompt: "Cümle içinde tamamlanmış yargıların sonuna nokta konurken, tamamlanmamış ve yüklemi söylenmemiş cümlelerin sonuna üç nokta konur. Hangisinde üç noktanın (...) kullanımı doğrudur?",
+        options: [
+          "Pazardan elma, armut, muz ve çilek aldım.",
+          "Karşımızda uçsuz bucaksız sarı ekin tarlaları ve masmavi bir gökyüzü...",
+          "Bu zorlu LGS sınavına çok sistemli hazırlandım.",
+          "Bana verdiğin sözleri neden tutmadın, anlamıyorum."
+        ],
+        correct: 1,
+        explanation: "B seçeneğindeki cümlenin yüklemi (vardı, görünüyordu vb.) söylenmediği için eksiltili cümledir ve üç nokta konması doğrudur."
+      },
+      {
+        id: "t5-2-t8-10",
+        subject: "turkce",
+        term: 2,
+        prompt: "Altı çizili kelimelerden hangisi, anlamca duyu organlarımızla algılanabilen 'somut' bir varlığı ifade ederken cümle içinde soyutlaşmıştır?",
+        options: [
+          "Bu zor günlerde bize karşı gösterdiği o sıcak yakınlığı unutamam.",
+          "Buzdolabından çıkan soğuk suyu bir dikişte bitirdi.",
+          "Fırından yeni çıkmış sıcak ekmekler mis gibi kokuyordu.",
+          "Kış aylarında buralarda oldukça sert ve soğuk rüzgarlar eser."
+        ],
+        correct: 0,
+        explanation: "A seçeneğindeki 'sıcak yakınlık' ifadesinde, dokunma duyusuyla algılanan sıcaklık kavramı, içtenlik ve samimiyet anlamında tamamen soyutlaşmıştır."
+      },
+      {
+        id: "t5-2-t8-11",
+        subject: "turkce",
+        term: 2,
+        prompt: "Bir metnin ana fikri ile ilgili aşağıda verilen teorik bilgilerden hangisi 'kesinlikle yanlıştır'?",
+        options: [
+          "Metnin bütününe yayılmış olan temel mesaj ve asıl derstir.",
+          "Yazarın metni kaleme almasındaki temel gayeyi ve amacı oluşturur.",
+          "Ana fikir cümleleri her zaman öznel olmak zorundadır, kanıtlanabilir olamaz.",
+          "Metinden çıkarılabilecek en genel, kapsamlı ve özet yargıdır."
+        ],
+        correct: 2,
+        explanation: "Ana fikir cümleleri metnin türüne göre nesnel bir gerçeği, bilimsel bir sonucu veya evrensel bir ahlaki kuralı da aktarabilir; her zaman öznel olmak zorunda değildir."
+      },
+      {
+        id: "t5-2-t8-12",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki kelimelerden hangisi, aldığı ek nedeniyle kökünün anlamını kaybedip 'yeni bir anlama bürünmüş' yani yapım eki almıştır?",
+        options: ["Sıralardan", "Evlerimizin", "Tuzluk", "Kalemim"],
+        correct: 2,
+        explanation: "Tuz nesne adından '-luk' eki gelerek 'tuz konulan kap' anlamında tamamen türemiş yeni bir kelime oluşmuştur."
+      },
+      {
+        id: "t5-2-t8-13",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki kelime çiftlerinden hangisi aralarındaki anlam ilişkisi (karşıtlık/eş anlam) yönüyle diğerlerinden 'farklıdır'?",
+        options: ["Siyah - Kara", "Cevap - Yanıt", "Yıl - Sene", "Uzak - Yakın"],
+        correct: 3,
+        explanation: "İlk üç seçenekteki kelimeler eş anlamlı (anlamdaş) iken, D seçeneğindeki uzak ve yakın kelimeleri zıt (karşıt) anlamlıdır."
+      },
+      {
+        id: "t5-2-t8-14",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'abartma' (mübalağa) sanatı yapılmıştır?",
+        options: [
+          "Dünya kadar işi tek başına yapmaya çalışınca çok yoruldu.",
+          "Bulutlar gökyüzünde pamuk şeker gibi süzülüyordu.",
+          "Kuşlar dallarda neşeyle sabah şarkılarını söylüyordu.",
+          "Yağan yağmurun ardından bahçedeki toprak mis gibi koktu."
+        ],
+        correct: 0,
+        explanation: "İşin miktarının dünya ile kıyaslanması, gerçeğin çok üzerinde gösterildiği aşırı bir abartmadır."
+      },
+      {
+        id: "t5-2-t8-15",
+        subject: "turkce",
+        term: 2,
+        prompt: "Birleşik kelimeler oluşturulurken kelimelerden her ikisi veya ikincisi anlam kaybına uğruyorsa bitişik yazılır. Hangisinde bu kurala aykırı bir 'yazım yanlışı' vardır?",
+        options: [
+          "Bahçenin bir köşesine güzel kokulu hanımeli çiçeği dikmişler.",
+          "Gökyüzü bugün parıl parıl parlayan yıldızlarla doluydu.",
+          "Mutfaktaki buzdolabı arızalanınca tüm yiyecekler bozulmuş.",
+          "Akşamki yemek için pazardan taze sivri biber aldı."
+        ],
+        correct: 3,
+        explanation: "'Sivribiber' kelimesi kalıplaşmış ve anlam kayması boyutuyla bitişik yazılması gereken bir birleşik kelimedir, ayrı yazılması hatadır."
+      }
+    ],
+
+    // ==========================================
+    // 2. DÖNEM 9. TEST (15 Soru - Zorlaştırılmış / Şekilsiz)
+    // ==========================================
+    test9: [
+      {
+        id: "t5-2-t9-01",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'bırakmak' sözcüğü, 'bir işi daha sonraki bir zamana ertelemek' anlamında kullanılmıştır?",
+        options: [
+          "Yorulunca elindeki ağır çantayı yavaşça yere bıraktı.",
+          "Kötü alışkanlıklarını tamamen bırakıp spora başlama kararı aldı.",
+          "Proje ödevinin son kontrolünü önümüzdeki haftaya bıraktı.",
+          "Babam, arabayı okul binasının önündeki otoparka bıraktı."
+        ],
+        correct: 2,
+        explanation: "C seçeneğinde kontrol işleminin önümüzdeki haftaya bırakılması, eylemin ileri bir tarihe ertelendiği anlamını taşır."
+      },
+      {
+        id: "t5-2-t9-02",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde eylemin gerçekleşmesi 'neden-sonuç' ilişkisine değil de 'amaç-sonuç' ilişkisine bağlıdır?",
+        options: [
+          "Yoğun trafik yüzünden sınava tam vaktinde yetişemedi.",
+          "Yabancı dilini geliştirmek amacıyla yazın yurtdışı kursuna gidecek.",
+          "Geç saatlere kadar bilgisayar oynadığından sabah uyanamamış.",
+          "Yağmur suları bodrum katını basınca eşyalar kullanılamaz oldu."
+        ],
+        correct: 1,
+        explanation: "Yurtdışı kursuna gitme eylemi, 'yabancı dilini geliştirmek' gibi henüz gerçekleşmemiş geleceğe yönelik bir amaç için yapılacaktır."
+      },
+      {
+        id: "t5-2-t9-03",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'de/da' bağlacının veya ekinin yazımı ile ilgili kural ihlali yapılan bir 'yazım yanlışı' vardır?",
+        options: [
+          "Sınıftaki arkadaşlarımda bizimle birlikte sinemaya gelecekmiş.",
+          "Çantamda kalemim de silgim de eksiksiz bir şekilde duruyor.",
+          "Kitabın son sayfasında yazarın kısa bir biyografisi yer alıyor.",
+          "Sınavı kazandığını duyunca o da en az bizim kadar sevindi."
+        ],
+        correct: 0,
+        explanation: "A seçeneğindeki 'arkadaşlarım da' ifadesindeki 'da' bağlaçtır; cümleden çıkarıldığında anlam bozulmaz, bu yüzden ayrı yazılmalıdır."
+      },
+      {
+        id: "t5-2-t9-04",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde ünlü daralması kuralına örnek gösterilebilecek bir kelime kullanılmıştır?",
+        options: [
+          "Çocuklar parkta neşeyle futbol oynuyorlar.",
+          "Sınav sonuçlarının açıklanmasını heyecanla bekliyor.",
+          "Her sabah erkenden kalkıp kütüphaneye gidiyor.",
+          "Kitap okurken zamanın nasıl geçtiğini fark etmiyor."
+        ],
+        correct: 1,
+        explanation: "Bekle- fiili '-yor' eki aldığında sondaki geniş 'e' ünlü harfi daralarak 'i' sesine dönüşmüştür (bekliyor)."
+      },
+      {
+        id: "t5-2-t9-05",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'koşul (şart)' anlamı vardır?",
+        options: [
+          "Hava kararınca sokaktaki tüm lambalar tek tek yandı.",
+          "Ödevlerini bitirirsen hafta sonu arkadaşlarınla buluşabilirsin.",
+          "Sınavı geçmek için gece gündüz demeden kütüphanede çalıştı.",
+          "Kar yağınca köy yolları tamamen ulaşıma kapandı."
+        ],
+        correct: 1,
+        explanation: "Hafta sonu arkadaşlarla buluşabilme eylemi, 'ödevlerin bitirilmesi' şartına/koşuluna bağlanmıştır."
+      },
+      {
+        id: "t5-2-t9-06",
+        subject: "turkce",
+        term: 2,
+        prompt: "Hangi atasözü 'bir işin uzmanından veya tecrübeli kişilerden akıl almanın, danışmanın önemini' vurgular?",
+        options: [
+          "Damlaya damlaya göl olur, birikim önemlidir.",
+          "Bin bilsen de bir bilene danış, tedbiri elden bırakma.",
+          "Ağaç yaşken eğilir, eğitim küçük yaşta etkilidir.",
+          "İşleyen demir ışıldar, çalışan insan başarılı olur."
+        ],
+        correct: 1,
+        explanation: "Bu atasözü, bir konuda ne kadar bilgili olursak olalım, yine de uzman birinin görüşünü almanın hata yapmayı engelleyeceğini belirtir."
+      },
+      {
+        id: "t5-2-t9-07",
+        subject: "turkce",
+        term: 2,
+        prompt: "'Gözlükçülük' kelimesi türetilirken sırasıyla hangi ek kategorilerini almıştır?",
+        options: [
+          "İki adet yapım eki alarak türetilmiştir.",
+          "Bir yapım, bir çekim eki almıştır.",
+          "Sadece çekim ekleri alarak basit kalmıştır.",
+          "Kelimede hiçbir ek yoktur, kök halindedir."
+        ],
+        correct: 0,
+        explanation: "Göz (kök) -> göz-lük (1. yapım eki) -> gözlük-çü (2. yapım eki) -> gözlükçü-lük (3. yapım eki). Kelime ardışık yapım ekleriyle türemiştir."
+      },
+      {
+        id: "t5-2-t9-08",
+        subject: "turkce",
+        term: 2,
+        prompt: "Doğruluğu kanıtlanabilen, kişisel yorum içermeyen cümleler nesneldir. Hangisi tamamen 'nesnel' bir yargıdır?",
+        options: [
+          "Yazarın son hikaye kitabı okuyucuyu derinden etkileyen harika bir üsluba sahip.",
+          "Eser, Anadolu'nun ücra bir köyünde geçen öğretmenlik anılarını konu alıyor.",
+          "Mavi renkli kapak tasarımı kitaba çok asil bir hava katmış.",
+          "Şiirlerin dili o kadar akıcı ki insan okurken büyük bir huzur buluyor."
+        ],
+        correct: 1,
+        explanation: "Eserin konusunun köydeki öğretmenlik anıları olması nesnel, kanıtlanabilir, net bir gerçektir."
+      },
+      {
+        id: "t5-2-t9-09",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki noktalama işaretlerinden hangisi, bir cümlede eş görevli kelimeleri (örneğin art arda sıralanan nesneleri veya sıfatları) ayırmak için kullanılır?",
+        options: ["Nokta", "İki nokta", "Virgül", "Noktalı virgül"],
+        correct: 2,
+        explanation: "Cümle içinde ardışık sıralanan eş görevli sözcük veya sözcük gruplarının arasına virgül (,) konur."
+      },
+      {
+        id: "t5-2-t9-10",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde kullanılan 'tatlı' sözcüğü tamamen gerçek anlamının dışında (mecaz) bir anlam taşımaktadır?",
+        options: [
+          "Yemekten sonra nefis bir şerbetli tatlı yedik.",
+          "Küçük bebeğin tatlı gülüşü salondaki herkesin içini ısıttı.",
+          "Pazardan aldığımız kırmızı elmalar oldukça tatlı çıktı.",
+          "Çayın yanına tatlı kurabiyeler ikram ettiler."
+        ],
+        correct: 1,
+        explanation: "Gülüşün tatlı olması lezzetle ilgili somut bir durum değil, sevimli, cana yakın ve hoş olması anlamında soyut bir mecazdır."
+      },
+      {
+        id: "t5-2-t9-11",
+        subject: "turkce",
+        term: 2,
+        prompt: "Bir metinde olayların akışını, zamanını, mekanını ve kahramanlarını belirten unsurların bütününe ne ad verilir?",
+        options: ["Ana fikir", "Hikaye unsurları", "Yardımcı düşünceler", "Metnin konusu"],
+        correct: 1,
+        explanation: "Olay, yer (mekan), zaman ve şahıs kadrosu (kişiler) anlatmaya bağlı metinlerin temel 'Hikaye Unsurları'nı oluşturur."
+      },
+      {
+        id: "t5-2-t9-12",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki kelimelerden hangisi yapısı bakımından 'basit' bir sözcüktür (yani hiç yapım eki almamıştır)?",
+        options: ["Yolcu", "Tuzluk", "Sıralar", "Simitçi"],
+        correct: 2,
+        explanation: "'Sıralar' kelimesindeki '-lar' eki çoğul ekidir ve bir çekim ekidir. Kelimenin anlamını değiştirmediği için basit yapılıdır."
+      },
+      {
+        id: "t5-2-t9-13",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki kelime çiftlerinden hangisi aralarındaki anlam ilişkisi yönünden 'zıt (karşıt)' anlamlı kelimelere örnek gösterilemez?",
+        options: ["Büyük - Küçük", "Hızlı - Yavaş", "Siyah - Kara", "Uzak - Yakın"],
+        correct: 2,
+        explanation: "Siyah ve kara kelimeleri zıt anlamlı değil, aynı anlamı taşıyan eş anlamlı (anlamdaş) sözcüklerdir."
+      },
+      {
+        id: "t5-2-t9-14",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'benzetme' sanatı yapılmıştır?",
+        options: [
+          "Aslan gibi kuvvetli bir çocuk koca koliyi tek hamlede kaldırdı.",
+          "Güneş bulutların arkasından bize neşeyle gülümsüyordu.",
+          "Kuşlar dallarda cıvıl cıvıl ötüşerek baharı müjdeliyordu.",
+          "Rüzgar bugün ovada çok sert bir şekilde esiyordu."
+        ],
+        correct: 0,
+        explanation: "Çocuğun gücü, 'gibi' edatı kullanılarak nitelikçe daha üstün olan aslanın kuvvetine benzetilmiştir."
+      },
+      {
+        id: "t5-2-t9-15",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki kelimelerin hangisinde bir ünsüz harfin ikileşmesiyle oluşan 'ünsüz türemesi' ses olayı vardır?",
+        options: ["Gitti", "Baktı", "Sattı", "Affetti"],
+        correct: 3,
+        explanation: "Af ve etmek kelimeleri birleşirken araya fazladan bir 'f' ünsüz harfi girmiştir ve kelime 'affetti' halini almıştır."
+      }
+    ],
+
+    // ==========================================
+    // 2. DÖNEM 10. TEST (15 Soru - Zorlaştırılmış / Şekilsiz)
+    // ==========================================
+    test10: [
+      {
+        id: "t5-2-t10-01",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'kesmek' sözcüğü, 'bir şeyi keskin bir araçla bölmek' anlamının dışında, 'akışı durdurmak, son vermek veya engellemez' anlamında kullanılmıştır?",
+        options: [
+          "Aniden bastıran fırtına mahallenin elektriklerini tamamen kesti.",
+          "Aşçı, taze sebzeleri tahtanın üzerinde titizlikle kesti.",
+          "Terzi, takım elbise için kumaşı milimetrik ölçülerle kesti.",
+          "Oduncu, kurumuş dalları baltayla küçük parçalara kesti."
+        ],
+        correct: 0,
+        explanation: "A seçeneğinde elektriğin kesilmesi, akımın durdurulması ve enerjinin sonlandırılması anlamındadır."
+      },
+      {
+        id: "t5-2-t10-02",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde bir eylemin gerçekleştirilme amacı gerekçesiyle verilmiştir? (Amaç-Sonuç ilişkisi)",
+        options: [
+          "Kar yolları kapadığı için araçlar mahsur kaldı.",
+          "Ders çalışmak üzere odasına çekildi ve ışığı kapattı.",
+          "Sınavı kazandığını öğrenince sevinçten havalara uçtu.",
+          "Geç kaldığından dolayı toplantıya katılamayacağını belirtti."
+        ],
+        correct: 1,
+        explanation: "Odaya çekilme eylemi 'ders çalışma' gibi geleceğe yönelik bir ideal ve amaç doğrultusunda yapılmıştır."
+      },
+      {
+        id: "t5-2-t10-03",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde soru eki olan '-mi' eki kelimeye bitişik yazılarak ciddi bir 'yazım yanlışı' yapılmıştır?",
+        options: [
+          "Bu akşamki etkinliğe siz de katılıyor musunuz?",
+          "Kalemimi çantandan çıkardınmı doğru söyle?",
+          "Bizimle gelmek istediğinden emin misin?",
+          "Yarın okulun açık olup olmadığını biliyor musun?"
+        ],
+        correct: 1,
+        explanation: "B seçeneğindeki 'çıkardın mı' ifadesindeki 'mı' soru ekidir ve kendinden önceki kelimeden ayrı yazılmalıdır."
+      },
+      {
+        id: "t5-2-t10-04",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'ünsüz benzeşmesi' (sertleşme) kuralına tam uygun bir kelime kullanılmıştır?",
+        options: [
+          "Dolaptaki meyveleri yıkayıp tabağa yerleştirdi.",
+          "Kitapçıdan yeni çıkan romanı indirimle aldı.",
+          "Ağacın altındaki bankta oturup dinlendi.",
+          "Sokağın başındaki lambanın ışığı yanmıyordu."
+        ],
+        correct: 1,
+        explanation: "Kitap (p sert harf) sözcüğüne gelen '-cı' eki sertleşerek '-çı' ekine dönüşmüştür (Kitapçı)."
+      },
+      {
+        id: "t5-2-t10-05",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdakilerden hangisi bir 'koşul-sonuç' cümlesidir?",
+        options: [
+          "Yağmur yağınca piknik programı tamamen iptal oldu.",
+          "Zamanını verimli kullanırsan işlerini tam vaktinde yetiştirirsin.",
+          "Seni daha net görebilmek amacıyla ön sıraya oturdu.",
+          "Uykusuz kaldığı için gözleri kanlanmıştı."
+        ],
+        correct: 1,
+        explanation: "İşlerin tam vaktinde yetiştirilebilmesi, 'zamanın verimli kullanılması' şartına/koşuluna bağlanmıştır."
+      },
+      {
+        id: "t5-2-t10-06",
+        subject: "turkce",
+        term: 2,
+        prompt: "Hangi atasözü 'biriktirilen paranın ya da imkanların zor zamanlarda büyük bir kurtarıcı olacağını' anlatır?",
+        options: [
+          "Ak akçe kara gün içindir, birikim önemlidir.",
+          "İşleyen demir ışıldar, çalışan insan başarılı olur.",
+          "Ağaç yaşken eğilir, eğitim küçük yaşta etkilidir.",
+          "Damlaya damlaya göl olur, küçük şeyler büyür."
+        ],
+        correct: 0,
+        explanation: "Bu atasözü, alın teriyle kazanılan helal paranın (ak akçe), sıkıntılı ve zor anlarda (kara gün) harcanarak problemi çözeceğini belirtir."
+      },
+      {
+        id: "t5-2-t10-07",
+        subject: "turkce",
+        term: 2,
+        prompt: "'Yolculuk' kelimesinin aldığı yapım ekleri aşağıdakilerin hangisinde sırasıyla doğru verilmiştir?",
+        options: [
+          "Önce '-cu' isimden isim yapım eki, sonra '-luk' isimden isim yapım eki.",
+          "Sadece tek bir çekim eki almıştır.",
+          "Fiilden isim yapan tek bir ek almıştır.",
+          "Kelime kök halindedir, hiç ek almamıştır."
+        ],
+        correct: 0,
+        explanation: "Yol (kök) -> yol-cu (türemiş isim) -> yolcu-luk (yeni türemiş isim). İki adet yapım eki almıştır."
+      },
+      {
+        id: "t5-2-t10-08",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdakilerden hangisi tamamen 'nesnel' bir tanım veya yargı cümlesidir?",
+        options: [
+          "Şiir, insan ruhundaki en derin ve harika duyguların ifadesidir.",
+          "Üçgen, üç kenarı ve üç iç açısı olan kapalı bir geometrik şekildir.",
+          "Roman okumak insanı sıkıcı dünyadan uzaklaştıran en iyi aktivitedir.",
+          "En güzel ve dinlendirici mevsim sonbahar mevsimidir."
+        ],
+        correct: 1,
+        explanation: "Üçgenin tanımı matematiksel ve bilimsel bir gerçektir, kişisel yorum içermez ve kanıtlanabilir."
+      },
+      {
+        id: "t5-2-t10-09",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'abartma' (mübalağa) sanatı yapılmıştır?",
+        options: [
+          "Bir ah çeksem karşıki koca dağlar yerinden oynar.",
+          "Güneş neşeyle gökyüzünde bize gülümsüyordu.",
+          "Deniz kıyısında küçük ve pürüzsüz taşlar topladık.",
+          "Okula yetişmek için sabah erkenden yataktan kalktı."
+        ],
+        correct: 0,
+        explanation: "Bir insanın iç çekmesiyle dağların yerinden oynaması fiziksel olarak imkansız, aşırı bir abartmadır."
+      },
+      {
+        id: "t5-2-t10-10",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki noktalama işaretlerinden hangisi sıralı cümleleri birbirinden ayırmak veya ögeleri arasında virgül bulunan takımları gruplamak için kullanılır?",
+        options: ["İki nokta", "Noktalı virgül", "Üç nokta", "Soru işareti"],
+        correct: 1,
+        explanation: "Virgülle ayrılmış grupları veya anlamca bağlı sıralı cümleleri pürüzsüz ayırmak için noktalı virgül (;) kullanılır."
+      },
+      {
+        id: "t5-2-t10-11",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki kelimelerden hangisi duyu organlarımızla algılanabilen 'somut' bir anlam taşımaktadır?",
+        options: ["Düşünce", "Hayal", "Rüzgar", "Huzur"],
+        correct: 2,
+        explanation: "Rüzgar, dokunma duyusuyla (tenimizle) net bir şekilde hissedilebildiği için somut bir kavramdır. Diğerleri soyuttur."
+      },
+      {
+        id: "t5-2-t10-12",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'kafa' sözcüğü 'zihin, anlayış kapasitesi veya düşünce tarzı' anlamında kullanılmıştır?",
+        options: [
+          "Dikkatsizlik yüzünden kapının kenarına kafasını çarptı.",
+          "Bu kafa ile gidersen hiçbir projeyi vaktinde bitiremezsin.",
+          "Kafasına şapkasını takıp aceleyle dışarı çıktı.",
+          "Yere düşen bilyeyi alabilmek için kafasını eğdi."
+        ],
+        correct: 1,
+        explanation: "B seçeneğindeki kafa, fiziksel bir organ değil, kişinin düşünme biçimi, zihniyeti ve anlayış tarzıdır."
+      },
+      {
+        id: "t5-2-t10-13",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki kelimelerden hangisinin yazımında hata yapılmıştır?",
+        options: ["Birçok", "Pekçok", "Birkaç", "Herhangi"],
+        correct: 1,
+        explanation: "'Pek çok' kelimesi her zaman ayrı yazılması gereken kalıplaşmış bir kelime grubudur, bitişik yazılması yanlıştır."
+      },
+      {
+        id: "t5-2-t10-14",
+        subject: "turkce",
+        term: 2,
+        prompt: "Hangi seçenekte 'eş anlamlı' kelimeler bir arada doğru verilmiştir?",
+        options: ["Sert - Yumuşak", "Yüzyıl - Asır", "Uzak - Yakın", "Derin - Sığ"],
+        correct: 1,
+        explanation: "Yüzyıl ve asır kelimeleri yazılışları farklı olsa da tamamen aynı zaman dilimini (100 yıl) ifade eden eş anlamlı sözcüklerdir."
+      },
+      {
+        id: "t5-2-t10-15",
+        subject: "turkce",
+        term: 2,
+        prompt: "Metinde üzerinde durulan, anlatılan olay, durum ya da kavrama ne ad verilir?",
+        options: ["Metnin konusu", "Yardımcı fikir", "Ana fikir", "Metnin başlığı"],
+        correct: 0,
+        explanation: "Metinde 'ne anlatılıyor, neyin üzerinde duruluyor?' sorularının cevabı bize doğrudan metnin konusunu verir."
+      }
+    ],
+
+    // ==========================================
+    // 2. DÖNEM 11. TEST (15 Soru - Zorlaştırılmış / Şekilsiz)
+    // ==========================================
+    test11: [
+      {
+        id: "t5-2-t11-01",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'geçmek' sözcüğü, 'bir yerden başka bir yere ilerlemek' anlamının dışında, 'etki etmek, sirayet etmek veya geride kalmak' anlamında kullanılmıştır?",
+        options: [
+          "Araba sokağın başındaki dar köprüden yavaşça geçti.",
+          "Onun neşeli hali salondaki herkese kısa sürede geçti.",
+          "Yolcular turnikelerden tek tek geçip uçağa bindiler.",
+          "Yarışmacı, önündeki rakibini son düzlükte hızla geçti."
+        ],
+        correct: 1,
+        explanation: "B seçeneğinde neşenin geçmesi, duygunun sirayet etmesi, diğer insanlar tarafından da hissedilmesi (etki etmesi) anlamındadır."
+      },
+      {
+        id: "t5-2-t11-02",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde eylemin gerekçesi 'neden-sonuç' ilişkisi barındırmaktadır?",
+        options: [
+          "Kitap okumak amacıyla sessiz odaya geçti.",
+          "Yağmur şiddetlendiği için futbol maçı yarıda kesildi.",
+          "Daha net görebilmek üzere gözlüklerini temizledi.",
+          "Yeni bir dil öğrenmek için akşam kursuna yazıldı."
+        ],
+        correct: 1,
+        explanation: "Maçın yarıda kesilmesi sonucu, 'yağmurun şiddetlenmesi' gibi gerçekleşmiş bir nedene bağlıdır."
+      },
+      {
+        id: "t5-2-t11-03",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'ki' bağlacının veya ekinin yazımıyla ilgili bir 'yazım yanlışı' yapılmıştır?",
+        options: [
+          "Anladım ki bu işi tek başına bitirmek oldukça zormuş.",
+          "Evdeki hesap çarşıya uymayınca bütçemiz sarsıldı.",
+          "Öyle bir çocukki derslerinde her zaman birinci oluyor.",
+          "Seninki yine erkenden gelmiş, kütüphanede oturuyor."
+        ],
+        correct: 2,
+        explanation: "C seçeneğindeki 'çocuk ki' ifadesindeki 'ki' bağlaçtır ve kelimeden tamamen ayrı yazılmalıdır."
+      },
+      {
+        id: "t5-2-t11-04",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'ünnyü daralması' kuralına uyan bir kelime yer almaktadır?",
+        options: [
+          "Kardeşim odasında sessizce resim yapıyor.",
+          "Öğretmenimiz tahtadaki soruları çözmemizi bekliyor.",
+          "Her akşam düzenli olarak kütüphaneye gidiyor.",
+          "Arkadaşım yarın bize geleceğini söylüyor."
+        ],
+        correct: 1,
+        explanation: "Bekle- fiili '-yor' eki aldığında sondaki geniş 'e' sesi daralarak 'i' sesine dönüşmüştür (bekliyor)."
+      },
+      {
+        id: "t5-2-t11-05",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdakilerden hangisi bir 'koşul (şart)' cümlesidir?",
+        options: [
+          "Hava ısınınca bahçedeki tüm ağaçlar çiçek açtı.",
+          "Derslerini düzenli tekrar edersen sınavda başarılı olursun.",
+          "Seni görmek amacıyla buralara kadar geldim.",
+          "Geç kaldığı için öğretmeninden özür diledi."
+        ],
+        correct: 1,
+        explanation: "Sınavda başarılı olabilme eylemi, 'derslerin düzenli tekrar edilmesi' şartına/koşuluna bağlanmıştır."
+      },
+      {
+        id: "t5-2-t11-06",
+        subject: "turkce",
+        term: 2,
+        prompt: "Hangi atasözü 'insanların tek başına başaramayacağı büyük işleri, birlik ve beraberlik içinde kolayca yapabileceğini' anlatır?",
+        options: [
+          "Damlaya damlaya göl olur, birikim önemlidir.",
+          "Bir elin nesi var, iki elin sesi var; birlik güç doğurur.",
+          "Ağaç yaşken eğilir, eğitim küçük yaşta başlar.",
+          "İşleyen demir ışıldar, çalışan insan pas tutmaz."
+        ],
+        correct: 1,
+        explanation: "Bu atasözü, yardımlaşmanın, birlik ve beraberliğin toplumsal başarıdaki gücünü ifade eder."
+      },
+      {
+        id: "t5-2-t11-07",
+        subject: "turkce",
+        term: 2,
+        prompt: "'Tuzluk' kelimesinin kökü ve aldığı ekin türü hangi seçenekte doğru analiz edilmiştir?",
+        options: [
+          "Tuz (İsim kökü) - '-luk' isimden isim yapım eki.",
+          "Tuz (Fiil kökü) - '-luk' çekim eki.",
+          "Tuzluk (Kök halinde basit kelime).",
+          "Tu- (Kök) - '-zluk' fiilden isim eki."
+        ],
+        correct: 0,
+        explanation: "Tuz bir nesne adıdır (isim kökü), '-luk' eki ise ondan tamamen yeni anlamlı bir nesne türeten yapım ekidir."
+      },
+      {
+        id: "t5-2-t11-08",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde tamamen 'nesnel' bir yargı söz konusudur?",
+        options: [
+          "Mavi en güzel ve insan ruhunu dinlendiren renktir.",
+          "Türkiye'nin coğrafi olarak yedi farklı bölgesi vardır.",
+          "Roman okumak sinemaya gitmekten çok daha eğlencelidir.",
+          "Yazarın dil üslubu son kitabında oldukça sıkıcıydı."
+        ],
+        correct: 1,
+        explanation: "Yedi coğrafi bölgenin bulunması kanıtlanabilir coğrafi ve bilimsel bir gerçektir, nesneldir."
+      },
+      {
+        id: "t5-2-t11-09",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'abartma' (mübalağa) sanatı yapılmıştır?",
+        options: [
+          "Ağlamaktan gözlerinin pınarları kurudu, gözyaşları sel oldu.",
+          "Bulutlar gökyüzünde pamuk şeker gibi süzülüyordu.",
+          "Kuşlar neşeyle ağacın dallarında şarkı söylüyordu.",
+          "Hava o kadar soğuktu ki elleri üşümüştü."
+        ],
+        correct: 0,
+        explanation: "Gözyaşlarının sel olması gerçek hayatta yaşanması imkansız olan aşırı bir abartma (mübalağa) örneğidir."
+      },
+      {
+        id: "t5-2-t11-10",
+        subject: "turkce",
+        term: 2,
+        prompt: "Açıklama yapılacak, örnek verilecek veya konuşma cümlesi başlayacak yerlerden önce hangi noktalama işareti konur?",
+        options: ["Noktalı virgül", "İki nokta", "Virgül", "Üç nokta"],
+        correct: 1,
+        explanation: "Kendisinden sonra örnek verilecek veya açıklama yapılacak cümlelerin sonuna iki nokta (:) konur."
+      },
+      {
+        id: "t5-2-t11-11",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki kelimelerden hangisi duyu organlarımızla algılanamayan 'soyut' bir kavramı ifade eder?",
+        options: ["Hava", "Sevgi", "Işık", "Ses"],
+        correct: 1,
+        explanation: "Sevgi, zihinsel ve kalbi bir duygu durumu olup beş duyu organımızla doğrudan algılanamadığı için soyuttur."
+      },
+      {
+        id: "t5-2-t11-12",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'yumuşak' sözcüğü mecaz anlamda kullanılmıştır?",
+        options: [
+          "Koltuklar o kadar yumuşaktı ki hemen uyuyakaldı.",
+          "Taze ekmeğin yumuşak dokusu çok güzeldi.",
+          "Bize karşı çok yumuşak bir dille ricada bulundu.",
+          "Yumuşak yastığı kafasının altına koydu."
+        ],
+        correct: 2,
+        explanation: "Dilin veya anlatımın yumuşak olması fiziksel bir yumuşaklığı değil, kibar ve kırıcı olmayan bir üslubu ifade eder, mecazdır."
+      },
+      {
+        id: "t5-2-t11-13",
+        subject: "turkce",
+        term: 2,
+        prompt: "Hani cümledeki soru eki olan '-mi'nin yazımı DOĞRUDUR?",
+        options: [
+          "Bu akşam bize gelebilirmiisin?",
+          "Kalemimi sen mi aldın?",
+          "Ödevlerini bitirdinmi söyle?",
+          "Yarın okul varmı acaba?"
+        ],
+        correct: 1,
+        explanation: "B seçeneğindeki 'sen mi' ifadesindeki 'mi' soru eki ayrı yazılarak yazım kurallarına tam uygun gösterilmiştir."
+      },
+      {
+        id: "t5-2-t11-14",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki kelime çiftlerinden hangisi 'zıt (karşıt)' anlam ilişkisine örnek gösterilebilir?",
+        options: ["Cevap - Yanıt", "Savaş - Barış", "Yıl - Sene", "Okul - Mektep"],
+        correct: 1,
+        explanation: "Savaş ve barış kelimeleri anlamca birbirinin tamamen karşıtı olan zıt anlamlı kelimelerdir."
+      },
+      {
+        id: "t5-2-t11-15",
+        subject: "turkce",
+        term: 2,
+        prompt: "Metnin yardımcı fikirleri ile ilgili aşağıda verilen bilgilerden hangisi doğrudur?",
+        options: [
+          "Metnin okuyucuya vermek istediği en genel ana mesajdır.",
+          "Ana fikri destekleyen, onu açıklayan ve detaylandıran yan düşüncelerdir.",
+          "Metinde sadece bir tane bulunmak zorundadır.",
+          "Metnin başlığı ile her zaman aynı kelimelerden oluşur."
+        ],
+        correct: 1,
+        explanation: "Yardımcı fikirler, ana düşüncenin ispatlanmasını, daha iyi anlaşılmasını sağlayan destekleyici detay cümleleridir."
+      }
+    ],
+
+    // ==========================================
+    // 2. DÖNEM 12. TEST (15 Soru - Zorlaştırılmış / Şekilsiz)
+    // ==========================================
+    test12: [
+      {
+        id: "t5-2-t12-01",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'görmek' sözcüğü, 'göz yardımıyla algılamak' anlamının dışında, 'anlamak, fark etmek veya hak etmek' anlamında kullanılmıştır?",
+        options: [
+          "Pencereden dışarı bakınca eski arkadaşını gördü.",
+          "Yaptığı hataların sonucunu nihayet kendisi de gördü.",
+          "Karanlık odada önündeki koca masayı zorlukla gördü.",
+          "Dürbünle dağın zirvesindeki küçük kulübeyi gördü."
+        ],
+        correct: 1,
+        explanation: "B seçeneğinde hatanın sonucunu görmek, durumu kavramak, fark etmek ve anlamak anlamında kullanılmıştır."
+      },
+      {
+        id: "t5-2-t12-02",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'amaç-sonuç' ilişkisi söz konusudur?",
+        options: [
+          "Kar yağışı yoğunlaştığı için okullar tatil edildi.",
+          "Sınavda başarılı olmak için kütüphanede düzenli çalışıyor.",
+          "Geç uyandığından dolayı sabah kahvaltısını yapamadı.",
+          "Hava kararınca sokaktaki tüm çocuklar evlerine döndü."
+        ],
+        correct: 1,
+        explanation: "Çalışma eylemi 'sınavda başarılı olmak' gibi geleceğe yönelik bir ideal ve amaç doğrultusunda gerçekleştirilmektedir."
+      },
+      {
+        id: "t5-2-t12-03",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'de' bağlacının yazımı ile ilgili bir hata yapılmıştır?",
+        options: [
+          "Sen de bizimle sinemaya gelecek misin?",
+          "Çantamda kalemim de defterim de duruyor.",
+          "Sınavı kazandığını da dün akşam öğrendim.",
+          "Bize geleceğinide hiç söylememişti."
+        ],
+        correct: 3,
+        explanation: "Cümledeki 'da/de' bağlaçtır ve kelimeden her zaman ayrı yazılmalıdır: 'geleceğini de' şeklinde olmalıdır."
+      },
+      {
+        id: "t5-2-t12-04",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki kelimelerin hangisinde 'ünlü düşmesi' kuralı görülmektedir?",
+        options: ["Kitapta", "Çocuğun", "Karnı", "Çiçekçi"],
+        correct: 2,
+        explanation: "Karın kelimesine ünlüyle başlayan ek geldiğinde ortadaki 'ı' sesi düşerek 'karnı' olmuştur."
+      },
+      {
+        id: "t5-2-t12-05",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'neden-sonuç' ilişkisi vardır?",
+        options: [
+          "Kitap okumak için kütüphaneye gitti.",
+          "Sıcak hava yüzünden dondurmalar eridi.",
+          "Daha iyi görmek amacıyla gözlük taktı.",
+          "Sınavı geçmek üzere odasında çalışıyor."
+        ],
+        correct: 1,
+        explanation: "Dondurmaların erimesinin nedeni havanın sıcak olmasıdır. Bu yüzden neden-sonuç cümlesidir."
+      },
+      {
+        id: "t5-2-t12-06",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki atasözlerinden hangisi 'tutumlu olmak ve birikim yapmak' ile ilgilidir?",
+        options: [
+          "Damlaya damlaya göl olur, birikim önemlidir.",
+          "Ağaç yaşken eğilir, eğitim küçük yaşta başlar.",
+          "İşleyen demir ışıldar, çalışan başarılı olur.",
+          "Bir elin nesi var iki elin sesi var, birlik gerekir."
+        ],
+        correct: 0,
+        explanation: "Damlaya damlaya göl olur atasözü, küçük birikimlerin zamanla büyük değerlere dönüşeceğini anlatır."
+      },
+      {
+        id: "t5-2-t12-07",
+        subject: "turkce",
+        term: 2,
+        prompt: "'Yolculuk' kelimesinin aldığı eklerin türü aşağıdakilerden hangisidir?",
+        options: [
+          "-culuk (Çekim eki).",
+          "-cu ve -luk (Yapım ekleri).",
+          "-luk (Çekim eki).",
+          "Ek almamıştır, kök halindedir."
+        ],
+        correct: 1,
+        explanation: "Yol sözcüğü önce '-cu' sonra '-luk' yapım eklerini alarak iki kez türemiştir. İkisi de yapım ekidir."
+      },
+      {
+        id: "t5-2-t12-08",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'nesnel' bir yargı söz konusudur?",
+        options: [
+          "En lezzetli ve harika meyve muzdur.",
+          "Kırmızı renkli arabalar herkese çok çekici gelir.",
+          "Türkiye'nin coğrafi olarak yedi bölgesi vardır.",
+          "Yazarın dili son kitabında çok sıkıcıydı."
+        ],
+        correct: 2,
+        explanation: "Yedi coğrafi bölgenin bulunması kanıtlanabilir bilimsel ve coğrafi bir gerçektir, nesneldir."
+      },
+      {
+        id: "t5-2-t12-09",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'benzetme' sanatı yapılmıştır?",
+        options: [
+          "Güneş bulutların arkasından bize el sallıyordu.",
+          "Aslan gibi kuvvetli bir çocuk kapıyı tek hamlede açtı.",
+          "Kuşlar neşeyle ağacın dallarında şarkı söylüyordu.",
+          "Rüzgar bugün ovada çok sert bir şekilde esiyordu."
+        ],
+        correct: 1,
+        explanation: "Çocuğun gücü, 'gibi' edatı kullanılarak bir aslanın kuvvetine benzetilmiştir."
+      },
+      {
+        id: "t5-2-t12-10",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki sözcüklerin hangisinde 'ünsüz türemesi' meydana gelmiştir?",
+        options: ["Hissetti", "Gitti", "Baktı", "Ağaçta"],
+        correct: 0,
+        explanation: "His ve etmek kelimeleri birleşirken araya fazladan bir 's' ünsüz harfi girmiştir (türemiştir)."
+      },
+      {
+        id: "t5-2-t12-11",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'abartma' (mübalağa) sanatı yapılmıştır?",
+        options: [
+          "Odanın içi buz gibi soğuk olmuştu.",
+          "Ağlamaktan gözlerinin pınarları kurudu, gözyaşları sel oldu.",
+          "Küçük kedi yavaşça koltuğun altına saklandı.",
+          "Güneş doğunca her yer bir anda aydınlandı."
+        ],
+        correct: 1,
+        explanation: "Gözyaşlarının sel olması gerçekte yaşanması imkansız olan aşırı bir abartma örneğidir."
+      },
+      {
+        id: "t5-2-t12-12",
+        subject: "turkce",
+        term: 2,
+        prompt: "Konuşma çizgisinden önceki ifadenin sonuna veya bir açıklama yapılmadan önce hangi noktalama işareti konur?",
+        options: ["Noktalı Virgül", "İki Nokta", "Virgül", "Üç Nokta"],
+        correct: 1,
+        explanation: "Açıklama yapılacak, örnek verilecek veya konuşma cümlesi başlayacak yerlerden önce iki nokta (:) konur."
+      },
+      {
+        id: "t5-2-t12-13",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki kelimelerden hangisi 'somut' anlamlı bir kavramı ifade eder?",
+        options: ["Hava", "Sevgi", "Korku", "Rüya"],
+        correct: 0,
+        explanation: "Hava gözle görülmese de tenimizle (dokunma duyusuyla) hissedilebildiği için somut bir maddedir."
+      },
+      {
+        id: "t5-2-t12-14",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki kelimelerden hangisinin 'eş anlamlısı' yoktur?",
+        options: ["Sene", "Öğretmen", "Kalem", "Mektep"],
+        correct: 2,
+        explanation: "Sene (yıl), öğretmen (muallim), mektep (okul) kelimelerinin eş anlamlısı varken kalem sözcüğünün yoktur."
+      },
+      {
+        id: "t5-2-t12-15",
+        subject: "turkce",
+        term: 2,
+        prompt: "Bir metnin bütününe yayılmış olan, okuyucuya asıl iletilmek istenen temel mesaj ve ders aşağıdakilerden hangisidir?",
+        options: ["Metnin konusu", "Metnin başlığı", "Ana fikir", "Yardımcı düşünceler"],
+        correct: 2,
+        explanation: "Yazarın metni yazma amacı olan ve okuyucuya vermek istediği temel öğüt/mesaj ana fikirdir."
+      }
+    ],
+
+    // ==========================================
+    // 2. DÖNEM 13. TEST (15 Soru - Zorlaştırılmış / Şekilsiz)
+    // ==========================================
+    test13: [
+      {
+        id: "t5-2-t13-01",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'düşmek' sözcüğü, 'yer çekiminin etkisiyle aşağı inmek' anlamının dışında, 'payına ayrılmaz, hisse kalmak' anlamında kullanılmıştır?",
+        options: [
+          "Ağacın kuruyan yaprakları yavaşça yere düştü.",
+          "Miras paylaşımında bize bu eski bağ evi düştü.",
+          "Yolda yürürken ayağı takılınca aniden düştü.",
+          "Gökyüzünden büyük yağmur damlaları düşüyordu."
+        ],
+        correct: 1,
+        explanation: "B seçeneğinde düşmek kelislesi, bir paylaşım sonucunda birine ayrılan hisseyi, payı ifade etmek için kullanılmıştır."
+      },
+      {
+        id: "t5-2-t13-02",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'koşul-sonuç' (şart) ilişkisi kurulmuştur?",
+        options: [
+          "Kar yağdığı için yollar ulaşıma kapandı.",
+          "Kitap okuma alışkanlığı kazanırsan kelime hazinen zenginleşir.",
+          "Seni görebilmek amacıyla erkenden buraya geldim.",
+          "Geç uyandığından sabah servisini kaçırdı."
+        ],
+        correct: 1,
+        explanation: "Kelime hazinesinin zenginleşmesi eylemi, 'kitap okuma alışkanlığı kazanılması' şartına/koşuluna bağlanmıştır."
+      },
+      {
+        id: "t5-2-t13-03",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'ki' bağlacının yazımı ile ilgili bir hata yapılmıştır?",
+        options: [
+          "Öyle anlaşılıyor ki bu iş göründüğünden daha zormuş.",
+          "Duvar daki tablo sarsıntı yüzünden yere düşmüş.",
+          "Mademki gelecektin, neden bize önceden söylemedin?",
+          "Seninki kütüphanede harıl harıl ders çalışıyor."
+        ],
+        correct: 1,
+        explanation: "B seçeneğindeki 'duvardaki' kelimesindeki 'ki' sıfat yapan ektir ve kelimeye bitişik yazılmalıdır; ayrı yazılması hatadır."
+      },
+      {
+        id: "t5-2-t13-04",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki kelimelerin hangisinde 'ünsüz benzeşmesi' (sertleşme) kuralı vardır?",
+        options: ["Dolapta", "Ağacı", "Gidiyor", "Bebeğin"],
+        correct: 0,
+        explanation: "Dolap (p sert harf) sözcüğüne gelen '-da' eki sertleşerek '-ta' ekine dönüşmüştür (Dolapta)."
+      },
+      {
+        id: "t5-2-t13-05",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'amaç-sonuç' ilişkisi söz konusudur?",
+        options: [
+          "Sınavı kazandığı için herkes çok sevindi.",
+          "Hava soğuyunca paltosunu dolaptan çıkardı.",
+          "Yabancı dil öğrenmek amacıyla kursa kaydoldu.",
+          "Yorulduğu için koltukta uyuya kalmış."
+        ],
+        correct: 2,
+        explanation: "Kursa kaydolma eylemi 'yabancı dil öğrenmek' gibi geleceğe yönelik bir ideal ve amaç doğrultusunda yapılmıştır."
+      },
+      {
+        id: "t5-2-t13-06",
+        subject: "turkce",
+        term: 2,
+        prompt: "Hangi atasözü 'küçük birikimlerin önemini ve tutumluluğu' anlatır?",
+        options: [
+          "Sakla samanı, gelir zamanı; her şey değer kazanır.",
+          "Ağaç yaşken eğilir, eğitim küçük yaşta başlar.",
+          "İşleyen demir ışıldar, çalışan başarılı olur.",
+          "Bir elin nesi var iki elin sesi var, birlik gerekir."
+        ],
+        correct: 0,
+        explanation: "Sakla samanı gelir zamanı atasözü, değersiz görülen şeylerin bile biriktirilerek tutumlu olunması gerektiğini öğütler."
+      },
+      {
+        id: "t5-2-t13-07",
+        subject: "turkce",
+        term: 2,
+        prompt: "'Gözlükçülük' kelimesinin kökü aşağıdakilerden hangisidir?",
+        options: ["Gözlük", "Gözlükçü", "Göz", "Gözle"],
+        correct: 2,
+        explanation: "Kelimenin anlam ilişkisini kaybetmemiş en küçük ve anlamlı parçası (kökü) 'Göz' sözcüğüdür."
+      },
+      {
+        id: "t5-2-t13-08",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'öznel' bir yargı vardır?",
+        options: [
+          "Türkiye'nin başkenti Ankara şehridir.",
+          "Yazarın son hikaye kitabı çok sıkıcı ve uzun.",
+          "Haftanın ilk iş günü pazartesidir.",
+          "Dünya, Güneş sisteminde yer alan bir gezegendir."
+        ],
+        correct: 1,
+        explanation: "Bir kitabın sıkıcı olması tamamen kişisel bir değerlendirmedir ve doğruluğu kanıtlanamaz."
+      },
+      {
+        id: "t5-2-t13-09",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'kişileştirme' sanatı yapılmıştır?",
+        options: [
+          "Güneş, sabah erkenden gökyüzünde parıldadı.",
+          "Kuşlar gökyüzünde neşeyle uçuyordu.",
+          "Dertli bulutlar, dağların arkasında sessizce ağlıyordu.",
+          "Yağmur damlaları camlara vuruyordu."
+        ],
+        correct: 2,
+        explanation: "Bulutların 'dertli' olması ve 'ağlaması' insana ait özelliklerin doğaya aktarılmasıdır (kişileştirme)."
+      },
+      {
+        id: "t5-2-t13-10",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'abartma' sanatı yapılmıştır?",
+        options: [
+          "Korkudan yüreği ağzına geldi, ödüm patladı dedi.",
+          "Bir feryat kopardı ki sesi tüm dünyadan duyuldu.",
+          "Küçük çocuk hızla merdivenlerden aşağı indi.",
+          "Hava o kadar soğuktu ki elleri üşümüştü."
+        ],
+        correct: 1,
+        explanation: "Bir sesin veya çığlığın tüm dünyadan duyulması fiziksel olarak imkansız, aşırı bir abartma (mübalağa) örneğidir."
+      },
+      {
+        id: "t5-2-t13-11",
+        subject: "turkce",
+        term: 2,
+        prompt: "Eş görevli kelimeleri ayırmak veya sıralı cümlelerin arasına koymak için hangi noktalama işareti kullanılır?",
+        options: ["Nokta", "İki Nokta", "Virgül", "Noktalı Virgül"],
+        correct: 2,
+        explanation: "Sıralı eş görevli kelimelerin veya nesnelerin arasına net kuralla virgül (,) konur."
+      },
+      {
+        id: "t5-2-t13-12",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki kelimelerden hangisi duyu organlarımızla algılanamayan 'soyut' bir kavramı ifade eder?",
+        options: ["Rüzgar", "Işık", "Sevgi", "Ses"],
+        correct: 2,
+        explanation: "Sevgi, duyu organlarıyla algılanamayan, tamamen kalbi ve zihinsel bir duygu durumu olduğu için soyuttur."
+      },
+      {
+        id: "t5-2-t13-13",
+        subject: "turkce",
+        term: 2,
+        prompt: "Hangi noktalama işareti, soru anlamı taşıyan ve cevap bekleyen cümlelerin sonuna konur?",
+        options: ["Nokta", "Ünlem İşareti", "Soru İşareti", "Üç Nokta"],
+        correct: 2,
+        explanation: "Soru bildiren ve bir yanıt bekleyen tüm cümlelerin sonuna evrensel olarak soru işareti (?) konur."
+      },
+      {
+        id: "t5-2-t13-14",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki kelime çiftlerinden hangisi 'zıt anlamlı' kelimelere örnek gösterilemez?",
+        options: ["Büyük - Küçük", "Hızlı - Yavaş", "Siyah - Kara", "Uzak - Yakın"],
+        correct: 2,
+        explanation: "Siyah ve kara kelimeleri zıt anlamlı değil, aynı anlamı taşıyan es anlamlı sözcüklerdir."
+      },
+      {
+        id: "t5-2-t13-15",
+        subject: "turkce",
+        term: 2,
+        prompt: "Bir metinde işlenen ana fikri destekleyen, onu daha anlaşılır kılan detay cümlelerine ne denir?",
+        options: ["Metnin konusu", "Metnin başlığı", "Yardımcı fikirler", "Ana düşünce"],
+        correct: 2,
+        explanation: "Ana fikrin ispatlanmasını, açıklanmasını sağlayan diğer yan düşüncelere yardımcı fikir denir."
+      }
+    ],
+
+    // ==========================================
+    // 2. DÖNEM 14. TEST (15 Soru - Zorlaştırılmış / Şekilsiz)
+    // ==========================================
+    test14: [
+      {
+        id: "t5-2-t14-01",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'yemek' sözcüğü, 'beslenmek eylemi' anlamının dışında, 'maddi zarara uğramak, tüketmek veya rüşvet almak' anlamında kullanılmıştır?",
+        options: [
+          "Akşam ailece harika bir akşam yemeği yedik.",
+          "Çocuk, taze meyveleri iştahla tek tek yedi.",
+          "Mirası kısa sürede kumarda yiyip bitirdi.",
+          "Öğlen okul kantininden aldığı sandvici yedi."
+        ],
+        correct: 2,
+        explanation: "C seçeneğinde yemek kelimesi, parayı tüketmek, harcamak ve yok etmek anlamında mecaz kullanılmıştır."
+      },
+      {
+        id: "t5-2-t14-02",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'neden-sonuç' ilişkisi söz konusudur?",
+        options: [
+          "Gözlüklerini almak üzere odasına doğru yöneldi.",
+          "Kar yolları kapadığı için otobüs seferleri iptal oldu.",
+          "Daha iyi okumak amacıyla ışığı biraz daha açtı.",
+          "Başarılı olmak hedefiyle gece gündüz çalıştı."
+        ],
+        correct: 1,
+        explanation: "Otobüs seferlerinin iptal olması, 'karın yolları kapaması' gibi bitmiş, gerçekleşmiş bir nedene bağlıdır."
+      },
+      {
+        id: "t5-2-t14-03",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'ki' ekinin yazımı ile ilgili bir hata yapılmıştır?",
+        options: [
+          "Sınıfta ki öğrenciler sessizce yerlerine oturdu.",
+          "Duvardaki saat aniden durunca zamanı şaşırdık.",
+          "Bizimki yine erkenden kalkıp kütüphaneye gitmiş.",
+          "Öyle anlaşılıyor ki bu proje çok başarılı olacak."
+        ],
+        correct: 0,
+        explanation: "A seçeneğindeki 'sınıftaki' kelimesindeki 'ki' sıfat yapan ektir ve kelimeye bitişik yazılmalıdır."
+      },
+      {
+        id: "t5-2-t14-04",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki kelimelerin hangisinde 'ünsüz yumuşaması' kuralı görülmektedir?",
+        options: ["Kitapta", "Çocuğun", "Çiçekçi", "Sütçü"],
+        correct: 1,
+        explanation: "Çocuk kelimesi ünlüyle başlayan ek aldığında sonundaki 'k' harfi yumuşayarak 'ğ' sesine dönüşmüştür (Çocuğun)."
+      },
+      {
+        id: "t5-2-t14-05",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'amaç-sonuç' ilişkisi vardır?",
+        options: [
+          "Yağmur yağdığı için piknik programı iptal oldu.",
+          "Sınavda yüksek puan almak için harıl harıl çalışıyor.",
+          "Geç kaldığından dolayı öğretmeninden özür diledi.",
+          "Hava ısınınca herkes parklara akın etti."
+        ],
+        correct: 1,
+        explanation: "Çalışma eylemi 'yüksek puan almak' gibi geleceğe yönelik bir ideal ve amaç doğrultusunda yapılmaktadır."
+      },
+      {
+        id: "t5-2-t14-06",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki atasözlerinden hangisi 'tutumluluk' ile ilgilidir?",
+        options: [
+          "Ak akçe kara gün içindir, birikim önemlidir.",
+          "Ağaç yaşken eğilir, eğitim küçük yaşta başlar.",
+          "İşleyen demir ışıldar, çalışan başarılı olur.",
+          "Bir elin nesi var iki elin sesi var, birlik gerekir."
+        ],
+        correct: 0,
+        explanation: "Ak akçe kara gün içindir atasözü, biriktirilen paranın zor günlerde büyük fayda sağlayacağını anlatır."
+      },
+      {
+        id: "t5-2-t14-07",
+        subject: "turkce",
+        term: 2,
+        prompt: "'Simitçi' kelimesinin kökü aşağıdakilerden hangisidir?",
+        options: ["Simit", "Simitçi", "Sim", "Simi"],
+        correct: 0,
+        explanation: "Kelimenin anlam ilişkisini kaybetmemiş en küçük ve anlamlı parçası (kökü) 'Simit' sözcüğüdür."
+      },
+      {
+        id: "t5-2-t14-08",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'nesnel' bir yargı söz konusudur?",
+        options: [
+          "En lezzetli ve harika içecek taze limonatadır.",
+          "Türkiye'nin başkenti Ankara şehridir.",
+          "Kırmızı elbiseler herkese çok çekici gelir.",
+          "Yazarın dili son romanında çok sıkıcıydı."
+        ],
+        correct: 1,
+        explanation: "Ankara'nın başkent olması kanıtlanabilir bilimsel ve siyasi bir gerçektir, nesneldir."
+      },
+      {
+        id: "t5-2-t14-09",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'benzetme' sanatı yapılmıştır?",
+        options: [
+          "Güneş bulutların arkasından bize el sallıyordu.",
+          "Kükremiş sel gibiyim, bendimi çiğner aşarım.",
+          "Kuşlar neşeyle ağaçların dallarında ötüyordu.",
+          "Rüzgar bugün ovada çok sert esiyordu."
+        ],
+        correct: 1,
+        explanation: "Kişinin coşkusu ve gücü, 'gibi' edatı kullanılarak kükremiş bir selin yapısına benzetilmiştir."
+      },
+      {
+        id: "t5-2-t14-10",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki sözcüklerin hangisinde 'ünsüz benzeşmesi' (sertleşme) vardır?",
+        options: ["Sokakta", "Ağacı", "Gidiyor", "Bebeğin"],
+        correct: 0,
+        explanation: "Sokak (k sert harf) sözcüğüne gelen '-da' eki sertleşerek '-ta' ekine dönüşmüştür (Sokakta)."
+      },
+      {
+        id: "t5-2-t14-11",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'abartma' sanatı yapılmıştır?",
+        options: [
+          "O kadar çok ağladı ki gözyaşları sel oldu.",
+          "Küçük kedi yavaşça koltuğun altına saklandı.",
+          "Güneş doğunca her yer bir anda aydınlandı.",
+          "Hava o kadar soğuktu ki elleri üşümüştü."
+        ],
+        correct: 0,
+        explanation: "Gözyaşlarının sel olması gerçekte yaşanması imkansız olan aşırı bir abartma örneğidir."
+      },
+      {
+        id: "t5-2-t14-12",
+        subject: "turkce",
+        term: 2,
+        prompt: "Açıklama yapılacak veya örnek verilecek cümlelerin sonuna hangi noktalama işareti konur?",
+        options: ["Noktalı Virgül", "İki Nokta", "Virgül", "Üç Nokta"],
+        correct: 1,
+        explanation: "Açıklama yapılacak veya örnek verilecek yerlerden önce iki nokta (:) konur."
+      },
+      {
+        id: "t5-2-t14-13",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki kelimelerden hangisi 'somut' anlamlı bir kavramı ifade eder?",
+        options: ["Rüzgar", "Sevgi", "Korku", "Rüya"],
+        correct: 0,
+        explanation: "Rüzgar hissedilebilir (dokunma duyusu) olduğu için somut bir maddedir."
+      },
+      {
+        id: "t5-2-t14-14",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki kelime çiftlerinden hangisi 'eş anlamlı' kelimelere örnek gösterilebilir?",
+        options: ["Cevap - Yanıt", "Savaş - Barış", "Uzak - Yakın", "Büyük - Küçük"],
+        correct: 0,
+        explanation: "Cevap ve yanıt kelimeleri tamamen aynı anlamı karşılayan eş anlamlı sözcüklerdir."
+      },
+      {
+        id: "t5-2-t14-15",
+        subject: "turkce",
+        term: 2,
+        prompt: "Bir metnin okuyucuya asıl iletilmek istenen temel mesajı ve dersi aşağıdakilerden hangisidir?",
+        options: ["Metnin konusu", "Metnin başlığı", "Ana fikir", "Yardımcı düşünceler"],
+        correct: 2,
+        explanation: "Yazarın metni yazma amacı olan ve okuyucuya vermek istediği temel öğüt/mesaj ana fikirdir."
+      }
+    ],
+
+    // ==========================================
+    // 2. DÖNEM 15. TEST (15 Soru - Zorlaştırılmış / Şekilsiz)
+    // ==========================================
+    test15: [
+      {
+        id: "t5-2-t15-01",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'bakmak' sözcüğü, 'gözle incelemek' anlamının dışında, 'beslemek, geçindirmek veya bakımını üstlenmek' anlamında kullanılmıştır?",
+        options: [
+          "Pencereden dışarıdaki çocuklara uzun uzun baktı.",
+          "Yıllarca tek başına üç çocuğuna çok iyi baktı.",
+          "Sözlükten bilmediği kelimelerin anlamına baktı.",
+          "Albümdeki eski aile fotoğraflarına hüzünle baktı."
+        ],
+        correct: 1,
+        explanation: "B seçeneğinde bakmak kelimesi, çocukların bakımını üstlenmek, büyütmek ve geçindirmek anlamında kullanılmıştır."
+      },
+      {
+        id: "t5-2-t15-02",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'koşul-sonuç' ilişkisi vardır?",
+        options: [
+          "Yağmur yağdığı için yollar çamur oldu.",
+          "Derslerini günü gününe tekrar edersen başarılı olursun.",
+          "Seni görmek amacıyla buralara kadar geldim.",
+          "Uykusuz kaldığından dolayı başı ağrıyordu."
+        ],
+        correct: 1,
+        explanation: "Başarılı olabilme eylemi, 'derslerin günü gününe tekrar edilmesi' şartına/koşuluna bağlanmıştır."
+      },
+      {
+        id: "t5-2-t15-03",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'de' bağlacının yazımı ile ilgili bir hata yapılmıştır?",
+        options: [
+          "Sende bizimle kütüphaneye gelecek misin?",
+          "Çantamda kalemim de silgim de duruyor.",
+          "Sınavı kazandığını da dün akşam öğrendim.",
+          "Bize geleceğini de hiç söylememişti."
+        ],
+        correct: 0,
+        explanation: "A seçeneğindeki 'sen de' ifadesindeki 'de' bağlaçtır ve kelimeden her zaman ayrı yazılmalıdır; bitişik yazılması hatadır."
+      },
+      {
+        id: "t5-2-t15-04",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki kelimelerin hangisinde 'ünlü düşmesi' kuralı görülmektedir?",
+        options: ["Kitapta", "Çocuğun", "Aklım", "Çiçekçi"],
+        correct: 2,
+        explanation: "Akıl kelimesine ünlüyle başlayan ek geldiğinde ortadaki 'ı' sesi düşerek 'aklım' olmuştur."
+      },
+      {
+        id: "t5-2-t15-05",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'neden-sonuç' ilişkisi vardır?",
+        options: [
+          "Kitap okumak için kütüphaneye gitti.",
+          "Yoğun kar yağışı yüzünden otoyol kapandı.",
+          "Daha iyi görmek amacıyla gözlük taktı.",
+          "Sınavı geçmek üzere odasında çalışıyor."
+        ],
+        correct: 1,
+        explanation: "Otoyolun kapanmasının nedeni yoğun kar yağışıdır. Bu yüzden neden-sonuç cümlesidir."
+      },
+      {
+        id: "t5-2-t15-06",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki atasözlerinden hangisi 'tutumlu olmak' ile ilgilidir?",
+        options: [
+          "Damlaya damlaya göl olur, küçük şeyler birikir.",
+          "Ağaç yaşken eğilir, eğitim küçük yaşta başlar.",
+          "İşleyen demir ışıldar, çalışan başarılı olur.",
+          "Bir elin nesi var iki elin sesi var, birlik gerekir."
+        ],
+        correct: 0,
+        explanation: "Damlaya damlaya göl olur atasözü, küçük birikimlerin zamanla büyük değerlere dönüşeceğini anlatır."
+      },
+      {
+        id: "t5-2-t15-07",
+        subject: "turkce",
+        term: 2,
+        prompt: "'Yolculuk' kelimesinin aldığı eklerin türü aşağıdakilerden hangisidir?",
+        options: [
+          "-culuk (Çekim eki).",
+          "-cu ve -luk (Yapım ekleri).",
+          "-luk (Çekim eki).",
+          "Ek almamıştır, kök halindedir."
+        ],
+        correct: 1,
+        explanation: "Yol sözcüğü önce '-cu' sonra '-luk' yapım eklerini alarak iki kez türemiştir. İkisi de yapım ekidir."
+      },
+      {
+        id: "t5-2-t15-08",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'nesnel' bir yargı söz konusudur?",
+        options: [
+          "En lezzetli ve harika meyve çilektir.",
+          "Kırmızı renkli arabalar herkese çok çekici gelir.",
+          "Türkiye'nin coğrafi olarak yedi bölgesi vardır.",
+          "Yazarın dili son kitabında çok sıkıcıydı."
+        ],
+        correct: 2,
+        explanation: "Yedi coğrafi bölgenin bulunması kanıtlanabilir bilimsel bir gerçektir, nesneldir."
+      },
+      {
+        id: "t5-2-t15-09",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'benzetme' sanatı yapılmıştır?",
+        options: [
+          "Güneş bulutların arkasından bize el sallıyordu.",
+          "Aslan gibi kuvvetli bir çocuk kapıyı tek hamlede açtı.",
+          "Kuşlar neşeyle ağaçın dallarında şarkı söylüyordu.",
+          "Rüzgar bugün ovada çok sert bir şekilde esiyordu."
+        ],
+        correct: 1,
+        explanation: "Çocuğun gücü, 'gibi' edatı kullanılarak bir aslanın kuvvetine benzetilmiştir."
+      },
+      {
+        id: "t5-2-t15-10",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki sözcüklerin hangisinde 'ünsüz türemesi' meydana gelmiştir?",
+        options: ["Hissetti", "Gitti", "Baktı", "Ağaçta"],
+        correct: 0,
+        explanation: "His ve etmek kelimeleri birleşirken araya fazladan bir 's' ünsüz harfi girmiştir (türemiştir)."
+      },
+      {
+        id: "t5-2-t15-11",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki cümlelerin hangisinde 'abartma' sanatı yapılmıştır?",
+        options: [
+          "Odanın içi buz gibi soğuk olmuştu.",
+          "Ağlamaktan gözlerinin pınarları kurudu, gözyaşları sel oldu.",
+          "Küçük kedi yavaşça koltuğun altına saklandı.",
+          "Güneş doğunca her yer bir anda aydınlandı."
+        ],
+        correct: 1,
+        explanation: "Gözyaşlarının sel olması gerçekte yaşanması imkansız olan aşırı bir abartma örneğidir."
+      },
+      {
+        id: "t5-2-t15-12",
+        subject: "turkce",
+        term: 2,
+        prompt: "Konuşma çizgisinden önceki ifadenin sonuna veya bir açıklama yapılmadan önce hangi noktalama işareti konur?",
+        options: ["Noktalı Virgül", "İki Nokta", "Virgül", "Üç Nokta"],
+        correct: 1,
+        explanation: "Açıklama yapılacak veya konuşma cümlesi başlayacak yerlerden önce iki nokta (:) konur."
+      },
+      {
+        id: "t5-2-t15-13",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki kelimelerden hangisi 'somut' anlamlı bir kavramı ifade eder?",
+        options: ["Hava", "Sevgi", "Korku", "Rüya"],
+        correct: 0,
+        explanation: "Hava tenimizle hissedilebildiği (dokunma duyusu) için somut bir maddedir."
+      },
+      {
+        id: "t5-2-t15-14",
+        subject: "turkce",
+        term: 2,
+        prompt: "Aşağıdaki kelimelerden hangisinin 'eş anlamlısı' yoktur?",
+        options: ["Sene", "Öğretmen", "Kalem", "Mektep"],
+        correct: 2,
+        explanation: "Sene (yıl), öğretmen (muallim), mektep (okul) kelimelerinin es anlamlısı varken kalem sözcüğünün yoktur."
+      },
+      {
+        id: "t5-2-t15-15",
+        subject: "turkce",
+        term: 2,
+        prompt: "Bir metnin bütününe yayılmış olan, okuyucuya asıl iletilmek istenen temel mesaj ve ders aşağıdakilerden hangisidir?",
+        options: ["Metnin konusu", "Metnin başlığı", "Ana fikir", "Yardımcı düşünceler"],
+        correct: 2,
+        explanation: "Yazarın metni yazma amacı olan ve okuyucuya vermek istediği temel öğüt ana fikirdir."
+      }
+    ],
+    test2: []
+  }
+};
   }
 };
