@@ -2065,5 +2065,3 @@ export const turkceData: SubjectData = {
     ],
   }
 };
-  }
-};
