@@ -4266,6 +4266,158 @@ export const matematikData: SubjectData = {
         correct: 1,
         explanation: "Alan ölçü birimleri yüzer yüzer büyür ve küçülür. 1 santimetrekare = 100 milimetrekare olduğundan, 2 cm² = 200 mm² dönüşümü tamamen doğrudur."
       }
-    ],// <-- test2 dizisinin sonu
-  } // <-- term2 nesnesinin sonu
-}; // <-- matematikData ana nesnesinin sonu (Dosyanın tamamen bitişi)
+    ],
+         test5: [
+      // --- 5. SINIF MATEMATİK 2. DÖNEM TEST 5 (ZORLAŞTIRILMIŞ) ---
+      // [1-10 Arası Sorular: Görsel Odaklı / Şekilli Sorular]
+      {
+        id: "m5-2-t5-img-01",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki izometrik kağıt üzerinde A, B, C ve D noktaları işaretlenmiştir. A noktasının B noktasına göre konumu ile C noktasının D noktasına göre konumu birleştirildiğinde, hangi iki nokta arasındaki yatay mesafe en fazla olur? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test5/izometrik-konum-analiz.webp",
+        options: ["A ile C", "B ile D", "A ile D", "B ile C"],
+        correct: 2,
+        explanation: "Noktaların izometrik zemin üzerindeki yatay ve dikey birim yönleri tek tek sayıldığında, aralarındaki yatay uzaklığın (en geniş bandın) A ve D noktaları arasında oluştuğu görülür."
+      },
+      {
+        id: "m5-2-t5-img-02",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde kareli zemin üzerine çizilmiş olan çokgende, iç açılardan biri kırmızı yay ile gösterilmiştir. Bu kırmızı açının türü aşağıdakilerden hangisidir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test5/cokgen-kirmizi-aci.webp",
+        options: ["Dar açı", "Dik açı", "Geniş açı", "Tam açı"],
+        correct: 2,
+        explanation: "Kareli kağıdın dikey referans hattı ($90^\\circ$) baz alındığında, kırmızı açının kollarının bu diklikten daha açık olduğu, yani geniş açı ($90^\\circ < \\text{açı} < 180^\\circ$) oluşturduğu görülür."
+      },
+      {
+        id: "m5-2-t5-img-03",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki ABC üçgeninde B açısı $62^\\circ$'dir. C açısına ait dış açının ölçüsü $118^\\circ$ olduğuna göre, bu üçgenin A tepe açısının ölçüsü kaç derecedir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test5/ucgen-dis-aci-hesap.webp",
+        options: ["56", "62", "118", "124"],
+        correct: 0,
+        explanation: "C iç açısı: $180 - 118 = 62^\\circ$'dir. İki açısı $62^\\circ$ ve $62^\\circ$ olan bu ikizkenar üçgenin A açısı: $180 - (62 + 62) = 56^\\circ$ olarak bulunur."
+      },
+      {
+        id: "m5-2-t5-img-04",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde verilen ABCD yamuğunda [AB] ve [DC] tabanları birbirine paraleldir. A açısı $110^\\circ$ ve C açısı $75^\\circ$ olduğuna göre, B ve D açılarının toplamı kaç derecedir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test5/yamuk-aci-kombinasyon.webp",
+        options: ["175", "185", "195", "215"],
+        correct: 0,
+        explanation: "Yamukta aynı yan kenara ait bütünler açıların toplamı $180^\\circ$'dir. $D = 180 - 110 = 70^\\circ$ ve $B = 180 - 75 = 105^\\circ$ olur. Toplamları: $70 + 105 = 175^\\circ$ yapar."
+      },
+      {
+        id: "m5-2-t5-img-05",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki sıklık tablosunda bir okul kütüphanesinden günlere göre ödünç alınan kitap sayıları verilmiştir. En fazla kitap alınan gün, en az kitap alınan günden kaç adet fazladır? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test5/siklik-tablosu-kitap.webp",
+        options: ["14", "18", "22", "26"],
+        correct: 1,
+        explanation: "Tablodaki en yüksek değer Cuma günü (42), en düşük değer ise Salı günüdür (24). Aradaki fark: $42 - 24 = 18$ olur."
+      },
+      {
+        id: "m5-2-t5-img-06",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde verilen büyük dikdörtgen levhadan, köşesindeki küçük bir dikdörtgen kesilerek atılıyor. Yeni oluşan şeklin çevre uzunluğu, kesimden önceki ilk çevre uzunluğuna göre nasıl değişir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test5/cevre-kose-kesim.webp",
+        options: ["Azalır", "Artar", "Değişmez", "Yarıya iner"],
+        correct: 2,
+        explanation: "Bir dikdörtgenin tam köşesinden dikdörtgen bir parça kesildiğinde eksilen iki kenarın uzunluğu, içeride oluşan iki yeni kenar uzunluğu ile tam olarak dengelenir; bu nedenle çevre uzunluğu değişmez."
+      },
+      {
+        id: "m5-2-t5-img-07",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde birim karelerden oluşan zemin üzerine çizilmiş olan taralı bölgenin alanı kaç santimetrekaredir? (Her küçük karenin bir kenarı 2 cm'dir, alanını buna göre hesaplayınız!) Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test5/alan-birim-kare-zor.webp",
+        options: ["24", "32", "48", "64"],
+        correct: 3,
+        explanation: "Taralı bölge 16 birim kareden oluşmaktadır. Bir küçük karenin kenarı 2 cm ise alanı $2 \\times 2 = 4\\text{ cm}^2$ olur. Toplam alan: $16 \\times 4 = 64\\text{ cm}^2$ bulunur."
+      },
+      {
+        id: "m5-2-t5-img-08",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki üç farklı sürahide bulunan portakal suyu miktarları verilmiştir. Bu üç sürahideki sıvıların tamamı 5 litrelik boş bir bidona dökülürse, bidonun tamamen dolması için kaç mililitre daha portakal suyuna ihtiyaç vardır? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test5/sivi-surehi-toplam.webp",
+        options: ["1150", "1250", "1350", "1450"],
+        correct: 1,
+        explanation: "Sürahilerdeki toplam sıvı: $1200\\text{ mL} + 1500\\text{ mL} + 1050\\text{ mL} = 3750\\text{ mL}$ yapar. 5 Litre = 5000 mL'dir. İhtiyaç duyulan: $5000 - 3750 = 1250\\text{ mL}$ olur."
+      },
+      {
+        id: "m5-2-t5-img-09",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki dijital saat ve uçak biletine göre, İstanbul'dan 23:45'te kalkan bir uçak seyahati toplam 2 saat 50 dakika sürmüştür. Uçağın iniş yaptığı an dijital saat kaçı gösterir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test5/zaman-gece-ucus.webp",
+        options: ["01:35", "02:15", "02:35", "03:25"],
+        correct: 2,
+        explanation: "23:45'in üzerine 15 dakika eklenirse saat 00:00 (gece yarısı) olur. Geriye kalan 2 saat 35 dakika da eklendiğinde iniş saati 02:35'i gösterir."
+      },
+      {
+        id: "m5-2-t5-img-10",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde verilen ABCD paralelkenarsal bölgenin alanı kaç santimetrekaredir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test5/paralelkenar-alan-taban.webp",
+        options: ["48", "60", "80", "120"],
+        correct: 1,
+        explanation: "Paralelkenarın alanı, taban uzunluğu ile o tabana ait yüksekliğin çarpımıdır. $A = \text{Taban} \\times \text{Yükseklik} = 12 \\times 5 = 60\\text{ cm}^2$ olarak hesaplanır."
+      },
+
+      // [11-20 Arası Sorular: Teorik / Bilgi Odaklı Sorular]
+      {
+        id: "m5-2-t5-11",
+        subject: "matematik",
+        term: 2,
+        prompt: "Bir kareli zeminde K noktasının 4 birim sağında ve 3 birim aşağısında bir L noktası vardır. Buna göre, K noktasının L noktasına göre konumu tarif edilirken hangi ifade doğru olur?",
+        options: [
+          "4 birim solunda, 3 birim yukarısındadır.",
+          "4 birim sağında, 3 birim yukarısındadır.",
+          "3 birim solunda, 4 birim aşağısındadır.",
+          "Aynı dikey hat üzerindedirler."
+        ],
+        correct: 0,
+        explanation: "Referans noktası L olarak seçildiğinde yönler tam tersine döner. L'den K'ye gitmek için 4 birim sola ve 3 birim yukarı hareket edilmelidir."
+      },
+      {
+        id: "m5-2-t5-12",
+        subject: "matematik",
+        term: 2,
+        prompt: "İç açılarından biri $90^\\circ$ olan bir ikizkenar üçgenin, dar açılarından birinin ölçüsü kaç derecedir?",
+        options: ["30", "45", "60", "90"],
+        correct: 1,
+        explanation: "Üçgenin iç açıları toplamı $180^\\circ$'dir. Dik açı çıkarılırsa geriye $180 - 90 = 90^\\circ$ kalır. Üçgen ikizkenar olduğundan dar açılar eşittir: $90 \\div 2 = 45^\\circ$ bulunur."
+      },
+      {
+        id: "m5-2-t5-13",
+        subject: "matematik",
+        term: 2,
+        prompt: "Sadece iki kenarı birbirine paralel olan ve paralel olmayan kenarları birbirine eşit uzunlukta olan özel dörtgen türü aşağıdakilerden hangisidir?",
+        options: ["Paralelkenar", "Eşkenar Dörtgen", "İkizkenar Yamuk", "Dikdörtgen"],
+        correct: 2,
+        explanation: "Sadece iki kenarı paralel olan şekil yamuktur; paralel olmayan yan kenarları eşit uzunlukta ise buna ikizkenar yamuk adı verilir."
+      },
+     {
+        id: "m5-2-t5-20",
+        subject: "matematik",
+        term: 2,
+        prompt: "Aşağıda verilen zaman birimleri dönüşümlerinden hangisi matematiksel olarak 'yanlıştır'?",
+        options: [
+          "3 yıl = 36 ay",
+          "5 hafta = 35 gün",
+          "180 dakika = 3 saat",
+          "250 saniye = 5 dakika"
+        ],
+        correct: 3,
+        explanation: "5 dakika, $5 \\times 60 = 300$ saniye yapmalıdır. 250 saniye ifadesi zaman ölçme kurallarına göre yanlıştır."
+      }
+    ],      
+  } 
+}; 
