@@ -3824,6 +3824,227 @@ export const matematikData: SubjectData = {
         correct: 3,
         explanation: "1 gün = 24 saattir. 240 saat: $240 \\div 24 = 10$ gün yapmalıdır, 8 gün ifadesi matematiksel olarak yanlıştır."
       }
-    ] // <-- test2 dizisinin sonu
+    ],
+         test3: [
+      // --- 5. SINIF MATEMATİK 2. DÖNEM TEST 3 (ZORLAŞTIRILMIŞ) ---
+      // [1-10 Arası Sorular: Görsel Odaklı / Şekilli Sorular]
+      {
+        id: "m5-2-t3-img-01",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki kareli kağıt üzerinde K, L ve M noktaları verilmiştir. K noktasının L noktasına göre konumu ile M noktasının K noktasına göre konumu ardışık olarak uygulandığında, L noktasından başlayan bir hareketli hangi yönde ilerlemiş olur?",
+        imageUrl: "/images/grade5/matematik/term2/test3/nokta-konum-analiz.webp",
+        options: [
+          "2 birim sağ, 3 birim aşağı",
+          "M noktasının koordinatlarına ulaşır.",
+          "Başlangıç noktasına geri döner.",
+          "K noktasının tam üzerinde durur."
+        ],
+        correct: 1,
+        explanation: "Noktaların birbirine göre konum adımları vektörel olarak uç uca eklendiğinde, hareketlinin ulaştığı son yer doğrudan M noktasının konumu olacaktır."
+      },
+      {
+        id: "m5-2-t3-img-02",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde verilen doğrular kareli zemin üzerine çizilmiştir. Bu doğrulardan hangisi, AB doğru parçasına kesinlikle dik ($+[-]$) bir konumda yer almaktadır?",
+        imageUrl: "/images/grade5/matematik/term2/test3/dik-dogru-secim.webp",
+        options: ["c doğrusu", "d doğrusu", "e doğrusu", "f doğrusu"],
+        correct: 1,
+        explanation: "Kareli kağıt üzerindeki karelerin köşegen doğrultuları incelendiğinde, AB doğrusunu $90^\\circ$lik açıyla kesen çizginin d doğrusu olduğu görülür."
+      },
+      {
+        id: "m5-2-t3-img-03",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki KLM üçgeninde L köşesine ait dış açı $115^\\circ$ ve M köşesine ait iç açı $45^\\circ$ olarak verilmiştir. Buna göre bu üçgenin verilmeyen 'K' iç açısı kaç derecedir?",
+        imageUrl: "/images/grade5/matematik/term2/test3/ucgen-aci-bulma.webp",
+        options: ["20", "65", "70", "110"],
+        correct: 0,
+        explanation: "L köşesindeki iç açı: $180 - 115 = 65^\\circ$'dir. Üçgenin iç açıları toplamı $180^\\circ$ olduğundan, K açısı: $180 - (65 + 45) = 20^\\circ$ bulunur."
+      },
+      {
+        id: "m5-2-t3-img-04",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde verilen paralelkenar şeklindeki parkın ardışık iki iç açısının ölçüleri şematize edilmiştir. Verilmeyen ve '?' ile gösterilen açının ölçüsü kaç derecedir?",
+        imageUrl: "/images/grade5/matematik/term2/test3/paralelkenar-aci-analiz.webp",
+        options: ["55", "65", "115", "125"],
+        correct: 2,
+        explanation: "Paralelkenarda ardışık (komşu) iki açının toplamı daima $180^\\circ$'dir. Bu nedenle $? = 180 - 65 = 115^\\circ$ olur."
+      },
+      {
+        id: "m5-2-t3-img-05",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki grafik, bir sınıftaki öğrencilerin sevdikleri spor dallarını göstermektedir. Basketbol sevenlerin sayısı, futbol ve tenis sevenlerin toplam sayısından kaç eksiktir?",
+        imageUrl: "/images/grade5/matematik/term2/test3/spor-grafik-veri.webp",
+        options: ["2", "4", "6", "8"],
+        correct: 1,
+        explanation: "Grafikteki sütun değerleri okunup toplandığında futbol ve tenis toplamı 16, basketbol ise 12 kişidir. Fark $16 - 12 = 4$ olur."
+      },
+      {
+        id: "m5-2-t3-img-06",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde verilen dikdörtgen şeklindeki kartonun ortasından küçük bir dikdörtgen kesilerek çıkarılıyor. Kartonun geriye kalan bölgesinin çevre uzunluğu ilk duruma göre nasıl değişir?",
+        imageUrl: "/images/grade5/matematik/term2/test3/cevre-ic-kesim.webp",
+        options: [
+          "Azalır",
+          "Değişmez",
+          "İçeride yeni kenarlar oluştuğu için artırır",
+          "Tam olarak yarıya iner"
+        ],
+        correct: 2,
+        explanation: "Şeklin ortasından (kenarlara dokunmadan) parça çıkarıldığında, dış çevre aynen kalırken içeride yeni sınır çizgileri oluştuğu için toplam çevre uzunluğu artar."
+      },
+      {
+        id: "m5-2-t3-img-07",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde kareli kağıt üzerine çizilmiş olan taralı bölgenin alanı kaç birimkaredir? (İpucu: Şekli üçgen ve dikdörtgenlere ayırınız.)",
+        imageUrl: "/images/grade5/matematik/term2/test3/alan-hesap-izgara.webp",
+        options: ["14", "16", "19", "24"],
+        correct: 2,
+        explanation: "Şekil dik üçgen ve dikdörtgen alan parçalarına ayrılıp birim kareleri hesaplandığında toplam alan 19 birimkare bulunur."
+      },
+      {
+        id: "m5-2-t3-img-08",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki iki farklı sıvı ölçüm kabında bulunan su miktarları litre ve mililitre cinsinden verilmiştir. İki kaptaki su miktarlarının toplamı kaç mililitredir?",
+        imageUrl: "/images/grade5/matematik/term2/test3/sivi-litre-toplam.webp",
+        options: ["1250", "2050", "2500", "3250"],
+        correct: 3,
+        explanation: "Litre birimleri 1000 ile çarpılarak mililitreye çevrilir ve değerler toplandığında sonuç 3250 mL olarak hesaplanır."
+      },
+      {
+        id: "m5-2-t3-img-09",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki saat ve takvime göre, bir projeye 15 Mayıs saat 14:30'da başlayan bir mühendis, projeyi tam 48 saat sonra bitirmiştir. Projenin bitiş tarihi ve saati hangisidir?",
+        imageUrl: "/images/grade5/matematik/term2/test3/zaman-takvim-saat.webp",
+        options: [
+          "16 Mayıs - 14:30",
+          "17 Mayıs - 14:30",
+          "17 Mayıs - 00:00",
+          "18 Mayıs - 14:30"
+        ],
+        correct: 1,
+        explanation: "24 saat = 1 gün olduğundan, 48 saat tam olarak 2 güne eşittir. 15 Mayıs'a 2 gün eklenirse saat değişmeden tarih 17 Mayıs olur."
+      },
+      {
+        id: "m5-2-t3-img-10",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde verilen geniş açılı üçgenin geniş açısı bir tam sayıdır. Buna göre bu üçgenin diğer iki dar açısının toplamı 'en fazla' kaç derece olabilir?",
+        imageUrl: "/images/grade5/matematik/term2/test3/genis-ucgen-analiz.webp",
+        options: ["88", "89", "90", "91"],
+        correct: 1,
+        explanation: "Geniş açı en az $91^\\circ$ olabilir. Üçgenin iç açıları toplamı $180^\\circ$ olduğundan, dar açıların toplamı en fazla $180 - 91 = 89^\\circ$ olur."
+      },
+
+      // [11-20 Arası Sorular: Teorik / Bilgi Odaklı Sorular]
+      {
+        id: "m5-2-t3-11",
+        subject: "matematik",
+        term: 2,
+        prompt: "Bir harita üzerinde A noktasının 5 cm yukarısında ve 2 cm solunda bir B noktası belirlenmiştir. B noktasının A noktasına göre konumu aşağıdakilerin hangisinde doğru tarif edilmiştir?",
+        options: [
+          "A noktasının 2 cm solunda, 5 cm yukarısındadır.",
+          "A noktasının 5 cm sağında, 2 cm aşağısındadır.",
+          "A noktası B'nin 2 cm solundadır.",
+          "İki nokta aynı dikey hat üzerindedir."
+        ],
+        correct: 0,
+        explanation: "Soruda verilen yön tanımı doğrudan A referans alınarak yapıldığı için B noktası, A'nın 2 cm solunda ve 5 cm yukarısındadır."
+      },
+      {
+        id: "t5-2-t3-12",
+        subject: "matematik",
+        term: 2,
+        prompt: "İç açılarından ikisinin ölçüsü $40^\\circ$ ve $50^\\circ$ olan bir üçgenin kenar özelliklerine göre türü aşağıdakilerden hangisidir?",
+        options: ["Eşkenar üçgen", "Geniş açılı üçgen", "Dik açılı üçgen", "Eşkenar dörtgen"],
+        correct: 2,
+        explanation: "Verilmeyen üçüncü açı: $180 - (40 + 50) = 90^\\circ$ olur. Bir açısı $90^\\circ$ olan üçgenler dik açılı üçgendir."
+      },
+      {
+        id: "m5-2-t3-13",
+        subject: "matematik",
+        term: 2,
+        prompt: "Karşılıklı kenar çiftleri birbirine paralel, tüm kenar uzunlukları eşit fakat iç açıları $90^\\circ$ olmayan dörtgen türü aşağıdakilerden hangisidir?",
+        options: ["Yamuk", "Kare", "Eşkenar Dörtgen", "Dikdörtgen"],
+        correct: 2,
+        explanation: "Kenarları eşit olmasına rağmen açıları dik ($90^\\circ$) olmayan, karşılıklı kenarları paralel dörtgen eşkenar dörtgendir."
+      },
+      {
+        id: "m5-2-t3-14",
+        subject: "matematik",
+        term: 2,
+        prompt: "Bir sınıftaki boy uzunlukları veri grubunun açıklığı 24 cm'dir. Bu sınıftaki en uzun boylu öğrenci 162 cm olduğuna göre, en kısa boylu öğrencinin boyu kaç cm'dir?",
+        options: ["138", "142", "148", "154"],
+        correct: 0,
+        explanation: "Açıklık, en büyük değer ile en küçük değerin farkıdır. En kısa boy: $162 - 24 = 138$ cm olarak bulunur."
+      },
+      {
+        id: "m5-2-t3-15",
+        subject: "matematik",
+        term: 2,
+        prompt: "Uzun kenarı, kısa kenarının 3 katı olan bir dikdörtgenin çevre uzunluğu 64 cm'dir. Bu dikdörtgenin alanı kaç santimetrekaredir?",
+        options: ["48", "96", "192", "256"],
+        correct: 2,
+        explanation: "Kısa kenara k dersek uzun kenar 3k olur. Çevre: $2 \\times (k + 3k) = 8k = 64 \\implies k = 8$ cm. Uzun kenar 24 cm olur. Alan: $8 \\times 24 = 192$ cm²."
+      },
+      {
+        id: "m5-2-t3-16",
+        subject: "matematik",
+        term: 2,
+        prompt: "Her gün düzenli olarak 45 dakika yürüyüş yapan bir sporcu, 4 hafta boyunca toplam kaç saat yürüyüş yapmış olur?",
+        options: ["18", "21", "24", "28"],
+        correct: 1,
+        explanation: "4 hafta = 28 gündür. Toplam süre: $28 \\times 45 = 1260$ dakika yapar. Saate çevirirsek: $1260 \\div 60 = 21$ saat olur."
+      },
+      {
+        id: "m5-2-t3-17",
+        subject: "matematik",
+        term: 2,
+        prompt: "Bir ikizkenar üçgenin açılarından biri $100^\\circ$ olduğuna göre, bu üçgenin küçük olan iç açılarından biri kaç derecedir?",
+        options: ["35", "40", "50", "80"],
+        correct: 1,
+        explanation: "Üçgende bir açısı $100^\\circ$ (geniş açı) ise diğer açılar tepe açısı olamaz, taban açıları olmak zorundadır. $(180 - 100) \\div 2 = 40^\\circ$ bulunur."
+      },
+      {
+        id: "m5-2-t3-18",
+        subject: "matematik",
+        term: 2,
+        prompt: "Bir depodaki 5 ton patatesin önce 1800 kg'ı, sonra 2 ton 150 kg'ı satılıyor. Depoda kalan patates kaç kg'dır?",
+        options: ["950", "1050", "1150", "1250"],
+        correct: 1,
+        explanation: "5 ton = 5000 kg. Satılanlar: $1800 + 2150 = 3950$ kg. Kalan patates: $5000 - 3950 = 1050$ kg'dır."
+      },
+      {
+        id: "m5-2-t3-19",
+        subject: "matematik",
+        term: 2,
+        prompt: "Çevre uzunluğu 40 cm olan bir karenin kenar uzunlukları 2'şer cm artırılıyor. Yeni oluşan karenin alanı ilk kareye göre kaç santimetrekare artmıştır?",
+        options: ["24", "44", "100", "144"],
+        correct: 1,
+        explanation: "İlk karenin kenarı: $40 \\div 4 = 10$ cm, alanı 100 cm². Yeni kenar 12 cm, yeni alan 144 cm². Artış miktarı: $144 - 100 = 44$ cm²."
+      },
+      {
+        id: "m5-2-t3-20",
+        subject: "matematik",
+        term: 2,
+        prompt: "Aşağıda verilen sıvı ölçüm birimleri dönüşümlerinden hangisi matematiksel olarak 'hatalıdır'?",
+        options: [
+          "2500 mL = 2,5 Litre",
+          "4 Litre 50 mL = 4050 mL",
+          "0,75 Litre = 75 mL",
+          "6000 mL = 6 Litre"
+        ],
+        correct: 2,
+        explanation: "0,75 Litre, 1000 ile çarpıldığında 750 mL yapmalıdır. 75 mL ifadesi dönüşüm kurallarına göre hatalıdır."
+      }
+    ],// <-- test2 dizisinin sonu
   } // <-- term2 nesnesinin sonu
 }; // <-- matematikData ana nesnesinin sonu (Dosyanın tamamen bitişi)
