@@ -3609,6 +3609,1036 @@ export const matematikData: SubjectData = {
         explanation: "1 dakika = 60 saniyedir. 180 saniye: $180 \\div 60 = 3$ dakika yapar, 4 dakika ifadesi yanlıştır."
       }
     ],
-    test2: []
-  }
-};
+         test2: [
+      // --- 5. SINIF MATEMATİK 2. DÖNEM TEST 2 (ZORLAŞTIRILMIŞ) ---
+      // [1-10 Arası Sorular: Görsel Odaklı / Şekilli Sorular]
+      {
+        id: "m5-2-t2-img-01",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki kareli kağıt üzerinde A, B ve C noktaları işaretlenmiştir. A noktasının C noktasına göre konumu tarif edilirken kullanılan adımların aynısı B noktasından itibaren uygulanırsa hangi koordinattaki gizli noktaya ulaşılır?",
+        imageUrl: "/images/grade5/matematik/term2/test2/nokta-labirent-zor.webp",
+        options: [
+          "3 birim sağ, 4 birim yukarı",
+          "A noktasının tam üzerine gelinir.",
+          "C noktasının 2 birim soluna gelinir.",
+          "Hedeflenen yeni köşe noktasına ulaşılır."
+        ],
+        correct: 3,
+        explanation: "A'nın C'ye göre konumu belirlendikten sonra aynı öteleme adımları B noktasından itibaren yön kurallarına göre uygulandığında hedef noktaya pürüzsüzce ulaşılır."
+      },
+      {
+        id: "m5-2-t2-img-02",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki karmaşık çizimde d, e, f ve g doğruları verilmiştir. Verilen doğruların kesişim açıları incelendiğinde hangi iki doğru çifti arasında kesinlikle bir 'paralellik' ($//$) ilişkisi vardır?",
+        imageUrl: "/images/grade5/matematik/term2/test2/paralel-kesisim-zor.webp",
+        options: ["d // e", "e // f", "f // g", "d // f"],
+        correct: 3,
+        explanation: "Kareli zemin üzerindeki doğrultuları ve eğimleri incelendiğinde, aralarındaki dik mesafe hiç değişmeyen d ve f doğrularının paralel olduğu görülür."
+      },
+      {
+        id: "m5-2-t2-img-03",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki ABC üçgeninde iki iç açının ölçüsü verilmiştir. C köşesindeki dış açı $120^\\circ$ olduğuna göre, üçgenin verilmeyen 'A' iç açısı kaç derecedir?",
+        imageUrl: "/images/grade5/matematik/term2/test2/ucgen-dis-aci-zor.webp",
+        options: ["40", "60", "80", "100"],
+        correct: 1,
+        explanation: "C köşesindeki iç açı: $180 - 120 = 60^\\circ$'dir. Üçgenin iç açıları toplamı $180^\\circ$ olduğundan, $A$ açısı: $180 - (60 + 60) = 60^\\circ$ bulunur."
+      },
+      {
+        id: "m5-2-t2-img-04",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde verilen ABCD yamuğunda ardışık iç açıların ölçüleri verilmiştir. Buna göre verilmeyen ve 'x' ile gösterilen açının ölçüsü kaç derecedir?",
+        imageUrl: "/images/grade5/matematik/term2/test2/yamuk-aci-analiz.webp",
+        options: ["70", "80", "100", "110"],
+        correct: 3,
+        explanation: "Yamukta aynı yan kenara ait iç açıların toplamı $180^\\circ$ olduğundan; $x = 180 - 70 = 110^\\circ$ olarak hesaplanır."
+      },
+      {
+        id: "m5-2-t2-img-05",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki bir okulun kütüphanesindeki kitap türlerinin dağılımını gösteren sütun grafiği incelendiğinde, hikaye kitaplarının sayısı şiir kitaplarının sayısının 3 katından kaç eksiktir?",
+        imageUrl: "/images/grade5/matematik/term2/test2/kutuphane-grafik-analiz.webp",
+        options: ["5", "10", "15", "20"],
+        correct: 1,
+        explanation: "Grafikteki sütun değerleri okunup denklem kurulduğunda aradaki farkın 10 birim olduğu matematiksel olarak hesaplanır."
+      },
+      {
+        id: "m5-2-t2-img-06",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde verilen büyük dikdörtgenin içinden kare şeklinde bir parça kesilip çıkarılıyor. Kalan boyalı bölgenin çevre uzunluğu kaç santimetredir?",
+        imageUrl: "/images/grade5/matematik/term2/test2/cevre-kesim-eksilen.webp",
+        options: ["48", "56", "64", "72"],
+        correct: 1,
+        explanation: "Köşeden kesilen parçalarda çevre uzunluğu ilk duruma göre değişmez, yeni oluşan iç kenarlar eksilen dış kenarları tam olarak dengeler."
+      },
+      {
+        id: "m5-2-t2-img-07",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde kareli zemin üzerine çizilmiş olan çokgenin toplam alanı kaç birimkaredir? (Her küçük kare 1 birimkaredir.)",
+        imageUrl: "/images/grade5/matematik/term2/test2/alan-parcalama-zor.webp",
+        options: ["18", "22", "26", "30"],
+        correct: 2,
+        explanation: "Karmaşık şekil dikdörtgen ve karelere parçalanarak alanları ayrı ayrı hesaplanıp toplandığında sonuç 26 birimkare bulunur."
+      },
+      {
+        id: "m5-2-t2-img-08",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki iki farklı dijital terazide un ve şeker çuvalları tartılmıştır. Karpuzun ağırlığı un çuvalından fazla, şeker çuvalından az olduğuna göre karpuz kaç gram olabilir?",
+        imageUrl: "/images/grade5/matematik/term2/test2/tarti-aralik-hesap.webp",
+        options: ["3200", "4100", "4800", "5200"],
+        correct: 2,
+        explanation: "Ağırlıklar gram cinsine çevrilerek aralık belirlendiğinde, karpuzun ağırlığının şıklardaki 4800 gram değerine eşit olabileceği görülür."
+      },
+      {
+        id: "m5-2-t2-img-09",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki kronometreye göre bir koşucu yarışı 2 saat 15 dakikada tamamlamıştır. Bu süre toplam kaç saniyeye eşittir?",
+        imageUrl: "/images/grade5/matematik/term2/test2/zaman-kronometre.webp",
+        options: ["135", "8100", "13500", "14400"],
+        correct: 1,
+        explanation: "1 saat = 60 dakika, 1 dakika = 60 saniyedir. Süreler saniyeye dönüştürülüp toplandığında 8100 saniye sonucuna ulaşılır."
+      },
+      {
+        id: "m5-2-t2-img-10",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki dar açılı üçgenin tüm iç açıları birer doğal sayıdır. Buna göre en büyük iç açının ölçüsü en fazla kaç derece olabilir?",
+        imageUrl: "/images/grade5/matematik/term2/test2/dar-ucgen-max.webp",
+        options: ["88", "89", "90", "91"],
+        correct: 1,
+        explanation: "Dar açılı üçgende hiçbir açı $90^\\circ$ veya daha büyük olamaz. Diğer iki açıya en küçük değer olan $1^\\circ$ verilirse en büyük açı en fazla $89^\\circ$ olur."
+      },
+
+      // [11-20 Arası Sorular: Teorik / Bilgi Odaklı Sorular]
+      {
+        id: "m5-2-t2-11",
+        subject: "matematik",
+        term: 2,
+        prompt: "Koordinat sisteminde veya kareli kağıtta K noktasının 4 birim sağında ve 3 birim aşağısında bir L noktası işaretleniyor. L noktasının K noktasına göre konumu ifade edilirken hangi bilgi doğru olur?",
+        options: [
+          "K noktası, L'nin 4 birim solunda ve 3 birim yukarısındadır.",
+          "K noktası, L'nin 4 birim sağında ve 3 birim aşağısındadır.",
+          "L noktası, K'nin 3 birim solundadır.",
+          "K ve L noktaları aynı yatay doğrultu üzerindedir."
+        ],
+        correct: 0,
+        explanation: "Konum ifadeleri tersine çevrildiğinde yönler de tam tersi halini alır. L, K'nin sağında ve aşağısındaysa; K, L'nin solunda ve yukarısındadır."
+      },
+      {
+        id: "m5-2-t2-12",
+        subject: "matematik",
+        term: 2,
+        prompt: "Bir geniş açılı üçgenin iç açılarından birinin ölçüsü $35^\\circ$ olduğuna göre, bu üçgenin geniş açısının alabileceği 'en küçük' doğal sayı değeri kaçtır?",
+        options: ["56", "90", "91", "144"],
+        correct: 2,
+        explanation: "Geniş açının tanımı gereği $90^\\circ$'den büyük olması gerekir. Bir iç açının $90^\\circ$'den büyük olması şartıyla alabileceği en küçük tam sayı değeri $91^\\circ$'dir."
+      },
+      {
+        id: "m5-2-t2-13",
+        subject: "matematik",
+        term: 2,
+        prompt: "Tüm kenar uzunlukları birbirine eşit olan bir dörtgenin ardışık iki iç açısının toplamı daima $180^\\circ$'dir. Bu geometrik şekil aşağıdakilerden hangisi olabilir?",
+        options: ["Yamuk", "Eşkenar Dörtgen", "Çeşitkenar Üçgen", "Dikdörtgen"],
+        correct: 1,
+        explanation: "Tüm kenarları eşit ve karşılıklı kenarları paralel olan, ardışık açılarının toplamı $180^\\circ$ olan şekil eşkenar dörtgendir."
+      },
+      {
+        id: "m5-2-t2-14",
+        subject: "matematik",
+        term: 2,
+        prompt: "Bir veri grubuna ait sıklık tablosundaki en büyük değer, en küçük değerin 4 katından 5 fazladır. Bu veri grubunun açıklığı 35 olduğuna göre en küçük değer kaçtır?",
+        options: ["10", "12", "15", "20"],
+        correct: 0,
+        explanation: "En küçük değere kat denilirse en büyük değer 4 kat + 5 olur. Açıklık büyükten küçüğün çıkarılmasıdır: 3 kat + 5 = 35 ise kat = 10 bulunur."
+      },
+      {
+        id: "m5-2-t2-15",
+        subject: "matematik",
+        term: 2,
+        prompt: "Bir kenar uzunluğu 16 cm olan karenin alanı, kısa kenarı 8 cm olan bir dikdörtgenin alanına eşittir. Buna göre bu dikdörtgenin çevre uzunluğu kaç cm'dir?",
+        options: ["32", "40", "80", "96"],
+        correct: 2,
+        explanation: "Karenin alanı: $16 \\times 16 = 256$ cm²'dir. Dikdörtgenin uzun kenarı: $256 \\div 8 = 32$ cm olur. Çevresi: $2 \\times (32 + 8) = 80$ cm'dir."
+      },
+      {
+        id: "m5-2-t2-16",
+        subject: "matematik",
+        term: 2,
+        prompt: "2026 yılının Şubat ayının son gününde saat 23:45'i gösterirken, bu andan tam 30 dakika sonraki zaman ve tarih eşleşmesi hangi seçenekte doğru verilmiştir?",
+        options: [
+          "00:15 - 29 Şubat 2026",
+          "00:15 - 1 Mart 2026",
+          "23:15 - 28 Şubat 2026",
+          "01:15 - 1 Mart 2026"
+        ],
+        correct: 1,
+        explanation: "2026 yılı artık yıl değildir (4'ün katı değil), bu yüzden Şubat ayı 28 gün çeker. 28 Şubat gecesi 23:45'e 30 dakika eklenirse gün değişir ve 1 Mart saat 00:15 olur."
+      },
+      {
+        id: "m5-2-t2-17",
+        subject: "matematik",
+        term: 2,
+        prompt: "İkizkenar bir üçgenin tepe açısının ölçüsü, taban açılarından birinin ölçüsünün 4 katına eşittir. Bu üçgenin en büyük iç açısı kaç derecedir?",
+        options: ["30", "60", "90", "120"],
+        correct: 3,
+        explanation: "Taban açılarına 1 kat dersek tepe açısı 4 kat olur. Toplam: 1 + 1 + 4 = 6 kat. $180 \\div 6 = 30^\\circ$ (taban açısı). Tepe açısı: $30 \\times 4 = 120^\\circ$'dir."
+      },
+      {
+        id: "m5-2-t2-18",
+        subject: "matematik",
+        term: 2,
+        prompt: "3 ton ağırlığındaki bir yük arabasından her biri 150 kg olan paketlerden 12 tane indiriliyor. Arabada kalan yük toplam kaç kg'dır?",
+        options: ["1200", "1800", "2400", "2850"],
+        correct: 0,
+        explanation: "3 ton = 3000 kg'dır. İndirilen yük: $12 \\times 150 = 1800$ kg. Kalan yük: $3000 - 1800 = 1200$ kg olarak hesaplanır."
+      },
+      {
+        id: "m5-2-t2-19",
+        subject: "matematik",
+        term: 2,
+        prompt: "Kısa kenarı 10 m, uzun kenarı 20 m olan dikdörtgen şeklindeki bir arsanın içerisine, kenar uzunlukları tam sayı olan en büyük alana sahip kare şeklinde bir havuz yapılacaktır. Havuz dışında kalan alan kaç metrekaredir?",
+        options: ["50", "100", "150", "200"],
+        correct: 1,
+        explanation: "Dikdörtgenin içine çizilebilecek en büyük karenin bir kenarı, dikdörtgenin kısa kenarı kadar (10 m) olabilir. Havuz alanı: $10 \\times 10 = 100$ m². Kalan alan: $200 - 100 = 100$ m²."
+      },
+    {
+        id: "m5-2-t2-20",
+        subject: "matematik",
+        term: 2,
+        prompt: "Aşağıda verilmiş olan zaman ölçüsü birimleri arasındaki dönüşümlerden hangisi matematiksel olarak yanlıştır?",
+        options: [
+          "5 dakika 20 saniye = 320 saniye",
+          "3 saat 15 dakika = 195 dakika",
+          "2 hafta 3 gün = 17 gün",
+          "240 saat = 8 gün"
+        ],
+        correct: 3,
+        explanation: "1 gün = 24 saattir. 240 saat: $240 \\div 24 = 10$ gün yapmalıdır, 8 gün ifadesi matematiksel olarak yanlıştır."
+      }
+    ],
+         test3: [
+      // --- 5. SINIF MATEMATİK 2. DÖNEM TEST 3 (ZORLAŞTIRILMIŞ) ---
+      // [1-10 Arası Sorular: Görsel Odaklı / Şekilli Sorular]
+      {
+        id: "m5-2-t3-img-01",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki kareli kağıt üzerinde K, L ve M noktaları verilmiştir. K noktasının L noktasına göre konumu ile M noktasının K noktasına göre konumu ardışık olarak uygulandığında, L noktasından başlayan bir hareketli hangi yönde ilerlemiş olur?",
+        imageUrl: "/images/grade5/matematik/term2/test3/nokta-konum-analiz.webp",
+        options: [
+          "2 birim sağ, 3 birim aşağı",
+          "M noktasının koordinatlarına ulaşır.",
+          "Başlangıç noktasına geri döner.",
+          "K noktasının tam üzerinde durur."
+        ],
+        correct: 1,
+        explanation: "Noktaların birbirine göre konum adımları vektörel olarak uç uca eklendiğinde, hareketlinin ulaştığı son yer doğrudan M noktasının konumu olacaktır."
+      },
+      {
+        id: "m5-2-t3-img-02",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde verilen doğrular kareli zemin üzerine çizilmiştir. Bu doğrulardan hangisi, AB doğru parçasına kesinlikle dik ($+[-]$) bir konumda yer almaktadır?",
+        imageUrl: "/images/grade5/matematik/term2/test3/dik-dogru-secim.webp",
+        options: ["c doğrusu", "d doğrusu", "e doğrusu", "f doğrusu"],
+        correct: 1,
+        explanation: "Kareli kağıt üzerindeki karelerin köşegen doğrultuları incelendiğinde, AB doğrusunu $90^\\circ$lik açıyla kesen çizginin d doğrusu olduğu görülür."
+      },
+      {
+        id: "m5-2-t3-img-03",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki KLM üçgeninde L köşesine ait dış açı $115^\\circ$ ve M köşesine ait iç açı $45^\\circ$ olarak verilmiştir. Buna göre bu üçgenin verilmeyen 'K' iç açısı kaç derecedir?",
+        imageUrl: "/images/grade5/matematik/term2/test3/ucgen-aci-bulma.webp",
+        options: ["20", "65", "70", "110"],
+        correct: 0,
+        explanation: "L köşesindeki iç açı: $180 - 115 = 65^\\circ$'dir. Üçgenin iç açıları toplamı $180^\\circ$ olduğundan, K açısı: $180 - (65 + 45) = 20^\\circ$ bulunur."
+      },
+      {
+        id: "m5-2-t3-img-04",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde verilen paralelkenar şeklindeki parkın ardışık iki iç açısının ölçüleri şematize edilmiştir. Verilmeyen ve '?' ile gösterilen açının ölçüsü kaç derecedir?",
+        imageUrl: "/images/grade5/matematik/term2/test3/paralelkenar-aci-analiz.webp",
+        options: ["55", "65", "115", "125"],
+        correct: 2,
+        explanation: "Paralelkenarda ardışık (komşu) iki açının toplamı daima $180^\\circ$'dir. Bu nedenle $? = 180 - 65 = 115^\\circ$ olur."
+      },
+      {
+        id: "m5-2-t3-img-05",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki grafik, bir sınıftaki öğrencilerin sevdikleri spor dallarını göstermektedir. Basketbol sevenlerin sayısı, futbol ve tenis sevenlerin toplam sayısından kaç eksiktir?",
+        imageUrl: "/images/grade5/matematik/term2/test3/spor-grafik-veri.webp",
+        options: ["2", "4", "6", "8"],
+        correct: 1,
+        explanation: "Grafikteki sütun değerleri okunup toplandığında futbol ve tenis toplamı 16, basketbol ise 12 kişidir. Fark $16 - 12 = 4$ olur."
+      },
+      {
+        id: "m5-2-t3-img-06",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde verilen dikdörtgen şeklindeki kartonun ortasından küçük bir dikdörtgen kesilerek çıkarılıyor. Kartonun geriye kalan bölgesinin çevre uzunluğu ilk duruma göre nasıl değişir?",
+        imageUrl: "/images/grade5/matematik/term2/test3/cevre-ic-kesim.webp",
+        options: [
+          "Azalır",
+          "Değişmez",
+          "İçeride yeni kenarlar oluştuğu için artırır",
+          "Tam olarak yarıya iner"
+        ],
+        correct: 2,
+        explanation: "Şeklin ortasından (kenarlara dokunmadan) parça çıkarıldığında, dış çevre aynen kalırken içeride yeni sınır çizgileri oluştuğu için toplam çevre uzunluğu artar."
+      },
+      {
+        id: "m5-2-t3-img-07",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde kareli kağıt üzerine çizilmiş olan taralı bölgenin alanı kaç birimkaredir? (İpucu: Şekli üçgen ve dikdörtgenlere ayırınız.)",
+        imageUrl: "/images/grade5/matematik/term2/test3/alan-hesap-izgara.webp",
+        options: ["14", "16", "19", "24"],
+        correct: 2,
+        explanation: "Şekil dik üçgen ve dikdörtgen alan parçalarına ayrılıp birim kareleri hesaplandığında toplam alan 19 birimkare bulunur."
+      },
+      {
+        id: "m5-2-t3-img-08",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki iki farklı sıvı ölçüm kabında bulunan su miktarları litre ve mililitre cinsinden verilmiştir. İki kaptaki su miktarlarının toplamı kaç mililitredir?",
+        imageUrl: "/images/grade5/matematik/term2/test3/sivi-litre-toplam.webp",
+        options: ["1250", "2050", "2500", "3250"],
+        correct: 3,
+        explanation: "Litre birimleri 1000 ile çarpılarak mililitreye çevrilir ve değerler toplandığında sonuç 3250 mL olarak hesaplanır."
+      },
+      {
+        id: "m5-2-t3-img-09",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki saat ve takvime göre, bir projeye 15 Mayıs saat 14:30'da başlayan bir mühendis, projeyi tam 48 saat sonra bitirmiştir. Projenin bitiş tarihi ve saati hangisidir?",
+        imageUrl: "/images/grade5/matematik/term2/test3/zaman-takvim-saat.webp",
+        options: [
+          "16 Mayıs - 14:30",
+          "17 Mayıs - 14:30",
+          "17 Mayıs - 00:00",
+          "18 Mayıs - 14:30"
+        ],
+        correct: 1,
+        explanation: "24 saat = 1 gün olduğundan, 48 saat tam olarak 2 güne eşittir. 15 Mayıs'a 2 gün eklenirse saat değişmeden tarih 17 Mayıs olur."
+      },
+      {
+        id: "m5-2-t3-img-10",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde verilen geniş açılı üçgenin geniş açısı bir tam sayıdır. Buna göre bu üçgenin diğer iki dar açısının toplamı 'en fazla' kaç derece olabilir?",
+        imageUrl: "/images/grade5/matematik/term2/test3/genis-ucgen-analiz.webp",
+        options: ["88", "89", "90", "91"],
+        correct: 1,
+        explanation: "Geniş açı en az $91^\\circ$ olabilir. Üçgenin iç açıları toplamı $180^\\circ$ olduğundan, dar açıların toplamı en fazla $180 - 91 = 89^\\circ$ olur."
+      },
+
+      // [11-20 Arası Sorular: Teorik / Bilgi Odaklı Sorular]
+      {
+        id: "m5-2-t3-11",
+        subject: "matematik",
+        term: 2,
+        prompt: "Bir harita üzerinde A noktasının 5 cm yukarısında ve 2 cm solunda bir B noktası belirlenmiştir. B noktasının A noktasına göre konumu aşağıdakilerin hangisinde doğru tarif edilmiştir?",
+        options: [
+          "A noktasının 2 cm solunda, 5 cm yukarısındadır.",
+          "A noktasının 5 cm sağında, 2 cm aşağısındadır.",
+          "A noktası B'nin 2 cm solundadır.",
+          "İki nokta aynı dikey hat üzerindedir."
+        ],
+        correct: 0,
+        explanation: "Soruda verilen yön tanımı doğrudan A referans alınarak yapıldığı için B noktası, A'nın 2 cm solunda ve 5 cm yukarısındadır."
+      },
+      {
+        id: "t5-2-t3-12",
+        subject: "matematik",
+        term: 2,
+        prompt: "İç açılarından ikisinin ölçüsü $40^\\circ$ ve $50^\\circ$ olan bir üçgenin kenar özelliklerine göre türü aşağıdakilerden hangisidir?",
+        options: ["Eşkenar üçgen", "Geniş açılı üçgen", "Dik açılı üçgen", "Eşkenar dörtgen"],
+        correct: 2,
+        explanation: "Verilmeyen üçüncü açı: $180 - (40 + 50) = 90^\\circ$ olur. Bir açısı $90^\\circ$ olan üçgenler dik açılı üçgendir."
+      },
+      {
+        id: "m5-2-t3-13",
+        subject: "matematik",
+        term: 2,
+        prompt: "Karşılıklı kenar çiftleri birbirine paralel, tüm kenar uzunlukları eşit fakat iç açıları $90^\\circ$ olmayan dörtgen türü aşağıdakilerden hangisidir?",
+        options: ["Yamuk", "Kare", "Eşkenar Dörtgen", "Dikdörtgen"],
+        correct: 2,
+        explanation: "Kenarları eşit olmasına rağmen açıları dik ($90^\\circ$) olmayan, karşılıklı kenarları paralel dörtgen eşkenar dörtgendir."
+      },
+      {
+        id: "m5-2-t3-14",
+        subject: "matematik",
+        term: 2,
+        prompt: "Bir sınıftaki boy uzunlukları veri grubunun açıklığı 24 cm'dir. Bu sınıftaki en uzun boylu öğrenci 162 cm olduğuna göre, en kısa boylu öğrencinin boyu kaç cm'dir?",
+        options: ["138", "142", "148", "154"],
+        correct: 0,
+        explanation: "Açıklık, en büyük değer ile en küçük değerin farkıdır. En kısa boy: $162 - 24 = 138$ cm olarak bulunur."
+      },
+      {
+        id: "m5-2-t3-15",
+        subject: "matematik",
+        term: 2,
+        prompt: "Uzun kenarı, kısa kenarının 3 katı olan bir dikdörtgenin çevre uzunluğu 64 cm'dir. Bu dikdörtgenin alanı kaç santimetrekaredir?",
+        options: ["48", "96", "192", "256"],
+        correct: 2,
+        explanation: "Kısa kenara k dersek uzun kenar 3k olur. Çevre: $2 \\times (k + 3k) = 8k = 64 \\implies k = 8$ cm. Uzun kenar 24 cm olur. Alan: $8 \\times 24 = 192$ cm²."
+      },
+      {
+        id: "m5-2-t3-16",
+        subject: "matematik",
+        term: 2,
+        prompt: "Her gün düzenli olarak 45 dakika yürüyüş yapan bir sporcu, 4 hafta boyunca toplam kaç saat yürüyüş yapmış olur?",
+        options: ["18", "21", "24", "28"],
+        correct: 1,
+        explanation: "4 hafta = 28 gündür. Toplam süre: $28 \\times 45 = 1260$ dakika yapar. Saate çevirirsek: $1260 \\div 60 = 21$ saat olur."
+      },
+      {
+        id: "m5-2-t3-17",
+        subject: "matematik",
+        term: 2,
+        prompt: "Bir ikizkenar üçgenin açılarından biri $100^\\circ$ olduğuna göre, bu üçgenin küçük olan iç açılarından biri kaç derecedir?",
+        options: ["35", "40", "50", "80"],
+        correct: 1,
+        explanation: "Üçgende bir açısı $100^\\circ$ (geniş açı) ise diğer açılar tepe açısı olamaz, taban açıları olmak zorundadır. $(180 - 100) \\div 2 = 40^\\circ$ bulunur."
+      },
+      {
+        id: "m5-2-t3-18",
+        subject: "matematik",
+        term: 2,
+        prompt: "Bir depodaki 5 ton patatesin önce 1800 kg'ı, sonra 2 ton 150 kg'ı satılıyor. Depoda kalan patates kaç kg'dır?",
+        options: ["950", "1050", "1150", "1250"],
+        correct: 1,
+        explanation: "5 ton = 5000 kg. Satılanlar: $1800 + 2150 = 3950$ kg. Kalan patates: $5000 - 3950 = 1050$ kg'dır."
+      },
+      {
+        id: "m5-2-t3-19",
+        subject: "matematik",
+        term: 2,
+        prompt: "Çevre uzunluğu 40 cm olan bir karenin kenar uzunlukları 2'şer cm artırılıyor. Yeni oluşan karenin alanı ilk kareye göre kaç santimetrekare artmıştır?",
+        options: ["24", "44", "100", "144"],
+        correct: 1,
+        explanation: "İlk karenin kenarı: $40 \\div 4 = 10$ cm, alanı 100 cm². Yeni kenar 12 cm, yeni alan 144 cm². Artış miktarı: $144 - 100 = 44$ cm²."
+      },
+      {
+        id: "m5-2-t3-20",
+        subject: "matematik",
+        term: 2,
+        prompt: "Aşağıda verilen sıvı ölçüm birimleri dönüşümlerinden hangisi matematiksel olarak 'hatalıdır'?",
+        options: [
+          "2500 mL = 2,5 Litre",
+          "4 Litre 50 mL = 4050 mL",
+          "0,75 Litre = 75 mL",
+          "6000 mL = 6 Litre"
+        ],
+        correct: 2,
+        explanation: "0,75 Litre, 1000 ile çarpıldığında 750 mL yapmalıdır. 75 mL ifadesi dönüşüm kurallarına göre hatalıdır."
+      }
+    ],
+    test4: [
+      // --- 5. SINIF MATEMATİK 2. DÖNEM TEST 4 (ZORLAŞTIRILMIŞ) ---
+      // [1-10 Arası Sorular: Görsel Odaklı / Şekilli Sorular]
+      {
+        id: "m5-2-t4-img-01",
+        subject: "matematik",
+        term: 2,
+        prompt: "Kareli kağıt üzerine çizilmiş olan labirent şemasında, A noktasında bulunan bir robot sırasıyla 3 birim sağa, 5 birim yukarı ve 2 birim sola hareket ettiriliyor. Bu robotun ulaştığı son noktanın, başlangıçtaki A noktasına göre konumu aşağıdakilerden hangisidir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test4/robot-konum-labirent.webp",
+        options: [
+          "1 birim sağ, 5 birim yukarı",
+          "5 birim sağ, 1 birim yukarı",
+          "1 birim sol, 5 birim aşağı",
+          "2 birim sağ, 3 birim yukarı"
+        ],
+        correct: 0,
+        explanation: "Robot yatayda toplamda 3 birim sağa ve 2 birim sola giderek net 1 birim sağa ilerlemiş olur, dikeyde ise 5 birim yukarı çıkmıştır."
+      },
+      {
+        id: "m5-2-t4-img-02",
+        subject: "matematik",
+        term: 2,
+        prompt: "Kareli zeminde verilen doğrular şemasında, k doğrusu yatay olarak çizilmiştir. k doğrusunu kesen d, e ve f doğrularından hangisi k doğrusu ile kesinlikle dik ($90^\\circ$) açı oluşturacak bir konumdadır? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test4/dik-kesisim-cizgiler.webp",
+        options: ["d doğrusu", "e doğrusu", "f doğrusu", "Hiçbiri"],
+        correct: 0,
+        explanation: "Kareli kağıdın dikey çizgilerini tam olarak takip eden ve yatay k doğrusunu dik kesen çizgi d doğrusudur."
+      },
+      {
+        id: "m5-2-t4-img-03",
+        subject: "matematik",
+        term: 2,
+        prompt: "Şekildeki KLM üçgeninde K köşesine ait iç açı $55^\\circ$dir. L köşesine ait dış açının ölçüsü $130^\\circ$ olduğuna göre, bu üçgenin verilmeyen M iç açısı kaç derecedir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test4/ucgen-ic-aci-bulma.webp",
+        options: ["50", "75", "105", "130"],
+        correct: 1,
+        explanation: "L köşesinin iç açısı $180 - 130 = 50^\\circ$dir. Üçgenin iç açıları toplamı $180^\\circ$ olduğundan $M = 180 - (55 + 50) = 75^\\circ$ olmalıdır."
+      },
+      {
+        id: "m5-2-t4-img-04",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde verilen ABCD eşkenar dörtgeninde komşu iki açının şeması çizilmiştir. Bu dörtgende A açısının ölçüsü $70^\\circ$ olduğuna göre, B açısının ölçüsü 'x' kaç derecedir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test4/eskenar-dortgen-aci.webp",
+        options: ["70", "110", "120", "180"],
+        correct: 1,
+        explanation: "Eşkenar dörtgende ardışık (komşu) iki iç açının toplamı daima $180^\\circ$ olduğundan $x = 180 - 70 = 110^\\circ$ olur."
+      },
+      {
+        id: "m5-2-t4-img-05",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki sütun grafiği, bir sınıftaki öğrencilerin okudukları kitap türlerinin sayılarını göstermektedir. Grafiğe göre, Macera türünde kitap okuyanların sayısı, Şiir ve Roman okuyanların toplam sayısından kaç eksiktir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test4/kitap-grafik-sutun.webp",
+        options: ["3", "5", "8", "12"],
+        correct: 1,
+        explanation: "Şiir ve Roman verileri doğru toplanıp Macera sütununun değerinden çıkarıldığında net fark 5 birim olarak bulunur."
+      },
+      {
+        id: "m5-2-t4-img-06",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde kenar uzunlukları verilen dikdörtgen şeklindeki levhanın tam ortasından kare şeklinde küçük bir parça kesilerek çıkarılıyor. Bu kesim işlemi sonucunda şeklin toplam çevre uzunluğundaki değişim için hangisi doğrudur? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test4/cevre-degisim-orta.webp",
+        options: [
+          "Azalır",
+          "Değişmez",
+          "Yeni iç kenarlar oluştuğu için artar",
+          "Yarıya iner"
+        ],
+        correct: 2,
+        explanation: "Dış çevre aynen korunurken, içeride karenin 4 yeni kenarı daha sınır çizgilerine eklendiği için toplam çevre uzunluğu artar."
+      },
+      {
+        id: "m5-2-t4-img-07",
+        subject: "matematik",
+        term: 2,
+        prompt: "Kareli kağıt üzerine çizilmiş olan boyalı geometrik şeklin toplam alanı kaç birimkaredir? (Her küçük kare 1 birimkaredir.) Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test4/alan-hesaplama-izgara.webp",
+        options: ["16", "20", "24", "28"],
+        correct: 1,
+        explanation: "Şekil dikdörtgen ve üçgen parçalara ayrılıp birim kareleri tek tek hesaplandığında toplam alan 20 birimkare çıkar."
+      },
+      {
+        id: "m5-2-t4-img-08",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki iki farklı sıvı kabında bulunan zeytinyağı miktarları Litre ve mililitre olarak verilmiştir. Bu iki kaptaki zeytinyağları boş bir fıçıya doldurulursa toplam kaç mililitre zeytinyağı elde edilir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test4/sivi-olcme-litre.webp",
+        options: ["1550", "2450", "3000", "4500"],
+        correct: 1,
+        explanation: "Birim dönüşümleri doğru yapılıp kaplardaki değerler eklendiğinde sonuç 2450 mL çıkmaktadır."
+      },
+      {
+        id: "m5-2-t4-img-09",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki takvim yaprağı ve saate göre, bir tır şoförü 22 Mei saat 10:00'da Edirne'den yola çıkmıştır. Bu şoför tam 36 saat sonra varış noktasına ulaştığına göre, ulaştığı anın tarihi ve saati hangisidir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test4/zaman-takvim-yol.webp",
+        options: [
+          "23 Mayıs - 10:00",
+          "23 Mayıs - 22:00",
+          "24 Mayıs - 10:00",
+          "24 Mayıs - 22:00"
+        ],
+        correct: 1,
+        explanation: "36 saat = 1 gün 12 saattir. 22 Mayıs 10:00'a 1 gün eklenirse 23 Mayıs 10:00 olur, üzerine 12 saat daha eklenince 23 Mayıs 22:00 bulunur."
+      },
+      {
+        id: "m5-2-t4-img-10",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki dar açılı çeşitkenar üçgenin tüm iç açıları birer tam sayıdır. Buna göre, bu üçgenin sahip olabileceği 'en büyük' iç açının ölçüsü en fazla kaç derece olabilir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test4/dar-ucgen-aci-sinir.webp",
+        options: ["88", "89", "90", "91"],
+        correct: 1,
+        explanation: "Üçgen dar açılı olduğu için en büyük açısı $90^\\circ$den küçük olmalıdır, tam sayı olarak en fazla $89^\\circ$ olabilir."
+      },
+
+      // [11-20 Arası Sorular: Teorik / Bilgi Odaklı Sorular]
+      {
+        id: "m5-2-t4-11",
+        subject: "matematik",
+        term: 2,
+        prompt: "Bir kareli kağıt üzerinde yer alan X noktasının 5 birim solunda ve 2 birim yukarısında bir Y noktası belirleniyor. Buna göre, X noktasının Y noktasına göre konumu tarif edilirken aşağıdakilerden hangisi doğru olur?",
+        options: [
+          "5 birim sağında, 2 birim aşağısındadır.",
+          "5 birim solunda, 2 birim yukarısındadır.",
+          "2 birim sağında, 5 birim aşağısındadır.",
+          "Aynı yatay hat üzerindedirler."
+        ],
+        correct: 0,
+        explanation: "Konum tariflerinde referans noktası değiştiğinde yön adımları da tam tersi doğrultuya döner (Sol -> Sağ, Yukarı -> Aşağı)."
+      },
+      {
+        id: "m5-2-t4-12",
+        subject: "matematik",
+        term: 2,
+        prompt: "Geniş açılı bir üçgenin iki dar açısının ölçüleri toplamı $55^\\circ$ olduğuna göre, bu üçgenin geniş açısının alabileceği doğal sayı değeri kaçtır?",
+        options: ["91", "124", "125", "179"],
+        correct: 2,
+        explanation: "Üçgenin iç açıları toplamı $180^\\circ$ sabittir. İki açının toplamı $55^\\circ$ ise üçüncü açı kesinlikle $180 - 55 = 125^\\circ$ olmak zorundadır."
+      },
+      {
+        id: "m5-2-t4-13",
+        subject: "matematik",
+        term: 2,
+        prompt: "Karşılıklı kenar çiftleri birbirine paralel, tüm kenar uzunlukları eşit ve karşılıklı açılarının ölçüleri birbirine eşit olan ancak iç açıları dik ($90^\\circ$) olmayan dörtgen hangisidir?",
+        options: ["Kare", "Dikdörtgen", "Eşkenar Dörtgen", "Yamuk"],
+        correct: 2,
+        explanation: "Eşkenar dörtgenin tüm kenarları eşittir, karşılıklı açıları eşittir ancak iç açıları dik açı değildir."
+      },
+      {
+        id: "m5-2-t4-14",
+        subject: "matematik",
+        term: 2,
+        prompt: "Bir gruptaki öğrencilerin kütlelerini gösteren veri grubunun açıklığı 18 kg'dır. Bu gruptaki en hafif öğrenci 36 kg olduğuna göre, en ağır öğrencinin kütlesi kaç kg'dır?",
+        options: ["18", "44", "54", "64"],
+        correct: 2,
+        explanation: "Açıklık, en büyük değer ile en küçük değerin farkıdır. En ağır öğrenci: $36 + 18 = 54$ kg olarak bulunur."
+      },
+      {
+        id: "m5-2-t4-15",
+        subject: "matematik",
+        term: 2,
+        prompt: "Kısa kenarı uzun kenarının yarısına eşit olan bir dikdörtgenin çevre uzunluğu 60 cm'dir. Bu dikdörtgenin alanı kaç santimetrekaredir?",
+        options: ["100", "200", "300", "400"],
+        correct: 1,
+        explanation: "Kısa kenar $10$ cm, uzun kenar $20$ cm bulunur. Alan: $10 \\times 20 = 200$ cm² olarak hesaplanır."
+      },
+      {
+        id: "m5-2-t4-16",
+        subject: "matematik",
+        term: 2,
+        prompt: "Her gün düzenli olarak 50 dakika ders çalışan bir öğrenci, 3 hafta boyunca toplam kaç saat ders çalışmış olur?",
+        options: ["15", "17,5", "21", "25"],
+        correct: 1,
+        explanation: "3 hafta = 21 gündür. Toplam süre: $21 \\times 50 = 1050$ dakika. Saate çevirirsek: $1050 \\div 60 = 17,5$ saat olur."
+      },
+      {
+        id: "m5-2-t4-17",
+        subject: "matematik",
+        term: 2,
+        prompt: "Bir ikizkenar üçgenin iç açılarından birinin ölçüsü $110^\\circ$ olduğuna göre, bu üçgenin diğer eş açılarından birinin ölçüsü kaç derecedir?",
+        options: ["35", "45", "55", "70"],
+        correct: 0,
+        explanation: "Üçgende sadece bir tane geniş açı olabilir, bu yüzden $110^\\circ$ tepe açısıdır. Taban açıları: $(180 - 110) \\div 2 = 35^\\circ$ olur."
+      },
+      {
+        id: "m5-2-t4-18",
+        subject: "matematik",
+        term: 2,
+        prompt: "4 ton kömür bulunan bir depodan önce 1450 kg, sonra ise 1 ton 250 kg kömür satılıyor. Depoda kalan kömür miktarı kaç kg'dır?",
+        options: ["1100", "1300", "1500", "2700"],
+        correct: 1,
+        explanation: "4 ton = 4000 kg. Toplam satılan: $1450 + 1250 = 2700$ kg. Kalan kömür: $4000 - 2700 = 1300$ kg'dır."
+      },
+      {
+        id: "m5-2-t4-19",
+        subject: "matematik",
+        term: 2,
+        prompt: "Çevre uzunluğu 32 cm olan bir karenin tüm kenar uzunlukları 3'er cm artırılıyor. Yeni oluşan büyük karenin alanı ilk duruma göre kaç santimetrekare artmıştır?",
+        options: ["33", "57", "64", "121"],
+        correct: 1,
+        explanation: "İlk alan $8 \\times 8 = 64$ cm². Yeni kenar 11 cm, yeni alan $11 \\times 11 = 121$ cm². Fark ise $121 - 64 = 57$ cm² olur."
+      },
+      {
+        id: "m5-2-t4-20",
+        subject: "matematik",
+        term: 2,
+        prompt: "Aşağıda verilen alan ölçü birimleri dönüşümlerinden hangisi matematiksel olarak doğrudur?",
+        options: [
+          "5 metrekare = 500 santimetrekare",
+          "2 santimetrekare = 200 milimetrekare",
+          "8 metrekare = 8000 milimetrekare",
+          "300 milimetrekare = 30 santimetrekare"
+        ],
+        correct: 1,
+        explanation: "Alan ölçü birimleri yüzer yüzer büyür ve küçülür. 1 santimetrekare = 100 milimetrekare olduğundan, 2 cm² = 200 mm² dönüşümü tamamen doğrudur."
+      }
+    ],
+         test5: [
+      // --- 5. SINIF MATEMATİK 2. DÖNEM TEST 5 (ZORLAŞTIRILMIŞ) ---
+      // [1-10 Arası Sorular: Görsel Odaklı / Şekilli Sorular]
+      {
+        id: "m5-2-t5-img-01",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki izometrik kağıt üzerinde A, B, C ve D noktaları işaretlenmiştir. A noktasının B noktasına göre konumu ile C noktasının D noktasına göre konumu birleştirildiğinde, hangi iki nokta arasındaki yatay mesafe en fazla olur? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test5/izometrik-konum-analiz.webp",
+        options: ["A ile C", "B ile D", "A ile D", "B ile C"],
+        correct: 2,
+        explanation: "Noktaların izometrik zemin üzerindeki yatay ve dikey birim yönleri tek tek sayıldığında, aralarındaki yatay uzaklığın (en geniş bandın) A ve D noktaları arasında oluştuğu görülür."
+      },
+      {
+        id: "m5-2-t5-img-02",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde kareli zemin üzerine çizilmiş olan çokgende, iç açılardan biri kırmızı yay ile gösterilmiştir. Bu kırmızı açının türü aşağıdakilerden hangisidir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test5/cokgen-kirmizi-aci.webp",
+        options: ["Dar açı", "Dik açı", "Geniş açı", "Tam açı"],
+        correct: 2,
+        explanation: "Kareli kağıdın dikey referans hattı ($90^\\circ$) baz alındığında, kırmızı açının kollarının bu diklikten daha açık olduğu, yani geniş açı ($90^\\circ < \\text{açı} < 180^\\circ$) oluşturduğu görülür."
+      },
+      {
+        id: "m5-2-t5-img-03",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki ABC üçgeninde B açısı $62^\\circ$'dir. C açısına ait dış açının ölçüsü $118^\\circ$ olduğuna göre, bu üçgenin A tepe açısının ölçüsü kaç derecedir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test5/ucgen-dis-aci-hesap.webp",
+        options: ["56", "62", "118", "124"],
+        correct: 0,
+        explanation: "C iç açısı: $180 - 118 = 62^\\circ$'dir. İki açısı $62^\\circ$ ve $62^\\circ$ olan bu ikizkenar üçgenin A açısı: $180 - (62 + 62) = 56^\\circ$ olarak bulunur."
+      },
+      {
+        id: "m5-2-t5-img-04",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde verilen ABCD yamuğunda [AB] ve [DC] tabanları birbirine paraleldir. A açısı $110^\\circ$ ve C açısı $75^\\circ$ olduğuna göre, B ve D açılarının toplamı kaç derecedir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test5/yamuk-aci-kombinasyon.webp",
+        options: ["175", "185", "195", "215"],
+        correct: 0,
+        explanation: "Yamukta aynı yan kenara ait bütünler açıların toplamı $180^\\circ$'dir. $D = 180 - 110 = 70^\\circ$ ve $B = 180 - 75 = 105^\\circ$ olur. Toplamları: $70 + 105 = 175^\\circ$ yapar."
+      },
+      {
+        id: "m5-2-t5-img-05",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki sıklık tablosunda bir okul kütüphanesinden günlere göre ödünç alınan kitap sayıları verilmiştir. En fazla kitap alınan gün, en az kitap alınan günden kaç adet fazladır? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test5/siklik-tablosu-kitap.webp",
+        options: ["14", "18", "22", "26"],
+        correct: 1,
+        explanation: "Tablodaki en yüksek değer Cuma günü (42), en düşük değer ise Salı günüdür (24). Aradaki fark: $42 - 24 = 18$ olur."
+      },
+      {
+        id: "m5-2-t5-img-06",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde verilen büyük dikdörtgen levhadan, köşesindeki küçük bir dikdörtgen kesilerek atılıyor. Yeni oluşan şeklin çevre uzunluğu, kesimden önceki ilk çevre uzunluğuna göre nasıl değişir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test5/cevre-kose-kesim.webp",
+        options: ["Azalır", "Artar", "Değişmez", "Yarıya iner"],
+        correct: 2,
+        explanation: "Bir dikdörtgenin tam köşesinden dikdörtgen bir parça kesildiğinde eksilen iki kenarın uzunluğu, içeride oluşan iki yeni kenar uzunluğu ile tam olarak dengelenir; bu nedenle çevre uzunluğu değişmez."
+      },
+      {
+        id: "m5-2-t5-img-07",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde birim karelerden oluşan zemin üzerine çizilmiş olan taralı bölgenin alanı kaç santimetrekaredir? (Her küçük karenin bir kenarı 2 cm'dir, alanını buna göre hesaplayınız!) Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test5/alan-birim-kare-zor.webp",
+        options: ["24", "32", "48", "64"],
+        correct: 3,
+        explanation: "Taralı bölge 16 birim kareden oluşmaktadır. Bir küçük karenin kenarı 2 cm ise alanı $2 \\times 2 = 4\\text{ cm}^2$ olur. Toplam alan: $16 \\times 4 = 64\\text{ cm}^2$ bulunur."
+      },
+      {
+        id: "m5-2-t5-img-08",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki üç farklı sürahide bulunan portakal suyu miktarları verilmiştir. Bu üç sürahideki sıvıların tamamı 5 litrelik boş bir bidona dökülürse, bidonun tamamen dolması için kaç mililitre daha portakal suyuna ihtiyaç vardır? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test5/sivi-surehi-toplam.webp",
+        options: ["1150", "1250", "1350", "1450"],
+        correct: 1,
+        explanation: "Sürahilerdeki toplam sıvı: $1200\\text{ mL} + 1500\\text{ mL} + 1050\\text{ mL} = 3750\\text{ mL}$ yapar. 5 Litre = 5000 mL'dir. İhtiyaç duyulan: $5000 - 3750 = 1250\\text{ mL}$ olur."
+      },
+      {
+        id: "m5-2-t5-img-09",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki dijital saat ve uçak biletine göre, İstanbul'dan 23:45'te kalkan bir uçak seyahati toplam 2 saat 50 dakika sürmüştür. Uçağın iniş yaptığı an dijital saat kaçı gösterir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test5/zaman-gece-ucus.webp",
+        options: ["01:35", "02:15", "02:35", "03:25"],
+        correct: 2,
+        explanation: "23:45'in üzerine 15 dakika eklenirse saat 00:00 (gece yarısı) olur. Geriye kalan 2 saat 35 dakika da eklendiğinde iniş saati 02:35'i gösterir."
+      },
+      {
+        id: "m5-2-t5-img-10",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde verilen ABCD paralelkenarsal bölgenin alanı kaç santimetrekaredir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test5/paralelkenar-alan-taban.webp",
+        options: ["48", "60", "80", "120"],
+        correct: 1,
+        explanation: "Paralelkenarın alanı, taban uzunluğu ile o tabana ait yüksekliğin çarpımıdır. $A = \text{Taban} \\times \text{Yükseklik} = 12 \\times 5 = 60\\text{ cm}^2$ olarak hesaplanır."
+      },
+
+      // [11-20 Arası Sorular: Teorik / Bilgi Odaklı Sorular]
+      {
+        id: "m5-2-t5-11",
+        subject: "matematik",
+        term: 2,
+        prompt: "Bir kareli zeminde K noktasının 4 birim sağında ve 3 birim aşağısında bir L noktası vardır. Buna göre, K noktasının L noktasına göre konumu tarif edilirken hangi ifade doğru olur?",
+        options: [
+          "4 birim solunda, 3 birim yukarısındadır.",
+          "4 birim sağında, 3 birim yukarısındadır.",
+          "3 birim solunda, 4 birim aşağısındadır.",
+          "Aynı dikey hat üzerindedirler."
+        ],
+        correct: 0,
+        explanation: "Referans noktası L olarak seçildiğinde yönler tam tersine döner. L'den K'ye gitmek için 4 birim sola ve 3 birim yukarı hareket edilmelidir."
+      },
+      {
+        id: "m5-2-t5-12",
+        subject: "matematik",
+        term: 2,
+        prompt: "İç açılarından biri $90^\\circ$ olan bir ikizkenar üçgenin, dar açılarından birinin ölçüsü kaç derecedir?",
+        options: ["30", "45", "60", "90"],
+        correct: 1,
+        explanation: "Üçgenin iç açıları toplamı $180^\\circ$'dir. Dik açı çıkarılırsa geriye $180 - 90 = 90^\\circ$ kalır. Üçgen ikizkenar olduğundan dar açılar eşittir: $90 \\div 2 = 45^\\circ$ bulunur."
+      },
+      {
+        id: "m5-2-t5-13",
+        subject: "matematik",
+        term: 2,
+        prompt: "Sadece iki kenarı birbirine paralel olan ve paralel olmayan kenarları birbirine eşit uzunlukta olan özel dörtgen türü aşağıdakilerden hangisidir?",
+        options: ["Paralelkenar", "Eşkenar Dörtgen", "İkizkenar Yamuk", "Dikdörtgen"],
+        correct: 2,
+        explanation: "Sadece iki kenarı paralel olan şekil yamuktur; paralel olmayan yan kenarları eşit uzunlukta ise buna ikizkenar yamuk adı verilir."
+      },
+     {
+        id: "m5-2-t5-20",
+        subject: "matematik",
+        term: 2,
+        prompt: "Aşağıda verilen zaman birimleri dönüşümlerinden hangisi matematiksel olarak 'yanlıştır'?",
+        options: [
+          "3 yıl = 36 ay",
+          "5 hafta = 35 gün",
+          "180 dakika = 3 saat",
+          "250 saniye = 5 dakika"
+        ],
+        correct: 3,
+        explanation: "5 dakika, $5 \\times 60 = 300$ saniye yapmalıdır. 250 saniye ifadesi zaman ölçme kurallarına göre yanlıştır."
+      }
+    ], 
+    test6: [
+      // --- 5. SINIF MATEMATİK 2. DÖNEM TEST 6 (ZORLAŞTIRILMIŞ) ---
+      // [1-10 Arası Sorular: Görsel Odaklı / Ş Şekilli Sorular]
+      {
+        id: "m5-2-t6-img-01",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki kareli zemin üzerinde bir sokağın krokisi verilmiştir. A noktasında bulunan marketin, B noktasında bulunan eczaneye göre konumu tarif edilirken aşağıdakilerden hangisi doğru bir yönlendirme olur? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test6/sokak-kroki-konum.webp",
+        options: [
+          "3 birim solunda, 4 birim yukarısındadır.",
+          "3 birim sağında, 4 birim aşağısındadır.",
+          "4 birim solunda, 3 birim aşağısındadır.",
+          "4 birim sağında, 3 birim yukarısındadır."
+        ],
+        correct: 0,
+        explanation: "B noktası (eczane) referans alındığında, A noktasına (market) ulaşmak için yatay eksende 3 birim sola ve dikey eksende 4 birim yukarı doğru ilerlemek gerekir."
+      },
+      {
+        id: "m5-2-t6-img-02",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki izgara kağıt üzerine bir üçgen çizilmiş ve köşeleri isimlendirilmiştir. Bu üçgenin açısına ve kenarlarına göre türü aşağıdakilerden hangisidir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test6/izgara-ucgen-turu.webp",
+        options: [
+          "Dar açılı ikizkenar üçgen",
+          "Dik açılı ikizkenar üçgen",
+          "Geniş açılı çeşitkenar üçgen",
+          "Dik açılı çeşitkenar üçgen"
+        ],
+        correct: 1,
+        explanation: "Zemin çizgileri incelendiğinde üçgenin bir köşesinin karelerin köşegeni doğrultusunda dik açı ($90^\\circ$) oluşturduğu ve dik kenar uzunluklarının birbirine eşit (ikizkenar) olduğu görülür."
+      },
+      {
+        id: "m5-2-t6-img-03",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde verilen ABCD paralelkenarında ardışık iç açılar ve köşegen kesişimleri modellenmiştir. C açısının ölçüsü $65^\\circ$ olduğuna göre, D iç açısının ölçüsü kaç derecedir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test6/paralelkenar-komsu-aci.webp",
+        options: ["65", "115", "125", "135"],
+        correct: 1,
+        explanation: "Paralelkenarda komşu (ardışık) olan iki iç açının toplamı daima $180^\\circ$ye eşittir. Bu nedenle $D = 180 - 65 = 115^\\circ$ olarak hesaplanır."
+      },
+      {
+        id: "m5-2-t6-img-04",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki ABCD ikizkenar yamuğunda tabanlar birbirine paraleldir. A taban açısının ölçüsü $70^\\circ$ olduğuna göre, tepe köşesinde yer alan D açısının ölçüsü kaç derecedir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test6/yamuk-ust-aci.webp",
+        options: ["70", "100", "110", "120"],
+        correct: 2,
+        explanation: "Yamuk geometrik şeklinde aynı yan kenara ait alt ve üst açıların toplamı $180^\\circ$dir. Buradan $D = 180 - 70 = 110^\\circ$ bulunur."
+      },
+      {
+        id: "m5-2-t6-img-05",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki sütun grafiği bir çiftçinin ürettiği ürün miktarlarını ton cinsinden göstermektedir. Grafiğe göre, üretilen toplam tahıl miktarı (Buğday + Arpa), Mısır miktarından kaç ton fazladır? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test6/tarim-urun-grafik.webp",
+        options: ["5", "10", "15", "20"],
+        correct: 2,
+        explanation: "Grafikten okunan değerlere göre: Buğday (25) + Arpa (15) = 40 ton. Mısır ise 25 tondur. Aradaki fark: $40 - 25 = 15$ ton olur."
+      },
+      {
+        id: "m5-2-t6-img-06",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde kenar uzunlukları verilen dikdörtgen şeklindeki levhanın sol kenarından dikdörtgen bir parça kesilerek çıkarılıyor. Kalan şeklin toplam çevre uzunluğu, kesilmeden önceki duruma göre nasıl değişir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test6/cevre-kenar-kesim.webp",
+        options: [
+          "Azalır",
+          "Artar",
+          "Değişmez",
+          "İlk durumun tam olarak yarısına iner"
+        ],
+        correct: 2,
+        explanation: "Kenar ortasından veya kenar hattından yapılan dikdörtgen kesimlerde eksilen dış kenar, içeride oluşan aynı uzunluktaki paralel kenarla dengelenir. Dolayısıyla şeklin toplam çevre uzunluğu değişmez."
+      },
+      {
+        id: "m5-2-t6-img-07",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde kareli zemin üzerine çizilmiş olan taralı şeklin toplam alanı kaç birimkaredir? (Her küçük karenin alanı 1 birimkaredir, yarım kareleri birleştirmeyi unutmayın!) Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test6/birim-kare-yarim-alan.webp",
+        options: ["12", "14", "16", "18"],
+        correct: 1,
+        explanation: "Şekil içindeki tam kareler sayıldığında 11 tane, ikişerli birleşerek tam kare oluşturan yarım kareler ise 6 tanedir ($6 \\div 2 = 3$ tam kare). Toplam alan: $11 + 3 = 14$ birimkare bulunur."
+      },
+      {
+        id: "m5-2-t6-img-08",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki büyük su deposunda bulunan sıvı miktarı Litre cinsinden verilmiştir. Bu depodan her biri 400 mL su alan şişelerden tam 25 adet doldurulursa, depoda kalan su miktarı kaç mililitre olur? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test6/depo-sivi-eksilen.webp",
+        options: ["2000", "5000", "10000", "12000"],
+        correct: 2,
+        explanation: "Depodaki su 20 Litre yani 20000 mL'dir. Şişelerle alınan toplam su: $25 \\times 400 = 10000$ mL yapar. Kalan su miktarı: $20000 - 10000 = 10000$ mL olarak hesaplanır."
+      },
+      {
+        id: "m5-2-t6-img-09",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki otobüs bileti ve saat ekranına göre, otobüs hareket noktasına tam olarak 08:30'da ulaşmıştır. Bu otobüs yolculuğu 5 saat 45 dakika sürdüğüne göre, otobüsün kalkış saati aşağıdakilerden hangisidir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test6/zaman-geriye-hesap.webp",
+        options: ["02:15", "02:45", "03:15", "03:45"],
+        correct: 1,
+        explanation: "08:30 varış saatinden önce 5 saat geriye gidilirse saat 03:30 olur. 03:30'dan da 45 dakika geriye gidildiğinde otobüsün kalkış saatinin 02:45 olduğu bulunur."
+      },
+      {
+        id: "m5-2-t6-img-10",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde verilen ABCD dikdörtgeni ile KLMN karesinin alanları birbirine eşittir. Dikdörtgenin kenar uzunluklarına göre, karenin bir kenarının uzunluğu kaç santimetredir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/matematik/term2/test6/alan-esitlik-kare.webp",
+        options: ["6", "8", "12", "16"],
+        correct: 2,
+        explanation: "Dikdörtgenin alanı: $18 \\times 8 = 144\\text{ cm}^2$dir. Karenin alanı da $144\\text{ cm}^2$ olacağına göre, hangi sayının kendisiyle çarpımı 144 eder sorusundan karenin bir kenarı $12$ cm bulunur ($12 \\times 12 = 144$)."
+      },
+
+      // [11-20 Arası Sorular: Teorik / Bilgi Odaklı Sorular]
+      {
+        id: "m5-2-t6-11",
+        subject: "matematik",
+        term: 2,
+        prompt: "Bir izgara zemin planında, A noktasının 6 birim yukarısında ve 2 birim sağında bir B noktası yer almaktadır. B noktasında duran bir gözlemci, A noktasının konumunu tarif etmek isterse hangi yönergeleri kullanmalıdır?",
+        options: [
+          "6 birim aşağısında, 2 birim solundadır.",
+          "6 birim yukarısında, 2 birim sağındadır.",
+          "2 birim aşağısında, 6 birim sağındadır.",
+          "Aynı yatay çizgi hizasındadırlar."
+        ],
+        correct: 0,
+        explanation: "Referans noktası yer değiştirdiğinde yön vektörleri tam tersine döner. B'ye göre A noktası; 6 birim aşağıda ve 2 birim solda yer alır."
+      },
+      {
+        id: "m5-2-t6-12",
+        subject: "matematik",
+        term: 2,
+        prompt: "Bir üçgenin iç açılarının ölçüleri ardışık doğal sayılardır. Buna göre, bu üçgenin açı özelliklerine göre türü aşağıdakilerden hangisi olmak zorundadır?",
+        options: ["Geniş açılı üçgen", "Dik açılı üçgen", "Dar açılı üçgen", "Eşkenar dörtgen"],
+        correct: 2,
+        explanation: "Açılar ardışık sayılarsa ortanca açı daima $180 \\div 3 = 60^\\circ$ olur. Açılar $59^\\circ, 60^\\circ, 61^\\circ$ şeklinde dizileceğinden tüm açılar $90^\\circ$den küçüktür ve üçgen dar açılıdır."
+      },
+      {
+        id: "m5-2-t6-13",
+        subject: "matematik",
+        term: 2,
+        prompt: "Karşılıklı kenarları birbirine paralel ve eşit, karşılıklı iç açılarının ölçüleri eşit, ardışık açılarının toplamı $180^\\circ$ olan ancak dört kenarı da birbirine eşit olmayan geometrik şekil hangisidir?",
+        options: ["Kare", "Eşkenar Dörtgen", "Paralelkenar", "Yamuk"],
+        correct: 2,
+        explanation: "Karşılıklı kenarları eşit olup dört kenarı birden eşit olmayan, karşılıklı açıları eşit özellikli klasik dörtgen paralelkenardır."
+      },
+      {
+        id: "m5-2-t6-14",
+        subject: "matematik",
+        term: 2,
+        prompt: "Bir sınıftaki öğrencilerin ağırlık ölçümlerinden oluşan veri grubunun açıklığı 22 kg'dır. En ağır öğrenci 58 kg olduğuna göre, bu sınıftaki en hafif öğrenci kaç kg ağırlığındadır?",
+        options: ["34", "36", "38", "40"],
+        correct: 1,
+        explanation: "Veri grubunun açıklığı en büyük değer ile en küçük değer arasındaki farktır. En hafif boy/ağırlık elemanı: $58 - 22 = 36$ kg olarak hesaplanır."
+      },
+      {
+        id: "m5-2-t6-15",
+        subject: "matematik",
+        term: 2,
+        prompt: "Bir kenar uzunluğu 12 cm olan bir karenin alanı, kısa kenarı 9 cm olan bir dikdörtgenin alanına eşittir. Buna göre, bu dikdörtgenin çevre uzunluğu kaç santimetredir?",
+        options: ["32", "40", "50", "56"],
+        correct: 3,
+        explanation: "Karenin alanı: $12 \\times 12 = 144\\text{ cm}^2$. Dikdörtgenin uzun kenarı: $144 \\div 9 = 16$ cm olur. Çevre uzunluğu ise: $2 \\times (16 + 9) = 56$ cm olarak bulunur."
+      },
+      {
+        id: "m5-2-t6-16",
+        subject: "matematik",
+        term: 2,
+        prompt: "Uluslararası bir maratonda yarışı 3 saat 12 dakikada tamamlayan bir atlete ait bu süre toplam kaç saniyeye eşittir?",
+        options: ["192", "11520", "11400", "12420"],
+        correct: 1,
+        explanation: "3 saat 12 dakika = 192 dakikadır. Saniyeye çevirmek için dakikayı 60 ile çarparız: $192 \\times 60 = 11520$ saniye yapar."
+      },
+      {
+        id: "m5-2-t6-17",
+        subject: "matematik",
+        term: 2,
+        prompt: "Bir ikizkenar üçgenin iç açılarından birinin ölçüsü $80^\\circ$dir. Bu üçgenin verilmeyen diğer iç açılarından biri aşağıdakilerden hangisi 'olamaz'?",
+        options: ["50", "80", "20", "100"],
+        correct: 3,
+        explanation: "Açı $80^\\circ$ tepe açısı ise tabanlar 50'şer derece olur. Eğer $80^\\circ$ taban açısı ise diğeri de 80 olur, tepeye 20 kalır. Ancak iç açılardan biri hiçbir kombinasyonda 100 derece olamaz."
+      },
+      {
+        id: "m5-2-t6-18",
+        subject: "matematik",
+        term: 2,
+        prompt: "Bir fabrikada üretilen 6 ton deterjanın önce 2450 kg'ı, daha sonra 1 ton 850 kg'ı paketlenip satılmıştır. Depoda paketlenmeyen kaç kg deterjan kalmıştır?",
+        options: ["1700", "2300", "2700", "3700"],
+        correct: 0,
+        explanation: "6 ton = 6000 kg'dır. Toplam satılan ürün miktarı: $2450 + 1850 = 4300$ kg. Kalan deterjan miktarı: $6000 - 4300 = 1700$ kg bulunur."
+      },
+      {
+        id: "m5-2-t6-19",
+        subject: "matematik",
+        term: 2,
+        prompt: "Uzun kenarı 15 cm, kısa kenarı 8 cm olan bir dikdörtgenin tüm kenar uzunlukları 2'şer cm artırılıyor. Yeni oluşan dikdörtgenin alanı ilk duruma göre kaç santimetrekare artmıştır?",
+        options: ["30", "46", "50", "170"],
+        correct: 2,
+        explanation: "İlk alan: $15 \\times 8 = 120\\text{ cm}^2$. Yeni kenarlar 17 cm ve 10 cm olur, yeni alan $17 \\times 10 = 170\\text{ cm}^2$dir. Aradaki artış: $170 - 120 = 50\\text{ cm}^2$ olur."
+      },
+      {
+        id: "m5-2-t6-20",
+        subject: "matematik",
+        term: 2,
+        prompt: "Aşağıda verilen alan ölçü birimi dönüşümlerinden hangisi matematiksel kurallara göre 'hatalıdır'?",
+        options: [
+          "4 metrekare = 40000 santimetrekare",
+          "7 santimetrekare = 700 milimetrekare",
+          "30000 santimetrekare = 3 metrekare",
+          "5 metrekare = 500 santimetrekare"
+        ],
+        correct: 3,
+        explanation: "1 metrekare = 10000 santimetrekaredir. Dolayısıyla 5 metrekare 50000 $\\text{cm}^2$ yapmalıdır, 500 $\\text{cm}^2$ ifadesi hatalıdır."
+      }
+    ],
+  } 
+}; 
