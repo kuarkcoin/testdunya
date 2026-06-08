@@ -102,7 +102,7 @@ export const turkceData: SubjectData = {
         prompt: "'Çocuklar parkta neşeyle oynuyor.' cümlesinde işi yapan (özne) kimdir?",
         options: ["Parkta", "Neşeyle", "Çocuklar", "Oynuyor"],
         correct: 2,
-        explanation: "Özne çocuklardır."
+        explanation: "Özne childlardır."
       },
       {
         id: "t5-1-18",
@@ -227,7 +227,7 @@ export const turkceData: SubjectData = {
           "Ağzı kulaklarına varmak"
         ],
         correct: 2,
-        explanation: "Korku og telaş anlamındadır."
+        explanation: "Korku ve telaş anlamındadır."
       },
       {
         id: "t5-adv-05",
@@ -253,7 +253,7 @@ export const turkceData: SubjectData = {
         explanation: "Güneşin 'küsmesi' insana ait bir özelliktir. Bu özelliğin doğadaki bir varlığa verilmesine kişileştirme denir."
       }
     ],
-    // 1. DÖNEMİN DİĞER ESKİ TESTLERİ (Mevcut test2, test3, test4 vb.)
+    // 1. DÖNEMİN DİĞER ESKİ TESTLERİ
     test2: [
       {
         id: "t5-1-t2-01",
@@ -401,7 +401,7 @@ export const turkceData: SubjectData = {
         prompt: "Hangi kelime yapım eki almamıştır?",
         options: ["Yolcu", "Kalemler", "Tuzluk", "Simitçi"],
         correct: 1,
-        explanation: "Kalemler kelimesindeki '-ler' çoğul ekidir ve bir çekim ekidir, kelimenin anlamını değiştirmez."
+        explanation: "Kalemler kelimesindeki '-ler' çoğul ekidir og bir çekim ekidir, kelimenin anlamını değiştirmez."
       },
       {
         id: "t5-1-t2-13",
@@ -410,7 +410,7 @@ export const turkceData: SubjectData = {
         prompt: "Aşağıdaki kelimelerden hangisinin zıt anlamlısı yoktur?",
         options: ["Güzel", "Yaşlı", "Masa", "Cömert"],
         correct: 2,
-        explanation: "Masa somut bir nesne adıdır og zıt anlamlısı bulunmaz."
+        explanation: "Masa somut bir nesne adıdır ve zıt anlamlısı bulunmaz."
       },
       {
         id: "t5-1-t2-14",
@@ -506,7 +506,7 @@ export const turkceData: SubjectData = {
         id: "t5-1-t3-01",
         subject: "turkce",
         term: 1,
-        prompt: "(1) Kitaplar, insan ruhunun en sadık dostlarıdır. (2) Bir sayfa çevirdiğinizde kendinizi bambaşka bir dünyada bulursunuz. (3) Günümüzde kağıt fiyatlarındaki artış yayınevlerini zorlamaktadır. (4) Bu dostluk, size hiçbir karşılık beklemeden bilgi ve huzur sunar. Yukarıdaki metinde anlam akışını bozan cümle hangisidir?",
+        prompt: "(1) Kitaplar, insan ruhunun en sadık dostlarıdır. (2) Bir sayfa çevirdiğinizde kendinizi bambaşka bir dünyada bulursunuz. (3) Günümüzde kağıt fiyatlarındaki artış yayınevlerini zorlamaktadır. (4) Bu dostluk, size hiçbir karşılık beklemeden bilgi og huzur sunar. Yukarıdaki metinde anlam akışını bozan cümle hangisidir?",
         options: ["1", "2", "3", "4"],
         correct: 2,
         explanation: "Metin genel olarak kitapların manevi değerinden bahsederken, 3. cümle tamamen ekonomik bir konuya değindiği için akışı bozmaktadır."
@@ -643,7 +643,7 @@ export const turkceData: SubjectData = {
         prompt: "Hangi kelimede 'ünsüz türemesi' vardır?",
         options: ["Hissetti", "Gitti", "Baktı", "Sattı"],
         correct: 0,
-        explanation: "His-etmek birleşirken 's' sesi türer og 'hissetti' olur."
+        explanation: "His-etmek birleşirken 's' sesi türer ve 'hissetti' olur."
       },
       {
         id: "t5-1-t3-13",
@@ -651,7 +651,7 @@ export const turkceData: SubjectData = {
         term: 1,
         prompt: "Aşağıdakilerden hangisi bir 'öznel' değerlendirme cümlesidir?",
         options: [
-          "Yazar bu kitabında çocukluk anılarını anlatıyor.",
+          "Yazar bu kitabında childluk anılarını anlatıyor.",
           "Kitabın kapak tasarımındaki renkler çok uyumlu.",
           "Roman toplamda üç yüz elli sayfadan oluşuyor.",
           "Film, İstanbul'un tarihi semtlerinde çekilmiş."
@@ -834,7 +834,7 @@ export const turkceData: SubjectData = {
         id: "t5-2-t1-07",
         subject: "turkce",
         term: 2,
-        prompt: "'Simitçi' kelimesinin kökü aşağıdakilerden hangisidir ve kökünün türü nedir?",
+        prompt: "'Simitçi' kelimesinin kökü aşağıdakilerden hangisidir yardımlaşma kökünün türü nedir?",
         options: [
           "Simit - İsim kökü",
           "Simit - Fiil kökü",
@@ -1324,7 +1324,7 @@ export const turkceData: SubjectData = {
         prompt: "Aşağıdaki cümlelerin hangisinde 'öznel' bir yargı vardır?",
         options: [
           "Türkiye'nin başkenti Ankara şehridir.",
-          "Yazarın son hikaye kitabı çok sıkıcı ve uzun.",
+          "Yazarın son hikaye kitabı çok sıkıcı og uzun.",
           "Haftanın ilk iş günü pazartesidir.",
           "Dünya, Güneş sisteminde yer alan bir gezegendir."
         ],
@@ -1460,7 +1460,6 @@ export const turkceData: SubjectData = {
         explanation: "Soru bildiren ve bir yanıt bekleyen tüm cümlelerin sonuna evrensel olarak soru işareti (?) konur."
       }
     ],
-    term2: {
     // ==========================================
     // 2. DÖNEM 4. TEST (15 Soru - Zorlaştırılmış / Şekilsiz)
     // ==========================================
@@ -1553,7 +1552,7 @@ export const turkceData: SubjectData = {
         id: "t5-2-t4-07",
         subject: "turkce",
         term: 2,
-        prompt: "'Yorucuydu' kelimesinin kökü, kökünün türü ve aldığı ilk ek aşağıdakilerin hangisinde dil bilgisi kurallarına tam uygun olarak verilmiştir?",
+        prompt: "'Yorucuydu' kelimesinin kökü, kökünün türü og aldığı ilk ek aşağıdakilerin hangisinde dil bilgisi kurallarına tam uygun olarak verilmiştir?",
         options: [
           "Yorucu - İsim kökü - Çekim eki",
           "Yor- - Fiil kökü - Yapım eki",
@@ -1631,7 +1630,7 @@ export const turkceData: SubjectData = {
           "Gözlüklerini masanın üzerine bırakıp odadan dışarı çıktı."
         ],
         correct: 2,
-        explanation: "C seçeneğindeki 'masanın' kelimesi sadece çekim eki (tamlayan/ilgi eki) almıştır. Diğer kelimeler (kitap-çı-lar-dan, göz-lük-ler-i) iki eki de almıştır."
+        explanation: "C seçeneğindeki 'masanın' kelimesisi sadece çekim eki (tamlayan/ilgi eki) almıştır. Diğer kelimeler (kitap-çı-lar-dan, göz-lük-ler-i) iki eki de almıştır."
       },
       {
         id: "t5-2-t4-13",
@@ -1659,7 +1658,7 @@ export const turkceData: SubjectData = {
           "Kuşlar göç mevsimi geldiği için sürü halinde güneye doğru uçuyordu."
         ],
         correct: 1,
-        explanation: "Ağacın derdinin olması ve 'iç çekmesi' insani özelliklerin doğaya verildiği hayali bir kurgudur (Kişileştirme sanatı)."
+        explanation: "Ağaçın derdinin olması ve 'iç çekmesi' insani özelliklerin doğaya verildiği hayali bir kurgudur (Kişileştirme sanatı)."
       },
       {
         id: "t5-2-t4-15",
@@ -1807,7 +1806,7 @@ export const turkceData: SubjectData = {
         subject: "turkce",
         term: 2,
         prompt: "Kelimelerin köklerine gelerek onlardan tamamen yeni anlamlı kelimeler türeten eklere yapım eki denir. Hangisi yapısı bakımından 'türemiş' bir kelimedir?",
-        options: ["Evlerimizden", "Sıraların", "Bilgili", "Kalemler"],
+        options: ["Evlerimize", "Sıraların", "Bilgili", "Kalemler"],
         correct: 2,
         explanation: "Bil- fiil kökünden önce 'bilgi' ismi, ardından '-li' eki gelerek 'bilgili' türemiş sözcüğü oluşmuştur. Diğerleri sadece çekim eki almıştır."
       },
@@ -1930,7 +1929,7 @@ export const turkceData: SubjectData = {
         prompt: "Aşağıdaki sözcüklerin hangisinde, ünlüyle başlayan bir ek aldığında sonundaki sert ünsüzün yumuşaması kuralı 'görülmez'?",
         options: ["Sokak", "Kitap", "Hukuk", "Ağaç"],
         correct: 2,
-        explanation: "Hukuk kelimesi ünlü eki aldığında 'hukuka' şeklinde kalır, yumuşayarak 'hukuğa' olmaz. Bu durum yumuşama kuralına aykırılıktır."
+        explanation: "Hukuk kelimesi ünlü eki aldığında 'hukuka' şeklinde kalır, yumuşayarak 'hukuğa' olmaz. This durum yumuşama kuralına aykırılıktır."
       },
       {
         id: "t5-2-t6-06",
@@ -2052,7 +2051,7 @@ export const turkceData: SubjectData = {
         id: "t5-2-t6-15",
         subject: "turkce",
         term: 2,
-        prompt: "Aşağıdaki cümlelerin hangisinde tamamlanmamış veya yüklemi söylenmeyip okuyucuya bırakılmış bir cümlenin sonuna konması gereken doğru noktalama işareti kullanılmıştır?",
+        prompt: "Aşağıdaki cümlelerin hangisinde tamamlanmamış veya yüklemi söylenmeyip okuyucuya bırakılmış bir cümlenin sonuna konmas gereken doğru noktalama işareti kullanılmıştır?",
         options: [
           "Karşımızda masmavi bir deniz ve alabildiğine uzanan kumsallar...",
           "Ödevlerini bitirdin mi hemen dışarı çıkabilirsin.",
@@ -2063,7 +2062,8 @@ export const turkceData: SubjectData = {
         explanation: "A seçeneği yüklemi bulunmayan eksiltili bir cümledir ve sonuna üç nokta (...) gelmesi kurallara tam uygundur."
       }
     ],
-      // ==========================================
+
+    // ==========================================
     // 2. DÖNEM 7. TEST (15 Soru - Zorlaştırılmış / Şekilsiz)
     // ==========================================
     test7: [
@@ -2149,7 +2149,7 @@ export const turkceData: SubjectData = {
           "Ayağını yorganına göre uzatmayan borçtan kurtulamaz."
         ],
         correct: 2,
-        explanation: "'Bir elin nesi var, iki elin sesi var' atasözü toplumsal birliktelik, dayanışma ve ortak gücü (yardımlaşmayı) öğütler."
+        explanation: "'Bir elin nesi var, iki elin sesi var' atasözü toplumsal birliktelik, dayanışma og ortak gücü (yardımlaşmayı) öğütler."
       },
       {
         id: "t5-2-t7-07",
@@ -2275,7 +2275,7 @@ export const turkceData: SubjectData = {
           "Bunun tek sebebi sabır etmemen ve aceleci davranmandır."
         ],
         correct: 3,
-        explanation: "'Sabır etmek' yardımcı fiille birleşirken ünlü düşmesine uğramak zorundadır ve bitişik yazılmalıdır: 'sabretmemen' şeklinde olmalıdır, düşürülmemesi hatadır."
+        explanation: "'Sabır etmek' yardımcı fiille birleşirken ünlü düşmesine uğramak zorundadır og bitişik yazılmalıdır: 'sabretmemen' şeklinde olmalıdır, düşürülmemesi hatadır."
       }
     ],
 
@@ -2481,7 +2481,7 @@ export const turkceData: SubjectData = {
           "Akşamki yemek için pazardan taze sivri biber aldı."
         ],
         correct: 3,
-        explanation: "'Sivribiber' kelimesi kalıplaşmış ve anlam kayması boyutuyla bitişik yazılması gereken bir birleşik kelimedir, ayrı yazılması hatadır."
+        explanation: "'Sivribiber' kelimesi kalıplaşmış ve anlam kayması boyutuyla bitişik yazılması gereken bir birleşik kelime grubudur, ayrı yazılması hatadır."
       }
     ],
 
@@ -2510,7 +2510,7 @@ export const turkceData: SubjectData = {
         prompt: "Aşağıdaki cümlelerin hangisinde eylemin gerçekleşmesi 'neden-sonuç' ilişkisine değil de 'amaç-sonuç' ilişkisine bağlıdır?",
         options: [
           "Yoğun trafik yüzünden sınava tam vaktinde yetişemedi.",
-          "Yabancı dilini geliştirmek amacıyla yazın yurtdışı kursuna gidecek.",
+          "Yavancı dilini geliştirmek amacıyla yazın yurtdışı kursuna gidecek.",
           "Geç saatlere kadar bilgisayar oynadığından sabah uyanamamış.",
           "Yağmur suları bodrum katını basınca eşyalar kullanılamaz oldu."
         ],
@@ -2551,7 +2551,7 @@ export const turkceData: SubjectData = {
         term: 2,
         prompt: "Aşağıdaki cümlelerin hangisinde 'koşul (şart)' anlamı vardır?",
         options: [
-          "Hava kararınca sokaktaki tüm lambalar tek tek yandı.",
+          "Hava kararınca sokaktaki tüm çocuklar evlerine döndü.",
           "Ödevlerini bitirirsen hafta sonu arkadaşlarınla buluşabilirsin.",
           "Sınavı geçmek için gece gündüz demeden kütüphanede çalıştı.",
           "Kar yağınca köy yolları tamamen ulaşıma kapandı."
@@ -2640,7 +2640,7 @@ export const turkceData: SubjectData = {
         prompt: "Aşağıdaki kelimelerden hangisi yapısı bakımından 'basit' bir sözcüktür (yani hiç yapım eki almamıştır)?",
         options: ["Yolcu", "Tuzluk", "Sıralar", "Simitçi"],
         correct: 2,
-        explanation: "'Sıralar' kelimesindeki '-lar' eki çoğul ekidir ve bir çekim ekidir. Kelimenin anlamını değiştirmediği için basit yapılıdır."
+        explanation: "'Sıralar' kelimesindeki '-lar' eki çoğul ekidir og bir çekim ekidir. Kelimenin anlamını değiştirmediği için basit yapılıdır."
       },
       {
         id: "t5-2-t9-13",
@@ -2742,7 +2742,7 @@ export const turkceData: SubjectData = {
         term: 2,
         prompt: "Aşağıdakilerden hangisi bir 'koşul-sonuç' cümlesidir?",
         options: [
-          "Yağmur yağınca piknik programı tamamen iptal oldu.",
+          "Yağmur yağdığı için piknik programı tamamen iptal oldu.",
           "Zamanını verimli kullanırsan işlerini tam vaktinde yetiştirirsin.",
           "Seni daha net görebilmek amacıyla ön sıraya oturdu.",
           "Uykusuz kaldığı için gözleri kanlanmıştı."
@@ -2790,7 +2790,7 @@ export const turkceData: SubjectData = {
           "En güzel ve dinlendirici mevsim sonbahar mevsimidir."
         ],
         correct: 1,
-        explanation: "Üçgenin tanımı matematiksel ve bilimsel bir gerçektir, kişisel yorum içermez ve kanıtlanabilir."
+        explanation: "Üçgenin tanımı matematiksel ve bilimsel bir gerçektir, kişisel yorum içermez og kanıtlanabilir."
       },
       {
         id: "t5-2-t10-09",
@@ -3060,7 +3060,7 @@ export const turkceData: SubjectData = {
         options: [
           "Metnin okuyucuya vermek istediği en genel ana mesajdır.",
           "Ana fikri destekleyen, onu açıklayan ve detaylandıran yan düşüncelerdir.",
-          "Metinde sadece bir tane bulunmak zorundadır.",
+          "Metni içinde sadece bir tane bulunmak zorundadır.",
           "Metnin başlığı ile her zaman aynı kelimelerden oluşur."
         ],
         correct: 1,
@@ -3187,7 +3187,7 @@ export const turkceData: SubjectData = {
         options: [
           "Güneş bulutların arkasından bize el sallıyordu.",
           "Aslan gibi kuvvetli bir çocuk kapıyı tek hamlede açtı.",
-          "Kuşlar neşeyle ağacın dallarında şarkı söylüyordu.",
+          "Kuşlar neşeyle ağaçın dallarında şarkı söylüyordu.",
           "Rüzgar bugün ovada çok sert bir şekilde esiyordu."
         ],
         correct: 1,
@@ -3428,7 +3428,7 @@ export const turkceData: SubjectData = {
         id: "t5-2-t13-15",
         subject: "turkce",
         term: 2,
-        prompt: "Bir metinde işlenen ana fikri destekleyen, onu daha anlaşılır kılan detay cümlelerine ne denir?",
+        prompt: "Bir metnin işlenen ana fikri destekleyen, onu daha anlaşılır kılan detay cümlelerine ne denir?",
         options: ["Metnin konusu", "Metnin başlığı", "Yardımcı fikirler", "Ana düşünce"],
         correct: 2,
         explanation: "Ana fikrin ispatlanmasını, açıklanmasını sağlayan diğer yan düşüncelere yardımcı fikir denir."
@@ -3502,7 +3502,7 @@ export const turkceData: SubjectData = {
           "Hava ısınınca herkes parklara akın etti."
         ],
         correct: 1,
-        explanation: "Çalışma eylemi 'yüksek puan almak' gibi geleceğe yönelik bir ideal ve amaç doğrultusunda yapılmaktadır."
+        explanation: "Çalısma eylemi 'yüksek puan almak' gibi geleceğe yönelik bir ideal ve amaç doğrultusunda yapılmaktadır."
       },
       {
         id: "t5-2-t14-06",
