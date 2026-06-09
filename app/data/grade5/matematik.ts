@@ -4640,5 +4640,223 @@ export const matematikData: SubjectData = {
         explanation: "1 metrekare = 10000 santimetrekaredir. Dolayısıyla 5 metrekare 50000 $\\text{cm}^2$ yapmalıdır, 500 $\\text{cm}^2$ ifadesi hatalıdır."
       }
     ],
+       test7: [
+      // --- 5. SINIF MATEMATİK 2. DÖNEM TEST 7 (ZORLAŞTIRILMIŞ) ---
+      {
+        id: "m5-2-t7-img-01",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki kareli zemin üzerinde A, B, C ve D noktaları işaretlenmiştir. A noktasının B noktasına göre konumu ile C noktasının D noktasına göre konumu ardışık bir rota olarak A noktasından itibaren uygulanırsa, labirentin hangi çıkış kapısına ulaşılır?",
+        imageUrl: "/images/grade5/matematik/term2/test7/nokta-rota-labirent.webp",
+        options: ["1. Çıkış Kapısı", "2. Çıkış Kapısı", "3. Çıkış Kapısı", "4. Çıkış Kapısı"],
+        correct: 1,
+        explanation: "Noktaların birbirine göre konum adımları (örneğin sağa/sola ve yukarı/aşağı birimleri) yön kurallarına göre uç uca eklenip A'dan başlanarak yüründüğünde sistem bizi net olarak 2. Çıkış Kapısı'na ulaştırır."
+      },
+      {
+        id: "m5-2-t7-02",
+        subject: "matematik",
+        term: 2,
+        prompt: "Bir kareli kağıt üzerinde yer alan K noktasının 6 birim sağında ve 4 birim yukarısında bir L noktası işaretleniyor. Daha sonra L noktası referans alınarak, L'nin 2 birim solunda ve 5 birim aşağısında bir M noktası daha belirleniyor. Buna göre, başlangıçtaki K noktasının son oluşan M noktasına göre konumu aşağıdakilerden hangisidir?",
+        options: [
+          "4 birim solunda, 1 birim yukarısındadır.",
+          "4 birim sağında, 1 birim aşağısındadır.",
+          "1 birim solunda, 4 birim yukarısındadır.",
+          "Aynı dikey doğrultu üzerindedirler."
+        ],
+        correct: 0,
+        explanation: "K'dan L'ye: +6 sağ, +4 yukarı. L'den M'ye: -2 sol, -5 aşağı. Net durum (K'dan M'ye): +4 sağ, -1 aşağı olur. Soru bize K'nın M'ye göre konumunu (M'den K'ya bakışı) sorduğu için yönler tersine döner: 4 birim sol, 1 birim yukarı."
+      },
+      {
+        id: "m5-2-t7-img-03",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde kareli zemin üzerine çizilmiş doğrular verilmiştir. d doğrusuna paralel ($//$) olan doğru ile d doğrusunu dik ($+[-]$) kesen doğrunun isimleri hangi seçenekte doğru olarak eşleştirilmiştir?",
+        imageUrl: "/images/grade5/matematik/term2/test7/paralel-dik-izgara.webp",
+        options: [
+          "Paralel: e doğrusu, Dik: f doğrusu",
+          "Paralel: f doğrusu, Dik: e doğrusu",
+          "Paralel: g doğrusu, Dik: f doğrusu",
+          "Paralel: e doğrusu, Dik: g doğrusu"
+        ],
+        correct: 0,
+        explanation: "Kareli zemindeki doğrultu ve eğimler incelendiğinde, d çizgisiyle hiç kesişmeyecek olan e doğrusu paraleldir. d çizgisiyle tam $90^\\circ$lik açı oluşturan f doğrusu ise diktir."
+      },
+      {
+        id: "m5-2-t7-04",
+        subject: "matematik",
+        term: 2,
+        prompt: "Bir d doğrusunu dik açıyla kesen bir e doğrusu çiziliyor. Daha sonra bu e doğrusuna paralel olacak şekilde üçüncü bir f doğrusu daha ekleniyor. Bu geometrik çizim kurallarına göre, başlangıçtaki d doğrusu ile son eklenen f doğrusunun birbirine göre durumu için aşağıdakilerden hangisi kesinlikle doğrudur?",
+        options: [
+          "d doğrusu ile f doğrusu birbirine paraleldir.",
+          "d doğrusu ile f doğrusu birbirine diktir.",
+          "d doğrusu ile f doğrusu hiçbir noktada kesişmez.",
+          "İki doğru birbiriyle çakışık durumdadır."
+        ],
+        correct: 1,
+        explanation: "Bir doğruya dik olan bir çizgiye paralel çizilen tüm yeni doğrular, ilk doğruyu da dik açıyla ($90^\\circ$) kesmek zorundadır. Bu yüzden d ile f birbirine diktir."
+      },
+      {
+        id: "m5-2-t7-img-05",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki ABC üçgeninde verilen iç ve dış açı ölçülerine göre, bu üçgenin verilmeyen 'A' iç açısının ölçüsü kaç derecedir?",
+        imageUrl: "/images/grade5/matematik/term2/test7/ucgen-aci-zincir.webp",
+        options: ["45", "55", "65", "75"],
+        correct: 2,
+        explanation: "B köşesindeki iç açıyı bulmak için dış açıdan yararlanırız: $180 - 125 = 55^\\circ$. Üçgenin iç açıları toplamı $180^\\circ$ olduğundan: $A = 180 - (55 + 60) = 65^\\circ$ bulunur."
+      },
+      {
+        id: "m5-2-t7-06",
+        subject: "matematik",
+        term: 2,
+        prompt: "Bir ikizkenar üçgenin iç açılarından birinin ölçüsü $112^\\circ$ olarak ölçülmüştür. Bu üçgenin çeşitkenarlık veya açısına göre özellikleri düşünüldüğünde, verilmeyen diğer eş iç açılarından birinin ölçüsü kaç derecedir?",
+        options: ["34", "44", "56", "68"],
+        correct: 0,
+        explanation: "Bir üçgende sadece bir tane geniş açı ($90^\\circ$den büyük) bulunabilir. Bu yüzden $112^\\circ$ tepe açısı olmak zorundadır. Taban açıları eşit olduğundan: $(180 - 112) \\div 2 = 68 \\div 2 = 34^\\circ$ bulunur."
+      },
+      {
+        id: "m5-2-t7-img-07",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde verilen ABCD paralelkenarında komşu iki iç açının bağıntısı şematize edilmiştir. Buna göre '?' işareti ile gösterilen iç açının ölçüsü kaç derecedir?",
+        imageUrl: "/images/grade5/matematik/term2/test7/paralelkenar-kose-aci.webp",
+        options: ["45", "55", "125", "135"],
+        correct: 2,
+        explanation: "Paralelkenarda alt ve üst ardışık (komşu) iki iç açının toplamı daima $180^\\circ$ye eşittir. Buradan $? = 180 - 55 = 125^\\circ$ olarak hesaplanır."
+      },
+      {
+        id: "m5-2-t7-08",
+        subject: "matematik",
+        term: 2,
+        prompt: "Ardışık iki iç açısının toplamı daima $180^\\circ$ olan, karşılıklı kenar çiftleri birbirine paralel ve tüm kenar uzunlukları birbirine eşit olan bir dörtgenin bir iç açısı $72^\\circ$dir. Bu dörtgenin karşısındaki diğer iç açının ölçüsü kaç derecedir?",
+        options: ["72", "108", "118", "144"],
+        correct: 0,
+        explanation: "Soruda tarifi verilen şekil bir eşkenar dörtgendir. Eşkenar dörtgenin (ve paralelkenarın) temel kuralı gereği karşılıklı iç açılarının ölçüleri birbirine eşittir. Bu yüzden aranan açı da $72^\\circ$ olur."
+      },
+      {
+        id: "m5-2-t7-img-09",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki dikey sütun grafiği bir mağazanın haftalık mont satış adetlerini göstermektedir. Grafik verileri incelendiğinde, en çok satış yapılan günkü mont sayısı, en az satış yapılan günkü mont sayısının kaç katıdır?",
+        imageUrl: "/images/grade5/matematik/term2/test7/satis-sutun-grafik.webp",
+        options: ["2", "3", "4", "5"],
+        correct: 1,
+        explanation: "Grafikteki en yüksek sütun Cumartesi günü (48 adet), en düşük sütun ise Çarşamba günüdür (16 adet). Kat oranı: $48 \\div 16 = 3$ katı olarak hesaplanır."
+      },
+      {
+        id: "m5-2-t7-10",
+        subject: "matematik",
+        term: 2,
+        prompt: "Bir veri grubundaki en büyük sayı, en küçük sayının 3 katından 4 eksiktir. Bu veri grubundaki sayıların en büyüğü 44 olduğuna göre, bu veri grubunun açıklığı (veri genişliği) kaçtır?",
+        options: ["16", "24", "28", "32"],
+        correct: 2,
+        explanation: "En büyük sayı 44 ise denklem kurulur: $3 \\times \\text{Küçük} - 4 = 44 \\implies 3 \\times \\text{Küçük} = 48 \\implies \\text{Küçük} = 16$. Açıklık büyükten küçüğün çıkarılmasıdır: $44 - 16 = 28$ bulunur."
+      },
+      {
+        id: "m5-2-t7-img-11",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde çevre ve kenar ölçüleri verilen dikdörtgen şeklindeki tablonun sağ alt köşesinden kare şeklinde küçük bir parça kesilerek çıkarılıyor. Kalan şeklin çevre uzunluğunun ilk duruma göre değişimi için hangisi doğrudur?",
+        imageUrl: "/images/grade5/matematik/term2/test7/cevre-kose-kesim2.webp",
+        options: ["Azalır", "Artar", "Değişmez", "Tam olarak yarıya düşer"],
+        correct: 2,
+        explanation: "Geometrik şekillerde tam köşe kısımlardan yapılan kare veya dikdörtgen kesimlerinde çevre uzunluğu değişmez; çünkü eksilen dış kenarların boyu içeride oluşan yeni iç kenarlarla milimetrik olarak eşitlenir."
+      },
+      {
+        id: "m5-2-t7-12",
+        subject: "matematik",
+        term: 2,
+        prompt: "Çevre uzunluğu 72 cm olan bir dikdörtgenin uzun kenarı, kısa kenarının tam 3 katına eşittir. Bu dikdörtgenin kapladığı toplam alan kaç santimetrekaredir?",
+        options: ["108", "144", "243", "486"],
+        correct: 2,
+        explanation: "Kısa kenara k dersek uzun kenar 3k olur. Çevre: $2 \\times (k + 3k) = 8k = 72 \\implies k = 9$ cm (kısa kenar). Uzun kenar: $3 \\times 9 = 27$ cm olur. Alan: $9 \\times 27 = 243\\text{ cm}^2$ olarak hesaplanır."
+      },
+      {
+        id: "m5-2-t7-img-13",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde kareli zemin üzerine çizilmiş ve içi boyanmış çokgensel bölgenin alanı kaç birimkaredir? (Her küçük karenin alanı 1 birimkaredir.)",
+        imageUrl: "/images/grade5/matematik/term2/test7/alan-hesap-izgara2.webp",
+        options: ["18", "21", "25", "30"],
+        correct: 1,
+        explanation: "Karmaşık çokgen şekli kare ve dikdörtgen alan parçalarına bölünüp birim kareleri tek tek sayıldığında toplam alan net olarak 21 birimkare bulunur."
+      },
+      {
+        id: "m5-2-t7-14",
+        subject: "matematik",
+        term: 2,
+        prompt: "Bir kenar uzunluğu 14 cm olan bir karenin alanı, taban uzunluğu 28 cm olan bir paralelkenarın alanına tam olarak eşittir. Buna göre, bu paralelkenarın o tabanına ait yüksekliği kaç santmetredir?",
+        options: ["5", "7", "9", "14"],
+        correct: 1,
+        explanation: "Karenin alanı: $14 \\times 14 = 196\\text{ cm}^2$. Paralelkenarın alanı: $\\text{Taban} \\times \\text{Yükseklik} = 28 \\times h = 196$ olmalıdır. Buradan yükseklik: $196 \\div 28 = 7$ cm bulunur."
+      },
+      {
+        id: "m5-2-t7-img-15",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki büyük süt kovasında bulunan sıvı miktarı Litre cinsinden verilmiştir. Bu kovadaki sütün tamamı 350 mL'lik küçük şişelere doldurulacaktır. Tam 40 şişe tamamen doldurulduğuna göre kovada kaç mililitre süt kalmıştır?",
+        imageUrl: "/images/grade5/matematik/term2/test7/sut-kovasi-sivi.webp",
+        options: ["1000", "2000", "4000", "6000"],
+        correct: 1,
+        explanation: "Kovadaki süt 16 L = 16000 mL'dir. Şişelere doldurulan: $40 \\times 350 = 14000$ mL yapar. Kovada kalan süt miktarı: $16000 - 14000 = 2000$ mL olarak hesaplanır."
+      },
+      {
+        id: "m5-2-t7-16",
+        subject: "matematik",
+        term: 2,
+        prompt: "Sıvı ölçme birimleriyle ilgili bir laboratuvarda yapılan testlerde 4 Litre kimyasal sıvının içerisinden önce 1250 mL, daha sonra ise 1,5 Litre sıvı çekilerek deney tüplerine aktarılıyor. Ana kapta kalan sıvı miktarı kaç mililitredir?",
+        options: ["1250", "1500", "1750", "2250"],
+        correct: 0,
+        explanation: "Başlangıçtaki sıvı 4 L = 4000 mL'dir. Eksilen sıvılar: $1250\\text{ mL} + 1500\\text{ mL} (1,5\\text{ L}) = 2750\\text{ mL}$. Kalan sıvı miktarı: $4000 - 2750 = 1250\\text{ mL}$ olur."
+      },
+      {
+        id: "m5-2-t7-img-17",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görseldeki kol saati ve uçak biletine göre, akşam saat 22:15'te Ankara'dan hareket eden bir şehirler arası otobüs, varış noktasına tam 7 saat 50 dakika sonra ulaşmıştır. Otobüsün ulaştığı anı gösteren dijital saat hangisidir?",
+        imageUrl: "/images/grade5/matematik/term2/test7/zaman-yolculuk-saat.webp",
+        options: ["05:05", "05:45", "06:05", "06:45"],
+        correct: 2,
+        explanation: "22:15'e önce 45 dakika eklenirse saat 23:00 olur (7 saat 5 dakika kalır). 1 saat daha eklenirse 00:00 gece yarısı olur. Kalan 6 saat 5 dakika da eklenince varış saati 06:05 olur."
+      },
+      {
+        id: "m5-2-t7-18",
+        subject: "matematik",
+        term: 2,
+        prompt: "Bir proje ödevine 18 Nisan saat 16:20'de başlayan bir öğrenci, çalışmasını hiç ara vermeden tam 52 saat sonra tamamlayarak sisteme yüklemiştir. Ödevin bittiği tarih ve saat aşağıdakilerden hangisidir?",
+        options: [
+          "20 Nisan - 16:20",
+          "20 Nisan - 20:20",
+          "21 Nisan - 16:20",
+          "21 Nisan - 20:20"
+        ],
+        correct: 1,
+        explanation: "52 saat = 48 saat (2 tam gün) + 4 saattir. 18 Nisan 16:20'ye 2 gün eklenirse 20 Nisan 16:20 olur. Üzerine kalan 4 saat de eklendiğinde bitiş zamanı 20 Nisan saat 20:20'yi gösterir."
+      },
+      {
+        id: "m5-2-t7-img-19",
+        subject: "matematik",
+        term: 2,
+        prompt: "Görselde verilen ABCD yamuksal bölgesinin boyalı iç alanı kaç santimetrekaredir? (Yüksekliği kılavuz çizgilerle verilmiştir.)",
+        imageUrl: "/images/grade5/matematik/term2/test7/yamuk-alan-izgara.webp",
+        options: ["45", "60", "75", "90"],
+        correct: 1,
+        explanation: "Yamuk alanı paralelkenar ve üçgene bölünerek veya formülle hesaplanabilir. Tabanlar ve dik yükseklik ($h=6\\text{ cm}$) çarpım kombinasyonları yapıldığında alan 60 $\\text{cm}^2$ bulunur."
+      },
+      {
+        id: "m5-2-t7-20",
+        subject: "matematik",
+        term: 2,
+        prompt: "Aşağıda verilmiş olan alan ve uzunluk ölçü birimleri arası dönüşümlerden hangisi matematiksel olarak 'hatalıdır'?",
+        options: [
+          "3 metrekare = 30000 santimetrekare",
+          "15 santimetrekare = 1500 milimetrekare",
+          "4500 milimetre = 45 metre",
+          "80000 santimetrekare = 8 metrekare"
+        ],
+        correct: 2,
+        explanation: "Uzunluk birimleri onar onar büyür/küçülür. 1 metre = 1000 milimetredir. Bu yüzden 4500 milimetre 4,5 metre yapmalıdır; 45 metre ifadesi hatalıdır."
+      }
+    ],
   } 
 }; 
