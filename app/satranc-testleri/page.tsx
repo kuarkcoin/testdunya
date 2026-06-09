@@ -7,8 +7,11 @@ import chessTestsData from '../../public/data/satranc-testleri.json';
 const data = chessTestsData as ChessTestsData;
 
 export const metadata: Metadata = {
-  title: 'Satranç Testleri | Testdunya',
+  title: 'Satranç Testleri | TestDünya',
   description: '10 soruluk ve soru başına 3 dakikalık online satranç hamle testleri.',
+  alternates: {
+    canonical: '/satranc-testleri',
+  },
 };
 
 export default function SatrancTestleriPage() {

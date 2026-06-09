@@ -18,8 +18,11 @@ export async function generateMetadata({
   const test = (data.tests ?? []).find((item) => item.id === testId);
 
   return {
-    title: test ? `${test.title} | Testdunya` : 'Satranç Testi Bulunamadı | Testdunya',
+    title: test ? `${test.title} | En İyi Hamleyi Bul | TestDünya` : 'Satranç Testi Bulunamadı | TestDünya',
     description: test?.description ?? 'İstenen satranç testi bulunamadı.',
+    alternates: {
+      canonical: test ? `/satranc-testleri/${test.id}` : '/satranc-testleri',
+    },
   };
 }
 

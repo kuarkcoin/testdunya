@@ -13,6 +13,11 @@ export type ChessQuestion = {
   image?: string;
   options: ChessOption[];
   correctAnswer: string;
+  solutionMoves?: string[];
+  rating?: number;
+  themes?: string[];
+  source?: string;
+  sourceUrl?: string;
   explanation: string;
 };
 

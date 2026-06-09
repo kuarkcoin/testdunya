@@ -1,5 +1,7 @@
 import { MetadataRoute } from 'next';
 import { getGrade5Tests, grade5Subjects } from './data/grade5/seo';
+import type { ChessTestsData } from '../lib/chess/types';
+import chessTestsData from '../public/data/satranc-testleri.json';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://testdunya.net';
@@ -49,5 +51,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...mainRoutes, ...grade5Routes, ...examHubs, ...otherRoutes];
+  const chessData = chessTestsData as ChessTestsData;
+  const chessRoutes = [
+    {
+      url: `${baseUrl}/satranc-testleri`,
+      lastModified: lastMod,
+      changeFrequency: 'weekly' as const,
+      priority: 0.75,
+    },
+    ...(chessData.tests ?? []).map((test) => ({
+      url: `${baseUrl}/satranc-testleri/${test.id}`,
+      lastModified: lastMod,
+      changeFrequency: 'weekly' as const,
+      priority: 0.65,
+    })),
+  ];
+
+  return [...mainRoutes, ...grade5Routes, ...examHubs, ...otherRoutes, ...chessRoutes];
 }
