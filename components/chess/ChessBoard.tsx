@@ -14,7 +14,7 @@ export default function ChessBoard({ fen, image }: ChessBoardProps) {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={image}
-          alt="Satranç pozisyonu"
+          alt="Chess position"
           className="h-auto w-full object-contain"
         />
       </div>

@@ -42,7 +42,7 @@ export default function Timer({ durationSeconds, remainingSeconds, isRunning, on
   return (
     <div className={`rounded-2xl border p-4 shadow-sm ${isDanger ? 'border-rose-300 bg-rose-50 text-rose-700' : 'border-emerald-200 bg-white text-emerald-800'}`}>
       <div className="mb-2 flex items-center justify-between gap-4">
-        <span className="text-sm font-black uppercase tracking-wide">Süre</span>
+        <span className="text-sm font-black uppercase tracking-wide">Time</span>
         <span className={`font-mono text-2xl font-black ${isDanger ? 'animate-pulse' : ''}`}>{formatTime(remainingSeconds)}</span>
       </div>
       <div className="h-2 overflow-hidden rounded-full bg-slate-200">

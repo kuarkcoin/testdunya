@@ -54,13 +54,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const chessData = chessTestsData as ChessTestsData;
   const chessRoutes = [
     {
-      url: `${baseUrl}/satranc-testleri`,
+      url: `${baseUrl}/chess-tests`,
       lastModified: lastMod,
       changeFrequency: 'weekly' as const,
       priority: 0.75,
     },
     ...(chessData.tests ?? []).map((test) => ({
-      url: `${baseUrl}/satranc-testleri/${test.id}`,
+      url: `${baseUrl}/chess-tests/${test.id}`,
       lastModified: lastMod,
       changeFrequency: 'weekly' as const,
       priority: 0.65,
