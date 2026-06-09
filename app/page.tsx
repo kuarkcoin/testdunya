@@ -432,6 +432,29 @@ export default function HomePage() {
 
 {/* --- GAME MODES --- */}
 <section className="grid grid-cols-1 gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-5">
+  {/* Satranç Testleri */}
+  <Link
+    href="/satranc-testleri"
+    className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-700 to-lime-600 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl sm:col-span-2"
+  >
+    <div className="absolute -top-8 -right-8 h-32 w-32 rounded-full bg-white/10 blur-2xl transition-all group-hover:bg-white/20"></div>
+    <div className="absolute -bottom-10 left-8 h-28 w-28 rounded-full bg-amber-300/20 blur-2xl"></div>
+    <div className="relative z-10 flex h-full flex-col justify-between">
+      <div>
+        <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-emerald-100 backdrop-blur-sm">
+          ♔ Yeni Eğitim Alanı
+        </div>
+        <h3 className="mb-2 text-2xl font-black tracking-tight">Satranç Testleri</h3>
+        <p className="text-sm text-emerald-50 opacity-90">10 test • soru başına 3 dakika • FEN destekli tahta</p>
+      </div>
+      <div className="mt-6 flex items-center gap-3">
+        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-emerald-700 shadow-lg transition-transform group-hover:scale-110">
+          ♟
+        </div>
+        <span className="text-sm font-bold">Testleri Aç →</span>
+      </div>
+    </div>
+  </Link>
   {/* Brain Puzzles */}
   <Link
     href="/zeka-bulmacalari"

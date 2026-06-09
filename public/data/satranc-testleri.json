@@ -1,0 +1,2784 @@
+{
+  "tests": [
+    {
+      "id": "test-1",
+      "title": "Satranç Testi 1",
+      "description": "10 soruluk satranç hamle testi",
+      "questionTimeSeconds": 180,
+      "questions": [
+        {
+          "id": 1,
+          "question": "Beyaz hangi hamleyle taktik baskı kurmalıdır?",
+          "sideToMove": "white",
+          "fen": "r2qkb1r/pp1n1pp1/2n1p1p1/3p4/3P2P1/2N1P2P/PP3PB1/R1BQK2R w KQkq - 0 1",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♗xd7+"
+            },
+            {
+              "id": "B",
+              "text": "♘b5"
+            },
+            {
+              "id": "C",
+              "text": "♕f3"
+            },
+            {
+              "id": "D",
+              "text": "O-O"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Beyaz gelişim üstünlüğünü kullanarak filiyle d7 karesinden şahı rahatsız eder."
+        },
+        {
+          "id": 2,
+          "question": "Beyaz gelişimini sürdürmek için en doğal hamle hangisidir?",
+          "sideToMove": "white",
+          "fen": "r1bqk2r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♘c3"
+            },
+            {
+              "id": "B",
+              "text": "♗xf7+"
+            },
+            {
+              "id": "C",
+              "text": "♙h3"
+            },
+            {
+              "id": "D",
+              "text": "♕e2"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Merkez kontrolünü artıran ♘c3 hamlesi taş gelişimini tamamlamaya yardım eder."
+        },
+        {
+          "id": 3,
+          "question": "Beyaz hangi hamleyle şah güvenliğini sağlamalıdır?",
+          "sideToMove": "white",
+          "fen": "rnbq1rk1/ppp2ppp/3bpn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQK2R w KQ - 2 6",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "O-O"
+            },
+            {
+              "id": "B",
+              "text": "♕e2"
+            },
+            {
+              "id": "C",
+              "text": "♙h4"
+            },
+            {
+              "id": "D",
+              "text": "♔e2"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Rok, şahı güvene alırken kaleyi de oyuna yaklaştırır."
+        },
+        {
+          "id": 4,
+          "question": "Beyaz hangi hamleyle merkezi desteklemelidir?",
+          "sideToMove": "white",
+          "fen": "2r2rk1/pp2bppp/2n1pn2/q2p4/3P4/2P1PN2/PBQN1PPP/R3KB1R w KQ - 0 10",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "O-O-O"
+            },
+            {
+              "id": "B",
+              "text": "♗d3"
+            },
+            {
+              "id": "C",
+              "text": "♙c4"
+            },
+            {
+              "id": "D",
+              "text": "♕b3"
+            }
+          ],
+          "correctAnswer": "C",
+          "explanation": "c4 sürüşü d5 merkezine baskı kurar ve alan kazanır."
+        },
+        {
+          "id": 5,
+          "question": "Siyah gelişim temposunu nasıl korumalıdır?",
+          "sideToMove": "black",
+          "fen": "r3k2r/pppq1ppp/2npbn2/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 4 8",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♗e7"
+            },
+            {
+              "id": "B",
+              "text": "♘d4"
+            },
+            {
+              "id": "C",
+              "text": "O-O"
+            },
+            {
+              "id": "D",
+              "text": "♙h6"
+            }
+          ],
+          "correctAnswer": "C",
+          "explanation": "Siyah rok atarak şahını güvene alır ve oyunu sade bir plana bağlar."
+        },
+        {
+          "id": 6,
+          "question": "Siyah merkeze en iyi nasıl karşılık verir?",
+          "sideToMove": "black",
+          "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♘c6"
+            },
+            {
+              "id": "B",
+              "text": "♙d6"
+            },
+            {
+              "id": "C",
+              "text": "♕f6"
+            },
+            {
+              "id": "D",
+              "text": "♗c5"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "♘c6 hem gelişim hamlesidir hem de e5 piyonunu destekler."
+        },
+        {
+          "id": 7,
+          "question": "Beyaz hangi sakin hamleyle taşlarını tamamlar?",
+          "sideToMove": "white",
+          "fen": "r1bq1rk1/ppp2ppp/2nbpn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQ1RK1 w - - 4 7",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♕e2"
+            },
+            {
+              "id": "B",
+              "text": "O-O"
+            },
+            {
+              "id": "C",
+              "text": "♘b5"
+            },
+            {
+              "id": "D",
+              "text": "♙g4"
+            }
+          ],
+          "correctAnswer": "B",
+          "explanation": "Kısa rok, konumu güvenli hâle getirir ve plan kurmayı kolaylaştırır."
+        },
+        {
+          "id": 8,
+          "question": "Siyah vezir baskısını hangi hamleyle artırabilir?",
+          "sideToMove": "black",
+          "fen": "2kr3r/ppp2ppp/2n1bn2/3q4/3P4/2P1PN2/PBQN1PPP/R3KB1R b KQ - 2 11",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♕g5"
+            },
+            {
+              "id": "B",
+              "text": "♕d7"
+            },
+            {
+              "id": "C",
+              "text": "♕a5"
+            },
+            {
+              "id": "D",
+              "text": "♘e4"
+            }
+          ],
+          "correctAnswer": "C",
+          "explanation": "Vezirin a5 karesine gelişi şah kanadı ve merkez üzerinde ek baskı oluşturur."
+        },
+        {
+          "id": 9,
+          "question": "Beyaz hangi hamleyle merkezi kırmayı hedeflemelidir?",
+          "sideToMove": "white",
+          "fen": "r2q1rk1/ppp1bppp/2n1pn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQ1RK1 w - - 0 8",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♙e4"
+            },
+            {
+              "id": "B",
+              "text": "♘e5"
+            },
+            {
+              "id": "C",
+              "text": "♙h3"
+            },
+            {
+              "id": "D",
+              "text": "♗b5"
+            }
+          ],
+          "correctAnswer": "B",
+          "explanation": "♘e5 aktif bir merkez karesi kullanır ve siyahın koordinasyonunu zorlar."
+        },
+        {
+          "id": 10,
+          "question": "Siyah hangi gelişim hamlesiyle konumunu tamamlar?",
+          "sideToMove": "black",
+          "fen": "rnbqk2r/ppp2ppp/3bpn2/3p4/2BP4/2N1PN2/PPP2PPP/R1BQK2R b KQkq - 3 5",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "O-O"
+            },
+            {
+              "id": "B",
+              "text": "♘g4"
+            },
+            {
+              "id": "C",
+              "text": "♙c6"
+            },
+            {
+              "id": "D",
+              "text": "♕e7"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Siyah rok atarak şah güvenliğini sağlar ve kaleyi merkeze yaklaştırır."
+        }
+      ]
+    },
+    {
+      "id": "test-2",
+      "title": "Satranç Testi 2",
+      "description": "10 soruluk satranç hamle testi",
+      "questionTimeSeconds": 180,
+      "questions": [
+        {
+          "id": 1,
+          "question": "Beyaz hangi hamleyle taktik baskı kurmalıdır?",
+          "sideToMove": "white",
+          "fen": "r1bqk2r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♗xd7+"
+            },
+            {
+              "id": "B",
+              "text": "♘b5"
+            },
+            {
+              "id": "C",
+              "text": "♕f3"
+            },
+            {
+              "id": "D",
+              "text": "O-O"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Beyaz gelişim üstünlüğünü kullanarak filiyle d7 karesinden şahı rahatsız eder."
+        },
+        {
+          "id": 2,
+          "question": "Beyaz gelişimini sürdürmek için en doğal hamle hangisidir?",
+          "sideToMove": "white",
+          "fen": "rnbq1rk1/ppp2ppp/3bpn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQK2R w KQ - 2 6",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♘c3"
+            },
+            {
+              "id": "B",
+              "text": "♗xf7+"
+            },
+            {
+              "id": "C",
+              "text": "♙h3"
+            },
+            {
+              "id": "D",
+              "text": "♕e2"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Merkez kontrolünü artıran ♘c3 hamlesi taş gelişimini tamamlamaya yardım eder."
+        },
+        {
+          "id": 3,
+          "question": "Beyaz hangi hamleyle şah güvenliğini sağlamalıdır?",
+          "sideToMove": "white",
+          "fen": "2r2rk1/pp2bppp/2n1pn2/q2p4/3P4/2P1PN2/PBQN1PPP/R3KB1R w KQ - 0 10",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "O-O"
+            },
+            {
+              "id": "B",
+              "text": "♕e2"
+            },
+            {
+              "id": "C",
+              "text": "♙h4"
+            },
+            {
+              "id": "D",
+              "text": "♔e2"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Rok, şahı güvene alırken kaleyi de oyuna yaklaştırır."
+        },
+        {
+          "id": 4,
+          "question": "Beyaz hangi hamleyle merkezi desteklemelidir?",
+          "sideToMove": "white",
+          "fen": "r3k2r/pppq1ppp/2npbn2/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 4 8",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "O-O-O"
+            },
+            {
+              "id": "B",
+              "text": "♗d3"
+            },
+            {
+              "id": "C",
+              "text": "♙c4"
+            },
+            {
+              "id": "D",
+              "text": "♕b3"
+            }
+          ],
+          "correctAnswer": "C",
+          "explanation": "c4 sürüşü d5 merkezine baskı kurar ve alan kazanır."
+        },
+        {
+          "id": 5,
+          "question": "Siyah gelişim temposunu nasıl korumalıdır?",
+          "sideToMove": "black",
+          "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♗e7"
+            },
+            {
+              "id": "B",
+              "text": "♘d4"
+            },
+            {
+              "id": "C",
+              "text": "O-O"
+            },
+            {
+              "id": "D",
+              "text": "♙h6"
+            }
+          ],
+          "correctAnswer": "C",
+          "explanation": "Siyah rok atarak şahını güvene alır ve oyunu sade bir plana bağlar."
+        },
+        {
+          "id": 6,
+          "question": "Siyah merkeze en iyi nasıl karşılık verir?",
+          "sideToMove": "black",
+          "fen": "r1bq1rk1/ppp2ppp/2nbpn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQ1RK1 w - - 4 7",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♘c6"
+            },
+            {
+              "id": "B",
+              "text": "♙d6"
+            },
+            {
+              "id": "C",
+              "text": "♕f6"
+            },
+            {
+              "id": "D",
+              "text": "♗c5"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "♘c6 hem gelişim hamlesidir hem de e5 piyonunu destekler."
+        },
+        {
+          "id": 7,
+          "question": "Beyaz hangi sakin hamleyle taşlarını tamamlar?",
+          "sideToMove": "white",
+          "fen": "2kr3r/ppp2ppp/2n1bn2/3q4/3P4/2P1PN2/PBQN1PPP/R3KB1R b KQ - 2 11",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♕e2"
+            },
+            {
+              "id": "B",
+              "text": "O-O"
+            },
+            {
+              "id": "C",
+              "text": "♘b5"
+            },
+            {
+              "id": "D",
+              "text": "♙g4"
+            }
+          ],
+          "correctAnswer": "B",
+          "explanation": "Kısa rok, konumu güvenli hâle getirir ve plan kurmayı kolaylaştırır."
+        },
+        {
+          "id": 8,
+          "question": "Siyah vezir baskısını hangi hamleyle artırabilir?",
+          "sideToMove": "black",
+          "fen": "r2q1rk1/ppp1bppp/2n1pn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQ1RK1 w - - 0 8",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♕g5"
+            },
+            {
+              "id": "B",
+              "text": "♕d7"
+            },
+            {
+              "id": "C",
+              "text": "♕a5"
+            },
+            {
+              "id": "D",
+              "text": "♘e4"
+            }
+          ],
+          "correctAnswer": "C",
+          "explanation": "Vezirin a5 karesine gelişi şah kanadı ve merkez üzerinde ek baskı oluşturur."
+        },
+        {
+          "id": 9,
+          "question": "Beyaz hangi hamleyle merkezi kırmayı hedeflemelidir?",
+          "sideToMove": "white",
+          "fen": "rnbqk2r/ppp2ppp/3bpn2/3p4/2BP4/2N1PN2/PPP2PPP/R1BQK2R b KQkq - 3 5",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♙e4"
+            },
+            {
+              "id": "B",
+              "text": "♘e5"
+            },
+            {
+              "id": "C",
+              "text": "♙h3"
+            },
+            {
+              "id": "D",
+              "text": "♗b5"
+            }
+          ],
+          "correctAnswer": "B",
+          "explanation": "♘e5 aktif bir merkez karesi kullanır ve siyahın koordinasyonunu zorlar."
+        },
+        {
+          "id": 10,
+          "question": "Siyah hangi gelişim hamlesiyle konumunu tamamlar?",
+          "sideToMove": "black",
+          "fen": "r2qkb1r/pp1n1pp1/2n1p1p1/3p4/3P2P1/2N1P2P/PP3PB1/R1BQK2R w KQkq - 0 1",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "O-O"
+            },
+            {
+              "id": "B",
+              "text": "♘g4"
+            },
+            {
+              "id": "C",
+              "text": "♙c6"
+            },
+            {
+              "id": "D",
+              "text": "♕e7"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Siyah rok atarak şah güvenliğini sağlar ve kaleyi merkeze yaklaştırır."
+        }
+      ]
+    },
+    {
+      "id": "test-3",
+      "title": "Satranç Testi 3",
+      "description": "10 soruluk satranç hamle testi",
+      "questionTimeSeconds": 180,
+      "questions": [
+        {
+          "id": 1,
+          "question": "Beyaz hangi hamleyle taktik baskı kurmalıdır?",
+          "sideToMove": "white",
+          "fen": "rnbq1rk1/ppp2ppp/3bpn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQK2R w KQ - 2 6",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♗xd7+"
+            },
+            {
+              "id": "B",
+              "text": "♘b5"
+            },
+            {
+              "id": "C",
+              "text": "♕f3"
+            },
+            {
+              "id": "D",
+              "text": "O-O"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Beyaz gelişim üstünlüğünü kullanarak filiyle d7 karesinden şahı rahatsız eder."
+        },
+        {
+          "id": 2,
+          "question": "Beyaz gelişimini sürdürmek için en doğal hamle hangisidir?",
+          "sideToMove": "white",
+          "fen": "2r2rk1/pp2bppp/2n1pn2/q2p4/3P4/2P1PN2/PBQN1PPP/R3KB1R w KQ - 0 10",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♘c3"
+            },
+            {
+              "id": "B",
+              "text": "♗xf7+"
+            },
+            {
+              "id": "C",
+              "text": "♙h3"
+            },
+            {
+              "id": "D",
+              "text": "♕e2"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Merkez kontrolünü artıran ♘c3 hamlesi taş gelişimini tamamlamaya yardım eder."
+        },
+        {
+          "id": 3,
+          "question": "Beyaz hangi hamleyle şah güvenliğini sağlamalıdır?",
+          "sideToMove": "white",
+          "fen": "r3k2r/pppq1ppp/2npbn2/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 4 8",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "O-O"
+            },
+            {
+              "id": "B",
+              "text": "♕e2"
+            },
+            {
+              "id": "C",
+              "text": "♙h4"
+            },
+            {
+              "id": "D",
+              "text": "♔e2"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Rok, şahı güvene alırken kaleyi de oyuna yaklaştırır."
+        },
+        {
+          "id": 4,
+          "question": "Beyaz hangi hamleyle merkezi desteklemelidir?",
+          "sideToMove": "white",
+          "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "O-O-O"
+            },
+            {
+              "id": "B",
+              "text": "♗d3"
+            },
+            {
+              "id": "C",
+              "text": "♙c4"
+            },
+            {
+              "id": "D",
+              "text": "♕b3"
+            }
+          ],
+          "correctAnswer": "C",
+          "explanation": "c4 sürüşü d5 merkezine baskı kurar ve alan kazanır."
+        },
+        {
+          "id": 5,
+          "question": "Siyah gelişim temposunu nasıl korumalıdır?",
+          "sideToMove": "black",
+          "fen": "r1bq1rk1/ppp2ppp/2nbpn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQ1RK1 w - - 4 7",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♗e7"
+            },
+            {
+              "id": "B",
+              "text": "♘d4"
+            },
+            {
+              "id": "C",
+              "text": "O-O"
+            },
+            {
+              "id": "D",
+              "text": "♙h6"
+            }
+          ],
+          "correctAnswer": "C",
+          "explanation": "Siyah rok atarak şahını güvene alır ve oyunu sade bir plana bağlar."
+        },
+        {
+          "id": 6,
+          "question": "Siyah merkeze en iyi nasıl karşılık verir?",
+          "sideToMove": "black",
+          "fen": "2kr3r/ppp2ppp/2n1bn2/3q4/3P4/2P1PN2/PBQN1PPP/R3KB1R b KQ - 2 11",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♘c6"
+            },
+            {
+              "id": "B",
+              "text": "♙d6"
+            },
+            {
+              "id": "C",
+              "text": "♕f6"
+            },
+            {
+              "id": "D",
+              "text": "♗c5"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "♘c6 hem gelişim hamlesidir hem de e5 piyonunu destekler."
+        },
+        {
+          "id": 7,
+          "question": "Beyaz hangi sakin hamleyle taşlarını tamamlar?",
+          "sideToMove": "white",
+          "fen": "r2q1rk1/ppp1bppp/2n1pn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQ1RK1 w - - 0 8",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♕e2"
+            },
+            {
+              "id": "B",
+              "text": "O-O"
+            },
+            {
+              "id": "C",
+              "text": "♘b5"
+            },
+            {
+              "id": "D",
+              "text": "♙g4"
+            }
+          ],
+          "correctAnswer": "B",
+          "explanation": "Kısa rok, konumu güvenli hâle getirir ve plan kurmayı kolaylaştırır."
+        },
+        {
+          "id": 8,
+          "question": "Siyah vezir baskısını hangi hamleyle artırabilir?",
+          "sideToMove": "black",
+          "fen": "rnbqk2r/ppp2ppp/3bpn2/3p4/2BP4/2N1PN2/PPP2PPP/R1BQK2R b KQkq - 3 5",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♕g5"
+            },
+            {
+              "id": "B",
+              "text": "♕d7"
+            },
+            {
+              "id": "C",
+              "text": "♕a5"
+            },
+            {
+              "id": "D",
+              "text": "♘e4"
+            }
+          ],
+          "correctAnswer": "C",
+          "explanation": "Vezirin a5 karesine gelişi şah kanadı ve merkez üzerinde ek baskı oluşturur."
+        },
+        {
+          "id": 9,
+          "question": "Beyaz hangi hamleyle merkezi kırmayı hedeflemelidir?",
+          "sideToMove": "white",
+          "fen": "r2qkb1r/pp1n1pp1/2n1p1p1/3p4/3P2P1/2N1P2P/PP3PB1/R1BQK2R w KQkq - 0 1",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♙e4"
+            },
+            {
+              "id": "B",
+              "text": "♘e5"
+            },
+            {
+              "id": "C",
+              "text": "♙h3"
+            },
+            {
+              "id": "D",
+              "text": "♗b5"
+            }
+          ],
+          "correctAnswer": "B",
+          "explanation": "♘e5 aktif bir merkez karesi kullanır ve siyahın koordinasyonunu zorlar."
+        },
+        {
+          "id": 10,
+          "question": "Siyah hangi gelişim hamlesiyle konumunu tamamlar?",
+          "sideToMove": "black",
+          "fen": "r1bqk2r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "O-O"
+            },
+            {
+              "id": "B",
+              "text": "♘g4"
+            },
+            {
+              "id": "C",
+              "text": "♙c6"
+            },
+            {
+              "id": "D",
+              "text": "♕e7"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Siyah rok atarak şah güvenliğini sağlar ve kaleyi merkeze yaklaştırır."
+        }
+      ]
+    },
+    {
+      "id": "test-4",
+      "title": "Satranç Testi 4",
+      "description": "10 soruluk satranç hamle testi",
+      "questionTimeSeconds": 180,
+      "questions": [
+        {
+          "id": 1,
+          "question": "Beyaz hangi hamleyle taktik baskı kurmalıdır?",
+          "sideToMove": "white",
+          "fen": "2r2rk1/pp2bppp/2n1pn2/q2p4/3P4/2P1PN2/PBQN1PPP/R3KB1R w KQ - 0 10",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♗xd7+"
+            },
+            {
+              "id": "B",
+              "text": "♘b5"
+            },
+            {
+              "id": "C",
+              "text": "♕f3"
+            },
+            {
+              "id": "D",
+              "text": "O-O"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Beyaz gelişim üstünlüğünü kullanarak filiyle d7 karesinden şahı rahatsız eder."
+        },
+        {
+          "id": 2,
+          "question": "Beyaz gelişimini sürdürmek için en doğal hamle hangisidir?",
+          "sideToMove": "white",
+          "fen": "r3k2r/pppq1ppp/2npbn2/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 4 8",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♘c3"
+            },
+            {
+              "id": "B",
+              "text": "♗xf7+"
+            },
+            {
+              "id": "C",
+              "text": "♙h3"
+            },
+            {
+              "id": "D",
+              "text": "♕e2"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Merkez kontrolünü artıran ♘c3 hamlesi taş gelişimini tamamlamaya yardım eder."
+        },
+        {
+          "id": 3,
+          "question": "Beyaz hangi hamleyle şah güvenliğini sağlamalıdır?",
+          "sideToMove": "white",
+          "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "O-O"
+            },
+            {
+              "id": "B",
+              "text": "♕e2"
+            },
+            {
+              "id": "C",
+              "text": "♙h4"
+            },
+            {
+              "id": "D",
+              "text": "♔e2"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Rok, şahı güvene alırken kaleyi de oyuna yaklaştırır."
+        },
+        {
+          "id": 4,
+          "question": "Beyaz hangi hamleyle merkezi desteklemelidir?",
+          "sideToMove": "white",
+          "fen": "r1bq1rk1/ppp2ppp/2nbpn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQ1RK1 w - - 4 7",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "O-O-O"
+            },
+            {
+              "id": "B",
+              "text": "♗d3"
+            },
+            {
+              "id": "C",
+              "text": "♙c4"
+            },
+            {
+              "id": "D",
+              "text": "♕b3"
+            }
+          ],
+          "correctAnswer": "C",
+          "explanation": "c4 sürüşü d5 merkezine baskı kurar ve alan kazanır."
+        },
+        {
+          "id": 5,
+          "question": "Siyah gelişim temposunu nasıl korumalıdır?",
+          "sideToMove": "black",
+          "fen": "2kr3r/ppp2ppp/2n1bn2/3q4/3P4/2P1PN2/PBQN1PPP/R3KB1R b KQ - 2 11",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♗e7"
+            },
+            {
+              "id": "B",
+              "text": "♘d4"
+            },
+            {
+              "id": "C",
+              "text": "O-O"
+            },
+            {
+              "id": "D",
+              "text": "♙h6"
+            }
+          ],
+          "correctAnswer": "C",
+          "explanation": "Siyah rok atarak şahını güvene alır ve oyunu sade bir plana bağlar."
+        },
+        {
+          "id": 6,
+          "question": "Siyah merkeze en iyi nasıl karşılık verir?",
+          "sideToMove": "black",
+          "fen": "r2q1rk1/ppp1bppp/2n1pn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQ1RK1 w - - 0 8",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♘c6"
+            },
+            {
+              "id": "B",
+              "text": "♙d6"
+            },
+            {
+              "id": "C",
+              "text": "♕f6"
+            },
+            {
+              "id": "D",
+              "text": "♗c5"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "♘c6 hem gelişim hamlesidir hem de e5 piyonunu destekler."
+        },
+        {
+          "id": 7,
+          "question": "Beyaz hangi sakin hamleyle taşlarını tamamlar?",
+          "sideToMove": "white",
+          "fen": "rnbqk2r/ppp2ppp/3bpn2/3p4/2BP4/2N1PN2/PPP2PPP/R1BQK2R b KQkq - 3 5",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♕e2"
+            },
+            {
+              "id": "B",
+              "text": "O-O"
+            },
+            {
+              "id": "C",
+              "text": "♘b5"
+            },
+            {
+              "id": "D",
+              "text": "♙g4"
+            }
+          ],
+          "correctAnswer": "B",
+          "explanation": "Kısa rok, konumu güvenli hâle getirir ve plan kurmayı kolaylaştırır."
+        },
+        {
+          "id": 8,
+          "question": "Siyah vezir baskısını hangi hamleyle artırabilir?",
+          "sideToMove": "black",
+          "fen": "r2qkb1r/pp1n1pp1/2n1p1p1/3p4/3P2P1/2N1P2P/PP3PB1/R1BQK2R w KQkq - 0 1",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♕g5"
+            },
+            {
+              "id": "B",
+              "text": "♕d7"
+            },
+            {
+              "id": "C",
+              "text": "♕a5"
+            },
+            {
+              "id": "D",
+              "text": "♘e4"
+            }
+          ],
+          "correctAnswer": "C",
+          "explanation": "Vezirin a5 karesine gelişi şah kanadı ve merkez üzerinde ek baskı oluşturur."
+        },
+        {
+          "id": 9,
+          "question": "Beyaz hangi hamleyle merkezi kırmayı hedeflemelidir?",
+          "sideToMove": "white",
+          "fen": "r1bqk2r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♙e4"
+            },
+            {
+              "id": "B",
+              "text": "♘e5"
+            },
+            {
+              "id": "C",
+              "text": "♙h3"
+            },
+            {
+              "id": "D",
+              "text": "♗b5"
+            }
+          ],
+          "correctAnswer": "B",
+          "explanation": "♘e5 aktif bir merkez karesi kullanır ve siyahın koordinasyonunu zorlar."
+        },
+        {
+          "id": 10,
+          "question": "Siyah hangi gelişim hamlesiyle konumunu tamamlar?",
+          "sideToMove": "black",
+          "fen": "rnbq1rk1/ppp2ppp/3bpn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQK2R w KQ - 2 6",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "O-O"
+            },
+            {
+              "id": "B",
+              "text": "♘g4"
+            },
+            {
+              "id": "C",
+              "text": "♙c6"
+            },
+            {
+              "id": "D",
+              "text": "♕e7"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Siyah rok atarak şah güvenliğini sağlar ve kaleyi merkeze yaklaştırır."
+        }
+      ]
+    },
+    {
+      "id": "test-5",
+      "title": "Satranç Testi 5",
+      "description": "10 soruluk satranç hamle testi",
+      "questionTimeSeconds": 180,
+      "questions": [
+        {
+          "id": 1,
+          "question": "Beyaz hangi hamleyle taktik baskı kurmalıdır?",
+          "sideToMove": "white",
+          "fen": "r3k2r/pppq1ppp/2npbn2/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 4 8",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♗xd7+"
+            },
+            {
+              "id": "B",
+              "text": "♘b5"
+            },
+            {
+              "id": "C",
+              "text": "♕f3"
+            },
+            {
+              "id": "D",
+              "text": "O-O"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Beyaz gelişim üstünlüğünü kullanarak filiyle d7 karesinden şahı rahatsız eder."
+        },
+        {
+          "id": 2,
+          "question": "Beyaz gelişimini sürdürmek için en doğal hamle hangisidir?",
+          "sideToMove": "white",
+          "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♘c3"
+            },
+            {
+              "id": "B",
+              "text": "♗xf7+"
+            },
+            {
+              "id": "C",
+              "text": "♙h3"
+            },
+            {
+              "id": "D",
+              "text": "♕e2"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Merkez kontrolünü artıran ♘c3 hamlesi taş gelişimini tamamlamaya yardım eder."
+        },
+        {
+          "id": 3,
+          "question": "Beyaz hangi hamleyle şah güvenliğini sağlamalıdır?",
+          "sideToMove": "white",
+          "fen": "r1bq1rk1/ppp2ppp/2nbpn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQ1RK1 w - - 4 7",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "O-O"
+            },
+            {
+              "id": "B",
+              "text": "♕e2"
+            },
+            {
+              "id": "C",
+              "text": "♙h4"
+            },
+            {
+              "id": "D",
+              "text": "♔e2"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Rok, şahı güvene alırken kaleyi de oyuna yaklaştırır."
+        },
+        {
+          "id": 4,
+          "question": "Beyaz hangi hamleyle merkezi desteklemelidir?",
+          "sideToMove": "white",
+          "fen": "2kr3r/ppp2ppp/2n1bn2/3q4/3P4/2P1PN2/PBQN1PPP/R3KB1R b KQ - 2 11",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "O-O-O"
+            },
+            {
+              "id": "B",
+              "text": "♗d3"
+            },
+            {
+              "id": "C",
+              "text": "♙c4"
+            },
+            {
+              "id": "D",
+              "text": "♕b3"
+            }
+          ],
+          "correctAnswer": "C",
+          "explanation": "c4 sürüşü d5 merkezine baskı kurar ve alan kazanır."
+        },
+        {
+          "id": 5,
+          "question": "Siyah gelişim temposunu nasıl korumalıdır?",
+          "sideToMove": "black",
+          "fen": "r2q1rk1/ppp1bppp/2n1pn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQ1RK1 w - - 0 8",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♗e7"
+            },
+            {
+              "id": "B",
+              "text": "♘d4"
+            },
+            {
+              "id": "C",
+              "text": "O-O"
+            },
+            {
+              "id": "D",
+              "text": "♙h6"
+            }
+          ],
+          "correctAnswer": "C",
+          "explanation": "Siyah rok atarak şahını güvene alır ve oyunu sade bir plana bağlar."
+        },
+        {
+          "id": 6,
+          "question": "Siyah merkeze en iyi nasıl karşılık verir?",
+          "sideToMove": "black",
+          "fen": "rnbqk2r/ppp2ppp/3bpn2/3p4/2BP4/2N1PN2/PPP2PPP/R1BQK2R b KQkq - 3 5",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♘c6"
+            },
+            {
+              "id": "B",
+              "text": "♙d6"
+            },
+            {
+              "id": "C",
+              "text": "♕f6"
+            },
+            {
+              "id": "D",
+              "text": "♗c5"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "♘c6 hem gelişim hamlesidir hem de e5 piyonunu destekler."
+        },
+        {
+          "id": 7,
+          "question": "Beyaz hangi sakin hamleyle taşlarını tamamlar?",
+          "sideToMove": "white",
+          "fen": "r2qkb1r/pp1n1pp1/2n1p1p1/3p4/3P2P1/2N1P2P/PP3PB1/R1BQK2R w KQkq - 0 1",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♕e2"
+            },
+            {
+              "id": "B",
+              "text": "O-O"
+            },
+            {
+              "id": "C",
+              "text": "♘b5"
+            },
+            {
+              "id": "D",
+              "text": "♙g4"
+            }
+          ],
+          "correctAnswer": "B",
+          "explanation": "Kısa rok, konumu güvenli hâle getirir ve plan kurmayı kolaylaştırır."
+        },
+        {
+          "id": 8,
+          "question": "Siyah vezir baskısını hangi hamleyle artırabilir?",
+          "sideToMove": "black",
+          "fen": "r1bqk2r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♕g5"
+            },
+            {
+              "id": "B",
+              "text": "♕d7"
+            },
+            {
+              "id": "C",
+              "text": "♕a5"
+            },
+            {
+              "id": "D",
+              "text": "♘e4"
+            }
+          ],
+          "correctAnswer": "C",
+          "explanation": "Vezirin a5 karesine gelişi şah kanadı ve merkez üzerinde ek baskı oluşturur."
+        },
+        {
+          "id": 9,
+          "question": "Beyaz hangi hamleyle merkezi kırmayı hedeflemelidir?",
+          "sideToMove": "white",
+          "fen": "rnbq1rk1/ppp2ppp/3bpn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQK2R w KQ - 2 6",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♙e4"
+            },
+            {
+              "id": "B",
+              "text": "♘e5"
+            },
+            {
+              "id": "C",
+              "text": "♙h3"
+            },
+            {
+              "id": "D",
+              "text": "♗b5"
+            }
+          ],
+          "correctAnswer": "B",
+          "explanation": "♘e5 aktif bir merkez karesi kullanır ve siyahın koordinasyonunu zorlar."
+        },
+        {
+          "id": 10,
+          "question": "Siyah hangi gelişim hamlesiyle konumunu tamamlar?",
+          "sideToMove": "black",
+          "fen": "2r2rk1/pp2bppp/2n1pn2/q2p4/3P4/2P1PN2/PBQN1PPP/R3KB1R w KQ - 0 10",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "O-O"
+            },
+            {
+              "id": "B",
+              "text": "♘g4"
+            },
+            {
+              "id": "C",
+              "text": "♙c6"
+            },
+            {
+              "id": "D",
+              "text": "♕e7"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Siyah rok atarak şah güvenliğini sağlar ve kaleyi merkeze yaklaştırır."
+        }
+      ]
+    },
+    {
+      "id": "test-6",
+      "title": "Satranç Testi 6",
+      "description": "10 soruluk satranç hamle testi",
+      "questionTimeSeconds": 180,
+      "questions": [
+        {
+          "id": 1,
+          "question": "Beyaz hangi hamleyle taktik baskı kurmalıdır?",
+          "sideToMove": "white",
+          "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♗xd7+"
+            },
+            {
+              "id": "B",
+              "text": "♘b5"
+            },
+            {
+              "id": "C",
+              "text": "♕f3"
+            },
+            {
+              "id": "D",
+              "text": "O-O"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Beyaz gelişim üstünlüğünü kullanarak filiyle d7 karesinden şahı rahatsız eder."
+        },
+        {
+          "id": 2,
+          "question": "Beyaz gelişimini sürdürmek için en doğal hamle hangisidir?",
+          "sideToMove": "white",
+          "fen": "r1bq1rk1/ppp2ppp/2nbpn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQ1RK1 w - - 4 7",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♘c3"
+            },
+            {
+              "id": "B",
+              "text": "♗xf7+"
+            },
+            {
+              "id": "C",
+              "text": "♙h3"
+            },
+            {
+              "id": "D",
+              "text": "♕e2"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Merkez kontrolünü artıran ♘c3 hamlesi taş gelişimini tamamlamaya yardım eder."
+        },
+        {
+          "id": 3,
+          "question": "Beyaz hangi hamleyle şah güvenliğini sağlamalıdır?",
+          "sideToMove": "white",
+          "fen": "2kr3r/ppp2ppp/2n1bn2/3q4/3P4/2P1PN2/PBQN1PPP/R3KB1R b KQ - 2 11",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "O-O"
+            },
+            {
+              "id": "B",
+              "text": "♕e2"
+            },
+            {
+              "id": "C",
+              "text": "♙h4"
+            },
+            {
+              "id": "D",
+              "text": "♔e2"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Rok, şahı güvene alırken kaleyi de oyuna yaklaştırır."
+        },
+        {
+          "id": 4,
+          "question": "Beyaz hangi hamleyle merkezi desteklemelidir?",
+          "sideToMove": "white",
+          "fen": "r2q1rk1/ppp1bppp/2n1pn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQ1RK1 w - - 0 8",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "O-O-O"
+            },
+            {
+              "id": "B",
+              "text": "♗d3"
+            },
+            {
+              "id": "C",
+              "text": "♙c4"
+            },
+            {
+              "id": "D",
+              "text": "♕b3"
+            }
+          ],
+          "correctAnswer": "C",
+          "explanation": "c4 sürüşü d5 merkezine baskı kurar ve alan kazanır."
+        },
+        {
+          "id": 5,
+          "question": "Siyah gelişim temposunu nasıl korumalıdır?",
+          "sideToMove": "black",
+          "fen": "rnbqk2r/ppp2ppp/3bpn2/3p4/2BP4/2N1PN2/PPP2PPP/R1BQK2R b KQkq - 3 5",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♗e7"
+            },
+            {
+              "id": "B",
+              "text": "♘d4"
+            },
+            {
+              "id": "C",
+              "text": "O-O"
+            },
+            {
+              "id": "D",
+              "text": "♙h6"
+            }
+          ],
+          "correctAnswer": "C",
+          "explanation": "Siyah rok atarak şahını güvene alır ve oyunu sade bir plana bağlar."
+        },
+        {
+          "id": 6,
+          "question": "Siyah merkeze en iyi nasıl karşılık verir?",
+          "sideToMove": "black",
+          "fen": "r2qkb1r/pp1n1pp1/2n1p1p1/3p4/3P2P1/2N1P2P/PP3PB1/R1BQK2R w KQkq - 0 1",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♘c6"
+            },
+            {
+              "id": "B",
+              "text": "♙d6"
+            },
+            {
+              "id": "C",
+              "text": "♕f6"
+            },
+            {
+              "id": "D",
+              "text": "♗c5"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "♘c6 hem gelişim hamlesidir hem de e5 piyonunu destekler."
+        },
+        {
+          "id": 7,
+          "question": "Beyaz hangi sakin hamleyle taşlarını tamamlar?",
+          "sideToMove": "white",
+          "fen": "r1bqk2r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♕e2"
+            },
+            {
+              "id": "B",
+              "text": "O-O"
+            },
+            {
+              "id": "C",
+              "text": "♘b5"
+            },
+            {
+              "id": "D",
+              "text": "♙g4"
+            }
+          ],
+          "correctAnswer": "B",
+          "explanation": "Kısa rok, konumu güvenli hâle getirir ve plan kurmayı kolaylaştırır."
+        },
+        {
+          "id": 8,
+          "question": "Siyah vezir baskısını hangi hamleyle artırabilir?",
+          "sideToMove": "black",
+          "fen": "rnbq1rk1/ppp2ppp/3bpn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQK2R w KQ - 2 6",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♕g5"
+            },
+            {
+              "id": "B",
+              "text": "♕d7"
+            },
+            {
+              "id": "C",
+              "text": "♕a5"
+            },
+            {
+              "id": "D",
+              "text": "♘e4"
+            }
+          ],
+          "correctAnswer": "C",
+          "explanation": "Vezirin a5 karesine gelişi şah kanadı ve merkez üzerinde ek baskı oluşturur."
+        },
+        {
+          "id": 9,
+          "question": "Beyaz hangi hamleyle merkezi kırmayı hedeflemelidir?",
+          "sideToMove": "white",
+          "fen": "2r2rk1/pp2bppp/2n1pn2/q2p4/3P4/2P1PN2/PBQN1PPP/R3KB1R w KQ - 0 10",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♙e4"
+            },
+            {
+              "id": "B",
+              "text": "♘e5"
+            },
+            {
+              "id": "C",
+              "text": "♙h3"
+            },
+            {
+              "id": "D",
+              "text": "♗b5"
+            }
+          ],
+          "correctAnswer": "B",
+          "explanation": "♘e5 aktif bir merkez karesi kullanır ve siyahın koordinasyonunu zorlar."
+        },
+        {
+          "id": 10,
+          "question": "Siyah hangi gelişim hamlesiyle konumunu tamamlar?",
+          "sideToMove": "black",
+          "fen": "r3k2r/pppq1ppp/2npbn2/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 4 8",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "O-O"
+            },
+            {
+              "id": "B",
+              "text": "♘g4"
+            },
+            {
+              "id": "C",
+              "text": "♙c6"
+            },
+            {
+              "id": "D",
+              "text": "♕e7"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Siyah rok atarak şah güvenliğini sağlar ve kaleyi merkeze yaklaştırır."
+        }
+      ]
+    },
+    {
+      "id": "test-7",
+      "title": "Satranç Testi 7",
+      "description": "10 soruluk satranç hamle testi",
+      "questionTimeSeconds": 180,
+      "questions": [
+        {
+          "id": 1,
+          "question": "Beyaz hangi hamleyle taktik baskı kurmalıdır?",
+          "sideToMove": "white",
+          "fen": "r1bq1rk1/ppp2ppp/2nbpn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQ1RK1 w - - 4 7",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♗xd7+"
+            },
+            {
+              "id": "B",
+              "text": "♘b5"
+            },
+            {
+              "id": "C",
+              "text": "♕f3"
+            },
+            {
+              "id": "D",
+              "text": "O-O"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Beyaz gelişim üstünlüğünü kullanarak filiyle d7 karesinden şahı rahatsız eder."
+        },
+        {
+          "id": 2,
+          "question": "Beyaz gelişimini sürdürmek için en doğal hamle hangisidir?",
+          "sideToMove": "white",
+          "fen": "2kr3r/ppp2ppp/2n1bn2/3q4/3P4/2P1PN2/PBQN1PPP/R3KB1R b KQ - 2 11",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♘c3"
+            },
+            {
+              "id": "B",
+              "text": "♗xf7+"
+            },
+            {
+              "id": "C",
+              "text": "♙h3"
+            },
+            {
+              "id": "D",
+              "text": "♕e2"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Merkez kontrolünü artıran ♘c3 hamlesi taş gelişimini tamamlamaya yardım eder."
+        },
+        {
+          "id": 3,
+          "question": "Beyaz hangi hamleyle şah güvenliğini sağlamalıdır?",
+          "sideToMove": "white",
+          "fen": "r2q1rk1/ppp1bppp/2n1pn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQ1RK1 w - - 0 8",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "O-O"
+            },
+            {
+              "id": "B",
+              "text": "♕e2"
+            },
+            {
+              "id": "C",
+              "text": "♙h4"
+            },
+            {
+              "id": "D",
+              "text": "♔e2"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Rok, şahı güvene alırken kaleyi de oyuna yaklaştırır."
+        },
+        {
+          "id": 4,
+          "question": "Beyaz hangi hamleyle merkezi desteklemelidir?",
+          "sideToMove": "white",
+          "fen": "rnbqk2r/ppp2ppp/3bpn2/3p4/2BP4/2N1PN2/PPP2PPP/R1BQK2R b KQkq - 3 5",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "O-O-O"
+            },
+            {
+              "id": "B",
+              "text": "♗d3"
+            },
+            {
+              "id": "C",
+              "text": "♙c4"
+            },
+            {
+              "id": "D",
+              "text": "♕b3"
+            }
+          ],
+          "correctAnswer": "C",
+          "explanation": "c4 sürüşü d5 merkezine baskı kurar ve alan kazanır."
+        },
+        {
+          "id": 5,
+          "question": "Siyah gelişim temposunu nasıl korumalıdır?",
+          "sideToMove": "black",
+          "fen": "r2qkb1r/pp1n1pp1/2n1p1p1/3p4/3P2P1/2N1P2P/PP3PB1/R1BQK2R w KQkq - 0 1",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♗e7"
+            },
+            {
+              "id": "B",
+              "text": "♘d4"
+            },
+            {
+              "id": "C",
+              "text": "O-O"
+            },
+            {
+              "id": "D",
+              "text": "♙h6"
+            }
+          ],
+          "correctAnswer": "C",
+          "explanation": "Siyah rok atarak şahını güvene alır ve oyunu sade bir plana bağlar."
+        },
+        {
+          "id": 6,
+          "question": "Siyah merkeze en iyi nasıl karşılık verir?",
+          "sideToMove": "black",
+          "fen": "r1bqk2r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♘c6"
+            },
+            {
+              "id": "B",
+              "text": "♙d6"
+            },
+            {
+              "id": "C",
+              "text": "♕f6"
+            },
+            {
+              "id": "D",
+              "text": "♗c5"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "♘c6 hem gelişim hamlesidir hem de e5 piyonunu destekler."
+        },
+        {
+          "id": 7,
+          "question": "Beyaz hangi sakin hamleyle taşlarını tamamlar?",
+          "sideToMove": "white",
+          "fen": "rnbq1rk1/ppp2ppp/3bpn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQK2R w KQ - 2 6",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♕e2"
+            },
+            {
+              "id": "B",
+              "text": "O-O"
+            },
+            {
+              "id": "C",
+              "text": "♘b5"
+            },
+            {
+              "id": "D",
+              "text": "♙g4"
+            }
+          ],
+          "correctAnswer": "B",
+          "explanation": "Kısa rok, konumu güvenli hâle getirir ve plan kurmayı kolaylaştırır."
+        },
+        {
+          "id": 8,
+          "question": "Siyah vezir baskısını hangi hamleyle artırabilir?",
+          "sideToMove": "black",
+          "fen": "2r2rk1/pp2bppp/2n1pn2/q2p4/3P4/2P1PN2/PBQN1PPP/R3KB1R w KQ - 0 10",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♕g5"
+            },
+            {
+              "id": "B",
+              "text": "♕d7"
+            },
+            {
+              "id": "C",
+              "text": "♕a5"
+            },
+            {
+              "id": "D",
+              "text": "♘e4"
+            }
+          ],
+          "correctAnswer": "C",
+          "explanation": "Vezirin a5 karesine gelişi şah kanadı ve merkez üzerinde ek baskı oluşturur."
+        },
+        {
+          "id": 9,
+          "question": "Beyaz hangi hamleyle merkezi kırmayı hedeflemelidir?",
+          "sideToMove": "white",
+          "fen": "r3k2r/pppq1ppp/2npbn2/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 4 8",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♙e4"
+            },
+            {
+              "id": "B",
+              "text": "♘e5"
+            },
+            {
+              "id": "C",
+              "text": "♙h3"
+            },
+            {
+              "id": "D",
+              "text": "♗b5"
+            }
+          ],
+          "correctAnswer": "B",
+          "explanation": "♘e5 aktif bir merkez karesi kullanır ve siyahın koordinasyonunu zorlar."
+        },
+        {
+          "id": 10,
+          "question": "Siyah hangi gelişim hamlesiyle konumunu tamamlar?",
+          "sideToMove": "black",
+          "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "O-O"
+            },
+            {
+              "id": "B",
+              "text": "♘g4"
+            },
+            {
+              "id": "C",
+              "text": "♙c6"
+            },
+            {
+              "id": "D",
+              "text": "♕e7"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Siyah rok atarak şah güvenliğini sağlar ve kaleyi merkeze yaklaştırır."
+        }
+      ]
+    },
+    {
+      "id": "test-8",
+      "title": "Satranç Testi 8",
+      "description": "10 soruluk satranç hamle testi",
+      "questionTimeSeconds": 180,
+      "questions": [
+        {
+          "id": 1,
+          "question": "Beyaz hangi hamleyle taktik baskı kurmalıdır?",
+          "sideToMove": "white",
+          "fen": "2kr3r/ppp2ppp/2n1bn2/3q4/3P4/2P1PN2/PBQN1PPP/R3KB1R b KQ - 2 11",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♗xd7+"
+            },
+            {
+              "id": "B",
+              "text": "♘b5"
+            },
+            {
+              "id": "C",
+              "text": "♕f3"
+            },
+            {
+              "id": "D",
+              "text": "O-O"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Beyaz gelişim üstünlüğünü kullanarak filiyle d7 karesinden şahı rahatsız eder."
+        },
+        {
+          "id": 2,
+          "question": "Beyaz gelişimini sürdürmek için en doğal hamle hangisidir?",
+          "sideToMove": "white",
+          "fen": "r2q1rk1/ppp1bppp/2n1pn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQ1RK1 w - - 0 8",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♘c3"
+            },
+            {
+              "id": "B",
+              "text": "♗xf7+"
+            },
+            {
+              "id": "C",
+              "text": "♙h3"
+            },
+            {
+              "id": "D",
+              "text": "♕e2"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Merkez kontrolünü artıran ♘c3 hamlesi taş gelişimini tamamlamaya yardım eder."
+        },
+        {
+          "id": 3,
+          "question": "Beyaz hangi hamleyle şah güvenliğini sağlamalıdır?",
+          "sideToMove": "white",
+          "fen": "rnbqk2r/ppp2ppp/3bpn2/3p4/2BP4/2N1PN2/PPP2PPP/R1BQK2R b KQkq - 3 5",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "O-O"
+            },
+            {
+              "id": "B",
+              "text": "♕e2"
+            },
+            {
+              "id": "C",
+              "text": "♙h4"
+            },
+            {
+              "id": "D",
+              "text": "♔e2"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Rok, şahı güvene alırken kaleyi de oyuna yaklaştırır."
+        },
+        {
+          "id": 4,
+          "question": "Beyaz hangi hamleyle merkezi desteklemelidir?",
+          "sideToMove": "white",
+          "fen": "r2qkb1r/pp1n1pp1/2n1p1p1/3p4/3P2P1/2N1P2P/PP3PB1/R1BQK2R w KQkq - 0 1",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "O-O-O"
+            },
+            {
+              "id": "B",
+              "text": "♗d3"
+            },
+            {
+              "id": "C",
+              "text": "♙c4"
+            },
+            {
+              "id": "D",
+              "text": "♕b3"
+            }
+          ],
+          "correctAnswer": "C",
+          "explanation": "c4 sürüşü d5 merkezine baskı kurar ve alan kazanır."
+        },
+        {
+          "id": 5,
+          "question": "Siyah gelişim temposunu nasıl korumalıdır?",
+          "sideToMove": "black",
+          "fen": "r1bqk2r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♗e7"
+            },
+            {
+              "id": "B",
+              "text": "♘d4"
+            },
+            {
+              "id": "C",
+              "text": "O-O"
+            },
+            {
+              "id": "D",
+              "text": "♙h6"
+            }
+          ],
+          "correctAnswer": "C",
+          "explanation": "Siyah rok atarak şahını güvene alır ve oyunu sade bir plana bağlar."
+        },
+        {
+          "id": 6,
+          "question": "Siyah merkeze en iyi nasıl karşılık verir?",
+          "sideToMove": "black",
+          "fen": "rnbq1rk1/ppp2ppp/3bpn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQK2R w KQ - 2 6",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♘c6"
+            },
+            {
+              "id": "B",
+              "text": "♙d6"
+            },
+            {
+              "id": "C",
+              "text": "♕f6"
+            },
+            {
+              "id": "D",
+              "text": "♗c5"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "♘c6 hem gelişim hamlesidir hem de e5 piyonunu destekler."
+        },
+        {
+          "id": 7,
+          "question": "Beyaz hangi sakin hamleyle taşlarını tamamlar?",
+          "sideToMove": "white",
+          "fen": "2r2rk1/pp2bppp/2n1pn2/q2p4/3P4/2P1PN2/PBQN1PPP/R3KB1R w KQ - 0 10",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♕e2"
+            },
+            {
+              "id": "B",
+              "text": "O-O"
+            },
+            {
+              "id": "C",
+              "text": "♘b5"
+            },
+            {
+              "id": "D",
+              "text": "♙g4"
+            }
+          ],
+          "correctAnswer": "B",
+          "explanation": "Kısa rok, konumu güvenli hâle getirir ve plan kurmayı kolaylaştırır."
+        },
+        {
+          "id": 8,
+          "question": "Siyah vezir baskısını hangi hamleyle artırabilir?",
+          "sideToMove": "black",
+          "fen": "r3k2r/pppq1ppp/2npbn2/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 4 8",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♕g5"
+            },
+            {
+              "id": "B",
+              "text": "♕d7"
+            },
+            {
+              "id": "C",
+              "text": "♕a5"
+            },
+            {
+              "id": "D",
+              "text": "♘e4"
+            }
+          ],
+          "correctAnswer": "C",
+          "explanation": "Vezirin a5 karesine gelişi şah kanadı ve merkez üzerinde ek baskı oluşturur."
+        },
+        {
+          "id": 9,
+          "question": "Beyaz hangi hamleyle merkezi kırmayı hedeflemelidir?",
+          "sideToMove": "white",
+          "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♙e4"
+            },
+            {
+              "id": "B",
+              "text": "♘e5"
+            },
+            {
+              "id": "C",
+              "text": "♙h3"
+            },
+            {
+              "id": "D",
+              "text": "♗b5"
+            }
+          ],
+          "correctAnswer": "B",
+          "explanation": "♘e5 aktif bir merkez karesi kullanır ve siyahın koordinasyonunu zorlar."
+        },
+        {
+          "id": 10,
+          "question": "Siyah hangi gelişim hamlesiyle konumunu tamamlar?",
+          "sideToMove": "black",
+          "fen": "r1bq1rk1/ppp2ppp/2nbpn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQ1RK1 w - - 4 7",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "O-O"
+            },
+            {
+              "id": "B",
+              "text": "♘g4"
+            },
+            {
+              "id": "C",
+              "text": "♙c6"
+            },
+            {
+              "id": "D",
+              "text": "♕e7"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Siyah rok atarak şah güvenliğini sağlar ve kaleyi merkeze yaklaştırır."
+        }
+      ]
+    },
+    {
+      "id": "test-9",
+      "title": "Satranç Testi 9",
+      "description": "10 soruluk satranç hamle testi",
+      "questionTimeSeconds": 180,
+      "questions": [
+        {
+          "id": 1,
+          "question": "Beyaz hangi hamleyle taktik baskı kurmalıdır?",
+          "sideToMove": "white",
+          "fen": "r2q1rk1/ppp1bppp/2n1pn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQ1RK1 w - - 0 8",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♗xd7+"
+            },
+            {
+              "id": "B",
+              "text": "♘b5"
+            },
+            {
+              "id": "C",
+              "text": "♕f3"
+            },
+            {
+              "id": "D",
+              "text": "O-O"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Beyaz gelişim üstünlüğünü kullanarak filiyle d7 karesinden şahı rahatsız eder."
+        },
+        {
+          "id": 2,
+          "question": "Beyaz gelişimini sürdürmek için en doğal hamle hangisidir?",
+          "sideToMove": "white",
+          "fen": "rnbqk2r/ppp2ppp/3bpn2/3p4/2BP4/2N1PN2/PPP2PPP/R1BQK2R b KQkq - 3 5",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♘c3"
+            },
+            {
+              "id": "B",
+              "text": "♗xf7+"
+            },
+            {
+              "id": "C",
+              "text": "♙h3"
+            },
+            {
+              "id": "D",
+              "text": "♕e2"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Merkez kontrolünü artıran ♘c3 hamlesi taş gelişimini tamamlamaya yardım eder."
+        },
+        {
+          "id": 3,
+          "question": "Beyaz hangi hamleyle şah güvenliğini sağlamalıdır?",
+          "sideToMove": "white",
+          "fen": "r2qkb1r/pp1n1pp1/2n1p1p1/3p4/3P2P1/2N1P2P/PP3PB1/R1BQK2R w KQkq - 0 1",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "O-O"
+            },
+            {
+              "id": "B",
+              "text": "♕e2"
+            },
+            {
+              "id": "C",
+              "text": "♙h4"
+            },
+            {
+              "id": "D",
+              "text": "♔e2"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Rok, şahı güvene alırken kaleyi de oyuna yaklaştırır."
+        },
+        {
+          "id": 4,
+          "question": "Beyaz hangi hamleyle merkezi desteklemelidir?",
+          "sideToMove": "white",
+          "fen": "r1bqk2r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "O-O-O"
+            },
+            {
+              "id": "B",
+              "text": "♗d3"
+            },
+            {
+              "id": "C",
+              "text": "♙c4"
+            },
+            {
+              "id": "D",
+              "text": "♕b3"
+            }
+          ],
+          "correctAnswer": "C",
+          "explanation": "c4 sürüşü d5 merkezine baskı kurar ve alan kazanır."
+        },
+        {
+          "id": 5,
+          "question": "Siyah gelişim temposunu nasıl korumalıdır?",
+          "sideToMove": "black",
+          "fen": "rnbq1rk1/ppp2ppp/3bpn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQK2R w KQ - 2 6",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♗e7"
+            },
+            {
+              "id": "B",
+              "text": "♘d4"
+            },
+            {
+              "id": "C",
+              "text": "O-O"
+            },
+            {
+              "id": "D",
+              "text": "♙h6"
+            }
+          ],
+          "correctAnswer": "C",
+          "explanation": "Siyah rok atarak şahını güvene alır ve oyunu sade bir plana bağlar."
+        },
+        {
+          "id": 6,
+          "question": "Siyah merkeze en iyi nasıl karşılık verir?",
+          "sideToMove": "black",
+          "fen": "2r2rk1/pp2bppp/2n1pn2/q2p4/3P4/2P1PN2/PBQN1PPP/R3KB1R w KQ - 0 10",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♘c6"
+            },
+            {
+              "id": "B",
+              "text": "♙d6"
+            },
+            {
+              "id": "C",
+              "text": "♕f6"
+            },
+            {
+              "id": "D",
+              "text": "♗c5"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "♘c6 hem gelişim hamlesidir hem de e5 piyonunu destekler."
+        },
+        {
+          "id": 7,
+          "question": "Beyaz hangi sakin hamleyle taşlarını tamamlar?",
+          "sideToMove": "white",
+          "fen": "r3k2r/pppq1ppp/2npbn2/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 4 8",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♕e2"
+            },
+            {
+              "id": "B",
+              "text": "O-O"
+            },
+            {
+              "id": "C",
+              "text": "♘b5"
+            },
+            {
+              "id": "D",
+              "text": "♙g4"
+            }
+          ],
+          "correctAnswer": "B",
+          "explanation": "Kısa rok, konumu güvenli hâle getirir ve plan kurmayı kolaylaştırır."
+        },
+        {
+          "id": 8,
+          "question": "Siyah vezir baskısını hangi hamleyle artırabilir?",
+          "sideToMove": "black",
+          "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♕g5"
+            },
+            {
+              "id": "B",
+              "text": "♕d7"
+            },
+            {
+              "id": "C",
+              "text": "♕a5"
+            },
+            {
+              "id": "D",
+              "text": "♘e4"
+            }
+          ],
+          "correctAnswer": "C",
+          "explanation": "Vezirin a5 karesine gelişi şah kanadı ve merkez üzerinde ek baskı oluşturur."
+        },
+        {
+          "id": 9,
+          "question": "Beyaz hangi hamleyle merkezi kırmayı hedeflemelidir?",
+          "sideToMove": "white",
+          "fen": "r1bq1rk1/ppp2ppp/2nbpn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQ1RK1 w - - 4 7",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♙e4"
+            },
+            {
+              "id": "B",
+              "text": "♘e5"
+            },
+            {
+              "id": "C",
+              "text": "♙h3"
+            },
+            {
+              "id": "D",
+              "text": "♗b5"
+            }
+          ],
+          "correctAnswer": "B",
+          "explanation": "♘e5 aktif bir merkez karesi kullanır ve siyahın koordinasyonunu zorlar."
+        },
+        {
+          "id": 10,
+          "question": "Siyah hangi gelişim hamlesiyle konumunu tamamlar?",
+          "sideToMove": "black",
+          "fen": "2kr3r/ppp2ppp/2n1bn2/3q4/3P4/2P1PN2/PBQN1PPP/R3KB1R b KQ - 2 11",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "O-O"
+            },
+            {
+              "id": "B",
+              "text": "♘g4"
+            },
+            {
+              "id": "C",
+              "text": "♙c6"
+            },
+            {
+              "id": "D",
+              "text": "♕e7"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Siyah rok atarak şah güvenliğini sağlar ve kaleyi merkeze yaklaştırır."
+        }
+      ]
+    },
+    {
+      "id": "test-10",
+      "title": "Satranç Testi 10",
+      "description": "10 soruluk satranç hamle testi",
+      "questionTimeSeconds": 180,
+      "questions": [
+        {
+          "id": 1,
+          "question": "Beyaz hangi hamleyle taktik baskı kurmalıdır?",
+          "sideToMove": "white",
+          "fen": "rnbqk2r/ppp2ppp/3bpn2/3p4/2BP4/2N1PN2/PPP2PPP/R1BQK2R b KQkq - 3 5",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♗xd7+"
+            },
+            {
+              "id": "B",
+              "text": "♘b5"
+            },
+            {
+              "id": "C",
+              "text": "♕f3"
+            },
+            {
+              "id": "D",
+              "text": "O-O"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Beyaz gelişim üstünlüğünü kullanarak filiyle d7 karesinden şahı rahatsız eder."
+        },
+        {
+          "id": 2,
+          "question": "Beyaz gelişimini sürdürmek için en doğal hamle hangisidir?",
+          "sideToMove": "white",
+          "fen": "r2qkb1r/pp1n1pp1/2n1p1p1/3p4/3P2P1/2N1P2P/PP3PB1/R1BQK2R w KQkq - 0 1",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♘c3"
+            },
+            {
+              "id": "B",
+              "text": "♗xf7+"
+            },
+            {
+              "id": "C",
+              "text": "♙h3"
+            },
+            {
+              "id": "D",
+              "text": "♕e2"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Merkez kontrolünü artıran ♘c3 hamlesi taş gelişimini tamamlamaya yardım eder."
+        },
+        {
+          "id": 3,
+          "question": "Beyaz hangi hamleyle şah güvenliğini sağlamalıdır?",
+          "sideToMove": "white",
+          "fen": "r1bqk2r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "O-O"
+            },
+            {
+              "id": "B",
+              "text": "♕e2"
+            },
+            {
+              "id": "C",
+              "text": "♙h4"
+            },
+            {
+              "id": "D",
+              "text": "♔e2"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Rok, şahı güvene alırken kaleyi de oyuna yaklaştırır."
+        },
+        {
+          "id": 4,
+          "question": "Beyaz hangi hamleyle merkezi desteklemelidir?",
+          "sideToMove": "white",
+          "fen": "rnbq1rk1/ppp2ppp/3bpn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQK2R w KQ - 2 6",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "O-O-O"
+            },
+            {
+              "id": "B",
+              "text": "♗d3"
+            },
+            {
+              "id": "C",
+              "text": "♙c4"
+            },
+            {
+              "id": "D",
+              "text": "♕b3"
+            }
+          ],
+          "correctAnswer": "C",
+          "explanation": "c4 sürüşü d5 merkezine baskı kurar ve alan kazanır."
+        },
+        {
+          "id": 5,
+          "question": "Siyah gelişim temposunu nasıl korumalıdır?",
+          "sideToMove": "black",
+          "fen": "2r2rk1/pp2bppp/2n1pn2/q2p4/3P4/2P1PN2/PBQN1PPP/R3KB1R w KQ - 0 10",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♗e7"
+            },
+            {
+              "id": "B",
+              "text": "♘d4"
+            },
+            {
+              "id": "C",
+              "text": "O-O"
+            },
+            {
+              "id": "D",
+              "text": "♙h6"
+            }
+          ],
+          "correctAnswer": "C",
+          "explanation": "Siyah rok atarak şahını güvene alır ve oyunu sade bir plana bağlar."
+        },
+        {
+          "id": 6,
+          "question": "Siyah merkeze en iyi nasıl karşılık verir?",
+          "sideToMove": "black",
+          "fen": "r3k2r/pppq1ppp/2npbn2/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 4 8",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♘c6"
+            },
+            {
+              "id": "B",
+              "text": "♙d6"
+            },
+            {
+              "id": "C",
+              "text": "♕f6"
+            },
+            {
+              "id": "D",
+              "text": "♗c5"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "♘c6 hem gelişim hamlesidir hem de e5 piyonunu destekler."
+        },
+        {
+          "id": 7,
+          "question": "Beyaz hangi sakin hamleyle taşlarını tamamlar?",
+          "sideToMove": "white",
+          "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♕e2"
+            },
+            {
+              "id": "B",
+              "text": "O-O"
+            },
+            {
+              "id": "C",
+              "text": "♘b5"
+            },
+            {
+              "id": "D",
+              "text": "♙g4"
+            }
+          ],
+          "correctAnswer": "B",
+          "explanation": "Kısa rok, konumu güvenli hâle getirir ve plan kurmayı kolaylaştırır."
+        },
+        {
+          "id": 8,
+          "question": "Siyah vezir baskısını hangi hamleyle artırabilir?",
+          "sideToMove": "black",
+          "fen": "r1bq1rk1/ppp2ppp/2nbpn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQ1RK1 w - - 4 7",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♕g5"
+            },
+            {
+              "id": "B",
+              "text": "♕d7"
+            },
+            {
+              "id": "C",
+              "text": "♕a5"
+            },
+            {
+              "id": "D",
+              "text": "♘e4"
+            }
+          ],
+          "correctAnswer": "C",
+          "explanation": "Vezirin a5 karesine gelişi şah kanadı ve merkez üzerinde ek baskı oluşturur."
+        },
+        {
+          "id": 9,
+          "question": "Beyaz hangi hamleyle merkezi kırmayı hedeflemelidir?",
+          "sideToMove": "white",
+          "fen": "2kr3r/ppp2ppp/2n1bn2/3q4/3P4/2P1PN2/PBQN1PPP/R3KB1R b KQ - 2 11",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "♙e4"
+            },
+            {
+              "id": "B",
+              "text": "♘e5"
+            },
+            {
+              "id": "C",
+              "text": "♙h3"
+            },
+            {
+              "id": "D",
+              "text": "♗b5"
+            }
+          ],
+          "correctAnswer": "B",
+          "explanation": "♘e5 aktif bir merkez karesi kullanır ve siyahın koordinasyonunu zorlar."
+        },
+        {
+          "id": 10,
+          "question": "Siyah hangi gelişim hamlesiyle konumunu tamamlar?",
+          "sideToMove": "black",
+          "fen": "r2q1rk1/ppp1bppp/2n1pn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQ1RK1 w - - 0 8",
+          "image": "",
+          "options": [
+            {
+              "id": "A",
+              "text": "O-O"
+            },
+            {
+              "id": "B",
+              "text": "♘g4"
+            },
+            {
+              "id": "C",
+              "text": "♙c6"
+            },
+            {
+              "id": "D",
+              "text": "♕e7"
+            }
+          ],
+          "correctAnswer": "A",
+          "explanation": "Siyah rok atarak şah güvenliğini sağlar ve kaleyi merkeze yaklaştırır."
+        }
+      ]
+    }
+  ]
+}
