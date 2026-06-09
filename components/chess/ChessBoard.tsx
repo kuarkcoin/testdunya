@@ -33,6 +33,7 @@ export function ChessPieceSvg({ piece }: ChessPieceSvgProps) {
   const fill = isWhite ? '#fff8e7' : '#111111';
   const stroke = isWhite ? '#151515' : '#050505';
   const accent = isWhite ? '#151515' : '#111111';
+  const knightDetail = isWhite ? accent : '#fff8e7';
 
   const commonProps = {
     fill,
@@ -61,14 +62,19 @@ export function ChessPieceSvg({ piece }: ChessPieceSvgProps) {
       )}
 
       {kind === 'n' && (
-        <>
-          <path d="M22 80h56v9H20v-9h2z" {...commonProps} />
-          <path d="M31 79c2-13 7-24 16-34l-13-6 6-17 9 5c5-10 19-11 30-2 10 8 13 22 6 34-4 7-10 12-17 17l-2 3z" {...commonProps} />
-          <path d="M49 27 38 39l17-2" fill="none" stroke={stroke} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-          <path d="M50 45c-7 5-12 12-15 22" fill="none" stroke={stroke} strokeWidth="3" strokeLinecap="round" />
-          <circle cx="67" cy="36" r="2.6" fill={isWhite ? accent : '#fff8e7'} stroke="none" />
-          <path d="M76 48c-6 3-12 3-18 0" fill="none" stroke={stroke} strokeWidth="3" strokeLinecap="round" />
-        </>
+        <g
+          transform="translate(7 5) scale(1.9)"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          vectorEffect="non-scaling-stroke"
+        >
+          {/* Knight silhouette adapted from Cburnett's open-source SVG chess pieces (3-clause BSD license option). */}
+          <path d="M22 10c10.5 1 16.5 8 16 29H15c0-9 10-6.5 8-21" fill={fill} stroke={stroke} strokeWidth="1.8" />
+          <path d="M24 18c.38 2.91-5.55 7.37-8 9-3 2-2.82 4.34-5 4-1.04-.94 1.41-3.04 0-3-1 0 .19 1.23-1 2-1 0-4 1-4-4 0-2 6-12 6-12s1.89-1.9 2-3.5c-.73-.99-.5-2-.5-3 1-1 3 2.5 3 2.5h2s.78-1.99 2.5-3c1 0 1 3 1 3" fill={fill} stroke={stroke} strokeWidth="1.8" />
+          <path d="M9.5 25.5a.5.5 0 1 1-1 0 .5.5 0 1 1 1 0z" fill={knightDetail} stroke={knightDetail} strokeWidth="0.8" />
+          <path d="M15 15.5a.5 1.5 0 1 1-1 0 .5 1.5 0 1 1 1 0z" fill={knightDetail} stroke={knightDetail} strokeWidth="0.8" transform="rotate(30 14.5 15.5)" />
+          <path d="M24.55 10.4l-.45 1.45.5.15c3.15 1 5.65 2.49 7.9 6.75s3.25 10.31 2.75 20.25l-.05.5h2.25l.05-.5c.5-10.06-.88-16.85-3.25-21.34s-5.79-6.64-9.19-7.16z" fill={knightDetail} stroke="none" />
+        </g>
       )}
 
       {kind === 'b' && (
