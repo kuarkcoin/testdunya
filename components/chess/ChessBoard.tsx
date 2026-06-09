@@ -62,11 +62,12 @@ function ChessPieceSvg({ piece }: ChessPieceSvgProps) {
 
       {kind === 'n' && (
         <>
-          <path d="M27 80h51v9H22v-9h5z" {...commonProps} />
-          <path d="M31 79c4-17 12-27 27-38l-11-9 8-18 22 17c8 6 8 16 2 25L62 80z" {...commonProps} />
-          <path d="M47 32l-13 6 10-20z" {...commonProps} />
-          <circle cx="62" cy="39" r="2.8" fill={accent} stroke="none" />
-          <path d="M72 51c-7 2-13 2-19-1" fill="none" stroke={stroke} strokeWidth="3" strokeLinecap="round" />
+          <path d="M22 80h56v9H20v-9h2z" {...commonProps} />
+          <path d="M31 79c2-13 7-24 16-34l-13-6 6-17 9 5c5-10 19-11 30-2 10 8 13 22 6 34-4 7-10 12-17 17l-2 3z" {...commonProps} />
+          <path d="M49 27 38 39l17-2" fill="none" stroke={stroke} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M50 45c-7 5-12 12-15 22" fill="none" stroke={stroke} strokeWidth="3" strokeLinecap="round" />
+          <circle cx="67" cy="36" r="2.6" fill={isWhite ? accent : '#fff8e7'} stroke="none" />
+          <path d="M76 48c-6 3-12 3-18 0" fill="none" stroke={stroke} strokeWidth="3" strokeLinecap="round" />
         </>
       )}
 
