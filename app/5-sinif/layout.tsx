@@ -1,5 +1,3 @@
-'use client'; // <-- KRİTİK EKLENTİ: Bu satır build hatasını çözer
-
 import React from 'react';
 
 export default function Grade5Layout({ children }: { children: React.ReactNode }) {
@@ -49,11 +47,6 @@ export default function Grade5Layout({ children }: { children: React.ReactNode }
       <main className="max-w-7xl mx-auto p-4 md:p-8">
         {children}
       </main>
-
-      <style jsx global>{`
-        .no-scrollbar::-webkit-scrollbar { display: none; }
-        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-      `}</style>
     </div>
   );
 }
