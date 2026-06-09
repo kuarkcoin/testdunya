@@ -27,7 +27,7 @@ type ChessPieceSvgProps = {
   piece: ChessPieceCode;
 };
 
-function ChessPieceSvg({ piece }: ChessPieceSvgProps) {
+export function ChessPieceSvg({ piece }: ChessPieceSvgProps) {
   const isWhite = piece.startsWith('w');
   const kind = piece[1];
   const fill = isWhite ? '#fff8e7' : '#111111';
