@@ -33,8 +33,10 @@ export type ChessTestsData = {
   tests: ChessTest[];
 };
 
+export type ChessPieceCode = 'wp' | 'wn' | 'wb' | 'wr' | 'wq' | 'wk' | 'bp' | 'bn' | 'bb' | 'br' | 'bq' | 'bk';
+
 export type ChessSquare = {
-  piece: string;
+  piece: ChessPieceCode | null;
   file: string;
   rank: string;
 };

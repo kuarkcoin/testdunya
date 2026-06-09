@@ -1,18 +1,18 @@
-import type { ChessSquare } from './types';
+import type { ChessPieceCode, ChessSquare } from './types';
 
-const pieceMap: Record<string, string> = {
-  K: '♔',
-  Q: '♕',
-  R: '♖',
-  B: '♗',
-  N: '♘',
-  P: '♙',
-  k: '♚',
-  q: '♛',
-  r: '♜',
-  b: '♝',
-  n: '♞',
-  p: '♟',
+const pieceMap: Record<string, ChessPieceCode> = {
+  K: 'wk',
+  Q: 'wq',
+  R: 'wr',
+  B: 'wb',
+  N: 'wn',
+  P: 'wp',
+  k: 'bk',
+  q: 'bq',
+  r: 'br',
+  b: 'bb',
+  n: 'bn',
+  p: 'bp',
 };
 
 const files = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
@@ -36,7 +36,7 @@ export function fenToBoard(fen?: string): ChessSquare[][] {
       if (/^[1-8]$/.test(char)) {
         const emptySquares = Number(char);
         for (let index = 0; index < emptySquares; index += 1) {
-          row.push({ piece: '', file: files[row.length], rank: String(8 - rankIndex) });
+          row.push({ piece: null, file: files[row.length], rank: String(8 - rankIndex) });
         }
       } else if (pieceMap[char]) {
         row.push({ piece: pieceMap[char], file: files[row.length], rank: String(8 - rankIndex) });
