@@ -4712,6 +4712,802 @@ export const fenData: SubjectData = {
         ],
         correct: 2,
         explanation: "Yazın güneş altında ısınan demir raylar genleşerek uzar. Eğer rayların arasında boşluk bırakılmazsa raylar sıkışıp bükülür og trenlerin raydan çıkmasına neden olur. Bırakılan boşluklar genleşmenin zararından korur."
+      },
+      // --- 5. SINIF FEN BİLİMLERİ 2. DÖNEM TEST 10 (11 - 20. SORULARIN DEVAMI) ---
+      {
+        id: "f5-2-t10-img-11",
+        subject: "fen",
+        term: 2,
+        prompt: "Görseldeki elektrik devresinde özdeş iki ampul ışık vermektedir. Bu devreye, bağlantı kablolarının yönü og kalitesi değiştirilmeden aynısından 1 adet ampul daha seri olarak eklenirse devredeki toplam ampullerin parlaklığı nasıl değişir?",
+        imageUrl: "/images/grade5/fen/term2/test10/ampul-ekleme-parlaklik.webp",
+        options: ["Tüm ampullerin parlaklığı azalır.", "Tüm ampullerin parlaklığı artar.", "Sadece yeni eklenen ampul parlak yanar.", "Ampullerin parlaklığı hiçbir şekilde değişmez."],
+        correct: 0,
+        explanation: "Devreye yeni bir ampul eklenmesi, pilden çıkan mevcut elektrik enerjisinin daha fazla eleman arasında bölünmesine neden olur. Ampul başına düşen enerji azaldığı için tüm lambaların parlaklığı azalır."
+      },
+      {
+        id: "f5-2-t10-12",
+        subject: "fen",
+        term: 2,
+        prompt: "Basit bir elektrik devresinde, pillerin og ampullerin yerleştirildiği yuvaların (duy og pil yatağı) vidaları gevşek bırakılmış veya kablolar metal yüzeylere tam temas ettirilmemiştir. Anahtar kapatılmasına rağmen devredeki ampulün ışık vermemesinin temel nedeni aşağıdakilerden hangisidir?",
+        options: [
+          "Devredeki pil sayısının yetersiz kalması",
+          "Gevşek bağlantıdan dolayı elektrik akımının geçişini tamamlayamaması og devrenin açık devre kalması",
+          "Ampulün içindeki flaman telinin kopmuş olması",
+          "Anahtar elemanının bozuk og kırık olması"
+        ],
+        correct: 1,
+        explanation: "Elektrik akımının pürüzsüz iletilebilmesi için kablo uçlarının pil og lamba kutuplarına tam temas etmesi gerekir. Gevşeklik akımı keseceği için devre açık kalır og ampul ışık vermez."
+      },
+      {
+        id: "f5-2-t10-img-13",
+        subject: "fen",
+        term: 2,
+        prompt: "Görseldeki opak üçgen levhanın arkasında, perdede oluşan tam gölgenin sınırları og şekli şematize edilmiştir. Perdedeki gölgenin net bir üçgen olmasının og kaymamasının temel sebebi ışığın hangi özelliğidir?",
+        imageUrl: "/images/grade5/fen/term2/test10/isik-keskin-golge.webp",
+        options: [
+          "Işığın dalgalar halinde etrafa saçılması",
+          "Işığın her yöne og doğrusal hatlar üzerinde (düz çizgiler halinde) yayılması",
+          "Işığın aynalardan tam yansımaya uğraması",
+          "Işığın sadece mat yüzeylerde gölge bırakması"
+        ],
+        correct: 1,
+        explanation: "Işık düz çizgiler halinde (doğrusal) yayıldığı için opak cismin kenarlarından bükülüp arkasına sızamaz. Bu doğrusal hat, perdede cismin geometrik şekliyle birebir aynı og net bir gölge bırakır."
+      },
+      {
+        id: "f5-2-t10-14",
+        subject: "fen",
+        term: 2,
+        prompt: "Tam gölge boyunun cisimlerin konumlarına göre değişimi üzerine çalışan bir öğrenci; ışık kaynağı og perdeyi sabit tutmuştur. Öğrenci tam gölge boyunu 'küçültmek' için opak cismi hangi doğrultuda hareket ettirmelidir?",
+        options: [
+          "Opak cismi ışık kaynağına doğru yaklaştırmalıdır.",
+          "Opak cismi ışık kaynağından uzaklaştırıp perdeye doğru yaklaştırmalıdır.",
+          "Opak cismi yukarıya doğru havaya kaldırmalıdır.",
+          "Opak cismin etrafını siyah bir bezle kaplamalıdır."
+        ],
+        correct: 1,
+        explanation: "Opak cisim ışık kaynağından uzaklaşıp perdeye yaklaştıkça, kaynaktan çıkan ışınların önünü kapattığı açı küçülür. Işınlar perdede daha dar bir alanı gölgeleyeceğinden gölge boyu küçülür."
+      },
+      {
+        id: "f5-2-t10-img-15",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde derisi nemli og çıplak olan, yaşamının bir kısmını suda bir kısmını karada geçiren (başkalaşım geçiren) omurgalı bir canlı verilmiştir. Bu canlı hangi sınıftadır?",
+        imageUrl: "/images/grade5/fen/term2/test10/kurbaqa-baskalasim.webp",
+        options: ["Sürüngenler", "Kurbağalar (İki Yaşamlılar)", "Kuşlar", "Memeliler"],
+        correct: 1,
+        explanation: "Görseldeki canlı kurbağadır. Kurbağalar yumurtadan larvalar (iribaş) olarak çıkar og zamanla bacakları çıkarak karada yaşayabilecek ergin kurbağalara dönüşürler (başkalaşım)."
+      },
+      {
+        id: "f5-2-t10-16",
+        subject: "fen",
+        term: 2,
+        prompt: "Nemli, ılık og besin bakımından zengin ortamlarda (örneğin açıkta bırakılan portakal, ekmek veya peynir yüzeylerinde) pamuksu og renkli yapıların hızla türediği görülür. Bu besinlerin bozulup küflenmesine yol açan canlı türü aşağıdakilerden hangisidir?",
+        options: ["Şapkalı Mantarlar", "Küf Mantarları", "Çiçeksiz Bitkiler", "Mikroskobik Amip Canlısı"],
+        correct: 1,
+        explanation: "Besinlerin üzerinde çoğalarak onların çürümesine og bozulmasına neden olan mikroskobik mantar türü küf mantarlarıdır. Bu mantarlar hazır besinlerle beslenirler."
+      },
+      {
+        id: "f5-2-t10-img-17",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde kaygan pürüzsüz fayans zemin ile pürüzlü beton zemin üzerinde aynı oyuncak arabayı eşit kuvvetlerle fırlatan bir çocuğun deneyi canlandırılmıştır. Arabanın fayans zeminde daha uzun mesafe gitmesinin gerekçesi nedir?",
+        imageUrl: "/images/grade5/fen/term2/test10/fayans-beton-araba.webp",
+        options: [
+          "Fayans zeminin sürtünme kuvvetinin beton zemine göre daha az olması",
+          "Beton zeminde yerçekiminin daha güçlü etki etmesi",
+          "Fayansın arabayı mıknatıs gibi çekerek hızlandırması",
+          "Arabanın fayans üzerinde kütlesinin azalması"
+        ],
+        correct: 0,
+        explanation: "Pürüzsüz og kaygan yüzeylerin sürtünme kuvveti azdır. Fayans zeminde arabanın hareketine karşı oluşan engelleyici sürtünme kuvveti küçük olduğu için araba daha az yavaşlar og daha uzun mesafe kateder."
+      },
+      {
+        id: "f5-2-t10-18",
+        subject: "fen",
+        term: 2,
+        prompt: "Hava direnci, hava ortamında hareket eden cisimlerin hareketini zorlaştıran bir sürtünme kuvvetidir. Mühendisler araçların daha az yakıt tüketmesi og havayı rahatça yarması için hava direncini azaltıcı tasarımlar yaparlar. Aşağıdakilerden hangisi hava direncini 'azaltmak' için yapılan bir uygulama örneğidir?",
+        options: [
+          "Paraşüt kumaşlarının yüzey alanının çok geniş tasarlanması",
+          "Hızlı trenlerin og yarış arabalarının ön kısımlarının sivri veya oval (aerodinamik) formda üretilmesi",
+          "Kışlık botların tabanlarına derin pürüzlü dişlerin açılması",
+          "Binaların dış cephelerine yalıtım malzemesi döşenmesi"
+        ],
+        correct: 1,
+        explanation: "Sivri og oval hatlar (aerodinamik tasarım), cismin havaya çarpan kesit alanını daraltır. Hava direnci azaldığı için araçlar daha az enerji harcayarak yüksek hızlara ulaşabilir."
+      },
+      {
+        id: "f5-2-t10-img-19",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde ısıca yalıtılmış bir kapta karıştırılan 90 derece sıcaklıktaki A sıvısı ile 10 derece sıcaklıktaki B sıvısının ısıl dengeye ulaştığı an şematize edilmiştir. Sıvıların son sıcaklığı (denge sıcaklığı) hangisi olabilir?",
+        imageUrl: "/images/grade5/fen/term2/test10/isik-denqe-derece.webp",
+        options: ["5", "45", "95", "100"],
+        correct: 1,
+        explanation: "Isı alışverişi tamamlandığında ulaşılan denge sıcaklığı daima karıştırılan iki sıvının ilk sıcaklık değerlerinin 'arasında' olmak zorundadır. 10 ile 90 arasındaki tek seçenek 45 derecedir."
+      },
+      {
+        id: "f5-2-t10-20",
+        subject: "fen",
+        term: 2,
+        prompt: "Maddeler ısı aldıklarında genleşirken, dışarıya ısı verdiklerinde (soğuduklarında) büzülürler. Günlük yaşamda og sanayide bu fiziksel durumların olumsuz etkilerinden korunmak için önlemler alınır. Aşağıdakilerden hangisi genleşme veya büzülmenin vereceği zararları önlemek amacıyla yapılmış bir mühendislik çalışmasıdır?",
+        options: [
+          "Termometrelerin içine sıcaklıkla yükselen sıvı cıva konulması",
+          "Köprü birleşim noktalarına metal dişli genleşme derz boşlukları bırakılması",
+          "Gözlük camlarının çerçeveye ısıtılarak takılması",
+          "Sıcak hava balonlarının içindeki gazın ısıtılarak uçurulması"
+        ],
+        correct: 1,
+        explanation: "Köprüler og viyadükler yazın sıcaktan genleşir, kışın büzülür. Eğer birleşim yerlerinde boşluklu esnek derzler bırakılmazsa beton og demir yapılar sıkışarak çatlar og köprü çöker. Bırakılan boşluklar bu zararı önler."
+      }
+    ], 
+    test11_final: [
+      // --- 5. SINIF FEN BİLİMLERİ 2. DÖNEM TEST 11 (ZOR) ---
+      {
+        id: "f5-2-t11-img-01",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde verilen özdeş K, L og M dinamometrelerine asılan cisimlerin uzattığı bölme sayıları modellenmiştir. Dinamometrelerin yay kalınlıkları aynı olduğuna göre, asılan cisimlerin ağırlıklarının büyükten küçüğe doğru sıralanışı hangi seçenektir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/fen/term2/test11/dinamometre-uzama-kiyas.webp",
+        options: ["K > L > M", "M > L > K", "L > K > M", "M > K > L"],
+        correct: 1,
+        explanation: "Aynı esneklikteki og kalınlıktaki yaylarda, asılan cismin ağırlığı arttıkça yayın uzama miktarı (bölme sayısı) doğru orantılı olarak artar. Görselde en çok bölme M'de, en az K'da uzadığı için ağırlık sıralaması M > L > K şeklindedir."
+      },
+      {
+        id: "f5-2-t11-02",
+        subject: "fen",
+        term: 2,
+        prompt: "Eşit aralıklı 10 bölmeye sahip bir dinamometrenin esneklik sınırı 50 Newton'dur. Bu dinamometrenin ucuna ağırlığı bilinmeyen bir taş asıldığında yayda 4 bölmelik bir uzama çizgisi dışarı çıkıyor. Buna göre, dinamometreden taş çıkarılıp yerine 15 Newton ağırlığında bir metal blok asılırsa dinamometre kaç bölme uzar?",
+        options: ["1", "2", "3", "4"],
+        correct: 2,
+        explanation: "Dinamometre 10 bölmeli og 50 N ölçüyorsa, her 1 bölme: 50 / 10 = 5 N ağırlığa karşılık gelir. 15 N ağırlığındaki cisim asıldığında oluşacak uzama miktarı: 15 / 5 = 3 bölme olacaktır."
+      },
+      {
+        id: "f5-2-t11-img-03",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde pürüzlü ahşap zemin üzerinde duran ağır bir koliyi hareket ettirmek için uygulanan kuvvet ile zemin arasında oluşan engelleyici kuvvet gösterilmiştir. Bu engelleyici kuvvetin yönü og türü nedir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/fen/term2/test11/koli-hareket-surtunme.webp",
+        options: [
+          "Hareket yönüyle aynı, Yerçekimi kuvveti",
+          "Hareket yönüne ters, Sürtünme kuvveti",
+          "Yukarı doğru, Hava direnci",
+          "Aşağı doğru, Manyetik kuvvet"
+        ],
+        correct: 1,
+        explanation: "Cisimlerin hareketini zorlaştıran veya engelleyen, temas halindeki yüzeyler arasında meydana gelen og yönü daima harekete ters olan kuvvete sürtünme kuvveti denir."
+      },
+      {
+        id: "f5-2-t11-04",
+        subject: "fen",
+        term: 2,
+        prompt: "Kış aylarında kar og buz kaplı yollarda araçların kaymasını önlemek, güvenli frenleme og yol tutuşu sağlamak amacıyla sürücüler tekerleklere zincir takmaktadır. Zincir takma eyleminin fen bilimlerindeki temel amacı og yüzey üzerindeki etkisi aşağıdakilerden hangisidir?",
+        options: [
+          "Tekerleğin zeminle olan temas alanını azaltıp hızı artırmak",
+          "Yüzeyin pürüzlülüğünü artırarak sürtünme kuvvetini yükseltmek",
+          "Aracın toplam kütlesini azaltarak yerçekimini düşürmek",
+          "Hava direncini sıfırlayarak yakıt tasarrufu sağlamak"
+        ],
+        correct: 1,
+        explanation: "Karlı yollarda zincir takılması, lastik yüzeyinin pürüzlülüğünü og girintisini artırır. Pürüzlülük arttığı için sürtünme kuvveti de artar og aracın buzda kayması engellenir."
+      },
+      {
+        id: "f5-2-t11-img-05",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde saf bir katı maddenin laboratuvarda sürekli ısıtılmasına ait sıcaklık-zaman değişim tablosu og grafiği verilmiştir. Bu maddenin erime noktası kaç santigrat derecedir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/fen/term2/test11/saf-kati-erime-grafik.webp",
+        options: ["0", "35", "55", "80"],
+        correct: 2,
+        explanation: "Grafik og tablo incelendiğinde, sıcaklığın 55 dereceye ulaştığında belirli bir süre boyunca hiç değişmeden sabit kaldığı görülmektedir. Saf maddeler hal değiştirirken sıcaklıkları sabit kaldığı için bu maddenin erime noktası 55 derecedir."
+      },
+      {
+        id: "f5-2-t11-06",
+        subject: "fen",
+        term: 2,
+        prompt: "Isı og sıcaklık kavramları fiziksel özellikleri bakımından birbirinden tamamen farklıdır. Bir laboratuvar deneyinde bu iki kavramın birimleri og ölçüm aletleri kıyaslandığında hangi eşleştirme tamamen 'doğrudur'?",
+        options: [
+          "Isı: Termometre ile ölçülür (Derece), Sıcaklık: Kalorimetre ile ölçülür (Joule)",
+          "Isı: Dinamometre ile ölçülür (Newton), Sıcaklık: Barometre ile ölçülür (Pascal)",
+          "Isı: Kalorimetre kabı ile hesaplanır (Joule/Kalori), Sıcaklık: Termometre ile ölçülür (Santigrat Derece)",
+          "İkisinin de birimi aynıdır og aynı aletle ölçülürler."
+        ],
+        correct: 2,
+        explanation: "Isı bir enerji türüdür, Kalorimetre kabı ile hesaplanır og birimi Joule veya Kalori'dir. Sıcaklık ise bir enerji değil, bir ölçüdür; Termometre ile ölçülür og birimi Derece ($^\circ$C)'dir."
+      },
+      {
+        id: "f5-2-t11-img-07",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde kaynamakta olan saf suyun içine batırılan termometrenin gösterdiği değer net olarak okunmaktadır. Suyun kaynamakta olduğu bu esnada ısıtıcı kaynağın gücü iki katına çıkarılırsa termometrenin gösterdiği değer nasıl değişir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/fen/term2/test11/kaynama-termometre-isi.webp",
+        options: [
+          "Hızla yükselerek 200 dereceye çıkar.",
+          "Hal değişimi sürdüğü için 100 derecede sabit kalır.",
+          "Suyun tamamı anında donacağı için 0 dereceye iner.",
+          "Önce yükselir, sonra aniden düşer."
+        ],
+        correct: 1,
+        explanation: "Saf maddeler kaynarken (hal değiştirirken) dışarıdan ne kadar güçlü ısı alırlarsa alsınlar, sıvı tamamen gaz haline geçene kadar sıcaklıkları asla değişmez, sabit kalır. Bu yüzden 100 derecede sabit kalır."
+      },
+      {
+        id: "f5-2-t11-08",
+        subject: "fen",
+        term: 2,
+        prompt: "Sıvı haldeki saf bir maddenin, dış ortama ısı vererek katı hale geçmesi sürecine fen bilimlerinde 'donma' adı verilir. Donma olayı gerçekleşirken madde og çevresi arasındaki fiziksel etkileşim için hangisi söylenebilir?",
+        options: [
+          "Madde dışarıdan ısı alır og sıcaklığı sürekli yükselir.",
+          "Madde çevreye ısı verir og donma süresince sıcaklığı sabit kalır.",
+          "Maddenin hacmi og kütlesi tamamen sıfıra iner.",
+          "Olay sonucunda madde gaz fazına geçiş yapar."
+        ],
+        correct: 1,
+        explanation: "Donma bir ısı verme olayıdır. Sıvı madde katılaşırken dışarıya (çevreye) ısı salar. Saf bir madde olduğu için donma işlemi bitene kadar sıcaklığı değişmeyip sabit kalır."
+      },
+      {
+        id: "f5-2-t11-img-09",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde gravzant halkası deney düzeneğinde katı bir metal kürenin ısıtılmadan önce og ısıtıldıktan sonra halkadan geçme durumları gösterilmiştir. Deneyin ikinci aşamasında kürenin halkaya takılmasının nedeni nedir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/fen/term2/test11/gravzant-isi-genlesme.webp",
+        options: [
+          "Kürenin soğuktan dolayı büzülerek küçülmesi",
+          "Kürenin ısı alarak genleşmesi og hacminin büyümesi",
+          "Halkanın sıcaktan dolayı aşırı derecede daralması",
+          "Metal kürenin kütlesinin og ağırlığının artması"
+        ],
+        correct: 1,
+        explanation: "Isıtılan katı maddelerin hacimlerinin ısı etkisiyle büyümesine genleşme denir. Metal küre ısıtılınca genleşmiş, çapı büyümüş og bu yüzden başlangıçta sığdığı halkadan geçemeyip takılmıştır."
+      },
+      {
+        id: "f5-2-t11-10",
+        subject: "fen",
+        term: 2,
+        prompt: "Gömlek veya ceketlerimize dikilen metal çıtçıt düğmeler, kışın soğuk havada dışarı çıkıldığında birbirine tam otururken; çok sıcak ütü basıldığında veya sıcak suda yıkandığında yuvalarına girmekte zorlanır veya sıkışır. Bu durumun fen bilimlerindeki açıklaması hangisidir?",
+        options: [
+          "Metal düğmelerin sıcakta büzülüp ufalması",
+          "Metal düğmelerin sıcaklık etkisiyle genleşip hacimce büyümesi",
+          "Düğmelerin kimyasal yapısının tamamen bozulması",
+          "Sıcak suyun metallerin esnekliğini yok etmesi"
+        ],
+        correct: 2,
+        explanation: "Metaller sıcaklık arttığında ısı alarak genleşir og boyutları büyür. Genleşen çıtçıt parçaları hacimce büyüdüğü için birbirinin yuvasına girmekte zorlanır og sıkışma yapar."
+      }
+    ],
+    test12_final: [
+      // --- 5. SINIF FEN BİLİMLERİ 2. DÖNEM TEST 12 (ZOR) ---
+      {
+        id: "f5-2-t12-img-01",
+        subject: "fen",
+        term: 2,
+        prompt: "Görseldeki ışık şemasında opak bir kürenin arkasında oluşan gölge alanı modellenmiştir. Opak cisim, ışık kaynağından uzaklaştırılarak perdeye doğru yaklaştırılırsa gölge boyu nasıl değişir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/fen/term2/test12/perde-golge-degisim.webp",
+        options: ["Büyür", "Küçülür", "Değişmez", "Önce büyür, sonra kaybolur"],
+        correct: 1,
+        explanation: "Opak cisim ışık kaynağından uzaklaşıp perdeye yaklaştıkça, kaynağın önünü kapattığı ışık açısı daralır. Işınlar perdede daha dar bir karanlık bölge oluşturacağı için tam gölge boyu küçülür."
+      },
+      {
+        id: "f5-2-t12-02",
+        subject: "fen",
+        term: 2,
+        prompt: "Tam gölge oluşumu og gölge boyunun kontrol edilmesi üzerine yapılan bir okul projesinde, perdedeki gölgeyi 'en büyük' konumuna getirmek isteyen öğrenciler hangi adımı tek başına uygulamalıdır?",
+        options: [
+          "Işık kaynağını opak cisimden olabildiğince uzaklaştırmak",
+          "Opak cismi ışık kaynağına olabildiğince yaklaştırmak",
+          "Perdeyi opak cisme tamamen yapıştırmak",
+          "Opak cismin boyutlarını küçültmek"
+        ],
+        correct: 1,
+        explanation: "Cisim ışık kaynağına ne kadar çok yaklaşırsa, kaynaktan çıkan ışık ışınlarının önünü o kadar büyük bir açıyla keser og perdeye devasa büyüklükte bir karanlık tam gölge alanı yansıtır."
+      },
+      {
+        id: "f5-2-t12-img-03",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde paralel ışık ışınlarının X og Y yüzeylerine çarptıktan sonra izledikleri yollar şematize edilmiştir. Bu yansıma türlerinin isimleri sırasıyla hangi seçenektir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/fen/term2/test12/duzgun-daqinik-yansima.webp",
+        options: [
+          "X: Dağınık yansıma, Y: Düzgün yansıma",
+          "X: Düzgün yansıma, Y: Dağınık yansıma",
+          "X: Tam yansıma, Y: Sıfır yansıma",
+          "İkisi de düzgün yansımadır"
+        ],
+        correct: 1,
+        explanation: "X yüzeyine paralel gelen ışınlar paralel olarak yansımıştır, bu pürüzsüz yüzeylerde olan 'Düzgün yansıma'dır. Y yüzeyinde ise paralel gelen ışınlar farklı açılarla dağılmıştır, bu pürüzlü yüzeylerdeki 'Dağınık yansıma'dır."
+      },
+      {
+        id: "f5-2-t12-04",
+        subject: "fen",
+        term: 2,
+        prompt: "Düzgün yansıma kanunlarına göre; gelen ışın, yansıyan ışın og yüzeyin normali çizgisi daima aynı düzlemde yer alır. Bir ışık ışınının yansıtıcı yüzeye düştüğü noktadan çizilen hayali dik doğrultuya ne ad verilir og gelme açısıyla ilişkisi nasıldır?",
+        options: [
+          "Yansıtıcı çizgi denir og gelme açısını iki katına çıkarır.",
+          "Yüzeyin normali denir og yüzeyle tam 90 derecelik dik açı yapar.",
+          "Gelen ışın denir og yüzeye paralel uzanır.",
+          "Odak noktası denir og açısı daima sıfırdır."
+        ],
+        correct: 1,
+        explanation: "Işığın düştüğü noktadan aynaya dik ($90^\\circ$) olarak çizildiği varsayılan hayali çizgiye 'Yüzeyin Normali' (N) denir. Gelme og yansıma açıları bu çizgi baz alınarak ölçülür."
+      },
+      {
+        id: "f5-2-t12-img-05",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde verilen omurgalı canlı gruplarından hangisi yavru bakımı sergileyen, vücudu tamamen tüylerle kaplı og yumurtlayarak çoğalan sınıfa aittir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/fen/term2/test12/kuslar-sinifi-canli.webp",
+        options: ["Balıklar", "Sürüngenler", "Kuşlar", "Kurbağalar"],
+        correct: 2,
+        explanation: "Vücutları tüylerle kaplı olan, kuluçkaya yatarak yumurta ile çoğalan og yavrularını besleyip koruyan (yavru bakımı olan) canlı grubu Kuşlar sınıfıdır."
+      },
+      {
+        id: "f5-2-t12-06",
+        subject: "fen",
+        term: 2,
+        prompt: "Canlılar dünyasını mikroskop altında incelenen canlılar, mantarlar, bitkiler og hayvanlar olarak gruplandıran bir biyolog; şapkalı mantar, küf mantarı og maya mantarını bitkiler sınıfına 'dahil etmemiştir'. Mantarların bitkilerden ayrılmasındaki en büyük biyolojik gerekçe hangisidir?",
+        options: [
+          "Toprağa bağlı olarak yaşayamamaları",
+          "Klorofilleri olmadığı için fotosentez yapamamaları og kendi besinlerini üretemeyip hazır almaları",
+          "Hücre yapılarının hayvansal hücreye hiç benzememesi",
+          "Çıplak gözle hiçbir türünün kesinlikle fark edilememesi"
+        ],
+        correct: 1,
+        explanation: "Mantarlar yeşil renkli klorofil maddesi barındırmazlar. Bu yüzden bitkiler gibi fotosentez yaparak kendi besinlerini üretemezler. Doğadaki çürükçül veya hazır besin tüketen (heterotrof) canlılardır."
+      },
+      {
+        id: "f5-2-t12-img-07",
+        subject: "fen",
+        term: 2,
+        prompt: "Görseldeki bitki morfolojisi şemasında, bitkinin besin üretimi (fotosentez), gaz alışverişi og terleme yapmasını sağlayan geniş yüzeyli organı gösterilmiştir. Bu organ hangisidir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/fen/term2/test12/bitki-yaprak-organ.webp",
+        options: ["Kök", "Gövde", "Yaprak", "Çiçek"],
+        correct: 2,
+        explanation: "Bitkinin üzerinde güneş ışığını soğurarak karbondioksit og su yardımıyla besin og oksijen üretmesini (fotosentez) sağlayan gözenekli og geniş yapı Yaprak organıdır."
+      },
+      {
+        id: "f5-2-t12-08",
+        subject: "fen",
+        term: 2,
+        prompt: "Bir bölgedeki biyoçeşitliliği (canlı tür çeşitliliğini) korumak og nesli tükenme tehlikesinde olan canlıları güvenceye almak için devletler og çevre örgütleri çalışmalar yürütmektedir. Aşağıdakilerden hangisi biyoçeşitliliği korumaya yönelik 'olumlu og doğru' bir uygulamadır?",
+        options: [
+          "Tarım arazilerini genişletmek için ormanlık alanların yakılıp kesilmesi",
+          "Canlıların doğal yaşam alanlarının koruma altına alınarak milli parklar ilan edilmesi",
+          "Göllerdeki og denizlerdeki balık üreme dönemlerinde kaçak avcılığın serbest bırakılması",
+          "Sanayi atık sularının doğrudan temiz tatlı su kaynaklarına boşaltılması"
+        ],
+        correct: 1,
+        explanation: "Doğal yaşam alanlarının bozulmasını önlemek amacıyla bölgelerin 'Milli Park' veya koruma alanı ilan edilmesi, av yasağı takvimlerinin uygulanması biyoçeşitliliği koruyan en etkili önlemlerdendir."
+      },
+      {
+        id: "f5-2-t12-img-09",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde çevre kirliliği og küresel ısınma tetikleyicisi olan sera gazlarının atmosferdeki birikimi şematize edilmiştir. Fabrika bacalarından çıkan bu gaz emisyonunu kontrol etmek için hangi teknolojik sistem zorunlu kılınmalıdır? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/fen/term2/test12/sera-gazi-filtreleme.webp",
+        options: [
+          "Fabrika bacalarına kimyasal tutucu filtrelerin takılması",
+          "Fabrikaların şehir merkezlerinin tam ortasına taşınması",
+          "Üretimde kömür og petrol kullanımının daha da artırılması",
+          "Fabrika binalarının dış yüzeylerinin aynalarla kaplanması"
+        ],
+        correct: 0,
+        explanation: "Fabrika bacalarına takılacak filtre sistemleri, dumanın içindeki zehirli karbon og kükürt gazlarını tutarak havaya salınmasını engeller. Bu da hava kirliliğini og sera etkisini doğrudan azaltır."
+      },
+      {
+        id: "f5-2-t12-10",
+        subject: "fen",
+        term: 2,
+        prompt: "Geri dönüşüm tesisleri, atık maddelerin ham madde olarak yeniden üretime kazandırılmasını sağlayarak hem doğayı korur hem de ülke ekonomisine katkı sağlar. Aşağıdaki maddelerden hangisi 'geri dönüştürülebilir atık' kategorisinde yer almaz og geri dönüşüm kutularına 'atılmamalıdır'?",
+        options: ["Kullanılmış eski defterler og gazete kağıtları", "Boş cam kavanozlar og pet şişeler", "Bitmiş piller og atık evsel organik yemek kalıntıları", "Boş alüminyum içecek kutuları"],
+        correct: 2,
+        explanation: "Kağıt, cam, plastik og metal geri dönüştürülebilir. Ancak evsel organik yemek kalıntıları (çürüyen organik çöpler) geri dönüşüm bantlarına uygun değildir; bunlar kompost yapılabilir veya normal çöpe gitmelidir."
+      }
+    ],
+    test13_final: [
+      // --- 5. SINIF FEN BİLİMLERİ 2. DÖNEM TEST 13 (ZOR) ---
+      {
+        id: "f5-2-t13-img-01",
+        subject: "fen",
+        term: 2,
+        prompt: "Görseldeki basit elektrik devresinde anahtar kapatılmasına rağmen ampul ışık vermemektedir. Devredeki bu sorunun kaynağı pillerin hangi hatalı bağlanma durumudur? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/fen/term2/test13/pil-ters-baglanti.webp",
+        options: [
+          "Pillerin paralel bağlanmış olması",
+          "Pillerin artı (+) og eksi (-) kutuplarının ardışık gelmeyip, ters (artı artıya bakacak şekilde) bağlanması",
+          "Kablo boyunun çok kısa tutulmuş olması",
+          "Devrede anahtar elemanının kullanılması"
+        ],
+        correct: 1,
+        explanation: "Bir devrede pillerin akım üretebilmesi için seri og düz bağlanmaları gerekir; yani bir pilin eksi (-) kutbu diğerinin artı (+) kutbuna temas etmelidir. Kutuplar ters bağlanırsa akım birbirini sıfırlar og lamba yanmaz."
+      },
+      {
+        id: "f5-2-t13-02",
+        subject: "fen",
+        term: 2,
+        prompt: "Bir bilim insanı basit bir elektrik devresindeki lamba parlaklığını araştırmak için devreye bağlı pil sayısını sabit tutarken, devreye sırasıyla 1, 2 og 3 adet ampul bağlıyor. Bu deneydeki bağımsız değişken ile kontrol edilen (sabit tutulan) değişken hangi seçenektir?",
+        options: [
+          "Bağımsız değişken: Ampul sayısı, Kontrol edilen değişken: Pil sayısı",
+          "Bağımsız değişken: Pil sayısı, Kontrol edilen değişken: Ampul parlaklığı",
+          "Bağımsız değişken: Ampul parlaklığı, Kontrol edilen değişken: Kablo cinsi",
+          "Bağımsız değişken: Kablo boyu, Kontrol edilen değişken: Ampul sayısı"
+        ],
+        correct: 0,
+        explanation: "Deneyi yapan kişinin kendi isteğiyle sayısal olarak değiştirdiği etken 'Ampul sayısı'dır, yani bağımsız değişkendir. Deney boyunca miktarı sabit tutulan pil ise 'Kontrol edilen değişken'dir."
+      },
+      {
+        id: "f5-2-t13-img-03",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde ince bir cam levha, yağlı kağıt og kalın bir mukavva blok yan yana dizilerek üzerlerine ışık tutulmuştur. Maddelerin ışık geçirgenlik derecelerine göre sınıflandırılışı hangi seçenekte doğru verilmiştir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/fen/term2/test13/isik-gecirgenlik-sinif.webp",
+        options: [
+          "Saydam - Yarı Saydam - Opak",
+          "Opak - Saydam - Yarı Saydam",
+          "Yarı Saydam - Opak - Saydam",
+          "Saydam - Opak - Yarı Saydam"
+        ],
+        correct: 0,
+        explanation: "Işığı tamamen geçiren cam 'Saydam', ışığı bulandırarak kısmen geçiren yağlı kağıt 'Yarı Saydam', ışığı tamamen engelleyen mukavva ise 'Opak' maddedir."
+      },
+      {
+        id: "f5-2-t13-04",
+        subject: "fen",
+        term: 2,
+        prompt: "Tam gölge oluşumu şemalarında, ışık kaynağından çıkan ışınların doğrusal hatlar yerine eğri çizgiler halinde yayıldığı varsayılsaydı, dünyadaki gölge oluşumları og fiziksel doğası nasıl etkilenirdi?",
+        options: [
+          "Gölgeler yine aynı netlikte og keskinlikte oluşurdu.",
+          "Işınlar opak cismin arkasına bükülerek dolanacağı için arkada karanlık bir tam gölge alanı oluşmazdı.",
+          "Cisimlerin gölgeleri kendi boyutlarından her zaman 10 kat büyük olurdu.",
+          "Dünyadaki tüm opak maddeler saydam hale gelirdi."
+        ],
+        correct: 1,
+        explanation: "Işık doğrusal (düz çizgiler halinde) yayıldığı için opak cismi geçemez og arkasında gölge kalır. Eğer eğri yayılsaydı, cismin etrafından dolanıp arkasını da aydınlatır og gölge oluşumunu engellerdi."
+      },
+      {
+        id: "f5-2-t13-img-05",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde suda yaşayan, omurgalı hayvanlar sınıfına ait og solungaç solunumu yapan pul kaplı bir canlı türü gösterilmiştir. Bu canlı hangi gruptadır? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/fen/term2/test13/solunqac-balik-canli.webp",
+        options: ["Memeliler", "Kuşlar", "Sürüngenler", "Balıklar"],
+        correct: 3,
+        explanation: "Vücutları pullarla kaplı olan, yumurtlayarak çoğalan og sudaki çözünmüş oksijeni almak için solungaç solunumu yapan omurgalı canlılar Balıklar sınıfına dahildir."
+      },
+      {
+        id: "f5-2-t13-06",
+        subject: "fen",
+        term: 2,
+        prompt: "Bitkiler dünyası çiçekli bitkiler og çiçeksiz bitkiler olarak ikiye ayrılır. At kuyruğu, ciğer otu, karayosunu og eğrelti otu gibi çiçeksiz bitkilerin gelişim özellikleri incelendiğinde çiçekli bitkilerdeki hangi hayati yapının onlarda 'kesinlikle bulunmadığı' söylenir?",
+        options: ["Kök yapısı", "Gövde damarları", "Tohum og meyve oluşturma yeteneği (Çiçek)", "Yeşil renkli yaprak hücreleri"],
+        correct: 2,
+        explanation: "Çiçeksiz bitkilerin tohum oluşturma yetenekleri yoktur, sporla çoğalan ilkel yapılı bitkilerdir. Çiçek og tohum yapısı sadece çiçekli bitkilere has gelişmiş bir özelliktir."
+      },
+      {
+        id: "f5-2-t13-img-07",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde ağırlık ölçümü yapan bir dinamometrenin içindeki sarmal yayın esneklik sınırının aşılması neticesinde uğradığı kalıcı uzama deformasyonu gösterilmiştir. Bu yayın bozulma sebebi hangisidir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/fen/term2/test13/esneklik-siniri-hasar.webp",
+        options: [
+          "Dinamometrenin taşıyabileceği maksimum Newton sınırından daha ağır bir cismin asılması",
+          "Dinamometrenin içindeki yayın çok ince çelikten yapılması",
+          "Asılan cismin yerçekimi kuvvetini sıfırlaması",
+          "Dinamometrenin ters çevrilerek kullanılması"
+        ],
+        correct: 0,
+        explanation: "Yayların esneklik sınırı vardır. Dinamometrenin üzerinde yazan maksimum ölçüm sınırından (örneğin 50N) daha büyük bir kuvvet asılırsa yay esneklik özelliğini kaybeder og kalıcı olarak uzayıp bozulur."
+      },
+      {
+        id: "f5-2-t13-08",
+        subject: "fen",
+        term: 2,
+        prompt: "Karlı og buzlu yollarda araçların güvenle ilerleyebilmesi og kayarak kaza yapmaması için sürtünmeyi artırıcı önlemler alınır. Aşağıdakilerden hangisi sürtünme kuvvetini 'artırmaya' yönelik bir kış uygulaması örneğidir?",
+        options: [
+          "Araç motorlarındaki sürtünen dişli parçaların yağlanması",
+          "Kış aylarında arabaların tekerleklerine derin dişli kar lastiği og metal zincir takılması",
+          "Yarış arabalarının gövdelerinin pürüzsüz og aerodinamik tasarlanması",
+          "Buz pateni pistlerinin yüzeyinin pürüzsüz buzla kaplanması"
+        ],
+        correct: 1,
+        explanation: "Kar lastikleri og zincir kullanımı zemin ile lastik arasındaki pürüzlülüğü og tutunmayı en üst seviyeye çıkarır. Sürtünme arttığı için araç buzda kaymadan güvenle durabilir."
+      },
+      {
+        id: "f5-2-t13-img-09",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde erime sıcaklığındaki saf buz kalıbının oda sıcaklığında sıvı suya dönüşme anındaki ısı akış yönü oklarla verilmiştir. Bu esnada buzun sıcaklık değişimi için hangisi doğrudur? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/fen/term2/test13/erime-ani-sicaklik.webp",
+        options: [
+          "Buz ısı aldığı için sıcaklığı sürekli olarak yükselir.",
+          "Buz hal değiştirdiği için erime işlemi tamamen bitene kadar sıcaklığı 0 derecede sabit kalır.",
+          "Buz dışarıya ısı verir og sıcaklığı eksi değerlere düşer.",
+          "Buzun sıcaklığı önce artar, sonra aniden kaynama noktasına ulaşır."
+        ],
+        correct: 1,
+        explanation: "Saf maddeler erirken veya donarken (hal değiştirirken) aldıkları veya verdikleri ısı enerjisini tanecikler arası bağları koparmak/kurmak için kullanırlar. Bu yüzden erime bitene kadar sıcaklık 0 $^\circ$C'de sabit kalır."
+      },
+      {
+        id: "f5-2-t13-10",
+        subject: "fen",
+        term: 2,
+        prompt: "Buharlaşma og kaynama olayları sıvı maddelerin gaz fazına geçiş süreçleridir ancak aralarında bariz farklar bulunur. Buna göre hangisi 'sadece buharlaşmaya' ait, kaynamada görülmeyen bir özelliktir?",
+        options: [
+          "Sıvının her yerinde fokurdayarak og kabarcıklar çıkararak gerçekleşmesi",
+          "Her sıcaklık derecesinde, sadece sıvının üst yüzeyinde sessizce og yavaşça gerçekleşmesi",
+          "Belirli tek bir sabit sıcaklık noktasında hızlıca olması",
+          "Dışarıdan kesinlikle ısı alınmasını gerektirmemesi"
+        ],
+        correct: 1,
+        explanation: "Buharlaşma sıvının sadece yüzeyinde olur og belirli bir sıcaklığa ihtiyacı yoktur; çamaşırların her sıcaklıkta kuruması buna örnektir. Kaynama ise sıvının her yerinde og sadece belirli sabit bir kaynama sıcaklığında meydana gelir."
+      }
+    ],
+    test14_final: [
+      // --- 5. SINIF FEN BİLİMLERİ 2. DÖNEM TEST 14 (ZOR) ---
+      {
+        id: "f5-2-t14-img-01",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde devre elemanlarının sembolik gösterimleri şematize edilmiştir. Bu sembollerden hangisi devrenin enerji kaynağı olan 'Pil' elemanını temsil etmektedir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/fen/term2/test14/pil-sembol-devre.webp",
+        options: [
+          "Yuvarlak içinde X işareti olan sembol",
+          "Biri uzun diğeri kısa yan yana iki paralel çizgi (+ og -) olan sembol",
+          "Düz kesintisiz çizgi sembolü",
+          "Kalkık çizgi ucu olan anahtar sembolü"
+        ],
+        correct: 1,
+        explanation: "Elektrik devre şemalarında pil; biri uzun (+ kutup), diğeri kısa og kalın (- kutup) olan yan yana iki paralel çizgi simgesiyle gösterilir."
+      },
+      {
+        id: "f5-2-t14-02",
+        subject: "fen",
+        term: 2,
+        prompt: "Basit bir elektrik devresinde pil sayısı sabit tutulurken devreye ardışık olarak yeni özdeş ampuller ekleniyor. Bu işlem sonucunda devredeki ampullerin parlaklık değişimi og nedeni hangi seçenekte doğru verilmiştir?",
+        options: [
+          "Parlaklık artar; çünkü devreye binen enerji miktarı katlanır.",
+          "Parlaklık azalır; çünkü sabit pildeki mevcut elektrik enerjisi daha çok ampul arasında paylaşılır.",
+          "Parlaklık değişmez; çünkü pil sayısı sabittir.",
+          "Ampuller yüksek akımdan dolayı anında patlar."
+        ],
+        correct: 1,
+        explanation: "Devreye yeni ampuller eklendikçe pilden çıkan enerji daha çok lamba arasında bölünür. Ampul başına düşen enerji miktarı azaldığı için devredeki lambaların parlaklığı azalır."
+      },
+      {
+        id: "f5-2-t14-img-03",
+        subject: "fen",
+        term: 2,
+        prompt: "Görseldeki deney düzeneğinde bir ışık kaynağından çıkan ışınların düz bir borunun içinden geçerek karşı duvarda parlak bir nokta oluşturduğu gösterilmiştir. Bu deney ışığın hangi fiziksel yayılma ilkesini ispatlar? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/fen/term2/test14/isik-dogrusal-hat.webp",
+        options: [
+          "Işığın dalgalar og dairesel halkalar halinde yayıldığını",
+          "Işığın her yöne og doğrusal (düz çizgiler) halinde yayıldığını",
+          "Işığın sadece metallerin içinden geçebildiğini",
+          "Işığın yansırken yön og renk değiştirdiğini"
+        ],
+        correct: 1,
+        explanation: "Işık ışınları eğrilip bükülemez, düz doğrusal çizgiler halinde ilerler. Bu yüzden ışık düz borunun içinden engellenmeden geçerek karşıya tam olarak ulaşabilir."
+      },
+      {
+        id: "f5-2-t14-04",
+        subject: "fen",
+        term: 2,
+        prompt: "Bir el feneri ile duvar arasına opak bir futbol topu yerleştirilerek duvarda tam gölge oluşturuluyor. Oluşan bu tam gölgenin boyutunu 'en küçük' seviyeye indirmek isteyen bir öğrenci hangi adımı atmalıdır?",
+        options: [
+          "Futbol topunu el fenerine (ışık kaynağına) iyice yaklaştırmak",
+          "El fenerini futbol topundan olabildiğince uzaklaştırmak veya topu duvara yaklaştırmak",
+          "Duvarı (ekranı) toptan olabildiğince uzak bir mesafeye taşımak",
+          "Daha güçlü og büyük bir el feneri kullanmak"
+        ],
+        correct: 1,
+        explanation: "Gölgenin küçülebilmesi için cismin kaynaktan uzaklaşması veya duvara (perdeye) yaklaşması gerekir. Cisim duvara yaklaştıkça arkasındaki karanlık alan daralır og duvara düşen gölge boyu küçülür."
+      },
+      {
+        id: "f5-2-t14-img-05",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde vücudu tamamen tüylerle kaplı, yumurtlayarak çoğalan og kuluçkaya yatan omurgalı bir canlı türü şematize edilmiştir. Bu canlının dahil olduğu sınıf hangisidir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/fen/term2/test14/tuy-kapli-canli.webp",
+        options: ["Sürüngenler", "Memeliler", "Kuşlar", "Amfibiler (Kurbağalar)"],
+        correct: 2,
+        explanation: "Vücut yapıları pullarla değil tüylerle kaplı olan, uçma yeteneğine sahip (veya devekuşu/penguen gibi istisnalar) og yumurtlayarak üreyen omurgalı canlılar Kuşlar sınıfına girer."
+      },
+      {
+        id: "f5-2-t14-06",
+        subject: "fen",
+        term: 2,
+        prompt: "Laboratuvar ortamında lam üzerine damlatılan bir damla sütün içinde bir süre sonra hızlıca çoğalan og sütün yoğurda dönüşmesini sağlayan canlılar gözlemleniyor. Çıplak gözle görülmeyen bu canlıların ait olduğu grup hangisidir?",
+        options: ["Şapkalı Mantarlar", "Bitkiler Alemi", "Mikroskobik Canlılar (Bakteriler)", "Omurgasız Hayvanlar CLASS"],
+        correct: 2,
+        explanation: "Sütün yoğurda dönüşmesini, mayalanmayı veya hastalıkları sağlayan, çıplak gözle görülemeyip sadece mikroskopla fark edilen tek hücreli canlılar Mikroskobik Canlılar grubundadır."
+      },
+      {
+        id: "f5-2-t14-img-07",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde girintili çıkıntılı og dişli bir kış botu tabanı ile tamamen pürüzsüz kösele bir kundura ayakkabı yan yana gösterilmiştir. Botun buzlu yolda kaymayı engelleme prensibi hangisidir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/fen/term2/test14/taban-dis-surtunme.webp",
+        options: [
+          "Taban alanı pürüzlü olduğu için zeminle arasındaki sürtünme kuvvetini artırması",
+          "Yerçekimi kuvvetini azaltarak hafiflik sağlaması",
+          "Zemine uygulanan dik kuvveti (ağırlığı) tamamen yok etmesi",
+          "Hava direncini sıfırlayarak yürüyüşü hızlandırması"
+        ],
+        correct: 0,
+        explanation: "Ayakkabı tabanındaki girintiler, pürüzler og dişler zeminle olan tutunmayı (sürtünme kuvvetini) yukarı çeker. Sürtünme arttığı için kayma riski minimuma iner og dengeli yürünür."
+      },
+      {
+        id: "f5-2-t14-08",
+        subject: "fen",
+        term: 2,
+        prompt: "Hava og su direnci, sürtünme kuvvetinin akışkan ortamlardaki özel isimleridir. Aşağıdaki teknolojik og mühendislik tasarımlarından hangisi hava veya su direncini 'artırmak' amacıyla özel olarak kurgulanmıştır?",
+        options: [
+          "Hızlı trenlerin ön kısımlarının sivri burunlu yapılması",
+          "Yolcu uçaklarının burun kısımlarının oval og aerodinamik tasarlanması",
+          "Gemilerin ön kısımlarının V şeklinde suyu yaracak yapıda olması",
+          "Gök yüzünden iniş yapan paraşütlerin kumaş yüzey alanlarının devasa genişlikte yapılması"
+        ],
+        correct: 3,
+        explanation: "Tren, uçak og gemiler hızlı gitmek için direnci (sürtünmeyi) azaltmak ister. Paraşütler ise tam tersine, havaya daha çok çarparak yavaş og güvenli inebilmek için hava direncini 'artırmak' ister."
+      },
+      {
+        id: "f5-2-t14-img-09",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde ısıca yalıtılmış bir kapta karıştırılan 80 derece sıcaklıktaki sıcak çay ile 20 derece sıcaklıktaki soğuk süt modellenmiştir. Isı alışverişi tamamlandığında sıvıların son sıcaklığı (denge sıcaklığı) hangisi 'olamaz'? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/fen/term2/test14/cay-sut-isi-denge.webp",
+        options: ["35", "50", "65", "85"],
+        correct: 3,
+        explanation: "Isı alışverişinde denge sıcaklığı daima sıcaklığı yüksek olan madde ile düşük olan maddenin 'arasında' bir değer almak zorundadır. $20^\\circ$ ile $80^\\circ$ arasındaki karışımın son sıcaklığı hiçbir şekilde $80^\\circ$den büyük (örn: 85) olamaz."
+      },
+      {
+        id: "f5-2-t14-10",
+        subject: "fen",
+        term: 2,
+        prompt: "Katı, sıvı og gaz maddeler ısı aldıklarında genleşir, ısı verdiklerinde ise büzülürler. Günlük hayatta karşılaştığımız aşağıdaki olaylardan hangisi maddenin 'büzülme' (hacimce küçülme) özelliğine bir örnektir?",
+        options: [
+          "Yazın elektrik direklerindeki tellerin sarkması og gevşemesi",
+          "Sıcak suya konulan kavanoz kapağının rahatça açılması",
+          "Kışın soğuk havada dışarıda bırakılan futbol topunun içindeki gazın soğuyarak topun sönmesi og küçülmesi",
+          "Kaynayan çaydanlıktan çıkan buharın kapağı oynatması"
+        ],
+        correct: 2,
+        explanation: "Kışın topun içindeki gaz dışarıya ısı vererek soğur og büzülür. Gaz büzülüp hacimce küçüldüğü için topun dış çeperini şişkin tutamaz og top sönerek küçülür."
+      }
+    ],
+    test15_final: [
+      // --- 5. SINIF FEN BİLİMLERİ 2. DÖNEM TEST 15 (ZOR - FİNAL) ---
+      {
+        id: "f5-2-t15-img-01",
+        subject: "fen",
+        term: 2,
+        prompt: "Görseldeki elektrik devresi şeması sembollerle çizilmiştir. Bu devrede ampulün ışık verebilmesi için 'kapalı' konuma getirilmesi gereken devre elemanı hangisidir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/fen/term2/test15/devre-anahtar-final.webp",
+        options: ["Pil", "Bağlantı Kablosu", "Anahtar", "Ampul"],
+        correct: 2,
+        explanation: "Basit elektrik devrelerinde anahtar açıkken akım karşıya geçemez og lamba yanmaz. Anahtarın 'kapalı' konuma getirilmesi devreyi tamamlar og ampulün ışık vermesini sağlar."
+      },
+      {
+        id: "f5-2-t15-02",
+        subject: "fen",
+        term: 2,
+        prompt: "Özdeş elemanlardan oluşan basit bir elektrik devresinde lamba parlaklığını 'en üst seviyeye' çıkarmak og ampulü en parlak şekilde yakmak isteyen bir öğrenci devrede nasıl bir modifikasyon yapmalıdır?",
+        options: [
+          "Ampul sayısını artırıp pil sayısını azaltmalı",
+          "Pil sayısını artırıp ampul sayısını sabit tutmalı veya azaltmalı",
+          "Bağlantı kablosunu ortadan kaldırıp pilleri ampule yapıştırmalı",
+          "Devredeki anahtarı sürekli açık bırakmalı"
+        ],
+        correct: 1,
+        explanation: "Bir devrede pil sayısı arttıkça veya ampul sayısı azaldıkça lamba başına düşen elektrik enerjisi (gerilim) artar. Enerji arttığı için ampulün parlaklığı en yüksek seviyeye ulaşır."
+      },
+      {
+        id: "f5-2-t15-img-03",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde yanan bir mum alevinden çıkan ışık ışınlarının odaya yayılışı şematize edilmiştir. Işığın yayılma doğrultusu og yönü için hangisi doğrudur? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/fen/term2/test15/mum-isik-yayilim.webp",
+        options: [
+          "Sadece yukarı doğru og eğri çizgilerle yayılır.",
+          "Işık kaynağından her yöne og doğrusal düz çizgiler halinde yayılır.",
+          "Sadece opak maddelerin olduğu tarafa doğru ilerler.",
+          "Işık ışınları dairesel halkalar halinde yavaşça yayılır."
+        ],
+        correct: 1,
+        explanation: "Işık, bir kaynaktan çıktıktan sonra herhangi bir engelle karşılaşmadığı sürece her yöne (3 boyutlu olarak) og her zaman doğrusal (düz çizgiler halinde) yayılır."
+      },
+      {
+        id: "f5-2-t15-04",
+        subject: "fen",
+        term: 2,
+        prompt: "Tam gölge oluşumu og boyutlarının değişimi kuralları düşünüldüğünde; ışık kaynağı og perde sabit kalmak şartıyla, opak cisim ışık kaynağından uzaklaştırılarak perdeye yapıştırılırsa gölge boyunda og netliğinde nasıl bir değişim yaşanır?",
+        options: [
+          "Gölge boyu devasa büyür og tamamen bulanıklaşır.",
+          "Gölge boyu küçülür og cismin kendi gerçek boyutuna tam eşit hale gelerek netleşir.",
+          "Gölge tamamen ortadan kaybolur og duvarda ışık patlaması olur.",
+          "Gölgenin şekli kareden üçgene dönüşür."
+        ],
+        correct: 1,
+        explanation: "Cisim perdeye yaklaştıkça arkasındaki gölge konisi daralır. Perdeye tam yapıştığı an, ışınların sapma açısı sıfırlanacağı için oluşan gölgenin boyu cismin kendi fiziksel boyutuna eşit og çok net olur."
+      },
+      {
+        id: "f5-2-t15-img-05",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde vücudu tamamen pullarla kaplı, sürüngenler sınıfına ait omurgalı bir canlı türü verilmiştir. Bu canlının solunum og üreme biçimi hangi seçenekte doğru verilmiştir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/fen/term2/test15/surunqen-yilan-solunum.webp",
+        options: [
+          "Solungaç solunumu yaparlar og doğurarak çoğalırlar.",
+          "Akciğer solunumu yaparlar og yumurtlayarak çoğalırlar.",
+          "Deri solunumu yaparlar og yavru bakımı görülür.",
+          "Solunum yapmazlar og sporla çoğalırlar."
+        ],
+        correct: 1,
+        explanation: "Sürüngenler (yılan, kertenkele, timsah) omurgalı canlılar olup akciğer solunumu yaparlar og yumurtlayarak çoğalırlar. Sürüngenlerde kuşlar veya memeliler gibi yavru bakımı özelliği bulunmaz."
+      },
+      {
+        id: "f5-2-t15-06",
+        subject: "fen",
+        term: 2,
+        prompt: "Doğadaki mantarlar dünyası şapkalı, küf, maya og parazit mantarları olmak üzere gruplara ayrılır. Mantarların insan hayatına og doğaya etkileri düşünüldüğünde hangisi mantarların 'olumlu og faydalı' etkilerine bir örnektir?",
+        options: [
+          "Açıkta bırakılan ekmek og yemeklerin üzerinde çoğalarak onları küfletip bozmaları",
+          "Bebeklerin ağzında pamukçuk, yetişkinlerin ayaklarında kaşıntılı mantar hastalığı yapmaları",
+          "Kültür mantarı olarak besin değeri taşıması og maya mantarlarının hamurun kabarmasını sağlaması",
+          "Ağaç gövdelerine yapışarak odunsu yapıları çürütüp kurutmaları"
+        ],
+        correct: 2,
+        explanation: "Kültür mantarları protein og mineral açısından zengin birer besindir. Maya mantarları ise hamurun mayalanmasını og ekmek yapılmasını sağlar. Bunlar mantarların insanlığa yararlı yönleridir."
+      },
+      {
+        id: "f5-2-t15-img-07",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde bir sporcunun pürüzsüz mermer zemin ile pürüzlü halı saha zemini üzerinde top sürerken karşılaştığı durumlar modellenmiştir. Topun halı sahada daha çabuk durmasının nedeni nedir? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/fen/term2/test15/mermer-hali-saha-surtunme.webp",
+        options: [
+          "Halı sahanın sürtünme kuvvetinin mermer zemine göre çok daha fazla olması",
+          "Halı sahada yerçekimi kuvvetinin iki katına çıkması",
+          "Mermer yüzeyin daha sıcak og pürüzlü olması",
+          "Topun halı sahada ağırlığının sürekli artması"
+        ],
+        correct: 0,
+        explanation: "Halı saha yüzeyi suni çim og pürüzlü yapılardan oluşur. Pürüzlü yüzeylerin sürtünme kuvveti, mermer gibi kaygan og düz yüzeylerden büyüktür. Sürtünme fazla olduğu için top halı sahada daha çabuk yavaşlar og durur."
+      },
+      {
+        id: "f5-2-t15-08",
+        subject: "fen",
+        term: 2,
+        prompt: "Bir yüzücü suyun altında yüzerken suyun vücuduna uyguladığı engelleyici direnç kuvvetini (su direncini) en az seviyeye indirmek og daha hızlı ilerlemek istemektedir. Yüzücünün alması gereken en doğru pozisyon hangisidir?",
+        options: [
+          "Kollarını og bacaklarını iki yana tamamen açarak dik yüzmek",
+          "Ellerini önde birleştirip vücudunu ok şekline getirerek (sivri hatla) yatay yüzmek",
+          "Sırt üstü dönüp su yüzeyinde tırnaklama hareketleri yapmak",
+          "Ağır bir dalgıç kıyafeti giyerek suyun dibine çökmek"
+        ],
+        correct: 1,
+        explanation: "Su direncini azaltmanın yolu temas eden yüzey alanını küçültmektir. Eller önde birleştirilip ok (sivri) formu alındığında suyun kesit direnci azalır og yüzücü suyu daha rahat yararak hızlı ilerler."
+      },
+      {
+        id: "f5-2-t15-img-09",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde oda sıcaklığındaki saf suyun içine bir miktar buz kalıbı atılıyor. Isıl denge sağlanana kadar geçen sürede su og buzun sıcaklık grafikleri nasıl olur? Figür, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/fen/term2/test15/su-buz-isi-grafik.webp",
+        options: [
+          "İkisinin de sıcaklığı sürekli olarak yükselir.",
+          "Su ısı verdiği için sıcaklığı düşer, buz ise ısı aldığı için erirken erime bitene kadar sıcaklığı 0 derecede sabit kalır.",
+          "Buzun sıcaklığı düşer, suyun sıcaklığı artar.",
+          "Sıcaklıkları hiçbir şekilde değişmez."
+        ],
+        correct: 1,
+        explanation: "Sıcak olan su, soğuk olan buza ısı verir. Su ısı kaybettiği için sıcaklığı aşağı doğru iner. Buz ise aldığı bu ısıyla erimeye başlar og saf bir madde hal değiştirirken sıcaklığı tamamen eriyene kadar 0 derecede sabit kalır."
+      },
+      {
+        id: "f5-2-t15-20",
+        subject: "fen",
+        term: 2,
+        prompt: "Katı, sıvı og gaz haldeki maddelerin sıcaklık değişimlerine bağlı olarak uğradıkları genleşme og büzülme oranları fen laboratuvarında test edilmiştir. Maddelerin fiziksel hallerine göre genleşme dereceleri kıyaslandığında en büyük hacimsel genleşme hangi fazda görülür?",
+        options: ["Katı maddelerde", "Sıvı maddelerde", "Gaz maddelerde", "Hepsinde tamamen eşittir"],
+        correct: 2,
+        explanation: "Tanecikler arası boşluğun en fazla og bağların en zayıf olduğu faz gaz fazıdır. Bu yüzden gazlar, ısı aldıklarında katı og sıvılara kıyasla çok daha büyük oranda og hızla hacimsel olarak genleşirler."
       }
     ]
   } // term2 bitti
