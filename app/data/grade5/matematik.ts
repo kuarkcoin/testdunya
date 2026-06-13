@@ -6130,7 +6130,7 @@ export const matematikData: SubjectData = {
         prompt: "Bir laboratuvarda bulunan 3,5 Litre saf suyun içerisine 500 mL asit eklenerek bir karışım elde ediliyor. Elde edilen bu kimyasal karışım toplam kaç santililitredir (cL)?",
         options: ["40", "400", "4000", "40000"],
         correct: 1,
-        explanation: $3,5\text{ L} = 3500\text{ mL}$. Karışım: $3500 + 500 = 4000$ mL yapar. Santilitreye çevirmek için 10'a böleriz: 400 cL olur."
+        explanation: "3,5 L = 3500 mL yapar. Karışım: 3500 + 500 = 4000 mL eder. Santilitreye çevirmek için 10'a böleriz, sonuç 400 cL olur."
       },
       {
         id: "m5-2-t14-img-13",
