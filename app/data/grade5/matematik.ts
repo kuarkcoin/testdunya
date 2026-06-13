@@ -5440,7 +5440,7 @@ export const matematikData: SubjectData = {
     test11: [
       // --- 5. SINIF MATEMATİK 2. DÖNEM TEST 11 (ZOR) ---
       {
-        id: "m5-2-t11-img-01",
+        id: "m5-2-t11-01",
         subject: "matematik",
         term: 2,
         prompt: "Görseldeki eş karelerden oluşmuş şeklin alanı 144 $\\text{cm}^2$dir. Buna göre bu şeklin tüm dış çevre uzunluğu kaç santmetredir?",
