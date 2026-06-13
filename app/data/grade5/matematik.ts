@@ -5449,14 +5449,14 @@ export const matematikData: SubjectData = {
         correct: 2,
         explanation: "Şekil 4 eş kareden oluşmaktadır. Bir karenin alanı: $144 \\div 4 = 36\\text{ cm}^2$, kenarı ise 6 cm'dir. Dış çevrede toplam 12 kenar sayıldığı için çevre: $12 \\times 6 = 72$ cm olur."
       },
-      {
+     {
         id: "m5-2-t11-02",
         subject: "matematik",
         term: 2,
         prompt: "Bir uzunluk dönüşüm zincirinde 0,45 kilometre + 350 metre toplamının milimetre cinsinden değeri aşağıdakilerden hangisidir?",
         options: ["80000", "800000", "8000000", "80000000"],
         correct: 1,
-        explanation: $0,45\text{ km} = 450\text{ m}$. Toplam: $450 + 350 = 800$ metre yapar. 1 metre = 1000 milimetre olduğundan 800 metre = 800000 milimetredir."
+        explanation: "0,45 km = 450 m yapar. Toplam: 450 + 350 = 800 metre olur. 1 metre = 1000 milimetre olduğundan 800 metre = 800000 milimetredir."
       },
       {
         id: "m5-2-t11-img-03",
