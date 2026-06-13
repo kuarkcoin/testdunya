@@ -4991,7 +4991,7 @@ export const matematikData: SubjectData = {
         prompt: "Bir zeytinyağı üreticisi 0,05 kilolitre zeytinyağının yarısını 500 mL'lik, kalan yarısını ise 250 mL'lik şişelere dolduracaktır. Bu işlem için toplam kaç adet şişe kullanılması gerekir?",
         options: ["100", "150", "200", "250"],
         correct: 1,
-        explanation: $0,05\text{ kL} = 50\text{ L} = 50000\text{ mL}$. Yarısı 25000 mL yapar. $25000 \\div 500 = 50$ şişe. Diğer yarısı: $25000 \\div 250 = 100$ şişe. Toplam: $50 + 100 = 150$ şişe gerekir."
+        explanation: "0,05 kL = 50 L = 50000 mL yapar. Yarısı 25000 mL eder. 25000 / 500 = 50 şişe, diğer yarısı ise 25000 / 250 = 100 şişedir. Toplamda 50 + 100 = 150 şişe gerekir."
       },
       {
         id: "m5-2-t8-img-15",
