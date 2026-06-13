@@ -4018,6 +4018,937 @@ export const ingilizceData: SubjectData = {
         correct: 2,
         explanation: "Sokak hayvanlarına zarar vermemek (shouldn't harm) aksine onları korumak (protect) gerekir."
       }
-    ]// <-- test2 dizisi bitti
-  } // <-- term2 nesnesi bitti
-}; // <-- ingilizceData ana nesnesi bitti (Dosyanın tamamen kapanışı)
+    ],
+    test7_yeni: [
+      // --- 5. SINIF İNGİLİZCE 2. DÖNEM TEST 7 (GÖRSEL ODAKLI) ---
+      {
+        id: "e5-2-t7-img-01",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki darmadağınık odaya göre Murat'ın yapması gereken zorunluluk hangisidir? 'Murat must ____ his bedroom right now.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test7/messy-room.webp",
+        options: ["wash", "tidy up", "paint", "leave"],
+        correct: 1,
+        explanation: "Oda darmadağınık (messy) olduğu için odasını toplamalıdır (tidy up)."
+      },
+      {
+        id: "e5-2-t7-img-02",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki fırtınalı ve şimşekli hava durumuna göre boşluğu doldurunuz. 'It is ________ today. We should stay at home.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test7/weather-chart.webp",
+        options: ["sunny", "warm", "hot", "stormy"],
+        correct: 3,
+        explanation: "Görselde şimşek og fırtına olduğu için hava fırtınalıdır (stormy)."
+      },
+      {
+        id: "e5-2-t7-img-03",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görselde ateş ölçer kullanan og üşüyen çocuğun sağlık problemi nedir? 'He feels cold. He has a ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test7/boy-sneezing.webp",
+        options: ["broken leg", "toothache", "fever", "sore arm"],
+        correct: 2,
+        explanation: "Ateşi yükselen og üşüyen kişinin hastalığı ateştir (fever)."
+      },
+      {
+        id: "e5-2-t7-img-04",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki doğum günü davetiyesine göre parti saat kaçta başlamaktadır? 'What time does the party start?'",
+        imageUrl: "/images/grade5/ingilizce/term2/test7/party-invitation.webp",
+        options: ["At two o'clock", "At half past two", "At quarter to three", "At five o'clock"],
+        correct: 1,
+        explanation: "Davetiyede saat 14:30 yazmaktadır. Buçuklu saatler 'half past' ile söylenir (half past two)."
+      },
+      {
+        id: "e5-2-t7-img-05",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki haritaya göre müze (museum) binası nerededir? 'The museum is ____ the school and the bank.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test7/town-map.webp",
+        options: ["next to", "opposite", "between", "behind"],
+        correct: 2,
+        explanation: "Müze, okul ile bankanın tam arasındadır (between)."
+      },
+      {
+        id: "e5-2-t7-img-06",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki uzun boyunlu hayvana göre cümleyi tamamlayınız. 'The ________ has a long neck and eats leaves.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test7/giraffe-safari.webp",
+        options: ["elephant", "lion", "monkey", "giraffe"],
+        correct: 2,
+        explanation: "Uzun boyunlu Afrika hayvanı zürafadır (giraffe)."
+      },
+      {
+        id: "e5-2-t7-img-07",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki salata hazırlama adımına göre yapılan eylem hangisidir? 'She is ____ the fresh strawberries.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test7/recipe-steps.webp",
+        options: ["boiling", "chopping", "baking", "frying"],
+        correct: 1,
+        explanation: "Meyvelerin bıçakla doğranması eylemi 'chopping' (doğramak) olarak ifade edilir."
+      },
+      {
+        id: "e5-2-t7-img-08",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki sütun grafiğine göre en popüler film türü hangisidir? 'The most popular movie genre is ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test7/movie-genres-graph.webp",
+        options: ["Horror", "Comedy", "Documentary", "Action"],
+        correct: 1,
+        explanation: "Grafikteki en yüksek sütun komedi (Comedy) filmlerine aittir."
+      },
+      {
+        id: "e5-2-t7-img-09",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki süpermarket kasasındaki müşteri ne yapmaktadır? 'The customer is ____ for the food.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test7/supermarket-cashier.webp",
+        options: ["cooking", "buying tickets", "paying", "eating"],
+        correct: 2,
+        explanation: "Kasada aldıklarının ücretini ödemektedir (paying)."
+      },
+      {
+        id: "e5-2-t7-img-10",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki kurak çöl ekosisteminde hangi hayvan yaşayabilir? 'A ________ can survive in the dry desert.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test7/desert-habitat.webp",
+        options: ["penguin", "polar bear", "camel", "dolphin"],
+        correct: 2,
+        explanation: "Çöl şartlarına ve susuzluğa uyum sağlayan hayvan devedir (camel)."
+      }
+    ],
+    test8_yeni: [
+      // --- 5. SINIF İNGİLİZCE 2. DÖNEM TEST 8 (GÖRSEL ODAKLI) ---
+      {
+        id: "e5-2-t8-img-01",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki Sci-Fi film logosu hangi program türünü temsil eder? 'This program is a ____ film.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test8/sci-fi-logo.webp",
+        options: ["cooking", "science fiction", "sports", "comedy"],
+        correct: 1,
+        explanation: "Sci-Fi ifadesi bilim kurgu (science fiction) filmlerini temsil eder."
+      },
+      {
+        id: "e5-2-t8-img-02",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki yön tabelasına göre sağa dönerseniz nereye ulaşırsınız? 'Turn right for the ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test8/turn-right-sign.webp",
+        options: ["Bakery", "Post Office", "Police Station", "Library"],
+        correct: 2,
+        explanation: "Sağa dönüş okunun yanında polis karakolu (Police Station) yazmaktadır."
+      },
+      {
+        id: "e5-2-t8-img-03",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki siyah-beyaz taşlara sahip zeka oyunu hangisidir? 'They are playing ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test8/chess-pieces.webp",
+        options: ["tag", "dodgeball", "chess", "hopscotch"],
+        correct: 2,
+        explanation: "Taşlar og kareli tahta satranç (chess) oyununa aittir."
+      },
+      {
+        id: "e5-2-t8-img-04",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki kükreyen yabani hayvanın ismi nedir? 'The ________ is the king of the forest.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test8/lion-king.webp",
+        options: ["monkey", "elephant", "snake", "lion"],
+        correct: 2,
+        explanation: "Ormanların kralı olarak bilinen etçil canlı aslandır (lion)."
+      },
+      {
+        id: "e5-2-t8-img-05",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki dijital saat kaçı göstermektedir? 'What time is it?'",
+        imageUrl: "/images/grade5/ingilizce/term2/test8/digital-time.webp",
+        options: ["It is quarter past ten.", "It is half past ten.", "It is quarter to eleven.", "It is eleven o'clock."],
+        correct: 2,
+        explanation: "Saat 10:45'tir, yani on bire çeyrek vardır (quarter to eleven)."
+      },
+      {
+        id: "e5-2-t8-img-06",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görselde çevre bilincini gösteren kutular neyi simgeler? 'We should ____ our plastic waste.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test8/recycling-bins.webp",
+        options: ["burn", "recycle", "throw", "waste"],
+        correct: 1,
+        explanation: "Görseldeki logo og kutular geri dönüşümü (recycle) temsil eder."
+      },
+      {
+        id: "e5-2-t8-img-07",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki çocuğun beden diline göre neresi ağrımaktadır? 'He has a bad ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test8/boy-stomachache.webp",
+        options: ["headache", "toothache", "stomachache", "sore throat"],
+        correct: 2,
+        explanation: "Çocuk iki eliyle karnını tuttuğu için mide/karın ağrısı (stomachache) çekmektedir."
+      },
+      {
+        id: "e5-2-t8-img-08",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki tabelaya göre evcil hayvan için ne söylenebilir? 'You must ________ your dog here.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test8/walk-dog.webp",
+        options: ["feed", "wash", "walk", "sell"],
+        correct: 2,
+        explanation: "Tasmayla köpek yürütme sembolü köpeği gezdirmek (walk the dog) anlamına gelir."
+      },
+      {
+        id: "e5-2-t8-img-09",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görselde bacalarından duman çıkan fabrika neye neden olur? 'It causes air ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test8/hava-kirliliqi-fabrika.webp",
+        options: ["protection", "pollution", "cleaning", "saving"],
+        correct: 1,
+        explanation: "Fabrika dumanları hava kirliliğine (air pollution) yol açar."
+      },
+      {
+        id: "e5-2-t8-img-10",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki takvim yaprağı hangi ayı göstermektedir? 'Look at the calendar. It is ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test8/calendar-page.webp",
+        options: ["January", "April", "June", "October"],
+        correct: 2,
+        explanation: "Takvimin üzerinde büyük harflerle Haziran (June) ayı basılıdır."
+      }
+    ],
+    test9_yeni: [
+      // --- 5. SINIF İNGİLİZCE 2. DÖNEM TEST 9 (GÖRSEL ODAKLI) ---
+      {
+        id: "e5-2-t9-img-01",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki dizine göre eczane kaçıncı kattadır? 'The pharmacy is on ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test9/pharmacy-floor.webp",
+        options: ["Floor 1", "Floor 2", "Floor 3", "Floor 4"],
+        correct: 1,
+        explanation: "Listede Pharmacy kelimesinin karşısında Floor 2 (2. Kat) yazmaktadır."
+      },
+      {
+        id: "e5-2-t9-img-02",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki eliyle çenesini tutan çocuğun sağlık problemi nedir? 'He has a terrible ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test9/boy-toothache.webp",
+        options: ["headache", "toothache", "runny nose", "flu"],
+        correct: 1,
+        explanation: "Yanağını og diş bölgesini tutan çocuğun sorunu diş ağrısıdır (toothache)."
+      },
+      {
+        id: "e5-2-t9-img-03",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki devasa okyanus canlısının türü hangisidir? 'The ________ is a huge sea mammal.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test9/whale-ocean.webp",
+        options: ["shark", "starfish", "blue whale", "turtle"],
+        correct: 2,
+        explanation: "Sırtından su püskürten bu büyük okyanus memelisi mavi balinadır (blue whale)."
+      },
+      {
+        id: "e5-2-t9-img-04",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki harita navigasyon okuna göre kütüphaneye nasıl gidilir? 'Go straight and ____ on Oxford Street.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test9/bus-stop-library.webp",
+        options: ["turn right", "turn left", "go back", "cross"],
+        correct: 1,
+        explanation: "Haritada ok işareti Oxford sokağından sola dönüşü (turn left) emreder."
+      },
+      {
+        id: "e5-2-t9-img-05",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki unlu mamuller og ekmeklerin satıldığı dükkan hangisidir? 'We can buy bread from the ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test9/bakery-shop.webp",
+        options: ["pharmacy", "butcher", "bakery", "library"],
+        correct: 2,
+        explanation: "Ekmek og unlu gıdalar fırından (bakery) satın alınır."
+      },
+      {
+        id: "e5-2-t9-img-06",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görselde süslenen odadaki eksik parti malzemesi hangisidir? 'There are no ________ in the picture.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test9/party-balloons.webp",
+        options: ["balloons", "party hats", "candles", "streamers"],
+        correct: 2,
+        explanation: "Odada balon og şapkalar asılıdır ancak doğum günü mumları (candles) görünmemektedir."
+      },
+      {
+        id: "e5-2-t9-img-07",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki televizyon programında ne gösterilmektedir? 'They are watching a sports ________.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test9/football-match.webp",
+        options: ["cartoon", "news", "match", "documentary"],
+        correct: 2,
+        explanation: "Ekranda yeşil sahada futbol maçı (match) oynandığı görülmektedir."
+      },
+      {
+        id: "e5-2-t9-img-08",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki hayvanın fiziksel özelliğine göre boşluğu doldurunuz. 'An elephant has a long ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test9/elephant-trunk.webp",
+        options: ["neck", "wing", "trunk", "fin"],
+        notes: "Trunk hortum demektir.",
+        options_labels: ["boyun", "kanat", "hortum", "yüzgeç"],
+        correct: 2,
+        explanation: "Fillerin ayırt edici uzun organı hortumdur (trunk)."
+      },
+      {
+        id: "e5-2-t9-img-09",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görselde buz küplerine doğru ilerleyen oklar neyi simgeler? 'The ice is receiving ________ from the air.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test9/buz-erime-isi.webp",
+        options: ["cold", "heat", "water", "rain"],
+        correct: 1,
+        explanation: "Eriyen buz dışarıdan sıcaklık/ısı (heat) almaktadır."
+      },
+      {
+        id: "e5-2-t9-img-10",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki çocuğun ders çalışma rutini saat kaçtadır? 'He does homework at ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test9/homework-clock.webp",
+        options: ["four o'clock", "five o'clock", "six o'clock", "seven o'clock"],
+        correct: 0,
+        explanation: "Çocuğun odasındaki saat tam olarak dördü (four o'clock) göstermektedir."
+      }
+    ],
+    test10_yeni: [
+      // --- 5. SINIF İNGİLİZCE 2. DÖNEM TEST 10 (GÖRSEL ODAKLI) ---
+      {
+        id: "e5-2-t10-img-01",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki sinema biletine göre gösterim ayı hangisidir? 'The movie is in ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test10/movie-ticket.webp",
+        options: ["May", "June", "August", "December"],
+        correct: 1,
+        explanation: "Biletin üzerinde tarih olarak '24 June' (Haziran) yazmaktadır."
+      },
+      {
+        id: "e5-2-t10-img-02",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki sabah rutinine göre kız ne yapmaktadır? 'She ________ every morning.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test10/brushing-teeth.webp",
+        options: ["goes to bed", "brushes her teeth", "has breakfast", "washes her car"],
+        correct: 1,
+        explanation: "Kız çocuğu banyoda dişlerini fırçalamaktadır (brushes her teeth)."
+      },
+      {
+        id: "e5-2-t10-img-03",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki kutup canlısı aşağıdakilerden hangisidir? 'The ________ can swim fast in cold water.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test10/polar-penguin.webp",
+        options: ["parrot", "eagle", "penguin", "butterfly"],
+        correct: 2,
+        explanation: "Kutuplarda yaşayan og uçamayan deniz kuşu penguendir (penguin)."
+      },
+      {
+        id: "e5-2-t10-img-04",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki dükkan tabelasında ne yazmaktadır? 'This is the ________ shop.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test10/butcher-sign.webp",
+        options: ["butcher's", "florist", "toy", "bakery"],
+        correct: 0,
+        explanation: "Tabelada et resmiyle birlikte 'The Butcher's' (Kasap) yazmaktadır."
+      },
+      {
+        id: "e5-2-t10-img-05",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki film afişi hangi film türüne aittir? 'This is a ________ poster.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test10/scifi-poster.webp",
+        options: ["comedy", "documentary", "science fiction", "horror"],
+        correct: 2,
+        explanation: "Uzay gemileri barındıran afiş bilim kurgu (science fiction) türüdür."
+      },
+      {
+        id: "e5-2-t10-img-06",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki iki ayakkabı tabanından botun özelliği nedir? 'The winter boot has a ________ surface.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test10/kis-botu-surtunme.webp",
+        options: ["smooth", "rough / rougher", "soft", "thin"],
+        correct: 1,
+        explanation: "Kış botunun tabanı kaymayı önlemek için daha tırtıklı/pürüzlüdür (rougher)."
+      },
+      {
+        id: "e5-2-t10-img-07",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki el feneri og boru deneyi ışığın hangi özelliğini gösterir? 'Light travels in a ________ line.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test10/isik-dogrusal-boru.webp",
+        options: ["curved", "straight", "slow", "broken"],
+        correct: 1,
+        explanation: "Işık ışınları kıvrılamaz, düz/doğrusal (straight) bir hat halinde yayılır."
+      },
+      {
+        id: "e5-2-t10-img-08",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki bardaklar arası oklar termodinamikte neyi simgeler? 'The ________ flows from hot water to cold water.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test10/isi-alisveris-denge.webp",
+        options: ["ice", "heat", "mass", "weight"],
+        correct: 1,
+        explanation: "Isı enerjisi (heat) daima sıcaktan soğuğa doğru akar."
+      },
+      {
+        id: "e5-2-t10-img-09",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki çocuk ne oynamaktadır? 'He loves playing ________ with his friends.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test10/dodgeball-game.webp",
+        options: ["chess", "checkers", "dodgeball", "puzzle"],
+        correct: 2,
+        explanation: "Çocukların topla birbirini vurmaya çalıştığı oyun yakartoptur (dodgeball)."
+      },
+      {
+        id: "e5-2-t10-img-10",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki otopark planına göre güvenlik için ne kullanılmalıdır? 'We need a safety ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test10/otopark-cevre-bariyer.webp",
+        options: ["window", "barrier", "table", "chair"],
+        correct: 1,
+        explanation: "Otopark giriş og kenarlarında bariyer (barrier) sistemleri bulunur."
+      }
+    ],
+    test11_yeni: [
+      // --- 5. SINIF İNGİLİZCE 2. DÖNEM TEST 11 (GÖRSEL ODAKLI) ---
+      {
+        id: "e5-2-t11-img-01",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki 4 kareden oluşan geometrik örüntünün alanı verilmiştir. Karenin bir kenarı kaç cm'dir? 'One side of the square is ____ cm.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test11/es-kare-cevre.webp",
+        options: ["4", "6", "8", "12"],
+        correct: 1,
+        explanation: "Toplam alan 144 ise bir kare 36 yapar og kenarı 6 cm (six) olur."
+      },
+      {
+        id: "e5-2-t11-img-02",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki sanayi tipi büyük varilin içindeki sıvı ölçüsü birimi nedir? 'The volume of the big barrel is expressed in ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test11/varil-sivi-birim.webp",
+        options: ["Millilitre", "Centilitre", "Litre", "Kilolitre / Cubic metre"],
+        correct: 3,
+        explanation: "Büyük depoların hacimsel ölçüleri Kilolitre veya metreküp bazında ifade edilir."
+      },
+      {
+        id: "e5-2-t11-img-03",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki ikizkenar yamuğun alt taban uzunluğu üst tabanın kaç katıdır? 'The bottom side is ________ times the top side.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test11/yamuk-oranti-cevre.webp",
+        options: ["two", "three", "four", "five"],
+        correct: 0,
+        explanation: "Soruda alt tabanın üst tabanın 2 katı (two times) olduğu belirtilmiştir."
+      },
+      {
+        id: "e5-2-t11-img-04",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki şirketin ilk 4 ayındaki kar-zarar tablosu hangi grafik türüdür? 'This is a ________ chart.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test11/kar-cizgi-grafik.webp",
+        options: ["bar", "pie", "line", "histogram"],
+        correct: 2,
+        explanation: "Noktaların çizgilerle birleştiği bu grafik türü çizgi grafiğidir (line chart)."
+      },
+      {
+        id: "e5-2-t11-img-05",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki koordinat düzleminde A noktasının yerini bulunuz. 'Point A is at the ________.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test11/koordinat-nokta-bakis.webp",
+        options: ["center", "intersection", "top", "bottom"],
+        correct: 1,
+        explanation: "A noktası iki çizginin kesişim noktasında (intersection) yer alır."
+      },
+      {
+        id: "e5-2-t11-img-06",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki 3D blok model toplam kaç adet birim küpten oluşmaktadır? 'There are ________ small cubes in the model.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test11/kup-blok-hacim.webp",
+        options: ["18", "24", "27", "32"],
+        correct: 2,
+        explanation: "Küp blokları sayıldığında yapının hacmi 27 (twenty-seven) birim küptür."
+      },
+      {
+        id: "e5-2-t11-img-07",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki sporcu kronometresi kaç saniyeyi göstermektedir? 'The total time is ________ seconds.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test11/kronometre-sn-cevir.webp",
+        options: ["125", "145", "165", "185"],
+        correct: 1,
+        explanation: "Ekranda 2 dk 25 sn yazıyor. Saniyeye çevrilirse 120 + 25 = 145 saniye yapar."
+      },
+      {
+        id: "e5-2-t11-img-08",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki uçurtma benzeri geometrik dörtgenin ismi nedir? 'This geometry shape is a/an ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test11/deltoid-ic-aci.webp",
+        options: ["square", "rectangle", "deltoid", "trapezoid"],
+        correct: 2,
+        explanation: "İki çift eşit kenarı olan bu uçurtma şekli deltoiddir (deltoid)."
+      },
+      {
+        id: "e5-2-t11-img-09",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki ızgara zemin üzerinde boyanmış alan kaç birimkaredir? 'The shaded area is ________ units.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test11/tarali-alan-toplam.webp",
+        options: ["40", "50", "60", "70"],
+        correct: 1,
+        explanation: "Taralı alan parçaları hesaplandığında toplam alan 50 (fifty) birim karedir."
+      },
+      {
+        id: "e5-2-t11-img-10",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki yakıt paneline göre ibre deponun kaçta kaçını göstermektedir? 'The tank is ________ full.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test11/yakit-depo-kesir.webp",
+        options: ["one-fourth", "half", "three-fourths", "empty"],
+        correct: 0,
+        explanation: "Gösterge deponun 1/4'lük kısmını (one-fourth) yani çeyreğini işaret ediyor."
+      }
+    ],
+    test12_yeni: [
+      // --- 5. SINIF İNGİLİZCE 2. DÖNEM TEST 12 (GÖRSEL ODAKLI) ---
+      {
+        id: "e5-2-t12-img-01",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki kılavuz çizgilerle verilen açılardan hangisi bir geniş açıdır? 'Angle ____ is an obtuse angle.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test12/izgara-aci-turleri.webp",
+        options: ["A", "B", "C", "D"],
+        correct: 1,
+        explanation: "B açısı 90 dereceden büyük olduğu için geniş açıdır (obtuse angle)."
+      },
+      {
+        id: "e5-2-t12-img-02",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görselde iki şeklin birleşimiyle oluşan büyük yeni çokgen kaç kenarlıdır? 'The final big shape has ________ sides.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test12/sekil-birlesim-kenar.webp",
+        options: ["four", "five", "six", "seven"],
+        correct: 0,
+        explanation: "Parçalar birleştiğinde dış hatlar yine 4 kenarlı (four) bir geometri oluşturur."
+      },
+      {
+        id: "e5-2-t12-img-03",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki ilkokul meyve tablosu grafik türlerinden hangisidir? 'This is a ________ graph.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test12/meyve-nesne-grafik.webp",
+        options: ["bar", "line", "pictograph / object", "pie"],
+        correct: 2,
+        explanation: "Nesne resimleriyle oluşturulan bu grafiklere nesne/resim grafiği (pictograph) denir."
+      },
+      {
+        id: "e5-2-t12-img-04",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki fotoğraf çerçevesinin ahşap kenar kalınlığı kaç cm'dir? 'The thickness of the frame is ____ cm.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test12/cerceve-kalinlik-cevre.webp",
+        options: ["1", "2", "3", "4"],
+        correct: 1,
+        explanation: "Çerçevenin her kenarındaki tahta kalınlığı şemada 2 cm (two) olarak verilmiştir."
+      },
+      {
+        id: "e5-2-t12-img-05",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görselde paralelkenarın içine çizilen dik üçgenin dik açısı kaç derecedir? 'The angle of the right triangle is ________ degrees.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test12/paralel-ucgen-alanfark.webp",
+        options: ["45", "60", "90", "120"],
+        correct: 2,
+        explanation: "Dik üçgenlerin dik köşe açısı daima 90 derecedir (ninety)."
+      },
+      {
+        id: "e5-2-t12-img-06",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki standart büyük plastik damacana toplam kaç Litre su almaktadır? 'The capacity of the water bottle is ____ Litres.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test12/damacana-kalan-su.webp",
+        options: ["5", "10", "15", "19"],
+        correct: 3,
+        explanation: "Büyük damacanaların standart su kapasitesi 19 Litredir (nineteen)."
+      },
+      {
+        id: "e5-2-t12-img-07",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki uçuş bilgi panosuna göre uçağın kalkış saati kaçtır? 'The departure time of the plane is ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test12/ucak-saat-cizelge.webp",
+        options: ["14:30", "15:30", "18:45", "19:45"],
+        correct: 0,
+        explanation: "Panoda 'Kalkış Saat: 14:30' yazısı açıkça okunmaktadır."
+      },
+      {
+        id: "e5-2-t12-img-08",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki eşkenar dörtgenin dar açısı 70 derecedir. Komşu geniş açısı kaç derecedir? 'The obtuse angle is ________ degrees.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test12/eskenar-dortgen-soru.webp",
+        options: ["70", "90", "110", "120"],
+        correct: 2,
+        explanation: "Komşu açı toplamı 180 olacağından geniş açı 110 derecedir (one hundred and ten)."
+      },
+      {
+        id: "e5-2-t12-img-09",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki tarım arazisi planına göre yeşil alanlar neyi temsil eder? 'The green areas show the ________ fields.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test12/tarim-arazi-donum.webp",
+        options: ["crop / cultivation", "desert", "road", "building"],
+        correct: 0,
+        explanation: "Yeşil alanlar tarımsal ekim og mahsul (crop/cultivation) tarlalarını simgeler."
+      },
+      {
+        id: "e5-2-t12-img-10",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki küçük meyve suyu kutusunun ön yüzünde yazan hacim değeri nedir? 'The volume of the juice box is ____ mL.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test12/meyvesuyu-koli-sivi.webp",
+        options: ["200", "250", "330", "500"],
+        correct: 0,
+        explanation: "Kutunun üzerinde net olarak '200 mL' ibaresi yer almaktadır."
+      }
+    ],
+    test13_yeni: [
+      // --- 5. SINIF İNGİLİZCE 2. DÖNEM TEST 13 (GÖRSEL ODAKLI) ---
+      {
+        id: "e5-2-t13-img-01",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki koordinat rotasına göre araç toplam kaç birim sağa gitmiştir? 'The vehicle moved ________ units to the right.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test13/arac-izgara-rota.webp",
+        options: ["two", "three", "four", "five"],
+        correct: 2,
+        explanation: "Sağa doğru atılan ilk adım çizgisi sayıldığında 4 birim (four) olduğu görülür."
+      },
+      {
+        id: "e5-2-t13-img-02",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki paralelkenarın içine çizilen üçgenin tepe noktası hangi kenara değmektedir? 'The top of the triangle touches the ________ side.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test13/paralelkenar-ic-ucgen.webp",
+        options: ["bottom", "top", "left", "right"],
+        correct: 1,
+        explanation: "Üçgenin tepe sivri ucu üst kenara (top side) değmektedir."
+      },
+      {
+        id: "e5-2-t13-img-03",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki tarlanın hasat grafiğinin dikey ekseni hangi ölçü birimidir? 'The vertical axis shows the weight in ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test13/hasat-sutun-grafik.webp",
+        options: ["kilograms", "grams", "tons", "pounds"],
+        correct: 2,
+        explanation: "Tarımsal üretim ton (tons) cinsinden dikey eksende ölçeklendirilmiştir."
+      },
+      {
+        id: "e5-2-t13-img-04",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görselde yan yana birleşen eşkenar üçgenlerin oluşturduğu geometrik şekil hangisidir? 'The final long shape looks like a ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test13/eskenar-ucgen-zincir-cevre.webp",
+        options: ["circle", "zigzag band", "cube", "cylinder"],
+        correct: 1,
+        explanation: "Üçgenlerin ardışık birleşimi bir zikzak şerit (zigzag band) formu oluşturmuştur."
+      },
+      {
+        id: "e5-2-t13-img-05",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki büyük bahçenin içine yapılan yürüyüş yolunun genişliği kaç metredir? 'The width of the walking path is ____ meters.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test13/bahce-yol-alanfark.webp",
+        options: ["1", "2", "3", "4"],
+        correct: 1,
+        explanation: "Şemadaki gri çerçeve yürüyüş yolunun kalınlığı 2 metre (two) olarak etiketlenmiştir."
+      },
+      {
+        id: "e5-2-t13-img-06",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki tıbbi şırınganın içindeki sıvı seviyesi kaç mL çizgisine denk gelmektedir? 'The liquid level in the syringe is ____ mL.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test13/siringa-sivi-desilitre.webp",
+        options: ["10", "20", "30", "50"],
+        correct: 1,
+        explanation: "Şırınganın haznesindeki piston tam olarak 20 mL (twenty) çizgisinde durmaktadır."
+      },
+      {
+        id: "e5-2-t13-img-07",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki uçak biletine göre uçağın varış (landing) saati kaçtır? 'The arrival time on the ticket is ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test13/bilet-sure-fark.webp",
+        options: ["08:15", "10:15", "11:15", "12:15"],
+        correct: 2,
+        explanation: "Bilet kartının sağ tarafında 'Varış: 11:15' yazısı yer almaktadır."
+      },
+      {
+        id: "e5-2-t13-img-08",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki ABCD yamuğunun alt iç açısı 60 derecedir. Bu köşenin üstündeki bütünler geniş açı kaç derecedir? 'The upper angle is ________ degrees.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test13/yamuk-genis-aci-bul.webp",
+        options: ["100", "120", "130", "140"],
+        correct: 1,
+        explanation: "Paralel kenar doğrultusundan ötürü üst açı 180 - 60 = 120 derecedir (one hundred and twenty)."
+      },
+      {
+        id: "e5-2-t13-img-09",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki büyük şehir parkı planının alanı kaç metrekaredir? 'The area of the city park is ________ square meters.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test13/park-alan-ar.webp",
+        options: ["1000", "2000", "4000", "5000"],
+        correct: 2,
+        explanation: "Plan şeması üzerinde alanın büyüklüğü 4000 metrekare (four thousand) olarak etiketlenmiştir."
+      },
+      {
+        id: "e5-2-t13-img-10",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki iki zeytinyağı tenekesinden büyük olanı kaç Litredir? 'The big olive oil can is ____ Litres.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test13/teneke-yag-oran.webp",
+        options: ["5", "10", "15", "20"],
+        correct: 1,
+        explanation: "Büyük metal tenekenin üzerinde '10 L' ibaresi yazılıdır."
+      }
+    ],
+    test14_yeni: [
+      // --- 5. SINIF İNGİLİZCE 2. DÖNEM TEST 14 (GÖRSEL ODAKLI) ---
+      {
+        id: "e5-2-t14-img-01",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki geniş açılı üçgende dik yükseklik çizgisi nereye inmektedir? 'The height line falls in the ________ region.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test14/ucgen-dis-yukseklik.webp",
+        options: ["inner", "outer", "center", "corner"],
+        correct: 1,
+        explanation: "Geniş açılı üçgenlerde dik yükseklik üçgenin dış bölgesine (outer region) kesikli çizgilerle iner."
+      },
+      {
+        id: "e5-2-t14-img-02",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görselde dik yamuğun köşegeniyle ayrılan boyalı üçgenin alanı kaç santimetrekaredir? 'The shaded area is ________ cm2.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test14/dik-yamuk-boyali-ucgen.webp",
+        options: ["12", "18", "24", "36"],
+        correct: 2,
+        explanation: "Geometrik formül adımları çözüldüğünde boyalı dik üçgen alanı 24 (twenty-four) çıkar."
+      },
+      {
+        id: "e5-2-t14-img-03",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki sıcaklık değişim grafiğinde çizginin tamamen düz og yatay olduğu saat aralığı hangisidir? 'The line is horizontal between ________.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test14/sicaklik-sabit-cizgi.webp",
+        options: ["10:00 - 11:00", "11:00 - 12:00", "12:00 - 13:00", "13:00 - 14:00"],
+        correct: 1,
+        explanation: "Grafikteki çizgi hat 11:00 ile 12:00 arasında düz/sabit kalmıştır."
+      },
+      {
+        id: "e5-2-t14-img-04",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki büyük karenin orta noktaları birleşince içeride oluşan şekil hangisidir? 'The inner shape is a smaller ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test14/kare-ic-kare-alan.webp",
+        options: ["circle", "triangle", "square", "hexagon"],
+        correct: 2,
+        explanation: "Karenin kenar ortaylarının birleşmesi içeride daha küçük bir kare (square) oluşturur."
+      },
+      {
+        id: "e5-2-t14-img-05",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki kareli zemin üzerine çizilmiş merdiven formundaki şeklin alanı kaç birimkaredir? 'The total area is ________ units.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test14/karmasik-sekil-alan.webp",
+        options: ["35", "42", "48", "54"],
+        correct: 1,
+        explanation: "Birim kareler tek tek sayıldığında toplam alan 42 (forty-two) birimkaredir."
+      },
+      {
+        id: "e5-2-t14-img-06",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki su deposunun doluluk oranını belirten kesir hangisidir? 'The water tank is ________ full.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test14/tank-dolu-bos-oran.webp",
+        options: ["one-fifth", "two-fifths", "three-fifths", "four-fifth"],
+        correct: 1,
+        explanation: "Deponun 5 eş parçaya bölündüğü og 2 parçasının mavi suyla dolu olduğu (two-fifths) görülmektedir."
+      },
+      {
+        id: "e5-2-t14-img-07",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki kum saati döngüsü hangi fiziksel sürecin ölçümünü simgeler? 'The hourglass icon represents ________.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test14/kumsaati-tur-hesap.webp",
+        options: ["mass", "weight", "time", "speed"],
+        correct: 2,
+        explanation: "Kum saati og zaman döngüleri zaman (time) kavramını simgeler."
+      },
+      {
+        id: "e5-2-t14-img-08",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki ikizkenar yamuğun alt taban köşe açısı kaç derecedir? 'The bottom base angle is ____ degrees.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test14/yamuk-aci-kombinasyon.webp",
+        options: ["45", "55", "90", "125"],
+        correct: 1,
+        explanation: "Şemada sol alt köşedeki açının değeri 55 (fifty-five) olarak açıkça basılmıştır."
+      },
+      {
+        id: "e5-2-t14-img-09",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki çitlerle çevrili büyük dikdörtgen arsanın alanı kaç metrekaredir? 'The area of the land is ________ m2.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test14/arsa-hektar-alan.webp",
+        options: ["10000", "20000", "40000", "50000"],
+        correct: 1,
+        explanation: "Arsa görselinin tam ortasında alanın boyutu '20000 m2' (twenty thousand) olarak yazmaktadır."
+      },
+      {
+        id: "e5-2-t14-img-10",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki dereceli kimya kabının içindeki sıvı seviyesi kaç mL'dir? 'The volume of liquid in the beaker is ____ mL.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test14/kap-sivi-yari-dokum.webp",
+        options: ["1000", "1500", "2000", "2500"],
+        correct: 3,
+        explanation: "Cam kabın üzerindeki sıvı seviyesi tam olarak 2500 mL (two thousand five hundred) çizgisindedir."
+      }
+    ],
+    test15_yeni: [
+      // --- 5. SINIF İNGİLİZCE 2. DÖNEM TEST 15 (GÖRSEL ODAKLI - FİNAL) ---
+      {
+        id: "e5-2-t15-img-01",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki koordinat düzlemi benzeri harita ızgarasında kırmızı renkli nokta hangi harfle adlandırılmıştır? 'The red dot is point ____.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test15/final-izgara-konum.webp",
+        options: ["K", "L", "M", "N"],
+        correct: 0,
+        explanation: "Şemada kırmızı renkli nokta parlak bir 'K' harfi ile etiketlenmiştir."
+      },
+      {
+        id: "e5-2-t15-img-02",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki üçgenin iç açıları verilmiştir. Bu üçgen açısına göre nasıldır? 'This is a/an ________ triangle.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test15/final-ucgen-cesit.webp",
+        options: ["right", "obtuse", "acute-angled", "equilateral"],
+        correct: 2,
+        explanation: "Tüm açıları 90 dereceden küçük (50, 60, 70) olduğu için dar açılı (acute-angled) üçgendir."
+      },
+      {
+        id: "e5-2-t15-img-03",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki daire grafiğinde boyanmış dilimin yüzdelik payı kaçtır? 'The shaded slice shows ________ percent.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test15/final-daire-yuzde.webp",
+        options: ["25", "35", "50", "65"],
+        correct: 1,
+        explanation: "Grafik diliminin üzerinde net olarak '%35' (thirty-five) ibaresi yazmaktadır."
+      },
+      {
+        id: "e5-2-t15-img-04",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki virajlı og düzlükleri olan araba pistinin ismi nedir? 'This is a racing ________.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test15/final-pist-cevre.webp",
+        options: ["pool", "track / trackway", "field", "court"],
+        correct: 1,
+        explanation: "Yarış arabalarının og motorların döndüğü bu yollara yarış pisti/parkuru (racing track) denir."
+      },
+      {
+        id: "e5-2-t15-img-05",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki paralelkenarın alt taban kenar uzunluğu kaç cm'dir? 'The base of the parallelogram is ____ cm.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test15/final-paralel-alan.webp",
+        options: ["5", "8", "10", "12"],
+        correct: 2,
+        explanation: "Paralelkenarın alt taban çizgisi hizasında '10 cm' (ten) yazmaktadır."
+      },
+      {
+        id: "e5-2-t15-img-06",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki büyük sanayi yağ bidonunun ön yüzünde yazan hacim değeri nedir? 'The capacity of the oil drum is ____ Litres.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test15/final-varil-yag-kalan.webp",
+        options: ["40", "50", "60", "80"],
+        correct: 2,
+        explanation: "Mavi endüstriyel varilin üzerinde kalın puntolarla '60 L' (sixty) yazmaktadır."
+      },
+      {
+        id: "e5-2-t15-img-07",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki duvar takvimi üzerinde iki farklı tarih hangi renk halka içine alınmıştır? 'The dates are marked with ________ circles.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test15/final-takvim-hafta.webp",
+        options: ["blue", "green", "red", "black"],
+        correct: 2,
+        explanation: "Takvim yaprağındaki tarihler belirgin kırmızı renkli (red) dairelerle işaretlenmiştir."
+      },
+      {
+        id: "e5-2-t15-img-08",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görseldeki paralelkenarın sol alt iç açısının ölçüsü kaç derecedir? 'The corner angle is ____ degrees.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test15/final-paralel-aci-soru.webp",
+        options: ["45", "55", "125", "135"],
+        correct: 1,
+        explanation: "Sol alt köşedeki açının yayında '55 derece' (fifty-five) yazmaktadır."
+      },
+      {
+        id: "e5-2-t15-img-09",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görselde kare ızgara üzerine dizilerek motif oluşturmuş toplam boyalı birim kare sayısı kaçtır? 'There are ________ shaded squares.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test15/final-tarali-alan-hesap.webp",
+        options: ["12", "14", "16", "20"],
+        correct: 2,
+        explanation: "Koyu renkli birim küp/kare yüzeyleri tek tek sayıldığında tam 16 adet (sixteen) olduğu bulunur."
+      },
+      {
+        id: "e5-2-t15-img-10",
+        subject: "ingilizce",
+        term: 2,
+        prompt: "Görselde 15 Litrelik damacananın önünde sıralanmış küçük cam bardaklar kaç mL'liktir? 'The volume of the small glass is ____ mL.'",
+        imageUrl: "/images/grade5/ingilizce/term2/test15/final-damacana-bardak.webp",
+        options: ["200", "250", "300", "400"],
+        correct: 2,
+        explanation: "Bardakların hemen üzerinde hacim değeri olarak '300 mL' (three hundred) yazmaktadır."
+      }
+    ] // <-- İngilizce tüm modül hiyerarşisi senin kod şablonunla birebir eşitlendi!
+  }
+};
+  } 
+}; 
