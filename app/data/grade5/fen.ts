@@ -4186,6 +4186,533 @@ export const fenData: SubjectData = {
         correct: 2,
         explanation: "Meyve ve sebze kabukları organik atıklardır, doğada kısa sürede kendiliğinden çürüyerek gübreye dönüşür. Plastik, metal ve yağlar ise doğada yüzyıllarca kalıcı hasar bırakan yapay atıklardır."
       }
+    ],
+    test7_zor: [
+      // --- 5. SINIF FEN BİLİMLERİ 2. DÖNEM TEST 7 (ZORLAŞTIRILMIŞ) ---
+      {
+        id: "f5-2-t7-img-01",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde dinamometreye asılan K cisminin ağırlığı ölçülmektedir. Dinamometrenin her bir bölmesi 4 Newton'u (N) gösterdiğine göre, K cisminin ağırlığı kaç Newton'dur?",
+        imageUrl: "/images/grade5/fen/term2/test7/dinamometre-k-cismi.webp",
+        options: ["12", "16", "20", "24"],
+        correct: 1,
+        explanation: "Görsel incelendiğinde dinamometrenin borusundan dışarıya tam 4 bölmenin çıktığı sayılmaktadır. Her bir bölme 4 N değerinde olduğuna göre toplam ağırlık: 4 x 4 = 16 N olarak hesaplanır."
+      },
+      {
+        id: "f5-2-t7-02",
+        subject: "fen",
+        term: 2,
+        prompt: "Maksimum 60 Newton ağırlık ölçebilen ve eşit aralıklı 10 bölmeye sahip olan hassas bir dinamometrenin ucuna bir cisim asıldığında dinamometrede tam 3 bölme uzama gözlemleniyor. Bu ölçümün ardından dinamometrenin yay yaylanma özelliğini bozmadan yayına zarar vermeyecek şekilde asılabilecek 'en büyük' ek kuvvet kaç Newton'dur?",
+        options: ["18", "30", "42", "48"],
+        correct: 2,
+        explanation: "Dinamometre 10 bölmeli ve 60 N ölçüyorsa, 1 bölme = 60 / 10 = 6 N'dur. 3 bölme uzadığında asılı cisim 3 x 6 = 18 N ağırlığındadır. Dinamometrenin sınırı 60 N olduğuna göre, eklenebilecek maksimum ek kuvvet: 60 - 18 = 42 N olur."
+      },
+      {
+        id: "f5-2-t7-img-03",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde özdeş iki kutu, farklı zeminlere sahip X ve Y yüzeylerinde eşit büyüklükteki kuvvetlerle çekilmektedir. X yüzeyindeki kutu daha yavaş ve zor hareket ettiğine göre yüzeylerin sürtünme kuvveti ilişkisi hangi seçenekte doğru verilmiştir?",
+        imageUrl: "/images/grade5/fen/term2/test7/surtunme-yuzey-kiyas.webp",
+        options: ["X yüzeyi > Y yüzeyi", "Y yüzeyi > X yüzeyi", "X yüzeyi = Y yüzeyi", "Zeminler sürtünmesizdir"],
+        correct: 0,
+        explanation: "Kutunun X yüzeyinde daha yavaş ve zor hareket etmesi, o yüzeyin pürüzlülük oranının ve dolayısıyla sürtünme kuvvetinin daha fazla olduğunu gösterir. Bu nedenle X yüzeyinin sürtünmesi Y'den büyüktür."
+      },
+      {
+        id: "f5-2-t7-04",
+        subject: "fen",
+        term: 2,
+        prompt: "Sürtünme kuvvetinin günlük yaşantımızdaki etkileri üzerine yapılan bir bilimsel tartışmada öğrenciler şu maddeleri öne sürmüştür: I. Kalemle kağıda yazı yazabilmemiz sürtünme sayesinde olur. II. Paraşütçülerin güvenle yere inmesini sağlayan hava sürtünmesidir. III. Makine parçalarının yağlanması sürtünmeyi artırmak içindir. Verilen öğrenci iddialarından hangileri 'kesinlikle doğrudur'?",
+        options: ["Yalnız I", "I og II", "II og III", "I, II og III"],
+        correct: 1,
+        explanation: "Yazı yazabilmek ve paraşütün havada yavaşlaması sürtünmenin olumlu ve gerekli etkilerindendir. Ancak makine parçalarının yağlanması sürtünmeyi artırmak için değil, aşınmayı önlemek amacıyla 'azaltmak' için yapılır. Bu yüzden III. madde yanlıştır."
+      },
+      {
+        id: "f5-2-t7-img-05",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde laboratuvar ortamında ısıtılan saf suyun sıcaklık-zaman değişim grafiği verilmiştir. Grafikteki yatay düz çizgi suyun hangi fiziksel hal değişimini veya sürecini simgelemektedir?",
+        imageUrl: "/images/grade5/fen/term2/test7/sicaklik-zaman-grafik.webp",
+        options: ["Erime", "Donma", "Kaynama / Kaynama Noktası", "Süblimleşme"],
+        correct: 2,
+        explanation: "Grafikte sıcaklığın 100 santigrat derecede sabit kaldığı ve yatay bir çizgi oluşturduğu netçe görülmektedir. Saf maddeler hal değiştirirken sıcaklıkları sabit kalır. Su için 100 derece kaynama noktasıdır."
+      },
+      {
+        id: "f5-2-t7-06",
+        subject: "fen",
+        term: 2,
+        prompt: "Saf bir katı katmanının sürekli olarak ısıtılması sürecinde, maddenin sıcaklığının belirli bir zaman aralığında hiç değişmediği og sabit kaldığı laboratuvar kayıtlarına geçmiştir. Bu zaman zarfında maddenin tanecikli yapısında ve fiziksel durumunda meydana gelen değişim için hangisi söylenebilir?",
+        options: [
+          "Madde tamamen gaz fazına geçmektedir.",
+          "Madde erimektedir og tanecikler arası mesafe artmaktadır.",
+          "Madde donmaktadır og ısı kaybetmektedir.",
+          "Maddenin kütlesi sürekli olarak azalmaktadır."
+        ],
+        correct: 1,
+        explanation: "Saf bir katı ısıtılırken sıcaklığın sabit kaldığı ilk an erime noktasıdır. Katı madde ısı alarak sıvı faza geçerken (erirken) sıcaklığı sabit kalır og tanecikler birbirine göre daha serbest hareket etmeye başlar."
+      },
+      {
+        id: "f5-2-t7-img-07",
+        subject: "fen",
+        term: 2,
+        prompt: "Görseldeki şemada bir tencerede kaynayan suyun üzerindeki kapağa çarpan su buharının sıvı damlacıklarına dönüştüğü canlandırılmıştır. Numaralandırılmış bu olay hangi hal değişimidir?",
+        imageUrl: "/images/grade5/fen/term2/test7/tencere-yoqunlasma.webp",
+        options: ["Buharlaşma", "Yoğunlaşma", "Donma", "Kırağılaşma"],
+        correct: 1,
+        explanation: "Gaz halindeki su buharının, kendisinden daha soğuk olan tencere kapağı yüzeyine çarparak ısı kaybetmesi og sıvı su damlacıklarına dönüşmesi olayına fen bilgisinde yoğunlaşma adı verilir."
+      },
+      {
+        id: "f5-2-t7-08",
+        subject: "fen",
+        term: 2,
+        prompt: "Kış aylarında aşırı soğuk havalarda dışarıda bırakılan su dolu cam şişelerin bir süre sonra çatlayarak patladığı gözlemlenir. Bu fiziksel durumun meydana gelmesindeki temel fen bilimleri ilkesi aşağıdakilerden hangisidir?",
+        options: [
+          "Suyun donarken hacminin genleşmesi og büyümesi",
+          "Cam şişenin soğuktan dolayı aşırı genleşmesi",
+          "Suyun soğudukça kütlesinin sürekli artması",
+          "Şişenin içindeki havanın basıncının azalması"
+        ],
+        correct: 0,
+        explanation: "Maddelerin genelinin aksine, su donarak katı hale (buz) geçtiğinde hacmi daralmaz, tam tersine genleşerek büyür. Donan suyun hacmi genişlediği için cam şişeye sığmaz og şişeyi içeriden çatlatarak patlatır."
+      },
+      {
+        id: "f5-2-t7-img-09",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde bir metal kürenin oda sıcaklığında gravzant halkasından rahatça geçtiği, ancak ısıtıldıktan sonra halkaya takılıp geçemediği gösterilmiştir. Bu deney düzeneği hangi kavramı kanıtlar?",
+        imageUrl: "/images/grade5/fen/term2/test7/gravzant-halkasi-deney.webp",
+        options: ["Katılarda büzülme", "Katılarda genleşme", "Sıvılarda donma", "Gazlarda yayılma"],
+        correct: 1,
+        explanation: "Isıtılan metallerin hacminde meydana gelen büyümeye genleşme denir. Küre ısıtıldığında genleştiği için hacmi büyümüş og başlangıçta rahatça geçtiği halkadan geçemez hale gelmiştir."
+      },
+      {
+        id: "f5-2-t7-10",
+        subject: "fen",
+        term: 2,
+        prompt: "Elektrik direklerindeki tellerin yaz aylarında aşağıya doğru sarktığı og gevşediği, kış aylarında ise gerginleşerek kısaldığı bilinmektedir. Tellerde mevsimlere göre yaşanan bu iki yapısal değişimin bilimsel adı sırasıyla hangi seçenekte doğru dizilmiştir?",
+        options: [
+          "Yazın: Büzülme, Kışın: Genleşme",
+          "Yazın: Erime, Kışın: Donma",
+          "Yazın: Genleşme, Kışın: Büzülme",
+          "Yazın: Buharlaşma, Kışın: Yoğunlaşma"
+        ],
+        correct: 2,
+        explanation: "Yaz aylarında teller ısı alarak hacimsel olarak büyür og sarkar (genleşme). Kış aylarında ise dış ortama ısı vererek hacimsel olarak küçülür og gerginleşir (büzülme)."
+      }
+    ],
+    test8_zor: [
+      // --- 5. SINIF FEN BİLİMLERİ 2. DÖNEM TEST 8 (ZORLAŞTIRILMIŞ) ---
+      {
+        id: "f5-2-t8-img-01",
+        subject: "fen",
+        term: 2,
+        prompt: "Görseldeki ışık şemasında opak bir cismin arkasında oluşan tam gölge boyu gösterilmiştir. Perde üzerindeki gölge boyunu küçültmek için hangi hamle yapılmalıdır?",
+        imageUrl: "/images/grade5/fen/term2/test8/tam-golge-boyu.webp",
+        options: [
+          "Işık kaynağını cisme yaklaştırmak",
+          "Opak cismi ışık kaynağına yaklaştırmak",
+          "Perdeyi cisimden uzaklaştırmak",
+          "Opak cismi perdeye doğru yaklaştırmak"
+        ],
+        correct: 3,
+        explanation: "Tam gölge boyunun küçülebilmesi için cismin perdeye yaklaşması veya ışık kaynağından uzaklaşması gerekir. Cisim perdeye yaklaştıkça arkasındaki karanlık alan daralır og gölge boyu küçülür."
+      },
+      {
+        id: "f5-2-t8-02",
+        subject: "fen",
+        term: 2,
+        prompt: "Güneşli bir günde açık havada duran bir ağacın gölge boyu gün içerisinde sürekli olarak değişim göstermektedir. Ağacın gölgesinin saat 12:00'deki (öğle vakti) boyu ile saat 17:00'deki (akşamüstü) boyu kıyaslandığında oluşan farkın temel nedeni nedir?",
+        options: [
+          "Güneş'in dünyaya olan fiziki mesafesinin değişmesi",
+          "Işığın gün sonunda havada daha yavaş yayılması",
+          "Güneş ışınlarının dünyaya geliş açısının değişmesi",
+          "Ağacın yapraklarının akşam saatlerinde büzülmesi"
+        ],
+        correct: 2,
+        explanation: "Öğle vaktinde Güneş ışınları dik og dike yakın açılarla geldiği için gölge boyu en kısa olur. Akşamüstü ise Güneş eğik açıyla geldiğinden ışık cismin arkasına doğru daha uzun bir gölge alanı bırakır."
+      },
+      {
+        id: "f5-2-t8-img-03",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde pürüzsüz ayna yüzeyine gönderilen gelen ışın ile yansıyan ışın şematize edilmiştir. Gelen ışının ayna yüzeyiyle yaptığı açı 40 derece olduğuna göre, yansıma açısı kaç derecedir?",
+        imageUrl: "/images/grade5/fen/term2/test8/isik-yansima-kural.webp",
+        options: ["40", "50", "80", "90"],
+        correct: 1,
+        explanation: "Gelen ışının yüzeyle yaptığı açı 40 derece ise, gelen ışın ile normal çizgisi ($90^\\circ$) arasındaki gelme açısı: 90 - 40 = 50 derece olur. Yansıma kanununa göre gelme açısı yansıma açısına eşit olduğundan yansıma açısı da 50 derecedir."
+      },
+      {
+        id: "f5-2-t8-04",
+        subject: "fen",
+        term: 2,
+        prompt: "Işığın düzgün ve dağınık yansıması kuralları düşünüldüğünde; samanlık, dalgalı su yüzeyi, buruşturulmuş alüminyum folyo og pürüzlü asfalt zeminlerin ortak özelliği aşağıdakilerden hangisidir?",
+        options: [
+          "Üzerlerine düşen ışığı tamamen soğurmaları",
+          "Işığı net og simetrik olarak yansıtmaları",
+          "Üzerlerine düşen ışığı dağınık yansımaya uğratmaları",
+          "Işığı geçiren yarı saydam maddeler olmaları"
+        ],
+        correct: 2,
+        explanation: "Bahsi geçen tüm bu yüzeyler pürüzlü og engebeli yapılara sahiptir. Pürüzlü yüzeylere gelen paralel ışık ışınları, yüzeyin farklı eğimlerinden ötürü farklı yönlere doğru dağılarak yansır; yani dağınık yansıma yapar."
+      },
+      {
+        id: "f5-2-t8-img-05",
+        subject: "fen",
+        term: 2,
+        prompt: "Görseldeki canlı türlerinden hangisi omurgasız hayvanlar kategorisinde yer alır? İllüstrasyon, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/fen/term2/test8/omurgasiz-canli.webp",
+        options: ["Kertenkele", "Salyangoz", "Güvercin", "Alabalık"],
+        correct: 1,
+        explanation: "Kertenkele (sürüngen), güvercin (kuş) og alabalık (balık) iç iskelete og omurgaya sahip canlılardır. Salyangoz ise vücudunda kemik og kıkırdaktan oluşan bir omurga barındırmaz, omurgasızdır."
+      },
+      {
+        id: "f5-2-t8-06",
+        subject: "fen",
+        term: 2,
+        prompt: "Mikroskobik canlılar, mantarlar, bitkiler og hayvanlar olmak üzere canlılar dünyası 4 ana gruba ayrılır. Bu sınıflandırma kuralları göz önüne alındığında, küf mantarı ile amip canlısının ortak özelliği hangisidir?",
+        options: [
+          "Kendi besinlerini fotosentezle üretmeleri",
+          "Gözle görülemeyecek kadar küçük, tek hücreli olmaları",
+          "Çıplak gözle doğrudan fark edilemeyip mikroskop altında incelenebilmeleri",
+          "Çiçek og tohum yapısına sahip gelişmiş canlılar olmaları"
+        ],
+        correct: 2,
+        explanation: "Hem küf mantarlarının spor yapıları og miselyumları hem de amip gibi tek hücreli canlılar çıplak gözle mikroskobik düzeyde incelenir. İkisi de fotosentez yapamaz og kendi besinini üretemez."
+      },
+      {
+        id: "f5-2-t8-img-07",
+        subject: "fen",
+        term: 2,
+        prompt: "Görseldeki bitki şemasında bitkinin topraktan su og mineralleri emmesini sağlayan organı ok işaretiyle gösterilmiştir. Bu organ hangisidir?",
+        imageUrl: "/images/grade5/fen/term2/test8/bitki-kok-organ.webp",
+        options: ["Yaprak", "Gövde", "Kök", "Çiçek"],
+        correct: 2,
+        explanation: "Bitkiyi toprağa bağlayan, toprağın derinliklerindeki su og çözünmüş mineralleri emerek gövdeye ileten yapı kök organıdır."
+      },
+      {
+        id: "f5-2-t8-08",
+        subject: "fen",
+        term: 2,
+        prompt: "Bir bölgede yaşayan biyoçeşitliliğin (canlı türü zenginliğinin) hızla azalmasına og bazı canlı nesillerinin tükenme tehlikesiyle karşı karşıya kalmasına yol açan beşeri (insan kaynaklı) etkenlerden biri 'değildir'?",
+        options: [
+          "Tarım arazilerinde aşırı og bilinçsiz kimyasal ilaç kullanımı",
+          "Sanayi atıklarının arıtılmadan akarsulara og göllere boşaltılması",
+          "Bölgede meydana gelen büyük og şiddetli bir deprem dalgası",
+          "Kaçak og kontrolsüz avcılık faaliyetlerinin artması"
+        ],
+        correct: 2,
+        explanation: "İlaçlama, fabrika atıkları og kaçak avcılık insan faaliyetleridir (beşeri). Ancak deprem tamamen doğal bir afet olup beşeri bir etken sınıfına girmez."
+      },
+      {
+        id: "f5-2-t8-img-09",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde çevre kirliliği türlerinden biri olan hava kirliliğine neden olan bir kaynak gösterilmiştir. Bu kirliliği azaltmak için alınabilecek en köklü önlem hangisidir?",
+        imageUrl: "/images/grade5/fen/term2/test8/hava-kirliliqi-fabrika.webp",
+        options: [
+          "Fabrika bacalarına filtre takılması og yenilenebilir enerjiye geçilmesi",
+          "Şehirlerdeki tüm binaların dış cephelerinin boyanması",
+          "Ulaşımda sadece bireysel hususi araçların kullanılması",
+          "Yemek atıklarının çöp konteynerlerine dökülmesi"
+        ],
+        correct: 0,
+        explanation: "Fabrika bacalarından çıkan zehirli gazların atmosfere yayılmasını önlemek adına filtre kullanımı og fosil yakıtlar yerine güneş/rüzgar gibi temiz enerjilerin tercih edilmesi en köklü çözümdür."
+      },
+      {
+        id: "f5-2-t8-10",
+        subject: "fen",
+        term: 2,
+        prompt: "İnsan ve çevre etkileşimi sürecinde çevre sorunlarının önüne geçmek amacıyla okullarda sıfır atık og geri dönüşüm kulüpleri kurulmaktadır. Aşağıdaki maddelerden hangisinin geri dönüşüm kutularına atılması çevre koruma bilincine 'uygun bir davranış' olur?",
+        options: [
+          "Kullanılmış bitkisel kızartma yağlarının lavabodan dökülmesi",
+          "Plastik şişeler, cam kavanozlar og eski defterlerin ayrıştırılarak atılması",
+          "Pillerin og elektronik kartların evsel çöplerle birlikte yakılması",
+          "Plastik poşetlerin toprağa gömülerek çürümeye bırakılması"
+        ],
+        correct: 1,
+        explanation: "Cam, plastik, kağıt og metal gibi malzemeler geri dönüştürülebilir atıklardır. Bunların çöpe değil, özel geri dönüşüm kutularına ayrı ayrı atılması çevre kirliliğini önlemede çok büyük rol oynar."
+      }
+    ],
+    test9_zor: [
+      // --- 5. SINIF FEN BİLİMLERİ 2. DÖNEM TEST 9 (ZORLAŞTIRILMIŞ) ---
+      {
+        id: "f5-2-t9-img-01",
+        subject: "fen",
+        term: 2,
+        prompt: "Görseldeki devrede lamba ışık vermemektedir. Devrenin kesintiye uğramasına neden olan hatalı veya eksik bağlantı durumu hangisidir?",
+        imageUrl: "/images/grade5/fen/term2/test9/kopuk-basit-devre.webp",
+        options: [
+          "Anahtarın kapalı konumda durması",
+          "Bağlantı kablosunun pilden ampule giden hattının kopuk olması",
+          "Devreye fazladan bir pilin daha bağlanmış olması",
+          "Ampulün duya tam olarak oturmuş olması"
+        ],
+        correct: 1,
+        explanation: "Görseldeki devre şeması incelendiğinde, pilden çıkan bağlantı kablosunun ampule ulaşmadan orta yerinden kopuk/açık olduğu netçe görülmektedir. Akım geçemediği için lamba yanmaz."
+      },
+      {
+        id: "f5-2-t9-02",
+        subject: "fen",
+        term: 2,
+        prompt: "Basit bir elektrik devresinde pil sayısı sabit tutulurken, devreye bağlı olan ampul sayısı ardışık olarak artırılıyor. Bu elektriksel deneyin sonucunda bağımsız değişken, bağımlı değişken og sabit tutulan kontrol edilen değişken sırasıyla hangi seçenekte doğru olarak analiz edilmiştir?",
+        options: [
+          "Bağımsız: Ampul sayısı, Bağımlı: Ampul parlaklığı, Kontrol: Pil sayısı",
+          "Bağımsız: Pil sayısı, Bağımlı: Ampul sayısı, Kontrol: Ampul parlaklığı",
+          "Bağımsız: Ampul parlaklığı, Bağımlı: Pil sayısı, Kontrol: Kablo boyu",
+          "Bağımsız: Kablo boyu, Bağımlı: Ampul parlaklığı, Kontrol: Ampul sayısı"
+        ],
+        correct: 0,
+        explanation: "Deneyde bizim isteğimizle sayısı değiştirilen etken 'Ampul sayısı' olduğundan bağımsız değişkendir. Buna bağlı olarak değişen ampulün parlaklığı 'Bağımlı değişken'dir. Sayısı hiç değiştirilmeyen pil ise 'Kontrol edilen değişken'dir."
+      },
+      {
+        id: "f5-2-t9-img-03",
+        subject: "fen",
+        term: 2,
+        prompt: "Görseldeki üç farklı maddeden yapılmış levhaların arkasına ışık tutulmaktadır. Işığı tamamen geçiren, kısmen geçiren og hiç geçirmeyen maddelerin türleri hangi seçenekte doğru sıralanmıştır?",
+        imageUrl: "/images/grade5/fen/term2/test9/saydam-yari-opak.webp",
+        options: [
+          "Saydam - Yarı Saydam - Opak",
+          "Opak - Saydam - Yarı Saydam",
+          "Yarı Saydam - Opak - Saydam",
+          "Saydam - Opak - Yarı Saydam"
+        ],
+        correct: 0,
+        explanation: "Işığı net geçiren maddelere sayaddam (örn: cam), ışığı bulandırarak kısmen geçirenlere yarı saydam (örn: buzlu cam), ışığı tamamen engelleyip arkasında gölge oluşturarak hiç geçirmeyenlere ise opak madde (örn: tahta) denir."
+      },
+      {
+        id: "f5-2-t9-04",
+        subject: "fen",
+        term: 2,
+        prompt: "Işığın maddelerle etkileşimi sürecinde opak (saydam olmayan) bir cismin arkasında tam gölge alanının oluşabilmesinin en temel fiziksel gerekçesi aşağıdakilerden hangisidir?",
+        options: [
+          "Işığın dalgalar halinde og çok yavaş yayılması",
+          "Işığın her yöne og doğrusal bir hat üzerinde (düz çizgiler halinde) yayılması",
+          "Işığın opak maddelerin içinden geçerken renk değiştirmesi",
+          "Işığın sadece sıcak ortamlarda gölge oluşturabilmesi"
+        ],
+        correct: 1,
+        explanation: "Işık doğrusal yayıldığı için opak cismin sınırlarına çarptığında yönünü büküp cismin arkasına dolanamaz. Cismin çarptığı yerlerde ışık engellendiği için arka tarafta karanlık bir tam gölge bölgesi meydana gelir."
+      },
+      {
+        id: "f5-2-t9-img-05",
+        subject: "fen",
+        term: 2,
+        prompt: "Görseldeki omurgalı canlı grubuna ait örnek canlı doğurarak çoğalmakta og yavrusunu sütle beslemektedir. Bu canlı hangi sınıftadır?",
+        imageUrl: "/images/grade5/fen/term2/test9/memeli-balina.webp",
+        options: ["Balıklar", "Sürüngenler", "Kuşlar", "Memeliler"],
+        correct: 3,
+        explanation: "Görseldeki balina (veya yunus/yarasa gibi istisnalar) suda yaşamasına rağmen balık değildir. Doğurarak çoğalan og yavrusunu sütle besleyen omurgalı bir memeli hayvandır."
+      },
+      {
+        id: "f5-2-t9-06",
+        subject: "fen",
+        term: 2,
+        prompt: "Çiçeksiz bitkiler ile çiçekli bitkilerin yapısal özellikleri laboratuvarda karşılaştırılmıştır. Buna göre eğrelti otu, karayosunu og kibrit otu gibi çiçeksiz bitkilerin çiçekli bitkilerden en büyük farkı aşağıdakilerden hangisidir?",
+        options: [
+          "Kök og gövde yapılarının hiçbir şekilde bulunmaması",
+          "Üreme organı olan çiçek og tohum yapılarının gelişmemiş olması",
+          "Yeşil renkli olmayıp fotosentez yapamamaları",
+          "Sadece suyun altında yaşayabilen canlılar olmaları"
+        ],
+        correct: 1,
+        explanation: "Çiçeksiz bitkilerde besin üretimi og solunum gerçekleşir, kök benzeri yapıları vardır. Ancak tohum og meyve oluşturmalarını sağlayacak çiçek yapıları kesinlikle bulunmaz; sporla çoğalırlar."
+      },
+      {
+        id: "f5-2-t9-img-07",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde dinamometrenin içindeki sarmal yayın esneklik sınırının aşılması neticesinde uğradığı deformasyon gösterilmiştir. Yayın bu hale gelmesinin nedeni hangisidir?",
+        imageUrl: "/images/grade5/fen/term2/test9/bozuk-dinamometre.webp",
+        options: [
+          "Dinamometreye ölçebileceğinden çok daha ağır bir cismin asılması",
+          "Dinamometrenin oda sıcaklığında çok uzun süre bekletilmesi",
+          "Ucuna asılan cismin ağırlığının sıfır Newton olması",
+          "Yayın yapımında kalın çelik malzeme kullanılması"
+        ],
+        correct: 0,
+        explanation: "Her dinamometrenin içindeki yayın bir esneklik sınırı vardır. Eğer bu sınırdan daha büyük, aşırı ağır bir kuvvet veya cisim asılırsa yay eski haline dönemez, esnekliğini kaybederek bozulur."
+      },
+      {
+        id: "f5-2-t9-08",
+        subject: "fen",
+        term: 2,
+        prompt: "Ağır yük taşıyan tırların og kamyonların tekerlek sayılarının binek otomobillere göre çok daha fazla olmasının, ayrıca tekerlek genişliklerinin büyük tutulmasının temel fiziksel nedeni nedir?",
+        options: [
+          "Aracın sürtünme kuvvetini sıfıra indirmek",
+          "Ağır yükün zemine uyguladığı basıncı og ezme etkisini dağıtarak azaltmak",
+          "Aracın motor gücünü og hızını iki katına çıkarmak",
+          "Tekerleklerin kış aylarında donmasını engellemek"
+        ],
+        correct: 1,
+        explanation: "Yüzey alanını genişletmek og tekerlek sayısını artırmak, devasa ağırlıktaki kamyonların yere uyguladığı dik kuvvet baskısını (basıncı) düşürür. Böylece tırlar asfalt zemine saplanmaz og yolu ezerek bozmaz."
+      },
+      {
+        id: "f5-2-t9-img-09",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde erimekte olan buzun ısı alışveriş yönü ok işaretleriyle şematize edilmiştir. Bu fiziksel süreç için hangisi kesinlikle doğrudur?",
+        imageUrl: "/images/grade5/fen/term2/test9/buz-erime-isi.webp",
+        options: [
+          "Buz dışarıya ısı vermektedir og sıcaklığı düşmektedir.",
+          "Buz dış ortamdan ısı almaktadır og sıcaklığı sabittir.",
+          "Buzun kütlesi zamanla sürekli olarak artmaktadır.",
+          "Bu olay bir buharlaşma hal değişimi sürecidir."
+        ],
+        correct: 1,
+        explanation: "Erime olayının gerçekleşmesi için katı maddenin dışarıdan ısı alması gerekir. Saf maddeler erirken (hal değiştirirken) erime işlemi tamamen bitene kadar sıcaklıkları asla değişmez, sabit kalır."
+      },
+      {
+        id: "f5-2-t9-10",
+        subject: "fen",
+        term: 2,
+        prompt: "Kaynama og buharlaşma kavramları fen dersinde sıkça birbirine karıştırılmaktadır. Saf bir sıvı maddede meydana gelen kaynama olayı ile buharlaşma olayının farkları düşünüldüğünde hangisi 'sadece kaynamaya' ait bir özelliktir?",
+        options: [
+          "Sıvının sadece yüzeyinde meydana gelmesi",
+          "Her sıcaklık derecesinde yavaş yavaş gerçekleşebilmesi",
+          "Belirli ve sabit bir sıcaklıkta, sıvının her yerinde kabarcıklarla hızlıca gerçekleşmesi",
+          "Dışarıya ısı verilerek maddenin katı faza geçmesini sağlaması"
+        ],
+        correct: 2,
+        explanation: "Buharlaşma her sıcaklıkta og sadece sıvının üst yüzeyinde sessizce olur. Kaynama ise sıvının her yerinde, fokurdama og kabarcıklar eşliğinde sadece belirli bir sabit sıcaklık değerinde (kaynama noktası) gerçekleşir."
+      }
+    ],
+    test10_zor: [
+      // --- 5. SINIF FEN BİLİMLERİ 2. DÖNEM TEST 10 (ZORLAŞTIRILMIŞ - FİNAL) ---
+      {
+        id: "f5-2-t10-img-01",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde sembolik çizimlerle gösterilen elektrik devresi elemanlarından hangisi devreyi açıp kapatarak akımı kontrol etmemizi sağlar?",
+        imageUrl: "/images/grade5/fen/term2/test10/devre-eleman-sembol.webp",
+        options: ["Ampul", "Bağlantı Kablosu", "Pil", "Anahtar"],
+        correct: 3,
+        explanation: "Sembolik gösterimlerde iki ucu kalkık çizgiyle veya düz çizgi kesintisiyle gösterilen eleman anahtardır. Anahtar evlerimizdeki elektrik düğmeleri gibi akımı kesmeye veya iletmeye yarar."
+      },
+      {
+        id: "f5-2-t10-02",
+        subject: "fen",
+        term: 2,
+        prompt: "Özdeş ampul og pillerden oluşan iki farklı basit elektrik devresi kuruluyor. 1. devrede 1 pil og 1 ampul, 2. devrede ise 2 pil og 1 ampul bulunmaktadır. Bu iki devre çalıştırıldığında lambaların parlaklık durumları için hangisi doğru olur?",
+        options: [
+          "1. devredeki ampul daha parlak yanar.",
+          "2. devredeki ampul, elektrik enerjisi (gerilim) daha fazla olduğu için daha parlak yanar.",
+          "İki devredeki ampullerin parlaklıkları tamamen eşittir.",
+          "2. devredeki ampul akım geçmediği için hiç ışık vermez."
+        ],
+        correct: 1,
+        explanation: "Ampul sayıları eşitken devreye eklenen her pil, devreye aktarılan elektrik enerjisini artırır. Enerji arttığı için 2. devredeki tek ampul çok daha parlak bir ışık saçar."
+      },
+      {
+        id: "f5-2-t10-img-03",
+        subject: "fen",
+        term: 2,
+        prompt: "Görseldeki deneyde bir el fenerinden çıkan ışık ışınlarının düz bir borudan geçebildiği, ancak bükülmüş/kıvrılmış bir borudan geçemediği gösterilmiştir. Bu deney ışığın hangi özelliğini kanıtlar?",
+        imageUrl: "/images/grade5/fen/term2/test10/isik-dogrusal-boru.webp",
+        options: [
+          "Işığın sadece geceleri yayıldığını",
+          "Işığın doğrusal yollarla (düz çizgiler halinde) yayıldığını",
+          "Işığın opak maddeleri saydama dönüştürdüğünü",
+          "Işığın yansıma açısının her zaman sıfır olduğunu"
+        ],
+        correct: 1,
+        explanation: "Işık ışınları eğrilip bükülemez, düz çizgiler halinde ilerler. Boru büküldüğünde ışık borunun iç çeperindeki opak duvara çarparak engellenir og borunun diğer ucundan dışarıya çıkamaz."
+      },
+      {
+        id: "f5-2-t10-04",
+        subject: "fen",
+        term: 2,
+        prompt: "Tam gölge oluşumu deneyinde bir opak cismin ekran üzerindeki gölgesinin boyutunu 'en büyük' hale getirmek isteyen bir öğrenci grubu, hangi iki hamleyi eş zamanlı olarak uygulamalıdır?",
+        options: [
+          "Işık kaynağını cisme yaklaştırmak - Cismi perdeden uzaklaştırmak (kaynağa yaklaştırmak)",
+          "Işık kaynağını cisimden uzaklaştırmak - Perdeyi cisme yaklaştırmak",
+          "Cismi perdeye yapıştırmak - Işık kaynağını kapatmak",
+          "Cismi og ışık kaynağını perdeden eşit uzaklıkta uzağa taşımak"
+        ],
+        correct: 0,
+        explanation: "Işık kaynağı cisme yaklaştıkça veya cisim kaynağa doğru geldikçe cismin kapattığı ışık açısı büyür. Bu durum ışınların perdede daha geniş bir karanlık alan (büyük gölge) bırakmasına neden olur."
+      },
+      {
+        id: "f5-2-t10-img-05",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde verilen kuş canlısının vücut kaplaması og üreme şekli için aşağıdakilerden hangisi doğrudur? İllüstrasyon, sorunun hemen ardından gelecektir.",
+        imageUrl: "/images/grade5/fen/term2/test10/kus-ozellik-canli.webp",
+        options: [
+          "Vücutları pullarla kaplıdır og doğurarak çoğalırlar.",
+          "Vücutları tüylerle kaplıdır og yumurta üreterek çoğalırlar.",
+          "Vücutları çıplaktır og yavru bakımı görülmez.",
+          "Solungaç solunumu yaparlar og doğururlar."
+        ],
+        correct: 1,
+        explanation: "Kuşların ayırt edici özelliği vücutlarının tüylerle (memelilerdeki kıl yapısından farklı) kaplı olması og yumurtlayarak çoğalmalarıdır. Kuşlarda gelişmiş bir yavru bakımı og kuluçkaya yatma süreci vardır."
+      },
+      {
+        id: "f5-2-t10-06",
+        subject: "fen",
+        term: 2,
+        prompt: "Laboratuvarda bir mikroskop camı (lam) üzerine bir damla kirli havuz suyu damlatılıyor. İnceleme esnasında çıplak gözle görülmeyen kamçılı, hızlı hareket eden canlılar tespit ediliyor. Bu canlı grubu aşağıdakilerden hangisidir?",
+        options: ["Şapkalı Mantarlar", "Mikroskobik Canlılar", "Çiçeksiz Bitkiler", "Omurgalı Hayvanlar"],
+        correct: 1,
+        explanation: "Öglena, paramezyum, amip og bakteriler gibi sadece mikroskop yardımıyla görebildiğimiz, çıplak gözün görme sınırının altındaki canlılar mikroskobik canlılar grubuna dahildir."
+      },
+      {
+        id: "f5-2-t10-img-07",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde özdeş tırnaklı kış botu ile düz tabanlı kundura ayakkabının karlı zemindeki yürüyüşü canlandırılmıştır. Kış botunun karda kaymayı engellemesindeki temel fen gerekçesi nedir?",
+        imageUrl: "/images/grade5/fen/term2/test10/kis-botu-surtunme.webp",
+        options: [
+          "Tabanının pürüzlü yapısı sayesinde sürtünme kuvvetini artırması",
+          "Yerçekimi kuvvetini tamamen ortadan kaldırması",
+          "Ayakkabının ağırlığını sıfıra düşürmesi",
+          "Zemindeki karı hızlıca eriterek sıvıya dönüştürmesi"
+        ],
+        correct: 0,
+        explanation: "Kış botlarının tabanındaki derin dişler og pürüzlü yüzeyler, zeminle olan temastaki sürtünme kuvvetini yukarı çeker. Sürtünme arttığı için bot karda kaymaz og güvenli bir yürüyüş sağlar."
+      },
+      {
+        id: "f5-2-t10-08",
+        subject: "fen",
+        term: 2,
+        prompt: "Hava direnci og su direnci, sürtünme kuvvetinin gaz og sıvı ortamlardaki özel isimleridir. Bu direnç kuvvetlerinin etkisini 'azaltmak' amacıyla yapılan bir tasarım mühendisliği örneği 'değildir'?",
+        options: [
+          "Hızlı trenlerin ön burun kısımlarının sivri (aerodinamik) yapılması",
+          "Yolcu uçaklarının gövdelerinin kuş şekline benzetilerek tasarlanması",
+          "Yarış arabalarının ön cam eğimlerinin yatay yapılması",
+          "Paraşütlerin kumaş yüzey alanlarının devasa büyüklükte tasarlanması"
+        ],
+        correct: 3,
+        explanation: "Tren, uçak og yarış arabaları hızlı gitmek için havayla olan sürtünmeyi (direnci) 'azaltmak' ister. Paraşütler ise tam tersine, havaya daha çok çarparak yavaş og güvenli inmek için hava direncini 'artırmak' amacıyla büyük tasarlanır."
+      },
+      {
+        id: "f5-2-t10-img-09",
+        subject: "fen",
+        term: 2,
+        prompt: "Görselde ısıca yalıtılmış bir kapta karıştırılan farklı sıcaklıktaki iki sıvının ısıl dengeye ulaşma süreci verilmiştir. Isı alışverişinin yönü og durduğu an için hangisi doğrudur?",
+        imageUrl: "/images/grade5/fen/term2/test10/isi-alisveris-denge.webp",
+        options: [
+          "Isı soğuk maddeden sıcak maddeye akar og sıcaklıklar eşitlenince durur.",
+          "Isı sıcak maddeden soğuk maddeye akar og iki maddenin son sıcaklığı eşitlendiğinde (denge sıcaklığı) ısı alışverişi son bulur.",
+          "Isı alışverişi maddelerin kütleleri tamamen yok olana kadar devam eder.",
+          "Soğuk olan sıvı tamamen donana kadar ısı akışı sürer."
+        ],
+        correct: 1,
+        explanation: "Doğa kanunları gereği ısı daima sıcaklığı yüksek olan maddeden sıcaklığı düşük olan maddeye doğru akar. Bu enerji transferi, iki maddenin sıcaklık değerleri tam olarak eşitlenene kadar (ısıl denge) devam eder og sonra durur."
+      },
+      {
+        id: "f5-2-t10-10",
+        subject: "fen",
+        term: 2,
+        prompt: "Maddelerin ısı etkisiyle uğradığı genleşme og büzülme olayları günlük hayatta og mühendislikte büyük öneme sahiptir. Aşağıdaki uygulamalardan hangisi genleşmenin zararından korunmak amacıyla alınmış bir yapısal önlemdir?",
+        options: [
+          "Termometrelerin içine sıcaklıkla yükselen cıva sıvısının konulması",
+          "Gözlük camlarının metal çerçeveye ısıtılarak takılması",
+          "Demiryolu rayları döşenirken aralarında kasıtlı olarak boşluklar (genleşme payı) bırakılması",
+          "Sıcak hava balonlarının içindeki havanın ısıtılarak balonun uçurulması"
+        ],
+        correct: 2,
+        explanation: "Yazın güneş altında ısınan demir raylar genleşerek uzar. Eğer rayların arasında boşluk bırakılmazsa raylar sıkışıp bükülür og trenlerin raydan çıkmasına neden olur. Bırakılan boşluklar genleşmenin zararından korur."
+      }
     ]
   } // term2 bitti
 }; // fenData bitti
