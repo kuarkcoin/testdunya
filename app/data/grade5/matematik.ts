@@ -5165,7 +5165,7 @@ export const matematikData: SubjectData = {
         prompt: "Günde ortalama 450 santilitre su tüketen bir sporcu, 20 günlük bir kamp dönemi boyunca toplamda kaç litre su tüketmiş olur?",
         options: ["9", "45", "90", "120"],
         correct: 2,
-        explanation: $450\text{ cL} = 4,5\text{ L}$. 20 günde tüketilen toplam miktar: $4,5 \\times 20 = 90$ Litre olarak hesaplanır."
+        explanation: "450 cL = 4,5 L yapar. 20 günde tüketilen toplam miktar: 4,5 x 20 = 90 Litre olarak hesaplanır."
       },
       {
         id: "m5-2-t9-img-13",
