@@ -6399,8 +6399,8 @@ export const matematikData: SubjectData = {
         prompt: "Bir sınav saat 09:15'te başlayıp 11:40'ta bitmiştir. Sınav süresi toplam kaç dakikadır?",
         options: ["125", "135", "145", "155"],
         correct: 2,
-        explanation: "09:15 ile 11:40 arasındaki zaman farkı 2 saat 25 dakikadır. Toplam dakika: $(2 \\times 60) + 25 = 145$ dakikadır."
+        explanation: "09:15 ile 11:40 arasındaki zaman farkı 2 saat 25 dakikadır. Toplam dakika: (2 x 60) + 25 = 145 dakikadır."
       }
-    ],
-  } 
-}; 
+    ] // <-- test15 dizisinin pürüzsüz kapanışı
+  } // <-- term2 nesnesinin pürüzsüz kapanışı
+}; // <-- matematikData ana nesnesinin pürüzsüz kapanışı (Dosyanın tamamen bitişi)
