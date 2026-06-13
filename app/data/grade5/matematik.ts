@@ -5436,10 +5436,8 @@ export const matematikData: SubjectData = {
         correct: 2,
         explanation: "4 ders: 4 x 40 = 160 dakika. 3 teneffüs: 3 x 15 = 45 dakika. Toplam süre: 160 + 45 = 205 dakika (3 saat 25 dakika). 08:30 + 3 saat 25 dakika = 12:05 olur."
       }
-    ], // <-- Test 10 dizisinin kesin bitişi
-    ], // <-- Test 10 dizisinin bittiği yer
-    test11_zor: [ // <-- İsmi benzersiz yaparak yukarıdaki hayalet çakışmayı kökten baypas ettik!
-      // --- 5. SINIF MATEMATİK 2. DÖNEM TEST 11 (ZOR) ---
+    ], // <-- Test 10 dizisinin tek ve kesin bitiş parantezi
+    test11_zor: [
       {
         id: "m5-2-t11-img-01",
         subject: "matematik",
