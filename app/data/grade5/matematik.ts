@@ -5620,7 +5620,7 @@ export const matematikData: SubjectData = {
         correct: 0,
         explanation: "Deponun boş kısmı 3/4 olduğuna göre bu kısım 30 litreye eşittir. Tamamı: 30 / 3 x 4 = 40 Litre kapasitelidir."
       },
-      {
+     {
         id: "m5-2-t11-20",
         subject: "matematik",
         term: 2,
@@ -5629,8 +5629,8 @@ export const matematikData: SubjectData = {
         correct: 1,
         explanation: "22:30'dan gece yarısı 00:00'a 1 saat 30 dakika vardır. Gece yarısından 07:15'e 7 saat 15 dakika vardır. Toplam: 8 saat 45 dakika uyumuştur."
       }
-    ],
-    test12: [
+    ], // <-- Test 11 paketinin kesin bitişi
+    test12_zor: [ // <-- İsmi benzersiz (test12_zor) yaparak yukarıdaki hayalet çakışmayı kökten eledik!
       // --- 5. SINIF MATEMATİK 2. DÖNEM TEST 12 (ZOR) ---
       {
         id: "m5-2-t12-img-01",
