@@ -5427,17 +5427,17 @@ export const matematikData: SubjectData = {
         correct: 0,
         explanation: "4 saatteki azalma: $4 \\times 450 = 1800$ mL'dir. 5 L = 5000 mL olduğuna göre kalan su: $5000 - 1800 = 3200$ mL kalır."
       },
-      {
+     {
         id: "m5-2-t10-20",
         subject: "matematik",
         term: 2,
         prompt: "Bir okulda dersler saat 08:30'da başlamaktadır. Her ders 40 dakika, her teneffüs ise 15 dakikadır. 4. ders bittiğinde saat tam olarak kaçı gösterir?",
         options: ["11:45", "12:00", "12:05", "12:10"],
         correct: 2,
-        explanation: "4 ders: $4 \\times 40 = 160$ dakika. 3 teneffüs: $3 \\times 15 = 45$ dakika. Toplam süre: $160 + 45 = 205$ dakika (3 saat 25 dakika). 08:30 + 3 saat 25 dakika = 12:05 olur."
+        explanation: "4 ders: 4 x 40 = 160 dakika. 3 teneffüs: 3 x 15 = 45 dakika. Toplam süre: 160 + 45 = 205 dakika (3 saat 25 dakika). 08:30 + 3 saat 25 dakika = 12:05 olur."
       }
-    ],
-    test11: [
+    ], // <-- Test 10 dizisinin kesin bitişi
+    test11: [ // <-- Test 11 doğrudan ve tek seferde buradan başlıyor
       // --- 5. SINIF MATEMATİK 2. DÖNEM TEST 11 (ZOR) ---
       {
         id: "m5-2-t11-img-01",
@@ -5447,9 +5447,9 @@ export const matematikData: SubjectData = {
         imageUrl: "/images/grade5/matematik/term2/test11/es-kare-cevre.webp",
         options: ["48", "60", "72", "84"],
         correct: 2,
-        explanation: "Şekil 4 eş kareden oluşmaktadır. Bir karenin alanı: $144 \\div 4 = 36\\text{ cm}^2$, kenarı ise 6 cm'dir. Dış çevrede toplam 12 kenar sayıldığı için çevre: $12 \\times 6 = 72$ cm olur."
+        explanation: "Şekil 4 eş kareden oluşmaktadır. Bir karenin alanı: 144 / 4 = 36 cm2, kenarı ise 6 cm'dir. Dış çevrede toplam 12 kenar sayıldığı için çevre: 12 x 6 = 72 cm olur."
       },
-     {
+      {
         id: "m5-2-t11-02",
         subject: "matematik",
         term: 2,
