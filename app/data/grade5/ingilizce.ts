@@ -4950,5 +4950,4 @@ export const ingilizceData: SubjectData = {
     ] // <-- İngilizce tüm modül hiyerarşisi senin kod şablonunla birebir eşitlendi!
   }
 };
-  } 
-}; 
+  
