@@ -5437,7 +5437,8 @@ export const matematikData: SubjectData = {
         explanation: "4 ders: 4 x 40 = 160 dakika. 3 teneffüs: 3 x 15 = 45 dakika. Toplam süre: 160 + 45 = 205 dakika (3 saat 25 dakika). 08:30 + 3 saat 25 dakika = 12:05 olur."
       }
     ], // <-- Test 10 dizisinin kesin bitişi
-    test11: [ // <-- Test 11 doğrudan ve tek seferde buradan başlıyor
+    ], // <-- Test 10 dizisinin bittiği yer
+    test11_zor: [ // <-- İsmi benzersiz yaparak yukarıdaki hayalet çakışmayı kökten baypas ettik!
       // --- 5. SINIF MATEMATİK 2. DÖNEM TEST 11 (ZOR) ---
       {
         id: "m5-2-t11-img-01",
@@ -5475,7 +5476,7 @@ export const matematikData: SubjectData = {
         prompt: "Bir çokgenin iç açılarının yarısı dar açı, diğer yarısı ise geniş açıdır. Bu çokgenin toplam iç açıları toplamı $540^\\circ$ olduğuna göre bu çokgenin kaç köşesi vardır?",
         options: ["4", "5", "6", "7"],
         correct: 1,
-        explanation: "İç açıları toplamı $540^\circ$ olan çokgen bir beşgendir. Çokgenlerde kenar, köşe ve iç açı sayıları daima birbirine eşittir."
+        explanation: "İç açıları toplamı $540^\\circ$ olan çokgen bir beşgendir. Çokgenlerde kenar, köşe ve iç açı sayıları daima birbirine eşittir."
       },
       {
         id: "m5-2-t11-img-05",
@@ -5500,7 +5501,7 @@ export const matematikData: SubjectData = {
         id: "m5-2-t11-img-07",
         subject: "matematik",
         term: 2,
-        prompt: "Görseldeki çizgi grafiği bir şirketin yılın ilk 4 ayındaki kar miktarını göstermektedir. Şirketin bu 4 aydaki ortalama aylık karı kaç bin TL'dir?",
+        prompt: "Görseldeki çizgi grafiği bir şirketin yılın ilk 4 ayındaki kar miktarını göstermektedir. Şiriketin bu 4 aydaki ortalama aylık karı kaç bin TL'dir?",
         imageUrl: "/images/grade5/matematik/term2/test11/kar-cizgi-grafik.webp",
         options: ["40", "45", "50", "55"],
         correct: 1,
@@ -5580,7 +5581,7 @@ export const matematikData: SubjectData = {
         imageUrl: "/images/grade5/matematik/term2/test11/deltoid-ic-aci.webp",
         options: ["180", "270", "360", "540"],
         correct: 2,
-        explanation: "Şeklin türü ne olursa olsun, tüm konveks dörtgenlerin iç açılarının ölçüleri toplamı daima $360^\circ$ye eşittir."
+        explanation: "Şeklin türü ne olursa olsun, tüm konveks dörtgenlerin iç açılarının ölçüleri toplamı daima $360^\\circ$ye eşittir."
       },
       {
         id: "m5-2-t11-16",
@@ -5589,7 +5590,7 @@ export const matematikData: SubjectData = {
         prompt: "Bir düzgün sekizgenin bir iç açısının ölçüsü, bir düzgün altıgenin bir iç açısının ölçüsünden kaç derece fazladır?",
         options: ["15", "20", "25", "30"],
         correct: 0,
-        explanation: "Düzgün sekizgenin bir iç açısı $135^\circ$, düzgün altıgenin ise $120^\circ$dir. Aralarındaki fark: $135 - 120 = 15^\circ$ fazladır."
+        explanation: "Düzgün sekizgenin bir iç açısı $135^\\circ$, düzgün altıgenin ise $120^\\circ$dir. Aralarındaki fark: $135 - 120 = 15^\\circ$ fazladır."
       },
       {
         id: "m5-2-t11-img-17",
@@ -5624,12 +5625,12 @@ export const matematikData: SubjectData = {
         id: "m5-2-t11-20",
         subject: "matematik",
         term: 2,
-        prompt: "Saat 22:30'da uyuyan bir çocuk, ertesi gün sabah saat 07:15'te uyanmıştır. Bu çocuk toplam ne kadar süre uyumuştur?",
+        prompt: "Saat 22:30'da uyuyan bir child, ertesi gün sabah saat 07:15'te uyanmıştır. Bu child toplam ne kadar süre uyumuştur?",
         options: ["8 saat 15 dakika", "8 saat 45 dakika", "9 saat 15 dakika", "9 saat 45 dakika"],
         correct: 1,
         explanation: "22:30'dan gece yarısı 00:00'a 1 saat 30 dakika vardır. Gece yarısından 07:15'e 7 saat 15 dakika vardır. Toplam: 8 saat 45 dakika uyumuştur."
       }
-    ],
+    ], // Dosya sonu kapanışı değilse virgül kalabilir.
     test12: [
       // --- 5. SINIF MATEMATİK 2. DÖNEM TEST 12 (ZOR) ---
       {
