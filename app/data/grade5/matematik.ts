@@ -5823,7 +5823,7 @@ export const matematikData: SubjectData = {
         explanation: "21:15'ten 23:40'taki süre farkı 2 saat 25 dakikadır. Dakikaya çevrildiğinde: (2 x 60) + 25 = 145 dakika yapar."
       }
     ],
-    test13: [
+   test13_zor: [
       // --- 5. SINIF MATEMATİK 2. DÖNEM TEST 13 (ZOR) ---
       {
         id: "m5-2-t13-img-01",
@@ -6016,7 +6016,7 @@ export const matematikData: SubjectData = {
         explanation: "Süre farkı 1 saat 45 dakikadır. Dakikaya çevrildiğinde: 60 + 45 = 105 dakika sürdüğü bulunur."
       }
     ],
-    test14: [
+   test14_zor: [
       // --- 5. SINIF MATEMATİK 2. DÖNEM TEST 14 (ZOR) ---
       {
         id: "m5-2-t14-img-01",
@@ -6209,7 +6209,7 @@ export const matematikData: SubjectData = {
         explanation: "06:45 ile 21:15 arasındaki süre 14 saat 30 dakikadır. Dakika karşılığı: (14 x 60) + 30 = 840 + 30 = 870 dakikadır."
       }
     ],
-    test15: [
+    test15_zor: [
       // --- 5. SINIF MATEMATİK 2. DÖNEM TEST 15 (ZOR - FİNAL) ---
       {
         id: "m5-2-t15-img-01",
