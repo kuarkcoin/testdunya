@@ -37,14 +37,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ]),
   ];
 
-  const examHubs = ['/8-sinif-lgs', '/yks', '/kpss', '/tus', '/dus', '/hmgs'].map((route) => ({
+  const examHubs = ['/8-sinif-lgs', '/lgs', '/lgs/sozel', '/lgs/sayisal', '/yks', '/kpss', '/tus', '/dus', '/hmgs'].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: lastMod,
     changeFrequency: 'daily' as const,
     priority: 0.9,
   }));
 
-  const otherRoutes = ['/ielts/speaking', '/speedrun', '/kelime-avcisi', '/edirne-masallari'].map((route) => ({
+  const otherRoutes = ['/ielts/speaking', '/speedrun', '/kelime-avcisi', '/edirne-masallari', '/test/lgs-sozel-test-1', '/test/lgs-sozel-test-2', '/test/lgs-sozel-test-3', '/test/lgs-sozel-test-4', '/test/lgs-sayisal-test-1', '/test/lgs-sayisal-test-2', '/test/lgs-sayisal-test-3', '/test/lgs-sayisal-test-4'].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: lastMod,
     changeFrequency: 'weekly' as const,

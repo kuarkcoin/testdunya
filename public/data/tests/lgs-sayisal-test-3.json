@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "question": "MATEMATİK: Bir okulda düzenlenen deneme sınavında öğrencilerin %40'ı matematik sorularının tamamını doğru cevaplamıştır. Sınava 250 öğrenci katıldığına göre matematik sorularının tamamını doğru cevaplayan öğrenci sayısı kaçtır?",
+    "A": "80",
+    "B": "90",
+    "C": "100",
+    "D": "120",
+    "correct": "C",
+    "Açıklama": "Cevap C'dir. 250'nin %40'ı 250 x 40 / 100 = 100'dür."
+  },
+  {
+    "id": 2,
+    "question": "FEN BİLİMLERİ: Bir öğrenci özdeş kaplara eşit miktarda su koyup kaplardan birini güneş alan, diğerini gölgede kalan bir yere bırakıyor. Bir süre sonra güneş alan kaptaki su miktarının daha fazla azaldığını gözlemliyor. Bu durum aşağıdakilerden hangisiyle açıklanır?",
+    "A": "Yoğuşma hızının artması",
+    "B": "Buharlaşma hızının artması",
+    "C": "Donma sıcaklığının düşmesi",
+    "D": "Erime olayının gerçekleşmesi",
+    "correct": "B",
+    "Açıklama": "Cevap B'dir. Sıcaklık arttıkça buharlaşma hızı artar, bu nedenle güneş alan kaptaki su daha fazla azalır."
+  }
+]

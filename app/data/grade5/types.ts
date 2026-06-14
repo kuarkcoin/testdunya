@@ -14,6 +14,8 @@ export interface Question5 {
   correct: number; // 0, 1, 2, 3 (index mantığı)
   explanation: string;
   imageUrl?: string; // İsteğe bağlı görsel desteği
+  notes?: string;
+  options_labels?: string[];
 }
 
 // 3. Test bazlı gruplandırma (test1, test2... test15)

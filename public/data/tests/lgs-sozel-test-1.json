@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "question": "TÜRKÇE: Bir yazar, eserlerinde olayları doğrudan anlatmak yerine okuyucunun düşünmesini sağlayan ipuçları kullanır. Bu cümlede sözü edilen anlatım özelliği aşağıdakilerden hangisidir?",
+    "A": "Açıklık",
+    "B": "Akıcılık",
+    "C": "Sezdirme",
+    "D": "Yalınlık",
+    "correct": "C",
+    "Açıklama": "Cevap C'dir. Olayların doğrudan verilmemesi, okuyucuya ipuçlarıyla hissettirilmesi sezdirme anlatımıdır."
+  },
+  {
+    "id": 2,
+    "question": "İNKILAP TARİHİ: Millî Mücadele döneminde halkın işgallere karşı bilinçlendirilmesi ve birlik duygusunun güçlendirilmesi için yapılan çalışmalar aşağıdakilerden hangisiyle daha çok ilişkilidir?",
+    "A": "Kuvâ-yı Milliye ruhu",
+    "B": "Saltanatın devamı",
+    "C": "Ekonomik ayrıcalıklar",
+    "D": "Tek parti yönetimi",
+    "correct": "A",
+    "Açıklama": "Cevap A'dır. Millî Mücadele'de halkın birlik içinde hareket etmesi Kuvâ-yı Milliye ruhuyla doğrudan ilişkilidir."
+  }
+]

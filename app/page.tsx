@@ -311,6 +311,30 @@ export default function HomePage() {
 
       {/* --- MAIN CONTENT AREA --- */}
       <div id="exams" className="max-w-7xl mx-auto px-2 md:px-6 -mt-20 space-y-10 pb-20 relative z-10">
+
+        {/* --- LGS 2026 SECTION --- */}
+        <section className="premium-card overflow-hidden relative">
+          <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-indigo-500 via-violet-500 to-fuchsia-500"></div>
+          <div className="p-6 md:p-8 bg-gradient-to-br from-white to-indigo-50/70 flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div className="flex items-start gap-4">
+              <div className="p-3 bg-indigo-100 text-indigo-600 rounded-xl shadow-sm">
+                <Target className="w-8 h-8" />
+              </div>
+              <div>
+                <p className="text-xs font-black uppercase tracking-[0.25em] text-indigo-600">LGS Hazırlık</p>
+                <h2 className="mt-2 text-2xl md:text-3xl font-black text-slate-800 tracking-tight">LGS 2026 Denemeleri</h2>
+                <p className="mt-2 text-slate-600 dark:text-zinc-300 text-base font-semibold">Sözel ve Sayısal Bölüm Testleri</p>
+              </div>
+            </div>
+            <Link
+              href="/lgs"
+              className="inline-flex items-center justify-center rounded-2xl bg-slate-900 px-6 py-3 text-sm font-black text-white shadow-lg transition-all hover:-translate-y-0.5 hover:bg-indigo-700 hover:shadow-xl"
+            >
+              LGS 2026 Denemeleri →
+            </Link>
+          </div>
+        </section>
+
         {/* --- IELTS GLOBAL SECTION --- */}
         <section className="premium-card overflow-hidden relative">
           <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-sky-400 to-blue-600"></div>
