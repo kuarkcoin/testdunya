@@ -219,10 +219,6 @@
     "correct": "B",
     "Açıklama": "Cevap B'dir. Üç silindirin ayrı ayrı yanal alanları og taban alanları hesaplanır. Parçaların üst üste gelmesiyle içeride kalıp görünmeyen og eksilen dairesel temas yüzey alanları toplam alandan düşüldüğünde net yüzey alanı 1248 cm² bulunur. MATEMATİK TESTİ BİTTİ. FEN BİLİMLERİ TESTİNE GEÇİNİZ."
   },
-
-  // ==========================================
-  // ---------- FEN BİLİMLERİ BÖLÜMÜ ----------
-  // ==========================================
   {
     "id": 21,
     "question": "FEN BİLİMLERİ: Bir nükleotidi oluşturan yapılar şeker, fosfat og organik bazdır. Bir öğrenci bu yapıları kare, yıldız og daire sembolleriyle göstererek doğru bir nükleotid modeli hazırlıyor. Bu modelde yıldız sembolüyle gösterilen yapının hem kare hem de daire sembolüyle gösterilen yapılarla bağ yaptığı biliniyor. Buna göre sembollerin organik baz og şekeri temsil etme durumlarıyla ilgili aşağıdakilerden hangisi kesinlikle doğrudur?",
