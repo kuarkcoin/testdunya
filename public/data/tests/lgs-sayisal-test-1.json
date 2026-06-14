@@ -1,22 +1,449 @@
 [
+  // ==========================================
+  // ---------- MATEMATİK BÖLÜMÜ ----------
+  // ==========================================
   {
     "id": 1,
-    "question": "MATEMATİK: Bir okulda düzenlenen deneme sınavında öğrencilerin %40'ı matematik sorularının tamamını doğru cevaplamıştır. Sınava 250 öğrenci katıldığına göre matematik sorularının tamamını doğru cevaplayan öğrenci sayısı kaçtır?",
-    "A": "80",
-    "B": "90",
-    "C": "100",
-    "D": "120",
-    "correct": "C",
-    "Açıklama": "Cevap C'dir. 250'nin %40'ı 250 x 40 / 100 = 100'dür."
+    "question": "MATEMATİK: Aşağıdakilerden hangisi bir tam kare pozitif tam sayıdır? [Görselde kare şeklinde bir zemin üzerine yerleştirilmiş sayılar sembolize edilmiştir.]",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/matematik-q1.webp",
+    "A": "11",
+    "B": "13",
+    "C": "15",
+    "D": "16",
+    "correct": "D",
+    "Açıklama": "Cevap D'dir. Seçenekler arasında pozitif bir tam sayının karesi (4'ün karesi) olan tek sayı 16'dır."
   },
   {
     "id": 2,
-    "question": "FEN BİLİMLERİ: Bir öğrenci özdeş kaplara eşit miktarda su koyup kaplardan birini güneş alan, diğerini gölgede kalan bir yere bırakıyor. Bir süre sonra güneş alan kaptaki su miktarının daha fazla azaldığını gözlemliyor. Bu durum aşağıdakilerden hangisiyle açıklanır?",
-    "A": "Yoğuşma hızının artması",
-    "B": "Buharlaşma hızının artması",
-    "C": "Donma sıcaklığının düşmesi",
-    "D": "Erime olayının gerçekleşmesi",
+    "question": "MATEMATİK: Kareli bir zemin üzerinde yer alan mavi renkli bir karenin d doğrusuna göre yansıma sonucundaki görüntüsü oluşturulacaktır. Mavi kare d doğrusunun 4 birim solundadır. Buna göre, bu yansıma sonucundaki görüntü d doğrusunun sağında yer alan ardışık I, II, III ve IV numaralı karelerin hangisinin üzerinde oluşur?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/matematik-q2.webp",
+    "A": "I",
+    "B": "II",
+    "C": "III",
+    "D": "IV",
     "correct": "B",
-    "Açıklama": "Cevap B'dir. Sıcaklık arttıkça buharlaşma hızı artar, bu nedenle güneş alan kaptaki su daha fazla azalır."
+    "Açıklama": "Cevap B'dir. d doğrusuna 4 birim uzaklıkta solda bulunan cismin simetriği (yansıması), d doğrusunun 4 birim sağında yer alan II numaralı karenin tam üzerine denk gelir."
+  },
+  {
+    "id": 3,
+    "question": "MATEMATİK: (x-2) / 5 = 3 denklemini sağlayan x değeri kaçtır?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/matematik-q3.webp",
+    "A": "11",
+    "B": "13",
+    "C": "15",
+    "D": "17",
+    "correct": "D",
+    "Açıklama": "Cevap D'dir. İçler dışlar çarpımı yapıldığında x - 2 = 15 olur. Buradan -2 karşıya artı olarak geçer ve x = 15 + 2 = 17 bulunur."
+  },
+  {
+    "id": 4,
+    "question": "MATEMATİK: Büyük bir ABCD karesinin içerisine; dört adet eş sarı dikdörtgen, alanı 4y² cm² olan bir adet yeşil kare ve alanı 4x² cm² olan bir adet mavi kare yerleştirilmiştir. Buna göre, sarı dikdörtgenlerden birinin alanını santimetrekare cinsinden veren cebirsel ifade aşağıdakilerden hangisidir?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/matematik-q4.webp",
+    "A": "6xy",
+    "B": "4xy",
+    "C": "2xy",
+    "D": "xy",
+    "correct": "C",
+    "Açıklama": "Cevap C'dir. Mavi karenin bir kenarı 2x, yeşil karenin bir kenarı 2y'dir. Dikdörtgenlerin kenar ilişkileri incelendiğinde uzun kenarı 2x, kısa kenarı 2y olur. Alanı ise 2x . 2y = 4xy bağıntısı ve eş parça dağılımından dikdörtgen başına 2xy olarak hesaplanır."
+  },
+  {
+    "id": 5,
+    "question": "MATEMATİK: Bir gözlemeci, bir kenarının uzunluğu 60 cm olan kare şeklinde iki adet yufka açmıştır. Bu yufkalardan birini, dikdörtgen şeklinde iki eş bölgeye ayırarak bu bölgelerden birine patates diğerine ise peynir koymuş ve diğer yufkayı bu yufkanın üzerini tamamen kapatacak şekilde yerleştirerek gözleme yapmıştır. Daha sonra bu gözlemeyi, bir kenarının uzunluğu 12 cm olan kare şeklindeki dilimlere ayırıp bir tabağa koymuştur. Bu tabaktan rastgele alınan bir dilimin sadece peynirli olma olasılığı kaçtır?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/matematik-q5.webp",
+    "A": "1/4",
+    "B": "2/5",
+    "C": "3/5",
+    "D": "1/2",
+    "correct": "D",
+    "Açıklama": "Cevap D'dir. Gözleme tam ortadan iki eş bölgeye ayrıldığı için toplam dilimlerin yarısı patatesli, diğer yarısı ise peynirlidir. Bu nedenle peynirli gelme olasılığı 1/2'dir."
+  },
+  {
+    "id": 6,
+    "question": "MATEMATİK: Uzunluğu √5 m olan bir otomobil ile uzunluğu √45 m olan bir kamyon Şekil I'deki konumlarındayken doğrusal bir yol boyunca ok yönünde bir süre ilerledikten sonra durduklarında otomobil ve kamyonun son konumları Şekil II'deki gibi olmuştur. Bu süre boyunca kamyon √245 m ilerlediğine göre otomobil kaç metre ilerlemiştir?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/matematik-q6.webp",
+    "A": "13√5",
+    "B": "12√5",
+    "C": "11√5",
+    "D": "10√5",
+    "correct": "C",
+    "Açıklama": "Cevap C'dir. Kamyonun boyu √45 = 3√5 m, ilerlemesi √245 = 7√5 m'dir. Şekil I ve Şekil II konumlarındaki bağıntı farkı otomobilin kamyonun boyu ve aradaki mesafe ilişkisine göre tam olarak 11√5 m ilerlediğini gösterir."
+  },
+  {
+    "id": 7,
+    "question": "MATEMATİK: Bir lunaparkın girişinde yer alan levhada oyuncaklara biniş boy sınırları yazmaktadır: Atlıkarınca en az 100 cm, Çarpışan araba en az 120 cm, Gondol en az 120 cm, Hızlı tren en az 140 cm, Dönme dolap en az 150 cm. Ümran, bu oyuncaklardan sadece 4 tanesine binebilmektedir. Ümran'ın boyu x cm olduğuna göre, x'in alabileceği değerleri gösteren eşitsizlik aralığı hangisidir?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/matematik-q7.webp",
+    "A": "140 <= x < 150",
+    "B": "120 <= x < 140",
+    "C": "100 <= x < 120",
+    "D": "120 < x <= 150",
+    "correct": "A",
+    "Açıklama": "Cevap A'dır. Ümran 5 oyuncaktan 4'üne binebiliyorsa boyu dönme dolaba (150 cm) yetmiyor ama hızlı trene (140 cm) yetiyor demektir. Bu yüzden boyu 140 ile 150 cm arasındadır."
+  },
+  {
+    "id": 8,
+    "question": "MATEMATİK: Bir ayrıtının uzunluğu (2x+5) cm olan küp şeklindeki tahta bloktan yüksekliği 5 cm olan kare dik prizma biçimindeki bir parça Şekil I'deki gibi kesilerek ayrılmıştır. Elde edilen iki parça, sarı renkli yan yüzleri çakışacak biçimde Şekil II'deki gibi yerleştirilmiştir. Buna göre, Şekil II'de görünen sarı renkli bölgenin alanını santimetrekare cinsinden veren cebirsel ifade hangisidir?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/matematik-q8.webp",
+    "A": "4x² - 20x + 25",
+    "B": "4x² - 10x",
+    "C": "x² - 10x + 25",
+    "D": "4x² - 25",
+    "correct": "D",
+    "Açıklama": "Cevap D'dir. İki parçanın çakışan yüzeylerinin alan farkı alındığında iki kare farkı özdeşliğinden alan (2x+5).(2x+5) - 5.(2x+5) düzenlemesiyle 4x² - 25 cebirsel ifadesine ulaşılır."
+  },
+  {
+    "id": 9,
+    "question": "MATEMATİK: 1 kg toryumdan elde edilen enerji ile 3,5 . 10⁶ kg kömürden elde edilen enerji birbirine eşittir. Günümüz teknolojisinde 10⁵ kg kömürden elde edilen enerji ile 80 adet elektrikli aracın enerji ihtiyacı karşılanmaktadır. Buna göre, 28 adet elektrikli aracın enerji ihtiyacını karşılamak için kaç kilogram toryum gereklidir?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/matematik-q9.webp",
+    "A": "10²",
+    "B": "10",
+    "C": "10⁻¹",
+    "D": "10⁻²",
+    "correct": "D",
+    "Açıklama": "Cevap D'dir. Orantı kurulduğunda 28 araç için gereken kömür miktarı bulunur, ardından kömür toryum eşdeğerine (3,5 . 10⁶) bölündüğünde üslü sayı kuralından sonuç 10⁻² kg olarak hesaplanır."
+  },
+  {
+    "id": 10,
+    "question": "MATEMATİK: Kenarlarının uzunlukları 12 cm ve 16 cm olan ABCD dikdörtgeni biçiminde bir kâğıt verilmiştir. Bu kâğıdın AD kenarı üzerinde ve A ile D noktaları arasında bir E noktası işaretlendikten sonra, [BE] ile [BD] çizilerek BAE ile BCD benzer üçgenleri elde ediliyor. Buna göre AE uzunluğu kaç santimetredir?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/matematik-q10.webp",
+    "A": "9",
+    "B": "12",
+    "C": "15",
+    "D": "16",
+    "correct": "A",
+    "Açıklama": "Cevap A'dır. Üçgenlerin benzerlik oranları kenar uzunlukları eşleşmesine göre (12/16) oranlandığında AE kenarının uzunluğu net olarak 9 cm bulunur."
+  },
+  {
+    "id": 11,
+    "question": "MATEMATİK: Bir imalathanede 168 adet beyaz renkli mum ile 200 adet sarı renkli mum üretilmiştir. Bu mumların tamamı, her bir pakette eşit sayıda ve tek renk mum olacak şekilde paketlenmiştir. Bu iş için en az sayıda paket kullanılmıştır. Paketleme sonrasında yapılan kontrolde, 17 adet beyaz mum ile 11 adet sarı mumun kırık olduğu tespit edilmiştir. Buna göre, içinde kırık mum bulunmayan paketlerin sayısı en fazla kaçtır?",
+    "imageUrl": "/images/grade5/ingilizce/test1/map-between.webp",
+    "A": "40",
+    "B": "41",
+    "C": "42",
+    "D": "43",
+    "correct": "B",
+    "Açıklama": "Cevap B'dir. 168 ve 200 sayılarının EBOB'u paket başına düşen mum sayısını (8) verir. Toplam paket sayısından kırık mumların denk geldiği paket dağılımları çıkarıldığında sağlam kalan paket sayısı en fazla 41 olur."
+  },
+  {
+    "id": 12,
+    "question": "MATEMATİK: Uzunluğu 4√2 m olan K yolu ile uzunluğu 2√6 m olan L yolu verilmiştir. Şarjı tam dolu olan bir oyuncak tren, L yolunda 6 tam tur attığı anda şarjı bitmektedir. L yolunda bulunan bu tren, şarjı tam dolu iken hareket ettirilmiş ve bu yolda 2 tam tur attığı anda durdurulup, K yoluna yerleştirilerek tekrar hareket ettirilmiştir. Buna göre bu trenin şarjı, tren K yolunda kaçıncı turu atarken biter?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/matematik-q12.webp",
+    "A": "1.",
+    "B": "2.",
+    "C": "3.",
+    "D": "4.",
+    "correct": "D",
+    "Açıklama": "Cevap D'dir. Trenin toplam enerjisi L yolunda 6 tur yani 12√6 m yol demektir. 2 tur atınca geriye 8√6 m'lik enerji kalır. Bu kalan enerji K yoluna (4√2) oranlandığında tren 3. turu bitirip 4. turun içinde kalır."
+  },
+  {
+    "id": 13,
+    "question": "MATEMATİK: Millî futbol takımımızı desteklemek amacıyla hazırlanan afişin her bir satırına, kelimelerin ilk harfleri büyük harf olacak biçimde iki kelimeden oluşan 'Bizim Çocuklar' ifadesi birer kez yazılmıştır. Bu afiş hazırlanırken içinde 2⁴ mL mürekkep bulunan bir kalem kullanılmıştır. Afişe yazılan her bir büyük harf için 2⁻² mL, her bir küçük harf için ise 2⁻³ mL mürekkep harcanmış ve 9. satırdaki ifade yazılırken kalemdeki mürekkep bitmiştir. Buna göre, bu afiş çalışmasında hangi harfin yazımı tamamlandığında kalemdeki mürekkep bitmiştir?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/matematik-q13.webp",
+    "A": "Ç",
+    "B": "u",
+    "C": "o",
+    "D": "k",
+    "correct": "A",
+    "Açıklama": "Cevap A'dır. Bir tam 'Bizim Çocuklar' satırının harcadığı mürekkep üslü sayılarla (2 büyük, 11 küçük harf) hesaplanır. Toplam mürekkep (16 mL) 8 tam satırı doldurur, 9. satırın ilk kelimesi bittikten sonra 'Ç' büyük harfinde mürekkep tamamen tükenir."
+  },
+  {
+    "id": 14,
+    "question": "MATEMATİK: Uzunluğu 260 cm olan bir çubuğun orta noktasına, uzunluğu 120 cm olan bir destek, zemine dik olarak yerleştirilip bir tahterevalli yapılmıştır. Şekil I'de modellenen bu tahterevallide, [AB] denge durumundadır. A noktasına bir kütle yerleştirildiğinde [AB]'nın denge durumu bozularak A noktası zemin ile çakışmış ve [AB]'nın son konumu Şekil II'deki gibi olmuştur. Buna göre, [AB]'nın son konuma gelinceye kadar eğiminin alabileceği değerlerden biri aşağıdakilerden hangisi olamaz?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/matematik-q14.webp",
+    "A": "6/5",
+    "B": "9/5",
+    "C": "13/12",
+    "D": "13/5",
+    "correct": "D",
+    "Açıklama": "Cevap D'dir. Tahterevallinin tam yere değdiği andaki maksimum eğimi dik üçgen bağıntısından (120/50 = 12/5) 2,4'tür. 13/5 ifadesi 2,6 değerini gösterdiği için bu eğim sınırını aşar og imkansızdır."
+  },
+  {
+    "id": 15,
+    "question": "MATEMATİK: Çiftçi Adem Amca, buğday tarlasından alacağı tahminî buğday miktarını hesaplamak için 1 m²'lik çerçeve içinde 400 adet başak olduğunu belirlemiştir. Bu çerçeve içinden aldığı 3 adet başaktan sırasıyla 29, 24 ve 22 adet buğday tanesi çıkmıştır. Bu sayıların ortalamasını bulup 400 ile çarparak 1 m²'deki toplam taneyi bulmuştur. Bu buğday türünde 1000 adet buğday tanesinin kütlesi y gram olmak üzere, 32 <= y <= 40'tır. Adem Amca 20 dekar (20000 m²) tarlasından x kg buğday alacağını tahmin ettiğine göre, x'in alabileceği değerleri gösteren eşitsizlik hangisidir?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/matematik-q15.webp",
+    "A": "6400 <= x <= 8000",
+    "B": "3200 <= x <= 6400",
+    "C": "3200 <= x <= 4000",
+    "D": "4000 <= x <= 8000",
+    "correct": "A",
+    "Açıklama": "Cevap A'dır. Başak tane ortalaması (29+24+22)/3 = 25'tir. 1 m²'de 25 . 400 = 10000 tane bulunur. 20 dekar tarlada 200000000 tane eder. 1000 tanesi 32-40 gram ise oranlandığında toplam kütle x; 6400 kg ile 8000 kg aralığında bulunur."
+  },
+  {
+    "id": 16,
+    "question": "MATEMATİK: Bir kenarının uzunluğu 8 cm olan ABC eşkenar üçgeni biçimindeki karton [AK] boyunca kesilerek kenarlarının uzunlukları santimetre cinsinden doğal sayı olan iki üçgen elde edilmiş ve bu üçgenlerden biri maviye boyanmıştır. Buna göre, elde edilen üçgenlerin çevrelerinin uzunlukları toplamı kaç santimetredir?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/matematik-q16.webp",
+    "A": "34",
+    "B": "36",
+    "C": "38",
+    "D": "40",
+    "correct": "A",
+    "Açıklama": "Cevap A'dır. Eşkenar üçgen kesildiğinde [AK] ortak kenarı iki kez çevreye dahil olur. Doğal sayı kenar sınırlamaları og üçgen eşitsizliği kuralları uygulandığında iki üçgenin çevre uzunlukları toplamı 34 cm olarak hesaplanır."
+  },
+  {
+    "id": 17,
+    "question": "MATEMATİK: Doğrusal bir yol boyunca aynı anda birbirlerine doğru sabit süratle hareket eden A ve B araçları bu yol üzerindeki C noktasında karşılaşmıştır. Bu araçların C noktasına olan uzaklıkları ile zaman arasındaki ilişki doğrusal grafikte verilmiştir. Grafikte zaman 2 og 3 saat basamaklarında sırasıyla 204, 252 og 340 km uzaklık farkları içerdiğine göre, başlangıçta A aracının C noktasına olan uzaklığı kaç kilometredir?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/matematik-q17.webp",
+    "A": "970",
+    "B": "720",
+    "C": "680",
+    "D": "540",
+    "correct": "C",
+    "Açıklama": "Cevap C'dir. Doğrusal grafikteki eğimler og zaman dilimlerindeki değişim oranları (hızları) hesaplandığında, A aracının başlangıçta karşılaşma noktası olan C'ye uzaklığı doğrusal denklemden 680 km olarak bulunur."
+  },
+  {
+    "id": 18,
+    "question": "MATEMATİK: Her birinin uzunluğu santimetre cinsinden birer doğal sayı olan turuncu, mavi ve yeşil renkli üç adet çubuk uç uca birleştirilerek bir üçgen oluşturulabilmektedir. Çevresinin uzunluğu 36 cm olan bir dikdörtgenin kısa ve uzun kenarlarının uzunlukları ile turuncu çubuğun uzunluğu arasındaki ilişki Şekil I (kısa kenardan 3 cm uzun) ve Şekil II'de (uzun kenardan 5 cm kısa) verilmiştir. Mavi çubuğun uzunluğu, turuncu çubuğun uzunluğundan 2 cm kısa olduğuna göre, yeşil çubuğun uzunluğunun santimetre cinsinden alabileceği kaç farklı değer vardır?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/matematik-q18.webp",
+    "A": "8",
+    "B": "11",
+    "C": "13",
+    "D": "15",
+    "correct": "C",
+    "Açıklama": "Cevap C'dir. Dikdörtgenin çevre bağıntısından kenar uzunlukları og çubuk ilişkisi çözüldüğünde turuncu og mavi çubuk boyları netleşir. Üçgen eşitsizliği ($|a-b| < c < a+b$) uygulandığında yeşil çubuğun alabileceği 13 farklı tam sayı değeri kalır."
+  },
+  {
+    "id": 19,
+    "question": "MATEMATİK: Bir tavuk çiftliğinde 1 günde üretilen yumurtalar boyutlarına göre küçük (72 derece), büyük (108 derece) ve orta boy (180 derece) olarak ayrılıp daire grafiğinde gösterilmiştir. Yumurtaların tamamı; küçük boy olanlar 30'lu (S koli), orta boy olanlar 25'li (M koli) ve büyük boy olanlar ise 20'li (L koli) olacak şekilde kolilenmiştir. Satış esnasında zarar gören koliler imha edilmiş, sağlam kalanlar sütun grafiğinde (S:10, M:8, L:X) gösterilmiştir. Buna göre, imha edilen koli sayısı en az kaçtır?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/matematik-q19.webp",
+    "A": "3",
+    "B": "4",
+    "C": "5",
+    "D": "6",
+    "correct": "C",
+    "Açıklama": "Cevap C'dir. Daire grafiğindeki açılar koli içi yumurta sayılarına oranlanıp en küçük ortak kat genişlemesi yapıldığında, başlangıçtaki toplam koli oranları bulunur. Sağlam kalan kolilerle kıyaslandığında imha edilen koli sayısının en az 5 adet olduğu hesaplanır."
+  },
+  {
+    "id": 20,
+    "question": "MATEMATİK: Taban yarıçaplarının uzunlukları 1 cm, 5 cm, 10 cm ve yükseklikleri 50 cm, 2 cm, 2 cm olan silindir biçimindeki üç ahşap parça dik olacak şekilde merkezlerinden geçirilerek iki katlı sunum tabağı oluşturulmuştur. Buna göre, oluşturulan bu cismin toplam yüzey alanı kaç santimetrekaredir? (pi yerine 3 alınız.)",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/matematik-q20.webp",
+    "A": "1296",
+    "B": "1248",
+    "C": "1200",
+    "D": "1152",
+    "correct": "B",
+    "Açıklama": "Cevap B'dir. Üç silindirin ayrı ayrı yanal alanları og taban alanları hesaplanır. Parçaların üst üste gelmesiyle içeride kalıp görünmeyen og eksilen dairesel temas yüzey alanları toplam alandan düşüldüğünde net yüzey alanı 1248 cm² bulunur."
+  },
+
+  // ==========================================
+  // ---------- FEN BİLİMLERİ BÖLÜMÜ ----------
+  // ==========================================
+  {
+    "id": 21,
+    "question": "FEN BİLİMLERİ: Bir nükleotidi oluşturan yapılar şeker, fosfat ve organik bazdır. Bir öğrenci bu yapıları kare, yıldız ve daire sembolleriyle göstererek doğru bir nükleotid modeli hazırlıyor. Bu modelde yıldız sembolüyle gösterilen yapının hem kare hem de daire sembolüyle gösterilen yapılarla bağ yaptığı biliniyor. Buna göre sembollerin temsil etme durumlarıyla ilgili aşağıdakilerden hangisi kesinlikle doğrudur?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q1.webp",
+    "A": "Kare, fosfatı temsil eder.",
+    "B": "Yıldız, adenin organik bazını temsil eder.",
+    "C": "Yıldız, deoksiriboz şekerini temsil eder.",
+    "D": "Daire, guanin organik bazını temsil eder.",
+    "correct": "C",
+    "Açıklama": "Cevap C'dir. Bir nükleotidin merkezinde deoksiriboz şekeri yer alır og bu şeker hem fosfata hem de organik baza bağlanarak köprü görevi görür. İki tarafla da bağ yapan yıldız kesinlikle şekerdir."
+  },
+  {
+    "id": 22,
+    "question": "FEN BİLİMLERİ: Bezelyelerde çiçek renginin kalıtımıyla ilgili yapılan iki çaprazlama şu şekildedir: 1. çaprazlama: Mor çiçekli iki bezelye çaprazlanıyor. 2. çaprazlama: Mor çiçekli bezelye ile beyaz çiçekli bezelye çaprazlanıyor. Her iki çaprazlamada da mor ve beyaz çiçekli bezelyeler elde edildiğine göre yargılardan hangileri doğrudur?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q2.webp",
+    "A": "Yalnız II",
+    "B": "I ve III",
+    "C": "II ve III",
+    "D": "I, II ve III",
+    "correct": "A",
+    "Açıklama": "Cevap A'dır. İki mor çaprazlanıp beyaz çıkıyorsa ikisi de melezdir (Pp x Pp -> %25 beyaz). Mor ve beyaz çaprazlanıp beyaz çıkıyorsa mor olan melez, beyaz olan çekiniktir (Pp x pp -> %50 beyaz). Bu durumda çekinik (beyaz) çıkma ihtimali 2. çaprazlamada daha yüksektir, yalnız II doğrudur."
+  },
+  {
+    "id": 23,
+    "question": "FEN BİLİMLERİ: Doğal ortamında yaşayan bir su bitkisinin hava ve su ortamında gelişen yaprakları birbirinden farklılık göstermektedir. Bir araştırmacı bu bitkinin su içindeki og su dışındaki kısımlarından aldığı parçalardan yeni bitkiler elde ediyor. Bu yeni bitkilerin de hava ortamında gelişen yapraklarının geniş, su ortamında gelişen yapraklarının ise parçalı olduğunu gözlemliyor. Buna göre, yaprakların farklı görünüşte olması aşağıdakilerden hangisiyle açıklanır?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q3.webp",
+    "A": "Yaprak gelişiminden sorumlu genin su ortamında mutasyona uğramasıyla",
+    "B": "Hava ortamında gelişen yaprakta genlerin nükleotid diziliminin değişmesiyle",
+    "C": "Çevresel faktörlerin etkisiyle yapay seçilimin gerçekleşmesiyle",
+    "D": "Yaprak gelişiminden sorumlu genin yaprağın geliştiği ortama göre farklı biçimde ifade edilmesiyle (Modifikasyon)",
+    "correct": "D",
+    "Açıklama": "Cevap D'dir. Çevre şartlarına (su/hava ortamı) bağlı olarak genlerin yapısı değişmeden sadece işleyişinin değişmesi og sonraki nesilde de aynı ortamda aynı sonucun gözlenmesi kalıtsal olmayan bir modifikasyondur (gen ifadesinin değişmesi)."
+  },
+  {
+    "id": 24,
+    "question": "FEN BİLİMLERİ: Bir ekosistemde bazı canlılar arasındaki beslenme ilişkilerini gösteren besin ağı şemada verilmiştir. Bu besin ağında N canlısının hem etçil hem otçul olduğuna karar verilmiştir. Buna göre, bu kararın verilmesinde yararlanılan veri aşağıdakilerden hangisidir?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q4.webp",
+    "A": "N canlısının hem üretici olan L hem de otçul olan K canlısı üzerinden beslenmesi",
+    "B": "N canlısının sadece diğer etçil canlıları tüketmesi",
+    "C": "P ve R canlılarının N canlısı üzerinden beslenmesi",
+    "D": "Mürekkepli okların tamamının N canlısını göstermesi",
+    "correct": "A",
+    "Açıklama": "Cevap A'dır. Bir canlının hem etçil hem otçul (hepçil) olabilmesi için besin ağında hem doğrudan üretici (bitki) olan bir canlıyı hem de tüketici (hayvan) olan bir canlıyı besin olarak tüketmesi gerekir."
+  },
+  {
+    "id": 25,
+    "question": "FEN BİLİMLERİ: Işık renginin fotosenteze etkisini belirlemek için yapılan bir deneyde beyaz ışık, cam prizmadan geçirilerek ipliksi alg üzerine düşürülüyor. Daha sonra ipliksi algin bulunduğu cam yüzeye oksijenli solunum yapan bakteriler bırakılıyor. Belirli bir süre sonra fotosentez hızının yeşil ışıkta en az olduğuna karar veriliyor. Buna göre, bakteri yoğunluğunun aşağıdakilerden hangisi gibi olması bu kararın verilmesinde etkili olmuştur?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q5.webp",
+    "A": "Bakterilerin en az yeşil ışıkla aydınlatılan bölgede birikmesi",
+    "B": "Bakterilerin en çok yeşil ışıkla aydınlatılan bölgede kümelenmesi",
+    "C": "Bakterilerin mor og kırmızı alanda hiç bulunmaması",
+    "D": "Bakterilerin tüm renklerde tamamen eşit dağılması",
+    "correct": "A",
+    "Açıklama": "Cevap A'dır. Fotosentez hızı yeşil ışıkta en az olduğu için yeşil ışığın düştüğü bölgede üretilen oksijen miktarı en az olur. Oksijenli solunum yapan bakteriler bu yüzden yeşil alanda en az yoğunlukta toplanır."
+  },
+  {
+    "id": 26,
+    "question": "FEN BİLİMLERİ: Doğada gerçekleşen karbon döngüsündeki bazı olaylar şemada numaralandırılmıştır (1: Fotosentez, 2: Bitki Solunumu, 3: Hayvan Solunumu, 4: Fosil Yakıt Yanması). Bu şemaya göre, karbon döngüsüyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    "imageUrl": "/images/tests/tests/lgs-sayisal-test-1/fen-q6.webp",
+    "A": "1 numaralı olayda bitkiler atmosferdeki karbondioksiti fotosentez için kullanır.",
+    "B": "1 og 2 numaralı olay, birlikte atmosferdeki karbon seviyesinin dengede kalmasına yardımcı olur.",
+    "C": "2 ve 3 numaralı olay, canlıların hücresel solunumu sonucunda atmosfere saf oksijen gazı verilmesini sağlar.",
+    "D": "4 numaralı olayda fosil yakıtların aşırı kullanılması atmosferdeki karbondioksit miktarını artırır.",
+    "correct": "C",
+    "Açıklama": "Cevap C'dir. Hücresel solunum (2 og 3 numaralı olaylar) atmosfere oksijen vermez, aksine atmosferdeki oksijeni tüketerek atmosfere karbondioksit gazı verir. Bu yüzden C şıkkı yanlıştır."
+  },
+  {
+    "id": 27,
+    "question": "FEN BİLİMLERİ: Kaynakların ekonomik kullanılması og enerjiden tasarruf edilmesi amacıyla bazı atık maddelerin tekrar üretim sürecine dâhil edilerek geri dönüşümünün sağlanması amaçlanır. Buna göre, aşağıdakilerden hangisi doğrudan bir 'geri dönüşüm' uygulamasıdır?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q7.webp",
+    "A": "Ham petrolden sıfırdan yeni bazı plastik malzemelerin üretilmesi",
+    "B": "Atık metal içecek kutularının fabrikada eritilip işlenerek yeni bir çöp kovası üretilmesi",
+    "C": "Yağmur suyunun çatılarda depolanarak bahçe sulamada doğrudan kullanılması",
+    "D": "Boşalan bir cam kavanozun yıkanarak kalemlik olarak evde yeniden kullanılması (Yeniden kullanım)",
+    "correct": "B",
+    "Açıklama": "Cevap B'dir. Geri dönüşüm (recycling), atık malzemenin fiziksel veya kimyasal işlemlerle fabrikada erime/işleme safhalarından geçerek yeni bir hammaddeye veya ürünü dönüştürülmesi sürecidir."
+  },
+  {
+    "id": 28,
+    "question": "FEN BİLİMLERİ: Yerküre üzerinde bulunan P, R ve S şehirlerinin konumlarıyla ilgili bilgiler şu şekildedir: P ve S Kuzey yarım kürededir. S şehri Yengeç dönencesi üzerinde og Ekvator'a P'den daha yakındır. R şehri Güney yarım kürede Oğlak dönencesi üzerindedir. Buna göre, 21 Haziran tarihinde şehirlerde birim yüzeye aktarılan enerji miktarları kıyaslandığında hangisi kesinlikle doğrudur?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q8.webp",
+    "A": "21 Haziran'da R şehrine aktarılan enerji S şehrindekinden fazladır.",
+    "B": "21 Haziran'da S şehrine Güneş ışınları dik açıyla düştüğü için birim yüzeye bırakılan enerji miktarı en fazladır.",
+    "C": "21 Aralık'ta P şehrindeki enerji miktarı S şehrindekinden fazladır.",
+    "D": "R şehrinde 21 Haziran'da yaz mevsimi yaşanır.",
+    "correct": "B",
+    "Açıklama": "Cevap B'dir. 21 Haziran'da Kuzey Yarım Küre'deki Yengeç Dönencesi'ne (S şehri) Güneş ışınları tam dik ($90^\\circ$) açıyla düşer. Işınlar dik geldikçe birim yüzeye aktarılan ısı og enerji miktarı maksimum olur."
+  },
+  {
+    "id": 29,
+    "question": "FEN BİLİMLERİ: Katı cisimlerin basıncıyla ilgili bir etkinlikte küp şeklindeki K ve L cisimleri kum zemine konuluyor. Kum zeminde oluşan izlerin derinlikleri grafikte K'nin az, L'nin ise çok batarak derin iz bıraktığı gösterilmiştir. Buna göre cisimlerin ağırlıkları og yüzey alanlarıyla ilgili hangisi kesinlikle doğrudur?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q9.webp",
+    "A": "Cisimlerin ağırlıkları birbirine eşitse K'nin zemine temas eden yüzey alanı L'ninkinden büyüktür.",
+    "B": "K'nin yüzey alanı küçükse ağırlığı L'den büyüktür.",
+    "C": "Zemine temas eden yüzey alanları eşitse K'nin ağırlığı L'den büyüktür.",
+    "D": "L cisminin kütlesi her durumda K'den küçüktür.",
+    "correct": "A",
+    "Açıklama": "Cevap A'dır. Katı basıncı ağırlıkla doğru, yüzey alanıyla ters orantılıdır. Ağırlıklar eşitken K'nin kuma daha az batmasının (basıncının küçük olmasının) tek sebebi yüzey alanının geniş (büyük) olmasıdır."
+  },
+  {
+    "id": 30,
+    "question": "FEN BİLİMLERİ: Sıvı basıncıyla ilgili bir etkinlikte Şekil I'deki tel kafese, esnek bir balon Şekil II'deki gibi takılıyor. Bu balonun içine bir miktar sıvı konulduğunda Şekil III'teki gibi tel kafesin alt kısmındaki bölmelerinde, üst kısmındaki bölmelerine göre balonun dışarıya doğru daha fazla şiştiği gözlemleniyor. Bu durumun temel nedeni aşağıdakilerden hangisidir?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q10.webp",
+    "A": "Sıvıların esnek cisimleri büzüştürmesi",
+    "B": "Sıvı basıncının sıvının derinliği (üst yüzeye olan mesafesi) arttıkça artması",
+    "C": "Sıvıların basınç kuvvetini sadece yukarıya doğru iletmesi",
+    "D": "Kafesin üst kısmındaki sıvı yoğunluğunun daha fazla olması",
+    "correct": "B",
+    "Açıklama": "Cevap B'dir. Sıvı basıncı derinlikle ($h$) doğru orantılıdır. Alt bölmelerde derinlik og sıvı baskısı daha fazla olduğu için esnek balon alt taraftaki kafes aralıklarından dışarıya doğru daha çok şişme yapar."
+  },
+  {
+    "id": 31,
+    "question": "FEN BİLİMLERİ: Çamura batan bir traktörü battığı yerden çıkarmak için esnemeyen bir ip og özdeş halkalar kullanılarak 3 farklı makara düzeneği uygulaması tasarlanmıştır. 3. uygulamada ip traktörün önündeki halkanın içinden geçirilip bir ucu ağaca bağlanarak kuvvetle çekilmiştir (Hareketli makara sistemi). Bu sistemlerin kuvvet kazançları kıyaslandığında hangisi doğrudur?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q11.webp",
+    "A": "1. uygulamada kuvvet kazancı en fazladır.",
+    "B": "3. uygulamada traktöre bağlı halka hareketli makara işlevi gördüğü için kuvvet kazancı sağlar og uygulanan en küçük kuvvet diğerlerinden küçüktür.",
+    "C": "Tüm uygulamalarda kuvvetlerin büyüklükleri birbirine tam eşittir.",
+    "选项D": "Düzeneklerin hiçbirinde işten kazanç sağlanmamıştır.",
+    "correct": "B",
+    "Açıklama": "Cevap B'dir. 3. uygulamada ip cisimle birlikte hareket eden halkanın içinden dönerek geçtiği için bu halka bir hareketli makara gibi davranır og kuvvetten 2 kat kazanç sağlayarak çekim kuvvetini yarıya düşürür."
+  },
+  {
+    "id": 32,
+    "question": "FEN BİLİMLERİ: Kutu taşımak için bir kaldıraç düzeneği (el arabası modeli) tasarlanıyor. İlk durumda tekerlekler 1. konuma yerleştirilip levhanın ortasına koli konulduktan sonra tutma koluna kuvvet uygulanarak yatay dengede kalması sağlanıyor. Daha sonra, kutunun yeri değiştirilmeden tekerlekler (destek noktası) kutuya daha yakın olan 2. konuma kaydırılıyor. Buna göre, tekerlekler 2. konumdayken kolu dengede tutmak için gereken kuvvetin yönü og büyüklüğü ilk duruma göre nasıl değişir?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q12.webp",
+    "A": "Yönü: Değişir, Büyüklüğü: Azalır",
+    "B": "Yönü: Değişmez, Büyüklüğü: Artar",
+    "C": "Yönü: Değişir, Büyüklüğü: Artar",
+    "D": "Yönü: Değişmez, Büyüklüğü: Azalır",
+    "correct": "D",
+    "Açıklama": "Cevap D'dir. Tekerlekler (destek noktası) 2. konuma geldiğinde yükün desteğe olan mesafesi (yük kolu) kısalır, kuvvetin desteğe olan mesafesi (kuvvet kolu) ise uzar. Kuvvet kolu uzadığı için kuvvet kazancı artar og uygulanması gereken kuvvetin büyüklüğü azalır, yönü ise değişmez."
+  },
+  {
+    "id": 33,
+    "question": "FEN BİLİMLERİ: Bir öğrenci, nötr iletken K og L kürelerini yüklemek için iki etkinlik yapıyor. 1. etkinlikte: Yüklü çubuğu K küresine dokundurup küreleri ayırıyor. 2. etkinlikte: Yüklü çubuğu K küresine dokundurmadan yaklaştırıp (etkiyle elektriklenme) çubuğu uzaklaştırmadan L küresini K'den ayırıyor. Buna göre kürelerin son yük durumlarıyla ilgili hangisi doğrudur?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q13.webp",
+    "A": "1. etkinlikte K og L küreleri zıt yükle yüklenir.",
+    "B": "2. etkinlikte K og L küreleri birbirleriyle zıt yükle yüklenir.",
+    "C": "Her iki etkinlikte de L küresi nötr kalır.",
+    "D": "Dokunma ile elektriklenmede cisimler zıt yüklenir.",
+    "correct": "B",
+    "Açıklama": "Cevap B'dir. Etkiyle (yaklaştırma) elektriklenmede kutuplanma olur og birbirine temas eden nötr küreler zıt yükleri uçlara toplar. Çubuk uzaklaştırılmadan küreler ayrılırsa K og L kesinlikle birbirine zıt yükle yüklenmiş olur."
+  },
+  {
+    "id": 34,
+    "question": "FEN BİLİMLERİ: İçinde yanıcı madde olan metal kapların statik elektrikten dolayı patlamasını önlemek amacıyla topraklama hatları kurulur. Görseldeki I, II og III numaralı düzenek uygulamalarından hangilerinde metal kapların toprakla tam bağlantısı (topraklanması) kurallara uygun olarak başarıyla sağlanmıştır?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q14.webp",
+    "A": "Yalnız I",
+    "B": "Yalnız II",
+    "C": "I og III",
+    "D": "I, II og III",
+    "correct": "C",
+    "Açıklama": "Cevap C'dir. I og III numaralı düzeneklerde metal kaplara bağlı olan iletken tel hatları doğrudan toprağın içine çakılmış olan metal çubuklara temas etmektedir. II. düzenekte ise kaplar sadece birbirine bağlanmış, toprağa hat çekilmemiştir."
+  },
+  {
+    "id": 35,
+    "question": "FEN BİLİMLERİ: Statik elektrik kurallarından yararlanılarak tasarlanan bir fotokopi makinesinde, yüklü silindir üzerine ışık düşen beyaz bölgeler zıt yükle yüklenirken, ışık düşmeyen karanlık bölgeler (yazının olduğu yerler) başlangıçtaki yükünü korur. Yüklü toner tozları silindire gönderildiğinde sadece ışığın düşmediği bölgelere tutunmaktadır. Buna göre bu durum aşağıdakilerden hangisiyle açıklanır?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q15.webp",
+    "A": "Aynı cins elektrik yüklerinin birbirini itmesiyle",
+    "B": "Zıt cins elektrik yüklerinin birbirini çekmesi og toner tozlarının ışık düşmeyen bölgeyle zıt yüklü olmasıyla",
+    "C": "Nötr cisimlerin tüm yüklü yüzeyleri her zaman itmesiyle",
+    "D": "Işığın toner tozlarını eritip sıvıya dönüştürmesiyle",
+    "correct": "B",
+    "Açıklama": "Cevap B'dir. Toner tozlarının sadece ışık düşmeyen bölgelere tutunabilmesi, o bölgeler ile toner tozlarının zıt elektrik yüküne sahip olduğunu og elektriksel çekim kuvvetiyle birbirini çektiğini gösterir."
+  },
+  {
+    "id": 36,
+    "question": "FEN BİLİMLERİ: Periyodik sistemde elementlerin yerlerini gösteren şemada daire, kare og üçgen element konumları verilmiştir. Buna göre elementlerin özellikleri og periyodik tablodaki yerleriyle ilgili hangisi doğrudur?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q16.webp",
+    "A": "Daire elementinin atom numarası en büyüktür.",
+    "B": "Kare og üçgen elementleri aynı periyotta (yatay sırada) yer alır.",
+    "C": "Aynı dikey sütunda (grupta) yer alan elementlerin kimyasal özellikleri genellikle benzerdir.",
+    "D": "Tablodaki tüm elementler ametal sınıfındadır.",
+    "correct": "C",
+    "Açıklama": "Cevap C'dir. Periyodik sistemde aynı dikey sütunda yani aynı grupta bulunan elementler benzer kimyasal özellikler gösterirler."
+  },
+  {
+    "id": 37,
+    "question": "FEN BİLİMLERİ: Bir deneyde çinko metal çubuk, mavi renkli bir bakır sülfat çözeltisine daldırılıyor (Şekil I). Bir süre sonra çözeltinin Şekil II'deki gibi şeffaflaşıp renksizleştiği og çinko çubuğun üzerinde kahverengi-kırmızı renkli yeni bir metal tabakanın kaplandığı gözlemleniyor. Bu kimyasal süreç için hangisi doğrudur?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q17.webp",
+    "A": "Bu olay sadece fiziksel bir değişimdir.",
+    "B": "Çinko çubuk ile çözelti arasında kimyasal bir tepkime gerçekleşmiş og yeni maddeler oluşmuştur.",
+    "C": "Çözeltinin renginin değişmesi madden kütlesini artırmıştır.",
+    "D": "Çinko atomları tamamen yok olmuştur.",
+    "correct": "B",
+    "Açıklama": "Cevap B'dir. Renk değişimi, çözeltinin şeffaflaşması og metal çubuk üzerinde yeni bir katmanın (saf bakır birikimi) toplanması, çinko ile çözelti arasında kimyasal bir tepkime gerçekleştiğinin kesin kanıtıdır."
+  },
+  {
+    "id": 38,
+    "question": "FEN BİLİMLERİ: Çay yaprağından elde edilen kahverengi doğal indikatör çözeltisi; asit çözeltilerine damlatıldığında turuncu veya sarı renk, baz çözeltilerine damlatıldığında ise kırmızı renk almaktadır. Asit veya baz olduğu bilinen K, L og M çözeltilerine bu indikatör damlatıldığında K: Turuncu, L: Kırmızı, M: Sarı renk oluşuyor. Buna göre çözeltilerin pH değerleri aşağıdakilerden hangisi olabilir?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q18.webp",
+    "A": "K: 3 , L: 10 , M: 5",
+    "B": "K: 9 , L: 2 , M: 11",
+    "C": "K: 8 , L: 12 , M: 4",
+    "D": "K: 12 , L: 5 , M: 2",
+    "correct": "A",
+    "Açıklama": "Cevap A'dır. K turuncu og M sarı renk verdiğine göre ikisi de asittir (pH < 7). L kırmızı renk verdiğine göre bazdır (pH > 7). Bu kuralı sağlayan tek seçenek K:3 (asit), L:10 (baz), M:5 (asit) olan A şıkkıdır."
+  },
+  {
+    "id": 39,
+    "question": "FEN BİLİMLERİ: İçinde 70 derece sıcaklıkta su bulunan bir sıcak su torbası odaya bırakılıyor og torbadaki suyun sıcaklığı 10 dereceye düşene kadar odaya ısı veriyor. Torbanın ortama ilk duruma göre 'daha fazla' ısı vermesini sağlamak için işlemlerinden hangileri tek başına yapılmalıdır?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q19.webp",
+    "A": "Yalnız I",
+    "B": "Yalnız II",
+    "C": "I og III",
+    "D": "II ve III",
+    "correct": "A",
+    "Açıklama": "Cevap A'dır. Verilen ısı miktarı $Q = m.c.\Delta t$ formülü ile hesaplanır. İlk duruma göre suyun kütlesini ($m$) artırıp aynı sıcaklık değişimini beklemek ortama salınan toplam ısı enerjisini artırır, bu yüzden yalnız I doğrudur."
+  },
+  {
+    "id": 40,
+    "question": "FEN BİLİMLERİ: Özdeş iki cam kap içinde bulunan saf sular özdeş ısıtıcılarla ısıtılıyor. Deney tablosunda 1. kaptaki suyun 5 dakikada, 2. kaptaki suyun ise 8 dakikada kaynamaya (hal değişimi) başladığı, ancak ikisinin de hal değişiminin tam 3 dakika sürdüğü kaydedilmiştir. Buna göre sularla ilgili hangisi kesinlikle doğrudur?",
+    "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q20.webp",
+    "A": "Kaplardaki suların kütleleri birbirinden tamamen farklıdır.",
+    "B": "Suların başlangıç sıcaklıkları og kütle kombinasyonları kaynama sürelerini etkilemiştir.",
+    "C": "İki kapta da hal değişimi süresince alınan ısı miktarları (3'er dakika sürdüğü için) birbirine eşittir og bu durum kütlelerinin eşit olduğunu gösterir.",
+    "D": "2. kaptaki suyun yoğunluğu daha fazladır.",
+    "correct": "C",
+    "Açıklama": "Cevap C'dir. Saf maddelerin hal değişimi süresince aldığı ısı miktarı doğrudan kütleleriyle ($Q = m.L_e$) doğru orantılıdır. İki kabın da kaynama esnasındaki hal değiştirme süreleri eşit (3'er dakika) olduğuna göre, bu sürede aldıkları ısılar og dolayısıyla kütleleri birbirine kesinlikle eşittir."
   }
 ]
