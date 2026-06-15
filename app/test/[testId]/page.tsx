@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useParams } from 'next/navigation';
 import { getParagrafTestNoFromDataId, getParagrafTestQuestions } from '../../data/paragrafTests';
+import { generateLgsPdf, type LgsPdfSection } from '../../../lib/lgsPdf';
 
 // --- ICONS ---
 const Clock = (props: React.SVGProps<SVGSVGElement>) => (
@@ -213,6 +214,26 @@ function findExplanation(item: any): string {
     item["Açıklama"] || item.explanation || item.Explanation || item.aciklama ||
     item.solution || item.Solution || item.cozum || item.Çözüm || ""
   );
+}
+
+
+function getLgsSectionFromTestId(testId: string): LgsPdfSection | 'both' | null {
+  if (/^lgs-sozel(?:-|$)/.test(testId)) return 'sozel';
+  if (/^lgs-sayisal(?:-|$)/.test(testId)) return 'sayisal';
+  if (/^lgs-test(?:-|$)/.test(testId)) return 'both';
+  return null;
+}
+
+function getLgsQuestionSection(question: Question): LgsPdfSection | null {
+  const text = `${question.prompt || ''} ${question.questionPrompt || ''}`.toLocaleLowerCase('tr-TR');
+  if (/\b(matematik|fen\s*bilimleri|fen:)\b/.test(text)) return 'sayisal';
+  if (/\b(türkçe|turkce|inkılap|inkilap|t\.c\.|din\s*kültürü|din kültürü|ingilizce)\b/.test(text)) return 'sozel';
+  return null;
+}
+
+function getQuestionsForLgsSection(questions: Question[], section: LgsPdfSection) {
+  const sectionQuestions = questions.filter((question) => getLgsQuestionSection(question) === section);
+  return sectionQuestions.length > 0 ? sectionQuestions : questions;
 }
 
 function shouldShowParagraphForQuestion(questionList: Question[], index: number): boolean {
@@ -696,6 +717,33 @@ export default function QuizPage() {
     };
   }, [selectedImage]);
 
+  const handleDownloadLgsPdf = async (section: LgsPdfSection, totalPercentage: number) => {
+    const sectionQuestions = getQuestionsForLgsSection(questions, section);
+    const sectionCorrectCount = sectionQuestions.filter((q) => answers[q.id] === q.answer).length;
+    const sectionBlankCount = sectionQuestions.filter((q) => !answers[q.id]).length;
+    const sectionWrongCount = sectionQuestions.length - sectionCorrectCount - sectionBlankCount;
+    const sectionPercentage = sectionQuestions.length > 0
+      ? Math.round((sectionCorrectCount / sectionQuestions.length) * 100)
+      : totalPercentage;
+
+    await generateLgsPdf({
+      section,
+      testTitle: testId || 'lgs-test',
+      questions: sectionQuestions.map((q) => ({
+        id: q.id,
+        prompt: q.prompt,
+        imageUrl: q.imageUrl,
+        options: q.choices,
+        correctAnswer: q.answer,
+      })),
+      userAnswers: answers,
+      correctCount: sectionCorrectCount,
+      wrongCount: sectionWrongCount,
+      blankCount: sectionBlankCount,
+      successPercentage: sectionPercentage,
+    });
+  };
+
   const handleSubmit = () => {
     let correctCount = 0;
     let mistakeList: any[] = [];
@@ -743,8 +791,10 @@ export default function QuizPage() {
   // --- RESULT SCREEN ---
   if (showResult) {
     const totalQuestions = questions.length;
-    const wrongCount = totalQuestions - score;
+    const blankCount = questions.filter((q) => !answers[q.id]).length;
+    const wrongCount = totalQuestions - score - blankCount;
     const percentage = totalQuestions > 0 ? Math.round((score / totalQuestions) * 100) : 0;
+    const lgsSection = testId ? getLgsSectionFromTestId(testId) : null;
 
     let estimatedLevel = "A1 (Beginner)";
     let estimatedBand = "Band 2.0 - 3.0";
@@ -788,6 +838,29 @@ export default function QuizPage() {
                 <div className="text-xs font-bold text-indigo-800 uppercase tracking-wide">{labels.score}</div>
               </div>
             </div>
+
+            {lgsSection && (
+              <div className="mt-8 flex flex-wrap justify-center gap-3">
+                {(lgsSection === 'sozel' || lgsSection === 'both') && (
+                  <button
+                    type="button"
+                    onClick={() => handleDownloadLgsPdf('sozel', percentage)}
+                    className="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 transition text-white rounded-xl font-bold shadow-sm"
+                  >
+                    Sözel PDF İndir
+                  </button>
+                )}
+                {(lgsSection === 'sayisal' || lgsSection === 'both') && (
+                  <button
+                    type="button"
+                    onClick={() => handleDownloadLgsPdf('sayisal', percentage)}
+                    className="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 transition text-white rounded-xl font-bold shadow-sm"
+                  >
+                    Sayısal PDF İndir
+                  </button>
+                )}
+              </div>
+            )}
 
             <div className="flex justify-center gap-4 mt-8">
               <Link href="/" className="px-6 py-3 bg-slate-100 hover:bg-slate-200 transition text-slate-700 rounded-xl font-bold">{labels.homeButton}</Link>
