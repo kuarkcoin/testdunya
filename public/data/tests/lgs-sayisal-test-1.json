@@ -221,36 +221,36 @@
   },
   {
     "id": 21,
-    "question": "FEN BİLİMLERİ: Bir nükleotidi oluşturan yapılar şeker, fosfat og organik bazdır. Bir öğrenci bu yapıları kare, yıldız og daire sembolleriyle göstererek doğru bir nükleotid modeli hazırlıyor. Bu modelde yıldız sembolüyle gösterilen yapının hem kare hem de daire sembolüyle gösterilen yapılarla bağ yaptığı biliniyor. Buna göre sembollerin organik baz og şekeri temsil etme durumlarıyla ilgili aşağıdakilerden hangisi kesinlikle doğrudur?",
+    "question": "FEN BİLİMLERİ: Bir nükleotidi oluşturan yapılar şeker, fosfat ve organik bazdır. Bir öğrenci bu yapıları kare, yıldız ve daire sembolleriyle göstererek doğru bir nükleotid modeli hazırlıyor. Bu modelde yıldız sembolüyle gösterilen yapının hem kare hem de daire sembolüyle gösterilen yapılarla bağ yaptığı biliniyor. Buna göre sembollerin organik baz ve şekeri temsil etme durumlarıyla ilgili aşağıdakilerden hangisi kesinlikle doğrudur?",
     "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q1.webp",
     "A": "Kare, fosfatı temsil eder.",
     "B": "Yıldız, adenin organik bazını temsil eder.",
     "C": "Yıldız, deoksiriboz şekerini temsil eder.",
     "D": "Daire, guanin organik bazını temsil eder.",
     "correct": "C",
-    "Açıklama": "Cevap C'dir. Bir nükleotidin merkezinde deoksiriboz şekeri yer alır og bu şeker hem fosfata hem de organik baza bağlanarak köprü görevi görür. İki tarafla da bağ yapan yıldız kesinlikle şekerdir."
+    "Açıklama": "Cevap C'dir. Bir nükleotidin merkezinde deoksiriboz şekeri yer alır ve bu şeker hem fosfata hem de organik baza bağlanarak köprü görevi görür. İki tarafla da bağ yapan yıldız kesinlikle şekerdir."
   },
   {
     "id": 22,
-    "question": "FEN BİLİMLERİ: Bezelyelerde çiçek renginin kalıtımıyla ilgili yapılan iki çaprazlama şu şekildedir: 1. çaprazlama: Mor çiçekli iki bezelye çaprazlanıyor. 2. çaprazlama: Mor çiçekli bezelye ile beyaz çiçekli bezelye çaprazlanıyor. Her iki çaprazlamada mor og beyaz çiçekli bezelyeler elde ediliyor. Yargılardan hangileri doğrudur?",
+    "question": "FEN BİLİMLERİ: Bezelyelerde çiçek renginin kalıtımıyla ilgili yapılan iki çaprazlama şu şekildedir: 1. çaprazlama: Mor çiçekli iki bezelye çaprazlanıyor. 2. çaprazlama: Mor çiçekli bezelye ile beyaz çiçekli bezelye çaprazlanıyor. Her iki çaprazlamada mor ve beyaz çiçekli bezelyeler elde ediliyor. Yargılardan hangileri doğrudur?",
     "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q2.webp",
     "A": "Yalnız II",
     "B": "I ve III",
     "C": "II ve III",
     "D": "I, II ve III",
     "correct": "A",
-    "Açıklama": "Cevap A'dır. İki mor çaprazlanıp beyaz çıkıyorsa ikisi de melezdir (Pp x Pp -> %25 beyaz). Mor og beyaz çaprazlanıp beyaz çıkıyorsa mor olan melez, beyaz olan çekiniktir (Pp x pp -> %50 beyaz). Bu durumda çekinik (beyaz) çıkma ihtimali 2. çaprazlamada daha yüksektir, yalnız II doğrudur."
+    "Açıklama": "Cevap A'dır. İki mor çaprazlanıp beyaz çıkıyorsa ikisi de melezdir (Pp x Pp -> %25 beyaz). Mor ve beyaz çaprazlanıp beyaz çıkıyorsa mor olan melez, beyaz olan çekiniktir (Pp x pp -> %50 beyaz). Bu durumda çekinik (beyaz) çıkma ihtimali 2. çaprazlamada daha yüksektir, yalnız II doğrudur."
   },
   {
     "id": 23,
-    "question": "FEN BİLİMLERİ: Doğal ortamında yaşayan bir su bitkisinin hava og su ortamında gelişen yaprakları birbirinden farklılık göstermektedir. Bu bitkiye ait yapraklar şemada gösterilmiştir. Araştırmacı bu bitkinin su içindeki og su dışındaki kısımlarından aldığı parçalardan yeni bitkiler elde ediyor. Bu yeni bitkilerin de hava ortamında gelişen yapraklarının 1 numaralı yaprak gibi, su ortamında gelişen yapraklarının 2 numaralı yaprak gibi olduğunu gözlemliyor. Buna göre, bu bitkinin hava og su ortamında gelişen yapraklarının birbirinden farklı görünüşte olması aşağıdakilerin hangisiyle açıklanır?",
+    "question": "FEN BİLİMLERİ: Doğal ortamında yaşayan bir su bitkisinin hava ve su ortamında gelişen yaprakları birbirinden farklılık göstermektedir. Bu bitkiye ait yapraklar şemada gösterilmiştir. Araştırmacı bu bitkinin su içindeki ve su dışındaki kısımlarından aldığı parçalardan yeni bitkiler elde ediyor. Bu yeni bitkilerin de hava ortamında gelişen yapraklarının 1 numaralı yaprak gibi, su ortamında gelişen yapraklarının 2 numaralı yaprak gibi olduğunu gözlemliyor. Buna göre, bu bitkinin hava ve su ortamında gelişen yapraklarının birbirinden farklı görünüşte olması aşağıdakilerin hangisiyle açıklanır?",
     "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q3.webp",
     "A": "Yaprak gelişiminden sorumlu genin su ortamında mutasyona uğraması",
     "B": "Hava ortamında gelişen yaprakta, yaprak gelişiminden sorumlu gendeki her iki alelin de baskın olması",
-    "C": "Hava og su ortamında gelişen yapraklarda, yaprak gelişiminden sorumlu genin nükleotid dizilimlerinin farklı olması",
+    "C": "Hava ve su ortamında gelişen yapraklarda, yaprak gelişiminden sorumlu genin nükleotid dizilimlerinin farklı olması",
     "D": "Yaprak gelişiminden sorumlu genin yaprağın geliştiği ortama göre farklı biçimde ifade edilmesi (Modifikasyon)",
     "correct": "D",
-    "Açıklama": "Cevap D'dir. Çevre şartlarına (su/hava ortamı) bağlı olarak genlerin yapısı değişmeden sadece işleyişinin değişmesi og sonraki nesilde de aynı ortamda aynı sonucun gözlenmesi kalıtsal olmayan bir modifikasyondur (gen ifadesinin değişmesi)."
+    "Açıklama": "Cevap D'dir. Çevre şartlarına (su/hava ortamı) bağlı olarak genlerin yapısı değişmeden sadece işleyişinin değişmesi ve sonraki nesilde de aynı ortamda aynı sonucun gözlenmesi kalıtsal olmayan bir modifikasyondur (gen ifadesinin değişmesi)."
   },
   {
     "id": 24,
@@ -269,7 +269,7 @@
     "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q5.webp",
     "A": "Bakterilerin en az yeşil ışıkla aydınlatılan bölgede birikmesi",
     "B": "Bakterilerin en çok yeşil ışıkla aydınlatılan bölgede kümelenmesi",
-    "C": "Bakterilerin mor og kırmızı alanda hiç bulunmaması",
+    "C": "Bakterilerin mor ve kırmızı alanda hiç bulunmaması",
     "D": "Bakterilerin tüm renklerde tamamen eşit dağılması",
     "correct": "A",
     "Açıklama": "Cevap A'dır. Fotosentez hızı yeşil ışıkta en az olduğu için yeşil ışığın düştüğü bölgede üretilen oksijen miktarı en az olur. Oksijenli solunum yapan bakteriler bu yüzden yeşil alanda en az yoğunlukta toplanır."
@@ -279,15 +279,15 @@
     "question": "FEN BİLİMLERİ: Doğada gerçekleşen karbon döngüsündeki bazı olaylar, numaralandırılarak şemada gösterilmiştir. Bu şemaya göre, karbon döngüsüyle ilgili aşağıdakilerden hangisi yanlıştır?",
     "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q6.webp",
     "A": "1 numaralı olayda bitkiler atmosferdeki karbondioksiti kullanır.",
-    "B": "1 og 2 numaralı olay, birlikte atmosferdeki karbondioksit seviyesinin dengede kalmasına yardımcı olur.",
+    "B": "1 ve 2 numaralı olay, birlikte atmosferdeki karbondioksit seviyesinin dengede kalmasına yardımcı olur.",
     "C": "2 ve 3 numaralı olay, canlıların hücresel solunumu sonucunda atmosfere oksijen verilmesini sağlar.",
     "D": "4 numaralı olayda fosil yakıtların kullanılması atmosferdeki karbondioksit miktarını artırır.",
     "correct": "C",
-    "Açıklama": "Cevap C'dir. Hücresel solunum (2 og 3 numaralı olaylar) atmosfere oksijen vermez, aksine atmosferdeki oksijeni tüketerek atmosfere karbondioksit gazı verir. Bu yüzden C şıkkı yanlıştır."
+    "Açıklama": "Cevap C'dir. Hücresel solunum (2 ve 3 numaralı olaylar) atmosfere oksijen vermez, aksine atmosferdeki oksijeni tüketerek atmosfere karbondioksit gazı verir. Bu yüzden C şıkkı yanlıştır."
   },
   {
     "id": 27,
-    "question": "FEN BİLİMLERİ: Kaynakların ekonomik kullanılması og enerjiden tasarruf edilmesi amacıyla insanlar tarafından bazı uygulamalar yapılır. Bu uygulamalardan biri de bazı atık maddelerin tekrar üretim sürecine dâhil edilerek geri dönüşümünün sağlanmasıdır. Buna göre, aşağıdakilerden hangisi bir geri dönüşüm uygulamasıdır?",
+    "question": "FEN BİLİMLERİ: Kaynakların ekonomik kullanılması ve enerjiden tasarruf edilmesi amacıyla insanlar tarafından bazı uygulamalar yapılır. Bu uygulamalardan biri de some atık maddelerin tekrar üretim sürecine dâhil edilerek geri dönüşümünün sağlanmasıdır. Buna göre, aşağıdakilerden hangisi bir geri dönüşüm uygulamasıdır?",
     "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q7.webp",
     "A": "Ham petrolden bazı plastik malzemelerin üretilmesi",
     "B": "Metal içecek kutularının işlenerek çöp kovası üretilmesi",
@@ -298,69 +298,69 @@
   },
   {
     "id": 28,
-    "question": "FEN BİLİMLERİ: Yerküre üzerinde eş yükseltide bulunan P, R og S şehirlerinin konumlarıyla ilgili bilgiler şu şekildedir: P og S şehirleri Kuzey yarım kürededir. S şehri dönence üzerinde og Ekvator'a P şehrinden daha yakındır. R şehri Güney yarım kürede og dönence üzerindedir. Buna göre, bu şehirlerde öğle saatinde yatay bir zeminde Güneş ışınlarıyla birim yüzeye aktarılan enerji miktarı ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "question": "FEN BİLİMLERİ: Yerküre üzerinde eş yükseltide bulunan P, R ve S şehirlerinin konumlarıyla ilgili bilgiler şu şekildedir: P ve S şehirleri Kuzey yarım kürededir. S şehri dönence üzerinde ve Ekvator'a P şehrinden daha yakındır. R şehri Güney yarım kürede ve dönence üzerindedir. Buna göre, bu şehirlerde öğle saatinde yatay bir zeminde Güneş ışınlarıyla birim yüzeye aktarılan enerji miktarı ile ilgili aşağıdakilerden hangisi doğrudur?",
     "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q8.webp",
     "A": "21 Haziran tarihinde R şehrinde Güneş ışınlarıyla birim yüzeye aktarılan enerji miktarı, aynı tarihte S şehrindekinden fazladır.",
     "B": "R şehrinde 21 Haziran tarihinde Güneş ışınlarıyla birim yüzeye aktarılan enerji miktarı, aynı şehirde 21 Aralık tarihindekinden fazladır.",
     "C": "21 Aralık tarihinde P şehrinde Güneş ışınlarıyla birim yüzeye aktarılan enerji miktarı, aynı tarihte S şehrindekinden fazladır.",
     "D": "P şehrinde 21 Haziran tarihinde Güneş ışınlarıyla birim yüzeye aktarılan enerji miktarı, aynı şehirde 21 Aralık tarihindekinden fazladır.",
     "correct": "D",
-    "Açıklama": "Cevap D'dir. 21 Haziran'da Kuzey Yarım Küre'deki Yengeç Dönencesi'ne (S şehri) Güneş ışınları tam dik ($90^\\circ$) açıyla düşer. Işınlar dik geldikçe birim yüzeye aktarılan ısı og enerji miktarı maksimum olur."
+    "Açıklama": "Cevap D'dir. 21 Haziran'da Kuzey Yarım Küre'deki Yengeç Dönencesi'ne (S şehri) Güneş ışınları tam dik ($90^\\circ$) açıyla düşer. Işınlar dik geldikçe birim yüzeye aktarılan ısı ve enerji miktarı maksimum olur."
   },
   {
     "id": 29,
-    "question": "FEN BİLİMLERİ: Katı cisimler ile bulundukları zemin arasında oluşan basınçla ilgili bir etkinlikte küp şeklindeki K og L cisimleri kullanılıyor. Bu cisimlerin kum zeminde oluşan izlerinin derinlikleri ölçülerek grafiğe kaydediliyor. Buna göre bu cisimlerin ağırlıkları og zemine temas eden yüzey alanlarıyla ilgili yargılardan hangileri doğrudur?",
+    "question": "FEN BİLİMLERİ: Katı cisimler ile bulundukları zemin arasında oluşan basınçla ilgili bir etkinlikte küp şeklindeki K ve L cisimleri kullanılıyor. Bu cisimlerin kum zeminde oluşan izlerinin derinlikleri ölçülerek grafiğe kaydediliyor. Buna göre bu cisimlerin ağırlıkları ve zemine temas eden yüzey alanlarıyla ilgili yargılardan hangileri doğrudur?",
     "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q9.webp",
     "A": "Yalnız I",
-    "B": "I og III",
+    "B": "I ve III",
     "C": "II ve III",
     "D": "I, II ve III",
     "correct": "B",
-    "Açıklama": "Cevap B'dir. Katı basıncı ağırlıkla doğru, yüzey alanıyla ters orantılıdır. Ağırlıklar eşitken K'nin kuma daha az batmasının (basıncının küçük olmasının) tek sebebi yüzey alanının geniş (büyük) olmasıdır. I og III. öncüller bunu doğrular."
+    "Açıklama": "Cevap B'dir. Katı basıncı ağırlıkla doğru, yüzey alanıyla ters orantılıdır. Ağırlıklar eşitken K'nin kuma daha az batmasının (basıncının küçük olmasının) tek sebebi yüzey alanının geniş (büyük) olmasıdır. I ve III. öncüller bunu doğrular."
   },
   {
     "id": 30,
-    "question": "FEN BİLİMLERİ: Sıvı basıncıyla ilgili bir etkinlikte alt og üst kısımları eşit bölmelendirilmiş Şekil I'deki tel kafese, esneklik özelliği her yerinde aynı olan şişmemiş bir balon Şekil II'deki gibi takılıyor. Bu balonun içine bir miktar sıvı konulduğunda Şekil III'teki gibi tel kafesin alt kısmındaki bölmelerinde üst kısmındaki bölmelerine göre balonun daha fazla şiştiği gözlemleniyor. Buna göre yargılardan hangileri doğrudur?",
+    "question": "FEN BİLİMLERİ: Sıvı basıncıyla ilgili bir etkinlikte alt ve üst kısımları eşit bölmelendirilmiş Şekil I'deki tel kafese, esneklik özelliği her yerinde aynı olan şişmemiş bir balon Şekil II'deki gibi takılıyor. Bu balonun içine bir miktar sıvı konulduğunda Şekil III'teki gibi tel kafesin alt kısmındaki bölmelerinde üst kısmındaki bölmelerine göre balonun daha fazla şiştiği gözlemleniyor. Buna göre yargılardan hangileri doğrudur?",
     "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q10.webp",
     "A": "Yalnız III",
     "B": "I ve II",
     "C": "I ve III",
     "D": "I, II ve III",
     "correct": "C",
-    "Açıklama": "Cevap C'dir. Sıvı basıncı derinlikle ($h$) doğru orantılıdır. Alt bölmelerde derinlik og sıvı baskısı daha fazla olduğu için esnek balon alt taraftaki kafes aralıklarından dışarıya doğru daha çok şişme yapar. I og III doğrudur."
+    "Açıklama": "Cevap C'dir. Sıvı basıncı derinlikle ($h$) doğru orantılıdır. Alt bölmelerde derinlik ve sıvı baskısı daha fazla olduğu için esnek balon alt taraftaki kafes aralıklarından dışarıya doğru daha çok şişme yapar. I ve III doğrudur."
   },
   {
     "id": 31,
-    "question": "FEN BİLİMLERİ: Çamura batan bir traktörü battığı yerden çıkarmak için ağırlığı önemsenmeyen og esnemeyen bir ip ile ağırlığı önemsenmeyen özdeş halkalar kullanılıyor. Bu halkalardan veya ağaç gövdesinden birinin sabit ya da hareketli makara işlevi görecek biçimde kullanılmasıyla yapılan üç uygulama verilmiştir. Buna göre bu uygulamalarda ipin ucuna uygulanan kuvvetlerin büyüklüğüyle ilgili yargılardan hangileri doğrudur?",
+    "question": "FEN BİLİMLERİ: Çamura batan bir traktörü battığı yerden çıkarmak için ağırlığı önemsenmeyen ve esnemeyen bir ip ile ağırlığı önemsenmeyen özdeş halkalar kullanılıyor. Bu halkalardan veya ağaç gövdesinden birinin sabit ya da hareketli makara işlevi görecek biçimde kullanılmasıyla yapılan üç uygulama verilmiştir. Buna göre bu uygulamalarda ipin ucuna uygulanan kuvvetlerin büyüklüğüyle ilgili yargılardan hangileri doğrudur?",
     "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q11.webp",
     "A": "Yalnız I",
     "B": "Yalnız III",
-    "C": "I og II",
+    "C": "I ve II",
     "D": "II ve III",
     "correct": "B",
-    "Açıklama": "Cevap B'dir. 3. uygulamada ip cisimle birlikte hareket eden halkanın içinden dönerek geçtiği için bu halka bir hareketli makara gibi davranır og kuvvetten 2 kat kazanç sağlayarak çekim kuvvetini yarıya düşürür. Yalnız III. öncül doğrudur."
+    "Açıklama": "Cevap B'dir. 3. uygulamada ip cisimle birlikte hareket eden halkanın içinden dönerek geçtiği için bu halka bir hareketli makara gibi davranır ve kuvvetten 2 kat kazanç sağlayarak çekim kuvvetini yarıya düşürür. Yalnız III. öncül doğrudur."
   },
   {
     "id": 32,
-    "question": "FEN BİLİMLERİ: Kutu taşımak için, ağırlığı önemsenmeyen bir levha, tutma kolu og tekerlekler kullanılarak bir araç tasarlanıyor. Bu araçta ilk durumda tekerlekler 1. konuma yerleştirilip levhanın tam orta noktasına bir kutu konulduktan sonra tutma koluna düşey doğrultuda kuvvet uygulanarak levhanın şekildeki gibi yatay dengede kalması sağlanıyor. Daha sonra, kutunun yeri değiştirilmeden tekerlekler 2. konuma yerleştirilip tutma koluna ilk durumdakiyle aynı noktadan düşey doğrultuda kuvvet uygulanarak levhanın yeniden yatay dengede kalması sağlanıyor. Buna göre, tekerlekler 2. konumdayken levhanın yatay dengede kalması için tutma koluna uygulanan kuvvetin yönü og büyüklüğünün ilk duruma göre değişimi ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "question": "FEN BİLİMLERİ: Kutu taşımak için, ağırlığı önemsenmeyen bir levha, tutma kolu ve tekerlekler kullanılarak bir araç tasarlanıyor. Bu araçta ilk durumda tekerlekler 1. konuma yerleştirilip levhanın tam orta noktasına bir kutu konulduktan sonra tutma koluna düşey doğrultuda kuvvet uygulanarak levhanın şekildeki gibi yatay dengede kalması sağlanıyor. Daha sonra, kutunun yeri değiştirilmeden tekerlekler 2. konuma yerleştirilip tutma koluna ilk durumdakiyle aynı noktadan düşey doğrultuda kuvvet uygulanarak levhanın yeniden yatay dengede kalması sağlanıyor. Buna göre, tekerlekler 2. konumdayken levhanın yatay dengede kalması için tutma koluna uygulanan kuvvetin yönü ve büyüklüğünün ilk duruma göre değişimi ile ilgili aşağıdakilerden hangisi doğrudur?",
     "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q12.webp",
     "A": "Yönü: Değişir, Büyüklüğü: Azalır",
     "B": "Yönü: Değişmez, Büyüklüğü: Artar",
     "C": "Yönü: Değişir, Büyüklüğü: Artar",
     "D": "Yönü: Değişmez, Büyüklüğü: Azalır",
     "correct": "D",
-    "Açıklama": "Cevap D'dir. Tekerlekler (destek noktası) 2. konuma geldiğinde yükün desteğe olan mesafesi (yük kolu) kısalır, kuvvetin desteğe olan mesafesi (kuvvet kolu) ise uzar. Kuvvet kolu uzadığı için kuvvet kazancı artar og uygulanması gereken kuvvetin büyüklüğü azalır, yönü ise değişmez."
+    "Açıklama": "Cevap D'dir. Tekerlekler (destek noktası) 2. konuma geldiğinde yükün desteğe olan mesafesi (yük kolu) kısalır, kuvvetin desteğe olan mesafesi (kuvvet kolu) ise uzar. Kuvvet kolu uzadığı için kuvvet kazancı artar ve uygulanması gereken kuvvetin büyüklüğü azalır, yönü ise değişmez."
   },
   {
     "id": 33,
-    "question": "FEN BİLİMLERİ: Bir öğrenci, elektriksel yük durumu nötr olan iletken K og L kürelerini elektriksel olarak yüklemek için elektriksel olarak aynı cins yükle yüklü özdeş iki iletken çubuk kullanarak iki etkinlik yapıyor. Buna göre bu etkinliklerle ilgili yargılardan hangileri doğrudur?",
+    "question": "FEN BİLİMLERİ: Bir öğrenci, elektriksel yük durumu nötr olan iletken K ve L kürelerini elektriksel olarak yüklemek için elektriksel olarak aynı cins yükle yüklü özdeş iki iletken çubuk kullanarak iki etkinlik yapıyor. Buna göre bu etkinliklerle ilgili yargılardan hangileri doğrudur?",
     "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q13.webp",
     "A": "Yalnız I",
     "B": "Yalnız II",
     "C": "I ve III",
     "D": "II ve III",
     "correct": "D",
-    "Açıklama": "Cevap D'dir. Etkiyle (yaklaştırma) elektriklenmede kutuplanma olur og birbirine temas eden nötr küreler zıt yükleri uçlara toplar. Çubuk uzaklaştırılmadan küreler ayrılırsa K og L kesinlikle birbirine zıt yükle yüklenmiş olur. II og III. öncüller doğrudur."
+    "Açıklama": "Cevap D'dir. Etkiyle (yaklaştırma) elektriklenmede kutuplanma olur ve birbirine temas eden nötr küreler zıt yükleri uçlara toplar. Çubuk uzaklaştırılmadan küreler ayrılırsa K ve L kesinlikle birbirine zıt yükle yüklenmiş olur. II ve III. öncüller doğrudur."
   },
   {
     "id": 34,
@@ -371,55 +371,55 @@
     "C": "I ve III",
     "D": "I, II ve III",
     "correct": "C",
-    "Açıklama": "Cevap C'dir. I og III numaralı düzeneklerde metal kaplara bağlı olan iletken tel hatları doğrudan toprağın içine çakılmış olan metal çubuklara temas etmektedir. II. düzenekte ise kaplar sadece birbirine bağlanmış, toprağa hat çekilmemiştir."
+    "Açıklama": "Cevap C'dir. I ve III numaralı düzeneklerde metal kaplara bağlı olan iletken tel hatları doğrudan toprağın içine çakılmış olan metal çubuklara temas etmektedir. II. düzenekte ise kaplar sadece birbirine bağlanmış, toprağa hat çekilmemiştir."
   },
   {
     "id": 35,
-    "question": "FEN BİLİMLERİ: Elektriksel etkileşimlerden yararlanılarak bir fotokopi makinesi tasarlanıyor. Silindirin yüzeyinde ışığın düştüğü bölgeler başlangıçtakine göre zıt yükle yüklenir. Silindirin yüzeyinde ışığın düşmediği bölgeler ise başlangıçtaki yük durumunu korur. Sonra elektriksel olarak yüklü toner adı verilen toz parçacıkları, silindirin yüzeyine gönderildiğinde sadece ışığın düşmediği bölgelere tutunur og silindirin üzerinde görselin görüntüsü oluşur. Buna göre, silindirin yüzeyinde ışığın düştüğü og düşmediği bölge ile toner tozlarının elektriksel yük durumuyla ilgili yargılardan hangileri kesinlikle doğrudur?",
+    "question": "FEN BİLİMLERİ: Elektriksel etkileşimlerden yararlanılarak bir fotokopi makinesi tasarlanıyor. Silindirin yüzeyinde ışığın düştüğü bölgeler başlangıçtakine göre zıt yükle yüklenir. Silindirin yüzeyinde ışığın düşmediği bölgeler ise başlangıçtaki yük durumunu korur. Sonra elektriksel olarak yüklü toner adı verilen toz parçacıkları, silindirin yüzeyine gönderildiğinde sadece ışığın düşmediği bölgelere tutunur ve silindirin üzerinde görselin görüntüsü oluşur. Buna göre, silindirin yüzeyinde ışığın düştüğü ve düşmediği bölge ile toner tozlarının elektriksel yük durumuyla ilgili yargılardan hangileri kesinlikle doğrudur?",
     "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q15.webp",
     "A": "Yalnız II",
     "B": "Yalnız III",
     "C": "I ve II",
     "D": "I ve III",
     "correct": "A",
-    "Açıklama": "Cevap A'dır. Toner tozlarının sadece ışık düşmeyen bölgelere tutunabilmesi, o bölgeler ile toner tozlarının zıt elektrik yüküne sahip olduğunu og elektriksel çekim kuvvetiyle birbirini çektiğini gösterir. Yalnız II. öncül kesinlikle doğrudur."
+    "Açıklama": "Cevap A'dır. Toner tozlarının sadece ışık düşmeyen bölgelere tutunabilmesi, o bölgeler ile toner tozlarının zıt elektrik yüküne sahip olduğunu ve elektriksel çekim kuvvetiyle birbirini çektiğini gösterir. Yalnız II. öncül kesinlikle doğrudur."
   },
   {
     "id": 36,
-    "question": "FEN BİLİMLERİ: Periyodik sistemde elementler metal, ametal og yarı metal olarak sınıflandırılabilir. Bir kısmı verilen periyodik sistemde, daire, kare og üçgen sembolleriyle gösterilen elementlerin yerleri şekildeki gibidir. Buna göre yargılardan hangileri doğrudur?",
+    "question": "FEN BİLİMLERİ: Periyodik sistemde elementler metal, ametal ve yarı metal olarak sınıflandırılabilir. Bir kısmı verilen periyodik sistemde, daire, kare ve üçgen sembolleriyle gösterilen elementlerin yerleri şekildeki gibidir. Buna göre yargılardan hangileri doğrudur?",
     "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q16.webp",
     "A": "Yalnız I",
     "B": "Yalnız III",
     "C": "I ve II",
     "D": "II ve III",
     "correct": "C",
-    "Açıklama": "Cevap C'dir. Periyodik sistemde daire en altta olduğu için atom numarası en büyüktür. Kare og üçgen ise periyodik tabloda ametal-soygaz bareminde aynı sınıfta yer alırlar. I og II doğrudur."
+    "Açıklama": "Cevap C'dir. Periyodik sistemde daire en altta olduğu için atom numarası en büyüktür. Kare ve üçgen ise periyodik tabloda ametal-soygaz bareminde aynı sınıfta yer alırlar. I ve II doğrudur."
   },
   {
     "id": 37,
-    "question": "FEN BİLİMLERİ: Bir deneyde bir çinko çubuk, mavi renkli bir çözeltiye bir kısmı çözetli içinde olacak biçimde Şekil I'deki gibi daldırılıyor. Bir süre sonra çözeltinin Şekil II'deki gibi renksizleştiği og çinko çubuğun çözelti içinde kalan kısmında çinko çubuğun renginden farklı renkte tabakanın oluştuğu gözlemleniyor. Bu deneyle ilgili yargılardan hangileri doğrudur?",
+    "question": "FEN BİLİMLERİ: Bir deneyde bir çinko çubuk, mavi renkli bir çözeltiye bir kısmı çözetli içinde olacak biçimde Şekil I'deki gibi daldırılıyor. Bir süre sonra çözeltinin Şekil II'deki gibi renksizleştiği ve çinko çubuğun çözelti içinde kalan kısmında çinko çubuğun renginden farklı renkte tabakanın oluştuğu gözlemleniyor. Bu deneyle ilgili yargılardan hangileri doğrudur?",
     "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q17.webp",
     "A": "Yalnız I",
     "B": "Yalnız III",
     "C": "I ve II",
     "D": "II ve III",
     "correct": "B",
-    "Açıklama": "Cevap B'dir. Renk değişimi, çözeltinin şeffaflaşması og metal çubuk üzerinde yeni bir katmanın (saf bakır birikimi) toplanması, çinko ile çözelti arasında kimyasal bir tepkime gerçekleştiğinin kesin kanıtıdır. Yalnız III doğrudur."
+    "Açıklama": "Cevap B'dir. Renk değişimi, çözeltinin şeffaflaşması ve metal çubuk üzerinde yeni bir katmanın toplanması, çinko ile çözelti arasında kimyasal bir tepkime gerçekleştiğinin kesin kanıtıdır. Yalnız III doğrudur."
   },
   {
     "id": 38,
-    "question": "FEN BİLİMLERİ: Çay yaprağından elde edilen kahverengi çözelti, asit çözeltilerine damlatıldığında çözeltinin pH değerine bağlı olarak turuncu veya sarı renk; baz çözeltilerine damlatıldığında kırmızı renk oluşuyor. Asit veya baz olduğu bilinen renksiz K, L og M sulu çözeltilerine çaydan elde edilen çözelti damlatıldığında oluşan renkler şekildeki gibidir. Buna göre K, L og M sulu çözeltilerinin pH değeri aşağıdakilerden hangisi olabilir?",
+    "question": "FEN BİLİMLERİ: Çay yaprağından elde edilen kahverengi çözelti, asit çözeltilerine damlatıldığında çözeltinin pH değerine bağlı olarak turuncu veya sarı renk; baz çözeltilerine damlatıldığında kırmızı renk oluşuyor. Asit veya baz olduğu bilinen renksiz K, L ve M sulu çözeltilerine çaydan elde edilen çözelti damlatıldığında oluşan renkler şekildeki gibidir. Buna göre K, L ve M sulu çözeltilerinin pH değeri aşağıdakilerden hangisi olabilir?",
     "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q18.webp",
     "A": "K: 3 , L: 10 , M: 5",
     "B": "K: 9 , L: 2 , M: 11",
     "C": "K: 8 , L: 12 , M: 4",
     "D": "K: 12 , L: 5 , M: 2",
     "correct": "A",
-    "Açıklama": "Cevap A'dır. K turuncu og M sarı renk verdiğine göre ikisi de asittir (pH < 7). L kırmızı renk verdiğine göre bazdır (pH > 7). Bu kuralı sağlayan tek seçenek K:3 (asit), L:10 (baz), M:5 (asit) olan A şıkkıdır."
+    "Açıklama": "Cevap A'dır. K turuncu ve M sarı renk verdiğine göre ikisi de asittir (pH < 7). L kırmızı renk verdiğine göre bazdır (pH > 7). Bu kuralı sağlayan tek seçenek K:3 (asit), L:10 (baz), M:5 (asit) olan A şıkkıdır."
   },
   {
     "id": 39,
-    "question": "FEN BİLİMLERİ: İçinde su bulunan sıcak su torbaları, ortama ısı vererek ortamın sıcaklığının artmasını sağlayabilir. Bir sıcak su torbasının içine ilk durumda sıcaklığı 70 derece olan su konuluyor. Bu sıcak su torbası bir ortama bırakılıyor og torbadaki suyun sıcaklığı 10 derece olana kadar sıcak su ortama ısı veriyor. Sıcak su torbasının ortama daha fazla ısı vermesi için ilk durumdakine göre işlemlerinden hangileri yapıldığında sıcak su torbası ilk durumdakine göre ortama daha fazla ısı verir?",
+    "question": "FEN BİLİMLERİ: İçinde su bulunan sıcak su torbaları, ortama ısı vererek ortamın sıcaklığının artmasını sağlayabilir. Bir sıcak su torbasının içine ilk durumda sıcaklığı 70 derece olan su konuluyor. Bu sıcak su torbası bir ortama bırakılıyor ve torbadaki suyun sıcaklığı 10 derece olana kadar sıcak su ortama ısı veriyor. Sıcak su torbasının ortama daha fazla ısı vermesi için ilk durumdakine göre işlemlerinden hangileri yapıldığında sıcak su torbası ilk durumdakine göre ortama daha fazla ısı verir?",
     "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q19.webp",
     "A": "Yalnız I",
     "B": "Yalnız III",
@@ -430,7 +430,7 @@
   },
   {
     "id": 40,
-    "question": "FEN BİLİMLERİ: Bir deneyde özdeş iki cam kap içinde bulunan, sıcaklığı og kütlesi bilinmeyen saf sular özdeş ısıtıcılarla aynı anda ısıtılmaya başlanıyor. Isıtma işlemi boyunca deneyde yapılan ölçümler tabloya kaydediliyor. Bu deneyde suların hal değişiminin başladığı andan tamamlandığı ana kadar geçen sürelerin eşit olduğu bilindiğine göre kaplardaki sularla ilgili yargılardan hangileri doğrudur?",
+    "question": "FEN BİLİMLERİ: Bir deneyde özdeş iki cam kap içinde bulunan, sıcaklığı ve kütlesi bilinmeyen saf sular özdeş ısıtıcılarla aynı anda ısıtılmaya başlanıyor. Isıtma işlemi boyunca deneyde yapılan ölçümler tabloya kaydediliyor. Bu deneyde suların hal değişiminin başladığı andan tamamlandığı ana kadar geçen sürelerin eşit olduğu bilindiğine göre kaplardaki sularla ilgili yargılardan hangileri doğrudur?",
     "imageUrl": "/images/tests/lgs-sayisal-test-1/fen-q20.webp",
     "A": "Yalnız I",
     "B": "Yalnız II",
