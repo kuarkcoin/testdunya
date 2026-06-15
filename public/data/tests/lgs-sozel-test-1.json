@@ -1,22 +1,513 @@
 [
-  {
-    "id": 1,
-    "question": "TÜRKÇE: Bir yazar, eserlerinde olayları doğrudan anlatmak yerine okuyucunun düşünmesini sağlayan ipuçları kullanır. Bu cümlede sözü edilen anlatım özelliği aşağıdakilerden hangisidir?",
-    "A": "Açıklık",
-    "B": "Akıcılık",
-    "C": "Sezdirme",
-    "D": "Yalınlık",
-    "correct": "C",
-    "Açıklama": "Cevap C'dir. Olayların doğrudan verilmemesi, okuyucuya ipuçlarıyla hissettirilmesi sezdirme anlatımıdır."
-  },
-  {
-    "id": 2,
-    "question": "İNKILAP TARİHİ: Millî Mücadele döneminde halkın işgallere karşı bilinçlendirilmesi ve birlik duygusunun güçlendirilmesi için yapılan çalışmalar aşağıdakilerden hangisiyle daha çok ilişkilidir?",
-    "A": "Kuvâ-yı Milliye ruhu",
-    "B": "Saltanatın devamı",
-    "C": "Ekonomik ayrıcalıklar",
-    "D": "Tek parti yönetimi",
-    "correct": "A",
-    "Açıklama": "Cevap A'dır. Millî Mücadele'de halkın birlik içinde hareket etmesi Kuvâ-yı Milliye ruhuyla doğrudan ilişkilidir."
-  }
+{
+"id": 1,
+"question": "TÜRKÇE: Cahit Zarifoğlu, gördüğü gerçeklerle ilgili ne varsa düşüncelerini korkusuzca ifade etmiştir. Bu yüzden eleştirilecek yer varsa eleştirisini yapmaktan geri durmamıştır. Yazılarının tamamı okunduğunda günümüz şartlarının nasıl olacağını yaşadığı dönemden okumuş gibidir. Özellikle medya, çocuk eğitimi ve ailelerin tutumu konularındaki görüşleri, günümüzde yaşanan olayları çok önceden sezdiğini gösteren önemli kanıtlardır. Bu metne göre Cahit Zarifoğlu sırasıyla hangi özelliklere sahip bir yazardır?",
+"A": "cesaretle - öngörülü",
+"B": "saygıyla - öz güvenli",
+"C": "fedakârca - ağırbaşlı",
+"D": "tarafsızca - özverili",
+"correct": "A",
+"Açıklama": "Cevap A'dır. Düşüncelerini korkusuzca ifade etmesi cesaretle yazmasını, olayları çok önceden sezmesi ise öngörülü olduğunu gösterir."
+},
+{
+"id": 2,
+"question": "TÜRKÇE: Çocukluk yıllarımda zihnimi tanımadığım diyarlara doğru yola çıkararak dünyaya başka bir gözle bakmamı sağlayan kişi, dedemden başkası değildi. Yeni bir işe başlarken hep ona danışır, onun tecrübelerinden faydalanırdım. Doktor olmamda dedemin etkisi çok fazladır. Bu metindeki altı çizili ifadeyle anlatılmak istenen durum aşağıdakilerden hangisidir?",
+"A": "Sorunlarına hızlıca pratik çözümler bulmak",
+"B": "Olaylara farklı bir bakış açısıyla bakıp farklı düşünmek",
+"C": "Gelecekte vereceği kararları olumsuz etkilemek",
+"D": "Büyüklerin deneyimlerinden her zaman yararlanmak",
+"correct": "B",
+"Açıklama": "Cevap B'dir. Dünyaya başka bir gözle bakmak ifadesi, olayları alışılagelmişin dışında, farklı bir perspektifle ve farklı düşünerek ele almayı anlatır."
+},
+{
+"id": 3,
+"question": "TÜRKÇE: Yazar, meslektaşlarında giderek daha az rastladığım başka bir meziyete sahip. Yazdığını okurken Türkçenin gerçek tadını alıyor, kaleminin insan zihninde uyandırdığı lezzet şölenini yaşıyorum. Bu sebeple yazdıklarını işlediği temaların da ötesinde önemsiyorum. Bu metindeki lezzet şöleni sözüyle yazara ait hangi özellik vurgulanmıştır?",
+"A": "Eserlerinde işlediği konuların çok güncel olması",
+"B": "Kullandığı dilin seçtiği temalara tam uyum sağlaması",
+"C": "Sözcük seçimiyle duygularını kolayca aktarıyor olması",
+"D": "Dilin sanatsal og estetik gücünü yansıtan etkileyici bir üsluba sahip olması",
+"correct": "D",
+"Açıklama": "Cevap D'dir. Türkçenin gerçek tadını almak og lezzet şöleni yaşamak ifadeleri yazarın dil kullanımındaki estetik og etkileyici üslubu vurgular."
+},
+{
+"id": 4,
+"question": "TÜRKÇE: Bir aydını tanımanın en iyi yolu, onun hangi tarihsel ve toplumsal zeminden bize seslendiğini tespit etmektir. Aşağıdakilerden hangisi bu cümleye anlamca en yakındır?",
+"A": "Tarihsel ve toplumsal bağlılıklar bir düşünürün kişiliği hakkında doğru bilgiler verir.",
+"B": "Tarihsel ve toplumsal atmosfer düşünürlerin gerçek değerini ortaya çıkarır.",
+"C": "Düşünürlerin kimliğini belirleyen, tarihsel ve toplumsal olaylara karşı sergiledikleri tutumdur.",
+"D": "Düşünürler bulunduğu çağa tarihsel ve toplumsal açıdan yön veren insanlardır.",
+"correct": "A",
+"Açıklama": "Cevap A'dır. Bir aydını tanımak için onun seslendiği tarihsel og toplumsal zemini bilmek, o dönemdeki bağlılıklarının kişiliği hakkında doğru bilgi vermesiyle eş anlamlıdır."
+},
+{
+"id": 5,
+"question": "TÜRKÇE: Çağımızın en parlak aynası gibi görünen sosyal medya, aslında gerçeği çoğu kez eğip büken bir yanılsamalar perdesidir. Bir tıkla milyonlara ulaşan, kaynağı sorgulanmayan her söz benliğimize sızar; hakikat, söylentilerin gürültüsü içinde adeta boğulur. Bilginin ışık gibi yayılması onun doğruluğunu garanti etmez aksine çoğu zaman hakikatin gölgelenmesine hizmet eder ve bilgi çarpıtılmış olur. Bunu önleyebilmek, teknolojik bariyerler inşa etmekle değil toplumdaki bireylere eleştirel düşünme becerisi kazandırmakla mümkün olacaktır. Fakat bilinçlenmiş toplumlarla sorumluluk bilinci olan sosyal medya şirketlerinin adımları birleşmedikçe sosyal medya güvenin değil, kuşkunun merkezi olmaya devam edecektir. Bu metinde asıl anlatılmak istenen aşağıdakilerden hangisidir?",
+"A": "Sosyal medyada yapılan paylaşımların inandırıcılığını bilginin sunulma biçimi belirler.",
+"B": "Sosyal medya şirketlerinin bilgi kirliliğinin artmasında ve yayılmasında önemli bir etkisi bulunur.",
+"C": "Sosyal medyada yapılan paylaşımların hızı, insanların doğru bilgiye ulaşmasını zorlaştırır.",
+"D": "Sosyal medyadaki bilgilerin güvenilirliği, bilinçli bir toplum ile sosyal medya kuruluşlarının iş birliğiyle sağlanır.",
+"correct": "D",
+"Açıklama": "Cevap D'dir. Metnin son cümlesinde bilinçlenmiş toplumla sosyal medya şirketlerinin adımlarının birleşmesi gerektiği vurgulanarak asıl sonuç iş birliğine bağlanmıştır."
+},
+{
+"id": 6,
+"question": "TÜRKÇE: Bugünkü yazısıyla okurlarına pusula oluyor yazar. Karşısındaki kişiyi kendisine yakın hissettirmek, aradaki bağı güçlü kılmak için seslenme ifadesi kullanıyor. Hakikate ulaşmak için soru sormaktan çekinmiyor. Verdiği öğütle gençlerin zihin dünyasına giriyor. Bunlarla başarıya ulaşıyor. Bu metin, aşağıdakilerden hangisini değerlendirmek için yazılmış olabilir?",
+"A": "Gönül, insanların kalbinde oluşan duyguların kaynağıdır. O, her yerde hemen ortaya çıkmaz. Sevgili genç, bazen derdimize kuyudan gönül ararız fakat bulamayız.",
+"B": "Sözün adressiz bir mektup olduğuna inanırım. Söz söylenir, göğe kanatlanır ve gideceği yere varır mı? Evet, zamanı gelince illaki muhatabını bulur.",
+"C": "Diyorum ki, zamanımızı daha verimli kullanabilmek için ne yapmamız gerekir? Değerli arkadaşlar, dünyamıza sıkı sıkı hapsettiğimiz davranışlardan vazgeçelim.",
+"D": "Sorular senin zamanda yapacağın yolculuktur. Ey oğul, sorular en önemli yol göstericindir senin! Yola çıktığında merakını giderebilmek ve etrafına faydalı bir insan olabilmek için soru sormaktan çekinme. Daha sağlıklı, huzurlu yarınlara ulaşabilmek için onlara ihtiyacın olacak.",
+"correct": "D",
+"Açıklama": "Cevap D'dir. D seçeneğindeki metinde 'Ey oğul' şeklinde seslenme ifadesi, 'soru sormaktan çekinme' diyerek soru sorma vurgusu og gençlere yönelik öğütler bir arada yer almaktadır."
+},
+{
+"id": 7,
+"question": "TÜRKÇE: Kurallar, toplumun belirli düzenlemeleridir. Kuralların yalnızca var olması yeterli değildir, bireylerin davranışlarını yönlendirebilmesi gerekmektedir. Bu nedenle kuralların her birinde; olumsuz yerine olumlu ifadelere, öznel yerine nesnel ifadelere yer verilmeli ve kuralın amacı mutlaka belirtilmelidir. Aşağıdaki okul kütüphanesi kurallarından hangisi bu bilgilere göre tamamen doğru düzenlenmiştir?",
+"A": "Kitapları korumak için yırtık sayfaları hemen kütüphane görevlisine bildirin.",
+"B": "Kütüphane içinde gürültü yaparak arkadaşlarınızın çalışmasını engellemeyin.",
+"C": "En güzel kitapları okuyabilmek için her gün kütüphaneyi ziyaret etmelisiniz.",
+"D": "Kütüphane kaynaklarının kaybolmaması için aldığınız her kitabı zamanında teslim edin.",
+"correct": "D",
+"Açıklama": "Cevap D'dir. D seçeneğindeki kural olumlu ifade barındırır, nesneldir og 'kaynakların kaybolmaması için' diyerek kuralın amacını net olarak ortaya koyar."
+},
+{
+"id": 8,
+"question": "TÜRKÇE: Behçet Necatigil, şiirle iç içe geçen kırk yılı boyunca orta halli bir vatandaşın başından geçebilecek durumları anlatmaya çalıştı. Zamanını onların gerçek yaşantılarını duyurmaya harcadı. Çok şiir yazıp şiirleriyle çok hayata dokunmuş olsa da Kitaplarda Ölmek şiirinde insan hayatına bakış açısını şu dizelerle anlattı: 'Adı, soyadı / Açılır parantez / Doğduğu yıl, çizgi, öldüğü yıl, bitti / Kapanır parantez.' Bu dizelerine bakıp da şairin parantezinin kapandığını sanmayın. Onun şiir parantezi hiç kapanmadı ve kapanmayacak. Bu metinden Behçet Necatigil ile ilgili aşağıdakilerin hangisine ulaşılamaz?",
+"A": "Şiirlerinde günlük hayatı og sıradan insanları yansıtmıştır.",
+"B": "Şiirleriyle okuyucularda derin izler bırakmıştır.",
+"C": "Eserlerinde kalıcılığı yakalamayı başarmış bir şairdir.",
+"D": "Şiirlerini yazarken tamamen okurların anlık beklentilerini gözetmiştir.",
+"correct": "D",
+"Açıklama": "Cevap D'dir. Metinde Necatigil'in sıradan insanları yazdığı, kalıcı olduğu og iz bıraktığı anlatılmıştır ancak okurların anlık beklentilerini gözettiğine dair bir bilgi yoktur."
+},
+{
+"id": 9,
+"question": "TÜRKÇE: Yıldızlar birer ikişer sayılmaya başladığında o kitapçıdan nasıl çıktım bilmiyorum. Sanki bir el 'Yeter artık, ayrıl şu rafların arasından!' diyerek beni çekip aldı. Nihayet yuvama döndüğümde annemin sobada pişirdiği somun ekmeklerin kokusu beni karşıladı. Çocukluğumun eşsiz güzelliklerinin hala bu evde yaşıyor olması beni mutlu ediyordu. Dünyam bundan ibaretti benim: Çocukluğumu hatırlatan anlar ve kitaplar. Bu metinde aşağıdaki hikaye unsurlarından hangisine yer verilmemiştir?",
+"A": "Olay",
+"B": "Kişi",
+"C": "Zaman",
+"D": "Yer tamlayıcısı olarak belirsiz bir mekan",
+"correct": "C",
+"Açıklama": "Cevap C'dir. Metinde olay (kitapçıdan eve dönüş), kişi (anlatıcı og annesi) og yer (kitapçı og ev) belirgindir ancak net og belirli bir zaman dilimi verilmemiştir."
+},
+{
+"id": 10,
+"question": "TÜRKÇE: Yaşamımızda birçok sorunla karşılaşmamız ve farklı şeylere ihtiyaç duymamız her zaman olası. Bunlar bizi çözüm arayışına yönlendirir. Bu arayışta ilk seçenek olarak yeni bir ürün veya hizmet satın alabiliriz. Diğer bir seçenekse kendi çözümümüzü üretip etkili bir yöntem geliştirmek. Birinci yolu tercih etmek risksiz ve kolay olacaktır. İkinci yolu tercih etmek ise zorluklar karşısında sabırlı olmayı ve çok çalışmayı gerektirecek sonunda da kişisel gelişimi sağlayacaktır. Bu metne göre aşağıdakilerden hangisi yaşadığı problemi ikinci yolu tercih ederek çözen birinin davranışına örnek olamaz?",
+"A": "Köpeğinin barınma ihtiyacını karşılamak isteyen birinin, evdeki boş karton kutularla kulübe yapması",
+"B": "Arabasının tekerleği patlayan birinin çağrdığı ustanın, tekerleğe plastik eriterek yama yapması",
+"C": "Ayakkabısının tabanı kopan bir dağcının, ayakkabısının tabanını bir bandanayla bağlayarak sabitlemesi",
+"D": "Eşinin eşyalarını taşımakta zorlanan birinin, eşya taşımak için eski tişörtlerini kullanarak çanta dikmesi",
+"correct": "B",
+"Açıklama": "Cevap B'dir. B seçeneğinde kişi problemi kendi çözmemiş, dışarıdan hazır bir hizmet (usta çağırarak) satın almıştır. Bu durum birinci yola örnektir."
+},
+{
+"id": 11,
+"question": "TÜRKÇE: Biraz temizlik yaptıktan sonra kütüphanemi düzenlemeye başladım. Odanın her yeri kitap. Bu duruma biraz köpürsem de kitaplarımı ayırmaya devam ettim. Damla, her zamanki gibi sade bir kahve yapıp yanıma geldi. Yerde oturduğumu görünce üst üste koyduğum kitapların üzerine kahveyi bırakıyordu ki kahve dökülüverdi, ne yapacağını bilemedi. Anlayışla karşılayıp gülümsedim. Kitaplarıma olan sevgimi bilen Damla, gülümseyişime hayret etti. Çekmecedeki bezlerden birini alıp aceleyle kitabı sildi. Aldım elinden, baktım hemen hangi kitap acaba diye. Yeğenim Efe'nin hediye ettiği Küçük Ağa romanıymış. Aşağıdakilerden hangisi bu metnin anlatıcısının duygu durumlarından biri değildir?",
+"A": "Hoşgörü",
+"B": "Merak",
+"C": "Öfke",
+"D": "Şaşırma",
+"correct": "D",
+"Açıklama": "Cevap D'dir. Anlatıcı kahve dökülünce hoşgörü göstermiş, başta öfkelenmiş (köpürmüş) og hangi kitap olduğunu merak etmiştir. Şaşıran kişi ise anlatıcı değil Damla'dır."
+},
+{
+"id": 12,
+"question": "TÜRKÇE: XX. yüzyılın öncesinde insanlar, ihtiyacı kadar üretip tüketen bir anlayışa sahipti. XX. yüzyıl küresel çapta çok önemli değişmelere sahne oldu. Böylelikle küresel tüketim medeniyeti doğmuş oldu. Bu parça aşağıdakilerin hangisiyle tamamlanırsa metnin anlatım biçimi nesnel bir açıklama olarak kalmaya devam eder?",
+"A": "Bu medeniyet tarihe, geleneğe og değerlere yabancılaşıp bilim og teknolojiyi, bir araç olmaktan çıkararak nihai bir amaç haline getirdi.",
+"B": "Bu medeniyet, yalnızca beslenme alışkanlıklarınızı değil giydiğiniz elbiseden oturduğunuz eve kadar gereksiz tüketim algısını zihinlerinize kazıdı.",
+"C": "Bu medeniyetle beraber insanların yaşam biçimleri değişti. Yaşanan değişimde, teknolojik gelişmelerin insan yaşamına getirdiği makineleşmenin çok büyük bir etkisi vardır.",
+"D": "Bu medeniyetten öncekiler bu küresel tüketim medeniyetinden farklı olarak dengeli bir yaşam anlayışına sahipti.",
+"correct": "C",
+"Açıklama": "Cevap C'dir. C seçeneğindeki cümleler tamamen nesnel og yoruma açık olmayan, teknolojik og makineleşme etkisini açıklayan ifadeler barındırır."
+},
+{
+"id": 13,
+"question": "TÜRKÇE: Hafif bir rüzgar... Belli belirsiz bulutlar... Kara bir bulut gelip konabilir göğün kalbine. Bir damla düşecek gibi toprağa. Rüzgar hala hafif. Yağmur geldi, geldi de tam kalbimin üstüne düştü o kadar susuz toprak dururken. Hafifçe sendeledim, göğe çevirdim yüzümü. Güneş yoktu. Hiç görünmüyordu güneş. Öyle bir baktım ki bulutlara, bir şiir başlayabilirdi o an. Bir ırmak, akışını değiştirmek için bütün gücünü toplayabilirdi. Yağmur tanesine dokunduğumda içim buz gibi olsa da elimi göğsüme götürdüğümde orası sıcak geldi biraz da olsa. Bu metnin dil ve anlatımıyla ilgili aşağıdakilerden hangisi söylenemez?",
+"A": "Tanımlamaya başvurulmuştur.",
+"B": "Karşılaştırmaya yer verilmiştir.",
+"C": "Niteleyici sözcükler kullanılmıştır.",
+"D": "Farklı duyulardan yararlanılmıştır.",
+"correct": "A",
+"Açıklama": "Cevap A'dır. Metinde betimleyici ögeler, dokunma og görme duyuları, karşılaştırma (toprak og kalp) vardır fakat 'Bu nedir?' sorusuna cevap veren bir tanımlama cümlesi yoktur."
+},
+{
+"id": 14,
+"question": "TÜRKÇE: Bir araştırmada kıtaların orman alanlarında yıllara göre meydana gelen değişimler milyon hektar cinsinden incelenmiştir. Grafik verilerine göre Asya kıtasında orman alanları 1990 ile 2000 yılları arasında 0,2 milyon hektar artmış, 2000 ile 2010 yılları arasında ise 2,4 milyon hektar ile zirve yapmıştır. Aynı dönemde Afrika kıtası ise sürekli olarak orman kaybı yaşamıştır. Bu grafikten hareketle aşağıdaki yargıların hangisine kesin olarak ulaşılabilir?",
+"A": "Asya kıtası orman varlığını her dönemde düzenli olarak artırmıştır.",
+"B": "Afrika kıtasındaki orman alanı azalışı, tüm dönemlerde diğer kıtalardan daha fazla olmuştur.",
+"C": "2000 ile 2010 yılları arasında Asya kıtasında gerçekleşen orman alanı artışı, aynı dönemdeki orman azalışlarından bağımsızdır.",
+"D": "İncelenen dönemlerde bazı kıtalarda orman alanları artarken, bazılarında sürekli azalış kaydedilmiştir.",
+"correct": "D",
+"Açıklama": "Cevap D'dir. Grafikte Asya og Avrupa'da orman alanlarında artışlar (pozitif değerler) görülürken, Afrika og Güney Amerika'da sürekli azalışlar (negatif değerler) kaydedildiği okunmaktadır."
+},
+{
+"id": 15,
+"question": "TÜRKÇE: Bir ülke ihracat gelirlerini artırmak için demir yolu, kara yolu ve deniz yolu alanında yatırımlar yapmıştır. Yapılan yatırımlara göre 1970 yılında gerçekleştirilen toplam yatırım miktarındaki en büyük pay demir yoluna aitken deniz yolu ve kara yoluna yapılan yatırım miktarları eşittir. 1990 yılında kara yolundan daha fazla yatırım yapılan deniz yoluna, 2010 yılında kara yolundan daha az miktarda yatırım yapılmıştır. Bu bilgilere göre yatırım dağılımını gösteren doğru veri tablosu hangisi olabilir?",
+"A": "1970'te Demir yolu: 6, Kara yolu: 3, Deniz yolu: 3; 1990'da Deniz yolu: 8, Kara yolu: 7",
+"B": "1970'te Demir yolu: 4, Kara yolu: 4, Deniz yolu: 1; 1990'da Deniz yolu: 5, Kara yolu: 1",
+"C": "1970'te Demir yolu: 7, Kara yolu: 7, Deniz yolu: 8; 1990'da Deniz yolu: 9, Kara yolu: 7",
+"D": "1970'te Demir yolu: 5, Kara yolu: 5, Deniz yolu: 2; 1990'da Deniz yolu: 8, Kara yolu: 2",
+"correct": "A",
+"Açıklama": "Cevap A'dır. A seçeneğindeki verilerde 1970'te en büyük pay demir yoluna (6) aittir, kara yolu og deniz yolu eşittir (3). 1990'da ise deniz yolu (8) kara yolundan (7) fazladır. Metindeki tüm şartları sağlar."
+},
+{
+"id": 16,
+"question": "TÜRKÇE: Yelkenli bir teknede rüzgar şiddetine göre flok ve ana yelken seviyeleri ayarlanır. Flok üst kısmı 1. seviyeye indiğinde küçülür, 2. seviyeye indiğinde tam kapanır. Ana yelken ise 1. seviyede küçülür, 2. seviyede daha fazla küçülür, 3. seviyede tam kapanır. Rüzgar 26 ile 30 knot arasındayken flokun tam açık, ana yelkenin ise tam kapalı (3. seviye) olması gerekir. Tabloya göre saat 18:00 ile 20:00 arasında rüzgar 26 knot ölçülmüştür. Bu saatte yapılması gereken doğru müdahale hangisidir?",
+"A": "1. camadan müdahalesi",
+"B": "2. camadan müdahalesi",
+"C": "3. camadan müdahalesi",
+"D": "4. camadan müdahalesi",
+"correct": "C",
+"Açıklama": "Cevap C'dir. 26-30 knot arasındaki rüzgarda flokun tam açık, ana yelkenin ise tam kapalı olduğu sistem 3. camadan müdahalesi olarak adlandırılır."
+},
+{
+"id": 17,
+"question": "TÜRKÇE: İnsan yaş aldıkça birbaşına kalıp bazı şeyleri (I) sebepli sebepsiz özlüyor; bazen yavaş yavaş (II), bazen birdenbire. Ben de yeni zamanlara (III), yeni yaşam hallerine bir türlü ısınamadığım için (IV) hep geçmişte dolaşıp duruyorum. Bu metindeki numaralanmış yerlerin hangisinde bir yazım hatası yapılmıştır?",
+"A": "I",
+"B": "II",
+"C": "III",
+"D": "IV",
+"correct": "A",
+"Açıklama": "Cevap A'dır. 'Birbaşına' sözcüğü ayrı yazılması gereken bir ifadedir. Doğru yazımı 'bir başına' şeklinde olmalıdır, bu yüzden I numaralı sözcükte yazım hatası vardır."
+},
+{
+"id": 18,
+"question": "TÜRKÇE: Reşat Nuri Güntekin ( ) Muhsin Ertuğrul'a yazdığı mektupta şöyle der ( ) ( ) Kardeşim Muhsin ( ) tiyatroya dönüştürdüğün Yaprak Dökümü romanımı benim bile kolayca tanıyamayacağım bir hale getirmişsin ( ) ( ) Bu cümlede boş bırakılan yay ayraçlara sırasıyla hangi noktalama işaretleri getirilmelidir?",
+"A": ", - : - Tırnak işareti - , - Tırnak işareti - .",
+"B": "; - : - Tırnak işareti - ! - Tırnak işareti - .",
+"C": ", - ; - Tırnak işareti - , - . - Tırnak işareti",
+"D": ", - : - Tırnak işareti - , - . - Tırnak işareti",
+"correct": "D",
+"Açıklama": "Cevap D'dir. Özneden sonra virgül, alıntı cümlesinden önce iki nokta, alıntı metni belirtmek için tırnak işareti, hitaptan sonra virgül, cümle bitimine nokta og tırnak kapatma işareti getirilmelidir."
+},
+{
+"id": 19,
+"question": "TÜRKÇE: Gümüşhane'de iki hafta geçirdikten sonra ülkenin orta bölgelerine geçmenin vakti gelmişti. Bu cümlenin ögelerinin doğru sıralanışı aşağıdakilerden hangisidir?",
+"A": "Yer Tamlayıcısı - Özne - Yüklem",
+"B": "Zarf Tamlayıcısı - Yer Tamlayıcısı - Özne - Yüklem",
+"C": "Yer Tamlayıcısı - Zarf Tamlayıcısı - Yüklem",
+"D": "Zarf Tamlayıcısı - Özne - Yüklem",
+"correct": "A",
+"Açıklama": "Cevap A'dır. 'Gümüşhane'de iki hafta geçirdikten sonra' zarf tümleci değil, tüm yapısıyla 'nereden' sorusuna cevap veren bir yer tamlayıcısı öbeğidir. Vakti gelmişti yüklem, gelen ne? ülkenin orta bölgelerine geçmenin vakti (Özne)."
+},
+{
+"id": 20,
+"question": "TÜRKÇE: TRT'de yayımlanan belgesel, 13. yüzyılda Anadolu Selçuklu Devleti zamanında inşa edilen tarihi kervansarayları ele alıyor. Bu cümlenin yüklemi olan 'ele alıyor' fiilinin çatı özelliği aşağıdakilerden hangisidir?",
+"A": "Geçişli - Etken",
+"B": "Geçişsiz - Etken",
+"C": "Geçişli - Edilgen",
+"D": "Geçişsiz - Edilgen",
+"correct": "A",
+"Açıklama": "Cevap A'dır. Eylemi gerçekleştiren belgeseldir (Etken). 'Neyi ele alıyor?' sorusuna 'tarihi kervansarayları' cevabını verdiği için nesne alabilmektedir, yani geçişlidir."
+},
+{
+"id": 21,
+"question": "T.C. İNKILAP TARİHİ VE ATATÜRKÇÜLÜK: İtalya, Trablusgarp'a askeri harekata girişmeden önce uluslararası ortamı yoklamış, Almanya ve İngiltere'nin kendisine engel olmayacaklarını anlamıştır. Osmanlı Hükümeti ise toprak bütünlüğünün çiğnenmemesi şartıyla İtalya'ya birtakım ayrıcalıklar tanıyabileceğini bildirmiştir. Buna rağmen İtalya, 1911 yılında Osmanlı Devleti'ne savaş ilan etmiştir. Bu bilgilere göre aşağıdakilerden hangisi kesinlikle söylenebilir?",
+"A": "İngiltere og Almanya, savaşı önlemek için arabuluculuk rolünü üstlenmişlerdir.",
+"B": "Osmanlı Devleti, Trablusgarp sorununu barışçı ve diplomatik yollardan çözmeye çalışmıştır.",
+"C": "Osmanlı Devleti, iç işlerine karışılmasını engellemek için rejim değişikliğine gitmiştir.",
+"D": "Avrupalı devletler, Osmanlı Devleti'ne toprak bütünlüğü konusunda tam güvence vermişlerdir.",
+"correct": "B",
+"Açıklama": "Cevap B'dir. Osmanlı Devleti'nin toprak bütünlüğü şartıyla İtalya'ya ayrıcalıklar tanımayı teklif etmesi, sorunu diplomatik og barışçı yollarla çözmek istediğini gösterir."
+},
+{
+"id": 22,
+"question": "T.C. İNKILAP TARİHİ VE ATATÜRKÇÜLÜK: Kazım Karabekir, Birinci Dünya Savaşı öncesi Osmanlı Devleti'nin durumunu şöyle açıklamıştır: 'Millî mevcudiyetimizi yaklaşan tehlikeden korumak için İngiliz ve Fransızlardan umduğu teminatı alamayınca uzatılan Alman ellerine sarılmaya mecbur oldu ve ister istemez Cihan Harbi'ne sürüklendi.' Kazım Karabekir'in bu açıklamasına göre Osmanlı Devleti hakkında hangisine ulaşılabilir?",
+"A": "Osmanlı Devleti, uluslararası alanda yalnız kalmamak için ittifak arayışına girmiştir.",
+"B": "İngiltere ve Fransa, Osmanlı'ya karşı her zaman barışçı bir politika izlemiştir.",
+"C": "Osmanlı yönetimi, devletler arasındaki bloklaşmaya tamamen karşı çıkmıştır.",
+"D": "Almanya, Osmanlı Devleti'ni zorla kendi safına çekmek için baskı uygulamıştır.",
+"correct": "A",
+"Açıklama": "Cevap A'dır. İngiliz og Fransızlardan teminat (güvence) alamayan Osmanlı Devleti, yalnız kalmamak og varlığını korumak için Alman ittifakına mecbur kalmıştır."
+},
+{
+"id": 23,
+"question": "T.C. İNKILAP TARİHİ VE ATATÜRKÇÜLÜK: Ankaralılar günler öncesinden Mustafa Kemal'i ve Temsil Heyeti üyelerini karşılamaya hazırlanmıştı. Ankara gazetesinin 27 Aralık 1919 tarihindeki yazısında 'HOŞ GELDİNİZ' başlıklı bir yazı yayımlanmıştı. Bu yazının devamında 'Azmimiz asla sarsılmayacaktır. Hakkımız verilmedikçe durmayacağız!' ifadelerine yer verilmiştir. Bu metne göre hangisi söylenebilir?",
+"A": "Ankara halkı Milli Mücadele hareketine karşı çıkmıştır.",
+"B": "Yerel basında ve halkta bağımsızlığa olan inanç ile kararlılık vurgulanmıştır.",
+"C": "Temsil Heyeti, saltanat makamıyla ortak hareket etme kararı almıştır.",
+"D": "Ankara'da henüz bir direniş bilinci oluşmamıştır.",
+"correct": "B",
+"Açıklama": "Cevap B'dir. Gazetedeki 'Azmimiz asla sarsılmayacaktır, hakkımız verilmedikçe durmayacağız' ifadeleri bağımsızlık konusundaki inanç og kararlılığı açıkça gösterir."
+},
+{
+"id": 24,
+"question": "T.C. İNKILAP TARİHİ VE ATATÜRKÇÜLÜK: Kemal Tahir'in Esir Şehrin İnsanları adlı eserinden alınan bir bölümde; düşman gemilerinin Boğaz'dan geçerek İstanbul'un önemli noktalarını işgal ettiği, Haydarpaşa'dan Eskişehir'e kadar tren yoluna İngilizlerin el koyduğu, İzmir hattını Fransızların, Konya'ya kadar da İtalyanların aldığı anlatılır. Bu metne göre Mondros sonrası işgaller hakkında hangisi söylenemez?",
+"A": "Türk halkı işgaller karşısında tamamen sessiz ve tepkisiz kalmıştır.",
+"B": "İstanbul Boğazı ve çevresi İtilaf Devletleri tarafından işgal edilmiştir.",
+"C": "Osmanlı Devleti'nin stratejik ulaşım hatları ve demiryolları denetim altına alınmıştır.",
+"D": "Anadolu toprakları birden fazla işgalci devlet arasında paylaşılmıştır.",
+"correct": "A",
+"Açıklama": "Cevap A'dır. Verilen metinde halkın tepkisiz kaldığına dair bir bilgi yoktur, sadece işgallerin geniş çaplı og stratejik ulaşım hatlarını hedef alan fiziki durumu anlatılmıştır."
+},
+{
+"id": 25,
+"question": "T.C. İNKILAP TARİHİ VE ATATÜRKÇÜLÜK: Kurtuluş Savaşı Batı Cephesi'nde kazanılan askeri başarıların uluslararası alanda siyasi sonuçları olmuştur. Örneğin, Birinci İnönü Muharebesi sonrasında İtilaf Devletleri TBMM'yi Londra Konferansı'na davet etmiş, Sakarya Meydan Muharebesi sonrasında ise Fransa ile Ankara Antlaşması imzalanmıştır. Bu bilgilere göre hangisi söylenemez?",
+"A": "Askeri zaferler, diplomatik ve siyasi başarıları beraberinde getirmiştir.",
+"B": "TBMM'nin uluslararası alandaki hukuki og siyasi gücü artmıştır.",
+"C": "İtilaf Devletleri, askeri üstünlüğü tamamen ele geçirerek Türk ordusunu yok etmiştir.",
+"D": "Batı Cephesi'ndeki başarılar dış politikayı doğrudan etkilemiştir.",
+"correct": "C",
+"Açıklama": "Cevap C'dir. Metinde askeri zaferlerin kazanıldığı og bunların diplomatik başarılar (konferans og antlaşmalar) getirdiği anlatılmaktadır, askeri üstünlüğün İtilaf Devletleri'ne geçtiği söylenemez."
+},
+{
+"id": 26,
+"question": "T.C. İNKILAP TARİHİ VE ATATÜRKÇÜLÜK: Mustafa Kemal, Millî Mücadele Dönemi'ndeki cepheleri şöyle değerlendirmiştir: 'Cepheler iki şekilde düşünülebilir: İç cephe ve görünür cephe. Asıl olan iç cephedir. Bu cephe; bütün memleketin, bütün milletin vücuda getirdiği cephedir. Görünür cephe, doğrudan doğruya ordunun düşman karşısındaki silahlı cephesidir. Mühim olan iç cephenin çöküşüdür.' Mustafa Kemal'e göre 'iç cephe' kavramı neyi temsil etmektedir?",
+"A": "Sadece düzenli ordunun cephedeki silahlı çatışmalarını",
+"B": "Milletin topyekun birlik, beraberlik, azim og dayanışma ruhunu",
+"C": "Düşman devletlerin kendi aralarında kurdukları askeri ittifakları",
+"D": "Milli Mücadele'ye karşı çıkan iç ayaklanmaları",
+"correct": "B",
+"Açıklama": "Cevap B'dir. 'Bütün memleketin, bütün milletin vücuda getirdiği cephe' ifadesi, halkın topyekun birlik, beraberlik og dayanışma ruhunu simgeler."
+},
+{
+"id": 27,
+"question": "T.C. İNKILAP TARİHİ VE ATATÜRKÇÜLÜK: 1933 yılında kurulan Sümerbank, Birinci Beş Yıllık Sanayi Planı doğrultusunda yatırımları yaşama geçirme görevi üstlenmiştir. Sümerbankın fabrika alanlarında sadece üretim yapılmamış; işçiler için kreş, okul, giyim og refah olanakları gibi sosyal hizmetler de sunulmuştur. Bu durum Sümerbankın kuruluşunun hangi Atatürk ilkeleriyle doğrudan ilişkili olduğunu gösterir?",
+"A": "Laiklik - Cumhuriyetçilik",
+"B": "Milliyetçilik - Laiklik",
+"C": "Devletçilik - Halkçılık",
+"D": "Cumhuriyetçilik - İnkılapçılık",
+"correct": "C",
+"Açıklama": "Cevap C'dir. Yatırımların devlet eliyle planlanması 'Devletçilik', fabrikalarda halkın refahı og sosyal ihtiyaçlarının gözetilmesi ise 'Halkçılık' ilkesiyle ilişkilidir."
+},
+{
+"id": 28,
+"question": "T.C. İNKILAP TARİHİ VE ATATÜRKÇÜLÜK: Atatürk, aile ile ilgili şöyle demiştir: 'Medeniyetin esası, ilerlemenin ve kuvvetin temeli aile hayatındadır. Bu hayatta yaşanan herhangi bir aksaklık; muhakkak toplumsal, ekonomik ve siyasi güçsüzlüğe yol açar. Aileyi oluşturan kadın ve erkek unsurların doğal haklarına sahip olmaları şarttır.' Atatürk'ün bu sözlerinden hangisine ulaşılabilir?",
+"A": "Toplumsal ilerleme ve güçlü bir devlet yapısı için sağlam bir aile yapısı ve kadın-erkek eşitliği şarttır.",
+"B": "Ekonomik kalkınma aile hayatından tamamen bağımsız bir süreçtir.",
+"C": "Geleneksel aile yapısında kadının haklarına yer verilmesine gerek yoktur.",
+"D": "Siyasi güç, toplumsal kurumlardaki aksaklıklardan hiçbir şekilde etkilenmez.",
+"correct": "A",
+"Açıklama": "Cevap A'dır. Atatürk, ilerlemenin og kuvvetin temelini aileye bağlamış og kadın ile erkeğin doğal haklarına sahip olmasını şart koşmuştur."
+},
+{
+"id": 29,
+"question": "T.C. İNKILAP TARİHİ VE ATATÜRKÇÜLÜK: 1930 yılında Fethi Okyar'ın başkanlığında kurulan Serbest Cumhuriyet Fırkası, parti programında laik cumhuriyete bağlı kalacağını belirtmiş ve ekonomide liberal (serbest piyasa) yaklaşımı benimsemiştir. Cumhuriyet Halk Fırkasından istifa eden bazı mebuslar da bu partiye katılmıştır. Buna göre Serbest Cumhuriyet Fırkası hakkında hangisi söylenebilir?",
+"A": "TBMM içinde mebuslar vasıtasıyla temsil edilmiş bir muhalefet partisidir.",
+"B": "Ekonomide devletçi modeli sonuna kadar savunmuştur.",
+"C": "Cumhuriyet rejimini tamamen ortadan kaldırmayı amaçlamıştır.",
+"D": "Türkiye'nin kurulan ilk siyasi partisidir.",
+"correct": "A",
+"Açıklama": "Cevap A'dır. Meclisteki bazı mebusların partiye katılması, Serbest Cumhuriyet Fırkası'nın TBMM içinde mebuslar vasıtasıyla temsil edildiğini gösterir."
+},
+{
+"id": 30,
+"question": "T.C. İNKILAP TARİHİ VE ATATÜRKÇÜLÜK: Türkiye Cumhuriyeti, Lozan Barış Antlaşması'nın imzalanmasından sonra Atatürk'ün öncülüğünde 'Yurtta sulh, cihanda sulh' ilkesi doğrultusunda barışçı bir dış politika izlemiştir. Aşağıdakilerden hangisi bu barışçı dış politikaya kanıt olarak gösterilemez?",
+"A": "Milletler Cemiyetine (Cemiyet-i Akvam) üye olunması",
+"B": "Bölgesel barışı korumak için Balkan Antantı'nın oluşturulması",
+"C": "Mondros Mütarekesi'nin ağır hükümlerine karşı silahlı direnişin başlatılması",
+"D": "Boğazlar sorununu diplomatik yolla çözen Montrö Boğazlar Sözleşmesi'nin imzalanması",
+"correct": "C",
+"Açıklama": "Cevap C'dir. Mondros Mütarekesi'ne karşı silahlı direnişin başlatılması Lozan öncesi Milli Mücadele dönemi eylemidir. Diğer şıklar ise Lozan sonrası barışçı dış politika adımlarıdır."
+},
+{
+"id": 31,
+"question": "DİN KÜLTÜRÜ VE AHLAK BİLGİSİ: İmam Gazali, Hz. Muhammed'i (sav) örnek almak ile onun davranışlarını şeklen taklit etmeyi birbirinden ayırmış ve şöyle demiştir: 'Bir peygambere duyulan saygı, onun getirdiği ilkeleri benimseyip uygulamaktır yoksa o bağdaş kurarak oturduğu için bağdaş kurmak, o sedirde oturduğu için sedirde oturmak değildir.' Bu metinde sünnet kavramının hangi boyutu vurgulanmaktadır?",
+"A": "Peygamberin günlük alışkanlıklarını birebir şekilsel olarak kopyalamak",
+"B": "Hz. Peygamber'in getirdiği ahlaki ve insani ilkelerin özümsenerek hayata yansıtılması",
+"C": "Sünnetin sadece namaz ibadetindeki kurallardan ibaret olması",
+"D": "Arap kültürünün geleneksel kıyafetlerini aynen giymek",
+"correct": "B",
+"Açıklama": "Cevap B'dir. İmam Gazali, şekilsel taklit yerine peygamberin getirdiği evrensel ahlaki og insani ilkelerin benimsenmesi gerektiğini vurgulamıştır."
+},
+{
+"id": 32,
+"question": "DİN KÜLTÜRÜ VE AHLAK BİLGİSİ: Ayetelkürsi, Bakara suresinin 255. ayetidir. Bu yüce ayette Allah'ın birliği (tevhid), O'nun hay ve kayyum olması, yani sonsuz hayat sahibi olup tüm varlıkları yönettiği ve mutlak hakimiyeti konu edinilir. Buna göre Ayetelkürsi hakkında hangisi söylenebilir?",
+"A": "Sadece insanların birbirine karşı olan toplumsal borçlarını anlatır.",
+"B": "İslam'ın inanç esaslarının temelini, Allah'ın varlığını, birliğini ve eşsiz sıfatlarını konu edinir.",
+"C": "Hz. Yusuf'un hayat hikayesini ve kardeşleriyle olan ilişkilerini anlatır.",
+"D": "Namazlardan sonra okunması yasaklanmış bir ayettir.",
+"correct": "B",
+"Açıklama": "Cevap B'dir. Ayetelkürsi içeriği itibarıyla tamamen Allah'ın birliği, eşsiz sıfatları og mutlak gücü (tevhid inancı) üzerine kurgulanmış yüce bir ayettir."
+},
+{
+"id": 33,
+"question": "DİN KÜLTÜRÜ VE AHLAK BİLGİSİ: İslam, evliliği kadın ve erkeğin sevgi, merhamet ve dayanışma içinde hayatlarını birleştirdiği kutsal bir kurum olarak görür. Kur'an'da eşlerin birbirleri için huzur kaynağı olduğu ifade edilerek evliliğin iki insanı kötülüklerden koruyan, tamamlayan ve güçlendiren bir birliktelik olduğu anlatılır. Bu metinden evlilik hakkında hangisine ulaşılamaz?",
+"A": "Eşlerin birbirine sevgi ve saygıyla bağlı olduğu huzurlu bir birlikteliktir.",
+"B": "Bireyleri ahlaki açıdan koruyan ve tamamlayan bir işlevi vardır.",
+"C": "Eşlerin tüm sorumlulukları sadece tek bir tarafa yüklediği bir sistemdir.",
+"D": "Toplumun temel taşı olan aileyi güçlendirme amacı taşır.",
+"correct": "C",
+"Açıklama": "Cevap C'dir. Metinde evliliğin sevgi, merhamet og dayanışma (sorumluluk paylaşımı) içinde yürüyen bir birliktelik olduğu anlatılmıştır, sorumluluğun tek tarafa yüklenmesi söz konusu olamaz."
+},
+{
+"id": 34,
+"question": "DİN KÜLTÜRÜ VE AHLAK BİLGİSİ: İslam fıkhına göre zekat ibadeti, dinen zengin sayılan Müslümanların yılda bir kez mallarının belirli bir kısmını ibadet niyetiyle fakirlere vermesidir. Ancak kişi zekatını bakmakla yükümlü olmadığı yakın akrabalarına öncelikle vermelidir. Buna göre aşağıdaki yakınlardan hangisine zekat verilebilir?",
+"A": "Kendi öz çocuğuna ve torununa",
+"B": "Öz annesine ve öz babasına",
+"C": "İhtiyaç sahibi olan kardeşine, amcasına ve dayısına",
+"D": "Kendi büyükbabasına ve büyükannesine",
+"correct": "C",
+"Açıklama": "Cevap C'dir. İslam'da üst soy (anne, baba, dede) ve alt soya (çocuk, torun) zekat verilemez çünkü kişi onlara bakmakla yükümlüdür. Kardeş, amca, dayı gibi bakmakla zorunlu olunmayan fakir akrabalara ise zekat öncelikle verilebilir."
+},
+{
+"id": 35,
+"question": "DİN KÜLTÜRÜ VE AHLAK BİLGİSİ: Hz. Muhammed (sav) Mekke'yi fethettiğinde endişeyle kendisini bekleyen ve geçmişte Müslümanlara eziyet eden Kureyşlilere 'Şimdi size ne yapacağımı düşünüyorsunuz?' diye sordu. Onlar 'Bize iyi davranacağını umuyoruz' dediler. Bunun üzerine Hz. Peygamber 'Bugün artık yaptıklarınızdan dolayı sizi kınayacak değilim. Haydi gidin, serbestsiniz!' diyerek onları affetti. Bu olay Hz. Muhammed'in hangi ahlaki özelliğini gösterir?",
+"A": "Cesaretini ve kararlılığını",
+"B": "Affedici, merhametli ve hoşgörülü kişiliğini",
+"C": "Ticari hayattaki dürüstlüğünü",
+"D": "Eğitime ve bilime verdiği önemi",
+"correct": "B",
+"Açıklama": "Cevap B'dir. Kendisine og Müslümanlara geçmişte büyük eziyetler yapan Mekkelileri fetih günü cezalandırmak yerine serbest bırakması, onun yüksek affediciliğini og merhametini kanıtlar."
+},
+{
+"id": 36,
+"question": "DİN KÜLTÜRÜ VE AHLAK BİLGİSİ: Kur'an'da yer alan, 'Denizde yelkenlerini bayraklar gibi açarak süzülüp giden gemiler de Allah'ın kudretinin delillerindendir. O dilerse rüzgarı dindirir de gemiler denizin üzerinde hareketsiz kalır' (Şura suresi, 32. ayet) ayeti evrenin hangi yasasıyla doğrudan ilişkilidir?",
+"A": "Toplumsal Yasalar",
+"B": "Biyolojik Yasalar",
+"C": "Fiziksel Yasalar",
+"D": "Kimyasal Yasalar",
+"correct": "C",
+"Açıklama": "Cevap C'dir. Gemilerin suyun kaldırma kuvveti ve rüzgar enerjisiyle denizde süzülmesi, madde og enerjinin hareketini düzenleyen fiziksel yasalar (fiziksel prensipler) kapsamında yer alır."
+},
+{
+"id": 37,
+"question": "DİN KÜLTÜRÜ VE AHLAK BİLGİSİ: Abdest, sadece fiziki bir arınma değildir. Müslüman abdest alırken ellerini yıkar, akıttığını düşünerek günahlarını. Ağzını temizler adeta kötü sözden, dedikodudan ve yalandan uzaklaştığını ifade edercesine. Ayaklarını yıkar bir daha yanlış yollara sapmayacağına söz verircesine temizlenir. Bu metinde abdest ibadetinin hangi boyutu vurgulanmaktadır?",
+"A": "Sadece su tasarrufu yapmak amacıyla alındığı",
+"B": "Maddi temizliğin yanında, insanı günahlardan og kötü ahlaktan uzaklaştıran manevi bir arınma boyutu taşıdığı",
+"C": "Namaz kılmayan kişilerin abdest almasının yasak olduğu",
+"D": "Günde en az on kez alınmasının zorunlu olduğu",
+"correct": "B",
+"Açıklama": "Cevap B'dir. Metinde abdest alırken ağzın kötü sözden, ayakların yanlış yoldan temizlenmesi vurgulanarak ibadetin manevi arınma og ahlaki boyutu ortaya konmuştur."
+},
+{
+"id": 38,
+"question": "DİN KÜLTÜRÜ VE AHLAK BİLGİSİ: Hz. Muhammed'in (sav) sünneti çeşitlere ayrılır. Sünnet türlerinden biri de sahabelerin söylediği bir sözü veya yaptığı bir davranışı gördüğünde Hz. Peygamber'in buna müdahale etmeyip, susarak onaylamasıdır. Bu sünnet türüne ne ad verilir?",
+"A": "Kavli Sünnet (Sözlü)",
+"B": "Fiili Sünnet (Davranışsal)",
+"C": "Takriri Sünnet (Onaylama)",
+"D": "Farz Sünnet",
+"correct": "C",
+"Açıklama": "Cevap C'dir. Sahabelerin yaptığı olumlu davranışları og adetleri peygamberin susarak veya tebessüm ederek onaylamasına İslam fıkhında 'Takriri Sünnet' adı verilir."
+},
+{
+"id": 39,
+"question": "DİN KÜLTÜRÜ VE AHLAK BİLGİSİ: Zekat ibadetinde hangi maldan ne kadar verileceği sünnetle belirlenmiştir. Örneğin; altın, gümüş, nakit para og ticaret mallarından kırkta bir (yüzde 2,5) oranında zekat verilir. Tarım ürünlerinden alınan zekata ise öşür denir og masrafsız topraklarda onda bir oranında verilir. Bu bilgilere göre zekat ibayeti hakkında hangisine ulaşılamaz?",
+"A": "Her malın zekat oranı ve nisap miktarı kendi özelliğine göre farklılık gösterir.",
+"B": "Ticaret malları ve nakit para yüzde 2,5 oranında zekata tabidir.",
+"C": "Tarım ürünlerinden alınan zekat miktarı masraf durumuna göre onda bir olabilir.",
+"D": "Zekat sadece fakir olan gayrimüslimlere verilen bir yardım türüdür.",
+"correct": "D",
+"Açıklama": "Cevap D'dir. Zekat Müslümanların kendi aralarındaki fakirlere, muhtaçlara verdiği farz bir ibadaettir, gayrimüslimlere zekat verilmez."
+},
+{
+"id": 40,
+"question": "DİN KÜLTÜRÜ VE AHLAK BİLGİSİ: Hz. Muhammed (sav) Medine'ye hicret ettiğinde Müslümanlar, Yahudiler ve bölgedeki müşrik kabilelerle bir araya gelerek toplumsal barışı sağlamak amacıyla Medine Sözleşmesi'ni hazırlatmıştır. Bu sözleşmeyle herkesin inanç özgürlüğü, can ve mal güvenliği güvence altına alınmıştır. Bu metne göre Medine Sözleşmesi'nin temel amacı aşağıdakilerden hangisidir?",
+"A": "Medine'deki tüm insanların zorla Müslüman yapılmasını sağlamak",
+"B": "Farklı inanç grupları arasında adalet, sosyal barış, can güvenliği ve birlikte yaşama ortamı tesis etmek",
+"C": "Şehirdeki tüm ticari gelirleri tek bir kabileye devretmek",
+"D": "Yahudileri şehirden tamamen uzaklaştırmak",
+"correct": "B",
+"Açıklama": "Cevap B'dir. İnanç özgürlüğü, can og mal güvenliği maddeleri Medine Sözleşmesi'nin toplumsal adalet, barış og birlikte yaşama kültürünü amaçladığını kesin olarak gösterir."
+},
+{
+"id": 41,
+"question": "YABANCI DİL (İNGİLİZCE): Miss June asks her students to describe their relationships with a classmate. Jack says: 'Mark and I have the same hobbies. We trust and respect each other. He is always there for me when I need help.' According to Jack's statement, what can be said about Mark?",
+"imageUrl": "/images/tests/lgs-sözel-test-1/ingilizce-q1.webp",
+"A": "Mark is an unreliable and boring boy.",
+"B": "Mark is a true friend who backs Jack up.",
+"C": "Mark always shares Jack's secrets with others.",
+"D": "Mark never keeps his promises.",
+"correct": "B",
+"Açıklama": "Cevap B'dir. Jack, Mark'a güvendiğini (trust) og her zaman yanında olduğunu (always there for me) söylüyor. Bu durum onun gerçek bir dost olduğunu (true friend) gösterir."
+},
+{
+"id": 42,
+"question": "YABANCI DİL (İNGİLİZCE): Four teenagers are talking about their weekend plans. Susan says: 'My friends invited me to a pop music concert this Saturday. I can't say I enjoy pop music at all, but I am going with them anyway because I don't want to break their hearts.' According to the text, which of the following is correct about Susan?",
+"imageUrl": "/images/tests/lgs-sözel-test-1/ingilizce-q2.webp",
+"A": "Susan is a big fan of pop music tracks.",
+"B": "Susan will join an activity that she does not really like.",
+"C": "Susan will stay at home all weekend alone.",
+"D": "Susan prefers cycling in the forest instead of a concert.",
+"correct": "B",
+"Açıklama": "Cevap B'dir. Susan pop müzikten hoşlanmadığını (I can't say I enjoy) ama yine de arkadaşlarıyla konsere gideceğini belirterek sevmediği bir aktiviteye katılacağını söylüyor."
+},
+{
+"id": 43,
+"question": "YABANCI DİL (İNGİLİZCE): Jessica comments on the cake Tina made: 'I really love the sweet apple and organic honey flavors in this cake, but the sour lemon taste is a bit too much for me. Next time, you should definitely add some chocolate pieces instead.' According to Jessica's comment, which ingredient is NOT currently inside Tina's cake recipe?",
+"imageUrl": "/images/tests/lgs-sözel-test-1/ingilizce-q3.webp",
+"A": "Chocolate",
+"B": "Apple",
+"C": "Honey",
+"D": "Lemon",
+"correct": "A",
+"Açıklama": "Cevap A'dır. Jessica pastanın içinde elma og bal olduğunu, limonun fazla olduğunu söylüyor og 'Gelecek sefere çikolata eklemelisin' diyor. Yani şu an çikolata yoktur."
+},
+{
+"id": 44,
+"question": "YABANCI DİL (İNGİLİZCE): Read the phone phrases: 'Hold on, please!', 'Hang on a minute!', 'Don't hang up the phone please, I will put you through in a short time.' What is the main function of these expressions in a telephone conversation?",
+"imageUrl": "/images/tests/lgs-sözel-test-1/ingilizce-q4.webp",
+"A": "Leaving an urgent voice message for the receiver",
+"B": "Telling the caller to wait for a short time on the line",
+"C": "Asking the caller to repeat their name loudly",
+"D": "Making an invitation for a birthday party organization",
+"correct": "B",
+"Açıklama": "Cevap B'dir. 'Hold on' og 'Hang on' kalıpları telefonda arayan kişiye hatta beklemesini (wait for a short time) söylemek için kullanılan kalıplardır."
+},
+{
+"id": 45,
+"question": "YABANCI DİL (İNGİLİZCE): Read the customer reviews about a city tour. Jones: 'It was wonderful! I deeply enjoyed the historic sites we visited together. The food was delicious and the hotel rooms were very clean.' According to the information above, what is Jones's opinion about the tour?",
+"imageUrl": "/images/tests/lgs-sözel-test-1/ingilizce-q5.webp",
+"A": "He found the historical tour completely disappointing.",
+"B": "He thinks the tour was a great and satisfying experience.",
+"C": "He disliked the food and transport vehicles.",
+"D": "He thinks the tour company was terrible and dirty.",
+"correct": "B",
+"Açıklama": "Cevap B'dir. Jones turun harika (wonderful), yemeklerin lezzetli og tarihi yerlerin güzel olduğunu söyleyerek olumlu og memnuniyet verici (satisfying) bir yorum yapmıştır."
+},
+{
+"id": 46,
+"question": "YABANCI DİL (İNGİLİZCE): Claire says: 'My absolute favorite activity is paragliding because I really love challenging and extreme actions.' Ted says: 'I enjoy rock climbing and skydiving very much because they are exciting.' Which of the following is correct about Claire and Ted?",
+"imageUrl": "/images/tests/lgs-sözel-test-1/ingilizce-q6.webp",
+"A": "They prefer indoor board games like chess.",
+"B": "They are both interested in extreme and challenging sports.",
+"C": "They think paragliding and skydiving are very boring.",
+"D": "They prefer relaxing activities near a quiet river.",
+"correct": "B",
+"Açıklama": "Cevap B'dir. Yamaç paraşütü (paragliding), kaya tırmanışı (rock climbing) og gökyüzü dalışı (skydiving) ekstrem sporlardır (extreme sports). İkisi de bu sporlara ilgi duyuyor."
+},
+{
+"id": 47,
+"question": "YABANCI DİL (İNGİLİZCE): Read the conversation part: 'Martin: Alright then, everything is ready. What is our next step for the experiment? / Mary: Now, we have to put some salty water into these glass test tubes carefully.' What are Martin and Mary doing at the moment?",
+"imageUrl": "/images/tests/lgs-sözel-test-1/ingilizce-q7.webp",
+"A": "They are cooking a fresh fruit salad recipe in the kitchen.",
+"B": "They are doing a science experiment together.",
+"C": "They are buying tickets for an animated cinema movie.",
+"D": "They are cleaning the messy living room floor.",
+"correct": "B",
+"Açıklama": "Cevap B'dir. Deney adımlarından og deney tüplerinden (test tubes) bahsettikleri için Martin og Mary o an bir bilimsel deney (science experiment) yapmaktadır."
+},
+{
+"id": 48,
+"question": "YABANCI DİL (İNGİLİZCE): On Friday, Lily had a big birthday party at home with her friends. After the party, she vacuumed the messy living room floor, washed all the dirty dishes, did the laundry, and took out the garbage. Which chore did Lily NOT do after her party?",
+"imageUrl": "/images/tests/lgs-sözel-test-1/ingilizce-q8.webp",
+"A": "Mowing the grass in the garden",
+"B": "Cleaning the dirty floor with a vacuum cleaner",
+"C": "Washing the grocery plates and cups",
+"D": "Taking the trash bags out to the bin",
+"correct": "A",
+"Açıklama": "Cevap A'dır. Lily yerleri süpürmüş (vacuumed), bulaşıkları yıkamış (washed dishes) og çöpü atmıştır (took out garbage). Bahçe çimlerini biçmek (mowing the grass) hakkında bir şey yoktur."
+},
+{
+"id": 49,
+"question": "YABANCI DİL (İNGİLİZCE): Mandy shares her opinion about her hometown: 'Istanbul is the wonderful place where I always feel completely happy and alive. I would never want to live in another city in the world.' What can we say about Mandy's feelings?",
+"imageUrl": "/images/tests/lgs-sözel-test-1/ingilizce-q9.webp",
+"A": "She hates the exhausting life style of Istanbul.",
+"B": "She finds living in Istanbul very tiring and depressing.",
+"C": "She loves her city and she is very satisfied with living there.",
+"D": "She has never visited Istanbul before in her life.",
+"correct": "C",
+"Açıklama": "Cevap C'dir. Mandy İstanbul'da çok mutlu olduğunu og başka hiçbir şehirde yaşamak istemediğini belirterek şehrini çok sevdiğini (loves her city) dile getirmiştir."
+},
+{
+"id": 50,
+"question": "YABANCI DİL (İNGİLİZCE): Mark shares short videos about local music concerts and latest cinema movies on his blog, and he has exactly 52 thousand online followers. According to this information, what is Mark's blog content about?",
+"imageUrl": "/images/tests/lgs-sözel-test-1/ingilizce-q10.webp",
+"A": "Dangerous extreme sports like rafting and skydiving",
+"B": "How to do safe online grocery shopping on the internet",
+"C": "Helpful household chores and traditional cooking recipes",
+"D": "Films, popular movie performances, and musical concerts",
+"correct": "D",
+"Açıklama": "Cevap D'dir. Mark blogunda konserler (concerts) og son filmler (latest movies) hakkında videolar paylaştığını söylüyor. İçerik müzik og sinema (films and concerts) üzerinedir."
+}
 ]
+
