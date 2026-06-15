@@ -403,114 +403,113 @@
 },
 
 {
-"id": 41,
-"question": "YABANCI DİL (İNGİLİZCE): Miss June asks her students to describe their relationships with a classmate. Jack says: 'Mark and I have the same hobbies. We trust and respect each other. He is always there for me when I need help.' According to Jack's statement, what can be said about Mark?",
-"imageUrl": "/images/tests/lgs-sözel-test-1/ingilizce-q1.webp",
-"A": "Mark is an unreliable and boring boy.",
-"B": "Mark is a true friend who backs Jack up.",
-"C": "Mark always shares Jack's secrets with others.",
-"D": "Mark never keeps his promises.",
-"correct": "B",
-"Açıklama": "Cevap B'dir. Jack, Mark'a güvendiğini (trust) og her zaman yanında olduğunu (always there for me) söylüyor. Bu durum onun gerçek bir dost olduğunu (true friend) gösterir."
-},
-{
-"id": 42,
-"question": "YABANCI DİL (İNGİLİZCE): Four teenagers are talking about their weekend plans. Susan says: 'My friends invited me to a pop music concert this Saturday. I can't say I enjoy pop music at all, but I am going with them anyway because I don't want to break their hearts.' According to the text, which of the following is correct about Susan?",
-"imageUrl": "/images/tests/lgs-sözel-test-1/ingilizce-q2.webp",
-"A": "Susan is a big fan of pop music tracks.",
-"B": "Susan will join an activity that she does not really like.",
-"C": "Susan will stay at home all weekend alone.",
-"D": "Susan prefers cycling in the forest instead of a concert.",
-"correct": "B",
-"Açıklama": "Cevap B'dir. Susan pop müzikten hoşlanmadığını (I can't say I enjoy) ama yine de arkadaşlarıyla konsere gideceğini belirterek sevmediği bir aktiviteye katılacağını söylüyor."
-},
-{
-"id": 43,
-"question": "YABANCI DİL (İNGİLİZCE): Jessica comments on the cake Tina made: 'I really love the sweet apple and organic honey flavors in this cake, but the sour lemon taste is a bit too much for me. Next time, you should definitely add some chocolate pieces instead.' According to Jessica's comment, which ingredient is NOT currently inside Tina's cake recipe?",
-"imageUrl": "/images/tests/lgs-sözel-test-1/ingilizce-q3.webp",
-"A": "Chocolate",
-"B": "Apple",
-"C": "Honey",
-"D": "Lemon",
-"correct": "A",
-"Açıklama": "Cevap A'dır. Jessica pastanın içinde elma og bal olduğunu, limonun fazla olduğunu söylüyor og 'Gelecek sefere çikolata eklemelisin' diyor. Yani şu an çikolata yoktur."
-},
-{
-"id": 44,
-"question": "YABANCI DİL (İNGİLİZCE): Read the phone phrases: 'Hold on, please!', 'Hang on a minute!', 'Don't hang up the phone please, I will put you through in a short time.' What is the main function of these expressions in a telephone conversation?",
-"imageUrl": "/images/tests/lgs-sözel-test-1/ingilizce-q4.webp",
-"A": "Leaving an urgent voice message for the receiver",
-"B": "Telling the caller to wait for a short time on the line",
-"C": "Asking the caller to repeat their name loudly",
-"D": "Making an invitation for a birthday party organization",
-"correct": "B",
-"Açıklama": "Cevap B'dir. 'Hold on' og 'Hang on' kalıpları telefonda arayan kişiye hatta beklemesini (wait for a short time) söylemek için kullanılan kalıplardır."
-},
-{
-"id": 45,
-"question": "YABANCI DİL (İNGİLİZCE): Read the customer reviews about a city tour. Jones: 'It was wonderful! I deeply enjoyed the historic sites we visited together. The food was delicious and the hotel rooms were very clean.' According to the information above, what is Jones's opinion about the tour?",
-"imageUrl": "/images/tests/lgs-sözel-test-1/ingilizce-q5.webp",
-"A": "He found the historical tour completely disappointing.",
-"B": "He thinks the tour was a great and satisfying experience.",
-"C": "He disliked the food and transport vehicles.",
-"D": "He thinks the tour company was terrible and dirty.",
-"correct": "B",
-"Açıklama": "Cevap B'dir. Jones turun harika (wonderful), yemeklerin lezzetli og tarihi yerlerin güzel olduğunu söyleyerek olumlu og memnuniyet verici (satisfying) bir yorum yapmıştır."
-},
-{
-"id": 46,
-"question": "YABANCI DİL (İNGİLİZCE): Claire says: 'My absolute favorite activity is paragliding because I really love challenging and extreme actions.' Ted says: 'I enjoy rock climbing and skydiving very much because they are exciting.' Which of the following is correct about Claire and Ted?",
-"imageUrl": "/images/tests/lgs-sözel-test-1/ingilizce-q6.webp",
-"A": "They prefer indoor board games like chess.",
-"B": "They are both interested in extreme and challenging sports.",
-"C": "They think paragliding and skydiving are very boring.",
-"D": "They prefer relaxing activities near a quiet river.",
-"correct": "B",
-"Açıklama": "Cevap B'dir. Yamaç paraşütü (paragliding), kaya tırmanışı (rock climbing) og gökyüzü dalışı (skydiving) ekstrem sporlardır (extreme sports). İkisi de bu sporlara ilgi duyuyor."
-},
-{
-"id": 47,
-"question": "YABANCI DİL (İNGİLİZCE): Read the conversation part: 'Martin: Alright then, everything is ready. What is our next step for the experiment? / Mary: Now, we have to put some salty water into these glass test tubes carefully.' What are Martin and Mary doing at the moment?",
-"imageUrl": "/images/tests/lgs-sözel-test-1/ingilizce-q7.webp",
-"A": "They are cooking a fresh fruit salad recipe in the kitchen.",
-"B": "They are doing a science experiment together.",
-"C": "They are buying tickets for an animated cinema movie.",
-"D": "They are cleaning the messy living room floor.",
-"correct": "B",
-"Açıklama": "Cevap B'dir. Deney adımlarından og deney tüplerinden (test tubes) bahsettikleri için Martin og Mary o an bir bilimsel deney (science experiment) yapmaktadır."
-},
-{
-"id": 48,
-"question": "YABANCI DİL (İNGİLİZCE): On Friday, Lily had a big birthday party at home with her friends. After the party, she vacuumed the messy living room floor, washed all the dirty dishes, did the laundry, and took out the garbage. Which chore did Lily NOT do after her party?",
-"imageUrl": "/images/tests/lgs-sözel-test-1/ingilizce-q8.webp",
-"A": "Mowing the grass in the garden",
-"B": "Cleaning the dirty floor with a vacuum cleaner",
-"C": "Washing the grocery plates and cups",
-"D": "Taking the trash bags out to the bin",
-"correct": "A",
-"Açıklama": "Cevap A'dır. Lily yerleri süpürmüş (vacuumed), bulaşıkları yıkamış (washed dishes) og çöpü atmıştır (took out garbage). Bahçe çimlerini biçmek (mowing the grass) hakkında bir şey yoktur."
-},
-{
-"id": 49,
-"question": "YABANCI DİL (İNGİLİZCE): Mandy shares her opinion about her hometown: 'Istanbul is the wonderful place where I always feel completely happy and alive. I would never want to live in another city in the world.' What can we say about Mandy's feelings?",
-"imageUrl": "/images/tests/lgs-sözel-test-1/ingilizce-q9.webp",
-"A": "She hates the exhausting life style of Istanbul.",
-"B": "She finds living in Istanbul very tiring and depressing.",
-"C": "She loves her city and she is very satisfied with living there.",
-"D": "She has never visited Istanbul before in her life.",
-"correct": "C",
-"Açıklama": "Cevap C'dir. Mandy İstanbul'da çok mutlu olduğunu og başka hiçbir şehirde yaşamak istemediğini belirterek şehrini çok sevdiğini (loves her city) dile getirmiştir."
-},
-{
-"id": 50,
-"question": "YABANCI DİL (İNGİLİZCE): Mark shares short videos about local music concerts and latest cinema movies on his blog, and he has exactly 52 thousand online followers. According to this information, what is Mark's blog content about?",
-"imageUrl": "/images/tests/lgs-sözel-test-1/ingilizce-q10.webp",
-"A": "Dangerous extreme sports like rafting and skydiving",
-"B": "How to do safe online grocery shopping on the internet",
-"C": "Helpful household chores and traditional cooking recipes",
-"D": "Films, popular movie performances, and musical concerts",
-"correct": "D",
-"Açıklama": "Cevap D'dir. Mark blogunda konserler (concerts) og son filmler (latest movies) hakkında videolar paylaştığını söylüyor. İçerik müzik og sinema (films and concerts) üzerinedir."
-}
+    "id": 41,
+    "question": "YABANCI DİL (İNGİLİZCE): Miss June asks her students to describe their relationships with a classmate. Jack says: 'Mark and I have the same hobbies. We trust and respect each other. He is always there for me when I need help.' According to Jack's statement, what can be said about Mark?",
+    "imageUrl": "/images/tests/lgs-sozel-test-1/ingilizce-q1.webp",
+    "A": "Mark is an unreliable and boring boy.",
+    "B": "Mark is a true friend who backs Jack up.",
+    "C": "Mark always shares Jack's secrets with others.",
+    "D": "Mark never keeps his promises.",
+    "correct": "B",
+    "Açıklama": "Cevap B'dir. Jack, Mark'a güvendiğini (trust) ve her zaman yanında olduğunu (always there for me) söylüyor. Bu durum onun gerçek bir dost olduğunu (true friend) gösterir."
+  },
+  {
+    "id": 42,
+    "question": "YABANCI DİL (İNGİLİZCE): Four teenagers are talking about their weekend plans. Susan says: 'My friends invited me to a pop music concert this Saturday. I can't say I enjoy pop music at all, but I am going with them anyway because I don't want to break their hearts.' According to the text, which of the following is correct about Susan?",
+    "imageUrl": "/images/tests/lgs-sozel-test-1/ingilizce-q2.webp",
+    "A": "Susan is a big fan of pop music tracks.",
+    "B": "Susan will join an activity that she does not really like.",
+    "C": "Susan will stay at home all weekend alone.",
+    "D": "Susan prefers cycling in the forest instead of a concert.",
+    "correct": "B",
+    "Açıklama": "Cevap B'dir. Susan pop müzikten hoşlanmadığını (I can't say I enjoy) ama yine de arkadaşısıyla konsere gideceğini belirterek sevmediği bir aktiviteye katılacağını söylüyor."
+  },
+  {
+    "id": 43,
+    "question": "YABANCI DİL (İNGİLİZCE): Jessica comments on the cake Tina made: 'I really love the sweet apple and organic honey flavors in this cake, but the sour lemon taste is a bit too much for me. Next time, you should definitely add some chocolate pieces instead.' According to Jessica's comment, which ingredient is NOT currently inside Tina's cake recipe?",
+    "imageUrl": "/images/tests/lgs-sozel-test-1/ingilizce-q3.webp",
+    "A": "Chocolate",
+    "B": "Apple",
+    "C": "Honey",
+    "D": "Lemon",
+    "correct": "A",
+    "Açıklama": "Cevap A'dır. Jessica pastanın içinde elma ve bal olduğunu, limonun fazla olduğunu söylüyor ve 'Gelecek sefere çikolata eklemelisin' diyor. Yani şu an çikolata yoktur."
+  },
+  {
+    "id": 44,
+    "question": "YABANCI DİL (İNGİLİZCE): Read the phone phrases: 'Hold on, please!', 'Hang on a minute!', 'Don't hang up the phone please, I will put you through in a short time.' What is the main function of these expressions in a telephone conversation?",
+    "imageUrl": "/images/tests/lgs-sozel-test-1/ingilizce-q4.webp",
+    "A": "Leaving an urgent voice message for the receiver",
+    "B": "Telling the caller to wait for a short time on the line",
+    "C": "Asking the caller to repeat their name loudly",
+    "D": "Making an invitation for a birthday party organization",
+    "correct": "B",
+    "Açıklama": "Cevap B'dir. 'Hold on' ve 'Hang on' kalıpları telefonda arayan kişiye hatta beklemesini (wait for a short time) söylemek için kullanılan kalıplardır."
+  },
+  {
+    "id": 45,
+    "question": "YABANCI DİL (İNGİLİZCE): Read the customer reviews about a city tour. Jones: 'It was wonderful! I deeply enjoyed the historic sites we visited together. The food was delicious and the hotel rooms were very clean.' According to the information above, what is Jones's opinion about the tour?",
+    "imageUrl": "/images/tests/lgs-sozel-test-1/ingilizce-q5.webp",
+    "A": "He found the historical tour completely disappointing.",
+    "B": "He thinks the tour was a great and satisfying experience.",
+    "C": "He disliked the food and transport vehicles.",
+    "D": "He thinks the tour company was terrible and dirty.",
+    "correct": "B",
+    "Açıklama": "Cevap B'dir. Jones turun harika (wonderful), yemeklerin lezzetli ve tarihi yerlerin güzel olduğunu söyleyerek olumlu ve memnuniyet verici (satisfying) bir yorum yapmıştır."
+  },
+  {
+    "id": 46,
+    "question": "YABANCI DİL (İNGİLİZCE): Claire says: 'My absolute favorite activity is paragliding because I really love challenging and extreme actions.' Ted says: 'I enjoy rock climbing and skydiving very much because they are exciting.' Which of the following is correct about Claire and Ted?",
+    "imageUrl": "/images/tests/lgs-sozel-test-1/ingilizce-q6.webp",
+    "A": "They prefer indoor board games like chess.",
+    "B": "They are both interested in extreme and challenging sports.",
+    "C": "They think paragliding and skydiving are very boring.",
+    "D": "They prefer relaxing activities near a quiet river.",
+    "correct": "B",
+    "Açıklama": "Cevap B'dir. Yamaç paraşütü (paragliding), kaya tırmanışı (rock climbing) ve gökyüzü dalışı (skydiving) ekstrem sporlardır (extreme sports). İkisi de bu sporlara ilgi duyuyor."
+  },
+  {
+    "id": 47,
+    "question": "YABANCI DİL (İNGİLİZCE): Read the conversation part: 'Martin: Alright then, everything is ready. What is our next step for the experiment? / Mary: Now, we have to put some salty water into these glass test tubes carefully.' What are Martin and Mary doing at the moment?",
+    "imageUrl": "/images/tests/lgs-sozel-test-1/ingilizce-q7.webp",
+    "A": "They are cooking a fresh fruit salad recipe in the kitchen.",
+    "B": "They are doing a science experiment together.",
+    "C": "They are buying tickets for an animated cinema movie.",
+    "D": "They are cleaning the messy living room floor.",
+    "correct": "B",
+    "Açıklama": "Cevap B'dir. Deney adımlarından ve deney tüplerinden (test tubes) bahsettikleri için Martin ve Mary o an bir bilimsel deney (science experiment) yapmaktadır."
+  },
+  {
+    "id": 48,
+    "question": "YABANCI DİL (İNGİLİZCE): On Friday, Lily had a big birthday party at home with her friends. After the party, she vacuumed the messy living room floor, washed all the dirty dishes, did the laundry, and took out the garbage. Which chore did Lily NOT do after her party?",
+    "imageUrl": "/images/tests/lgs-sozel-test-1/ingilizce-q8.webp",
+    "A": "Mowing the grass in the garden",
+    "B": "Cleaning the dirty floor with a vacuum cleaner",
+    "C": "Washing the grocery plates and cups",
+    "D": "Taking the trash bags out to the bin",
+    "correct": "A",
+    "Açıklama": "Cevap A'dır. Lily yerleri süpürmüş (vacuumed), bulaşıkları yıkamış (washed dishes) ve çöpü atmıştır (took out garbage). Bahçe çimlerini biçmek (mowing the grass) hakkında bir şey yoktur."
+  },
+  {
+    "id": 49,
+    "question": "YABANCI DİL (İNGİLİZCE): Mandy shares her opinion about her hometown: 'Istanbul is the wonderful place where I always feel completely happy and alive. I would never want to live in another city in the world.' What can we say about Mandy's feelings?",
+    "imageUrl": "/images/tests/lgs-sozel-test-1/ingilizce-q9.webp",
+    "A": "She hates the exhausting life style of Istanbul.",
+    "B": "She finds living in Istanbul very tiring and depressing.",
+    "C": "She loves her city and she is very satisfied with living there.",
+    "D": "She has never visited Istanbul before in her life.",
+    "correct": "C",
+    "Açıklama": "Cevap C'dir. Mandy İstanbul'da çok mutlu olduğunu ve başka hiçbir şehirde yaşamak istemediğini belirterek şehrini çok sevdiğini (loves her city) dile getirmiştir."
+  },
+  {
+    "id": 50,
+    "question": "YABANCI DİL (İNGİLİZCE): Mark shares short videos about local music concerts and latest cinema movies on his blog, and he has exactly 52 thousand online followers. According to this information, what is Mark's blog content about?",
+    "imageUrl": "/images/tests/lgs-sozel-test-1/ingilizce-q10.webp",
+    "A": "Dangerous extreme sports like rafting and skydiving",
+    "B": "How to do safe online grocery shopping on the internet",
+    "C": "Helpful household chores and traditional cooking recipes",
+    "D": "Films, popular movie performances, and musical concerts",
+    "correct": "D",
+    "Açıklama": "Cevap D'dir. Mark blogunda konserler (concerts) ve son filmler (latest movies) hakkında videolar paylaştığını söylüyor. İçerik müzik ve sinema (films and concerts) üzerinedir."
+  }
 ]
-
