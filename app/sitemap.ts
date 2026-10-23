@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next';
 import { getGrade5Tests, grade5Subjects } from './data/grade5/seo';
+import { getGrade6Tests, grade6Subjects } from './data/grade6/seo';
 import type { ChessTestsData } from '../lib/chess/types';
 import chessTestsData from '../public/data/satranc-testleri.json';
 
@@ -37,6 +38,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ]),
   ];
 
+  const grade6Routes = [
+    {
+      url: `${baseUrl}/6-sinif`,
+      lastModified: lastMod,
+      changeFrequency: 'daily' as const,
+      priority: 0.95,
+    },
+    ...grade6Subjects.flatMap((subject) => [
+      {
+        url: `${baseUrl}/6-sinif/${subject.id}`,
+        lastModified: lastMod,
+        changeFrequency: 'weekly' as const,
+        priority: 0.85,
+      },
+      ...getGrade6Tests(subject.id).map((test) => ({
+        url: `${baseUrl}/6-sinif/${subject.id}/${test.slug}`,
+        lastModified: lastMod,
+        changeFrequency: 'weekly' as const,
+        priority: 0.75,
+      })),
+    ]),
+  ];
+
   const examHubs = ['/8-sinif-lgs', '/lgs', '/lgs/sozel', '/lgs/sayisal', '/yks', '/kpss', '/tus', '/dus', '/hmgs'].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: lastMod,
@@ -67,5 +91,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ];
 
-  return [...mainRoutes, ...grade5Routes, ...examHubs, ...otherRoutes, ...chessRoutes];
+  return [...mainRoutes, ...grade5Routes, ...grade6Routes, ...examHubs, ...otherRoutes, ...chessRoutes];
 }

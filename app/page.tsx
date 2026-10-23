@@ -448,6 +448,24 @@ export default function HomePage() {
     </div>
   </div>
 </div>
+      {/* 6. SINIF KARTI */}
+      <Link
+        href="/6-sinif"
+        className="group relative flex flex-col justify-between gap-6 overflow-hidden rounded-2xl bg-gradient-to-br from-indigo-600 to-blue-500 p-6 text-white shadow-xl transition-all hover:shadow-2xl focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-indigo-700"
+      >
+        <div>
+          <div className="mb-3 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider">
+            <span className="text-lg" aria-hidden="true">🏫</span> 6. Sınıf
+          </div>
+          <h3 className="text-2xl font-black tracking-tight">Başlangıç Testleri</h3>
+          <p className="mt-3 text-sm leading-relaxed text-indigo-50">
+            Matematik, Türkçe, Fen Bilimleri ve İngilizce. 1. dönemin ilk konuları için açıklamalı sorular.
+          </p>
+        </div>
+        <span className="rounded-xl bg-white px-4 py-3 font-black text-sm text-indigo-700 shadow-md">
+          Testleri Çöz →
+        </span>
+      </Link>
 </div>
 </div>
 </section>
