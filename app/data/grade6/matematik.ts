@@ -1427,6 +1427,176 @@ export const matematikData: SubjectData = {
         "explanation": "Birbirini ortalayan köşegenler dörtgenin paralelkenar olduğunu gösterir. Bu köşegenlerin dik kesişmesi, dört kenarı eşit olan eşkenar dörtgeni verir. Köşegenler eşit uzunlukta olmadığı için şekil kare değildir. Diğer ifadeler bu koşullarla uyuşmaz."
       }
     ],
+    test10: [
+      {
+        "id": "m6-1-t10-01",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Çubuklarla yan yana kareler oluşturuluyor. Her yeni adımda sağa bir kare ekleniyor ve komşu kareler bir kenarı ortak kullanıyor.\n\n10. adımdaki çubuk sayısı, 4. adımdakinden kaç fazladır?",
+        "options": [
+          "16",
+          "18",
+          "20",
+          "24"
+        ],
+        "correct": 1,
+        "explanation": "İlk kare 4 çubuk gerektirir; her yeni kare 3 çubuk ekler. n. adımda 3n + 1 çubuk vardır. 10. adım 31, 4. adım 13 çubuktur; fark 18’dir.",
+        "imageWidth": 360,
+        "imageHeight": 350,
+        "imageUrl": "/grade6/matematik/test-10/soru-01.svg",
+        "imageAlt": "İlk üç adımda sırasıyla bir, iki, üç bitişik kare var. Sayıları 4, 7, 10 çubuk. Ortak kenarlar yalnız bir kez kullanılır."
+      },
+      {
+        "id": "m6-1-t10-02",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Dengede duran terazinin iki kefesindeki kutuların her biri aynı kütlededir. Küçük ağırlıkların kütleleri görselde verilmiştir.\n\nBu kutulardan iki tanesi ile 5 kg’lık bir ağırlığın toplam kütlesi kaç kilogramdır?",
+        "options": [
+          "26",
+          "29",
+          "31",
+          "44"
+        ],
+        "correct": 2,
+        "explanation": "Dengenin iki tarafından ikişer kutu çıkarılınca bir kutu ile 6 kg, 19 kg’a eşittir. Bir kutu 13 kg’dır. İki kutu ile 5 kg toplam 2 × 13 + 5 = 31 kg olur.",
+        "imageWidth": 360,
+        "imageHeight": 350,
+        "imageUrl": "/grade6/matematik/test-10/soru-02.svg",
+        "imageAlt": "Sol kefede üç özdeş kutu ve 6 kg, sağ kefede iki özdeş kutu ve 19 kg var. Terazi dengede. Kutular K harfiyle belirtilmiş."
+      },
+      {
+        "id": "m6-1-t10-03",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Bir sayı işlem makinesine giriyor ve ok yönündeki işlemler sırayla uygulanıyor. Sonuç 40 oluyor.\n\nMakineye giren sayı kaçtır?",
+        "options": [
+          "9",
+          "10",
+          "12",
+          "11"
+        ],
+        "correct": 3,
+        "explanation": "İşlemler sondan geri alınır: 40’a 5 eklenir, 45 elde edilir. 3’e bölünce 15, 4 çıkarınca 11 bulunur. Kontrol: (11 + 4) × 3 − 5 = 40.",
+        "imageWidth": 360,
+        "imageHeight": 420,
+        "imageUrl": "/grade6/matematik/test-10/soru-03.svg",
+        "imageAlt": "Dikey işlem zinciri: sayı, 4 ekle, 3 ile çarp, 5 çıkar, sonuç 40."
+      },
+      {
+        "id": "m6-1-t10-04",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "A ve B atölyelerindeki ücret kuralları görselde verilmiştir. Önce iki atölyede toplam ücreti eşit yapan ders sayısı bulunuyor. Bir öğrenci bu sayıdan 2 fazla ders almayı planlıyor.\n\nBu öğrencinin A atölyesindeki toplam ücreti, B atölyesininkinden kaç TL fazladır?",
+        "options": [
+          "4",
+          "8",
+          "12",
+          "16"
+        ],
+        "correct": 0,
+        "explanation": "A’nın üyelik bedeli 12 TL daha düşük, ders başına ücreti 2 TL daha yüksektir. 12 ÷ 2 = 6 derste toplam ücretler eşitlenir. Öğrenci 8 ders alır: A için 8 + 6 × 8 = 56 TL, B için 20 + 4 × 8 = 52 TL. Fark 4 TL’dir.",
+        "imageWidth": 360,
+        "imageHeight": 350,
+        "imageUrl": "/grade6/matematik/test-10/soru-04.svg",
+        "imageAlt": "A atölyesi: bir kez 8 TL üyelik, her ders 6 TL. B atölyesi: bir kez 20 TL üyelik, her ders 4 TL."
+      },
+      {
+        "id": "m6-1-t10-05",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Kare masalar bir sıra hâlinde birleştiriliyor. Dışarıda kalan her kenara bir sandalye konuyor; ortak kenarlara sandalye konmuyor.\n\n12 masa bu şekilde birleştirildiğinde, eldeki 30 sandalyenin kaç tanesi kullanılmaz?",
+        "options": [
+          "2",
+          "4",
+          "6",
+          "8"
+        ],
+        "correct": 1,
+        "explanation": "İlk masaya 4 sandalye yerleşir. Her yeni masa toplam sandalye sayısını 2 artırır; n masa için 2n + 2 sandalye gerekir. 12 masa için 26 sandalye kullanılır; 30 − 26 = 4 sandalye kalır.",
+        "imageWidth": 360,
+        "imageHeight": 390,
+        "imageUrl": "/grade6/matematik/test-10/soru-05.svg",
+        "imageAlt": "Yan yana bir, iki ve üç kare masa için sırasıyla 4, 6, 8 sandalye gösterilmiş. Sandalyeler dış kenarlarda; ortak kenarlarda yok."
+      },
+      {
+        "id": "m6-1-t10-06",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Görseldeki algoritmada başlangıç sayısına “2 ile çarp, sonra 1 ekle” işlem çifti tam 3 kez uygulanıyor.\n\nBaşlangıç sayısı 2 yerine 3 seçilirse son sonuç kaç artar?",
+        "options": [
+          "3",
+          "6",
+          "8",
+          "9"
+        ],
+        "correct": 2,
+        "explanation": "2 ile başlanırsa sonuçlar 5, 11, 23’tür. 3 ile başlanırsa 7, 15, 31 olur. Son sonuçtaki artış 31 − 23 = 8’dir. İlk sayıdaki 1 birimlik fark her turda iki katına çıkar.",
+        "imageWidth": 360,
+        "imageHeight": 370,
+        "imageUrl": "/grade6/matematik/test-10/soru-06.svg",
+        "imageAlt": "Başlangıç sayısından sonra bir işlem kutusu: 2 ile çarp, 1 ekle. Bu işlem çifti üç kez tekrarlanır, sonra sonuç yazılır."
+      },
+      {
+        "id": "m6-1-t10-07",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Dikdörtgen bir kartın kenarları görseldeki cebirsel ifadelerle verilmiştir. n = 5 olduğunda kartın çevresine şeridin uçlarında fazladan pay bırakmadan iki tam tur şerit sarılıyor.\n\nGerekli şeridin uzunluğu kaç santimetredir?",
+        "options": [
+          "26",
+          "40",
+          "48",
+          "52"
+        ],
+        "correct": 3,
+        "explanation": "Kısa kenar 5 cm, uzun kenar 5 + 3 = 8 cm olur. Bir tur 2 × (5 + 8) = 26 cm’dir. İki tur için 52 cm şerit gerekir.",
+        "imageWidth": 360,
+        "imageHeight": 350,
+        "imageUrl": "/grade6/matematik/test-10/soru-07.svg",
+        "imageAlt": "Dikdörtgenin kısa kenarı n cm, uzun kenarı (n + 3) cm. İki tam tur şerit sarılacağı belirtilmiş. Çizim ölçekli değil."
+      },
+      {
+        "id": "m6-1-t10-08",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Her birinde x + 3 kalem bulunan 4 kutu hazırlanıyor. Kutulardaki kalemlerin toplamından 2x tanesi dağıtılıyor.\n\nx = 7 olduğunda geriye kaç kalem kalır?",
+        "options": [
+          "20",
+          "24",
+          "26",
+          "28"
+        ],
+        "correct": 2,
+        "explanation": "Dört kutuda toplam 4 × (7 + 3) = 40 kalem vardır. 2 × 7 = 14 kalem dağıtılır. Geriye 40 − 14 = 26 kalem kalır. Kalan miktarı 4(x + 3) − 2x ifadesi gösterir."
+      },
+      {
+        "id": "m6-1-t10-09",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Bir sayı örüntüsünün ilk terimi 7’dir. Her yeni terim, bir önceki terime 5 eklenerek bulunuyor.\n\n60’tan büyük olan ilk terim kaçıncı terimdir?",
+        "options": [
+          "11.",
+          "12.",
+          "13.",
+          "14."
+        ],
+        "correct": 1,
+        "explanation": "n. terim 7 + 5(n − 1) ile bulunur. 11. terim 57, 12. terim 62’dir. Artışlar pozitif olduğundan 60’ı ilk aşan terim 12. terimdir."
+      },
+      {
+        "id": "m6-1-t10-10",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Bir algoritma her turda eldeki sayı çiftse sayıyı 2’ye bölüyor, tekse sayıya 3 ekliyor. Her turda yalnız bir işlem uygulanıyor; sonuç sonraki turun başlangıcı oluyor.\n\nİlk iki turda bölme, üçüncü turda toplama yapılmış ve son sonuç 10 olmuştur. Başlangıç sayısı kaçtır?",
+        "options": [
+          "28",
+          "14",
+          "20",
+          "40"
+        ],
+        "correct": 0,
+        "explanation": "Üçüncü turda 3 eklenerek 10 bulunduğundan bu tura 7 ile girilmiştir. Önceki iki turda sayı ikiye bölündüğünden başlangıç 7 × 2 × 2 = 28’dir. Kontrol: 28 → 14 → 7 → 10; belirtilen işlem sırası sağlanır."
+      }
+    ],
   },
   term2: {},
 };

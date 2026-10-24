@@ -1,6 +1,6 @@
 # 6. sınıf başlangıç paketi
 
-170 özgün soru: Matematikte 8 test, Türkçe, Fen Bilimleri ve İngilizcede üçer test; her test 10 soru. Matematik Test 1, Test 4, Test 5 ve Test 6, onar şekilli akıl yürütme sorusu içerir. Test 1, eski 10 soru yerine orta–zor düzeyde 10 şekilli soruyla yenilenmiştir; toplam test ve soru sayısı değişmemiştir. Test 7 ve Test 8, yedişer şekilli ve üçer şekilsiz orta–zor soru içerir. Yalnız birinci dönemin başlangıç konuları. Tüm yıl/müfredat kapsandığı veya MEB onayı bulunduğu iddia edilmez. İkinci dönem için soru eklenmedi.
+190 özgün soru: Matematikte 10 test, Türkçe, Fen Bilimleri ve İngilizcede üçer test; her test 10 soru. Matematik Test 1, Test 4, Test 5 ve Test 6, onar şekilli akıl yürütme sorusu içerir. Test 1, eski 10 soru yerine orta–zor düzeyde 10 şekilli soruyla yenilenmiştir; toplam test ve soru sayısı değişmemiştir. Test 7, Test 8, Test 9 ve Test 10, yedişer şekilli ve üçer şekilsiz orta–zor soru içerir. Testler mevcut birinci dönem kayıt yapısında tutulur; yeni matematik testleri yılın farklı temalarından seçilmiştir. Tüm yıl/müfredat kapsandığı veya MEB onayı bulunduğu iddia edilmez. İkinci dönem için soru eklenmedi.
 
 ## Kaynaklar (23–24 Ekim 2026)
 
@@ -17,7 +17,7 @@ Matematik sorularında EBOB/EKOK terimleri kullanılmaz. Fen soruları sürat i�
 
 ## Entegrasyon
 
-İlk 6. sınıf eklemeleri `e152ac2` sürümü üzerine hazırlanmıştır. Şekilli Matematik Test 4, `fbeef87`; Test 5, `a3802ba`; Test 6, `b8fd56a` üzerine eklenmiştir. Test 1 yenilemesi `c6f87d1` üzerine hazırlanmıştır; `/6-sinif/matematik/test-1` adresi ve soru kimlikleri korunmuştur. Ana sayfa kartı korunmuştur; kayıtlı testlerden otomatik üretilen 22 adet 6. sınıf sitemap adresi vardır. Mevcut 5. sınıf dosyaları korunmuştur. Ekrandaki test/soru sayıları ve rota doğrulamasındaki toplamlar veri kayıtlarından hesaplanır.
+İlk 6. sınıf eklemeleri `e152ac2` sürümü üzerine hazırlanmıştır. Şekilli Matematik Test 4, `fbeef87`; Test 5, `a3802ba`; Test 6, `b8fd56a` üzerine eklenmiştir. Test 1 yenilemesi `c6f87d1` üzerine hazırlanmıştır; `/6-sinif/matematik/test-1` adresi ve soru kimlikleri korunmuştur. Ana sayfa kartı korunmuştur; kayıtlı testlerden otomatik üretilen 24 adet 6. sınıf sitemap adresi vardır. Mevcut 5. sınıf dosyaları korunmuştur. Ekrandaki test/soru sayıları ve rota doğrulamasındaki toplamlar veri kayıtlarından hesaplanır.
 
 ## Yenilenen Şekilli Matematik Test 1 (24 Ekim 2026)
 
@@ -95,5 +95,15 @@ Production kaynağında `package.json` içinde zaten tanımlı olan `jspdf`, loc
 - Adres: `/6-sinif/matematik/test-9`; konu: **Geometrik Şekiller: Açılar ve Dörtgenler**. `d616348` sürümü üzerine eklenmiştir. İlk 7 soru şekilli, son 3 soru şekilsizdir. Cevap anahtarı: **A, C, B, D, C, D, B, B, C, A**.
 - Paralel doğrularda açı aktarımı, tümler–bütünler ilişkisi, üçgende dış açı, ikizkenar üçgen, yamuk ve paralelkenarda açılar, dikdörtgenin köşegenlerinden ikizkenar üçgen çıkarımı, iki kesenli düzenek ve köşegen özelliklerinden dörtgen sınıflandırma işlenir. MAT.6.3.1–MAT.6.3.4 ile ilişkilidir; tüm kazanımları kapsadığı iddia edilmez. Resmî kaynak: https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/459 . Test numaraları öğretim takvimi veya tema sırası iddiası taşımaz.
 - Yedi pasif SVG `public/grade6/matematik/test-9/soru-01.svg`–`soru-07.svg` altındadır. 360 birim genişlik, en az 26 birim yazı, açı yayları, köşe adları ve Türkçe alternatif metinler kullanılır. Şekillerde ölçeksiz çizim uyarısı vardır; görselden ölçüm istenmez. 238, 320 ve 360 piksel raster çıktıları hazırlanmıştır. Son üç sorunun görsel alanı yoktur.
-- Önceki 170 soru ve 54 SVG korunmuştur. Toplamlar 18 test / 180 soru / 61 görsel / 23 adet 6. sınıf rotasıdır. Ortak arayüz ve bağımlılıklar değiştirilmemiştir; tarayıcı etkileşim testi yapılmamıştır.
+- Önceki 170 soru ve 54 SVG korunmuştur. Toplamlar 19 test / 190 soru / 68 görsel / 23 adet 6. sınıf rotasıdır. Ortak arayüz ve bağımlılıklar değiştirilmemiştir; tarayıcı etkileşim testi yapılmamıştır.
 - Bağımsız soru/anahtar ve son görsel incelemesi başarılıdır. İki kesenli 7. şeklin koordinatları verilen 48° ve 62° açılardan hesaplanmıştır; x açısının geniş, y açısının dar olduğu doğru gösterilir. Önceki tüm dosyalar, üç beklenen veri/belge değişikliği dışında bayt düzeyinde karşılaştırılmıştır.
+
+
+## Matematik Test 10 (24 Ekim 2026)
+
+- Konu: Cebirsel Düşünme: Örüntüler ve Algoritmalar. 7 şekilli ve 3 şekilsiz orta–zor soru. Bilinmeyen nicelikler, ortak kenarlı örüntüler, ücret karşılaştırma, ters işlem ve tekrarlı/koşullu algoritmalar işlenir.
+- Resmî kapsam: MAT.6.2.1–MAT.6.2.3, https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/458 . Tüm yıl kapsamı veya MEB onayı iddia edilmez.
+- Adres /6-sinif/matematik/test-10; kimlikler m6-1-t10-01–m6-1-t10-10. Anahtar B, C, D, A, B, C, D, C, B, A.
+- Yedi SVG 360 birim genişlikte, en az 26 birim yazı; 238 piksel görüntüleme genişliğinde raster kontrolü yapıldı. Önceki 180 soru ve 61 görsel değiştirilmedi.
+- Sayısal test sıralama zaten Number dönüşümü kullanır ve test10 kimliği/rotası mevcut kurala uyar; ortak bileşen ve doğrulayıcı kodu değiştirilmedi. Toplam 19 test, 190 soru, 68 görsel ve 24 altıncı sınıf rotası.
+- Bağımsız cevap denetimi, kesin hesap ve koruma kontrolü, TypeScript, üretim derlemesi ve rota/veri doğrulaması uygulanır. Tarayıcı etkileşimleri test edilmedi.
