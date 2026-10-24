@@ -217,3 +217,11 @@ Toplam: 23 test, 230 soru, 117 SVG, 28 rota. Önceki 220 soru ve 110 SVG korunur
 - 7 görselli + 3 metin sorusu; hava durumu simgeleri, örnek tahminler, sıcaklık karşılaştırmaları, kişisel duygular, koşula uygun öneriler ve iletişim. Soru/seçenekler İngilizce, açıklamalar Türkçe. Duygular kişilerin açık sözlerine/ifadelerine dayanır; hava durumu ile duygu arasında evrensel ilişki kurulmaz. Anahtar: **C, A, D, B, C, A, D, B, C, A**.
 - Yedi pasif SVG: 360 birim genişlik, en az 26 birim yazı; 238 piksel çıktıları okunabilirlik ve kırpılma açısından denetlenir. Önceki 260 soru ve 159 SVG korunur. Yeni toplam: 27 test / 270 soru / 166 SVG / 32 rota.
 - Bağımsız dil/tek-doğru-cevap ve görsel denetimi, veri/rota doğrulaması, TypeScript ve üretim derlemesi uygulanır. Tarayıcı etkileşim testi yapılmadı; production’a otomatik aktarım yapılmaz.
+
+
+## İngilizce Test 5 — At the Fair (24 Ekim 2026)
+
+- Yeni `/6-sinif/ingilizce/test-5` rotası: **At the Fair: Lunapark Etkinlikleri ve Görüşler (Orta)**. Kullanıcının verdiği konu sırası esas alınır; güncel resmî MEB tema adı veya tüm müfredat kapsamı iddiası yoktur.
+- 7 görselli + 3 metin sorusu; lunapark oyuncakları, şu anki etkinlikler, ortak tercihler, giriş kuralı, kişisel görüş karşılaştırması, açılış saatleri ve kibar ret. İngilizce soru/seçenekler, Türkçe açıklamalar. Duygular kişilerin açık ifadelerine dayanır. Anahtar: **B, D, A, C, B, D, C, A, D, B**.
+- Yedi pasif SVG: 360 birim genişlik, en az 26 birim yazı; 238 piksel çıktıları okunabilirlik ve kırpılma açısından denetlenir. Önceki 270 soru ve 166 SVG korunur. Yeni toplam: 28 test / 280 soru / 173 SVG / 33 rota.
+- Bağımsız dil/tek-doğru-cevap ve görsel denetimi, veri/rota doğrulaması, TypeScript ve üretim derlemesi uygulanır. Tarayıcı etkileşim testi yapılmadı; production’a otomatik aktarım yapılmaz.

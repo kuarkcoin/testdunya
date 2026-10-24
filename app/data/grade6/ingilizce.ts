@@ -685,6 +685,176 @@ export const ingilizceData: SubjectData = {
             "correct": 0,
             "explanation": "Hava durumunu anlatırken sıfat olan windy kullanılır. Kişinin hissettiği heyecan için excited uygundur; exciting ise heyecan veren şeyi niteler. Rüzgârda hareket eden ağaçlar da windy ifadesini destekler."
       }
+],
+    "test5": [
+      {
+            "id": "e6-1-t5-01",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at the rides. Ece says, “I like going round slowly and looking at the town from above. I do not want a fast ride on a track.” Which ride does she describe?",
+            "options": [
+                  "Bumper cars.",
+                  "The Ferris wheel.",
+                  "The roller coaster.",
+                  "The carousel."
+            ],
+            "correct": 1,
+            "explanation": "Ece yukarıdan şehri seyrederek yavaşça dönmek istiyor; ray üzerinde hızlı gitmek istemiyor. Bu tarife görseldeki dönme dolap (Ferris wheel) uyar.",
+            "imageWidth": 360,
+            "imageHeight": 500,
+            "imageUrl": "/grade6/ingilizce/test-5/soru-01.svg",
+            "imageAlt": "Üstte kabinli dönme dolap; altta kıvrımlı ray üzerinde hız treni, İngilizce adlarıyla."
+      },
+      {
+            "id": "e6-1-t5-02",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at the scene. Which sentence describes what is happening now?",
+            "options": [
+                  "Dad is driving a bumper car with Ben.",
+                  "Mia is waiting outside the ride.",
+                  "Ben and Mia are riding a Ferris wheel.",
+                  "Ben and Mia are driving bumper cars."
+            ],
+            "correct": 3,
+            "explanation": "Ben ve Mia çarpışan arabaların içinde, babaları ise alanın dışında gösteriliyor. Şu an yapılan eylemi D seçeneğindeki are driving bumper cars anlatır.",
+            "imageWidth": 360,
+            "imageHeight": 450,
+            "imageUrl": "/grade6/ingilizce/test-5/soru-02.svg",
+            "imageAlt": "Ben ve Mia iki ayrı çarpışan arabada; babaları oyun alanının dışında."
+      },
+      {
+            "id": "e6-1-t5-03",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Amy and Leo want to choose a ride they both like. Look at their choices. Which suggestion is suitable?",
+            "options": [
+                  "Let’s ride the Ferris wheel together.",
+                  "Let’s ride the carousel together.",
+                  "Let’s choose a ride only Amy likes.",
+                  "Let’s avoid the Ferris wheel."
+            ],
+            "correct": 0,
+            "explanation": "İkisi de dönme dolap için YES diyor; atlıkarıncayı ise yalnız Amy seviyor. Ortak tercihleri dönme dolap olduğundan A önerisi uygundur.",
+            "imageWidth": 360,
+            "imageHeight": 600,
+            "imageUrl": "/grade6/ingilizce/test-5/soru-03.svg",
+            "imageAlt": "Dönme dolap çizimi altında Amy YES, Leo YES; atlıkarınca çizimi altında Amy YES, Leo NO."
+      },
+      {
+            "id": "e6-1-t5-04",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Read the entrance rule and the children’s heights. Which sentence is correct?",
+            "options": [
+                  "Both children can ride because they are taller than 140 cm.",
+                  "Tom can ride, but Lily cannot.",
+                  "Lily can ride, but Tom is too short.",
+                  "Neither child is tall enough to ride."
+            ],
+            "correct": 2,
+            "explanation": "Kural en az 140 cm boy gerektiriyor. Lily 145 cm olduğu için binebilir; Tom 135 cm olduğu için bu oyuncağa binmek için yeterince uzun değildir.",
+            "imageWidth": 360,
+            "imageHeight": 475,
+            "imageUrl": "/grade6/ingilizce/test-5/soru-04.svg",
+            "imageAlt": "Hız treni girişinde en az 140 cm kuralı; Tom 135 cm, Lily 145 cm."
+      },
+      {
+            "id": "e6-1-t5-05",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Read Zoe’s opinions. Which comparison agrees with her?",
+            "options": [
+                  "The carousel is more exciting than the roller coaster.",
+                  "The roller coaster is more exciting than the carousel.",
+                  "Both rides are boring.",
+                  "The roller coaster is more boring than the carousel."
+            ],
+            "correct": 1,
+            "explanation": "Zoe hız trenini çok heyecan verici, atlıkarıncayı sıkıcı buluyor. Onun görüşüne göre hız treni atlıkarıncadan daha heyecan vericidir; bu görüş herkese genellenmez.",
+            "imageWidth": 360,
+            "imageHeight": 515,
+            "imageUrl": "/grade6/ingilizce/test-5/soru-05.svg",
+            "imageAlt": "Zoe hız treni için Very exciting, atlıkarınca için The carousel is boring diyor."
+      },
+      {
+            "id": "e6-1-t5-06",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Both rides close at 18:00. It is 10:30 now. Read the opening times. Which plan is possible?",
+            "options": [
+                  "Ride the bumper cars now and the Ferris wheel at 09:00.",
+                  "Ride both rides now.",
+                  "Ride the Ferris wheel at 09:30 and the bumper cars at 10:30.",
+                  "Ride the Ferris wheel now and the bumper cars at 11:00."
+            ],
+            "correct": 3,
+            "explanation": "Saat 10.30’da dönme dolap açıktır çünkü 10.00’da açılır. Çarpışan arabalar 11.00’de açıldığı için o saati beklemek gerekir. İki oyuncağın da 18.00’e kadar açık kalacağı soruda belirtilmiştir.",
+            "imageWidth": 360,
+            "imageHeight": 530,
+            "imageUrl": "/grade6/ingilizce/test-5/soru-06.svg",
+            "imageAlt": "Dönme dolap saat 10.00’da, çarpışan arabalar saat 11.00’de açılıyor."
+      },
+      {
+            "id": "e6-1-t5-07",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Nina’s friend asks, “Would you like to ride the Ferris wheel?” Which reply matches Nina’s words?",
+            "options": [
+                  "Yes, please. I love being high up.",
+                  "Of course. I think it is relaxing.",
+                  "No, thanks. I feel scared up there.",
+                  "Yes, let’s go on it again."
+            ],
+            "correct": 2,
+            "explanation": "Nina yukarıda korktuğunu ve dönme dolaba binmek istemediğini açıkça söylüyor. No, thanks ile başlayan C seçeneği hem kibar bir ret hem de kendi duygusuna uygun bir gerekçe içerir.",
+            "imageWidth": 360,
+            "imageHeight": 500,
+            "imageUrl": "/grade6/ingilizce/test-5/soru-07.svg",
+            "imageAlt": "Nina dönme dolabın yanında yukarıda korktuğunu ve binmek istemediğini söylüyor."
+      },
+      {
+            "id": "e6-1-t5-08",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Complete the dialogue.\nAli: What do you think of the ghost train?\nBeth: ____\nAli: Really? I disagree. I think it is fun.",
+            "options": [
+                  "I think it is boring.",
+                  "It is next to the ticket office.",
+                  "It opens at ten o’clock.",
+                  "I have two tickets."
+            ],
+            "correct": 0,
+            "explanation": "Ali bir görüş soruyor ve ardından katılmadığını söyleyip eğlenceli bulduğunu belirtiyor. Beth’in sıkıcı bulduğunu söylemesi bu görüş ayrılığına uyar; diğer seçenekler görüş bildirmez."
+      },
+      {
+            "id": "e6-1-t5-09",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Read the text.\n“Sam loves bumper cars but dislikes the ghost train. His sister Eva enjoys both rides. They want to go on one ride together, and neither wants to choose a ride they dislike.”\n\nWhich sentence is correct?",
+            "options": [
+                  "They should choose the ghost train.",
+                  "Eva dislikes bumper cars.",
+                  "Sam enjoys both rides.",
+                  "Bumper cars are suitable for both of them."
+            ],
+            "correct": 3,
+            "explanation": "Sam çarpışan arabaları seviyor, korku trenini sevmiyor. Eva ikisini de seviyor. İkisinin de sevdiği seçenek çarpışan arabalardır."
+      },
+      {
+            "id": "e6-1-t5-10",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Choose the correct words.\n“I think the roller coaster is ____ than the carousel. I feel ____ when I ride it because I enjoy going fast.”",
+            "options": [
+                  "exciting / bored",
+                  "more exciting / excited",
+                  "more excited / exciting",
+                  "excited / boring"
+            ],
+            "correct": 1,
+            "explanation": "Than ile karşılaştırma için more exciting gerekir. Kişinin hissettiği heyecan excited ile anlatılır; exciting ise heyecan veren oyuncağı niteler."
+      }
 ]
   },
   "term2": {}
