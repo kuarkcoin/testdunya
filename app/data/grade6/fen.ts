@@ -1,12 +1,13 @@
 import { SubjectData } from "./types";
 
-// 6. sınıf başlangıç paketi: İlk iki ünite; üreme, büyüme, gelişme ve denetleyici sistemler, ışığın yansıması, aynalar, soğurulma, renkler, genleşme, hâl değişim noktaları ve yoğunluktan seçmeler.
-// FB.6.1.1–FB.6.1.4, FB.6.2.1–FB.6.2.3, FB.6.3.1–FB.6.3.4 ve FB.6.3.6–FB.6.3.8 ve FB.6.4.1–FB.6.4.7 ve FB.6.5.1–FB.6.5.5; tüm yılı kapsamaz.
+// 6. sınıf başlangıç paketi: İlk iki ünite; üreme, büyüme, gelişme ve denetleyici sistemler, ışığın yansıması, aynalar, soğurulma, renkler, genleşme, hâl değişim noktaları ve yoğunluk ile elektrik iletimi ve dirençten seçmeler.
+// FB.6.1.1–FB.6.1.4, FB.6.2.1–FB.6.2.3, FB.6.3.1–FB.6.3.4 ve FB.6.3.6–FB.6.3.8 ve FB.6.4.1–FB.6.4.7 ve FB.6.5.1–FB.6.5.5 ve FB.6.6.1–FB.6.6.3; tüm yılı kapsamaz.
 // Kaynaklar: https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/409
 // https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/410
 // https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/411
 // https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/412
 // https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/413
+// https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/414
 // Kesin uydu sayıları, sürat-hız hesabı/grafikleri ve birim dönüşümleri kapsam dışıdır.
 export const fenData: SubjectData = {
   term1: {
@@ -1544,6 +1545,177 @@ export const fenData: SubjectData = {
             ],
             "correct": 1,
             "explanation": "Aynı saf sıvının aynı sıcaklıktaki yoğunluğu miktarla değişmez: 60 ÷ 50 = 1,2 g/cm³. Hacim üç katına çıktığından kütle de üç katına çıkar: 180 g."
+      }
+],
+
+    test10: [
+      {
+            "id": "f6-1-t10-01",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Pille çalışan sağlam test devresinin X aralığına maddeler sırayla yerleştiriliyor. Temaslar uygun, diğer koşullar aynı. Bakır tel takılınca ampul yanıyor; kuru plastik takılınca yanmıyor.\n\nBu gözlemlere göre hangi sonuç ve kontrol doğrudur?",
+            "options": [
+                  "Bakır yalıtkandır; plastik denemesinde pil çıkarılmalıdır.",
+                  "Plastik de kesin iletkendir; ampulün yanmaması önemli değildir.",
+                  "Bakır bu devrede iletkendir; bakırla yanması devrenin çalıştığını da gösterir.",
+                  "Ampul yanmadığında bunun tek olası nedeni her zaman maddenin yalıtkanlığıdır."
+            ],
+            "correct": 2,
+            "explanation": "Bakır tel devreyi iletken bir yolla tamamlar. Bilinen iletkenle ampulün yanması pil, ampul ve bağlantıların çalıştığına ilişkin kontrol sağlar. Temas ve devre kontrol edilmeden her yanmama sonucuna kesin yalıtkanlık denemez.",
+            "imageWidth": 360,
+            "imageHeight": 380,
+            "imageUrl": "/grade6/fen/test-10/soru-01.svg",
+            "imageAlt": "Kapalı çevrimli pil ve ampul devresinde üst kolda X test aralığı. Bakır ve kuru plastik sırayla bu aralığa bağlanır."
+      },
+      {
+            "id": "f6-1-t10-02",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Tablodaki teller, aynı pil ve ampulün bulunduğu devrede sırayla deneniyor. Sıcaklık ve bağlantılar aynı tutuluyor.\n\nTel uzunluğunun parlaklığa etkisini araştırmak için hangi iki tel seçilmeli ve hangi ampul daha parlak yanmalıdır?",
+            "options": [
+                  "I ve II; I ile kurulan devredeki.",
+                  "I ve III; III ile kurulan devredeki.",
+                  "II ve IV; II ile kurulan devredeki.",
+                  "I ve II; II ile kurulan devredeki."
+            ],
+            "correct": 0,
+            "explanation": "I ve II yalnız uzunluk bakımından farklıdır. Aynı cins ve kesitli kısa telin direnci daha azdır; diğer koşullar aynıyken I ile ampul daha parlak yanar.",
+            "imageWidth": 360,
+            "imageHeight": 430,
+            "imageUrl": "/grade6/fen/test-10/soru-02.svg",
+            "imageAlt": "Tablo: I bakır 20 cm ince; II bakır 40 cm ince; III bakır 20 cm kalın; IV demir 40 cm ince."
+      },
+      {
+            "id": "f6-1-t10-03",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Aynı maddeden yapılmış K, L ve M telleri aynı sıcaklıkta, aynı pil ve ampulle ayrı ayrı deneniyor. Tellerin özellikleri görseldedir. Diğer bağlantılar değişmiyor.\n\nAmpul parlaklığının büyükten küçüğe sırası hangisidir?",
+            "options": [
+                  "K > M > L",
+                  "L > K > M",
+                  "L > M > K",
+                  "M > L > K"
+            ],
+            "correct": 3,
+            "explanation": "L, K ile aynı uzunlukta fakat daha kalındır; bu nedenle daha az dirençlidir. M, L ile aynı kalınlıkta fakat daha kısadır ve direnci daha azdır. Parlaklık sırası M, L, K olmalıdır.",
+            "imageWidth": 360,
+            "imageHeight": 370,
+            "imageUrl": "/grade6/fen/test-10/soru-03.svg",
+            "imageAlt": "K uzun ve ince; L aynı uzunlukta kalın; M L ile aynı kalınlıkta fakat daha kısa tel. Tüm teller aynı maddeden."
+      },
+      {
+            "id": "f6-1-t10-04",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Şemadaki reostanın yalnız A ucu ve sürgüsü devreye bağlıdır; B ucu bağlı değildir. Sürgü P’den Q’ya getiriliyor. Pil, ampul ve diğer koşullar değişmiyor.\n\nDevreye katılan tel uzunluğu ve ampul parlaklığı nasıl değişir?",
+            "options": [
+                  "Tel uzar; ampul daha parlak yanar.",
+                  "Tel kısalır; ampul daha parlak yanar.",
+                  "Tel kısalır; ampul daha sönük yanar.",
+                  "Tel değişmez; parlaklık değişmez."
+            ],
+            "correct": 1,
+            "explanation": "Akım yolu A ile sürgü arasındaki bölümü kullanır. Q, A’ya P’den daha yakındır; devreye katılan tel kısalır ve direnç azalır. Ampul daha parlak yanar.",
+            "imageWidth": 360,
+            "imageHeight": 430,
+            "imageUrl": "/grade6/fen/test-10/soru-04.svg",
+            "imageAlt": "Reosta teli A solda B sağda. Q A’ya yakın, P daha uzakta. A ile sürgü pil ve ampullü devreye bağlı; B bağlantısız."
+      },
+      {
+            "id": "f6-1-t10-05",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Eşit uzunluk ve kesitteki K ve L telleri aynı sıcaklıkta, aynı pil ve ampulle deneniyor. Tek fark telin cinsidir. K ile ampul daha parlak, L ile daha sönük yanıyor.\n\nHangi sonuç deneyle desteklenir?",
+            "options": [
+                  "K’nin direnci L’den küçüktür; telin cinsi parlaklığı etkileyebilir.",
+                  "K’nin direnci daha büyüktür; parlaklık direnç arttıkça artar.",
+                  "L kesinlikle yalıtkandır; çünkü ampul daha sönüktür.",
+                  "K ve L’nin dirençleri eşittir; pil aynı olduğu için fark olamaz."
+            ],
+            "correct": 0,
+            "explanation": "Aynı koşullarda daha parlak yanan devrede telin direnci daha küçüktür. L ile ampulün yanması L’nin de ilettiğini gösterir; sönük yanmak yalıtkan olmakla aynı değildir.",
+            "imageWidth": 360,
+            "imageHeight": 350,
+            "imageUrl": "/grade6/fen/test-10/soru-05.svg",
+            "imageAlt": "Aynı pil ve ampul kullanılıyor. K teliyle parlak, L teliyle sönük ışık. Tel uzunluk ve kesitleri eşit; cinsleri farklı."
+      },
+      {
+            "id": "f6-1-t10-06",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Görseldeki kabloda K metal iç kısım, L plastik dış kaplamadır. Başka bir kabloda aynı metalden daha uzun fakat aynı kesitte bir K kullanılıyor; plastik kaplamanın yapısı değişmiyor. Sıcaklık aynıdır.\n\nYeni kablo için hangi iki yorum birlikte doğrudur?",
+            "options": [
+                  "Metal daha uzun olduğu için direnci azalır; plastik iletken olur.",
+                  "Metalin direnci değişmez; yalıtımı metal sağlar.",
+                  "Metalin direnci artar; plastik kaplamanın yalıtım görevi sürer.",
+                  "Metalin direnci artar; bu nedenle plastik mutlaka iletken olur."
+            ],
+            "correct": 2,
+            "explanation": "Aynı cins ve kesitte metal tel uzadığında direnci artar. Dıştaki plastik yalıtım amacıyla kullanılır; metalin uzaması plastiği iletken yapmaz. Gerçek elektrik tesisatında hasarlı kaplamaya dokunulmamalıdır.",
+            "imageWidth": 360,
+            "imageHeight": 350,
+            "imageUrl": "/grade6/fen/test-10/soru-06.svg",
+            "imageAlt": "Kablo kesiti: ortadaki metal bölüm K; onu saran plastik kaplama L."
+      },
+      {
+            "id": "f6-1-t10-07",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Dört tel aynı sıcaklıkta, aynı pil ve ampulle sırayla deneniyor. Şekilde telin uzunluğu ve kalınlığı değiştiriliyor; hepsi aynı maddeden.\n\nK telinin yerine hangisi takılırsa ampulün daha parlak yanacağı kesin olarak söylenebilir?",
+            "options": [
+                  "L; daha uzun ve daha incedir.",
+                  "M; daha uzun ve daha kalındır.",
+                  "L ve M; ikisi de uzundur.",
+                  "N; daha kısa ve daha kalındır."
+            ],
+            "correct": 3,
+            "explanation": "N’de hem kısalma hem kalınlaşma direnci azaltma yönünde etki eder. L’de iki değişim de direnci artırır. M’de uzama ve kalınlaşma zıt etkili olduğundan yalnız nitel bilgilerle kesin karşılaştırma yapılamaz.",
+            "imageWidth": 360,
+            "imageHeight": 420,
+            "imageUrl": "/grade6/fen/test-10/soru-07.svg",
+            "imageAlt": "K orta uzunluk ve kalınlıkta; L daha uzun ince; M daha uzun kalın; N daha kısa kalın. Şema nitel karşılaştırmadır."
+      },
+      {
+            "id": "f6-1-t10-08",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Bir öğrenci bakır telin yerine demir tel takınca ampulün sönükleştiğini gözlüyor. Ancak demir tel hem daha uzun hem daha incedir.\n\nFarkı yalnız telin cinsine bağlamak için deney nasıl düzenlenmelidir?",
+            "options": [
+                  "Yalnız uzunluk eşitlenmeli; kesitlerin farklı olması önemli değildir.",
+                  "Tellerin uzunluğu ve kesiti eşitlenmeli; diğer devre koşulları ve sıcaklık aynı tutulmalıdır.",
+                  "Yalnız kesit eşitlenmeli; farklı tel uzunlukları korunmalıdır.",
+                  "Bakır telin kullanıldığı devreye daha fazla pil eklenerek parlaklıklar eşitlenmelidir."
+            ],
+            "correct": 1,
+            "explanation": "İlk deneyde cins, uzunluk ve kesit birlikte değişmiştir. Cinsin etkisini ayırt etmek için diğer özellikler sabit tutulmalıdır. Parlaklık farkı tek değişkene bağlanabilmelidir."
+      },
+      {
+            "id": "f6-1-t10-09",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Pilli bir devrede ampul yanmıyor. Denenen maddeyi çıkarmadan önce öğrenciler pilin bitmiş olduğunu fark ediyor.\n\nBu denemeden maddenin iletkenliği hakkında hangi değerlendirme yapılmalıdır?",
+            "options": [
+                  "Madde kesin yalıtkandır; pilin durumu sonucu etkilemez.",
+                  "Madde kesin iletkendir; bitmiş pil bunu kanıtlar.",
+                  "Madde kesin sınıflandırılamaz; çalışan devre kontrol edildikten sonra yeniden denenmelidir.",
+                  "Ampul yanmıyorsa bütün maddeler yalıtkan kabul edilmelidir."
+            ],
+            "correct": 2,
+            "explanation": "Çalışmayan pil, iletken bir madde kullanılsa bile ampulün yanmasını engelleyebilir. Bu nedenle önce sağlam devre bilinen iletkenle kontrol edilir, sonra örnek aynı koşullarda denenir."
+      },
+      {
+            "id": "f6-1-t10-10",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Pilli bir devrede reostanın devreye katılan tel uzunluğu önce artırılıyor, sonra başlangıçtaki değerine getiriliyor. Pil ve ampul değişmiyor, sıcaklık aynı tutuluyor; temaslar sağlamdır.\n\nAmpulün parlaklığı ve reostanın direnci için hangi yorum doğrudur?",
+            "options": [
+                  "Önce direnç artıp parlaklık azalır; başlangıca dönülünce ilk parlaklık yeniden elde edilir.",
+                  "Önce direnç azalıp parlaklık artar; başlangıca dönülünce ampul yanmaz.",
+                  "Tel uzayınca iletken yalıtkana dönüşür; geri dönüş bunu değiştirmez.",
+                  "Direnç artar ama devre tamamlandığı sürece parlaklık değişmez."
+            ],
+            "correct": 0,
+            "explanation": "Devreye katılan tel uzayınca direnç artar ve ampul sönükleşir. Tel uzunluğu ve diğer koşullar ilk değerlerine döndüğünde direnç ve parlaklık da ilk durumuna döner. Reosta kullanımı, telin yalıtkana dönüşmesi değildir."
       }
 ],
 
