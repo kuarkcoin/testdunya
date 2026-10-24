@@ -1195,6 +1195,176 @@ export const ingilizceData: SubjectData = {
             "correct": 1,
             "explanation": "Leo Because ile başlayıp heyecan verici bulmasını gerekçe gösteriyor. Bu yanıta neden soran Why do you like the roller coaster sorusu uyar; yer, saat ve sıklık soruları uymaz."
       }
+],
+    "test8": [
+      {
+            "id": "e6-1-t8-01",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Both clocks show afternoon times. Which sentence describes the homework session correctly?",
+            "options": [
+                  "It starts at a quarter to five and finishes at a quarter past six.",
+                  "It starts at half past five and finishes at six o’clock.",
+                  "It starts at a quarter past five and finishes at a quarter to six.",
+                  "It starts at a quarter past six and finishes at a quarter to seven."
+            ],
+            "correct": 2,
+            "explanation": "İlk saatte yelkovan 3’ü, akrep 5’i biraz geçmişi gösterir: 17.15, a quarter past five. İkinci saatte yelkovan 9’dadır ve akrep 6’ya yaklaşır: 17.45, a quarter to six.",
+            "imageWidth": 360,
+            "imageHeight": 540,
+            "imageUrl": "/grade6/ingilizce/test-8/soru-01.svg",
+            "imageAlt": "Ödevin başlangıç saati 17.15, bitiş saati 17.45 olan iki analog saat."
+      },
+      {
+            "id": "e6-1-t8-02",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at the menu. Ben wants one drink and two different foods. Which order matches his plan?",
+            "options": [
+                  "Milk, cheese and olives.",
+                  "Milk, tea and cheese.",
+                  "Tea and olives only.",
+                  "Cheese and olives, but no drink."
+            ],
+            "correct": 0,
+            "explanation": "Süt bir içecektir; peynir ve zeytin iki farklı yiyecektir. B seçeneğinde iki içecek, C’de yalnızca bir yiyecek vardır. D’de ise içecek yoktur.",
+            "imageWidth": 360,
+            "imageHeight": 524,
+            "imageUrl": "/grade6/ingilizce/test-8/soru-02.svg",
+            "imageAlt": "Kahvaltı menüsünde süt kutusu, peynir dilimi, zeytin tabağı ve çay fincanı; İngilizce adlarıyla gösteriliyor."
+      },
+      {
+            "id": "e6-1-t8-03",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at the buildings on the same street. Which comparison is correct?",
+            "options": [
+                  "The library is taller than the hotel.",
+                  "The museum is shorter than the library.",
+                  "The hotel is shorter than the museum.",
+                  "The museum is taller than the library but shorter than the hotel."
+            ],
+            "correct": 3,
+            "explanation": "Binalar aynı zemin üzerindedir. Kütüphane iki, müze üç, otel beş kat yüksekliğinde çizilmiştir. Müze kütüphaneden yüksek, otelden alçaktır.",
+            "imageWidth": 360,
+            "imageHeight": 516,
+            "imageUrl": "/grade6/ingilizce/test-8/soru-03.svg",
+            "imageAlt": "Aynı zeminde solda iki katlı kütüphane, ortada beş katlı otel, sağda üç katlı müze."
+      },
+      {
+            "id": "e6-1-t8-04",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at the weather report. Which question CANNOT be answered using only the report?",
+            "options": [
+                  "Which day is colder?",
+                  "How does Zoe feel about the snow?",
+                  "Which day is sunny?",
+                  "What is the weather like on Monday?"
+            ],
+            "correct": 1,
+            "explanation": "Rapor pazartesinin daha soğuk ve karlı, salının ise güneşli olduğunu gösterir. Ancak Zoe’nin bu hava hakkındaki duygularıyla ilgili hiçbir bilgi verilmez.",
+            "imageWidth": 360,
+            "imageHeight": 520,
+            "imageUrl": "/grade6/ingilizce/test-8/soru-04.svg",
+            "imageAlt": "Hava raporu: pazartesi kar simgesi ve −2 °C; salı güneş simgesi ve 12 °C."
+      },
+      {
+            "id": "e6-1-t8-05",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Everyone shown is waiting for a ride. Max chooses the queue with fewer people than BOTH other queues. Which ride does he choose?",
+            "options": [
+                  "The bumper cars, because only two people are waiting.",
+                  "The Ferris wheel, because it has fewer people than the carousel.",
+                  "The carousel, because its queue has only two people.",
+                  "The bumper cars, because their queue has fewer people than the Ferris wheel."
+            ],
+            "correct": 2,
+            "explanation": "Çarpışan araba sırasında altı, atlıkarıncada iki, dönme dolapta dört kişi vardır. Her iki diğer sıradan da daha az kişili olan sıra, atlıkarıncanın iki kişilik sırasıdır.",
+            "imageWidth": 360,
+            "imageHeight": 560,
+            "imageUrl": "/grade6/ingilizce/test-8/soru-05.svg",
+            "imageAlt": "Üç bekleme alanı: çarpışan arabalar için altı, atlıkarınca için iki, dönme dolap için dört kişi."
+      },
+      {
+            "id": "e6-1-t8-06",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at the bakery scene. Which question can the baker answer with “Yes, I am”?",
+            "options": [
+                  "Are you watering a flower?",
+                  "Are you reading a book?",
+                  "Are you drinking tea?",
+                  "Are you carrying bread?"
+            ],
+            "correct": 3,
+            "explanation": "Fırıncı ekmekli tepsiyi taşıyor. Bu nedenle Are you carrying bread sorusuna Yes, I am diye yanıt verebilir. Çiçeği sulayan kişi ise alttaki çiçekçi dükkânındadır.",
+            "imageWidth": 360,
+            "imageHeight": 596,
+            "imageUrl": "/grade6/ingilizce/test-8/soru-06.svg",
+            "imageAlt": "Fırında bir kişi ekmekli tepsiyi taşıyor; çiçekçi dükkânında başka bir kişi saksıdaki çiçeği suluyor."
+      },
+      {
+            "id": "e6-1-t8-07",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "This is Nina’s diary for one school week. Which sentence matches the pictures?",
+            "options": [
+                  "She cycles to school on three days and walks on two days.",
+                  "She walks to school every day.",
+                  "She cycles on Tuesday and Thursday only.",
+                  "She walks on Monday, Wednesday and Friday."
+            ],
+            "correct": 0,
+            "explanation": "Pazartesi, çarşamba ve cuma satırlarında bisiklet; salı ve perşembede yürüyen kişi simgesi vardır. Nina üç gün bisikletle, iki gün yürüyerek okula gitmiştir.",
+            "imageWidth": 360,
+            "imageHeight": 632,
+            "imageUrl": "/grade6/ingilizce/test-8/soru-07.svg",
+            "imageAlt": "Nina’nın okul ulaşım günlüğü: pazartesi bisiklet, salı yürüme, çarşamba bisiklet, perşembe yürüme, cuma bisiklet."
+      },
+      {
+            "id": "e6-1-t8-08",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Read the dialogue.\nEce: Would you like to come to the fair after school?\nTom: I’d love to, but I have a piano lesson then. Maybe on Saturday?\n\nWhat does Tom do in his reply?",
+            "options": [
+                  "He accepts the invitation for today.",
+                  "He refuses for today, gives a reason and suggests another day.",
+                  "He says he never wants to visit the fair.",
+                  "He asks Ece to give him a piano lesson."
+            ],
+            "correct": 1,
+            "explanation": "Tom o saatte piyano dersi olduğu için bugünkü daveti kabul edemiyor. Nedenini açıklayıp cumartesiyi öneriyor; lunaparka hiçbir zaman gitmek istemediğini söylemiyor."
+      },
+      {
+            "id": "e6-1-t8-09",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Read the message.\n“Hi, Sam! It is raining heavily here, so we cannot have our picnic outside. I feel sad about that. My sister is making sandwiches, and we are going to eat them at home instead.”\n\nWhich statement is NOT correct?",
+            "options": [
+                  "They are changing their picnic plan.",
+                  "The rain stops them from eating outside.",
+                  "The sister is preparing food now.",
+                  "The writer is happy about the rainy weather."
+            ],
+            "correct": 3,
+            "explanation": "Yazar yağmur yüzünden dışarıda piknik yapamadığı için üzgün olduğunu açıkça söylüyor. Bu yüzden yağmurlu hava hakkında mutlu olduğunu söyleyen D seçeneği yanlıştır. Diğer üç ifade metinle uyumludur."
+      },
+      {
+            "id": "e6-1-t8-10",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Read the conversation.\nTina: Do you help at your uncle’s café every day?\nAli: No, only on Saturdays. I serve breakfast there from nine to eleven. On weekdays, I am at school.\n\nWhich question is answered in this conversation?",
+            "options": [
+                  "How does Ali travel to the café?",
+                  "What is Ali’s favourite breakfast food?",
+                  "How often does Ali help at the café?",
+                  "How many customers visit the café?"
+            ],
+            "correct": 2,
+            "explanation": "Ali yalnızca cumartesileri yardım ettiğini söyleyerek sıklık sorusunu yanıtlar. Ulaşım şekli, en sevdiği kahvaltılık ve müşteri sayısı verilmemiştir."
+      }
 ]
   },
   "term2": {}
