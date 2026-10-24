@@ -1365,6 +1365,176 @@ export const ingilizceData: SubjectData = {
             "correct": 2,
             "explanation": "Ali yalnızca cumartesileri yardım ettiğini söyleyerek sıklık sorusunu yanıtlar. Ulaşım şekli, en sevdiği kahvaltılık ve müşteri sayısı verilmemiştir."
       }
+],
+    "test9": [
+      {
+            "id": "e6-1-t9-01",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Leo waters the plants only on the days with a plant picture. Which sentence describes his plan for these five days?",
+            "options": [
+                  "He waters them every day.",
+                  "He waters them twice, on Monday and Thursday.",
+                  "He waters them three times, on Tuesday, Wednesday and Friday.",
+                  "He never waters them on weekdays."
+            ],
+            "correct": 1,
+            "explanation": "Bitki simgesi yalnızca pazartesi ve perşembede vardır. Bu beş günlük planda Leo bitkileri iki kez sular. Çizelge hafta sonuyla ilgili bilgi vermez.",
+            "imageWidth": 360,
+            "imageHeight": 602,
+            "imageUrl": "/grade6/ingilizce/test-9/soru-01.svg",
+            "imageAlt": "Leo’nun pazartesi–cuma çizelgesinde yalnızca pazartesi ve perşembe satırlarında bitki simgesi; diğer satırlarda çizgi vardır."
+      },
+      {
+            "id": "e6-1-t9-02",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Compare the order with the tray. Which request corrects the mistake?",
+            "options": [
+                  "Can I have cheese instead of bread?",
+                  "Can I have jam instead of eggs?",
+                  "Can I have milk instead of water?",
+                  "Can I have water instead of milk?"
+            ],
+            "correct": 3,
+            "explanation": "Siparişte yumurta, ekmek ve su istenir; tepside yumurta, ekmek ve süt vardır. Yanlış gelen süt yerine su istemek siparişi düzeltir.",
+            "imageWidth": 360,
+            "imageHeight": 546,
+            "imageUrl": "/grade6/ingilizce/test-9/soru-02.svg",
+            "imageAlt": "Sipariş: yumurta, ekmek ve su. Tepside yumurta, ekmek dilimi ve süt kutusu çizilmiş."
+      },
+      {
+            "id": "e6-1-t9-03",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "All four buildings are on the same side of the street. I am in the building between the bank and the cinema. Where am I?",
+            "options": [
+                  "At the bookshop.",
+                  "At the museum.",
+                  "At the bank.",
+                  "At the cinema."
+            ],
+            "correct": 0,
+            "explanation": "Aynı sokak tarafındaki sıra banka, kitapçı, sinema ve müzedir. Banka ile sinema arasında kitapçı bulunur.",
+            "imageWidth": 360,
+            "imageHeight": 628,
+            "imageUrl": "/grade6/ingilizce/test-9/soru-03.svg",
+            "imageAlt": "Sokağın aynı tarafında yukarıdan aşağıya banka, kitapçı, sinema ve müze binaları."
+      },
+      {
+            "id": "e6-1-t9-04",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Which message agrees with BOTH weather reports?",
+            "options": [
+                  "It is snowy in London and sunny in Rome.",
+                  "London is hotter than Rome today.",
+                  "It is raining in London, and Rome is hotter than London.",
+                  "It is raining in both cities at noon."
+            ],
+            "correct": 2,
+            "explanation": "Londra’da yağmur simgesi ve 18 °C, Roma’da güneş simgesi ve 30 °C vardır. Londra yağmurludur; Roma, Londra’dan daha sıcaktır.",
+            "imageWidth": 360,
+            "imageHeight": 552,
+            "imageUrl": "/grade6/ingilizce/test-9/soru-04.svg",
+            "imageAlt": "Öğle hava raporu: Londra yağmurlu 18 °C, Roma güneşli 30 °C."
+      },
+      {
+            "id": "e6-1-t9-05",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at Oscar and Mia. Which sentence describes what they are doing now?",
+            "options": [
+                  "Oscar is eating an ice cream, and Mia is taking a photo.",
+                  "Oscar and Mia are both eating ice creams.",
+                  "Oscar is taking a photo, and Mia is eating an ice cream.",
+                  "Oscar and Mia are both reading books."
+            ],
+            "correct": 0,
+            "explanation": "Oscar dondurmayı ağzına yaklaştırır; Mia fotoğraf makinesini yüzünün önünde tutar. Şu anda yapılan bu eylemler is eating ve is taking ile anlatılır.",
+            "imageWidth": 360,
+            "imageHeight": 589,
+            "imageUrl": "/grade6/ingilizce/test-9/soru-05.svg",
+            "imageAlt": "Üstte Oscar elindeki dondurmayı ağzına yaklaştırıyor; altta Mia yüzüne tuttuğu fotoğraf makinesiyle fotoğraf çekiyor."
+      },
+      {
+            "id": "e6-1-t9-06",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Amy attends the clubs in the picture. Which sentence gives the correct times for music and art?",
+            "options": [
+                  "Music starts at ten to ten, and art starts at twenty past eleven.",
+                  "Music starts at ten past eleven, and art starts at twenty to two.",
+                  "Music starts at twenty past ten, and art starts at twenty to twelve.",
+                  "Music starts at ten past ten, and art starts at twenty to twelve."
+            ],
+            "correct": 3,
+            "explanation": "10.10, ten past ten; 11.40 ise on ikiye yirmi kala, twenty to twelve olarak söylenir. Yüzme saati bu soruda sorulmamıştır.",
+            "imageWidth": 360,
+            "imageHeight": 585,
+            "imageUrl": "/grade6/ingilizce/test-9/soru-06.svg",
+            "imageAlt": "Amy’nin cumartesi kulüpleri: müzik 10.10, resim 11.40, yüzme 14.20."
+      },
+      {
+            "id": "e6-1-t9-07",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "A reporter describes the two pictures. Which sentence does NOT match them?",
+            "options": [
+                  "One person is reading at the library.",
+                  "Both people are playing football in the park.",
+                  "The person in the park is playing football.",
+                  "The two people are doing different activities."
+            ],
+            "correct": 1,
+            "explanation": "Kütüphanedeki kişi kitap okur; parktaki kişi futbol oynar. İkisinin de parkta futbol oynadığını söyleyen B seçeneği görsellerle uyuşmaz.",
+            "imageWidth": 360,
+            "imageHeight": 593,
+            "imageUrl": "/grade6/ingilizce/test-9/soru-07.svg",
+            "imageAlt": "Üstte kütüphanede açık kitap okuyan kişi; altta parkta futbol topuna ayağını uzatan kişi."
+      },
+      {
+            "id": "e6-1-t9-08",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Complete the conversation.\nSue: Does your brother have cereal for breakfast?\nDan: No, he _____. He usually _____ toast and cheese.",
+            "options": [
+                  "don’t / eat",
+                  "doesn’t / eating",
+                  "doesn’t / eats",
+                  "isn’t / eat"
+            ],
+            "correct": 2,
+            "explanation": "Does ile sorulan üçüncü tekil kişi sorusunun olumsuz kısa yanıtı doesn’t olur. He öznesiyle geniş zamanda olumlu fiil eats biçimindedir."
+      },
+      {
+            "id": "e6-1-t9-09",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Read the dialogue.\nBen: This queue is very long. I feel bored.\nLina: Look! It is our turn to get on the Ferris wheel now.\nBen: Great! I am excited!\n\nWhat happens in the dialogue?",
+            "options": [
+                  "Ben’s feelings change when it is their turn.",
+                  "Ben is angry with Lina throughout the conversation.",
+                  "Ben says all the rides are boring.",
+                  "Lina refuses to get on the Ferris wheel."
+            ],
+            "correct": 0,
+            "explanation": "Ben uzun sırada beklerken sıkılır; binme sıraları gelince heyecanlanır. Duygusu durum değişince değişir. Diğer seçeneklerdeki öfke, tüm oyuncakları sıkıcı bulma ve Lina’nın reddi konuşmada yoktur."
+      },
+      {
+            "id": "e6-1-t9-10",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Read the dialogue.\nWaiter: Would you like some orange juice with your breakfast?\nLily: Yes, please. But no sugar, thank you.\n\nWhat does Lily mean?",
+            "options": [
+                  "She refuses the juice and asks for tea.",
+                  "She wants juice with extra sugar.",
+                  "She does not want any drink.",
+                  "She accepts the juice but does not want added sugar."
+            ],
+            "correct": 3,
+            "explanation": "Lily Yes, please diyerek portakal suyunu kabul eder; no sugar diyerek içine şeker eklenmesini istemez. İçeceğin doğal şeker içeriği hakkında bir iddiada bulunmaz."
+      }
 ]
   },
   "term2": {}

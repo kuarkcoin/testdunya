@@ -249,3 +249,11 @@ Toplam: 23 test, 230 soru, 117 SVG, 28 rota. Önceki 220 soru ve 110 SVG korunur
 - 7 görselli + 3 metin sorusu: analog saatler, yiyecek/içecek siparişi, bina yüksekliği karşılaştırması, hava raporundaki eksik bilgi, lunapark sıraları, eyleme uygun soru, ulaşım günlüğü, davete yanıt, duygu çıkarımı ve sıklık bilgisi. İngilizce soru/seçenekler, Türkçe açıklamalar. Anahtar: **C, A, D, B, C, D, A, B, D, C**.
 - Yedi pasif SVG, 360 birim genişlik ve en az 26 birim yazı; 238 piksel çıktıları okunabilirlik ve kırpılma açısından denetlenir. Önceki 300 soru ve 187 SVG korunur. Yeni toplam: 31 test / 310 soru / 194 SVG / 36 rota.
 - Bağımsız dil/tek-doğru-cevap ve görsel denetimi, veri/rota doğrulaması, TypeScript ve üretim derlemesi uygulanır. Tarayıcı etkileşim testi yapılmadı; production’a otomatik aktarım yapılmaz.
+
+
+## İngilizce Test 9 — Günlük Planlar ve İletişim (24 Ekim 2026)
+
+- Kullanıcının ilk beş konu başlığına (Life, Yummy Breakfast, Downtown, Weather and Emotions, At the Fair) göre karma tekrar; güncel resmî tema sırası veya tam yıllık kapsam iddiası değildir.
+- 7 görselli + 3 metin sorusu: haftalık bitki bakımı, sipariş düzeltme, between ile konum, iki şehrin hava raporu, eş zamanlı eylemler, saat ifadeleri, görsele uymayan cümle, Simple Present, duruma göre değişen duygular ve teklif kabulü. İngilizce soru/seçenekler, Türkçe açıklamalar. Anahtar: **B, D, A, C, A, D, B, C, A, D**.
+- Yedi pasif SVG, 360 birim genişlik ve en az 26 birim yazı; 238 piksel çıktıları okunabilirlik ve kırpılma açısından denetlenir. Önceki 310 soru ve 194 SVG korunur. Yeni toplam: 32 test / 320 soru / 201 SVG / 37 rota.
+- Veri/rota doğrulayıcıları, TypeScript ve üretim derlemesi çalıştırılır. Etkileşimli tarayıcı testi yapılmamıştır; kullanıcı isteği uyarınca production’a terfi edilmez.
