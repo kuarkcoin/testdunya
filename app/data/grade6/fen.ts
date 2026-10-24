@@ -1,7 +1,7 @@
 import { SubjectData } from "./types";
 
-// 6. sınıf başlangıç paketi: İlk iki ünite; üreme, büyüme, gelişme ve denetleyici sistemler, ışığın yansıması, aynalar, soğurulma, renkler, genleşme ve hâl değişim noktalarından seçmeler.
-// FB.6.1.1–FB.6.1.4, FB.6.2.1–FB.6.2.3, FB.6.3.1–FB.6.3.4 ve FB.6.3.6–FB.6.3.8 ve FB.6.4.1–FB.6.4.7 ve FB.6.5.1–FB.6.5.2; tüm yılı kapsamaz.
+// 6. sınıf başlangıç paketi: İlk iki ünite; üreme, büyüme, gelişme ve denetleyici sistemler, ışığın yansıması, aynalar, soğurulma, renkler, genleşme, hâl değişim noktaları ve yoğunluktan seçmeler.
+// FB.6.1.1–FB.6.1.4, FB.6.2.1–FB.6.2.3, FB.6.3.1–FB.6.3.4 ve FB.6.3.6–FB.6.3.8 ve FB.6.4.1–FB.6.4.7 ve FB.6.5.1–FB.6.5.5; tüm yılı kapsamaz.
 // Kaynaklar: https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/409
 // https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/410
 // https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/411
@@ -1373,6 +1373,177 @@ export const fenData: SubjectData = {
             ],
             "correct": 3,
             "explanation": "Boyutun hâl değişmeden artması genleşme, katıdan sıvıya geçiş erimedir. Hiçbirinde madde eklenmediği veya kaybolmadığı için kütle değişmez. Hâl değişimi tek başına kütle kaybı değildir."
+      }
+],
+
+    test9: [
+      {
+            "id": "f6-1-t9-01",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Kütlesi 54 g olan içi dolu bir taş, su dolu dereceli silindire tamamen batırılıyor. Taş çözünmüyor, su taşmıyor ve hava kabarcığı kalmıyor. Seviyeler görselde verilmiştir.\n\nTaşın yoğunluğu kaç g/cm³ olur?",
+            "options": [
+                  "0,83",
+                  "1,2",
+                  "2",
+                  "2,7"
+            ],
+            "correct": 3,
+            "explanation": "Taşın hacmi son ve ilk seviye farkıdır: 65 − 45 = 20 cm³. Yoğunluk 54 ÷ 20 = 2,7 g/cm³ olur. Son seviyenin tamamı taşın hacmi değildir.",
+            "imageWidth": 360,
+            "imageHeight": 380,
+            "imageUrl": "/grade6/fen/test-9/soru-01.svg",
+            "imageAlt": "Dereceli silindirde önce 45 cm³ su, taş tamamen batınca 65 cm³ toplam seviye. Taşın kütlesi 54 g. Çizim ölçekli değildir."
+      },
+      {
+            "id": "f6-1-t9-02",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Boş kabın ve içine 40 cm³ sıvı konmuş aynı kabın terazi okumaları görseldedir. Dökülme olmamıştır.\n\nSıvının yoğunluğu kaç g/cm³’tür?",
+            "options": [
+                  "2,75",
+                  "2",
+                  "0,75",
+                  "3,5"
+            ],
+            "correct": 1,
+            "explanation": "Sıvının kütlesi dolu kabın kütlesinden boş kabınki çıkarılarak bulunur: 110 − 30 = 80 g. Yoğunluk 80 ÷ 40 = 2 g/cm³’tür.",
+            "imageWidth": 360,
+            "imageHeight": 360,
+            "imageUrl": "/grade6/fen/test-9/soru-02.svg",
+            "imageAlt": "Boş kap terazi okuması 30 g; aynı kap ve 40 cm³ sıvı birlikte 110 g."
+      },
+      {
+            "id": "f6-1-t9-03",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Aynı sıcaklıkta ölçülen, içi dolu ve homojen K, L, M örneklerinin kütle ve hacimleri tabloda verilmiştir.\n\nYoğunlukların karşılaştırılması hangisidir?",
+            "options": [
+                  "K = M > L",
+                  "L > K = M",
+                  "K > L > M",
+                  "K = L = M"
+            ],
+            "correct": 0,
+            "explanation": "K için 30 ÷ 10 = 3, L için 80 ÷ 40 = 2, M için 60 ÷ 20 = 3 g/cm³ bulunur. En büyük kütleli örneğin en yoğun olması gerekmez.",
+            "imageWidth": 360,
+            "imageHeight": 340,
+            "imageUrl": "/grade6/fen/test-9/soru-03.svg",
+            "imageAlt": "Tablo: K 30 g ve 10 cm³; L 80 g ve 40 cm³; M 60 g ve 20 cm³."
+      },
+      {
+            "id": "f6-1-t9-04",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Birbirine karışmayan ve tepkime vermeyen üç sıvı aynı kaba konup bekletiliyor. Kapların dara kütlesi çıkarılmış ölçümleri görselde verilmiştir. Sıcaklık aynıdır.\n\nDengeye geldiklerinde sıvıların üstten alta sıralaması nasıl olur?",
+            "options": [
+                  "B – C – A",
+                  "A – B – C",
+                  "A – C – B",
+                  "C – A – B"
+            ],
+            "correct": 2,
+            "explanation": "Yoğunluklar A: 40 ÷ 50 = 0,8; B: 60 ÷ 50 = 1,2; C: 50 ÷ 50 = 1 g/cm³’tür. Karışmayan sıvılarda daha az yoğun olan üstte bulunur. Sıra A, C, B olur.",
+            "imageWidth": 360,
+            "imageHeight": 370,
+            "imageUrl": "/grade6/fen/test-9/soru-04.svg",
+            "imageAlt": "Üç ayrı sıvı örneği: A 50 cm³ ve 40 g, B 50 cm³ ve 60 g, C 50 cm³ ve 50 g. Kap kütleleri dahil değil."
+      },
+      {
+            "id": "f6-1-t9-05",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Homojen ve içi dolu K cismi su yüzeyinde kısmen batmış olarak yüzüyor; L cismi ise suyun dibine batıyor. Cisimler suyla tepkime vermiyor, çözünmüyor ve üzerlerinde hava kabarcığı yoktur. K’den küçük bir parça koparılıp aynı suya bırakılıyor.\n\nParçanın durumu ve yoğunluk sıralaması hangisidir?",
+            "options": [
+                  "Parça batar; K > su > L.",
+                  "Parça yüzer; L > su > K.",
+                  "Parça askıda kalır; K = su < L.",
+                  "Parça yüzer; su > L > K."
+            ],
+            "correct": 1,
+            "explanation": "Aynı homojen maddeden kopan parçada kütle ve hacim birlikte azalır, yoğunluk değişmez. K sudan az yoğun olduğundan parçası da yüzer. L sudan daha yoğundur.",
+            "imageWidth": 360,
+            "imageHeight": 410,
+            "imageUrl": "/grade6/fen/test-9/soru-05.svg",
+            "imageAlt": "Su kabında K yüzeyde kısmen batmış, L dipte. K’den alınan küçük parça ayrı gösterilmiş; şekiller şematiktir."
+      },
+      {
+            "id": "f6-1-t9-06",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "İçi dolu, homojen bir blok aynı sıcaklıkta kesiliyor. Başlangıç kütlesi 120 g, hacmi 40 cm³’tür. Kesilen parçanın kütlesi 30 g’dır; kesme sırasında madde kaybı yoktur.\n\nKalan bloğun hacmi ve yoğunluğu hangisidir?",
+            "options": [
+                  "10 cm³; 3 g/cm³",
+                  "30 cm³; 4 g/cm³",
+                  "40 cm³; 2,25 g/cm³",
+                  "30 cm³; 3 g/cm³"
+            ],
+            "correct": 3,
+            "explanation": "İlk yoğunluk 120 ÷ 40 = 3 g/cm³’tür. Kesilen 30 g parçanın hacmi 30 ÷ 3 = 10 cm³ olur. Kalan hacim 30 cm³, kütle 90 g; yoğunluk yine 3 g/cm³’tür.",
+            "imageWidth": 360,
+            "imageHeight": 350,
+            "imageUrl": "/grade6/fen/test-9/soru-06.svg",
+            "imageAlt": "Başlangıç bloğu 120 g, 40 cm³. Bir parça ayrılmış ve 30 g olarak etiketlenmiş. Şema ölçekli değildir."
+      },
+      {
+            "id": "f6-1-t9-07",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Aynı su örneği, madde kaybı olmadan tamamen donduruluyor. Yaklaşık örnek değerler görselde verilmiştir.\n\nVerilerin desteklediği yoğunluk değişimi ve doğadaki sonucu hangisidir?",
+            "options": [
+                  "Yoğunluk artar; buz suyun dibine çöker.",
+                  "Yoğunluk değişmez; hacim artışı etkisizdir.",
+                  "Yoğunluk azalır; buzun yüzeyde kalması alttaki suyun sıvı kalmasına katkı sağlar.",
+                  "Yoğunluk azalır; göldeki bütün suyun kesinlikle aynı anda donmasını sağlar."
+            ],
+            "correct": 2,
+            "explanation": "Kütle 90 g kalırken hacim 90 cm³’ten 100 cm³’e çıkar. Yoğunluk 1’den 0,9 g/cm³’e düşer. Buzun sıvı sudan daha az yoğun olması yüzeyde kalmasını sağlar; yüzeydeki buz tabakası alttaki suyun ısı kaybını yavaşlatabilir.",
+            "imageWidth": 360,
+            "imageHeight": 410,
+            "imageUrl": "/grade6/fen/test-9/soru-07.svg",
+            "imageAlt": "Aynı örnek: sıvı su 90 g, 90 cm³; buz 90 g, 100 cm³. Sayılar yaklaşık örnek değerlerdir, şekiller ölçekli değildir."
+      },
+      {
+            "id": "f6-1-t9-08",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Bir öğrenci 60 g’lık katıyı suya tamamen batırıyor. Su seviyesi 50 cm³’ten 70 cm³’e yükseliyor. Öğrenci yoğunluğu 60 ÷ 70 işlemiyle hesaplıyor. Katı suda çözünmüyor, su taşmıyor ve hava kabarcığı kalmıyor.\n\nHatanın sonucu ve doğru yoğunluk hangisidir?",
+            "options": [
+                  "Yoğunluğu olduğundan küçük bulur; doğru değer 3 g/cm³’tür.",
+                  "Yoğunluğu olduğundan büyük bulur; doğru değer 3 g/cm³’tür.",
+                  "İşlemi doğrudur; doğru değer yaklaşık 0,86 g/cm³’tür.",
+                  "Yoğunluğu küçük bulur; doğru değer 1,2 g/cm³’tür."
+            ],
+            "correct": 0,
+            "explanation": "Katının hacmi 70 − 50 = 20 cm³’tür. Doğru yoğunluk 60 ÷ 20 = 3 g/cm³’tür. Hacim yerine daha büyük olan 70 sayısını kullanmak yoğunluğu olduğundan küçük gösterir."
+      },
+      {
+            "id": "f6-1-t9-09",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Aynı sıcaklıktaki iki homojen, içi dolu cismin kütlesi 40’ar gramdır. K’nin hacmi 20 cm³, L’nin hacmi 50 cm³’tür. İkisi yoğunluğu 1 g/cm³ olan suya bırakılıyor. Çözünme, tepkime veya hava kabarcığı yoktur.\n\nBeklenen durum hangisidir?",
+            "options": [
+                  "K ve L eşit kütleli olduklarından ikisi de yüzer.",
+                  "K yüzer, L batar.",
+                  "İkisi de askıda kalır.",
+                  "K batar, L yüzer."
+            ],
+            "correct": 3,
+            "explanation": "K’nin yoğunluğu 40 ÷ 20 = 2 g/cm³ olup sudan büyüktür; K batar. L’nin yoğunluğu 40 ÷ 50 = 0,8 g/cm³ olup sudan küçüktür; L yüzer. Eşit kütle, eşit yoğunluk demek değildir."
+      },
+      {
+            "id": "f6-1-t9-10",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Aynı saf sıvıdan, aynı sıcaklıkta iki örnek alınıyor. Birinci örneğin kütlesi 60 g ve hacmi 50 cm³’tür. İkinci örneğin hacmi 150 cm³’tür.\n\nİkinci örneğin beklenen kütlesi ve yoğunluğu hangisidir?",
+            "options": [
+                  "60 g; 0,4 g/cm³",
+                  "180 g; 1,2 g/cm³",
+                  "180 g; 3,6 g/cm³",
+                  "120 g; 0,8 g/cm³"
+            ],
+            "correct": 1,
+            "explanation": "Aynı saf sıvının aynı sıcaklıktaki yoğunluğu miktarla değişmez: 60 ÷ 50 = 1,2 g/cm³. Hacim üç katına çıktığından kütle de üç katına çıkar: 180 g."
       }
 ],
 
