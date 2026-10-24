@@ -1,6 +1,6 @@
 # 6. sınıf başlangıç paketi
 
-190 özgün soru: Matematikte 10 test, Türkçe, Fen Bilimleri ve İngilizcede üçer test; her test 10 soru. Matematik Test 1, Test 4, Test 5 ve Test 6, onar şekilli akıl yürütme sorusu içerir. Test 1, eski 10 soru yerine orta–zor düzeyde 10 şekilli soruyla yenilenmiştir; toplam test ve soru sayısı değişmemiştir. Test 7, Test 8, Test 9 ve Test 10, yedişer şekilli ve üçer şekilsiz orta–zor soru içerir. Fen Test 1 ve Test 2, yedişer şekilli ve üçer şekilsiz orta–zor soruyla yenilenmiştir. Testler mevcut birinci dönem kayıt yapısında tutulur; yeni matematik testleri yılın farklı temalarından seçilmiştir. Tüm yıl/müfredat kapsandığı veya MEB onayı bulunduğu iddia edilmez. İkinci dönem için soru eklenmedi.
+190 özgün soru: Matematikte 10 test, Türkçe, Fen Bilimleri ve İngilizcede üçer test; her test 10 soru. Matematik Test 1, Test 4, Test 5 ve Test 6, onar şekilli akıl yürütme sorusu içerir. Test 1, eski 10 soru yerine orta–zor düzeyde 10 şekilli soruyla yenilenmiştir; toplam test ve soru sayısı değişmemiştir. Test 7, Test 8, Test 9 ve Test 10, yedişer şekilli ve üçer şekilsiz orta–zor soru içerir. Fen Test 1, Test 2 ve Test 3, yedişer şekilli ve üçer şekilsiz orta–zor soruyla yenilenmiştir. Testler mevcut birinci dönem kayıt yapısında tutulur; yeni matematik testleri yılın farklı temalarından seçilmiştir. Tüm yıl/müfredat kapsandığı veya MEB onayı bulunduğu iddia edilmez. İkinci dönem için soru eklenmedi.
 
 ## Kaynaklar (23–24 Ekim 2026)
 
@@ -127,3 +127,10 @@ Production kaynağında `package.json` içinde zaten tanımlı olan `jspdf`, loc
 - Cevap anahtarı B, C, D, A, B, C, D, B, C, A. Önceki 180 diğer soru ve 75 SVG korunmuştur. Toplam 19 test, 190 soru, 82 görsel ve 24 altıncı sınıf rotası.
 - Bağımsız bilimsel/cevap denetimi, TypeScript, üretim derlemesi, veri/rota ve koruma kontrolleri uygulandı. Tarayıcı etkileşim testi yapılmadı.
 - Kapsam: [MEB tutulmalar](https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/409), [MEB kuvvet](https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/410), [NASA tutulmalar](https://science.nasa.gov/moon/eclipses/).
+
+## Yenilenen Fen Test 3 (24 Ekim 2026)
+
+- Mevcut `test3` kimlikleri korunarak kuvvet, hareket, sürat ve hız konularında 7 şekilli ve 3 şekilsiz orta–zor soru ile yenilendi. Anahtar: B, C, D, A, B, C, D, B, C, A.
+- Bileşke değişimi, dengelenmiş kuvvetlerde farklı başlangıç durumları, kontrollü deney, yol/yer değiştirme, yön değişimi ve dengeleyici kuvvet yorumlanır. Sürat hesabı, hareket grafiği ve birim dönüşümü yoktur. Resmî kapsam: https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/410 .
+- Yedi SVG 360px tuval ve en az26px etiketle hazırlanıp 238/320/360px raster çıktılarında incelendi. Bağımsız bilimsel cevap ve görsel denetimi yapıldı. Önceki180 diğer soru ve82SVG korunur. Toplam19test,190soru,89SVG,24rota.
+- TypeScript, üretim derlemesi, veri/rota doğrulaması, koruma ve diff kontrolü çalıştırılır. Tarayıcı etkileşimleri bu çalışma kapsamında test edilmedi.
