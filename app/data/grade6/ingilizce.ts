@@ -348,146 +348,174 @@ export const ingilizceData: SubjectData = {
 ],
     "test3": [
       {
-        "id": "e6-1-t3-01",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "The class rule says, 'Raise your hand before you speak.' Which student follows the rule?",
-        "options": [
-          "A student who shouts an answer.",
-          "A student who talks over a friend.",
-          "A student who starts talking immediately.",
-          "A student who puts a hand up and waits."
-        ],
-        "correct": 3,
-        "explanation": "Kural, konuşmadan önce el kaldırmayı ister. Elini kaldırıp bekleyen öğrenci kurala uyar."
+            "id": "e6-1-t3-01",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at the town map. Which sentence is correct?",
+            "options": [
+                  "The library is next to the bank.",
+                  "The bakery is opposite the park.",
+                  "The bank is opposite the library.",
+                  "The library is opposite the park."
+            ],
+            "correct": 3,
+            "explanation": "Kütüphane yolun bir tarafında, park tam karşısındadır. Kütüphanenin yanında fırın; parkın yanında banka vardır.",
+            "imageWidth": 360,
+            "imageHeight": 400,
+            "imageUrl": "/grade6/ingilizce/test-3/soru-01.svg",
+            "imageAlt": "Harita: üst sırada solda library, sağda bakery; yolun karşısında solda park, sağda bank."
       },
       {
-        "id": "e6-1-t3-02",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Elif has English club meetings on Monday and Thursday every week. How often does she attend the club?",
-        "options": [
-          "Once a month.",
-          "Twice a week.",
-          "Once a week.",
-          "Every day."
-        ],
-        "correct": 1,
-        "explanation": "Pazartesi ve perşembe iki ayrı gündür. Bu nedenle Elif kulübe haftada iki kez, yani 'twice a week' katılır."
+            "id": "e6-1-t3-02",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at the children in the park now. What are they doing?",
+            "options": [
+                  "Ece is riding a bike and Ali is reading.",
+                  "Ece is reading and Ali is riding a bike.",
+                  "They are both reading.",
+                  "They are both riding bikes."
+            ],
+            "correct": 1,
+            "explanation": "Ece açık kitabı okuyor, Ali bisiklete biniyor. Şu anda yapılan işler 'is reading' ve 'is riding' ile anlatılır.",
+            "imageWidth": 360,
+            "imageHeight": 420,
+            "imageUrl": "/grade6/ingilizce/test-3/soru-02.svg",
+            "imageAlt": "Parkta Ece oturmuş açık kitap okuyor. Ali iki tekerlekli bisikletin üzerinde, gidonu tutuyor. İsimler çizimlerin altında."
       },
       {
-        "id": "e6-1-t3-03",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Mert usually reads quietly after lunch. Today, he is preparing a poster with his friends. What is he doing today?",
-        "options": [
-          "Cleaning the library.",
-          "Reading quietly.",
-          "Taking a maths test.",
-          "Preparing a poster."
-        ],
-        "correct": 3,
-        "explanation": "Metin, Mert'in bugün arkadaşlarıyla poster hazırladığını söylüyor. 'Usually reads' onun olağan alışkanlığıdır; bugünkü etkinliği değildir."
+            "id": "e6-1-t3-03",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at the building heights. Which sentence is correct?",
+            "options": [
+                  "The hospital is taller than the library.",
+                  "The school is taller than the hospital.",
+                  "The library is shorter than the school.",
+                  "The hospital and the school are the same height."
+            ],
+            "correct": 0,
+            "explanation": "Hastane 20 m, kütüphane 12 m, okul 8 m’dir. Hastane kütüphaneden uzundur: 'taller than'.",
+            "imageWidth": 360,
+            "imageHeight": 400,
+            "imageUrl": "/grade6/ingilizce/test-3/soru-03.svg",
+            "imageAlt": "Binaların aynı tabandan çizilmiş yükseklikleri: library 12 m, school 8 m, hospital 20 m."
       },
       {
-        "id": "e6-1-t3-04",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Complete the sentence: 'My friends ____ their notebooks to school every day.'",
-        "options": [
-          "bring",
-          "brings",
-          "is bringing",
-          "bringing"
-        ],
-        "correct": 0,
-        "explanation": "'Every day' düzenli yapılan işi gösterir. Çoğul özne 'my friends' (they) ile geniş zamanda fiilin yalın biçimi 'bring' kullanılır."
+            "id": "e6-1-t3-04",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at the two street scenes at the same time. Which comparison matches the pictures?",
+            "options": [
+                  "The village street is more crowded than the city street.",
+                  "The city street has fewer cars than the village street.",
+                  "The city street is more crowded than the village street.",
+                  "The two streets have the same number of people."
+            ],
+            "correct": 2,
+            "explanation": "Şehir sokağında daha çok insan ve araç görülür. Bu iki resimde şehir sokağı köy sokağından daha kalabalıktır. Bu, tüm şehirler ve köyler için değişmez bir kural değildir.",
+            "imageWidth": 360,
+            "imageHeight": 420,
+            "imageUrl": "/grade6/ingilizce/test-3/soru-04.svg",
+            "imageAlt": "Aynı andaki iki sokak: city street altı kişi ve üç araba; village street iki kişi ve bir araba."
       },
       {
-        "id": "e6-1-t3-05",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Complete the question: 'What ____ the teacher doing now?'",
-        "options": [
-          "do",
-          "is",
-          "does",
-          "are"
-        ],
-        "correct": 1,
-        "explanation": "Şu an yapılan eylem 'is doing' yapısıyla sorulur. Tekil özne 'the teacher' için 'is' uygundur."
+            "id": "e6-1-t3-05",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at the bus stop now. Complete the sentence: 'The children ____ for the bus. They ____ football.'",
+            "options": [
+                  "wait / play",
+                  "are waiting / aren't playing",
+                  "is waiting / isn't playing",
+                  "are playing / aren't waiting"
+            ],
+            "correct": 1,
+            "explanation": "Çocuklar otobüs durağında bekliyor; futbol oynamıyor. Çoğul özne 'the children' ile 'are waiting' ve 'aren't playing' kullanılır.",
+            "imageWidth": 360,
+            "imageHeight": 380,
+            "imageUrl": "/grade6/ingilizce/test-3/soru-05.svg",
+            "imageAlt": "BUS STOP tabelası altında iki çocuk oturuyor. Top veya oyun sahası yok; resim şimdi olan durumu gösteriyor."
       },
       {
-        "id": "e6-1-t3-06",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "A library has 480 books. How do you read this number?",
-        "options": [
-          "Four hundred and eighteen",
-          "One hundred and forty-eight",
-          "Four hundred and eighty",
-          "Four hundred and eight"
-        ],
-        "correct": 2,
-        "explanation": "480, 400 ve 80'den oluşur. İngilizce karşılığı 'four hundred and eighty'dir; 'eighteen' 18 demektir."
+            "id": "e6-1-t3-06",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at the opening hours. It is 18:30 now. Which place is still open?",
+            "options": [
+                  "The bank",
+                  "The bakery",
+                  "The school",
+                  "The library"
+            ],
+            "correct": 3,
+            "explanation": "18.30’da kütüphane açıktır; 19.00’da kapanır. Banka 17.00, fırın 18.00, okul 16.00’da kapanmıştır.",
+            "imageWidth": 360,
+            "imageHeight": 460,
+            "imageUrl": "/grade6/ingilizce/test-3/soru-06.svg",
+            "imageAlt": "Açılış-kapanış saatleri: bank 09:00–17:00, bakery 07:00–18:00, school 08:00–16:00, library 10:00–19:00."
       },
       {
-        "id": "e6-1-t3-07",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Deniz is number 32 on the class list. Which sentence is correct?",
-        "options": [
-          "Deniz is the twenty-third student.",
-          "Deniz is the thirty-second student.",
-          "Deniz is the thirteenth student.",
-          "Deniz is the forty-second student."
-        ],
-        "correct": 1,
-        "explanation": "32. sıra sayısı 'thirty-second'tır. Diğer seçeneklerde 23., 13. ve 42. sıralar belirtilmiştir."
+            "id": "e6-1-t3-07",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at the speeds of the three vehicles in this example. Which sentence is correct?",
+            "options": [
+                  "The bus is faster than the bike but slower than the car.",
+                  "The bike is faster than the car.",
+                  "The car is slower than the bus.",
+                  "The bus and the bike are equally fast."
+            ],
+            "correct": 0,
+            "explanation": "Bu örnekte bisiklet 20, otobüs 40, araba 60 km/h hızındadır. Otobüs bisikletten hızlı, arabadan yavaştır.",
+            "imageWidth": 360,
+            "imageHeight": 430,
+            "imageUrl": "/grade6/ingilizce/test-3/soru-07.svg",
+            "imageAlt": "Üç araç çizimi ve bu örnekteki hızları: bike 20 km/h, bus 40 km/h, car 60 km/h."
       },
       {
-        "id": "e6-1-t3-08",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "The school notice says, 'Bring your coloured pencils on Tuesday. We are making celebration posters.' What should students bring?",
-        "options": [
-          "Sports shoes",
-          "Lunch boxes",
-          "Musical instruments",
-          "Coloured pencils"
-        ],
-        "correct": 3,
-        "explanation": "Duyuruda 'Bring your coloured pencils' deniyor. Öğrencilerden renkli kalemlerini getirmeleri isteniyor."
+            "id": "e6-1-t3-08",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Complete the dialogue.\n\nA: Where are your parents?\nB: They are at the market. They ____ some fruit now, but my brother ____ with them.",
+            "options": [
+                  "buys / isn't shopping",
+                  "are buying / aren't shopping",
+                  "are buying / isn't shopping",
+                  "is buying / doesn't shopping"
+            ],
+            "correct": 2,
+            "explanation": "'They' ile 'are buying', 'my brother' tekil olduğu için 'isn't shopping' kullanılır. 'Now' şu anda yapılan işi gösterir."
       },
       {
-        "id": "e6-1-t3-09",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Read the information: 'In Türkiye, we celebrate Victory Day on 30 August.' Which question does 'on 30 August' answer?",
-        "options": [
-          "When do we celebrate Victory Day?",
-          "Who celebrates Victory Day?",
-          "Where do we celebrate Victory Day?",
-          "How do we celebrate Victory Day?"
-        ],
-        "correct": 0,
-        "explanation": "'On 30 August' bir tarih, yani zaman bildirir. Zamanı öğrenmek için 'When?' sorusu sorulur."
+            "id": "e6-1-t3-09",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Mina is in the city centre now. Many people are shopping, and the streets are busy. Her cousin lives in a quiet village. Today, he is visiting Mina and taking photos of the tall buildings.\n\nWhich sentence is NOT correct?",
+            "options": [
+                  "Mina is in the city centre.",
+                  "Her cousin is taking photos today.",
+                  "There are many shoppers in the city centre.",
+                  "Her cousin is in his village now."
+            ],
+            "correct": 3,
+            "explanation": "Kuzeni bugün Mina’yı ziyaret ederek şehirdeki binaların fotoğraflarını çekiyor. Bu nedenle şu anda köyünde olduğunu söyleyen seçenek yanlıştır."
       },
       {
-        "id": "e6-1-t3-10",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Teacher: Can you read the first sentence, please?\nStudent: ____",
-        "options": [
-          "It is on the second floor.",
-          "There are three hundred books.",
-          "Of course. I can read it.",
-          "My bag is blue."
-        ],
-        "correct": 2,
-        "explanation": "Öğretmen ilk cümleyi okumasını istiyor. 'Of course. I can read it.' (Elbette. Onu okuyabilirim.) bu isteğe uygun cevaptır."
+            "id": "e6-1-t3-10",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "The museum is 15 metres tall. The bank is 10 metres tall, and the hotel is 25 metres tall.\n\nComplete the sentence: 'The museum is ____ than the bank, but ____ than the hotel.'",
+            "options": [
+                  "shorter / taller",
+                  "taller / shorter",
+                  "taller / taller",
+                  "shorter / shorter"
+            ],
+            "correct": 1,
+            "explanation": "Müze 15 m ile bankadan (10 m) uzun, otelden (25 m) kısadır. Bu yüzden 'taller / shorter' kullanılır."
       }
-    ]
+]
   },
   "term2": {}
 };

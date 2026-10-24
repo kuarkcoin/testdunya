@@ -201,3 +201,11 @@ Toplam: 23 test, 230 soru, 117 SVG, 28 rota. Önceki 220 soru ve 110 SVG korunur
 - 7 görselli + 3 metin sorusu; İngilizce soru/seçenekler, Türkçe açıklamalar. Menü ve sipariş karşılaştırması, ortak tercihler, teklif/yanıt uyumu ve Simple Present kullanımı. Anahtar: **B, C, D, A, B, C, D, A, C, B**.
 - Yedi pasif SVG: 360 birim genişlik, en az 26 birim etiket; yiyecek/içecek çizimleri, alternatif metin ve gerçek boyutlar. 238 piksel çıktıları okunabilirlik ve kırpılma bakımından incelendi. İngilizce Test 1 ve 3 dahil diğer 250 soru ile önceki 145 SVG korundu. Toplam: 26 test / 260 soru / 152 SVG / 31 rota.
 - Bağımsız dil/tek-doğru-cevap denetimi, veri/rota kontrolü, TypeScript ve üretim derlemesi uygulanır. Tarayıcı etkileşim testi yapılmadı; production’a otomatik aktarım yapılmaz.
+
+
+## Yenilenen İngilizce Test 3 (24 Ekim 2026)
+
+- Mevcut `/6-sinif/ingilizce/test-3` rotası ve `e6-1-t3-01`–`e6-1-t3-10` kimlikleri korundu. Konu: **Downtown: Şehirde Yaşam ve Karşılaştırmalar (Orta)**. Kullanıcının verdiği konu sırası esas alınır; güncel resmî MEB tema adı veya tüm müfredat kapsamı iddiası yoktur.
+- 7 görselli + 3 metin sorusu; şehir haritası ve kamusal binalar, şu anda yapılan eylemler (Present Continuous), bina yüksekliği/kalabalıklık/hız karşılaştırmaları ve açılış saatleri. Soru/seçenekler İngilizce, açıklamalar Türkçe. Anahtar: **D, B, A, C, B, D, A, C, D, B**.
+- Yedi pasif SVG: 360 birim genişlik, en az 26 birim yazı; 238 piksel çıktıları incelenir. Bina yükseklikleri ortak tabana ve orana sahiptir; sokak kalabalıklığı ve araç hızları yalnız verilen örneğe aittir. İngilizce Test 1–2 dahil diğer 250 soru ve önceki 152 SVG korunur. Toplam: 26 test / 260 soru / 159 SVG / 31 rota.
+- Bağımsız dil/tek-doğru-cevap ve görsel denetimi, veri/rota doğrulaması, TypeScript ve üretim derlemesi uygulanır. Tarayıcı etkileşim testi yapılmadı; production’a otomatik aktarım yapılmaz.
