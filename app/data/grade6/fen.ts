@@ -1,7 +1,7 @@
 import { SubjectData } from "./types";
 
-// 6. sınıf başlangıç paketi: İlk iki ünite; üreme, büyüme, gelişme ve denetleyici sistemler, ışığın yansıması ve aynalardan seçmeler.
-// FB.6.1.1–FB.6.1.4, FB.6.2.1–FB.6.2.3, FB.6.3.1–FB.6.3.4 ve FB.6.3.6–FB.6.3.8 ve FB.6.4.1–FB.6.4.3; tüm yılı kapsamaz.
+// 6. sınıf başlangıç paketi: İlk iki ünite; üreme, büyüme, gelişme ve denetleyici sistemler, ışığın yansıması, aynalar, soğurulma ve renklerden seçmeler.
+// FB.6.1.1–FB.6.1.4, FB.6.2.1–FB.6.2.3, FB.6.3.1–FB.6.3.4 ve FB.6.3.6–FB.6.3.8 ve FB.6.4.1–FB.6.4.7; tüm yılı kapsamaz.
 // Kaynaklar: https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/409
 // https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/410
 // https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/411
@@ -1030,6 +1030,177 @@ export const fenData: SubjectData = {
             ],
             "correct": 0,
             "explanation": "İlk düzende yüzeyle birlikte kaynak ve gelme açısı da değişmiştir. Pürüzlülüğün etkisini ayırt etmek için bu diğer koşullar aynı tutulmalıdır. Yansıyan ışınların yönleri ve oluşan görüntü özellikleri karşılaştırılabilir."
+      }
+],
+
+    test7: [
+      {
+            "id": "f6-1-t7-01",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Yalnız dış yüzey renkleri farklı olan özdeş kutular aynı ışık altında eşit süre tutuluyor. Başlangıç sıcaklıkları ve diğer koşullar aynıdır. Sonuçlar görselde verilmiştir.\n\nVeriler hangi yorumu destekler?",
+            "options": [
+                  "Beyaz kutu ışık enerjisinin tamamını soğurmuştur.",
+                  "Siyah kutu kendi ışığını ürettiği için ısınmıştır.",
+                  "Renk değişince kutuların başlangıç sıcaklığı da değişmiştir.",
+                  "Bu koşullarda siyah yüzey daha fazla ışık enerjisi soğurmuş olabilir."
+            ],
+            "correct": 3,
+            "explanation": "Başlangıçları eşitken siyah kutunun sıcaklık artışı 14°C, beyazınki 5°C olmuştur. Diğer koşullar eşit olduğundan fark, yüzeylerin ışığı farklı miktarda soğurmasıyla açıklanabilir. Beyaz yüzey de bir miktar enerji soğurabilir.",
+            "imageWidth": 360,
+            "imageHeight": 400,
+            "imageUrl": "/grade6/fen/test-7/soru-01.svg",
+            "imageAlt": "Aynı ışık altındaki siyah ve beyaz kutular. İkisi önce 20°C; sonra siyah 34°C, beyaz 25°C."
+      },
+      {
+            "id": "f6-1-t7-02",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Aynı malzemeden yapılmış levhaların rengine bağlı ısınma farkı araştırılıyor. Düzeneklerin ışık kaynağı ve ışık alma açıları aynı; diğer özellikleri görseldedir.\n\nYalnız yüzey renginin etkisini incelemek için hangi ikili seçilmelidir?",
+            "options": [
+                  "I ve II",
+                  "I ve III",
+                  "II ve IV",
+                  "III ve IV"
+            ],
+            "correct": 0,
+            "explanation": "I ile II yalnız renk bakımından farklıdır; uzaklık ve süre eşittir. Diğer çiftlerde uzaklık ya da süre de değiştiğinden sonuç yalnız renge bağlanamaz.",
+            "imageWidth": 360,
+            "imageHeight": 440,
+            "imageUrl": "/grade6/fen/test-7/soru-02.svg",
+            "imageAlt": "I siyah 30 cm 5 dk; II beyaz 30 cm 5 dk; III beyaz 60 cm 5 dk; IV siyah 30 cm 10 dk. Levhalar ve ilk sıcaklıklar aynı."
+      },
+      {
+            "id": "f6-1-t7-03",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Renkli bir Newton çarkı önce dururken, sonra hızla dönerken, sonra yeniden durdurularak gözleniyor. Görünümler şekilde verilmiştir.\n\nBu üç gözlem birlikte hangi çıkarımı destekler?",
+            "options": [
+                  "Çark dönerken üzerindeki boyalar kalıcı olarak beyaza dönüşür.",
+                  "Çarkın hareketi renkli ışığı tamamen soğurur.",
+                  "Farklı renklerden gelen ışık hızlı dönüşte birlikte algılanarak beyaza yakın görünebilir.",
+                  "Çark durunca yeniden renklenmesi yeni boya oluştuğunu gösterir."
+            ],
+            "correct": 2,
+            "explanation": "Newton çarkında farklı renklerden gelen ışık hızlı dönüşte birlikte algılanabilir ve çark beyaza yakın görünür. Durduğunda renklerin yeniden seçilmesi, boyaların kalıcı değişmediğini gösterir. Bu gözlem beyaz ışığın farklı ışık renklerinin bileşimiyle ilişkisini destekler.",
+            "imageWidth": 360,
+            "imageHeight": 440,
+            "imageUrl": "/grade6/fen/test-7/soru-03.svg",
+            "imageAlt": "Üç gözlem: duran çark renkli dilimlere ayrılmış; hızlı dönen çark beyaza yakın; yeniden duran çarkın aynı renkli dilimleri seçiliyor."
+      },
+      {
+            "id": "f6-1-t7-04",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "İdeal modelde K yüzeyi yalnız kırmızı ışığı, L yüzeyi ise üzerine düşen tüm görünür ışık renklerini yansıtır. İkisine de önce yalnız kırmızı, sonra yalnız mavi ışık gönderiliyor. Başka ışık yoktur.\n\nMavi ışığa geçildiğinde K ve L nasıl görünür?",
+            "options": [
+                  "K mavi, L siyah",
+                  "K siyah, L mavi",
+                  "K kırmızı, L beyaz",
+                  "K siyah, L beyaz"
+            ],
+            "correct": 1,
+            "explanation": "K yalnız kırmızı ışığı yansıtır; gelen ışıkta kırmızı bulunmayınca modelde siyah görünür. L mavi ışığı yansıtır ve mavi görünür. Beyaz yüzey, her aydınlatmada beyaz görünmek zorunda değildir.",
+            "imageWidth": 360,
+            "imageHeight": 440,
+            "imageUrl": "/grade6/fen/test-7/soru-04.svg",
+            "imageAlt": "İki ayrı aydınlatma paneli: kırmızı ve mavi ışık, nötr K ve L yüzey simgelerine geliyor. Altta K kırmızı yüzey, L beyaz yüzey olarak tanımlanıyor; simgeler gözlenen rengi göstermez."
+      },
+      {
+            "id": "f6-1-t7-05",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "İdeal modelde beyaz ışık opak bir yüzeye geliyor. Şemada yeşil ışığın yansıdığı, diğer renklerin ise yüzey içinde soğurulduğu gösteriliyor. Yüzey kendi ışığını üretmiyor.\n\nBu modele göre yüzey yalnız kırmızı ışıkla aydınlatılırsa görünümü ve nedeni ne olur?",
+            "options": [
+                  "Siyah görünür; kırmızı ışığı soğurur ve yansıtacak yeşil ışık gelmez.",
+                  "Yeşil görünür; kırmızı ışığı yeşil ışığa dönüştürür.",
+                  "Kırmızı görünür; bütün yüzeyler gelen ışığın rengini mutlaka yansıtır.",
+                  "Beyaz görünür; ışık rengi değişince tüm renkleri üretir."
+            ],
+            "correct": 0,
+            "explanation": "Modelde yüzey yalnız yeşil ışığı yansıtır. Yalnız kırmızı ışık geldiğinde bu ışığı soğurur; göze yansıyan yeşil ışık bulunmadığı için ideal modelde siyah görünür.",
+            "imageWidth": 360,
+            "imageHeight": 360,
+            "imageUrl": "/grade6/fen/test-7/soru-05.svg",
+            "imageAlt": "Beyaz ışık opak yüzeye geliyor; yüzeyden göze yeşil ışık oku gidiyor. Alt yazıda diğer renklerin soğurulduğu belirtiliyor."
+      },
+      {
+            "id": "f6-1-t7-06",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Bir güneşle su ısıtma düzeneğinin iki tasarımı karşılaştırılıyor. Borular, su miktarı, başlangıç sıcaklığı, yalıtım ve ışık koşulları aynı. K mat siyah, L ışığı büyük ölçüde geri yansıtan parlak yüzeylidir.\n\nSuyu ısıtma amacı için hangi seçim ve gerekçe uygundur?",
+            "options": [
+                  "L; soğurulan enerji azaldıkça su daha çok ısınır.",
+                  "K; siyah yüzey yalnız karanlıkta enerji soğurur.",
+                  "L; yansıyan ışığın tamamı kendiliğinden suya döner.",
+                  "K; daha fazla soğurulan ışık enerjisi suyun ısınmasına katkı sağlayabilir."
+            ],
+            "correct": 3,
+            "explanation": "Güneşle su ısıtıcılarında soğurucu yüzey ışık enerjisini alır ve enerji suya aktarılır. Diğer koşullar eşitse daha çok soğuran yüzey bu amaca uygundur. Bu düzenek doğrudan elektrik üretmek için modellenmemiştir.",
+            "imageWidth": 360,
+            "imageHeight": 420,
+            "imageUrl": "/grade6/fen/test-7/soru-06.svg",
+            "imageAlt": "Aynı borulu iki toplayıcıya güneş ışığı geliyor. K mat siyah soğurucu, L parlak yansıtıcı. Su boruları her ikisinde aynı."
+      },
+      {
+            "id": "f6-1-t7-07",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "İdeal modelde beyaz kartın üstünde yalnız kırmızı ışığı yansıtan kırmızı bir şekil vardır. Önce yalnız kırmızı, sonra yalnız mavi ışıkla aydınlatılıyor; başka ışık yoktur.\n\nŞekil ile zemin arasındaki renk farkının daha belirgin olması hangi aydınlatmada beklenir?",
+            "options": [
+                  "Kırmızı; şekil kırmızı, zemin beyaz kalır.",
+                  "Mavi; şekil siyah, zemin mavi görünür.",
+                  "Mavi; şekil kırmızı, zemin mavi görünür.",
+                  "İkisinde de şekil ve zemin mutlaka aynı görünür."
+            ],
+            "correct": 1,
+            "explanation": "Kırmızı ışıkta hem kırmızı şekil hem beyaz zemin kırmızıyı yansıtır. Mavi ışıkta beyaz zemin mavi görünür; kırmızı şekil modelde maviyi soğurarak siyah görünür. Bu nedenle ikinci durumda renk farkı belirginleşir.",
+            "imageWidth": 360,
+            "imageHeight": 400,
+            "imageUrl": "/grade6/fen/test-7/soru-07.svg",
+            "imageAlt": "Beyaz kart üzerinde kırmızı üçgen. Ayrı iki aydınlatma: yalnız kırmızı ışık ve yalnız mavi ışık. Kartın beyaz ışık altındaki renkleri gösteriliyor."
+      },
+      {
+            "id": "f6-1-t7-08",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Bir öğrenci “Güneşte siyah tişörtüm daha çok ısınıyor; bu nedenle her siyah cisim, her beyaz cisimden her koşulda daha sıcaktır.” diyor.\n\nBu genelleme neden doğru değildir?",
+            "options": [
+                  "Siyah yüzeyler ışık enerjisi soğuramaz.",
+                  "Renk tek başına sıcaklığı kesin belirler; ışık miktarı önemsizdir.",
+                  "Sıcaklık malzeme, başlangıç sıcaklığı ve ortam koşullarından da etkilenir; adil karşılaştırma gerekir.",
+                  "Beyaz cisimler hiçbir koşulda ısınamaz."
+            ],
+            "correct": 2,
+            "explanation": "Renk soğurmayı etkileyebilir; ancak her koşulda sıcaklığı tek başına belirlemez. Malzeme, ışık miktarı, süre ve başlangıç sıcaklığı gibi etkenler eşitlenmeden kesin bir renk-sıcaklık sıralaması yapılamaz."
+      },
+      {
+            "id": "f6-1-t7-09",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "İdeal modelde dört yüzey vardır: beyaz yüzey gelen tüm görünür renkleri; kırmızı yalnız kırmızıyı; mavi yalnız maviyi yansıtır. Siyah yüzey bu renkleri soğurur. Bilinmeyen yüzey yalnız kırmızı ışıkta siyah, yalnız mavi ışıkta mavi görülüyor.\n\nYüzey hangisidir ve beyaz ışık altında nasıl görünür?",
+            "options": [
+                  "Beyazdır; beyaz görünür.",
+                  "Kırmızıdır; kırmızı görünür.",
+                  "Siyahtır; siyah görünür.",
+                  "Mavidir; mavi görünür."
+            ],
+            "correct": 3,
+            "explanation": "Kırmızı ışıkta siyah görünmesi beyaz ve kırmızı yüzeyleri eler. Mavi ışıkta mavi görünmesi siyah yüzeyi de eler. Mavi yüzey beyaz ışığın içindeki maviyi yansıtır ve mavi görünür."
+      },
+      {
+            "id": "f6-1-t7-10",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Bir okul çatısında iki ihtiyaç için güneş enerjisi kullanılacaktır: I, temizlik için suyu ısıtmak; II, elektrikli bir lambaya enerji sağlamak.\n\nİki ihtiyaca uygun sistem ve enerji dönüşümü hangi seçenekte birlikte doğrudur?",
+            "options": [
+                  "I: ısıl toplayıcıyla suyu ısıtma; II: fotovoltaik panelle elektrik üretme.",
+                  "I: fotovoltaik panelin borularındaki suyu doğrudan ısıtma; II: yalnız su deposuyla elektrik üretme.",
+                  "I ve II: yalnız ışığı geri yansıtan bir levha, başka düzenek gerekmez.",
+                  "I: ısıl toplayıcı; II: fotovoltaik panel; fakat iki sistem de yalnız ısı üretir."
+            ],
+            "correct": 0,
+            "explanation": "Isıl toplayıcı ışık enerjisinden suyun ısınması için yararlanır. Fotovoltaik panel ise elektrik üretir. Aynı enerji kaynağının kullanılması iki sistemin aynı enerji dönüşümünü yaptığı anlamına gelmez."
       }
 ],
 

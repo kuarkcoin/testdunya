@@ -1,6 +1,6 @@
 # 6. sınıf başlangıç paketi
 
-220 özgün soru: Matematikte 10, Fen Bilimlerinde 6, Türkçe ve İngilizcede üçer test; her test 10 soru. Matematik Test 1, Test 4, Test 5 ve Test 6, onar şekilli akıl yürütme sorusu içerir. Test 1, eski 10 soru yerine orta–zor düzeyde 10 şekilli soruyla yenilenmiştir; toplam test ve soru sayısı değişmemiştir. Test 7, Test 8, Test 9 ve Test 10, yedişer şekilli ve üçer şekilsiz orta–zor soru içerir. Fen Test 1, Test 2 ve Test 3, yedişer şekilli ve üçer şekilsiz orta–zor soruyla yenilenmiştir. Testler mevcut birinci dönem kayıt yapısında tutulur; yeni matematik testleri yılın farklı temalarından seçilmiştir. Tüm yıl/müfredat kapsandığı veya MEB onayı bulunduğu iddia edilmez. İkinci dönem için soru eklenmedi.
+230 özgün soru: Matematikte 10, Fen Bilimlerinde 7, Türkçe ve İngilizcede üçer test; her test 10 soru. Matematik Test 1, Test 4, Test 5 ve Test 6, onar şekilli akıl yürütme sorusu içerir. Test 1, eski 10 soru yerine orta–zor düzeyde 10 şekilli soruyla yenilenmiştir; toplam test ve soru sayısı değişmemiştir. Test 7, Test 8, Test 9 ve Test 10, yedişer şekilli ve üçer şekilsiz orta–zor soru içerir. Fen Test 1, Test 2 ve Test 3, yedişer şekilli ve üçer şekilsiz orta–zor soruyla yenilenmiştir. Testler mevcut birinci dönem kayıt yapısında tutulur; yeni matematik testleri yılın farklı temalarından seçilmiştir. Tüm yıl/müfredat kapsandığı veya MEB onayı bulunduğu iddia edilmez. İkinci dönem için soru eklenmedi.
 
 ## Kaynaklar (23–24 Ekim 2026)
 
@@ -17,7 +17,7 @@ Matematik sorularında EBOB/EKOK terimleri kullanılmaz. Fen soruları sürat i�
 
 ## Entegrasyon
 
-İlk 6. sınıf eklemeleri `e152ac2` sürümü üzerine hazırlanmıştır. Şekilli Matematik Test 4, `fbeef87`; Test 5, `a3802ba`; Test 6, `b8fd56a` üzerine eklenmiştir. Test 1 yenilemesi `c6f87d1` üzerine hazırlanmıştır; `/6-sinif/matematik/test-1` adresi ve soru kimlikleri korunmuştur. Ana sayfa kartı korunmuştur; kayıtlı testlerden otomatik üretilen 27 adet 6. sınıf sitemap adresi vardır. Mevcut 5. sınıf dosyaları korunmuştur. Ekrandaki test/soru sayıları ve rota doğrulamasındaki toplamlar veri kayıtlarından hesaplanır.
+İlk 6. sınıf eklemeleri `e152ac2` sürümü üzerine hazırlanmıştır. Şekilli Matematik Test 4, `fbeef87`; Test 5, `a3802ba`; Test 6, `b8fd56a` üzerine eklenmiştir. Test 1 yenilemesi `c6f87d1` üzerine hazırlanmıştır; `/6-sinif/matematik/test-1` adresi ve soru kimlikleri korunmuştur. Ana sayfa kartı korunmuştur; kayıtlı testlerden otomatik üretilen 28 adet 6. sınıf sitemap adresi vardır. Mevcut 5. sınıf dosyaları korunmuştur. Ekrandaki test/soru sayıları ve rota doğrulamasındaki toplamlar veri kayıtlarından hesaplanır.
 
 ## Yenilenen Şekilli Matematik Test 1 (24 Ekim 2026)
 
@@ -157,3 +157,9 @@ Production kaynağında `package.json` içinde zaten tanımlı olan `jspdf`, loc
 - Anahtar: C, A, D, B, A, C, D, B, D, A. Resmî kapsam: https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/412 (FB.6.4.1–FB.6.4.3). Test tüm üniteyi kapsamaz; renk ve soğurulma sonraki çalışmalara bırakılmıştır.
 - Yedi SVG: `public/grade6/fen/test-6/soru-01.svg`–`soru-07.svg`. 360 birim tuval, en az 26 birim yazı; gerçek boyut ve alternatif metinler. 238 pikselde raster görsel kontrolü. Yerel yüzey eğimleriyle yansıyan ışınlar hesaplanmış; iki düz aynanın eğimleri ve yön okları kontrol edilmiştir.
 - Önceki 210 soru ve 103 SVG korunmuştur. Yeni toplam 22 test, 220 soru, 110 görsel ve 27 altıncı sınıf rotasıdır. TypeScript, veri/rota doğrulamaları ve üretim derlemesi çalıştırılır. Tarayıcı etkileşim testi yapılmamıştır.
+
+## Fen Test 7: Işığın Soğurulması ve Renkler
+
+7 şekilli + 3 şekilsiz orta–zor soru; FB.6.4.4–FB.6.4.7 kapsamında soğurma, kontrollü karşılaştırma, beyaz ışık, renkli görünme ve güneş enerjisi uygulamaları. Renkli yüzey sorularındaki ideal model ve yalnız belirtilen ışık koşulları açık yazılmıştır. Renkler yazıyla da etiketlenmiştir. Kaynaklar: https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/412 , https://science.nasa.gov/ems/09_visiblelight/ , https://www.energystar.gov/products/solar_water_heaters/how-it-works .
+
+Toplam: 23 test, 230 soru, 117 SVG, 28 rota. Önceki 220 soru ve 110 SVG korunur. Yedi SVG 360px genişlikte; etiketler en az 26px, 238px çıktı incelemesi yapılır. Tarayıcı etkileşim testi erişim kısıtı nedeniyle yapılmaz. Production yükseltmesi yapılmaz.
