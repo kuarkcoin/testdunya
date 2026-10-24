@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="145" viewBox="0 0 460 145" role="img">
+<title>Sayıların tüm asal çarpanları</title>
+<circle cx="195" cy="77" r="61" fill="none" stroke="#087E8B" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="265" cy="77" r="61" fill="none" stroke="#15354B" stroke-width="2" stroke-linejoin="round"/>
+<text x="150" y="10" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="700" fill="#087E8B">A</text>
+<text x="310" y="10" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="700" fill="#15354B">B</text>
+<text x="166" y="59" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="700" fill="#193747">2</text>
+<text x="166" y="96" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="700" fill="#193747">5</text>
+<text x="230" y="77" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="700" fill="#193747">3</text>
+<text x="294" y="77" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="700" fill="#193747">7</text>
+</svg>

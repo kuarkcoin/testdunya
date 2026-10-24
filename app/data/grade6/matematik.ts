@@ -281,6 +281,188 @@ export const matematikData: SubjectData = {
         explanation: "9'un bir katı 9 × k = 3 × (3 × k) biçiminde yazılabilir; dolayısıyla 3'ün de katıdır. Tersi her zaman doğru değildir: Örneğin 12, 3 ile bölünür ama 9 ile bölünmez.",
       },
     ],
+    test4: [
+      {
+        "id": "m6-1-t4-01",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Dikdörtgen biçimindeki bahçenin çevresine eşit aralıklarla direk dikilecektir. Her köşede bir direk bulunacak ve iki komşu direk arasındaki uzaklık mümkün olduğunca büyük olacaktır.\n\nBuna göre toplam kaç direk gerekir?",
+        "options": [
+          "12",
+          "14",
+          "16",
+          "18"
+        ],
+        "correct": 1,
+        "explanation": "Aralık uzunluğu hem 72'yi hem 54'ü tam bölmelidir. Ortak bölenler 1, 2, 3, 6, 9 ve 18'dir; en geniş aralık 18 m olur. Çevre 2 × (72 + 54) = 252 m olduğundan 252 ÷ 18 = 14 direk gerekir. Kapalı bir çevrede direk sayısı aralık sayısına eşittir; köşeler iki kez sayılmaz.",
+        "imageUrl": "/grade6/matematik/test-4/soru-01.svg",
+        "imageAlt": "72 m uzunluğunda ve 54 m genişliğinde dikdörtgen bahçe. Dört köşe işaretli; ara direkler gösterilmiyor.",
+        "imageWidth": 460,
+        "imageHeight": 145
+      },
+      {
+        "id": "m6-1-t4-02",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "A ve B, sıfırdan farklı ve birbirinden farklı rakamlardır. Dört basamaklı A6B4 sayısı, şemadaki iki koşulu da sağlamaktadır.\n\nBu koşullara uyan en büyük A6B4 sayısı hangisidir?",
+        "options": [
+          "6624",
+          "8644",
+          "9664",
+          "9684"
+        ],
+        "correct": 3,
+        "explanation": "4'e bölünebilmek için B4 sayısı 4'ün katı olmalı; bu nedenle B, 2, 4, 6 veya 8 olabilir. En büyük sayı için önce A = 9 denenir. Rakamlar toplamı 19 + B'dir; 9'un katı olması için B = 8 gerekir. 9684 sayısında A ve B sıfırdan farklı ve birbirinden farklıdır; iki bölünebilme koşulu da sağlanır. A zaten en büyük rakam olduğundan daha büyük uygun bir sayı yoktur.",
+        "imageUrl": "/grade6/matematik/test-4/soru-02.svg",
+        "imageAlt": "A6B4 sayısından iki koşula oklar uzanıyor: 4'e kalansız bölünür ve 9'a kalansız bölünür. İki koşul da sağlanıyor.",
+        "imageWidth": 460,
+        "imageHeight": 145
+      },
+      {
+        "id": "m6-1-t4-03",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Çarpan ağacında kendisinden iki dal çıkan her kutudaki sayı, bu iki dalın ucundaki sayıların çarpımına eşittir.\n\nAşağıdakilerden hangisi N sayısının bir çarpanı değildir?",
+        "options": [
+          "24",
+          "45",
+          "80",
+          "90"
+        ],
+        "correct": 2,
+        "explanation": "N = 2 × 2 × 2 × 3 × 3 × 5 = 360'tır. 360 ÷ 24 = 15, 360 ÷ 45 = 8 ve 360 ÷ 90 = 4'tür. Ancak 360, 80'e kalansız bölünmez; bu yüzden 80 bir çarpanı değildir.",
+        "imageUrl": "/grade6/matematik/test-4/soru-03.svg",
+        "imageAlt": "Çarpan ağacında N, iki bilinmeyene ayrılıyor. Sol bilinmeyenin dalları 2 ve bir bilinmeyen; bu bilinmeyenin dalları 2 ve 2. Sağ bilinmeyenin dalları 5 ve bir bilinmeyen; bu bilinmeyenin dalları 3 ve 3.",
+        "imageWidth": 460,
+        "imageHeight": 145
+      },
+      {
+        "id": "m6-1-t4-04",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "İki uyarı lambası, şemada gösterilen düzeni aynı aralıklarla sürdürüyor. Her yanmada hemen sönüyor.\n\n08.00'den sonra 09.30'a kadar (09.30 dâhil) yalnızca bir lambanın yandığı kaç farklı an vardır?",
+        "options": [
+          "8",
+          "10",
+          "12",
+          "14"
+        ],
+        "correct": 0,
+        "explanation": "90 dakikada K lambası 7, M lambası 5 kez yanar; başlangıç sayılmaz. Birlikte yanmaları 12 ile 18'in ortak katları olan 36. ve 72. dakikalardadır. Yalnız bir lambanın yandığı an sayısı (7 − 2) + (5 − 2) = 8'dir.",
+        "imageUrl": "/grade6/matematik/test-4/soru-04.svg",
+        "imageAlt": "K lambasının ilk yanma saatleri 08.00, 08.12 ve 08.24; aralık 12 dakika. M lambasının ilk yanma saatleri 08.00, 08.18 ve 08.36; aralık 18 dakika. İki düzen 09.30'a kadar sürüyor.",
+        "imageWidth": 460,
+        "imageHeight": 145
+      },
+      {
+        "id": "m6-1-t4-05",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Robot, 2 yazılı kareden 19 yazılı kareye gidecektir. Yalnız asal sayıların yazılı olduğu karelere basabilir; sağa, sola, yukarı veya aşağı bir kare ilerleyebilir. Bir kareye ikinci kez basamaz.\n\nRobotun geçtiği karelerdeki sayıların toplamı kaçtır? (Başlangıç ve bitiş dâhildir.)",
+        "options": [
+          "59",
+          "66",
+          "68",
+          "70"
+        ],
+        "correct": 3,
+        "explanation": "Geçilebilen tek yol 2 → 3 → 5 → 11 → 13 → 17 → 19'dur. Diğer karelerde asal olmayan sayılar vardır. Toplam 2 + 3 + 5 + 11 + 13 + 17 + 19 = 70'tir.",
+        "imageUrl": "/grade6/matematik/test-4/soru-05.svg",
+        "imageAlt": "4 satır ve 4 sütunlu sayı parkuru. Satırlar soldan sağa: 2, 9, 25, 49; 3, 5, 11, 27; 15, 21, 13, 17; 35, 22, 39, 19. Başlangıç sol üstteki 2, bitiş sağ alttaki 19.",
+        "imageWidth": 460,
+        "imageHeight": 145
+      },
+      {
+        "id": "m6-1-t4-06",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Şekildeki 60 eş kare; aralarında boşluk kalmadan, üst üste gelmeden ve hepsi kullanılarak yeni bir dikdörtgen oluşturacak biçimde yeniden dizilecektir. Yeni dikdörtgenin kısa kenarı en az 4 kareden oluşacaktır.\n\nYeni dikdörtgenin çevresi en fazla kaç santimetre olabilir?",
+        "options": [
+          "64",
+          "68",
+          "76",
+          "92"
+        ],
+        "correct": 2,
+        "explanation": "60'ın kısa kenarı en az 4 kare olan çarpan çiftleri 4 × 15, 5 × 12 ve 6 × 10'dur. Kare kenarı 2 cm olduğundan çevreler sırasıyla 76, 68 ve 64 cm'dir. En büyük çevre 76 cm olur; 3 × 20 düzeni kısa kenar koşulunu sağlamaz.",
+        "imageUrl": "/grade6/matematik/test-4/soru-06.svg",
+        "imageAlt": "Başlangıç düzeni 5 satır ve 12 sütunda toplam 60 eş kareden oluşuyor. Ayrı gösterilen bir karenin kenarı 2 cm.",
+        "imageWidth": 460,
+        "imageHeight": 145
+      },
+      {
+        "id": "m6-1-t4-07",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "A ve B, 100'den küçük pozitif doğal sayılardır. Şemada A'nın ve B'nin tüm asal çarpanları gösterilmiştir. Ortak bölgede bulunan 3, iki sayının da asal çarpanıdır.\n\nBuna göre A + B en fazla kaç olabilir?",
+        "options": [
+          "153",
+          "127",
+          "147",
+          "174"
+        ],
+        "correct": 0,
+        "explanation": "A'nın asal çarpanları yalnız 2, 3 ve 5 olduğundan A, 30'un bir katıdır. 100'den küçük uygun en büyük değer 90'dır. B'nin asal çarpanları yalnız 3 ve 7'dir; uygun değerler 21 ve 63'tür. 42 ve 84'te ayrıca 2 asal çarpanı bulunduğundan alınamaz. En büyük toplam 90 + 63 = 153'tür.",
+        "imageUrl": "/grade6/matematik/test-4/soru-07.svg",
+        "imageAlt": "A ve B'nin tüm asal çarpanlarını gösteren kesişen iki oval. Yalnız A bölgesinde 2 ve 5, ortak bölgede 3, yalnız B bölgesinde 7 var.",
+        "imageWidth": 460,
+        "imageHeight": 145
+      },
+      {
+        "id": "m6-1-t4-08",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Dört kutuya pozitif doğal sayılar yazılacaktır. Her satırın sağındaki sayı, o satırdaki iki sayının çarpımıdır. Her sütunun altındaki sayı da o sütundaki iki sayının çarpımıdır.\n\nDört kutuya yazılacak sayıların toplamı kaçtır?",
+        "options": [
+          "24",
+          "26",
+          "28",
+          "30"
+        ],
+        "correct": 1,
+        "explanation": "Sol alttaki sayı hem 35'in hem 14'ün çarpanı olduğundan 1 veya 7 olabilir. 1 olsaydı sol üst 14 olurdu; 14 ise 24'ün çarpanı değildir. Bu yüzden sol alt 7, sol üst 2, sağ alt 5 ve sağ üst 12'dir. Toplam 2 + 12 + 7 + 5 = 26'dır; sağ sütun da 12 × 5 = 60 koşulunu sağlar.",
+        "imageUrl": "/grade6/matematik/test-4/soru-08.svg",
+        "imageAlt": "İki satır ve iki sütunda dört bilinmeyen kutu. Üst satırın çarpımı 24, alt satırın çarpımı 35. Sol sütunun çarpımı 14, sağ sütunun çarpımı 60.",
+        "imageWidth": 460,
+        "imageHeight": 145
+      },
+      {
+        "id": "m6-1-t4-09",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Bir kavanozdaki boncuk sayısı 150'den fazla, 200'den azdır. Aynı boncukların tamamı, her denemede tabloda belirtilen sayıda boncuk alan kutulara dolduruluyor. Son kutuyu doldurmaya yetmeyen boncuklar artıyor.\n\nKavanozda kaç boncuk vardır?",
+        "options": [
+          "162",
+          "170",
+          "182",
+          "194"
+        ],
+        "correct": 1,
+        "explanation": "Boncuk sayısından 2 çıkarılınca kalan sayı hem 6'nın hem 8'in katı olmalıdır. Bu ortak katlar 24'ün katlarıdır. 150 ile 200 arasındaki sayı için olasılıklar 170 ve 194'tür. Son satıra göre boncuk sayısı 5'e de kalansız bölünmelidir; yalnız 170 uygundur.",
+        "imageUrl": "/grade6/matematik/test-4/soru-09.svg",
+        "imageAlt": "Tablo sütunları: Bir kutunun aldığı boncuk ve artan boncuk. Satırlar sırasıyla: 6 ve 2; 8 ve 2; 5 ve 0.",
+        "imageWidth": 460,
+        "imageHeight": 145
+      },
+      {
+        "id": "m6-1-t4-10",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Başlangıçtan bitişe giderken K, L, M veya N noktalarından yalnız birinden geçilecektir. Seçilen yolun toplam uzunluğu hem 3'e hem 4'e kalansız bölünmeli, fakat 5'e kalansız bölünmemelidir.\n\nHangi noktadan geçen yol seçilmelidir?",
+        "options": [
+          "K",
+          "L",
+          "M",
+          "N"
+        ],
+        "correct": 0,
+        "explanation": "Toplam uzunluklar K için 18 + 30 = 48, L için 24 + 36 = 60, M için 20 + 34 = 54 ve N için 26 + 38 = 64 km'dir. 48 hem 3'e hem 4'e bölünür, 5'e bölünmez. 60, 5'e de bölünür; 54, 4'e ve 64, 3'e bölünmez. Yalnız K yolu uygundur.",
+        "imageUrl": "/grade6/matematik/test-4/soru-10.svg",
+        "imageAlt": "Başlangıçtan bitişe dört yol. K üzerinden iki bölüm 18 km ve 30 km; L üzerinden 24 km ve 36 km; M üzerinden 20 km ve 34 km; N üzerinden 26 km ve 38 km. Ara noktalar birbirine bağlı değil.",
+        "imageWidth": 460,
+        "imageHeight": 145
+      }
+    ],
   },
   term2: {},
 };

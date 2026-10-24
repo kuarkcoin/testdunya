@@ -37,6 +37,7 @@ export default function Grade6QuizClient({ subjectId, subjectLabel, term, testNo
   const resultHeading = useRef<HTMLHeadingElement>(null);
   const modalClose = useRef<HTMLButtonElement>(null);
   const currentQuestion = questions[questionIndex];
+  const enlargedQuestion = questions.find((question) => question.imageUrl === imageUrl);
   const correctCount = useMemo(() => questions.filter((question, index) => answers[index] === question.correct).length, [answers, questions]);
   const percentage = questions.length ? Math.round(correctCount / questions.length * 100) : 0;
 
@@ -114,7 +115,7 @@ export default function Grade6QuizClient({ subjectId, subjectLabel, term, testNo
     stopReading();
     const clean = (text: string) => text.replace(/\$/g, '').replace(/\\[a-zA-Z]+/g, ' ').replace(/[{}]/g, ' ');
     const options = currentQuestion.options.map((option, index) => `${String.fromCharCode(65 + index)}. ${clean(option)}`).join('. ');
-    const utterance = new SpeechSynthesisUtterance(`${clean(currentQuestion.prompt)}. ${options}`);
+    const utterance = new SpeechSynthesisUtterance(`${clean(currentQuestion.prompt)}. ${currentQuestion.imageAlt ? clean(currentQuestion.imageAlt) + ". " : ""}${options}`);
     utterance.lang = subjectId === 'ingilizce' ? 'en-US' : 'tr-TR';
     utterance.rate = 0.95;
     window.speechSynthesis.speak(utterance);
@@ -156,7 +157,7 @@ export default function Grade6QuizClient({ subjectId, subjectLabel, term, testNo
                     <span className={`rounded-full px-3 py-1 text-sm font-bold ${correct ? 'bg-emerald-50 text-emerald-800' : 'bg-rose-50 text-rose-800'}`}>{correct ? 'Doğru ✓' : 'Yanlış ✕'}</span>
                   </div>
                   <p className="whitespace-pre-line break-words font-bold leading-relaxed"><SmartText text={question.prompt} /></p>
-                  {question.imageUrl && <Image src={question.imageUrl} alt={`${index + 1}. sorunun görseli`} width={900} height={600} className="h-auto max-h-80 w-full object-contain" />}
+                  {question.imageUrl && <Image src={question.imageUrl} alt={question.imageAlt ?? `${index + 1}. sorunun görseli`} width={question.imageWidth ?? 900} height={question.imageHeight ?? 600} className="h-auto max-h-80 w-full object-contain" />}
                   {!correct && <p className="rounded-xl bg-rose-50 p-3 text-rose-900"><strong>Senin cevabın: </strong><SmartText text={question.options[answers[index]] ?? 'Cevaplanmadı'} /></p>}
                   <p className="rounded-xl bg-emerald-50 p-3 text-emerald-900"><strong>Doğru cevap: </strong>{String.fromCharCode(65 + question.correct)}) <SmartText text={question.options[question.correct]} /></p>
                   <div className="space-y-2 rounded-xl bg-indigo-50 p-4 text-slate-800">
@@ -186,9 +187,10 @@ export default function Grade6QuizClient({ subjectId, subjectLabel, term, testNo
           <div className="space-y-6 rounded-[1.75rem] border border-slate-200 bg-white p-4 shadow-lg md:p-8">
             <h2 id="grade6-question" ref={questionHeading} tabIndex={-1} className="scroll-mt-6 whitespace-pre-line break-words text-lg font-extrabold leading-relaxed text-slate-800 md:text-2xl"><SmartText text={currentQuestion.prompt} /></h2>
             {currentQuestion.imageUrl && (
-              <button onClick={() => { cancelNext(); stopReading(); setImageUrl(currentQuestion.imageUrl!); }} aria-label="Soru görselini büyüt" className="block w-full rounded-xl">
-                <Image src={currentQuestion.imageUrl} alt="Soru görseli" width={900} height={600} className="h-auto max-h-96 w-full rounded-xl object-contain" />
+              <button onClick={() => { cancelNext(); stopReading(); setImageUrl(currentQuestion.imageUrl!); }} aria-label="Soru görselini büyüt" aria-describedby={currentQuestion.imageAlt ? 'grade6-image-description' : undefined} className="block w-full rounded-xl">
+                <Image src={currentQuestion.imageUrl} alt={currentQuestion.imageAlt ?? "Soru görseli"} width={currentQuestion.imageWidth ?? 900} height={currentQuestion.imageHeight ?? 600} className="h-auto max-h-96 w-full rounded-xl object-contain" />
                 <span className="block py-2 text-sm font-bold text-indigo-700">Görseli büyüt 🔍</span>
+                {currentQuestion.imageAlt && <span id="grade6-image-description" className="sr-only">{currentQuestion.imageAlt}</span>}
               </button>
             )}
             <div role="group" aria-labelledby="grade6-question" className="grid gap-3">
@@ -213,7 +215,7 @@ export default function Grade6QuizClient({ subjectId, subjectLabel, term, testNo
         <div role="dialog" aria-modal="true" aria-label="Büyütülmüş soru görseli" onClick={() => setImageUrl(null)} className="fixed inset-0 z-[999] flex items-center justify-center bg-black/70 p-3">
           <div onClick={(event) => event.stopPropagation()} className="w-full max-w-4xl space-y-3 rounded-2xl bg-white p-4">
             <div className="flex justify-end"><button ref={modalClose} onClick={() => setImageUrl(null)} className="rounded-xl bg-slate-800 px-5 py-3 font-black text-white">Kapat ✕</button></div>
-            <Image src={imageUrl} alt="Büyütülmüş soru görseli" width={1200} height={800} className="max-h-[75vh] w-full object-contain" />
+            <Image src={imageUrl} alt={enlargedQuestion?.imageAlt ?? "Büyütülmüş soru görseli"} width={enlargedQuestion?.imageWidth ?? 1200} height={enlargedQuestion?.imageHeight ?? 800} className="h-auto max-h-[75vh] w-full object-contain" />
           </div>
         </div>
       )}

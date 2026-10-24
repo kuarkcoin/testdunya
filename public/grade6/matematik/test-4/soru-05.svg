@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="145" viewBox="0 0 460 145" role="img">
+<title>Robotun sayı parkuru</title>
+<rect x="165" y="8" width="32" height="32" rx="0" fill="#DFF2F1" stroke="#15354B" stroke-width="1" stroke-linejoin="round"/>
+<text x="181.0" y="24.0" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="700" fill="#193747">2</text>
+<rect x="197" y="8" width="32" height="32" rx="0" fill="#FFFFFF" stroke="#15354B" stroke-width="1" stroke-linejoin="round"/>
+<text x="213.0" y="24.0" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" fill="#193747">9</text>
+<rect x="229" y="8" width="32" height="32" rx="0" fill="#FFFFFF" stroke="#15354B" stroke-width="1" stroke-linejoin="round"/>
+<text x="245.0" y="24.0" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" fill="#193747">25</text>
+<rect x="261" y="8" width="32" height="32" rx="0" fill="#FFFFFF" stroke="#15354B" stroke-width="1" stroke-linejoin="round"/>
+<text x="277.0" y="24.0" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" fill="#193747">49</text>
+<rect x="165" y="40" width="32" height="32" rx="0" fill="#FFFFFF" stroke="#15354B" stroke-width="1" stroke-linejoin="round"/>
+<text x="181.0" y="56.0" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" fill="#193747">3</text>
+<rect x="197" y="40" width="32" height="32" rx="0" fill="#FFFFFF" stroke="#15354B" stroke-width="1" stroke-linejoin="round"/>
+<text x="213.0" y="56.0" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" fill="#193747">5</text>
+<rect x="229" y="40" width="32" height="32" rx="0" fill="#FFFFFF" stroke="#15354B" stroke-width="1" stroke-linejoin="round"/>
+<text x="245.0" y="56.0" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" fill="#193747">11</text>
+<rect x="261" y="40" width="32" height="32" rx="0" fill="#FFFFFF" stroke="#15354B" stroke-width="1" stroke-linejoin="round"/>
+<text x="277.0" y="56.0" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" fill="#193747">27</text>
+<rect x="165" y="72" width="32" height="32" rx="0" fill="#FFFFFF" stroke="#15354B" stroke-width="1" stroke-linejoin="round"/>
+<text x="181.0" y="88.0" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" fill="#193747">15</text>
+<rect x="197" y="72" width="32" height="32" rx="0" fill="#FFFFFF" stroke="#15354B" stroke-width="1" stroke-linejoin="round"/>
+<text x="213.0" y="88.0" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" fill="#193747">21</text>
+<rect x="229" y="72" width="32" height="32" rx="0" fill="#FFFFFF" stroke="#15354B" stroke-width="1" stroke-linejoin="round"/>
+<text x="245.0" y="88.0" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" fill="#193747">13</text>
+<rect x="261" y="72" width="32" height="32" rx="0" fill="#FFFFFF" stroke="#15354B" stroke-width="1" stroke-linejoin="round"/>
+<text x="277.0" y="88.0" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" fill="#193747">17</text>
+<rect x="165" y="104" width="32" height="32" rx="0" fill="#FFFFFF" stroke="#15354B" stroke-width="1" stroke-linejoin="round"/>
+<text x="181.0" y="120.0" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" fill="#193747">35</text>
+<rect x="197" y="104" width="32" height="32" rx="0" fill="#FFFFFF" stroke="#15354B" stroke-width="1" stroke-linejoin="round"/>
+<text x="213.0" y="120.0" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" fill="#193747">22</text>
+<rect x="229" y="104" width="32" height="32" rx="0" fill="#FFFFFF" stroke="#15354B" stroke-width="1" stroke-linejoin="round"/>
+<text x="245.0" y="120.0" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" fill="#193747">39</text>
+<rect x="261" y="104" width="32" height="32" rx="0" fill="#DFF2F1" stroke="#15354B" stroke-width="1" stroke-linejoin="round"/>
+<text x="277.0" y="120.0" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="700" fill="#193747">19</text>
+<text x="74" y="24" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" fill="#087E8B">BAŞLANGIÇ</text>
+<line x1="113" y1="24" x2="159" y2="24" fill="none" stroke="#087E8B" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="159,24 154.61208719054812,26.397127693021016 154.61208719054812,21.602872306978984" fill="#087E8B" stroke="#087E8B" stroke-width="0.5" stroke-linejoin="round"/>
+<text x="376" y="120" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" fill="#087E8B">BİTİŞ</text>
+<line x1="299" y1="120" x2="339" y2="120" fill="none" stroke="#087E8B" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="339,120 334.61208719054815,122.39712769302102 334.61208719054815,117.60287230697898" fill="#087E8B" stroke="#087E8B" stroke-width="0.5" stroke-linejoin="round"/>
+</svg>

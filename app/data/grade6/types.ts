@@ -14,6 +14,9 @@ export interface Question6 {
   correct: number; // 0, 1, 2, 3 (index mantığı)
   explanation: string;
   imageUrl?: string; // İsteğe bağlı görsel desteği
+  imageAlt?: string; // Şeklin verilerini, çözümü açıklamadan aktarır
+  imageWidth?: number;
+  imageHeight?: number;
 }
 
 // 3. Test bazlı gruplandırma (test1, test2... testN)

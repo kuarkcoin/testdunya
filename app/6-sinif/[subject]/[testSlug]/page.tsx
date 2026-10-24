@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!subject || !test) return { title: '6. Sınıf Test Bulunamadı' };
   return {
     title: `6. Sınıf ${subject.label} ${test.title}`,
-    description: `${test.questions.length} soruluk 6. sınıf ${subject.label} başlangıç testi. Testi çöz, puanını ve açıklamalı cevapları incele.`,
+    description: `${test.questions.length} soruluk 6. sınıf ${subject.label} ${test.topic} testi. Testi çöz, puanını ve açıklamalı cevapları incele.`,
     alternates: { canonical: `${canonicalBase}/6-sinif/${subject.id}/${test.slug}` },
   };
 }

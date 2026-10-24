@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="145" viewBox="0 0 460 145" role="img">
+<title>Satır ve sütun çarpımları</title>
+<text x="338" y="10" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="400" fill="#566D7A">Satır çarpımı</text>
+<rect x="158" y="12" width="47" height="47" rx="0" fill="#F1F6F8" stroke="#15354B" stroke-width="1.2" stroke-linejoin="round"/>
+<text x="181.5" y="35.5" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="20" font-weight="700" fill="#087E8B">?</text>
+<rect x="205" y="12" width="47" height="47" rx="0" fill="#F1F6F8" stroke="#15354B" stroke-width="1.2" stroke-linejoin="round"/>
+<text x="228.5" y="35.5" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="20" font-weight="700" fill="#087E8B">?</text>
+<line x1="261" y1="35.5" x2="304" y2="35.5" fill="none" stroke="#566D7A" stroke-width="1.3" stroke-linejoin="round"/>
+<polygon points="304,35.5 299.61208719054815,37.89712769302101 299.61208719054815,33.10287230697899" fill="#566D7A" stroke="#566D7A" stroke-width="0.5" stroke-linejoin="round"/>
+<text x="337" y="35.5" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="700" fill="#193747">24</text>
+<rect x="158" y="59" width="47" height="47" rx="0" fill="#F1F6F8" stroke="#15354B" stroke-width="1.2" stroke-linejoin="round"/>
+<text x="181.5" y="82.5" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="20" font-weight="700" fill="#087E8B">?</text>
+<rect x="205" y="59" width="47" height="47" rx="0" fill="#F1F6F8" stroke="#15354B" stroke-width="1.2" stroke-linejoin="round"/>
+<text x="228.5" y="82.5" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="20" font-weight="700" fill="#087E8B">?</text>
+<line x1="261" y1="82.5" x2="304" y2="82.5" fill="none" stroke="#566D7A" stroke-width="1.3" stroke-linejoin="round"/>
+<polygon points="304,82.5 299.61208719054815,84.89712769302102 299.61208719054815,80.10287230697898" fill="#566D7A" stroke="#566D7A" stroke-width="0.5" stroke-linejoin="round"/>
+<text x="337" y="82.5" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="700" fill="#193747">35</text>
+<line x1="181.5" y1="110" x2="181.5" y2="121" fill="none" stroke="#566D7A" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="181.5,121 179.58229784558318,117.48966975243852 183.41770215441682,117.48966975243852" fill="#566D7A" stroke="#566D7A" stroke-width="0.5" stroke-linejoin="round"/>
+<text x="181.5" y="134" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="700" fill="#193747">14</text>
+<line x1="228.5" y1="110" x2="228.5" y2="121" fill="none" stroke="#566D7A" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="228.5,121 226.58229784558318,117.48966975243852 230.41770215441682,117.48966975243852" fill="#566D7A" stroke="#566D7A" stroke-width="0.5" stroke-linejoin="round"/>
+<text x="228.5" y="134" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="700" fill="#193747">60</text>
+<text x="140" y="134" dominant-baseline="middle" text-anchor="end" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="400" fill="#566D7A">Sütun çarpımı</text>
+</svg>

@@ -18,13 +18,14 @@ const routes = [
   ...grade6.getGrade6SubjectParams().map(({ subject }) => `/6-sinif/${subject}`),
   ...grade6.getGrade6TestParams().map(({ subject, testSlug }) => `/6-sinif/${subject}/${testSlug}`),
 ];
-assert.equal(routes.length, 17);
+const tests = grade6.grade6Subjects.flatMap((subject) => grade6.getGrade6Tests(subject.id));
+assert.equal(routes.length, 1 + grade6.grade6Subjects.length + tests.length);
 assert.equal(new Set(routes).size, routes.length);
 assert.equal(grade6.getGrade6Subject('invalid-subject'), undefined);
 assert.equal(grade6.getGrade6Test('matematik', 'test-999'), undefined);
 const sitemapUrls = new Set(sitemap.map((entry) => entry.url));
 assert.equal(sitemapUrls.size, sitemap.length, 'Duplicate sitemap URL');
-assert.equal(sitemap.filter((entry) => entry.url.includes('/6-sinif')).length, 17);
+assert.equal(sitemap.filter((entry) => entry.url.includes('/6-sinif')).length, routes.length);
 for (const route of routes) {
   const url = `${grade6.canonicalBase}${route}`;
   assert(sitemapUrls.has(url), `Missing sitemap entry: ${route}`);
@@ -33,9 +34,19 @@ for (const route of routes) {
   const html = fs.readFileSync(file, 'utf8');
   assert(html.includes(`<link rel="canonical" href="${url}"`), `Wrong canonical: ${route}`);
   assert(html.includes('maximum-scale=5'), `Mobile zoom disabled: ${route}`);
-  if (route.includes('/test-')) {
+  const test = tests.find((item) => route === `/6-sinif/${item.subject.id}/${item.slug}`);
+  if (test) {
     assert.equal((html.match(/aria-pressed="false"/g) || []).length, 4, `Expected four options: ${route}`);
-    assert(html.includes('aria-valuemax="10"'), `Wrong question count: ${route}`);
+    assert(html.includes(`aria-valuemax="${test.questions.length}"`), `Wrong question count: ${route}`);
+    const firstQuestion = test.questions[0];
+    if (firstQuestion.imageUrl) {
+      assert(html.includes(`src="${firstQuestion.imageUrl}"`), `Missing initial diagram: ${route}`);
+      assert(html.includes('aria-label="Soru görselini büyüt"'), `Missing image zoom trigger: ${route}`);
+      assert(html.includes('aria-describedby="grade6-image-description"'), `Missing accessible zoom description: ${route}`);
+      const escapeHtml = (text) => text.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      assert(html.includes(`alt="${escapeHtml(firstQuestion.imageAlt)}"`), `Missing diagram description: ${route}`);
+      assert(html.includes(`width="${firstQuestion.imageWidth}" height="${firstQuestion.imageHeight}"`), `Wrong diagram aspect ratio: ${route}`);
+    }
   }
 }
 for (const subject of grade5.grade5Subjects) {
@@ -50,9 +61,19 @@ assert(home.includes('href="/5-sinif"'), 'Existing homepage grade-5 link missing
 
 // Existing links stay stable when new questions are added to either term.
 const oldSlugs = grade6.getGrade6Tests('matematik').map((test) => test.slug);
-grade6.grade6Data.matematik.term1.test4 = grade6.grade6Data.matematik.term1.test1;
-grade6.grade6Data.matematik.term2.test1 = grade6.grade6Data.matematik.term1.test1;
-const expanded = grade6.getGrade6Tests('matematik');
-assert(oldSlugs.every((slug) => expanded.some((test) => test.slug === slug)));
-assert(expanded.some((test) => test.slug === '2-donem-test-1'));
-console.log('PASS: 17 generated grade-6 pages and sitemap URLs, homepage link, canonical URLs, mobile zoom, quiz markup, stable test URLs, and existing grade-5 sitemap entries. Browser interactions are not covered.');
+const math = grade6.grade6Data.matematik;
+const nextKey = (term) => `test${Math.max(0, ...Object.keys(term).map((key) => Number(key.slice(4))).filter(Number.isFinite)) + 1}`;
+const term1Key = nextKey(math.term1);
+const term2Key = nextKey(math.term2);
+try {
+  math.term1[term1Key] = math.term1.test1;
+  math.term2[term2Key] = math.term1.test1;
+  const expanded = grade6.getGrade6Tests('matematik');
+  assert(oldSlugs.every((slug) => expanded.some((test) => test.slug === slug)));
+  assert(expanded.some((test) => test.slug === `test-${term1Key.slice(4)}`));
+  assert(expanded.some((test) => test.slug === `2-donem-test-${term2Key.slice(4)}`));
+} finally {
+  delete math.term1[term1Key];
+  delete math.term2[term2Key];
+}
+console.log(`PASS: ${routes.length} generated grade-6 pages and sitemap URLs, homepage link, canonical URLs, mobile zoom, quiz and diagram markup, stable test URLs, and existing grade-5 sitemap entries. Browser interactions are not covered.`);

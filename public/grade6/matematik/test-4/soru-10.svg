@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="145" viewBox="0 0 460 145" role="img">
+<title>Dört alternatif yol</title>
+<line x1="39" y1="73" x2="218" y2="12" fill="none" stroke="#087E8B" stroke-width="1.5" stroke-linejoin="round"/>
+<line x1="242" y1="12" x2="421" y2="73" fill="none" stroke="#087E8B" stroke-width="1.5" stroke-linejoin="round"/>
+<circle cx="230" cy="12" r="10" fill="#FFFFFF" stroke="#15354B" stroke-width="1.3" stroke-linejoin="round"/>
+<text x="230" y="12" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="700" fill="#193747">K</text>
+<rect x="118" y="33.5" width="46" height="18" rx="3" fill="#FFFFFF" stroke="none" stroke-width="1.3" stroke-linejoin="round"/>
+<text x="141" y="42.5" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="700" fill="#193747">18 km</text>
+<rect x="296" y="33.5" width="46" height="18" rx="3" fill="#FFFFFF" stroke="none" stroke-width="1.3" stroke-linejoin="round"/>
+<text x="319" y="42.5" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="700" fill="#193747">30 km</text>
+<line x1="39" y1="73" x2="218" y2="52" fill="none" stroke="#15354B" stroke-width="1.5" stroke-linejoin="round"/>
+<line x1="242" y1="52" x2="421" y2="73" fill="none" stroke="#15354B" stroke-width="1.5" stroke-linejoin="round"/>
+<circle cx="230" cy="52" r="10" fill="#FFFFFF" stroke="#15354B" stroke-width="1.3" stroke-linejoin="round"/>
+<text x="230" y="52" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="700" fill="#193747">L</text>
+<rect x="118" y="53.5" width="46" height="18" rx="3" fill="#FFFFFF" stroke="none" stroke-width="1.3" stroke-linejoin="round"/>
+<text x="141" y="62.5" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="700" fill="#193747">24 km</text>
+<rect x="296" y="53.5" width="46" height="18" rx="3" fill="#FFFFFF" stroke="none" stroke-width="1.3" stroke-linejoin="round"/>
+<text x="319" y="62.5" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="700" fill="#193747">36 km</text>
+<line x1="39" y1="73" x2="218" y2="92" fill="none" stroke="#087E8B" stroke-width="1.5" stroke-linejoin="round"/>
+<line x1="242" y1="92" x2="421" y2="73" fill="none" stroke="#087E8B" stroke-width="1.5" stroke-linejoin="round"/>
+<circle cx="230" cy="92" r="10" fill="#FFFFFF" stroke="#15354B" stroke-width="1.3" stroke-linejoin="round"/>
+<text x="230" y="92" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="700" fill="#193747">M</text>
+<rect x="118" y="73.5" width="46" height="18" rx="3" fill="#FFFFFF" stroke="none" stroke-width="1.3" stroke-linejoin="round"/>
+<text x="141" y="82.5" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="700" fill="#193747">20 km</text>
+<rect x="296" y="73.5" width="46" height="18" rx="3" fill="#FFFFFF" stroke="none" stroke-width="1.3" stroke-linejoin="round"/>
+<text x="319" y="82.5" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="700" fill="#193747">34 km</text>
+<line x1="39" y1="73" x2="218" y2="132" fill="none" stroke="#15354B" stroke-width="1.5" stroke-linejoin="round"/>
+<line x1="242" y1="132" x2="421" y2="73" fill="none" stroke="#15354B" stroke-width="1.5" stroke-linejoin="round"/>
+<circle cx="230" cy="132" r="10" fill="#FFFFFF" stroke="#15354B" stroke-width="1.3" stroke-linejoin="round"/>
+<text x="230" y="132" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="700" fill="#193747">N</text>
+<rect x="118" y="93.5" width="46" height="18" rx="3" fill="#FFFFFF" stroke="none" stroke-width="1.3" stroke-linejoin="round"/>
+<text x="141" y="102.5" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="700" fill="#193747">26 km</text>
+<rect x="296" y="93.5" width="46" height="18" rx="3" fill="#FFFFFF" stroke="none" stroke-width="1.3" stroke-linejoin="round"/>
+<text x="319" y="102.5" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" font-weight="700" fill="#193747">38 km</text>
+<circle cx="30" cy="73" r="6" fill="#15354B" stroke="#15354B" stroke-width="1.3" stroke-linejoin="round"/>
+<text x="30" y="47" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="9" font-weight="700" fill="#193747">Başlangıç</text>
+<circle cx="430" cy="73" r="6" fill="#15354B" stroke="#15354B" stroke-width="1.3" stroke-linejoin="round"/>
+<text x="430" y="47" dominant-baseline="middle" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="9" font-weight="700" fill="#193747">Bitiş</text>
+</svg>
