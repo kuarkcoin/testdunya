@@ -1,6 +1,6 @@
 # 6. sınıf başlangıç paketi
 
-260 özgün soru: Matematikte 10, Fen Bilimlerinde 10, Türkçe ve İngilizcede üçer test; her test 10 soru. Matematik Test 1, Test 4, Test 5 ve Test 6, onar şekilli akıl yürütme sorusu içerir. Test 1, eski 10 soru yerine orta–zor düzeyde 10 şekilli soruyla yenilenmiştir; toplam test ve soru sayısı değişmemiştir. Test 7, Test 8, Test 9 ve Test 10, yedişer şekilli ve üçer şekilsiz orta–zor soru içerir. Fen Test 1, Test 2 ve Test 3, yedişer şekilli ve üçer şekilsiz orta–zor soruyla yenilenmiştir. Testler mevcut birinci dönem kayıt yapısında tutulur; yeni matematik testleri yılın farklı temalarından seçilmiştir. Tüm yıl/müfredat kapsandığı veya MEB onayı bulunduğu iddia edilmez. İkinci dönem için soru eklenmedi.
+290 özgün soru: Matematikte 10, Fen Bilimlerinde 10, Türkçede 3 ve İngilizcede 6 test; her test 10 soru. Matematik Test 1, Test 4, Test 5 ve Test 6, onar şekilli akıl yürütme sorusu içerir. Test 1, eski 10 soru yerine orta–zor düzeyde 10 şekilli soruyla yenilenmiştir; toplam test ve soru sayısı değişmemiştir. Test 7, Test 8, Test 9 ve Test 10, yedişer şekilli ve üçer şekilsiz orta–zor soru içerir. Fen Test 1, Test 2 ve Test 3, yedişer şekilli ve üçer şekilsiz orta–zor soruyla yenilenmiştir. Testler mevcut birinci dönem kayıt yapısında tutulur; yeni matematik testleri yılın farklı temalarından seçilmiştir. Tüm yıl/müfredat kapsandığı veya MEB onayı bulunduğu iddia edilmez. İkinci dönem için soru eklenmedi.
 
 ## Kaynaklar (23–24 Ekim 2026)
 
@@ -224,4 +224,12 @@ Toplam: 23 test, 230 soru, 117 SVG, 28 rota. Önceki 220 soru ve 110 SVG korunur
 - Yeni `/6-sinif/ingilizce/test-5` rotası: **At the Fair: Lunapark Etkinlikleri ve Görüşler (Orta)**. Kullanıcının verdiği konu sırası esas alınır; güncel resmî MEB tema adı veya tüm müfredat kapsamı iddiası yoktur.
 - 7 görselli + 3 metin sorusu; lunapark oyuncakları, şu anki etkinlikler, ortak tercihler, giriş kuralı, kişisel görüş karşılaştırması, açılış saatleri ve kibar ret. İngilizce soru/seçenekler, Türkçe açıklamalar. Duygular kişilerin açık ifadelerine dayanır. Anahtar: **B, D, A, C, B, D, C, A, D, B**.
 - Yedi pasif SVG: 360 birim genişlik, en az 26 birim yazı; 238 piksel çıktıları okunabilirlik ve kırpılma açısından denetlenir. Önceki 270 soru ve 166 SVG korunur. Yeni toplam: 28 test / 280 soru / 173 SVG / 33 rota.
+- Bağımsız dil/tek-doğru-cevap ve görsel denetimi, veri/rota doğrulaması, TypeScript ve üretim derlemesi uygulanır. Tarayıcı etkileşim testi yapılmadı; production’a otomatik aktarım yapılmaz.
+
+
+## İngilizce Test 6 — Karma Tekrar (24 Ekim 2026)
+
+- Yeni `/6-sinif/ingilizce/test-6` rotası: **Karma Tekrar: İlk Beş Konu (Orta)**. Kullanıcının verdiği Life, Yummy Breakfast, Downtown, Weather and Emotions ve At the Fair konularının karma tekrarıdır. Yeni tema veya tam/güncel resmî müfredat kapsamı iddiası yoktur.
+- 7 görselli + 3 metin sorusu; saatli rutin, eksik kahvaltı siparişi, şehir haritası, hava durumuna uygun plan, alışkanlık/şimdiki eylem, bilet fiyatı, kişisel duygu, teklif/istek, metinde bulunmayan bilgi ve görüş ayrılığı. İngilizce soru/seçenekler, Türkçe açıklamalar. Anahtar: **A, C, B, D, A, C, D, B, A, C**.
+- Yedi pasif SVG: 360 birim genişlik ve en az 26 birim yazı; 238 piksel çıktıları okunabilirlik ve kırpılma açısından denetlenir. Önceki 280 soru ve 173 SVG korunur. Yeni toplam: 29 test / 290 soru / 180 SVG / 34 rota.
 - Bağımsız dil/tek-doğru-cevap ve görsel denetimi, veri/rota doğrulaması, TypeScript ve üretim derlemesi uygulanır. Tarayıcı etkileşim testi yapılmadı; production’a otomatik aktarım yapılmaz.

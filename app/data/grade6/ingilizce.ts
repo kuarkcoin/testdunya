@@ -855,6 +855,176 @@ export const ingilizceData: SubjectData = {
             "correct": 1,
             "explanation": "Than ile karşılaştırma için more exciting gerekir. Kişinin hissettiği heyecan excited ile anlatılır; exciting ise heyecan veren oyuncağı niteler."
       }
+],
+    "test6": [
+      {
+            "id": "e6-1-t6-01",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at Maya’s routine. Which sentence is correct?",
+            "options": [
+                  "She leaves home at a quarter to eight, after breakfast.",
+                  "She has breakfast at a quarter past seven.",
+                  "School starts before she leaves home.",
+                  "She leaves home at a quarter past eight."
+            ],
+            "correct": 0,
+            "explanation": "Maya 07.20’de kahvaltı yapar, 07.45’te evden çıkar. 07.45, a quarter to eight olarak söylenir. Okul ise 08.15’te başlar.",
+            "imageWidth": 360,
+            "imageHeight": 520,
+            "imageUrl": "/grade6/ingilizce/test-6/soru-01.svg",
+            "imageAlt": "Maya’nın sabah rutini: analog ve dijital saatlerle 07.20 kahvaltı, 07.45 evden çıkış, 08.15 okul başlangıcı."
+      },
+      {
+            "id": "e6-1-t6-02",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Omar checks his order and his tray. Which request completes his breakfast order?",
+            "options": [
+                  "Can I have some jam, please?",
+                  "Can I have some more tea, please?",
+                  "Can I have some cheese, please?",
+                  "Can I have some eggs, please?"
+            ],
+            "correct": 2,
+            "explanation": "Siparişte ekmek, peynir ve çay vardır. Tepside ekmek ile çay bulunduğu için eksik olan peynir istenmelidir. Diğer seçenekler eksik siparişi tamamlamaz.",
+            "imageWidth": 360,
+            "imageHeight": 520,
+            "imageUrl": "/grade6/ingilizce/test-6/soru-02.svg",
+            "imageAlt": "Omar ekmek, peynir ve çay sipariş etmiş; tepsisinde ekmek, çay ve eksik yiyeceği gösteren soru işaretli boş tabak var."
+      },
+      {
+            "id": "e6-1-t6-03",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at the street map. Nora is at the bakery. She wants to borrow a book without crossing Oak Street. Where should she go?",
+            "options": [
+                  "To the museum across the street.",
+                  "To the library next to the bakery.",
+                  "To the bakery again.",
+                  "To the museum next to the library."
+            ],
+            "correct": 1,
+            "explanation": "Kitap ödünç almak için kütüphaneye gidilir. Haritada kütüphane fırının yanında, caddenin aynı tarafındadır. Müze ise yolun karşı tarafındadır.",
+            "imageWidth": 360,
+            "imageHeight": 500,
+            "imageUrl": "/grade6/ingilizce/test-6/soru-03.svg",
+            "imageAlt": "Oak Street’in üst tarafında yan yana fırın ve kütüphane, karşı tarafında müze bulunuyor."
+      },
+      {
+            "id": "e6-1-t6-04",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Read Saturday’s forecast. The children want to play outside when it is sunny and warmer. Which suggestion is suitable?",
+            "options": [
+                  "Let’s play at nine because it is sunny then.",
+                  "Let’s play at nine because it is warmer then.",
+                  "Let’s play at two because it is rainy then.",
+                  "Let’s play at two because it is sunny and warmer then."
+            ],
+            "correct": 3,
+            "explanation": "09.00’da hava yağmurlu ve 14°C; 14.00’te güneşli ve 21°C’dir. İki koşulu birlikte sağlayan saat öğleden sonra ikidir.",
+            "imageWidth": 360,
+            "imageHeight": 530,
+            "imageUrl": "/grade6/ingilizce/test-6/soru-04.svg",
+            "imageAlt": "Cumartesi 09.00: yağmurlu 14°C; 14.00: güneşli 21°C. Yağmur ve güneş simgeleri var."
+      },
+      {
+            "id": "e6-1-t6-05",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at Evan’s journeys. Choose the words that complete the sentence.\n“Evan usually ____ the bus to school, but today he ____.”",
+            "options": [
+                  "takes / is walking",
+                  "is taking / walks",
+                  "take / is walking",
+                  "takes / walk"
+            ],
+            "correct": 0,
+            "explanation": "Usually düzenli alışkanlığı anlatır; Evan üçüncü tekil kişi olduğu için takes kullanılır. Today, right now şu anı gösterir; yürüyüş için is walking gerekir.",
+            "imageWidth": 360,
+            "imageHeight": 540,
+            "imageUrl": "/grade6/ingilizce/test-6/soru-05.svg",
+            "imageAlt": "Evan genellikle okul otobüsüyle gider; bugün şu anda yürüyerek gidiyor. Otobüs ve yürüyen kişi çizimleri var."
+      },
+      {
+            "id": "e6-1-t6-06",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Lena has £4 and wants to buy one ride ticket. Look at the prices. Which statement is correct?",
+            "options": [
+                  "The bumper cars are cheaper than the Ferris wheel.",
+                  "She can buy a ticket for either ride.",
+                  "She can afford the Ferris wheel, but not the bumper cars.",
+                  "She cannot afford a ticket for either ride."
+            ],
+            "correct": 2,
+            "explanation": "Dönme dolap bileti 3 sterlin, çarpışan arabalar bileti 5 sterlindir. Lena’nın 4 sterlini olduğundan yalnız dönme dolap biletine parası yeter. Can afford, parasının yetmesi anlamındadır.",
+            "imageWidth": 360,
+            "imageHeight": 530,
+            "imageUrl": "/grade6/ingilizce/test-6/soru-06.svg",
+            "imageAlt": "Dönme dolap çizimi ve 3 sterlinlik bilet; çarpışan araba çizimi ve 5 sterlinlik bilet; Lena’nın 4 sterlini var."
+      },
+      {
+            "id": "e6-1-t6-07",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at the temperatures and read Ella’s words. Which sentence agrees with both?",
+            "options": [
+                  "Hilltown is warmer, and Ella feels happy there.",
+                  "Lakeside is colder, and Ella feels unhappy there.",
+                  "Both towns have the same temperature.",
+                  "Lakeside is warmer, and Ella feels happy there."
+            ],
+            "correct": 3,
+            "explanation": "Lakeside 20°C ile 8°C olan Hilltown’dan daha sıcaktır. Ella Lakeside’da mutlu olduğunu açıkça söylüyor. Bu duygu Ella’nın kişisel ifadesidir, herkes için genellenmez.",
+            "imageWidth": 360,
+            "imageHeight": 500,
+            "imageUrl": "/grade6/ingilizce/test-6/soru-07.svg",
+            "imageAlt": "Hilltown yağmurlu ve 8°C: Ella burada mutsuz hissettiğini söylüyor. Lakeside güneşli ve 20°C: burada mutlu hissettiğini söylüyor."
+      },
+      {
+            "id": "e6-1-t6-08",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Complete the dialogue.\nWaiter: Would you like some milk?\nRuby: No, thanks. I don’t like milk. ____\nWaiter: Of course. Here is your orange juice.",
+            "options": [
+                  "Yes, milk is my favourite drink.",
+                  "Can I have some orange juice instead?",
+                  "Do you have any bread?",
+                  "I never drink orange juice."
+            ],
+            "correct": 1,
+            "explanation": "Garsonun portakal suyu getirmesi, Ruby’nin sütü kibarca reddedip yerine portakal suyu istemesiyle uyumludur. Instead burada onun yerine anlamındadır."
+      },
+      {
+            "id": "e6-1-t6-09",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Read the text.\n“On weekdays, Arda gets up early and goes to school. It is Sunday today. He is visiting the fair with his cousin now. They are waiting for the carousel.”\n\nWhich question has NO answer in the text?",
+            "options": [
+                  "At exactly what time does Arda get up on weekdays?",
+                  "Where is Arda now?",
+                  "Who is Arda with?",
+                  "What are they waiting for?"
+            ],
+            "correct": 0,
+            "explanation": "Metin Arda’nın hafta içi erken kalktığını söyler ancak tam saat vermez. Şu an lunaparkta olduğu, kuzeniyle bulunduğu ve atlıkarıncayı beklediği belirtilmiştir."
+      },
+      {
+            "id": "e6-1-t6-10",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Complete the dialogue.\nLeo: I think the ghost train is fantastic. Let’s ride it!\nMina: I disagree. I think it is frightening.\nLeo: ____",
+            "options": [
+                  "Great! You think it is fantastic, too.",
+                  "You are right. We both love the ghost train.",
+                  "OK. Let’s choose a different ride.",
+                  "Yes, the ghost train is your favourite."
+            ],
+            "correct": 2,
+            "explanation": "Mina korku trenini korkutucu buluyor ve Leo’ya katılmıyor. Başka bir oyuncak seçmeyi önermek bu görüş ayrılığına uygun yanıttır. Diğer seçenekler Mina’nın söyledikleriyle çelişir."
+      }
 ]
   },
   "term2": {}
