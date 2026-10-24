@@ -1,6 +1,6 @@
 # 6. sınıf başlangıç paketi
 
-190 özgün soru: Matematikte 10 test, Türkçe, Fen Bilimleri ve İngilizcede üçer test; her test 10 soru. Matematik Test 1, Test 4, Test 5 ve Test 6, onar şekilli akıl yürütme sorusu içerir. Test 1, eski 10 soru yerine orta–zor düzeyde 10 şekilli soruyla yenilenmiştir; toplam test ve soru sayısı değişmemiştir. Test 7, Test 8, Test 9 ve Test 10, yedişer şekilli ve üçer şekilsiz orta–zor soru içerir. Fen Test 1, yedi şekilli ve üç şekilsiz orta–zor soruyla yenilenmiştir. Testler mevcut birinci dönem kayıt yapısında tutulur; yeni matematik testleri yılın farklı temalarından seçilmiştir. Tüm yıl/müfredat kapsandığı veya MEB onayı bulunduğu iddia edilmez. İkinci dönem için soru eklenmedi.
+190 özgün soru: Matematikte 10 test, Türkçe, Fen Bilimleri ve İngilizcede üçer test; her test 10 soru. Matematik Test 1, Test 4, Test 5 ve Test 6, onar şekilli akıl yürütme sorusu içerir. Test 1, eski 10 soru yerine orta–zor düzeyde 10 şekilli soruyla yenilenmiştir; toplam test ve soru sayısı değişmemiştir. Test 7, Test 8, Test 9 ve Test 10, yedişer şekilli ve üçer şekilsiz orta–zor soru içerir. Fen Test 1 ve Test 2, yedişer şekilli ve üçer şekilsiz orta–zor soruyla yenilenmiştir. Testler mevcut birinci dönem kayıt yapısında tutulur; yeni matematik testleri yılın farklı temalarından seçilmiştir. Tüm yıl/müfredat kapsandığı veya MEB onayı bulunduğu iddia edilmez. İkinci dönem için soru eklenmedi.
 
 ## Kaynaklar (23–24 Ekim 2026)
 
@@ -118,3 +118,12 @@ Production kaynağında `package.json` içinde zaten tanımlı olan `jspdf`, loc
 - Toplam 19 test, 190 soru, 75 görsel, 24 altıncı sınıf rotası. Önceki 180 diğer soru ve 68 SVG değişmedi.
 - TypeScript, üretim derlemesi ve veri/rota doğrulayıcıları çalıştırıldı. Tarayıcı etkileşim testi yapılmadı.
 - Bilimsel kaynaklar: [MEB FB.6.1.1–FB.6.1.4](https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/409), [NASA Güneş Sistemi](https://science.nasa.gov/solar-system/solar-system-facts/), [NASA Gezegen Verileri](https://nssdc.gsfc.nasa.gov/planetary/factsheet/), [NASA Tutulmalar](https://science.nasa.gov/moon/eclipses/), [NASA Çocuklar İçin Tutulmalar](https://spaceplace.nasa.gov/eclipses/en/).
+
+## Fen Test 2 yenilemesi (24 Ekim 2026)
+
+- Mevcut kimlikler ve /6-sinif/fen/test-2 rotası korundu. Konu: Tutulmalar ve Bileşke Kuvvet: Orta–Zor Sorular.
+- 7 şekilli, 3 şekilsiz soru: tutulma görünümü, model hizası, ışığı engelleyen cisim, dolunay çıkarımı; kuvvet kaldırma, dengeleyici, bilinmeyen kuvvet ve dengelenmiş hareket.
+- Büyük SVG metinleri en az 26 birim, genişlik 360 birim; 238px mobil iç genişlikte incelendi. Şematik kuvvet okları, bilinmeyen F uzunluğunun ölçülemeyeceğini açıklar.
+- Cevap anahtarı B, C, D, A, B, C, D, B, C, A. Önceki 180 diğer soru ve 75 SVG korunmuştur. Toplam 19 test, 190 soru, 82 görsel ve 24 altıncı sınıf rotası.
+- Bağımsız bilimsel/cevap denetimi, TypeScript, üretim derlemesi, veri/rota ve koruma kontrolleri uygulandı. Tarayıcı etkileşim testi yapılmadı.
+- Kapsam: [MEB tutulmalar](https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/409), [MEB kuvvet](https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/410), [NASA tutulmalar](https://science.nasa.gov/moon/eclipses/).
