@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="300" viewBox="0 0 360 300" role="img">
+<title>Test 7 · Soru 3</title>
+<desc>İlk şerit 7/8 m, ikinci şerit 0,65 m. İki şerit 15 cm boyunca üst üste bindirilmiş; bu bölge kesikli sınırlarla belirtilmiş. Çizim ölçekli değildir.</desc>
+<rect width="360" height="300" fill="#FFFFFF"/>
+<text x="113" y="34" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">7/8 m</text>
+<rect x="16" y="65" width="210" height="48" rx="0" fill="#D9EBFF" stroke="#36586D" stroke-width="2"/>
+<rect x="188" y="126" width="156" height="48" rx="0" fill="#FFE7B0" stroke="#36586D" stroke-width="2"/>
+<text x="266" y="207" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">0,65 m</text>
+<line x1="188" y1="57" x2="188" y2="181" stroke="#36586D" stroke-width="3" stroke-dasharray="6 5"/>
+<line x1="226" y1="57" x2="226" y2="181" stroke="#36586D" stroke-width="3" stroke-dasharray="6 5"/>
+<line x1="188" y1="239" x2="226" y2="239" stroke="#36586D" stroke-width="3"/>
+<line x1="188" y1="232" x2="188" y2="246" stroke="#36586D" stroke-width="3"/>
+<line x1="226" y1="232" x2="226" y2="246" stroke="#36586D" stroke-width="3"/>
+<text x="207" y="274" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">15 cm</text>
+<text x="98" y="151" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Üst üste</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="300" viewBox="0 0 360 300" role="img">
+<title>Test 7 · Soru 6</title>
+<desc>Üstte toplam 7,5 m olan kurdele altı eş bölmeye ayrılmış. Bir parça altta büyütülmüş ve ucundaki 0,18 m’lik bölüm kesik çizgiyle ayrılmış; kalan bölüm soru işaretiyle gösterilmiş.</desc>
+<rect width="360" height="300" fill="#FFFFFF"/>
+<text x="180" y="28" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">Toplam: 7,5 m</text>
+<rect x="18" y="65" width="54" height="52" rx="0" fill="#D9EBFF" stroke="#36586D" stroke-width="2"/>
+<rect x="72" y="65" width="54" height="52" rx="0" fill="#D9EBFF" stroke="#36586D" stroke-width="2"/>
+<rect x="126" y="65" width="54" height="52" rx="0" fill="#D9EBFF" stroke="#36586D" stroke-width="2"/>
+<rect x="180" y="65" width="54" height="52" rx="0" fill="#D9EBFF" stroke="#36586D" stroke-width="2"/>
+<rect x="234" y="65" width="54" height="52" rx="0" fill="#D9EBFF" stroke="#36586D" stroke-width="2"/>
+<rect x="288" y="65" width="54" height="52" rx="0" fill="#D9EBFF" stroke="#36586D" stroke-width="2"/>
+<text x="180" y="149" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">6 eş parça</text>
+<line x1="45" y1="117" x2="45" y2="197" stroke="#36586D" stroke-width="3"/>
+<polygon points="39,187 51,187 45,197" fill="#36586D"/>
+<rect x="18" y="208" width="264" height="50" rx="0" fill="#D9EBFF" stroke="#36586D" stroke-width="2"/>
+<rect x="282" y="208" width="60" height="50" rx="0" fill="#FFE7B0" stroke="#36586D" stroke-width="2"/>
+<line x1="282" y1="197" x2="282" y2="265" stroke="#36586D" stroke-width="3" stroke-dasharray="6 5"/>
+<text x="150" y="234" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="600" fill="#15354B">?</text>
+<text x="295" y="284" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">0,18 m</text>
+</svg>

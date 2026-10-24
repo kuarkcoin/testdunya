@@ -1,11 +1,12 @@
 # 6. sınıf başlangıç paketi
 
-150 özgün soru: Matematikte 6 test, Türkçe, Fen Bilimleri ve İngilizcede üçer test; her test 10 soru. Matematik Test 1, Test 4, Test 5 ve Test 6, onar şekilli akıl yürütme sorusu içerir. Test 1, eski 10 soru yerine orta–zor düzeyde 10 şekilli soruyla yenilenmiştir; toplam test ve soru sayısı değişmemiştir. Yalnız birinci dönemin başlangıç konuları. Tüm yıl/müfredat kapsandığı veya MEB onayı bulunduğu iddia edilmez. İkinci dönem için soru eklenmedi.
+160 özgün soru: Matematikte 7 test, Türkçe, Fen Bilimleri ve İngilizcede üçer test; her test 10 soru. Matematik Test 1, Test 4, Test 5 ve Test 6, onar şekilli akıl yürütme sorusu içerir. Test 1, eski 10 soru yerine orta–zor düzeyde 10 şekilli soruyla yenilenmiştir; toplam test ve soru sayısı değişmemiştir. Test 7, 7 şekilli ve 3 şekilsiz orta–zor soru içerir. Yalnız birinci dönemin başlangıç konuları. Tüm yıl/müfredat kapsandığı veya MEB onayı bulunduğu iddia edilmez. İkinci dönem için soru eklenmedi.
 
 ## Kaynaklar (23–24 Ekim 2026)
 
 - MEB 2026–2027 taslak çerçeve planları: https://tymm.meb.gov.tr/taslak-cerceve-planlari/temel-egitim
 - Matematik ilk tema: https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/456
+- Matematik Ondalık Gösterimler ve Uzunluk Ölçme (MAT.6.1.5–MAT.6.1.8): https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/457
 - Matematik Deneysel Olasılık (Veriden Olasılığa, MAT.6.6.1): https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/462
 - Türkçe ilk tema: https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/104
 - Fen ilk iki ünite: https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/409 ve https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/410
@@ -15,7 +16,7 @@ Matematik sorularında EBOB/EKOK terimleri kullanılmaz. Fen soruları sürat i�
 
 ## Entegrasyon
 
-İlk 6. sınıf eklemeleri `e152ac2` sürümü üzerine hazırlanmıştır. Şekilli Matematik Test 4, `fbeef87`; Test 5, `a3802ba`; Test 6, `b8fd56a` üzerine eklenmiştir. Test 1 yenilemesi `c6f87d1` üzerine hazırlanmıştır; `/6-sinif/matematik/test-1` adresi ve soru kimlikleri korunmuştur. Ana sayfa kartı korunmuştur; kayıtlı testlerden otomatik üretilen 20 adet 6. sınıf sitemap adresi vardır. Mevcut 5. sınıf dosyaları korunmuştur. Ekrandaki test/soru sayıları ve rota doğrulamasındaki toplamlar veri kayıtlarından hesaplanır.
+İlk 6. sınıf eklemeleri `e152ac2` sürümü üzerine hazırlanmıştır. Şekilli Matematik Test 4, `fbeef87`; Test 5, `a3802ba`; Test 6, `b8fd56a` üzerine eklenmiştir. Test 1 yenilemesi `c6f87d1` üzerine hazırlanmıştır; `/6-sinif/matematik/test-1` adresi ve soru kimlikleri korunmuştur. Ana sayfa kartı korunmuştur; kayıtlı testlerden otomatik üretilen 21 adet 6. sınıf sitemap adresi vardır. Mevcut 5. sınıf dosyaları korunmuştur. Ekrandaki test/soru sayıları ve rota doğrulamasındaki toplamlar veri kayıtlarından hesaplanır.
 
 ## Yenilenen Şekilli Matematik Test 1 (24 Ekim 2026)
 
@@ -72,3 +73,10 @@ node scripts/validate-grade6-routes.cjs
 Production kaynağında `package.json` içinde zaten tanımlı olan `jspdf`, lockfile içinde eksikti. `package-lock.json` yalnızca bu bağımlılık ve onun alt bağımlılıkları için tamamlandı; mevcut bağımlılık sürümleri değiştirilmedi. `npm ci` ve son lockfile için `npm ci --dry-run` başarılı.
 
 `next` ve `eslint-config-next` 15.0.5 → 15.5.28 olarak güncellendi. Bu sürüm, 14 Ekim 2026 tarihli resmi güvenlik duyurusunda önerilen Maintenance LTS yamasıdır: https://nextjs.org/blog/nextjs-security-update-october-14-2026 . Kurulumda Next.js tarafından kullanılan `sharp` sürümü 0.35.5 olarak doğrulandı; React 18.3.1 ve diğer doğrudan bağımlılık sürümleri korunmuştur. Next.js tarafından üretilen `next-env.d.ts` rota tipi başvurusu güncellenmiştir.
+
+## Matematik Test 7: Ondalık Gösterimler ve Uzunluk Ölçme (24 Ekim 2026)
+
+- Adres: `/6-sinif/matematik/test-7`; konu: **Ondalık Gösterimler ve Uzunluk Ölçme: Orta–Zor Sorular**. `5952b62` sürümü üzerine eklenmiştir. İlk 7 soru şekilli, son 3 soru şekilsizdir. Cevap anahtarı: **B, C, D, A, B, C, A, D, B, C**; veride sıfır tabanlı indeksler kullanılır.
+- Sayı doğrusu ve basamak tablosu okuma, kesir–ondalık dönüşümü, yuvarlama koşullarından rakam bulma, kesim kaybı, eşit paylaşma, uzunluk birimleri ve erken yuvarlamanın oluşturduğu fark ele alınır. Sorular MAT.6.1.5–MAT.6.1.8 kapsamındaki konularla ilişkilidir; bütün kazanımların tamamını ölçtüğü iddia edilmez.
+- Yedi pasif SVG `public/grade6/matematik/test-7/soru-01.svg`–`soru-07.svg` altındadır. 360 birim genişlik, en az 26 birim yazı, büyük etiketler ve Türkçe alternatif metinler kullanılır. 238 piksel genişlikte raster çıktıları görsel olarak incelenmiştir. Son üç sorunun hiçbir görsel alanı yoktur. Ortak arayüz değiştirilmemiştir.
+- On sorunun tek doğru cevabı bağımsız matematik denetiminden ve tam hassasiyetli hesap kontrollerinden geçmiştir. Önceki 150 soru ve 40 SVG korunmuştur. Toplamlar 16 test / 160 soru / 47 görsel / 21 adet 6. sınıf rotasıdır.

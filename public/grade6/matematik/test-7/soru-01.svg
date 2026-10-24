@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="230" viewBox="0 0 360 230" role="img">
+<title>Test 7 · Soru 1</title>
+<desc>3,4 ile 3,5 arasındaki sayı doğrusu 10 eş aralığa bölünmüş. P, 3,4’ten sonraki üçüncü; Q ise sekizinci işarette. Ortadaki sayının değeri gösterilmiyor.</desc>
+<rect width="360" height="230" fill="#FFFFFF"/>
+<text x="180" y="28" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">10 eş aralık</text>
+<line x1="30" y1="112" x2="330" y2="112" stroke="#36586D" stroke-width="3"/>
+<line x1="30" y1="102" x2="30" y2="122" stroke="#36586D" stroke-width="3"/>
+<line x1="60" y1="102" x2="60" y2="122" stroke="#36586D" stroke-width="3"/>
+<line x1="90" y1="102" x2="90" y2="122" stroke="#36586D" stroke-width="3"/>
+<line x1="120" y1="102" x2="120" y2="122" stroke="#36586D" stroke-width="3"/>
+<line x1="150" y1="102" x2="150" y2="122" stroke="#36586D" stroke-width="3"/>
+<line x1="180" y1="102" x2="180" y2="122" stroke="#36586D" stroke-width="3"/>
+<line x1="210" y1="102" x2="210" y2="122" stroke="#36586D" stroke-width="3"/>
+<line x1="240" y1="102" x2="240" y2="122" stroke="#36586D" stroke-width="3"/>
+<line x1="270" y1="102" x2="270" y2="122" stroke="#36586D" stroke-width="3"/>
+<line x1="300" y1="102" x2="300" y2="122" stroke="#36586D" stroke-width="3"/>
+<line x1="330" y1="102" x2="330" y2="122" stroke="#36586D" stroke-width="3"/>
+<circle cx="120" cy="112" r="6" fill="#15354B"/>
+<text x="120" y="78" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="600" fill="#15354B">P</text>
+<circle cx="270" cy="112" r="6" fill="#15354B"/>
+<text x="270" y="78" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="600" fill="#15354B">Q</text>
+<text x="30" y="154" text-anchor="start" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">3,4</text>
+<text x="330" y="154" text-anchor="end" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">3,5</text>
+<text x="180" y="201" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">P ile Q’nun ortası?</text>
+</svg>

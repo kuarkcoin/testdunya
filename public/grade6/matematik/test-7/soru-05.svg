@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="340" viewBox="0 0 360 340" role="img">
+<title>Test 7 · Soru 5</title>
+<desc>Başlangıç sayısı 4,A7B. Bir dalda yüzde birlere yuvarlanınca 4,38, diğer dalda onda birlere yuvarlanınca 4,4 elde ediliyor. Her iki ok doğrudan başlangıç sayısından çıkıyor.</desc>
+<rect width="360" height="340" fill="#FFFFFF"/>
+<rect x="80" y="12" width="200" height="68" rx="8" fill="#E9F4FA" stroke="#36586D" stroke-width="2"/>
+<text x="180" y="46" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="36" font-weight="600" fill="#15354B">4,A7B</text>
+<line x1="180" y1="80" x2="180" y2="106" stroke="#36586D" stroke-width="3"/>
+<line x1="94" y1="106" x2="266" y2="106" stroke="#36586D" stroke-width="3"/>
+<line x1="94" y1="106" x2="94" y2="132" stroke="#36586D" stroke-width="3"/>
+<polygon points="88,122 100,122 94,132" fill="#36586D"/>
+<line x1="266" y1="106" x2="266" y2="132" stroke="#36586D" stroke-width="3"/>
+<polygon points="260,122 272,122 266,132" fill="#36586D"/>
+<rect x="12" y="140" width="164" height="184" rx="8" fill="#FFF0CB" stroke="#36586D" stroke-width="2"/>
+<rect x="184" y="140" width="164" height="184" rx="8" fill="#D9EBFF" stroke="#36586D" stroke-width="2"/>
+<text x="94" y="171" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Yüzde</text>
+<text x="94" y="206" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">birlere</text>
+<text x="94" y="241" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">yuvarla</text>
+<text x="94" y="286" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="600" fill="#15354B">4,38</text>
+<text x="266" y="171" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Onda</text>
+<text x="266" y="206" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">birlere</text>
+<text x="266" y="241" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">yuvarla</text>
+<text x="266" y="286" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="600" fill="#15354B">4,4</text>
+</svg>

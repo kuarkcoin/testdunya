@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="330" viewBox="0 0 360 330" role="img">
+<title>Test 7 · Soru 4</title>
+<desc>Çıta şeması: 0,45 m’lik dört parça, aralarında dört dar kesim bölgesi ve en sağda kalan parça. Toplam 2,4 m. Her kesim 0,5 cm. Çizim ölçekli değildir.</desc>
+<rect width="360" height="330" fill="#FFFFFF"/>
+<text x="180" y="28" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">Toplam: 2,4 m</text>
+<rect x="15" y="70" width="56" height="65" rx="0" fill="#D9EBFF" stroke="#36586D" stroke-width="2"/>
+<text x="43" y="102" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">1</text>
+<rect x="71" y="70" width="10" height="65" rx="0" fill="#EAB7B7" stroke="#36586D" stroke-width="2"/>
+<rect x="81" y="70" width="56" height="65" rx="0" fill="#D9EBFF" stroke="#36586D" stroke-width="2"/>
+<text x="109" y="102" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">2</text>
+<rect x="137" y="70" width="10" height="65" rx="0" fill="#EAB7B7" stroke="#36586D" stroke-width="2"/>
+<rect x="147" y="70" width="56" height="65" rx="0" fill="#D9EBFF" stroke="#36586D" stroke-width="2"/>
+<text x="175" y="102" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">3</text>
+<rect x="203" y="70" width="10" height="65" rx="0" fill="#EAB7B7" stroke="#36586D" stroke-width="2"/>
+<rect x="213" y="70" width="56" height="65" rx="0" fill="#D9EBFF" stroke="#36586D" stroke-width="2"/>
+<text x="241" y="102" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">4</text>
+<rect x="269" y="70" width="10" height="65" rx="0" fill="#EAB7B7" stroke="#36586D" stroke-width="2"/>
+<rect x="279" y="70" width="66" height="65" rx="0" fill="#FFF0CB" stroke="#36586D" stroke-width="2"/>
+<text x="312" y="102" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="600" fill="#15354B">?</text>
+<text x="180" y="172" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">1–4: Her biri 0,45 m</text>
+<text x="180" y="214" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">4 kesim yapılır.</text>
+<text x="180" y="255" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Her kesim: 0,5 cm</text>
+<text x="180" y="302" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Çizim ölçekli değildir.</text>
+</svg>

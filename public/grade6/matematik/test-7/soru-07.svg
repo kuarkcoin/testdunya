@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="360" viewBox="0 0 360 360" role="img">
+<title>Test 7 · Soru 7</title>
+<desc>Dört köşeli parkur krokisi: A–B 0,48 km, B–C 350 m, C–D 0,275 km ve D–A soru işareti. Bir turun toplamı 1,25 km. Kroki ölçekli değildir.</desc>
+<rect width="360" height="360" fill="#FFFFFF"/>
+<text x="180" y="25" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Bir tur: 1,25 km</text>
+<line x1="54" y1="102" x2="306" y2="102" stroke="#36586D" stroke-width="3"/>
+<line x1="306" y1="102" x2="286" y2="260" stroke="#36586D" stroke-width="3"/>
+<line x1="70" y1="240" x2="286" y2="260" stroke="#36586D" stroke-width="3"/>
+<line x1="54" y1="102" x2="70" y2="240" stroke="#36586D" stroke-width="3"/>
+<circle cx="54" cy="102" r="6" fill="#15354B"/>
+<text x="32" y="77" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">A</text>
+<circle cx="306" cy="102" r="6" fill="#15354B"/>
+<text x="328" y="77" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">B</text>
+<circle cx="286" cy="260" r="6" fill="#15354B"/>
+<text x="328" y="290" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">C</text>
+<circle cx="70" cy="240" r="6" fill="#15354B"/>
+<text x="32" y="285" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">D</text>
+<text x="180" y="73" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">0,48 km</text>
+<rect x="204" y="156" width="142" height="50" rx="8" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2"/>
+<text x="275" y="181" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="600" fill="#15354B">350 m</text>
+<rect x="13" y="156" width="75" height="50" rx="8" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2"/>
+<text x="50" y="181" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="600" fill="#15354B">?</text>
+<text x="180" y="290" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">0,275 km</text>
+<text x="180" y="337" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Kroki ölçekli değildir.</text>
+</svg>

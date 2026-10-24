@@ -917,6 +917,176 @@ export const matematikData: SubjectData = {
         "imageAlt": "Alt alta iki kayıt panosu, aynı hizada K ve L sütunları. Hatalı kayıt panosunda K 27, L 33 yazıyor. İki kez yazılan denemeler panosunda K 6, L 4 yazıyor. Düzeltilmiş toplamlar gösterilmiyor."
       }
     ],
+    test7: [
+      {
+        "id": "m6-1-t7-01",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Sayı doğrusunda 3,4 ile 3,5 arası 10 eş parçaya ayrılmıştır. P ve Q işaretli noktalardır.\n\nP ile Q’nun tam ortasındaki sayının yüzde birler basamağına yuvarlanmış değeri kaçtır?",
+        "options": [
+          "3,45",
+          "3,46",
+          "3,50",
+          "3,55"
+        ],
+        "correct": 1,
+        "explanation": "Her aralık 0,01’dir. P = 3,43 ve Q = 3,48 olur. Ortadaki sayı (3,43 + 3,48) ÷ 2 = 3,455’tir. Binde birler basamağı 5 olduğundan yüzde birlere yuvarlanan değer 3,46’dır.",
+        "imageWidth": 360,
+        "imageHeight": 230,
+        "imageUrl": "/grade6/matematik/test-7/soru-01.svg",
+        "imageAlt": "3,4 ile 3,5 arasındaki sayı doğrusu 10 eş aralığa bölünmüş. P, 3,4’ten sonraki üçüncü; Q ise sekizinci işarette. Ortadaki sayının değeri gösterilmiyor."
+      },
+      {
+        "id": "m6-1-t7-02",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Tabloda bir ondalık sayının rakamları gösterilmiştir. Yalnız onda birler ve yüzde birler basamaklarındaki rakamların yerleri değiştiriliyor.\n\nYeni sayı, ilk sayıdan ne kadar büyüktür?",
+        "options": [
+          "0,027",
+          "0,30",
+          "0,27",
+          "2,7"
+        ],
+        "correct": 2,
+        "explanation": "İlk sayı 2,475, yeni sayı 2,745’tir. Artış 2,745 − 2,475 = 0,270 = 0,27 olur. Rakamların yer değiştirmesiyle 0,3 kazanılırken 0,03 kaybedilir.",
+        "imageWidth": 360,
+        "imageHeight": 330,
+        "imageUrl": "/grade6/matematik/test-7/soru-02.svg",
+        "imageAlt": "Basamak tablosu: Birler 2, onda birler 4, yüzde birler 7, binde birler 5. Onda birler ve yüzde birler satırları oklarla birbirine bağlanmış."
+      },
+      {
+        "id": "m6-1-t7-03",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "İki şerit görseldeki gibi 15 cm’lik bölümleri üst üste gelecek şekilde birleştiriliyor. Şeritlerin uzunlukları 7/8 m ve 0,65 m’dir.\n\nBirleşen şeridin toplam uzunluğu metre cinsinden yüzde birler basamağına yuvarlanırsa kaç olur?",
+        "options": [
+          "1,37",
+          "1,53",
+          "1,23",
+          "1,38"
+        ],
+        "correct": 3,
+        "explanation": "7/8 m = 0,875 m ve 15 cm = 0,15 m’dir. Üst üste gelen kısım bir kez çıkarılır: 0,875 + 0,65 − 0,15 = 1,375 m. Yüzde birlere yuvarlandığında 1,38 m olur.",
+        "imageWidth": 360,
+        "imageHeight": 300,
+        "imageUrl": "/grade6/matematik/test-7/soru-03.svg",
+        "imageAlt": "İlk şerit 7/8 m, ikinci şerit 0,65 m. İki şerit 15 cm boyunca üst üste bindirilmiş; bu bölge kesikli sınırlarla belirtilmiş. Çizim ölçekli değildir."
+      },
+      {
+        "id": "m6-1-t7-04",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "2,4 m uzunluğundaki bir çıtadan, her birinin son uzunluğu 0,45 m olan 4 parça kesiliyor. Her kesimde 0,5 cm uzunluğundaki bölüm talaş oluyor. Parçaları ayırmak için 4 kesim yapılıyor.\n\nGeriye kalan tek parçanın uzunluğu kaç santimetredir?",
+        "options": [
+          "58",
+          "60",
+          "38",
+          "59,5"
+        ],
+        "correct": 0,
+        "explanation": "Çıtanın uzunluğu 240 cm, dört parçanın toplamı 4 × 45 = 180 cm’dir. Dört kesimde 4 × 0,5 = 2 cm talaş olur. Geriye 240 − 180 − 2 = 58 cm kalır.",
+        "imageWidth": 360,
+        "imageHeight": 330,
+        "imageUrl": "/grade6/matematik/test-7/soru-04.svg",
+        "imageAlt": "Çıta şeması: 0,45 m’lik dört parça, aralarında dört dar kesim bölgesi ve en sağda kalan parça. Toplam 2,4 m. Her kesim 0,5 cm. Çizim ölçekli değildir."
+      },
+      {
+        "id": "m6-1-t7-05",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "A ve B birer rakamdır. 4,A7B sayısı iki ayrı işlemde, doğrudan ilk hâli üzerinden yuvarlanıyor. Elde edilen sonuçlar görselde verilmiştir.\n\nBuna göre A + B toplamının alabileceği en küçük değer kaçtır?",
+        "options": [
+          "7",
+          "8",
+          "9",
+          "12"
+        ],
+        "correct": 1,
+        "explanation": "Onda birlere yuvarlama sonucu 4,4 olduğundan ve yüzde birler basamağı 7 olduğundan A = 3’tür. 4,37B sayısının yüzde birlere yuvarlanmış hâli 4,38 ise B en az 5 olmalıdır. En küçük toplam 3 + 5 = 8’dir.",
+        "imageWidth": 360,
+        "imageHeight": 340,
+        "imageUrl": "/grade6/matematik/test-7/soru-05.svg",
+        "imageAlt": "Başlangıç sayısı 4,A7B. Bir dalda yüzde birlere yuvarlanınca 4,38, diğer dalda onda birlere yuvarlanınca 4,4 elde ediliyor. Her iki ok doğrudan başlangıç sayısından çıkıyor."
+      },
+      {
+        "id": "m6-1-t7-06",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "7,5 m uzunluğundaki bir kurdele, hiç kayıp olmadan 6 eş parçaya ayrılıyor. Bu parçalardan yalnız birinin ucundan 0,18 m kesiliyor.\n\nKısaltılan parçanın son uzunluğu kaç santimetredir?",
+        "options": [
+          "12,3",
+          "125",
+          "107",
+          "123"
+        ],
+        "correct": 2,
+        "explanation": "Bir eş parçanın uzunluğu 7,5 ÷ 6 = 1,25 m’dir. Kısaltılan parça 1,25 − 0,18 = 1,07 m olur. 1,07 m = 107 cm’dir. Diğer beş parçadan kesim yapılmamıştır.",
+        "imageWidth": 360,
+        "imageHeight": 300,
+        "imageUrl": "/grade6/matematik/test-7/soru-06.svg",
+        "imageAlt": "Üstte toplam 7,5 m olan kurdele altı eş bölmeye ayrılmış. Bir parça altta büyütülmüş ve ucundaki 0,18 m’lik bölüm kesik çizgiyle ayrılmış; kalan bölüm soru işaretiyle gösterilmiş."
+      },
+      {
+        "id": "m6-1-t7-07",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Bir yürüyüş parkurunda A → B → C → D → A turunun toplam uzunluğu 1,25 km’dir. Üç bölümün uzunlukları krokide verilmiştir.\n\nD ile A arasındaki parkur bölümü kaç metredir?",
+        "options": [
+          "145",
+          "175",
+          "455",
+          "1.145"
+        ],
+        "correct": 0,
+        "explanation": "Toplam uzunluk 1,25 km = 1250 m’dir. Bilinen bölümler 0,48 km = 480 m, 350 m ve 0,275 km = 275 m’dir. D–A bölümü 1250 − (480 + 350 + 275) = 145 m olur.",
+        "imageWidth": 360,
+        "imageHeight": 360,
+        "imageUrl": "/grade6/matematik/test-7/soru-07.svg",
+        "imageAlt": "Dört köşeli parkur krokisi: A–B 0,48 km, B–C 350 m, C–D 0,275 km ve D–A soru işareti. Bir turun toplamı 1,25 km. Kroki ölçekli değildir."
+      },
+      {
+        "id": "m6-1-t7-08",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "0, 3, 5 ve 8 rakamlarının her biri birer kez kullanılarak birler basamağı ve virgülden sonra üç basamağı olan sayılar yazılıyor.\n\nBu sayılardan 5,4’ten küçük olanların en büyüğü ile 3,5’ten büyük olanların en küçüğü arasındaki fark kaçtır?",
+        "options": [
+          "1,030",
+          "1,850",
+          "1,880",
+          "1,872"
+        ],
+        "correct": 3,
+        "explanation": "5,4’ten küçük en büyük uygun sayı 5,380’dir. 3,5’ten büyük en küçük uygun sayı 3,508’dir. Aralarındaki fark 5,380 − 3,508 = 1,872 olur."
+      },
+      {
+        "id": "m6-1-t7-09",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Bir şeridin metre cinsinden uzunluğu virgülden sonra tam üç basamakla yazılıyor. Bu sayı yüzde birler basamağına yuvarlandığında 2,75 oluyor.\n\nŞeridin alabileceği en büyük ve en küçük uzunluk arasındaki fark kaç milimetredir?",
+        "options": [
+          "1",
+          "9",
+          "10",
+          "5"
+        ],
+        "correct": 1,
+        "explanation": "Yüzde birlere yuvarlandığında 2,75 olan üç ondalık basamaklı değerlerin en küçüğü 2,745 m, en büyüğü 2,754 m’dir. Fark 0,009 m = 9 mm’dir. 2,755 m ise 2,76’ya yuvarlanır."
+      },
+      {
+        "id": "m6-1-t7-10",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Bir öğrenci 3 m ipi hiç kayıp olmadan 8 eş parçaya ayırıyor. Her parçanın gerçek uzunluğu yerine, metre cinsinden yüzde birler basamağına yuvarlanmış uzunluğunu kullanarak 4 parçanın toplamını hesaplıyor.\n\nÖğrencinin bulduğu toplam, bu 4 parçanın gerçek toplam uzunluğundan kaç santimetre fazladır?",
+        "options": [
+          "0,5",
+          "1",
+          "2",
+          "4"
+        ],
+        "correct": 2,
+        "explanation": "Bir parçanın gerçek uzunluğu 3 ÷ 8 = 0,375 m, yuvarlanmış uzunluğu 0,38 m’dir. Dört parça için hesaplanan toplam 4 × 0,38 = 1,52 m, gerçek toplam 4 × 0,375 = 1,50 m’dir. Fark 0,02 m = 2 cm’dir."
+      }
+    ],
   },
   term2: {},
 };
