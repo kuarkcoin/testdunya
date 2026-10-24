@@ -1,7 +1,7 @@
 import { SubjectData } from "./types";
 
-// Özgün sorular. Test 1: kullanıcının Life / günlük rutinler isteğine göre yenilenmiştir.
-// Güncel MEB ilk tema adı School Life; Life etiketi güncel resmî tema adı iddiası değildir.
+// Özgün sorular. Test 1–2: kullanıcının Life / Yummy Breakfast konu isteğine göre yenilenmiştir.
+// Güncel MEB ilk temaları School Life / Classroom Life; kullanıcı etiketleri resmî tema adı iddiası değildir.
 // Müfredat kapsamı: https://tymm.meb.gov.tr/ingilizce-dersi-temel-egitim/unite/752
 // Müfredat kapsamı: https://tymm.meb.gov.tr/ingilizce-dersi-temel-egitim/unite/753
 export const ingilizceData: SubjectData = {
@@ -178,146 +178,174 @@ export const ingilizceData: SubjectData = {
 ],
     "test2": [
       {
-        "id": "e6-1-t2-01",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Look! The students ____ their books right now.",
-        "options": [
-          "reads",
-          "are reading",
-          "read every day",
-          "is reading"
-        ],
-        "correct": 1,
-        "explanation": "'Look!' ve 'right now' şu anda yapılan bir işi gösterir. Çoğul özne 'the students' ile 'are reading' kullanılır."
+            "id": "e6-1-t2-01",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at Ece's breakfast tray. Which sentence is correct?",
+            "options": [
+                  "She has cheese and tea.",
+                  "She has eggs and milk.",
+                  "She has jam and milk.",
+                  "She has olives and orange juice."
+            ],
+            "correct": 1,
+            "explanation": "Tepside yumurta, peynir, zeytin ve süt vardır. Çay, reçel veya portakal suyu gösterilmemiştir.",
+            "imageWidth": 360,
+            "imageHeight": 430,
+            "imageUrl": "/grade6/ingilizce/test-2/soru-01.svg",
+            "imageAlt": "Ece’nin kahvaltı tepsisi: eggs, cheese, olives ve milk; her yiyecek çizimle ve adıyla gösterilmiş."
       },
       {
-        "id": "e6-1-t2-02",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Complete the sentence: 'Zeynep ____ English for twenty minutes every evening.'",
-        "options": [
-          "studies",
-          "study",
-          "are studying",
-          "studying"
-        ],
-        "correct": 0,
-        "explanation": "'Every evening' bir alışkanlığı anlatır. 'Zeynep' (she) ile geniş zamanda 'study' fiili 'studies' olur."
+            "id": "e6-1-t2-02",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at the chart. Which food do BOTH children like?",
+            "options": [
+                  "Eggs",
+                  "Olives",
+                  "Cheese",
+                  "Jam"
+            ],
+            "correct": 2,
+            "explanation": "İki çocuk da peyniri sever. Ali yumurtayı severken Mia sevmez; zeytinde bunun tersi geçerlidir. Reçel tabloda yoktur.",
+            "imageWidth": 360,
+            "imageHeight": 380,
+            "imageUrl": "/grade6/ingilizce/test-2/soru-02.svg",
+            "imageAlt": "Ali: eggs YES, cheese YES, olives NO. Mia: eggs NO, cheese YES, olives YES."
       },
       {
-        "id": "e6-1-t2-03",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Complete the sentence: 'I usually ____ my homework at home, but I ____ in the library now.'",
-        "options": [
-          "am doing / work",
-          "does / is working",
-          "do / am working",
-          "doing / works"
-        ],
-        "correct": 2,
-        "explanation": "'Usually' ile alışkanlık için 'do', 'now' ile şu anki eylem için 'am working' kullanılır. Her iki bölümün öznesi 'I' olduğundan bu biçimler uygundur."
+            "id": "e6-1-t2-03",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at the offer and Deniz's choice. Which reply completes the conversation?",
+            "options": [
+                  "Yes, please. I love tea.",
+                  "No, thanks. I don't want any milk.",
+                  "Yes, please. Some tea, please.",
+                  "No, thanks. Can I have some milk?"
+            ],
+            "correct": 3,
+            "explanation": "Teklif çaydır; Deniz çay istemeyip süt istemektedir. 'No, thanks' teklifi kibarca reddeder; 'Can I have some milk?' süt ister.",
+            "imageWidth": 360,
+            "imageHeight": 420,
+            "imageUrl": "/grade6/ingilizce/test-2/soru-03.svg",
+            "imageAlt": "Teklif: Would you like some tea? Deniz’in seçim kartında tea NO, milk YES; çay fincanı ve süt bardağı resimleri."
       },
       {
-        "id": "e6-1-t2-04",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Teacher: Please work in pairs.\nWhat should the students do?",
-        "options": [
-          "Work alone.",
-          "Leave the classroom.",
-          "Put away all their books.",
-          "Work with one partner."
-        ],
-        "correct": 3,
-        "explanation": "'Work in pairs', ikili çalışmak demektir. Her öğrenci bir arkadaşıyla çalışır."
+            "id": "e6-1-t2-04",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at the café menu. Amy wants eggs and a drink, but she doesn't like tea. What can she order?",
+            "options": [
+                  "Eggs and orange juice, please.",
+                  "Pancakes and orange juice, please.",
+                  "Eggs and tea, please.",
+                  "Eggs and hot chocolate, please."
+            ],
+            "correct": 0,
+            "explanation": "Menüde yumurta ve portakal suyu vardır. Amy çay istemez; hot chocolate menüde bulunmaz. Pancakes içeren seçenek yumurta isteğini karşılamaz.",
+            "imageWidth": 360,
+            "imageHeight": 430,
+            "imageUrl": "/grade6/ingilizce/test-2/soru-04.svg",
+            "imageAlt": "Kafe menüsünde eggs, pancakes, tea ve orange juice; dört yiyecek/içecek çizimiyle."
       },
       {
-        "id": "e6-1-t2-05",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "The teacher says, 'Please turn to page two hundred and forty-six.' Which page should you open?",
-        "options": [
-          "264",
-          "426",
-          "246",
-          "206"
-        ],
-        "correct": 2,
-        "explanation": "'Two hundred' 200, 'forty-six' 46 demektir. Birlikte 246 sayısını oluştururlar."
+            "id": "e6-1-t2-05",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at the breakfast choices. Complete the sentence: 'Lara ____ olives, but she ____ cheese.'",
+            "options": [
+                  "likes / likes",
+                  "doesn't like / likes",
+                  "likes / doesn't like",
+                  "doesn't like / doesn't like"
+            ],
+            "correct": 1,
+            "explanation": "Lara’nın zeytin seçimi NO, peynir seçimi YES’tir. Üçüncü tekil şahısta olumsuz 'doesn't like', olumlu 'likes' olur.",
+            "imageWidth": 360,
+            "imageHeight": 360,
+            "imageUrl": "/grade6/ingilizce/test-2/soru-05.svg",
+            "imageAlt": "Lara’nın seçimleri: olives NO; cheese YES. Zeytin ve peynir çizimleri büyük gösterilmiş."
       },
       {
-        "id": "e6-1-t2-06",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "How do you write 315 in words?",
-        "options": [
-          "Three hundred and fifty",
-          "Three hundred and fifteen",
-          "One hundred and thirty-five",
-          "Three hundred and five"
-        ],
-        "correct": 1,
-        "explanation": "315, 'three hundred and fifteen' şeklinde yazılır. 'Fifteen' 15, 'fifty' ise 50 anlamına gelir."
+            "id": "e6-1-t2-06",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at the two breakfast plates. Which sentence is correct?",
+            "options": [
+                  "Only Ben has bread.",
+                  "Both children have eggs.",
+                  "Both children have bread, but only Ben has eggs.",
+                  "Only Eva has cheese."
+            ],
+            "correct": 2,
+            "explanation": "İki tabakta da ekmek vardır. Yumurta yalnız Ben’in tabağındadır; peynir de yalnız Ben’dedir. Eva’nın diğer yiyeceği reçeldir.",
+            "imageWidth": 360,
+            "imageHeight": 490,
+            "imageUrl": "/grade6/ingilizce/test-2/soru-06.svg",
+            "imageAlt": "Ben’in tabağı: bread, eggs, cheese. Eva’nın tabağı: bread, jam. Yiyecekler adlarıyla ve resimlerle gösterilmiş."
       },
       {
-        "id": "e6-1-t2-07",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Lina is number 21 in the reading list. Complete the sentence: 'She is the ____ student on the list.'",
-        "options": [
-          "twelfth",
-          "thirty-first",
-          "twentieth",
-          "twenty-first"
-        ],
-        "correct": 3,
-        "explanation": "21. sırası 'twenty-first' ile ifade edilir. 'Twentieth' 20., 'twelfth' ise 12. demektir."
+            "id": "e6-1-t2-07",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at the order card and the tray. Which sentence should the customer say?",
+            "options": [
+                  "I ordered milk, but this is orange juice.",
+                  "I ordered cheese, but these are eggs.",
+                  "Everything is correct. Thank you.",
+                  "I ordered orange juice, but this is milk."
+            ],
+            "correct": 3,
+            "explanation": "Siparişte ekmek, peynir ve portakal suyu vardır. Tepside ekmek ve peynir doğru, içecek ise süttür. Son seçenek bu farkı açıklar.",
+            "imageWidth": 360,
+            "imageHeight": 440,
+            "imageUrl": "/grade6/ingilizce/test-2/soru-07.svg",
+            "imageAlt": "Order: bread, cheese, orange juice. Tray: bread, cheese, milk; tepside üç ürün resimlenmiş."
       },
       {
-        "id": "e6-1-t2-08",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "The class finishes activity number 50. Complete the sentence: 'This is our ____ activity.'",
-        "options": [
-          "fifteenth",
-          "fortieth",
-          "fiftieth",
-          "fifth"
-        ],
-        "correct": 2,
-        "explanation": "50. sıra sayısının İngilizcesi 'fiftieth'tir. 'Fifteenth' ise 15. anlamındadır."
+            "id": "e6-1-t2-08",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Complete the dialogue.\n\nMum: Would you like some cheese?\nLeo: ____. I'd love some cheese.",
+            "options": [
+                  "Yes, please",
+                  "No, thanks",
+                  "I don't like it",
+                  "No, I wouldn't"
+            ],
+            "correct": 0,
+            "explanation": "Leo peynir istediğini açıkça söylüyor; teklifi kibarca kabul eden uygun cevap 'Yes, please' olur."
       },
       {
-        "id": "e6-1-t2-09",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Ali: Are you writing a story now?\nMina: No, ____. I am reading a poem.",
-        "options": [
-          "I'm not",
-          "I doesn't",
-          "I isn't",
-          "I don't"
-        ],
-        "correct": 0,
-        "explanation": "'Are you ...?' sorusuna kişi kendi adına 'No, I'm not.' diye cevap verir. Mina şu anda hikâye yazmadığını, şiir okuduğunu söylüyor."
+            "id": "e6-1-t2-09",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Sara likes eggs and cheese, but not olives. Her brother likes olives and cheese, but not eggs. Their mother likes eggs and olives, but not cheese.\n\nWhich sentence is NOT correct?",
+            "options": [
+                  "Sara and her mother both like eggs.",
+                  "Sara's brother and mother both like olives.",
+                  "Everyone in the family likes cheese.",
+                  "Sara and her brother both like cheese."
+            ],
+            "correct": 2,
+            "explanation": "Sara’nın annesi peyniri sevmez; bu yüzden herkesin peynir sevdiğini söyleyen C seçeneği yanlıştır. A, B ve D seçeneklerindeki ortak tercihler metinle uyumludur."
       },
       {
-        "id": "e6-1-t2-10",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Read the routine: 'Before class, I check my bag. During class, I take notes. After school, I revise my notes.' What does the student do during class?",
-        "options": [
-          "Takes notes.",
-          "Checks the school bag.",
-          "Revises notes at home.",
-          "Plays in the garden."
-        ],
-        "correct": 0,
-        "explanation": "Metindeki 'During class, I take notes.' cümlesi ders sırasında not alındığını açıkça belirtir."
+            "id": "e6-1-t2-10",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Complete the dialogue.\n\nA: Does Melis like orange juice?\nB: Yes, she ____. She ____ it at breakfast.",
+            "options": [
+                  "do / drinks",
+                  "does / drinks",
+                  "does / drink",
+                  "do / drink"
+            ],
+            "correct": 1,
+            "explanation": "'Does Melis...?' sorusuna 'Yes, she does' denir. Olumlu geniş zaman cümlesinde 'she' ile 'drinks' kullanılır."
       }
-    ],
+],
     "test3": [
       {
         "id": "e6-1-t3-01",

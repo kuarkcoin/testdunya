@@ -193,3 +193,11 @@ Toplam: 23 test, 230 soru, 117 SVG, 28 rota. Önceki 220 soru ve 110 SVG korunur
 - Yedi görselli ve üç metin sorusu; saat okuma, günlük sıra, haftalık sıklık, çizelge yorumlama ve Simple Present iletişimi. Soru ve seçenekler İngilizce, açıklamalar Türkçe. Anahtar: **C, A, D, B, C, D, A, B, D, C**.
 - 360 birim genişlikte yedi pasif SVG, en az 26 birim yazı; 238 piksel genişlikte okunabilirlik ve analog saatlerde saat/dakika ibresi konumu incelendi. İngilizce Test 2–3 ve diğer derslerdeki 250 soru ile önceki 138 görsel korundu. Toplamlar 26 test / 260 soru / 145 görsel / 31 rota.
 - Bağımsız dil/cevap denetimi, veri/rota doğrulaması, TypeScript ve üretim derlemesi uygulanır. Tarayıcı etkileşimleri bu çalışmada test edilmemiştir. Production’a otomatik aktarım yapılmaz.
+
+
+## Yenilenen İngilizce Test 2 (24 Ekim 2026)
+
+- Mevcut `/6-sinif/ingilizce/test-2` rotası ve `e6-1-t2-01`–`e6-1-t2-10` kimlikleri korundu. Konu: **Yummy Breakfast: Yiyecekler ve Tercihler (Orta)**. Kullanıcının verdiği sıraya göre yiyecek/içecekler, sevme-sevmeme, teklif kabulü ve kibar ret ele alındı. Bu ad güncel MEB ikinci teması Classroom Life yerine resmî tema adı olarak sunulmaz; tam müfredat kapsamı iddiası yoktur.
+- 7 görselli + 3 metin sorusu; İngilizce soru/seçenekler, Türkçe açıklamalar. Menü ve sipariş karşılaştırması, ortak tercihler, teklif/yanıt uyumu ve Simple Present kullanımı. Anahtar: **B, C, D, A, B, C, D, A, C, B**.
+- Yedi pasif SVG: 360 birim genişlik, en az 26 birim etiket; yiyecek/içecek çizimleri, alternatif metin ve gerçek boyutlar. 238 piksel çıktıları okunabilirlik ve kırpılma bakımından incelendi. İngilizce Test 1 ve 3 dahil diğer 250 soru ile önceki 145 SVG korundu. Toplam: 26 test / 260 soru / 152 SVG / 31 rota.
+- Bağımsız dil/tek-doğru-cevap denetimi, veri/rota kontrolü, TypeScript ve üretim derlemesi uygulanır. Tarayıcı etkileşim testi yapılmadı; production’a otomatik aktarım yapılmaz.
