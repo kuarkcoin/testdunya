@@ -209,3 +209,11 @@ Toplam: 23 test, 230 soru, 117 SVG, 28 rota. Önceki 220 soru ve 110 SVG korunur
 - 7 görselli + 3 metin sorusu; şehir haritası ve kamusal binalar, şu anda yapılan eylemler (Present Continuous), bina yüksekliği/kalabalıklık/hız karşılaştırmaları ve açılış saatleri. Soru/seçenekler İngilizce, açıklamalar Türkçe. Anahtar: **D, B, A, C, B, D, A, C, D, B**.
 - Yedi pasif SVG: 360 birim genişlik, en az 26 birim yazı; 238 piksel çıktıları incelenir. Bina yükseklikleri ortak tabana ve orana sahiptir; sokak kalabalıklığı ve araç hızları yalnız verilen örneğe aittir. İngilizce Test 1–2 dahil diğer 250 soru ve önceki 152 SVG korunur. Toplam: 26 test / 260 soru / 159 SVG / 31 rota.
 - Bağımsız dil/tek-doğru-cevap ve görsel denetimi, veri/rota doğrulaması, TypeScript ve üretim derlemesi uygulanır. Tarayıcı etkileşim testi yapılmadı; production’a otomatik aktarım yapılmaz.
+
+
+## İngilizce Test 4 — Weather and Emotions (24 Ekim 2026)
+
+- Yeni `/6-sinif/ingilizce/test-4` rotası: **Weather and Emotions: Hava Durumu ve Duygular (Orta)**. Kullanıcının verdiği konu sırası esas alınır; güncel resmî MEB tema adı veya tüm müfredat kapsamı iddiası yoktur.
+- 7 görselli + 3 metin sorusu; hava durumu simgeleri, örnek tahminler, sıcaklık karşılaştırmaları, kişisel duygular, koşula uygun öneriler ve iletişim. Soru/seçenekler İngilizce, açıklamalar Türkçe. Duygular kişilerin açık sözlerine/ifadelerine dayanır; hava durumu ile duygu arasında evrensel ilişki kurulmaz. Anahtar: **C, A, D, B, C, A, D, B, C, A**.
+- Yedi pasif SVG: 360 birim genişlik, en az 26 birim yazı; 238 piksel çıktıları okunabilirlik ve kırpılma açısından denetlenir. Önceki 260 soru ve 159 SVG korunur. Yeni toplam: 27 test / 270 soru / 166 SVG / 32 rota.
+- Bağımsız dil/tek-doğru-cevap ve görsel denetimi, veri/rota doğrulaması, TypeScript ve üretim derlemesi uygulanır. Tarayıcı etkileşim testi yapılmadı; production’a otomatik aktarım yapılmaz.

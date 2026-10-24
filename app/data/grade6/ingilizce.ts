@@ -515,6 +515,176 @@ export const ingilizceData: SubjectData = {
             "correct": 1,
             "explanation": "Müze 15 m ile bankadan (10 m) uzun, otelden (25 m) kısadır. Bu yüzden 'taller / shorter' kullanılır."
       }
+],
+    "test4": [
+      {
+            "id": "e6-1-t4-01",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at the sample forecast. Which sentence is correct?",
+            "options": [
+                  "It is rainy on Monday.",
+                  "Tuesday is warmer than Monday.",
+                  "It is rainy and 12°C on Tuesday.",
+                  "Wednesday is sunny and 18°C."
+            ],
+            "correct": 2,
+            "explanation": "Salı gününde yağmur simgesi ve 12°C görülür. Pazartesi güneşli ve 18°C, çarşamba bulutlu ve 15°C olduğundan yalnız C doğrudur.",
+            "imageWidth": 360,
+            "imageHeight": 470,
+            "imageUrl": "/grade6/ingilizce/test-4/soru-01.svg",
+            "imageAlt": "Örnek tahmin: pazartesi güneşli 18°C, salı yağmurlu 12°C, çarşamba bulutlu 15°C."
+      },
+      {
+            "id": "e6-1-t4-02",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at the sample forecast. Complete the sentence: “Izmir is ____ than Rize, and Ankara is ____ than Rize.”",
+            "options": [
+                  "warmer / colder",
+                  "colder / warmer",
+                  "warmer / warmer",
+                  "colder / colder"
+            ],
+            "correct": 0,
+            "explanation": "İzmir 19°C ile Rize’den (11°C) sıcak, Ankara 5°C ile Rize’den soğuktur. Doğru sıralama warmer / colder olur.",
+            "imageWidth": 360,
+            "imageHeight": 470,
+            "imageUrl": "/grade6/ingilizce/test-4/soru-02.svg",
+            "imageAlt": "Örnek şehir tahminleri: Ankara karlı 5°C, İzmir güneşli 19°C, Rize yağmurlu 11°C."
+      },
+      {
+            "id": "e6-1-t4-03",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "It is snowing today. Look at the two friends and read their words. Which sentence is correct?",
+            "options": [
+                  "Both children are happy about the snow.",
+                  "Leo is sad because he misses the sun.",
+                  "Mia is excited about her picnic today.",
+                  "Leo is happy, but Mia is unhappy."
+            ],
+            "correct": 3,
+            "explanation": "Leo karı sevdiğini söyleyerek gülümsüyor. Mia güneşi özlediğini söylüyor; pikniği yok ve üzgün görünüyor. Yorum yalnız bu iki kişinin söz ve ifadelerine dayanır.",
+            "imageWidth": 360,
+            "imageHeight": 490,
+            "imageUrl": "/grade6/ingilizce/test-4/soru-03.svg",
+            "imageAlt": "Leo gülümseyerek karı sevdiğini söylüyor; kardan adam zamanı. Mia üzgün, güneşi özlüyor; bugün piknik yok."
+      },
+      {
+            "id": "e6-1-t4-04",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at the park scene and read the child’s words. Which question can you answer with “It is windy”?",
+            "options": [
+                  "How do you feel today?",
+                  "What is the weather like at the park?",
+                  "What time do you fly your kite?",
+                  "Where is your school?"
+            ],
+            "correct": 1,
+            "explanation": "Uçurtma ve hareket eden hava rüzgârı gösterir. “It is windy” hava durumunu belirtir; bu yüzden parkta havanın nasıl olduğunu soran B seçeneğine cevap olur.",
+            "imageWidth": 360,
+            "imageHeight": 450,
+            "imageUrl": "/grade6/ingilizce/test-4/soru-04.svg",
+            "imageAlt": "Parkta uçurtma uçuran çocuk; hareket çizgileri rüzgârı gösteriyor. Çocuk uçurtmasının uçtuğunu ve havanın hareket ettiğini söylüyor."
+      },
+      {
+            "id": "e6-1-t4-05",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Read the mountain forecast. Which advice is suitable for this trip?",
+            "options": [
+                  "Wear a T-shirt because it is hot.",
+                  "Take sunglasses because it is sunny and 30°C.",
+                  "Wear a warm coat because it is snowy and cold.",
+                  "Wear shorts because it is warm and dry."
+            ],
+            "correct": 2,
+            "explanation": "Dağda kar ve −2°C tahmini var; gezi de sabah boyunca açık havada. Bu koşullara uygun öneri sıcak tutan bir mont giymektir.",
+            "imageWidth": 360,
+            "imageHeight": 450,
+            "imageUrl": "/grade6/ingilizce/test-4/soru-05.svg",
+            "imageAlt": "Cumartesi dağ gezisi: karlı, eksi 2°C; sabah boyunca dışarıda kalınacak."
+      },
+      {
+            "id": "e6-1-t4-06",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at Ella and read her words. Why does she want someone to stay with her?",
+            "options": [
+                  "She feels scared because of the loud thunder.",
+                  "She is excited about playing in the sun.",
+                  "She feels happy because she loves storms.",
+                  "She is bored because there is no wind."
+            ],
+            "correct": 0,
+            "explanation": "Ella gök gürültüsünün yüksek olduğunu ve korktuğunu açıkça söylüyor. Yanında birinin kalmasını bu nedenle istiyor; bu, herkese genellenen bir hava–duygu ilişkisi değildir.",
+            "imageWidth": 360,
+            "imageHeight": 470,
+            "imageUrl": "/grade6/ingilizce/test-4/soru-06.svg",
+            "imageAlt": "Dışarıda şimşekli fırtına; Ella korkmuş görünüyor ve yüksek gök gürültüsünden korktuğunu söyleyerek yanında birinin kalmasını istiyor."
+      },
+      {
+            "id": "e6-1-t4-07",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Ben says, “I want a sunny day warmer than 20°C for our picnic.” Look at the sample forecast. Which plan matches his wish?",
+            "options": [
+                  "Have the picnic on Saturday because it is sunny.",
+                  "Have the picnic on Sunday because it is warmer than 20°C.",
+                  "Have the picnic on Saturday because it is 22°C.",
+                  "Have the picnic on Friday because it is sunny and 22°C."
+            ],
+            "correct": 3,
+            "explanation": "Ben hem güneşli hem 20°C’den sıcak bir gün istiyor. İki koşulu birlikte yalnız cuma (güneşli, 22°C) sağlıyor. Cumartesi güneşli olsa da 16°C ile yeterince sıcak değildir; pazar 24°C olsa da bulutludur.",
+            "imageWidth": 360,
+            "imageHeight": 470,
+            "imageUrl": "/grade6/ingilizce/test-4/soru-07.svg",
+            "imageAlt": "Örnek tahmin: cuma güneşli 22°C, cumartesi güneşli 16°C, pazar bulutlu 24°C."
+      },
+      {
+            "id": "e6-1-t4-08",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Complete the dialogue.\nA: What is the weather like in your town today?\nB: ____\nA: Then take an umbrella when you go out.",
+            "options": [
+                  "I feel excited about the school trip.",
+                  "It is rainy, and I need to go to the shops.",
+                  "It is sunny, and I am staying at home.",
+                  "I like snowy days in winter."
+            ],
+            "correct": 1,
+            "explanation": "Soru bugünkü hava durumunu soruyor; sonraki cümle dışarı çıkarken şemsiye almayı öneriyor. Yağmurlu olduğunu ve alışverişe çıkacağını söyleyen B, iki cümleyle de uyumludur."
+      },
+      {
+            "id": "e6-1-t4-09",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Read the text.\n“I am Nora. Rainy days make me feel relaxed. I like listening to the rain at home. My brother Tim feels bored on rainy days because he cannot play football outside.”\n\nWhich sentence is NOT correct?",
+            "options": [
+                  "Nora enjoys listening to the rain.",
+                  "Tim wants to play football outside.",
+                  "Both Nora and Tim feel relaxed on rainy days.",
+                  "Tim feels bored when it rains."
+            ],
+            "correct": 2,
+            "explanation": "Nora yağmurlu günlerde rahatladığını, Tim ise dışarıda futbol oynayamadığı için sıkıldığını söylüyor. İkisinin de rahatladığını söyleyen C metne aykırıdır."
+      },
+      {
+            "id": "e6-1-t4-10",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Choose the correct words.\n“The weather is ____ today. The trees are moving in the wind. I feel ____ because I can fly my new kite.”",
+            "options": [
+                  "windy / excited",
+                  "wind / exciting",
+                  "rain / excited",
+                  "sunny / boring"
+            ],
+            "correct": 0,
+            "explanation": "Hava durumunu anlatırken sıfat olan windy kullanılır. Kişinin hissettiği heyecan için excited uygundur; exciting ise heyecan veren şeyi niteler. Rüzgârda hareket eden ağaçlar da windy ifadesini destekler."
+      }
 ]
   },
   "term2": {}
