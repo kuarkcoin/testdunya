@@ -1,152 +1,181 @@
 import { SubjectData } from "./types";
 
-// Özgün sorular; 1. dönem başlangıç konularıyla sınırlıdır.
+// Özgün sorular. Test 1: kullanıcının Life / günlük rutinler isteğine göre yenilenmiştir.
+// Güncel MEB ilk tema adı School Life; Life etiketi güncel resmî tema adı iddiası değildir.
 // Müfredat kapsamı: https://tymm.meb.gov.tr/ingilizce-dersi-temel-egitim/unite/752
 // Müfredat kapsamı: https://tymm.meb.gov.tr/ingilizce-dersi-temel-egitim/unite/753
 export const ingilizceData: SubjectData = {
   "term1": {
     "test1": [
       {
-        "id": "e6-1-t1-01",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Ms Green works in the school library. She helps students find and borrow books. Who is she?",
-        "options": [
-          "A bus driver",
-          "A cook",
-          "A librarian",
-          "A student"
-        ],
-        "correct": 2,
-        "explanation": "Okul kütüphanesinde kitap bulmaya ve ödünç almaya yardımcı olan kişi kütüphanecidir. İngilizcesi 'librarian'dır."
+            "id": "e6-1-t1-01",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at the clock. Emma gets up at this time every morning. Which sentence is correct?",
+            "options": [
+                  "She gets up at a quarter to seven.",
+                  "She gets up at half past seven.",
+                  "She gets up at a quarter past seven.",
+                  "She gets up at a quarter past eight."
+            ],
+            "correct": 2,
+            "explanation": "Yelkovan 3’ü, akrep 7’yi biraz geçmiş konumu gösterir: 07.15. 'A quarter past seven' yediyi çeyrek geçe demektir.",
+            "imageWidth": 360,
+            "imageHeight": 380,
+            "imageUrl": "/grade6/ingilizce/test-1/soru-01.svg",
+            "imageAlt": "Emma’nın kalkış saati: analog saatte yelkovan 3’te, akrep 7 ile 8 arasında 7’ye yakın. Saat 07.15."
       },
       {
-        "id": "e6-1-t1-02",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "The classroom rule is: 'Keep our classroom clean.' Which action follows this rule?",
-        "options": [
-          "Leave paper on the floor.",
-          "Put rubbish in the bin.",
-          "Draw on the desks.",
-          "Drop food under your chair."
-        ],
-        "correct": 1,
-        "explanation": "Sınıfı temiz tutmak için çöpler çöp kutusuna atılır. 'Put rubbish in the bin.' bu kurala uygun davranıştır."
+            "id": "e6-1-t1-02",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at Mia's morning routine. What does she do after breakfast but before she leaves home?",
+            "options": [
+                  "She brushes her teeth.",
+                  "She gets up.",
+                  "She has breakfast.",
+                  "She leaves home."
+            ],
+            "correct": 0,
+            "explanation": "Kahvaltı 07.10, diş fırçalama 07.25, evden çıkış 07.40’tır. Kahvaltıdan sonra ve çıkıştan önce dişlerini fırçalar.",
+            "imageWidth": 360,
+            "imageHeight": 430,
+            "imageUrl": "/grade6/ingilizce/test-1/soru-02.svg",
+            "imageAlt": "Mia’nın sıralı sabah programı: 06.45 kalkış, 07.10 kahvaltı, 07.25 diş fırçalama, 07.40 evden çıkış."
       },
       {
-        "id": "e6-1-t1-03",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Eren: How do you go to school?\nMaya: ____",
-        "options": [
-          "At eight o'clock.",
-          "In the library.",
-          "With my maths book.",
-          "By bus."
-        ],
-        "correct": 3,
-        "explanation": "'How do you go to school?' okula hangi ulaşım yoluyla gidildiğini sorar. 'By bus.' otobüsle demektir."
+            "id": "e6-1-t1-03",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at Ben's after-school plan. Which sentence is correct?",
+            "options": [
+                  "He plays football on Tuesday.",
+                  "He goes swimming on Friday.",
+                  "He does homework on Monday.",
+                  "He plays football on Monday and Friday."
+            ],
+            "correct": 3,
+            "explanation": "Ben pazartesi ve cuma futbol oynar; bu, haftada iki gündür. Salı ödev, çarşamba yüzme, perşembe okuma vardır.",
+            "imageWidth": 360,
+            "imageHeight": 430,
+            "imageUrl": "/grade6/ingilizce/test-1/soru-03.svg",
+            "imageAlt": "Ben’in okul sonrası planı: Monday football; Tuesday homework; Wednesday swimming; Thursday reading; Friday football."
       },
       {
-        "id": "e6-1-t1-04",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Complete the sentence: 'Kerem ____ to school at eight every morning.'",
-        "options": [
-          "go",
-          "goes",
-          "going",
-          "are going"
-        ],
-        "correct": 1,
-        "explanation": "'Every morning' düzenli yapılan bir işi gösterir. Geniş zamanda 'Kerem' (he) ile 'goes' kullanılır."
+            "id": "e6-1-t1-04",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at the two clocks. Which sentence is correct?",
+            "options": [
+                  "Aylin leaves home after her lessons start.",
+                  "Aylin leaves home before her lessons start.",
+                  "Aylin leaves home at half past eight.",
+                  "Her lessons start at a quarter to eight."
+            ],
+            "correct": 1,
+            "explanation": "Aylin 07.45’te evden çıkar; dersleri 08.30’da başlar. 'Before' önce demektir; çıkış ders başlangıcından öncedir.",
+            "imageWidth": 360,
+            "imageHeight": 550,
+            "imageUrl": "/grade6/ingilizce/test-1/soru-04.svg",
+            "imageAlt": "İki analog saat: Aylin leaves home 07.45; lessons start 08.30. Her saatin akrebi ara konuma uygun çizilmiştir."
       },
       {
-        "id": "e6-1-t1-05",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Complete the question: '____ your sister wear a school uniform every day?'",
-        "options": [
-          "Do",
-          "Does",
-          "Is",
-          "Are"
-        ],
-        "correct": 1,
-        "explanation": "Günlük alışkanlığı soran geniş zaman sorusunda 'your sister' (she) ile 'Does' kullanılır. Ana fiil 'wear' yalın hâlde kalır."
+            "id": "e6-1-t1-05",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at the chart. Complete the sentence: 'Tom ____ to school, but Anna ____ to school.'",
+            "options": [
+                  "takes the bus / walks",
+                  "walks / walks",
+                  "walks / takes the bus",
+                  "takes the bus / takes the bus"
+            ],
+            "correct": 2,
+            "explanation": "Tom yürüyerek, Anna otobüsle gider. Her iki özne de üçüncü tekil şahıstır: 'walks' ve 'takes the bus' kullanılır.",
+            "imageWidth": 360,
+            "imageHeight": 360,
+            "imageUrl": "/grade6/ingilizce/test-1/soru-05.svg",
+            "imageAlt": "Ulaşım tablosu: Tom için walk YES, bus NO; Anna için walk NO, bus YES."
       },
       {
-        "id": "e6-1-t1-06",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Arda is on time for every lesson. He is ____ late for class.",
-        "options": [
-          "usually",
-          "always",
-          "never",
-          "often"
-        ],
-        "correct": 2,
-        "explanation": "Arda her derse zamanında geliyorsa hiç geç kalmaz. 'Never', 'asla/hiçbir zaman' anlamındadır."
+            "id": "e6-1-t1-06",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at Leo's evening routine. Which question has the answer 'At half past eight'?",
+            "options": [
+                  "What time does Leo have dinner?",
+                  "What time does Leo do his homework?",
+                  "What time does Leo go to bed?",
+                  "What time does Leo read a book?"
+            ],
+            "correct": 3,
+            "explanation": "Tabloda kitap okuma saati 20.30’dur; bu 'half past eight' olarak söylenir. Yemek 18.30, ödev 19.00, yatış 21.15’tir.",
+            "imageWidth": 360,
+            "imageHeight": 430,
+            "imageUrl": "/grade6/ingilizce/test-1/soru-06.svg",
+            "imageAlt": "Leo’nun akşam programı: dinner 18.30, homework 19.00, read a book 20.30, go to bed 21.15."
       },
       {
-        "id": "e6-1-t1-07",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Mr White is the head of our school. He manages the school and works with the teachers. He is the ____.",
-        "options": [
-          "student",
-          "librarian",
-          "bus driver",
-          "headteacher"
-        ],
-        "correct": 3,
-        "explanation": "Okulu yöneten kişi okul müdürüdür. 'Headteacher', okul müdürü anlamında kullanılır."
+            "id": "e6-1-t1-07",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at Elif's weekly piano chart. She has a lesson only on the marked days. Which answer is correct?\n\n'How often does Elif have piano lessons?'",
+            "options": [
+                  "Three times a week.",
+                  "Every day.",
+                  "Once a week.",
+                  "Twice a week."
+            ],
+            "correct": 0,
+            "explanation": "Pazartesi, çarşamba ve cuma işaretlidir. Haftada üç kez için 'Three times a week' denir.",
+            "imageWidth": 360,
+            "imageHeight": 440,
+            "imageUrl": "/grade6/ingilizce/test-1/soru-07.svg",
+            "imageAlt": "Elif’in haftalık piyano çizelgesi: Mon YES, Tue NO, Wed YES, Thu NO, Fri YES, Sat NO, Sun NO."
       },
       {
-        "id": "e6-1-t1-08",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Which national day do we celebrate in Türkiye on 29 October?",
-        "options": [
-          "Republic Day",
-          "National Sovereignty and Children's Day",
-          "Commemoration of Atatürk, Youth and Sports Day",
-          "Victory Day"
-        ],
-        "correct": 0,
-        "explanation": "29 Ekim'de Cumhuriyet Bayramı kutlanır. İngilizcede bu bayram 'Republic Day' olarak adlandırılır."
+            "id": "e6-1-t1-08",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "On weekdays, Oliver gets up at seven and has breakfast at half past seven. He walks to school at eight. At weekends, he gets up at nine.\n\nWhich sentence is correct?",
+            "options": [
+                  "He gets up at nine on weekdays.",
+                  "He has breakfast before he goes to school on weekdays.",
+                  "He goes to school by bus.",
+                  "He gets up at the same time every day."
+            ],
+            "correct": 1,
+            "explanation": "Oliver hafta içi 07.30’da kahvaltı yapar, 08.00’de okula yürür. Bu nedenle kahvaltı okula gitmeden öncedir. Hafta sonu kalkış saati farklıdır."
       },
       {
-        "id": "e6-1-t1-09",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Our school is preparing a celebration for National Sovereignty and Children's Day. What is the date of this national day?",
-        "options": [
-          "23 April",
-          "30 August",
-          "29 October",
-          "19 May"
-        ],
-        "correct": 0,
-        "explanation": "Ulusal Egemenlik ve Çocuk Bayramı 23 Nisan'dır. İngilizcede tarih '23 April' biçiminde yazılabilir."
+            "id": "e6-1-t1-09",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Complete the dialogue.\n\nNora: Does your brother play basketball after school?\nSam: No, he ____. He ____ his homework first.",
+            "options": [
+                  "don't / do",
+                  "doesn't / do",
+                  "don't / does",
+                  "doesn't / does"
+            ],
+            "correct": 3,
+            "explanation": "'Does your brother...?' sorusuna olumsuz kısa cevap 'No, he doesn't' olur. Sonraki olumlu cümlede 'he' ile 'does his homework' kullanılır."
       },
       {
-        "id": "e6-1-t1-10",
-        "subject": "ingilizce",
-        "term": 1,
-        "prompt": "Read the school programme: '09:00: Flag ceremony. 09:30: Songs. 10:00: Folk dances.' When do the folk dances start?",
-        "options": [
-          "At nine o'clock.",
-          "At half past nine.",
-          "At half past ten.",
-          "At ten o'clock."
-        ],
-        "correct": 3,
-        "explanation": "Programda halk oyunları '10:00' olarak verilmiştir. Bunun karşılığı 'at ten o'clock'tur."
+            "id": "e6-1-t1-10",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Lily says, 'I finish school at three. I rest for a short time, then I do my homework. I play games after my homework.'\n\nWhich is the correct order?",
+            "options": [
+                  "School → games → homework → rest",
+                  "School → homework → rest → games",
+                  "School → rest → homework → games",
+                  "Rest → school → games → homework"
+            ],
+            "correct": 2,
+            "explanation": "Lily önce okuldan çıkar, kısa süre dinlenir, sonra ödev yapar ve en son oyun oynar. 'Then' sonra, 'after' ardından anlamını verir."
       }
-    ],
+],
     "test2": [
       {
         "id": "e6-1-t2-01",

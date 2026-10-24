@@ -39,7 +39,7 @@ const starterTopics: Record<SubjectId, string[]> = {
   matematik: ['Sayılar ve Nicelikler: Şekilli Orta–Zor Sorular', 'Sayılar ve Nicelikler: Uygulama', 'Sayılar ve Nicelikler: Akıl Yürütme', 'Sayılar ve Nicelikler: Şekilli Sorular', 'Sayılar ve Nicelikler: Şekilli Akıl Yürütme', 'Deneysel Olasılık: Şekilli Akıl Yürütme', 'Ondalık Gösterimler ve Uzunluk Ölçme: Orta–Zor Sorular', 'İstatistiksel Araştırma: Verileri Yorumlama', 'Geometrik Şekiller: Açılar ve Dörtgenler', 'Cebirsel Düşünme: Örüntüler ve Algoritmalar'],
   turkce: ['Sözcük Anlamı ve Okuduğunu Anlama', 'Yazım Kuralları ve Virgül', 'Dilimizin Zenginliği: Karma Tekrar'],
   fen: ['Güneş Sistemi ve Tutulmalar: Orta–Zor Sorular', 'Tutulmalar ve Bileşke Kuvvet: Orta–Zor Sorular', 'Kuvvet, Hareket, Sürat ve Hız: Orta–Zor Sorular', 'Canlılarda Üreme, Büyüme ve Gelişme: Orta–Zor Sorular', 'Denetleyici ve Düzenleyici Sistemler: Orta–Zor Sorular', 'Işığın Yansıması ve Aynalar: Orta–Zor Sorular', 'Işığın Soğurulması ve Renkler: Orta–Zor Sorular', 'Genleşme ve Hâl Değişim Noktaları: Orta–Zor Sorular', 'Yoğunluk: Kütle, Hacim ve Yüzme: Orta–Zor Sorular', 'Elektriğin İletimi ve Direnç: Orta–Zor Sorular'],
-  ingilizce: ['School Life', 'Classroom Life', 'School & Classroom Life: Review'],
+  ingilizce: ['Life: Günlük Rutinler ve Saatler (Orta)', 'Classroom Life', 'School & Classroom Life: Review'],
 };
 
 export const getGrade6Subject = (id: string) => grade6Subjects.find((subject) => subject.id === id);

@@ -186,3 +186,10 @@ Toplam: 23 test, 230 soru, 117 SVG, 28 rota. Önceki 220 soru ve 110 SVG korunur
 - 7 şekilli + 3 şekilsiz orta–zor soru: iletkenlik testi, kontrollü deney, uzunluk/kesit/cins etkileri, reosta ve yalıtım. FB.6.6.1–FB.6.6.3: https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/414. Direnç formülleri veya şebeke elektriği deneyi içermez.
 - 360 birim tuval, en az 26 birim yazı, 238 px görsel denetim. Önceki 250 soru ve 131 SVG korunur. Toplam: 26 test, 260 soru, 138 SVG, 31 rota.
 - Anahtar: C, A, D, B, A, C, D, B, C, A. Tarayıcı etkileşimleri test edilmedi.
+
+## Yenilenen İngilizce Test 1 (24 Ekim 2026)
+
+- Mevcut `/6-sinif/ingilizce/test-1` adresi ve `e6-1-t1-01`–`e6-1-t1-10` kimlikleri korundu. Konu: **Life: Günlük Rutinler ve Saatler (Orta)**. Kullanıcının istediği Life kapsamı esas alındı; güncel MEB portalındaki ilk temanın adı **School Life** olduğundan Life’ın güncel resmî tema adı olduğu iddia edilmez. Rutinler ve Simple Present konuları School Life ile örtüşür; paket tüm tema kazanımlarını kapsamaz.
+- Yedi görselli ve üç metin sorusu; saat okuma, günlük sıra, haftalık sıklık, çizelge yorumlama ve Simple Present iletişimi. Soru ve seçenekler İngilizce, açıklamalar Türkçe. Anahtar: **C, A, D, B, C, D, A, B, D, C**.
+- 360 birim genişlikte yedi pasif SVG, en az 26 birim yazı; 238 piksel genişlikte okunabilirlik ve analog saatlerde saat/dakika ibresi konumu incelendi. İngilizce Test 2–3 ve diğer derslerdeki 250 soru ile önceki 138 görsel korundu. Toplamlar 26 test / 260 soru / 145 görsel / 31 rota.
+- Bağımsız dil/cevap denetimi, veri/rota doğrulaması, TypeScript ve üretim derlemesi uygulanır. Tarayıcı etkileşimleri bu çalışmada test edilmemiştir. Production’a otomatik aktarım yapılmaz.
