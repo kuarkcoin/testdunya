@@ -1,10 +1,11 @@
 import { SubjectData } from "./types";
 
-// 6. sınıf başlangıç paketi: İlk iki ünite; üreme, büyüme, gelişme ve denetleyici sistemlerden seçmeler.
-// FB.6.1.1–FB.6.1.4, FB.6.2.1–FB.6.2.3, FB.6.3.1–FB.6.3.4 ve FB.6.3.6–FB.6.3.8; tüm yılı kapsamaz.
+// 6. sınıf başlangıç paketi: İlk iki ünite; üreme, büyüme, gelişme ve denetleyici sistemler, ışığın yansıması ve aynalardan seçmeler.
+// FB.6.1.1–FB.6.1.4, FB.6.2.1–FB.6.2.3, FB.6.3.1–FB.6.3.4 ve FB.6.3.6–FB.6.3.8 ve FB.6.4.1–FB.6.4.3; tüm yılı kapsamaz.
 // Kaynaklar: https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/409
 // https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/410
 // https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/411
+// https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/412
 // Kesin uydu sayıları, sürat-hız hesabı/grafikleri ve birim dönüşümleri kapsam dışıdır.
 export const fenData: SubjectData = {
   term1: {
@@ -858,6 +859,177 @@ export const fenData: SubjectData = {
             ],
             "correct": 0,
             "explanation": "Boy uzaması bedensel; duyguların değişmesi ruhsal değişimlerle ilişkilidir. Ergenlikte değişimlerin başlama zamanı kişiden kişiye farklılık gösterebilir. Tek başına arkadaşlar arasındaki zaman farkı hastalık tanısı koydurmaz; bireysel farklılıklara saygı gösterilmelidir."
+      }
+],
+
+    test6: [
+      {
+            "id": "f6-1-t6-01",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Bir öğrenci şekilde gelen ışın ile ayna yüzeyi arasındaki 35°’yi gelme açısı olarak yazıyor.\n\nÖğrencinin kaydı nasıl düzeltilmeli ve yansıma açısı kaç derece olmalıdır?",
+            "options": [
+                  "Gelme açısı 35°, yansıma açısı 55° olmalıdır.",
+                  "İki açı da 35° olmalıdır.",
+                  "Gelme açısı ve yansıma açısı 55° olmalıdır.",
+                  "Gelme açısı 55°, yansıma açısı 35° olmalıdır."
+            ],
+            "correct": 2,
+            "explanation": "Gelme ve yansıma açıları yüzeyden değil, yüzeye dik normalden ölçülür. Yüzeyle 35° yapan gelen ışının normalle açısı 55°’dir. Yansıma açısı da 55° olur.",
+            "imageWidth": 360,
+            "imageHeight": 360,
+            "imageUrl": "/grade6/fen/test-6/soru-01.svg",
+            "imageAlt": "Yatay aynaya sol üstten gelen ışın yüzeyle 35° yapıyor. Çarpma noktasında dik normal çizili. Yansıyan ışın çizilmemiş."
+      },
+      {
+            "id": "f6-1-t6-02",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Gelen ışının normalle yaptığı açı şekilde 30°’dir. Öğrenci yansıyan ışın için P ve R yollarını öneriyor.\n\nHangi yol seçilmeli ve gerekçesi ne olmalıdır?",
+            "options": [
+                  "P; normalle yaptığı açı gelme açısına eşittir.",
+                  "R; yüzeye daha yakın olan yol her zaman doğrudur.",
+                  "P; yansıyan ışın normal boyunca ilerlemek zorundadır.",
+                  "R; yansıma açısı gelme açısından büyük olmalıdır."
+            ],
+            "correct": 0,
+            "explanation": "Yansıyan ışın normalin diğer tarafında ve normalle 30° açı yapmalıdır. P bu koşulu sağlar; R’nin normalle açısı 60°’dir.",
+            "imageWidth": 360,
+            "imageHeight": 400,
+            "imageUrl": "/grade6/fen/test-6/soru-02.svg",
+            "imageAlt": "Yatay ayna ve dik normal. Gelen ışın solda normalle 30°, P sağda 30°, R sağda 60° yapıyor. Oklar aday yansıyan ışınlarda yüzeyden dışarı."
+      },
+      {
+            "id": "f6-1-t6-03",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Birbirine paralel ışınlar K ve L yüzeylerine gönderiliyor. Yansıyan ışınların yönleri şekilde gösterilmiştir.\n\nHangi yorum doğrudur?",
+            "options": [
+                  "K’da yansıma vardır; L’de ışık hiç yansımaz.",
+                  "K ve L’de yansıma kuralları farklıdır.",
+                  "L’de yüzeyin her noktasındaki normal aynı yöndedir.",
+                  "K düzgün, L dağınık yansımadır; her noktada yansıma kuralı geçerlidir."
+            ],
+            "correct": 3,
+            "explanation": "Düzgün yüzeyde paralel gelen ışınlar paralel yansır. Pürüzlü yüzeyin farklı noktalarındaki normaller farklı yönlerde olduğundan ışınlar farklı yönlere yansıyabilir. Dağınık yansımada da yerel gelme ve yansıma açıları eşittir.",
+            "imageWidth": 360,
+            "imageHeight": 430,
+            "imageUrl": "/grade6/fen/test-6/soru-03.svg",
+            "imageAlt": "K düz yüzey, L farklı eğimli küçük yüzeylerden oluşur. Paralel gelen ışınlar K’da paralel, L’de farklı yönlere yansır. Çizim şematiktir."
+      },
+      {
+            "id": "f6-1-t6-04",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Bir ok düz aynanın önünde önce K, sonra aynaya daha yakın L konumuna getiriliyor. Okun boyu ve duruşu değişmiyor.\n\nGörüntünün boyu ve aynaya göre konumu nasıl değişir?",
+            "options": [
+                  "Görüntü büyür ve aynadan uzaklaşır.",
+                  "Görüntünün boyu değişmez; görüntü aynaya yaklaşır.",
+                  "Görüntü küçülür; aynaya uzaklığı değişmez.",
+                  "Görüntü ters döner ve aynanın önüne geçer."
+            ],
+            "correct": 1,
+            "explanation": "Düz aynada görüntü cismin boyundadır ve aynanın arkasında oluşur. Cisim aynaya yaklaştırıldığında görüntü de aynaya yaklaşır; boyu ve düz oluşu değişmez.",
+            "imageWidth": 360,
+            "imageHeight": 350,
+            "imageUrl": "/grade6/fen/test-6/soru-04.svg",
+            "imageAlt": "Dikey düz ayna sağda. Aynı boydaki ok için K solda uzak, L aynaya daha yakın konumda. K’den L’ye hareket oku var."
+      },
+      {
+            "id": "f6-1-t6-05",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Aynı cismin üç aynadaki görüntüleri gözleniyor. K’de görüntü düz ve cisimle aynı boyda; L’de düz ve küçük; M’de ise cisim çok yakındayken düz ve büyük görülüyor.\n\nK, L ve M hangi ayna türleriyle eşleştirilmelidir?",
+            "options": [
+                  "K düz, L tümsek, M çukur.",
+                  "K tümsek, L düz, M çukur.",
+                  "K düz, L çukur, M tümsek.",
+                  "K çukur, L tümsek, M düz."
+            ],
+            "correct": 0,
+            "explanation": "Düz ayna aynı boyda düz görüntü verir. Tümsek aynada görüntü düz ve küçüktür. Çukur ayna, cisim yeterince yakındayken düz ve büyük görüntü verebilir. M için yakınlık koşulu bu nedenle önemlidir.",
+            "imageWidth": 360,
+            "imageHeight": 430,
+            "imageUrl": "/grade6/fen/test-6/soru-05.svg",
+            "imageAlt": "Her satırda aynı boyda cisim oku ve gözlenen görüntü oku: K aynı boyda düz, L küçük düz, M büyük düz. M’de cisim aynaya çok yakın. Işın çizimi değil gözlem karşılaştırması."
+      },
+      {
+            "id": "f6-1-t6-06",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Bir öğrenci aynı çukur aynada bir cismin görüntüsünü gözlüyor. Cisim çok yakındayken K, daha uzaktaki uygun bir konumdayken L görünümü elde ediliyor.\n\nBu gözlemler hangi çıkarımı destekler?",
+            "options": [
+                  "Çukur aynalar her uzaklıkta düz görüntü verir.",
+                  "Cisim uzaklaştırıldığında görüntü her zaman büyür.",
+                  "Çukur aynadaki görüntü özellikleri cismin konumuna bağlıdır.",
+                  "Ters görüntünün boyu cismin boyuna her zaman eşittir."
+            ],
+            "correct": 2,
+            "explanation": "Çukur aynada cismin konumuna göre görüntünün yönü ve boyu değişebilir. Yakında düz ve büyük, başka bir uygun konumda ters görüntü gözlenebilir. Aynanın türü cisim uzaklaşınca değişmez.",
+            "imageWidth": 360,
+            "imageHeight": 370,
+            "imageUrl": "/grade6/fen/test-6/soru-06.svg",
+            "imageAlt": "İki gözlem: K’de yukarı yönlü cisim oku ve daha büyük yukarı görüntü; L’de yukarı cisim oku ve aşağı yönlü görüntü. Çukur ayna aynı, konum farklı."
+      },
+      {
+            "id": "f6-1-t6-07",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "İki düz aynalı modelde ışık, birinci aynaya soldan gelip aşağıya yansıyor. İkinci ayna birinciye paralel yerleştirilmiştir.\n\nİkinci aynadan sonra ışık P mi R mi yönünde ilerler ve toplam kaç yansıma gerçekleşir?",
+            "options": [
+                  "P yönünde; bir yansıma.",
+                  "R yönünde; bir yansıma.",
+                  "P yönünde; iki yansıma.",
+                  "R yönünde; iki yansıma."
+            ],
+            "correct": 3,
+            "explanation": "İlk eğik ayna sağa ilerleyen ışığı aşağıya yöneltir. Buna paralel ikinci aynada aşağı gelen ışık sağa, yani R yönüne yansır. Her aynada birer kez olmak üzere toplam iki yansıma gerçekleşir.",
+            "imageWidth": 360,
+            "imageHeight": 400,
+            "imageUrl": "/grade6/fen/test-6/soru-07.svg",
+            "imageAlt": "İki paralel 45° eğimli düz ayna. Üste soldan gelen ışık alt aynaya düşey iner. Alt aynadan sola P, sağa R aday yönleri gösterilir."
+      },
+      {
+            "id": "f6-1-t6-08",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Bir öğrenci “Kitap sayfasında yüzümün net görüntüsü yok; demek ki sayfa ışığı hiç yansıtmıyor.” diyor.\n\nBu çıkarım neden yanlıştır?",
+            "options": [
+                  "Sayfa yalnız karanlıkta ışık yansıtır.",
+                  "Sayfadan yansıyan ışık göze ulaşır; dağınık yansıma nedeniyle net ayna görüntüsü oluşmaz.",
+                  "Sayfa kendi ışığını ürettiği için görülür.",
+                  "Net görüntü oluşturmayan her yüzey tüm ışığı geçirir."
+            ],
+            "correct": 1,
+            "explanation": "Bir yüzeyin görünmesi için ondan gelen ışığın göze ulaşması gerekir. Kitap sayfası ışığı farklı yönlere yansıtır; net ayna görüntüsü oluşmaması yansımanın yokluğu anlamına gelmez."
+      },
+      {
+            "id": "f6-1-t6-09",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Bir mağazada geniş bir alanı gözetlemek, bir bakım aynasında ise yakındaki yüzün ayrıntılarını büyük görmek isteniyor.\n\nİki amaç için sırasıyla hangi aynalar seçilmelidir?",
+            "options": [
+                  "Düz – tümsek",
+                  "Çukur – düz",
+                  "Tümsek – düz",
+                  "Tümsek – çukur"
+            ],
+            "correct": 3,
+            "explanation": "Tümsek aynalar geniş görüş alanı sağlar ve küçük düz görüntü verir. Çukur aynalar yeterince yakındaki cismi büyük ve düz gösterebildiğinden ayrıntı incelemek için kullanılabilir. Düz ayna görüntüyü büyütmez."
+      },
+      {
+            "id": "f6-1-t6-10",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Bir öğrenci, yüzey pürüzlülüğünün yansımaya etkisini araştırırken düz folyoya güçlü bir ışık kaynağını eğik, buruşturulmuş folyoya zayıf bir ışık kaynağını dik gönderiyor.\n\nDaha güvenilir bir karşılaştırma için hangi düzenleme yapılmalıdır?",
+            "options": [
+                  "Aynı kaynaktan gelen ışıklar aynı açıyla gönderilmeli; değişen özellik yüzey pürüzlülüğü olmalıdır.",
+                  "Kaynak aynı seçilmeli, ışıklar farklı açılarla gönderilmelidir.",
+                  "Gelme açıları eşitlenmeli, güçlü ve zayıf kaynaklar korunmalıdır.",
+                  "Kaynaklar ve açılar değiştirilmeden iki folyonun yerleri değiştirilmelidir."
+            ],
+            "correct": 0,
+            "explanation": "İlk düzende yüzeyle birlikte kaynak ve gelme açısı da değişmiştir. Pürüzlülüğün etkisini ayırt etmek için bu diğer koşullar aynı tutulmalıdır. Yansıyan ışınların yönleri ve oluşan görüntü özellikleri karşılaştırılabilir."
       }
 ],
 
