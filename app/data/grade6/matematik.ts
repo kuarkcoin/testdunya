@@ -463,6 +463,188 @@ export const matematikData: SubjectData = {
         "imageHeight": 145
       }
     ],
+    test5: [
+      {
+        "id": "m6-1-t5-01",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Bir doğal sayının bütün pozitif çarpanları kartlara yazılmıştır. Kartlar, ok yönünde küçükten büyüğe sıralanmıştır.\n\nBuna göre A + B + C kaçtır?",
+        "options": [
+          "43",
+          "38",
+          "45",
+          "48"
+        ],
+        "correct": 0,
+        "explanation": "Sıralamadaki ilk ve son, ikinci ve sondan ikinci çarpanların çarpımı aynı sayıyı verir. 2 × 15 = 30 olduğundan sayı 30'dur. Çarpanları 1, 2, 3, 5, 6, 10, 15 ve 30'dur. A = 3, B = 10, C = 30; toplam 43'tür.",
+        "imageWidth": 360,
+        "imageHeight": 244,
+        "imageUrl": "/grade6/matematik/test-5/soru-01.svg",
+        "imageAlt": "Bir sayının bütün pozitif çarpanlarını gösteren sekiz kart. Oklar üst satırda soldan sağa 1, 2, A, 5 kartlarını izliyor; ardından alt satırın başına dönerek soldan sağa 6, B, 15, C kartlarını izliyor."
+      },
+      {
+        "id": "m6-1-t5-02",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Gösterilen beş rakam kartından üçü seçilerek üç basamaklı bir sayı oluşturulacaktır. Her kart en fazla bir kez kullanılabilir.\n\nOluşturulan sayı hem 4'e hem 5'e kalansız bölünecekse kaç farklı sayı yazılabilir?",
+        "options": [
+          "4",
+          "5",
+          "6",
+          "8"
+        ],
+        "correct": 2,
+        "explanation": "5'e bölünebilmesi için son rakam 0 veya 5 olmalıdır. 4'e bölünen sayı çift olduğundan son rakam 0'dır. Son iki basamak yalnız 20 veya 80 olabilir. 20 ile biten sayılar 320, 520, 820; 80 ile bitenler 280, 380, 580'dir. Toplam 6 farklı sayı vardır.",
+        "imageWidth": 360,
+        "imageHeight": 328,
+        "imageUrl": "/grade6/matematik/test-5/soru-02.svg",
+        "imageAlt": "Rakam kartlarında 0, 2, 3, 5 ve 8 yazıyor. Altlarında üç basamak için üç boş kutu var. Oluşturulan sayının 4’e ve 5’e kalansız bölünmesi gerekiyor."
+      },
+      {
+        "id": "m6-1-t5-03",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Bir oyuncu, üzerinde asal sayı yazan iki farklı hedefi vuracaktır. Vurulan iki sayının toplamı 5'in katı olmalıdır. Oyuncunun puanı, vurduğu iki sayının çarpımıdır.\n\nOyuncunun alabileceği en yüksek puan kaçtır?",
+        "options": [
+          "91",
+          "187",
+          "209",
+          "221"
+        ],
+        "correct": 3,
+        "explanation": "9 asal değildir. Kalan hedeflerde toplamı 5'in katı olan çiftler 7 ve 13, 11 ve 19, 13 ve 17'dir. Bu çiftlerin puanları sırasıyla 91, 209 ve 221'dir. En yüksek puan 221 olur.",
+        "imageWidth": 360,
+        "imageHeight": 250,
+        "imageUrl": "/grade6/matematik/test-5/soru-03.svg",
+        "imageAlt": "Aynı görünümde altı dairesel hedef. Üst sırada soldan sağa 7, 9, 11; alt sırada soldan sağa 13, 17, 19 yazıyor."
+      },
+      {
+        "id": "m6-1-t5-04",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Birbirine bağlı iki dişli çarkın 18 ve 30 dişi vardır. Çarklar dönerken birindeki her dişlik ilerlemeye, diğerindeki bir dişlik ilerleme karşılık gelir. Başlangıçta işaretli iki diş birbirine temas etmektedir.\n\nİşaretli dişler ilk kez yeniden birbirine temas ettiğinde iki çark toplam kaç tam tur atmış olur?",
+        "options": [
+          "5",
+          "8",
+          "10",
+          "12"
+        ],
+        "correct": 1,
+        "explanation": "Aynı işaretli dişlerin yeniden buluşması için ilerlenen diş sayısı hem 18'in hem 30'un katı olmalıdır. İlk ortak kat 90'dır. Küçük çark 90 ÷ 18 = 5, büyük çark 90 ÷ 30 = 3 tam tur atar. Toplam 5 + 3 = 8 turdur.",
+        "imageWidth": 360,
+        "imageHeight": 324,
+        "imageUrl": "/grade6/matematik/test-5/soru-04.svg",
+        "imageAlt": "Birbirine temas eden iki dişli çark. Küçük K çarkında 18 diş, büyük L çarkında 30 diş var. Başlangıçta iki çarkın işaretli dişleri temas noktasında karşı karşıya."
+      },
+      {
+        "id": "m6-1-t5-05",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "K kulesi yalnız 6 cm, L kulesi yalnız 10 cm yüksekliğindeki bloklar üst üste konularak yapılacaktır. Bloklar kesilmeyecek, iki kulenin yüksekliği eşit olacaktır. Ortak yükseklik 100 cm'den fazla, 160 cm'den az olacaktır.\n\nİki kulede kullanılacak toplam blok sayısı en az kaçtır?",
+        "options": [
+          "32",
+          "28",
+          "30",
+          "40"
+        ],
+        "correct": 0,
+        "explanation": "İki yükseklik eşit olacağı için ortak yükseklik hem 6'nın hem 10'un katıdır. Verilen aralıkta ortak katlar 120 ve 150'dir. Daha az blok için 120 cm seçilir. K'de 120 ÷ 6 = 20, L'de 120 ÷ 10 = 12 blok kullanılır; toplam 32 bloktur.",
+        "imageWidth": 360,
+        "imageHeight": 292,
+        "imageUrl": "/grade6/matematik/test-5/soru-05.svg",
+        "imageAlt": "Üstte K kulesinde kullanılacak bir örnek blok; düşey yüksekliği 6 cm. Altta L kulesinde kullanılacak bir örnek blok; düşey yüksekliği 10 cm. Tamamlanmış kuleler gösterilmiyor."
+      },
+      {
+        "id": "m6-1-t5-06",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Her kolyedeki boncuk sayısı, o kolyenin sayı kartındaki doğal sayının pozitif çarpan sayısına eşittir. 1 ve sayının kendisi de çarpanlara dâhildir.\n\nK ve L kolyelerinin sayı kartları sırasıyla hangileri olabilir?",
+        "options": [
+          "16 ve 18",
+          "27 ve 20",
+          "21 ve 24",
+          "32 ve 49"
+        ],
+        "correct": 1,
+        "explanation": "K'de 4, L'de 6 boncuk vardır. 27'nin çarpanları 1, 3, 9, 27; 20'nin çarpanları 1, 2, 4, 5, 10, 20'dir. B seçeneği uygundur. Diğer seçeneklerin çarpan sayıları sırasıyla (5, 6), (4, 8) ve (6, 3) olduğundan iki kolyeye birden uymaz.",
+        "imageWidth": 360,
+        "imageHeight": 290,
+        "imageUrl": "/grade6/matematik/test-5/soru-06.svg",
+        "imageAlt": "K ve L adında iki kolye. K kolyesinin kapalı ip halkasında dört, L kolyesinin kapalı ip halkasında altı boncuk bulunuyor. Her kolyenin altında, boncuklardan ayrı, üzerinde soru işareti olan köşeli bir sayı kartı var."
+      },
+      {
+        "id": "m6-1-t5-07",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Makineye N doğal sayısı giriliyor. İki işlem de kalansız bölmeyle sonuçlanıyor. Çıkan P ve Q sayılarının ikisi de asaldır.\n\nN sayısının kaç pozitif çarpanı vardır?",
+        "options": [
+          "4",
+          "6",
+          "8",
+          "10"
+        ],
+        "correct": 2,
+        "explanation": "N hem 6'nın hem 14'ün katı olduğundan 42, 84, 126, ... olabilir. Bunlar 6'ya bölündüğünde 7, 14, 21, ... elde edilir. Sonuç asal olacağı için yalnız 7 uygundur; N = 42'dir. Diğer sonuç 42 ÷ 14 = 3 de asaldır. 42'nin çarpanları 1, 2, 3, 6, 7, 14, 21, 42 olmak üzere 8 tanedir.",
+        "imageWidth": 360,
+        "imageHeight": 356,
+        "imageUrl": "/grade6/matematik/test-5/soru-07.svg",
+        "imageAlt": "N girişinden iki dal ayrılıyor. Sol dalda 6’ya bölme işleminden P, sağ dalda 14’e bölme işleminden Q çıkıyor. P ve Q asal sayılar."
+      },
+      {
+        "id": "m6-1-t5-08",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Terazi dengededir. P yazan kütlelerin her biri P gram, Q yazanların her biri Q gramdır. P ve Q, 20'den küçük iki farklı asal sayıdır.\n\nP + Q en fazla kaç olabilir?",
+        "options": [
+          "20",
+          "24",
+          "28",
+          "30"
+        ],
+        "correct": 3,
+        "explanation": "Teraziden 3 × P + 5 = 2 × Q elde edilir. 20'den küçük asal sayılar denenince uygun (P, Q) çiftleri (3, 7), (7, 13) ve (11, 19) olur. P = 2 tam sayı Q vermez; P en az 13 olduğunda Q, 20'yi geçer. En büyük toplam 11 + 19 = 30'dur.",
+        "imageWidth": 360,
+        "imageHeight": 338,
+        "imageUrl": "/grade6/matematik/test-5/soru-08.svg",
+        "imageAlt": "Yatay ve dengede bir terazi. Sol kefede üç ayrı P bloğu ve üzerinde 5 g yazan ayrı bir ağırlık; sağ kefede iki ayrı Q bloğu bulunuyor."
+      },
+      {
+        "id": "m6-1-t5-09",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Bir piyon 17 noktasından başlıyor. Her hamlede sayı doğrusunda 5 birim sağa ilerliyor. Şekilde ilk iki hamlesi gösterilmiştir.\n\nPiyon, numarası hem 3'e hem 4'e kalansız bölünen bir noktaya ilk kez kaçıncı hamlede ulaşır?",
+        "options": [
+          "11",
+          "5",
+          "7",
+          "9"
+        ],
+        "correct": 0,
+        "explanation": "17'den sonra hem 3'e hem 4'e bölünen sayılar 24, 36, 48, 60, 72, ... şeklindedir. Piyonun ulaştığı sayıların son rakamı yalnız 2 veya 7 olabilir. İlk uygun ortak kat 72'dir. 72 − 17 = 55 ve 55 ÷ 5 = 11 olduğundan bu noktaya 11. hamlede ulaşır.",
+        "imageWidth": 360,
+        "imageHeight": 220,
+        "imageUrl": "/grade6/matematik/test-5/soru-09.svg",
+        "imageAlt": "Sayı doğrusunda eşit aralıklarla 17, 22 ve 27 işaretli. Piyon 17 noktasında. Üstte 17’den 22’ye ve 22’den 27’ye uzanan iki yay okun her birinde +5 yazıyor. Sayı doğrusu sağa doğru kesikli okla devam ediyor."
+      },
+      {
+        "id": "m6-1-t5-10",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "P bir asal sayı, N ise pozitif bir doğal sayıdır. Kartlardaki sayıların çarpımı ve aralarındaki farkla ilgili bilgiler görselde verilmiştir.\n\nBuna göre P + N kaçtır?",
+        "options": [
+          "17",
+          "19",
+          "20",
+          "25"
+        ],
+        "correct": 1,
+        "explanation": "Çarpımı 84 olan ve en az bir sayısı asal olan pozitif sayı çiftleri (2, 42), (3, 28) ve (7, 12)'dir. Farkları sırasıyla 40, 25 ve 5'tir. Farkı 10'dan küçük olan tek çift 7 ve 12 olduğundan P + N = 19'dur.",
+        "imageWidth": 360,
+        "imageHeight": 264,
+        "imageUrl": "/grade6/matematik/test-5/soru-10.svg",
+        "imageAlt": "P ve N yazan iki kart. P asal, N doğal sayı olarak belirtilmiş. Altlarındaki bilgiler: Çarpımları 84; farkları 10’dan az."
+      }
+    ],
   },
   term2: {},
 };

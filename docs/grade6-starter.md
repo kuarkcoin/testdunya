@@ -1,6 +1,6 @@
 # 6. sınıf başlangıç paketi
 
-130 özgün soru: Matematikte 4 test, Türkçe, Fen Bilimleri ve İngilizcede üçer test; her test 10 soru. Matematik Test 4, 10 şekilli akıl yürütme sorusu içerir. Yalnız birinci dönemin başlangıç konuları. Tüm yıl/müfredat kapsandığı veya MEB onayı bulunduğu iddia edilmez. İkinci dönem için soru eklenmedi.
+140 özgün soru: Matematikte 5 test, Türkçe, Fen Bilimleri ve İngilizcede üçer test; her test 10 soru. Matematik Test 4 ve Test 5, onar şekilli akıl yürütme sorusu içerir. Yalnız birinci dönemin başlangıç konuları. Tüm yıl/müfredat kapsandığı veya MEB onayı bulunduğu iddia edilmez. İkinci dönem için soru eklenmedi.
 
 ## Kaynaklar (23 Ekim 2026)
 
@@ -14,7 +14,7 @@ Matematik sorularında EBOB/EKOK terimleri kullanılmaz. Fen soruları sürat i�
 
 ## Entegrasyon
 
-İlk 6. sınıf eklemeleri `e152ac2` sürümü üzerine hazırlanmıştır. Şekilli Matematik Test 4, `fbeef87` üzerine eklenmiştir. Ana sayfa kartı korunmuştur; kayıtlı testlerden otomatik üretilen 18 adet 6. sınıf sitemap adresi vardır. Mevcut 5. sınıf dosyaları korunmuştur. Ekrandaki test/soru sayıları ve rota doğrulamasındaki toplamlar veri kayıtlarından hesaplanır.
+İlk 6. sınıf eklemeleri `e152ac2` sürümü üzerine hazırlanmıştır. Şekilli Matematik Test 4, `fbeef87`; Test 5, `a3802ba` üzerine eklenmiştir. Ana sayfa kartı korunmuştur; kayıtlı testlerden otomatik üretilen 19 adet 6. sınıf sitemap adresi vardır. Mevcut 5. sınıf dosyaları korunmuştur. Ekrandaki test/soru sayıları ve rota doğrulamasındaki toplamlar veri kayıtlarından hesaplanır.
 
 ## Şekilli Matematik Test 4 (24 Ekim 2026)
 
@@ -24,11 +24,19 @@ Matematik sorularında EBOB/EKOK terimleri kullanılmaz. Fen soruları sürat i�
 - Her şeklin çözümü söylemeden verilerini aktaran Türkçe alternatif metni vardır. Soru ekranı, sonuç ekranı, büyütme penceresi ve sesli okuma bu metni kullanır. Görseller gerçek 460 × 145 oranıyla görüntülenir; mevcut büyütme, odak yönetimi ve mobil sayfa yakınlaştırması korunur.
 - Önceki 120 soru değişmedi. 10 yeni sorunun metin, seçenek, cevap ve açıklamaları ile SVG dosyalarının baytları onaylanan kaynakla karşılaştırıldı. 10 SVG ayrıca rasterleştirilip görsel olarak incelendi.
 
+## Şekilli Matematik Test 5 (24 Ekim 2026)
+
+- Adres: `/6-sinif/matematik/test-5`; konu: **Sayılar ve Nicelikler: Şekilli Akıl Yürütme**. Cevap anahtarı: **A, C, D, B, A, B, C, D, A, B**; veride sıfır tabanlı indeksler kullanılır.
+- Görseller `public/grade6/matematik/test-5/soru-01.svg`–`soru-10.svg` altındadır. Her sorunun Türkçe alternatif metni, her SVG'nin başlığı ve açıklaması bulunur. Görseller pasif ve kendi kendine yeterlidir; yeni bağımlılık yoktur.
+- Mobil okunabilirlik için yeni görseller 360 birim genişlikte, dar kenar boşluklarıyla ve en az 26 birim yazıyla hazırlanmıştır. Önceki Test 4'ün 460 birim genişlikteki 10–12 birim etiketlerine göre aynı gösterim genişliğinde yazılar belirgin biçimde büyüktür. Geniş yan yana paneller yerine gerektiğinde alt alta yerleşim kullanılır.
+- On SVG, 238, 320 ve 360 piksel genişlikte rasterleştirildi; 238 ve 320 piksel çıktıları görsel olarak incelendi. 238 pikselde en küçük etiket yaklaşık 17,2 piksel görünür. Metin sınırları ve yazı boyutları ayrıca otomatik kontrol edildi; sorular ve şekiller bağımsız ikinci incelemeden geçti.
+- Ortak test arayüzü, görsel büyütme ve mobil yakınlaştırma davranışı değiştirilmemiştir. Önceki 130 soru veri karşılaştırmasıyla, Test 4'ün 10 SVG dosyası bayt karşılaştırmasıyla doğrulandı; yeni soru metinleri, seçenekleri, cevapları ve açıklamaları denetlenen kaynakla eşleşir.
+
 ## Kontroller ve sınırlar
 
-- 13 test / 130 soru / 10 görsel; benzersiz kimlikler, her soruda dört farklı seçenek, geçerli cevap indeksleri, yerel görsel yolları, alternatif metinler, boyutlar ve pasif SVG içeriği doğrulandı.
+- 14 test / 140 soru / 20 görsel; benzersiz kimlikler, her soruda dört farklı seçenek, geçerli cevap indeksleri, yerel görsel yolları, alternatif metinler, boyutlar ve pasif SVG içeriği doğrulandı.
 - Cevap anahtarları ve açıklamalar ikinci bir incelemeden geçti.
-- `fbeef87` tabanlı şekilli test eklemesinde TypeScript ve Next.js üretim derlemesi başarılı; 322 sayfa oluşturuldu. 18 adet 6. sınıf rotası, sitemap adresleri, ana sayfa bağlantısı, canonical adresleri, mobil yakınlaştırma ayarı ve başlangıç soru/görsel arayüzü statik olarak doğrulandı. Test URL kararlılığı kontrolü artık var olan Test 4'ü geçici veriyle değiştirmez.
+- `a3802ba` tabanlı Test 5 eklemesinde `npm ci`, TypeScript ve Next.js üretim derlemesi başarılı; 323 sayfa oluşturuldu. 19 adet 6. sınıf rotası, sitemap adresleri, tüm test kartları, 14 test / 140 soru toplamları, ana sayfa bağlantısı, canonical adresleri, mobil yakınlaştırma ayarı ve soru/görsel verileri statik olarak doğrulandı. Test URL kararlılığı kontrolü kayıtlı testleri geçici veriyle değiştirmez.
 - Etkileşimli tarayıcı testi ortam kısıtı nedeniyle tamamlanamadı; mobil tıklama akışları henüz doğrulanmış değildir.
 - Mevcut 5. sınıf dosyaları değiştirilmedi. Ana sayfa ve sitemap yalnızca 6. sınıf eklemeleri içerir.
 - Bu başlangıç ekranında yapay zekâ sonuç analizi ve PDF indirme yoktur; mevcut 5. sınıf özellikleri etkilenmez.

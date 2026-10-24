@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="264" viewBox="0 0 360 264" role="img">
+<title>İki sayı kartı</title>
+<desc>P ve N yazan iki kart. P asal, N doğal sayı olarak belirtilmiş. Altlarındaki bilgiler: Çarpımları 84; farkları 10’dan az.</desc>
+<rect width="360" height="264" fill="#FFFFFF"/>
+<rect x="40" y="14" width="110" height="80" rx="10" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="95" y="54" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="38" font-weight="700" fill="#15354B">P</text>
+<rect x="210" y="14" width="110" height="80" rx="10" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<text x="265" y="54" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="38" font-weight="700" fill="#15354B">N</text>
+<text x="95" y="122" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">asal</text>
+<text x="265" y="122" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">doğal sayı</text>
+<text x="180" y="190" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="700" fill="#15354B">Çarpımları 84</text>
+<text x="180" y="238" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" fill="#15354B">Farkları 10’dan az</text>
+</svg>

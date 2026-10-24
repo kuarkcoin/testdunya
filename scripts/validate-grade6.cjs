@@ -33,6 +33,8 @@ for(const subject of ['matematik','fen','turkce','ingilizce']) {
  for(const [,tag] of svg.matchAll(/<\/?([a-zA-Z][\w:.-]*)\b/g))if(!allowedTags.has(tag))errors.push('Unsafe SVG element '+tag+' in '+q.id);
  if(/<!|<\?|\son[\w-]+\s*=|\s(?:href|[\w-]+:href|style)\s*=|url\s*\(|@import/i.test(svg))errors.push('Active or external SVG content '+q.id);
  if(!svg.includes('<title>')||!svg.includes(`viewBox="0 0 ${q.imageWidth} ${q.imageHeight}"`))errors.push('Missing SVG title or wrong dimensions '+q.id);
+ const root=svg.match(/<svg\b[^>]*>/)?.[0]??'';
+ if(!root.includes(`width="${q.imageWidth}"`)||!root.includes(`height="${q.imageHeight}"`))errors.push('SVG intrinsic dimensions differ from question data '+q.id);
  }
  }
  }

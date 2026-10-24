@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="250" viewBox="0 0 360 250" role="img">
+<title>Sayı hedefleri</title>
+<desc>Aynı görünümde altı dairesel hedef. Üst sırada soldan sağa 7, 9, 11; alt sırada soldan sağa 13, 17, 19 yazıyor.</desc>
+<rect width="360" height="250" fill="#FFFFFF"/>
+<circle cx="64" cy="63" r="49" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="64" y="63" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="38" font-weight="700" fill="#15354B">7</text>
+<circle cx="180" cy="63" r="49" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="180" y="63" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="38" font-weight="700" fill="#15354B">9</text>
+<circle cx="296" cy="63" r="49" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="296" y="63" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="38" font-weight="700" fill="#15354B">11</text>
+<circle cx="64" cy="187" r="49" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="64" y="187" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="38" font-weight="700" fill="#15354B">13</text>
+<circle cx="180" cy="187" r="49" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="180" y="187" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="38" font-weight="700" fill="#15354B">17</text>
+<circle cx="296" cy="187" r="49" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="296" y="187" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="38" font-weight="700" fill="#15354B">19</text>
+</svg>

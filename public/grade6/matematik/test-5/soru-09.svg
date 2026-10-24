@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="220" viewBox="0 0 360 220" role="img">
+<title>Her hamlede beş birim</title>
+<desc>Sayı doğrusunda eşit aralıklarla 17, 22 ve 27 işaretli. Piyon 17 noktasında. Üstte 17’den 22’ye ve 22’den 27’ye uzanan iki yay okun her birinde +5 yazıyor. Sayı doğrusu sağa doğru kesikli okla devam ediyor.</desc>
+<rect width="360" height="220" fill="#FFFFFF"/>
+<line x1="20" y1="156" x2="284" y2="156" stroke="#36586D" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="284" y1="156" x2="344" y2="156" stroke="#36586D" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="6 7"/>
+<path d="M 334 150 L 344 156 L 334 162" fill="none" stroke="#36586D" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="42" y1="146" x2="42" y2="166" stroke="#36586D" stroke-width="2.5" stroke-linecap="round"/>
+<text x="42" y="191" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#15354B">17</text>
+<line x1="162" y1="146" x2="162" y2="166" stroke="#36586D" stroke-width="2.5" stroke-linecap="round"/>
+<text x="162" y="191" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#15354B">22</text>
+<line x1="282" y1="146" x2="282" y2="166" stroke="#36586D" stroke-width="2.5" stroke-linecap="round"/>
+<text x="282" y="191" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#15354B">27</text>
+<path d="M 42 138 C 57 54 147 54 162 138" fill="none" stroke="#36586D" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 155 128 L 162 138 L 166 125" fill="none" stroke="#36586D" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="102" y="40" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="700" fill="#15354B">+5</text>
+<path d="M 162 138 C 177 54 267 54 282 138" fill="none" stroke="#36586D" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 275 128 L 282 138 L 286 125" fill="none" stroke="#36586D" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="222" y="40" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="700" fill="#15354B">+5</text>
+<circle cx="42" cy="110" r="10" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<path d="M 35 121 L 49 121 L 55 141 L 29 141 Z" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

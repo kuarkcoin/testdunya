@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="290" viewBox="0 0 360 290" role="img">
+<title>Çarpan kolyeleri</title>
+<desc>K ve L adında iki kolye. K kolyesinin kapalı ip halkasında dört, L kolyesinin kapalı ip halkasında altı boncuk bulunuyor. Her kolyenin altında, boncuklardan ayrı, üzerinde soru işareti olan köşeli bir sayı kartı var.</desc>
+<rect width="360" height="290" fill="#FFFFFF"/>
+<text x="90" y="22" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#15354B">K</text>
+<circle cx="90" cy="124" r="60" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<circle cx="90.0" cy="64.0" r="17" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<circle cx="150.0" cy="124.0" r="17" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<circle cx="90.0" cy="184.0" r="17" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<circle cx="30.0" cy="124.0" r="17" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<rect x="44" y="220" width="92" height="56" rx="2" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<text x="90" y="248" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#15354B">?</text>
+<text x="270" y="22" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#15354B">L</text>
+<circle cx="270" cy="124" r="60" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<circle cx="270.0" cy="64.0" r="17" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<circle cx="321.96" cy="94.0" r="17" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<circle cx="321.96" cy="154.0" r="17" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<circle cx="270.0" cy="184.0" r="17" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<circle cx="218.04" cy="154.0" r="17" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<circle cx="218.04" cy="94.0" r="17" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<rect x="224" y="220" width="92" height="56" rx="2" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<text x="270" y="248" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#15354B">?</text>
+</svg>

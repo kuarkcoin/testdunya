@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="328" viewBox="0 0 360 328" role="img">
+<title>Üç kart seç, bir sayı oluştur</title>
+<desc>Rakam kartlarında 0, 2, 3, 5 ve 8 yazıyor. Altlarında üç basamak için üç boş kutu var. Oluşturulan sayının 4’e ve 5’e kalansız bölünmesi gerekiyor.</desc>
+<rect width="360" height="328" fill="#FFFFFF"/>
+<text x="180" y="22" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Rakam kartları</text>
+<rect x="14" y="44" width="60" height="66" rx="10" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="44" y="77" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="36" font-weight="700" fill="#15354B">0</text>
+<rect x="82" y="44" width="60" height="66" rx="10" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="112" y="77" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="36" font-weight="700" fill="#15354B">2</text>
+<rect x="150" y="44" width="60" height="66" rx="10" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="180" y="77" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="36" font-weight="700" fill="#15354B">3</text>
+<rect x="218" y="44" width="60" height="66" rx="10" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="248" y="77" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="36" font-weight="700" fill="#15354B">5</text>
+<rect x="286" y="44" width="60" height="66" rx="10" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="316" y="77" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="36" font-weight="700" fill="#15354B">8</text>
+<text x="180" y="142" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Üç basamaklı sayı</text>
+<rect x="36" y="166" width="80" height="72" rx="10" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<text x="76" y="202" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#15354B">?</text>
+<rect x="140" y="166" width="80" height="72" rx="10" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<text x="180" y="202" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#15354B">?</text>
+<rect x="244" y="166" width="80" height="72" rx="10" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<text x="284" y="202" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#15354B">?</text>
+<text x="180" y="271" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#15354B">4’e ve 5’e</text>
+<text x="180" y="305" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">kalansız bölünür</text>
+</svg>

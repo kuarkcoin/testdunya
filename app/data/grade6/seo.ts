@@ -36,7 +36,7 @@ export type Grade6Test = {
 };
 
 const starterTopics: Record<SubjectId, string[]> = {
-  matematik: ['Sayılar ve Nicelikler: Temel Kavramlar', 'Sayılar ve Nicelikler: Uygulama', 'Sayılar ve Nicelikler: Akıl Yürütme', 'Sayılar ve Nicelikler: Şekilli Sorular'],
+  matematik: ['Sayılar ve Nicelikler: Temel Kavramlar', 'Sayılar ve Nicelikler: Uygulama', 'Sayılar ve Nicelikler: Akıl Yürütme', 'Sayılar ve Nicelikler: Şekilli Sorular', 'Sayılar ve Nicelikler: Şekilli Akıl Yürütme'],
   turkce: ['Sözcük Anlamı ve Okuduğunu Anlama', 'Yazım Kuralları ve Virgül', 'Dilimizin Zenginliği: Karma Tekrar'],
   fen: ['Güneş Sistemi ve Gezegenler', 'Tutulmalar ve Bileşke Kuvvet', 'Kuvvet, Hareket, Sürat ve Hız'],
   ingilizce: ['School Life', 'Classroom Life', 'School & Classroom Life: Review'],

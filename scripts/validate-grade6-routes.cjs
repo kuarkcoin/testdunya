@@ -38,6 +38,10 @@ for (const route of routes) {
   if (test) {
     assert.equal((html.match(/aria-pressed="false"/g) || []).length, 4, `Expected four options: ${route}`);
     assert(html.includes(`aria-valuemax="${test.questions.length}"`), `Wrong question count: ${route}`);
+    for (const question of test.questions) {
+      assert(html.includes(question.id), `Missing question data ${question.id}: ${route}`);
+      if (question.imageUrl) assert(html.includes(question.imageUrl), `Missing diagram data ${question.id}: ${route}`);
+    }
     const firstQuestion = test.questions[0];
     if (firstQuestion.imageUrl) {
       assert(html.includes(`src="${firstQuestion.imageUrl}"`), `Missing initial diagram: ${route}`);
@@ -59,6 +63,20 @@ const home = fs.readFileSync('.next/server/app/index.html', 'utf8');
 assert(home.includes('href="/6-sinif"'), 'Homepage grade-6 link missing');
 assert(home.includes('href="/5-sinif"'), 'Existing homepage grade-5 link missing');
 
+// Counts and navigation must include every registered test, not a fixed starter total.
+const withoutComments = (html) => html.replace(/<!--[\s\S]*?-->/g, '');
+const grade6Home = withoutComments(fs.readFileSync('.next/server/app/6-sinif.html', 'utf8'));
+const questionCount = tests.reduce((total, test) => total + test.questions.length, 0);
+assert(grade6Home.includes(`${tests.length} test • ${questionCount} açıklamalı soru`), 'Stale grade-6 totals');
+for (const subject of grade6.grade6Subjects) {
+  const subjectTests = grade6.getGrade6Tests(subject.id);
+  const html = withoutComments(fs.readFileSync(`.next/server/app/6-sinif/${subject.id}.html`, 'utf8'));
+  assert(html.includes(`Başlangıç paketi • ${subjectTests.length} test`), `Stale test count: ${subject.id}`);
+  for (const test of subjectTests) {
+    assert(html.includes(`href="/6-sinif/${subject.id}/${test.slug}"`), `Missing test card: ${subject.id}/${test.slug}`);
+  }
+}
+
 // Existing links stay stable when new questions are added to either term.
 const oldSlugs = grade6.getGrade6Tests('matematik').map((test) => test.slug);
 const math = grade6.grade6Data.matematik;
@@ -76,4 +94,4 @@ try {
   delete math.term1[term1Key];
   delete math.term2[term2Key];
 }
-console.log(`PASS: ${routes.length} generated grade-6 pages and sitemap URLs, homepage link, canonical URLs, mobile zoom, quiz and diagram markup, stable test URLs, and existing grade-5 sitemap entries. Browser interactions are not covered.`);
+console.log(`PASS: ${routes.length} generated grade-6 pages and sitemap URLs, ${tests.length} test cards / ${questionCount} questions, dynamic totals, homepage link, canonical URLs, mobile zoom, quiz and diagram markup, stable test URLs, and existing grade-5 sitemap entries. Browser interactions are not covered.`);
