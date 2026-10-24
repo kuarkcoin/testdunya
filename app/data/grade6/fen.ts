@@ -1,9 +1,10 @@
 import { SubjectData } from "./types";
 
-// 6. sınıf başlangıç paketi: Güneş Sistemi ve Tutulmalar; Kuvvetin Etkisinde Hareket.
-// FB.6.1.1–FB.6.1.4 ve FB.6.2.1–FB.6.2.3; tüm dönemi veya yılı kapsamaz.
+// 6. sınıf başlangıç paketi: İlk iki ünite ve bitki/hayvanlarda üreme, büyüme, gelişme.
+// FB.6.1.1–FB.6.1.4, FB.6.2.1–FB.6.2.3, FB.6.3.1–FB.6.3.4; tüm yılı kapsamaz.
 // Kaynaklar: https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/409
 // https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/410
+// https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/411
 // Kesin uydu sayıları, sürat-hız hesabı/grafikleri ve birim dönüşümleri kapsam dışıdır.
 export const fenData: SubjectData = {
   term1: {
@@ -515,6 +516,177 @@ export const fenData: SubjectData = {
             ],
             "correct": 0,
             "explanation": "Başlangıçta süratler eşit olsa da kuzey ve güney yönleri farklıdır. Sonunda iki araç da aynı süratle kuzeye ilerlediğinden o andaki hızları eşittir. İzlenen yolların uzunluğu tek başına son andaki hızı belirlemez."
+      }
+],
+
+    test4: [
+      {
+            "id": "f6-1-t4-01",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Aynı türden, canlı ve eşit sayıda tohumla hazırlanan dört düzenek görselde verilmiştir. Hava alabilme ve gözlem süresi tümünde aynıdır.\n\nSuyun çimlenmeye etkisini araştırmak için karşılaştırılacak düzenekler ve ölçülecek sonuç hangi seçenekte doğrudur?",
+            "options": [
+                  "I ve III; ortam sıcaklığı",
+                  "I ve II; çimlenen tohum sayısı",
+                  "II ve IV; ışık miktarı",
+                  "III ve IV; kullanılan tohum sayısı"
+            ],
+            "correct": 1,
+            "explanation": "I ve II’de yalnız su durumu farklıdır; sıcaklık ve ışık koşulları aynıdır. Belirlenen süre sonunda çimlenen tohum sayıları karşılaştırılır. Diğer seçenekler suyun etkisini uygun düzenek ve sonuç ölçümüyle araştırmaz.",
+            "imageWidth": 360,
+            "imageHeight": 450,
+            "imageUrl": "/grade6/fen/test-4/soru-01.svg",
+            "imageAlt": "Düzenekler: I nemli 25°C karanlık; II kuru 25°C karanlık; III nemli 10°C karanlık; IV nemli 25°C aydınlık. Hava ve süre aynı."
+      },
+      {
+            "id": "f6-1-t4-02",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Aynı türden canlı tohumlar iki gruba ayrılmış; su, uygun sıcaklık, hava ve gözlem süresi eşit tutulmuştur. Sonuçlar görselde verilmiştir.\n\nBu sonuçlardan hangisine ulaşılabilir?",
+            "options": [
+                  "Bütün bitkiler yaşamları boyunca ışıksız büyür.",
+                  "Işık olan ortamda hiçbir tohum çimlenemez.",
+                  "Deneydeki tohumlar için ışık, çimlenmenin zorunlu koşulu değildir.",
+                  "Çimlenmeyen tohumların tamamı kesinlikle ölüdür."
+            ],
+            "correct": 2,
+            "explanation": "Karanlıkta da çimlenme görülmesi, bu deneydeki tohumların çimlenmesi için ışığın zorunlu olmadığını gösterir. Bu sonuç bütün türlere ve bitkinin sonraki yaşamına genellenemez; çimlenmeyenlerin nedeni tek başına bu veriden belirlenemez.",
+            "imageWidth": 360,
+            "imageHeight": 350,
+            "imageUrl": "/grade6/fen/test-4/soru-02.svg",
+            "imageAlt": "İki grupta onar tohum. Aydınlıkta 8, karanlıkta 8 tohum çimlenmiş. Diğer koşullar aynı."
+      },
+      {
+            "id": "f6-1-t4-03",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Şemada bir çiçeğin başçığındaki polenlerin, aynı türden başka bir çiçeğin tepeciğine taşınması gösteriliyor.\n\nBu olayın adı ve yalnız bu gözleme dayanarak söylenebilecek ifade hangisidir?",
+            "options": [
+                  "Çimlenme; yeni bitki oluşmuştur.",
+                  "Döllenme; tohumun çimlendiği kesindir.",
+                  "Tozlaşma; her polenin mutlaka yeni tohum oluşturduğu kanıtlanmıştır.",
+                  "Tozlaşma; henüz yeni bir bitkinin oluştuğu söylenemez."
+            ],
+            "correct": 3,
+            "explanation": "Polenlerin başçıktan tepeciğe taşınması tozlaşmadır. Bu aşamanın görülmesi, sonraki süreçlerin tamamlandığını veya yeni bir bitki oluştuğunu tek başına kanıtlamaz. Tozlaşma, çimlenme ile aynı olay değildir.",
+            "imageWidth": 360,
+            "imageHeight": 380,
+            "imageUrl": "/grade6/fen/test-4/soru-03.svg",
+            "imageAlt": "Başçıkta polenler; ok başka çiçeğin tepeciğine doğru. Çiçek kısımları şematik gösterilmiş."
+      },
+      {
+            "id": "f6-1-t4-04",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Çilek bitkisinden çıkan sürünücü gövde, toprağa temas ettiği yerde kökleniyor ve yeni bir bitki oluşturuyor. Bu olayda tohum oluşmuyor.\n\nOlayın üreme sayılmasının nedeni ve üreme biçimi hangisidir?",
+            "options": [
+                  "Yeni birey oluşmuştur; vejetatif eşeysiz üremedir.",
+                  "Ana bitkiyle bağlantısı bulunduğu için yeni birey oluşsa da yalnız büyümedir.",
+                  "Toprağa kök saldığı için tohumla eşeyli üremedir.",
+                  "Yeni bitkinin yaprakları olduğu için mutlaka tozlaşma gerçekleşmiştir."
+            ],
+            "correct": 0,
+            "explanation": "Belirleyici olan, köklenerek yeni bir bireyin oluşmasıdır. Tohum ve döllenme olmadan bitkinin gövde gibi kısımlarından yeni bitki gelişmesi vejetatif eşeysiz üremedir. Her kök veya dal uzaması tek başına üreme değildir.",
+            "imageWidth": 360,
+            "imageHeight": 350,
+            "imageUrl": "/grade6/fen/test-4/soru-04.svg",
+            "imageAlt": "Ana çilek bitkisi, sürünücü gövde ve köklenmiş yeni bitki. Yeni bitkinin kök ve yaprakları gösterilmiş."
+      },
+      {
+            "id": "f6-1-t4-05",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Bir kelebeğin yaşam döngüsü modelinde bir aşama boş bırakılmıştır. Modeldeki oklar zaman sırasını gösteriyor.\n\nBoşluğa hangi aşama gelmeli ve bu yaşam döngüsü nasıl yorumlanmalıdır?",
+            "options": [
+                  "Pupa; bütün değişimler yalnızca tırtılın büyümesinden ibarettir.",
+                  "Pupa; canlı başkalaşım geçirir, değişim yalnız büyüklük artışı değildir.",
+                  "Pupa; ergin kelebek oluşunca yeni bir canlı türü ortaya çıkar.",
+                  "Ergin kelebek; boşluktan sonraki kelebek bir sonraki kuşaktır."
+            ],
+            "correct": 1,
+            "explanation": "Kelebeğin sırası yumurta, larva (tırtıl), pupa ve ergin kelebektir. Başkalaşımda vücut yapısı ve yaşam biçimi belirgin değişir; yalnızca boyun artması söz konusu değildir.",
+            "imageWidth": 360,
+            "imageHeight": 430,
+            "imageUrl": "/grade6/fen/test-4/soru-05.svg",
+            "imageAlt": "Dikey yaşam döngüsü: yumurta, tırtıl, soru işareti, ergin kelebek. Oklar sırayı gösterir."
+      },
+      {
+            "id": "f6-1-t4-06",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Aynı civcivin iki farklı zamanda tutulan kayıtları görselde verilmiştir.\n\nKayıtlar birlikte değerlendirildiğinde hangi yorum doğrudur?",
+            "options": [
+                  "Yalnız büyüme vardır; birey değişmediği için gelişme olamaz.",
+                  "Yalnız gelişme vardır; kütle artışı büyümeyi göstermez.",
+                  "Kütle artışı büyümeye; tüy yapısındaki değişim gelişmeye örnektir.",
+                  "Kütle artışı büyümedir; tüyler değiştiği için üreme de gerçekleşmiştir."
+            ],
+            "correct": 2,
+            "explanation": "Kütlenin artması büyüme göstergesidir. Yavruya özgü tüy yapısının değişmesi gelişme sürecinin bir parçasıdır. Aynı bireydeki bu değişimler yeni birey oluşması anlamına gelmediğinden üreme değildir.",
+            "imageWidth": 360,
+            "imageHeight": 360,
+            "imageUrl": "/grade6/fen/test-4/soru-06.svg",
+            "imageAlt": "Aynı civciv: ilk kayıtta 45 g, ince hav tüyleri; sonraki kayıtta 160 g, kanat tüyleri belirginleşmiş. Ölçümler örnek gözlem verisidir."
+      },
+      {
+            "id": "f6-1-t4-07",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "İki canlının gözlem kayıtları görselde verilmiştir. K’da kertenkele kaybettiği kuyruğunu yeniliyor; L’de planaryanın bir parçasından bütün bir yeni birey oluşuyor.\n\nHangi yorum doğrudur?",
+            "options": [
+                  "K ve L’de yenilenme görüldüğü için ikisi de üremedir.",
+                  "K’de yeni kuyruk oluştuğu için üreme vardır; L’de yalnız onarım vardır.",
+                  "L’de yeni birey oluştuğundan mutlaka eşeyli üreme gerçekleşmiştir.",
+                  "K doku yenilenmesidir; L’de yeni birey oluştuğu için rejenerasyonla üreme vardır."
+            ],
+            "correct": 3,
+            "explanation": "Kuyruğun yenilenmesi kertenkele sayısını artırmaz, aynı bireyde onarımdır. Planaryanın parçasından bütün bir yeni birey gelişmesi ise eşeysiz üreme örneğidir. Her yenilenme üreme olarak adlandırılamaz.",
+            "imageWidth": 360,
+            "imageHeight": 360,
+            "imageUrl": "/grade6/fen/test-4/soru-07.svg",
+            "imageAlt": "K kaydı: kuyruk yenileniyor, yeni kertenkele oluşmuyor. L kaydı: planarya parçası bütün bir yeni bireye dönüşüyor. Gözlem kayıtları, deney önerisi değildir."
+      },
+      {
+            "id": "f6-1-t4-08",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Bir öğrenci “Çimlenmek için su gerektiğine göre tohumu sürekli tamamen su altında bırakmak en iyi yöntemdir.” diyor.\n\nBu düşüncedeki eksikliği en doğru açıklayan ifade hangisidir?",
+            "options": [
+                  "Su miktarı ne olursa olsun oksijen her zaman yeterlidir.",
+                  "Çimlenme için su yanında oksijen ve uygun sıcaklık da gerekir; aşırı su oksijen alımını güçleştirebilir.",
+                  "Tohum çimlenirken yalnız ışığa ihtiyaç duyar.",
+                  "Tohumun canlı olması çimlenmesini hiçbir şekilde etkilemez."
+            ],
+            "correct": 1,
+            "explanation": "Tohumun çimlenmesi için uygun koşulların birlikte sağlanması gerekir. Sürekli su altında kalmak oksijenin tohuma yeterince ulaşmasını güçleştirebilir. Suyun gerekli olması, miktarının sınırsızca artırılmasının yararlı olduğu anlamına gelmez."
+      },
+      {
+            "id": "f6-1-t4-09",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Aynı sardunyadan alınan iki gövde çeliği köklendirilerek yeni bitkiler yetiştiriliyor. Sonra biri yeterli ışık ve su alırken diğeri hem az ışık hem az su alıyor; gelişimleri farklı oluyor. Bir öğrenci farkın yalnız ışıktan kaynaklandığını söylüyor.\n\nÜreme biçimi ve öğrencinin yorumu birlikte nasıl değerlendirilmelidir?",
+            "options": [
+                  "Eşeyli üremedir; farkın yalnız ışıktan kaynaklandığı kanıtlanmıştır.",
+                  "Eşeysiz üremedir; aynı bitkiden geldikleri için çevre gelişimlerini etkileyemez.",
+                  "Eşeysiz üremedir; su da değiştiğinden fark yalnız ışığa bağlanamaz.",
+                  "Eşeyli üremedir; gelişimleri farklı olduğundan farklı türler oluşmuştur."
+            ],
+            "correct": 2,
+            "explanation": "Gövde çeliğinden yeni bitki elde edilmesi vejetatif eşeysiz üremedir. Hem ışık hem su koşulu değiştiği için gelişim farkının yalnız ışıktan kaynaklandığı söylenemez. Işığın etkisini ayırt etmek için su ve diğer koşullar eşit tutulmalıdır."
+      },
+      {
+            "id": "f6-1-t4-10",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Bir bitkinin çimlenmesine sıcaklığın etkisi araştırılıyor. Birinci gruptaki tohumlar nemli ortamda 25°C’de, ikinci gruptakiler kuru ortamda 10°C’de tutuluyor. Birinci grupta daha çok çimlenme görülüyor.\n\nSonucun yalnız sıcaklığa bağlanabilmesi için deney nasıl düzeltilmelidir?",
+            "options": [
+                  "İki grupta su, tohum türü ve sayısı, hava, ışık ve süre aynı tutulup yalnız sıcaklık değiştirilmelidir.",
+                  "İkinci grupta hem tohum türü hem su miktarı değiştirilmelidir.",
+                  "İlk grubun gözlem süresi artırılmalı, diğer koşullar önemsenmemelidir.",
+                  "Birinci grubun sıcaklığı ve ışığı birlikte artırılmalıdır."
+            ],
+            "correct": 0,
+            "explanation": "İlk deneyde hem sıcaklık hem su durumu değişmiştir; farkın hangi etkenden kaynaklandığı ayırt edilemez. Sıcaklığın etkisini incelemek için diğer koşullar eşit tutulmalıdır. Aynı türden canlı tohumlar ve eşit sayıda tekrar kullanılması karşılaştırmayı güçlendirir."
       }
 ],
 
