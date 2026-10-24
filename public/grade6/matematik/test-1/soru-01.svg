@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="388" viewBox="0 0 360 388" role="img">
+<title>Numaralı anahtarlar</title>
+<desc>Başlangıçta hepsi kapalı altı anahtar. Üst sırada soldan sağa 12, 18, 20; alt sırada soldan sağa 24, 27, 30 yazıyor. Birinci turda 3’ün katı olan numaraların, ikinci turda 4’ün katı olan numaraların anahtarları birer kez çevriliyor.</desc>
+<rect width="360" height="388" fill="#FFFFFF"/>
+<text x="180" y="24" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" fill="#15354B">Başta hepsi kapalı</text>
+<rect x="14" y="48" width="104" height="92" rx="10" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="66" y="76" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#15354B">12</text>
+<rect x="35" y="101" width="62" height="26" rx="13" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<circle cx="49" cy="114" r="10" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<rect x="128" y="48" width="104" height="92" rx="10" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="180" y="76" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#15354B">18</text>
+<rect x="149" y="101" width="62" height="26" rx="13" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<circle cx="163" cy="114" r="10" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<rect x="242" y="48" width="104" height="92" rx="10" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="294" y="76" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#15354B">20</text>
+<rect x="263" y="101" width="62" height="26" rx="13" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<circle cx="277" cy="114" r="10" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<rect x="14" y="152" width="104" height="92" rx="10" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="66" y="180" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#15354B">24</text>
+<rect x="35" y="205" width="62" height="26" rx="13" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<circle cx="49" cy="218" r="10" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<rect x="128" y="152" width="104" height="92" rx="10" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="180" y="180" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#15354B">27</text>
+<rect x="149" y="205" width="62" height="26" rx="13" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<circle cx="163" cy="218" r="10" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<rect x="242" y="152" width="104" height="92" rx="10" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="294" y="180" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#15354B">30</text>
+<rect x="263" y="205" width="62" height="26" rx="13" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<circle cx="277" cy="218" r="10" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<rect x="14" y="266" width="332" height="50" rx="10" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<text x="180" y="291" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" fill="#15354B">1. tur: 3’ün katları</text>
+<rect x="14" y="326" width="332" height="50" rx="10" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<text x="180" y="351" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" fill="#15354B">2. tur: 4’ün katları</text>
+</svg>

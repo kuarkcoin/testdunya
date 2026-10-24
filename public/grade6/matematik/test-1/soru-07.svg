@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="360" viewBox="0 0 360 360" role="img">
+<title>Çarpan kartlarının kutuları</title>
+<desc>Alt alta üç kutu bulunuyor. 36 yazılı kutuda 6 ve 8 kartları, 48 yazılı kutuda 9 ve 12 kartları, 60 yazılı kutuda 10 ve 15 kartları var. Bütün kartlar aynı biçimdedir; herhangi bir kart işaretlenmemiştir.</desc>
+<rect width="360" height="360" fill="#FFFFFF"/>
+<rect x="12" y="12" width="336" height="104" rx="10" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<rect x="12" y="12" width="104" height="104" rx="10" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<text x="64" y="41" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" fill="#15354B">Kutu</text>
+<text x="64" y="83" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#15354B">36</text>
+<rect x="134" y="32" width="88" height="64" rx="10" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="178" y="64" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="36" font-weight="700" fill="#15354B">6</text>
+<rect x="240" y="32" width="88" height="64" rx="10" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="284" y="64" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="36" font-weight="700" fill="#15354B">8</text>
+<rect x="12" y="128" width="336" height="104" rx="10" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<rect x="12" y="128" width="104" height="104" rx="10" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<text x="64" y="157" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" fill="#15354B">Kutu</text>
+<text x="64" y="199" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#15354B">48</text>
+<rect x="134" y="148" width="88" height="64" rx="10" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="178" y="180" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="36" font-weight="700" fill="#15354B">9</text>
+<rect x="240" y="148" width="88" height="64" rx="10" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="284" y="180" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="36" font-weight="700" fill="#15354B">12</text>
+<rect x="12" y="244" width="336" height="104" rx="10" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<rect x="12" y="244" width="104" height="104" rx="10" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<text x="64" y="273" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" fill="#15354B">Kutu</text>
+<text x="64" y="315" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#15354B">60</text>
+<rect x="134" y="264" width="88" height="64" rx="10" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="178" y="296" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="36" font-weight="700" fill="#15354B">10</text>
+<rect x="240" y="264" width="88" height="64" rx="10" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="284" y="296" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="36" font-weight="700" fill="#15354B">15</text>
+</svg>

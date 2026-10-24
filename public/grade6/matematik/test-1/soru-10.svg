@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="406" viewBox="0 0 360 406" role="img">
+<title>Boncukları aynı paketlere ayırma</title>
+<desc>İki stok kutusunda 30 kırmızı boncuk ve 42 mavi boncuk bulunuyor. Altlarındaki ok aynı bileşimde hazırlanacak paketleri gösteriyor. Her pakette en çok 15 boncuk bulunabilir.</desc>
+<rect width="360" height="406" fill="#FFFFFF"/>
+<rect x="14" y="14" width="332" height="98" rx="10" fill="#FCE6E6" stroke="#36586D" stroke-width="2.5"/>
+<text x="109" y="43" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#15354B">Kırmızı</text>
+<text x="109" y="82" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">boncuk</text>
+<circle cx="268" cy="63" r="34" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<text x="268" y="63" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="36" font-weight="700" fill="#15354B">30</text>
+<rect x="14" y="126" width="332" height="98" rx="10" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="109" y="155" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#15354B">Mavi</text>
+<text x="109" y="194" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">boncuk</text>
+<circle cx="268" cy="175" r="34" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<text x="268" y="175" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="36" font-weight="700" fill="#15354B">42</text>
+<line x1="180" y1="236" x2="180" y2="272" stroke="#41566B" stroke-width="2.5" stroke-linecap="round"/><path d="M 176.09 263.90 L 180.00 272.00 L 183.91 263.90" fill="none" stroke="#41566B" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="30" y="286" width="300" height="106" rx="10" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<text x="180" y="317" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#15354B">Her pakette</text>
+<text x="180" y="360" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" fill="#15354B">En çok 15 boncuk</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="334" viewBox="0 0 360 334" role="img">
+<title>Asal sayılı üçgen</title>
+<desc>Bir üçgenin üst köşesinde P, sol alt köşesinde Q, sağ alt köşesinde R var. P ile Q arasındaki kenarda 35, Q ile R arasındaki kenarda 77, P ile R arasındaki kenarda soru işareti yazıyor. P, Q ve R birbirinden farklı asal sayılardır; her kenardaki sayı, o kenarın uçlarındaki sayıların çarpımıdır.</desc>
+<rect width="360" height="334" fill="#FFFFFF"/>
+<line x1="180" y1="56" x2="60" y2="260" stroke="#36586D" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="180" y1="56" x2="300" y2="260" stroke="#36586D" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="60" y1="260" x2="300" y2="260" stroke="#36586D" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="180" cy="56" r="34" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="180" y="56" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="36" font-weight="700" fill="#15354B">P</text>
+<circle cx="60" cy="260" r="34" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="60" y="260" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="36" font-weight="700" fill="#15354B">Q</text>
+<circle cx="300" cy="260" r="34" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="300" y="260" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="36" font-weight="700" fill="#15354B">R</text>
+<rect x="22" y="132" width="76" height="52" rx="8" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<text x="60" y="158" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#15354B">35</text>
+<rect x="264" y="132" width="74" height="52" rx="8" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<text x="301" y="158" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#15354B">?</text>
+<text x="180" y="308" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#15354B">77</text>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="404" viewBox="0 0 360 404" role="img">
+<title>Gizli bölenler tablosu</title>
+<desc>Tablonun sütunları Sayı, K, L ve M. 126 satırı: K evet, L evet, M hayır. 135 satırı: K hayır, L evet, M evet. 140 satırı: K evet, L hayır, M evet. N satırı: K evet, L evet, M hayır. Evet işareti kalansız bölünmeyi, hayır işareti kalansız bölünmemeyi gösterir. K, L ve M farklı sıralarda 2, 3 ve 5 bölenlerini temsil eder.</desc>
+<rect width="360" height="404" fill="#FFFFFF"/>
+<rect x="12" y="12" width="120" height="54" rx="0" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<text x="72.0" y="39.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" fill="#15354B">Sayı</text>
+<rect x="132" y="12" width="72" height="54" rx="0" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<text x="168.0" y="39.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" fill="#15354B">K</text>
+<rect x="204" y="12" width="72" height="54" rx="0" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<text x="240.0" y="39.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" fill="#15354B">L</text>
+<rect x="276" y="12" width="72" height="54" rx="0" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<text x="312.0" y="39.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" fill="#15354B">M</text>
+<rect x="12" y="66" width="120" height="62" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<text x="72.0" y="97.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">126</text>
+<rect x="132" y="66" width="72" height="62" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<text x="168.0" y="97.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">✓</text>
+<rect x="204" y="66" width="72" height="62" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<text x="240.0" y="97.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">✓</text>
+<rect x="276" y="66" width="72" height="62" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<text x="312.0" y="97.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">×</text>
+<rect x="12" y="128" width="120" height="62" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<text x="72.0" y="159.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">135</text>
+<rect x="132" y="128" width="72" height="62" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<text x="168.0" y="159.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">×</text>
+<rect x="204" y="128" width="72" height="62" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<text x="240.0" y="159.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">✓</text>
+<rect x="276" y="128" width="72" height="62" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<text x="312.0" y="159.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">✓</text>
+<rect x="12" y="190" width="120" height="62" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<text x="72.0" y="221.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">140</text>
+<rect x="132" y="190" width="72" height="62" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<text x="168.0" y="221.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">✓</text>
+<rect x="204" y="190" width="72" height="62" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<text x="240.0" y="221.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">×</text>
+<rect x="276" y="190" width="72" height="62" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<text x="312.0" y="221.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">✓</text>
+<rect x="12" y="252" width="120" height="62" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<text x="72.0" y="283.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">N</text>
+<rect x="132" y="252" width="72" height="62" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<text x="168.0" y="283.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">✓</text>
+<rect x="204" y="252" width="72" height="62" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<text x="240.0" y="283.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">✓</text>
+<rect x="276" y="252" width="72" height="62" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<text x="312.0" y="283.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">×</text>
+<text x="180" y="346" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" fill="#15354B">✓ Kalansız bölünür</text>
+<text x="180" y="382" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" fill="#15354B">× Kalansız bölünmez</text>
+</svg>

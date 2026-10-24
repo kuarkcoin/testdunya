@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="380" viewBox="0 0 360 380" role="img">
+<title>Çarpan okları</title>
+<desc>6 ve 10’dan A’ya, A ve 14’ten B’ye oklar çizilmiş. Okun çıktığı sayı, okun gösterdiği sayının çarpanıdır. A ve B pozitif tam sayılardır. A, 50’den; B, 250’den küçüktür.</desc>
+<rect width="360" height="380" fill="#FFFFFF"/>
+<line x1="104" y1="82" x2="150" y2="110" stroke="#41566B" stroke-width="2.5" stroke-linecap="round"/><path d="M 141.04 109.13 L 150.00 110.00 L 145.11 102.44" fill="none" stroke="#41566B" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="256" y1="82" x2="210" y2="110" stroke="#41566B" stroke-width="2.5" stroke-linecap="round"/><path d="M 214.89 102.44 L 210.00 110.00 L 218.96 109.13" fill="none" stroke="#41566B" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="162" y1="182" x2="110" y2="242" stroke="#41566B" stroke-width="2.5" stroke-linecap="round"/><path d="M 112.35 233.31 L 110.00 242.00 L 118.27 238.44" fill="none" stroke="#41566B" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="246" y1="278" x2="126" y2="278" stroke="#41566B" stroke-width="2.5" stroke-linecap="round"/><path d="M 134.10 274.09 L 126.00 278.00 L 134.10 281.91" fill="none" stroke="#41566B" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="44" y="12" width="68" height="68" rx="10" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="78" y="46" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#15354B">6</text>
+<rect x="248" y="12" width="68" height="68" rx="10" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="282" y="46" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#15354B">10</text>
+<rect x="146" y="112" width="68" height="68" rx="10" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="180" y="146" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#15354B">A</text>
+<rect x="56" y="244" width="68" height="68" rx="10" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="90" y="278" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#15354B">B</text>
+<rect x="248" y="244" width="68" height="68" rx="10" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="282" y="278" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#15354B">14</text>
+<text x="98" y="354" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#15354B">A &lt; 50</text>
+<text x="265" y="354" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#15354B">B &lt; 250</text>
+</svg>

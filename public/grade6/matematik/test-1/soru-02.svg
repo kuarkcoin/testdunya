@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="334" viewBox="0 0 360 334" role="img">
+<title>Bir kart sil, sırayı koru</title>
+<desc>Yan yana beş rakam kartında soldan sağa 6, 2, 4, 5, 0 yazıyor. Altında, kalan dört kartın sırası değiştirilmeden oluşturulacak dört basamaklı sayı için dört boş kutu var. Bu sayı hem 3’e hem 4’e kalansız bölünmelidir.</desc>
+<rect width="360" height="334" fill="#FFFFFF"/>
+<text x="180" y="23" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" fill="#15354B">Sıra değişmez</text>
+<rect x="14" y="48" width="60" height="66" rx="10" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="44" y="81" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="36" font-weight="700" fill="#15354B">6</text>
+<rect x="82" y="48" width="60" height="66" rx="10" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="112" y="81" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="36" font-weight="700" fill="#15354B">2</text>
+<rect x="150" y="48" width="60" height="66" rx="10" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="180" y="81" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="36" font-weight="700" fill="#15354B">4</text>
+<rect x="218" y="48" width="60" height="66" rx="10" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="248" y="81" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="36" font-weight="700" fill="#15354B">5</text>
+<rect x="286" y="48" width="60" height="66" rx="10" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="316" y="81" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="36" font-weight="700" fill="#15354B">0</text>
+<line x1="180" y1="126" x2="180" y2="157" stroke="#41566B" stroke-width="2.5" stroke-linecap="round"/><path d="M 176.09 148.90 L 180.00 157.00 L 183.91 148.90" fill="none" stroke="#41566B" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="30" y="174" width="66" height="68" rx="10" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<text x="63" y="208" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#15354B">?</text>
+<rect x="108" y="174" width="66" height="68" rx="10" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<text x="141" y="208" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#15354B">?</text>
+<rect x="186" y="174" width="66" height="68" rx="10" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<text x="219" y="208" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#15354B">?</text>
+<rect x="264" y="174" width="66" height="68" rx="10" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<text x="297" y="208" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#15354B">?</text>
+<text x="180" y="278" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#15354B">3’e ve 4’e</text>
+<text x="180" y="312" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">kalansız bölünür</text>
+</svg>
