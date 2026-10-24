@@ -4,100 +4,178 @@ import { SubjectData } from "./types";
 // FB.6.1.1–FB.6.1.4 ve FB.6.2.1–FB.6.2.3; tüm dönemi veya yılı kapsamaz.
 // Kaynaklar: https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/409
 // https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/410
-// Uydu sayıları, sürat-hız hesabı, grafikler ve birim dönüşümleri kapsam dışıdır.
+// Kesin uydu sayıları, sürat-hız hesabı/grafikleri ve birim dönüşümleri kapsam dışıdır.
 export const fenData: SubjectData = {
   term1: {
     test1: [
       {
-        id: "f6-1-t1-01",
-        subject: "fen",
-        term: 1,
-        prompt: "Güneş'e en yakın dört gezegen, Güneş'ten uzaklaşacak biçimde hangi sırayla dizilir?",
-        options: ["Venüs, Merkür, Dünya, Mars", "Merkür, Venüs, Dünya, Mars", "Merkür, Dünya, Venüs, Mars", "Dünya, Venüs, Merkür, Mars"],
-        correct: 1,
-        explanation: "Güneş'e en yakın gezegen Merkür'dür. Onu sırasıyla Venüs, Dünya ve Mars izler. Bu dört gezegen aynı zamanda karasal gezegenler grubunu oluşturur.",
+        "id": "f6-1-t1-01",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Kartlar, gezegenlerin Güneş’ten uzaklık sırasını göstermek için yukarıdan aşağıya dizilmiştir. Yalnız iki kartın yeri yanlıştır.\n\nSıralamayı düzeltmek için yer değiştirmesi gereken kartlar ve bu iki gezegenin ortak özelliği hangi seçenekte birlikte doğru verilmiştir?",
+        "options": [
+          "2 ve 3; ikisinin de doğal uydusu yoktur.",
+          "3 ve 4; ikisi de doğal uydusu olan karasal gezegendir.",
+          "4 ve 5; ikisi de karasal gezegendir.",
+          "6 ve 7; ikisi de doğal uydusu olmayan gezegendir."
+        ],
+        "correct": 1,
+        "explanation": "Doğru sırada Dünya üçüncü, Mars dördüncüdür; 3 ve 4 numaralı kartlar yer değiştirmelidir. Dünya da Mars da karasal gezegendir ve doğal uydusu vardır. Diğer kart değişimleri doğru sıralamayı oluşturmaz.",
+        "imageWidth": 360,
+        "imageHeight": 470,
+        "imageUrl": "/grade6/fen/test-1/soru-01.svg",
+        "imageAlt": "Yukarıdan aşağıya sıralı kartlar: 1 Merkür, 2 Venüs, 3 Mars, 4 Dünya, 5 Jüpiter, 6 Satürn, 7 Uranüs, 8 Neptün. Güneş’e uzaklık aşağı doğru artıyor."
       },
       {
-        id: "f6-1-t1-02",
-        subject: "fen",
-        term: 1,
-        prompt: "Bir öğrenci yalnızca karasal gezegenlerin adlarını aynı gruba yazacaktır. Hangi listeyi kullanmalıdır?",
-        options: ["Dünya, Mars, Jüpiter, Satürn", "Jüpiter, Satürn, Uranüs, Neptün", "Merkür, Venüs, Dünya, Mars", "Merkür, Venüs, Uranüs, Neptün"],
-        correct: 2,
-        explanation: "Merkür, Venüs, Dünya ve Mars kayalık yapılarıyla karasal gezegenlerdir. Jüpiter, Satürn, Uranüs ve Neptün ise karasal gezegenler grubunda yer almaz.",
+        "id": "f6-1-t1-02",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Bir öğrenci gezegenleri hem yapısına hem doğal uydusunun bulunmasına göre tabloya yerleştiriyor. K, L ve M bölümleri görselde gösterilmiştir.\n\nSırasıyla K, L ve M bölümlerine yazılabilecek doğru örnekler hangileridir?",
+        "options": [
+          "Dünya – Venüs – Jüpiter",
+          "Merkür – Jüpiter – Mars",
+          "Venüs – Mars – Satürn",
+          "Mars – Dünya – Merkür"
+        ],
+        "correct": 2,
+        "explanation": "K, doğal uydusu olmayan karasal gezegenleri içerir: Merkür veya Venüs. L, doğal uydusu olan karasal gezegenleri içerir: Dünya veya Mars. M, karasal olmayan ve doğal uydusu bulunan gezegenleri içerir; Satürn buna örnektir.",
+        "imageWidth": 360,
+        "imageHeight": 360,
+        "imageUrl": "/grade6/fen/test-1/soru-02.svg",
+        "imageAlt": "Sınıflama tablosu: sütunlar doğal uydu yok ve doğal uydu var. Karasal satırında K ve L; karasal değil satırında boş ve M."
       },
       {
-        id: "f6-1-t1-03",
-        subject: "fen",
-        term: 1,
-        prompt: "Sekiz gezegenin Güneş'e uzaklık sırasını gösteren bir modelde en dıştaki gezegen hangisidir?",
-        options: ["Satürn", "Uranüs", "Jüpiter", "Neptün"],
-        correct: 3,
-        explanation: "Gezegenlerin sıralaması Merkür, Venüs, Dünya, Mars, Jüpiter, Satürn, Uranüs ve Neptün'dür. Bu nedenle sekiz gezegen arasında Güneş'e en uzak olan Neptün'dür.",
+        "id": "f6-1-t1-03",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Dört gezegen için hazırlanmış çap karşılaştırmasında sayılar, yaklaşık çapların Dünya’nın çapına oranıdır. Grafik yalnız Merkür, Dünya, Satürn ve Jüpiter’i içeriyor.\n\nK ile gösterilen gezegenin adı ve Güneş’e uzaklık sırası hangi seçenekte doğrudur?",
+        "options": [
+          "Satürn – 6.",
+          "Dünya – 3.",
+          "Merkür – 1.",
+          "Jüpiter – 5."
+        ],
+        "correct": 3,
+        "explanation": "Dünya’ya göre çapı yaklaşık 11 olan gezegen Jüpiter’dir. Satürn yaklaşık 9, Dünya 1, Merkür yaklaşık 0,4 değerine sahiptir. Jüpiter Güneş’e uzaklık sıralamasında beşincidir.",
+        "imageWidth": 360,
+        "imageHeight": 360,
+        "imageUrl": "/grade6/fen/test-1/soru-03.svg",
+        "imageAlt": "Yatay çap karşılaştırması: K 11, L 9, M 1, N 0,4. Birim Dünya çapıdır; çubuklar aynı ölçeği kullanır."
       },
       {
-        id: "f6-1-t1-04",
-        subject: "fen",
-        term: 1,
-        prompt: "Bir modelde gezegenlerin hacimsel büyüklükleri karşılaştırılıyor. En büyük top hangi gezegeni temsil etmelidir?",
-        options: ["Jüpiter", "Dünya", "Mars", "Neptün"],
-        correct: 0,
-        explanation: "Güneş sisteminin hacimce en büyük gezegeni Jüpiter'dir. Gezegenlerin büyüklük ilişkisini doğru gösteren bir modelde en büyük gezegen topu Jüpiter'e ayrılmalıdır.",
+        "id": "f6-1-t1-04",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Şema, Güneş’e uzaklık sırasındaki gezegen bölgelerini gösteriyor. P ve R, ana asteroit kuşağının iki yanında kuşağa komşu olan gezegenlerdir.\n\nP ve R ile ilgili hangi yorum doğrudur?",
+        "options": [
+          "P karasaldır; R, Güneş sisteminin en büyük gezegenidir.",
+          "P’nin doğal uydusu yoktur; R karasaldır.",
+          "P Satürn’dür; R Uranüs’tür.",
+          "P, R’den Güneş’e daha uzaktır."
+        ],
+        "correct": 0,
+        "explanation": "Ana asteroit kuşağı Mars ile Jüpiter’in yörüngeleri arasındadır. Güneş’e yakın taraftaki P Mars, uzaktaki R Jüpiter’dir. Mars karasal, Jüpiter ise sistemin en büyük gezegenidir.",
+        "imageWidth": 360,
+        "imageHeight": 360,
+        "imageUrl": "/grade6/fen/test-1/soru-04.svg",
+        "imageAlt": "Güneş’e uzaklık aşağı doğru artıyor. P gezegeninin bölgesi, ana asteroit kuşağı ve R gezegeninin bölgesi sıralanmış. Şema ölçekli değildir."
       },
       {
-        id: "f6-1-t1-05",
-        subject: "fen",
-        term: 1,
-        prompt: "Gezegenler 'doğal uydusu olanlar' ve 'doğal uydusu olmayanlar' olarak sınıflandırılıyor. Doğal uydusu olmayan iki gezegen hangileridir?",
-        options: ["Dünya ve Mars", "Mars ve Jüpiter", "Merkür ve Venüs", "Satürn ve Neptün"],
-        correct: 2,
-        explanation: "Merkür ve Venüs'ün doğal uydusu yoktur. Diğer altı gezegenin doğal uyduları bulunur. Bu sınıflandırmada uyduların sayısını bilmek gerekmez.",
+        "id": "f6-1-t1-05",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "K ve L modellerinde gök cisimlerinin merkezleri aynı doğrultudadır. Gölge koşullarının tutulmaya uygun olduğu kabul ediliyor.\n\nK’dan L’ye geçilirken ortada bulunan gök cismi ve gölgenin düştüğü gök cismi nasıl değişir?",
+        "options": [
+          "Ortadaki Dünya’dan Ay’a; gölge alan Ay’dan Dünya’ya değişir.",
+          "Ortadaki Ay’dan Dünya’ya; gölge alan Dünya’dan Ay’a değişir.",
+          "Ortadaki Ay’dan Güneş’e; gölge alan Dünya’dan Ay’a değişir.",
+          "Ortadaki değişmez; gölge alan yalnız Güneş olur."
+        ],
+        "correct": 1,
+        "explanation": "K’da Ay aradadır ve Ay’ın gölgesi Dünya’ya düşerek Güneş tutulmasını oluşturabilir. L’de Dünya aradadır ve Dünya’nın gölgesi Ay’a düşerek Ay tutulmasını oluşturabilir. Dolayısıyla hem aradaki cisim hem de gölge alan cisim değişir.",
+        "imageWidth": 360,
+        "imageHeight": 380,
+        "imageUrl": "/grade6/fen/test-1/soru-05.svg",
+        "imageAlt": "K sırası Güneş, Ay, Dünya; L sırası Güneş, Dünya, Ay. Her sıra yatay ve aynı doğrultuda. Boyut ve uzaklıklar ölçekli değildir."
       },
       {
-        id: "f6-1-t1-06",
-        subject: "fen",
-        term: 1,
-        prompt: "Bir Güneş sistemi modeline ana asteroit kuşağı eklenecektir. Küçük taş parçaları hangi iki gezegenin yörüngeleri arasına yerleştirilmelidir?",
-        options: ["Dünya ile Mars", "Mars ile Jüpiter", "Jüpiter ile Satürn", "Uranüs ile Neptün"],
-        correct: 1,
-        explanation: "Ana asteroit kuşağı Mars ile Jüpiter'in yörüngeleri arasında yer alır. Küçük taşları bu bölgeye yerleştirmek modelin konum ilişkisini doğru göstermesini sağlar.",
+        "id": "f6-1-t1-06",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Bir Güneş tutulmasında Dünya’nın gündüz tarafındaki iki gözlem noktasından P, Ay’ın tam gölgesinin içinde; R ise Ay’ın tam ve yarı gölgelerinin dışındadır. Hava açıktır.\n\nAynı anda bu iki noktada ne gözlenir?",
+        "options": [
+          "Her iki noktada tam Güneş tutulması.",
+          "P’de Ay tutulması, R’de Güneş tutulması.",
+          "P’de tam Güneş tutulması; R’de Güneş tutulması görülmez.",
+          "P’de tutulma görülmez; R’de tam Güneş tutulması."
+        ],
+        "correct": 2,
+        "explanation": "P’den bakıldığında Ay, Güneş’in parlak yüzünün tamamını örter. R, Ay’ın gölge bölgeleri dışında kaldığı için orada Güneş tutulması görülmez. Bu nedenle Güneş tutulması Dünya’nın her yerinden aynı anda izlenmez. Güneş’e uygun koruyucu filtre olmadan bakılmaz.",
+        "imageWidth": 360,
+        "imageHeight": 400,
+        "imageUrl": "/grade6/fen/test-1/soru-06.svg",
+        "imageAlt": "Dünya’nın gündüz yüzünün şematik görünümü. Ortada tam gölge ve çevresinde yarı gölge bölgesi; P tam gölgenin içinde, R her iki bölgenin dışında. Ölçekli değildir."
       },
       {
-        id: "f6-1-t1-07",
-        subject: "fen",
-        term: 1,
-        prompt: "'Halkası bulunan gezegenler' başlıklı kartta hangi gezegenlerin tamamı yer almalıdır?",
-        options: ["Jüpiter, Satürn, Uranüs, Neptün", "Yalnızca Satürn", "Mars, Jüpiter, Satürn, Uranüs", "Merkür, Venüs, Dünya, Mars"],
-        correct: 0,
-        explanation: "Satürn'ün halkaları daha belirgin olsa da Jüpiter, Uranüs ve Neptün'ün de halkaları vardır. Bu nedenle halkalı gezegenler grubunda dört gezegen bulunur.",
+        "id": "f6-1-t1-07",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Şema, bir dolunay sırasında Ay’ın Dünya’nın tam ve yarı gölge bölgelerinin dışından geçtiğini gösteriyor.\n\nBu durum hangi açıklamayı destekler?",
+        "options": [
+          "Dolunayda Ay kendi ışığını üretir.",
+          "Her dolunayda Dünya’nın her yerinde Ay tutulması olur.",
+          "Ay tutulması için Ay’ın Güneş ile Dünya arasında olması yeterlidir.",
+          "Dolunay tek başına yeterli değildir; Ay, Dünya’nın gölgesine de girmelidir."
+        ],
+        "correct": 3,
+        "explanation": "Ay tutulması dolunay evresinde gerçekleşebilir; ancak her dolunayda tutulma olmaz. Ay’ın yörünge düzlemi Dünya’nın Güneş çevresindeki yörünge düzlemine eğik olduğundan Ay çoğu dolunayda gölge bölgesinin üstünden veya altından geçer.",
+        "imageWidth": 360,
+        "imageHeight": 370,
+        "imageUrl": "/grade6/fen/test-1/soru-07.svg",
+        "imageAlt": "Güneş solda, Dünya ortada; sağda Dünya’nın gölge bölgesi kesik sınırlarla gösterilmiş. Ay, sağ tarafta fakat gölge bölgesinin üstünde. Şema ölçekli değildir."
       },
       {
-        id: "f6-1-t1-08",
-        subject: "fen",
-        term: 1,
-        prompt: "Ece, tüm gezegenleri eşit büyüklükte toplarla temsil edip adlarını doğru yazıyor ve Güneş'e yakınlık sırasına göre diziyor. Bu modelin hangi sınırlılığı kesin olarak vardır?",
-        options: ["Gezegenlerin adları gösterilemez.", "Gezegenlerin yakınlık sırası gösterilemez.", "Güneş'in varlığı hiçbir biçimde gösterilemez.", "Gezegenlerin birbirlerine göre büyüklük farkları gösterilemez."],
-        correct: 3,
-        explanation: "Eşit büyüklükte toplar, gerçekte farklı büyüklüklerde olan gezegenlerin hacimsel farklarını yansıtmaz. Buna karşılık etiketler adları, diziliş de Güneş'e yakınlık sırasını gösterebilir.",
+        "id": "f6-1-t1-08",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Bir gezegen için “Karasal yapıdadır, doğal uydusu vardır ve Güneş’e Dünya’dan daha uzaktır.” bilgileri veriliyor.\n\nBu üç bilgiyi birlikte sağlayan gezegen hangisidir?",
+        "options": [
+          "Venüs",
+          "Mars",
+          "Jüpiter",
+          "Merkür"
+        ],
+        "correct": 1,
+        "explanation": "Doğal uydusu olan karasal gezegenler Dünya ve Mars’tır. Güneş’e Dünya’dan daha uzak olma koşulu Mars’ı belirler. Jüpiter’in uyduları vardır ama karasal gezegen değildir."
       },
       {
-        id: "f6-1-t1-09",
-        subject: "fen",
-        term: 1,
-        prompt: "Uzaydan gelen bir kaya parçası atmosferde tamamen yok olmadan yeryüzüne ulaşıyor. Yeryüzüne ulaşan bu parçaya hangi ad verilir?",
-        options: ["Gezegen", "Meteorit", "Doğal uydu", "Yıldız"],
-        correct: 1,
-        explanation: "Atmosferde tamamen yok olmadan yeryüzüne ulaşan uzay kökenli kaya parçalarına meteorit denir.",
+        "id": "f6-1-t1-09",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Bir öğrenci, sekiz gezegeni Güneş’e uzaklık sırasına göre aynı aralıklarla yerleştiriyor. Bütün gezegenler için eşit büyüklükte toplar kullanıyor ve modelin yalnız sıralamayı gösterdiğini belirtiyor.\n\nBu model hakkında hangi değerlendirme doğrudur?",
+        "options": [
+          "Gezegenlerin gerçek çapları eşit olduğu için boyutlar da doğrudur.",
+          "Eşit aralıklar gerçek uzaklıkları doğru gösterir.",
+          "Sıralama doğru olabilir; gerçek boyut ve uzaklık oranları bu modelden çıkarılamaz.",
+          "Toplar eşit olduğundan gezegenlerin sırası mutlaka yanlıştır."
+        ],
+        "correct": 2,
+        "explanation": "Bir model belirli bir özelliği göstermek için sadeleştirilebilir. Gezegenlerin doğru sırası eşit toplarla gösterilebilir; ancak gerçek gezegenlerin çapları ve aralarındaki uzaklıklar eşit değildir. Bu model bu oranları temsil etmez."
       },
       {
-        id: "f6-1-t1-10",
-        subject: "fen",
-        term: 1,
-        prompt: "Güneş sistemindeki sekiz gezegenin tamamı için hangi özellik ortaktır?",
-        options: ["Doğal uydularının bulunması", "Halkalarının bulunması", "Güneş çevresinde dolanmaları", "Katı ve kayalık yüzeylerinin bulunması"],
-        correct: 2,
-        explanation: "Sekiz gezegenin tamamı Güneş çevresinde dolanır. Her gezegenin uydusu veya halkası yoktur; tüm gezegenler karasal da değildir. Bu nedenle ortak özellik dolanma hareketidir.",
-      },
+        "id": "f6-1-t1-10",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Bir öğrenci, bir ışık kaynağı ve iki opak küreyle tutulma modeli kuruyor. Işık kaynağı Güneş’i, büyük küre Dünya’yı, küçük küre Ay’ı temsil ediyor. Başlangıçta kaynak – büyük küre – küçük küre sırası var ve küçük küre büyük kürenin gölgesinde kalıyor.\n\nÖğrenci Güneş tutulmasını modellemek için hangi değişikliği yapmalıdır?",
+        "options": [
+          "Küçük küreyi kaynak ile büyük küre arasına alıp gölgesini büyük küre üzerine düşürmelidir.",
+          "Büyük küreyi arada tutup ışık kaynağını kapatmalıdır.",
+          "Küçük küreyi büyük kürenin arkasında tutup kendi ışığını üretmesini sağlamalıdır.",
+          "Cisimlerin sırasını değiştirmeden yalnızca modele Güneş tutulması adını vermelidir."
+        ],
+        "correct": 0,
+        "explanation": "Başlangıç düzeni Ay tutulmasını temsil eder: Dünya aradadır ve Ay onun gölgesindedir. Güneş tutulması modelinde ise Ay, Güneş ile Dünya arasına geçmeli ve gölgesi Dünya modeline düşmelidir. Kaynağı kapatmak tutulma değildir; Ay da kendi ışığını üretmez."
+      }
     ],
     test2: [
       {

@@ -1,6 +1,6 @@
 # 6. sınıf başlangıç paketi
 
-190 özgün soru: Matematikte 10 test, Türkçe, Fen Bilimleri ve İngilizcede üçer test; her test 10 soru. Matematik Test 1, Test 4, Test 5 ve Test 6, onar şekilli akıl yürütme sorusu içerir. Test 1, eski 10 soru yerine orta–zor düzeyde 10 şekilli soruyla yenilenmiştir; toplam test ve soru sayısı değişmemiştir. Test 7, Test 8, Test 9 ve Test 10, yedişer şekilli ve üçer şekilsiz orta–zor soru içerir. Testler mevcut birinci dönem kayıt yapısında tutulur; yeni matematik testleri yılın farklı temalarından seçilmiştir. Tüm yıl/müfredat kapsandığı veya MEB onayı bulunduğu iddia edilmez. İkinci dönem için soru eklenmedi.
+190 özgün soru: Matematikte 10 test, Türkçe, Fen Bilimleri ve İngilizcede üçer test; her test 10 soru. Matematik Test 1, Test 4, Test 5 ve Test 6, onar şekilli akıl yürütme sorusu içerir. Test 1, eski 10 soru yerine orta–zor düzeyde 10 şekilli soruyla yenilenmiştir; toplam test ve soru sayısı değişmemiştir. Test 7, Test 8, Test 9 ve Test 10, yedişer şekilli ve üçer şekilsiz orta–zor soru içerir. Fen Test 1, yedi şekilli ve üç şekilsiz orta–zor soruyla yenilenmiştir. Testler mevcut birinci dönem kayıt yapısında tutulur; yeni matematik testleri yılın farklı temalarından seçilmiştir. Tüm yıl/müfredat kapsandığı veya MEB onayı bulunduğu iddia edilmez. İkinci dönem için soru eklenmedi.
 
 ## Kaynaklar (23–24 Ekim 2026)
 
@@ -107,3 +107,14 @@ Production kaynağında `package.json` içinde zaten tanımlı olan `jspdf`, loc
 - Yedi SVG 360 birim genişlikte, en az 26 birim yazı; 238 piksel görüntüleme genişliğinde raster kontrolü yapıldı. Önceki 180 soru ve 61 görsel değiştirilmedi.
 - Sayısal test sıralama zaten Number dönüşümü kullanır ve test10 kimliği/rotası mevcut kurala uyar; ortak bileşen ve doğrulayıcı kodu değiştirilmedi. Toplam 19 test, 190 soru, 68 görsel ve 24 altıncı sınıf rotası.
 - Bağımsız cevap denetimi, kesin hesap ve koruma kontrolü, TypeScript, üretim derlemesi ve rota/veri doğrulaması uygulanır. Tarayıcı etkileşimleri test edilmedi.
+
+
+## Fen Test 1 yenilemesi (24 Ekim 2026)
+
+- Aynı 10 soru kimliği ve `/6-sinif/fen/test-1` rotası korunarak test yenilendi; başlık **Güneş Sistemi ve Tutulmalar: Orta–Zor Sorular**.
+- 7 büyük SVG ve 3 şekilsiz soru: gezegen sıralamasını düzeltme, iki ölçütle sınıflama, yaklaşık çap grafiği, ana asteroit kuşağının komşuları, tutulma modellerini karşılaştırma, gözlem yerine bağlı gölge, dolunay ve tutulma koşulları, model sınırlılıkları.
+- Gezegenlerin kesin doğal uydu sayıları sorulmaz. Çap grafiği yaklaşık değerleri açıkça verir; tutulma çizimleri ölçekli model iddiası taşımaz. Güneş gözlemi için güvenli filtre uyarısı açıklamaya eklendi.
+- Yedi SVG 360px genişliğinde ve metinler en az 26px; 238px telefon iç genişliğinde incelendi. Görsel gölge bölgeleri ve tek doğru cevap koşulu bağımsız denetlendi.
+- Toplam 19 test, 190 soru, 75 görsel, 24 altıncı sınıf rotası. Önceki 180 diğer soru ve 68 SVG değişmedi.
+- TypeScript, üretim derlemesi ve veri/rota doğrulayıcıları çalıştırıldı. Tarayıcı etkileşim testi yapılmadı.
+- Bilimsel kaynaklar: [MEB FB.6.1.1–FB.6.1.4](https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/409), [NASA Güneş Sistemi](https://science.nasa.gov/solar-system/solar-system-facts/), [NASA Gezegen Verileri](https://nssdc.gsfc.nasa.gov/planetary/factsheet/), [NASA Tutulmalar](https://science.nasa.gov/moon/eclipses/), [NASA Çocuklar İçin Tutulmalar](https://spaceplace.nasa.gov/eclipses/en/).
