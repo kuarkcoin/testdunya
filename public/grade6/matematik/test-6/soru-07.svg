@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="354" viewBox="0 0 360 354" role="img">
+<title>Başlangıçtan beri biriken deney kayıtları</title>
+<desc>Başlık: Biriken kayıtlar; her kart toplamı gösterir. Düşey bir ilerleme çizgisindeki kartlarda sırasıyla 20. denemede toplam 10 yaprak, 50. denemede toplam 22 yaprak, 100. denemede toplam 46 yaprak yazıyor.</desc>
+<rect width="360" height="354" fill="#FFFFFF"/>
+<text x="180" y="22" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#15354B">Biriken kayıtlar</text>
+<text x="180" y="56" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Her kart toplamdır</text>
+<rect x="50" y="82" width="298" height="76" rx="10" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="199" y="104" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" fill="#15354B">20. deneme</text>
+<text x="199" y="138" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#15354B">Yaprak: 10</text>
+<circle cx="24" cy="120" r="7" fill="#15354B" stroke="#15354B" stroke-width="1"/>
+<line x1="24" y1="129" x2="24" y2="201" stroke="#41566B" stroke-width="2.5" stroke-linecap="round"/><path d="M 20.09 192.90 L 24.00 201.00 L 27.91 192.90" fill="none" stroke="#41566B" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="50" y="174" width="298" height="76" rx="10" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<text x="199" y="196" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" fill="#15354B">50. deneme</text>
+<text x="199" y="230" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#15354B">Yaprak: 22</text>
+<circle cx="24" cy="212" r="7" fill="#15354B" stroke="#15354B" stroke-width="1"/>
+<line x1="24" y1="221" x2="24" y2="293" stroke="#41566B" stroke-width="2.5" stroke-linecap="round"/><path d="M 20.09 284.90 L 24.00 293.00 L 27.91 284.90" fill="none" stroke="#41566B" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="50" y="266" width="298" height="76" rx="10" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="199" y="288" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" fill="#15354B">100. deneme</text>
+<text x="199" y="322" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#15354B">Yaprak: 46</text>
+<circle cx="24" cy="304" r="7" fill="#15354B" stroke="#15354B" stroke-width="1"/>
+</svg>

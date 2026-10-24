@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="352" viewBox="0 0 360 352" role="img">
+<title>Resim küpü atış sonuçları</title>
+<desc>Sıklık tablosu: Yıldız 18, ay soru işareti, yaprak 15, çiçek 12 kez gelmiş. Yıldızın göreli sıklığı 3/10 olarak verilmiş. Küpün yüzleri veya toplam atış sayısı gösterilmiyor.</desc>
+<rect width="360" height="352" fill="#FFFFFF"/>
+<rect x="12" y="8" width="228" height="46" rx="0" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<rect x="240" y="8" width="108" height="46" rx="0" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<text x="126" y="31" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" fill="#15354B">Sembol</text>
+<text x="294" y="31" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" fill="#15354B">Sayı</text>
+<rect x="12" y="54" width="228" height="52" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<rect x="240" y="54" width="108" height="52" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<path d="M 42.00 63.00 L 46.40 73.95 L 58.17 74.75 L 49.11 82.31 L 51.99 93.75 L 42.00 87.48 L 32.01 93.75 L 34.89 82.31 L 25.83 74.75 L 37.60 73.95 Z" fill="#F7DEA3" stroke="#36586D" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="145" y="80" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Yıldız</text>
+<text x="294" y="80" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#15354B">18</text>
+<rect x="12" y="106" width="228" height="52" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<rect x="240" y="106" width="108" height="52" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<path d="M 50 116 A 17 17 0 1 0 50 148 A 15 15 0 0 1 50 116 Z" fill="#EDE9FE" stroke="#36586D" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="145" y="132" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Ay</text>
+<text x="294" y="132" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#15354B">?</text>
+<rect x="12" y="158" width="228" height="52" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<rect x="240" y="158" width="108" height="52" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<path d="M 29 197 Q 23 171 58 168 Q 60 197 29 197 Z" fill="#DDEFD9" stroke="#36586D" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><line x1="29" y1="197" x2="51" y2="175" stroke="#36586D" stroke-width="1.8" stroke-linecap="round"/>
+<text x="145" y="184" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Yaprak</text>
+<text x="294" y="184" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#15354B">15</text>
+<rect x="12" y="210" width="228" height="52" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<rect x="240" y="210" width="108" height="52" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<circle cx="42.0" cy="226.0" r="7" fill="#F6D8E6" stroke="#36586D" stroke-width="1.4"/><circle cx="51.51" cy="232.91" r="7" fill="#F6D8E6" stroke="#36586D" stroke-width="1.4"/><circle cx="47.88" cy="244.09" r="7" fill="#F6D8E6" stroke="#36586D" stroke-width="1.4"/><circle cx="36.12" cy="244.09" r="7" fill="#F6D8E6" stroke="#36586D" stroke-width="1.4"/><circle cx="32.49" cy="232.91" r="7" fill="#F6D8E6" stroke="#36586D" stroke-width="1.4"/><circle cx="42" cy="236" r="5" fill="#F7DEA3" stroke="#36586D" stroke-width="1.4"/>
+<text x="145" y="236" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Çiçek</text>
+<text x="294" y="236" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#15354B">12</text>
+<text x="180" y="293" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Yıldızın göreli</text>
+<text x="180" y="329" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#15354B">sıklığı: 3/10</text>
+</svg>

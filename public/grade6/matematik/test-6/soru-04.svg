@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="356" viewBox="0 0 360 356" role="img">
+<title>Aynı deneyin ek denemelerle devamı</title>
+<desc>Yukarıdan aşağıya oklarla bağlanan üç bilgi kutusu. İlk 80 denemede mavi 24 kez. Ek 20 denemede mavi sayısı soru işareti. Bütün denemeler sonunda mavinin göreli sıklığı 2/5.</desc>
+<rect width="360" height="356" fill="#FFFFFF"/>
+<rect x="12" y="8" width="336" height="88" rx="10" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="180" y="34" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#15354B">İlk 80 deneme</text>
+<text x="180" y="72" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="700" fill="#15354B">Mavi: 24</text>
+<line x1="180" y1="99" x2="180" y2="128" stroke="#41566B" stroke-width="2.5" stroke-linecap="round"/><path d="M 176.09 119.90 L 180.00 128.00 L 183.91 119.90" fill="none" stroke="#41566B" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="12" y="134" width="336" height="88" rx="10" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<text x="180" y="160" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#15354B">Ek 20 deneme</text>
+<text x="180" y="198" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="700" fill="#15354B">Mavi: ?</text>
+<line x1="180" y1="225" x2="180" y2="254" stroke="#41566B" stroke-width="2.5" stroke-linecap="round"/><path d="M 176.09 245.90 L 180.00 254.00 L 183.91 245.90" fill="none" stroke="#41566B" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="12" y="260" width="336" height="84" rx="10" fill="#FFF3D6" stroke="#36586D" stroke-width="2.5"/>
+<text x="180" y="284" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Son göreli sıklık</text>
+<text x="180" y="321" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#15354B">2/5</text>
+</svg>

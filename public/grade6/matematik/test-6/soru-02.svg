@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="350" viewBox="0 0 360 350" role="img">
+<title>Dört grubun halka atma kayıtları</title>
+<desc>Dört satırlı tablo. K: 45 deneme, 18 isabet. L: 30 deneme, 15 isabet. M: 70 deneme, 28 isabet. N: 40 deneme, 24 isabet.</desc>
+<rect width="360" height="350" fill="#FFFFFF"/>
+<text x="180" y="24" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" fill="#15354B">Halka atma deneyi</text>
+<rect x="12" y="50" width="74" height="54" rx="0" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<text x="49.0" y="77.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" fill="#15354B">Grup</text>
+<rect x="86" y="50" width="136" height="54" rx="0" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<text x="154.0" y="77.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" fill="#15354B">Deneme</text>
+<rect x="222" y="50" width="126" height="54" rx="0" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<text x="285.0" y="77.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" fill="#15354B">İsabet</text>
+<rect x="12" y="104" width="74" height="58" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<text x="49.0" y="133.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">K</text>
+<rect x="86" y="104" width="136" height="58" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<text x="154.0" y="133.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">45</text>
+<rect x="222" y="104" width="126" height="58" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<text x="285.0" y="133.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">18</text>
+<rect x="12" y="162" width="74" height="58" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<text x="49.0" y="191.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">L</text>
+<rect x="86" y="162" width="136" height="58" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<text x="154.0" y="191.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">30</text>
+<rect x="222" y="162" width="126" height="58" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<text x="285.0" y="191.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">15</text>
+<rect x="12" y="220" width="74" height="58" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<text x="49.0" y="249.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">M</text>
+<rect x="86" y="220" width="136" height="58" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<text x="154.0" y="249.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">70</text>
+<rect x="222" y="220" width="126" height="58" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<text x="285.0" y="249.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">28</text>
+<rect x="12" y="278" width="74" height="58" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<text x="49.0" y="307.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">N</text>
+<rect x="86" y="278" width="136" height="58" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<text x="154.0" y="307.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">40</text>
+<rect x="222" y="278" width="126" height="58" rx="0" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<text x="285.0" y="307.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">24</text>
+</svg>

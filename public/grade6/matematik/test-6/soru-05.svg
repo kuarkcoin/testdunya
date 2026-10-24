@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="320" viewBox="0 0 360 320" role="img">
+<title>Renk çarkının gözlenen sonuçları</title>
+<desc>30 çevirmenin sonuçları, dört eşit büyüklükte kartta gösterilmiş: Mavi 14, yeşil 9, sarı 7, kırmızı 0 kez. Çarkın kendisi veya dilim büyüklükleri gösterilmiyor.</desc>
+<rect width="360" height="320" fill="#FFFFFF"/>
+<text x="180" y="23" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" fill="#15354B">30 çevirmenin kaydı</text>
+<rect x="12" y="54" width="162" height="120" rx="10" fill="#DFEAFB" stroke="#36586D" stroke-width="2.5"/>
+<text x="93" y="86" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" fill="#15354B">Mavi</text>
+<text x="93" y="136" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="42" font-weight="700" fill="#15354B">14</text>
+<rect x="186" y="54" width="162" height="120" rx="10" fill="#DDEFD9" stroke="#36586D" stroke-width="2.5"/>
+<text x="267" y="86" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" fill="#15354B">Yeşil</text>
+<text x="267" y="136" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="42" font-weight="700" fill="#15354B">9</text>
+<rect x="12" y="188" width="162" height="120" rx="10" fill="#FFF3C6" stroke="#36586D" stroke-width="2.5"/>
+<text x="93" y="220" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" fill="#15354B">Sarı</text>
+<text x="93" y="270" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="42" font-weight="700" fill="#15354B">7</text>
+<rect x="186" y="188" width="162" height="120" rx="10" fill="#F8DEDE" stroke="#36586D" stroke-width="2.5"/>
+<text x="267" y="220" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" fill="#15354B">Kırmızı</text>
+<text x="267" y="270" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="42" font-weight="700" fill="#15354B">0</text>
+</svg>

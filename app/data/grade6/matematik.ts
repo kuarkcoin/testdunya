@@ -645,6 +645,188 @@ export const matematikData: SubjectData = {
         "imageAlt": "P ve N yazan iki kart. P asal, N doğal sayı olarak belirtilmiş. Altlarındaki bilgiler: Çarpımları 84; farkları 10’dan az."
       }
     ],
+    test6: [
+      {
+        "id": "m6-1-t6-01",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Bir resim küpüyle yapılan atışların bütün sonuçları tabloda gösterilmiştir. Yıldız gelmesinin göreli sıklığı 3/10 olarak hesaplanmıştır.\n\nBu verilere göre ay gelmesinin deneysel olasılığı kaçtır?",
+        "options": [
+          "1/5",
+          "1/4",
+          "3/10",
+          "1/3"
+        ],
+        "correct": 1,
+        "explanation": "18 yıldız, bütün atışların 3/10’unu oluşturur. Toplam atış sayısı 18 ÷ 3 × 10 = 60’tır. Ay sayısı 60 − (18 + 15 + 12) = 15 olur. Ayın deneysel olasılığı 15/60 = 1/4’tür.",
+        "imageWidth": 360,
+        "imageHeight": 352,
+        "imageUrl": "/grade6/matematik/test-6/soru-01.svg",
+        "imageAlt": "Sıklık tablosu: Yıldız 18, ay soru işareti, yaprak 15, çiçek 12 kez gelmiş. Yıldızın göreli sıklığı 3/10 olarak verilmiş. Küpün yüzleri veya toplam atış sayısı gösterilmiyor."
+      },
+      {
+        "id": "m6-1-t6-02",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Dört grup, aynı kurallarla hedefe halka atma deneyi yapıyor. Her atışta bir halka kullanılıyor. Deneme ve isabet sayıları tabloda verilmiştir.\n\nHangi grubun verileri, bir atışın isabetli olmasına ilişkin en yüksek deneysel olasılığı verir?",
+        "options": [
+          "K",
+          "L",
+          "M",
+          "N"
+        ],
+        "correct": 3,
+        "explanation": "Her grupta isabet sayısı deneme sayısına bölünür. K: 18/45 = 2/5; L: 15/30 = 1/2; M: 28/70 = 2/5; N: 24/40 = 3/5. En yüksek değer N grubundadır. Yalnız isabet sayılarını karşılaştırmak doğru değildir.",
+        "imageWidth": 360,
+        "imageHeight": 350,
+        "imageUrl": "/grade6/matematik/test-6/soru-02.svg",
+        "imageAlt": "Dört satırlı tablo. K: 45 deneme, 18 isabet. L: 30 deneme, 15 isabet. M: 70 deneme, 28 isabet. N: 40 deneme, 24 isabet."
+      },
+      {
+        "id": "m6-1-t6-03",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Bir öğrenci aynı topu, aynı uzaklıktan bir kutuya atıyor. Koşulları değiştirmeden yaptığı iki turdaki atışların sonuçları görselde verilmiştir.\n\nİki turun tüm atışları birlikte değerlendirildiğinde, topun kutuya girmesinin deneysel olasılığı kaçtır?",
+        "options": [
+          "21/40",
+          "1/2",
+          "3/5",
+          "21/25"
+        ],
+        "correct": 0,
+        "explanation": "Toplam atış sayısı 30 + 50 = 80, kutuya giren top sayısı 12 + 30 = 42’dir. Deneysel olasılık 42/80 = 21/40 olur. Tur sayıları farklı olduğundan iki turun olasılıklarını doğrudan toplayıp ikiye bölmek doğru sonuç vermez.",
+        "imageWidth": 360,
+        "imageHeight": 288,
+        "imageUrl": "/grade6/matematik/test-6/soru-03.svg",
+        "imageAlt": "Yan yana iki tur paneli. Birinci turda 30 atış, 12 kez kutuya girme; ikinci turda 50 atış, 30 kez kutuya girme kaydı var. Her paneldeki bir top ve kutu simgesi sayım amacı taşımıyor."
+      },
+      {
+        "id": "m6-1-t6-04",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Bir torbadan her seferinde bir pul çekilip rengi kaydediliyor; pul geri konularak torba karıştırılıyor. İlk 80 denemede 24 kez mavi geliyor. Sonra aynı şekilde 20 deneme daha yapılıyor. Bütün denemeler sonunda mavinin göreli sıklığı 2/5 oluyor.\n\nSon 20 denemenin kaçında mavi gelmiştir?",
+        "options": [
+          "8",
+          "12",
+          "16",
+          "40"
+        ],
+        "correct": 2,
+        "explanation": "Toplam deneme sayısı 80 + 20 = 100’dür. 100 denemenin 2/5’i, yani 40’ı mavi olmalıdır. İlk bölümde 24 mavi olduğuna göre son bölümde 40 − 24 = 16 mavi gelmiştir.",
+        "imageWidth": 360,
+        "imageHeight": 356,
+        "imageUrl": "/grade6/matematik/test-6/soru-04.svg",
+        "imageAlt": "Yukarıdan aşağıya oklarla bağlanan üç bilgi kutusu. İlk 80 denemede mavi 24 kez. Ek 20 denemede mavi sayısı soru işareti. Bütün denemeler sonunda mavinin göreli sıklığı 2/5."
+      },
+      {
+        "id": "m6-1-t6-05",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Bir renk çarkı 30 kez çevrilip her seferinde gelen renk kaydediliyor. Elde edilen sonuçlar görselde verilmiştir.\n\nYalnız bu deney verilerine dayanılarak yapılan yorumlardan hangisi doğrudur?",
+        "options": [
+          "Kırmızı gelmesi imkânsızdır.",
+          "Kırmızının göreli sıklığı 0’dır; bu, bir sonraki sonucu kesinleştirmez.",
+          "Sonraki 30 çevirmede kırmızı mutlaka gelir.",
+          "Bir sonraki çevirmede mavi gelmesi kesindir."
+        ],
+        "correct": 1,
+        "explanation": "Bu deneyde kırmızı 0 kez gözlendiğinden göreli sıklığı 0/30 = 0’dır. Ancak bir rengin 30 denemede görülmemesi, ileride görülmesinin imkânsız olduğunu kanıtlamaz. Veriler sonraki sonucun mavi olacağını veya sonraki 30 denemede kırmızının mutlaka geleceğini de garanti etmez.",
+        "imageWidth": 360,
+        "imageHeight": 320,
+        "imageUrl": "/grade6/matematik/test-6/soru-05.svg",
+        "imageAlt": "30 çevirmenin sonuçları, dört eşit büyüklükte kartta gösterilmiş: Mavi 14, yeşil 9, sarı 7, kırmızı 0 kez. Çarkın kendisi veya dilim büyüklükleri gösterilmiyor."
+      },
+      {
+        "id": "m6-1-t6-06",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Bir bilye aynı rampadan bırakılıyor ve düştüğü A, B veya C bölmesi kaydediliyor. Nokta grafiği ilk 20 denemenin sonuçlarını gösteriyor. Aynı koşullarda 10 deneme daha yapılacaktır.\n\nB bölmesine düşmenin göreli sıklığının değişmemesi için ek 10 denemenin kaçında B sonucu alınmalıdır?",
+        "options": [
+          "4",
+          "5",
+          "8",
+          "12"
+        ],
+        "correct": 0,
+        "explanation": "Grafikte B için 8 nokta vardır. İlk göreli sıklık 8/20 = 2/5’tir. 30 denemede bu değerin korunması için toplam B sayısı 30 × 2/5 = 12 olmalıdır. Ek denemelerde 12 − 8 = 4 kez B gelmelidir.",
+        "imageWidth": 360,
+        "imageHeight": 358,
+        "imageUrl": "/grade6/matematik/test-6/soru-06.svg",
+        "imageAlt": "İlk 20 denemenin nokta grafiği. A sütununda 5, B sütununda 8, C sütununda 7 nokta var. Her nokta bir denemeyi gösteriyor. Noktalar eşit büyüklükte ve ortak satır aralıklarıyla dizilmiş."
+      },
+      {
+        "id": "m6-1-t6-07",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Bir uygulama her çalıştırıldığında tek bir sembol gösteriyor. Görseldeki her kart, deneyin başlangıcından o ana kadar yapılan toplam deneme sayısını ve toplam yaprak sayısını veriyor.\n\nYalnız son 50 deneme dikkate alınırsa yaprak görülmesinin göreli sıklığı kaçtır?",
+        "options": [
+          "23/50",
+          "11/25",
+          "2/5",
+          "12/25"
+        ],
+        "correct": 3,
+        "explanation": "50. denemeye kadar 22, 100. denemeye kadar 46 yaprak görülmüştür. Son 50 denemedeki yaprak sayısı 46 − 22 = 24’tür. İstenen göreli sıklık 24/50 = 12/25 olur. 46/100 ise son 50 denemenin değil, bütün deneyin göreli sıklığıdır.",
+        "imageWidth": 360,
+        "imageHeight": 354,
+        "imageUrl": "/grade6/matematik/test-6/soru-07.svg",
+        "imageAlt": "Başlık: Biriken kayıtlar; her kart toplamı gösterir. Düşey bir ilerleme çizgisindeki kartlarda sırasıyla 20. denemede toplam 10 yaprak, 50. denemede toplam 22 yaprak, 100. denemede toplam 46 yaprak yazıyor."
+      },
+      {
+        "id": "m6-1-t6-08",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Bir madeni para art arda atılıyor. Toplam atış sayısı 40’tan fazla, 60’tan azdır. Yazı gelmesinin göreli sıklığı tam olarak 5/12 hesaplanmıştır.\n\nBu deneyde kaç kez yazı gelmiştir?",
+        "options": [
+          "16",
+          "18",
+          "20",
+          "24"
+        ],
+        "correct": 2,
+        "explanation": "5/12 sadeleşmiş bir kesirdir. Bu nedenle toplam atış sayısı 12’nin katı olmalıdır. 40 ile 60 arasındaki tek 12 katı 48’dir. Yazı sayısı 48 ÷ 12 × 5 = 20’dir.",
+        "imageWidth": 360,
+        "imageHeight": 350,
+        "imageUrl": "/grade6/matematik/test-6/soru-08.svg",
+        "imageAlt": "Deney defterinde iki bilgi grubu var: Atış sayısı 40’tan fazla ve 60’tan az. Yazı gelmesinin göreli sıklığı 5/12. Toplam atış ve yazı sayısı gösterilmiyor."
+      },
+      {
+        "id": "m6-1-t6-09",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Bir plastik kapak aynı yükseklikten 60 kez bırakılıyor; 21 kez açık yüzü yukarıda kalıyor. Öğrenci aynı koşullarda 100 yeni deneme yapmayı planlıyor.\n\nÖnceki verilere dayalı olarak, 100 yeni denemede açık yüzün yukarıda kalma sayısı için hangi yorum uygundur?",
+        "options": [
+          "Kesinlikle 21 kez olur.",
+          "Yaklaşık 35 kez olması beklenir; bu sayı garanti değildir.",
+          "Kesinlikle 35 kez olur.",
+          "Yaklaşık 60 kez olması beklenir."
+        ],
+        "correct": 1,
+        "explanation": "Gözlenen göreli sıklık 21/60 = 7/20 = 35/100’dür. Bu veriye dayanan tahmin, 100 yeni denemede yaklaşık 35 kez açık yüzün yukarıda kalmasıdır. Yeni deneyin sonucu değişebilir; 35 sayısı kesin bir sonuç değildir.",
+        "imageWidth": 360,
+        "imageHeight": 336,
+        "imageUrl": "/grade6/matematik/test-6/soru-09.svg",
+        "imageAlt": "Üstte gözlenen sonuçlar kartı: 60 deneme, 21 kez açık yüz yukarıda. Aşağıya doğru, yanında Tahmin yazan bir ok var. Altta planlanan deney kartı: 100 deneme, açık yüzün yukarıda kalma sayısı soru işareti."
+      },
+      {
+        "id": "m6-1-t6-10",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Bir bilye, iki çıkışlı bir rampadan her seferinde aynı noktadan bırakılıyor. Sonuçlar kaydedilirken 10 deneme yanlışlıkla iki kez yazılmıştır. Hatalı tablodaki kayıt sayıları ile iki kez yazılan denemelerin sonuçları görselde verilmiştir.\n\nTekrarlanan kayıtlar düzeltildiğinde, bilyenin K çıkışına ulaşmasının deneysel olasılığı kaçtır?",
+        "options": [
+          "21/50",
+          "9/20",
+          "7/20",
+          "27/50"
+        ],
+        "correct": 0,
+        "explanation": "Hatalı tabloda 27 + 33 = 60 kayıt vardır. İki kez yazılan 10 denemenin fazla olan kopyaları çıkarılınca gerçek deneme sayısı 50 olur. K için 6 fazla kayıt olduğundan gerçek K sayısı 27 − 6 = 21’dir. Düzeltilmiş deneysel olasılık 21/50’dir.",
+        "imageWidth": 360,
+        "imageHeight": 330,
+        "imageUrl": "/grade6/matematik/test-6/soru-10.svg",
+        "imageAlt": "Alt alta iki kayıt panosu, aynı hizada K ve L sütunları. Hatalı kayıt panosunda K 27, L 33 yazıyor. İki kez yazılan denemeler panosunda K 6, L 4 yazıyor. Düzeltilmiş toplamlar gösterilmiyor."
+      }
+    ],
   },
   term2: {},
 };

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="288" viewBox="0 0 360 288" role="img">
+<title>Aynı top atma deneyinin iki turu</title>
+<desc>Yan yana iki tur paneli. Birinci turda 30 atış, 12 kez kutuya girme; ikinci turda 50 atış, 30 kez kutuya girme kaydı var. Her paneldeki bir top ve kutu simgesi sayım amacı taşımıyor.</desc>
+<rect width="360" height="288" fill="#FFFFFF"/>
+<rect x="12" y="10" width="162" height="266" rx="12" fill="#DFF2F1" stroke="#36586D" stroke-width="2.5"/>
+<text x="93" y="39" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="700" fill="#15354B">1. tur</text>
+<circle cx="93" cy="86" r="12" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<path d="M 55 105 L 63 142 L 123 142 L 131 105" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="93" y="185" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" fill="#15354B">Atış: 30</text>
+<text x="93" y="238" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" fill="#15354B">Kutuda: 12</text>
+<rect x="186" y="10" width="162" height="266" rx="12" fill="#EDE9FE" stroke="#36586D" stroke-width="2.5"/>
+<text x="267" y="39" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="700" fill="#15354B">2. tur</text>
+<circle cx="267" cy="86" r="12" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5"/>
+<path d="M 229 105 L 237 142 L 297 142 L 305 105" fill="#FFFFFF" stroke="#36586D" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="267" y="185" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" fill="#15354B">Atış: 50</text>
+<text x="267" y="238" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" fill="#15354B">Kutuda: 30</text>
+</svg>
