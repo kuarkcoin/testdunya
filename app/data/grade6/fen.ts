@@ -1,11 +1,12 @@
 import { SubjectData } from "./types";
 
-// 6. sınıf başlangıç paketi: İlk iki ünite; üreme, büyüme, gelişme ve denetleyici sistemler, ışığın yansıması, aynalar, soğurulma ve renklerden seçmeler.
-// FB.6.1.1–FB.6.1.4, FB.6.2.1–FB.6.2.3, FB.6.3.1–FB.6.3.4 ve FB.6.3.6–FB.6.3.8 ve FB.6.4.1–FB.6.4.7; tüm yılı kapsamaz.
+// 6. sınıf başlangıç paketi: İlk iki ünite; üreme, büyüme, gelişme ve denetleyici sistemler, ışığın yansıması, aynalar, soğurulma, renkler, genleşme ve hâl değişim noktalarından seçmeler.
+// FB.6.1.1–FB.6.1.4, FB.6.2.1–FB.6.2.3, FB.6.3.1–FB.6.3.4 ve FB.6.3.6–FB.6.3.8 ve FB.6.4.1–FB.6.4.7 ve FB.6.5.1–FB.6.5.2; tüm yılı kapsamaz.
 // Kaynaklar: https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/409
 // https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/410
 // https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/411
 // https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/412
+// https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/413
 // Kesin uydu sayıları, sürat-hız hesabı/grafikleri ve birim dönüşümleri kapsam dışıdır.
 export const fenData: SubjectData = {
   term1: {
@@ -1201,6 +1202,177 @@ export const fenData: SubjectData = {
             ],
             "correct": 0,
             "explanation": "Isıl toplayıcı ışık enerjisinden suyun ısınması için yararlanır. Fotovoltaik panel ise elektrik üretir. Aynı enerji kaynağının kullanılması iki sistemin aynı enerji dönüşümünü yaptığı anlamına gelmez."
+      }
+],
+
+    test8: [
+      {
+            "id": "f6-1-t8-01",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Metal küre başlangıçta halkadan geçiyor. Yalnız küre ısıtıldığında geçmiyor; küre ilk sıcaklığına soğutulunca yeniden geçiyor. Halka değişmeden kalıyor, maddeden parça kopmuyor.\n\nBuna göre kürenin ısıtılmış durumdaki hacmi ve kütlesi, ilk durumuyla nasıl karşılaştırılır?",
+            "options": [
+                  "Hacmi ve kütlesi artmıştır.",
+                  "Hacmi artmış, kütlesi değişmemiştir.",
+                  "Hacmi değişmemiş, kütlesi artmıştır.",
+                  "Hacmi azalmış, kütlesi değişmemiştir."
+            ],
+            "correct": 1,
+            "explanation": "Isınan kürenin genleşmesi hacmini artırır ve geçişi engelleyebilir. Madde eklenmediği veya kaybolmadığı için kütlesi değişmez. Soğuyunca yeniden geçebilmesi büzülmeyle uyumludur.",
+            "imageWidth": 360,
+            "imageHeight": 450,
+            "imageUrl": "/grade6/fen/test-8/soru-01.svg",
+            "imageAlt": "Üç aşama: başlangıçta küçük küre halkadan geçer; ısıtılan küre büyür ve geçmez; soğutulan küre yeniden geçer. Boyut değişimi abartılmıştır."
+      },
+      {
+            "id": "f6-1-t8-02",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Aynı metal rayların uçları arasında şekildeki gibi boşluk bırakılmıştır. Hava ısındığında rayların sıcaklığı artıyor; raylar erimiyor.\n\nBoşluğun değişimi ve bırakılma amacı hangisidir?",
+            "options": [
+                  "Boşluk büyür; rayların genleşmesine pay bırakır.",
+                  "Boşluk küçülür; metallerin genleşmesini tamamen durdurur.",
+                  "Boşluk küçülür; rayların genleşmesi için pay sağlar.",
+                  "Boşluk değişmez; rayın her bölümü aynı oranda uzar."
+            ],
+            "correct": 2,
+            "explanation": "Isınan raylar uzayarak uçlar arasındaki boşluğu daraltabilir. Boşluk genleşmeye pay bırakarak zorlanma ve şekil bozulması riskini azaltır. Bu durum bir hâl değişimi değildir.",
+            "imageWidth": 360,
+            "imageHeight": 350,
+            "imageUrl": "/grade6/fen/test-8/soru-02.svg",
+            "imageAlt": "İki metal rayın uçları arasında boşluk; soğuk ve daha sıcak durumlar karşılaştırılmış. Sıcak durumda boşluk daha dar; şema ölçekli değildir."
+      },
+      {
+            "id": "f6-1-t8-03",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "İki farklı saf metal çubuğun genleşme miktarı karşılaştırılacak. Başlangıç sıcaklıkları ve uzunlukları eşit; ikisi de aynı son sıcaklığa getiriliyor. Son uzunluklar görselde verilmiştir.\n\nBu deney için hangi çıkarım doğrudur?",
+            "options": [
+                  "K daha çok uzamıştır; yalnız bu ölçüm K’nin eridiğini kanıtlar.",
+                  "L daha çok uzamıştır; K hiç genleşmemiştir.",
+                  "İkisi de aynı miktarda uzamıştır; ilk boyları eşittir.",
+                  "K daha çok uzamıştır; eşit sıcaklık değişimi her maddede eşit uzama oluşturmayabilir."
+            ],
+            "correct": 3,
+            "explanation": "Başlangıçları 1000 mm iken K 1003, L 1001 mm olmuştur. Uzamalar 3 ve 1 mm’dir. Aynı sıcaklık değişiminde farklı maddelerin genleşme miktarları farklı olabilir; erime sonucu çıkarılamaz.",
+            "imageWidth": 360,
+            "imageHeight": 380,
+            "imageUrl": "/grade6/fen/test-8/soru-03.svg",
+            "imageAlt": "K ve L başlangıçta 1000 mm. Eşit sıcaklık artışından sonra K 1003 mm, L 1001 mm. Uzama farkı şemada büyütülmüş."
+      },
+      {
+            "id": "f6-1-t8-04",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Başlangıçta tamamen katı olan saf bir madde sabit basınçta ısıtılıyor. Grafikte B–C boyunca erimenin sürdüğü, C’de tamamlandığı gözlenmiştir. Isı verme bu aralıkta kesilmiyor.\n\nB–C aralığı için hangi yorum doğrudur?",
+            "options": [
+                  "Erime sürerken sıcaklık sabittir; madde ısı alır ve katı ile sıvı birlikte bulunur.",
+                  "Sıcaklık sabit olduğundan madde hiç ısı almamıştır.",
+                  "Madde B’de tamamen gaz olmuş, C’de katılaşmıştır.",
+                  "Isı verildiği için her anda sıcaklık artmak zorundadır."
+            ],
+            "correct": 0,
+            "explanation": "Saf madde sabit basınçta erirken aldığı enerji hâl değişimine gider; sıcaklığı sabit kalabilir. Erime sürerken katı ve sıvı birlikte bulunur. C noktasında erime tamamlanır.",
+            "imageWidth": 360,
+            "imageHeight": 380,
+            "imageUrl": "/grade6/fen/test-8/soru-04.svg",
+            "imageAlt": "Sıcaklık-zaman grafiği A 20°C’den B 40°C’ye yükselir, B–C 40°C’de yatay, C’den D 60°C’ye yükselir. Isıtma sürüyor."
+      },
+      {
+            "id": "f6-1-t8-05",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Saf X maddesi sıvı hâlden başlayarak sabit basınçta soğutuluyor. Grafikte K–L aralığında donduğu gözlenmiştir. Aynı X katısı aynı basınçta yeniden ısıtılacaktır.\n\nX’in erime noktası ve K–L boyunca çevreyle enerji alışverişi nasıl olmalıdır?",
+            "options": [
+                  "Erime noktası 80°C; donarken çevreden ısı alır.",
+                  "Erime noktası 60°C; donarken çevreye ısı verir.",
+                  "Erime noktası 40°C; donarken enerji alışverişi olmaz.",
+                  "Erime noktası 60°C; donarken çevreden ısı alır."
+            ],
+            "correct": 1,
+            "explanation": "Aynı saf maddenin aynı basınçta erime ve donma noktaları eşittir. Donma grafikte 60°C’de gerçekleşir. Donarken madde çevreye ısı verir; sıcaklığın sabit kalması enerji alışverişinin durduğu anlamına gelmez.",
+            "imageWidth": 360,
+            "imageHeight": 380,
+            "imageUrl": "/grade6/fen/test-8/soru-05.svg",
+            "imageAlt": "Soğutma grafiği 80°C’den K 60°C’ye iner, K–L 60°C’de yatay, ardından 40°C’ye iner. K–L’de donma gözleniyor."
+      },
+      {
+            "id": "f6-1-t8-06",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Aynı saf sıvının farklı miktarları, aynı basınç altında özdeş açık kaplarda ısıtılmıştır. Kaplarda sıvı kaldığı sürece kaynama sıcaklıkları ölçülmüştür.\n\nVeriler hangi sonucu destekler?",
+            "options": [
+                  "Madde miktarı artınca kaynama noktası zorunlu olarak yükselir.",
+                  "İki kap aynı sıcaklığa ulaştığı için sıvı miktarları gerçekte eşittir.",
+                  "Madde miktarı tek başına kaynama noktasını değiştirmez; kaynamaya ulaşma süresi aynı olmak zorunda değildir.",
+                  "Kaynama sırasında sıvılar ısı alamaz."
+            ],
+            "correct": 2,
+            "explanation": "Aynı saf sıvı aynı basınçta aynı kaynama noktasına sahiptir. Miktar farklılığı ısıtma süresini etkileyebilir; kaynama noktası ile kaynamaya ulaşma süresi farklı kavramlardır.",
+            "imageWidth": 360,
+            "imageHeight": 380,
+            "imageUrl": "/grade6/fen/test-8/soru-06.svg",
+            "imageAlt": "K kabı 100 g, L kabı 200 g aynı saf sıvı. İkisi kaynarken termometre 80°C. Basınç aynı; örnek veri."
+      },
+      {
+            "id": "f6-1-t8-07",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Aynı basınçta ölçülmüş saf K, L, M maddelerinin erime ve kaynama noktaları tabloda verilmiştir. Katı X örneğinin erime noktası 30°C, kaynama noktası 120°C ölçülüyor.\n\nX, yalnız bu üç aday arasından seçilecekse hangi maddeyle eşleşir ve neden?",
+            "options": [
+                  "K; yalnız erime noktasının eşit olması her zaman yeterlidir.",
+                  "L; yalnız kaynama noktası eşleşmektedir.",
+                  "M; erime noktası farklı olsa da kaynama noktası yeterlidir.",
+                  "L; iki ölçülen özellik de L ile eşleşmektedir."
+            ],
+            "correct": 3,
+            "explanation": "X’in erime noktası K ve L ile aynıdır, fakat kaynama noktası K’den farklıdır. Her iki veri L ile eşleşir. Bu çıkarım yalnız verilen üç aday ve aynı basınç koşulu için yapılmıştır.",
+            "imageWidth": 360,
+            "imageHeight": 380,
+            "imageUrl": "/grade6/fen/test-8/soru-07.svg",
+            "imageAlt": "Tablo sütunları: madde, erime, kaynama. K: 30°C, 90°C; L: 30°C, 120°C; M: 50°C, 120°C. Ölçümler aynı basınçta."
+      },
+      {
+            "id": "f6-1-t8-08",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Bir öğrenci farklı miktarlarda iki saf maddeyi farklı güçlü ısıtıcılarla ısıtıyor. Daha önce kaynayanın kaynama noktasının daha düşük olduğunu söylüyor.\n\nBu sonuca neden yalnız kaynama süresinden ulaşılamaz?",
+            "options": [
+                  "Miktar ve ısıtıcı gücü süreyi etkiler; kaynama noktası için sıcaklık ölçülmelidir.",
+                  "Daha güçlü ısıtıcı saf maddenin kaynama noktasını her zaman yükseltir.",
+                  "Farklı miktarlar aynı kaynama noktasına sahip olamaz.",
+                  "İlk kaynayanın sıcaklığı ölçülmeden de daha düşük kaynama noktalı olduğu kesindir."
+            ],
+            "correct": 0,
+            "explanation": "Kaynamaya ulaşma süresi miktar, başlangıç sıcaklığı ve aktarılan enerji gibi etkenlere bağlıdır. Kaynama noktalarını karşılaştırmak için aynı basınçta kaynama sıcaklıkları ölçülmelidir."
+      },
+      {
+            "id": "f6-1-t8-09",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Saf bir katının erime sıcaklığı ölçülürken termometrenin ucu ısıtılan kabın tabanına değdiriliyor. Öğrenci görülen en yüksek değeri erime noktası olarak kaydediyor.\n\nDaha güvenilir ölçüm için ne yapılmalıdır?",
+            "options": [
+                  "Daha güçlü ısıtıcı kullanılıp yine en yüksek değer yazılmalıdır.",
+                  "Termometre çıkarılmalı, yalnız katının miktarı tartılmalıdır.",
+                  "Termometre kaba değmeden maddeyle uygun temas etmeli; erime sürerken kararlı sıcaklık izlenmelidir.",
+                  "Erime bitip sıvı kaynayana kadar beklenmeli, kaynama sıcaklığı yazılmalıdır."
+            ],
+            "correct": 2,
+            "explanation": "Kabın tabanına temas ölçümün madde yerine daha sıcak tabandan etkilenmesine yol açabilir. Termometre uygun yerleştirilerek saf maddenin sabit basınçta erime sürecindeki sıcaklığı izlenir. En yüksek sıcaklık otomatik olarak erime noktası değildir."
+      },
+      {
+            "id": "f6-1-t8-10",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Isıtılan bir katı metal çubuğun yalnız boyu uzuyor; başka bir kapta saf katı maddenin bir kısmı sıvıya dönüşüyor. İki olayda da madde eklenmiyor veya kaybolmuyor.\n\nOlayların türü ve kütleyle ilgili hangi değerlendirme doğrudur?",
+            "options": [
+                  "İkisi de erimedir; ikisinin kütlesi artar.",
+                  "İlki genleşme, ikincisi erimedir; yalnız eriyenin kütlesi azalır.",
+                  "İlki erime, ikincisi genleşmedir; kütleler değişmez.",
+                  "İlki genleşme, ikincisi erimedir; kütleler değişmez."
+            ],
+            "correct": 3,
+            "explanation": "Boyutun hâl değişmeden artması genleşme, katıdan sıvıya geçiş erimedir. Hiçbirinde madde eklenmediği veya kaybolmadığı için kütle değişmez. Hâl değişimi tek başına kütle kaybı değildir."
       }
 ],
 
