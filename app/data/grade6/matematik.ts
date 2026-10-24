@@ -1257,6 +1257,176 @@ export const matematikData: SubjectData = {
         "explanation": "Yanlış toplam 45, ortalama 9’dur. Doğru sıralı veri 4, 6, 8, 8, 9; toplam 35 ve ortalama 7’dir. Ortalama 2 azalır. Her iki sıralı grubun üçüncü değeri 8 olduğundan ortanca değişmez."
       }
     ],
+    test9: [
+      {
+        "id": "m6-1-t9-01",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Şekilde d ve e doğruları paraleldir. Bu doğruları kesen k doğrusu ile oluşan açılardan biri 128°, işaretli dar açı ise x’tir.\n\nx açısının tümleri kaç derecedir?",
+        "options": [
+          "38°",
+          "52°",
+          "62°",
+          "128°"
+        ],
+        "correct": 0,
+        "explanation": "128° ile aynı kesişimdeki komşu dar açı 180° − 128° = 52° olur. Paralellikten x = 52°’dir. x’in tümleri 90° − 52° = 38° olur.",
+        "imageWidth": 360,
+        "imageHeight": 350,
+        "imageUrl": "/grade6/matematik/test-9/soru-01.svg",
+        "imageAlt": "İki yatay paralel doğruyu sağa doğru yükselen k doğrusu kesiyor. Üst kesişimin sol üst açısı 128°, alt kesişimin sağ üst dar açısı x. d paralel e."
+      },
+      {
+        "id": "m6-1-t9-02",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "ABC üçgeninde C köşesindeki dış açı, BC kenarının C yönünde uzatılmasıyla oluşturulmuştur. Şekilde A açısı 47°, bu dış açı 124°’dir.\n\nB iç açısı kaç derecedir?",
+        "options": [
+          "56°",
+          "67°",
+          "77°",
+          "101°"
+        ],
+        "correct": 2,
+        "explanation": "C iç açısı 180° − 124° = 56°’dir. Üçgenin iç açıları toplamından B = 180° − 47° − 56° = 77° bulunur. Dış açı bağıntısıyla 124° − 47° de aynı sonucu verir.",
+        "imageWidth": 360,
+        "imageHeight": 350,
+        "imageUrl": "/grade6/matematik/test-9/soru-02.svg",
+        "imageAlt": "ABC üçgeninde A üstte, B solda ve C sağda. BC doğrusu C’den D’ye uzatılmış. A iç açısı 47°, ACD dış açısı 124°."
+      },
+      {
+        "id": "m6-1-t9-03",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "ABC ikizkenar üçgeninde AB = AC’dir. CB kenarı B yönünde D noktasına kadar uzatılmış ve ABD dış açısı 112° olarak ölçülmüştür.\n\nBAC tepe açısı kaç derecedir?",
+        "options": [
+          "34°",
+          "44°",
+          "56°",
+          "68°"
+        ],
+        "correct": 1,
+        "explanation": "B iç açısı 180° − 112° = 68°’dir. AB = AC olduğundan B ve C taban açıları eşittir. A = 180° − 68° − 68° = 44° bulunur.",
+        "imageWidth": 360,
+        "imageHeight": 350,
+        "imageUrl": "/grade6/matematik/test-9/soru-03.svg",
+        "imageAlt": "AB ve AC eşit işaretli ikizkenar üçgen. A üstte, B sol altta, C sağ altta. CB doğrusu B’den sola D’ye uzatılmış. ABD dış açısı 112°."
+      },
+      {
+        "id": "m6-1-t9-04",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "ABCD yamuğunda AB ∥ DC’dir. A ve B iç açıları şekilde verilmiştir.\n\nC iç açısı, D iç açısından kaç derece büyüktür?",
+        "options": [
+          "15°",
+          "27°",
+          "35°",
+          "37°"
+        ],
+        "correct": 3,
+        "explanation": "AD keseni üzerinde A + D = 180° olduğundan D = 64°’dir. BC keseni üzerinde B + C = 180° olduğundan C = 101°’dir. Fark 101° − 64° = 37° olur.",
+        "imageWidth": 360,
+        "imageHeight": 350,
+        "imageUrl": "/grade6/matematik/test-9/soru-04.svg",
+        "imageAlt": "ABCD yamuğunda A sol üst, B sağ üst, C sağ alt, D sol alt. AB ve DC paralel. A iç açısı 116°, B iç açısı 79°."
+      },
+      {
+        "id": "m6-1-t9-05",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "ABCD paralelkenarının AC köşegeni çizilmiştir. Köşegen A iç açısını şekildeki gibi 38° ve 27° olarak ayırıyor.\n\nABC iç açısı kaç derecedir?",
+        "options": [
+          "65°",
+          "103°",
+          "115°",
+          "142°"
+        ],
+        "correct": 2,
+        "explanation": "A iç açısı 38° + 27° = 65°’dir. Paralelkenarın komşu iç açıları bütünlerdir. B = 180° − 65° = 115° olur. Köşegen açılardan birini tek başına A açısı yapmaz.",
+        "imageWidth": 360,
+        "imageHeight": 370,
+        "imageUrl": "/grade6/matematik/test-9/soru-05.svg",
+        "imageAlt": "A sol alt, B sağ alt, C sağ üst, D sol üst olan paralelkenar. AC köşegeni çizili. DAC açısı 38°, CAB açısı 27°."
+      },
+      {
+        "id": "m6-1-t9-06",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "ABCD dikdörtgeninin köşegenleri O noktasında kesişiyor. OAB açısı 32°’dir.\n\nAOB açısı kaç derecedir?",
+        "options": [
+          "64°",
+          "90°",
+          "148°",
+          "116°"
+        ],
+        "correct": 3,
+        "explanation": "Dikdörtgenin köşegenleri eşittir ve birbirini ortalar. Bu nedenle OA = OB olur. AOB üçgeni ikizkenardır; OAB ve OBA açıları 32°’dir. AOB = 180° − 32° − 32° = 116° bulunur.",
+        "imageWidth": 360,
+        "imageHeight": 350,
+        "imageUrl": "/grade6/matematik/test-9/soru-06.svg",
+        "imageAlt": "ABCD dikdörtgeninde A sol alt, B sağ alt, C sağ üst, D sol üst. Köşegenler O’da kesişir. OAB açısı 32°, AOB açısı x ile gösterilmiştir."
+      },
+      {
+        "id": "m6-1-t9-07",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "AB ve CD doğruları paraleldir. AD ve BC doğruları O noktasında kesişiyor. Üstteki AOB üçgeninde A açısı 48°, B açısı 62°’dir.\n\nŞekilde x ile gösterilen BOD açısı ile y ile gösterilen OCD açısının toplamı kaç derecedir?",
+        "options": [
+          "132°",
+          "172°",
+          "158°",
+          "180°"
+        ],
+        "correct": 1,
+        "explanation": "AOB üçgeninde O açısı 180° − 48° − 62° = 70°’dir. A, O, D doğrusal olduğundan x = 180° − 70° = 110° olur. AB ∥ CD olduğundan ABC ile BCD iç ters açıları eşittir; y = 62°’dir. Toplam x + y = 110° + 62° = 172° bulunur.",
+        "imageWidth": 360,
+        "imageHeight": 430,
+        "imageUrl": "/grade6/matematik/test-9/soru-07.svg",
+        "imageAlt": "Üstte A solda B sağda, altta C solda D sağda olan iki paralel doğru. AD ve BC, O’da kesişir. Üst üçgenin A açısı 48°, B açısı 62°. O’nun sağında OB ve OD arasındaki açı x; C’de CO ve CD arasındaki açı y."
+      },
+      {
+        "id": "m6-1-t9-08",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Bir üçgende en küçük iç açıdan diğer iki iç açı sırasıyla 20° ve 40° büyüktür.\n\nBu üçgenin en büyük iç açısına komşu dış açı kaç derecedir?",
+        "options": [
+          "80°",
+          "100°",
+          "120°",
+          "140°"
+        ],
+        "correct": 1,
+        "explanation": "Üç açıdan fazlalıklar çıkarılırsa toplam 180° − 20° − 40° = 120° kalır. En küçük açı 120° ÷ 3 = 40°, en büyük açı 80°’dir. Ona komşu dış açı 180° − 80° = 100° olur."
+      },
+      {
+        "id": "m6-1-t9-09",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Bir dışbükey dörtgenin A ve B iç açıları sırasıyla 85° ve 110°’dir. D iç açısı, C iç açısından 25° küçüktür.\n\nC iç açısı kaç derecedir?",
+        "options": [
+          "70°",
+          "85°",
+          "95°",
+          "120°"
+        ],
+        "correct": 2,
+        "explanation": "Dörtgenin iç açıları toplamı 360°’dir. C ve D toplamı 360° − 85° − 110° = 165° olur. Aralarındaki 25° fark çıkarılınca iki küçük açı toplamı 140°, D = 70° bulunur. C = 70° + 25° = 95°’dir."
+      },
+      {
+        "id": "m6-1-t9-10",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Bir dışbükey dörtgenin köşegenleri birbirini ortalıyor ve birbirine dik kesişiyor. Köşegenlerin uzunlukları birbirinden farklıdır.\n\nBu dörtgen için hangisi kesinlikle doğrudur?",
+        "options": [
+          "Dört kenarının uzunluğu eşittir; kare değildir.",
+          "Dört iç açısının her biri 90°’dir.",
+          "Karşılıklı kenarlarından yalnız bir çifti paraleldir.",
+          "Birbirine komşu iki kenarının uzunluğu farklıdır."
+        ],
+        "correct": 0,
+        "explanation": "Birbirini ortalayan köşegenler dörtgenin paralelkenar olduğunu gösterir. Bu köşegenlerin dik kesişmesi, dört kenarı eşit olan eşkenar dörtgeni verir. Köşegenler eşit uzunlukta olmadığı için şekil kare değildir. Diğer ifadeler bu koşullarla uyuşmaz."
+      }
+    ],
   },
   term2: {},
 };
