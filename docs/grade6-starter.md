@@ -1,6 +1,6 @@
 # 6. sınıf başlangıç paketi
 
-200 özgün soru: Matematikte 10, Fen Bilimlerinde 4, Türkçe ve İngilizcede üçer test; her test 10 soru. Matematik Test 1, Test 4, Test 5 ve Test 6, onar şekilli akıl yürütme sorusu içerir. Test 1, eski 10 soru yerine orta–zor düzeyde 10 şekilli soruyla yenilenmiştir; toplam test ve soru sayısı değişmemiştir. Test 7, Test 8, Test 9 ve Test 10, yedişer şekilli ve üçer şekilsiz orta–zor soru içerir. Fen Test 1, Test 2 ve Test 3, yedişer şekilli ve üçer şekilsiz orta–zor soruyla yenilenmiştir. Testler mevcut birinci dönem kayıt yapısında tutulur; yeni matematik testleri yılın farklı temalarından seçilmiştir. Tüm yıl/müfredat kapsandığı veya MEB onayı bulunduğu iddia edilmez. İkinci dönem için soru eklenmedi.
+210 özgün soru: Matematikte 10, Fen Bilimlerinde 5, Türkçe ve İngilizcede üçer test; her test 10 soru. Matematik Test 1, Test 4, Test 5 ve Test 6, onar şekilli akıl yürütme sorusu içerir. Test 1, eski 10 soru yerine orta–zor düzeyde 10 şekilli soruyla yenilenmiştir; toplam test ve soru sayısı değişmemiştir. Test 7, Test 8, Test 9 ve Test 10, yedişer şekilli ve üçer şekilsiz orta–zor soru içerir. Fen Test 1, Test 2 ve Test 3, yedişer şekilli ve üçer şekilsiz orta–zor soruyla yenilenmiştir. Testler mevcut birinci dönem kayıt yapısında tutulur; yeni matematik testleri yılın farklı temalarından seçilmiştir. Tüm yıl/müfredat kapsandığı veya MEB onayı bulunduğu iddia edilmez. İkinci dönem için soru eklenmedi.
 
 ## Kaynaklar (23–24 Ekim 2026)
 
@@ -17,7 +17,7 @@ Matematik sorularında EBOB/EKOK terimleri kullanılmaz. Fen soruları sürat i�
 
 ## Entegrasyon
 
-İlk 6. sınıf eklemeleri `e152ac2` sürümü üzerine hazırlanmıştır. Şekilli Matematik Test 4, `fbeef87`; Test 5, `a3802ba`; Test 6, `b8fd56a` üzerine eklenmiştir. Test 1 yenilemesi `c6f87d1` üzerine hazırlanmıştır; `/6-sinif/matematik/test-1` adresi ve soru kimlikleri korunmuştur. Ana sayfa kartı korunmuştur; kayıtlı testlerden otomatik üretilen 25 adet 6. sınıf sitemap adresi vardır. Mevcut 5. sınıf dosyaları korunmuştur. Ekrandaki test/soru sayıları ve rota doğrulamasındaki toplamlar veri kayıtlarından hesaplanır.
+İlk 6. sınıf eklemeleri `e152ac2` sürümü üzerine hazırlanmıştır. Şekilli Matematik Test 4, `fbeef87`; Test 5, `a3802ba`; Test 6, `b8fd56a` üzerine eklenmiştir. Test 1 yenilemesi `c6f87d1` üzerine hazırlanmıştır; `/6-sinif/matematik/test-1` adresi ve soru kimlikleri korunmuştur. Ana sayfa kartı korunmuştur; kayıtlı testlerden otomatik üretilen 26 adet 6. sınıf sitemap adresi vardır. Mevcut 5. sınıf dosyaları korunmuştur. Ekrandaki test/soru sayıları ve rota doğrulamasındaki toplamlar veri kayıtlarından hesaplanır.
 
 ## Yenilenen Şekilli Matematik Test 1 (24 Ekim 2026)
 
@@ -141,3 +141,11 @@ Production kaynağında `package.json` içinde zaten tanımlı olan `jspdf`, loc
 - Kapsam FB.6.3.1–FB.6.3.4: https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/411. İnsan üreme organları ve denetleyici sistemler bu teste dahil değildir. Oksijen etkisi yalnız kavramsal sorulur; oksijensiz deney veya hayvanlara zarar veren etkinlik önerilmez. Işığın çimlenme için gerekliliği bütün türlere genellenmez.
 - 360 birim genişlikte yedi statik SVG ve en az 26 birim etiket. 238, 320 ve 360 pikselde raster QA. Önceki 190 soru ve 89 görsel korunur. Toplam 20 test / 200 soru / 96 görsel / 25 altıncı sınıf rotası.
 - Cevaplar bağımsız bilimsel incelemeyle kontrol edilmiştir. TypeScript, üretim derlemesi, veri/rota doğrulaması ve önceki dosyaların korunması kontrol edilir. Tarayıcı etkileşimleri test edilmemiştir.
+
+## Fen Test 5: Denetleyici ve Düzenleyici Sistemler (24 Ekim 2026)
+
+- `/6-sinif/fen/test-5`: 7 şekilli + 3 şekilsiz orta–zor soru. Merkezî/çevresel sinir sistemi, refleks yolu, beyin bölümlerinin görevleri, kanla hormon taşınması, insülin/glukagon, tiroit/böbrek üstü bezleri ve ergenlikte bireysel farklılıklar. FB.6.3.6–FB.6.3.8’den seçmeler; tam ünite veya yıl kapsamı iddiası yoktur.
+- Anahtar: B, C, D, A, B, C, D, B, C, A. Şemalar 360 birim genişliğinde, yazılar en az 26 birim; 238px çıktılar görsel olarak kontrol edilir. Anatomik çizimler sadeleştirilmiş modellerdir; kişisel sağlık tanısı veya uygulama önerisi içermez.
+- Yedi yeni SVG `public/grade6/fen/test-5/` altındadır. Önceki 200 soru ve 96 SVG korunmuştur. Yeni toplam: 21 test, 210 soru, 103 görsel, 26 altıncı sınıf rotası. Ortak arayüz, bağımlılıklar ve eski sınıf içerikleri değiştirilmemiştir.
+- Denetim: bağımsız bilimsel cevap incelemesi; veri ve rota doğrulaması, TypeScript, üretim derlemesi ve önceki dosyalarla koruma karşılaştırması. Tarayıcı etkileşim denemesi yapılmamıştır.
+- Kaynaklar: MEB https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/411 ; NIMH https://www.nimh.nih.gov/news/media/2023/get-to-know-your-brain ; NIDDK https://www.niddk.nih.gov/health-information/diabetes/overview/managing-diabetes/artificial-pancreas ; NINDS https://www.ninds.nih.gov/health-information/public-education/brain-basics .

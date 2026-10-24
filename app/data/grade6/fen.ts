@@ -1,7 +1,7 @@
 import { SubjectData } from "./types";
 
-// 6. sınıf başlangıç paketi: İlk iki ünite ve bitki/hayvanlarda üreme, büyüme, gelişme.
-// FB.6.1.1–FB.6.1.4, FB.6.2.1–FB.6.2.3, FB.6.3.1–FB.6.3.4; tüm yılı kapsamaz.
+// 6. sınıf başlangıç paketi: İlk iki ünite; üreme, büyüme, gelişme ve denetleyici sistemlerden seçmeler.
+// FB.6.1.1–FB.6.1.4, FB.6.2.1–FB.6.2.3, FB.6.3.1–FB.6.3.4 ve FB.6.3.6–FB.6.3.8; tüm yılı kapsamaz.
 // Kaynaklar: https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/409
 // https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/410
 // https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/411
@@ -687,6 +687,177 @@ export const fenData: SubjectData = {
             ],
             "correct": 0,
             "explanation": "İlk deneyde hem sıcaklık hem su durumu değişmiştir; farkın hangi etkenden kaynaklandığı ayırt edilemez. Sıcaklığın etkisini incelemek için diğer koşullar eşit tutulmalıdır. Aynı türden canlı tohumlar ve eşit sayıda tekrar kullanılması karşılaştırmayı güçlendirir."
+      }
+],
+
+    test5: [
+      {
+            "id": "f6-1-t5-01",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Sinir sistemi modelinde K, kafatasındaki yapıları; L, omuriliği; M ise kol ve bacaklara uzanan sinirleri gösteriyor.\n\nBu model için hangi sınıflandırma ve görev açıklaması doğrudur?",
+            "options": [
+                  "K ve M merkezîdir; L, vücut ile merkez arasında iletim yapar.",
+                  "K ve L merkezîdir; M, merkez ile vücut arasında bilgi iletimine katılır.",
+                  "Yalnız K merkezîdir; L ile M yalnız çevresel sistemdedir.",
+                  "K, L ve M merkezîdir; çevresel sistem bu modelde gösterilmemiştir."
+            ],
+            "correct": 1,
+            "explanation": "Beyin ve omurilik merkezî sinir sistemindedir. Kol ve bacaklara uzanan sinirler çevresel sinir sistemine aittir; merkez ile organlar arasındaki iletişime katılır. Hormonların kanla taşınması farklı bir iletişim yoludur.",
+            "imageWidth": 360,
+            "imageHeight": 400,
+            "imageUrl": "/grade6/fen/test-5/soru-01.svg",
+            "imageAlt": "İnsan siluetinde K kafatasındaki sinir sistemi yapıları, L omurilik, M kol ve bacaklara dallanan sinirler. Model sadeleştirilmiştir."
+      },
+      {
+            "id": "f6-1-t5-02",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Görselde bir elin sıcak bir yüzeyden hızla çekilmesini sağlayan omurilik refleksi basitleştirilmiştir. Oklar bilgi akışını gösteriyor.\n\nP ve R yollarının görevleri hangi seçenekte doğru verilmiştir?",
+            "options": [
+                  "P kasa cevap götürür; R deriden bilgi getirir.",
+                  "P ve R yalnız hormon taşır.",
+                  "P deriden omuriliğe bilgi taşır; R omurilikten kasa cevap taşır.",
+                  "P doğrudan kası çalıştırır; omuriliğe bilgi ulaşmaz."
+            ],
+            "correct": 2,
+            "explanation": "Refleks yolunda uyarı bilgisi deriden omuriliğe, hareket cevabı omurilikten ilgili kasa iletilir. Bu basitleştirilmiş şema beynin olaydan hiç haberdar olmadığını göstermez; bilgi beyne de ulaşabilir.",
+            "imageWidth": 360,
+            "imageHeight": 350,
+            "imageUrl": "/grade6/fen/test-5/soru-02.svg",
+            "imageAlt": "Deri solda, omurilik ortada, kas sağda. P oku deriden omuriliğe, R oku omurilikten kasa. Ayrıntısız refleks modeli."
+      },
+      {
+            "id": "f6-1-t5-03",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Beynin bazı bölümleri yandan görünüş modelinde K, L ve M ile gösterilmiştir. Bir öğrenci K’yi öğrenme ve düşünmeyle, L’yi denge ve hareketlerin uyumuyla eşleştiriyor.\n\nBu iki eşleştirme doğruysa M için hangi görev en uygundur?",
+            "options": [
+                  "Denge ve hareketlerin uyumuna katkı sağlamak.",
+                  "Öğrenme ve bilinçli düşünmeyi gerçekleştirmek.",
+                  "Kol ve bacaktaki uyarıları merkeze taşıyan çevresel sinirleri oluşturmak.",
+                  "Solunum gibi yaşamsal olayların düzenlenmesine katılmak."
+            ],
+            "correct": 3,
+            "explanation": "K büyük beyin bölgesini, L beyinciği, M omurilik soğanını gösterir. Omurilik soğanı solunum ve kalp atışı gibi yaşamsal olayların düzenlenmesinde görev alır. Bölümler birlikte çalışır; model tüm ayrıntıları göstermez.",
+            "imageWidth": 360,
+            "imageHeight": 400,
+            "imageUrl": "/grade6/fen/test-5/soru-03.svg",
+            "imageAlt": "Yandan şematik beyin: K üstte büyük bölüm, L arka altta beyincik, M omuriliğe bağlanan alt beyin sapı bölümü. Ön solda, arka sağda."
+      },
+      {
+            "id": "f6-1-t5-04",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Bir iç salgı bezinden çıkan hormonun hedef organa ulaşması modelde gösteriliyor. X, aradaki taşıma yoludur.\n\nModelin doğru olması için X neyi temsil etmeli ve hangi yorum yapılmalıdır?",
+            "options": [
+                  "Kan dolaşımını; bez ile hedef organın yan yana olması gerekmez.",
+                  "Kan dolaşımını; hormon yalnız bezin hemen yanındaki organa ulaşabilir.",
+                  "Sinirleri; bezden çıkan hormon yalnız bu yolla uzaktaki organa taşınır.",
+                  "Sinirleri; hormon taşıyan sinirler ancak yan yana organları bağlayabilir."
+            ],
+            "correct": 0,
+            "explanation": "İç salgı bezlerinin hormonları kana verilir ve kanla taşınır. Bu nedenle bir hormonun etki edeceği organ bezden uzakta olabilir. Sinirsel iletim ile hormonların taşınma yolu aynı değildir.",
+            "imageWidth": 360,
+            "imageHeight": 350,
+            "imageUrl": "/grade6/fen/test-5/soru-04.svg",
+            "imageAlt": "Solda iç salgı bezi, ortada X yazılı damar benzeri taşıma yolu, sağda hedef organ. Hormon noktaları ok yönünde ilerliyor."
+      },
+      {
+            "id": "f6-1-t5-05",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Pankreasın kan şekerinin düzenlenmesine katkısı iki kolda modellenmiştir. K kolu kan şekerini düşürmeye, L kolu yükseltmeye yardımcı olan hormonu gösteriyor.\n\nK ve L’nin doğru adları ve birlikte çalışmalarının sonucu hangisidir?",
+            "options": [
+                  "K glukagon, L insülin; ikisi de kan şekerini düşürür.",
+                  "K insülin, L glukagon; zıt etkileri düzenlemeye katkı sağlar.",
+                  "K adrenalin, L tiroksin; yalnız sinirsel iletim yaparlar.",
+                  "K insülin, L glukagon; aynı anda her durumda aynı etkiyi yaparlar."
+            ],
+            "correct": 1,
+            "explanation": "Pankreasın insülin hormonu kan şekerini düşürmeye, glukagon hormonu yükseltmeye yardımcı olur. Zıt etkiler, değişen koşullarda kan şekerinin düzenlenmesine katkı sağlar. Şema kişisel ölçüm veya tanı modeli değildir.",
+            "imageWidth": 360,
+            "imageHeight": 430,
+            "imageUrl": "/grade6/fen/test-5/soru-05.svg",
+            "imageAlt": "Pankreastan iki kol: K kan şekerini azaltma yönünde, L artırma yönünde; ortada düzenlenen kan şekeri. Şematik işlev modeli."
+      },
+      {
+            "id": "f6-1-t5-06",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Vücut modelinde K boyundaki tiroit bezini, L böbreklerin üzerindeki böbrek üstü bezlerini gösteriyor. Bir öğrenci “K adrenalin, L tiroksin salgılar.” diyor.\n\nÖğrencinin hatası nasıl düzeltilmelidir?",
+            "options": [
+                  "Bezlerin yerleri değiştirilmelidir; hormon adları doğru kalır.",
+                  "İkisi de yalnız büyüme hormonu salgılar şeklinde düzeltilmelidir.",
+                  "Hormonlar yer değiştirmelidir: K için tiroksin, L için adrenalin yazılmalıdır.",
+                  "K ve L sinir olduğundan hiçbir hormonla ilişkilendirilemez."
+            ],
+            "correct": 2,
+            "explanation": "Boyundaki tiroit bezi tiroksin; böbrek üstü bezleri ise adrenalin salgılar. Yerleri doğru verilmiş, hormon eşleştirmeleri ters yapılmıştır. Modelde böbrekler, üstlerindeki bezlerin konumunu belirtmek için gösterilmiştir.",
+            "imageWidth": 360,
+            "imageHeight": 430,
+            "imageUrl": "/grade6/fen/test-5/soru-06.svg",
+            "imageAlt": "Önden sade insan gövdesi: boyunda kelebek biçimli tiroit K; karın arka bölgesini temsil eden iki böbreğin üstünde böbrek üstü bezleri L. İç yapılar şematik."
+      },
+      {
+            "id": "f6-1-t5-07",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Bir öğrencinin topu görüp tutması görseldeki işlev zinciriyle modellenmiştir. Model yalnız bilgi ve cevap sırasını gösterir.\n\nZincirde P ve R yerine hangi açıklamalar gelmelidir?",
+            "options": [
+                  "P: merkezden göze cevap; R: kastan merkeze bilgi iletilmesi.",
+                  "P: gözden merkeze bilgi; R: kastan merkeze bilgi iletilmesi.",
+                  "P: merkezden göze cevap; R: merkezden kasa hareket cevabı iletilmesi.",
+                  "P: sinirlerle merkeze bilgi iletilmesi; R: merkezden kaslara hareket cevabı iletilmesi."
+            ],
+            "correct": 3,
+            "explanation": "Gözden alınan bilgi sinirlerle merkezî sinir sistemine ulaşır. Değerlendirmeden sonra kaslara hareketi sağlayan cevap iletilir. Bu istemli davranışta duyu, merkez ve kaslar birlikte çalışır; model ayrıntılı sinir yollarını göstermez.",
+            "imageWidth": 360,
+            "imageHeight": 430,
+            "imageUrl": "/grade6/fen/test-5/soru-07.svg",
+            "imageAlt": "Top ışığı göze ulaşıyor. Gözden P yolu ile beyne, beyinden R yolu ile kol kasına oklar. Kol topu yakalıyor; işlev zinciri şematik."
+      },
+      {
+            "id": "f6-1-t5-08",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Bir öğrenci “Elimi istemeden sıcak yüzeyden çekmem de bir sorunun cevabını düşünüp yazmam da aynı tür tepkidir; ikisinde de önce bilinçli karar veririm.” diyor.\n\nBu yorum nasıl değerlendirilmelidir?",
+            "options": [
+                  "İki olayda da hiçbir sinir sistemi yapısı çalışmaz.",
+                  "Yorum yanlıştır; ilk olay koruyucu bir refleks, ikincisi bilinçli düşünme ve istemli hareket içerir.",
+                  "Yorum doğrudur; bütün refleksler düşünerek başlatılır.",
+                  "Yorum yanlıştır; düşünerek yazmak yalnız hormonlarla gerçekleşir."
+            ],
+            "correct": 1,
+            "explanation": "Elin hızla çekilmesi otomatik koruyucu bir refleks örneğidir. Cevabı düşünüp yazmak ise bilinçli değerlendirme ve istemli hareket gerektirir. Her iki olayda sinir sistemi görev alsa da tepkilerin başlatılma biçimi aynı değildir."
+      },
+      {
+            "id": "f6-1-t5-09",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Bir afişte “Beyincik hareketlerin uyumuna yardım eder; büyüme hormonu büyümenin düzenlenmesine katkı sağlar.” yazıyor. Bir öğrenci bunların tek bir organın aynı yoldan verdiği iki cevap olduğunu söylüyor.\n\nHangi açıklama öğrencinin yanılgısını düzeltir?",
+            "options": [
+                  "İki örnek de sinirsel iletimdir; büyüme hormonu sinirler boyunca taşınır.",
+                  "İki örnek de iç salgı sistemidir; beyincik yalnız hormonla dengeyi sağlar.",
+                  "İlk örnek sinir sistemiyle, ikincisi iç salgı sistemiyle ilgilidir; sistemler birlikte çalışsa da iletişim yolları aynı değildir.",
+                  "Sistemleri farklıdır; bu nedenle hiçbir olayda birbirleriyle uyumlu çalışamazlar."
+            ],
+            "correct": 2,
+            "explanation": "Beyincik sinir sisteminin bir bölümüdür. Hipofizden salgılanan büyüme hormonu ise iç salgı sisteminin bir örneğidir ve kanla taşınır. Sistemlerin uyumlu çalışması, bütün görevleri tek bir organın yaptığı anlamına gelmez."
+      },
+      {
+            "id": "f6-1-t5-10",
+            "subject": "fen",
+            "term": 1,
+            "prompt": "Aynı yaştaki iki arkadaşın ergenliğe ilişkin kayıtlarında boy uzaması, duyguların daha hızlı değişebilmesi ve bazı bedensel değişimlerin farklı zamanlarda başlaması yer alıyor.\n\nBu üç gözlem sırasıyla nasıl değerlendirilmelidir?",
+            "options": [
+                  "Bedensel değişim; ruhsal değişim; zamanlamada bireysel farklılık.",
+                  "Ruhsal değişim; bedensel değişim; zamanlamada bireysel farklılık.",
+                  "Bedensel değişim; ruhsal değişim; yalnız bu farkla kesin hastalık tanısı.",
+                  "Bedensel değişim; bedensel değişim; herkesin aynı gün değişmesi gereği."
+            ],
+            "correct": 0,
+            "explanation": "Boy uzaması bedensel; duyguların değişmesi ruhsal değişimlerle ilişkilidir. Ergenlikte değişimlerin başlama zamanı kişiden kişiye farklılık gösterebilir. Tek başına arkadaşlar arasındaki zaman farkı hastalık tanısı koydurmaz; bireysel farklılıklara saygı gösterilmelidir."
       }
 ],
 
