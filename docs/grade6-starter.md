@@ -257,3 +257,11 @@ Toplam: 23 test, 230 soru, 117 SVG, 28 rota. Önceki 220 soru ve 110 SVG korunur
 - 7 görselli + 3 metin sorusu: haftalık bitki bakımı, sipariş düzeltme, between ile konum, iki şehrin hava raporu, eş zamanlı eylemler, saat ifadeleri, görsele uymayan cümle, Simple Present, duruma göre değişen duygular ve teklif kabulü. İngilizce soru/seçenekler, Türkçe açıklamalar. Anahtar: **B, D, A, C, A, D, B, C, A, D**.
 - Yedi pasif SVG, 360 birim genişlik ve en az 26 birim yazı; 238 piksel çıktıları okunabilirlik ve kırpılma açısından denetlenir. Önceki 310 soru ve 194 SVG korunur. Yeni toplam: 32 test / 320 soru / 201 SVG / 37 rota.
 - Veri/rota doğrulayıcıları, TypeScript ve üretim derlemesi çalıştırılır. Etkileşimli tarayıcı testi yapılmamıştır; kullanıcı isteği uyarınca production’a terfi edilmez.
+
+
+## İngilizce Test 10 — Günlük Durumlar ve Anlam Çıkarma (24 Ekim 2026)
+
+- Kullanıcının ilk beş konu başlığına göre karma tekrar; güncel resmî tema sırası veya tam yıllık kapsam iddiası değildir.
+- 7 görselli + 3 metin sorusu: sabah eylem sırası, görselden yanıtlanamayan bilgi, günlük işler için kamu binaları, havaya uygun hazırlık, görsele uygun davet, şimdiki zaman sorusuna yanıt, öğle aralı mağaza saatleri, kişisel görüşü ayırt etme, soru sözcükleri ve mesajdan çıkarım. Anahtar: **C, A, D, B, C, A, D, B, C, D**.
+- Yedi pasif SVG, 360 birim genişlik ve en az 26 birim yazı; 238 piksel çıktıları denetlenir. Önceki 320 soru ve 201 SVG korunur. Yeni toplam: 33 test / 330 soru / 208 SVG / 38 rota.
+- Bağımsız içerik ve görsel denetimi, veri/rota doğrulaması, TypeScript ve üretim derlemesi uygulanır. Etkileşimli tarayıcı testi yapılmaz; production’a otomatik aktarım yapılmaz.

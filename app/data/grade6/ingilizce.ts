@@ -1535,6 +1535,176 @@ export const ingilizceData: SubjectData = {
             "correct": 3,
             "explanation": "Lily Yes, please diyerek portakal suyunu kabul eder; no sugar diyerek içine şeker eklenmesini istemez. İçeceğin doğal şeker içeriği hakkında bir iddiada bulunmaz."
       }
+],
+    "test10": [
+      {
+            "id": "e6-1-t10-01",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Which sentence correctly describes the order of Ella’s morning activities?",
+            "options": [
+                  "She leaves home before she packs her bag.",
+                  "She feeds the cat before she packs her bag.",
+                  "She feeds the cat after she packs her bag but before she leaves home.",
+                  "She packs her bag after she leaves home."
+            ],
+            "correct": 2,
+            "explanation": "Çantayı hazırlama 07.10, kediyi besleme 07.30, evden çıkma 07.50’dedir. Kedi besleme, çantayı hazırlamadan sonra ve evden çıkmadan öncedir.",
+            "imageWidth": 360,
+            "imageHeight": 603,
+            "imageUrl": "/grade6/ingilizce/test-10/soru-01.svg",
+            "imageAlt": "Ella’nın sabah planı: çanta hazırlama 07.10, kediyi besleme 07.30, evden çıkma 07.50; her eylemin simgesi vardır."
+      },
+      {
+            "id": "e6-1-t10-02",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "The picture shows Maya’s breakfast today. Which question CANNOT be answered from the picture?",
+            "options": [
+                  "How often does Maya have olives for breakfast?",
+                  "What is Maya drinking with her breakfast?",
+                  "Is there toast on the table?",
+                  "Is Maya having breakfast at home today?"
+            ],
+            "correct": 0,
+            "explanation": "Görsel yalnızca bugünkü kahvaltıyı gösterir; zeytini ne sıklıkla yediği bilinmez. Süt, tost ekmeği ve bugün evde olduğu görselde belirtilir.",
+            "imageWidth": 360,
+            "imageHeight": 514,
+            "imageUrl": "/grade6/ingilizce/test-10/soru-02.svg",
+            "imageAlt": "Maya’nın bugünkü ev kahvaltısı: tost ekmeği, zeytinler ve süt; alt yazıda bugün evde ifadesi vardır."
+      },
+      {
+            "id": "e6-1-t10-03",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Sam wants to complete the tasks in the picture. Where should he go for Task 1 and Task 2, in that order?",
+            "options": [
+                  "To the bank, then the cinema.",
+                  "To the post office, then the library.",
+                  "To the bakery, then the hospital.",
+                  "To the library, then the post office."
+            ],
+            "correct": 3,
+            "explanation": "Öykü kitabı ödünç almak için kütüphaneye, mektup göndermek için postaneye gidilir. Soruda görevlerin sırası korunmalıdır.",
+            "imageWidth": 360,
+            "imageHeight": 523,
+            "imageUrl": "/grade6/ingilizce/test-10/soru-03.svg",
+            "imageAlt": "Birinci görev açık kitap simgesiyle öykü kitabı ödünç almak, ikinci görev zarf simgesiyle mektup göndermek olarak gösterilir."
+      },
+      {
+            "id": "e6-1-t10-04",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Nora and Jack are packing for the weather in the picture. Which advice is suitable for BOTH of them?",
+            "options": [
+                  "Nora needs a warm coat, and Jack needs shorts.",
+                  "Nora can take a sun hat, and Jack needs a warm coat.",
+                  "Both of them need shorts for hot weather.",
+                  "Both of them need warm coats for snow."
+            ],
+            "correct": 1,
+            "explanation": "Nora sıcak ve güneşli 32 °C hava için güneş şapkası alabilir. Jack soğuk ve karlı −4 °C hava için sıcak tutan mont almalıdır.",
+            "imageWidth": 360,
+            "imageHeight": 536,
+            "imageUrl": "/grade6/ingilizce/test-10/soru-04.svg",
+            "imageAlt": "Nora için güneş simgesi ve sıcak güneşli 32 °C; Jack için kar taneleri ve soğuk karlı −4 °C hava gösterilir."
+      },
+      {
+            "id": "e6-1-t10-05",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Which invitation matches the ride in the picture?",
+            "options": [
+                  "Shall we ride the horses on the carousel?",
+                  "Shall we go into the ghost train?",
+                  "Shall we drive the bumper cars together?",
+                  "Shall we go up on the Ferris wheel?"
+            ],
+            "correct": 2,
+            "explanation": "Görselde koruyucu tamponları ve direksiyonları olan çarpışan arabalar vardır. Uygun davet bumper cars sürmeyi öneren C seçeneğidir.",
+            "imageWidth": 360,
+            "imageHeight": 480,
+            "imageUrl": "/grade6/ingilizce/test-10/soru-05.svg",
+            "imageAlt": "Lunapark pistinde direksiyonlu ve kalın tamponlu iki çarpışan araba; her arabada bir sürücü vardır."
+      },
+      {
+            "id": "e6-1-t10-06",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "A teacher asks, “Is Zoe reading a book now?” Which reply matches the picture?",
+            "options": [
+                  "No, she isn’t. She is painting.",
+                  "Yes, she is. Liam is painting, too.",
+                  "No, she doesn’t. She reads every day.",
+                  "Yes, she does. She likes books."
+            ],
+            "correct": 0,
+            "explanation": "Zoe elindeki fırçayla resim yaparken Liam kitap okumaktadır. Is Zoe reading sorusuna No, she isn’t kısa yanıtı verilip mevcut eylemi She is painting ile açıklanır.",
+            "imageWidth": 360,
+            "imageHeight": 578,
+            "imageUrl": "/grade6/ingilizce/test-10/soru-06.svg",
+            "imageAlt": "Üstte Liam açık kitap okuyor; altta Zoe elindeki fırçayla bir tabloya resim yapıyor."
+      },
+      {
+            "id": "e6-1-t10-07",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "You want to visit the toy shop while it is open today. Which time is suitable?",
+            "options": [
+                  "Half past twelve.",
+                  "Quarter to one.",
+                  "Quarter past six in the evening.",
+                  "Quarter past one in the afternoon."
+            ],
+            "correct": 3,
+            "explanation": "Mağaza 12.00–13.00 arasında öğle molası nedeniyle kapalıdır; 18.00’de kapanır. 13.15, öğleden sonraki 13.00–18.00 açık aralığındadır.",
+            "imageWidth": 360,
+            "imageHeight": 580,
+            "imageUrl": "/grade6/ingilizce/test-10/soru-07.svg",
+            "imageAlt": "Oyuncakçı saatleri: 09.00–12.00 açık, 12.00–13.00 öğle molası, 13.00–18.00 açık."
+      },
+      {
+            "id": "e6-1-t10-08",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Which sentence gives a personal opinion about a funfair ride?",
+            "options": [
+                  "The carousel opens at ten o’clock.",
+                  "I think the ghost train is exciting.",
+                  "A ticket for the Ferris wheel is three pounds.",
+                  "The bumper cars close at six o’clock."
+            ],
+            "correct": 1,
+            "explanation": "I think ifadesiyle başlayan cümle, kişinin korku treni hakkındaki öznel değerlendirmesidir. Diğer cümleler açılış/kapanış saati veya fiyat bilgisi verir."
+      },
+      {
+            "id": "e6-1-t10-09",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Complete the conversation.\nEce: _____ do you have breakfast on school days?\nPaul: At seven o’clock.\nEce: And _____ do you have?\nPaul: Bread, cheese and tea.",
+            "options": [
+                  "Where / when",
+                  "What / where",
+                  "What time / what",
+                  "How often / who"
+            ],
+            "correct": 2,
+            "explanation": "At seven o’clock saat bildirdiğinden ilk soru What time ile sorulur. Bread, cheese and tea yiyecek/içecek yanıtı olduğundan ikinci soru What ile sorulur."
+      },
+      {
+            "id": "e6-1-t10-10",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Read the message.\n“Hi, Amy! I am at the fair with my sister. She loves the big rides, but I don’t. I am waiting near the ticket office while she is on the roller coaster.”\n\nWhich statement is correct?",
+            "options": [
+                  "The writer and the writer’s sister are both on the roller coaster now.",
+                  "Amy is waiting near the ticket office.",
+                  "The writer’s sister dislikes big rides.",
+                  "The writer and the writer’s sister have different preferences."
+            ],
+            "correct": 3,
+            "explanation": "Mesajı yazan kişi büyük oyuncakları sevmezken kız kardeşi sever. Şu anda yazar bilet gişesi yakınında bekler, kardeşi hız trenindedir. Amy mesajın alıcısıdır."
+      }
 ]
   },
   "term2": {}
