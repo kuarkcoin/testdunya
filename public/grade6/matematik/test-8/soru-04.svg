@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="280" viewBox="0 0 360 280" role="img">
+<title>Test 8 · Soru 4</title>
+<desc>A grubu: 2, 4, 4, 6, 9. B grubu: 3, 4, 5, 6, 7. Her grupta beş öğrenci bulunuyor.</desc>
+<rect width="360" height="280" fill="#FFFFFF"/>
+<rect x="12" y="12" width="336" height="118" rx="8" fill="#E9F4FA" stroke="#36586D" stroke-width="2"/>
+<text x="180" y="44" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">A grubu</text>
+<text x="180" y="95" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">2   4   4   6   9</text>
+<rect x="12" y="147" width="336" height="118" rx="8" fill="#FFF0CB" stroke="#36586D" stroke-width="2"/>
+<text x="180" y="179" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">B grubu</text>
+<text x="180" y="230" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">3   4   5   6   7</text>
+</svg>

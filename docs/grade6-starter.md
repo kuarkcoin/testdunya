@@ -1,10 +1,11 @@
 # 6. sınıf başlangıç paketi
 
-160 özgün soru: Matematikte 7 test, Türkçe, Fen Bilimleri ve İngilizcede üçer test; her test 10 soru. Matematik Test 1, Test 4, Test 5 ve Test 6, onar şekilli akıl yürütme sorusu içerir. Test 1, eski 10 soru yerine orta–zor düzeyde 10 şekilli soruyla yenilenmiştir; toplam test ve soru sayısı değişmemiştir. Test 7, 7 şekilli ve 3 şekilsiz orta–zor soru içerir. Yalnız birinci dönemin başlangıç konuları. Tüm yıl/müfredat kapsandığı veya MEB onayı bulunduğu iddia edilmez. İkinci dönem için soru eklenmedi.
+170 özgün soru: Matematikte 8 test, Türkçe, Fen Bilimleri ve İngilizcede üçer test; her test 10 soru. Matematik Test 1, Test 4, Test 5 ve Test 6, onar şekilli akıl yürütme sorusu içerir. Test 1, eski 10 soru yerine orta–zor düzeyde 10 şekilli soruyla yenilenmiştir; toplam test ve soru sayısı değişmemiştir. Test 7 ve Test 8, yedişer şekilli ve üçer şekilsiz orta–zor soru içerir. Yalnız birinci dönemin başlangıç konuları. Tüm yıl/müfredat kapsandığı veya MEB onayı bulunduğu iddia edilmez. İkinci dönem için soru eklenmedi.
 
 ## Kaynaklar (23–24 Ekim 2026)
 
 - MEB 2026–2027 taslak çerçeve planları: https://tymm.meb.gov.tr/taslak-cerceve-planlari/temel-egitim
+- Matematik İstatistiksel Araştırma (MAT.6.5.1–MAT.6.5.2): https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/461
 - Matematik ilk tema: https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/456
 - Matematik Ondalık Gösterimler ve Uzunluk Ölçme (MAT.6.1.5–MAT.6.1.8): https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/457
 - Matematik Deneysel Olasılık (Veriden Olasılığa, MAT.6.6.1): https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/462
@@ -16,7 +17,7 @@ Matematik sorularında EBOB/EKOK terimleri kullanılmaz. Fen soruları sürat i�
 
 ## Entegrasyon
 
-İlk 6. sınıf eklemeleri `e152ac2` sürümü üzerine hazırlanmıştır. Şekilli Matematik Test 4, `fbeef87`; Test 5, `a3802ba`; Test 6, `b8fd56a` üzerine eklenmiştir. Test 1 yenilemesi `c6f87d1` üzerine hazırlanmıştır; `/6-sinif/matematik/test-1` adresi ve soru kimlikleri korunmuştur. Ana sayfa kartı korunmuştur; kayıtlı testlerden otomatik üretilen 21 adet 6. sınıf sitemap adresi vardır. Mevcut 5. sınıf dosyaları korunmuştur. Ekrandaki test/soru sayıları ve rota doğrulamasındaki toplamlar veri kayıtlarından hesaplanır.
+İlk 6. sınıf eklemeleri `e152ac2` sürümü üzerine hazırlanmıştır. Şekilli Matematik Test 4, `fbeef87`; Test 5, `a3802ba`; Test 6, `b8fd56a` üzerine eklenmiştir. Test 1 yenilemesi `c6f87d1` üzerine hazırlanmıştır; `/6-sinif/matematik/test-1` adresi ve soru kimlikleri korunmuştur. Ana sayfa kartı korunmuştur; kayıtlı testlerden otomatik üretilen 22 adet 6. sınıf sitemap adresi vardır. Mevcut 5. sınıf dosyaları korunmuştur. Ekrandaki test/soru sayıları ve rota doğrulamasındaki toplamlar veri kayıtlarından hesaplanır.
 
 ## Yenilenen Şekilli Matematik Test 1 (24 Ekim 2026)
 
@@ -80,3 +81,11 @@ Production kaynağında `package.json` içinde zaten tanımlı olan `jspdf`, loc
 - Sayı doğrusu ve basamak tablosu okuma, kesir–ondalık dönüşümü, yuvarlama koşullarından rakam bulma, kesim kaybı, eşit paylaşma, uzunluk birimleri ve erken yuvarlamanın oluşturduğu fark ele alınır. Sorular MAT.6.1.5–MAT.6.1.8 kapsamındaki konularla ilişkilidir; bütün kazanımların tamamını ölçtüğü iddia edilmez.
 - Yedi pasif SVG `public/grade6/matematik/test-7/soru-01.svg`–`soru-07.svg` altındadır. 360 birim genişlik, en az 26 birim yazı, büyük etiketler ve Türkçe alternatif metinler kullanılır. 238 piksel genişlikte raster çıktıları görsel olarak incelenmiştir. Son üç sorunun hiçbir görsel alanı yoktur. Ortak arayüz değiştirilmemiştir.
 - On sorunun tek doğru cevabı bağımsız matematik denetiminden ve tam hassasiyetli hesap kontrollerinden geçmiştir. Önceki 150 soru ve 40 SVG korunmuştur. Toplamlar 16 test / 160 soru / 47 görsel / 21 adet 6. sınıf rotasıdır.
+
+
+## Matematik Test 8: İstatistiksel Araştırma (24 Ekim 2026)
+
+- Adres: `/6-sinif/matematik/test-8`; konu: **İstatistiksel Araştırma: Verileri Yorumlama**. `54eb325` sürümü üzerine eklenmiştir. İlk 7 soru şekilli, son 3 soru şekilsizdir. Cevap anahtarı: **B, C, D, A, B, C, D, B, C, A**.
+- Nokta grafiği, kök-yaprak gösterimi, eksik sıklık, ortalama–ortanca–tepe değer–açıklık karşılaştırmaları, kategori değişimi, kesilmiş grafik ekseni ve örneklem yanlılığı ele alınır. Şekilsiz sorular ortak zaman aralığıyla anket hazırlama, iki tepe değer ve hatalı kaydın etkisine odaklanır. MAT.6.5.1–MAT.6.5.2 kapsamında hazırlanmıştır; tüm kazanımları kapsadığı iddia edilmez.
+- Yedi pasif SVG `public/grade6/matematik/test-8/soru-01.svg`–`soru-07.svg` altındadır. 360 birim genişlik, en az 26 birim yazı ve Türkçe alternatif metinler kullanılır. 238, 320 ve 360 piksel raster çıktıları üretilmiş, 238 piksel çıktıları görsel olarak incelenmiştir. Son üç sorunun görsel alanı yoktur. Ortak arayüz ve bağımlılıklar değiştirilmemiştir.
+- Sorular bağımsız içerik/anahtar denetiminden ve kesin aritmetik kontrollerinden geçmiştir. Önceki 160 soru ve 47 SVG korunmuştur. Toplamlar 17 test / 170 soru / 54 görsel / 22 adet 6. sınıf rotasıdır. Tarayıcı etkileşim testi yapılmamıştır.

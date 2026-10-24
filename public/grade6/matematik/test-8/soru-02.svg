@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="290" viewBox="0 0 360 290" role="img">
+<title>Test 8 · Soru 2</title>
+<desc>Kök-yaprak gösterimi: kök 1, yapraklar 2 4 4 8; kök 2, yapraklar 0 2 4. Anahtar: 1 | 2, 12 bulmaca demektir.</desc>
+<rect width="360" height="290" fill="#FFFFFF"/>
+<text x="180" y="28" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Bulmaca sayıları</text>
+<text x="65" y="82" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Kök</text>
+<text x="238" y="82" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Yaprak</text>
+<line x1="115" y1="57" x2="115" y2="219" stroke="#36586D" stroke-width="3"/>
+<line x1="18" y1="110" x2="342" y2="110" stroke="#36586D" stroke-width="3"/>
+<text x="65" y="145" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="600" fill="#15354B">1</text>
+<text x="228" y="145" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="600" fill="#15354B">2  4  4  8</text>
+<text x="65" y="193" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="600" fill="#15354B">2</text>
+<text x="228" y="193" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="600" fill="#15354B">0  2  4</text>
+<text x="180" y="259" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">1 | 2 = 12 bulmaca</text>
+</svg>

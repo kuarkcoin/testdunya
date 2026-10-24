@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="300" viewBox="0 0 360 300" role="img">
+<title>Test 8 · Soru 1</title>
+<desc>Nokta grafiğinde kitap sayısı 0 için bir, 1 için iki, 2 için üç, 3 için iki, 4 için iki nokta var. Her nokta bir öğrencidir.</desc>
+<rect width="360" height="300" fill="#FFFFFF"/>
+<text x="180" y="28" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Okunan kitap sayısı</text>
+<line x1="35" y1="196" x2="325" y2="196" stroke="#36586D" stroke-width="3"/>
+<text x="44" y="229" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="600" fill="#15354B">0</text>
+<line x1="44" y1="190" x2="44" y2="202" stroke="#36586D" stroke-width="3"/>
+<circle cx="44" cy="169" r="11" fill="#15354B"/>
+<text x="112" y="229" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="600" fill="#15354B">1</text>
+<line x1="112" y1="190" x2="112" y2="202" stroke="#36586D" stroke-width="3"/>
+<circle cx="112" cy="169" r="11" fill="#15354B"/>
+<circle cx="112" cy="133" r="11" fill="#15354B"/>
+<text x="180" y="229" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="600" fill="#15354B">2</text>
+<line x1="180" y1="190" x2="180" y2="202" stroke="#36586D" stroke-width="3"/>
+<circle cx="180" cy="169" r="11" fill="#15354B"/>
+<circle cx="180" cy="133" r="11" fill="#15354B"/>
+<circle cx="180" cy="97" r="11" fill="#15354B"/>
+<text x="248" y="229" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="600" fill="#15354B">3</text>
+<line x1="248" y1="190" x2="248" y2="202" stroke="#36586D" stroke-width="3"/>
+<circle cx="248" cy="169" r="11" fill="#15354B"/>
+<circle cx="248" cy="133" r="11" fill="#15354B"/>
+<text x="316" y="229" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="600" fill="#15354B">4</text>
+<line x1="316" y1="190" x2="316" y2="202" stroke="#36586D" stroke-width="3"/>
+<circle cx="316" cy="169" r="11" fill="#15354B"/>
+<circle cx="316" cy="133" r="11" fill="#15354B"/>
+<text x="180" y="275" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Her nokta: 1 öğrenci</text>
+</svg>

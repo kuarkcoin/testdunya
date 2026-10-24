@@ -1087,6 +1087,176 @@ export const matematikData: SubjectData = {
         "explanation": "Bir parçanın gerçek uzunluğu 3 ÷ 8 = 0,375 m, yuvarlanmış uzunluğu 0,38 m’dir. Dört parça için hesaplanan toplam 4 × 0,38 = 1,52 m, gerçek toplam 4 × 0,375 = 1,50 m’dir. Fark 0,02 m = 2 cm’dir."
       }
     ],
+    test8: [
+      {
+        "id": "m6-1-t8-01",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Nokta grafiği, 10 öğrencinin geçen ay okuduğu kitap sayısını gösteriyor. Her nokta bir öğrenciyi temsil ediyor.\n\nBu veri grubunun aritmetik ortalaması, ortancasından ne kadar fazladır?",
+        "options": [
+          "0",
+          "0,2",
+          "1",
+          "2,2"
+        ],
+        "correct": 1,
+        "explanation": "Kitap sayıları 0, 1, 1, 2, 2, 2, 3, 3, 4, 4’tür. Toplam 22, ortalama 22 ÷ 10 = 2,2’dir. Ortadaki iki değer de 2 olduğundan ortanca 2’dir. Fark 0,2 olur.",
+        "imageWidth": 360,
+        "imageHeight": 300,
+        "imageUrl": "/grade6/matematik/test-8/soru-01.svg",
+        "imageAlt": "Nokta grafiğinde kitap sayısı 0 için bir, 1 için iki, 2 için üç, 3 için iki, 4 için iki nokta var. Her nokta bir öğrencidir."
+      },
+      {
+        "id": "m6-1-t8-02",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Yedi öğrencinin bir haftada çözdüğü bulmaca sayıları kök-yaprak gösteriminde verilmiştir.\n\nVeri grubunun ortancası ile açıklığı arasındaki fark kaçtır?",
+        "options": [
+          "4",
+          "5",
+          "6",
+          "12"
+        ],
+        "correct": 2,
+        "explanation": "Gösterimdeki sayılar 12, 14, 14, 18, 20, 22 ve 24’tür. Ortanca dördüncü değer olan 18, açıklık 24 − 12 = 12’dir. İstenen fark 18 − 12 = 6’dır.",
+        "imageWidth": 360,
+        "imageHeight": 290,
+        "imageUrl": "/grade6/matematik/test-8/soru-02.svg",
+        "imageAlt": "Kök-yaprak gösterimi: kök 1, yapraklar 2 4 4 8; kök 2, yapraklar 0 2 4. Anahtar: 1 | 2, 12 bulmaca demektir."
+      },
+      {
+        "id": "m6-1-t8-03",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Tabloda 10 öğrencinin bir ayda kütüphaneden aldığı kitap sayıları verilmiştir. Bir sıklık değeri silinmiştir.\n\nBu veri grubunun ortancası ile tepe değerinin toplamı kaçtır?",
+        "options": [
+          "2,5",
+          "3",
+          "4",
+          "3,5"
+        ],
+        "correct": 3,
+        "explanation": "Eksik sıklık 10 − (2 + 3 + 1) = 4’tür. Sıralı veriler 0, 0, 1, 1, 1, 2, 2, 2, 2, 3 olur. Ortanca (1 + 2) ÷ 2 = 1,5; en sık görülen değer 2’dir. Toplam 3,5’tir.",
+        "imageWidth": 360,
+        "imageHeight": 365,
+        "imageUrl": "/grade6/matematik/test-8/soru-03.svg",
+        "imageAlt": "Sıklık tablosunda kitap sayısı 0, 1, 2, 3; öğrenci sayısı sırasıyla 2, 3, soru işareti, 1. Toplam 10 öğrenci."
+      },
+      {
+        "id": "m6-1-t8-04",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "İki gruptaki öğrencilerin aynı gün çözdüğü bulmaca sayıları kartlarda verilmiştir.\n\nBu iki veri grubu için aşağıdaki yorumlardan hangisi doğrudur?",
+        "options": [
+          "Ortalamaları eşittir; B’nin ortancası daha büyük, açıklığı daha küçüktür.",
+          "B’nin ortalaması daha büyüktür; açıklıkları eşittir.",
+          "Ortancaları eşittir; A’nın açıklığı daha küçüktür.",
+          "A’nın ortalaması ve ortancası B’ninkinden büyüktür."
+        ],
+        "correct": 0,
+        "explanation": "A’nın toplamı da B’nin toplamı da 25 olduğundan ortalamaları 5’tir. A’nın ortancası 4, açıklığı 9 − 2 = 7; B’nin ortancası 5, açıklığı 7 − 3 = 4’tür. Bu yüzden yalnız ilk yorum doğrudur.",
+        "imageWidth": 360,
+        "imageHeight": 280,
+        "imageUrl": "/grade6/matematik/test-8/soru-04.svg",
+        "imageAlt": "A grubu: 2, 4, 4, 6, 9. B grubu: 3, 4, 5, 6, 7. Her grupta beş öğrenci bulunuyor."
+      },
+      {
+        "id": "m6-1-t8-05",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "30 öğrencinin seçtiği etkinlikler grafikte verilmiştir. Her öğrenci yalnız bir etkinlik seçmiştir. Yalnız satrancı seçen bazı öğrenciler tercihlerini resim olarak değiştiriyor.\n\nResmin, tek başına en çok seçilen etkinlik olması için en az kaç öğrenci tercih değiştirmelidir?",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "correct": 1,
+        "explanation": "Başlangıçta satranç 12, resim 8, spor 10 kişidir. İki kişi değiştirirse üç etkinlik de 10 olur; resim tek başına öne geçmez. Üç kişi değiştirirse sayılar 9, 11, 10 olur. En az 3 kişi gereklidir.",
+        "imageWidth": 360,
+        "imageHeight": 345,
+        "imageUrl": "/grade6/matematik/test-8/soru-05.svg",
+        "imageAlt": "Yatay sütun grafiğinde satranç 12, resim 8, spor 10 öğrenci. Sütunlar sıfırdan başlıyor ve ortak ölçek kullanıyor."
+      },
+      {
+        "id": "m6-1-t8-06",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Grafikte iki sınıfın topladığı atık pil sayısı gösteriliyor. Düşey eksen 0 yerine 18’den başlatılmıştır. Bir öğrenci, görünen B sütunu A’nın üç katı yükseklikte olduğu için “B sınıfı, A sınıfının topladığı pil sayısının üç katı kadar pil toplamıştır.” diyor.\n\nHangi değerlendirme doğrudur?",
+        "options": [
+          "Yorum doğrudur; sütunların görünen boyları yeterlidir.",
+          "A sınıfı B’den 4 pil fazla toplamıştır.",
+          "B sınıfı 4 pil fazla toplamıştır; kesilmiş eksen farkı abartır.",
+          "B sınıfı 60 pil toplamıştır; grafikte sayı yanlış yazılmıştır."
+        ],
+        "correct": 2,
+        "explanation": "Gerçek değerler A için 20, B için 24’tür. Fark 4’tür ve 24, 20’nin üç katı değildir. Görünen sütun boyları 18’den başladığı için 2 ile 6 olarak karşılaştırılmıştır. Sıfırdan başlamayan eksen, farkın olduğundan büyük algılanmasına yol açabilir.",
+        "imageWidth": 360,
+        "imageHeight": 350,
+        "imageUrl": "/grade6/matematik/test-8/soru-06.svg",
+        "imageAlt": "Pil sayısı ekseni 18, 20, 22, 24 olarak işaretli. A sütunu 20’ye, B sütunu 24’e ulaşıyor. Eksenin 18’den başladığı açıkça belirtiliyor."
+      },
+      {
+        "id": "m6-1-t8-07",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Okuldaki 80 altıncı sınıf öğrencisinin geçen ay okuduğu kitap sayısı araştırılıyor. Ancak yalnız kitap kulübündeki 12 öğrenciye soru soruluyor. Kayıtlar görseldeki gibidir.\n\nBu araştırmayla ilgili hangi sonuç savunulabilir?",
+        "options": [
+          "Okuldaki 80 öğrencinin 10’u dışında hiçbiri üç kitap okumamıştır.",
+          "Kitap kulübü öğrencileri kesinlikle diğerlerinden daha çok okumuştur.",
+          "12 kişilik grubun sonucu, diğer 68 öğrenciye sormadan aynen genellenebilir.",
+          "Ankete katılan 12 öğrencinin 10’u en az üç kitap okumuştur; yalnız kitap kulübünden seçilen bu grup, 80 öğrencinin tümünü temsil etmeyebilir."
+        ],
+        "correct": 3,
+        "explanation": "Doğrudan bilinen sonuç, ankete katılan 12 kişinin 10’unun en az üç kitap okuduğudur. Yalnız kitap kulübünden seçilen grup, okuldaki 80 altıncı sınıf öğrencisini temsil etmeyebilir. Sorun sadece grubun büyüklüğü değil, kitap okumaya ilgi duyan öğrencilerden seçilmesinin yanlılığa yol açabilmesidir.",
+        "imageWidth": 360,
+        "imageHeight": 460,
+        "imageUrl": "/grade6/matematik/test-8/soru-07.svg",
+        "imageAlt": "Okuldaki altıncı sınıflar: 80 öğrenci. Sorulan grup: kitap kulübündeki 12 öğrenci. Bu grupta en az üç kitap okuyan 10, daha az okuyan 2. Diğer 68 kişiye sorulmamış."
+      },
+      {
+        "id": "m6-1-t8-08",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "6/A ve 6/B sınıflarının kitap okuma durumunu nicel (kesikli) verilerle karşılaştırmak isteyen bir öğrenci, her iki sınıftaki herkese aynı soruyu soracaktır.\n\nHangi anket sorusu hem amaca uygundur hem de karşılaştırma için ortak bir zaman aralığı belirler?",
+        "options": [
+          "Kitap okumak çok yararlıdır; siz de katılıyor musunuz?",
+          "1–30 Eylül arasında baştan sona kaç kitap bitirdiniz?",
+          "En sevdiğiniz kitap türü nedir?",
+          "Hayatınızda güzel kitaplar okudunuz mu?"
+        ],
+        "correct": 1,
+        "explanation": "Belirli ve aynı tarih aralığında bitirilen kitap sayısı, her öğrenciden sayılabilir nicel veri elde edilmesini sağlar. İki sınıf bu ortak ölçüte göre karşılaştırılabilir. Diğer sorular sayı vermez veya yönlendiricidir."
+      },
+      {
+        "id": "m6-1-t8-09",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Beş öğrencinin bir ayda bitirdiği kitap sayıları 2, 4, 5, 7 ve 7’dir. Gruba bir öğrenci daha eklenince aritmetik ortalama değişmiyor.\n\nAltı kişilik yeni veri grubunun tepe değerleri hangileridir?",
+        "options": [
+          "Yalnız 5",
+          "Yalnız 7",
+          "5 ve 7",
+          "4 ve 5"
+        ],
+        "correct": 2,
+        "explanation": "İlk toplam 25, ortalama 5’tir. Altı kişinin ortalaması da 5 ise yeni toplam 30, eklenen değer 5 olur. Yeni veriler 2, 4, 5, 5, 7, 7’dir. 5 ve 7 ikişer kez görüldüğü için iki tepe değer vardır."
+      },
+      {
+        "id": "m6-1-t8-10",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Beş gün boyunca her gün çözülen bulmaca sayıları yanlışlıkla 4, 6, 8, 9, 18 olarak kaydedilmiştir. Son kaydın 18 değil 8 olması gerektiği fark edilip düzeltiliyor.\n\nDüzeltme sonucunda aritmetik ortalama ve ortanca nasıl değişir?",
+        "options": [
+          "Ortalama 2 azalır, ortanca değişmez.",
+          "Ortalama 10 azalır, ortanca değişmez.",
+          "Ortalama 2 azalır, ortanca 1 azalır.",
+          "Ortalama değişmez, ortanca 2 azalır."
+        ],
+        "correct": 0,
+        "explanation": "Yanlış toplam 45, ortalama 9’dur. Doğru sıralı veri 4, 6, 8, 8, 9; toplam 35 ve ortalama 7’dir. Ortalama 2 azalır. Her iki sıralı grubun üçüncü değeri 8 olduğundan ortanca değişmez."
+      }
+    ],
   },
   term2: {},
 };

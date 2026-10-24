@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="365" viewBox="0 0 360 365" role="img">
+<title>Test 8 · Soru 3</title>
+<desc>Sıklık tablosunda kitap sayısı 0, 1, 2, 3; öğrenci sayısı sırasıyla 2, 3, soru işareti, 1. Toplam 10 öğrenci.</desc>
+<rect width="360" height="365" fill="#FFFFFF"/>
+<text x="180" y="26" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Toplam: 10 öğrenci</text>
+<rect x="12" y="52" width="336" height="48" rx="8" fill="#D9EBFF" stroke="#36586D" stroke-width="2"/>
+<line x1="180" y1="52" x2="180" y2="325" stroke="#36586D" stroke-width="3"/>
+<text x="95" y="76" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Kitap</text>
+<text x="263" y="76" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Öğrenci</text>
+<rect x="12" y="104" width="336" height="52" rx="8" fill="#F3F8FC" stroke="#36586D" stroke-width="2"/>
+<line x1="180" y1="104" x2="180" y2="156" stroke="#36586D" stroke-width="3"/>
+<text x="95" y="130" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">0</text>
+<text x="263" y="130" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">2</text>
+<rect x="12" y="159" width="336" height="52" rx="8" fill="#F3F8FC" stroke="#36586D" stroke-width="2"/>
+<line x1="180" y1="159" x2="180" y2="211" stroke="#36586D" stroke-width="3"/>
+<text x="95" y="185" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">1</text>
+<text x="263" y="185" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">3</text>
+<rect x="12" y="214" width="336" height="52" rx="8" fill="#FFF0CB" stroke="#36586D" stroke-width="2"/>
+<line x1="180" y1="214" x2="180" y2="266" stroke="#36586D" stroke-width="3"/>
+<text x="95" y="240" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">2</text>
+<text x="263" y="240" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">?</text>
+<rect x="12" y="269" width="336" height="52" rx="8" fill="#F3F8FC" stroke="#36586D" stroke-width="2"/>
+<line x1="180" y1="269" x2="180" y2="321" stroke="#36586D" stroke-width="3"/>
+<text x="95" y="295" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">3</text>
+<text x="263" y="295" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">1</text>
+</svg>

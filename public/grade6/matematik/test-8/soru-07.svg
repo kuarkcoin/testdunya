@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="460" viewBox="0 0 360 460" role="img">
+<title>Test 8 · Soru 7</title>
+<desc>Okuldaki altıncı sınıflar: 80 öğrenci. Sorulan grup: kitap kulübündeki 12 öğrenci. Bu grupta en az üç kitap okuyan 10, daha az okuyan 2. Diğer 68 kişiye sorulmamış.</desc>
+<rect width="360" height="460" fill="#FFFFFF"/>
+<rect x="12" y="10" width="336" height="66" rx="8" fill="#D9EBFF" stroke="#36586D" stroke-width="2"/>
+<text x="180" y="30" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">6. sınıflar</text>
+<text x="180" y="59" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">80 öğrenci</text>
+<line x1="180" y1="76" x2="180" y2="100" stroke="#36586D" stroke-width="3"/>
+<polygon points="174,90 186,90 180,100" fill="#36586D"/>
+<rect x="12" y="108" width="336" height="91" rx="8" fill="#FFF0CB" stroke="#36586D" stroke-width="2"/>
+<text x="180" y="137" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="600" fill="#15354B">Kitap kulübü: 12</text>
+<text x="180" y="174" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Ankete katılanlar</text>
+<line x1="180" y1="199" x2="180" y2="220" stroke="#36586D" stroke-width="3"/>
+<line x1="93" y1="220" x2="267" y2="220" stroke="#36586D" stroke-width="3"/>
+<line x1="93" y1="220" x2="93" y2="242" stroke="#36586D" stroke-width="3"/>
+<polygon points="87,232 99,232 93,242" fill="#36586D"/>
+<line x1="267" y1="220" x2="267" y2="242" stroke="#36586D" stroke-width="3"/>
+<polygon points="261,232 273,232 267,242" fill="#36586D"/>
+<rect x="12" y="250" width="162" height="110" rx="8" fill="#E9F4FA" stroke="#36586D" stroke-width="2"/>
+<rect x="186" y="250" width="162" height="110" rx="8" fill="#E9F4FA" stroke="#36586D" stroke-width="2"/>
+<text x="93" y="277" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">3 ve üzeri</text>
+<text x="93" y="311" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">kitap</text>
+<text x="93" y="340" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">10 kişi</text>
+<text x="267" y="277" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">3’ten az</text>
+<text x="267" y="311" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">kitap</text>
+<text x="267" y="340" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">2 kişi</text>
+<text x="180" y="394" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Diğer 68 öğrenciye</text>
+<text x="180" y="433" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">sorulmadı.</text>
+</svg>

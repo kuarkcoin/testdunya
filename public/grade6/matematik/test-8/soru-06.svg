@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="350" viewBox="0 0 360 350" role="img">
+<title>Test 8 · Soru 6</title>
+<desc>Pil sayısı ekseni 18, 20, 22, 24 olarak işaretli. A sütunu 20’ye, B sütunu 24’e ulaşıyor. Eksenin 18’den başladığı açıkça belirtiliyor.</desc>
+<rect width="360" height="350" fill="#FFFFFF"/>
+<text x="180" y="26" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Toplanan pil sayısı</text>
+<line x1="66" y1="245" x2="330" y2="245" stroke="#36586D" stroke-width="3"/>
+<text x="49" y="245" text-anchor="end" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">18</text>
+<line x1="66" y1="191" x2="330" y2="191" stroke="#36586D" stroke-width="3"/>
+<text x="49" y="191" text-anchor="end" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">20</text>
+<line x1="66" y1="137" x2="330" y2="137" stroke="#36586D" stroke-width="3"/>
+<text x="49" y="137" text-anchor="end" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">22</text>
+<line x1="66" y1="83" x2="330" y2="83" stroke="#36586D" stroke-width="3"/>
+<text x="49" y="83" text-anchor="end" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">24</text>
+<line x1="66" y1="72" x2="66" y2="245" stroke="#36586D" stroke-width="3"/>
+<rect x="107" y="191" width="66" height="54" rx="0" fill="#7EB7E6" stroke="#36586D" stroke-width="2"/>
+<rect x="234" y="83" width="66" height="162" rx="0" fill="#EAC76B" stroke="#36586D" stroke-width="2"/>
+<text x="140" y="174" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">20</text>
+<text x="267" y="64" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">24</text>
+<text x="140" y="275" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">A</text>
+<text x="267" y="275" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">B</text>
+<text x="180" y="324" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Eksen 18’den başlıyor.</text>
+</svg>

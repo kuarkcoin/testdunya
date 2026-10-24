@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="345" viewBox="0 0 360 345" role="img">
+<title>Test 8 · Soru 5</title>
+<desc>Yatay sütun grafiğinde satranç 12, resim 8, spor 10 öğrenci. Sütunlar sıfırdan başlıyor ve ortak ölçek kullanıyor.</desc>
+<rect width="360" height="345" fill="#FFFFFF"/>
+<text x="180" y="27" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Seçilen etkinlik</text>
+<text x="14" y="70" text-anchor="start" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Satranç</text>
+<rect x="15" y="92" width="276" height="31" rx="0" fill="#7EB7E6" stroke="#36586D" stroke-width="2"/>
+<text x="305" y="107" text-anchor="start" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">12</text>
+<text x="14" y="153" text-anchor="start" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Resim</text>
+<rect x="15" y="175" width="184" height="31" rx="0" fill="#EAC76B" stroke="#36586D" stroke-width="2"/>
+<text x="213" y="190" text-anchor="start" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">8</text>
+<text x="14" y="236" text-anchor="start" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Spor</text>
+<rect x="15" y="258" width="230" height="31" rx="0" fill="#7EB7E6" stroke="#36586D" stroke-width="2"/>
+<text x="259" y="273" text-anchor="start" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">10</text>
+<text x="180" y="326" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Sayılar: öğrenci sayısı</text>
+</svg>
