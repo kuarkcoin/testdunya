@@ -1025,6 +1025,176 @@ export const ingilizceData: SubjectData = {
             "correct": 2,
             "explanation": "Mina korku trenini korkutucu buluyor ve Leo’ya katılmıyor. Başka bir oyuncak seçmeyi önermek bu görüş ayrılığına uygun yanıttır. Diğer seçenekler Mina’nın söyledikleriyle çelişir."
       }
+],
+    "test7": [
+      {
+            "id": "e6-1-t7-01",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Owen follows this club timetable. His cousin can join him only at the weekend. When can they go swimming together?",
+            "options": [
+                  "On Thursday at five o’clock.",
+                  "On Saturday at a quarter past nine.",
+                  "On Tuesday at half past four.",
+                  "On Sunday at a quarter past nine."
+            ],
+            "correct": 1,
+            "explanation": "Kuzen yalnız hafta sonu katılabiliyor. Programdaki hafta sonu etkinliği cumartesi 09.15’tedir; bu saat a quarter past nine olarak söylenir. Pazar günü yüzme yoktur.",
+            "imageWidth": 360,
+            "imageHeight": 530,
+            "imageUrl": "/grade6/ingilizce/test-7/soru-01.svg",
+            "imageAlt": "Yüzme kulübü takvimi: salı 16.30, perşembe 17.00, cumartesi 09.15; diğer günlerde yüzme yok. Altta yüzen kişi çizimi."
+      },
+      {
+            "id": "e6-1-t7-02",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at the children’s complete breakfast meals today. Which question has NO answer in the picture?",
+            "options": [
+                  "What does Jack have for breakfast?",
+                  "Which child has an egg?",
+                  "Which child has honey?",
+                  "At what time does Lucy have breakfast?"
+            ],
+            "correct": 3,
+            "explanation": "Görselde Jack’in peynir ve bal, Lucy’nin peynir ve yumurta yediği anlaşılır. Ancak herhangi bir saat bilgisi verilmediği için Lucy’nin kahvaltıyı saat kaçta yaptığı yanıtlanamaz.",
+            "imageWidth": 360,
+            "imageHeight": 540,
+            "imageUrl": "/grade6/ingilizce/test-7/soru-02.svg",
+            "imageAlt": "Lucy’nin kahvaltısında peynir ve yumurta, Jack’in kahvaltısında peynir ve bal bulunan etiketli tabaklar."
+      },
+      {
+            "id": "e6-1-t7-03",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Liam gets on the bus at the school at eight. He wants to visit his grandfather, who is ill in hospital. Which instruction is correct?",
+            "options": [
+                  "Get off at the second stop at ten past eight.",
+                  "Get off at the third stop at twenty past eight.",
+                  "Stay at the first stop until half past eight.",
+                  "Get off at the museum at ten past eight."
+            ],
+            "correct": 0,
+            "explanation": "Hasta dedesini hastanede ziyaret etmek isteyen Liam ikinci durakta inmelidir. Haritada hastanenin saati 08.10, yani ten past eight olarak verilmiştir. Müze üçüncü duraktır.",
+            "imageWidth": 360,
+            "imageHeight": 560,
+            "imageUrl": "/grade6/ingilizce/test-7/soru-03.svg",
+            "imageAlt": "Aşağı yönlü otobüs güzergâhında 1: okul 08.00, 2: hastane 08.10, 3: müze 08.20."
+      },
+      {
+            "id": "e6-1-t7-04",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Ada sends this picture and message to her friend. Which reply shows that her friend understands BOTH the weather and Ada’s feelings?",
+            "options": [
+                  "I’m sorry the rainy weather makes you sad.",
+                  "You feel bored because there is no wind.",
+                  "The windy weather is great for your kite. You sound excited!",
+                  "The snowy weather is making you feel cold."
+            ],
+            "correct": 2,
+            "explanation": "Ada kuvvetli rüzgâr sayesinde uçurtmasının yükseldiğini ve heyecanlı olduğunu söylüyor. C seçeneği hem rüzgârlı havayı hem de Ada’nın açıkça belirttiği duyguyu doğru yansıtır.",
+            "imageWidth": 360,
+            "imageHeight": 540,
+            "imageUrl": "/grade6/ingilizce/test-7/soru-04.svg",
+            "imageAlt": "Rüzgâr çizgileri altında uçurtma uçuran Ada; mesajı: rüzgâr kuvvetli, uçurtmam yüksekte, heyecanlı hissediyorum."
+      },
+      {
+            "id": "e6-1-t7-05",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "It is 14:00. Finn wants to visit the fair today. Which message should his friend send him after reading these signs?",
+            "options": [
+                  "Come now! Every ride in the picture is open.",
+                  "We can ride the Ferris wheel now, but not the carousel.",
+                  "The carousel opens at two today.",
+                  "We must wait until six for the Ferris wheel to open."
+            ],
+            "correct": 1,
+            "explanation": "Atlıkarınca bugün kapalıdır. Dönme dolap 10.00–18.00 arasında açık olduğundan saat 14.00’te binilebilir. B seçeneği iki tabelayı birlikte doğru yorumlar.",
+            "imageWidth": 360,
+            "imageHeight": 590,
+            "imageUrl": "/grade6/ingilizce/test-7/soru-05.svg",
+            "imageAlt": "Sunset Fair’de atlıkarınca girişinde bugün kapalı tabelası; dönme dolapta 10.00–18.00 açık bilgisi."
+      },
+      {
+            "id": "e6-1-t7-06",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Look at the park scene. Which sentence describes the people’s activities correctly?",
+            "options": [
+                  "Dad and Emma are reading while Noah is playing football.",
+                  "Dad is playing football while Emma and Noah are reading.",
+                  "All three people are playing football together.",
+                  "Noah is reading while Dad and Emma are running."
+            ],
+            "correct": 0,
+            "explanation": "Baba ve Emma’nın ellerinde açık kitaplar vardır; Noah ise futbol topuyla oynuyor. Şu anda aynı anda yapılan eylemler are reading ve is playing ile anlatılır.",
+            "imageWidth": 360,
+            "imageHeight": 560,
+            "imageUrl": "/grade6/ingilizce/test-7/soru-06.svg",
+            "imageAlt": "Parkın üst bölümünde baba ve Emma açık kitap okuyor; alt bölümde Noah futbol topuyla oynuyor. Üç kişinin adı çizimlerin üzerinde."
+      },
+      {
+            "id": "e6-1-t7-07",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "It is 18:45. Sophie wants to finish all the tasks on her board before dinner. What should she do next?",
+            "options": [
+                  "Pack her school bag for the first time today.",
+                  "Start her homework because it is not done.",
+                  "Have dinner now because it starts at a quarter to seven.",
+                  "Feed the cat before seven o’clock."
+            ],
+            "correct": 3,
+            "explanation": "Ödev bitmiş, okul çantası hazırlanmıştır. Henüz yapılmayan görev kediyi beslemektir. Akşam yemeği 19.00’da başlar; Sophie kalan görevi bu saatten önce tamamlamalıdır.",
+            "imageWidth": 360,
+            "imageHeight": 550,
+            "imageUrl": "/grade6/ingilizce/test-7/soru-07.svg",
+            "imageAlt": "Sophie’nin görev panosu: ödev bitti, okul çantası hazır, kediyi besleme henüz yapılmadı. Akşam yemeği 19.00’da."
+      },
+      {
+            "id": "e6-1-t7-08",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Read the dialogue.\nWaiter: Would you like some pancakes?\nNora: Yes, please. But no honey on mine.\nWaiter: How about some jam instead?\nNora: That sounds lovely!\n\nWhich order matches Nora’s answers?",
+            "options": [
+                  "Pancakes with honey and jam.",
+                  "Honey without pancakes.",
+                  "Pancakes with jam, but no honey.",
+                  "Pancakes without honey or jam."
+            ],
+            "correct": 2,
+            "explanation": "Nora pankeki kabul eder ancak bal istemez. Bal yerine reçel önerisine olumlu yanıt verdiği için doğru sipariş ballı değil, reçelli pankektir."
+      },
+      {
+            "id": "e6-1-t7-09",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Read Deniz’s message.\n“Our new home is in a village. There are fewer cars here than in the city. I can hear birds in the morning instead of busy traffic. I like living here more than living in the city.”\n\nWhich sentence agrees with Deniz’s message?",
+            "options": [
+                  "He prefers the quieter village to the busy city.",
+                  "There are more cars in the village than in the city.",
+                  "He dislikes hearing birds in the morning.",
+                  "He thinks the village is noisier than the city."
+            ],
+            "correct": 0,
+            "explanation": "Deniz köyde daha az araba olduğunu, trafik yerine kuşları duyduğunu ve bu sakin yeri sevdiğini söylüyor. Bu ifadeler, kalabalık şehre göre daha sakin köyü tercih ettiğini gösterir."
+      },
+      {
+            "id": "e6-1-t7-10",
+            "subject": "ingilizce",
+            "term": 1,
+            "prompt": "Choose the question that completes the dialogue.\nMia: ____\nLeo: Because I think it is exciting.\nMia: I see. I prefer the carousel because it is slower.",
+            "options": [
+                  "Where is the roller coaster?",
+                  "Why do you like the roller coaster?",
+                  "When does the carousel open?",
+                  "How often do you visit the fair?"
+            ],
+            "correct": 1,
+            "explanation": "Leo Because ile başlayıp heyecan verici bulmasını gerekçe gösteriyor. Bu yanıta neden soran Why do you like the roller coaster sorusu uyar; yer, saat ve sıklık soruları uymaz."
+      }
 ]
   },
   "term2": {}
