@@ -273,3 +273,10 @@ Toplam: 23 test, 230 soru, 117 SVG, 28 rota. Önceki 220 soru ve 110 SVG korunur
 - Soru kimlikleri ve `/6-sinif/turkce/test-1` adresi korunur. Cevap anahtarı: **B, D, A, C, A, C, B, D, A, C**.
 - İki SVG 360 birim genişlikte, en az 26 birim yazıyla hazırlanır; 238 piksel çıktıları incelenir. Diğer 320 soru ve mevcut 208 SVG korunur. Toplam 33 test / 330 soru / 210 SVG / 38 rota.
 - Dil, tek doğru cevap, görsel, veri, rota, TypeScript ve üretim derlemesi denetimleri uygulanır. Bağımsız lint yapılandırması bulunmadığı için lint çalıştırılmaz; etkileşimli tarayıcı denetimi yapılmaz. Production’a terfi edilmez.
+
+
+## Türkçe Test 2 — Metinde Anlam ve Görsel Okuma (25 Ekim 2026)
+
+- Mevcut Test 2, orta düzeyde 8 metin + 2 görsel okuma sorusuyla yenilendi. Sözcüğün bağlamdaki anlamı, bakış açısı, başlık, paragraf sıralama, duyuru okuma, görsel mesaj, koşul, öznel yargı, soru eki ve anlamı etkileyen virgül işlenir. Tam yıllık müfredat kapsamı iddiası değildir.
+- Anahtar: **C, A, D, B, C, A, D, B, A, C**. İki pasif SVG 360 birim genişliğinde, en az 26 birim yazıyla hazırlanır; 238 piksel çıktıları denetlenir.
+- Diğer 320 soru ve 210 SVG korunur. Toplam 33 test / 330 soru / 212 SVG / 38 rota. Veri, rota, TypeScript ve üretim derlemesiyle doğrulanır. Etkileşimli tarayıcı testi yapılmadı; production’a otomatik aktarılmaz.

@@ -159,141 +159,149 @@ export const turkceData: SubjectData = {
         "id": "t6-1-t2-01",
         "subject": "turkce",
         "term": 1,
-        "prompt": "Hangi cümlede 'de' bağlacı doğru yazılmıştır?",
+        "prompt": "“Öğretmen, tartışma uzayınca konuyu toparladı ve herkesin üzerinde anlaştığı düşünceleri sıraladı.” cümlesinde “toparlamak” hangi anlamda kullanılmıştır?",
         "options": [
-          "Seninde bir sözlük alman iyi olur.",
-          "Ben de kütüphaneye geleceğim.",
-          "O'da yeni sözcükler öğrendi.",
-          "Bizde şiir okuyacağız."
+          "Dağılmış eşyaları bir araya getirmek",
+          "Bir konuyu ayrıntılarıyla genişletmek",
+          "Söylenenleri düzenleyip özlü hâle getirmek",
+          "Bir düşünceyi baştan sona değiştirmek"
         ],
-        "correct": 1,
-        "explanation": "Buradaki 'de', 'ben de diğerleri gibi' anlamı katan bir bağlaçtır. Bağlaç olan 'de' ayrı yazılır, kesme işaretiyle ayrılmaz."
+        "correct": 2,
+        "explanation": "Öğretmen, konuşulan düşünceleri düzenleyip ortak noktaları sıralar. Sözcük burada fiziksel bir toplama değil, konuyu derleyip özetleme anlamındadır."
       },
       {
         "id": "t6-1-t2-02",
         "subject": "turkce",
         "term": 1,
-        "prompt": "Yer bildiren '-de' ekinin yazımı hangi cümlede doğrudur?",
+        "prompt": "“Berk, arkadaşının önerisini hemen reddetmedi. ‘Önce bir de onun gözünden bakalım.’ diyerek önerinin gerekçelerini dinledi.”\n“onun gözünden bakmak” ifadesiyle anlatılmak istenen nedir?",
         "options": [
-          "Kitabım masa da duruyor.",
-          "Kalemim çanta'da kaldı.",
-          "Defterim çantamda kaldı.",
-          "Arkadaşım okul da bekliyor."
+          "Karşısındakinin bakış açısını anlamaya çalışmak",
+          "Karşısındakinin söylediklerini olduğu gibi tekrarlamak",
+          "Kendi düşüncesini daha güçlü savunmak",
+          "Bir karar vermeyi başkasına bırakmak"
         ],
-        "correct": 2,
-        "explanation": "Defterin nerede kaldığını bildiren '-da' bir ektir ve sözcüğe bitişik yazılır: 'çantamda'."
+        "correct": 0,
+        "explanation": "Berk, öneriyi değerlendirmeden önce arkadaşının gerekçelerini anlamaya çalışır. Bu ifade, kişinin kendini karşısındakinin yerine koyarak düşünmesini anlatır."
       },
       {
         "id": "t6-1-t2-03",
         "subject": "turkce",
         "term": 1,
-        "prompt": "Hangi cümlede '-ki' eki doğru yazılmıştır?",
+        "prompt": "Bir okul dergisi hazırlarken ilk işimiz kapağı tasarlamak oldu. Fakat yazılar gelince kapakta duyurduğumuz konuların bazılarına hiç yer verilmediğini fark ettik. Sonunda önce yazıları düzenledik, sonra onları doğru biçimde yansıtan yeni bir kapak hazırladık.\nBu metne en uygun başlık hangisidir?",
         "options": [
-          "Masadaki kitabı aldım.",
-          "Duvarda ki saati gördüm.",
-          "Çantamda ki defteri aldım.",
-          "Kitapta'ki resmi inceledim."
+          "Okul Dergilerinde Renk Seçimi",
+          "Yazı Yazmanın Zorlukları",
+          "Dergi İçin Görev Dağılımı",
+          "İçeriğe Uygun Bir Kapak"
         ],
-        "correct": 0,
-        "explanation": "'Masadaki' sözcüğünde '-ki' bir ektir. Kitabın yerini belirten bu ek, kendisinden önceki sözcüğe bitişik yazılır."
+        "correct": 3,
+        "explanation": "Metnin temelinde kapağın, derginin içeriğini doğru yansıtması gereği vardır. Renk seçimi veya görev dağılımı anlatılmamış; yazma güçlüğü üzerinde durulmamıştır."
       },
       {
         "id": "t6-1-t2-04",
         "subject": "turkce",
         "term": 1,
-        "prompt": "Hangi cümlede bağlaç olan 'ki' doğru yazılmıştır?",
+        "prompt": "I. Bu notları karşılaştırınca aynı türdeki bitkilerin farklı yerlerde farklı zamanlarda çiçek açtığını gördük.\nII. Bahçemizdeki bitkilerin ne zaman çiçek açtığını merak ediyorduk.\nIII. Bu yüzden bir ay boyunca her gün gözlem yapıp gördüklerimizi not ettik.\nIV. Böylece yalnızca tahmin yürütmek yerine gözlemlerimize dayanarak konuşabildik.\nNumaralanmış cümlelerle anlamlı bir paragraf oluşturmak için sıralama nasıl olmalıdır?",
         "options": [
-          "Biliyorumki okumayı seviyorsun.",
-          "Öyleki her gün bir öykü bitiriyor.",
-          "Anladım ki düzenli okumak yararlıymış.",
-          "Gördümki raflar düzenlenmiş."
+          "II – I – III – IV",
+          "II – III – I – IV",
+          "III – II – IV – I",
+          "I – IV – II – III"
         ],
-        "correct": 2,
-        "explanation": "'Anladım ki' ifadesindeki 'ki' bağlaçtır ve ayrı yazılır. Kesme işareti kullanılmaz."
+        "correct": 1,
+        "explanation": "Önce merak edilen konu belirtilir (II), bunun üzerine yapılan gözlem anlatılır (III), notlardan çıkarılan sonuç verilir (I), genel değerlendirmeyle bitirilir (IV)."
       },
       {
         "id": "t6-1-t2-05",
         "subject": "turkce",
         "term": 1,
-        "prompt": "Aşağıdaki soru cümlelerinden hangisi doğru yazılmıştır?",
+        "prompt": "Duyuruya göre bir öğrencinin hem atölyeye katılması hem de sergiyi gezmesi için hangi plan uygundur?",
         "options": [
-          "Bu masalı okudunmu?",
-          "Bu masalı okudun mu?",
-          "Bu masalı okudun'mu?",
-          "Kalemini buldunmu?"
+          "Kayıt yaptırmadan 10.00’da atölyeye, ardından sergiye gitmek",
+          "Kayıt yaptırıp 11.30’da atölyeye, ardından sergiye gitmek",
+          "Önceden kayıt yaptırıp 10.00’da atölyeye, bitince sergiye gitmek",
+          "Önceden kayıt yaptırıp yalnızca 12.30’da sergiye gitmek"
         ],
-        "correct": 1,
-        "explanation": "Soru eki 'mı, mi, mu, mü' kendisinden önceki sözcükten ayrı yazılır. Burada doğru yazım 'okudun mu' biçimindedir."
+        "correct": 2,
+        "explanation": "Atölye 10.00–11.00 arasındadır ve önceden kayıt gerektirir. Sergi 11.00–13.00 arasında gezilebilir. C seçeneği iki etkinliğin de koşullarına uyar.",
+        "imageWidth": 360,
+        "imageHeight": 650,
+        "imageUrl": "/grade6/turkce/test-2/soru-05.svg",
+        "imageAlt": "Bilim merkezi duyurusu: gölge atölyesi 10.00–11.00, önceden kayıt gerekli; ışık sergisi 11.00–13.00, kayıt gerekmiyor; tüm etkinlikler ücretsiz."
       },
       {
         "id": "t6-1-t2-06",
         "subject": "turkce",
         "term": 1,
-        "prompt": "Aşağıdakilerin hangisinde soru ekinin ve ona gelen kişi ekinin yazımı doğrudur?",
+        "prompt": "Görselde verilen önerilerin ortak amacı aşağıdakilerden hangisidir?",
         "options": [
-          "Hazırmısınız?",
-          "Hazır'mısınız?",
-          "Hazır mı sınız?",
-          "Hazır mısınız?"
+          "Kullanılabilir eşyaların ömrünü uzatarak atığı azaltmak",
+          "Yeni eşyaların daha hızlı üretilmesini sağlamak",
+          "Evdeki bütün eşyaları bir arada saklamak",
+          "Kullanılan her eşyayı hemen geri dönüşüme göndermek"
         ],
-        "correct": 3,
-        "explanation": "Soru eki önceki sözcükten ayrı yazılır; soru ekinden sonra gelen kişi eki ona bitişir. Doğru yazım 'Hazır mısınız?' biçimindedir."
+        "correct": 0,
+        "explanation": "Onarmak, yeniden kullanmak ve paylaşmak, işe yarayabilecek eşyaları çöpe atmadan değerlendirmeyi sağlar. Öneriler üretim hızını veya depolamayı değil, atığı azaltmayı amaçlar.",
+        "imageWidth": 360,
+        "imageHeight": 655,
+        "imageUrl": "/grade6/turkce/test-2/soru-06.svg",
+        "imageAlt": "Üç öneri: sökülen çantayı onar, boş kavanozu kalemlik olarak yeniden kullan, kullanmadığın sağlam oyuncağı paylaş."
       },
       {
         "id": "t6-1-t2-07",
         "subject": "turkce",
         "term": 1,
-        "prompt": "'Çantama kalem, defter, silgi koydum.' cümlesinde virgüller hangi amaçla kullanılmıştır?",
+        "prompt": "Aşağıdaki cümlelerin hangisinde bir işin gerçekleşmesi bir koşula bağlanmıştır?",
         "options": [
-          "Sıralanan eş görevli sözcükleri ayırmak için",
-          "Bir kişiye seslenmek için",
-          "Soru sormak için",
-          "Tamamlanmamış cümleyi belirtmek için"
+          "Proje tamamlandığı için sınıfta küçük bir kutlama yaptık.",
+          "Projeyi tamamlamak amacıyla öğle arasında da çalıştık.",
+          "Proje tamamlanınca sonuçları sınıf panosuna astık.",
+          "Projeyi zamanında tamamlarsak bilim şenliğine katılabileceğiz."
         ],
-        "correct": 0,
-        "explanation": "'Kalem, defter, silgi' aynı görevde sıralanan sözcüklerdir. Virgül bu sözcükleri birbirinden ayırır."
+        "correct": 3,
+        "explanation": "-sa ekiyle kurulan tamamlarsak ifadesi, şenliğe katılmayı projeyi zamanında tamamlama koşuluna bağlar. Diğer cümlelerde neden, amaç ve zaman ilişkileri vardır."
       },
       {
         "id": "t6-1-t2-08",
         "subject": "turkce",
         "term": 1,
-        "prompt": "'Sevgili Arkadaşlar, bugün yeni sözcükler öğreneceğiz.' cümlesindeki virgülün görevi nedir?",
+        "prompt": "“Kent müzesinde üç salon bulunuyor. İkinci salonda eski ulaşım araçları sergileniyor. Bence bu salon, müzenin en ilgi çekici bölümü. Müze pazartesi günleri kapalı.”\nBu metindeki hangi bilgi kişisel görüş içerir?",
         "options": [
-          "Hitap sözünden sonra kullanılarak seslenmeyi ayırmak",
-          "Sayıların arasını ayırmak",
-          "Soru anlamı katmak",
-          "Alıntıyı göstermek"
+          "Müzede üç salon bulunması",
+          "İkinci salonun en ilgi çekici bölüm olması",
+          "Eski ulaşım araçlarının ikinci salonda sergilenmesi",
+          "Müzenin pazartesi günleri kapalı olması"
         ],
-        "correct": 0,
-        "explanation": "'Sevgili Arkadaşlar' bir hitap, yani seslenme sözüdür. Hitap sözlerinden sonra virgül kullanılabilir."
+        "correct": 1,
+        "explanation": "En ilgi çekici değerlendirmesi kişiden kişiye değişir; bence sözcüğü de görüşün öznel olduğunu gösterir. Diğer bilgiler gözlem veya kayıtla doğrulanabilir."
       },
       {
         "id": "t6-1-t2-09",
         "subject": "turkce",
         "term": 1,
-        "prompt": "'Ece kitabı açtı, Ali okumaya başladı.' cümlesinde virgül hangi amaçla kullanılmıştır?",
+        "prompt": "Aşağıdaki cümlelerin hangisinde soru eki ve ardından gelen ek doğru yazılmıştır?",
         "options": [
-          "Sözcüğün eş anlamlısını göstermek için",
-          "Bir sözcüğün hecelerini ayırmak için",
-          "Konuşan kişinin adını belirtmek için",
-          "Sıralı cümleleri ayırmak için"
+          "Geziye sen de katılacak mısın?",
+          "Geziye sen de katılacakmısın?",
+          "Geziye sen de katılacak mı sın?",
+          "Geziye sen de katılacakmı sın?"
         ],
-        "correct": 3,
-        "explanation": "'Ece kitabı açtı' ve 'Ali okumaya başladı' ayrı yüklemleri olan iki cümledir. Virgül, bu sıralı cümleleri ayırmıştır."
+        "correct": 0,
+        "explanation": "Soru eki mı, önceki sözcükten ayrı yazılır; kendisinden sonra gelen kişi eki ona bitişir: katılacak mısın."
       },
       {
         "id": "t6-1-t2-10",
         "subject": "turkce",
         "term": 1,
-        "prompt": "Aşağıdaki cümlelerin hangisinde 'de', 'ki' ve soru eki birlikte doğru yazılmıştır?",
+        "prompt": "“Genç, adamı dikkatle dinledi.” cümlesinde virgülün kullanılmasının temel nedeni nedir?",
         "options": [
-          "Evde ki kitabı sende okudun mu?",
-          "Evdeki kitabı sen de okudunmu?",
-          "Evdeki kitabı sen de okudun mu?",
-          "Evde ki kitabı sen de okudun mu?"
+          "Sıralanan varlıkları birbirinden ayırmak",
+          "Bir açıklamadan önce duraklama sağlamak",
+          "Genç sözcüğünün adamı nitelemesini önleyerek anlamı belirginleştirmek",
+          "Aktarılan konuşmanın sona erdiğini göstermek"
         ],
         "correct": 2,
-        "explanation": "'Evdeki' sözcüğündeki ekler bitişik, 'sen de' ifadesindeki bağlaç ayrı yazılır. Soru eki de ayrı yazılır: 'okudun mu'."
+        "explanation": "Virgül, genç sözcüğünün dinleme işini yapan kişiyi belirttiğini açıklaştırır. Böylece sözcüğün genç adam tamlamasındaki gibi adamı nitelediği biçiminde okunmasını önler."
       }
     ],
     "test3": [
