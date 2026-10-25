@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="420" viewBox="0 0 360 420" role="img">
+<title>Test 11 · Soru 1</title>
+<desc>İki ayrı çıta: K çıtasının uzunluğu 180 cm, L çıtasının uzunluğu 252 cm. Parçaların tamamı eşit uzunlukta olacak, her parça en fazla 30 cm olacak ve hiç parça artmayacak. Şekil ölçekli değildir.</desc>
+<rect width="360" height="420" fill="white"/>
+<text x="180" y="32" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Eş parçalara</text>
+<text x="180" y="68" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">ayrılacak çıtalar</text>
+<text x="140" y="119" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">K: 180 cm</text>
+<rect x="30" y="146" width="220" height="30" rx="4" fill="#FFF1CB" stroke="#36586D" stroke-width="2"/>
+<text x="180" y="220" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">L: 252 cm</text>
+<rect x="30" y="247" width="300" height="30" rx="4" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<text x="180" y="325" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Eş parçalar</text>
+<text x="180" y="363" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">En fazla 30 cm</text>
+<text x="180" y="403" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">Şekil ölçekli değildir.</text>
+</svg>

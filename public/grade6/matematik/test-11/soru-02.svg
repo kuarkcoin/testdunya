@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="440" viewBox="0 0 360 440" role="img">
+<title>Test 11 · Soru 2</title>
+<desc>Biriken deney kayıtlarını gösteren iki kart. 40. denemenin sonunda toplam 40 deneme ve 14 mavi sonuç; 100. denemenin sonunda toplam 100 deneme ve 44 mavi sonuç var. İkinci kart ilk 40 denemeyi de içeriyor.</desc>
+<rect width="360" height="440" fill="white"/>
+<text x="180" y="32" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Kayıtlar birikiyor</text>
+<rect x="20" y="70" width="320" height="132" rx="14" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<text x="180" y="108" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">40. deneme</text>
+<text x="180" y="160" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">Mavi: 14</text>
+<rect x="20" y="225" width="320" height="132" rx="14" fill="#FFF1CB" stroke="#36586D" stroke-width="2"/>
+<text x="180" y="263" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">100. deneme</text>
+<text x="180" y="315" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">Mavi: 44</text>
+<text x="180" y="402" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">İlk kayıtlar dâhil</text>
+</svg>

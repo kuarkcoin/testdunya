@@ -1597,6 +1597,177 @@ export const matematikData: SubjectData = {
         "explanation": "Üçüncü turda 3 eklenerek 10 bulunduğundan bu tura 7 ile girilmiştir. Önceki iki turda sayı ikiye bölündüğünden başlangıç 7 × 2 × 2 = 28’dir. Kontrol: 28 → 14 → 7 → 10; belirtilen işlem sırası sağlanır."
       }
     ],
+    test11: [
+      {
+        "prompt": "180 cm ve 252 cm uzunluğundaki iki çıta, hiç parça artmayacak biçimde eşit uzunlukta parçalara ayrılacaktır. Bütün parçaların uzunluğu aynı olacak ve hiçbir parça 30 cm'den uzun olmayacaktır. Parçalar mümkün olduğunca uzun seçiliyor.\n\nHer kesimde yalnız bir çıta ya da çıta parçası kesildiğine ve kesim kaybı olmadığına göre toplam kaç kesim yapılır?",
+        "options": [
+          "10",
+          "12",
+          "22",
+          "24"
+        ],
+        "correct": 2,
+        "explanation": "Parça uzunluğu hem 180'i hem 252'yi kalansız bölmelidir. Ortak pozitif bölenler 1, 2, 3, 4, 6, 9, 12, 18 ve 36'dır. 36 cm sınırı aştığından en büyük uygun uzunluk 18 cm'dir. Birinci çıtadan 180 ÷ 18 = 10, ikinciden 252 ÷ 18 = 14 parça çıkar. Bir çıtayı n parçaya ayırmak n − 1 kesim gerektirir. Toplam (10 − 1) + (14 − 1) = 22 kesim yapılır.",
+        "imageHeight": 420,
+        "imageAlt": "İki ayrı çıta: K çıtasının uzunluğu 180 cm, L çıtasının uzunluğu 252 cm. Parçaların tamamı eşit uzunlukta olacak, her parça en fazla 30 cm olacak ve hiç parça artmayacak. Şekil ölçekli değildir.",
+        "id": "m6-1-t11-01",
+        "subject": "matematik",
+        "term": 1,
+        "imageUrl": "/grade6/matematik/test-11/soru-01.svg",
+        "imageWidth": 360
+      },
+      {
+        "prompt": "Bir torbadan her seferinde bir pul çekilip rengi kaydediliyor; pul geri konularak torba karıştırılıyor. Kartlar, deneyin başlangıcından belirtilen ana kadar biriken kayıtları gösteriyor.\n\nİlk 40 denemenin kayıtları ayrılıyor. Geriye kalan kayıtlara, aynı koşullarda yapılmış yeni bir deneme bölümünün kayıtları ekleniyor. Yeni bölümde bütün sonuçların mavi olduğu ve birleştirilen kayıtlarda mavinin göreli sıklığının tam 3/5 olduğu biliniyor. Yeni bölümde kaç deneme yapılmıştır?",
+        "options": [
+          "6",
+          "10",
+          "12",
+          "15"
+        ],
+        "correct": 3,
+        "explanation": "İlk 40 kayıt ayrıldığında 100 − 40 = 60 deneme ve 44 − 14 = 30 mavi sonuç kalır. Bu 60 denemede mavi olmayan sonuç sayısı da 30'dur. Eklenen sonuçların tümü mavi olduğu için mavi olmayanların sayısı değişmez. Son göreli sıklık mavi için 3/5 ise mavi olmayanlar için 2/5'tir. 30, son toplamın 2/5'i olduğundan toplam 30 ÷ 2 × 5 = 75 olur. Eklenen deneme sayısı 75 − 60 = 15'tir. Kontrol: (30 + 15)/(60 + 15) = 45/75 = 3/5. Bu, verilen kayıtların hesabıdır; gelecek denemelerin kesin sonucunu bildirmez.",
+        "imageHeight": 440,
+        "imageAlt": "Biriken deney kayıtlarını gösteren iki kart. 40. denemenin sonunda toplam 40 deneme ve 14 mavi sonuç; 100. denemenin sonunda toplam 100 deneme ve 44 mavi sonuç var. İkinci kart ilk 40 denemeyi de içeriyor.",
+        "id": "m6-1-t11-02",
+        "subject": "matematik",
+        "term": 1,
+        "imageUrl": "/grade6/matematik/test-11/soru-02.svg",
+        "imageWidth": 360
+      },
+      {
+        "prompt": "Her biri 1,25 m uzunluğundaki dört şerit, bir sıra hâlinde birleştiriliyor. Komşu iki şeridin uçları 8 cm üst üste geliyor; başka örtüşme yoktur.\n\nBirleşen şeritten mümkün olan en çok sayıda 39 cm uzunluğunda parça kesiliyor. Her parçayı ayırmak için bir kesim yapılıyor ve her kesimde 1 mm uzunluk kayboluyor. En sonda kalan tek parçanın uzunluğu kaç santimetredir?",
+        "options": [
+          "6,8",
+          "6,9",
+          "8",
+          "14,8"
+        ],
+        "correct": 0,
+        "explanation": "Dört şerit arasında üç birleşme vardır. Birleşen uzunluk 4 × 125 − 3 × 8 = 476 cm'dir. Her 39 cm'lik parçayı ayırmak 1 mm = 0,1 cm kesim kaybı oluşturur; bir parça için toplam 39,1 cm gerekir. 12 parça için 12 × 39,1 = 469,2 cm yeterlidir; 13 parça için gereken 508,3 cm eldeki uzunluğu aşar. Bu nedenle 12 parça kesilir ve 476 − 469,2 = 6,8 cm kalır.",
+        "imageHeight": 460,
+        "imageAlt": "Bir sıra oluşturmak için kullanılacak dört şerit; her birinin uzunluğu 1,25 m. Birleşme örneğinde iki komşu şeridin uçları 8 cm üst üste geliyor. Şekil ölçekli değildir.",
+        "id": "m6-1-t11-03",
+        "subject": "matematik",
+        "term": 1,
+        "imageUrl": "/grade6/matematik/test-11/soru-03.svg",
+        "imageWidth": 360
+      },
+      {
+        "prompt": "Tablo, 12 öğrencinin bir günde kitap okumaya ayırdığı süreleri gösteriyor. Bu sürelerin aritmetik ortalaması 27,5 dakikadır; a ve b silinmiş öğrenci sayılarıdır.\n\nErtesi gün yalnız 30 dakika okuyan öğrencilerden bazıları 20 dakika okuyor; diğerlerinin süreleri değişmiyor. Yeni veri grubunun ortancasının 20 dakika olması için en az kaç öğrenci süresini azaltmalıdır?",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "correct": 1,
+        "explanation": "Öğrenci sayısından a + b = 12 − 2 − 3 = 7 bulunur. Toplam okuma süresi 12 × 27,5 = 330 dakikadır. 10 ve 40 dakika okuyanlar 2 × 10 + 3 × 40 = 140 dakika okur; kalan 7 öğrenci toplam 190 dakika okumuştur. Bu 7 öğrencinin hepsi 20 dakika okusaydı 140 dakika olurdu. Aradaki 50 dakika, her biri 10 dakika fazladan okuyan 5 öğrenciden gelir; b = 5 ve a = 2'dir. Başta 20 dakika veya daha az okuyan 4 öğrenci vardır. 12 verinin ortancası 6. ve 7. değerlerin ortalamasıdır. İki öğrenci 30'dan 20'ye geçerse bu iki değer 20 ve 30 olur; ortanca 25'tir. Üç öğrenci geçerse iki değer de 20 olur. Gereken en az sayı 3'tür.",
+        "imageHeight": 460,
+        "imageAlt": "Okuma süresi ve öğrenci sayısı tablosu: 10 dakika için 2 öğrenci, 20 dakika için a öğrenci, 30 dakika için b öğrenci, 40 dakika için 3 öğrenci. Toplam 12 öğrenci; aritmetik ortalama 27,5 dakika.",
+        "id": "m6-1-t11-04",
+        "subject": "matematik",
+        "term": 1,
+        "imageUrl": "/grade6/matematik/test-11/soru-04.svg",
+        "imageWidth": 360
+      },
+      {
+        "prompt": "ABC üçgeninde AB = AC'dir. CB kenarı B yönünde F noktasına kadar uzatılmış ve ABF dış açısı 124° olarak verilmiştir. AD, A açısını; CE, C açısını iki eş açıya ayırır. D, BC üzerinde; E, AB üzerindedir. AD ile CE, I noktasında kesişir.\n\nAIC açısı kaç derecedir?",
+        "options": [
+          "56°",
+          "62°",
+          "112°",
+          "118°"
+        ],
+        "correct": 3,
+        "explanation": "B iç açısı dış açıyla bütünlerdir: 180° − 124° = 56°. AB = AC olduğundan C iç açısı da 56° olur. A açısı 180° − 56° − 56° = 68°'dir. AD bu açıyı ikiye böldüğünden IAC = 34°; CE, C açısını ikiye böldüğünden ACI = 28° olur. AIC üçgeninin iç açıları toplamından AIC = 180° − 34° − 28° = 118° bulunur.",
+        "imageHeight": 460,
+        "imageAlt": "ABC ikizkenar üçgeninde AB ve AC eşit. F, B, D, C aynı doğru üzerinde bu sırayla; ABF dış açısı 124 derece. AD, BAC açısını iki eş açıya; CE, ACB açısını iki eş açıya ayırıyor. E, AB üzerinde. AD ile CE'nin kesişimi I. AIC açısı soruluyor; şekilden ölçüm yapılmaz.",
+        "id": "m6-1-t11-05",
+        "subject": "matematik",
+        "term": 1,
+        "imageUrl": "/grade6/matematik/test-11/soru-05.svg",
+        "imageWidth": 360
+      },
+      {
+        "prompt": "Örüntüde her adımda sağ tarafa, üst üste iki eş kareden oluşan bir sütun ekleniyor. Her bir küçük kare kenarı bir çubuktur; komşu karelerin ortak kenarında tek çubuk kullanılıyor.\n\nEce, bu örüntünün iki farklı adımındaki şekilleri ayrı ayrı kuruyor. Büyük şeklin adım numarası, küçüğünün adım numarasından 4 fazladır. İki şekilde toplam 104 çubuk kullanıldığına göre büyük şekil kaçıncı adımdır?",
+        "options": [
+          "8",
+          "10",
+          "12",
+          "14"
+        ],
+        "correct": 2,
+        "explanation": "İlk adımda 7 çubuk vardır. Her yeni sütun üç yatay ve iki düşey yeni çubuk ekler; artış 5'tir. Büyük şekil dört adım ileride olduğundan 4 × 5 = 20 fazla çubuk içerir. İki şeklin toplamı 104 olduğuna göre küçükte (104 − 20) ÷ 2 = 42, büyükte 62 çubuk vardır. İlk adımdaki 7 çubuktan 62'ye ulaşmak için (62 − 7) ÷ 5 = 11 artış gerekir. İlk adım da sayıldığında büyük şekil 12. adımdır.",
+        "imageHeight": 560,
+        "imageAlt": "Çubuk örüntüsünün ilk üç adımı. Birinci adımda üst üste iki kareden oluşan bir sütun, ikinci adımda iki satır ve iki sütun kare, üçüncü adımda iki satır ve üç sütun kare var. Bütün küçük kareler eşit; her ortak kenar tek çubukla gösterilmiş.",
+        "id": "m6-1-t11-06",
+        "subject": "matematik",
+        "term": 1,
+        "imageUrl": "/grade6/matematik/test-11/soru-06.svg",
+        "imageWidth": 360
+      },
+      {
+        "prompt": "Başlangıç sayısı, 10 ile 50 arasında (10 ve 50 dâhil) bir çift doğal sayıdır. Görseldeki kural tam 3 tur uygulanıyor. Her turda eldeki sayı 3'e kalansız bölünüyorsa 3'e bölünüyor; bölünmüyorsa sayıya 5 ekleniyor. Bir turda yalnız bir işlem yapılıyor ve çıkan sayı sonraki tura aktarılıyor.\n\nÜçüncü turun sonunda 7 elde edildiğine göre, koşullara uyan bütün başlangıç sayılarının toplamı kaçtır?",
+        "options": [
+          "48",
+          "66",
+          "77",
+          "96"
+        ],
+        "correct": 1,
+        "explanation": "Son turda 7 elde etmek için bu tura 21 ile girilip 3'e bölünmüş ya da 2 ile girilip 5 eklenmiş olmalıdır. Bir önceki turdan önceki olası sayılar 63, 16 ve 6'dır. Bunlara ulaşan pozitif başlangıç sayıları sırasıyla (189, 58), (48, 11) ve (18, 1) olur; her biri ilgili bölünebilme koşulunu sağlar. 10–50 aralığında çift olanlar yalnız 18 ve 48'dir. Kontrol: 18 → 6 → 2 → 7 ve 48 → 16 → 21 → 7. Toplam 18 + 48 = 66'dır.",
+        "imageHeight": 600,
+        "imageAlt": "Üç tur uygulanacak kural: Elde bulunan sayı 3'e kalansız bölünüyor mu? Evet ise sayıyı 3'e böl. Hayır ise sayıya 5 ekle. Her turda yalnız bir dal uygulanıyor. Sonuç sonraki tura geçiyor; üçüncü turun son sonucu 7.",
+        "id": "m6-1-t11-07",
+        "subject": "matematik",
+        "term": 1,
+        "imageUrl": "/grade6/matematik/test-11/soru-07.svg",
+        "imageWidth": 360
+      },
+      {
+        "prompt": "Rakamları birbirinden farklı olan dört basamaklı 2AB6 sayısı, hem 4'e hem 9'a kalansız bölünebilmektedir. A ve B birer rakamdır.\n\nKoşullara uyan en büyük sayı ile en küçük sayı arasındaki fark kaçtır?",
+        "options": [
+          "900",
+          "720",
+          "738",
+          "756"
+        ],
+        "correct": 0,
+        "explanation": "4'e bölünebilmek için son iki basamak olan B6, 4'ün katı olmalıdır; bu nedenle B = 1, 3, 5, 7 veya 9 olabilir. 9'a bölünebilmek için rakamlar toplamı 2 + A + B + 6 = A + B + 8, 9'un katı olmalıdır. Rakamlar farklı olduğundan A ve B, 2 veya 6 olamaz. Olası toplamlar 9 ve 18'dir: A + B = 1 veya 10. A + B = 1 için (A, B) = (0, 1) uygundur ve 2016 elde edilir. A + B = 10 için uygun çiftler (9, 1), (7, 3), (3, 7), (1, 9)'dur. Böylece en büyük sayı 2916, en küçük sayı 2016 olur; fark 900'dür.",
+        "id": "m6-1-t11-08",
+        "subject": "matematik",
+        "term": 1
+      },
+      {
+        "prompt": "İki uyarı lambası başlangıçta aynı anda birer kez yanıp sönüyor. Bundan sonra birinci lamba her 18 saniyede, ikinci lamba her 24 saniyede bir anlık olarak yanıp sönmeye devam ediyor.\n\nBaşlangıç anı sayılmadan, sonraki 5 dakika boyunca yalnız bir lambanın yanıp söndüğü kaç farklı an vardır? Beşinci dakikanın sonu bu süreye dâhildir.",
+        "options": [
+          "8",
+          "12",
+          "16",
+          "20"
+        ],
+        "correct": 3,
+        "explanation": "5 dakika 300 saniyedir. Birinci lamba 18, 36, …, 288 saniyelerinde toplam 16; ikinci lamba 24, 48, …, 288 saniyelerinde toplam 12 kez yanar. İkisi 18 ve 24'ün ortak katlarında birlikte yanar; 300 saniye içindeki ortak anlar 72, 144, 216 ve 288'dir. Toplam 16 + 12 sayımında bu dört anın her biri iki kez yer alır. Yalnız bir lambanın yandığı anları bulmak için ikişer sayımı da çıkarmak gerekir: 16 + 12 − 2 × 4 = 20. 300. saniyede iki lamba da yanmaz.",
+        "id": "m6-1-t11-09",
+        "subject": "matematik",
+        "term": 1
+      },
+      {
+        "prompt": "Bir öğretmen elindeki kartlardan sınıftaki her öğrenciye 3 kart verirse 8 kart artıyor. Her öğrenciye 4 kart vermek isterse 7 kart eksik kalıyor.\n\nÖğretmen sonunda bazı öğrencilere 5'er, diğerlerine 3'er kart vererek elindeki kartların tamamını dağıtıyor. Buna göre 3 kart alan öğrenci sayısı, 5 kart alan öğrenci sayısından kaç fazladır?",
+        "options": [
+          "7",
+          "4",
+          "8",
+          "11"
+        ],
+        "correct": 0,
+        "explanation": "Her öğrenciye birer kart daha verebilmek için artan 8 karta ek olarak 7 kart gerekir. Bu nedenle öğrenci sayısı 8 + 7 = 15'tir. Kart sayısı 15 × 3 + 8 = 53 olur. Herkese önce 3'er kart verilirse 8 kart kalır. 5 kart alacak her öğrenciye 2 ek kart gerektiğinden 8 ÷ 2 = 4 öğrenci 5 kart alır. Diğer 15 − 4 = 11 öğrenci 3 kart alır. İstenen fark 11 − 4 = 7'dir. Kontrol: 4 × 5 + 11 × 3 = 53.",
+        "id": "m6-1-t11-10",
+        "subject": "matematik",
+        "term": 1
+      }
+    ],
   },
   term2: {},
 };
+

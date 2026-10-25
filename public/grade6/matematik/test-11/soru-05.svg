@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="460" viewBox="0 0 360 460" role="img">
+<title>Test 11 · Soru 5</title>
+<desc>ABC ikizkenar üçgeninde AB ve AC eşit. F, B, D, C aynı doğru üzerinde bu sırayla; ABF dış açısı 124 derece. AD, BAC açısını iki eş açıya; CE, ACB açısını iki eş açıya ayırıyor. E, AB üzerinde. AD ile CE&#x27;nin kesişimi I. AIC açısı soruluyor; şekilden ölçüm yapılmaz.</desc>
+<rect width="360" height="460" fill="white"/>
+<text x="180" y="29" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Açıortaylar</text>
+<polygon points="195.00,99.68 70.00,285.00 320.00,285.00" fill="#F4F9FD" stroke="#36586D" stroke-width="3"/>
+<line x1="18.0" y1="285.0" x2="70.0" y2="285.0" stroke="#36586D" stroke-width="3"/>
+<line x1="195.0" y1="99.68" x2="195.0" y2="285.0" stroke="#506CBA" stroke-width="3"/>
+<line x1="320.0" y1="285.0" x2="135.99" y2="187.16" stroke="#506CBA" stroke-width="3"/>
+<line x1="119.55" y1="224.05" x2="107.95" y2="216.22" stroke="#36586D" stroke-width="3"/>
+<line x1="282.05" y1="216.22" x2="270.45" y2="224.05" stroke="#36586D" stroke-width="3"/>
+<path d="M 214.57 128.70 A 35 35 0 0 1 195.00 134.68" fill="none" stroke="#36586D" stroke-width="2.5"/>
+<path d="M 195.00 134.68 A 35 35 0 0 1 175.43 128.70" fill="none" stroke="#36586D" stroke-width="2.5"/>
+<path d="M 287.00 285.00 A 33 33 0 0 1 290.86 269.51" fill="none" stroke="#36586D" stroke-width="2.5"/>
+<path d="M 290.86 269.51 A 33 33 0 0 1 301.55 257.64" fill="none" stroke="#36586D" stroke-width="2.5"/>
+<path d="M 281.00 285.00 A 39 39 0 0 1 285.57 266.69" fill="none" stroke="#36586D" stroke-width="2.5"/>
+<path d="M 285.57 266.69 A 39 39 0 0 1 298.19 252.67" fill="none" stroke="#36586D" stroke-width="2.5"/>
+<path d="M 35.00 285.00 A 35 35 0 0 1 89.57 255.98" fill="none" stroke="#36586D" stroke-width="2.5"/>
+<text x="57" y="232" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">124°</text>
+<path d="M 195.00 188.54 A 30 30 0 0 1 221.49 232.62" fill="none" stroke="#B96612" stroke-width="3"/>
+<text x="237" y="202" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#8C4900">?</text>
+<text x="195.0" y="70.68" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">A</text>
+<text x="70.0" y="314.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">B</text>
+<text x="320.0" y="314.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">C</text>
+<text x="195.0" y="314.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">D</text>
+<text x="18.0" y="314.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">F</text>
+<text x="113.99" y="182.16" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">E</text>
+<text x="175.0" y="222.54" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">I</text>
+<circle cx="195.0" cy="218.54" r="4" fill="#15354B"/>
+<text x="180" y="352" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">AB = AC</text>
+<text x="180" y="391" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">AD ve CE açıortay</text>
+<text x="180" y="434" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">Şekil ölçekli değildir.</text>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="460" viewBox="0 0 360 460" role="img">
+<title>Test 11 · Soru 4</title>
+<desc>Okuma süresi ve öğrenci sayısı tablosu: 10 dakika için 2 öğrenci, 20 dakika için a öğrenci, 30 dakika için b öğrenci, 40 dakika için 3 öğrenci. Toplam 12 öğrenci; aritmetik ortalama 27,5 dakika.</desc>
+<rect width="360" height="460" fill="white"/>
+<text x="180" y="30" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Okuma süreleri</text>
+<rect x="20" y="69" width="320" height="270" rx="0" fill="white" stroke="#36586D" stroke-width="2"/>
+<rect x="21" y="70" width="318" height="53" fill="#E8F3FB"/>
+<line x1="200" y1="69" x2="200" y2="339" stroke="#36586D" stroke-width="2"/>
+<line x1="20" y1="123" x2="340" y2="123" stroke="#36586D" stroke-width="2"/>
+<line x1="20" y1="177" x2="340" y2="177" stroke="#36586D" stroke-width="2"/>
+<line x1="20" y1="231" x2="340" y2="231" stroke="#36586D" stroke-width="2"/>
+<line x1="20" y1="285" x2="340" y2="285" stroke="#36586D" stroke-width="2"/>
+<text x="110" y="96" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Süre (dk)</text>
+<text x="270" y="96" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Öğrenci</text>
+<text x="110" y="150" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">10</text>
+<text x="270" y="150" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">2</text>
+<text x="110" y="204" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">20</text>
+<text x="270" y="204" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">a</text>
+<text x="110" y="258" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">30</text>
+<text x="270" y="258" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">b</text>
+<text x="110" y="312" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">40</text>
+<text x="270" y="312" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">3</text>
+<text x="180" y="380" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Toplam: 12</text>
+<text x="180" y="427" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Ortalama: 27,5 dk</text>
+</svg>

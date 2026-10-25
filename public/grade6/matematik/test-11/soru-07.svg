@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="600" viewBox="0 0 360 600" role="img">
+<title>Test 11 · Soru 7</title>
+<desc>Üç tur uygulanacak kural: Elde bulunan sayı 3&#x27;e kalansız bölünüyor mu? Evet ise sayıyı 3&#x27;e böl. Hayır ise sayıya 5 ekle. Her turda yalnız bir dal uygulanıyor. Sonuç sonraki tura geçiyor; üçüncü turun son sonucu 7.</desc>
+<rect width="360" height="600" fill="white"/>
+<text x="180" y="27" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Üç turluk sayı kuralı</text>
+<rect x="88" y="55" width="184" height="45" rx="12" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<text x="180" y="78" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Eldeki sayı</text>
+<line x1="180" y1="100" x2="180" y2="120" stroke="#36586D" stroke-width="3"/>
+<polygon points="180.00,120.00 185.00,110.00 175.00,110.00" fill="#36586D"/>
+<polygon points="180,120 340,190 180,260 20,190" fill="#FFF1CB" stroke="#36586D" stroke-width="2.5"/>
+<text x="180" y="174" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">3&#x27;e kalansız</text>
+<text x="180" y="208" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">bölünür mü?</text>
+<line x1="20" y1="190" x2="20" y2="292" stroke="#36586D" stroke-width="3"/>
+<line x1="20" y1="292" x2="88" y2="292" stroke="#36586D" stroke-width="3"/>
+<line x1="88" y1="292" x2="88" y2="325" stroke="#36586D" stroke-width="3"/>
+<polygon points="88.00,325.00 93.00,315.00 83.00,315.00" fill="#36586D"/>
+<line x1="340" y1="190" x2="340" y2="292" stroke="#36586D" stroke-width="3"/>
+<line x1="340" y1="292" x2="272" y2="292" stroke="#36586D" stroke-width="3"/>
+<line x1="272" y1="292" x2="272" y2="325" stroke="#36586D" stroke-width="3"/>
+<polygon points="272.00,325.00 277.00,315.00 267.00,315.00" fill="#36586D"/>
+<text x="88" y="269" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Evet</text>
+<text x="272" y="269" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Hayır</text>
+<rect x="16" y="325" width="144" height="60" rx="12" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<rect x="200" y="325" width="144" height="60" rx="12" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<text x="88" y="355" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">3&#x27;e böl</text>
+<text x="272" y="355" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">5 ekle</text>
+<line x1="88" y1="385" x2="88" y2="420" stroke="#36586D" stroke-width="3"/>
+<line x1="272" y1="385" x2="272" y2="420" stroke="#36586D" stroke-width="3"/>
+<line x1="88" y1="420" x2="272" y2="420" stroke="#36586D" stroke-width="3"/>
+<line x1="180" y1="420" x2="180" y2="452" stroke="#36586D" stroke-width="3"/>
+<polygon points="180.00,452.00 185.00,442.00 175.00,442.00" fill="#36586D"/>
+<rect x="55" y="452" width="250" height="48" rx="12" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<text x="180" y="476" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Sonraki tur</text>
+<text x="180" y="539" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Toplam 3 tur</text>
+<text x="180" y="579" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Son sonuç: 7</text>
+</svg>
