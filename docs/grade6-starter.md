@@ -322,3 +322,10 @@ Toplam: 23 test, 230 soru, 117 SVG, 28 rota. Önceki 220 soru ve 110 SVG korunur
 - Yeni Test 8, orta düzeyde 8 metin + 2 görsel okuma sorusudur. Bağlamda anlam, yakın anlam, ana düşünce, işlev ve görünüş, çalışma planı, erişim iletisi, paragraf sıralama, benzetme, tarih yazımı ve yeniden okuma işlenir. Tam yıllık müfredat kapsamı iddiası değildir.
 - Anahtar: **B, D, A, C, D, A, C, B, D, B**. İki pasif SVG 360 birim genişliğinde, en az 26 birim yazıyla hazırlanır; 238 piksel çıktıları incelenir.
 - Önceki 370 soru ve 222 SVG korunur. Toplam 38 test / 380 soru / 224 SVG / 43 rota. Veri, rota, TypeScript ve üretim derlemesiyle doğrulanır. Etkileşimli tarayıcı testi yapılmaz; production’a otomatik aktarılmaz.
+
+
+## Türkçe Test 9 — Metinler Arası Bağlar ve Bilgiye Ulaşma (25 Ekim 2026)
+
+- Yeni Test 9, orta düzeyde 8 metin + 2 görsel okuma sorusudur. Bağlamda anlam, iki metnin ortak tutumu, ana düşünce, paragrafta cümle yerleştirme, güncellenen duyuruyu yorumlama, içindekilerden bilgi bulma, anlatıcı, karşıtlık, alıntı noktalaması ve eleştirel görsel okuma işlenir. Tam yıllık müfredat kapsamı iddiası değildir.
+- Anahtar: **C, A, D, B, C, D, A, B, D, B**. İki pasif SVG 360 birim genişliğinde, en az 26 birim yazıyla hazırlanır; 238 piksel çıktıları incelenir.
+- Önceki 380 soru ve 224 SVG korunur. Toplam 39 test / 390 soru / 226 SVG / 44 rota. Veri, rota, TypeScript ve üretim derlemesiyle doğrulanır. Etkileşimli tarayıcı testi yapılmaz; production’a otomatik aktarılmaz.

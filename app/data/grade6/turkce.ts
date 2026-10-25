@@ -1203,6 +1203,156 @@ export const turkceData: SubjectData = {
         "correct": 1,
         "explanation": "Anlatıcı her okumada farklı bir özelliğe odaklanarak yeni ayrıntılar keşfeder. İlk okumanın yanlış veya yetersiz olduğu söylenmez; okuma amaçlarından biri diğerinden üstün tutulmaz. Bu yüzden yalnızca B seçeneğindeki genel sonuca ulaşılabilir."
       }
+    ],
+    "test9": [
+      {
+        "id": "t6-1-t9-01",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“Atölyede öğrendiğimiz tekniği farklı malzemelerle denemek, tasarımlarımıza yeni bir boyut kazandırdı.” cümlesinde “yeni bir boyut kazandırmak” ne demektir?",
+        "options": [
+          "Tasarımların ölçülerini büyütmek",
+          "Tasarımları daha kısa sürede tamamlamak",
+          "Tasarımlara farklı bir yön katmak",
+          "Tasarımların yapımını zorlaştırmak"
+        ],
+        "correct": 2,
+        "explanation": "Farklı malzemelerle denemek, tasarımlara yeni bir özellik ve bakış açısı katar. Burada boyut sözcüğü fiziksel büyüklük anlamında kullanılmamıştır."
+      },
+      {
+        "id": "t6-1-t9-02",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "İpek: “Bir kitabı seçerken arkadaşlarımın önerilerine bakarım; sonra birkaç sayfasını okuyup karar veririm.”\nEren: “Ben de önerileri dinlerim ama kitabın bana uygun olup olmadığını anlamak için önce içinden bir bölüm okurum.”\nBu iki kişinin ortak tutumu hangisidir?",
+        "options": [
+          "Önerileri kendi incelemeleriyle birlikte değerlendirmek",
+          "Arkadaşlarının en çok beğendiği kitabı seçmek",
+          "Yalnızca daha önce tanıdıkları yazarları okumak",
+          "Kitabın tamamını okumadan seçim yapmamak"
+        ],
+        "correct": 0,
+        "explanation": "İki kişi de önerileri dinler, fakat son kararı kitaptan bir bölüm inceleyerek verir. Arkadaşlarının seçimini doğrudan uyguladıkları veya kitabın tamamını okudukları söylenmez."
+      },
+      {
+        "id": "t6-1-t9-03",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Okulun duvarına asacağımız büyük resmi çizerken herkes farklı bir şey önerdi. Önerileri hemen oylamak yerine hangi düşüncenin neden önemli bulunduğunu konuştuk. Sonunda birkaç önerinin ortak yönünü birleştiren bir tasarım hazırladık.\nBu metinde hangi düşünce öne çıkar?",
+        "options": [
+          "Bir grup çalışmasında hızlı karar vermek için önerileri oylamak gerekir.",
+          "Ortak bir tasarımda her öneriye aynı ölçüde yer vermek gerekir.",
+          "Bir tasarım hazırlarken en fazla beğenilen öneri esas alınmalıdır.",
+          "Farklı önerilerin gerekçelerini anlamak, ortak bir çözüm üretmeyi kolaylaştırabilir."
+        ],
+        "correct": 3,
+        "explanation": "Grup, önerilerin gerekçelerini dinleyerek ortak noktaları bulur. Metin oylamayı, her öneriye eşit yer vermeyi veya en beğenileni seçmeyi değil, birbirini anlamaya dayalı ortak çözümü vurgular."
+      },
+      {
+        "id": "t6-1-t9-04",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "I. Şehirde kuşları gözlemlemeye başladığımda yalnızca büyük parklara gidiyordum.\nII. Bir gün evimin penceresinden baktığımda küçük bir ağacın çevresinde de birçok kuş gördüm.\nIII. Artık yolumun üzerindeki ağaçlara da dikkatle bakıyorum.\nIV. Böylece daha önce fark etmeden geçtiğim pek çok canlıyı tanıdım.\n“Bu karşılaşma, gözlem yapmak için uzaklara gitmem gerekmediğini düşündürdü.” cümlesi hangi cümleden sonra getirilmelidir?",
+        "options": [
+          "I",
+          "II",
+          "III",
+          "IV"
+        ],
+        "correct": 1,
+        "explanation": "Bu karşılaşma sözü, II. cümledeki pencere önünde kuş görme olayına gönderme yapar. Eklenen cümle, III. cümlede anlatılan davranış değişikliğinin nedenini açıklar."
+      },
+      {
+        "id": "t6-1-t9-05",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "İlk duyuru ile güncelleme birlikte okunduğunda, etkinliğe katılmak isteyen biri hangi bilgiyi doğru kullanmış olur?",
+        "options": [
+          "Pazar günü 11.00’de okul bahçesine gider.",
+          "Cumartesi günü 11.00’de spor salonuna gider.",
+          "Pazar günü 11.00’de spor salonuna gider.",
+          "Pazar günü 14.00’te spor salonuna gider."
+        ],
+        "correct": 2,
+        "explanation": "Güncelleme günü pazara, yeri spor salonuna çevirir; başlangıç saati değişmez. İlk duyurudaki 11.00 saati yeni gün ve yerle birlikte kullanılmalıdır.",
+        "imageWidth": 360,
+        "imageHeight": 660,
+        "imageUrl": "/grade6/turkce/test-9/soru-05.svg",
+        "imageAlt": "İlk duyuru: uçurtma tasarım atölyesi cumartesi saat 11.00 okul bahçesinde. Güncelleme: etkinlik pazar günü spor salonunda yapılacak, başlangıç saati değişmedi."
+      },
+      {
+        "id": "t6-1-t9-06",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Deniz kaplumbağalarının karşılaştığı tehlikeleri ve onları korumak için yapılabilecekleri araştıran bir öğrenci, görseldeki kitaptan yararlanırken hangi iki sayfadan başlayan bölümleri öncelikle okumalıdır?",
+        "options": [
+          "4 ve 10",
+          "10 ve 18",
+          "4 ve 26",
+          "18 ve 26"
+        ],
+        "correct": 3,
+        "explanation": "Tehlikeler bölümü 18, Koruma yolları bölümü 26. sayfada başlar. Bu iki bölüm araştırmanın tehlikeler ve önlemlerle ilgili sorularını doğrudan karşılar.",
+        "imageWidth": 360,
+        "imageHeight": 650,
+        "imageUrl": "/grade6/turkce/test-9/soru-06.svg",
+        "imageAlt": "Deniz kaplumbağaları kitabının içindekiler sayfası: Yaşam alanları sayfa 4, Beslenme sayfa 10, Tehlikeler sayfa 18, Koruma yolları sayfa 26."
+      },
+      {
+        "id": "t6-1-t9-07",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“Zeynep, hazırladığı maketi masanın üzerine bıraktı. Pencereyi açarken kolu makete değdi ve bir parça yere düştü. Eğilip parçayı aldı, yapıştırıcısını aramaya başladı.”\nBu metnin anlatımıyla ilgili hangi yargı doğrudur?",
+        "options": [
+          "Olaylar, dışarıdan bir anlatıcı tarafından üçüncü kişiyle aktarılmıştır.",
+          "Olayı yaşayan kişi, kendi duygularını birinci kişiyle anlatmıştır.",
+          "Kişiler karşılıklı konuşarak olayı aktarmıştır.",
+          "Anlatıcı, okura bir işi yapmanın kurallarını sıralamıştır."
+        ],
+        "correct": 0,
+        "explanation": "Zeynep’in yaptıkları bıraktı, aldı gibi üçüncü kişi biçimleriyle aktarılır. Ben anlatımı veya karşılıklı konuşma yoktur; metin bir kullanım yönergesi değildir."
+      },
+      {
+        "id": "t6-1-t9-08",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“Yarışmayı kazanacağımızı sanıyorduk; oysa sonuçlar açıklandığında ikinci olduğumuzu öğrendik.” cümlesinde “oysa” sözü hangi ilişkiyi kurar?",
+        "options": [
+          "Bir davranışın yapılma amacını belirtir.",
+          "Beklentinin gerçekleşen sonuçtan farklı olduğunu gösterir.",
+          "Sonucun hangi koşulda değişeceğini açıklar.",
+          "İkinci yargının ilkini örneklediğini gösterir."
+        ],
+        "correct": 1,
+        "explanation": "Beklenti birinci olmak, gerçekleşen sonuç ikinci olmaktır. Oysa sözü bu farklılığı belirtir; amaç, koşul veya örnek ilişkisi kurmaz."
+      },
+      {
+        "id": "t6-1-t9-09",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Bir öğrenci arkadaşının sözünü değiştirmeden yazısına aktarmak istiyor. Hangi cümlede bunun için gereken noktalama doğru kullanılmıştır?",
+        "options": [
+          "Arkadaşım: Her gün biraz okumak istiyorum, dedi.",
+          "Arkadaşım “Her gün biraz okumak istiyorum, dedi.”",
+          "Arkadaşım, Her gün biraz okumak istiyorum. dedi.",
+          "Arkadaşım, “Her gün biraz okumak istiyorum.” dedi."
+        ],
+        "correct": 3,
+        "explanation": "Aynen aktarılan söz tırnak içine alınır; bu sözün sonundaki nokta tırnağın içinde kalır. D seçeneğinde aktarılan söz doğru sınırlar içinde gösterilmiştir."
+      },
+      {
+        "id": "t6-1-t9-10",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“Bir fotoğraf, çekildiği anı gösterir. Ancak o anın öncesinde ve sonrasında neler olduğunu tek başına anlatmaz. Bu yüzden bir olay hakkında karar verirken yalnızca bir fotoğrafa bakmak yeterli olmayabilir.”\nBu metnin amacı aşağıdakilerden hangisidir?",
+        "options": [
+          "Olayları fotoğraflarla anlatırken çekim sırasına dikkat etmeyi önermek",
+          "Bir görüntüyü değerlendirirken olayın bütünüyle ilgili bilgi aramaya yöneltmek",
+          "Fotoğraflardaki küçük ayrıntıları inceleme yöntemlerini açıklamak",
+          "Bir olayın öncesini ve sonrasını fotoğraf çekerek kaydetmeye yöneltmek"
+        ],
+        "correct": 1,
+        "explanation": "Metin, tek görüntünün olayın tamamını sunamayabileceğini vurgular. Çekim sırası, ayrıntı inceleme yöntemi veya yeni fotoğraflar çekme hakkında öneri vermez; değerlendirme için olayın bağlamını araştırmaya yöneltir."
+      }
     ]
   },
   "term2": {}
