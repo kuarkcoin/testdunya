@@ -280,3 +280,10 @@ Toplam: 23 test, 230 soru, 117 SVG, 28 rota. Önceki 220 soru ve 110 SVG korunur
 - Mevcut Test 2, orta düzeyde 8 metin + 2 görsel okuma sorusuyla yenilendi. Sözcüğün bağlamdaki anlamı, bakış açısı, başlık, paragraf sıralama, duyuru okuma, görsel mesaj, koşul, öznel yargı, soru eki ve anlamı etkileyen virgül işlenir. Tam yıllık müfredat kapsamı iddiası değildir.
 - Anahtar: **C, A, D, B, C, A, D, B, A, C**. İki pasif SVG 360 birim genişliğinde, en az 26 birim yazıyla hazırlanır; 238 piksel çıktıları denetlenir.
 - Diğer 320 soru ve 210 SVG korunur. Toplam 33 test / 330 soru / 212 SVG / 38 rota. Veri, rota, TypeScript ve üretim derlemesiyle doğrulanır. Etkileşimli tarayıcı testi yapılmadı; production’a otomatik aktarılmaz.
+
+
+## Türkçe Test 3 — Paragraf, Çıkarım ve Görsel Yorumlama (25 Ekim 2026)
+
+- Mevcut Test 3, orta düzeyde 8 metin + 2 görsel okuma sorusuyla yenilendi. Bağlamda sözcük anlamı, mecazlı anlatım, ana düşünce, akışı bozan cümle, grafikten çıkarılamayan yargı, görsel mesaj, gezi yazısı, paragraf tamamlama, büyük harfler ve özetleyici ifade işlenir. Tam yıllık müfredat kapsamı iddiası değildir.
+- Anahtar: **A, D, B, C, D, A, C, B, D, A**. İki pasif SVG 360 birim genişliğinde ve en az 26 birim yazıyla hazırlanır; 238 piksel çıktıları denetlenir.
+- Diğer 320 soru ve 212 SVG korunur. Toplam 33 test / 330 soru / 214 SVG / 38 rota. Veri, rota, TypeScript ve üretim derlemesiyle doğrulanır. Etkileşimli tarayıcı testi yapılmaz; production’a otomatik aktarılmaz.

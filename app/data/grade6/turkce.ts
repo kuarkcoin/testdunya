@@ -309,141 +309,149 @@ export const turkceData: SubjectData = {
         "id": "t6-1-t3-01",
         "subject": "turkce",
         "term": 1,
-        "prompt": "'Ada, eski masal kitabının yıpranmaması için sayfalarını özenle çevirdi.' cümlesinde 'özenle' yerine hangisi getirilebilir?",
+        "prompt": "“Ezberlediğim bilgileri kısa sürede unutuyordum. Öğrendiklerimi günlük yaşamda kullanınca bilgiler daha kalıcı oldu.” cümlelerinde “kalıcı” sözcüğü hangi anlamda kullanılmıştır?",
         "options": [
-          "Acele ederek",
-          "Dikkat ederek",
-          "Düşünmeden",
-          "Gürültüyle"
+          "Uzun süre etkisini sürdüren",
+          "Kolayca elde edilen",
+          "Herkes tarafından bilinen",
+          "Ayrıntıları azaltılmış"
         ],
-        "correct": 1,
-        "explanation": "Ada, kitabın zarar görmemesine dikkat etmektedir. Bu nedenle 'özenle' sözcüğü yerine 'dikkat ederek' sözü getirilebilir."
+        "correct": 0,
+        "explanation": "Bilgilerin kısa sürede unutulmasının karşısına kalıcılık konmuştur. Burada kalıcı, zihinde uzun süre kalan anlamındadır."
       },
       {
         "id": "t6-1-t3-02",
         "subject": "turkce",
         "term": 1,
-        "prompt": "'Mert, sınıfta arkadaşlarına yeni öğrendiği deyimi açıkladı.' cümlesinde aşağıdaki sorulardan hangisinin cevabı yoktur?",
+        "prompt": "“Dedemin anlattığı çocukluk anıları, geçmişle bugün arasında bir köprü kuruyor.” cümlesinde “köprü kurmak” sözü neyi anlatır?",
         "options": [
-          "Neyi açıkladı?",
-          "Kim açıkladı?",
-          "Nerede açıkladı?",
-          "Ne zaman açıkladı?"
+          "Geçmişteki olayların sırasını değiştirmeyi",
+          "Anıları yalnızca yazılı kaynaklardan öğrenmeyi",
+          "Eski yaşam biçimlerini bugünkülerden üstün tutmayı",
+          "Farklı zamanlar arasında bağ oluşturmayı"
         ],
         "correct": 3,
-        "explanation": "Cümlede kişi Mert, yer sınıf, açıklanan şey yeni öğrenilen deyimdir. Açıklamanın zamanı belirtilmemiştir."
+        "explanation": "Anılar, geçmişte yaşananların bugün anlaşılmasını sağlar. Köprü sözcüğü gerçek bir yapı değil, iki dönem arasındaki bağlantıyı anlatır."
       },
       {
         "id": "t6-1-t3-03",
         "subject": "turkce",
         "term": 1,
-        "prompt": "'Ninniler, annelerin ve babaların çocuklarına söylediği ezgili sözlerdir. Bu sözler, dilimizin sevgi dolu anlatımlarını kuşaktan kuşağa taşır.' metni için hangi anahtar sözcükler uygundur?",
+        "prompt": "Bir yapbozu tamamlarken ilk denememde birçok parçayı yanlış yere koydum. Yanlışları gizlemek yerine hangi renk ve biçimlerin beni yanılttığını not ettim. Yeniden denediğimde bu notlar sayesinde daha dikkatli seçim yaptım.\nBu metinde asıl vurgulanan düşünce hangisidir?",
         "options": [
-          "Ulaşım - taşıt",
-          "Ninni - dil - sevgi",
-          "Sayı - işlem",
-          "Bitki - toprak"
+          "Bir işe başlamadan önce ayrıntılı bir plan hazırlamak başarıyı kolaylaştırır.",
+          "Yanlışlarımızı incelemek, sonraki denemelerimizde ilerlememize yardımcı olur.",
+          "Çalışırken yaşanan güçlükleri başkalarıyla paylaşmak çözüm bulmayı hızlandırır.",
+          "Bir çalışmada aynı yöntemi değiştirmeden tekrarlamak başarıya ulaştırır."
         ],
         "correct": 1,
-        "explanation": "Metin, ninnilerin sevgi dolu sözlerini ve dilimizdeki yerini anlatır. 'Ninni, dil, sevgi' metnin konusuyla doğrudan ilgilidir."
+        "explanation": "Anlatıcı, yanlışlarının nedenlerini inceleyip sonraki denemesinde bunlardan yararlanır. Önceden plan hazırlama veya başkasından yardım alma anlatılmaz; aynı yöntemi değiştirmeden sürdürme değil, hatalardan öğrenme vurgulanır."
       },
       {
         "id": "t6-1-t3-04",
         "subject": "turkce",
         "term": 1,
-        "prompt": "Hangi durum 'ağzı kulaklarına varmak' deyimiyle anlatılabilir?",
+        "prompt": "I. Bir öykü okurken kişilerin kararlarını anlamaya çalışırım.\nII. Onların yerinde olsam ne yapacağımı düşünürüm.\nIII. Kitabın sayfa sayısını son sayfasına bakarak öğrenirim.\nIV. Böylece kendi düşüncelerimden farklı bakış açılarını da fark ederim.\nBu paragrafta düşüncenin akışını bozan cümle hangisidir?",
         "options": [
-          "Efe'nin ödevini unuttuğu için üzülmesi",
-          "Efe'nin gürültüden rahatsız olması",
-          "Efe'nin aradığı kitabı hediye alınca çok sevinmesi",
-          "Efe'nin uzun yürüyüşte yorulması"
+          "I",
+          "II",
+          "III",
+          "IV"
         ],
         "correct": 2,
-        "explanation": "'Ağzı kulaklarına varmak', çok sevinmek ve bu sevinci yüzünden belli etmek demektir. Hediye kitaba sevinen Efe bu deyime uygundur."
+        "explanation": "I, II ve IV. cümleler öykü kişilerini anlayıp farklı bakış açılarını tanımayla ilgilidir. III. cümle ise sayfa sayısını öğrenmeyi anlatarak konudan uzaklaşır."
       },
       {
         "id": "t6-1-t3-05",
         "subject": "turkce",
         "term": 1,
-        "prompt": "'Okurken bilmediğim sözcükleri not ediyorum. Sonra sözlükten anlamlarını buluyor, örnek cümlelerini inceliyorum. Sözlük, okuduklarımı daha iyi anlamama yardım ediyor.' metnine en uygun başlık hangisidir?",
+        "prompt": "Grafik, bir sınıfta öğrencilerin en çok okumak istediği kitap türlerini göstermektedir. Her öğrenci yalnızca bir tür seçmiştir. Grafikten aşağıdaki sonuçlardan hangisine ulaşılamaz?",
         "options": [
-          "Okul Bahçesindeki Oyunlar",
-          "Kitapların Renkli Kapakları",
-          "Bir Yolculuk Anısı",
-          "Sözlüğün Rehberliğinde"
+          "Şiir, öyküden daha az öğrenci tarafından seçilmiştir.",
+          "Gezi yazısı ile bilim kitabını seçen öğrenci sayıları eşittir.",
+          "Öykü, en çok tercih edilen türdür.",
+          "Öyküyü seçen öğrenciler diğer türleri okumayı sevmemektedir."
         ],
         "correct": 3,
-        "explanation": "Metin, sözlük kullanarak sözcüklerin anlamını öğrenmeyi anlatır. 'Sözlüğün Rehberliğinde' başlığı bu içeriği karşılar."
+        "explanation": "Grafik yalnızca öğrencilerin en çok okumak istediği türü gösterir. Bir türü tercih etmek, diğer türleri sevmedikleri anlamına gelmez. Öykü 8, bilim ve gezi 5’er, şiir 2 öğrenci tarafından seçilmiştir.",
+        "imageWidth": 360,
+        "imageHeight": 590,
+        "imageUrl": "/grade6/turkce/test-3/soru-05.svg",
+        "imageAlt": "Kitap tercihi grafiği: öykü 8, bilim 5, gezi 5, şiir 2 öğrenci; her öğrenci tek tür seçmiştir."
       },
       {
         "id": "t6-1-t3-06",
         "subject": "turkce",
         "term": 1,
-        "prompt": "'Elif, şiiri sözcükleri açıkça söyleyerek ve uygun yerlerde duraklayarak okudu.' cümlesindeki 'sözcükleri açıkça söyleyerek ve uygun yerlerde duraklayarak' bölümü hangi soruya cevap verir?",
+        "prompt": "Afişteki iki davranış birlikte düşünüldüğünde verilmek istenen mesaj hangisidir?",
         "options": [
-          "Ne zaman okudu?",
-          "Nerede okudu?",
-          "Nasıl okudu?",
-          "Kime okudu?"
+          "Ortak kullanım alanlarında başkalarının çalışma hakkını gözetmeliyiz.",
+          "Kütüphanede yalnızca kendi kitaplarımızı okumalıyız.",
+          "Okurken daha hızlı ilerlemek için teknolojiden yararlanmalıyız.",
+          "Arkadaşlarımızla görüşmek için sadece kütüphaneyi seçmeliyiz."
         ],
-        "correct": 2,
-        "explanation": "Verilen bölüm, Elif'in şiiri okuma biçimini açıklar. Bir işin yapılış biçimini öğrenmek için 'Nasıl?' sorusu sorulur."
+        "correct": 0,
+        "explanation": "Telefonu sessize almak ve konuşmak için dışarı çıkmak, içeride okuyanların dikkatinin dağılmasını önler. İki davranışın ortak amacı başkalarının çalışma ortamına saygı göstermektir.",
+        "imageWidth": 360,
+        "imageHeight": 640,
+        "imageUrl": "/grade6/turkce/test-3/soru-06.svg",
+        "imageAlt": "Birlikte okuyoruz başlıklı kütüphane afişi: sessiz telefon simgesi ve telefonu sessize al; kapıdan çıkan kişi simgesi ve konuşmak için dışarı çık önerileri."
       },
       {
         "id": "t6-1-t3-07",
         "subject": "turkce",
         "term": 1,
-        "prompt": "'Ben de bu kitabı okumak istiyorum.' cümlesindeki 'de' ile aynı görevde kullanılan sözcük hangi seçenektedir?",
+        "prompt": "“Kıyıdaki küçük kasabaya sabah ulaştık. Limandan çarşıya uzanan dar sokaklarda yürüdük. Evlerin renkli kapıları ve pencerelerindeki çiçekler dikkatimizi çekti. Yöreye özgü yemekleri tattıktan sonra eski deniz fenerini gezdik.”\nBu metin aşağıdaki türlerden hangisine örnektir?",
         "options": [
-          "O da şiir okumayı seviyor.",
-          "Okulda kitap fuarı açıldı.",
-          "Çantamda bir sözlük var.",
-          "Kitap masada duruyor."
+          "Masal",
+          "Haber yazısı",
+          "Gezi yazısı",
+          "Fabl"
         ],
-        "correct": 0,
-        "explanation": "'Ben de' ve 'O da' ifadelerinde ekleme anlamı veren bağlaç vardır; bu bağlaç ayrı yazılır. Diğer seçeneklerdeki '-da' yer bildiren bir ektir."
+        "correct": 2,
+        "explanation": "Gezilip görülen bir yerin sokakları, yapıları ve yöresel özellikleri kişisel gözlemlerle anlatılır. Bu özellikler gezi yazısına uygundur."
       },
       {
         "id": "t6-1-t3-08",
         "subject": "turkce",
         "term": 1,
-        "prompt": "Hangi cümlede 'ki' ayrı yazılan bir bağlaçtır?",
+        "prompt": "“Okuma grubumuzda herkes aynı kitabı okudu. _____ aynı olayın farklı kişilerde farklı duygular uyandırabildiğini gördük.”\nBoş bırakılan yere düşünceyi en uygun biçimde tamamlayan ifade hangisidir?",
         "options": [
-          "Bahçedeki çiçekleri suladım.",
-          "Gördüm ki kitaplık yeniden düzenlenmiş.",
-          "Dünkü şiiri yeniden okudum.",
-          "Defterdeki notları inceledim."
+          "Kitaptaki olayları oluş sırasına göre defterimize yazınca",
+          "Kitap hakkındaki düşüncelerimizi birbirimizle paylaşınca",
+          "Yazarın hayatıyla ilgili kaynakları okuyunca",
+          "Kitabın bölüm başlıklarını sırayla inceleyince"
         ],
         "correct": 1,
-        "explanation": "'Gördüm ki' ifadesinde 'ki' bağlaçtır ve ayrı yazılır. Diğer seçeneklerde '-ki' sözcüğe eklenmiştir."
+        "explanation": "Olayın insanlarda uyandırdığı farklı duyguları öğrenmek için onların düşüncelerini dinlemek gerekir. Diğer etkinlikler kişisel yorumları ortaya çıkarmaz."
       },
       {
         "id": "t6-1-t3-09",
         "subject": "turkce",
         "term": 1,
-        "prompt": "Hangi cümlede virgül, bir kişiye seslenildikten sonra kullanılmıştır?",
+        "prompt": "Aşağıdaki cümlelerin hangisinde büyük harflerin kullanımı doğrudur?",
         "options": [
-          "Bora, bu sözcüğün anlamını biliyor musun?",
-          "Kapı açıldı, öğrenciler içeri girdi.",
-          "Sözlük, defter ve kalem aldım.",
-          "Çantasında kitaplar, dergiler vardı."
+          "Bu yaz ankara’ya gidip Anıtkabir’i ziyaret edeceğiz.",
+          "Bu yaz Ankara’ya gidip anıtkabir’i ziyaret edeceğiz.",
+          "Bu Yaz Ankara’ya gidip Anıtkabir’i ziyaret edeceğiz.",
+          "Bu yaz Ankara’ya gidip Anıtkabir’i ziyaret edeceğiz."
         ],
-        "correct": 0,
-        "explanation": "'Bora, bu sözcüğün anlamını biliyor musun?' cümlesinde doğrudan Bora'ya sesleniliyor. Virgül, hitap olarak kullanılan 'Bora' sözünden sonra gelmiştir."
+        "correct": 3,
+        "explanation": "Şehir adı Ankara ve özel bir yapının adı olan Anıtkabir büyük harfle başlar. Cümle içinde mevsim adı olarak kullanılan yaz ise küçük harfle yazılır."
       },
       {
         "id": "t6-1-t3-10",
         "subject": "turkce",
         "term": 1,
-        "prompt": "'Dedem aynı duyguyu anlatan farklı sözcükler biliyor. Onu dinledikçe ben de yeni sözcükler öğreniyorum. Öğrendiğim bu sözcükler, kendimi daha açık anlatmamı sağlıyor.' metninden hangi sonuca ulaşılır?",
+        "prompt": "Bir öğrenci metninin sonuna “Kısacası, farklı görüşleri dinlemek düşüncelerimizi geliştirebilir.” cümlesini eklemiştir.\n“Kısacası” sözü bu cümleye hangi işlevi kazandırır?",
         "options": [
-          "İnsan ancak kendi yaşıtlarından sözcük öğrenebilir.",
-          "Yeni sözcükler öğrenmek anlatmayı zorlaştırır.",
-          "Kendimizi anlatmak için yalnızca bir sözcük yeterlidir.",
-          "Söz varlığımızın gelişmesi anlatımımızı güçlendirir."
+          "Önceki düşünceleri özetleyerek sonuca bağlama",
+          "Önceki düşüncenin tersini savunma",
+          "Bir olayın gerçekleşmesini koşula bağlama",
+          "Anlatılan düşünceye ayrıntılı bir örnek verme"
         ],
-        "correct": 3,
-        "explanation": "Metindeki kişi, yeni sözcükler öğrendikçe kendini daha açık anlattığını söylüyor. Bu, söz varlığının anlatımı güçlendirdiğini gösterir."
+        "correct": 0,
+        "explanation": "Kısacası sözü, önce anlatılanların özünü verip değerlendirmeyi sonuca bağlar; karşıtlık, koşul veya ayrıntılı örnek bildirmez."
       }
     ]
   },
