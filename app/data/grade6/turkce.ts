@@ -1353,6 +1353,156 @@ export const turkceData: SubjectData = {
         "correct": 1,
         "explanation": "Metin, tek görüntünün olayın tamamını sunamayabileceğini vurgular. Çekim sırası, ayrıntı inceleme yöntemi veya yeni fotoğraflar çekme hakkında öneri vermez; değerlendirme için olayın bağlamını araştırmaya yöneltir."
       }
+    ],
+    "test10": [
+      {
+        "id": "t6-1-t10-01",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“Okul gazetesine göndereceği yazıyı ince eleyip sık dokudu; her cümleyi yeniden okuyup gereksiz sözleri çıkardı.” cümlesindeki deyim, kişinin hangi tutumunu belirtir?",
+        "options": [
+          "İşini ayrıntılarıyla ve titizlikle değerlendirmesini",
+          "Çalışmasını başkalarının kararına bırakmasını",
+          "Yazısını olabildiğince uzun tutmaya çalışmasını",
+          "Bir işi bitirmeden başka bir işe geçmesini"
+        ],
+        "correct": 0,
+        "explanation": "İnce eleyip sık dokumak, bir işi bütün ayrıntılarıyla dikkatle değerlendirmektir. Cümleleri yeniden inceleme ve gereksiz sözleri çıkarma bu anlamı destekler."
+      },
+      {
+        "id": "t6-1-t10-02",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“Aynı türden iki fideyi aynı büyüklükteki saksılara diktik. Birini pencere önüne, diğerini daha az ışık alan bir köşeye koyduk. İkisine de eşit miktarda su verdik. Bir hafta sonra pencere önündeki fidenin daha uzun olduğunu ölçtük.”\nBu metinde aşağıdaki sorulardan hangisinin cevabı yoktur?",
+        "options": [
+          "Fideler nerelere yerleştirilmiştir?",
+          "Su miktarı iki fide için aynı mıdır?",
+          "Fidelerin boyu ne zaman karşılaştırılmıştır?",
+          "Fideler kaç santimetre uzamıştır?"
+        ],
+        "correct": 3,
+        "explanation": "Yerler, eşit sulama ve karşılaştırmanın bir hafta sonra yapılması belirtilmiştir. Ancak santimetre cinsinden ölçüm sonuçları verilmemiştir."
+      },
+      {
+        "id": "t6-1-t10-03",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Ece: “Öykümün sonunu hemen yazamadım. Birkaç gün ara verip yeniden okuyunca olayları başka türlü bağlayabileceğimi gördüm.”\nCan: “Tasarladığım oyunda bir sorun vardı. Bir süre başka bir işle uğraştıktan sonra döndüğümde yeni bir çözüm buldum.”\nİki kişinin yaşadıklarından çıkarılabilecek ortak sonuç hangisidir?",
+        "options": [
+          "Bir sorunla karşılaşınca çalışmanın konusunu değiştirmek çözümü kolaylaştırır.",
+          "Çalışmaya kısa bir ara vermek, konuya farklı açıdan bakmayı kolaylaştırabilir.",
+          "Bir işi tamamlamadan önce başkasının görüşüne başvurmak gerekir.",
+          "Başarılı olmak için çalışmayı her seferinde baştan yapmak gerekir."
+        ],
+        "correct": 1,
+        "explanation": "İki kişi de ara verdikten sonra aynı çalışmaya dönüp yeni bir çözüm bulur. Konuyu değiştirme, başkasından görüş alma veya işi baştan yapma anlatılmamıştır. Ara vermenin kimi zaman farklı bakış sağlayabileceği ortak sonuçtur."
+      },
+      {
+        "id": "t6-1-t10-04",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“_____. Eskiden bir kelimenin anlamını bilmediğimde okumayı bırakırdım. Şimdi önce cümlenin bütününe bakıyor, ardından tahminimi sözlükten kontrol ediyorum. Böylece hem okumayı sürdürüyor hem yeni kelimeler öğreniyorum.”\nParagrafın başına hangi cümle getirilmelidir?",
+        "options": [
+          "Okunacak kitabın kapağı da içeriği kadar önemlidir",
+          "Sözlüklerde sözcükler belli bir düzene göre sıralanır",
+          "Okurken karşılaştığım bilinmeyen kelimelerle baş etme yöntemim değişti",
+          "Bir kitabı herkes aynı sürede bitiremez"
+        ],
+        "correct": 2,
+        "explanation": "Paragraf, anlatıcının eskiden ve şimdi bilinmeyen kelimeler karşısında nasıl davrandığını karşılaştırır. C seçeneği bu değişimi bütün olarak kapsar."
+      },
+      {
+        "id": "t6-1-t10-05",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Mina, çömlek atölyesinin tamamına katıldıktan sonra başka bir atölyeye de katılmak istiyor. Görseldeki programa göre hangi atölyeyi seçebilir?",
+        "options": [
+          "Resim atölyesini",
+          "Öykü atölyesini",
+          "Hem resim hem öykü atölyesini",
+          "Programdaki atölyelerin hiçbirini"
+        ],
+        "correct": 1,
+        "explanation": "Çömlek atölyesi 11.30’da biter. Resim atölyesi 11.00’de başladığından çömlek bitmeden başlamış olur. Öykü atölyesi ise 12.00’de başlar ve belirtilen koşula uygundur.",
+        "imageWidth": 360,
+        "imageHeight": 650,
+        "imageUrl": "/grade6/turkce/test-10/soru-05.svg",
+        "imageAlt": "Atölye programı: çömlek 10.00–11.30, resim 11.00–12.00, öykü 12.00–13.00. Her atölyeye başlangıç saatinde katılınır."
+      },
+      {
+        "id": "t6-1-t10-06",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Afişteki iki sahnenin karşılaştırılmasıyla verilmek istenen mesaj hangisidir?",
+        "options": [
+          "Tasarruf için aynı odada birden fazla lamba kullanılmamalıdır.",
+          "Gündüz perdeyi açarken lambayı da yakmak daha verimli aydınlatma sağlar.",
+          "Işığın odaya daha çok girmesi için pencereyi açmak gerekir.",
+          "Gün ışığından yararlanarak gereksiz elektrik kullanımını azaltabiliriz."
+        ],
+        "correct": 3,
+        "explanation": "İlk sahnede perde kapalı ve lamba açıktır. İkincisinde perde açılarak gün ışığı kullanılır ve lamba kapatılır. Pencerenin açılması veya lamba sayısının değişmesi gösterilmez; mesaj gereksiz elektrik kullanımını azaltmaktır.",
+        "imageWidth": 360,
+        "imageHeight": 700,
+        "imageUrl": "/grade6/turkce/test-10/soru-06.svg",
+        "imageAlt": "İki oda sahnesi: ilkinde güneşli gündüz, kapalı perde ve açık lamba; ikincisinde açık perde, içeri giren gün ışığı ve kapalı lamba."
+      },
+      {
+        "id": "t6-1-t10-07",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“Bugün sergide görev alacağım için çok heyecanlıyım. Umarım ziyaretçilere çalışmalarımızı anlaşılır biçimde anlatabilirim.”\nBu cümlelerde sırasıyla hangi durumlar dile getirilmektedir?",
+        "options": [
+          "Bir duygu ve bir beklenti",
+          "Bir eleştiri ve bir karşılaştırma",
+          "Bir öneri ve bir pişmanlık",
+          "Bir koşul ve gerçekleşmiş bir sonuç"
+        ],
+        "correct": 0,
+        "explanation": "İlk cümlede heyecan duygusu, ikinci cümlede geleceğe yönelik olumlu bir beklenti belirtilir. Ziyaretçilere anlatma işi henüz gerçekleşmiş bir sonuç olarak sunulmamıştır."
+      },
+      {
+        "id": "t6-1-t10-08",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“Yol boyunca uzanan ağaçlar, sonbaharın sarı örtüsüne bürünmüştü. Islak yaprakların kokusu dar sokağı dolduruyordu. Taş duvarların arasından hafif bir rüzgâr geçiyordu.”\nBu metinde anlatımın temel amacı nedir?",
+        "options": [
+          "Bir olayın nedenlerini kanıtlamak",
+          "Bir yerin özelliklerini okurun zihninde canlandırmak",
+          "Bir işin yapılma aşamalarını sıralamak",
+          "İki mevsimin farklarını karşılaştırmak"
+        ],
+        "correct": 1,
+        "explanation": "Renk, koku ve çevre ayrıntılarıyla sokak betimlenmiştir. Metin olayın nedenini kanıtlamaz, yönerge vermez veya iki mevsimi karşılaştırmaz."
+      },
+      {
+        "id": "t6-1-t10-09",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Aşağıdaki cümlelerin hangisinde “mı / mi” soru anlamı katmadığı için cümlenin sonuna soru işareti konmamalıdır?",
+        "options": [
+          "Kütüphanedeki yeni kitapları gördün mü",
+          "Yarınki geziye sen de katılacak mısın",
+          "Bahar geldi mi bahçemizdeki ağaçlar çiçek açar",
+          "Bu resmi arkadaşın mı çizdi"
+        ],
+        "correct": 2,
+        "explanation": "Bahar geldi mi ifadesi, bahar geldiğinde anlamı taşır; burada bilgi isteyen bir soru yoktur. Diğer cümlelerde soru anlamı vardır ve sonlarına soru işareti konur."
+      },
+      {
+        "id": "t6-1-t10-10",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Bir haberde “Okul bahçesine yirmi fidan dikildi.” denilmektedir. Haberi okuyan bir öğrenci “Demek ki fidanların hepsi büyüyüp ağaç olacak.” sonucuna varmıştır.\nÖğrencinin bu değerlendirmesindeki eksiklik nedir?",
+        "options": [
+          "Haberdeki fidan sayısını başka bir sayıyla değiştirmesi",
+          "Dikim yerinin okul bahçesi olduğunu dikkate almaması",
+          "Haberde belirtilen olayı geçmişte yaşanmış sayması",
+          "Dikilmiş olmalarını, hepsinin büyüyeceğinin kesin kanıtı sayması"
+        ],
+        "correct": 3,
+        "explanation": "Haber, fidanların dikildiğini bildirir; gelecekte hepsinin büyüyeceğini garanti etmez. Öğrenci verilen bilgiden kesin olarak çıkarılamayan bir sonuç üretmiştir."
+      }
     ]
   },
   "term2": {}

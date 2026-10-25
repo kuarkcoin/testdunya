@@ -329,3 +329,10 @@ Toplam: 23 test, 230 soru, 117 SVG, 28 rota. Önceki 220 soru ve 110 SVG korunur
 - Yeni Test 9, orta düzeyde 8 metin + 2 görsel okuma sorusudur. Bağlamda anlam, iki metnin ortak tutumu, ana düşünce, paragrafta cümle yerleştirme, güncellenen duyuruyu yorumlama, içindekilerden bilgi bulma, anlatıcı, karşıtlık, alıntı noktalaması ve eleştirel görsel okuma işlenir. Tam yıllık müfredat kapsamı iddiası değildir.
 - Anahtar: **C, A, D, B, C, D, A, B, D, B**. İki pasif SVG 360 birim genişliğinde, en az 26 birim yazıyla hazırlanır; 238 piksel çıktıları incelenir.
 - Önceki 380 soru ve 224 SVG korunur. Toplam 39 test / 390 soru / 226 SVG / 44 rota. Veri, rota, TypeScript ve üretim derlemesiyle doğrulanır. Etkileşimli tarayıcı testi yapılmaz; production’a otomatik aktarılmaz.
+
+
+## Türkçe Test 10 — Karma Değerlendirme: Anlam ve Görsel İletiler (25 Ekim 2026)
+
+- Yeni Test 10, orta düzeyde 8 metin + 2 görsel okuma sorusudur. Deyim, eksik bilgi, iki metni karşılaştırma, paragraf tamamlama, program okuma, görsel ileti, duygu ve beklenti, betimleme, soru anlamı ve noktalama ile kanıta dayalı çıkarım işlenir. Tam yıllık müfredat kapsamı iddiası değildir.
+- Anahtar: **A, D, B, C, B, D, A, B, C, D**. İki pasif SVG 360 birim genişliğinde, en az 26 birim yazıyla hazırlanır; 238 piksel çıktıları incelenir.
+- Önceki 390 soru ve 226 SVG korunur. Toplam 40 test / 400 soru / 228 SVG / 45 rota. Veri, rota, TypeScript ve üretim derlemesiyle doğrulanır. Etkileşimli tarayıcı testi yapılmaz; production’a otomatik aktarılmaz.
