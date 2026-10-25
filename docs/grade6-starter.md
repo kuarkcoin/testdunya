@@ -1,6 +1,6 @@
 # 6. sınıf başlangıç paketi
 
-310 özgün soru: Matematikte 10, Fen Bilimlerinde 10, Türkçede 3 ve İngilizcede 8 test; her test 10 soru. Matematik Test 1, Test 4, Test 5 ve Test 6, onar şekilli akıl yürütme sorusu içerir. Test 1, eski 10 soru yerine orta–zor düzeyde 10 şekilli soruyla yenilenmiştir; toplam test ve soru sayısı değişmemiştir. Test 7, Test 8, Test 9 ve Test 10, yedişer şekilli ve üçer şekilsiz orta–zor soru içerir. Fen Test 1, Test 2 ve Test 3, yedişer şekilli ve üçer şekilsiz orta–zor soruyla yenilenmiştir. Testler mevcut birinci dönem kayıt yapısında tutulur; yeni matematik testleri yılın farklı temalarından seçilmiştir. Tüm yıl/müfredat kapsandığı veya MEB onayı bulunduğu iddia edilmez. İkinci dönem için soru eklenmedi.
+330 özgün soru: Matematikte 10, Fen Bilimlerinde 10, Türkçede 3 ve İngilizcede 10 test; her test 10 soru. Matematik Test 1, Test 4, Test 5 ve Test 6, onar şekilli akıl yürütme sorusu içerir. Test 1, eski 10 soru yerine orta–zor düzeyde 10 şekilli soruyla yenilenmiştir; toplam test ve soru sayısı değişmemiştir. Test 7, Test 8, Test 9 ve Test 10, yedişer şekilli ve üçer şekilsiz orta–zor soru içerir. Fen Test 1, Test 2 ve Test 3, yedişer şekilli ve üçer şekilsiz orta–zor soruyla yenilenmiştir. Testler mevcut birinci dönem kayıt yapısında tutulur; yeni matematik testleri yılın farklı temalarından seçilmiştir. Tüm yıl/müfredat kapsandığı veya MEB onayı bulunduğu iddia edilmez. İkinci dönem için soru eklenmedi.
 
 ## Kaynaklar (23–24 Ekim 2026)
 
@@ -265,3 +265,11 @@ Toplam: 23 test, 230 soru, 117 SVG, 28 rota. Önceki 220 soru ve 110 SVG korunur
 - 7 görselli + 3 metin sorusu: sabah eylem sırası, görselden yanıtlanamayan bilgi, günlük işler için kamu binaları, havaya uygun hazırlık, görsele uygun davet, şimdiki zaman sorusuna yanıt, öğle aralı mağaza saatleri, kişisel görüşü ayırt etme, soru sözcükleri ve mesajdan çıkarım. Anahtar: **C, A, D, B, C, A, D, B, C, D**.
 - Yedi pasif SVG, 360 birim genişlik ve en az 26 birim yazı; 238 piksel çıktıları denetlenir. Önceki 320 soru ve 201 SVG korunur. Yeni toplam: 33 test / 330 soru / 208 SVG / 38 rota.
 - Bağımsız içerik ve görsel denetimi, veri/rota doğrulaması, TypeScript ve üretim derlemesi uygulanır. Etkileşimli tarayıcı testi yapılmaz; production’a otomatik aktarım yapılmaz.
+
+
+## Türkçe Test 1 — Anlam Bilgisi, Paragraf ve Görsel Okuma (25 Ekim 2026)
+
+- Mevcut Test 1, kullanıcı tercihiyle **8 metin + 2 görsel okuma** sorusuyla yenilendi; yeni test eklenmedi. Orta düzeyde özgün sözcük anlamı, özdeyiş yorumu, ana düşünce, çıkarım, afiş ve tablo okuma, günlük türü, geçiş ifadesi, yazım ve noktalama soruları içerir. Tam yıllık müfredat kapsamı iddiası değildir.
+- Soru kimlikleri ve `/6-sinif/turkce/test-1` adresi korunur. Cevap anahtarı: **B, D, A, C, A, C, B, D, A, C**.
+- İki SVG 360 birim genişlikte, en az 26 birim yazıyla hazırlanır; 238 piksel çıktıları incelenir. Diğer 320 soru ve mevcut 208 SVG korunur. Toplam 33 test / 330 soru / 210 SVG / 38 rota.
+- Dil, tek doğru cevap, görsel, veri, rota, TypeScript ve üretim derlemesi denetimleri uygulanır. Bağımsız lint yapılandırması bulunmadığı için lint çalıştırılmaz; etkileşimli tarayıcı denetimi yapılmaz. Production’a terfi edilmez.

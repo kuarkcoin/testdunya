@@ -9,141 +9,149 @@ export const turkceData: SubjectData = {
         "id": "t6-1-t1-01",
         "subject": "turkce",
         "term": 1,
-        "prompt": "'Ece, yeni gelen arkadaşına sınıfı gezdirerek ince bir davranışta bulundu.' cümlesinde 'ince' sözcüğünün anlamı nedir?",
+        "prompt": "“Sınıf gazetesindeki yazıları eledik; konuya uygun olmayanları sonraki sayılar için ayırdık.” cümlesinde “elemek” sözcüğü hangi anlamda kullanılmıştır?",
         "options": [
-          "Kalınlığı az olan",
-          "Uzun ve dar olan",
-          "Nazik ve düşünceli",
-          "Duyulması güç olan"
+          "Bir maddeyi elekten geçirmek",
+          "Seçerek bir bölümünü ayırmak",
+          "Bir işi aceleye getirmek",
+          "Yazıları baştan sona ezberlemek"
         ],
-        "correct": 2,
-        "explanation": "Ece'nin arkadaşına yardımcı olması düşünceli bir davranıştır. Burada 'ince', kalınlığın azlığını değil, nezaketi anlatır."
+        "correct": 1,
+        "explanation": "Yazıların konuya uygunluğuna bakılarak bir bölümü ayrılmıştır. Bu bağlamda elemek, seçme ve ayırma anlamındadır."
       },
       {
         "id": "t6-1-t1-02",
         "subject": "turkce",
         "term": 1,
-        "prompt": "'Yazdığı şiir okul panosuna asılınca Deniz'in gözleri parladı.' cümlesindeki 'gözleri parlamak' sözü ne anlatır?",
+        "prompt": "“İlk denemesinde maketi devrilen Eren, pes etmek yerine yeniden işe koyuldu. Öğretmeni onun bu davranışını ‘Yılmadan çalışan, sonunda yol alır.’ sözüyle değerlendirdi.”\nBu sözle vurgulanmak istenen nedir?",
         "options": [
-          "Çok sevinmesini",
-          "Bir şeye kızmasını",
-          "Uykusunun gelmesini",
-          "Birini beklemesini"
+          "Başarı için başkalarıyla yarışmak gerekir.",
+          "Bir işe yalnızca kolay olduğunda başlanmalıdır.",
+          "Hızlı çalışmak her zaman iyi sonuç verir.",
+          "Güçlükler karşısında çabayı sürdürmek ilerlemeyi sağlar."
         ],
-        "correct": 0,
-        "explanation": "'Gözleri parlamak' bu cümlede sevinç ve heyecan duymayı anlatır. Deniz, şiirinin panoya asılmasına sevinmiştir."
+        "correct": 3,
+        "explanation": "Eren, başarısız denemesinden sonra çalışmayı bırakmaz. Söz, vazgeçmeden sürdürülen çabanın kişiyi ilerleteceğini vurgular."
       },
       {
         "id": "t6-1-t1-03",
         "subject": "turkce",
         "term": 1,
-        "prompt": "'Yürüyüşte, suyu kayaların arasından çıkan bir kaynağa rastladık.' cümlesinde 'kaynak' hangi anlamdadır?",
+        "prompt": "Okul bahçesine kuşlar için bir suluk yerleştirdik. İlk gün herkes bu işin bittiğini düşündü. Ancak birkaç gün sonra suyun kirlenip azaldığını gördük. Bunun üzerine suyu her gün kontrol edecek bir görev çizelgesi hazırladık.\nBu metnin ana düşüncesi aşağıdakilerden hangisidir?",
         "options": [
-          "Bir işe ayrılan para",
-          "Bilgi edinilen eser",
-          "Metalleri birleştirme işi",
-          "Suyun yeryüzüne çıktığı yer"
+          "Yararlı bir iş yapmak kadar o işi düzenli olarak sürdürmek de önemlidir.",
+          "Kuşların temiz suya ulaşabileceği alanlar oluşturulmalıdır.",
+          "Grup çalışmalarında görevler önceden planlanmalıdır.",
+          "Okul bahçeleri, öğrencilerin doğayı tanıması için kullanılmalıdır."
         ],
-        "correct": 3,
-        "explanation": "Kayaların arasından çıkan sudan söz edildiği için 'kaynak', suyun yeryüzüne çıktığı yer anlamındadır."
+        "correct": 0,
+        "explanation": "Suluğu yerleştirmek tek başına yeterli olmamış, düzenli bakım gerekmiştir. Temiz su ve görev çizelgesi bu ana düşünceyi destekleyen ayrıntılardır. Metnin asıl vurgusu, yararlı bir girişimin devamlılığını sağlamaktır."
       },
       {
         "id": "t6-1-t1-04",
         "subject": "turkce",
         "term": 1,
-        "prompt": "'Selin, cuma günü sınıf kitaplığında arkadaşlarına bir masal okudu.' cümlesinde masalı okuyan kimdir?",
+        "prompt": "Selin, dedesinin kendisine verdiği eski radyoyu bir süre rafında sakladı. Radyonun çalışmadığını öğrenince onu çöpe atmadı; bir tamirciye götürdü. Onarılan radyoyu her pazar dedesiyle dinlemeye başladı.\nBu metinden Selin ile ilgili aşağıdakilerden hangisi çıkarılabilir?",
         "options": [
-          "Selin",
-          "Selin'in kardeşi",
-          "Selin'in arkadaşları",
-          "Selin'in öğretmeni"
+          "Eski elektronik araçları biriktirmeye ilgi duyduğu",
+          "Dedesiyle her pazar farklı bir radyo programı dinlediği",
+          "Kendisi için manevi değeri olan bir eşyayı koruduğu",
+          "Eski radyoları yeni cihazlardan daha kullanışlı bulduğu"
         ],
-        "correct": 0,
-        "explanation": "Cümlede okuma işini yapan kişi Selin'dir. 'Kim?' sorusu işi yapan kişiyi bulmamızı sağlar."
+        "correct": 2,
+        "explanation": "Dedesinin verdiği radyoyu saklaması, onartması ve dedesiyle dinlemesi, ona manevi değer verdiğini gösterir. Koleksiyon ilgisi, dinlenen programların çeşitliliği veya eski ve yeni cihazları karşılaştırdığı hakkında bilgi verilmez."
       },
       {
         "id": "t6-1-t1-05",
         "subject": "turkce",
         "term": 1,
-        "prompt": "'Duru, anlamını bilmediği sözcüğü öğrenmek için sözlüğe baktı.' cümlesine göre Duru neden sözlüğe bakmıştır?",
+        "prompt": "Afişteki bilgilere göre aşağıdaki öğrencilerden hangisi etkinliğe belirtilen koşullara uygun biçimde katılabilir?",
         "options": [
-          "Bir sözcüğün anlamını öğrenmek için",
-          "Yeni bir resim çizmek için",
-          "Dersin bitiş saatini bulmak için",
-          "Arkadaşının adresini öğrenmek için"
+          "Okunabilir durumdaki kitabını 10.30’da okul bahçesine getiren Duru",
+          "Kitap yerine oyuncağını 11.00’de okul bahçesine getiren Can",
+          "Yırtık kitabını 10.00’da okul bahçesine getiren Efe",
+          "Kitabını 12.30’da okul bahçesine getiren İpek"
         ],
         "correct": 0,
-        "explanation": "'Sözcüğü öğrenmek için' ifadesi sözlüğe bakmanın nedenini açıklar. Bu bölüm 'Niçin?' sorusuna cevap verir."
+        "explanation": "Duru’nun kitabı okunabilir durumdadır ve 10.30, etkinliğin 10.00–12.00 saatleri içindedir. Oyuncak kabul edilmez, yırtık kitap uygun değildir; 12.30 ise etkinlik saatleri dışındadır.",
+        "imageWidth": 360,
+        "imageHeight": 680,
+        "imageUrl": "/grade6/turkce/test-1/soru-05.svg",
+        "imageAlt": "Kitap değişim günü afişi: cumartesi 10.00–12.00, okul bahçesi; okunabilir bir kitap getir, başka bir kitap seç; yırtık kitap ve oyuncak kabul edilmez."
       },
       {
         "id": "t6-1-t1-06",
         "subject": "turkce",
         "term": 1,
-        "prompt": "'Deyimler, duygu ve düşüncelerimizi kısa ve etkili biçimde anlatmamızı sağlar. Konuşurken uygun deyimleri seçmek anlatımımızı güçlendirir.' metninin anahtar sözcükleri hangileridir?",
+        "prompt": "Tabloda verilen günlerde kitap okuma süresi düzenli olarak artan ve cuma günü en uzun süre kitap okuyan öğrenci kimdir?",
         "options": [
-          "Yolculuk - harita",
-          "Spor - yarışma",
-          "Deyim - anlatım",
-          "Mevsim - yağmur"
+          "Ada",
+          "Bora",
+          "Deniz",
+          "Üçü de"
         ],
         "correct": 2,
-        "explanation": "Metnin konusu deyimlerin anlatıma katkısıdır. 'Deyim' ve 'anlatım' sözcükleri metnin temel konusunu yansıtır."
+        "explanation": "Deniz’in süreleri 15, 25 ve 35 dakikadır: verilen günlerde artar ve cuma günkü 35 dakika tablodaki en yüksek süredir. Ada’nın süresi bir gün azalır; Bora’nın süreleri artsa da cuma günü 30 dakikadır.",
+        "imageWidth": 360,
+        "imageHeight": 570,
+        "imageUrl": "/grade6/turkce/test-1/soru-06.svg",
+        "imageAlt": "Pazartesi, çarşamba ve cuma günleri kitap okuma süreleri: Ada 20, 15, 25 dakika; Bora 10, 20, 30 dakika; Deniz 15, 25, 35 dakika."
       },
       {
         "id": "t6-1-t1-07",
         "subject": "turkce",
         "term": 1,
-        "prompt": "Aşağıdaki cümlelerin hangisinde 'sıcak' sözcüğü gerçek anlamıyla kullanılmıştır?",
+        "prompt": "“25 Ekim\nBugün okuldan dönerken eski arkadaşım Aslı’yla karşılaştım. Birlikte yürüyüp geçen yılki sınıf gezimizi konuştuk. Eve geldiğimde bu karşılaşmanın sevincini hâlâ hissediyordum.”\nBu metnin türü aşağıdakilerden hangisidir?",
         "options": [
-          "Bizi sıcak bir gülümsemeyle karşıladı.",
-          "Sıcak çorbayı biraz soğuttum.",
-          "Yeni komşumuzla sıcak bir dostluk kurduk.",
-          "Öğretmenin sıcak sözleri bizi rahatlattı."
+          "Haber yazısı",
+          "Günlük",
+          "Kullanım kılavuzu",
+          "Dilekçe"
         ],
         "correct": 1,
-        "explanation": "Çorbanın sıcak olması, sıcaklığının yüksek olması demektir ve gerçek anlamdır. Diğer cümlelerde 'sıcak', içtenlik ve yakınlık bildirir."
+        "explanation": "Tarih belirtilmiş; kişinin o gün yaşadığı olay ve duyguları birinci kişi ağzıyla anlatılmıştır. Bunlar günlük türünün özellikleridir."
       },
       {
         "id": "t6-1-t1-08",
         "subject": "turkce",
         "term": 1,
-        "prompt": "'Bir sözcüğün anlamını öğrenince onu bir cümlede kullanırım. Sonra defterime yazarım. Böylece yeni sözcükleri daha kolay hatırlarım.' diyen öğrenci neyi açıklamaktadır?",
+        "prompt": "“Kütüphaneden aldığım kitabı bitirdim, _____ son bölümünü daha iyi anlamak için yeniden okudum.”\nCümlede boş bırakılan yere düşüncenin yönünü değiştiren hangi söz getirilmelidir?",
         "options": [
-          "Kitaplarını nasıl sıraladığını",
-          "Öğrendiği sözcükleri nasıl aklında tuttuğunu",
-          "Hangi oyunu sevdiğini",
-          "Yazısının neden küçük olduğunu"
+          "çünkü",
+          "bu yüzden",
+          "üstelik",
+          "ancak"
         ],
-        "correct": 1,
-        "explanation": "Öğrenci, yeni sözcükleri cümlede kullanıp yazarak hatırladığını anlatıyor. Metnin odağı sözcükleri akılda tutma yöntemidir."
+        "correct": 3,
+        "explanation": "Ancak, kitabın bitirilmiş olmasıyla son bölümün yeniden okunması arasında karşıtlık kurar. Çünkü neden, bu yüzden sonuç, üstelik ekleme bildirir."
       },
       {
         "id": "t6-1-t1-09",
         "subject": "turkce",
         "term": 1,
-        "prompt": "'Öğrenciler, çarşamba sabahı okul kütüphanesinde şiir dinletisi düzenledi.' cümlesine göre etkinlik ne zaman yapılmıştır?",
+        "prompt": "Aşağıdaki cümlelerin hangisinde “de” ve “ki”nin yazımı doğrudur?",
         "options": [
-          "Okul kütüphanesinde",
-          "Öğrenciler tarafından",
-          "Çarşamba sabahı",
-          "Şiir dinlemek için"
+          "Ben de bahçedeki fideleri suladım.",
+          "Bende bahçedeki fideleri suladım.",
+          "Ben de bahçede ki fideleri suladım.",
+          "Bende bahçede ki fideleri suladım."
         ],
-        "correct": 2,
-        "explanation": "'Çarşamba sabahı' zaman bildirir ve 'Ne zaman?' sorusunun cevabıdır. 'Okul kütüphanesinde' ise yeri belirtir."
+        "correct": 0,
+        "explanation": "Ben de sözündeki de, “ben de ayrıca” anlamındaki bağlaçtır ve ayrı yazılır. Bahçedeki sözcüğündeki -ki ektir ve bitişik yazılır."
       },
       {
         "id": "t6-1-t1-10",
         "subject": "turkce",
         "term": 1,
-        "prompt": "'Öğretmenimiz, arkadaşımız konuşurken ona kulak vermemizi istedi.' cümlesindeki 'kulak vermek' ne demektir?",
+        "prompt": "“Atölyeye gelirken üç şey getirin( ) makas, kâğıt ve yapıştırıcı( )”\nBu cümlede parantezlerle gösterilen yerlere sırasıyla hangi noktalama işaretleri getirilmelidir?",
         "options": [
-          "Sözü hemen değiştirmek",
-          "Yüksek sesle konuşmak",
-          "Konuşmayı yarıda kesmek",
-          "Dikkatle dinlemek"
+          "Virgül – soru işareti",
+          "Nokta – virgül",
+          "İki nokta – nokta",
+          "Noktalı virgül – iki nokta"
         ],
-        "correct": 3,
-        "explanation": "'Kulak vermek', dikkatle dinlemek anlamında kullanılan bir deyimdir."
+        "correct": 2,
+        "explanation": "Getirilmesi istenen üç şey açıklanacağı için ilk boşluğa iki nokta konur. Tamamlanmış cümlenin sonuna nokta konur."
       }
     ],
     "test2": [
