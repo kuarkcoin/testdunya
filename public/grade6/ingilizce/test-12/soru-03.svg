@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="560" viewBox="0 0 360 560" role="img">
+<title>İngilizce Test 12 · Soru 3</title>
+<desc>Düz bir sokağın aynı tarafındaki dört bina alttan üste doğru School, Bank, Post office, Cinema şeklinde sıralanmış. Ben başlangıçtaki okulun yanında. Sokaktaki yön oku okuldan sinemaya doğru, yukarıyı gösteriyor. Binalar arasında başka bina veya kavşak yok.</desc>
+<rect width="360" height="560" fill="white"/>
+<text x="180" y="25" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Walking route</text>
+<rect x="18" y="61" width="56" height="463" rx="3" fill="#E1EAF1" stroke="#A5BAC8" stroke-width="2"/>
+<line x1="46" y1="479" x2="46" y2="92" stroke="#36586D" stroke-width="3"/>
+<polygon points="46.00,92.00 41.00,102.00 51.00,102.00" fill="#36586D"/>
+<rect x="120" y="64" width="222" height="92" rx="10" fill="#F3F8FC" stroke="#A5BAC8" stroke-width="2"/>
+<text x="276" y="111" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">Cinema</text>
+<rect x="141" y="96" width="60" height="46" rx="2" fill="#D3E7F4" stroke="#36586D" stroke-width="2"/>
+<polygon points="136,96 171,75 206,96" fill="#9DBFD6" stroke="#36586D" stroke-width="2"/>
+<rect x="164" y="120" width="14" height="22" rx="1" fill="white" stroke="#36586D" stroke-width="2"/>
+<rect x="146" y="81" width="50" height="20" rx="1" fill="#36586D" stroke="#36586D" stroke-width="2"/>
+<rect x="150" y="84" width="4" height="4" fill="white"/>
+<rect x="150" y="94" width="4" height="4" fill="white"/>
+<rect x="163" y="84" width="4" height="4" fill="white"/>
+<rect x="163" y="94" width="4" height="4" fill="white"/>
+<rect x="176" y="84" width="4" height="4" fill="white"/>
+<rect x="176" y="94" width="4" height="4" fill="white"/>
+<rect x="189" y="84" width="4" height="4" fill="white"/>
+<rect x="189" y="94" width="4" height="4" fill="white"/>
+<rect x="120" y="184" width="222" height="92" rx="10" fill="#F3F8FC" stroke="#A5BAC8" stroke-width="2"/>
+<text x="276" y="215" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">Post</text>
+<text x="276" y="248" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">office</text>
+<rect x="141" y="216" width="60" height="46" rx="2" fill="#D3E7F4" stroke="#36586D" stroke-width="2"/>
+<polygon points="136,216 171,195 206,216" fill="#9DBFD6" stroke="#36586D" stroke-width="2"/>
+<rect x="164" y="240" width="14" height="22" rx="1" fill="white" stroke="#36586D" stroke-width="2"/>
+<rect x="150" y="208" width="42" height="26" rx="2" fill="white" stroke="#36586D" stroke-width="2"/>
+<polyline points="151,209 171,224 191,209" fill="none" stroke="#36586D" stroke-width="2"/>
+<rect x="120" y="304" width="222" height="92" rx="10" fill="#F3F8FC" stroke="#A5BAC8" stroke-width="2"/>
+<text x="276" y="351" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">Bank</text>
+<rect x="141" y="336" width="60" height="46" rx="2" fill="#D3E7F4" stroke="#36586D" stroke-width="2"/>
+<polygon points="136,336 171,315 206,336" fill="#9DBFD6" stroke="#36586D" stroke-width="2"/>
+<rect x="164" y="360" width="14" height="22" rx="1" fill="white" stroke="#36586D" stroke-width="2"/>
+<rect x="146" y="338" width="10" height="41" rx="1" fill="#F9FCFE" stroke="#36586D" stroke-width="2"/>
+<rect x="165" y="338" width="10" height="41" rx="1" fill="#F9FCFE" stroke="#36586D" stroke-width="2"/>
+<rect x="184" y="338" width="10" height="41" rx="1" fill="#F9FCFE" stroke="#36586D" stroke-width="2"/>
+<rect x="137" y="380" width="68" height="5" rx="1" fill="#9DBFD6" stroke="#36586D" stroke-width="2"/>
+<rect x="120" y="424" width="222" height="92" rx="10" fill="#F3F8FC" stroke="#A5BAC8" stroke-width="2"/>
+<text x="276" y="471" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">School</text>
+<rect x="141" y="456" width="60" height="46" rx="2" fill="#D3E7F4" stroke="#36586D" stroke-width="2"/>
+<polygon points="136,456 171,435 206,456" fill="#9DBFD6" stroke="#36586D" stroke-width="2"/>
+<rect x="164" y="480" width="14" height="22" rx="1" fill="white" stroke="#36586D" stroke-width="2"/>
+<rect x="146" y="464" width="13" height="13" rx="1" fill="white" stroke="#36586D" stroke-width="2"/>
+<rect x="181" y="464" width="13" height="13" rx="1" fill="white" stroke="#36586D" stroke-width="2"/>
+<circle cx="171" cy="447" r="8" fill="white" stroke="#36586D" stroke-width="1.5"/>
+<line x1="171" y1="447" x2="171" y2="442" stroke="#36586D" stroke-width="1.5"/>
+<line x1="171" y1="447" x2="176" y2="447" stroke="#36586D" stroke-width="1.5"/>
+<circle cx="96" cy="457" r="10" fill="#E7BC9B" stroke="#36586D" stroke-width="1.5"/>
+<path d="M 86 455 Q 86 441 97 444 Q 108 444 106 455 L 102 451 L 89 454 Z" fill="#765439"/>
+<polygon points="86,470 106,470 110,492 82,492" fill="#8EBBD8" stroke="#36586D" stroke-width="1.5"/>
+<line x1="86" y1="473" x2="79" y2="489" stroke="#36586D" stroke-width="3"/>
+<line x1="106" y1="473" x2="113" y2="489" stroke="#36586D" stroke-width="3"/>
+<line x1="89" y1="492" x2="89" y2="510" stroke="#36586D" stroke-width="4"/>
+<line x1="103" y1="492" x2="103" y2="510" stroke="#36586D" stroke-width="4"/>
+<text x="96" y="536" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Ben</text>
+</svg>

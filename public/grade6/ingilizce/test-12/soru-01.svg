@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="580" viewBox="0 0 360 580" role="img">
+<title>İngilizce Test 12 · Soru 1</title>
+<desc>Music club ve Today başlıklı saat değişikliği duyurusu. Old time bölümünde 15:30 yazısının üzeri çizilmiş. Aşağı yönlü ok New time bölümüne gidiyor. Bu bölümde analog saatin yelkovanı 3&#x27;te, akrebi 4 ile 5 arasında 4&#x27;e yakın; saat 4.15&#x27;i gösteriyor. Altında Afternoon yazıyor.</desc>
+<rect width="360" height="580" fill="white"/>
+<text x="208" y="32" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">Music club</text>
+<path d="M 43 16 L 43 47 M 43 17 L 65 12 L 65 42" fill="none" stroke="#36586D" stroke-width="5"/>
+<ellipse cx="35" cy="48" rx="9" ry="6" fill="#36586D"/>
+<ellipse cx="57" cy="43" rx="9" ry="6" fill="#36586D"/>
+<text x="180" y="70" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Today</text>
+<rect x="25" y="93" width="310" height="91" rx="12" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<text x="180" y="119" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Old time</text>
+<text x="180" y="157" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">15:30</text>
+<line x1="128" y1="157" x2="232" y2="157" stroke="#15354B" stroke-width="2.5"/>
+<line x1="180" y1="190" x2="180" y2="217" stroke="#36586D" stroke-width="3"/>
+<polygon points="180.00,217.00 185.00,207.00 175.00,207.00" fill="#36586D"/>
+<text x="180" y="244" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">New time</text>
+<circle cx="180" cy="386" r="108" fill="#FCFEFF" stroke="#36586D" stroke-width="3.5"/>
+<line x1="229.5" y1="300.26" x2="232.0" y2="295.93" stroke="#36586D" stroke-width="2"/>
+<text x="222.0" y="313.25" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">1</text>
+<line x1="265.74" y1="336.5" x2="270.07" y2="334.0" stroke="#36586D" stroke-width="2"/>
+<text x="252.75" y="344.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">2</text>
+<line x1="279.0" y1="386.0" x2="284.0" y2="386.0" stroke="#36586D" stroke-width="2"/>
+<text x="264.0" y="386.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">3</text>
+<line x1="265.74" y1="435.5" x2="270.07" y2="438.0" stroke="#36586D" stroke-width="2"/>
+<text x="252.75" y="428.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">4</text>
+<line x1="229.5" y1="471.74" x2="232.0" y2="476.07" stroke="#36586D" stroke-width="2"/>
+<text x="222.0" y="458.75" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">5</text>
+<line x1="180.0" y1="485.0" x2="180.0" y2="490.0" stroke="#36586D" stroke-width="2"/>
+<text x="180.0" y="470.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">6</text>
+<line x1="130.5" y1="471.74" x2="128.0" y2="476.07" stroke="#36586D" stroke-width="2"/>
+<text x="138.0" y="458.75" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">7</text>
+<line x1="94.26" y1="435.5" x2="89.93" y2="438.0" stroke="#36586D" stroke-width="2"/>
+<text x="107.25" y="428.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">8</text>
+<line x1="81.0" y1="386.0" x2="76.0" y2="386.0" stroke="#36586D" stroke-width="2"/>
+<text x="96.0" y="386.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">9</text>
+<line x1="94.26" y1="336.5" x2="89.93" y2="334.0" stroke="#36586D" stroke-width="2"/>
+<text x="107.25" y="344.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">10</text>
+<line x1="130.5" y1="300.26" x2="128.0" y2="295.93" stroke="#36586D" stroke-width="2"/>
+<text x="138.0" y="313.25" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">11</text>
+<line x1="180.0" y1="287.0" x2="180.0" y2="282.0" stroke="#36586D" stroke-width="2"/>
+<text x="180.0" y="302.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">12</text>
+<line x1="180" y1="386" x2="252" y2="386" stroke="#15354B" stroke-width="3.5"/>
+<line x1="180" y1="386" x2="218.08" y2="415.22" stroke="#15354B" stroke-width="6"/>
+<circle cx="180" cy="386" r="5" fill="#15354B"/>
+<text x="180" y="542" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Afternoon</text>
+</svg>

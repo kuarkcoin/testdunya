@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="500" viewBox="0 0 360 500" role="img">
+<title>İngilizce Test 12 · Soru 2</title>
+<desc>Café counter ve NOW başlıklı kahvaltı tezgâhında üç etiketli bölüm var. Eggs bölümünde yumurtalı dolu tabak ve Available; Toast bölümünde kızarmış ekmek dilimleri ve Available yazıyor. Pancakes bölümünde boş tabak ve None left yazısı var. Boş bölümün pankeklere ait olduğu açıkça belirtilmiş.</desc>
+<rect width="360" height="500" fill="white"/>
+<text x="180" y="29" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">Café counter</text>
+<text x="180" y="65" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">NOW</text>
+<rect x="18" y="88" width="324" height="116" rx="10" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<text x="231" y="123" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Eggs</text>
+<text x="231" y="169" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Available</text>
+<ellipse cx="83" cy="167" rx="49" ry="20" fill="#EDF4F8" stroke="#36586D" stroke-width="2"/>
+<ellipse cx="83" cy="165" rx="40" ry="14" fill="white" stroke="#C2D4DF" stroke-width="1.5"/>
+<path d="M 44 161 C 38 151 47 133 59 135 C 67 127 83 134 81 147 C 91 155 76 168 66 165 C 56 174 43 171 44 161 Z" fill="#FFFEF5" stroke="#36586D" stroke-width="1.5"/>
+<path d="M 80 160 C 72 148 85 133 96 138 C 105 131 120 143 114 153 C 122 165 105 176 96 170 C 84 173 77 169 80 160 Z" fill="#FFFEF5" stroke="#36586D" stroke-width="1.5"/>
+<circle cx="61" cy="151" r="10" fill="#F5C34D" stroke="#CF9A24" stroke-width="1"/>
+<circle cx="58" cy="148" r="3" fill="#FFE18D"/>
+<circle cx="98" cy="155" r="10" fill="#F5C34D" stroke="#CF9A24" stroke-width="1"/>
+<circle cx="95" cy="152" r="3" fill="#FFE18D"/>
+<rect x="18" y="220" width="324" height="116" rx="10" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<text x="231" y="255" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Toast</text>
+<text x="231" y="301" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Available</text>
+<ellipse cx="83" cy="299" rx="49" ry="20" fill="#EDF4F8" stroke="#36586D" stroke-width="2"/>
+<ellipse cx="83" cy="297" rx="40" ry="14" fill="white" stroke="#C2D4DF" stroke-width="1.5"/>
+<path d="M 78 298 L 78 266 C 68 257 79 249 92 253 C 105 249 119 258 110 267 L 110 298 Z" fill="#D9A466" stroke="#36586D" stroke-width="2"/>
+<rect x="83" y="267" width="22" height="25" rx="3" fill="#FFE7AE" stroke="#B77F45" stroke-width="2"/>
+<path d="M 48 305 L 48 273 C 38 264 49 256 62 260 C 75 256 89 265 80 274 L 80 305 Z" fill="#D9A466" stroke="#36586D" stroke-width="2"/>
+<rect x="53" y="274" width="22" height="25" rx="3" fill="#FFE7AE" stroke="#B77F45" stroke-width="2"/>
+<rect x="18" y="352" width="324" height="116" rx="10" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<text x="231" y="387" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Pancakes</text>
+<text x="231" y="433" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">None left</text>
+<ellipse cx="83" cy="431" rx="49" ry="20" fill="#EDF4F8" stroke="#36586D" stroke-width="2"/>
+<ellipse cx="83" cy="429" rx="40" ry="14" fill="white" stroke="#C2D4DF" stroke-width="1.5"/>
+</svg>

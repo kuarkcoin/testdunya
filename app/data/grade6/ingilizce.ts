@@ -1875,6 +1875,176 @@ export const ingilizceData: SubjectData = {
         "correct": 1,
         "explanation": "Because the food is delicious bir neden bildirdiğinden ilk soru Why ile sorulur. My family kişi bildirdiğinden ikinci soru Who ile sorulur. Who do you usually come here with? sorusu, buraya genellikle kiminle geldiğini sorar."
       }
+    ],
+    "test12": [
+      {
+        "id": "e6-1-t12-01",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "The music club has a new starting time today. Which message gives the correct new time?",
+        "options": [
+          "It starts at a quarter to four.",
+          "It starts at half past three.",
+          "It starts at a quarter past four.",
+          "It starts at a quarter past three."
+        ],
+        "correct": 2,
+        "explanation": "Duyurudaki eski saat 15.30'un üzeri çizilmiştir. Yeni saati gösteren analog saatte yelkovan 3'te, akrep 4'ü biraz geçmiş durumdadır; öğleden sonra 16.15'tir. A quarter past four, dördü çeyrek geçe demektir. Eski saat yerine güncellenmiş saati bildiren C mesajı doğrudur.",
+        "imageUrl": "/grade6/ingilizce/test-12/soru-01.svg",
+        "imageWidth": 360,
+        "imageHeight": 580,
+        "imageAlt": "Music club ve Today başlıklı saat değişikliği duyurusu. Old time bölümünde 15:30 yazısının üzeri çizilmiş. Aşağı yönlü ok New time bölümüne gidiyor. Bu bölümde analog saatin yelkovanı 3'te, akrebi 4 ile 5 arasında 4'e yakın; saat 4.15'i gösteriyor. Altında Afternoon yazıyor."
+      },
+      {
+        "id": "e6-1-t12-02",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "A customer says, 'Can I have some pancakes, please?' Look at the café counter now. Which reply matches the food available?",
+        "options": [
+          "Sorry, there are no pancakes left. Would you like some eggs?",
+          "Of course. Here are your pancakes.",
+          "Sorry, we have no food left.",
+          "We have pancakes, but there are no eggs left."
+        ],
+        "correct": 0,
+        "explanation": "Tezgâhta yumurta ve kızarmış ekmek vardır; pankek bölümünde None left, yani hiç kalmadı yazmaktadır. Garson pankek kalmadığını söyleyip mevcut yumurtayı alternatif olarak teklif edebilir. Diğer seçenekler ya pankek varmış gibi davranır ya da tezgâhta görünen yiyeceklerin olmadığını söyler.",
+        "imageUrl": "/grade6/ingilizce/test-12/soru-02.svg",
+        "imageWidth": 360,
+        "imageHeight": 500,
+        "imageAlt": "Café counter ve NOW başlıklı kahvaltı tezgâhında üç etiketli bölüm var. Eggs bölümünde yumurtalı dolu tabak ve Available; Toast bölümünde kızarmış ekmek dilimleri ve Available yazıyor. Pancakes bölümünde boş tabak ve None left yazısı var. Boş bölümün pankeklere ait olduğu açıkça belirtilmiş."
+      },
+      {
+        "id": "e6-1-t12-03",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Ben is at the school. His friend says, 'Walk towards the cinema. Go past the bank and stop at the next building.' Where should Ben stop?",
+        "options": [
+          "At the bank.",
+          "At the cinema.",
+          "At the school.",
+          "At the post office."
+        ],
+        "correct": 3,
+        "explanation": "Haritadaki yukarı yönlü yürüyüş sırasında okuldan sonra banka, ardından postane, en ileride sinema vardır. Go past the bank, bankayı geç demektir. Bankadan sonraki ilk bina postane olduğu için Ben orada durmalıdır; sinemaya kadar gitmesi istenmiyor.",
+        "imageUrl": "/grade6/ingilizce/test-12/soru-03.svg",
+        "imageWidth": 360,
+        "imageHeight": 560,
+        "imageAlt": "Düz bir sokağın aynı tarafındaki dört bina alttan üste doğru School, Bank, Post office, Cinema şeklinde sıralanmış. Ben başlangıçtaki okulun yanında. Sokaktaki yön oku okuldan sinemaya doğru, yukarıyı gösteriyor. Binalar arasında başka bina veya kavşak yok."
+      },
+      {
+        "id": "e6-1-t12-04",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Mia is at the school gate. Look at the weather and read her message. Which reply offers her help?",
+        "options": [
+          "I don't like rainy days, either.",
+          "Don't worry. You can use my umbrella.",
+          "What time do you usually get up?",
+          "I am watching TV at home."
+        ],
+        "correct": 1,
+        "explanation": "Görselde yağmur yağmaktadır. Mia endişelendiğini ve eve yürümek zorunda olduğunu açıkça söylüyor. Don't worry. You can use my umbrella yanıtı hem onu rahatlatır hem de şemsiyesini kullanmayı teklif ederek ihtiyacına somut yardım sunar. Diğer seçenekler görüş, soru veya kişinin kendi etkinliği hakkında bilgi verir; yardım teklif etmez.",
+        "imageUrl": "/grade6/ingilizce/test-12/soru-04.svg",
+        "imageWidth": 360,
+        "imageHeight": 540,
+        "imageAlt": "Yağmur bulutu, yağmur damlaları ve Rainy etiketi altında okul kapısının yakınında duran Mia görülüyor. Mia'nın elinde şemsiye yok. Mesajında İngilizce 'I feel worried. I have to walk home.' yazıyor. Kapıda School etiketi var; Mia henüz yürümeye başlamamış."
+      },
+      {
+        "id": "e6-1-t12-05",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Leah is holding an ice cream at the carousel entrance. Look at the sign. Which action follows the rule?",
+        "options": [
+          "Eat her ice cream during the ride.",
+          "Buy a drink to take on the ride.",
+          "Finish her ice cream before the ride.",
+          "Take her ice cream on the ride without eating it."
+        ],
+        "correct": 2,
+        "explanation": "Tabelada No food or drinks on this ride, yani bu oyuncağa yiyecek veya içecekle binilmez yazıyor. Leah dondurmasını binmeden önce bitirirse kurala uyar. Dondurmayı içeride yemek, yemeden yanında taşımak veya içecek götürmek kuralla uyuşmaz.",
+        "imageUrl": "/grade6/ingilizce/test-12/soru-05.svg",
+        "imageWidth": 360,
+        "imageHeight": 560,
+        "imageAlt": "Carousel girişinde elinde külahlı dondurma tutan Leah, girişin dışında duruyor. Tabelada İngilizce 'No food or drinks on this ride' yazıyor; yanında üzerleri çizilmiş dondurma ve içecek bardağı simgeleri var. Girişin arkasında atlıkarıncanın çatısı ve bir at figürü görülüyor. Leah henüz oyuncağa binmemiş."
+      },
+      {
+        "id": "e6-1-t12-06",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Look at what the children are doing. Which child is most likely to say, “Can I have three apples, please?”",
+        "options": [
+          "Anna",
+          "Sam",
+          "Ela",
+          "Leo"
+        ],
+        "correct": 3,
+        "explanation": "Can I have three apples, please? bir satıcıdan nazikçe üç elma istemek için kullanılır. Görselde meyve tezgâhında alışveriş yapan çocuk Leo'dur. Anna kitap okur, Sam köpeğini gezdirir, Ela fotoğraf çeker; onların gösterilen etkinlikleri bu alışveriş isteğine uymaz.",
+        "imageUrl": "/grade6/ingilizce/test-12/soru-06.svg",
+        "imageAlt": "IN TOWN başlıklı dört sahne. Üst solda ANNA açık bir kitap okuyor. Üst sağda SAM tasmalı köpeğini gezdiriyor. Alt solda ELA göz hizasında tuttuğu fotoğraf makinesiyle fotoğraf çekiyor. Alt sağda LEO elma bulunan bir meyve tezgâhından alışveriş yapıyor; satıcıya para uzatıyor. Her sahnede çocuğun adı yazılı.",
+        "imageWidth": 360,
+        "imageHeight": 600
+      },
+      {
+        "id": "e6-1-t12-07",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Leo and Max want to ride the carousel. Which plan follows BOTH signs?",
+        "options": [
+          "They each use a ticket and wait in line.",
+          "They share one ticket and wait in line.",
+          "They each use a ticket and go to the front of the queue without waiting.",
+          "They share one ticket and go to the front of the queue without waiting."
+        ],
+        "correct": 0,
+        "explanation": "1 PERSON = 1 TICKET tabelası her kişi için ayrı bilet gerektiğini gösterir. WAIT YOUR TURN, sıranı bekle demektir. Bu nedenle iki arkadaşın ayrı bilet kullanıp sırada beklediği A seçeneği iki kurala da uyar. Tek bilet paylaşmak ilk kurala, bekleyenlerin önüne geçmek ikinci kurala uymaz.",
+        "imageUrl": "/grade6/ingilizce/test-12/soru-07.svg",
+        "imageAlt": "CAROUSEL başlıklı atlıkarınca girişindeki iki tabela. İlk tabelada bir kişi ve bir bilet simgesiyle 1 PERSON = 1 TICKET yazıyor. İkinci tabelada bir giriş çizgisinin gerisinde sırayla bekleyen kişiler ve WAIT YOUR TURN yazısı var. Atlıkarınca simgesi girişin hangi oyuncağa ait olduğunu gösteriyor.",
+        "imageWidth": 360,
+        "imageHeight": 520
+      },
+      {
+        "id": "e6-1-t12-08",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Choose the best reply to complete the conversation at a café.\nMila: Excuse me, is this seat free?\nNoah: Yes, it is.\nMila: Can I sit here?\nNoah: _____",
+        "options": [
+          "I usually have tea here.",
+          "Of course. Please sit down.",
+          "The café closes at five.",
+          "Two eggs and some cheese."
+        ],
+        "correct": 1,
+        "explanation": "Mila önce sandalyenin boş olup olmadığını, ardından oraya oturup oturamayacağını sorar. Of course. Please sit down. yanıtı nazikçe izin verir ve konuşmayı tamamlar. Diğer seçenekler içecek alışkanlığı, kapanış saati veya yiyecek siparişi bildirir; oturma isteğini yanıtlamaz."
+      },
+      {
+        "id": "e6-1-t12-09",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Read Lucy's text.\n“On Saturday mornings, I help my grandmother at the market. She gives me empty bags. I put apples into them. Then I give the bags to the customers.”\n\nWhat does “them” refer to in the text?",
+        "options": [
+          "The apples.",
+          "The customers.",
+          "Saturday mornings.",
+          "The empty bags."
+        ],
+        "correct": 3,
+        "explanation": "Lucy'nin büyükannesi ona boş poşetler verir. Sonraki cümlede Lucy elmaları bu poşetlerin içine koyduğunu söyler. Bu nedenle into them içindeki them, önceki cümledeki empty bags ifadesinin yerini tutar. Elmalar, müşteriler veya zaman ifadesi bu gönderimin karşılığı değildir."
+      },
+      {
+        "id": "e6-1-t12-10",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Complete the breakfast conversation.\nWaiter: How _____ eggs would you like?\nNora: Two, please.\nWaiter: And how _____ milk would you like?\nNora: Just a little, please.",
+        "options": [
+          "many / much",
+          "much / many",
+          "many / many",
+          "much / much"
+        ],
+        "correct": 0,
+        "explanation": "Eggs adet olarak sayılabilen çoğul bir isimdir; kaç yumurta istendiği How many eggs ile sorulur. Milk burada bir sıvının miktarını belirtir; ne kadar süt istendiği How much milk ile sorulur. Two ve just a little yanıtları da bu ayrımı destekler."
+      }
     ]
   },
   "term2": {}
