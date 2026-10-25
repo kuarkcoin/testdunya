@@ -294,3 +294,10 @@ Toplam: 23 test, 230 soru, 117 SVG, 28 rota. Önceki 220 soru ve 110 SVG korunur
 - Yeni Test 4, orta düzeyde 8 metin + 2 görsel okuma sorusundan oluşur. Bağlamda söz anlamı, amaç belirleme, önerileri değerlendirme, paragraf tamamlama, duyuruda koşulları birleştirme, bilgi güvenilirliği, amaç/neden ilişkisi, yapılmamış bir işten duyulan üzüntü/plan, sözcüklerin yazımı ve yorum işlenir. Tam yıllık müfredat kapsamı iddiası değildir.
 - Anahtar: **B, D, A, C, B, D, C, A, D, B**. İki pasif SVG 360 birim genişliğinde, en az 26 birim yazıyla hazırlanır; 238 piksel çıktıları incelenir.
 - Önceki 330 soru ve 214 SVG korunur. Toplam 34 test / 340 soru / 216 SVG / 39 rota. Veri, rota, TypeScript ve üretim derlemesiyle doğrulanır. Etkileşimli tarayıcı testi yapılmaz; production’a otomatik aktarılmaz.
+
+
+## Türkçe Test 5 — Ayrıntıdan Anlama ve Bilgileri Birleştirme (25 Ekim 2026)
+
+- Yeni Test 5, orta düzeyde 8 metin + 2 görsel okuma sorusudur. Bağlam, deyim, anıların katkısı, ayrıntıdan çıkarım, gereklilik listesi, yönerge, paragraf sıralama, geçiş ifadesi, kesme işareti ve bilgileri birleştirme işlenir. Tam yıllık müfredat kapsamı iddiası değildir.
+- Anahtar: **C, A, D, B, C, D, A, C, D, B**. İki pasif SVG 360 birim genişliğinde, en az 26 birim yazıyla hazırlanır; 238 piksel çıktıları incelenir.
+- Önceki 340 soru ve 216 SVG korunur. Toplam 35 test / 350 soru / 218 SVG / 40 rota. Veri, rota, TypeScript ve üretim derlemesiyle doğrulanır. Etkileşimli tarayıcı testi yapılmaz; production’a otomatik aktarılmaz.

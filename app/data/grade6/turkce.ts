@@ -603,6 +603,156 @@ export const turkceData: SubjectData = {
         "correct": 1,
         "explanation": "Etkileyici bulma ve konuşmaları doğal olarak değerlendirme, kişinin yorumudur. Diğer seçenekler zaman, bölüm sayısı ve dekor gibi gözlenebilir bilgiler verir."
       }
+    ],
+    "test5": [
+      {
+        "id": "t6-1-t5-01",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“Sunum için topladığımız bilgiler dağınıktı. Hepsini birbiriyle ilişkilendirince konu zihnimizde berraklaştı.” cümlelerinde “berraklaşmak” sözcüğünün anlamı aşağıdakilerden hangisidir?",
+        "options": [
+          "Daha ayrıntılı hâle gelmek",
+          "Önemini yitirmek",
+          "Açık ve anlaşılır duruma gelmek",
+          "Önceki biçimine dönmek"
+        ],
+        "correct": 2,
+        "explanation": "Bilgiler arasında ilişki kurulunca konu daha iyi anlaşılmıştır. Berraklaşmak burada suyun temizlenmesini değil, düşüncenin açıklık kazanmasını anlatır."
+      },
+      {
+        "id": "t6-1-t5-02",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Bir öğrenci, konuşmasında “Komşularımız el ele verince boş arsa kısa sürede bir oyun alanına dönüştü.” demiştir.\n“el ele vermek” sözünün anlamını koruyan ifade hangisidir?",
+        "options": [
+          "Birlikte çalışmak",
+          "Sırayla dinlenmek",
+          "Aynı yerde buluşmak",
+          "Birbirini örnek almak"
+        ],
+        "correct": 0,
+        "explanation": "El ele vermek, bir işi gerçekleştirmek için güçlerini birleştirip birlikte çalışmak anlamındadır. Yalnızca aynı yerde bulunmak veya birini örnek almak bu iş birliğini karşılamaz."
+      },
+      {
+        "id": "t6-1-t5-03",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Köyümüzdeki eski değirmeni tanıtan bir yazı hazırladım. Yapının ölçülerini ve yapıldığı yılı yazmıştım. Yazıyı okuyan ninem, orada un öğüttükleri günleri anlattı. Bu anıları da ekleyince değirmen, yalnızca taş bir yapı olmaktan çıktı; insanların yaşamındaki yeri de görünür oldu.\nBu metne göre anıların yazıya katkısı nedir?",
+        "options": [
+          "Yapının ölçülerini daha kesin biçimde belirlemesi",
+          "Yapının tarihini diğer yapılardan daha eski göstermesi",
+          "Yapının nasıl onarılacağını açıklaması",
+          "Yapıyı insanların yaşantılarıyla birlikte tanıtması"
+        ],
+        "correct": 3,
+        "explanation": "Ninenin anıları değirmenin insanların yaşamındaki yerini gösterir. Ölçü, tarih karşılaştırması veya onarım bilgisi eklenmemiştir."
+      },
+      {
+        "id": "t6-1-t5-04",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“Bir öyküyü yalnızca sonunu öğrenmek için okumam. Kişilerin küçük davranışlarına, seçtikleri sözcüklere de dikkat ederim. Çünkü bazen söylenmeyen bir duygu, kısa bir hareketle anlatılır.”\nBu sözleri söyleyen kişiyle ilgili hangisi söylenebilir?",
+        "options": [
+          "Öykülerde olayların hızlı ilerlemesini önemsediği",
+          "Metindeki ayrıntılardan anlam çıkarmaya çalıştığı",
+          "Öyküleri bitirmeden önce son sayfalarını okuduğu",
+          "Kişilerin duygularını yalnızca konuşmalarından öğrendiği"
+        ],
+        "correct": 1,
+        "explanation": "Küçük davranış ve sözcüklere dikkat etmek, açıkça söylenmeyen duyguları ayrıntılardan çıkarmaya yöneliktir. Son sayfayı önce okuma veya yalnızca konuşmaya bakma belirtilmez."
+      },
+      {
+        "id": "t6-1-t5-05",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Gezi çantasını görseldeki listeye göre hazırlayan öğrencilerden hangisi zorunlu eşyaların tamamını almış, isteğe bağlı eşyayı almamıştır?",
+        "options": [
+          "Defter, kalem ve fotoğraf makinesi alan Elif",
+          "Su, kalem ve fotoğraf makinesi alan Ege",
+          "Su, defter ve kalem alan Ada",
+          "Yalnız su ve defter alan Mert"
+        ],
+        "correct": 2,
+        "explanation": "Su, defter ve kalem zorunludur. Fotoğraf makinesi isteğe bağlıdır. Ada zorunlu üç eşyayı almış, isteğe bağlı eşyayı almamıştır.",
+        "imageWidth": 360,
+        "imageHeight": 620,
+        "imageUrl": "/grade6/turkce/test-5/soru-05.svg",
+        "imageAlt": "Gezi çantası listesi: su, defter ve kalem zorunlu; fotoğraf makinesi isteğe bağlı."
+      },
+      {
+        "id": "t6-1-t5-06",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Duyurudaki kurallara uygun davranan bir öğrenci hangisini yapar?",
+        "options": [
+          "Bulduğu eşyayı görevliye teslim edip sahibini kendisi belirler.",
+          "Eşyanın yerini arkadaşlarına duyurup onu bulduğu yerde bırakır.",
+          "Kaybettiği eşya için görevliye başvurur ancak eşyanın özelliklerini anlatmaz.",
+          "Bulduğu eşyayı görevliye verir; kendi eşyası kaybolduğunda özelliklerini görevliye anlatır."
+        ],
+        "correct": 3,
+        "explanation": "Duyuruda bulunan eşyanın görevliye verilmesi, kayıp eşya için görevliye başvurulması ve özelliklerinin anlatılması istenir. Eşleşmeyi kontrol ederek teslim eden görevli olduğundan öğrencinin sahibini kendisinin belirlemesi uygun değildir.",
+        "imageWidth": 360,
+        "imageHeight": 700,
+        "imageUrl": "/grade6/turkce/test-5/soru-06.svg",
+        "imageAlt": "Kayıp eşya duyurusu: bulan kişi görevliye verir; eşyasını arayan görevliye başvurup özelliklerini anlatır; görevli eşleşmeyi kontrol edip teslim eder."
+      },
+      {
+        "id": "t6-1-t5-07",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "I. Bu yüzden açıklamalarımıza herkesin anlayabileceği örnekler ekledik.\nII. Bilim kulübündeki çalışmamızı küçük sınıflara anlatacaktık.\nIII. Sunumdan sonra sordukları sorular, örneklerin konuyu anlamalarını kolaylaştırdığını gösterdi.\nIV. Ancak hazırladığımız ilk metindeki bazı sözcüklerin onlar için yabancı olduğunu fark ettik.\nAnlamlı bir paragraf oluşturmak için cümleler nasıl sıralanmalıdır?",
+        "options": [
+          "II – IV – I – III",
+          "IV – II – III – I",
+          "II – I – IV – III",
+          "I – III – II – IV"
+        ],
+        "correct": 0,
+        "explanation": "Önce sunumun amacı belirtilir (II), ilk metindeki sorun fark edilir (IV), bu soruna çözüm bulunur (I), uygulamanın sonucu verilir (III)."
+      },
+      {
+        "id": "t6-1-t5-08",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“Bu yöntem ötekinden daha az zaman alıyor; ne var ki daha fazla malzeme gerektiriyor.” cümlesindeki “ne var ki” ifadesinin işlevi nedir?",
+        "options": [
+          "İlk yargının nedenini açıklamak",
+          "Bir düşünceyi örneklerle desteklemek",
+          "Olumlu yönün ardından sınırlayıcı bir yönü belirtmek",
+          "İki yargının aynı anlama geldiğini göstermek"
+        ],
+        "correct": 2,
+        "explanation": "İlk yargı yöntemin zaman kazandırdığını, ikinci yargı daha çok malzeme gerektirdiğini belirtir. Ne var ki, olumlu yönün karşısına bir sınırlılık getirir; neden veya örnek bildirmez."
+      },
+      {
+        "id": "t6-1-t5-09",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Aşağıdaki cümlelerin hangisinde kesme işareti doğru kullanılmıştır?",
+        "options": [
+          "Türkçe’nin ses özelliklerini araştırdık.",
+          "Ankara’lı arkadaşım bize katıldı.",
+          "Okul’umuzda yeni bir sergi açıldı.",
+          "Edirne’ye ilk kez geçen yıl gittim."
+        ],
+        "correct": 3,
+        "explanation": "Özel ada gelen yönelme eki kesmeyle ayrılır: Edirne’ye. Özel adlara gelen yapım ekleri ve bunlardan sonra gelen ekler kesmeyle ayrılmaz: Ankaralı, Türkçenin. Okul sözcüğü de burada özel ad değildir."
+      },
+      {
+        "id": "t6-1-t5-10",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Bir öğrenci iki bilgi vermiştir:\n• Kütüphane, sınav haftasında normal kapanış saatinden iki saat sonra kapanacaktır.\n• Bu değişiklik yalnızca sınav haftası için geçerlidir.\nBu iki bilgiyi anlamını değiştirmeden birleştiren cümle hangisidir?",
+        "options": [
+          "Kütüphane sınav haftasından sonra da iki saat daha geç kapanacaktır.",
+          "Kütüphane, yalnızca sınav haftasında normalden iki saat daha geç kapanacaktır.",
+          "Kütüphane sınav haftasında her gün yalnızca iki saat açık kalacaktır.",
+          "Kütüphane, sınav haftasında normal saatinden iki saat önce kapanacaktır."
+        ],
+        "correct": 1,
+        "explanation": "B seçeneği hem kapanışın iki saat geciktiğini hem de uygulamanın yalnızca sınav haftasıyla sınırlı olduğunu korur. Diğer seçenekler süreyi, zamanı veya değişikliğin yönünü değiştirir."
+      }
     ]
   },
   "term2": {}
