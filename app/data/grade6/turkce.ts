@@ -453,6 +453,156 @@ export const turkceData: SubjectData = {
         "correct": 0,
         "explanation": "Kısacası sözü, önce anlatılanların özünü verip değerlendirmeyi sonuca bağlar; karşıtlık, koşul veya ayrıntılı örnek bildirmez."
       }
+    ],
+    "test4": [
+      {
+        "id": "t6-1-t4-01",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“Bir konuyu anlatırken gereksiz ayrıntılara dalmak, asıl düşüncenin gölgede kalmasına yol açabilir.” cümlesinde “gölgede kalmak” sözü hangi anlamda kullanılmıştır?",
+        "options": [
+          "Başka bir düşünceyle çelişmek",
+          "Yeterince fark edilmemek",
+          "Zamanla yanlışlığı anlaşılmak",
+          "Daha sonra açıklanmak üzere ertelenmek"
+        ],
+        "correct": 1,
+        "explanation": "Gereksiz ayrıntılar asıl düşüncenin dikkat çekmesini engeller. Gölgede kalmak, burada yeterince fark edilmemek anlamındadır; düşüncenin yanlışlığı veya ertelenmesi anlatılmaz."
+      },
+      {
+        "id": "t6-1-t4-02",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Bir fotoğraf yarışmasına hazırlanan Arda, ilk gün gördüğü her şeyi çekti. Sonra fotoğraflarını incelerken ne anlatmak istediğini kendisinin bile anlayamadığını fark etti. Ertesi gün “Mahallemde yardımlaşma” konusunu seçti ve bu konuyu yansıtan anları fotoğrafladı.\nBu metinden çıkarılabilecek en kapsamlı yargı hangisidir?",
+        "options": [
+          "İyi bir fotoğraf çekmek için gelişmiş bir makine gerekir.",
+          "Bir çalışmada çok sayıda ürün ortaya koymak başarıyı artırır.",
+          "Yakın çevremizdeki olaylar, uzak yerlerdekilerden daha değerlidir.",
+          "Bir çalışmanın amacını belirlemek, seçimlerimize yön verir."
+        ],
+        "correct": 3,
+        "explanation": "Arda, ne anlatacağına karar verince çekeceği anları bilinçli seçer. Metnin bütünü, amaç belirlemenin çalışmaya yön vermesini destekler; araç kalitesi, ürün sayısı veya yakın-uzak karşılaştırması üzerinde durulmaz."
+      },
+      {
+        "id": "t6-1-t4-03",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“Deniz, okul panosu için hazırladığı yazıyı arkadaşına okuttu. Arkadaşının anlamakta zorlandığı yerleri yeniden yazdı; ancak önerilen başlığı, yazısının içeriğine uymadığı için kullanmadı.”\nDeniz’in bu davranışı aşağıdakilerden hangisini gösterir?",
+        "options": [
+          "Önerileri değerlendirerek uygun bulduklarından yararlandığını",
+          "Yazılarını hazırlarken son kararı arkadaşına bıraktığını",
+          "Eleştirileri yalnızca yazım yanlışlarıyla ilgili olduğunda kabul ettiğini",
+          "Yazısının konusunu arkadaşının önerisine göre değiştirdiğini"
+        ],
+        "correct": 0,
+        "explanation": "Deniz bazı önerilerle anlatımını düzeltir, uygun olmayan başlığı ise kullanmaz. Bu, önerileri olduğu gibi uygulamak değil, değerlendirerek yararlanmaktır."
+      },
+      {
+        "id": "t6-1-t4-04",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Bir müzik grubunda herkes kendi sesinin daha çok duyulmasını istiyordu. Bu yüzden prova boyunca birbirlerini dinleyemediler. Sonra sırayla çalıp diğerlerini dinlemeye başladılar. _____.\nMetnin düşüncesine uygun olarak boşluğa hangi cümle getirilmelidir?",
+        "options": [
+          "Böylece en yüksek sesle çalan kişiyi grubun başına seçtiler",
+          "Bundan sonra her üyenin tek başına çalışmasına karar verdiler",
+          "Birbirlerine uyum sağladıkça ortaya daha dengeli bir müzik çıktı",
+          "Çaldıkları bütün parçaların aynı uzunlukta olmasını sağladılar"
+        ],
+        "correct": 2,
+        "explanation": "Sorun, üyelerin birbirlerini dinlememesidir. Sırayla çalıp dinlemek, karşılıklı uyum ve dengeli müzik sonucuna bağlanır. Diğer sonuçlar metindeki değişimi açıklamaz."
+      },
+      {
+        "id": "t6-1-t4-05",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Ece, yalnızca cuma günü gelebilecek ve bir yetişkinle birlikte etkinliğe katılacaktır. Duyurudaki bilgilere göre hangi etkinliği seçebilir?",
+        "options": [
+          "Kukla yapımı",
+          "Masal çemberi",
+          "Ritim atölyesi",
+          "Üç etkinlikten herhangi biri"
+        ],
+        "correct": 1,
+        "explanation": "Cuma günü yapılan iki etkinlik vardır. Ritim atölyesi yalnız öğrenciler içindir; masal çemberi öğrenci ve bir yetişkinin birlikte katılımına açıktır. Kukla yapımı perşembedir.",
+        "imageWidth": 360,
+        "imageHeight": 650,
+        "imageUrl": "/grade6/turkce/test-4/soru-05.svg",
+        "imageAlt": "Etkinlik takvimi: kukla yapımı perşembe, öğrenci ve bir yetişkin; masal çemberi cuma, öğrenci ve bir yetişkin; ritim atölyesi cuma, yalnız öğrenciler."
+      },
+      {
+        "id": "t6-1-t4-06",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Görseldeki üç adımı uygulayan bir öğrenciden öncelikle hangi davranış beklenir?",
+        "options": [
+          "İlgisini çeken her bilgiyi arkadaşlarıyla hemen paylaşması",
+          "Bir bilginin doğruluğunu paylaşılma sayısına göre değerlendirmesi",
+          "Yeni tarihli bir bilgiyi başka kaynaklara bakmadan doğru kabul etmesi",
+          "Bir bilgiyi paylaşmadan önce güvenilirliğini farklı yönlerden sorgulaması"
+        ],
+        "correct": 3,
+        "explanation": "Kaynak, tarih ve başka kaynaklarla karşılaştırma adımları, bilginin güvenilirliğini sorgulamaya yöneliktir. Çok paylaşılmış ya da yeni tarihli olmak, tek başına doğruluk kanıtı değildir.",
+        "imageWidth": 360,
+        "imageHeight": 680,
+        "imageUrl": "/grade6/turkce/test-4/soru-06.svg",
+        "imageAlt": "Paylaşmadan önce başlıklı görsel: kaynağı incele, tarihi kontrol et, başka kaynaklarla karşılaştır; kaynak sayfası, takvim ve iki belge simgeleri."
+      },
+      {
+        "id": "t6-1-t4-07",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "I. Fidanların büyümesini izleyebilmek için her hafta boylarını ölçtük.\nII. Fidanlar yeterince ışık alamadığı için saksıları pencere önüne taşıdık.\nBu iki cümledeki anlam ilişkileri sırasıyla hangileridir?",
+        "options": [
+          "Neden-sonuç / amaç-sonuç",
+          "Koşul-sonuç / neden-sonuç",
+          "Amaç-sonuç / neden-sonuç",
+          "Amaç-sonuç / koşul-sonuç"
+        ],
+        "correct": 2,
+        "explanation": "İlk cümlede ölçmenin amacı büyümeyi izlemektir. İkinci cümlede saksıların taşınmasının gerçekleşmiş nedeni yeterli ışık alınamamasıdır. İki cümlede de için geçse de anlam ilişkileri farklıdır."
+      },
+      {
+        "id": "t6-1-t4-08",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Bir öğrencinin yazdığı iki cümle şöyledir:\nI. “Keşke gezi sırasında gördüğüm bitkilerin adlarını not etseydim.”\nII. “Bir sonraki gezide küçük bir gözlem defteri tutacağım.”\nBu cümlelerde sırasıyla hangi anlamlar vardır?",
+        "options": [
+          "Yapılmamış bir işten duyulan üzüntü / geleceğe yönelik plan",
+          "Özlem / gerçekleşmiş sonuç",
+          "Beğeni / öneri",
+          "Kararsızlık / karşılaştırma"
+        ],
+        "correct": 0,
+        "explanation": "İlk cümlede geçmişte yapılmamış bir davranıştan duyulan üzüntü vardır. İkinci cümlede öğrenci gelecekte yapmayı düşündüğü işi belirtir; başkasına öneride bulunmaz."
+      },
+      {
+        "id": "t6-1-t4-09",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Aşağıdaki cümlelerin hangisinde yazım yanlışı vardır?",
+        "options": [
+          "Bu konuyla ilgili birkaç örnek daha buldum.",
+          "Kitapta her şey ayrıntılı biçimde anlatılmış.",
+          "Hiçbir öğrenci çalışmasını yarım bırakmadı.",
+          "Anlatılanları birşey söylemeden dinledi."
+        ],
+        "correct": 3,
+        "explanation": "Bir şey ayrı yazılmalıdır. Birkaç ve hiçbir bitişik, her şey ise ayrı yazılır. Diğer seçeneklerde bu sözlerin yazımı doğrudur."
+      },
+      {
+        "id": "t6-1-t4-10",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Bir öğrenci, izlediği oyunu arkadaşına şöyle anlatır: “Sahnede üç oyuncu vardı. Dekorda iki kapı kullanılmıştı. Oyunun sonunda seyirciler ayağa kalktı.”\nÖğrenci anlatımına kendi değerlendirmesini de katmak isterse hangi cümleyi eklemelidir?",
+        "options": [
+          "Oyun saat on dörtte başladı.",
+          "Oyuncuların doğal konuşmaları oyunu daha etkileyici kılmıştı.",
+          "Oyun iki bölümden oluşuyordu.",
+          "Sahnenin sağında küçük bir masa bulunuyordu."
+        ],
+        "correct": 1,
+        "explanation": "Etkileyici bulma ve konuşmaları doğal olarak değerlendirme, kişinin yorumudur. Diğer seçenekler zaman, bölüm sayısı ve dekor gibi gözlenebilir bilgiler verir."
+      }
     ]
   },
   "term2": {}
