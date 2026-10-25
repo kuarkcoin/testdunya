@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="540" viewBox="0 0 360 540" role="img">
+<title>İngilizce Test 11: Kahvaltı hazırlığında görev değişimi</title>
+<desc>Breakfast jobs başlığı altında iki bölüm. USUAL JOBS bölümünde Ben&#x27;in olağan kahvaltı görevi tabak ve çatal-kaşıkla masayı kurmak, Ava&#x27;nın görevi sürahiden bardağa meyve suyu dökmek olarak ad ve nesne simgeleriyle gösteriliyor. TODAY bölümünde Ben sürahiden bardağa meyve suyu döküyor; Ava masaya tabak koyuyor. Her eylemin yanında kişinin adı var.</desc>
+<rect width="360" height="540" rx="16" fill="#eff6ff"/>
+<text x="180" y="29" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#172554">Breakfast jobs</text>
+<rect x="18" y="62" width="324" height="191" rx="16" fill="#dcfce7" stroke="#64748b" stroke-width="2"/>
+<text x="180" y="89" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#172554">USUAL JOBS</text>
+<text x="97" y="124" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#172554">BEN</text>
+<text x="260" y="124" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#172554">AVA</text>
+<line x1="180" y1="109" x2="180" y2="235" stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round"/>
+<rect x="111" y="150" width="18" height="41" rx="8" fill="#fcd9b8" stroke="#b45309" stroke-width="1.5"/>
+<circle cx="108" cy="191" r="9" fill="#fcd9b8" stroke="#b45309" stroke-width="1.5"/>
+<ellipse cx="97" cy="207" rx="37" ry="12" fill="#fff" stroke="#475569" stroke-width="2"/>
+<ellipse cx="97" cy="205" rx="27" ry="6" fill="#dbeafe" stroke="#93c5fd" stroke-width="1.5"/>
+<line x1="47" y1="180" x2="47" y2="221" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
+<line x1="42" y1="179" x2="42" y2="192" stroke="#475569" stroke-width="2" stroke-linecap="round"/>
+<line x1="52" y1="179" x2="52" y2="192" stroke="#475569" stroke-width="2" stroke-linecap="round"/>
+<path d="M 42 192 Q 47 199 52 192" fill="none" stroke="#475569" stroke-width="2" stroke-linecap="round"/>
+<ellipse cx="147" cy="186" rx="5" ry="8" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+<line x1="147" y1="194" x2="147" y2="221" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
+<line x1="84" y1="154" x2="84" y2="177" stroke="#64748b" stroke-width="2.5" stroke-linecap="round"/>
+<polygon points="84,179 79,171 89,171" fill="#64748b" stroke="#64748b" stroke-width="1"/>
+<line x1="37" y1="231" x2="158" y2="231" stroke="#a16207" stroke-width="5" stroke-linecap="round"/>
+<line x1="47" y1="233" x2="47" y2="241" stroke="#a16207" stroke-width="4" stroke-linecap="round"/>
+<line x1="148" y1="233" x2="148" y2="241" stroke="#a16207" stroke-width="4" stroke-linecap="round"/>
+<path d="M 233 163 Q 213 160 216 182 Q 217 192 230 190" fill="none" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
+<polygon points="234,154 266,164 258,202 226,192" fill="#f0f9ff" stroke="#475569" stroke-width="2"/>
+<polygon points="230,178 262,188 258,201 226,191" fill="#fbbf24" stroke="#fbbf24" stroke-width="1"/>
+<polygon points="263,163 274,166 269,174" fill="#f0f9ff" stroke="#475569" stroke-width="2"/>
+<path d="M 272 172 Q 285 188 285 203" fill="none" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/>
+<polygon points="273,204 297,204 294,233 276,233" fill="#f0f9ff" stroke="#475569" stroke-width="2"/>
+<polygon points="276,221 294,221 293,231 277,231" fill="#fbbf24" stroke="#fbbf24" stroke-width="1"/>
+<line x1="207" y1="237" x2="318" y2="237" stroke="#a16207" stroke-width="4" stroke-linecap="round"/>
+<rect x="18" y="279" width="324" height="243" rx="16" fill="#e0e7ff" stroke="#64748b" stroke-width="2"/>
+<text x="180" y="307" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#172554">TODAY</text>
+<text x="97" y="342" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#172554">BEN</text>
+<text x="260" y="342" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#172554">AVA</text>
+<line x1="180" y1="329" x2="180" y2="508" stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round"/>
+<rect x="50" y="404" width="33" height="44" rx="6" fill="#38bdf8" stroke="#64748b" stroke-width="2"/>
+<line x1="52" y1="415" x2="37" y2="439" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+<line x1="81" y1="416" x2="111" y2="421" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+<circle cx="112" cy="421" r="6" fill="#fcd9b8" stroke="#b45309" stroke-width="1"/>
+<line x1="58" y1="447" x2="51" y2="500" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+<line x1="74" y1="447" x2="83" y2="500" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+<circle cx="66" cy="383" r="17" fill="#fcd9b8" stroke="#334155" stroke-width="1.5"/>
+<path d="M 49 382 Q 50 360 72 366 Q 84 369 83 382 Q 71 382 65 372 Q 57 382 49 382" fill="#6b3e25" stroke="#6b3e25" stroke-width="1" stroke-linecap="round"/>
+<circle cx="61" cy="385" r="1.2" fill="#172554" stroke="#172554" stroke-width="0"/>
+<circle cx="72" cy="385" r="1.2" fill="#172554" stroke="#172554" stroke-width="0"/>
+<path d="M 62 392 Q 67 396 72 391" fill="none" stroke="#b45309" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M 115 413 Q 100 412 103 428 Q 104 436 114 437" fill="none" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+<polygon points="119,407 145,417 135,447 110,437" fill="#f0f9ff" stroke="#475569" stroke-width="2"/>
+<polygon points="115,427 139,436 135,446 111,436" fill="#fbbf24" stroke="#fbbf24" stroke-width="1"/>
+<polygon points="143,416 152,420 147,426" fill="#f0f9ff" stroke="#475569" stroke-width="2"/>
+<path d="M 149 425 Q 157 433 155 446" fill="none" stroke="#f59e0b" stroke-width="3" stroke-linecap="round"/>
+<polygon points="145,447 164,447 161,474 148,474" fill="#f0f9ff" stroke="#475569" stroke-width="2"/>
+<polygon points="148,462 161,462 160,472 149,472" fill="#fbbf24" stroke="#fbbf24" stroke-width="1"/>
+<line x1="33" y1="478" x2="165" y2="478" stroke="#a16207" stroke-width="6" stroke-linecap="round"/>
+<line x1="42" y1="482" x2="42" y2="508" stroke="#a16207" stroke-width="4" stroke-linecap="round"/>
+<line x1="155" y1="482" x2="155" y2="508" stroke="#a16207" stroke-width="4" stroke-linecap="round"/>
+<rect x="212" y="404" width="32" height="44" rx="6" fill="#f472b6" stroke="#64748b" stroke-width="2"/>
+<line x1="214" y1="414" x2="199" y2="438" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+<line x1="243" y1="416" x2="272" y2="433" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+<line x1="272" y1="433" x2="292" y2="445" stroke="#fcd9b8" stroke-width="7" stroke-linecap="round"/>
+<circle cx="294" cy="447" r="6" fill="#fcd9b8" stroke="#b45309" stroke-width="1"/>
+<line x1="219" y1="448" x2="213" y2="500" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+<line x1="238" y1="448" x2="245" y2="500" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+<ellipse cx="209" cy="387" rx="7" ry="16" fill="#6b3e25" stroke="#6b3e25" stroke-width="1"/>
+<circle cx="227" cy="383" r="17" fill="#fcd9b8" stroke="#334155" stroke-width="1.5"/>
+<path d="M 210 382 Q 211 360 233 366 Q 245 369 244 382 Q 232 382 226 372 Q 218 382 210 382" fill="#6b3e25" stroke="#6b3e25" stroke-width="1" stroke-linecap="round"/>
+<circle cx="222" cy="385" r="1.2" fill="#172554" stroke="#172554" stroke-width="0"/>
+<circle cx="233" cy="385" r="1.2" fill="#172554" stroke="#172554" stroke-width="0"/>
+<path d="M 223 392 Q 228 396 233 391" fill="none" stroke="#b45309" stroke-width="1.5" stroke-linecap="round"/>
+<ellipse cx="301" cy="452" rx="29" ry="8" fill="#fff" stroke="#475569" stroke-width="2"/>
+<ellipse cx="301" cy="450" rx="21" ry="4" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
+<line x1="300" y1="466" x2="300" y2="476" stroke="#64748b" stroke-width="2.5" stroke-linecap="round"/>
+<polygon points="300,476 295,469 305,469" fill="#64748b" stroke="#64748b" stroke-width="1"/>
+<line x1="203" y1="453" x2="203" y2="475" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="198" y1="451" x2="198" y2="460" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="208" y1="451" x2="208" y2="460" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
+<path d="M 198 460 Q 203 466 208 460" fill="none" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
+<ellipse cx="260" cy="455" rx="4" ry="6" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+<line x1="260" y1="461" x2="260" y2="475" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="193" y1="480" x2="329" y2="480" stroke="#a16207" stroke-width="6" stroke-linecap="round"/>
+<line x1="199" y1="484" x2="199" y2="508" stroke="#a16207" stroke-width="4" stroke-linecap="round"/>
+<line x1="324" y1="484" x2="324" y2="508" stroke="#a16207" stroke-width="4" stroke-linecap="round"/>
+</svg>

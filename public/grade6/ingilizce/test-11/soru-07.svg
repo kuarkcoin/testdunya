@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="580" viewBox="0 0 360 580" role="img">
+<title>İngilizce Test 11: Pazar günü sınıf gezisi</title>
+<desc>CLASS TRIP ve SUNDAY başlıklı pazar günü sınıf gezisi duyurusu. Okul kapısı simgesi yanında Meet, School gate ve 09:15; otobüs simgesi yanında Bus leaves ve 09:30; dönme dolap simgesi yanında At the fair ve 10:00 yazıyor. Sıra okul kapısında buluşma, otobüsle hareket ve lunaparka varış şeklinde.</desc>
+<rect width="360" height="580" rx="16" fill="#eff6ff"/>
+<text x="180" y="32" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#172554">CLASS TRIP</text>
+<text x="180" y="75" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#172554">SUNDAY</text>
+<rect x="18" y="109" width="324" height="137" rx="15" fill="#dcfce7" stroke="#64748b" stroke-width="2"/>
+<rect x="18" y="263" width="324" height="119" rx="15" fill="#e0e7ff" stroke="#64748b" stroke-width="2"/>
+<rect x="18" y="399" width="324" height="151" rx="15" fill="#fce7f3" stroke="#64748b" stroke-width="2"/>
+<rect x="43" y="152" width="83" height="59" rx="2" fill="#fff7ed" stroke="#64748b" stroke-width="2"/>
+<polygon points="35,152 84,122 134,152" fill="#fb7185" stroke="#64748b" stroke-width="2"/>
+<rect x="55" y="166" width="17" height="20" rx="2" fill="#bae6fd" stroke="#64748b" stroke-width="2"/>
+<rect x="97" y="166" width="17" height="20" rx="2" fill="#bae6fd" stroke="#64748b" stroke-width="2"/>
+<rect x="78" y="174" width="18" height="38" rx="2" fill="#a78bfa" stroke="#64748b" stroke-width="2"/>
+<rect x="36" y="187" width="11" height="44" rx="2" fill="#94a3b8" stroke="#64748b" stroke-width="2"/>
+<rect x="121" y="187" width="11" height="44" rx="2" fill="#94a3b8" stroke="#64748b" stroke-width="2"/>
+<line x1="47" y1="194" x2="72" y2="200" stroke="#334155" stroke-width="2" stroke-linecap="round"/>
+<line x1="47" y1="222" x2="72" y2="228" stroke="#334155" stroke-width="2" stroke-linecap="round"/>
+<line x1="72" y1="200" x2="72" y2="228" stroke="#334155" stroke-width="2" stroke-linecap="round"/>
+<line x1="121" y1="194" x2="97" y2="200" stroke="#334155" stroke-width="2" stroke-linecap="round"/>
+<line x1="121" y1="222" x2="97" y2="228" stroke="#334155" stroke-width="2" stroke-linecap="round"/>
+<line x1="97" y1="200" x2="97" y2="228" stroke="#334155" stroke-width="2" stroke-linecap="round"/>
+<text x="238" y="141" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#172554">Meet</text>
+<text x="238" y="177" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#172554">School gate</text>
+<text x="238" y="220" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#172554">09:15</text>
+<rect x="34" y="306" width="104" height="47" rx="10" fill="#facc15" stroke="#64748b" stroke-width="2"/>
+<rect x="43" y="315" width="24" height="17" rx="2" fill="#f0f9ff" stroke="#64748b" stroke-width="2"/>
+<rect x="73" y="315" width="24" height="17" rx="2" fill="#f0f9ff" stroke="#64748b" stroke-width="2"/>
+<rect x="103" y="315" width="25" height="17" rx="2" fill="#f0f9ff" stroke="#64748b" stroke-width="2"/>
+<circle cx="57" cy="353" r="9" fill="#334155" stroke="#334155" stroke-width="1.5"/>
+<circle cx="116" cy="353" r="9" fill="#334155" stroke="#334155" stroke-width="1.5"/>
+
+
+<text x="238" y="297" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#172554">Bus leaves</text>
+<text x="238" y="343" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#172554">09:30</text>
+<line x1="83" y1="465" x2="55" y2="533" stroke="#64748b" stroke-width="4" stroke-linecap="round"/>
+<line x1="83" y1="465" x2="112" y2="533" stroke="#64748b" stroke-width="4" stroke-linecap="round"/>
+<line x1="48" y1="533" x2="120" y2="533" stroke="#64748b" stroke-width="4" stroke-linecap="round"/>
+<circle cx="83" cy="465" r="39" fill="none" stroke="#64748b" stroke-width="2.5"/>
+<line x1="83" y1="465" x2="122.0" y2="465.0" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+<rect x="115.0" y="460.0" width="14" height="13" rx="4" fill="#fb7185" stroke="#64748b" stroke-width="2"/>
+<line x1="83" y1="465" x2="110.57716446627535" y2="492.57716446627535" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+<rect x="103.58" y="487.58" width="14" height="13" rx="4" fill="#38bdf8" stroke="#64748b" stroke-width="2"/>
+<line x1="83" y1="465" x2="83.0" y2="504.0" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+<rect x="76.0" y="499.0" width="14" height="13" rx="4" fill="#facc15" stroke="#64748b" stroke-width="2"/>
+<line x1="83" y1="465" x2="55.42283553372465" y2="492.57716446627535" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+<rect x="48.42" y="487.58" width="14" height="13" rx="4" fill="#a78bfa" stroke="#64748b" stroke-width="2"/>
+<line x1="83" y1="465" x2="44.0" y2="465.0" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+<rect x="37.0" y="460.0" width="14" height="13" rx="4" fill="#fb7185" stroke="#64748b" stroke-width="2"/>
+<line x1="83" y1="465" x2="55.42283553372464" y2="437.42283553372465" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+<rect x="48.42" y="432.42" width="14" height="13" rx="4" fill="#38bdf8" stroke="#64748b" stroke-width="2"/>
+<line x1="83" y1="465" x2="82.99999999999999" y2="426.0" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+<rect x="76.0" y="421.0" width="14" height="13" rx="4" fill="#facc15" stroke="#64748b" stroke-width="2"/>
+<line x1="83" y1="465" x2="110.57716446627535" y2="437.42283553372465" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+<rect x="103.58" y="432.42" width="14" height="13" rx="4" fill="#a78bfa" stroke="#64748b" stroke-width="2"/>
+<circle cx="83" cy="465" r="5" fill="#facc15" stroke="#64748b" stroke-width="1.5"/>
+<text x="238" y="438" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#172554">At the fair</text>
+<text x="238" y="486" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#172554">10:00</text>
+</svg>

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="480" viewBox="0 0 360 480" role="img">
+<title>İngilizce Test 11 · Soru 3</title>
+<desc>İki sırayı ayıran yatay bir yol bulunan şehir haritası. Yolun üstünde soldan sağa Library, Café, Cinema; yolun altında soldan sağa Park, Bakery, Bank. Library ile Park, Café ile Bakery, Cinema ile Bank birbirinin tam karşısındadır. Aynı sıradaki komşu yerler bitişik gösterilmiştir; her yerin bina veya park simgesi vardır.</desc>
+<rect width="360" height="480" fill="white"/>
+<text x="180" y="31" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">Town map</text>
+<rect x="4" y="72" width="116" height="173" rx="8" fill="#F5F9FC" stroke="#A6BBC9" stroke-width="2"/>
+<rect x="4" y="326" width="116" height="141" rx="8" fill="#F5F9FC" stroke="#A6BBC9" stroke-width="2"/>
+<rect x="122" y="72" width="116" height="173" rx="8" fill="#F5F9FC" stroke="#A6BBC9" stroke-width="2"/>
+<rect x="122" y="326" width="116" height="141" rx="8" fill="#F5F9FC" stroke="#A6BBC9" stroke-width="2"/>
+<rect x="240" y="72" width="116" height="173" rx="8" fill="#F5F9FC" stroke="#A6BBC9" stroke-width="2"/>
+<rect x="240" y="326" width="116" height="141" rx="8" fill="#F5F9FC" stroke="#A6BBC9" stroke-width="2"/>
+<rect x="28" y="122" width="68" height="72" rx="2" fill="#D5E8F4" stroke="#36586D" stroke-width="2"/>
+<polygon points="23,122 62,96 101,122" fill="#9ABED6" stroke="#36586D" stroke-width="2"/>
+<rect x="53" y="165" width="18" height="29" rx="1" fill="#FFFFFF" stroke="#36586D" stroke-width="2"/>
+<rect x="41" y="135" width="14" height="17" rx="1" fill="#FFFFFF" stroke="#36586D" stroke-width="2"/>
+<rect x="69" y="135" width="14" height="17" rx="1" fill="#FFFFFF" stroke="#36586D" stroke-width="2"/>
+<rect x="146" y="122" width="68" height="72" rx="2" fill="#D5E8F4" stroke="#36586D" stroke-width="2"/>
+<polygon points="141,122 180,96 219,122" fill="#9ABED6" stroke="#36586D" stroke-width="2"/>
+<rect x="171" y="165" width="18" height="29" rx="1" fill="#FFFFFF" stroke="#36586D" stroke-width="2"/>
+<rect x="159" y="135" width="14" height="17" rx="1" fill="#FFFFFF" stroke="#36586D" stroke-width="2"/>
+<rect x="187" y="135" width="14" height="17" rx="1" fill="#FFFFFF" stroke="#36586D" stroke-width="2"/>
+<rect x="264" y="122" width="68" height="72" rx="2" fill="#D5E8F4" stroke="#36586D" stroke-width="2"/>
+<polygon points="259,122 298,96 337,122" fill="#9ABED6" stroke="#36586D" stroke-width="2"/>
+<rect x="289" y="165" width="18" height="29" rx="1" fill="#FFFFFF" stroke="#36586D" stroke-width="2"/>
+<rect x="277" y="135" width="14" height="17" rx="1" fill="#FFFFFF" stroke="#36586D" stroke-width="2"/>
+<rect x="305" y="135" width="14" height="17" rx="1" fill="#FFFFFF" stroke="#36586D" stroke-width="2"/>
+<rect x="38" y="99" width="8" height="17" rx="1" fill="#FFF1CB" stroke="#36586D" stroke-width="2"/>
+<rect x="48" y="96" width="8" height="20" rx="1" fill="#FFF1CB" stroke="#36586D" stroke-width="2"/>
+<rect x="58" y="100" width="8" height="16" rx="1" fill="#FFF1CB" stroke="#36586D" stroke-width="2"/>
+<ellipse cx="198" cy="107" rx="6" ry="8" fill="white" stroke="#36586D" stroke-width="2"/>
+<rect x="170" y="98" width="23" height="19" rx="3" fill="#FFF1CB" stroke="#36586D" stroke-width="2"/>
+<rect x="275" y="94" width="46" height="22" rx="1" fill="#36586D" stroke="#36586D" stroke-width="2"/>
+<rect x="279" y="97" width="4" height="4" fill="white"/>
+<rect x="279" y="109" width="4" height="4" fill="white"/>
+<rect x="291" y="97" width="4" height="4" fill="white"/>
+<rect x="291" y="109" width="4" height="4" fill="white"/>
+<rect x="303" y="97" width="4" height="4" fill="white"/>
+<rect x="303" y="109" width="4" height="4" fill="white"/>
+<rect x="315" y="97" width="4" height="4" fill="white"/>
+<rect x="315" y="109" width="4" height="4" fill="white"/>
+<text x="62" y="223" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">Library</text>
+<text x="180" y="223" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">Café</text>
+<text x="298" y="223" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">Cinema</text>
+<rect x="0" y="260" width="360" height="51" fill="#8399A8"/>
+<line x1="7" y1="285.5" x2="51" y2="285.5" stroke="white" stroke-width="4"/>
+<line x1="77" y1="285.5" x2="121" y2="285.5" stroke="white" stroke-width="4"/>
+<line x1="147" y1="285.5" x2="191" y2="285.5" stroke="white" stroke-width="4"/>
+<line x1="217" y1="285.5" x2="261" y2="285.5" stroke="white" stroke-width="4"/>
+<line x1="287" y1="285.5" x2="331" y2="285.5" stroke="white" stroke-width="4"/>
+<ellipse cx="62" cy="410" rx="43" ry="9" fill="#CBE8CB"/>
+<line x1="46" y1="362" x2="46" y2="408" stroke="#926A3C" stroke-width="6"/>
+<circle cx="46" cy="355" r="15" fill="#80B48C" stroke="#36586D" stroke-width="1.5"/>
+<circle cx="32" cy="366" r="14" fill="#80B48C" stroke="#36586D" stroke-width="1.5"/>
+<circle cx="59" cy="367" r="14" fill="#80B48C" stroke="#36586D" stroke-width="1.5"/>
+<rect x="65" y="382" width="29" height="7" rx="1" fill="#FFF1CB" stroke="#36586D" stroke-width="2"/>
+<rect x="65" y="397" width="29" height="6" rx="1" fill="#FFF1CB" stroke="#36586D" stroke-width="2"/>
+<line x1="69" y1="403" x2="69" y2="413" stroke="#36586D" stroke-width="2"/>
+<line x1="89" y1="403" x2="89" y2="413" stroke="#36586D" stroke-width="2"/>
+<rect x="146" y="358" width="68" height="59" rx="2" fill="#D5E8F4" stroke="#36586D" stroke-width="2"/>
+<rect x="142" y="350" width="76" height="17" rx="1" fill="#FFF1CB" stroke="#36586D" stroke-width="2"/>
+<line x1="148" y1="351" x2="148" y2="365" stroke="#B59056" stroke-width="5"/>
+<line x1="168" y1="351" x2="168" y2="365" stroke="#B59056" stroke-width="5"/>
+<line x1="188" y1="351" x2="188" y2="365" stroke="#B59056" stroke-width="5"/>
+<line x1="208" y1="351" x2="208" y2="365" stroke="#B59056" stroke-width="5"/>
+<rect x="174" y="390" width="15" height="27" rx="1" fill="white" stroke="#36586D" stroke-width="2"/>
+<ellipse cx="180" cy="378" rx="20" ry="8" fill="#DFAA67" stroke="#36586D" stroke-width="1.5"/>
+<line x1="171" y1="374" x2="174" y2="380" stroke="#9A6A35" stroke-width="1.5"/>
+<line x1="179" y1="374" x2="182" y2="380" stroke="#9A6A35" stroke-width="1.5"/>
+<line x1="187" y1="374" x2="190" y2="380" stroke="#9A6A35" stroke-width="1.5"/>
+<polygon points="259,364 298,341 337,364" fill="#9ABED6" stroke="#36586D" stroke-width="2"/>
+<rect x="267" y="366" width="12" height="43" rx="1" fill="#D5E8F4" stroke="#36586D" stroke-width="2"/>
+<rect x="292" y="366" width="12" height="43" rx="1" fill="#D5E8F4" stroke="#36586D" stroke-width="2"/>
+<rect x="317" y="366" width="12" height="43" rx="1" fill="#D5E8F4" stroke="#36586D" stroke-width="2"/>
+<rect x="259" y="410" width="78" height="8" rx="1" fill="#9ABED6" stroke="#36586D" stroke-width="2"/>
+<text x="62" y="446" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">Park</text>
+<text x="180" y="446" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">Bakery</text>
+<text x="298" y="446" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">Bank</text>
+</svg>

@@ -1705,7 +1705,178 @@ export const ingilizceData: SubjectData = {
             "correct": 3,
             "explanation": "Mesajı yazan kişi büyük oyuncakları sevmezken kız kardeşi sever. Şu anda yazar bilet gişesi yakınında bekler, kardeşi hız trenindedir. Amy mesajın alıcısıdır."
       }
-]
+],
+    "test11": [
+      {
+        "id": "e6-1-t11-01",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "The chart shows all of Max's and Lily's chess club days. How often do they go to the club on the same day?",
+        "options": [
+          "Once a week.",
+          "Twice a week.",
+          "Three times a week.",
+          "Every day."
+        ],
+        "correct": 1,
+        "explanation": "Max pazartesi, perşembe ve cumartesi; Lily salı, perşembe ve cumartesi kulübe gider. İkisinin de gittiği ortak günler perşembe ve cumartesidir. Bu nedenle aynı gün kulübe haftada iki kez giderler: Twice a week. Her birinin tek başına üç gün gitmesi, üçünün de ortak gün olduğu anlamına gelmez.",
+        "imageUrl": "/grade6/ingilizce/test-11/soru-01.svg",
+        "imageWidth": 360,
+        "imageHeight": 580,
+        "imageAlt": "Chess club başlıklı tam haftalık çizelge. Sütunlar Day, Max, Lily. Mon: Max evet, Lily hayır; Tue: Max hayır, Lily evet; Wed: ikisi de hayır; Thu: ikisi de evet; Fri: ikisi de hayır; Sat: ikisi de evet; Sun: ikisi de hayır. Onay işareti kulübe gitmeyi, çizgi gitmemeyi gösterir. Başlıkta satranç taşı simgesi vardır."
+      },
+      {
+        "id": "e6-1-t11-02",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Ella and Max want the same food and one drink each for breakfast. Look at what they like. Which order is suitable?",
+        "options": [
+          "Eggs for both, milk for Ella and tea for Max.",
+          "Toast for both, tea for Ella and milk for Max.",
+          "Cheese for both, milk for Ella and tea for Max.",
+          "Toast for both, milk for Ella and tea for Max."
+        ],
+        "correct": 3,
+        "explanation": "İki çocuğun da sevdiği yiyecek kızarmış ekmektir. Yumurtayı yalnız Ella, peyniri yalnız Max sever. Ella sütü, Max çayı sever; diğer içecekleri sevmezler. Bu yüzden ikisine kızarmış ekmek, Ella'ya süt ve Max'e çay isteyen D siparişi tüm tercihlere uyar.",
+        "imageUrl": "/grade6/ingilizce/test-11/soru-02.svg",
+        "imageWidth": 360,
+        "imageHeight": 540,
+        "imageAlt": "Breakfast likes tablosunda yiyecek ve içecekler küçük resimleriyle gösteriliyor. Sütunlar Ella ve Max. Toast: ikisi de sever; Eggs: Ella sever, Max sevmez; Cheese: Ella sevmez, Max sever; Milk: Ella sever, Max sevmez; Tea: Ella sevmez, Max sever. Onay işareti Likes, çarpı işareti Doesn't like anlamındadır."
+      },
+      {
+        "id": "e6-1-t11-03",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Your friend sends this message: 'Meet me opposite the bakery, next to the library.' Look at the map. Where should you meet your friend?",
+        "options": [
+          "At the café.",
+          "At the park.",
+          "At the bank.",
+          "At the cinema."
+        ],
+        "correct": 0,
+        "explanation": "Haritanın üst sırasında kütüphane, kafe ve sinema; alt sırasında park, fırın ve banka vardır. Kafe fırının tam karşısında, kütüphanenin yanındadır. Opposite karşısında, next to yanında demektir. Diğer yerler iki konum ipucunu birlikte sağlamaz.",
+        "imageUrl": "/grade6/ingilizce/test-11/soru-03.svg",
+        "imageWidth": 360,
+        "imageHeight": 480,
+        "imageAlt": "İki sırayı ayıran yatay bir yol bulunan şehir haritası. Yolun üstünde soldan sağa Library, Café, Cinema; yolun altında soldan sağa Park, Bakery, Bank. Library ile Park, Café ile Bakery, Cinema ile Bank birbirinin tam karşısındadır. Aynı sıradaki komşu yerler bitişik gösterilmiştir; her yerin bina veya park simgesi vardır."
+      },
+      {
+        "id": "e6-1-t11-04",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "It is a hot day. Look at Alex's plan and read his message. Why is Alex excited?",
+        "options": [
+          "Because he can play football outside.",
+          "Because it is cold and snowy.",
+          "Because he can draw with his sister at home.",
+          "Because he wants to draw alone."
+        ],
+        "correct": 2,
+        "explanation": "Görselde hava güneşli ve 32 °C'dir. Alex evde kalıp kız kardeşiyle resim çizebileceğini ve heyecanlı olduğunu açıkça söyler. Heyecanının nedeni birlikte yapacakları etkinliktir. Dışarıda futbol, soğuk ve karlı hava veya tek başına resim yapma görseldeki planla uyuşmaz.",
+        "imageUrl": "/grade6/ingilizce/test-11/soru-04.svg",
+        "imageWidth": 360,
+        "imageHeight": 560,
+        "imageAlt": "Üstte güneş simgesi, Sunny ve 32 °C yazıları. Our plan başlıklı alanda evin içinde aynı masada resim çizen Alex ve kız kardeşinin tasviri; kâğıtlar ve kalemler görünüyor. Alex'in mesajı İngilizce: Let's stay at home. I can draw with my sister. I feel excited! Bu sahne planlanan etkinliği gösterir."
+      },
+      {
+        "id": "e6-1-t11-05",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Look at Maya's opinions. Her friend asks, 'Do you like all three rides?' Which reply matches Maya's opinions?",
+        "options": [
+          "Yes. I like all three rides.",
+          "No. I think the bumper cars are boring.",
+          "No. I don't like any of them.",
+          "No. I think the Ferris wheel is frightening."
+        ],
+        "correct": 1,
+        "explanation": "Maya dönme dolabı rahatlatıcı, atlıkarıncayı eğlenceli bulur ve ikisini de sevdiğini söyler. Çarpışan arabaları ise sıkıcı bulur ve sevmez. Bu yüzden üç oyuncağın hepsini sevip sevmediği sorusuna No diyerek çarpışan arabaları sıkıcı bulduğunu söyleyen B yanıtı uygundur. Bunlar Maya'nın kişisel görüşleridir.",
+        "imageUrl": "/grade6/ingilizce/test-11/soru-05.svg",
+        "imageWidth": 360,
+        "imageHeight": 600,
+        "imageAlt": "Maya's opinions başlığı altında üç oyuncak çizimi ve Maya'nın İngilizce sözleri var. Ferris wheel: I like it! Relaxing! Carousel: I like it! Fun! Bumper cars: I don't like them. Boring! Dönme dolap kabinli büyük tekerlek, atlıkarınca atlı dönen düzenek, çarpışan arabalar tamponlu araçlar olarak gösteriliyor."
+      },
+      {
+        "id": "e6-1-t11-06",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Look at the children's usual breakfast jobs and what they are doing today. Which statement is correct?",
+        "options": [
+          "Ben is doing both jobs today.",
+          "Ava is doing both jobs today.",
+          "Ben is doing Ava's usual job, and Ava is doing Ben's.",
+          "They are both doing their usual jobs today."
+        ],
+        "correct": 2,
+        "explanation": "Olağan kahvaltı görevlerinde Ben masayı kurar, Ava meyve suyu doldurur. Bugünkü görselde Ben meyve suyu doldururken Ava masaya tabak koyar. Bu nedenle bugün her biri diğerinin olağan görevini yapmaktadır; C seçeneği iki görseli birlikte doğru yorumlar. İki işi de tek bir kişi yapmamaktadır.",
+        "imageUrl": "/grade6/ingilizce/test-11/soru-06.svg",
+        "imageAlt": "Breakfast jobs başlığı altında iki bölüm. USUAL JOBS bölümünde Ben'in olağan kahvaltı görevi tabak ve çatal-kaşıkla masayı kurmak, Ava'nın görevi sürahiden bardağa meyve suyu dökmek olarak ad ve nesne simgeleriyle gösteriliyor. TODAY bölümünde Ben sürahiden bardağa meyve suyu döküyor; Ava masaya tabak koyuyor. Her eylemin yanında kişinin adı var.",
+        "imageWidth": 360,
+        "imageHeight": 540
+      },
+      {
+        "id": "e6-1-t11-07",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Tim wants to travel to the fair on the class bus. Which plan follows the notice?",
+        "options": [
+          "Wait at the fair at quarter past nine.",
+          "Arrive at the school gate at quarter to ten.",
+          "Get on the class bus at ten o'clock.",
+          "Meet at the school gate at quarter past nine."
+        ],
+        "correct": 3,
+        "explanation": "Duyuruda pazar günü okul kapısında buluşma 09.15, otobüsün kalkışı 09.30 ve lunaparka varış 10.00 olarak verilmiştir. Quarter past nine, 09.15 demektir. Sınıfla birlikte yolculuk için D seçeneğindeki buluşma yeri ve saati uygundur. 09.45'te okul kapısına gelmek kalkıştan sonradır; 10.00 ise varış saatidir.",
+        "imageUrl": "/grade6/ingilizce/test-11/soru-07.svg",
+        "imageAlt": "CLASS TRIP ve SUNDAY başlıklı pazar günü sınıf gezisi duyurusu. Okul kapısı simgesi yanında Meet, School gate ve 09:15; otobüs simgesi yanında Bus leaves ve 09:30; dönme dolap simgesi yanında At the fair ve 10:00 yazıyor. Sıra okul kapısında buluşma, otobüsle hareket ve lunaparka varış şeklinde.",
+        "imageWidth": 360,
+        "imageHeight": 580
+      },
+      {
+        "id": "e6-1-t11-08",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Choose the best sentence to complete the conversation.\nNoah: The music here is very loud.\nLily: Let's meet at quarter to four.\nNoah: _____\nLily: At quarter to four.",
+        "options": [
+          "Can you say the time again, please?",
+          "Who is your favourite singer?",
+          "What do you have for breakfast?",
+          "Do you like this ride?"
+        ],
+        "correct": 0,
+        "explanation": "Yüksek sesli müzik, Noah'nın söylenen saati tekrar istemesini anlamlı kılar. Lily son cümlede buluşma saatini tekrar eder; bu yanıt A seçeneğindeki nazik tekrar isteğine uygundur. Diğer sorular şarkıcı, kahvaltı veya oyuncakla ilgili görüş sorar; saat yanıtı onlara uymaz."
+      },
+      {
+        "id": "e6-1-t11-09",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Read Elif's message to Sam.\n“Hi, Sam! Our class picnic is on Saturday. I'm bringing sandwiches. Mia is bringing fruit. Can you bring some water or juice?”\n\nWhich statement is correct?",
+        "options": [
+          "Elif is bringing fruit.",
+          "The picnic is on Sunday.",
+          "Elif asks Sam to bring drinks.",
+          "Mia is bringing sandwiches."
+        ],
+        "correct": 2,
+        "explanation": "Elif sandviç, Mia meyve getirecektir. Elif, Sam'den su veya meyve suyu ister; bunlar içecek olduğu için C seçeneği doğrudur. Mesajda pikniğin cumartesi günü olduğu açıkça yazılıdır."
+      },
+      {
+        "id": "e6-1-t11-10",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Complete the conversation with the correct question words.\nNora: _____ do you like this café?\nLeo: Because the food is delicious.\nNora: _____ do you usually come here with?\nLeo: My family.",
+        "options": [
+          "When / Who",
+          "Why / Who",
+          "Why / Where",
+          "What / When"
+        ],
+        "correct": 1,
+        "explanation": "Because the food is delicious bir neden bildirdiğinden ilk soru Why ile sorulur. My family kişi bildirdiğinden ikinci soru Who ile sorulur. Who do you usually come here with? sorusu, buraya genellikle kiminle geldiğini sorar."
+      }
+    ]
   },
   "term2": {}
 };
+
