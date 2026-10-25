@@ -1053,6 +1053,156 @@ export const turkceData: SubjectData = {
         "correct": 1,
         "explanation": "B seçeneği, kurallardaki ayrıntının gözden kaçırılmasına dayanan olaydan uygun bir ders çıkarır. Önceki oyunları örnek alma, hızlanma veya kuralları değiştirme metinde çözüm olarak gösterilmez."
       }
+    ],
+    "test8": [
+      {
+        "id": "t6-1-t8-01",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“Arkadaşımızın sorduğu farklı bir soru, uzun süredir çözemediğimiz sorunun çözümüne kapı araladı.” cümlesinde “kapı aralamak” sözü neyi anlatır?",
+        "options": [
+          "Sorunun önemini azaltmayı",
+          "Yeni bir çözüm olanağı oluşturmayı",
+          "Sonucu kesin olarak belirlemeyi",
+          "Çalışmayı bir süre ertelemeyi"
+        ],
+        "correct": 1,
+        "explanation": "Farklı soru, çözüme ulaşmak için yeni bir olanak sağlamıştır. Kapı aralamak, çözümün kesinleştiğini değil, bir başlangıç veya fırsat oluştuğunu belirtir."
+      },
+      {
+        "id": "t6-1-t8-02",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“Bu kitap, bir kahramanın başından geçenleri anlatmakla kalmıyor; okuru kendi seçimleri üzerine de düşündürüyor.” cümlesine anlamca en yakın yargı hangisidir?",
+        "options": [
+          "Kitapta anlatılan seçimler bütün okurlar için aynı sonucu doğurur.",
+          "Kitabın kahramanı, karşılaştığı her güçlüğü kendi başına çözer.",
+          "Kitap yalnızca okurun yaşamındaki olayları açıklamak için yazılmıştır.",
+          "Kitap hem bir kahramanın yaşadıklarını anlatır hem de okurun kendi seçimleri üzerine düşünmesini sağlar."
+        ],
+        "correct": 3,
+        "explanation": "Anlatmakla kalmıyor ifadesi, olayları aktarmanın yanında okuru düşündürme işlevi bulunduğunu gösterir. D seçeneği iki yönü de korur."
+      },
+      {
+        "id": "t6-1-t8-03",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Sınıfımız için bir sözlük köşesi hazırladık. Başlangıçta sözcükleri yalnızca anlamlarıyla yazıyorduk. Sonra aynı sözcüğün farklı cümlelerde farklı anlamlar kazanabildiğini gördük. Bunun üzerine her sözcüğün yanına kullanıldığı cümleyi de ekledik.\nBu değişikliğin temel nedeni hangisidir?",
+        "options": [
+          "Sözcüklerin anlamını kullanıldıkları bağlamla birlikte göstermek",
+          "Sözlükte mümkün olduğunca çok sözcüğe yer vermek",
+          "Sözcüklerin yazımını daha kısa sürede ezberlemek",
+          "Sözcükleri alfabetik sıraya koymayı kolaylaştırmak"
+        ],
+        "correct": 0,
+        "explanation": "Cümle örnekleri, sözcüğün hangi anlamda kullanıldığını gösterir. Değişiklik sözcük sayısı, ezber hızı veya alfabetik sıralama için yapılmamıştır."
+      },
+      {
+        "id": "t6-1-t8-04",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Bir marangoz, yaptığı sandalyeleri gösterirken “Güzel görünmeleri yetmez; insanların üzerinde rahatça oturabilmesi de gerekir.” dedi.\nBu sözle vurgulanan düşünce hangisidir?",
+        "options": [
+          "Bir ürünün görünüşü, kullanımından bağımsız değerlendirilmelidir.",
+          "Bir ürünün değeri, yapımında harcanan süreyle belirlenmelidir.",
+          "Bir ürün hazırlanırken görünüşü ve kullanım amacı birlikte düşünülmelidir.",
+          "Bir ürünü kullanışlı yapmak için süslemeden bütünüyle vazgeçilmelidir."
+        ],
+        "correct": 2,
+        "explanation": "Marangoz, görünüşün tek başına yeterli olmadığını; rahat kullanımın da gerekli olduğunu söyler. Görünüşü reddetmez, iki özelliğin birlikte gözetilmesini ister."
+      },
+      {
+        "id": "t6-1-t8-05",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Okul dergisinin çalışma planına göre aşağıdaki yargılardan hangisi doğrudur?",
+        "options": [
+          "Çizimler tamamlanmadan önce sayfalar düzenlenecektir.",
+          "Yazılar ile çizimler aynı kişi tarafından hazırlanacaktır.",
+          "Derginin basımından sonra yazılar toplanacaktır.",
+          "Sayfalar, yazılar ve çizimler hazır olduktan sonra düzenlenecektir."
+        ],
+        "correct": 3,
+        "explanation": "Yazılar pazartesi toplanır, çizimler salı hazırlanır; sayfa düzeni çarşamba yapılır. Basım perşembedir. Bu nedenle sayfa düzeni iki içerik hazırlandıktan sonra gelir.",
+        "imageWidth": 360,
+        "imageHeight": 650,
+        "imageUrl": "/grade6/turkce/test-8/soru-05.svg",
+        "imageAlt": "Okul dergisi planı: pazartesi Ece yazıları toplar; salı Can çizimleri hazırlar; çarşamba ikisi sayfaları düzenler; perşembe dergi basılır."
+      },
+      {
+        "id": "t6-1-t8-06",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Görseldeki iki hizmet birlikte düşünüldüğünde kütüphanenin hangi amacı öne çıkmaktadır?",
+        "options": [
+          "Farklı ihtiyaçları olan kişilerin kitaplara erişimini kolaylaştırmak",
+          "Okurların hangi kitap türlerini tercih ettiğini belirlemek",
+          "Kitapların daha kısa sürede okunmasını sağlamak",
+          "Okurların kitaplar hakkındaki görüşlerini bir araya getirmek"
+        ],
+        "correct": 0,
+        "explanation": "Sesli kitap hizmeti ve eve kitap ulaştırma, farklı erişim ihtiyaçlarına cevap verir. Afiş tercihleri araştırmayı, okuma hızını artırmayı veya okur görüşlerini toplamayı amaçlayan bir hizmet sunmaz.",
+        "imageWidth": 360,
+        "imageHeight": 650,
+        "imageUrl": "/grade6/turkce/test-8/soru-06.svg",
+        "imageAlt": "Herkes için kütüphane afişi: dinlemek isteyenler için sesli kitaplar, kütüphaneye gelemeyenler için eve kitap hizmeti. Kulaklık ve ev-kitap simgeleri vardır."
+      },
+      {
+        "id": "t6-1-t8-07",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "I. Bu nedenle anketimize yalnızca “Hangi sporları yapıyorsunuz?” sorusunu koyduk.\nII. Sonuçta öğrencilerin yaptığı sporları öğrendik, fakat neden bu sporları seçtiklerini öğrenemedik.\nIII. Okulumuzdaki öğrencilerin spor alışkanlıklarını merak ediyorduk.\nIV. İkinci ankete tercih nedenlerini soran bir soru da ekledik.\nBu cümlelerle anlamlı bir paragraf oluşturmak için sıralama nasıl olmalıdır?",
+        "options": [
+          "III – II – I – IV",
+          "I – III – IV – II",
+          "III – I – II – IV",
+          "II – IV – III – I"
+        ],
+        "correct": 2,
+        "explanation": "Önce merak edilen konu belirtilir (III), ilk anket sorusu verilir (I), sorunun bilgi bakımından eksikliği fark edilir (II), ikinci ankette bu eksik giderilir (IV)."
+      },
+      {
+        "id": "t6-1-t8-08",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“Küçük tekne, durgun suyun üzerinde bir yaprak gibi süzülüyordu.” cümlesindeki benzetmede tekne hangi yönden yaprağa benzetilmiştir?",
+        "options": [
+          "Rengi bakımından",
+          "Suyun üzerindeki hafif hareketi bakımından",
+          "İçindeki yolcu sayısı bakımından",
+          "Yapıldığı malzeme bakımından"
+        ],
+        "correct": 1,
+        "explanation": "Süzülmek, hafif ve akıcı bir hareketi anlatır. Benzetme teknenin rengi veya malzemesiyle değil, su üzerindeki hareketiyle ilgilidir."
+      },
+      {
+        "id": "t6-1-t8-09",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Aşağıdaki cümlelerin hangisinde tarihlerin yazımı doğrudur?",
+        "options": [
+          "Sergimiz 12 kasım 2026 tarihinde açılacak.",
+          "Sergimiz 12 Kasım 2026 Tarihinde açılacak.",
+          "Sergimiz kasım Ayında açılacak.",
+          "Sergimiz 12 Kasım 2026 tarihinde açılacak."
+        ],
+        "correct": 3,
+        "explanation": "Belirli bir tarih bildiren ay adı büyük harfle başlar: 12 Kasım 2026. Tarihinde sözcüğü cümle içinde küçük yazılır. Belirli gün belirtmeyen kasım ayında ifadesinde ise ay adı ve ayında sözcüğü küçük yazılır."
+      },
+      {
+        "id": "t6-1-t8-10",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“Bir metni ilk okuyuşumda olaylara odaklanırım. İkinci okuyuşumda ise anlatıcının seçtiği sözcüklere dikkat ederim. Böylece aynı metinde daha önce fark etmediğim ayrıntılar bulurum.”\nBu metinden hangi sonuca ulaşılabilir?",
+        "options": [
+          "Bir metni yeniden okumaya ancak olayların sırası ilk okumada anlaşılmadığında gerek vardır.",
+          "Farklı bir amaçla yeniden okumak, metni daha derin anlamaya yardımcı olabilir.",
+          "Sözcük seçimine dikkat etmek, metindeki olayları incelemekten daha önemli bir okuma amacıdır.",
+          "İkinci okumada fark edilen ayrıntılar, ilk okumada çıkarılan sonuçların yanlış olduğunu gösterir."
+        ],
+        "correct": 1,
+        "explanation": "Anlatıcı her okumada farklı bir özelliğe odaklanarak yeni ayrıntılar keşfeder. İlk okumanın yanlış veya yetersiz olduğu söylenmez; okuma amaçlarından biri diğerinden üstün tutulmaz. Bu yüzden yalnızca B seçeneğindeki genel sonuca ulaşılabilir."
+      }
     ]
   },
   "term2": {}
