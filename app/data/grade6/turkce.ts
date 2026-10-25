@@ -903,6 +903,156 @@ export const turkceData: SubjectData = {
         "correct": 2,
         "explanation": "Kaynağı belirsiz bilgileri paylaşmamak, kaynağı belirli bütün bilgileri sorgulamadan doğru kabul etmek demek değildir. Metin bu sonucu desteklemez. Diğer seçenekler metindeki araştırma ve paylaşım tutumunu yansıtır."
       }
+    ],
+    "test7": [
+      {
+        "id": "t6-1-t7-01",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“Bir düşünceyi özümsemek, onu olduğu gibi tekrarlamak değil, anlamını kavrayıp kendi sözlerimizle açıklayabilmektir.” cümlesine göre “özümsemek” ne demektir?",
+        "options": [
+          "Bir düşüncenin bütün sözcüklerini ezberlemek",
+          "Bir düşünceyi anlayarak benimsemek",
+          "Bir düşünceyi başkalarından önce dile getirmek",
+          "Bir düşüncenin yalnızca sonucunu öğrenmek"
+        ],
+        "correct": 1,
+        "explanation": "Cümle, özümsemeyi anlamı kavramak ve kendi sözleriyle açıklayabilmek üzerinden tanımlar. Ezberlemek, önce söylemek veya yalnızca sonucu bilmek bu anlamı karşılamaz."
+      },
+      {
+        "id": "t6-1-t7-02",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“Mahallemizdeki fırın bu yıl da çocuklar için ekmek yapımı atölyesi düzenledi.” cümlesinden kesin olarak hangisi çıkarılabilir?",
+        "options": [
+          "Atölyenin her ay düzenlendiği",
+          "Atölyeye katılan çocukların ekmek yapmayı önceden bildiği",
+          "Bu yılki atölyenin önceki atölyelerden daha kalabalık olduğu",
+          "Fırının daha önce de çocuklar için ekmek yapımı atölyesi düzenlediği"
+        ],
+        "correct": 3,
+        "explanation": "Bu yıl da ifadesindeki da, etkinliğin daha önce yapıldığını gösterir. Düzenlenme sıklığı, katılımcıların bilgisi ve sayısı verilmemiştir."
+      },
+      {
+        "id": "t6-1-t7-03",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Otobüs durağındaki küçük rafın üzerinde “Yağmurda al, işin bitince geri bırak.” yazıyordu. İlk gün rafta iki şemsiye vardı. Bir hafta sonra sayıları beşe çıktı. Mahalledekiler kullanmadıkları şemsiyeleri de rafa bırakmıştı.\nBu metne en uygun başlık hangisidir?",
+        "options": [
+          "Paylaşımla Büyüyen Bir Çözüm",
+          "Yağmurlu Günlerde Düzenli Ulaşım",
+          "Şemsiyelerin Doğru Kullanımı",
+          "Eşyaları Saklamanın Önemi"
+        ],
+        "correct": 0,
+        "explanation": "Raf, yağmurda şemsiyeye ihtiyaç duyanlara çözüm sunar; başkalarının katkısıyla büyür. Ulaşımın düzenlenmesi, şemsiye kullanım tekniği veya eşya saklama metnin odağı değildir."
+      },
+      {
+        "id": "t6-1-t7-04",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“Müzede önce bütün eserlerin fotoğrafını çekmeye çalıştım. Bir süre sonra, ekrana bakarken eserleri yeterince incelemediğimi fark ettim. Telefonumu çantama koyup ilgimi çeken bir eserin önünde uzun süre durdum.”\nAnlatıcının davranışındaki değişimi en iyi açıklayan yargı hangisidir?",
+        "options": [
+          "Gezisini daha kısa sürede bitirmeye karar vermiştir.",
+          "Fotoğrafını çekmediği eserleri önemsiz bulmuştur.",
+          "Görüntü biriktirmek yerine doğrudan gözleme yönelmiştir.",
+          "Müzedeki eserler hakkında başkalarının yorumunu beklemiştir."
+        ],
+        "correct": 2,
+        "explanation": "Başlangıçta fotoğraf çekmeye odaklanan anlatıcı, daha sonra eseri doğrudan incelemeyi seçer. Süreyi kısaltma, eserleri önemsiz bulma veya yorum bekleme anlatılmamıştır."
+      },
+      {
+        "id": "t6-1-t7-05",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Girişten başlayan bir ziyaretçi önce danışmaya, sonra resim sergisine gidecektir. Görseldeki yönlendirmeye uygun olarak hangi yolu izlemelidir?",
+        "options": [
+          "Önce sağa, sonra sola",
+          "Önce sola, sonra sağa",
+          "Önce sola, sonra sola",
+          "Önce sağa, sonra sağa"
+        ],
+        "correct": 1,
+        "explanation": "Girişteki levha danışma için solu gösterir. Danışma önündeki levha ise resim sergisi için sağı gösterir. İki levha sırayla okunmalıdır.",
+        "imageWidth": 360,
+        "imageHeight": 660,
+        "imageUrl": "/grade6/turkce/test-7/soru-05.svg",
+        "imageAlt": "Birinci levha girişte: danışma sola, kafeterya sağa. İkinci levha danışma önünde: resim sergisi sağa, konferans salonu sola."
+      },
+      {
+        "id": "t6-1-t7-06",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Afişteki bilgi ve öneri birlikte değerlendirildiğinde aşağıdaki davranışlardan hangisi amaca en uygundur?",
+        "options": [
+          "Bahçenin bütün bölümlerini aynı etkinlik için kullanmak",
+          "Hareketli oyunları okuma alanına taşıyarak iki etkinliği birleştirmek",
+          "Okuma ve oyun alanlarının yerini her teneffüste değiştirmek",
+          "Bahçeyi kullanırken farklı etkinlikler için ayrılan alanlara dikkat etmek"
+        ],
+        "correct": 3,
+        "explanation": "Afiş, sessizce kitap okuyanlar ile hareketli oyun oynayanlar için farklı alanlar gösterir. Ortak bahçede farklı ihtiyaçların gözetilmesini önerir.",
+        "imageWidth": 360,
+        "imageHeight": 660,
+        "imageUrl": "/grade6/turkce/test-7/soru-06.svg",
+        "imageAlt": "Okul bahçesi afişinde gölgeli bölüm kitap ve bank simgesiyle okuma alanı, açık bölüm top simgesiyle oyun alanı olarak ayrılmıştır. Altında herkesin ihtiyacına yer var yazısı bulunur."
+      },
+      {
+        "id": "t6-1-t7-07",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“Okul gazetesinin ilk sayısı için bir röportaj hazırladık. Sorularımızı önce kendi aramızda denedik. Bir soruya verilen yanıtların çok kısa kaldığını görünce o soruyu yeniden düzenledik.”\nBu metinde aşağıdaki sorulardan hangisinin cevabı yoktur?",
+        "options": [
+          "Röportajı kiminle yapacaklar?",
+          "Soruları nerede kullanacaklar?",
+          "Bir soruyu neden değiştirdiler?",
+          "Soruları değiştirmeden önce ne yaptılar?"
+        ],
+        "correct": 0,
+        "explanation": "Röportaj yapılacak kişi belirtilmemiştir. Soruların okul gazetesi için hazırlandığı, grup içinde denendiği ve kısa yanıt alınan sorunun değiştirildiği anlatılmıştır."
+      },
+      {
+        "id": "t6-1-t7-08",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“Yaşlı çınar, rüzgârla sallanan dallarıyla sabah yürüyüşüne çıkanlara selam veriyordu.” cümlesindeki anlatımı farklı kılan özellik hangisidir?",
+        "options": [
+          "Ağacın başka bir ağaca benzetilmesi",
+          "Bir olayın olduğundan büyük gösterilmesi",
+          "Ağaca insana özgü bir davranış yüklenmesi",
+          "Ağacın özelliklerinin bilimsel bilgilerle açıklanması"
+        ],
+        "correct": 2,
+        "explanation": "Selam vermek insana özgü bir davranıştır. Bu davranışın çınara yüklenmesi kişileştirmedir. Cümlede başka bir ağaca benzetme veya bilimsel açıklama yapılmaz."
+      },
+      {
+        "id": "t6-1-t7-09",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Aşağıdaki cümlelerin hangisinde yazım yanlışı vardır?",
+        "options": [
+          "Yarınki toplantıda bu konuyu görüşeceğiz.",
+          "Duydum ki okulumuza bir yazar gelecek.",
+          "Oysa biz de hazırlıklara katılmak istiyorduk.",
+          "Birkaç sorum var, bunlarıda yazara sormalıyım."
+        ],
+        "correct": 3,
+        "explanation": "Bunları da sözündeki da bağlaçtır ve ayrı yazılır. Yarınki sözcüğündeki ek bitişik, duydum ki ifadesindeki bağlaç ayrı yazılır; oysa bitişiktir."
+      },
+      {
+        "id": "t6-1-t7-10",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“Yeni bir oyunun kurallarını okuduktan sonra hemen oynamaya başladık. Bir anlaşmazlık çıkınca kurallara yeniden baktık ve gözden kaçırdığımız bir ayrıntıyı bulduk.”\nBu metnin sonuna hangi cümle getirilirse olaydan çıkarılan ders belirtilmiş olur?",
+        "options": [
+          "Kuralları uygularken önceden bildiğimiz oyunları örnek almak yeterlidir.",
+          "Bir yönergeyi okumak kadar ayrıntılarını doğru uygulamak da önemlidir.",
+          "Bir anlaşmazlığı çözmek için oyunu daha hızlı sürdürmek gerekir.",
+          "Oyunun kurallarını oyuncuların isteğine göre değiştirmek anlaşmazlıkları önler."
+        ],
+        "correct": 1,
+        "explanation": "B seçeneği, kurallardaki ayrıntının gözden kaçırılmasına dayanan olaydan uygun bir ders çıkarır. Önceki oyunları örnek alma, hızlanma veya kuralları değiştirme metinde çözüm olarak gösterilmez."
+      }
     ]
   },
   "term2": {}

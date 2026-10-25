@@ -308,3 +308,10 @@ Toplam: 23 test, 230 soru, 117 SVG, 28 rota. Önceki 220 soru ve 110 SVG korunur
 - Yeni Test 6, orta düzeyde 8 metin + 2 görsel okuma sorusudur. Bağlamda anlam, iki metindeki yaklaşımları karşılaştırma, geri bildirimden çıkarım, paragraf tamamlama, duyuruları karşılaştırma, görsel ileti, anlatım biçimi, geçiş ifadesi, sayıların yazımı ve çıkarım sınırları işlenir. Tam yıllık müfredat kapsamı iddiası değildir.
 - Anahtar: **C, A, B, D, C, A, D, B, D, C**. İki pasif SVG 360 birim genişliğinde, en az 26 birim yazıyla hazırlanır; 238 piksel çıktıları incelenir.
 - Önceki 350 soru ve 218 SVG korunur. Toplam 36 test / 360 soru / 220 SVG / 41 rota. Veri, rota, TypeScript ve üretim derlemesiyle doğrulanır. Etkileşimli tarayıcı testi yapılmaz; production’a otomatik aktarılmaz.
+
+
+## Türkçe Test 7 — Örtük Anlam ve Görsel Yönergeler (25 Ekim 2026)
+
+- Yeni Test 7, orta düzeyde 8 metin + 2 görsel okuma sorusudur. Bağlamda anlam, örtük bilgi, başlık, davranış değişimi, yön levhaları, ortak alan iletisi, cevabı bulunmayan soru, kişileştirme, yazım ve metinden ders çıkarma işlenir. Tam yıllık müfredat kapsamı iddiası değildir.
+- Anahtar: **B, D, A, C, B, D, A, C, D, B**. İki pasif SVG 360 birim genişliğinde, en az 26 birim yazıyla hazırlanır; 238 piksel çıktıları incelenir.
+- Önceki 360 soru ve 220 SVG korunur. Toplam 37 test / 370 soru / 222 SVG / 42 rota. Veri, rota, TypeScript ve üretim derlemesiyle doğrulanır. Etkileşimli tarayıcı testi yapılmaz; production’a otomatik aktarılmaz.
