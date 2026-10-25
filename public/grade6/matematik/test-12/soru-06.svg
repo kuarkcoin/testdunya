@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="460" viewBox="0 0 360 460" role="img">
+<title>Test 12 · Soru 6 · Dikdörtgen parçaları</title>
+<desc>Dış çevresi 100 cm olan bir dikdörtgen, kısa kenarına paralel iki kesimle yan yana üç dikdörtgene ayrılmış. Parçaların çevreleri soldan sağa 44 cm, 48 cm ve 52 cm. Kesim kaybı yok. Şekil ölçekli değildir.</desc>
+<rect width="360" height="460" fill="white"/>
+<text x="180" y="32" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Parça çevreleri</text>
+<rect x="26" y="116" width="87" height="180" rx="0" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<rect x="113" y="116" width="103" height="180" rx="0" fill="#FFF1CB" stroke="#36586D" stroke-width="2"/>
+<rect x="216" y="116" width="118" height="180" rx="0" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<text x="69.5" y="188" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">44</text>
+<text x="69.5" y="228" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">cm</text>
+<text x="164.5" y="188" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">48</text>
+<text x="164.5" y="228" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">cm</text>
+<text x="275" y="188" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">52</text>
+<text x="275" y="228" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">cm</text>
+<text x="180" y="353" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Dış çevre: 100 cm</text>
+<text x="180" y="425" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">Şekil ölçekli değildir.</text>
+</svg>

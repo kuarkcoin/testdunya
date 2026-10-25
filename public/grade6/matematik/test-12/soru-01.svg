@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="520" viewBox="0 0 360 520" role="img">
+<title>Test 12 · Soru 1</title>
+<desc>N kodunun koşulları: N pozitif ve 200&#x27;den küçük. Farklı asal çarpanları tam olarak 2 ve 3. N/2 tek sayı. N/3 asal sayı değil.</desc>
+<rect width="360" height="520" fill="white"/>
+<text x="180" y="33" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">Kilit kodu: N</text>
+<rect x="20" y="72" width="320" height="80" rx="12" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<text x="180" y="112" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">0 &lt; N &lt; 200</text>
+<rect x="20" y="172" width="320" height="116" rx="12" fill="#FFF1CB" stroke="#36586D" stroke-width="2"/>
+<text x="180" y="200" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Farklı asal</text>
+<text x="180" y="235" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">çarpanlar: 2 ve 3</text>
+<text x="180" y="269" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">İkisi de var</text>
+<rect x="20" y="308" width="320" height="80" rx="12" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<text x="180" y="348" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">N ÷ 2: tek</text>
+<rect x="20" y="408" width="320" height="80" rx="12" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<text x="180" y="448" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">N ÷ 3: asal değil</text>
+</svg>

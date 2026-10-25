@@ -1767,6 +1767,176 @@ export const matematikData: SubjectData = {
         "term": 1
       }
     ],
+    test12: [
+      {
+        "id": "m6-1-t12-01",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Bir kilidin N kodu, görseldeki koşulların tamamını sağlayan pozitif bir doğal sayıdır. N'nin farklı asal çarpanları tam olarak 2 ve 3'tür; N, 200'den küçüktür. N sayısı 2'ye bölündüğünde tek sayı, 3'e bölündüğünde asal olmayan bir sayı elde ediliyor.\n\nBu kilit için kullanılabilecek bütün farklı N kodlarının toplamı kaçtır?",
+        "options": [
+          "216",
+          "234",
+          "240",
+          "252"
+        ],
+        "correct": 1,
+        "explanation": "Farklı asal çarpanlar tam olarak 2 ve 3 olduğundan N, yalnız bu iki asalın çarpımlarından oluşmalı ve ikisini de içermelidir. N/2 tek olduğuna göre N'nin çarpanlarında yalnız bir tane 2 bulunur; gerisi 3'lerin çarpımıdır. 200'den küçük adaylar 2 × 3 = 6, 2 × 3 × 3 = 18, 2 × 3 × 3 × 3 = 54 ve 2 × 3 × 3 × 3 × 3 = 162'dir. Sonraki aday 486 olduğu için sınırı aşar. 6/3 = 2 asal olduğundan 6 elenir. Diğer adaylar 3'e bölününce 6, 18 ve 54 verir; bunların hiçbiri asal değildir. İstenen toplam 18 + 54 + 162 = 234'tür.",
+        "imageUrl": "/grade6/matematik/test-12/soru-01.svg",
+        "imageWidth": 360,
+        "imageHeight": 520,
+        "imageAlt": "N kodunun koşulları: N pozitif ve 200'den küçük. Farklı asal çarpanları tam olarak 2 ve 3. N/2 tek sayı. N/3 asal sayı değil."
+      },
+      {
+        "id": "m6-1-t12-02",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "İki grup, aynı uzaklıktan aynı hedefe halka atma deneyi yapıyor. A grubunun 60 denemesinin 36'sı isabetlidir. B grubunun kendi kayıtlarında isabetin göreli sıklığı tam 3/10'dur.\n\nİki grubun bütün denemeleri birlikte değerlendirildiğinde isabetin göreli sıklığı tam 2/5 oluyor. Buna göre B grubunun isabetsiz deneme sayısı kaçtır?",
+        "options": [
+          "42",
+          "60",
+          "72",
+          "84"
+        ],
+        "correct": 3,
+        "explanation": "Birleşik göreli sıklık 2/5 = 4/10'dur. A grubunun 60 denemesinde bu oranı sağlayacak isabet sayısı 60 × 2/5 = 24 olurdu; A'nın gerçek isabet sayısı bundan 36 − 24 = 12 fazladır. B'nin isabet oranı 3/10 olduğundan, 4/10 oranına göre eksiği toplam deneme sayısının 1/10'u kadardır. İki grubun kayıtları birleştirildiğinde A'daki 12 fazlalık, B'deki eksiği karşılamalıdır. Bu yüzden B'de 120 deneme yapılmıştır. B'nin isabetli denemesi 120 × 3/10 = 36, isabetsiz denemesi 120 − 36 = 84'tür. Kontrol: toplam 72 isabet / 180 deneme = 2/5. Grupların deneme sayıları farklı olduğundan iki göreli sıklık doğrudan ortalanamaz.",
+        "imageUrl": "/grade6/matematik/test-12/soru-02.svg",
+        "imageWidth": 360,
+        "imageHeight": 520,
+        "imageAlt": "A grubu kartında 60 deneme ve 36 isabet yazıyor. B grubu kartında deneme sayısı soru işareti ve isabetin göreli sıklığı 3/10 yazıyor. İki grubun bütün kayıtları birleştirildiğinde isabetin göreli sıklığı 2/5."
+      },
+      {
+        "id": "m6-1-t12-03",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Bir etkinlikte 30 bardağın her birine 170 mL limonata konulacaktır. Limonata, görseldeki A veya B ürününden yalnız biri seçilerek alınacaktır. Şişeler tam olarak satın alınır; açık şişe satılmaz ve artan limonata iade edilmez.\n\n150 TL bütçesi olan Ece, gereken limonatayı en az toplam ücretle alırsa kaç TL'si kalır?",
+        "options": [
+          "19,80 TL",
+          "3,00 TL",
+          "23,52 TL",
+          "25,05 TL"
+        ],
+        "correct": 0,
+        "explanation": "Gereken limonata 30 × 170 = 5100 mL'dir. A şişesi 750 mL olduğundan 6 şişe 4500 mL ile yetmez; en az 7 şişe gerekir. Ücreti 7 × 18,60 = 130,20 TL'dir. B şişesi 1,2 L = 1200 mL'dir; 4 şişe 4800 mL ile yetmez, en az 5 şişe gerekir. Ücreti 5 × 29,40 = 147,00 TL'dir. Bu alışverişte A'nın 7 şişesi daha az toplam ücret tutar. Ece'nin kalan parası 150 − 130,20 = 19,80 TL olur. Litre başına fiyatı karşılaştırmak tek başına yeterli değildir; şişeler bütün olarak alınmaktadır.",
+        "imageUrl": "/grade6/matematik/test-12/soru-03.svg",
+        "imageWidth": 360,
+        "imageHeight": 540,
+        "imageAlt": "Etkinlik için 30 bardak, her bardakta 170 mL limonata. A ürününün bir şişesi 750 mL ve 18,60 TL; B ürününün bir şişesi 1,2 L ve 29,40 TL. Bütçe 150 TL."
+      },
+      {
+        "id": "m6-1-t12-04",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Sekiz öğrencinin bir haftada çözdüğü bulmaca sayıları kaydedilirken bir öğrencinin değeri yanlışlıkla iki kez yazılmış ve görseldeki dokuz kayıt oluşmuştur. Bunun dışında hata yoktur. Sekiz öğrencinin gerçek aritmetik ortalaması 9,5'tir.\n\nFazladan yazılan kayıt çıkarıldığında oluşan veri grubunun tepe değerlerinin toplamı, ortancasından kaç fazladır?",
+        "options": [
+          "3",
+          "6",
+          "7",
+          "9"
+        ],
+        "correct": 2,
+        "explanation": "Dokuz kaydın toplamı 4 + 6 + 6 + 8 + 10 + 10 + 12 + 12 + 20 = 88'dir. Gerçek sekiz verinin toplamı 8 × 9,5 = 76 olmalıdır. Fazladan yazılan değer 88 − 76 = 12'dir; 12 kayıtlarından yalnız biri çıkarılır. Doğru sıralı veri grubu 4, 6, 6, 8, 10, 10, 12, 20 olur. En sık görülen 6 ve 10, ikişer kez geçtiği için iki tepe değerdir; toplamları 16'dır. Sekiz verinin ortancası 4. ve 5. değerlerin ortalaması, yani (8 + 10) ÷ 2 = 9'dur. İstenen fark 16 − 9 = 7'dir.",
+        "imageUrl": "/grade6/matematik/test-12/soru-04.svg",
+        "imageWidth": 360,
+        "imageHeight": 500,
+        "imageAlt": "Dokuz kayıt, soldan sağa satırlar hâlinde: üst sıra 4, 6, 6; orta sıra 8, 10, 10; alt sıra 12, 12, 20. Gerçekte 8 öğrenci var ve gerçek aritmetik ortalama 9,5. Her kart aynı biçimde gösteriliyor."
+      },
+      {
+        "id": "m6-1-t12-05",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "d ve e doğruları paraleldir. P ve A, d üzerinde soldan sağa; D ve Q, e üzerinde soldan sağa sıralanmıştır. A, B, C ve D noktaları görseldeki kırık çizgiyle birleştirilmiştir. AB ile BC birbirine diktir. PAB açısı 148°, CDQ açısı 132°'dir.\n\nB ile D'nin C'ye göre sağ tarafta kaldığı şekilde, BCD açısı x kaç derecedir?",
+        "options": [
+          "74°",
+          "106°",
+          "116°",
+          "122°"
+        ],
+        "correct": 1,
+        "explanation": "A'daki 148° açıyla komşu olan, AB'nin sağa yönelen yatay doğruyla yaptığı dar açı 180° − 148° = 32°'dir. AB ile BC dik olduğundan, CB'nin C'den sağa çizilen yatay ışınla yaptığı üstteki dar açı 90° − 32° = 58° olur. D'deki 132° açının bütünleri 180° − 132° = 48°'dir. Paralellikten CD'nin C'den sağa çizilen yatay ışınla yaptığı alttaki dar açı da 48° olur. CB ile CD bu yatay ışının iki yanında olduğundan x = 58° + 48° = 106° bulunur.",
+        "imageUrl": "/grade6/matematik/test-12/soru-05.svg",
+        "imageWidth": 360,
+        "imageHeight": 580,
+        "imageAlt": "Üstte yatay d, altta yatay e doğrusu var; d ile e paralel. d üzerinde P, A'nın solunda; e üzerinde Q, D'nin sağında. Kırık çizgi A'dan sağa aşağı B'ye, B'den sola aşağı C'ye, C'den sağa aşağı D'ye gidiyor. AB ile BC arasında B'de dik açı işareti var. PAB açısı 148 derece, CDQ açısı 132 derece. C'de CB ve CD arasındaki sağa açılan açı x. Şekilden ölçüm yapılmaz."
+      },
+      {
+        "id": "m6-1-t12-06",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Çevresi 100 cm olan bir dikdörtgen, kısa kenarına paralel iki kesimle şekildeki üç dikdörtgene ayrılıyor. Parçaların çevreleri soldan sağa 44 cm, 48 cm ve 52 cm'dir. Kesimlerde malzeme kaybı olmuyor.\n\nÇevresi en büyük olan parçanın alanı kaç santimetrekaredir?",
+        "options": [
+          "143",
+          "156",
+          "165",
+          "286"
+        ],
+        "correct": 2,
+        "explanation": "Parçaların çevreleri toplamı 44 + 48 + 52 = 144 cm'dir. Bu toplamda dış sınır bir kez, iki kesim çizgisinin her biri iki kez sayılır. Dış çevreyi çıkarınca 144 − 100 = 44 cm kalır. İki kesimin uzunluğu da başlangıçtaki kısa kenara eşit olduğundan bu kenar 44 ÷ 4 = 11 cm'dir. Çevresi 52 cm olan parçanın diğer kenarı 52 ÷ 2 − 11 = 15 cm olur. Alanı 11 × 15 = 165 cm²'dir. Kontrol için diğer parçaların genişlikleri 11 ve 13 cm'dir; büyük dikdörtgenin çevresi 2 × (11 + 11 + 13 + 15) = 100 cm olur.",
+        "imageUrl": "/grade6/matematik/test-12/soru-06.svg",
+        "imageAlt": "Dış çevresi 100 cm olan bir dikdörtgen, kısa kenarına paralel iki kesimle yan yana üç dikdörtgene ayrılmış. Parçaların çevreleri soldan sağa 44 cm, 48 cm ve 52 cm. Kesim kaybı yok. Şekil ölçekli değildir.",
+        "imageWidth": 360,
+        "imageHeight": 460
+      },
+      {
+        "id": "m6-1-t12-07",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Bir kargo robotu görseldeki paketleri, verilen sırayı değiştirmeden aynı kapasitedeki kolilere yerleştiriyor. Sıradaki paket mevcut kolinin kapasitesini aşmıyorsa bu koliye konuyor. Aşıyorsa mevcut koli kapatılıp yeni bir koli açılıyor ve paket yeni koliye konuyor. Kapatılan koliye geri dönülmüyor; hiçbir paket bölünmüyor. Koli ağırlıkları hesaba katılmıyor.\n\nBütün paketlerin tam iki koliye yerleşmesi için her kolinin kapasitesi en az kaç kilogram olmalıdır?",
+        "options": [
+          "20",
+          "22",
+          "23",
+          "24"
+        ],
+        "correct": 3,
+        "explanation": "Paketler sırayla 8, 7, 9, 4, 6 ve 5 kg'dır. İlk üç paketin toplamı 8 + 7 + 9 = 24 kg'dır. Kapasite 24 kg'dan küçükse ilk koli bu üç paketi birlikte alamaz; en fazla ilk iki paketi, yani 15 kg'ı alabilir. Geriye kalan paketlerin toplamı en az 9 + 4 + 6 + 5 = 24 kg olur ve tek koliye sığmaz. Bu yüzden 24 kg'dan küçük bir kapasite yeterli değildir. Kapasite 24 kg olduğunda ilk koli 8 + 7 + 9 = 24 kg, ikinci koli 4 + 6 + 5 = 15 kg alır. Böylece en küçük kapasite 24 kg'dır.",
+        "imageUrl": "/grade6/matematik/test-12/soru-07.svg",
+        "imageAlt": "Paket sırası: 8 kg, 7 kg, 9 kg, 4 kg, 6 kg, 5 kg. Yerleştirme kuralı: Sıradaki paket eklenirse mevcut kolinin kapasitesi aşılır mı? Evet ise mevcut koli kapatılıp yeni koli açılır. Her iki durumda da sıradaki paket açık koliye konur ve sonraki pakete geçilir. Paket sırası korunur; kapatılan koliye geri dönülmez.",
+        "imageWidth": 360,
+        "imageHeight": 600
+      },
+      {
+        "id": "m6-1-t12-08",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Bir bağıştaki kitapların sayısı 100'den fazla, 400'den azdır. Kitaplar altışarlı paketlenirse 4 kitap, sekizerli paketlenirse 6 kitap artıyor. Onarlı paketlenirse hiç kitap artmıyor.\n\nKitap sayısının alabileceği farklı değerlerin toplamı kaçtır?",
+        "options": [
+          "500",
+          "380",
+          "430",
+          "620"
+        ],
+        "correct": 0,
+        "explanation": "Kitap sayısına 2 eklenirse hem 6'ya hem 8'e kalansız bölünen bir sayı elde edilir. Bu nedenle 2 eklenmiş sayı, 6 ve 8'in ortak katı olan 24'ün katlarından biridir. Kitap sayısı 10'un katı olduğundan 2 eklenmiş sayının birler basamağı 2 olmalıdır. Verilen aralığa uyan, birler basamağı 2 olan 24 katları 192 ve 312'dir. Kitap sayısı 190 veya 310 olabilir. Kontrol: Bu iki sayı 6'ya bölününce 4, 8'e bölününce 6 kalanını verir ve 10'a tam bölünür. Farklı değerlerin toplamı 190 + 310 = 500'dür."
+      },
+      {
+        "id": "m6-1-t12-09",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Tam dolu bir kaptaki suyun önce 1/4'ü, sonra kalan suyun 2/5'i kullanılıyor. Kaba 2,1 litre su eklenince kabın 3/4'ü dolu oluyor.\n\nİki kullanımda toplam kaç litre su kullanılmıştır?",
+        "options": [
+          "3,15",
+          "3,5",
+          "3,85",
+          "4,2"
+        ],
+        "correct": 2,
+        "explanation": "Başlangıçtaki suyu 20 eş pay olarak düşünelim. İlk kullanımda 5 pay gider, 15 pay kalır. İkinci kullanımda kalan 15 payın 2/5'i, yani 6 pay kullanılır; 9 pay kalır. Kap 3/4 dolu olduğunda 15 pay su içerir. Eklenen 2,1 litre, 15 − 9 = 6 paya karşılık gelir; bir pay 2,1 ÷ 6 = 0,35 litredir. Toplam 5 + 6 = 11 pay su kullanılmıştır. Bu miktar 11 × 0,35 = 3,85 litredir. Kontrol: Kabın kapasitesi 7 litredir; 7 − 3,85 + 2,1 = 5,25 litre de 7 litrenin 3/4'üdür."
+      },
+      {
+        "id": "m6-1-t12-10",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Bir kargo firması her gönderi için sabit bir kabul ücreti ve gönderinin kütlesine göre ek ücret alıyor. Kütle, 2 kg'lık dilimler hâlinde ücretlendiriliyor; bir dilim tam dolmasa da o dilimin ücreti tam alınıyor. Her dilimin ücreti aynıdır. 3,2 kg'lık bir gönderi 64 TL, 9,1 kg'lık bir gönderi 118 TL tutuyor.\n\nDeniz, kütleleri 4,1 kg ve 5,9 kg olan iki kutuyu ayrı ayrı göndermek yerine, ek ağırlık oluşturmadan tek gönderide birleştirirse kaç TL daha az öder?",
+        "options": [
+          "28",
+          "46",
+          "54",
+          "64"
+        ],
+        "correct": 1,
+        "explanation": "3,2 kg için 2 dilim, 9,1 kg için 5 dilim ücret ödenir. Aradaki 118 − 64 = 54 TL, 3 dilimden kaynaklanır; bir dilim 54 ÷ 3 = 18 TL'dir. Sabit kabul ücreti 64 − 2 × 18 = 28 TL olur. 4,1 kg ve 5,9 kg ayrı gönderildiğinde her biri 3 dilim sayılır; toplam 2 × (28 + 3 × 18) = 164 TL ödenir. Birleşmiş gönderi tam 10 kg'dır ve 5 dilim sayılır; ücreti 28 + 5 × 18 = 118 TL'dir. Tasarruf 164 − 118 = 46 TL olur."
+      }
+    ],
   },
   term2: {},
 };

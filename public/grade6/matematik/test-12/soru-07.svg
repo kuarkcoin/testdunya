@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="600" viewBox="0 0 360 600" role="img">
+<title>Test 12 · Soru 7 · Sırayla paketleme</title>
+<desc>Paket sırası: 8 kg, 7 kg, 9 kg, 4 kg, 6 kg, 5 kg. Yerleştirme kuralı: Sıradaki paket eklenirse mevcut kolinin kapasitesi aşılır mı? Evet ise mevcut koli kapatılıp yeni koli açılır. Her iki durumda da sıradaki paket açık koliye konur ve sonraki pakete geçilir. Paket sırası korunur; kapatılan koliye geri dönülmez.</desc>
+<rect width="360" height="600" fill="white"/>
+<text x="180" y="27" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Paket sırası (kg)</text>
+<rect x="10" y="52" width="46" height="43" rx="5" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<text x="33" y="74" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">8</text>
+<line x1="56" y1="74" x2="67" y2="74" stroke="#36586D" stroke-width="2.5"/>
+<polygon points="67,74 61,70 61,78" fill="#36586D"/>
+<rect x="68" y="52" width="46" height="43" rx="5" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<text x="91" y="74" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">7</text>
+<line x1="114" y1="74" x2="125" y2="74" stroke="#36586D" stroke-width="2.5"/>
+<polygon points="125,74 119,70 119,78" fill="#36586D"/>
+<rect x="126" y="52" width="46" height="43" rx="5" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<text x="149" y="74" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">9</text>
+<line x1="172" y1="74" x2="183" y2="74" stroke="#36586D" stroke-width="2.5"/>
+<polygon points="183,74 177,70 177,78" fill="#36586D"/>
+<rect x="184" y="52" width="46" height="43" rx="5" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<text x="207" y="74" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">4</text>
+<line x1="230" y1="74" x2="241" y2="74" stroke="#36586D" stroke-width="2.5"/>
+<polygon points="241,74 235,70 235,78" fill="#36586D"/>
+<rect x="242" y="52" width="46" height="43" rx="5" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<text x="265" y="74" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">6</text>
+<line x1="288" y1="74" x2="299" y2="74" stroke="#36586D" stroke-width="2.5"/>
+<polygon points="299,74 293,70 293,78" fill="#36586D"/>
+<rect x="300" y="52" width="46" height="43" rx="5" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<text x="323" y="74" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">5</text>
+<rect x="70" y="119" width="220" height="44" rx="10" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<text x="180" y="141" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Sıradaki paket</text>
+<line x1="180" y1="163" x2="180" y2="185" stroke="#36586D" stroke-width="2.5"/>
+<polygon points="180,185 176,177 184,177" fill="#36586D"/>
+<polygon points="180,185 340,241 180,297 20,241" fill="#FFF1CB" stroke="#36586D" stroke-width="2.5"/>
+<text x="180" y="225" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Kapasite</text>
+<text x="180" y="257" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">aşılır mı?</text>
+<line x1="20" y1="241" x2="20" y2="332" stroke="#36586D" stroke-width="2.5"/>
+<line x1="20" y1="332" x2="90" y2="332" stroke="#36586D" stroke-width="2.5"/>
+<line x1="90" y1="332" x2="90" y2="349" stroke="#36586D" stroke-width="2.5"/>
+<polygon points="90,349 86,341 94,341" fill="#36586D"/>
+<text x="91" y="314" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Evet</text>
+<line x1="340" y1="241" x2="340" y2="438" stroke="#36586D" stroke-width="2.5"/>
+<line x1="340" y1="438" x2="180" y2="438" stroke="#36586D" stroke-width="2.5"/>
+<text x="284" y="314" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Hayır</text>
+<rect x="10" y="349" width="160" height="80" rx="10" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<text x="90" y="372" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Kapat ve</text>
+<text x="90" y="405" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">yeni aç</text>
+<line x1="90" y1="429" x2="90" y2="438" stroke="#36586D" stroke-width="2.5"/>
+<line x1="90" y1="438" x2="180" y2="438" stroke="#36586D" stroke-width="2.5"/>
+<line x1="180" y1="438" x2="180" y2="453" stroke="#36586D" stroke-width="2.5"/>
+<polygon points="180,453 176,445 184,445" fill="#36586D"/>
+<rect x="78" y="453" width="204" height="44" rx="10" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<text x="180" y="475" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Paketi koy</text>
+<line x1="180" y1="497" x2="180" y2="514" stroke="#36586D" stroke-width="2.5"/>
+<polygon points="180,514 176,506 184,506" fill="#36586D"/>
+<rect x="54" y="514" width="252" height="42" rx="10" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<text x="180" y="535" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Sonraki paket</text>
+<text x="180" y="576" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">Paket sırası korunur</text>
+</svg>

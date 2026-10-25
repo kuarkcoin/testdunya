@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="580" viewBox="0 0 360 580" role="img">
+<title>Test 12 · Soru 5 · Paralel doğrularda kırık çizgi</title>
+<desc>Üstte yatay d, altta yatay e doğrusu var; d ile e paralel. d üzerinde P, A&#x27;nın solunda; e üzerinde Q, D&#x27;nin sağında. Kırık çizgi A&#x27;dan sağa aşağı B&#x27;ye, B&#x27;den sola aşağı C&#x27;ye, C&#x27;den sağa aşağı D&#x27;ye gidiyor. AB ile BC arasında B&#x27;de dik açı işareti var. PAB açısı 148 derece, CDQ açısı 132 derece. C&#x27;de CB ve CD arasındaki sağa açılan açı x. Şekilden ölçüm yapılmaz.</desc>
+<rect width="360" height="580" fill="white"/>
+<text x="180.00" y="29.00" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Paralel doğrular</text>
+<text x="180.00" y="68.00" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">d ∥ e</text>
+<line x1="10.00" y1="120.00" x2="350.00" y2="120.00" stroke="#36586D" stroke-width="3"/>
+<line x1="10.00" y1="480.22" x2="350.00" y2="480.22" stroke="#36586D" stroke-width="3"/>
+<line x1="75.00" y1="120.00" x2="255.00" y2="232.48" stroke="#36586D" stroke-width="3"/>
+<line x1="255.00" y1="232.48" x2="180.00" y2="352.50" stroke="#36586D" stroke-width="3"/>
+<line x1="180.00" y1="352.50" x2="295.00" y2="480.22" stroke="#36586D" stroke-width="3"/>
+<line x1="315.00" y1="113.00" x2="322.00" y2="120.00" stroke="#36586D" stroke-width="2.5"/>
+<line x1="322.00" y1="120.00" x2="315.00" y2="127.00" stroke="#36586D" stroke-width="2.5"/>
+<line x1="35.00" y1="473.22" x2="42.00" y2="480.22" stroke="#36586D" stroke-width="2.5"/>
+<line x1="42.00" y1="480.22" x2="35.00" y2="487.22" stroke="#36586D" stroke-width="2.5"/>
+<path d="M 104.68 138.55 A 35 35 0 0 1 40.00 120.00" fill="none" stroke="#36586D" stroke-width="2.5"/>
+<text x="62.00" y="179.00" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">148°</text>
+<path d="M 270.91 453.47 A 36 36 0 0 1 331.00 480.22" fill="none" stroke="#36586D" stroke-width="2.5"/>
+<text x="300.00" y="420.22" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">132°</text>
+<polyline points="239.74,222.94 230.20,238.20 245.46,247.74" fill="none" stroke="#36586D" stroke-width="2.5"/>
+<path d="M 196.96 325.36 A 32 32 0 0 1 201.41 376.28" fill="none" stroke="#B96612" stroke-width="3"/>
+<text x="237.00" y="352.50" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#8C4900">x</text>
+<text x="18.00" y="147.00" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">P</text>
+<text x="75.00" y="91.00" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">A</text>
+<text x="283.00" y="232.48" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">B</text>
+<text x="155.00" y="352.50" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">C</text>
+<text x="295.00" y="511.22" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">D</text>
+<text x="340.00" y="511.22" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Q</text>
+<text x="343.00" y="95.00" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">d</text>
+<text x="343.00" y="456.22" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">e</text>
+<text x="180.00" y="554.00" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">Şekil ölçekli değildir.</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="500" viewBox="0 0 360 500" role="img">
+<title>Test 12 · Soru 4</title>
+<desc>Dokuz kayıt, soldan sağa satırlar hâlinde: üst sıra 4, 6, 6; orta sıra 8, 10, 10; alt sıra 12, 12, 20. Gerçekte 8 öğrenci var ve gerçek aritmetik ortalama 9,5. Her kart aynı biçimde gösteriliyor.</desc>
+<rect width="360" height="500" fill="white"/>
+<text x="180" y="34" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">9 kayıt · 8 öğrenci</text>
+<rect x="40" y="80" width="80" height="80" rx="12" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<text x="80" y="120" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="600" fill="#15354B">4</text>
+<rect x="140" y="80" width="80" height="80" rx="12" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<text x="180" y="120" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="600" fill="#15354B">6</text>
+<rect x="240" y="80" width="80" height="80" rx="12" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<text x="280" y="120" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="600" fill="#15354B">6</text>
+<rect x="40" y="177" width="80" height="80" rx="12" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<text x="80" y="217" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="600" fill="#15354B">8</text>
+<rect x="140" y="177" width="80" height="80" rx="12" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<text x="180" y="217" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="600" fill="#15354B">10</text>
+<rect x="240" y="177" width="80" height="80" rx="12" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<text x="280" y="217" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="600" fill="#15354B">10</text>
+<rect x="40" y="274" width="80" height="80" rx="12" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<text x="80" y="314" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="600" fill="#15354B">12</text>
+<rect x="140" y="274" width="80" height="80" rx="12" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<text x="180" y="314" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="600" fill="#15354B">12</text>
+<rect x="240" y="274" width="80" height="80" rx="12" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<text x="280" y="314" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="600" fill="#15354B">20</text>
+<text x="180" y="405" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Gerçek ortalama</text>
+<text x="180" y="454" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="600" fill="#15354B">9,5</text>
+</svg>

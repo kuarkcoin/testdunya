@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="520" viewBox="0 0 360 520" role="img">
+<title>Test 12 · Soru 2</title>
+<desc>A grubu kartında 60 deneme ve 36 isabet yazıyor. B grubu kartında deneme sayısı soru işareti ve isabetin göreli sıklığı 3/10 yazıyor. İki grubun bütün kayıtları birleştirildiğinde isabetin göreli sıklığı 2/5.</desc>
+<rect width="360" height="520" fill="white"/>
+<text x="180" y="28" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">İki grubun kayıtları</text>
+<rect x="20" y="60" width="320" height="117" rx="12" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<text x="180" y="88" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">A grubu</text>
+<text x="180" y="124" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">60 deneme</text>
+<text x="180" y="157" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">36 isabet</text>
+<rect x="20" y="197" width="320" height="162" rx="12" fill="#E8F3FB" stroke="#36586D" stroke-width="2"/>
+<text x="180" y="225" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">B grubu</text>
+<text x="180" y="264" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Deneme: ?</text>
+<text x="180" y="298" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">İsabet sıklığı</text>
+<text x="180" y="334" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">3/10</text>
+<rect x="20" y="388" width="320" height="117" rx="12" fill="#FFF1CB" stroke="#36586D" stroke-width="2"/>
+<text x="180" y="415" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Tüm kayıtlar</text>
+<text x="180" y="449" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">İsabet sıklığı</text>
+<text x="180" y="484" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">2/5</text>
+</svg>
