@@ -301,3 +301,10 @@ Toplam: 23 test, 230 soru, 117 SVG, 28 rota. Önceki 220 soru ve 110 SVG korunur
 - Yeni Test 5, orta düzeyde 8 metin + 2 görsel okuma sorusudur. Bağlam, deyim, anıların katkısı, ayrıntıdan çıkarım, gereklilik listesi, yönerge, paragraf sıralama, geçiş ifadesi, kesme işareti ve bilgileri birleştirme işlenir. Tam yıllık müfredat kapsamı iddiası değildir.
 - Anahtar: **C, A, D, B, C, D, A, C, D, B**. İki pasif SVG 360 birim genişliğinde, en az 26 birim yazıyla hazırlanır; 238 piksel çıktıları incelenir.
 - Önceki 340 soru ve 216 SVG korunur. Toplam 35 test / 350 soru / 218 SVG / 40 rota. Veri, rota, TypeScript ve üretim derlemesiyle doğrulanır. Etkileşimli tarayıcı testi yapılmaz; production’a otomatik aktarılmaz.
+
+
+## Türkçe Test 6 — Metinleri Karşılaştırma ve İletileri Yorumlama (25 Ekim 2026)
+
+- Yeni Test 6, orta düzeyde 8 metin + 2 görsel okuma sorusudur. Bağlamda anlam, iki metindeki yaklaşımları karşılaştırma, geri bildirimden çıkarım, paragraf tamamlama, duyuruları karşılaştırma, görsel ileti, anlatım biçimi, geçiş ifadesi, sayıların yazımı ve çıkarım sınırları işlenir. Tam yıllık müfredat kapsamı iddiası değildir.
+- Anahtar: **C, A, B, D, C, A, D, B, D, C**. İki pasif SVG 360 birim genişliğinde, en az 26 birim yazıyla hazırlanır; 238 piksel çıktıları incelenir.
+- Önceki 350 soru ve 218 SVG korunur. Toplam 36 test / 360 soru / 220 SVG / 41 rota. Veri, rota, TypeScript ve üretim derlemesiyle doğrulanır. Etkileşimli tarayıcı testi yapılmaz; production’a otomatik aktarılmaz.

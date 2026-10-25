@@ -753,6 +753,156 @@ export const turkceData: SubjectData = {
         "correct": 1,
         "explanation": "B seçeneği hem kapanışın iki saat geciktiğini hem de uygulamanın yalnızca sınav haftasıyla sınırlı olduğunu korur. Diğer seçenekler süreyi, zamanı veya değişikliğin yönünü değiştirir."
       }
+    ],
+    "test6": [
+      {
+        "id": "t6-1-t6-01",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“Araştırmamız ilerledikçe başlangıçtaki düşüncemizi yeni bilgiler ışığında yeniden değerlendirdik.” cümlesindeki “ışığında” sözü yerine hangisi getirilebilir?",
+        "options": [
+          "yardımı olmadan",
+          "doğruluğunu tartışmadan",
+          "yol göstericiliğinde",
+          "sırasını değiştirmeden"
+        ],
+        "correct": 2,
+        "explanation": "Yeni bilgiler, düşünceyi yeniden değerlendirmeye rehberlik eder. Işığında sözü burada yol göstericiliğinde anlamındadır; bilgilerin sorgulanmadan kabul edilmesi anlatılmaz."
+      },
+      {
+        "id": "t6-1-t6-02",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "İlk metin: “Bir şehrin sokaklarını yürüyerek gezerim. Ayrıntıları fark etmek için acele etmem.”\nİkinci metin: “Bir şehre gitmeden önce haritasını inceler, görmek istediğim yerleri belirlerim. Böylece zamanımı planlarım.”\nBu iki metindeki kişilerin gezme anlayışlarıyla ilgili hangisi doğrudur?",
+        "options": [
+          "İlki ayrıntıları yerinde incelemeye, ikincisi gezi öncesinde hazırlık yapmaya önem vermektedir.",
+          "İlki gezilecek yerleri önceden seçmeye, ikincisi yol boyunca kararlarını değiştirmeye önem vermektedir.",
+          "İlki yalnızca belirlediği yerleri görmeye, ikincisi bütün şehri yürüyerek tanımaya önem vermektedir.",
+          "İlki zamanını önceden planlamaya, ikincisi harita kullanmadan gözlem yapmaya önem vermektedir."
+        ],
+        "correct": 0,
+        "explanation": "İlk kişi yürürken ayrıntıları fark etmek için yavaş davranır. İkinci kişi gezi öncesinde haritaya bakıp yerleri seçer. A seçeneği bu iki farklı vurguyu doğru eşleştirir; diğer seçenekler özellikleri karıştırır veya metinde verilmeyen sınırlamalar ekler."
+      },
+      {
+        "id": "t6-1-t6-03",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Okul radyosunda bir duyuru okuduk. Dinleyenler etkinliğin nerede yapılacağını anlayamadıklarını söylediler. Metni yeniden inceleyince yer bilgisini yazmadığımızı fark ettik. Yeni duyuruda bu bilgiyi ekledik.\nBu olaydan çıkarılabilecek en uygun sonuç hangisidir?",
+        "options": [
+          "Bir duyuruda yer bilgisi, diğer ayrıntılardan daha önemlidir.",
+          "Dinleyicilerin geri bildirimi, bir metindeki eksikleri görmeye yardımcı olabilir.",
+          "Bir duyurunun anlaşılabilmesi için dinleyicilere yazılı olarak da verilmesi gerekir.",
+          "Duyurudaki eksik bilgileri tamamlamak için metni daha sık okumak yeterlidir."
+        ],
+        "correct": 1,
+        "explanation": "Dinleyicilerin belirttiği sorun, eksik yer bilgisinin fark edilmesini sağlamıştır. Bu durum geri bildirimin katkısını gösterir. Yer bilgisinin diğer bilgilerden daha önemli olduğu, yazılı duyurunun zorunluluğu veya yalnızca tekrarın eksikleri gidereceği sonucuna ulaşılamaz."
+      },
+      {
+        "id": "t6-1-t6-04",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“Geçen yılki resimlerime baktığımda çizgilerimin ne kadar değiştiğini görüyorum. O gün kusursuz sandığım çalışmalarımda şimdi eksikler bulabiliyorum. Bu durum beni üzmüyor; çünkü _____.”\nBoşluğa hangi ifade getirilirse düşünce uygun biçimde tamamlanır?",
+        "options": [
+          "eski çalışmalarımı kimseyle paylaşmayı düşünmüyorum",
+          "bir resmi beğenmek için başkalarının görüşünü bekliyorum",
+          "aynı resmi hiç değiştirmeden yeniden çizmek istiyorum",
+          "geliştikçe çalışmalarımı daha bilinçli değerlendirebildiğimi anlıyorum"
+        ],
+        "correct": 3,
+        "explanation": "Anlatıcı, eski resimlerde eksik görmesini ilerlemenin bir işareti olarak değerlendirmektedir. D seçeneği bu olumlu bakışı neden-sonuç ilişkisiyle tamamlar."
+      },
+      {
+        "id": "t6-1-t6-05",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "İki duyuru karşılaştırıldığında aşağıdaki yargılardan hangisi doğrudur?",
+        "options": [
+          "Her iki etkinlikte de alınan kitabın bir hafta sonra geri verilmesi gerekir.",
+          "Kitap bağışlayan kişinin aynı kitabı geri alması beklenir.",
+          "İlk duyuruda geçici kullanım, ikincisinde kalıcı paylaşım söz konusudur.",
+          "Her iki etkinlikte de bir kitap alabilmek için kitap getirmek gerekir."
+        ],
+        "correct": 2,
+        "explanation": "Ödünç alınan kitabın yedi gün içinde geri verilmesi gerekir; bağışlanan kitap ise okul kitaplığına eklenir. Bağış, geçici ödünç verme değildir. Ödünç alma duyurusunda kitap getirme şartı belirtilmemiştir; bağış duyurusu ise kitap almayı anlatmaz.",
+        "imageWidth": 360,
+        "imageHeight": 650,
+        "imageUrl": "/grade6/turkce/test-6/soru-05.svg",
+        "imageAlt": "İki duyuru: Kitap ödünç al, yedi gün içinde geri getir. Kitap bağışla, getirdiğin kitap okul kitaplığına eklensin."
+      },
+      {
+        "id": "t6-1-t6-06",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Görseldeki olayların akışını en iyi anlatan slogan hangisidir?",
+        "options": [
+          "Temiz tuttuğumuz ortak alanlardan birlikte yararlanırız.",
+          "Parkları güzelleştirmenin yolu, eski bankları yenilemektir.",
+          "Birlikte vakit geçirmek, çevremizdeki sorunları unutturur.",
+          "Temizlikten sonra dinlenmek, çalışmanın tek amacıdır."
+        ],
+        "correct": 0,
+        "explanation": "Önce yerde çöpler vardır; çocuk bunları kutuya atar ve son karede iki kişi temiz bankta oturur. Görsel, ortak alanın temizlenmesinin birlikte kullanıma katkısını anlatır.",
+        "imageWidth": 360,
+        "imageHeight": 720,
+        "imageUrl": "/grade6/turkce/test-6/soru-06.svg",
+        "imageAlt": "Üç kare: bankın yanında yerde kâğıt ve şişe; çocuk kâğıdı çöp kutusuna atıyor; temiz bankta iki çocuk birlikte oturuyor."
+      },
+      {
+        "id": "t6-1-t6-07",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“Yazar, uzun açıklamalar yerine kısa konuşmalar kullanmış. Böylece kişilerin duygularını doğrudan kendi sözlerinden öğreniyoruz.”\nBu değerlendirmede yazarın hangi özelliği üzerinde durulmaktadır?",
+        "options": [
+          "Kitabını yazmaya ne zaman başladığı",
+          "Olayların geçtiği yeri neden seçtiği",
+          "Kitabında hangi yaş grubuna seslendiği",
+          "Anlatımını nasıl kurduğu"
+        ],
+        "correct": 3,
+        "explanation": "Kısa konuşmalarla kişilerin duygularını yansıtmak, anlatımın kuruluşuyla ilgilidir. Yazma zamanı, yer seçiminin nedeni veya hedef yaş grubu verilmemiştir."
+      },
+      {
+        "id": "t6-1-t6-08",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“Proje için hazırladığımız model ilk denemede çalışmadı. Bununla birlikte hangi parçanın sorun çıkardığını görmüş olduk.”\n“Bununla birlikte” ifadesi bu cümleler arasında nasıl bir ilişki kurar?",
+        "options": [
+          "İlk olayın kesin nedenini açıklar.",
+          "Olumsuz görünen sonucun yanında bir kazanım bulunduğunu belirtir.",
+          "İlk düşünceyi farklı sözcüklerle aynen tekrarlar.",
+          "İkinci olayın gerçekleşmesini bir koşula bağlar."
+        ],
+        "correct": 1,
+        "explanation": "Modelin çalışmaması olumsuz sonuçtur; sorunlu parçanın bulunması ise kazanımdır. İfade, olumsuzluğun yanında olumlu bir yön de bulunduğunu gösterir."
+      },
+      {
+        "id": "t6-1-t6-09",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Aşağıdaki cümlelerin hangisinde sayıların yazımı doğrudur?",
+        "options": [
+          "Etkinlikte oniki öğrenci görev aldı.",
+          "Gruplara 3’er kitap dağıtıldı.",
+          "Yarışmada 2.’inci oldum.",
+          "Sergiyi iki yüz kişi ziyaret etti."
+        ],
+        "correct": 3,
+        "explanation": "Birden fazla sözcükten oluşan sayılar ayrı yazılır: iki yüz, on iki. Üleştirme sayıları yazıyla üçer biçiminde yazılır. Sıra sayısında 2. veya 2’nci kullanılabilir; nokta ile sıra eki birlikte kullanılmaz."
+      },
+      {
+        "id": "t6-1-t6-10",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“Bugün öğrendiğim bir bilgiyi hemen doğru kabul etmek yerine nereden geldiğini araştırıyorum. Kaynağını bulamadığım bilgileri ise paylaşmıyorum.”\nBu sözleri söyleyen kişi için hangisi söylenemez?",
+        "options": [
+          "Bir bilgiyi paylaşmadan önce kaynağıyla ilgili araştırma yaptığı",
+          "Kaynağını belirleyemediği bilgileri paylaşmadığı",
+          "Kaynağı belirli olan her bilgiyi başka inceleme yapmadan doğru kabul ettiği",
+          "Bir bilgiyi ilk öğrendiğinde onun doğruluğundan hemen emin olmadığı"
+        ],
+        "correct": 2,
+        "explanation": "Kaynağı belirsiz bilgileri paylaşmamak, kaynağı belirli bütün bilgileri sorgulamadan doğru kabul etmek demek değildir. Metin bu sonucu desteklemez. Diğer seçenekler metindeki araştırma ve paylaşım tutumunu yansıtır."
+      }
     ]
   },
   "term2": {}
