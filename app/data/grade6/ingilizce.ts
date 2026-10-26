@@ -2215,6 +2215,176 @@ export const ingilizceData: SubjectData = {
         "correct": 1,
         "explanation": "Çarşamba günleri Leo normalde otobüse biner; kız kardeşi ise her okul günü yürür. Bugün ikisi de yürüdüğüne göre kız kardeşinin ulaşım biçimi alışılmış olanla aynıdır, Leo'nunki değişmiştir. Pazartesi ve cuma birlikte yürümeleri, çarşamba rutinini değiştirmez."
       }
+    ],
+    "test14": [
+      {
+        "id": "e6-1-t14-01",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "The diary shows all of Eda's activities this week. She says, 'On every day with a music lesson, I also help at home. But I don't have a music lesson on every day I help at home.' Which statement agrees with BOTH the diary and her words?",
+        "options": [
+          "She helps at home only on Tuesday and Thursday.",
+          "She has music lessons on three days and helps at home on two.",
+          "She has music lessons on Tuesday and Thursday, and also helps at home on Saturday.",
+          "She helps at home on Tuesday and Thursday, but not on her music days."
+        ],
+        "correct": 2,
+        "explanation": "Müzik dersleri salı ve perşembedir; bu iki gün evde yardım da vardır. Cumartesi ise evde yardım vardır ama müzik dersi yoktur. Bu nedenle müzik günlerinin hepsi yardım günüdür, fakat yardım günlerinin hepsi müzik günü değildir. C iki yönü de korur.",
+        "imageUrl": "/grade6/ingilizce/test-14/soru-01.svg",
+        "imageAlt": "Weekly diary: Tuesday music and help at home; Thursday music and help at home; Saturday help at home only. Monday and Wednesday reading; Friday football.",
+        "imageWidth": 360,
+        "imageHeight": 900
+      },
+      {
+        "id": "e6-1-t14-02",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Two friends have breakfast at the café. They want one food each, and their foods must be different. They want the SAME drink. Read their notes and the menu. Which order follows all their requests?",
+        "options": [
+          "Cheese for Ada, eggs for Ben, and tea for both.",
+          "Eggs for Ada, cheese for Ben, and tea for both.",
+          "Cheese for Ada, eggs for Ben, and milk for both.",
+          "Cheese for Ada, pancakes for Ben, and tea for both."
+        ],
+        "correct": 0,
+        "explanation": "Ada yumurtayı istemez; mevcut seçeneklerden peynir uygundur. Ben peyniri istemez ve pankek bitmiştir; yumurta uygundur. Ada çay veya sütü kabul ederken Ben sütü istemez, bu nedenle ortak içecek çaydır. A iki yiyecek ve ortak içeceği doğru eşleştirir.",
+        "imageUrl": "/grade6/ingilizce/test-14/soru-02.svg",
+        "imageAlt": "Menu: eggs, cheese, tea, milk available; pancakes sold out. Ada: no eggs; tea or milk is fine. Ben: no cheese and no milk. Two individual notes beside food icons.",
+        "imageWidth": 360,
+        "imageHeight": 960
+      },
+      {
+        "id": "e6-1-t14-03",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Look at the three towers. In this picture, towers with more floors are taller. A smaller year means an older building. Which sentence is TRUE?",
+        "options": [
+          "North is taller and older than both other towers.",
+          "East is shorter than West but older than North.",
+          "West is taller than East and older than North.",
+          "North is taller than West, but East is older than North."
+        ],
+        "correct": 3,
+        "explanation": "North 8 katla West'ten (6 kat) uzundur. East 1950 yapımıdır; North 1980 yapımı olduğundan East daha eskidir. North en eski değildir; East, West'ten kısa değildir; West de East'ten uzun değildir. D iki farklı karşılaştırmayı doğru birleştirir.",
+        "imageUrl": "/grade6/ingilizce/test-14/soru-03.svg",
+        "imageAlt": "Three towers: North 8 floors built 1980; East 10 floors built 1950; West 6 floors built 2000. Floor-count building silhouettes and year labels.",
+        "imageWidth": 360,
+        "imageHeight": 820
+      },
+      {
+        "id": "e6-1-t14-04",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Read the morning and afternoon reports for the SAME town. Which message correctly describes what changes and what stays the same?",
+        "options": [
+          "It is warmer in the afternoon, and the wind stops.",
+          "It is colder in the afternoon; the rain stops, but it is still windy.",
+          "It is colder in the afternoon, and it starts raining.",
+          "The temperature stays the same, but the wind gets stronger."
+        ],
+        "correct": 1,
+        "explanation": "Sabah 16°C, yağmurlu ve rüzgârlıdır. Öğleden sonra 11°C ile daha soğuk, yağmursuz fakat yine rüzgârlıdır. B değişen sıcaklık ve yağışı, devam eden rüzgârdan ayırır. Rüzgârın güçlenme bilgisi yoktur.",
+        "imageUrl": "/grade6/ingilizce/test-14/soru-04.svg",
+        "imageAlt": "Same town: morning 16°C rain and wind; afternoon 11°C cloudy, no rain, wind. Weather icons and a temperature for each time.",
+        "imageWidth": 360,
+        "imageHeight": 780
+      },
+      {
+        "id": "e6-1-t14-05",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Look at the fair map and read the messages.\nNora: 'I am in the queue for the ride with horses.'\nEli: 'I am not in your queue. I am waiting for the ride NEXT TO yours, not the one opposite it.'\n\nWhich ride is Eli waiting for?",
+        "options": [
+          "The Ferris wheel.",
+          "The roller coaster.",
+          "The carousel.",
+          "The ghost train."
+        ],
+        "correct": 0,
+        "explanation": "Atlı oyuncak carousel'dir. Haritada carousel'in hemen yanında Ferris wheel, karşısında roller coaster vardır. Eli yanındaki oyuncağı seçtiğini, karşıdakini seçmediğini söyler; cevap Ferris wheel'dir. Ghost train aynı sırada yakın komşu değildir.",
+        "imageUrl": "/grade6/ingilizce/test-14/soru-05.svg",
+        "imageAlt": "Fair map: carousel and Ferris wheel side by side north of path; roller coaster directly south of carousel; ghost train south of Ferris wheel. Ride drawings, labels and path.",
+        "imageWidth": 360,
+        "imageHeight": 900
+      },
+      {
+        "id": "e6-1-t14-06",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "The pictures show the same people at TWO different times. Which sentence correctly describes a change from Picture 1 to Picture 2?",
+        "options": [
+          "The boy is reading in both pictures, but the woman is not.",
+          "The girl is playing with the ball in Picture 1 and reading in Picture 2.",
+          "The woman is reading in Picture 1 and giving a drink to the boy in Picture 2.",
+          "The boy is drinking in Picture 1 and the girl is drinking in Picture 2."
+        ],
+        "correct": 2,
+        "explanation": "İlk resimde kadın kitap okur; ikinci resimde çocuğa içecek uzatır. Kız iki resimde de topla oynar. Erkek çocuk ilk resimde bankta oturur, ikinci resimde içeceği alır. C, aynı kişinin iki zamandaki etkinliğini doğru karşılaştırır.",
+        "imageUrl": "/grade6/ingilizce/test-14/soru-06.svg",
+        "imageAlt": "Picture 1: woman reads on bench; boy sits beside her; girl plays with ball. Picture 2: woman stands and gives a cup to boy; girl still plays with ball. Same clothes identify each person. Each person is labelled Woman, Boy or Girl in both frames.",
+        "imageWidth": 360,
+        "imageHeight": 1000
+      },
+      {
+        "id": "e6-1-t14-07",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "A school group is choosing a bus to the fair. They must arrive BEFORE 10:00, not at 10:00. They can leave school only AFTER their lesson ends at 09:15. The bus stop is at the school gate. Which bus can they take?",
+        "options": [
+          "Bus A",
+          "Bus B",
+          "Bus C",
+          "Bus D"
+        ],
+        "correct": 3,
+        "explanation": "Dersi 09.15'te bittiği için 09.10'da kalkan A'ya yetişemezler. B tam 10.00'da varır; before 10:00 koşulunu karşılamaz. C 10.05'te varır. D, 09.30'da kalkıp 09.55'te vararak hem ders sonrası kalkış hem 10.00'dan önce varış koşulunu sağlar.",
+        "imageUrl": "/grade6/ingilizce/test-14/soru-07.svg",
+        "imageAlt": "Four bus cards with departure and arrival times: A 09:10–09:45; B 09:20–10:00; C 09:25–10:05; D 09:30–09:55. Lesson ends 09:15, arrive before 10:00.",
+        "imageWidth": 360,
+        "imageHeight": 940
+      },
+      {
+        "id": "e6-1-t14-08",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Read the messages from the SAME town.\nAva: 'It is snowing! I am excited because I can make a snowman.'\nBen: 'Our football match is cancelled because of the snow. I feel sad about that.'\n\nWhich statement is supported by BOTH messages?",
+        "options": [
+          "Both children dislike snowy weather because it stops outdoor activities.",
+          "The same weather gives them different feelings because it affects their plans differently.",
+          "Ben dislikes every snowy day, but Ava enjoys every kind of weather.",
+          "Both children feel sad, but Ava decides to play outside."
+        ],
+        "correct": 1,
+        "explanation": "İki çocuk aynı karlı havayı farklı planlarla ilişkilendirir: Ava kardan adam yapabileceği için heyecanlı, Ben maçı iptal olduğu için üzgündür. B her iki gerekçeyi korur. Ben'in bütün karlı günlerden hoşlanmadığı veya Ava'nın her türlü havayı sevdiği söylenmez."
+      },
+      {
+        "id": "e6-1-t14-09",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Read the breakfast order.\nDeniz: 'Two cheese sandwiches, please: one for me and one for Ela.'\nEla: 'Wait! No cheese in mine. Can I have an egg in it instead?'\nWaiter: 'Of course. Anything to drink?'\nDeniz: 'Tea for me.'\nEla: 'The same for me, please.'\n\nWhat is the FINAL order?",
+        "options": [
+          "Two egg sandwiches and two teas.",
+          "Two cheese sandwiches and one tea.",
+          "One cheese sandwich, one egg sandwich and two teas.",
+          "One cheese sandwich, one egg sandwich and one tea."
+        ],
+        "correct": 2,
+        "explanation": "İlk sipariş iki peynirli sandviçtir; Ela yalnız kendi sandviçindeki peyniri yumurtayla değiştirir. Deniz'in sandviçi peynirli kalır. Ela'nın the same ifadesi hemen önceki çay isteğine gönderme yapar; ikisine de çay gelir. Son sipariş C'dir."
+      },
+      {
+        "id": "e6-1-t14-10",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Put the parts of the conversation in a meaningful order.\nI. Maya: 'At half past four.'\nII. Leo: 'Do you have a music lesson on Tuesday?'\nIII. Leo: 'And what time does it start?'\nIV. Maya: 'No. Tuesday is my football day.'\nV. Maya: 'On Thursday, after school.'\nVI. Leo: 'Then when is your music lesson?'",
+        "options": [
+          "II – IV – III – V – VI – I",
+          "VI – IV – II – V – III – I",
+          "II – V – VI – IV – III – I",
+          "II – IV – VI – V – III – I"
+        ],
+        "correct": 3,
+        "explanation": "Salı günü müzik dersi olup olmadığını soran II, No ile başlayan IV ile yanıtlanır. VI bu kez müzik dersinin ne zaman olduğunu sorar; V perşembe gününü söyler. III başlangıç saatini ister; I saat 16.30'u verir. Doğru sıra II–IV–VI–V–III–I'dır."
+      }
     ]
   },
   "term2": {}

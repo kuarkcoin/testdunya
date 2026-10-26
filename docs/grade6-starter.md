@@ -506,3 +506,12 @@ Toplam: 23 test, 230 soru, 117 SVG, 28 rota. Önceki 220 soru ve 110 SVG korunur
 - İngilizce artık 13 test / 130 soru. Genel toplam 59 test / 590 soru / 331 SVG; 64 altıncı sınıf rotası. Önceki içerikler korunur.
 - Cevap anahtarı: B C D A B C D A C B. Görseller 360 piksel genişliğinde, yazılar en az 26 piksel; mobil görünümde okunabilirlik kontrol edilir.
 - Production’a otomatik aktarım yapılmaz.
+
+
+## İngilizce Test 14 — Zor Karma Okuma
+
+- 10 soru: 7 görselli, 3 metin tabanlı; ilk beş konu grubundaki dil yapıları korunur. Zorluk çoklu ipuçlarını, konuşma sırasını, karşılaştırmaları ve plan koşullarını birleştirmeden gelir.
+- Haftalık etkinlikler, kahvaltı kısıtları, bina karşılaştırmaları, hava değişimi, lunapark haritası, iki andaki etkinlikler, otobüs saatleri, aynı hava için farklı duygular, güncellenen sipariş ve diyalog sıralama.
+- İngilizce soru ve seçenekler, Türkçe açıklamalar; mobilde okunaklı 360 piksel SVG görseller.
+- Önceki 590 soru ve 331 SVG değiştirilmeden korunmuştur. Yeni toplam 60 test, 600 soru, 338 SVG; 65 altıncı sınıf rotası.
+- Konu etiketleri kullanıcının sağladığı ilk beş ünite grubuna dayanır; güncel programın tamamını kapsadığı iddiası değildir.
