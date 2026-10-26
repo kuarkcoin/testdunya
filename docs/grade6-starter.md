@@ -497,3 +497,12 @@ Toplam: 23 test, 230 soru, 117 SVG, 28 rota. Önceki 220 soru ve 110 SVG korunur
 - Yedi SVG 360 piksel genişlikte, en az 26 piksel yazıyla hazırlanmış ve 238 piksel mobil görünümde incelenmiştir. Önceki testler korunur.
 - Cevap anahtarı: B, D, A, C, B, D, C, A, B, A.
 - Toplam: 58 test, 580 soru, 324 SVG; 63 altıncı sınıf rotası. Fen: 15 test, 150 soru.
+
+
+## İngilizce Test 13 — Zor
+
+- Kullanıcının ilk beş konu grubu kapsamında 7 görselli ve 3 metin sorusu eklendi. Zorluk, üst sınıf dil bilgisi yerine birden fazla koşulu ve ipucunu birlikte yorumlamaya dayanır.
+- Ortak zaman aralığı, kahvaltı değişikliği, iki ölçütlü karşılaştırma, hava planları, etkinlik seçimi, görsel kişi belirleme, konum eleme, görüş–tercih ayrımı, gönderim ve rutin–istisna karşılaştırması işlenir.
+- İngilizce artık 13 test / 130 soru. Genel toplam 59 test / 590 soru / 331 SVG; 64 altıncı sınıf rotası. Önceki içerikler korunur.
+- Cevap anahtarı: B C D A B C D A C B. Görseller 360 piksel genişliğinde, yazılar en az 26 piksel; mobil görünümde okunabilirlik kontrol edilir.
+- Production’a otomatik aktarım yapılmaz.

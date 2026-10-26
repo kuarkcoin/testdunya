@@ -2045,6 +2045,176 @@ export const ingilizceData: SubjectData = {
         "correct": 0,
         "explanation": "Eggs adet olarak sayılabilen çoğul bir isimdir; kaç yumurta istendiği How many eggs ile sorulur. Milk burada bir sıvının miktarını belirtir; ne kadar süt istendiği How much milk ile sorulur. Two ve just a little yanıtları da bu ayrımı destekler."
       }
+    ],
+    "test13": [
+      {
+        "id": "e6-1-t13-01",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Mia and Leo want to spend a full thirty minutes together in the park today. They cannot leave their clubs early, and they must leave the park by the times on their cards. The park is next to both clubs; ignore walking time. Which plan is possible?",
+        "options": [
+          "Meet at quarter past three and leave at quarter to four.",
+          "Meet at half past three and leave at four.",
+          "Meet at quarter to four and leave at quarter past four.",
+          "Meet at four and leave at half past four."
+        ],
+        "correct": 1,
+        "explanation": "Mia'nın kulübü 15.15'te, Leo'nunki 15.30'da biter; buluşma en erken 15.30 olabilir. Mia en geç 16.00'da, Leo 16.15'te ayrılmalıdır. Ortak 30 dakikalık aralık 15.30–16.00'dır. A, Leo'nun kulübü bitmeden başlar; C ve D, Mia'nın ayrılma sınırını aşar.",
+        "imageUrl": "/grade6/ingilizce/test-13/soru-01.svg",
+        "imageAlt": "Mia: club ends 15:15, leave park by 16:00. Leo: club ends 15:30, leave park by 16:15. Two clock cards and park icon.",
+        "imageWidth": 360,
+        "imageHeight": 740
+      },
+      {
+        "id": "e6-1-t13-02",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Read Eva's breakfast note and look at the four trays. She wants ONE tray with everything she asks for and nothing she refuses. Which tray should the waiter bring?",
+        "options": [
+          "Tray A",
+          "Tray B",
+          "Tray C",
+          "Tray D"
+        ],
+        "correct": 2,
+        "explanation": "Eva yumurtayı bugün istemez; her zamanki yumurtası yerine peynir, ayrıca kızarmış ekmek ister. Çayı yalnız süt eklenmeden kabul eder. C tepsisinde peynir, kızarmış ekmek ve sütsüz çay bulunur. A yumurtalıdır; B'nin çayında süt vardır; D'de kızarmış ekmek yerine pankek vardır.",
+        "imageUrl": "/grade6/ingilizce/test-13/soru-02.svg",
+        "imageAlt": "Eva: I usually have eggs. Not today! Cheese instead, please, and toast. Tea is fine, but no milk in it. A eggs toast plain tea; B cheese toast tea with milk; C cheese toast plain tea; D cheese pancakes plain tea.",
+        "imageWidth": 360,
+        "imageHeight": 1000
+      },
+      {
+        "id": "e6-1-t13-03",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Arda says, 'I want a café that is quieter than Oak Café but cheaper than River Café.' In the chart, more people means a noisier café. Which café meets BOTH conditions?",
+        "options": [
+          "Oak Café",
+          "River Café",
+          "Hill Café",
+          "Park Café"
+        ],
+        "correct": 3,
+        "explanation": "Oak'ta 12 kişi vardır; daha sakin seçenek 12'den az kişili olmalıdır. River'da çay 4 sterlindir; daha ucuz seçenek 4 sterlinden düşük olmalıdır. Park, 8 kişi ve 3 sterlinle ikisini sağlar. Hill sakindir ama 5 sterlinle pahalıdır. Oak kendisinden daha sakin, River kendisinden daha ucuz değildir.",
+        "imageUrl": "/grade6/ingilizce/test-13/soru-03.svg",
+        "imageAlt": "Four cafés: Oak 12 people tea £2; River 6 people tea £4; Hill 4 people tea £5; Park 8 people tea £3. Person icons and tea cups, count and price labels.",
+        "imageWidth": 360,
+        "imageHeight": 920
+      },
+      {
+        "id": "e6-1-t13-04",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Lina wants to fly her kite when it is windy but not rainy. Sam wants to take photos outside when it is sunny and warmer than 15°C. They can choose different times. Which message matches BOTH plans?",
+        "options": [
+          "Lina: Saturday afternoon. Sam: Sunday morning.",
+          "Lina: Saturday morning. Sam: Sunday morning.",
+          "Lina: Sunday morning. Sam: Sunday afternoon.",
+          "Lina: Sunday afternoon. Sam: Saturday afternoon."
+        ],
+        "correct": 0,
+        "explanation": "Lina için cumartesi öğleden sonra rüzgârlı ama yağmursuzdur. Cumartesi sabahı yağmurludur. Sam için pazar sabahı güneşli ve 18°C'dir; pazar öğleden sonrası güneşli olsa da 12°C ile yeterince sıcak değildir. Her iki koşulu aynı anda sağlayan plan A'dır.",
+        "imageUrl": "/grade6/ingilizce/test-13/soru-04.svg",
+        "imageAlt": "Forecast: Saturday morning rainy windy 16°C; Saturday afternoon cloudy windy 17°C; Sunday morning sunny calm 18°C; Sunday afternoon sunny calm 12°C. Four weather icons.",
+        "imageWidth": 360,
+        "imageHeight": 900
+      },
+      {
+        "id": "e6-1-t13-05",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "It is 14:30. Nora wants a ride that goes slowly and lets her see the town from above. Ben agrees, but says, 'Let's choose something we can ride NOW, not later.' Look at the signs. Which reply follows their plan?",
+        "options": [
+          "Let’s ride the Ferris wheel now.",
+          "Let’s take the sky train now.",
+          "Let’s ride the roller coaster now.",
+          "Let’s ride the carousel now."
+        ],
+        "correct": 1,
+        "explanation": "İki kişi yavaş, yüksekten manzara sunan ve şu an açık olan bir oyuncak ister. Sky train üç koşulu da karşılar. Ferris wheel uygun türde olsa da 15.00'te açılır; roller coaster hızlıdır; carousel yüksekten manzara sağlamaz.",
+        "imageUrl": "/grade6/ingilizce/test-13/soru-05.svg",
+        "imageAlt": "Ferris wheel opens 15:00 slow high; skytrain open 14:00–18:00 slow high; rollercoaster open fast; carousel open slow near ground. Illustrations of four rides. The sky train sign explicitly says Town view.",
+        "imageWidth": 360,
+        "imageHeight": 1000
+      },
+      {
+        "id": "e6-1-t13-06",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Look at the four people in town now. One of them says, 'I am not shopping. I am doing the same activity as Lisa, but I am not sitting down.' Who is speaking?",
+        "options": [
+          "Anna",
+          "Tom",
+          "Max",
+          "Lisa"
+        ],
+        "correct": 2,
+        "explanation": "Lisa oturarak kitap okur. Aynı etkinliği yapan ama oturmayan kişi ayakta kitap okuyan Max'tir. Anna kitap okumaz, Tom alışveriş yapar. Lisa okuyor olsa da oturmadığını söyleyemez. İki ipucu birlikte kullanılmalıdır.",
+        "imageUrl": "/grade6/ingilizce/test-13/soru-06.svg",
+        "imageAlt": "Four scenes: Anna stands with an empty basket; Tom buys apples from a seller; Lisa sits on a bench reading a blue book; Max stands reading a red book. Names clear; no activity labels.",
+        "imageWidth": 360,
+        "imageHeight": 900
+      },
+      {
+        "id": "e6-1-t13-07",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Read the two messages and look at the map. The friends need a meeting place. Which building should they choose?\nAli: 'Let's meet opposite the bank.'\nBeth: 'There are two buildings opposite it. Not the one next to the bakery! Choose the other one.'",
+        "options": [
+          "The bakery.",
+          "The bank.",
+          "The cinema.",
+          "The library."
+        ],
+        "correct": 3,
+        "explanation": "Haritada bankanın karşı tarafında sinema ve kütüphane vardır. Sinema fırının yanındadır; Beth bu binayı istemez. Kütüphane diğer adaydır. Fırın adaylardan biri değildir; banka ise karşısında buluşulacak referans binadır.",
+        "imageUrl": "/grade6/ingilizce/test-13/soru-07.svg",
+        "imageAlt": "Across wide street from bank are cinema and library. Bakery immediately next to cinema, library farther beyond park gap. Opposite zone indicated clearly.",
+        "imageWidth": 360,
+        "imageHeight": 820
+      },
+      {
+        "id": "e6-1-t13-08",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Read the conversation.\nAva: 'The roller coaster is more exciting than the carousel.'\nOmar: 'Then let’s ride it!'\nAva: 'Not today. I want a slower ride. Let’s choose the carousel.'\n\nWhich sentence correctly gives BOTH Ava’s opinion and her choice today?",
+        "options": [
+          "She thinks the roller coaster is more exciting, but chooses the carousel.",
+          "She thinks the roller coaster is more exciting and chooses it.",
+          "She thinks the carousel is more exciting and chooses it.",
+          "She thinks the carousel is more exciting, but chooses the roller coaster."
+        ],
+        "correct": 0,
+        "explanation": "Ava hız trenini atlıkarıncadan daha heyecanlı bulur; ancak bugün daha yavaş bir oyuncak istediği için atlıkarıncayı seçer. Daha heyecanlı bulduğu şey ile o gün tercih ettiği şey aynı olmak zorunda değildir. A iki bilgiyi de doğru birleştirir; diğer seçenekler görüşü veya seçimi değiştirir."
+      },
+      {
+        "id": "e6-1-t13-09",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Read the messages.\nMina: 'I am buying cheese for our breakfast. Ali is bringing bread. Can you bring a drink?'\nEce: 'Sure. Would you like milk or orange juice?'\nMina: 'Ali likes both, but I don't like milk.'\nEce: 'Then I can bring the other one for both of you.'\n\nWhat does Ece choose, and why?",
+        "options": [
+          "Milk, because Mina asks for it after Ece offers two drinks.",
+          "Orange juice, because Ali refuses milk in his reply.",
+          "Orange juice, because Ali likes it and Mina refuses milk.",
+          "Milk, because Ali likes both drinks and Mina makes no choice."
+        ],
+        "correct": 2,
+        "explanation": "The other one, iki içecekten süt dışındaki portakal suyudur. Ali her ikisini sever; Mina sütü istemez. C bu iki kişiye ait bilgiyi doğru ayırır. A Mina'nın süt istediğini, B Ali'nin sütü reddettiğini, D Mina'nın tercih belirtmediğini yanlış söyler."
+      },
+      {
+        "id": "e6-1-t13-10",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Read the text.\n'On Mondays and Fridays, Leo walks to school with his sister. On Tuesdays, Wednesdays and Thursdays, he takes the bus. His sister walks every school day. Today is Wednesday, but the buses are not running. Leo is walking with his sister.'\n\nWhich sentence correctly compares their usual Wednesday journeys with today?",
+        "options": [
+          "Both children are going to school in their usual way.",
+          "His sister is going in her usual way, but Leo is not.",
+          "Leo is going in his usual way, but his sister is not.",
+          "Both children are going to school in a different way from usual."
+        ],
+        "correct": 1,
+        "explanation": "Çarşamba günleri Leo normalde otobüse biner; kız kardeşi ise her okul günü yürür. Bugün ikisi de yürüdüğüne göre kız kardeşinin ulaşım biçimi alışılmış olanla aynıdır, Leo'nunki değişmiştir. Pazartesi ve cuma birlikte yürümeleri, çarşamba rutinini değiştirmez."
+      }
     ]
   },
   "term2": {}
