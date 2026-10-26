@@ -2278,6 +2278,176 @@ export const matematikData: SubjectData = {
         "explanation": "İlk 40 sayfa 30 TL tutar. Kalan 27 TL, 27 ÷ 0,60 = 45 sayfaya karşılık gelir; toplam 85 sayfa vardır. Siparişler ayrılırsa 40 sayfalık sipariş 30 TL, 45 sayfalık sipariş 40 × 0,75 + 5 × 0,60 = 33 TL tutar. Toplam 63 TL, tek siparişten 63 − 57 = 6 TL fazladır."
       }
     ],
+    test15: [
+      {
+        "id": "m6-1-t15-01",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "20 m × 12 m boyutlarındaki dikdörtgen bahçede, biri yatay diğeri düşey iki düz yol şekildeki gibi tüm bahçe boyunca uzanıyor. Yolların genişlikleri 3 m ve 2 m’dir. Yollar dışındaki alanın 1/3’üne çiçek, kalanına çim ekiliyor.\n\nÇim ekilen alan kaç metrekaredir?",
+        "options": [
+          "108",
+          "102",
+          "120",
+          "162"
+        ],
+        "correct": 0,
+        "explanation": "Bahçe 240 m²’dir. Yolların alanlarını toplarken kesişimdeki 2 × 3 = 6 m² iki kez sayılır. Yol alanı 20 × 3 + 12 × 2 − 6 = 78 m²’dir. Kalan 162 m²’nin 1/3’ü çiçek, 2/3’ü çim olur: 162 × 2/3 = 108 m².",
+        "imageUrl": "/grade6/matematik/test-15/soru-01.svg",
+        "imageAlt": "20 m genişliğinde ve 12 m yüksekliğinde dikdörtgen. Bahçeyi boydan boya geçen yatay yolun genişliği 3 m, düşey yolun genişliği 2 m. Yollar kesişiyor.",
+        "imageWidth": 360,
+        "imageHeight": 700
+      },
+      {
+        "id": "m6-1-t15-02",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "AB = 24 cm, AC = 8 cm ve CB = 16 cm’dir. Şeklin sınırı; AB çaplı büyük yarım çember yayı ile AC ve CB çaplı iki küçük yarım çember yayından oluşur. Doğru parçaları sınıra dâhil değildir.\n\n2 m uzunluğundaki telden bu sınırın iki tam kopyası, kayıp olmadan yapılıyor. Kaç santimetre tel artar? (π = 3 alınız.)",
+        "options": [
+          "48",
+          "52",
+          "56",
+          "64"
+        ],
+        "correct": 2,
+        "explanation": "Bir yarım çemberin yay uzunluğu, çevresinin yarısıdır. Üç yayın toplamı (3 × 24 + 3 × 8 + 3 × 16) ÷ 2 = 72 cm olur. İki kopya 144 cm tel gerektirir. 2 m = 200 cm olduğundan 200 − 144 = 56 cm tel artar.",
+        "imageUrl": "/grade6/matematik/test-15/soru-02.svg",
+        "imageAlt": "A,C,B doğrusal, AC 8 cm ve CB 16 cm. AB çaplı büyük yarım çember üstte; aynı taraftaki iki küçük yarım çember yayları ile arasında boyalı bölge. Üç yay turuncu sınırdır.",
+        "imageWidth": 360,
+        "imageHeight": 700
+      },
+      {
+        "id": "m6-1-t15-03",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Grafik bir grubun etkinlik puanlarının sıklığını gösteriyor. 5 puan alanların sayısı X ile gizlenmiştir. Bu grubun aritmetik ortalaması 4’tür. Daha sonra gruba, birbirleriyle aynı puanı alan iki kişi katılınca ortalama 5 oluyor.\n\nSonradan katılan kişilerin her birinin puanı kaçtır?",
+        "options": [
+          "6",
+          "7",
+          "9",
+          "8"
+        ],
+        "correct": 3,
+        "explanation": "İlk grupta 2 puan alan 3, 8 puan alan 1 kişi vardır. Bu dört kişinin toplamı 14’tür; ortalama 4 olsaydı 16 olmalıydı. Her 5 puanlık kişi ortalamanın 1 fazlasını getirir, bu nedenle X = 2’dir. İlk grup 6 kişi ve toplam 24 puandır. İki kişi eklenince 8 kişinin toplamı 8 × 5 = 40 olur. İki yeni kişi 16 puanı eşit paylaşır: her biri 8 puandır.",
+        "imageUrl": "/grade6/matematik/test-15/soru-03.svg",
+        "imageAlt": "Puan sıklıkları: 2 puan için 3 nokta, 5 puan için X kişi kutusu, 8 puan için 1 nokta. Her nokta bir kişidir. X bölümü nokta sayısı görünmeyecek biçimde gizlidir.",
+        "imageWidth": 360,
+        "imageHeight": 700
+      },
+      {
+        "id": "m6-1-t15-04",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "ABC üçgeninde BA kenarı A yönünde E noktasına uzatılmıştır. EAC dış açısı 132°’dir. ABC açısı, ACB açısından 24° büyüktür. BD, ABC açısını iki eş açıya ayırır ve D, AC kenarı üzerindedir.\n\nBDC açısı kaç derecedir?",
+        "options": [
+          "78°",
+          "87°",
+          "93°",
+          "102°"
+        ],
+        "correct": 1,
+        "explanation": "A iç açısı 180 − 132 = 48°’dir. B ve C açıları toplamı 132°, farkı 24° olduğundan C = (132 − 24) ÷ 2 = 54°, B = 78° olur. BD açıortay olduğundan DBC = 39°’dir. BDC üçgeninde istenen açı 180 − 54 − 39 = 87°’dir.",
+        "imageUrl": "/grade6/matematik/test-15/soru-04.svg",
+        "imageAlt": "ABC üçgeni; BA, A’dan E’ye uzatılmış. EAC 132°. B açısı C açısından 24° büyük. B’den AC üzerindeki D’ye açıortay, B’de eş yaylar. D’de BDC soruluyor.",
+        "imageWidth": 360,
+        "imageHeight": 760
+      },
+      {
+        "id": "m6-1-t15-05",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Bir kampanyanın şişe değişim kuralı görselde verilmiştir. Alınan içecek içildiğinde onun boş şişesi de sonraki değişimlerde kullanılabiliyor. Başka şişe alınmıyor ve ödünç şişe kullanılmıyor.\n\nBu yolla toplam 7 dolu şişe alabilmek için başlangıçta en az kaç boş şişe gerekir?",
+        "options": [
+          "28",
+          "30",
+          "29",
+          "35"
+        ],
+        "correct": 2,
+        "explanation": "Her değişimde 5 boş şişe verilir; yeni içecek içilince 1 boş geri kazanılır. Böylece eldeki boş şişe sayısı her defasında 4 azalır. Yedinci değişimden önce en az 5 boş gerekir. Altı değişimde 24 boş eksildiğinden başlangıçta en az 24 + 5 = 29 boş olmalıdır. 29 ile boş sayıları sırasıyla 25, 21, 17, 13, 9, 5, 1 olur; 7 dolu şişe alınır.",
+        "imageUrl": "/grade6/matematik/test-15/soru-05.svg",
+        "imageAlt": "Beş boş şişe bir dolu şişeyle değiştiriliyor. Dolu şişe içilince bir boş şişe geri dönüyor. Geri dönüş oku boş şişe havuzuna yöneliyor.",
+        "imageWidth": 360,
+        "imageHeight": 700
+      },
+      {
+        "id": "m6-1-t15-06",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Şekildeki iki üçgenin taban uzunlukları eşittir. Tabanlarına ait dik yüksekliklerden biri diğerinden 8 cm fazladır. İki üçgenin alanları toplamı 216 cm²’dir.\n\nKüçük üçgenin alanı kaç santimetrekaredir?",
+        "options": [
+          "64",
+          "72",
+          "80",
+          "96"
+        ],
+        "correct": 1,
+        "explanation": "Ortak taban 18 cm’dir. Yükseklik farkı 8 cm olduğundan alan farkı 18 × 8 ÷ 2 = 72 cm²’dir. Büyük alanı küçüğe indirmek için toplamdan 72 çıkarılır: 216 − 72 = 144. Bu, iki küçük alanın toplamıdır; küçük alan 144 ÷ 2 = 72 cm²’dir.",
+        "imageUrl": "/grade6/matematik/test-15/soru-06.svg",
+        "imageAlt": "İki ayrı üçgenin tabanı 18 cm. Dik yükseklikler kesikli çizgilerle gösterilir. Alttaki yükseklik üsttekinden 8 cm fazladır. Toplam alan 216 cm².",
+        "imageWidth": 360,
+        "imageHeight": 700
+      },
+      {
+        "id": "m6-1-t15-07",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "A ve B gruplarının halka atış sonuçları görselde verilmiştir. İki grubun kayıtları birleştirildikten sonra 40 yeni atış daha yapılıyor. Son durumda bütün atışlardaki isabetin göreli sıklığının en az 1/2, en çok 3/5 olması isteniyor.\n\nYeni 40 atıştaki isabet sayısı kaç farklı doğal sayı değeri alabilir?",
+        "options": [
+          "9",
+          "10",
+          "12",
+          "11"
+        ],
+        "correct": 3,
+        "explanation": "İlk iki grupta toplam 60 atışın 24 + 5 = 29’u isabetlidir. Yeni atışlarla toplam 100 olur. İstenen göreli sıklık için toplam isabet sayısı 50 ile 60 arasında, uçlar dâhil olmalıdır. Bu nedenle yeni isabet sayısı 50 − 29 = 21 ile 60 − 29 = 31 arasındadır. 21, 22, …, 31 olmak üzere 11 farklı değer vardır; hepsi 40 yeni atış içinde mümkündür.",
+        "imageUrl": "/grade6/matematik/test-15/soru-07.svg",
+        "imageAlt": "A grubu: 40 atış, 24 isabet ve 16 isabetsiz. B grubu: 20 atış, 5 isabet ve 15 isabetsiz. Ortak ölçekli yatay yığılmış çubuklar başarıları ve başarısızlıkları gösterir.",
+        "imageWidth": 360,
+        "imageHeight": 700
+      },
+      {
+        "id": "m6-1-t15-08",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Virgülden sonra tam üç basamağı bulunan bir sayı, doğrudan onda birler basamağına yuvarlandığında 2,7 oluyor. Aynı sayı önce yüzde birler basamağına, ardından elde edilen sonuç onda birler basamağına yuvarlanınca 2,8 oluyor.\n\nBu koşulları sağlayan kaç farklı sayı vardır?",
+        "options": [
+          "5",
+          "4",
+          "9",
+          "10"
+        ],
+        "correct": 0,
+        "explanation": "İki aşamalı işlemde 2,8’e çıkıp doğrudan işlemde 2,7’de kalması için ilk sayı 2,75’ten küçük olmalı, fakat yüzde birlere yuvarlanınca 2,75 olmalıdır. Üç basamaklı olası sayılar 2,745; 2,746; 2,747; 2,748 ve 2,749’dur. Toplam 5 sayı vardır."
+      },
+      {
+        "id": "m6-1-t15-09",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Bir kırtasiyede aynı kalemler yalnız 18’li veya 24’lü paketlerle satılıyor. 18’li paket 45 TL, 24’lü paket 64 TL’dir. Paketler açılarak satılmıyor.\n\nTam olarak 150 kalem almak isteyen biri en az kaç TL öder?",
+        "options": [
+          "375",
+          "391",
+          "379",
+          "400"
+        ],
+        "correct": 2,
+        "explanation": "24’lü paket sayısı en fazla 6 olabilir. 150’den 24’ün katları çıkarıldığında kalanın 18’e tam bölündüğü iki seçenek vardır: 1 tane 24’lü ve 7 tane 18’li; 4 tane 24’lü ve 3 tane 18’li. Ücretler 64 + 7 × 45 = 379 TL ve 4 × 64 + 3 × 45 = 391 TL’dir. Daha az paket almak burada daha az ödeme anlamına gelmez; en düşük ücret 379 TL’dir."
+      },
+      {
+        "id": "m6-1-t15-10",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Bir etkinlik için toplam 25 defter alınıyor. Çizgili defter 3,60 TL, kareli defter 4,80 TL’dir. Toplam ödeme 100,80 TL’dir.\n\nAlınan kareli defter sayısı kadar çizgili defter daha alınsaydı, bu ek alışveriş için kaç TL ödenirdi?",
+        "options": [
+          "28,80",
+          "32,40",
+          "43,20",
+          "57,60"
+        ],
+        "correct": 1,
+        "explanation": "Bütün defterler çizgili olsaydı 25 × 3,60 = 90 TL tutardı. Gerçek ücret 10,80 TL fazladır. Her kareli defter 1,20 TL fark oluşturur; kareli sayısı 10,80 ÷ 1,20 = 9’dur. 9 çizgili defterin ücreti 9 × 3,60 = 32,40 TL olur."
+      }
+    ],
 
   },
   term2: {},

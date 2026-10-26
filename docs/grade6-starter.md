@@ -466,3 +466,15 @@ Toplam: 23 test, 230 soru, 117 SVG, 28 rota. Önceki 220 soru ve 110 SVG korunur
 - Matematik toplamı 14 test / 140 sorudur. Tüm 6. sınıf paketi 55 test / 550 soru / 303 SVG içerir.
 - Veri, TypeScript, tam derleme, rotalar ve önceki içeriklerin korunması kontrolleri yayın öncesinde çalıştırılır. Bağımsız matematik ve görsel inceleme yapılır. Standalone lint yapılandırılmamıştır; etkileşimli tarayıcı kontrolü çalıştırılmamıştır.
 - Bu değişiklik production aktarımı içermez.
+
+
+## Matematik Test 15 — Zor kategori (26 Ekim 2026)
+
+- 7 şekilli ve 3 şekilsiz özgün soru eklendi. Önceki 14 matematik testi ve diğer derslerin içerikleri korunur.
+- Kapsam: kesişen yolların alanı ve kesir; üç yarım çember yayının sınırı; eksik sıklık ve değişen ortalama; dış açı ve açıortay; geri kazanımlı şişe değişiminde en az başlangıç; üçgen alanlarında toplam ve fark; göreli sıklık aralığı; iki aşamalı yuvarlama; tam paket koşulunda en düşük ücret; farklı birim fiyatlarla bilinmeyen adet.
+- Zorluk, bilgileri birleştirme, tersine düşünme ve koşulların uçlarını birlikte değerlendirmeden doğar. Bazı sorular orta-zor düzeydedir; tüm sorular eşit güçlükte değildir.
+- Cevap sırası: A, C, D, B, C, B, D, A, C, B. Sonuçlar: 108 m²; 56 cm; 8 puan; 87°; 29 şişe; 72 cm²; 11 değer; 5 sayı; 379 TL; 32,40 TL.
+- Yedi SVG 360 piksel genişlikte ve en az 26 piksel yazıyla hazırlandı; mobilde 238 piksel genişliğinde okunabilirlik kontrolü yapılır. Şekiller gerçek geometrik düzen, nokta sıklığı, değişim akışı veya ortak ölçekli çubuklar içerir.
+- Matematik toplamı 15 test / 150 sorudur. Tüm 6. sınıf paketi 56 test / 560 soru / 310 SVG içerir.
+- Veri, TypeScript, tam derleme, rotalar ve önceki içeriklerin korunması kontrolleri yayın öncesinde çalıştırılır. Bağımsız matematik ve görsel inceleme yapılır. Standalone lint yapılandırılmamıştır; etkileşimli tarayıcı kontrolü çalıştırılmamıştır.
+- Bu değişiklik production aktarımı içermez.
