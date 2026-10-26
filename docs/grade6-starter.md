@@ -401,3 +401,12 @@ Toplam: 23 test, 230 soru, 117 SVG, 28 rota. Önceki 220 soru ve 110 SVG korunur
 - Zor düzeyde 8 metin + 2 görsel okuma sorusu: davranıştan çıkarım, iki metnin ortak düşüncesi, ihtiyaçları birleştirme, gönderme zinciri, çoklu yayımlama koşulları, iki afişin eksik bilgilerini tamamlama, sınırları koruyan özet, paragraf sırası, anlamı koruyarak yeniden yazma ve başlık–kanıt tutarlılığı. Anahtar: **A, D, B, C, B, D, A, C, B, D**.
 - İki pasif SVG 360 birim genişlikte, en az 26 birim yazıyla hazırlanır; 238 piksel çıktıları denetlenir. Önceki 470 soru ve 272 SVG korunur. Toplam 48 test / 480 soru / 274 SVG / 53 rota.
 - Bağımsız dil, tek doğru cevap ve zor düzey denetimi; veri/rota doğrulaması, TypeScript ve üretim derlemesi uygulanır. Etkileşimli tarayıcı testi yapılmaz; production’a otomatik aktarım yapılmaz.
+
+## Türkçe Test 13 — Zor
+
+- 8 metin sorusu ve 2 görsel okuma sorusu; cevap anahtarı: **A B C D B D A C A D**.
+- Gerekçeyi değerlendirme, iki metnin ortak iletisi, parça-bütün ilişkisi, anlamı koruyarak birleştirme, çoklu yönerge, düzenleme aşamaları, zaman içinde bakış açısı, paragraf bağları, kapsam ve neden ilişkisi.
+- Görseller 360 px genişliğinde, en az 26 px yazılıdır; 238 px genişlikte okunabilirlik ve taşma kontrolü yapılır. Kitap köşesi ve düzenleme yolu görselleri cevap için gereklidir.
+- SEO başlığı: **Gerekçe, Kapsam ve Anlam Bağları (Zor)**. Ortak soru şeması değişmemiştir.
+- Toplam: 49 test, 490 soru, 276 SVG; 54 altıncı sınıf rotası, 358 statik sayfa. Önceki 480 soru ve 274 SVG korunur.
+- Kontroller: veri, TypeScript, rota, production build, eski içerik korunumu ve bağımsız dil/cevap denetimi. Bağımsız ESLint yapılandırılmamıştır; canlı tarayıcı doğrulaması bu çalışma kapsamında yapılmamıştır.

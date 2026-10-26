@@ -1803,6 +1803,156 @@ export const turkceData: SubjectData = {
         "correct": 3,
         "explanation": "Başlık hem görüşülen on kişiyi bütün öğrencilere geneller hem farklı değerlendirmeleri tek bir beğeni yargısına indirger. D iki sorunu birlikte gösterir. A yalnız kapsamı, C yalnız görüş farklılığını ele aldığı için en kapsamlı değerlendirme değildir. B farklı görüşlerin ortak herhangi bir düşünce bulunmasını engellediğini öne sürer; böyle bir zorunluluk yoktur."
       }
+    ],
+    "test13": [
+      {
+        "id": "t6-1-t13-01",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Bir tartışmada karşımızdakini sözünü kesmeden dinlemek, onun her söylediğini onaylamak değildir. Bazen itirazımızı sağlam bir zemine oturtmak için önce düşüncesini doğru anlamamız gerekir. Ancak anladığımız bir düşünceyi de sırf bize ait olmadığı için yanlış sayamayız.\nBu metnin önerdiği tutumu eksiksiz yansıtan davranış hangisidir?",
+        "options": [
+          "Karşı görüşün gerekçelerini öğrenip onları değerlendirdikten sonra itiraz edip etmeyeceğine karar vermek.",
+          "Karşı görüşün gerekçelerini doğru anladığından emin olunca, değerlendirmeyi sonraya bırakıp tartışmayı bitirmek.",
+          "Karşı görüşü sonuna kadar dinleyip yalnız kendi itirazını güçlendiren gerekçeleri değerlendirmek.",
+          "Karşı görüşün gerekçelerini anlamaya çalışırken, düşünceyi savunan kişiyi tanımasını doğruluğu için yeterli görmek."
+        ],
+        "correct": 0,
+        "explanation": "A hem karşı görüşü anlamayı hem gerekçelerini tarafsızca değerlendirmeyi içerir. B anlamayla yetinerek değerlendirmeyi erteler; C gerekçeleri seçerek ele alır. D gerekçelerin yerine kişiyi ölçüt sayar. Metin yalnızca dinlemeyi değil, anladıktan sonra düşüncenin kendisini değerlendirmeyi önerir."
+      },
+      {
+        "id": "t6-1-t13-02",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "I. Bir kilimin desenini aynı ölçülerle kâğıda geçirdim. Fakat dokuyucunun neden o renkleri yan yana getirdiği sorulunca sustum. Deseni yeniden oluşturmuş, seçimlerini henüz anlamamıştım.\nII. Usta oyuncunun hamlesini ezberledim. Benzer sandığım başka bir durumda aynı hamle işe yaramadı. Hamlenin nasıl yapıldığını biliyordum; hangi koşulda neden seçildiğini değil.\nİki metinden birlikte çıkarılabilecek en kapsamlı yargı hangisidir?",
+        "options": [
+          "Bir örneğin gerekçelerini kavramak, onu aynı biçimde yeniden oluşturabilmek için her zaman zorunludur.",
+          "Bir örneği yeniden oluşturabilmek, onu ortaya çıkaran gerekçeleri ve koşulları kavramış olmak anlamına gelmez.",
+          "Bir örneği başka bir durumda kullanamamak, onun nasıl oluşturulduğunun da öğrenilmediğini gösterir.",
+          "Bir örneğin aynı biçimde yeniden oluşturulması, farklı koşullarda da işe yarayacağını gösterir."
+        ],
+        "correct": 1,
+        "explanation": "İlk metin seçimlerin gerekçesini, ikincisi hamlenin gerekçe ve koşullarını vurgular. İkisinde de uygulamayı taklit etmek, altında yatan düşünceyi kavramaktan ayrılır. B bu ortak noktayı kapsar; diğer seçeneklerde metinlerin desteklemediği kesin sonuçlar vardır."
+      },
+      {
+        "id": "t6-1-t13-03",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Okul dergisine gelen yazıların çoğu aynı mesleği tanıtıyordu. Editör, bunların bir bölümünü sonraki sayılara ayırdı ve bu sayıya başka meslekleri anlatan yazılar ekledi. “Ayırdığım yazılarda bir eksik yok. Ama her yazı tek başına iyi olsa da sayının bütünü okura dar bir pencere sunabilir.” dedi.\nEditörün kararını açıklayan temel ayrım hangisidir?",
+        "options": [
+          "Bir yazının sonraki sayıda yayımlanması ile o yazının daha zayıf olması arasındaki ayrım.",
+          "Farklı mesleklerden söz eden yazıların uzunlukları ile bilgi miktarları arasındaki ayrım.",
+          "Yazıların ayrı ayrı yeterli olması ile birlikte sundukları konu çeşitliliğinin yeterli olması arasındaki ayrım.",
+          "Bütün mesleklere eşit sayıda yer vermek ile en çok ilgi gören mesleğe öncelik vermek arasındaki ayrım."
+        ],
+        "correct": 2,
+        "explanation": "Editör yazıların tek başına yeterli olduğunu, fakat bir araya geldiklerinde sınırlı konu çeşitliliği sunduğunu belirtir. C iki değerlendirme düzeyini birlikte açıklar. A yanlış bir eşleştirmeyi reddetse de kararın bütününü açıklamaz. B ve D metinde verilmeyen ölçütler ekler."
+      },
+      {
+        "id": "t6-1-t13-04",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "(I) Büyüklerimizle konuşup eskiden oynanan oyunları derledik. (II) Oyunların adlarını ve kurallarını yazdık. (III) Adları farklı olan bazı oyunların kurallarının çok benzediğini gördük. (IV) Bu yüzden yalnızca adlara göre ayırmanın yanıltıcı olacağını düşündük. (V) Kuralları karşılaştırarak yeni bir liste hazırladık.\nIII ve IV. cümlelerin anlamı değiştirilmeden bu cümlelerin yerine aşağıdakilerden hangisi getirilirse hem II ile bağlantı hem V. cümlenin gerekçesi korunur?",
+        "options": [
+          "Oyunların kurallarını yazarken büyüklerimizin hangilerini daha çok sevdiğini de öğrenmek istedik.",
+          "Farklı adlarla anılan oyunların tamamının aynı kurallarla oynandığını kesin olarak belirledik.",
+          "Adlarını yazdığımız oyunların kurallarını öğrenmenin düşündüğümüzden uzun sürdüğünü fark ettik.",
+          "Farklı adlar altında benzer kurallar bulunması, adları tek başına sınıflandırma ölçütü saymamamız gerektiğini gösterdi."
+        ],
+        "correct": 3,
+        "explanation": "D, II’de yazılan ad ve kurallardan yola çıkarak gözlemi korur ve V’te kurallara göre yeni liste hazırlanmasını gerekçelendirir. A ilgi alanını değiştirir, B bazı oyunları bütün oyunlara geneller, C ise yeni sınıflandırma için gerekçe sunmaz."
+      },
+      {
+        "id": "t6-1-t13-05",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Bir sınıf, kitap değişim köşesi için görseldeki üç duyuruyu hazırlamıştır. Öğretmen, “Bir kitabı alabilmek için mutlaka kitap getirmek gerektiği izlenimi oluşmasın; fakat getirilen kitapların uygunluk koşulları da kaybolmasın.” demiştir.\nDuyuruları birleştiren aşağıdaki açıklamalardan hangisi öğretmenin iki isteğini de karşılar?",
+        "options": [
+          "Köşeden kitap alabilmek için önce temiz ve eksiksiz bir kitap bırakmalısınız; kitaplar daha sonra okulda kalacaktır.",
+          "Kitap getirmeden de köşeden kitap alabilirsiniz. Bırakacağınız kitap temiz ve eksiksiz olmalı; aldığınız kitabı okuyunca köşeye geri getirmelisiniz.",
+          "Getireceğiniz kitabın temiz olması yeterlidir. Kitap almayan öğrenciler de getirdikleri kitabı daha sonra geri alabilir.",
+          "Her öğrenci kitap getirmeden bir kitap alabilir ve aldığı kitabı kendinde tutabilir; yalnızca bırakılan kitapların eksiksiz olması gerekir."
+        ],
+        "correct": 1,
+        "explanation": "İlk kart kitap getirmenin alma koşulu olmadığını, ikinci kart bırakılan kitabın hem temiz hem eksiksiz olmasını, üçüncü kart alınan kitabın geri getirilmesini belirtir. B üç bilgiyi birlikte korur. A olmayan bir ön koşul ekler; C eksiksizlik koşulunu atlar, D geri getirme kuralını kaldırır.",
+        "imageUrl": "/grade6/turkce/test-13/soru-05.svg",
+        "imageWidth": 360,
+        "imageHeight": 730,
+        "imageAlt": "Kitap getirmesen de köşeden bir kitap alabilirsin. Kitabın temiz ve eksiksiz olmalı. Aldığın kitabı köşeye geri getir. Yeni okurlara da sıra gelsin!"
+      },
+      {
+        "id": "t6-1-t13-06",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Bir öğrencinin yazısı için dört not alınmıştır:\nK: Sonuç cümlesi metindeki bütün örnekleri kapsıyor.\nL: Olayın geçtiği yer, iki cümlede birbiriyle çelişiyor.\nM: Bir örneğin metnin düşüncesine katkısı yok.\nN: Bir kişi adı küçük harfle başlıyor.\nÖğrenci henüz hiçbir düzeltme yapmamıştır. Görseldeki yönteme göre hangi uygulama doğrudur?",
+        "options": [
+          "Önce N düzeltilir; ardından L ile M istenen sırayla ele alınır.",
+          "K olumlu olduğu için ilk iki aşama atlanıp doğrudan N düzeltilir.",
+          "Önce L, sonra N düzeltilir; M ancak yazım yanlışlarından sonra ele alınır.",
+          "Önce M, ardından L, son olarak N düzeltilir; K bir sorun belirtmediği için değiştirilmesi gerekmez."
+        ],
+        "correct": 3,
+        "explanation": "M, katkı aşamasında; L, tutarlılık aşamasında; N, yazım aşamasında ele alınır. K bir eksiklik değil, olumlu değerlendirmedir. D hem aşama sırasını hem notların niteliğini doğru yorumlar. Diğer seçenekler sırayı değiştirir ya da olumlu bir nottan bütün aşamaların sorunsuz olduğu sonucunu çıkarır.",
+        "imageUrl": "/grade6/turkce/test-13/soru-06.svg",
+        "imageWidth": 360,
+        "imageHeight": 810,
+        "imageAlt": "Her örnek düşünceyi destekliyor mu? Gereksiz olanı çıkar. Bilgiler birbiriyle çelişiyor mu? Çelişkiyi düzelt. Harfleri ve ekleri kontrol et. Yanlışları düzelt. Sırayı izle. Bir aşamadaki sorunlar bitmeden geçme."
+      },
+      {
+        "id": "t6-1-t13-07",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Bir öyküde kahramanın kararını hemen vermemesine kızmıştım. “Bu kadar düşünmeye ne gerek var?” diye not düşmüştüm. Öykünün sonunda, onun o sırada bildiği bir ayrıntıyı ben yeni öğrendim: Seçeceği yol, yalnız kendisini değil kardeşini de etkileyecekti. İlk notumu silmedim; yanına “O an bildiklerimle yazmışım.” ekledim.\nAnlatıcının son davranışından çıkarılabilecek en kapsamlı yargı hangisidir?",
+        "options": [
+          "İlk değerlendirmesinin sınırlı bilgiye dayandığını fark etmiş; eski notunu yeni bakış açısıyla birlikte görünür bırakmıştır.",
+          "Yeni bilgiyi öğrenince kahramanın bütün kararlarını doğru bulmuş; eski notunu yalnızca ilk izlenimini hatırlamak için korumuştur.",
+          "İlk değerlendirmesinden vazgeçmemiş; yeni ayrıntının kahramanın davranışını anlamaya katkısı olmadığını belirtmiştir.",
+          "İlk notunun yanlış anlaşılacağını düşünmüş; kahramanın gecikmesini değil, öykünün sonunu eleştirdiğini açıklamıştır."
+        ],
+        "correct": 0,
+        "explanation": "“O an bildiklerimle yazmışım.” notu, ilk yargının bilgiyle sınırlı olduğunun fark edildiğini gösterir. İlk notu silmeyip yanına yeni not eklemesi iki bakışın da görünmesini sağlar. A iki ayrıntıyı birlikte yorumlar. B bütün kararları onaylama sonucunu ekler; C yeni bilginin etkisini reddeder; D eleştirinin hedefini değiştirir."
+      },
+      {
+        "id": "t6-1-t13-08",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "I. Bu ortak noktayı belirledikten sonra, yazarların onu farklı örneklerle nasıl anlattığını not ettim.\nII. İki metinde de aynı sözcüklerin sık geçtiğini görünce önce konularının aynı olduğunu düşündüm.\nIII. Böylece yalnızca sözcük benzerliğine bakmanın yetmediğini, sözcüklerin hangi düşünceye hizmet ettiğini de incelemek gerektiğini anladım.\nIV. Oysa cümleleri bütünüyle okuyunca birinin yardımlaşmayı, diğerinin öğrenmeyi ele aldığını gördüm.\nV. Konuları farklı olsa da ikisinin de insanın başkalarıyla ilişki kurarak gelişmesini vurguladığını fark ettim.\nBu cümlelerle anlamlı bir paragraf oluşturmak için doğru sıralama hangisidir?",
+        "options": [
+          "II - V - I - IV - III",
+          "II - IV - I - V - III",
+          "II - IV - V - I - III",
+          "IV - II - III - V - I"
+        ],
+        "correct": 2,
+        "explanation": "II ilk izlenimi verir; IV’teki “oysa” bu izlenimi düzeltir. V farklı konuların ortak düşüncesini belirler; I’deki “bu ortak nokta” V’ye bağlanır. III bütün incelemenin sonucudur. A karşıtlığı geciktirir; B ortak nokta açıklanmadan ona gönderme yapar; D karşıtlıkla başlar ve sonucu erken getirir."
+      },
+      {
+        "id": "t6-1-t13-09",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“Sergi hafta içi yalnızca salı günü, hafta sonunda ise her iki gün açıktır. Bu hafta sergiyi açık olduğu bir günde gezdim.”\nBu sözlerden kesin çıkarılabilecek bilgi ile kesin çıkarılamayacak bilgiyi doğru ayıran seçenek hangisidir?",
+        "options": [
+          "Serginin pazartesi kapalı olduğu kesindir; konuşanın salı mı yoksa hafta sonu mu gittiği kesin değildir.",
+          "Konuşanın salı günü gittiği kesindir; serginin cumartesi açık olup olmadığı kesin değildir.",
+          "Serginin hafta içinde tek gün açık olduğu kesindir; pazar günü açık olup olmadığı kesin değildir.",
+          "Konuşanın hafta sonu gittiği kesindir; hafta içinde hangi gün açık olduğu kesin değildir."
+        ],
+        "correct": 0,
+        "explanation": "“Hafta içi yalnızca salı” pazartesi gününü dışlar; “hafta sonunda her iki gün” cumartesi ve pazarı içerir. Ziyaret günü salı, cumartesi veya pazar olabilir. A bir kesin bilgiyi, kesinleşmeyen ziyaret zamanından ayırır. B ve D olası bir zamanı kesin sayar; C ise açıkça verilen pazar bilgisini belirsiz sayar."
+      },
+      {
+        "id": "t6-1-t13-10",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Bir öğrenci taslağına “Kulübümüzde farklı görüşler vardı, bu yüzden birlikte çalışamadık.” yazmıştır. Olayı yeniden düşününce “Asıl sorun farklı düşünmemiz değildi; birbirimizin gerekçelerini dinlemememizdi.” diye not almıştır.\nTaslak cümlesi, bu nota uygun olarak ve olayın sonucu değiştirilmeden nasıl düzenlenmelidir?",
+        "options": [
+          "Kulübümüzde farklı görüşler vardı; birbirimizin gerekçelerini dinlemememiz görüş ayrılıklarını ortaya çıkardığı için birlikte çalışamadık.",
+          "Kulübümüzde farklı görüşler vardı; hem bu farklılıklar hem birbirimizin gerekçelerini dinlemememiz yüzünden birlikte çalışamadık.",
+          "Kulübümüzde farklı görüşler vardı; birbirimizin gerekçelerini dinleseydik bütün görüş ayrılıkları ortadan kalkar ve birlikte çalışabilirdik.",
+          "Kulübümüzde farklı görüşler vardı; birbirimizin gerekçelerini dinlemediğimiz için birlikte çalışamadık."
+        ],
+        "correct": 3,
+        "explanation": "Not, görüş farklılığını değil, gerekçelerin dinlenmemesini çalışamamanın nedeni olarak gösterir. D olayı ve sonucu koruyarak yalnız neden ilişkisini düzeltir. A dinlememeyi görüş ayrılıklarının da nedeni sayar. B farklılığı neden olmaktan çıkarmaz. C dinlemenin bütün görüş ayrılıklarını gidereceğini varsayar."
+      }
     ]
   },
   "term2": {}
