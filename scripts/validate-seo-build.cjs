@@ -268,7 +268,11 @@ async function validateBuild(root = ROOT) {
         const location = response.headers.get('location');
         assert(location, `${from}: redirect must provide a Location header`);
         // Do not split or repair malformed/duplicated Location values in the test.
-        assert.equal(new URL(location, origin).href, new URL(to, origin).href, `${from}: redirect destination`);
+        const target = new URL(location, origin);
+        // Next's middleware normalizes loopback request URLs to localhost.
+        // Keep protocol, port, path, query and fragment comparisons exact.
+        if (target.hostname === 'localhost') target.hostname = '127.0.0.1';
+        assert.equal(target.href, new URL(to, origin).href, `${from}: redirect destination`);
         checked.push({ path: from, status, location: to });
       } catch (error) {
         pageFailures.push(`${from}: ${error.message}`);
