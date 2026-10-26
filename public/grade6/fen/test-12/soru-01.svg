@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="550" viewBox="0 0 360 550" role="img">
+<title>Fen Test 12 · Soru 1</title>
+<desc>Yukarıdan aşağıya zaman sıralı kayıt: önce uzayda küçük bir kayaç; ardından atmosfer bölgesinde K ile işaretli, kayaç çevresinde oluşan parlak iz; en altta yeryüzüne ulaşmış L katı parçası. İnce yön okları kayacın izlediği yolu gösterir. Uzay, Atmosfer ve Yeryüzü bölgeleri yazıyla etiketlenmiştir. K'deki kayaç ile L'deki parça aynı kayaca aittir; çizim ölçekli değildir.</desc>
+<rect width="360" height="550" fill="white"/>
+<text x="180" y="28" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Zaman sırası</text>
+<rect x="18" y="58" width="324" height="115" rx="10" fill="#F7FAFC" stroke="#CDDBE5" stroke-width="2"/>
+<text x="268" y="105" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Uzay</text>
+<polygon points="112,89 128,87 141,98 137,114 121,123 106,110 105,98" fill="#92989F" stroke="#36586D" stroke-width="2"/>
+<path d="M 115 98 L 123 104 L 134 100 M 123 104 L 119 115" fill="none" stroke="#6B7683" stroke-width="1.5"/>
+<rect x="18" y="181" width="324" height="178" rx="10" fill="#E8F3FA" stroke="#B7D3E4" stroke-width="2"/>
+<text x="252" y="210" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Atmosfer</text>
+<path d="M 107 213 L 134 234 L 126 218 L 153 261 L 168 298 L 151 315 L 135 292 L 122 258 Z" fill="#F4C76D"/>
+<path d="M 122 242 L 144 268 L 154 260 L 165 298 L 150 311 L 139 286 Z" fill="#FFE9A5"/>
+<polygon points="141,285 154,282 165,294 163,307 149,313 137,302" fill="#8D8A84" stroke="#36586D" stroke-width="2"/>
+<path d="M 143 295 L 153 298 L 157 290 M 153 298 L 150 306" fill="none" stroke="#666E75" stroke-width="1.5"/>
+<text x="208" y="296" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">K</text>
+<line x1="147" y1="258" x2="188" y2="286" stroke="#36586D" stroke-width="1.5"/>
+<rect x="18" y="392" width="324" height="113" rx="10" fill="#F8F7F2" stroke="#D4D6CF" stroke-width="2"/>
+<text x="256" y="423" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Yeryüzü</text>
+<rect x="28" y="476" width="304" height="17" fill="#D8C4A7"/>
+<line x1="28" y1="476" x2="332" y2="476" stroke="#36586D" stroke-width="2.5"/>
+<polygon points="134,456 147,449 161,456 166,469 156,476 135,476 127,467" fill="#8D8A84" stroke="#36586D" stroke-width="2"/>
+<path d="M 136 460 L 145 465 L 155 460 M 145 465 L 142 474" fill="none" stroke="#666E75" stroke-width="1.5"/>
+<text x="201" y="463" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">L</text>
+<line x1="170" y1="464" x2="184" y2="464" stroke="#36586D" stroke-width="1.5"/>
+<text x="180" y="526" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">Ölçekli değildir.</text>
+<line x1="122" y1="137" x2="133" y2="196" stroke="#36586D" stroke-width="3"/>
+<polygon points="133.00,196.00 136.08,185.25 126.25,187.09" fill="#36586D"/>
+<line x1="152" y1="329" x2="152" y2="397" stroke="#36586D" stroke-width="3"/>
+<polygon points="152.00,397.00 157.00,387.00 147.00,387.00" fill="#36586D"/>
+</svg>

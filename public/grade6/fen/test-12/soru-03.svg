@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="580" viewBox="0 0 360 580" role="img">
+<title>Fen Test 12 · Soru 3</title>
+<desc>Üst üste iki gözlem paneli vardır. K panelinde polen noktaları taşıyan bir fırçanın çiçeğin tepeciğine dokunduğu gösterilir; Polenli fırça etiketi ve daha sonraki gözlem için Tohum var kaydı bulunur. L panelinde polen bulunmayan temiz bir fırça tepeciğe dokunur; Temiz fırça etiketi ve daha sonraki gözlem için Tohum yok kaydı vardır. Her iki panelde de zaman oku işlemden gözlem sonucuna doğrudur. Başka polen girişi yok notu iki grup için ortaktır.</desc>
+<rect width="360" height="580" fill="white"/>
+<text x="180" y="27" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Fırçayla uygulama</text>
+<rect x="15" y="58" width="330" height="226" rx="12" fill="#F6FAFC" stroke="#36586D" stroke-width="2"/>
+<text x="39" y="87" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">K</text>
+<text x="208" y="87" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Polenli fırça</text>
+<line x1="96" y1="184" x2="96" y2="247" stroke="#538568" stroke-width="4"/>
+<ellipse cx="83" cy="225" rx="17" ry="6" fill="#91B69C" stroke="#538568" stroke-width="1.5" transform="rotate(28 83 225)"/>
+<ellipse cx="109" cy="235" rx="17" ry="6" fill="#91B69C" stroke="#538568" stroke-width="1.5" transform="rotate(-28 109 235)"/>
+<ellipse cx="66" cy="163" rx="15" ry="22" fill="#EAC7D2" stroke="#9A7D8C" stroke-width="1.5" transform="rotate(-24 66 163)"/>
+<ellipse cx="74" cy="185" rx="16" ry="20" fill="#EAC7D2" stroke="#9A7D8C" stroke-width="1.5" transform="rotate(-42 74 185)"/>
+<ellipse cx="96" cy="191" rx="17" ry="21" fill="#EAC7D2" stroke="#9A7D8C" stroke-width="1.5" transform="rotate(0 96 191)"/>
+<ellipse cx="119" cy="184" rx="16" ry="20" fill="#EAC7D2" stroke="#9A7D8C" stroke-width="1.5" transform="rotate(42 119 184)"/>
+<ellipse cx="127" cy="161" rx="15" ry="22" fill="#EAC7D2" stroke="#9A7D8C" stroke-width="1.5" transform="rotate(24 127 161)"/>
+<ellipse cx="96" cy="183" rx="11" ry="14" fill="#B7CAA1" stroke="#538568" stroke-width="1.5"/>
+<line x1="96" y1="181" x2="96" y2="140" stroke="#538568" stroke-width="4"/>
+<ellipse cx="96" cy="139" rx="8" ry="4" fill="#82A67C" stroke="#426E51" stroke-width="1.5"/>
+<line x1="180" y1="114" x2="120" y2="137" stroke="#B48953" stroke-width="10" stroke-linecap="round"/>
+<polygon points="118,128 128,132 121,144 110,140" fill="#BBCAD3" stroke="#36586D" stroke-width="1.5"/>
+<polygon points="110,132 120,140 103,146 96,139" fill="#DCCBAE" stroke="#36586D" stroke-width="1.5"/>
+<line x1="100" y1="138" x2="111" y2="137" stroke="#9B8569" stroke-width="1"/>
+<line x1="102" y1="141" x2="113" y2="139" stroke="#9B8569" stroke-width="1"/>
+<line x1="105" y1="143" x2="115" y2="141" stroke="#9B8569" stroke-width="1"/>
+<circle cx="98" cy="138" r="2.6" fill="#D7A942" stroke="#886719" stroke-width="0.8"/>
+<circle cx="102" cy="141" r="2.6" fill="#D7A942" stroke="#886719" stroke-width="0.8"/>
+<circle cx="106" cy="143" r="2.6" fill="#D7A942" stroke="#886719" stroke-width="0.8"/>
+<text x="185" y="180" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">Sonra</text>
+<line x1="155" y1="207" x2="212" y2="207" stroke="#36586D" stroke-width="3"/>
+<polygon points="212.00,207.00 202.00,202.00 202.00,212.00" fill="#36586D"/>
+<ellipse cx="272" cy="205" rx="30" ry="27" fill="#D6DEC2" stroke="#71856D" stroke-width="2"/>
+<ellipse cx="272" cy="205" rx="24" ry="21" fill="#F2E7BE" stroke="#C3B587" stroke-width="1"/>
+<ellipse cx="262" cy="197" rx="3.5" ry="6" fill="#9B6D40" stroke="#775331" stroke-width="1" transform="rotate(-30 262 197)"/>
+<ellipse cx="282" cy="197" rx="3.5" ry="6" fill="#9B6D40" stroke="#775331" stroke-width="1" transform="rotate(30 282 197)"/>
+<ellipse cx="262" cy="213" rx="3.5" ry="6" fill="#9B6D40" stroke="#775331" stroke-width="1" transform="rotate(30 262 213)"/>
+<ellipse cx="282" cy="213" rx="3.5" ry="6" fill="#9B6D40" stroke="#775331" stroke-width="1" transform="rotate(-30 282 213)"/>
+<text x="261" y="258" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">Tohum var</text>
+<rect x="15" y="304" width="330" height="226" rx="12" fill="#F6FAFC" stroke="#36586D" stroke-width="2"/>
+<text x="39" y="333" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">L</text>
+<text x="208" y="333" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Temiz fırça</text>
+<line x1="96" y1="430" x2="96" y2="493" stroke="#538568" stroke-width="4"/>
+<ellipse cx="83" cy="471" rx="17" ry="6" fill="#91B69C" stroke="#538568" stroke-width="1.5" transform="rotate(28 83 471)"/>
+<ellipse cx="109" cy="481" rx="17" ry="6" fill="#91B69C" stroke="#538568" stroke-width="1.5" transform="rotate(-28 109 481)"/>
+<ellipse cx="66" cy="409" rx="15" ry="22" fill="#EAC7D2" stroke="#9A7D8C" stroke-width="1.5" transform="rotate(-24 66 409)"/>
+<ellipse cx="74" cy="431" rx="16" ry="20" fill="#EAC7D2" stroke="#9A7D8C" stroke-width="1.5" transform="rotate(-42 74 431)"/>
+<ellipse cx="96" cy="437" rx="17" ry="21" fill="#EAC7D2" stroke="#9A7D8C" stroke-width="1.5" transform="rotate(0 96 437)"/>
+<ellipse cx="119" cy="430" rx="16" ry="20" fill="#EAC7D2" stroke="#9A7D8C" stroke-width="1.5" transform="rotate(42 119 430)"/>
+<ellipse cx="127" cy="407" rx="15" ry="22" fill="#EAC7D2" stroke="#9A7D8C" stroke-width="1.5" transform="rotate(24 127 407)"/>
+<ellipse cx="96" cy="429" rx="11" ry="14" fill="#B7CAA1" stroke="#538568" stroke-width="1.5"/>
+<line x1="96" y1="427" x2="96" y2="386" stroke="#538568" stroke-width="4"/>
+<ellipse cx="96" cy="385" rx="8" ry="4" fill="#82A67C" stroke="#426E51" stroke-width="1.5"/>
+<line x1="180" y1="360" x2="120" y2="383" stroke="#B48953" stroke-width="10" stroke-linecap="round"/>
+<polygon points="118,374 128,378 121,390 110,386" fill="#BBCAD3" stroke="#36586D" stroke-width="1.5"/>
+<polygon points="110,378 120,386 103,392 96,385" fill="#DCCBAE" stroke="#36586D" stroke-width="1.5"/>
+<line x1="100" y1="384" x2="111" y2="383" stroke="#9B8569" stroke-width="1"/>
+<line x1="102" y1="387" x2="113" y2="385" stroke="#9B8569" stroke-width="1"/>
+<line x1="105" y1="389" x2="115" y2="387" stroke="#9B8569" stroke-width="1"/>
+<text x="185" y="426" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">Sonra</text>
+<line x1="155" y1="453" x2="212" y2="453" stroke="#36586D" stroke-width="3"/>
+<polygon points="212.00,453.00 202.00,448.00 202.00,458.00" fill="#36586D"/>
+<rect x="233" y="428" width="99" height="84" rx="8" fill="white" stroke="#A5BAC8" stroke-width="2"/>
+<text x="282.5" y="456" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">Tohum</text>
+<text x="282.5" y="488" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">yok</text>
+<text x="180" y="557" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">Başka polen girişi yok</text>
+</svg>

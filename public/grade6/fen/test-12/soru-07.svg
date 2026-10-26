@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="540" viewBox="0 0 360 540" role="img">
+<title>Fen Test 12 · Başlangıçtaki reosta bağlantısı</title>
+<desc>Bir pil, bir ampul ve bir reostadan oluşan kapalı devre gösteriliyor. Reosta telinin sol sabit ucu A, sağ sabit ucu B olarak etiketli. A ve B&#x27;nin her biri devrenin bağlantı kablolarından birine bağlı. Telin orta bölümüne temas eden S sürgüsü üstte gösterilmiş; S&#x27;den dış devreye uzanan bir bağlantı kablosu yok. S&#x27;nin A ile B arasında hareket edebileceği çift yönlü okla belirtilmiş. Ampulün parlaklığını gösteren bir karşılaştırma bulunmuyor.</desc>
+<rect width="360" height="540" fill="white"/>
+<text x="180" y="29" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Başlangıç devresi</text>
+<rect x="16" y="56" width="328" height="469" rx="12" fill="#F5FAFD" stroke="#C7DDE9" stroke-width="2"/>
+<text x="180" y="81" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">A ve B bağlı</text>
+<line x1="130" y1="121" x2="230" y2="121" stroke="#647D8D" stroke-width="3" stroke-linecap="round"/>
+<polygon points="126,121 137,115 137,127" fill="#647D8D"/>
+<polygon points="234,121 223,115 223,127" fill="#647D8D"/>
+<circle cx="180" cy="168" r="8" fill="white" stroke="#36586D" stroke-width="3"/>
+<line x1="180" y1="176" x2="180" y2="237" stroke="#647D8D" stroke-width="4" stroke-linecap="round"/>
+<polygon points="180,254 172,236 188,236" fill="#647D8D"/>
+<text x="213" y="169" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">S</text>
+<path d="M 70 254 H 80 L 90 241 L 110 267 L 130 241 L 150 267 L 170 241 L 190 267 L 210 241 L 230 267 L 250 241 L 270 267 L 280 254 H 290" fill="none" stroke="#A66A16" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 70 254 H 40 V 427 H 112 M 128 427 H 214 M 262 427 H 320 V 254 H 290" fill="none" stroke="#36586D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="70" cy="254" r="6" fill="#36586D"/>
+<circle cx="290" cy="254" r="6" fill="#36586D"/>
+<text x="70" y="299" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">A</text>
+<text x="290" y="299" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">B</text>
+<text x="180" y="351" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Reosta</text>
+<line x1="112" y1="407" x2="112" y2="447" stroke="#36586D" stroke-width="4" stroke-linecap="round"/>
+<line x1="128" y1="415" x2="128" y2="439" stroke="#36586D" stroke-width="4" stroke-linecap="round"/>
+<circle cx="238" cy="427" r="24" fill="white" stroke="#36586D" stroke-width="3"/>
+<line x1="226" y1="415" x2="250" y2="439" stroke="#36586D" stroke-width="3" stroke-linecap="round"/>
+<line x1="226" y1="439" x2="250" y2="415" stroke="#36586D" stroke-width="3" stroke-linecap="round"/>
+<text x="119" y="470" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Pil</text>
+<text x="250" y="470" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Ampul</text>
+<text x="180" y="502" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">S: dış bağlantı yok</text>
+</svg>

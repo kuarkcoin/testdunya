@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="560" viewBox="0 0 360 560" role="img">
+<title>Fen Test 12 · X sıvısında K ve L cisimleri</title>
+<desc>K ve L cisimlerinin ölçümleri üstte iki kartta verilmiş: K&#x27;nin kütlesi 24 g, hacmi 30 cm³; L&#x27;nin kütlesi 36 g, hacmi 30 cm³. Alttaki tek kapta X sıvısı bulunuyor. K cismi sıvı yüzeyinin üstüne küçük bir bölümü çıkacak biçimde kısmen batmış olarak yüzüyor; L cismi kabın dibinde. Cisimler aynı büyüklükte küplerle gösterilmiş.</desc>
+<rect width="360" height="560" fill="white"/>
+<rect x="16" y="16" width="154" height="163" rx="12" fill="#EEF7FC" stroke="#C7DDE9" stroke-width="2"/>
+<text x="93" y="47" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">K</text>
+<text x="93" y="95" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">24 g</text>
+<text x="93" y="142" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">30 cm³</text>
+<rect x="190" y="16" width="154" height="163" rx="12" fill="#EEF7FC" stroke="#C7DDE9" stroke-width="2"/>
+<text x="267" y="47" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">L</text>
+<text x="267" y="95" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">36 g</text>
+<text x="267" y="142" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">30 cm³</text>
+<text x="180" y="218" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Aynı X sıvısı</text>
+<rect x="36" y="252" width="288" height="264" fill="white"/>
+<rect x="38" y="326" width="284" height="188" fill="#B8DEEB"/>
+<path d="M 36 252 V 516 H 324 V 252" fill="none" stroke="#36586D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="38" y1="326" x2="322" y2="326" stroke="#468BA8" stroke-width="3"/>
+<rect x="75" y="314" width="60" height="60" fill="#F2CD7F" stroke="#86652D" stroke-width="2"/>
+<line x1="76" y1="326" x2="134" y2="326" stroke="#468BA8" stroke-width="2"/>
+<text x="105" y="346" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">K</text>
+<rect x="243" y="455" width="60" height="60" fill="#A2BACB" stroke="#36586D" stroke-width="2"/>
+<text x="273" y="486" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">L</text>
+<text x="180" y="426" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="600" fill="#15354B">X</text>
+</svg>

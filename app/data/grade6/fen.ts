@@ -1888,6 +1888,176 @@ export const fenData: SubjectData = {
         "explanation": "Üçüncü güne kadar 25°C'de çimlenmiş tohum sayısı 14, 20°C'de 5'tir. Ancak onuncu gün her iki gruptaki toplam 18'e ulaşmıştır. Bu deneyde erken kayıttaki fark, son kayıtta daha fazla tohumun çimlenmiş olduğu anlamına gelmez. İki kayıt her bir tohumun hangi gün çimlendiğini göstermez; tek bir türle ve iki sıcaklıkla elde edilen sonuçlar bütün türlere ve tüm sıcaklıklara genellenemez."
       }
     ],
+    test12: [
+      {
+        "id": "f6-1-t12-01",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Görsel, uzaydan gelen bir kayaç parçasının zaman sıralı kaydını gösteriyor. K'de kayaç atmosferden geçerken parlak bir iz oluşuyor. L, aynı kayaçtan yeryüzüne ulaşan katı parçadır. Bir öğrenci bu kaydı 'Bir yıldız Dünya'ya düştü.' diye yorumluyor.\n\nÖğrencinin yorumunu düzelten doğru açıklama hangisidir?",
+        "options": [
+          "K'deki parlaklık gerçek bir yıldızın atmosfere girdiğini, L ise yıldızdan kalan parçayı gösterir.",
+          "K'deki ışık olayına meteorit, L'deki katı parçaya meteor olayı denir.",
+          "K'de meteor olayı görülür; L, yere ulaşan meteorit yani gök taşıdır. Düşen bir yıldız değildir.",
+          "K'de meteor olayı görülür; bu nedenle kayaç tamamen yok olmuş ve L'ye hiçbir parçası ulaşmamıştır."
+        ],
+        "correct": 2,
+        "explanation": "Uzaydan gelen bir kayaç atmosferle etkileşirken meteor adı verilen ışık olayı görülebilir. Kayaçtan yeryüzüne ulaşan parça meteorit, yani gök taşı olarak adlandırılır. Görselde L'nin bulunması, bu kayaç parçasının tamamının atmosferde yok olmadığını gösterir. Halk arasında kullanılan 'yıldız kayması' sözü, gerçek bir yıldızın yerinden kopup Dünya'ya düşmesi anlamına gelmez.",
+        "imageUrl": "/grade6/fen/test-12/soru-01.svg",
+        "imageWidth": 360,
+        "imageHeight": 550,
+        "imageAlt": "Yukarıdan aşağıya zaman sıralı kayıt: önce uzayda küçük bir kayaç; ardından atmosfer bölgesinde K ile işaretli, kayaç çevresinde oluşan parlak iz; en altta yeryüzüne ulaşmış L katı parçası. İnce yön okları kayacın izlediği yolu gösterir. Uzay, Atmosfer ve Yeryüzü bölgeleri yazıyla etiketlenmiştir. K'deki kayaç ile L'deki parça aynı kayaca aittir; çizim ölçekli değildir."
+      },
+      {
+        "id": "f6-1-t12-02",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Bir cisme aynı yatay doğrultuda görseldeki dört kuvvet uygulanıyor. Başka yatay kuvvet yoktur. Yalnız bir kuvvetin yönü ters çevrilecek; kuvvetlerin büyüklükleri değişmeyecektir.\n\nBileşkenin batıya 7 N olması için hangi kuvvetin yönü ters çevrilmelidir?",
+        "options": [
+          "Doğuya uygulanan 5 N'luk kuvvetin.",
+          "Doğuya uygulanan 4 N'luk kuvvetin.",
+          "Doğuya uygulanan 3 N'luk kuvvetin.",
+          "Batıya uygulanan 9 N'luk kuvvetin."
+        ],
+        "correct": 0,
+        "explanation": "5 N'luk kuvvet batıya çevrilirse doğuya uygulanan toplam kuvvet 4 + 3 = 7 N, batıya uygulanan toplam kuvvet 9 + 5 = 14 N olur. Bileşke 14 − 7 = 7 N batıyadır. Yalnız 4 N ters çevrilirse bileşke batıya 5 N, yalnız 3 N ters çevrilirse batıya 3 N, yalnız 9 N ters çevrilirse doğuya 21 N olur. İstenen sonucu yalnız 5 N'luk kuvvetin yönünü değiştirmek sağlar.",
+        "imageUrl": "/grade6/fen/test-12/soru-02.svg",
+        "imageWidth": 360,
+        "imageHeight": 500,
+        "imageAlt": "Bir cisme etki eden dört yatay kuvvet gösterilmiştir. Doğuya, yani sağa doğru üç ayrı ok 4 N, 5 N ve 3 N olarak etiketlidir. Batıya, yani sola doğru bir ok 9 N olarak etiketlidir. Batı solda, Doğu sağda yazılıdır. Oklar aynı yatay doğrultuyu farklı yüksekliklerde temsil eder ve uzunlukları ölçekli değildir."
+      },
+      {
+        "id": "f6-1-t12-03",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Aynı türden benzer çiçekler K ve L gruplarına ayrılıyor. İki gruba da böceklerin ulaşması engelleniyor. Her iki grupta da tepeciğe başka yollardan polen ulaşması önleniyor; su, ışık, sıcaklık ve gözlem süresi aynı tutuluyor. K'nin tepeciğine aynı tür başka bir çiçekten polen taşıyan fırça, L'nin tepeciğine ise temiz bir fırça dokunduruluyor. Daha sonra K'de tohum oluşumu gözlenirken L'de gözlenmiyor.\n\nBu deneyin desteklediği sonuç hangisidir?",
+        "options": [
+          "Fırçanın çiçeğe dokunması, polen taşımasa da tohum oluşması için tek başına yeterlidir.",
+          "K'deki tohumlar, fırçadaki polenlerin doğrudan büyüyerek birer tohuma dönüşmesiyle oluşmuştur.",
+          "Tohum oluşabilmesi için çiçeğe mutlaka bir böceğin dokunması gerekir.",
+          "Tozlaşma fırçayla sağlanabilir; böcek olmadan da tohum oluşumu görülebilir."
+        ],
+        "correct": 3,
+        "explanation": "Polenlerin tepeciğe taşınması tozlaşmadır; K'de bu taşıma fırçayla yapılmıştır. Ardından tohum oluşmasının gözlenmesi, bu örnekte böcek teması olmadan da tozlaşmanın ve tohum oluşumuna giden süreçlerin gerçekleşebildiğini gösterir. L'ye de fırça dokundurulduğu hâlde tohum oluşmaması, yalnız mekanik temasın yeterli olmadığını destekler. Polen doğrudan büyüyüp tohuma dönüşmez; tozlaşma ile döllenme aynı olay değildir.",
+        "imageUrl": "/grade6/fen/test-12/soru-03.svg",
+        "imageWidth": 360,
+        "imageHeight": 580,
+        "imageAlt": "Üst üste iki gözlem paneli vardır. K panelinde polen noktaları taşıyan bir fırçanın çiçeğin tepeciğine dokunduğu gösterilir; Polenli fırça etiketi ve daha sonraki gözlem için Tohum var kaydı bulunur. L panelinde polen bulunmayan temiz bir fırça tepeciğe dokunur; Temiz fırça etiketi ve daha sonraki gözlem için Tohum yok kaydı vardır. Her iki panelde de zaman oku işlemden gözlem sonucuna doğrudur. Başka polen girişi yok notu iki grup için ortaktır."
+      },
+      {
+        "id": "f6-1-t12-04",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Bir ışık kaynağının yeri değiştirilerek aynı düz aynanın aynı noktasına iki farklı yönden ışık gönderiliyor. Ayna ve normalin konumu değişmiyor. Gelme açısı birinci durumda 20°, ikinci durumda 50° oluyor. Yansıyan ışınlar görselde çizilmemiştir.\n\nBirinci durumdan ikinci duruma geçildiğinde yansıyan ışının yönü normale göre nasıl değişir?",
+        "options": [
+          "Normale 30° yaklaşır.",
+          "Normalden 30° uzaklaşır.",
+          "Normalden 70° uzaklaşır.",
+          "Yönü değişmez."
+        ],
+        "correct": 1,
+        "explanation": "Yansıma açısı her durumda gelme açısına eşittir ve normalden ölçülür. Bu nedenle yansıma açısı birinci durumda 20°, ikinci durumda 50° olur. Açı 50 − 20 = 30° arttığından yansıyan ışın normalden 30° uzaklaşır. İki açıyı toplamak değişimi vermez; aynanın yerinde kalması, gelen ışığın yönü değiştiğinde yansıyan ışığın yönünün de sabit kalacağı anlamına gelmez.",
+        "imageUrl": "/grade6/fen/test-12/soru-04.svg",
+        "imageWidth": 360,
+        "imageHeight": 560,
+        "imageAlt": "Aynı düz aynanın iki ayrı durumunu gösteren üst üste iki şema vardır. Her şemada yatay ayna, çarpma noktasından yukarı uzanan dik kesik normal ve sol üstten çarpma noktasına gelen bir ışık oku bulunur. Birinci durumda gelen ışın normalle 20°, ikinci durumda normalle 50° yapar. İkinci gelen ışın normale daha uzaktır. Aynalar ve normaller aynı yönlüdür; hiçbir yansıyan ışın çizilmemiştir."
+      },
+      {
+        "id": "f6-1-t12-05",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "K'de açık kap ve içindekiler, L'de ise hava geçirmeyen kap, kapak ve içindekilerin tamamı başlangıçta ve bir süre sonra tartılıyor. İki kapta da su vardır; kaynama, sıçrama veya sızıntı olmuyor. L'nin başlangıçta kuru olan kapağının iç yüzünde sonradan su damlaları görülüyor; kapak, içindeki sudan daha serindir. L, iki ölçüm arasında açılmıyor.\n\nÖlçümler ve damlalar birlikte değerlendirildiğinde hangi açıklama doğrudur?",
+        "options": [
+          "K'de su buharlaşmıştır; L'nin toplam kütlesi değişmediği için L'de hâl değişimi gerçekleşemez.",
+          "K'de su maddesi yok olmuştur; L'deki damlalar ise kapalı kapta yeni su üretildiğini gösterir.",
+          "K'den su buharı çevreye geçmiştir; L'de buhar yoğuşarak damla oluştururken toplam kütle korunmuştur.",
+          "K'nin kütlesi azalmaz, ölçüm yanlıştır; L'de damla oluştukça toplam kütle artmalıdır."
+        ],
+        "correct": 2,
+        "explanation": "K'nin toplam kütlesi 100 g'dan 96 g'a düşmüştür. Kaynama olmasa da su buharlaşabilir; açık kaptan çevreye geçen su buharı artık terazideki sistemin içinde değildir. L'de ise su buharı daha serin kapağın iç yüzünde yoğuşup sıvı damlalar oluşturur. Kap, kapak ve içindekilerin tamamı birlikte tartıldığı ve dışarı madde çıkmadığı için toplam kütle 120 g olarak kalır. Toplam kütlenin değişmemesi, hâl değişiminin gerçekleşmediği anlamına gelmez.",
+        "imageUrl": "/grade6/fen/test-12/soru-05.svg",
+        "imageWidth": 360,
+        "imageHeight": 590,
+        "imageAlt": "Başlangıç ve sonra sütunlarından oluşan iki satırlı tartım kaydı. K satırında her iki anda açık su kabı vardır; kap ve içindekilerin toplam kütlesi başlangıçta 100 g, sonra 96 g'dır. L satırında her iki anda kapaklı su kabı vardır; kap, kapak ve tüm içindekilerin toplam kütlesi başlangıçta 120 g, sonra yine 120 g'dır. L'nin başlangıç kapağı kuru, sonraki kapağının iç yüzü damlalıdır. Kapağın daha serin olduğu kısa bir etiketle belirtilmiştir. Tüm okumalar g birimindedir."
+      },
+      {
+        "id": "f6-1-t12-06",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "İçi dolu ve homojen K ile L cisimleri aynı X sıvısına bırakılıyor. K, yüzeyde kısmen batmış olarak yüzerken L dibe batıyor. Cisimler sıvıda çözünmüyor, tepkimeye girmiyor ve üzerlerinde hava kabarcığı bulunmuyor. Bütün ölçümler aynı sıcaklıkta yapılıyor.\n\nBu X sıvısından alınan 40 cm³'lük bir örneğin kütlesi aşağıdakilerden hangisi olabilir?",
+        "options": [
+          "40 g",
+          "28 g",
+          "52 g",
+          "64 g"
+        ],
+        "correct": 0,
+        "explanation": "K'nin yoğunluğu 24 ÷ 30 = 0,8 g/cm³, L'nin yoğunluğu 36 ÷ 30 = 1,2 g/cm³'tür. K kısmen batmış olarak yüzdüğünden X'in yoğunluğu 0,8'den büyük; L dibe battığından 1,2'den küçük olmalıdır. 40 cm³ sıvının kütlesi bu nedenle 32 g'dan büyük, 48 g'dan küçük olmalıdır. Seçeneklerden yalnız 40 g bu aralıktadır. Bu örnekte 40 ÷ 40 = 1 g/cm³ değeri her iki gözlemle de uyumludur.",
+        "imageUrl": "/grade6/fen/test-12/soru-06.svg",
+        "imageAlt": "K ve L cisimlerinin ölçümleri üstte iki kartta verilmiş: K'nin kütlesi 24 g, hacmi 30 cm³; L'nin kütlesi 36 g, hacmi 30 cm³. Alttaki tek kapta X sıvısı bulunuyor. K cismi sıvı yüzeyinin üstüne küçük bir bölümü çıkacak biçimde kısmen batmış olarak yüzüyor; L cismi kabın dibinde. Cisimler aynı büyüklükte küplerle gösterilmiş.",
+        "imageWidth": 360,
+        "imageHeight": 560
+      },
+      {
+        "id": "f6-1-t12-07",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Pille çalışan devrede reostanın A ve B sabit uçları bağlı, S sürgüsünün ise dış devreye bağlantısı yoktur. S hareket ettirilince ampulün parlaklığı değişmiyor. Pil ve ampul sağlam; bağlantı temasları uygundur.\n\nA ucunun bağlantısı korunarak parlaklığın sürgüyle ayarlanması isteniyor. Hangi değişiklik yapılmalı ve bu değişiklikten SONRA S, A'dan uzaklaştırılırken parlaklık nasıl değişmelidir? Diğer koşullar ve sıcaklık sabittir.",
+        "options": [
+          "A ve B bağlantıları korunmalı; sürgü A'dan uzaklaştırılırken parlaklık artar.",
+          "A ve B bağlantıları korunmalı; sürgü A'dan uzaklaştırılırken parlaklık azalır.",
+          "B'deki kablo B'den çıkarılıp S'ye bağlanmalı; sürgü A'dan uzaklaştırılırken parlaklık artar.",
+          "B'deki kablo B'den çıkarılıp S'ye bağlanmalı; sürgü A'dan uzaklaştırılırken parlaklık azalır."
+        ],
+        "correct": 3,
+        "explanation": "Başlangıçta devreye A ile B arasındaki telin tamamı katılır. Dış devreye bağlı olmayan S'nin yerini değiştirmek bu uzunluğu değiştirmez. B'deki kablo B'den çıkarılıp S'ye bağlanınca devreye yalnız A ile S arasındaki tel katılır. Bu yeni bağlantıda S, A'dan uzaklaştıkça devreye katılan tel uzar; direnç artar ve ampul daha sönük yanar. Parlaklıktaki bu değişim, bağlantı düzeltildikten sonraki sürgü hareketine aittir.",
+        "imageUrl": "/grade6/fen/test-12/soru-07.svg",
+        "imageAlt": "Bir pil, bir ampul ve bir reostadan oluşan kapalı devre gösteriliyor. Reosta telinin sol sabit ucu A, sağ sabit ucu B olarak etiketli. A ve B'nin her biri devrenin bağlantı kablolarından birine bağlı. Telin orta bölümüne temas eden S sürgüsü üstte gösterilmiş; S'den dış devreye uzanan bir bağlantı kablosu yok. S'nin A ile B arasında hareket edebileceği çift yönlü okla belirtilmiş. Ampulün parlaklığını gösteren bir karşılaştırma bulunmuyor.",
+        "imageWidth": 360,
+        "imageHeight": 540
+      },
+      {
+        "id": "f6-1-t12-08",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Basitleştirilmiş bir omurilik refleksi modeli iki aşamayla anlatılıyor:\n1. El, sıcak yüzeyden hızla çekiliyor.\n2. Kişi daha sonra acıyı bilinçli olarak fark ediyor.\nBir öğrenci, “İlk tepkiyi omurilik yönettiğine göre bu olayla ilgili bilgi beyne hiçbir zaman ulaşmaz.” diyor.\n\nHangi değerlendirme modeldeki iki aşamayla uyumludur?",
+        "options": [
+          "Öğrenci haklıdır; omurilikte işlenen bilgi beyne hiçbir şekilde iletilemez.",
+          "İlk tepki için bilinçli karar gerekmemesi, olayla ilgili bilginin beyne de iletilmesini engellemez.",
+          "İkinci aşama gerçekleşiyorsa ilk el çekme hareketi mutlaka önceden verilmiş bilinçli bir karardır.",
+          "İlk tepki omurilikle gerçekleştiğine göre kasların hareketine sinirlerin katkısı yoktur."
+        ],
+        "correct": 1,
+        "explanation": "Bu omurilik refleksi modelinde hızlı çekme tepkisi, önce bilinçli karar verilmesini gerektirmeden oluşur. İkinci aşamada acının bilinçli olarak fark edilmesi, olayla ilgili bilginin beyne de ulaştığını gösterir. Dolayısıyla ilk tepkinin omurilik tarafından yönetilmesi, beynin olaydan hiç haberdar olmayacağı anlamına gelmez. Bu açıklama verilen omurilik refleksine aittir; bütün reflekslerin aynı merkezde yönetildiği ileri sürülmez."
+      },
+      {
+        "id": "f6-1-t12-09",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Bir öğrenci aynı biçimdeki kırmızı, mavi ve beyaz üç etiketi, yalnız görünen renklerine bakarak birbirinden ayırmak istiyor. İdeal modelde kırmızı etiket yalnız kırmızı ışığı, mavi etiket yalnız mavi ışığı, beyaz etiket ise bütün görünür ışık renklerini yansıtıyor. Etiketler yansıtmadıkları renkleri soğuruyor; ortamda seçilen kaynak dışında ışık bulunmuyor.\n\nAşağıdaki aydınlatmalardan hangisi üç etiketin de birbirinden farklı renkte görünmesini sağlar?",
+        "options": [
+          "Yalnız kırmızı ışık",
+          "Yalnız mavi ışık",
+          "Beyaz ışık",
+          "Yalnız yeşil ışık"
+        ],
+        "correct": 2,
+        "explanation": "Beyaz ışık altında etiketler sırasıyla kırmızı, mavi ve beyaz görünür; üçü renklerine göre ayırt edilebilir. Yalnız kırmızı ışıkta kırmızı ve beyaz etiket kırmızı; yalnız mavi ışıkta mavi ve beyaz etiket mavi görünür. Yalnız yeşil ışıkta ise kırmızı ve mavi etiket, bu ışığı yansıtmadıkları için siyah görünür. Bu yüzden verilen seçenekler arasında üç etiketi de ayıran aydınlatma beyaz ışıktır."
+      },
+      {
+        "id": "f6-1-t12-10",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Aynı tür tohumlarla yapılan iki çalışmada eşit gözlem süresi sonunda şu kayıtlar alınıyor:\n• A grubunda başlangıçtaki 20 tohumun 16'sı çimlenmiş.\n• B grubunda başlangıçtaki 50 tohumun 30'u çimlenmiş.\nBir öğrenci, “B'de daha çok tohum çimlendi; öyleyse B'nin çimlenme oranı daha yüksektir.” diyor.\n\nBu yorum nasıl değerlendirilmelidir?",
+        "options": [
+          "A'nın çimlenme oranı daha yüksektir; 16/20, 30/50'den büyüktür.",
+          "B'nin çimlenme oranı daha yüksektir; 30, 16'dan büyüktür.",
+          "Başlangıçtaki tohum sayıları farklı olduğu için çimlenme oranları hesaplanamaz.",
+          "Aynı tür tohum kullanıldığı için iki grubun çimlenme oranları mutlaka eşittir."
+        ],
+        "correct": 0,
+        "explanation": "Çimlenme oranı karşılaştırılırken çimlenen sayı, başlangıçtaki toplam tohum sayısıyla birlikte değerlendirilir. A'da 16/20 = 4/5 = %80, B'de 30/50 = 3/5 = %60'tır. B'de çimlenenlerin sayısı daha çok olsa da oran A'da daha yüksektir. Bu sonuç, belirtilen gözlem süresinin sonundaki bu iki gruba aittir; tek başına farkın nedenini veya bütün türlerde gelecekte alınacak sonuçları göstermez."
+      }
+    ],
 
   },
   term2: {},

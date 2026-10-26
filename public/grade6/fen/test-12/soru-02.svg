@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="500" viewBox="0 0 360 500" role="img">
+<title>Fen Test 12 · Soru 2</title>
+<desc>Bir cisme etki eden dört yatay kuvvet gösterilmiştir. Doğuya, yani sağa doğru üç ayrı ok 4 N, 5 N ve 3 N olarak etiketlidir. Batıya, yani sola doğru bir ok 9 N olarak etiketlidir. Batı solda, Doğu sağda yazılıdır. Oklar aynı yatay doğrultuyu farklı yüksekliklerde temsil eder ve uzunlukları ölçekli değildir.</desc>
+<rect width="360" height="500" fill="white"/>
+<text x="55" y="31" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Batı</text>
+<text x="305" y="31" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Doğu</text>
+<text x="180" y="78" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Başlangıç kuvvetleri</text>
+<rect x="146" y="141" width="68" height="215" rx="4" fill="#E9D8B8" stroke="#36586D" stroke-width="2"/>
+<line x1="214" y1="184" x2="328" y2="184" stroke="#36586D" stroke-width="3"/>
+<polygon points="328.00,184.00 318.00,179.00 318.00,189.00" fill="#36586D"/>
+<text x="273" y="159" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">4 N</text>
+<line x1="214" y1="250" x2="328" y2="250" stroke="#36586D" stroke-width="3"/>
+<polygon points="328.00,250.00 318.00,245.00 318.00,255.00" fill="#36586D"/>
+<text x="273" y="225" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">5 N</text>
+<line x1="214" y1="316" x2="328" y2="316" stroke="#36586D" stroke-width="3"/>
+<polygon points="328.00,316.00 318.00,311.00 318.00,321.00" fill="#36586D"/>
+<text x="273" y="291" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">3 N</text>
+<line x1="146" y1="250" x2="32" y2="250" stroke="#36586D" stroke-width="3"/>
+<polygon points="32.00,250.00 42.00,255.00 42.00,245.00" fill="#36586D"/>
+<text x="85" y="225" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">9 N</text>
+<text x="180" y="387" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Cisim</text>
+<text x="180" y="434" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">Ok boyları</text>
+<text x="180" y="469" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">ölçekli değildir.</text>
+</svg>

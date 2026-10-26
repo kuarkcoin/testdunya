@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="560" viewBox="0 0 360 560" role="img">
+<title>Fen Test 12 · Soru 4</title>
+<desc>Aynı düz aynanın iki ayrı durumunu gösteren üst üste iki şema vardır. Her şemada yatay ayna, çarpma noktasından yukarı uzanan dik kesik normal ve sol üstten çarpma noktasına gelen bir ışık oku bulunur. Birinci durumda gelen ışın normalle 20°, ikinci durumda normalle 50° yapar. İkinci gelen ışın normale daha uzaktır. Aynalar ve normaller aynı yönlüdür; hiçbir yansıyan ışın çizilmemiştir.</desc>
+<rect width="360" height="560" fill="white"/>
+<text x="92" y="28" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">1. durum</text>
+<text x="283" y="78.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">Normal</text>
+<line x1="230" y1="108.0" x2="230" y2="255.0" stroke="#36586D" stroke-width="2.5" stroke-dasharray="8 7"/>
+<line x1="20" y1="235.0" x2="340" y2="235.0" stroke="#36586D" stroke-width="3"/>
+<line x1="33" y1="235.0" x2="41" y2="243.0" stroke="#36586D" stroke-width="2"/>
+<line x1="73" y1="235.0" x2="81" y2="243.0" stroke="#36586D" stroke-width="2"/>
+<line x1="113" y1="235.0" x2="121" y2="243.0" stroke="#36586D" stroke-width="2"/>
+<line x1="153" y1="235.0" x2="161" y2="243.0" stroke="#36586D" stroke-width="2"/>
+<line x1="193" y1="235.0" x2="201" y2="243.0" stroke="#36586D" stroke-width="2"/>
+<line x1="273" y1="235.0" x2="281" y2="243.0" stroke="#36586D" stroke-width="2"/>
+<line x1="313" y1="235.0" x2="321" y2="243.0" stroke="#36586D" stroke-width="2"/>
+<line x1="173.95" y1="81.0" x2="230" y2="235.0" stroke="#36586D" stroke-width="3"/>
+<polygon points="230.00,235.00 231.28,223.89 221.88,227.31" fill="#36586D"/>
+<circle cx="173.95" cy="81.0" r="3.5" fill="#15354B"/>
+<circle cx="230" cy="235.0" r="3.5" fill="#15354B"/>
+<path d="M 204.35 164.52 A 75 75 0 0 1 230.00 160.00" fill="none" stroke="#A87126" stroke-width="2.5"/>
+<polyline points="230,251.0 246,251.0 246,235.0" fill="none" stroke="#36586D" stroke-width="2"/>
+<text x="100" y="265.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">Düz ayna</text>
+<text x="122" y="140" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">20°</text>
+<line x1="153" y1="150" x2="204.35" y2="164.52" stroke="#A87126" stroke-width="1.5"/>
+<text x="92" y="298" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">2. durum</text>
+<text x="283" y="338.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">Normal</text>
+<line x1="230" y1="368.0" x2="230" y2="515.0" stroke="#36586D" stroke-width="2.5" stroke-dasharray="8 7"/>
+<line x1="20" y1="495.0" x2="340" y2="495.0" stroke="#36586D" stroke-width="3"/>
+<line x1="33" y1="495.0" x2="41" y2="503.0" stroke="#36586D" stroke-width="2"/>
+<line x1="73" y1="495.0" x2="81" y2="503.0" stroke="#36586D" stroke-width="2"/>
+<line x1="113" y1="495.0" x2="121" y2="503.0" stroke="#36586D" stroke-width="2"/>
+<line x1="153" y1="495.0" x2="161" y2="503.0" stroke="#36586D" stroke-width="2"/>
+<line x1="193" y1="495.0" x2="201" y2="503.0" stroke="#36586D" stroke-width="2"/>
+<line x1="273" y1="495.0" x2="281" y2="503.0" stroke="#36586D" stroke-width="2"/>
+<line x1="313" y1="495.0" x2="321" y2="503.0" stroke="#36586D" stroke-width="2"/>
+<line x1="45.28" y1="340.0" x2="230" y2="495.0" stroke="#36586D" stroke-width="3"/>
+<polygon points="230.00,495.00 225.55,484.74 219.13,492.40" fill="#36586D"/>
+<circle cx="45.28" cy="340.0" r="3.5" fill="#15354B"/>
+<circle cx="230" cy="495.0" r="3.5" fill="#15354B"/>
+<path d="M 168.72 443.58 A 80 80 0 0 1 230.00 415.00" fill="none" stroke="#A87126" stroke-width="2.5"/>
+<polyline points="230,511.0 246,511.0 246,495.0" fill="none" stroke="#36586D" stroke-width="2"/>
+<text x="100" y="525.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">Düz ayna</text>
+<text x="181" y="404" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">50°</text>
+</svg>
