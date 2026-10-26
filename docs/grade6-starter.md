@@ -488,3 +488,12 @@ Toplam: 23 test, 230 soru, 117 SVG, 28 rota. Önceki 220 soru ve 110 SVG korunur
 - 360 piksel genişliğinde, en az 26 piksel yazılı yedi bağımsız SVG; 238 piksel genişlikte görsel kontrol. Önceki soru ve görseller korunur.
 - Bu eklemeyle Fen 14 test / 140 soru; toplam 57 test / 570 soru / 317 SVG olur. Dinamik kayıt 62 adet 6. sınıf rotası üretir.
 - İçerik karma tekrardır; bütün bir yıllık programın eksiksiz kapsamı iddia edilmez.
+
+
+## Fen Bilimleri Test 15 — Zor
+
+- Test 15, 7 şekilli ve 3 metin sorusuyla eklenmiştir. Kuvvet ve hareket, yoğunluk, ışık, çimlenme, genleşme, hâl değişimi, üreme, direnç ve hormon taşınmasına ilişkin koşulları birlikte yorumlatır.
+- Sürat ve hız nitel olarak karşılaştırılır; sayısal hız formülü kullanılmaz. İç boşluk sorusunda metalin cinsi ve kapalı boşluk varsayımları açıkça verilir. Işık sorusu ideal, mat yüzey modeliyle sınırlandırılmıştır.
+- Yedi SVG 360 piksel genişlikte, en az 26 piksel yazıyla hazırlanmış ve 238 piksel mobil görünümde incelenmiştir. Önceki testler korunur.
+- Cevap anahtarı: B, D, A, C, B, D, C, A, B, A.
+- Toplam: 58 test, 580 soru, 324 SVG; 63 altıncı sınıf rotası. Fen: 15 test, 150 soru.

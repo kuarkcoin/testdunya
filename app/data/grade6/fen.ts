@@ -2401,6 +2401,177 @@ export const fenData: SubjectData = {
       }
     ],
 
+    test15: [
+      {
+        "id": "f6-1-t15-01",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "K, L ve M araçları A’dan aynı anda çıkıyor ve gösterilen yollarını aynı anda tamamlıyor. K ve L’nin aldıkları toplam yollar eşittir; M’nin A–D–B yolu daha uzundur. B ile C farklı konumlardır.\n\nYolculukların tamamında ortalama süratleri eşit olan çift ile ortalama hızları eşit olan çift sırasıyla hangisidir?",
+        "options": [
+          "K–M ve K–L",
+          "K–L ve K–M",
+          "L–M ve K–M",
+          "K–L ve L–M"
+        ],
+        "correct": 1,
+        "explanation": "K ile L eşit toplam yolu eşit sürede aldığı için ortalama süratleri eşittir. K ve M’nin başlangıcı A, bitişi B ve süreleri aynıdır; yer değiştirmeleri, dolayısıyla ortalama hızları eşittir. M’nin daha uzun yol izlemesi süratini etkiler ama aynı başlangıç ve bitiş konumları arasındaki yer değiştirmeyi değiştirmez. L ise C’de bittiğinden K ile aynı ortalama hıza sahip değildir.",
+        "imageUrl": "/grade6/fen/test-15/soru-01.svg",
+        "imageAlt": "K, A’dan B’ye düz yol; L, A’dan C’ye aynı uzunlukta düz yol; M, A’dan D’ye ve B’ye daha uzun kırık yol. K ve L toplam yolları eşit, bütün süreler eşit.",
+        "imageWidth": 360,
+        "imageHeight": 740
+      },
+      {
+        "id": "f6-1-t15-02",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Cisme aynı doğrultuda yalnız şekildeki dört kuvvet uygulanıyor. İlk bileşke doğuya 3 N’dir; F’nin büyüklüğü bilinmiyor. Kuvvetlerden tam ikisi tamamen kaldırılacak, diğer ikisinin yönü ve büyüklüğü değişmeyecektir.\n\nBileşkenin sıfır olması için hangi ikisi kaldırılmalıdır?",
+        "options": [
+          "K ve M",
+          "K ve N",
+          "L ve M",
+          "L ve N"
+        ],
+        "correct": 3,
+        "explanation": "Doğuya F + 7, batıya 12 + 4 = 16 N etki eder. Bileşke doğuya 3 N olduğundan doğu toplamı 19 N, F ise 12 N’dir. Kalan iki kuvvetin eşit büyüklükte ve zıt yönlü olması gerekir. L ve N kaldırılınca K ile M, doğuya ve batıya 12’şer N uygular ve denge sağlanır.",
+        "imageUrl": "/grade6/fen/test-15/soru-02.svg",
+        "imageAlt": "K kuvveti doğuya F, L doğuya 7 N, M batıya 12 N, N batıya 4 N. İlk bileşke doğuya 3 N; F bilinmiyor.",
+        "imageWidth": 360,
+        "imageHeight": 740
+      },
+      {
+        "id": "f6-1-t15-03",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "K, dış yüzeyi kapalı bir metal cisimdir. Metal kısmının tamamının aynı saf metalden yapıldığı, varsa iç boşluğunun su almadığı bilinmektedir. Aynı sıcaklıkta bu metalin içi dolu bir örneğinin 20 cm³’ü 60 g geliyor. K’nin kütlesi ve suya tamamen batırıldığındaki seviyeler görseldedir. Taşma, çözünme ve hava kabarcığı yoktur; boşluktaki gazın kütlesi ihmal edilir.\n\nK’nin iç boşluğunun hacmi kaç santimetreküptür?",
+        "options": [
+          "10",
+          "20",
+          "30",
+          "40"
+        ],
+        "correct": 0,
+        "explanation": "İçi dolu metalin yoğunluğu 60 ÷ 20 = 3 g/cm³’tür. K’deki 120 g metalin hacmi 120 ÷ 3 = 40 cm³ olur. K’nin dış sınırları içinde kalan toplam hacim su seviyesindeki artıştan 80 − 30 = 50 cm³ bulunur. Su almayan boşluk da bu toplam hacme dâhildir. Boşluk 50 − 40 = 10 cm³’tür.",
+        "imageUrl": "/grade6/fen/test-15/soru-03.svg",
+        "imageAlt": "K: 120 g. Su başlangıçta 30 cm³, K tamamen batınca 80 cm³. Aynı metalin içi dolu 20 cm³ örneği 60 g.",
+        "imageWidth": 360,
+        "imageHeight": 900
+      },
+      {
+        "id": "f6-1-t15-04",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "İdeal modelde opak, mat kırmızı levha yalnız kırmızı ışığı yansıtır, diğer görünür renkleri soğurur. Opak beyaz levha kendisine ulaşan bütün görünür renkleri yansıtır. Kırmızı levhadan yansıyan ışığın bir bölümü beyaz levhaya ulaşıyor. Beyaz levhaya doğrudan kaynaktan veya başka yerden ışık gelmiyor.\n\nKaynak önce beyaz, sonra yalnız mavi ışık verdiğinde beyaz levhanın görünümü sırasıyla nasıl olur?",
+        "options": [
+          "Beyaz; mavi",
+          "Kırmızı; mavi",
+          "Kırmızı; karanlık",
+          "Beyaz; karanlık"
+        ],
+        "correct": 2,
+        "explanation": "Beyaz ışığın kırmızı bileşeni ilk levhadan yansıyıp ikinciye ulaşır. Beyaz levha gelen kırmızı ışığı yansıttığı için kırmızı görünür. Kaynak yalnız mavi olduğunda ilk levha bu ışığı soğurur; ikinci levhaya ışık ulaşmaz ve karanlık görünür. Beyaz yüzey, kendisine ulaşmayan renkleri üretmez.",
+        "imageUrl": "/grade6/fen/test-15/soru-04.svg",
+        "imageAlt": "Kaynak → kırmızı levha → beyaz levha ışık yolu. Beyaz levhaya doğrudan ışık gitmiyor. Denemelerde önce beyaz, sonra mavi kaynak kullanılıyor.",
+        "imageWidth": 360,
+        "imageHeight": 780
+      },
+      {
+        "id": "f6-1-t15-05",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Aynı türden canlı tohumlar, yeterli nem ve hava sağlanan özdeş kaplarda tutuluyor. Sıcaklık, tohum sayısı ve diğer koşullar aynı; yalnız ışık koşulu farklıdır. Beşinci gün çimlenen fideler her grubun kendi ışık koşulu korunarak onuncu güne kadar izleniyor. Gözlem sonuçları görseldedir.\n\nBu çalışmadan çıkarılabilecek en uygun sonuç hangisidir?",
+        "options": [
+          "Karanlıktaki fideler daha uzun olduğundan her yönden daha sağlıklı gelişmiştir.",
+          "Bu türün tohumları karanlıkta da çimlenmiştir; fide boyu tek başına sonraki gelişimin sağlıklı olduğunu göstermeye yetmez.",
+          "Işık, bu tohumların çimlenmesi için zorunludur; karanlıkta görülenler çimlenme sayılmaz.",
+          "Çimlenme sayıları eşit olduğundan ışığın fidelerin sonraki görünümüne etkisi olmadığı kanıtlanmıştır."
+        ],
+        "correct": 1,
+        "explanation": "İki koşulda da 10 tohum çimlenmiştir; bu çalışma bu türün karanlıkta da çimlenebildiğini gösterir. Karanlıkta daha uzun fakat soluk ve zayıf fideler görülmesi, yalnız uzunluğu sağlıklı gelişme ölçütü saymanın yetersizliğini ortaya koyar. Sonuç bütün bitki türleri için zorunlu bir kural olarak genişletilemez.",
+        "imageUrl": "/grade6/fen/test-15/soru-05.svg",
+        "imageAlt": "Işıkta 5. gün 10 çimlenme; 10. gün 4 cm, yeşil ve dik fideler. Karanlıkta 5. gün 10 çimlenme; 10. gün 7 cm, soluk ve zayıf fideler.",
+        "imageWidth": 360,
+        "imageHeight": 900
+      },
+      {
+        "id": "f6-1-t15-06",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "İki metal levhanın birer uçları sabitlenmiştir. Serbest uçlar arasında başlangıçta 5 mm boşluk vardır. Isıtma sonucunda serbest uçların yer değiştirme yönleri ve miktarları görselde verilmiştir. Levhalar birbirine temas etmeden duruyor.\n\nYeni boşluk ve bu sonuca ilişkin yorum hangisidir?",
+        "options": [
+          "9 mm; iki levhanın da boyu uzadığı için boşluk büyür.",
+          "4 mm; yalnız yer değiştirmeler arasındaki fark çıkarılır.",
+          "0 mm; her genleşme iki levhayı mutlaka temas ettirir.",
+          "1 mm; iki serbest uç birbirine yaklaştığı için yaklaşma miktarları toplanır."
+        ],
+        "correct": 3,
+        "explanation": "Sol uç boşluğa doğru 1,5 mm, sağ uç boşluğa doğru 2,5 mm ilerler. Toplam yaklaşma 4 mm’dir; yeni boşluk 5 − 4 = 1 mm olur. Boşluğun değişimi yalnız levhaların uzamasına değil, hangi uçların sabit olduğuna ve serbest uçların hareket yönlerine göre yorumlanmalıdır.",
+        "imageUrl": "/grade6/fen/test-15/soru-06.svg",
+        "imageAlt": "Dış uçları sabitlenmiş iki levha arasında 5 mm boşluk. Sol levhanın serbest ucu sağa 1,5 mm; sağ levhanın serbest ucu sola 2,5 mm ilerler.",
+        "imageWidth": 360,
+        "imageHeight": 740
+      },
+      {
+        "id": "f6-1-t15-07",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Aynı saf X maddesinin K ve L örneklerinde başlangıçta katı ve sıvı birlikte bulunuyor. Basınçlar aynı ve sabittir. K’ye ısı veriliyor, L’den ise ısı alınıyor. İncelenen süre boyunca iki kapta da katı ve sıvı birlikte bulunmaya devam ediyor.\n\nBu sürede sıcaklıklar ve katı madde miktarları nasıl değişir?",
+        "options": [
+          "K’nin sıcaklığı artar, L’ninki azalır; ikisinin katı miktarı da değişmez.",
+          "İki sıcaklık sabit kalır; K’de katı miktarı artar, L’de azalır.",
+          "İki sıcaklık sabit kalır; K’de katı miktarı azalır, L’de artar.",
+          "K’nin sıcaklığı artar, L’ninki azalır; K’de katı miktarı azalır, L’de artar."
+        ],
+        "correct": 2,
+        "explanation": "Saf madde aynı basınçta erirken de donarken de katı ve sıvı birlikte kaldığı sürece hâl değişim sıcaklığını korur. K’ye verilen ısı katının bir bölümünün erimesine yol açar; katı miktarı azalır. L’den ısı alınması sıvının bir bölümünü dondurur; katı miktarı artar. Bu aralıkta ısı alışverişi olması sıcaklığın mutlaka değişmesi demek değildir.",
+        "imageUrl": "/grade6/fen/test-15/soru-07.svg",
+        "imageAlt": "K ve L kaplarında aynı saf X maddesinin katı ve sıvı hâlleri birlikte. K’ye yönelen ısı oku, L’den dışarı çıkan ısı oku. İki kapta da iki hâl süre boyunca devam ediyor.",
+        "imageWidth": 360,
+        "imageHeight": 780
+      },
+      {
+        "id": "f6-1-t15-08",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Aynı türden bir hayvanın iki grubunda bütün yumurtalar ve yavrular izleniyor; gruplara dışarıdan katılım veya gruptan ayrılma yoktur. Eşit gözlem süresi sonunda kayıtlar şöyledir:\n• K: başlangıçta 50 yumurta, yumurtadan çıkan 30 yavru, gözlem sonunda yaşayan 18 yavru.\n• L: başlangıçta 40 yumurta, yumurtadan çıkan 32 yavru, gözlem sonunda yaşayan 24 yavru.\n\nKayıtlardan hangi sonuç çıkarılabilir?",
+        "options": [
+          "K’de yumurtadan çıktıktan sonra yaşamını yitiren 12, L’de 8 yavru vardır; daha fazla yumurta, gözlem sonunda daha fazla yaşayan yavru anlamına gelmemiştir.",
+          "K’de 32, L’de 16 yavru yumurtadan çıktıktan sonra yaşamını yitirmiştir; başlangıç yumurta sayısı ile son yavru sayısının farkı bunu verir.",
+          "K’de daha çok yumurta bulunduğundan yumurtadan çıkan yavru sayısı da L’den fazladır.",
+          "İki grubun son yavru sayıları farklı olduğundan bu farkın yalnız beslenmeden kaynaklandığı kesinleşir."
+        ],
+        "correct": 0,
+        "explanation": "Yumurtadan çıktıktan sonraki kayıp, çıkan yavru sayısından son yaşayan yavru sayısı çıkarılarak bulunur: K’de 30 − 18 = 12, L’de 32 − 24 = 8. Başlangıç yumurta sayısından son yavru sayısını çıkarmak, hiç çıkmamış yumurtaları da bu kayba katar. K’de daha çok yumurta olmasına rağmen L’de daha çok yavru yaşamıştır. Kayıtlarda farkın nedenini yalnız beslenmeye bağlayacak kontrollü koşul bilgisi yoktur."
+      },
+      {
+        "id": "f6-1-t15-09",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Sağlam pilli bir devrede denenen K ve L tellerinin cinsi, sıcaklığı ve uzunluğu aynıdır. K bağlanınca ampul L’dekinden daha parlak yanıyor. Bağlantı etkileri ihmal ediliyor. Sonra K’nin uzunluğu artırılıyor; kalınlığı değişmiyor. Pil, ampul, sıcaklık ve temas koşulları değiştirilmeden yeni K ile L karşılaştırıldığında parlaklıkların eşit olduğu görülüyor.\n\nBu iki deneme birlikte hangi yorumu destekler?",
+        "options": [
+          "K başlangıçta daha inceydi; uzatılınca direnci azalıp L’ye eşitlendi.",
+          "K başlangıçta daha kalındı; uzatılması direncini artırarak L’nin direncine ulaşmasını sağlamış olabilir.",
+          "K başlangıçta daha kalındı; uzunluk değişimi direnci etkilemediği için ikinci gözlem mümkün değildir.",
+          "İlk parlaklık farkı yalnız telin cinsinden kaynaklanmıştır; ikinci denemede cinsler eşitlenmiştir."
+        ],
+        "correct": 1,
+        "explanation": "İlk deneyde cins ve uzunluk eşittir. K ile ampul daha parlak olduğundan K’nin direnci daha küçüktür; bu koşullarda K daha kalındır. Aynı kalınlıktaki K’yi uzatmak direncini artırır. Böylece başlangıçtaki kalınlık üstünlüğü, daha fazla uzunluğun etkisiyle dengelenebilir. Sayısal bir direnç formülü kullanmak gerekmez."
+      },
+      {
+        "id": "f6-1-t15-10",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Basitleştirilmiş bir modelde bir bezin salgıladığı H hormonu bir taşıma yoluyla hedef organa ulaşıyor. Bezden normal miktarda H çıktığı ölçülüyor; ancak hedefe giden yolda H saptanmıyor ve hedefte beklenen cevap oluşmuyor. İkinci denemede H, uygun miktarda doğrudan hedefe ulaştırılınca cevap oluşuyor.\n\nYalnız bu model ve kayıtlar birlikte düşünüldüğünde hangi değerlendirme en güçlü biçimde desteklenir?",
+        "options": [
+          "H’nin üretilmesi tek başına yeterli değildir; kayıtlar, hedefin cevap verebildiğini ve hormonun hedefe taşınmasında sorun olabileceğini gösterir.",
+          "Hedefte ilk denemede cevap olmadığı için bezin hormon üretmediği kesinleşir.",
+          "İkinci denemede cevap oluşması, ilk denemede de H’nin hedefe ulaştığını kanıtlar.",
+          "Bezden normal miktarda H çıktığı için hedefe giden taşıma yolunun çalıştığı ayrıca incelenemez."
+        ],
+        "correct": 0,
+        "explanation": "Bezden H çıktığı ölçülmüştür; üretim yokluğu iddiası bu kayıtla uyuşmaz. Doğrudan H verilince hedef cevap verebildiği için hedefin tümüyle cevap veremediği söylenemez. İlk denemede H’nin hedef yolunda saptanmamasıyla birlikte değerlendirildiğinde taşınmadaki aksama olasılığı desteklenir. Kayıt, sorunun tam fiziksel nedenini belirlemez."
+      }
+    ],
+
   },
   term2: {},
 };
