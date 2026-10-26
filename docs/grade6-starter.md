@@ -394,3 +394,10 @@ Toplam: 23 test, 230 soru, 117 SVG, 28 rota. Önceki 220 soru ve 110 SVG korunur
 - Zorluk; iki metnin ortak düşüncesini sınırlarını koruyarak bulma, belgelerin desteklediği bilgiyi varsayımdan ayırma, gönderme zincirleriyle paragraf oluşturma ve sıralı özet denetiminde ilk hatayı belirleme üzerinden sağlanır. Sınıf düzeyinin dışındaki dil bilgisi terimleri yerine dikkatli okuma ve çok adımlı çıkarım kullanılır.
 - İki pasif SVG 360 birim genişliğinde, en az 26 birim yazılıdır; 238 piksel çıktıları incelenir. Belge kartları ve iki aşamalı karar yolu görseli, doğru cevabı belirlemek için gereklidir. Önceki matematik, fen ve İngilizce 11–12. testler dâhil **460 soru ve 270 SVG** korunur. Yeni toplam: **47 test / 470 soru / 272 SVG / 52 adet 6. sınıf rotası**.
 - Bağımsız Türkçe anlam, tek cevap, zorluk ve görsel denetimi; veri/rota doğrulaması, TypeScript ve üretim derlemesi uygulanır. Etkileşimli tarayıcı testi yapılmamıştır; bağımsız lint yapılandırması mevcut değildir. Production’a otomatik aktarım yapılmaz.
+
+
+## Türkçe Test 12 — Örtük İleti, Tutarlılık ve Çoklu Koşullar (26 Ekim 2026)
+
+- Zor düzeyde 8 metin + 2 görsel okuma sorusu: davranıştan çıkarım, iki metnin ortak düşüncesi, ihtiyaçları birleştirme, gönderme zinciri, çoklu yayımlama koşulları, iki afişin eksik bilgilerini tamamlama, sınırları koruyan özet, paragraf sırası, anlamı koruyarak yeniden yazma ve başlık–kanıt tutarlılığı. Anahtar: **A, D, B, C, B, D, A, C, B, D**.
+- İki pasif SVG 360 birim genişlikte, en az 26 birim yazıyla hazırlanır; 238 piksel çıktıları denetlenir. Önceki 470 soru ve 272 SVG korunur. Toplam 48 test / 480 soru / 274 SVG / 53 rota.
+- Bağımsız dil, tek doğru cevap ve zor düzey denetimi; veri/rota doğrulaması, TypeScript ve üretim derlemesi uygulanır. Etkileşimli tarayıcı testi yapılmaz; production’a otomatik aktarım yapılmaz.

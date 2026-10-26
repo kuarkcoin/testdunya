@@ -1653,6 +1653,156 @@ export const turkceData: SubjectData = {
         "subject": "turkce",
         "term": 1
       }
+    ],
+    "test12": [
+      {
+        "id": "t6-1-t12-01",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“Öykünün sonundaki sessizlik boşuna değildi. Kahraman, kendisine uzatılan mektubu açmadan masaya bıraktı. Yazar onun ne düşündüğünü söylemedi; fakat mektuba her bakışında ellerini cebine sakladığını anlattı.”\nBu anlatımda okurdan beklenen aşağıdakilerden hangisidir?",
+        "options": [
+          "Kahramanın duygusunu, davranış ipuçlarını birlikte değerlendirerek çıkarması",
+          "Mektubun içeriğini kahramanın daha önce okuduğunu kabul etmesi",
+          "Kahramanın susmasını, olayla ilgilenmediğinin kesin kanıtı sayması",
+          "Yazarın söylemediği düşünceleri, metinden bağımsız olarak tamamlaması"
+        ],
+        "correct": 0,
+        "explanation": "Duygu açıkça adlandırılmamış; mektubu açmama ve ellerini saklama gibi davranışlar verilmiştir. A, bu ipuçlarına dayanan çıkarımı ister. B metinde olmayan bir geçmiş ekler, C tek ve kesin bir neden ileri sürer, D ise metnin kanıtlarını göz ardı eder."
+      },
+      {
+        "id": "t6-1-t12-02",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "I. Metin: Bir ezgiyi ilk dinleyişte yalnızca melodisine dikkat ettim. Aynı ezgiyi farklı bir çalgıyla duyunca ritmin etkisini de fark ettim. İkinci dinleyişim, ilkinde duyduklarımı silmedi; onlara yeni bir yön ekledi.\nII. Metin: Bir masalı arkadaşımın çizdiği resimlerle yeniden okudum. Resimler bazı ayrıntıları öne çıkarınca daha önce önemsemediğim bir davranış üzerinde düşündüm. Masal değişmemişti; ona bakışım genişlemişti.\nİki metnin ortak düşüncesini sınırlarını aşmadan veren yargı hangisidir?",
+        "options": [
+          "Bir eserin daha sonraki sunumu, ilk sunumundan daha başarılıdır.",
+          "Görsel ve işitsel araçlar, bir eserin anlamını kesin olarak belirler.",
+          "Bir eser farklı biçimlerde sunulmadıkça yeterince anlaşılamaz.",
+          "Farklı bir sunum, önceden tanınan bir eserde yeni yönler fark etmeyi sağlayabilir."
+        ],
+        "correct": 3,
+        "explanation": "İki deneyimde de değişen sunum, önceki anlayışa yeni ayrıntılar eklemiştir. D olasılık bildirerek bu ortak noktayı korur. A üstünlük, B kesinlik, C zorunluluk getirir; bu geniş genellemeler metinlerden çıkarılamaz."
+      },
+      {
+        "id": "t6-1-t12-03",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Okul bahçesindeki oturma yerleri için bir anket yaptık. Bir grup öğrenci ağaçların altına, bir grup da spor alanına yakın banklar istedi. Yalnızca kaç kişinin ne istediğini saymadık; gerekçelerini de dinledik. İlk grup gölgeyi, ikinci grup oynayan arkadaşlarını izlemeyi önemsiyordu. Sonunda spor alanını gören gölgeli bir yer seçtik.\nBu çözümün oluşmasını en iyi açıklayan yargı hangisidir?",
+        "options": [
+          "Öğrencilerin farklı önerilerinden biri, diğer önerinin de gerekçesi açıklanarak kabul edilmiştir.",
+          "Farklı görünen isteklerin altında yatan ihtiyaçları birlikte karşılayan bir seçenek bulunmuştur.",
+          "Her gruptan ilk isteğinin bir bölümünden vazgeçmesi istenerek ortak bir karar oluşturulmuştur.",
+          "İsteklerin gerekçeleri dinlendikten sonra karar, daha çok öğrencinin yararlanacağı yere göre verilmiştir."
+        ],
+        "correct": 1,
+        "explanation": "Seçilen yer, gölge ve spor alanını görme ihtiyaçlarını aynı anda karşılar. Bir grubun gerekçesinin ötekine kabul ettirilmesi veya her iki grubun birer ihtiyacından vazgeçmesi anlatılmaz. Öğrenci sayısı karara gerekçe yapılmamıştır. B, çözümün hangi ilişkiyle oluşturulduğunu eksiksiz belirtir."
+      },
+      {
+        "id": "t6-1-t12-04",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "I. Önce mahalledeki eski çeşmelerin yerlerini bir haritada işaretledik.\nII. Bunların bazılarının artık kullanılmadığını görünce araştırmamıza yeni bir soru ekledik.\nIII. Bu soruyu yanıtlamak için mahalle sakinleriyle konuştuk ve eski fotoğraflara baktık.\nIV. Böylece yalnız yerlerini gösteren bir harita değil, zaman içindeki değişimlerini anlatan bir çalışma ortaya çıktı.\n“Çeşmelerin geçmişte nasıl kullanıldığını ve ne zaman kullanım dışı kaldığını öğrenmek istiyorduk.” cümlesi nereye getirilmelidir?",
+        "options": [
+          "I. cümleden önce",
+          "I. cümleden sonra",
+          "II. cümleden sonra",
+          "III. cümleden sonra"
+        ],
+        "correct": 2,
+        "explanation": "II yeni bir sorudan söz eder; eklenen cümle bu sorunun içeriğini açıklar. III’teki bu soruyu ifadesi de açıklanan soruya bağlanır. Bu iki bağlantıyı birlikte koruyan yer II’den sonrasıdır. III’ten sonra eklemek, araştırma işleminden önce gereken açıklamayı geciktirir."
+      },
+      {
+        "id": "t6-1-t12-05",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Bütün fotoğrafların çekim yeri ve tarihi yazılıdır. Dosyalarla ilgili diğer bilgiler şöyledir:\nK: Öğrenci kendi çektiği boş bahçe fotoğrafını gönderiyor; fotoğrafta insan yok.\nL: Öğrenci arkadaşının çektiği boş bahçe fotoğrafını gönderiyor; arkadaşının adı yazılı, kullanım izni yok.\nM: Öğrenci kendi çektiği fotoğrafı gönderiyor; yüzü tanınan kişinin izni dosyada.\nN: Öğrenci arkadaşının çektiği fotoğrafı gönderiyor; arkadaşının adı ve kullanım izni var, yüzü tanınan kişinin izni yok.\nGörseldeki kurallara göre hangi iki dosya, başka bir izin veya bilgi istenmeden yayımlanabilir?",
+        "options": [
+          "K ve L",
+          "K ve M",
+          "L ve N",
+          "M ve N"
+        ],
+        "correct": 1,
+        "explanation": "K’de fotoğraf öğrencinin kendisine ait olduğundan kullanım izni gerekmez; tanınan kişi de yoktur. M’de fotoğraf kendisinindir ve tanınan kişinin izni vardır. L’de fotoğrafı çekenin adını yazmak kullanım izninin yerini tutmaz. N’de ise fotoğrafçının izni, görüntüdeki tanınan kişinin izni yerine geçmez. Bütün dosyalarda yer ve tarih ortak koşulu sağlanmıştır.",
+        "imageWidth": 360,
+        "imageHeight": 930,
+        "imageUrl": "/grade6/turkce/test-12/soru-05.svg",
+        "imageAlt": "Fotoğraf yayımlama kuralları: tüm fotoğraflarda yer ve tarih yazılır. Başkasının fotoğrafında sahibinin adı ve kullanım izni gerekir. Kendi fotoğrafında kullanım izni aranmaz. Yüzü tanınan kişi varsa kişinin izni de gerekir; yoksa bu izin aranmaz."
+      },
+      {
+        "id": "t6-1-t12-06",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Görselde aynı sergi için hazırlanmış iki taslak afiş vardır. Düzenleyici, “Ücretsiz katılım bilgisi korunmalı; ziyaretçinin bir gün ve saat seçebilmesi için gerekli bilgiler de eksiksiz olmalı.” diyor. Bu isteği karşılamak için hangi düzenleme yeterlidir?",
+        "options": [
+          "A taslağına yalnızca ücretsiz katılım bilgisi eklemek",
+          "B taslağındaki gün bilgisini kaldırıp A’daki saatleri eklemek",
+          "A taslağındaki saatleri kaldırıp B’deki gün bilgisini eklemek",
+          "B taslağına A’daki açılış ve kapanış saatlerini eklemek"
+        ],
+        "correct": 3,
+        "explanation": "B taslağında gün aralığı ve ücretsiz katılım vardır; saatler eksiktir. A’da saatler bulunur, günler eksiktir. D, B’deki mevcut bilgileri koruyarak eksik saatleri tamamlar. A gün eksiğini gidermez; B ve C gerekli bir bilgiyi kaldırır.",
+        "imageWidth": 360,
+        "imageHeight": 800,
+        "imageUrl": "/grade6/turkce/test-12/soru-06.svg",
+        "imageAlt": "A afişi: El Emeği Sergisi, 10.00–16.00, okul salonu. B afişi: El Emeği Sergisi, cumartesi ve pazar, okul salonu, katılım ücretsiz."
+      },
+      {
+        "id": "t6-1-t12-07",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“Uzun süredir aradığı defteri bulunca kapağını hemen açmadı. Önce üzerindeki tozu eliyle sildi, sonra pencerenin yanına oturdu. İlk sayfadaki yazıyı okuyunca gülümsedi. Dışarıdan gelen seslere aldırmadan sayfaları ağır ağır çevirdi.”\nBu metni özetleyen hangi cümle, verilenlerin dışına çıkmadan temel olayı ve anlatımın sezdirttiği tutumu birlikte korur?",
+        "options": [
+          "Bir kişi, bulduğu eski defteri özenle ve dikkatini ona vererek inceler.",
+          "Bir kişi, defterdeki eski bilgileri yenilemek için çevresinden uzaklaşır.",
+          "Bir kişi, bulduğu defteri yavaşça okuyarak yazıların kime ait olduğunu çözmeye çalışır.",
+          "Bir kişi, defterin önceki sahibini hatırladığı için okumaya ara verir."
+        ],
+        "correct": 0,
+        "explanation": "Defterin bulunması ve incelenmesi açık olaydır; tozunu silme, ağır okuma ve seslere aldırmama özen ve yoğunlaşmayı destekler. B bilgileri yenileme amacı, C yazarı bulma amacı, D önceki sahibi hatırlama nedeni ekler. Metinde bu amaç veya nedenlerin hiçbiri belirtilmemiştir."
+      },
+      {
+        "id": "t6-1-t12-08",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "I. Ancak listede aynı olayın farklı kişiler tarafından birkaç kez anlatıldığını fark ettik.\nII. Bu ortak listeden, okulun gelişimini gösteren farklı olayları seçtik.\nIII. Okulumuzun geçmişini anlatan bir pano için öğretmenlerimizden anılar toplayıp bir liste hazırladık.\nIV. Bu nedenle benzer anlatımları karşılaştırıp aynı olaya ait olanları tek başlık altında birleştirdik.\nV. Böylece panoda birbirini tekrar eden anlatımlar yerine farklı dönemlere ait örnekler yer aldı.\nGönderme sözleri ve işlem sırası birlikte düşünüldüğünde doğru sıralama hangisidir?",
+        "options": [
+          "III – II – I – IV – V",
+          "III – I – II – IV – V",
+          "III – I – IV – II – V",
+          "I – III – IV – V – II"
+        ],
+        "correct": 2,
+        "explanation": "III anıların toplanmasını başlatır, I tekrar sorununu belirtir, IV bu nedenle ifadesiyle sorunu giderip ortak listeyi oluşturur. II bu ortak listeden seçimi anlatır; V sonucu verir. Diğer sıralamalarda ortak liste oluşturulmadan kullanılır veya sonuç seçimden önce verilir."
+      },
+      {
+        "id": "t6-1-t12-09",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“Toplantıda konuşanlar, önerilerimizi hemen uygulayalım demedi; önce küçük bir grupta deneyip sonucuna göre karar vermeyi önerdi.”\nBu cümleyi anlamını değiştirmeden yeniden kuran seçenek hangisidir?",
+        "options": [
+          "Konuşmacılar, önerilerin genel uygulamasına karar verilmesini ve ardından küçük bir grupta denenmesini önerdi.",
+          "Konuşmacılar, genel uygulama kararının küçük gruptaki denemenin sonucu değerlendirildikten sonra verilmesini önerdi.",
+          "Konuşmacılar, önerilerin küçük grupta denenmesine karar verilmiş olduğunu ve genel uygulamaya geçileceğini bildirdi.",
+          "Konuşmacılar, önerilerin küçük grupta uygulanmasıyla yetinilmesini ve genel uygulamadan vazgeçilmesini önerdi."
+        ],
+        "correct": 1,
+        "explanation": "Kaynak cümle, genel karar verilmeden önce sınırlı bir deneme ve sonuç değerlendirmesi önerildiğini bildirir. B bu sırayı ve öneri niteliğini korur. A karar ile denemenin sırasını ters çevirir; C öneriyi kesinleşmiş karar yapar; D ise denemeyi son aşama sayarak genel uygulamayı dışlar."
+      },
+      {
+        "id": "t6-1-t12-10",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Bir öğrenci hazırladığı haberin başlığını “Bütün Öğrenciler Yeni Okuma Alanını Beğendi” koymuştur. Haberin metninde ise “Yeni alanı kullanan on öğrenciyle görüştük. Sekizi alanı rahat bulduğunu, ikisi daha fazla aydınlatma gerektiğini söyledi.” bilgisi vardır.\nBaşlık ile haber arasındaki sorunu en kapsamlı biçimde belirten yargı hangisidir?",
+        "options": [
+          "Başlık, görüş bildiren öğrencilerin sayısını belirtmediği için değerlendirmelerin kapsamını belirsiz bırakmıştır.",
+          "Haberde farklı görüşler bulunduğu için öğrencilerin alanla ilgili ortak hiçbir düşüncesi olamayacağı gözden kaçırılmıştır.",
+          "Başlık, aydınlatmayı yetersiz bulanların görüşünü dışarıda bırakarak görüşülen grubun tamamını aynı düşüncede göstermiştir.",
+          "Başlık, sınırlı bir gruptan alınan farklı görüşleri bütün öğrencilere ait tek bir olumlu görüşe dönüştürmüştür."
+        ],
+        "correct": 3,
+        "explanation": "Başlık hem görüşülen on kişiyi bütün öğrencilere geneller hem farklı değerlendirmeleri tek bir beğeni yargısına indirger. D iki sorunu birlikte gösterir. A yalnız kapsamı, C yalnız görüş farklılığını ele aldığı için en kapsamlı değerlendirme değildir. B farklı görüşlerin ortak herhangi bir düşünce bulunmasını engellediğini öne sürer; böyle bir zorunluluk yoktur."
+      }
     ]
   },
   "term2": {}
