@@ -418,3 +418,11 @@ Toplam: 23 test, 230 soru, 117 SVG, 28 rota. Önceki 220 soru ve 110 SVG korunur
 - `soru-05.svg` buluntu–önerilen tamamlama çizimi, `soru-06.svg` planlanan–gerçekleşen söyleşi akışıdır. İki pasif SVG 360 birim genişliğinde ve en az 26 birim yazılıdır; 238 piksel çıktıları okunabilirlik ve taşma bakımından incelenir. Görseller doğru cevap için gereklidir.
 - Önceki **490 soru ve 276 SVG** korunur; matematik, fen ve İngilizcedeki 11–12. testler değişmez. Yeni toplamlar **50 test / 500 soru / 278 SVG / 55 altıncı sınıf rotası / 359 statik sayfa**.
 - Bağımsız Türkçe, tek cevap, zorluk ve görsel denetimi; veri/rota doğrulaması, TypeScript, tam üretim derlemesi ve eski içerik korunumu kontrolleri uygulanır. ESLint yapılandırılmamıştır; etkileşimli tarayıcı denetimi yapılmaz. Production’a otomatik aktarım yapılmaz.
+
+## Türkçe Test 15 — Bağlam, Örtük İleti ve Anlatım Tercihleri (Zor)
+
+- 8 metin + 2 görsel okuma sorusu; cevap anahtarı **A, C, B, D, B, D, C, A, B, D**. `/6-sinif/turkce/test-15` rotası mevcut veri kaydından üretilir; ortak soru şeması değişmez.
+- Sonucu bilinen anlatıda dikkat odağı, iki sanat dalında sezdirme, farklı yalnızlık yorumları, görüşün koşullarını koruyarak özetleme, kadraj ve paylaşımın kapsamı, gözlemci anlatıcının bilgi sınırı, çeviride amaç–araç ayrımı, yerel ve dışarıdan bakış, zamansal/nedensel paragraf sıralaması ve benzetmenin düşünceye katkısı işlenir. Yakın çeldiriciler; bir koşulu koruyup diğerini bozma, söylenen bilgiyi doğrulanmış sayma ve sınırlı yargıyı genişletme üzerine kuruludur.
+- `soru-05.svg` aynı fotoğrafın geniş görüntüsünü ve işaretli bölümünün ölçekli kırpımını, `soru-06.svg` kapalı kutulu sahnede düşünce ile konuşmanın ayrımını gösterir. İki pasif SVG 360 × 760 birimdir; yazılar en az 26 birimdir. 238 piksel çıktıları okunabilirlik ve taşma bakımından incelenir. Her iki görsel, sorunun çözümünde kullanılan bilgileri taşır.
+- Önceki **500 soru ve 278 SVG** korunur; matematik, fen ve İngilizcedeki 11–12. testler değişmez. Yeni toplamlar **51 test / 510 soru / 280 SVG / 56 altıncı sınıf rotası / 360 statik sayfa**.
+- Bağımsız Türkçe, tek cevap, zorluk, özgünlük ve görsel denetimi; veri/rota doğrulaması, TypeScript, tam üretim derlemesi ve eski içerik korunumu kontrolleri uygulanır. ESLint yapılandırılmamıştır; etkileşimli tarayıcı denetimi yapılmaz. Production’a otomatik aktarım yapılmaz.

@@ -2103,6 +2103,156 @@ export const turkceData: SubjectData = {
         "correct": 2,
         "explanation": "Usta kazayla oluşan eğriliği hemen hata veya yenilik olarak adlandırmaz; kullanım ve özellik açısından değerlendirmeye açar. C bu koşullu yaklaşımı korur. A her kazayı düzeltir, B her kazayı yenilik sayar, D işlevi dikkate almadan görünüşü yeterli bulur."
       }
+    ],
+    "test15": [
+      {
+        "id": "t6-1-t15-01",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Bir masal anlatıcısı, her gösteride aynı masalı anlatırdı. Bir gün bir çocuk, “Sonunu zaten biliyoruz.” dedi. Anlatıcı, “Öyleyse bu kez kahramanın oraya nasıl vardığını dinleyin.” diye karşılık verdi. O gün çocuklar, daha önce fark etmedikleri duraksamalardan ve küçük kararlardan söz ederek ayrıldılar.\n\nÇocukların gösteri sonundaki konuşmaları, anlatıcının karşılığını hangi yönden destekler?",
+        "options": [
+          "Sonu bilmenin ilgiyi bütünüyle ortadan kaldırmadığını; dikkatin sonuçtan o sonucu hazırlayan seçimlere kayabildiğini gösterir.",
+          "Sonu önceden bilmenin, kahramanın küçük kararlarının sonucu nasıl değiştireceğini tahmin etmeyi kolaylaştırdığını gösterir.",
+          "Daha önce fark edilmeyen kararları anlamanın, bilinen sona ilişkin beklentiyi değiştirmenin ön koşulu olduğunu gösterir.",
+          "Aynı masalı yeniden dinlemenin, farklı yorumları azaltıp sonuca götüren tek doğru açıklamada buluşmayı sağladığını gösterir."
+        ],
+        "correct": 0,
+        "explanation": "Çocuklar aynı sona ulaşan masalda bu kez küçük kararları ve duraksamaları fark etmiştir. İlgi sonuçtan sürece kaymıştır. Sonucun değişeceği, sona ilişkin beklentiyi değiştirmenin gerekeceği veya tek bir yorumda birleşildiği söylenmez."
+      },
+      {
+        "id": "t6-1-t15-02",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "I. Bir ressam, sisli bir limanı çizerken uzaktaki tekneleri birkaç çizgiyle gösterir. “Onları yakındakiler kadar belirgin çizseydim sis görünmezdi.” der.\nII. Bir öykücü, kahramanının vedalaşırken söylemek istediği sözleri yazmaz; yalnızca elinde buruşturduğu mendili anlatır. “Her duygunun adını koyarsam okura ne kalır?” diye sorar.\n\nBu iki sanatçının seçimlerini birlikte açıklayan yargı hangisidir?",
+        "options": [
+          "Sanatçılar, eksik bıraktıkları ayrıntıların okur ve izleyici tarafından gerçekte oldukları biçimiyle tamamlanmasını amaçlar.",
+          "Sanatçılar, asıl anlatmak istediklerini geri plana çekip dikkati açıkça gösterdikleri nesnelere yöneltir.",
+          "Bazı ayrıntıları açıkça vermemek, anlatılmak isteneni sezdirmenin bir yolu olabilir.",
+          "Sanatçılar, anlatımı farklı yorumlara kapatmak için ayrıntıları azaltıp tek bir ipucunu öne çıkarır."
+        ],
+        "correct": 2,
+        "explanation": "Ressamın belirsiz bıraktığı tekneler sisi, öykücünün yazmadığı sözler duyguyu sezdirir. Eksik ayrıntıları gerçekteki biçimiyle tamamlama hedefi yoktur; amaçlanan etki geri plana atılmaz ve yorum tek bir anlamla sınırlandırılmaz."
+      },
+      {
+        "id": "t6-1-t15-03",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Bir öğrenci, köyde çektiği kısa filmin adını “Yalnız Çınar” koymuştu. Arkadaşı, “Ama ağacın çevresinde sürekli insanlar var.” deyince öğrenci, “Ben insan sayısını değil, konuşmaların hep telefonlardaki kişilerle yapılmasını düşündüm.” dedi.\n\nArkadaşının itirazıyla öğrencinin açıklaması arasındaki ayrımı hangi yorum doğru kurar?",
+        "options": [
+          "Arkadaşı ağacın çevresindeki insanları, öğrenci ise telefonla konuşulan kişileri sayarak yalnızlığın derecesini karşılaştırmıştır.",
+          "Arkadaşı yalnızlığı çevrede insan bulunmamasıyla, öğrenci ise aynı yerdekilerin birbirine ilgi yöneltmemesiyle ilişkilendirmiştir.",
+          "Arkadaşı ağacı yalnızlığın nedeni sayarken öğrenci insanların ağaçtan uzaklaşmasını yalnızlığın sonucu saymıştır.",
+          "Arkadaşı ağacın yalnızlığını geçici görürken öğrenci telefonla konuşanların her yerde yalnız kalacağını savunmuştur."
+        ],
+        "correct": 1,
+        "explanation": "Arkadaş insan kalabalığını yalnızlıkla bağdaştıramaz; öğrenci ise bedenen bir arada olup ilgiyi uzaktakilere yöneltmeye dikkat çeker. Konuşulan kişileri sayma, ağacı yalnızlığın nedeni görme ya da telefonla konuşanların her yerde yalnız olduğu yargıları yoktur."
+      },
+      {
+        "id": "t6-1-t15-04",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Okul radyosunun bir dinleyicisi şöyle diyor: “Programın haftada bir yayımlanmasını sorun etmiyorum. Beni uzaklaştıran, farklı konuklara hep aynı soruların sorulması. Yayın sayısını artırmanıza karşı değilim; ama soru biçimi değişmeden bu artışın programı benim için daha ilgi çekici yapacağını sanmıyorum.”\n\nBu dinleyicinin sözlerini anlam kaybına uğratmadan özetleyen cümle hangisidir?",
+        "options": [
+          "Dinleyici, sorular yenilenirse yayın sayısının da mutlaka artırılması gerektiğini; aksi hâlde programın ilgi çekmeyeceğini düşünüyor.",
+          "Dinleyici, farklı konuklara aynı soruların sorulmasını yayınların seyrekliğine bağlıyor ve daha sık yayınla bu sorunun çözülebileceğini düşünüyor.",
+          "Dinleyici, soruların değişmesini istiyor; yayınların artırılmasının ise programın ilgi çekiciliğini her durumda azaltacağını düşünüyor.",
+          "Dinleyici, yayınların artırılmasına karşı çıkmıyor; ancak kendisini uzaklaştıran tekrarın giderilmediği bir sıklık artışını yeterli görmüyor."
+        ],
+        "correct": 3,
+        "explanation": "Dinleyici yayın sıklığından yakınmıyor ve artışa karşı da değil; yalnızca aynı sorular sürerken artışı yeterli bulmuyor. A artışı zorunlu kılar, B sorunun nedenini sıklıkla değiştirir, C artışı her koşulda olumsuz sayar; bunlar konuşmacının sözünü aşar."
+      },
+      {
+        "id": "t6-1-t15-05",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Bir fotoğrafın geniş görüntüsü ile bundan kesilerek elde edilen paylaşım aşağıda verilmiştir. Paylaşımın altına “Parkımız artık tertemiz!” yazılmıştır.\n\nGörsel ile bu söz arasındaki ilişkiyi en doğru değerlendiren yorum hangisidir?",
+        "options": [
+          "Geniş görüntüde çöp bulunması, parkın hiçbir bölümünün temiz olmadığını gösterir.",
+          "Paylaşım temiz bölümü gösterir; ancak bu bölümün seçilmesi parkın tamamına ilişkin sözü doğrulamaz.",
+          "Çöpler kadrajın dışında kaldığı için parkın paylaşım yapılmadan önce temizlendiği anlaşılır.",
+          "İki görüntüde aynı bankın yer alması, paylaşımın parkın bütün durumunu yansıttığını kanıtlar."
+        ],
+        "correct": 1,
+        "explanation": "Aynı anda alınmış geniş görüntünün kenarındaki çöpler, daraltılan kadrajda görünmez. Temiz bir bölümün görüntüsü bütün parkın temizlendiğini kanıtlamaz. Ancak parkın hiçbir yeri temiz değildir sonucu da çıkarılamaz.",
+        "imageUrl": "/grade6/turkce/test-15/soru-05.svg",
+        "imageAlt": "Aynı fotoğrafın geniş ve dar kadrajları. Geniş görüntüde bankın sağında çöpler, bankı çevreleyen kesim çizgisi var. Paylaşımda yalnızca bank ve temiz çevresi görünüyor.",
+        "imageWidth": 360,
+        "imageHeight": 760
+      },
+      {
+        "id": "t6-1-t15-06",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Bu sahne bir öyküye aktarılırken anlatıcı yalnızca Emre’nin görebildiği ve duyabildiği bilgileri verecektir. Başka kişilerin düşüncelerini aktarmayacak, onların söylediklerini de doğrulanmış bilgi gibi sunmayacaktır.\n\nBu iki koşula da uyan anlatım hangisidir?",
+        "options": [
+          "Duru, Deniz’e aldığı hediyeyi Emre’den saklamak için kutudakilerin defter olduğunu söyledi; Emre ona masada yer gösterdi.",
+          "Duru, defterlerinin bulunduğu kutuyu taşıyordu; Emre kutuyu masaya bırakabileceğini söyledi.",
+          "Duru kutuda defter bulunduğunu söyledi; Emre, kutunun Deniz’e alınan hediye olduğunu anlamadan ona masada yer gösterdi.",
+          "Duru, içindekilerin defter olduğunu söylediği kapalı kutuyu tutuyordu; Emre kutuyu masaya bırakabileceğini söyledi."
+        ],
+        "correct": 3,
+        "explanation": "Emre kapalı kutuyu görebilir ve Duru’nun sözünü duyabilir; ancak kutunun içini veya Duru’nun düşüncesini bilemez. D seçeneği “defter” bilgisini Duru’nun sözü olarak aktarır. A ve C düşünce balonundaki gizli bilgiyi anlatıma taşır; B ise söyleneni doğrulanmış içerik bilgisi yapar.",
+        "imageUrl": "/grade6/turkce/test-15/soru-06.svg",
+        "imageAlt": "Duru, kurdeleli kapalı bir kutu tutuyor. Noktalı düşünce balonunda Deniz’e aldığım hediyeyi Emre görmesin diyor. Düz konuşma balonunda İçinde defterlerim var diyor. Emre’nin konuşma balonunda Masaya bırakabilirsin yazıyor.",
+        "imageWidth": 360,
+        "imageHeight": 760
+      },
+      {
+        "id": "t6-1-t15-07",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Bir çevirmen, çocuk kitabındaki espriyi sözcük sözcük başka dile aktardığında kimsenin gülmediğini fark etti. Bunun üzerine, aynı duruma uygun başka bir söz oyunu kullandı. “Sözcükler uzaklaştı ama okurun gülümsemesi yaklaştı.” dedi.\n\nBu çeviriyi “Metne bağlı kalınmamış.” diye eleştiren birine hangi cevap, çevirmenin ölçütünü aşmadan verilebilir?",
+        "options": [
+          "Gülümsetme sağlandığında olayların ve kahramanların da değiştirilmesi metne bağlılığı bozmaz.",
+          "Kaynak dildeki söz oyununun anlaşılmaması, okurların bu dili öğrenmesi gerektiğini gösterir.",
+          "Aynı durumu ve gülümsetme amacını koruyan bir değişiklik, sözcükler farklı olsa da metne bağlılıkla bağdaşabilir.",
+          "Aynı sözcüklerin korunması yerine çevirmenin kişisel anlatımının öne çıkması bütün çevirilerde esas alınmalıdır."
+        ],
+        "correct": 2,
+        "explanation": "Çevirmen aynı durumu ve gülümsetme amacını koruyarak söz oyununu değiştirmiştir. Bu sınırlı değişiklik C’deki savunmayı destekler; olay ve kahramanların da değiştirilebileceği, okurların dil öğrenmesi gerektiği veya tüm çevirilerde kişisel anlatımın esas olduğu sonuçlarına dayanak vermez."
+      },
+      {
+        "id": "t6-1-t15-08",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Bir gezi yazarı, “Bu kasabayı anlatırken önce pazarın kokularını yazdım. Sonra fark ettim ki benim için yeni olan bu kokular, pazarcılar için her sabahın alışılmış parçasıydı. Yazımı onların sabah hazırlıklarıyla sürdürdüm.” diyor.\n\nYazarın bu seçimiyle ilgili hangi değerlendirme yapılabilir?",
+        "options": [
+          "İlk izlenimini silmeden ona yerel yaşamın bakışını eklemiş; kendi yenilik duygusunu pazarın değişmez özelliği gibi sunmamaya yönelmiştir.",
+          "İlk gözleminin yanlış olduğunu anlayıp kokuları çıkarmış; kasabayı yalnızca pazarcıların anlatımıyla tanıtmaya yönelmiştir.",
+          "Pazarcıların alıştığı ayrıntıların önemsiz olduğuna karar vermiş; yalnız ziyaretçilerin fark edebileceği özelliklere yönelmiştir.",
+          "Bir yerin gerçek niteliğinin ziyaretçilere kapalı olduğunu kabul etmiş; kişisel gözlem yerine yalnızca aktarılan bilgilere yönelmiştir."
+        ],
+        "correct": 0,
+        "explanation": "Yazar kokuların kendisine yeni, pazarcılara alışılmış geldiğini fark eder ve yazısını onların hazırlıklarıyla sürdürür. İlk bölümünü sildiğini söylemez; farklı bakışı ekler. Gözlemini yanlış sayma, yerel ayrıntıları önemsiz görme ve ziyaretçinin bütünüyle anlayamayacağı yargıları metni aşar."
+      },
+      {
+        "id": "t6-1-t15-09",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Aşağıdaki cümlelerle anlamlı bir paragraf oluşturulacaktır.\n\nI. Bu ilk kayıtta hangi sesin hangi mekâna ait olduğunu bulmak zordu.\nII. Sonraki kayıtta ise mikrofonu her seferinde tek bir noktada birkaç dakika tuttular.\nIII. Öğrenciler, okulun ses haritasını hazırlamak için koridorları dolaşarak kayıt yaptılar.\nIV. Böylece mekânların kendine özgü seslerini ayırt edebildiler; ama bu kez seslerin birbirine nasıl karıştığı kayboldu.\nV. Çünkü yürürken aldıkları kayıtta sınıftan, bahçeden ve merdivenden gelen sesler peş peşe değil, iç içe duyuluyordu.\n\nHangi sıralama, hem sorunun gerekçesini hem yeni yöntemin kazancıyla kaybını doğru bağlar?",
+        "options": [
+          "III – I – II – V – IV",
+          "III – I – V – II – IV",
+          "III – V – II – I – IV",
+          "III – II – IV – I – V"
+        ],
+        "correct": 1,
+        "explanation": "III ilk çalışmayı tanıtır; I “bu ilk kayıt” ile ona bağlanır. V, I’deki ayırt etme güçlüğünün nedenidir. II sonraki yönteme geçer, IV ise bu yöntemin kazancını ve kaybını birlikte açıklar. Diğer sıralamalarda ilk kaydın nedeni ya da “böylece” ile belirtilen sonuç yanlış aşamaya bağlanır."
+      },
+      {
+        "id": "t6-1-t15-10",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Bir derginin “Birlikte Yaşamak” sayısı için şu paragraf yazılmıştır:\n“Mahalledeki ortak fırında herkes kendi hamurunu getirir. Ekmeklerin biçimleri de kullanılan unlar da farklıdır. Fırıncı, hepsini tek biçime sokmaya çalışmaz; her birinin pişmesi için gereken yeri ve süreyi gözetir. Ortak bir sıcaklık, farklı ekmekleri aynılaştırmadan pişirir.”\n\nBu paragrafın sayının temasına katkısını en iyi açıklayan yorum hangisidir?",
+        "options": [
+          "Ortak yaşamda farklılıklara yer verilse de ortak işin yürüyebilmesi için ihtiyaçların zamanla birbirine benzemesi gerektiğini sezdirir.",
+          "Ortak bir düzenin, herkese aynı yeri ve aynı süreyi ayırarak farklılıklardan doğan güçlükleri aşabileceğini belirtir.",
+          "Farklı ihtiyaçları korumanın en uygun yolunun, ortak alanın kullanımını ayrı alanlarla değiştirmek olduğunu düşündürür.",
+          "Ortak yaşamın, herkesi aynılaştırmak yerine farklı ihtiyaçları gözeten bir düzenle kurulabileceğini sezdirir."
+        ],
+        "correct": 3,
+        "explanation": "Ortak fırın ortak yaşamı, farklı ekmeklerin ayrı yer ve süre ihtiyacı farklı ihtiyaçları düşündürür. Birliktelik sürerken farklılıklar gözetilir. İhtiyaçların zamanla benzeşmesi, herkese aynı yer ve sürenin ayrılması ya da ortak alan yerine ayrı alanlara geçilmesi anlatılmaz."
+      }
     ]
   },
   "term2": {}
