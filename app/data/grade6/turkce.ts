@@ -2253,6 +2253,156 @@ export const turkceData: SubjectData = {
         "correct": 3,
         "explanation": "Ortak fırın ortak yaşamı, farklı ekmeklerin ayrı yer ve süre ihtiyacı farklı ihtiyaçları düşündürür. Birliktelik sürerken farklılıklar gözetilir. İhtiyaçların zamanla benzeşmesi, herkese aynı yer ve sürenin ayrılması ya da ortak alan yerine ayrı alanlara geçilmesi anlatılmaz."
       }
+    ],
+    "test16": [
+      {
+        "id": "t6-1-t16-01",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Köye yeni yol yapılınca yolculuk kısaldı. Anlatıcı önce buna sevindi; fakat artık eski patikadan geçmedikleri için yol üstündeki çeşmede verilen molalar da sona erdi. “Köye daha çabuk varıyoruz ama yolculuğun bir kısmını geride bıraktık.” diye yazdı.\n\nAnlatıcının son cümlesini, önceki iki tutumunu da koruyarak yorumlayan seçenek hangisidir?",
+        "options": [
+          "Yeni yolun zaman kazandırmasını olumlu bulsa da bunun eski yolculukların bütün değerini ortadan kaldırdığını düşünüyor.",
+          "Eski molaların bitmesini kayıp saydığı için yolculuğun kısalmasını da artık bir yarar olarak görmüyor.",
+          "Ulaşımın kolaylaşmasını değerli bulurken yolda yaşanan kimi alışkanlıkların kaybolduğuna da dikkat çekiyor.",
+          "Yolun kısalmasını, köye duyduğu ilginin azalmasının ve orada daha az zaman geçirmesinin nedeni sayıyor."
+        ],
+        "correct": 2,
+        "explanation": "İlk sevinç yeni yolun zaman kazandırmasına, son cümledeki kayıp ise çeşme molalarının sona ermesine bağlıdır. C bu iki yönü birlikte korur. A geçmiş yolculukların bütün değerinin yok olduğunu, B kazanımın artık yarar sayılmadığını, D köyde geçirilen zamanın azaldığını ekler; bunlar metinde yoktur."
+      },
+      {
+        "id": "t6-1-t16-02",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“Tren uzaklaştı, peron boşaldı.\nEl sallayan eller ceplere döndü.\nBen hâlâ oradaydım;\nGiden yalnız tren değildi.”\n\nBu dizelerin sonuncusu, önceki dizelerin anlamını nasıl etkiler?",
+        "options": [
+          "Fiziksel bir ayrılışın, anlatıcı için kişisel bir kayıp duygusu da taşıdığını sezdirir.",
+          "Önceki dizelerdeki boşalma görüntüsünü, peronda kalan kişinin artık hiçbir bağının bulunmadığı yargısına dönüştürür.",
+          "Trenin uzaklaşmasıyla anlatıcının ayrılık duygusunun da uzaklaşıp sona erdiğini düşündürür.",
+          "Perondaki insanların ortak davranışını, hepsinin aynı kişisel kaybı yaşadığının kanıtı olarak sunar."
+        ],
+        "correct": 0,
+        "explanation": "Son dize trenin ayrılışına anlatıcı için adı belirtilmeyen kişisel bir kayıp anlamı ekler. B hiçbir bağ kalmadığına, C ayrılık duygusunun sona erdiğine, D bütün insanların aynı kaybı yaşadığına ulaşır. Dizeler bu daha geniş veya ters yorumları desteklemez."
+      },
+      {
+        "id": "t6-1-t16-03",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Bir öğrenci, hazırladığı doğa dergisinde karıncaların yuvalarını uzun uzun anlatır. Arkadaşı “Okur bunu başka yerden de öğrenebilir.” deyince şöyle cevap verir: “Doğru, ama ben aynı yuvayı üç hafta izledim. Yağmurdan sonraki değişiklikleri ilk günkü çizimimle yan yana koydum.”\n\nÖğrencinin cevabı, arkadaşının eleştirisine karşı hangi ayrımı öne çıkarır?",
+        "options": [
+          "Bilinen bir konunun, daha çok ayrıntı eklenerek önceki anlatımlardan mutlaka daha güvenilir hâle getirilebileceğini",
+          "Bir gözlemin özgün sayılması için daha önce hiçbir kaynakta yer almamış bir canlı türünü konu alması gerektiğini",
+          "Aynı yuvayı izleyerek edinilen bilgilerin, bütün karınca yuvalarındaki değişimi açıklamaya yeteceğini",
+          "Bilinen bir konunun, belirli bir yerde zaman içinde izlenen değişimler yoluyla özgün biçimde ele alınabileceğini"
+        ],
+        "correct": 3,
+        "explanation": "Öğrenci konunun başka kaynaklarda anlatıldığını reddetmez; katkısı aynı yuvanın değişimini kendi çizimleriyle karşılaştırmaktır. A özgünlük ile güvenilirliği karıştırır, B konunun hiç işlenmemiş olmasını şart koşar, C tek yuvadaki gözlemi bütün yuvalara genişletir."
+      },
+      {
+        "id": "t6-1-t16-04",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "I. Bir nesneye sık sık bakmak, onun ayrıntılarını fark ettiğimiz anlamına gelmeyebilir.\nII. Çocuklardan sınıftaki saati çizmelerini istediğimde çoğu, rakamların biçimini hatırlamadı.\nIII. Oysa teneffüsü beklerken hepimiz defalarca o saate bakıyorduk.\nIV. Bu kararımı uygulamak için onlardan saati bir dakika boyunca yalnızca incelemelerini istedim.\nV. Sonraki çizimde akrep ve yelkovanın biçimi gibi ayrıntılar da yer aldı.\n\n“Bunun üzerine, ikinci çizimden önce dikkatlerini saatin verdiği bilgiden görünüşüne çevirmeye karar verdim.” cümlesi hangi cümlenin ardından getirilirse hem kararın gerekçesi hem de IV. cümlenin gönderme yaptığı bilgi yerli yerine oturur?",
+        "options": [
+          "I. cümlenin",
+          "III. cümlenin",
+          "IV. cümlenin",
+          "V. cümlenin"
+        ],
+        "correct": 1,
+        "explanation": "II ve III, sık bakıldığı hâlde saatin görünüşünün hatırlanmadığını gösterir. Eklenecek cümle bu durum üzerine alınan kararı verir; IV’teki “bu kararımı” da ona bağlanır. I’den sonra henüz gerekçe yoktur; IV veya V’den sonra yerleştirilirse IV’ün gönderme yaptığı karar, uygulanmasından önce verilmemiş olur."
+      },
+      {
+        "id": "t6-1-t16-05",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Bir okulun etkinlik afişinden alınan aşağıdaki çizimde yazı ile görüntü birlikte kullanılmıştır.\n\nÇizimin eleştirisini en iyi açıklayan yorum hangisidir?",
+        "options": [
+          "Ödüllerin çokluğu, etkinliğe katılan herkesin başarılı olacağını ve bir ödül kazanacağını gösterir.",
+          "Çocuk sahnenin altında olduğu için çağrının yalnızca daha önce ödül kazanmış kişilere yapıldığı anlaşılır.",
+          "Çizim, sahneye çıkabilmek için ödüllerin değerini anlamanın yeterli olduğunu savunur.",
+          "Katılıma açık olunduğunu söylemekle yetinilmemesi, katılımın önündeki somut engellerin de kaldırılması gerektiğini düşündürür."
+        ],
+        "correct": 3,
+        "explanation": "Afişte herkes sahneye çağrılırken ödül vitrini sahneye çıkan merdiveni kapatır. Sözdeki açıklık, düzenlemedeki engelle çelişir. Görsel herkesin ödül kazanacağını, çağrının yalnız kazananlara yapıldığını veya engelin ödüllerin değerini anlamakla aşılacağını göstermez.",
+        "imageUrl": "/grade6/turkce/test-16/soru-05.svg",
+        "imageAlt": "Herkes sahneye yazılı afiş. Sahneye çıkan tek merdivenin önüne, kupaların bulunduğu geniş bir ödül vitrini konmuş. Çocuk vitrinin önünde durup merdivene bakıyor. Sahnenin yanında açıkça tek çıkış oku gösteriliyor.",
+        "imageWidth": 360,
+        "imageHeight": 760
+      },
+      {
+        "id": "t6-1-t16-06",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Aşağıda bir öykünün olayları ve yazarın anlatım planı verilmiştir.\n\nBu plana uyan ve olaylara yeni bir neden eklemeyen başlangıç hangisidir?",
+        "options": [
+          "Leyla, sandığın kapağını kaldırınca eski uçurtmasını gördü. Üç yıl önce onu dedesiyle yaptıkları günü hatırladı. Bir süre sonra sandığın başında gülümsedi ve uçurtmayı eline aldı.",
+          "Leyla, dedesiyle uçurtma yaptı; üç yıl sonra onu sandıkta buldu. Uçurtmayı eline alınca o günkü neşesi geri geldi.",
+          "Leyla, dedesiyle yeniden uçurtma yapmak için sandığı açtı. İçindeki eski uçurtmayı görünce üç yıl önceki güne döndü; sonra uçurtmayı eline aldı.",
+          "Leyla, sandıktaki uçurtmayı eline aldıktan sonra onu nasıl yaptıklarını hatırladı. Anısı bitince sandığın kapağını ilk kez kaldırdı."
+        ],
+        "correct": 0,
+        "explanation": "Plan 2026’da sandığı açmayla başlayıp 2023’teki yapım gününe dönmeyi, ardından 2026’da uçurtmayı ele almayla sürmeyi ister. A bu sırayı izler ve sandığı açmaya yeni bir amaç yüklemez. B olayları tarih sırasıyla anlatır; C belirtilmeyen bir amaç ekler; D başlangıç ile dönüş sırasını bozar.",
+        "imageUrl": "/grade6/turkce/test-16/soru-06.svg",
+        "imageAlt": "Olay kartları: 2023, Leyla dedesiyle uçurtmayı yaptı. 2026, sandığı açıp uçurtmayı gördü. Aynı gün, uçurtmayı eline aldı. Anlatım planı: Sandık açılır; yapım günü hatırlanır; sandığın başındaki ana dönülür.",
+        "imageWidth": 360,
+        "imageHeight": 800
+      },
+      {
+        "id": "t6-1-t16-07",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Bir dergi yazısında şu cümle yer alıyor: “Yazar, ‘Bu öyküyü bitiremedim.’ diyen okurların eleştirisini önemsiyor.” Editör, alıntıyı “Bu öyküyü bitiremedim diyen okurların eleştirisini önemsiyorum.” biçiminde yazıp bütün cümleyi yazara ait bir söz olarak yayımlamak istiyor.\n\nBu değişiklikle ilgili hangi değerlendirme doğrudur?",
+        "options": [
+          "Yazar eleştiriyi önemsediği için cümlenin tamamının onun ağzından verilmesi kaynakta bulunmayan hiçbir bilgi eklemez.",
+          "Yalnızca kişi eki değiştiğinden alıntının kime ait olduğu ve hangi sözlerin aynen aktarıldığı korunur.",
+          "Okurların sözünün içeriği aktarılırken, anlatıcının verdiği bilgi de yazarın aynen söylediği bir sözmüş gibi sunulmuş olur.",
+          "Öyküyü bitirememe durumu okurlardan yazara aktarılmış ve öyküyü yazmayı bitiremediği söylenmiş olur."
+        ],
+        "correct": 2,
+        "explanation": "İlk cümlede iç tırnakla aktarılan “Bu öyküyü bitiremedim.” sözü okurlarındır; yazarın eleştiriyi önemsediği ise anlatıcının bilgisidir. Editör ikinci bilgiyi de yazarın doğrudan sözü gibi gösterir. Yazarın bunu bu biçimde söylediği kaynakta yoktur. “Diyen okurlar” ifadesi korunduğu için bitiremeyen kişi yine okurlardır."
+      },
+      {
+        "id": "t6-1-t16-08",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Bir eleştirmen, genç bir şair için “Ustalarının sesini iyi duymuş; şimdi o sesin yankısı olmaktan çıkması gerekiyor.” diyor.\n\nBu sözde övgüyle beklentiyi birlikte koruyan açıklama hangisidir?",
+        "options": [
+          "Şairin ustalarının söyleyişini başarıyla öğrenmesi övülmekte, özgünleşmek için onlardan edindiği her şeyi bırakması istenmektedir.",
+          "Şairin önceki şairlerden beslenmesi değerli bulunmakta, öğrendiklerini kendine özgü bir söyleyişe dönüştürmesi istenmektedir.",
+          "Şairin ustalarıyla aynı konuları işlemesi övülmekte, kendine özgü olabilmesi için yalnızca farklı konular seçmesi beklenmektedir.",
+          "Şairin ustalarını iyi anlaması övülmekte, özgünleşmesinin onların sesini daha kusursuz yinelemesine bağlı olduğu söylenmektedir."
+        ],
+        "correct": 1,
+        "explanation": "“Sesini iyi duymak” ustalardan yararlanmayı, “yankısı olmaktan çıkmak” onların söyleyişini yinelemekle yetinmemeyi anlatır. B iki yönü korur. A bütün birikimi bırakmayı şart koşar; C söyleyiş sorununu yalnız konu seçimine indirger; D beklenen özgünlüğü daha iyi taklit olarak yorumlar."
+      },
+      {
+        "id": "t6-1-t16-09",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Bir romanın sonunda kahraman, yıllardır gitmek istediği şehre gitmez ve kasabada kalır.\nEleştirmen 1: “Bu son, baştaki hedefle çelişiyor; kararının değişmesini hazırlayan bir olay yok.”\nEleştirmen 2: “Son, baştaki hedeften farklı ama kahramanın yaşadıkları bu değişikliği hazırlıyor.”\n\nİki eleştirmen arasındaki asıl anlaşmazlığı çözmek için romanda öncelikle ne araştırılmalıdır?",
+        "options": [
+          "Kahramanın son kararının, romanın başlangıcındaki hedefinden ne ölçüde uzaklaştığı",
+          "Kahramanın kasabada kalmasının, okurların kendi yaşam tercihleriyle ne kadar örtüştüğü",
+          "Kahramanın karar değiştirmesinin, gerçek yaşamda mümkün bir davranış olup olmadığı",
+          "Kahramanın yaşadığı olaylarla kasabada kalma kararı arasında metnin kurduğu bağlar"
+        ],
+        "correct": 3,
+        "explanation": "İki eleştirmen hedefin değiştiğini zaten kabul eder; ayrılık, bu değişikliğin romanda hazırlanıp hazırlanmadığıdır. Bu nedenle metindeki yaşantı–karar bağları incelenmelidir. Değişimin büyüklüğü, okur tercihi veya gerçek hayatta mümkün olması, romanda gerekçelendirildiğini tek başına göstermez."
+      },
+      {
+        "id": "t6-1-t16-10",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "I. Bir müzenin sessiz olması, orada anlatılan hiçbir şey bulunmadığı anlamına gelmez.\nII. Aşınmış bir kaşık, onu kullanan insanların gündelik yaşamını düşündürebilir.\nIII. Bir sandığın içindeki yamalı örtü de eşyaların atılmadan onarıldığı günleri akla getirebilir.\nIV. Müzedeki eşyaların yaşını belirlemek için yapıldıkları malzemelerin özellikleri incelenir.\nV. Yeter ki bu izlere, yalnızca eski eşyalara bakar gibi değil, insan yaşamına açılan ipuçları olarak yaklaşalım.\n\nHangi cümle çıkarılmalıdır ve bunun doğru gerekçesi nedir?",
+        "options": [
+          "IV; eşyaların yaşının nasıl belirlendiğine geçerek bu eşyaların insan yaşamından izler taşıması düşüncesini geliştirmez.",
+          "II; tek bir nesneden insanların yaşamına geçtiği için girişteki genel düşünceye örnek oluşturamaz.",
+          "III; farklı bir eşya üzerinden aynı düşünceyi örneklediğinden paragrafın bütünlüğünü bozan bir yinelemedir.",
+          "V; nesnelerden okurun yaklaşımına geçerek önceki örneklerle kurulabilecek anlam bağını koparır."
+        ],
+        "correct": 0,
+        "explanation": "Paragraf, sessiz müzedeki eşya izlerinin insan yaşamını düşündürmesini işler. II ve III bu düşünceyi örnekler; V “bu izler” diyerek örneklerden sonuç çıkarır. IV de eşyalardan söz etse de onların yaşının nasıl belirlendiğine geçerek düşüncenin gelişimini keser."
+      }
     ]
   },
   "term2": {}
