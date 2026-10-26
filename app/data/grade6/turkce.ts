@@ -1503,6 +1503,156 @@ export const turkceData: SubjectData = {
         "correct": 3,
         "explanation": "Haber, fidanların dikildiğini bildirir; gelecekte hepsinin büyüyeceğini garanti etmez. Öğrenci verilen bilgiden kesin olarak çıkarılamayan bir sonuç üretmiştir."
       }
+    ],
+    "test11": [
+      {
+        "prompt": "Okul sergisi için hazırladığımız modellerin hepsi ilk denemede çalışmadı. Ece, kendi modelinin neden durduğunu not etmişti; Bora ise yalnızca “Olmadı.” yazmıştı. Öğretmenimiz, “İkinizin de modeli çalışmadı diye bu iki denemeyi aynı kefeye koyamayız.” dedi.\nÖğretmenin sözüyle vurgulamak istediği düşünce hangisidir?",
+        "options": [
+          "Bir denemenin değeri, ortaya çıkan ürün kadar o süreçte edinilen bilgiye de bağlıdır.",
+          "Bir çalışmayı başarılı saymak için alınan notların ayrıntılı olması yeterlidir.",
+          "Aynı sonuca ulaşan denemeler, çalışma süresi bakımından karşılaştırılmalıdır.",
+          "Çalışmayan bir model hakkında yorum yapmak için önce modeli yeniden kurmak gerekir."
+        ],
+        "correct": 0,
+        "explanation": "Öğretmen, iki çalışmanın sonucunun aynı görünmesine rağmen birinde nedenin araştırılıp kaydedildiğine dikkat çeker. A hem ürünün sonucunu hem öğrenilen bilgiyi kapsar. B, not tutmayı tek başına başarı için yeterli sayar; C ve D metinde verilmeyen ölçütler ekler.",
+        "id": "t6-1-t11-01",
+        "subject": "turkce",
+        "term": 1
+      },
+      {
+        "prompt": "I. Metin: Bir ağacın adını öğrenince onu tanıdığımı sanmıştım. Sonra aynı ağacın ilkbaharda başka, kışın başka göründüğünü fark ettim. Adını bilmek, onu gözlemlemeye başlamamı sağlamıştı; gözlemimin yerini tutmuyordu.\nII. Metin: Bir şehrin haritası, sokakların birbirine nasıl bağlandığını gösterir. Fakat o sokaklarda yürürken duyduğunuz sesleri ve karşılaştığınız insanları anlatamaz. Harita yol buldurur; yolculuğun bütününü yaşatmaz.\nBu iki metnin ortak düşüncesini en iyi ifade eden cümle hangisidir?",
+        "options": [
+          "Bir varlığı tanımak için önce onun adını ve bulunduğu yeri öğrenmek gerekir.",
+          "Gözlem sırasında edinilen bilgiler, önceden öğrenilen bilgilerin yanlış olduğunu gösterir.",
+          "Tanımayı kolaylaştıran bir bilgi veya araç, tanınan şeyin bütün özelliklerini tek başına sunmaz.",
+          "Bir konuda yeterince deneyim kazanan kişi, o konudaki yardımcı bilgilere ihtiyaç duymaz."
+        ],
+        "correct": 2,
+        "explanation": "İlk metinde ad, ikinci metinde harita yararlı ama sınırlı birer başlangıçtır. İkisi de bu yardımcıların deneyimin bütününün yerini tutmadığını söyler. A zorunlu bir sıra koyar; B bilgilerin yanlış olduğunu, D ise gereksiz hâle geldiğini ileri sürer. Bunlar iki metinde ortak değildir.",
+        "id": "t6-1-t11-02",
+        "subject": "turkce",
+        "term": 1
+      },
+      {
+        "prompt": "Kütüphanedeki öneri kutusuna yalnızca “Daha fazla kitap alınsın.” yazıyorduk. Görevli hangi türleri istediğimizi sorunca birbirimizden farklı kitaplar düşündüğümüzü anladık. Yeni notumuza türleri ve neden istediğimizi ekledik. Bir ay sonra isteklerimizin bir kısmının karşılandığını gördük; bazı kitaplar için ise beklememiz gerektiği açıklandı.\nBu metinden aşağıdaki sonuçların hangisine ulaşılamaz?",
+        "options": [
+          "Aynı genel isteği dile getiren kişiler farklı ayrıntıları düşünüyor olabilir.",
+          "Beklenmesi istenen kitapların henüz alınamamasının nedeni bütçenin yetersizliğidir.",
+          "Bir isteğin anlaşılır hâle gelmesi, onun bütünüyle yerine getirileceği anlamına gelmez.",
+          "Görevlinin sorusu, öğrencilerin isteklerini daha belirgin biçimde anlatmasına yardımcı olmuştur."
+        ],
+        "correct": 1,
+        "explanation": "Bekleneceği söylenmiş, ancak bunun nedeni açıklanmamıştır. B’de bütçe yetersizliği kesin neden olarak eklenmiştir. A farklı türler düşünülmesine, C isteklerin kısmen karşılanmasına, D sorudan sonra tür ve gerekçelerin eklenmesine dayanır.",
+        "id": "t6-1-t11-03",
+        "subject": "turkce",
+        "term": 1
+      },
+      {
+        "prompt": "I. Okul bahçesinin eski fotoğrafına bakarken duvarın yanındaki boşluğu fark ettik.\nII. Bugün o yerde büyük bir çınar bulunduğunu biliyorduk.\nIII. Sonunda fotoğrafın arkasındaki tarihi okuyup ağacın o tarihten sonra dikilmiş olabileceğini düşündük.\nIV. Kesin bilgi için okulun eski kayıtlarını incelemeye karar verdik.\n“Bu fark, fotoğrafın ağacın dikilmesinden önce çekilip çekilmediğini merak etmemize yol açtı.” cümlesi, anlam bağlantıları korunarak hangi cümleden sonra getirilmelidir?",
+        "options": [
+          "I",
+          "III",
+          "IV",
+          "II"
+        ],
+        "correct": 3,
+        "explanation": "Bu fark ifadesi, I’deki boş yer ile II’deki bugünkü ağacın karşılaştırılmasını gerektirir. Merakın belirtilmesi, III’te tarihi inceleyerek olasılık üretmelerinden önce gelmelidir. Bu iki koşulu aynı anda yalnız II’den sonrası sağlar.",
+        "id": "t6-1-t11-04",
+        "subject": "turkce",
+        "term": 1
+      },
+      {
+        "prompt": "Öğrenciler, kasabadaki eski bir yapının kullanımını araştırıyor. Görseldeki üç belgeye de bağlı kalan bir tanıtım cümlesi yazmak istiyorlar. Hangisi, belgelerin söylediğinden fazlasını ileri sürmeden hazırlanmıştır?",
+        "options": [
+          "1920’de kütüphane olarak açılan yapı, 1950’den sonra bütünüyle müzeye dönüştürülmüştür.",
+          "1920’de okul olarak kullanılan yapının bir bölümü, 1950’de kütüphane olarak hizmet vermiştir.",
+          "Yapı, 1920’de okul olarak kullanılmış; 1950’deki kayıtta kütüphane olarak anılmış ve 2020’de müze olarak açılmıştır.",
+          "1920’den 2020’ye kadar aralıksız hizmet veren yapının kullanım amacı iki kez değiştirilmiştir."
+        ],
+        "correct": 2,
+        "explanation": "Üç belge sırasıyla 1920’de okul olarak kullanım, 1950 tarihli kütüphane kaydı ve 2020’de müze olarak açılma bilgisini verir. C yalnız bunları birleştirir. A başlangıç kullanımını değiştirir; B “bir bölümü” bilgisini ekler; D belgesiz dönemlerde aralıksız hizmet verildiğini ve değişim sayısını kesinleştirir.",
+        "id": "t6-1-t11-05",
+        "subject": "turkce",
+        "term": 1,
+        "imageWidth": 360,
+        "imageHeight": 810,
+        "imageUrl": "/grade6/turkce/test-11/soru-05.svg",
+        "imageAlt": "1920 tarihli fotoğraf notu yapının okul olarak kullanıldığını, 1950 belediye kaydı kütüphane olarak kullanıldığını, 2020 açılış duyurusu müze olarak açıldığını bildirir."
+      },
+      {
+        "prompt": "Kaynak metin:\n“Okul bahçesine yağmur suyunu biriktiren bir düzenek kurduk. Biriken suyu bitkileri sulamakta kullandık. İlk hafta kabın ağzı açık kaldığı için suya yapraklar düştü. Kabı uygun bir kapakla örttükten sonra suyu daha temiz biriktirebildik.”\n\nX özeti: İlk hafta bir kabın içine yapraklar düştü. Bu tür kaplar her okulda kullanılmalıdır.\nY özeti: Öğrenciler, yağmur suyunu sulamada kullandıkları düzeneği karşılaştıkları soruna göre geliştirdi. Bu düzenekler su toplamanın en ucuz yoludur.\n\nGörseldeki kontroller üstten alta uygulanıp ilk düzeltme gereken yerde durulacaktır. X ve Y için ilk uygulanacak yönergeler sırasıyla hangileridir?",
+        "options": [
+          "Eksik bilgiyi tamamla / Eklenen kısmı çıkar",
+          "Eklenen kısmı çıkar / Eksik bilgiyi tamamla",
+          "Eklenen kısmı çıkar / KULLAN",
+          "KULLAN / Eksik bilgiyi tamamla"
+        ],
+        "correct": 0,
+        "explanation": "X, metnin asıl düşüncesini değil yalnız yaprak düşmesi ayrıntısını verir; bu yüzden ilk kontrolde durulur ve eksik bilgi tamamlanır. X’in eklediği öneriye ikinci kontrolde bakılabilse de ilk yapılacak işlem bu değildir. Y, düzeneğin kullanımını ve geliştirilmesini koruyarak ilk kontrolü geçer. Ancak en ucuz yol olduğu kaynak metinde yoktur; ikinci kontrolde bu ek yargının çıkarılması gerekir.",
+        "id": "t6-1-t11-06",
+        "subject": "turkce",
+        "term": 1,
+        "imageWidth": 360,
+        "imageHeight": 925,
+        "imageUrl": "/grade6/turkce/test-11/soru-06.svg",
+        "imageAlt": "Özet kontrol yolu: Temel düşünce korunmuyorsa eksik bilgiyi tamamla, korunuyorsa ikinci kontrole geç. Metinde olmayan bilgi veya yorum varsa çıkar, yoksa özeti kullan."
+      },
+      {
+        "prompt": "“Yolun sonundaki küçük dükkân yıllardır aynı yerdeydi. Çocukken vitrinindeki tahta oyuncaklara uzaktan bakardım. Dün oraya yeniden gittim. Dükkân sahibi beni tanımadı ama kapının açılırken çıkardığı ses, sanki eski günlerden kalma bir tanıdık gibi karşıladı beni.”\nBu metinle ilgili aşağıdaki değerlendirmelerden hangisi doğrudur?",
+        "options": [
+          "Geçmişte görülen bir yerin bugünkü fiziksel değişimleri karşılaştırılarak zamanın etkisi gösterilmiştir.",
+          "Tanıdık bir sesin çağrıştırdığı anılar, dükkân sahibinin kişiyi hatırlamasını sağlamıştır.",
+          "Anlatıcı, çocukluğunda alamadığı oyuncakları yeniden görerek o günkü isteğinin değiştiğini anlatmıştır.",
+          "Geçmişle bugünkü bir deneyim ilişkilendirilmiş, bir ses anıları canlandıran unsur olarak kullanılmıştır."
+        ],
+        "correct": 3,
+        "explanation": "Anlatıcı, çocukluk anısı ile bugünkü ziyaretini kapı sesi üzerinden ilişkilendirir. Fiziksel değişimler karşılaştırılmaz (A); dükkân sahibi anlatıcıyı tanımaz (B). Anlatıcı bugünkü oyuncak isteğinin değiştiğini söylemez (C). D hem zamanlar arasındaki bağı hem sesin işlevini doğru belirtir.",
+        "id": "t6-1-t11-07",
+        "subject": "turkce",
+        "term": 1
+      },
+      {
+        "prompt": "I. Bu yüzden önerileri yalnız ilgi çekiciliklerine göre değil, uygulanabilirliklerine göre de değerlendirmeye karar verdik.\nII. Sınıf gezisi için konuşurken çok ilgimizi çeken bazı yerlerin bir günlük yolculuk için uzak kaldığını gördük.\nIII. Bu ikinci listeden, ziyaret saatleri bize uymayan yerleri de çıkardık.\nIV. Önce görmek istediğimiz yerleri yazdık, ardından bunlardan aynı gün gidip dönebileceklerimizi ayrı bir listeye aldık.\nV. Son olarak her iki koşula da uyan yerler arasından seçim yaptık.\n\nGönderme yapan sözlerin anlamı ve olayların sırası birlikte düşünüldüğünde anlamlı paragrafın sıralaması hangisidir?",
+        "options": [
+          "II – IV – III – V – I",
+          "II – I – IV – III – V",
+          "II – I – III – IV – V",
+          "II – IV – V – I – III"
+        ],
+        "correct": 1,
+        "explanation": "II’de uzaklık sorunu görülür, I’de bu yüzden uygulanabilirliği de değerlendirme kararı verilir. IV iki listeyi oluşturur; III’teki bu ikinci liste bunlardan aynı gün gidilip dönülebilen yerler listesidir. V’deki iki koşul, aynı gün gidip dönebilme ve ziyaret saatlerinin uygunluğudur. B bütün bağları korur. A kararı seçimden sonraya bırakır; C ikinci liste oluşmadan ona gönderme yapar; D saat koşulu denetlenmeden iki koşula göre seçim yapar.",
+        "id": "t6-1-t11-08",
+        "subject": "turkce",
+        "term": 1
+      },
+      {
+        "prompt": "Bir öğrenci panoya şu notu yazmıştır:\n“Yarın ki toplantıya sizde katılacak mısınız? Toplantıda ki önerileri daha sonra paylaşacağız.”\nNotta yalnızca yazım yanlışları düzeltilirse aşağıdakilerden hangisi elde edilir?",
+        "options": [
+          "Yarınki toplantıya sizde katılacak mısınız? Toplantıdaki önerileri daha sonra paylaşacağız.",
+          "Yarın ki toplantıya siz de katılacak mısınız? Toplantıdaki önerileri daha sonra paylaşacağız.",
+          "Yarınki toplantıya siz de katılacak mısınız? Toplantıdaki önerileri daha sonra paylaşacağız.",
+          "Yarınki toplantıya siz de katılacakmısınız? Toplantıda ki önerileri daha sonra paylaşacağız."
+        ],
+        "correct": 2,
+        "explanation": "Yarınki ve toplantıdaki sözcüklerindeki -ki ektir ve bitişik yazılır. Siz de ifadesindeki de bağlaçtır ve ayrı yazılır. Katılacak mısınız biçiminde soru eki ayrı, ona gelen kişi eki bitişik kalır. Bu koşulların hepsini yalnız C karşılar.",
+        "id": "t6-1-t11-09",
+        "subject": "turkce",
+        "term": 1
+      },
+      {
+        "prompt": "Bir okulda bir hafta boyunca kitaplık köşesini kullanan öğrenci sayısı kaydedildi. Pazartesi 12, cuma 20 öğrenci sayıldı. İki gün arasında kitaplığın yeri değiştirilmiş ve yeni kitaplar eklenmişti. Öğrencilere neden geldikleri sorulmamıştı.\nBu verileri yorumlayan bir öğrenci, gözlenen sonuç ile henüz bilinmeyeni hangi seçenekte doğru ayırmıştır?",
+        "options": [
+          "Öğrenci sayısı artmıştır; artışta yer değişikliği ile yeni kitapların aynı ölçüde etkili olduğu anlaşılmıştır.",
+          "Öğrenci sayısı artmıştır; öğrencilerin yeni kitapları kitaplığın yeni yerinden daha çok beğendiği anlaşılmıştır.",
+          "Öğrenci sayısı artmıştır; pazartesi gelen öğrencilerin tamamının cuma günü de geldiği anlaşılmıştır.",
+          "Öğrenci sayısı artmıştır; bu bilgilerden iki değişikliğin artış üzerindeki ayrı ayrı etkileri belirlenemez."
+        ],
+        "correct": 3,
+        "explanation": "12’den 20’ye çıkan sayı, iki kayıt arasındaki artışı gösterir. Fakat değişikliklerin katkı payı (A), öğrencilerin tercih nedeni (B) ve iki gün gelenlerin aynı kişiler olup olmadığı (C) verilmemiştir. D, kayıtlarda gözlenen artış ile henüz kanıtlanmamış etkiyi birbirinden ayırır.",
+        "id": "t6-1-t11-10",
+        "subject": "turkce",
+        "term": 1
+      }
     ]
   },
   "term2": {}
