@@ -1,95 +1,37 @@
-import { MetadataRoute } from 'next';
+import type { MetadataRoute } from 'next';
 import { getGrade5Tests, grade5Subjects } from './data/grade5/seo';
 import { getGrade6Tests, grade6Subjects } from './data/grade6/seo';
 import type { ChessTestsData } from '../lib/chess/types';
 import chessTestsData from '../public/data/satranc-testleri.json';
+import { TURKCE_GAMES_CONFIG } from '../components/turkce-oyunlari/turkce-games-config';
+import { STATIC_SEO_PAGES } from '../lib/seo-pages';
+import { absoluteUrl } from '../lib/seo';
+import { getTestCatalog } from '../lib/test-data';
+import { getGorevdeSubjects } from './gorevde-yukselme/data';
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://testdunya.net';
-  const lastMod = new Date();
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const [catalog, gorevdeSubjects] = await Promise.all([getTestCatalog(), getGorevdeSubjects()]);
+  const paths = new Set<string>(STATIC_SEO_PAGES.filter((page) => page.index !== false).map((page) => page.path));
 
-  const mainRoutes = ['', '/mistakes', '/iletisim'].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: lastMod,
-    changeFrequency: 'daily' as const,
-    priority: route === '' ? 1.0 : 0.8,
-  }));
+  for (const subject of grade5Subjects) {
+    paths.add(`/5-sinif/${subject.id}`);
+    for (const test of getGrade5Tests(subject.id)) paths.add(`/5-sinif/${subject.id}/${test.slug}`);
+  }
+  for (const subject of grade6Subjects) {
+    paths.add(`/6-sinif/${subject.id}`);
+    for (const test of getGrade6Tests(subject.id)) paths.add(`/6-sinif/${subject.id}/${test.slug}`);
+  }
+  for (const test of (chessTestsData as ChessTestsData).tests) {
+    if (test.questions?.length) paths.add(`/chess-tests/${test.id}`);
+  }
+  for (const game of TURKCE_GAMES_CONFIG) paths.add(`/turkce-oyunlari/${game.slug}`);
+  for (const test of catalog) {
+    if (test.id === test.canonicalId) paths.add(`/test/${test.id}`);
+  }
+  for (const subject of gorevdeSubjects) {
+    if (subject.tests.length) paths.add(`/gorevde-yukselme/${subject.slug}`);
+  }
 
-  const grade5Routes = [
-    {
-      url: `${baseUrl}/5-sinif`,
-      lastModified: lastMod,
-      changeFrequency: 'daily' as const,
-      priority: 0.95,
-    },
-    ...grade5Subjects.flatMap((subject) => [
-      {
-        url: `${baseUrl}/5-sinif/${subject.id}`,
-        lastModified: lastMod,
-        changeFrequency: 'weekly' as const,
-        priority: 0.85,
-      },
-      ...getGrade5Tests(subject.id).map((test) => ({
-        url: `${baseUrl}/5-sinif/${subject.id}/${test.slug}`,
-        lastModified: lastMod,
-        changeFrequency: 'weekly' as const,
-        priority: 0.75,
-      })),
-    ]),
-  ];
-
-  const grade6Routes = [
-    {
-      url: `${baseUrl}/6-sinif`,
-      lastModified: lastMod,
-      changeFrequency: 'daily' as const,
-      priority: 0.95,
-    },
-    ...grade6Subjects.flatMap((subject) => [
-      {
-        url: `${baseUrl}/6-sinif/${subject.id}`,
-        lastModified: lastMod,
-        changeFrequency: 'weekly' as const,
-        priority: 0.85,
-      },
-      ...getGrade6Tests(subject.id).map((test) => ({
-        url: `${baseUrl}/6-sinif/${subject.id}/${test.slug}`,
-        lastModified: lastMod,
-        changeFrequency: 'weekly' as const,
-        priority: 0.75,
-      })),
-    ]),
-  ];
-
-  const examHubs = ['/8-sinif-lgs', '/lgs', '/lgs/sozel', '/lgs/sayisal', '/yks', '/kpss', '/tus', '/dus', '/hmgs'].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: lastMod,
-    changeFrequency: 'daily' as const,
-    priority: 0.9,
-  }));
-
-  const otherRoutes = ['/ielts/speaking', '/speedrun', '/kelime-avcisi', '/edirne-masallari', '/test/lgs-sozel-test-1', '/test/lgs-sozel-test-2', '/test/lgs-sozel-test-3', '/test/lgs-sozel-test-4', '/test/lgs-sayisal-test-1', '/test/lgs-sayisal-test-2', '/test/lgs-sayisal-test-3', '/test/lgs-sayisal-test-4'].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: lastMod,
-    changeFrequency: 'weekly' as const,
-    priority: 0.6,
-  }));
-
-  const chessData = chessTestsData as ChessTestsData;
-  const chessRoutes = [
-    {
-      url: `${baseUrl}/chess-tests`,
-      lastModified: lastMod,
-      changeFrequency: 'weekly' as const,
-      priority: 0.75,
-    },
-    ...(chessData.tests ?? []).map((test) => ({
-      url: `${baseUrl}/chess-tests/${test.id}`,
-      lastModified: lastMod,
-      changeFrequency: 'weekly' as const,
-      priority: 0.65,
-    })),
-  ];
-
-  return [...mainRoutes, ...grade5Routes, ...grade6Routes, ...examHubs, ...otherRoutes, ...chessRoutes];
+  // Publish canonical content routes only; a rebuild is not a content modification.
+  return [...paths].sort().map((path) => ({ url: absoluteUrl(path) }));
 }

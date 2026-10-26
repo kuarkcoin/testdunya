@@ -1,66 +1,41 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import Script from 'next/script';
 import TestCard from '../../components/chess/TestCard';
 import type { ChessTestsData } from '../../lib/chess/types';
 import chessTestsData from '../../public/data/satranc-testleri.json';
+import { absoluteUrl, breadcrumbJsonLd, createPageMetadata, serializeJsonLd } from '../../lib/seo';
 
-const data = chessTestsData as ChessTestsData;
-const baseUrl = 'https://testdunya.net';
-
-export const metadata: Metadata = {
-  title: 'Chess Tests Online | Best Move, Checkmate and Tactics Puzzles | TestDünya',
-  description: 'Solve online chess tests with best move puzzles, checkmate tactics, forks, pins, skewers and defensive moves. 50 chess tests with 500 real puzzle questions.',
-  keywords: [
-    'chess tests',
-    'online chess test',
-    'chess puzzles',
-    'best move',
-    'checkmate puzzles',
-    'chess tactics',
-    'fork tactic',
-    'pin tactic',
-    'skewer tactic',
-    'defensive move',
-    'chess quiz',
-    'chess training',
-  ],
-  alternates: {
-    canonical: '/chess-tests',
-  },
-  openGraph: {
-    title: 'Chess Tests Online | TestDünya',
-    description: 'Practice chess tactics with 50 online chess tests and 500 real puzzle questions.',
-    url: '/chess-tests',
-    siteName: 'TestDünya',
-    type: 'website',
-    locale: 'en_US',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Chess Tests Online | TestDünya',
-    description: 'Practice chess tactics with 50 online chess tests and 500 real puzzle questions.',
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
+const tests = (chessTestsData as ChessTestsData).tests.filter((test) => test.questions?.length > 0);
+const questionCount = tests.reduce((total, test) => total + test.questions.length, 0);
+const description = `Practice best moves, checkmates, forks and pins with ${tests.length} online chess tests and ${questionCount} timed puzzle questions.`;
+const pageMetadata = createPageMetadata({
+  title: 'Chess Tests Online — Best Moves and Tactics',
+  description,
+  path: '/chess-tests',
+});
+export const metadata: Metadata = { ...pageMetadata, openGraph: { ...pageMetadata.openGraph, locale: 'en_US' } };
 
 export default function ChessTestsPage() {
-  const tests = data.tests ?? [];
   const collectionSchema = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
     name: 'Chess Tests Online',
-    description: '50 online chess tests with 500 real puzzle questions.',
+    description,
     inLanguage: 'en-US',
-    url: `${baseUrl}/chess-tests`,
+    url: absoluteUrl('/chess-tests'),
+    mainEntity: {
+      '@type': 'ItemList',
+      numberOfItems: tests.length,
+      itemListElement: tests.map((test, index) => ({
+        '@type': 'ListItem', position: index + 1, name: test.title, url: absoluteUrl(`/chess-tests/${test.id}`),
+      })),
+    },
   };
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-emerald-50 via-white to-amber-50 px-4 py-10 sm:px-6 lg:px-8">
-      <Script id="chess-tests-collection-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(collectionSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(breadcrumbJsonLd([{ name: 'Home', path: '/' }, { name: 'Chess Tests', path: '/chess-tests' }])) }} />
       <div className="mx-auto max-w-7xl">
         <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <Link href="/" className="inline-flex w-fit items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-bold text-emerald-800 shadow-sm ring-1 ring-emerald-100 transition hover:bg-emerald-50">
@@ -124,3 +99,4 @@ export default function ChessTestsPage() {
     </main>
   );
 }
+

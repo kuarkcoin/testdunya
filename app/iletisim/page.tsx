@@ -1,13 +1,10 @@
-import { Metadata } from 'next';
+import { getStaticPageMetadata } from '../../lib/seo-pages';
 import Link from 'next/link';
 
 // 👇 GÜNCELLENEN MAİL ADRESİN
 const MY_EMAIL = "muratot79@gmail.com"; 
 
-export const metadata: Metadata = {
-  title: 'İletişim - TestDünya',
-  description: 'Bizimle iletişime geçin. Öneri, şikayet ve görüşleriniz.',
-};
+export const metadata = getStaticPageMetadata('/iletisim');
 
 // Basit bir Geri Dön İkonu
 const ArrowLeft = (props: React.SVGProps<SVGSVGElement>) => (
@@ -95,3 +92,4 @@ export default function ContactPage() {
     </div>
   );
 }
+

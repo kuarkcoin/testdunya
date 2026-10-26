@@ -2,7 +2,6 @@
 
 import { useCallback, useMemo, useState } from 'react';
 import Link from 'next/link';
-import Script from 'next/script';
 import ChessBoard from '../../../components/chess/ChessBoard';
 import ChessOption from '../../../components/chess/ChessOption';
 import Timer from '../../../components/chess/Timer';
@@ -20,8 +19,6 @@ type ChessTestClientProps = {
   testNumber?: number;
   previousTestId?: string;
   nextTestId?: string;
-  quizSchema?: Record<string, unknown>;
-  breadcrumbSchema?: Record<string, unknown>;
 };
 
 const questionTranslations: Record<string, string> = {
@@ -68,7 +65,7 @@ function getSourceLabel(question?: ChessQuestion) {
   return question?.source || 'Lichess Puzzle Database';
 }
 
-export default function ChessTestClient({ test, testNumber = 1, previousTestId, nextTestId, quizSchema, breadcrumbSchema }: ChessTestClientProps) {
+export default function ChessTestClient({ test, testNumber = 1, previousTestId, nextTestId }: ChessTestClientProps) {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedOptionId, setSelectedOptionId] = useState<string | undefined>();
   const [remainingSeconds, setRemainingSeconds] = useState(test?.questionTimeSeconds ?? 180);
@@ -133,13 +130,6 @@ export default function ChessTestClient({ test, testNumber = 1, previousTestId, 
     return { correct, wrong, blank, percentage };
   }, [answers, questions.length]);
 
-  const schemaScripts = (
-    <>
-      {quizSchema && <Script id="chess-test-quiz-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(quizSchema) }} />}
-      {breadcrumbSchema && <Script id="chess-test-breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />}
-    </>
-  );
-
   if (!test) {
     return (
       <main className="min-h-screen bg-gradient-to-b from-emerald-50 via-white to-amber-50 px-4 py-10">
@@ -158,7 +148,6 @@ export default function ChessTestClient({ test, testNumber = 1, previousTestId, 
   if (!questions.length) {
     return (
       <main className="min-h-screen bg-gradient-to-b from-emerald-50 via-white to-amber-50 px-4 py-10">
-        {schemaScripts}
         <div className="mx-auto max-w-3xl rounded-3xl border border-amber-200 bg-white p-8 text-center shadow-sm">
           <h1 className="text-3xl font-black text-slate-900">This test has no questions yet</h1>
           <p className="mt-3 text-slate-600">The test will work automatically when questions are added to the JSON data.</p>
@@ -173,7 +162,6 @@ export default function ChessTestClient({ test, testNumber = 1, previousTestId, 
   if (isFinished) {
     return (
       <main className="min-h-screen bg-gradient-to-b from-emerald-50 via-white to-amber-50 px-4 py-8 sm:px-6 lg:px-8">
-        {schemaScripts}
         <div className="mx-auto max-w-5xl">
           <section className="rounded-[2rem] bg-white p-6 shadow-xl ring-1 ring-emerald-100 sm:p-8">
             <div className="text-center">
@@ -230,7 +218,6 @@ export default function ChessTestClient({ test, testNumber = 1, previousTestId, 
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-emerald-50 via-white to-amber-50 px-4 py-6 sm:px-6 lg:px-8">
-      {schemaScripts}
       <div className="mx-auto max-w-6xl">
         <nav className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between" aria-label="Breadcrumb">
           <ol className="flex flex-wrap items-center gap-2 text-sm font-bold text-slate-600">
@@ -305,3 +292,4 @@ export default function ChessTestClient({ test, testNumber = 1, previousTestId, 
     </main>
   );
 }
+

@@ -1,12 +1,12 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { canonicalBase, getGrade6Tests, grade6Subjects } from '../data/grade6/seo';
+import { getGrade6Tests, grade6Subjects } from '../data/grade6/seo';
+import { createPageMetadata } from '../../lib/seo';
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: '6. Sınıf Testleri - Matematik, Türkçe, Fen ve İngilizce',
-  description: '6. sınıf için 1. dönem başlangıç testleri. Matematik, Türkçe, Fen Bilimleri ve İngilizce sorularını çöz, sonuçlarını ve açıklamalı cevaplarını incele.',
-  alternates: { canonical: `${canonicalBase}/6-sinif` },
-};
+  description: '6. sınıf Matematik, Türkçe, Fen Bilimleri ve İngilizce için konu ve karma tekrar testleri. Soruları ücretsiz çöz, puanını ve açıklamalı cevapları incele.',
+  path: '/6-sinif',
+});
 
 export default function Grade6Page() {
   const allTests = grade6Subjects.flatMap((subject) => getGrade6Tests(subject.id));
@@ -15,9 +15,9 @@ export default function Grade6Page() {
   return (
     <section className="space-y-8 rounded-[2rem] border border-slate-200 bg-slate-50 p-5 text-slate-900 shadow-xl md:p-10">
       <header className="mx-auto max-w-3xl space-y-4 text-center">
-        <p className="text-xs font-black uppercase tracking-widest text-indigo-700">1. dönem • Başlangıç paketi</p>
+        <p className="text-xs font-black uppercase tracking-widest text-indigo-700">Konu testleri • Karma tekrar</p>
         <h1 className="text-3xl font-black tracking-tight md:text-5xl">6. Sınıf Testleri</h1>
-        <p className="font-semibold leading-relaxed text-slate-600">Yeni sınıfına hoş geldin! Matematik, Türkçe, Fen Bilimleri ve İngilizce derslerinin ilk konularını çalış. Testin sonunda doğru cevapları ve çözüm notlarını incele.</p>
+        <p className="font-semibold leading-relaxed text-slate-600">Matematik, Türkçe, Fen Bilimleri ve İngilizce konularını tekrar et, karma testlerle bilgilerini bir arada kullan. Testin sonunda doğru cevapları ve çözüm notlarını incele.</p>
         <p className="font-bold text-indigo-700">4 ders • {allTests.length} test • {questionCount} açıklamalı soru</p>
       </header>
       <nav aria-label="6. sınıf dersleri" className="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -36,8 +36,9 @@ export default function Grade6Page() {
         })}
       </nav>
       <aside className="rounded-2xl border border-indigo-100 bg-indigo-50 p-5 font-semibold leading-relaxed text-slate-700">
-        Bu başlangıç paketi 1. dönemin ilk konularını kapsar; tüm yılın konu taraması değildir. 2. dönem testleri henüz eklenmedi.
+        İstediğin dersi seçerek konu testlerine ve karma tekrar çalışmalarına ulaşabilirsin. Test kartlarında konu başlığını ve soru sayısını görebilirsin.
       </aside>
     </section>
   );
 }
+

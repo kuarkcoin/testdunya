@@ -1,23 +1,22 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import Script from 'next/script';
 import Grade5QuizClient from '../../components/grade5/Grade5QuizClient';
 import { canonicalBase, getGrade5Tests, grade5Subjects } from '../data/grade5/seo';
+import { createPageMetadata, serializeJsonLd } from '../../lib/seo';
 
-export const metadata: Metadata = {
-  title: '5. Sınıf Test Çöz - Matematik, Türkçe, Fen ve İngilizce | TestDünya',
+export const metadata = createPageMetadata({
+  title: '5. Sınıf Test Çöz - Matematik, Türkçe, Fen ve İngilizce',
   description:
-    '5. sınıf test çöz sayfasında matematik, Türkçe, fen ve İngilizce için MEB uyumlu şekilli, görselli ve yeni nesil soruları ücretsiz çöz.',
-  alternates: { canonical: `${canonicalBase}/5-sinif` },
-  robots: { index: true, follow: true },
-};
+    '5. sınıf Matematik, Türkçe, Fen Bilimleri ve İngilizce için konu tekrarları, şekilli ve metin tabanlı testler. Ücretsiz çöz, açıklamalı cevapları incele.',
+  path: '/5-sinif',
+});
 
 const webPageSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
   name: '5. Sınıf Test Çöz - Matematik, Türkçe, Fen ve İngilizce',
   description:
-    'TestDünya 5. sınıf testleri; matematik, Türkçe, fen bilimleri ve İngilizce dersleri için MEB uyumlu şekilli, görselli ve yeni nesil sorulardan oluşur.',
+    'TestDünya 5. sınıf testleri; Matematik, Türkçe, Fen Bilimleri ve İngilizce için şekilli ve metin tabanlı sorularla konu tekrarı sunar.',
+  url: `${canonicalBase}/5-sinif`,
   educationalLevel: '5. Sınıf',
   learningResourceType: 'Practice test',
   inLanguage: 'tr-TR',
@@ -27,18 +26,15 @@ const webPageSchema = {
 export default function Grade5Page() {
   return (
     <>
-      <Script id="grade5-webpage-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
+      <script id="grade5-webpage-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(webPageSchema) }} />
       <section className="bg-slate-50 text-slate-900 rounded-[2rem] border border-slate-200 shadow-xl p-5 md:p-10 space-y-10">
         <header className="max-w-4xl mx-auto text-center space-y-5">
-          <p className="text-indigo-600 font-black uppercase tracking-[0.25em] text-xs">MEB uyumlu online testler</p>
+          <p className="text-indigo-600 font-black uppercase tracking-[0.25em] text-xs">Ücretsiz ve açıklamalı online testler</p>
           <h1 className="text-3xl md:text-5xl font-black tracking-tighter">
             5. Sınıf Test Çöz - Matematik, Türkçe, Fen ve İngilizce
           </h1>
           <p className="text-base md:text-lg text-slate-600 font-semibold leading-relaxed">
-            TestDünya ile <strong>5. sınıf test çöz</strong> deneyimini güçlendir: <strong>5. sınıf matematik testi</strong>,{' '}
-            <strong>5. sınıf fen testi</strong>, <strong>5. sınıf türkçe testi</strong> ve{' '}
-            <strong>5. sınıf ingilizce testi</strong> içerikleri; <strong>şekilli sorular</strong>, <strong>görselli sorular</strong>,{' '}
-            <strong>yeni nesil sorular</strong> ve <strong>MEB uyumlu</strong> kazanım yapısıyla ücretsiz sunulur.
+            Matematik, Türkçe, Fen Bilimleri ve İngilizce konularını ücretsiz testlerle tekrar et. Dersini seç, şekilli veya metin tabanlı soruları çöz; testin sonunda cevapları ve çözüm notlarını incele.
           </p>
         </header>
 
@@ -71,9 +67,9 @@ export default function Grade5Page() {
         </nav>
 
         <section className="rounded-[1.75rem] bg-white border border-slate-200 p-6 md:p-8 shadow-sm space-y-3">
-          <h2 className="text-2xl md:text-3xl font-black tracking-tight">5. Sınıf Şekilli ve Görselli Testler</h2>
+          <h2 className="text-2xl md:text-3xl font-black tracking-tight">5. Sınıf Konu Tekrar Testleri</h2>
           <p className="text-slate-600 font-semibold leading-relaxed">
-            TestDünya 5. sınıf testleri; matematik, Türkçe, fen bilimleri ve İngilizce dersleri için şekilli, görselli ve yeni nesil sorulardan oluşur. Öğrenciler testleri ücretsiz çözebilir, sonuçlarını görebilir ve eksiklerini analiz edebilir.
+            Test listelerinde soru sayısını, dönemi ve görsel bulunup bulunmadığını görebilirsin. Testleri tamamlayarak sonuçlarını ve açıklamalı cevaplarını inceleyebilirsin.
           </p>
         </section>
       </section>
@@ -85,3 +81,4 @@ export default function Grade5Page() {
     </>
   );
 }
+

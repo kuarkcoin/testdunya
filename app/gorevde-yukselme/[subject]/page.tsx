@@ -1,68 +1,68 @@
-'use client';
-
-import React from 'react';
 import Link from 'next/link';
-import { useParams } from 'next/navigation';
+import { notFound } from 'next/navigation';
+import { absoluteUrl, breadcrumbJsonLd, createPageMetadata, serializeJsonLd } from '../../../lib/seo';
+import { GOREVDE_SUBJECTS, getGorevdeSubjects } from '../data';
 
-const subjectTitleMap: Record<string, string> = {
-  // ✅ TEK ANAYASA (3 bölüm yok)
-  anayasa: 'T.C. Anayasası',
+type Props = { params: Promise<{ subject: string }> };
 
-  'dmk-657': '657 Sayılı Devlet Memurları Kanunu (1-212)',
-  'etik-5176': '5176 Sayılı Etik Kurulu + Yönetmelik',
-  'isg-6331': '6331 Sayılı İş Sağlığı ve Güvenliği Kanunu',
-  'kmykk-5018': '5018 Sayılı Kamu Mali Yönetimi ve Kontrol Kanunu',
-  'bilgi-edinme-4982': '4982 Sayılı Bilgi Edinme Hakkı Kanunu + Yönetmelik',
-  'iyuk-2577': '2577 Sayılı İdari Yargılama Usulü Kanunu',
-  'cbk-1-16-bolum': '1 Sayılı CBK (Onaltıncı Bölüm)',
-  'resmi-yazisma-yonetmelik': 'Resmi Yazışmalarda Usul ve Esaslar Yönetmeliği',
-  'ataturk-ilkeleri-inkilap': 'Atatürk İlkeleri ve İnkılap Tarihi',
-  'turkce-dilbilgisi': 'Türkçe Dil Bilgisi ve Yazım Kuralları',
-  'genel-kultur': 'Genel Kültür',
+async function getSubject(slug: string) {
+  if (!GOREVDE_SUBJECTS.some((subject) => subject.slug === slug)) notFound();
+  const subject = (await getGorevdeSubjects()).find((item) => item.slug === slug);
+  if (!subject) notFound();
+  return subject;
+}
 
-  'kamu-ihale-4734': '4734 Sayılı Kamu İhale Kanunu',
-  'devlet-ihale-2886': '2886 Sayılı Devlet İhale Kanunu',
-  'dilekce-hakki-3071': '3071 Sayılı Dilekçe Hakkı Kanunu',
-};
+export async function generateStaticParams() {
+  return (await getGorevdeSubjects()).filter((subject) => subject.tests.length > 0).map(({ slug }) => ({ subject: slug }));
+}
 
-export default function SubjectPage() {
-  const params = useParams();
-  const subject = (params?.subject as string) || '';
-  const title = subjectTitleMap[subject] || subject;
+export async function generateMetadata({ params }: Props) {
+  const subject = await getSubject((await params).subject);
+  const count = subject.tests.reduce((total, test) => total + test.questionCount, 0);
+  return createPageMetadata({
+    title: `${subject.title} Testleri`,
+    description: subject.tests.length
+      ? `${subject.title} konusunda ${subject.tests.length} test ve ${count} soru ile görevde yükselme sınavına çalışın. Cevapları ve açıklamaları test sonunda inceleyin.`
+      : `${subject.title} için görevde yükselme testleri hazırlanıyor. Yayımlanan diğer konu testlerini inceleyebilirsiniz.`,
+    path: `/gorevde-yukselme/${subject.slug}`,
+    index: subject.tests.length > 0,
+  });
+}
 
-  // ✅ TEST ID tabanı (senin quiz sayfan bunu okuyor)
-  const base = `gorevde-yukselme-${subject}`;
-
+export default async function SubjectPage({ params }: Props) {
+  const subject = await getSubject((await params).subject);
+  const count = subject.tests.reduce((total, test) => total + test.questionCount, 0);
+  const path = `/gorevde-yukselme/${subject.slug}`;
+  const schema = {
+    '@context': 'https://schema.org', '@type': 'CollectionPage', name: `${subject.title} Testleri`, url: absoluteUrl(path),
+    mainEntity: {
+      '@type': 'ItemList', numberOfItems: subject.tests.length,
+      itemListElement: subject.tests.map((test, index) => ({
+        '@type': 'ListItem', position: index + 1, name: test.title, url: absoluteUrl(`/test/${test.id}`),
+      })),
+    },
+  };
   return (
     <main className="min-h-screen bg-slate-50 px-4 py-10">
-      <div className="max-w-4xl mx-auto space-y-6">
+      {subject.tests.length > 0 && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(schema) }} />}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(breadcrumbJsonLd([
+        { name: 'Ana Sayfa', path: '/' }, { name: 'Görevde Yükselme', path: '/gorevde-yukselme' }, { name: subject.title, path },
+      ])) }} />
+      <div className="mx-auto max-w-4xl space-y-6">
         <div className="flex items-center justify-between gap-4">
           <div>
-            <h1 className="text-3xl font-black text-slate-900">{title}</h1>
-            <p className="text-slate-600 font-semibold mt-2">
-              4 Test • Her test 25 soru • Toplam 100 soru
+            <h1 className="text-3xl font-black text-slate-900">{subject.title}</h1>
+            <p className="mt-2 font-semibold text-slate-600">
+              {subject.tests.length ? `${subject.tests.length} Test • Toplam ${count} soru` : 'Bu konu için testler hazırlanıyor.'}
             </p>
           </div>
-
-          <Link
-            href="/gorevde-yukselme"
-            className="px-4 py-2 rounded-xl bg-white border border-slate-200 font-bold text-slate-700 hover:bg-slate-100"
-          >
-            ← Geri
-          </Link>
+          <Link href="/gorevde-yukselme" className="rounded-xl border border-slate-200 bg-white px-4 py-2 font-bold text-slate-700 hover:bg-slate-100">← Geri</Link>
         </div>
-
-        <section className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {[1, 2, 3, 4].map((n) => (
-            <Link
-              key={n}
-              href={`/test/${base}-${n}`}
-              className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition"
-            >
-              <div className="text-xs font-black text-slate-500 uppercase tracking-wider">
-                Test {n}
-              </div>
-              <div className="mt-2 text-xl font-black text-slate-900">25 Soru</div>
+        <section className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          {subject.tests.map((test) => (
+            <Link key={test.id} href={`/test/${test.id}`} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+              <h2 className="font-black text-slate-900">{test.title}</h2>
+              <div className="mt-2 text-xl font-black text-slate-900">{test.questionCount} Soru</div>
               <div className="mt-4 font-black text-indigo-700">Başlat →</div>
             </Link>
           ))}

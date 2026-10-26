@@ -1,4 +1,5 @@
-import { MetadataRoute } from 'next'
+import type { MetadataRoute } from 'next'
+import { absoluteUrl } from '../lib/seo'
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -32,6 +33,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/'], 
       }
     ],
-    sitemap: 'https://testdunya.net/sitemap.xml',
+    sitemap: absoluteUrl('/sitemap.xml'),
   }
 }
+

@@ -1,16 +1,13 @@
-import type { Metadata } from 'next';
+import { getStaticPageMetadata } from '../../lib/seo-pages';
 import Link from 'next/link';
 
-export const metadata: Metadata = {
-  title: 'LGS 2026 Deneme Sınavları | TestDünya',
-  description: '2026 LGS sınavı paralelinde hazırlanmış sözel ve sayısal bölüm testleriyle online LGS denemeleri çöz.',
-};
+export const metadata = getStaticPageMetadata('/lgs');
 
 const sections = [
   {
     title: 'Sözel Bölüm',
     description: 'Türkçe, T.C. İnkılap Tarihi, Din Kültürü ve İngilizce derslerinden beceri temelli LGS soruları.',
-    stats: ['50 Soru', '75 Dakika', 'Türkçe • İnkılap • Din • İngilizce'],
+    stats: ['Türkçe • İnkılap • Din • İngilizce'],
     href: '/lgs/sozel',
     cta: 'Sözel Testleri Gör',
     gradient: 'from-violet-600 via-indigo-600 to-blue-600',
@@ -19,7 +16,7 @@ const sections = [
   {
     title: 'Sayısal Bölüm',
     description: 'Matematik ve Fen Bilimleri derslerinden yeni nesil, yorumlama ve problem çözme odaklı LGS soruları.',
-    stats: ['40 Soru', '80 Dakika', 'Matematik • Fen Bilimleri'],
+    stats: ['Matematik • Fen Bilimleri'],
     href: '/lgs/sayisal',
     cta: 'Sayısal Testleri Gör',
     gradient: 'from-emerald-500 via-teal-600 to-cyan-600',
@@ -35,9 +32,9 @@ export default function LgsPage() {
           <div className="absolute left-1/2 top-0 h-48 w-48 -translate-x-1/2 -translate-y-1/2 rounded-full bg-indigo-200/50 blur-3xl" />
           <div className="relative z-10 mx-auto max-w-3xl space-y-5">
             <p className="text-xs font-black uppercase tracking-[0.3em] text-indigo-600">TestDünya LGS Hazırlık</p>
-            <h1 className="text-3xl font-black tracking-tight md:text-5xl">LGS 2026 Deneme Sınavları</h1>
+            <h1 className="text-3xl font-black tracking-tight md:text-5xl">LGS Deneme Sınavları</h1>
             <p className="text-base font-semibold leading-relaxed text-slate-600 md:text-lg">
-              2026 LGS sınavı paralelinde hazırlanacak sözel ve sayısal bölüm testleriyle sınava sistemli şekilde hazırlan.
+              Sözel ve sayısal bölüm testleriyle LGS için pratik yap. Bölümünü seçerek yayımlanan testleri ve her testin soru sayısını incele.
             </p>
           </div>
         </header>
@@ -72,3 +69,4 @@ export default function LgsPage() {
     </main>
   );
 }
+

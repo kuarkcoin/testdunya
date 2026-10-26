@@ -1,11 +1,8 @@
+import { getStaticPageMetadata } from '../../lib/seo-pages';
 // app/cookie/page.tsx
 import React from 'react';
-import type { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  title: 'Çerez Politikası | TestDünya',
-  description: 'TestDünya çerez kullanım politikası, gizlilik ve veri güvenliği hakkında bilgiler.',
-};
+export const metadata = getStaticPageMetadata('/cookie');
 
 export default function CookiePage() {
   return (
@@ -110,3 +107,4 @@ export default function CookiePage() {
     </div>
   );
 }
+

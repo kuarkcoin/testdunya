@@ -1,36 +1,44 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { canonicalBase, getGrade6Subject, getGrade6SubjectParams, getGrade6Tests } from '../../data/grade6/seo';
+import { getGrade6Subject, getGrade6SubjectParams, getGrade6Tests } from '../../data/grade6/seo';
+import { breadcrumbJsonLd, createPageMetadata, serializeJsonLd } from '../../../lib/seo';
 
 type PageProps = { params: Promise<{ subject: string }> };
 export const generateStaticParams = getGrade6SubjectParams;
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const subject = getGrade6Subject((await params).subject);
-  if (!subject) return { title: '6. Sınıf Ders Bulunamadı' };
-  return {
+  if (!subject) notFound();
+  return createPageMetadata({
     title: `6. Sınıf ${subject.label} Testleri`,
-    description: `6. sınıf ${subject.label} için açıklamalı 1. dönem başlangıç testleri. Soruları ücretsiz çöz, sonuçlarını incele ve tekrar çalış.`,
-    alternates: { canonical: `${canonicalBase}/6-sinif/${subject.id}` },
-  };
+    description: `6. sınıf ${subject.label} için açıklamalı konu ve karma tekrar testleri. Soruları ücretsiz çöz, sonuçlarını incele ve çözüm notlarıyla tekrar çalış.`,
+    path: `/6-sinif/${subject.id}`,
+  });
 }
 
 export default async function Grade6SubjectPage({ params }: PageProps) {
   const subject = getGrade6Subject((await params).subject);
   if (!subject) notFound();
   const tests = getGrade6Tests(subject.id);
+  const breadcrumbs = breadcrumbJsonLd([
+    { name: 'Ana Sayfa', path: '/' },
+    { name: '6. Sınıf', path: '/6-sinif' },
+    { name: subject.label, path: `/6-sinif/${subject.id}` },
+  ]);
 
   return (
     <article className="space-y-8 rounded-[2rem] border border-slate-200 bg-slate-50 p-5 text-slate-900 shadow-xl md:p-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(breadcrumbs) }} />
       <nav aria-label="Sayfa yolu" className="flex flex-wrap gap-2 text-sm font-bold text-slate-600">
+        <Link href="/" className="rounded hover:text-indigo-700 focus-visible:outline focus-visible:outline-4 focus-visible:outline-indigo-600">Ana Sayfa</Link><span aria-hidden="true">›</span>
         <Link href="/6-sinif" className="rounded hover:text-indigo-700 focus-visible:outline focus-visible:outline-4 focus-visible:outline-indigo-600">6. Sınıf</Link><span aria-hidden="true">›</span><span aria-current="page">{subject.label}</span>
       </nav>
       <header className={`space-y-4 rounded-[1.75rem] bg-gradient-to-br ${subject.gradient} p-6 text-white shadow-lg md:p-10`}>
         <span aria-hidden="true" className="text-5xl">{subject.icon}</span>
         <h1 className="text-3xl font-black tracking-tight md:text-5xl">6. Sınıf {subject.label} Testleri</h1>
         <p className="font-semibold text-white/95">{subject.description}</p>
-        <p className="font-bold">Başlangıç paketi • {tests.length} test</p>
+        <p className="font-bold">Konu ve karma tekrar • {tests.length} test</p>
       </header>
       {([1, 2] as const).map((term) => {
         const termTests = tests.filter((test) => test.term === term);
@@ -38,7 +46,7 @@ export default async function Grade6SubjectPage({ params }: PageProps) {
           <section key={term} aria-labelledby={`term-${term}`} className="space-y-4">
             <h2 id={`term-${term}`} className="text-2xl font-black">{term}. Dönem</h2>
             {termTests.length === 0 ? (
-              <p className="rounded-2xl border border-dashed border-slate-300 bg-white p-5 font-semibold text-slate-600">Bu dönem için henüz test eklenmedi. 1. dönem başlangıç testleriyle çalışabilirsin.</p>
+              <p className="rounded-2xl border border-dashed border-slate-300 bg-white p-5 font-semibold text-slate-600">Bu dönem için henüz test eklenmedi. Listelenen diğer testlerle çalışabilirsin.</p>
             ) : (
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {termTests.map((test) => (
@@ -57,3 +65,4 @@ export default async function Grade6SubjectPage({ params }: PageProps) {
     </article>
   );
 }
+

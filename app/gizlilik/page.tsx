@@ -1,9 +1,8 @@
+import { getStaticPageMetadata } from '../../lib/seo-pages';
 // app/gizlilik/page.tsx
 import Link from 'next/link';
 
-export const metadata = {
-  title: 'Gizlilik Politikası - TestDünya',
-};
+export const metadata = getStaticPageMetadata('/gizlilik');
 
 // Geri Dön İkonu
 const ArrowLeft = (props: React.SVGProps<SVGSVGElement>) => (
@@ -74,3 +73,4 @@ export default function PrivacyPage() {
     </div>
   );
 }
+

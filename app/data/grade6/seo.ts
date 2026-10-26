@@ -12,7 +12,7 @@ export const grade6Subjects: {
   gradient: string;
   description: string;
 }[] = [
-  { id: 'matematik', label: 'Matematik', icon: '➕', gradient: 'from-blue-600 to-cyan-600', description: 'İlk konuları adım adım tekrar et, çözümleri incele.' },
+  { id: 'matematik', label: 'Matematik', icon: '➕', gradient: 'from-blue-600 to-cyan-600', description: 'Matematik konularını ve karma problemleri çalış, çözümleri incele.' },
   { id: 'turkce', label: 'Türkçe', icon: '📝', gradient: 'from-rose-600 to-orange-600', description: 'Okuma, anlama ve dil becerilerini geliştir.' },
   { id: 'fen', label: 'Fen Bilimleri', icon: '🧪', gradient: 'from-emerald-700 to-teal-600', description: 'Fen konularını açıklamalı sorularla pekiştir.' },
   { id: 'ingilizce', label: 'İngilizce', icon: '🇬🇧', gradient: 'from-purple-600 to-indigo-600', description: 'Kelime ve iletişim becerilerini sorularla çalış.' },
@@ -75,4 +75,5 @@ export const getGrade6SubjectParams = () => grade6Subjects.map((subject) => ({ s
 export const getGrade6TestParams = () => grade6Subjects.flatMap((subject) =>
   getGrade6Tests(subject.id).map((test) => ({ subject: subject.id, testSlug: test.slug })),
 );
+
 

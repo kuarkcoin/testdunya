@@ -1,12 +1,9 @@
+import { getStaticPageMetadata } from '../../lib/seo-pages';
 // app/hakkimizda/page.tsx
 import React from 'react';
-import type { Metadata } from 'next';
 import Link from 'next/link'; // <--- BU EKSİKTİ, O YÜZDEN HATA VERİYORDU
 
-export const metadata: Metadata = {
-  title: 'Hakkımızda | TestDünya',
-  description: 'TestDünya; YKS, KPSS, TUS ve DUS sınavlarına hazırlananlar için ücretsiz online deneme sınavı platformudur.',
-};
+export const metadata = getStaticPageMetadata('/hakkimizda');
 
 export default function hakkimizdaPage() {
   return (
@@ -143,3 +140,4 @@ export default function hakkimizdaPage() {
     </main>
   );
 }
+

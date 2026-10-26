@@ -1,122 +1,62 @@
 import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 import type { ChessTestsData } from '../../../lib/chess/types';
 import chessTestsData from '../../../public/data/satranc-testleri.json';
+import { absoluteUrl, breadcrumbJsonLd, createPageMetadata, serializeJsonLd } from '../../../lib/seo';
 import ChessTestClient from './ChessTestClient';
 
-const data = chessTestsData as ChessTestsData;
-const baseUrl = 'https://testdunya.net';
+const tests = (chessTestsData as ChessTestsData).tests.filter((test) => test.questions?.length > 0);
+type Props = { params: Promise<{ testId: string }> };
 
-function getTestNumber(testId: string) {
-  const match = testId.match(/test-(\d+)/);
-  return match ? Number(match[1]) : undefined;
+function findTest(testId: string) {
+  const index = tests.findIndex((test) => test.id === testId);
+  if (index < 0) notFound();
+  return { test: tests[index], index, number: Number(testId.match(/test-(\d+)$/)?.[1]) || index + 1 };
 }
 
 export function generateStaticParams() {
-  return (data.tests ?? []).map((test) => ({ testId: test.id }));
+  return tests.map((test) => ({ testId: test.id }));
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ testId: string }>;
-}): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { testId } = await params;
-  const test = (data.tests ?? []).find((item) => item.id === testId);
-  const testNumber = getTestNumber(testId);
-  const title = test && testNumber
-    ? `Chess Test ${testNumber} | Best Move and Tactics Puzzle Quiz | TestDünya`
-    : 'Chess Test Not Found | TestDünya';
-  const description = test && testNumber
-    ? `Solve Chess Test ${testNumber} with 10 timed chess puzzle questions. Practice best moves, checkmates, forks, pins and chess tactics online.`
-    : 'The requested chess test could not be found.';
-
-  return {
-    title,
-    description,
-    alternates: {
-      canonical: test ? `/chess-tests/${test.id}` : '/chess-tests',
-    },
-    openGraph: {
-      title: test && testNumber ? `Chess Test ${testNumber} | TestDünya` : 'Chess Test | TestDünya',
-      description,
-      url: test ? `/chess-tests/${test.id}` : '/chess-tests',
-      siteName: 'TestDünya',
-      type: 'website',
-      locale: 'en_US',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: test && testNumber ? `Chess Test ${testNumber} | TestDünya` : 'Chess Test | TestDünya',
-      description,
-    },
-    robots: {
-      index: Boolean(test),
-      follow: true,
-    },
-  };
+  const { test, number } = findTest(testId);
+  const metadata = createPageMetadata({
+    title: `Chess Test ${number} — Best Moves and Tactics`,
+    description: `Solve Chess Test ${number} with ${test.questions.length} timed chess puzzles. Practice best moves, checkmates, forks and pins, then review the explanations.`,
+    path: `/chess-tests/${test.id}`,
+  });
+  return { ...metadata, openGraph: { ...metadata.openGraph, locale: 'en_US' } };
 }
 
-export default async function ChessTestPage({
-  params,
-}: {
-  params: Promise<{ testId: string }>;
-}) {
+export default async function ChessTestPage({ params }: Props) {
   const { testId } = await params;
-  const tests = data.tests ?? [];
-  const testIndex = tests.findIndex((item) => item.id === testId);
-  const test = tests[testIndex];
-  const testNumber = getTestNumber(testId) ?? testIndex + 1;
-  const previousTestId = testIndex > 0 ? tests[testIndex - 1]?.id : undefined;
-  const nextTestId = testIndex >= 0 && testIndex < tests.length - 1 ? tests[testIndex + 1]?.id : undefined;
-
-  const quizSchema = test ? {
+  const { test, index, number } = findTest(testId);
+  const path = `/chess-tests/${test.id}`;
+  const quizSchema = {
     '@context': 'https://schema.org',
-    '@type': 'LearningResource',
-    name: `Chess Test ${testNumber}`,
-    learningResourceType: 'Quiz',
-    educationalLevel: 'Beginner to Intermediate',
+    '@type': 'Quiz',
+    name: `Chess Test ${number}`,
+    description: `${test.questions.length} timed chess puzzles with answer explanations.`,
+    learningResourceType: 'Practice test',
     inLanguage: 'en-US',
-    numberOfQuestions: test.questions?.length ?? 10,
-    provider: {
-      '@type': 'Organization',
-      name: 'TestDünya',
-    },
-    url: `${baseUrl}/chess-tests/${test.id}`,
-  } : undefined;
+    isAccessibleForFree: true,
+    url: absoluteUrl(path),
+  };
+  const breadcrumbs = breadcrumbJsonLd([
+    { name: 'Home', path: '/' },
+    { name: 'Chess Tests', path: '/chess-tests' },
+    { name: `Chess Test ${number}`, path },
+  ]);
 
-  const breadcrumbSchema = test ? {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      {
-        '@type': 'ListItem',
-        position: 1,
-        name: 'Home',
-        item: baseUrl,
-      },
-      {
-        '@type': 'ListItem',
-        position: 2,
-        name: 'Chess Tests',
-        item: `${baseUrl}/chess-tests`,
-      },
-      {
-        '@type': 'ListItem',
-        position: 3,
-        name: `Chess Test ${testNumber}`,
-        item: `${baseUrl}/chess-tests/${test.id}`,
-      },
-    ],
-  } : undefined;
-
-  return (
+  return <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(quizSchema) }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(breadcrumbs) }} />
     <ChessTestClient
       test={test}
-      testNumber={testNumber}
-      previousTestId={previousTestId}
-      nextTestId={nextTestId}
-      quizSchema={quizSchema}
-      breadcrumbSchema={breadcrumbSchema}
+      testNumber={number}
+      previousTestId={tests[index - 1]?.id}
+      nextTestId={tests[index + 1]?.id}
     />
-  );
+  </>;
 }

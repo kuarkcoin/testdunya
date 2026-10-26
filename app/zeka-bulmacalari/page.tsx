@@ -1,5 +1,8 @@
+import { getStaticPageMetadata } from '../../lib/seo-pages';
 import Link from 'next/link';
 import { ZEKA_BULMACA_TESTS } from '../data/zekaBulmacalari';
+
+export const metadata = getStaticPageMetadata('/zeka-bulmacalari');
 
 export default function ZekaBulmacalariHubPage() {
   return (
@@ -40,3 +43,4 @@ export default function ZekaBulmacalariHubPage() {
     </main>
   );
 }
+

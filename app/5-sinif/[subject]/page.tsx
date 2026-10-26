@@ -1,15 +1,14 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import Script from 'next/script';
 import { notFound } from 'next/navigation';
 import {
-  canonicalBase,
   getGrade5Subject,
   getGrade5SubjectParams,
   getGrade5Tests,
   type Grade5TestSeo,
 } from '../../data/grade5/seo';
 import type { SubjectId } from '../../data/grade5/types';
+import { breadcrumbJsonLd, createPageMetadata, serializeJsonLd } from '../../../lib/seo';
 
 type PageProps = { params: Promise<{ subject: string }> };
 
@@ -20,13 +19,13 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { subject: subjectParam } = await params;
   const subject = getGrade5Subject(subjectParam);
-  if (!subject) return { title: '5. Sınıf Ders Bulunamadı | TestDünya' };
-  return {
-    title: `5. Sınıf ${subject.label} Testleri - Şekilli Yeni Nesil Sorular | TestDünya`,
-    description: `5. sınıf ${subject.titleLabel.toLocaleLowerCase('tr-TR')} testleri ile şekilli, görselli ve yeni nesil soruları ücretsiz çöz. MEB kazanımlarına uygun cevaplı online testler.`,
-    alternates: { canonical: `${canonicalBase}/5-sinif/${subject.id}` },
-    robots: { index: true, follow: true },
-  };
+  if (!subject) notFound();
+  const hasImages = getGrade5Tests(subject.id).some((test) => test.hasImages);
+  return createPageMetadata({
+    title: `5. Sınıf ${subject.label} Testleri - Açıklamalı Sorular`,
+    description: `5. sınıf ${subject.titleLabel.toLocaleLowerCase('tr-TR')} için ${hasImages ? 'şekilli ve metin tabanlı' : 'metin tabanlı'} konu tekrar testlerini ücretsiz çöz. Cevapları ve çözüm notlarını incele.`,
+    path: `/5-sinif/${subject.id}`,
+  });
 }
 
 const testDescription = (test: Grade5TestSeo) =>
@@ -38,19 +37,15 @@ export default async function Grade5SubjectPage({ params }: PageProps) {
   if (!subject) notFound();
   const tests = getGrade5Tests(subject.id as SubjectId);
 
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: canonicalBase },
-      { '@type': 'ListItem', position: 2, name: '5. Sınıf', item: `${canonicalBase}/5-sinif` },
-      { '@type': 'ListItem', position: 3, name: subject.label, item: `${canonicalBase}/5-sinif/${subject.id}` },
-    ],
-  };
+  const breadcrumbSchema = breadcrumbJsonLd([
+    { name: 'Ana Sayfa', path: '/' },
+    { name: '5. Sınıf', path: '/5-sinif' },
+    { name: subject.label, path: `/5-sinif/${subject.id}` },
+  ]);
 
   return (
     <>
-      <Script id={`grade5-${subject.id}-breadcrumb`} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script id={`grade5-${subject.id}-breadcrumb`} type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(breadcrumbSchema) }} />
       <article className="bg-slate-50 text-slate-900 rounded-[2rem] border border-slate-200 shadow-xl p-5 md:p-10 space-y-8">
         <nav className="text-sm font-bold text-slate-500 flex flex-wrap gap-2" aria-label="Breadcrumb">
           <Link href="/" className="hover:text-indigo-600">Ana Sayfa</Link>
@@ -90,3 +85,4 @@ export default async function Grade5SubjectPage({ params }: PageProps) {
     </>
   );
 }
+

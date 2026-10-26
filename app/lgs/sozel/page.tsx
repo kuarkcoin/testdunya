@@ -1,20 +1,27 @@
+import { getStaticPageMetadata } from '../../../lib/seo-pages';
+import { getTestCatalog } from '../../../lib/test-data';
 import Link from 'next/link';
 
-const tests = [1, 2, 3, 4].map((number) => ({
-  title: `LGS Sözel Deneme ${number}`,
-  href: `/test/lgs-sozel-test-${number}`,
-  stats: ['50 Soru', '75 Dakika', 'Sözel Bölüm', '2026 Paralel'],
-}));
+export const metadata = getStaticPageMetadata('/lgs/sozel');
 
-export default function LgsSozelPage() {
+export default async function LgsSozelPage() {
+  const tests = (await getTestCatalog())
+    .filter((test) => /^lgs-sozel-test-[1-4]$/.test(test.id))
+    .sort((a, b) => a.id.localeCompare(b.id, 'tr', { numeric: true }))
+    .map((test) => ({
+      title: `LGS Sözel Deneme ${test.id.split('-').at(-1)}`,
+      href: `/test/${test.id}`,
+      stats: [`${test.questionCount} Soru`, 'Sözel Bölüm'],
+    }));
+
   return (
     <main className="min-h-screen bg-slate-50 px-4 py-10 text-slate-900 md:px-8 md:py-14">
       <section className="mx-auto max-w-6xl space-y-8">
         <header className="rounded-[2rem] border border-violet-100 bg-white p-8 shadow-xl md:p-10">
-          <p className="text-xs font-black uppercase tracking-[0.3em] text-violet-600">LGS 2026</p>
+          <p className="text-xs font-black uppercase tracking-[0.3em] text-violet-600">LGS Hazırlık</p>
           <h1 className="mt-4 text-3xl font-black tracking-tight md:text-5xl">LGS Sözel Bölüm Testleri</h1>
           <p className="mt-4 max-w-3xl text-base font-semibold leading-relaxed text-slate-600 md:text-lg">
-            Türkçe, T.C. İnkılap Tarihi, Din Kültürü ve İngilizce derslerinden 2026 LGS formatına uygun özgün sözel bölüm soruları.
+            Türkçe, T.C. İnkılap Tarihi, Din Kültürü ve İngilizce derslerinden sözel bölüm soruları. Her testin soru sayısını kartında görebilirsin.
           </p>
         </header>
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -38,3 +45,4 @@ export default function LgsSozelPage() {
     </main>
   );
 }
+

@@ -1,66 +1,17 @@
-import type { Metadata } from 'next'
+import { getStaticPageMetadata } from '../../lib/seo-pages'
+import { absoluteUrl, serializeJsonLd, SOCIAL_IMAGE } from '../../lib/seo'
 import type { ReactNode } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import EdirneMasallariClient from './EdirneMasallariClient'
 import AnimatedEdirneIntro from './AnimatedEdirneIntro'
 
-const pageUrl = 'https://testdunya.net/edirne-masallari'
-const ogImageUrl = 'https://testdunya.net/images/edirne-masallari-og.jpg'
-const title = 'Edirne Masalları | Kültürel Miras ve Çocuk Masalları'
+const pageUrl = absoluteUrl('/edirne-masallari')
+const ogImageUrl = SOCIAL_IMAGE.url
+const title = 'Edirne Masalları: Kültürel Miras ve Çocuk Masalları'
 const description = 'Edirne’nin tarihî, kültürel ve doğal değerlerini çocuklara masal diliyle tanıtan dijital masal kitabı ve TÜBİTAK tasarım projesi.'
-const keywords = [
-  'Edirne Masalları',
-  'çocuk masalları',
-  'Selimiye Camii',
-  'Meriç Nehri',
-  'Kırkpınar',
-  'kültürel miras',
-  'değerler eğitimi',
-  'TÜBİTAK projesi',
-]
 
-export const metadata: Metadata = {
-  title,
-  description,
-  keywords,
-  alternates: {
-    canonical: pageUrl,
-  },
-  openGraph: {
-    title,
-    description,
-    url: pageUrl,
-    siteName: 'TestDünya',
-    locale: 'tr_TR',
-    type: 'website',
-    images: [
-      {
-        url: ogImageUrl,
-        width: 1200,
-        height: 630,
-        alt: 'Edirne Masalları dijital masal sayfası',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title,
-    description,
-    images: [ogImageUrl],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-snippet': -1,
-      'max-image-preview': 'large',
-      'max-video-preview': -1,
-    },
-  },
-}
+export const metadata = getStaticPageMetadata('/edirne-masallari')
 
 const pdfUrl = '/pdf/edirne-masallari.pdf'
 
@@ -152,7 +103,7 @@ export default function EdirneMasallariPage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(structuredData) }}
       />
       <div className="relative overflow-hidden bg-[#fbf5e8] text-[#2b211c] dark:bg-[#0f0c13] dark:text-[#fff7df]">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(214,180,93,0.35),transparent_36%),radial-gradient(circle_at_80%_20%,rgba(79,125,58,0.22),transparent_30%),linear-gradient(135deg,rgba(122,31,43,0.10),transparent_42%)] dark:bg-[radial-gradient(circle_at_top_left,rgba(214,180,93,0.18),transparent_36%),radial-gradient(circle_at_80%_20%,rgba(79,125,58,0.16),transparent_30%),linear-gradient(135deg,rgba(122,31,43,0.20),transparent_42%)]" />
@@ -323,3 +274,4 @@ export default function EdirneMasallariPage() {
     </>
   )
 }
+

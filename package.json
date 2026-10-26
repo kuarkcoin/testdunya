@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run check:seo && next build && npm run check:seo:build",
+    "check:seo": "node scripts/validate-seo.cjs",
+    "check:seo:build": "node scripts/validate-seo-build.cjs",
     "start": "next start",
     "lint": "next lint"
   },
@@ -34,3 +36,4 @@
     "typescript": "5.6.3"
   }
 }
+

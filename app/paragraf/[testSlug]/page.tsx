@@ -1,52 +1,28 @@
 import type { Metadata } from 'next';
-import { notFound, redirect } from 'next/navigation';
+import { notFound, permanentRedirect } from 'next/navigation';
 import { getParagrafTestBySlug, PARAGRAF_TESTS } from '../../data/paragrafTests';
+import { getTestData } from '../../../lib/test-data';
+import { createPageMetadata } from '../../../lib/seo';
+
+type PageProps = { params: Promise<{ testSlug: string }> };
 
 export function generateStaticParams() {
   return PARAGRAF_TESTS.map((test) => ({ testSlug: test.slug }));
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ testSlug: string }>;
-}): Promise<Metadata> {
-  const { testSlug } = await params;
-  const test = getParagrafTestBySlug(testSlug);
-
-  if (!test) {
-    return {
-      title: 'Paragraf Testi Bulunamadı | Testdunya',
-      description: 'İstenen paragraf testi bulunamadı.',
-    };
-  }
-
-  return {
-    title: `Paragraf Test ${test.id} | Testdunya`,
-    description: `Paragraf Test ${test.id} sayfasında 20 soruluk 5. sınıf düzeyi okuduğunu anlama testi çözün.`,
-    openGraph: {
-      title: `Paragraf Test ${test.id}`,
-      description: '20 soruluk paragraf testi',
-      type: 'article',
-      url: `https://www.testdunya.com/paragraf/${test.slug}`,
-    },
-    alternates: {
-      canonical: `/paragraf/${test.slug}`,
-    },
-  };
+async function getRedirectTarget(testSlug: string) {
+  const alias = getParagrafTestBySlug(testSlug);
+  const test = alias ? await getTestData(alias.dataId) : null;
+  if (!test) notFound();
+  return test;
 }
 
-export default async function ParagrafTestDetailRedirectPage({
-  params,
-}: {
-  params: Promise<{ testSlug: string }>;
-}) {
-  const { testSlug } = await params;
-  const test = getParagrafTestBySlug(testSlug);
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const test = await getRedirectTarget((await params).testSlug);
+  return createPageMetadata({ title: test.title, description: test.description, path: `/test/${test.id}` });
+}
 
-  if (!test) {
-    notFound();
-  }
-
-  redirect(`/test/${test.dataId}`);
+export default async function ParagrafTestDetailRedirectPage({ params }: PageProps) {
+  const test = await getRedirectTarget((await params).testSlug);
+  permanentRedirect(`/test/${test.id}`);
 }

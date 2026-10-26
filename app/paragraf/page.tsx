@@ -1,33 +1,19 @@
-import type { Metadata } from 'next';
+import { getStaticPageMetadata } from '../../lib/seo-pages';
+import { breadcrumbJsonLd, serializeJsonLd } from '../../lib/seo';
 import Link from 'next/link';
-import { PARAGRAF_TESTS, PARAGRAF_QUESTIONS_PER_TEST } from '../data/paragrafTests';
+import { PARAGRAF_TESTS } from '../data/paragrafTests';
 
-export const metadata: Metadata = {
-  title: 'Paragraf Testleri | Testdunya',
-  description:
-    '5. sınıf düzeyine uygun 50 adet paragraf testi çözün. Her test 20 soru içerir ve okuduğunu anlama becerisini geliştirir.',
-  openGraph: {
-    title: 'Paragraf Testleri',
-    description:
-      'Paragraf testleri hub sayfası: 50 test, her testte 20 soru.',
-    type: 'website',
-    url: 'https://www.testdunya.com/paragraf',
-  },
-};
+export const metadata = getStaticPageMetadata('/paragraf');
 
 export default function ParagrafHubPage() {
-  const breadcrumbLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: 'https://www.testdunya.com/' },
-      { '@type': 'ListItem', position: 2, name: 'Paragraf Testleri', item: 'https://www.testdunya.com/paragraf' },
-    ],
-  };
+  const breadcrumbLd = breadcrumbJsonLd([
+    { name: 'Ana Sayfa', path: '/' },
+    { name: 'Paragraf Testleri', path: '/paragraf' },
+  ]);
 
   return (
     <main className="min-h-screen px-4 py-10 md:px-8">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(breadcrumbLd) }} />
 
       <div className="mx-auto max-w-7xl space-y-8">
         <section className="rounded-3xl bg-gradient-to-r from-rose-600 via-pink-600 to-fuchsia-700 p-6 text-white shadow-2xl md:p-10">
@@ -36,7 +22,7 @@ export default function ParagrafHubPage() {
           </span>
           <h1 className="mt-4 text-3xl font-black md:text-5xl">Paragraf Testleri</h1>
           <p className="mt-3 max-w-3xl text-sm text-rose-100 md:text-lg">
-            5. sınıf konu testi mimarisiyle uyumlu şekilde hazırlanmış 50 paragraf testi. Her testte {PARAGRAF_QUESTIONS_PER_TEST} soru bulunur.
+            5. sınıf düzeyindeki {PARAGRAF_TESTS.length} paragraf testinden birini seç. Her testin soru sayısını aşağıdaki kartlarda inceleyebilirsin.
           </p>
         </section>
 
@@ -53,7 +39,7 @@ export default function ParagrafHubPage() {
             >
               <div className="flex items-center justify-between">
                 <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-fuchsia-100 text-lg">📖</span>
-                <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-bold text-slate-600">20 Soru</span>
+                <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-bold text-slate-600">{test.questionCount} Soru</span>
               </div>
 
               <h2 className="mt-4 text-xl font-black text-slate-800">Test {test.id}</h2>
@@ -69,3 +55,4 @@ export default function ParagrafHubPage() {
     </main>
   );
 }
+

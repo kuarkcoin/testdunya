@@ -1,20 +1,27 @@
+import { getStaticPageMetadata } from '../../../lib/seo-pages';
+import { getTestCatalog } from '../../../lib/test-data';
 import Link from 'next/link';
 
-const tests = [1, 2, 3, 4].map((number) => ({
-  title: `LGS Sayısal Deneme ${number}`,
-  href: `/test/lgs-sayisal-test-${number}`,
-  stats: ['40 Soru', '80 Dakika', 'Sayısal Bölüm', '2026 Paralel'],
-}));
+export const metadata = getStaticPageMetadata('/lgs/sayisal');
 
-export default function LgsSayisalPage() {
+export default async function LgsSayisalPage() {
+  const tests = (await getTestCatalog())
+    .filter((test) => /^lgs-sayisal-test-[1-4]$/.test(test.id))
+    .sort((a, b) => a.id.localeCompare(b.id, 'tr', { numeric: true }))
+    .map((test) => ({
+      title: `LGS Sayısal Deneme ${test.id.split('-').at(-1)}`,
+      href: `/test/${test.id}`,
+      stats: [`${test.questionCount} Soru`, 'Sayısal Bölüm'],
+    }));
+
   return (
     <main className="min-h-screen bg-slate-50 px-4 py-10 text-slate-900 md:px-8 md:py-14">
       <section className="mx-auto max-w-6xl space-y-8">
         <header className="rounded-[2rem] border border-teal-100 bg-white p-8 shadow-xl md:p-10">
-          <p className="text-xs font-black uppercase tracking-[0.3em] text-teal-600">LGS 2026</p>
+          <p className="text-xs font-black uppercase tracking-[0.3em] text-teal-600">LGS Hazırlık</p>
           <h1 className="mt-4 text-3xl font-black tracking-tight md:text-5xl">LGS Sayısal Bölüm Testleri</h1>
           <p className="mt-4 max-w-3xl text-base font-semibold leading-relaxed text-slate-600 md:text-lg">
-            Matematik ve Fen Bilimleri derslerinden 2026 LGS formatına uygun, yeni nesil ve beceri temelli sayısal bölüm soruları.
+            Matematik ve Fen Bilimleri derslerinden sayısal bölüm soruları. Her testin soru sayısını kartında görebilirsin.
           </p>
         </header>
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -38,3 +45,4 @@ export default function LgsSayisalPage() {
     </main>
   );
 }
+

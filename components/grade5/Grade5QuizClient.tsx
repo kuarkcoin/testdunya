@@ -98,6 +98,7 @@ export type Grade5QuizClientProps = {
   initialSubject?: SubjectId;
   initialTerm?: 1 | 2;
   initialTestNo?: number;
+  initialTestKey?: string;
   initialDisplayTestNo?: number;
   autoStart?: boolean;
 };
@@ -106,6 +107,7 @@ export default function Grade5QuizClient({
   initialSubject = 'matematik',
   initialTerm = 1,
   initialTestNo = 1,
+  initialTestKey,
   initialDisplayTestNo = initialTestNo,
   autoStart = false,
 }: Grade5QuizClientProps) {
@@ -145,7 +147,7 @@ export default function Grade5QuizClient({
   const [quizQuestions, setQuizQuestions] = useState<Question5[]>(() => {
     if (!autoStart) return [];
     const termKey = initialTerm === 1 ? 'term1' : 'term2';
-    return allQuestions5[initialSubject]?.[termKey]?.[`test${initialTestNo}`] ?? [];
+    return allQuestions5[initialSubject]?.[termKey]?.[initialTestKey ?? `test${initialTestNo}`] ?? [];
   });
   const [currentIdx, setCurrentIdx] = useState(0);
   const [answers, setAnswers] = useState<Record<number, number>>({});
@@ -903,3 +905,4 @@ const textToSpeak =
     </main>
   );
 }
+
