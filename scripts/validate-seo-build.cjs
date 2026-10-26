@@ -246,11 +246,15 @@ async function validateBuild(root = ROOT) {
     await page(`/gorevde-yukselme/${emptySubject.slug}`, { index: false });
 
     for (const pathname of ['/test/seo-validation-no-such-test-918273', '/chess-tests/seo-validation-no-such-test', '/turkce-oyunlari/seo-validation-no-such-game', '/gorevde-yukselme/seo-validation-no-such-subject', '/6-sinif/fen/test-999999', '/5-sinif/matematik/test-999999', '/paragraf/test-999999']) {
-      const response = await request(pathname);
-      assert.equal(response.status, 404, `${pathname}: unknown content must have a real 404 status`);
-      const document = parseHtml(await response.text());
-      assert(document.metas.some((meta) => meta.name === 'robots' && /\bnoindex\b/.test(meta.content)), `${pathname}: missing content is noindex`);
-      checked.push({ path: pathname, status: 404 });
+      try {
+        const response = await request(pathname);
+        assert.equal(response.status, 404, `${pathname}: unknown content must have a real 404 status`);
+        const document = parseHtml(await response.text());
+        assert(document.metas.some((meta) => meta.name === 'robots' && /\bnoindex\b/.test(meta.content)), `${pathname}: missing content is noindex`);
+        checked.push({ path: pathname, status: 404 });
+      } catch (error) {
+        pageFailures.push(`${pathname}: ${error.message}`);
+      }
     }
     for (const [from, to, status] of [
       ['/5-sinif/matematik/test22', '/5-sinif/matematik/test-22', 308],
@@ -258,10 +262,17 @@ async function validateBuild(root = ROOT) {
       ['/zeka-bulmacalari/test-1', '/test/zeka-bulmaca-1', 308],
       ['/satranc-testleri', '/chess-tests', 301],
     ]) {
-      const response = await request(from);
-      assert.equal(response.status, status, `${from}: permanent legacy redirect`);
-      assert.equal(new URL(response.headers.get('location'), origin).pathname, to, `${from}: redirect destination`);
-      checked.push({ path: from, status, location: to });
+      try {
+        const response = await request(from);
+        assert.equal(response.status, status, `${from}: permanent legacy redirect`);
+        const location = response.headers.get('location');
+        assert(location, `${from}: redirect must provide a Location header`);
+        // Do not split or repair malformed/duplicated Location values in the test.
+        assert.equal(new URL(location, origin).href, new URL(to, origin).href, `${from}: redirect destination`);
+        checked.push({ path: from, status, location: to });
+      } catch (error) {
+        pageFailures.push(`${from}: ${error.message}`);
+      }
     }
 
     const sitemapResponse = await request('/sitemap.xml');
@@ -294,6 +305,7 @@ async function validateBuild(root = ROOT) {
       limitations: ['Crawler HTML is tested without executing client JavaScript; interactive quiz scoring is outside this script.', 'Production URLs are checked in metadata on a local production server; deployment routing and platform headers require separate deployment verification.'],
     };
   } catch (error) {
+    if (pageFailures.length) console.error(`Rendered route contract failures:\n${pageFailures.map((failure) => `- ${failure}`).join('\n')}`);
     if (logs) console.error(`Temporary Next server output:\n${logs}`);
     throw error;
   } finally {
