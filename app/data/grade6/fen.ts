@@ -2059,6 +2059,177 @@ export const fenData: SubjectData = {
       }
     ],
 
+    test13: [
+      {
+        "id": "f6-1-t13-01",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Görselde üç farklı tarihte Güneş, Dünya ve Ay’ın konumları ve gölgelerin ulaştığı yerler kaydedilmiştir.\n\nBu kayıtların birlikte desteklediği yorum hangisidir?",
+        "options": [
+          "K ve L’de Ay arada olduğundan ikisinde de Güneş tutulması gerçekleşir; M’de Ay tutulması gerçekleşmez.",
+          "K’de Güneş, M’de Ay tutulması gerçekleşebilir; L, Ay’ın arada olmasının tek başına tutulma için yeterli olmadığını gösterir.",
+          "K’de Ay, M’de Güneş tutulması gerçekleşebilir; L’de iki tutulma da aynı anda gerçekleşir.",
+          "K ile M’de tutulma gerçekleşebilir; bu iki olay da Dünya’nın gündüz tarafındaki her yerden gözlenir."
+        ],
+        "correct": 1,
+        "explanation": "K’de Ay, Güneş ile Dünya arasındadır ve gölgesi Dünya’ya ulaşır; gölgenin ulaştığı uygun bölgelerden Güneş tutulması gözlenebilir. M’de Dünya aradadır ve Ay onun gölgesine girer; Ay tutulması gerçekleşir. L’de Ay arada olsa da gölgesi Dünya’yı tamamen ıskalar. Dolayısıyla yalnız cisimlerin sırası tutulma için yeterli değildir. Güneş tutulması gündüz tarafındaki her yerden, Ay tutulması ise gündüz tarafının tamamından gözlenmez.",
+        "imageUrl": "/grade6/fen/test-13/soru-01.svg",
+        "imageAlt": "K: Ay arada; Ay’ın gölgesi Dünya’ya ulaşıyor. L: Ay arada; Ay’ın gölgesi Dünya’yı tamamen ıskalıyor. M: Dünya arada; Ay, Dünya’nın gölgesine giriyor.",
+        "imageWidth": 360,
+        "imageHeight": 900
+      },
+      {
+        "id": "f6-1-t13-02",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Şekildeki cisme yatay doğrultuda yalnız gösterilen üç kuvvet etki ediyor. K ve L’nin yönleri değişmiyor; büyüklükleri bilinmiyor. İlk durumda bileşke doğuya 4 N’dir. İkinci durum ilk durumdan bağımsız olarak yeniden kuruluyor: İlk üç kuvvetten yalnız 6 N’luk kuvvet kaldırılıyor; başka kuvvet eklenmiyor.\n\nİlk durumdaki cismi dengelemek için gereken ek kuvvet ile ikinci durumdaki bileşke hangi seçenekte birlikte doğrudur?",
+        "options": [
+          "Ek kuvvet doğuya 4 N; ikinci bileşke batıya 2 N.",
+          "Ek kuvvet batıya 4 N; ikinci bileşke doğuya 10 N.",
+          "Ek kuvvet batıya 4 N; ikinci bileşke batıya 2 N.",
+          "Ek kuvvet batıya 4 N; ikinci bileşke doğuya 2 N."
+        ],
+        "correct": 2,
+        "explanation": "İlk bileşke doğuya 4 N olduğundan dengeleyici kuvvet batıya 4 N olmalıdır. İlk durumda doğuya K + 6, batıya L vardır; K + 6, L’den 4 N fazladır. Bu nedenle L, K’den 2 N büyüktür. 6 N doğu kuvveti kaldırılınca kalan K ve L’nin bileşkesi batıya 2 N olur.",
+        "imageUrl": "/grade6/fen/test-13/soru-02.svg",
+        "imageAlt": "Cisme K ve 6 N doğuya, L batıya uygulanıyor. İlk bileşke doğuya 4 N. İkinci durumda yalnız 6 N doğu kuvveti kaldırılıyor.",
+        "imageWidth": 360,
+        "imageHeight": 600
+      },
+      {
+        "id": "f6-1-t13-03",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Aynı türden, benzer özellikte canlı tohumlar eşit sayılı dört gruba rastgele ayrılıyor. Sıcaklık ve pamuk durumu görselde verilmiştir. Hava alabilme, ışık ve gözlem süresi aynıdır.\n\n“Nemli ortamda sıcaklığın etkisi” ile “25°C’de nemin etkisi” ayrı ayrı araştırılmak isteniyor. Hangi karşılaştırmalar bu iki amacı sırasıyla karşılar?",
+        "options": [
+          "K–M ve L–M",
+          "K–L ve K–M",
+          "L–N ve M–N",
+          "K–L ve L–N"
+        ],
+        "correct": 0,
+        "explanation": "K ve M’de pamuk nemlidir; yalnız sıcaklık 15°C ile 25°C olarak değişir. Bu çift, nemli ortamda sıcaklığı karşılaştırır. L ve M ise aynı 25°C sıcaklıktadır; yalnız kuru/nemli pamuk koşulu değişir. K–L’de iki değişken birlikte değişir. K–M ikinci amaç için kullanılamaz; sıcaklıkları farklıdır. L–N’de her iki grup da kurudur.",
+        "imageUrl": "/grade6/fen/test-13/soru-03.svg",
+        "imageAlt": "K: 15°C, nemli pamuk. L: 25°C, kuru pamuk. M: 25°C, nemli pamuk. N: 15°C, kuru pamuk.",
+        "imageWidth": 360,
+        "imageHeight": 900
+      },
+      {
+        "id": "f6-1-t13-04",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Üç ayrı düz ayna deneyinde ölçülen açılar görselde verilmiştir. Gelen ve yansıyan ışınlar normalin farklı tarafındadır. Ayna yüzeyi ile normal arasındaki açı 90°’dir.\n\nÖlçümlerin yansıma kanununa uygunluğu hangi seçenekte doğru değerlendirilmiştir?",
+        "options": [
+          "Yalnız K uygundur; L ve M’de verilen iki açı eşit değildir.",
+          "K ve M uygundur; L’de yansıma açısı 60° olmalıydı.",
+          "Üçü de uygundur; her deneyde verilen iki açı toplamı 90°’dir.",
+          "K ve L uygundur; M’de yansıyan ışının normalle açısı 55° olmalıydı."
+        ],
+        "correct": 3,
+        "explanation": "K’de gelen ışının ayna yüzeyiyle 30° yapması, normalle 60° yaptığı anlamına gelir; yansıma açısı 60° olduğundan uygundur. L’de gelme açısı 30°; yansıyan ışının yüzeyle 60° yapması da normalle 30° yapması demektir. M’de gelme açısı 90 − 35 = 55° olmalıdır; normalden ölçülen yansıma açısı 35° verilerek hata yapılmıştır.",
+        "imageUrl": "/grade6/fen/test-13/soru-04.svg",
+        "imageAlt": "K: gelen ışın–yüzey 30°, yansıyan ışın–normal 60°. L: gelen ışın–normal 30°, yansıyan ışın–yüzey 60°. M: gelen ışın–yüzey 35°, yansıyan ışın–normal 35°.",
+        "imageWidth": 360,
+        "imageHeight": 1160
+      },
+      {
+        "id": "f6-1-t13-05",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "İçi dolu, homojen ve suda çözünmeyen K cismi suya tamamen batırıldığında ölçülen seviyeler görseldedir. Taşma ve hava kabarcığı yoktur. K, daha sonra eşit kütleli üç parçaya ayrılıyor. Parçalar şekil değişimi dışında özelliklerini koruyor; tüm işlemler aynı sıcaklıkta yapılıyor.\n\nBir parçanın kütlesi, hacmi ve yoğunluğu sırasıyla hangisidir?",
+        "options": [
+          "30 g; 15 cm³; 2 g/cm³",
+          "30 g; 45 cm³; 2/3 g/cm³",
+          "30 g; 15 cm³; 2/3 g/cm³",
+          "90 g; 15 cm³; 6 g/cm³"
+        ],
+        "correct": 0,
+        "explanation": "K’nin hacmi seviye artışı olan 85 − 40 = 45 cm³’tür. Yoğunluğu 90 ÷ 45 = 2 g/cm³ olur. Homojen cisim eşit kütleli üç parçaya ayrılınca her parça 30 g ve 15 cm³ olur. Kütle ile hacim aynı oranda azaldığından yoğunluk değişmez.",
+        "imageUrl": "/grade6/fen/test-13/soru-05.svg",
+        "imageAlt": "K’nin kütlesi 90 g. Başlangıçtaki su seviyesi 40 cm³, K tamamen batınca seviye 85 cm³. K üç eşit kütleli parçaya ayrılıyor.",
+        "imageWidth": 360,
+        "imageHeight": 650
+      },
+      {
+        "id": "f6-1-t13-06",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Başlangıçta tamamen sıvı olan saf X maddesinden farklı miktarlarda iki örnek, aynı sabit basınçta soğutuluyor. Görselde sıcaklığın sabit kaldığı donma aralıkları verilmiştir. İki örnek de aralığın sonunda tamamen katı oluyor.\n\nBir öğrenci, “L daha uzun sürede donduğuna göre L’nin donma noktası daha yüksektir.” diyor. Hangi değerlendirme doğrudur?",
+        "options": [
+          "Doğrudur; donma süresi arttıkça aynı saf maddenin donma sıcaklığı da artar.",
+          "Yanlıştır; sıcaklık sabitken ısı verilmediğinden bu aralıklarda donma gerçekleşmiş olamaz.",
+          "Yanlıştır; ikisi de 40°C’de donar. Sürelerinin farklı olması, donma noktalarının farklı olduğunu göstermez.",
+          "Doğrudur; daha uzun süre sabit sıcaklıkta kalan örnek, sonunda mutlaka daha sıcak bir katı olur."
+        ],
+        "correct": 2,
+        "explanation": "Donma noktası donma süresinden değil, saf maddenin donarken sabit kaldığı sıcaklıktan belirlenir. K ve L’nin bu sıcaklığı 40°C’dir. Madde miktarı ve ısının çevreye aktarılma koşulları donma süresini etkileyebilir; daha uzun süre, daha yüksek donma noktası demek değildir. Donarken sıcaklığın sabit kalması çevreye ısı verilmediği anlamına gelmez.",
+        "imageUrl": "/grade6/fen/test-13/soru-06.svg",
+        "imageAlt": "K örneği 2–4. dakikalar boyunca 40°C’de donuyor. L örneği 2–6. dakikalar boyunca 40°C’de donuyor. Aralıkların sonunda ikisi de tamamen katı.",
+        "imageWidth": 360,
+        "imageHeight": 800
+      },
+      {
+        "id": "f6-1-t13-07",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Pille çalışan iletkenlik deneyinde, aynı iki bağlantı ucu arasına sırayla görseldeki parçalar yerleştiriliyor. Bakır telin iletken olduğu biliniyor. Öğrenci ikinci denemeden sonra “X kesinlikle yalıtkandır.” diyor; üçüncü denemede ise kayıt değişiyor.\n\nSon kayıt da dikkate alındığında en uygun değerlendirme ve sonraki işlem hangisidir?",
+        "options": [
+          "X kesinlikle yalıtkandır; çünkü ikinci denemede ampul yanmamıştır. Diğer kayıtları incelemek gerekmez.",
+          "Son bakır denemesinde de ışık alınamaması, düzeneğin işleyişiyle ilgili sorun olabileceğini gösterir; devrenin çalıştığı doğrulanarak X yeniden sınanmalıdır.",
+          "X kesinlikle iletkendir; çünkü üçüncü denemede bakır tel de ampulü yakamamıştır.",
+          "X’in eklenmesi bakırın iletkenliğini kalıcı olarak değiştirmiştir; bakır yerine başka bir metal seçmek yeterlidir."
+        ],
+        "correct": 1,
+        "explanation": "İletken olduğu bilinen bakır tel ilk denemede ampulü yakarken son denemede yakamamıştır. Pil, ampul veya bağlantı gibi düzenekle ilgili bir sorun bulunabilir; kayıtlardan sorunun tam olarak ne olduğu belirlenemez. Bu yüzden X denemesindeki ışık yokluğunu yalnız X’in yalıtkanlığına bağlamak kesin değildir. Önce çalışan düzenek ve uygun temas doğrulanmalı, X tekrar denenmelidir. Bu kayıtlar X’in kesin iletken olduğunu da göstermez.",
+        "imageUrl": "/grade6/fen/test-13/soru-07.svg",
+        "imageAlt": "Sıralı denemeler: 1. Bakır tel takılı, ampul yanıyor. 2. X takılı, ampul yanmıyor. 3. Aynı bakır tel yeniden takılı, ampul yanmıyor.",
+        "imageWidth": 360,
+        "imageHeight": 650
+      },
+      {
+        "id": "f6-1-t13-08",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Bir öğrenci aynı tür bitkilerde iki kayıt tutuyor:\n• K çiçeğinde polenlerin tepeciğe ulaştığını gözlüyor; henüz daha sonraki aşamalara ait kayıt yok.\n• L çiçeğinde erkek ve dişi üreme hücrelerinin birleştiği mikroskobik kayıtla doğrulanıyor.\n\n“Her iki çiçekte de döllenme kesinleşmiştir; K’de ayrıca tozlaşmanın gerçekleştiği bilinmektedir.” yorumu nasıl düzeltilmelidir?",
+        "options": [
+          "K’de döllenme kesinleşmiştir; L’de ise yalnız tozlaşma gözlenmiştir.",
+          "Her iki çiçekte de yalnız tozlaşma kesinleşmiştir; hücrelerin birleşmesi döllenme sayılmaz.",
+          "K’de sonraki aşama bilinmediği için polenlerin tepeciğe ulaşması da tozlaşma olarak adlandırılamaz.",
+          "K’de tozlaşma doğrulanmıştır fakat bu kayıt tek başına döllenmeyi kanıtlamaz; L’de döllenme doğrulanmıştır."
+        ],
+        "correct": 3,
+        "explanation": "Tozlaşma, polenlerin tepeciğe ulaşmasıdır; K’de doğrudan bu olay kaydedilmiştir. Döllenme ise erkek ve dişi üreme hücrelerinin birleşmesidir; L’de bu aşama doğrulanmıştır. Tozlaşma ile döllenme aynı olay değildir. K’nin sonraki aşamalarının henüz kaydedilmemiş olması, döllenmenin kesin gerçekleştiğini veya kesin gerçekleşmediğini söylemeye yetmez."
+      },
+      {
+        "id": "f6-1-t13-09",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "İdeal modelde kırmızı kart yalnız kırmızı ışığı, yeşil kart yalnız yeşil ışığı, beyaz kart bütün görünür renkleri yansıtır; yansıtmadığı renkleri soğurur. Bu üç kartın hangisi olduğu bilinmeyen P, R ve S, iki kez aydınlatılıyor. Ortamda seçilen kaynak dışında ışık yoktur.\n• Yalnız kırmızı ışıkta P ve R kırmızı, S siyah görünüyor.\n• Yalnız yeşil ışıkta P siyah, R ve S yeşil görünüyor.\n\nP, R ve S kartlarının beyaz ışık altındaki renkleri sırasıyla hangisidir?",
+        "options": [
+          "Kırmızı – beyaz – yeşil",
+          "Beyaz – kırmızı – yeşil",
+          "Kırmızı – yeşil – beyaz",
+          "Yeşil – beyaz – kırmızı"
+        ],
+        "correct": 0,
+        "explanation": "R hem kırmızı hem yeşil ışığı yansıtır; verilen üç kart arasında bunu beyaz kart yapar. P kırmızıyı yansıtır, yeşili yansıtmaz; kırmızı karttır. S yeşili yansıtır, kırmızıyı yansıtmaz; yeşil karttır. Yalnız ilk gözlem P ile R’yi ayırmaya yetmez; ikinci gözlemle birlikte kimlikler belirlenir."
+      },
+      {
+        "id": "f6-1-t13-10",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Bir deneyde başlangıç boyutları aynı olan iki metal şerit aynı başlangıç sıcaklığındadır. Şeritler ısıtılıyor; erime veya mekanik çekme olmuyor. K ve L şeritlerinin farklı miktarlarda uzadığı görülüyor. Bir öğrenci, “K daha çok uzadı; öyleyse K ve L farklı metallerden yapılmıştır.” diyor. Ancak deneyde şeritlerin son sıcaklıkları kaydedilmemiştir.\n\nÖğrencinin sonucundaki eksikliği en iyi açıklayan değerlendirme hangisidir?",
+        "options": [
+          "Uzama ölçülmesi yeterlidir; son sıcaklık bilinmese de metal cinsi kesin belirlenir.",
+          "İlk uzunluklar eşitse aynı metalden yapılan şeritler, ulaştıkları sıcaklık ne olursa olsun eşit uzar.",
+          "Aynı metalden olsalar bile farklı sıcaklık artışları farklı uzamalara yol açabilir; cins etkisini karşılaştırırken sıcaklık artışı da eşitlenmelidir.",
+          "Son sıcaklıkların kaydedilmesi yeterlidir; başlangıç sıcaklığı ve ilk uzunluklar genleşme karşılaştırmasını etkilemez."
+        ],
+        "correct": 2,
+        "explanation": "Genleşme karşılaştırmasında yalnız ilk boyutların değil, sıcaklık değişiminin de kontrol edilmesi gerekir. Başlangıç sıcaklıkları aynı olsa da son sıcaklıklar farklıysa sıcaklık artışları farklıdır. Aynı metal bu nedenle farklı miktarlarda uzayabilir. Gözlenen farkı yalnız metal cinsine bağlamak için verilen bilgi yetersizdir."
+      }
+    ],
+
   },
   term2: {},
 };

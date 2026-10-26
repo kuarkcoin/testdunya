@@ -434,3 +434,13 @@ Toplam: 23 test, 230 soru, 117 SVG, 28 rota. Önceki 220 soru ve 110 SVG korunur
 - `soru-05.svg` herkese açık katılım çağrısıyla merdiveni kapatan ödül vitrininin çelişkisini, `soru-06.svg` olay kartlarıyla geriye dönüşlü anlatım planını gösterir. Görseller 360 birim genişliğinde, en az 26 birim yazılıdır; 238 piksel çıktıları okunabilirlik ve taşma bakımından incelenmiştir. Görseller doğru cevap için gereklidir.
 - Önceki **510 soru ve 280 SVG** korunur; matematik, fen ve İngilizcedeki 11–12. testler değişmez. Yeni toplamlar **52 test / 520 soru / 282 SVG / 57 altıncı sınıf rotası / 361 statik sayfa**.
 - Bağımsız Türkçe, tek cevap, zorluk, özgünlük ve görsel denetimi; veri/rota doğrulaması, TypeScript, tam üretim derlemesi ve eski içerik korunumu kontrolleri uygulanır. ESLint yapılandırılmamıştır; etkileşimli tarayıcı denetimi yapılmaz. Production’a otomatik aktarım yapılmaz.
+
+
+## Fen Bilimleri Test 13 — Deney Koşulları ve Çok Aşamalı Bilimsel Çıkarım (Zor)
+
+- 7 şekilli + 3 şekilsiz soru; cevap anahtarı **B, C, A, D, A, C, B, D, A, C**. `/6-sinif/fen/test-13` rotası mevcut veri kaydından üretilir; ortak soru şeması değişmez.
+- Tutulmada gölgenin konumu, bileşke ve dengeleyici kuvvet, iki araştırma için ayrı kontrollü karşılaştırma, yüzey–normal açı ayrımı, parçalanmada yoğunluğun korunması, donma süresi ile donma noktasının ayrımı, iletkenlik deneyinde kontrol düzeneğinin güvenilirliği, tozlaşma–döllenme kanıtı, iki aydınlatma altında renk belirleme ve genleşmede sıcaklık değişiminin kontrolü işlenir. Zorluk çok aşamalı çıkarım, ölçülen ile çıkarılan bilgiyi ayırma ve deney koşullarını birlikte değerlendirme üzerinden sağlanır.
+- Yedi pasif SVG 360 birim genişliğinde, en az 26 birim yazılıdır; 238 piksel çıktıları okunabilirlik ve taşma bakımından incelenir. Görseller soruların çözümünde gereken kayıtları taşır.
+- Önceki **520 soru ve 282 SVG** korunur. Yeni toplamlar **53 test / 530 soru / 289 SVG / 58 altıncı sınıf rotası / 362 statik sayfa**.
+- MEB kapsam kontrolü: https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/410, https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/413 ve https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/414. Sürat-hız hesabı, grafik ve birim dönüşümleri eklenmez; elektrik sorusunda akım veya Ohm kanunu hesabı kullanılmaz.
+- Bağımsız bilimsel doğruluk, tek cevap, zorluk ve görsel denetimi; veri/rota doğrulaması, TypeScript, tam üretim derlemesi ve eski içerik korunumu kontrolleri uygulanır. ESLint yapılandırılmamıştır; etkileşimli tarayıcı denetimi yapılmaz. Production’a otomatik aktarım yapılmaz.
