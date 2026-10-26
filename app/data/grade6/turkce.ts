@@ -1953,6 +1953,156 @@ export const turkceData: SubjectData = {
         "correct": 3,
         "explanation": "Not, görüş farklılığını değil, gerekçelerin dinlenmemesini çalışamamanın nedeni olarak gösterir. D olayı ve sonucu koruyarak yalnız neden ilişkisini düzeltir. A dinlememeyi görüş ayrılıklarının da nedeni sayar. B farklılığı neden olmaktan çıkarmaz. C dinlemenin bütün görüş ayrılıklarını gidereceğini varsayar."
       }
+    ],
+    "test14": [
+      {
+        "id": "t6-1-t14-01",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Oyunda yolcuyu karşılayacak oyuncu, sahneye getirmesi gereken sandalyeyi unuttu. Yolcu rolündeki Deniz, sandalyenin bulunması gereken yere bakıp “Demek burada konuklar ayakta ağırlanıyor!” dedi. Arkadaşı da “Yol yorgunluğunu unutturacak manzaramız var.” diyerek pencereye yöneldi. Perde kapanınca Deniz, “Sandalyeyi bulamadık ama sahneyi kaybetmedik.” dedi.\nDeniz’in son sözüyle anlatmak istediği aşağıdakilerden hangisidir?",
+        "options": [
+          "Eksik eşyanın yerini başka bir eşya tutmasa da oyuncular, seyirciye hazırlıkta yapılan yanlışı açıklamayı başarmıştır.",
+          "Bir aksaklığı rollerine uygun sözlerle oyunun içine alarak sahnenin sürmesini sağlamışlardır.",
+          "Oyuncular, eksikliğin oyunun akışını etkilediğini kabul etmeden önceden hazırlanmış konuşmalarını sürdürmüştür.",
+          "Oyuncular, aksaklığı geçici olarak gizlemek için karakterlerinin dışına çıkıp kendi aralarında çözüm aramıştır."
+        ],
+        "correct": 1,
+        "explanation": "Sandalyenin yokluğu gizlenmez; karakterlerin konuşmasına katılır. Oyuncular rollerini sürdürerek aksaklığı sahnenin parçasına dönüştürür. B bunu açıklar. A seyirciye gerçek nedenin açıklandığını, C sözlerin aynen korunduğunu, D karakter dışına çıkılıp çözüm arandığını varsayar."
+      },
+      {
+        "id": "t6-1-t14-02",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "I. Bir doğa gözlemcisi, uzaktan gördüğü kuşu not ederken tür adının yanına soru işareti koydu. Arkadaşı bunu silmesini önerince “Bu işaret kuş hakkında değil, benim bilgimin sınırı hakkında.” dedi.\nII. Bir çevirmen, eski bir mektuptaki silik sözcüğü tahmin ederek yazmak yerine boşluk bıraktı ve nedenini dipnotta belirtti. Okurun akıcı bir cümle yerine eksikliği görmesini tercih etti.\nBu metinlerin ortak düşüncesini en doğru yansıtan yargı hangisidir?",
+        "options": [
+          "Bilginin güvenilirliği, onu aktaran kişinin çalışma yöntemini ayrıntılarıyla anlatmasına bağlıdır.",
+          "Eksik bilgiyi okurun tamamlamasına fırsat vermek, araştırmacının yorum yapmasından daha uygundur.",
+          "Bir kayıttaki belirsizliği belirtmek, kaydın geri kalanının doğruluğunu da güvence altına alır.",
+          "Bilinenlerle tahmin edilenlerin sınırını göstermek, eksiksiz görünmekten daha değerlidir."
+        ],
+        "correct": 3,
+        "explanation": "İki kişi de eksikliği görünür kılar; bilgi ile tahmin arasındaki sınırı korumayı, tam görünmeye tercih eder. D ortaktır. A yöntemlerin ayrıntılarıyla açıklanmasını şart sayar; oysa metinlerde bilginin sınırı belirtilir. B okurun boşlukları doldurmasının amaçlandığını varsayar. C bir belirsizliğin açıklanmasını, kalan bütün bilginin doğruluk güvencesine dönüştürür."
+      },
+      {
+        "id": "t6-1-t14-03",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Bir röportajda koşucuya “Yarışı kazandığınızda ilk kimi düşündünüz?” diye soruldu. Koşucu, “Bitiş çizgisinde adım söylendi ama sabahları beni uyandıran kardeşimin, yağmurda antrenmana gelen arkadaşımın adı söylenmedi.” yanıtını verdi. Muhabir, bu yanıtı “Koşucu, başarısının yalnız kendisine ait sayılmasına karşı çıkıyor.” diye özetledi.\nBu özetin doğruluğunu en güçlü biçimde açıklayan seçenek hangisidir?",
+        "options": [
+          "Koşucu, kendi adının duyurulmasıyla destek verenlerin adlarının anılmamasını karşılaştırarak başarıdaki görünmeyen payları vurgulamıştır.",
+          "Koşucu, kendisine verilen desteği anlatırken yarış sonucunun duyurulma biçimini başarısının başlıca nedeni olarak göstermiştir.",
+          "Koşucu, desteği vurgulamak için kendi emeğini dışarıda bırakmış ve yarışı kazanmasında yalnız yakınlarının payı bulunduğunu belirtmiştir.",
+          "Koşucu, yakınlarının desteğini anarken yarış sonucundan çok destek verenlerin birbirinden farklı fedakârlıklarını karşılaştırmıştır."
+        ],
+        "correct": 0,
+        "explanation": "A, “adım söylendi ama” karşıtlığının işlevini doğru açıklar: görünen kişisel başarının arkasında başkalarının da desteği vardır. B duyuruyu başarı nedeni sayar. C koşucunun kendi emeğini yok saydığını ekler. D yanıtın odağını kişisel başarı–ortak destek karşıtlığından yakınların fedakârlıklarını karşılaştırmaya kaydırır."
+      },
+      {
+        "id": "t6-1-t14-04",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Bir belgeselde aynı nehrin hem köpüklü, hızlı akan bölümü hem de durgun görünen kıyısı gösterildi. Anlatıcı, “Bu iki görüntüden yalnız birini seçseydik nehir hakkında daha kolay, fakat daha eksik bir şey söylemiş olurduk.” dedi.\nAnlatıcının düşüncesine uygun bir değerlendirmede aşağıdakilerden hangisi birlikte bulunmalıdır?",
+        "options": [
+          "Her görüntünün nehrin bir yönünü yansıtabileceği; bu nedenle iki görüntü arasında ortak bir özellik bulunamayacağı.",
+          "İki görüntünün de doğru olabileceği; nehrin genel özelliğinin anlatımda daha uzun gösterilen bölümden çıkarılabileceği.",
+          "Her iki görüntünün de nehrin bir yönünü yansıtabileceği; tek yönün nehrin bütününün özelliği gibi sunulmaması gerektiği.",
+          "Tek görüntünün nehir hakkında eksik bilgi verebileceği; ikinci görüntü eklendiğinde nehirle ilgili başka bilgiye gerek kalmayacağı."
+        ],
+        "correct": 2,
+        "explanation": "C hem her görüntünün bir yönü gösterebileceğini hem bu yönün bütünün yerine konmaması gerektiğini korur. A farklı yönler arasında ortaklık bulunamayacağını ekler. B gösterim süresini genelleme ölçütü yapar. D iki görüntünün nehir hakkında eksiksiz bilgi vereceğini varsayar. Anlatıcı bunları söylemez."
+      },
+      {
+        "id": "t6-1-t14-05",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Müzedeki çizim hazırlandıktan sonra aynı kabın sol tarafına ait olduğu belirlenen bir kulp bulunur. Bu parça, çizimde solda önerilen kulpla biçim ve boyut bakımından aynıdır; başka yeni parça bulunmaz.\nÇizimin açıklama anahtarı korunarak yeni bulgu işlenecektir. Bilinenlerle önerilenlerin sınırını koruyan güncelleme hangisidir?",
+        "options": [
+          "Soldaki kulp ve onunla aynı biçimde çizilen sağdaki kulp düz çizgiye çevrilir; üst gövde kesik kalır.",
+          "Soldaki kulp düz çizgiye çevrilir; sağdaki kulp ve üst gövde kesik, alt gövde düz kalır.",
+          "Soldaki kulp ile ona bağlanan üst gövde düz çizgiye çevrilir; sağdaki kulp kesik kalır.",
+          "Soldaki kulp kesik bırakılır; artık biçimi desteklenen sağdaki kulp düz çizgiye çevrilir."
+        ],
+        "correct": 1,
+        "explanation": "Yeni bulunan parça yalnızca soldaki kulptur. Anahtara göre bunun çizgisi düz olmalıdır; alt gövde zaten buluntudur. Sağ kulp ve üst gövde hâlâ öneridir. B her bölümün bilgi durumunu korur. Benzer görünmeleri sağ kulpun bulunduğunu kanıtlamaz (A ve D); kulpun bulunması üst gövdenin de bulunduğu anlamına gelmez (C).",
+        "imageUrl": "/grade6/turkce/test-14/soru-05.svg",
+        "imageAlt": "Kabın alt gövdesi düz, üst gövdesi ve iki kulpu kesik çizgilerle gösterilir. Anahtar: Düz çizgi bulunan parça; kesik çizgi önerilen tamamlama.",
+        "imageWidth": 360,
+        "imageHeight": 540
+      },
+      {
+        "id": "t6-1-t14-06",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Görselde aynı söyleşinin planlanan ve gerçekleşen akışları verilmiştir.\nBu iki akış karşılaştırıldığında aşağıdaki değerlendirmelerden hangisi kesin olarak yapılabilir?",
+        "options": [
+          "Sorulara ayrılan süre uzadığı için anlatımın ikinci kısmı kısaltılmıştır.",
+          "Sorular üçüncü sırada kaldığından anlatımla ilişkili konumları değişmemiştir.",
+          "Soruların sıra numarası değişmemiş, ancak anlatım tamamlanmadan sorulara geçilmiştir.",
+          "Gerçekleşen akışta aşama sayısı arttığı için söyleşi planlanandan uzun sürmüştür."
+        ],
+        "correct": 2,
+        "explanation": "Sorular her iki listede de üçüncü sıradadır; ancak planda anlatımdan sonra, gerçekleşen akışta anlatımın iki kısmı arasındadır. C sıra numarası ile anlatıma göre konumu ayırır. B aynı sıra numarasını aynı ilişki sanır. A ve D süre bilgisi gerektirir; görselde süreler verilmemiştir.",
+        "imageUrl": "/grade6/turkce/test-14/soru-06.svg",
+        "imageAlt": "Plan: Tanışma, Anlatım, Sorular, Kapanış. Gerçekleşen: Tanışma, Anlatım ilk kısım, Sorular, Anlatım devamı, Kapanış.",
+        "imageWidth": 360,
+        "imageHeight": 850
+      },
+      {
+        "id": "t6-1-t14-07",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Bir aşçı, öğrencilerinden aynı yemeği hazırlamalarını istedi. Ece tarifteki süreye uyarak ocağı kapattı; Bora ise sebzelerin henüz yumuşamadığını fark edip biraz daha bekledi. Aşçı, “Bora tarife karşı gelmedi; tarifin ne için verildiğini unutmadı.” dedi.\nAşçının sözünden çıkarılabilecek en kapsamlı yargı hangisidir?",
+        "options": [
+          "Bir yönergeyi amacını gözeterek uygulamak, değişen koşullarda ayrıntılarını değerlendirmeyi gerektirebilir.",
+          "Bir yönergenin uygunluğu, uygulayan kişinin alışkanlıklarına ne kadar uyduğuyla değerlendirilmelidir.",
+          "Bir uygulamada iyi sonuç veren değişiklik, aynı yönergenin sonraki uygulamalarında da korunmalıdır.",
+          "Bir yönergenin amacını, uygulama sırasında kendiliğinden ortaya çıkan sonuca uygun olacak biçimde değiştirmek gerekir."
+        ],
+        "correct": 0,
+        "explanation": "Bora pişirme amacını korur, süreyi sebzelerin durumuna göre değerlendirir. A bu dengeyi anlatır. B metinde olmayan kişisel alışkanlığı ölçüt yapar. C bir uygulamadaki değişikliği sonraki farklı koşullara geneller. D ise ayrıntıyı amaca göre değerlendirmek yerine amacı ortaya çıkan sonuca göre değiştirir."
+      },
+      {
+        "id": "t6-1-t14-08",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Bir gezgin “Bu kasabada kimse acele etmiyor.” diye yazmıştı. Sonradan notuna şu açıklamayı ekledi: “Burada yalnızca bir pazar sabahı bulundum; o da meydanda oturarak geçti.”\nİlk cümleyi bu açıklamanın sınırlarına uygun hâle getiren seçenek hangisidir?",
+        "options": [
+          "Bu kasabada pazar günleri bütün insanlar işlerini ağırdan alıyor.",
+          "Bu kasabanın meydanında oturanlar hiçbir zaman acele etmiyor.",
+          "Bir pazar sabahı bu kasabanın her yerinde sakin bir yaşam vardı.",
+          "Bu kasabanın meydanında geçirdiğim pazar sabahında çevremdekiler telaşsız görünüyordu."
+        ],
+        "correct": 3,
+        "explanation": "D gözlemi tek bir zaman, belirli bir yer ve gözlenen kişilerle sınırlar; “görünüyordu” gözlem niteliğini korur. A bir sabahı bütün pazarlara ve herkese, B gözlemi her zamana, C meydanı kasabanın her yerine genişletir."
+      },
+      {
+        "id": "t6-1-t14-09",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "“Bir deniz fenerinin ışığını anlatan şiiri okurken sözcüklerin neyi gösterdiğini anlayabiliyordum. Yine de dizeler arasında bir uzaklık hissediyordum. Aylar sonra sisli bir kıyıda beklerken karşıdan aralıklarla gelen ışığı gördüm. Şiirdeki sözcükler değişmedi; fakat aralarındaki sessizlik artık bana boş gelmiyordu.”\nBu parçanın son cümlesiyle ilgili hangi yorum, metnin bütününe uygundur?",
+        "options": [
+          "Anlatıcı, şiirde anlamını bilmediği sözcükleri kıyıda gördüğü nesnelerle eşleştirerek öğrenmiştir.",
+          "Anlatıcının yaşadığı deneyim, önceden sözcük düzeyinde anladığı şiirin duygu dünyasına yaklaşmasını sağlamıştır.",
+          "Anlatıcı, şairin sessizlik hakkında yeterli açıklama yapmadığını kıyıya gidince fark etmiştir.",
+          "Anlatıcı, gördüğü ışıkla şiirin gerçeğe uymadığını anlayınca dizelerdeki boşlukları zihninde düzeltmiştir."
+        ],
+        "correct": 1,
+        "explanation": "Başta sözcüklerin neyi gösterdiği anlaşılır; eksik olan sözlük bilgisi değildir. Yaşantı, şiirde sezilen uzaklığı azaltır. B bu değişimi açıklar. A başlangıç bilgisiyle çelişir; C ve D metinde olmayan kusur ve düzeltme düşünceleri ekler."
+      },
+      {
+        "id": "t6-1-t14-10",
+        "subject": "turkce",
+        "term": 1,
+        "prompt": "Bir seramik ustası, öğrencisinin eğri duran kâsesini gösterip “Bu biçimi neden seçtin?” diye sordu. Öğrenci “Seçmedim, elim kaydı.” dedi. Usta, “Öyleyse şimdi karar ver: Bu eğrilik kâsenin kullanımını engelliyor mu, yoksa ona başka bir özellik mi katıyor?” diye karşılık verdi.\nUstanın yaklaşımını en doğru değerlendiren seçenek hangisidir?",
+        "options": [
+          "İsteyerek yapılmayan her ayrıntının düzeltilmesini, işin başlangıçtaki tasarıma benzemesini istemektedir.",
+          "Öğrencinin elinin kaymasını yeni bir teknik sayarak bütün kâselerin aynı biçimde yapılmasını önermektedir.",
+          "Ortaya çıkan ayrıntının kazayla oluşmasına değil, işlevine ve etkisine bakılarak korunmasına ya da değiştirilmesine karar verilmesini istemektedir.",
+          "Kâsenin kullanımını etkileyen bir ayrıntının, ilgi çekici görünüyorsa değerlendirilmeden korunmasını önermektedir."
+        ],
+        "correct": 2,
+        "explanation": "Usta kazayla oluşan eğriliği hemen hata veya yenilik olarak adlandırmaz; kullanım ve özellik açısından değerlendirmeye açar. C bu koşullu yaklaşımı korur. A her kazayı düzeltir, B her kazayı yenilik sayar, D işlevi dikkate almadan görünüşü yeterli bulur."
+      }
     ]
   },
   "term2": {}

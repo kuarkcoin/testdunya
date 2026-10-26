@@ -410,3 +410,11 @@ Toplam: 23 test, 230 soru, 117 SVG, 28 rota. Önceki 220 soru ve 110 SVG korunur
 - SEO başlığı: **Gerekçe, Kapsam ve Anlam Bağları (Zor)**. Ortak soru şeması değişmemiştir.
 - Toplam: 49 test, 490 soru, 276 SVG; 54 altıncı sınıf rotası, 358 statik sayfa. Önceki 480 soru ve 274 SVG korunur.
 - Kontroller: veri, TypeScript, rota, production build, eski içerik korunumu ve bağımsız dil/cevap denetimi. Bağımsız ESLint yapılandırılmamıştır; canlı tarayıcı doğrulaması bu çalışma kapsamında yapılmamıştır.
+
+## Türkçe Test 14 — Bakış Açısı, Kanıt ve Yorum Sınırları (Zor)
+
+- 8 metin + 2 görsel okuma sorusu; cevap anahtarı **B, D, A, C, B, C, A, D, B, C**. `/6-sinif/turkce/test-14` rotası mevcut veri kaydından üretilir; ortak soru şeması değişmez.
+- Sahne doğaçlamasının örtük anlamı, iki metindeki bilgi sınırı, röportajdaki karşıtlığın işlevi, parça-bütün genellemeleri, yeni bulguyla çizimdeki kanıt durumunu güncelleme, sıra numarası ile göreli konumu ayırma, yönergenin amacı, gözlemin kapsamı, yaşantının metni anlamaya etkisi ve işlevi gözeten değerlendirme işlenir. Zorluk; birbirine yakın, metnin yalnız bir yönünü koruyan çeldiriciler ve çok adımlı çıkarımlarla sağlanır.
+- `soru-05.svg` buluntu–önerilen tamamlama çizimi, `soru-06.svg` planlanan–gerçekleşen söyleşi akışıdır. İki pasif SVG 360 birim genişliğinde ve en az 26 birim yazılıdır; 238 piksel çıktıları okunabilirlik ve taşma bakımından incelenir. Görseller doğru cevap için gereklidir.
+- Önceki **490 soru ve 276 SVG** korunur; matematik, fen ve İngilizcedeki 11–12. testler değişmez. Yeni toplamlar **50 test / 500 soru / 278 SVG / 55 altıncı sınıf rotası / 359 statik sayfa**.
+- Bağımsız Türkçe, tek cevap, zorluk ve görsel denetimi; veri/rota doğrulaması, TypeScript, tam üretim derlemesi ve eski içerik korunumu kontrolleri uygulanır. ESLint yapılandırılmamıştır; etkileşimli tarayıcı denetimi yapılmaz. Production’a otomatik aktarım yapılmaz.
