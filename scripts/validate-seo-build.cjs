@@ -135,6 +135,7 @@ async function validateBuild(root = ROOT) {
     headers: { 'user-agent': 'Twitterbot/1.0', accept: 'text/html' },
   });
   const checked = [];
+  const pageFailures = [];
   try {
     const deadline = Date.now() + 60000;
     let ready = false;
@@ -146,7 +147,7 @@ async function validateBuild(root = ROOT) {
     }
     assert(ready, `Next did not start within 60 seconds\n${logs}`);
 
-    async function page(pathname, { index = true, canonical = pathname, requireHeading = true, type, questionData, genericData, grade } = {}) {
+    async function verifyPage(pathname, { index = true, canonical = pathname, requireHeading = true, type, questionData, genericData, grade } = {}) {
       const response = await request(pathname);
       assert.equal(response.status, 200, `${pathname}: HTTP status`);
       assert.match(response.headers.get('content-type') || '', /text\/html/i);
@@ -157,8 +158,9 @@ async function validateBuild(root = ROOT) {
       assert(document.meta('description').trim().length >= 30, `${pathname}: page description`);
       const canonicals = document.links.filter((link) => link.rel === 'canonical');
       assert.equal(canonicals.length, 1, `${pathname}: one canonical`);
-      assert.equal(canonicals[0].href, seo.absoluteUrl(canonical), `${pathname}: canonical target`);
-      assert.equal(document.meta('og:url'), seo.absoluteUrl(canonical), `${pathname}: OG URL`);
+      // Next may serialize the origin without its optional final slash.
+      assert.equal(new URL(canonicals[0].href).href, seo.absoluteUrl(canonical), `${pathname}: canonical target`);
+      assert.equal(new URL(document.meta('og:url')).href, seo.absoluteUrl(canonical), `${pathname}: OG URL`);
       assert.equal(document.meta('og:title'), document.titles[0], `${pathname}: resolved/social titles agree`);
       assert.equal(document.meta('og:description'), document.meta('description'), `${pathname}: social description`);
       assert.equal(document.meta('twitter:card'), 'summary_large_image');
@@ -208,6 +210,15 @@ async function validateBuild(root = ROOT) {
       }
       checked.push({ path: pathname, status: 200, canonical, index, schemas: document.schemas.length });
       return document;
+    }
+
+    async function page(pathname, options) {
+      try {
+        return await verifyPage(pathname, options);
+      } catch (error) {
+        // Routes are independent: report all failing page contracts in one build.
+        pageFailures.push(`${pathname}: ${error.message}`);
+      }
     }
 
     for (const pathname of ['/', '/lgs/sozel', '/ielts/speaking', '/paragraf', '/dashboard']) await page(pathname);
@@ -275,6 +286,7 @@ async function validateBuild(root = ROOT) {
     assert(png.subarray(0, 8).equals(Buffer.from([137, 80, 78, 71, 13, 10, 26, 10])), 'OG endpoint returns actual PNG bytes');
     assert.equal(png.readUInt32BE(16), 1200, 'OG width');
     assert.equal(png.readUInt32BE(20), 630, 'OG height');
+    assert.deepEqual(pageFailures, [], 'Rendered page SEO contracts failed');
     return {
       status: 'passed', layer: 'real Next production build over HTTP',
       buildId: fs.readFileSync(path.join(root, '.next/BUILD_ID'), 'utf8').trim(),
