@@ -515,3 +515,13 @@ Toplam: 23 test, 230 soru, 117 SVG, 28 rota. Önceki 220 soru ve 110 SVG korunur
 - İngilizce soru ve seçenekler, Türkçe açıklamalar; mobilde okunaklı 360 piksel SVG görseller.
 - Önceki 590 soru ve 331 SVG değiştirilmeden korunmuştur. Yeni toplam 60 test, 600 soru, 338 SVG; 65 altıncı sınıf rotası.
 - Konu etiketleri kullanıcının sağladığı ilk beş ünite grubuna dayanır; güncel programın tamamını kapsadığı iddiası değildir.
+
+
+## İngilizce Test 15 — Zor karma tekrar
+
+- İlk beş kullanıcı konu grubunda 10 yeni soru: 7 SVG destekli, 3 metin sorusu.
+- Çoklu koşullar, görsel karşılaştırma, göndermeler, görev değişiklikleri ve bilgi sınırlarını yorumlama.
+- İngilizce soru ve seçenekler, Türkçe açıklamalar. Anahtar: C A B D A C A B C D.
+- Önceki 600 soru ve 338 SVG korunur. Toplam 61 test, 610 soru, 345 SVG ve 66 altıncı sınıf rotası.
+- SVG genişliği 360 piksel; mobil görünüm için 238 pikselde kontrol edilir.
+- Veri, TypeScript, tam derleme, rota ve içerik koruma kontrolleri uygulanır. Bağımsız lint ve etkileşimli tarayıcı testi çalıştırılmamıştır. Production aktarımı yapılmaz.

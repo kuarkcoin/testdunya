@@ -2385,6 +2385,176 @@ export const ingilizceData: SubjectData = {
         "correct": 3,
         "explanation": "Salı günü müzik dersi olup olmadığını soran II, No ile başlayan IV ile yanıtlanır. VI bu kez müzik dersinin ne zaman olduğunu sorar; V perşembe gününü söyler. III başlangıç saatini ister; I saat 16.30'u verir. Doğru sıra II–IV–VI–V–III–I'dır."
       }
+    ],
+    "test15": [
+      {
+        "id": "e6-1-t15-01",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Look at Deniz's plan for today. His homework must be finished before he can play a game. He also wants to finish the game before dinner. Which change keeps BOTH rules?",
+        "options": [
+          "Start the game at five and do homework after it.",
+          "Move dinner to half past five without changing the other times.",
+          "Start the game at six and finish it at half past six.",
+          "Start the game at quarter past five and finish at quarter to six."
+        ],
+        "correct": 2,
+        "explanation": "Ödev 17.30'da biter; oyun bundan önce başlayamaz. C'de oyun 18.00–18.30 arasındadır ve 19.00 yemeğinden önce biter. A ve D ödev tamamlanmadan oyun başlatır. B yemeği 17.30'a alarak oyunun yemekten önce bitmesi kuralını bozar.",
+        "imageUrl": "/grade6/ingilizce/test-15/soru-01.svg",
+        "imageAlt": "Three activity cards show today's plan: homework 17:00–17:30, game 17:45–18:15, dinner 19:00.",
+        "imageWidth": 360,
+        "imageHeight": 800
+      },
+      {
+        "id": "e6-1-t15-02",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Two breakfast trays arrive without names. Look at the trays and read the notes. Each child gets ONE tray. Which sentence identifies the trays and explains the choice correctly?",
+        "options": [
+          "Tray 1 is for Ece because she does not want eggs; Tray 2 is for Arda because he does not want tea.",
+          "Tray 1 is for Arda because he does not want milk; Tray 2 is for Ece because she does not want cheese.",
+          "Tray 1 is for Ece because she does not want tea; Tray 2 is for Arda because he does not want eggs.",
+          "Tray 1 is for Arda because he likes cheese; Tray 2 is for Ece because she likes milk."
+        ],
+        "correct": 0,
+        "explanation": "İlk tepside peynir, tost ve çay; ikincide yumurta, tost ve süt vardır. Ece yumurta istemediğinden ikinci tepsiyi alamaz. Arda çay istemediğinden ilk tepsiyi alamaz. A isimleri ve gerekçeleri doğru eşleştirir; diğer seçenekler reddedilen yiyecek veya içeceği değiştirir.",
+        "imageUrl": "/grade6/ingilizce/test-15/soru-02.svg",
+        "imageAlt": "Tray 1 cheese toast tea; Tray 2 eggs toast milk. Ece: I like both drinks, but no eggs for me. Arda: I like eggs and cheese, but no tea for me.",
+        "imageWidth": 360,
+        "imageHeight": 900
+      },
+      {
+        "id": "e6-1-t15-03",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Derya starts at the café. First she goes to the library to borrow a book. Then she goes to the bakery to buy bread. She takes the direct route between these places and uses the marked crossing when needed. Which description matches her journey?",
+        "options": [
+          "She crosses the street before the library and again before the bakery.",
+          "She does not cross before the library; she crosses once before the bakery.",
+          "She crosses before the library but not before the bakery.",
+          "She does not cross the street on either part of the journey."
+        ],
+        "correct": 1,
+        "explanation": "Kafe ile kütüphane sokağın aynı tarafındadır; ilk bölümde karşıya geçmez. Fırın karşı tarafta olduğundan ikinci bölümde bir kez karşıya geçer. B, iki yol bölümünü doğru sırayla açıklar. Bookshop kitap satın alınan başka bir binadır; gidilecek library ile karıştırılmamalıdır.",
+        "imageUrl": "/grade6/ingilizce/test-15/soru-03.svg",
+        "imageAlt": "Map: café and library on the left side of the street; bookshop and bakery on the right. One marked central crossing. Derya starts at the café, visits the library, then the bakery.",
+        "imageWidth": 360,
+        "imageHeight": 850
+      },
+      {
+        "id": "e6-1-t15-04",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Nora sends this message: 'It is colder here than in Green Town, but warmer than in Blue Town. It isn't raining here, so I can go outside without an umbrella.' Which town can she be in?",
+        "options": [
+          "Green Town",
+          "Blue Town",
+          "Lake Town",
+          "Hill Town"
+        ],
+        "correct": 3,
+        "explanation": "Nora'nın bulunduğu yer 18°C'den soğuk, 8°C'den sıcak ve yağmursuz olmalıdır. Lake 12°C olsa da yağmurludur. Hill 14°C ve bulutlu/yağmursuz olduğu için bütün ipuçlarına uyar. Green ve Blue kendi sıcaklıklarından daha soğuk veya sıcak olamaz.",
+        "imageUrl": "/grade6/ingilizce/test-15/soru-04.svg",
+        "imageAlt": "Forecast: Green 18°C sunny; Blue 8°C rainy; Lake 12°C rainy; Hill 14°C cloudy and dry. Town cards with weather symbols.",
+        "imageWidth": 360,
+        "imageHeight": 850
+      },
+      {
+        "id": "e6-1-t15-05",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Three friends make a plan for two rides, one after the other. YES means 'I like it'; NO means 'I don't want to ride it.' Each pair must choose a ride BOTH children like. Which plan gives two suitable pairs?",
+        "options": [
+          "Lara and Efe: carousel. Efe and Mia: Ferris wheel.",
+          "Lara and Mia: carousel. Efe and Mia: roller coaster.",
+          "Lara and Efe: Ferris wheel. Lara and Mia: roller coaster.",
+          "Lara and Mia: Ferris wheel. Lara and Efe: carousel."
+        ],
+        "correct": 0,
+        "explanation": "Lara ile Efe'nin ortak tercihi carousel, Efe ile Mia'nınki Ferris wheel'dir. Lara dönme dolabı, Mia atlıkarıncayı ve Efe hız trenini istemez. A iki eşleştirmeyi de doğru yapar. Birinci eşleştirmesi doğru olsa bile diğer eşleştirmesi yanlış olan plan uygun değildir.",
+        "imageUrl": "/grade6/ingilizce/test-15/soru-05.svg",
+        "imageAlt": "Three illustrated preference cards with YES/NO labels: Lara likes the carousel and roller coaster, not the Ferris wheel; Efe likes the carousel and Ferris wheel, not the roller coaster; Mia likes the Ferris wheel and roller coaster, not the carousel.",
+        "imageWidth": 360,
+        "imageHeight": 1000
+      },
+      {
+        "id": "e6-1-t15-06",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Look at the town scene. Which question has the answer 'No, she isn't, but he is' in this picture?",
+        "options": [
+          "Is Mum waiting for a bus?",
+          "Is Mum reading a book?",
+          "Is Mum buying fruit?",
+          "Is Mum drinking tea?"
+        ],
+        "correct": 2,
+        "explanation": "Mum meyve almıyor; otobüs bekliyor. Dad ise meyve alıyor. Bu nedenle C sorusuna 'Hayır, annem almıyor ama babam alıyor.' anlamındaki cevap uyar. A'nın ilk yanıtı Yes olur. B ve D için Mum'un yapmadığı eylemi Dad'in yaptığı da gösterilmez; he is kısmı desteklenmez.",
+        "imageUrl": "/grade6/ingilizce/test-15/soru-06.svg",
+        "imageAlt": "Mum stands at bus stop under bus sign; Dad hands money to fruit seller beside apples. Both adults labelled Mum and Dad. No books.",
+        "imageWidth": 360,
+        "imageHeight": 800
+      },
+      {
+        "id": "e6-1-t15-07",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Ece can spend up to six tickets on TWO DIFFERENT rides. She wants to see the town from above on at least one ride, but she does not want a frightening ride. Look at the signs. Which pair can she choose?",
+        "options": [
+          "The carousel and the Ferris wheel.",
+          "The Ferris wheel and the roller coaster.",
+          "The carousel and the ghost train.",
+          "The roller coaster and the ghost train."
+        ],
+        "correct": 0,
+        "explanation": "Carousel 2, Ferris wheel 3 biletle toplam 5 bilet ister ve dönme dolap yüksekten manzara sunar. Ferris wheel ile roller coaster toplam 7 bilet gerektirdiği için bütçeyi aşar. Ghost train korkutucu olduğu için onu içeren seçenekler uygun değildir. A bütçe, iki farklı oyuncak ve tercih koşullarının hepsine uyar.",
+        "imageUrl": "/grade6/ingilizce/test-15/soru-07.svg",
+        "imageAlt": "Ride signs: carousel, 2 tickets, slow, near the ground; Ferris wheel, 3 tickets, slow, high town view; roller coaster, 4 tickets, fast and high; ghost train, 2 tickets, frightening, near the ground. Ece has 6 tickets.",
+        "imageWidth": 360,
+        "imageHeight": 950
+      },
+      {
+        "id": "e6-1-t15-08",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Read the descriptions.\n'Elm Town is quieter than Oak Town. Pine Town is noisier than Oak Town. Elm and Pine both have fewer shops than Oak, but the exact numbers of shops are not given.'\n\nWhich statement is supported without guessing missing information?",
+        "options": [
+          "Elm is quieter than Pine and has fewer shops than Pine.",
+          "Elm is quieter than Pine, but we cannot tell which of those two towns has fewer shops.",
+          "Pine is quieter than Elm, but both have fewer shops than Oak.",
+          "Elm and Pine have the same number of shops because both have fewer shops than Oak."
+        ],
+        "correct": 1,
+        "explanation": "Sakinlik sırası Elm, Oak, Pine'dır; Elm, Pine'dan daha sakindir. Dükkân sayısında ise yalnız Elm ve Pine'ın Oak'tan az olduğu bilinir. Elm ile Pine arasındaki sayı sırası veya eşitlik verilmemiştir. B bilinen karşılaştırmayla bilinmeyen bilgiyi ayırır; A ve D sayı bilgisi ekler, C sakinlik yönünü ters çevirir."
+      },
+      {
+        "id": "e6-1-t15-09",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Read the message.\n'Hi, Ada! I am at the café with my brother. He is drinking milk, but I am not. The tea in front of him is mine. He is holding it for me because I am carrying our sandwiches.'\n\nWhich statement is supported by the message?",
+        "options": [
+          "Both people are drinking milk.",
+          "The brother orders tea because he dislikes milk.",
+          "The tea belongs to the writer, but the brother is holding it.",
+          "The sandwiches belong only to the brother."
+        ],
+        "correct": 2,
+        "explanation": "Çayın mine ile anlatılan sahibi mesajı yazan kişidir. Erkek kardeş çayı geçici olarak onun için tutar; bir şeyi tutmak onun sahibi olmak demek değildir. Milk içen erkek kardeştir, yazar değildir. Our sandwiches ifadesi sandviçlerin ortak olduğunu gösterir; kardeşin sütü sevmediği söylenmez."
+      },
+      {
+        "id": "e6-1-t15-10",
+        "subject": "ingilizce",
+        "term": 1,
+        "prompt": "Read the messages about a picnic.\nAylin: 'I can bring bread. Ben, can you bring juice? Ceren, can you bring cups?'\nCeren: 'I have bread at home, but no cups.'\nBen: 'I can bring the cups too, with the juice.'\nAylin: 'Good! Ceren, please bring the bread. Then I can bring cheese instead.'\n\nWhich note correctly lists the FINAL jobs?",
+        "options": [
+          "Aylin: bread; Ben: juice; Ceren: cups and cheese.",
+          "Aylin: cheese; Ben: cups; Ceren: bread and juice.",
+          "Aylin: bread and cheese; Ben: juice and cups; Ceren: cups.",
+          "Aylin: cheese; Ben: juice and cups; Ceren: bread."
+        ],
+        "correct": 3,
+        "explanation": "Ben cups too diyerek meyve suyuna bardakları ekler; meyve suyundan vazgeçmez. Ceren ekmeği üstlenince Aylin bread yerine cheese getirir. Son durumda Aylin peynir, Ben meyve suyu ile bardaklar, Ceren ekmek getirir. İlk önerilerdeki görevleri son mesajlarla güncellemek gerekir."
+      }
     ]
   },
   "term2": {}
