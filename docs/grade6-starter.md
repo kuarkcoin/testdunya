@@ -454,3 +454,15 @@ Toplam: 23 test, 230 soru, 117 SVG, 28 rota. Önceki 220 soru ve 110 SVG korunur
 - Önceki **530 soru ve 289 SVG** korunur. Yeni toplamlar **54 test / 540 soru / 296 SVG / 59 altıncı sınıf rotası / 363 statik sayfa**.
 - Ortak bölen sorusunda EBOB terimi veya algoritması kullanılmaz. Çemberde yay uzunluğu ve alan konuları kullanıcının sağladığı konu listesine uygundur.
 - Bağımsız matematik, tek cevap, özgünlük ve görsel denetimi; veri/rota doğrulaması, TypeScript, tam üretim derlemesi ve eski içerik korunumu kontrolleri uygulanır. ESLint yapılandırılmamıştır; etkileşimli tarayıcı denetimi yapılmaz. Production’a otomatik aktarım yapılmaz.
+
+
+## Matematik Test 14 — Zor kategori (26 Ekim 2026)
+
+- Matematik Test 14, 7 şekilli ve 3 şekilsiz özgün soruyla eklendi. Önceki 13 matematik testi ve diğer derslerin içerikleri korunur.
+- Kapsam: örtüşen karelerde alan ve dış çevre; tekerlek çevresi ile kalan dönüş açısı; ortalama ve ortanca; yamukta paralellik ve ikizkenar üçgen; iki dengeyle bilinmeyen kütle; birim dönüşümü, boya ve tam şişe gereksinimi; ardışık nokta örüntüsü; asal sayıların tek-çift özelliği; para aktarımı; kademeli ücret.
+- Zorluk, birden fazla bağıntının birleştirilmesi ve tersine çözümden doğar. Bazı sorular orta-zor düzeydedir; tüm sorular eşit güçlükte değildir.
+- Cevap sırası: C, A, D, B, C, C, B, B, D, A. Sayısal sonuçlar: 88 cm² ve 42 cm; 72°; 8; 65°; 13 kg; 0,45 L; 45; 23; 81 TL; 6 TL.
+- Yedi SVG 360 piksel genişlikte ve en az 26 piksel yazıyla hazırlandı; mobilde 238 piksel genişliğinde okunabilirlik kontrolü yapılır. Görseller gerçek geometrik şekil, sıralı kayıt, denge veya örüntü gösterir.
+- Matematik toplamı 14 test / 140 sorudur. Tüm 6. sınıf paketi 55 test / 550 soru / 303 SVG içerir.
+- Veri, TypeScript, tam derleme, rotalar ve önceki içeriklerin korunması kontrolleri yayın öncesinde çalıştırılır. Bağımsız matematik ve görsel inceleme yapılır. Standalone lint yapılandırılmamıştır; etkileşimli tarayıcı kontrolü çalıştırılmamıştır.
+- Bu değişiklik production aktarımı içermez.

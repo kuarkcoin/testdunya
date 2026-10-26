@@ -2108,6 +2108,177 @@ export const matematikData: SubjectData = {
       }
     ],
 
+    test14: [
+      {
+        "id": "m6-1-t14-01",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Kenar uzunlukları 8 cm ve 6 cm olan iki kare, şekildeki gibi üst üste yerleştiriliyor. Ortak bölge 3 cm × 4 cm boyutlarında bir dikdörtgendir.\n\nOluşan birleşik şeklin alanı ve yalnız dış sınırının uzunluğu sırasıyla hangisidir?",
+        "options": [
+          "88 cm² ve 56 cm",
+          "100 cm² ve 42 cm",
+          "88 cm² ve 42 cm",
+          "76 cm² ve 28 cm"
+        ],
+        "correct": 2,
+        "explanation": "Alanlar toplanınca ortak bölge iki kez sayılır; bir kez çıkarılır: 64 + 36 − 12 = 88 cm². İki karenin çevreleri toplamı 32 + 24 = 56 cm’dir. Birleşimin içinde kalan sınır parçaları toplam 2 × (3 + 4) = 14 cm olduğundan dış sınır 56 − 14 = 42 cm’dir.",
+        "imageUrl": "/grade6/matematik/test-14/soru-01.svg",
+        "imageAlt": "Bir büyük 8 cm kare ile sağ altına kaydırılmış 6 cm kare. Ortak dikdörtgenin yatay uzunluğu 3 cm, düşey uzunluğu 4 cm. Dış sınır turuncu, iç çizgiler kesikli.",
+        "imageWidth": 360,
+        "imageHeight": 700
+      },
+      {
+        "id": "m6-1-t14-02",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Çapı 50 cm olan bir tekerlek, düz bir yolda kaymadan 25,8 m ilerliyor. Başlangıçta çember üzerindeki P işareti yere değmektedir.\n\nTam turlar çıkarıldığında, kalan son tur bölümünde tekerleğin merkezi etrafında döndüğü açı kaç derecedir? (π = 3 alınız.)",
+        "options": [
+          "72°",
+          "108°",
+          "120°",
+          "288°"
+        ],
+        "correct": 0,
+        "explanation": "Bir turda alınan yol 3 × 50 = 150 cm’dir. Toplam yol 2580 cm olur. 17 tam turda 2550 cm alınır; 30 cm kalır. Kalan yol bir çevrenin 30/150 = 1/5’i olduğundan açı 360 ÷ 5 = 72°’dir.",
+        "imageUrl": "/grade6/matematik/test-14/soru-02.svg",
+        "imageAlt": "Yol üzerinde 50 cm çaplı tekerlek; başlangıçta P en altta, sağa ilerleme oku ve 25,8 m toplam yol etiketi.",
+        "imageWidth": 360,
+        "imageHeight": 650
+      },
+      {
+        "id": "m6-1-t14-03",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Altı sayılık veri grubu, küçükten büyüğe sıralanmış olarak görselde verilmiştir. Aritmetik ortalama 10, ortanca 9’dur.\n\nY − X kaçtır?",
+        "options": [
+          "6",
+          "7",
+          "9",
+          "8"
+        ],
+        "correct": 3,
+        "explanation": "Altı verinin ortancası üçüncü ve dördüncü sayıların ortalamasıdır. (X + 11) ÷ 2 = 9 olduğundan X = 7’dir. Tüm sayıların toplamı 6 × 10 = 60’tır. Bilinen dört sayının toplamı 3 + 6 + 11 + 18 = 38 olduğundan X + Y = 22, Y = 15 olur. Y − X = 15 − 7 = 8’dir.",
+        "imageUrl": "/grade6/matematik/test-14/soru-03.svg",
+        "imageAlt": "Küçükten büyüğe sıralı altı kart: 3, 6, X, 11, Y, 18. Ortanca üçüncü ve dördüncü kayıtların arasındaki konumda işaretlenir. Ortalama 10, ortanca 9.",
+        "imageWidth": 360,
+        "imageHeight": 650
+      },
+      {
+        "id": "m6-1-t14-04",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "ABCD yamuğunda AB ∥ DC ve AD = DC’dir. DAB açısı 70°, ABC açısı 80° olarak verilmiştir. AC köşegeni çiziliyor.\n\nACB açısı kaç derecedir?",
+        "options": [
+          "55°",
+          "65°",
+          "70°",
+          "75°"
+        ],
+        "correct": 1,
+        "explanation": "Paralel tabanlar nedeniyle ADC = 180 − 70 = 110°’dir. AD = DC olduğundan ADC üçgeninin A ve C taban açıları (180 − 110) ÷ 2 = 35° olur. DAB açısının AC ile kalan kısmı CAB = 70 − 35 = 35°’dir. ABC üçgeninde ACB = 180 − 80 − 35 = 65° bulunur.",
+        "imageUrl": "/grade6/matematik/test-14/soru-04.svg",
+        "imageAlt": "AB alt, DC üst paralel tabanlı yamuk; AD ve DC eşit çizgileri, A70°, B80°. AC köşegeni. C köşesinde AC ile CB arasındaki açı soruluyor.",
+        "imageWidth": 360,
+        "imageHeight": 700
+      },
+      {
+        "id": "m6-1-t14-05",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "İki terazi de dengededir. Aynı renk ve biçimdeki kapalı kutuların kütleleri birbirine, topların kütleleri de birbirine eşittir.\n\nÜç kutunun toplam kütlesi, bir topun kütlesinden kaç kilogram fazladır?",
+        "options": [
+          "11",
+          "12",
+          "13",
+          "18"
+        ],
+        "correct": 2,
+        "explanation": "İlk denge 2 kutu + 3 top = 27 kg; ikinci denge 1 kutu + 2 top = 16 kg verir. İkinci dengenin iki katından ilk denge çıkarılınca 1 top = 32 − 27 = 5 kg bulunur. Bir kutu 16 − 10 = 6 kg’dır. İstenen fark 3 × 6 − 5 = 13 kg’dır.",
+        "imageUrl": "/grade6/matematik/test-14/soru-05.svg",
+        "imageAlt": "Birinci dengeli terazide iki kutu ve üç top 27 kg ile dengede. İkinci terazide bir kutu ve iki top 16 kg ile dengede.",
+        "imageWidth": 360,
+        "imageHeight": 740
+      },
+      {
+        "id": "m6-1-t14-06",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Şekildeki L biçimli duvara iki kat boya yapılacaktır. Boyanın 1 litresi bir katta 7 m² alanı boyar. Elde 1,2 litre boya vardır. Eksik boya, her biri 0,75 litre olan şişelerden en az sayıda alınarak tamamlanıyor. Boya kaybı yoktur.\n\nİki kat boyama tamamlandığında toplam kaç litre boya artar?",
+        "options": [
+          "0,30",
+          "0,40",
+          "0,45",
+          "0,75"
+        ],
+        "correct": 2,
+        "explanation": "Duvarın alanı 6 × 4 − 2 × 1,5 = 21 m²’dir. İki kat için 42 m² boyama yapılır; 42 ÷ 7 = 6 litre boya gerekir. Eldeki 1,2 litre çıkarılınca 4,8 litre alınmalıdır. 6 şişe 4,5 litre ile yetmez; 7 şişe 5,25 litre olduğundan yeterlidir. Artan boya 1,2 + 5,25 − 6 = 0,45 litredir.",
+        "imageUrl": "/grade6/matematik/test-14/soru-06.svg",
+        "imageAlt": "6 m genişliğinde, 4 m yüksekliğinde dikdörtgenin sağ üstünden 2 m genişliğinde ve 1,5 m yüksekliğinde dikdörtgen çıkarılmış L biçimli duvar. 0,75 L şişe ve iki kat bilgisi. Başlangıçta elde 1,2 L boya vardır.",
+        "imageWidth": 360,
+        "imageHeight": 700
+      },
+      {
+        "id": "m6-1-t14-07",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Nokta örüntüsünde her adımda alta, bir önceki sıradan bir fazla nokta içeren yeni bir sıra ekleniyor. İlk üç adım görseldedir.\n\nArdışık iki adımdaki şekiller ayrı ayrı çizildiğinde toplam 81 nokta kullanılıyor. Bu iki şekilden büyük olanında kaç nokta vardır?",
+        "options": [
+          "36",
+          "45",
+          "54",
+          "72"
+        ],
+        "correct": 1,
+        "explanation": "Ardışık iki adımın nokta toplamları sırasıyla 1 + 2 + … + n ve 1 + 2 + … + (n + 1) biçimindedir. 8. adımda 1 + … + 8 = 36, 9. adımda 1 + … + 9 = 45 nokta vardır ve toplam 81’dir. Nokta sayısı her adımda arttığından başka ardışık çift bu toplamı vermez. Büyük şekil 45 noktalıdır.",
+        "imageUrl": "/grade6/matematik/test-14/soru-07.svg",
+        "imageAlt": "İlk adım bir nokta. İkinci adım üstte bir altta iki, toplam üç nokta. Üçüncü adım bir, iki ve üç noktalı sıralar, toplam altı nokta. Ardışık iki büyük şeklin toplamı 81.",
+        "imageWidth": 360,
+        "imageHeight": 700
+      },
+      {
+        "id": "m6-1-t14-08",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Birbirinden farklı üç asal sayının toplamı 42’dir. Bu sayıların büyük olan ikisi arasındaki fark 6’dır.\n\nEn büyük asal sayı kaçtır?",
+        "options": [
+          "19",
+          "23",
+          "29",
+          "31"
+        ],
+        "correct": 1,
+        "explanation": "Üç tek sayının toplamı tek olur; toplam 42 çift olduğundan asal sayılardan biri 2 olmalıdır. Diğer iki asalın toplamı 40, farkı 6’dır. Küçük olanı bulmak için (40 − 6) ÷ 2 = 17 hesaplanır; büyüğü 23’tür. 2, 17 ve 23 farklı asallardır ve toplamları 42’dir."
+      },
+      {
+        "id": "m6-1-t14-09",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Aylin’in başlangıçtaki parası, Bora’nın başlangıçtaki parasının 3/4’üdür. Aylin, Bora’ya 18 TL verince Bora’nın parası Aylin’in kalan parasının iki katı oluyor. Başka para alışverişi yapılmıyor.\n\nAylin’in başlangıçta kaç TL’si vardır?",
+        "options": [
+          "54",
+          "72",
+          "90",
+          "81"
+        ],
+        "correct": 3,
+        "explanation": "Başlangıçtaki paraları Aylin için 3, Bora için 4 eş payla düşünelim. Aylin’in son parasının iki katı, 6 paydan 36 TL eksiktir; Bora’nın son parası ise 4 paydan 18 TL fazladır. Eşitlik için 2 pay = 54 TL, yani 1 pay = 27 TL olmalıdır. Aylin başlangıçta 3 × 27 = 81 TL’ye sahiptir. Kontrol: Aylin 63, Bora 126 TL kalır."
+      },
+      {
+        "id": "m6-1-t14-10",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Bir fotokopicinin her sipariş için tarifesi şöyledir: İlk 40 sayfanın her biri 0,75 TL, 40’tan sonraki her sayfa 0,60 TL’dir. Başka ücret alınmıyor. Bir müşteri bütün sayfaları tek siparişte bastırınca 57 TL ödüyor.\n\nAynı sayfaları biri 40 sayfalık, diğeri kalan sayfalardan oluşan iki ayrı siparişle bastırsaydı kaç TL daha fazla öderdi?",
+        "options": [
+          "6",
+          "9",
+          "12",
+          "15"
+        ],
+        "correct": 0,
+        "explanation": "İlk 40 sayfa 30 TL tutar. Kalan 27 TL, 27 ÷ 0,60 = 45 sayfaya karşılık gelir; toplam 85 sayfa vardır. Siparişler ayrılırsa 40 sayfalık sipariş 30 TL, 45 sayfalık sipariş 40 × 0,75 + 5 × 0,60 = 33 TL tutar. Toplam 63 TL, tek siparişten 63 − 57 = 6 TL fazladır."
+      }
+    ],
+
   },
   term2: {},
 };
