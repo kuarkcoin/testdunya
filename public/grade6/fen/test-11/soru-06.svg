@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="580" viewBox="0 0 360 580" role="img">
+<title>Fen Test 11 · K ve L ile hacim ölçümleri</title>
+<desc>Aynı dereceli kabın iki durumu alt alta gösteriliyor. İlk durumda suda tamamen batmış K cismi varken seviye 70 cm³. İkinci durumda K çıkarılmadan L de tamamen batırılmış ve seviye 100 cm³. Su dışında ölçülen kütleler: K 30 g, K ve L birlikte 120 g. İki çizimde de cisimler tamamen suyun içinde.</desc>
+<rect width="360" height="580" fill="white"/>
+<text x="180" y="29" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Kütleler su dışında</text>
+<rect x="14" y="56" width="332" height="246" rx="12" fill="#F5FAFD" stroke="#C7DDE9" stroke-width="2"/>
+<text x="180" y="83" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Önce: K</text>
+<rect x="47" y="106" width="118" height="153" rx="3" fill="white"/>
+<rect x="49" y="168" width="114" height="89" fill="#B8DEEB"/>
+<path d="M 47 106 V 259 H 165 V 106" fill="none" stroke="#36586D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="49" y1="168" x2="163" y2="168" stroke="#468BA8" stroke-width="3" stroke-linecap="round"/>
+<line x1="154" y1="168" x2="164" y2="168" stroke="#36586D" stroke-width="2" stroke-linecap="round"/>
+<line x1="154" y1="129" x2="164" y2="129" stroke="#36586D" stroke-width="2" stroke-linecap="round"/>
+<rect x="65" y="211" width="38" height="36" rx="4" fill="#F2CD7F" stroke="#36586D" stroke-width="2"/>
+<text x="84" y="231" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">K</text>
+<text x="257" y="154" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Seviye</text>
+<text x="257" y="195" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">70 cm³</text>
+<text x="180" y="283" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">K kütlesi: 30 g</text>
+<rect x="14" y="320" width="332" height="246" rx="12" fill="#F5FAFD" stroke="#C7DDE9" stroke-width="2"/>
+<text x="180" y="347" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Sonra: K + L</text>
+<rect x="47" y="370" width="118" height="153" rx="3" fill="white"/>
+<rect x="49" y="393" width="114" height="128" fill="#B8DEEB"/>
+<path d="M 47 370 V 523 H 165 V 370" fill="none" stroke="#36586D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="49" y1="393" x2="163" y2="393" stroke="#468BA8" stroke-width="3" stroke-linecap="round"/>
+<line x1="154" y1="432" x2="164" y2="432" stroke="#36586D" stroke-width="2" stroke-linecap="round"/>
+<line x1="154" y1="393" x2="164" y2="393" stroke="#36586D" stroke-width="2" stroke-linecap="round"/>
+<rect x="65" y="475" width="38" height="36" rx="4" fill="#F2CD7F" stroke="#36586D" stroke-width="2"/>
+<text x="84" y="495" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">K</text>
+<rect x="113" y="459" width="39" height="52" rx="4" fill="#A2BACB" stroke="#36586D" stroke-width="2"/>
+<text x="132.5" y="487" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">L</text>
+<text x="257" y="418" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Seviye</text>
+<text x="257" y="459" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">100 cm³</text>
+<text x="180" y="547" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">K + L kütlesi: 120 g</text>
+</svg>

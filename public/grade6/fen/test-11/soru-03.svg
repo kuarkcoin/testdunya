@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="580" viewBox="0 0 360 580" role="img">
+<title>Fen Test 11 · Soru 3</title>
+<desc>İki aşamalı tohum gözlem tablosu. K grubunda birinci aşama: nemli, 5°C, 10 tohumdan 0&#x27;ı çimlenmiş; ikinci aşama: nemli, 25°C, 10 tohumdan 8&#x27;i çimlenmiş. L grubunda birinci aşama: kuru, 25°C, 10 tohumdan 0&#x27;ı çimlenmiş; ikinci aşama: nemli, 25°C, 10 tohumdan 8&#x27;i çimlenmiş. İlk aşamadaki kaplarda tohum, ikinci aşamadaki kaplarda filiz simgeleri vardır. Sonuçların çimlenen tohum sayısını gösterdiği belirtilmiştir.</desc>
+<rect width="360" height="580" fill="white"/>
+<text x="180" y="29" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Aynı tohumlar</text>
+<text x="126" y="76" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">1. aşama</text>
+<text x="278" y="76" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">2. aşama</text>
+<text x="26" y="198" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">K</text>
+<rect x="48" y="104" width="150" height="188" rx="8" fill="#F6FAFC" stroke="#A5BAC8" stroke-width="2"/>
+<text x="123.0" y="128" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Nemli</text>
+<text x="123.0" y="163" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">5°C</text>
+<path d="M 81.0 219 L 84.0 239 Q 123.0 253 162.0 239 L 165.0 219 Z" fill="#DCE8EF" stroke="#36586D" stroke-width="1.7"/>
+<ellipse cx="123.0" cy="219" rx="42" ry="11" fill="#E3CEAA" stroke="#36586D" stroke-width="1.7"/>
+<ellipse cx="102.0" cy="219" rx="6" ry="4" fill="#BA8D5A" stroke="#7B603F" stroke-width="1"/>
+<ellipse cx="123.0" cy="219" rx="6" ry="4" fill="#BA8D5A" stroke="#7B603F" stroke-width="1"/>
+<ellipse cx="144.0" cy="219" rx="6" ry="4" fill="#BA8D5A" stroke="#7B603F" stroke-width="1"/>
+<text x="123.0" y="270" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">0 / 10</text>
+<rect x="206" y="104" width="144" height="188" rx="8" fill="#F6FAFC" stroke="#A5BAC8" stroke-width="2"/>
+<text x="278.0" y="128" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Nemli</text>
+<text x="278.0" y="163" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">25°C</text>
+<path d="M 236.0 219 L 239.0 239 Q 278.0 253 317.0 239 L 320.0 219 Z" fill="#DCE8EF" stroke="#36586D" stroke-width="1.7"/>
+<ellipse cx="278.0" cy="219" rx="42" ry="11" fill="#E3CEAA" stroke="#36586D" stroke-width="1.7"/>
+<ellipse cx="257.0" cy="219" rx="6" ry="4" fill="#BA8D5A" stroke="#7B603F" stroke-width="1"/>
+<path d="M 257.0 219 Q 254.0 202 257.0 186" fill="none" stroke="#4B855A" stroke-width="2"/>
+<ellipse cx="251.0" cy="195" rx="7" ry="3.5" fill="#91BD81" stroke="#4B855A" stroke-width="1" transform="rotate(28 251.0 195)"/>
+<ellipse cx="263.0" cy="189" rx="7" ry="3.5" fill="#91BD81" stroke="#4B855A" stroke-width="1" transform="rotate(-28 263.0 189)"/>
+<ellipse cx="278.0" cy="219" rx="6" ry="4" fill="#BA8D5A" stroke="#7B603F" stroke-width="1"/>
+<path d="M 278.0 219 Q 275.0 202 278.0 186" fill="none" stroke="#4B855A" stroke-width="2"/>
+<ellipse cx="272.0" cy="195" rx="7" ry="3.5" fill="#91BD81" stroke="#4B855A" stroke-width="1" transform="rotate(28 272.0 195)"/>
+<ellipse cx="284.0" cy="189" rx="7" ry="3.5" fill="#91BD81" stroke="#4B855A" stroke-width="1" transform="rotate(-28 284.0 189)"/>
+<ellipse cx="299.0" cy="219" rx="6" ry="4" fill="#BA8D5A" stroke="#7B603F" stroke-width="1"/>
+<path d="M 299.0 219 Q 296.0 202 299.0 186" fill="none" stroke="#4B855A" stroke-width="2"/>
+<ellipse cx="293.0" cy="195" rx="7" ry="3.5" fill="#91BD81" stroke="#4B855A" stroke-width="1" transform="rotate(28 293.0 195)"/>
+<ellipse cx="305.0" cy="189" rx="7" ry="3.5" fill="#91BD81" stroke="#4B855A" stroke-width="1" transform="rotate(-28 305.0 189)"/>
+<text x="278.0" y="270" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">8 / 10</text>
+<text x="26" y="401" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">L</text>
+<rect x="48" y="307" width="150" height="188" rx="8" fill="#F6FAFC" stroke="#A5BAC8" stroke-width="2"/>
+<text x="123.0" y="331" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Kuru</text>
+<text x="123.0" y="366" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">25°C</text>
+<path d="M 81.0 422 L 84.0 442 Q 123.0 456 162.0 442 L 165.0 422 Z" fill="#DCE8EF" stroke="#36586D" stroke-width="1.7"/>
+<ellipse cx="123.0" cy="422" rx="42" ry="11" fill="#E3CEAA" stroke="#36586D" stroke-width="1.7"/>
+<ellipse cx="102.0" cy="422" rx="6" ry="4" fill="#BA8D5A" stroke="#7B603F" stroke-width="1"/>
+<ellipse cx="123.0" cy="422" rx="6" ry="4" fill="#BA8D5A" stroke="#7B603F" stroke-width="1"/>
+<ellipse cx="144.0" cy="422" rx="6" ry="4" fill="#BA8D5A" stroke="#7B603F" stroke-width="1"/>
+<text x="123.0" y="473" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">0 / 10</text>
+<rect x="206" y="307" width="144" height="188" rx="8" fill="#F6FAFC" stroke="#A5BAC8" stroke-width="2"/>
+<text x="278.0" y="331" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Nemli</text>
+<text x="278.0" y="366" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">25°C</text>
+<path d="M 236.0 422 L 239.0 442 Q 278.0 456 317.0 442 L 320.0 422 Z" fill="#DCE8EF" stroke="#36586D" stroke-width="1.7"/>
+<ellipse cx="278.0" cy="422" rx="42" ry="11" fill="#E3CEAA" stroke="#36586D" stroke-width="1.7"/>
+<ellipse cx="257.0" cy="422" rx="6" ry="4" fill="#BA8D5A" stroke="#7B603F" stroke-width="1"/>
+<path d="M 257.0 422 Q 254.0 405 257.0 389" fill="none" stroke="#4B855A" stroke-width="2"/>
+<ellipse cx="251.0" cy="398" rx="7" ry="3.5" fill="#91BD81" stroke="#4B855A" stroke-width="1" transform="rotate(28 251.0 398)"/>
+<ellipse cx="263.0" cy="392" rx="7" ry="3.5" fill="#91BD81" stroke="#4B855A" stroke-width="1" transform="rotate(-28 263.0 392)"/>
+<ellipse cx="278.0" cy="422" rx="6" ry="4" fill="#BA8D5A" stroke="#7B603F" stroke-width="1"/>
+<path d="M 278.0 422 Q 275.0 405 278.0 389" fill="none" stroke="#4B855A" stroke-width="2"/>
+<ellipse cx="272.0" cy="398" rx="7" ry="3.5" fill="#91BD81" stroke="#4B855A" stroke-width="1" transform="rotate(28 272.0 398)"/>
+<ellipse cx="284.0" cy="392" rx="7" ry="3.5" fill="#91BD81" stroke="#4B855A" stroke-width="1" transform="rotate(-28 284.0 392)"/>
+<ellipse cx="299.0" cy="422" rx="6" ry="4" fill="#BA8D5A" stroke="#7B603F" stroke-width="1"/>
+<path d="M 299.0 422 Q 296.0 405 299.0 389" fill="none" stroke="#4B855A" stroke-width="2"/>
+<ellipse cx="293.0" cy="398" rx="7" ry="3.5" fill="#91BD81" stroke="#4B855A" stroke-width="1" transform="rotate(28 293.0 398)"/>
+<ellipse cx="305.0" cy="392" rx="7" ry="3.5" fill="#91BD81" stroke="#4B855A" stroke-width="1" transform="rotate(-28 305.0 392)"/>
+<text x="278.0" y="473" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">8 / 10</text>
+<text x="180" y="523" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">Çimlenen / toplam tohum</text>
+<text x="180" y="556" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">Şematik gösterim</text>
+</svg>

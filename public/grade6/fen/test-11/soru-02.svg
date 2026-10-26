@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="590" viewBox="0 0 360 590" role="img">
+<title>Fen Test 11 · Soru 2</title>
+<desc>İki ayrı yatay kuvvet düzeneği vardır. Üstte K arabasına batıya 4 N ve 7 N, doğuya F kuvvetleri uygulanır; K için durmaya devam ediyor yazılıdır. Altta L arabasına batıya F, doğuya 5 N kuvvetleri uygulanır. L'nin üzerinde kuvvet oklarından farklı kesik bir ok, doğuya hareket yönünü gösterir. Batı solda, doğu sağdadır. Kuvvet oklarının boyları ölçekli değildir.</desc>
+<rect width="360" height="590" fill="white"/>
+<text x="55" y="27" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Batı</text>
+<text x="305" y="27" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Doğu</text>
+<rect x="18" y="55" width="324" height="218" rx="12" fill="#F6FAFC" stroke="#36586D" stroke-width="2"/>
+<text x="180" y="88" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">K</text>
+<g transform="translate(0 -6)"><rect x="150" y="141" width="60" height="35" rx="6" fill="#BED9E9" stroke="#36586D" stroke-width="2"/>
+<rect x="163" y="126" width="34" height="21" rx="4" fill="#DCEBF4" stroke="#36586D" stroke-width="2"/>
+<circle cx="162" cy="182" r="9" fill="#36586D"/>
+<circle cx="198" cy="182" r="9" fill="#36586D"/>
+<line x1="130" y1="193" x2="230" y2="193" stroke="#9AB1C0" stroke-width="2"/>
+<line x1="150" y1="141" x2="40" y2="141" stroke="#36586D" stroke-width="3"/>
+<polygon points="40.00,141.00 50.00,146.00 50.00,136.00" fill="#36586D"/>
+<text x="91" y="118" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">4 N</text>
+<line x1="150" y1="170" x2="40" y2="170" stroke="#36586D" stroke-width="3"/>
+<polygon points="40.00,170.00 50.00,175.00 50.00,165.00" fill="#36586D"/>
+<text x="91" y="190" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">7 N</text>
+<line x1="210" y1="156" x2="320" y2="156" stroke="#36586D" stroke-width="3"/>
+<polygon points="320.00,156.00 310.00,151.00 310.00,161.00" fill="#36586D"/>
+<text x="268" y="131" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">F</text>
+</g><text x="180" y="214" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Durmaya devam</text>
+<text x="180" y="248" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">ediyor</text>
+<rect x="18" y="288" width="324" height="215" rx="12" fill="#F6FAFC" stroke="#36586D" stroke-width="2"/>
+<text x="44" y="318" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">L</text>
+<text x="201" y="318" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Doğuya hareket</text>
+<line x1="116" y1="350" x2="280" y2="350" stroke="#A36E24" stroke-width="3" stroke-dasharray="9 7"/>
+<polygon points="280,350 269,344 269,356" fill="#A36E24"/>
+<rect x="150" y="395" width="60" height="35" rx="6" fill="#BED9E9" stroke="#36586D" stroke-width="2"/>
+<rect x="163" y="380" width="34" height="21" rx="4" fill="#DCEBF4" stroke="#36586D" stroke-width="2"/>
+<circle cx="162" cy="436" r="9" fill="#36586D"/>
+<circle cx="198" cy="436" r="9" fill="#36586D"/>
+<line x1="130" y1="448" x2="230" y2="448" stroke="#9AB1C0" stroke-width="2"/>
+<line x1="150" y1="409" x2="40" y2="409" stroke="#36586D" stroke-width="3"/>
+<polygon points="40.00,409.00 50.00,414.00 50.00,404.00" fill="#36586D"/>
+<text x="91" y="385" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">F</text>
+<line x1="210" y1="409" x2="320" y2="409" stroke="#36586D" stroke-width="3"/>
+<polygon points="320.00,409.00 310.00,404.00 310.00,414.00" fill="#36586D"/>
+<text x="271" y="385" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">5 N</text>
+<text x="180" y="532" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">Ok boyları</text>
+<text x="180" y="566" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">ölçekli değildir.</text>
+</svg>

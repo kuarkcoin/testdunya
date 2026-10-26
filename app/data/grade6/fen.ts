@@ -1718,7 +1718,178 @@ export const fenData: SubjectData = {
             "explanation": "Devreye katılan tel uzayınca direnç artar ve ampul sönükleşir. Tel uzunluğu ve diğer koşullar ilk değerlerine döndüğünde direnç ve parlaklık da ilk durumuna döner. Reosta kullanımı, telin yalıtkana dönüşmesi değildir."
       }
 ],
+    test11: [
+      {
+        "id": "f6-1-t11-01",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Şekilde Ay, Dünya'nın tam gölgesinin içindedir. P, Dünya'nın gece tarafındaki bir gözlemci; R, Ay'ın Dünya'ya bakan yüzeyindeki bir kameradır. P'de Ay ufkun üzerindedir ve hava açıktır. R kamerası Dünya'nın bulunduğu yöne çevrilmiştir.\n\nBu anda P'nin gözlemi ve R'nin kaydı için hangisi doğrudur?",
+        "options": [
+          "P: Ay tutulması. R: Güneş, Dünya tarafından örtülmez.",
+          "P: Ay tutulması. R: Güneş, Dünya tarafından örtülür.",
+          "P: Güneş tutulması. R: Güneş, Dünya tarafından örtülmez.",
+          "P: Güneş tutulması. R: Güneş, Dünya tarafından örtülür."
+        ],
+        "correct": 1,
+        "explanation": "Dünya, Güneş ile Ay arasındadır ve Ay, Dünya'nın tam gölgesindedir. Dünya'daki P gözlemcisi bu olayı Ay tutulması olarak gözler. Ay yüzeyindeki R kamerası ise Güneş yönüne baktığında arada Dünya'yı görür; Güneş, Dünya tarafından örtülür. İki kayıt aynı gök cisimleri dizilişinin farklı yerlerden görünümüdür. Ay tutulmasında Ay'ın tamamen görünmez olması gerekmez.",
+        "imageUrl": "/grade6/fen/test-11/soru-01.svg",
+        "imageWidth": 360,
+        "imageHeight": 560,
+        "imageAlt": "Ölçekli olmayan tutulma şemasında yukarıdan aşağıya Güneş, Dünya ve Ay aynı doğrultudadır. Dünya'nın Güneş'e dönük üst tarafı aydınlık, Ay'a dönük alt tarafı gecedir. Dünya'nın arkasına uzanan tam gölge bölgesi Ay'ın tamamını içine alır. P, Dünya'nın Ay'a bakan gece yüzünde işaretlenmiştir. R, Ay'ın Dünya'ya bakan yüzeyindeki kameradır; kameranın bakış oku Dünya'ya doğrudur. Gök cisimleri, P, R ve tam gölge etiketlenmiştir."
+      },
+      {
+        "id": "f6-1-t11-02",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "K ve L düzeneklerinde arabalara etki eden yatay kuvvetlerin tamamı gösterilmiştir; sürtünme yoktur. K'deki araba, kuvvetler uygulanırken durmaya devam ediyor. F kuvveti, L'de büyüklüğü değiştirilmeden batıya uygulanıyor. L'deki araba o anda doğuya hareket etmektedir.\n\nL'deki bileşke kuvvet ve araba henüz durmamışken kısa bir süre içindeki hareket değişimi hangisidir?",
+        "options": [
+          "Doğuya 6 N; araba hızlanır.",
+          "Batıya 16 N; araba yavaşlar.",
+          "Batıya 6 N; araba hızlanır.",
+          "Batıya 6 N; araba yavaşlar."
+        ],
+        "correct": 3,
+        "explanation": "K'de araba durmaya devam ettiğine ve başka yatay kuvvet bulunmadığına göre yatay kuvvetler dengededir. Batıya uygulanan toplam kuvvet 4 + 7 = 11 N olduğundan doğuya uygulanan F de 11 N'dur. L'de batıya 11 N, doğuya 5 N vardır; bileşke 11 − 5 = 6 N batıya yönelir. Araba doğuya hareket ederken bileşke ters yönde olduğu için henüz durmadan önceki sürede yavaşlar.",
+        "imageUrl": "/grade6/fen/test-11/soru-02.svg",
+        "imageWidth": 360,
+        "imageHeight": 590,
+        "imageAlt": "İki ayrı yatay kuvvet düzeneği vardır. Üstte K arabasına batıya 4 N ve 7 N, doğuya F kuvvetleri uygulanır; K için durmaya devam ediyor yazılıdır. Altta L arabasına batıya F, doğuya 5 N kuvvetleri uygulanır. L'nin üzerinde kuvvet oklarından farklı kesik bir ok, doğuya hareket yönünü gösterir. Batı solda, doğu sağdadır. Kuvvet oklarının boyları ölçekli değildir."
+      },
+      {
+        "id": "f6-1-t11-03",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Aynı türden onar tohum K ve L gruplarına ayrılıyor. İlk aşamada hiçbiri çimlenmiyor. Aynı tohumlarla sürdürülen ikinci aşamada yalnız K'nin sıcaklığı 25°C'ye çıkarılıyor, L'nin ortamı ise nemlendiriliyor. Her iki aşamada da tohumlar karanlıkta ve hava alabilen ortamdadır; aşamaların gözlem süreleri eşittir. Sonuçlar görseldedir.\n\nBu kayıtlardan hangi çıkarım yapılabilir?",
+        "options": [
+          "İlk aşamada çimlenme görülmemesi, tohumların tümünün ölü olduğunu kanıtlamaz.",
+          "İlk aşamada iki gruptaki çimlenmeyi de yalnız düşük sıcaklık engellemiştir.",
+          "İkinci aşamada K'nin su koşulu, L'nin sıcaklığı değiştirilmiştir.",
+          "İkinci aşamadaki çimlenme, ışığın çimlenme için zorunlu olduğunu kanıtlar."
+        ],
+        "correct": 0,
+        "explanation": "İkinci aşamada aynı gruplardaki tohumların sekizer tanesi çimlenmiştir. Bu tohumlar ilk aşamada da canlı oldukları hâlde çimlenmemiştir; ilk aşamadaki sonuç tek başına bütün tohumların ölü olduğunu göstermez. Çimlenme için su, uygun sıcaklık ve hava gibi koşullar gerekir. K'de sıcaklık, L'de su koşulu değiştirilmiştir. L ilk aşamada da 25°C'dedir ve deney boyunca ışık verilmemiştir; bu nedenle diğer seçenekler kayıtlarla uyuşmaz.",
+        "imageUrl": "/grade6/fen/test-11/soru-03.svg",
+        "imageWidth": 360,
+        "imageHeight": 580,
+        "imageAlt": "İki aşamalı tohum gözlem tablosu. K grubunda birinci aşama: nemli, 5°C, 10 tohumdan 0'ı çimlenmiş; ikinci aşama: nemli, 25°C, 10 tohumdan 8'i çimlenmiş. L grubunda birinci aşama: kuru, 25°C, 10 tohumdan 0'ı çimlenmiş; ikinci aşama: nemli, 25°C, 10 tohumdan 8'i çimlenmiş. İlk aşamadaki kaplarda tohum, ikinci aşamadaki kaplarda filiz simgeleri vardır. Sonuçların çimlenen tohum sayısını gösterdiği belirtilmiştir."
+      },
+      {
+        "id": "f6-1-t11-04",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Şekilde A'dan gönderilen ışık O noktasındaki düz aynadan yansıyarak B'ye ulaşıyor. Daha sonra ışık kaynağı B'ye taşınıyor ve ışık, B'den O'ya aynı yol boyunca gönderiliyor. Ayna ve normalin konumu değişmiyor.\n\nBu ikinci durumda ışık O'dan hangi yöne yansır ve normalle yaptığı yansıma açısı kaç derece olur?",
+        "options": [
+          "A yönüne; 50°.",
+          "B yönüne; 40°.",
+          "A yönüne; 40°.",
+          "Normal boyunca yukarıya; 0°."
+        ],
+        "correct": 2,
+        "explanation": "İlk durumda gelme açısı 40° olduğundan yansıma açısı da 40°'dir; OB yolu normalle 40° yapar. Kaynak B'ye taşınıp ışık BO boyunca gönderildiğinde yeni gelme açısı yine 40° olur. Yansıyan ışık normalin diğer yanında 40° yaparak OA yolu boyunca A'ya gider. 50°, ışın ile ayna yüzeyi arasındaki açıdır; yansıma açısı normalden ölçülür.",
+        "imageUrl": "/grade6/fen/test-11/soru-04.svg",
+        "imageWidth": 360,
+        "imageHeight": 460,
+        "imageAlt": "İlk durumun ışık yolu gösterilmiştir. Altta yatay düz ayna, aynanın üzerindeki O noktasında yukarı uzanan kesik normal vardır. A sol üstte, B sağ üsttedir. Işık oku A'dan O'ya gelir ve O'dan B'ye gider. AO ışını ile normal arasındaki açı 40° olarak etiketlidir. Normalin aynaya dik olduğu küçük dik açı işaretiyle gösterilir. İkinci durum çizilmemiştir."
+      },
+      {
+        "id": "f6-1-t11-05",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Aynı basınçtaki K ve L kaplarında aynı saf X maddesi vardır. Başlangıçta ikisi de 40°C'dir; K'de katı ve sıvı birlikte, L'de yalnız sıvı bulunur. İki örneğe de ısı veriliyor. İncelenen kısa süre boyunca K'de bir miktar katı kalıyor, L ise kaynama sıcaklığına ulaşmıyor. Bu modelde buharlaşma ve çevreye ısı kaybı ihmal ediliyor.\n\nBu sürede K ve L'nin sıcaklıkları nasıl değişir?",
+        "options": [
+          "İkisinin de sıcaklığı artar.",
+          "K'nin sıcaklığı değişmez, L'nin sıcaklığı artar.",
+          "K'nin sıcaklığı artar, L'nin sıcaklığı değişmez.",
+          "İkisinin de sıcaklığı değişmez."
+        ],
+        "correct": 1,
+        "explanation": "Saf X'in erime sıcaklığı 40°C'dir. K'de katı ve sıvı birlikte bulunurken erime sürer; verilen ısı hâl değişiminde kullanılır ve katı tamamen bitene kadar sıcaklık 40°C'de kalır. L'de madde zaten tamamen sıvıdır. Modelde buharlaşma ihmal edilir ve kaynama sıcaklığı olan 90°C'ye henüz ulaşılmadığı için kaynama başlamamıştır. L'deki sıvının aldığı ısıyla sıcaklığı artar. Başlangıç sıcaklıklarının eşit olması, maddelerin aynı hâlde bulunduğu veya ısıtılınca aynı sıcaklık değişimini göstereceği anlamına gelmez.",
+        "imageUrl": "/grade6/fen/test-11/soru-05.svg",
+        "imageWidth": 360,
+        "imageHeight": 540,
+        "imageAlt": "Saf X maddesinin özellik kartında erime sıcaklığı 40°C, kaynama sıcaklığı 90°C yazılıdır. Başlangıç durumunda yan yana K ve L kapları gösterilir. K'de katı parçalar ve sıvı birlikte, L'de yalnız sıvı vardır. Her kabın termometresi 40°C'yi gösterir. K'nin altında katı + sıvı, L'nin altında sıvı yazılıdır. Sonraki ısıtma durumları çizilmemiştir."
+      },
+      {
+        "id": "f6-1-t11-06",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Aynı dereceli kaptaki suya önce K cismi, ardından K çıkarılmadan L cismi tamamen batırılıyor. Su eklenmiyor; taşma, çözünme, tepkime veya hava kabarcığı oluşmuyor. Cisimlerin su dışında ölçülen kütleleri ve kaptaki seviyeler görselde verilmiştir.\n\nL cisminin yoğunluğu kaç g/cm³'tür?",
+        "options": [
+          "1",
+          "1,2",
+          "3",
+          "4"
+        ],
+        "correct": 2,
+        "explanation": "K ile L'nin toplam kütlesi 120 g, yalnız K'nin kütlesi 30 g olduğundan L'nin kütlesi 120 − 30 = 90 g'dır. K kapta kalırken L eklendiği için 100 − 70 = 30 cm³'lük seviye artışı yalnız L'nin hacmidir. L'nin yoğunluğu 90 ÷ 30 = 3 g/cm³ olur. 100 cm³, L'nin tek başına hacmi değildir.",
+        "imageUrl": "/grade6/fen/test-11/soru-06.svg",
+        "imageAlt": "Aynı dereceli kabın iki durumu alt alta gösteriliyor. İlk durumda suda tamamen batmış K cismi varken seviye 70 cm³. İkinci durumda K çıkarılmadan L de tamamen batırılmış ve seviye 100 cm³. Su dışında ölçülen kütleler: K 30 g, K ve L birlikte 120 g. İki çizimde de cisimler tamamen suyun içinde.",
+        "imageWidth": 360,
+        "imageHeight": 580
+      },
+      {
+        "id": "f6-1-t11-07",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Pille çalışan sağlam bir devrede kullanılan 30 cm'lik tel, düz hâlden görseldeki kıvrımlı hâle getiriliyor. Tel gerilmiyor veya incelmiyor; telin tamamı her iki durumda da devreye katılıyor. Kıvrılan bölümler birbirine değmiyor. Pil, ampul, bağlantılar ve sıcaklık aynı kalıyor.\n\nTelin uçları birbirine yaklaştığına göre direnç ve ampul parlaklığı için hangi yorum doğrudur?",
+        "options": [
+          "Uçlar arası uzaklık azaldığından telin direnci azalır, ampul daha parlak yanar.",
+          "Tel kıvrıldığı için direnci artar, ampul daha sönük yanar.",
+          "Telin toplam uzunluğu aynı kaldığından direnci değişmez, ampul daha parlak yanar.",
+          "Devreye katılan telin uzunluğu ve kalınlığı değişmediğinden direnç ve ampul parlaklığı değişmez."
+        ],
+        "correct": 3,
+        "explanation": "Direnci değerlendirirken telin iki ucu arasındaki düz uzaklık değil, devreye katılan telin kendi uzunluğu dikkate alınır. Telin tamamı yine 30 cm'dir; cinsi, kalınlığı ve sıcaklığı da değişmemiştir. Tel bölümleri birbirine değmediği için daha kısa bir iletim yolu oluşmaz. Bu koşullarda telin direnci ve aynı devredeki ampulün parlaklığı değişmez.",
+        "imageUrl": "/grade6/fen/test-11/soru-07.svg",
+        "imageAlt": "Pilli test devresinde bir ampul ve X ile işaretli tel bölümü gösteriliyor. X bölümünde kullanılan aynı telin iki biçimi altta verilmiş: I durumunda düz telin toplam uzunluğu 30 cm; II durumunda uçları birbirine yaklaşmış, U biçiminde kıvrılmış telin toplam uzunluğu yine 30 cm. Kıvrımlı telin farklı bölümleri birbirine değmiyor. Ampulün parlaklığına ilişkin bir gösterge bulunmuyor.",
+        "imageWidth": 360,
+        "imageHeight": 580
+      },
+      {
+        "id": "f6-1-t11-08",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Bir modelde H hormonu bir iç salgı bezinden kana veriliyor. P, R ve S organlarına ulaşan kanda H hormonu bulunuyor. Ancak hormonun incelenen etkisi yalnız R organında gözleniyor.\n\nBu kayıtlar hangi yorumu destekler?",
+        "options": [
+          "Bir hormon kanla farklı organlara ulaşsa da bu organların hepsinde aynı etkiyi oluşturmak zorunda değildir.",
+          "Bir organda etki gözlenmemesi, o organa hiç hormon taşınmadığını kanıtlar.",
+          "Bir hormon yalnızca salgılandığı bezde etkili olabilir.",
+          "R organında etki görülmesi, hormonun buraya kan yerine yalnız sinirlerle taşındığını gösterir."
+        ],
+        "correct": 0,
+        "explanation": "H hormonu P, R ve S'ye ulaşan kanda bulunduğu hâlde incelenen etki yalnız R'de gözlenmiştir. Bu model, hormonun kanla taşınması ile ulaştığı organda belirli bir etki oluşturmasının farklı şeyler olduğunu gösterir. Hormonun ulaştığı her organın aynı yanıtı vermesi gerekmez. Bu gözlemden P ve S'nin hiçbir koşulda hiçbir hormona yanıt vermeyeceği sonucu çıkarılamaz."
+      },
+      {
+        "id": "f6-1-t11-09",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "İdeal bir modelde opak yeşil levha, üzerine gelen yeşil ışığın tamamını yansıtıyor; diğer görünür ışık renklerini soğuruyor. Levha birinci denemede beyaz ışıkla, ikinci denemede yalnız yeşil ışıkla aydınlatılıyor. Her denemede levhaya gönderilen toplam ışık enerjisi eşittir ve başka ışık yoktur.\n\nLevhada görülen renk ve soğurulan ışık enerjisi için hangisi doğrudur?",
+        "options": [
+          "İkisinde de yeşil görünür; iki denemede eşit ışık enerjisi soğurur.",
+          "Beyaz ışıkta beyaz, yeşil ışıkta yeşil görünür; iki denemede de ışık enerjisi soğurmaz.",
+          "İkisinde de yeşil görünür; beyaz ışıkla aydınlatıldığında daha fazla ışık enerjisi soğurur.",
+          "İkisinde de yeşil görünür; yalnız yeşil ışıkla aydınlatıldığında daha fazla ışık enerjisi soğurur."
+        ],
+        "correct": 2,
+        "explanation": "Beyaz ışık farklı görünür renkleri içerir. Levha bunun yeşil bölümünü yansıtır, diğer renklerini soğurur; bu yüzden yeşil görünür ve ışık enerjisinin bir bölümünü soğurur. Yalnız yeşil ışık gönderildiğinde ise ideal model gereği gelen ışığın tamamını yansıtır, yine yeşil görünür fakat bu ışığı soğurmaz. Aynı renkte görünmesi, iki denemede aynı miktarda enerji soğurduğu anlamına gelmez."
+      },
+      {
+        "id": "f6-1-t11-10",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Aynı türden canlı tohumlar, her birinde 20 tohum bulunan iki gruba ayrılıyor. Bir grup 20°C'de, diğeri 25°C'de tutuluyor. Yeterli nem, hava alabilme ve diğer koşullar eşit tutuluyor. O güne kadar çimlenmiş tohumların toplam sayıları şöyle kaydediliyor:\n• 3. gün: 20°C'de 5, 25°C'de 14 tohum.\n• 10. gün: her iki grupta da 18 tohum.\n\nYalnız bu kayıtlara dayanarak hangi sonuca ulaşılabilir?",
+        "options": [
+          "25°C'deki grupta 10. günün sonunda daha fazla tohum çimlenmiştir.",
+          "25°C'deki grupta 3. güne kadar daha çok tohum çimlenmiş olsa da 10. gündeki toplam çimlenmiş tohum sayıları eşittir.",
+          "Çimlenen bütün tohumlar, iki sıcaklıkta da aynı gün çimlenmiştir.",
+          "Bütün bitki türlerinde sıcaklık arttıkça çimlenen toplam tohum sayısı mutlaka artar."
+        ],
+        "correct": 1,
+        "explanation": "Üçüncü güne kadar 25°C'de çimlenmiş tohum sayısı 14, 20°C'de 5'tir. Ancak onuncu gün her iki gruptaki toplam 18'e ulaşmıştır. Bu deneyde erken kayıttaki fark, son kayıtta daha fazla tohumun çimlenmiş olduğu anlamına gelmez. İki kayıt her bir tohumun hangi gün çimlendiğini göstermez; tek bir türle ve iki sıcaklıkla elde edilen sonuçlar bütün türlere ve tüm sıcaklıklara genellenemez."
+      }
+    ],
 
   },
   term2: {},
 };
+

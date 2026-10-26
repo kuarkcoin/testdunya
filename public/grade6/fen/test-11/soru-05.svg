@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="540" viewBox="0 0 360 540" role="img">
+<title>Fen Test 11 · Saf X maddesinin başlangıç hâlleri</title>
+<desc>Saf X maddesinin özellik kartında erime sıcaklığı 40°C, kaynama sıcaklığı 90°C yazılıdır. Başlangıç durumunda yan yana K ve L kapları gösterilir. K&#x27;de katı parçalar ve sıvı birlikte, L&#x27;de yalnız sıvı vardır. Her kabın termometresi 40°C&#x27;yi gösterir. K&#x27;nin altında katı + sıvı, L&#x27;nin altında sıvı yazılıdır. Sonraki ısıtma durumları çizilmemiştir.</desc>
+<rect width="360" height="540" fill="white"/>
+<rect x="16" y="16" width="328" height="143" rx="12" fill="#EEF7FC" stroke="#C7DDE9" stroke-width="2"/>
+<text x="180" y="43" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Saf X</text>
+<text x="180" y="89" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Erime: 40°C</text>
+<text x="180" y="129" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Kaynama: 90°C</text>
+<text x="180" y="201" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Başlangıç</text>
+<text x="91" y="247" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">K</text>
+<text x="87" y="287" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">40°C</text>
+<path d="M 28 317 H 33 V 462 H 149 V 317 H 154" fill="white" stroke="#36586D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="35" y="365" width="112" height="95" fill="#B8DEEB"/>
+<line x1="35" y1="365" x2="147" y2="365" stroke="#468BA8" stroke-width="3"/>
+<path d="M 47 412 L 62 400 L 80 407 L 82 434 L 58 443 L 43 430 Z" fill="#E9BC68" stroke="#86652D" stroke-width="2"/>
+<path d="M 88 385 L 105 382 L 114 399 L 105 415 L 87 409 Z" fill="#E9BC68" stroke="#86652D" stroke-width="2"/>
+<rect x="126" y="299" width="12" height="125" rx="6" fill="#F8FCFF" stroke="#36586D" stroke-width="2"/>
+<circle cx="132" cy="428" r="11" fill="#F8FCFF" stroke="#36586D" stroke-width="2"/>
+<line x1="132" y1="348" x2="132" y2="429" stroke="#BC5944" stroke-width="4" stroke-linecap="round"/>
+<circle cx="132" cy="428" r="7" fill="#BC5944"/>
+<line x1="127" y1="315" x2="131" y2="315" stroke="#36586D" stroke-width="1.4"/>
+<line x1="127" y1="330" x2="131" y2="330" stroke="#36586D" stroke-width="1.4"/>
+<line x1="127" y1="345" x2="131" y2="345" stroke="#36586D" stroke-width="1.4"/>
+<line x1="127" y1="360" x2="131" y2="360" stroke="#36586D" stroke-width="1.4"/>
+<line x1="127" y1="375" x2="131" y2="375" stroke="#36586D" stroke-width="1.4"/>
+<line x1="127" y1="390" x2="131" y2="390" stroke="#36586D" stroke-width="1.4"/>
+<text x="91" y="501" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Katı + sıvı</text>
+<text x="269" y="247" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#15354B">L</text>
+<text x="265" y="287" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">40°C</text>
+<path d="M 206 317 H 211 V 462 H 327 V 317 H 332" fill="white" stroke="#36586D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="213" y="357" width="112" height="103" fill="#B8DEEB"/>
+<line x1="213" y1="357" x2="325" y2="357" stroke="#468BA8" stroke-width="3"/>
+<rect x="304" y="299" width="12" height="125" rx="6" fill="#F8FCFF" stroke="#36586D" stroke-width="2"/>
+<circle cx="310" cy="428" r="11" fill="#F8FCFF" stroke="#36586D" stroke-width="2"/>
+<line x1="310" y1="348" x2="310" y2="429" stroke="#BC5944" stroke-width="4" stroke-linecap="round"/>
+<circle cx="310" cy="428" r="7" fill="#BC5944"/>
+<line x1="305" y1="315" x2="309" y2="315" stroke="#36586D" stroke-width="1.4"/>
+<line x1="305" y1="330" x2="309" y2="330" stroke="#36586D" stroke-width="1.4"/>
+<line x1="305" y1="345" x2="309" y2="345" stroke="#36586D" stroke-width="1.4"/>
+<line x1="305" y1="360" x2="309" y2="360" stroke="#36586D" stroke-width="1.4"/>
+<line x1="305" y1="375" x2="309" y2="375" stroke="#36586D" stroke-width="1.4"/>
+<line x1="305" y1="390" x2="309" y2="390" stroke="#36586D" stroke-width="1.4"/>
+<text x="269" y="501" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Sıvı</text>
+</svg>

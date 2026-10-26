@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="460" viewBox="0 0 360 460" role="img">
+<title>Fen Test 11 · Soru 4</title>
+<desc>İlk durumun ışık yolu gösterilmiştir. Altta yatay düz ayna, aynanın üzerindeki O noktasında yukarı uzanan kesik normal vardır. A sol üstte, B sağ üsttedir. Işık oku A&#x27;dan O&#x27;ya gelir ve O&#x27;dan B&#x27;ye gider. AO ışını ile normal arasındaki açı 40° olarak etiketlidir. Normalin aynaya dik olduğu küçük dik açı işaretiyle gösterilir. İkinci durum çizilmemiştir.</desc>
+<rect width="360" height="460" fill="white"/>
+<text x="180" y="31" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">İlk durum</text>
+<text x="180" y="92" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Normal</text>
+<line x1="180" y1="120" x2="180" y2="370" stroke="#36586D" stroke-width="2.5" stroke-dasharray="8 7"/>
+<line x1="20" y1="350" x2="340" y2="350" stroke="#36586D" stroke-width="3"/>
+<line x1="33" y1="350" x2="41" y2="358" stroke="#36586D" stroke-width="2"/>
+<line x1="73" y1="350" x2="81" y2="358" stroke="#36586D" stroke-width="2"/>
+<line x1="113" y1="350" x2="121" y2="358" stroke="#36586D" stroke-width="2"/>
+<line x1="153" y1="350" x2="161" y2="358" stroke="#36586D" stroke-width="2"/>
+<line x1="223" y1="350" x2="231" y2="358" stroke="#36586D" stroke-width="2"/>
+<line x1="263" y1="350" x2="271" y2="358" stroke="#36586D" stroke-width="2"/>
+<line x1="303" y1="350" x2="311" y2="358" stroke="#36586D" stroke-width="2"/>
+<line x1="65.0" y1="212.95" x2="180.0" y2="350.0" stroke="#36586D" stroke-width="3"/>
+<polygon points="180.00,350.00 177.40,339.13 169.74,345.55" fill="#36586D"/>
+<line x1="180.0" y1="350.0" x2="295.0" y2="212.95" stroke="#36586D" stroke-width="3"/>
+<polygon points="295.00,212.95 284.74,217.39 292.40,223.82" fill="#36586D"/>
+<circle cx="65.0" cy="212.95" r="4" fill="#15354B"/>
+<circle cx="295.0" cy="212.95" r="4" fill="#15354B"/>
+<circle cx="180" cy="350" r="4" fill="#15354B"/>
+<text x="52" y="186.95" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">A</text>
+<text x="308" y="186.95" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">B</text>
+<path d="M 128.58 288.72 A 80 80 0 0 1 180.00 270.00" fill="none" stroke="#A87126" stroke-width="2.5"/>
+<text x="143" y="249" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">40°</text>
+<polyline points="180,366 196,366 196,350" fill="none" stroke="#36586D" stroke-width="2"/>
+<text x="180" y="394" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">O</text>
+<text x="180" y="430" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Düz ayna</text>
+</svg>

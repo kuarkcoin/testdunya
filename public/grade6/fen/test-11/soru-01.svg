@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="560" viewBox="0 0 360 560" role="img">
+<title>Fen Test 11 · Soru 1</title>
+<desc>Ölçekli olmayan tutulma şemasında yukarıdan aşağıya Güneş, Dünya ve Ay aynı doğrultudadır. Dünya&#x27;nın Güneş&#x27;e dönük üst tarafı aydınlık, Ay&#x27;a dönük alt tarafı gecedir. Dünya&#x27;nın arkasına uzanan tam gölge bölgesi Ay&#x27;ın tamamını içine alır. P, Dünya&#x27;nın Ay&#x27;a bakan gece yüzünde işaretlenmiştir. R, Ay&#x27;ın Dünya&#x27;ya bakan yüzeyindeki kameradır; kameranın bakış oku Dünya&#x27;ya doğrudur. Gök cisimleri, P, R ve tam gölge etiketlenmiştir.</desc>
+<rect width="360" height="560" fill="white"/>
+<text x="180" y="28" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">İki gözlem yeri</text>
+<polygon points="106,266 184,266 170,518 120,518" fill="#DDE4ED"/>
+<circle cx="145" cy="107" r="46" fill="#F8CF68" stroke="#B78A28" stroke-width="2.5"/>
+<line x1="198.0" y1="107.0" x2="205.0" y2="107.0" stroke="#C9972C" stroke-width="3"/>
+<line x1="182.48" y1="144.48" x2="187.43" y2="149.43" stroke="#C9972C" stroke-width="3"/>
+<line x1="145.0" y1="160.0" x2="145.0" y2="167.0" stroke="#C9972C" stroke-width="3"/>
+<line x1="107.52" y1="144.48" x2="102.57" y2="149.43" stroke="#C9972C" stroke-width="3"/>
+<line x1="92.0" y1="107.0" x2="85.0" y2="107.0" stroke="#C9972C" stroke-width="3"/>
+<line x1="107.52" y1="69.52" x2="102.57" y2="64.57" stroke="#C9972C" stroke-width="3"/>
+<line x1="145.0" y1="54.0" x2="145.0" y2="47.0" stroke="#C9972C" stroke-width="3"/>
+<line x1="182.48" y1="69.52" x2="187.43" y2="64.57" stroke="#C9972C" stroke-width="3"/>
+<text x="273" y="107" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Güneş</text>
+<circle cx="145" cy="266" r="39" fill="#314C69" stroke="#36586D" stroke-width="2.5"/>
+<path d="M 106 266 A 39 39 0 0 1 184 266 Z" fill="#B8D7E9"/>
+<path d="M 130 231 L 143 230 L 150 237 L 145 245 L 156 251 L 151 261 L 135 258 L 125 248 Z" fill="#83AD99"/>
+<circle cx="145" cy="266" r="39" fill="none" stroke="#36586D" stroke-width="2.5"/>
+<text x="273" y="251" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Dünya</text>
+<text x="271" y="291" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">Gece</text>
+<line x1="231" y1="289" x2="178" y2="287" stroke="#36586D" stroke-width="1.5"/>
+<circle cx="145" cy="305" r="4.5" fill="#FFE5A3" stroke="#15354B" stroke-width="1.5"/>
+<text x="92" y="315" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">P</text>
+<line x1="109" y1="310" x2="139" y2="305" stroke="#36586D" stroke-width="1.5"/>
+<text x="275" y="348" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">Tam</text>
+<text x="275" y="382" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#15354B">gölge</text>
+<line x1="228" y1="365" x2="179" y2="365" stroke="#36586D" stroke-width="1.5"/>
+<circle cx="145" cy="433" r="24" fill="#B9C6D4" stroke="#36586D" stroke-width="2.5"/>
+<circle cx="152" cy="443" r="5" fill="#9BAEC0"/>
+<circle cx="135" cy="430" r="4" fill="#9BAEC0"/>
+<text x="269" y="433" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">Ay</text>
+<rect x="135" y="399" width="20" height="14" rx="2" fill="#F6FAFE" stroke="#36586D" stroke-width="2"/>
+<rect x="140" y="392" width="10" height="8" rx="1" fill="#D3E3EF" stroke="#36586D" stroke-width="2"/>
+<line x1="145" y1="386" x2="145" y2="345" stroke="#36586D" stroke-width="3"/>
+<polygon points="145.00,345.00 140.00,355.00 150.00,355.00" fill="#36586D"/>
+<text x="89" y="368" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">Bakış</text>
+<text x="93" y="407" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#15354B">R</text>
+<line x1="110" y1="406" x2="132" y2="406" stroke="#36586D" stroke-width="1.5"/>
+<text x="180" y="536" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#15354B">Ölçekli değildir.</text>
+</svg>
