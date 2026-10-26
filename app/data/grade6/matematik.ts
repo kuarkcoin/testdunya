@@ -1937,6 +1937,177 @@ export const matematikData: SubjectData = {
         "explanation": "3,2 kg için 2 dilim, 9,1 kg için 5 dilim ücret ödenir. Aradaki 118 − 64 = 54 TL, 3 dilimden kaynaklanır; bir dilim 54 ÷ 3 = 18 TL'dir. Sabit kabul ücreti 64 − 2 × 18 = 28 TL olur. 4,1 kg ve 5,9 kg ayrı gönderildiğinde her biri 3 dilim sayılır; toplam 2 × (28 + 3 × 18) = 164 TL ödenir. Birleşmiş gönderi tam 10 kg'dır ve 5 dilim sayılır; ücreti 28 + 5 × 18 = 118 TL'dir. Tasarruf 164 − 118 = 46 TL olur."
       }
     ],
+    test13: [
+      {
+        "id": "m6-1-t13-01",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "ABCD dikdörtgeninde E, AB üzerinde; F, BC üzerindedir. Şekilde verilen uzunlukların tümü santimetredir.\n\nBoyalı DEF üçgeninin alanı kaç santimetrekaredir?",
+        "options": [
+          "84",
+          "96",
+          "108",
+          "120"
+        ],
+        "correct": 1,
+        "explanation": "Dikdörtgenin alanı 18 × 12 = 216 cm²’dir. AE = 6 olduğundan EB = 12; BF = 8 olduğundan FC = 4 olur. Boyasız ADE, EBF ve DCF üçgenlerinin alanları sırasıyla 6 × 12 ÷ 2 = 36, 12 × 8 ÷ 2 = 48 ve 18 × 4 ÷ 2 = 36 cm²’dir. Boyalı alan 216 − 36 − 48 − 36 = 96 cm² olur.",
+        "imageUrl": "/grade6/matematik/test-13/soru-01.svg",
+        "imageAlt": "ABCD dikdörtgeni: AB 18 cm, AD 12 cm. E, AB üzerinde ve AE 6 cm. F, BC üzerinde ve BF 8 cm. D, E, F birleştirilmiş; DEF üçgeni boyalıdır.",
+        "imageWidth": 360,
+        "imageHeight": 650
+      },
+      {
+        "id": "m6-1-t13-02",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "O merkezli çemberin çapı 28 cm’dir. Şekildeki 120°’lik merkez açının gördüğü küçük AB yayı ile OA ve OB yarıçapları boyunca tek parça tel yerleştiriliyor. Telin uçları yalnızca birleşiyor; ek pay ve kayıp yoktur.\n\nBu tel düzleştirilip tamamıyla bir kare yapılırsa karenin alanı kaç santimetrekare olur? (π = 3 alınız.)",
+        "options": [
+          "49",
+          "144",
+          "169",
+          "196"
+        ],
+        "correct": 3,
+        "explanation": "Çemberin çevresi 3 × 28 = 84 cm’dir. 120°, tam açının üçte biri olduğundan küçük AB yayı 84 ÷ 3 = 28 cm’dir. İki yarıçapın toplamı çapa, yani 28 cm’ye eşittir. Tel 28 + 28 = 56 cm olur. Karenin bir kenarı 56 ÷ 4 = 14 cm, alanı 14 × 14 = 196 cm²’dir.",
+        "imageUrl": "/grade6/matematik/test-13/soru-02.svg",
+        "imageAlt": "Çapı 28 cm olan O merkezli çember. OA ve OB arasındaki küçük merkez açı 120°. Küçük AB yayı ve iki yarıçap kalın turuncu çizgiyle tel olarak gösterilir.",
+        "imageWidth": 360,
+        "imageHeight": 650
+      },
+      {
+        "id": "m6-1-t13-03",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Paralelkenar biçimindeki zemin, şekildeki üçgen bölüm boş bırakılarak kaplanacaktır. Ölçüler görseldedir. Kaplama parçalarının her biri 0,09 m² alan kaplar; kesilen parçalar da kayıpsız kullanılabilir. Her pakette 6 parça vardır ve yalnız tam paket satılır.\n\nGerekli en az sayıda paket alındığında, kullanılmadan kalan kaplama malzemesinin toplam alanı kaç metrekaredir?",
+        "options": [
+          "0,18",
+          "0,27",
+          "0,36",
+          "0,54"
+        ],
+        "correct": 2,
+        "explanation": "Paralelkenarın tabanı 1,8 m, yüksekliği 120 cm = 1,2 m’dir; alanı 2,16 m² olur. Boş üçgenin tabanı 60 cm = 0,6 m ve yüksekliği yine 1,2 m olduğundan alanı 0,36 m²’dir. Kaplanacak alan 1,8 m², gereken parça sayısı 1,8 ÷ 0,09 = 20’dir. En az 4 paketle 24 parça alınır; kalan 4 parçanın toplam alanı 4 × 0,09 = 0,36 m²’dir.",
+        "imageUrl": "/grade6/matematik/test-13/soru-03.svg",
+        "imageAlt": "Paralelkenarın tabanı 1,8 m, dik yüksekliği 120 cm. Alt tabanın 60 cm uzunluğundaki parçasını taban alan ve üst kenarda tepe noktası bulunan beyaz üçgen boş bırakılır. Kalan bölge mavi.",
+        "imageWidth": 360,
+        "imageHeight": 700
+      },
+      {
+        "id": "m6-1-t13-04",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Grafikte iki grubun öğrenci sayıları ve bir etkinlikte aldıkları puanların aritmetik ortalamaları verilmiştir. B grubundan bir öğrenci, puanı değişmeden A grubuna geçiyor. Bundan sonra iki grubun puan ortalamaları birbirine eşit oluyor.\n\nYer değiştiren öğrencinin puanı kaçtır?",
+        "options": [
+          "30",
+          "24",
+          "20",
+          "18"
+        ],
+        "correct": 0,
+        "explanation": "Başlangıçtaki toplam puan A’da 4 × 15 = 60, B’de 6 × 20 = 120’dir. Genel toplam 180 ve toplam öğrenci sayısı 10 değişmez. Grupların yeni ortalamaları eşit olduğundan her biri 180 ÷ 10 = 18’dir. Geçişten sonra A’da 5 öğrenci ve 5 × 18 = 90 puan vardır. Gelen öğrencinin puanı 90 − 60 = 30’dur.",
+        "imageUrl": "/grade6/matematik/test-13/soru-04.svg",
+        "imageAlt": "A grubu 4 öğrenci ve 15 puan ortalama, B grubu 6 öğrenci ve 20 puan ortalama. Öğrenci sayısını gösteren sütun grafiği ve her grubun ortalaması altında yazılıdır.",
+        "imageWidth": 360,
+        "imageHeight": 650
+      },
+      {
+        "id": "m6-1-t13-05",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Sayı çifti makinesinde soldaki ve sağdaki sayı, her turda aynı anda aşağıdaki kurala göre yenileniyor. Yeni sol sayı eski sağ sayı; yeni sağ sayı ise iki eski sayının toplamı oluyor. Görselde üçüncü turun sonundaki çift verilmiştir.\n\nBaşlangıçtaki sağ sayı, başlangıçtaki sol sayıdan kaç fazladır?",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "5"
+        ],
+        "correct": 1,
+        "explanation": "Her turu geri alırken eski sağ sayı, yeni sol sayıya eşittir; eski sol sayı ise yeni sağdan yeni sol çıkarılarak bulunur. Son çift (13,21) olduğuna göre önceki çiftler sırasıyla (8,13), (5,8) ve başlangıç için (3,5)’tir. İstenen fark 5 − 3 = 2’dir.",
+        "imageUrl": "/grade6/matematik/test-13/soru-05.svg",
+        "imageAlt": "İki giriş kutusu sol ve sağ. Oklar yeni solun eski sağ, yeni sağın eski sol artı eski sağ olduğunu gösteriyor. Üç tur sonra sol 13, sağ 21. Her tur iki değer aynı anda yenilenir.",
+        "imageWidth": 360,
+        "imageHeight": 700
+      },
+      {
+        "id": "m6-1-t13-06",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "ABC üçgeninde D, BC kenarının üzerindedir. AB = AD = DC ve CAD açısı 24°’dir.\n\nBAC açısı kaç derecedir?",
+        "options": [
+          "84°",
+          "96°",
+          "108°",
+          "132°"
+        ],
+        "correct": 2,
+        "explanation": "AD = DC olduğundan ADC üçgeninde DAC ve ACD açıları 24°’dir. ADC açısı 180 − 48 = 132° olur. B,D,C doğrusal olduğundan ADB açısı 48°’dir. AB = AD olduğundan ABD üçgeninin B ve D açıları 48°; BAD açısı 84° olur. BAC = BAD + DAC = 84 + 24 = 108°’dir.",
+        "imageUrl": "/grade6/matematik/test-13/soru-06.svg",
+        "imageAlt": "ABC üçgeninde D, B ile C arasında. AB, AD ve DC eşitlik çizgileriyle işaretli. CAD 24°; BAC soruluyor.",
+        "imageWidth": 360,
+        "imageHeight": 650
+      },
+      {
+        "id": "m6-1-t13-07",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Eş karelerden oluşan bir kare panoda, yalnız en dış sıradaki kareler mavidir; içeride kalan bütün kareler beyazdır. Şekilde bu kuralla yapılmış iki küçük örnek verilmiştir. Başka bir panonun beyaz kare sayısı 36’dır.\n\nBu panonun çevresine, hiçbir boşluk bırakmadan bir sıra daha kare eklenip daha büyük bir kare pano elde edilirse kaç yeni kare eklenmiş olur?",
+        "options": [
+          "28",
+          "32",
+          "36",
+          "40"
+        ],
+        "correct": 2,
+        "explanation": "İçteki beyaz bölüm kare biçimindedir. 36 = 6 × 6 olduğundan içte 6 sıra ve 6 sütun vardır. Mavi dış sıra ile başlangıç panosu 8 × 8 = 64 kare olur. Dışına bir sıra daha eklenince her kenardaki kare sayısı 2 artar ve 10 × 10 = 100 kare olur. Eklenen kare sayısı 100 − 64 = 36’dır.",
+        "imageUrl": "/grade6/matematik/test-13/soru-07.svg",
+        "imageAlt": "3 × 3 ve 4 × 4 örnek kare panoların yalnız en dış sırası mavi, içi beyaz. Daha büyük panoda beyaz kare sayısı 36; dışına bir sıra eklenmesi gösteriliyor.",
+        "imageWidth": 360,
+        "imageHeight": 700
+      },
+      {
+        "id": "m6-1-t13-08",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "İki pozitif doğal sayının çarpımı 540’tır. Bu iki sayının ortak pozitif bölenleri yalnızca 1, 2, 3 ve 6’dır.\n\nBu sayıların toplamının alabileceği en küçük değer kaçtır?",
+        "options": [
+          "42",
+          "48",
+          "54",
+          "96"
+        ],
+        "correct": 1,
+        "explanation": "İki sayı da 6’nın katıdır. Her ikisi de 6’ya bölündüğünde elde edilen sayıların çarpımı 540 ÷ (6 × 6) = 15 olur. 15’in pozitif çarpan çiftleri 1–15 ve 3–5’tir; her çiftin kendi arasında 1’den büyük ortak böleni yoktur. Bu çiftlerdeki sayılar yeniden 6 ile çarpılınca 6–90 ve 18–30 elde edilir. Bu iki çift de verilen ortak bölen koşulunu sağlar. Toplamlar 96 ve 48 olduğundan en küçük değer 48’dir."
+      },
+      {
+        "id": "m6-1-t13-09",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Aynı kuruyemişten önce 3/5 kg, sonra 0,75 kg alan bir müşteri toplam 216 TL ödüyor. İndirim öncesindeki kilogram fiyatı üç alışverişte de aynıdır. Müşteri aynı üründen 625 g daha alıyor; yalnız bu son alışverişin hesaplanan tutarının 3/10’u kadar indirim uygulanıyor.\n\nMüşteri son alışverişinde indirimden sonra kaç TL öder?",
+        "options": [
+          "48",
+          "64",
+          "100",
+          "70"
+        ],
+        "correct": 3,
+        "explanation": "İlk iki alışverişte toplam 0,6 + 0,75 = 1,35 kg alınmıştır. Kilogram fiyatı 216 ÷ 1,35 = 160 TL’dir. 625 g = 0,625 kg olduğundan indirimsiz son ücret 0,625 × 160 = 100 TL olur. Bunun 3/10’u olan 30 TL indirilince 100 − 30 = 70 TL ödenir."
+      },
+      {
+        "id": "m6-1-t13-10",
+        "subject": "matematik",
+        "term": 1,
+        "prompt": "Bir sınıfta 24 öğrenci vardır. Her öğrenci bir anket sorusuna yalnız “evet” veya “hayır” cevabı vermiştir. Sonuçlar bir tabloya aktarılırken “evet” sayısı doğru yazılmış, “hayır” sayısı ise yanlışlıkla 6 eksik yazılmıştır. Hatalı tablodaki kayıtlarda “evet” cevabının göreli sıklığı 2/3’tür.\n\nGerçek kayıtlara göre “hayır” cevabının göreli sıklığı kaçtır?",
+        "options": [
+          "1/2",
+          "1/3",
+          "1/4",
+          "2/3"
+        ],
+        "correct": 0,
+        "explanation": "Hatalı tabloda 24 − 6 = 18 cevap görünür. Evet sayısı doğru yazılmıştır ve 18’in 2/3’ü 12’dir. Gerçek hayır sayısı 24 − 12 = 12 olur. Gerçek kayıtlarda hayır göreli sıklığı 12/24 = 1/2’dir."
+      }
+    ],
+
   },
   term2: {},
 };

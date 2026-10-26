@@ -444,3 +444,13 @@ Toplam: 23 test, 230 soru, 117 SVG, 28 rota. Önceki 220 soru ve 110 SVG korunur
 - Önceki **520 soru ve 282 SVG** korunur. Yeni toplamlar **53 test / 530 soru / 289 SVG / 58 altıncı sınıf rotası / 362 statik sayfa**.
 - MEB kapsam kontrolü: https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/410, https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/413 ve https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/414. Sürat-hız hesabı, grafik ve birim dönüşümleri eklenmez; elektrik sorusunda akım veya Ohm kanunu hesabı kullanılmaz.
 - Bağımsız bilimsel doğruluk, tek cevap, zorluk ve görsel denetimi; veri/rota doğrulaması, TypeScript, tam üretim derlemesi ve eski içerik korunumu kontrolleri uygulanır. ESLint yapılandırılmamıştır; etkileşimli tarayıcı denetimi yapılmaz. Production’a otomatik aktarım yapılmaz.
+
+
+## Matematik Test 13 — Alan, Veri ve Çok Adımlı Sayısal Akıl Yürütme (Zor)
+
+- 7 şekilli + 3 şekilsiz soru; cevap anahtarı **B, D, C, A, B, C, C, B, D, A**. `/6-sinif/matematik/test-13` rotası mevcut veri kaydından üretilir; ortak soru şeması değişmez.
+- Üçgen alanlarını çıkarma, yay ve yarıçap uzunluğundan yeni şeklin alanına geçiş, alan birimleri ve tam paket satın alma, gruplar arası geçişte aritmetik ortalama, eş zamanlı iki değişkenli işlem kuralını geri yürütme, iki ikizkenar üçgenle açı bulma, kare panoda dış sıra, ortak bölen koşulu, kesir–ondalık birim fiyat ve indirim, eksik anket kaydında değişen payda işlenir.
+- Yedi pasif SVG 360 birim genişliğinde ve en az 26 birim yazılıdır. Geometrik çizimler verilen uzunluk ve açılarla uyumludur; grafikler, akış okları ve kare pano örnekleri cevap için gereklidir. 238 piksel çıktıları okunabilirlik ve taşma bakımından incelenir.
+- Önceki **530 soru ve 289 SVG** korunur. Yeni toplamlar **54 test / 540 soru / 296 SVG / 59 altıncı sınıf rotası / 363 statik sayfa**.
+- Ortak bölen sorusunda EBOB terimi veya algoritması kullanılmaz. Çemberde yay uzunluğu ve alan konuları kullanıcının sağladığı konu listesine uygundur.
+- Bağımsız matematik, tek cevap, özgünlük ve görsel denetimi; veri/rota doğrulaması, TypeScript, tam üretim derlemesi ve eski içerik korunumu kontrolleri uygulanır. ESLint yapılandırılmamıştır; etkileşimli tarayıcı denetimi yapılmaz. Production’a otomatik aktarım yapılmaz.
