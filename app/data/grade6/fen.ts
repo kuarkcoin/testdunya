@@ -2230,6 +2230,177 @@ export const fenData: SubjectData = {
       }
     ],
 
+    test14: [
+      {
+        "id": "f6-1-t14-01",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Şekildeki arabaya ilk durumda yatay doğrultuda yalnız üç kuvvet etki ediyor; bileşke doğuya 2 N’dir. F’nin büyüklüğü değiştirilmeden yalnız yönü ters çevriliyor. Diğer kuvvetler aynı kalıyor. Araba, değişikliğin yapıldığı anda doğuya hareket etmektedir.\n\nDeğişiklikten sonraki bileşke ile araba henüz durmadan önceki kısa sürede hareketinin değişimi hangisidir?",
+        "options": [
+          "Batıya 14 N; sürati azalır.",
+          "Batıya 6 N; sürati azalır.",
+          "Batıya 14 N; hemen batıya hareket etmeye başlar.",
+          "Doğuya 2 N; sürati artar."
+        ],
+        "correct": 0,
+        "explanation": "İlk durumda F + 4 − 10 = 2 olduğundan F = 8 N’dir. F batıya çevrilince batıya 8 + 10 = 18 N, doğuya 4 N kalır; bileşke batıya 14 N olur. Araba henüz doğuya giderken ters yönlü bileşke süratini azaltır. Kuvvet yönü değişince hareket yönünün anında değişmesi gerekmez.",
+        "imageUrl": "/grade6/fen/test-14/soru-01.svg",
+        "imageAlt": "İlk durumda F ve 4 N doğuya, 10 N batıya. Bileşke doğuya 2 N. Arabanın hareket oku doğuya. Sonra yalnız F ters çevriliyor.",
+        "imageWidth": 360,
+        "imageHeight": 700
+      },
+      {
+        "id": "f6-1-t14-02",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Işık, şekildeki iki düz aynalı düzenekte birinci aynaya soldan geliyor ve aşağıya yansıyor. İkinci aynanın konumu görselde verilmiştir. Aynalar arasındaki ışık yolunda başka engel yoktur. Kesikli doğrular, çarpma noktalarındaki normallerdir.\n\nİkinci aynadan çıkan ışının yönü ve bu aynadaki yansıma açısı hangisidir?",
+        "options": [
+          "Sağa; 45°",
+          "Sola; 90°",
+          "Sola; 45°",
+          "Aşağıya; 0°"
+        ],
+        "correct": 2,
+        "explanation": "İkinci aynaya ışık yukarıdan düşey olarak gelir. Işın ile bu aynanın normali arasındaki açı 45°’dir. Yansıyan ışın normalin öteki tarafında yine 45° yaparak sola gider. İki yansıma sonunda çıkan ışın, başlangıçtaki sağa yönelmiş ışına ters yöndedir.",
+        "imageUrl": "/grade6/fen/test-14/soru-02.svg",
+        "imageAlt": "Birinci ayna sağa aşağı eğimli çizgi; soldan sağa ışını aşağı yansıtır. İkinci ayna sağa yukarı eğimli çizgi; gelen düşey ışın ve iki olası yatay çıkış oku. Normaller kesikli, her aynaya 45° geliş.",
+        "imageWidth": 360,
+        "imageHeight": 760
+      },
+      {
+        "id": "f6-1-t14-03",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "K ve L, içi dolu ve homojen katılardır. K suya tamamen batırılarak hacmi ölçülüyor; L’nin hacmi doğrudan verilmiştir. X sıvısının kütlesi ise kaplı tartımdan bulunacaktır. Tüm ölçümler aynı sıcaklıkta, taşma, çözünme, tepkime ve hava kabarcığı olmadan yapılmıştır.\n\nK ve L, X sıvısına ayrı ayrı bırakılırsa hangi sonuç beklenir?",
+        "options": [
+          "K yüzer, L batar.",
+          "İkisi de yüzer.",
+          "K batar, L yüzer.",
+          "İkisi de batar."
+        ],
+        "correct": 3,
+        "explanation": "K’nin hacmi 55 − 30 = 25 cm³, yoğunluğu 75 ÷ 25 = 3 g/cm³’tür. L’nin yoğunluğu 54 ÷ 30 = 1,8 g/cm³’tür. X’in kütlesi 120 − 40 = 80 g, yoğunluğu 80 ÷ 50 = 1,6 g/cm³’tür. Her iki katı X’ten yoğun olduğu için batar. Kabın kütlesi sıvıya, ilk su seviyesi de katının hacmine katılmaz.",
+        "imageUrl": "/grade6/fen/test-14/soru-03.svg",
+        "imageAlt": "K: 75 g; ilk su seviyesi 30 cm³, K batınca 55 cm³. L: 54 g, 30 cm³. X: boş kap 40 g; 50 cm³ X bulunan kap 120 g.",
+        "imageWidth": 360,
+        "imageHeight": 900
+      },
+      {
+        "id": "f6-1-t14-04",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Aynı maddeden yapılmış, her yerinde aynı kalınlıkta 40 cm’lik tel sağlam bir pilli devrede kullanılıyor. Sonra tel eşit iki parçaya kesiliyor. K denemesinde yalnız bir parça bağlanıyor. L denemesinde iki parça uç uca bağlanarak ikisi de devreye katılıyor. Ek bağlantı direnci ihmal ediliyor; pil, ampul, sıcaklık ve temas koşulları aynı tutuluyor.\n\nBaşlangıçtaki 40 cm’lik tele göre ampul parlaklığı nasıl değişir?",
+        "options": [
+          "K’de ve L’de artar.",
+          "K’de artar, L’de değişmez.",
+          "K’de değişmez, L’de azalır.",
+          "K’de azalır, L’de artar."
+        ],
+        "correct": 1,
+        "explanation": "K’de devreye katılan tel 20 cm’ye iner; cins ve kalınlık aynı olduğundan direnç azalır, ampul daha parlak yanar. L’de uç uca bağlı parçaların toplam tel uzunluğu 40 cm’dir. Bağlantı etkisi ihmal edildiğinden direnç ve parlaklık başlangıçtaki gibi olur. Parça sayısı tek başına direnci belirlemez.",
+        "imageUrl": "/grade6/fen/test-14/soru-04.svg",
+        "imageAlt": "Başlangıçta 40 cm tek tel. K’de 20 cm tek parça. L’de iki 20 cm parça uç uca, toplam 40 cm. Pil, ampul ve diğer koşullar aynı.",
+        "imageWidth": 360,
+        "imageHeight": 760
+      },
+      {
+        "id": "f6-1-t14-05",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Üç saf maddenin aynı basınçta ölçülmüş erime ve kaynama noktaları görseldedir. Maddeler ortak bir T sıcaklığında dengeye getiriliyor. K katı, L sıvı, M gaz hâlindedir. T, hiçbir maddenin hâl değiştirme noktasına eşit değildir.\n\nT aşağıdaki değerlerden hangisi olabilir?",
+        "options": [
+          "15°C",
+          "25°C",
+          "35°C",
+          "45°C"
+        ],
+        "correct": 2,
+        "explanation": "K’nin katı kalması için T, 40°C’den düşük olmalıdır. L’nin sıvı olması için 10°C ile 60°C arasında; M’nin gaz olması için 30°C’den yüksek olmalıdır. Üç koşulun ortak aralığı 30°C < T < 40°C’dir. Seçeneklerden yalnız 35°C bu aralıktadır.",
+        "imageUrl": "/grade6/fen/test-14/soru-05.svg",
+        "imageAlt": "K: erime 40°C, kaynama 100°C. L: erime 10°C, kaynama 60°C. M: erime −10°C, kaynama 30°C. Ortak T sıcaklığında K katı, L sıvı, M gaz. Hâl şeritleri ölçeksizdir.",
+        "imageWidth": 360,
+        "imageHeight": 820
+      },
+      {
+        "id": "f6-1-t14-06",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Bir düz aynanın önündeki ok sabit duruyor. Ayna, yüzeyi oka paralel kalacak biçimde oka doğru kaydırılıyor; oka değmiyor ve ok yerinden oynamıyor.\n\nYeni durumda okun kendisi ile görüntüsü arasındaki uzaklık ve görüntünün boyu nasıl değişir?",
+        "options": [
+          "Uzaklık azalır; görüntünün boyu artar.",
+          "Uzaklık azalır; görüntünün boyu değişmez.",
+          "Uzaklık artar; görüntünün boyu değişmez.",
+          "Uzaklık değişmez; görüntünün boyu azalır."
+        ],
+        "correct": 1,
+        "explanation": "Ayna oka yaklaşınca ok ile ayna arasındaki uzaklık azalır. Düz aynada görüntü aynanın arkasında, cismin aynaya uzaklığı kadar ötede oluşur; dolayısıyla ok ile görüntü arasındaki uzaklık da azalır. Düz aynadaki görüntü boyu cismin boyuna eşit kalır. Aynaya yaklaşmak, düz aynada büyütme oluşturmaz.",
+        "imageUrl": "/grade6/fen/test-14/soru-06.svg",
+        "imageAlt": "Sabit okun sağındaki düz ayna, kesikli eski konumundan oka daha yakın mavi yeni konumuna kaydırılıyor. Yüzeylerin yönleri aynı; hareket oku sola.",
+        "imageWidth": 360,
+        "imageHeight": 700
+      },
+      {
+        "id": "f6-1-t14-07",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Aynı kelebeğin yaşamı boyunca alınan örnek kayıtlarda, her aşamadaki kütle ve gözlenen özellikler görselde verilmiştir. Ölçümler doğru kabul ediliyor.\n\nBu kayıtların desteklediği en uygun yorum hangisidir?",
+        "options": [
+          "Larvadan pupaya geçişte kütle azaldığı için bu iki kayıt, kütle bakımından büyüme gerçekleştiğini gösterir.",
+          "Pupa aşamasında uçuş görülmemesi, bu aşamada yapısal gelişimin durduğunu gösterir.",
+          "Kütlesi daha büyük olan aşama daha gelişmiştir; bu nedenle larva, erginden daha gelişmiştir.",
+          "Kanatların işlev kazanması gelişmeyi gösterir; bu kayıtlarda kütlenin sürekli artmasıyla birlikte gerçekleşmemiştir."
+        ],
+        "correct": 3,
+        "explanation": "Larva, pupa ve ergin aşamaları aynı bireyin başkalaşma sürecidir. Kanatların kullanılması gibi yeni özellikler gelişmeyi gösterir. Verilen kütlelerin azalması bu yapısal gelişimi ortadan kaldırmaz; gelişme, her kayıtta kütle artışıyla aynı şey değildir. Kütle büyüklüğü, yaşam döngüsündeki aşamaların sırasını tek başına belirlemez.",
+        "imageUrl": "/grade6/fen/test-14/soru-07.svg",
+        "imageAlt": "Aynı bireyin larva 2,4 g → pupa 1,8 g → ergin 1,2 g aşamaları. Larva sürünür; pupa dönüşüm aşamasıdır; ergin kanatlarıyla uçar.",
+        "imageWidth": 360,
+        "imageHeight": 780
+      },
+      {
+        "id": "f6-1-t14-08",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Basitleştirilmiş bir modelde uyarı duyu yolu → merkez → hareket yolu → kas sırasını izliyor. Modelde yalnız bir iletim yolu çalışmıyor; merkez ve kas sağlamdır.\n• İlk denemede duyu yolunun başlangıcına verilen uyarı merkezde kaydedilmiyor ve kas tepki vermiyor.\n• İkinci denemede merkezde doğrudan bir cevap oluşturulduğunda kas beklenen tepkiyi veriyor.\n\nİki deneme birlikte hangi değerlendirmeyi destekler?",
+        "options": [
+          "Sorun duyu yolundadır; ikinci deneme, merkezden kasa uzanan cevap yolunun çalışabildiğini gösterir.",
+          "Sorun hareket yolundadır; ilk denemede kasın tepki vermemesi bunu tek başına kanıtlar.",
+          "İki yol da bozuktur; ilk denemede hem merkezde hem kasta sonuç alınamamıştır.",
+          "Duyu yolu çalışmaktadır; ikinci denemede kasın tepki vermesi ilk uyarının merkeze ulaştığını da kanıtlar."
+        ],
+        "correct": 0,
+        "explanation": "İlk denemede uyarı merkeze ulaşmamıştır. İkinci denemede merkezde oluşturulan cevap kasa ulaştığına göre hareket yolu çalışabilmektedir. Merkez ve kas sağlam, yalnız bir yol bozuk olduğundan sorun duyu yolundadır. İkinci deneme duyu yolunu kullanmadığı için o yolun sağlam olduğunu göstermez."
+      },
+      {
+        "id": "f6-1-t14-09",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Aynı sıcaklıkta iki saf sıvının yoğunlukları eşit ölçülüyor. Bir öğrenci “Yoğunluklar eşitse kesinlikle aynı maddedir.” diyor. Daha sonra aynı basınçta kaynama noktaları ölçülüyor; K sıvısının kaynama noktası 80°C, L’ninki 110°C bulunuyor. Ölçümlerin doğru olduğu kabul ediliyor.\n\nKayıtlar birlikte nasıl değerlendirilmelidir?",
+        "options": [
+          "Yoğunluk eşitliği, kaynama noktalarının da eşit sayılmasını gerektirir.",
+          "Kaynama noktası yüksek olanın yoğunluğu da mutlaka yüksek olmalıdır; ilk ölçüm yok sayılmalıdır.",
+          "Tek bir özelliğin eşit olması kesin kimlik kanıtı değildir; farklı kaynama noktaları bu iki saf sıvının aynı madde olmadığını gösterir.",
+          "Sıvı miktarları farklı olabileceği için kaynama noktalarının farkı kimlikle ilgili bilgi vermez."
+        ],
+        "correct": 2,
+        "explanation": "Aynı koşullarda ayırt edici özelliklerden yararlanılır; ancak yalnız yoğunluk eşitliğinden kesin kimlik sonucu çıkarmak yeterli değildir. Aynı basınçta saf maddelerin farklı kaynama noktaları, K ve L’nin aynı saf madde olmadığını gösterir. Madde miktarı, aynı basınçta saf sıvının kaynama noktasını belirlemez; yoğunlukla kaynama noktası arasında burada zorunlu bir büyüklük sırası da yoktur."
+      },
+      {
+        "id": "f6-1-t14-10",
+        "subject": "fen",
+        "term": 1,
+        "prompt": "Aynı kalınlıkta iki tel, aynı sıcaklıkta ve aynı sağlam pil–ampul düzeneğinde ayrı ayrı deneniyor. K teli X maddesinden ve 50 cm, L teli Y maddesinden ve 25 cm uzunluğundadır. K kullanıldığında ampul L’dekinden daha parlak yanıyor. Diğer koşullar aynıdır. Daha sonra Y maddesinden, L ile aynı kalınlıkta 50 cm’lik bir tel hazırlanıyor.\n\nK ile bu yeni Y teli karşılaştırıldığında hangi sonuç beklenir?",
+        "options": [
+          "Y telinin uzunluğu K’ye eşitlendiği için iki telin direnci de mutlaka eşit olur.",
+          "Yeni Y telinin direnci K’den büyük olur; Y telini uzatmak, zaten K’den büyük olan direncini daha da artırır.",
+          "Y telini uzatmak direncini azaltır; yeni Y telinde ampul K’dekinden daha parlak yanar.",
+          "İlk deneyde uzunluklar farklı olduğundan, verilen gözlem ve uzunluğun etkisi birlikte kullanılsa da hiçbir sıralama yapılamaz."
+        ],
+        "correct": 1,
+        "explanation": "İlk denemede K ile ampul daha parlak olduğundan K’nin direnci, 25 cm’lik Y telinin direncinden küçüktür. Y telinin cinsi ve kalınlığı korunup uzunluğu 50 cm’ye çıkarılınca direnci artar. Bu yüzden yeni Y telinin direnci K’den yine büyüktür; ampul daha sönük yanar. Uzunlukları eşitlemek, cinsleri farklı tellerin dirençlerini zorunlu olarak eşitlemez."
+      }
+    ],
+
   },
   term2: {},
 };

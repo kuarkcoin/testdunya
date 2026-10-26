@@ -478,3 +478,13 @@ Toplam: 23 test, 230 soru, 117 SVG, 28 rota. Önceki 220 soru ve 110 SVG korunur
 - Matematik toplamı 15 test / 150 sorudur. Tüm 6. sınıf paketi 56 test / 560 soru / 310 SVG içerir.
 - Veri, TypeScript, tam derleme, rotalar ve önceki içeriklerin korunması kontrolleri yayın öncesinde çalıştırılır. Bağımsız matematik ve görsel inceleme yapılır. Standalone lint yapılandırılmamıştır; etkileşimli tarayıcı kontrolü çalıştırılmamıştır.
 - Bu değişiklik production aktarımı içermez.
+
+
+## Fen Bilimleri Test 14 — zor kategori (26 Ekim 2026)
+
+- 10 soru: 7 şekilli, 3 şekilsiz. Cevap anahtarı: A, C, D, B, C, B, D, A, C, B.
+- Bileşke kuvvetin değişimi, iki aynada ışık yolu, yoğunluk ölçümlerini birleştirme, telin devreye katılan uzunluğu, hâl değişim noktaları, düz aynanın hareketi, gelişme ve kütle, sinir modeli, ayırt edici özellikler ve direnç çıkarımları.
+- Zorluk, çok aşamalı çıkarım ve ölçüm/deney koşullarını birlikte değerlendirmeden gelir. Düz ayna sorusu nitel yorumdur; ayna bağıntıları ve üst sınıf elektrik formülleri kullanılmaz.
+- 360 piksel genişliğinde, en az 26 piksel yazılı yedi bağımsız SVG; 238 piksel genişlikte görsel kontrol. Önceki soru ve görseller korunur.
+- Bu eklemeyle Fen 14 test / 140 soru; toplam 57 test / 570 soru / 317 SVG olur. Dinamik kayıt 62 adet 6. sınıf rotası üretir.
+- İçerik karma tekrardır; bütün bir yıllık programın eksiksiz kapsamı iddia edilmez.
