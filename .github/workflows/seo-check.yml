@@ -34,3 +34,17 @@ jobs:
         run: npm install --no-audit --no-fund
       - name: Validate source, build and rendered SEO
         run: npm run build
+      - name: Install browser verification tools
+        run: npm install --no-save --package-lock=false --no-audit --no-fund @playwright/test@1.56.1
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Verify reading activities in the browser
+        run: npm run check:reading:browser
+      - name: Save reading screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reading-screenshots
+          path: artifacts/reading-*.png
+          if-no-files-found: ignore
+          retention-days: 7

@@ -4,11 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run check:seo && next build && npm run check:seo:build",
+    "build": "npm run check:seo && npm run check:reading && next build && npm run check:seo:build",
     "check:seo": "node scripts/validate-seo.cjs",
     "check:seo:build": "node scripts/validate-seo-build.cjs",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "check:reading": "node scripts/validate-reading.cjs",
+    "check:reading:browser": "node scripts/validate-reading-browser.cjs"
   },
   "dependencies": {
     "@google/generative-ai": "^0.21.0",
@@ -36,4 +38,3 @@
     "typescript": "5.6.3"
   }
 }
-

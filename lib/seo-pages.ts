@@ -15,7 +15,17 @@ export const STATIC_SEO_PAGES: StaticSeoPage[] = [
   {
     path: '/',
     title: 'Online Test Çöz ve Eğitici Oyunlar',
-    description: '5. ve 6. sınıf testleri, LGS denemeleri, paragraf soruları ve eğitici oyunlarla çalışın. Ücretsiz testleri çözün, cevapları ve açıklamaları inceleyin.',
+    description: '1. sınıf okuma alıştırmaları, 5. ve 6. sınıf testleri, LGS denemeleri ve eğitici oyunlarla çalışın. Sesli örnekleri dinleyin, testleri çözün ve açıklamalı cevapları inceleyin.',
+  },
+  {
+    path: '/1-sinif',
+    title: '1. Sınıf Okuma Çalışmaları',
+    description: '1. sınıf için harf tanıma, hece birleştirme, kelime kurma ve kısa metin okuma alıştırmaları. Sesli örneklerle çocuğun kendi hızında çalışmasına yardımcı olun.',
+  },
+  {
+    path: '/1-sinif/okuma',
+    title: 'Okuma Bahçesi: Harf, Hece ve Kelime Alıştırmaları',
+    description: '29 harfi tanı, heceleri birleştir, kelimeleri ve kısa metinleri oku. Sesli örnekler, anlama soruları ve isteğe bağlı oku, kaydet, dinle çalışması.',
   },
   {
     path: '/5-sinif',

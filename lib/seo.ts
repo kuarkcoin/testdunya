@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const SITE_URL = 'https://testdunya.net';
 export const SITE_NAME = 'TestDünya';
-export const DEFAULT_DESCRIPTION = '5. ve 6. sınıf testleri, LGS denemeleri, paragraf soruları ve eğitici oyunlarla çalışın. Ücretsiz testleri çözün, cevapları ve açıklamaları inceleyin.';
+export const DEFAULT_DESCRIPTION = '1. sınıf okuma alıştırmaları, 5. ve 6. sınıf testleri, LGS denemeleri ve eğitici oyunlarla çalışın. Sesli örnekleri dinleyin, testleri çözün ve açıklamalı cevapları inceleyin.';
 export const SOCIAL_IMAGE = { url: `${SITE_URL}/opengraph-image`, width: 1200, height: 630, alt: 'TestDünya — Online testler ve eğitici oyunlar' };
 
 export function absoluteUrl(path = '/'): string {

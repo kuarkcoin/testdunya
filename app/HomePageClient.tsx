@@ -388,13 +388,27 @@ export default function HomePage() {
     </div>
     <div>
       <h2 className="text-2xl md:text-3xl font-black text-slate-800 tracking-tight">İLKÖĞRETİM DÜZEYİ</h2>
-      <p className="text-slate-600 dark:text-zinc-300 text-base">MEB Müfredatına Uygun Çalışma Testleri</p>
+      <p className="text-slate-600 dark:text-zinc-300 text-base">Okuma alıştırmaları ve açıklamalı ders testleri</p>
     </div>
   </div>
 
   <div className="p-6 bg-slate-50/30">
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       
+
+      <Link
+        href="/1-sinif"
+        className="group relative flex flex-col justify-between gap-6 overflow-hidden rounded-2xl border border-emerald-200 bg-gradient-to-br from-emerald-800 to-teal-700 p-6 text-white shadow-xl transition-shadow hover:shadow-2xl focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-emerald-700"
+      >
+        <div>
+          <span className="inline-flex rounded-lg bg-white/15 px-3 py-1 text-sm font-bold">1. Sınıf</span>
+          <span aria-hidden="true" className="mt-5 block text-4xl">🌱</span>
+          <h3 className="mt-3 text-2xl font-black">Okuma Bahçesi</h3>
+          <p className="mt-3 text-sm leading-relaxed text-emerald-50">Harfleri tanı, heceleri birleştir. Sesli örneklerle kelimeleri ve kısa metinleri oku.</p>
+        </div>
+        <span className="rounded-xl bg-white px-4 py-3 text-sm font-black text-emerald-900">Okumaya başla <span aria-hidden="true">→</span></span>
+      </Link>
+
       {/* 5. SINIF KARTI - GÜNCELLENDİ (Kartlar Silindi) */}
 <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-orange-400 to-amber-500 p-6 text-white shadow-xl transition-all hover:shadow-2xl border border-orange-300/30">
   
