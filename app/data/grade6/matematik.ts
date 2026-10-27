@@ -2960,6 +2960,176 @@ export const matematikData: SubjectData = {
         "correct": 1,
         "explanation": "İlk terimden altıncıya 5 artış vardır: 4 + 7 + 4 + 7 + 4 = 26. On üçüncü terime ise 12 artış, yani altı kez 4 + 7 = 11 eklenir; toplam artış 66’dır. Verilen 148’in içinde ilk terim iki kez, artışlar 26 + 66 = 92 olarak bulunur. İlk terim (148 − 92) ÷ 2 = 28’dir. Onuncu terime 9 artışla ulaşılır: dört çift artış ve bir 4, toplam 48. Onuncu terim 28 + 48 = 76’dır. Kontrol: altıncı 54, on üçüncü 94; toplam 148."
       }
+    ],
+    test4: [
+      {
+        "id": "m6-2-t4-01",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Yedi kutuda toplam 180 pul vardır. Görselde, merkezdeki K kutusundan geçen üç grubun pul toplamları verilmiştir. K, üç grupta da aynı kutudur; diğer her kutu yalnız bir gruptadır.\n\nK’deki pulların tamamı, diğer altı kutuya eşit sayıda dağıtılıyor. Son durumda A ve D kutularındaki pulların toplamı kaçtır?",
+        "options": [
+          "46",
+          "52",
+          "58",
+          "64"
+        ],
+        "correct": 1,
+        "explanation": "Üç grup toplamı 64 + 72 + 80 = 216’dır. Bu toplamda dıştaki her kutu bir kez, K ise üç kez sayılmıştır. Gerçek toplam 180 olduğundan fazladan sayılan iki K, 216 − 180 = 36 puldur; K’de 18 pul vardır. Başlangıçta A ile D’de toplam 64 − 18 = 46 pul bulunur. Altı kutunun her birine 18 ÷ 6 = 3 pul eklenir. A ile D’nin yeni toplamı 46 + 3 + 3 = 52 olur.",
+        "imageUrl": "/grade6/matematik/term-2/test-4/soru-01.svg",
+        "imageAlt": "Ortada tek K kutusu; karşılıklı uçlarda A ve D, B ve E, C ve F kutuları. Her karşılıklı çift K üzerinden bir çizgiyle bağlı. Grup toplamları A + K + D = 64, B + K + E = 72, C + K + F = 80. K bütün çizgilerin ortak kutusudur.",
+        "imageWidth": 360,
+        "imageHeight": 650
+      },
+      {
+        "id": "m6-2-t4-02",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Şekil örüntüsünde kare panonun bir kenarındaki küçük kare sayısı her adımda 2 artıyor. İki köşegenin geçtiği bütün küçük kareler turuncu, diğerleri mavidir; ortadaki ortak kare bir kez sayılır. İlk üç adım görseldedir.\n\nArdışık iki adım ayrı ayrı çizildiğinde toplam 46 turuncu kare kullanılıyor. Bu iki şekilde toplam kaç mavi kare vardır?",
+        "options": [
+          "200",
+          "220",
+          "242",
+          "244"
+        ],
+        "correct": 3,
+        "explanation": "Bir kenarda n küçük kare varsa iki köşegende toplam n + n − 1 turuncu kare vardır; ortadaki kare ortaktır. Sonraki adımda kenara 2 kare eklendiği için turuncu sayısı 4 artar. İki turuncu sayısının toplamı 46 olduğundan küçük olan (46 − 4) ÷ 2 = 21, büyük olan 25’tir. Bunlar 11 × 11 ve 13 × 13 panolara aittir. Mavi kare sayıları 121 − 21 = 100 ve 169 − 25 = 144’tür. Toplam 244 mavi kare kullanılır.",
+        "imageUrl": "/grade6/matematik/term-2/test-4/soru-02.svg",
+        "imageAlt": "Birinci adım 3 × 3, ikinci adım 5 × 5, üçüncü adım 7 × 7 küçük kareden oluşuyor. Her panonun sol üstten sağ alta ve sağ üstten sol alta uzanan iki köşegenindeki kareler turuncu; diğer kareler mavi. İki köşegenin ortak ortadaki karesi tek bir karedir.",
+        "imageWidth": 360,
+        "imageHeight": 650
+      },
+      {
+        "id": "m6-2-t4-03",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "A, B ve C kutularına birbirinden farklı üç doğal sayı konuyor. “Karşılaştır” işlemi, belirtilen iki kutudan harfi önce gelen kutuda küçük, diğerinde büyük sayı kalacak biçimde gerekirse sayıların yerini değiştirir. Görseldeki işlemler yukarıdan aşağıya uygulanıyor.\n\nBaşlangıçtaki sayılar ne olursa olsun sonuçta A < B < C olması için boş kutuya hangi işlem yazılmalıdır?",
+        "options": [
+          "A ile B’yi karşılaştır.",
+          "A ile C’yi karşılaştır.",
+          "B ile C’yi karşılaştır.",
+          "A ile B’nin sayılarını koşulsuz değiştir."
+        ],
+        "correct": 0,
+        "explanation": "İlk karşılaştırmada A ile C’nin büyüğü C’ye gelir. İkinci karşılaştırmada bu sayı B ile karşılaştırıldığı için artık üç sayının en büyüğü kesinlikle C’dedir. Geriye A ile B’yi sıralamak kalır; onları karşılaştırmak her durumda sonucu sıralar. Örneğin başlangıç 9, 4, 7 ise ilk iki adım sonunda 7, 4, 9 oluşur; A–C veya B–C karşılaştırması bu sıralamayı düzeltmez. Koşulsuz yer değiştirme de doğru değildir: başlangıç 4, 7, 9 olduğunda zaten sıralı olan A ile B’yi bozar.",
+        "imageUrl": "/grade6/matematik/term-2/test-4/soru-03.svg",
+        "imageAlt": "A, B, C kutuları üstte soldan sağa gösteriliyor. Aşağıya inen akışta önce A ile C’yi karşılaştır, sonra B ile C’yi karşılaştır, ardından soru işaretli boş işlem kutusu var. En altta istenen sonuç A < B < C yazıyor.",
+        "imageWidth": 360,
+        "imageHeight": 560
+      },
+      {
+        "id": "m6-2-t4-04",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "ABC üçgeninde AD ile BE doğru parçaları P’de kesişiyor. D, BC’nin orta noktasıdır; AE uzunluğu EC’nin iki katıdır. BPD üçgeninin alanı görselde verilmiştir.\n\nAPE üçgeninin alanı kaç santimetrekaredir?",
+        "options": [
+          "16",
+          "24",
+          "32",
+          "48"
+        ],
+        "correct": 2,
+        "explanation": "BD = DC ve P’den BC’ye yükseklik ortak olduğundan PDC’nin alanı da 12 cm²’dir; BPC’nin alanı 24 cm² olur. PEC’nin alanına bir pay dersek AE = 2 × EC nedeniyle APE iki paydır. ABD ve ACD eş alanlıdır. Bu iki alandan eş alanlı BPD ve PDC çıkarılınca ABP ile APC’nin alanları eşit kalır. APC üç pay olduğundan ABP de üç pay, ABE toplam beş paydır. BEC, PEC ile BPC’den oluştuğu için bir pay + 24 cm²’dir. Öte yandan AE = 2 × EC olduğundan ABE, BEC’nin iki katıdır: beş pay, iki pay ile 48 cm²’nin toplamına eşittir. Üç pay 48 cm², bir pay 16 cm²’dir. APE iki pay, yani 32 cm² olur.",
+        "imageUrl": "/grade6/matematik/term-2/test-4/soru-04.svg",
+        "imageAlt": "ABC üçgeninde A üstte, B sol altta, C sağ altta. D, BC’nin orta noktası; AD ve BE, P’de kesişiyor. E, AC üzerinde ve AE = 2 × EC. BPD üçgeni mavi, alanı 12 cm²; APE üçgeni turuncu ve alanı soru işareti. BD ile DC’de eşitlik çizgileri var.",
+        "imageWidth": 360,
+        "imageHeight": 620
+      },
+      {
+        "id": "m6-2-t4-05",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "İki özdeş paralelkenar levha, tabanları aynı doğru üzerinde olacak biçimde üst üste konuyor. Levhalardan biri taban doğrultusunda kaydırılıyor; iki farklı denemedeki kayma miktarları ve levhaların kapladığı birleşik alan görseldedir. Ortak bölge birleşik alanda bir kez sayılmıştır.\n\nBirinci denemedeki ortak bölgenin alanı kaç santimetrekaredir?",
+        "options": [
+          "144",
+          "162",
+          "216",
+          "270"
+        ],
+        "correct": 1,
+        "explanation": "İkinci denemede kayma 5 − 3 = 2 cm daha fazladır. Birleşik alan 306 − 270 = 36 cm² arttığına göre ortak dik yükseklik 36 ÷ 2 = 18 cm’dir. Birinci denemede tek levhanın alanına, tabanı 3 cm olan bir şeridin alanı eklenmiştir. Tek levhanın alanı 270 − 3 × 18 = 216 cm²’dir. Ortak bölgeyi bulmak için iki levhanın alanları toplamından birleşik alan çıkarılır: 2 × 216 − 270 = 162 cm². Kayma arttıkça ortak bölge küçülür; levhaların kendi alanları değişmez.",
+        "imageUrl": "/grade6/matematik/term-2/test-4/soru-05.svg",
+        "imageAlt": "İki deneme üst üste gösteriliyor. Her denemede aynı boyuttaki iki paralelkenarın biri sağa kaydırılmış, örtüşen bölge koyu renkle gösterilmiş. Birinci denemede alt sol köşeler arası kayma 3 cm, birleşik alan 270 cm². İkinci denemede kayma 5 cm, birleşik alan 306 cm². Her iki denemede tabanlar aynı doğru üzerinde, yükseklikler değişmiyor.",
+        "imageWidth": 360,
+        "imageHeight": 650
+      },
+      {
+        "id": "m6-2-t4-06",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir öğrenci, dikdörtgen zeminin kenarlarını görseldeki ölçü çubuğunu boşluksuz ve örtüşmeden art arda yerleştirerek ölçüyor. Çubuğun gerçek uzunluğunu dikkate almadan her çubuğu 1 m sanıp alanı hesaplıyor.\n\nÖğrencinin bulduğu alan, gerçek alandan kaç metrekare fazladır?",
+        "options": [
+          "8",
+          "12,8",
+          "25,6",
+          "14,4"
+        ],
+        "correct": 3,
+        "explanation": "Gerçekte bir çubuk 80 cm = 0,8 m’dir. Zeminin kenarları 8 × 0,8 = 6,4 m ve 5 × 0,8 = 4 m olur; gerçek alan 6,4 × 4 = 25,6 m²’dir. Öğrenci kenarları 8 m ile 5 m sandığı için 40 m² bulur. Fazlalık 40 − 25,6 = 14,4 m²’dir. Uzunluk düzeltmesi iki kenara da uygulanmalıdır; 40’ı yalnız bir kez 0,8 ile çarpmak alanı düzeltmez.",
+        "imageUrl": "/grade6/matematik/term-2/test-4/soru-06.svg",
+        "imageAlt": "Dikdörtgen zeminin yatay kenarı 8 çubuk, düşey kenarı 5 çubuk olarak etiketlenmiş. Altta kullanılan tek ölçü çubuğunun iki ucu arasındaki gerçek uzaklık 80 cm olarak verilmiş. Kenarlar boyunca işaretler sırasıyla sekiz ve beş eş ölçme aralığını gösteriyor.",
+        "imageWidth": 360,
+        "imageHeight": 500
+      },
+      {
+        "id": "m6-2-t4-07",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Dikdörtgen bir panoya 12 eş kare karo, görseldeki gibi 3 satır ve 4 sütun hâlinde yerleştiriliyor. Komşu karolar arasındaki bütün boşlukların genişliği 20 mm, karolar ile panonun dış sınırı arasındaki pay her yönde 3 cm’dir. Bütün boşluklar harçla dolduruluyor.\n\nHarçla kaplanan toplam alan kaç metrekaredir?",
+        "options": [
+          "0,202",
+          "0,154",
+          "0,25",
+          "0,952"
+        ],
+        "correct": 0,
+        "explanation": "Karonun kenarı 0,25 m = 25 cm; iç boşluk 20 mm = 2 cm’dir. Dört sütun arasında üç iç boşluk, iki dış kenarda da 3’er cm pay vardır. Pano genişliği 4 × 25 + 3 × 2 + 2 × 3 = 112 cm’dir. Yüksekliği 3 × 25 + 2 × 2 + 2 × 3 = 85 cm olur. Pano alanı 112 × 85 = 9520 cm², karoların alanı 12 × 25 × 25 = 7500 cm²’dir. Harç alanı 9520 − 7500 = 2020 cm² = 0,202 m²’dir. Boşlukların kesişimleri, büyük alandan karo alanını çıkarma yöntemiyle yalnız bir kez sayılır.",
+        "imageUrl": "/grade6/matematik/term-2/test-4/soru-07.svg",
+        "imageAlt": "Dış çerçevenin içinde 3 satır ve 4 sütun hâlinde 12 mavi kare karo var. Karolar arasındaki dar boşluklar ve dış kenarlardaki paylar açık renkte. Alttaki ölçü anahtarında bir karonun kenarı 0,25 m, iç boşluk 20 mm, dış pay 3 cm olarak gösteriliyor.",
+        "imageWidth": 360,
+        "imageHeight": 580
+      },
+      {
+        "id": "m6-2-t4-08",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "40 soruluk bir bilgi yarışmasında her doğru cevap 5 puan kazandırıyor, her yanlış cevap 2 puan kaybettiriyor; boş bırakılan sorular puanı değiştirmiyor. Bir öğrencinin doğru cevap sayısı, yanlış cevap sayısından 4 fazladır. Öğrenci yarışmayı toplam 62 puanla bitiriyor.\n\nBu öğrenci kaç soruyu boş bırakmıştır?",
+        "options": [
+          "4",
+          "6",
+          "10",
+          "8"
+        ],
+        "correct": 3,
+        "explanation": "Doğruların yanlışlardan fazla olan 4 tanesi 4 × 5 = 20 puan kazandırır. Geriye kalan doğru ve yanlış cevaplar eş sayıda olduğundan bir doğru–yanlış çifti net 5 − 2 = 3 puan getirir. Kalan puan 62 − 20 = 42 olduğuna göre 42 ÷ 3 = 14 çift vardır. Yanlış sayısı 14, doğru sayısı 18’dir. Cevaplanan 32 sorudan sonra 40 − 32 = 8 soru boş kalır. Kontrol: 18 × 5 − 14 × 2 = 62."
+      },
+      {
+        "id": "m6-2-t4-09",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir algoritma M = 5 ve T = 12 ile başlıyor. Kartlardaki sayıları sırayla okuyor. Okunan sayı M’den büyükse önce T’ye “okunan sayı − M” ekleniyor, ardından M okunan sayıya eşitleniyor. Sayı M’den büyük değilse hiçbir değer değişmiyor.\n\nKartlar sırasıyla 18, 11, x, 24 ve 19’dur. Bu beş karttan sonra T = 43 oluyor. Son olarak 2x + 1 yazılı bir kart daha okunursa T kaç olur?",
+        "options": [
+          "73",
+          "79",
+          "80",
+          "86"
+        ],
+        "correct": 2,
+        "explanation": "İlk kart 18 olduğunda T = 12 + (18 − 5) = 25, M = 18 olur. 11 hiçbir şeyi değiştirmez. Her güncellemede T ile M aynı miktarda arttığı için T, M’den daima 7 fazladır. Beş karttan sonra T = 43 ise M = 36’dır. M, başlangıçtaki 5’in ve okunan sayıların en büyüğüdür; bilinen kartların hepsi 36’dan küçük olduğundan x = 36 olmalıdır. Son kart 2 × 36 + 1 = 73’tür. T’ye 73 − 36 = 37 eklenir; yeni T = 43 + 37 = 80 olur."
+      },
+      {
+        "id": "m6-2-t4-10",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir sayı örüntüsü gruplarla oluşturuluyor. Birinci grup 2; ikinci grup 4, 2; üçüncü grup 6, 4, 2; dördüncü grup 8, 6, 4, 2’dir. Her yeni grubun ilk sayısı önceki grubun ilk sayısından 2 fazladır; grup içinde 2’şer azalarak 2’ye kadar yazılır. Gruplar bu sırayla aralıksız yan yana eklenir.\n\nBaşlangıçtan itibaren ilk 184 terim yazıldığında, tamamlanmış son grubun ilk sayısı ile yazılan son terimin toplamı kaçtır?",
+        "options": [
+          "48",
+          "50",
+          "52",
+          "54"
+        ],
+        "correct": 1,
+        "explanation": "Birinci grupta 1, ikinci grupta 2, genel olarak n. grupta n terim vardır. İlk 18 grupta 1 + 2 + … + 18 = 171 terim bulunur; 1 ile 18, 2 ile 17 gibi eşleştirirsek 19 eden 9 çift elde ederiz. 19. grupla toplam 190’a ulaşılacağı için 184. terimde henüz bu grup bitmemiştir. Tamamlanan son grup 18. gruptur; ilk sayısı 36’dır. 184. terim, 19. grubun 184 − 171 = 13. sayısıdır. Bu grup 38 ile başlar; 13. sayıya ulaşmak için 12 kez 2 çıkarılır: 38 − 24 = 14. İstenen toplam 36 + 14 = 50’dir."
+      }
     ]
   },
 };
