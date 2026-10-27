@@ -46,3 +46,24 @@ Kaynak, kullanıcının sağladığı 9 sayfalık `mat6.pdf` içindeki **6. Sın
 | 10 | Alanı koruyan kenar değişimlerini alan şeritleri ve uzunluk dönüşümüyle çözme | MAT.6.2.1, MAT.6.4.1, MAT.6.4.3 |
 
 MAT.6.2.1–3 kaynak s.2; MAT.6.4.1–3 kaynak s.3; soru dağılım senaryoları s.4–9. Çember, olasılık gibi bu PDF’de bulunmayan konular eklenmez. Birinci dönem matematik soruları ve ikinci dönem Türkçe Test 1 değiştirilmez.
+
+## Fen Bilimleri — 2. dönem Test 1 (zor)
+
+Kaynak: kullanıcının sağladığı 17 sayfalık `fen6.pdf`, **6. Sınıf Fen Bilimleri 2. Dönem 1. ve 2. Yazılı Konu Soru Dağılım Tabloları**. Kazanımlar s.2–3, birinci yazılı senaryoları s.4–10, ikinci yazılı senaryoları s.11–17. Tam dönem/yıl müfredatı veya resmî sınav değildir. Özgün çoktan seçmeli alıştırmalar belgedeki açık uçlu/kısa cevaplı sınav biçiminin yerine geçmez.
+
+10 soru: 7 bilimsel görsel + 3 metin; 360 px SVG, en az 26 px yazı ve mevcut büyütme desteği. Kimlikler `f6-2-t1-01`–`f6-2-t1-10`, rota `/6-sinif/fen/2-donem-test-1`, görseller `public/grade6/fen/term-2/test-1/`.
+
+| Soru | Akıl yürütme | Kaynak eşlemesi |
+| --- | --- | --- |
+| 1 | İki renk gözleminden çıkarım sınırı ve yeni deney | FB.6.4.3.3 |
+| 2 | Genleşme deneyinde boru kesiti karıştırıcı değişkenini giderme | FB.6.5.1.1 |
+| 3 | Isıtma grafiğinde hâl, kütle ve erime noktası ayrımı | FB.6.5.2.1 |
+| 4 | Dış hacim, malzeme hacmi, boşluk ve ortalama yoğunluk | FB.6.5.3.1–2, FB.6.5.3.4 |
+| 5 | Eşit kütleli buz–su yoğunluğu ile göldeki yaşamı ilişkilendirme | FB.6.5.3.3 |
+| 6 | Reosta kaydırıcısı ve sabit bağlantı değişiminde etkin tel | FB.6.6.2.1–2 |
+| 7 | Tür sayısı ile birey sayısını ayırma; ekolojik işlevlerin kanıt sınırı | FB.6.7.1.1 |
+| 8 | İletkenlik deneyinde sıvı içeriğini karşılaştırma ve gözlemin sınırı | FB.6.6.1.1 |
+| 9 | Biyoçeşitlilik kaybında iki olası etkeni araştırmayla ayırma | FB.6.7.1.2 |
+| 10 | Termometre hatalarını ters yönlerde düzeltme ve erime noktasını yorumlama | FB.6.5.2.1 |
+
+Biyoçeşitlilik, sağlanan PDF’nin ikinci yazılı kapsamındadır. Önceki yıllık listedeki tutulmalar, kuvvet, üreme gibi bu dağılım tablosunda olmayan konular bu teste eklenmez. Birinci dönem soruları ve ikinci dönem Türkçe/Matematik Test 1 korunur.

@@ -2573,6 +2573,176 @@ export const fenData: SubjectData = {
     ],
 
   },
-  term2: {},
+  term2: {
+    test1: [
+      {
+            "id": "f6-2-t1-01",
+            "subject": "fen",
+            "term": 2,
+            "prompt": "K ve L kartları karanlık ortamda ayrı ayrı yalnız kırmızı, sonra yalnız yeşil ışıkla aydınlatılıyor. Şekilde görülen renkler kaydediliyor. Kartlar ışık üretmiyor. Bir öğrenci “K kesinlikle beyaz, L kesinlikle kırmızıdır.” diyor.\n\nBu iddiayı değerlendiren ve henüz denenmeyen bir ışıkla iki kartın yansıttığı renkler hakkında yeni kanıt toplayan en uygun işlem hangisidir?",
+            "options": [
+                  "İddia kanıtlanmıştır; iki kartı yeniden kırmızı ışıkta incelemek yeterlidir.",
+                  "İddia henüz kanıtlanmamıştır; yalnız mavi ışık altında iki kartın görünümünü kaydetmek gerekir.",
+                  "İddia yanlıştır; yeşil ışıkta siyah görünen L bütün ışıkları yansıtır.",
+                  "İddia kanıtlanmıştır; ışıkları kapatıp iki kartın karanlıkta görünmediğini doğrulamak gerekir."
+            ],
+            "correct": 1,
+            "explanation": "K’nin kırmızı ve yeşil ışığı yansıttığı, L’nin kırmızıyı yansıtıp yeşili yansıtmadığı görülür. Ancak mavi ışık denenmemiştir; kartların tüm renkleri yansıtıp yansıtmadığı bilinmez. Mavi ışıkla yapılacak gözlem yeni kanıt sağlar. Aynı kırmızı ışığı tekrarlamak veya ortamı karartmak bu eksikliği gidermez.",
+            "imageUrl": "/grade6/fen/term-2/test-1/soru-01.svg",
+            "imageAlt": "Kırmızı ışıkta K ve L kırmızı; yeşil ışıkta K yeşil, L siyah görünür.",
+            "imageWidth": 360,
+            "imageHeight": 400
+      },
+      {
+            "id": "f6-2-t1-02",
+            "subject": "fen",
+            "term": 2,
+            "prompt": "Eşit başlangıç hacmindeki K ve L sıvıları aynı boyuttaki kaplara konuyor. Her ikisi de 20 °C’den 60 °C’ye ısıtılıyor. K’nin bağlı olduğu borunun içi daha dar, L’ninki daha geniştir. K’nin seviyesi 8 cm, L’ninki 5 cm yükseliyor. Taşma ve buharlaşma yoktur; kap ve boruların genleşmesi ihmal ediliyor.\n\n“K daha fazla hacimce genleşmiştir.” iddiasını değerlendirmek ve sıvı cinsinin etkisini sınamak için hangi yol en uygundur?",
+            "options": [
+                  "Yükselme tek başına yeterli değildir; eşit iç kesitli borularla, aynı başlangıç hacimleri ve sıcaklık değişimleri korunarak deney tekrarlanmalıdır.",
+                  "K daha fazla genleşmiştir; daha dar boruda yükselmenin fazla olması, hacim artışının da mutlaka fazla olduğunu gösterir.",
+                  "Sonuç belirsizdir; borular aynı bırakılıp yalnız K’nin başlangıç hacmi azaltılmalıdır.",
+                  "Sonuç belirsizdir; eşit borular kullanılmalı fakat K 60 °C’ye, L 80 °C’ye kadar ısıtılmalıdır."
+            ],
+            "correct": 0,
+            "explanation": "Seviye yüksekliği yalnız hacim artışına değil, borunun iç kesitine de bağlıdır: aynı hacim dar boruda daha fazla yükseklik kaplar. Bu nedenle 8 cm ile 5 cm tek başına sıvıların hacimce genleşmesini karşılaştırmaz. Sıvı cinsinin etkisi için boru kesitleri eşitlenmeli; başlangıç hacmi ve sıcaklık değişimi aynı tutulmalıdır. Diğer öneriler yeni bir değişkeni de farklılaştırır.",
+            "imageUrl": "/grade6/fen/term-2/test-1/soru-02.svg",
+            "imageAlt": "Eşit kaplarda K ve L sıvıları; K dar boruda 8 cm, L geniş boruda 5 cm yükseliyor. İkisi de 20 °C’den 60 °C’ye ısıtılmıştır.",
+            "imageWidth": 360,
+            "imageHeight": 490
+      },
+      {
+            "id": "f6-2-t1-03",
+            "subject": "fen",
+            "term": 2,
+            "prompt": "Başlangıçta tamamen katı olan saf P maddesi, sabit basınçta ve sabit güçte ısıtılıyor. Sıcaklık-zaman grafiği şekildeki gibidir. Isı kaybı ihmal ediliyor. Aynı düzenekte P’nin iki kat kütlesi aynı başlangıç sıcaklığından ısıtıldığında erime bölgesinin daha uzun sürdüğü gözleniyor.\n\nİlk grafikte 5. dakikadaki hâl ile ikinci deneyin erime sıcaklığı için hangi eşleştirme doğrudur?",
+            "options": [
+                  "Yalnız sıvı; 80 °C",
+                  "Katı ve sıvı; 80 °C",
+                  "Yalnız sıvı; 40 °C",
+                  "Katı ve sıvı; 40 °C"
+            ],
+            "correct": 3,
+            "explanation": "İlk grafikte 4–6. dakikalar arasında sıcaklık 40 °C’de sabittir ve başlangıçta katı olan P erimektedir. 5. dakikada katı ve sıvı birlikte bulunur. Aynı saf madde aynı basınçta olduğundan kütleyi iki katına çıkarmak erime sıcaklığını değiştirmez; daha fazla madde eridiği için süre uzar.",
+            "imageUrl": "/grade6/fen/term-2/test-1/soru-03.svg",
+            "imageAlt": "P sıcaklığı 0. dakikada 20, 4. dakikada 40, 6. dakikada 40, 10. dakikada 90, 12. dakikada 90 °C.",
+            "imageWidth": 360,
+            "imageHeight": 460
+      },
+      {
+            "id": "f6-2-t1-04",
+            "subject": "fen",
+            "term": 2,
+            "prompt": "İçi boş, su geçirmeyen bir cisim 72 g’dır. Yapıldığı katı maddenin yoğunluğu 3 g/cm³ olarak biliniyor. Cisim, ince bir telle tamamen suya batırılınca şeklin sağındaki seviye okunuyor; telin hacmi ihmal ediliyor. Sonra cisim yoğunluğu 2,4 g/cm³ olan bir sıvıya serbest bırakılıyor. İçindeki gazın kütlesi ihmal ediliyor. Ölçümler aynı sıcaklıkta yapılıyor; cisme hava kabarcığı tutunmuyor. Cisim sıvıyı içine almıyor, çözünmüyor ve şekli değişmiyor.\n\nİç boşluğun hacmi ve cismin bu sıvıdaki durumu hangi seçenekte doğru verilmiştir?",
+            "options": [
+                  "8 cm³; batar.",
+                  "24 cm³; yüzer.",
+                  "8 cm³; yüzer.",
+                  "32 cm³; askıda kalır."
+            ],
+            "correct": 2,
+            "explanation": "Tam batırılan cismin dış hacmi 82 − 50 = 32 cm³’tür. Katı malzemenin hacmi 72 ÷ 3 = 24 cm³, iç boşluk 32 − 24 = 8 cm³ olur. Cismin boşluk dâhil ortalama yoğunluğu 72 ÷ 32 = 2,25 g/cm³’tür. Bu değer sıvının 2,4 g/cm³ yoğunluğundan küçük olduğundan cisim yüzer.",
+            "imageUrl": "/grade6/fen/term-2/test-1/soru-04.svg",
+            "imageAlt": "Dereceli kapta su önce 50 cm³; içi boş cisim tamamen batırılınca 82 cm³. Cisim 72 g.",
+            "imageWidth": 360,
+            "imageHeight": 460
+      },
+      {
+            "id": "f6-2-t1-05",
+            "subject": "fen",
+            "term": 2,
+            "prompt": "Şekilde aynı 99 g su örneğinin sıvı ve tamamen donmuş hâlde ölçülen hacimleri ile bir gölün kış kesiti verilmiştir. Buharlaşma veya madde kaybı yoktur.\n\nBu iki gözlem birlikte değerlendirildiğinde hangi açıklama doğrudur?",
+            "options": [
+                  "Buzun yoğunluğu 1,1 g/cm³’tür; bu nedenle gölün dibinde birikir.",
+                  "Donunca hacim arttığı için yoğunluk azalır; yüzeydeki buz ısı kaybını yavaşlatarak altta sıvı su kalmasına katkı sağlar.",
+                  "Buzun kütlesi azaldığı için yüzmesi beklenir; alttaki su her koşulda donmaz.",
+                  "Sıvı suyun yoğunluğu 0,9 g/cm³’tür; buz tabakası göldeki canlıların tümünün yaşayacağını kanıtlar."
+            ],
+            "correct": 1,
+            "explanation": "Sıvı suyun yoğunluğu 99 ÷ 99 = 1 g/cm³, buzunki 99 ÷ 110 = 0,9 g/cm³’tür. Kütle aynı kalırken hacim artmış, yoğunluk azalmıştır. Daha az yoğun buz yüzeyde kalır. Buz tabakası ısı kaybını yavaşlatır ve altta sıvı su bulunmasına katkı sağlar; bu, tüm göllerin asla tamamen donmayacağı veya tüm canlıların yaşayacağı anlamına gelmez.",
+            "imageUrl": "/grade6/fen/term-2/test-1/soru-05.svg",
+            "imageAlt": "99 g sıvı su: 99 cm³. 99 g buz: 110 cm³. Göl kesitinde yüzeyde buz, altında sıvı su ve balık.",
+            "imageWidth": 360,
+            "imageHeight": 510
+      },
+      {
+            "id": "f6-2-t1-06",
+            "subject": "fen",
+            "term": 2,
+            "prompt": "Reostanın eşit kalınlıktaki telinin A–B arası 6, B–C arası 2 eşit uzunluk birimidir. Kaydırıcı önce B’dedir. Devrede yalnız sabit uç ile kaydırıcı arasında kalan tel direnç oluşturur; kullanılmayan tel devreye etki etmez. Tel aynı maddeden yapılmıştır; sıcaklık ve temas koşulları sabit tutulur. Pil ve ampul değiştirilmez.\n\nÖnce sabit bağlantı A’da kalırken kaydırıcı B’den C’ye götürülüyor. Sonra kaydırıcı B’ye geri alınıp sabit bağlantı A’dan C’ye taşınıyor. Ampulün parlaklığı, ilk B konumundaki parlaklığa göre bu iki durumda sırasıyla nasıl değişir?",
+            "options": [
+                  "Artar; azalır.",
+                  "Azalır; değişmez.",
+                  "Değişmez; artar.",
+                  "Azalır; artar."
+            ],
+            "correct": 3,
+            "explanation": "Başlangıçta etkin tel A–B, yani 6 birimdir. İlk işlemde A–C, yani 8 birim tel kullanılır; direnç artar, parlaklık azalır. İkinci işlemde etkin tel C–B, yani 2 birimdir; başlangıçtaki 6 birime göre direnç azalır, parlaklık artar. Karşılaştırmalar her iki durumda da ilk B konumuna göredir.",
+            "imageUrl": "/grade6/fen/term-2/test-1/soru-06.svg",
+            "imageAlt": "Pil ve ampulün seri bağlı olduğu reosta; sabit bağlantı A’da, kaydırıcı B’de. A–B 6 birim, B–C 2 birim.",
+            "imageWidth": 360,
+            "imageHeight": 470
+      },
+      {
+            "id": "f6-2-t1-07",
+            "subject": "fen",
+            "term": 2,
+            "prompt": "Şemadaki oklar belirtilen etkiyi gösteriyor. Bu alanda kelebek türleri hem çiçekli bitkinin tozlaşmasına katkı sağlıyor hem de kuşlara besin oluyor. Bir uygulamadan sonra kelebeklerin tür sayısı 4’ten 1’e, kalan türün birey sayısı ise 200’den 500’e çıkıyor. Diğer üç türün her birinde önceden 100 birey vardı.\n\nBuna göre hangi değerlendirme, sayısal verileri ve şemadaki ilişkileri birlikte doğru kullanır?",
+            "options": [
+                  "Toplam kelebek sayısı değişmese de tür çeşitliliği azalmıştır; tek kalan türün aynı işlevleri yeterince sürdürüp sürdürmediği ayrıca incelenmelidir.",
+                  "Toplam kelebek sayısı arttığı için tozlaşmanın ve kuş beslenmesinin kesinlikle arttığı söylenebilir.",
+                  "Kuş ve bitki türleri sayılmadığı için kelebeklerin tür çeşitliliğinde değişim olduğu söylenemez.",
+                  "Tür sayısı azalsa da toplam sayı aynı kaldığından bütün ekolojik ilişkilerin değişmeden sürdüğü kanıtlanır."
+            ],
+            "correct": 0,
+            "explanation": "Başlangıçtaki toplam 200 + 3 × 100 = 500 bireydir; son durumda da 500 birey vardır. Buna rağmen kelebek tür sayısı 4’ten 1’e düşmüştür. Toplam birey sayısı tür çeşitliliğinin yerini tutmaz. Şema, kelebeklerin birden çok ilişkide rol aldığını gösterir; kalan türün kaybolan türlerin işlevlerini aynı ölçüde sürdürdüğü verilerden çıkarılamaz.",
+            "imageUrl": "/grade6/fen/term-2/test-1/soru-07.svg",
+            "imageAlt": "Kelebeklerden çiçekli bitkiye tozlaşma katkısı; kelebeklerden kuşa besin bağlantısı. Önce 4 tür, sonra 1 tür.",
+            "imageWidth": 360,
+            "imageHeight": 470
+      },
+      {
+            "id": "f6-2-t1-08",
+            "subject": "fen",
+            "term": 2,
+            "prompt": "Aynı makaranın eşit uzunluktaki pamuk ipleri, çalışan bir devrenin test aralığına aynı biçimde bağlanıyor. Kuru ipte ampul yanmıyor. Eşit miktarda saf suyla ıslatılan ipte de gözle görülür ışık oluşmuyor. Aynı miktarda tuzlu suyla ıslatılan ipte ampul yanıyor. Pil, ampul, ip kalınlığı ve bağlantı uzaklığı değişmiyor. Denemeler tekrarlanınca aynı sonuçlar alınıyor.\n\nBu deneyin sınadığı değişkeni ve sonucun sınırını birlikte doğru açıklayan seçenek hangisidir?",
+            "options": [
+                  "Yalnız ıslaklığın etkisi sınanmıştır; her ıslak ip mutlaka aynı parlaklıkta ışık verir.",
+                  "İpin uzunluğunun etkisi sınanmıştır; saf suyla ıslatılan ipte akımın kesinlikle sıfır olduğu kanıtlanmıştır.",
+                  "Islatmada kullanılan sıvının etkisi karşılaştırılmıştır; tuzlu suyla ıslatılan ip bu düzende ampulü yakacak iletimi sağlamıştır, yanmama tek başına hiç akım geçmediğini kanıtlamaz.",
+                  "Sıvı miktarının etkisi karşılaştırılmıştır; tuzlu suyla ıslatılan ipte daha fazla sıvı bulunduğu için ampul yanmıştır."
+            ],
+            "correct": 2,
+            "explanation": "Saf su ve tuzlu su kullanılan denemelerde ip, sıvı miktarı ve devre aynı; sıvının içeriği farklıdır. Tuzlu suyla ıslatılan ip ampulü yakacak kadar iletim sağlamıştır. Ampulün gözle görülür ışık vermemesi, devrede kesinlikle hiç akım bulunmadığını tek başına göstermez. Sonuç bütün ıslak maddelere genellenemez; eşit tutulan uzunluk ve sıvı miktarı deneyin değiştirilen değişkeni değildir."
+      },
+      {
+            "id": "f6-2-t1-09",
+            "subject": "fen",
+            "term": 2,
+            "prompt": "Bir araştırmada benzer büyüklükte iki gölde aynı yöntemle ölçüm yapılıyor. Gübreli tarladan su alan P gölünde iki yıl içinde alg miktarı artarken balık tür sayısı 8’den 3’e düşüyor. Böyle bir akış almayan R gölünde alg miktarı ve 8 olan balık tür sayısı büyük ölçüde değişmiyor. P’de avlanma miktarı da aynı dönemde artmış.\n\nVerilerin desteklediği değerlendirme ve sonraki araştırma önerisi hangisidir?",
+            "options": [
+                  "Gübreli su akışı tek neden olarak kanıtlanmıştır; avlanma verileri araştırmadan çıkarılmalıdır.",
+                  "P’deki değişim biyoçeşitlilik kaybına işaret eder; gübreli akış ve avlanmanın etkilerini ayırmak için bu etkenlerin ayrı ayrı değiştiği benzer göller de karşılaştırılmalıdır.",
+                  "R’de değişim olmadığı için gübreli suyun hiçbir gölde etkisi olamayacağı kanıtlanmıştır; yalnız R izlenmelidir.",
+                  "P’de alg miktarı arttığı için toplam biyoçeşitlilik kesin artmıştır; balık türleri yeniden sayılmamalıdır."
+            ],
+            "correct": 1,
+            "explanation": "P’de balık tür sayısının azalması bu gruptaki çeşitlilik kaybını gösterir. Ancak gübreli akışla birlikte avlanma da değişmiştir; yalnız bu kayıtlarla tek neden kesinleştirilemez. Bu iki etkenin ayrı ayrı değiştiği benzer göllerin aynı yöntemle izlenmesi etkileri ayırmaya yardım eder. Alg miktarı tek başına toplam tür çeşitliliğini göstermez."
+      },
+      {
+            "id": "f6-2-t1-10",
+            "subject": "fen",
+            "term": 2,
+            "prompt": "Aynı basınçta yapılan kontrolde X termometresi, gerçek sıcaklığı 0 °C olan eriyen saf buzu 5 °C; gerçek sıcaklığı 100 °C olan kaynayan saf suyu 105 °C gösteriyor. Y termometresi aynı durumları −3 °C ve 97 °C gösteriyor. Her termometrenin bu aralıkta her sıcaklığı aynı miktarda hatalı gösterdiği belirleniyor. Saf K’nin erimesi X ile 45 °C, saf L’nin erimesi Y ile 37 °C ölçülüyor.\n\nBu ölçümlerin düzeltilmesi ve madde kimliği hakkında hangi sonuç doğrudur?",
+            "options": [
+                  "K ve L’nin erime sıcaklıkları 40 °C’dir; aynı madde olduklarını söylemek için başka ayırt edici özellikler de karşılaştırılmalıdır.",
+                  "K 50 °C’de, L 34 °C’de erir; bu nedenle maddeler kesinlikle farklıdır.",
+                  "K 40 °C’de, L 34 °C’de erir; termometrelerin ikisinden de hata miktarı çıkarılmalıdır.",
+                  "K ve L 40 °C’de erir; bu tek ölçüm iki maddenin aynı madde olduğunu kesinleştirir."
+            ],
+            "correct": 0,
+            "explanation": "X her değeri 5 °C yüksek gösterir; K için 45 − 5 = 40 °C bulunur. Y her değeri 3 °C düşük gösterir; L için 37 + 3 = 40 °C bulunur. Hata düzeltmesinin yönü iki termometrede farklıdır. Erime noktalarının eşit olması tek başına madde kimliğini kesinleştirmez; aynı basınçta kaynama noktası gibi başka ayırt edici özellikler de incelenmelidir."
+      }
+]
+  },
 };
-
