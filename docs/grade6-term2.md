@@ -228,3 +228,26 @@ Kimlikler `f6-2-t5-01`–`f6-2-t5-10`; rota `/6-sinif/fen/2-donem-test-5`; görs
 Cevap anahtarı: **B, D, A, C, B, A, D, C, B, A**. Önceki 190 Fen Bilimleri sorusu senaryo ve çözüm mekanizmaları yönünden incelenmiştir. Zorluk; tersine işlem, sıralamadan aralık çıkarma, bağlantıların birlikte izlenmesi, kayıt tutarlılığı ve kanıtın sınırını gözetmeden gelir; soruların tümü eşit güçlükte değildir. Gaz genleşmesi yaklaşık ve sınırlı aralıkta geçerli bir model olarak verilir; üst sınıf gaz yasası gerekmez. Yüzer araç şeması ölçeksizdir ve sayısal batma uzunluğu vermez; kaldırma kuvveti formülü gerektirmez. Koridorlar, her tür için kesin koruma garantisi olarak sunulmaz.
 
 Önceki **70 test / 700 soru / 398 SVG** korunur; eski soru kayıtları ve SVG dosyaları byte düzeyinde karşılaştırılır. Yeni toplam **71 test / 710 soru / 405 SVG**; Fen Bilimleri toplamı **20 test / 200 soru**, ikinci dönem Fen bölümü **5 test / 50 soru**. Veri, TypeScript, tam derleme, SEO ve üretilmiş rota kontrolleri uygulanır. Bağımsız bilim/içerik/özgünlük incelemesi ve 360 px ile 238 px genişliklerde native SVG piksel incelemesi yapılır. Tarayıcı etkileşim testi önceki erişim reddi nedeniyle yapılmamıştır; yeniden denenmez. Production aktarımı bu içerik eklemesinin parçası değildir.
+
+## Matematik — 2. dönem Test 3 (zor)
+
+Kullanıcının sağladığı aynı 9 sayfalık `mat6.pdf` esas alınır: öğrenme çıktıları s.2–3, ikinci dönem ikinci yazılı senaryoları s.4–9. **10 yeni soru: 7 anlamlı şekil + 3 metin**. Kapsam yalnız MAT.6.2.1–3 ve MAT.6.4.1–3’tür. Çember, olasılık veya kaynak dışı başka konular eklenmez. Bunlar özgün çoktan seçmeli alıştırmalardır; resmî sınav kopyası değildir, açık uçlu/kısa cevaplı sınav biçiminin yerine geçmez ve tüm dönem kazanımlarını eksiksiz ölçme iddiası taşımaz.
+
+Kimlikler `m6-2-t3-01`–`m6-2-t3-10`; rota `/6-sinif/matematik/2-donem-test-3`; görseller `public/grade6/matematik/term-2/test-3/`. Yedi pasif SVG 360 px genişliğinde, yazılar en az 26 px’dir; veri kayıtlarındaki yükseklikler gerçek SVG boyutlarıyla aynıdır. Her görsel çözüm için gerekli yerleşimi, renkleri, işlem sırasını, ölçüleri veya kayıtları taşır. Ortak soru arayüzü ve mevcut büyütme desteği korunur. Matematik ikinci dönem test ve soru sayıları kayıtlardan hesaplanır.
+
+| Soru | Yeni akıl yürütme mekanizması | Kaynak eşlemesi |
+| --- | --- | --- |
+| 1 | Döndürülerek yerleştirilen özdeş parçalardan kenar toplamı ve farkını çıkarıp yeni birleşimin çevresini bulma | MAT.6.2.1, MAT.6.4.1 |
+| 2 | Kopyalama ve bağlantı sırasıyla büyüyen örüntüde eklenen kare sayısından adımı ve renk sayısını tersine bulma | MAT.6.2.2 |
+| 3 | Sayaç artırmanın toplama işleminden önce veya sonra yapılmasının biriken farkını yorumlama | MAT.6.2.3 |
+| 4 | İki katlama sonrası kesilen üçgenin dört kat üzerindeki etkisini açılmış kâğıdın alanına yansıtma | MAT.6.4.1–3 |
+| 5 | Dıştaki tepe noktasına ait iki dik yüksekliğin farkını ve noktanın hareketiyle alan değişimini birleştirme | MAT.6.4.2 |
+| 6 | İzin verilen iki kesim yönünde kenarlara sığmayı denetleyip en çok bayrağı ve kullanılmayan alanı bulma | MAT.6.4.1–3 |
+| 7 | Dört algoritma kaydından tek hatalı sonucu ayırıp üç tutarlı kayıtla sabit kuralı yeniden kurma | MAT.6.2.1, MAT.6.2.3 |
+| 8 | Aynı bilinmeyen bütünün iki kesirli bölümünün farkından belge uzunluğunu ve kalan toplamı çıkarma | MAT.6.2.1 |
+| 9 | Tek toplama hatasının sonraki çarpmalarla büyümesinden hatalı turu ve ara değeri belirleme | MAT.6.2.3 |
+| 10 | Dönüşümlü iki artışta terim numarasını artış sayısından ayırıp ortak başlangıcı bulma | MAT.6.2.2 |
+
+Cevap anahtarı: **D, B, C, A, D, B, A, C, D, B**. Önceki 170 matematik sorusu, özellikle ikinci dönem Test 1 ve Test 2, senaryo ve çözüm mekanizmaları yönünden incelenmiştir. Zorluk; görsel ilişkilerden bilinmeyenleri çıkarma, değişen işlem sırasını izleme, birim dönüşümlerini alanla ilişkilendirme ve birden çok koşulu birlikte denetlemeden gelir; soruların tümü eşit güçlükte değildir. Kesirler sekizinci soruda bilinmeyen niceliği modelleyen araçtır. Altıncı soruda yalnız belirtilen iki düzgün yerleşim planı karşılaştırılır; genel bir en iyi paketleme iddiası yoktur. Beşinci soruda üçgenlerin birbirinin içinde olduğu varsayılmaz.
+
+Önceki **71 test / 710 soru / 405 SVG** korunur; eski soru kayıtları ve SVG dosyaları byte düzeyinde karşılaştırılır. Yeni toplam **72 test / 720 soru / 412 SVG**; matematik toplamı **18 test / 180 soru**, ikinci dönem matematik bölümü **3 test / 30 soru**. Veri, TypeScript, tam derleme, SEO, üretilmiş rotalar ve yeni rotanın/varlıklarının native HTTP kontrolleri uygulanır. Bağımsız matematik/içerik/özgünlük incelemesi ile 360 px ve 238 px genişliklerde native SVG piksel incelemesi yapılır. Tarayıcı etkileşim testi önceki erişim reddi nedeniyle yapılmamıştır; yeniden denenmez. Production aktarımı bu içerik eklemesinin parçası değildir.

@@ -2790,6 +2790,176 @@ export const matematikData: SubjectData = {
         "correct": 2,
         "explanation": "Altıncı terimden on birinci terime 5 eşit artış vardır. Bir artış 35 ÷ 5 = 7’dir. Üçüncü ve dokuzuncu terimler, altıncı terimin iki yanında üçer artış uzaklıktadır; toplamları altıncı terimin iki katıdır. Bu nedenle altıncı terim 94 ÷ 2 = 47 olur. Dördüncü terim iki artış geridedir: 47 − 2 × 7 = 33. Kontrol: üçüncü terim 26, dokuzuncu terim 68 ve toplamları 94’tür."
       }
+    ],
+    test3: [
+      {
+        "id": "m6-2-t3-01",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Dört özdeş dikdörtgen parça, şekildeki gibi bir kare çerçeve oluşturuyor. Ortadaki boşluk da karedir; parçalar örtüşmüyor.\n\nBu parçalardan üçü, kısa kenarları boyunca boşluksuz birleştirilerek tek bir uzun dikdörtgen yapılıyor. Yeni dikdörtgenin çevresi kaç santimetredir?",
+        "options": [
+          "72",
+          "80",
+          "96",
+          "88"
+        ],
+        "correct": 3,
+        "explanation": "Dış karenin kenarı 2 dm = 20 cm, boşluğun kenarı 40 mm = 4 cm’dir. Yerleşimde dış kenar, bir parçanın uzun ve kısa kenarlarının toplamıdır; boşluğun kenarı ise bu iki uzunluğun farkıdır. Kısa kenarı iki kez sayarsak 20 − 4 = 16 cm buluruz; kısa kenar 8 cm, uzun kenar 12 cm’dir. Üç parça kısa kenarlarından birleştirilince yeni kenarlar 3 × 12 = 36 cm ve 8 cm olur. Çevre 2 × (36 + 8) = 88 cm’dir.",
+        "imageUrl": "/grade6/matematik/term-2/test-3/soru-01.svg",
+        "imageAlt": "Dört özdeş dikdörtgen, dış kenarı 2 dm olan bir karenin içinde dönerek yerleşiyor. Üstte yatay, sağda düşey, altta yatay, solda düşey bir parça var. Ortada kenarı 40 mm olan kare boşluk kalıyor. Parça sınırları, dış kenarın uzun ve kısa kenar toplamı olduğunu gösteriyor.",
+        "imageWidth": 360,
+        "imageHeight": 540
+      },
+      {
+        "id": "m6-2-t3-02",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Örüntüde her yeni şekil, önceki şeklin iki kopyası arasına üç turuncu kareden oluşan bir sıra konularak hazırlanıyor. İlk üç adım görseldedir. Eski şekil yerinde bırakıldığında, sonraki şekli tamamlamak için onun bir kopyası ve üç yeni turuncu kare eklenmiş oluyor.\n\nBir geçişte toplam 96 yeni kare eklendiğine göre oluşan yeni şekilde kaç mavi kare vardır?",
+        "options": [
+          "32",
+          "64",
+          "96",
+          "128"
+        ],
+        "correct": 1,
+        "explanation": "Eklenen 96 karenin 3’ü turuncu bağlantı sırasıdır. Kopyalanan eski şekilde 96 − 3 = 93 kare vardır. İlk şekilden başlayarak toplam kare sayıları 3, 9, 21, 45, 93 ve 189 olur; her seferinde önceki sayı ikiyle çarpılıp 3 eklenir. Demek ki 5. adımdan 6. adıma geçilmiştir. Mavi kareler bağlantı sırasına eklenmediği için sayıları her adımda iki katına çıkar: 2, 4, 8, 16, 32, 64. Yeni şekilde 64 mavi kare vardır.",
+        "imageUrl": "/grade6/matematik/term-2/test-3/soru-02.svg",
+        "imageAlt": "Birinci adımda bir sırada mavi, turuncu, mavi olmak üzere üç kare var. İkinci adımda bu sıranın iki kopyası arasında üç turuncu karelik bir sıra bulunuyor. Üçüncü adımda ikinci şeklin iki kopyası, aralarına yine üç turuncu karelik bir sıra konularak birleştiriliyor. İlk üç adım sırasıyla 1, 3 ve 7 sıra içeriyor.",
+        "imageWidth": 360,
+        "imageHeight": 680
+      },
+      {
+        "id": "m6-2-t3-03",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "K ve L algoritmaları aynı pozitif tam sayı n için çalıştırılıyor. Her biri kendi k ve S değerleriyle başlıyor; kutudaki iki işlem, yukarıdan aşağıya sırayla, tam n tur uygulanıyor. Bir işlemin yeni değeri hemen sonraki işlemde kullanılıyor.\n\nİki algoritmanın son S değerleri arasındaki fark 18 olduğuna göre küçük olan son S değeri kaçtır?",
+        "options": [
+          "81",
+          "90",
+          "99",
+          "117"
+        ],
+        "correct": 2,
+        "explanation": "K, ilk turda 3; L ise k’yi önce artırdığı için 5 ekler. Sonraki turlarda eklenen sayılar K için 5, 7, 9, …; L için 7, 9, 11, … olur. Her tur L’nin toplamı K’ye göre 2 fazla artar. Fark 18 olduğundan 18 ÷ 2 = 9 tur vardır. K’nin toplamı 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 = 99’dur. L’nin toplamı 117 olup fark 18’dir.",
+        "imageUrl": "/grade6/matematik/term-2/test-3/soru-03.svg",
+        "imageAlt": "K ve L için başlangıç değerleri k = 1, S = 0. K’de her tur önce S ← S + 2k + 1, sonra k ← k + 1. L’de her tur önce k ← k + 1, sonra S ← S + 2k + 1. Her iki işlem çifti n kez tekrarlanıyor; sonunda S yazdırılıyor.",
+        "imageWidth": 360,
+        "imageHeight": 650
+      },
+      {
+        "id": "m6-2-t3-04",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Dikdörtgen kâğıt önce bir kenarının, sonra diğer kenarının orta çizgisinden ikiye katlanıyor. Son durumda dört kat kâğıt üst üstedir. Katlı iki kenarın birleştiği köşeden, görseldeki dik üçgen dört katın tamamından kesilip atılıyor. Kesimde başka kayıp olmuyor.\n\nKâğıt tamamen açıldığında kalan alan kaç desimetrekaredir?",
+        "options": [
+          "45,6",
+          "43,2",
+          "46,8",
+          "47,4"
+        ],
+        "correct": 0,
+        "explanation": "İlk kâğıdın kenarları 0,8 m = 80 cm ve 60 cm olduğundan alanı 4800 cm²’dir. Katlı kâğıttan kesilen bir üçgenin alanı 12 × 10 ÷ 2 = 60 cm²’dir. Kesim dört katın tamamından geçtiği için açılmış kâğıtta 4 × 60 = 240 cm² alan eksilir. Kalan alan 4800 − 240 = 4560 cm² = 45,6 dm²’dir. Katlama kâğıdın gerçek alanını azaltmaz; yalnız kesilen parçalar çıkarılır.",
+        "imageUrl": "/grade6/matematik/term-2/test-3/soru-04.svg",
+        "imageAlt": "Üstte kenarları 0,8 m ve 60 cm olan dikdörtgen kâğıt, yatay ve düşey orta kat çizgileriyle gösteriliyor. Altta iki katlamadan sonraki dört katlı dikdörtgen var. Katlı iki kenarın birleştiği sol üst köşede kesilecek dik üçgen turuncu; dik kenarları 12 cm ve 10 cm. Bu iki kenar katlı kenarlar olarak işaretlenmiş.",
+        "imageWidth": 360,
+        "imageHeight": 680
+      },
+      {
+        "id": "m6-2-t3-05",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "ABCD bir paralelkenardır. P, DC doğrusunun üst tarafındadır ve PAB üçgeninin alanı 330 cm²’dir. P noktası, AB’ye dik doğrultuda 3 cm yukarı taşınıp P′ oluyor; paralelkenar değişmiyor.\n\nYeni P′DC üçgeninin alanı kaç santimetrekaredir?",
+        "options": [
+          "210",
+          "228",
+          "252",
+          "246"
+        ],
+        "correct": 3,
+        "explanation": "AB ve DC tabanları eşittir: 24 cm. P’nin AB’ye dik uzaklığı, DC’ye dik uzaklığından 10 cm fazladır. Bu yüzden PAB ile PDC alanlarının farkı 24 × 10 ÷ 2 = 120 cm²’dir; PDC’nin alanı 330 − 120 = 210 cm² olur. P, yukarı 3 cm taşınınca DC’ye ait yükseklik de 3 cm artar. Alan artışı 24 × 3 ÷ 2 = 36 cm²’dir. Yeni alan 210 + 36 = 246 cm² olur. Üçgenlerin birbirinin içinde olması gerekmez; eşit tabanları ve dik yükseklikleri karşılaştırılır.",
+        "imageUrl": "/grade6/matematik/term-2/test-3/soru-05.svg",
+        "imageAlt": "ABCD paralelkenarında alttaki AB tabanı 24 cm, AB ile DC arasındaki dik uzaklık 10 cm. P üstte; PAB ve PDC üçgenlerinin kenarları çizili. P’den dikey olarak 3 cm yukarıda P′ var. AB ve DC yatay, aralarındaki dik yükseklik kesikli ve dik açı işaretli.",
+        "imageWidth": 360,
+        "imageHeight": 610
+      },
+      {
+        "id": "m6-2-t3-06",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Dikdörtgen kumaştan, görseldeki dik üçgene eş bayraklar kesilecektir. İki bayrak bir dikdörtgen çift oluşturuyor. Yalnız şu iki kesim planına izin veriliyor: Bütün çiftler kumaş kenarlarına paralel, aynı yönde satır ve sütunlara dizilecek; ya hepsi görseldeki yönde ya da hepsi 90° döndürülmüş olacak. Farklı yönler karıştırılmayacak ve artan şeritlerden bayrak kesilmeyecek.\n\nEn çok bayrak veren plan seçilirse kullanılmayan kumaşın alanı kaç desimetrekare olur?",
+        "options": [
+          "31",
+          "43",
+          "55",
+          "67"
+        ],
+        "correct": 1,
+        "explanation": "Kumaş 170 cm × 110 cm’dir. Çiftler 40 cm yatay, 30 cm düşey yerleştirilirse bir sıraya 4 çift, 3 sıraya toplam 12 çift sığar. Hepsi döndürülürse bir sıraya 5 çift, 2 sıraya toplam 10 çift sığar. En iyi izinli plan 12 çift, yani 24 bayrak verir. Kullanılan alan 12 × 40 × 30 = 14 400 cm²; kumaşın alanı 170 × 110 = 18 700 cm²’dir. Kullanılmayan alan 4300 cm² = 43 dm² olur. Yalnız alanları bölmek, çiftlerin kenarlara sığıp sığmadığını denetlemez.",
+        "imageUrl": "/grade6/matematik/term-2/test-3/soru-06.svg",
+        "imageAlt": "Üstte kumaşın yatay kenarı 1,7 m, düşey kenarı 1,1 m. Altta iki eş dik üçgen, köşegen boyunca birleşerek 40 cm genişlik ve 30 cm yükseklikte bir dikdörtgen oluşturuyor. Üçgenler farklı renklerde; her biri bir bayrak. 40 cm ve 30 cm ölçüleri dikdörtgenin dik kenarlarına ait.",
+        "imageWidth": 360,
+        "imageHeight": 610
+      },
+      {
+        "id": "m6-2-t3-07",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir sayı makinesi her girdiyi aynı pozitif tam sayı a ile çarpıyor, sonra aynı pozitif tam sayı b ekliyor. Tablodaki dört sonuçtan tam biri yanlış yazılmış; diğer üçü doğrudur.\n\nYanlış kayıt düzeltilip makineye 11 girilirse hangi sonuç elde edilir?",
+        "options": [
+          "73",
+          "72",
+          "75",
+          "79"
+        ],
+        "correct": 0,
+        "explanation": "2 ve 4 girdilerinin sonuçları 19 ve 31 ise, girdideki 2 birim artış sonucu 12 artırır; a = 12 ÷ 2 = 6 ve b = 19 − 2 × 6 = 7 olur. Bu kural 7 girdisi için 7 × 6 + 7 = 49 sonucunu da doğrular. Böylece üç doğru kayıt bulunmuştur; 9 girdisinin sonucu 60 değil, 9 × 6 + 7 = 61 olmalıdır. Diğer üçlüler aynı çarpma ve ekleme kuralını sağlamaz: örneğin 4 ile 7 arasındaki artış da a = 6 verirken, 7 ile 9 arasındaki kayıtlı artış 11’dir ve a = 5,5 gerektirir. Doğru makine 11 × 6 + 7 = 73 üretir.",
+        "imageUrl": "/grade6/matematik/term-2/test-3/soru-07.svg",
+        "imageAlt": "Makinenin kuralı: girdiyi a ile çarp, ardından b ekle. a ve b sabit pozitif tam sayılar. İki sütunlu kayıt tablosunda Girdi ve Sonuç başlıkları var. Satırlar sırayla 2 → 19, 7 → 49, 4 → 31, 9 → 60. Alt not: Tam bir sonuç yanlış yazılmıştır.",
+        "imageWidth": 360,
+        "imageHeight": 580
+      },
+      {
+        "id": "m6-2-t3-08",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "İki yazıcının her birine, sayfa sayıları birbirine eşit iki belgeden biri gönderiliyor. Birinci yazıcı kendi belgesinin 2/5’ini, ikinci yazıcı kendi belgesinin 4/7’sini bastığında, ikincinin bastığı sayfa sayısı birincininkinden 36 fazla oluyor. Sonra her yazıcı kendi belgesinden 18 sayfa daha basıyor.\n\nSon durumda iki yazıcının basmadığı sayfa sayıları toplamı kaçtır?",
+        "options": [
+          "144",
+          "162",
+          "180",
+          "216"
+        ],
+        "correct": 2,
+        "explanation": "Bir belgenin sayfalarını 35 eş parçaya ayıralım. Birinci yazıcı 14 parçayı, ikinci yazıcı 20 parçayı basmıştır. Aradaki 6 parça 36 sayfa olduğuna göre bir parça 6 sayfadır; her belge 35 × 6 = 210 sayfadır. Başta basılmamış sayfalar birincide 21 × 6 = 126, ikincide 15 × 6 = 90’dır. İkisi de 18 sayfa daha basınca kalan toplam 126 + 90 − 2 × 18 = 180 olur."
+      },
+      {
+        "id": "m6-2-t3-09",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir algoritma 4 sayısıyla başlayıp “2 ile çarp, sonra 3 ekle” işlem çiftini tam dört tur uyguluyor. Bir öğrenci yalnız bir turda, 3 eklemesi gerekirken 5 ekliyor; diğer bütün işlemleri doğru yapıyor. Öğrencinin dördüncü tur sonunda bulduğu sonuç 117’dir.\n\nÖğrencinin bu hatalı uygulamasında üçüncü tur sonunda bulduğu sayı kaçtır?",
+        "options": [
+          "53",
+          "55",
+          "56",
+          "57"
+        ],
+        "correct": 3,
+        "explanation": "Hatasız değerler 4 → 11 → 25 → 53 → 109’dur. Hatalı sonuç 117 − 109 = 8 fazladır. Hata yapıldığı anda fazlalık 5 − 3 = 2 olur; sonraki her turdaki çarpma bu fazlalığı iki katına çıkarır. 2’nin 8 olması için iki tur daha geçmelidir, yani hata ikinci turdadır. Hatalı akış 4 → 11 → 27 → 57 → 117 olur. Üçüncü turun sonunda 57 bulunur."
+      },
+      {
+        "id": "m6-2-t3-10",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir sayı örüntüsünde ilk terim pozitif bir tam sayıdır. İkinci terime geçerken 4, üçüncü terime geçerken 7 eklenir; artışlar bundan sonra da 4, 7, 4, 7, … sırasıyla devam eder. Altıncı terim ile on üçüncü terimin toplamı 148’dir.\n\nBu örüntünün onuncu terimi kaçtır?",
+        "options": [
+          "72",
+          "76",
+          "79",
+          "83"
+        ],
+        "correct": 1,
+        "explanation": "İlk terimden altıncıya 5 artış vardır: 4 + 7 + 4 + 7 + 4 = 26. On üçüncü terime ise 12 artış, yani altı kez 4 + 7 = 11 eklenir; toplam artış 66’dır. Verilen 148’in içinde ilk terim iki kez, artışlar 26 + 66 = 92 olarak bulunur. İlk terim (148 − 92) ÷ 2 = 28’dir. Onuncu terime 9 artışla ulaşılır: dört çift artış ve bir 4, toplam 48. Onuncu terim 28 + 48 = 76’dır. Kontrol: altıncı 54, on üçüncü 94; toplam 148."
+      }
     ]
   },
 };
