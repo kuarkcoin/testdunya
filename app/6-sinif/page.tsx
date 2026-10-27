@@ -4,7 +4,7 @@ import { createPageMetadata } from '../../lib/seo';
 
 export const metadata = createPageMetadata({
   title: '6. Sınıf Testleri - Matematik, Türkçe, Fen ve İngilizce',
-  description: '6. sınıf Matematik, Türkçe, Fen Bilimleri ve İngilizce için konu ve karma tekrar testleri. Soruları ücretsiz çöz, puanını ve açıklamalı cevapları incele.',
+  description: '6. sınıf Matematik, Türkçe, Fen Bilimleri ve İngilizce için dönemlere göre düzenlenen konu ve karma tekrar testleri. Soruları ücretsiz çöz, puanını ve açıklamalı cevapları incele.',
   path: '/6-sinif',
 });
 
@@ -20,6 +20,22 @@ export default function Grade6Page() {
         <p className="font-semibold leading-relaxed text-slate-600">Matematik, Türkçe, Fen Bilimleri ve İngilizce konularını tekrar et, karma testlerle bilgilerini bir arada kullan. Testin sonunda doğru cevapları ve çözüm notlarını incele.</p>
         <p className="font-bold text-indigo-700">4 ders • {allTests.length} test • {questionCount} açıklamalı soru</p>
       </header>
+      <section aria-labelledby="second-term-heading" className="space-y-4 rounded-3xl border border-indigo-200 bg-indigo-50 p-5 md:p-7">
+        <h2 id="second-term-heading" className="text-2xl font-black text-indigo-900">6. Sınıf 2. Dönem</h2>
+        <p className="font-semibold leading-relaxed text-slate-700">İkinci dönem çalışmalarına buradan ulaşabilirsin. Birinci dönem testleri ders sayfalarında ayrı olarak korunur.</p>
+        <nav aria-label="2. dönem dersleri" className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+          {grade6Subjects.map((subject) => {
+            const termTests = getGrade6Tests(subject.id).filter((test) => test.term === 2);
+            return (
+              <Link key={subject.id} href={`/6-sinif/${subject.id}#term-2`} className="space-y-2 rounded-2xl border border-indigo-200 bg-white p-5 shadow-sm hover:border-indigo-500 focus-visible:outline focus-visible:outline-4 focus-visible:outline-indigo-600">
+                <h3 className="text-xl font-black">{subject.label}</h3>
+                <p className="font-semibold text-slate-600">{termTests.length > 0 ? `${termTests.length} test • ${termTests.reduce((total, test) => total + test.questions.length, 0)} soru` : 'Henüz test eklenmedi'}</p>
+                <span className="inline-block font-bold text-indigo-700">2. dönem bölümüne git →</span>
+              </Link>
+            );
+          })}
+        </nav>
+      </section>
       <nav aria-label="6. sınıf dersleri" className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         {grade6Subjects.map((subject) => {
           const tests = getGrade6Tests(subject.id);

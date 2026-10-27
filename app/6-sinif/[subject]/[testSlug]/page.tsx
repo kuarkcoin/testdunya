@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const test = subject && getGrade6Test(subject.id, testSlug);
   if (!subject || !test) notFound();
   return createPageMetadata({
-    title: `6. Sınıf ${subject.label} Test ${test.testNo}: ${test.topic}`,
+    title: `6. Sınıf ${subject.label} ${test.term === 2 ? '2. Dönem ' : ''}Test ${test.testNo}: ${test.topic}`,
     description: `${test.questions.length} soruluk 6. sınıf ${subject.label} ${test.topic} testi. Testi çöz, puanını ve açıklamalı cevapları incele.`,
     path: `/6-sinif/${subject.id}/${test.slug}`,
   });
@@ -51,7 +51,7 @@ export default async function Grade6TestPage({ params }: PageProps) {
     '@type': 'Quiz',
     '@id': `${absoluteUrl(path)}#quiz`,
     url: absoluteUrl(path),
-    name: `6. Sınıf ${subject.label} Test ${test.testNo}: ${test.topic}`,
+    name: `6. Sınıf ${subject.label} ${test.term === 2 ? '2. Dönem ' : ''}Test ${test.testNo}: ${test.topic}`,
     description: `${test.questions.length} soruluk ${test.topic} testi; sorular, seçenekler ve açıklamalı cevaplar.`,
     educationalLevel: '6. Sınıf',
     learningResourceType: 'Practice test',
@@ -78,7 +78,7 @@ export default async function Grade6TestPage({ params }: PageProps) {
         <span aria-current="page">{test.title}</span>
       </nav>
       <header className="space-y-3 px-2">
-        <h1 className="text-2xl font-black tracking-tight md:text-4xl">6. Sınıf {subject.label} • Test {test.testNo}</h1>
+        <h1 className="text-2xl font-black tracking-tight md:text-4xl">6. Sınıf {subject.label} • {test.term === 2 ? '2. Dönem • ' : ''}Test {test.testNo}</h1>
         <p className="font-bold text-indigo-700">{test.topic}</p>
         <p className="font-semibold text-slate-600">{test.term}. Dönem • {test.questions.length} soru • Açıklamalı konu ve karma tekrar</p>
       </header>

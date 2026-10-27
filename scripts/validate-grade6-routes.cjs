@@ -12,7 +12,14 @@ require.extensions['.ts'] = (module, filename) => module._compile(
 
 const grade6 = require('../app/data/grade6/seo.ts');
 const grade5 = require('../app/data/grade5/seo.ts');
-const sitemap = require('../app/sitemap.ts').default();
+// Validate the emitted sitemap, including the asynchronous server-loaded catalog.
+// Requiring its TypeScript source directly bypasses Next's server-only loader.
+const sitemapFile = path.resolve('.next/server/app/sitemap.xml.body');
+assert(fs.existsSync(sitemapFile), 'Missing generated sitemap (run npm run build first)');
+const sitemapXml = fs.readFileSync(sitemapFile, 'utf8');
+const decodeXml = (value) => value.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&apos;/g, "'");
+const sitemap = [...sitemapXml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => ({ url: decodeXml(match[1]) }));
+assert(sitemap.length > 0, 'Generated sitemap contains no URLs');
 const routes = [
   '/6-sinif',
   ...grade6.getGrade6SubjectParams().map(({ subject }) => `/6-sinif/${subject}`),
@@ -68,10 +75,28 @@ const withoutComments = (html) => html.replace(/<!--[\s\S]*?-->/g, '');
 const grade6Home = withoutComments(fs.readFileSync('.next/server/app/6-sinif.html', 'utf8'));
 const questionCount = tests.reduce((total, test) => total + test.questions.length, 0);
 assert(grade6Home.includes(`${tests.length} test • ${questionCount} açıklamalı soru`), 'Stale grade-6 totals');
+assert(grade6Home.includes('id="second-term-heading"'), 'Missing second-term module');
 for (const subject of grade6.grade6Subjects) {
   const subjectTests = grade6.getGrade6Tests(subject.id);
   const html = withoutComments(fs.readFileSync(`.next/server/app/6-sinif/${subject.id}.html`, 'utf8'));
-  assert(html.includes(`Başlangıç paketi • ${subjectTests.length} test`), `Stale test count: ${subject.id}`);
+  assert(html.includes(`Konu ve karma tekrar • ${subjectTests.length} test`), `Stale test count: ${subject.id}`);
+  assert(grade6Home.includes(`href="/6-sinif/${subject.id}#term-2"`), `Missing second-term entry: ${subject.id}`);
+  const secondTermCard = grade6Home.split(`href="/6-sinif/${subject.id}#term-2"`)[1]?.split('</a>')[0] || '';
+  const secondTermTests = subjectTests.filter((test) => test.term === 2);
+  const secondTermLabel = secondTermTests.length > 0
+    ? `${secondTermTests.length} test • ${secondTermTests.reduce((total, test) => total + test.questions.length, 0)} soru`
+    : 'Henüz test eklenmedi';
+  assert(secondTermCard.includes(secondTermLabel), `Stale second-term availability: ${subject.id}`);
+  for (const term of [1, 2]) {
+    const termTests = subjectTests.filter((test) => test.term === term);
+    assert(html.includes(`id="term-${term}"`), `Missing term section: ${subject.id}/${term}`);
+    assert(html.includes(`href="#term-${term}"`), `Missing term jump: ${subject.id}/${term}`);
+    assert(html.includes(`${term}. Dönem • ${termTests.length} test`), `Stale term count: ${subject.id}/${term}`);
+    for (const test of termTests) {
+      assert.equal(test.slug, term === 1 ? `test-${test.testNo}` : `2-donem-test-${test.testNo}`, 'Term-specific slug changed');
+      assert(test.questions.every((question) => question.term === term), `Wrong term questions: ${subject.id}/${test.slug}`);
+    }
+  }
   for (const test of subjectTests) {
     assert(html.includes(`href="/6-sinif/${subject.id}/${test.slug}"`), `Missing test card: ${subject.id}/${test.slug}`);
   }

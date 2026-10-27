@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!subject) notFound();
   return createPageMetadata({
     title: `6. Sınıf ${subject.label} Testleri`,
-    description: `6. sınıf ${subject.label} için açıklamalı konu ve karma tekrar testleri. Soruları ücretsiz çöz, sonuçlarını incele ve çözüm notlarıyla tekrar çalış.`,
+    description: `6. sınıf ${subject.label} için dönemlere göre düzenlenen açıklamalı konu ve karma tekrar testleri. Soruları ücretsiz çöz, sonuçlarını incele ve çözüm notlarıyla tekrar çalış.`,
     path: `/6-sinif/${subject.id}`,
   });
 }
@@ -40,11 +40,21 @@ export default async function Grade6SubjectPage({ params }: PageProps) {
         <p className="font-semibold text-white/95">{subject.description}</p>
         <p className="font-bold">Konu ve karma tekrar • {tests.length} test</p>
       </header>
+      <nav aria-label="Dönem seçimi" className="flex flex-wrap gap-3">
+        {([1, 2] as const).map((term) => (
+          <a key={term} href={`#term-${term}`} className="rounded-full border border-indigo-200 bg-white px-5 py-3 font-bold text-indigo-700 hover:bg-indigo-50 focus-visible:outline focus-visible:outline-4 focus-visible:outline-indigo-600">
+            {term}. Dönem • {tests.filter((test) => test.term === term).length} test
+          </a>
+        ))}
+      </nav>
       {([1, 2] as const).map((term) => {
         const termTests = tests.filter((test) => test.term === term);
         return (
           <section key={term} aria-labelledby={`term-${term}`} className="space-y-4">
-            <h2 id={`term-${term}`} className="text-2xl font-black">{term}. Dönem</h2>
+            <h2 id={`term-${term}`} className="scroll-mt-6 text-2xl font-black">{term}. Dönem</h2>
+            {term === 2 && subject.id === 'turkce' && (
+              <p className="rounded-2xl border border-indigo-100 bg-indigo-50 p-5 font-semibold leading-relaxed text-slate-700">Bu bölümdeki Test 1, MEB Yayınları 6. sınıf Türkçe 2. dönem 2. ortak yazılı konu-soru dağılım tablosundaki okuma ve dil kullanımı becerilerine yönelik zor düzeyde bir alıştırmadır. Resmî sınav değildir; açık uçlu yazma görevlerinin yerine geçmez ve ikinci dönemin tüm konularını kapsadığı iddiası taşımaz.</p>
+            )}
             {termTests.length === 0 ? (
               <p className="rounded-2xl border border-dashed border-slate-300 bg-white p-5 font-semibold text-slate-600">Bu dönem için henüz test eklenmedi. Listelenen diğer testlerle çalışabilirsin.</p>
             ) : (

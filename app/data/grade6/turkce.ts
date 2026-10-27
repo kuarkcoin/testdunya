@@ -1,6 +1,6 @@
 import { SubjectData } from "./types";
 
-// Özgün sorular; 1. dönem başlangıç konularıyla sınırlıdır.
+// Özgün alıştırmalar; dönemler ayrı tutulur. 2. dönem kaynak ve kapsam notu docs/grade6-term2.md içindedir.
 // Müfredat kapsamı: https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/104
 export const turkceData: SubjectData = {
   "term1": {
@@ -2405,5 +2405,156 @@ export const turkceData: SubjectData = {
       }
     ]
   },
-  "term2": {}
+  "term2": {
+  "test1": [
+    {
+      "id": "t6-2-t1-01",
+      "subject": "turkce",
+      "term": 2,
+      "prompt": "Bir köyde, herkesin önünden geçtiği kırık bir taş basamak vardı. Duru, basamağın yanına “Dikkat!” yazılı bir kâğıt bıraktı. Ertesi gün kâğıttaki yazı yağmurda silinmişti. Bu kez basamağın onarılması için komşularıyla konuştu. Usta geldiğinde Duru, yazıyı yenilemek üzere elinde tuttuğu kalemi cebine koydu.\n\nDuru’nun kalemi cebine koyması, olayların bütünü içinde hangi anlamı kazanır?",
+      "options": [
+        "Tehlikeyi duyurmanın, onu gidermeye yönelik ortak bir girişime dönüşmesi",
+        "Komşularının ilgisiyle, yazılı uyarıların sözlü uyarılardan etkili olduğunu anlaması",
+        "Basamağı tek başına onaramayacağını görünce sorumluluğu tamamen ustaya bırakması",
+        "Uyarının yağmurda silinmesi nedeniyle düşüncelerini yazıyla anlatmaktan vazgeçmesi"
+      ],
+      "correct": 0,
+      "explanation": "Önce geçici bir uyarı koyan Duru, sonra komşularını harekete geçirerek sorunun giderilmesine yönelir. Ustanın gelişiyle kalemin cebe konması bu değişimi tamamlar; genel olarak yazıdan vazgeçtiği ya da sorumluluktan kaçtığı söylenemez."
+    },
+    {
+      "id": "t6-2-t1-02",
+      "subject": "turkce",
+      "term": 2,
+      "prompt": "Kerem, pazar sabahı boş okul bahçesine geldi. Ertesi gün sergilenecek maketi bankın üzerinde açtı; rüzgâr karton çatıyı koparınca çantasındaki ipi aradı. Tam o sırada kapıda beliren arkadaşı Ece, elindeki dosyadan bir ataş çıkardı. İkisi çatıyı sabitledi; Kerem maketi yeniden kutuya koyarken okulun zili çalmadı, yalnızca yakındaki saat kulesi on iki kez vurdu.\n\nBu metnin hikâye unsurlarını ve bunların işlevini birlikte doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Olay pazar günü bahçede geçer; sergi asıl sorunu oluşturur, çatının kopması bu sorunu çözer.",
+        "Olay pazar günü bahçede geçer; rüzgâr sorunu başlatır, Ece’nin getirdiği araç çözümü sağlar.",
+        "Olay pazar günü bahçede geçer; saat kulesinin sesi sorunu başlatır, kutu çözüm aracıdır.",
+        "Olay pazar günü bahçede geçer; Ece’nin gelişi sorunu başlatır, ertesi günkü sergi çözümü sağlar."
+      ],
+      "correct": 1,
+      "explanation": "Sergi ertesi güne aittir ancak anlatılan olaylar pazar günü bahçede yaşanır. Kule yalnızca sesin kaynağıdır. Rüzgâr çatıyı kopararak sorunu doğurur, Ece’nin ataşı onarıma yardımcı olur."
+    },
+    {
+      "id": "t6-2-t1-03",
+      "subject": "turkce",
+      "term": 2,
+      "prompt": "Bir bilgilendirme metninin taslağı şöyledir:\n\nSORUN: Okul koridorundaki saksılarda bazı bitkilerin yaprakları sararıyor.\nİNCELEME: Her saksı aynı miktarda sulanıyor; ancak pencere önündeki ve gölgede kalan saksıların toprağı aynı hızda kurumuyor.\nÖNERİ: Sulamadan önce toprağın nemi kontrol edilmeli.\n\nMetnin “İnceleme” bölümünü, diğer bölümlerle ilişkisini koruyarak en iyi özetleyen not hangisidir?",
+      "options": [
+        "Sararan yaprakların tümü gölgede kaldığı için bitkiler pencere önüne taşınmalıdır.",
+        "Aynı sulama düzeni bütün saksılar için uygundur; farklılık yalnızca görünüştedir.",
+        "Eşit su verilen saksıların nemi farklılaşabildiğinden tek bir sulama düzeni her saksıya uymayabilir.",
+        "Toprak kuruluğu ölçülürse yaprak sararmasının tek nedeninin fazla su olduğu kanıtlanır."
+      ],
+      "correct": 2,
+      "explanation": "İnceleme, eşit sulamaya rağmen farklı kuruma hızlarını gösterir; öneri de bu nedenle nemi ayrı ayrı kontrol etmektir. Metin sararmanın tek nedenini kanıtlamaz ve bütün saksılar için aynı düzeni savunmaz."
+    },
+    {
+      "id": "t6-2-t1-04",
+      "subject": "turkce",
+      "term": 2,
+      "prompt": "“Akşam, evlerin arasına sessizce süzüldü. Sokak lambası, son otobüsü bekleyenlere göz kırptı. Ben de cebimdeki küçük feneri yaktım; ışığı bir avuç yıldız gibi avucuma doldu.”\n\nBir öğrenci bu metnin ikinci ve üçüncü cümlelerindeki sanatlı anlatımı düz anlamla yeniden yazıyor. Hangi seçenekte iki söz sanatı da kaldırılmış, buna karşılık anlatılan temel durum korunmuştur?",
+      "options": [
+        "Sokak lambası bekleyenlere seslendi. Fenerimin ışığı avucumu aydınlattı.",
+        "Sokak lambasının ışığı yanıp söndü. Fenerim avucumda küçücük bir güneş oldu.",
+        "Sokak lambası bekleyenlere gülümsedi. Fenerimin ışığı yıldızları andırıyordu.",
+        "Sokak lambasının ışığı yanıp söndü. Yaktığım fenerin ışığı avucumu aydınlattı."
+      ],
+      "correct": 3,
+      "explanation": "İkinci cümlede lambaya “göz kırpma” davranışı verilerek kişileştirme, üçüncüde ışık yıldızlara benzetilerek benzetme yapılmıştır. D, ikisini de düz anlamla anlatır. A ve C insana özgü davranışı nesneye vermeyi sürdürür; B’de fener güneşe benzetilir."
+    },
+    {
+      "id": "t6-2-t1-05",
+      "subject": "turkce",
+      "term": 2,
+      "prompt": "Görselde bir okulun öneri panosu ve bu panoya dayanılarak hazırlanan duyuru taslağı verilmiştir.\n\nTaslağın, panodaki bilgileri çarpıtmadan düzeltilmiş biçimi hangisidir?",
+      "options": [
+        "İki seçeneği işaretleyenlerin çoğu kitap takasını tercih etmiştir; bu yüzden oyun günü gereksizdir.",
+        "Ankete katılanların bir bölümü iki etkinliği de seçmiştir; yalnız kitap takasını seçenlerin sayısı, yalnız oyun gününü seçenlerden fazladır.",
+        "Öğrencilerin yarısı yalnız kitap takasını seçmiştir; bu nedenle okulun tamamı takas istemektedir.",
+        "İki etkinliği de seçenlerle yalnız oyun gününü seçenler eşit olduğundan iki etkinliğe toplam ilgi de eşittir."
+      ],
+      "correct": 1,
+      "explanation": "Panoda yalnız kitap takası 12, iki etkinlik 8, yalnız oyun günü 4 kişidir. Dolayısıyla 12 > 4 ve iki etkinliği de seçenler vardır. Toplam ilgi kitap takasına 20, oyun gününe 12 kişidir. 24 katılımcının yanıtlarından okulun tamamına genelleme yapılamaz.",
+      "imageUrl": "/grade6/turkce/term-2/test-1/soru-05.svg",
+      "imageAlt": "Öneri panosu: 24 öğrenci iki etkinlikten en az birini seçti. Her daire 2 öğrenciyi gösteriyor. Yalnız kitap takası satırında 6 daire; iki etkinlik de satırında 4 daire; yalnız oyun günü satırında 2 daire var. Duyuru taslağı: Okuldaki herkes yalnız kitap takası istiyor.",
+      "imageWidth": 360,
+      "imageHeight": 760
+    },
+    {
+      "id": "t6-2-t1-06",
+      "subject": "turkce",
+      "term": 2,
+      "prompt": "Görselde bir gezi bilgilendirme kartı ile velilere gönderilecek kısa mesaj bulunuyor.\n\nKısa mesajın iki önemli koşulu da koruması için hangi cümle kullanılmalıdır?",
+      "options": [
+        "Yağmur varsa bahçe incelemesi yapılmayacak; müze gezisi ise hava durumundan bağımsız olarak sürecektir.",
+        "Hava açık olursa bütün gruplar müzeyi gezecek; yağmur yağarsa bütün gezi iptal edilecektir.",
+        "Yağmurda bahçe incelemesi yerine seramik atölyesi yapılacak; müze gezisi için veli izin belgesi gerekecektir.",
+        "Veli izin belgesi getirenler yağmurda bahçeye çıkabilecek; getirmeyenler seramik atölyesine katılacaktır."
+      ],
+      "correct": 2,
+      "explanation": "Karttaki iki ayrı koşul birlikte korunmalıdır: yağmur bahçe incelemesini seramik atölyesine dönüştürür; müze için veli izin belgesi gerekir. Yağmur bütün geziyi iptal etmez ve izin belgesi hava koşulunu değiştirmez.",
+      "imageUrl": "/grade6/turkce/term-2/test-1/soru-06.svg",
+      "imageAlt": "Gezi kartı: Bahçe incelemesi saat 10.00. Yağmur yağarsa bu bölüm yerine seramik atölyesi yapılır. Müze gezisi saat 13.00. Müze için veli izin belgesi zorunludur. Mesaj taslağı: Yağmurda gezi iptal, izin belgesine gerek yok.",
+      "imageWidth": 360,
+      "imageHeight": 590
+    },
+    {
+      "id": "t6-2-t1-07",
+      "subject": "turkce",
+      "term": 2,
+      "prompt": "Okul gazetesindeki yazı şöyle bitiyor: “Bu ay okulun duyuru sayfasına giriş sayısı geçen aya göre arttı. Demek ki öğrenciler duyurulan kararları artık daha çok destekliyor.” Eylül, sonuç cümlesini eleştirirken artış bilgisini korumak ve kanıtın sınırını göstermek istiyor.\n\nEylül’ün yazacağı hangi cümle bu iki amacı da karşılar?",
+      "options": [
+        "Sayfaya daha sık girildiği için kararlara desteğin de aynı oranda arttığı kabul edilmelidir.",
+        "Sayfaya giriş sayısını bilmek gereksizdir; kararlara destek yalnız öğretmenlere sorulabilir.",
+        "Kararlara karşı çıkanlar daha çok bilgi aradığından girişlerdeki artış desteğin azaldığını gösterir.",
+        "Sayfaya giriş sayısı artmıştır; ancak bu veri, ziyaretçilerin kararlara katılıp katılmadığını tek başına göstermez."
+      ],
+      "correct": 3,
+      "explanation": "Sayfaya giriş, bilgi arama davranışını gösterir; kararları destekleme ya da reddetme tutumunu doğrudan göstermez. D veriyi koruyup çıkarımın sınırını belirtir. A ve C karşıt yönlerde kanıtsız çıkarımlar yapar; B veriyi gereksiz sayar ve yalnız öğretmenlere başvurmayı önerir."
+    },
+    {
+      "id": "t6-2-t1-08",
+      "subject": "turkce",
+      "term": 2,
+      "prompt": "Sınıfın ortak kitaplığına bağışlanan kitaplar önce adlarına göre sıralanmış, sonra her kitabın içine kimden geldiğini belirten bir not konmuştur. Öğrenciler kitapları ararken yalnızca adlarını değil, konularını da bilmek istediklerini söylemiştir. Kitapların adlara göre raf sırasını değiştirmeden bu sorunu çözmek isteyen bir öğrenci şu öneriyi yazacaktır:\n\nHangi öneri hem belirtilen ihtiyacı karşılar hem de bu raf sırasını korur?",
+      "options": [
+        "Kitapları ad sırasından çıkarmadan, konu ve ad bilgilerini birlikte içeren bir arama listesi hazırlayalım.",
+        "Kitapları konularına göre yeniden sıralayıp her kitabın konu etiketine adını da yazalım.",
+        "Ad sırasını koruyup her rafın başına yalnızca o raftaki ilk kitabın konusunu yazalım.",
+        "Kitapları ad sırasından çıkarmadan yalnız bağışçı adlarını içeren bir arama listesi hazırlayalım."
+      ],
+      "correct": 0,
+      "explanation": "A, hem mevcut ad sırasını korur hem de bütün kitapları konularıyla aramayı sağlar. B konu erişimi sağlasa da raf sırasını değiştirir. C yalnız ilk kitap hakkında bilgi verir; D ise konu bilgisi içermez."
+    },
+    {
+      "id": "t6-2-t1-09",
+      "subject": "turkce",
+      "term": 2,
+      "prompt": "“Atölye için hazırlanan raporda yalnızca tamamlanmış çalışmalar değerlendirildi; henüz bitmeyen taslakların başarısız sayıldığı ise hiçbir yerde söylenmedi.”\n\nBu cümlenin anlam sınırlarını aşmadan yapılabilecek değerlendirme hangisidir?",
+      "options": [
+        "Tamamlanmış çalışmaların hepsi başarılı bulunmuş, taslaklar ise yeniden yapılmak üzere ayrılmıştır.",
+        "Tamamlanmamış taslaklar değerlendirmenin dışında kalmıştır; bu durum tek başına onların başarısız görüldüğü anlamına gelmez.",
+        "Taslaklar başarısız sayılmadığı için raporda tamamlanmış çalışmalarla aynı başarı düzeyinde gösterilmiştir.",
+        "Raporda taslakların adı geçmediği için atölyede tamamlanmamış hiçbir çalışma bulunmamaktadır."
+      ],
+      "correct": 1,
+      "explanation": "“Yalnızca tamamlanmış çalışmalar” değerlendirmeye alınan grubun sınırını belirtir. Bir çalışmanın bu grubun dışında kalması, başarısız bulunduğunu göstermez; cümlenin ikinci bölümü de bu ayrımı korur. Tümünün başarılı olduğu, taslakların eşit düzeyde bulunduğu veya hiç taslak olmadığı çıkarılamaz."
+    },
+    {
+      "id": "t6-2-t1-10",
+      "subject": "turkce",
+      "term": 2,
+      "prompt": "Bir öğrenci, sergi yazısını düzeltirken iki amacı birlikte gözetiyor: Açıklamaların kısalığına bakarak anlamanın güç olabileceğini düşünen okuyucuya, gerçekte ziyaretçilerin kolayca anladığını bildirmek ve “de”nin yazımını doğru kullanmak.\n\nHangi cümle bu iki koşulu da sağlar?",
+      "options": [
+        "Sergideki açıklamalar kısaydı; bu yüzden ziyaretçilerde nesnelerin öyküsünü hemen kavradı.",
+        "Sergideki açıklamalar kısaydı; buna rağmen ziyaretçilerde nesnelerin öyküsünü hemen kavradı.",
+        "Sergideki açıklamalar kısaydı; buna rağmen ziyaretçiler de nesnelerin öyküsünü hemen kavradı.",
+        "Sergideki açıklamalar kısaydı; bu yüzden ziyaretçiler de nesnelerin öyküsünü hemen kavradı."
+      ],
+      "correct": 2,
+      "explanation": "“Buna rağmen” beklenenin tersine gerçekleşen sonucu bildirir; “bu yüzden” ise kısalığı anlamanın nedeni yapar. Buradaki “de” katma anlamındaki bağlaçtır ve “ziyaretçiler”den ayrı yazılır. İki koşulu yalnız C birlikte sağlar."
+    }
+  ]
+}
 };

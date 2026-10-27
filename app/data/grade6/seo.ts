@@ -42,6 +42,10 @@ const starterTopics: Record<SubjectId, string[]> = {
   ingilizce: ['Life: Günlük Rutinler ve Saatler (Orta)', 'Yummy Breakfast: Yiyecekler ve Tercihler (Orta)', 'Downtown: Şehirde Yaşam ve Karşılaştırmalar (Orta)', 'Weather and Emotions: Hava Durumu ve Duygular (Orta)', 'At the Fair: Lunapark Etkinlikleri ve Görüşler (Orta)', 'Karma Tekrar: İlk Beş Konu (Orta)', 'Günlük Yaşamdan Karma Sorular (Orta)', 'Görsel Okuma ve Diyaloglar: Karma Tekrar (Orta)', 'Günlük Planlar ve İletişim: Karma Tekrar (Orta)', 'Günlük Durumlar ve Anlam Çıkarma: Karma Tekrar (Orta)', 'Günlük Yaşamda Planlar ve Tercihler: Karma Tekrar (Orta)', 'Günlük İletişim ve Görsel İpuçları: Karma Tekrar (Orta)', 'Çoklu İpuçları, Koşullar ve Anlam Çıkarma (Zor)', 'İletileri Birleştirme, Karşılaştırma ve Bağlam (Zor)', 'Koşullar, Göndermeler ve Çok Aşamalı İletişim (Zor)'],
 };
 
+const secondTermTopics: Partial<Record<SubjectId, string[]>> = {
+  turkce: ['Metni Yorumlama, Eleştirel Okuma ve Görsel Çözümleme (Zor)'],
+};
+
 export const getGrade6Subject = (id: string) => grade6Subjects.find((subject) => subject.id === id);
 
 export function getGrade6Tests(subjectId: SubjectId): Grade6Test[] {
@@ -60,7 +64,7 @@ export function getGrade6Tests(subjectId: SubjectId): Grade6Test[] {
           // Keep published links stable when new tests are added to either term.
           slug: term === 1 ? `test-${testNo}` : `2-donem-test-${testNo}`,
           title: `${term}. Dönem • Test ${testNo}`,
-          topic: term === 1 ? starterTopics[subjectId][testNo - 1] ?? 'Konu Tekrarı' : 'Konu Tekrarı',
+          topic: term === 1 ? starterTopics[subjectId][testNo - 1] ?? 'Konu Tekrarı' : secondTermTopics[subjectId]?.[testNo - 1] ?? 'Konu Tekrarı',
           questions,
         };
       }),
