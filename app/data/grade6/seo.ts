@@ -44,7 +44,7 @@ const starterTopics: Record<SubjectId, string[]> = {
 
 const secondTermTopics: Partial<Record<SubjectId, string[]>> = {
   ingilizce: ['Occupations, Holidays, Bookworms, Saving the Planet ve Democracy (Zor)'],
-  fen: ['Madde, Elektrik, Renkler ve Biyoçeşitlilik: Deneysel Akıl Yürütme (Zor)', 'Ölçüm Hataları, Modeller ve Deney Koşullarıyla Akıl Yürütme (Zor)', 'Ölçüm Sınırları, Değişen Koşullar ve Bilimsel Kanıtlar (Zor)'],
+  fen: ['Madde, Elektrik, Renkler ve Biyoçeşitlilik: Deneysel Akıl Yürütme (Zor)', 'Ölçüm Hataları, Modeller ve Deney Koşullarıyla Akıl Yürütme (Zor)', 'Ölçüm Sınırları, Değişen Koşullar ve Bilimsel Kanıtlar (Zor)', 'Deney Tasarımları, Değişen Modeller ve Çok Adımlı Çıkarımlar (Zor)'],
   matematik: ['Cebirsel Düşünme, Örüntüler, Algoritmalar ve Alan (Zor)', 'Tersine Ölçme, Alan Bağları ve Örüntü Kuralları (Zor)'],
   turkce: ['Metni Yorumlama, Eleştirel Okuma ve Görsel Çözümleme (Zor)', 'Anlatı Katmanları, Görsel İleti ve Gerekçeli Değerlendirme (Zor)'],
 };

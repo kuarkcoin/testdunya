@@ -3083,6 +3083,176 @@ export const fenData: SubjectData = {
     "correct": 2,
     "explanation": "80 °C’de başlangıçtaki sıvının tamamı, kapta kalan 1005 cm³ ile taşan 15 cm³’ün toplamıdır: 1020 cm³. Hacim artışı 1020 − 1000 = 20 cm³’tür. Yalnız taşan 15 cm³’ü genleşme saymak, kabın iç hacmindeki 5 cm³ artışı yok sayar. Soğutulunca kap yine 1000 cm³ olur; fakat sıvının bir bölümü taşarak ayrıldığı ve geri konmadığı için aynı başlangıç sıcaklığında kapta 1000 cm³’ten az sıvı kalır. Bu yüzden kap ağzına kadar dolmaz."
   }
+],
+    test4: [
+  {
+    "id": "f6-2-t4-01",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Metal halka ile kürenin 20 °C’deki ölçüleri ve ayrı ayrı 80 °C’ye getirildiklerindeki değişimleri görseldedir. Halka her yönde düzgün genleşir; ısıtılınca deliğinin çapı da büyür. Küre, ancak çapı deliğin çapından küçükse halkadan geçebilir. Şekiller ölçekli değildir; cisimler zorlanmaz ve erimez.\n\nÜç deneme birbirinden bağımsızdır:\nI. Yalnız halka 80 °C’ye getirilir; küre 20 °C’de tutulur.\nII. İkisi de 80 °C’ye getirilir.\nIII. Yalnız küre 80 °C’ye getirilir; halka 20 °C’de tutulur.\nGeçiş denemesinde belirtilen sıcaklıklar korunursa küre hangi durumlarda halkadan geçer?",
+    "options": [
+      "Yalnız I",
+      "I ve II",
+      "II ve III",
+      "I ve III"
+    ],
+    "correct": 0,
+    "explanation": "20 °C’de delik 30,00 mm, küre 30,02 mm’dir; başlangıçta geçiş olmaz. Isıtılan deliğin çapı 30,00 + 0,06 = 30,06 mm, ısıtılan küreninki 30,02 + 0,09 = 30,11 mm olur. I’de 30,02 < 30,06 olduğundan geçer. II’de 30,11 > 30,06; III’te 30,11 > 30,00 olduğundan geçmez. İki cismin birden genleşmesi, aralarındaki açıklığın mutlaka artacağı anlamına gelmez.",
+    "imageUrl": "/grade6/fen/term-2/test-4/soru-01.svg",
+    "imageAlt": "Halkanın 20 °C’deki delik çapı 30,00 mm; kürenin çapı 30,02 mm. 20 °C’den 80 °C’ye ısıtılınca delik çapı 0,06 mm, küre çapı 0,09 mm artar.",
+    "imageWidth": 360,
+    "imageHeight": 460
+  },
+  {
+    "id": "f6-2-t4-02",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Suda yüzen, 24 g kütleli bir K cisminin hacmini ölçmek için onu su içinde tutan bir ağırlık kullanılıyor. Görselde önce yalnız su, sonra tamamen batmış ağırlık, son olarak ağırlığa ince iple bağlanarak tamamen batırılmış K ile ağırlık birlikte gösteriliyor. İp hacmi ve kütlesi ihmal ediliyor. Su eklenmiyor; taşma, çözünme, su alma ve hava kabarcığı yoktur. Sıcaklık aynıdır.\n\nK’nin yoğunluğu kaç g/cm³’tür? K, ipten ayrılıp yoğunluğu 0,75 g/cm³ olan başka bir sıvıya bırakıldığında ne olur? K bu sıvıda da değişime uğramaz.",
+    "options": [
+      "0,48; yüzer.",
+      "0,80; yüzer.",
+      "0,80; batar.",
+      "1,20; batar."
+    ],
+    "correct": 2,
+    "explanation": "Ağırlığın hacmi 70 − 50 = 20 cm³’tür. K eklendiğindeki ilave yükselme 100 − 70 = 30 cm³ olduğundan K’nin hacmi 30 cm³’tür. Yoğunluğu 24 ÷ 30 = 0,80 g/cm³ olur. 50 cm³’lük toplam yükselmeyi K’nin hacmi saymak, ağırlığı da hesaba katmak olur. K suda yüzse de yoğunluğu 0,75 g/cm³ olan sıvıdan daha yoğundur; ikinci sıvıda batar.",
+    "imageUrl": "/grade6/fen/term-2/test-4/soru-02.svg",
+    "imageAlt": "Üç dereceli kapta seviye okumaları: yalnız su 50 cm³; tamamen batmış ağırlıkla 70 cm³; ağırlık ve ona bağlı, tamamen su içinde tutulan K ile 100 cm³. K’nin kütlesi 24 g.",
+    "imageWidth": 360,
+    "imageHeight": 640
+  },
+  {
+    "id": "f6-2-t4-03",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Basitleştirilmiş bir ölçüm modelinde 90 g suyun sıvı hâlde hacmi 90 cm³, tamamen donduğunda hacmi 100 cm³ alınıyor; madde kaybı olmuyor. Öğrenci, donmuş örneği görseldeki P, Q veya R modeliyle gösterecek. Her kare 10 cm³ hacmi, her nokta 10 g kütleyi temsil ediyor; noktalar gerçek tanecik değildir.\n\nÖlçümlere uygun model ve aynı koşullarda alınacak 90 cm³ buzun kütlesi hangi seçenekte doğru verilmiştir?",
+    "options": [
+      "Q; 90 g",
+      "P; 81 g",
+      "R; 90 g",
+      "P; 100 g"
+    ],
+    "correct": 1,
+    "explanation": "P’de 10 kare ve 9 nokta vardır: 100 cm³ hacim ve 90 g kütleyi gösterir. Q, hacim artışını; R ise kütlenin korunmasını karşılamaz. Buzun yoğunluğu 90 ÷ 100 = 0,9 g/cm³ olduğundan 90 cm³ buzun kütlesi 0,9 × 90 = 81 g’dır. Aynı hacimdeki sıvı su 90 g gelir. Buzun sıvı sudan daha az yoğun olması, su yüzeyinde kalıp alttaki suyun ısı kaybını yavaşlatan bir örtü oluşturmasına ve canlıların sıvı suya erişiminin sürmesine katkı sağlar.",
+    "imageUrl": "/grade6/fen/term-2/test-4/soru-03.svg",
+    "imageAlt": "Kare-nokta modelleri: P’de 10 eş kare ve 9 nokta; Q’da 9 eş kare ve 9 nokta; R’de 10 eş kare ve 10 nokta. Her kare 10 cm³, her nokta 10 g temsil eder.",
+    "imageWidth": 360,
+    "imageHeight": 550
+  },
+  {
+    "id": "f6-2-t4-04",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Pille çalışan test devresinde iki ayrı boşluk vardır. Şekildeki her denemede bu boşluklara iki parça takılıyor. Bu basitleştirilmiş modelde parçalar ya iyi iletken ya da yalıtkandır: Ampulün yanması için iki parçanın da iletken olması gerekir. Pil, ampul ve diğer bağlantılar sağlam; temaslar uygundur. Parçalar değişime uğramaz.\n\nÜç denemeyi birlikte açıklayan sınıflandırma ve yeni bir denemenin sonucu hangisidir?",
+    "options": [
+      "A iletkendir; B ve C yalıtkandır. A ile C yeniden takılırsa yanmaz.",
+      "A ve B iletkendir; C yalıtkandır. A ile B yeniden takılırsa yanar.",
+      "Yalnız C iletkendir. A yerine bakır, B yerine C takılırsa yanmaz.",
+      "A ve C iletkendir; B yalıtkandır. B yerine bakır takılan B–C denemesinde yanar."
+    ],
+    "correct": 3,
+    "explanation": "A–C denemesinde ampul yanması, modelin kuralına göre hem A’nın hem C’nin iletken olduğunu gösterir. A iletkense A–B denemesindeki yanmama B’den kaynaklanır; B–C sonucu da bunu doğrular. B–C düzeninde B’nin yerine bakır konduğunda iki parça da iletken olur ve ampul yanar. A–B’nin tek başına yanmaması, her iki parçanın da yalıtkan olduğunu göstermez. Sonuç, soruda tanımlanan ideal model içindir.",
+    "imageUrl": "/grade6/fen/term-2/test-4/soru-04.svg",
+    "imageAlt": "İki boşluğu art arda içeren devre şeması. Deneme tablosunda A–B için ampul sönük, A–C için yanıyor, B–C için sönük gösterilmiştir.",
+    "imageWidth": 360,
+    "imageHeight": 520
+  },
+  {
+    "id": "f6-2-t4-05",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Şekildeki reostanın A–B bölümü kalın, B–C bölümü incedir; telin cinsi aynıdır. Her bölümde işaretler arasındaki uzunluklar eşittir. Yapılan ölçümde her kalın aralığın direnci 1 birim, her ince aralığın direnci 2 birim bulunmuştur. Devreye katılan aralıkların dirençleri toplanır. Yalnız A ucu ile S sürgüsü arasındaki tel devreye katılır. Pil, ampul, sıcaklık ve temas koşulları sabittir.\n\nS önce P’den B’ye, sonra B’den Q’ya götürülüyor. Bu iki işlemde reosta direncindeki artışlar sırasıyla kaç birimdir? İlk P konumuyla son Q konumu karşılaştırıldığında ampulün parlaklığı nasıl değişir?",
+    "options": [
+      "2 ve 2; azalır.",
+      "2 ve 4; azalır.",
+      "4 ve 2; artar.",
+      "2 ve 4; değişmez."
+    ],
+    "correct": 1,
+    "explanation": "P ile B arasında iki kalın aralık vardır; ilk artış 2 × 1 = 2 birimdir. B ile Q arasında iki ince aralık vardır; ikinci artış 2 × 2 = 4 birimdir. Eşit uzunlukta ilerleme, farklı kalınlıktaki bölümlerde eşit direnç artışı oluşturmaz. A–P’nin direnci 2 birim, A–Q’nunki 4 + 4 = 8 birimdir. Toplam direnç arttığı için aynı pil ve ampulle Q’da ampul daha sönük yanar. Bu verilerden parlaklığın belirli bir oranda azaldığı sonucu çıkarılmaz.",
+    "imageUrl": "/grade6/fen/term-2/test-4/soru-05.svg",
+    "imageAlt": "A’dan C’ye sekiz eşit uzunluk aralığı vardır. A–B dört kalın aralık, B–C dört ince aralıktır. P, A’dan iki aralık; B dört aralık; Q altı aralık; C sekiz aralık uzaklıktadır. A sabit uca, S sürgüsü başlangıçta P’ye bağlıdır. Kalın aralık 1, ince aralık 2 direnç birimidir.",
+    "imageWidth": 360,
+    "imageHeight": 490
+  },
+  {
+    "id": "f6-2-t4-06",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Başlangıçta tamamen katı olan saf X, sabit basınçta ısıtılıyor. Grafiğin yatay bölümünde eridiği gözleniyor; erime bitince sıcaklığı yeniden artıyor. Bu deneyde erime sürerken eşit sürelerde eşit kütlede katı eridiği belirlenmiştir. Isıtma kesilmiyor; madde kaybı yoktur.\n\n5. dakikanın sonunda 24 g X’in eridiği ölçülüyor. Grafiğe göre 7. dakikanın sonunda kaç gram katı kalmıştır ve X’in erime noktası kaç °C’dir?",
+    "options": [
+      "8 g; 50 °C",
+      "24 g; 50 °C",
+      "8 g; 70 °C",
+      "40 g; 20 °C"
+    ],
+    "correct": 0,
+    "explanation": "Erime 2. dakikada başlayıp 8. dakikada biter; toplam 6 dakika sürer. 5. dakikaya kadar erime için geçen süre 5 − 2 = 3 dakikadır. 24 ÷ 3 = 8 g katı her dakikada erir; toplam kütle 6 × 8 = 48 g’dır. 7. dakikada erime için 5 dakika geçmiş, 40 g erimiş ve 8 g katı kalmıştır. Erime noktası yatay bölümün sıcaklığı olan 50 °C’dir; grafiğin ulaştığı en yüksek sıcaklık değildir.",
+    "imageUrl": "/grade6/fen/term-2/test-4/soru-06.svg",
+    "imageAlt": "Sıcaklık-zaman grafiği: 0. dakikada 20 °C; 2. dakikada 50 °C; 2–8. dakikalar arasında 50 °C sabit; 10. dakikada 70 °C. Yatay bölüm erime aralığıdır.",
+    "imageWidth": 360,
+    "imageHeight": 440
+  },
+  {
+    "id": "f6-2-t4-07",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Şekilde bir alandaki sınırlı bir beslenme ilişkisi modeli verilmiştir. Ok, besin olan canlıdan onu tüketen canlıya gider. Başlangıçta baykuş sayısını azaltan bir etki oluşuyor; diğer dış koşulların aynı kaldığı ve çizilmeyen beslenme ilişkilerinin olmadığı kabul ediliyor. Baykuşun azalmasıyla farelerin üzerindeki avlanma baskısı azalıyor.\n\nModeldeki bağlantılar birlikte izlendiğinde hangi değişim zinciri beklenebilir?",
+    "options": [
+      "Fareler azalır; bitkilere tüketim baskısı azalır; tırtılların besini artabilir.",
+      "Fareler artar; bitkilere tüketim baskısı azalır; tırtılların besini artabilir.",
+      "Fareler artar; bitkilere tüketim baskısı artar; tırtılların ve dolaylı olarak serçelerin besini azalabilir.",
+      "Fareler artar; bitkilere tüketim baskısı artar; ancak başka hiçbir canlı bu değişimden etkilenemez."
+    ],
+    "correct": 2,
+    "explanation": "Baykuşlar fareleri tüketir. Baykuş azalınca fare sayısının artması ve farelerin bitkiler üzerindeki tüketim baskısının yükselmesi beklenebilir. Aynı bitkileri tırtıllar da tükettiğinden bitkilerin azalması tırtılların besinini sınırlayabilir; tırtılla beslenen serçeler de dolaylı etkilenebilir. Biyoçeşitlilikteki değişimler yalnız doğrudan bağlı iki türle sınırlı kalmayabilir. Bu sonuç, verilen sınırlı modelin kısa süreli beklentisidir; gerçek doğadaki kesin sayıları veya bütün etkenleri açıklamaz.",
+    "imageUrl": "/grade6/fen/term-2/test-4/soru-07.svg",
+    "imageAlt": "Beslenme ağı. Bitkilerden fareye, fareden baykuşa; aynı bitkilerden tırtıla, tırtıldan serçeye yönelen oklar vardır. Oklar besinden tüketiciye yönelir.",
+    "imageWidth": 360,
+    "imageHeight": 560
+  },
+  {
+    "id": "f6-2-t4-08",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Karanlık bir odada yalnız kırmızı, yeşil ve mavi ışık verebilen üç ayrı lamba vardır; her biri açık veya kapalıdır. İdeal modelde opak kırmızı kart yalnız kırmızı, opak yeşil kart yalnız yeşil, opak mavi kart yalnız mavi ışığı yansıtır; diğer renkleri soğurur. Kartlar ışık üretmez. Her açık lambanın ışığı bütün kartlara ulaşır.\n\nKırmızı kart kırmızı, mavi kart siyah görülüyor; yeşil karta henüz bakılmamıştır. Daha sonra lambaların durumu değiştirilmeden beyaz bir kart da odaya getiriliyor. Beyaz kart bütün görünür renkleri yansıtır.\nHangi değerlendirme kesinlikle doğrudur?",
+    "options": [
+      "Yalnız kırmızı lamba açıktır; beyaz kartın yansıttığı ışıkta başka renk bulunamaz.",
+      "Mavi lamba açıktır; mavi kartın siyah görünmesi bunu kanıtlar.",
+      "Yeşil lamba kapalıdır; kırmızı kart yeşil ışık altında kırmızı görünemez.",
+      "Kırmızı lamba açık, mavi kapalıdır; yeşil lambanın durumu bilinmediğinden beyaz kartın yeşil ışık da yansıtıp yansıtmadığı kesinleşmez."
+    ],
+    "correct": 3,
+    "explanation": "Kırmızı kartın kırmızı görünmesi, karta kırmızı ışık ulaştığını ve kırmızı lambanın açık olduğunu gösterir. Mavi kart mavi ışığı yansıtacağı hâlde siyah görüldüğüne göre bu ideal modelde mavi lamba kapalıdır. Kırmızı ve mavi kartlar yeşil ışığı soğurduğundan onların görünümü yeşil lambanın açık mı kapalı mı olduğunu belirlemez. Beyaz kart kırmızıyı yansıtır; yeşili de yansıtıp yansıtmadığı için ek gözlem gerekir. Kartların rengi ile ışık kaynağının içeriği birbirine karıştırılmamalıdır."
+  },
+  {
+    "id": "f6-2-t4-09",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Bir sulak alanın ilk yılki tür listesi, aynı mevsimde yapılan dört ayrı gözlem gezisindeki kayıtlar birleştirilerek oluşturulmuş ve 12 tür bulunmuştur. Bu gezilerin her birinde tek başına 6–8 tür kaydedilmiştir. İkinci yıl aynı mevsimde yalnız bir gezi yapılmış ve 7 tür kaydedilmiştir. Gezilerin tek tek süreleri, alanları ve kayıt yöntemleri aynıdır. Bir öğrenci “Beş tür kesinlikle alandan yok oldu; neden çevredeki yeni yol olmalıdır.” diyor.\n\nBu iddiayı değerlendirmek için en uygun bilimsel yaklaşım hangisidir?",
+    "options": [
+      "7 sayısı 12’den küçük olduğundan beş türün kaybı ve yolun buna neden olduğu kesinleşmiştir.",
+      "Tek geziyle dört gezinin birleşik listesini doğrudan karşılaştırmak yeterli değildir; gözlem çabası eşitlenip olası tehditlere ilişkin ayrı kanıt toplanmalıdır.",
+      "İkinci yılın 7 türü önceki tek-gezi aralığında olduğundan hiçbir tür kaybı yaşanmadığı kesinleşmiştir.",
+      "İkinci yılda dört gezi yapılsaydı 7 × 4 = 28 farklı tür bulunacağı kesindir; yol çeşitliliği artırmıştır."
+    ],
+    "correct": 1,
+    "explanation": "Dört gezinin birleşik listesinde, tek bir gezide görülmeyen türler de yer alabilir; aynı tür farklı gezilerde tekrar görülebilir. Bu yüzden 7’yi 12’den çıkarmak kesin tür kaybı sayısı vermez; 7’yi dörtle çarpmak da farklı tür sayısını vermez. İkinci yılın tek-gezi kaydı önceki 6–8 aralığına uysa da bu, hiç kayıp olmadığını kanıtlamaz. Önce benzer sayıda ve düzende gözlemle karşılaştırma yapılmalı; yolun olası etkisi için ayrıca araştırma yürütülmelidir."
+  },
+  {
+    "id": "f6-2-t4-10",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "İçi dolu ve homojen K ile L katıları birbirine birleştiriliyor. K’nin kütlesi 40 g, hacmi 20 cm³; L’nin kütlesi 40 g, hacmi 10 cm³’tür. Birleşik cisimde boşluk yoktur; kütle ve hacimler toplanabilir, birleştiricinin etkisi ihmal edilir. Bu cisim yoğunluğu 2,8 g/cm³ olan sıvıda deneniyor.\n\nSonra yalnız K’nin tam yarısı kesilip uzaklaştırılıyor; kalan K ile L birbirine bağlı kalıyor. Cisimler sıvı almıyor, çözünmüyor, tepkimeye girmiyor ve hava kabarcığı taşımıyor; sıcaklık aynı kalıyor. Başlangıçtaki birleşik cismin ve parça çıkarıldıktan sonraki cismin sıvıdaki durumları hangi seçenekte doğrudur?",
+    "options": [
+      "Önce yüzer, sonra batar; daha az yoğun olan bölümden parça çıkarmak ortalama yoğunluğu artırabilir.",
+      "Önce batar, sonra yüzer; toplam kütlenin azalması her zaman yüzmeyi sağlar.",
+      "İki durumda da yüzer; bir cisimden parça çıkarmak yoğunluğu hiçbir zaman değiştirmez.",
+      "İki durumda da batar; L’nin yoğunluğunun sıvıdan büyük olması tek başına yeterlidir."
+    ],
+    "correct": 0,
+    "explanation": "Başlangıçta toplam kütle 80 g, hacim 30 cm³’tür. Aynı hacimdeki sıvının kütlesi 2,8 × 30 = 84 g olduğundan cisim sıvıdan daha az yoğundur ve yüzer. K homojen olduğu için yarısı 20 g ve 10 cm³’tür. Bu parça çıkarılınca 60 g kütle ve 20 cm³ hacim kalır; yoğunluk 60 ÷ 20 = 3 g/cm³ olur ve cisim batar. K’nin yoğunluğu 2, L’ninki 4 g/cm³’tür. Daha az yoğun olan K’nin payını azaltmak, toplam kütle azalsa da birleşik cismin ortalama yoğunluğunu artırır."
+  }
 ]
   },
 };

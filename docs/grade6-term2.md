@@ -182,3 +182,26 @@ Kimlikler `f6-2-t3-01`–`f6-2-t3-10`; rota `/6-sinif/fen/2-donem-test-3`; görs
 Zorluk, üst sınıf formüllerinden değil ölçüm aracının etkisini ayırma, nicelikleri tersine bulma, aynı anda birden çok koşulu denetleme ve kanıtın sınırını korumadan gelir; soruların tümü eşit güçlükte değildir. Cevap anahtarı: **C, A, D, B, C, D, A, B, D, C**. Önceki 170 Fen Bilimleri sorusu senaryo ve çözüm mekanizmaları yönünden incelenir; aynı temel kazanımlar farklı muhakeme görevleriyle çalıştırılır.
 
 Önceki **68 test / 680 soru / 384 SVG** korunur; eski soru kayıtları ve SVG dosyaları byte düzeyinde karşılaştırılır. Yeni toplam **69 test / 690 soru / 391 SVG**; Fen Bilimleri toplamı **18 test / 180 soru**, ikinci dönem Fen bölümü **3 test / 30 soru**. Veri, TypeScript, tam derleme, SEO ve üretilmiş rota kontrolleri uygulanır. Native SVG incelemesi 360 px ve 238 px genişliklerinde yapılır; tarayıcı etkileşim testi yapılmamıştır. Production aktarımı bu içerik eklemesinin parçası değildir.
+
+## Fen Bilimleri — 2. dönem Test 4 (zor)
+
+Kullanıcının sağladığı aynı 17 sayfalık `fen6.pdf` içindeki ikinci dönem birinci ve ikinci yazılı öğrenme çıktıları esas alınır: kazanımlar s.2–3, senaryolar s.4–17. **10 yeni soru: 7 anlamlı bilimsel SVG + 3 metin**. Bunlar özgün çoktan seçmeli alıştırmalardır; resmî sınav kopyası değildir, açık uçlu/kısa cevaplı sınavın yerine geçmez ve bütün dönem kazanımlarını eksiksiz ölçme iddiası taşımaz. Kaynak dışındaki tutulmalar, kuvvet ve üreme konuları eklenmez.
+
+Kimlikler `f6-2-t4-01`–`f6-2-t4-10`; rota `/6-sinif/fen/2-donem-test-4`; görseller `public/grade6/fen/term-2/test-4/`. Yedi pasif SVG 360 px genişliğindedir; yazılar en az 26 px, kayıtlı yükseklikler SVG boyutlarıyla aynıdır. Her görsel, çözüm için gerekli ölçüleri, model öğelerini, bağlantıları veya ilişki yollarını taşır. Ortak soru arayüzü ve büyütme desteği korunur; ders sayfasındaki ikinci dönem test sayısı mevcut kayıtlardan gösterilir.
+
+| Soru | Yeni akıl yürütme mekanizması | Kaynak eşlemesi |
+| --- | --- | --- |
+| 1 | Halka deliği ve kürenin farklı genleşmelerini üç bağımsız sıcaklık düzeninde geçiş koşuluyla karşılaştırma | FB.6.5.1.1 |
+| 2 | Yüzen cismi tamamen batıran ağırlığın hacmini ölçümden ayırıp farklı sıvıda batma sonucuna ulaşma | FB.6.5.3.1–2 |
+| 3 | Donan suyun kütlesini koruyan, hacmini artıran modeli seçme; aynı hacimdeki buzun kütlesini bulma | FB.6.5.3.3–4 |
+| 4 | İki test boşluğunun birleşik sonuçlarından tek tek parçaların iletkenliğini çıkarma | FB.6.6.1.1 |
+| 5 | Kalınlığı değişen reostada eşit yolun eşit direnç artışı olmadığını verilen ölçümlerle hesaplama | FB.6.6.2.1–2 |
+| 6 | Isıtmaya başlama ile erimeye başlamayı ayırıp sabit erime hızından kalan katı kütlesini bulma | FB.6.5.2.1 |
+| 7 | Beslenme ağında avlanma baskısı değişimini ortak besin üzerinden dolaylı etkilere bağlama | FB.6.7.1.1 |
+| 8 | Bilinen kartların görünümlerinden bilinmeyen ışık kaynaklarını ve çıkarım sınırını belirleme | FB.6.4.3.3 |
+| 9 | Tek gözlem ile birleşik tür listesini ayırma; gözlem çabası ve nedensellik sınırını gözetme | FB.6.7.1.2 |
+| 10 | Birleşik cisimden düşük yoğunluklu parça çıkarılınca kütle azalmasına rağmen batmayı açıklama | FB.6.5.3.1–2 |
+
+Cevap anahtarı: **A, C, B, D, B, A, C, D, B, A**. Önceki 180 Fen Bilimleri sorusu senaryo ve çözüm mekanizmaları yönünden incelenir. Zorluk; birden çok ölçüyü birleştirme, gözlemden tersine çıkarım, modelin koşullarını koruma ve karşıt görünen sonuçları açıklamadan gelir; soruların tümü eşit güçlükte değildir. Reostanın birim dirençleri ve toplama kuralı, deneydeki sabit erime hızı, iletkenlik modelinin ideal koşulları soruda verilir; üst sınıf formülleri gerekmez. Beslenme ağı kesin nüfus tahmini değil sınırlı model beklentisi olarak yorumlanır.
+
+Önceki **69 test / 690 soru / 391 SVG** korunur; eski soru kayıtları ve SVG dosyaları byte düzeyinde karşılaştırılır. Yeni toplam **70 test / 700 soru / 398 SVG**; Fen Bilimleri toplamı **19 test / 190 soru**, ikinci dönem Fen bölümü **4 test / 40 soru**. Veri, TypeScript, tam derleme, SEO ve üretilmiş rota kontrolleri uygulanır. Native SVG incelemesi 360 px ve 238 px genişliklerinde yapılır. Tarayıcı etkileşim testi önceki erişim reddi nedeniyle yapılmamıştır; yeniden denenmez. Production aktarımı bu içerik eklemesinin parçası değildir.
