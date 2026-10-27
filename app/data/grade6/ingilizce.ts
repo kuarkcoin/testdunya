@@ -2727,6 +2727,176 @@ export const ingilizceData: SubjectData = {
       "correct": 1,
       "explanation": "Kurala göre bütün adayların konuşması oylamadan önce tamamlanmalıdır; her öğrenci gizli olarak bir kez oy verir. B yeni seçimde bu sırayı ve eşit oy hakkını korur. Eski oyları tutmak, bazı öğrencilere iki oy vermek ya da konuşmalardan önce yeniden oy kullanmak kurallara uymaz."
     }
+  ],
+  "test3": [
+    {
+      "id": "e6-2-t3-01",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "Look at Deniz's job history. Each new job started on 1 January, and the previous job ended the day before. On 15 May 2022, which sentence could Deniz say?",
+      "options": [
+        "I work on a farm now. Three years ago, I worked in a hospital.",
+        "I cook meals in a restaurant now. Three years ago, I worked on a farm.",
+        "I work in a hospital now. Three years ago, I cooked meals in a restaurant.",
+        "I work in a hospital now. Three years ago, I worked on a farm."
+      ],
+      "correct": 2,
+      "explanation": "Konuşma tarihi 15 Mayıs 2022’dir; görselde 1 Ocak 2021’de başlayan hemşirelik bu tarihte sürer. Üç yıl önce 2019’dur; Deniz o sırada 2018’de başladığı aşçılığı yapmaktadır. Çiftçiliğe ancak 2024’te geçer. C seçeneği hem konuşma anındaki mesleği hem de geçmişteki işi doğru verir.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-3/soru-01.svg",
+      "imageAlt": "Deniz's job history, shown as a downward timeline: cook at a restaurant from 1 January 2018; nurse at a hospital from 1 January 2021; farmer on a farm from 1 January 2024. Each stage has a drawing of its workplace or tools: a cooking pot, a medical bag, and growing crops.",
+      "imageWidth": 360,
+      "imageHeight": 740
+    },
+    {
+      "id": "e6-2-t3-02",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "The letters show the same people in all three holiday photos. Each photo shows everyone who did that activity. Tom did two activities, but he did not visit the museum. Mia went camping with Tom. Which sentence is correct?",
+      "options": [
+        "Tom is A, and Mia is B.",
+        "Tom is B, and Mia is D.",
+        "Tom is C, and Mia is D.",
+        "Tom is B, and Mia is A."
+      ],
+      "correct": 1,
+      "explanation": "Müzede A ve C, yüzmede A ve B, kampta B ve D vardır. İki etkinliğe katılıp müzeye gitmeyen kişi yalnızca B’dir; Tom, B olmalıdır. Tom’la kampta bulunan diğer kişi D olduğuna göre Mia, D’dir. A iki etkinliğe katılsa da müzeye gitmiştir; C yalnızca müzededir.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-3/soru-02.svg",
+      "imageAlt": "Three holiday photos with consistent letter badges for the people. Museum: people A and C in front of a museum. Swimming: people A and B in water. Camping: people B and D beside a tent. Each photo includes all participants in that activity.",
+      "imageWidth": 360,
+      "imageHeight": 720
+    },
+    {
+      "id": "e6-2-t3-03",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "Lara wrote on Tuesday: 'My dictionary was directly above a blue box and directly below a red book. It was not inside a box.' Look at the bookcase on Tuesday. Which letter marks her dictionary?",
+      "options": [
+        "A",
+        "D",
+        "C",
+        "B"
+      ],
+      "correct": 3,
+      "explanation": "A’nın altında kırmızı kutu vardır; mavi kutu koşulunu sağlamaz. C’nin üstündeki kitap kırmızı değil sarıdır. D, mavi kutunun içindedir; üstünde değildir. B ise mavi kutunun üstünde ve kırmızı kitabın altındadır. Üç konum ipucunu birlikte yalnızca B karşılar.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-3/soru-03.svg",
+      "imageAlt": "Bookcase on Tuesday, with three aligned columns. Top shelf: a red book in the left column, a red book in the middle column, a yellow book in the right column. Middle shelf: books labelled A, B, C from left to right. Bottom shelf: a red box on the left, a blue box containing book D in the middle, an empty blue box on the right. B is above the middle blue box and below the middle red book.",
+      "imageWidth": 360,
+      "imageHeight": 580
+    },
+    {
+      "id": "e6-2-t3-04",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "Each line shows when a student borrowed and returned a library book in June. Ben's record is A. Nora said, 'Ben borrowed his book before I borrowed mine, but I returned mine before he returned his.' Which record can be Nora's?",
+      "options": [
+        "Record B.",
+        "Record C.",
+        "Record D.",
+        "Record A."
+      ],
+      "correct": 0,
+      "explanation": "A kaydı Ben’in kitabı 2 Haziran’da alıp 6 Haziran’da verdiğini gösterir. Nora kitabını 2 Haziran’dan sonra almalı, 6 Haziran’dan önce vermelidir. B kaydı 3–5 Haziran ile iki koşulu da sağlar. C daha sonra alır ancak 7 Haziran’da verir; D erken verir ancak 1 Haziran’da alır. A ise before koşullarını sağlayacak farklı tarihlere sahip değildir.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-3/soru-04.svg",
+      "imageAlt": "June library loan chart with date columns 1 to 7. A: borrowed 2 June, returned 6 June. B: borrowed 3 June, returned 5 June. C: borrowed 4 June, returned 7 June. D: borrowed 1 June, returned 4 June. Circles mark borrowing, squares mark returning, and horizontal lines join them.",
+      "imageWidth": 360,
+      "imageHeight": 450
+    },
+    {
+      "id": "e6-2-t3-05",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "The eco-club says: 'First, write on the empty sides of OLD paper. Use NEW paper only when no old paper has an empty side.' The picture shows both sides of four sheets. Which TWO sheets should Rina use before she takes new paper?",
+      "options": [
+        "A and D.",
+        "B and C.",
+        "A and C.",
+        "B and D."
+      ],
+      "correct": 2,
+      "explanation": "A’nın ön yüzü yazılı, arka yüzü boştur. C’nin arka yüzü yazılı, ön yüzü boştur. Bu iki eski kâğıt yeniden kullanılabilir. B’nin iki yüzü de doludur. D ise yeni kâğıttır; eski kâğıtlarda kullanılabilir boş yüz varken alınmamalıdır. C seçeneği kâğıdın iki yüzünü ve önce eskiyi kullanma talimatını birlikte değerlendirir.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-3/soru-05.svg",
+      "imageAlt": "Both sides of four sheets of paper, labelled Front and Back. A, old: writing on the front, blank back. B, old: writing on both sides. C, old: blank front, writing on the back. D, new: both sides blank. Writing is represented by visible dark lines on the sheets.",
+      "imageWidth": 360,
+      "imageHeight": 670
+    },
+    {
+      "id": "e6-2-t3-06",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "Read the green team's report: 'First, we collected litter beside the river. Then we planted trees. We did not work beside the road at either place.' Look at the four work areas. Which pair shows their first and second work areas, in that order?",
+      "options": [
+        "A, then C.",
+        "A, then D.",
+        "B, then D.",
+        "D, then A."
+      ],
+      "correct": 1,
+      "explanation": "A alanında nehir kenarındaki çöpler, B’de yol kenarındaki çöpler gösterilir. C’de yol kenarında, D’de ise yoldan uzakta ağaç dikme alanı vardır. Ekip önce nehirdeki çöpleri topladığı ve iki çalışmada da yol kenarında bulunmadığı için A’dan sonra D’de çalışmıştır. A–C ikinci koşulu; B–D ilk yer koşulunu; D–A ise etkinlik sırasını bozar.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-3/soru-06.svg",
+      "imageAlt": "Four work areas. A: a bottle and paper on the bank of a river, with no road. B: a bottle and paper beside a road, with no river. C: a young tree, a planting hole and a spade beside a road. D: a young tree, a planting hole and a spade in a grassy field with hills, away from roads. Areas are labelled A, B, C, D.",
+      "imageWidth": 360,
+      "imageHeight": 680
+    },
+    {
+      "id": "e6-2-t3-07",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "Twenty-four students voted for class president. Each student voted once for one candidate. All votes are valid. The chart shows the votes counted so far. Which statement is correct?",
+      "options": [
+        "Omar can still win because four votes are not counted yet.",
+        "Lina must win because she has more counted votes than Omar.",
+        "Vera can still get more votes than Lina with the votes left.",
+        "All twenty-four votes are counted, and Lina is the winner."
+      ],
+      "correct": 0,
+      "explanation": "Grafikte sayılan oylar 9 + 7 + 4 = 20’dir. Toplam 24 öğrenci oy verdiğine göre dört oy henüz sayılmamıştır. Bu dört oyun tümü Omar’a verilmiş olabilir; o zaman Omar 11 oyla Lina’nın 9 oyunu geçer. Bu yüzden Lina’nın kesin kazandığı söylenemez. Vera ise kalan dört oyu alsa bile 8’e ulaşır ve Lina’nın mevcut 9 oyunu geçemez. Geçersiz oy değil, sayımı tamamlanmamış oylar söz konusudur.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-3/soru-07.svg",
+      "imageAlt": "Class election chart titled Counted votes. Lina has 9, Omar has 7, and Vera has 4 counted votes. Horizontal bars use one block per vote, with numerical totals shown. These are counted votes only, not the complete election result.",
+      "imageWidth": 360,
+      "imageHeight": 460
+    },
+    {
+      "id": "e6-2-t3-08",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "Read two notes.\n18 March, school interview: 'I work at an airport, but I do not fly planes. I repair the airport's cars. My sister works here too. She flies planes.'\n19 March, the sister's message: 'Yesterday, the class interviewed my brother, not me.'\n\nWhich sentence correctly gives the person's job and the interview date?",
+      "options": [
+        "The class interviewed a pilot on 18 March.",
+        "The class interviewed a mechanic on 19 March.",
+        "The class interviewed a mechanic on 18 March.",
+        "The class interviewed a pilot on 19 March."
+      ],
+      "correct": 2,
+      "explanation": "İş yerinin havaalanı olması kişinin pilot olduğunu göstermez. Konuşan kişi arabaları tamir eder; mesleği mechanic’tir. Uçak uçuran kardeşi pilot olsa da görüşülen kişi o değildir. 19 Mart tarihli mesajdaki yesterday, 18 Mart’a karşılık gelir. C hem kişiyi ve mesleği hem de görüşme tarihini doğru birleştirir."
+    },
+    {
+      "id": "e6-2-t3-09",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "Mina received Efe's holiday postcard on 12 July. Efe wrote it on 9 July:\n'Yesterday, we visited a castle. Two days ago, we stayed in a village.'\nMina wrote, 'Efe visited the castle on 11 July and stayed in the village on 10 July.'\n\nWhich correction matches Efe's postcard?",
+      "options": [
+        "He visited the castle on 11 July and stayed in the village on 10 July.",
+        "He visited the castle on 9 July and stayed in the village on 7 July.",
+        "He visited the castle on 8 July and stayed in the village on 9 July.",
+        "He visited the castle on 8 July and stayed in the village on 7 July."
+      ],
+      "correct": 3,
+      "explanation": "Yesterday ve two days ago ifadeleri kartın ulaştığı 12 Temmuz’a değil, Efe’nin yazdığı 9 Temmuz’a göre yorumlanır. Kale ziyareti 8 Temmuz, köyde kalış 7 Temmuz’dur. Mina bu ifadeleri teslim gününe göre hesapladığından iki tarihi de yanlış yazmıştır. D iki olayı da doğru tarihe bağlar."
+    },
+    {
+      "id": "e6-2-t3-10",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "After the class election, the new president said: 'We have enough money for new books OR new games, not both. Everyone can vote on these two ideas. We will choose the idea with more votes.' Books received more votes than games. Then the president said, 'I wanted games, so I will buy games.'\n\nWhich reply follows the president's own rule?",
+      "options": [
+        "Buy games, because the president's choice counts more than the class vote.",
+        "Buy books, because the class chose them in the vote on the two ideas.",
+        "Buy both, because the class and the president chose different things.",
+        "Ask only the students who want games to vote again on the two ideas."
+      ],
+      "correct": 1,
+      "explanation": "Başkan önceden herkesin katıldığı oylamada daha çok oy alan fikrin seçileceğini söyler. Sınıf kitapları seçtiği için kişisel oyun isteği sonucu değiştiremez. B oylama kuralını uygular. A başkana fazladan yetki verir; C tek seçenek için yeterli olan bütçe koşulunu bozar; D yalnız bir görüşteki öğrencileri yeniden oylamaya alarak everyone kuralına aykırı davranır."
+    }
   ]
 }
 };

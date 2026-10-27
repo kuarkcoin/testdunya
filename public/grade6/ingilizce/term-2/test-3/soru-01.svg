@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="740" viewBox="0 0 360 740" role="img">
+<title>Deniz&#x27;s job history: cook from 2018, nurse from 2021, farmer from 2024</title>
+<desc>Deniz&#x27;s job history: cook from 2018, nurse from 2021, farmer from 2024</desc>
+<rect x="1" y="1" width="358" height="738" rx="18" fill="#fff" stroke="#d6e2eb" stroke-width="2"/>
+<text x="180" y="43" font-family="Arial, sans-serif" font-size="27" fill="#17324d" text-anchor="middle" font-weight="bold">DENIZ&#x27;S JOB HISTORY</text>
+<line x1="35" y1="90" x2="35" y2="698" stroke="#adc5d6" stroke-width="5" stroke-linecap="round"/>
+<rect x="59" y="78" width="278" height="188" rx="14" fill="#f2f7fb" stroke="none" stroke-width="1"/>
+<circle cx="35" cy="135" r="10" fill="#127f77" stroke="none" stroke-width="1"/>
+<text x="78" y="113" font-family="Arial, sans-serif" font-size="26" fill="#17324d" text-anchor="start" font-weight="bold">1 January 2018</text>
+<text x="78" y="152" font-family="Arial, sans-serif" font-size="27" fill="#127f77" text-anchor="start" font-weight="bold">COOK</text>
+<text x="78" y="188" font-family="Arial, sans-serif" font-size="26" fill="#17324d" text-anchor="start" font-weight="normal">Restaurant</text>
+<rect x="159" y="216" width="83" height="37" rx="7" fill="#a4c7d7" stroke="#17324d" stroke-width="3"/>
+<line x1="151" y1="217" x2="250" y2="217" stroke="#17324d" stroke-width="4" stroke-linecap="round"/>
+<line x1="181" y1="205" x2="220" y2="205" stroke="#17324d" stroke-width="3" stroke-linecap="round"/>
+<path d="M181 198 Q172 190 181 186" fill="none" stroke="#425b70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="155" y1="228" x2="146" y2="228" stroke="#17324d" stroke-width="3" stroke-linecap="round"/>
+<line x1="246" y1="228" x2="255" y2="228" stroke="#17324d" stroke-width="3" stroke-linecap="round"/>
+<rect x="59" y="290" width="278" height="188" rx="14" fill="#f2f7fb" stroke="none" stroke-width="1"/>
+<circle cx="35" cy="347" r="10" fill="#127f77" stroke="none" stroke-width="1"/>
+<text x="78" y="325" font-family="Arial, sans-serif" font-size="26" fill="#17324d" text-anchor="start" font-weight="bold">1 January 2021</text>
+<text x="78" y="364" font-family="Arial, sans-serif" font-size="27" fill="#127f77" text-anchor="start" font-weight="bold">NURSE</text>
+<text x="78" y="400" font-family="Arial, sans-serif" font-size="26" fill="#17324d" text-anchor="start" font-weight="normal">Hospital</text>
+<rect x="164" y="422" width="75" height="46" rx="7" fill="#fff" stroke="#17324d" stroke-width="3"/>
+<path d="M187 422 V410 H215 V422" fill="none" stroke="#17324d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="195" y="430" width="14" height="30" rx="0" fill="#d94741" stroke="none" stroke-width="1"/>
+<rect x="187" y="438" width="30" height="14" rx="0" fill="#d94741" stroke="none" stroke-width="1"/>
+<rect x="59" y="502" width="278" height="188" rx="14" fill="#f2f7fb" stroke="none" stroke-width="1"/>
+<circle cx="35" cy="559" r="10" fill="#127f77" stroke="none" stroke-width="1"/>
+<text x="78" y="537" font-family="Arial, sans-serif" font-size="26" fill="#17324d" text-anchor="start" font-weight="bold">1 January 2024</text>
+<text x="78" y="576" font-family="Arial, sans-serif" font-size="27" fill="#127f77" text-anchor="start" font-weight="bold">FARMER</text>
+<text x="78" y="612" font-family="Arial, sans-serif" font-size="26" fill="#17324d" text-anchor="start" font-weight="normal">Farm</text>
+<path d="M145 678 Q200 660 260 678" fill="none" stroke="#a47b49" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="165" y1="669" x2="165" y2="631" stroke="#39814d" stroke-width="4" stroke-linecap="round"/>
+<path d="M165 658 Q142 655 150 642 Q165 644 165 658" fill="#7fb76f" stroke="#39814d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M165 649 Q187 647 179 634 Q165 635 165 649" fill="#7fb76f" stroke="#39814d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="200" y1="669" x2="200" y2="631" stroke="#39814d" stroke-width="4" stroke-linecap="round"/>
+<path d="M200 658 Q177 655 185 642 Q200 644 200 658" fill="#7fb76f" stroke="#39814d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 649 Q222 647 214 634 Q200 635 200 649" fill="#7fb76f" stroke="#39814d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="235" y1="669" x2="235" y2="631" stroke="#39814d" stroke-width="4" stroke-linecap="round"/>
+<path d="M235 658 Q212 655 220 642 Q235 644 235 658" fill="#7fb76f" stroke="#39814d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M235 649 Q257 647 249 634 Q235 635 235 649" fill="#7fb76f" stroke="#39814d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

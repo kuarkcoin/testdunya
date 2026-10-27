@@ -297,3 +297,31 @@ Kimlikler `m6-2-t5-01`–`m6-2-t5-10`; rota `/6-sinif/matematik/2-donem-test-5`;
 Cevap anahtarı: **C, D, B, C, A, A, D, B, D, C**. Önceki **190 matematik sorusu**, özellikle ikinci dönem Test 1–4, senaryo ve çözüm mekanizmalarının tekrarlanmaması için incelenmiştir. Zorluk; birden fazla bilinmeyeni görsel kayıtlardan çıkarma, alan bağıntılarını gerekçelendirme, işlemleri geri alma ve yer değiştiren değerleri izleme adımlarından gelir; tüm sorular eşit güçlükte değildir. Altıncı soruda dıştaki kareye ek olarak üç kare çizilir, yani toplam dört kare vardır; çözüm karekök yöntemi gerektirmez. Dokuzuncu sorudaki güncellemeler eski değerler üzerinden aynı anda yapılır. Yedinci görselde eklenen bölgenin büyük yüksekliği, dikdörtgen ve kesilen köşe aynı ölçekle çizilmiştir.
 
 Önceki **73 test / 730 soru / 419 SVG** korunur; eski soru kayıtları ve SVG dosyaları byte düzeyinde karşılaştırılır. Yeni toplam **74 test / 740 soru / 426 SVG**; matematik toplamı **20 test / 200 soru**, ikinci dönem matematik bölümü **5 test / 50 soru**. Veri, TypeScript, tam derleme, SEO, üretilmiş rotalar ve yeni rotanın/varlıklarının native HTTP kontrolleri uygulanır. Bağımsız matematik, içerik, özgünlük ve görsel incelemesine ek olarak, gerçek SVG koordinatlarında şekillerin alanları, orta noktaları, diklikleri ve ölçü oranları doğrulanır. 360 px ve 238 px genişliklerde native SVG piksel incelemesi yapılır. Tarayıcı etkileşim testi önceki erişim reddi nedeniyle yapılmamıştır; yeniden denenmez. Production aktarımı bu içerik eklemesinin parçası değildir.
+
+
+## İngilizce — 2. dönem Test 3 (zor)
+
+Kullanıcının sağladığı aynı 11 sayfalık `ing6.pdf`, **6. Sınıf İngilizce 2. Dönem 1. ve 2. Ortak Yazılı Konu Soru Dağılım Tabloları** esas alınır. Birinci yazılı senaryoları s.2–6, ikinci yazılı senaryoları s.7–11’dir. Kapsam yalnızca Occupations, Holidays, Bookworms, Saving the Planet ve Democracy üniteleridir. Bu belge tam yıllık/dönemlik müfredat değildir; her ünite her senaryoda bulunmaz. Özgün çoktan seçmeli alıştırmalar resmî sınav kopyası değildir; kaynağın açık uçlu/kısa cevaplı biçiminin veya bağımsız yazılı üretimin yerine geçmez.
+
+**10 yeni soru: 7 anlamlı yerel SVG + 3 metin**. Sorular ve seçenekler İngilizce, açıklamalar Türkçedir. Kimlikler `e6-2-t3-01`–`e6-2-t3-10`; rota `/6-sinif/ingilizce/2-donem-test-3`; görseller `public/grade6/ingilizce/term-2/test-3/`. SVG genişlikleri 360 px, yazılar en az 26 px; kayıtlı yükseklikler gerçek SVG boyutlarıyla eşleşir. Meslek zaman çizelgesi, aynı kişileri gösteren etkinlik fotoğrafları, kitaplık, ödünç alma aralıkları, kâğıtların iki yüzü, çevre çalışma alanları ve tamamlanmamış oy sayımı çözüm için veri taşır. Ortak soru bileşeni ve büyütme desteği değiştirilmez.
+
+**Numaralandırma:** Mevcut kayıtlarda İngilizce ikinci dönem Test 2 yoktur. Kullanıcının açıkça istediği Test 3 eklenir; Test 1 korunur, Test 2 uydurulmaz, başka test yeniden numaralandırılmaz. Bölümdeki gerçek testler Test 1 ve Test 3’tür; test sayısı son test numarasından değil kayıtlardan hesaplanır. Test 2 için rota veya site haritası girdisi üretilmez.
+
+| Soru | Yeni akıl yürütme mekanizması | Kaynak eşlemesi |
+| --- | --- | --- |
+| 1 | Konuşma tarihini meslek geçişleriyle birleştirip o günkü ve üç yıl önceki işi ayırma | Occupations, E6.6.R1 (s.2–7,9) |
+| 2 | Tam katılımlı tatil fotoğraflarındaki tekrarlar ve dışlama ipucuyla iki kişinin kimliğini bulma | Holidays, E6.7.R1 (s.2–6,8,10,11) |
+| 3 | Kitaplıkta iki düşey konum ilişkisini kutunun içinde olma durumundan ayırma | Bookworms, E6.8.W2 ile ilişkili konum okuma alıştırması (s.8,10) |
+| 4 | İki öğrencinin ödünç alma ve iade tarihlerini iç içe zaman aralıklarıyla eşleştirme | Bookworms, E6.8.R1 (s.7–11) |
+| 5 | Eski kâğıtların ön ve arka yüzlerini birlikte okuyup yeni kâğıttan önce yeniden kullanma kuralını uygulama | Saving the Planet, E6.9.R2 (s.8,10,11) |
+| 6 | Çevre çalışmasının iki eylemini, sırasını ve yol kenarını dışlayan yer koşulunu eşleştirme | Saving the Planet, E6.9.R1 (s.7–11) |
+| 7 | Geçerli fakat henüz sayılmamış oyların seçim sonucunu değiştirip değiştiremeyeceğini belirleme | Democracy, E6.10.R1 (s.10–11) |
+| 8 | İş yerini meslekle karıştırmadan görüşülen kişiyi ve mesajın tarih dayanağını belirleme | Occupations, E6.6.R1 (s.2–7,9) |
+| 9 | Kartpostalın yazılma ve ulaşma tarihlerini ayırıp iki geçmiş olayı yazarın zamanına göre düzeltme | Holidays, E6.7.R1 (s.2–6,8,10,11) |
+| 10 | Başkanın kişisel tercihini, herkesin katıldığı oylama sonucundan ve tek seçeneklik bütçe koşulundan ayırma | Democracy, E6.10.R1 (s.10–11) |
+
+Zorluk, ileri dil bilgisi veya üst sınıf sözcüklerinden değil birden fazla ipucunu birleştirme, zaman dayanağını doğru seçme, görsel ilişkileri okuma ve kesinlik sınırını korumadan gelir; bütün sorular eşit güçlükte değildir. Q1’de iş yerleri açıkça verilerek meslek kalıplarından tahmin zorunluluğu kaldırılır. Q7’de geçersiz oy yoktur; önceki Test 1’den farklı olarak sorun, sayımın tamamlanmamış olmasıdır. Q9’daki kartpostal ulaştığı güne göre değil yazıldığı güne göre yorumlanır. Cevap anahtarı: **C, B, D, A, C, B, A, C, D, B**.
+
+Önceki **160 İngilizce sorusu** içerik, bağlam ve çözüm mekanizması yönünden incelenir; özellikle ikinci dönem Test 1’deki ziyaretçi eşleştirme, değişen tatil planı, taşınan kitap, okuma kaydı, geri dönüşüm kutusu, israf öncesi/sonrası, geçersiz oy ve seçimi yenileme mekanizmaları tekrar edilmez. Yazma kazanımları doğrudan ölçülmez; tüm kazanımların eksiksiz kapsandığı iddia edilmez. İlk dönem Life / Yummy Breakfast / Downtown / Weather and Emotions / At the Fair kapsamı bu teste taşınmaz.
+
+Önceki **74 test / 740 soru / 426 SVG** korunur; mevcut soru kayıtları ve SVG dosyaları byte düzeyinde karşılaştırılır. Yeni toplam **75 test / 750 soru / 433 SVG**; İngilizce toplamı **17 test / 170 soru**, ikinci dönem İngilizce bölümü **2 test / 20 soru** olur. Veri, TypeScript, tam Next.js 15.5.28 derlemesi, SEO, üretilmiş rotalar ve yerel HTTP sayfa/varlık kontrolleri uygulanır. Native SVG incelemesi 360 px ve 238 px genişliklerinde yapılır. Tarayıcı etkileşim testi önceki erişim reddi nedeniyle yeniden denenmez; native inceleme tarayıcı testi olarak sunulmaz. Production aktarımı bu içerik eklemesinin parçası değildir.

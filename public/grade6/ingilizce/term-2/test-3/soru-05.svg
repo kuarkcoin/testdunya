@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="670" viewBox="0 0 360 670" role="img">
+<title>Old and new paper, both sides shown</title>
+<desc>Old and new paper, both sides shown</desc>
+<rect x="1" y="1" width="358" height="668" rx="18" fill="#fff" stroke="#d6e2eb" stroke-width="2"/>
+<text x="180" y="43" font-family="Arial, sans-serif" font-size="27" fill="#17324d" text-anchor="middle" font-weight="bold">SAVE PAPER</text>
+<text x="153" y="87" font-family="Arial, sans-serif" font-size="26" fill="#17324d" text-anchor="middle" font-weight="bold">Front</text>
+<text x="275" y="87" font-family="Arial, sans-serif" font-size="26" fill="#17324d" text-anchor="middle" font-weight="bold">Back</text>
+<rect x="15" y="105" width="330" height="126" rx="12" fill="#f3f7fa" stroke="none" stroke-width="1"/>
+<text x="52" y="151" font-family="Arial, sans-serif" font-size="32" fill="#17324d" text-anchor="middle" font-weight="bold">A</text>
+<text x="52" y="192" font-family="Arial, sans-serif" font-size="26" fill="#425b70" text-anchor="middle" font-weight="normal">OLD</text>
+<rect x="110" y="115" width="85" height="103" rx="3" fill="#fff" stroke="#52758c" stroke-width="2"/>
+<line x1="122" y1="136" x2="181" y2="136" stroke="#17324d" stroke-width="3" stroke-linecap="round"/>
+<line x1="122" y1="151" x2="174" y2="151" stroke="#17324d" stroke-width="3" stroke-linecap="round"/>
+<line x1="122" y1="166" x2="181" y2="166" stroke="#17324d" stroke-width="3" stroke-linecap="round"/>
+<line x1="122" y1="181" x2="163" y2="181" stroke="#17324d" stroke-width="3" stroke-linecap="round"/>
+<line x1="122" y1="196" x2="178" y2="196" stroke="#17324d" stroke-width="3" stroke-linecap="round"/>
+<rect x="232" y="115" width="85" height="103" rx="3" fill="#fff" stroke="#52758c" stroke-width="2"/>
+<rect x="15" y="240" width="330" height="126" rx="12" fill="#f3f7fa" stroke="none" stroke-width="1"/>
+<text x="52" y="286" font-family="Arial, sans-serif" font-size="32" fill="#17324d" text-anchor="middle" font-weight="bold">B</text>
+<text x="52" y="327" font-family="Arial, sans-serif" font-size="26" fill="#425b70" text-anchor="middle" font-weight="normal">OLD</text>
+<rect x="110" y="250" width="85" height="103" rx="3" fill="#fff" stroke="#52758c" stroke-width="2"/>
+<line x1="122" y1="271" x2="181" y2="271" stroke="#17324d" stroke-width="3" stroke-linecap="round"/>
+<line x1="122" y1="286" x2="174" y2="286" stroke="#17324d" stroke-width="3" stroke-linecap="round"/>
+<line x1="122" y1="301" x2="181" y2="301" stroke="#17324d" stroke-width="3" stroke-linecap="round"/>
+<line x1="122" y1="316" x2="163" y2="316" stroke="#17324d" stroke-width="3" stroke-linecap="round"/>
+<line x1="122" y1="331" x2="178" y2="331" stroke="#17324d" stroke-width="3" stroke-linecap="round"/>
+<rect x="232" y="250" width="85" height="103" rx="3" fill="#fff" stroke="#52758c" stroke-width="2"/>
+<line x1="244" y1="271" x2="303" y2="271" stroke="#17324d" stroke-width="3" stroke-linecap="round"/>
+<line x1="244" y1="286" x2="296" y2="286" stroke="#17324d" stroke-width="3" stroke-linecap="round"/>
+<line x1="244" y1="301" x2="303" y2="301" stroke="#17324d" stroke-width="3" stroke-linecap="round"/>
+<line x1="244" y1="316" x2="285" y2="316" stroke="#17324d" stroke-width="3" stroke-linecap="round"/>
+<line x1="244" y1="331" x2="300" y2="331" stroke="#17324d" stroke-width="3" stroke-linecap="round"/>
+<rect x="15" y="375" width="330" height="126" rx="12" fill="#f3f7fa" stroke="none" stroke-width="1"/>
+<text x="52" y="421" font-family="Arial, sans-serif" font-size="32" fill="#17324d" text-anchor="middle" font-weight="bold">C</text>
+<text x="52" y="462" font-family="Arial, sans-serif" font-size="26" fill="#425b70" text-anchor="middle" font-weight="normal">OLD</text>
+<rect x="110" y="385" width="85" height="103" rx="3" fill="#fff" stroke="#52758c" stroke-width="2"/>
+<rect x="232" y="385" width="85" height="103" rx="3" fill="#fff" stroke="#52758c" stroke-width="2"/>
+<line x1="244" y1="406" x2="303" y2="406" stroke="#17324d" stroke-width="3" stroke-linecap="round"/>
+<line x1="244" y1="421" x2="296" y2="421" stroke="#17324d" stroke-width="3" stroke-linecap="round"/>
+<line x1="244" y1="436" x2="303" y2="436" stroke="#17324d" stroke-width="3" stroke-linecap="round"/>
+<line x1="244" y1="451" x2="285" y2="451" stroke="#17324d" stroke-width="3" stroke-linecap="round"/>
+<line x1="244" y1="466" x2="300" y2="466" stroke="#17324d" stroke-width="3" stroke-linecap="round"/>
+<rect x="15" y="510" width="330" height="126" rx="12" fill="#fff8e5" stroke="none" stroke-width="1"/>
+<text x="52" y="556" font-family="Arial, sans-serif" font-size="32" fill="#17324d" text-anchor="middle" font-weight="bold">D</text>
+<text x="52" y="597" font-family="Arial, sans-serif" font-size="26" fill="#425b70" text-anchor="middle" font-weight="normal">NEW</text>
+<rect x="110" y="520" width="85" height="103" rx="3" fill="#fff" stroke="#52758c" stroke-width="2"/>
+<rect x="232" y="520" width="85" height="103" rx="3" fill="#fff" stroke="#52758c" stroke-width="2"/>
+</svg>

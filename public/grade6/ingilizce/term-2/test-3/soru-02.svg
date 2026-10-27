@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="720" viewBox="0 0 360 720" role="img">
+<title>Holiday activity photos with letter badges</title>
+<desc>Holiday activity photos with letter badges</desc>
+<rect x="1" y="1" width="358" height="718" rx="18" fill="#fff" stroke="#d6e2eb" stroke-width="2"/>
+<text x="180" y="43" font-family="Arial, sans-serif" font-size="27" fill="#17324d" text-anchor="middle" font-weight="bold">HOLIDAY PHOTOS</text>
+<rect x="18" y="68" width="324" height="200" rx="12" fill="#f3f8fb" stroke="#c6d9e4" stroke-width="2"/>
+<text x="180" y="102" font-family="Arial, sans-serif" font-size="27" fill="#17324d" text-anchor="middle" font-weight="bold">MUSEUM</text>
+<rect x="18" y="280" width="324" height="200" rx="12" fill="#f3f8fb" stroke="#c6d9e4" stroke-width="2"/>
+<text x="180" y="314" font-family="Arial, sans-serif" font-size="27" fill="#17324d" text-anchor="middle" font-weight="bold">SWIMMING</text>
+<rect x="18" y="492" width="324" height="200" rx="12" fill="#f3f8fb" stroke="#c6d9e4" stroke-width="2"/>
+<text x="180" y="526" font-family="Arial, sans-serif" font-size="27" fill="#17324d" text-anchor="middle" font-weight="bold">CAMPING</text>
+<polygon points="65,145 116,119 167,145" fill="#c5d5df" stroke="#17324d" stroke-width="2"/>
+<rect x="71" y="146" width="90" height="69" rx="0" fill="#e6edf1" stroke="#17324d" stroke-width="2"/>
+<rect x="80" y="150" width="14" height="62" rx="0" fill="#fff" stroke="#7892a5" stroke-width="2"/>
+<rect x="108" y="150" width="14" height="62" rx="0" fill="#fff" stroke="#7892a5" stroke-width="2"/>
+<rect x="136" y="150" width="14" height="62" rx="0" fill="#fff" stroke="#7892a5" stroke-width="2"/>
+<rect x="63" y="213" width="108" height="9" rx="0" fill="#9fb5c4" stroke="none" stroke-width="1"/>
+<circle cx="218" cy="172" r="13" fill="#e9b78e" stroke="#17324d" stroke-width="2"/>
+<path d="M199 218 L201 192 Q218 181 235 192 L237 218 Z" fill="#e8b53b" stroke="#17324d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="209" y1="219" x2="207" y2="235" stroke="#17324d" stroke-width="4" stroke-linecap="round"/>
+<line x1="227" y1="219" x2="229" y2="235" stroke="#17324d" stroke-width="4" stroke-linecap="round"/>
+<circle cx="218" cy="138" r="19" fill="#17324d" stroke="none" stroke-width="1"/>
+<text x="218" y="147" font-family="Arial, sans-serif" font-size="27" fill="#fff" text-anchor="middle" font-weight="bold">A</text>
+<circle cx="292" cy="172" r="13" fill="#e9b78e" stroke="#17324d" stroke-width="2"/>
+<path d="M273 218 L275 192 Q292 181 309 192 L311 218 Z" fill="#d94741" stroke="#17324d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="283" y1="219" x2="281" y2="235" stroke="#17324d" stroke-width="4" stroke-linecap="round"/>
+<line x1="301" y1="219" x2="303" y2="235" stroke="#17324d" stroke-width="4" stroke-linecap="round"/>
+<circle cx="292" cy="138" r="19" fill="#17324d" stroke="none" stroke-width="1"/>
+<text x="292" y="147" font-family="Arial, sans-serif" font-size="27" fill="#fff" text-anchor="middle" font-weight="bold">C</text>
+<line x1="42" y1="241" x2="321" y2="241" stroke="#b8cad5" stroke-width="2" stroke-linecap="round"/>
+<circle cx="115" cy="387" r="13" fill="#e9b78e" stroke="#17324d" stroke-width="2"/>
+<path d="M96 433 L98 407 Q115 396 132 407 L134 433 Z" fill="#e8b53b" stroke="#17324d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="115" cy="353" r="19" fill="#17324d" stroke="none" stroke-width="1"/>
+<text x="115" y="362" font-family="Arial, sans-serif" font-size="27" fill="#fff" text-anchor="middle" font-weight="bold">A</text>
+<circle cx="245" cy="387" r="13" fill="#e9b78e" stroke="#17324d" stroke-width="2"/>
+<path d="M226 433 L228 407 Q245 396 262 407 L264 433 Z" fill="#127f77" stroke="#17324d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="245" cy="353" r="19" fill="#17324d" stroke="none" stroke-width="1"/>
+<text x="245" y="362" font-family="Arial, sans-serif" font-size="27" fill="#fff" text-anchor="middle" font-weight="bold">B</text>
+<rect x="35" y="424" width="290" height="41" rx="5" fill="#b7e3f1" stroke="none" stroke-width="1"/>
+<path d="M40 432 Q58 424 76 432 T112 432 T148 432 T184 432 T220 432 T256 432 T292 432 T326 432" fill="none" stroke="#1976b8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M40 448 Q58 440 76 448 T112 448 T148 448 T184 448 T220 448 T256 448 T292 448 T326 448" fill="none" stroke="#1976b8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M32 660 Q90 642 155 658 T329 653" fill="none" stroke="#7caa69" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="43,644 92,557 141,644" fill="#e8b53b" stroke="#17324d" stroke-width="3"/>
+<polygon points="76,644 93,593 111,644" fill="#8c6b35" stroke="#17324d" stroke-width="2"/>
+<circle cx="218" cy="598" r="13" fill="#e9b78e" stroke="#17324d" stroke-width="2"/>
+<path d="M199 644 L201 618 Q218 607 235 618 L237 644 Z" fill="#127f77" stroke="#17324d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="209" y1="645" x2="207" y2="661" stroke="#17324d" stroke-width="4" stroke-linecap="round"/>
+<line x1="227" y1="645" x2="229" y2="661" stroke="#17324d" stroke-width="4" stroke-linecap="round"/>
+<circle cx="218" cy="564" r="19" fill="#17324d" stroke="none" stroke-width="1"/>
+<text x="218" y="573" font-family="Arial, sans-serif" font-size="27" fill="#fff" text-anchor="middle" font-weight="bold">B</text>
+<circle cx="292" cy="598" r="13" fill="#e9b78e" stroke="#17324d" stroke-width="2"/>
+<path d="M273 644 L275 618 Q292 607 309 618 L311 644 Z" fill="#1976b8" stroke="#17324d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="283" y1="645" x2="281" y2="661" stroke="#17324d" stroke-width="4" stroke-linecap="round"/>
+<line x1="301" y1="645" x2="303" y2="661" stroke="#17324d" stroke-width="4" stroke-linecap="round"/>
+<circle cx="292" cy="564" r="19" fill="#17324d" stroke="none" stroke-width="1"/>
+<text x="292" y="573" font-family="Arial, sans-serif" font-size="27" fill="#fff" text-anchor="middle" font-weight="bold">D</text>
+</svg>
