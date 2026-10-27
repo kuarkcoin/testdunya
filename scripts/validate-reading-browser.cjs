@@ -253,9 +253,27 @@ async function validateReadingBrowser() {
 
     fs.mkdirSync(path.join(ROOT, 'artifacts'), { recursive: true });
     await page.getByTestId('stage-story').click();
+    await expect(page.getByTestId('stage-story')).toHaveAttribute('aria-pressed', 'true');
     await page.screenshot({ path: path.join(ROOT, 'artifacts/reading-desktop.png'), fullPage: true });
+    await page.evaluate(() => document.documentElement.classList.add('dark'));
+    const contrast = await page.getByText('Dinle, dokun, birlikte oku.', { exact: true }).evaluate((element) => {
+      const rgb = (value) => value.match(/[\d.]+/g).slice(0, 3).map(Number);
+      const luminance = (color) => rgb(color).map((value) => {
+        const channel = value / 255;
+        return channel <= 0.04045 ? channel / 12.92 : Math.pow((channel + 0.055) / 1.055, 2.4);
+      }).reduce((sum, channel, index) => sum + channel * [0.2126, 0.7152, 0.0722][index], 0);
+      let background = element;
+      while (background && ['rgba(0, 0, 0, 0)', 'transparent'].includes(getComputedStyle(background).backgroundColor)) background = background.parentElement;
+      const foreground = luminance(getComputedStyle(element).color);
+      const backdrop = luminance(getComputedStyle(background || document.body).backgroundColor);
+      return (Math.max(foreground, backdrop) + 0.05) / (Math.min(foreground, backdrop) + 0.05);
+    });
+    assert(contrast >= 4.5, 'Instructions on light reading cards retain readable contrast in dark mode');
+    await page.screenshot({ path: path.join(ROOT, 'artifacts/reading-dark.png'), fullPage: true });
+    await page.evaluate(() => document.documentElement.classList.remove('dark'));
     await page.setViewportSize({ width: 375, height: 812 });
     await page.getByTestId('stage-letter').click();
+    await expect(page.getByTestId('stage-letter')).toHaveAttribute('aria-pressed', 'true');
     assert(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1), 'No horizontal mobile overflow');
     await page.screenshot({ path: path.join(ROOT, 'artifacts/reading-mobile.png'), fullPage: true });
     await page.setViewportSize({ width: 320, height: 812 });
@@ -263,7 +281,7 @@ async function validateReadingBrowser() {
       await page.getByTestId('stage-' + stage).click();
       assert(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1), 'No overflow in mobile ' + stage);
     }
-    checks.push('Desktop screenshots and all four mobile stages without horizontal overflow');
+    checks.push('Desktop and dark-mode screenshots, readable instruction contrast and all four mobile stages without horizontal overflow');
 
     const fallback = await browser.newContext({ viewport: { width: 375, height: 812 }, reducedMotion: 'reduce' });
     await fallback.route('**/*', (route) => new URL(route.request().url()).origin === origin ? route.continue() : route.abort());

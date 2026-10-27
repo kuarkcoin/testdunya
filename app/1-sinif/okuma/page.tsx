@@ -19,7 +19,7 @@ export default function ReadingPage() {
           isFamilyFriendly: true,
         },
       ]) }} />
-      <nav aria-label="Sayfa yolu" className="mb-5 flex flex-wrap gap-2 text-sm font-semibold text-slate-600 dark:text-slate-300">
+      <nav aria-label="Sayfa yolu" className="mb-5 flex flex-wrap gap-2 text-sm font-semibold text-slate-700 dark:text-slate-300">
         <Link href="/" className="underline underline-offset-4">Ana Sayfa</Link><span aria-hidden="true">/</span>
         <Link href="/1-sinif" className="underline underline-offset-4">1. Sınıf</Link><span aria-hidden="true">/</span>
         <span aria-current="page">Okuma Bahçesi</span>

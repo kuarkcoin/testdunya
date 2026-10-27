@@ -286,7 +286,7 @@ export default function RecordingPractice({
               setError('Kaydın bu tarayıcıda çalınamadı. İstersen yeniden kaydetmeyi deneyebilirsin.');
             }}
           />
-          <p className="mt-3 text-sm font-medium text-slate-600">Dinledikten sonra birlikte konuşun: Hangi heceyi daha rahat okudun? Bir kez daha denemek ister misin?</p>
+          <p className="mt-3 text-sm font-medium text-slate-700">Dinledikten sonra birlikte konuşun: Hangi heceyi daha rahat okudun? Bir kez daha denemek ister misin?</p>
         </div>
       )}
       <details className="mt-4 rounded-2xl border border-violet-200 bg-white/70 p-3 text-sm text-slate-700">

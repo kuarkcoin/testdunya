@@ -169,7 +169,7 @@ export default function ReadingGarden() {
   function listenButton(text: string, label: string, className = '') {
     return (
       <button type="button" onClick={() => speech.speak(text)} disabled={audioDisabled}
-        className={'inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl border-2 border-emerald-200 bg-white px-4 py-3 text-base font-extrabold text-emerald-900 transition-colors hover:bg-emerald-50 disabled:cursor-not-allowed disabled:opacity-50' + FOCUS + ' ' + className}>
+        className={'inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl border-2 border-emerald-200 bg-white px-4 py-3 text-base font-extrabold text-emerald-900 transition-colors motion-reduce:transition-none hover:bg-emerald-50 disabled:cursor-not-allowed disabled:opacity-50' + FOCUS + ' ' + className}>
         <Volume2 size={21} aria-hidden="true" />{label}
       </button>
     );
@@ -183,7 +183,7 @@ export default function ReadingGarden() {
             <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-800"><Flower2 size={29} aria-hidden="true" /></div>
             <div>
               <h2 id="garden-progress" className="text-lg font-black sm:text-xl">Küçük adımlar, yeni kelimeler</h2>
-              <p className="mt-1 text-sm font-medium text-slate-600">Dinle, dokun, birlikte oku.</p>
+              <p className="mt-1 text-sm font-medium text-slate-700">Dinle, dokun, birlikte oku.</p>
             </div>
           </div>
           <div data-testid="progress-count" data-completed={completed.length} className="rounded-2xl bg-amber-50 px-4 py-2 text-amber-950">
@@ -199,7 +199,7 @@ export default function ReadingGarden() {
       <section aria-labelledby="group-heading">
         <div className="mb-3 flex flex-wrap items-center justify-between gap-2 px-1">
           <h2 id="group-heading" className="text-lg font-black dark:text-slate-100">Harf grubunu seç</h2>
-          <span className="text-sm font-semibold text-slate-600 dark:text-slate-300">İlk kez başlıyorsan 1. grup</span>
+          <span className="text-sm font-semibold text-slate-700 dark:text-slate-300">İlk kez başlıyorsan 1. grup</span>
         </div>
         <div className="grid grid-cols-2 gap-2 sm:grid-cols-5 sm:gap-3">
           {READING_GROUPS.map((item, index) => {
@@ -207,10 +207,10 @@ export default function ReadingGarden() {
             const active = groupIndex === index;
             return (
               <button key={item.id} type="button" data-testid={'group-' + item.id} aria-pressed={active} onClick={() => chooseGroup(index)}
-                className={'min-h-24 rounded-2xl border-2 p-3 text-left transition-colors ' + (active ? 'border-emerald-700 bg-emerald-700 text-white shadow-sm' : 'border-emerald-100 bg-white text-slate-800 hover:border-emerald-400') + FOCUS}>
+                className={'min-h-24 rounded-2xl border-2 p-3 text-left transition-colors motion-reduce:transition-none ' + (active ? 'border-emerald-700 bg-emerald-700 text-white shadow-sm' : 'border-emerald-100 bg-white text-slate-800 hover:border-emerald-400') + FOCUS}>
                 <span className="flex items-center justify-between text-sm font-black">{index + 1}. grup{active && <Leaf size={17} aria-hidden="true" />}</span>
                 <span className="mt-2 block break-words text-base font-black tracking-wide">{item.letters.map((value) => value.toLocaleUpperCase('tr-TR')).join(' ')}</span>
-                <span className={'mt-1 block text-xs font-medium ' + (active ? 'text-emerald-50' : 'text-slate-500')}>{progress.done} / {progress.total} alıştırma</span>
+                <span className={'mt-1 block text-xs font-medium ' + (active ? 'text-emerald-50' : 'text-slate-700')}>{progress.done} / {progress.total} alıştırma</span>
               </button>
             );
           })}
@@ -223,7 +223,7 @@ export default function ReadingGarden() {
             const Icon = item.icon;
             return (
               <button key={item.id} type="button" data-testid={'stage-' + item.id} aria-pressed={stage === item.id} onClick={() => chooseStage(item.id)}
-                className={'flex min-h-20 flex-col items-center justify-center gap-1 rounded-xl px-1 py-2 font-black transition-colors ' + (stage === item.id ? 'bg-amber-300 text-amber-950 shadow-sm' : 'text-slate-600 hover:bg-white') + FOCUS}>
+                className={'flex min-h-20 flex-col items-center justify-center gap-1 rounded-xl px-1 py-2 font-black transition-colors motion-reduce:transition-none ' + (stage === item.id ? 'bg-amber-300 text-amber-950 shadow-sm' : 'text-slate-700 hover:bg-white') + FOCUS}>
                 <Icon size={21} aria-hidden="true" /><span className="text-sm sm:text-base">{index + 1}. {item.label}</span>
               </button>
             );
@@ -232,7 +232,7 @@ export default function ReadingGarden() {
 
         <div className="mt-6 flex flex-wrap items-center justify-between gap-2 px-1">
           <h2 className="text-lg font-black text-emerald-900 sm:text-xl">{currentStage.description}</h2>
-          <span className="rounded-full bg-slate-100 px-3 py-1 text-sm font-bold text-slate-600">{currentIndex + 1} / {items.length}</span>
+          <span className="rounded-full bg-slate-100 px-3 py-1 text-sm font-bold text-slate-700">{currentIndex + 1} / {items.length}</span>
         </div>
         <div className="mt-3">{listenButton(currentStage.instruction, 'Ne yapacağım? Dinle', 'w-full sm:w-auto')}</div>
 
@@ -241,7 +241,7 @@ export default function ReadingGarden() {
             <div className="flex flex-wrap gap-2" role="group" aria-label="Bu gruptaki harfler">
               {group.letters.map((item, index) => (
                 <button key={item} type="button" aria-label={item.toLocaleUpperCase('tr-TR') + ' harfi'} aria-pressed={currentIndex === index} onClick={() => chooseExercise(index)}
-                  className={'flex min-h-12 min-w-12 items-center justify-center rounded-xl border-2 px-3 text-xl font-black ' + (currentIndex === index ? 'border-emerald-600 bg-emerald-50 text-emerald-900' : 'border-slate-200 text-slate-600 hover:border-emerald-300') + FOCUS}>
+                  className={'flex min-h-12 min-w-12 items-center justify-center rounded-xl border-2 px-3 text-xl font-black ' + (currentIndex === index ? 'border-emerald-600 bg-emerald-50 text-emerald-900' : 'border-slate-200 text-slate-700 hover:border-emerald-300') + FOCUS}>
                   {item}{completedSet.has(getExerciseId('letter', group.id, item)) && <Check size={13} className="ml-1 text-emerald-700" aria-hidden="true" />}
                 </button>
               ))}
@@ -251,7 +251,7 @@ export default function ReadingGarden() {
                 <div className="flex items-baseline justify-center gap-4 text-[5.5rem] font-bold leading-none tracking-normal text-emerald-800 sm:text-[7rem]" style={{ fontFamily: 'Verdana, Geneva, sans-serif' }}>
                   <span>{letter.toLocaleUpperCase('tr-TR')}</span><span>{letter}</span>
                 </div>
-                <p className="mt-4 text-base font-semibold text-slate-600">Büyük harf · küçük harf</p>
+                <p className="mt-4 text-base font-semibold text-slate-700">Büyük harf · küçük harf</p>
               </div>
               <div className="flex flex-col items-center justify-center gap-3 text-center">
                 <span aria-hidden="true" className="text-5xl">{detail.emoji}</span>
@@ -268,7 +268,7 @@ export default function ReadingGarden() {
               <div className="grid grid-cols-3 gap-3">
                 {letterOptions.map((option, index) => (
                   <button key={option} type="button" data-testid="answer-option" data-value={option} onClick={() => answerLetter(option, index)} disabled={feedback === 'success'}
-                    className={'min-h-20 rounded-2xl border-2 p-3 text-5xl font-bold transition-colors disabled:cursor-default ' + (chosenAnswer === index ? feedback === 'success' ? 'border-emerald-600 bg-emerald-100 text-emerald-900' : 'border-amber-400 bg-amber-50 text-amber-950' : 'border-slate-200 bg-white text-slate-800 hover:border-emerald-400') + FOCUS}>
+                    className={'min-h-20 rounded-2xl border-2 p-3 text-5xl font-bold transition-colors motion-reduce:transition-none disabled:cursor-default ' + (chosenAnswer === index ? feedback === 'success' ? 'border-emerald-600 bg-emerald-100 text-emerald-900' : 'border-amber-400 bg-amber-50 text-amber-950' : 'border-slate-200 bg-white text-slate-800 hover:border-emerald-400') + FOCUS}>
                     {option}
                   </button>
                 ))}
@@ -297,7 +297,7 @@ export default function ReadingGarden() {
               <div className="mt-5 flex flex-wrap justify-center gap-3">
                 {tiles.map((tile) => (
                   <button key={tile.index} type="button" data-testid="tile" data-index={tile.index} data-value={tile.text} aria-label={tile.text + ' parçası'} aria-pressed={picked.includes(tile.index)} onClick={() => chooseTile(tile.index)} disabled={picked.includes(tile.index) || feedback === 'success'}
-                    className={'min-h-16 min-w-16 rounded-2xl border-2 border-amber-300 bg-amber-100 px-5 py-3 text-3xl font-black text-amber-950 shadow-sm transition-colors hover:bg-amber-200 disabled:border-slate-100 disabled:bg-slate-100 disabled:text-slate-400 disabled:shadow-none' + FOCUS}>
+                    className={'min-h-16 min-w-16 rounded-2xl border-2 border-amber-300 bg-amber-100 px-5 py-3 text-3xl font-black text-amber-950 shadow-sm transition-colors motion-reduce:transition-none hover:bg-amber-200 disabled:border-slate-100 disabled:bg-slate-100 disabled:text-slate-400 disabled:shadow-none' + FOCUS}>
                     {tile.text}
                   </button>
                 ))}
@@ -306,7 +306,7 @@ export default function ReadingGarden() {
                 <button type="button" data-testid="undo-tile" onClick={() => { setPicked((previous) => previous.slice(0, -1)); setFeedback(null); }} disabled={!picked.length || feedback === 'success'}
                   className={'inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border-2 border-slate-200 bg-white px-4 py-3 font-bold text-slate-700 disabled:opacity-40' + FOCUS}><RotateCcw size={18} aria-hidden="true" />Geri al</button>
                 <button type="button" data-testid="check-answer" onClick={checkParts} disabled={picked.length !== parts.length || feedback === 'success'}
-                  className={'inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-emerald-700 px-5 py-3 font-black text-white hover:bg-emerald-800 disabled:bg-slate-300 disabled:text-slate-600' + FOCUS}><Check size={20} aria-hidden="true" />Kontrol et</button>
+                  className={'inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-emerald-700 px-5 py-3 font-black text-white hover:bg-emerald-800 disabled:bg-slate-300 disabled:text-slate-700' + FOCUS}><Check size={20} aria-hidden="true" />Kontrol et</button>
               </div>
             </div>
           </div>
@@ -327,14 +327,14 @@ export default function ReadingGarden() {
                   <p key={sentenceIndex} className="break-words text-2xl font-bold leading-[2] text-slate-800 sm:text-3xl">
                     {sentence.split(/([A-Za-zÇĞİÖŞÜçğıöşü]+)/g).filter(Boolean).map((token, tokenIndex) => WORD_TOKEN.test(token) ? (
                       <button key={tokenIndex} type="button" disabled={audioDisabled} onClick={() => speech.speak(token)} aria-label={token + ' kelimesini dinle'}
-                        className={'rounded-lg px-1 text-left align-baseline decoration-emerald-300 decoration-2 underline-offset-8 hover:bg-emerald-50 hover:underline disabled:cursor-default' + FOCUS}>
+                        className={'rounded-lg text-left align-baseline decoration-emerald-300 decoration-2 underline-offset-8 hover:bg-emerald-50 hover:underline disabled:cursor-default' + FOCUS}>
                         {showSyllables ? splitTurkishSyllables(token).join('·') : token}
                       </button>
                     ) : <span key={tokenIndex}>{token}</span>)}
                   </p>
                 ))}
               </div>
-              <p className="my-3 text-sm font-semibold text-slate-600">Bir kelimeye dokunarak onu dinleyebilirsin.</p>
+              <p className="my-3 text-sm font-semibold text-slate-700">Bir kelimeye dokunarak onu dinleyebilirsin.</p>
               {listenButton(story.sentences.join(' '), 'Metni dinle', 'w-full sm:w-auto')}
             </div>
             <div className="rounded-2xl border-2 border-emerald-100 p-4 sm:p-5">
@@ -345,7 +345,7 @@ export default function ReadingGarden() {
               <div className="grid gap-3 sm:grid-cols-3">
                 {story.choices.map((choice, index) => (
                   <button key={index} type="button" data-testid="answer-option" data-value={choice} onClick={() => answerStory(index)} disabled={feedback === 'success'}
-                    className={'min-h-16 break-words rounded-2xl border-2 px-4 py-3 text-left text-xl font-black transition-colors disabled:cursor-default ' + (chosenAnswer === index ? feedback === 'success' ? 'border-emerald-600 bg-emerald-100 text-emerald-900' : 'border-amber-400 bg-amber-50 text-amber-950' : 'border-slate-200 bg-white text-slate-800 hover:border-emerald-400') + FOCUS}>
+                    className={'min-h-16 break-words rounded-2xl border-2 px-4 py-3 text-left text-xl font-black transition-colors motion-reduce:transition-none disabled:cursor-default ' + (chosenAnswer === index ? feedback === 'success' ? 'border-emerald-600 bg-emerald-100 text-emerald-900' : 'border-amber-400 bg-amber-50 text-amber-950' : 'border-slate-200 bg-white text-slate-800 hover:border-emerald-400') + FOCUS}>
                     {choice}
                   </button>
                 ))}
@@ -360,20 +360,20 @@ export default function ReadingGarden() {
           ) : feedback === 'try' ? (
             <p className="min-h-14 rounded-2xl bg-amber-50 px-4 py-3 font-bold text-amber-950">{stage === 'letter' || stage === 'story' ? 'Birlikte bir daha bakalım. Başka bir seçenek deneyebilirsin.' : 'Parçaları birlikte yeniden kuralım. “Geri al” düğmesini kullanabilirsin.'}</p>
           ) : (
-            <p className="flex min-h-14 items-center gap-2 px-1 text-sm font-semibold text-slate-500"><Ear size={19} className="shrink-0" aria-hidden="true" />Acele etmene gerek yok. İstediğin kadar tekrar edebilirsin.</p>
+            <p className="flex min-h-14 items-center gap-2 px-1 text-sm font-semibold text-slate-700"><Ear size={19} className="shrink-0" aria-hidden="true" />Acele etmene gerek yok. İstediğin kadar tekrar edebilirsin.</p>
           )}
         </div>
 
         <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-slate-100 pt-4">
           {speech.speaking ? (
             <button type="button" onClick={speech.cancel} className={'inline-flex min-h-12 items-center gap-2 rounded-xl border-2 border-slate-200 px-4 py-3 font-bold text-slate-700' + FOCUS}><Square size={17} aria-hidden="true" />Sesi durdur</button>
-          ) : <span className="text-sm font-semibold text-slate-500">{completedSet.has(exerciseId) ? 'Bu alıştırma tamamlandı.' : 'Her deneme yeni bir adım.'}</span>}
+          ) : <span className="text-sm font-semibold text-slate-700">{completedSet.has(exerciseId) ? 'Bu alıştırma tamamlandı.' : 'Her deneme yeni bir adım.'}</span>}
           <button type="button" data-testid="next-exercise" onClick={nextExercise}
             className={'inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl bg-emerald-700 px-5 py-3 font-black text-white hover:bg-emerald-800' + FOCUS}>
             {nextLabel}<ArrowRight size={20} aria-hidden="true" />
           </button>
         </div>
-        {speech.status && <p className="mt-3 rounded-xl bg-slate-50 p-3 text-sm leading-relaxed text-slate-600" role="status">{speech.status}</p>}
+        {speech.status && <p className="mt-3 rounded-xl bg-slate-50 p-3 text-sm leading-relaxed text-slate-700" role="status">{speech.status}</p>}
       </div>
 
       {(stage === 'word' || stage === 'story') && (
@@ -398,7 +398,7 @@ export default function ReadingGarden() {
               </div>
             </div>
           ) : (
-            <button type="button" data-testid="reset-progress" onClick={() => setConfirmReset(true)} className={'inline-flex min-h-12 items-center gap-2 rounded-xl border-2 border-slate-200 px-4 py-3 font-bold text-slate-600' + FOCUS}><RotateCcw size={17} aria-hidden="true" />İlerlemeyi sıfırla</button>
+            <button type="button" data-testid="reset-progress" onClick={() => setConfirmReset(true)} className={'inline-flex min-h-12 items-center gap-2 rounded-xl border-2 border-slate-200 px-4 py-3 font-bold text-slate-700' + FOCUS}><RotateCcw size={17} aria-hidden="true" />İlerlemeyi sıfırla</button>
           )}
         </div>
       </details>

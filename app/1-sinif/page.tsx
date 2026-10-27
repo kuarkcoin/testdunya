@@ -12,7 +12,7 @@ export default function Grade1Page() {
         breadcrumbJsonLd([{ name: 'Ana Sayfa', path: '/' }, { name: '1. Sınıf', path: '/1-sinif' }]),
         { '@context': 'https://schema.org', '@type': 'CollectionPage', name: '1. Sınıf Okuma Çalışmaları', url: absoluteUrl('/1-sinif'), inLanguage: 'tr', description: 'Harflerden hecelere, kelimelere ve kısa metinlere ilerleyen sesli okuma alıştırmaları.' },
       ]) }} />
-      <nav aria-label="Sayfa yolu" className="flex gap-2 text-sm font-semibold text-slate-600 dark:text-slate-300">
+      <nav aria-label="Sayfa yolu" className="flex gap-2 text-sm font-semibold text-slate-700 dark:text-slate-300">
         <Link href="/" className="underline underline-offset-4">Ana Sayfa</Link>
         <span aria-hidden="true">/</span><span aria-current="page">1. Sınıf</span>
       </nav>
@@ -25,7 +25,7 @@ export default function Grade1Page() {
           <Link href="/1-sinif/okuma" className="mt-7 inline-flex min-h-14 items-center rounded-2xl bg-emerald-800 px-7 py-4 text-lg font-bold text-white shadow-sm transition hover:bg-emerald-900 focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-emerald-600">
             Okumaya başla <span aria-hidden="true" className="ml-3">→</span>
           </Link>
-          <p className="mt-4 text-sm text-slate-600">Sesli örnekler • İsteğe bağlı ses kaydı • Süre sınırı yok</p>
+          <p className="mt-4 text-sm text-slate-700">Sesli örnekler • İsteğe bağlı ses kaydı • Süre sınırı yok</p>
         </div>
       </header>
       <section aria-labelledby="reading-steps-title">
@@ -39,13 +39,13 @@ export default function Grade1Page() {
           ].map((step, index) => <li key={step.name} className="rounded-3xl border border-slate-200 bg-white p-6">
             <span aria-hidden="true" className="flex h-14 items-center text-3xl font-black text-emerald-800">{step.icon}</span>
             <h3 className="mt-3 text-lg font-bold">{index + 1}. {step.name}</h3>
-            <p className="mt-2 leading-relaxed text-slate-600">{step.text}</p>
+            <p className="mt-2 leading-relaxed text-slate-700">{step.text}</p>
           </li>)}
         </ol>
       </section>
       <section className="rounded-3xl border border-slate-200 bg-white p-6 sm:p-8" aria-labelledby="letter-groups-title">
         <h2 id="letter-groups-title" className="text-2xl font-black">Harflerden kısa metinlere</h2>
-        <p className="mt-3 text-slate-600">Önceki gruplardaki harfler, sonraki grubun kelime ve metinlerinde tekrar karşına çıkar. Çocuğun çalıştığı grubu bir yetişkinle seçebilirsin.</p>
+        <p className="mt-3 text-slate-700">Önceki gruplardaki harfler, sonraki grubun kelime ve metinlerinde tekrar karşına çıkar. Çocuğun çalıştığı grubu bir yetişkinle seçebilirsin.</p>
         <ol className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
           {READING_GROUPS.map((group, index) => <li key={group.id} className="rounded-2xl bg-emerald-50 p-4">
             <p className="text-sm font-bold text-emerald-800">{index + 1}. harf grubu</p>
