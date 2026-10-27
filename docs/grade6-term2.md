@@ -205,3 +205,26 @@ Kimlikler `f6-2-t4-01`–`f6-2-t4-10`; rota `/6-sinif/fen/2-donem-test-4`; görs
 Cevap anahtarı: **A, C, B, D, B, A, C, D, B, A**. Önceki 180 Fen Bilimleri sorusu senaryo ve çözüm mekanizmaları yönünden incelenir. Zorluk; birden çok ölçüyü birleştirme, gözlemden tersine çıkarım, modelin koşullarını koruma ve karşıt görünen sonuçları açıklamadan gelir; soruların tümü eşit güçlükte değildir. Reostanın birim dirençleri ve toplama kuralı, deneydeki sabit erime hızı, iletkenlik modelinin ideal koşulları soruda verilir; üst sınıf formülleri gerekmez. Beslenme ağı kesin nüfus tahmini değil sınırlı model beklentisi olarak yorumlanır.
 
 Önceki **69 test / 690 soru / 391 SVG** korunur; eski soru kayıtları ve SVG dosyaları byte düzeyinde karşılaştırılır. Yeni toplam **70 test / 700 soru / 398 SVG**; Fen Bilimleri toplamı **19 test / 190 soru**, ikinci dönem Fen bölümü **4 test / 40 soru**. Veri, TypeScript, tam derleme, SEO ve üretilmiş rota kontrolleri uygulanır. Native SVG incelemesi 360 px ve 238 px genişliklerinde yapılır. Tarayıcı etkileşim testi önceki erişim reddi nedeniyle yapılmamıştır; yeniden denenmez. Production aktarımı bu içerik eklemesinin parçası değildir.
+
+## Fen Bilimleri — 2. dönem Test 5 (zor)
+
+Kullanıcının sağladığı aynı 17 sayfalık `fen6.pdf` içindeki ikinci dönem birinci ve ikinci yazılı öğrenme çıktıları esas alınır: kazanımlar s.2–3, senaryolar s.4–17. **10 yeni soru: 7 anlamlı bilimsel SVG + 3 metin**. Özgün çoktan seçmeli alıştırmalardır; resmî sınav kopyası değildir, açık uçlu/kısa cevaplı sınavın yerine geçmez ve bütün dönem kazanımlarını eksiksiz ölçme iddiası taşımaz. Kaynak dışındaki tutulmalar, kuvvet ve üreme konuları eklenmez.
+
+Kimlikler `f6-2-t5-01`–`f6-2-t5-10`; rota `/6-sinif/fen/2-donem-test-5`; görseller `public/grade6/fen/term-2/test-5/`. Yedi pasif SVG 360 px genişliğindedir; yazılar en az 26 px, kayıtlı yükseklikler gerçek SVG boyutlarıyla aynıdır. Şekiller çözüm için gerekli renk yerleşimini, başlangıç hacmini, batma sırasını, temas ve bağlantı yollarını, ölçüm sonuçlarını veya koridorları taşır. Ortak soru arayüzü ve büyütme desteği korunur; Fen bölümünün test ve soru sayıları gerçek kayıtlardan hesaplanır.
+
+| Soru | Yeni akıl yürütme mekanizması | Kaynak eşlemesi |
+| --- | --- | --- |
+| 1 | Renkli mozaikte tek kareyi değiştirerek iki aydınlatmadaki görünen kare sayılarını eşitleme | FB.6.4.3.3 |
+| 2 | Kapalı gazın verilen genleşme modelinde sıcaklık değişimini tersine izleme; kütleyi hacimden ayırma | FB.6.5.1.1 |
+| 3 | Yüzer aracın batma sırasından yoğunluk aralığı çıkarma; katının durumunun kesinleşmediğini fark etme | FB.6.5.3.1–2 |
+| 4 | Aynı katmanlı cisimde farklı temas doğrultularının kesintisiz iletken yol oluşturup oluşturmadığını belirleme | FB.6.6.1.1 |
+| 5 | Reostadaki tek kopukluğu kademeli gözlemlerle bulma; açık devreyi direnç artışından ayırma | FB.6.6.2.1–2 |
+| 6 | Seyrek sıcaklık kayıtlarının erime bölgesini kaçırabileceğini fark etme ve örnekleme aralığını iyileştirme | FB.6.5.2.1 |
+| 7 | Uygulanamayan yol ve kapanan bağlantıyı dikkate alarak bütün yaşam alanlarını birleştiren koridorları seçme | FB.6.7.1.2 |
+| 8 | Varsayımsal daha yoğun buz modelini gerçek suyla karşılaştırıp canlılar için çıkarımın sınırını koruma | FB.6.5.3.3 |
+| 9 | İki doğrulanmış kontrolle çelişen tek karşılaştırma kaydını belirleme ve parlaklık sırasını dirence çevirme | FB.6.6.2.1 |
+| 10 | İki tehdidin birlikte azaltıldığı araştırmayı tek önlemden ve basit toplama varsayımından ayırma | FB.6.7.1.1–2 |
+
+Cevap anahtarı: **B, D, A, C, B, A, D, C, B, A**. Önceki 190 Fen Bilimleri sorusu senaryo ve çözüm mekanizmaları yönünden incelenmiştir. Zorluk; tersine işlem, sıralamadan aralık çıkarma, bağlantıların birlikte izlenmesi, kayıt tutarlılığı ve kanıtın sınırını gözetmeden gelir; soruların tümü eşit güçlükte değildir. Gaz genleşmesi yaklaşık ve sınırlı aralıkta geçerli bir model olarak verilir; üst sınıf gaz yasası gerekmez. Yüzer araç şeması ölçeksizdir ve sayısal batma uzunluğu vermez; kaldırma kuvveti formülü gerektirmez. Koridorlar, her tür için kesin koruma garantisi olarak sunulmaz.
+
+Önceki **70 test / 700 soru / 398 SVG** korunur; eski soru kayıtları ve SVG dosyaları byte düzeyinde karşılaştırılır. Yeni toplam **71 test / 710 soru / 405 SVG**; Fen Bilimleri toplamı **20 test / 200 soru**, ikinci dönem Fen bölümü **5 test / 50 soru**. Veri, TypeScript, tam derleme, SEO ve üretilmiş rota kontrolleri uygulanır. Bağımsız bilim/içerik/özgünlük incelemesi ve 360 px ile 238 px genişliklerde native SVG piksel incelemesi yapılır. Tarayıcı etkileşim testi önceki erişim reddi nedeniyle yapılmamıştır; yeniden denenmez. Production aktarımı bu içerik eklemesinin parçası değildir.

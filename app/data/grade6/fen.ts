@@ -3253,6 +3253,176 @@ export const fenData: SubjectData = {
     "correct": 0,
     "explanation": "Başlangıçta toplam kütle 80 g, hacim 30 cm³’tür. Aynı hacimdeki sıvının kütlesi 2,8 × 30 = 84 g olduğundan cisim sıvıdan daha az yoğundur ve yüzer. K homojen olduğu için yarısı 20 g ve 10 cm³’tür. Bu parça çıkarılınca 60 g kütle ve 20 cm³ hacim kalır; yoğunluk 60 ÷ 20 = 3 g/cm³ olur ve cisim batar. K’nin yoğunluğu 2, L’ninki 4 g/cm³’tür. Daha az yoğun olan K’nin payını azaltmak, toplam kütle azalsa da birleşik cismin ortalama yoğunluğunu artırır."
   }
+],
+    test5: [
+      {
+            "id": "f6-2-t5-01",
+            "subject": "fen",
+            "term": 2,
+            "prompt": "Görseldeki panonun dokuz eş karesi, karanlık ortamda önce yalnız kırmızı, sonra yalnız mavi ışıkla aydınlatılacaktır. İdeal modelde kırmızı kare yalnız kırmızıyı, mavi kare yalnız maviyi, beyaz kare her iki rengi yansıtır; siyah kare ikisini de soğurur. Diğer renkleri soğuran kareler siyah görünür.\n\nPanoda yalnız bir kare yeniden boyanacak; beyaz ve siyah karelere dokunulmayacaktır. İki aydınlatmada da siyah görünmeyen kare sayısını eşitleyen işlem hangisidir?",
+            "options": [
+                  "A2 karesini kırmızıya boyamak.",
+                  "B1 karesini maviye boyamak.",
+                  "C2 karesini beyaza boyamak.",
+                  "B3 karesini siyaha boyamak."
+            ],
+            "correct": 1,
+            "explanation": "Panoda dört kırmızı, iki mavi, bir beyaz ve iki siyah kare vardır. Başlangıçta kırmızı ışıkta 4 + 1 = 5, mavi ışıkta 2 + 1 = 3 kare siyah görünmez. B1 kırmızıdan maviye boyanınca kırmızı kare sayısı üçe iner, mavi kare sayısı üçe çıkar; beyaz kareyle birlikte iki durumda da dört kare görünür. A2’yi kırmızı yapmak farkı artırır. C2’yi beyaza veya B3’ü siyaha boyamak sayıları eşitlemez.",
+            "imageWidth": 360,
+            "imageHeight": 510,
+            "imageUrl": "/grade6/fen/term-2/test-5/soru-01.svg",
+            "imageAlt": "3×3 pano. Satırlar A, B, C; sütunlar 1, 2, 3. A1 beyaz, A2 mavi, A3 kırmızı; B1 kırmızı, B2 siyah, B3 kırmızı; C1 siyah, C2 kırmızı, C3 mavi. Kare içlerindeki kısaltmalar: Kr kırmızı, Mv mavi, By beyaz, Si siyah."
+      },
+      {
+            "id": "f6-2-t5-02",
+            "subject": "fen",
+            "term": 2,
+            "prompt": "İçinde sabit miktarda hava bulunan sızdırmaz bir şırınganın pistonu sürtünmesiz hareket edebiliyor. Dış basınç değişmiyor. Görselde bu hava örneğinin ölçümlerinden oluşturulan yaklaşık model verilmiştir. Modelde 20–80 °C arasında her 10 °C sıcaklık artışında hacim 2 cm³ artar; soğuma aynı değişimi tersine çevirir. Şırınganın kendi genleşmesi ihmal edilir.\n\nHava önce 80 °C’ye getiriliyor, ardından sıcaklığı 45 °C azaltılıyor. Son hacim ve içerideki havanın kütlesi, ilk 20 °C durumuna göre nasıl olur?",
+            "options": [
+                  "54 cm³; kütlesi değişmez.",
+                  "63 cm³; kütlesi azalır.",
+                  "31,5 cm³; kütlesi değişmez.",
+                  "63 cm³; kütlesi değişmez."
+            ],
+            "correct": 3,
+            "explanation": "Son sıcaklık 80 − 45 = 35 °C’dir; 45 °C değildir. Hava, ilk 20 °C’ye göre 15 °C daha sıcaktır. Verilen modelde 10 °C için 2 cm³ olan artış, 15 °C için 3 cm³’tür: 60 + 3 = 63 cm³. Şırınga sızdırmaz olduğu için genleşme veya büzülme sırasında hava eklenmez ya da kaybolmaz; kütle değişmez. Hacmi Celsius sıcaklıklarının oranıyla çarpmak bu modelin kuralı değildir. Sonuç, yalnız verilen sıcaklık aralığındaki yaklaşık modele aittir.",
+            "imageWidth": 360,
+            "imageHeight": 500,
+            "imageUrl": "/grade6/fen/term-2/test-5/soru-02.svg",
+            "imageAlt": "Hareketli pistonlu kapalı hava şırıngası ve ölçüm tablosu. 20 °C: 60 cm³; 40 °C: 64 cm³; 60 °C: 68 cm³; 80 °C: 72 cm³. Pistona dışarıdan madde eklenmiyor."
+      },
+      {
+            "id": "f6-2-t5-03",
+            "subject": "fen",
+            "term": 2,
+            "prompt": "Şekilde aynı yüzer ölçüm aracı üç sıvıda ayrı ayrı deneniyor. Aracın kütlesi ve biçimi değişmiyor; bütün denemelerde dik ve serbestçe yüzüyor. Bu araç için kural şudur: Sıvının yoğunluğu azaldıkça aracın ince gövdesinin sıvı içinde kalan uzunluğu artar. Görsel yalnız batma sırasını gösterir; çizimden uzunluk ölçülmez. Sıcaklık aynıdır; sıvılar araca yapışmıyor veya onu değiştirmiyor.\n\nİçi dolu ve homojen K cisminin kütlesi 27 g, hacmi 30 cm³’tür. K, Q sıvısında çözünmez, sıvı almaz ve hava kabarcığı taşımaz. Görselden Q’nun yoğunluğu ve K’nin Q’daki durumu hakkında hangi sonuca ulaşılır?",
+            "options": [
+                  "Q’nun yoğunluğu 0,8 ile 1,2 g/cm³ arasındadır; K’nin batacağı veya yüzeceği kesinleşmez.",
+                  "Q’nun yoğunluğu tam 1 g/cm³’tür; K kesinlikle yüzer.",
+                  "Q’nun yoğunluğu 1,2 g/cm³’ten büyüktür; K kesinlikle yüzer.",
+                  "Q’nun yoğunluğu 0,8 ile 1,2 g/cm³ arasındadır; K kesinlikle batar."
+            ],
+            "correct": 0,
+            "explanation": "Q’da gövdenin sıvı içindeki uzunluğu P’den fazla, R’den azdır. Verilen ters yönlü ilişkiye göre Q’nun yoğunluğu P’nin 1,2 değerinden küçük, R’nin 0,8 değerinden büyüktür. K’nin yoğunluğu 27 ÷ 30 = 0,9 g/cm³’tür. Q için bulunan aralık 0,9’un hem altındaki hem üstündeki değerleri içerir; K’nin batması veya yüzmesi kesinleşmez. Şema yalnız batma sırasını verir; Q’nun yoğunluğunu uç değerlerin ortalaması kabul etmek için veri yoktur.",
+            "imageWidth": 360,
+            "imageHeight": 490,
+            "imageUrl": "/grade6/fen/term-2/test-5/soru-03.svg",
+            "imageAlt": "Aynı yüzer araç P, Q ve R sıvılarında gösterilmiştir. İnce gövdenin sıvı içinde kalan kısmı P’de en kısa, Q’da arada, R’de en uzundur. P yoğunluğu 1,2 g/cm³, R yoğunluğu 0,8 g/cm³; Q bilinmiyor. Çizim yalnız bu sırayı gösterir; ölçekli değildir, uzunluk değeri vermez."
+      },
+      {
+            "id": "f6-2-t5-04",
+            "subject": "fen",
+            "term": 2,
+            "prompt": "Görseldeki levha, birbirine temas eden bakır ve kuru plastik katmanlardan yapılmıştır. Her katman kesintisizdir; aralarında başka iletken bağlantı yoktur. Bu basitleştirilmiş modelde bakır iyi iletken, plastik yalıtkandır. Sağlam bir pil–ampul devresinin iki test ucu önce A ile B’ye, sonra C ile D’ye bağlanacaktır. Uçlar yalnız işaretli noktalara dokunur; levhanın kenarını dolanan bir kablo yoktur.\n\nİki denemenin sonucu ve bunun açıklaması hangi seçenekte doğrudur?",
+            "options": [
+                  "İkisinde de yanar; levhada bakır bulunması her yönde iletim için yeterlidir.",
+                  "İkisinde de yanmaz; levhada plastik bulunması bütün bakır yolları keser.",
+                  "A–B’de yanar, C–D’de yanmaz; iki nokta arasında kesintisiz iletken yol bulunması belirleyicidir.",
+                  "A–B’de yanmaz, C–D’de yanar; akım yalnız farklı bakır katmanlar arasında geçer."
+            ],
+            "correct": 2,
+            "explanation": "A ve B aynı kesintisiz bakır katmanın iki ucundadır; aralarında iletken yol vardır ve devre tamamlanır. C üstteki, D alttaki bakır katmandadır; bu katmanlar arasındaki plastikler iletken yolu keser. Dolayısıyla C–D’de ampul yanmaz. Bir nesnenin içinde iletken madde bulunması, seçilen her iki noktası arasında iletim olacağı anlamına gelmez; katmanların yerleşimi ve temas noktaları birlikte incelenmelidir.",
+            "imageWidth": 360,
+            "imageHeight": 440,
+            "imageUrl": "/grade6/fen/term-2/test-5/soru-04.svg",
+            "imageAlt": "Beş yatay katman üstten alta bakır, plastik, bakır, plastik, bakır olarak sıralıdır. A ve B orta bakır katmanın sol ve sağ kenarındadır. C üst bakır katmanın üst ortasında, D alt bakır katmanın alt ortasındadır. Katmanlar levhanın tamamı boyunca uzanır."
+      },
+      {
+            "id": "f6-2-t5-05",
+            "subject": "fen",
+            "term": 2,
+            "prompt": "Şekildeki reostanın yalnız A ucu ile S sürgüsü devreye bağlıdır. Tel aynı cins ve kalınlıktadır; üzerinde P, Q, R ve T işaretleri vardır. İşaretlerin arasındaki aralıklardan tam birinde kopukluk vardır; kopukluk hiçbir işaretin üzerinde değildir. Pil, ampul, diğer kablolar ve bütün sürgü temasları sağlamdır. Sıcaklık ve pilin durumu denemeler boyunca değişmez. Devrede kullanılan tel kesintisizse ampul mutlaka görünür ışık verir.\n\nS sırayla P, Q, R ve T’ye getirilerek görseldeki sonuçlar alınıyor. Kopukluk hangi aralıktadır? S yeniden Q’ya getirildikten sonra P’ye kaydırılırsa ampulün parlaklığı Q’dakine göre nasıl değişir?",
+            "options": [
+                  "P–Q; artar.",
+                  "Q–R; artar.",
+                  "Q–R; azalır.",
+                  "R–T; değişmez."
+            ],
+            "correct": 1,
+            "explanation": "Q’da ampul yandığına göre A’dan Q’ya kadar iletken yol kesintisizdir. R’de yanmadığı ve tek kopukluk bulunduğu için kopukluk Q ile R arasındadır; T’de yanmama da bununla uyumludur. Q’dan P’ye dönerken kullanılan A–S teli kısalır ve kopuk bölge yine kullanılmaz. Direnç azalır, ampul daha parlak yanar. R’deki sönme, telin yalnız daha uzun olmasından değil iletken yolun kesilmesindendir.",
+            "imageWidth": 360,
+            "imageHeight": 550,
+            "imageUrl": "/grade6/fen/term-2/test-5/soru-05.svg",
+            "imageAlt": "Reosta teli soldan sağa A, P, Q, R, T işaretlerini taşır. A sabit uç, S hareketli uçtur; kopukluğun yeri gösterilmez. S konumu ve gözlem tablosu: P yanıyor, Q yanıyor, R sönük, T sönük."
+      },
+      {
+            "id": "f6-2-t5-06",
+            "subject": "fen",
+            "term": 2,
+            "prompt": "Saf X katısı, sabit basınçta kesintisiz ısıtılıyor. Öğrenci sıcaklığı yalnız iki dakikada bir ölçüyor; kayıtlar görseldedir. 2. dakikadan sonra katının sıcaklığı bir süre daha yükselmiş, ardından erime başlamıştır. 4. dakikada ise erime tamamlanmış ve oluşan sıvının sıcaklığı erime sıcaklığının üstüne çıkmıştır. Madde kaybı ve ölçüm hatası yoktur.\n\nBir öğrenci, “Kayıtlarda eşit sıcaklık yok; X sabit sıcaklıkta erimemiştir. Erime noktası da erimeden önceki son ölçüm ile erimeden sonraki ilk ölçümün ortalamasıdır.” diyor. Bu iddiayı değerlendirmek ve ölçümü geliştirmek için hangi seçenek uygundur?",
+            "options": [
+                  "Erime noktası 40 ile 80 °C arasındadır; tam değeri için 2–4. dakikalar arasında sıcaklık ve hâl daha sık izlenmelidir.",
+                  "Erime noktası kesinlikle 60 °C’dir; aynı kayıtların ortalamasını almak yeterlidir.",
+                  "Erime noktası kesinlikle 80 °C’dir; yalnız sıvı hâlin ilk ölçümü kullanılmalıdır.",
+                  "Eşit sıcaklık kaydı olmadığı için X’in saf olmadığı kesindir; daha sık ölçüm gereksizdir."
+            ],
+            "correct": 0,
+            "explanation": "2. dakikada 40 °C’de erime başlamamış, 4. dakikada 80 °C’de erime bitmiş ve sıvı ısınmaya başlamıştır. Bu yüzden erime noktası 40 °C’den büyük, 80 °C’den küçüktür. İki ölçüm arasındaki kısa sabit sıcaklık bölgesi kayda geçmemiş olabilir. Aralığın ortası olan 60 °C’yi seçmek gerçek erime sıcaklığını kanıtlamaz. Deney, özellikle 2–4. dakikalar arasında daha kısa aralıklarla sıcaklık ve hâl gözlenerek tekrarlanmalıdır.",
+            "imageWidth": 360,
+            "imageHeight": 420,
+            "imageUrl": "/grade6/fen/term-2/test-5/soru-06.svg",
+            "imageAlt": "Seyrek ölçüm tablosu: 0. dakika 20 °C katı; 2. dakika 40 °C katı; 4. dakika 80 °C sıvı; 6. dakika 100 °C sıvı. 2 ile 4. dakikalar arasındaki sıcaklık kayıtları yoktur."
+      },
+      {
+            "id": "f6-2-t5-07",
+            "subject": "fen",
+            "term": 2,
+            "prompt": "Haritadaki A, B, C, D ve E orman parçalarında yaşayan küçük hayvanlar yalnız kesintisiz bitkili yollar boyunca hareket edebiliyor. Mevcut A–B ve D–E koridorları kullanılabiliyor; eski B–C koridoru kapanmış. Noktalı çizgiler yeni koridor önerileridir. I numaralı öneri aşılmaz yerleşim alanından geçtiği için uygulanamaz; diğer öneriler uygulanabilir.\n\nBütçe tam iki yeni koridora yeterlidir. Amaç beş orman parçasının tamamını, hayvanların birinden diğerine ulaşabileceği tek bir bağlantı ağına katmaktır. Hangi iki öneri seçilmeli ve bu amaç biyoçeşitlilik açısından nasıl yorumlanmalıdır?",
+            "options": [
+                  "I ve III; çizgi çizilen her yer güvenli geçişe dönüşür.",
+                  "II ve IV; aynı iki ormanı iki yolla bağlamak, C’yi de ağa katar.",
+                  "I ve II; D’ye iki bağlantı kurulması bütün parçaları bağlar.",
+                  "II ve III; yaşam alanları arasındaki hareketi destekler, ancak her türün korunacağını tek başına garanti etmez."
+            ],
+            "correct": 3,
+            "explanation": "Başlangıçta A–B bir grup, D–E ikinci grup, C ise tek başınadır. II, B ile D’yi bağlayarak ilk iki grubu birleştirir. III, C ile E’yi bağlayıp C’yi de ağa katar. IV yalnız zaten bağlantılı A ve B arasındadır; C’ye erişim sağlamaz. I uygulanamaz. Uygun koridorlar yaşam alanı parçalanmasının etkisini azaltmaya yardım edebilir; ancak kirlilik, avlanma ve türlerin farklı ihtiyaçları gibi başka etkenler de bulunduğundan bütün türlerin korunması garanti edilemez.",
+            "imageWidth": 360,
+            "imageHeight": 670,
+            "imageUrl": "/grade6/fen/term-2/test-5/soru-07.svg",
+            "imageAlt": "Orman bağlantı haritası: A sol üst, B sağ üst, C sağ orta, D sol alt, E sağ alt. Kullanılabilir mevcut koridorlar A–B ve D–E. B–C eski koridoru kapalıdır. Öneri I A–D arasında ve aşılmaz yerleşim alanından geçer; II B–D arasında; III C–E arasında; IV A–B arasında ikinci bir yoldur."
+      },
+      {
+            "id": "f6-2-t5-08",
+            "subject": "fen",
+            "term": 2,
+            "prompt": "İki göl modeli yalnız buzun yoğunluğu bakımından farklıdır. Gerçek suyu temsil eden K’de buzun yoğunluğu 0,9 g/cm³, sıvı suyunki 1 g/cm³’tür. Varsayımsal L’de buzun yoğunluğu 1,1 g/cm³, sıvı suyunki yine 1 g/cm³ kabul ediliyor. İki modelde de su yüzeyden soğuyor; oluşan buz serbestçe hareket edebiliyor. Yüzeyde kalabilen buz örtüsünün alttaki suyun ısı kaybını yavaşlattığı bilgisi veriliyor.\n\nBu modellerin karşılaştırılmasından hangi sonuç çıkarılabilir?",
+            "options": [
+                  "K’de buz yüzer, L’de batar; fakat yüzey örtüsü alttaki suyun ısı kaybını hızlandırır.",
+                  "K’de buz yüzer, L’de batar; bu yüzden L’nin tamamı her koşulda kesinlikle donar.",
+                  "K’de yüzey örtüsü oluşması desteklenir; L’de buz batar, fakat yalnız bu farktan gölün tamamının kesin donacağı çıkarılamaz.",
+                  "K’de buz yüzer, L’de batar; iki modelde de yüzeyde aynı yüzen buz örtüsü oluşur."
+            ],
+            "correct": 2,
+            "explanation": "K’de buz sıvı sudan daha az yoğundur ve yüzeyde kalabilir. Bu örtü, alttaki suyun ısı kaybını yavaşlatarak sıvı su bulunan yaşam alanlarının sürmesine katkı sağlar. L’de varsayımsal buz sıvı sudan daha yoğundur ve batar; aynı yüzen örtü mekanizması oluşmaz. Ancak gölün derinliği, soğumanın süresi ve diğer koşullar verilmediğinden L’nin mutlaka tamamen donacağı söylenemez. K’deki örtü de her canlı için kesin yaşam güvencesi değildir."
+      },
+      {
+            "id": "f6-2-t5-09",
+            "subject": "fen",
+            "term": 2,
+            "prompt": "K, L, M ve N telleri aynı sağlam pil–ampul devresinde ikişer ikişer karşılaştırılıyor. Her telin cinsi, uzunluğu ve kalınlığı bütün denemelerde korunuyor; teller birbirinden farklı olabilir. Sıcaklık ve temas koşulları değişmiyor. Daha parlak yanan ampul, o denemede kullanılan telin daha küçük dirençli olduğunu gösteriyor.\n\nDört kayıt kartından tam birinde karşılaştırmanın yönü ters yazılmıştır:\nI. K ile ampul, L’dekinden daha parlak.\nII. L ile ampul, M’dekinden daha parlak.\nIII. M ile ampul, N’dekinden daha parlak.\nIV. N ile ampul, K’dekinden daha parlak.\nAyrı kontrollerde K’nin M’den, L’nin N’den daha parlak yaktığı kesin olarak doğrulanmıştır.\n\nHangi kart düzeltilmelidir ve en büyük dirençli tel hangisidir?",
+            "options": [
+                  "I. kart; K teli.",
+                  "IV. kart; N teli.",
+                  "II. kart; M teli.",
+                  "III. kart; L teli."
+            ],
+            "correct": 1,
+            "explanation": "Kesin kontrol K’nin M’den parlak olduğunu söyler. III ve IV birlikte doğru olsaydı M, N’den; N de K’den parlak olurdu ve bu kontrolle çelişirdi. Bu yüzden hata III veya IV’tedir. Diğer kesin kontrol L’nin N’den parlak olduğunu söyler. IV ve I birlikte doğru olsaydı N, K’den; K de L’den parlak olurdu ve bu kontrolle çelişirdi. Hata I veya IV’te olmalıdır. Her iki koşulu tek hatayla sağlayan kart IV’tür. IV düzeltilince parlaklık K > L > M > N, direnç sırası ise tersidir; en büyük direnç N’dedir."
+      },
+      {
+            "id": "f6-2-t5-10",
+            "subject": "fen",
+            "term": 2,
+            "prompt": "Bir araştırmada benzer özellikteki yaşam alanları dört gruba ayrılıyor. Başlangıçta her alanda aynı 5 yerli tür kayıtlıdır; alanlar hem kirli su akışından hem bitki örtüsü kaybından etkilenmiştir. Gözlem yöntemi, süre ve diğer koşullar eşit tutuluyor. Her grupta birden çok alan inceleniyor ve benzer sonuçlar elde ediliyor. Sonunda kaydedilen yerli tür sayıları şöyledir:\n• İşlem yapılmayan alanlarda 5 tür.\n• Yalnız kirli su akışı durdurulanlarda 6 tür.\n• Yalnız bitki örtüsü onarılanlarda 6 tür.\n• İki işlem birlikte yapılanlarda 10 tür kaydediliyor.\n\nAraştırmanın desteklediği koruma yaklaşımı hangisidir?",
+            "options": [
+                  "Bu alanlarda iki tehdidi birlikte azaltmak daha çok yerli türün kaydedilmesiyle ilişkilidir; tek bir önlemin aynı sonucu sağlayacağı varsayılmamalıdır.",
+                  "Tür sayısındaki bütün artış yalnız suyun temizlenmesiyle açıklanır; bitki örtüsünün rolü olamaz.",
+                  "Tek başına yapılan işlemlerde birer tür arttığı için iki işlem birlikte en fazla 7 tür sağlayabilir; 10 kaydı mutlaka yanlıştır.",
+                  "10 tür kaydedilmesi, bu alanlarda gelecekte hiçbir türün tehdit altında olmayacağını kanıtlar."
+            ],
+            "correct": 0,
+            "explanation": "İşlem yapılmayan alanlarda 5, tek önlem alınanlarda 6, iki önlemin birlikte uygulandığı alanlarda 10 tür kaydedilmiştir. Bu karşılaştırma, incelenen koşullarda hem kirli akışı durdurmanın hem yaşam alanını onarmanın birlikte ele alınmasını destekler. Tek tek uygulamalardaki artışları toplamak, iki işlemin birlikte etkisini zorunlu olarak vermez: bazı türler her iki koşulun da iyileşmesine ihtiyaç duyabilir. Kayıtlar gelecekte bütün tehditlerin biteceğini veya aynı sayısal sonucun her yerde oluşacağını göstermez."
+      }
 ]
   },
 };
