@@ -2557,6 +2557,176 @@ export const ingilizceData: SubjectData = {
       }
     ]
   },
-  "term2": {}
+  "term2": {
+  "test1": [
+    {
+      "id": "e6-2-t1-01",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "Look at the visitor cards. Class 6A needs a visitor who can design buildings. Class 6B needs someone who can repair cars. The two visitors must come on different dates. Which invitation note meets ALL these needs?",
+      "options": [
+        "Dear Eda and Tom, please visit our classes.",
+        "Dear Ada and Tom, please visit our classes.",
+        "Dear Mia and Tom, please visit our classes.",
+        "Dear Ada and Leo, please visit our classes."
+      ],
+      "correct": 1,
+      "explanation": "6A için bina tasarlayan Ada veya Eda, 6B için araba tamir eden Tom uygundur. Ancak Eda ile Tom aynı tarihte, 13 Nisan’da gelir. Farklı gün koşulunu yalnızca 12 Nisan’da gelen Ada ile Tom sağlar. Leo çiftçi, Mia diş hekimidir; istenen meslek eşleşmesini sağlamazlar.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-1/soru-01.svg",
+      "imageAlt": "Five school visitor cards: Mia, dentist, 12 April; Leo, farmer, 13 April; Ada, architect, 12 April; Tom, mechanic, 13 April. Eda, architect, 13 April.",
+      "imageWidth": 360,
+      "imageHeight": 565
+    },
+    {
+      "id": "e6-2-t1-02",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "The family changed its holiday plan. Read the two records. Which sentence correctly compares the plan with what the family did?",
+      "options": [
+        "They went camping after swimming, as planned.",
+        "They visited the museum on the planned day.",
+        "They went swimming before their museum visit.",
+        "They went camping before swimming, not after it."
+      ],
+      "correct": 3,
+      "explanation": "Planda yüzme pazartesi, kamp çarşambadır; yani kamp yüzmeden sonradır. Gerçekte kamp salı, yüzme çarşamba gerçekleşir; kamp yüzmeden önceye geçmiştir. D seçeneği hem planı hem gerçekleşeni doğru karşılaştırır.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-1/soru-02.svg",
+      "imageAlt": "Holiday plan: Monday swimming, Tuesday museum, Wednesday camping. Actual record: Monday museum, Tuesday camping, Wednesday swimming.",
+      "imageWidth": 360,
+      "imageHeight": 565
+    },
+    {
+      "id": "e6-2-t1-03",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "At 3 p.m., Eva was at Desk A. The red book was on Shelf B. At 3:05, she put it on the desk below that shelf. At 3:10, she moved it to the other desk. She stayed there and read it. Which sentence is correct about 3:15 p.m.?",
+      "options": [
+        "Eva was at Desk A with the red book.",
+        "Eva was at Desk B with the red book.",
+        "Eva was at Desk A, but the book was on Shelf B.",
+        "Eva was at Desk B, but the book was on Shelf A."
+      ],
+      "correct": 0,
+      "explanation": "Shelf B altındaki masa Desk B’dir. Eva kitabı önce Desk B’ye, sonra other desk ifadesiyle Desk A’ya taşır ve orada kalır. Son durumda Eva da kitap da Desk A’dadır; başlangıç konumu ile ara konum son durum sanılmamalıdır.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-1/soru-03.svg",
+      "imageAlt": "Library map at 3 p.m.: Shelf A is above Desk A on the left; Shelf B is above Desk B on the right. A red book is on Shelf B. Eva is at Desk A.",
+      "imageWidth": 360,
+      "imageHeight": 410
+    },
+    {
+      "id": "e6-2-t1-04",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "On 12 May, Ali wrote: 'I finished the book two days ago. I returned it the next day.' His reading record is complete: he did not read any other pages on these three days. Which statement agrees with BOTH his note and the record?",
+      "options": [
+        "He finished the book on the day he borrowed it.",
+        "He read the final pages on the day he returned it.",
+        "The last page of the book was page 40.",
+        "He returned the book two days before 12 May."
+      ],
+      "correct": 2,
+      "explanation": "12 May tarihinden two days ago, 10 May günüdür. O gün 21–40. sayfaları okumuş ve kitabı bitirmiştir; kaydın eksiksiz olduğu belirtildiği için son sayfa 40’tır. Kitabı ertesi gün, 11 Mayıs’ta iade etmiştir.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-1/soru-04.svg",
+      "imageAlt": "Reading record: 9 May borrowed a book and read pages 1–20; 10 May read pages 21–40; 11 May returned the book and did not read.",
+      "imageWidth": 360,
+      "imageHeight": 500
+    },
+    {
+      "id": "e6-2-t1-05",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "You have the three things shown in the bag list. Which action follows ALL the station's instructions?",
+      "options": [
+        "Put the full bottle in BLUE and both papers in GREEN.",
+        "Empty the bottle into a sink, put it in BLUE, and put only the dry paper in GREEN.",
+        "Empty the bottle into a sink and put it with the dry paper in GREEN.",
+        "Put the dry paper in GREEN and the full bottle with the wet paper in BLUE."
+      ],
+      "correct": 1,
+      "explanation": "Önce şişe boşaltılmalı, sonra BLUE kutusuna konmalıdır. Kâğıt için GREEN kullanılır ancak ıslak kâğıt iki kutuya da atılamaz. Bu yüzden yalnızca kuru kâğıt GREEN kutusuna gider. B tüm talimatları aynı anda korur.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-1/soru-05.svg",
+      "imageAlt": "Recycling instructions: empty bottles; bottles in BLUE; paper in GREEN; wet paper in neither bin. Bag contains a bottle with water, dry paper and wet paper. Blue and green bins are shown.",
+      "imageWidth": 360,
+      "imageHeight": 665
+    },
+    {
+      "id": "e6-2-t1-06",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "Both classrooms were empty before and after the actions. Each class says, 'We stopped wasting both water and electricity.' Which advice is supported by the records?",
+      "options": [
+        "Room A: turn off the tap. Room B: turn off the lights.",
+        "Room A: turn off the lights. Room B: turn off the tap.",
+        "Both rooms: turn off the taps; the lights are already off.",
+        "Both rooms: turn off the lights; the taps are already off."
+      ],
+      "correct": 0,
+      "explanation": "A sınıfı ışıkları kapatmış ancak musluğu açık bırakmıştır; su israfını da durdurması gerekir. B sınıfı musluğu kapatmış ancak ışıkları açık bırakmıştır; elektrik israfını da durdurması gerekir. İki sınıfın iddiası da yalnızca kısmen gerçekleşmiştir.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-1/soru-06.svg",
+      "imageAlt": "Empty Room A before: lights on, tap running; after: lights off, tap running. Empty Room B before: lights on, tap running; after: lights on, tap off. Yellow bulbs with rays mean lights on; grey bulbs without rays mean lights off. Drops show running taps.",
+      "imageWidth": 360,
+      "imageHeight": 835
+    },
+    {
+      "id": "e6-2-t1-07",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "Ben says, 'Five papers have only my name and three have both names, so I have eight votes.' Read the rule and the ballot record. Which reply is correct?",
+      "options": [
+        "Yes. Ben has eight votes and Ada has six.",
+        "No. The three papers with both names give Ada three extra votes.",
+        "No. The two papers with no name give Ben two extra votes.",
+        "No. Papers with two names are not valid; Ada wins by one vote."
+      ],
+      "correct": 3,
+      "explanation": "Geçerli oyda yalnızca bir isim olmalıdır. İki isimli üç pusula da isimsiz iki pusula da geçersizdir. Ada’nın 6, Ben’in 5 geçerli oyu vardır; Ada bir oy farkla kazanır. Bir kuralı tüm pusula türlerine uygulamak gerekir.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-1/soru-07.svg",
+      "imageAlt": "Election rule: a valid vote has one name only; the candidate with the most valid votes wins. Ballot record: Ada only 6; Ben only 5; both names 3; no name 2.",
+      "imageWidth": 360,
+      "imageHeight": 625
+    },
+    {
+      "id": "e6-2-t1-08",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "Read the school newsletter.\n'On 4 June, a nurse and a cook visited our school. The nurse talked to Class 6A before lunch. The cook talked to Class 6B after lunch. On 5 June, the same cook visited Class 6A, but the nurse did not come to school.'\n\nWhich sentence CANNOT be correct?",
+      "options": [
+        "Class 6A met two people with different jobs on different dates.",
+        "The cook visited two different classes on two different dates.",
+        "The nurse and the cook both visited Class 6A on 5 June.",
+        "Class 6B met the cook after lunch on 4 June."
+      ],
+      "correct": 2,
+      "explanation": "4 Haziran’da 6A hemşireyi, 6B aşçıyı görür. 5 Haziran’da aynı aşçı 6A’ya gelir; hemşirenin okula gelmediği açıkça yazılıdır. Bu nedenle ikisinin de 5 Haziran’da 6A’yı ziyaret ettiğini söyleyen C metinle çelişir."
+    },
+    {
+      "id": "e6-2-t1-09",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "Read Deniz's holiday notes.\n'We did one activity each day during our four-day visit: fishing, swimming, a forest walk and a visit to my grandparents. We went fishing the day after we visited my grandparents. We went swimming the day before that visit. The forest walk was before swimming.'\n\nWhich sentence needs a correction?",
+      "options": [
+        "Deniz visited his grandparents on the second day.",
+        "Deniz went fishing on the last day.",
+        "Deniz walked in the forest before he visited his grandparents.",
+        "Deniz went swimming on the day after the forest walk."
+      ],
+      "correct": 0,
+      "explanation": "Büyükanne ve büyükbaba ziyareti yüzmeden bir gün sonra, balık tutmadan bir gün öncedir; bu üç etkinlik art arda gelir. Orman yürüyüşü yüzmeden önce olduğundan dört günün sırası yürüyüş → yüzme → ziyaret → balık tutma olur. Ziyaret üçüncü gündür; A ikinci gün diyerek hata yapar."
+    },
+    {
+      "id": "e6-2-t1-10",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "Read the election rules.\n'First, all candidates talk about their ideas. Next, every student votes once, in secret. Finally, we count the votes and announce the winner.'\n\nClass 6A voted before one candidate gave her talk. They counted the votes, but did not announce a winner. Which plan follows ALL the rules for a new election?",
+      "options": [
+        "Keep the old votes. Let the last candidate talk. Then announce the winner.",
+        "Let every candidate talk, hold a new secret vote with one vote per student, count the new votes and announce the winner.",
+        "Let every candidate talk. Give students who voted before two votes in the new election.",
+        "Hold a new secret vote first. Then let every candidate talk and count the new votes."
+      ],
+      "correct": 1,
+      "explanation": "Kurala göre bütün adayların konuşması oylamadan önce tamamlanmalıdır; her öğrenci gizli olarak bir kez oy verir. B yeni seçimde bu sırayı ve eşit oy hakkını korur. Eski oyları tutmak, bazı öğrencilere iki oy vermek ya da konuşmalardan önce yeniden oy kullanmak kurallara uymaz."
+    }
+  ]
+}
 };
-

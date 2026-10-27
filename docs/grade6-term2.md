@@ -67,3 +67,24 @@ Kaynak: kullanıcının sağladığı 17 sayfalık `fen6.pdf`, **6. Sınıf Fen 
 | 10 | Termometre hatalarını ters yönlerde düzeltme ve erime noktasını yorumlama | FB.6.5.2.1 |
 
 Biyoçeşitlilik, sağlanan PDF’nin ikinci yazılı kapsamındadır. Önceki yıllık listedeki tutulmalar, kuvvet, üreme gibi bu dağılım tablosunda olmayan konular bu teste eklenmez. Birinci dönem soruları ve ikinci dönem Türkçe/Matematik Test 1 korunur.
+
+## İngilizce — 2. dönem Test 1 (zor)
+
+Kaynak: kullanıcının sağladığı 11 sayfalık `ing6.pdf`, **6. Sınıf İngilizce 2. Dönem 1. ve 2. Yazılı Konu Soru Dağılım Tabloları**. Birinci yazılı senaryoları s.2–6, ikinci yazılı senaryoları s.7–11. Bu belge tam yıllık/dönemlik müfredat değildir; her ünite her senaryoda bulunmaz. Özgün çoktan seçmeli sorular, resmî sınav kopyası değildir ve kaynakta belirtilen açık uçlu/kısa cevaplı sınavların veya bağımsız yazılı üretimin yerine geçmez.
+
+10 soru: 7 anlamlı görsel + 3 metin; İngilizce soru/seçenek, Türkçe açıklama. Zorluk, ileri sözcüklerden değil birden çok ipucunu, tarihleri, olay sırasını, istisnaları ve kuralları birlikte değerlendirmekten gelir. 360 px SVG, en az 26 px yazı ve mevcut büyütme desteği. Kimlikler `e6-2-t1-01`–`e6-2-t1-10`, rota `/6-sinif/ingilizce/2-donem-test-1`, görseller `public/grade6/ingilizce/term-2/test-1/`.
+
+| Soru | Akıl yürütme | Kaynak eşlemesi |
+| --- | --- | --- |
+| 1 | İki mesleki beceri ve farklı ziyaret tarihlerini eşleştirme | Occupations, E6.6.R1 (s.2–7,9) |
+| 2 | Planlanan ve gerçekleşen tatil etkinliklerinin sırasını karşılaştırma | Holidays, E6.7.R1 (s.2–6,8,10,11) |
+| 3 | Kütüphane planında ardışık yer değişimlerinin son konumu | Bookworms, E6.8.R1 (s.7–11); E6.8.W2 ile ilişkili konum okuma (s.8,10) |
+| 4 | Kesin tarihlerle geçmiş zaman ifadesini ve okuma kaydını birleştirme | Bookworms, E6.8.R1 (s.7–11) |
+| 5 | Geri dönüşüm talimatlarını sıralı ve istisnalı uygulama | Saving the Planet, E6.9.R2 (s.8,10,11) |
+| 6 | Önce–sonra kayıtlarından eksik çevre koruma önlemlerini bulma | Saving the Planet, E6.9.R1 (s.7–11) |
+| 7 | Geçerli oy kuralına göre seçim iddiasını değerlendirme | Democracy, E6.10.R1 (s.10–11) |
+| 8 | Meslek, tarih ve sınıf bilgilerini birleştirip çelişkiyi bulma | Occupations, E6.6.R1 |
+| 9 | Dört günlük tatilde birbirine bağlı önce–sonra ipuçlarından kesin gün sırasını çıkarma | Holidays, E6.7.R1 |
+| 10 | Aday konuşması, gizli oy ve eşit oy hakkını yeni seçim planında koruma | Democracy, E6.10.R1 |
+
+Yazma kazanımları doğrudan ölçülmez; tüm kazanımların eksiksiz kapsandığı iddia edilmez. İlk dönem Life / Yummy Breakfast / Downtown / Weather and Emotions / At the Fair kapsamı bu yeni teste taşınmaz. Önceki tüm sorular ile ikinci dönem Türkçe, Matematik ve Fen Bilimleri Test 1 korunur.
