@@ -43,8 +43,7 @@ const starterTopics: Record<SubjectId, string[]> = {
 };
 
 const secondTermTopics: Partial<Record<SubjectId, string[]>> = {
-  // Test 2 is not published; preserve the requested Test 3, Test 4 and Test 5 numbering without creating a test.
-  ingilizce: ['Occupations, Holidays, Bookworms, Saving the Planet ve Democracy (Zor)', '', 'Meslekler, Geçmiş Olaylar, Çevre ve Demokrasi: Kanıtları Birleştirme (Zor)', 'Tarihli Kanıtlar, Kitap Bölümleri, Çevre Yönergeleri ve Seçim Kuralları (Zor)', 'Kitap Kimlikleri, Çevre Düzenleri ve Demokratik Haklar (Zor)'],
+  ingilizce: ['Occupations, Holidays, Bookworms, Saving the Planet ve Democracy (Zor)', 'Meslekler, Tatil Anıları, Kitaplar, Çevre ve Seçim İfadeleri (Orta)', 'Meslekler, Geçmiş Olaylar, Çevre ve Demokrasi: Kanıtları Birleştirme (Zor)', 'Tarihli Kanıtlar, Kitap Bölümleri, Çevre Yönergeleri ve Seçim Kuralları (Zor)', 'Kitap Kimlikleri, Çevre Düzenleri ve Demokratik Haklar (Zor)'],
   fen: ['Madde, Elektrik, Renkler ve Biyoçeşitlilik: Deneysel Akıl Yürütme (Zor)', 'Ölçüm Hataları, Modeller ve Deney Koşullarıyla Akıl Yürütme (Zor)', 'Ölçüm Sınırları, Değişen Koşullar ve Bilimsel Kanıtlar (Zor)', 'Deney Tasarımları, Değişen Modeller ve Çok Adımlı Çıkarımlar (Zor)', 'Eksik Kayıtlar, Bağlantı Yolları ve Çoklu Kanıtlarla Çıkarım (Zor)'],
   matematik: ['Cebirsel Düşünme, Örüntüler, Algoritmalar ve Alan (Zor)', 'Tersine Ölçme, Alan Bağları ve Örüntü Kuralları (Zor)', 'Parça Düzenleri, Katlama ve Algoritma Denetimi (Zor)', 'Ortak Bölgeler, Alan Değişimleri ve Algoritmik İlişkiler (Zor)', 'İç İçe Şekiller, Tersine İşlemler ve Değişen Düzenler (Zor)'],
   turkce: ['Metni Yorumlama, Eleştirel Okuma ve Görsel Çözümleme (Zor)', 'Anlatı Katmanları, Görsel İleti ve Gerekçeli Değerlendirme (Zor)'],

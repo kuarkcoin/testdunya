@@ -2,6 +2,8 @@
 
 Birinci dönem testleri ve yayımlanmış `test-N` bağlantıları korunur. İkinci dönem testleri aynı ders sayfasının `#term-2` bölümünde listelenir; test bağlantıları `2-donem-test-N`, soru kimlikleri derse göre `t6-2-tN-NN`, `m6-2-tN-NN` gibi biçimlerdedir. Ana 6. sınıf sayfası dört dersin ikinci dönem bölümüne doğrudan erişim sağlar. Test eklenmeyen derslerde gerçek boş durum gösterilir; henüz hazırlanmış soru veya test varmış gibi gösterilmez.
 
+> **Güncel İngilizce durumu:** İkinci dönemde Test 1–5 bulunur. Sonradan eklenen Test 2 orta, Test 1/3/4/5 zor düzeydedir. Aşağıdaki eski Test 3–5 notlarında Test 2'nin bulunmadığına dair ifadeler tarihsel ekleme kayıtlarıdır; güncel durum en sondaki Test 2 bölümünde açıklanır.
+
 ## Kaynak sınırı
 
 Kullanıcının sağladığı `turk6.pdf`, 7 sayfalık **6. Sınıf Türkçe Dersi 2. Dönem 2. Ortak Yazılı Konu Soru Dağılım Tablosu (MEB Yayınları)** senaryolarıdır. Tam yıllık müfredat değildir. Buradaki özgün çoktan seçmeli sorular, tablodaki ilgili becerilerin alıştırma uyarlamasıdır; resmî sınav kopyası değildir. Kaynakta okul ortak sınavları için belirtilen açık uçlu/kısa cevaplı biçimden farklıdır. Seçenek değerlendirme soruları, öğrencinin bağımsız yazılı metin üretme becerisini doğrudan ölçtüğü iddiasını taşımaz.
@@ -380,3 +382,30 @@ Q2'de yalnız boş kovaya dayanılmaz: tam yakalama kaydı açıkça **FISH CAUG
 Önceki **180 İngilizce sorusu**, özellikle ikinci dönem Test 1, Test 3 ve Test 4, çözüm mekanizması bakımından incelenir. Ziyaretçi/tarih kısıtları, değişen tatil planı, etkinlik fotoğraflarından kişi bulma, düşey kitaplık filtresi, iç içe ödünç aralıkları, kâğıdın iki yüzü, çevre rotası, bilet delikleri, gizli kapak hasarı, bölüm sınırları, yağmur suyu/toprak kuralı, eksik/geçersiz oy ve ikinci tur eşiği tekrarlanmaz. Yazma kazanımları yalnız uygun notu tanıma düzeyinde ilişkilendirilir; bağımsız yazma doğrudan ölçülmez. İlk dönem üniteleri bu teste taşınmaz; ikinci dönemin bütün kazanımlarının ölçüldüğü iddia edilmez.
 
 Önceki **76 test / 760 soru / 440 SVG** değişmeden korunur. Yeni toplam **77 test / 770 soru / 447 SVG**; İngilizce toplamı **19 test / 190 soru**, ikinci dönem İngilizce toplamı **4 test / 40 soru** olur. Eski soru kayıtları/SVG'ler byte düzeyinde karşılaştırılır. Veri, TypeScript, tam Next.js 15.5.28 derlemesi, SEO, üretilmiş rotalar ve yerel HTTP sayfa/varlık kontrolleri uygulanır. Bağımsız dil/içerik/özgünlük/görsel denetimi ve 360/238 px native SVG piksel incelemesi yapılır. Önceki erişim reddi nedeniyle tarayıcı etkileşim testi yeniden denenmez; native HTTP/SVG incelemesi tarayıcı testi olarak sunulmaz. Test 5 yalnız preview kapsamındadır; production aktarımı yapılmaz.
+
+## İngilizce — 2. Dönem Test 2 (Orta; eksik numaranın tamamlanması)
+
+Kullanıcının açık isteği üzerine, daha önce boş olan Test 2 **orta zorlukta** eklenir. Test 1, 3, 4 ve 5'in zor düzeyi, soru kayıtları, numaraları ve bağlantıları korunur. Güncel ikinci dönem İngilizce listesi **Test 1, Test 2, Test 3, Test 4, Test 5** sırasındadır; sayılar gerçek kayıtlardan hesaplanır. Yukarıdaki Test 3–5 ekleme notlarında geçen “Test 2 mevcut değildir / oluşturulmaz” ifadeleri o eklemelerin tarihsel durumudur; bu bölüm güncel durumu bildirir.
+
+Kaynak aynı 11 sayfalık kullanıcı dosyası `ing6.pdf`'dir (Library: `libfile_7160a3c97f7c8191acf09f205420876c`). Birinci yazılı senaryoları s.2–6, ikinci yazılı senaryoları s.7–11'dir. Occupations, Holidays, Bookworms, Saving the Planet ve Democracy ünitelerindeki ilgili okuma becerileri esas alınır. Kaynak tam dönem/yıl müfredatı değildir. Bu özgün çoktan seçmeli alıştırmalar resmî sınav kopyası değildir; kaynağın açık uçlu/kısa cevaplı sınav biçiminin veya bağımsız yazma çalışmalarının yerine geçmez.
+
+**10 yeni soru: 7 anlamlı yerel SVG + 3 metin**. Sorular ve seçenekler İngilizce, açıklamalar Türkçedir. Orta zorluk; kısa iletilerdeki bir veya iki açık ipucunu eşleştirme, basit tarih/konum okuma ve kısa yönergeleri uygulama yoluyla sağlanır. Önceki zor testlerin çok aşamalı kısıtları, zaman çizelgesi çıkarımları ve istisnalı kuralları kullanılmaz. Q7 ve Q10 daha kolay kelime/iletişim sorularıdır; bütün soruların aynı güçlükte olduğu iddia edilmez.
+
+Kimlikler `e6-2-t2-01`–`e6-2-t2-10`; rota `/6-sinif/ingilizce/2-donem-test-2`; görseller `public/grade6/ingilizce/term-2/test-2/`. SVG genişlikleri 360 px, tüm yazılar en az 26 px; kayıtlı yükseklikler SVG boyutlarıyla aynıdır. Görseller belirleyici tarih, etkinlik, yerleşim, malzeme, su miktarı veya eylem bilgisini taşır. Ortak soru bileşeni ve büyütme desteği değiştirilmez. Konu başlığı `(Orta)` olarak kaydedilir; ders sayfasındaki açıklama artık orta ve zor düzeyleri doğru biçimde ayırır.
+
+| Soru | Beceri ve görselin işlevi | Kaynak eşlemesi |
+| --- | --- | --- |
+| 1 | Uçağı kullanan kişinin mesleği ile 21 August tarihinin sıra sayılı okunuşunu eşleştirme | Occupations, E6.6.R1 (s.2–7,9) |
+| 2 | Tarihli tatil resminde kayak yapmayı kardan adam yapmaktan ayırma | Holidays, E6.7.R1 (s.2–6,8,10,11) |
+| 3 | Sözlüğün masanın üstünde, lamba ile küre arasındaki yerini tanıma | Bookworms, E6.8.W2 ile ilişkili konum okuma alıştırması (s.8,10) |
+| 4 | Kütüphane günlüğündeki tarih ile doğru geçmiş zaman sorusunu eşleştirme | Bookworms, E6.8.R1 (s.7–11) |
+| 5 | Bez çanta ve elmaların plastiğe sarılmaması yönergelerini birlikte uygulama | Saving the Planet, E6.9.R2 (s.8,10,11) |
+| 6 | Aynı bisikleti temizleyen iki yöntemin su miktarını karşılaştırıp tasarruflu olanı seçme | Saving the Planet, E6.9.R1 (s.7–11) |
+| 7 | Oy verme eylemini konuşma yapma, oy sayma ve afiş asmadan ayırma | Democracy, E6.10.R1 (s.10–11) |
+| 8 | Otomobil tamiri ve diş kontrolü gereksinimlerini doğru mesleklerle eşleştirme | Occupations, E6.6.R1 (s.2–7,9) |
+| 9 | Tatil mesajında yer ve ulaşım bilgisi ile belirtilmeyen yol arkadaşı bilgisini ayırma | Holidays, E6.7.R1 (s.2–6,8,10,11) |
+| 10 | Adayın oy istemesini sonuç ilan etmek veya kazanmış olmakla karıştırmama | Democracy, E6.10.R1 (s.10–11) |
+
+Cevap anahtarı: **B, D, A, C, B, D, A, C, A, B**. Önceki **190 İngilizce sorusu** içerik, bağlam ve çözüm mekanizması yönünden incelenir. Yeni doğrudan okuma bağlamları, önceki zor testlerdeki kitap kopyası/ödünç ilişkileri, değişen tatil planları, koşullu çevre rotaları veya eksik/geçersiz oy sayımı senaryolarını tekrarlamaz. Konum sorusu yazma kazanımıyla yalnız ilişkili bir okuma alıştırmasıdır; bağımsız yazma ölçülmez. İlk dönem üniteleri bu teste taşınmaz; tüm ikinci dönem kazanımlarının eksiksiz ölçüldüğü iddia edilmez.
+
+Önceki **77 test / 770 soru / 447 SVG** korunur; eski soru kayıtları ve SVG dosyaları byte düzeyinde karşılaştırılır. Yeni toplam **78 test / 780 soru / 454 SVG**; İngilizce toplamı **20 test / 200 soru**, ikinci dönem İngilizce toplamı **5 test / 50 soru** olur. Veri, TypeScript, tam Next.js 15.5.28 derlemesi, SEO, üretilmiş rotalar ve yeni rota/varlıkların native HTTP kontrolleri uygulanır. Ders sayfasında ve site haritasında Test 2'nin doğru numarası/sırası doğrulanır. Bağımsız dil, içerik, özgünlük ve görsel denetimi ile 360/238 px native SVG piksel incelemesi yapılır. Önceki erişim reddi nedeniyle tarayıcı etkileşim testi yeniden denenmez; native HTTP/SVG incelemesi tarayıcı testi olarak sunulmaz. Bu değişiklik yalnız preview kapsamındadır; production aktarımı yapılmaz.

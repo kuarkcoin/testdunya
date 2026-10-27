@@ -2728,6 +2728,176 @@ export const ingilizceData: SubjectData = {
       "explanation": "Kurala göre bütün adayların konuşması oylamadan önce tamamlanmalıdır; her öğrenci gizli olarak bir kez oy verir. B yeni seçimde bu sırayı ve eşit oy hakkını korur. Eski oyları tutmak, bazı öğrencilere iki oy vermek ya da konuşmalardan önce yeniden oy kullanmak kurallara uymaz."
     }
   ],
+  "test2": [
+    {
+      "id": "e6-2-t2-01",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "Look at the flight card and read Mert's words. Which sentence gives his job and the date of his flight?",
+      "options": [
+        "He is a mechanic. His flight is on the twenty-first of August.",
+        "He is a pilot. His flight is on the twenty-first of August.",
+        "He is a pilot. His flight is on the twelfth of August.",
+        "He is a mechanic. His flight is on the twelfth of August."
+      ],
+      "correct": 1,
+      "explanation": "Mert'in 'I fly this plane' sözü, uçağı kullandığını belirtir; mesleği pilot'tur. Kartta 21 August yazılıdır. 21'in sıra sayısı twenty-first, 12'nin sıra sayısı twelfth'tir. Meslek ve tarihi birlikte doğru veren seçenek B'dir.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-2/soru-01.svg",
+      "imageAlt": "A flight card dated 21 AUGUST shows an aeroplane. Mert says, 'I fly this plane.'",
+      "imageWidth": 360,
+      "imageHeight": 470
+    },
+    {
+      "id": "e6-2-t2-02",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "Look at Rina's holiday album. Which sentence describes what she did on 8 February?",
+      "options": [
+        "She made a snowman in the mountains.",
+        "She went swimming in the sea.",
+        "She stayed in a tent near a lake.",
+        "She went skiing in the mountains."
+      ],
+      "correct": 3,
+      "explanation": "8 February tarihli resimde Rina, dağda kayak takımlarıyla kaymaktadır: 'She went skiing in the mountains.' Kardan adam yaptığı resim ise 9 February tarihlidir. Soruda 8 Şubat istendiği için D doğrudur.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-2/soru-02.svg",
+      "imageAlt": "Rina's holiday album has two dated pictures. 8 FEBRUARY: Rina on skis with ski poles on a snowy mountain slope. 9 FEBRUARY: Rina beside a snowman, putting its hat on.",
+      "imageWidth": 360,
+      "imageHeight": 650
+    },
+    {
+      "id": "e6-2-t2-03",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "Look at the reading corner. Which sentence correctly describes the dictionary?",
+      "options": [
+        "It is on the desk, between the lamp and the globe.",
+        "It is under the desk, next to the storybook.",
+        "It is on the desk, behind the globe.",
+        "It is under the desk, below the storybook."
+      ],
+      "correct": 0,
+      "explanation": "DICTIONARY yazılı kitap masanın üstündedir; soldaki lamba ile sağdaki kürenin arasındadır. Bu konum 'on the desk, between the lamp and the globe' ile anlatılır. Masanın altındaki kitap ise STORYBOOK'tur; sözlük değildir.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-2/soru-03.svg",
+      "imageAlt": "A reading corner viewed from the front. A lamp, a closed book labelled DICTIONARY and a globe stand from left to right on the desk. The dictionary is fully visible between the lamp and the globe. A different book labelled STORYBOOK is on the floor under the desk.",
+      "imageWidth": 360,
+      "imageHeight": 510
+    },
+    {
+      "id": "e6-2-t2-04",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "Read Ece's library diary. Which question has the answer 'On 11 May'?",
+      "options": [
+        "Where did Ece write a story?",
+        "When did Ece read a poem?",
+        "When did Ece write a story?",
+        "Who read a poem on 10 May?"
+      ],
+      "correct": 2,
+      "explanation": "Günlüğe göre Ece 10 Mayıs'ta bir şiir okumuş, 11 Mayıs'ta bir hikâye yazmıştır. 'On 11 May' bir tarih yanıtıdır; 'When did Ece write a story?' sorusuna karşılık gelir. Where yer, who kişi sorar. B'deki şiir okuma sorusunun yanıtı ise 10 Mayıs'tır.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-2/soru-04.svg",
+      "imageAlt": "Ece's library diary shows two dated entries. 10 MAY: 'I read a poem.' with an open-book drawing. 11 MAY: 'I wrote a story.' with a pencil and writing-page drawing.",
+      "imageWidth": 360,
+      "imageHeight": 560
+    },
+    {
+      "id": "e6-2-t2-05",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "The eco-club says, 'Use a cloth bag. Do not put the apples in plastic.' Which shopping picture follows BOTH instructions?",
+      "options": [
+        "Picture A.",
+        "Picture B.",
+        "Picture C.",
+        "Picture D."
+      ],
+      "correct": 1,
+      "explanation": "B'de bez çanta (CLOTH) kullanılır ve elmalar ayrıca plastiğe sarılmamıştır; iki yönerge de karşılanır. A'da çanta bezdir ancak elmalar plastik içindedir. C ve D'de çanta plastiktir. D'de elmaların çevresinde ayrıca plastik de vardır.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-2/soru-05.svg",
+      "imageAlt": "Four shopping pictures show an outer bag and apples. A: outer bag labelled CLOTH; the apples inside it are enclosed in a separate wrapper labelled PLASTIC. B: outer bag labelled CLOTH; the apples have no wrapper. C: outer bag labelled PLASTIC; the apples have no separate wrapper. D: outer bag labelled PLASTIC; the apples also have a separate wrapper labelled PLASTIC.",
+      "imageWidth": 360,
+      "imageHeight": 870
+    },
+    {
+      "id": "e6-2-t2-06",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "The eco-club wants to use less water to wash one bike. Both methods in the picture clean the bike. Which suggestion uses less water?",
+      "options": [
+        "Use the hose; it uses 5 litres.",
+        "Use the bucket; it uses 20 litres.",
+        "Use the hose; it uses 20 litres.",
+        "Use the bucket; it uses 5 litres."
+      ],
+      "correct": 3,
+      "explanation": "Görselde bir bisikleti yıkamak için kova (bucket) ile 5 litre, hortum (hose) ile 20 litre su kullanıldığı gösterilir. İki yöntem de bisikleti temizlediğine göre daha az su kullanan kova seçilmelidir. D hem aracı hem miktarı doğru verir; C'deki miktar doğru olsa da hortum daha fazla su kullanır.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-2/soru-06.svg",
+      "imageAlt": "Two water-use panels for washing one bike. The top panel shows a bucket and is labelled BUCKET, 5 LITRES. The bottom panel shows a hose with flowing water and is labelled HOSE, 20 LITRES. A bicycle icon appears in both panels.",
+      "imageWidth": 360,
+      "imageHeight": 570
+    },
+    {
+      "id": "e6-2-t2-07",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "The class has finished the speeches. It is time to vote. Which picture shows a student voting?",
+      "options": [
+        "Picture A.",
+        "Picture B.",
+        "Picture C.",
+        "Picture D."
+      ],
+      "correct": 0,
+      "explanation": "A'da bir öğrenci oy kâğıdını oy sandığına bırakmaktadır; bu eylem 'voting'dir. B'de konuşma yapılır, C'de masadaki oylar sayılır, D'de aday afişi asılır. Soruda konuşmaların bittiği ve oy verme zamanının geldiği belirtilmiştir.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-2/soru-07.svg",
+      "imageAlt": "Four election-day pictures. A: a student drops one ballot through the slot of a box labelled VOTE. B: a student speaks at a podium to classmates. C: a student counts separate ballot papers on a table, with three papers on one side and two on the other. D: a student puts a candidate portrait poster on a wall.",
+      "imageWidth": 360,
+      "imageHeight": 620
+    },
+    {
+      "id": "e6-2-t2-08",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "Read the messages.\nDeniz: 'My car is broken. I need someone to repair it.'\nCan: 'My tooth hurts. I need someone to check it.'\nWhich workers can help Deniz and Can, in that order?",
+      "options": [
+        "A dentist and a mechanic.",
+        "A mechanic and a tailor.",
+        "A mechanic and a dentist.",
+        "A tailor and a dentist."
+      ],
+      "correct": 2,
+      "explanation": "Deniz'in otomobilini tamir edecek kişi mechanic, yani tamircidir. Can'ın dişini kontrol edecek kişi dentist, yani diş hekimidir. İstenen sıra Deniz, ardından Can olduğu için 'a mechanic and a dentist' doğrudur. Tailor ise terzidir."
+    },
+    {
+      "id": "e6-2-t2-09",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "Read Arin's holiday message.\n'During my holiday, I visited an old village. I travelled there by train.'\nWhich question has NO answer in the message?",
+      "options": [
+        "Who travelled with Arin?",
+        "Where did Arin go during the holiday?",
+        "How did Arin travel to the village?",
+        "Did Arin visit an old village?"
+      ],
+      "correct": 0,
+      "explanation": "Metin, Arin'in eski bir köyü ziyaret ettiğini ve oraya trenle gittiğini söyler. Bu bilgiler B, C ve D'yi yanıtlar. Arin'in kiminle yolculuk yaptığı belirtilmez; tek başına gittiği de söylenmez. Bu nedenle A'nın metinde yanıtı yoktur."
+    },
+    {
+      "id": "e6-2-t2-10",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "Read Lena's message to her classmates.\n'I want to be your class president. I will listen to your ideas. Please vote for me!'\nWhat is Lena doing?",
+      "options": [
+        "She is announcing the final election results.",
+        "She is asking her classmates to vote for her.",
+        "She is saying that she has already won.",
+        "She is congratulating another class president."
+      ],
+      "correct": 1,
+      "explanation": "Lena sınıf başkanı olmak istediğini söyleyerek arkadaşlarından oy ister. 'Please vote for me' ifadesi B'deki anlamı verir. Sonuç açıklamaz, seçimi zaten kazandığını söylemez ve başka bir başkanı tebrik etmez."
+    }
+  ],
   "test3": [
     {
       "id": "e6-2-t3-01",
