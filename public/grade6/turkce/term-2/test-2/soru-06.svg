@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="800" viewBox="0 0 360 800" role="img">
+<title>Aynı söz, iki ayrı masa sahnesi</title>
+<desc>İlk sahnede gülümseyen kişi düzenli masaya bakar. İkincide kaşlarını çatmış kişi dağınık masaya bakar. İki sahnede de Ne düzenli bir masa! der.</desc>
+<rect width="360" height="800" rx="20" fill="#f8fafc"/>
+<rect x="12" y="12" width="336" height="376" rx="14" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+<text x="26" y="48" font-family="DejaVu Sans, sans-serif" font-size="26" font-weight="700" text-anchor="start" fill="#0f172a">1. sahne</text>
+<rect x="111" y="65" width="226" height="91" rx="14" fill="#eff6ff" stroke="#64748b" stroke-width="2"/>
+<path d="M 126 156 L 92 175 L 146 156" fill="#eff6ff" stroke="#64748b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="224" y="101" font-family="DejaVu Sans, sans-serif" font-size="26" font-weight="400" text-anchor="middle" fill="#0f172a">Ne düzenli</text>
+<text x="224" y="135" font-family="DejaVu Sans, sans-serif" font-size="26" font-weight="400" text-anchor="middle" fill="#0f172a">bir masa!</text>
+<circle cx="56" cy="208" r="29" fill="#f6c7a5" stroke="#334155" stroke-width="3"/>
+<path d="M 29 201 Q 27 170 54 177 Q 79 171 84 199" fill="#334155" stroke="#334155" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="47" cy="208" r="2.5" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+<circle cx="67" cy="208" r="2.5" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+<path d="M 44 219 Q 56 231 69 217" fill="none" stroke="#334155" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 31 247 Q 55 237 80 248 L 87 304 L 25 304 Z" fill="#dbeafe" stroke="#334155" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="78" y1="254" x2="105" y2="272" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
+<line x1="105" y1="272" x2="120" y2="262" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
+<line x1="40" y1="305" x2="35" y2="364" stroke="#475569" stroke-width="7" stroke-linecap="round"/>
+<line x1="73" y1="305" x2="81" y2="364" stroke="#475569" stroke-width="7" stroke-linecap="round"/>
+<rect x="116" y="313" width="221" height="13" rx="3" fill="#bfdbfe" stroke="#334155" stroke-width="2"/>
+<line x1="131" y1="328" x2="131" y2="369" stroke="#475569" stroke-width="6" stroke-linecap="round"/>
+<line x1="320" y1="328" x2="320" y2="369" stroke="#475569" stroke-width="6" stroke-linecap="round"/>
+<line x1="132" y1="283" x2="132" y2="246" stroke="#b45309" stroke-width="5" stroke-linecap="round"/>
+<line x1="144" y1="283" x2="144" y2="241" stroke="#2563eb" stroke-width="5" stroke-linecap="round"/>
+<line x1="156" y1="283" x2="156" y2="248" stroke="#b91c1c" stroke-width="5" stroke-linecap="round"/>
+<rect x="123" y="278" width="42" height="34" rx="3" fill="#fef3c7" stroke="#92400e" stroke-width="2"/>
+<rect x="186" y="250" width="17" height="62" rx="2" fill="#99f6e4" stroke="#475569" stroke-width="2"/>
+<line x1="190" y1="306" x2="199" y2="306" stroke="#64748b" stroke-width="2" stroke-linecap="round"/>
+<rect x="204" y="241" width="17" height="71" rx="2" fill="#c7d2fe" stroke="#475569" stroke-width="2"/>
+<line x1="208" y1="306" x2="217" y2="306" stroke="#64748b" stroke-width="2" stroke-linecap="round"/>
+<rect x="222" y="256" width="17" height="56" rx="2" fill="#fed7aa" stroke="#475569" stroke-width="2"/>
+<line x1="226" y1="306" x2="235" y2="306" stroke="#64748b" stroke-width="2" stroke-linecap="round"/>
+<rect x="260" y="304" width="64" height="7" rx="1" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+<rect x="260" y="297" width="64" height="7" rx="1" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+<rect x="260" y="290" width="64" height="7" rx="1" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+<rect x="12" y="406" width="336" height="376" rx="14" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+<text x="26" y="442" font-family="DejaVu Sans, sans-serif" font-size="26" font-weight="700" text-anchor="start" fill="#0f172a">2. sahne</text>
+<rect x="111" y="459" width="226" height="91" rx="14" fill="#eff6ff" stroke="#64748b" stroke-width="2"/>
+<path d="M 126 550 L 92 569 L 146 550" fill="#eff6ff" stroke="#64748b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="224" y="495" font-family="DejaVu Sans, sans-serif" font-size="26" font-weight="400" text-anchor="middle" fill="#0f172a">Ne düzenli</text>
+<text x="224" y="529" font-family="DejaVu Sans, sans-serif" font-size="26" font-weight="400" text-anchor="middle" fill="#0f172a">bir masa!</text>
+<circle cx="56" cy="602" r="29" fill="#f6c7a5" stroke="#334155" stroke-width="3"/>
+<path d="M 29 595 Q 27 564 54 571 Q 79 565 84 593" fill="#334155" stroke="#334155" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="47" cy="602" r="2.5" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+<circle cx="67" cy="602" r="2.5" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+<line x1="40" y1="591" x2="51" y2="596" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
+<line x1="63" y1="596" x2="74" y2="591" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
+<path d="M 44 620 Q 56 609 69 620" fill="none" stroke="#334155" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 31 641 Q 55 631 80 642 L 87 698 L 25 698 Z" fill="#dbeafe" stroke="#334155" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="78" y1="648" x2="105" y2="666" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
+<line x1="105" y1="666" x2="120" y2="656" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
+<line x1="40" y1="699" x2="35" y2="758" stroke="#475569" stroke-width="7" stroke-linecap="round"/>
+<line x1="73" y1="699" x2="81" y2="758" stroke="#475569" stroke-width="7" stroke-linecap="round"/>
+<rect x="116" y="707" width="221" height="13" rx="3" fill="#bfdbfe" stroke="#334155" stroke-width="2"/>
+<line x1="131" y1="722" x2="131" y2="763" stroke="#475569" stroke-width="6" stroke-linecap="round"/>
+<line x1="320" y1="722" x2="320" y2="763" stroke="#475569" stroke-width="6" stroke-linecap="round"/>
+<path d="M 128 676 L 151 665 L 165 693 L 142 704 Z" fill="#fef3c7" stroke="#92400e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="158" y1="705" x2="197" y2="684" stroke="#b45309" stroke-width="5" stroke-linecap="round"/>
+<line x1="169" y1="677" x2="206" y2="702" stroke="#2563eb" stroke-width="5" stroke-linecap="round"/>
+<line x1="146" y1="696" x2="203" y2="694" stroke="#b91c1c" stroke-width="5" stroke-linecap="round"/>
+<path d="M 209 673 L 225 668 L 240 704 L 224 707 Z" fill="#c7d2fe" stroke="#334155" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 230 654 L 248 660 L 233 705 L 216 699 Z" fill="#99f6e4" stroke="#334155" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 242 692 L 285 675 L 292 689 L 250 706 Z" fill="#fed7aa" stroke="#334155" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 271 653 L 327 665 L 318 703 L 263 690 Z" fill="#ffffff" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 265 674 L 321 663 L 329 696 L 273 707 Z" fill="#ffffff" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 276 676 L 331 681 L 328 712 L 273 706 Z" fill="#ffffff" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -88,3 +88,26 @@ Kaynak: kullanıcının sağladığı 11 sayfalık `ing6.pdf`, **6. Sınıf İng
 | 10 | Aday konuşması, gizli oy ve eşit oy hakkını yeni seçim planında koruma | Democracy, E6.10.R1 |
 
 Yazma kazanımları doğrudan ölçülmez; tüm kazanımların eksiksiz kapsandığı iddia edilmez. İlk dönem Life / Yummy Breakfast / Downtown / Weather and Emotions / At the Fair kapsamı bu yeni teste taşınmaz. Önceki tüm sorular ile ikinci dönem Türkçe, Matematik ve Fen Bilimleri Test 1 korunur.
+
+## Türkçe — 2. dönem Test 2 (zor)
+
+Aynı kullanıcı kaynağındaki ikinci yazılı becerilerine yönelik 10 yeni soru: **8 metin + 2 anlamlı görsel okuma**. Bu test resmî sınav kopyası veya tüm dönem kazanımlarının eksiksiz ölçümü değildir. Yazma becerileri, bağımsız metin üretimi yerine seçenek değerlendirme yoluyla dolaylı olarak çalıştırılır.
+
+Kimlikler `t6-2-t2-01`–`t6-2-t2-10`; rota `/6-sinif/turkce/2-donem-test-2`; görseller `public/grade6/turkce/term-2/test-2/`. İki pasif SVG 360 px genişlikte, en az 26 px yazılıdır. Biri aynı verilerin farklı eksen başlangıçlarıyla sunulmasını, diğeri aynı sözün görüntüye göre övgü veya eleştiri taşımasını yorumlatır. Görsel bilgiler olmadan bu soruların yanıtları belirlenemez.
+
+| Soru | Akıl yürütme | Kaynak eşlemesi |
+| --- | --- | --- |
+| 1 | Sorunun metindeki işlevini ve ardından gelen örneklerle bağını yorumlama | T.O.6.13 (s.6–7) |
+| 2 | Defterin okunması ile defterde anlatılan olayın kişi, yer ve zamanlarını ayırma | T.O.6.14 (s.2,3,7) |
+| 3 | Karşılaştırmalı metinde ortak ve farklı özellikleri sınıflandırma | T.O.6.15 (s.6) |
+| 4 | Kişileştirme ve benzetmenin metne katkısını ifadelerden çıkarma | T.O.6.20 (s.2,4–6) |
+| 5 | Eksen başlangıcının görsel algıya etkisini verilerle denetleme | T.O.6.22 (s.6), T.O.6.24 (s.2,3,5–7) |
+| 6 | Söz, yüz ifadesi ve nesne düzeni üzerinden doğrudan anlam ile örtük eleştiriyi ayırma | T.O.6.22, T.O.6.13 |
+| 7 | Metni kendi belirlediği ölçütlerle eleştirme; gerçekleşen ile planlananı ayırma | T.O.6.25 (s.2,4,5,7); T.Y.6.15 ile ilişkili seçim alıştırması (s.4,7) |
+| 8 | Bağımsız fikir üretimi ve kişi yerine gerekçe tartışmasını sağlayan işlem sırası | T.O.6.26 (s.3,4,6,7); T.Y.6.16 ile ilişkili seçim alıştırması (s.3,7) |
+| 9 | Karşıtlık ile yeniden açıklama bağlantılarını bağlamdan belirleme | T.Y.6.20 ile ilişkili seçim alıştırması (s.2,6) |
+| 10 | Özel addan türeyen sözcükte ek yazımı ve doğrudan sorunun noktalaması | T.Y.6.21 ile ilişkili seçim alıştırması (s.2,4–6) |
+
+Zorluk, üst sınıf terimlerinden değil anlatı katmanlarını, kanıtları ve anlam ilişkilerini birlikte değerlendirmekten gelir; tüm sorular eşit güçlükte değildir. Cevap anahtarı: **C, A, D, B, C, A, D, B, C, D**.
+
+Önceki 65 test / 650 soru / 368 SVG korunur. Yeni toplam: **66 test / 660 soru / 370 SVG**. Türkçe toplamı 18 test / 180 sorudur; ikinci dönem Türkçe bölümü 2 test / 20 soru içerir. Test sayıları mevcut kayıt yapısından hesaplanır; ortak soru arayüzü değiştirilmez. Production aktarımı bu içerik eklemesinin parçası değildir.

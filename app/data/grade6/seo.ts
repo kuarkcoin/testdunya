@@ -46,7 +46,7 @@ const secondTermTopics: Partial<Record<SubjectId, string[]>> = {
   ingilizce: ['Occupations, Holidays, Bookworms, Saving the Planet ve Democracy (Zor)'],
   fen: ['Madde, Elektrik, Renkler ve Biyoçeşitlilik: Deneysel Akıl Yürütme (Zor)'],
   matematik: ['Cebirsel Düşünme, Örüntüler, Algoritmalar ve Alan (Zor)'],
-  turkce: ['Metni Yorumlama, Eleştirel Okuma ve Görsel Çözümleme (Zor)'],
+  turkce: ['Metni Yorumlama, Eleştirel Okuma ve Görsel Çözümleme (Zor)', 'Anlatı Katmanları, Görsel İleti ve Gerekçeli Değerlendirme (Zor)'],
 };
 
 export const getGrade6Subject = (id: string) => grade6Subjects.find((subject) => subject.id === id);

@@ -2555,6 +2555,156 @@ export const turkceData: SubjectData = {
       "correct": 2,
       "explanation": "“Buna rağmen” beklenenin tersine gerçekleşen sonucu bildirir; “bu yüzden” ise kısalığı anlamanın nedeni yapar. Buradaki “de” katma anlamındaki bağlaçtır ve “ziyaretçiler”den ayrı yazılır. İki koşulu yalnız C birlikte sağlar."
     }
+  ],
+  "test2": [
+    {
+      "id": "t6-2-t2-01",
+      "subject": "turkce",
+      "term": 2,
+      "prompt": "“Bir öykünün etkileyici olması için kahramanın mutlaka büyük bir tehlike atlatması mı gerekir? Bir öyküde çocuk, taşınacak arkadaşının yanındaki yeri son gün de boş bırakmaz; onunla oturur. Başka bir öyküde anne, çocuğu bağcıklarını kendi bağlamaya çalışırken işi onun yerine yapmaya kalkışmaz; sabırla bekler. Bu küçük anlar da ayrılığı ve büyümeyi düşündürebilir.”\n\nParçanın ilk cümlesindeki sorunun, düşüncenin geliştirilmesine katkısı hangi seçenekte doğru açıklanmıştır?",
+      "options": [
+        "Sonraki örneklerde kahramanların atlattığı tehlikelerin büyüklüklerini karşılaştırmaya hazırlık yapmaktadır.",
+        "Büyük tehlikeleri anlatan öykülerin etkileyici olamayacağını kesinleştirip bu yargıya örnekler hazırlamaktadır.",
+        "Etkileyiciliğin büyük bir tehlikeye bağlı olması gerektiğini sorgulayarak sıradan anların etkisini gösteren örneklere zemin hazırlamaktadır.",
+        "Konuları farklı olan iki öyküden hangisinin daha etkileyici olduğunu sorarak sonraki örnekleri başarılarına göre sıralamaktadır."
+      ],
+      "correct": 2,
+      "explanation": "İlk soru, gerçekten bir tehlike listesi veya öykü sıralaması istemez. Etkileyici olmak için büyük bir tehlikenin zorunlu olduğu düşüncesini sorgular. Ardından gelen sıradan davranış örnekleri, ayrılık ve büyüme gibi anlamların küçük anlarda da bulunabileceğini gösterir. Büyük tehlikeleri anlatan öykülerin etkileyici olamayacağı ise söylenmez."
+    },
+    {
+      "id": "t6-2-t2-02",
+      "subject": "turkce",
+      "term": 2,
+      "prompt": "Nehir, salı akşamı evde dedesinin defterini açtı. Sayfanın başında “Pazartesi, kasaba pazarı” yazıyordu. Altındaki satırları okudu: “Tezgâhımı toplarken bir çocuğun yerde bulduğu keseyi pazarcılara gösterdiğini gördüm. Biraz sonra komşu tezgâhtaki kadın, kesenin kendisine ait olduğunu söyleyip içindekileri tek tek saydı. Çocuk, anlattıkları kesedekilerle uyuşunca onu kadına verdi.” Nehir, defteri kapatıp dedesine bir soru sormaya karar verdi.\n\nDefterin okunduğu durum ile defterde anlatılan olayı birbirine karıştırmadan değerlendiren seçenek hangisidir?",
+      "options": [
+        "Defteri okuma salı akşamı evde gerçekleşir; kesenin teslim edildiği olay pazartesi kasaba pazarında geçer ve dede bu olayın gözlemcisidir.",
+        "Defteri okuma salı akşamı evde gerçekleşir; kesenin teslim edildiği olay pazartesi kasaba pazarında geçer ve dede keseyi bulup kadına veren kişidir.",
+        "Defteri okuma salı akşamı evde gerçekleşir; kesenin teslim edildiği olay da salı kasaba pazarında geçer ve dede bu olayın gözlemcisidir.",
+        "Defteri okuma pazartesi akşamı evde gerçekleşir; kesenin teslim edildiği olay pazartesi kasaba pazarında geçer ve dede bu olayın gözlemcisidir."
+      ],
+      "correct": 0,
+      "explanation": "Dıştaki olay, Nehir’in salı akşamı evde defteri okumasıdır. Defterin başlığı, içindeki olayın pazartesi kasaba pazarında geçtiğini gösterir. “Gördüm” diyen dede olayı gözlemlemiştir; keseyi bulan çocuk, sahibi ise komşu tezgâhtaki kadındır. Nehir defterdeki olaya katılmaz."
+    },
+    {
+      "id": "t6-2-t2-03",
+      "subject": "turkce",
+      "term": 2,
+      "prompt": "Bir araştırma yazısında iki kayıt türü karşılaştırılıyor:\n“Gözlem günlüğünde, incelenen ortamın koşulları araştırmacı tarafından değiştirilmeden fark edilenler tarihlerine göre yazılır. Deney raporunda ise bir soruya cevap aramak için planlı olarak değiştirilen koşul ve bunun ardından gözlenenler belirtilir. Her iki kayıtta da yalnız sonuç değil, sonuca hangi gözlemlerden ulaşıldığı açıkça gösterilmelidir.”\n\nBu metnin karşılaştırma yapısını doğru yansıtan çalışma notu hangisidir?",
+      "options": [
+        "Ortak yön: Sonuçları tarihlerine göre sıralama. Ayrılan yön: Günlükte gözlem, raporda yalnız araştırmacının görüşü bulunması.",
+        "Ortak yön: Ortamın koşullarını değiştirmeden inceleme. Ayrılan yön: Günlükte tarihe, raporda soruya yer verilmesi.",
+        "Ortak yön: Bir soruyu planlı değişiklik yaparak inceleme. Ayrılan yön: Günlükte sonuç, raporda sonuçla birlikte gözlem bulunması.",
+        "Ortak yön: Sonucun dayandığı gözlemleri belirtme. Ayrılan yön: Birinde koşullara müdahale edilmemesi, diğerinde planlı değişiklik yapılması."
+      ],
+      "correct": 3,
+      "explanation": "Metnin son cümlesi iki kayıt türünün ortak yönünü verir: Sonucun dayandığı gözlemleri göstermek. İlk iki cümle ise koşullara müdahale bakımından ayrımı kurar. Tarihe göre sıralama yalnız günlük için belirtilmiştir; deney raporunun yalnız görüş içerdiği söylenmez. İkisinde de planlı değişiklik yapılmaz."
+    },
+    {
+      "id": "t6-2-t2-04",
+      "subject": "turkce",
+      "term": 2,
+      "prompt": "“Çınar, dallarını terk eden yapraklara bütün gün sitem etti. Sarı yapraklar, suya bırakılmış küçük kayıklar gibi derenin kıvrımlarını izledi.”\n\nBu metindeki söz sanatlarıyla bunların anlatıma katkısını birlikte doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Çınarın büyüklüğü abartılarak gücü vurgulanmış; yapraklara insan gibi yol seçme yeteneği verilerek kararlılıkları anlatılmıştır.",
+        "Çınara insana özgü bir kırgınlık davranışı verilmiş; yaprakların sudaki ilerleyişi kayıklara benzetilerek canlandırılmıştır.",
+        "Çınar konuşma cümlesiyle kendi kırgınlığını anlatmış; yaprakların sarılığı kayıkların rengine benzetilerek görünüşleri belirtilmiştir.",
+        "Çınarın dalları insan kollarına benzetilmiş; yaprakların derede ilerleyişi gerçek bir yolculuğun doğrudan açıklaması olarak verilmiştir."
+      ],
+      "correct": 1,
+      "explanation": "“Sitem etmek” insana özgü bir davranıştır; çınara yüklenmesi kişileştirmedir. Çınarın kendi ağzından verilmiş bir konuşma yoktur. İkinci cümlede yaprakların su üzerindeki ilerleyişi “küçük kayıklar gibi” sözüyle benzetilmiştir; benzetmenin odağı kayıkların rengi değildir. Kollarla benzetme veya büyüklüğü abartma yapılmamıştır."
+    },
+    {
+      "id": "t6-2-t2-05",
+      "subject": "turkce",
+      "term": 2,
+      "prompt": "Aynı okuma grubunun iki günde okuduğu sayfa sayıları, görselde iki farklı grafikle gösterilmiştir. Bir öğrenci yalnız ikinci grafikteki sütun boylarına bakarak “Salı günü pazartesinin üç katı kadar sayfa okunmuş.” diyor.\n\nBu yorumu değerlendiren hangi açıklama doğrudur?",
+      "options": [
+        "İkinci grafik 38’den başladığı için sayfa sayıları değişmiştir; bu yüzden iki grafikten hangisinin doğru olduğu belirlenemez.",
+        "İlk grafiğin dikey ekseninde daha büyük sayılar bulunduğu için aynı grubun iki günlük toplamı daha yüksek gösterilmiştir.",
+        "İkinci grafikte sütunların 38’in üzerindeki bölümleri karşılaştırılmıştır; 40 ve 44 sayfalık okumalar arasında üç katlık ilişki yoktur.",
+        "İkinci grafikte salı sütunu üç kat yüksek olduğundan yorum doğrudur; sütunların üzerindeki sayılar bu karşılaştırmayı etkilemez."
+      ],
+      "correct": 2,
+      "explanation": "İki grafik de pazartesi 40, salı 44 sayfa bilgisini verir. İlkinde dikey eksen 0’dan, ikincisinde 38’den başlar. İkincide görünen yükseklikler 40−38=2 ve 44−38=6 birimdir; üç katlık fark sayfa sayıları arasında değil, 38’in üzerinde kalan bu parçalar arasındadır. Eksenin başlangıcını gözden kaçırmak aynı veriyi yanıltıcı yorumlamaya yol açar.",
+      "imageUrl": "/grade6/turkce/term-2/test-2/soru-05.svg",
+      "imageAlt": "Aynı verilerin iki sütun grafiği. Her ikisinde pazartesi 40, salı 44 sayfa. Birinci grafiğin eşit aralıklı dikey eksen işaretleri 0, 20, 40, 60; sütunlar 0 çizgisinden başlıyor. İkinci grafiğin eşit aralıklı dikey eksen işaretleri 38, 40, 42, 44, 46; sütunlar 38 çizgisinden başlıyor.",
+      "imageWidth": 360,
+      "imageHeight": 860
+    },
+    {
+      "id": "t6-2-t2-06",
+      "subject": "turkce",
+      "term": 2,
+      "prompt": "Görselde iki ayrı sahnede aynı kişi aynı cümleyi söylüyor. Konuşanın yüz ifadesi ve masaların görünümü de dikkate alındığında, sözün bu iki kullanımını en iyi açıklayan yorum hangisidir?",
+      "options": [
+        "İlk sahnede söz görülen düzeni övüyor; ikinci sahnede ise görüntüyle uyuşmayan aynı söz, düzensizliğe yönelik bir eleştiri taşıyor.",
+        "İlk sahnede masanın düzeni, ikinci sahnede eşya sayısının fazlalığı övülüyor; iki kullanımda da sözün doğrudan anlamı korunuyor.",
+        "İlk sahnede daha önceki dağınıklık eleştiriliyor; ikinci sahnede masa henüz toplanmadığı için gelecekteki düzen övülüyor.",
+        "İki sahnede de masanın düzenli olduğu belirtiliyor; masaların görünümü yalnız konuşmanın nerede geçtiğini gösteriyor."
+      ],
+      "correct": 0,
+      "explanation": "İlk sahnede kalemler kalemlikte, kâğıtlar üst üste ve kitaplar düzenlidir; gülümseyen kişinin sözü görüntüyle örtüşür. İkincide eşyalar dağılmıştır ve kişinin yüzü memnuniyetsizdir. “Ne düzenli bir masa!” sözü burada düz anlamının tersini düşündürerek eleştiri taşır. Geçmişteki veya gelecekteki durumlara ilişkin bilgi verilmez.",
+      "imageUrl": "/grade6/turkce/term-2/test-2/soru-06.svg",
+      "imageAlt": "İki ayrı sahnede aynı kişi “Ne düzenli bir masa!” diyor. Birinci sahnede kişi gülümsüyor; kalemler kalemlikte, kitaplar dik ve kâğıtlar üst üste duruyor. İkinci sahnede kişinin kaşları çatık, ağzının köşeleri aşağı dönük; kalemler masaya dağılmış, kitaplar eğri duruyor, kâğıtlar birbirinin üzerine farklı yönlerde gelmiş.",
+      "imageWidth": 360,
+      "imageHeight": 800
+    },
+    {
+      "id": "t6-2-t2-07",
+      "subject": "turkce",
+      "term": 2,
+      "prompt": "Bir okul dergisindeki yazıda şöyle deniyor: “Bu yazıda bir etkinliğe gelenek diyebilmek için iki özellik arıyoruz: Kuşaktan kuşağa aktarılması ve belirli zamanlarda tekrarlanması. Okulumuzda bu yıl ilk kez yapılan, önümüzdeki yıllarda da düzenlenmesi planlanan uçurtma yarışması bu tanıma göre bir gelenektir.”\n\nYazıyı kendi belirlediği ölçütlere göre eleştiren hangi cümle en uygundur?",
+      "options": [
+        "Yarışmanın düzenli tekrarı planlandığı için kuşaktan kuşağa aktarılma koşulu ayrıca aranmamalıdır; iki ölçüt birbirinin yerine geçebilir.",
+        "Yarışmanın gelecek yıllarda yapılması planlandığından iki ölçüt de karşılanmıştır; örnek ile tanım arasında sorun yoktur.",
+        "Yarışma henüz kuşaktan kuşağa aktarılmamıştır; bu nedenle ileride düzenli tekrarlansa ve aktarılsa bile gelenek sayılması mümkün değildir.",
+        "Gelecekte tekrarlanmasının planlanması, şimdiden kuşaktan kuşağa aktarıldığını göstermez; örnek, verilen iki ölçütü henüz karşılamaz."
+      ],
+      "correct": 3,
+      "explanation": "Soru, “gelenek” kavramının bütün tanımlarını değil yazının kendi koyduğu iki ölçütü esas alır. İlk kez yapılan yarışma henüz kuşaktan kuşağa aktarılmamıştır; geleceğe yönelik tekrar planı gerçekleşmiş aktarımın kanıtı değildir. Ölçütler birbirinin yerine geçmez. Şu anda karşılanmamaları, yarışmanın gelecekte bu özellikleri kazanamayacağını da göstermez."
+    },
+    {
+      "id": "t6-2-t2-08",
+      "subject": "turkce",
+      "term": 2,
+      "prompt": "Bir proje grubunda öneriler sırayla sözlü olarak alınıyor. İlk konuşanın önerisinden sonra diğer öğrenciler çoğunlukla aynı düşünceyi tekrarlıyor. Bazı öğrenciler ise önerileri beğenilmezse kendileriyle alay edileceğini düşündükleri için hiç konuşmuyor. Grup, herkesin önce başkasından etkilenmeden fikir üretmesini, sonra fikirlerin kişi adları üzerinden değil gerekçeleri üzerinden tartışılmasını istiyor.\n\nBu amaçlara ulaşmak için hangi uygulama sırası en uygundur?",
+      "options": [
+        "Önce en deneyimli öğrenci önerisini açıklasın; ardından herkes bu öneriye katılıp katılmadığını adıyla yazsın ve gerekçeler tartışılsın.",
+        "Herkes konuşmalar başlamadan önerisini gerekçesiyle adsız yazsın; sonra notlar okunup kişiler tahmin edilmeden gerekçeler karşılaştırılsın.",
+        "Herkes konuşmalar başlamadan önerisini gerekçesiyle adsız yazsın; sonra notların sahipleri açıklansın ve en çok desteklenen kişi seçilsin.",
+        "Öneriler önce topluca tartışılsın; ardından herkes konuşulanlardan birini adsız yazsın ve yazılı önerilerin gerekçeleri karşılaştırılsın."
+      ],
+      "correct": 1,
+      "explanation": "B’de bireysel yazma konuşmalardan önce geldiği için ilk konuşanın yönlendirmesi azaltılır. Notların adsız kalması ve kişilerin tahmin edilmemesi, tartışmayı önerinin sahibinden gerekçesine çevirir. A ilk kişinin etkisini sürdürür; C yeniden kişileri değerlendirmeye yönelir; D’de bağımsız üretimden önce ortak tartışma yapılır."
+    },
+    {
+      "id": "t6-2-t2-09",
+      "subject": "turkce",
+      "term": 2,
+      "prompt": "“Bir öyküde bütün soruların sonunda cevaplanması gerektiğini düşünürdüm. _____ bazı öyküler, cevabı açıkça vermeyerek okurun düşünmeyi sürdürmesini sağlıyor. _____ metin bitse de okurun zihnindeki arayış devam edebiliyor.”\n\nMetindeki anlam ilişkileri gözetildiğinde boşluklara sırasıyla hangi ifadeler getirilmelidir?",
+      "options": [
+        "Bu nedenle — Başka bir deyişle",
+        "Oysa — Buna örnek olarak",
+        "Oysa — Başka bir deyişle",
+        "Bu nedenle — Buna örnek olarak"
+      ],
+      "correct": 2,
+      "explanation": "“Oysa” ilk cümledeki bütün cevapların verilmesi gerektiği düşüncesini, sonraki cümledeki açık cevap vermemenin katkısıyla karşılaştırır. Son cümle yeni ve somut bir örnek sunmaz; okurun düşünmeye devam etmesini farklı sözlerle açıklar. Bu yüzden ikinci boşlukta “Başka bir deyişle” uygundur. “Bu nedenle” karşıtlık yerine neden–sonuç kurardı."
+    },
+    {
+      "id": "t6-2-t2-10",
+      "subject": "turkce",
+      "term": 2,
+      "prompt": "Bir öğrenci, yazacağı cümlede “Türkçe” sözcüğüne gelen çekim ekini ve öğretmenin doğrudan sorduğu sorunun noktalamasını doğru kullanmak istiyor.\n\nHangi cümlede her iki kurala da uyulmuştur?",
+      "options": [
+        "Öğretmen, “Türkçe’nin bu sözcüğü nereden aldığını biliyor musun?” diye sordu.",
+        "Öğretmen, “Türkçenin bu sözcüğü nereden aldığını biliyor musun.” diye sordu?",
+        "Öğretmen, “Türkçe’nin bu sözcüğü nereden aldığını biliyor musun.” diye sordu?",
+        "Öğretmen, “Türkçenin bu sözcüğü nereden aldığını biliyor musun?” diye sordu."
+      ],
+      "correct": 3,
+      "explanation": "“Türkçe”, özel addan yapım ekiyle türemiştir; bu sözcüğe gelen çekim eki kesmeyle ayrılmaz: “Türkçenin”. Doğrudan sorulan söz, tırnak içinde soru işaretiyle biter. Dıştaki “Öğretmen … diye sordu.” cümlesi bir soru sormaz, gerçekleşen konuşmayı bildirir ve noktayla biter."
+    }
   ]
 }
 };
