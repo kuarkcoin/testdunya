@@ -3300,6 +3300,176 @@ export const matematikData: SubjectData = {
         "correct": 2,
         "explanation": "İlk terime a, ikinci terime b diyelim. Beşinci terim a + 12, onuncu terim b + 16’dır. Birincisi diğerinden 8 eksik olduğuna göre a + 12 = b + 8; yani b, a’dan 4 fazladır. Yedinci terim a + 18, on ikinci terim b + 20 olduğundan a + b + 38 = 130 ve a + b = 92 bulunur. Aralarında 4 fark bulunan bu iki sayı 44 ve 48’dir; a = 44. On yedinci terim, tek sıralardaki dizinin dokuzuncu terimidir. İlk terime sekiz kez 6 eklenir: 44 + 8 × 6 = 92. Kontrol: beşinci 56, onuncu 64; yedinci 62, on ikinci 68’dir."
       }
-    ]
+    ],
+    "test6": [
+      {
+        "id": "m6-2-t6-01",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Düz bir yolun aynı tarafına beş fidan dikiliyor. Yan yana iki fidan arasındaki uzaklıklar birbirine eşittir. Yolun uzunluğu ve uçlarda bırakılan boşluklar görselde verilmiştir.\n\nİkinci fidan ile beşinci fidan arasındaki uzaklık kaç metredir?",
+        "options": [
+          "12",
+          "16",
+          "18",
+          "24"
+        ],
+        "correct": 2,
+        "explanation": "İlk ve son fidan arasındaki uzaklık 28 − 2 − 2 = 24 m’dir. Beş fidanın arasında dört eş aralık vardır; her aralık 24 ÷ 4 = 6 m olur. İkinci fidandan beşinci fidana kadar üç aralık bulunduğundan uzaklık 3 × 6 = 18 m’dir.",
+        "imageUrl": "/grade6/matematik/term-2/test-6/soru-01.svg",
+        "imageAlt": "28 m uzunluğunda düz bir yol boyunca soldan sağa 1, 2, 3, 4, 5 numaralı beş fidan var. İlk fidan yolun sol ucundan 2 m, son fidan sağ ucundan 2 m uzakta. Fidanlar arasındaki dört uzaklık eşit.",
+        "imageWidth": 360,
+        "imageHeight": 360
+      },
+      {
+        "id": "m6-2-t6-02",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Eş karelerden oluşan örüntünün ilk üç adımı görseldedir. Her yeni adımda artı biçiminin dört kolunun her birine bir kare ekleniyor.\n\nOnuncu adımdaki şekli yapmak için elinde 36 kare bulunan bir öğrencinin kaç kareye daha ihtiyacı vardır?",
+        "options": [
+          "5",
+          "4",
+          "9",
+          "40"
+        ],
+        "correct": 0,
+        "explanation": "İlk adımda ortadaki kare ve dört koldaki birer kareyle toplam 5 kare vardır. Her adımda 4 kare eklenir. Birinci adımdan onuncu adıma dokuz kez geçilir; onuncu adımda 5 + 9 × 4 = 41 kare gerekir. Öğrencinin 41 − 36 = 5 kareye daha ihtiyacı vardır.",
+        "imageUrl": "/grade6/matematik/term-2/test-6/soru-02.svg",
+        "imageAlt": "Artı biçiminde üç şekil. Birinci adımda bir merkez karesi ve her kolda bir kare; ikinci adımda merkez ve her kolda iki kare; üçüncü adımda merkez ve her kolda üç kare var. Tüm küçük kareler eş büyüklükte.",
+        "imageWidth": 360,
+        "imageHeight": 680
+      },
+      {
+        "id": "m6-2-t6-03",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Akış şemasındaki işlemler ok yönünde uygulanıyor. Karar kutusunda “Evet” veya “Hayır” yollarından yalnız biri izleniyor.\n\nBaşlangıç sayısı 7 olduğunda ekranda hangi sayı gösterilir?",
+        "options": [
+          "16",
+          "20",
+          "26",
+          "23"
+        ],
+        "correct": 3,
+        "explanation": "Önce 7 × 2 = 14, ardından 14 + 6 = 20 elde edilir. 20, 20’den büyük değildir; eşittir. Bu yüzden “Hayır” yolu seçilir ve 3 eklenir. Ekranda 20 + 3 = 23 gösterilir. “Evet” yolundaki çıkarma işlemi uygulanmaz.",
+        "imageUrl": "/grade6/matematik/term-2/test-6/soru-03.svg",
+        "imageAlt": "Akış: Sayıyı al, 2 ile çarp, 6 ekle, sonuç 20’den büyük mü? Evet yolunda 4 çıkar; Hayır yolunda 3 ekle. İki yol sonuç göster kutusunda birleşiyor.",
+        "imageWidth": 360,
+        "imageHeight": 760
+      },
+      {
+        "id": "m6-2-t6-04",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Görseldeki paralelkenar ile üçgenin alanları birbirine eşittir. Kesikli çizgiler, gösterilen tabanlara ait dik yüksekliklerdir.\n\nÜçgenin h yüksekliği kaç santimetredir?",
+        "options": [
+          "8",
+          "12",
+          "16",
+          "24"
+        ],
+        "correct": 1,
+        "explanation": "Paralelkenarın alanı 12 × 8 = 96 cm²’dir. Üçgenin alanı da 96 cm² olmalıdır. Tabanı 16 cm olduğundan 16 × h ÷ 2 = 96; yani 8 × h = 96 olur. Buradan h = 12 cm bulunur. Kontrol: 16 × 12 ÷ 2 = 96 cm².",
+        "imageUrl": "/grade6/matematik/term-2/test-6/soru-04.svg",
+        "imageAlt": "Üstteki paralelkenarın tabanı 12 cm, bu tabana dik yüksekliği 8 cm. Alttaki üçgenin tabanı 16 cm, bu tabana dik yüksekliği h. İki dikmenin tabanlarla birleştiği noktalarda dik açı işaretleri var.",
+        "imageWidth": 360,
+        "imageHeight": 620
+      },
+      {
+        "id": "m6-2-t6-05",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Okulun dikdörtgen biçimindeki ekim alanının ölçüleri görselde verilmiştir. Alanın tamamına çim tohumu ekilecek; her 1 m² için 20 gram tohum kullanılacaktır.\n\nToplam kaç gram çim tohumu gerekir?",
+        "options": [
+          "45",
+          "60",
+          "90",
+          "900"
+        ],
+        "correct": 2,
+        "explanation": "Önce uzunlukları aynı birime çevirelim: 150 cm = 1,5 m. Dikdörtgenin alanı 3 × 1,5 = 4,5 m² olur. Her metrekareye 20 gram gerektiğinden toplam 4,5 × 20 = 90 gram tohum kullanılır.",
+        "imageUrl": "/grade6/matematik/term-2/test-6/soru-05.svg",
+        "imageAlt": "Dikdörtgen ekim alanının yatay kenarı 3 m, düşey kenarı 150 cm olarak gösteriliyor.",
+        "imageWidth": 360,
+        "imageHeight": 340
+      },
+      {
+        "id": "m6-2-t6-06",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir tabela, AB doğru parçasını ortak taban olarak kullanan iki üçgenden oluşuyor. Kesikli çizgiler bu tabana ait dik yüksekliklerdir.\n\nTabelanın bir yüzünün toplam alanı kaç milimetrekaredir?",
+        "options": [
+          "3600",
+          "12000",
+          "14400",
+          "7200"
+        ],
+        "correct": 3,
+        "explanation": "Üst üçgenin alanı 12 × 5 ÷ 2 = 30 cm², alt üçgenin alanı 12 × 7 ÷ 2 = 42 cm²’dir. Üçgenler yalnız AB kenarında birleştiğinden toplam alan 30 + 42 = 72 cm² olur. 1 cm² = 100 mm² olduğuna göre tabelanın alanı 72 × 100 = 7200 mm²’dir. İki yüksekliğin toplamıyla 12 × (5 + 7) ÷ 2 işlemi de aynı alanı verir.",
+        "imageUrl": "/grade6/matematik/term-2/test-6/soru-06.svg",
+        "imageAlt": "Tabela, ortak yatay AB tabanının iki yanındaki üçgenlerden oluşuyor. AB 12 cm. Üst üçgenin AB’ye dik yüksekliği 5 cm, alt üçgeninki 7 cm. Dikmeler aynı doğru üzerinde; AB üzerinde dik açı işareti var. Başka örtüşme yok.",
+        "imageWidth": 360,
+        "imageHeight": 450
+      },
+      {
+        "id": "m6-2-t6-07",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir kulübenin ön yüzü, görseldeki dikdörtgen duvar ile üstündeki üçgen alınlıktan oluşuyor. Kapı dışındaki ön yüzün tamamı bir kat boyanacaktır.\n\nBoyanacak alan kaç metrekaredir?",
+        "options": [
+          "48",
+          "50",
+          "52",
+          "60"
+        ],
+        "correct": 0,
+        "explanation": "Dikdörtgen duvarın alanı 8 × 5 = 40 m²’dir. Üst üçgenin tabanı da 8 m, dik yüksekliği 3 m olduğundan alanı 8 × 3 ÷ 2 = 12 m² olur. Ön yüzün toplam alanı 40 + 12 = 52 m²’dir. Kapının alanı 2 × 2 = 4 m² olduğuna göre boyanacak alan 52 − 4 = 48 m²’dir.",
+        "imageUrl": "/grade6/matematik/term-2/test-6/soru-07.svg",
+        "imageAlt": "Kulübenin ön yüzünün alt bölümü 8 m genişliğinde ve 5 m yüksekliğinde bir dikdörtgen. Üstündeki üçgenin tabanı dikdörtgenin üst kenarı; tepesinden bu tabana çizilen dikme 3 m. Dikdörtgenin alt ortasında 2 m genişlik ve 2 m yükseklikte bir kapı var. Başka açıklık yok.",
+        "imageWidth": 360,
+        "imageHeight": 530
+      },
+      {
+        "id": "m6-2-t6-08",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir kitaplıkta yalnız bilim ve öykü kitapları vardır. Bilim kitaplarının sayısı, öykü kitaplarının sayısının iki katıdır. Kitaplıkta toplam 63 kitap bulunuyor.\n\nBilim kitaplarından 9 tanesi ödünç verildiğinde kitaplıkta kaç bilim kitabı kalır?",
+        "options": [
+          "21",
+          "33",
+          "42",
+          "54"
+        ],
+        "correct": 1,
+        "explanation": "Öykü kitaplarının sayısını bir pay kabul edersek bilim kitapları iki pay, bütün kitaplar üç paydır. Bir pay 63 ÷ 3 = 21 kitaptır. Başlangıçta 2 × 21 = 42 bilim kitabı bulunur. Bunların 9’u verilince 42 − 9 = 33 bilim kitabı kalır."
+      },
+      {
+        "id": "m6-2-t6-09",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir sayı makinesi şu üç adımı sırayla uyguluyor:\n1. Girilen sayıyı 5 ile çarp.\n2. Eksik olan işlemi uygula.\n3. Elde edilen sonucu 2’ye böl.\n\nMakineye 6 girildiğinde sonuç 18 oluyor. Eksik işlem aşağıdakilerden hangisi olabilir?",
+        "options": [
+          "6 ekle.",
+          "6 çıkar.",
+          "3 ekle.",
+          "2 ile çarp."
+        ],
+        "correct": 0,
+        "explanation": "İlk adımdan sonra 6 × 5 = 30 elde edilir. Son adımda 2’ye bölünerek 18 bulunduğuna göre, ikinci adımdan sonra 18 × 2 = 36 olmalıdır. 30’u 36 yapan işlem 6 eklemektir. Kontrol: (6 × 5 + 6) ÷ 2 = 18. Diğer seçenekler aynı sonucu vermez."
+      },
+      {
+        "id": "m6-2-t6-10",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir süslemede boncuklar “sarı, mavi, mavi, yeşil” sırası hiç değişmeden tekrar edilerek diziliyor. Dizilim sarı boncukla başlıyor.\n\nİlk 30 boncuğun kaç tanesi mavidir?",
+        "options": [
+          "14",
+          "16",
+          "15",
+          "22"
+        ],
+        "correct": 2,
+        "explanation": "Tekrar eden her dört boncukluk grupta iki mavi boncuk vardır. İlk 28 boncuk, 7 tam gruptur ve 7 × 2 = 14 mavi boncuk içerir. Kalan iki boncuk yeni grubun ilk ikisi, yani sarı ve mavidir. Bir mavi daha eklenir; toplam 14 + 1 = 15 olur."
+      }
+    ],
   },
 };

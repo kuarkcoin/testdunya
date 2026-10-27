@@ -409,3 +409,29 @@ Kimlikler `e6-2-t2-01`–`e6-2-t2-10`; rota `/6-sinif/ingilizce/2-donem-test-2`;
 Cevap anahtarı: **B, D, A, C, B, D, A, C, A, B**. Önceki **190 İngilizce sorusu** içerik, bağlam ve çözüm mekanizması yönünden incelenir. Yeni doğrudan okuma bağlamları, önceki zor testlerdeki kitap kopyası/ödünç ilişkileri, değişen tatil planları, koşullu çevre rotaları veya eksik/geçersiz oy sayımı senaryolarını tekrarlamaz. Konum sorusu yazma kazanımıyla yalnız ilişkili bir okuma alıştırmasıdır; bağımsız yazma ölçülmez. İlk dönem üniteleri bu teste taşınmaz; tüm ikinci dönem kazanımlarının eksiksiz ölçüldüğü iddia edilmez.
 
 Önceki **77 test / 770 soru / 447 SVG** korunur; eski soru kayıtları ve SVG dosyaları byte düzeyinde karşılaştırılır. Yeni toplam **78 test / 780 soru / 454 SVG**; İngilizce toplamı **20 test / 200 soru**, ikinci dönem İngilizce toplamı **5 test / 50 soru** olur. Veri, TypeScript, tam Next.js 15.5.28 derlemesi, SEO, üretilmiş rotalar ve yeni rota/varlıkların native HTTP kontrolleri uygulanır. Ders sayfasında ve site haritasında Test 2'nin doğru numarası/sırası doğrulanır. Bağımsız dil, içerik, özgünlük ve görsel denetimi ile 360/238 px native SVG piksel incelemesi yapılır. Önceki erişim reddi nedeniyle tarayıcı etkileşim testi yeniden denenmez; native HTTP/SVG incelemesi tarayıcı testi olarak sunulmaz. Bu değişiklik yalnız preview kapsamındadır; production aktarımı yapılmaz.
+
+
+## Matematik — 2. dönem Test 6 (orta, 3/5)
+
+Kullanıcının güncel isteğine göre **orta, 5 üzerinden 3 zorluk hedefiyle** hazırlanmış 10 özgün soru: **7 anlamlı native SVG + 3 metin**. 3/5, bu içerik için editoryal bir hedef düzeydir; öğrenci verileriyle kalibre edilmiş psikometrik güçlük puanı değildir. Önceki Test 1–5'in zor düzeyi bu teste taşınmaz. Kısa ve açık problem bağlamları, genellikle iki–üç aşamalı muhakeme, kolay izlenebilir işlemler kullanılır; karmaşık iç içe döngüler veya çoklu gizli koşullar yoktur. Bazı aşamalarda birden çok basit aritmetik işlem bulunabilir.
+
+Kaynak, kullanıcının sağladığı aynı 9 sayfalık `mat6.pdf` içindeki **6. Sınıf Matematik 2. Dönem 2. Yazılı Konu Soru Dağılım Tablosu**dur: MAT.6.2.1–3 s.2, MAT.6.4.1–3 s.3, senaryolar s.4–9. Yalnız bu altı öğrenme çıktısı esas alınır; çember ve olasılık eklenmez. Test resmî sınav değildir; kaynakta belirtilen açık uçlu/kısa cevaplı sınav biçiminin yerine geçmez ve tüm dönem kazanımlarını eksiksiz ölçmez.
+
+| Soru | Kısa muhakeme zinciri | Kaynak eşlemesi |
+| --- | --- | --- |
+| 1 | Uç boşluklarını çıkarma, fidanlar arasındaki aralıkları sayma | MAT.6.2.1 |
+| 2 | Dört koldaki sabit artışı adım sayısına uygulayıp eksiği bulma | MAT.6.2.2 |
+| 3 | Tek geçişli akışta eşitlik sınırını doğru karar yoluna bağlama | MAT.6.2.3 |
+| 4 | Paralelkenarın alanını eş alanlı üçgenin yüksekliğine aktarma | MAT.6.4.2 |
+| 5 | Uzunluk birimini eşitleyip alan başına tohum ihtiyacını bulma | MAT.6.4.1, MAT.6.4.3 |
+| 6 | Ortak tabanlı iki üçgenin alanlarını toplayıp mm²'ye çevirme | MAT.6.4.1, MAT.6.4.2 |
+| 7 | Dikdörtgen ve üçgen alanlarını toplama, kapı alanını çıkarma | MAT.6.4.2, MAT.6.4.3 |
+| 8 | Toplamı üç eş paya ayırıp bilinmeyen kitap sayısını bulma | MAT.6.2.1 |
+| 9 | Kısa işlem zincirindeki eksik komutu giriş–çıkışla belirleme | MAT.6.2.3 |
+| 10 | Tekrarlayan dört elemanlı grupları ve kalan iki elemanı sayma | MAT.6.2.2 |
+
+Kimlikler `m6-2-t6-01`–`m6-2-t6-10`; rota `/6-sinif/matematik/2-donem-test-6`; görseller `public/grade6/matematik/term-2/test-6/`. Her görsel çözüm için gerekli ölçü, düzen veya işlem bilgisini taşır. SVG genişliği 360 px, yazılar en az 26 px; kayıtlı yükseklikler dosyalarla eşleşir. Ölçülü şekillerin koordinat oranları ve alanları verilenlerle tutarlıdır. Mevcut soru arayüzü, erişilebilir açıklamalar ve büyütme desteği korunur. Konu etiketi `(Orta)`; matematik ders sayfasının kapsam metni artık orta ve zor testleri ayrı açıklar. Yeni veri şeması veya zorluk alanı eklenmez.
+
+Cevap anahtarı: **C, A, D, B, C, D, A, B, A, C**. Önceki 200 matematik sorusu, özellikle ikinci dönem Test 1–5, senaryo ve çözüm mekanizması tekrarları açısından incelenir. Önceki **78 test / 780 soru / 454 SVG** aynen korunur; yeni toplam **79 test / 790 soru / 461 SVG**. Matematik toplamı **21 test / 210 soru**, ikinci dönem bölümü **6 test / 60 soru** olur; sayısal Test 1–6 sırası mevcut kayıt mekanizmasıyla sağlanır.
+
+Doğrulama: veri, TypeScript, tam üretim derlemesi, SEO, statik rota/site haritası ve yerel HTTP sayfa/görsel kontrolleri; 360 px ve 238 px native SVG görsel incelemesi. Tarayıcı etkileşim testi yapılmaz ve yapılmış gibi raporlanmaz. Önizleme dalına içerik eklemesi kapsamındadır; production'a aktarma içerik eklemesinin parçası değildir.

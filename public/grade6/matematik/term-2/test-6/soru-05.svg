@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="340" viewBox="0 0 360 340" role="img">
+<title>Dikdörtgen ekim alanının ölçüleri</title>
+<rect x="0" y="0" width="360" height="340" rx="16" fill="#ffffff"/>
+<g font-family="DejaVu Sans, sans-serif" font-size="26" fill="#0f172a" stroke-linecap="round" stroke-linejoin="round">
+<text x="180" y="40" text-anchor="middle">Ekim alanı</text>
+<rect x="35" y="80" width="240" height="120" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<path d="M285 80 H295 V200 H285" fill="none" stroke="#0f172a" stroke-width="2"/>
+<text x="326" y="134" text-anchor="middle">150</text>
+<text x="326" y="166" text-anchor="middle">cm</text>
+<path d="M35 238 V250 M35 244 H275 M275 238 V250" fill="none" stroke="#0f172a" stroke-width="2"/>
+<text x="155" y="281" text-anchor="middle">3 m</text>
+</g>
+</svg>

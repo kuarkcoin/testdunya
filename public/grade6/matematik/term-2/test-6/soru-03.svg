@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="760" viewBox="0 0 360 760" role="img">
+<title>Koşullu sayı işlem şeması</title>
+<rect x="0" y="0" width="360" height="760" rx="16" fill="#ffffff"/>
+<g font-family="DejaVu Sans, sans-serif" font-size="26" fill="#0f172a" stroke-linecap="round" stroke-linejoin="round">
+<line x1="180" y1="84" x2="180" y2="112" stroke="#0f172a" stroke-width="2"/>
+<polygon points="175,104 185,104 180,112" fill="#0f172a" stroke="#0f172a" stroke-width="2"/>
+<line x1="180" y1="166" x2="180" y2="198" stroke="#0f172a" stroke-width="2"/>
+<polygon points="175,190 185,190 180,198" fill="#0f172a" stroke="#0f172a" stroke-width="2"/>
+<line x1="180" y1="252" x2="180" y2="286" stroke="#0f172a" stroke-width="2"/>
+<polygon points="175,278 185,278 180,286" fill="#0f172a" stroke="#0f172a" stroke-width="2"/>
+<path d="M65 374 H54 V502" fill="none" stroke="#0f172a" stroke-width="2"/>
+<polygon points="49,494 59,494 54,502" fill="#0f172a" stroke="#0f172a" stroke-width="2"/>
+<path d="M295 374 H306 V502" fill="none" stroke="#0f172a" stroke-width="2"/>
+<polygon points="301,494 311,494 306,502" fill="#0f172a" stroke="#0f172a" stroke-width="2"/>
+<path d="M80 560 V620 H180 V657" fill="none" stroke="#0f172a" stroke-width="2"/>
+<path d="M280 560 V620 H180" fill="none" stroke="#0f172a" stroke-width="2"/>
+<polygon points="175,649 185,649 180,657" fill="#0f172a" stroke="#0f172a" stroke-width="2"/>
+<rect x="75" y="28" width="210" height="56" rx="14" fill="#e0f2fe" stroke="#2563eb" stroke-width="2"/>
+<text x="180" y="66" font-size="26" text-anchor="middle" fill="#0f172a">Sayıyı al</text>
+<rect x="75" y="112" width="210" height="54" rx="10" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+<text x="180" y="149" font-size="26" text-anchor="middle" fill="#0f172a">2 ile çarp</text>
+<rect x="75" y="198" width="210" height="54" rx="10" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+<text x="180" y="235" font-size="26" text-anchor="middle" fill="#0f172a">6 ekle</text>
+<polygon points="180,286 295,374 180,462 65,374" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+<text x="180" y="338" font-size="26" text-anchor="middle" fill="#0f172a">Sonuç</text>
+<text x="180" y="372" font-size="26" text-anchor="middle" fill="#0f172a">20’den</text>
+<text x="180" y="406" font-size="26" text-anchor="middle" fill="#0f172a">büyük mü?</text>
+<text x="95" y="480" font-size="26" text-anchor="middle" fill="#0f172a">Evet</text>
+<text x="265" y="480" font-size="26" text-anchor="middle" fill="#0f172a">Hayır</text>
+<rect x="10" y="502" width="140" height="58" rx="10" fill="#ffedd5" stroke="#b45309" stroke-width="2"/>
+<text x="80" y="540" font-size="26" text-anchor="middle" fill="#0f172a">4 çıkar</text>
+<rect x="210" y="502" width="140" height="58" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<text x="280" y="540" font-size="26" text-anchor="middle" fill="#0f172a">3 ekle</text>
+<rect x="65" y="657" width="230" height="64" rx="14" fill="#e0f2fe" stroke="#2563eb" stroke-width="2"/>
+<text x="180" y="698" font-size="26" text-anchor="middle" fill="#0f172a">Sonucu göster</text>
+</g>
+</svg>

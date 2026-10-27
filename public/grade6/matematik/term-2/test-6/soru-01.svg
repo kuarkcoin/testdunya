@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="360" viewBox="0 0 360 360" role="img">
+<title>Beş fidanın eş aralıklarla yerleşimi</title>
+<rect x="0" y="0" width="360" height="360" rx="16" fill="#ffffff"/>
+<g font-family="DejaVu Sans, sans-serif" font-size="26" fill="#0f172a" stroke-linecap="round" stroke-linejoin="round">
+<text x="180" y="42" font-size="26" text-anchor="middle" fill="#0f172a">Eş aralıklı fidanlar</text>
+<line x1="40" y1="80" x2="320" y2="80" stroke="#0f172a" stroke-width="2"/><line x1="40" y1="74" x2="40" y2="86" stroke="#0f172a" stroke-width="2"/><line x1="320" y1="74" x2="320" y2="86" stroke="#0f172a" stroke-width="2"/>
+<text x="180" y="70" font-size="26" text-anchor="middle" fill="#0f172a">28 m</text>
+<line x1="40" y1="207" x2="320" y2="207" stroke="#0f172a" stroke-width="2"/>
+<line x1="40" y1="196" x2="40" y2="218" stroke="#0f172a" stroke-width="2"/>
+<line x1="320" y1="196" x2="320" y2="218" stroke="#0f172a" stroke-width="2"/>
+<rect x="57" y="161" width="6" height="46" rx="0" fill="#92400e" stroke="#92400e" stroke-width="2"/>
+<polygon points="60,112 43,166 77,166" fill="#86efac" stroke="#15803d" stroke-width="2"/>
+<text x="60" y="245" font-size="26" text-anchor="middle" fill="#0f172a">1</text>
+<rect x="117" y="161" width="6" height="46" rx="0" fill="#92400e" stroke="#92400e" stroke-width="2"/>
+<polygon points="120,112 103,166 137,166" fill="#86efac" stroke="#15803d" stroke-width="2"/>
+<text x="120" y="245" font-size="26" text-anchor="middle" fill="#0f172a">2</text>
+<rect x="177" y="161" width="6" height="46" rx="0" fill="#92400e" stroke="#92400e" stroke-width="2"/>
+<polygon points="180,112 163,166 197,166" fill="#86efac" stroke="#15803d" stroke-width="2"/>
+<text x="180" y="245" font-size="26" text-anchor="middle" fill="#0f172a">3</text>
+<rect x="237" y="161" width="6" height="46" rx="0" fill="#92400e" stroke="#92400e" stroke-width="2"/>
+<polygon points="240,112 223,166 257,166" fill="#86efac" stroke="#15803d" stroke-width="2"/>
+<text x="240" y="245" font-size="26" text-anchor="middle" fill="#0f172a">4</text>
+<rect x="297" y="161" width="6" height="46" rx="0" fill="#92400e" stroke="#92400e" stroke-width="2"/>
+<polygon points="300,112 283,166 317,166" fill="#86efac" stroke="#15803d" stroke-width="2"/>
+<text x="300" y="245" font-size="26" text-anchor="middle" fill="#0f172a">5</text>
+<path d="M40 262 V280 H60 V262" fill="none" stroke="#0f172a" stroke-width="2"/>
+<text x="50" y="318" font-size="26" text-anchor="middle" fill="#0f172a">2 m</text>
+<path d="M300 262 V280 H320 V262" fill="none" stroke="#0f172a" stroke-width="2"/>
+<text x="310" y="318" font-size="26" text-anchor="middle" fill="#0f172a">2 m</text>
+</g>
+</svg>
