@@ -3130,6 +3130,176 @@ export const matematikData: SubjectData = {
         "correct": 1,
         "explanation": "Birinci grupta 1, ikinci grupta 2, genel olarak n. grupta n terim vardır. İlk 18 grupta 1 + 2 + … + 18 = 171 terim bulunur; 1 ile 18, 2 ile 17 gibi eşleştirirsek 19 eden 9 çift elde ederiz. 19. grupla toplam 190’a ulaşılacağı için 184. terimde henüz bu grup bitmemiştir. Tamamlanan son grup 18. gruptur; ilk sayısı 36’dır. 184. terim, 19. grubun 184 − 171 = 13. sayısıdır. Bu grup 38 ile başlar; 13. sayıya ulaşmak için 12 kez 2 çıkarılır: 38 − 24 = 14. İstenen toplam 36 + 14 = 50’dir."
       }
+    ],
+    test5: [
+      {
+        "id": "m6-2-t5-01",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir gösteride yetişkin ve çocuk biletlerinin birim fiyatları sabittir. Her rezervasyona, bilet sayısından bağımsız aynı sabit rezervasyon ücreti bir kez ekleniyor. Görselde üç farklı rezervasyonun bilet sayıları ve toplam ödemeleri verilmiştir.\n\nÜç yetişkin ve dört çocuk için yapılan tek bir yeni rezervasyonda toplam kaç TL ödenir?",
+        "options": [
+          "306",
+          "324",
+          "342",
+          "360"
+        ],
+        "correct": 2,
+        "explanation": "Üçüncü rezervasyonda ilk rezervasyondakinin iki katı bilet vardır. İlk toplamın iki katı 348 TL iken üçüncü toplam 330 TL’dir. Aradaki 18 TL, iki kez değil bir kez alınan rezervasyon ücretidir. Bu ücret çıkarılınca ilk iki rezervasyonun bilet bedelleri 156 TL ve 168 TL olur. İkinci bilet grubunu iki kez alırsak iki yetişkin ve altı çocuk için 336 TL gerekir. İlk grubun 156 TL’sini çıkarınca beş çocuk bileti 180 TL tutar; çocuk bileti 36 TL’dir. Yetişkin bileti (156 − 36) ÷ 2 = 60 TL olur. Yeni ödeme 3 × 60 + 4 × 36 + 18 = 342 TL’dir.",
+        "imageUrl": "/grade6/matematik/term-2/test-5/soru-01.svg",
+        "imageAlt": "Üç rezervasyon kaydı: K kaydında 2 yetişkin, 1 çocuk, toplam 174 TL; L kaydında 1 yetişkin, 3 çocuk, toplam 186 TL; M kaydında 4 yetişkin, 2 çocuk, toplam 330 TL. Her toplamın içinde bir kez alınan aynı sabit rezervasyon ücreti vardır.",
+        "imageWidth": 360,
+        "imageHeight": 570
+      },
+      {
+        "id": "m6-2-t5-02",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Şekil örüntüsünde önceki yol korunup her adımda mavi gösterilen dört yeni parça ekleniyor. İlk üç adımda eklenen parçaların uzunlukları görseldedir; bu uzunluk düzeni aynı şekilde sürdürülüyor.\n\nArdışık iki adımdaki toplam yol uzunluklarının farkı 46 birim olduğuna göre büyük adımdaki yolun tamamı kaç birimdir?",
+        "options": [
+          "132",
+          "144",
+          "154",
+          "156"
+        ],
+        "correct": 3,
+        "explanation": "Ardışık adımların toplamları arasındaki fark, son eklenen dört parçanın toplamıdır. Her adımda art arda gelen iki uzunluğun her biri iki kez kullanılır. Küçük uzunluğa a dersek 46 = a + a + (a + 1) + (a + 1) olur. İki fazlayı çıkarıp dörde böleriz: a = (46 − 2) ÷ 4 = 11. Son eklenenler 11, 11, 12, 12’dir. Başlangıçtan bu adıma kadar 1’den 12’ye her uzunluk iki kez kullanılmıştır. 1 + 12, 2 + 11, …, 6 + 7 biçiminde altı çiftin toplamı 6 × 13 = 78’dir. Yolun tamamı 2 × 78 = 156 birimdir.",
+        "imageUrl": "/grade6/matematik/term-2/test-5/soru-02.svg",
+        "imageAlt": "Üç kare spiral yol üst üste gösteriliyor. Birinci adımda dört mavi parçanın uzunlukları 1, 1, 2, 2 birim. İkinci adımda eski yol gri, eklenen dört mavi parça 3, 3, 4, 4 birim. Üçüncü adımda eski yol gri, eklenen dört mavi parça 5, 5, 6, 6 birim. Her yol önceki yolun ucundan devam ediyor; yeni parçalar aynı dönüş yönünde ekleniyor.",
+        "imageWidth": 360,
+        "imageHeight": 690
+      },
+      {
+        "id": "m6-2-t5-03",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir algoritma, üst sıradaki beş kutudan yan yana olan her çiftin toplamını o çifte bağlı alt kutuya yazıyor. Üst sıradaki sayıların toplamı 119’dur; ilk uygulamanın alt sıra sonuçları görseldedir.\n\nÜst sıradaki A ile C’nin sayıları yer değiştiriyor ve algoritma yeniden çalıştırılıyor. Yeni alt sıradaki dört sayının toplamı kaç olur?",
+        "options": [
+          "166",
+          "178",
+          "190",
+          "202"
+        ],
+        "correct": 1,
+        "explanation": "İlk alt sıranın uçlarındaki 29 ve 67’nin toplamı, üstteki A, B, D ve E’nin toplamıdır. Böylece C = 119 − 29 − 67 = 23 bulunur. B + C = 41 olduğundan B = 18; A + B = 29 olduğundan A = 11’dir. Alt sıranın toplamında üstteki iki uç kutu birer kez, içteki üç kutu ikişer kez sayılır. A’daki 11 ile C’deki 23 yer değiştirince, bir kez sayılan uç kutu 12 artar; iki kez sayılan iç kutu 12 azalır. Toplam net 12 azalır. İlk alt toplam 29 + 41 + 53 + 67 = 190 olduğundan yeni toplam 178’dir. Kontrol: yeni üst sıra 23, 18, 11, 30, 37; yeni alt sıra 41, 29, 41, 67 olur.",
+        "imageUrl": "/grade6/matematik/term-2/test-5/soru-03.svg",
+        "imageAlt": "Üstte soldan sağa A, B, C, D, E kutuları var. Altta dört kutuda soldan sağa 29, 41, 53, 67 yazıyor. Her alt kutu, üstteki komşu iki kutuya çizgilerle bağlı: 29 A ve B’ye, 41 B ve C’ye, 53 C ve D’ye, 67 D ve E’ye. Üstteki beş sayının toplamı 119.",
+        "imageWidth": 360,
+        "imageHeight": 430
+      },
+      {
+        "id": "m6-2-t5-04",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "ABCD paralelkenarının içindeki P noktası dört köşeye birleştirilmiştir. Oluşan üçgenlerden üçünün alanı görselde verilmiştir.\n\nBPC üçgeninin alanı kaç santimetrekaredir?",
+        "options": [
+          "24",
+          "40",
+          "26",
+          "54"
+        ],
+        "correct": 2,
+        "explanation": "AB ve DC eşit uzunluktadır. P’nin bu iki paralel kenara dik uzaklıklarının toplamı, paralelkenarın yüksekliğidir. Bu nedenle ABP ile DCP üçgenlerinin toplam alanı paralelkenarın alanının yarısıdır: 24 + 16 = 40 cm². Paralelkenarın tüm alanı 80 cm² olur. Diğer iki üçgen de kalan yarıyı oluşturur. DAP 14 cm² olduğuna göre BPC = 40 − 14 = 26 cm²’dir. Kontrol: 24 + 16 + 14 + 26 = 80.",
+        "imageUrl": "/grade6/matematik/term-2/test-5/soru-04.svg",
+        "imageAlt": "ABCD paralelkenarında A sol üstte, B sağ üstte, C sağ altta, D sol altta. İçteki P dört köşeye bağlı. Üst ABP üçgeninin alanı 24 cm², alt DCP üçgeninin alanı 16 cm², sol DAP üçgeninin alanı 14 cm². Sağ BPC üçgeni mavi ve alanı soru işareti. Alanlar alttaki köşe adlarıyla eşleştirilmiş anahtarda da yazıyor.",
+        "imageWidth": 360,
+        "imageHeight": 560
+      },
+      {
+        "id": "m6-2-t5-05",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "D, B ve C aynı doğru üzerinde bu sırayla yer alıyor; AD bu doğruya diktir. DB kenarı üzerine çizilen karenin alanı ile ADB üçgeninin alanı görselde verilmiştir.\n\nABC üçgeninin alanı kaç santimetrekaredir?",
+        "options": [
+          "180",
+          "144",
+          "168",
+          "252"
+        ],
+        "correct": 0,
+        "explanation": "Karenin alanı 36 cm² olduğundan DB = 6 cm’dir; çünkü 6 × 6 = 36. ADB’nin 72 cm²’lik alanı, 6 × AD ÷ 2’ye eşittir. Buradan AD = 72 × 2 ÷ 6 = 24 cm bulunur. DC = 21 cm olduğuna göre BC = 21 − 6 = 15 cm’dir. ABC’nin BC tabanına ait yüksekliği de AD’dir; dikmenin ayağı üçgenin dışında kalabilir. ABC’nin alanı 15 × 24 ÷ 2 = 180 cm²’dir. Kontrol: ADC’nin alanı 21 × 24 ÷ 2 = 252; ADB çıkarılınca yine 180 kalır.",
+        "imageUrl": "/grade6/matematik/term-2/test-5/soru-05.svg",
+        "imageAlt": "A noktası D’nin tam üstünde. D, B ve C yatay doğru üzerinde soldan sağa sıralı; AD ile DC arasında dik açı işareti var. A, B ve C birleştirilmiş; ADB turuncu, ABC mavi. DB’nin altına bir kare çizilmiş. Ölçü anahtarı: karenin alanı 36 cm²; ADB’nin alanı 72 cm²; DC’nin tamamı 21 cm. AD kesikli çizgiyle üçgenin dış yüksekliği olarak gösteriliyor.",
+        "imageWidth": 360,
+        "imageHeight": 620
+      },
+      {
+        "id": "m6-2-t5-06",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir karenin kenarlarının orta noktaları birleştirilerek yeni bir kare çiziliyor. Bu işlem, her seferinde en son çizilen kareye uygulanarak toplam üç kez yapılıyor. Üçüncü işlemde oluşan en küçük karenin alanı görselde verilmiştir.\n\nEn dıştaki karenin çevresi kaç milimetredir?",
+        "options": [
+          "2400",
+          "1200",
+          "1800",
+          "3600"
+        ],
+        "correct": 0,
+        "explanation": "Orta noktalar birleştirildiğinde köşelerde dört eş dik üçgen kalır. Her birinin dik kenarları dış karenin kenarının yarısıdır; bu dört üçgen birlikte dış karenin alanının yarısını kaplar. Yeni karenin alanı da dış karenin yarısıdır. Bu yüzden üç işlemde alan sırayla yarıya, dörtte bire, sekizde bire iner. En küçük alan 0,045 m² = 450 cm² olduğundan dış alan 8 × 450 = 3600 cm²’dir. 60 × 60 = 3600 olduğuna göre dış kenar 60 cm’dir. Çevre 4 × 60 = 240 cm = 2400 mm olur.",
+        "imageUrl": "/grade6/matematik/term-2/test-5/soru-06.svg",
+        "imageAlt": "En dıştaki kare yatay ve düşey kenarlı. Birinci iç kare dış karenin dört kenarının orta noktalarından geçiyor. İkinci iç kare birinci karenin, üçüncü ve en küçük iç kare de ikincinin kenar orta noktalarını birleştiriyor. Dört kare iç içe; en küçük kare turuncu. Altta turuncu alan 0,045 m² yazıyor. Her yeni köşe önceki karenin bir kenarının orta noktasıdır.",
+        "imageWidth": 360,
+        "imageHeight": 500
+      },
+      {
+        "id": "m6-2-t5-07",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Dikdörtgen bir arsaya soldaki yeşil üçgen bölge ekleniyor; sağ alt köşedeki turuncu dik üçgen bölge ise arsadan çıkarılıyor. Yeni arsanın alanı 72 000 dm² oluyor.\n\nEklenen üçgenin, arsanın sol kenarına ait dik yüksekliği h kaç metredir?",
+        "options": [
+          "26",
+          "32",
+          "35",
+          "38"
+        ],
+        "correct": 3,
+        "explanation": "Yeni alan 72 000 dm² = 720 m²’dir; 1 m² = 100 dm². Başlangıçtaki dikdörtgen 24 × 18 = 432 m²’dir. Çıkarılan dik üçgenin alanı 12 × 9 ÷ 2 = 54 m² olduğundan, ekleme yapılmadan kalan alan 432 − 54 = 378 m² olur. Eklenen üçgenin alanı 720 − 378 = 342 m²’dir. Bu üçgenin tabanı dikdörtgenin 18 m’lik sol kenarıdır. 18 × h ÷ 2 = 342 olduğundan h = 342 × 2 ÷ 18 = 38 m’dir. Kontrol: 432 + 342 − 54 = 720.",
+        "imageUrl": "/grade6/matematik/term-2/test-5/soru-07.svg",
+        "imageAlt": "Dikdörtgen arsanın yatay kenarı 24 m, sol düşey kenarı 18 m. Sol kenarın tamamına bitişik dış yeşil üçgen var; soldaki tepesinden bu kenara çizilen yatay kesikli dikmenin uzunluğu h. Sağ alt köşede çıkarılan turuncu dik üçgenin yatay dik kenarı 12 m, düşey dik kenarı 9 m. Yeni arsa dikdörtgen artı yeşil üçgen eksi turuncu üçgendir.",
+        "imageWidth": 360,
+        "imageHeight": 560
+      },
+      {
+        "id": "m6-2-t5-08",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Ada, Bora ve Cem’de başlangıçta toplam 180 kart vardır. Önce Ada kendi kartlarının üçte birini Bora’ya veriyor. Sonra Bora, o anda elindeki kartların yarısını Cem’e veriyor. Son olarak Cem, Ada’ya 12 kart veriyor. Bu işlemlerden sonra üçünün kart sayıları eşit oluyor; başka kart eklenmiyor veya çıkarılmıyor.\n\nBaşlangıçta Bora’nın kart sayısı, Cem’in kart sayısından kaç fazladır?",
+        "options": [
+          "72",
+          "84",
+          "96",
+          "108"
+        ],
+        "correct": 1,
+        "explanation": "Toplam 180 değişmediğinden sonunda her birinde 60 kart vardır. Son işlemi geri alalım: Ada’da 48, Bora’da 60, Cem’de 72 kart vardı. Bora elindekinin yarısını verip 60’ta kaldığı için, vermeden önce 120 kartı vardı ve Cem’e 60 kart vermişti. O hâlde ilk işlemden sonra Ada 48, Bora 120, Cem 12 kart taşıyordu. Ada’nın 48 kartı başlangıcının üçte ikisidir; başlangıçta 72 kartı vardı ve 24’ünü Bora’ya vermişti. Bora başlangıçta 120 − 24 = 96, Cem 12 karta sahipti. İstenen fark 96 − 12 = 84’tür."
+      },
+      {
+        "id": "m6-2-t5-09",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir algoritma A = 4, B = 7 ve C = 10 ile başlıyor. Her turda üç değer aynı anda değiştiriliyor: yeni A eski B’ye, yeni B eski C’ye, yeni C ise eski A’nın 6 fazlasına eşit oluyor.\n\nBir turun sonunda A + B + C toplamı ilk kez 171 olduğunda A + B kaçtır?",
+        "options": [
+          "107",
+          "110",
+          "116",
+          "113"
+        ],
+        "correct": 3,
+        "explanation": "Her turda eski üç sayı yalnızca yer değiştirir ve bunlardan birine 6 eklenir; toplam her tur 6 artar. Başlangıç toplamı 21 olduğundan (171 − 21) ÷ 6 = 25 tur uygulanmıştır. Üç turu izleyelim: (4, 7, 10) → (7, 10, 10) → (10, 10, 13) → (10, 13, 16). Üç tur sonunda her kutu başlangıç değerinin 6 fazlasına ulaşır. 24 tur, böyle 8 gruptur; kutular (52, 55, 58) olur. Bir tur daha uygulanınca (55, 58, 58) elde edilir. A + B = 55 + 58 = 113’tür. Güncellemeler sırayla değil, eski değerlerle aynı anda yapılmalıdır."
+      },
+      {
+        "id": "m6-2-t5-10",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir sayı örüntüsünün tek sıra numaralı terimleri (1., 3., 5., …) kendi aralarında 6’şar; çift sıra numaralı terimleri (2., 4., 6., …) kendi aralarında 4’er artıyor. Beşinci terim, onuncu terimden 8 eksiktir. Yedinci terim ile on ikinci terimin toplamı 130’dur.\n\nBu örüntünün on yedinci terimi kaçtır?",
+        "options": [
+          "86",
+          "88",
+          "92",
+          "98"
+        ],
+        "correct": 2,
+        "explanation": "İlk terime a, ikinci terime b diyelim. Beşinci terim a + 12, onuncu terim b + 16’dır. Birincisi diğerinden 8 eksik olduğuna göre a + 12 = b + 8; yani b, a’dan 4 fazladır. Yedinci terim a + 18, on ikinci terim b + 20 olduğundan a + b + 38 = 130 ve a + b = 92 bulunur. Aralarında 4 fark bulunan bu iki sayı 44 ve 48’dir; a = 44. On yedinci terim, tek sıralardaki dizinin dokuzuncu terimidir. İlk terime sekiz kez 6 eklenir: 44 + 8 × 6 = 92. Kontrol: beşinci 56, onuncu 64; yedinci 62, on ikinci 68’dir."
+      }
     ]
   },
 };

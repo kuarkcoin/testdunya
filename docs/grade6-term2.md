@@ -274,3 +274,26 @@ Kimlikler `m6-2-t4-01`–`m6-2-t4-10`; rota `/6-sinif/matematik/2-donem-test-4`;
 Cevap anahtarı: **B, D, A, C, B, D, A, D, C, B**. Önceki 180 matematik sorusu, özellikle ikinci dönem Test 1–3, senaryo ve çözüm mekanizmaları yönünden incelenmiştir. Zorluk; ortak parçaları doğru sayma, görsel alan ilişkilerinden tersine çıkarım, genel bir algoritmanın bütün başlangıç durumlarında çalışmasını gerekçelendirme ve birden fazla aşamayı birleştirmeden gelir; soruların tümü eşit güçlükte değildir. Dördüncü sorunun çözümü yalnız eş taban/ortak yükseklik ve alan parçalamayı kullanır; benzerlik veya ağırlık merkezi teoremi gerektirmez. Beşinci soruda iki özdeş levhanın aynı taban doğrusu üzerinde kaydırılması ve iki durumda da örtüşmesi esastır. Yedinci soruda harç kalınlığı/hacmi değil yalnız yüzey alanı sorulur.
 
 Önceki **72 test / 720 soru / 412 SVG** korunur; eski soru kayıtları ve SVG dosyaları byte düzeyinde karşılaştırılır. Yeni toplam **73 test / 730 soru / 419 SVG**; matematik toplamı **19 test / 190 soru**, ikinci dönem matematik bölümü **4 test / 40 soru**. Veri, TypeScript, tam derleme, SEO, üretilmiş rotalar ve yeni rotanın/varlıklarının native HTTP kontrolleri uygulanır. Bağımsız matematik/içerik/özgünlük incelemesi ile 360 px ve 238 px genişliklerde native SVG piksel incelemesi yapılır. Tarayıcı etkileşim testi önceki erişim reddi nedeniyle yapılmamıştır; yeniden denenmez. Production aktarımı bu içerik eklemesinin parçası değildir.
+
+## Matematik — 2. dönem Test 5 (zor)
+
+Kullanıcının sağladığı aynı 9 sayfalık `mat6.pdf` esas alınır: öğrenme çıktıları s.2–3, ikinci dönem ikinci yazılı senaryoları s.4–9. **10 yeni soru: 7 anlamlı şekil + 3 metin**. Kapsam yalnız MAT.6.2.1–3 ve MAT.6.4.1–3’tür. Çember, olasılık ve kaynak dışı konular eklenmez. Özgün çoktan seçmeli alıştırmalar resmî sınav kopyası değildir; açık uçlu/kısa cevaplı sınav biçiminin yerine geçmez ve tüm dönem kazanımlarını eksiksiz ölçme iddiası taşımaz.
+
+Kimlikler `m6-2-t5-01`–`m6-2-t5-10`; rota `/6-sinif/matematik/2-donem-test-5`; görseller `public/grade6/matematik/term-2/test-5/`. Yedi pasif SVG 360 px genişliğindedir; yazılar en az 26 px, kayıtlı yükseklikler SVG boyutlarıyla aynıdır. Görseller çözüme gerekli rezervasyon kayıtlarını, eklenen parçaların uzunluk düzenini, komşuluk bağlantılarını, alanları veya ölçüleri taşır. Ortak soru arayüzü ve büyütme desteği değişmez; ders sayfasındaki sayılar mevcut kayıtlardan hesaplanır.
+
+| Soru | Yeni akıl yürütme mekanizması | Kaynak eşlemesi |
+| --- | --- | --- |
+| 1 | Üç rezervasyonun bilet bileşiminden sabit ücreti ayırıp iki birim fiyatı ve yeni toplamı çıkarma | MAT.6.2.1 |
+| 2 | Spiral yola son eklenen dört parçanın toplamından uzunluk dizisinin sonunu ve bütün yolu bulma | MAT.6.2.2 |
+| 3 | Komşu çiftlerin toplamlarını tersine çözme; uç ve iç kutuların farklı sayılmasından yer değiştirme etkisi | MAT.6.2.1, MAT.6.2.3 |
+| 4 | Paralelkenarın iç noktasının ayırdığı karşılıklı üçgen alanlarının toplamını yarım alanla ilişkilendirme | MAT.6.4.2 |
+| 5 | Kare alanından ortak taban parçasını, dıştaki dik yüksekliği ve komşu üçgenin alanını bulma | MAT.6.4.2 |
+| 6 | Üç ardışık orta nokta yapımında alanın yarıya inmesini izleyip alan biriminden uzunluk birimine geçme | MAT.6.4.1, MAT.6.4.2 |
+| 7 | Eklenen ve çıkarılan arsa parçalarını farklı işaretlerle hesaba katıp yeni alandan bilinmeyen yüksekliği çıkarma | MAT.6.2.1, MAT.6.4.1, MAT.6.4.3 |
+| 8 | Toplam korunurken üç kişi arasındaki sıralı kesirli aktarımları sondan başa geri alma | MAT.6.2.1 |
+| 9 | Eş zamanlı üç kutu güncellemesinde toplam artışını ve üç turluk döngüyü birlikte kullanma | MAT.6.2.3 |
+| 10 | İç içe geçmiş iki sayı örüntüsünün sıra numaralarını ayırıp iki koşuldan başlangıç değerlerini bulma | MAT.6.2.2 |
+
+Cevap anahtarı: **C, D, B, C, A, A, D, B, D, C**. Önceki **190 matematik sorusu**, özellikle ikinci dönem Test 1–4, senaryo ve çözüm mekanizmalarının tekrarlanmaması için incelenmiştir. Zorluk; birden fazla bilinmeyeni görsel kayıtlardan çıkarma, alan bağıntılarını gerekçelendirme, işlemleri geri alma ve yer değiştiren değerleri izleme adımlarından gelir; tüm sorular eşit güçlükte değildir. Altıncı soruda dıştaki kareye ek olarak üç kare çizilir, yani toplam dört kare vardır; çözüm karekök yöntemi gerektirmez. Dokuzuncu sorudaki güncellemeler eski değerler üzerinden aynı anda yapılır. Yedinci görselde eklenen bölgenin büyük yüksekliği, dikdörtgen ve kesilen köşe aynı ölçekle çizilmiştir.
+
+Önceki **73 test / 730 soru / 419 SVG** korunur; eski soru kayıtları ve SVG dosyaları byte düzeyinde karşılaştırılır. Yeni toplam **74 test / 740 soru / 426 SVG**; matematik toplamı **20 test / 200 soru**, ikinci dönem matematik bölümü **5 test / 50 soru**. Veri, TypeScript, tam derleme, SEO, üretilmiş rotalar ve yeni rotanın/varlıklarının native HTTP kontrolleri uygulanır. Bağımsız matematik, içerik, özgünlük ve görsel incelemesine ek olarak, gerçek SVG koordinatlarında şekillerin alanları, orta noktaları, diklikleri ve ölçü oranları doğrulanır. 360 px ve 238 px genişliklerde native SVG piksel incelemesi yapılır. Tarayıcı etkileşim testi önceki erişim reddi nedeniyle yapılmamıştır; yeniden denenmez. Production aktarımı bu içerik eklemesinin parçası değildir.
