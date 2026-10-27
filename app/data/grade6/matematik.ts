@@ -2450,6 +2450,176 @@ export const matematikData: SubjectData = {
     ],
 
   },
-  term2: {},
+  term2: {
+    test1: [
+      {
+        "id": "m6-2-t1-01",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Şekildeki dikdörtgen bahçenin kenar uzunlukları metre cinsinden verilmiştir. Bahçenin çevresine, 5 m genişliğindeki kapı dışında, toplam 51 m çit çekiliyor.\n\nBuna göre bahçenin alanı kaç metrekaredir?",
+        "options": [
+          "154",
+          "170",
+          "187",
+          "209"
+        ],
+        "correct": 2,
+        "explanation": "Kapı da çevreye dâhil olduğundan çevre 51 + 5 = 56 m’dir. İki komşu kenarın toplamı 28 m olur. (2n + 3) + (n + 4) = 3n + 7 olduğundan 3n = 21 ve n = 7’dir. Kenarlar 17 m ve 11 m; alan 17 × 11 = 187 m² olur.",
+        "imageUrl": "/grade6/matematik/term-2/test-1/soru-01.svg",
+        "imageAlt": "Dikdörtgen bahçenin yatay kenarı (2n + 3) m, düşey kenarı (n + 4) m. Alt kenarda 5 m genişliğinde kapı boşluğu bulunuyor.",
+        "imageWidth": 360,
+        "imageHeight": 380
+      },
+      {
+        "id": "m6-2-t1-02",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "İlk üç adımı gösterilen iki örüntüde her yeni adımda kırmızı pul sayısı 3, mavi pul sayısı 5 artıyor.\n\nAynı adımdaki mavi pulların sayısı kırmızı pulların sayısından 18 fazla olduğunda, iki renkte toplam kaç pul vardır?",
+        "options": [
+          "94",
+          "88",
+          "76",
+          "106"
+        ],
+        "correct": 0,
+        "explanation": "Birinci adımda kırmızı pullar 4 fazladır. Her adımda mavi ile kırmızı arasındaki fark 5 − 3 = 2 artar. Mavinin 18 fazla olması için fark 22 artmalı, yani 11 adım ilerlenmelidir. 12. adımda kırmızı 5 + 11 × 3 = 38, mavi 1 + 11 × 5 = 56 pul olur. Toplam 94’tür.",
+        "imageUrl": "/grade6/matematik/term-2/test-1/soru-02.svg",
+        "imageAlt": "Birinci adımda 5 kırmızı ve 1 mavi, ikinci adımda 8 kırmızı ve 6 mavi, üçüncü adımda 11 kırmızı ve 11 mavi pul var. Kırmızı pullar her adımda 3, mavi pullar 5 artıyor.",
+        "imageWidth": 360,
+        "imageHeight": 600
+      },
+      {
+        "id": "m6-2-t1-03",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Akış şemasına pozitif bir tam sayı giriliyor. Karar kutusunda elde edilen sonuç 50’den büyükse işlem bitiyor; değilse şemadaki döngü sürüyor.\n\nİşlemin ilk iki kontrolde bitmeyip tam üçüncü kontrolde bitmesini sağlayan kaç farklı başlangıç sayısı vardır?",
+        "options": [
+          "4",
+          "5",
+          "7",
+          "6"
+        ],
+        "correct": 3,
+        "explanation": "Başlangıç x ise kontrol edilen sonuçlar sırasıyla 2x + 5, 4x + 9 ve 8x + 17 olur. İkinci sonuç en fazla 50 olmalıdır: pozitif tam sayı x en fazla 10’dur. Üçüncü sonuç 50’den büyük olmalıdır: x en az 5’tir. 5, 6, 7, 8, 9 ve 10 için ilk sonuç da 50’yi aşmaz. Böylece 6 başlangıç sayısı vardır.",
+        "imageUrl": "/grade6/matematik/term-2/test-1/soru-03.svg",
+        "imageAlt": "Başlangıç sayısından sonra sayıyı 2 ile çarp, 5 ekle, sonuç 50’den büyük mü diye kontrol et. Evetse bitir. Hayırsa sonuçtan 3 çıkar ve bu yeni sayıyla 2 ile çarp adımına dön.",
+        "imageWidth": 360,
+        "imageHeight": 720
+      },
+      {
+        "id": "m6-2-t1-04",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "ABCD paralelkenarında E, AB üzerinde; F, DC üzerindedir. Dik yükseklik 12 cm’dir. Şekilde taralı EBCF bölgesinin alanı kaç santimetrekaredir?",
+        "options": [
+          "144",
+          "156",
+          "168",
+          "192"
+        ],
+        "correct": 1,
+        "explanation": "AB = 2 dm = 20 cm ve AE = 60 mm = 6 cm’dir. Paralelkenarın alanı 20 × 12 = 240 cm² olur. Taralı olmayan ADF üçgeninin alanı 8 × 12 ÷ 2 = 48 cm², AEF üçgeninin alanı 6 × 12 ÷ 2 = 36 cm²’dir. Taralı alan 240 − 48 − 36 = 156 cm²’dir.",
+        "imageUrl": "/grade6/matematik/term-2/test-1/soru-04.svg",
+        "imageAlt": "ABCD paralelkenarında AB 2 dm, dik yükseklik 12 cm. E, AB üzerinde ve AE 60 mm. F, DC üzerinde ve DF 8 cm. EBCF dörtgeni taralı; ADF ve AEF üçgenleri taralı değil.",
+        "imageWidth": 360,
+        "imageHeight": 460
+      },
+      {
+        "id": "m6-2-t1-05",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Dikdörtgen parkın iki yeşil üçgensel bölgesi dışındaki 420 m²’lik alanı taşla kaplanıyor. Üçgenlerin tabanları x m ve (x + 4) m; bu tabanlara ait dik yükseklikleri sırasıyla 10 m ve 15 m’dir.\n\nİki yeşil üçgenin taban uzunlukları toplamı kaç metredir?",
+        "options": [
+          "24",
+          "26",
+          "28",
+          "32"
+        ],
+        "correct": 2,
+        "explanation": "Parkın alanı 30 × 20 = 600 m², yeşil alanların toplamı 600 − 420 = 180 m²’dir. Üçgen alanlarının iki katı toplamı 360 olur. İkinci tabandaki fazladan 4 m’nin bu toplama katkısı 4 × 15 = 60’tır. Kalan 300, iki tabanın ortak x uzunluğu ile yükseklikler toplamı 10 + 15 = 25’in çarpımıdır. x = 300 ÷ 25 = 12 m bulunur. Tabanların toplamı 12 + 16 = 28 m’dir.",
+        "imageUrl": "/grade6/matematik/term-2/test-1/soru-05.svg",
+        "imageAlt": "30 m eninde ve 20 m boyunda dikdörtgen park. Sol alttaki yeşil üçgenin tabanı x m, dik yüksekliği 10 m. Sağ üstteki ayrık yeşil üçgenin tabanı (x + 4) m, dik yüksekliği 15 m. Geriye kalan taş kaplı alan 420 m².",
+        "imageWidth": 360,
+        "imageHeight": 480
+      },
+      {
+        "id": "m6-2-t1-06",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Şekildeki levhanın ortasındaki kare boşluk çıkarılmıştır. Levhanın hem dış sınırına hem boşluğun sınırına koruyucu şerit takılıyor. Şeridin metre fiyatı 25 TL’dir. Levhanın yalnız bir yüzündeki dolu alanın her 1 dm²’si 1 TL’ye boyanıyor.\n\nŞerit ve boya için toplam kaç TL ödenir?",
+        "options": [
+          "348",
+          "220",
+          "268",
+          "412"
+        ],
+        "correct": 0,
+        "explanation": "Dış sınır 2 × (160 + 120) = 560 cm, boşluğun sınırı 4 × 80 = 320 cm’dir. Toplam şerit 880 cm = 8,8 m; ücreti 8,8 × 25 = 220 TL olur. Dolu alan 160 × 120 − 80 × 80 = 12 800 cm² = 128 dm²’dir. Boya 128 TL, toplam 220 + 128 = 348 TL’dir.",
+        "imageUrl": "/grade6/matematik/term-2/test-1/soru-06.svg",
+        "imageAlt": "Dış kenarları 160 cm ve 120 cm olan dikdörtgen levhanın içinde bir kenarı 0,8 m olan kare boşluk var. Boşluk dış kenarlara değmiyor; renkli kısım levhanın dolu alanı.",
+        "imageWidth": 360,
+        "imageHeight": 430
+      },
+      {
+        "id": "m6-2-t1-07",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Aynı A köşesini paylaşan ABD, ADE ve AEC üçgenlerinin tabanları aynı doğru üzerindedir. ABD’nin alanı 20 cm², ADE’nin alanı 30 cm²’dir. Taban uzunlukları şekilde santimetre cinsinden verilmiştir.\n\nAEC üçgeninin alanı kaç santimetrekaredir?",
+        "options": [
+          "24",
+          "26",
+          "28",
+          "32"
+        ],
+        "correct": 1,
+        "explanation": "Üç üçgenin yüksekliği aynıdır. İlk tabanın iki katı ile ikinci tabanın farkı 2(n + 2) − (2n − 1) = 5 cm’dir. Buna karşılık alan farkı 2 × 20 − 30 = 10 cm² olur. Demek ki tabandaki her 1 cm, alanda 2 cm²’ye karşılık gelir. İlk taban 20 ÷ 2 = 10 cm; n = 8’dir. Son taban n + 5 = 13 cm, son üçgenin alanı 13 × 2 = 26 cm²’dir.",
+        "imageUrl": "/grade6/matematik/term-2/test-1/soru-07.svg",
+        "imageAlt": "ABC üçgeninin BC tabanı, sırasıyla B, D, E, C noktalarıyla üç parçaya ayrılmıştır. BD n + 2 cm, DE 2n − 1 cm, EC n + 5 cm. ABD alanı 20 cm², ADE alanı 30 cm²; AEC alanı soruluyor.",
+        "imageWidth": 360,
+        "imageHeight": 440
+      },
+      {
+        "id": "m6-2-t1-08",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir annenin yaşı, 5 yıl önce kızının yaşının 4 katıydı. 7 yıl sonra annenin yaşı, kızının yaşının 2 katı olacak.\n\nBuna göre anne ile kızının bugünkü yaşları toplamı kaçtır?",
+        "options": [
+          "34",
+          "36",
+          "38",
+          "40"
+        ],
+        "correct": 3,
+        "explanation": "Beş yıl öncesinden yedi yıl sonrasına 12 yıl geçer. Beş yıl önce kızın yaşı bir parça kabul edilirse anneninki 4 parçadır. On iki yıl sonra kızın yaşının iki katı, 2 parça + 24; annenin yaşı ise 4 parça + 12 olur. Eşit olmaları için 2 parça 12 yıl, bir parça 6 yıl olmalıdır. Beş yıl önceki yaşlar 6 ve 24; bugünkü yaşlar 11 ve 29’dur. Toplamları 40’tır. Kontrol: 7 yıl sonra yaşlar 18 ve 36 olur."
+      },
+      {
+        "id": "m6-2-t1-09",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Ece ve Arda aynı pozitif tam sayıyla başlıyor. Ece önce 4 çıkarıp sonucu 3 ile çarpıyor. Arda önce 2 ile çarpıp sonuca 9 ekliyor. Ece’nin sonucu, Arda’nın sonucundan 5 fazladır.\n\nEce başlangıç sayısını değiştirmeden bu kez önce 3 ile çarpıp sonra 4 çıkarsaydı, yeni sonucu ile Arda’nın değişmeyen sonucunun toplamı kaç olurdu?",
+        "options": [
+          "119",
+          "127",
+          "135",
+          "143"
+        ],
+        "correct": 2,
+        "explanation": "Ece’nin ilk sonucu başlangıç sayısının 3 katından 12 eksik; Arda’nın sonucu aynı sayının 2 katından 9 fazladır. Bu nedenle Ece ile Arda’nın sonuçları arasındaki fark, başlangıç sayısından 21 eksiktir. Fark 5 olduğuna göre başlangıç sayısı 5 + 21 = 26’dır. Ece işlem sırasını değiştirince 26 × 3 − 4 = 74 bulur. Arda’nın sonucu 26 × 2 + 9 = 61’dir. İstenen toplam 74 + 61 = 135’tir."
+      },
+      {
+        "id": "m6-2-t1-10",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Dikdörtgen bir panonun uzun kenarı 1,2 m’dir. Bu kenar 30 cm uzatılıp diğer kenar 20 cm kısaltıldığında panonun alanı değişmiyor.\n\nPanonun değişiklik yapılmadan önceki çevresi kaç metredir?",
+        "options": [
+          "4,4",
+          "4,0",
+          "3,4",
+          "5,0"
+        ],
+        "correct": 0,
+        "explanation": "İlk uzun kenar 120 cm’dir. Diğer kenar 20 cm kısaltıldığında alan 120 × 20 = 2400 cm² azalır. Alanı eski değerine getiren ek şeridin genişliği 30 cm olduğundan yeni kısa kenar 2400 ÷ 30 = 80 cm’dir. Eski kısa kenar 80 + 20 = 100 cm olur. Eski çevre 2 × (120 + 100) = 440 cm = 4,4 m’dir."
+      }
+    ]
+  },
 };
-

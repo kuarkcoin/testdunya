@@ -43,6 +43,7 @@ const starterTopics: Record<SubjectId, string[]> = {
 };
 
 const secondTermTopics: Partial<Record<SubjectId, string[]>> = {
+  matematik: ['Cebirsel Düşünme, Örüntüler, Algoritmalar ve Alan (Zor)'],
   turkce: ['Metni Yorumlama, Eleştirel Okuma ve Görsel Çözümleme (Zor)'],
 };
 

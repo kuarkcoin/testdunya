@@ -55,6 +55,9 @@ export default async function Grade6SubjectPage({ params }: PageProps) {
             {term === 2 && subject.id === 'turkce' && (
               <p className="rounded-2xl border border-indigo-100 bg-indigo-50 p-5 font-semibold leading-relaxed text-slate-700">Bu bölümdeki Test 1, MEB Yayınları 6. sınıf Türkçe 2. dönem 2. ortak yazılı konu-soru dağılım tablosundaki okuma ve dil kullanımı becerilerine yönelik zor düzeyde bir alıştırmadır. Resmî sınav değildir; açık uçlu yazma görevlerinin yerine geçmez ve ikinci dönemin tüm konularını kapsadığı iddiası taşımaz.</p>
             )}
+            {term === 2 && subject.id === 'matematik' && (
+              <p className="rounded-2xl border border-indigo-100 bg-indigo-50 p-5 font-semibold leading-relaxed text-slate-700">Bu bölümdeki Test 1, sağlanan 6. sınıf matematik 2. dönem 2. yazılı konu-soru dağılım tablosundaki cebirsel düşünme, örüntü, algoritma, uzunluk ve alan ölçme becerilerine yönelik zor düzeyde bir alıştırmadır. Resmî sınav değildir; açık uçlu sınav biçiminin yerine geçmez ve ikinci dönemin tüm konularını kapsamaz.</p>
+            )}
             {termTests.length === 0 ? (
               <p className="rounded-2xl border border-dashed border-slate-300 bg-white p-5 font-semibold text-slate-600">Bu dönem için henüz test eklenmedi. Listelenen diğer testlerle çalışabilirsin.</p>
             ) : (
