@@ -111,3 +111,27 @@ Kimlikler `t6-2-t2-01`–`t6-2-t2-10`; rota `/6-sinif/turkce/2-donem-test-2`; g�
 Zorluk, üst sınıf terimlerinden değil anlatı katmanlarını, kanıtları ve anlam ilişkilerini birlikte değerlendirmekten gelir; tüm sorular eşit güçlükte değildir. Cevap anahtarı: **C, A, D, B, C, A, D, B, C, D**.
 
 Önceki 65 test / 650 soru / 368 SVG korunur. Yeni toplam: **66 test / 660 soru / 370 SVG**. Türkçe toplamı 18 test / 180 sorudur; ikinci dönem Türkçe bölümü 2 test / 20 soru içerir. Test sayıları mevcut kayıt yapısından hesaplanır; ortak soru arayüzü değiştirilmez. Production aktarımı bu içerik eklemesinin parçası değildir.
+
+
+## Matematik — 2. dönem Test 2 (zor)
+
+Aynı 9 sayfalık kullanıcı kaynağındaki (`mat6.pdf`) altı öğrenme çıktısına yönelik **10 yeni soru: 7 anlamlı şekil + 3 metin**. Kaynak yalnızca ikinci dönem ikinci yazılı dağılım tablosudur; tüm dönem müfredatı veya resmî sınav kopyası değildir. Özgün çoktan seçmeli alıştırmalar, belgedeki açık uçlu/kısa cevaplı biçimin yerine geçmez. Çember, olasılık ve bu kaynakta olmayan konular eklenmez.
+
+Kimlikler `m6-2-t2-01`–`m6-2-t2-10`; rota `/6-sinif/matematik/2-donem-test-2`; görseller `public/grade6/matematik/term-2/test-2/`. Yedi pasif SVG 360 px genişliğinde ve en az 26 px yazılıdır. Soru verilerindeki yükseklikler SVG boyutlarıyla eşleşir. Mevcut büyütme desteği korunur. Zorluk, üst sınıf yöntemlerinden değil bilinmeyenleri tersine çıkarma, birim ve alan ilişkilerini birleştirme, işlem sırasını gerekçeyle belirleme becerilerinden gelir; tüm sorular aynı güçlükte değildir.
+
+| Soru | Akıl yürütme | Kaynak eşlemesi |
+| --- | --- | --- |
+| 1 | İki toplam uzunluktan bir şeridin gerçek uzunluğunu ve örtüşmesini ayırma | MAT.6.2.1 |
+| 2 | Eklenen L biçimli kare grubundan örüntü adımını, sonra gerçek çevreyi bulma | MAT.6.2.2 |
+| 3 | Paralelkenarda taban değiştiğinde doğru dik yüksekliği alandan çıkarma | MAT.6.4.2 |
+| 4 | Tam ve yarım hücre alanlarından bir kenara ve uzunluk birimine geçme | MAT.6.4.1, MAT.6.4.3 |
+| 5 | İç noktanın oluşturduğu üçgenlerin alanlarından eksik dik uzaklığı bulma | MAT.6.4.2 |
+| 6 | Dört parçalı dikdörtgende ortak kenar ilişkileriyle eksik alanı tamamlama | MAT.6.4.1, MAT.6.4.2 |
+| 7 | Sıfırdan başlamayan iki cetvelde uzunluk farklarını okuyup kalan alanı hesaplama | MAT.6.4.1, MAT.6.4.2, MAT.6.4.3 |
+| 8 | Sabit toplam ücretten ayrılan kişi sayısı, yeni pay ve dış katkıyı ilişkilendirme | MAT.6.2.1 |
+| 9 | Sonucun tekliğinden geriye giderek dört işlemin bilinmeyen sırasını kurma | MAT.6.2.3 |
+| 10 | Seyrek terim bilgilerinden sabit artışı ve aradaki terimi çıkarma | MAT.6.2.2 |
+
+MAT.6.2.1–3 kaynak s.2; MAT.6.4.1–3 kaynak s.3; senaryolar s.4–9. Cevap anahtarı: **C, A, D, B, C, A, B, D, A, C**.
+
+Önceki **66 test / 660 soru / 370 SVG** içerik olarak ve mevcut soru kayıtları ile SVG dosyaları byte düzeyinde korunur. Yeni toplam **67 test / 670 soru / 377 SVG**; matematik toplamı **17 test / 170 soru**, ikinci dönem matematik bölümü **2 test / 20 soru**. Test sayıları kayıtlardan hesaplanır; ortak soru arayüzü değiştirilmez. Native SVG incelemesi 360 px ve 238 px genişliklerinde yapılır; tarayıcı etkileşim testi bu eklemede yapılmamıştır. Production aktarımı içerik eklemesinin parçası değildir.

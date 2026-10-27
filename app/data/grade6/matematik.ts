@@ -2620,6 +2620,176 @@ export const matematikData: SubjectData = {
         "correct": 0,
         "explanation": "İlk uzun kenar 120 cm’dir. Diğer kenar 20 cm kısaltıldığında alan 120 × 20 = 2400 cm² azalır. Alanı eski değerine getiren ek şeridin genişliği 30 cm olduğundan yeni kısa kenar 2400 ÷ 30 = 80 cm’dir. Eski kısa kenar 80 + 20 = 100 cm olur. Eski çevre 2 × (120 + 100) = 440 cm = 4,4 m’dir."
       }
+    ],
+    test2: [
+      {
+        "id": "m6-2-t2-01",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Özdeş şeritler, komşu iki şeridin uçları aynı uzunlukta üst üste gelecek biçimde birleştiriliyor. Üç şeritle ve beş şeritle yapılan iki düzenin toplam uzunlukları görseldedir. Komşu olmayan şeritler örtüşmüyor; şeritler kesilmiyor.\n\nBu şeritlerden beşi, hiç üst üste gelmeden uç uca dizilse toplam uzunluk kaç santimetre olur?",
+        "options": [
+          "114",
+          "117",
+          "120",
+          "126"
+        ],
+        "correct": 2,
+        "explanation": "Üç şeritli düzene iki şerit daha eklenince uzunluk 108 − 66 = 42 cm artar. Demek ki eklenen her şerit, örtüşme dışında 21 cm uzunluk kazandırır. Üçlü düzende ilk şerit tam uzunluğuyla, sonraki ikisi 21’er cm ile katkı yapar. Bir şerit 66 − 2 × 21 = 24 cm’dir. Örtüşme 24 − 21 = 3 cm olur; kontrol: 5 × 24 − 4 × 3 = 108 cm. Beş şerit örtüşmeden dizilirse 5 × 24 = 120 cm olur.",
+        "imageUrl": "/grade6/matematik/term-2/test-2/soru-01.svg",
+        "imageAlt": "Üstte üç özdeş şeridin oluşturduğu toplam uzunluk 66 cm, altta beş özdeş şeridin oluşturduğu toplam uzunluk 108 cm. Her birleşmede eşit uzunlukta örtüşme koyu renkle gösteriliyor. İlk düzende iki, ikinci düzende dört birleşme var.",
+        "imageWidth": 360,
+        "imageHeight": 520
+      },
+      {
+        "id": "m6-2-t2-02",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Eş karelerle oluşturulan örüntünün ilk üç adımı gösterilmiştir. Her yeni adımda alta bir satır ve sağa bir sütun ekleniyor; sağ alt köşedeki ortak yeni kare yalnız bir kez sayılıyor. Küçük karelerin bir kenarı 2 cm’dir.\n\nBir adımdan sonraki adıma geçerken tam 25 yeni kare eklendiğine göre, oluşan büyük dikdörtgenin çevresi kaç santimetredir?",
+        "options": [
+          "104",
+          "100",
+          "108",
+          "112"
+        ],
+        "correct": 0,
+        "explanation": "n. adımda n satır ve n + 2 sütun vardır. Sonraki adıma geçerken eski dikdörtgenin altına n + 2 kare, sağına ise yeni alt sırayı da içeren n + 1 kare eklenir. Eklenen kare sayısı 2n + 3 = 25 olduğundan n = 11’dir. Büyük şekil 12 satır ve 14 sütundan oluşur. Kenarları 24 cm ve 28 cm; çevresi 2 × (24 + 28) = 104 cm’dir. Kontrol: 12 × 14 − 11 × 13 = 25 yeni kare.",
+        "imageUrl": "/grade6/matematik/term-2/test-2/soru-02.svg",
+        "imageAlt": "Birinci adım 1 satır ve 3 sütun, ikinci adım 2 satır ve 4 sütun, üçüncü adım 3 satır ve 5 sütun eş kareden oluşuyor. İkinci ve üçüncü adımlarda yeni alt satır ve yeni sağ sütun turuncu. Bir küçük karenin kenarı 2 cm.",
+        "imageWidth": 360,
+        "imageHeight": 650
+      },
+      {
+        "id": "m6-2-t2-03",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "ABCD paralelkenarında kesikli çizgiler, AB ve AD kenarlarına ait dik yükseklikleri gösteriyor. AD kenarı taban kabul edilerek, paralelkenarla aynı tabana ve aynı yüksekliğe sahip bir dikdörtgen çiziliyor.\n\nBu dikdörtgenin çevresi kaç santimetredir?",
+        "options": [
+          "54",
+          "64",
+          "80",
+          "70"
+        ],
+        "correct": 3,
+        "explanation": "AB tabanı 25 cm ve bu tabana ait yükseklik 12 cm olduğundan paralelkenarın alanı 25 × 12 = 300 cm²’dir. Aynı alan, AD tabanı 15 cm kullanıldığında 15 × h olur; h = 300 ÷ 15 = 20 cm’dir. Çizilen dikdörtgenin kenarları 15 cm ve 20 cm olur. Çevresi 2 × (15 + 20) = 70 cm’dir. 12 cm, AD’ye değil AB’ye ait yüksekliktir.",
+        "imageUrl": "/grade6/matematik/term-2/test-2/soru-03.svg",
+        "imageAlt": "ABCD paralelkenarında AB 25 cm, AD 15 cm. D’den AB’ye indirilen dikme 12 cm. BD, AD’ye diktir ve uzunluğu h ile gösterilmiştir. Dik açı işaretleri iki tabana ait yükseklikleri ayırıyor.",
+        "imageWidth": 360,
+        "imageHeight": 470
+      },
+      {
+        "id": "m6-2-t2-04",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Dikdörtgen pano, 3 satır ve 4 sütun eş kareye ayrılmıştır. Görseldeki üç kısmi boyalı karede köşegen, kareyi iki eş üçgene ayırıyor. Boyalı bölgenin toplam alanı 0,675 m²’dir.\n\nPanonun dış çevresi kaç desimetredir?",
+        "options": [
+          "40",
+          "42",
+          "44",
+          "48"
+        ],
+        "correct": 1,
+        "explanation": "Görselde 6 tam kare ile 3 yarım kare boyalıdır; boyalı alan 7,5 kareye eşittir. 0,675 m² = 6750 cm² olduğundan bir karenin alanı 6750 ÷ 7,5 = 900 cm²’dir. 30 × 30 = 900 olduğu için küçük karenin kenarı 30 cm’dir. Panonun kenarları 90 cm ve 120 cm olur. Dış çevresi 2 × (90 + 120) = 420 cm = 42 dm’dir.",
+        "imageUrl": "/grade6/matematik/term-2/test-2/soru-04.svg",
+        "imageAlt": "Üç satır, dört sütun eş kareden oluşan pano. Üst sırada ilk üç kare tamamen, son kare yarım boyalı. Orta sırada ilk iki kare tamamen, üçüncü kare yarım boyalı, son kare boş. Alt sırada ilk kare tamamen, ikinci kare yarım boyalı, son iki kare boş. Yarım boyalı kareler bir köşegenle ayrılıyor.",
+        "imageWidth": 360,
+        "imageHeight": 430
+      },
+      {
+        "id": "m6-2-t2-05",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "ABC dik üçgeninin içindeki P noktasından üç kenara dikmeler çizilmiştir. Kenar uzunlukları ve P’nin iki kenara dik uzaklığı görseldedir.\n\nP’nin AC kenarına dik uzaklığı olan x kaç santimetredir?",
+        "options": [
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "correct": 2,
+        "explanation": "ABC’nin alanı 18 × 24 ÷ 2 = 216 cm²’dir. P, köşelerle birleştirilirse büyük üçgen üç küçük üçgene ayrılır. PAB’nin alanı 18 × 4 ÷ 2 = 36 cm²; PBC’nin alanı 24 × 5 ÷ 2 = 60 cm² olur. PAC’nin alanı 216 − 36 − 60 = 120 cm²’dir. AC tabanı 30 cm olduğundan 30 × x ÷ 2 = 120, yani x = 8 cm bulunur.",
+        "imageUrl": "/grade6/matematik/term-2/test-2/soru-05.svg",
+        "imageAlt": "B köşesi dik olan ABC üçgeninde AB 18 cm, BC 24 cm, AC 30 cm. İçteki P noktasının AB’ye dik uzaklığı 4 cm, BC’ye dik uzaklığı 5 cm, AC’ye dik uzaklığı x. Her uzaklık kesikli dikme ve dik açı işaretiyle gösteriliyor.",
+        "imageWidth": 360,
+        "imageHeight": 480
+      },
+      {
+        "id": "m6-2-t2-06",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir dikdörtgen, kenarlarına paralel iki doğruyla dört küçük dikdörtgene ayrılmıştır. Üç parçanın alanı görseldedir.\n\nDört parçanın oluşturduğu büyük dikdörtgenin alanı kaç metrekaredir?",
+        "options": [
+          "0,16",
+          "0,152",
+          "0,136",
+          "0,104"
+        ],
+        "correct": 0,
+        "explanation": "Önce alanları aynı birime çevirelim: 2,4 dm² = 240 cm² ve 4 dm² = 400 cm². Sol alttaki alan, sol üsttekinin 360 ÷ 240 = 1,5 katıdır. Bu iki parçanın genişlikleri aynı olduğundan alt sıranın yüksekliği, üst sıranın 1,5 katıdır. Sağdaki parçaların da genişlikleri aynı olduğu için sağ alt alan 400 × 1,5 = 600 cm² olur. Toplam alan 240 + 400 + 360 + 600 = 1600 cm² = 0,16 m²’dir. Alan farkını iki sütuna aynı miktarda eklemek doğru değildir.",
+        "imageUrl": "/grade6/matematik/term-2/test-2/soru-06.svg",
+        "imageAlt": "Bir yatay ve bir düşey doğruyla dört dikdörtgene ayrılmış büyük dikdörtgen. Sol üst alan 2,4 dm², sağ üst alan 4 dm², sol alt alan 360 cm², sağ alt alan soru işareti. Ayırıcı doğrular karşılıklı kenarlara kadar kesintisiz uzanıyor.",
+        "imageWidth": 360,
+        "imageHeight": 470
+      },
+      {
+        "id": "m6-2-t2-07",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Üçgen kartonun tabanı ve bu tabana ait dik yüksekliği, sıfır çizgileri görünmeyen iki cetvelle ölçülüyor. Uçlara denk gelen cetvel okumaları görselde verilmiştir.\n\nAlanı 0,6 m² olan bir kartondan, şekildeki üçgene eş iki parça kesilip çıkarılmıştır. Kesim kaybı olmadığına göre kalan kartonun alanı kaç metrekaredir?",
+        "options": [
+          "0,08",
+          "0,12",
+          "0,24",
+          "0,36"
+        ],
+        "correct": 1,
+        "explanation": "Cetvel okumaları uzunluğun kendisi değildir; uçlardaki okumaların farkı alınır. Taban 78 − 18 = 60 cm’dir. Dik yükseklik 10 − 2 = 8 dm = 80 cm’dir. Bir üçgenin alanı 60 × 80 ÷ 2 = 2400 cm² = 0,24 m² olur. İki üçgen toplam 0,48 m² kaplar. Kalan alan 0,6 − 0,48 = 0,12 m²’dir.",
+        "imageUrl": "/grade6/matematik/term-2/test-2/soru-07.svg",
+        "imageAlt": "Üçgenin yatay tabanının sol ucu, santimetre cetvelinin 18 çizgisine; sağ ucu 78 çizgisine denk geliyor. Tepe ve taban doğrusu, düşey desimetre cetvelinde sırasıyla 10 ve 2 çizgilerine denk geliyor. Tepeden tabana dik yükseklik kesikli çizilmiş.",
+        "imageWidth": 360,
+        "imageHeight": 550
+      },
+      {
+        "id": "m6-2-t2-08",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir öğrenci grubu sabit bir servis ücretini eşit paylaşmayı planlıyor; başlangıçta kişi başına 36 TL düşüyor. Beş öğrenci vazgeçince aynı ücret kalan öğrenciler arasında paylaşılıyor ve kişi başına 48 TL düşüyor. Daha sonra bir öğretmen toplam ücretin 120 TL’sini karşılıyor.\n\nKalan öğrencilerin her biri son durumda kaç TL öder?",
+        "options": [
+          "36",
+          "38",
+          "42",
+          "40"
+        ],
+        "correct": 3,
+        "explanation": "Vazgeçen 5 kişinin başlangıçta ödeyeceği toplam 5 × 36 = 180 TL, kalan öğrencilerce karşılanmıştır. Kişi başına artış 48 − 36 = 12 TL olduğundan kalan öğrenci sayısı 180 ÷ 12 = 15’tir. Servis ücreti 15 × 48 = 720 TL’dir. Öğretmenin katkısından sonra 720 − 120 = 600 TL kalır. Her öğrenci 600 ÷ 15 = 40 TL öder. Başlangıçta 20 öğrenci olduğu ve 20 × 36 = 720 eşitliği de sonucu doğrular."
+      },
+      {
+        "id": "m6-2-t2-09",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir algoritma 4 sayısıyla başlıyor. “3 ekle” işlemi tam iki kez, “2 ile çarp” işlemi de tam iki kez uygulanıyor. Bu dört işlemin sırası bilinmiyor; her sonuç bir sonraki işlemin girdisi oluyor. Son sonuç 31’dir.\n\nİkinci işlem tamamlandığında elde edilen sayı kaçtır?",
+        "options": [
+          "14",
+          "16",
+          "19",
+          "22"
+        ],
+        "correct": 0,
+        "explanation": "Son sonuç 31 tek olduğu için son işlem 2 ile çarpma olamaz; son işlem 3 eklemedir. Ondan hemen önce 28 vardır. İlk üç işlemde bir kez 3 ekleme ve iki kez 2 ile çarpma yapılmıştır. Ekleme ilk sıradaysa (4 + 3) × 2 × 2 = 28; ortadaysa (4 × 2 + 3) × 2 = 22; sondaysa 4 × 2 × 2 + 3 = 19 olur. Yalnız ilk sıra uygundur. Bütün akış 4 → 7 → 14 → 28 → 31’dir; ikinci işlem sonunda 14 elde edilir."
+      },
+      {
+        "id": "m6-2-t2-10",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir sayı örüntüsünde her yeni terim, önceki terime aynı pozitif sayı eklenerek bulunuyor. Üçüncü ve dokuzuncu terimlerin toplamı 94’tür. On birinci terim, altıncı terimden 35 fazladır.\n\nBu örüntünün dördüncü terimi kaçtır?",
+        "options": [
+          "26",
+          "40",
+          "33",
+          "47"
+        ],
+        "correct": 2,
+        "explanation": "Altıncı terimden on birinci terime 5 eşit artış vardır. Bir artış 35 ÷ 5 = 7’dir. Üçüncü ve dokuzuncu terimler, altıncı terimin iki yanında üçer artış uzaklıktadır; toplamları altıncı terimin iki katıdır. Bu nedenle altıncı terim 94 ÷ 2 = 47 olur. Dördüncü terim iki artış geridedir: 47 − 2 × 7 = 33. Kontrol: üçüncü terim 26, dokuzuncu terim 68 ve toplamları 94’tür."
+      }
     ]
   },
 };

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="470" viewBox="0 0 360 470" role="img">
+<title>Dört dikdörtgen bölgesinin üç alanından bütünün alanı</title>
+<rect width="360" height="470" rx="18" fill="#f8fafc"/>
+<g font-family="DejaVu Sans, sans-serif" font-weight="500" stroke-linejoin="round" stroke-linecap="round">
+<text x="180" y="47" font-size="28" fill="#172554" text-anchor="middle" >Parçaların alanları</text><rect x="30" y="95" width="112.5" height="124" fill="#dbeafe" stroke="#172554" stroke-width="2.5"/><rect x="142.5" y="95" width="187.5" height="124" fill="#e0e7ff" stroke="#172554" stroke-width="2.5"/><rect x="30" y="219" width="112.5" height="186" fill="#dcfce7" stroke="#172554" stroke-width="2.5"/><rect x="142.5" y="219" width="187.5" height="186" fill="#ffedd5" stroke="#172554" stroke-width="2.5"/><text x="86.25" y="151" font-size="28" fill="#172554" text-anchor="middle" >2,4</text><text x="86.25" y="188" font-size="26" fill="#172554" text-anchor="middle" >dm²</text><text x="236.25" y="151" font-size="28" fill="#172554" text-anchor="middle" >4</text><text x="236.25" y="188" font-size="26" fill="#172554" text-anchor="middle" >dm²</text><text x="86.25" y="304" font-size="28" fill="#172554" text-anchor="middle" >360</text><text x="86.25" y="341" font-size="26" fill="#172554" text-anchor="middle" >cm²</text><text x="236.25" y="328" font-size="38" fill="#172554" text-anchor="middle" >?</text>
+</g>
+</svg>
