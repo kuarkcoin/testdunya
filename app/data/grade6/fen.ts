@@ -2743,6 +2743,176 @@ export const fenData: SubjectData = {
             "correct": 0,
             "explanation": "X her değeri 5 °C yüksek gösterir; K için 45 − 5 = 40 °C bulunur. Y her değeri 3 °C düşük gösterir; L için 37 + 3 = 40 °C bulunur. Hata düzeltmesinin yönü iki termometrede farklıdır. Erime noktalarının eşit olması tek başına madde kimliğini kesinleştirmez; aynı basınçta kaynama noktası gibi başka ayırt edici özellikler de incelenmelidir."
       }
+],
+    test2: [
+  {
+    "id": "f6-2-t2-01",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "K, L ve M metal şeritlerinin 20 °C’deki boyları 100’er mm’dir. Ayrı ayrı 80 °C’ye getirildiklerinde ölçülen boyları şekilde verilmiştir. İki şerit boyları boyunca birleştirilince birlikte bükülebiliyor; daha çok uzayan katman, kıvrımın dış tarafında kalıyor.\n\n20 °C’de hazırlanan birinci düzende üstte K, altta L vardır. İkinci düzende yalnız üst katman M ile değiştirilmiştir. Sol uçlar sabit, sağ uçlar serbesttir. İki düzenek de 80 °C’ye getirildiğinde serbest uçlar sırasıyla hangi yönde bükülür? Katmanlar ayrılmıyor; erime olmuyor.",
+    "options": [
+      "I; I",
+      "II; I",
+      "I; II",
+      "II; II"
+    ],
+    "correct": 2,
+    "explanation": "İlk düzende L, K’den daha fazla uzar: 100,12 mm > 100,06 mm. Alt katman L kıvrımın dış tarafında kalacağından serbest uç yukarıya, I yönüne bükülür. İkinci düzende üstteki M, alttaki L’den daha fazla uzar: 100,18 mm > 100,12 mm. Bu kez üst katman dışta kalır; serbest uç aşağıya, II yönüne bükülür. Katmanların yalnız ısınması değil, birbirlerine göre ne kadar uzadıkları önemlidir.",
+    "imageUrl": "/grade6/fen/term-2/test-2/soru-01.svg",
+    "imageAlt": "20 °C’de her şerit 100 mm. 80 °C’de K 100,06 mm, L 100,12 mm, M 100,18 mm. İlk birleşik şeritte üstte K, altta L; sol uç sabit. Serbest uç için I yukarı, II aşağı yönü gösteriyor.",
+    "imageWidth": 360,
+    "imageHeight": 570
+  },
+  {
+    "id": "f6-2-t2-02",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "İçi dolu, su almayan ve suda çözünmeyen 54 g’lık bir cisim suya tamamen batırılıyor. İlk okumada cismin dışına bir hava kabarcığı tutunmuş olduğu fark ediliyor. Cisim su içinde tutulurken kabarcık uzaklaştırılıyor ve yeniden okuma yapılıyor. Su eklenmiyor, taşma veya madde kaybı olmuyor; bütün ölçümler aynı sıcaklıktadır. Kabarcığın kütlesi ihmal ediliyor.\n\nKabarcıklı ölçümle hesaplanan yoğunluk ile düzeltilmiş yoğunluk karşılaştırıldığında hangi sonuç doğrudur? Cisim, kabarcık uzaklaştırıldıktan sonra yoğunluğu 2,1 g/cm³ olan başka bir sıvıya bırakılıyor; bu sıvıda da değişime uğramıyor.",
+    "options": [
+      "İlk hesap yoğunluğu küçük gösterir; doğru yoğunluk 2,25 g/cm³ olduğundan cisim ikinci sıvıda batar.",
+      "İlk hesap yoğunluğu küçük gösterir; doğru yoğunluk 1,8 g/cm³ olduğundan cisim ikinci sıvıda yüzer.",
+      "İlk hesap yoğunluğu büyük gösterir; doğru yoğunluk 2,25 g/cm³ olduğundan cisim ikinci sıvıda batar.",
+      "İlk hesap yoğunluğu küçük gösterir; doğru yoğunluk 0,675 g/cm³ olduğundan cisim ikinci sıvıda yüzer."
+    ],
+    "correct": 0,
+    "explanation": "Kabarcıklı ölçümde yer değiştiren su hacmi 80 − 50 = 30 cm³, hesaplanan yoğunluk 54 ÷ 30 = 1,8 g/cm³ olur. Kabarcık uzaklaştırılınca cismin gerçek hacmi 74 − 50 = 24 cm³ bulunur. Doğru yoğunluk 54 ÷ 24 = 2,25 g/cm³’tür. Kabarcık hacmi fazla, yoğunluğu küçük göstermiştir. Kabarcıksız cismin yoğunluğu 2,1 g/cm³’ten büyük olduğundan ikinci sıvıda batar.",
+    "imageUrl": "/grade6/fen/term-2/test-2/soru-02.svg",
+    "imageAlt": "Aynı dereceli kapta üç okuma: cisim yokken 50 cm³, tamamen batmış cisim ve dışına tutunmuş kabarcıkla 80 cm³, aynı cisim kabarcıksızken 74 cm³. Cismin kütlesi 54 g.",
+    "imageWidth": 360,
+    "imageHeight": 590
+  },
+  {
+    "id": "f6-2-t2-03",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Şekildeki kutuların hacimleri üzerlerinde yazılıdır. Her simge, kendi açıklamasındaki kütleyi temsil eder; simgeler gerçek tanecik değildir. Modelde örneklerin toplam kütlesi, kutularındaki simgelerin temsil ettiği kütlelerin toplamıdır.\n\nÖnce P, Q ve R’nin yoğunlukları karşılaştırılıyor. Sonra Q ile aynı hacimde, fakat P ile aynı yoğunlukta yeni bir örnek yalnız turuncu karelerle modellenecektir. Doğru yoğunluk sıralaması ve yeni kutuda bulunması gereken toplam turuncu kare sayısı hangisidir?",
+    "options": [
+      "Q > P > R; 6 kare",
+      "P = R > Q; 6 kare",
+      "P > Q = R; 8 kare",
+      "P = R > Q; 12 kare"
+    ],
+    "correct": 3,
+    "explanation": "P’nin kütlesi 4 × 3 = 12 g ve yoğunluğu 12 ÷ 10 = 1,2 g/cm³’tür. Q’nun kütlesi 6 × 2 = 12 g, yoğunluğu 12 ÷ 20 = 0,6 g/cm³’tür. R’nin kütlesi 3 × 4 = 12 g ve yoğunluğu 12 ÷ 10 = 1,2 g/cm³’tür. Bu nedenle P = R > Q olur. Yeni 20 cm³ örneğin kütlesi 1,2 × 20 = 24 g olmalıdır. Her turuncu kare 2 g temsil ettiğinden toplam 24 ÷ 2 = 12 kare gerekir; simgeleri yalnız saymak yeterli değildir.",
+    "imageUrl": "/grade6/fen/term-2/test-2/soru-03.svg",
+    "imageAlt": "P: 10 cm³ hacimde dört mavi daire, her daire 3 g. Q: 20 cm³ hacimde altı turuncu kare, her kare 2 g. R: 10 cm³ hacimde üç mor üçgen, her üçgen 4 g.",
+    "imageWidth": 360,
+    "imageHeight": 570
+  },
+  {
+    "id": "f6-2-t2-04",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Şekildeki ayarlanabilir direnç telinin her aralığı eşit uzunlukta, cinsi ve kalınlığı her yerde aynıdır. Devreye yalnız hareketli A ve B temasları arasında kalan tel katılır; dışta kalan kısımlar etki etmez. Temaslar birbirini geçmez. Pil, ampul, sıcaklık ve bağlantı koşulları değişmiyor.\n\nBirinci işlemde A, 4 numaralı çizgiye; B, 9 numaralı çizgiye getiriliyor. İkinci işlemde A yeni yerinde tutulurken yalnız B, 6 numaralı çizgiye getiriliyor. Her işlemin sonundaki ampul parlaklığı başlangıçtaki parlaklıkla karşılaştırılırsa sırasıyla nasıl değişir?",
+    "options": [
+      "Azalır; artar.",
+      "Değişmez; artar.",
+      "Artar; değişmez.",
+      "Değişmez; azalır."
+    ],
+    "correct": 1,
+    "explanation": "Başlangıçta A 2’de, B 7’dedir; etkin tel 7 − 2 = 5 aralıktır. Birinci işlemde A 4’e, B 9’a gelir. Aralarındaki tel yine 9 − 4 = 5 aralık olduğundan direnç ve parlaklık değişmez. Sonra B 6’ya gelir, A 4’te kalır; etkin tel 6 − 4 = 2 aralığa iner. Aynı telin kullanılan uzunluğu azaldığı için direnç azalır ve ampul başlangıca göre daha parlak yanar.",
+    "imageUrl": "/grade6/fen/term-2/test-2/soru-04.svg",
+    "imageAlt": "Pil ve ampullü devrenin iki hareketli teması, 0’dan 10’a eşit aralıklı direnç teli üzerindedir. A teması 2’de, B teması 7’dedir. Yalnız A ile B arasındaki tel devrededir.",
+    "imageWidth": 360,
+    "imageHeight": 420
+  },
+  {
+    "id": "f6-2-t2-05",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Bir bölgede aynı yöntem ve yeterli gözlem süresiyle taranan P, Q ve R yaşam alanlarında kaydedilen türler tabloda işaretlidir. Her harf farklı bir türü gösterir. Koruma bütçesi, bu üç alandan tam ikisinin korunmasına yeterlidir. Amaç, tabloda kaydedilen türlerin olabildiğince çoğunun yaşam alanını koruma kapsamına almaktır.\n\nHangi seçim ve gerekçe bu amaca uygundur? Yalnız tabloda verilen tür kayıtları değerlendirilecektir.",
+    "options": [
+      "P ve Q; iki sütundaki işaretlerin toplamı 9 olduğu için 9 farklı tür korunur.",
+      "P ve R; P’deki tür sayısı en yüksek olduğundan P’yi içeren her ikili en iyi sonucu verir.",
+      "Q ve R; ortak türleri olmadığı için birlikte 7 farklı türü kapsar ve tablodaki tüm türlere alan sağlar.",
+      "Yalnız P; 5 tür içerdiği için ikinci bir alanı korumak hiçbir yeni tür ekleyemez."
+    ],
+    "correct": 2,
+    "explanation": "P’de A, B, C, D, E; Q’da A, B, C, F; R’de D, E, G türleri kayıtlıdır. P ve Q birlikte 6 farklı türü, P ve R de 6 farklı türü kapsar. Q ve R birlikte A’dan G’ye 7 farklı türün tamamını kapsar. Ortak türleri tekrar tekrar saymak çeşitliliği olduğundan fazla gösterir. Bu seçim, yalnız verilen kayıtlar ve amaç bakımından uygundur; koruma başarısı ayrıca izlenmelidir.",
+    "imageUrl": "/grade6/fen/term-2/test-2/soru-05.svg",
+    "imageAlt": "Türlerin yaşam alanlarına göre varlık tablosu. P: A, B, C, D, E. Q: A, B, C, F. R: D, E, G. Dolu daire türün o alanda kaydedildiğini gösterir.",
+    "imageWidth": 360,
+    "imageHeight": 530
+  },
+  {
+    "id": "f6-2-t2-06",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Bir öğrenci, aynı basınçta saf K ve L maddelerinin erime ve kaynama noktalarını ölçerek onları ayırt etmek istiyor. Başvuru değerleri K için 42 °C ve 92 °C; L için 44 °C ve 96 °C’dir. Ölçümlerde tek bir termometre kullanılacak ve ara değer tahmini yapılmadan dört sıcaklığın da ölçek çizgilerinden doğrudan okunabilmesi istenecektir.\n\nŞekilde uç değerleri ve en küçük bölmeleri verilen termometrelerden hangisi bu iki koşulu birlikte karşılar? Ölçekler düzenli aralıklıdır; termometrelerin ölçüm hatası yoktur.",
+    "options": [
+      "P",
+      "Q",
+      "R",
+      "S"
+    ],
+    "correct": 3,
+    "explanation": "Ölçme aralığı ile bölme büyüklüğü birlikte değerlendirilmelidir. P dört sıcaklığı kapsasa da 10 °C aralıklı çizgiler 42, 44, 92 ve 96 °C’yi doğrudan göstermez. Q’nun üst sınırı kaynama noktalarına, R’nin alt sınırı erime noktalarına uygun değildir. S’de 30’dan 110’a ikişer derece ilerleyen çizgiler arasında 42, 44, 92 ve 96 °C bulunur; S iki koşulu da karşılar.",
+    "imageUrl": "/grade6/fen/term-2/test-2/soru-06.svg",
+    "imageAlt": "P termometresi 0–110 °C, en küçük bölme 10 °C. Q 30–90 °C, bölme 2 °C. R 50–110 °C, bölme 1 °C. S 30–110 °C, bölme 2 °C.",
+    "imageWidth": 360,
+    "imageHeight": 610
+  },
+  {
+    "id": "f6-2-t2-07",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Şekilde her kart konumuna giden kırmızı ve mavi ışık yolları gösterilmiştir. Siyah çubuklar opak perdedir; perdenin kestiği ışık karta ulaşmaz. Kartlara başka yoldan ışık gelmiyor.\n\nBaşlangıçta P’ye yalnız kırmızı ışığı yansıtan kırmızı kart, Q’ya yalnız mavi ışığı yansıtan mavi kart konuyor. Kartlar diğer rengi soğuruyor ve kendileri ışık üretmiyor. Sonra perdeler ve kaynaklar değiştirilmeden iki kartın yeri değiştiriliyor. İlk ve son görünümler hangi seçenekte doğru verilmiştir?",
+    "options": [
+      "İlk: P ve Q siyah. Son: P mavi, Q kırmızı.",
+      "İlk: P kırmızı, Q mavi. Son: P ve Q siyah.",
+      "İlk: P ve Q siyah. Son: P kırmızı, Q mavi.",
+      "İlk: P mavi, Q kırmızı. Son: P ve Q siyah."
+    ],
+    "correct": 0,
+    "explanation": "P’ye giden kırmızı ışık perdeyle kesilir; P’ye yalnız mavi ışık ulaşır. Q’ya giden mavi ışık kesilir; Q’ya yalnız kırmızı ışık ulaşır. Başlangıçta her kart kendisine gelen rengi soğurur ve ikisi de siyah görünür. Kartların yeri değişince P’deki mavi kart mavi ışığı, Q’daki kırmızı kart kırmızı ışığı yansıtır. Kartın görünümünü belirlerken hem yüzeyin yansıttığı hem de yüzeye gerçekten ulaşan renk dikkate alınmalıdır.",
+    "imageUrl": "/grade6/fen/term-2/test-2/soru-07.svg",
+    "imageAlt": "P konumunda kırmızı kaynaktan karta giden yol opak perdeyle kesilmiş, mavi yol açıktır. Q konumunda kırmızı yol açık, mavi yol opak perdeyle kesilmiştir.",
+    "imageWidth": 360,
+    "imageHeight": 620
+  },
+  {
+    "id": "f6-2-t2-08",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Kesintisiz bir metal telin dışı ince bir kaplamayla örtülüdür. Tel, sağlam bir pil–ampul devresinin iki bağlantı ucu arasına yerleştiriliyor.\n• İki bağlantı da kaplamaya değince ampulde gözle görülür ışık oluşmuyor.\n• Yalnız bir bağlantı yerindeki kaplama kazınıp metal açığa çıkarılınca yine ışık oluşmuyor.\n• İkinci bağlantı yeri de kazınıp iki uç doğrudan metale değdirilince ampul yanıyor.\nKazıma sırasında metal tel kesilmiyor veya incelmiyor; diğer koşullar aynı tutuluyor.\n\nÜç denemeyi birlikte açıklayan en uygun değerlendirme hangisidir?",
+    "options": [
+      "Kazıma, metalin cinsini değiştirdiği için ilk iki denemede yalıtkan olan metal son denemede iletken olmuştur.",
+      "Son deneme metal üzerinden iletim sağlanabildiğini gösterir; yalnız bir temas yerini açmak bu düzende yeterli olmamıştır.",
+      "İlk iki deneme, telin metal kısmının kesinlikle yalıtkan olduğunu kanıtlar; son deneme bu bilgiyle ilgili değildir.",
+      "Kaplama her durumda metalden daha iyi iletkendir; iki yerden kazınınca telin uzunluğu arttığı için ampul yanmıştır."
+    ],
+    "correct": 1,
+    "explanation": "Metal telin cinsi ve boyutları değişmediği hâlde iki bağlantı doğrudan metale temas edince ampul yanmıştır. Sonuç, metal üzerinden ampulü yakacak iletimin sağlanabildiğini gösterir. İlk iki denemede kaplamalı temaslardan en az biri bu iletimi engellemiştir; yalnız bir temasın açılması yeterli olmamıştır. Işık görülmemesi tek başına metal çekirdeğin yalıtkan olduğunu veya devrede kesinlikle hiç akım bulunmadığını kanıtlamaz."
+  },
+  {
+    "id": "f6-2-t2-09",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Boş kütlesi bilinmeyen aynı kap, aynı saf sıvıyla iki kez tartılıyor. İlkinde kapta 30 cm³ sıvı varken toplam kütle 82 g; ikincisinde 70 cm³ sıvı varken toplam kütle 130 g ölçülüyor. Sıcaklık aynı, kabın dış yüzeyi kuru, kabın kütlesi değişmemiştir; tartıya kap ile sıvı dışında bir şey konmuyor.\n\nSıvının yoğunluğu ve aynı kapta 100 cm³ sıvı bulunduğunda ölçülecek toplam kütle sırasıyla hangisidir?",
+    "options": [
+      "1,2 g/cm³; 120 g",
+      "1,6 g/cm³; 210 g",
+      "2,4 g/cm³; 286 g",
+      "1,2 g/cm³; 166 g"
+    ],
+    "correct": 3,
+    "explanation": "İki tartımın farkında kabın kütlesi birbirini götürür: 70 − 30 = 40 cm³ ek sıvının kütlesi 130 − 82 = 48 g’dır. Yoğunluk 48 ÷ 40 = 1,2 g/cm³ olur. İlk tartımdaki sıvı 30 × 1,2 = 36 g olduğuna göre boş kap 82 − 36 = 46 g’dır. 100 cm³ sıvı 120 g gelir; kapla birlikte toplam 120 + 46 = 166 g ölçülür. Toplam tartımı doğrudan sıvı hacmine bölmek, kabın kütlesini de sıvıya katma hatası doğurur."
+  },
+  {
+    "id": "f6-2-t2-10",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Bir yolun iki tarafındaki orman parçalarında aynı 10 yerli hayvan türü iki yılda da kaydediliyor. Eşit gözlem süresi ve aynı yöntemle ilk yıl yolun karşısına geçmeye yönelik 80 girişim, bu girişimler sırasında 20 ölüm; ikinci yıl 8 girişim ve bu girişimler sırasında 2 ölüm kaydediliyor. İkinci yıl yol kenarlarına kesintisiz çitler eklenmiş. Bir öğrenci, “Ölümler azaldı; yolun iki tarafı arasındaki bağlantı kesinlikle iyileşti.” diyor.\n\nVerilerin desteklediği değerlendirme ve uygun sonraki çalışma hangisidir?",
+    "options": [
+      "Ölüm sayısı azaldığından bağlantı iyileşmiştir; geçiş girişimlerini yeniden izlemek gereksizdir.",
+      "Girişim başına ölüm oranı ikinci yıl artmıştır; bunun tek nedeninin yerli tür sayısının artması olduğu söylenebilir.",
+      "Girişim başına ölüm oranı değişmemiş, girişimler azalmıştır; çitlerin alanlar arası geçişi sınırlayıp sınırlamadığı ve türe uygun güvenli geçitler araştırılmalıdır.",
+      "İki yılda da 10 tür bulunduğundan bütün türlerin birey sayılarının ve alanlar arası hareketlerinin aynı kaldığı kanıtlanmıştır."
+    ],
+    "correct": 2,
+    "explanation": "İlk yıl girişimlerin 20/80 = 1/4’ü, ikinci yıl 2/8 = 1/4’ü ölümle sonuçlanmıştır. Toplam ölüm azalsa da girişim başına kayıtlı ölüm oranı düşmemiştir; girişim sayısı da 80’den 8’e inmiştir. Bu kayıtlar bağlantının iyileştiğini kanıtlamaz. Çitler güvenliği etkileyebildiği gibi yaşam alanları arasındaki hareketi de sınırlayabilir. Etkileri ve uygun güvenli geçitler araştırılmalıdır. Aynı tür sayısı, her türün birey sayısının veya hareketinin aynı olduğunu göstermez."
+  }
 ]
   },
 };

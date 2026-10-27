@@ -135,3 +135,26 @@ Kimlikler `m6-2-t2-01`–`m6-2-t2-10`; rota `/6-sinif/matematik/2-donem-test-2`;
 MAT.6.2.1–3 kaynak s.2; MAT.6.4.1–3 kaynak s.3; senaryolar s.4–9. Cevap anahtarı: **C, A, D, B, C, A, B, D, A, C**.
 
 Önceki **66 test / 660 soru / 370 SVG** içerik olarak ve mevcut soru kayıtları ile SVG dosyaları byte düzeyinde korunur. Yeni toplam **67 test / 670 soru / 377 SVG**; matematik toplamı **17 test / 170 soru**, ikinci dönem matematik bölümü **2 test / 20 soru**. Test sayıları kayıtlardan hesaplanır; ortak soru arayüzü değiştirilmez. Native SVG incelemesi 360 px ve 238 px genişliklerinde yapılır; tarayıcı etkileşim testi bu eklemede yapılmamıştır. Production aktarımı içerik eklemesinin parçası değildir.
+
+## Fen Bilimleri — 2. dönem Test 2 (zor)
+
+Kullanıcının sağladığı aynı 17 sayfalık `fen6.pdf` içindeki ikinci dönem birinci ve ikinci yazılı öğrenme çıktıları esas alınmıştır. **10 yeni soru: 7 anlamlı bilimsel SVG + 3 metin**. Sorular, kaynak belgedeki açık uçlu/kısa cevaplı sınavların özgün çoktan seçmeli alıştırma uyarlamalarıdır; resmî sınav kopyası veya bütün dönem kazanımlarının eksiksiz ölçümü değildir. Tutulmalar, kuvvet, üreme gibi kaynak dışı konular eklenmez.
+
+Kimlikler `f6-2-t2-01`–`f6-2-t2-10`; rota `/6-sinif/fen/2-donem-test-2`; görseller `public/grade6/fen/term-2/test-2/`. SVG genişliği 360 px, tüm yazılar en az 26 px; kayıtlı görsel yükseklikleri gerçek SVG boyutlarıyla aynıdır. Ortak soru arayüzü ve büyütme desteği değişmez. Zorluk, üst sınıf formüllerinden değil ölçüm yanlılığını düzeltme, nicelikleri ve görsel modeli birlikte okuma, birden fazla koşulu denetleme ve kanıtın sınırını korumadan gelir. Birleşik metal şeritlerin bükülmesini yorumlamak için gerekli dış katman kuralı soruda verilir; genleşme değerleri gerçekçi büyüklüktedir. Soruların tümü eşit güçlükte değildir.
+
+| Soru | Yeni akıl yürütme mekanizması | Kaynak eşlemesi |
+| --- | --- | --- |
+| 1 | Serbest genleşme ölçülerinden iki katmanlı şeridin bükülme yönünü ve katman değişiminin etkisini çıkarma | FB.6.5.1.1 |
+| 2 | Yapışan hava kabarcığının hacim ölçümüne etkisini düzeltip yoğunluk ve batma sonucunu yeniden değerlendirme | FB.6.5.3.1–2 |
+| 3 | Farklı kütleleri temsil eden simgeler ve farklı kutu hacimlerinden yoğunluk modeli kurma | FB.6.5.3.1, FB.6.5.3.4 |
+| 4 | İki hareketli temasın mutlak konumlarından etkin tel uzunluğunu ve parlaklık değişimini karşılaştırma | FB.6.6.2.1–2 |
+| 5 | Korunacak iki yaşam alanını, ortak türleri tekrar saymadan birbirini tamamlayan tür kayıtlarıyla seçme | FB.6.7.1.1 |
+| 6 | Erime ve kaynama ölçümünde hem ölçme aralığını hem ölçek bölmesini karşılayan aracı seçme | FB.6.5.2.1 |
+| 7 | Perdenin kestiği renkli ışık yolları ile kartların seçici yansıtmasını birleştirme | FB.6.4.3.3 |
+| 8 | Yalıtıcı kaplama ile metal çekirdeğe temasın iletkenlik deneyindeki farklı rollerini ayırma | FB.6.6.1.1 |
+| 9 | Boş kap kütlesi bilinmeden iki tartım farkından yoğunluğu, ardından toplam kütleyi bulma | FB.6.5.3.1–2 |
+| 10 | Ölüm sayısı ile geçiş girişimi oranını ayırıp yaşam alanı parçalanması iddiasını değerlendirme | FB.6.7.1.2 |
+
+Kaynak kazanımlar s.2–3; birinci yazılı senaryoları s.4–10, ikinci yazılı senaryoları s.11–17. Cevap anahtarı: **C, A, D, B, C, D, A, B, D, C**. Önceki 160 Fen Bilimleri sorusu, senaryoların ve çözüm mekanizmalarının tekrarlanmaması için incelenmiştir. Yer değiştiren iki temasın başlangıç bilgisi, termometre seçeneklerinin aralık ve bölmeleri gibi belirleyici bilgiler yalnız ilgili görseldedir; 7 görsel de çözüm için veri taşır.
+
+Önceki **67 test / 670 soru / 377 SVG** korunur; eski soru kayıtları ve SVG dosyaları byte düzeyinde karşılaştırılır. Yeni toplam **68 test / 680 soru / 384 SVG**; Fen Bilimleri toplamı **17 test / 170 soru**, ikinci dönem Fen bölümü **2 test / 20 soru**. Native SVG incelemesi 360 px ve 238 px genişliklerinde yapılır; tarayıcı etkileşim testi yapılmamıştır. Production aktarımı bu içerik eklemesinin parçası değildir.
