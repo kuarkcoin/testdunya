@@ -325,3 +325,31 @@ Zorluk, ileri dil bilgisi veya üst sınıf sözcüklerinden değil birden fazla
 Önceki **160 İngilizce sorusu** içerik, bağlam ve çözüm mekanizması yönünden incelenir; özellikle ikinci dönem Test 1’deki ziyaretçi eşleştirme, değişen tatil planı, taşınan kitap, okuma kaydı, geri dönüşüm kutusu, israf öncesi/sonrası, geçersiz oy ve seçimi yenileme mekanizmaları tekrar edilmez. Yazma kazanımları doğrudan ölçülmez; tüm kazanımların eksiksiz kapsandığı iddia edilmez. İlk dönem Life / Yummy Breakfast / Downtown / Weather and Emotions / At the Fair kapsamı bu teste taşınmaz.
 
 Önceki **74 test / 740 soru / 426 SVG** korunur; mevcut soru kayıtları ve SVG dosyaları byte düzeyinde karşılaştırılır. Yeni toplam **75 test / 750 soru / 433 SVG**; İngilizce toplamı **17 test / 170 soru**, ikinci dönem İngilizce bölümü **2 test / 20 soru** olur. Veri, TypeScript, tam Next.js 15.5.28 derlemesi, SEO, üretilmiş rotalar ve yerel HTTP sayfa/varlık kontrolleri uygulanır. Native SVG incelemesi 360 px ve 238 px genişliklerinde yapılır. Tarayıcı etkileşim testi önceki erişim reddi nedeniyle yeniden denenmez; native inceleme tarayıcı testi olarak sunulmaz. Production aktarımı bu içerik eklemesinin parçası değildir.
+
+
+## İngilizce — 2. dönem Test 4 (zor)
+
+Kullanıcının sağladığı aynı 11 sayfalık `ing6.pdf`, **6. Sınıf İngilizce 2. Dönem 1. ve 2. Ortak Yazılı Konu Soru Dağılım Tabloları** esas alınır. Birinci yazılı senaryoları s.2–6, ikinci yazılı senaryoları s.7–11’dir. Kapsam Occupations, Holidays, Bookworms, Saving the Planet ve Democracy üniteleridir. Kaynak tam dönem/yıl müfredatı değildir; her ünite her senaryoda bulunmaz. Özgün çoktan seçmeli alıştırmalar resmî sınav kopyası değildir; kaynağın açık uçlu/kısa cevaplı sınav biçiminin veya bağımsız yazılı üretimin yerine geçmez.
+
+**10 yeni soru: 7 anlamlı yerel SVG + 3 metin**. Sorular ve seçenekler İngilizce, açıklamalar Türkçedir. Kimlikler `e6-2-t4-01`–`e6-2-t4-10`; rota `/6-sinif/ingilizce/2-donem-test-4`; görseller `public/grade6/ingilizce/term-2/test-4/`. SVG genişliği 360 px, yazılar en az 26 px; kayıtlı yükseklikler gerçek boyutlarla eşleşir. Tarihli iş ürünleri, delikli kullanılmış biletler, kısmen gizlenen kitap kapağı, gerçek bölüm başlangıçlarını gösteren içindekiler sayfası, toprak/su durumu, alternatif yollar ve tamamlanmış seçim sonucu çözüm için veri taşır. Ortak soru bileşeni ve büyütme desteği değiştirilmez.
+
+**Numaralandırma:** İngilizce ikinci dönem Test 2 mevcut değildir. Test 4 eklenirken Test 1 ve Test 3 korunur; Test 2 uydurulmaz, başka test yeniden numaralandırılmaz. Bölümde Test 1, Test 3 ve Test 4 bulunur; sayılar gerçek kayıtlardan hesaplanır. Test 2 için rota veya site haritası girdisi oluşturulmaz.
+
+| Soru | Yeni akıl yürütme mekanizması | Kaynak eşlemesi |
+| --- | --- | --- |
+| 1 | Aynı ürünün yapım, boyama ve taşıma kayıtlarını aradaki ilgisiz tamir işinden ayırıp meslek ve tarihi belirleme | Occupations, E6.6.R1 (s.2–7,9) |
+| 2 | Bilete sahip olmak ile onu kullanmayı ayırıp delik işareti ve geçerlilik tarihlerini birlikte okuma | Holidays, E6.7.R1 (s.2–6,8,10,11) |
+| 3 | Görünen ve çantanın içinde gizli kalan kapak durumlarını ayırıp hasarın kesin tarihine ilişkin kanıt sınırını koruma | Bookworms, E6.8.R1 (s.7–11) |
+| 4 | İçindekiler sayfasındaki başlangıçlardan bölümün son sayfasını çıkarıp iki günün okuma notunu değerlendirme | Bookworms, E6.8.R1; E6.8.W1 ile ilişkili not seçimi (s.7–11) |
+| 5 | Toprağın durumu ve kullanılabilir su kaynağını birlikte okuyarak koşullu tasarruf kuralını uygulama | Saving the Planet, E6.9.R1/R2 (R1 s.7–11; R2 s.8,10,11) |
+| 6 | Doğru kutu, işaretli yolda kalma ve çiçekleri koruma koşullarını aynı rotada denetleme | Saving the Planet, E6.9.R2 (s.8,10,11) |
+| 7 | Tamamlanmış sayımda en çok oy ile kazanma eşiğini ayırıp yeni oylamaya katılacak iki adayı belirleme | Democracy, E6.10.R1 (s.10–11) |
+| 8 | Bir mesleğe sahip olmak ile o işi evde bir gün yapmak/yapmamak arasındaki farkı koruma | Occupations, E6.6.R1 (s.2–7,9) |
+| 9 | Ziyaretçi ve ev sahibi rollerinin değişmesini, ardından iki çocuğun farklı geceleme yerlerini izleme | Holidays, E6.7.R1 (s.2–6,8,10,11) |
+| 10 | Aday olmayı destekleyen form ile kişisel gizli oyu ayırıp iki aşamanın kurallarını koruma | Democracy, E6.10.R1 (s.10–11) |
+
+Zorluk, ileri dil bilgisinden değil birden fazla ipucunu birleştirme, görsel kanıtın sınırını koruma, bölüm sınırlarını çıkarma ve koşullu yönergeleri uygulamadan gelir; bütün sorular aynı güçlükte değildir. Q2’de her bilet yalnızca üzerinde yazılı tarihte kullanılabilir ve başka bilet yoktur. Q3’te 6 Mayıs fotoğrafında ön kapak bütünüyle gizlidir; görünmeyen hasar yok sayılmaz. Q7’de 24 oyun tamamı sayılmış ve geçerlidir; sorun önceki testteki eksik sayım değildir. Q10’da her öğrencinin tek oyu vardır ve tercih gizlidir. Cevap anahtarı: **C, A, D, B, C, A, D, B, C, A**.
+
+Önceki **170 İngilizce sorusu**, özellikle ikinci dönem Test 1 ve Test 3, içerik ve çözüm mekanizması bakımından incelenir. Önceki ziyaretçi/tarih eşleştirmesi, değişen tatil planı, fotoğraftan kişi kimliği, düşey kitaplık ilişkisi, iç içe ödünç aralıkları, kâğıdın iki yüzünü kullanma, çalışma alanlarını sıraya koyma, geçersiz/eksik oy, kartpostal zaman dayanağı ve başkanın sınıf oyuna uyması senaryoları tekrarlanmaz. Yazma kazanımları doğrudan ölçülmez; tüm kazanımların eksiksiz kapsandığı iddia edilmez. İlk dönem konuları bu teste taşınmaz.
+
+Önceki **75 test / 750 soru / 433 SVG** korunur; eski soru kayıtları ve SVG dosyaları byte düzeyinde karşılaştırılır. Yeni toplam **76 test / 760 soru / 440 SVG**; İngilizce toplamı **18 test / 180 soru**, ikinci dönem İngilizce bölümü **3 test / 30 soru** olur. Veri, TypeScript, tam Next.js 15.5.28 derlemesi, SEO, üretilmiş rotalar ve yerel HTTP sayfa/varlık kontrolleri uygulanır. Bağımsız dil, içerik, özgünlük ve görsel incelemesi yapılır; native SVG pikselleri 360 px ve 238 px genişliklerde incelenir. Önceki erişim reddi nedeniyle tarayıcı etkileşim testi yeniden denenmez; native inceleme tarayıcı testi olarak sunulmaz. Production aktarımı bu içerik eklemesinin parçası değildir.

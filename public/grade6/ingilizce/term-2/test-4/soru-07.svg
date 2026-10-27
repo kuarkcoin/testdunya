@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="460" viewBox="0 0 360 460" role="img">
+<title>ALL VOTES COUNTED</title>
+<desc>ALL VOTES COUNTED</desc>
+<rect x="1" y="1" width="358" height="458" rx="18" fill="#fff" stroke="#d6e2eb" stroke-width="2"/>
+<text x="180" y="42" font-family="Arial, sans-serif" font-size="27" text-anchor="middle" fill="#17324d" font-weight="bold">ALL VOTES COUNTED</text>
+<text x="29" y="100" font-family="Arial, sans-serif" font-size="28" text-anchor="start" fill="#17324d" font-weight="bold">Mina</text>
+<text x="325" y="100" font-family="Arial, sans-serif" font-size="30" text-anchor="end" fill="#17324d" font-weight="bold">11</text>
+<rect x="29" y="118" width="23" height="37" rx="2" fill="#227ca6" stroke="#fff" stroke-width="1"/>
+<rect x="55" y="118" width="23" height="37" rx="2" fill="#227ca6" stroke="#fff" stroke-width="1"/>
+<rect x="81" y="118" width="23" height="37" rx="2" fill="#227ca6" stroke="#fff" stroke-width="1"/>
+<rect x="107" y="118" width="23" height="37" rx="2" fill="#227ca6" stroke="#fff" stroke-width="1"/>
+<rect x="133" y="118" width="23" height="37" rx="2" fill="#227ca6" stroke="#fff" stroke-width="1"/>
+<rect x="159" y="118" width="23" height="37" rx="2" fill="#227ca6" stroke="#fff" stroke-width="1"/>
+<rect x="185" y="118" width="23" height="37" rx="2" fill="#227ca6" stroke="#fff" stroke-width="1"/>
+<rect x="211" y="118" width="23" height="37" rx="2" fill="#227ca6" stroke="#fff" stroke-width="1"/>
+<rect x="237" y="118" width="23" height="37" rx="2" fill="#227ca6" stroke="#fff" stroke-width="1"/>
+<rect x="263" y="118" width="23" height="37" rx="2" fill="#227ca6" stroke="#fff" stroke-width="1"/>
+<rect x="289" y="118" width="23" height="37" rx="2" fill="#227ca6" stroke="#fff" stroke-width="1"/>
+<text x="29" y="205" font-family="Arial, sans-serif" font-size="28" text-anchor="start" fill="#17324d" font-weight="bold">Leo</text>
+<text x="325" y="205" font-family="Arial, sans-serif" font-size="30" text-anchor="end" fill="#17324d" font-weight="bold">9</text>
+<rect x="29" y="223" width="23" height="37" rx="2" fill="#24836e" stroke="#fff" stroke-width="1"/>
+<rect x="55" y="223" width="23" height="37" rx="2" fill="#24836e" stroke="#fff" stroke-width="1"/>
+<rect x="81" y="223" width="23" height="37" rx="2" fill="#24836e" stroke="#fff" stroke-width="1"/>
+<rect x="107" y="223" width="23" height="37" rx="2" fill="#24836e" stroke="#fff" stroke-width="1"/>
+<rect x="133" y="223" width="23" height="37" rx="2" fill="#24836e" stroke="#fff" stroke-width="1"/>
+<rect x="159" y="223" width="23" height="37" rx="2" fill="#24836e" stroke="#fff" stroke-width="1"/>
+<rect x="185" y="223" width="23" height="37" rx="2" fill="#24836e" stroke="#fff" stroke-width="1"/>
+<rect x="211" y="223" width="23" height="37" rx="2" fill="#24836e" stroke="#fff" stroke-width="1"/>
+<rect x="237" y="223" width="23" height="37" rx="2" fill="#24836e" stroke="#fff" stroke-width="1"/>
+<text x="29" y="310" font-family="Arial, sans-serif" font-size="28" text-anchor="start" fill="#17324d" font-weight="bold">Ada</text>
+<text x="325" y="310" font-family="Arial, sans-serif" font-size="30" text-anchor="end" fill="#17324d" font-weight="bold">4</text>
+<rect x="29" y="328" width="23" height="37" rx="2" fill="#b75d25" stroke="#fff" stroke-width="1"/>
+<rect x="55" y="328" width="23" height="37" rx="2" fill="#b75d25" stroke="#fff" stroke-width="1"/>
+<rect x="81" y="328" width="23" height="37" rx="2" fill="#b75d25" stroke="#fff" stroke-width="1"/>
+<rect x="107" y="328" width="23" height="37" rx="2" fill="#b75d25" stroke="#fff" stroke-width="1"/>
+<text x="180" y="418" font-family="Arial, sans-serif" font-size="28" text-anchor="middle" fill="#17324d" font-weight="bold">TOTAL: 24</text>
+</svg>

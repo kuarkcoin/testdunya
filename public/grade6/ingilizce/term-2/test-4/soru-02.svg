@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="660" viewBox="0 0 360 660" role="img">
+<title>HOLIDAY TICKETS</title>
+<desc>HOLIDAY TICKETS</desc>
+<rect x="1" y="1" width="358" height="658" rx="18" fill="#fff" stroke="#d6e2eb" stroke-width="2"/>
+<text x="180" y="42" font-family="Arial, sans-serif" font-size="27" text-anchor="middle" fill="#17324d" font-weight="bold">HOLIDAY TICKETS</text>
+<rect x="16" y="73" width="328" height="158" rx="12" fill="#e9f3f8" stroke="#57859e" stroke-width="3"/>
+<line x1="135" y1="85" x2="135" y2="217" stroke="#8caabb" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 6"/>
+<text x="226" y="114" font-family="Arial, sans-serif" font-size="27" text-anchor="middle" fill="#17324d" font-weight="bold">CASTLE</text>
+<text x="226" y="157" font-family="Arial, sans-serif" font-size="28" text-anchor="middle" fill="#17324d" font-weight="normal">8 JULY</text>
+<rect x="39" y="133" width="74" height="55" rx="0" fill="#d7bd91" stroke="#17324d" stroke-width="3"/>
+<rect x="28" y="113" width="26" height="75" rx="0" fill="#ddcba9" stroke="#17324d" stroke-width="3"/>
+<rect x="26" y="106" width="30" height="14" rx="0" fill="#ddcba9" stroke="#17324d" stroke-width="3"/>
+<rect x="98" y="113" width="26" height="75" rx="0" fill="#ddcba9" stroke="#17324d" stroke-width="3"/>
+<rect x="96" y="106" width="30" height="14" rx="0" fill="#ddcba9" stroke="#17324d" stroke-width="3"/>
+<path d="M 66 188 V 165 q 10 -20 20 0 V 188" fill="#fff" stroke="#17324d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="315" cy="199" r="17" fill="#fff" stroke="#57859e" stroke-width="3"/>
+<rect x="16" y="246" width="328" height="158" rx="12" fill="#e9f3f8" stroke="#57859e" stroke-width="3"/>
+<line x1="135" y1="258" x2="135" y2="390" stroke="#8caabb" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 6"/>
+<text x="226" y="287" font-family="Arial, sans-serif" font-size="27" text-anchor="middle" fill="#17324d" font-weight="bold">BOAT TRIP</text>
+<text x="226" y="330" font-family="Arial, sans-serif" font-size="28" text-anchor="middle" fill="#17324d" font-weight="normal">9 JULY</text>
+<path d="M 26 341 H 126 L 108 366 H 48 Z" fill="#dda859" stroke="#17324d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="76" y1="341" x2="76" y2="292" stroke="#17324d" stroke-width="3" stroke-linecap="round"/>
+<polygon points="81,294 81,337 113,337" fill="#e7f4ff" stroke="#17324d" stroke-width="2"/>
+<path d="M 23 376 q 12 -9 24 0 t 24 0 t 24 0 t 24 0" fill="none" stroke="#227ca6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="16" y="419" width="328" height="158" rx="12" fill="#e9f3f8" stroke="#57859e" stroke-width="3"/>
+<line x1="135" y1="431" x2="135" y2="563" stroke="#8caabb" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 6"/>
+<text x="226" y="460" font-family="Arial, sans-serif" font-size="27" text-anchor="middle" fill="#17324d" font-weight="bold">MUSEUM</text>
+<text x="226" y="503" font-family="Arial, sans-serif" font-size="28" text-anchor="middle" fill="#17324d" font-weight="normal">9 JULY</text>
+<polygon points="23,486 76,457 129,486" fill="#d4dee5" stroke="#17324d" stroke-width="3"/>
+<rect x="34" y="492" width="16" height="47" rx="0" fill="#b4ccd9" stroke="#17324d" stroke-width="2"/>
+<rect x="68" y="492" width="16" height="47" rx="0" fill="#b4ccd9" stroke="#17324d" stroke-width="2"/>
+<rect x="102" y="492" width="16" height="47" rx="0" fill="#b4ccd9" stroke="#17324d" stroke-width="2"/>
+<rect x="22" y="540" width="108" height="10" rx="0" fill="#d4dee5" stroke="#17324d" stroke-width="2"/>
+<circle cx="315" cy="545" r="17" fill="#fff" stroke="#57859e" stroke-width="3"/>
+<text x="180" y="631" font-family="Arial, sans-serif" font-size="26" text-anchor="middle" fill="#17324d" font-weight="normal">Round hole = used</text>
+</svg>

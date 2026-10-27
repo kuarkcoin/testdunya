@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="620" viewBox="0 0 360 620" role="img">
+<title>THE GARDEN</title>
+<desc>THE GARDEN</desc>
+<rect x="1" y="1" width="358" height="618" rx="18" fill="#fff" stroke="#d6e2eb" stroke-width="2"/>
+<text x="180" y="42" font-family="Arial, sans-serif" font-size="27" text-anchor="middle" fill="#17324d" font-weight="bold">THE GARDEN</text>
+<text x="66" y="94" font-family="Arial, sans-serif" font-size="30" text-anchor="middle" fill="#17324d" font-weight="bold">A</text>
+<line x1="66" y1="121" x2="66" y2="193" stroke="#24836e" stroke-width="5" stroke-linecap="round"/>
+<path d="M 66 155 q -39 -34 -35 -4 q 18 18 35 4" fill="#24836e" stroke="#24836e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 66 143 q 39 -34 35 -4 q -18 18 -35 4" fill="#24836e" stroke="#24836e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="22,189 110,189 99,258 33,258" fill="#cd956b" stroke="#825c41" stroke-width="3"/>
+<ellipse cx="66" cy="190" rx="43" ry="16" fill="#c09c73" stroke="#825c41" stroke-width="2"/>
+<path d="M 40 186 l 16 4 l 9 -10 m -9 10 l 9 10 m 7 -14 l 13 7" fill="none" stroke="#725438" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="180" y="94" font-family="Arial, sans-serif" font-size="30" text-anchor="middle" fill="#17324d" font-weight="bold">B</text>
+<line x1="180" y1="121" x2="180" y2="193" stroke="#24836e" stroke-width="5" stroke-linecap="round"/>
+<path d="M 180 155 q -39 -34 -35 -4 q 18 18 35 4" fill="#24836e" stroke="#24836e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 180 143 q 39 -34 35 -4 q -18 18 -35 4" fill="#24836e" stroke="#24836e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="136,189 224,189 213,258 147,258" fill="#cd956b" stroke="#825c41" stroke-width="3"/>
+<ellipse cx="180" cy="190" rx="43" ry="16" fill="#65503d" stroke="#825c41" stroke-width="2"/>
+<path d="M 157 167 q -10 13 0 16 q 10 -3 0 -16" fill="#227ca6" stroke="#227ca6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 202 167 q -10 13 0 16 q 10 -3 0 -16" fill="#227ca6" stroke="#227ca6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="294" y="94" font-family="Arial, sans-serif" font-size="30" text-anchor="middle" fill="#17324d" font-weight="bold">C</text>
+<line x1="294" y1="121" x2="294" y2="193" stroke="#24836e" stroke-width="5" stroke-linecap="round"/>
+<path d="M 294 155 q -39 -34 -35 -4 q 18 18 35 4" fill="#24836e" stroke="#24836e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 294 143 q 39 -34 35 -4 q -18 18 -35 4" fill="#24836e" stroke="#24836e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="250,189 338,189 327,258 261,258" fill="#cd956b" stroke="#825c41" stroke-width="3"/>
+<ellipse cx="294" cy="190" rx="43" ry="16" fill="#c09c73" stroke="#825c41" stroke-width="2"/>
+<path d="M 268 186 l 16 4 l 9 -10 m -9 10 l 9 10 m 7 -14 l 13 7" fill="none" stroke="#725438" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="23" y="291" width="145" height="52" rx="8" fill="#f8efe1" stroke="#d8c3a0" stroke-width="2"/>
+<path d="M 40 307 l 14 8 l 10 -11 m -10 11 l 7 13" fill="none" stroke="#725438" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="125" y="326" font-family="Arial, sans-serif" font-size="26" text-anchor="middle" fill="#17324d" font-weight="normal">DRY</text>
+<rect x="192" y="291" width="145" height="52" rx="8" fill="#eef5fa" stroke="#b3d0df" stroke-width="2"/>
+<path d="M 215 302 q -13 18 0 22 q 13 -4 0 -22" fill="#227ca6" stroke="#227ca6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="291" y="326" font-family="Arial, sans-serif" font-size="26" text-anchor="middle" fill="#17324d" font-weight="normal">WET</text>
+<rect x="34" y="389" width="151" height="176" rx="14" fill="#e4eff4" stroke="#4c7f93" stroke-width="3"/>
+<rect x="38" y="456" width="143" height="104" rx="10" fill="#80c1de" stroke="none" stroke-width="2"/>
+<line x1="39" y1="456" x2="180" y2="456" stroke="#227ca6" stroke-width="3" stroke-linecap="round"/>
+<text x="109" y="427" font-family="Arial, sans-serif" font-size="28" text-anchor="middle" fill="#17324d" font-weight="bold">RAIN</text>
+<path d="M 38 387 Q 109 368 181 387" fill="#eef5f7" stroke="#4c7f93" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="109" y="600" font-family="Arial, sans-serif" font-size="26" text-anchor="middle" fill="#17324d" font-weight="normal">Rainwater</text>
+<path d="M 282 397 V 429 H 246 V 453" fill="none" stroke="#738f9c" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="265" y1="389" x2="301" y2="389" stroke="#597987" stroke-width="9" stroke-linecap="round"/>
+<line x1="282" y1="389" x2="282" y2="402" stroke="#597987" stroke-width="7" stroke-linecap="round"/>
+<rect x="299" y="395" width="27" height="44" rx="3" fill="#d3dfe4" stroke="#738f9c" stroke-width="2"/>
+<text x="276" y="504" font-family="Arial, sans-serif" font-size="28" text-anchor="middle" fill="#17324d" font-weight="bold">TAP</text>
+</svg>

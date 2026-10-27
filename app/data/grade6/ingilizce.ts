@@ -2897,6 +2897,176 @@ export const ingilizceData: SubjectData = {
       "correct": 1,
       "explanation": "Başkan önceden herkesin katıldığı oylamada daha çok oy alan fikrin seçileceğini söyler. Sınıf kitapları seçtiği için kişisel oyun isteği sonucu değiştiremez. B oylama kuralını uygular. A başkana fazladan yetki verir; C tek seçenek için yeterli olan bütçe koşulunu bozar; D yalnız bir görüşteki öğrencileri yeniden oylamaya alarak everyone kuralına aykırı davranır."
     }
+  ],
+  "test4": [
+    {
+      "id": "e6-2-t4-01",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "The cards show work on one table and the truck that carried it. A carpenter made the table. Another worker changed its colour after that, but before the truck carried it away. Which sentence gives this worker's job and work date?",
+      "options": [
+        "The mechanic worked on the table on 13 June.",
+        "The carpenter worked on the table on 14 June.",
+        "The painter worked on the table on 14 June.",
+        "The painter worked on the table on 15 June."
+      ],
+      "correct": 2,
+      "explanation": "Masa 12 Haziran’da yapılır; 13 Haziran’daki tamir masayla değil kamyonla ilgilidir. Masanın rengi 14 Haziran’da fırçayla değiştirilir, masa 15 Haziran’da kamyonla götürülür. Yapımdan sonra ve taşınmadan önce masanın rengini değiştiren kişi painter, tarih 14 June’dur. C mesleği, üzerinde çalışılan nesneyi ve tarihi birlikte doğru verir.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-4/soru-01.svg",
+      "imageAlt": "Four dated work cards: 12 June, a carpenter's saw and hammer beside an unpainted wooden table; 13 June, a mechanic's spanner at the truck's wheel; 14 June, a paintbrush applying blue paint to the same table; 15 June, the blue table in the back of the delivery truck. Each card labels its action: made the table, repaired the truck, painted the table, carried the table.",
+      "imageWidth": 360,
+      "imageHeight": 810
+    },
+    {
+      "id": "e6-2-t4-02",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "Eva kept all three tickets from her holiday. Each activity needed a ticket. Each ticket could be used only on the date shown. She had no other tickets. A round hole means she USED the ticket; no hole means she did NOT use it. Which diary note matches the tickets?",
+      "options": [
+        "I visited the castle before the museum, but I did not go on the boat trip.",
+        "I went on the boat trip before I visited the castle and the museum.",
+        "I visited the museum before the castle, but I did not go on the boat trip.",
+        "I visited the castle and went on the boat trip, but I did not visit the museum."
+      ],
+      "correct": 0,
+      "explanation": "Yuvarlak deliği olan kale ve müze biletleri kullanılmıştır; tekne biletinde delik yoktur. Kale bileti 8 Temmuz, müze bileti 9 Temmuz tarihlidir. Dolayısıyla kale müzeden önce ziyaret edilmiştir. Her etkinlik bilet gerektirdiği ve başka bilet olmadığı için kullanılmamış tekne biletiyle gezi yapılmış sayılamaz. A üç bileti de doğru yorumlar; bir bilete sahip olmak onu kullanmakla aynı şey değildir.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-4/soru-02.svg",
+      "imageAlt": "Three holiday tickets. CASTLE, 8 JULY: a castle drawing and a large circular punched hole near the right edge. BOAT TRIP, 9 JULY: a boat drawing with an unpunched solid right edge. MUSEUM, 9 JULY: a museum drawing and a large circular punched hole near the right edge. Ticket outlines and the holes are shown clearly. Legend: round hole = used.",
+      "imageWidth": 360,
+      "imageHeight": 660
+    },
+    {
+      "id": "e6-2-t4-03",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "These pictures show the SAME library book on three dates. Nobody repaired the cover or put a new cover on the book during this time. On 6 May, the whole front cover was inside the bag. Which statement is supported by the pictures?",
+      "options": [
+        "The cover was already torn on 4 May.",
+        "The cover was certainly not torn on 6 May.",
+        "The cover was first torn after 8 May.",
+        "The cover was torn by 8 May, but the pictures do not show if it was torn on 6 May."
+      ],
+      "correct": 3,
+      "explanation": "4 Mayıs’ta ön kapak sağlam, 8 Mayıs’ta yırtıktır. 6 Mayıs’ta ön kapağın tamamı çantanın içinde kaldığı için o günkü durumu görülemez. Yırtığın 8 Mayıs’a kadar oluştuğu kesindir; ancak 6 Mayıs’ta oluşmuş olup olmadığı belirlenemez. D gözlenen durum ile görünmeyen ayrıntıyı ayırır. Çizimde görünmeyen bir hasarın o tarihte bulunmadığı varsayılamaz.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-4/soru-03.svg",
+      "imageAlt": "Three dated views of the same green library book, identified by a star on its spine. 4 MAY: the entire front cover is visible and intact. 6 MAY: the book is inside a bag; only the top of the spine with the star is visible, and none of the front cover can be seen. 8 MAY: the front cover is fully visible with a large missing triangular piece at the lower right corner. No repair is shown.",
+      "imageWidth": 360,
+      "imageHeight": 660
+    },
+    {
+      "id": "e6-2-t4-04",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "On Saturday, Nora read the WHOLE chapter 'The Forest' and no other chapter. On Sunday, she read only the first page of the next chapter. Look at the contents page. Which reading note is correct?",
+      "options": [
+        "Saturday: pages 9–17. Sunday: page 18.",
+        "Saturday: pages 9–16. Sunday: page 17.",
+        "Saturday: pages 1–8. Sunday: page 9.",
+        "Saturday: pages 17–24. Sunday: page 25."
+      ],
+      "correct": 1,
+      "explanation": "İçindekiler sayfasında The Forest 9. sayfada, sonraki bölüm The Mountain 17. sayfada başlar. Bu nedenle The Forest’ın son sayfası 16’dır; 17 bu bölüme dâhil değildir. Nora cumartesi 9–16. sayfaları, pazar sonraki bölümün ilk sayfası olan 17’yi okur. B bölüm sınırını ve iki günün görevlerini birlikte doğru gösterir.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-4/soru-04.svg",
+      "imageAlt": "An open storybook's contents page, with chapter titles and starting pages: The River — 1; The Forest — 9; The Mountain — 17; Back Home — 25. A note beneath the book says Numbers show the first page of each chapter.",
+      "imageWidth": 360,
+      "imageHeight": 560
+    },
+    {
+      "id": "e6-2-t4-05",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "Read the eco-club's rule: 'Water only plants with DRY soil. Use rainwater when there is some in the barrel. Do not use tap water then.' Look at the garden. Which plan follows the whole rule?",
+      "options": [
+        "Water A and C with tap water; leave B alone.",
+        "Water all three plants with rainwater.",
+        "Water A and C with rainwater; leave B alone.",
+        "Water only B with rainwater; leave A and C alone."
+      ],
+      "correct": 2,
+      "explanation": "Görsel anahtarına göre çatlak toprak kuru, damlalı toprak ıslaktır. A ve C’nin toprağı kuru, B’ninki ıslaktır; yalnız A ve C sulanmalıdır. Varilde yağmur suyu da vardır, bu yüzden bu aşamada musluk suyu kullanılmaz. C hem hangi bitkilerin sulanacağını hem de suyun kaynağını doğru seçer. A doğru bitkileri yanlış suyla, B gereksiz yere tüm bitkileri, D ise ıslak toprağı sular.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-4/soru-05.svg",
+      "imageAlt": "Garden diagram: plant A and plant C stand in pots with cracked dry soil; plant B stands in a pot with dark wet soil and water drops. The key labels cracked soil DRY and soil with drops WET. A barrel labelled RAIN contains clearly visible water, with a water level well above the bottom. A separate outdoor tap is shown beside it.",
+      "imageWidth": 360,
+      "imageHeight": 620
+    },
+    {
+      "id": "e6-2-t4-06",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "The green team must take a glass jar to the GLASS bin. They must stay on the marked path and must NOT walk through flowers. The dashed arrows show their four possible routes. Which route follows all the instructions?",
+      "options": [
+        "Route B.",
+        "Route A.",
+        "Route D.",
+        "Route C."
+      ],
+      "correct": 0,
+      "explanation": "A rotası çiçeklerin içinden geçer; doğru kutuya gitse de çiçekleri koruma koşulunu bozar. B, işaretli yol üzerinde çiçeklerin çevresinden dolaşır ve GLASS kutusuna ulaşır. C çiçeklere basmaz ancak PAPER kutusunda biter. D GLASS kutusuna yönelirken işaretli yoldan çıkar. Bu yüzden yalnız B üç koşulu birlikte sağlar; seçeneklerde bu A şıkkıdır.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-4/soru-06.svg",
+      "imageAlt": "Four route diagrams labelled A, B, C and D. Each starts at a glass jar and ends at a labelled bin. Grey bands are marked paths; dark dashed arrows are proposed routes; flower groups are visible. A goes along the straight grey path through flowers to GLASS. B follows the bent grey path around flowers to GLASS. C follows the bent grey path around flowers to PAPER. D cuts across the unmarked grassy area, away from the bent grey path, to GLASS. Key: grey = path; dashed arrow = route.",
+      "imageWidth": 360,
+      "imageHeight": 850
+    },
+    {
+      "id": "e6-2-t4-07",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "All 24 votes are counted and valid. The class rule says: 'A candidate wins with 13 or more votes. If nobody has 13, the TWO candidates with the most votes take part in a new vote.' What must the class do now?",
+      "options": [
+        "Announce Mina as the winner because she has the most votes.",
+        "Hold a new vote with Mina, Leo and Ada.",
+        "Hold a new vote with Leo and Ada because they have fewer votes.",
+        "Hold a new vote with Mina and Leo because nobody has 13 votes."
+      ],
+      "correct": 3,
+      "explanation": "Sayım tamamlanmıştır: Mina 11, Leo 9, Ada 4 oy almıştır; toplam 24’tür. Sınıfın açık kuralı, en çok oyu almak değil en az 13 oya ulaşmaktır. Hiç kimse bu sayıya ulaşmadığı için ilk iki aday Mina ve Leo ile yeni oylama yapılır. D hem kazanma eşiğini hem de yeni oylamaya kimlerin katılacağını doğru uygular. Bu soru eksik sayım veya geçersiz oy hakkında değildir.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-4/soru-07.svg",
+      "imageAlt": "Complete class election result. Horizontal bars and totals show Mina 11 votes, Leo 9 votes, Ada 4 votes. Each coloured square represents one vote. The heading says ALL VOTES COUNTED and the footer gives TOTAL: 24. No votes are missing or invalid.",
+      "imageWidth": 360,
+      "imageHeight": 460
+    },
+    {
+      "id": "e6-2-t4-08",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "Read the interviews.\nDeniz: 'I can cook, but it is not my job. I am a nurse. I made dinner for my family yesterday.'\nEce: 'I am a cook. Yesterday was my day off. Deniz cooked for me, and I did not cook anything.'\n\nWhich sentence is correct about their jobs and what they did yesterday?",
+      "options": [
+        "Deniz is a cook because Deniz made dinner yesterday.",
+        "Deniz is a nurse who cooked yesterday; Ece is a cook who did not cook yesterday.",
+        "Ece is not a cook because Ece did not cook yesterday.",
+        "Deniz and Ece both worked as cooks yesterday."
+      ],
+      "correct": 1,
+      "explanation": "Bir işi yapabilmek veya evde bir kez yapmak, kişinin mesleğinin o olduğu anlamına gelmez. Deniz mesleğinin hemşirelik olduğunu açıkça söyler ve dün evde yemek yapmıştır. Ece’nin mesleği aşçılıktır; ancak dün izinli olduğu için yemek yapmamıştır. B meslek bilgilerini günlük etkinliklerden ayırır; diğer seçenekler bu iki bilgiyi birbirine karıştırır."
+    },
+    {
+      "id": "e6-2-t4-09",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "Read Arda's holiday message.\n'My sister and I stayed at a hotel near our grandparents' house. On Saturday, our grandparents visited us at the hotel. On Sunday, we visited them at their house. After dinner, I returned to the hotel alone. My sister stayed with our grandparents that night.'\n\nWhich note is correct about Saturday's visit and where the children stayed on Sunday night?",
+      "options": [
+        "Saturday: Arda visited his grandparents at their house. Sunday night: both children were at the hotel.",
+        "Saturday: the grandparents visited the hotel. Sunday night: Arda was at their house and his sister was at the hotel.",
+        "Saturday: the grandparents visited the hotel. Sunday night: Arda was at the hotel and his sister was at their house.",
+        "Saturday: the grandparents visited the hotel. Sunday night: both children were at their house."
+      ],
+      "correct": 2,
+      "explanation": "Cumartesi günü büyükanne ve büyükbaba çocukları otelde ziyaret eder; çocukların onların evine gitmesi pazar günüdür. Pazar yemeğinden sonra Arda otele tek başına döner, kız kardeşi o gece büyükanne ve büyükbabayla kalır. C ziyaretin yönünü ve iki çocuğun farklı yerlerde kalmasını birlikte doğru verir. Us çocukları, them büyükanne ve büyükbabayı gösterir; their house ifadesi büyükanne ve büyükbabanın evidir."
+    },
+    {
+      "id": "e6-2-t4-10",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "Read the class election rules.\n'To become a candidate, a student needs five classmates' names on a form. During the election, every student has one vote and can choose any candidate in secret.'\nAli wrote his name on Bora's form. After the speeches, Ali wanted to vote for Suna. Bora said, 'Your name is on my form, so you must vote for me.'\n\nWhich reply follows BOTH rules?",
+      "options": [
+        "Ali helped Bora become a candidate, but Ali can still choose Suna in the secret vote.",
+        "Ali must vote for Bora because writing a name on a form is the same as voting.",
+        "Ali can vote for Suna only if Ali tells the whole class about the change.",
+        "Ali must vote for both Bora and Suna because Ali supported them at different times."
+      ],
+      "correct": 0,
+      "explanation": "Forma isim yazmak Bora’nın aday olmasına yardım eder; seçimde kime oy verildiğini belirlemez. İkinci kural, her öğrencinin istediği adayı gizli olarak seçebileceğini söyler. A iki aşamayı ayırarak her iki kuralı korur. B adaylık desteğini oyla karıştırır; C gizliliği kaldırır; D ise tek bir adayı seçme yerine iki adaya oy vermeyi gerektirir."
+    }
   ]
 }
 };

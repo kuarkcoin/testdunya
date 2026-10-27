@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="660" viewBox="0 0 360 660" role="img">
+<title>THE SAME BOOK</title>
+<desc>THE SAME BOOK</desc>
+<rect x="1" y="1" width="358" height="658" rx="18" fill="#fff" stroke="#d6e2eb" stroke-width="2"/>
+<text x="180" y="42" font-family="Arial, sans-serif" font-size="27" text-anchor="middle" fill="#17324d" font-weight="bold">THE SAME BOOK</text>
+<rect x="18" y="63" width="324" height="181" rx="12" fill="#f6fafc" stroke="#d2e0e9" stroke-width="2"/>
+<text x="69" y="100" font-family="Arial, sans-serif" font-size="27" text-anchor="middle" fill="#17324d" font-weight="bold">4 MAY</text>
+<polygon points="146,86 266,86 266,222 146,222" fill="#5daa88" stroke="#17324d" stroke-width="3"/>
+<rect x="146" y="86" width="24" height="136" rx="0" fill="#267357" stroke="#17324d" stroke-width="2"/>
+<polygon points="158,104 161,110 168,110 163,117 166,124 158,120 150,124 153,117 148,110 155,110" fill="#f4cf5b" stroke="#17324d" stroke-width="1"/>
+<line x1="187" y1="124" x2="245" y2="124" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+<line x1="188" y1="140" x2="230" y2="140" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+<rect x="18" y="255" width="324" height="181" rx="12" fill="#f6fafc" stroke="#d2e0e9" stroke-width="2"/>
+<text x="69" y="292" font-family="Arial, sans-serif" font-size="27" text-anchor="middle" fill="#17324d" font-weight="bold">6 MAY</text>
+<rect x="146" y="280" width="24" height="137" rx="0" fill="#267357" stroke="#17324d" stroke-width="2"/>
+<polygon points="158,293 161,299 168,299 163,306 166,313 158,309 150,313 153,306 148,299 155,299" fill="#f4cf5b" stroke="#17324d" stroke-width="1"/>
+<rect x="170" y="322" width="96" height="95" rx="0" fill="#5daa88" stroke="#17324d" stroke-width="2"/>
+<path d="M 142 347 V 322 Q 142 269 202 269 Q 252 269 252 322 V 347" fill="none" stroke="#8c603c" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="121" y="324" width="169" height="99" rx="9" fill="#d4b187" stroke="#8c603c" stroke-width="3"/>
+<line x1="125" y1="332" x2="286" y2="332" stroke="#8c603c" stroke-width="3" stroke-linecap="round"/>
+<rect x="18" y="447" width="324" height="181" rx="12" fill="#f6fafc" stroke="#d2e0e9" stroke-width="2"/>
+<text x="69" y="484" font-family="Arial, sans-serif" font-size="27" text-anchor="middle" fill="#17324d" font-weight="bold">8 MAY</text>
+<polygon points="146,470 266,470 266,559 230,580 242,606 146,606" fill="#5daa88" stroke="#17324d" stroke-width="3"/>
+<rect x="146" y="470" width="24" height="136" rx="0" fill="#267357" stroke="#17324d" stroke-width="2"/>
+<polygon points="158,488 161,494 168,494 163,501 166,508 158,504 150,508 153,501 148,494 155,494" fill="#f4cf5b" stroke="#17324d" stroke-width="1"/>
+<line x1="187" y1="508" x2="245" y2="508" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+<line x1="188" y1="524" x2="230" y2="524" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+</svg>

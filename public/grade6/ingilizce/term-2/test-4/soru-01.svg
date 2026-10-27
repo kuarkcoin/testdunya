@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="810" viewBox="0 0 360 810" role="img">
+<title>WORK CARDS</title>
+<desc>WORK CARDS</desc>
+<rect x="1" y="1" width="358" height="808" rx="18" fill="#fff" stroke="#d6e2eb" stroke-width="2"/>
+<text x="180" y="42" font-family="Arial, sans-serif" font-size="27" text-anchor="middle" fill="#17324d" font-weight="bold">WORK CARDS</text>
+<rect x="18" y="65" width="324" height="170" rx="12" fill="#f5f9fc" stroke="#cfdee8" stroke-width="2"/>
+<text x="180" y="97" font-family="Arial, sans-serif" font-size="28" text-anchor="middle" fill="#17324d" font-weight="bold">12 JUNE</text>
+<rect x="113" y="123" width="120" height="18" rx="3" fill="#bd8e51" stroke="#17324d" stroke-width="3"/>
+<line x1="125" y1="141" x2="125" y2="187" stroke="#17324d" stroke-width="7" stroke-linecap="round"/>
+<line x1="221" y1="141" x2="221" y2="187" stroke="#17324d" stroke-width="7" stroke-linecap="round"/>
+<path d="M 78 126 l 22 -16 l 43 14 l -6 10 l -15 -3 l -8 4 l -8 -5 l -8 4 Z" fill="#a9bfcb" stroke="#17324d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="267" y1="127" x2="259" y2="176" stroke="#b75d25" stroke-width="7" stroke-linecap="round"/>
+<rect x="251" y="119" width="32" height="14" rx="3" fill="#8aabbc" stroke="#17324d" stroke-width="2"/>
+<text x="180" y="219" font-family="Arial, sans-serif" font-size="26" text-anchor="middle" fill="#17324d" font-weight="normal">Made the table</text>
+<rect x="18" y="246" width="324" height="170" rx="12" fill="#f5f9fc" stroke="#cfdee8" stroke-width="2"/>
+<text x="180" y="278" font-family="Arial, sans-serif" font-size="28" text-anchor="middle" fill="#17324d" font-weight="bold">13 JUNE</text>
+<rect x="84" y="343" width="104" height="13" rx="3" fill="#dcecf4" stroke="#17324d" stroke-width="3"/>
+<path d="M 188 356 L 188 301 L 219 301 L 241 328 L 241 356 Z" fill="#72b5d1" stroke="#17324d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="196" y="309" width="22" height="21" rx="0" fill="#fff" stroke="#17324d" stroke-width="2"/>
+<circle cx="114" cy="359" r="15" fill="#17324d" stroke="#17324d" stroke-width="2"/>
+<circle cx="211" cy="359" r="15" fill="#17324d" stroke="#17324d" stroke-width="2"/>
+<path d="M 258 299 q -17 -12 -20 7 l -17 35 l 10 6 l 19 -34 q 15 2 14 -11 l -10 7 l -6 -5 Z" fill="#7594a5" stroke="#17324d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="180" y="400" font-family="Arial, sans-serif" font-size="26" text-anchor="middle" fill="#17324d" font-weight="normal">Repaired the truck</text>
+<rect x="18" y="427" width="324" height="170" rx="12" fill="#f5f9fc" stroke="#cfdee8" stroke-width="2"/>
+<text x="180" y="459" font-family="Arial, sans-serif" font-size="28" text-anchor="middle" fill="#17324d" font-weight="bold">14 JUNE</text>
+<rect x="111" y="485" width="120" height="18" rx="3" fill="#227ca6" stroke="#17324d" stroke-width="3"/>
+<line x1="123" y1="503" x2="123" y2="549" stroke="#17324d" stroke-width="7" stroke-linecap="round"/>
+<line x1="219" y1="503" x2="219" y2="549" stroke="#17324d" stroke-width="7" stroke-linecap="round"/>
+<line x1="236" y1="472" x2="207" y2="494" stroke="#b75d25" stroke-width="9" stroke-linecap="round"/>
+<polygon points="205,489 217,498 204,513 192,505" fill="#227ca6" stroke="#17324d" stroke-width="2"/>
+<rect x="265" y="506" width="30" height="32" rx="3" fill="#227ca6" stroke="#17324d" stroke-width="2"/>
+<path d="M 265 509 q 15 -23 30 0" fill="none" stroke="#17324d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="180" y="581" font-family="Arial, sans-serif" font-size="26" text-anchor="middle" fill="#17324d" font-weight="normal">Painted the table</text>
+<rect x="18" y="608" width="324" height="184" rx="12" fill="#f5f9fc" stroke="#cfdee8" stroke-width="2"/>
+<text x="180" y="640" font-family="Arial, sans-serif" font-size="28" text-anchor="middle" fill="#17324d" font-weight="bold">15 JUNE</text>
+<rect x="103" y="716" width="104" height="13" rx="3" fill="#dcecf4" stroke="#17324d" stroke-width="3"/>
+<path d="M 207 729 L 207 674 L 238 674 L 260 701 L 260 729 Z" fill="#72b5d1" stroke="#17324d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="215" y="682" width="22" height="21" rx="0" fill="#fff" stroke="#17324d" stroke-width="2"/>
+<circle cx="133" cy="732" r="15" fill="#17324d" stroke="#17324d" stroke-width="2"/>
+<circle cx="230" cy="732" r="15" fill="#17324d" stroke="#17324d" stroke-width="2"/>
+<rect x="112" y="665" width="86" height="13" rx="3" fill="#227ca6" stroke="#17324d" stroke-width="3"/>
+<line x1="119" y1="678" x2="119" y2="715" stroke="#17324d" stroke-width="6" stroke-linecap="round"/>
+<line x1="191" y1="678" x2="191" y2="715" stroke="#17324d" stroke-width="6" stroke-linecap="round"/>
+<text x="180" y="777" font-family="Arial, sans-serif" font-size="26" text-anchor="middle" fill="#17324d" font-weight="normal">Carried the table</text>
+</svg>
