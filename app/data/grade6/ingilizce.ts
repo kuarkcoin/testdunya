@@ -3067,6 +3067,176 @@ export const ingilizceData: SubjectData = {
       "correct": 0,
       "explanation": "Forma isim yazmak Bora’nın aday olmasına yardım eder; seçimde kime oy verildiğini belirlemez. İkinci kural, her öğrencinin istediği adayı gizli olarak seçebileceğini söyler. A iki aşamayı ayırarak her iki kuralı korur. B adaylık desteğini oyla karıştırır; C gizliliği kaldırır; D ise tek bir adayı seçme yerine iki adaya oy vermeyi gerektirir."
     }
+  ],
+  "test5": [
+    {
+      "id": "e6-2-t5-01",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "Three adults have different jobs: a cook, a farmer and a dentist. Each uses one tool set in the picture. Ada grows the vegetables that Ben cooks. When Ben has a problem with his teeth, Cem helps him. Which labels belong under sets X and Z, in that order?",
+      "options": [
+        "X: Ben; Z: Ada.",
+        "X: Cem; Z: Ben.",
+        "X: Ada; Z: Cem.",
+        "X: Cem; Z: Ada."
+      ],
+      "correct": 3,
+      "explanation": "Ada sebzeleri yetiştirdiği için çiftçidir; Ben bu sebzelerle yemek yaptığı için aşçıdır. Ben'in diş sorununu çözen Cem diş hekimidir. X'teki diş ve dişçi aynası Cem'e, Z'deki kürek ve sebzeler Ada'ya aittir. Y'deki tencere ve kepçe ise Ben'in işini gösterir. İstenen sıra X, ardından Z'dir.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-5/soru-01.svg",
+      "imageAlt": "Three illustrated tool sets: X has a tooth model and a dentist's small round mirror; Y has a cooking pot and a ladle; Z has a spade and growing carrots. Each set has a large letter label, but no person's name.",
+      "imageWidth": 360,
+      "imageHeight": 650
+    },
+    {
+      "id": "e6-2-t5-02",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "Look at the family's COMPLETE record for 17 July. They ate the two fish from the market for dinner. Which diary note correctly explains why eating fish does NOT mean they caught fish?",
+      "options": [
+        "We went fishing, but we caught no fish. We bought the fish for dinner at the market.",
+        "We caught two fish at the lake and bought two more at the market.",
+        "We did not go fishing because our bucket was empty.",
+        "We bought two fish before fishing and caught our dinner later."
+      ],
+      "correct": 0,
+      "explanation": "Tam kayıtta aile önce balık tutmaya gitmiştir. FISH CAUGHT: 0 bilgisi hiç balık yakalanmadığını açıkça gösterir; sonuç yalnız boş kovadan çıkarılmaz. Daha sonra pazardan iki balık almış ve akşam onları yemişlerdir. Balık tutmaya gitmek, mutlaka balık yakalamak demek değildir; akşam balık yenmesi de balıkların gölden yakalandığını göstermez. A bu ayrımı ve olay sırasını korur.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-5/soru-02.svg",
+      "imageAlt": "Complete holiday record for 17 July. First: a fishing rod beside the lake and an empty bucket, with the complete catch record labelled FISH CAUGHT: 0. Next: a market bag containing two fish, labelled BOUGHT 2 FISH. Last: a dinner plate with the two market fish. Large downward arrows show the order.",
+      "imageWidth": 360,
+      "imageHeight": 770
+    },
+    {
+      "id": "e6-2-t5-03",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "The library has two copies of the same story. Their titles and covers are the same, but their library codes are different. The records show Ada's loan and EVERY return of this title from 3 to 5 May. Which message should the librarian send Ada on 5 May?",
+      "options": [
+        "Your borrowed copy is back because the story title is on the return record.",
+        "You borrowed B18, and B17 came back on 5 May.",
+        "Neither copy came back because you borrowed B17.",
+        "B18 is back, but the copy you borrowed, B17, is not back yet."
+      ],
+      "correct": 3,
+      "explanation": "Aynı başlığa ve kapağa sahip iki fiziksel kitap vardır. Ada'nın ödünç kaydı B17 kodludur; 5 Mayıs'ta dönen kitap ise B18'dir. İade kaydında aynı hikâyenin başlığının bulunması Ada'nın aldığı kopyanın döndüğünü göstermez. Tam iade listesinde B17 olmadığı için D doğrudur. Kitapların nerede bulunduğuna ya da kimin iade ettiğine ilişkin ek bilgi çıkarılmaz.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-5/soru-03.svg",
+      "imageAlt": "Two identical blue book covers titled THE MOON, with large distinct library codes B17 and B18. Below, a borrowing slip says ADA / 3 MAY / B17. A complete return record for this title from 3 to 5 May shows one return only: 5 MAY / B18. The title is the same on both books; the codes identify different physical copies.",
+      "imageWidth": 360,
+      "imageHeight": 740
+    },
+    {
+      "id": "e6-2-t5-04",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "The arrows show EVERY movement of the same library book from 3 to 6 May. An arrow points from the person or place giving the book to the person or place receiving it. Which note is correct at the end of 6 May?",
+      "options": [
+        "Mia returned the book to the library on 6 May.",
+        "Deniz gave the book to Mia on 6 May, and she still had it.",
+        "Mia returned the book to Deniz on 6 May; it was not back at the library.",
+        "Deniz returned the book to the library on 4 May."
+      ],
+      "correct": 2,
+      "explanation": "3 Mayıs'taki ok kütüphaneden Deniz'e, 4 Mayıs'taki ok Deniz'den Mia'ya gider. 6 Mayıs'ta yön tersine döner: Mia kitabı Deniz'e geri verir. Bütün hareketler gösterildiği ve kütüphaneye giden bir ok olmadığı için kitap kütüphaneye iade edilmiş değildir. Burada kime geri verildiği önemlidir; Mia'nın Deniz'e geri vermesi, kütüphaneye iade sayılmaz.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-5/soru-04.svg",
+      "imageAlt": "Three dated book handoffs. 3 MAY: LIBRARY on the left gives a green book to DENIZ on the right, with a right-pointing arrow. 4 MAY: DENIZ on the left gives it to MIA on the right, with a right-pointing arrow. 6 MAY: DENIZ on the left receives it from MIA on the right, with a left-pointing arrow. The same green book appears on each arrow.",
+      "imageWidth": 360,
+      "imageHeight": 680
+    },
+    {
+      "id": "e6-2-t5-05",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "The eco-club reuses old containers as plant pots. Follow the instructions: 'Make holes in the bottom. Put small stones over the holes. Add soil ABOVE the stones. Put the seeds in the soil, not in the stones.' The drawings show the inside of four pots. Which pot follows ALL the instructions?",
+      "options": [
+        "Pot A.",
+        "Pot B.",
+        "Pot C.",
+        "Pot D."
+      ],
+      "correct": 1,
+      "explanation": "B'de tabanda delikler, onların üstünde küçük taşlar ve taşların üstünde toprak vardır; tohumlar toprak içindedir. A'nın tabanında delik yoktur. C'de taşlar toprağın üstüne konmuştur. D'de katmanlar doğru olsa da tohumlar toprak yerine taşların arasındadır. Yalnız bir katmanı kontrol etmek yetmez; dört koşulun tamamı sağlanmalıdır.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-5/soru-05.svg",
+      "imageAlt": "Four cross-section drawings of reused plant pots. A has soil with seeds above stones but a solid bottom with no holes. B has bottom holes, stones above the holes, soil above the stones, and seeds in the soil. C has bottom holes but stones above soil, with seeds in the soil. D has bottom holes and soil above stones, but its seeds are among the stones. A key identifies brown soil, grey stones, black oval seeds, and bottom holes.",
+      "imageWidth": 360,
+      "imageHeight": 1050
+    },
+    {
+      "id": "e6-2-t5-06",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "Each recycling box contains ONE item, and all three items are in the wrong boxes. PAPER, GLASS and PLASTIC show what each box should contain. Which plan moves every item to the correct box? Here, A → B means 'move the item originally in A to B'.",
+      "options": [
+        "A → C; B → A; C → B.",
+        "A → B; B → A; leave C where it is.",
+        "A → B; B → C; C → A.",
+        "Leave A where it is; B → C; C → B."
+      ],
+      "correct": 2,
+      "explanation": "A kutusundaki nesne cam kavanozdur; GLASS etiketli B kutusuna taşınmalıdır. B'deki plastik şişe, PLASTIC etiketli C kutusuna gitmelidir. C'deki gazete ise PAPER etiketli A kutusuna gitmelidir. Doğru döngü A'dan B'ye, B'den C'ye, C'den A'yadır. Kutuların etiketleri değil, içlerindeki nesneler taşınır.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-5/soru-06.svg",
+      "imageAlt": "Three recycling boxes arranged vertically. Box A is labelled PAPER but contains one glass jar. Box B is labelled GLASS but contains one plastic bottle. Box C is labelled PLASTIC but contains one newspaper. The objects have clear drawings and material labels GLASS JAR, PLASTIC BOTTLE and NEWSPAPER. A, B and C identify the boxes, not the materials.",
+      "imageWidth": 360,
+      "imageHeight": 710
+    },
+    {
+      "id": "e6-2-t5-07",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "The class rule says: 'Every candidate gets THREE minutes to speak and answers TWO questions from the class.' The chart shows each candidate’s speaking minutes and answered questions so far. Which plan gives everyone exactly what the rule allows, with nothing extra?",
+      "options": [
+        "Give Ada and Can one more minute each; give Ben and Can one more question each.",
+        "Give Ada and Ben one more minute each; give Ben and Can one more question each.",
+        "Give Ada and Can one more minute each; give Ada and Can one more question each.",
+        "Give only Can one more minute and one more question."
+      ],
+      "correct": 0,
+      "explanation": "Ada iki dakika konuşmuş ve iki soruyu yanıtlamıştır; yalnız bir dakikaya ihtiyacı vardır. Ben üç dakika konuşmuş, bir soruyu yanıtlamıştır; yalnız bir soruya ihtiyacı vardır. Can ise iki dakika konuşmuş ve bir soruyu yanıtlamıştır; ikisine de ihtiyacı vardır. Bu nedenle süre Ada ile Can'a, ek soru Ben ile Can'a verilmelidir. Eşit hak sağlamak, herkese aynı ilaveyi yapmak değil, eksik haklarını tamamlamaktır.",
+      "imageUrl": "/grade6/ingilizce/term-2/test-5/soru-07.svg",
+      "imageAlt": "Candidate opportunity chart. Each blue speech block is one minute; each yellow question-mark card is one answered question. Ada: two speech blocks and two question cards. Ben: three speech blocks and one question card. Can: two speech blocks and one question card. A legend gives the meaning of each symbol. The chart is labelled SO FAR.",
+      "imageWidth": 360,
+      "imageHeight": 720
+    },
+    {
+      "id": "e6-2-t5-08",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "Read the interview.\nEda: 'My birthday is on 12 April. I started my job on 9 September 2020. I make clothes for other people. My brother cuts people's hair.'\nA student must write Eda's job and the date she STARTED it, not her birthday or her brother's job. Which note is correct?",
+      "options": [
+        "Eda — hairdresser; 9 September 2020.",
+        "Eda — tailor; 12 April.",
+        "Eda — hairdresser; 12 April.",
+        "Eda — tailor; 9 September 2020."
+      ],
+      "correct": 3,
+      "explanation": "Eda'nın make clothes sözü terziyi, yani tailor mesleğini anlatır. Saç kesen kişi kardeşidir; hairdresser Eda'nın mesleği değildir. İstenen tarih işe başlama tarihidir: 9 September 2020. 12 April ise doğum günüdür. D hem doğru kişiye ait mesleği hem de istenen türdeki tarihi seçer."
+    },
+    {
+      "id": "e6-2-t5-09",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "Read Sera's holiday message.\n'On Monday, Tom and I walked to Blue Cave and then to Green Cave. At Blue Cave, Tom waited outside with our bags and I went inside alone. At Green Cave, I waited outside and he went inside alone. We took a photo together outside each cave.'\n\nWhich sentence is correct?",
+      "options": [
+        "They both went inside both caves, but took photos outside.",
+        "They reached both caves together, but only one of them went inside each cave.",
+        "Sera went inside both caves; Tom stayed outside both.",
+        "They visited different cave sites and met only for one photo."
+      ],
+      "correct": 1,
+      "explanation": "İki kişi her iki mağaranın bulunduğu yere birlikte ulaşır. Blue Cave'e yalnız Sera, Green Cave'e yalnız Tom girer; hiçbir mağaranın içine birlikte girmezler. Her iki mağaranın dışında birlikte fotoğraf çektirmiş olmaları, içeri de birlikte girdiklerini göstermez. B ortak gidilen yerlerle ayrı yapılan etkinlikleri ayırır."
+    },
+    {
+      "id": "e6-2-t5-10",
+      "subject": "ingilizce",
+      "term": 2,
+      "prompt": "Read the class rules.\n'Classmates can share different ideas. The class president takes their requests to the teacher. Only the teacher can change the class timetable.'\nThe class president says, 'The class voted for Friday for our reading hour. I changed our timetable. I will tell the teacher later. Anyone who wanted Monday must keep quiet.'\nWhich reply follows ALL the rules?",
+      "options": [
+        "The president can change the timetable because the class voted.",
+        "Monday supporters can speak, but the president can change the timetable without the teacher.",
+        "The president should ask the teacher about Friday; Monday supporters can still share their ideas.",
+        "The president should ask the teacher about Friday, but Monday supporters cannot speak again."
+      ],
+      "correct": 2,
+      "explanation": "Sınıf başkanının görevi isteği öğretmene iletmektir; programı tek başına değiştirme yetkisi yoktur. Ayrıca farklı fikirler paylaşılabilir; pazartesiyi isteyenlerin susturulması kurala aykırıdır. C hem başkanın temsil görevini hem öğretmenin karar yetkisini hem de farklı görüşleri ifade etme hakkını korur. Bir sınıf oylaması, verilen kurallardaki yetki sınırını ortadan kaldırmaz."
+    }
   ]
 }
 };

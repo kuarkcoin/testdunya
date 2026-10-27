@@ -353,3 +353,30 @@ Zorluk, ileri dil bilgisinden değil birden fazla ipucunu birleştirme, görsel 
 Önceki **170 İngilizce sorusu**, özellikle ikinci dönem Test 1 ve Test 3, içerik ve çözüm mekanizması bakımından incelenir. Önceki ziyaretçi/tarih eşleştirmesi, değişen tatil planı, fotoğraftan kişi kimliği, düşey kitaplık ilişkisi, iç içe ödünç aralıkları, kâğıdın iki yüzünü kullanma, çalışma alanlarını sıraya koyma, geçersiz/eksik oy, kartpostal zaman dayanağı ve başkanın sınıf oyuna uyması senaryoları tekrarlanmaz. Yazma kazanımları doğrudan ölçülmez; tüm kazanımların eksiksiz kapsandığı iddia edilmez. İlk dönem konuları bu teste taşınmaz.
 
 Önceki **75 test / 750 soru / 433 SVG** korunur; eski soru kayıtları ve SVG dosyaları byte düzeyinde karşılaştırılır. Yeni toplam **76 test / 760 soru / 440 SVG**; İngilizce toplamı **18 test / 180 soru**, ikinci dönem İngilizce bölümü **3 test / 30 soru** olur. Veri, TypeScript, tam Next.js 15.5.28 derlemesi, SEO, üretilmiş rotalar ve yerel HTTP sayfa/varlık kontrolleri uygulanır. Bağımsız dil, içerik, özgünlük ve görsel incelemesi yapılır; native SVG pikselleri 360 px ve 238 px genişliklerde incelenir. Önceki erişim reddi nedeniyle tarayıcı etkileşim testi yeniden denenmez; native inceleme tarayıcı testi olarak sunulmaz. Production aktarımı bu içerik eklemesinin parçası değildir.
+
+## İngilizce — 2. Dönem Test 5 (Zor)
+
+**Kaynak:** Kullanıcının sağladığı 11 sayfalık `ing6.pdf` (Library: `libfile_7160a3c97f7c8191acf09f205420876c`); ikinci dönem 1. ve 2. yazılı konu-soru dağılım tabloları. Occupations, Holidays, Bookworms, Saving the Planet ve Democracy üniteleri esas alınır. İçerik resmî sınav değildir; kaynağın açık uçlu/kısa cevaplı sınav biçiminin veya bağımsız yazma çalışmalarının yerine geçmez.
+
+**Biçim:** Zor ağırlıklı 10 soru; 7 anlamlı SVG ve 3 metin sorusu. Sorular/seçenekler İngilizce, açıklamalar Türkçedir. Zorluk ileri dil bilgisinden değil, birkaç ipucunu birleştirmekten ve farklı kanıt türlerini ayırmaktan gelir; Q2 ve Q8 daha erişilebilir geçiş sorularıdır. Bütün soruların aynı güçlükte olduğu iddia edilmez. Ortak soru bileşeni/büyütme işlevi değiştirilmez. SVG genişliği 360 px, yazı boyutu en az 26 px; mobil inceleme genişliği 238 px'tir.
+
+**Numaralandırma:** İngilizce ikinci dönem Test 2 mevcut değildir. Test 1, Test 3 ve Test 4 aynen korunur; yalnız Test 5 eklenir. Test 2 için içerik, rota veya site haritası girdisi oluşturulmaz; eski testler yeniden numaralandırılmaz.
+
+| Soru | Akıl yürütme ve görselin işlevi | Kaynak eşlemesi |
+| --- | --- | --- |
+| 1 | Mesleklerin birbirine sunduğu hizmetlerden kişi kimliğini çıkarıp iş araçlarının görsel harfleriyle eşleştirme | Occupations, E6.6.R1 (s.2–7,9) |
+| 2 | Bir etkinliği yapmak ile başarıya ulaşmayı ayırma: balık tutmaya gitmek, balık yakalamak ve pazardan balık almak | Holidays, E6.7.R1 (s.2–6,8,10,11) |
+| 3 | Aynı kapak ve başlıktaki iki fiziksel kitap kopyasını ayrı kütüphane kodlarıyla izleme | Bookworms, E6.8.R1 (s.7–11) |
+| 4 | Tarihli ödünç verme oklarının yönünü izleyip arkadaşa geri vermeyi kütüphaneye iadeden ayırma | Bookworms, E6.8.R1; E6.8.W1 ile ilişkili not seçimi (s.7–11) |
+| 5 | Yeniden kullanılan saksı kesitinde taban delikleri, taş/toprak katmanları ve tohumların yerini birlikte denetleme | Saving the Planet, E6.9.R1/R2 (R1 s.7–11; R2 s.8,10,11) |
+| 6 | Yanlış kutulardaki üç nesneyi malzemelerine göre doğru kutulara döngüsel olarak taşıma | Saving the Planet, E6.9.R2 (s.8,10,11) |
+| 7 | Adayların konuşma ve soru yanıtlama haklarındaki farklı eksikleri, herkese fazladan aynı hakları vermeden tamamlama | Democracy, E6.10.R1 (s.10–11) |
+| 8 | Mesleği doğru kişiyle, işe başlama tarihini doğru olay türüyle eşleştirme; doğum gününü ayırma | Occupations, E6.6.R1 (s.2–7,9); E6.6.W1 ile ilişkili not seçimi (s.2–6,11) |
+| 9 | Aynı tatil yerlerine birlikte ulaşmak ile bu yerlerin içine birlikte girmeyi ayırma | Holidays, E6.7.R1 (s.2–6,8,10,11) |
+| 10 | Sınıf başkanının temsil görevini öğretmenin programı değiştirme yetkisinden ayırırken farklı görüşleri ifade hakkını koruma | Democracy, E6.10.R1 (s.10–11) |
+
+Q2'de yalnız boş kovaya dayanılmaz: tam yakalama kaydı açıkça **FISH CAUGHT: 0** der. Q3'te 3–5 Mayıs arasındaki iadelerin tamamı gösterilir; aynı başlık aynı fiziksel kopya değildir. Q4'te tüm hareketler gösterilir; birine kitabı vermek onun kitabı okuduğunu kanıtlamaz. Q5'te çözüm bütün katmanların ve deliklerin görsel konumuna bağlıdır. Q6'da harfler kutuları belirtir; oklar kutulardaki **başlangıç nesnelerinin** taşınmasını anlatır, kutu etiketleri değişmez. Q7'de sayılan şey oy değil adayların eşit katılım haklarıdır. Q10'da yetki sınırı evrensel bir kural olarak değil verilen sınıf kuralı olarak belirtilir. Cevap anahtarı: **D, A, D, C, B, C, A, D, B, C**.
+
+Önceki **180 İngilizce sorusu**, özellikle ikinci dönem Test 1, Test 3 ve Test 4, çözüm mekanizması bakımından incelenir. Ziyaretçi/tarih kısıtları, değişen tatil planı, etkinlik fotoğraflarından kişi bulma, düşey kitaplık filtresi, iç içe ödünç aralıkları, kâğıdın iki yüzü, çevre rotası, bilet delikleri, gizli kapak hasarı, bölüm sınırları, yağmur suyu/toprak kuralı, eksik/geçersiz oy ve ikinci tur eşiği tekrarlanmaz. Yazma kazanımları yalnız uygun notu tanıma düzeyinde ilişkilendirilir; bağımsız yazma doğrudan ölçülmez. İlk dönem üniteleri bu teste taşınmaz; ikinci dönemin bütün kazanımlarının ölçüldüğü iddia edilmez.
+
+Önceki **76 test / 760 soru / 440 SVG** değişmeden korunur. Yeni toplam **77 test / 770 soru / 447 SVG**; İngilizce toplamı **19 test / 190 soru**, ikinci dönem İngilizce toplamı **4 test / 40 soru** olur. Eski soru kayıtları/SVG'ler byte düzeyinde karşılaştırılır. Veri, TypeScript, tam Next.js 15.5.28 derlemesi, SEO, üretilmiş rotalar ve yerel HTTP sayfa/varlık kontrolleri uygulanır. Bağımsız dil/içerik/özgünlük/görsel denetimi ve 360/238 px native SVG piksel incelemesi yapılır. Önceki erişim reddi nedeniyle tarayıcı etkileşim testi yeniden denenmez; native HTTP/SVG incelemesi tarayıcı testi olarak sunulmaz. Test 5 yalnız preview kapsamındadır; production aktarımı yapılmaz.
