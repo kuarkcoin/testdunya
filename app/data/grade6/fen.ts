@@ -2913,6 +2913,176 @@ export const fenData: SubjectData = {
     "correct": 2,
     "explanation": "İlk yıl girişimlerin 20/80 = 1/4’ü, ikinci yıl 2/8 = 1/4’ü ölümle sonuçlanmıştır. Toplam ölüm azalsa da girişim başına kayıtlı ölüm oranı düşmemiştir; girişim sayısı da 80’den 8’e inmiştir. Bu kayıtlar bağlantının iyileştiğini kanıtlamaz. Çitler güvenliği etkileyebildiği gibi yaşam alanları arasındaki hareketi de sınırlayabilir. Etkileri ve uygun güvenli geçitler araştırılmalıdır. Aynı tür sayısı, her türün birey sayısının veya hareketinin aynı olduğunu göstermez."
   }
+],
+    test3: [
+  {
+    "id": "f6-2-t3-01",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "İdeal modelde opak kırmızı yüzey yalnız kırmızı ışığı, opak mavi yüzey yalnız mavi ışığı tamamen yansıtıyor; diğer rengi tamamen soğuruyor. İki yüzeye de her denemede şekildeki ışık paketinin aynısı gönderiliyor. Çubuklardaki her eşit bölme, eşit miktarda ışık enerjisini temsil ediyor. Başka ışık yoktur.\n\nI. denemeden II. denemeye geçildiğinde daha çok enerji soğuran yüzey ve yüzeylerin görünen renkleri için hangisi doğrudur?",
+    "options": [
+      "I’de kırmızı, II’de mavi daha çok soğurur; iki yüzey de kendi renginde görünür.",
+      "İki denemede de eşit enerji soğururlar; toplam gelen enerji her iki pakette de aynıdır.",
+      "I’de mavi, II’de kırmızı daha çok soğurur; iki denemede de yüzeyler kendi renginde görünür.",
+      "I’de mavi, II’de kırmızı daha çok soğurur; daha çok soğuran yüzey siyah görünür."
+    ],
+    "correct": 2,
+    "explanation": "I. pakette 3 birim kırmızı ve 1 birim mavi ışık enerjisi vardır. Kırmızı yüzey 1 birim maviyi, mavi yüzey 3 birim kırmızıyı soğurur. II. pakette değerler tersine döndüğünden kırmızı yüzey 3, mavi yüzey 1 birim soğurur. İki pakette de her iki renk bulunduğu için yüzeyler yansıttıkları kendi renklerinde görünür. Daha çok enerji soğurmak, görünür ışığın tamamını soğurmak demek değildir.",
+    "imageUrl": "/grade6/fen/term-2/test-3/soru-01.svg",
+    "imageAlt": "I. ışık paketi: üç eşit kırmızı enerji bölmesi ve bir mavi bölme. II. paket: bir kırmızı bölme ve üç eşit mavi bölme. Her paket ayrı ayrı iki yüzeyin her birine gönderilir.",
+    "imageWidth": 360,
+    "imageHeight": 430
+  },
+  {
+    "id": "f6-2-t3-02",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "K ve L metal cetvellerinin ölçekleri 20 °C’de doğru ölçüyor. Sıcaklığı sürekli 20 °C’de tutulan aynı çubuğun boyu değişmiyor. Cetveller sırayla ve çubuğa ısı aktarmadan kullanılıyor; her okumada sıfır çizgisi çubuğun sol ucuna hizalanıyor. Cetveller eşit sıcaklık artışıyla 80 °C’ye getirildiğinde şekildeki yaklaşık okumalar alınıyor. Cetveller her yerinde düzgün genleşiyor; eğilme, üretimden kaynaklanan ölçek hatası veya kalıcı biçim değişimi yoktur. Genleşme ve büzülme tersinirdir.\n\nOkumaların nedenini ve cetveller tekrar 20 °C’ye soğutulduğundaki durumu birlikte doğru açıklayan seçenek hangisidir?",
+    "options": [
+      "L’nin ölçek aralıkları daha çok genişlemiştir; iki cetvel de soğutulunca çubuğu yeniden 100,0 cm gösterir.",
+      "Çubuk L ile ölçülürken daha çok büzülmüştür; cetveller soğutulunca da iki farklı boy ölçülür.",
+      "K’nin ölçek aralıkları daha çok genişlemiştir; K’nin sıcak okuması daha büyük olduğu için genleşmesi fazladır.",
+      "İki cetvelin genleşmesi eşittir; eşit sıcaklık artışı bütün metallerde aynı genleşmeyi sağlar."
+    ],
+    "correct": 0,
+    "explanation": "Çubuğun gerçek boyu değişmediğine göre azalan okuma çubuğun büzülmesinden kaynaklanamaz. Cetvel genleşince iki ölçek çizgisi arasındaki gerçek uzaklık artar; aynı çubuğun boyuna daha az ölçek aralığı sığar. L’nin okuması daha küçük olduğundan L’deki aralıklar daha fazla genişlemiştir. Kalıcı değişim olmadığı için cetveller başlangıç sıcaklığına döndüğünde ölçek aralıkları da ilk durumuna döner ve ikisi de 100,0 cm okur.",
+    "imageUrl": "/grade6/fen/term-2/test-3/soru-02.svg",
+    "imageAlt": "Değişmeyen çubuk, her okumada cetvelin sıfırına hizalıdır. 20 °C’de K ve L: 100,0 cm. 80 °C’de K: yaklaşık 99,9 cm, L: yaklaşık 99,8 cm. Şemadaki genleşme görünür olması için büyütülmüştür.",
+    "imageWidth": 360,
+    "imageHeight": 540
+  },
+  {
+    "id": "f6-2-t3-03",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "X, Y ve Z cisimlerinin her biri içi dolu, homojen ve 10 cm³ hacmindedir. İkişer cisimle yapılan tartımların sonuçları şekilde verilmiştir; teraziye başka bir şey konmamıştır. Cisimler daha sonra yoğunluğu 2,4 g/cm³ olan bir sıvıda ayrı ayrı deneniyor. Çözünme, sıvı alma, tepkime ve hava kabarcığı yoktur; sıcaklık değişmez.\n\nY’nin yoğunluğu ile Z’nin sıvıya serbest bırakıldığındaki durumu hangi seçenekte birlikte doğrudur?",
+    "options": [
+      "2,4 g/cm³; batar.",
+      "2,1 g/cm³; yüzer.",
+      "1,8 g/cm³; yüzer.",
+      "2,1 g/cm³; batar."
+    ],
+    "correct": 3,
+    "explanation": "Üç tartım toplanınca her cisim iki kez sayılır: 36 + 48 + 42 = 126 g. X, Y ve Z’nin birer tanesinin toplamı 126 ÷ 2 = 63 g’dır. X ile Z birlikte 42 g olduğundan Y = 63 − 42 = 21 g; yoğunluğu 21 ÷ 10 = 2,1 g/cm³’tür. X ile Y birlikte 36 g olduğundan Z = 63 − 36 = 27 g; yoğunluğu 2,7 g/cm³’tür. Z’nin yoğunluğu sıvının 2,4 g/cm³ değerinden büyük olduğu için Z batar.",
+    "imageUrl": "/grade6/fen/term-2/test-3/soru-03.svg",
+    "imageAlt": "Her cismin hacmi 10 cm³. Birinci tartımda X ve Y toplam 36 g; ikinci tartımda Y ve Z toplam 48 g; üçüncü tartımda X ve Z toplam 42 g.",
+    "imageWidth": 360,
+    "imageHeight": 510
+  },
+  {
+    "id": "f6-2-t3-04",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Pille çalışan iletkenlik deneyinde bilinmeyen K parçası, şekildeki iki temas noktası arasına yerleştiriliyor ve ampul yanıyor. K çıkarılıp aynı aralığa kuru plastik konunca da ampul yanmaya devam ediyor. Temaslar sağlam; pil, ampul ve diğer bağlantılar değişmiyor. Şekilde görülen bakır köprü her iki denemede de yerindedir.\n\nK’nin elektriği iletme durumunu araştırmak için hangi değerlendirme ve sonraki deneme en uygundur?",
+    "options": [
+      "K iletkendir; aynı düzende daha büyük bir K parçası denemek bunu kesinleştirir.",
+      "Bakır köprü K’den bağımsız bir yol oluşturur; köprü çıkarılıp çalışan devrede K yeniden denenmelidir.",
+      "K ve kuru plastik kesinlikle aynı iletkenliğe sahiptir; ampulün yanması ikisinin dirençlerini eşit gösterir.",
+      "Bakır köprü çıkarılmamalıdır; yalnız pil ters çevrilirse K’nin iletkenliği diğer yoldan ayrılabilir."
+    ],
+    "correct": 1,
+    "explanation": "İki temas noktası bakır köprüyle zaten bağlanmıştır. K veya plastik üzerinden yeterli iletim olmasa bile bakır yol devreyi tamamlayabilir. Bu yüzden bu iki yanma gözlemi K’nin iletkenliğini ayırt etmez. Köprü kaldırıldıktan sonra test aralığında bilinen bir iletkenle devrenin çalıştığı doğrulanmalı, ardından aynı koşullarda K denenmelidir. Bir ampulün yanması, aradaki her parçanın iletken olduğunu veya dirençlerinin eşit olduğunu göstermez.",
+    "imageUrl": "/grade6/fen/term-2/test-3/soru-04.svg",
+    "imageAlt": "Pil ve ampul, soldaki ve sağdaki temas noktalarına bağlıdır. Bu noktaların arasında K parçası vardır. Aynı iki noktayı K’ye uğramadan bağlayan ikinci yol, üstteki kesintisiz bakır köprüdür.",
+    "imageWidth": 360,
+    "imageHeight": 430
+  },
+  {
+    "id": "f6-2-t3-05",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Şekildeki devrede ek tel ile reosta teli aynı maddeden ve aynı kalınlıktadır. Reostanın yalnız A ucu ile sürgü arasındaki bölümü devreye katılır. Diğer bağlantıların direnci ihmal edilir; pil, ampul, sıcaklık ve temas koşulları değişmez. Aynı toplam tel uzunluğu aynı parlaklığı sağlar. Başlangıç düzeni görseldedir.\n\nBaşlangıçtan bağımsız olarak iki yeni düzen kuruluyor: I’de ek tel 40 cm’lik, II’de 10 cm’lik aynı tür telle değiştiriliyor. Her iki düzende de başlangıçtaki parlaklığı korumak için sürgü sırasıyla hangi noktalara getirilmelidir?",
+    "options": [
+      "B; C",
+      "D; E",
+      "B; E",
+      "E; B"
+    ],
+    "correct": 2,
+    "explanation": "Başlangıçta ek tel 20 cm, sürgü D’de olduğundan reostanın kullanılan A–D bölümü 30 cm’dir; toplam 50 cm tel devrededir. I’de ek tel 40 cm olunca reostadan 10 cm kullanılmalıdır: sürgü B’ye gelir. II’de ek tel 10 cm olunca reostadan 40 cm kullanılmalıdır: sürgü E’ye gelir. Her iki durumda da toplam uzunluk 50 cm olduğundan aynı cins ve kalınlıktaki tellerin toplam direnci, dolayısıyla ampul parlaklığı korunur.",
+    "imageUrl": "/grade6/fen/term-2/test-3/soru-05.svg",
+    "imageAlt": "Başlangıç devresi: 20 cm ek tel ve sürgüsü D’de olan reosta. Reosta üzerinde A: 0 cm, B: 10 cm, C: 20 cm, D: 30 cm, E: 40 cm; uzaklıklar A’dan ölçülür. A ve sürgü devreye bağlıdır.",
+    "imageWidth": 360,
+    "imageHeight": 470
+  },
+  {
+    "id": "f6-2-t3-06",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Başlangıçta tamamen katı olan saf X maddesi sabit basınçta ısıtılıyor. Çevreye ısı kaybı ihmal edilen modelde ısıtıcı yalnız grafiğin altındaki işaretli zaman aralığında kapatılıyor. Bu aralık boyunca kapta yalnız sıvı bulunduğu gözleniyor. Diğer bütün zamanlarda ısıtıcı çalışıyor; deney sonunda bir miktar sıvı hâlâ vardır.\n\nGrafik ve gözlem birlikte kullanıldığında erime ve kaynama noktaları ile 80 °C’deki yatay bölüm hangi seçenekte doğru yorumlanmıştır?",
+    "options": [
+      "Erime 50 °C, kaynama 80 °C’dir; her yatay bölüm bir hâl değişimini gösterir.",
+      "Erime 80 °C, kaynama 90 °C’dir; ilk yatay bölümde madde henüz ısı almamıştır.",
+      "Erime 50 °C, kaynama 90 °C’dir; 80 °C’deki bölüm de ikinci bir erime noktasıdır.",
+      "Erime 50 °C, kaynama 90 °C’dir; 80 °C’de sıcaklığın sabitliği tek başına hâl değişimi kanıtı değildir."
+    ],
+    "correct": 3,
+    "explanation": "50 °C’de ısıtıcı çalışmasına rağmen sıcaklık sabit kalır; başlangıçtaki saf katı burada erir. Sonraki sıvı 90 °C’ye ulaşınca ısı almaya devam ederken kaynar; kapta sıvı kaldığı için sıcaklık sabit kalır. 6–8. dakikalardaki 80 °C bölümü farklıdır: ısıtıcı kapalıdır, ısı kaybı ihmal edilir ve yalnız sıvı gözlenir. Enerji aktarımı olmadan da sıcaklık sabit kalabileceğinden her yatay bölüm otomatik olarak hâl değişimi sayılmaz.",
+    "imageUrl": "/grade6/fen/term-2/test-3/soru-06.svg",
+    "imageAlt": "Sıcaklık-zaman grafiği: 0. dakika 20 °C; 2–4. dakikalar 50 °C; 6–8. dakikalar 80 °C; 10–12. dakikalar 90 °C. Aradaki yükselişler doğrusaldır. Isıtıcı yalnız 6–8. dakikalarda kapalıdır.",
+    "imageWidth": 360,
+    "imageHeight": 480
+  },
+  {
+    "id": "f6-2-t3-07",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Bir sulak alanda iki yıl aynı yöntem, mevsim ve yeterli gözlem süresiyle yapılan taramanın kayıtları şekilde verilmiştir. A, B, C ve D bölgenin yerli türleridir. E ve F, iki tarama arasında insan eliyle bu alana getirilen türlerdir. Öğrenci, “Tür sayısı değişmedi; bu nedenle yerli biyoçeşitliliği koruma bakımından bir uyarı yoktur.” diyor.\n\nKayıtların desteklediği en uygun değerlendirme hangisidir?",
+    "options": [
+      "Toplam kayıtlı tür sayısı aynı olsa da iki yerli tür artık kaydedilmemiştir; kaybın nedenleri araştırılmalı, E ve F’nin gelişi tek başına nedenin kanıtı sayılmamalıdır.",
+      "E ve F kaydedildiği için yerli tür sayısı artmıştır; yerli türleri yeniden taramak gereksizdir.",
+      "Toplam tür sayısı aynı olduğundan türlerin kimliği ve yerli olup olmaması koruma değerlendirmesini değiştirmez.",
+      "C ve D ikinci yıl kaydedilmediği için bu türlerin dünyanın her yerinde yok olduğu ve tek nedenin E ile F olduğu kanıtlanmıştır."
+    ],
+    "correct": 0,
+    "explanation": "İlk taramada A, B, C ve D olmak üzere dört yerli tür; son taramada A, B, E ve F olmak üzere yine dört tür kayıtlıdır. Ancak kayıtlı yerli tür sayısı dörtten ikiye düşmüştür. Toplam sayının aynı kalması, tür bileşiminin ve yerli çeşitliliğin korunduğunu göstermez. C ve D’nin alandaki durumu ile olası tehditler araştırılmalıdır. Veriler, dünya çapında yok oluşu veya kaybın yalnız getirilen türlerden kaynaklandığını kanıtlamaz.",
+    "imageUrl": "/grade6/fen/term-2/test-3/soru-07.svg",
+    "imageAlt": "Tür kayıt tablosu. İlk tarama: A, B, C, D var; E, F yok. Son tarama: A, B, E, F var; C, D yok. A–D yerli, E–F sonradan getirilen türlerdir. Dolu daire kayıt var, kısa çizgi kayıt yok anlamındadır.",
+    "imageWidth": 360,
+    "imageHeight": 530
+  },
+  {
+    "id": "f6-2-t3-08",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "İçi dolu, homojen bir cismin ölçüm araçlarındaki belirsizlikler dikkate alındığında gerçek kütlesinin 18–22 g, gerçek hacminin 9–11 cm³ arasında olduğu biliniyor. Bu aralıklardaki bütün kütle–hacim eşleşmeleri mümkün kabul ediliyor; uç değerler de buna dâhildir. Cisim yoğunluğu 2 g/cm³ olan bir sıvıya bırakılacaktır. Çözünme, sıvı alma, tepkime veya hava kabarcığı olmayacak; sıcaklık değişmeyecektir.\n\nBu verilerle cismin batması ya da yüzmesi hakkında hangi değerlendirme yapılabilir?",
+    "options": [
+      "Kesinlikle batar; kütlenin en büyük değerini hacmin en küçük değerine bölmek tek geçerli hesaplamadır.",
+      "Kesin karar verilemez; mümkün ölçüm çiftlerinin bazıları sıvıdan küçük, bazıları büyük yoğunluk verir.",
+      "Kesinlikle yüzer; 18 g ile 11 cm³ kullanıldığında yoğunluğu sıvının yoğunluğundan küçüktür.",
+      "Kesinlikle sıvı içinde askıda kalır; aralıkların orta değerleri olan 20 g ve 10 cm³ gerçek değerler olmak zorundadır."
+    ],
+    "correct": 1,
+    "explanation": "Ölçüm aralıkları gerçek değerleri tek bir çifte indirmez. Örneğin 18 g ve 11 cm³ mümkünse yoğunluk 2 g/cm³’ten küçüktür; çünkü 18, 2 × 11 = 22’den küçüktür. 22 g ve 9 cm³ de mümkünse yoğunluk 2 g/cm³’ten büyüktür; çünkü 22, 2 × 9 = 18’den büyüktür. Bu iki olasılık farklı sonuçlar doğurur. Orta değerler zorunlu değildir; daha dar belirsizlikli ölçümler olmadan kesin batma veya yüzme kararı verilemez."
+  },
+  {
+    "id": "f6-2-t3-09",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Bir bölgede yaprak artıklarını parçalayan K ve L ayrıştırıcı türleri vardır. Kontrollü denemelerde başlangıçta eşit miktarda yaprak, eşit canlı sayısı ve eşit süre kullanılıyor; diğer koşullar aynı tutuluyor.\n• 15 °C’de K ile yaprakların 8/10’u, L ile 2/10’u parçalanıyor.\n• 25 °C’de K ile yaprakların 2/10’u, L ile 8/10’u parçalanıyor.\nBir yönetici yalnız 15 °C’deki sonuca bakıp “L’yi korumaya gerek yok; K her koşulda aynı işi daha iyi yapar.” diyor.\n\nBu önerinin veriye dayalı eleştirisi hangisidir?",
+    "options": [
+      "Öneri doğrudur; 15 °C’deki üstünlük bütün sıcaklıklarda aynen korunur.",
+      "K ve L’nin iki sıcaklıktaki kesirleri toplandığında eşit sonuç çıktığı için iki tür her sıcaklıkta aynı hızda çalışır.",
+      "L yalnız 25 °C’de daha başarılı olduğundan K’nin korunmasına gerek olmadığı kesinleşir.",
+      "Üstünlük sıcaklığa göre değişmektedir; iki türü de korumak, değişen koşullarda ayrıştırma işlevinin sürmesine katkı sağlayabilir."
+    ],
+    "correct": 3,
+    "explanation": "15 °C’de K, 25 °C’de ise L aynı süre içinde daha çok yaprak parçalamıştır. Bu nedenle tek sıcaklıktaki performansı bütün koşullara genellemek doğru değildir. Farklı koşullarda etkili olan türlerin birlikte korunması, doğal yaşamın ayrıştırma gibi işlevlerinin sürmesine katkı sağlayabilir. Ayrı deneylerin sonuçlarını toplamak, her sıcaklıkta eşit performans bulunduğunu göstermez; veriler bütün sıcaklıklarda veya her ortamda kesin başarı da vaat etmez."
+  },
+  {
+    "id": "f6-2-t3-10",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Bir kap 20 °C’de ağzına kadar 1000 cm³ sıvıyla dolduruluyor. Kap ve sıvı 80 °C’ye ısıtılınca kabın iç hacmi 1005 cm³ oluyor ve bir miktar sıvı taşıyor. Taşan sıvının tamamı da 80 °C’de tutulup bu sıcaklıkta ölçülüyor: 15 cm³. Buharlaşma, sıçrama veya başka madde kaybı yoktur; sıvı hâl değiştirmez.\n\nTaşma olmasaydı başlangıçtaki sıvının tamamının hacmi kaç cm³ artmış olurdu? Ardından taşan sıvı geri konmadan kap ve içindeki sıvı 20 °C’ye soğutulursa ne beklenir? Genleşme ve büzülme tersinir kabul ediliyor.",
+    "options": [
+      "15 cm³; kap yeniden ağzına kadar dolu olur.",
+      "20 cm³; kap yeniden ağzına kadar dolu olur.",
+      "20 cm³; sıvı seviyesi kabın ağzının altında kalır.",
+      "5 cm³; sıvı seviyesi kabın ağzının altında kalır."
+    ],
+    "correct": 2,
+    "explanation": "80 °C’de başlangıçtaki sıvının tamamı, kapta kalan 1005 cm³ ile taşan 15 cm³’ün toplamıdır: 1020 cm³. Hacim artışı 1020 − 1000 = 20 cm³’tür. Yalnız taşan 15 cm³’ü genleşme saymak, kabın iç hacmindeki 5 cm³ artışı yok sayar. Soğutulunca kap yine 1000 cm³ olur; fakat sıvının bir bölümü taşarak ayrıldığı ve geri konmadığı için aynı başlangıç sıcaklığında kapta 1000 cm³’ten az sıvı kalır. Bu yüzden kap ağzına kadar dolmaz."
+  }
 ]
   },
 };

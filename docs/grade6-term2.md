@@ -158,3 +158,27 @@ Kimlikler `f6-2-t2-01`–`f6-2-t2-10`; rota `/6-sinif/fen/2-donem-test-2`; görs
 Kaynak kazanımlar s.2–3; birinci yazılı senaryoları s.4–10, ikinci yazılı senaryoları s.11–17. Cevap anahtarı: **C, A, D, B, C, D, A, B, D, C**. Önceki 160 Fen Bilimleri sorusu, senaryoların ve çözüm mekanizmalarının tekrarlanmaması için incelenmiştir. Yer değiştiren iki temasın başlangıç bilgisi, termometre seçeneklerinin aralık ve bölmeleri gibi belirleyici bilgiler yalnız ilgili görseldedir; 7 görsel de çözüm için veri taşır.
 
 Önceki **67 test / 670 soru / 377 SVG** korunur; eski soru kayıtları ve SVG dosyaları byte düzeyinde karşılaştırılır. Yeni toplam **68 test / 680 soru / 384 SVG**; Fen Bilimleri toplamı **17 test / 170 soru**, ikinci dönem Fen bölümü **2 test / 20 soru**. Native SVG incelemesi 360 px ve 238 px genişliklerinde yapılır; tarayıcı etkileşim testi yapılmamıştır. Production aktarımı bu içerik eklemesinin parçası değildir.
+
+
+## Fen Bilimleri — 2. dönem Test 3 (zor)
+
+Aynı kullanıcı kaynağı olan 17 sayfalık `fen6.pdf` içindeki ikinci dönem birinci ve ikinci yazılı öğrenme çıktıları esas alınır. **10 yeni soru: 7 anlamlı bilimsel SVG + 3 metin**. Kaynak kazanımlar s.2–3; birinci yazılı senaryoları s.4–10, ikinci yazılı senaryoları s.11–17. Bu özgün çoktan seçmeli alıştırmalar resmî sınav kopyası değildir; açık uçlu/kısa cevaplı sınav biçiminin yerine geçmez ve tüm dönem kazanımlarının eksiksiz ölçüldüğü iddiasını taşımaz. Kaynak dışındaki tutulmalar, kuvvet ve üreme konuları eklenmez.
+
+Kimlikler `f6-2-t3-01`–`f6-2-t3-10`; rota `/6-sinif/fen/2-donem-test-3`; görseller `public/grade6/fen/term-2/test-3/`. Yedi pasif SVG 360 px genişliğindedir; yazılar en az 26 px, kayıtlı yükseklikler gerçek SVG boyutlarıyla eşleşir. Şekillerde çözüme gerekli enerji dağılımı, ölçüm, tartım, bağlantı, zaman veya tür kimliği verileri bulunur. Mevcut ortak soru arayüzü ve büyütme desteği değiştirilmez.
+
+| Soru | Yeni akıl yürütme mekanizması | Kaynak eşlemesi |
+| --- | --- | --- |
+| 1 | Renk başına enerji payı değişince soğurma sırasının tersine dönmesini görünür renkten ayırma | FB.6.4.3.3 |
+| 2 | Genleşen ölçü aracının düşük okumasını ölçülen cismin büzülmesinden ayırma | FB.6.5.1.1 |
+| 3 | İkili tartımlarda iki kez sayılan kütleleri ayırıp yoğunluk ve batma sonucuna ulaşma | FB.6.5.3.1–2 |
+| 4 | Numuneyi atlayan iletken yolun deney sonucunu maskelemesini fark etme | FB.6.6.1.1 |
+| 5 | Ek teldeki değişikliği reostanın etkin uzunluğuyla iki ayrı durumda dengeleme | FB.6.6.2.1–2 |
+| 6 | Isıtıcı kapalıyken oluşan yatay bölümü gerçek hâl değişimi bölgelerinden ayırma | FB.6.5.2.1 |
+| 7 | Sabit toplam tür sayısının ardındaki yerli tür değişimini ve nedensellik sınırını değerlendirme | FB.6.7.1.2 |
+| 8 | Ölçüm belirsizliğinin yoğunluk aralığına ve kesin batma/yüzme kararına etkisi | FB.6.5.3.1–2 |
+| 9 | Farklı sıcaklıklarda farklı türlerin üstünlüğünden biyoçeşitliliğin işlevsel önemini çıkarma | FB.6.7.1.1 |
+| 10 | Taşan sıvı ile kap genleşmesini birlikte hesaplayıp soğuma sonrası eksikliği açıklama | FB.6.5.1.1 |
+
+Zorluk, üst sınıf formüllerinden değil ölçüm aracının etkisini ayırma, nicelikleri tersine bulma, aynı anda birden çok koşulu denetleme ve kanıtın sınırını korumadan gelir; soruların tümü eşit güçlükte değildir. Cevap anahtarı: **C, A, D, B, C, D, A, B, D, C**. Önceki 170 Fen Bilimleri sorusu senaryo ve çözüm mekanizmaları yönünden incelenir; aynı temel kazanımlar farklı muhakeme görevleriyle çalıştırılır.
+
+Önceki **68 test / 680 soru / 384 SVG** korunur; eski soru kayıtları ve SVG dosyaları byte düzeyinde karşılaştırılır. Yeni toplam **69 test / 690 soru / 391 SVG**; Fen Bilimleri toplamı **18 test / 180 soru**, ikinci dönem Fen bölümü **3 test / 30 soru**. Veri, TypeScript, tam derleme, SEO ve üretilmiş rota kontrolleri uygulanır. Native SVG incelemesi 360 px ve 238 px genişliklerinde yapılır; tarayıcı etkileşim testi yapılmamıştır. Production aktarımı bu içerik eklemesinin parçası değildir.
