@@ -36,9 +36,9 @@ jobs:
         run: npm run build
       - name: Install browser verification tools
         run: npm install --no-save --package-lock=false --no-audit --no-fund @playwright/test@1.56.1
-      - name: Install Chromium
-        run: npx playwright install --with-deps chromium
       - name: Verify reading activities in the browser
+        env:
+          READING_BROWSER_CHANNEL: chrome
         run: npm run check:reading:browser
       - name: Save reading screenshots
         if: always()

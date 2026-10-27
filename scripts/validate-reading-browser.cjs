@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 'use strict';
 
-// Run after npm run build. CI installs @playwright/test and its Chromium binary.
+// Run after npm run build. CI uses Chrome already installed on the hosted runner.
+// Locally, install Playwright Chromium or set READING_BROWSER_CHANNEL=chrome.
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -86,7 +87,9 @@ async function validateReadingBrowser() {
       await new Promise((resolve) => setTimeout(resolve, 250));
     }
     assert(ready, 'Next server did not become ready');
-    browser = await chromium.launch({ headless: true, args: ['--use-fake-device-for-media-stream', '--use-fake-ui-for-media-stream'] });
+    browser = await chromium.launch({ headless: true,
+      ...(process.env.READING_BROWSER_CHANNEL ? { channel: process.env.READING_BROWSER_CHANNEL } : {}),
+      args: ['--use-fake-device-for-media-stream', '--use-fake-ui-for-media-stream'] });
     const context = await browser.newContext({ viewport: { width: 1280, height: 900 }, reducedMotion: 'reduce', permissions: ['microphone'] });
     await context.route('**/*', (route) => new URL(route.request().url()).origin === origin ? route.continue() : route.abort());
     await context.addInitScript(instrumentBrowser);
