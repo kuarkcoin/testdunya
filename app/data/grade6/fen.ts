@@ -3423,6 +3423,176 @@ export const fenData: SubjectData = {
             "correct": 0,
             "explanation": "İşlem yapılmayan alanlarda 5, tek önlem alınanlarda 6, iki önlemin birlikte uygulandığı alanlarda 10 tür kaydedilmiştir. Bu karşılaştırma, incelenen koşullarda hem kirli akışı durdurmanın hem yaşam alanını onarmanın birlikte ele alınmasını destekler. Tek tek uygulamalardaki artışları toplamak, iki işlemin birlikte etkisini zorunlu olarak vermez: bazı türler her iki koşulun da iyileşmesine ihtiyaç duyabilir. Kayıtlar gelecekte bütün tehditlerin biteceğini veya aynı sayısal sonucun her yerde oluşacağını göstermez."
       }
+],
+    test6: [
+  {
+    "id": "f6-2-t6-01",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Görselde dört kuru nesne verilmiştir. Nesnelerin yüzeyinde başka bir maddeyle kaplama yoktur.\n\nHangisi elektrik iletkenidir?",
+    "options": [
+      "P",
+      "R",
+      "S",
+      "T"
+    ],
+    "correct": 1,
+    "explanation": "R, çelikten yapılmış metal ataştır ve elektriği iletir. Cam çubuk, kuru tahta çubuk ve plastik çubuk ise bu sınıflandırmada yalıtkandır.",
+    "imageUrl": "/grade6/fen/term-2/test-6/soru-01.svg",
+    "imageAlt": "P cam çubuk, R çelik ataş, S kuru tahta çubuk, T plastik çubuk. Her nesnenin yanında harfi gösterilmiştir.",
+    "imageWidth": 360,
+    "imageHeight": 480
+  },
+  {
+    "id": "f6-2-t6-02",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Şemada bir göl ve çevresindeki dört yer gösterilmiştir. Ok, arıtılmamış kirli suyun izlediği yolu gösteriyor.\n\nKirli suyu göle ulaşmadan arıtacak bir düzenek hangi yere kurulmalıdır?",
+    "options": [
+      "P",
+      "R",
+      "S",
+      "T"
+    ],
+    "correct": 3,
+    "explanation": "T, kirli suyun göle taşındığı borunun üzerindedir. Burada suyun arıtılması, kirliliğin göle ulaşmasını azaltarak canlıların yaşam ortamını korumaya yardımcı olur. Diğer işaretler ağaçlık, sazlık ve kuşların bulunduğu yerleri gösterir; kirli suyun giriş yolu değildir.",
+    "imageUrl": "/grade6/fen/term-2/test-6/soru-02.svg",
+    "imageAlt": "Göl çevresinde P ağaçlık alanı, R sazlığı, S kuş yuvasını gösteriyor. T, atık su kaynağından göle giden borunun üzerinde; ok kirli suyun borudan göle aktığını gösteriyor.",
+    "imageWidth": 360,
+    "imageHeight": 530
+  },
+  {
+    "id": "f6-2-t6-03",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Ağzı bağlı esnek bir balonun içindeki hava, görseldeki gibi ısıtılıyor. Balondan hava çıkmıyor, balona hava girmiyor; balon patlamıyor. Dış basınç değişmiyor.\n\nHavanın bu değişimi hangi seçenekte doğru açıklanmıştır?",
+    "options": [
+      "Hava genleşmiştir; hacmi artarken kütlesi değişmemiştir.",
+      "Hava genleşmiştir; hacmi ve kütlesi birlikte artmıştır.",
+      "Hava büzülmüştür; hacmi azalmıştır.",
+      "Hava erimiştir; gaz hâlden sıvı hâle geçmiştir."
+    ],
+    "correct": 0,
+    "explanation": "Isıtılan hava, esnek balonun içinde daha büyük hacim kaplamıştır; bu olay genleşmedir. Balona madde girip çıkmadığı için içerideki havanın kütlesi değişmez. Genleşme, erime gibi bir hâl değişimi değildir.",
+    "imageUrl": "/grade6/fen/term-2/test-6/soru-03.svg",
+    "imageAlt": "Aynı ağzı bağlı balon önce 20 °C’de daha küçük, sonra 40 °C’de daha büyük hacimde gösteriliyor. İçindeki hava miktarı değişmiyor; görsel hacimleri sayısal olarak ölçmek için ölçekli değildir.",
+    "imageWidth": 360,
+    "imageHeight": 460
+  },
+  {
+    "id": "f6-2-t6-04",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Aynı hacimde alınan buz ve sıvı su örneklerinin kütleleri görseldedir. Kapların kütleleri terazi okumalarından çıkarılmıştır.\n\nBu verilere göre buzun yoğunluğu suyun yoğunluğuna göre nasıldır ve buz suya bırakıldığında neden yüzer?",
+    "options": [
+      "Daha büyüktür; daha yoğun olan madde yüzeyde kalır.",
+      "Eşittir; eşit hacimler her zaman eşit yoğunluk verir.",
+      "Daha küçüktür; buz aynı hacimdeki sudan daha az kütleye sahiptir.",
+      "Daha küçüktür; buzun hiç kütlesi yoktur."
+    ],
+    "correct": 2,
+    "explanation": "İki örneğin hacmi de 100 cm³’tür. Buz 90 g, su 100 g olduğundan aynı hacimdeki buzun kütlesi daha azdır; dolayısıyla buz daha az yoğundur. Buzun suda yüzmesini bu yoğunluk farkı açıklar. Eşit hacimli olmak, yoğunlukların eşit olmasını gerektirmez.",
+    "imageUrl": "/grade6/fen/term-2/test-6/soru-04.svg",
+    "imageAlt": "Eşit hacimli iki örnek: 100 cm³ buzun kütlesi 90 g; 100 cm³ sıvı suyun kütlesi 100 g. Teraziler yalnız örneklerin kütlelerini gösterir.",
+    "imageWidth": 360,
+    "imageHeight": 470
+  },
+  {
+    "id": "f6-2-t6-05",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Saf P ve R maddelerinin aynı basınçtaki erime ve kaynama noktaları ile iki bölmenin sıcaklıkları görseldedir. Maddeler bulundukları bölmenin sıcaklığına ulaşıyor; basınç değişmiyor.\n\nP’nin sıvı, R’nin katı hâlde tutulabileceği bölme hangisidir? Bu bölmedeki P, II. bölmeye götürülüp 80 °C’ye ulaştığında hangi hâlde olur?",
+    "options": [
+      "I. bölme; gaz.",
+      "I. bölme; katı.",
+      "II. bölme; sıvı.",
+      "II. bölme; katı."
+    ],
+    "correct": 0,
+    "explanation": "I. bölme 15 °C’dir. Bu sıcaklık P’nin 10 °C’lik erime noktası ile 70 °C’lik kaynama noktası arasındadır; P sıvıdır. 15 °C, R’nin 30 °C’lik erime noktasından küçük olduğundan R katıdır. P, II. bölmede 80 °C’ye ulaştığında kendi kaynama noktası olan 70 °C’nin üstündedir ve gaz hâlindedir.",
+    "imageUrl": "/grade6/fen/term-2/test-6/soru-05.svg",
+    "imageAlt": "Aynı basınçta P’nin erime noktası 10 °C, kaynama noktası 70 °C; R’nin erime noktası 30 °C, kaynama noktası 90 °C. I. bölme 15 °C, II. bölme 80 °C.",
+    "imageWidth": 360,
+    "imageHeight": 510
+  },
+  {
+    "id": "f6-2-t6-06",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Bir yöredeki arılar marttan haziranın sonuna kadar çiçeklerden besleniyor. Yerli K bitkisi yalnız mart–nisanda, yerli L bitkisi yalnız mayıs–haziranda çiçek açıyor. Parkta iki bitki de bulunuyor. Bir görevli, “K daha çok sayıda; L’leri de K ile değiştirirsek arılar için aynı işlevi koruruz.” diyor.\n\nVerilen bilgilere göre en uygun değerlendirme hangisidir?",
+    "options": [
+      "Öneri uygundur; bitki sayısı artınca her bitkinin çiçeklenme süresi kendiliğinden uzar.",
+      "L korunmamalıdır; bir türün az sayıda bulunması hiçbir işlevinin olmadığını gösterir.",
+      "K ve L birlikte korunmalıdır; farklı çiçeklenme dönemleri bu dört ay boyunca çiçek bulunmasına katkı sağlar.",
+      "L çoğaltılırken K tamamen kaldırılmalıdır; yalnız L bu dört ayın tamamında çiçek açar."
+    ],
+    "correct": 2,
+    "explanation": "K mart–nisanda, L mayıs–haziranda çiçek açar. İki yerli türün birlikte korunması, birbirini izleyen dönemlerde arıların yararlanabileceği çiçeklerin bulunmasına katkı sağlar. L’nin yerine yalnız K dikmek mayıs–hazirandaki bu kaynağı korumaz. Bu, biyoçeşitliliğin önemine bir örnektir; tek başına bütün arıların yaşamasını garanti etmez."
+  },
+  {
+    "id": "f6-2-t6-07",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Görseldeki K, L ve M telleriyle iki araştırma yapılacak:\nI. K ile L karşılaştırılarak yalnız telin cinsinin ampul parlaklığına etkisi incelenecek.\nII. L ile M karşılaştırılarak yalnız telin kalınlığının etkisi incelenecek.\nK değiştirilmeden, gerekirse L ve M’nin uçlarından parça kesilip uzaklaştırılacak. Kesme kalınlığı değiştirmiyor. Bütün kesmeler iki araştırmadan da önce yapılacak; aynı kalan teller iki araştırmada da kullanılacak. Pil, ampul, sıcaklık ve temas koşulları sabit.\n\nHangi düzenleme iki araştırmayı da uygun hâle getirir ve II. araştırmada hangi tel ampulü daha parlak yakar?",
+    "options": [
+      "L’den 10 cm kesilir, M kesilmez; M daha parlak yakar.",
+      "L ve M’den 10’ar cm kesilir; L daha parlak yakar.",
+      "L kesilmez, M’den 10 cm kesilir; M daha parlak yakar.",
+      "L ve M’den 10’ar cm kesilir; M daha parlak yakar."
+    ],
+    "correct": 3,
+    "explanation": "I’de yalnız cins değişmelidir: K ve L’nin kalınlıkları zaten aynıdır, L de K gibi 20 cm yapılmalıdır. II’de yalnız kalınlık değişmelidir: L ile M demirdir, fakat L artık 20 cm olduğundan M de 20 cm yapılmalıdır. Bu nedenle iki telden de 10’ar cm kesilir. Aynı cins ve uzunlukta M daha kalın olduğu için direnci daha küçüktür; aynı pil ve ampulle daha parlak ışık verir.",
+    "imageUrl": "/grade6/fen/term-2/test-6/soru-07.svg",
+    "imageAlt": "K: bakır, 20 cm, ince. L: demir, 30 cm, ince. M: demir, 30 cm, kalın. K ve L aynı kalınlıkta; M daha kalındır. Çizilen tel uzunlukları 20’ye 30 oranını korur.",
+    "imageWidth": 360,
+    "imageHeight": 490
+  },
+  {
+    "id": "f6-2-t6-08",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Bir araştırmada eşit büyüklükteki alanların her birinde başlangıçta aynı 12 yerli çiçek türü vardır. Süre, su, toprak ve gözlem yöntemi aynıdır. Yalnız ışık ve toprağı örten dökülmüş yapraklar değiştirilmiştir. Son kayıtlar şöyledir:\n• P: Gölgesiz, yaprak örtüsü yok → 12 tür.\n• R: Gölgeli, yaprak örtüsü yok → 8 tür.\n• S: Gölgeli, yaprak örtüsü var → 4 tür.\nAraştırmacı, yaprak örtüsünün etkisinin gölgeli ve gölgesiz koşullarda aynı olup olmadığını incelemek istiyor.\n\nEksik olan dördüncü deney hangi koşullarda yapılmalıdır? Bu yeni deneyde 10 tür kaydedilirse hangi yorum desteklenir?",
+    "options": [
+      "Gölgesiz ve yaprak örtüsüz; yaprak örtüsü her iki ışık koşulunda da tür sayısını 2 azaltmıştır.",
+      "Gölgesiz ve yaprak örtülü; yaprak örtüsüyle ilişkili azalma gölgesizde 2, gölgelide 4 türdür.",
+      "Gölgesiz ve yaprak örtülü; yaprak örtüsüyle ilişkili azalma iki ışık koşulunda da 4 türdür.",
+      "Gölgeli ve yaprak örtüsüz; yeni kaydın P’den farkı yalnız yaprak örtüsünün etkisini gösterir."
+    ],
+    "correct": 1,
+    "explanation": "Eksik koşul gölgesiz ve yaprak örtülü alandır. Yeni deneyde 10 tür kaydedilirse, ışık koşulu aynı olan P ile karşılaştırılır: 12 − 10 = 2 türlük azalma yaprak örtüsüyle ilişkilidir. Gölgeli koşuldaki uygun karşılaştırma R ile S’dir: 8 − 4 = 4 tür. Böylece bu araştırmada yaprak örtüsüyle ilişkili azalma ışık koşuluna göre farklıdır. Yeni deneyi R ile karşılaştırmak hem ışığı hem yaprak örtüsünü değiştireceğinden tek etkenin etkisini ayıramaz. Sonuç bütün yaşam alanlarına aynı sayılarla genellenmez."
+  },
+  {
+    "id": "f6-2-t6-09",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Şekildeki taşırma kabının içinde başlangıçta 90 cm³ su vardır; su taşma ağzına kadar geldiğinde kapta 100 cm³ su bulunur. Öğrenci, kütlesi 45 g olan içi dolu katıyı tamamen suya batırıp taşan suyun tamamını toplama kabında biriktiriyor. Toplama kabının iki tartımı görseldedir.\n\nSuyun yoğunluğu 1 g/cm³’tür. Katı su almıyor, çözünmüyor ve hava kabarcığı taşımıyor; sıçrama ve başka su kaybı yok. Katının yoğunluğu kaç g/cm³’tür? Aynı katı, değişime uğramadığı 1,6 g/cm³ yoğunluklu bir sıvıya bırakılırsa ne olur?",
+    "options": [
+      "1,5 g/cm³; yüzer.",
+      "2,25 g/cm³; batar.",
+      "1,5 g/cm³; batar.",
+      "1,125 g/cm³; yüzer."
+    ],
+    "correct": 0,
+    "explanation": "Toplanan suyun kütlesi 32 − 12 = 20 g, hacmi de 20 cm³’tür. Ancak başlangıçta su taşma ağzından 100 − 90 = 10 cm³ eksiktir. Katı batırılırken yer değiştirdiği suyun önce 10 cm³’ü bu boşluğu doldurur, sonra 20 cm³’ü taşar. Katının hacmi 10 + 20 = 30 cm³, yoğunluğu 45 ÷ 30 = 1,5 g/cm³’tür. Bu değer 1,6 g/cm³’ten küçük olduğu için diğer sıvıda yüzer. Yalnız taşan suyu katı hacmi saymak başlangıçtaki boşluğu; 32 g’ı doğrudan kullanmak ise kabın darasını gözden kaçırır.",
+    "imageUrl": "/grade6/fen/term-2/test-6/soru-09.svg",
+    "imageAlt": "Başlangıçtaki taşırma kabı: su 90 cm³ çizgisinde, taşma ağzı 100 cm³ çizgisinde. Katı tamamen batırıldığında taşan su ayrı bir kapta toplanıyor. Toplama kabı boşken 12 g; taşan suyla birlikte 32 g. Katının kütlesi 45 g. Şema ölçekli değildir.",
+    "imageWidth": 360,
+    "imageHeight": 680
+  },
+  {
+    "id": "f6-2-t6-10",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Basitleştirilmiş bir buz–su modelinde 9 g buz 10 cm³, 9 g sıvı su ise 9 cm³ hacim kaplıyor. Örnek, her biri 9 g olan 10 eşit kütleli paydan oluşuyor; her pay ya tamamen buz ya tamamen sıvı su hâlinde.\n\nBaşlangıçta buzun TAM hacmi ile sıvı suyun hacmi ayrı ayrı bulunup toplanıyor ve 96 cm³ elde ediliyor. Bu toplam, kaptaki su seviyesinden okunan hacim değildir. Sonra başlangıçtaki buzun 18 g’ı eriyor. Madde kaybı yok; modeldeki hacim değerleri geçerli kalıyor.\n\nBaşlangıçta kaç gram buz vardır? 18 g buz eridikten sonra buz ve sıvı su hacimlerinin toplamı kaç cm³ olur?",
+    "options": [
+      "36 g; 94 cm³.",
+      "54 g; 96 cm³.",
+      "54 g; 94 cm³.",
+      "54 g; 98 cm³."
+    ],
+    "correct": 2,
+    "explanation": "On payın tamamı sıvı olsaydı toplam hacim 10 × 9 = 90 cm³ olurdu. Bir pay sıvı yerine buz olduğunda hacim 10 − 9 = 1 cm³ artar. Başlangıç hacmi 96 cm³ olduğuna göre 96 − 90 = 6 pay buzdur: 6 × 9 = 54 g buz vardır. Eriyen 18 g, iki paydır. Her pay erirken hacim 1 cm³ azaldığından toplam hacim 96 − 2 = 94 cm³ olur. Kütle korunur; buzun suya dönüşmesi bu modelde hacmi azaltır."
+  }
 ]
   },
 };
