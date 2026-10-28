@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="1140" viewBox="0 0 360 1140" role="img">
+<title>Four dated work records</title>
+<desc>Arrows go from the worker to the customer. 9 May: Jo cuts Mira's hair. 10 May: Jo cuts Ravi's hair. 12 May: Mira repairs a wooden chair for Jo. 15 May: Ravi repairs a car for Mira.</desc>
+<rect width="360" height="1140" rx="20" fill="#f0f5fb"/>
+<g font-family="Arial, sans-serif" fill="#18324a">
+<text x="180" y="42" text-anchor="middle" font-size="30" font-weight="700">WORK RECORDS</text>
+<text x="180" y="80" text-anchor="middle" font-size="27">worker → customer</text>
+<g transform="translate(0 100)">
+<rect x="18" y="0" width="324" height="250" rx="16" fill="#ffffff" stroke="#d2e1ed" stroke-width="2"/>
+<text x="180" y="33" text-anchor="middle" font-size="28" font-weight="700">9 MAY</text>
+<text x="88" y="73" text-anchor="middle" font-size="27" font-weight="700">JO</text>
+<line x1="144" y1="64" x2="214" y2="64" stroke="#376b8a" stroke-width="4" stroke-linecap="round"/>
+<polyline points="203,54 215,64 203,74" fill="none" stroke="#376b8a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="275" y="73" text-anchor="middle" font-size="27" font-weight="700">MIRA</text>
+<line x1="48" y1="233" x2="312" y2="233" stroke="#d6e2e9" stroke-width="3"/>
+<rect x="214" y="100" width="72" height="107" rx="34" fill="#e4f0f5" stroke="#99b2c1" stroke-width="3"/>
+<line x1="250" y1="214" x2="250" y2="231" stroke="#637b8e" stroke-width="7"/>
+<line x1="222" y1="231" x2="278" y2="231" stroke="#637b8e" stroke-width="6" stroke-linecap="round"/>
+<path d="M 218 193 L 218 214 L 279 214" fill="none" stroke="#526e80" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="248" cy="150" r="21" fill="#e9b992" stroke="#77513f" stroke-width="2"/>
+<path d="M 227 147 Q 222 125 245 123 Q 270 122 270 147 L 257 136 L 246 144 L 237 136 Z" fill="#624536"/>
+<path d="M 232 173 Q 248 166 265 173 L 278 209 L 219 209 Z" fill="#69a8b2" stroke="#376b75" stroke-width="2"/>
+<circle cx="110" cy="127" r="21" fill="#d69b73" stroke="#77513f" stroke-width="2"/>
+<path d="M 89 124 Q 85 101 109 102 Q 131 101 132 123 L 119 113 L 101 119 Z" fill="#413c39"/>
+<path d="M 92 151 Q 110 143 127 151 L 138 206 L 82 206 Z" fill="#b4bed7" stroke="#4b617e" stroke-width="2"/>
+<path d="M 97 149 L 97 162 L 124 162 L 124 149 M 97 162 L 91 204 L 131 204 L 124 162" fill="#fbf4df" stroke="#8f968e" stroke-width="2" stroke-linejoin="round"/>
+<path d="M 96 207 L 94 230 M 122 207 L 124 230" fill="none" stroke="#4b617e" stroke-width="10" stroke-linecap="round"/>
+<path d="M 127 158 L 164 145 L 193 132 M 126 178 L 166 176 L 215 159" fill="none" stroke="#d69b73" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="211" y1="154" x2="224" y2="160" stroke="#3c5267" stroke-width="6" stroke-linecap="round"/>
+<path d="M 215 153 L 217 148 M 220 155 L 222 150 M 225 157 L 227 152" fill="none" stroke="#3c5267" stroke-width="2"/>
+<circle cx="191" cy="131" r="6" fill="#ffffff" stroke="#c36a39" stroke-width="3"/>
+<circle cx="199" cy="140" r="6" fill="#ffffff" stroke="#c36a39" stroke-width="3"/>
+<path d="M 196 134 L 225 123 M 201 135 L 219 113" fill="none" stroke="#7e8e9d" stroke-width="4" stroke-linecap="round"/>
+<circle cx="204" cy="132" r="3" fill="#445c70"/>
+<path d="M 225 142 L 221 147 M 230 162 L 227 167" fill="none" stroke="#624536" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g transform="translate(0 360)">
+<rect x="18" y="0" width="324" height="250" rx="16" fill="#ffffff" stroke="#d2e1ed" stroke-width="2"/>
+<text x="180" y="33" text-anchor="middle" font-size="28" font-weight="700">10 MAY</text>
+<text x="88" y="73" text-anchor="middle" font-size="27" font-weight="700">JO</text>
+<line x1="144" y1="64" x2="214" y2="64" stroke="#376b8a" stroke-width="4" stroke-linecap="round"/>
+<polyline points="203,54 215,64 203,74" fill="none" stroke="#376b8a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="275" y="73" text-anchor="middle" font-size="27" font-weight="700">RAVI</text>
+<line x1="48" y1="233" x2="312" y2="233" stroke="#d6e2e9" stroke-width="3"/>
+<rect x="214" y="100" width="72" height="107" rx="34" fill="#e4f0f5" stroke="#99b2c1" stroke-width="3"/>
+<line x1="250" y1="214" x2="250" y2="231" stroke="#637b8e" stroke-width="7"/>
+<line x1="222" y1="231" x2="278" y2="231" stroke="#637b8e" stroke-width="6" stroke-linecap="round"/>
+<path d="M 218 193 L 218 214 L 279 214" fill="none" stroke="#526e80" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="248" cy="150" r="21" fill="#e9b992" stroke="#77513f" stroke-width="2"/>
+<path d="M 227 147 Q 222 125 245 123 Q 270 122 270 147 L 257 136 L 246 144 L 237 136 Z" fill="#624536"/>
+<path d="M 232 173 Q 248 166 265 173 L 278 209 L 219 209 Z" fill="#69a8b2" stroke="#376b75" stroke-width="2"/>
+<circle cx="110" cy="127" r="21" fill="#d69b73" stroke="#77513f" stroke-width="2"/>
+<path d="M 89 124 Q 85 101 109 102 Q 131 101 132 123 L 119 113 L 101 119 Z" fill="#413c39"/>
+<path d="M 92 151 Q 110 143 127 151 L 138 206 L 82 206 Z" fill="#b4bed7" stroke="#4b617e" stroke-width="2"/>
+<path d="M 97 149 L 97 162 L 124 162 L 124 149 M 97 162 L 91 204 L 131 204 L 124 162" fill="#fbf4df" stroke="#8f968e" stroke-width="2" stroke-linejoin="round"/>
+<path d="M 96 207 L 94 230 M 122 207 L 124 230" fill="none" stroke="#4b617e" stroke-width="10" stroke-linecap="round"/>
+<path d="M 127 158 L 164 145 L 193 132 M 126 178 L 166 176 L 215 159" fill="none" stroke="#d69b73" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="211" y1="154" x2="224" y2="160" stroke="#3c5267" stroke-width="6" stroke-linecap="round"/>
+<path d="M 215 153 L 217 148 M 220 155 L 222 150 M 225 157 L 227 152" fill="none" stroke="#3c5267" stroke-width="2"/>
+<circle cx="191" cy="131" r="6" fill="#ffffff" stroke="#c36a39" stroke-width="3"/>
+<circle cx="199" cy="140" r="6" fill="#ffffff" stroke="#c36a39" stroke-width="3"/>
+<path d="M 196 134 L 225 123 M 201 135 L 219 113" fill="none" stroke="#7e8e9d" stroke-width="4" stroke-linecap="round"/>
+<circle cx="204" cy="132" r="3" fill="#445c70"/>
+<path d="M 225 142 L 221 147 M 230 162 L 227 167" fill="none" stroke="#624536" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g transform="translate(0 620)">
+<rect x="18" y="0" width="324" height="250" rx="16" fill="#ffffff" stroke="#d2e1ed" stroke-width="2"/>
+<text x="180" y="33" text-anchor="middle" font-size="28" font-weight="700">12 MAY</text>
+<text x="88" y="73" text-anchor="middle" font-size="27" font-weight="700">MIRA</text>
+<line x1="144" y1="64" x2="214" y2="64" stroke="#376b8a" stroke-width="4" stroke-linecap="round"/>
+<polyline points="203,54 215,64 203,74" fill="none" stroke="#376b8a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="275" y="73" text-anchor="middle" font-size="27" font-weight="700">JO</text>
+<line x1="48" y1="233" x2="312" y2="233" stroke="#d6e2e9" stroke-width="3"/>
+<rect x="222" y="113" width="63" height="63" rx="7" fill="#d6ad79" stroke="#885738" stroke-width="4"/>
+<path d="M 233 121 L 233 167 M 253 121 L 253 167 M 274 121 L 274 167" fill="none" stroke="#b6814e" stroke-width="4"/>
+<path d="M 222 175 L 222 231 M 284 175 L 284 231" fill="none" stroke="#885738" stroke-width="10" stroke-linecap="round"/>
+<rect x="211" y="179" width="86" height="14" rx="4" fill="#d6ad79" stroke="#885738" stroke-width="3"/>
+<rect x="212" y="196" width="19" height="18" rx="2" fill="#c69561" stroke="#885738" stroke-width="2"/>
+<circle cx="219" cy="203" r="3" fill="#45596b"/>
+<circle cx="100" cy="128" r="21" fill="#e9b992" stroke="#77513f" stroke-width="2"/>
+<path d="M 79 125 Q 76 101 100 103 Q 124 103 122 126 L 108 114 L 88 123 Z" fill="#624536"/>
+<path d="M 83 151 Q 100 143 119 152 L 130 207 L 72 207 Z" fill="#4b91a0" stroke="#376b75" stroke-width="2"/>
+<path d="M 87 149 L 87 166 L 114 166 L 114 150 M 87 166 L 82 207 L 123 207 L 114 166" fill="#d4b18a" stroke="#946b43" stroke-width="2"/>
+<path d="M 84 208 L 82 231 M 116 208 L 119 231" fill="none" stroke="#4b617e" stroke-width="10" stroke-linecap="round"/>
+<path d="M 119 157 L 155 172 L 183 166 M 121 184 L 161 206 L 201 204" fill="none" stroke="#e9b992" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="179" y1="161" x2="213" y2="192" stroke="#a1754b" stroke-width="9" stroke-linecap="round"/>
+<path d="M 204 194 L 218 180 L 228 189 L 215 205 Z" fill="#778a9b" stroke="#40576a" stroke-width="3" stroke-linejoin="round"/>
+<line x1="235" y1="222" x2="261" y2="225" stroke="#c18f58" stroke-width="5" stroke-linecap="round"/>
+<path d="M 148 227 L 154 217 L 198 225 L 194 232 L 187 227 L 183 232 L 176 226 L 172 230 Z" fill="#bcc6ce" stroke="#637b8e" stroke-width="2"/>
+<path d="M 137 220 L 150 220 L 146 232 L 134 232 Z" fill="#a96d3e" stroke="#885738" stroke-width="2"/>
+</g>
+<g transform="translate(0 880)">
+<rect x="18" y="0" width="324" height="250" rx="16" fill="#ffffff" stroke="#d2e1ed" stroke-width="2"/>
+<text x="180" y="33" text-anchor="middle" font-size="28" font-weight="700">15 MAY</text>
+<text x="88" y="73" text-anchor="middle" font-size="27" font-weight="700">RAVI</text>
+<line x1="144" y1="64" x2="214" y2="64" stroke="#376b8a" stroke-width="4" stroke-linecap="round"/>
+<polyline points="203,54 215,64 203,74" fill="none" stroke="#376b8a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="275" y="73" text-anchor="middle" font-size="27" font-weight="700">MIRA</text>
+<line x1="48" y1="233" x2="312" y2="233" stroke="#d6e2e9" stroke-width="3"/>
+<path d="M 143 169 L 172 161 L 195 121 L 260 121 L 286 160 L 307 168 L 307 204 L 143 204 Z" fill="#759cbf" stroke="#3e6280" stroke-width="3" stroke-linejoin="round"/>
+<path d="M 184 158 L 201 132 L 225 132 L 225 158 Z M 235 132 L 253 132 L 272 158 L 235 158 Z" fill="#e7f4f7" stroke="#3e6280" stroke-width="2" stroke-linejoin="round"/>
+<line x1="235" y1="171" x2="249" y2="171" stroke="#3e6280" stroke-width="4" stroke-linecap="round"/>
+<circle cx="174" cy="209" r="24" fill="#46586b" stroke="#263a50" stroke-width="3"/>
+<circle cx="174" cy="209" r="12" fill="#c4d1db" stroke="#7e929f" stroke-width="2"/>
+<circle cx="278" cy="209" r="24" fill="#46586b" stroke="#263a50" stroke-width="3"/>
+<circle cx="278" cy="209" r="12" fill="#c4d1db" stroke="#7e929f" stroke-width="2"/>
+<circle cx="83" cy="140" r="21" fill="#b77f5b" stroke="#77513f" stroke-width="2"/>
+<path d="M 62 136 Q 60 113 82 114 Q 106 113 106 138 L 89 125 L 69 131 Z" fill="#343c44"/>
+<path d="M 68 164 Q 85 154 100 165 L 114 201 L 74 207 L 61 185 Z" fill="#68839c" stroke="#3d5d78" stroke-width="2"/>
+<path d="M 83 205 L 104 228 L 126 228 M 75 208 L 65 231 L 49 231" fill="none" stroke="#3d5d78" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 101 171 L 126 189 L 151 197 M 105 189 L 130 209 L 150 215" fill="none" stroke="#b77f5b" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 151 195 L 168 205" fill="none" stroke="#99aab7" stroke-width="8" stroke-linecap="round"/>
+<path d="M 167 202 L 174 196 L 180 200 L 174 205 L 178 212 L 172 216 L 167 209 Z" fill="#b5c4ce" stroke="#526a7d" stroke-width="2" stroke-linejoin="round"/>
+<path d="M 133 223 L 149 223 L 149 232 L 133 232 Z" fill="#ce9852" stroke="#8f693a" stroke-width="2"/>
+</g>
+</g>
+</svg>

@@ -3577,6 +3577,176 @@ export const ingilizceData: SubjectData = {
         "imageWidth": 360,
         "imageHeight": 845
     }
+],
+  "test7": [
+    {
+        "id": "e6-2-t7-01",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Look at the family's holiday picture. What did they do?",
+        "options": [
+            "They went skiing.",
+            "They went camping.",
+            "They visited a museum.",
+            "They went fishing."
+        ],
+        "correct": 1,
+        "explanation": "Ailenin çadırı, çadırın içindeki uyku tulumları ve doğal kamp alanı kamp yaptıklarını gösterir. Go camping ifadesinin geçmiş zaman biçimi went camping'dir. Resimde kayak, müze gezisi veya balık tutma görülmez.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-7/soru-01.svg",
+        "imageAlt": "A family camp beside trees and a lake. A large tent has sleeping bags inside. There are no skis, fishing rods or museum buildings. The heading says LAST HOLIDAY.",
+        "imageWidth": 360,
+        "imageHeight": 430
+    },
+    {
+        "id": "e6-2-t7-02",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "What does the instruction 'Do not pick flowers' tell visitors to do?",
+        "options": [
+            "Take the flowers home.",
+            "Cut the flowers for a friend.",
+            "Pull the flowers out of the ground.",
+            "Leave the flowers where they grow."
+        ],
+        "correct": 3,
+        "explanation": "Do not pick flowers, çiçekleri koparmayın demektir. Çiçekleri yetiştikleri yerde bırakmak bu yönergeye uyar. Diğer üç seçenek çiçekleri koparmayı, kesmeyi veya sökmeyi gerektirir."
+    },
+    {
+        "id": "e6-2-t7-03",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Ella read 'The Red Kite' last week. Yesterday, she read a DIFFERENT book by the same writer. Look at the covers. Which book did she read yesterday?",
+        "options": [
+            "The Lost Key.",
+            "The Red Boat.",
+            "Moon Camp.",
+            "The Red Kite."
+        ],
+        "correct": 0,
+        "explanation": "The Red Kite'ın yazarı Alice Stone'dur. Diğer kapaklar arasında aynı yazarın adı yalnız The Lost Key'de bulunur. The Red Boat benzer başlığa sahip olsa da yazarı Ben Reed'dir. The Red Kite ise farklı bir kitap olmadığı için seçilemez. Önce yazarı, sonra o yazarın başka kitabını eşleştirmek gerekir.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-7/soru-03.svg",
+        "imageAlt": "Four book covers show their titles and writers: THE RED KITE by Alice Stone; THE LOST KEY by Alice Stone; THE RED BOAT by Ben Reed; MOON CAMP by Zoe Hill.",
+        "imageWidth": 360,
+        "imageHeight": 825
+    },
+    {
+        "id": "e6-2-t7-04",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Both workers use scissors. Look at what they cut. Which sentence gives their jobs?",
+        "options": [
+            "Person A is a hairdresser; Person B is a tailor.",
+            "Both people are tailors.",
+            "Person A is a tailor; Person B is a hairdresser.",
+            "Both people are hairdressers."
+        ],
+        "correct": 2,
+        "explanation": "A kumaş kesmektedir; dikiş makinesi ve elbise kalıbı da terzilik bağlamını gösterir. B ise müşterinin saçını kesmektedir; bu kişi hairdresser, yani kuafördür. İkisinin de makas kullanması aynı mesleği yaptıkları anlamına gelmez; makasla neyi kestikleri ayırt edicidir.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-7/soru-04.svg",
+        "imageAlt": "Two work scenes. PERSON A cuts fabric with scissors beside a sewing machine and a dress form. PERSON B uses scissors to cut a seated customer's hair in front of a salon mirror. No job names are written.",
+        "imageWidth": 360,
+        "imageHeight": 765
+    },
+    {
+        "id": "e6-2-t7-05",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "The class rule says: 'Every student can vote, including students who help to count the votes.' Read the pupils' words. Who are the candidates, and can Leo vote?",
+        "options": [
+            "Mira and Leo are candidates; Leo can vote.",
+            "Mira and Nora are candidates; Leo can vote.",
+            "Mira and Nora are candidates; Leo cannot vote.",
+            "Only Nora is a candidate; Leo cannot vote."
+        ],
+        "correct": 1,
+        "explanation": "Mira kendisinin başkan seçilmesini ister; Nora da başkan olmak istediğini söyler. Bu nedenle adaylar Mira ve Nora'dır. Leo başkan olmak istemez, oy sayımına yardım eder. Verilen sınıf kuralı, oyları saymaya yardım edenler dâhil her öğrenciye oy hakkı tanır. Aday olmamak veya sayımda görev almak Leo'nun oy hakkını kaldırmaz.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-7/soru-05.svg",
+        "imageAlt": "Three pupils' speech cards. MIRA: Please choose me as class president. LEO: I do not want to be president. I will count votes. NORA: I want to be class president, too.",
+        "imageWidth": 360,
+        "imageHeight": 778
+    },
+    {
+        "id": "e6-2-t7-06",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "The eco-club wants fresh air in both rooms. Follow the instruction: 'Turn the heater off BEFORE opening a window. Keep the heater off while the window is open.' Look at the rooms now. Which plan gives both rooms fresh air AND follows the instruction?",
+        "options": [
+            "Open A's window, then turn A's heater off; leave B as it is.",
+            "Leave A as it is; turn B's heater on.",
+            "Turn A's heater off but keep its window closed; leave B as it is.",
+            "Turn A's heater off, then open its window; leave B as it is."
+        ],
+        "correct": 3,
+        "explanation": "A'da pencere kapalı, ısıtıcı açıktır. Temiz hava için pencere açılacaktır; fakat yönergeye göre önce ısıtıcı kapatılmalıdır. B'de pencere zaten açık ve ısıtıcı kapalıdır; değişiklik gerekmez. D işlem sırasını, iki odanın farklı başlangıç durumunu ve her ikisine temiz hava sağlama amacını birlikte korur.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-7/soru-06.svg",
+        "imageAlt": "ROOM A: the window is CLOSED and the heater is ON. ROOM B: the window is OPEN and the heater is OFF. A's radiator has warm rays; B's radiator is grey with no warm rays. B's window panel is visibly swung open.",
+        "imageWidth": 360,
+        "imageHeight": 677
+    },
+    {
+        "id": "e6-2-t7-07",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Read Lara's holiday message.\n'I bought a postcard with a picture of Blue Lake. I wrote about my walk in Green Forest. I gave the card to my cousin. The next day, I travelled home. My cousin visited Blue Lake and sent my card from there. On the card, I wrote only about that walk.'\nThe card has the stamp 'SENT FROM BLUE LAKE'.\n\nWhich statement is supported?",
+        "options": [
+            "Lara walked in Green Forest; we cannot tell whether she visited Blue Lake.",
+            "Lara walked in Green Forest and certainly visited Blue Lake with her cousin.",
+            "Lara never visited Blue Lake because she did not write about it.",
+            "Lara's cousin wrote the forest message because the cousin sent the card."
+        ],
+        "correct": 0,
+        "explanation": "Ormanda yürüdüğünü yazan kişi Lara'dır. Kartın üzerindeki göl resmi satın alınan kartın konusudur; göle gitme kanıtı değildir. Gönderim damgası da kartı gölden gönderen kuzenin bulunduğu yeri gösterir. Lara'nın başka etkinlik yazmaması, bunları hiç yapmadığı anlamına gelmez. Bu yüzden ne göle kesin gittiği ne de hiç gitmediği çıkarılabilir. Yazar, gönderen, kart resmi ve gerçekten anlatılan etkinlik birbirinden ayrılmalıdır."
+    },
+    {
+        "id": "e6-2-t7-08",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "The arrows go from the WORKER to the CUSTOMER. The pictures show the work done as each worker's regular job. Find the person who received a haircut and later repaired something FOR THE HAIRDRESSER. Which note gives this person's job and the date of that repair?",
+        "options": [
+            "A mechanic; 15 May.",
+            "A carpenter; 9 May.",
+            "A carpenter; 12 May.",
+            "A hairdresser; 10 May."
+        ],
+        "correct": 2,
+        "explanation": "9 ve 10 Mayıs'ta saç kesen kişi Jo'dur; oklar Jo'dan müşteriler Mira ve Ravi'ye gider. İkisi de saç kestirmiştir. Daha sonraki kayıtlarda Mira, Jo'nun ahşap sandalyesini 12 Mayıs'ta onarır; bu iş carpenter, yani marangozluk işidir. Ravi ise 15 Mayıs'ta Mira'nın arabasını onarır; kuaföre değil, Mira'ya hizmet verir. İstenen kişi Mira, mesleği marangoz ve onarım tarihi 12 Mayıs'tır. 9 Mayıs Mira'nın çalıştığı değil, müşteri olduğu tarihtir.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-7/soru-08.svg",
+        "imageAlt": "Four dated service records. Arrows mean worker to customer. 9 MAY: JO to MIRA, with a haircut scene. 10 MAY: JO to RAVI, with a haircut scene. 12 MAY: MIRA to JO, with a wooden chair being repaired using carpentry tools. 15 MAY: RAVI to MIRA, with a car wheel being repaired using a spanner. No job names are written on the cards.",
+        "imageWidth": 360,
+        "imageHeight": 1140
+    },
+    {
+        "id": "e6-2-t7-09",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Ece exchanged two books each day. Here, 'exchanged' means the two books changed places. Read her notes:\n• 6 May: I exchanged the book on the table with the book in the bag.\n• 7 May: I exchanged the book in the bag with the book on the shelf.\n• 8 May: I exchanged the book on the table with the book on the chair.\nNo other book moved on these days.\n\nLook at their places at the END of 8 May. Where were BIRD and SEA at the END of 5 May?",
+        "options": [
+            "BIRD was in the bag; SEA was on the table.",
+            "BIRD was on the shelf; SEA was on the chair.",
+            "BIRD was on the chair; SEA was on the shelf.",
+            "BIRD was on the table; SEA was in the bag."
+        ],
+        "correct": 3,
+        "explanation": "Son durumdan geriye gidilir. Önce 8 Mayıs'taki masa–sandalye değişimi geri alınır: SEA masaya, MOON sandalyeye döner. Sonra 7 Mayıs'taki çanta–raf değişimi geri alınır: BIRD çantaya, TREE rafa döner. Son olarak 6 Mayıs'taki masa–çanta değişimi geri alınır: BIRD masaya, SEA çantaya döner. Böylece 5 Mayıs sonundaki konumlar D'deki gibidir. Yalnız son resme bakmak, 6 Mayıs değişimini geri almadan durmak veya değişimleri ileri sırada uygulamak doğru başlangıç durumunu vermez.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-7/soru-09.svg",
+        "imageAlt": "Final book positions at the END OF 8 MAY. MOON is on a table. SEA is on a chair. TREE is inside an open bag, with its top visible. BIRD is on a wall shelf. Each book's title is clearly shown. No earlier positions are shown.",
+        "imageWidth": 360,
+        "imageHeight": 930
+    },
+    {
+        "id": "e6-2-t7-10",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Read the class rules and the story.\n'Each pupil has one vote. A helper may write the candidate's name that a pupil says quietly. Helping does not use the helper's own vote.'\n\nFinn quietly told Amy, 'Lina.' Amy wrote his vote and folded the paper. Amy quietly told Ben, 'Omar.' Ben wrote her vote and folded that paper. Ben wrote his own vote alone and folded it. Finn put all three folded papers in the box without opening them. Nobody saw or heard any other pupil's choice except in these two quiet conversations.\n\nWhose choices did each pupil know, INCLUDING their own choice?",
+        "options": [
+            "Amy: her own and Finn's. Ben: only his own. Finn: his own and Amy's.",
+            "Amy: her own and Finn's. Ben: his own and Amy's. Finn: only his own.",
+            "Amy: only her own. Ben: his own and Amy's. Finn: his own and Ben's.",
+            "Amy: her own and Ben's. Ben: his own and Finn's. Finn: only his own."
+        ],
+        "correct": 1,
+        "explanation": "Her öğrenci kendi tercihini bilir. Amy, Finn'in Lina dediğini duyup onun oyunu yazdığı için kendi oyu ile Finn'in oyunu bilir. Ben, Amy'nin Omar dediğini duyup onun oyunu yazdığı için kendi oyu ile Amy'nin oyunu bilir. Finn diğerlerinin kapalı kâğıtlarını kutuya bırakır; onları açmaz ve diğer iki tercihi duymaz. Bu nedenle yalnız kendi tercihini bilir. Okurun Amy'nin tercihini metinden öğrenmesi, Finn'in de öğrendiği anlamına gelmez. Yardım eden, yazan ve kâğıdı kutuya atan kişiler oyların sahipleriyle aynı olmak zorunda değildir; her kişinin tek oyu korunur."
+    }
 ]
 }
 };
