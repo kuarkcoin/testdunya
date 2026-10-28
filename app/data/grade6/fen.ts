@@ -3933,6 +3933,176 @@ export const fenData: SubjectData = {
     "imageWidth": 360,
     "imageHeight": 490
   }
+],
+    test9: [
+  {
+    "id": "f6-2-t9-01",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Görselde üç bitkiden elde edilen ürünlere örnekler verilmiştir.\n\nBu örnekler biyoçeşitliliğin insanlar için hangi önemini gösterir?",
+    "options": [
+      "Bütün canlıların aynı ürünü vermesini.",
+      "İnsanların yalnız tek bir bitkiye ihtiyaç duymasını.",
+      "Doğadaki tür sayısının azaltılması gerektiğini.",
+      "Besin ve çeşitli ham maddeler sağlamasını."
+    ],
+    "correct": 3,
+    "explanation": "Buğday besin, pamuk giysi yapımında kullanılan lif, ağaç ise ahşap ürünler için ham madde sağlar. Farklı canlı türleri farklı ihtiyaçların karşılanmasına katkıda bulunur. Bu örnekler biyoçeşitliliğin bütün yararlarının bunlarla sınırlı olduğunu göstermez.",
+    "imageUrl": "/grade6/fen/term-2/test-9/soru-01.svg",
+    "imageAlt": "Üç bitki–ürün eşleşmesi: buğdaydan ekmek, pamuktan tişört, ağaçtan ahşap masa. Oklar bitkiden elde edilen ürüne yöneliyor.",
+    "imageWidth": 360,
+    "imageHeight": 560
+  },
+  {
+    "id": "f6-2-t9-02",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Bir öğrenci, pilli devredeki ampulü tamamen söndürmeden parlaklığını kademeli olarak artırıp azaltmak istiyor.\n\nDevreye hangi araç uygun biçimde bağlanmalıdır?",
+    "options": [
+      "Reosta.",
+      "Termometre.",
+      "Dereceli kap.",
+      "Büyüteç."
+    ],
+    "correct": 0,
+    "explanation": "Reosta, devreye katılan direnç telinin uzunluğunu değiştirerek direnci ve ampul parlaklığını ayarlamaya yarar. Diğer araçlar bu işi yapmaz."
+  },
+  {
+    "id": "f6-2-t9-03",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Görselde, ağzı kapalı ve ağzına kadar su dolu sert bir şişenin içindeki su donarken şişenin çatlaması modellenmiştir. Şişenin kendi sıcaklığa bağlı boyut değişimi ihmal ediliyor. Bu olay gerçek bir deney olarak yapılmıyor.\n\nSıvı sudan buza geçişte yoğunluk nasıl değişir? Aynı kütledeki örneğin hacmiyle ilgili hangi değişim çatlamayı açıklar?",
+    "options": [
+      "Yoğunluk artar; aynı kütledeki örneğin hacmi azalır.",
+      "Yoğunluk değişmez; aynı kütledeki örneğin hacmi artar.",
+      "Yoğunluk azalır; aynı kütledeki örneğin hacmi artar.",
+      "Yoğunluk azalır; aynı kütledeki örneğin hacmi azalır."
+    ],
+    "correct": 2,
+    "explanation": "Aynı kütledeki buz, sıvı sudan daha büyük hacim kaplar; buzun yoğunluğu daha küçüktür. Başlangıçta boş yer bırakılmayan sert şişede bu hacim artışı çatlamaya yol açabilir. Açıklama, su donarken yeni madde oluşmasına dayanmaz.",
+    "imageUrl": "/grade6/fen/term-2/test-9/soru-03.svg",
+    "imageAlt": "Önce sert şişe ağzına kadar sıvı suyla dolu ve sağlamdır. Donma sonrasında buz içeren şişenin yan yüzeyinde belirgin bir çatlak oluşmuştur. Şema ölçekli değildir.",
+    "imageWidth": 360,
+    "imageHeight": 530
+  },
+  {
+    "id": "f6-2-t9-04",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "İdeal modelde yeşil bir top yalnız yeşil ışığı yansıtır; diğer renkleri soğurur ve kendi ışığını üretmez.\n• I. durumda topa hiç ışık gelmez.\n• II. durumda top yalnız kırmızı ışıkla aydınlatılır.\n\nİki durumda da toptan gözümüze görünür ışık gelmemesinin nedenleri sırasıyla hangisidir?",
+    "options": [
+      "I’de gelen yeşil ışığı soğurması; II’de kırmızı ışık üretmesi.",
+      "I’de üzerine ışık gelmemesi; II’de gelen kırmızı ışığı soğurması.",
+      "I’de üzerine ışık gelmemesi; II’de gelen kırmızı ışığı yansıtması.",
+      "I’de yeşil ışık üretmesi; II’de topa hiç ışık gelmemesi."
+    ],
+    "correct": 1,
+    "explanation": "I. durumda topa ışık gelmediği ve top kendi ışığını üretmediği için gözümüze ışık ulaşmaz. II. durumda ışık vardır, ancak top verilen modelde kırmızı ışığı soğurur; yansıtabileceği yeşil ışık gelmez. İki durumda benzer görünümün nedeni aynı değildir."
+  },
+  {
+    "id": "f6-2-t9-05",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Bir depoda sıcaklık 30 °C ile 50 °C arasında değişebiliyor. Tablodaki saf maddelerden biri, bu aralıktaki HER sıcaklıkta tamamen sıvı kalacak biçimde seçilecek. Daha sonra seçilen madde 15 °C’ye soğutulacak. Basınç sabit ve tablodakiyle aynıdır; madde her sıcaklığa tamamen ulaşır.\n\nHangi madde seçilmelidir ve bu madde 15 °C’de hangi hâlde olur?",
+    "options": [
+      "K; sıvı.",
+      "L; katı.",
+      "M; katı.",
+      "L; sıvı."
+    ],
+    "correct": 1,
+    "explanation": "Tamamen sıvı olmak için sıcaklık erime noktasının üzerinde, kaynama noktasının altında olmalıdır. L için 20 < 30 ve 50 < 70 olduğundan 30–50 °C aralığının tamamı uygundur. K, 50 °C’de kaynama noktasının üstündedir; M ve N ise 30 °C’de erime noktalarının altındadır. Seçilen L, 15 °C’ye soğutulduğunda 20 °C’lik erime/donma noktasının altında kalır ve katı olur.",
+    "imageUrl": "/grade6/fen/term-2/test-9/soru-05.svg",
+    "imageAlt": "Saf maddelerin erime ve kaynama noktaları (°C): K 10 ve 40; L 20 ve 70; M 35 ve 90; N 40 ve 45. Depo sıcaklığı 30–50 °C arasındadır.",
+    "imageWidth": 360,
+    "imageHeight": 440
+  },
+  {
+    "id": "f6-2-t9-06",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Eşit kollu iki terazi dengededir. K, L ve M cisimleri içi dolu ve homojendir; iki M cismi birbirinin aynısıdır. Terazilerde çizilen cisimler dışında yük yoktur. Hacimler görselde verilmiştir; çizimlerde cisim boyutları ölçekli değildir.\n\nYoğunlukların karşılaştırılması hangisidir?",
+    "options": [
+      "K = L = M",
+      "K > L = M",
+      "L > M > K",
+      "L = M > K"
+    ],
+    "correct": 3,
+    "explanation": "İlk teraziden K ile L’nin kütleleri eşittir. L’nin hacmi K’nin yarısı olduğundan L’nin yoğunluğu K’nin iki katıdır. İkinci terazide iki M’nin toplam kütlesi K’ninkine eşittir; bir M’nin kütlesi K’nin yarısı, hacmi ise dörtte biridir. Bu nedenle M’nin yoğunluğu da K’nin iki katıdır: L = M > K.",
+    "imageUrl": "/grade6/fen/term-2/test-9/soru-06.svg",
+    "imageAlt": "Birinci eşit kollu terazide bir K ile bir L dengede. İkinci terazide bir K ile iki özdeş M dengede. Hacimler: K 20 cm³, L 10 cm³, her M 5 cm³.",
+    "imageWidth": 360,
+    "imageHeight": 620
+  },
+  {
+    "id": "f6-2-t9-07",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Bir uyarı düzeneğinde iki metal çubuğun dış uçları sabittir; serbest iç uçları aynı boşluğa doğru genleşir. Uçlar ilk kez birbirine değdiğinde uyarı lambası yanar. Tabloda çubukların serbestçe uzayabildikleri ayrı ölçümlerdeki uzamaları verilmiştir.\n\nDört tasarımın her biri 20 °C’de kurulur. Düzenek 40 °C’ye getirildiğinde lamba sönük, 60 °C’ye getirildiğinde yanıyor olmalıdır. Başlangıç boşluğu, iki uzamanın toplamına eşit veya ondan küçükse temas gerçekleşir. Diğer parçaların genleşmesi ihmal edilir.\n\nHangi çubuk çifti ve başlangıç boşluğu iki koşulu da sağlar?",
+    "options": [
+      "K ile L; 0,7 mm.",
+      "K ile K; 0,7 mm.",
+      "L ile M; 0,5 mm.",
+      "M ile M; 1,3 mm."
+    ],
+    "correct": 0,
+    "explanation": "K ve L, 40 °C’de toplam 0,1 + 0,2 = 0,3 mm uzar; 0,7 mm boşluk kapanmaz. 60 °C’de toplam uzama 0,3 + 0,5 = 0,8 mm olduğundan uçlar temas eder. İki K, 60 °C’de bile yalnız 0,6 mm uzar. L ve M, 40 °C’de 0,6 mm uzayıp 0,5 mm boşluğu erken kapatır. İki M’nin 60 °C’deki toplam 1,2 mm uzaması ise 1,3 mm boşluğu kapatmaz.",
+    "imageUrl": "/grade6/fen/term-2/test-9/soru-07.svg",
+    "imageAlt": "Dış uçları sabit iki çubuğun serbest uçları ortak boşluğa doğru ilerliyor. 20 °C’ye göre serbest uzamalar: K 40 °C’de 0,1 mm, 60 °C’de 0,3 mm; L 0,2 ve 0,5 mm; M 0,4 ve 0,6 mm.",
+    "imageWidth": 360,
+    "imageHeight": 600
+  },
+  {
+    "id": "f6-2-t9-08",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "İdeal bir renk modelinde kaynak kırmızı, yeşil ve mavi ışık verir. Işık sırasıyla K → L → M levhalarından yansır. L’ye yalnız K’den, M’ye yalnız L’den yansıyan ışık ulaşır; doğrudan kaynaktan veya başka yerden ışık gelmez.\n• K yalnız kırmızı ve yeşili yansıtır.\n• L yalnız yeşil ve maviyi yansıtır.\n• M yalnız kırmızı ve maviyi yansıtır.\nLevhalar diğer renkleri tamamen soğurur.\n\nYalnız bir levha, gelen bütün renkleri yansıtan beyaz levhayla değiştirilecek ve M konumundan yeşil ışık çıkması sağlanacaktır. Sonra yalnız kaynağın yeşil ışığı kapatılacaktır.\n\nHangi levha değiştirilmelidir ve yeşil kaynak kapatıldıktan sonra M konumundan ne çıkar?",
+    "options": [
+      "K; görünür ışık çıkmaz.",
+      "L; yeşil ışık çıkar.",
+      "M; görünür ışık çıkmaz.",
+      "M; yeşil ışık çıkar."
+    ],
+    "correct": 2,
+    "explanation": "İlk iki levhadan geçebilen ortak renk yeşildir: K kırmızı ve yeşili, L bunlardan yalnız yeşili yansıtır. M beyazla değiştirilirse kendisine gelen yeşili yansıtır. K beyaz yapılırsa L’den gelen yeşil ve maviden M yalnız maviyi; L beyaz yapılırsa K’den gelen kırmızı ve yeşilden M yalnız kırmızıyı yansıtır. Bu yüzden yalnız M değiştirilmelidir. Ardından yeşil kaynak kapatılınca K’den yalnız kırmızı gelir; L kırmızıyı soğurduğu için M’ye görünür ışık ulaşmaz."
+  },
+  {
+    "id": "f6-2-t9-09",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Görseldeki birleşik cisim, toplam altı eş hacimli K ve L parçasından yapılmıştır. Her iki türden de vardır; sayıları görünmemektedir. K ve L içi dolu, homojen katılardır. Parçaların hacimleri toplanabilir; arada kapalı hava boşluğu yoktur ve birleştiricinin kütle/hacmi ihmal edilir. Cisim önce görseldeki iki sıvıda ayrı ayrı deneniyor. Şekiller yalnız batma ve yüzmeyi gösterir; batmış hacim oranı çizimden ölçülmez.\n\nSonra başlangıçtaki L parçalarının tam yarısı çıkarılıyor; K parçalarının tümü kalıyor. Kalan cisim 3,2 g/cm³ yoğunluklu üçüncü sıvıya serbest bırakılıyor. Bütün denemelerde cisim çözünmüyor, sıvı almıyor, kabarcık taşımıyor; sıcaklık aynı.\n\nBaşlangıçta kaç K parçası vardır? Kalan cismin yoğunluğu ve üçüncü sıvıdaki durumu nedir?",
+    "options": [
+      "2 K; 3 g/cm³; yüzer.",
+      "2 K; 10/3 g/cm³; batar.",
+      "4 K; 8/3 g/cm³; yüzer.",
+      "2 K; 3 g/cm³; batar."
+    ],
+    "correct": 0,
+    "explanation": "İlk cisim 3,1 g/cm³ sıvıda battığı, 3,4 g/cm³ sıvıda kısmen yüzdüğü için yoğunluğu bu iki değerin arasındadır. Toplam hacim 6 × 5 = 30 cm³ olduğundan kütlesi 93 g’dan büyük, 102 g’dan küçüktür. Bir K 10 g, bir L 20 g’dır. Altı K 60 g olur; her K yerine L konması toplamı 10 g artırır. 93–102 g arasında mümkün olan tek toplam 100 g’dır: dört L ve iki K. L’lerin yarısı çıkarılınca iki K ve iki L kalır; kütle 60 g, hacim 20 cm³ ve yoğunluk 3 g/cm³ olur. Bu değer 3,2’den küçük olduğundan kalan cisim yüzer.",
+    "imageUrl": "/grade6/fen/term-2/test-9/soru-09.svg",
+    "imageAlt": "Her parça 5 cm³; K yoğunluğu 2, L yoğunluğu 4 g/cm³. Altı parçalı ilk cismin K/L dağılımı gizli. Bu cisim 3,1 g/cm³ sıvıda dibe batıyor; 3,4 g/cm³ sıvıda yüzeyde kısmen sıvı dışında kalıyor. Denemeler ayrı ayrı yapılmış.",
+    "imageWidth": 360,
+    "imageHeight": 680
+  },
+  {
+    "id": "f6-2-t9-10",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Bir gazın genleşmesi aşağıdaki basitleştirilmiş ölçüm modeliyle inceleniyor. Her “pay” aynı 6 mg gaz kütlesini temsil eder; gerçek bir tanecik değildir. Payların hacimleri toplanır. Dış basınç sabit, piston sürtünmesizdir; kabın genleşmesi ihmal edilir.\n\nGörseldeki işlemler sırayla yapılır. Hava yalnız belirtilen boşaltma ve ekleme adımlarında girip çıkar. Eklenen gaz da aynı model kurallarına uyar. Her adımda gaz belirtilen sıcaklığa tamamen ulaşır.\n\nBir öğrenci, “Son hacim başlangıçtaki hacimden büyük olduğuna göre gazın kütlesi de artmıştır.” diyor.\n\nBoşaltılan gazın kütlesi, son hacim ve öğrencinin iddiasının değerlendirilmesi hangi seçenekte doğrudur?",
+    "options": [
+      "12 mg; 48 cm³; iddia doğrudur.",
+      "6 mg; 54 cm³; iddia yanlıştır, son kütle daha küçüktür.",
+      "12 mg; 54 cm³; iddia yanlıştır, kütle 60 mg’dan 54 mg’a düşer.",
+      "12 mg; 54 cm³; iddia doğrudur, son kütle daha büyüktür."
+    ],
+    "correct": 2,
+    "explanation": "Başlangıçta 20 °C’de 50 ÷ 5 = 10 pay gaz bulunur. İlk 80 °C durumunda bunlar 10 × 6 = 60 cm³ yer kaplar. Gaz, 80 °C’de 48 cm³ kalana kadar boşaltılınca 48 ÷ 6 = 8 pay kalır; çıkan iki payın kütlesi 2 × 6 = 12 mg’dır. Kalan gaz 20 °C’de 8 × 5 = 40 cm³ olur. Bu sıcaklıkta 5 cm³ gaz, yani bir pay eklenince toplam dokuz pay bulunur. Son 80 °C durumunda hacim 9 × 6 = 54 cm³’tür. Isınma tek başına pay sayısını değiştirmez; boşaltma ve ekleme değiştirir. Başlangıçta 10 payın kütlesi 60 mg, sonda 9 payın kütlesi 54 mg’dır. Son hacim daha yüksek sıcaklıkta 54 cm³ ile başlangıçtaki 50 cm³’ten büyük olsa da kütle azalmıştır; öğrencinin iddiası yanlıştır.",
+    "imageUrl": "/grade6/fen/term-2/test-9/soru-10.svg",
+    "imageAlt": "Model: 6 mg’lık bir pay 20 °C’de 5 cm³, 80 °C’de 6 cm³ hacim kaplar. İşlem sırası: 20 °C’de 50 cm³ gaz; kapalıyken 80 °C’ye ısıt; 80 °C’de 48 cm³ kalana kadar gaz boşalt; kapatıp 20 °C’ye soğut; 20 °C’de ölçülmüş 5 cm³ gaz ekle ve kapat; yeniden 80 °C’ye ısıt.",
+    "imageWidth": 360,
+    "imageHeight": 820
+  }
 ]
   },
 };
