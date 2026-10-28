@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="350" viewBox="0 0 360 350" role="img">
+<title>Üç kutu ve iki açık pul</title>
+<desc>Üç kapalı kutunun her birinde n pul; kutuların dışında iki ayrı pul var.</desc>
+<rect width="360" height="350" fill="#ffffff"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="180" y="42" font-size="28" text-anchor="middle" fill="#183153" >Kutular ve açık pullar</text><rect x="34" y="85" width="82" height="95" fill="#dbeafe" stroke="#183153" stroke-width="2" rx="9"/><text x="75" y="143" font-size="34" text-anchor="middle" fill="#183153" >n</text><rect x="139" y="85" width="82" height="95" fill="#dbeafe" stroke="#183153" stroke-width="2" rx="9"/><text x="180" y="143" font-size="34" text-anchor="middle" fill="#183153" >n</text><rect x="244" y="85" width="82" height="95" fill="#dbeafe" stroke="#183153" stroke-width="2" rx="9"/><text x="285" y="143" font-size="34" text-anchor="middle" fill="#183153" >n</text><circle cx="142" cy="241" r="17" fill="#fb923c" stroke="#183153" stroke-width="2"/><circle cx="218" cy="241" r="17" fill="#fb923c" stroke="#183153" stroke-width="2"/><text x="180" y="309" font-size="28" text-anchor="middle" fill="#183153" >Her kutuda n pul</text>
+</g>
+</svg>

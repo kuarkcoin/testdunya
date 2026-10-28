@@ -3471,5 +3471,175 @@ export const matematikData: SubjectData = {
         "explanation": "Tekrar eden her dört boncukluk grupta iki mavi boncuk vardır. İlk 28 boncuk, 7 tam gruptur ve 7 × 2 = 14 mavi boncuk içerir. Kalan iki boncuk yeni grubun ilk ikisi, yani sarı ve mavidir. Bir mavi daha eklenir; toplam 14 + 1 = 15 olur."
       }
     ],
+    "test7": [
+      {
+        "id": "m6-2-t7-01",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Şekildeki üçgen kartonun alanı kaç santimetrekaredir? Kesikli çizgi, tabana ait dik yüksekliği gösterir.",
+        "options": [
+          "14",
+          "24",
+          "48",
+          "56"
+        ],
+        "correct": 1,
+        "explanation": "Üçgenin alanı, tabanı ile bu tabana ait dik yüksekliğin çarpımının yarısıdır. Alan 8 × 6 ÷ 2 = 24 cm² olur.",
+        "imageUrl": "/grade6/matematik/term-2/test-7/soru-01.svg",
+        "imageAlt": "Üçgenin yatay tabanı 8 cm. Tepe noktasından tabana çizilen kesikli dikme 6 cm; dik açı işareti bulunuyor.",
+        "imageWidth": 360,
+        "imageHeight": 360
+      },
+      {
+        "id": "m6-2-t7-02",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Görseldeki kapalı kutuların her birinde n pul vardır. Kutuların dışındaki pullar da toplam sayıya dâhildir.\n\nGörseldeki toplam pul sayısını gösteren cebirsel ifade hangisidir?",
+        "options": [
+          "3(n + 2)",
+          "n + 5",
+          "2n + 3",
+          "3n + 2"
+        ],
+        "correct": 3,
+        "explanation": "Üç kutuda n + n + n = 3n pul vardır. Dışarıdaki iki pul da eklenince toplam 3n + 2 olur. 3(n + 2) ifadesi ise her kutuya ikişer pul eklenmiş gibi sayar.",
+        "imageUrl": "/grade6/matematik/term-2/test-7/soru-02.svg",
+        "imageAlt": "Yan yana üç kapalı kutu var; her kutuda n pul bulunuyor. Kutuların altında, dışarıda duran iki ayrı turuncu pul gösteriliyor.",
+        "imageWidth": 360,
+        "imageHeight": 350
+      },
+      {
+        "id": "m6-2-t7-03",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir robot mavi kareden başlıyor. Aşağıdaki iki yönerge bir tur oluşturuyor:\n1. Bir kare sağa git.\n2. Geldiğin karedeki sayı 10’dan büyükse bir kare yukarı; değilse bir kare aşağı git.\n\nRobot bu iki yönergeyi tam iki tur uyguluyor. İkinci tura, ilk turun sonunda bulunduğu kareden başlıyor.\n\nİkinci turun sonunda robot hangi sayının bulunduğu karede durur?",
+        "options": [
+          "14",
+          "5",
+          "8",
+          "12"
+        ],
+        "correct": 0,
+        "explanation": "İlk turda 4’ten bir kare sağa gidince 12’ye ulaşır. 12, 10’dan büyük olduğundan yukarı gidip 5’te durur. İkinci tur 5’ten başlar: bir kare sağa gidince 8’e ulaşır. Bu kez 8, 10’dan büyük olmadığından aşağı gidip 14’te durur. Her turda karar, o turda sağa gidilen karedeki sayıya göre yeniden verilir.",
+        "imageUrl": "/grade6/matematik/term-2/test-7/soru-03.svg",
+        "imageAlt": "Dört sütunlu, üç satırlı sayı zemini. Üst satır soldan sağa 9, 5, 8, 16; orta satır 4, 12, 14, 6; alt satır 11, 10, 3, 15. Başlangıç, mavi gösterilen 4 yazılı karedir.",
+        "imageWidth": 360,
+        "imageHeight": 390
+      },
+      {
+        "id": "m6-2-t7-04",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "ABC üçgeninin C köşesi, görseldeki üst doğru boyunca C′ noktasına taşınıyor. A ve B sabit kalıyor.\n\nYeni ABC′ üçgeninin alanı ve önceki alana göre durumu hangi seçenekte doğru verilmiştir?",
+        "options": [
+          "24 cm²; artar.",
+          "48 cm²; değişmez.",
+          "24 cm²; değişmez.",
+          "12 cm²; azalır."
+        ],
+        "correct": 2,
+        "explanation": "Üst doğru AB’ye paralel olduğundan C ve C′ noktalarının AB’ye dik uzaklığı aynıdır: 6 cm. Taban da değişmeyip 8 cm kaldığı için iki üçgenin alanı 8 × 6 ÷ 2 = 24 cm²’dir. Tepe noktasının yana kayması, dik yükseklik sabitken alanı değiştirmez.",
+        "imageUrl": "/grade6/matematik/term-2/test-7/soru-04.svg",
+        "imageAlt": "AB tabanı 8 cm. C ve sağındaki C′ noktaları, AB’ye paralel üst doğru üzerinde. İki doğru arasındaki kesikli dikme 6 cm. ABC ile ABC′ üçgenleri birlikte çizilmiş; taban ortaktır.",
+        "imageWidth": 360,
+        "imageHeight": 460
+      },
+      {
+        "id": "m6-2-t7-05",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Dikdörtgen kâğıdın sağ üst köşesindeki turuncu üçgen, kesikli çizgi boyunca içeri katlanıyor. Kâğıt kesilmiyor. Katlanan üçgenin tamamı kâğıdın üstüne geliyor; turuncu bölgede iki kat, mavi bölgede yalnız bir kat kâğıt bulunuyor.\n\nKatlamadan sonra tek katlı mavi bölgenin alanı kaç santimetrekaredir?",
+        "options": [
+          "88",
+          "80",
+          "72",
+          "96"
+        ],
+        "correct": 1,
+        "explanation": "Başlangıçtaki alan 12 × 8 = 96 cm²’dir. Katlanan dik üçgenin alanı 4 × 4 ÷ 2 = 8 cm² olur. Katlamayla eski köşede 8 cm²’lik yer boşalır; üçgenin geldiği başka 8 cm²’lik yer ise iki kat olur. Tek katlı mavi alan bu iki bölgenin dışındadır: 96 − 8 − 8 = 80 cm². Kâğıt miktarı değişmez; sorulan tek katlı bölgenin alanıdır.",
+        "imageUrl": "/grade6/matematik/term-2/test-7/soru-05.svg",
+        "imageAlt": "Üstte 12 cm genişliğinde, 8 cm yüksekliğinde dikdörtgen kâğıt. Sağ üst köşedeki turuncu dik üçgenin iki dik kenarı 4 cm. Altta bu köşe içeri katlanmış: eski sağ üst üçgen bölgesi boş, ona bitişik içteki eş üçgen turuncu ve iki kat; geri kalan mavi bölge tek kat.",
+        "imageWidth": 360,
+        "imageHeight": 710
+      },
+      {
+        "id": "m6-2-t7-06",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Dikdörtgen bahçe PQ sınırıyla iki bölüme ayrılıyor. Sol alt köşedeki dikdörtgen havuzun tamamı sol bölümdedir. Havuz dışında başka boş alan yoktur. Sol bölümde havuz dışında kalan alan, sağ bölümün alanına eşittir.\n\nQ ile sağ alt köşe R arasındaki uzaklık kaç metredir?",
+        "options": [
+          "6",
+          "8",
+          "10",
+          "4"
+        ],
+        "correct": 3,
+        "explanation": "Bahçe 20 × 12 = 240 m², havuz 6 × 4 = 24 m²’dir. Kullanılabilir 240 − 24 = 216 m² iki eş alana ayrıldığından her biri 108 m² olur. Sol bölümün havuz dâhil alanı 108 + 24 = 132 m²’dir. P’den aşağı dikme çizildiğinde solda 6 × 12 = 72 m²’lik dikdörtgen ve bir üçgen oluşur. Üçgenin alanı 132 − 72 = 60 m²; yüksekliği 12 m olduğundan tabanı 60 × 2 ÷ 12 = 10 m’dir. Sol alt köşeden Q’ya uzaklık 6 + 10 = 16 m olur. QR = 20 − 16 = 4 m bulunur.",
+        "imageUrl": "/grade6/matematik/term-2/test-7/soru-06.svg",
+        "imageAlt": "Bahçe 20 m genişlik ve 12 m yükseklikte bir dikdörtgen. Üst kenardaki P, sol üst köşeden 6 m uzakta; PQ çizgisi alt kenardaki Q’ya iniyor. R sağ alt köşe. Sol alt köşede 6 m × 4 m boyutlarında havuz var. PQ’nun sol ve sağ bölümleri ayrı renklerle gösteriliyor.",
+        "imageWidth": 360,
+        "imageHeight": 480
+      },
+      {
+        "id": "m6-2-t7-07",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Görseldeki algoritmada N, 18’den büyük bir doğal sayıdır. Her turda yalnız bir çıkarma yapılır; küçük sayının kutusu değişmez. Algoritma tam üçüncü turun sonunda iki kutuda da 6 elde ederek duruyor.\n\nBu koşulları sağlayan bütün farklı N değerlerinin toplamı kaçtır?",
+        "options": [
+          "24",
+          "30",
+          "54",
+          "72"
+        ],
+        "correct": 2,
+        "explanation": "Sondan geriye düşünelim. (6, 6) sonucundan bir tur önce kutular (12, 6) ya da (6, 12) olabilir. İki tur önceki olası çiftler (18, 6), (12, 18), (18, 12) ve (6, 18)’dir. Başlangıçta sağ kutu 18 olduğuna göre, ilk turda değişmeyen sağ kutusu 18 olan iki durum kullanılabilir: (12, 18) ve (6, 18). Bunlar başlangıçta sırasıyla N = 30 ve N = 24 demektir. Kontrol: (30, 18) → (12, 18) → (12, 6) → (6, 6); (24, 18) → (6, 18) → (6, 12) → (6, 6). Toplam 30 + 24 = 54’tür.",
+        "imageUrl": "/grade6/matematik/term-2/test-7/soru-07.svg",
+        "imageAlt": "Başlangıçta soldaki kutuda N, sağdakinde 18 var. Kural: Sayılar eşitse dur; değilse büyük sayıdan küçük sayıyı çıkar ve yalnız büyük sayının kutusunu değiştir. Görselin altında üçüncü turun sonunda iki kutunun da 6 olduğu gösteriliyor.",
+        "imageWidth": 360,
+        "imageHeight": 700
+      },
+      {
+        "id": "m6-2-t7-08",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir resim panosunun alanı 2 m²’dir. Bu alan kaç dm²’dir?",
+        "options": [
+          "200",
+          "20",
+          "2000",
+          "20000"
+        ],
+        "correct": 0,
+        "explanation": "1 m = 10 dm olduğundan 1 m² = 10 × 10 = 100 dm²’dir. Bu nedenle 2 m² = 2 × 100 = 200 dm² olur."
+      },
+      {
+        "id": "m6-2-t7-09",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir sayı örüntüsü 40, 36, 32, … şeklinde başlıyor. Her yeni terim, önceki terimden 4 çıkarılarak bulunuyor.\n\nBu örüntünün yedinci terimi kaçtır?",
+        "options": [
+          "12",
+          "20",
+          "24",
+          "16"
+        ],
+        "correct": 3,
+        "explanation": "Birinci terimden yedinci terime altı geçiş vardır. 40 − 6 × 4 = 16 olur. Terimler sırasıyla 40, 36, 32, 28, 24, 20 ve 16’dır."
+      },
+      {
+        "id": "m6-2-t7-10",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "1’den 12’ye kadar numaralanmış kartlar, soldan sağa küçükten büyüğe diziliyor. Her turda karşılaşılan ilk kart bırakılıyor, ikinci kart çıkarılıyor; sonra yine biri bırakılıp biri çıkarılarak sıra sonuna kadar devam ediliyor.\n\nİlk tur soldan sağa, ikinci tur sağdan sola yapılıyor; yön her tur değişiyor. Her yeni turda sayma baştan başlıyor ve ilk karşılaşılan kart mutlaka bırakılıyor. Kalan kartların yerleri değiştirilmeden tek kart kalana kadar sürdürülüyor.\n\nSon kalan kartın numarası kaçtır?",
+        "options": [
+          "11",
+          "1",
+          "3",
+          "7"
+        ],
+        "correct": 0,
+        "explanation": "İlk tur soldan sağa yapılınca 1, 3, 5, 7, 9, 11 kalır. İkinci tur sağdan sola başlar: 11 bırakılır, 9 çıkarılır, 7 bırakılır, 5 çıkarılır, 3 bırakılır, 1 çıkarılır; kalanlar soldan sağa 3, 7, 11’dir. Üçüncü tur soldan sağa yapılır ve 3 ile 11 kalır. Dördüncü tur sağdan sola başladığından 11 bırakılır, 3 çıkarılır. Son kart 11’dir; her turda saymanın ve yönün yenilendiği unutulmamalıdır."
+      }
+    ],
   },
 };

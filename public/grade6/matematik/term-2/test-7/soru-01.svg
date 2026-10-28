@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="360" viewBox="0 0 360 360" role="img">
+<title>Üçgen kartonun ölçüleri</title>
+<desc>Üçgenin yatay tabanı 8 cm, kesikli dik yüksekliği 6 cm.</desc>
+<rect width="360" height="360" fill="#ffffff"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="180" y="42" font-size="28" text-anchor="middle" fill="#183153" >Üçgen karton</text><polygon points="60,260 252,260 132,116" fill="#dbeafe" stroke="#183153" stroke-width="2.5" /><line x1="132" y1="116" x2="132" y2="260" stroke="#183153" stroke-width="2.5" stroke-dasharray="7 6"/><line x1="132" y1="245" x2="147" y2="245" stroke="#183153" stroke-width="2.5" /><line x1="147" y1="245" x2="147" y2="260" stroke="#183153" stroke-width="2.5" /><text x="166" y="205" font-size="28" text-anchor="middle" fill="#183153" >6 cm</text><line x1="60" y1="288" x2="252" y2="288" stroke="#183153" stroke-width="2.5" /><line x1="60" y1="280" x2="60" y2="296" stroke="#183153" stroke-width="2.5" /><line x1="252" y1="280" x2="252" y2="296" stroke="#183153" stroke-width="2.5" /><text x="156" y="329" font-size="28" text-anchor="middle" fill="#183153" >8 cm</text>
+</g>
+</svg>
