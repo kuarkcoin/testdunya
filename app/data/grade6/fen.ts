@@ -3593,6 +3593,176 @@ export const fenData: SubjectData = {
     "correct": 2,
     "explanation": "On payın tamamı sıvı olsaydı toplam hacim 10 × 9 = 90 cm³ olurdu. Bir pay sıvı yerine buz olduğunda hacim 10 − 9 = 1 cm³ artar. Başlangıç hacmi 96 cm³ olduğuna göre 96 − 90 = 6 pay buzdur: 6 × 9 = 54 g buz vardır. Eriyen 18 g, iki paydır. Her pay erirken hacim 1 cm³ azaldığından toplam hacim 96 − 2 = 94 cm³ olur. Kütle korunur; buzun suya dönüşmesi bu modelde hacmi azaltır."
   }
+],
+    test7: [
+  {
+    "id": "f6-2-t7-01",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Sahne kostümü görselde beyaz ışık altında gösterilmiştir. Kostüm kendi ışığını üretmiyor.\n\nKostümün görülen rengi, hangi renkteki ışığı gözümüze yansıtmasıyla açıklanır?",
+    "options": [
+      "Kırmızı",
+      "Yeşil",
+      "Mavi",
+      "Sarı"
+    ],
+    "correct": 2,
+    "explanation": "Beyaz ışık altında mavi görülen kostüm, mavi ışığı gözümüze yansıtır. Kostüm kendi ışığını üretmez; üzerine gelen ışığın bazı renklerini soğurur, mavi rengi yansıtır.",
+    "imageUrl": "/grade6/fen/term-2/test-7/soru-01.svg",
+    "imageAlt": "Beyaz ışıkla aydınlatılan bir sahne kostümü mavi renkte görünüyor. Kostümün rengi görselde gösteriliyor.",
+    "imageWidth": 360,
+    "imageHeight": 380
+  },
+  {
+    "id": "f6-2-t7-02",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Doğada yaşayan bazı bitkiler, ilaç yapımında kullanılan maddeler için kaynak oluşturur.\n\nBu durum biyoçeşitliliğin hangi önemine örnektir?",
+    "options": [
+      "İnsanların yararlanabileceği doğal kaynaklar sunmasına.",
+      "Bütün canlıların aynı ortamda yaşamasını sağlamasına.",
+      "Her bitkinin bütün hastalıkları iyileştirmesine.",
+      "Doğadaki tür sayısını azaltmasına."
+    ],
+    "correct": 0,
+    "explanation": "Farklı canlı türleri, ilaç yapımında araştırılan veya kullanılan maddeler gibi doğal kaynaklar sunabilir. Bu, biyoçeşitliliğin insan yaşamı açısından önemine örnektir. Her bitkinin bütün hastalıkları iyileştirdiği ya da tüm canlıların aynı ortamda yaşayabildiği anlamına gelmez."
+  },
+  {
+    "id": "f6-2-t7-03",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Aynı metal telin soğuk ve sıcak havadaki görünümü şekilde verilmiştir. Direkler arasındaki uzaklık değişmiyor; tel kopmuyor ve kalıcı biçim değişimine uğramıyor.\n\nSıcak havadaki farkı açıklayan olay hangisidir?",
+    "options": [
+      "Telin eriyerek sıvılaşması.",
+      "Tele dışarıdan metal eklenmesi.",
+      "Isınan telin büzülerek kısalması.",
+      "Isınan telin genleşerek uzaması."
+    ],
+    "correct": 3,
+    "explanation": "Sıcaklığı artan metal tel genleşir ve boyu uzar. Direklerin arası aynı kaldığı için daha uzun tel daha fazla sarkar. Genleşme, tele madde eklenmesi veya telin erimesi değildir.",
+    "imageUrl": "/grade6/fen/term-2/test-7/soru-03.svg",
+    "imageAlt": "Aynı uzaklıktaki iki direk arasında soğuk havada az sarkan, sıcak havada daha çok sarkan aynı tel gösteriliyor.",
+    "imageWidth": 360,
+    "imageHeight": 460
+  },
+  {
+    "id": "f6-2-t7-04",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Saf X maddesinin gazı, sabit basınçta soğutulurken görseldeki sıcaklıkta sıvıya dönüşüyor. Gaz ve sıvı birlikte bulunduğu sürece bu sıcaklık değişmiyor. Aynı saf maddenin aynı basınçtaki yoğuşma ve kaynama sıcaklıkları birbirine eşittir.\n\nX sıvısından iki katı miktar alınıp aynı basınçta ısıtılırsa kaynama noktası kaç °C olur?",
+    "options": [
+      "38",
+      "76",
+      "100",
+      "152"
+    ],
+    "correct": 1,
+    "explanation": "Görselde X’in yoğuşma sıcaklığı 76 °C’dir. Verilen bilgiye göre aynı basınçta kaynama sıcaklığı da 76 °C olur. Saf maddenin miktarını iki katına çıkarmak kaynama noktasını iki katına çıkarmaz.",
+    "imageUrl": "/grade6/fen/term-2/test-7/soru-04.svg",
+    "imageAlt": "Saf X gazı soğutulurken 76 °C’de sıvıya dönüşüyor; kapta gaz ve sıvı birlikte bulunuyor. Termometre 76 °C gösteriyor.",
+    "imageWidth": 360,
+    "imageHeight": 410
+  },
+  {
+    "id": "f6-2-t7-05",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Tablodaki üç örnek, aynı sıcaklıkta aynı homojen ve içi dolu maddeden alınmıştır. Hacimler doğru ölçülmüştür; kütle kayıtlarından yalnız biri yanlış yazılmıştır.\n\nHangi örneğin kütle kaydı düzeltilmeli ve doğru değer ne olmalıdır?",
+    "options": [
+      "P; 30 g.",
+      "R; 72 g.",
+      "S; 75 g.",
+      "S; 90 g."
+    ],
+    "correct": 2,
+    "explanation": "P için 36 ÷ 12 = 3 g/cm³, R için 60 ÷ 20 = 3 g/cm³ bulunur. Aynı madde ve sıcaklıkta yoğunluk aynı olmalıdır. S’nin yazılan değeri 90 ÷ 25 = 3,6 g/cm³ verdiği için yanlış kayıt S’dedir. S’nin doğru kütlesi 25 × 3 = 75 g’dır.",
+    "imageUrl": "/grade6/fen/term-2/test-7/soru-05.svg",
+    "imageAlt": "Ölçüm tablosu: P örneği 12 cm³ ve 36 g; R örneği 20 cm³ ve 60 g; S örneği 25 cm³ ve 90 g. Hacimler güvenilir; üç kütle kaydından biri yanlış.",
+    "imageWidth": 360,
+    "imageHeight": 400
+  },
+  {
+    "id": "f6-2-t7-06",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "18 g kütleli bir mum parçası, içinde 50 cm³ su bulunan dereceli kaba bırakılıyor. Mum kısmen su dışında kalarak yüzüyor ve seviye 68 cm³ oluyor. Öğrenci, “Hacim 18 cm³, yoğunluk 1 g/cm³.” diyor.\n\nMum, hacmi ihmal edilen ince bir çubukla tamamen suya batırıldığında seviye 70 cm³ oluyor. Su eklenmiyor; taşma, çözünme ve hava kabarcığı yok.\n\nÖğrencinin hatası ve mumun doğru yoğunluğu hangisidir?",
+    "options": [
+      "İlk ölçümde yalnız su içinde kalan bölümün hacmini kullanmıştır; doğru yoğunluk 0,9 g/cm³’tür.",
+      "İlk ölçümde mumun bütün hacmini kullanmıştır; doğru yoğunluk 1 g/cm³’tür.",
+      "İkinci okumada 70 cm³’ün tamamı mumun hacmidir; doğru yoğunluk 18/70 g/cm³’tür.",
+      "Mumun kütlesi tamamen batırılınca artmıştır; doğru yoğunluk 1,1 g/cm³’tür."
+    ],
+    "correct": 0,
+    "explanation": "Yüzen mumun bir bölümü su dışındadır; 68 − 50 = 18 cm³ yalnız su içinde kalan bölümün hacmidir. Tamamen batırılınca bütün mumun hacmi 70 − 50 = 20 cm³ olarak bulunur. Yoğunluk 18 ÷ 20 = 0,9 g/cm³’tür. Parçayı suya bastırmak, belirtilen koşullarda onun kütlesini artırmaz."
+  },
+  {
+    "id": "f6-2-t7-07",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Bir koruma modelinde K, L ve M türlerinin her biri için hem bir üreme alanının hem de bir beslenme alanının korunması gerekiyor. Görselde mevcut koruma ve üç onarım seçeneği verilmiştir. Türler bu alanlar arasında güvenle geçebiliyor; başka uygun alan yok.\n\nI numaralı onarım yapılırsa M’nin mevcut beslenme alanı kullanılamaz hâle geliyor. Diğer onarımlar mevcut alanlara zarar vermiyor.\n\nBütçe en fazla iki onarıma yeterlidir. Üç türün de iki ihtiyacını karşılamak için hangileri seçilmelidir?",
+    "options": [
+      "I ve III.",
+      "II ve III.",
+      "Yalnız III.",
+      "I ve II."
+    ],
+    "correct": 3,
+    "explanation": "Başlangıçta K ve L’nin üreme, M’nin beslenme alanı korunmaktadır. K’nin beslenmesi, L’nin beslenmesi ve M’nin üremesi eksiktir. M’nin üreme alanını yalnız I sağlayabildiğinden I gereklidir. Ancak I, M’nin mevcut beslenme alanını kullanılmaz yapar. II hem L’nin beslenme ihtiyacını hem M’nin kaybettiği beslenme alanını karşılar; böylece I ve II birlikte bütün ihtiyaçları tamamlar. I ile III seçilirse M’nin beslenme alanı eksik kalır. II ile III seçilirse M’nin üreme alanı yoktur. Bu sonuç yalnız verilen modelin ihtiyaçları içindir; bütün gerçek yaşam tehditlerinin ortadan kalktığını göstermez.",
+    "imageUrl": "/grade6/fen/term-2/test-7/soru-07.svg",
+    "imageAlt": "Mevcut koruma: K üreme, L üreme, M beslenme. Onarım I: K beslenme ve M üreme; mevcut M beslenme alanı kaybolur. Onarım II: L beslenme ve M beslenme. Onarım III: K beslenme ve L beslenme.",
+    "imageWidth": 360,
+    "imageHeight": 720
+  },
+  {
+    "id": "f6-2-t7-08",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "K ve L telleri aynı ampulle karşılaştırılıyor. Tellerin uzunluğu, kalınlığı ve sıcaklığı değişmiyor; bütün temaslar sağlam. Her seri yeni ve özdeş bir pille başlıyor, teller aynı süre deneniyor:\n• 1. seri: önce K ile parlak, sonra L ile sönük ışık görülüyor.\n• 2. seri: önce L ile parlak, sonra K ile sönük ışık görülüyor.\nHer serinin başında ve sonunda aynı kontrol teli de deneniyor: başta parlak, sonda sönük ışık veriyor. Serinin sonunda yalnız pil yenilenince kontrol telinin ilk parlaklığı geri geliyor.\n\nBu kayıtlar birlikte değerlendirildiğinde hangi sonuç ve sonraki işlem uygundur?",
+    "options": [
+      "İlk seri K’nin direncinin küçük olduğunu kanıtlar; ikinci seri dikkate alınmamalıdır.",
+      "Pil koşulları denemeler boyunca sabit kalmamıştır; K ve L, pil etkisi sabit tutularak yeniden karşılaştırılmalıdır.",
+      "İki tel de bir kez parlak yaktığı için dirençlerinin kesinlikle eşit olduğu anlaşılır; yeni deneme gerekmez.",
+      "Kontrol telinin kalınlığı kendiliğinden değişmiştir; yalnız kontrol telini uzatmak sorunu çözer."
+    ],
+    "correct": 1,
+    "explanation": "Sıra ters çevrildiğinde yine ikinci denenen tel daha sönük yakmaktadır. Üstelik özellikleri değişmeyen kontrol teli de serinin sonunda sönükleşir; yalnız pil yenilenince ilk parlaklığına döner. Bu, pil koşullarının sabit tutulmadığını gösterir. K ile L arasındaki farkı yalnız tellerin direncine bağlamak veya dirençlerini eşit ilan etmek uygun değildir. Pilin etkisi sabit tutularak, aynı ampul ve sağlam temaslarla karşılaştırma tekrarlanmalıdır."
+  },
+  {
+    "id": "f6-2-t7-09",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Eşit aralıklı fakat hacim sayıları silinmiş bir ölçü kabı kullanılıyor. Görseldeki ilk deneyde kaba 12 g su ekleniyor. Suyun yoğunluğu 1 g/cm³’tür.\n\nİkinci deney aynı kapta ayrı olarak yapılıyor: kütlesi 48 g olan içi dolu katı tamamen suya batırılıyor. Katı su almıyor, çözünmüyor ve hava kabarcığı taşımıyor; taşma veya su kaybı yok.\n\nKatının yoğunluğu kaç g/cm³’tür? Değişime uğramadığı 1,8 g/cm³ yoğunluklu başka bir sıvıda serbest bırakılırsa ne olur?",
+    "options": [
+      "2 g/cm³; batar.",
+      "8 g/cm³; batar.",
+      "2 g/cm³; yüzer.",
+      "4 g/cm³; batar."
+    ],
+    "correct": 0,
+    "explanation": "İlk deneyde eklenen 12 g suyun hacmi 12 cm³’tür. Seviye 2. çizgiden 5. çizgiye, yani 3 eşit aralık yükselmiştir; bir aralık 12 ÷ 3 = 4 cm³’tür. İkinci deneyde seviye 3. çizgiden 9. çizgiye, yani 6 aralık yükselir. Katının hacmi 6 × 4 = 24 cm³, yoğunluğu 48 ÷ 24 = 2 g/cm³’tür. Bu değer 1,8 g/cm³’ten büyük olduğundan katı diğer sıvıda batar. Çizgi numaraları doğrudan cm³ değildir.",
+    "imageUrl": "/grade6/fen/term-2/test-7/soru-09.svg",
+    "imageAlt": "Aynı eşit bölmeli ölçü kabıyla iki deney: I’de 12 g su eklenince seviye 2. çizgiden 5. çizgiye çıkar. II’de 48 g katı tamamen batırılınca seviye 3. çizgiden 9. çizgiye çıkar. Şekilde bütün çizgiler eşit aralıklı; numaralar hacim birimi değildir.",
+    "imageWidth": 360,
+    "imageHeight": 700
+  },
+  {
+    "id": "f6-2-t7-10",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "X, Y, Z ve T örnekleri, tabloda verilen saf K, L, M ve N maddelerinden birer tanesidir. Her madde yalnız bir örnekte bulunur. Bütün bilgiler aynı sabit basınç için geçerlidir; örnekler belirtilen sıcaklığa tamamen ulaşmıştır.\n\nGözlemler:\n• X, 40 °C’de sıvıdır.\n• Y, 80 °C’de gazdır.\n• Z, 65 °C’de sıvıdır.\n• T, 100 °C’de sıvıdır.\n\nX örneği 100 °C’ye, T örneği 60 °C’ye ulaştırıldığında sırasıyla hangi hâllerde olurlar?",
+    "options": [
+      "Sıvı; katı.",
+      "Gaz; sıvı.",
+      "Gaz; katı.",
+      "Sıvı; sıvı."
+    ],
+    "correct": 2,
+    "explanation": "80 °C’de yalnız K kendi kaynama noktasının üstündedir; Y = K’dir. 40 °C’de sıvı olabilenler K ve L’dir. K zaten kullanıldığı için X = L olur. 65 °C’de sıvı olabilenler L ve M’dir. L de kullanıldığı için Z = M olur. Geriye T = N kalır; T’nin 100 °C’de sıvı olması bununla uyumludur. X yani L, 100 °C’de 90 °C’lik kaynama noktasının üstünde olduğundan gazdır. T yani N, 60 °C’de 70 °C’lik erime noktasının altında olduğundan katıdır. Dört gözlem, her maddenin yalnız bir kez kullanıldığı koşulla birlikte değerlendirilmelidir.",
+    "imageUrl": "/grade6/fen/term-2/test-7/soru-10.svg",
+    "imageAlt": "Aynı basınçta saf maddelerin erime ve kaynama noktaları: K için 10 ve 60 °C; L için 30 ve 90 °C; M için 50 ve 120 °C; N için 70 ve 150 °C.",
+    "imageWidth": 360,
+    "imageHeight": 500
+  }
 ]
   },
 };
