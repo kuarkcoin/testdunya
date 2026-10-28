@@ -1,509 +1,288 @@
 'use client';
 
-import React, { useEffect, useMemo, useState, useRef } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
-import ReactConfetti from 'react-confetti';
+import { categories, practiceQuestions, questions, type VisualQuestion } from '../data/questions';
+import VisualFigure from './VisualFigure';
+import {
+  STORAGE_KEY, answerAttempt, createAttempt, finishAttempt, navigateAttempt,
+  remainingSeconds, restoreAttempt, summarizeAttempt, tickAttempt, type Attempt,
+} from './attempt';
 
-import SvgRenderer, { SvgData } from '../components/SvgRenderer';
-import { questions } from '../data/questions';
+const buttonBase = 'inline-flex min-h-12 items-center justify-center rounded-xl border px-4 py-3 text-sm font-semibold transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-300 disabled:cursor-not-allowed disabled:opacity-40';
+const button = `${buttonBase} border-slate-600 hover:bg-slate-800`;
+const primary = `${buttonBase} border-cyan-300 bg-cyan-300 text-slate-950 hover:bg-cyan-200`;
+const letters = ['A', 'B', 'C', 'D'];
 
-// -------------------- TİP TANIMLAMALARI --------------------
-
-type Domain = 'logic' | 'math' | 'visual' | 'attention';
-
-type IQQuestion =
-  | {
-      id: string;
-      domain: Domain;
-      type: 'sequence' | 'analogy' | 'word-problem' | 'odd-one-out-text' | 'counting' | 'logic-puzzle';
-      prompt: string;
-      optionsText: string[];
-      correct: number;
-    }
-  | {
-      id: string;
-      domain: Domain;
-      type: 'grid-missing';
-      prompt: string;
-      grid: string[];
-      options: string[][];
-      correct: number;
-    }
-  | {
-      id: string;
-      domain: Domain;
-      type: 'grid-odd-one-out';
-      prompt: string;
-      options: string[][];
-      correct: number;
-    }
-  | {
-      id: string;
-      domain: Domain;
-      type: 'visual-matrix' | 'visual-matrix-2x2' | 'visual-matrix-3x3';
-      prompt: string;
-      questionSvg: SvgData;
-      options: { svg: SvgData }[];
-      correct: number;
-    };
-
-type AnswerState = {
-  selected: number | null;
-  correct: boolean | null;
-};
-
-// -------------------- YARDIMCI FONKSİYONLAR --------------------
-
-function clamp(n: number, a: number, b: number) {
-  return Math.max(a, Math.min(b, n));
+function formatTime(seconds: number) {
+  return `${Math.floor(seconds / 60).toString().padStart(2, '0')}:${(seconds % 60).toString().padStart(2, '0')}`;
 }
 
-function useWindowSize() {
-  const [size, setSize] = useState({ width: 0, height: 0 });
+function Disclaimer() {
+  return <p className="text-sm leading-6 text-slate-300">Bu, standardize edilmemiş bir görsel akıl yürütme alıştırmasıdır. IQ, yüzdelik dilim veya tanı vermez; genel zekâyı ölçtüğü iddia edilmez. Klinik değerlendirme, işe alım veya personel seçimi için kullanılamaz.</p>;
+}
 
-  useEffect(() => {
-    const onResize = () => setSize({ width: window.innerWidth, height: window.innerHeight });
-    onResize();
-    window.addEventListener('resize', onResize);
-    return () => window.removeEventListener('resize', onResize);
+function QuestionFigure({ question, large = false }: { question: VisualQuestion; large?: boolean }) {
+  return <div className="overflow-x-auto rounded-2xl border border-slate-600 bg-slate-900 p-2 sm:p-5" tabIndex={large ? 0 : undefined} aria-label={large ? 'Büyütülmüş görsel; gerekirse yatay kaydırın' : undefined}>
+    <div className={large ? 'mx-auto w-[760px] text-slate-100' : 'mx-auto w-full max-w-xl text-slate-100'}>
+      <VisualFigure figure={question.figure} />
+    </div>
+  </div>;
+}
+
+function Options({ question, order, selected, onSelect, name, disabled = false }: {
+  question: VisualQuestion; order: number[]; selected: number | null;
+  onSelect: (originalIndex: number) => void; name: string; disabled?: boolean;
+}) {
+  return <fieldset disabled={disabled} className="mt-5">
+    <legend className="mb-3 text-sm font-semibold text-slate-300">Bir seçenek işaretleyin. Tab ile seçeneklere, ok tuşlarıyla diğer seçeneğe geçebilirsiniz.</legend>
+    <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+      {order.map((originalIndex, displayIndex) => <label key={originalIndex} className="relative cursor-pointer">
+        <input type="radio" name={name} value={originalIndex} checked={selected === originalIndex}
+          onChange={() => onSelect(originalIndex)} className="peer sr-only" aria-label={`${letters[displayIndex]} seçeneği: ${question.options[originalIndex].label}`} />
+        <span className="flex h-full flex-col rounded-xl border-2 border-slate-600 bg-slate-900 p-2 text-slate-100 transition peer-checked:border-cyan-300 peer-checked:bg-cyan-950 peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-4 peer-focus-visible:outline-cyan-300 hover:border-slate-300">
+          <span className="flex items-center justify-between px-1 text-sm font-bold"><span>{letters[displayIndex]}</span><span aria-hidden="true">{selected === originalIndex ? '✓' : '○'}</span></span>
+          <span className="block aspect-square w-full" aria-hidden="true"><VisualFigure figure={question.options[originalIndex].figure} /></span>
+        </span>
+      </label>)}
+    </div>
+  </fieldset>;
+}
+
+function Practice() {
+  const [index, setIndex] = useState(0);
+  const [answers, setAnswers] = useState<(number | null)[]>(practiceQuestions.map(() => null));
+  const q = practiceQuestions[index];
+  const selected = answers[index];
+  return <section aria-labelledby="practice-title" className="mt-8 rounded-2xl border border-slate-700 bg-slate-900/50 p-4 sm:p-6">
+    <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
+      <h2 id="practice-title" className="text-xl font-bold">Örnek {index + 1} / {practiceQuestions.length} <span className="text-sm font-normal text-cyan-200">• Puansız, süresiz</span></h2>
+      <div className="flex gap-2">{practiceQuestions.map((p, i) => <button type="button" key={p.id} onClick={() => setIndex(i)} aria-pressed={i === index} className={`${buttonBase} hover:bg-slate-800 ${i === index ? 'border-cyan-300' : 'border-slate-600'}`}>Örnek {i + 1}</button>)}</div>
+    </div>
+    <p className="mb-4 text-lg">{q.prompt}</p>
+    <QuestionFigure question={q} />
+    <Options question={q} order={[0, 1, 2, 3]} selected={selected} name={q.id} onSelect={choice => setAnswers(prev => prev.map((answer, i) => i === index ? choice : answer))} />
+    <div aria-live="polite" className="mt-4 text-sm leading-6 text-slate-200">
+      {selected === null ? 'Bir seçenek seçtiğinizde örneğin açıklaması burada görünecek.' : <><strong>{selected === q.correct ? 'Doğru.' : `Bu örnekte doğru seçenek ${letters[q.correct]}.`}</strong> {q.explanation}</>}
+    </div>
+  </section>;
+}
+
+function Results({ attempt, onRestart }: { attempt: Attempt; onRestart: () => void }) {
+  const score = summarizeAttempt(questions, attempt);
+  return <>
+    <section className="rounded-3xl border border-slate-700 bg-slate-900/70 p-5 sm:p-8" aria-labelledby="result-title">
+      <p className="mb-3 text-sm font-bold uppercase tracking-widest text-cyan-200">Bu denemenin özeti</p>
+      <h2 id="result-title" className="text-xl font-bold">Test puanın</h2>
+      <p className="mt-3 text-5xl font-bold tracking-tight text-cyan-200">{score.testScore}<span className="ml-2 text-2xl text-slate-400">/ 100</span></p>
+      <p className="mt-3 text-lg font-semibold">{score.correct} / {score.total} doğru</p>
+      <p className="mt-3 text-sm leading-6 text-slate-200">Bu puan IQ değildir; yalnız bu testteki doğru yanıt oranını gösterir.</p>
+      <p className="mt-3 leading-7 text-slate-300">{attempt.endReason === 'expired' ? '30 dakikalık süre doldu; yanıtlarınız otomatik olarak sonlandırıldı.' : attempt.endReason === 'clock-changed' ? 'Cihaz saatinde geriye doğru değişiklik algılandı; süreyi uzatmamak için deneme sonlandırıldı.' : 'Denemeyi bitirdiniz.'}</p>
+      <dl className="my-6 grid grid-cols-3 gap-2 rounded-2xl border border-slate-700 bg-slate-950 p-4 text-center">
+        <div><dt className="text-sm text-slate-400">Yanlış</dt><dd className="mt-1 text-2xl font-bold">{score.wrong}</dd></div>
+        <div><dt className="text-sm text-slate-400">Boş</dt><dd className="mt-1 text-2xl font-bold">{score.unanswered}</dd></div>
+        <div><dt className="text-sm text-slate-400">Geçen süre</dt><dd className="mt-1 text-2xl font-bold tabular-nums">{formatTime(score.elapsedSeconds)}</dd></div>
+      </dl>
+      <p className="mb-4 text-sm leading-6 text-slate-300">Puan = doğru sayısı / {score.total} × 100, en yakın tam sayıya yuvarlanır. Boş sorular da toplam {score.total} soruya dahildir; yanlışlar doğruları götürmez. Hız bonusu veya ağırlıklı puan yoktur. Bu sonuç yalnızca bu sorulardaki performansınızı gösterir; başka insanlarla kıyaslama değildir.</p>
+      <h3 className="mb-3 text-lg font-bold">Soru türlerine göre sonuçlar</h3>
+      <div className="overflow-x-auto"><table className="w-full text-left text-sm">
+        <caption className="sr-only">Her soru türünde toplam, doğru, yanlış ve boş yanıt sayısı</caption>
+        <thead><tr className="border-b border-slate-600 text-slate-400"><th scope="col" className="py-3">Tür</th><th scope="col" className="px-2">Doğru / toplam</th><th scope="col" className="px-2">Yanlış</th><th scope="col" className="pl-2">Boş</th></tr></thead>
+        <tbody>{Object.entries(score.byCategory).map(([category, counts]) => <tr key={category} className="border-b border-slate-800"><th scope="row" className="py-4 pr-3 font-medium">{categories[category as keyof typeof categories]}</th><td className="px-2">{counts.correct} / {counts.total}</td><td className="px-2">{counts.wrong}</td><td className="pl-2">{counts.unanswered}</td></tr>)}</tbody>
+      </table></div>
+      <div className="mt-6 rounded-xl border border-amber-300/30 bg-amber-950/20 p-4"><Disclaimer /></div>
+      <p className="mt-4 text-sm leading-6 text-slate-400">Aynı soruları yeniden çözmek, yanıtları hatırladığınız için sonucu etkileyebilir. Daha yüksek sonuç, zekânızın arttığını kanıtlamaz.</p>
+      <button type="button" onClick={onRestart} className={`${button} mt-6`}>Kaydı sil ve başlangıca dön</button>
+    </section>
+    <section aria-labelledby="review-title" className="mt-8">
+      <h2 id="review-title" className="mb-4 text-2xl font-bold">Yanıtlar ve açıklamalar</h2>
+      <p className="mb-5 text-sm text-slate-400">Bir soruyu açarak şekli, seçiminizi ve doğru yanıtın gerekçesini inceleyin.</p>
+      <div className="space-y-3">{questions.map((q, index) => {
+        const answer = attempt.answers[index];
+        const order = attempt.optionOrders[index];
+        return <details key={q.id} className="rounded-2xl border border-slate-700 bg-slate-900/50 p-4">
+          <summary className="cursor-pointer rounded py-2 font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-300">Soru {index + 1} · {categories[q.category]} · {answer === null ? 'Boş' : answer === q.correct ? 'Doğru' : 'Yanlış'}</summary>
+          <p className="my-4">{q.prompt}</p><QuestionFigure question={q} />
+          <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">{order.map((originalIndex, displayIndex) => <div key={originalIndex} className={`rounded-xl border p-2 ${originalIndex === q.correct ? 'border-cyan-300 bg-cyan-950/50' : 'border-slate-700'}`}>
+            <p className="text-sm font-bold">{letters[displayIndex]}{originalIndex === q.correct ? ' · Doğru' : ''}{originalIndex === answer ? ' · Seçiminiz' : ''}</p>
+            <VisualFigure figure={q.options[originalIndex].figure} label={q.options[originalIndex].label} />
+          </div>)}</div>
+          <p className="mt-4 text-sm leading-7 text-slate-200"><strong>Açıklama:</strong> {q.explanation}</p>
+        </details>;
+      })}</div>
+    </section>
+  </>;
+}
+
+export default function VisualReasoningPage() {
+  const [attempt, setAttempt] = useState<Attempt | null>(null);
+  const current = useRef<Attempt | null>(null);
+  const [ready, setReady] = useState(false);
+  const [notice, setNotice] = useState('');
+  const [storageWarning, setStorageWarning] = useState(false);
+  const [confirmed, setConfirmed] = useState(false);
+  const [practiceOpen, setPracticeOpen] = useState(false);
+  const [finishConfirm, setFinishConfirm] = useState(false);
+  const [large, setLarge] = useState(false);
+  const [now, setNow] = useState(0);
+  const heading = useRef<HTMLHeadingElement>(null);
+  const initialFocus = useRef(true);
+
+  const save = useCallback((next: Attempt | null, persist = true) => {
+    current.current = next;
+    setAttempt(next);
+    // Keep display time in sync with event-time mutations, not the previous interval tick.
+    setNow(Date.now());
+    if (persist) {
+      try {
+        if (next) localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+        else localStorage.removeItem(STORAGE_KEY);
+        setStorageWarning(false);
+      } catch { setStorageWarning(true); return false; }
+    }
+    return true;
   }, []);
 
-  return size;
-}
-
-function CellGrid({ grid }: { grid: string[] }) {
-  // Varsayım: 5x5 gibi bir grid
-  const cells = grid.join('').split('');
-  return (
-    <div className="inline-grid grid-cols-5 gap-1 p-3 rounded-2xl bg-white/5 border border-white/10">
-      {cells.map((ch, i) => (
-        <div
-          key={i}
-          className={`w-5 h-5 rounded-md border ${
-            ch === '#'
-              ? 'bg-indigo-400/80 border-indigo-200/40 shadow-[0_0_10px_rgba(99,102,241,0.35)]'
-              : 'bg-slate-900/60 border-white/10'
-          }`}
-        />
-      ))}
-    </div>
-  );
-}
-
-function getBadge(iq: number) {
-  if (iq >= 155) return { label: 'LEGEND', emoji: '🏆', style: 'bg-amber-500/15 border-amber-400/25 text-amber-200' };
-  if (iq >= 145) return { label: 'ELITE', emoji: '🔥', style: 'bg-emerald-500/15 border-emerald-400/25 text-emerald-200' };
-  if (iq >= 130) return { label: 'ADVANCED', emoji: '⚡', style: 'bg-indigo-500/15 border-indigo-400/25 text-indigo-200' };
-  if (iq >= 115) return { label: 'SOLID', emoji: '✅', style: 'bg-sky-500/15 border-sky-400/25 text-sky-200' };
-  if (iq >= 95) return { label: 'WARMUP', emoji: '🧩', style: 'bg-slate-500/15 border-slate-400/25 text-slate-200' };
-  return { label: 'RETRY', emoji: '🔁', style: 'bg-rose-500/15 border-rose-400/25 text-rose-200' };
-}
-
-// -------------------- ANA BİLEŞEN --------------------
-
-export default function IQTestPage() {
-  const data = (questions as unknown as IQQuestion[]) || [];
-  const total = data.length;
-
-  const [idx, setIdx] = useState(0);
-  const [answers, setAnswers] = useState<Record<string, AnswerState>>({});
-
-  const TOTAL_TIME = 30 * 60;
-  const [timeLeft, setTimeLeft] = useState(TOTAL_TIME);
-  const [started, setStarted] = useState(false);
-  const [finished, setFinished] = useState(false);
-
-  // Soruya odaklanmak için Ref
-  const questionAreaRef = useRef<HTMLDivElement>(null);
-
-  const { width, height } = useWindowSize();
-
-  // ✅ Guard: soru listesi boşsa patlamasın
-  if (total === 0) {
-    return (
-      <main className="min-h-screen bg-slate-950 text-white px-4 py-10">
-        <div className="max-w-3xl mx-auto rounded-3xl bg-white/5 border border-white/10 p-10 text-center">
-          <h1 className="text-2xl font-black mb-2">No questions found</h1>
-          <p className="text-slate-400 mb-6">
-            <span className="font-mono">../data/questions</span> boş görünüyor.
-          </p>
-          <Link href="/" className="inline-flex px-6 py-3 rounded-2xl bg-white text-slate-950 font-black hover:bg-slate-200">
-            Back Home →
-          </Link>
-        </div>
-      </main>
-    );
-  }
-
-  const safeIdx = clamp(idx, 0, total - 1);
-  const q = data[safeIdx];
-
-  // ✅ SCROLL FIX
   useEffect(() => {
-    if (!finished && questionAreaRef.current) {
-      const timer = window.setTimeout(() => {
-        questionAreaRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        const scrolledY = window.scrollY;
-        if (scrolledY > 50) window.scrollBy(0, -100);
-      }, 100);
-      return () => clearTimeout(timer);
-    }
-  }, [safeIdx, finished]);
+    const time = Date.now();
+    setNow(time);
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      const restored = restoreAttempt(raw, questions, time);
+      if (restored.issue) setNotice(restored.issue);
+      save(restored.attempt, raw !== null);
+    } catch { setStorageWarning(true); }
+    setReady(true);
+  }, [save]);
 
-  // Zaman sayacı
   useEffect(() => {
-    if (!started || finished) return;
-    if (timeLeft <= 0) {
-      setFinished(true);
-      return;
-    }
-    const t = setInterval(() => setTimeLeft((p) => p - 1), 1000);
-    return () => clearInterval(t);
-  }, [started, finished, timeLeft]);
-
-  const answeredCount = useMemo(
-    () => Object.values(answers).filter((a) => a.selected !== null).length,
-    [answers]
-  );
-
-  const selectAnswer = (choiceIndex: number) => {
-    if (finished || timeLeft <= 0) return;
-    setStarted(true);
-
-    const answerKey = q.id; // ✅ tutarlı anahtar
-    const isCorrect = choiceIndex === q.correct;
-
-    setAnswers((prev) => ({
-      ...prev,
-      [answerKey]: { selected: choiceIndex, correct: isCorrect },
-    }));
-  };
-
-  const next = () => setIdx((p) => clamp(p + 1, 0, total - 1));
-  const prev = () => setIdx((p) => clamp(p - 1, 0, total - 1));
-  const finishNow = () => setFinished(true);
-
-  const scorePack = useMemo(() => {
-    const domainMax: Record<Domain, number> = { logic: 0, math: 0, visual: 0, attention: 0 };
-    const domainGot: Record<Domain, number> = { logic: 0, math: 0, visual: 0, attention: 0 };
-
-    let totalCorrect = 0;
-    let totalAnswered = 0;
-
-    let weightedCorrect = 0;
-    let weightedTotal = 0;
-
-    const ADV_COUNT = Math.min(12, total);
-    const advStartIndex = Math.max(0, total - ADV_COUNT);
-    let advCorrect = 0;
-    let advAnswered = 0;
-
-    const W_BASE = 1.0;
-    const W_ADV = 1.35;
-
-    for (let i = 0; i < total; i++) {
-      const qq = data[i];
-      domainMax[qq.domain] += 1;
-
-      const key = qq.id;
-      const a = answers[key];
-
-      const isAdv = i >= advStartIndex;
-      const w = isAdv ? W_ADV : W_BASE;
-
-      weightedTotal += w;
-
-      if (a?.selected !== null && a?.selected !== undefined) {
-        totalAnswered += 1;
-        if (isAdv) advAnswered += 1;
-
-        if (a.correct) {
-          totalCorrect += 1;
-          domainGot[qq.domain] += 1;
-          weightedCorrect += w;
-          if (isAdv) advCorrect += 1;
-        }
-      }
-    }
-
-    const acc = total > 0 ? totalCorrect / total : 0;
-    const wAcc = weightedTotal > 0 ? weightedCorrect / weightedTotal : 0;
-
-    const timeRatio = started ? clamp(timeLeft / TOTAL_TIME, 0, 1) : 0;
-    const timeBonus = Math.pow(timeRatio, 0.65);
-
-    // Basit “normal dağılım benzeri” ölçek
-    const MU = 0.55;
-    const SIGMA = 0.18;
-
-    const perf = clamp(wAcc + 0.05 * timeBonus, 0, 1);
-    const z = (perf - MU) / SIGMA;
-
-    let iq = Math.round(100 + z * 15) + 3;
-
-    const completed = totalAnswered === total;
-    const advRate = advAnswered > 0 ? advCorrect / advAnswered : 0;
-    const eliteRun = completed && advAnswered === ADV_COUNT && advRate >= 0.8;
-
-    if (eliteRun) iq += 2;
-    if (totalCorrect === total && total >= 20) iq += 6;
-
-    const gameIQ = clamp(iq, 70, 160);
-    const badge = getBadge(gameIQ);
-
-    return {
-      domainMax,
-      domainGot,
-      totalCorrect,
-      totalAnswered,
-      totalQ: total,
-      gameIQ,
-      badge,
-      accuracyPct: Math.round(acc * 100),
-      weightedPct: Math.round(wAcc * 100),
-      completionPct: total > 0 ? Math.round((totalAnswered / total) * 100) : 0,
-      usedSeconds: clamp(TOTAL_TIME - timeLeft, 0, TOTAL_TIME),
-      timeLeft,
-      eliteRun,
-      advCorrect,
-      advAnswered,
-      advRatePct: Math.round(advRate * 100),
+    if (!ready) return;
+    const checkTime = () => {
+      const time = Date.now();
+      setNow(time);
+      if (current.current && current.current.endedAt === null) save(tickAttempt(current.current, time));
     };
-  }, [answers, data, started, timeLeft, total]);
+    const onStorage = (event: StorageEvent) => {
+      if (event.key !== STORAGE_KEY && event.key !== null) return;
+      // Events can be queued behind a newer local write; never replay their stale payload.
+      let raw: string | null;
+      try { raw = localStorage.getItem(STORAGE_KEY); }
+      catch { setStorageWarning(true); return; }
+      const restored = restoreAttempt(raw, questions, Date.now());
+      const previous = current.current;
+      const next = restored.attempt;
+      const meaningfulChange = previous?.startedAt !== next?.startedAt || previous?.endedAt !== next?.endedAt ||
+        previous?.currentIndex !== next?.currentIndex || JSON.stringify(previous?.answers) !== JSON.stringify(next?.answers);
+      if (restored.issue || meaningfulChange) {
+        setNotice(restored.issue || 'Bu denemenin kaydı başka bir sekmede değişti. Güncel kayıt yüklendi; lütfen tek sekmede devam edin.');
+        setFinishConfirm(false);
+      }
+      save(restored.attempt, false);
+    };
+    const interval = window.setInterval(checkTime, 1000);
+    window.addEventListener('focus', checkTime);
+    window.addEventListener('pageshow', checkTime);
+    window.addEventListener('pagehide', checkTime);
+    document.addEventListener('visibilitychange', checkTime);
+    window.addEventListener('storage', onStorage);
+    return () => {
+      clearInterval(interval);
+      window.removeEventListener('focus', checkTime);
+      window.removeEventListener('pageshow', checkTime);
+      window.removeEventListener('pagehide', checkTime);
+      document.removeEventListener('visibilitychange', checkTime);
+      window.removeEventListener('storage', onStorage);
+    };
+  }, [ready, save]);
 
-  const showConfetti = finished && scorePack.gameIQ >= 145;
-  const confettiPieces = scorePack.gameIQ >= 155 ? 520 : 320;
+  const phase = attempt ? (attempt.endedAt === null ? 'active' : 'result') : 'intro';
+  const index = attempt?.currentIndex ?? 0;
+  useEffect(() => {
+    if (initialFocus.current) { initialFocus.current = false; return; }
+    heading.current?.focus();
+    setLarge(false);
+    setFinishConfirm(false);
+  }, [phase, index]);
 
-  const mmss = (s: number) => {
-    const m = Math.floor(s / 60);
-    const r = s % 60;
-    return `${m}:${String(r).padStart(2, '0')}`;
+  const start = () => {
+    if (!ready || !confirmed || current.current) return;
+    const time = Date.now();
+    setNow(time);
+    setNotice('');
+    save(createAttempt(questions, time));
   };
+  const reset = () => {
+    const removed = save(null);
+    setNotice(removed ? 'Deneme kaydı bu tarayıcıdan silindi.' : 'Başlangıca dönüldü ancak tarayıcıdaki kayıt silinemedi. Yenilemede eski kayıt geri gelebilir.');
+    setConfirmed(false);
+    setFinishConfirm(false);
+  };
+  const navigate = (destination: number) => {
+    if (current.current) save(navigateAttempt(current.current, destination, Date.now()));
+  };
+  const select = (option: number | null) => {
+    if (current.current) save(answerAttempt(current.current, current.current.currentIndex, option, Date.now()));
+  };
+  const finish = () => {
+    if (current.current) save(finishAttempt(current.current, Date.now()));
+    setFinishConfirm(false);
+  };
+  const remaining = attempt ? remainingSeconds(attempt, now) : 1800;
+  const answered = attempt?.answers.filter(answer => answer !== null).length ?? 0;
+  const q = questions[index];
+  const timeAnnouncement = phase !== 'active' ? '' : remaining <= 60 ? 'Son 1 dakika.' : remaining <= 300 ? 'Son 5 dakika.' : '';
 
-  return (
-    <>
-      {showConfetti && (
-        <ReactConfetti width={width} height={height} numberOfPieces={confettiPieces} gravity={0.25} recycle={false} />
-      )}
-
-      <main className="min-h-screen bg-slate-950 text-white px-4 py-10">
-        <div className="max-w-5xl mx-auto space-y-6">
-          <div className="flex items-center justify-between gap-3">
-            <Link href="/" className="text-slate-300 hover:text-white font-bold">
-              ← Home
-            </Link>
-
-            <div className="flex items-center gap-3">
-              <div
-                className={`px-3 py-2 rounded-xl border ${
-                  timeLeft <= 60 ? 'bg-red-500/10 border-red-500/20' : 'bg-white/5 border-white/10'
-                }`}
-              >
-                <div className="text-[10px] uppercase tracking-widest text-slate-400 font-bold">Time</div>
-                <div className={`text-lg font-black ${timeLeft <= 60 ? 'text-red-300' : 'text-emerald-300'}`}>
-                  {mmss(Math.max(0, timeLeft))}
-                </div>
-              </div>
-
-              <div className="px-3 py-2 rounded-xl bg-white/5 border border-white/10">
-                <div className="text-[10px] uppercase tracking-widest text-slate-400 font-bold">Progress</div>
-                <div className="text-lg font-black text-indigo-300">
-                  {answeredCount}/{total}
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <header className="text-center space-y-2">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-500/15 border border-indigo-400/20 text-indigo-200 text-sm font-bold">
-              🧩 IQ Test (Hard)
-            </div>
-            <h1 className="text-3xl md:text-5xl font-black tracking-tight">{total} Questions • Mixed Domains</h1>
-            <p className="text-slate-400">Logic • Math • Visual • Attention (scoring)</p>
-          </header>
-
-          {/* PROGRESS BAR */}
-          {!finished && (
-            <div className="max-w-5xl mx-auto mb-4">
-              <div className="w-full h-1.5 bg-white/5 rounded-full overflow-hidden">
-                <div className="h-full bg-indigo-500 transition-all duration-500 ease-out" style={{ width: `${((safeIdx + 1) / total) * 100}%` }} />
-              </div>
-              <div className="flex justify-between mt-2 px-1">
-                <span className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Progress</span>
-                <span className="text-[10px] text-indigo-400 font-bold tracking-widest">
-                  %{Math.round(((safeIdx + 1) / total) * 100)}
-                </span>
-              </div>
-            </div>
-          )}
-
-          {finished ? (
-            <section className="rounded-3xl bg-white/5 border border-white/10 p-6 md:p-8 space-y-6">
-              <div className="text-center space-y-3">
-                <div className="text-2xl md:text-3xl font-black text-emerald-200">✅ Test Completed</div>
-
-                <div className="flex items-center justify-center gap-2 flex-wrap">
-                  <div className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full border ${scorePack.badge.style}`}>
-                    <span className="text-base">{scorePack.badge.emoji}</span>
-                    <span className="text-xs font-black tracking-widest">{scorePack.badge.label}</span>
-                  </div>
-                  {scorePack.eliteRun && (
-                    <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border bg-fuchsia-500/15 border-fuchsia-400/25 text-fuchsia-200">
-                      <span className="text-base">🚀</span>
-                      <span className="text-xs font-black tracking-widest">ELITE RUN</span>
-                    </div>
-                  )}
-                </div>
-
-                <div className="text-slate-300">
-                  Correct: <span className="font-black text-white">{scorePack.totalCorrect}/{scorePack.totalQ}</span> • Estimated IQ:{' '}
-                  <span className={`font-black text-3xl md:text-4xl align-middle ${scorePack.gameIQ >= 145 ? 'text-emerald-300 drop-shadow-[0_0_12px_rgba(16,185,129,0.6)]' : 'text-indigo-200'}`}>
-                    {scorePack.gameIQ}
-                  </span>
-                </div>
-
-                <div className="text-sm text-slate-400">
-                  Accuracy: <span className="font-black text-white">{scorePack.accuracyPct}%</span> • Weighted:{' '}
-                  <span className="font-black text-white">{scorePack.weightedPct}%</span> • Answered:{' '}
-                  <span className="font-black text-white">{scorePack.totalAnswered}</span> • Time used:{' '}
-                  <span className="font-black text-white">{mmss(scorePack.usedSeconds)}</span>
-                </div>
-              </div>
-
-              <div className="grid md:grid-cols-4 gap-3">
-                {(['logic', 'math', 'visual', 'attention'] as Domain[]).map((d) => (
-                  <div key={d} className="rounded-2xl bg-slate-900/50 border border-white/10 p-4">
-                    <div className="text-xs uppercase tracking-widest text-slate-400 font-bold">{d}</div>
-                    <div className="text-2xl font-black text-white mt-1">
-                      {scorePack.domainGot[d]}/{scorePack.domainMax[d] || 1}
-                    </div>
-                    <div className="text-sm text-slate-300">
-                      {Math.round((scorePack.domainGot[d] / (scorePack.domainMax[d] || 1)) * 100)}%
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              <div className="flex flex-col sm:flex-row gap-2">
-                <button
-                  onClick={() => {
-                    setIdx(0);
-                    setAnswers({});
-                    setTimeLeft(TOTAL_TIME);
-                    setStarted(false);
-                    setFinished(false);
-                  }}
-                  className="flex-1 py-3 rounded-2xl font-black bg-indigo-600 hover:bg-indigo-500"
-                >
-                  Restart
-                </button>
-                <Link href="/" className="sm:w-56 py-3 rounded-2xl font-black bg-slate-800 hover:bg-slate-700 text-center">
-                  Back Home →
-                </Link>
-              </div>
-            </section>
-          ) : (
-            <section className="rounded-3xl bg-white/5 border border-white/10 p-6 md:p-8 space-y-6">
-              <div className="flex items-center justify-between gap-3">
-                <div className="text-sm text-slate-400 font-bold">
-                  Question <span className="text-white">{safeIdx + 1}</span> / {total}{' '}
-                  <span className="ml-2 text-xs px-2 py-1 rounded-full bg-white/5 border border-white/10 text-slate-300">
-                    {q.domain.toUpperCase()}
-                  </span>
-                </div>
-                <button
-                  onClick={finishNow}
-                  className="text-xs font-black px-3 py-2 rounded-xl bg-red-500/10 border border-red-500/20 text-red-200 hover:bg-red-500/20"
-                >
-                  Finish Now
-                </button>
-              </div>
-
-              <div ref={questionAreaRef} className="space-y-6">
-                <div className="text-lg md:text-xl font-black text-white">{q.prompt}</div>
-
-                <div className="flex justify-center">
-                  {'questionSvg' in q ? (
-                    <div className="w-64 h-64 bg-white rounded-xl border-4 border-slate-700 shadow-2xl overflow-hidden text-slate-900 transition-transform hover:scale-[1.02]">
-                      <SvgRenderer data={q.questionSvg} />
-                    </div>
-                  ) : 'grid' in q && q.grid ? (
-                    <CellGrid grid={q.grid} />
-                  ) : null}
-                </div>
-
-                <div className={`grid gap-3 ${'questionSvg' in q ? 'grid-cols-2 sm:grid-cols-3 md:grid-cols-5' : 'grid-cols-1 md:grid-cols-2'}`}>
-                  {'optionsText' in q ? (
-                    q.optionsText.map((opt, i) => (
-                      <button
-                        key={i}
-                        onClick={() => selectAnswer(i)}
-                        className={`p-4 rounded-2xl border text-left font-bold transition-all ${
-                          answers[q.id]?.selected === i ? 'bg-indigo-500/20 border-indigo-300/30' : 'bg-slate-950/40 border-white/10 hover:bg-white/5'
-                        }`}
-                      >
-                        {opt}
-                      </button>
-                    ))
-                  ) : 'questionSvg' in q ? (
-                    q.options.map((opt, i) => (
-                      <button
-                        key={i}
-                        onClick={() => selectAnswer(i)}
-                        className={`aspect-square p-2 rounded-xl border transition-all flex items-center justify-center bg-white text-slate-800 relative ${
-                          answers[q.id]?.selected === i
-                            ? 'ring-4 ring-indigo-500 border-indigo-600 scale-105 z-10'
-                            : 'border-slate-300 hover:border-indigo-400 hover:shadow-lg hover:-translate-y-1'
-                        }`}
-                      >
-                        <SvgRenderer data={opt.svg} />
-                        {answers[q.id]?.selected === i && (
-                          <div className="absolute top-1 right-1 bg-indigo-600 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full shadow-sm">
-                            ✓
-                          </div>
-                        )}
-                      </button>
-                    ))
-                  ) : (
-                    q.options.map((gridOpt, i) => (
-                      <button
-                        key={i}
-                        onClick={() => selectAnswer(i)}
-                        className={`p-3 rounded-2xl border transition-all text-left ${
-                          answers[q.id]?.selected === i ? 'bg-indigo-500/20 border-indigo-300/30' : 'bg-slate-950/40 border-white/10 hover:bg-white/5'
-                        }`}
-                      >
-                        <div className="text-xs uppercase tracking-widest text-slate-400 font-bold mb-2">
-                          Option {String.fromCharCode(65 + i)}
-                        </div>
-                        <CellGrid grid={gridOpt} />
-                      </button>
-                    ))
-                  )}
-                </div>
-
-                <div className="flex items-center justify-between pt-4 border-t border-white/5 mt-6">
-                  <button
-                    onClick={prev}
-                    className="px-6 py-3 rounded-2xl font-black bg-slate-800 hover:bg-slate-700 disabled:opacity-40 transition-colors"
-                    disabled={safeIdx === 0}
-                  >
-                    ← Prev
-                  </button>
-
-                  <button
-                    onClick={next}
-                    className="px-6 py-3 rounded-2xl font-black bg-indigo-600 hover:bg-indigo-500 disabled:opacity-40 transition-colors shadow-lg shadow-indigo-900/20"
-                    disabled={safeIdx >= total - 1}
-                  >
-                    Next →
-                  </button>
-                </div>
-              </div>
-            </section>
-          )}
-        </div>
-      </main>
-    </>
-  );
+  return <main lang="tr" className="min-h-screen bg-slate-950 px-4 pb-16 pt-8 text-slate-100 sm:px-6">
+    <div className="mx-auto max-w-4xl">
+      <header className="mb-8">
+        <Link href="/" className="inline-flex min-h-11 items-center text-sm text-slate-300 underline-offset-4 hover:underline focus-visible:outline focus-visible:outline-cyan-300">← TestDünya ana sayfa</Link>
+        <p className="mt-5 text-xs font-bold uppercase tracking-[0.2em] text-cyan-200">18+ yetişkinler için • 30 özgün görsel soru</p>
+        <h1 ref={heading} tabIndex={-1} className="mt-3 text-3xl font-bold tracking-tight outline-none sm:text-4xl">Görsel Mantık ve Akıl Yürütme Testi{phase === 'active' ? ` · Soru ${index + 1}` : phase === 'result' ? ' · Sonuç' : ''}</h1>
+        {phase === 'intro' && <p className="mt-4 max-w-2xl text-lg leading-8 text-slate-300">Şekiller arasındaki kuralı keşfedin. Matris, örüntü, döndürme ve uzamsal ilişki sorularıyla pratik yapın.</p>}
+      </header>
+      {notice && <p role="status" className="mb-5 rounded-xl border border-cyan-400/30 bg-cyan-950/30 p-4 text-sm leading-6">{notice}</p>}
+      {storageWarning && <p role="alert" className="mb-5 rounded-xl border border-amber-400/40 bg-amber-950/30 p-4 text-sm leading-6">Tarayıcı kaydı kullanılamıyor. Bu sekmede devam edebilirsiniz; sayfayı yenilerseniz veya kapatırsanız yanıtlarınız kaybolabilir. Süre durmaz.</p>}
+      {phase === 'intro' && <>
+        <section className="rounded-3xl border border-slate-700 bg-slate-900/60 p-5 sm:p-8" aria-labelledby="instructions-title">
+          <h2 id="instructions-title" className="text-xl font-bold">Başlamadan önce</h2>
+          <ul className="mt-5 list-disc space-y-3 pl-5 text-sm leading-7 text-slate-200">
+            <li>Her soruda 4 seçenekten yalnızca biri, gösterilen kurala uyar. Sorular yaklaşık olarak daha basit ilişkilerden daha çok adımlı ilişkilere ilerler; güçlükleri ölçülüp kalibre edilmemiştir.</li>
+            <li><strong>30 dakika, “Denemeyi başlat” düğmesine bastığınızda başlar.</strong> Bu süre bir tasarım tercihidir; doğrulanmış bir test standardı değildir. Sekmeyi değiştirmek, sayfayı yenilemek veya kapatmak süreyi durdurmaz.</li>
+            <li>Soruları boş bırakabilir, geri dönebilir ve süre bitene kadar yanıtınızı değiştirebilirsiniz. Erken bitirebilirsiniz; hız bonusu yoktur.</li>
+            <li>Sonuçta 100 üzerinden test puanı, doğru–yanlış–boş sayıları ve soru türlerine göre sonuçlar gösterilir. Puan, tüm 30 soru içindeki doğru yanıt oranının en yakın tam sayıya yuvarlanmasıdır; IQ veya toplumdaki sıralamanız değildir.</li>
+            <li>Yanıtlar ve seçenek sırası bu tarayıcıda saklanır. Aynı cihazda yenilediğinizde süre kaldığı yerden değil, gerçek geçen zamana göre devam eder. Tek sekmede kullanın ve cihaz saatini değiştirmeyin.</li>
+            <li>Sakin bir ortam ve rahat görebildiğiniz bir ekran seçin. Şekilleri büyütebilirsiniz; renkleri ayırt etmek gerekmez. Görsel betimlemeler yardımcıdır, erişilebilirlik uyarlamalarının eşdeğerliği doğrulanmamıştır.</li>
+          </ul>
+          <div className="mt-6 rounded-xl border border-amber-300/30 bg-amber-950/20 p-4"><Disclaimer /></div>
+          <button type="button" onClick={() => setPracticeOpen(open => !open)} aria-expanded={practiceOpen} aria-controls="practice-area" className={`${button} mt-6`}>{practiceOpen ? 'Örnekleri gizle' : 'Önce 2 puansız örneği dene'}</button>
+          <div id="practice-area">{practiceOpen && <Practice />}</div>
+          <label className="mt-7 flex cursor-pointer items-start gap-3 text-sm leading-6"><input type="checkbox" checked={confirmed} onChange={event => setConfirmed(event.target.checked)} className="mt-1 h-5 w-5 shrink-0 accent-cyan-300" /><span>18 yaş ve üzerindeyim. Bunun IQ ölçümü olmadığını ve süre koşullarını anladım.</span></label>
+          <button type="button" onClick={start} disabled={!ready || !confirmed} className={`${primary} mt-5 w-full sm:w-auto`}>{ready ? 'Denemeyi başlat · 30 dakika' : 'Kayıt kontrol ediliyor…'}</button>
+          <p className="mt-3 text-xs leading-6 text-slate-400">Doğum tarihi, ad veya hesap bilgisi istenmez. Asıl sorular yalnızca başlattıktan sonra gösterilir.</p>
+        </section>
+      </>}
+      {phase === 'active' && attempt && <>
+        <section aria-label="Deneme durumu" className="sticky top-0 z-10 mb-5 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-slate-600 bg-slate-950/95 px-4 py-3 shadow-xl">
+          <p className="text-sm"><strong>{index + 1} / {questions.length}</strong><span className="ml-3 text-slate-300">{answered} yanıtlandı</span></p>
+          <p className={`text-lg font-bold tabular-nums ${remaining <= 60 ? 'text-amber-300' : 'text-cyan-200'}`} role="timer" aria-label={`Kalan süre ${Math.floor(remaining / 60)} dakika ${remaining % 60} saniye`}>{formatTime(remaining)}</p>
+        </section>
+        <p className="sr-only" role="status">{timeAnnouncement}</p>
+        <section aria-labelledby="question-title" className="rounded-3xl border border-slate-700 bg-slate-900/40 p-4 sm:p-6">
+          <div className="mb-4 flex flex-wrap items-center justify-between gap-3"><p className="text-xs font-bold uppercase tracking-widest text-cyan-200">{categories[q.category]}</p><button type="button" className={button} onClick={() => setLarge(value => !value)} aria-pressed={large}>{large ? 'Normal boyut' : 'Görseli büyüt'}</button></div>
+          <h2 id="question-title" className="mb-5 text-lg font-medium leading-8 sm:text-xl">{q.prompt}</h2>
+          <QuestionFigure question={q} large={large} />
+          <Options question={q} order={attempt.optionOrders[index]} selected={attempt.answers[index]} onSelect={select} name={q.id} />
+          <div className="mt-5 flex flex-wrap items-center justify-between gap-3"><p className="text-sm text-slate-300" aria-live="polite">{attempt.answers[index] === null ? 'Henüz yanıt seçilmedi.' : 'Yanıt seçildi. İsterseniz değiştirebilirsiniz.'}</p><button type="button" onClick={() => select(null)} disabled={attempt.answers[index] === null} className={button}>Yanıtı temizle</button></div>
+          <div className="mt-6 flex flex-wrap justify-between gap-3 border-t border-slate-700 pt-5"><button type="button" onClick={() => navigate(index - 1)} disabled={index === 0} className={button}>← Önceki</button>{index < questions.length - 1 ? <button type="button" onClick={() => navigate(index + 1)} className={primary}>Sonraki →</button> : <button type="button" onClick={() => setFinishConfirm(true)} className={primary}>Bitirmeyi gözden geçir</button>}</div>
+        </section>
+        <nav aria-label="Soru gezgini" className="mt-6 rounded-2xl border border-slate-700 p-4 sm:p-6">
+          <h2 className="mb-2 font-bold">Sorular arasında geçiş</h2><p className="mb-4 text-sm text-slate-400">✓ işaretli sorular yanıtlandı. Boş sorulara geri dönebilirsiniz.</p>
+          <div className="grid grid-cols-5 gap-2 sm:grid-cols-10">{questions.map((question, destination) => <button type="button" key={question.id} onClick={() => navigate(destination)} aria-label={`Soru ${destination + 1}, ${attempt.answers[destination] === null ? 'boş' : 'yanıtlandı'}`} aria-current={destination === index ? 'step' : undefined} className={`min-h-12 rounded-lg border p-1 text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-300 ${destination === index ? 'border-cyan-200 ring-2 ring-cyan-200' : 'border-slate-600'} ${attempt.answers[destination] === null ? 'bg-slate-950' : 'bg-cyan-950'}`}>{destination + 1}{attempt.answers[destination] !== null && <span aria-hidden="true"> ✓</span>}</button>)}</div>
+        </nav>
+        {!finishConfirm ? <button type="button" onClick={() => setFinishConfirm(true)} className={`${button} mt-6`}>Denemeyi bitir</button> : <section aria-label="Bitirme onayı" className="mt-6 rounded-2xl border border-amber-400/50 bg-amber-950/30 p-5"><h2 className="text-lg font-bold">Denemeyi bitirmek istiyor musunuz?</h2><p className="my-3 leading-7">{questions.length - answered} soru boş. Bitirdikten sonra yanıtlar değiştirilemez. Onay beklerken süre işlemeye devam eder.</p><div className="flex flex-wrap gap-3"><button type="button" onClick={() => setFinishConfirm(false)} className={button}>Çözmeye devam et</button><button type="button" onClick={finish} className={primary}>Evet, bitir ve sonucu göster</button></div></section>}
+      </>}
+      {phase === 'result' && attempt && <Results attempt={attempt} onRestart={reset} />}
+      <footer className="mt-10 border-t border-slate-800 pt-6 text-xs leading-6 text-slate-400">Yetişkinler için görsel akıl yürütme pratiği. Bu sayfanın eski /iq-test adresi korunmuştur; sayfa bir IQ testi veya profesyonel değerlendirme sunmaz.</footer>
+    </div>
+  </main>;
 }

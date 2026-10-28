@@ -1,1579 +1,186 @@
-// app/data/questions.ts
-import type { SvgData } from "../components/SvgRenderer";
+/**
+ * Original visual-reasoning practice items for adults (18+).
+ * The order is an editorial easy-to-more-complex progression, NOT calibrated difficulty.
+ * No norm group, IQ conversion, speed bonus, diagnostic interpretation or licensed item bank.
+ * Attempt persistence fingerprints this complete bank; content edits invalidate old saved attempts.
+ */
+export type Category = 'matrix' | 'sequence' | 'rotation' | 'spatial';
+export const categories: Record<Category, string> = {
+  matrix: 'Matris ve şekil ilişkileri', sequence: 'Görsel örüntüler',
+  rotation: 'Zihinsel döndürme', spatial: 'Uzamsal ilişkiler',
+};
+export type VisualElement =
+  | { kind: 'circle'; cx: number; cy: number; r: number; fill?: boolean; strokeWidth?: number }
+  | { kind: 'rect'; x: number; y: number; width: number; height: number; fill?: boolean; strokeWidth?: number }
+  | { kind: 'path'; d: string; fill?: boolean; strokeWidth?: number }
+  | { kind: 'line'; x1: number; y1: number; x2: number; y2: number; dashed?: boolean; strokeWidth?: number };
+export type VisualCell = { elements: VisualElement[]; description: string };
+export type VisualFigureData = { columns: number; cells: (VisualCell | null)[]; sequence?: boolean; label: string };
+export type VisualQuestion = {
+  id: string; category: Category; prompt: string; figure: VisualFigureData;
+  options: { figure: VisualFigureData; label: string }[]; correct: number; explanation: string;
+};
 
-type Domain = "logic" | "math" | "visual" | "attention";
-
-type IQQuestion =
-  | {
-      id: string;
-      domain: Domain;
-      type: "visual-matrix" | "visual-matrix-2x2" | "visual-matrix-3x3";
-      prompt: string;
-      questionSvg: SvgData;
-      options: { svg: SvgData }[];
-      correct: number;
-      explanation?: string;
-    };
-
-const opt = (elements: any[], viewBox = "0 0 100 100"): { svg: SvgData } => ({
-  svg: { viewBox, elements } as SvgData,
+type Shape = 'circle' | 'square' | 'triangle';
+const names: Record<Shape, string> = { circle: 'daire', square: 'kare', triangle: 'üçgen' };
+const dirs = ['yukarı', 'sağa', 'aşağı', 'sola'];
+const sorted = (xs: number[]) => [...new Set(xs)].sort((a, b) => a - b);
+const rotate = (xs: number[], turns = 1, n = 3): number[] => {
+  let out = xs;
+  for (let t = 0; t < ((turns % 4) + 4) % 4; t++) out = out.map(i => (i % n) * n + n - 1 - Math.floor(i / n));
+  return sorted(out);
+};
+const mirror = (xs: number[], n = 3) => sorted(xs.map(i => Math.floor(i / n) * n + n - 1 - i % n));
+const union = (a: number[], b: number[]) => sorted([...a, ...b]);
+const intersection = (a: number[], b: number[]) => sorted(a.filter(i => b.includes(i)));
+const xor = (a: number[], b: number[]) => sorted([...a.filter(i => !b.includes(i)), ...b.filter(i => !a.includes(i))]);
+const location = (i: number, n: number) => `${Math.floor(i / n) + 1}. satır ${i % n + 1}. sütun`;
+const shapeElement = (shape: Shape, x: number, y: number, size: number, filled = false): VisualElement => {
+  if (shape === 'circle') return { kind: 'circle', cx: x, cy: y, r: size / 2, fill: filled };
+  if (shape === 'square') return { kind: 'rect', x: x - size / 2, y: y - size / 2, width: size, height: size, fill: filled };
+  return { kind: 'path', d: `M ${x} ${y - size / 2} L ${x + size / 2} ${y + size / 2} L ${x - size / 2} ${y + size / 2} Z`, fill: filled };
+};
+const count = (n: number, shape: Shape = 'circle', filled = false): VisualCell => ({
+  elements: Array.from({ length: n }, (_, i) => shapeElement(shape, 25 + i % 3 * 25, 25 + Math.floor(i / 3) * 25, 14, filled)),
+  description: `${n} ${filled ? 'dolu' : 'içi boş'} ${names[shape]}; soldan sağa, üstten alta dizili`,
 });
-
-export const questions: IQQuestion[] = [
-  // =========================================================
-  // 1–8: ISINMA (kolay Raven)
-  // =========================================================
-
-  // 1) Nokta köşe gezme (2x2)
-  {
-    id: "iq-mixed-01",
-    domain: "visual",
-    type: "visual-matrix-2x2",
-    prompt: "Which option completes the pattern?",
-    questionSvg: {
-      viewBox: "0 0 220 220",
-      elements: [
-        { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 120, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 10, y: 120, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 120, y: 120, w: 90, h: 90, sw: 4, dash: true },
-
-        { t: "circle", cx: 35, cy: 35, r: 10, sw: 4 }, // TL
-        { t: "circle", cx: 185, cy: 35, r: 10, sw: 4 }, // TR
-        { t: "circle", cx: 35, cy: 185, r: 10, sw: 4 }, // BL
-      ],
-    },
-    options: [
-      opt([{ t: "circle", cx: 25, cy: 25, r: 10, sw: 4 }]),
-      opt([{ t: "circle", cx: 75, cy: 75, r: 10, sw: 4 }]), // ✅ BR
-      opt([{ t: "circle", cx: 50, cy: 50, r: 10, sw: 4 }]),
-      opt([{ t: "rect", x: 35, y: 35, w: 30, h: 30, sw: 4 }]),
-      opt([{ t: "circle", cx: 75, cy: 25, r: 10, sw: 4 }]),
-    ],
-    correct: 1,
-    explanation: "The dot moves clockwise through the corners; the missing one is bottom-right.",
-  },
-
-  // 2) Yatay/Dikey dönüş (2x2)
-  {
-    id: "iq-mixed-02",
-    domain: "visual",
-    type: "visual-matrix-2x2",
-    prompt: "Which option completes the pattern?",
-    questionSvg: {
-      viewBox: "0 0 220 220",
-      elements: [
-        { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 120, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 10, y: 120, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 120, y: 120, w: 90, h: 90, sw: 4, dash: true },
-
-        { t: "line", x1: 25, y1: 55, x2: 85, y2: 55, sw: 6 }, // TL: horizontal
-        { t: "line", x1: 165, y1: 25, x2: 165, y2: 85, sw: 6 }, // TR: vertical
-        { t: "line", x1: 55, y1: 135, x2: 55, y2: 195, sw: 6 }, // BL: vertical
-        // BR should be horizontal (swap in row2)
-      ],
-    },
-    options: [
-      opt([{ t: "line", x1: 50, y1: 20, x2: 50, y2: 80, sw: 6 }]),
-      opt([{ t: "circle", cx: 50, cy: 50, r: 20, sw: 4 }]),
-      opt([{ t: "line", x1: 20, y1: 50, x2: 80, y2: 50, sw: 6 }]), // ✅ horizontal
-      opt([{ t: "line", x1: 20, y1: 20, x2: 80, y2: 80, sw: 6 }]),
-      opt([]),
-    ],
-    correct: 2,
-    explanation: "Top row: horizontal→vertical. Bottom row mirrors it: vertical→horizontal.",
-  },
-
-  // 3) Boyut artışı (2x2)
-  {
-    id: "iq-mixed-03",
-    domain: "visual",
-    type: "visual-matrix-2x2",
-    prompt: "Which option completes the pattern?",
-    questionSvg: {
-      viewBox: "0 0 220 220",
-      elements: [
-        { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 120, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 10, y: 120, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 120, y: 120, w: 90, h: 90, sw: 4, dash: true },
-
-        { t: "rect", x: 45, y: 45, w: 20, h: 20, sw: 4 }, // small
-        { t: "rect", x: 140, y: 40, w: 30, h: 30, sw: 4 }, // medium
-        { t: "rect", x: 25, y: 135, w: 60, h: 60, sw: 4 }, // large
-      ],
-    },
-    options: [
-      opt([{ t: "rect", x: 40, y: 40, w: 20, h: 20, sw: 4 }]),
-      opt([{ t: "rect", x: 35, y: 35, w: 30, h: 30, sw: 4 }]),
-      opt([{ t: "rect", x: 10, y: 10, w: 80, h: 80, sw: 4 }]), // ✅ biggest (continue growth)
-      opt([{ t: "circle", cx: 50, cy: 50, r: 20, sw: 4 }]),
-      opt([]),
-    ],
-    correct: 2,
-    explanation: "The inner square grows; the missing is the largest.",
-  },
-
-  // 4) Overlay (A + B = C) (2x2)
-  {
-    id: "iq-mixed-04",
-    domain: "visual",
-    type: "visual-matrix-2x2",
-    prompt: "Which option completes the pattern?",
-    questionSvg: {
-      viewBox: "0 0 220 220",
-      elements: [
-        { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 120, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 10, y: 120, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 120, y: 120, w: 90, h: 90, sw: 4, dash: true },
-
-        // TL: circle
-        { t: "circle", cx: 55, cy: 55, r: 30, sw: 4 },
-        // TR: square
-        { t: "rect", x: 140, y: 35, w: 40, h: 40, sw: 4 },
-        // BL: circle + square (overlay)
-        { t: "circle", cx: 55, cy: 165, r: 30, sw: 4 },
-        { t: "rect", x: 35, y: 145, w: 40, h: 40, sw: 4 },
-        // BR should be the other "component" (square) after overlay rule
-      ],
-    },
-    options: [
-      opt([{ t: "circle", cx: 50, cy: 50, r: 30, sw: 4 }]),
-      opt([{ t: "rect", x: 30, y: 30, w: 40, h: 40, sw: 4 }]), // ✅
-      opt([
-        { t: "circle", cx: 50, cy: 50, r: 30, sw: 4 },
-        { t: "rect", x: 30, y: 30, w: 40, h: 40, sw: 4 },
-      ]),
-      opt([{ t: "line", x1: 20, y1: 20, x2: 80, y2: 80, sw: 4 }]),
-      opt([]),
-    ],
-    correct: 1,
-    explanation: "Bottom-left is an overlay of top-left and top-right, so the missing tile is the remaining component: the square.",
-  },
-
-  // 5) Rotation (2x2)
-  {
-    id: "iq-mixed-05",
-    domain: "visual",
-    type: "visual-matrix-2x2",
-    prompt: "Which option completes the pattern?",
-    questionSvg: {
-      viewBox: "0 0 220 220",
-      elements: [
-        { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 120, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 10, y: 120, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 120, y: 120, w: 90, h: 90, sw: 4, dash: true },
-
-        { t: "line", x1: 55, y1: 20, x2: 55, y2: 90, sw: 6 }, // vertical
-        { t: "line", x1: 130, y1: 55, x2: 200, y2: 55, sw: 6 }, // horizontal
-        { t: "line", x1: 20, y1: 165, x2: 90, y2: 165, sw: 6 }, // horizontal
-        // BR should be vertical
-      ],
-    },
-    options: [
-      opt([{ t: "line", x1: 20, y1: 20, x2: 80, y2: 80, sw: 6 }]),
-      opt([{ t: "circle", cx: 50, cy: 50, r: 20, sw: 4 }]),
-      opt([{ t: "line", x1: 50, y1: 20, x2: 50, y2: 80, sw: 6 }]), // ✅ vertical
-      opt([{ t: "line", x1: 20, y1: 50, x2: 80, y2: 50, sw: 6 }]),
-      opt([]),
-    ],
-    correct: 2,
-    explanation: "The line alternates orientation; the missing is vertical.",
-  },
-
-  // 6) 3x3: sayım 1-2-3 (kolay)
-  {
-    id: "iq-mixed-06",
-    domain: "visual",
-    type: "visual-matrix-3x3",
-    prompt: "Which option completes the pattern?",
-    questionSvg: {
-      viewBox: "0 0 330 330",
-      elements: [
-        // grid
-        { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
-
-        { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
-
-        { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
-
-        // row1: 1 dot, row2: 2 dots, row3: 3 dots (missing)
-        { t: "circle", cx: 55, cy: 55, r: 8, sw: 4 },
-        { t: "circle", cx: 155, cy: 55, r: 8, sw: 4 },
-        { t: "circle", cx: 255, cy: 55, r: 8, sw: 4 },
-
-        { t: "circle", cx: 45, cy: 155, r: 8, sw: 4 },
-        { t: "circle", cx: 65, cy: 155, r: 8, sw: 4 },
-
-        { t: "circle", cx: 145, cy: 155, r: 8, sw: 4 },
-        { t: "circle", cx: 165, cy: 155, r: 8, sw: 4 },
-
-        { t: "circle", cx: 245, cy: 155, r: 8, sw: 4 },
-        { t: "circle", cx: 265, cy: 155, r: 8, sw: 4 },
-
-        { t: "circle", cx: 45, cy: 255, r: 8, sw: 4 },
-        { t: "circle", cx: 65, cy: 255, r: 8, sw: 4 },
-      ],
-    },
-    options: [
-      opt([
-        { t: "circle", cx: 30, cy: 50, r: 8, sw: 4 },
-        { t: "circle", cx: 50, cy: 50, r: 8, sw: 4 },
-        { t: "circle", cx: 70, cy: 50, r: 8, sw: 4 },
-      ]), // ✅ 3 dots
-      opt([{ t: "circle", cx: 50, cy: 50, r: 8, sw: 4 }]),
-      opt([]),
-      opt([{ t: "circle", cx: 50, cy: 50, r: 20, sw: 4 }]),
-      opt([{ t: "rect", x: 20, y: 20, w: 60, h: 60, sw: 4 }]),
-    ],
-    correct: 0,
-    explanation: "Each row increases the count of dots: 1, then 2, then 3.",
-  },
-
-  // 7) 3x3: aynı diagonal çizgi (kolay)
-  {
-    id: "iq-mixed-07",
-    domain: "visual",
-    type: "visual-matrix-3x3",
-    prompt: "Which option completes the pattern?",
-    questionSvg: {
-      viewBox: "0 0 330 330",
-      elements: [
-        { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
-
-        // 8 known
-        { t: "line", x1: 20, y1: 20, x2: 90, y2: 90, sw: 5 },
-        { t: "line", x1: 120, y1: 20, x2: 190, y2: 90, sw: 5 },
-        { t: "line", x1: 220, y1: 20, x2: 290, y2: 90, sw: 5 },
-        { t: "line", x1: 20, y1: 120, x2: 90, y2: 190, sw: 5 },
-        { t: "line", x1: 120, y1: 120, x2: 190, y2: 190, sw: 5 },
-        { t: "line", x1: 220, y1: 120, x2: 290, y2: 190, sw: 5 },
-        { t: "line", x1: 20, y1: 220, x2: 90, y2: 290, sw: 5 },
-        { t: "line", x1: 120, y1: 220, x2: 190, y2: 290, sw: 5 },
-      ],
-    },
-    options: [
-      opt([{ t: "line", x1: 20, y1: 20, x2: 90, y2: 90, sw: 5 }]), // ✅ same diagonal
-      opt([{ t: "line", x1: 20, y1: 80, x2: 80, y2: 20, sw: 5 }]),
-      opt([{ t: "line", x1: 50, y1: 20, x2: 50, y2: 80, sw: 5 }]),
-      opt([]),
-      opt([{ t: "circle", cx: 50, cy: 50, r: 20, sw: 4 }]),
-    ],
-    correct: 0,
-    explanation: "All tiles use the same diagonal line direction; the missing tile matches it.",
-  },
-
-  // 8) 3x3: büyüyen daire (kolay)
-  {
-    id: "iq-mixed-08",
-    domain: "visual",
-    type: "visual-matrix-3x3",
-    prompt: "Which option completes the pattern?",
-    questionSvg: {
-      viewBox: "0 0 330 330",
-      elements: [
-        { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
-
-        // r: 10,15,20 each row
-        { t: "circle", cx: 55, cy: 55, r: 10, sw: 4 },
-        { t: "circle", cx: 155, cy: 55, r: 15, sw: 4 },
-        { t: "circle", cx: 255, cy: 55, r: 20, sw: 4 },
-
-        { t: "circle", cx: 55, cy: 155, r: 10, sw: 4 },
-        { t: "circle", cx: 155, cy: 155, r: 15, sw: 4 },
-        { t: "circle", cx: 255, cy: 155, r: 20, sw: 4 },
-
-        { t: "circle", cx: 55, cy: 255, r: 10, sw: 4 },
-        { t: "circle", cx: 155, cy: 255, r: 15, sw: 4 },
-      ],
-    },
-    options: [
-      opt([{ t: "circle", cx: 50, cy: 50, r: 20, sw: 4 }]), // ✅
-      opt([{ t: "circle", cx: 50, cy: 50, r: 15, sw: 4 }]),
-      opt([{ t: "circle", cx: 50, cy: 50, r: 10, sw: 4 }]),
-      opt([]),
-      opt([{ t: "rect", x: 20, y: 20, w: 60, h: 60, sw: 4 }]),
-    ],
-    correct: 0,
-    explanation: "Each column keeps the same radius; the missing is radius 20.",
-  },
-
-  // =========================================================
-  // 9–20: ADVANCED RAVEN (son 12 soru)
-  // =========================================================
-
-  // 9) Advanced: OR/Union (A + B = C) with corners
-  {
-    id: "iq-mixed-09",
-    domain: "visual",
-    type: "visual-matrix-3x3",
-    prompt: "Which option completes the pattern?",
-    questionSvg: {
-      viewBox: "0 0 330 330",
-      elements: [
-        { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
-
-        { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
-
-        { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
-
-        // Row rule: C = union of A and B (corner dots)
-        // Row1
-        { t: "circle", cx: 30, cy: 30, r: 6, sw: 4 }, // A1: TL
-        { t: "circle", cx: 170, cy: 30, r: 6, sw: 4 }, // B1: TR
-        { t: "circle", cx: 230, cy: 30, r: 6, sw: 4 }, // C1: TL+TR
-        { t: "circle", cx: 290, cy: 30, r: 6, sw: 4 },
-
-        // Row2
-        { t: "circle", cx: 30, cy: 170, r: 6, sw: 4 }, // A2: BL
-        { t: "circle", cx: 170, cy: 170, r: 6, sw: 4 }, // B2: BR
-        { t: "circle", cx: 230, cy: 170, r: 6, sw: 4 }, // C2: BL+BR
-        { t: "circle", cx: 290, cy: 170, r: 6, sw: 4 },
-
-        // Row3: A3 has TL+BL, B3 has TR+BR -> C3 should have all four
-        { t: "circle", cx: 30, cy: 230, r: 6, sw: 4 },
-        { t: "circle", cx: 30, cy: 290, r: 6, sw: 4 },
-        { t: "circle", cx: 170, cy: 230, r: 6, sw: 4 },
-        { t: "circle", cx: 170, cy: 290, r: 6, sw: 4 },
-      ],
-    },
-    options: [
-      opt([
-        { t: "circle", cx: 25, cy: 25, r: 6, sw: 4 },
-        { t: "circle", cx: 75, cy: 25, r: 6, sw: 4 },
-        { t: "circle", cx: 25, cy: 75, r: 6, sw: 4 },
-        { t: "circle", cx: 75, cy: 75, r: 6, sw: 4 },
-      ]), // ✅ all four corners
-      opt([{ t: "circle", cx: 25, cy: 25, r: 6, sw: 4 }]),
-      opt([
-        { t: "circle", cx: 25, cy: 25, r: 6, sw: 4 },
-        { t: "circle", cx: 75, cy: 75, r: 6, sw: 4 },
-      ]),
-      opt([{ t: "rect", x: 20, y: 20, w: 60, h: 60, sw: 4 }]),
-      opt([]),
-    ],
-    correct: 0,
-    explanation: "In each row, the third cell is the union of the first two (combine the corner marks).",
-  },
-
-  // 10) Advanced: XOR (same cancels)
-  {
-    id: "iq-mixed-10",
-    domain: "visual",
-    type: "visual-matrix-3x3",
-    prompt: "Which option completes the pattern?",
-    questionSvg: {
-      viewBox: "0 0 330 330",
-      elements: [
-        { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
-
-        { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
-
-        { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
-
-        // Row rule: C = XOR(A,B)
-        // Row1: A=circle, B=circle+square -> XOR => square
-        { t: "circle", cx: 55, cy: 55, r: 25, sw: 4 },
-        { t: "circle", cx: 155, cy: 55, r: 25, sw: 4 },
-        { t: "rect", x: 135, y: 35, w: 40, h: 40, sw: 4 },
-        { t: "rect", x: 235, y: 35, w: 40, h: 40, sw: 4 }, // C1 square
-
-        // Row2: A=square, B=circle+square -> XOR => circle
-        { t: "rect", x: 35, y: 135, w: 40, h: 40, sw: 4 },
-        { t: "rect", x: 135, y: 135, w: 40, h: 40, sw: 4 },
-        { t: "circle", cx: 155, cy: 155, r: 25, sw: 4 },
-        { t: "circle", cx: 255, cy: 155, r: 25, sw: 4 }, // C2 circle
-
-        // Row3: A=circle+square, B=circle -> XOR => square (missing)
-        { t: "circle", cx: 55, cy: 255, r: 25, sw: 4 },
-        { t: "rect", x: 35, y: 235, w: 40, h: 40, sw: 4 },
-        { t: "circle", cx: 155, cy: 255, r: 25, sw: 4 },
-      ],
-    },
-    options: [
-      opt([{ t: "rect", x: 30, y: 30, w: 40, h: 40, sw: 4 }]), // ✅ square
-      opt([{ t: "circle", cx: 50, cy: 50, r: 25, sw: 4 }]),
-      opt([
-        { t: "circle", cx: 50, cy: 50, r: 25, sw: 4 },
-        { t: "rect", x: 30, y: 30, w: 40, h: 40, sw: 4 },
-      ]),
-      opt([{ t: "line", x1: 20, y1: 50, x2: 80, y2: 50, sw: 6 }]),
-      opt([]),
-    ],
-    correct: 0,
-    explanation: "XOR rule: shared shape cancels out; only the non-common shape remains.",
-  },
-
-  // 11) Advanced: rotation sequence inside circle (8-step, missing is horizontal)
-  {
-    id: "iq-mixed-11",
-    domain: "visual",
-    type: "visual-matrix-3x3",
-    prompt: "Which option completes the pattern?",
-    questionSvg: {
-      viewBox: "0 0 330 330",
-      elements: [
-        { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
-
-        { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
-
-        { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
-
-        // 8 directions (N, NE, E, SE, S, SW, W, NW) and missing would be N? We set pattern to make missing = horizontal
-        // Row1: vertical, diag NE, horizontal
-        { t: "circle", cx: 55, cy: 55, r: 25, sw: 4 },
-        { t: "line", x1: 55, y1: 30, x2: 55, y2: 80, sw: 4 },
-
-        { t: "circle", cx: 155, cy: 55, r: 25, sw: 4 },
-        { t: "line", x1: 135, y1: 35, x2: 175, y2: 75, sw: 4 },
-
-        { t: "circle", cx: 255, cy: 55, r: 25, sw: 4 },
-        { t: "line", x1: 230, y1: 55, x2: 280, y2: 55, sw: 4 },
-
-        // Row2: diag NW, horizontal, diag SE
-        { t: "circle", cx: 55, cy: 155, r: 25, sw: 4 },
-        { t: "line", x1: 35, y1: 175, x2: 75, y2: 135, sw: 4 },
-
-        { t: "circle", cx: 155, cy: 155, r: 25, sw: 4 },
-        { t: "line", x1: 130, y1: 155, x2: 180, y2: 155, sw: 4 },
-
-        { t: "circle", cx: 255, cy: 155, r: 25, sw: 4 },
-        { t: "line", x1: 235, y1: 135, x2: 275, y2: 175, sw: 4 },
-
-        // Row3: vertical (down), diag SW, missing should be horizontal (continue rotation)
-        { t: "circle", cx: 55, cy: 255, r: 25, sw: 4 },
-        { t: "line", x1: 55, y1: 280, x2: 55, y2: 230, sw: 4 },
-
-        { t: "circle", cx: 155, cy: 255, r: 25, sw: 4 },
-        { t: "line", x1: 175, y1: 235, x2: 135, y2: 275, sw: 4 },
-      ],
-    },
-    options: [
-      opt([
-        { t: "circle", cx: 50, cy: 50, r: 25, sw: 4 },
-        { t: "line", x1: 30, y1: 70, x2: 70, y2: 30, sw: 4 },
-      ]),
-      opt([
-        { t: "circle", cx: 50, cy: 50, r: 25, sw: 4 },
-        { t: "line", x1: 50, y1: 75, x2: 50, y2: 25, sw: 4 },
-      ]),
-      opt([{ t: "circle", cx: 50, cy: 50, r: 25, sw: 4 }]),
-      opt([
-        { t: "circle", cx: 50, cy: 50, r: 25, sw: 4 },
-        { t: "line", x1: 25, y1: 50, x2: 75, y2: 50, sw: 4 },
-      ]), // ✅ horizontal
-      opt([]),
-    ],
-    correct: 3,
-    explanation: "The line direction rotates; the next required orientation is horizontal.",
-  },
-
-  // 12) Advanced: positional drift (3-step left shift)
-  {
-    id: "iq-mixed-12",
-    domain: "visual",
-    type: "visual-matrix-3x3",
-    prompt: "Which option completes the pattern?",
-    questionSvg: {
-      viewBox: "0 0 330 330",
-      elements: [
-        { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
-
-        { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
-
-        { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
-
-        // x-position shifts left as go down rows: 75 -> 55 -> 35
-        { t: "circle", cx: 75, cy: 55, r: 10, sw: 4 },
-        { t: "circle", cx: 175, cy: 55, r: 10, sw: 4 },
-        { t: "circle", cx: 275, cy: 55, r: 10, sw: 4 },
-
-        { t: "circle", cx: 55, cy: 155, r: 10, sw: 4 },
-        { t: "circle", cx: 155, cy: 155, r: 10, sw: 4 },
-        { t: "circle", cx: 255, cy: 155, r: 10, sw: 4 },
-
-        { t: "circle", cx: 35, cy: 255, r: 10, sw: 4 },
-        { t: "circle", cx: 135, cy: 255, r: 10, sw: 4 },
-      ],
-    },
-    options: [
-      opt([{ t: "circle", cx: 25, cy: 50, r: 10, sw: 4 }]), // ✅
-      opt([{ t: "circle", cx: 50, cy: 50, r: 10, sw: 4 }]),
-      opt([{ t: "circle", cx: 75, cy: 50, r: 10, sw: 4 }]),
-      opt([]),
-      opt([{ t: "circle", cx: 50, cy: 50, r: 30, sw: 4 }]),
-    ],
-    correct: 0,
-    explanation: "Each row shifts the dot further left; the last one is the leftmost position.",
-  },
-
-  // 13) Advanced: count pattern per column (1,2,3) with strict progression
-  {
-    id: "iq-mixed-13",
-    domain: "visual",
-    type: "visual-matrix-3x3",
-    prompt: "Which option completes the pattern?",
-    questionSvg: {
-      viewBox: "0 0 330 330",
-      elements: [
-        { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
-
-        { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
-
-        { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
-
-        // Column counts: col1=1 square, col2=2 squares, col3=3 squares
-        // row1
-        { t: "rect", x: 40, y: 40, w: 30, h: 30, sw: 4 },
-        { t: "rect", x: 140, y: 40, w: 25, h: 25, sw: 4 },
-        { t: "rect", x: 170, y: 40, w: 25, h: 25, sw: 4 },
-        { t: "rect", x: 235, y: 40, w: 22, h: 22, sw: 4 },
-        { t: "rect", x: 262, y: 40, w: 22, h: 22, sw: 4 },
-        { t: "rect", x: 289, y: 40, w: 22, h: 22, sw: 4 },
-
-        // row2 (same pattern)
-        { t: "rect", x: 40, y: 140, w: 30, h: 30, sw: 4 },
-        { t: "rect", x: 140, y: 140, w: 25, h: 25, sw: 4 },
-        { t: "rect", x: 170, y: 140, w: 25, h: 25, sw: 4 },
-        { t: "rect", x: 235, y: 140, w: 22, h: 22, sw: 4 },
-        { t: "rect", x: 262, y: 140, w: 22, h: 22, sw: 4 },
-        { t: "rect", x: 289, y: 140, w: 22, h: 22, sw: 4 },
-
-        // row3 known cells
-        { t: "rect", x: 40, y: 240, w: 30, h: 30, sw: 4 },
-        { t: "rect", x: 140, y: 240, w: 25, h: 25, sw: 4 },
-        { t: "rect", x: 170, y: 240, w: 25, h: 25, sw: 4 },
-      ],
-    },
-    options: [
-      opt([
-        { t: "rect", x: 18, y: 40, w: 22, h: 22, sw: 4 },
-        { t: "rect", x: 44, y: 40, w: 22, h: 22, sw: 4 },
-        { t: "rect", x: 70, y: 40, w: 22, h: 22, sw: 4 },
-      ]), // ✅ 3 squares
-      opt([{ t: "rect", x: 35, y: 40, w: 30, h: 30, sw: 4 }]),
-      opt([
-        { t: "rect", x: 25, y: 40, w: 25, h: 25, sw: 4 },
-        { t: "rect", x: 55, y: 40, w: 25, h: 25, sw: 4 },
-      ]),
-      opt([]),
-      opt([{ t: "circle", cx: 50, cy: 50, r: 20, sw: 4 }]),
-    ],
-    correct: 0,
-    explanation: "Each column indicates how many squares appear: 1, 2, then 3.",
-  },
-
-  // 14) Advanced: alternating diagonal vs circle (anti-diagonal control)
-  {
-    id: "iq-mixed-14",
-    domain: "visual",
-    type: "visual-matrix-3x3",
-    prompt: "Which option completes the pattern?",
-    questionSvg: {
-      viewBox: "0 0 330 330",
-      elements: [
-        { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
-
-        // Pattern: on anti-diagonal positions -> circle; others -> diagonal line
-        { t: "line", x1: 20, y1: 20, x2: 90, y2: 90, sw: 4 },
-        { t: "line", x1: 120, y1: 20, x2: 190, y2: 90, sw: 4 },
-        { t: "circle", cx: 255, cy: 55, r: 15, sw: 4 }, // anti-diagonal (r1c3)
-
-        { t: "line", x1: 20, y1: 120, x2: 90, y2: 190, sw: 4 },
-        { t: "circle", cx: 155, cy: 155, r: 15, sw: 4 }, // anti-diagonal (r2c2)
-        { t: "line", x1: 220, y1: 120, x2: 290, y2: 190, sw: 4 },
-
-        { t: "circle", cx: 55, cy: 255, r: 15, sw: 4 }, // anti-diagonal (r3c1)
-        { t: "line", x1: 120, y1: 220, x2: 190, y2: 290, sw: 4 },
-      ],
-    },
-    options: [
-      opt([{ t: "line", x1: 20, y1: 20, x2: 90, y2: 90, sw: 4 }]), // ✅ should be a diagonal line
-      opt([{ t: "circle", cx: 50, cy: 50, r: 15, sw: 4 }]),
-      opt([{ t: "line", x1: 20, y1: 80, x2: 80, y2: 20, sw: 4 }]),
-      opt([]),
-      opt([{ t: "circle", cx: 50, cy: 50, r: 30, sw: 4 }]),
-    ],
-    correct: 0,
-    explanation: "Only anti-diagonal cells are circles; the missing cell is not on that diagonal, so it is a diagonal line.",
-  },
-
-  // 15) Advanced: triangle rotation by row (up, right, down)
-  {
-    id: "iq-mixed-15",
-    domain: "visual",
-    type: "visual-matrix-3x3",
-    prompt: "Which option completes the pattern?",
-    questionSvg: {
-      viewBox: "0 0 330 330",
-      elements: [
-        { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
-
-        // Row1: up triangles
-        { t: "path", d: "M55 30 L80 80 L30 80 Z", sw: 4 },
-        { t: "path", d: "M155 30 L180 80 L130 80 Z", sw: 4 },
-        { t: "path", d: "M255 30 L280 80 L230 80 Z", sw: 4 },
-
-        // Row2: right triangles
-        { t: "path", d: "M80 155 L30 180 L30 130 Z", sw: 4 },
-        { t: "path", d: "M180 155 L130 180 L130 130 Z", sw: 4 },
-        { t: "path", d: "M280 155 L230 180 L230 130 Z", sw: 4 },
-
-        // Row3: down triangles (missing is down)
-        { t: "path", d: "M55 255 L80 205 L30 205 Z", sw: 4 },
-        { t: "path", d: "M155 255 L180 205 L130 205 Z", sw: 4 },
-      ],
-    },
-    options: [
-      opt([{ t: "path", d: "M50 80 L80 30 L20 30 Z", sw: 4 }]), // ✅ down
-      opt([{ t: "path", d: "M50 20 L80 70 L20 70 Z", sw: 4 }]),
-      opt([{ t: "path", d: "M20 50 L70 80 L70 20 Z", sw: 4 }]),
-      opt([{ t: "circle", cx: 50, cy: 50, r: 20, sw: 4 }]),
-      opt([]),
-    ],
-    correct: 0,
-    explanation: "Each row rotates the triangle by 90°: up → right → down.",
-  },
-
-  // 16) Advanced: arithmetic count (1 + 2 = 3) using small dots
-  {
-    id: "iq-mixed-16",
-    domain: "visual",
-    type: "visual-matrix-3x3",
-    prompt: "Which option completes the pattern?",
-    questionSvg: {
-      viewBox: "0 0 330 330",
-      elements: [
-        { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
-
-        // In each row: cell3 = cell1 + cell2 (dot count)
-        // Row1: 1 + 2 = 3
-        { t: "circle", cx: 55, cy: 55, r: 6, sw: 4 },
-        { t: "circle", cx: 145, cy: 55, r: 6, sw: 4 },
-        { t: "circle", cx: 165, cy: 55, r: 6, sw: 4 },
-
-        { t: "circle", cx: 235, cy: 55, r: 6, sw: 4 },
-        { t: "circle", cx: 255, cy: 55, r: 6, sw: 4 },
-        { t: "circle", cx: 275, cy: 55, r: 6, sw: 4 },
-
-        // Row2: 2 + 1 = 3
-        { t: "circle", cx: 45, cy: 155, r: 6, sw: 4 },
-        { t: "circle", cx: 65, cy: 155, r: 6, sw: 4 },
-        { t: "circle", cx: 155, cy: 155, r: 6, sw: 4 },
-        { t: "circle", cx: 235, cy: 155, r: 6, sw: 4 },
-        { t: "circle", cx: 255, cy: 155, r: 6, sw: 4 },
-        { t: "circle", cx: 275, cy: 155, r: 6, sw: 4 },
-
-        // Row3: 3 + 2 = 5 -> missing should have 5 dots
-        { t: "circle", cx: 35, cy: 255, r: 6, sw: 4 },
-        { t: "circle", cx: 55, cy: 255, r: 6, sw: 4 },
-        { t: "circle", cx: 75, cy: 255, r: 6, sw: 4 },
-
-        { t: "circle", cx: 145, cy: 255, r: 6, sw: 4 },
-        { t: "circle", cx: 165, cy: 255, r: 6, sw: 4 },
-      ],
-    },
-    options: [
-      opt([
-        { t: "circle", cx: 20, cy: 50, r: 6, sw: 4 },
-        { t: "circle", cx: 35, cy: 50, r: 6, sw: 4 },
-        { t: "circle", cx: 50, cy: 50, r: 6, sw: 4 },
-        { t: "circle", cx: 65, cy: 50, r: 6, sw: 4 },
-        { t: "circle", cx: 80, cy: 50, r: 6, sw: 4 },
-      ]), // ✅ 5 dots
-      opt([{ t: "circle", cx: 50, cy: 50, r: 6, sw: 4 }]),
-      opt([
-        { t: "circle", cx: 35, cy: 50, r: 6, sw: 4 },
-        { t: "circle", cx: 65, cy: 50, r: 6, sw: 4 },
-      ]),
-      opt([]),
-      opt([{ t: "rect", x: 25, y: 25, w: 50, h: 50, sw: 4 }]),
-    ],
-    correct: 0,
-    explanation: "Row rule: third cell equals the sum of dot counts in the first two cells.",
-  },
-
-  // 17) Advanced: X appears only when both diagonals present (AND)
-  {
-    id: "iq-mixed-17",
-    domain: "visual",
-    type: "visual-matrix-3x3",
-    prompt: "Which option completes the pattern?",
-    questionSvg: {
-      viewBox: "0 0 330 330",
-      elements: [
-        { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
-
-        // Some tiles have one diagonal, some have both (X). Missing should be X.
-        { t: "line", x1: 20, y1: 20, x2: 90, y2: 90, sw: 4 }, // \
-        { t: "line", x1: 120, y1: 90, x2: 190, y2: 20, sw: 4 }, // /
-        { t: "line", x1: 220, y1: 20, x2: 290, y2: 90, sw: 4 },
-        { t: "line", x1: 220, y1: 90, x2: 290, y2: 20, sw: 4 }, // X in r1c3
-
-        { t: "line", x1: 20, y1: 120, x2: 90, y2: 190, sw: 4 },
-        { t: "line", x1: 120, y1: 120, x2: 190, y2: 190, sw: 4 },
-        { t: "line", x1: 190, y1: 120, x2: 120, y2: 190, sw: 4 }, // X in r2c2
-
-        { t: "line", x1: 20, y1: 290, x2: 90, y2: 220, sw: 4 }, // /
-        { t: "line", x1: 120, y1: 220, x2: 190, y2: 290, sw: 4 }, // \
-      ],
-    },
-    options: [
-      opt([
-        { t: "line", x1: 20, y1: 20, x2: 90, y2: 90, sw: 4 },
-        { t: "line", x1: 90, y1: 20, x2: 20, y2: 90, sw: 4 },
-      ]), // ✅ X
-      opt([{ t: "line", x1: 20, y1: 20, x2: 90, y2: 90, sw: 4 }]),
-      opt([{ t: "line", x1: 20, y1: 90, x2: 90, y2: 20, sw: 4 }]),
-      opt([]),
-      opt([{ t: "circle", cx: 50, cy: 50, r: 30, sw: 4 }]),
-    ],
-    correct: 0,
-    explanation: "The missing tile must contain both diagonals (an X) to match the pattern of combined diagonals.",
-  },
-
-  // 18) Advanced: shrinking squares (strict size)
-  {
-    id: "iq-mixed-18",
-    domain: "visual",
-    type: "visual-matrix-3x3",
-    prompt: "Which option completes the pattern?",
-    questionSvg: {
-      viewBox: "0 0 330 330",
-      elements: [
-        { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
-
-        { t: "rect", x: 25, y: 25, w: 60, h: 60, sw: 4 },
-        { t: "rect", x: 130, y: 30, w: 50, h: 50, sw: 4 },
-        { t: "rect", x: 240, y: 35, w: 40, h: 40, sw: 4 },
-
-        { t: "rect", x: 25, y: 125, w: 60, h: 60, sw: 4 },
-        { t: "rect", x: 130, y: 130, w: 50, h: 50, sw: 4 },
-        { t: "rect", x: 240, y: 135, w: 40, h: 40, sw: 4 },
-
-        { t: "rect", x: 25, y: 225, w: 60, h: 60, sw: 4 },
-        { t: "rect", x: 130, y: 230, w: 50, h: 50, sw: 4 },
-      ],
-    },
-    options: [
-      opt([{ t: "rect", x: 45, y: 35, w: 40, h: 40, sw: 4 }]),
-      opt([{ t: "rect", x: 25, y: 35, w: 50, h: 50, sw: 4 }]),
-      opt([{ t: "rect", x: 35, y: 35, w: 30, h: 30, sw: 4 }]), // ✅ smallest
-      opt([]),
-      opt([{ t: "circle", cx: 50, cy: 50, r: 25, sw: 4 }]),
-    ],
-    correct: 2,
-    explanation: "Size decreases across columns; the missing is the smallest square.",
-  },
-
-  // 19) Advanced: two dots swap positions each row (mirror + swap)
-  {
-    id: "iq-mixed-19",
-    domain: "visual",
-    type: "visual-matrix-3x3",
-    prompt: "Which option completes the pattern?",
-    questionSvg: {
-      viewBox: "0 0 330 330",
-      elements: [
-        { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
-
-        // r1: (TL, BR)
-        { t: "circle", cx: 40, cy: 40, r: 10, sw: 4 },
-        { t: "circle", cx: 70, cy: 70, r: 10, sw: 4 },
-
-        { t: "circle", cx: 140, cy: 40, r: 10, sw: 4 },
-        { t: "circle", cx: 170, cy: 70, r: 10, sw: 4 },
-
-        { t: "circle", cx: 240, cy: 40, r: 10, sw: 4 },
-        { t: "circle", cx: 270, cy: 70, r: 10, sw: 4 },
-
-        // r2: swapped (TR, BL)
-        { t: "circle", cx: 70, cy: 140, r: 10, sw: 4 },
-        { t: "circle", cx: 40, cy: 170, r: 10, sw: 4 },
-
-        { t: "circle", cx: 170, cy: 140, r: 10, sw: 4 },
-        { t: "circle", cx: 140, cy: 170, r: 10, sw: 4 },
-
-        { t: "circle", cx: 270, cy: 140, r: 10, sw: 4 },
-        { t: "circle", cx: 240, cy: 170, r: 10, sw: 4 },
-
-        // r3 should go back to (TL, BR) pattern
-        { t: "circle", cx: 40, cy: 240, r: 10, sw: 4 },
-        { t: "circle", cx: 70, cy: 270, r: 10, sw: 4 },
-
-        { t: "circle", cx: 140, cy: 240, r: 10, sw: 4 },
-        { t: "circle", cx: 170, cy: 270, r: 10, sw: 4 },
-      ],
-    },
-    options: [
-      opt([
-        { t: "circle", cx: 70, cy: 30, r: 10, sw: 4 },
-        { t: "circle", cx: 30, cy: 70, r: 10, sw: 4 },
-      ]), // swapped (wrong)
-      opt([
-        { t: "circle", cx: 30, cy: 30, r: 10, sw: 4 },
-        { t: "circle", cx: 70, cy: 70, r: 10, sw: 4 },
-      ]), // ✅ TL + BR
-      opt([
-        { t: "circle", cx: 30, cy: 70, r: 10, sw: 4 },
-        { t: "circle", cx: 70, cy: 30, r: 10, sw: 4 },
-      ]),
-      opt([]),
-      opt([{ t: "circle", cx: 50, cy: 50, r: 20, sw: 4 }]),
-    ],
-    correct: 1,
-    explanation: "Rows alternate between (TL+BR) and (TR+BL). The last row returns to (TL+BR).",
-  },
-
-  // 20) Advanced: stroke count increases (1,2,3) and direction switches by row
-  {
-    id: "iq-mixed-20",
-    domain: "visual",
-    type: "visual-matrix-3x3",
-    prompt: "Which option completes the pattern?",
-    questionSvg: {
-      viewBox: "0 0 330 330",
-      elements: [
-        { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
-
-        // Row1: vertical strokes count 1,2,3
-        { t: "line", x1: 55, y1: 30, x2: 55, y2: 80, sw: 5 },
-
-        { t: "line", x1: 145, y1: 30, x2: 145, y2: 80, sw: 5 },
-        { t: "line", x1: 165, y1: 30, x2: 165, y2: 80, sw: 5 },
-
-        { t: "line", x1: 235, y1: 30, x2: 235, y2: 80, sw: 5 },
-        { t: "line", x1: 255, y1: 30, x2: 255, y2: 80, sw: 5 },
-        { t: "line", x1: 275, y1: 30, x2: 275, y2: 80, sw: 5 },
-
-        // Row2: horizontal strokes count 1,2,3
-        { t: "line", x1: 30, y1: 155, x2: 80, y2: 155, sw: 5 },
-
-        { t: "line", x1: 130, y1: 155, x2: 180, y2: 155, sw: 5 },
-        { t: "line", x1: 130, y1: 170, x2: 180, y2: 170, sw: 5 },
-
-        { t: "line", x1: 230, y1: 145, x2: 280, y2: 145, sw: 5 },
-        { t: "line", x1: 230, y1: 155, x2: 280, y2: 155, sw: 5 },
-        { t: "line", x1: 230, y1: 165, x2: 280, y2: 165, sw: 5 },
-
-        // Row3 should return to vertical strokes count 1,2,3; missing is 3 vertical
-        { t: "line", x1: 55, y1: 230, x2: 55, y2: 280, sw: 5 },
-
-        { t: "line", x1: 145, y1: 230, x2: 145, y2: 280, sw: 5 },
-        { t: "line", x1: 165, y1: 230, x2: 165, y2: 280, sw: 5 },
-      ],
-    },
-    options: [
-      opt([
-        { t: "line", x1: 30, y1: 20, x2: 30, y2: 80, sw: 5 },
-        { t: "line", x1: 50, y1: 20, x2: 50, y2: 80, sw: 5 },
-        { t: "line", x1: 70, y1: 20, x2: 70, y2: 80, sw: 5 },
-      ]), // ✅ 3 vertical strokes
-      opt([{ t: "line", x1: 20, y1: 55, x2: 80, y2: 55, sw: 5 }]),
-      opt([{ t: "line", x1: 55, y1: 20, x2: 55, y2: 80, sw: 5 }]),
-      opt([]),
-      opt([{ t: "circle", cx: 50, cy: 50, r: 25, sw: 4 }]),
-    ],
-    correct: 0,
-    explanation: "Rows alternate orientation (vertical/horizontal/vertical) while stroke count increases 1→2→3 by columns.",
-  },
-  // =========================================================
-  // 21–25: ADVANCED RAVEN (tam çift kural)
-  // =========================================================
-
-  // 21) Advanced: XOR + Satır bazlı 90° rotasyon
-  {
-    id: "iq-mixed-21",
-    domain: "visual",
-    type: "visual-matrix-3x3",
-    prompt: "Which option completes the pattern?",
-    questionSvg: {
-      viewBox: "0 0 330 330",
-      elements: [
-        // grid
-        { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
-
-        { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
-
-        { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
-
-        // KURAL: Her satırda C = XOR(A,B)
-        // KURAL 2: Satır aşağı indikçe sonuç 90° saat yönünde döner.
-        // R1: A=\ , B=+ => XOR => ( + kalır, \ silinir ) -> sadece +? (burada A ve B farklı, XOR birleşim gibi)
-        // Biz XOR'u "aynı çizgi varsa iptal" olarak kuruyoruz.
-        // A: "\"  B: "\" + "|"  => XOR => "|"
-        // R2: A: "/"  B: "/" + "-" => XOR => "-"  (satır 2'de)
-        // R3: A: "|"  B: "|" + "\" => XOR => "\" (sonuç 90° dönüşle eşleşecek)
-
-        // Row1 col1: "\" 
-        { t: "line", x1: 25, y1: 25, x2: 95, y2: 95, sw: 6 },
-        // Row1 col2: "\" + "|"  (paylaşılan "\" iptal => "|" kalır)
-        { t: "line", x1: 125, y1: 25, x2: 195, y2: 95, sw: 6 },
-        { t: "line", x1: 155, y1: 25, x2: 155, y2: 95, sw: 6 },
-        // Row1 col3: "|"  (sonuç)
-        { t: "line", x1: 255, y1: 25, x2: 255, y2: 95, sw: 6 },
-
-        // Row2 col1: "/" 
-        { t: "line", x1: 25, y1: 195, x2: 95, y2: 125, sw: 6 },
-        // Row2 col2: "/" + "-"  (paylaşılan "/" iptal => "-" kalır)
-        { t: "line", x1: 125, y1: 195, x2: 195, y2: 125, sw: 6 },
-        { t: "line", x1: 125, y1: 155, x2: 195, y2: 155, sw: 6 },
-        // Row2 col3: "-" (sonuç)
-        { t: "line", x1: 225, y1: 155, x2: 295, y2: 155, sw: 6 },
-
-        // Row3 col1: "|" 
-        { t: "line", x1: 55, y1: 225, x2: 55, y2: 295, sw: 6 },
-        // Row3 col2: "|" + "\"  (paylaşılan "|" iptal => "\" kalır)
-        { t: "line", x1: 155, y1: 225, x2: 155, y2: 295, sw: 6 },
-        { t: "line", x1: 125, y1: 225, x2: 195, y2: 295, sw: 6 },
-      ],
-    },
-    options: [
-      opt([{ t: "line", x1: 20, y1: 20, x2: 80, y2: 80, sw: 6 }]), // ✅ "\"  (kural sonucu)
-      opt([{ t: "line", x1: 20, y1: 80, x2: 80, y2: 20, sw: 6 }]), // "/"
-      opt([{ t: "line", x1: 50, y1: 20, x2: 50, y2: 80, sw: 6 }]), // "|"
-      opt([{ t: "line", x1: 20, y1: 50, x2: 80, y2: 50, sw: 6 }]), // "-"
-      opt([
-        { t: "line", x1: 20, y1: 20, x2: 80, y2: 80, sw: 6 },
-        { t: "line", x1: 20, y1: 80, x2: 80, y2: 20, sw: 6 },
-      ]), // "X"
-    ],
-    correct: 0,
-  },
-
-  // 22) Advanced: UNION (birleştir) + Sütun başına şekil sayısı artışı
-  {
-    id: "iq-mixed-22",
-    domain: "visual",
-    type: "visual-matrix-3x3",
-    prompt: "Which option completes the pattern?",
-    questionSvg: {
-      viewBox: "0 0 330 330",
-      elements: [
-        // grid
-        { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
-
-        // KURAL1: Her satırda C = A ∪ B (birleştir)
-        // KURAL2: Sütun ilerledikçe "köşe işareti sayısı" 1→2→3 artar.
-
-        // Row1: A=TL, B=TR => C=TL+TR
-        { t: "circle", cx: 30, cy: 30, r: 6, sw: 4 },
-        { t: "circle", cx: 170, cy: 30, r: 6, sw: 4 },
-        { t: "circle", cx: 230, cy: 30, r: 6, sw: 4 },
-        { t: "circle", cx: 290, cy: 30, r: 6, sw: 4 },
-
-        // Row2: A=BL, B=BR => C=BL+BR
-        { t: "circle", cx: 30, cy: 170, r: 6, sw: 4 },
-        { t: "circle", cx: 170, cy: 170, r: 6, sw: 4 },
-        { t: "circle", cx: 230, cy: 290, r: 6, sw: 4 },
-        { t: "circle", cx: 290, cy: 290, r: 6, sw: 4 },
-
-        // Row3: A=TL+BL, B=TR (=> C=TL+BL+TR)  (3 işaret)
-        { t: "circle", cx: 30, cy: 230, r: 6, sw: 4 },
-        { t: "circle", cx: 30, cy: 290, r: 6, sw: 4 },
-        { t: "circle", cx: 170, cy: 230, r: 6, sw: 4 },
-      ],
-    },
-    options: [
-      opt([
-        { t: "circle", cx: 25, cy: 25, r: 6, sw: 4 },
-        { t: "circle", cx: 25, cy: 75, r: 6, sw: 4 },
-        { t: "circle", cx: 75, cy: 25, r: 6, sw: 4 },
-      ]), // ✅ TL + BL + TR
-      opt([
-        { t: "circle", cx: 75, cy: 25, r: 6, sw: 4 },
-        { t: "circle", cx: 75, cy: 75, r: 6, sw: 4 },
-        { t: "circle", cx: 25, cy: 75, r: 6, sw: 4 },
-      ]), // TR + BR + BL (tuzak)
-      opt([
-        { t: "circle", cx: 25, cy: 25, r: 6, sw: 4 },
-        { t: "circle", cx: 75, cy: 25, r: 6, sw: 4 },
-      ]), // 2 adet (eksik)
-      opt([{ t: "circle", cx: 25, cy: 25, r: 6, sw: 4 }]), // 1 adet
-      opt([
-        { t: "circle", cx: 25, cy: 25, r: 6, sw: 4 },
-        { t: "circle", cx: 75, cy: 25, r: 6, sw: 4 },
-        { t: "circle", cx: 25, cy: 75, r: 6, sw: 4 },
-        { t: "circle", cx: 75, cy: 75, r: 6, sw: 4 },
-      ]), // 4 adet (fazla)
-    ],
-    correct: 0,
-  },
-
-  // 23) Advanced: Şekil tipi dönüşümü + Satırda "büyük/küçük" terslenmesi
-  {
-    id: "iq-mixed-23",
-    domain: "visual",
-    type: "visual-matrix-3x3",
-    prompt: "Which option completes the pattern?",
-    questionSvg: {
-      viewBox: "0 0 330 330",
-      elements: [
-        // grid
-        { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
-
-        // KURAL1: Sütunlarda şekil dönüşür: daire → kare → üçgen
-        // KURAL2: Satır aşağı indikçe BOYUT terslenir (büyük/küçük)
-        // Row1: büyük
-        { t: "circle", cx: 55, cy: 55, r: 20, sw: 4 },
-        { t: "rect", x: 140, y: 35, w: 40, h: 40, sw: 4 },
-        { t: "path", d: "M255 30 L280 80 L230 80 Z", sw: 4 },
-
-        // Row2: küçük
-        { t: "circle", cx: 55, cy: 155, r: 10, sw: 4 },
-        { t: "rect", x: 150, y: 145, w: 20, h: 20, sw: 4 },
-        { t: "path", d: "M255 140 L268 168 L242 168 Z", sw: 4 },
-
-        // Row3: büyük (tersleme geri)
-        { t: "circle", cx: 55, cy: 255, r: 20, sw: 4 },
-        { t: "rect", x: 140, y: 235, w: 40, h: 40, sw: 4 },
-      ],
-    },
-    options: [
-      opt([{ t: "path", d: "M50 20 L80 70 L20 70 Z", sw: 4 }]), // ✅ büyük üçgen (Row3 col3)
-      opt([{ t: "path", d: "M50 35 L65 65 L35 65 Z", sw: 4 }]), // küçük üçgen (tuzak)
-      opt([{ t: "rect", x: 30, y: 30, w: 40, h: 40, sw: 4 }]), // kare (yanlış tip)
-      opt([{ t: "circle", cx: 50, cy: 50, r: 20, sw: 4 }]), // daire (yanlış tip)
-      opt([]),
-    ],
-    correct: 0,
-  },
-
-  // 24) Advanced: Çizgi sayısı 1→2→3 + Yön satıra göre değişir (V/H/Diagonal)
-  {
-    id: "iq-mixed-24",
-    domain: "visual",
-    type: "visual-matrix-3x3",
-    prompt: "Which option completes the pattern?",
-    questionSvg: {
-      viewBox: "0 0 330 330",
-      elements: [
-        // grid
-        { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
-
-        // KURAL1: Sütunlar çizgi sayısını belirler: 1,2,3
-        // KURAL2: Satır yönü belirler: Row1=Vertical, Row2=Horizontal, Row3=Diagonal "\"
-
-        // Row1 vertical
-        { t: "line", x1: 55, y1: 25, x2: 55, y2: 95, sw: 5 },
-        { t: "line", x1: 145, y1: 25, x2: 145, y2: 95, sw: 5 },
-        { t: "line", x1: 165, y1: 25, x2: 165, y2: 95, sw: 5 },
-        { t: "line", x1: 235, y1: 25, x2: 235, y2: 95, sw: 5 },
-        { t: "line", x1: 255, y1: 25, x2: 255, y2: 95, sw: 5 },
-        { t: "line", x1: 275, y1: 25, x2: 275, y2: 95, sw: 5 },
-
-        // Row2 horizontal
-        { t: "line", x1: 25, y1: 155, x2: 95, y2: 155, sw: 5 },
-        { t: "line", x1: 125, y1: 145, x2: 195, y2: 145, sw: 5 },
-        { t: "line", x1: 125, y1: 165, x2: 195, y2: 165, sw: 5 },
-        { t: "line", x1: 225, y1: 140, x2: 295, y2: 140, sw: 5 },
-        { t: "line", x1: 225, y1: 155, x2: 295, y2: 155, sw: 5 },
-        { t: "line", x1: 225, y1: 170, x2: 295, y2: 170, sw: 5 },
-
-        // Row3 diagonal "\" (missing is 3 diagonals)
-        { t: "line", x1: 25, y1: 225, x2: 95, y2: 295, sw: 5 },
-        { t: "line", x1: 125, y1: 225, x2: 195, y2: 295, sw: 5 },
-        { t: "line", x1: 140, y1: 225, x2: 210, y2: 295, sw: 5 },
-      ],
-    },
-    options: [
-      opt([
-        { t: "line", x1: 20, y1: 20, x2: 80, y2: 80, sw: 5 },
-        { t: "line", x1: 30, y1: 20, x2: 90, y2: 80, sw: 5 },
-        { t: "line", x1: 40, y1: 20, x2: 100, y2: 80, sw: 5 },
-      ]), // ✅ 3 diagonal "\"
-      opt([
-        { t: "line", x1: 20, y1: 80, x2: 80, y2: 20, sw: 5 },
-        { t: "line", x1: 30, y1: 80, x2: 90, y2: 20, sw: 5 },
-        { t: "line", x1: 40, y1: 80, x2: 100, y2: 20, sw: 5 },
-      ]), // 3 diagonal "/" (tuzak)
-      opt([
-        { t: "line", x1: 20, y1: 20, x2: 80, y2: 80, sw: 5 },
-        { t: "line", x1: 35, y1: 20, x2: 95, y2: 80, sw: 5 },
-      ]), // 2 diagonal (eksik)
-      opt([{ t: "line", x1: 20, y1: 20, x2: 80, y2: 80, sw: 5 }]), // 1 diagonal
-      opt([]),
-    ],
-    correct: 0,
-  },
-
-  // 25) Advanced: AND (kesişim) + Konum kaydırma (satır aşağı: sağa kayar)
-  {
-    id: "iq-mixed-25",
-    domain: "visual",
-    type: "visual-matrix-3x3",
-    prompt: "Which option completes the pattern?",
-    questionSvg: {
-      viewBox: "0 0 330 330",
-      elements: [
-        // grid
-        { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
-        { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
-
-        // KURAL1: C = A ∩ B (ortak olan işaret kalır)
-        // KURAL2: Satır aşağı indikçe "işaret konumu" 1 adım sağa kayar (sol→orta→sağ)
-
-        // Row1: A=sol-kare, B=sol-kare + sağ-daire => Kesişim = sol-kare
-        { t: "rect", x: 25, y: 35, w: 30, h: 30, sw: 4 }, // A1
-        { t: "rect", x: 125, y: 35, w: 30, h: 30, sw: 4 }, // B1 ortak kare
-        { t: "circle", cx: 185, cy: 55, r: 12, sw: 4 },     // B1 ekstra
-        { t: "rect", x: 225, y: 35, w: 30, h: 30, sw: 4 },  // C1 (kesişim kare)
-
-        // Row2: kayma -> orta
-        { t: "rect", x: 35, y: 135, w: 30, h: 30, sw: 4 }, // A2 orta
-        { t: "rect", x: 135, y: 135, w: 30, h: 30, sw: 4 }, // B2 ortak
-        { t: "circle", cx: 125, cy: 155, r: 12, sw: 4 },     // B2 ekstra
-        { t: "rect", x: 235, y: 135, w: 30, h: 30, sw: 4 },  // C2 (kesişim)
-
-        // Row3: kayma -> sağ  (A3 sağ-kare, B3 sağ-kare + sol-daire => kesişim sağ-kare)
-        { t: "rect", x: 45, y: 235, w: 30, h: 30, sw: 4 }, // A3 daha sağa (kayma)
-        { t: "rect", x: 145, y: 235, w: 30, h: 30, sw: 4 }, // B3 ortak kare
-        { t: "circle", cx: 125, cy: 255, r: 12, sw: 4 },     // B3 ekstra
-      ],
-    },
-    options: [
-      opt([{ t: "rect", x: 55, y: 35, w: 30, h: 30, sw: 4 }]), // ✅ sağa kaymış kare
-      opt([{ t: "circle", cx: 50, cy: 50, r: 12, sw: 4 }]),
-      opt([
-        { t: "rect", x: 35, y: 35, w: 30, h: 30, sw: 4 },
-        { t: "circle", cx: 75, cy: 55, r: 12, sw: 4 },
-      ]),
-      opt([{ t: "rect", x: 25, y: 35, w: 30, h: 30, sw: 4 }]), // sol kare (tuzak)
-      opt([]),
-    ],
-    correct: 0,
-  },
-  // =========================================================
-// 26–30: EXTREME RAVEN (çift kural + tuzak) — TS UYUMLU
-// =========================================================
-
-// 26) EXTREME: Row rule = XOR (shape cancels), Column rule = position shift
-{
-  id: "iq-mixed-26",
-  domain: "visual",
-  type: "visual-matrix-3x3",
-  prompt: "Which option completes the pattern?",
-  questionSvg: {
-    viewBox: "0 0 330 330",
-    elements: [
-      // grid
-      { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
-
-      { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
-
-      { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
-
-      // Row1
-      { t: "circle", cx: 35, cy: 55, r: 14, sw: 4 }, // A: circle (left)
-      { t: "circle", cx: 155, cy: 55, r: 14, sw: 4 }, // B: circle+square (center)
-      { t: "rect", x: 145, y: 45, w: 20, h: 20, sw: 4 },
-      { t: "rect", x: 265, y: 45, w: 20, h: 20, sw: 4 }, // C: square (right)
-
-      // Row2
-      { t: "rect", x: 25, y: 145, w: 20, h: 20, sw: 4 }, // A: square (left)
-      { t: "circle", cx: 155, cy: 155, r: 14, sw: 4 }, // B: circle+square (center)
-      { t: "rect", x: 145, y: 145, w: 20, h: 20, sw: 4 },
-      { t: "circle", cx: 275, cy: 155, r: 14, sw: 4 }, // C: circle (right)
-
-      // Row3
-      { t: "circle", cx: 35, cy: 255, r: 14, sw: 4 }, // A: circle+square (left)
-      { t: "rect", x: 25, y: 245, w: 20, h: 20, sw: 4 },
-      { t: "circle", cx: 155, cy: 255, r: 14, sw: 4 }, // B: circle (center) -> XOR => square (right)
-    ],
-  },
-  options: [
-    opt([{ t: "rect", x: 60, y: 40, w: 20, h: 20, sw: 4 }]), // ✅ square (right)
-    opt([{ t: "circle", cx: 50, cy: 50, r: 14, sw: 4 }]),
-    opt([{ t: "circle", cx: 50, cy: 50, r: 14, sw: 4 }, { t: "rect", x: 40, y: 40, w: 20, h: 20, sw: 4 }]),
-    opt([{ t: "rect", x: 20, y: 40, w: 20, h: 20, sw: 4 }]), // tuzak: left
-    opt([]),
-  ],
-  correct: 0,
-},
-
-// 27) EXTREME: Column rotation 0/90/180, Row count 1/2/3
-{
-  id: "iq-mixed-27",
-  domain: "visual",
-  type: "visual-matrix-3x3",
-  prompt: "Which option completes the pattern?",
-  questionSvg: {
-    viewBox: "0 0 330 330",
-    elements: [
-      // grid
-      { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
-
-      // r1: 1 arrow up/right/down
-      { t: "path", d: "M55 25 L75 70 L35 70 Z", sw: 4 },
-      { t: "path", d: "M175 55 L130 75 L130 35 Z", sw: 4 },
-      { t: "path", d: "M255 75 L275 30 L235 30 Z", sw: 4 },
-
-      // r2: 2 arrows
-      { t: "path", d: "M45 125 L60 160 L30 160 Z", sw: 4 },
-      { t: "path", d: "M70 125 L85 160 L55 160 Z", sw: 4 },
-
-      { t: "path", d: "M165 155 L135 170 L135 140 Z", sw: 4 },
-      { t: "path", d: "M185 155 L155 170 L155 140 Z", sw: 4 },
-
-      { t: "path", d: "M245 175 L260 135 L230 135 Z", sw: 4 },
-      { t: "path", d: "M270 175 L285 135 L255 135 Z", sw: 4 },
-
-      // r3: 3 arrows up/right/(missing down)
-      { t: "path", d: "M35 225 L48 255 L22 255 Z", sw: 4 },
-      { t: "path", d: "M55 225 L68 255 L42 255 Z", sw: 4 },
-      { t: "path", d: "M75 225 L88 255 L62 255 Z", sw: 4 },
-
-      { t: "path", d: "M155 255 L125 270 L125 240 Z", sw: 4 },
-      { t: "path", d: "M175 255 L145 270 L145 240 Z", sw: 4 },
-      { t: "path", d: "M195 255 L165 270 L165 240 Z", sw: 4 },
-    ],
-  },
-  options: [
-    opt([
-      { t: "path", d: "M20 70 L35 30 L5 30 Z", sw: 4 },
-      { t: "path", d: "M50 70 L65 30 L35 30 Z", sw: 4 },
-      { t: "path", d: "M80 70 L95 30 L65 30 Z", sw: 4 },
-    ]), // ✅ 3 down
-    opt([
-      { t: "path", d: "M20 30 L35 70 L5 70 Z", sw: 4 },
-      { t: "path", d: "M50 30 L65 70 L35 70 Z", sw: 4 },
-      { t: "path", d: "M80 30 L95 70 L65 70 Z", sw: 4 },
-    ]), // tuzak: 3 up
-    opt([
-      { t: "path", d: "M80 50 L30 70 L30 30 Z", sw: 4 },
-      { t: "path", d: "M80 50 L50 70 L50 30 Z", sw: 4 },
-      { t: "path", d: "M80 50 L70 70 L70 30 Z", sw: 4 },
-    ]), // tuzak: 3 right
-    opt([]),
-    opt([{ t: "path", d: "M50 75 L75 30 L25 30 Z", sw: 4 }]),
-  ],
-  correct: 0,
-},
-
-// 28) EXTREME: union of corners; size encodes column (large for row3)
-{
-  id: "iq-mixed-28",
-  domain: "visual",
-  type: "visual-matrix-3x3",
-  prompt: "Which option completes the pattern?",
-  questionSvg: {
-    viewBox: "0 0 330 330",
-    elements: [
-      // grid
-      { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
-
-      // Row1 small
-      { t: "circle", cx: 30, cy: 30, r: 6, sw: 4 },
-      { t: "circle", cx: 190, cy: 30, r: 6, sw: 4 },
-      { t: "circle", cx: 230, cy: 30, r: 6, sw: 4 },
-      { t: "circle", cx: 290, cy: 30, r: 6, sw: 4 },
-
-      // Row2 medium
-      { t: "circle", cx: 30, cy: 190, r: 10, sw: 4 },
-      { t: "circle", cx: 190, cy: 190, r: 10, sw: 4 },
-      { t: "circle", cx: 230, cy: 290, r: 10, sw: 4 },
-      { t: "circle", cx: 290, cy: 290, r: 10, sw: 4 },
-
-      // Row3 large (left side + right side)
-      { t: "circle", cx: 30, cy: 230, r: 14, sw: 4 },
-      { t: "circle", cx: 30, cy: 290, r: 14, sw: 4 },
-      { t: "circle", cx: 190, cy: 230, r: 14, sw: 4 },
-      { t: "circle", cx: 190, cy: 290, r: 14, sw: 4 },
-    ],
-  },
-  options: [
-    opt([
-      { t: "circle", cx: 25, cy: 25, r: 14, sw: 4 },
-      { t: "circle", cx: 75, cy: 25, r: 14, sw: 4 },
-      { t: "circle", cx: 25, cy: 75, r: 14, sw: 4 },
-      { t: "circle", cx: 75, cy: 75, r: 14, sw: 4 },
-    ]), // ✅ all four corners
-    opt([{ t: "circle", cx: 25, cy: 25, r: 14, sw: 4 }, { t: "circle", cx: 75, cy: 25, r: 14, sw: 4 }]),
-    opt([
-      { t: "circle", cx: 25, cy: 25, r: 10, sw: 4 },
-      { t: "circle", cx: 75, cy: 25, r: 10, sw: 4 },
-      { t: "circle", cx: 25, cy: 75, r: 10, sw: 4 },
-      { t: "circle", cx: 75, cy: 75, r: 10, sw: 4 },
-    ]), // tuzak: medium
-    opt([]),
-    opt([{ t: "circle", cx: 50, cy: 50, r: 14, sw: 4 }]),
-  ],
-  correct: 0,
-},
-
-// 29) EXTREME: anti-diagonal = X, others = O
-{
-  id: "iq-mixed-29",
-  domain: "visual",
-  type: "visual-matrix-3x3",
-  prompt: "Which option completes the pattern?",
-  questionSvg: {
-    viewBox: "0 0 330 330",
-    elements: [
-      // grid
-      { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
-
-      { t: "circle", cx: 55, cy: 55, r: 18, sw: 4 },
-      { t: "circle", cx: 155, cy: 55, r: 18, sw: 4 },
-      { t: "line", x1: 230, y1: 30, x2: 280, y2: 80, sw: 4 },
-      { t: "line", x1: 280, y1: 30, x2: 230, y2: 80, sw: 4 },
-
-      { t: "circle", cx: 55, cy: 155, r: 18, sw: 4 },
-      { t: "line", x1: 130, y1: 130, x2: 180, y2: 180, sw: 4 },
-      { t: "line", x1: 180, y1: 130, x2: 130, y2: 180, sw: 4 },
-      { t: "circle", cx: 255, cy: 155, r: 18, sw: 4 },
-
-      { t: "line", x1: 30, y1: 230, x2: 80, y2: 280, sw: 4 },
-      { t: "line", x1: 80, y1: 230, x2: 30, y2: 280, sw: 4 },
-      { t: "circle", cx: 155, cy: 255, r: 18, sw: 4 },
-    ],
-  },
-  options: [
-    opt([{ t: "circle", cx: 50, cy: 50, r: 18, sw: 4 }]), // ✅ circle
-    opt([{ t: "line", x1: 20, y1: 20, x2: 80, y2: 80, sw: 4 }, { t: "line", x1: 80, y1: 20, x2: 20, y2: 80, sw: 4 }]),
-    opt([]),
-    opt([{ t: "circle", cx: 50, cy: 50, r: 10, sw: 4 }]),
-    opt([{ t: "rect", x: 30, y: 30, w: 40, h: 40, sw: 4 }]),
-  ],
-  correct: 0,
-},
-
-// 30) EXTREME: add, subtract, add (dot arithmetic) => 4 dots
-{
-  id: "iq-mixed-30",
-  domain: "visual",
-  type: "visual-matrix-3x3",
-  prompt: "Which option completes the pattern?",
-  questionSvg: {
-    viewBox: "0 0 330 330",
-    elements: [
-      // grid
-      { t: "rect", x: 10, y: 10, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 110, y: 10, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 210, y: 10, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 10, y: 110, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 110, y: 110, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 210, y: 110, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 10, y: 210, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 110, y: 210, w: 90, h: 90, sw: 4 },
-      { t: "rect", x: 210, y: 210, w: 90, h: 90, sw: 4, dash: true },
-
-      // Row1: 1 + 2 = 3
-      { t: "circle", cx: 55, cy: 55, r: 6, sw: 4 },
-      { t: "circle", cx: 145, cy: 55, r: 6, sw: 4 },
-      { t: "circle", cx: 165, cy: 55, r: 6, sw: 4 },
-      { t: "circle", cx: 235, cy: 55, r: 6, sw: 4 },
-      { t: "circle", cx: 255, cy: 55, r: 6, sw: 4 },
-      { t: "circle", cx: 275, cy: 55, r: 6, sw: 4 },
-
-      // Row2: 4 - 1 = 3
-      { t: "circle", cx: 35, cy: 155, r: 6, sw: 4 },
-      { t: "circle", cx: 50, cy: 155, r: 6, sw: 4 },
-      { t: "circle", cx: 65, cy: 155, r: 6, sw: 4 },
-      { t: "circle", cx: 80, cy: 155, r: 6, sw: 4 },
-      { t: "circle", cx: 155, cy: 155, r: 6, sw: 4 },
-      { t: "circle", cx: 235, cy: 155, r: 6, sw: 4 },
-      { t: "circle", cx: 255, cy: 155, r: 6, sw: 4 },
-      { t: "circle", cx: 275, cy: 155, r: 6, sw: 4 },
-
-      // Row3: 2 + 2 = 4 (missing)
-      { t: "circle", cx: 45, cy: 255, r: 6, sw: 4 },
-      { t: "circle", cx: 65, cy: 255, r: 6, sw: 4 },
-      { t: "circle", cx: 145, cy: 255, r: 6, sw: 4 },
-      { t: "circle", cx: 165, cy: 255, r: 6, sw: 4 },
-    ],
-  },
-  options: [
-    opt([
-      { t: "circle", cx: 25, cy: 50, r: 6, sw: 4 },
-      { t: "circle", cx: 40, cy: 50, r: 6, sw: 4 },
-      { t: "circle", cx: 60, cy: 50, r: 6, sw: 4 },
-      { t: "circle", cx: 75, cy: 50, r: 6, sw: 4 },
-    ]), // ✅ 4 dots
-    opt([{ t: "circle", cx: 35, cy: 50, r: 6, sw: 4 }, { t: "circle", cx: 65, cy: 50, r: 6, sw: 4 }]),
-    opt([{ t: "circle", cx: 25, cy: 50, r: 6, sw: 4 }, { t: "circle", cx: 40, cy: 50, r: 6, sw: 4 }, { t: "circle", cx: 55, cy: 50, r: 6, sw: 4 }]),
-    opt([]),
-    opt([{ t: "circle", cx: 50, cy: 50, r: 20, sw: 4 }]),
-  ],
-  correct: 0,
-},
-  
+const single = (shape: Shape): VisualCell => ({ elements: [shapeElement(shape, 50, 50, 45)], description: `Ortada içi boş ${names[shape]}` });
+const grid = (n = 3): VisualElement[] => Array.from({ length: n + 1 }, (_, i) => [
+  { kind: 'line' as const, x1: 17 + i * 66 / n, y1: 17, x2: 17 + i * 66 / n, y2: 83, strokeWidth: 0.8 },
+  { kind: 'line' as const, x1: 17, y1: 17 + i * 66 / n, x2: 83, y2: 17 + i * 66 / n, strokeWidth: 0.8 },
+]).flat();
+const tiles = (indices: number[], n = 3): VisualCell => ({
+  elements: [...grid(n), ...sorted(indices).map(i => ({ kind: 'rect' as const, x: 17 + i % n * 66 / n + 1.6, y: 17 + Math.floor(i / n) * 66 / n + 1.6, width: 66 / n - 3.2, height: 66 / n - 3.2, fill: true, strokeWidth: 0.4 }))],
+  description: `${n} × ${n} ızgara; dolu kareler: ${sorted(indices).map(i => location(i, n)).join('; ')}`,
+});
+const positions = (dot: number, square?: number, n = 3): VisualCell => {
+  const pt = (i: number) => [17 + (i % n + 0.5) * 66 / n, 17 + (Math.floor(i / n) + 0.5) * 66 / n];
+  const [cx, cy] = pt(dot);
+  const elements: VisualElement[] = [...grid(n), { kind: 'circle', cx, cy, r: 5, fill: true }];
+  if (square !== undefined) { const [x, y] = pt(square); elements.push(shapeElement('square', x, y, 11)); }
+  return { elements, description: `${n} × ${n} ızgara; dolu nokta ${location(dot, n)}${square === undefined ? '' : `; içi boş kare ${location(square, n)}`}` };
+};
+const arrow = (direction: number, smallDots = 0, orbit?: number): VisualCell => {
+  const vertices = [[0, -25], [15, -8], [6, -8], [6, 23], [-6, 23], [-6, -8], [-15, -8]];
+  const angle = direction * Math.PI / 2;
+  const points = vertices.map(([x, y]) => [50 + x * Math.cos(angle) - y * Math.sin(angle), 45 + x * Math.sin(angle) + y * Math.cos(angle)]);
+  const elements: VisualElement[] = [{ kind: 'path', d: points.map(([x, y], i) => `${i ? 'L' : 'M'} ${x.toFixed(3)} ${y.toFixed(3)}`).join(' ') + ' Z', fill: true }];
+  for (let i = 0; i < smallDots; i++) elements.push({ kind: 'circle', cx: 14 + i * 15, cy: 86, r: 4, fill: true });
+  if (orbit !== undefined) { const p = [[15, 15], [85, 15], [85, 75], [15, 75]][orbit]; elements.push({ kind: 'circle', cx: p[0], cy: p[1], r: 5 }); }
+  return { elements, description: `${dirs[direction % 4]} bakan ok${smallDots ? `; altta ${smallDots} dolu nokta` : ''}${orbit === undefined ? '' : `; ${['sol üst', 'sağ üst', 'sağ alt', 'sol alt'][orbit]} köşede içi boş daire`}` };
+};
+const fold = (indices: number[], both = false): VisualCell => ({
+  ...tiles(indices, 4),
+  elements: [...tiles(indices, 4).elements, { kind: 'line', x1: 50, y1: 8, x2: 50, y2: 92, dashed: true, strokeWidth: 2 }, ...(both ? [{ kind: 'line' as const, x1: 8, y1: 50, x2: 92, y2: 50, dashed: true, strokeWidth: 2 }] : [])],
+  description: `${tiles(indices, 4).description}; ortada dikey${both ? ' ve yatay' : ''} kesik yansıma çizgisi`,
+});
+const perimeter = [0, 1, 2, 5, 8, 7, 6, 3];
+const orbitPair = (black: number, ring: number): VisualCell => {
+  const pt = (i: number) => [28 + i % 3 * 22, 28 + Math.floor(i / 3) * 22];
+  const [bx, by] = pt(black); const [rx, ry] = pt(ring);
+  return { elements: [...grid(), shapeElement('square', bx, by, 9, true), { kind: 'circle', cx: rx, cy: ry, r: 9 }], description: `3 × 3 ızgara; küçük dolu kare ${location(black, 3)}; içi boş büyük daire ${location(ring, 3)}${black === ring ? '; iki işaret aynı hücrede' : ''}` };
+};
+const figure = (cells: (VisualCell | null)[], columns: number, sequence = false): VisualFigureData => ({
+  columns, cells, sequence,
+  label: `${sequence ? 'Numaralı örüntü' : 'Şekil düzeni'}; ${columns} sütun. ${cells.map((c, i) => `${i + 1}. hücre: ${c?.description ?? 'soru işareti, eksik hücre'}`).join('. ')}`,
+});
+const option = (cell: VisualCell) => ({ figure: figure([cell], 1), label: cell.description });
+const make = (n: number, category: Category, prompt: string, cells: (VisualCell | null)[], columns: number, answer: VisualCell, distractors: VisualCell[], explanation: string): VisualQuestion => {
+  const correct = (n - 1) % 4;
+  const opts = distractors.map(option); opts.splice(correct, 0, option(answer));
+  return { id: `vr-${String(n).padStart(2, '0')}`, category, prompt, figure: figure(cells, columns, category === 'sequence' || [3, 4, 15, 16].includes(n)), options: opts, correct, explanation };
+};
+const seq = 'Numaralı hücreleri sırayla izleyin. Soru işaretinin yerine hangisi gelmeli?';
+const matrix = 'Her satırda aynı ilişki geçerli. Soru işaretinin yerine hangi şekil gelmeli?';
+const L = [0, 3, 6, 7];
+const F = [1, 2, 3, 4, 7];
+
+export const questions: VisualQuestion[] = [
+  make(1, 'sequence', seq, [count(1), count(2), count(3), count(4), null], 3,
+    count(5), [count(3), count(4), count(6)], 'Her adımda bir daire ekleniyor: 1, 2, 3, 4, 5. Eksik hücrede beş daire olmalı.'),
+  make(2, 'matrix', 'Her satır ve sütunda üç farklı şekilden birer tane var. Eksik şekil hangisi?',
+    [single('circle'), single('square'), single('triangle'), single('square'), single('triangle'), single('circle'), single('triangle'), single('circle'), null], 3,
+    single('square'), [single('circle'), single('triangle'), count(2, 'square')], 'Son satırda ve son sütunda daire ile üçgen zaten var. Eksik olan tek kare; her hücrede yalnızca bir şekil bulunuyor.'),
+  make(3, 'rotation', 'Ok her adımda aynı yönde çeyrek tur dönüyor. Son hücrede hangi ok olmalı?',
+    [arrow(0), arrow(1), arrow(2), arrow(3), null], 3,
+    arrow(0), [arrow(1), arrow(2), arrow(3)], 'Ok her adımda saat yönünde 90° dönüyor: yukarı, sağ, aşağı, sol; ardından yeniden yukarı.'),
+  make(4, 'spatial', 'Nokta her adımda sağdaki komşu hücreye geçiyor; satırın sonundan sonra aynı satırın başına dönüyor. Eksik konum hangisi?',
+    [positions(3), positions(4), positions(5), null], 2,
+    positions(3), [positions(0), positions(4), positions(6)], 'Nokta orta satırda sağa ilerliyor. Orta sağ hücreden sonra aynı satırın en soluna, yani 2. satır 1. sütuna döner.'),
+  make(5, 'sequence', seq, [count(1, 'circle'), count(2, 'square'), count(3, 'circle'), count(4, 'square'), null], 3,
+    count(5, 'circle'), [count(5, 'square'), count(4, 'circle'), count(6, 'circle')], 'Şekil sayısı her adımda bir artıyor; daire ve kare sırayla değişiyor. Beşinci hücre beş daire içerir.'),
+  make(6, 'matrix', matrix, [count(1), count(2), count(3), count(2), count(2), count(4), count(1), count(3), null], 3,
+    count(4), [count(2), count(3), count(5)], 'Her satırda ilk iki hücrenin daire sayıları toplanıyor: 1 + 2 = 3 ve 2 + 2 = 4. Son satırda 1 + 3 = 4.'),
+  make(7, 'rotation', 'Üst sırada soldaki şekle uygulanan döndürmeyi, alt sıradaki şekle de uygulayın. Eksik şekil hangisi?',
+    [tiles(L), tiles(rotate(L)), tiles([0, 1, 4, 7]), null], 2,
+    tiles(rotate([0, 1, 4, 7])), [tiles([0, 1, 4, 7]), tiles(rotate([0, 1, 4, 7], 2)), tiles(mirror([0, 1, 4, 7]))], 'Üstteki şekil saat yönünde 90° dönmüş. Alttaki şekle aynı dönüş uygulanınca dolu kareler 1. satır 3. sütun ile 2. satırın üç hücresinde olur.'),
+  make(8, 'spatial', 'Üst sıradaki soldan sağa dönüşüm, altta da aynı. Eksik şekil hangisi?',
+    [tiles(L), tiles(mirror(L)), tiles(F), null], 2,
+    tiles(mirror(F)), [tiles(F), tiles(rotate(F)), tiles(rotate(F, 2))], 'Üstteki şekil dikey orta çizgiye göre aynalanmış; sol ve sağ yer değiştirirken üst ve alt korunmuş. Aynı yansıma alttaki şekle uygulanır.'),
+  make(9, 'sequence', seq, [arrow(0, 1), arrow(1, 2), arrow(2, 3), arrow(3, 4), null], 3,
+    arrow(0, 5), [arrow(1, 5), arrow(0, 4), arrow(2, 5)], 'İki özellik birlikte değişiyor: ok saat yönünde 90° dönüyor ve alttaki nokta sayısı bir artıyor. Sonuç, yukarı bakan ok ve beş noktadır.'),
+  make(10, 'matrix', matrix,
+    [tiles([0, 4]), tiles([2, 4]), tiles([0, 2, 4]), tiles([3, 5]), tiles([1, 5]), tiles([1, 3, 5]), tiles([0, 6]), tiles([4, 6]), null], 3,
+    tiles([0, 4, 6]), [tiles([0, 4]), tiles([6]), tiles([0, 4, 6, 8])], 'Her satırda üçüncü şekil, ilk iki şeklin birleşimi. Bir konum ilk şekillerden en az birinde doluysa sonuçta dolu kalır; ortak kareler silinmez. Sonuç sol üst, orta ve sol alt karelerdir.'),
+  make(11, 'rotation', 'Bu şekli, ızgaranın merkezi çevresinde saat yönünde 90° döndürün. Hangi seçenek elde edilir?', [tiles(F)], 1,
+    tiles(rotate(F)), [tiles(mirror(F)), tiles(rotate(F, 2)), tiles(rotate(F, 3))], 'Saat yönünde çeyrek dönüşte her dolu kare (satır, sütun) konumundan (sütun, 4 − satır) konumuna gider. Dolu konumlar üst orta, orta sol, orta orta, orta sağ ve alt sağ olur.'),
+  make(12, 'spatial', 'Her satırda iki işaret de soldaki hücreden sağdakine aynı biçimde taşınıyor. Son şekil hangisi?',
+    [positions(0, 8), positions(3, 2), positions(1, 6), positions(4, 0), positions(2, 7), null], 2,
+    positions(5, 1), [positions(5, 4), positions(8, 1), positions(2, 1)], 'Her iki işaret de aynı sütunda bir hücre aşağı iner; en alt satırdan sonra üst satıra döner. Son çiftte nokta üst sağdan orta sağa, kare alt ortadan üst ortaya geçer.'),
+  make(13, 'sequence', seq, [count(1), count(4), count(2), count(5), count(3), count(6), null], 3,
+    count(4), [count(3), count(7), count(5)], 'Tek numaralı hücrelerde 1, 2, 3, …; çift numaralı hücrelerde 4, 5, 6, … daire var. Yedinci hücre tek numaralı diziyi sürdürür ve dört daire içerir.'),
+  make(14, 'matrix', matrix,
+    [tiles([0, 4]), tiles([2, 4]), tiles([0, 2]), tiles([1, 3, 7]), tiles([3, 5]), tiles([1, 5, 7]), tiles([0, 2, 6]), tiles([2, 6, 8]), null], 3,
+    tiles([0, 8]), [tiles([0, 2, 6, 8]), tiles([2, 6]), tiles([0, 6, 8])], 'Aynı konumda iki dolu kare üst üste gelince siliniyor; yalnızca bir şekle ait olan kareler kalıyor. Son satırda ortak sağ üst ve sol alt silinir; sol üst ile sağ alt kalır.'),
+  make(15, 'rotation', 'Şekil her adımda saat yönünde dönüyor. Dönüş miktarı sırasıyla 90°, 180°, 270° ve 360°. Eksik son şekil hangisi?',
+    [tiles(F), tiles(rotate(F)), tiles(rotate(F, 3)), tiles(rotate(F, 2)), null], 3,
+    tiles(rotate(F, 2)), [tiles(F), tiles(rotate(F)), tiles(rotate(F, 3))], 'Başlangıca göre yönler sırasıyla 0°, 90°, 270° ve 180° olur. Son adımda 360° dönmek yönü değiştirmez; son şekil bir öncekiyle aynıdır.'),
+  make(16, 'spatial', 'Nokta ile kare her adımda kendi satırlarında birer hücre hareket ediyor. Son şekil hangisi?',
+    [positions(0, 15, 4), positions(1, 14, 4), positions(2, 13, 4), null], 2,
+    positions(3, 12, 4), [positions(3, 15, 4), positions(0, 12, 4), positions(7, 8, 4)], 'Nokta üst satırda sağa, içi boş kare alt satırda sola ilerliyor. Son durumda nokta üst sağda, kare alt soldadır.'),
+  make(17, 'sequence', seq, [count(1, 'triangle'), count(1, 'square'), count(2, 'triangle'), count(2, 'square'), count(3, 'triangle'), null], 3,
+    count(3, 'square'), [count(4, 'square'), count(3, 'triangle'), count(2, 'square')], 'Bir miktar önce üçgenlerle, sonra aynı sayıda kareyle gösteriliyor. Sayı her iki hücrede bir artıyor: 1–1, 2–2, 3–3. Eksik hücre üç karedir.'),
+  make(18, 'matrix', matrix,
+    [count(1), count(3), count(3), count(2), count(2), count(4), count(2), count(3), null], 3,
+    count(6), [count(3), count(5), count(7)], 'Üçüncü hücrenin daire sayısı, ilk iki hücredeki sayıların çarpımıdır: 1 × 3 = 3; 2 × 2 = 4; son satırda 2 × 3 = 6.'),
+  make(19, 'rotation', 'Önce şekli dikey orta çizgiye göre aynalayın (sol–sağ). Sonra elde ettiğiniz şekli saat yönünde 90° döndürün. Sonuç hangisi?', [tiles(F)], 1,
+    tiles(rotate(mirror(F))), [tiles(mirror(rotate(F))), tiles(rotate(F)), tiles(mirror(F))], 'İşlem sırası önemlidir: önce sol–sağ yansıma, ardından saat yönünde çeyrek dönüş. Dolu kareler üst sağ, orta sol, orta orta, orta sağ ve alt orta konumlarına gelir.'),
+  make(20, 'spatial', 'Dolu kareleri dikey kesik çizginin öteki tarafına aynalayın. İlk kareler de yerinde kalacak. Tamamlanmış desen hangisi?', [fold([0, 5])], 1,
+    tiles([0, 3, 5, 6], 4), [tiles([0, 2, 5, 7], 4), tiles([0, 3, 5, 10], 4), tiles([3, 6], 4)], 'Dikey yansımada 1. ve 4. sütun, 2. ve 3. sütun eşleşir; satır değişmez. Sol üstteki kareye sağ üst, 2. satır 2. sütundaki kareye 2. satır 3. sütun eklenir.'),
+  make(21, 'sequence', 'Şekil türü, doluluk ve sayı örüntülerini birlikte izleyin. Eksik hücre hangisi?',
+    [count(1, 'circle', false), count(2, 'square', true), count(3, 'triangle', false), count(1, 'circle', true), count(2, 'square', false), null], 3,
+    count(3, 'triangle', true), [count(3, 'triangle', false), count(2, 'triangle', true), count(3, 'square', true)], 'Şekil ve sayı üçlü döngü oluşturur: bir daire, iki kare, üç üçgen. Doluluk ise her adımda boş–dolu olarak değişir. Altıncı hücre üç dolu üçgendir.'),
+  make(22, 'matrix', 'Her sütunda şekil türü sabit; her satırda ve sütunda 1, 2, 3 sayıları birer kez kullanılıyor. Eksik hücre hangisi?',
+    [count(1, 'circle'), count(2, 'square'), count(3, 'triangle'), count(2, 'circle'), count(3, 'square'), count(1, 'triangle'), count(3, 'circle'), count(1, 'square'), null], 3,
+    count(2, 'triangle'), [count(1, 'triangle'), count(2, 'square'), count(3, 'triangle')], 'Son sütunun türü üçgendir. Son satırda 3 ile 1, son sütunda 3 ile 1 zaten var; eksik sayı 2. Bu yüzden iki üçgen gerekir.'),
+  make(23, 'rotation', 'Hangi seçenek, verilen şeklin yalnızca döndürülmüş hâlidir? Aynalama yapılamaz.', [tiles(F)], 1,
+    tiles(rotate(F, 2)), [tiles(mirror(F)), tiles(rotate(mirror(F))), tiles(rotate(mirror(F), 2))], 'Doğru şekil başlangıç şeklinin 180° döndürülmüş hâlidir. Diğer üç seçenek ayna görüntüsünün farklı dönüşleridir; yalnızca döndürerek başlangıç şekline getirilemezler.'),
+  make(24, 'spatial', 'Deseni önce dikey, ardından yatay kesik çizgiye göre tamamlayın. Her adımda mevcut kareler de kalacak. Son desen hangisi?', [fold([0, 5], true)], 1,
+    tiles([0, 3, 5, 6, 9, 10, 12, 15], 4), [tiles([0, 3, 5, 6], 4), tiles([0, 3, 5, 6, 8, 11, 13, 14], 4), tiles([0, 3, 5, 6, 9, 10, 12, 14], 4)], 'İlk yansıma üst yarıyı sol–sağ simetrik yapar. İkinci yansıma bu dört kareyi alt yarıya kopyalar. Dört köşe ile ortadaki 2 × 2 kare bloğu dolu olur; toplam sekiz kare vardır.'),
+  make(25, 'sequence', 'Saat yönündeki dönüşler, iki adımlık bir döngüyle tekrarlanıyor. Numaralı dizinin son şekli hangisi?',
+    [tiles(F), tiles(rotate(F)), tiles(rotate(F, 3)), tiles(F), tiles(rotate(F, 2)), null], 3,
+    tiles(rotate(F, 3)), [tiles(F), tiles(rotate(F)), tiles(rotate(F, 2))], 'Dönüşler sırayla 90°, 180°, 90°, 180°, 90° olarak ilerliyor. Başlangıca göre yönler 0°, 90°, 270°, 0°, 180°, 270°; son şekil başlangıcın 270° saat yönünde dönüşüdür.'),
+  make(26, 'matrix', 'Her satırda önce ilk iki şekilde ortak olan dolu kareler alınıyor; sonra bu desen aynı yönde çeyrek tur döndürülüyor. Sonuç hangisi?',
+    [tiles([0, 1, 4]), tiles([1, 2, 4]), tiles(rotate(intersection([0, 1, 4], [1, 2, 4]))), tiles([0, 3, 7]), tiles([3, 6, 7]), tiles(rotate(intersection([0, 3, 7], [3, 6, 7]))), tiles([1, 4, 6, 8]), tiles([0, 4, 6, 7]), null], 3,
+    tiles([0, 4]), [tiles([4, 6]), tiles([4, 8]), tiles([2, 4])], 'İlk iki satırdaki ortak kareler saat yönünde 90° döndürülmüş. Son satırda ortak olanlar orta ve sol alt karelerdir. Çeyrek dönüşten sonra orta ile sol üst kalır.'),
+  make(27, 'rotation', 'Her satırda ok ile köşedeki daireye ayrı dönüşler uygulanıyor. İlk iki satırdaki kuralı son satıra uygulayın.',
+    [arrow(0, 0, 0), arrow(1, 0, 3), arrow(1, 0, 1), arrow(2, 0, 0), arrow(2, 0, 2), null], 2,
+    arrow(3, 0, 1), [arrow(3, 0, 3), arrow(1, 0, 1), arrow(2, 0, 1)], 'Ok saat yönünde 90°, daire ise köşeler arasında saat yönünün tersine 90° hareket ediyor. Aşağı bakan ok sola döner; sağ alttaki daire sağ üste gider.'),
+  make(28, 'spatial', 'Soldaki dolu deseni bir kare sağa ve bir kare aşağı öteleyin. Sonra sağdaki desenle birleştirin; ortak kareler dolu kalır. Sonuç hangisi?',
+    [tiles([0, 1, 4], 4), tiles([6, 10, 11], 4)], 2,
+    tiles([5, 6, 9, 10, 11], 4), [tiles([5, 9, 10, 11], 4), tiles([1, 2, 5, 6, 10, 11], 4), tiles([4, 5, 6, 8, 10, 11], 4)], 'Ötelenen sol şeklin dolu konumları 2. satır 2–3. sütun ve 3. satır 2. sütundur. Sağdaki şekil eklenince 3. satırın 3–4. sütunları da dolar. Ortak 2. satır 3. sütun silinmez; sonuç beş karedir.'),
+  make(29, 'sequence', 'İki işaret de dış kenardaki sekiz hücre boyunca ilerliyor. Ortadaki hücreye girilmiyor; işaretler aynı hücrede bulunabilir. Eksik adım hangisi?',
+    [orbitPair(perimeter[0], perimeter[6]), orbitPair(perimeter[1], perimeter[5]), orbitPair(perimeter[2], perimeter[4]), orbitPair(perimeter[3], perimeter[3]), orbitPair(perimeter[4], perimeter[2]), null], 3,
+    orbitPair(perimeter[5], perimeter[1]), [orbitPair(perimeter[6], perimeter[1]), orbitPair(perimeter[5], perimeter[7]), orbitPair(perimeter[1], perimeter[5])], 'Küçük dolu kare dış kenarda saat yönünde bir hücre; büyük boş daire saat yönünün tersine bir hücre ilerliyor. Beşinci adımdan sonra kare alt ortaya, daire üst ortaya gelir.'),
+  make(30, 'matrix', 'Her satırda ilk iki desen üst üste konuyor: ortak dolu kareler siliniyor. Kalan desen aynı yönde çeyrek tur döndürülüyor. Eksik sonuç hangisi?',
+    [tiles([0, 1, 4]), tiles([1, 4, 8]), tiles(rotate(xor([0, 1, 4], [1, 4, 8]))), tiles([0, 3, 4, 7]), tiles([3, 4, 5, 8]), tiles(rotate(xor([0, 3, 4, 7], [3, 4, 5, 8]))), tiles([0, 2, 4, 6]), tiles([0, 3, 4, 8]), null], 3,
+    tiles([0, 1, 6, 8]), [tiles([2, 3, 6, 8]), tiles(rotate(union([0, 2, 4, 6], [0, 3, 4, 8]))), tiles([2, 4])], 'Önce aynı konumdaki dolu kareler birbirini götürür, ardından kalan desen saat yönünde 90° döner. Son satırda sağ üst, orta sol, sol alt ve sağ alt kalır; dönüşten sonra sol üst, üst orta, sol alt ve sağ alt dolar.'),
+];
+
+/** Practice is intentionally separate: these items never enter scoring or the timed bank. */
+export const practiceQuestions: VisualQuestion[] = [
+  { ...make(1, 'sequence', 'Alıştırma: Numaralı örüntüde sıradaki şekil hangisi?', [single('circle'), single('square'), single('circle'), null], 2,
+    single('square'), [single('triangle'), count(2), single('circle')], 'Daire ve kare sırayla değişiyor: daire, kare, daire, kare. Alıştırmalar puana ve süreye dahil değildir.'), id: 'practice-01' },
+  { ...make(2, 'rotation', 'Alıştırma: Üst sıradaki döndürmeyi alttaki oka uygulayın.', [arrow(0), arrow(1), arrow(2), null], 2,
+    arrow(3), [arrow(0), arrow(1), arrow(2)], 'Üstteki ok saat yönünde 90° dönmüş. Aşağı bakan oku da aynı yönde döndürünce sola bakar. Alıştırmalar puana ve süreye dahil değildir.'), id: 'practice-02' },
 ];

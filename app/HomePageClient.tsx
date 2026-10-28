@@ -808,7 +808,7 @@ export default function HomePage() {
     </div>
   </Link>
 
-  {/* IQ Test */}
+  {/* Adult visual reasoning practice; legacy URL preserved. */}
   <Link
     href="/iq-test"
     className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-sky-600 to-indigo-700 p-8 text-white shadow-xl transition-all hover:scale-[1.02] hover:shadow-2xl"
@@ -816,16 +816,16 @@ export default function HomePage() {
     <div className="relative z-10 flex h-full flex-col justify-between">
       <div>
         <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-sky-100 backdrop-blur-sm">
-          🧩 IQ
+          🧩 18+ • Görsel mantık
         </div>
-        <h3 className="mb-2 text-2xl font-black tracking-tight">IQ Test (Hard)</h3>
-        <p className="text-sm text-sky-100 opacity-90">30 questions • timed</p>
+        <h3 className="mb-2 text-2xl font-black tracking-tight">Görsel Mantık ve Akıl Yürütme Testi</h3>
+        <p className="text-sm text-sky-100 opacity-90">30 görsel soru • 30 dakika • 100 üzerinden test puanı; IQ değildir</p>
       </div>
       <div className="mt-6 flex items-center gap-3">
         <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-indigo-700 shadow-lg transition-transform group-hover:scale-110">
           🎯
         </div>
-        <span className="text-sm font-bold">Start →</span>
+        <span className="text-sm font-bold">Alıştırmayı incele →</span>
       </div>
     </div>
   </Link>

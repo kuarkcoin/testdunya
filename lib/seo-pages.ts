@@ -161,9 +161,9 @@ export const STATIC_SEO_PAGES: StaticSeoPage[] = [
   },
   {
     path: '/iq-test',
-    locale: 'en_US',
-    title: 'Visual Logic and Reasoning Quiz',
-    description: 'Practice visual patterns, logic, math and attention in a 30-minute quiz. Answer the questions and review your results after completing the challenge.',
+    locale: 'tr_TR',
+    title: 'Görsel Mantık ve Akıl Yürütme Testi',
+    description: '18 yaş ve üzeri için 30 özgün görsel soru ve 30 dakika. Matris, örüntü ve uzamsal ilişkileri çalışın; IQ değil, 100 üzerinden test puanı ve tür bazlı sonuçlar görün.',
   },
   {
     path: '/verbal-test',

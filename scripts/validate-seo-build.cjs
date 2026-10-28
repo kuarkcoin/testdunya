@@ -221,7 +221,7 @@ async function validateBuild(root = ROOT) {
       }
     }
 
-    for (const pathname of ['/', '/lgs/sozel', '/ielts/speaking', '/paragraf', '/dashboard']) await page(pathname);
+    for (const pathname of ['/', '/iq-test', '/lgs/sozel', '/ielts/speaking', '/paragraf', '/dashboard']) await page(pathname);
     // Saved mistakes exist only in browser storage; its private page mounts after hydration.
     await page('/mistakes', { index: false, requireHeading: false });
     await page('/gorevde-yukselme/karma', { index: false });
