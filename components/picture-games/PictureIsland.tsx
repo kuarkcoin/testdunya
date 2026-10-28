@@ -3,11 +3,14 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { LEVELS, MODES, PICTURES, PUZZLES, type GameMode, type Level, type PictureId } from '../../lib/picture-games/content';
 import { getRoundIds, makeMemoryCards, parseProgress, serializeProgress, shuffled, STORAGE_KEY } from '../../lib/picture-games/learning';
+import { GRID_PUZZLES, SEQUENCE_PUZZLES } from '../../lib/picture-games/challenges';
 import useReadingSpeech from '../reading/useReadingSpeech';
 import Picture, { IslandIllustration } from './Picture';
+import GridGame from './GridGame';
+import SequenceGame from './SequenceGame';
 import styles from './PictureIsland.module.css';
 
-const MODE_PICTURES: Record<GameMode, PictureId> = { pattern: 'rocket', detective: 'fox', memory: 'owl' };
+const MODE_PICTURES: Record<GameMode, PictureId> = { pattern: 'rocket', detective: 'fox', memory: 'owl', sequence: 'fish', grid: 'apple' };
 const TOTAL_ROUNDS = getRoundIds().length;
 
 function SoundIcon() {
@@ -35,7 +38,13 @@ export default function PictureIsland() {
   const focusRequested = useRef(false);
 
   const puzzles = useMemo(() => PUZZLES.filter((puzzle) => puzzle.mode === mode && puzzle.level === level), [mode, level]);
+  const sequencePuzzles = useMemo(() => SEQUENCE_PUZZLES.filter((entry) => entry.level === level), [level]);
+  const gridPuzzles = useMemo(() => GRID_PUZZLES.filter((entry) => entry.level === level), [level]);
+  const activeRounds = mode === 'sequence' ? sequencePuzzles : mode === 'grid' ? gridPuzzles : puzzles;
+  const roundCount = activeRounds.length;
   const puzzle = puzzles[roundIndex];
+  const sequencePuzzle = sequencePuzzles[roundIndex];
+  const gridPuzzle = gridPuzzles[roundIndex];
   const seed = level * 101 + replay * 997;
   const choices = useMemo(() => puzzle ? shuffled(puzzle.choices, seed + roundIndex * 17) : [], [puzzle, seed, roundIndex]);
   const cards = useMemo(() => makeMemoryCards(level, seed), [level, seed]);
@@ -44,7 +53,11 @@ export default function PictureIsland() {
   const activeMode = MODES.find((entry) => entry.id === mode)!;
   const mismatch = openCards.length === 2;
   const roundComplete = mode === 'memory' ? matchedCards.length === cards.length : solved;
-  const instruction = mode === 'memory' ? activeMode.instruction : `${activeMode.instruction} ${puzzle?.prompt || ''}`;
+  const prompt = mode === 'memory' ? 'Resimlerin eşini bul!'
+    : mode === 'sequence' ? 'Sırayı aklında tut!'
+      : mode === 'grid' ? 'Eksik resimleri yerleştir!' : puzzle?.prompt;
+  // Sequence instructions never include the hidden target order.
+  const instruction = `${activeMode.instruction} ${mode === 'pattern' || mode === 'detective' ? puzzle?.prompt || '' : ''}`;
 
   useEffect(() => {
     try { setCompleted(parseProgress(window.localStorage.getItem(STORAGE_KEY))); }
@@ -112,9 +125,16 @@ export default function PictureIsland() {
     } else setHintVisible(true);
   }
 
+  function completeChallenge() {
+    const round = activeRounds[roundIndex];
+    if (solved || !round) return;
+    setSolved(true);
+    complete(round.id);
+  }
+
   function nextPuzzle() {
     if (!solved) return;
-    if (roundIndex === puzzles.length - 1) {
+    if (roundIndex === roundCount - 1) {
       setFinished(true);
       speech.cancel();
       focusRequested.current = true;
@@ -155,7 +175,7 @@ export default function PictureIsland() {
 
   const currentCount = mode === 'memory'
     ? matchedCards.length / 2
-    : puzzles.filter((entry) => completed.includes(entry.id)).length;
+    : activeRounds.filter((entry) => completed.includes(entry.id)).length;
 
   return (
     <div className={styles.island} data-testid="picture-island">
@@ -163,19 +183,19 @@ export default function PictureIsland() {
         <div className={styles.welcomeCopy}>
           <p className={styles.eyebrow}><span aria-hidden="true">✦</span> KÜÇÜK KAŞİFLER İÇİN</p>
           <h2>Bak, düşün,<br /><span>keşfet!</span></h2>
-          <p>Resimlerin sırrını çöz. İster sırayı tamamla, ister eşleri bul. Her adımda yeni bir keşif!</p>
+          <p>Resimlerin sırrını çöz. Sırayı hatırla, tabloyu tamamla, yeni ipuçlarını keşfet!</p>
           <div className={styles.badges}><span>7 yaş için</span><span>Süre sınırı yok</span><span>Sesli yönergeler</span></div>
         </div>
         <IslandIllustration className={styles.heroArt} />
       </section>
 
       <section aria-labelledby="choose-game-title" className={styles.chooseSection}>
-        <div className={styles.sectionHeading}><h2 id="choose-game-title">Bugün ne keşfedelim?</h2><span>3 farklı oyun</span></div>
+        <div className={styles.sectionHeading}><h2 id="choose-game-title">Bugün ne keşfedelim?</h2><span>{MODES.length} oyun · {LEVELS.length} seviye</span></div>
         <div className={styles.modes}>
           {MODES.map((entry, index) => <button type="button" key={entry.id} data-testid={`mode-${entry.id}`} aria-pressed={mode === entry.id}
             onClick={() => selectMode(entry.id)} className={`${styles.mode} ${mode === entry.id ? styles.activeMode : ''}`}>
             <span className={styles.modeArt}><Picture id={MODE_PICTURES[entry.id]} decorative /></span>
-            <span className={styles.modeCopy}><span className={styles.modeNumber}>0{index + 1}</span><strong>{entry.title}</strong><span>{entry.description}</span></span>
+            <span className={styles.modeCopy}><span className={styles.modeNumber}>0{index + 1}{entry.id === 'sequence' || entry.id === 'grid' ? ' · YENİ' : ''}</span><strong>{entry.title}</strong><span>{entry.description}</span></span>
             <span className={styles.selectedMark} aria-hidden="true">{mode === entry.id ? '✓' : '→'}</span>
           </button>)}
         </div>
@@ -190,7 +210,7 @@ export default function PictureIsland() {
                 <span aria-hidden="true">{'•'.repeat(entry.id)}</span>{entry.label}
               </button>)}
             </div>
-            <span className={styles.roundLabel}>{mode === 'memory' ? `${cards.length / 2} çift resim` : `${roundIndex + 1} / ${puzzles.length}`}</span>
+            <span className={styles.roundLabel}>{mode === 'memory' ? `${cards.length / 2} çift resim` : `${roundIndex + 1} / ${roundCount}`}</span>
           </div>
 
           {finished ? <div className={styles.finish}>
@@ -199,17 +219,19 @@ export default function PictureIsland() {
             <h2 id="game-title" ref={headingRef} tabIndex={-1}>Bu turdaki bütün resimleri çözdün!</h2>
             <p>Bir mola verelim mi? Hazır olduğunda başka bir oyunu da keşfedebilirsin.</p>
             <div className={styles.finishActions}><button type="button" className={styles.primaryButton} onClick={replayGame} data-testid="replay-game">Yeniden oyna <span aria-hidden="true">↻</span></button>
-              <button type="button" className={styles.secondaryButton} onClick={() => selectMode(mode === 'pattern' ? 'detective' : 'memory')}>Başka oyun keşfet <span aria-hidden="true">→</span></button></div>
+              <button type="button" className={styles.secondaryButton} onClick={() => selectMode(MODES[(MODES.findIndex((entry) => entry.id === mode) + 1) % MODES.length].id)}>Başka oyun keşfet <span aria-hidden="true">→</span></button></div>
           </div> : <>
             <div className={styles.questionHeading}>
-              <div><p className={styles.eyebrow}>{activeMode.title}</p><h2 id="game-title" data-testid="game-prompt" ref={headingRef} tabIndex={-1}>{mode === 'memory' ? 'Resimlerin eşini bul!' : puzzle?.prompt}</h2></div>
+              <div><p className={styles.eyebrow}>{activeMode.title}</p><h2 id="game-title" data-testid="game-prompt" ref={headingRef} tabIndex={-1}>{prompt}</h2></div>
               <button type="button" data-testid="speak-instructions" className={styles.listenButton} onClick={() => { setAudioAttempted(true); if (speech.speaking) speech.cancel(); else speech.speak(instruction); }} aria-label={speech.speaking ? 'Yönergenin sesini durdur' : 'Yönergeyi dinle'}>
                 <SoundIcon /><span>{speech.speaking ? 'Durdur' : 'Dinle'}</span>
               </button>
             </div>
             {audioAttempted && !speech.available && <p className={styles.audioNotice} role="status">{speech.status}</p>}
 
-            {mode === 'memory' ? <div data-testid="puzzle" data-puzzle-id={`memory-${level}`}>
+            {mode === 'sequence' && sequencePuzzle ? <SequenceGame key={`${sequencePuzzle.id}-${replay}`} puzzle={sequencePuzzle} seed={seed + roundIndex * 17} onComplete={completeChallenge} speak={speech.speak} cancelSpeech={speech.cancel} />
+              : mode === 'grid' && gridPuzzle ? <GridGame key={`${gridPuzzle.id}-${replay}`} puzzle={gridPuzzle} seed={seed + roundIndex * 17} onComplete={completeChallenge} speak={speech.speak} cancelSpeech={speech.cancel} />
+                : mode === 'memory' ? <div data-testid="puzzle" data-puzzle-id={`memory-${level}`}>
               <div className={`${styles.memoryGrid} ${cards.length > 8 ? styles.memoryGridLarge : ''}`}>
                 {cards.map((card, index) => {
                   const matched = matchedCards.includes(card.id);
@@ -234,7 +256,7 @@ export default function PictureIsland() {
                 <div className={`${styles.sequenceTile} ${styles.missingTile}`} aria-label={`${puzzle.sequence.length + 1}. sıradaki eksik resim`}>?<span className={styles.sequenceNumber} aria-hidden="true">{puzzle.sequence.length + 1}</span></div>
               </div>}
               <p className={styles.choicePrompt}>{mode === 'pattern' ? 'Sıradaki resme dokun.' : 'Cevabın olan resme dokun.'}</p>
-              <div className={`${styles.choices} ${choices.length > 3 ? styles.fourChoices : ''}`}>
+              <div className={`${styles.choices} ${choices.length > 4 ? styles.manyChoices : choices.length === 4 ? styles.fourChoices : ''}`}>
                 {choices.map((picture) => <button type="button" key={picture} data-testid="choice" data-picture={picture} disabled={solved}
                   onClick={() => answer(picture)} aria-label={PICTURES[picture].label} aria-pressed={chosen === picture}
                   className={`${styles.choice} ${chosen === picture ? solved ? styles.correctChoice : styles.tryChoice : ''}`}>
@@ -246,10 +268,13 @@ export default function PictureIsland() {
                 {solved ? <>Buldun! {puzzle.explanation}</> : hintVisible ? <>Bir daha bakalım. {puzzle.hint}</> : 'Acele etme. Resimlere dikkatlice bak.'}
               </div>
               <div className={styles.roundActions}>
-                {solved ? <button type="button" data-testid="next-puzzle" className={styles.primaryButton} onClick={nextPuzzle}>{roundIndex === puzzles.length - 1 ? 'Turu tamamla' : 'Sıradaki keşif'} <span aria-hidden="true">→</span></button>
+                {solved ? <button type="button" data-testid="next-puzzle" className={styles.primaryButton} onClick={nextPuzzle}>{roundIndex === roundCount - 1 ? 'Turu tamamla' : 'Sıradaki keşif'} <span aria-hidden="true">→</span></button>
                   : <button type="button" className={styles.hintButton} onClick={() => { setHintVisible(true); speech.speak(puzzle.hint); }}>İpucu ver <span aria-hidden="true">✧</span></button>}
                 {(solved || hintVisible) && <button type="button" className={styles.secondaryButton} aria-label={solved ? 'Açıklamayı dinle' : 'İpucunu dinle'} onClick={() => speech.speak(solved ? puzzle.explanation : puzzle.hint)}><SoundIcon />{solved ? 'Açıklamayı dinle' : 'İpucunu dinle'}</button>}
               </div>
+            </div>}
+            {(mode === 'sequence' || mode === 'grid') && solved && <div className={styles.roundActions}>
+              <button type="button" data-testid="next-puzzle" className={styles.primaryButton} onClick={nextPuzzle}>{roundIndex === roundCount - 1 ? 'Turu tamamla' : 'Sıradaki keşif'} <span aria-hidden="true">→</span></button>
             </div>}
           </>}
         </section>
@@ -260,7 +285,7 @@ export default function PictureIsland() {
           <p className={styles.journalIntro}>Tamamladığın her yeni alıştırma burada birikir.</p>
           <div className={styles.progressCount} data-testid="game-progress" data-completed={completed.length}><strong>{completed.length}</strong><span>/ {TOTAL_ROUNDS}<br />alıştırma</span></div>
           <div className={styles.progressTrack} role="progressbar" aria-label="Tamamlanan alıştırmalar" aria-valuemin={0} aria-valuemax={TOTAL_ROUNDS} aria-valuenow={completed.length}><span style={{ width: `${completed.length / TOTAL_ROUNDS * 100}%` }} /></div>
-          <div className={styles.today}><span aria-hidden="true">✦</span><div><strong>{mode === 'memory' ? `${currentCount} / ${cards.length / 2} eş bulundu` : `${currentCount} / ${puzzles.length} keşif tamam`}</strong><p>Bu oyunda, bu seviyede</p></div></div>
+          <div className={styles.today}><span aria-hidden="true">✦</span><div><strong>{mode === 'memory' ? `${currentCount} / ${cards.length / 2} eş bulundu` : `${currentCount} / ${roundCount} keşif tamam`}</strong><p>Bu oyunda, bu seviyede</p></div></div>
           <p className={styles.smallNote}>Tekrar oynamak toplamı artırmaz. Kendi hızında, istediğin kadar dene.</p>
           {storageNote && <p className={styles.storageNote} role="status">{storageNote}</p>}
           {resetConfirm ? <div className={styles.resetConfirm} role="group" aria-label="İlerlemeyi sıfırlama onayı"><p>Keşif defterini temizleyip baştan başlayalım mı?</p><button type="button" data-testid="confirm-reset-game-progress" onClick={resetProgress}>Evet, temizle</button><button type="button" data-testid="cancel-reset-game-progress" onClick={() => setResetConfirm(false)}>Vazgeç</button></div>
@@ -270,8 +295,9 @@ export default function PictureIsland() {
 
       <details className={styles.parentNote}>
         <summary>Birlikte oynayan yetişkin için</summary>
-        <div><p>Resimli alıştırmalar; görsel dikkat, örüntü fark etme, sınıflandırma ve eşlerin yerini hatırlama pratiği sunar. Zekâ puanı vermez. Çocuğa “Nasıl buldun?” diye sorabilir, 5–10 dakikalık oyundan sonra ara verebilirsiniz.</p>
+        <div><p>Resimli alıştırmalar; görsel dikkat, örüntü fark etme, sınıflandırma, sıralı hatırlama ve satır-sütun ilişkilerini düşünme pratiği sunar. Zekâ puanı vermez. Çocuğa “Nasıl buldun?” diye sorabilir, 5–10 dakikalık oyundan sonra ara verebilirsiniz.</p>
           <p>Okumaya yeni başlayan çocuk yönergeyi dinleyebilir. Türkçe ses desteği cihaza bağlıdır; ses çalışmazsa yönergeyi birlikte okuyabilirsiniz. <span role="status">{speech.status}</span></p>
+          <p>Dört seviyeyi istediğiniz sırayla seçebilirsiniz. Kaşif ustası seviyesinde daha uzun örüntüler, daha çok ipucu ve 8 çift hafıza kartı vardır. Birlikte deneyin; gerektiğinde daha kolay seviyeye dönebilirsiniz.</p>
           <p>Keşif defteri yalnızca bu tarayıcıda saklanır. Bu oyunda mikrofon veya hesap gerekmez.</p></div>
       </details>
     </div>

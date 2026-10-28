@@ -32,7 +32,7 @@ export default function Grade1Page() {
         <div>
           <p className="text-sm font-bold text-teal-800">7 yaş için resimli oyunlar</p>
           <h2 className="mt-1 text-2xl font-black">Resimli Keşif Adası</h2>
-          <p className="mt-2 text-slate-700">Örüntüleri tamamla, ipuçlarını bul, hafıza kartlarını eşleştir.</p>
+          <p className="mt-2 text-slate-700">Beş resimli oyunda sıraları hatırla, mantık tablolarını çöz ve dört zorluk seviyesini keşfet.</p>
         </div>
         <span className="inline-flex shrink-0 items-center justify-center rounded-2xl bg-teal-800 px-6 py-4 font-bold text-white">Oynamaya başla →</span>
       </Link>

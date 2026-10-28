@@ -417,7 +417,7 @@ export default function HomePage() {
           <span className="inline-flex rounded-lg bg-white/15 px-3 py-1 text-sm font-bold">7 yaş • Resimli oyunlar</span>
           <span aria-hidden="true" className="mt-5 block text-4xl">🏝️</span>
           <h3 className="mt-3 text-2xl font-black">Keşif Adası</h3>
-          <p className="mt-3 text-sm leading-relaxed text-teal-50">Örüntüyü tamamla, ipuçlarını bul, resimleri eşleştir. Üç düzeyde kendi hızında oyna.</p>
+          <p className="mt-3 text-sm leading-relaxed text-teal-50">Beş oyun, dört seviye! Sıraları hatırla, resim tablolarını çöz; Kaşif Ustası seviyesini keşfet.</p>
         </div>
         <span className="rounded-xl bg-white px-4 py-3 text-sm font-black text-teal-900">Oynamaya başla <span aria-hidden="true">→</span></span>
       </Link>

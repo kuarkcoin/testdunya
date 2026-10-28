@@ -30,7 +30,7 @@ export const STATIC_SEO_PAGES: StaticSeoPage[] = [
   {
     path: '/1-sinif/resimli-oyunlar',
     title: '7 Yaş Resimli Oyunlar: Keşif Adası',
-    description: '7 yaş için resimli örüntü, dikkat ve hafıza oyunları. Üç düzeyde 36 bulmaca, eşleştirme kartları ve sesli yönergelerle kendi hızında oyna.',
+    description: '7 yaş için beş resimli oyun ve dört zorluk seviyesi. Örüntü, dikkat, hafıza, sıralama ve mantık tablolarıyla 100 etkinliği kendi hızında tamamla.',
   },
   {
     path: '/5-sinif',

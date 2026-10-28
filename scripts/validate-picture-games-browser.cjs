@@ -45,6 +45,7 @@ async function validatePictureGamesBrowser() {
   const load = createSourceLoader();
   const { PUZZLES, PICTURES, MEMORY_POOLS } = load('lib/picture-games/content.ts');
   const { STORAGE_KEY } = load('lib/picture-games/learning.ts');
+  const { SEQUENCE_PUZZLES, GRID_PUZZLES } = load('lib/picture-games/challenges.ts');
   const port = await freePort();
   const origin = 'http://127.0.0.1:' + port;
   const server = spawn(process.execPath, [require.resolve('next/dist/bin/next'), 'start', '--hostname', '127.0.0.1', '--port', String(port)], {
@@ -149,7 +150,7 @@ async function validatePictureGamesBrowser() {
     await page.getByTestId('replay-game').click();
     await expect(page.getByTestId('choice').first()).toBeEnabled();
     await expectProgress();
-    for (const level of [2, 3]) {
+    for (const level of [2, 3, 4]) {
       for (const mode of ['pattern', 'detective']) {
         await select(mode, level);
         const puzzle = await solvePuzzle({ wrong: true });
@@ -160,7 +161,7 @@ async function validatePictureGamesBrowser() {
     checks.push('All puzzle levels, wrong-answer retry, keyboard input, unique completion, six-round finish and replay');
 
     let exercisedMismatch = false;
-    for (const level of [1, 2, 3]) {
+    for (const level of [1, 2, 3, 4]) {
       await select('memory', level);
       const cards = page.getByTestId('memory-card');
       await expect(cards).toHaveCount(MEMORY_POOLS[level].length * 2);
@@ -214,7 +215,166 @@ async function validatePictureGamesBrowser() {
       await expectProgress();
     }
     assert(exercisedMismatch, 'Exercise an actual mismatched pair, not only successful guesses');
-    checks.push('Three memory board sizes, hidden-face accessibility, explicit mismatch retry, third-card lock, complete pairs and replay');
+    checks.push('Four memory board sizes, including sixteen cards, hidden-face accessibility, explicit mismatch retry, third-card lock, complete pairs and replay');
+
+    async function currentChallenge(registry) {
+      const id = await page.getByTestId('puzzle').getAttribute('data-puzzle-id');
+      const puzzle = registry.find((item) => item.id === id);
+      assert(puzzle, 'Rendered challenge belongs to the content registry');
+      return puzzle;
+    }
+    const sequenceChoice = (picture) => page.locator('[data-testid="sequence-choice"][data-picture="' + picture + '"]');
+    async function solveSequence({ wrong = false, keyboard = false } = {}) {
+      const puzzle = await currentChallenge(SEQUENCE_PUZZLES);
+      await expect(page.getByTestId('sequence-study')).toBeVisible();
+      const cancelledBefore = await page.evaluate(() => window.__pictureCancelled);
+      await page.getByTestId('speak-instructions').click();
+      await page.getByTestId('hide-sequence').click();
+      assert((await page.evaluate(() => window.__pictureCancelled)) > cancelledBefore, 'Hiding the study sequence cancels current speech');
+      await expect(page.getByTestId('sequence-study')).toHaveCount(0);
+      await expect(page.getByRole('button', { name: 'Sırayı dinle', exact: true })).toHaveCount(0);
+      await expect(page.getByTestId('sequence-answer')).toHaveAttribute('data-count', '0');
+      await expect(page.getByTestId('sequence-check')).toBeDisabled();
+      if (wrong) {
+        const wrongAnswer = [...puzzle.sequence];
+        wrongAnswer[0] = puzzle.choices.find((picture) => picture !== wrongAnswer[0]);
+        for (const picture of wrongAnswer) await sequenceChoice(picture).click();
+        await page.getByTestId('sequence-check').click();
+        await expectProgress();
+        await expect(page.getByTestId('next-puzzle')).toHaveCount(0);
+        await expect(page.getByTestId('game-feedback')).toContainText('henüz');
+        await page.getByTestId('sequence-undo').click();
+        await expect(page.getByTestId('sequence-answer')).toHaveAttribute('data-count', String(puzzle.sequence.length - 1));
+        await expect(page.getByTestId('sequence-check')).toBeDisabled();
+        await page.getByTestId('sequence-reveal').click();
+        await expect(page.getByTestId('sequence-study')).toBeVisible();
+        await page.getByTestId('hide-sequence').click();
+        await expect(page.getByTestId('sequence-answer')).toHaveAttribute('data-count', '0');
+      }
+      for (let index = 0; index < puzzle.sequence.length; index++) {
+        const tile = sequenceChoice(puzzle.sequence[index]);
+        await expect(tile).toBeEnabled();
+        if (keyboard && index === 0) { await tile.focus(); await page.keyboard.press('Enter'); }
+        else await tile.click();
+      }
+      await page.getByTestId('sequence-check').click();
+      completed.add(puzzle.id);
+      await expectProgress();
+      await expect(page.getByTestId('game-feedback')).toContainText(puzzle.explanation);
+      await expect(page.getByTestId('next-puzzle')).toBeVisible();
+      return puzzle;
+    }
+    for (const level of [1, 2, 3, 4]) {
+      await select('sequence', level);
+      await solveSequence({ wrong: true, keyboard: level === 1 });
+      if (level === 1) {
+        for (let round = 1; round < 6; round++) {
+          await page.getByTestId('next-puzzle').click();
+          await solveSequence();
+        }
+        await page.getByTestId('next-puzzle').click();
+        await expect(page.getByTestId('replay-game')).toBeVisible();
+        await page.getByTestId('replay-game').click();
+        await expect(page.getByTestId('sequence-study')).toBeVisible();
+        await expectProgress();
+      }
+    }
+    checks.push('Ordered memory at four levels: hide/reveal, speech cancellation, repeated choices, undo, incorrect order, full six-round completion and replay');
+
+    const gridCell = (index) => page.locator('[data-testid="grid-cell"][data-index="' + index + '"]');
+    const gridChoice = (picture) => page.locator('[data-testid="grid-choice"][data-picture="' + picture + '"]');
+    async function putPicture(index, picture) {
+      await gridCell(index).click();
+      await gridChoice(picture).click();
+      await expect(gridCell(index)).toHaveAttribute('data-picture', picture);
+    }
+    async function solveGrid({ wrong = false } = {}) {
+      const puzzle = await currentChallenge(GRID_PUZZLES);
+      await expect(page.getByTestId('grid-cell')).toHaveCount(puzzle.size * puzzle.size);
+      await expect(page.getByTestId('grid-check')).toBeDisabled();
+      const blanks = [];
+      for (let index = 0; index < puzzle.cells.length; index++) {
+        if (puzzle.cells[index] === null) {
+          blanks.push(index);
+          await expect(gridCell(index)).toHaveAttribute('data-given', 'false');
+          assert.equal(await gridCell(index).getAttribute('data-picture'), null, 'A fresh editable cell starts empty');
+        } else {
+          await expect(gridCell(index)).toBeDisabled();
+          await expect(gridCell(index)).toHaveAttribute('data-given', 'true');
+          await expect(gridCell(index)).toHaveAttribute('data-picture', puzzle.cells[index]);
+        }
+      }
+      const firstBlank = blanks[0];
+      const wrongPicture = puzzle.symbols.find((picture) => picture !== puzzle.solution[firstBlank]);
+      for (const index of blanks) await putPicture(index, wrong && index === firstBlank ? wrongPicture : puzzle.solution[index]);
+      if (wrong) {
+        await page.getByTestId('grid-check').click();
+        await expectProgress();
+        await expect(page.getByTestId('next-puzzle')).toHaveCount(0);
+        await expect(page.getByTestId('game-feedback')).not.toBeEmpty();
+        await gridCell(firstBlank).click();
+        await page.getByTestId('grid-clear').click();
+        assert.equal(await gridCell(firstBlank).getAttribute('data-picture'), null, 'Clear only removes the selected user entry');
+        await expect(page.getByTestId('grid-check')).toBeDisabled();
+        await page.getByTestId('grid-undo').click();
+        await expect(gridCell(firstBlank)).toHaveAttribute('data-picture', wrongPicture);
+        await putPicture(firstBlank, puzzle.solution[firstBlank]);
+      }
+      await page.getByTestId('grid-check').click();
+      completed.add(puzzle.id);
+      await expectProgress();
+      await expect(page.getByTestId('game-feedback')).toContainText(puzzle.explanation);
+      await expect(page.getByTestId('next-puzzle')).toBeVisible();
+      return puzzle;
+    }
+    for (const level of [1, 2, 3, 4]) {
+      await select('grid', level);
+      await solveGrid({ wrong: true });
+      if (level === 1) {
+        for (let round = 1; round < 6; round++) {
+          await page.getByTestId('next-puzzle').click();
+          await solveGrid();
+        }
+        await page.getByTestId('next-puzzle').click();
+        await expect(page.getByTestId('replay-game')).toBeVisible();
+        await page.getByTestId('replay-game').click();
+        await expect(page.getByTestId('grid-check')).toBeDisabled();
+        await expectProgress();
+      }
+    }
+    checks.push('Picture grids at four levels: fixed clues, full-board requirement, incorrect row/column retry, selected-cell clear and undo, six-round finish and replay');
+
+    await select('sequence', 4);
+    await page.getByTestId('hide-sequence').click();
+    await page.getByTestId('sequence-choice').first().click();
+    await expect(page.getByTestId('sequence-answer')).toHaveAttribute('data-count', '1');
+    await select('grid', 4);
+    await select('sequence', 4);
+    await expect(page.getByTestId('sequence-study')).toBeVisible();
+    await page.getByTestId('hide-sequence').click();
+    await expect(page.getByTestId('sequence-answer')).toHaveAttribute('data-count', '0');
+    await select('grid', 4);
+    const switchedGrid = await currentChallenge(GRID_PUZZLES);
+    const switchedBlank = switchedGrid.cells.indexOf(null);
+    await putPicture(switchedBlank, switchedGrid.symbols[0]);
+    await page.getByTestId('level-3').click();
+    await page.getByTestId('level-4').click();
+    assert.equal(await gridCell(switchedBlank).getAttribute('data-picture'), null, 'Changing level starts a fresh grid attempt');
+    await expectProgress();
+    checks.push('Switching mode and difficulty clears partial attempts while keeping completed exercises');
+
+    await page.reload();
+    await expectProgress();
+    const legacyIds = PUZZLES.filter((puzzle) => puzzle.level <= 3).map((puzzle) => puzzle.id).concat(['memory-1', 'memory-2', 'memory-3']);
+    await page.evaluate(({ key, ids }) => localStorage.setItem(key, JSON.stringify({ version: 1, completed: ids })), { key: STORAGE_KEY, ids: legacyIds });
+    completed.clear();
+    legacyIds.forEach((id) => completed.add(id));
+    await page.reload();
+    await expectProgress();
+    await select('sequence', 1);
+    await solveSequence();
+    assert.equal(completed.size, 40, 'An old fully completed save can add a new game without losing its 39 activities');
+    checks.push('All 39 previously saved completions survive expansion and combine with new games');
 
     await page.reload();
     await expectProgress();
@@ -236,7 +396,9 @@ async function validatePictureGamesBrowser() {
     checks.push('Reload persistence, reset cancellation and confirmation, malformed saved-progress recovery');
 
     fs.mkdirSync(path.join(ROOT, 'artifacts'), { recursive: true });
-    await select('pattern', 3);
+    await select('grid', 4);
+    // Theme transitions belong to the app, not screenshot timing. Disable them in this test page only.
+    await page.addStyleTag({ content: '*, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }' });
     await page.screenshot({ path: path.join(ROOT, 'artifacts/picture-games-desktop.png'), fullPage: true });
     await page.evaluate(() => document.documentElement.classList.add('dark'));
     const contrast = await page.getByTestId('game-prompt').evaluate((element) => {
@@ -255,13 +417,16 @@ async function validatePictureGamesBrowser() {
     await page.evaluate(() => document.documentElement.classList.remove('dark'));
     for (const width of [375, 320]) {
       await page.setViewportSize({ width, height: 850 });
-      for (const mode of ['pattern', 'detective', 'memory']) {
-        await select(mode, 3);
+      for (const mode of ['pattern', 'detective', 'memory', 'sequence', 'grid']) {
+        await select(mode, 4);
         assert(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1), 'No horizontal overflow at ' + width + 'px in ' + mode);
       }
-      if (width === 375) await page.screenshot({ path: path.join(ROOT, 'artifacts/picture-games-mobile.png'), fullPage: true });
+      if (width === 375) {
+        await select('sequence', 4);
+        await page.screenshot({ path: path.join(ROOT, 'artifacts/picture-games-mobile.png'), fullPage: true });
+      }
     }
-    checks.push('Desktop, mobile and dark screenshots; readable contrast and all games at 320px and 375px without overflow');
+    checks.push('Desktop, mobile and dark screenshots; readable contrast and all five games at level four, 320px and 375px without overflow');
 
     const fallback = await browser.newContext({ viewport: { width: 375, height: 850 }, reducedMotion: 'reduce' });
     await fallback.route('**/*', (route) => new URL(route.request().url()).origin === origin ? route.continue() : route.abort());
@@ -286,7 +451,24 @@ async function validatePictureGamesBrowser() {
     await fallbackPage.getByTestId('mode-memory').click();
     await fallbackPage.getByTestId('memory-card').first().click();
     await expect(fallbackPage.getByTestId('memory-card').first()).toHaveAttribute('data-open', 'true');
-    checks.push('Blocked storage and unsupported speech preserve playable picture and memory games');
+    await fallbackPage.getByTestId('mode-sequence').click();
+    const fallbackSequenceId = await fallbackPage.getByTestId('puzzle').getAttribute('data-puzzle-id');
+    const fallbackSequence = SEQUENCE_PUZZLES.find((puzzle) => puzzle.id === fallbackSequenceId);
+    await fallbackPage.getByTestId('hide-sequence').click();
+    for (const picture of fallbackSequence.sequence) await fallbackPage.locator('[data-testid="sequence-choice"][data-picture="' + picture + '"]').click();
+    await fallbackPage.getByTestId('sequence-check').click();
+    await expect(fallbackPage.getByTestId('game-progress')).toHaveAttribute('data-completed', '2');
+    await fallbackPage.getByTestId('mode-grid').click();
+    const fallbackGridId = await fallbackPage.getByTestId('puzzle').getAttribute('data-puzzle-id');
+    const fallbackGrid = GRID_PUZZLES.find((puzzle) => puzzle.id === fallbackGridId);
+    for (let index = 0; index < fallbackGrid.cells.length; index++) {
+      if (fallbackGrid.cells[index] !== null) continue;
+      await fallbackPage.locator('[data-testid="grid-cell"][data-index="' + index + '"]').click();
+      await fallbackPage.locator('[data-testid="grid-choice"][data-picture="' + fallbackGrid.solution[index] + '"]').click();
+    }
+    await fallbackPage.getByTestId('grid-check').click();
+    await expect(fallbackPage.getByTestId('game-progress')).toHaveAttribute('data-completed', '3');
+    checks.push('Blocked storage and unsupported speech preserve playable original and new games');
     assert.deepEqual(errors, [], 'No uncaught browser or hydration exceptions');
     return { status: 'passed', layer: 'Chrome against a real Next production build', checks,
       screenshots: ['artifacts/picture-games-desktop.png', 'artifacts/picture-games-mobile.png', 'artifacts/picture-games-dark.png'],
