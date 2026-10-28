@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="930" viewBox="0 0 360 930" role="img">
+<title>Four ballot papers</title>
+<desc>Each paper has ADA and BEN beside separate small squares. A has one tick inside ADA’s square. B has ticks inside both squares. C has a tick outside the squares only. D has one outside tick and one inside BEN’s square.</desc>
+<rect width="360" height="930" rx="18" fill="#eef3f8"/>
+<g font-family="Arial, sans-serif" fill="#20374d">
+<rect x="16" y="12" width="328" height="216" rx="14" fill="#ffffff" stroke="#9bb2c4" stroke-width="2"/>
+<circle cx="48" cy="48" r="22" fill="#dce9f4"/>
+<text x="48" y="58" font-size="29" font-weight="700" text-anchor="middle">A</text>
+<text x="130" y="123" font-size="28" font-weight="700" text-anchor="start">ADA</text>
+<rect x="264" y="92" width="46" height="46" fill="#fafcff" stroke="#20374d" stroke-width="3"/>
+<text x="130" y="195" font-size="28" font-weight="700" text-anchor="start">BEN</text>
+<rect x="264" y="164" width="46" height="46" fill="#fafcff" stroke="#20374d" stroke-width="3"/>
+<path d="M271 115 L282 127 L302 100" fill="none" stroke="#255c8b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="16" y="242" width="328" height="216" rx="14" fill="#ffffff" stroke="#9bb2c4" stroke-width="2"/>
+<circle cx="48" cy="278" r="22" fill="#dce9f4"/>
+<text x="48" y="288" font-size="29" font-weight="700" text-anchor="middle">B</text>
+<text x="130" y="353" font-size="28" font-weight="700" text-anchor="start">ADA</text>
+<rect x="264" y="322" width="46" height="46" fill="#fafcff" stroke="#20374d" stroke-width="3"/>
+<text x="130" y="425" font-size="28" font-weight="700" text-anchor="start">BEN</text>
+<rect x="264" y="394" width="46" height="46" fill="#fafcff" stroke="#20374d" stroke-width="3"/>
+<path d="M271 345 L282 357 L302 330" fill="none" stroke="#255c8b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M271 417 L282 429 L302 402" fill="none" stroke="#255c8b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="16" y="472" width="328" height="216" rx="14" fill="#ffffff" stroke="#9bb2c4" stroke-width="2"/>
+<circle cx="48" cy="508" r="22" fill="#dce9f4"/>
+<text x="48" y="518" font-size="29" font-weight="700" text-anchor="middle">C</text>
+<text x="130" y="583" font-size="28" font-weight="700" text-anchor="start">ADA</text>
+<rect x="264" y="552" width="46" height="46" fill="#fafcff" stroke="#20374d" stroke-width="3"/>
+<text x="130" y="655" font-size="28" font-weight="700" text-anchor="start">BEN</text>
+<rect x="264" y="624" width="46" height="46" fill="#fafcff" stroke="#20374d" stroke-width="3"/>
+<path d="M67 575 L78 587 L98 560" fill="none" stroke="#255c8b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="16" y="702" width="328" height="216" rx="14" fill="#ffffff" stroke="#9bb2c4" stroke-width="2"/>
+<circle cx="48" cy="738" r="22" fill="#dce9f4"/>
+<text x="48" y="748" font-size="29" font-weight="700" text-anchor="middle">D</text>
+<text x="130" y="813" font-size="28" font-weight="700" text-anchor="start">ADA</text>
+<rect x="264" y="782" width="46" height="46" fill="#fafcff" stroke="#20374d" stroke-width="3"/>
+<text x="130" y="885" font-size="28" font-weight="700" text-anchor="start">BEN</text>
+<rect x="264" y="854" width="46" height="46" fill="#fafcff" stroke="#20374d" stroke-width="3"/>
+<path d="M271 877 L282 889 L302 862" fill="none" stroke="#255c8b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M67 805 L78 817 L98 790" fill="none" stroke="#255c8b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

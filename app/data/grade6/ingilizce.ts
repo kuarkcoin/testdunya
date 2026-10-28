@@ -3747,6 +3747,176 @@ export const ingilizceData: SubjectData = {
         "correct": 1,
         "explanation": "Her öğrenci kendi tercihini bilir. Amy, Finn'in Lina dediğini duyup onun oyunu yazdığı için kendi oyu ile Finn'in oyunu bilir. Ben, Amy'nin Omar dediğini duyup onun oyunu yazdığı için kendi oyu ile Amy'nin oyunu bilir. Finn diğerlerinin kapalı kâğıtlarını kutuya bırakır; onları açmaz ve diğer iki tercihi duymaz. Bu nedenle yalnız kendi tercihini bilir. Okurun Amy'nin tercihini metinden öğrenmesi, Finn'in de öğrendiği anlamına gelmez. Yardım eden, yazan ve kâğıdı kutuya atan kişiler oyların sahipleriyle aynı olmak zorunda değildir; her kişinin tek oyu korunur."
     }
+],
+  "test8": [
+    {
+        "id": "e6-2-t8-01",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Which job matches the work in the picture?",
+        "options": [
+            "A dentist.",
+            "A farmer.",
+            "A cook.",
+            "A mechanic."
+        ],
+        "correct": 2,
+        "explanation": "Kişi aşçı başlığı ve önlük giymiş, ocaktaki tencerede yemek pişirmektedir. Bu iş aşçının, yani cook mesleğinin işidir. Mesleği belirleyen ipucu, yapılan yemek pişirme eylemidir.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-8/soru-01.svg",
+        "imageAlt": "A worker wearing a tall white chef hat and an apron stirs food in a saucepan on a cooker. Steam rises from the pan. Vegetables are on a small counter.",
+        "imageWidth": 360,
+        "imageHeight": 430
+    },
+    {
+        "id": "e6-2-t8-02",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "The eco-club says, 'Save water!' Which action follows this advice?",
+        "options": [
+            "Use only the water we need.",
+            "Leave the tap running all day.",
+            "Use more water for every job.",
+            "Throw clean water away."
+        ],
+        "correct": 0,
+        "explanation": "Save water, su tasarrufu yapmak demektir. Yalnız ihtiyaç duyduğumuz kadar su kullanmak bu yönergeye uyar. Musluğu açık bırakmak veya temiz suyu boşa dökmek suyu korumaz."
+    },
+    {
+        "id": "e6-2-t8-03",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Look at Leo's holiday photos. What did he do BEFORE he went swimming?",
+        "options": [
+            "He went fishing.",
+            "He went skiing.",
+            "He visited a museum.",
+            "He rode a horse."
+        ],
+        "correct": 3,
+        "explanation": "16 June tarihli fotoğrafta Leo ata binmektedir. 18 June tarihli fotoğraf ise yüzdüğünü gösterir. 16 Haziran, 18 Haziran’dan önce olduğu için yüzmeden önce yaptığı etkinlik ata binmektir.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-8/soru-03.svg",
+        "imageAlt": "The photograph dated 16 June shows Leo wearing a riding helmet and sitting in a saddle on a horse in the countryside. The photograph dated 18 June shows him swimming in the sea.",
+        "imageWidth": 360,
+        "imageHeight": 650
+    },
+    {
+        "id": "e6-2-t8-04",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Mira returned ONE book to this library shelf. Compare the shelf before and after her visit. Which book did she return?",
+        "options": [
+            "BIRD.",
+            "TREE.",
+            "FISH.",
+            "MOON."
+        ],
+        "correct": 1,
+        "explanation": "Önceki rafta FISH ve BIRD vardır. Sonraki rafta bu iki kitabın yanında TREE kitabı da bulunur. Bu yüzden Mira’nın geri getirdiği kitap TREE’dir; iki resimde de bulunan kitaplar yeni iade edilen kitap değildir.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-8/soru-04.svg",
+        "imageAlt": "Before the return, the shelf holds FISH on the left and BIRD on the right, with a space between them. After the return, FISH and BIRD remain in the same places, and TREE stands between them. The same books have the same covers in both pictures.",
+        "imageWidth": 360,
+        "imageHeight": 590
+    },
+    {
+        "id": "e6-2-t8-05",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Read the voting rule: 'Count only the ticks inside the two small squares on each paper. A paper is valid if you count exactly ONE tick.' Look at the four papers. Which TWO are valid?",
+        "options": [
+            "Papers A and D.",
+            "Papers A and B.",
+            "Papers C and D.",
+            "Papers B and C."
+        ],
+        "correct": 0,
+        "explanation": "A’da yalnız Ada’nın küçük karesinin içinde bir işaret vardır. B’de iki karenin içinde de işaret olduğu için kâğıt geçersizdir. C’nin tek işareti karelerin dışındadır; içeride hiç işaret yoktur. D’de Ben’in karesinin içinde bir, karelerin dışında bir işaret vardır. Dışarıdaki işaret kural gereği dikkate alınmaz; bu nedenle D de geçerlidir. Geçerli iki kâğıt A ve D’dir.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-8/soru-05.svg",
+        "imageAlt": "Each paper has ADA and BEN beside separate small squares. A has one tick inside ADA’s square. B has ticks inside both squares. C has a tick outside the squares only. D has one outside tick and one inside BEN’s square.",
+        "imageWidth": 360,
+        "imageHeight": 930
+    },
+    {
+        "id": "e6-2-t8-06",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Yesterday, Leo borrowed a book about word meanings to use AT HOME. Nina stayed IN THE LIBRARY and read an animal story. Both followed the labels. Look at the books. Which books did they choose?",
+        "options": [
+            "Leo: B. Nina: A.",
+            "Leo: C. Nina: D.",
+            "Leo: C. Nina: A.",
+            "Leo: A. Nina: C."
+        ],
+        "correct": 2,
+        "explanation": "Leo’nun sözcük anlamları için B veya C türünde bir kitaba ihtiyacı vardır; ancak B yalnız kütüphanede kullanılabilir. Evde kullanabileceği sözcük kitabı C’dir. Nina ise hayvan hikâyesi istediğinden A’yı seçer. A’nın HOME OR LIBRARY etiketi hem evde hem kütüphanede okunmasına izin verir. C seçeneği hem içerik hem kullanım yeri koşullarını korur.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-8/soru-06.svg",
+        "imageAlt": "Book A: PETS, Animal stories, HOME OR LIBRARY, with a dog illustration. Book B: DICTIONARY, Word meanings, LIBRARY ONLY, with an open ABC book. Book C: WORD BOOK, Word meanings, HOME OR LIBRARY, with an open ABC book. Book D: SPACE, Space stories, HOME OR LIBRARY, with a rocket illustration.",
+        "imageWidth": 360,
+        "imageHeight": 1080
+    },
+    {
+        "id": "e6-2-t8-07",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Read about a holiday album.\nOnly Nora, Ben and Max went on these visits. There was one photo from each place. Each friend took exactly ONE of the three photos. Each photo shows all the OTHER friends on that visit. Nobody took a photo of themselves.\n• Beach photo: Nora and Ben.\n• Castle photo: Ben.\n• Village photo: Nora and Max.\n\nWhich note is correct?",
+        "options": [
+            "Nora and Max visited all three places; Ben did not visit the village.",
+            "Nora and Ben visited all three places; Max did not visit the castle.",
+            "Ben and Max visited all three places; Nora did not visit the beach.",
+            "Only Ben visited all three places; Nora and Max did not visit the castle."
+        ],
+        "correct": 1,
+        "explanation": "Plaj fotoğrafında Nora ve Ben göründüğünden fotoğrafı çeken Max’tır; üçü de plaja gitmiştir. Köy fotoğrafında Nora ve Max göründüğünden fotoğrafı çeken Ben’dir; üçü de köye gitmiştir. Herkes tam bir fotoğraf çektiği için kalenin fotoğrafını geriye kalan Nora çekmiştir. Bu fotoğrafta yalnız Ben göründüğünden kalede Nora ve Ben vardır, Max yoktur. Fotoğrafta görünmemek her zaman o yerde bulunmamak anlamına gelmez: fotoğrafı çeken kişi de oradadır."
+    },
+    {
+        "id": "e6-2-t8-08",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "These four workers visited the school on 10, 11, 12 and 13 May, one person each day. Look at their regular jobs and use ALL the clues.\n• The farmer came before the mechanic.\n• The dentist came the day after the cook.\n• Max did not come on 10 May.\n• Nora did not come on 11 May.\n\nWhich note gives the correct dates?",
+        "options": [
+            "Farmer: 11 May. Mechanic: 13 May.",
+            "Farmer: 10 May. Mechanic: 12 May.",
+            "Farmer: 12 May. Mechanic: 11 May.",
+            "Farmer: 10 May. Mechanic: 13 May."
+        ],
+        "correct": 3,
+        "explanation": "Resimlere göre Nora tamirci, Liam çiftçi, Eva diş hekimi, Max aşçıdır. Aşçı Max 10 Mayıs’ta gelmemiştir. Diş hekimi bir gün sonra geldiği için Max 13 Mayıs’ta da gelemez; 11 veya 12 Mayıs kalır. Max 12 Mayıs olsaydı Eva 13 Mayıs olurdu; çiftçi tamirciden önce geldiği için Liam 10, Nora 11 Mayıs olmak zorunda kalırdı. Oysa Nora 11 Mayıs’ta gelmemiştir. Bu olasılık elenir. Max 11, Eva 12, Liam 10 ve Nora 13 Mayıs’ta gelmiştir.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-8/soru-08.svg",
+        "imageAlt": "NORA wears work clothes and uses a spanner on the engine of a car with its bonnet open. LIAM wears a straw hat and waters growing vegetables. EVA wears a white coat and examines a patient’s teeth with small dental tools beside a reclining dental chair. MAX wears a chef hat and apron and stirs food in a pan on a cooker. No work dates are shown.",
+        "imageWidth": 360,
+        "imageHeight": 1225
+    },
+    {
+        "id": "e6-2-t8-09",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "The eco-club will plant one red flower and one yellow flower. Look at the SAME four plots in the morning and afternoon. A plot is a small part of the garden. Follow ALL the instructions:\n• Keep the wildflowers. Do not put a new flower in their plot.\n• Put the two new flowers in different plots next to each other, with no plot between them.\n• The red flower needs sun in the morning.\n• The yellow flower needs shade in the afternoon.\n\nWhere should the club put the flowers?",
+        "options": [
+            "Red: D. Yellow: C.",
+            "Red: A. Yellow: C.",
+            "Red: C. Yellow: D.",
+            "Red: A. Yellow: B."
+        ],
+        "correct": 0,
+        "explanation": "B’deki kır çiçekleri korunacağı için B kullanılamaz. A, C ve D sabah güneş alır; A, B ve C öğleden sonra gölgededir. A tek başına ışık koşullarını sağlasa da tek komşusu B olduğu için iki yeni çiçeğin yan yana yerleştirilmesine uygun değildir. Kullanılabilir tek komşu çift C–D’dir. Sarı çiçek öğleden sonra gölgede kalan C’ye, kırmızı çiçek sabah güneş alan D’ye konur. B seçeneğinde çiçekler komşu değildir; C seçeneğinde sarı çiçek öğleden sonra güneşte kalır; D seçeneğinde mevcut kır çiçekleri korunmaz.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-8/soru-09.svg",
+        "imageAlt": "The same four plots are arranged left to right A, B, C, D. B contains wildflowers in both views. Morning: A, C and D are in sun; B is in shade. Afternoon: A, B and C are in shade; D is in sun. A and B are neighbours, B and C are neighbours, and C and D are neighbours.",
+        "imageWidth": 360,
+        "imageHeight": 740
+    },
+    {
+        "id": "e6-2-t8-10",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Read the class rules and the decisions.\n'A YES vote changes only the part named in the question. A NO vote changes nothing. The president cannot change a plan alone.'\n\nThe class first voted YES to this plan: TUESDAY / READ BOOKS / CLASSROOM.\n1. 'Change the place to the garden?' YES.\n2. 'Change the activity to games?' NO.\n3. Without another vote, the president wrote this note: WEDNESDAY / PLAY GAMES / GARDEN.\n4. The class then voted: 'Change ONLY our day to the day AFTER the day on the president's note?' YES.\n\nWhich plan follows all the class votes?",
+        "options": [
+            "Thursday / play games / garden.",
+            "Wednesday / read books / garden.",
+            "Thursday / read books / garden.",
+            "Thursday / read books / classroom."
+        ],
+        "correct": 2,
+        "explanation": "İlk onaylı plan salı günü sınıfta kitap okumaktır. Birinci YES oyu yalnız yeri bahçe olarak değiştirir. İkinci soruya NO dendiği için etkinlik kitap okuma olarak kalır. Başkanın tek başına yazdığı çarşamba/oyun/bahçe notu planı değiştiremez. Son oylama yalnız günü değiştirir; soruda başkanın notundaki günün ertesi istendiğinden yeni gün perşembedir. Bu, nottaki oyun etkinliğini de kabul etmek anlamına gelmez. Son onaylı plan perşembe günü bahçede kitap okumaktır. Geçersiz bir nottaki gün, yeni soruda zaman referansı olabilir; notun öteki bölümleri bu yolla onaylanmış olmaz."
+    }
 ]
 }
 };

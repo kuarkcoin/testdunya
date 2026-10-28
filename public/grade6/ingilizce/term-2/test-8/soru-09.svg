@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="740" viewBox="0 0 360 740" role="img">
+<title>The same garden in morning and afternoon</title>
+<desc>The same four plots are arranged left to right A, B, C, D. B contains wildflowers in both views. Morning: A, C and D are in sun; B is in shade. Afternoon: A, B and C are in shade; D is in sun. A and B are neighbours, B and C are neighbours, and C and D are neighbours.</desc>
+<rect width="360" height="740" rx="18" fill="#eff4f5"/>
+<g font-family="Arial, sans-serif" fill="#20374d">
+<rect x="10" y="12" width="340" height="310" rx="14" fill="#ffffff" stroke="#a3b6c1" stroke-width="2"/>
+<text x="180" y="56" font-size="30" font-weight="700" text-anchor="middle">MORNING</text>
+<text x="60" y="102" font-size="28" font-weight="700" text-anchor="middle">A</text>
+<rect x="20" y="122" width="80" height="126" fill="#fff0bd" stroke="#516b7c" stroke-width="2"/>
+<circle cx="60" cy="150" r="11" fill="#f8cc54" stroke="#b98925" stroke-width="1.5"/>
+<line x1="60.0" y1="135.37" x2="60" y2="131" stroke="#e5aa32" stroke-width="2" stroke-linecap="round"/>
+<line x1="60.0" y1="164.63" x2="60" y2="169" stroke="#e5aa32" stroke-width="2" stroke-linecap="round"/>
+<line x1="45.37" y1="150.0" x2="41" y2="150" stroke="#e5aa32" stroke-width="2" stroke-linecap="round"/>
+<line x1="74.63" y1="150.0" x2="79" y2="150" stroke="#e5aa32" stroke-width="2" stroke-linecap="round"/>
+<line x1="49.22" y1="139.22" x2="46" y2="136" stroke="#e5aa32" stroke-width="2" stroke-linecap="round"/>
+<line x1="70.78" y1="139.22" x2="74" y2="136" stroke="#e5aa32" stroke-width="2" stroke-linecap="round"/>
+<line x1="49.22" y1="160.78" x2="46" y2="164" stroke="#e5aa32" stroke-width="2" stroke-linecap="round"/>
+<line x1="70.78" y1="160.78" x2="74" y2="164" stroke="#e5aa32" stroke-width="2" stroke-linecap="round"/>
+<line x1="26" y1="233" x2="94" y2="233" stroke="#9b805e" stroke-width="3" stroke-linecap="round"/>
+<text x="60" y="289" font-size="26" font-weight="700" text-anchor="middle">sun</text>
+<text x="140" y="102" font-size="28" font-weight="700" text-anchor="middle">B</text>
+<rect x="100" y="122" width="80" height="126" fill="#d3dae5" stroke="#516b7c" stroke-width="2"/>
+<line x1="106" y1="133" x2="113" y2="159" stroke="#a9b6c8" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="120" y1="133" x2="127" y2="159" stroke="#a9b6c8" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="134" y1="133" x2="141" y2="159" stroke="#a9b6c8" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="148" y1="133" x2="155" y2="159" stroke="#a9b6c8" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="162" y1="133" x2="169" y2="159" stroke="#a9b6c8" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="106" y1="233" x2="174" y2="233" stroke="#9b805e" stroke-width="3" stroke-linecap="round"/>
+<line x1="123" y1="202" x2="123" y2="232" stroke="#4f8058" stroke-width="2.7" stroke-linecap="round"/>
+<line x1="123" y1="216" x2="115" y2="208" stroke="#4f8058" stroke-width="2" stroke-linecap="round"/>
+<circle cx="117" cy="196" r="4.5" fill="#ca84c4" stroke="none" stroke-width="1.5"/>
+<circle cx="129" cy="196" r="4.5" fill="#ca84c4" stroke="none" stroke-width="1.5"/>
+<circle cx="123" cy="190" r="4.5" fill="#ca84c4" stroke="none" stroke-width="1.5"/>
+<circle cx="123" cy="202" r="4.5" fill="#ca84c4" stroke="none" stroke-width="1.5"/>
+<circle cx="123" cy="196" r="3" fill="#f4ce68" stroke="none" stroke-width="1.5"/>
+<line x1="155" y1="192" x2="155" y2="232" stroke="#4f8058" stroke-width="2.7" stroke-linecap="round"/>
+<line x1="155" y1="206" x2="147" y2="198" stroke="#4f8058" stroke-width="2" stroke-linecap="round"/>
+<circle cx="149" cy="186" r="4.5" fill="#ab86d0" stroke="none" stroke-width="1.5"/>
+<circle cx="161" cy="186" r="4.5" fill="#ab86d0" stroke="none" stroke-width="1.5"/>
+<circle cx="155" cy="180" r="4.5" fill="#ab86d0" stroke="none" stroke-width="1.5"/>
+<circle cx="155" cy="192" r="4.5" fill="#ab86d0" stroke="none" stroke-width="1.5"/>
+<circle cx="155" cy="186" r="3" fill="#f4ce68" stroke="none" stroke-width="1.5"/>
+<line x1="140" y1="222" x2="140" y2="232" stroke="#4f8058" stroke-width="2.7" stroke-linecap="round"/>
+<line x1="140" y1="236" x2="132" y2="228" stroke="#4f8058" stroke-width="2" stroke-linecap="round"/>
+<circle cx="134" cy="216" r="4.5" fill="#e098bd" stroke="none" stroke-width="1.5"/>
+<circle cx="146" cy="216" r="4.5" fill="#e098bd" stroke="none" stroke-width="1.5"/>
+<circle cx="140" cy="210" r="4.5" fill="#e098bd" stroke="none" stroke-width="1.5"/>
+<circle cx="140" cy="222" r="4.5" fill="#e098bd" stroke="none" stroke-width="1.5"/>
+<circle cx="140" cy="216" r="3" fill="#f4ce68" stroke="none" stroke-width="1.5"/>
+<text x="140" y="289" font-size="26" font-weight="700" text-anchor="middle">shade</text>
+<text x="220" y="102" font-size="28" font-weight="700" text-anchor="middle">C</text>
+<rect x="180" y="122" width="80" height="126" fill="#fff0bd" stroke="#516b7c" stroke-width="2"/>
+<circle cx="220" cy="150" r="11" fill="#f8cc54" stroke="#b98925" stroke-width="1.5"/>
+<line x1="220.0" y1="135.37" x2="220" y2="131" stroke="#e5aa32" stroke-width="2" stroke-linecap="round"/>
+<line x1="220.0" y1="164.63" x2="220" y2="169" stroke="#e5aa32" stroke-width="2" stroke-linecap="round"/>
+<line x1="205.37" y1="150.0" x2="201" y2="150" stroke="#e5aa32" stroke-width="2" stroke-linecap="round"/>
+<line x1="234.63" y1="150.0" x2="239" y2="150" stroke="#e5aa32" stroke-width="2" stroke-linecap="round"/>
+<line x1="209.22" y1="139.22" x2="206" y2="136" stroke="#e5aa32" stroke-width="2" stroke-linecap="round"/>
+<line x1="230.78" y1="139.22" x2="234" y2="136" stroke="#e5aa32" stroke-width="2" stroke-linecap="round"/>
+<line x1="209.22" y1="160.78" x2="206" y2="164" stroke="#e5aa32" stroke-width="2" stroke-linecap="round"/>
+<line x1="230.78" y1="160.78" x2="234" y2="164" stroke="#e5aa32" stroke-width="2" stroke-linecap="round"/>
+<line x1="186" y1="233" x2="254" y2="233" stroke="#9b805e" stroke-width="3" stroke-linecap="round"/>
+<text x="220" y="289" font-size="26" font-weight="700" text-anchor="middle">sun</text>
+<text x="300" y="102" font-size="28" font-weight="700" text-anchor="middle">D</text>
+<rect x="260" y="122" width="80" height="126" fill="#fff0bd" stroke="#516b7c" stroke-width="2"/>
+<circle cx="300" cy="150" r="11" fill="#f8cc54" stroke="#b98925" stroke-width="1.5"/>
+<line x1="300.0" y1="135.37" x2="300" y2="131" stroke="#e5aa32" stroke-width="2" stroke-linecap="round"/>
+<line x1="300.0" y1="164.63" x2="300" y2="169" stroke="#e5aa32" stroke-width="2" stroke-linecap="round"/>
+<line x1="285.37" y1="150.0" x2="281" y2="150" stroke="#e5aa32" stroke-width="2" stroke-linecap="round"/>
+<line x1="314.63" y1="150.0" x2="319" y2="150" stroke="#e5aa32" stroke-width="2" stroke-linecap="round"/>
+<line x1="289.22" y1="139.22" x2="286" y2="136" stroke="#e5aa32" stroke-width="2" stroke-linecap="round"/>
+<line x1="310.78" y1="139.22" x2="314" y2="136" stroke="#e5aa32" stroke-width="2" stroke-linecap="round"/>
+<line x1="289.22" y1="160.78" x2="286" y2="164" stroke="#e5aa32" stroke-width="2" stroke-linecap="round"/>
+<line x1="310.78" y1="160.78" x2="314" y2="164" stroke="#e5aa32" stroke-width="2" stroke-linecap="round"/>
+<line x1="266" y1="233" x2="334" y2="233" stroke="#9b805e" stroke-width="3" stroke-linecap="round"/>
+<text x="300" y="289" font-size="26" font-weight="700" text-anchor="middle">sun</text>
+<rect x="10" y="340" width="340" height="310" rx="14" fill="#ffffff" stroke="#a3b6c1" stroke-width="2"/>
+<text x="180" y="384" font-size="30" font-weight="700" text-anchor="middle">AFTERNOON</text>
+<text x="60" y="430" font-size="28" font-weight="700" text-anchor="middle">A</text>
+<rect x="20" y="450" width="80" height="126" fill="#d3dae5" stroke="#516b7c" stroke-width="2"/>
+<line x1="26" y1="461" x2="33" y2="487" stroke="#a9b6c8" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="40" y1="461" x2="47" y2="487" stroke="#a9b6c8" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="54" y1="461" x2="61" y2="487" stroke="#a9b6c8" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="68" y1="461" x2="75" y2="487" stroke="#a9b6c8" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="82" y1="461" x2="89" y2="487" stroke="#a9b6c8" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="26" y1="561" x2="94" y2="561" stroke="#9b805e" stroke-width="3" stroke-linecap="round"/>
+<text x="60" y="617" font-size="26" font-weight="700" text-anchor="middle">shade</text>
+<text x="140" y="430" font-size="28" font-weight="700" text-anchor="middle">B</text>
+<rect x="100" y="450" width="80" height="126" fill="#d3dae5" stroke="#516b7c" stroke-width="2"/>
+<line x1="106" y1="461" x2="113" y2="487" stroke="#a9b6c8" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="120" y1="461" x2="127" y2="487" stroke="#a9b6c8" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="134" y1="461" x2="141" y2="487" stroke="#a9b6c8" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="148" y1="461" x2="155" y2="487" stroke="#a9b6c8" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="162" y1="461" x2="169" y2="487" stroke="#a9b6c8" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="106" y1="561" x2="174" y2="561" stroke="#9b805e" stroke-width="3" stroke-linecap="round"/>
+<line x1="123" y1="530" x2="123" y2="560" stroke="#4f8058" stroke-width="2.7" stroke-linecap="round"/>
+<line x1="123" y1="544" x2="115" y2="536" stroke="#4f8058" stroke-width="2" stroke-linecap="round"/>
+<circle cx="117" cy="524" r="4.5" fill="#ca84c4" stroke="none" stroke-width="1.5"/>
+<circle cx="129" cy="524" r="4.5" fill="#ca84c4" stroke="none" stroke-width="1.5"/>
+<circle cx="123" cy="518" r="4.5" fill="#ca84c4" stroke="none" stroke-width="1.5"/>
+<circle cx="123" cy="530" r="4.5" fill="#ca84c4" stroke="none" stroke-width="1.5"/>
+<circle cx="123" cy="524" r="3" fill="#f4ce68" stroke="none" stroke-width="1.5"/>
+<line x1="155" y1="520" x2="155" y2="560" stroke="#4f8058" stroke-width="2.7" stroke-linecap="round"/>
+<line x1="155" y1="534" x2="147" y2="526" stroke="#4f8058" stroke-width="2" stroke-linecap="round"/>
+<circle cx="149" cy="514" r="4.5" fill="#ab86d0" stroke="none" stroke-width="1.5"/>
+<circle cx="161" cy="514" r="4.5" fill="#ab86d0" stroke="none" stroke-width="1.5"/>
+<circle cx="155" cy="508" r="4.5" fill="#ab86d0" stroke="none" stroke-width="1.5"/>
+<circle cx="155" cy="520" r="4.5" fill="#ab86d0" stroke="none" stroke-width="1.5"/>
+<circle cx="155" cy="514" r="3" fill="#f4ce68" stroke="none" stroke-width="1.5"/>
+<line x1="140" y1="550" x2="140" y2="560" stroke="#4f8058" stroke-width="2.7" stroke-linecap="round"/>
+<line x1="140" y1="564" x2="132" y2="556" stroke="#4f8058" stroke-width="2" stroke-linecap="round"/>
+<circle cx="134" cy="544" r="4.5" fill="#e098bd" stroke="none" stroke-width="1.5"/>
+<circle cx="146" cy="544" r="4.5" fill="#e098bd" stroke="none" stroke-width="1.5"/>
+<circle cx="140" cy="538" r="4.5" fill="#e098bd" stroke="none" stroke-width="1.5"/>
+<circle cx="140" cy="550" r="4.5" fill="#e098bd" stroke="none" stroke-width="1.5"/>
+<circle cx="140" cy="544" r="3" fill="#f4ce68" stroke="none" stroke-width="1.5"/>
+<text x="140" y="617" font-size="26" font-weight="700" text-anchor="middle">shade</text>
+<text x="220" y="430" font-size="28" font-weight="700" text-anchor="middle">C</text>
+<rect x="180" y="450" width="80" height="126" fill="#d3dae5" stroke="#516b7c" stroke-width="2"/>
+<line x1="186" y1="461" x2="193" y2="487" stroke="#a9b6c8" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="200" y1="461" x2="207" y2="487" stroke="#a9b6c8" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="214" y1="461" x2="221" y2="487" stroke="#a9b6c8" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="228" y1="461" x2="235" y2="487" stroke="#a9b6c8" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="242" y1="461" x2="249" y2="487" stroke="#a9b6c8" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="186" y1="561" x2="254" y2="561" stroke="#9b805e" stroke-width="3" stroke-linecap="round"/>
+<text x="220" y="617" font-size="26" font-weight="700" text-anchor="middle">shade</text>
+<text x="300" y="430" font-size="28" font-weight="700" text-anchor="middle">D</text>
+<rect x="260" y="450" width="80" height="126" fill="#fff0bd" stroke="#516b7c" stroke-width="2"/>
+<circle cx="300" cy="478" r="11" fill="#f8cc54" stroke="#b98925" stroke-width="1.5"/>
+<line x1="300.0" y1="463.37" x2="300" y2="459" stroke="#e5aa32" stroke-width="2" stroke-linecap="round"/>
+<line x1="300.0" y1="492.63" x2="300" y2="497" stroke="#e5aa32" stroke-width="2" stroke-linecap="round"/>
+<line x1="285.37" y1="478.0" x2="281" y2="478" stroke="#e5aa32" stroke-width="2" stroke-linecap="round"/>
+<line x1="314.63" y1="478.0" x2="319" y2="478" stroke="#e5aa32" stroke-width="2" stroke-linecap="round"/>
+<line x1="289.22" y1="467.22" x2="286" y2="464" stroke="#e5aa32" stroke-width="2" stroke-linecap="round"/>
+<line x1="310.78" y1="467.22" x2="314" y2="464" stroke="#e5aa32" stroke-width="2" stroke-linecap="round"/>
+<line x1="289.22" y1="488.78" x2="286" y2="492" stroke="#e5aa32" stroke-width="2" stroke-linecap="round"/>
+<line x1="310.78" y1="488.78" x2="314" y2="492" stroke="#e5aa32" stroke-width="2" stroke-linecap="round"/>
+<line x1="266" y1="561" x2="334" y2="561" stroke="#9b805e" stroke-width="3" stroke-linecap="round"/>
+<text x="300" y="617" font-size="26" font-weight="700" text-anchor="middle">sun</text>
+<text x="180" y="693" font-size="28" font-weight="700" text-anchor="middle">B: wildflowers</text>
+<text x="180" y="727" font-size="26" font-weight="400" text-anchor="middle">Same plots, same order</text>
+</g>
+</svg>
