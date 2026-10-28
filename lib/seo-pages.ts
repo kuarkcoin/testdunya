@@ -28,6 +28,11 @@ export const STATIC_SEO_PAGES: StaticSeoPage[] = [
     description: '29 harfi tanı, heceleri birleştir, kelimeleri ve kısa metinleri oku. Sesli örnekler, anlama soruları ve isteğe bağlı oku, kaydet, dinle çalışması.',
   },
   {
+    path: '/1-sinif/resimli-oyunlar',
+    title: '7 Yaş Resimli Oyunlar: Keşif Adası',
+    description: '7 yaş için resimli örüntü, dikkat ve hafıza oyunları. Üç düzeyde 36 bulmaca, eşleştirme kartları ve sesli yönergelerle kendi hızında oyna.',
+  },
+  {
     path: '/5-sinif',
     title: '5. Sınıf Testleri',
     description: '5. sınıf Matematik, Türkçe, Fen Bilimleri ve İngilizce testlerini çözün. Dersinizi seçin, soruları yanıtlayın ve açıklamalı cevaplarla tekrar yapın.',
@@ -243,3 +248,4 @@ export function getStaticPageMetadata(path: string) {
   if (!page) throw new Error(`Missing static SEO page: ${path}`);
   return createPageMetadata(page);
 }
+

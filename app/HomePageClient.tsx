@@ -388,7 +388,7 @@ export default function HomePage() {
     </div>
     <div>
       <h2 className="text-2xl md:text-3xl font-black text-slate-800 tracking-tight">İLKÖĞRETİM DÜZEYİ</h2>
-      <p className="text-slate-600 dark:text-zinc-300 text-base">Okuma alıştırmaları ve açıklamalı ders testleri</p>
+      <p className="text-slate-600 dark:text-zinc-300 text-base">Okuma alıştırmaları, resimli oyunlar ve açıklamalı ders testleri</p>
     </div>
   </div>
 
@@ -407,6 +407,19 @@ export default function HomePage() {
           <p className="mt-3 text-sm leading-relaxed text-emerald-50">Harfleri tanı, heceleri birleştir. Sesli örneklerle kelimeleri ve kısa metinleri oku.</p>
         </div>
         <span className="rounded-xl bg-white px-4 py-3 text-sm font-black text-emerald-900">Okumaya başla <span aria-hidden="true">→</span></span>
+      </Link>
+
+      <Link
+        href="/1-sinif/resimli-oyunlar"
+        className="group relative flex flex-col justify-between gap-6 overflow-hidden rounded-2xl border border-teal-200 bg-gradient-to-br from-teal-800 to-cyan-800 p-6 text-white shadow-xl transition-shadow hover:shadow-2xl focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-teal-700"
+      >
+        <div>
+          <span className="inline-flex rounded-lg bg-white/15 px-3 py-1 text-sm font-bold">7 yaş • Resimli oyunlar</span>
+          <span aria-hidden="true" className="mt-5 block text-4xl">🏝️</span>
+          <h3 className="mt-3 text-2xl font-black">Keşif Adası</h3>
+          <p className="mt-3 text-sm leading-relaxed text-teal-50">Örüntüyü tamamla, ipuçlarını bul, resimleri eşleştir. Üç düzeyde kendi hızında oyna.</p>
+        </div>
+        <span className="rounded-xl bg-white px-4 py-3 text-sm font-black text-teal-900">Oynamaya başla <span aria-hidden="true">→</span></span>
       </Link>
 
       {/* 5. SINIF KARTI - GÜNCELLENDİ (Kartlar Silindi) */}
@@ -1149,4 +1162,5 @@ export default function HomePage() {
     </main>
   );
 }
+
 

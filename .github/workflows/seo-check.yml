@@ -40,6 +40,18 @@ jobs:
         env:
           READING_BROWSER_CHANNEL: chrome
         run: npm run check:reading:browser
+      - name: Verify picture games in the browser
+        env:
+          READING_BROWSER_CHANNEL: chrome
+        run: npm run check:picture-games:browser
+      - name: Save picture game screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: picture-games-screenshots
+          path: artifacts/picture-games-*.png
+          if-no-files-found: ignore
+          retention-days: 7
       - name: Save reading screenshots
         if: always()
         uses: actions/upload-artifact@v4

@@ -4,13 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run check:seo && npm run check:reading && next build && npm run check:seo:build",
+    "build": "npm run check:seo && npm run check:reading && npm run check:picture-games && next build && npm run check:seo:build",
     "check:seo": "node scripts/validate-seo.cjs",
     "check:seo:build": "node scripts/validate-seo-build.cjs",
     "start": "next start",
     "lint": "next lint",
     "check:reading": "node scripts/validate-reading.cjs",
-    "check:reading:browser": "node scripts/validate-reading-browser.cjs"
+    "check:reading:browser": "node scripts/validate-reading-browser.cjs",
+    "check:picture-games": "node scripts/validate-picture-games.cjs",
+    "check:picture-games:browser": "node scripts/validate-picture-games-browser.cjs"
   },
   "dependencies": {
     "@google/generative-ai": "^0.21.0",

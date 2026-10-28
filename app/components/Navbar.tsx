@@ -19,6 +19,9 @@ export default function Navbar() {
           <Link href="/1-sinif" className="font-bold text-emerald-700 hover:text-emerald-900 dark:text-emerald-300 dark:hover:text-emerald-100 transition-colors">
             1. Sınıf Okuma
           </Link>
+          <Link href="/1-sinif/resimli-oyunlar" className="font-bold text-teal-700 hover:text-teal-900 dark:text-teal-200 dark:hover:text-teal-100 transition-colors">
+            Resimli Oyunlar
+          </Link>
           <Link href="/hakkimizda" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 transition-colors">
             Hakkımızda
           </Link>

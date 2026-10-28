@@ -28,6 +28,14 @@ export default function Grade1Page() {
           <p className="mt-4 text-sm text-slate-700">Sesli örnekler • İsteğe bağlı ses kaydı • Süre sınırı yok</p>
         </div>
       </header>
+      <Link href="/1-sinif/resimli-oyunlar" className="flex flex-col gap-4 rounded-3xl border border-teal-200 bg-teal-50 p-6 text-slate-900 focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-teal-700 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <p className="text-sm font-bold text-teal-800">7 yaş için resimli oyunlar</p>
+          <h2 className="mt-1 text-2xl font-black">Resimli Keşif Adası</h2>
+          <p className="mt-2 text-slate-700">Örüntüleri tamamla, ipuçlarını bul, hafıza kartlarını eşleştir.</p>
+        </div>
+        <span className="inline-flex shrink-0 items-center justify-center rounded-2xl bg-teal-800 px-6 py-4 font-bold text-white">Oynamaya başla →</span>
+      </Link>
       <section aria-labelledby="reading-steps-title">
         <h2 id="reading-steps-title" className="mb-4 text-2xl font-black dark:text-white">Birlikte nasıl çalışacağız?</h2>
         <ol className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
