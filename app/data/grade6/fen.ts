@@ -3763,6 +3763,176 @@ export const fenData: SubjectData = {
     "imageWidth": 360,
     "imageHeight": 500
   }
+],
+    test8: [
+  {
+    "id": "f6-2-t8-01",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Görseldeki pilli devrenin test aralığına kuru bir grafit çubuk yerleştirilmiştir. Grafit, kurşun kalemlerin yazan kısmında bulunan bir maddedir. Pil, ampul ve temaslar sağlamdır; test aralığında başka bağlantı yoktur.\n\nAmpulde görülen durum, grafitin hangi özelliğini gösterir?",
+    "options": [
+      "Işık üretmesini.",
+      "Elektriği iletebilmesini.",
+      "Elektriğin geçişini tamamen engellemesini.",
+      "Isınınca erimesini."
+    ],
+    "correct": 1,
+    "explanation": "Görselde ampul yanmaktadır. Devre, test aralığındaki grafit üzerinden tamamlandığına göre grafit elektriği iletebilir. Bir maddenin iletken olması için mutlaka metal olması gerekmez. Bu deney grafitin erime özelliğini sınamaz.",
+    "imageUrl": "/grade6/fen/term-2/test-8/soru-01.svg",
+    "imageAlt": "Pilli devrenin test aralığında gri bir grafit çubuk bulunuyor. Ampul sarı ışık ve çevresindeki ışınlarla yanar durumda gösteriliyor. Grafiti atlayan başka bağlantı yok.",
+    "imageWidth": 360,
+    "imageHeight": 430
+  },
+  {
+    "id": "f6-2-t8-02",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Bir kumsalda deniz kaplumbağası yavruları, kıyıdaki güçlü yapay ışıklara yönelerek denizden uzaklaşıyor. Bu durum yavruların kaybına yol açabiliyor.\n\nBelirtilen tehdidi doğrudan azaltacak önlem hangisidir?",
+    "options": [
+      "Kumsala daha çok ışıklı reklam panosu yerleştirmek.",
+      "Yavruların çıktığı alandaki kumları betonla kaplamak.",
+      "Kıyı ışıklarını yavruların çıkış döneminde azaltıp kumsala yöneltmemek.",
+      "Kumsalı aydınlatan lambaların sayısını artırmak."
+    ],
+    "correct": 2,
+    "explanation": "Verilen tehdit yapay ışıkların yavruları yanlış yöne çekmesidir. Kıyı aydınlatmasını azaltmak ve ışığı kumsala yöneltmemek bu etkeni doğrudan azaltır. Bu önlem, türün karşılaştığı bütün tehditlerin ortadan kalktığı anlamına gelmez."
+  },
+  {
+    "id": "f6-2-t8-03",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Şekildeki ince borulu düzeneğin içindeki sıvı soğutuluyor. Düzeneğe madde girip çıkmıyor; buharlaşma, yoğuşma veya donma olmuyor. Kap ve borunun boyut değişimi ihmal ediliyor.\n\nGözlenen seviye değişimi ve sıvının kütlesi nasıl açıklanır?",
+    "options": [
+      "Sıvı büzülmüştür; kütlesi değişmemiştir.",
+      "Sıvı genleşmiştir; kütlesi artmıştır.",
+      "Sıvı donmuştur; kütlesi değişmemiştir.",
+      "Sıvının bir bölümü yok olmuştur; kütlesi azalmıştır."
+    ],
+    "correct": 0,
+    "explanation": "Görselde soğutulan sıvının borudaki seviyesi düşmüştür. Kabın boyutları değişmiyorsa bu, sıvının hacminin küçüldüğünü yani büzüldüğünü gösterir. Madde girip çıkmadığı için sıvının kütlesi değişmez; soruda donma olmadığı da belirtilmiştir.",
+    "imageUrl": "/grade6/fen/term-2/test-8/soru-03.svg",
+    "imageAlt": "Aynı ince borulu kapta 60 °C’de sıvı seviyesi yüksek, 20 °C’ye soğutulduğunda daha alçaktır. İki kaptaki boyutlar aynıdır; seviyeler kesikli çizgilerle belirtilmiştir.",
+    "imageWidth": 360,
+    "imageHeight": 450
+  },
+  {
+    "id": "f6-2-t8-04",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Pille çalışan bir devrede metal telin üzerindeki plastik kılıf, daha kalın bir plastik kılıfla değiştiriliyor. Metal kısmın cinsi, uzunluğu ve kalınlığı değişmiyor. Kablonun iki ucunda metal, devreye aynı biçimde doğrudan temas ediyor; plastik akım yoluna girmiyor. Pil, ampul ve sıcaklık aynı.\n\nAmpulün parlaklığı için ne beklenir?",
+    "options": [
+      "Dış kılıf kalınlaştığı için mutlaka artar.",
+      "Plastik kalınlaştığı için ampul kesinlikle söner.",
+      "Metal telin uzunluğu değişmiş gibi azalır.",
+      "İletken metal kısmın özellikleri değişmediği için aynı kalır."
+    ],
+    "correct": 3,
+    "explanation": "Direnç bakımından burada önemli olan, devreye katılan iletken metal kısmın özellikleridir. Yalnız yalıtıcı plastik kılıf kalınlaşmıştır; metalin uzunluğu, kalınlığı, cinsi ve bağlantıları aynı kalmıştır. Bu koşullarda parlaklığın değişmesi beklenmez. Kablonun dıştan daha kalın görünmesi, iletken metalin de kalınlaştığı anlamına gelmez."
+  },
+  {
+    "id": "f6-2-t8-05",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Malzemesi ve boyutları aynı, yüzey renkleri farklı iki levha kullanılıyor. Levhalar aynı ışık kaynağına eşit uzaklıkta, aynı açıyla ve eşit süre tutuluyor. Başlangıç ve son sıcaklıklar görseldedir.\n\nHangi levhanın sıcaklık artışı daha büyüktür? Rengin etkisini daha uygun koşullarda yeniden araştırmak için ne düzeltilmelidir?",
+    "options": [
+      "L; levhaların ışığa uzaklıkları farklı yapılmalıdır.",
+      "K; başlangıç sıcaklıkları eşitlenmelidir.",
+      "K; yalnız siyah levhanın ışıkta kalma süresi uzatılmalıdır.",
+      "L; beyaz levhanın başlangıç sıcaklığı daha da artırılmalıdır."
+    ],
+    "correct": 1,
+    "explanation": "K’nin sıcaklığı 22 − 10 = 12 °C, L’ninki 26 − 20 = 6 °C artmıştır. Son sıcaklığı daha yüksek olan L olsa da sıcaklık artışı K’de büyüktür. Başlangıç sıcaklıkları farklı olduğundan bu deney renk etkisi için tam kontrollü değildir; tekrarında başlangıçlar da eşitlenmelidir. Verilen iki artış, ısı kayıpları gibi etkiler incelenmeden soğurulan toplam enerji miktarlarının kesin oranını vermez.",
+    "imageUrl": "/grade6/fen/term-2/test-8/soru-05.svg",
+    "imageAlt": "Sıcaklık kayıtları: siyah K levhası başlangıçta 10 °C, sonunda 22 °C; beyaz L levhası başlangıçta 20 °C, sonunda 26 °C. Aynı ışık, uzaklık ve süre kullanılmıştır.",
+    "imageWidth": 360,
+    "imageHeight": 470
+  },
+  {
+    "id": "f6-2-t8-06",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Aynı homojen katıdan alınmış 24’er gramlık iki özdeş örnekle ayrı hacim ölçümleri yapılıyor. Sıvı seviyeleri ve gözlemler şekilde verilmiştir. İki örnek de tamamen sıvı içindedir; taşma, sıçrama ve hava kabarcığı yoktur. Yağ katının içine girmiyor ve katıyla tepkime vermiyor.\n\nKatının yoğunluğu için hangi ölçüm ve sonuç kullanılmalıdır?",
+    "options": [
+      "Su ölçümü; 2,4 g/cm³.",
+      "Yağ ölçümü; 24/52 g/cm³.",
+      "Yağ ölçümü; 2 g/cm³.",
+      "Su ölçümü; 0,48 g/cm³."
+    ],
+    "correct": 2,
+    "explanation": "Su deneyinde katı kısmen çözündüğü için seviye farkı, başlangıçtaki katının hacmi olarak güvenle kullanılamaz. Yağda ise katı çözünmeden tamamen batmıştır. Katının hacmi 52 − 40 = 12 cm³, yoğunluğu 24 ÷ 12 = 2 g/cm³’tür. Son seviyenin tamamını katı hacmi saymak da doğru değildir.",
+    "imageUrl": "/grade6/fen/term-2/test-8/soru-06.svg",
+    "imageAlt": "İki ayrı deneyin kayıtları: su başlangıçta 40 cm³, örnek eklendikten sonra 50 cm³; katı kısmen çözünüyor. Yağ başlangıçta 40 cm³, örnek eklendikten sonra 52 cm³; katı çözünmüyor. Her örnek 24 g.",
+    "imageWidth": 360,
+    "imageHeight": 630
+  },
+  {
+    "id": "f6-2-t8-07",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "P ve R reostaları ayrı pilli devrelerde kullanılıyor. Her birinde sürgü ile sabit uçlardan yalnız biri bağlıdır; bağlı sabit uç gizlidir. Teller aynı cins ve kalınlıktadır, her işaret arası eşit uzunluktadır. Yalnız bağlı sabit uç ile sürgü arasındaki tel devreye katılır.\n\nHer iki sürgü de 2’den 4’e götürüldüğünde görseldeki parlaklık değişimleri gözleniyor. Her devrenin pili, ampulü, sıcaklığı ve temasları kendi denemeleri boyunca sabittir.\n\nSonra her reostada devreye tam 3 aralıklık tel katılması isteniyor. Sabit uç bağlantılarını değiştirmeden P ve R sürgüleri sırasıyla hangi numaralara getirilmelidir?",
+    "options": [
+      "5 ve 3.",
+      "3 ve 5.",
+      "3 ve 3.",
+      "5 ve 5."
+    ],
+    "correct": 0,
+    "explanation": "P’de sürgü 2’den 4’e sağa giderken ampul daha parlak olmuştur; kullanılan tel kısalmış, yani bağlı sabit uç sağdaki B olmalıdır. B, 8’de olduğundan üç aralık için P sürgüsü 5’e getirilir: 8 − 5 = 3. R’de aynı hareket ampulü sönükleştirmiştir; tel uzadığına göre bağlı uç soldaki C’dir. C, 0’da olduğundan R sürgüsü 3’e getirilir. Farklı devrelerin parlaklıkları birbirleriyle değil, her devrenin kendi ilk ve son durumuyla karşılaştırılır.",
+    "imageUrl": "/grade6/fen/term-2/test-8/soru-07.svg",
+    "imageAlt": "P reostası: A ucu 0, B ucu 8; sürgü 2’den 4’e giderken ampul daha parlak oluyor. R reostası: C ucu 0, D ucu 8; aynı 2’den 4’e hareket ampulü daha sönük yapıyor. İki tel de 0’dan 8’e eşit aralıklarla işaretli.",
+    "imageWidth": 360,
+    "imageHeight": 570
+  },
+  {
+    "id": "f6-2-t8-08",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Bir koruma çalışmasında iki uygulama, ayrı bölge çiftlerinde deneniyor. Her çiftte uygulama yapılan alanın yanında benzer, işlem yapılmayan bir kontrol alanı bulunuyor. Aynı yöntem ve sürede kaydedilen yerli tür sayıları şöyle:\n• Kıyı ışıkları azaltılan alan: 8 → 11; kontrolü: 6 → 8.\n• Yaşam alanı onarılan alan: 10 → 12; kontrolü: 7 → 6.\n\nBu sınırlı modelde, bir çiftin iki alanını etkileyen ortak koşul değişiminin tür sayısını aynı miktarda etkilediği kabul ediliyor. Uygulamanın katkısını karşılaştırmak için, uygulama alanındaki değişimden kendi kontrolündeki değişim çıkarılacak.\n\nBu ölçüte göre hangi değerlendirme doğrudur?",
+    "options": [
+      "Işık azaltma 3, onarım 2 türlük katkı gösterir; kontroller hesaba katılmaz.",
+      "İki uygulama da 1 türlük katkı gösterir; son sayılar arasındaki fark yeterlidir.",
+      "Işık azaltma 5, onarım 1 türlük katkı gösterir; iki alandaki değişimler toplanır.",
+      "Işık azaltma 1, onarım 3 türlük katkı gösterir; bu sonuç yalnız verilen çalışma koşulları için yorumlanır."
+    ],
+    "correct": 3,
+    "explanation": "Işık azaltılan alandaki artış 11 − 8 = 3, kontrolündeki artış 8 − 6 = 2’dir; ölçüte göre katkı 3 − 2 = 1 olur. Onarılan alanda artış 12 − 10 = 2’dir. Kontrolünde 7’den 6’ya bir azalma vardır; ortak koşulların 1 türlük kayıp yönündeki etkisi de telafi edilerek 2 türlük artış sağlandığı için onarımın katkısı 2 + 1 = 3 olur. Böylece onarım bu ölçüte göre daha büyük olumlu işaret verir. Başlangıçlar farklı olduğundan yalnız son sayıları veya yalnız uygulama alanlarındaki artışları karşılaştırmak yeterli değildir. Bu sınırlı model bütün bölgelerde aynı sonucu garanti etmez."
+  },
+  {
+    "id": "f6-2-t8-09",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Aynı maddeden yapılmış, içi dolu ve gözeneksiz boncuklar bir ölçü kabına konuyor. Kuru boncuk yığını, aralardaki hava boşluklarıyla birlikte 100 cm³ çizgisine kadar yer kaplıyor. Tartımlar görseldedir.\n\nAyrı bir kaptan su dökülerek boncuklar arasındaki bütün boşluklar dolduruluyor; su seviyesi tam 100 cm³ çizgisine geliyor. Boncuklar bu seviyenin altında kalıyor. Dökülen suyun bir kısmı ölçü kabına değil, ayrı bir toplama kabına düşüyor. Ayrılan miktar görselde verilmiştir. Verici kaptan eksilen suyun tamamı bu iki kaptadır.\n\nSuyun yoğunluğu 1 g/cm³’tür. Çizim ölçekli değildir. Hava boşluğu kalmıyor; boncuklar çözünmüyor, su almıyor veya yer değiştirmiyor. Başka su kaybı yok. Boncukların yapıldığı katı maddenin yoğunluğu kaç g/cm³’tür?",
+    "options": [
+      "1,1",
+      "2,2",
+      "2",
+      "Yaklaşık 2,45"
+    ],
+    "correct": 2,
+    "explanation": "Boncukların kütlesi 135 − 25 = 110 g’dır. Verici kaptan eksilen su 180 − 130 = 50 g, yani 50 cm³’tür. Bunun 5 cm³’ü ayrı kaba düştüğünden boncukların arasına giren su 45 cm³’tür. Son toplam 100 cm³’ün 45 cm³’ünü su, kalan 100 − 45 = 55 cm³’ünü katı boncuk maddesi kaplar. Yoğunluk 110 ÷ 55 = 2 g/cm³ olur. Kuru yığının 100 cm³’ü yalnız katı hacmi değildir; ayrı kaba düşen su da boşlukları doldurmamıştır.",
+    "imageUrl": "/grade6/fen/term-2/test-8/soru-09.svg",
+    "imageAlt": "Ölçü kabı boşken 25 g; aynı kap kuru boncuklarla 135 g. Boncuk yığını hava aralıklarıyla birlikte 100 cm³ çizgisine kadar. Verici su kabı dökmeden önce 180 g, sonra 130 g. Ölçü kabına girmeyip ayrı toplanan su 5 cm³. Son su seviyesi 100 cm³.",
+    "imageWidth": 360,
+    "imageHeight": 770
+  },
+  {
+    "id": "f6-2-t8-10",
+    "subject": "fen",
+    "term": 2,
+    "prompt": "Bilinmeyen bir örnek, tabloda verilen saf K, L, M ve N maddelerinden biridir. Aynı sabit basınçta her gözlemde örneğin seçilen sıcaklığa tamamen ulaşması bekleniyor; sonra yalnız katı mı, sıvı mı olduğu kaydediliyor. Gerekirse örnek soğutulabiliyor. Tablodaki bütün maddeler denenen sıcaklıklarda ya tamamen katı ya tamamen sıvı oluyor.\n\nEn fazla iki gözlemle, örnek hangi aday olursa olsun kimliğini kesin belirlemek isteniyor. İkinci gözlemin sıcaklığı ilk sonuca göre seçilebilir.\n\nHangi plan bu amacı bütün adaylar için sağlar?",
+    "options": [
+      "Önce 40 °C; sıvıysa 20 °C, katıysa 60 °C’de gözlem.",
+      "Önce 20 °C; sıvıysa 40 °C, katıysa 60 °C’de gözlem.",
+      "Önce 60 °C; sıvıysa 40 °C, katıysa 20 °C’de gözlem.",
+      "Önce 40 °C; sıvıysa 60 °C, katıysa 20 °C’de gözlem."
+    ],
+    "correct": 0,
+    "explanation": "40 °C’de K ve L sıvı, M ve N katıdır; ilk gözlem adayları ikişerli iki gruba ayırır. Sıvı görülürse 20 °C’de K sıvı, L katı olur ve ayrılır. Katı görülürse 60 °C’de M sıvı, N katı olur ve ayrılır. B planında ilk gözlem katıysa L, M, N kalır; 60 °C’de L ile M ayırt edilemez. C planında ilk gözlem sıvıysa K, L, M kalır; 40 °C’de K ile L ayırt edilemez. D’de ise ikinci sıcaklıklar yanlış dallara seçilmiştir: K ile L, 60 °C’de birlikte sıvı; M ile N, 20 °C’de birlikte katıdır. Yalnız A, iki olası ilk sonucun da ardından tek adaya ulaştırır.",
+    "imageUrl": "/grade6/fen/term-2/test-8/soru-10.svg",
+    "imageAlt": "Aynı sabit basınçta saf maddelerin erime ve kaynama noktaları: K 10 ve 100 °C; L 30 ve 100 °C; M 50 ve 100 °C; N 70 ve 100 °C.",
+    "imageWidth": 360,
+    "imageHeight": 490
+  }
 ]
   },
 };
