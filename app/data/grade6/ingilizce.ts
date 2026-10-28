@@ -3407,6 +3407,176 @@ export const ingilizceData: SubjectData = {
       "correct": 2,
       "explanation": "Sınıf başkanının görevi isteği öğretmene iletmektir; programı tek başına değiştirme yetkisi yoktur. Ayrıca farklı fikirler paylaşılabilir; pazartesiyi isteyenlerin susturulması kurala aykırıdır. C hem başkanın temsil görevini hem öğretmenin karar yetkisini hem de farklı görüşleri ifade etme hakkını korur. Bir sınıf oylaması, verilen kurallardaki yetki sınırını ortadan kaldırmaz."
     }
-  ]
+  ],
+  "test6": [
+    {
+        "id": "e6-2-t6-01",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Look at the person at work. What is this person’s job?",
+        "options": [
+            "A farmer.",
+            "A pilot.",
+            "A firefighter.",
+            "A dentist."
+        ],
+        "correct": 2,
+        "explanation": "Kişi koruyucu başlık ve kıyafet giymiş; hortumdan gelen suyu yangına yöneltmektedir. Bu iş bir itfaiyecinin, yani firefighter’ın işidir. Çizimdeki hortum ve alevler mesleği belirleyen ipuçlarıdır.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-6/soru-01.svg",
+        "imageAlt": "A person wearing a protective helmet and uniform holds a hose. Water from the hose is aimed at flames in a house.",
+        "imageWidth": 360,
+        "imageHeight": 420
+    },
+    {
+        "id": "e6-2-t6-02",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Which sentence describes a secret vote in a class election?",
+        "options": [
+            "Other people cannot see your choice.",
+            "You must tell everyone your choice.",
+            "You must choose two candidates.",
+            "Only the winner can vote."
+        ],
+        "correct": 0,
+        "explanation": "Secret vote, gizli oy demektir: kişi tercihini başkalarına göstermeden oy verir. A bu anlamı doğrudan açıklar. Gizlilik iki adaya oy vermek ya da yalnız kazananın oy kullanması değildir."
+    },
+    {
+        "id": "e6-2-t6-03",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Look at Lena’s holiday journeys. How did she travel home from the island?",
+        "options": [
+            "She travelled by ferry.",
+            "She travelled by train.",
+            "She travelled by car.",
+            "She travelled by plane."
+        ],
+        "correct": 3,
+        "explanation": "Eve dönüş yönü ISLAND → HOME olan alt paneldir; burada uçak görülür. Bu yüzden Lena eve uçakla dönmüştür. Üst paneldeki vapur/feribot ise adaya gidiş yolculuğudur; gidiş ve dönüş karıştırılmamalıdır.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-6/soru-03.svg",
+        "imageAlt": "Top panel: HOME to ISLAND, with a ferry on the sea. Bottom panel: ISLAND to HOME, with an aeroplane.",
+        "imageWidth": 360,
+        "imageHeight": 610
+    },
+    {
+        "id": "e6-2-t6-04",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Look at the reading corner. Where is the storybook?",
+        "options": [
+            "It is on the desk, under the dictionary.",
+            "It is in the bag under the chair.",
+            "It is on the chair, next to the bag.",
+            "It is under the desk, outside the bag."
+        ],
+        "correct": 1,
+        "explanation": "STORYBOOK etiketi kırmızı kitabı gösterir. Kitap açık çantanın içindedir; çanta da sandalyenin altındadır. B iki konum ilişkisini birlikte doğru verir: in the bag ve under the chair. Masanın üstündeki mavi kitap sözlüktür.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-6/soru-04.svg",
+        "imageAlt": "A red storybook is inside an open bag under a chair. Its top is visible above the front of the bag. A blue dictionary is on a separate desk. A label points to the storybook.",
+        "imageWidth": 360,
+        "imageHeight": 405
+    },
+    {
+        "id": "e6-2-t6-05",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Ada and Ben want to give away these shirts. Read the eco-club’s instructions.\n'Use clothes again. Give away only shirts with no holes. Repair shirts with holes first.'\n\nWhich plan follows all the instructions?",
+        "options": [
+            "Give away both shirts without repairing them.",
+            "Repair Ben’s shirt; throw Ada’s shirt away.",
+            "Repair Ada’s shirt, then give away both shirts.",
+            "Give away Ada’s shirt now; keep Ben’s shirt because it has a hole."
+        ],
+        "correct": 2,
+        "explanation": "Görselde yalnız Ada’nın tişörtünde delik vardır; Ben’in tişörtü sağlamdır. Delikli giysi önce onarılmalıdır. Ada’nın tişörtü onarıldıktan sonra iki giysi de yeniden kullanım için verilebilir. C hem giysilerin farklı durumlarını hem de önce onar, sonra ver sırasını korur.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-6/soru-05.svg",
+        "imageAlt": "Ada and Ben each have a shirt. Ada’s shirt has one small hole, shown by a jagged white opening and the label HOLE. Ben’s shirt has no holes or other damage.",
+        "imageWidth": 360,
+        "imageHeight": 645
+    },
+    {
+        "id": "e6-2-t6-06",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Two people will visit the class. First, the person who grows vegetables will speak. Then, the person who checks teeth will speak. The FIRST visitor cannot come, so the class invites the person who cooks meals instead. Look at the pictures. What is the final order?",
+        "options": [
+            "Person C, then Person B.",
+            "Person B, then Person C.",
+            "Person B, then Person A.",
+            "Person A, then Person C."
+        ],
+        "correct": 1,
+        "explanation": "A çiftçi, B aşçı, C diş hekimidir. İlk planda sebze yetiştiren A, ardından dişleri kontrol eden C gelecektir. Yalnız ilk ziyaretçi gelemediği için onun yerine yemek pişiren B çağrılır; ikinci ziyaretçi C değişmez. Son sıra B → C olur. Eski planı korumak, iki ziyaretçiyi de değiştirmek veya sırayı ters çevirmek yanlıştır.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-6/soru-06.svg",
+        "imageAlt": "Person A wears a straw hat and works with a spade beside growing crops. Person B wears a chef’s hat and stirs a cooking pot. Person C wears a mask and holds a dental mirror beside a tooth. No job names are written.",
+        "imageWidth": 360,
+        "imageHeight": 790
+    },
+    {
+        "id": "e6-2-t6-07",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Read the messages after a class election.\n'Ece won. Arda said, “I wanted to win. I am sad, but well done, Ece!” Mia voted for Arda. She said, “Ece wants more games. I want more books. I will help her with the class jobs. I will share my idea at our next meeting.”'\n\nWhich sentence is true?",
+        "options": [
+            "Arda does not respect the result because he is sad.",
+            "Mia now agrees with Ece’s plan because she will help her.",
+            "Mia will help Ece only after Ece chooses more books.",
+            "Both respect the result; Mia still has a different idea."
+        ],
+        "correct": 3,
+        "explanation": "Arda kaybettiğine üzülse de Ece’yi tebrik eder; üzülmesi seçim sonucunu reddettiği anlamına gelmez. Mia kazanana sınıf işlerinde yardım edeceğini söyler, fakat oyun yerine kitap istemeye devam eder ve fikrini toplantıda paylaşacaktır. Yardım etmek bütün fikirlere katılmak değildir. Yardım için önce kendi fikrinin seçilmesini şart koştuğu da söylenmez. D, sonucu kabul etme ile duygu ve fikir ayrılığını birlikte doğru yorumlar."
+    },
+    {
+        "id": "e6-2-t6-08",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Read Rita’s holiday diary.\n'During our three-day holiday, Dad went hiking every morning. I joined him only on the first morning. Lily joined him on the other two mornings. Mia joined him only on Lily’s first hiking morning. These were our only hikes.'\n\nWhich sentence is true?",
+        "options": [
+            "Lily and Mia hiked together on the second morning; Rita did not hike with them.",
+            "Rita and Mia hiked together on the first morning; Lily did not hike with them.",
+            "Lily and Mia hiked together on the third morning; Rita did not hike with them.",
+            "Rita and Lily hiked together on the second morning; Mia did not hike with them."
+        ],
+        "correct": 0,
+        "explanation": "Rita yalnız tatilin birinci sabahında yürür. Lily diğer iki sabah, yani ikinci ve üçüncü sabahlarda yürür. Lily’nin kendi ilk yürüyüş sabahı tatilin ikinci sabahıdır; Mia yalnız o gün ona katılır. Böylece Lily ile Mia ikinci sabah birlikte yürür; Rita o sabah yürüyüşte değildir. A doğrudur. “Lily’s first hiking morning” ifadesini tatilin birinci sabahı sanmak B’ye, Lily’nin ikinci yürüyüşünü seçmek C’ye götürür."
+    },
+    {
+        "id": "e6-2-t6-09",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Lena read all three parts of Tom’s story on three days in a row. Look at the story sequence and her diary. Which sentence correctly links the story events to her reading?",
+        "options": [
+            "She read about Tom’s Wednesday boat trip on 5 May, and about the map at school on 4 May.",
+            "She took Tom’s Wednesday boat trip herself on 4 May, and read about the map at school on 3 May.",
+            "She read about Tom’s Wednesday boat trip on 4 May, and about the map at school on 3 May.",
+            "She read about Tom’s Tuesday boat trip on 4 May, and about the map at home on 3 May."
+        ],
+        "correct": 2,
+        "explanation": "Tom salı günü haritayı bulur; ertesi gün yaptığı tekne yolculuğu çarşambadır. Lena’nın günlüğü 6 Mayıs tarihlidir: dün okuduğu üçüncü bölüm 5 Mayıs’a aittir. Üç gün üst üste, sırayla günde bir bölüm okuduğuna göre ikinci bölümü 4 Mayıs’ta, birinci bölümü 3 Mayıs’ta okumuştur. Birinci bölümün yeri okuldur. C bu iki ayrı zaman dizisini doğru birleştirir: hikâyedeki çarşamba yolculuğunu 4 Mayıs’ta okur; haritayla ilgili bölümü 3 Mayıs’ta okulda okur. Yolculuğu yapan Lena değil, hikâyedeki Tom’dur.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-6/soru-09.svg",
+        "imageAlt": "An illustrated story sequence has three connected stages. Part 1, Tuesday: Tom says, “I found a map in the forest,” with a map drawing. Part 2, next day: “I sailed to an island,” with a boat. Part 3, next day: “I came home,” with a house. Arrows connect Parts 1, 2 and 3. Lena’s diary, dated 6 May, says: “I read one part a day for three days, in order. Yesterday: Part 3 at home. Part 1: at school.”",
+        "imageWidth": 360,
+        "imageHeight": 995
+    },
+    {
+        "id": "e6-2-t6-10",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Ada and Ben each start the trip with one clean reusable cup. They keep their own cups. Drinking water is ready at every stop, but they can wash cups ONLY at the park. Follow both rules:\n• Wash a used cup before drinking from it again.\n• Save water: do not wash a cup that is already clean.\n\nLook at who drinks at each stop. Which washing plan works?",
+        "options": [
+            "Before the park drink, wash only Ada’s cup. After it, wash both cups.",
+            "Before the park drink, wash only Ada’s cup. After it, wash only Ben’s cup.",
+            "Before the park drink, wash both cups. After it, wash both cups.",
+            "Before the park drink, wash only Ada’s cup. After it, wash neither cup."
+        ],
+        "correct": 0,
+        "explanation": "Sahilde yalnız Ada içtiği için parka gelindiğinde Ada’nın bardağı kullanılmış, Ben’inki hâlâ temizdir. Parkta içmeden önce yalnız Ada’nın bardağı yıkanmalıdır; temiz Ben bardağını yıkamak su tasarrufu kuralına aykırıdır. Parkta ikisi de içer, yani iki bardak da kullanılmış olur. Ormanda yıkama olanağı yoktur; bu yüzden parktan ayrılmadan iki bardak da tekrar temizlenmelidir. Yalnız Ben’inkini yıkamak Ada’yı, hiçbirini yıkamamak ise ikisini de ormanda kullanılmış bardakla bırakır. A hem kişilere göre değişen başlangıç durumunu hem işlem sırasını ve son duraktaki ihtiyacı doğru izler.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-6/soru-10.svg",
+        "imageAlt": "The route has three stops in this order. 1 BEACH: Ada drinks; Ben does not drink; no washing. 2 PARK: both drink; washing here. 3 FOREST: both drink; no washing. Arrows show the order of the stops.",
+        "imageWidth": 360,
+        "imageHeight": 845
+    }
+]
 }
 };
