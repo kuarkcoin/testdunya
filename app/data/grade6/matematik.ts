@@ -3811,5 +3811,175 @@ export const matematikData: SubjectData = {
         "term": 2
     }
 ],
+    "test9": [
+    {
+        "id": "m6-2-t9-01",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Görseldeki paralelkenarın alanı kaç cm²’dir? Kesikli çizgi tabana dik yüksekliği gösterir.",
+        "options": [
+            "10",
+            "12",
+            "48",
+            "24"
+        ],
+        "correct": 3,
+        "explanation": "Paralelkenarın alanı taban ile bu tabana ait dik yüksekliğin çarpımıdır: 6 × 4 = 24 cm².",
+        "imageUrl": "/grade6/matematik/term-2/test-9/soru-01.svg",
+        "imageAlt": "Paralelkenarın tabanı 6 cm, tabana dik yüksekliği 4 cm. Dik açı işaretlidir.",
+        "imageWidth": 360,
+        "imageHeight": 310
+    },
+    {
+        "id": "m6-2-t9-02",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Kutudaki kurala göre n = 6 olduğunda kalan kalem sayısı kaçtır?",
+        "options": [
+            "14",
+            "6",
+            "20",
+            "26"
+        ],
+        "correct": 0,
+        "explanation": "Başlangıçtaki 20 kalemden 6 kalem verilir: 20 − 6 = 14.",
+        "imageUrl": "/grade6/matematik/term-2/test-9/soru-02.svg",
+        "imageAlt": "Kalem kutusunda başlangıç 20 kalem, verilen n kalem, kalan 20 eksi n kalem olarak yazılı.",
+        "imageWidth": 360,
+        "imageHeight": 310
+    },
+    {
+        "id": "m6-2-t9-03",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Birbirine değmeyen iki kartonun alanları görselde verilmiştir. Alanlarının toplamı kaç cm²’dir?",
+        "options": [
+            "43",
+            "340",
+            "70",
+            "3040"
+        ],
+        "correct": 1,
+        "explanation": "1 dm² = 100 cm² olduğu için 3 dm² = 300 cm²’dir. Toplam 300 + 40 = 340 cm² olur.",
+        "imageUrl": "/grade6/matematik/term-2/test-9/soru-03.svg",
+        "imageAlt": "Bir kartonun alanı 3 dm², diğerinin alanı 40 cm². Kartonlar birbirinden ayrı gösterilmiş.",
+        "imageWidth": 360,
+        "imageHeight": 350
+    },
+    {
+        "id": "m6-2-t9-04",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Algoritma yalnız bir kez uygulanıyor: Önce A ve C kutularındaki sayıları yer değiştir. Sonra A ile B’deki sayıların toplamını yaz. Ekrana hangi sayı yazılır?",
+        "options": [
+            "10",
+            "11",
+            "13",
+            "17"
+        ],
+        "correct": 2,
+        "explanation": "A ile C yer değiştirince kutular sırasıyla 6, 7, 4 olur. A ile B toplamı 6 + 7 = 13’tür.",
+        "imageUrl": "/grade6/matematik/term-2/test-9/soru-04.svg",
+        "imageAlt": "Soldan sağa A kutusunda 4, B kutusunda 7, C kutusunda 6 var.",
+        "imageWidth": 360,
+        "imageHeight": 260
+    },
+    {
+        "id": "m6-2-t9-05",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Dikdörtgen ve paralelkenar levhaların çevreleri eşittir. Dikdörtgenin kenarları, paralelkenarın tabanı ve dik yüksekliği görselde verilmiştir. Paralelkenarın bir eğik kenarı ile dikdörtgenin alanının paralelkenarın alanından farkı hangi seçenekte birlikte doğru verilmiştir?",
+        "options": [
+            "6 cm ve 26 cm²",
+            "5 cm ve 26 cm²",
+            "6 cm ve 12 cm²",
+            "8 cm ve 70 cm²"
+        ],
+        "correct": 0,
+        "explanation": "Dikdörtgenin çevresi 2 × (12 + 8) = 40 cm’dir. Paralelkenarın iki tabanı toplam 28 cm olduğundan iki eğik kenarın toplamı 12 cm, biri 6 cm’dir. Dikdörtgen alanı 96 cm², paralelkenar alanı 14 × 5 = 70 cm²’dir. Fark 26 cm² olur; 5 cm eğik kenar değil, dik yüksekliktir.",
+        "imageUrl": "/grade6/matematik/term-2/test-9/soru-05.svg",
+        "imageAlt": "Üstte dikdörtgen 12 cm genişlik, 8 cm yükseklik. Altta paralelkenar taban 14 cm, dik yükseklik 5 cm, eğik kenar x. Çevreleri eşit.",
+        "imageWidth": 360,
+        "imageHeight": 600
+    },
+    {
+        "id": "m6-2-t9-06",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Kart örüntüsünde ilk geçişte 3 kart ekleniyor. Sonraki her geçişte, bir önceki geçişte eklenenden 1 kart fazla ekleniyor. Altıncı adımdaki kartlardan dördüncü adımdaki kadar kart ayrılırsa geriye kaç kart kalır?",
+        "options": [
+            "7",
+            "11",
+            "27",
+            "13"
+        ],
+        "correct": 3,
+        "explanation": "Dördüncü adımda 14 kart vardır. Beşinci adıma geçerken 6, altıncı adıma geçerken 7 kart eklenir. Bu iki geçişte eklenen toplam 6 + 7 = 13 kart, altıncı adımdan dördüncü adımdaki sayı çıkarılınca kalan miktardır.",
+        "imageUrl": "/grade6/matematik/term-2/test-9/soru-06.svg",
+        "imageAlt": "Tabloda 1. adım 2 kart, 2. adım 5 kart, 3. adım 9 kart, 4. adım 14 kart olarak verilmiştir.",
+        "imageWidth": 360,
+        "imageHeight": 410
+    },
+    {
+        "prompt": "24 cm genişliğinde ve 16 cm yüksekliğindeki dikdörtgenin üzerine iki üçgen çizilmiştir. Mavi üçgenin tabanı dikdörtgenin alt kenarının tamamı, sarı üçgenin tabanı üst kenarın 12 cm’lik bölümüdür. Her iki üçgenin bu tabanlarına ait yüksekliği 16 cm’dir. Üçgenlerin ortak bölgesi yeşildir. İki üçgenin de dışında kalan beyaz bölgelerin toplam alanı 144 cm² olduğuna göre yalnız bir üçgene ait olan mavi ve sarı bölgelerin toplam alanı kaç cm²’dir?",
+        "options": [
+            "144",
+            "192",
+            "240",
+            "288"
+        ],
+        "correct": 1,
+        "explanation": "Dikdörtgenin alanı 24 × 16 = 384 cm²’dir. Üçgenlerin kapladığı birleşik alan 384 − 144 = 240 cm² olur. Mavi üçgenin tamamı 24 × 16 ÷ 2 = 192 cm², sarı üçgenin tamamı 12 × 16 ÷ 2 = 96 cm²’dir. Bu iki alanın toplamı 288 cm² olup ortak bölgeyi iki kez sayar. Ortak bölge 288 − 240 = 48 cm²’dir. Yalnız bir üçgende kalan bölgeler 240 − 48 = 192 cm² olur.",
+        "imageUrl": "/grade6/matematik/term-2/test-9/soru-07.svg",
+        "imageAlt": "24 cm genişlik, 16 cm yükseklikte dikdörtgen. Mavi üçgenin köşeleri sol üst, sol alt ve sağ alt; sarı üçgenin köşeleri sol üst, üst kenarın orta noktası ve alt kenarın orta noktası. Sarı üçgenin üst tabanı 12 cm. Ortak üçgensel bölge yeşil, iki üçgen dışında kalan bölgeler beyaz. Beyaz toplam alan 144 cm².",
+        "imageWidth": 360,
+        "imageHeight": 440,
+        "id": "m6-2-t9-07",
+        "subject": "matematik",
+        "term": 2
+    },
+    {
+        "prompt": "Bir öğrenci grubu salondaki bütün sıralara üçer kişi oturduğunda 7 öğrenci ayakta kalıyor. Aynı öğrenciler dörder kişi oturduğunda tam 2 sıra boş kalıyor; kullanılan son sırada yalnız 1 öğrenci, kullanılan diğer bütün sıralarda dörder öğrenci bulunuyor.\n\nÖğrencilerin tamamı, bir sıraya en çok 5 kişi oturacak şekilde mümkün olan en az sayıda sıraya yerleştirilirse salondaki kaç sıra kullanılmaz?",
+        "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+        ],
+        "correct": 2,
+        "explanation": "Toplam sıra sayısı n olsun. Öğrenci sayısı ilk düzende 3n + 7’dir. İkinci düzende n − 3 sıra tamamen dolu, bir sırada 1 öğrenci ve 2 sıra boştur; öğrenci sayısı 4(n − 3) + 1 = 4n − 11 olur. Eşitlikten n = 18, öğrenci sayısı 61 bulunur. 12 sıra en çok 60 kişi alır, bu nedenle en az 13 sıra gerekir. Kullanılmayan sıra sayısı 18 − 13 = 5’tir.",
+        "id": "m6-2-t9-08",
+        "subject": "matematik",
+        "term": 2
+    },
+    {
+        "prompt": "Bir algoritma, başlangıçta A > B olan iki pozitif tam sayıyla çalışıyor. Her turda şu iki işlem sırayla uygulanıyor:\n1. A’nın yerine A + B yaz.\n2. B’nin yerine A + B yaz; burada 1. işlemde yazılmış yeni A değerini kullan.\n\nBir veya daha fazla tam turdan sonra A = 59 ve B = 95 oluyor. Kaç tur yapıldığı bilinmiyor. Başlangıçtaki A ve B sayılarının çarpımı kaçtır?",
+        "options": [
+            "18",
+            "21",
+            "30",
+            "36"
+        ],
+        "correct": 1,
+        "explanation": "Bir tur geri alınırken eski B = yeni B − yeni A, eski A = yeni A − eski B olur. (59, 95) çiftinin öncesi (23, 36), onun öncesi (10, 13), onun öncesi (7, 3) olur. İlk iki geri adımda A > B koşulu sağlanmaz; üçüncüde sağlanır. Bir adım daha geri gidilirse eski B = 3 − 7 = −4 olacağından iki pozitif sayı koşulu bozulur. Dolayısıyla başlangıç çifti (7, 3), çarpımı 21’dir.",
+        "id": "m6-2-t9-09",
+        "subject": "matematik",
+        "term": 2
+    },
+    {
+        "prompt": "1, 2, 3, 4, … doğal sayılarıyla başlayan sonsuz bir listeye şu işlemler uygulanıyor:\n• İlk listede 3., 6., 9., … sıradaki sayılar siliniyor.\n• Kalan sayılar sıraları değiştirilmeden baştan 1., 2., 3., … diye yeniden numaralanıyor ve 4., 8., 12., … sıradakiler siliniyor.\n• Kalanlar yine baştan numaralanıyor ve bu kez 5., 10., 15., … sıradakiler siliniyor.\n\nHer aşamada silme işlemi sayının değerine değil, o aşamadaki sıra numarasına göre yapılıyor. Son listedeki 100. sayı kaçtır?",
+        "options": [
+            "240",
+            "246",
+            "247",
+            "250"
+        ],
+        "correct": 2,
+        "explanation": "Son aşamada her beş konumdan dördü kalır. Son listenin 100. sayısı, bu aşamadan önceki listenin 124. sayısıdır: ilk 24 tam grupta 96 sayı kalır, sonraki grubun dördüncü konumu 124’tür. Önceki aşamada her dört konumdan üçü kaldığı için 124. kalan sayı, ilk silmeden sonraki listenin 165. sayısıdır: 41 grupta 123 sayı kalır, sonraki grubun ilk konumu 165’tir. İlk aşamada her üç sayıdan ikisi kalır. 165. kalan sayı, başlangıç listesinin 247. sayısıdır: 82 grupta 164 sayı kalır, sonraki grubun ilk sayısı 247’dir.",
+        "id": "m6-2-t9-10",
+        "subject": "matematik",
+        "term": 2
+    }
+],
   },
 };

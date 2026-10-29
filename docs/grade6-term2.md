@@ -810,3 +810,22 @@ Kullanıcının istediği sıradaki test: **7 anlamlı SVG + 3 metin sorusu**. G
 Kimlikler `m6-2-t8-01`–`m6-2-t8-10`, rota `/6-sinif/matematik/2-donem-test-8`, görseller `public/grade6/matematik/term-2/test-8/` altındadır. Q1–7 şekilli; Q8–10 metindir. Cevap anahtarı **C B D A C B B A D C**. Görseller 360 px tasarım genişliğinde; 238/360 px görüntüler ve erişilebilir açıklamalar denetlenir. Basit kazanımların ortaklığı korunmakla birlikte önceki soru metinleri kopyalanmaz. İlk Q7 dört alanlı dikdörtgen taslağı ve Q9 ters dallanma taslağı benzer yöntemler nedeniyle yayımlanmadan değiştirilmiştir.
 
 Önceki **91 test / 910 soru / 535 SVG** korunur. Yeni toplam **92 test / 920 soru / 542 SVG**; ikinci dönem matematik **8 test / 80 soru** olur. Bağımsız kör çözüm, aritmetik ve ölçülü koordinat kontrolleri, tüm 14 PNG'nin piksel incelemesi, veri/koruma, TypeScript, tam derleme, SEO/rota ve native HTTP denetimleri uygulanır. Tarayıcı erişimine ilişkin önceki ret korunur; tarayıcı etkileşimi test edilmez. Ortak arayüz ve paket kilidi değişmez; production'a aktarım yapılmaz.
+
+## Matematik — 2. dönem Test 9 (dengeli)
+
+10 özgün alıştırma: 7 SVG ve 3 metin sorusu. Q1–2 çok kolay, Q3–4 kolay, Q5–6 orta, Q7–8 zor, Q9–10 çok zor; genel etiket Orta. Bu düzeyler editöryal değerlendirmedir; deneysel kalibrasyon değildir. Önceki kaynak sınırı korunur: yalnız kullanıcının sağladığı mat6.pdf altı çıktısı, tam dönem müfredatı/resmî sınav iddiası yoktur.
+
+| Soru | Beceri | Çıktı |
+| --- | --- | --- |
+| 1 | Paralelkenarın taban ve dik yüksekliğinden alan | MAT.6.4.2 |
+| 2 | Eksiltilen bilinmeyen yerine değer koyma | MAT.6.2.1 |
+| 3 | Farklı alan birimlerini toplayabilme | MAT.6.4.1 |
+| 4 | Kutuların sırasını değiştiren yönergeyi uygulama | MAT.6.2.3 |
+| 5 | Eş çevrelerden eğik kenar ve alan farkı | MAT.6.2.1, MAT.6.4.2, MAT.6.4.3 |
+| 6 | Artan artışlı örüntüde iki adımın farkı | MAT.6.2.2 |
+| 7 | Örtüşen üçgenlerde yalnız bir kez kaplanan alan | MAT.6.4.2, MAT.6.4.3 |
+| 8 | Eksik dolu sıradan öğrenci sayısı ve yeni kapasite | MAT.6.2.1 |
+| 9 | Sıralı iki değişkenli algoritmayı tersine kurma | MAT.6.2.1, MAT.6.2.3 |
+| 10 | Yeniden numaralanan sıraların ters sıra eşlemesi | MAT.6.2.2, MAT.6.2.3 |
+
+Önceki sorular ve SVG dosyaları aynen korunur. Görseller 238 ve 360 px boyutta piksel denetiminden geçirilir; tarayıcı kullanılmaz.
