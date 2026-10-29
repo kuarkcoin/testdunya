@@ -2855,6 +2855,156 @@ export const turkceData: SubjectData = {
         "correct": 1,
         "explanation": "K’de prova öncesi not, Ada’nın sanatsal amacını önceden kurduğunu gösterir. L’de ilk neden takılmayı önlemektir; hareketi sanatsal olarak sürdürme kararı yönetmenin yorumundan sonra alınır. Aynı hareketin beğenilmesi, başlangıçtaki amaçların aynı olduğunu göstermez. Yönetmenin yorumu, Ada’nın sonradan aldığı karardan önce geldiği için bu karara dayanamaz. Başlangıçta sanatsal amaç bulunmaması da sonradan yapılan sahne yorumunu tek başına geçersiz kılmaz."
     }
+],
+  "test4": [
+    {
+        "prompt": "“Duru, yeni karşılaştığı sözcüğün anlamını öğrenmek için sözlüğü açtı.” cümlesinde Duru’nun sözlüğü açma amacı nedir?",
+        "options": [
+            "Sözlüğün sayfalarını saymak",
+            "Bir sözcüğün anlamını öğrenmek",
+            "Yeni bir öykü yazmak",
+            "Kitabın yazarını araştırmak"
+        ],
+        "correct": 1,
+        "explanation": "Cümlede amaç “sözcüğün anlamını öğrenmek için” sözleriyle açıkça belirtilmiştir.",
+        "id": "t6-2-t4-01",
+        "subject": "turkce",
+        "term": 2
+    },
+    {
+        "prompt": "Akşam yemeğinden sonra balkona çıktık. Sokak lambaları yanmış, gündüz kalabalık olan park sessizleşmişti. Dedem yıldızları gösterirken ben küçük defterime not alıyordum.\n\nBu olay günün hangi bölümünde geçmektedir?",
+        "options": [
+            "Sabah",
+            "Öğle",
+            "İkindi",
+            "Akşam"
+        ],
+        "correct": 3,
+        "explanation": "“Akşam yemeğinden sonra” ifadesi zamanı doğrudan bildirir. Yanan sokak lambaları ve görülen yıldızlar da bu bilgiyi destekler.",
+        "id": "t6-2-t4-02",
+        "subject": "turkce",
+        "term": 2
+    },
+    {
+        "prompt": "Deniz, levhada “Oyuncaklar” yazısı daha yukarıda olduğu için bu bölümün üst katta olduğunu düşünüyor. Levhanın iletisini doğru açıklayan uyarı hangisidir?",
+        "options": [
+            "Yazının yüksekliği katı göstermez; oyuncaklar için sola yönelmelisin.",
+            "Yazının yüksekliği katı gösterir; oyuncaklar için üst kata çıkmalısın.",
+            "Okların uçları katı gösterir; taş eserler oyuncakların bir üst katındadır.",
+            "Oklar bölümlerin yönünü göstermez; iki bölüm de girişin sağındadır."
+        ],
+        "correct": 0,
+        "explanation": "Oyuncaklar yazısının levhada üst sırada bulunması, bölümün üst katta olduğu anlamına gelmez. Bölümün yönü okun ucuyla belirtilir; oyuncaklar oku sola bakar. Levhada kat bilgisi yoktur.",
+        "imageUrl": "/grade6/turkce/term-2/test-4/soru-03.svg",
+        "imageAlt": "Müze girişindeki yön levhası: Üst sırada Oyuncaklar için sola bakan ok, alt sırada Taş eserler için sağa bakan ok. Kat numarası belirtilmemiş.",
+        "imageWidth": 360,
+        "imageHeight": 420,
+        "id": "t6-2-t4-03",
+        "subject": "turkce",
+        "term": 2
+    },
+    {
+        "prompt": "“Sergi salonu küçüktü; _____ kalabalık ziyaretçi grubu içeride hiç sıkışıklık yaşamadan dolaşabildi.”\n\nCümledeki anlam ilişkisini korumak için boşluğa hangisi getirilmelidir?",
+        "options": [
+            "bu yüzden",
+            "örneğin",
+            "buna rağmen",
+            "başka bir deyişle"
+        ],
+        "correct": 2,
+        "explanation": "Küçük salonda kalabalığın sıkışması beklenebilir. Buna karşıt olarak ziyaretçiler sıkışmadan dolaşmıştır. “Buna rağmen” beklenen durum ile gerçekleşen durum arasındaki karşıtlığı kurar.",
+        "id": "t6-2-t4-04",
+        "subject": "turkce",
+        "term": 2
+    },
+    {
+        "prompt": "(I) Zeynep, öyküsünde denizi yalnız maviliğiyle anlatmıştı. (II) Öğretmeni, “Okurun gözünün yanına kulağını da çağırabilir misin?” diye sordu. (III) Zeynep, martıların çığlıklarını ve kıyıya vuran dalgaların sesini metnine ekledi. (IV) Sonra öyküdeki bütün olayları başka bir sıraya koydu.\n\nÖğretmenin önerisi ile yapılan değişikliklerin ilişkisini doğru açıklayan seçenek hangisidir?",
+        "options": [
+            "Öneri denizi daha canlı betimlemektir; III. cümledeki sesler ile IV. cümledeki yeni olay sırası, işitme duyusuna seslenmenin iki farklı yoludur.",
+            "Öneri denizi daha canlı betimlemektir; III. cümle bunu işitme ayrıntılarıyla karşılar, IV. cümledeki değişiklik bu öneriden doğrudan çıkmaz.",
+            "Öneri denizi daha canlı betimlemektir; III. cümledeki seslerin öneriyi karşılayabilmesi, IV. cümlede olayların yeniden sıralanmasına bağlıdır.",
+            "Öneri denizi daha canlı betimlemektir; III. cümlede görme ayrıntıları çıkarılarak yerlerine işitme ayrıntıları konmuş, IV. cümlede bu değişiklik tamamlanmıştır."
+        ],
+        "correct": 1,
+        "explanation": "“Kulağını çağırmak” işitme duyusuna seslenmek anlamındadır. Martı ve dalga sesleri bu öneriyi uygular. Olayların sırasını değiştirmekse duyularla betimlemeyi zenginleştirme önerisinin gereği değildir.",
+        "id": "t6-2-t4-05",
+        "subject": "turkce",
+        "term": 2
+    },
+    {
+        "prompt": "Ece, görseldeki panoya bakıp “Salı günü şiir okunmadığına göre şiir saati iptal edilmiş.” diyor. Panodaki başlıkları ve işaretlerin açıklamasını birlikte değerlendiren hangi yanıt doğrudur?",
+        "options": [
+            "Yanlıştır; perşembe planında yer alması şiir saatinin kesinlikle yapılacağını, salı listesi de resim çalışmasının tamamlandığını kanıtlar.",
+            "Yanlıştır; dolu daire şiir saatinin perşembe günü tamamlandığını, onay işareti resim çalışmasının salı için planlandığını gösterir.",
+            "Haklıdır; tamamlananlar listesinde yalnız resim çalışması bulunduğundan perşembe planındaki şiir saati artık geçerli değildir.",
+            "Yanlıştır; şiir saati perşembe için planlanmıştır, salının tamamlanan işleri arasında bulunmaması iptal edildiğini göstermez."
+        ],
+        "correct": 3,
+        "explanation": "Pano iki ayrı zamanı ve durumu gösterir. Dolu daire perşembe günü yapılması planlanan şiir saatini, onay işareti salı günü tamamlanan resim çalışmasını belirtir. Salı günü yapılmayan şiir saatinin iptal edildiğine ilişkin bilgi yoktur. Bir etkinliğin planlanması, gelecekte kesinlikle gerçekleşeceğinin kanıtı da değildir.",
+        "imageUrl": "/grade6/turkce/term-2/test-4/soru-06.svg",
+        "imageAlt": "Kulüp panosu. Perşembe planı başlığı altında dolu daire ile Şiir saati. Salı tamamlananlar başlığı altında onay işareti ile Resim çalışması. Açıklama: Dolu daire planlandı; onay işareti tamamlandı.",
+        "imageWidth": 360,
+        "imageHeight": 550,
+        "id": "t6-2-t4-06",
+        "subject": "turkce",
+        "term": 2
+    },
+    {
+        "prompt": "Dedem başka bir şehre taşındığından beri onun odasındaki saat de bozuktu. Saat onarılıp yeniden işlemeye başlayınca annem, ‘Ev eski sesine kavuştu.’ dedi. Bir süre dinledim. Eskiden her vuruşun ardından dedemin ‘Geç kalıyoruz!’ diye seslenmesini beklerdim. Şimdi yalnızca saati duyuyordum. ‘Yine de bir sessizlik var.’ diye düşündüm. Yatmadan önce saati dikkatle kurdum.\n\nAnlatıcının sessizlik düşüncesi ile saati kurması birlikte değerlendirildiğinde hangi yoruma ulaşılır?",
+        "options": [
+            "Saatin sesini eskisinden farklı bulmuştur; saati kurarak onarımın eksik kalan bölümünü kendi başına tamamlamaya çalışmaktadır.",
+            "Dedesini özlediği için saatin sesine yeni bir anlam yüklemiştir; saati kurması, zamanla bu sesin dedesinin yerini tutacağına inandığını gösterir.",
+            "Saatin sesi dedesinin yokluğunu gidermemiştir; buna rağmen onunla bağlantılı bir eşyayı yaşatmayı değerli bulmaktadır.",
+            "Saat ona dedesinin yokluğunu hatırlatmıştır; saati kurması, bu eksikliği düşünmekten vazgeçip eski düzene döndüğünü gösterir."
+        ],
+        "correct": 2,
+        "explanation": "Saat artık ses çıkardığı için “sessizlik” gerçek bir ses yokluğu değildir; dedenin sesinin ve varlığının eksikliğini anlatır. Saati özenle kurmak, bu eksikliği gidermese de onunla bağlantılı eşyaya değer verdiğini gösterir. Saatin dedesinin yerini tutacağına inandığı veya eksikliği düşünmekten vazgeçtiği sonucuna ulaşılamaz. Onarımın eksik olduğuna ilişkin bilgi de yoktur.",
+        "id": "t6-2-t4-07",
+        "subject": "turkce",
+        "term": 2
+    },
+    {
+        "prompt": "Bir masalda, ormanın kapısının kapıyı açmaya çalışan kişi doğruyu söylediğinde açıldığı, yalan söylediğinde kapalı kaldığı belirtilir. Son bölümde kahraman, doğru olmadığını bildiği bir şey söyler; kapı açılır. Bu değişikliğin nedeni açıklanmaz.\n\nİki öğrenci masalı şöyle eleştirir:\nEce: ‘Bir kapının söylenenlerin doğruluğunu anlaması mümkün değil; bu yüzden masal başarısız.’\nBora: ‘Masalın başta koyduğu kuralın son bölümde neden işlemediğini anlayamadım.’\n\nHangi seçenek hem daha yerinde olan eleştiriyi belirtir hem de masalın olağanüstü özelliğini koruyarak bu eleştirinin nedenini giderecek bir değişiklik önerir?",
+        "options": [
+            "Ece’nin eleştirisi daha yerindedir; kapının yalnız doğru söylendiğinde açılması korunmalı, orman daha ayrıntılı betimlenmelidir.",
+            "Bora’nın eleştirisi daha yerindedir; kahramanın yalan söylediği hâlde kapının açılması korunmalı, kapının görünüşü daha ayrıntılı anlatılmalıdır.",
+            "Ece’nin eleştirisi daha yerindedir; kapı yine söylenenlerin doğruluğunu anlamalı, kahraman doğruyu söylediğinde kapanmalıdır.",
+            "Bora’nın eleştirisi daha yerindedir; kahraman önce yalanını düzeltip doğruyu söylemeli, kapı bundan sonra açılmalıdır."
+        ],
+        "correct": 3,
+        "explanation": "Olağanüstü bir kapı masal türüne uygundur; ancak masalın kendi koyduğu kuralın açıklanmadan bozulması tutarlılık sorunudur. Kahramanın yalanını düzeltmesinden sonra kapının açılması, olağanüstülüğü korurken bu çelişkiyi giderir. Mekânı veya kapıyı ayrıntılandırmak kuralın ihlalini açıklamaz; doğru sözde kapanmak ise verilen kurala uygun bir çözüm değildir.",
+        "id": "t6-2-t4-08",
+        "subject": "turkce",
+        "term": 2
+    },
+    {
+        "id": "t6-2-t4-09",
+        "subject": "turkce",
+        "term": 2,
+        "prompt": "I. ‘Sunumdan önce prova yaparım. Böylece söyleyeceklerimi unutmaktan korkmam; dinleyicilerin anlamadığı yerde örneğimi değiştirebilirim. Hazırlık, konuşurken bana hareket alanı açar.’\n\nII. ‘Konuşmacı, dinleyiciler anlamadığını söylediğinde bile ezberlediği cümleleri aynı sırayla tekrarladı. Sözcüklerini korudu ama karşısındaki insanları kaçırdı. Böyle bir hazırlığın konuşmayı güçlendirdiğini düşünmüyorum.’\n\nBu metinleri okuyan Arda, ‘Öyleyse hazırlık yapmak yerine konuşmayı dinleyicilerin sorularına göre oluşturmalıyım.’ der. Sunumunda her sorunun açtığı yeni konuya geçer. Dinleyiciler sorularına yanıt alsa da sunumun asıl anlatmak istediğini açıklayamaz.\n\nArda’nın çıkardığı sonuç ve yaşadığı sorun birlikte düşünüldüğünde, iki metne de dayandırılabilecek en uygun değerlendirme hangisidir?",
+        "options": [
+            "Arda, hazırlık ile değişmez bir metne bağlılığı karıştırmıştır. Hazırladığı ana düşünceyi koruyup örneklerini dinleyiciye göre değiştirebilir; soruları yanıtlaması, konuşmasının bütünlüğünü koruduğunu tek başına göstermez.",
+            "Arda, dinleyiciyi gözetmek ile soruları yanıtlamayı karıştırmıştır. Dinleyiciler anlamadığını söylediğinde de açıklamasını değiştirmeden hazırladığı aynı cümleleri tekrarlayabilir; böylece iki metnin önerisini de karşılamış olur.",
+            "Arda, hazırlığı bırakmakta haklıdır ancak soruları yeterince seçmemiştir. Yalnız aynı konuya ilişkin soruları izlerse ilk metnin önerdiği yöntemi de uygulamış olur; sorun, hazırlık yapmaması değildir.",
+            "Arda, iki metnin uzlaşmadığını gözden kaçırmıştır. İlk metin hazırlığı, ikinci metin hazırlıksız konuşmayı destekler; sunumunun dağılması, ilk görüşün ikinci görüşten daha geçerli olduğunu göstermektedir."
+        ],
+        "correct": 0,
+        "explanation": "İlk metin hazırlığın dinleyiciye uyum sağlamayı kolaylaştırabileceğini gösterir. İkinci metin bütün hazırlıkları değil, dinleyiciyi gözetmeyi engelleyen katı bağlılığı eleştirir. Arda bu ayrımı kaçırmıştır. Yaşadığı sorun, sorulara yanıt vermenin tek başına ana düşünceyi ve bütünlüğü korumaya yetmediğini gösterir. Dinleyiciler anlamadığını söylediğinde aynı cümleleri değiştirmeden tekrarlamak ikinci metnin eleştirisini karşılamaz; hazırlığı bırakmak ilk metnin önerisi değildir ve metinler zorunlu olarak karşıt değildir."
+    },
+    {
+        "id": "t6-2-t4-10",
+        "subject": "turkce",
+        "term": 2,
+        "prompt": "Bir öykünün başlangıcı şöyledir:\n‘Oya, sabah bahçedeki saksıları yerinde bulamadı. Birinin onları çaldığını düşünüp kulübeye doğru yürüdü.’\n\nYazar, bu başlangıç için üç ayrı devam tasarlar:\nK: ‘Oya henüz kapıya ulaşmamışken içerideki bahçıvan, gece donmasınlar diye taşıdığı saksıları sulamayı bitirdi.’\nM: ‘Oya henüz kapıya ulaşmamışken içerideki bahçıvan saksıları sulamayı bitirdi.’\nL: ‘Oya kapıyı açtı. Bahçıvan saksıları gösterip gece donmasınlar diye içeri taşıdığını anlattı.’\n\nDevamların her birinde anlatılanlar doğrudur; başlangıçta sözü edilen saksılardan başka saksı yoktur. Bir öğrenci, ‘K’deki bazı sözler çıkarılarak M elde edilmiş. Ama bahçıvan saksıları suladığına göre onları kendisinin taşıdığı da bellidir. Bu nedenle K ile M okura aynı bilgiyi verir; L ise yalnız anlatım biçimini değiştirir.’ diyor.\n\nÖğrencinin gözden kaçırdığı ayrımları eksiksiz açıklayan seçenek hangisidir?",
+        "options": [
+            "M’de okur, saksıları kimin taşıdığını öğrenir; yalnız taşınma nedeni belirsiz kalır. K ve M’de okurun öğrendiği bilgileri Oya da öğrenir; L’de ise bu bilgiler bahçıvanın sözleriyle doğrulanır.",
+            "M’de sulayanın taşıyan kişi olduğu söylenemez; okur saksıların yerini de kesin olarak bilemez. K’de okur bütün bilgileri Oya’dan önce, L’de Oya’yla birlikte öğrenir.",
+            "M’de okur saksıların yerini bilir, fakat sulayanın taşıyan kişi olduğu ve taşıma nedeni kesinleşmez. K’de bu bilgiler okura verilirken Oya henüz öğrenmemiştir; L’de açıklamayı Oya da öğrenir.",
+            "M’de okur yalnız saksıların yerini öğrenir; K’de taşıyanı ve nedeni de öğrenir. Bu bilgi farkı Oya’nın düşüncesini de değiştirir: K’de hırsızlık kuşkusu biterken M’de sürer; L’de ise kuşkusu sözlü olarak giderilir."
+        ],
+        "correct": 2,
+        "explanation": "M’de bahçıvanın kulübede aynı saksıları suladığı açıktır; bu, yerlerini okura bildirir fakat bahçıvanın onları taşıdığını veya neden taşındıklarını kanıtlamaz. K, taşıyanı ve don tehlikesi nedenini de okura açıklar. K ve M’de Oya henüz kapıya ulaşmadığından bu bilgileri öğrenmiş değildir; okura bilgi verilmesi karakterin düşüncesini kendiliğinden değiştirmez. L’de bahçıvan açıklamayı Oya’ya yaptığı için Oya da gerçeği öğrenir."
+    }
 ]
 }
 };

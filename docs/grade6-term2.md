@@ -764,3 +764,28 @@ Kaynak sınırı yukarıdaki `turk6.pdf` senaryolarıdır; tam dönem kazanımla
 | 10 | Çok zor | Alternatif sonların önceki eyleme yüklediği anlamı ve çıkarım sınırını karşılaştırma, T.O.6.13 / T.O.6.24 |
 
 Yeni rota `/6-sinif/turkce/2-donem-test-3`; soru kimlikleri `t6-2-t3-01`–`t6-2-t3-10`. Önceki testler ve görseller korunmuştur. Dış kaynak metin kopyası kullanılmamıştır.
+
+## Türkçe — 2. dönem Test 4 (dengeli güçlük, orta)
+
+Kullanıcının Türkçe için belirttiği biçim korunur: **2 anlamlı SVG ve 8 metin sorusu**, toplam 10 özgün alıştırma. Görseller 3 ve 6. sorulardadır. Genel kategori Orta; hedefler ikişer çok kolay, kolay, orta, zor ve çok zordur. Bu güçlük sınıfları editoryaldir, öğrenci verisiyle kalibre edilmiş değildir. Kaynak kapsamı yukarıdaki `turk6.pdf` senaryolarındaki okuma becerileriyle sınırlıdır; tam dönem kapsamı veya açık uçlu yazma becerisinin eksiksiz ölçülmesi iddia edilmez. Önceki testler değiştirilmez.
+
+| Soru | Hedef düzey | Beceri ve kaynak ilişkisi |
+| --- | --- | --- |
+| 1 | Çok kolay | Açıkça belirtilen amacı bulma, T.O.6.24 |
+| 2 | Çok kolay | Anlatıda zaman, T.O.6.14 |
+| 3 | Kolay | Levha yerleşimi ile yön işaretinin anlamını ayırma, T.O.6.22 |
+| 4 | Kolay | Beklenti ve gerçekleşme arasındaki karşıtlık, T.O.6.24 |
+| 5 | Orta | Mecazlı önerinin kapsamını iki değişikliğe uygulama, T.O.6.13 / T.O.6.24 |
+| 6 | Orta | Görsel açıklamayı zaman ve plan–sonuç ayrımıyla birlikte yorumlama, T.O.6.22 / T.O.6.25 |
+| 7 | Zor | Mecazlı eksiklik ile karakterin eylemini birlikte yorumlama, T.O.6.13 / T.O.6.24 |
+| 8 | Zor | Tür özelliği ile kurmaca içi tutarlılığı ayırma, T.O.6.25 |
+| 9 | Çok zor | İki görüşün kapsamını ve önerilen düzeltmenin yeterliliğini değerlendirme, T.O.6.24 / T.O.6.25 / T.O.6.26 |
+| 10 | Çok zor | Anlatım değişikliğinin okur ve karakterin bilgisine etkisini karşılaştırma, T.O.6.24 / T.O.6.26 |
+
+Rota `/6-sinif/turkce/2-donem-test-4`; kimlikler `t6-2-t4-01`–`t6-2-t4-10`. SVG genişliği 360 px, metinler en az 27 px; mevcut büyütme arayüzü korunur. Önceki 90 test / 900 soru / 533 SVG üzerine toplam 91 test / 910 soru / 535 SVG olur. Production aktarımı bu hazırlığa dahil değildir.
+
+**İçerik denetimi:** Bağımsız incelemelerde ilk Q3’ün eski yön-sıralama görevine benzemesi giderilerek işaretin yüksekliği ile yön anlamının karıştırılması üzerine yeni görev oluşturuldu. Q4’te hem neden hem karşıtlık yorumuna izin veren ilk cümle değiştirildi. Q5/Q6’da daha yakın çeldiricilerle kapsam, koşul ve plan–garanti ayrımları güçlendirildi. Q7’de mecazlı sessizlik ile saati yaşatma eylemi birlikte yorumlanır; Q8’de tür özelliği, iç tutarlılık ve uygun metin düzeltmesi birlikte değerlendirilir. Q9, iki görüşün kapsamını üçüncü kişinin yanlış uygulamasıyla birleştirir. Q10, üç anlatımda yer, taşıyan, neden ve okur/karakter bilgi ayrımını birlikte izletir. Q9’da ek açıklama imkânını açık bırakan ilk çeldirici, anlamayan dinleyiciye aynı cümleleri tekrarlamayı açıkça önerecek biçimde netleştirildi. Cevap anahtarı **B, D, A, C, B, D, C, D, A, C**; dağılım A: 2, B: 2, C: 3, D: 3.
+
+İki son SVG’nin 238 ve 360 px genişliğindeki dört PNG’si bağımsız olarak incelendi. Yazı kırpılması veya çakışma yoktur; alternatif metinler işaret ve pano bilgileriyle uyumludur. Q3’ün alternatif metnine üst/alt sıra yerleşimi eklendi. Tarayıcı erişim reddi yeniden denenmedi; native PNG ve HTTP denetimleri tarayıcı etkileşim testi değildir.
+
+**29 Ekim 2026 teknik doğrulama:** Son kaynakla TypeScript, tam Next.js 15.5.28 üretim derlemesi ve proje SEO/okuma/resimli oyun denetimleri geçti; 421 statik sayfa üretildi. Altıncı sınıf rota kontrolü 96 adresi ve 91 test / 910 soru toplamını doğruladı. Önceki 900 soru veri eşitliğiyle, 533 SVG Git blob kimliğiyle değişmeden korundu. Yerel üretim sunucusunda yeni Test 4, önceki Test 3, birinci dönem Test 1, ders/ana sayfa, sitemap ve iki SVG HTTP 200; henüz olmayan Test 5 ve geçersiz test adresi 404 verdi. SVG yanıtları kaynaklarla byte düzeyinde aynıydı; on soru kimliği ve ilk sorunun dört seçeneği sunulan HTML’de doğrulandı. Sunucu kapatıldı. Tarayıcı etkileşimi ve production aktarımı yapılmadı.
