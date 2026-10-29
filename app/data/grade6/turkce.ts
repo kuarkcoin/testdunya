@@ -2705,6 +2705,156 @@ export const turkceData: SubjectData = {
       "correct": 3,
       "explanation": "“Türkçe”, özel addan yapım ekiyle türemiştir; bu sözcüğe gelen çekim eki kesmeyle ayrılmaz: “Türkçenin”. Doğrudan sorulan söz, tırnak içinde soru işaretiyle biter. Dıştaki “Öğretmen … diye sordu.” cümlesi bir soru sormaz, gerçekleşen konuşmayı bildirir ve noktayla biter."
     }
-  ]
+  ],
+  "test3": [
+    {
+        "id": "t6-2-t3-01",
+        "subject": "turkce",
+        "term": 2,
+        "prompt": "“Atölyedeki sessizliği, masadan düşen kutunun sesi bozdu.” cümlesinde “bozmak” sözcüğü hangi anlamda kullanılmıştır?",
+        "options": [
+            "Bir yiyeceği yenemeyecek duruma getirmek",
+            "Var olan bir durumun sürmesini engellemek",
+            "Bir aracın çalışmasına engel olmak",
+            "Yapılmış bir anlaşmadan vazgeçmek"
+        ],
+        "correct": 1,
+        "explanation": "Kutunun sesi, sürmekte olan sessizliği sona erdirmiştir. Burada bir yiyeceğin, aracın veya anlaşmanın bozulması anlatılmaz."
+    },
+    {
+        "id": "t6-2-t3-02",
+        "subject": "turkce",
+        "term": 2,
+        "prompt": "Yağmur dinince Mert, dedesiyle evin arkasındaki bahçeye çıktı. Devrilmiş saksıyı birlikte kaldırıp çiçeği yeniden diktiler.\n\nBu metinde anlatılan olay nerede geçmektedir?",
+        "options": [
+            "Evin arkasındaki bahçede",
+            "Evin önündeki sokakta",
+            "Dedelerinin atölyesinde",
+            "Okulun çiçekli avlusunda"
+        ],
+        "correct": 0,
+        "explanation": "Metinde Mert ile dedesinin evin arkasındaki bahçeye çıktığı açıkça belirtilir; saksıyı da burada kaldırırlar."
+    },
+    {
+        "id": "t6-2-t3-03",
+        "subject": "turkce",
+        "term": 2,
+        "prompt": "Duyuruya göre tohum sergisine katılmak isteyen bir öğrenci aşağıdaki paketlerden hangisini getirebilir?",
+        "options": [
+            "Ağzı kapalı, üzerinde tohumun adı yazmayan paketi",
+            "Ağzı kapalı, üzerinde tohumun adı yazan paketi",
+            "Ağzı açık, üzerinde tohumun adı yazan paketi",
+            "Ağzı açık, üzerinde tohumun adı yazmayan paketi"
+        ],
+        "correct": 1,
+        "explanation": "Duyuru iki koşul verir: Paket kapalı olmalı, üzerinde tohumun adı yazmalıdır. Yalnızca ikinci seçenek iki koşulu birlikte karşılar.",
+        "imageUrl": "/grade6/turkce/term-2/test-3/soru-03.svg",
+        "imageAlt": "Tohum sergisi duyurusu: Getireceğin paketin ağzı kapalı olsun, üzerine tohumun adını yaz. Cuma günü sınıfta.",
+        "imageWidth": 360,
+        "imageHeight": 440
+    },
+    {
+        "id": "t6-2-t3-04",
+        "subject": "turkce",
+        "term": 2,
+        "prompt": "“Sabahın ilk ışığıyla uyanan sokak, kapılarını birer birer açıp bizi selamladı.”\n\nBu cümledeki kişileştirme aşağıdakilerden hangisiyle açıklanır?",
+        "options": [
+            "Sokağın, uzunluğu bakımından bir insana benzetilmesiyle",
+            "Sabah ışığının gerçekte olduğundan güçlü anlatılmasıyla",
+            "Sokağa uyanma ve selamlama gibi insana ait davranışlar verilmesiyle",
+            "Kapıların sayısının tam olarak belirtilmesiyle"
+        ],
+        "correct": 2,
+        "explanation": "İnsana ait uyanma ve selamlama davranışları sokağa aktarılmıştır. Kapı sayısı verilmemiştir; karşılaştırma veya abartma da kişileştirmenin gerekçesi değildir."
+    },
+    {
+        "id": "t6-2-t3-05",
+        "subject": "turkce",
+        "term": 2,
+        "prompt": "Okul radyosunda Elif’in ilk konuşmasını dinleyen arkadaşları, bilgilerin birbirine karıştığını söyledi. Elif ikinci yayında aynı bilgileri aynı sırayla verdi; yalnızca yeni bir bilgiye geçmeden önce durakladı, önemli sözcükleri vurguladı. Yayından sonra Bora, ‘Metne yeni açıklamalar eklemen işe yaramış.’ dedi. Elif ise ‘Bu kez sözcüklerin arasına da yer açtım.’ diye karşılık verdi.\n\nBora’nın yorumu ile Elif’in karşılığını birlikte doğru değerlendiren seçenek hangisidir?",
+        "options": [
+            "Bora, bilgi sırasının değiştiğini düşünmektedir; Elif ise ilk yayındaki sırayı neden koruduğunu açıklamaktadır.",
+            "Bora, dinleyicilerin konuya ilgisinin arttığını düşünmektedir; Elif ise daha ilgi çekici bilgiler seçtiğini belirtmektedir.",
+            "Bora, konuşmanın kısa tutulduğunu düşünmektedir; Elif ise metindeki bazı açıklamaları çıkardığını anlatmaktadır.",
+            "Bora, anlaşılmanın yeni açıklamalarla kolaylaştığını düşünmektedir; Elif ise aynı bilgilerin sunuluş biçimindeki değişime işaret etmektedir."
+        ],
+        "correct": 3,
+        "explanation": "Bora, metne açıklama eklendiğini sanır; oysa bilgiler ve sıraları korunmuştur. Elif’in ‘sözcüklerin arasına yer açmak’ sözü, duraklamalara ve daha anlaşılır sunuşa işaret eder. Metinden bilgi çıkarma, yeni bilgi seçme veya sıralamayı değiştirme anlatılmamıştır."
+    },
+    {
+        "id": "t6-2-t3-06",
+        "subject": "turkce",
+        "term": 2,
+        "prompt": "Kulüp, afişteki “Her sınıf daha çok kitap okudu.” başlığını seçmiştir. Öğrencilerden biri, tablonun bu başlığı desteklemediğini söylemektedir.\n\nBu öğrencinin itirazını doğru gerekçelendiren ve tabloya uygun bir başlık öneren seçenek hangisidir?",
+        "options": [
+            "6/B’nin sayısı değişmemiştir; “İki sınıfın okuduğu toplam kitap sayısı arttı.” denebilir.",
+            "6/A’nın sayısı artmıştır; “Her iki sınıfın kitap sayısı iki katına çıktı.” denebilir.",
+            "6/B’nin sayısı değişmemiştir; “Okulun bütün sınıfları daha az kitap okudu.” denebilir.",
+            "6/A’nın sayısı artmıştır; “Her öğrenci öncekinden daha çok kitap okudu.” denebilir."
+        ],
+        "correct": 0,
+        "explanation": "6/A’nın kitap sayısı 12’den 18’e çıkarken 6/B’nin sayısı 10’da kalmıştır. Bu yüzden “her sınıf” ifadesi yanlıştır. İki sınıfın toplamı 22’den 28’e yükselmiştir. Tablo, okulun bütün sınıflarını veya tek tek öğrencileri göstermez.",
+        "imageUrl": "/grade6/turkce/term-2/test-3/soru-06.svg",
+        "imageAlt": "İki sınıfın okuduğu kitap sayısını gösteren tablo. İlk ay: 6/A 12, 6/B 10. Sonraki ay: 6/A 18, 6/B 10. Afiş başlığı: Her sınıf daha çok kitap okudu.",
+        "imageWidth": 360,
+        "imageHeight": 440
+    },
+    {
+        "id": "t6-2-t3-07",
+        "subject": "turkce",
+        "term": 2,
+        "prompt": "Elif, ninesinin anlattığı oyunları bir deftere geçiriyordu. Ninesinin “çömçe” dediği yere herkes anlasın diye “kepçe” yazdı. Ninesi sayfayı okuyunca “Evet, bu bir kepçe; biz ona çömçe derdik.” dedi. Elif, “kepçe”yi silmedi; onu paranteze aldı, önüne “çömçe”yi yazdı. Ertesi gün defterin başlığını “Eski Oyunlar” yerine “Ninemin Dilinden Eski Oyunlar” yaptı.\n\nElif’in sözcükte ve başlıkta yaptığı değişiklikleri birlikte en iyi açıklayan yorum hangisidir?",
+        "options": [
+            "Ninesinin kullandığı sözcüğü anlaşılmaz bulduğu için onu yalnızca başlıkta korumuş, anlatımda herkesin bildiği sözcüğü tercih etmiştir.",
+            "Oyunların kurallarını değiştirmeden daha anlaşılır hâle getirmiş, başlıkta da kuralları ilk kez ninesinin oluşturduğunu belirtmiştir.",
+            "Anlaşılmayı kolaylaştıran açıklamayı korurken anlatıcının kendine özgü söyleyişini öne çıkarmış, başlığı da bu tercihle uyumlu hâle getirmiştir.",
+            "Eski sözcüklerin anlamlarının zamanla değiştiğini göstermiş, başlık aracılığıyla ninesinin anlattığı oyunların artık oynanmadığını vurgulamıştır."
+        ],
+        "correct": 2,
+        "explanation": "“Kepçe” parantez içinde açıklama olarak kalır; ninenin kullandığı “çömçe” ise asıl sözcük olur. Yeni başlıktaki “Ninemin Dilinden” sözü de anlatıcının söyleyişini öne çıkarır. Oyunların ninesi tarafından bulunduğu, artık oynanmadığı veya sözcüğün anlam değiştirdiği söylenmemiştir."
+    },
+    {
+        "id": "t6-2-t3-08",
+        "subject": "turkce",
+        "term": 2,
+        "prompt": "Bir öğrenci, kasabanın eski istasyonundaki çanın ne zaman çalındığını araştırıyor. Cemil Bey, çocukken tren yaklaşınca çanın çaldığını hatırladığını söylüyor. Nalan Hanım da çanın tren yaklaşırken çalındığını anlatıyor; ardından “Ben o günleri görmedim, bunu Cemil Bey’den dinledim.” diye ekliyor. Öğrenci, yazısına “Birbirinden bağımsız iki kişinin aynı şeyi söylemesi, bu bilginin doğruluğunu kesinleştiriyor.” cümlesini koyuyor.\n\nBu cümleye yöneltilecek en kapsamlı ve gerekçeli eleştiri hangisidir?",
+        "options": [
+            "İki anlatımın aynı kişiye dayanması bağımsız doğrulama sayılmaz; bu durum bilginin yanlışlığını da göstermez, başka kanıt aranmalıdır.",
+            "Nalan Hanım olayları görmediği için Cemil Bey’in anısı da kullanılamaz; yazıda yalnız olay gününden kalan belgeler yer almalıdır.",
+            "İki kişi aynı bilgiyi aktardığı için sonuç doğrudur; yalnız “kesinleştiriyor” yerine “güçlendiriyor” yazılması yeterlidir.",
+            "Anlatılanların birbirine benzemesi, kişilerin çanı farklı zamanlarda duyduğunu gösterir; yazıda bu zamanlar belirtilmelidir."
+        ],
+        "correct": 0,
+        "explanation": "Nalan Hanım’ın anlatımı ikinci bağımsız gözlem değil, Cemil Bey’den öğrendiği bilgidir. Bu yüzden öğrencinin gerekçesi geçerli değildir. Bununla birlikte bir iddianın bağımsız olarak doğrulanmamış olması onun yanlış olduğunu kanıtlamaz; ek kanıt aranabilir."
+    },
+    {
+        "id": "t6-2-t3-09",
+        "subject": "turkce",
+        "term": 2,
+        "prompt": "Bir kasaba için hazırlanan iki tanıtım taslağına şu değerlendirmeler yapılıyor:\n\nI. “İlk taslakta her sokağın nerede başladığını buldum; ama oralarda nasıl bir hayat sürdüğünü anlayamadım. Fırıncının sabah kapıyı neden erkenden açtığı gibi ayrıntılar eklenseydi çizgiler benim için sokağa dönüşecekti.”\n\nII. “İkinci taslaktaki anılar sokakları gözümde canlandırdı. Ne var ki anıların geçtiği yerleri ararken kayboldum. Her anının yanına haritada bulunabilecek bir yer adı eklenseydi anlatılanların izini sürebilecektim.”\n\nEditör, “İki taslağı bir araya getirip bütün anıların ardından kasabanın haritasını koymak yeterlidir.” diyor. Hangi değerlendirme hem iki okurun farklı ihtiyaçlarını doğru ayırır hem de editörün çözümünde hâlâ eksik kalabilecek bağlantıyı gösterir?",
+        "options": [
+            "İlk okur bulabildiği yerlerdeki yaşamı anlamak, ikinci okur anlatılanların yerini bulmak istemektedir; harita sona eklendiğinde anılarla yerler arasındaki bağlantı kendiliğinden kurulacağı için başka düzenleme gerekmez.",
+            "İlk okur sokaklardaki yaşamı anlamak, ikinci okur anıların yerini bulmak istemektedir; anıları uzatmak ve haritayı büyütmek, hangi anının nerede geçtiğini ayrıca belirtmeden iki ihtiyacı da karşılar.",
+            "İlk okur konum bilgilerinin yanına yaşam ayrıntıları, ikinci okur anıların yanına konum bilgileri istemektedir; bu yüzden harita çıkarılıp yalnız yer adları içeren anılar bırakılmalıdır.",
+            "İlk okur bulabildiği yerleri anlamak, ikinci okur anlatılan yaşamın yerini bulmak istemektedir; editörün çözümünde hangi anının haritadaki hangi yere ait olduğu belirsiz kalabilir."
+        ],
+        "correct": 3,
+        "explanation": "İlk okurun eksik bulduğu yaşam bilgisi, ikincininki ise konum bağlantısıdır. İki malzemeyi peş peşe koymak, anılarda yer adı yoksa hangi anının hangi noktaya ait olduğunu tek başına göstermez. Anıları uzatmak veya haritayı büyütmek de bu eşleşmeyi kendiliğinden kurmaz. Haritayı çıkarmak ise konumları bulmaya yarayan bir kaynağı ortadan kaldırır. İki bilgi türü ilişkilendirilmelidir."
+    },
+    {
+        "id": "t6-2-t3-10",
+        "subject": "turkce",
+        "term": 2,
+        "prompt": "Öykünün ortak bölümü:\n“Provanın sonunda, oyuncu Ada sahneden çıkarken yerdeki kırmızı atkıyı aldı. Metinde bu hareket yoktu. Yönetmen, atkıyı almasının sahneyi güçlendirdiğini söyledi. Ada yalnızca gülümsedi.”\n\nYazar bu bölüme iki ayrı son düşünüyor:\nK: “Ertesi gün Ada’nın prova öncesinde yazdığı not bulundu: ‘Çıkarken atkıyı alacağım; ayrılığı böyle göstermek istiyorum.’”\nL: “Ertesi gün Ada, ‘Atkıya takılmamak için aldım. Yönetmenin yorumunu duyunca bunu sonraki provalarda da yapmaya karar verdim.’ dedi.”\n\nNotun tarihi ve Ada’nın söylediği doğru kabul edildiğinde, hareketin başlangıçtaki amacı ile ona sonradan verilen anlamın ilişkisini hangi seçenek doğru değerlendirir?",
+        "options": [
+            "K’de sanatsal amaç önceden belirlenmiş, L’de sonradan oluşmuştur; bu nedenle hareketin sahneyi güçlendirdiği yorumu yalnız K’de geçerli olabilir.",
+            "K’de sanatsal amaç hareketten önce vardır; L’de başlangıçtaki pratik amaçtan sonra sanatsal kullanım kararı gelir. Yönetmenin beğenisi, hareketin her iki sonda da baştan bu amaçla yapıldığını göstermez.",
+            "K’de amaç bir notla, L’de Ada’nın açıklamasıyla öğrenilir; yönetmenin iki sonda da aynı hareketi beğenmesi, Ada’nın başlangıçtaki amacının da aynı olduğunu gösterir.",
+            "K’de hareketin amacı önceden belirlenmiş, L’de ise yönetmenin yorumuyla değişmiştir; bu nedenle L’de yönetmenin ilk provaya ilişkin değerlendirmesi, Ada’nın sonradan verdiği karara dayanır."
+        ],
+        "correct": 1,
+        "explanation": "K’de prova öncesi not, Ada’nın sanatsal amacını önceden kurduğunu gösterir. L’de ilk neden takılmayı önlemektir; hareketi sanatsal olarak sürdürme kararı yönetmenin yorumundan sonra alınır. Aynı hareketin beğenilmesi, başlangıçtaki amaçların aynı olduğunu göstermez. Yönetmenin yorumu, Ada’nın sonradan aldığı karardan önce geldiği için bu karara dayanamaz. Başlangıçta sanatsal amaç bulunmaması da sonradan yapılan sahne yorumunu tek başına geçersiz kılmaz."
+    }
+]
 }
 };

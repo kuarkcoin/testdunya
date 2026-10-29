@@ -742,3 +742,25 @@ Cevap anahtarı: **C, B, D, A, C, B, C, A, D, B**; dağılım **A: 2, B: 3, C: 3
 Ayrı görsel incelemeci **14 tekil PNG’yi**, 238 ve 360 px genişliklerinde kontrol etti. Q1/Q6 alternatif metinlerinde çizimde olmayan ayrıntılar çıkarıldı. Q8’in yürüme yolu köprüden geçecek biçimde düzeltildi. Q9’da mutlak yol koordinatları yüzünden oluşan uzamış çizgiler sonlandırıldı; tekrar piksel kontrolünde paneller, kafesler, kişiler ve metinler doğru konumda ve okunaklıdır. Alternatif metinler, soruyu çözmek için çizimdeki bilgiyi aktarır. Tarayıcı erişim reddi yeniden denenmedi; native görüntü ve HTTP kontrolleri tarayıcı etkileşimi testi sayılmaz.
 
 **29 Ekim 2026 teknik doğrulama:** Önceki **880 soru** veri eşitliğiyle, **524 SVG** Git blob kimlikleriyle değişmeden doğrulandı. Veri denetimi **89 test / 890 soru / 531 SVG**, 890 benzersiz kimlik ve sıfır hata verdi. Son kaynakla TypeScript ve tam **Next.js 15.5.28** üretim derlemesi; SEO, okuma ve resimli oyun kontrolleri geçti. **419** statik sayfa üretildi. Rota denetimi **94** altıncı sınıf adresini, eski beşinci sınıf bağlantılarını, kanonik adresleri ve dinamik sayıları doğruladı. Yerel üretim sunucusunda 6. sınıf ana sayfası, İngilizce ders sayfası, yeni Test 10, önceki Test 9, birinci dönem Test 1 ve site haritası HTTP 200 verdi. Henüz olmayan ikinci dönem Test 11 ve geçersiz test adresi HTTP 404 verdi. Yedi SVG HTTP üzerinden son dosyalarla byte düzeyinde eşleşti. On soru kimliği, dört başlangıç seçeneği ve büyütme işaretlemesi sunulan sayfada doğrulandı; sunucu sonlandırıldı. Production aktarımı yapılmadı.
+
+
+## Türkçe — 2. dönem Test 3 (dengeli güçlük, orta)
+
+10 özgün soru: kullanıcının Türkçe için son tercihi doğrultusunda **2 görsel ve 8 metin sorusu**. Görseller 3 ve 6. sorulardadır; 360 px tasarım genişliği, en az 26 px yazı ve mevcut büyütme desteği korunur. Genel kategori Orta; sorular sırasıyla ikişer çok kolay, kolay, orta, zor ve çok zor olarak editoryal değerlendirmeyle sınıflandırılmıştır. Düzeyler deneysel öğrenci verisiyle kalibre edilmiş değildir. Önceki Türkçe Test 1 ve 2 zor düzeyde kalır.
+
+Kaynak sınırı yukarıdaki `turk6.pdf` senaryolarıdır; tam dönem kazanımlarını veya bağımsız yazılı anlatımı ölçme iddiası yoktur. Özgün çoktan seçmeli beceri alıştırmalarıdır.
+
+| Soru | Düzey | Beceri ve kaynak ilişkisi |
+| --- | --- | --- |
+| 1 | Çok kolay | Bağlamdan ifade anlamı, T.O.6.13 ile ilişkili okuma |
+| 2 | Çok kolay | Hikâyede yer, T.O.6.14 |
+| 3 | Kolay | Duyurudaki iki koşulu birlikte okuma, T.O.6.22 / T.O.6.24 |
+| 4 | Kolay | Kişileştirmeyi gerekçesiyle ayırt etme, T.O.6.20 |
+| 5 | Orta | Bir yorumun anlatılan olay ve mecazlı karşılıkla ilişkisini çözme, T.O.6.13 / T.O.6.24 |
+| 6 | Orta | Tablodan başlığın kapsamını eleştirme ve düzeltme, T.O.6.22 / T.O.6.25 |
+| 7 | Zor | Sözcük ve başlık düzenlemelerini ortak amaçla yorumlama, T.O.6.13 / T.O.6.24 |
+| 8 | Zor | Bağımsız kanıt ile aktarılan tanıklığı ayırma, T.O.6.25 |
+| 9 | Çok zor | İki metnin eleştirilerini ve bir çözümün sınırını birlikte değerlendirme, T.O.6.24 / T.O.6.25 / T.O.6.26 |
+| 10 | Çok zor | Alternatif sonların önceki eyleme yüklediği anlamı ve çıkarım sınırını karşılaştırma, T.O.6.13 / T.O.6.24 |
+
+Yeni rota `/6-sinif/turkce/2-donem-test-3`; soru kimlikleri `t6-2-t3-01`–`t6-2-t3-10`. Önceki testler ve görseller korunmuştur. Dış kaynak metin kopyası kullanılmamıştır.
