@@ -4087,6 +4087,176 @@ export const ingilizceData: SubjectData = {
         "correct": 3,
         "explanation": "Aday adlarının listede yazılmaması gizliliği sağlamaz. Herkes yeşilin Ada, turuncunun Ben anlamına geldiğini bildiği için öğrenci adlarının yanındaki renkli işaretlerden tercihleri çıkarabilir. Katlanmış kâğıtlar bu bilgi yolunu kapatmaz. Afişleri sonradan örtmek de öğrenilmiş tercihleri unutturmaz. Yeni seçimde tüm oy kâğıtları aynı renk olmalı, tercihler gizli yapılmalı ve listede yalnız oy kullanılıp kullanılmadığı kaydedilmelidir; aday tercihi yazılmamalıdır."
     }
+],
+  "test10": [
+    {
+        "id": "e6-2-t10-01",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Look at the person helping the child. What is her job?",
+        "options": [
+            "A pilot.",
+            "A farmer.",
+            "A nurse.",
+            "A tailor."
+        ],
+        "correct": 2,
+        "explanation": "Hastane ortamında çocuğun koluna bandaj saran kişi hemşiredir. Nurse, hemşire anlamına gelir.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-10/soru-01.svg",
+        "imageWidth": 360,
+        "imageHeight": 480,
+        "imageAlt": "Under a HOSPITAL sign, a woman in a blue uniform puts a white bandage around a child’s arm. A red cross is on the wall, and a long bench is behind them."
+    },
+    {
+        "id": "e6-2-t10-02",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Which instruction tells people to save electricity?",
+        "options": [
+            "Leave the lights on all night.",
+            "Turn off the lights in an empty room.",
+            "Open every tap in the bathroom.",
+            "Throw paper on the floor."
+        ],
+        "correct": 1,
+        "explanation": "Boş bir odanın ışıklarını kapatmak elektrik tasarrufu sağlar. Turn off the lights, ışıkları kapat demektir; diğer seçenekler elektrik tasarrufu yönergesi değildir."
+    },
+    {
+        "id": "e6-2-t10-03",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Look at Maya's holiday album. Which sentence gives her activities in the correct order?",
+        "options": [
+            "She swam, then visited a museum.",
+            "She went camping, then swam.",
+            "She visited a museum, then went skiing.",
+            "She visited a museum, then swam."
+        ],
+        "correct": 3,
+        "explanation": "4 Ağustos tarihli görselde Maya müzededir. 5 Ağustos tarihli görselde denizde yüzer. Bu nedenle önce müzeyi ziyaret etmiş, sonra yüzmüştür.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-10/soru-03.svg",
+        "imageWidth": 360,
+        "imageHeight": 760,
+        "imageAlt": "Maya’s holiday album has two labelled panels. On 4 August she stands inside a museum beside a dinosaur skeleton. On 5 August she swims in the sea beside a sandy beach."
+    },
+    {
+        "id": "e6-2-t10-04",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Look at the reading corner. Where are the red and blue books?",
+        "options": [
+            "The red book is on the chair; the blue book is on the table.",
+            "The red book is on the table; the blue book is on the chair.",
+            "Both books are under the table.",
+            "The red book is behind the plant; the blue book is under the chair."
+        ],
+        "correct": 0,
+        "explanation": "Kırmızı kitap sandalyenin oturma yüzeyindedir, mavi kitap masanın üstündedir. İki konumu da doğru veren seçenek A’dır.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-10/soru-04.svg",
+        "imageWidth": 360,
+        "imageHeight": 480,
+        "imageAlt": "In a reading corner, a red book is on a chair. A blue book is on a small table. Neither book is inside a bag or below a piece of furniture."
+    },
+    {
+        "id": "e6-2-t10-05",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Look at the candidates' ORIGINAL plans. Lily wants more books, and Max wants to keep the playground games.\nAfter these posters were made, Ben replaced 'Buy more storybooks' with 'Buy sports balls'. Cem replaced 'Buy only sports balls, no books' with 'Buy more storybooks'. Both kept their other promise.\nWho now has a plan that follows BOTH Lily's and Max's wishes?",
+        "options": [
+            "Ada only.",
+            "Ben only.",
+            "Cem only.",
+            "Ben and Cem."
+        ],
+        "correct": 2,
+        "explanation": "Afişler ilk planları gösterir. Ada kitap almayı ister ama oyunları durdurma planı değişmemiştir. Ben kitap yerine top almaya karar verdiği için artık Lily’nin isteğini karşılamaz; oyunları sürdürmesi tek başına yetmez. Cem ise top yerine öykü kitabı alacaktır ve oyunları sürdürme planı değişmemiştir. Son durumda iki isteği de yalnız Cem karşılar. Afişteki ilk Ben planıyla güncel planı karıştırmamak gerekir.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-10/soru-05.svg",
+        "imageWidth": 360,
+        "imageHeight": 900,
+        "imageAlt": "Three class president candidates give their plans. Ada says: Buy more storybooks. Stop all playground games. Ben says: Keep playground games. Buy more storybooks. Cem says: Keep playground games. Buy only sports balls, no books."
+    },
+    {
+        "id": "e6-2-t10-06",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Follow the recycling instructions: 'Separate all parts. Recycle each part in its own material bin. If a bin is closed, keep that part for later; recycle the other parts now.'\nThe METAL bin is closed today. The other bins are open. Look at the bottle's three parts. Which plan deals with ALL the parts and follows the instructions?",
+        "options": [
+            "Put the glass body and cap in GLASS now; put the wrapper in PAPER now.",
+            "Put the glass body in GLASS and the wrapper in PAPER now; keep the cap for METAL later.",
+            "Put the glass body in GLASS, the cap in METAL and the wrapper in PAPER now.",
+            "Keep the glass body, cap and wrapper until the METAL bin opens."
+        ],
+        "correct": 1,
+        "explanation": "Gövde cam, kapak metal, kılıf kâğıttır. Kapalı kutu istisnası yalnız metal kapağa uygulanır; kapak daha sonra metal kutusuna atılmak üzere saklanır. Açık kutulara uygun olan cam gövde ve kâğıt kılıf şimdi geri dönüştürülmelidir. Kapağı cam kutusuna atmak malzeme kuralını, kapalı metal kutusuna şimdi atmak zaman kuralını, bütün parçaları bekletmek ise diğer parçaları şimdi geri dönüştürme yönergesini bozar.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-10/soru-06.svg",
+        "imageWidth": 360,
+        "imageHeight": 900,
+        "imageAlt": "An empty bottle has three removable parts, shown separately with labels: a GLASS bottle body, a METAL cap and a flat PAPER wrapper. Three recycling bins are labelled GLASS, METAL and PAPER."
+    },
+    {
+        "id": "e6-2-t10-07",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Lara grows vegetables for shops. Her father cooks meals in a restaurant.\nFather: 'Last year, I taught Lara to make my soup. Yesterday, she showed me a new way to make it with vegetables from her farm. I used her idea at the restaurant today.'\nLara: 'My teacher tried my idea today. I still work on the farm.'\nIn Lara's words, who is 'my teacher', and where did the ORIGINAL recipe and yesterday's NEW idea come from?",
+        "options": [
+            "Her father, a cook, is her teacher. The original recipe was Lara's; yesterday's new idea was her father's.",
+            "Her father, a cook, is her teacher. Both the original recipe and yesterday's new idea were her father's.",
+            "Her father, a cook, is her teacher. The original recipe was her father's; yesterday's new idea was Lara's.",
+            "Lara is the teacher she means. Both the original recipe and yesterday's new idea were hers."
+        ],
+        "correct": 2,
+        "explanation": "Lara’nın “öğretmenim” dediği kişi ona geçen yıl çorba yapmayı öğreten babasıdır; burada öğretmen sözü kişinin mesleğini değil, bu öğrenmedeki rolünü anlatır. Babasının mesleği aşçılıktır. İlk tarif babasından, dün önerilen yeni yöntem ise çiftçi Lara’dan gelmiştir. Babasının bugün bu fikri kullanması onun fikrin kaynağı olduğu anlamına gelmez. C, mesleği, sözün gönderimini ve iki farklı zamanda bilginin geldiği kişiyi birlikte doğru tutar."
+    },
+    {
+        "id": "e6-2-t10-08",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Look at Ada's and Ben's records from the SAME Monday.\nTom says, 'Ada could not take the boat, so the island was closed to visitors.'\nMia says, 'Ada visited the museum instead, so she liked museums more than islands.'\nWhich reply uses the records correctly?",
+        "options": [
+            "Ben's visit shows the island was open. Ada changed her plan, but her record does not compare what she liked more.",
+            "Ben's visit shows the island was open. Ada's visit shows that she liked museums more.",
+            "The island was closed to visitors by boat or on foot. Ada's record does not compare what she liked more.",
+            "The island was open for Ben but closed for Ada. Choosing the museum shows that Ada liked it more."
+        ],
+        "correct": 0,
+        "explanation": "Ada'nın kaydı teknenin çalışmadığını söyler; adanın herkese kapalı olduğunu söylemez. Aynı pazartesi Ben köprüden yürüyerek adaya gitmiştir; dolayısıyla adaya ulaşmanın başka bir yolu açıktır. Ada'nın müzeye gitmesi de müzeleri daha çok sevdiğini kanıtlamaz: tekne çalışmayınca planını değiştirmiştir ve beğenilerini karşılaştırmamıştır. A, ulaşım engelini yerin kapanmasından ve gerçekleşen etkinliği kişisel tercihten ayırır.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-10/soru-08.svg",
+        "imageWidth": 360,
+        "imageHeight": 1100,
+        "imageAlt": "Two Monday records concern the same island. Ada's record shows a cancelled boat route from the town to the island and a museum on the town side. Her note says: Our boat did not run. We visited the museum instead. Ben's record shows a walking route across a bridge from the town to the island. Under the map is the heading On the island. His note says: We walked here across the bridge. The museum is on the town side, not on the island."
+    },
+    {
+        "id": "e6-2-t10-09",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Look at the two pages. Max has NOT seen Ann's page or heard about it.\nAnn says, 'The girl wants to keep the bird in the cage forever.'\nMax says, 'The girl looked after a hurt bird. My last page ALONE shows that its wing was hurt before.'\nWhich reply correctly checks the claims and their evidence?",
+        "options": [
+            "Both claims are wrong: the last page shows that the girl never looked after the bird.",
+            "Ann's claim is wrong, and Max's whole claim is supported by the last page alone.",
+            "Ann's claim is right on page 12. Max's claim about the hurt bird is wrong because his page has no hurt wing.",
+            "Ann's claim is wrong. The two pages support Max's idea about the hurt bird, but his last page alone does not show the earlier injury."
+        ],
+        "correct": 3,
+        "explanation": "12. sayfadaki 'kanadın iyileşene kadar' sözü ve 60. sayfada kuşun serbest bırakılması, kafeste tutmanın kalıcı olmadığını gösterir; Ann'in 'sonsuza kadar' yorumu yanlıştır. Kızın yaralı kuşa baktığı düşüncesi ise iki sayfanın birlikte verdiği bilgiyle doğrudur: önce kanat yaralıdır, sonra kuş uçar. Ancak Max'in tek başına gördüğü son sayfa geçmişte bir yaralanma olduğunu göstermez. Bir düşüncenin doğru olması ile gösterilen kaynağın o düşünceyi kanıtlaması farklıdır. D bu ayrımı korur.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-10/soru-09.svg",
+        "imageWidth": 360,
+        "imageHeight": 1100,
+        "imageAlt": "Two pages from the same storybook are shown. Ann reads page 12. In its picture, a girl puts a small bird with a bandaged wing in a cage and says: Stay here until your wing is better. Max reads only the last page, page 60. Its picture shows the girl beside the open cage as the bird flies away. She says: Time to go! Max has not seen page 12 or heard about it."
+    },
+    {
+        "id": "e6-2-t10-10",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Read the class election rules.\n'Each pupil may put ONE paper in the box. We count the name written on it. A helper may write a pupil's choice. A wrong paper can be destroyed and replaced ONLY BEFORE it goes in the box. After that, it cannot be changed. Helping does not use the helper's own vote.'\n\nEce chose Ada. Ben wrote Leo by mistake. Ece checked BEFORE voting. Ben destroyed that paper and wrote Ada. Ece put the new paper in the box.\nNora chose Leo. Ben wrote Ada by mistake. Nora put it in the box WITHOUT checking. Only then did she learn about the mistake. Ben has not put in his own paper.\nWhat do the rules and events tell us about the counted votes, who may still vote, and Ben's own choice?",
+        "options": [
+            "Ada and Leo get one vote each. Only Ben may still vote; his own choice is not known.",
+            "Ada gets two votes. Only Ben may still vote; his own choice is not known.",
+            "Ada gets two votes. Nora and Ben may still vote; Ben's own choice is not known.",
+            "Ada gets two votes. Only Ben may still vote; writing Ada shows that it is his own choice."
+        ],
+        "correct": 1,
+        "explanation": "Ece’nin ilk kâğıdı sandığa girmeden yok edilmiştir; yerine konan Ada yazılı kâğıt sayılır. Nora’nın niyeti Leo olsa da sandığa Ada yazılı kâğıdı atmıştır. Verilen kurala göre yazılı isim sayıldığı ve sandığa girdikten sonra değiştirme yapılmadığı için bu oy da Ada’ya gider; Nora ikinci kâğıt atamaz. İki öğrencinin niyeti ile sandığa giren iki kâğıdın içeriği aynı şey değildir. Ben yalnız yardımcı olarak yazmıştır, kendi kâğıdını henüz atmamıştır ve istediği adayı hâlâ seçebilir. Hatalı veya yardımcı olarak yazdığı isimler kendi tercihini kanıtlamaz. B oyların sayılmasını, kalan hakkı ve bilinmeyen kişisel tercihi birlikte doğru değerlendirir. Bu, soruda açıkça verilen sınıf kuralıdır; tüm gerçek seçim sistemleri için genel hukuk kuralı değildir."
+    }
 ]
 }
 };
