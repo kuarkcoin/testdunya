@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="465" viewBox="0 0 360 465" role="img"><title>Three objects near a desk</title><desc>A closed blue book lies on the floor directly under the desk between its legs. A lamp stands on the desktop. A green school bag stands on the floor beside the desk on the right.</desc><rect width="360" height="465" rx="20" fill="#fff"/><g stroke="#243b53" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<rect x="13" y="14" width="334" height="438" rx="18" fill="#f2f7fa" stroke="none"/>
+<path d="M22 409h316" stroke="#b8c9d6"/>
+<path d="M50 254v145m188 -145v145" stroke="#9b6946" stroke-width="13"/><rect x="32" y="238" width="229" height="24" rx="5" fill="#d59b62"/>
+<path d="M157 233h68m-34 0v-68" stroke="#63758a" stroke-width="9"/><path d="M169 124h44l21 46h-87z" fill="#f2c358"/><path d="M191 171v11" stroke="#fff" stroke-width="6"/><text x="191" y="98" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#243b53" stroke="none">LAMP</text>
+<path d="M94 374h97v30H94q-13 -14 0 -30z" fill="#4b9fd2"/><path d="M99 383h91v13H99" fill="#fff" stroke-width="2"/><text x="141" y="349" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#243b53" stroke="none">BOOK</text>
+<path d="M285 310v-16q15 -20 30 0v16" fill="none" stroke-width="7"/><rect x="267" y="307" width="66" height="96" rx="15" fill="#49b6aa"/><rect x="278" y="349" width="44" height="35" rx="7" fill="#b1e0cf"/><path d="M281 326h38" stroke="#fff"/><text x="299" y="283" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#243b53" stroke="none">BAG</text>
+</g></svg>

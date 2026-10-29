@@ -3917,6 +3917,176 @@ export const ingilizceData: SubjectData = {
         "correct": 2,
         "explanation": "İlk onaylı plan salı günü sınıfta kitap okumaktır. Birinci YES oyu yalnız yeri bahçe olarak değiştirir. İkinci soruya NO dendiği için etkinlik kitap okuma olarak kalır. Başkanın tek başına yazdığı çarşamba/oyun/bahçe notu planı değiştiremez. Son oylama yalnız günü değiştirir; soruda başkanın notundaki günün ertesi istendiğinden yeni gün perşembedir. Bu, nottaki oyun etkinliğini de kabul etmek anlamına gelmez. Son onaylı plan perşembe günü bahçede kitap okumaktır. Geçersiz bir nottaki gün, yeni soruda zaman referansı olabilir; notun öteki bölümleri bu yolla onaylanmış olmaz."
     }
+],
+  "test9": [
+    {
+        "id": "e6-2-t9-01",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "What is this person's job?",
+        "options": [
+            "A farmer.",
+            "A hairdresser.",
+            "A dentist.",
+            "A pilot."
+        ],
+        "correct": 1,
+        "explanation": "Resimde bir kişinin saçını makasla kesen çalışan görülmektedir. Saç kesmek hairdresser, yani kuaförün yaptığı iştir.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-9/soru-01.svg",
+        "imageWidth": 360,
+        "imageHeight": 430,
+        "imageAlt": "A person uses open scissors and a comb to cut the hair of a customer sitting in a salon chair. A large mirror and bottles are behind them."
+    },
+    {
+        "id": "e6-2-t9-02",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "In a class discussion, Mina listened to both Leo's and Ada's ideas. Then she chose Leo's idea. Ada said, 'You did not respect my right to speak because you did not choose my idea.' Which reply is correct?",
+        "options": [
+            "Mina must choose every idea she hears.",
+            "Only Leo had a right to speak because his idea was chosen.",
+            "Ada cannot speak again because Mina chose Leo's idea.",
+            "Mina can listen to both pupils and then choose one idea."
+        ],
+        "correct": 3,
+        "explanation": "Söz hakkına saygı göstermek, herkesin konuşmasına ve dinlenmesine fırsat vermektir; bütün fikirleri seçmek zorunda olmak değildir. Mina iki kişiyi de dinledikten sonra bir fikri seçebilir. Ada’nın fikrinin seçilmemesi, konuşma hakkının yok sayıldığı anlamına gelmez."
+    },
+    {
+        "id": "e6-2-t9-03",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Look at Ali's and Mia's holiday photos. Which sentence matches BOTH photos?",
+        "options": [
+            "Ali went fishing, and Mia went skiing.",
+            "Ali went skiing, and Mia went fishing.",
+            "Ali went fishing, and Mia went swimming.",
+            "Ali went camping, and Mia went skiing."
+        ],
+        "correct": 0,
+        "explanation": "Ali'nin elinde olta vardır ve kıyıda balık tutmaktadır: went fishing. Mia ise karlı yamaçta kayak yapmaktadır: went skiing. İki kişiyi ve etkinliklerini doğru eşleştiren tek cümle A'dır.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-9/soru-03.svg",
+        "imageWidth": 360,
+        "imageHeight": 650,
+        "imageAlt": "The upper panel shows Ali fishing from a grassy shore, holding a fishing rod with a fish hanging from the line. The lower panel shows Mia skiing down a snowy mountain using two poles and two skis."
+    },
+    {
+        "id": "e6-2-t9-04",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Yesterday, Ella looked for her book in this room. Where was the book?",
+        "options": [
+            "On the desk.",
+            "In the bag.",
+            "Under the desk.",
+            "Behind the lamp."
+        ],
+        "correct": 2,
+        "explanation": "Kitap masanın altındadır. Under the desk, masanın altında anlamına gelir. Masanın üstündeki lamba veya yanındaki çanta, kitabın bulunduğu yer değildir.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-9/soru-04.svg",
+        "imageWidth": 360,
+        "imageHeight": 465,
+        "imageAlt": "A closed blue book lies on the floor directly under the desk between its legs. A lamp stands on the desktop. A green school bag stands on the floor beside the desk on the right."
+    },
+    {
+        "id": "e6-2-t9-05",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "The eco-club says: 'Pack your food in a reusable box, not a bag. Bring a metal fork. Do not bring a plastic fork.'\nLook at the four sets. Which set already follows all the instructions, and which OTHER set needs only one extra item, with nothing removed or replaced?",
+        "options": [
+            "Complete: C. Add one item: A.",
+            "Complete: B. Add one item: D.",
+            "Complete: A. Add one item: B.",
+            "Complete: C. Add one item: D."
+        ],
+        "correct": 3,
+        "explanation": "C setinde uygun kutu ve metal çatal birlikte olduğundan hiçbir değişiklik gerekmez. D setinde uygun kutu vardır fakat çatal yoktur; yalnız bir metal çatal eklemek yeterlidir. A’ya metal çatal eklemek plastik çatalı ortadan kaldırmaz; plastik çatalın ayrıca çıkarılması gerekir. B’de ise çanta yerine kutu kullanılmalıdır. Soruda çıkarma veya değiştirme olmadan yalnız bir eşya eklenmesi istendiği için ikinci set D’dir.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-9/soru-05.svg",
+        "imageWidth": 360,
+        "imageHeight": 862,
+        "imageAlt": "Set A has a reusable lunch box and a plastic fork. Set B has a paper bag and a metal fork. Set C has a reusable lunch box and a metal fork. Set D has a reusable lunch box and no fork."
+    },
+    {
+        "id": "e6-2-t9-06",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "The cards show what the three visitors did YESTERDAY. Today, Leo does the same things. Amy watches from the path instead of touching the nest, and still takes her litter home. Ben takes his litter home today, but touches the nest. Who follows BOTH signs today?",
+        "options": [
+            "Leo and Amy.",
+            "Leo and Ben.",
+            "All three visitors.",
+            "Only Leo."
+        ],
+        "correct": 0,
+        "explanation": "Leo önceki gibi patikadan izleyip çöplerini götürdüğünden iki kurala da uyar. Amy bugün yuvaya dokunmak yerine patikadan izler ve çöplerini götürmeye devam eder; artık iki kurala da uyar. Ben çöplerini götürerek eski hatasını düzeltmiştir ama bugün yuvaya dokunarak diğer kuralı bozar. Bu nedenle bugün iki yönergeyi birlikte izleyenler Leo ve Amy’dir. Yalnız dünkü kartlara göre yanıt vermek veya Ben’in düzelttiği tek davranışı dikkate almak yeterli değildir.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-9/soru-06.svg",
+        "imageWidth": 360,
+        "imageHeight": 1256,
+        "imageAlt": "Two signs tell visitors to keep away from bird nests and take litter home. Leo watches the nest from the path and takes his litter home. Amy touches the nest and takes her litter home. Ben watches from the path but leaves litter on the ground."
+    },
+    {
+        "id": "e6-2-t9-07",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Read the workers' stories about yesterday.\nDentist: 'A child did not want to sit in my chair. I showed him my tools and talked to him. Then he sat down, and I checked his teeth before he left.'\nTailor: 'A woman wanted a dress, but she could not choose a colour. I showed her some small pieces of cloth. She chose blue. I needed more blue cloth to make her dress. It will arrive tomorrow, so she left without the dress.'\n\nWhich sentence correctly compares BOTH stories?",
+        "options": [
+            "Both workers finished their main work after the people chose what they wanted.",
+            "Neither worker could begin because the people still did not know what they wanted.",
+            "Both helped with the people's first problem, but only the dentist finished the main work that day.",
+            "The dentist helped with the child's first problem, but the tailor did not help the woman choose."
+        ],
+        "correct": 2,
+        "explanation": "Çocuğun ilk sorunu koltuğa oturmak istememesidir; diş hekimi konuşup araçlarını gösterince çocuk oturur ve diş kontrolü tamamlanır. Kadının ilk sorunu renk seçememesidir; terzinin gösterdiği örneklerden sonra maviyi seçer. Ancak yeterli mavi kumaş olmadığı için elbise o gün tamamlanmaz. İki çalışan da ilk soruna yardımcı olmuştur; asıl işi o gün yalnız diş hekimi bitirmiştir."
+    },
+    {
+        "id": "e6-2-t9-08",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Look at Asli's diary.\nNora says, 'Asli missed the sun, so she did not enjoy 15 July.'\nBen says, 'She missed the games on 16 July, so she liked 15 July more.'\n\nWhich reply uses only what the diary shows?",
+        "options": [
+            "She enjoyed activities on both days, but we cannot tell which day she liked more.",
+            "She enjoyed only 16 July; missing the sun shows that the games were not fun.",
+            "She enjoyed both days, and missing the games shows that she liked 15 July more.",
+            "She enjoyed both days, and loving the birds shows that she liked 16 July more."
+        ],
+        "correct": 0,
+        "explanation": "15 Temmuz'da çok güldüğünü, 16 Temmuz'da kuşları çok sevdiğini yazar; iki günde de keyif aldığı etkinlik vardır. Bir şeyi özlemek o gün hiç eğlenmediği anlamına gelmez. Oyunları özlemesi veya kuşları sevmesi de iki gün arasında kesin bir beğeni sıralaması vermez. Bu nedenle yalnız A, hem olumlu duyguları hem de karşılaştırma bilgisinin eksikliğini korur.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-9/soru-08.svg",
+        "imageWidth": 360,
+        "imageAlt": "Asli’s holiday diary shows two days with the same three family members. On 15 July rain falls outside their tent while they play a board game inside. The captions say: We played games here. I laughed a lot. I missed the sun. On 16 July the sun shines and the family walks through a forest with birds. The captions say: We walked here. I loved the birds. I missed our games in the tent.",
+        "imageHeight": 1077
+    },
+    {
+        "id": "e6-2-t9-09",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Look at Ece's library visit last Friday. She wrote this note:\n'Ada Brown wrote the story. Nora went to the old station because her brother asked her to meet him there. I read the ending in the library.'\n\nWhat should Ece change in her note?",
+        "options": [
+            "Change the story's writer to the boy because he wrote the note. Keep the other two sentences.",
+            "Keep the writer and reading place. Say Nora only thought the note was from her brother; it was for the boy's sister.",
+            "Keep the writer and Nora's reason. Change the reading place to home because Nora went home.",
+            "Keep the writer and reading place. Say Nora's brother asked her to meet him at home, not at the station."
+        ],
+        "correct": 1,
+        "explanation": "Ansiklopedi kitabın yazarını Ada Brown olarak verir. Öykünün içindeki notu ise istasyondaki çocuk kendi kız kardeşi için yazmıştır. Nora notun ağabeyinden/erkek kardeşinden geldiğini sanmıştır; bu, gerçekten onun yazdığı ya da Nora'yı çağırdığı anlamına gelmez. Öyküde Nora'nın eve gitmesi, okur Ece'nin eve gittiği anlamına da gelmez. Ece kitabı ödünç alamasa da kütüphanede sonunu okur. Bu nedenle kitap yazarı ile Ece'nin okuma yeri korunmalı, yalnız Nora'nın kesin bilgi gibi yazılan gerekçesi düzeltilmelidir.",
+        "imageUrl": "/grade6/ingilizce/term-2/test-9/soru-09.svg",
+        "imageWidth": 360,
+        "imageAlt": "Last Friday Ece’s homework asked: Who wrote The Blue Key? Where did Nora find her brother? In the library, Ece reads an open encyclopaedia with the entry: Ada Brown wrote The Blue Key. The librarian says: The storybook is on the shelf. You can read it here, but you cannot borrow it today. In the final panel Ece remains at a library reading table with The Blue Key open to its last page. The last page says: Nora saw a note: “Meet me at the old station.” She thought it was from her brother. At the station, a boy said, “I wrote that for my sister. Your brother went home.” Nora went home. Her brother opened the door. Ece’s note says: Now I have both answers.",
+        "imageHeight": 2118
+    },
+    {
+        "id": "e6-2-t9-10",
+        "subject": "ingilizce",
+        "term": 2,
+        "prompt": "Read about a class election. Each pupil has one vote, and each choice must be secret.\nAda's campaign poster is green. Ben's is orange. Everyone knows that a green voting paper means Ada and an orange one means Ben. Pupils fold their papers. Mert puts a tick beside each voter's name on a public list. Each tick has the SAME colour as that pupil's paper. Everyone sees the list, but it has no candidates' names.\nNora says, 'The folded papers kept our choices secret.'\nCan says, 'Cover the posters now. Then the old choices will be secret.'\nThe teacher stops this vote and plans a NEW one. Which reply explains the problem and gives a secret new vote?",
+        "options": [
+            "The folded papers kept choices secret. Cover the posters and use the two paper colours again.",
+            "The list showed choices, but covering the posters makes them secret again. Use one paper colour next time.",
+            "The list showed choices, and pupils already know them. Next time, use one paper colour but write each pupil's choice on the list.",
+            "The list showed choices, and pupils already know them. Next time, use one paper colour, write choices in private and tick only who voted."
+        ],
+        "correct": 3,
+        "explanation": "Aday adlarının listede yazılmaması gizliliği sağlamaz. Herkes yeşilin Ada, turuncunun Ben anlamına geldiğini bildiği için öğrenci adlarının yanındaki renkli işaretlerden tercihleri çıkarabilir. Katlanmış kâğıtlar bu bilgi yolunu kapatmaz. Afişleri sonradan örtmek de öğrenilmiş tercihleri unutturmaz. Yeni seçimde tüm oy kâğıtları aynı renk olmalı, tercihler gizli yapılmalı ve listede yalnız oy kullanılıp kullanılmadığı kaydedilmelidir; aday tercihi yazılmamalıdır."
+    }
 ]
 }
 };
