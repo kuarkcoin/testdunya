@@ -3641,5 +3641,175 @@ export const matematikData: SubjectData = {
         "explanation": "İlk tur soldan sağa yapılınca 1, 3, 5, 7, 9, 11 kalır. İkinci tur sağdan sola başlar: 11 bırakılır, 9 çıkarılır, 7 bırakılır, 5 çıkarılır, 3 bırakılır, 1 çıkarılır; kalanlar soldan sağa 3, 7, 11’dir. Üçüncü tur soldan sağa yapılır ve 3 ile 11 kalır. Dördüncü tur sağdan sola başladığından 11 bırakılır, 3 çıkarılır. Son kart 11’dir; her turda saymanın ve yönün yenilendiği unutulmamalıdır."
       }
     ],
+    "test8": [
+    {
+        "id": "m6-2-t8-01",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Görseldeki fiyat etiketinde n, alınan defter sayısını gösteriyor. n = 4 olduğunda toplam ücret kaç TL olur?",
+        "options": [
+            "12",
+            "16",
+            "20",
+            "24"
+        ],
+        "correct": 2,
+        "explanation": "Etiketteki 5n ifadesinde n yerine 4 yazılır: 5 × 4 = 20 TL.",
+        "imageUrl": "/grade6/matematik/term-2/test-8/soru-01.svg",
+        "imageAlt": "Defter standında toplam ücret 5n TL olarak gösteriliyor. n defter sayısıdır.",
+        "imageWidth": 360,
+        "imageHeight": 300
+    },
+    {
+        "id": "m6-2-t8-02",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Boyalı dikdörtgen eş birim karelerden oluşuyor. Dikdörtgenin alanı kaç cm²’dir?",
+        "options": [
+            "7",
+            "12",
+            "14",
+            "24"
+        ],
+        "correct": 1,
+        "explanation": "3 satırın her birinde 4 birim kare vardır. Alan 3 × 4 = 12 cm² olur.",
+        "imageUrl": "/grade6/matematik/term-2/test-8/soru-02.svg",
+        "imageAlt": "Üç satır ve dört sütundan oluşan on iki eş kare boyalıdır. Her küçük karenin alanı 1 cm².",
+        "imageWidth": 360,
+        "imageHeight": 350
+    },
+    {
+        "id": "m6-2-t8-03",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Örüntüde her adımda önceki adıma 2 kare ekleniyor. Görselde ilk üç adım verilmiştir. Beşinci adımda kaç kare bulunur?",
+        "options": [
+            "8",
+            "9",
+            "12",
+            "10"
+        ],
+        "correct": 3,
+        "explanation": "Kare sayıları 2, 4, 6, 8, 10 şeklinde ilerler. Üçüncü adımdan beşinci adıma iki kez 2 eklenir: 6 + 2 + 2 = 10.",
+        "imageUrl": "/grade6/matematik/term-2/test-8/soru-03.svg",
+        "imageAlt": "Birinci adımda 2, ikinci adımda 4, üçüncü adımda 6 sarı kare yan yana sıralanmıştır.",
+        "imageWidth": 360,
+        "imageHeight": 410
+    },
+    {
+        "id": "m6-2-t8-04",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Görseldeki yönergeler yukarıdan aşağıya birer kez uygulanıyor. Sonuç kaçtır?",
+        "options": [
+            "10",
+            "6",
+            "18",
+            "22"
+        ],
+        "correct": 0,
+        "explanation": "Önce 18 ÷ 3 = 6 bulunur. Sonra 4 eklenir: 6 + 4 = 10.",
+        "imageUrl": "/grade6/matematik/term-2/test-8/soru-04.svg",
+        "imageAlt": "Girdi 18. Önce 3’e böl, sonra 4 ekle. Kutular aşağı yönlü oklarla bağlanmıştır.",
+        "imageWidth": 360,
+        "imageHeight": 420
+    },
+    {
+        "id": "m6-2-t8-05",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Dikdörtgen çerçevenin dış ölçüleri görselde verilmiştir. Sarı çerçevenin kalınlığı dört kenarda da 1 cm’dir. Sarı bölgenin alanı kaç cm²’dir?",
+        "options": [
+            "18",
+            "28",
+            "32",
+            "48"
+        ],
+        "correct": 2,
+        "explanation": "Dış dikdörtgenin alanı 10 × 8 = 80 cm²’dir. İç boşlukta her boyuttan iki kenarın payı çıkarılır: genişlik 10 − 2 = 8 cm, yükseklik 8 − 2 = 6 cm. Boşluğun alanı 48 cm² olduğundan çerçeve 80 − 48 = 32 cm²’dir.",
+        "imageUrl": "/grade6/matematik/term-2/test-8/soru-05.svg",
+        "imageAlt": "Dış dikdörtgen 10 cm genişlikte ve 8 cm yükseklikte. İçte dikdörtgen boşluk var; dört kenarın her birinde sarı çerçeve 1 cm kalınlıkta.",
+        "imageWidth": 360,
+        "imageHeight": 430
+    },
+    {
+        "id": "m6-2-t8-06",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bütün biletler görseldeki tarifeye göre satılıyor. Bir yetişkin ile bir çocuk için toplam kaç TL ödenir?",
+        "options": [
+            "16",
+            "20",
+            "24",
+            "28"
+        ],
+        "correct": 1,
+        "explanation": "Üç çocuk bileti, üç yetişkin biletinden toplam 3 × 4 = 12 TL ucuzdur. Beş yetişkin bileti olsaydı 48 + 12 = 60 TL ödenirdi. Bir yetişkin bileti 60 ÷ 5 = 12 TL, çocuk bileti 12 − 4 = 8 TL’dir. Bir yetişkin ve bir çocuk toplam 20 TL öder.",
+        "imageUrl": "/grade6/matematik/term-2/test-8/soru-06.svg",
+        "imageAlt": "Yetişkin bileti a TL, çocuk bileti a eksi 4 TL. İndirim yok. İki yetişkin ve üç çocuk bileti toplam 48 TL.",
+        "imageWidth": 360,
+        "imageHeight": 490
+    },
+    {
+        "prompt": "Dikdörtgen biçimindeki bahçede, şekildeki gibi kenarlara paralel iki yol ve bir dik üçgen havuz vardır. Yollardan biri bahçeyi soldan sağa, diğeri yukarıdan aşağıya kesintisiz geçer. Her yolun genişliği kendi boyunca sabittir. Havuz yollara değmemektedir. Yollar ve havuz dışında kalan çim alan 192 m² olduğuna göre düşey yolun x ile gösterilen genişliği kaç metredir?",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "correct": 1,
+        "explanation": "Bahçenin tüm alanı 20 × 14 = 280 m²’dir. Dik üçgen havuzun alanı 6 × 4 ÷ 2 = 12 m² olduğundan yolların kapladığı toplam alan 280 − 12 − 192 = 76 m²’dir. Yatay yolun alanı 20 × 2 = 40 m²’dir. Geriye düşey yolun yatay yol dışında kalan iki parçası kalır; toplam alanları 76 − 40 = 36 m²’dir. Bu parçaların toplam uzunluğu 14 − 2 = 12 m, ortak genişliği x’tir. Dolayısıyla x = 36 ÷ 12 = 3 m olur. Kontrol: iki yolun toplam alanı 40 + 14 × 3 − 2 × 3 = 76 m²’dir. Kesişim bölgesi yalnızca bir kez sayılmalıdır.",
+        "imageUrl": "/grade6/matematik/term-2/test-8/soru-07.svg",
+        "imageWidth": 360,
+        "imageHeight": 550,
+        "imageAlt": "Bahçe 20 m genişliğinde ve 14 m yüksekliğinde dikdörtgen. Soldan sağa geçen gri yol 2 m genişlikte; yukarıdan aşağıya geçen gri yolun genişliği x. Sol üst köşedeki mavi dik üçgen havuzun dik kenarları 6 m ve 4 m. Havuz hiçbir yola değmiyor. Yeşil alanlar çimdir.",
+        "id": "m6-2-t8-07",
+        "subject": "matematik",
+        "term": 2
+    },
+    {
+        "prompt": "Çevresi 84 cm olan dikdörtgen biçimindeki bir kâğıt, uzun kenarına dik iki düz kesimle üç eş dikdörtgene ayrılıyor. Kesim sırasında kâğıt kaybı olmuyor. Üç küçük dikdörtgenin çevreleri toplamı 132 cm olduğuna göre başlangıçtaki kâğıdın alanı kaç santimetrekaredir?",
+        "options": [
+            "360",
+            "240",
+            "396",
+            "504"
+        ],
+        "correct": 0,
+        "explanation": "Küçük parçaların çevrelerini toplarken başlangıçtaki dış sınırın tamamı bir kez sayılır. Her kesim ise iki yeni kenar oluşturur. İki kesim de başlangıçtaki kısa kenar boyunca yapıldığından çevreler toplamındaki 132 − 84 = 48 cm artış, kısa kenarın dört katıdır. Kısa kenar 48 ÷ 4 = 12 cm olur. Başlangıçtaki iki komşu kenarın toplamı 84 ÷ 2 = 42 cm olduğundan uzun kenar 42 − 12 = 30 cm’dir. Alan 30 × 12 = 360 cm²’dir. Kontrol: her küçük dikdörtgen 10 cm × 12 cm olup çevresi 44 cm’dir; üç çevrenin toplamı 132 cm olur.",
+        "id": "m6-2-t8-08",
+        "subject": "matematik",
+        "term": 2
+    },
+    {
+        "prompt": "Bir algoritma, soldan sağa sıralanmış dört sayı kartını şu şekilde işliyor:\n• Başlangıçta toplam 0 yapılıyor.\n• Her karttaki sayı bu toplama ekleniyor ve yeni toplam ayrı bir sonuç satırına yazılıyor.\n• Dört kart da işlendiğinde işlem bitiyor.\nİlk kart satırı sırasıyla a, 4, b, 6 sayılarından oluşuyor. a ve b pozitif tam sayılardır. Bu satır işlendiğinde sonuç satırının son sayısı 28, sonuç satırındaki dört sayının toplamı 76 oluyor. Daha sonra sonuç satırındaki dört sayı, sıraları değiştirilmeden yeni kart satırı olarak kullanılıyor ve algoritma toplam 0’dan başlatılarak yeniden uygulanıyor. İkinci sonuç satırındaki dört sayının toplamı kaçtır?",
+        "options": [
+            "104",
+            "133",
+            "152",
+            "161"
+        ],
+        "correct": 3,
+        "explanation": "İlk sonuç satırının son sayısı 28’dir. Bu sayı, bir önceki toplama son karttaki 6 eklenerek bulunduğundan üçüncü sonuç 28 − 6 = 22’dir. İlk iki sonucun toplamı 76 − 28 − 22 = 26’dır. İkinci sonuç, ilk sonuca ikinci karttaki 4 eklenerek bulunduğu için bu iki sayının farkı 4’tür. Toplamı 26 ve farkı 4 olan sayılar 11 ile 15’tir: ilk sayı (26 − 4) ÷ 2 = 11 olur. Böylece ilk sonuç satırı 11, 15, 22, 28’dir. Bu satır yeni kartlar olarak işlendiğinde toplamlar sırasıyla 11; 11 + 15 = 26; 26 + 22 = 48; 48 + 28 = 76 olur. İkinci sonuç satırının toplamı 11 + 26 + 48 + 76 = 161’dir. Kontrol için başlangıç kartları 11, 4, 7, 6’dır. İkinci uygulama, başlangıç kartlarına değil ilk sonuç satırındaki sayılara yapılır.",
+        "id": "m6-2-t8-09",
+        "subject": "matematik",
+        "term": 2
+    },
+    {
+        "prompt": "Bir sayı örüntüsünün 1. adımı yalnızca 2 sayısından oluşuyor. Sonraki adım oluşturulurken her sayının yerine, soldan sağa sıra korunarak önce o sayının 1 fazlası, ardından 3 fazlası yazılıyor. Böylece 2. adım 3, 5; 3. adım 4, 6, 6, 8 oluyor. Bu kurala göre 10. adımdaki son otuz iki sayının toplamı kaçtır?",
+        "options": [
+            "640",
+            "704",
+            "768",
+            "832"
+        ],
+        "correct": 2,
+        "explanation": "Her sayı beş adım sonra 2 × 2 × 2 × 2 × 2 = 32 sayı üretir. Sıra korunduğundan 10. adımın son 32 sayısı, 5. adımın son sayısından gelir. Her adımın son sayısı öncekinin 3 fazlasıdır: 2, 5, 8, 11, 14. Bu nedenle başlangıcı 14 olan grubun beş kez genişlemesi izlenir. Bir grubun toplamı S, eleman sayısı k ise bir sonraki toplam 2S + 4k olur; çünkü her eski n sayısı (n + 1) ve (n + 3) üretir. Toplamlar sırasıyla 14; 2 × 14 + 4 = 32; 2 × 32 + 8 = 72; 2 × 72 + 16 = 160; 2 × 160 + 32 = 352; 2 × 352 + 64 = 768 olur. Son grubun 32 elemanının toplamı 768’dir.",
+        "id": "m6-2-t8-10",
+        "subject": "matematik",
+        "term": 2
+    }
+],
   },
 };

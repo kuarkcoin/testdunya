@@ -789,3 +789,24 @@ Rota `/6-sinif/turkce/2-donem-test-4`; kimlikler `t6-2-t4-01`–`t6-2-t4-10`. SV
 İki son SVG’nin 238 ve 360 px genişliğindeki dört PNG’si bağımsız olarak incelendi. Yazı kırpılması veya çakışma yoktur; alternatif metinler işaret ve pano bilgileriyle uyumludur. Q3’ün alternatif metnine üst/alt sıra yerleşimi eklendi. Tarayıcı erişim reddi yeniden denenmedi; native PNG ve HTTP denetimleri tarayıcı etkileşim testi değildir.
 
 **29 Ekim 2026 teknik doğrulama:** Son kaynakla TypeScript, tam Next.js 15.5.28 üretim derlemesi ve proje SEO/okuma/resimli oyun denetimleri geçti; 421 statik sayfa üretildi. Altıncı sınıf rota kontrolü 96 adresi ve 91 test / 910 soru toplamını doğruladı. Önceki 900 soru veri eşitliğiyle, 533 SVG Git blob kimliğiyle değişmeden korundu. Yerel üretim sunucusunda yeni Test 4, önceki Test 3, birinci dönem Test 1, ders/ana sayfa, sitemap ve iki SVG HTTP 200; henüz olmayan Test 5 ve geçersiz test adresi 404 verdi. SVG yanıtları kaynaklarla byte düzeyinde aynıydı; on soru kimliği ve ilk sorunun dört seçeneği sunulan HTML’de doğrulandı. Sunucu kapatıldı. Tarayıcı etkileşimi ve production aktarımı yapılmadı.
+
+## Matematik — 2. dönem Test 8 (orta; dengeli güçlük dağılımı)
+
+Kullanıcının istediği sıradaki test: **7 anlamlı SVG + 3 metin sorusu**. Genel kategori Orta; Q1–2 çok kolay, Q3–4 kolay, Q5–6 orta, Q7–8 zor, Q9–10 çok zor editoryal hedefindedir. Bunlar öğrenci verileriyle kalibre edilmiş güçlük ölçümleri değildir. Kapsam önceki kullanıcı kaynağı `mat6.pdf` içindeki MAT.6.2.1–3 ve MAT.6.4.1–3 ile sınırlıdır; tam dönem müfredatı veya resmî sınav iddiası yoktur.
+
+| Soru | Yeni alıştırma / muhakeme | Hedef / eşleme |
+| --- | --- | --- |
+| 1 | Fiyat ifadesinde verilen değeri yerine koyma | Çok kolay; MAT.6.2.1 |
+| 2 | Birim kareleri satır-sütunla sayma | Çok kolay; MAT.6.4.3 |
+| 3 | Görsel artış kuralını iki adım sürdürme | Kolay; MAT.6.2.2 |
+| 4 | Açık iki işlemli akışı uygulama | Kolay; MAT.6.2.3 |
+| 5 | Çerçevenin iki taraflı kalınlığından iç boşluğu bulma | Orta; MAT.6.4.3 |
+| 6 | Bilet türleri arasındaki farktan eş değer beş bilet toplamını kurma | Orta; MAT.6.2.1 |
+| 7 | Çapraz yolların kesişimini tek sayma ve üçgen havuzu çıkarma | Zor; MAT.6.2.1, MAT.6.4.2–3 |
+| 8 | İki kesimin oluşturduğu dört yeni sınırdan boyutları geri bulma | Zor; MAT.6.2.1, MAT.6.4.3 |
+| 9 | Kısmi toplam kayıtlarını iki toplu bilgiden yeniden kurma ve algoritmaya tekrar girdi yapma | Çok zor; MAT.6.2.1, MAT.6.2.3 |
+| 10 | Yerine yazma örüntüsünde son grubun atasını ve toplam değişimini izleme | Çok zor; MAT.6.2.2–3 |
+
+Kimlikler `m6-2-t8-01`–`m6-2-t8-10`, rota `/6-sinif/matematik/2-donem-test-8`, görseller `public/grade6/matematik/term-2/test-8/` altındadır. Q1–7 şekilli; Q8–10 metindir. Cevap anahtarı **C B D A C B B A D C**. Görseller 360 px tasarım genişliğinde; 238/360 px görüntüler ve erişilebilir açıklamalar denetlenir. Basit kazanımların ortaklığı korunmakla birlikte önceki soru metinleri kopyalanmaz. İlk Q7 dört alanlı dikdörtgen taslağı ve Q9 ters dallanma taslağı benzer yöntemler nedeniyle yayımlanmadan değiştirilmiştir.
+
+Önceki **91 test / 910 soru / 535 SVG** korunur. Yeni toplam **92 test / 920 soru / 542 SVG**; ikinci dönem matematik **8 test / 80 soru** olur. Bağımsız kör çözüm, aritmetik ve ölçülü koordinat kontrolleri, tüm 14 PNG'nin piksel incelemesi, veri/koruma, TypeScript, tam derleme, SEO/rota ve native HTTP denetimleri uygulanır. Tarayıcı erişimine ilişkin önceki ret korunur; tarayıcı etkileşimi test edilmez. Ortak arayüz ve paket kilidi değişmez; production'a aktarım yapılmaz.
