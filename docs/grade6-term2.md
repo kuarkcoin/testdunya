@@ -829,3 +829,22 @@ Kimlikler `m6-2-t8-01`–`m6-2-t8-10`, rota `/6-sinif/matematik/2-donem-test-8`,
 | 10 | Yeniden numaralanan sıraların ters sıra eşlemesi | MAT.6.2.2, MAT.6.2.3 |
 
 Önceki sorular ve SVG dosyaları aynen korunur. Görseller 238 ve 360 px boyutta piksel denetiminden geçirilir; tarayıcı kullanılmaz.
+
+## Matematik — 2. dönem Test 10 (dengeli)
+
+10 özgün alıştırma: 7 anlamlı SVG ve 3 metin sorusu. Genel etiket Orta. Q1–2 çok kolay, Q3–4 kolay, Q5–6 orta, Q7–8 zor, Q9–10 çok zor editoryal hedefindedir; öğrenci verileriyle kalibrasyon yapılmamıştır. Kapsam kullanıcının sağladığı `mat6.pdf` içindeki MAT.6.2.1–3 ve MAT.6.4.1–3 ile sınırlıdır; tam dönem müfredatı veya resmî sınav iddiası yoktur.
+
+| Soru | Beceri | Çıktı |
+| --- | --- | --- |
+| 1 | Uzunluk dönüşümüyle kare çevresi | MAT.6.4.1 |
+| 2 | Dik üçgen alanı | MAT.6.4.2 |
+| 3 | Sabit artışlı örüntüyü geriye yürütme | MAT.6.2.2 |
+| 4 | Tek/çift dalını yeni sayıya tekrar uygulama | MAT.6.2.3 |
+| 5 | Eş yükseklikli dikdörtgenlerin alan farkı | MAT.6.2.1, MAT.6.4.3 |
+| 6 | İki tartımın toplamından paket çifti | MAT.6.2.1 |
+| 7 | Ortak kenarı çevreden ayırma, birleşik alan ve birim dönüşümü | MAT.6.2.1, MAT.6.4.1–3 |
+| 8 | İleri/geri adımları belirleyip adım uzunluğunu değiştirme | MAT.6.2.1 |
+| 9 | Pul değişim algoritmasının bütün geçerli sıralarda sonlanması | MAT.6.2.1, MAT.6.2.3 |
+| 10 | Satır renklerinin farkını ardışık üç örüntü adımında yorumlama | MAT.6.2.2, MAT.6.2.1 |
+
+Q1–7 şekilli, Q8–10 metindir. Cevap anahtarı **D A B C A D B C B C**. Kimlikler `m6-2-t10-01`–`m6-2-t10-10`; rota `/6-sinif/matematik/2-donem-test-10`. Önceki 930 soru ve 549 SVG korunur. Yeni toplam 94 test, 940 soru ve 556 SVG olur. Önceki testlerle aynı soru metinleri kullanılmaz; temel kazanımlar doğal olarak ortaktır. Görseller 238/360 px boyutlarında incelenir. Kör çözüm, matematik/geometri, koruma, TypeScript, tam derleme, SEO/rota ve native HTTP kontrolleri uygulanır; önceki tarayıcı erişim reddi korunur. Production'a aktarım yapılmaz.

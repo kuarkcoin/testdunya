@@ -3981,5 +3981,175 @@ export const matematikData: SubjectData = {
         "term": 2
     }
 ],
+    test10: [
+    {
+        "id": "m6-2-t10-01",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir kenarı 1 dm olan karenin çevresi kaç cm’dir?",
+        "options": [
+            "4",
+            "10",
+            "20",
+            "40"
+        ],
+        "correct": 3,
+        "explanation": "1 dm = 10 cm’dir. Karenin dört eş kenarı vardır; çevresi 4 × 10 = 40 cm’dir.",
+        "imageUrl": "/grade6/matematik/term-2/test-10/soru-01.svg",
+        "imageAlt": "Karenin alt kenarı 1 dm olarak gösterilmiş.",
+        "imageWidth": 360,
+        "imageHeight": 310
+    },
+    {
+        "id": "m6-2-t10-02",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Dik üçgenin alanı kaç cm²’dir?",
+        "options": [
+            "12",
+            "10",
+            "24",
+            "48"
+        ],
+        "correct": 0,
+        "explanation": "Dik kenarlar taban ve ona ait yüksekliktir. Alan 6 × 4 ÷ 2 = 12 cm² olur.",
+        "imageUrl": "/grade6/matematik/term-2/test-10/soru-02.svg",
+        "imageAlt": "Dik üçgenin yatay dik kenarı 6 cm, düşey dik kenarı 4 cm. Dik açı işaretli.",
+        "imageWidth": 360,
+        "imageHeight": 320
+    },
+    {
+        "id": "m6-2-t10-03",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Bir örüntünün her yeni adımında bir önceki adıma 4 boncuk ekleniyor. Dördüncü adımda 21 boncuk olduğuna göre birinci adımda kaç boncuk vardır?",
+        "options": [
+            "5",
+            "9",
+            "13",
+            "17"
+        ],
+        "correct": 1,
+        "explanation": "Birinci adımdan dördüncüye üç geçiş vardır. Toplam 3 × 4 = 12 boncuk eklenmiştir. Birinci adımdaki sayı 21 − 12 = 9’dur. Kontrol: 9, 13, 17, 21.",
+        "imageUrl": "/grade6/matematik/term-2/test-10/soru-03.svg",
+        "imageAlt": "Dört adım kutusu yukarıdan aşağıya sıralı; ilk üçünde soru işareti, dördüncüde 21 var. Her geçişte 4 ekleniyor.",
+        "imageWidth": 360,
+        "imageHeight": 420
+    },
+    {
+        "id": "m6-2-t10-04",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Makine, her çalıştırılışında sayı çiftse onu 2’ye bölüyor; sayı tekse ona 3 ekliyor. Başlangıç sayısı 7’dir. Makine art arda iki kez çalıştırılırsa son sayı kaç olur?",
+        "options": [
+            "10",
+            "7",
+            "5",
+            "13"
+        ],
+        "correct": 2,
+        "explanation": "İlk çalıştırmada 7 tek olduğu için 3 eklenir ve 10 olur. İkinci çalıştırmada yeni sayı 10 çift olduğu için 2’ye bölünür: 10 ÷ 2 = 5.",
+        "imageUrl": "/grade6/matematik/term-2/test-10/soru-04.svg",
+        "imageAlt": "Makine kuralı: Çift sayıyı 2’ye böl; tek sayıya 3 ekle.",
+        "imageWidth": 360,
+        "imageHeight": 310
+    },
+    {
+        "id": "m6-2-t10-05",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Yan yana duran iki dikdörtgenin yükseklikleri eşittir. Sağdaki dikdörtgenin alanı soldakinden 24 cm² fazladır. Soldaki dikdörtgenin alanı kaç cm²’dir?",
+        "options": [
+            "40",
+            "24",
+            "64",
+            "104"
+        ],
+        "correct": 0,
+        "explanation": "Eş yükseklikteki şekillerin genişlik farkı 8 − 5 = 3 cm’dir. Alan farkı bu 3 cm genişlikteki şeridin alanına eşittir. Ortak yükseklik 24 ÷ 3 = 8 cm’dir. Soldaki alan 5 × 8 = 40 cm² olur.",
+        "imageUrl": "/grade6/matematik/term-2/test-10/soru-05.svg",
+        "imageAlt": "Soldaki dikdörtgenin genişliği 5 cm, sağdakinin 8 cm. İkisi aynı taban çizgisi üzerinde, eş yükseklikte; ortak yükseklik h ile belirtilmiş.",
+        "imageWidth": 360,
+        "imageHeight": 350
+    },
+    {
+        "id": "m6-2-t10-06",
+        "subject": "matematik",
+        "term": 2,
+        "prompt": "Aynı harfi taşıyan paketlerin kütleleri eşittir. İki tartımın sonuçları görselde verilmiştir. Bir A paketi ile bir B paketinin toplam kütlesi kaç kg’dır?",
+        "options": [
+            "14",
+            "15",
+            "18",
+            "16"
+        ],
+        "correct": 3,
+        "explanation": "İki tartım birlikte 3 A ve 3 B paketi içerir. Toplam kütle 22 + 26 = 48 kg’dır. Bu, üç tane A + B grubunun kütlesidir. Bir grubun kütlesi 48 ÷ 3 = 16 kg’dır. Kontrol: A = 10, B = 6 için 10 + 12 = 22 ve 20 + 6 = 26 olur.",
+        "imageUrl": "/grade6/matematik/term-2/test-10/soru-06.svg",
+        "imageAlt": "İlk tartım A artı B artı B eşittir 22 kg. İkinci tartım A artı A artı B eşittir 26 kg.",
+        "imageWidth": 360,
+        "imageHeight": 300
+    },
+    {
+        "prompt": "Şekildeki karton, bir dikdörtgen ile onun üst kenarını taban olarak kullanan bir üçgenden oluşuyor. İki parça yalnız ortak kenarlarında birleşiyor. Kartonun dış çevresi 64 cm'dir.\n\nKartonun bir yüzünün alanı kaç dm²'dir?",
+        "options": [
+            "1,92",
+            "2,40",
+            "2,88",
+            "3,12"
+        ],
+        "correct": 1,
+        "explanation": "Üçgen ile dikdörtgenin ortak 12 cm'lik kenarı dış çevrede sayılmaz. Dış çevrede üçgenin iki eğik kenarı, dikdörtgenin alt kenarı ve iki yan kenarı vardır. Dikdörtgenin iki yan kenarının toplamı 64 − 10 − 10 − 12 = 32 cm, bir yan kenarı 16 cm'dir. Dikdörtgenin alanı 12 × 16 = 192 cm², üçgenin alanı 12 × 8 ÷ 2 = 48 cm²'dir. Toplam 240 cm² = 2,40 dm² olur.",
+        "id": "m6-2-t10-07",
+        "subject": "matematik",
+        "term": 2,
+        "imageUrl": "/grade6/matematik/term-2/test-10/soru-07.svg",
+        "imageAlt": "Ev biçimli karton: altta dikdörtgen, üstte üçgen. Ortak taban 12 cm, üçgenin iki eğik kenarı 10 cm, dik yüksekliği 8 cm. Dış çevre 64 cm.",
+        "imageWidth": 360,
+        "imageHeight": 590
+    },
+    {
+        "prompt": "Düz bir çizgi üzerinde hareket eden bir robotun her ileri adımı 7 cm, her geri adımı 4 cm'dir. Robot toplam 17 adım attığında başlangıç noktasının 64 cm ilerisinde duruyor.\n\nRobot başlangıç noktasına geri getirildikten sonra aynı ileri ve geri adımları aynı sırayla yeniden atıyor. Ancak bu kez her geri adımı 6 cm oluyor; ileri adımları değişmiyor. Robot ikinci denemede başlangıç noktasının kaç santimetre ilerisinde durur?",
+        "options": [
+            "44",
+            "59",
+            "54",
+            "74"
+        ],
+        "correct": 2,
+        "explanation": "17 adımın hepsi ileri olsaydı robot 17 × 7 = 119 cm ilerlerdi. Bir ileri adım yerine bir geri adım atmak, son konumu 7 + 4 = 11 cm azaltır. Gerçekte azalma 119 − 64 = 55 cm olduğundan 55 ÷ 11 = 5 geri adım, dolayısıyla 12 ileri adım vardır. İkinci denemede her geri adım 2 cm uzadığı için son konum 5 × 2 = 10 cm daha geridedir: 64 − 10 = 54 cm. Doğrudan kontrol: 12 × 7 − 5 × 6 = 54.",
+        "id": "m6-2-t10-08",
+        "subject": "matematik",
+        "term": 2
+    },
+    {
+        "prompt": "Bir kutuda başlangıçta 14 kırmızı ve 11 mavi pul vardır. Şu işlemlerden biri, gerekli pullar kutuda varsa seçilip uygulanıyor:\n• 3 kırmızı pul kutudan çıkarılıp kutuya 1 mavi pul konuyor.\n• 2 mavi pul kutudan çıkarılıp kutuya 1 kırmızı pul konuyor.\n\nHer işlemden sonra aynı kuralla devam ediliyor. İki işlem de uygulanamaz olduğunda duruluyor. Her pul değiştirme, tek işlem sayılıyor.\n\nİşlemler hangi sırayla seçilirse seçilsin, durulana kadar toplam kaç işlem yapılır?",
+        "options": [
+            "14",
+            "16",
+            "15",
+            "17"
+        ],
+        "correct": 1,
+        "explanation": "Her işlem toplam pul sayısını azalttığı için süreç durur. Sonunda kırmızı sayısı r en fazla 2, mavi sayısı m en fazla 1'dir. İlk işlem a kez, ikinci işlem b kez yapılmış olsun. Kırmızıları sayarsak 14 + b = 3a + r; mavileri sayarsak 11 + a = 2b + m olur. İlk eşitliği iki katına çıkarıp ikinciyle birleştirince 39 = 5a + 2r + m bulunur. 2r + m, 0 ile 5 arasındadır. 39'dan bu aralıktaki bir sayı çıkarıldığında 5'in katı olan tek sonuç 35'tir; bu yüzden a = 7 ve 2r + m = 4'tür. r en fazla 2, m en fazla 1 olduğundan r = 2 ve m = 0 olur. Kırmızıları saydığımız eşitlikten 14 + b = 21 + 2, yani b = 9 bulunur. Toplam 7 + 9 = 16 işlem yapılır. Bu hesap hiçbir işlem sırası seçmediği için bütün geçerli sıralar için geçerlidir.",
+        "id": "m6-2-t10-09",
+        "subject": "matematik",
+        "term": 2
+    },
+    {
+        "prompt": "Bir şekil örüntüsünün 1. adımında yalnızca 1 karelik bir satır vardır. Her yeni adımda önceki şeklin altına yeni bir satır eklenir. Eklenen her satırda, bir üstündeki satırdan 2 fazla kare bulunur. Böylece satır uzunlukları yukarıdan aşağıya 1, 3, 5, 7, … olur.\n\nYukarıdan sayıldığında tek numaralı satırların tüm kareleri kırmızı, çift numaralı satırların tüm kareleri mavidir. Örüntünün birbirini izleyen üç adımı ayrı ayrı yapılıyor. Bu üç şekildeki kırmızı karelerin toplam sayısı, mavi karelerin toplam sayısından 20 fazladır.\n\nBu üç şeklin ortadakinde kaç mavi kare vardır?",
+        "options": [
+            "190",
+            "200",
+            "210",
+            "231"
+        ],
+        "correct": 2,
+        "explanation": "Bir kırmızı satır ile hemen altındaki mavi satırı eşleştirelim. Her çiftte mavi kareler 2 fazladır. Bu nedenle 2k satırlı bir şekilde mavi kareler 2k, yani satır sayısı kadar fazladır. Sonuna bir kırmızı satır daha eklenirse bu satırda 4k + 1 kare bulunur; kırmızılar bu kez 2k + 1, yine satır sayısı kadar fazla olur. Demek ki tek numaralı adımda kırmızı, çift numaralı adımda mavi sayısı adım numarası kadar fazladır. Ardışık üç adımın ilki tek numaralı n olursa toplam kırmızı fazlalığı n − (n + 1) + (n + 2) = n + 1'dir. İlki çift olursa bunun tersine toplam mavi fazlalığı olur. Verilen kırmızı fazlalığı 20 olduğundan adımlar 19, 20, 21'dir. Ortadaki 20. adımda mavi satırların uzunlukları 3, 7, 11, 15, 19, 23, 27, 31, 35, 39'dur. Baştan ve sondan eşleştirince her çift 42 kare, beş çift ise 5 × 42 = 210 kare eder.",
+        "id": "m6-2-t10-10",
+        "subject": "matematik",
+        "term": 2
+    }
+],
   },
 };
