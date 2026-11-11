@@ -27,7 +27,7 @@ const structuredData = [
     isPartOf: {
       '@type': 'WebSite',
       name: 'TestDünya',
-      url: 'https://testdunya.net',
+      url: absoluteUrl('/'),
     },
     about: ['Edirne', 'çocuk masalları', 'kültürel miras', 'değerler eğitimi'],
   },
@@ -66,7 +66,7 @@ const structuredData = [
         '@type': 'ListItem',
         position: 1,
         name: 'Anasayfa',
-        item: 'https://testdunya.net',
+        item: absoluteUrl('/'),
       },
       {
         '@type': 'ListItem',
@@ -274,4 +274,5 @@ export default function EdirneMasallariPage() {
     </>
   )
 }
+
 
