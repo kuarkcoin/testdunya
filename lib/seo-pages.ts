@@ -18,6 +18,11 @@ export const STATIC_SEO_PAGES: StaticSeoPage[] = [
     description: '1. sınıf okuma alıştırmaları, 5. ve 6. sınıf testleri, LGS denemeleri ve eğitici oyunlarla çalışın. Sesli örnekleri dinleyin, testleri çözün ve açıklamalı cevapları inceleyin.',
   },
   {
+    path: '/testler',
+    title: 'Tüm Testler: YKS, KPSS, TUS, DUS ve LGS Denemeleri',
+    description: 'YKS, KPSS, TUS, DUS, LGS, IELTS, paragraf ve mantık testlerini kategori ve soru sayısına göre inceleyin. Sınıf testleri ve okuma çalışmalarına ulaşın.',
+  },
+  {
     path: '/1-sinif',
     title: '1. Sınıf Okuma Çalışmaları',
     description: '1. sınıf için harf tanıma, hece birleştirme, kelime kurma ve kısa metin okuma alıştırmaları. Sesli örneklerle çocuğun kendi hızında çalışmasına yardımcı olun.',
@@ -248,4 +253,5 @@ export function getStaticPageMetadata(path: string) {
   if (!page) throw new Error(`Missing static SEO page: ${path}`);
   return createPageMetadata(page);
 }
+
 

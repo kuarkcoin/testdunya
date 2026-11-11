@@ -285,7 +285,7 @@ export default function Page() {
   if (loadErr) {
     return (
       <div className="min-h-screen bg-white p-6">
-        <h1 className="text-xl font-semibold">Oyun yüklenemedi</h1>
+        <h2 className="text-xl font-semibold">Oyun yüklenemedi</h2>
         <p className="mt-2 text-slate-600">{loadErr}</p>
         <button
           onClick={fetchGames}
@@ -303,7 +303,7 @@ export default function Page() {
   if (!game) {
     return (
       <div className="min-h-screen bg-white p-6">
-        <h1 className="text-xl font-semibold">Oyun bulunamadı</h1>
+        <h2 className="text-xl font-semibold">Oyun bulunamadı</h2>
         <button
           onClick={fetchGames}
           className="mt-4 rounded-2xl bg-black text-white px-4 py-3 text-sm focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2"
@@ -320,7 +320,7 @@ export default function Page() {
       <div className="min-h-screen bg-white">
         <div className="mx-auto max-w-2xl p-6">
           <div className="rounded-2xl border border-green-200 bg-green-50 p-6">
-            <h1 className="text-2xl font-black">🎉 Tebrikler!</h1>
+            <h2 className="text-2xl font-black">🎉 Tebrikler!</h2>
             <p className="mt-2 text-slate-700">Tüm soruları tamamladın.</p>
 
             <div className="mt-4 flex flex-wrap gap-2 text-sm">
@@ -362,7 +362,7 @@ export default function Page() {
         <div className="sticky top-0 bg-white/90 backdrop-blur border-b border-slate-200 py-3 z-20">
           <div className="flex items-start justify-between gap-3">
             <div className="min-w-0">
-              <h1 className="text-xl font-semibold">{game.title}</h1>
+              <h2 className="text-xl font-semibold">{game.title}</h2>
               <p className="text-slate-600">{game.prompt}</p>
 
               <div className="mt-2 flex flex-wrap gap-2 text-sm">

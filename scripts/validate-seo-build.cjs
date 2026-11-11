@@ -68,10 +68,18 @@ function parseHtml(html) {
     return values[0];
   }
   return {
-    html, metas, links, schemas, meta, text: visibleText(html),
+    html, metas, links, schemas, meta, text: visibleText(html), anchors: parseAnchors(html),
     titles: [...html.matchAll(/<title(?:\s[^>]*)?>([\s\S]*?)<\/title>/gi)].map((match) => normalize(match[1])),
     h1s: [...html.matchAll(/<h1\b[^>]*>([\s\S]*?)<\/h1>/gi)].map((match) => visibleText(match[1])),
   };
+}
+
+function parseAnchors(html) {
+  // RSC payloads and scripts containing href strings are not crawlable links.
+  const markup = html.replace(/<(script|style|template)\b[^>]*>[\s\S]*?<\/\1\s*>/gi, '');
+  return [...markup.matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a\s*>/gi)].map((match) => ({
+    ...attributes(match[1]), text: visibleText(match[2]),
+  })).filter((anchor) => anchor.href && !/(?:^|\s)nofollow(?:\s|$)/i.test(anchor.rel || ''));
 }
 
 function schemaNodes(value) {
@@ -98,12 +106,14 @@ async function freePort() {
 }
 
 function checkTrace(root) {
-  const filename = path.join(root, '.next/server/app/test/[testId]/page.js.nft.json');
-  assert(fs.existsSync(filename), 'Real Next generic test file trace is missing');
-  const trace = JSON.parse(fs.readFileSync(filename, 'utf8'));
-  const traced = new Set(trace.files.map((file) => path.resolve(path.dirname(filename), file)));
   const files = fs.readdirSync(path.join(root, 'public/data/tests')).filter((file) => file.endsWith('.json'));
-  for (const file of files) assert(traced.has(path.join(root, 'public/data/tests', file)), `Serverless trace omits test data: ${file}`);
+  for (const route of ['test/[testId]', 'testler', 'lgs', '']) {
+    const filename = path.join(root, '.next/server/app', route, 'page.js.nft.json');
+    assert(fs.existsSync(filename), `Real Next file trace is missing for /${route}`);
+    const trace = JSON.parse(fs.readFileSync(filename, 'utf8'));
+    const traced = new Set(trace.files.map((file) => path.resolve(path.dirname(filename), file)));
+    for (const file of files) assert(traced.has(path.join(root, 'public/data/tests', file)), `Serverless trace for /${route} omits test data: ${file}`);
+  }
   return files.length;
 }
 
@@ -116,7 +126,9 @@ async function validateBuild(root = ROOT) {
   const tracedJsonFiles = checkTrace(root);
   const load = createSourceLoader(root);
   const data = await collectRouteData(load);
-  const { seo, staticSeo, generic, grade5, grade6, chess, games, subjects, indexable } = data;
+  const { seo, staticSeo, generic, catalog, grade5, grade6, chess, games, subjects, indexable } = data;
+  const navigation = load('lib/test-navigation.ts');
+  const canonicalTests = catalog.filter((test) => test.id === test.canonicalId);
   const port = await freePort();
   const origin = `http://127.0.0.1:${port}`;
   const server = spawn(process.execPath, [nextBin, 'start', '--hostname', '127.0.0.1', '--port', String(port)], {
@@ -207,6 +219,49 @@ async function validateBuild(root = ROOT) {
       if (genericData) {
         assertVisible(document, genericData.questions[0].questionPrompt || genericData.questions[0].prompt, `${pathname} first quiz question`);
         for (const choice of genericData.questions[0].choices) assertVisible(document, choice.text, `${pathname} first question option`);
+        const expectedRelated = navigation.getRelatedTests(catalog, genericData.canonicalId);
+        const relatedSection = document.html.match(/<section\b[^>]*aria-labelledby="related-tests-heading"[^>]*>([\s\S]*?)<\/section>/i)?.[1];
+        assert(relatedSection || !expectedRelated.length, `${pathname}: related navigation is rendered in real HTML`);
+        const relatedAnchors = parseAnchors(relatedSection || '');
+        const relatedPaths = relatedAnchors.filter((anchor) => anchor.href.startsWith('/test/')).map((anchor) => anchor.href);
+        assert.deepEqual(relatedPaths.sort(), expectedRelated.map((test) => `/test/${test.id}`).sort(), `${pathname}: canonical related links are complete, unique and exclude the current test`);
+        for (const related of expectedRelated) {
+          const anchor = relatedAnchors.find((item) => item.href === `/test/${related.id}`);
+          assert(anchor.text.includes(`${related.questionCount} soru`), `${pathname}: related card displays its actual question count`);
+        }
+        const parent = navigation.getTestParent(genericData.canonicalId);
+        assert(document.anchors.some((anchor) => anchor.href === parent.href), `${pathname}: server-rendered link returns to the category hub`);
+      }
+      if (pathname === '/testler') {
+        assert(document.anchors.some((anchor) => anchor.href === '/edirne-masallari'), 'The catalog provides a direct HTML link to Edirne reading content');
+        const testAnchors = document.anchors.filter((anchor) => anchor.href.startsWith('/test/'));
+        assert.deepEqual(testAnchors.map((anchor) => anchor.href).sort(), canonicalTests.map((test) => `/test/${test.id}`).sort(), 'Catalog HTML links to every canonical public test exactly once');
+        for (const test of canonicalTests) {
+          const anchor = testAnchors.find((item) => item.href === `/test/${test.id}`);
+          assert(anchor.text.includes(normalize(test.title)), `${test.id}: catalog title is readable inside its link`);
+          assert(anchor.text.includes(`${test.questionCount} soru`), `${test.id}: catalog card shows the actual question count`);
+        }
+        const itemList = nodes.find((node) => node['@type'] === 'ItemList');
+        assert(itemList, 'Catalog has ItemList structured data');
+        assert.equal(itemList.numberOfItems, canonicalTests.length);
+        assert.deepEqual(itemList.itemListElement.map((item) => item.url).sort(), canonicalTests.map((test) => seo.absoluteUrl(`/test/${test.id}`)).sort(), 'Catalog schema contains exactly the visible canonical tests');
+      }
+      if (pathname === '/') {
+        assert(document.anchors.some((anchor) => anchor.href === '/testler'), 'Homepage links to the complete catalog without JavaScript');
+        const exams = canonicalTests.filter((test) => /^(?:ielts-level-test|yks-sozel-deneme|kpss-testleri|kpss-sozel|tus-deneme|dus-deneme)-/.test(test.id));
+        for (const test of exams) {
+          const anchors = document.anchors.filter((anchor) => anchor.href === `/test/${test.id}`);
+          assert(anchors.length, `${test.id}: homepage must not hide a valid exam behind a fixed test limit`);
+          assert(anchors.some((anchor) => anchor.text.includes(`${test.questionCount} soru`)), `${test.id}: homepage displays the real question count`);
+        }
+        for (const test of catalog.filter((item) => item.id !== item.canonicalId)) assert(!document.anchors.some((anchor) => anchor.href === `/test/${test.id}`), `${test.id}: homepage must not link a duplicate alias`);
+      }
+      const hubPrefix = { '/paragraf': 'paragraf-test-', '/zeka-bulmacalari': 'zeka-bulmaca-', '/lgs/sozel': 'lgs-sozel-test-', '/lgs/sayisal': 'lgs-sayisal-test-', '/lgs': 'lgs-test-' }[pathname];
+      if (hubPrefix) {
+        const expectedLinks = canonicalTests.filter((test) => test.id.startsWith(hubPrefix)).map((test) => `/test/${test.id}`);
+        const actualLinks = document.anchors.filter((anchor) => anchor.href.startsWith(`/test/${hubPrefix}`)).map((anchor) => anchor.href);
+        assert.deepEqual(actualLinks.sort(), expectedLinks.sort(), `${pathname}: hub links directly to each canonical test once`);
+        assert(!document.anchors.some((anchor) => /^\/(?:paragraf|zeka-bulmacalari)\/test-\d+/.test(anchor.href)), `${pathname}: legacy redirects are not used as test card destinations`);
       }
       checked.push({ path: pathname, status: 200, canonical, index, schemas: document.schemas.length });
       return document;
@@ -221,7 +276,8 @@ async function validateBuild(root = ROOT) {
       }
     }
 
-    for (const pathname of ['/', '/iq-test', '/lgs/sozel', '/ielts/speaking', '/paragraf', '/dashboard']) await page(pathname);
+    for (const pathname of ['/', '/iq-test', '/lgs', '/lgs/sozel', '/lgs/sayisal', '/ielts/speaking', '/paragraf', '/zeka-bulmacalari', '/dashboard', '/games/logic-lock', '/kelime-avcisi', '/oyunlar/6-yas/kayip-olani-bul', '/oyunlar/6-yas/siralama', '/verbal-test', '/edirne-masallari']) await page(pathname);
+    await page('/testler', { type: 'CollectionPage' });
     // Saved mistakes exist only in browser storage; its private page mounts after hydration.
     await page('/mistakes', { index: false, requireHeading: false });
     await page('/gorevde-yukselme/karma', { index: false });
@@ -232,7 +288,7 @@ async function validateBuild(root = ROOT) {
     const maths = grade5.getGrade5Test('matematik', 'test-22');
     assert(maths, 'Published grade5 second-term URL must exist');
     await page('/5-sinif/matematik/test-22', { type: 'Quiz', questionData: maths.questions, grade: 5 });
-    for (const id of ['lgs-sozel-test-1', 'paragraf-test-1', 'lgs-sozel-test-3', 'tus-deneme-31']) {
+    for (const id of ['lgs-sozel-test-1', 'paragraf-test-1', 'lgs-sozel-test-3', 'tus-deneme-31', 'yks-sozel-deneme-30', 'kpss-sozel-21']) {
       const test = await generic.getTestData(id);
       assert(test, `Representative generic data ${id}`);
       await page(`/test/${id}`, { type: 'Quiz', genericData: test, canonical: `/test/${test.canonicalId || test.id}` });
@@ -245,7 +301,7 @@ async function validateBuild(root = ROOT) {
     await page(`/gorevde-yukselme/${availableSubject.slug}`, { type: 'CollectionPage' });
     await page(`/gorevde-yukselme/${emptySubject.slug}`, { index: false });
 
-    for (const pathname of ['/test/seo-validation-no-such-test-918273', '/chess-tests/seo-validation-no-such-test', '/turkce-oyunlari/seo-validation-no-such-game', '/gorevde-yukselme/seo-validation-no-such-subject', '/6-sinif/fen/test-999999', '/5-sinif/matematik/test-999999', '/paragraf/test-999999']) {
+    for (const pathname of ['/test/seo-validation-no-such-test-918273', '/test/dus-deneme-18', '/test/dus-deneme-19', '/test/dus-deneme-20', '/chess-tests/seo-validation-no-such-test', '/turkce-oyunlari/seo-validation-no-such-game', '/gorevde-yukselme/seo-validation-no-such-subject', '/6-sinif/fen/test-999999', '/5-sinif/matematik/test-999999', '/paragraf/test-999999']) {
       try {
         const response = await request(pathname);
         assert.equal(response.status, 404, `${pathname}: unknown content must have a real 404 status`);
@@ -325,8 +381,9 @@ async function validateBuild(root = ROOT) {
   }
 }
 
-module.exports = { parseHtml, visibleText, validateBuild };
+module.exports = { parseHtml, parseAnchors, visibleText, validateBuild };
 if (require.main === module) validateBuild().then((report) => console.log(JSON.stringify(report, null, 2))).catch((error) => {
   console.error(`SEO build validation failed: ${error.stack || error}`);
   process.exitCode = 1;
 });
+

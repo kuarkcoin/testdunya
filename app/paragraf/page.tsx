@@ -34,7 +34,7 @@ export default function ParagrafHubPage() {
           {PARAGRAF_TESTS.map((test) => (
             <Link
               key={test.id}
-              href={`/paragraf/${test.slug}`}
+              href={`/test/${test.dataId}`}
               className="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all hover:-translate-y-1 hover:border-fuchsia-300 hover:shadow-xl"
             >
               <div className="flex items-center justify-between">
@@ -42,7 +42,7 @@ export default function ParagrafHubPage() {
                 <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-bold text-slate-600">{test.questionCount} Soru</span>
               </div>
 
-              <h2 className="mt-4 text-xl font-black text-slate-800">Test {test.id}</h2>
+              <h2 className="mt-4 text-xl font-black text-slate-800">{test.title}</h2>
               <p className="mt-1 text-sm font-medium text-slate-600">Konu: Paragraf • Seviye: 5. Sınıf</p>
 
               <div className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-fuchsia-600">
@@ -55,4 +55,5 @@ export default function ParagrafHubPage() {
     </main>
   );
 }
+
 

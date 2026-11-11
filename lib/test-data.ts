@@ -94,7 +94,9 @@ export const getTestData = cache(async (id: string): Promise<TestData | null> =>
   return test;
 });
 
-export const getTestCatalog = cache(async (): Promise<TestCatalogEntry[]> => {
+type TestCatalog = readonly Readonly<TestCatalogEntry>[];
+
+async function loadTestCatalog(): Promise<TestCatalog> {
   let filenames: string[] = [];
   try {
     filenames = (await readdir(TESTS_DIRECTORY, { withFileTypes: true }))
@@ -105,5 +107,25 @@ export const getTestCatalog = cache(async (): Promise<TestCatalogEntry[]> => {
   }
   const ids = [...new Set([...filenames, ...PARAGRAF_TESTS.map((test) => test.dataId)])].sort();
   const tests = await Promise.all(ids.map((id) => getTestData(id)));
-  return tests.flatMap((test) => test ? [{ id: test.id, canonicalId: test.canonicalId, title: test.title, description: test.description, questionCount: test.questionCount }] : []);
+  return Object.freeze(tests.flatMap((test) => test ? [Object.freeze({
+    id: test.id, canonicalId: test.canonicalId, title: test.title,
+    description: test.description, questionCount: test.questionCount,
+  })] : []));
+}
+
+// Quiz files are immutable within a deployment. Retain only the small, frozen
+// catalog summary between requests; full question data stays request-scoped.
+// A new deployment creates a fresh module, and development reads remain fresh.
+let productionCatalog: Promise<TestCatalog> | undefined;
+
+export const getTestCatalog = cache((): Promise<TestCatalog> => {
+  if (process.env.NODE_ENV !== 'production') return loadTestCatalog();
+  if (!productionCatalog) {
+    productionCatalog = loadTestCatalog().catch((error) => {
+      productionCatalog = undefined;
+      throw error;
+    });
+  }
+  return productionCatalog;
 });
+

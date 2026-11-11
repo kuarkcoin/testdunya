@@ -501,6 +501,13 @@ export default function LogicLockUltra() {
       </AnimatePresence>
 
       <main className="max-w-5xl w-full mt-12 grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-6">
+        <header className="lg:col-span-2">
+          <h1 className="text-3xl font-black sm:text-4xl">Logic Lock: Number Code Puzzle</h1>
+          <p className="mt-3 max-w-3xl leading-relaxed text-slate-300">
+            Crack a three- or four-digit code using feedback about correct digits and positions.
+            Choose daily or classic mode and solve each round within six guesses.
+          </p>
+        </header>
         {/* GAME CARD */}
         <div className="bg-slate-900/50 border border-slate-800 rounded-[2.5rem] p-8 relative overflow-hidden shadow-2xl backdrop-blur-sm">
           {/* PROGRESS TIMER */}

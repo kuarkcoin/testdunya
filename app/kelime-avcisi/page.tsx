@@ -145,7 +145,14 @@ export default function WordHunterGame() {
       </AnimatePresence>
 
       <main className="max-w-2xl w-full mt-12 space-y-6">
-        
+        <header>
+          <h1 className="text-3xl font-black sm:text-4xl">Word Hunter: Guess the English Word</h1>
+          <p className="mt-3 leading-relaxed text-slate-300">
+            Read the English definition and guess the hidden word before time runs out.
+            Use letter, synonym and example clues when you need help.
+          </p>
+        </header>
+
         {/* GAME CARD */}
         <div className="bg-slate-900/50 border border-slate-800 rounded-[2.5rem] p-8 relative overflow-hidden shadow-2xl backdrop-blur-sm">
           
@@ -289,3 +296,4 @@ export default function WordHunterGame() {
     </div>
   );
 }
+

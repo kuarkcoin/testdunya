@@ -16,6 +16,9 @@ export default function Navbar() {
           <Link href="/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 transition-colors">
             Anasayfa
           </Link>
+          <Link href="/testler" className="font-bold text-indigo-700 hover:text-indigo-900 dark:text-indigo-300 dark:hover:text-indigo-100 transition-colors">
+            Tüm Testler
+          </Link>
           <Link href="/1-sinif" className="font-bold text-emerald-700 hover:text-emerald-900 dark:text-emerald-300 dark:hover:text-emerald-100 transition-colors">
             1. Sınıf Okuma
           </Link>
@@ -33,3 +36,4 @@ export default function Navbar() {
     </nav>
   );
 }
+

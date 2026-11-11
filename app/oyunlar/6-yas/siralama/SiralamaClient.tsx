@@ -330,7 +330,7 @@ export default function SiralamaClient() {
     return (
       <div className="min-h-screen bg-white">
         <div className="mx-auto max-w-2xl p-6">
-          <h1 className="text-xl font-semibold">Oyun yüklenemedi</h1>
+          <h2 className="text-xl font-semibold">Oyun yüklenemedi</h2>
           <p className="mt-2 text-slate-600">{loadErr ?? "public/data/games6/ordering.json bulunamadı veya boş."}</p>
           <p className="mt-4 text-sm text-slate-500">
             Kontrol et: <b>public/data/games6/ordering.json</b> yolu doğru mu?
@@ -359,7 +359,7 @@ export default function SiralamaClient() {
         <div className="md:sticky md:top-0 bg-white/90 backdrop-blur border-b border-slate-200 py-3 md:z-20">
           <div className="flex items-start justify-between gap-3">
             <div className="min-w-0">
-              <h1 className="text-xl font-semibold truncate">{game.title}</h1>
+              <h2 className="text-xl font-semibold truncate">{game.title}</h2>
               <p className="text-slate-600">{game.prompt}</p>
 
               <div className="mt-2 flex flex-wrap gap-2 text-sm" role="status" aria-label="İstatistikler">

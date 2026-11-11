@@ -111,6 +111,13 @@ export default function VerbalTestPage() {
       )}
 
       <div className="max-w-3xl mx-auto space-y-8">
+        <header>
+          <h1 className="text-3xl font-black sm:text-4xl">English Verbal Reasoning Test</h1>
+          <p className="mt-3 leading-relaxed text-slate-300">
+            Practice analogies, vocabulary and deductive reasoning with {total} questions in {TOTAL_TIME / 60} minutes.
+            Choose your answers, move between questions and review your results when you finish.
+          </p>
+        </header>
         {/* GLOBAL HEADER */}
         <motion.div
           initial={{ y: -20, opacity: 0 }}
@@ -332,3 +339,4 @@ export default function VerbalTestPage() {
     </main>
   );
 }
+

@@ -24,11 +24,16 @@ export default function Footer() {
 
           {/* 2. Kolon: Hızlı Linkler */}
           <div>
-            <h3 className="font-semibold text-slate-900 dark:text-white mb-4">Kurumsal</h3>
+            <h3 className="font-semibold text-slate-900 dark:text-white mb-4">Hızlı Bağlantılar</h3>
             <ul className="space-y-3 text-sm text-slate-600 dark:text-zinc-300">
               <li>
                 <Link href="/" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 transition-colors">
                   Anasayfa
+                </Link>
+              </li>
+              <li>
+                <Link href="/testler" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 transition-colors">
+                  Tüm Testler ve Denemeler
                 </Link>
               </li>
               <li>
@@ -84,3 +89,4 @@ export default function Footer() {
     </footer>
   );
 }
+

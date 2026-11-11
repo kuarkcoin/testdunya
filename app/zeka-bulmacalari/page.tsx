@@ -22,7 +22,7 @@ export default function ZekaBulmacalariHubPage() {
           {ZEKA_BULMACA_TESTS.map((test) => (
             <Link
               key={test.id}
-              href={`/zeka-bulmacalari/${test.slug}`}
+              href={`/test/${test.dataId}`}
               className="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all hover:-translate-y-1 hover:border-indigo-300 hover:shadow-xl"
             >
               <div className="flex items-center justify-between">
@@ -43,4 +43,5 @@ export default function ZekaBulmacalariHubPage() {
     </main>
   );
 }
+
 

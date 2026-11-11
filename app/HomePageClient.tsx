@@ -3,11 +3,12 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 
-// -------------------- UI FLAGS --------------------
-const SHOW_LOCKED_TESTS = false; // true => kilitli kutular görünür | false => sadece aktifler
-
 // -------------------- TYPES --------------------
 type CompletedExams = Record<string, number[]>;
+type HomePageProps = {
+  availableTests: { id: string; questionCount: number }[];
+  paragraphStats: { testCount: number; questionCount: number };
+};
 
 // -------------------- ICONS --------------------
 const Trophy = (props: React.SVGProps<SVGSVGElement>) => (
@@ -163,8 +164,6 @@ const examConfig = [
     id: 'placement',
     prefix: 'ielts-level-test',
     title: 'Level Assessment',
-    count: 1,
-    activeLimit: 1,
     desc: 'Find out your English level and estimated IELTS Band Score in 50 questions.',
     icon: <Target className="w-6 h-6 text-white" />,
     gradient: 'from-violet-600 to-fuchsia-600',
@@ -173,8 +172,6 @@ const examConfig = [
     id: 'yks',
     prefix: 'yks-sozel-deneme',
     title: 'YKS Verbal (Sözel)',
-    count: 30,
-    activeLimit: 10,
     desc: 'Comprehensive TYT & AYT practice tests for Turkish University Entrance.',
     icon: <Book className="w-6 h-6 text-white" />,
     gradient: 'from-blue-600 to-indigo-600',
@@ -183,8 +180,6 @@ const examConfig = [
     id: 'kpss-testleri',
     prefix: 'kpss-testleri',
     title: 'KPSS Testleri',
-    count: 10,
-    activeLimit: 10,
     desc: '80 soruluk KPSS deneme testleri: Genel Yetenek + Genel Kültür',
     meta: 'Türkçe, Matematik, Geometri, Tarih, Coğrafya, Vatandaşlık ve Güncel Bilgiler',
     seoTitle: 'KPSS Testleri | 80 Soruluk KPSS Denemeleri',
@@ -196,8 +191,6 @@ const examConfig = [
     id: 'kpss',
     prefix: 'kpss-sozel',
     title: 'KPSS Genel Kültür',
-    count: 21,
-    activeLimit: 10,
     desc: 'Eski genel kültür testleri: Tarih, Coğrafya ve Vatandaşlık soruları.',
     icon: <Brain className="w-6 h-6 text-white" />,
     gradient: 'from-amber-500 to-orange-600',
@@ -206,8 +199,6 @@ const examConfig = [
     id: 'tus',
     prefix: 'tus-deneme',
     title: 'Medical (TUS)',
-    count: 35,
-    activeLimit: 35,
     desc: 'Clinical sciences and case studies for Medical Specialization.',
     icon: <Stethoscope className="w-6 h-6 text-white" />,
     gradient: 'from-emerald-500 to-teal-600',
@@ -216,8 +207,6 @@ const examConfig = [
     id: 'dus',
     prefix: 'dus-deneme',
     title: 'Dentistry (DUS)',
-    count: 17,
-    activeLimit: 17,
     desc: 'Specialization exam practice for Dentistry students.',
     icon: <Tooth className="w-6 h-6 text-white" />,
     gradient: 'from-cyan-500 to-blue-500',
@@ -235,7 +224,7 @@ const ieltsModules = [
 ] as const;
 
 // -------------------- PAGE --------------------
-export default function HomePage() {
+export default function HomePage({ availableTests, paragraphStats }: HomePageProps) {
   const [completed, setCompleted] = useState<CompletedExams>({});
   const isClient = typeof window !== 'undefined';
 
@@ -284,7 +273,7 @@ export default function HomePage() {
 
             <p className="text-slate-300 text-lg md:text-xl lg:text-2xl max-w-4xl leading-relaxed text-justify">
               <strong>IELTS</strong>, YKS, KPSS, TUS ve DUS sınavlarına yapay zeka destekli özgün sorularla hazırlanın.
-              Tüm denemelerimiz yeni müfredata uygun, detaylı çözümlü ve tamamen ücretsizdir.
+              Sınavınızı seçin, ücretsiz testleri çözün ve soru açıklamalarıyla tekrar yapın.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-4">
@@ -292,12 +281,12 @@ export default function HomePage() {
                 <span>📕</span> Hatalarım
               </Link>
 
-              <button
-                onClick={() => isClient && document.getElementById('exams')?.scrollIntoView({ behavior: 'smooth' })}
+              <Link
+                href="/testler"
                 className="px-8 py-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-bold text-lg transition-all shadow-lg shadow-indigo-900/50"
               >
                 Tüm Testler
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -561,7 +550,7 @@ export default function HomePage() {
           <Book className="h-4 w-4" /> Yeni Türkçe Alanı
         </div>
         <h3 className="mb-2 text-2xl font-black tracking-tight">Paragraf</h3>
-        <p className="text-sm text-rose-50 opacity-90">50 test • 1000 soru • 5. sınıf uyumlu</p>
+        <p className="text-sm text-rose-50 opacity-90">{paragraphStats.testCount} test • {paragraphStats.questionCount} soru • 5. sınıf uyumlu</p>
       </div>
       <div className="mt-6 flex items-center gap-3">
         <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-fuchsia-700 shadow-lg transition-transform group-hover:scale-110">
@@ -994,8 +983,8 @@ export default function HomePage() {
         
         {/* --- NATIONAL EXAMS --- */}
         {examConfig.map((exam) => {
-          const loopCount = SHOW_LOCKED_TESTS ? exam.count : exam.activeLimit;
-          const hasMore = exam.activeLimit < exam.count;
+          const tests = availableTests.filter((test) => test.id.startsWith(`${exam.prefix}-`));
+          if (tests.length === 0) return null;
 
           return (
             <section key={exam.id} className="bg-white rounded-2xl shadow-xl shadow-slate-200/50 overflow-hidden border border-slate-100 transition-all hover:shadow-2xl hover:shadow-indigo-100/50">
@@ -1012,7 +1001,7 @@ export default function HomePage() {
                 </div>
                 <div className="hidden sm:block text-right">
                   <span className="block text-3xl font-black">
-                    {exam.activeLimit} <span className="text-lg opacity-60">/ {exam.count}</span>
+                    {tests.length}
                   </span>
                   <span className="text-xs uppercase opacity-80 font-bold tracking-wider">Test Yayında</span>
                 </div>
@@ -1020,26 +1009,16 @@ export default function HomePage() {
 
               <div className="p-3 md:p-6 bg-slate-50/50">
                 <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-8 gap-2 md:gap-4">
-                  {Array.from({ length: loopCount }, (_, i) => i + 1).map((num) => {
-                    const testLinkId = `${exam.prefix}-${num}`;
+                  {tests.map((test) => {
+                    const num = Number(test.id.slice(exam.prefix.length + 1));
                     const isDone = (completed[exam.id] || []).includes(num);
-                    const isActive = num <= exam.activeLimit;
-
-                    if (SHOW_LOCKED_TESTS && !isActive) {
-                      return (
-                        <div key={num} className="relative flex flex-col items-center justify-center py-4 px-2 rounded-xl border border-slate-100 bg-slate-50 text-slate-300 cursor-not-allowed overflow-hidden">
-                          <div className="mb-2 opacity-40">
-                            <Lock className="w-6 h-6 text-slate-400" />
-                          </div>
-                          <span className="text-sm font-bold opacity-40">Test {num}</span>
-                        </div>
-                      );
-                    }
 
                     return (
                       <Link
                         key={num}
-                        href={`/test/${testLinkId}`}
+                        href={`/test/${test.id}`}
+                        prefetch={false}
+                        aria-label={`${exam.title} Test ${num}, ${test.questionCount} soru`}
                         className={`
                           group relative flex flex-col items-center justify-center py-4 px-2 rounded-xl border transition-all duration-200
                           ${isDone
@@ -1062,19 +1041,10 @@ export default function HomePage() {
                         <span className={`text-sm font-bold ${isDone ? 'text-emerald-700' : 'text-slate-600 group-hover:text-indigo-900'}`}>
                           Test {num}
                         </span>
+                        <span className="mt-1 text-xs text-slate-500">{test.questionCount} soru</span>
                       </Link>
                     );
                   })}
-
-                  {!SHOW_LOCKED_TESTS && hasMore && (
-                    <div className="flex flex-col items-center justify-center py-4 px-2 rounded-xl border border-dashed border-slate-300 bg-slate-50/50 text-slate-400">
-                      <span className="text-xs font-bold text-center">
-                        Devamı
-                        <br />
-                        Yakında...
-                      </span>
-                    </div>
-                  )}
                 </div>
               </div>
             </section>
@@ -1094,29 +1064,29 @@ export default function HomePage() {
               TYT, AYT, KPSS, TUS, DUS ve <strong>IELTS</strong> sınavlarına hazırlanan öğrenciler için
               özenle hazırlanmış özgün deneme sınavları.
             </p>
-            <p className="text-sm opacity-50">&copy; 2025 TestDünya. Tüm hakları saklıdır.</p>
+            <p className="text-sm opacity-50">&copy; {new Date().getFullYear()} TestDünya. Tüm hakları saklıdır.</p>
           </div>
 
           <div>
             <h5 className="text-white font-bold text-lg mb-6">Sınavlar</h5>
             <ul className="space-y-3">
               <li>
-                <Link href="#exams" className="hover:text-white transition-colors">
+                <Link href="/testler#ielts" className="hover:text-white transition-colors">
                   IELTS Academic
                 </Link>
               </li>
               <li>
-                <Link href="#exams" className="hover:text-white transition-colors">
+                <Link href="/testler#yks" className="hover:text-white transition-colors">
                   YKS (TYT-AYT)
                 </Link>
               </li>
               <li>
-                <Link href="#exams" className="hover:text-white transition-colors">
+                <Link href="/testler#tus" className="hover:text-white transition-colors">
                   TUS Denemeleri
                 </Link>
               </li>
               <li>
-                <Link href="#exams" className="hover:text-white transition-colors">
+                <Link href="/testler#dus" className="hover:text-white transition-colors">
                   DUS Denemeleri
                 </Link>
               </li>
@@ -1162,5 +1132,6 @@ export default function HomePage() {
     </main>
   );
 }
+
 
 

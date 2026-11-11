@@ -45,6 +45,13 @@ function allowedUrl(value) {
   return /^https?:$/.test(url.protocol) && ALLOWED_HOSTS.has(url.hostname) && !url.username && !url.password && !url.port;
 }
 
+function isPublicPageUrl(value, origin) {
+  const url = new URL(value);
+  return allowedUrl(value) && url.origin === origin && !url.search
+    && !/^\/(?:api|_next|private|admin)(?:\/|$)/i.test(url.pathname)
+    && !/\.(?!html?$)[a-z0-9]{1,8}$/i.test(url.pathname);
+}
+
 function parsePage(html, url) {
   // Metadata can be streamed outside <head> by Next.js; inspect the full HTML.
   const metas = [...html.matchAll(/<meta\b[^>]*>/gi)].map((match) => attributes(match[0]));
@@ -250,6 +257,23 @@ async function audit(options) {
   }, options.concurrency);
   const incoming = new Map(pages.map((page) => [page.url, new Set()]));
   for (const page of pages) for (const target of page.anchors || []) if (target !== page.url && incoming.has(target)) incoming.get(target).add(page.url);
+  const allSitemapUrls = new Set(sitemapUrls.map((url) => normalizedUrl(url)).filter(Boolean));
+  const linkedTargets = new Map();
+  for (const page of pages) {
+    for (const target of page.anchors || []) {
+      if (allSitemapUrls.has(target) || !isPublicPageUrl(target, options.origin)) continue;
+      if (!linkedTargets.has(target)) linkedTargets.set(target, new Set());
+      linkedTargets.get(target).add(page.url);
+    }
+  }
+  const linkedPages = await mapLimited([...linkedTargets.keys()].sort().slice(0, 250), async (url) => {
+    const response = await fetchDocument(url);
+    const result = { url, finalUrl: response.url, status: response.status, redirects: response.redirects, error: response.error, incomingSourceCount: linkedTargets.get(url).size, incomingSourceExamples: [...linkedTargets.get(url)].slice(0, 5) };
+    if (response.error) addIssue('linked_page_fetch_error', url, result, 'error');
+    else if (response.status >= 400) addIssue('broken_internal_link', url, result, 'error');
+    // Successful legacy redirects and deliberate noindex pages are valid links.
+    return result;
+  }, options.concurrency);
   for (const page of pages) {
     page.incomingLinksFromCrawledSitemapPages = incoming.get(page.url).size;
     page.incomingLinkExamples = [...incoming.get(page.url)].slice(0, 5);
@@ -264,7 +288,11 @@ async function audit(options) {
     else if (response.redirects.some((redirect) => ![301, 308].includes(redirect.status))) addIssue('host_variant_temporary_redirect', url, result);
     return result;
   }, options.concurrency);
-  const sampleUrls = [...new Set([`${options.origin}/`, pages.find((page) => /\/test\//.test(page.url))?.url, pages.find((page) => /\/[56]-sinif\/.+\/test-/.test(page.url))?.url].filter(Boolean))];
+  const sampleUrls = [...new Set([
+    `${options.origin}/`, pages.find((page) => /\/test\//.test(page.url))?.url,
+    pages.find((page) => /\/[56]-sinif\/.+\/test-/.test(page.url))?.url,
+    ...['tus-', 'yks-', 'kpss-'].map((prefix) => candidates.find((url) => new URL(url).pathname.startsWith(`/test/${prefix}`))),
+  ].filter(Boolean))];
   const userAgentComparisons = await mapLimited(sampleUrls, async (url) => {
     const normal = await fetchDocument(url);
     const bot = await fetchDocument(url, GOOGLEBOT_USER_AGENT);
@@ -282,21 +310,22 @@ async function audit(options) {
   for (const issue of issues) issueCounts[issue.code] = (issueCounts[issue.code] || 0) + 1;
   return {
     origin: options.origin, startedAt, checkedAt: new Date().toISOString(),
-    method: { anonymous: true, userAgent: USER_AGENT, concurrency: options.concurrency, timeoutMs: 15000, maxRetries: 1, maxPages: options.maxPages, maxBodyBytes: MAX_BODY_BYTES },
-    coverage: { sitemapEntries: locations.length, uniqueSitemapUrls: sitemapUrls.length, eligiblePages: candidates.length, checkedPages: pages.length, completeEligibleSitemapCoverage: pages.length === candidates.length },
+    method: { anonymous: true, userAgent: USER_AGENT, concurrency: options.concurrency, timeoutMs: 15000, maxRetries: 1, maxPages: options.maxPages, maxLinkedPages: 250, maxBodyBytes: MAX_BODY_BYTES },
+    coverage: { sitemapEntries: locations.length, uniqueSitemapUrls: sitemapUrls.length, eligiblePages: candidates.length, checkedPages: pages.length, completeEligibleSitemapCoverage: pages.length === candidates.length, nonSitemapLinkedPages: linkedTargets.size, checkedLinkedPages: linkedPages.length, completeLinkedPageSample: linkedPages.length === linkedTargets.size },
     counts: { status200: pages.filter((page) => page.status === 200).length, fetchErrors: pages.filter((page) => page.error).length, errors: issues.filter((issue) => issue.severity === 'error').length, warnings: issues.filter((issue) => issue.severity === 'warning').length, byIssue: issueCounts },
     robots: { url: `${options.origin}/robots.txt`, status: robotsResponse.status, error: robotsResponse.error, parsed: robots },
-    sitemapSources, hostVariants, userAgentComparisons, issues, pages,
+    sitemapSources, hostVariants, userAgentComparisons, issues, pages, linkedPages,
     limitations: [
       'This report describes anonymous HTTP responses and HTML links, not Google Search Console indexing status or the reasons for excluded URLs.',
       'A Googlebot User-Agent comparison is a simulation from this runner, not a request from verified Googlebot infrastructure.',
       'Incoming links are counted only from the sitemap pages fetched here, without executing JavaScript. Other pages, external backlinks and JavaScript-generated links are outside this coverage.',
+      'Up to 250 additional same-origin HTML page targets linked from the audited sitemap pages are checked for broken links; those targets are not recursively crawled. Private paths, queries and assets are excluded.',
       'Text character counts and fingerprints are diagnostics, not Google content quality scores or indexing guarantees.',
     ],
   };
 }
 
-module.exports = { audit, parseOptions, parsePage, parseRobots, robotsAllows, normalizedUrl, headerNoindexForGooglebot };
+module.exports = { audit, parseOptions, parsePage, parseRobots, robotsAllows, normalizedUrl, headerNoindexForGooglebot, isPublicPageUrl };
 if (require.main === module) {
   Promise.resolve().then(async () => {
     const options = parseOptions(process.argv.slice(2));

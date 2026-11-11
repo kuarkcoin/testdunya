@@ -14,7 +14,10 @@ const nextConfig = {
   // Keep the files in serverless bundles as well as in the public asset store.
   outputFileTracingIncludes: Object.fromEntries(
     [
+      '/',
+      '/testler',
       '/test/*',
+      '/lgs',
       '/sitemap.xml',
       '/lgs/*',
       '/gorevde-yukselme',
@@ -26,3 +29,4 @@ const nextConfig = {
 };
 
 export default nextConfig;
+

@@ -1,4 +1,5 @@
 import { getStaticPageMetadata } from '../../lib/seo-pages';
+import { getTestCatalog } from '../../lib/test-data';
 import Link from 'next/link';
 
 export const metadata = getStaticPageMetadata('/lgs');
@@ -24,7 +25,11 @@ const sections = [
   },
 ];
 
-export default function LgsPage() {
+export default async function LgsPage() {
+  const generalTests = (await getTestCatalog())
+    .filter((test) => /^lgs-test-\d+$/.test(test.id) && test.id === test.canonicalId)
+    .sort((a, b) => a.id.localeCompare(b.id, 'tr', { numeric: true }));
+
   return (
     <main className="min-h-screen bg-slate-50 px-4 py-10 text-slate-900 md:px-8 md:py-14">
       <section className="mx-auto max-w-6xl space-y-10">
@@ -65,8 +70,33 @@ export default function LgsPage() {
             </article>
           ))}
         </div>
+
+        {generalTests.length > 0 && (
+          <section aria-labelledby="lgs-general-tests" className="space-y-5">
+            <div>
+              <h2 id="lgs-general-tests" className="text-2xl font-black tracking-tight md:text-3xl">Genel LGS Denemeleri</h2>
+              <p className="mt-3 text-sm font-semibold leading-relaxed text-slate-600 md:text-base">
+                Farklı derslerden soruları bir arada çözmek için genel denemelerden birini seç. Her denemenin soru sayısını kartında görebilirsin.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+              {generalTests.map((test) => (
+                <Link
+                  key={test.id}
+                  href={`/test/${test.id}`}
+                  className="premium-card space-y-4 p-5 transition hover:-translate-y-1 hover:border-indigo-300 hover:shadow-lg"
+                >
+                  <h3 className="text-xl font-black tracking-tight">LGS Genel Deneme {test.id.split('-').at(-1)}</h3>
+                  <p className="text-sm font-semibold text-slate-600">{test.questionCount} soru</p>
+                  <span className="inline-flex text-sm font-black text-indigo-700">Denemeyi çöz →</span>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
       </section>
     </main>
   );
 }
+
 

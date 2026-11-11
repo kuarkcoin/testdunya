@@ -6,7 +6,7 @@ export const metadata = getStaticPageMetadata('/lgs/sozel');
 
 export default async function LgsSozelPage() {
   const tests = (await getTestCatalog())
-    .filter((test) => /^lgs-sozel-test-[1-4]$/.test(test.id))
+    .filter((test) => /^lgs-sozel-test-\d+$/.test(test.id) && test.id === test.canonicalId)
     .sort((a, b) => a.id.localeCompare(b.id, 'tr', { numeric: true }))
     .map((test) => ({
       title: `LGS Sözel Deneme ${test.id.split('-').at(-1)}`,
@@ -45,4 +45,5 @@ export default async function LgsSozelPage() {
     </main>
   );
 }
+
 
